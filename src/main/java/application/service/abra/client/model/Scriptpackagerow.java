@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,195 +34,258 @@ import java.util.Objects;
 /**
  * Scriptpackagerow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Scriptpackagerow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("ScriptKind")
-  private Integer scriptKind = null;
+  @SerializedName("scriptkind")
+  private Integer scriptkind = null;
 
-  @SerializedName("ScriptID")
-  private String scriptID = null;
+  @SerializedName("scriptid")
+  private String scriptid = null;
 
-  @SerializedName("ScriptData")
-  private String scriptData = null;
+  @SerializedName("scriptdata")
+  private String scriptdata = null;
 
-  @SerializedName("CompiledScriptData")
-  private byte[] compiledScriptData = null;
+  @SerializedName("compiledscriptdata")
+  private byte[] compiledscriptdata = null;
 
-  @SerializedName("Compiled")
+  @SerializedName("compiled")
   private Boolean compiled = null;
 
-  @SerializedName("CompilerVersion")
-  private Integer compilerVersion = null;
+  @SerializedName("compilerversion")
+  private Integer compilerversion = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Balíček skriptů [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Balíček skriptů [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Scriptpackagerow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Scriptpackagerow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Scriptpackagerow scriptKind(Integer scriptKind) {
-    this.scriptKind = scriptKind;
+  public Scriptpackagerow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Druh skriptu [persistentní položka]
-   * @return scriptKind
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Druh skriptu [persistentní položka]")
-  public Integer getScriptKind() {
-    return scriptKind;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setScriptKind(Integer scriptKind) {
-    this.scriptKind = scriptKind;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Scriptpackagerow scriptID(String scriptID) {
-    this.scriptID = scriptID;
+  public Scriptpackagerow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * ID skriptu [persistentní položka]
-   * @return scriptID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID skriptu [persistentní položka]")
-  public String getScriptID() {
-    return scriptID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setScriptID(String scriptID) {
-    this.scriptID = scriptID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Scriptpackagerow scriptData(String scriptData) {
-    this.scriptData = scriptData;
+  public Scriptpackagerow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Skript [persistentní položka]
-   * @return scriptData
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Skript [persistentní položka]")
-  public String getScriptData() {
-    return scriptData;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setScriptData(String scriptData) {
-    this.scriptData = scriptData;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Scriptpackagerow compiledScriptData(byte[] compiledScriptData) {
-    this.compiledScriptData = compiledScriptData;
+  public Scriptpackagerow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Zkompilovaný skript [persistentní položka]
-   * @return compiledScriptData
+   * vlastník; id objektu balíček skriptů [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Zkompilovaný skript [persistentní položka]")
-  public byte[] getCompiledScriptData() {
-    return compiledScriptData;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu balíček skriptů [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setCompiledScriptData(byte[] compiledScriptData) {
-    this.compiledScriptData = compiledScriptData;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Scriptpackagerow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
   }
 
    /**
-   * Zkompilováno [persistentní položka]
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Scriptpackagerow scriptkind(Integer scriptkind) {
+    this.scriptkind = scriptkind;
+    return this;
+  }
+
+   /**
+   * druh skriptu [persistentní položka]
+   * @return scriptkind
+  **/
+  @ApiModelProperty(example = "null", value = "druh skriptu [persistentní položka]")
+  public Integer getScriptkind() {
+    return scriptkind;
+  }
+
+  public void setScriptkind(Integer scriptkind) {
+    this.scriptkind = scriptkind;
+  }
+
+  public Scriptpackagerow scriptid(String scriptid) {
+    this.scriptid = scriptid;
+    return this;
+  }
+
+   /**
+   * id skriptu [persistentní položka]
+   * @return scriptid
+  **/
+  @ApiModelProperty(example = "null", value = "id skriptu [persistentní položka]")
+  public String getScriptid() {
+    return scriptid;
+  }
+
+  public void setScriptid(String scriptid) {
+    this.scriptid = scriptid;
+  }
+
+  public Scriptpackagerow scriptdata(String scriptdata) {
+    this.scriptdata = scriptdata;
+    return this;
+  }
+
+   /**
+   * skript [persistentní položka]
+   * @return scriptdata
+  **/
+  @ApiModelProperty(example = "null", value = "skript [persistentní položka]")
+  public String getScriptdata() {
+    return scriptdata;
+  }
+
+  public void setScriptdata(String scriptdata) {
+    this.scriptdata = scriptdata;
+  }
+
+  public Scriptpackagerow compiledscriptdata(byte[] compiledscriptdata) {
+    this.compiledscriptdata = compiledscriptdata;
+    return this;
+  }
+
+   /**
+   * zkompilovaný skript [persistentní položka]
+   * @return compiledscriptdata
+  **/
+  @ApiModelProperty(example = "null", value = "zkompilovaný skript [persistentní položka]")
+  public byte[] getCompiledscriptdata() {
+    return compiledscriptdata;
+  }
+
+  public void setCompiledscriptdata(byte[] compiledscriptdata) {
+    this.compiledscriptdata = compiledscriptdata;
+  }
+
+  public Scriptpackagerow compiled(Boolean compiled) {
+    this.compiled = compiled;
+    return this;
+  }
+
+   /**
+   * zkompilováno [persistentní položka]
    * @return compiled
   **/
-  @ApiModelProperty(example = "null", value = "Zkompilováno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "zkompilováno [persistentní položka]")
   public Boolean getCompiled() {
     return compiled;
   }
 
+  public void setCompiled(Boolean compiled) {
+    this.compiled = compiled;
+  }
+
+  public Scriptpackagerow compilerversion(Integer compilerversion) {
+    this.compilerversion = compilerversion;
+    return this;
+  }
+
    /**
-   * Zkompilováno [persistentní položka]
-   * @return compilerVersion
+   * zkompilováno [persistentní položka]
+   * @return compilerversion
   **/
-  @ApiModelProperty(example = "null", value = "Zkompilováno [persistentní položka]")
-  public Integer getCompilerVersion() {
-    return compilerVersion;
+  @ApiModelProperty(example = "null", value = "zkompilováno [persistentní položka]")
+  public Integer getCompilerversion() {
+    return compilerversion;
+  }
+
+  public void setCompilerversion(Integer compilerversion) {
+    this.compilerversion = compilerversion;
   }
 
 
@@ -235,23 +298,23 @@ public class Scriptpackagerow   {
       return false;
     }
     Scriptpackagerow scriptpackagerow = (Scriptpackagerow) o;
-    return Objects.equals(this.displayName, scriptpackagerow.displayName) &&
-        Objects.equals(this.ID, scriptpackagerow.ID) &&
-        Objects.equals(this.classID, scriptpackagerow.classID) &&
-        Objects.equals(this.objVersion, scriptpackagerow.objVersion) &&
-        Objects.equals(this.parentID, scriptpackagerow.parentID) &&
-        Objects.equals(this.posIndex, scriptpackagerow.posIndex) &&
-        Objects.equals(this.scriptKind, scriptpackagerow.scriptKind) &&
-        Objects.equals(this.scriptID, scriptpackagerow.scriptID) &&
-        Objects.equals(this.scriptData, scriptpackagerow.scriptData) &&
-        Objects.equals(this.compiledScriptData, scriptpackagerow.compiledScriptData) &&
+    return Objects.equals(this.displayname, scriptpackagerow.displayname) &&
+        Objects.equals(this.id, scriptpackagerow.id) &&
+        Objects.equals(this.classid, scriptpackagerow.classid) &&
+        Objects.equals(this.objversion, scriptpackagerow.objversion) &&
+        Objects.equals(this.parentId, scriptpackagerow.parentId) &&
+        Objects.equals(this.posindex, scriptpackagerow.posindex) &&
+        Objects.equals(this.scriptkind, scriptpackagerow.scriptkind) &&
+        Objects.equals(this.scriptid, scriptpackagerow.scriptid) &&
+        Objects.equals(this.scriptdata, scriptpackagerow.scriptdata) &&
+        Objects.equals(this.compiledscriptdata, scriptpackagerow.compiledscriptdata) &&
         Objects.equals(this.compiled, scriptpackagerow.compiled) &&
-        Objects.equals(this.compilerVersion, scriptpackagerow.compilerVersion);
+        Objects.equals(this.compilerversion, scriptpackagerow.compilerversion);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, scriptKind, scriptID, scriptData, compiledScriptData, compiled, compilerVersion);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, scriptkind, scriptid, scriptdata, compiledscriptdata, compiled, compilerversion);
   }
 
   @Override
@@ -259,18 +322,18 @@ public class Scriptpackagerow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Scriptpackagerow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    scriptKind: ").append(toIndentedString(scriptKind)).append("\n");
-    sb.append("    scriptID: ").append(toIndentedString(scriptID)).append("\n");
-    sb.append("    scriptData: ").append(toIndentedString(scriptData)).append("\n");
-    sb.append("    compiledScriptData: ").append(toIndentedString(compiledScriptData)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    scriptkind: ").append(toIndentedString(scriptkind)).append("\n");
+    sb.append("    scriptid: ").append(toIndentedString(scriptid)).append("\n");
+    sb.append("    scriptdata: ").append(toIndentedString(scriptdata)).append("\n");
+    sb.append("    compiledscriptdata: ").append(toIndentedString(compiledscriptdata)).append("\n");
     sb.append("    compiled: ").append(toIndentedString(compiled)).append("\n");
-    sb.append("    compilerVersion: ").append(toIndentedString(compilerVersion)).append("\n");
+    sb.append("    compilerversion: ").append(toIndentedString(compilerversion)).append("\n");
     sb.append("}");
     return sb.toString();
   }

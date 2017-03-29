@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,138 +35,215 @@ import java.util.Objects;
 /**
  * Documentcontent
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Documentcontent   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Revided_ID")
-  private String revidedID = null;
+  @SerializedName("revided_id")
+  private String revidedId = null;
 
-  @SerializedName("RevisionDescription")
-  private String revisionDescription = null;
+  @SerializedName("revisiondescription")
+  private String revisiondescription = null;
 
-  @SerializedName("RevisionDate$DATE")
-  private DateTime revisionDateDATE = null;
+  @SerializedName("revisiondate$date")
+  private DateTime revisiondatedate = null;
 
-  @SerializedName("RevisionAuthor_ID")
-  private String revisionAuthorID = null;
+  @SerializedName("revisionauthor_id")
+  private String revisionauthorId = null;
 
-  @SerializedName("Revision")
+  @SerializedName("revision")
   private Integer revision = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("CorrectionTime$DATE")
-  private DateTime correctionTimeDATE = null;
+  @SerializedName("correctiontime$date")
+  private DateTime correctiontimedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CreationTime$DATE")
-  private DateTime creationTimeDATE = null;
+  @SerializedName("creationtime$date")
+  private DateTime creationtimedate = null;
 
-  @SerializedName("Data_ID")
-  private Documentcontent dataID = null;
+  @SerializedName("data_id")
+  private Documentcontent dataId = null;
 
-  @SerializedName("FileName")
-  private String fileName = null;
+  @SerializedName("filename")
+  private String filename = null;
 
-  @SerializedName("Specification")
+  @SerializedName("specification")
   private Integer specification = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("Compressed")
+  @SerializedName("compressed")
   private Boolean compressed = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Documentcontent displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Documentcontent id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Documentcontent classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Documentcontent objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * ID revidovaného objektu; ID objektu Obsah dokumentu
-   * @return revidedID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "ID revidovaného objektu; ID objektu Obsah dokumentu")
-  public String getRevidedID() {
-    return revidedID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Documentcontent revidedId(String revidedId) {
+    this.revidedId = revidedId;
+    return this;
   }
 
    /**
-   * Popis revize
-   * @return revisionDescription
+   * id revidovaného objektu; id objektu obsah dokumentu
+   * @return revidedId
   **/
-  @ApiModelProperty(example = "null", value = "Popis revize")
-  public String getRevisionDescription() {
-    return revisionDescription;
+  @ApiModelProperty(example = "null", value = "id revidovaného objektu; id objektu obsah dokumentu")
+  public String getRevidedId() {
+    return revidedId;
+  }
+
+  public void setRevidedId(String revidedId) {
+    this.revidedId = revidedId;
+  }
+
+  public Documentcontent revisiondescription(String revisiondescription) {
+    this.revisiondescription = revisiondescription;
+    return this;
   }
 
    /**
-   * Datum revize
-   * @return revisionDateDATE
+   * popis revize
+   * @return revisiondescription
   **/
-  @ApiModelProperty(example = "null", value = "Datum revize")
-  public DateTime getRevisionDateDATE() {
-    return revisionDateDATE;
+  @ApiModelProperty(example = "null", value = "popis revize")
+  public String getRevisiondescription() {
+    return revisiondescription;
+  }
+
+  public void setRevisiondescription(String revisiondescription) {
+    this.revisiondescription = revisiondescription;
+  }
+
+  public Documentcontent revisiondatedate(DateTime revisiondatedate) {
+    this.revisiondatedate = revisiondatedate;
+    return this;
   }
 
    /**
-   * Autor revize; ID objektu Uživatel
-   * @return revisionAuthorID
+   * datum revize
+   * @return revisiondatedate
   **/
-  @ApiModelProperty(example = "null", value = "Autor revize; ID objektu Uživatel")
-  public String getRevisionAuthorID() {
-    return revisionAuthorID;
+  @ApiModelProperty(example = "null", value = "datum revize")
+  public DateTime getRevisiondatedate() {
+    return revisiondatedate;
+  }
+
+  public void setRevisiondatedate(DateTime revisiondatedate) {
+    this.revisiondatedate = revisiondatedate;
+  }
+
+  public Documentcontent revisionauthorId(String revisionauthorId) {
+    this.revisionauthorId = revisionauthorId;
+    return this;
+  }
+
+   /**
+   * autor revize; id objektu uživatel
+   * @return revisionauthorId
+  **/
+  @ApiModelProperty(example = "null", value = "autor revize; id objektu uživatel")
+  public String getRevisionauthorId() {
+    return revisionauthorId;
+  }
+
+  public void setRevisionauthorId(String revisionauthorId) {
+    this.revisionauthorId = revisionauthorId;
+  }
+
+  public Documentcontent revision(Integer revision) {
+    this.revision = revision;
+    return this;
   }
 
    /**
@@ -178,139 +255,152 @@ public class Documentcontent   {
     return revision;
   }
 
-   /**
-   * Vlastník; ID objektu Dokument [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Dokument [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  public void setRevision(Integer revision) {
+    this.revision = revision;
   }
 
-  public Documentcontent posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Documentcontent parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * vlastník; id objektu dokument [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu dokument [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Documentcontent correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Documentcontent posindex(Integer posindex) {
+    this.posindex = posindex;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * pořadí [persistentní položka]
+   * @return posindex
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
-  public Documentcontent correctionTimeDATE(DateTime correctionTimeDATE) {
-    this.correctionTimeDATE = correctionTimeDATE;
+  public Documentcontent correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opraveno [persistentní položka]
-   * @return correctionTimeDATE
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opraveno [persistentní položka]")
-  public DateTime getCorrectionTimeDATE() {
-    return correctionTimeDATE;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectionTimeDATE(DateTime correctionTimeDATE) {
-    this.correctionTimeDATE = correctionTimeDATE;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Documentcontent createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Documentcontent correctiontimedate(DateTime correctiontimedate) {
+    this.correctiontimedate = correctiontimedate;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * opraveno [persistentní položka]
+   * @return correctiontimedate
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "opraveno [persistentní položka]")
+  public DateTime getCorrectiontimedate() {
+    return correctiontimedate;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCorrectiontimedate(DateTime correctiontimedate) {
+    this.correctiontimedate = correctiontimedate;
   }
 
-  public Documentcontent creationTimeDATE(DateTime creationTimeDATE) {
-    this.creationTimeDATE = creationTimeDATE;
+  public Documentcontent createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořeno [persistentní položka]
-   * @return creationTimeDATE
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořeno [persistentní položka]")
-  public DateTime getCreationTimeDATE() {
-    return creationTimeDATE;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreationTimeDATE(DateTime creationTimeDATE) {
-    this.creationTimeDATE = creationTimeDATE;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Documentcontent dataID(Documentcontent dataID) {
-    this.dataID = dataID;
+  public Documentcontent creationtimedate(DateTime creationtimedate) {
+    this.creationtimedate = creationtimedate;
     return this;
   }
 
    /**
-   * Get dataID
-   * @return dataID
+   * vytvořeno [persistentní položka]
+   * @return creationtimedate
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořeno [persistentní položka]")
+  public DateTime getCreationtimedate() {
+    return creationtimedate;
+  }
+
+  public void setCreationtimedate(DateTime creationtimedate) {
+    this.creationtimedate = creationtimedate;
+  }
+
+  public Documentcontent dataId(Documentcontent dataId) {
+    this.dataId = dataId;
+    return this;
+  }
+
+   /**
+   * Get dataId
+   * @return dataId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Documentcontent getDataID() {
-    return dataID;
+  public Documentcontent getDataId() {
+    return dataId;
   }
 
-  public void setDataID(Documentcontent dataID) {
-    this.dataID = dataID;
+  public void setDataId(Documentcontent dataId) {
+    this.dataId = dataId;
   }
 
-  public Documentcontent fileName(String fileName) {
-    this.fileName = fileName;
+  public Documentcontent filename(String filename) {
+    this.filename = filename;
     return this;
   }
 
    /**
-   * Název souboru [persistentní položka]
-   * @return fileName
+   * název souboru [persistentní položka]
+   * @return filename
   **/
-  @ApiModelProperty(example = "null", value = "Název souboru [persistentní položka]")
-  public String getFileName() {
-    return fileName;
+  @ApiModelProperty(example = "null", value = "název souboru [persistentní položka]")
+  public String getFilename() {
+    return filename;
   }
 
-  public void setFileName(String fileName) {
-    this.fileName = fileName;
+  public void setFilename(String filename) {
+    this.filename = filename;
   }
 
   public Documentcontent specification(Integer specification) {
@@ -319,10 +409,10 @@ public class Documentcontent   {
   }
 
    /**
-   * Specifikace [persistentní položka]
+   * specifikace [persistentní položka]
    * @return specification
   **/
-  @ApiModelProperty(example = "null", value = "Specifikace [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "specifikace [persistentní položka]")
   public Integer getSpecification() {
     return specification;
   }
@@ -337,10 +427,10 @@ public class Documentcontent   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -355,10 +445,10 @@ public class Documentcontent   {
   }
 
    /**
-   * Komprimován
+   * komprimován
    * @return compressed
   **/
-  @ApiModelProperty(example = "null", value = "Komprimován")
+  @ApiModelProperty(example = "null", value = "komprimován")
   public Boolean getCompressed() {
     return compressed;
   }
@@ -377,23 +467,23 @@ public class Documentcontent   {
       return false;
     }
     Documentcontent documentcontent = (Documentcontent) o;
-    return Objects.equals(this.displayName, documentcontent.displayName) &&
-        Objects.equals(this.ID, documentcontent.ID) &&
-        Objects.equals(this.classID, documentcontent.classID) &&
-        Objects.equals(this.objVersion, documentcontent.objVersion) &&
-        Objects.equals(this.revidedID, documentcontent.revidedID) &&
-        Objects.equals(this.revisionDescription, documentcontent.revisionDescription) &&
-        Objects.equals(this.revisionDateDATE, documentcontent.revisionDateDATE) &&
-        Objects.equals(this.revisionAuthorID, documentcontent.revisionAuthorID) &&
+    return Objects.equals(this.displayname, documentcontent.displayname) &&
+        Objects.equals(this.id, documentcontent.id) &&
+        Objects.equals(this.classid, documentcontent.classid) &&
+        Objects.equals(this.objversion, documentcontent.objversion) &&
+        Objects.equals(this.revidedId, documentcontent.revidedId) &&
+        Objects.equals(this.revisiondescription, documentcontent.revisiondescription) &&
+        Objects.equals(this.revisiondatedate, documentcontent.revisiondatedate) &&
+        Objects.equals(this.revisionauthorId, documentcontent.revisionauthorId) &&
         Objects.equals(this.revision, documentcontent.revision) &&
-        Objects.equals(this.parentID, documentcontent.parentID) &&
-        Objects.equals(this.posIndex, documentcontent.posIndex) &&
-        Objects.equals(this.correctedByID, documentcontent.correctedByID) &&
-        Objects.equals(this.correctionTimeDATE, documentcontent.correctionTimeDATE) &&
-        Objects.equals(this.createdByID, documentcontent.createdByID) &&
-        Objects.equals(this.creationTimeDATE, documentcontent.creationTimeDATE) &&
-        Objects.equals(this.dataID, documentcontent.dataID) &&
-        Objects.equals(this.fileName, documentcontent.fileName) &&
+        Objects.equals(this.parentId, documentcontent.parentId) &&
+        Objects.equals(this.posindex, documentcontent.posindex) &&
+        Objects.equals(this.correctedbyId, documentcontent.correctedbyId) &&
+        Objects.equals(this.correctiontimedate, documentcontent.correctiontimedate) &&
+        Objects.equals(this.createdbyId, documentcontent.createdbyId) &&
+        Objects.equals(this.creationtimedate, documentcontent.creationtimedate) &&
+        Objects.equals(this.dataId, documentcontent.dataId) &&
+        Objects.equals(this.filename, documentcontent.filename) &&
         Objects.equals(this.specification, documentcontent.specification) &&
         Objects.equals(this.description, documentcontent.description) &&
         Objects.equals(this.compressed, documentcontent.compressed);
@@ -401,7 +491,7 @@ public class Documentcontent   {
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, revidedID, revisionDescription, revisionDateDATE, revisionAuthorID, revision, parentID, posIndex, correctedByID, correctionTimeDATE, createdByID, creationTimeDATE, dataID, fileName, specification, description, compressed);
+    return Objects.hash(displayname, id, classid, objversion, revidedId, revisiondescription, revisiondatedate, revisionauthorId, revision, parentId, posindex, correctedbyId, correctiontimedate, createdbyId, creationtimedate, dataId, filename, specification, description, compressed);
   }
 
   @Override
@@ -409,23 +499,23 @@ public class Documentcontent   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Documentcontent {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    revidedID: ").append(toIndentedString(revidedID)).append("\n");
-    sb.append("    revisionDescription: ").append(toIndentedString(revisionDescription)).append("\n");
-    sb.append("    revisionDateDATE: ").append(toIndentedString(revisionDateDATE)).append("\n");
-    sb.append("    revisionAuthorID: ").append(toIndentedString(revisionAuthorID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    revidedId: ").append(toIndentedString(revidedId)).append("\n");
+    sb.append("    revisiondescription: ").append(toIndentedString(revisiondescription)).append("\n");
+    sb.append("    revisiondatedate: ").append(toIndentedString(revisiondatedate)).append("\n");
+    sb.append("    revisionauthorId: ").append(toIndentedString(revisionauthorId)).append("\n");
     sb.append("    revision: ").append(toIndentedString(revision)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    correctionTimeDATE: ").append(toIndentedString(correctionTimeDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    creationTimeDATE: ").append(toIndentedString(creationTimeDATE)).append("\n");
-    sb.append("    dataID: ").append(toIndentedString(dataID)).append("\n");
-    sb.append("    fileName: ").append(toIndentedString(fileName)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    correctiontimedate: ").append(toIndentedString(correctiontimedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    creationtimedate: ").append(toIndentedString(creationtimedate)).append("\n");
+    sb.append("    dataId: ").append(toIndentedString(dataId)).append("\n");
+    sb.append("    filename: ").append(toIndentedString(filename)).append("\n");
     sb.append("    specification: ").append(toIndentedString(specification)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    compressed: ").append(toIndentedString(compressed)).append("\n");

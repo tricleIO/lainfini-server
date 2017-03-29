@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,156 +35,201 @@ import java.util.Objects;
 /**
  * Execcalcchartscript
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Execcalcchartscript   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("ScriptBefore")
-  private String scriptBefore = null;
+  @SerializedName("scriptbefore")
+  private String scriptbefore = null;
 
-  @SerializedName("ScriptAfter")
-  private String scriptAfter = null;
+  @SerializedName("scriptafter")
+  private String scriptafter = null;
 
-  @SerializedName("ValidFrom$DATE")
-  private DateTime validFromDATE = null;
+  @SerializedName("validfrom$date")
+  private DateTime validfromdate = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-  @SerializedName("Explanation")
+  @SerializedName("explanation")
   private String explanation = null;
 
-  @SerializedName("UserScriptBefore")
-  private String userScriptBefore = null;
+  @SerializedName("userscriptbefore")
+  private String userscriptbefore = null;
 
-  @SerializedName("UserScriptAfter")
-  private String userScriptAfter = null;
+  @SerializedName("userscriptafter")
+  private String userscriptafter = null;
 
-  @SerializedName("UserExplanation")
-  private String userExplanation = null;
+  @SerializedName("userexplanation")
+  private String userexplanation = null;
 
-  @SerializedName("SupressScriptBefore")
-  private Integer supressScriptBefore = null;
+  @SerializedName("supressscriptbefore")
+  private Integer supressscriptbefore = null;
 
-  @SerializedName("SupressScriptAfter")
-  private Integer supressScriptAfter = null;
+  @SerializedName("supressscriptafter")
+  private Integer supressscriptafter = null;
 
-  @SerializedName("SupressScriptBeforeText")
-  private String supressScriptBeforeText = null;
+  @SerializedName("supressscriptbeforetext")
+  private String supressscriptbeforetext = null;
 
-  @SerializedName("SupressScriptAfterText")
-  private String supressScriptAfterText = null;
+  @SerializedName("supressscriptaftertext")
+  private String supressscriptaftertext = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Výpočtové schéma [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Výpočtové schéma [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Execcalcchartscript scriptBefore(String scriptBefore) {
-    this.scriptBefore = scriptBefore;
+  public Execcalcchartscript displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Skript před [persistentní položka]
-   * @return scriptBefore
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Skript před [persistentní položka]")
-  public String getScriptBefore() {
-    return scriptBefore;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setScriptBefore(String scriptBefore) {
-    this.scriptBefore = scriptBefore;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Execcalcchartscript scriptAfter(String scriptAfter) {
-    this.scriptAfter = scriptAfter;
+  public Execcalcchartscript id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Skript po [persistentní položka]
-   * @return scriptAfter
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Skript po [persistentní položka]")
-  public String getScriptAfter() {
-    return scriptAfter;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setScriptAfter(String scriptAfter) {
-    this.scriptAfter = scriptAfter;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Execcalcchartscript validFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public Execcalcchartscript classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Platí od [persistentní položka]
-   * @return validFromDATE
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Platí od [persistentní položka]")
-  public DateTime getValidFromDATE() {
-    return validFromDATE;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setValidFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Execcalcchartscript objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Execcalcchartscript parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu výpočtové schéma [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu výpočtové schéma [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Execcalcchartscript scriptbefore(String scriptbefore) {
+    this.scriptbefore = scriptbefore;
+    return this;
+  }
+
+   /**
+   * skript před [persistentní položka]
+   * @return scriptbefore
+  **/
+  @ApiModelProperty(example = "null", value = "skript před [persistentní položka]")
+  public String getScriptbefore() {
+    return scriptbefore;
+  }
+
+  public void setScriptbefore(String scriptbefore) {
+    this.scriptbefore = scriptbefore;
+  }
+
+  public Execcalcchartscript scriptafter(String scriptafter) {
+    this.scriptafter = scriptafter;
+    return this;
+  }
+
+   /**
+   * skript po [persistentní položka]
+   * @return scriptafter
+  **/
+  @ApiModelProperty(example = "null", value = "skript po [persistentní položka]")
+  public String getScriptafter() {
+    return scriptafter;
+  }
+
+  public void setScriptafter(String scriptafter) {
+    this.scriptafter = scriptafter;
+  }
+
+  public Execcalcchartscript validfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
+    return this;
+  }
+
+   /**
+   * platí od [persistentní položka]
+   * @return validfromdate
+  **/
+  @ApiModelProperty(example = "null", value = "platí od [persistentní položka]")
+  public DateTime getValidfromdate() {
+    return validfromdate;
+  }
+
+  public void setValidfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
   }
 
   public Execcalcchartscript system(Boolean system) {
@@ -193,10 +238,10 @@ public class Execcalcchartscript   {
   }
 
    /**
-   * Syst. definice [persistentní položka]
+   * syst. definice [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Syst. definice [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "syst. definice [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -211,10 +256,10 @@ public class Execcalcchartscript   {
   }
 
    /**
-   * Vysvětlení [persistentní položka]
+   * vysvětlení [persistentní položka]
    * @return explanation
   **/
-  @ApiModelProperty(example = "null", value = "Vysvětlení [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "vysvětlení [persistentní položka]")
   public String getExplanation() {
     return explanation;
   }
@@ -223,130 +268,130 @@ public class Execcalcchartscript   {
     this.explanation = explanation;
   }
 
-  public Execcalcchartscript userScriptBefore(String userScriptBefore) {
-    this.userScriptBefore = userScriptBefore;
+  public Execcalcchartscript userscriptbefore(String userscriptbefore) {
+    this.userscriptbefore = userscriptbefore;
     return this;
   }
 
    /**
-   * Uživ. skript před
-   * @return userScriptBefore
+   * uživ. skript před
+   * @return userscriptbefore
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. skript před")
-  public String getUserScriptBefore() {
-    return userScriptBefore;
+  @ApiModelProperty(example = "null", value = "uživ. skript před")
+  public String getUserscriptbefore() {
+    return userscriptbefore;
   }
 
-  public void setUserScriptBefore(String userScriptBefore) {
-    this.userScriptBefore = userScriptBefore;
+  public void setUserscriptbefore(String userscriptbefore) {
+    this.userscriptbefore = userscriptbefore;
   }
 
-  public Execcalcchartscript userScriptAfter(String userScriptAfter) {
-    this.userScriptAfter = userScriptAfter;
+  public Execcalcchartscript userscriptafter(String userscriptafter) {
+    this.userscriptafter = userscriptafter;
     return this;
   }
 
    /**
-   * Uživ. skript po
-   * @return userScriptAfter
+   * uživ. skript po
+   * @return userscriptafter
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. skript po")
-  public String getUserScriptAfter() {
-    return userScriptAfter;
+  @ApiModelProperty(example = "null", value = "uživ. skript po")
+  public String getUserscriptafter() {
+    return userscriptafter;
   }
 
-  public void setUserScriptAfter(String userScriptAfter) {
-    this.userScriptAfter = userScriptAfter;
+  public void setUserscriptafter(String userscriptafter) {
+    this.userscriptafter = userscriptafter;
   }
 
-  public Execcalcchartscript userExplanation(String userExplanation) {
-    this.userExplanation = userExplanation;
+  public Execcalcchartscript userexplanation(String userexplanation) {
+    this.userexplanation = userexplanation;
     return this;
   }
 
    /**
-   * Uživ. vysvětlení
-   * @return userExplanation
+   * uživ. vysvětlení
+   * @return userexplanation
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. vysvětlení")
-  public String getUserExplanation() {
-    return userExplanation;
+  @ApiModelProperty(example = "null", value = "uživ. vysvětlení")
+  public String getUserexplanation() {
+    return userexplanation;
   }
 
-  public void setUserExplanation(String userExplanation) {
-    this.userExplanation = userExplanation;
+  public void setUserexplanation(String userexplanation) {
+    this.userexplanation = userexplanation;
   }
 
-  public Execcalcchartscript supressScriptBefore(Integer supressScriptBefore) {
-    this.supressScriptBefore = supressScriptBefore;
+  public Execcalcchartscript supressscriptbefore(Integer supressscriptbefore) {
+    this.supressscriptbefore = supressscriptbefore;
     return this;
   }
 
    /**
-   * Použít skript před
-   * @return supressScriptBefore
+   * použít skript před
+   * @return supressscriptbefore
   **/
-  @ApiModelProperty(example = "null", value = "Použít skript před")
-  public Integer getSupressScriptBefore() {
-    return supressScriptBefore;
+  @ApiModelProperty(example = "null", value = "použít skript před")
+  public Integer getSupressscriptbefore() {
+    return supressscriptbefore;
   }
 
-  public void setSupressScriptBefore(Integer supressScriptBefore) {
-    this.supressScriptBefore = supressScriptBefore;
+  public void setSupressscriptbefore(Integer supressscriptbefore) {
+    this.supressscriptbefore = supressscriptbefore;
   }
 
-  public Execcalcchartscript supressScriptAfter(Integer supressScriptAfter) {
-    this.supressScriptAfter = supressScriptAfter;
+  public Execcalcchartscript supressscriptafter(Integer supressscriptafter) {
+    this.supressscriptafter = supressscriptafter;
     return this;
   }
 
    /**
-   * Použít skript po
-   * @return supressScriptAfter
+   * použít skript po
+   * @return supressscriptafter
   **/
-  @ApiModelProperty(example = "null", value = "Použít skript po")
-  public Integer getSupressScriptAfter() {
-    return supressScriptAfter;
+  @ApiModelProperty(example = "null", value = "použít skript po")
+  public Integer getSupressscriptafter() {
+    return supressscriptafter;
   }
 
-  public void setSupressScriptAfter(Integer supressScriptAfter) {
-    this.supressScriptAfter = supressScriptAfter;
+  public void setSupressscriptafter(Integer supressscriptafter) {
+    this.supressscriptafter = supressscriptafter;
   }
 
-  public Execcalcchartscript supressScriptBeforeText(String supressScriptBeforeText) {
-    this.supressScriptBeforeText = supressScriptBeforeText;
+  public Execcalcchartscript supressscriptbeforetext(String supressscriptbeforetext) {
+    this.supressscriptbeforetext = supressscriptbeforetext;
     return this;
   }
 
    /**
-   * Použít skript před
-   * @return supressScriptBeforeText
+   * použít skript před
+   * @return supressscriptbeforetext
   **/
-  @ApiModelProperty(example = "null", value = "Použít skript před")
-  public String getSupressScriptBeforeText() {
-    return supressScriptBeforeText;
+  @ApiModelProperty(example = "null", value = "použít skript před")
+  public String getSupressscriptbeforetext() {
+    return supressscriptbeforetext;
   }
 
-  public void setSupressScriptBeforeText(String supressScriptBeforeText) {
-    this.supressScriptBeforeText = supressScriptBeforeText;
+  public void setSupressscriptbeforetext(String supressscriptbeforetext) {
+    this.supressscriptbeforetext = supressscriptbeforetext;
   }
 
-  public Execcalcchartscript supressScriptAfterText(String supressScriptAfterText) {
-    this.supressScriptAfterText = supressScriptAfterText;
+  public Execcalcchartscript supressscriptaftertext(String supressscriptaftertext) {
+    this.supressscriptaftertext = supressscriptaftertext;
     return this;
   }
 
    /**
-   * Použít skript po
-   * @return supressScriptAfterText
+   * použít skript po
+   * @return supressscriptaftertext
   **/
-  @ApiModelProperty(example = "null", value = "Použít skript po")
-  public String getSupressScriptAfterText() {
-    return supressScriptAfterText;
+  @ApiModelProperty(example = "null", value = "použít skript po")
+  public String getSupressscriptaftertext() {
+    return supressscriptaftertext;
   }
 
-  public void setSupressScriptAfterText(String supressScriptAfterText) {
-    this.supressScriptAfterText = supressScriptAfterText;
+  public void setSupressscriptaftertext(String supressscriptaftertext) {
+    this.supressscriptaftertext = supressscriptaftertext;
   }
 
 
@@ -359,28 +404,28 @@ public class Execcalcchartscript   {
       return false;
     }
     Execcalcchartscript execcalcchartscript = (Execcalcchartscript) o;
-    return Objects.equals(this.displayName, execcalcchartscript.displayName) &&
-        Objects.equals(this.ID, execcalcchartscript.ID) &&
-        Objects.equals(this.classID, execcalcchartscript.classID) &&
-        Objects.equals(this.objVersion, execcalcchartscript.objVersion) &&
-        Objects.equals(this.parentID, execcalcchartscript.parentID) &&
-        Objects.equals(this.scriptBefore, execcalcchartscript.scriptBefore) &&
-        Objects.equals(this.scriptAfter, execcalcchartscript.scriptAfter) &&
-        Objects.equals(this.validFromDATE, execcalcchartscript.validFromDATE) &&
+    return Objects.equals(this.displayname, execcalcchartscript.displayname) &&
+        Objects.equals(this.id, execcalcchartscript.id) &&
+        Objects.equals(this.classid, execcalcchartscript.classid) &&
+        Objects.equals(this.objversion, execcalcchartscript.objversion) &&
+        Objects.equals(this.parentId, execcalcchartscript.parentId) &&
+        Objects.equals(this.scriptbefore, execcalcchartscript.scriptbefore) &&
+        Objects.equals(this.scriptafter, execcalcchartscript.scriptafter) &&
+        Objects.equals(this.validfromdate, execcalcchartscript.validfromdate) &&
         Objects.equals(this.system, execcalcchartscript.system) &&
         Objects.equals(this.explanation, execcalcchartscript.explanation) &&
-        Objects.equals(this.userScriptBefore, execcalcchartscript.userScriptBefore) &&
-        Objects.equals(this.userScriptAfter, execcalcchartscript.userScriptAfter) &&
-        Objects.equals(this.userExplanation, execcalcchartscript.userExplanation) &&
-        Objects.equals(this.supressScriptBefore, execcalcchartscript.supressScriptBefore) &&
-        Objects.equals(this.supressScriptAfter, execcalcchartscript.supressScriptAfter) &&
-        Objects.equals(this.supressScriptBeforeText, execcalcchartscript.supressScriptBeforeText) &&
-        Objects.equals(this.supressScriptAfterText, execcalcchartscript.supressScriptAfterText);
+        Objects.equals(this.userscriptbefore, execcalcchartscript.userscriptbefore) &&
+        Objects.equals(this.userscriptafter, execcalcchartscript.userscriptafter) &&
+        Objects.equals(this.userexplanation, execcalcchartscript.userexplanation) &&
+        Objects.equals(this.supressscriptbefore, execcalcchartscript.supressscriptbefore) &&
+        Objects.equals(this.supressscriptafter, execcalcchartscript.supressscriptafter) &&
+        Objects.equals(this.supressscriptbeforetext, execcalcchartscript.supressscriptbeforetext) &&
+        Objects.equals(this.supressscriptaftertext, execcalcchartscript.supressscriptaftertext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, scriptBefore, scriptAfter, validFromDATE, system, explanation, userScriptBefore, userScriptAfter, userExplanation, supressScriptBefore, supressScriptAfter, supressScriptBeforeText, supressScriptAfterText);
+    return Objects.hash(displayname, id, classid, objversion, parentId, scriptbefore, scriptafter, validfromdate, system, explanation, userscriptbefore, userscriptafter, userexplanation, supressscriptbefore, supressscriptafter, supressscriptbeforetext, supressscriptaftertext);
   }
 
   @Override
@@ -388,23 +433,23 @@ public class Execcalcchartscript   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Execcalcchartscript {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    scriptBefore: ").append(toIndentedString(scriptBefore)).append("\n");
-    sb.append("    scriptAfter: ").append(toIndentedString(scriptAfter)).append("\n");
-    sb.append("    validFromDATE: ").append(toIndentedString(validFromDATE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    scriptbefore: ").append(toIndentedString(scriptbefore)).append("\n");
+    sb.append("    scriptafter: ").append(toIndentedString(scriptafter)).append("\n");
+    sb.append("    validfromdate: ").append(toIndentedString(validfromdate)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
     sb.append("    explanation: ").append(toIndentedString(explanation)).append("\n");
-    sb.append("    userScriptBefore: ").append(toIndentedString(userScriptBefore)).append("\n");
-    sb.append("    userScriptAfter: ").append(toIndentedString(userScriptAfter)).append("\n");
-    sb.append("    userExplanation: ").append(toIndentedString(userExplanation)).append("\n");
-    sb.append("    supressScriptBefore: ").append(toIndentedString(supressScriptBefore)).append("\n");
-    sb.append("    supressScriptAfter: ").append(toIndentedString(supressScriptAfter)).append("\n");
-    sb.append("    supressScriptBeforeText: ").append(toIndentedString(supressScriptBeforeText)).append("\n");
-    sb.append("    supressScriptAfterText: ").append(toIndentedString(supressScriptAfterText)).append("\n");
+    sb.append("    userscriptbefore: ").append(toIndentedString(userscriptbefore)).append("\n");
+    sb.append("    userscriptafter: ").append(toIndentedString(userscriptafter)).append("\n");
+    sb.append("    userexplanation: ").append(toIndentedString(userexplanation)).append("\n");
+    sb.append("    supressscriptbefore: ").append(toIndentedString(supressscriptbefore)).append("\n");
+    sb.append("    supressscriptafter: ").append(toIndentedString(supressscriptafter)).append("\n");
+    sb.append("    supressscriptbeforetext: ").append(toIndentedString(supressscriptbeforetext)).append("\n");
+    sb.append("    supressscriptaftertext: ").append(toIndentedString(supressscriptaftertext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

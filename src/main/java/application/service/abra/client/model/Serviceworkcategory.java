@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,81 +36,117 @@ import java.util.Objects;
 /**
  * Serviceworkcategory
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Serviceworkcategory   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("AmountPerHour")
-  private Double amountPerHour = null;
+  @SerializedName("amountperhour")
+  private Double amountperhour = null;
 
-  @SerializedName("AmountPerHourWithVAT")
-  private Double amountPerHourWithVAT = null;
+  @SerializedName("amountperhourwithvat")
+  private Double amountperhourwithvat = null;
 
-  @SerializedName("CostPriceWithoutVAT")
-  private Double costPriceWithoutVAT = null;
+  @SerializedName("costpricewithoutvat")
+  private Double costpricewithoutvat = null;
 
-  @SerializedName("CostPriceWithVAT")
-  private Double costPriceWithVAT = null;
+  @SerializedName("costpricewithvat")
+  private Double costpricewithvat = null;
 
-  @SerializedName("VATRate_ID")
-  private String vATRateID = null;
+  @SerializedName("vatrate_id")
+  private String vatrateId = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Serviceworkcategoryrow> rows = new ArrayList<Serviceworkcategoryrow>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Serviceworkcategory displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Serviceworkcategory id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Serviceworkcategory classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Serviceworkcategory objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Serviceworkcategory hidden(Boolean hidden) {
@@ -119,10 +155,10 @@ public class Serviceworkcategory   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -137,10 +173,10 @@ public class Serviceworkcategory   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -155,10 +191,10 @@ public class Serviceworkcategory   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -167,94 +203,94 @@ public class Serviceworkcategory   {
     this.name = name;
   }
 
-  public Serviceworkcategory amountPerHour(Double amountPerHour) {
-    this.amountPerHour = amountPerHour;
+  public Serviceworkcategory amountperhour(Double amountperhour) {
+    this.amountperhour = amountperhour;
     return this;
   }
 
    /**
-   * Hodinová sazba bez DPH [persistentní položka]
-   * @return amountPerHour
+   * hodinová sazba bez dph [persistentní položka]
+   * @return amountperhour
   **/
-  @ApiModelProperty(example = "null", value = "Hodinová sazba bez DPH [persistentní položka]")
-  public Double getAmountPerHour() {
-    return amountPerHour;
+  @ApiModelProperty(example = "null", value = "hodinová sazba bez dph [persistentní položka]")
+  public Double getAmountperhour() {
+    return amountperhour;
   }
 
-  public void setAmountPerHour(Double amountPerHour) {
-    this.amountPerHour = amountPerHour;
+  public void setAmountperhour(Double amountperhour) {
+    this.amountperhour = amountperhour;
   }
 
-  public Serviceworkcategory amountPerHourWithVAT(Double amountPerHourWithVAT) {
-    this.amountPerHourWithVAT = amountPerHourWithVAT;
+  public Serviceworkcategory amountperhourwithvat(Double amountperhourwithvat) {
+    this.amountperhourwithvat = amountperhourwithvat;
     return this;
   }
 
    /**
-   * Hodinová sazba s daní [persistentní položka]
-   * @return amountPerHourWithVAT
+   * hodinová sazba s daní [persistentní položka]
+   * @return amountperhourwithvat
   **/
-  @ApiModelProperty(example = "null", value = "Hodinová sazba s daní [persistentní položka]")
-  public Double getAmountPerHourWithVAT() {
-    return amountPerHourWithVAT;
+  @ApiModelProperty(example = "null", value = "hodinová sazba s daní [persistentní položka]")
+  public Double getAmountperhourwithvat() {
+    return amountperhourwithvat;
   }
 
-  public void setAmountPerHourWithVAT(Double amountPerHourWithVAT) {
-    this.amountPerHourWithVAT = amountPerHourWithVAT;
+  public void setAmountperhourwithvat(Double amountperhourwithvat) {
+    this.amountperhourwithvat = amountperhourwithvat;
   }
 
-  public Serviceworkcategory costPriceWithoutVAT(Double costPriceWithoutVAT) {
-    this.costPriceWithoutVAT = costPriceWithoutVAT;
+  public Serviceworkcategory costpricewithoutvat(Double costpricewithoutvat) {
+    this.costpricewithoutvat = costpricewithoutvat;
     return this;
   }
 
    /**
-   * Nákl.cena bez daně [persistentní položka]
-   * @return costPriceWithoutVAT
+   * nákl.cena bez daně [persistentní položka]
+   * @return costpricewithoutvat
   **/
-  @ApiModelProperty(example = "null", value = "Nákl.cena bez daně [persistentní položka]")
-  public Double getCostPriceWithoutVAT() {
-    return costPriceWithoutVAT;
+  @ApiModelProperty(example = "null", value = "nákl.cena bez daně [persistentní položka]")
+  public Double getCostpricewithoutvat() {
+    return costpricewithoutvat;
   }
 
-  public void setCostPriceWithoutVAT(Double costPriceWithoutVAT) {
-    this.costPriceWithoutVAT = costPriceWithoutVAT;
+  public void setCostpricewithoutvat(Double costpricewithoutvat) {
+    this.costpricewithoutvat = costpricewithoutvat;
   }
 
-  public Serviceworkcategory costPriceWithVAT(Double costPriceWithVAT) {
-    this.costPriceWithVAT = costPriceWithVAT;
+  public Serviceworkcategory costpricewithvat(Double costpricewithvat) {
+    this.costpricewithvat = costpricewithvat;
     return this;
   }
 
    /**
-   * Nákl.cena s daní [persistentní položka]
-   * @return costPriceWithVAT
+   * nákl.cena s daní [persistentní položka]
+   * @return costpricewithvat
   **/
-  @ApiModelProperty(example = "null", value = "Nákl.cena s daní [persistentní položka]")
-  public Double getCostPriceWithVAT() {
-    return costPriceWithVAT;
+  @ApiModelProperty(example = "null", value = "nákl.cena s daní [persistentní položka]")
+  public Double getCostpricewithvat() {
+    return costpricewithvat;
   }
 
-  public void setCostPriceWithVAT(Double costPriceWithVAT) {
-    this.costPriceWithVAT = costPriceWithVAT;
+  public void setCostpricewithvat(Double costpricewithvat) {
+    this.costpricewithvat = costpricewithvat;
   }
 
-  public Serviceworkcategory vATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public Serviceworkcategory vatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
     return this;
   }
 
    /**
-   * Sazba DPH; ID objektu DPH sazba [persistentní položka]
-   * @return vATRateID
+   * sazba dph; id objektu dph sazba [persistentní položka]
+   * @return vatrateId
   **/
-  @ApiModelProperty(example = "null", value = "Sazba DPH; ID objektu DPH sazba [persistentní položka]")
-  public String getVATRateID() {
-    return vATRateID;
+  @ApiModelProperty(example = "null", value = "sazba dph; id objektu dph sazba [persistentní položka]")
+  public String getVatrateId() {
+    return vatrateId;
   }
 
-  public void setVATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public void setVatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
   }
 
   public Serviceworkcategory rows(List<Serviceworkcategoryrow> rows) {
@@ -268,10 +304,10 @@ public class Serviceworkcategory   {
   }
 
    /**
-   * řádek; kolekce BO Řádek servisní odbornosti [nepersistentní položka]
+   * řádek; kolekce bo Řádek servisní odbornosti [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "řádek; kolekce BO Řádek servisní odbornosti [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "řádek; kolekce bo Řádek servisní odbornosti [nepersistentní položka]")
   public List<Serviceworkcategoryrow> getRows() {
     return rows;
   }
@@ -290,24 +326,24 @@ public class Serviceworkcategory   {
       return false;
     }
     Serviceworkcategory serviceworkcategory = (Serviceworkcategory) o;
-    return Objects.equals(this.displayName, serviceworkcategory.displayName) &&
-        Objects.equals(this.ID, serviceworkcategory.ID) &&
-        Objects.equals(this.classID, serviceworkcategory.classID) &&
-        Objects.equals(this.objVersion, serviceworkcategory.objVersion) &&
+    return Objects.equals(this.displayname, serviceworkcategory.displayname) &&
+        Objects.equals(this.id, serviceworkcategory.id) &&
+        Objects.equals(this.classid, serviceworkcategory.classid) &&
+        Objects.equals(this.objversion, serviceworkcategory.objversion) &&
         Objects.equals(this.hidden, serviceworkcategory.hidden) &&
         Objects.equals(this.code, serviceworkcategory.code) &&
         Objects.equals(this.name, serviceworkcategory.name) &&
-        Objects.equals(this.amountPerHour, serviceworkcategory.amountPerHour) &&
-        Objects.equals(this.amountPerHourWithVAT, serviceworkcategory.amountPerHourWithVAT) &&
-        Objects.equals(this.costPriceWithoutVAT, serviceworkcategory.costPriceWithoutVAT) &&
-        Objects.equals(this.costPriceWithVAT, serviceworkcategory.costPriceWithVAT) &&
-        Objects.equals(this.vATRateID, serviceworkcategory.vATRateID) &&
+        Objects.equals(this.amountperhour, serviceworkcategory.amountperhour) &&
+        Objects.equals(this.amountperhourwithvat, serviceworkcategory.amountperhourwithvat) &&
+        Objects.equals(this.costpricewithoutvat, serviceworkcategory.costpricewithoutvat) &&
+        Objects.equals(this.costpricewithvat, serviceworkcategory.costpricewithvat) &&
+        Objects.equals(this.vatrateId, serviceworkcategory.vatrateId) &&
         Objects.equals(this.rows, serviceworkcategory.rows);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, amountPerHour, amountPerHourWithVAT, costPriceWithoutVAT, costPriceWithVAT, vATRateID, rows);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, amountperhour, amountperhourwithvat, costpricewithoutvat, costpricewithvat, vatrateId, rows);
   }
 
   @Override
@@ -315,18 +351,18 @@ public class Serviceworkcategory   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Serviceworkcategory {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    amountPerHour: ").append(toIndentedString(amountPerHour)).append("\n");
-    sb.append("    amountPerHourWithVAT: ").append(toIndentedString(amountPerHourWithVAT)).append("\n");
-    sb.append("    costPriceWithoutVAT: ").append(toIndentedString(costPriceWithoutVAT)).append("\n");
-    sb.append("    costPriceWithVAT: ").append(toIndentedString(costPriceWithVAT)).append("\n");
-    sb.append("    vATRateID: ").append(toIndentedString(vATRateID)).append("\n");
+    sb.append("    amountperhour: ").append(toIndentedString(amountperhour)).append("\n");
+    sb.append("    amountperhourwithvat: ").append(toIndentedString(amountperhourwithvat)).append("\n");
+    sb.append("    costpricewithoutvat: ").append(toIndentedString(costpricewithoutvat)).append("\n");
+    sb.append("    costpricewithvat: ").append(toIndentedString(costpricewithvat)).append("\n");
+    sb.append("    vatrateId: ").append(toIndentedString(vatrateId)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("}");
     return sb.toString();

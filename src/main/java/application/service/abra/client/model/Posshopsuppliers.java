@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,150 +34,195 @@ import java.util.Objects;
 /**
  * Posshopsuppliers
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posshopsuppliers   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("StoreCardCategory_ID")
-  private String storeCardCategoryID = null;
+  @SerializedName("storecardcategory_id")
+  private String storecardcategoryId = null;
 
-  @SerializedName("OrderKind")
-  private Integer orderKind = null;
+  @SerializedName("orderkind")
+  private Integer orderkind = null;
 
-  @SerializedName("SupplierStore_ID")
-  private String supplierStoreID = null;
+  @SerializedName("supplierstore_id")
+  private String supplierstoreId = null;
 
-  @SerializedName("Supplier2Store_ID")
-  private String supplier2StoreID = null;
+  @SerializedName("supplier2store_id")
+  private String supplier2storeId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Nastavení provozu [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Nastavení provozu [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Posshopsuppliers storeCardCategoryID(String storeCardCategoryID) {
-    this.storeCardCategoryID = storeCardCategoryID;
+  public Posshopsuppliers displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Skladový typ; ID objektu Typ skladové karty [persistentní položka]
-   * @return storeCardCategoryID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Skladový typ; ID objektu Typ skladové karty [persistentní položka]")
-  public String getStoreCardCategoryID() {
-    return storeCardCategoryID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setStoreCardCategoryID(String storeCardCategoryID) {
-    this.storeCardCategoryID = storeCardCategoryID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Posshopsuppliers orderKind(Integer orderKind) {
-    this.orderKind = orderKind;
+  public Posshopsuppliers id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Způsob výroby [persistentní položka]
-   * @return orderKind
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Způsob výroby [persistentní položka]")
-  public Integer getOrderKind() {
-    return orderKind;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setOrderKind(Integer orderKind) {
-    this.orderKind = orderKind;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Posshopsuppliers supplierStoreID(String supplierStoreID) {
-    this.supplierStoreID = supplierStoreID;
+  public Posshopsuppliers classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Sklad dodavatele; ID objektu Sklad [persistentní položka]
-   * @return supplierStoreID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Sklad dodavatele; ID objektu Sklad [persistentní položka]")
-  public String getSupplierStoreID() {
-    return supplierStoreID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setSupplierStoreID(String supplierStoreID) {
-    this.supplierStoreID = supplierStoreID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Posshopsuppliers supplier2StoreID(String supplier2StoreID) {
-    this.supplier2StoreID = supplier2StoreID;
+  public Posshopsuppliers objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Alternativní dodavatel; ID objektu Sklad [persistentní položka]
-   * @return supplier2StoreID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Alternativní dodavatel; ID objektu Sklad [persistentní položka]")
-  public String getSupplier2StoreID() {
-    return supplier2StoreID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setSupplier2StoreID(String supplier2StoreID) {
-    this.supplier2StoreID = supplier2StoreID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Posshopsuppliers parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu nastavení provozu [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu nastavení provozu [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Posshopsuppliers storecardcategoryId(String storecardcategoryId) {
+    this.storecardcategoryId = storecardcategoryId;
+    return this;
+  }
+
+   /**
+   * skladový typ; id objektu typ skladové karty [persistentní položka]
+   * @return storecardcategoryId
+  **/
+  @ApiModelProperty(example = "null", value = "skladový typ; id objektu typ skladové karty [persistentní položka]")
+  public String getStorecardcategoryId() {
+    return storecardcategoryId;
+  }
+
+  public void setStorecardcategoryId(String storecardcategoryId) {
+    this.storecardcategoryId = storecardcategoryId;
+  }
+
+  public Posshopsuppliers orderkind(Integer orderkind) {
+    this.orderkind = orderkind;
+    return this;
+  }
+
+   /**
+   * způsob výroby [persistentní položka]
+   * @return orderkind
+  **/
+  @ApiModelProperty(example = "null", value = "způsob výroby [persistentní položka]")
+  public Integer getOrderkind() {
+    return orderkind;
+  }
+
+  public void setOrderkind(Integer orderkind) {
+    this.orderkind = orderkind;
+  }
+
+  public Posshopsuppliers supplierstoreId(String supplierstoreId) {
+    this.supplierstoreId = supplierstoreId;
+    return this;
+  }
+
+   /**
+   * sklad dodavatele; id objektu sklad [persistentní položka]
+   * @return supplierstoreId
+  **/
+  @ApiModelProperty(example = "null", value = "sklad dodavatele; id objektu sklad [persistentní položka]")
+  public String getSupplierstoreId() {
+    return supplierstoreId;
+  }
+
+  public void setSupplierstoreId(String supplierstoreId) {
+    this.supplierstoreId = supplierstoreId;
+  }
+
+  public Posshopsuppliers supplier2storeId(String supplier2storeId) {
+    this.supplier2storeId = supplier2storeId;
+    return this;
+  }
+
+   /**
+   * alternativní dodavatel; id objektu sklad [persistentní položka]
+   * @return supplier2storeId
+  **/
+  @ApiModelProperty(example = "null", value = "alternativní dodavatel; id objektu sklad [persistentní položka]")
+  public String getSupplier2storeId() {
+    return supplier2storeId;
+  }
+
+  public void setSupplier2storeId(String supplier2storeId) {
+    this.supplier2storeId = supplier2storeId;
   }
 
 
@@ -190,20 +235,20 @@ public class Posshopsuppliers   {
       return false;
     }
     Posshopsuppliers posshopsuppliers = (Posshopsuppliers) o;
-    return Objects.equals(this.displayName, posshopsuppliers.displayName) &&
-        Objects.equals(this.ID, posshopsuppliers.ID) &&
-        Objects.equals(this.classID, posshopsuppliers.classID) &&
-        Objects.equals(this.objVersion, posshopsuppliers.objVersion) &&
-        Objects.equals(this.parentID, posshopsuppliers.parentID) &&
-        Objects.equals(this.storeCardCategoryID, posshopsuppliers.storeCardCategoryID) &&
-        Objects.equals(this.orderKind, posshopsuppliers.orderKind) &&
-        Objects.equals(this.supplierStoreID, posshopsuppliers.supplierStoreID) &&
-        Objects.equals(this.supplier2StoreID, posshopsuppliers.supplier2StoreID);
+    return Objects.equals(this.displayname, posshopsuppliers.displayname) &&
+        Objects.equals(this.id, posshopsuppliers.id) &&
+        Objects.equals(this.classid, posshopsuppliers.classid) &&
+        Objects.equals(this.objversion, posshopsuppliers.objversion) &&
+        Objects.equals(this.parentId, posshopsuppliers.parentId) &&
+        Objects.equals(this.storecardcategoryId, posshopsuppliers.storecardcategoryId) &&
+        Objects.equals(this.orderkind, posshopsuppliers.orderkind) &&
+        Objects.equals(this.supplierstoreId, posshopsuppliers.supplierstoreId) &&
+        Objects.equals(this.supplier2storeId, posshopsuppliers.supplier2storeId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, storeCardCategoryID, orderKind, supplierStoreID, supplier2StoreID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, storecardcategoryId, orderkind, supplierstoreId, supplier2storeId);
   }
 
   @Override
@@ -211,15 +256,15 @@ public class Posshopsuppliers   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posshopsuppliers {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    storeCardCategoryID: ").append(toIndentedString(storeCardCategoryID)).append("\n");
-    sb.append("    orderKind: ").append(toIndentedString(orderKind)).append("\n");
-    sb.append("    supplierStoreID: ").append(toIndentedString(supplierStoreID)).append("\n");
-    sb.append("    supplier2StoreID: ").append(toIndentedString(supplier2StoreID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    storecardcategoryId: ").append(toIndentedString(storecardcategoryId)).append("\n");
+    sb.append("    orderkind: ").append(toIndentedString(orderkind)).append("\n");
+    sb.append("    supplierstoreId: ").append(toIndentedString(supplierstoreId)).append("\n");
+    sb.append("    supplier2storeId: ").append(toIndentedString(supplier2storeId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

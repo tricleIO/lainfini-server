@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,180 +34,225 @@ import java.util.Objects;
 /**
  * Restrictiondispproprow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Restrictiondispproprow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("RestrictionDefinition_ID")
-  private String restrictionDefinitionID = null;
+  @SerializedName("restrictiondefinition_id")
+  private String restrictiondefinitionId = null;
 
-  @SerializedName("IsVisible")
-  private Boolean isVisible = null;
+  @SerializedName("isvisible")
+  private Boolean isvisible = null;
 
-  @SerializedName("IsFavorite")
-  private Boolean isFavorite = null;
+  @SerializedName("isfavorite")
+  private Boolean isfavorite = null;
 
-  @SerializedName("IsDefault")
-  private Boolean isDefault = null;
+  @SerializedName("isdefault")
+  private Boolean isdefault = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("SpecialKind")
-  private Integer specialKind = null;
+  @SerializedName("specialkind")
+  private Integer specialkind = null;
 
-  @SerializedName("IsRed")
-  private Boolean isRed = null;
+  @SerializedName("isred")
+  private Boolean isred = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Vlastnost zobrazení definic omezení [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Vlastnost zobrazení definic omezení [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Restrictiondispproprow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Restrictiondispproprow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Restrictiondispproprow restrictionDefinitionID(String restrictionDefinitionID) {
-    this.restrictionDefinitionID = restrictionDefinitionID;
+  public Restrictiondispproprow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Definice omezení; ID objektu Definice omezení [persistentní položka]
-   * @return restrictionDefinitionID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Definice omezení; ID objektu Definice omezení [persistentní položka]")
-  public String getRestrictionDefinitionID() {
-    return restrictionDefinitionID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setRestrictionDefinitionID(String restrictionDefinitionID) {
-    this.restrictionDefinitionID = restrictionDefinitionID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Restrictiondispproprow isVisible(Boolean isVisible) {
-    this.isVisible = isVisible;
+  public Restrictiondispproprow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Viditelná [persistentní položka]
-   * @return isVisible
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Viditelná [persistentní položka]")
-  public Boolean getIsVisible() {
-    return isVisible;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setIsVisible(Boolean isVisible) {
-    this.isVisible = isVisible;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Restrictiondispproprow isFavorite(Boolean isFavorite) {
-    this.isFavorite = isFavorite;
+  public Restrictiondispproprow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Oblíbená [persistentní položka]
-   * @return isFavorite
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Oblíbená [persistentní položka]")
-  public Boolean getIsFavorite() {
-    return isFavorite;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setIsFavorite(Boolean isFavorite) {
-    this.isFavorite = isFavorite;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Restrictiondispproprow isDefault(Boolean isDefault) {
-    this.isDefault = isDefault;
+  public Restrictiondispproprow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Výchozí [persistentní položka]
-   * @return isDefault
+   * vlastník; id objektu vlastnost zobrazení definic omezení [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí [persistentní položka]")
-  public Boolean getIsDefault() {
-    return isDefault;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu vlastnost zobrazení definic omezení [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setIsDefault(Boolean isDefault) {
-    this.isDefault = isDefault;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Restrictiondispproprow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Restrictiondispproprow restrictiondefinitionId(String restrictiondefinitionId) {
+    this.restrictiondefinitionId = restrictiondefinitionId;
+    return this;
+  }
+
+   /**
+   * definice omezení; id objektu definice omezení [persistentní položka]
+   * @return restrictiondefinitionId
+  **/
+  @ApiModelProperty(example = "null", value = "definice omezení; id objektu definice omezení [persistentní položka]")
+  public String getRestrictiondefinitionId() {
+    return restrictiondefinitionId;
+  }
+
+  public void setRestrictiondefinitionId(String restrictiondefinitionId) {
+    this.restrictiondefinitionId = restrictiondefinitionId;
+  }
+
+  public Restrictiondispproprow isvisible(Boolean isvisible) {
+    this.isvisible = isvisible;
+    return this;
+  }
+
+   /**
+   * viditelná [persistentní položka]
+   * @return isvisible
+  **/
+  @ApiModelProperty(example = "null", value = "viditelná [persistentní položka]")
+  public Boolean getIsvisible() {
+    return isvisible;
+  }
+
+  public void setIsvisible(Boolean isvisible) {
+    this.isvisible = isvisible;
+  }
+
+  public Restrictiondispproprow isfavorite(Boolean isfavorite) {
+    this.isfavorite = isfavorite;
+    return this;
+  }
+
+   /**
+   * oblíbená [persistentní položka]
+   * @return isfavorite
+  **/
+  @ApiModelProperty(example = "null", value = "oblíbená [persistentní položka]")
+  public Boolean getIsfavorite() {
+    return isfavorite;
+  }
+
+  public void setIsfavorite(Boolean isfavorite) {
+    this.isfavorite = isfavorite;
+  }
+
+  public Restrictiondispproprow isdefault(Boolean isdefault) {
+    this.isdefault = isdefault;
+    return this;
+  }
+
+   /**
+   * výchozí [persistentní položka]
+   * @return isdefault
+  **/
+  @ApiModelProperty(example = "null", value = "výchozí [persistentní položka]")
+  public Boolean getIsdefault() {
+    return isdefault;
+  }
+
+  public void setIsdefault(Boolean isdefault) {
+    this.isdefault = isdefault;
   }
 
   public Restrictiondispproprow name(String name) {
@@ -216,10 +261,10 @@ public class Restrictiondispproprow   {
   }
 
    /**
-   * Název
+   * název
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název")
+  @ApiModelProperty(example = "null", value = "název")
   public String getName() {
     return name;
   }
@@ -228,40 +273,40 @@ public class Restrictiondispproprow   {
     this.name = name;
   }
 
-  public Restrictiondispproprow specialKind(Integer specialKind) {
-    this.specialKind = specialKind;
+  public Restrictiondispproprow specialkind(Integer specialkind) {
+    this.specialkind = specialkind;
     return this;
   }
 
    /**
-   * Typ
-   * @return specialKind
+   * typ
+   * @return specialkind
   **/
-  @ApiModelProperty(example = "null", value = "Typ")
-  public Integer getSpecialKind() {
-    return specialKind;
+  @ApiModelProperty(example = "null", value = "typ")
+  public Integer getSpecialkind() {
+    return specialkind;
   }
 
-  public void setSpecialKind(Integer specialKind) {
-    this.specialKind = specialKind;
+  public void setSpecialkind(Integer specialkind) {
+    this.specialkind = specialkind;
   }
 
-  public Restrictiondispproprow isRed(Boolean isRed) {
-    this.isRed = isRed;
+  public Restrictiondispproprow isred(Boolean isred) {
+    this.isred = isred;
     return this;
   }
 
    /**
    * Červené omezení
-   * @return isRed
+   * @return isred
   **/
   @ApiModelProperty(example = "null", value = "Červené omezení")
-  public Boolean getIsRed() {
-    return isRed;
+  public Boolean getIsred() {
+    return isred;
   }
 
-  public void setIsRed(Boolean isRed) {
-    this.isRed = isRed;
+  public void setIsred(Boolean isred) {
+    this.isred = isred;
   }
 
 
@@ -274,24 +319,24 @@ public class Restrictiondispproprow   {
       return false;
     }
     Restrictiondispproprow restrictiondispproprow = (Restrictiondispproprow) o;
-    return Objects.equals(this.displayName, restrictiondispproprow.displayName) &&
-        Objects.equals(this.ID, restrictiondispproprow.ID) &&
-        Objects.equals(this.classID, restrictiondispproprow.classID) &&
-        Objects.equals(this.objVersion, restrictiondispproprow.objVersion) &&
-        Objects.equals(this.parentID, restrictiondispproprow.parentID) &&
-        Objects.equals(this.posIndex, restrictiondispproprow.posIndex) &&
-        Objects.equals(this.restrictionDefinitionID, restrictiondispproprow.restrictionDefinitionID) &&
-        Objects.equals(this.isVisible, restrictiondispproprow.isVisible) &&
-        Objects.equals(this.isFavorite, restrictiondispproprow.isFavorite) &&
-        Objects.equals(this.isDefault, restrictiondispproprow.isDefault) &&
+    return Objects.equals(this.displayname, restrictiondispproprow.displayname) &&
+        Objects.equals(this.id, restrictiondispproprow.id) &&
+        Objects.equals(this.classid, restrictiondispproprow.classid) &&
+        Objects.equals(this.objversion, restrictiondispproprow.objversion) &&
+        Objects.equals(this.parentId, restrictiondispproprow.parentId) &&
+        Objects.equals(this.posindex, restrictiondispproprow.posindex) &&
+        Objects.equals(this.restrictiondefinitionId, restrictiondispproprow.restrictiondefinitionId) &&
+        Objects.equals(this.isvisible, restrictiondispproprow.isvisible) &&
+        Objects.equals(this.isfavorite, restrictiondispproprow.isfavorite) &&
+        Objects.equals(this.isdefault, restrictiondispproprow.isdefault) &&
         Objects.equals(this.name, restrictiondispproprow.name) &&
-        Objects.equals(this.specialKind, restrictiondispproprow.specialKind) &&
-        Objects.equals(this.isRed, restrictiondispproprow.isRed);
+        Objects.equals(this.specialkind, restrictiondispproprow.specialkind) &&
+        Objects.equals(this.isred, restrictiondispproprow.isred);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, restrictionDefinitionID, isVisible, isFavorite, isDefault, name, specialKind, isRed);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, restrictiondefinitionId, isvisible, isfavorite, isdefault, name, specialkind, isred);
   }
 
   @Override
@@ -299,19 +344,19 @@ public class Restrictiondispproprow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Restrictiondispproprow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    restrictionDefinitionID: ").append(toIndentedString(restrictionDefinitionID)).append("\n");
-    sb.append("    isVisible: ").append(toIndentedString(isVisible)).append("\n");
-    sb.append("    isFavorite: ").append(toIndentedString(isFavorite)).append("\n");
-    sb.append("    isDefault: ").append(toIndentedString(isDefault)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    restrictiondefinitionId: ").append(toIndentedString(restrictiondefinitionId)).append("\n");
+    sb.append("    isvisible: ").append(toIndentedString(isvisible)).append("\n");
+    sb.append("    isfavorite: ").append(toIndentedString(isfavorite)).append("\n");
+    sb.append("    isdefault: ").append(toIndentedString(isdefault)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    specialKind: ").append(toIndentedString(specialKind)).append("\n");
-    sb.append("    isRed: ").append(toIndentedString(isRed)).append("\n");
+    sb.append("    specialkind: ").append(toIndentedString(specialkind)).append("\n");
+    sb.append("    isred: ").append(toIndentedString(isred)).append("\n");
     sb.append("}");
     return sb.toString();
   }

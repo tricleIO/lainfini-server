@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,102 +35,138 @@ import java.util.Objects;
 /**
  * Ordersgeneration
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Ordersgeneration   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("RequestedQuantity")
-  private Double requestedQuantity = null;
+  @SerializedName("requestedquantity")
+  private Double requestedquantity = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitQuantity")
-  private Double unitQuantity = null;
+  @SerializedName("unitquantity")
+  private Double unitquantity = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("RequestedDelivery$DATE")
-  private DateTime requestedDeliveryDATE = null;
+  @SerializedName("requesteddelivery$date")
+  private DateTime requesteddeliverydate = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("ReservationDate$DATE")
-  private DateTime reservationDateDATE = null;
+  @SerializedName("reservationdate$date")
+  private DateTime reservationdatedate = null;
 
-  @SerializedName("IsDemand")
-  private Boolean isDemand = null;
+  @SerializedName("isdemand")
+  private Boolean isdemand = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Ordersgeneration displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Ordersgeneration id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Ordersgeneration classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Ordersgeneration objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Ordersgeneration quantity(Double quantity) {
@@ -139,10 +175,10 @@ public class Ordersgeneration   {
   }
 
    /**
-   * Počet [persistentní položka]
+   * počet [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "počet [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -151,274 +187,274 @@ public class Ordersgeneration   {
     this.quantity = quantity;
   }
 
-  public Ordersgeneration requestedQuantity(Double requestedQuantity) {
-    this.requestedQuantity = requestedQuantity;
+  public Ordersgeneration requestedquantity(Double requestedquantity) {
+    this.requestedquantity = requestedquantity;
     return this;
   }
 
    /**
-   * Požadovaný počet [persistentní položka]
-   * @return requestedQuantity
+   * požadovaný počet [persistentní položka]
+   * @return requestedquantity
   **/
-  @ApiModelProperty(example = "null", value = "Požadovaný počet [persistentní položka]")
-  public Double getRequestedQuantity() {
-    return requestedQuantity;
+  @ApiModelProperty(example = "null", value = "požadovaný počet [persistentní položka]")
+  public Double getRequestedquantity() {
+    return requestedquantity;
   }
 
-  public void setRequestedQuantity(Double requestedQuantity) {
-    this.requestedQuantity = requestedQuantity;
+  public void setRequestedquantity(Double requestedquantity) {
+    this.requestedquantity = requestedquantity;
   }
 
-  public Ordersgeneration storeID(String storeID) {
-    this.storeID = storeID;
+  public Ordersgeneration storeId(String storeId) {
+    this.storeId = storeId;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
-  public Ordersgeneration storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Ordersgeneration storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * skladová karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
   }
 
-  public Ordersgeneration firmID(String firmID) {
-    this.firmID = firmID;
+  public Ordersgeneration firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Ordersgeneration unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Ordersgeneration unitrate(Double unitrate) {
+    this.unitrate = unitrate;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return unitRate
+   * vztah [persistentní položka]
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
-  public Ordersgeneration qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Ordersgeneration qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
   }
 
-  public Ordersgeneration unitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public Ordersgeneration unitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
     return this;
   }
 
    /**
-   * Počet
-   * @return unitQuantity
+   * počet
+   * @return unitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet")
-  public Double getUnitQuantity() {
-    return unitQuantity;
+  @ApiModelProperty(example = "null", value = "počet")
+  public Double getUnitquantity() {
+    return unitquantity;
   }
 
-  public void setUnitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public void setUnitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
   }
 
-  public Ordersgeneration busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Ordersgeneration busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Ordersgeneration busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Ordersgeneration bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obch.případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obch.případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obch.případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obch.případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Ordersgeneration requestedDeliveryDATE(DateTime requestedDeliveryDATE) {
-    this.requestedDeliveryDATE = requestedDeliveryDATE;
+  public Ordersgeneration requesteddeliverydate(DateTime requesteddeliverydate) {
+    this.requesteddeliverydate = requesteddeliverydate;
     return this;
   }
 
    /**
-   * Požadované datum dodání [persistentní položka]
-   * @return requestedDeliveryDATE
+   * požadované datum dodání [persistentní položka]
+   * @return requesteddeliverydate
   **/
-  @ApiModelProperty(example = "null", value = "Požadované datum dodání [persistentní položka]")
-  public DateTime getRequestedDeliveryDATE() {
-    return requestedDeliveryDATE;
+  @ApiModelProperty(example = "null", value = "požadované datum dodání [persistentní položka]")
+  public DateTime getRequesteddeliverydate() {
+    return requesteddeliverydate;
   }
 
-  public void setRequestedDeliveryDATE(DateTime requestedDeliveryDATE) {
-    this.requestedDeliveryDATE = requestedDeliveryDATE;
+  public void setRequesteddeliverydate(DateTime requesteddeliverydate) {
+    this.requesteddeliverydate = requesteddeliverydate;
   }
 
-  public Ordersgeneration busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Ordersgeneration busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Ordersgeneration createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Ordersgeneration createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Ordersgeneration correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Ordersgeneration correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Ordersgeneration reservationDateDATE(DateTime reservationDateDATE) {
-    this.reservationDateDATE = reservationDateDATE;
+  public Ordersgeneration reservationdatedate(DateTime reservationdatedate) {
+    this.reservationdatedate = reservationdatedate;
     return this;
   }
 
    /**
-   * Termín objednání
-   * @return reservationDateDATE
+   * termín objednání
+   * @return reservationdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Termín objednání")
-  public DateTime getReservationDateDATE() {
-    return reservationDateDATE;
+  @ApiModelProperty(example = "null", value = "termín objednání")
+  public DateTime getReservationdatedate() {
+    return reservationdatedate;
   }
 
-  public void setReservationDateDATE(DateTime reservationDateDATE) {
-    this.reservationDateDATE = reservationDateDATE;
+  public void setReservationdatedate(DateTime reservationdatedate) {
+    this.reservationdatedate = reservationdatedate;
   }
 
-  public Ordersgeneration isDemand(Boolean isDemand) {
-    this.isDemand = isDemand;
+  public Ordersgeneration isdemand(Boolean isdemand) {
+    this.isdemand = isdemand;
     return this;
   }
 
    /**
-   * Poptáno [persistentní položka]
-   * @return isDemand
+   * poptáno [persistentní položka]
+   * @return isdemand
   **/
-  @ApiModelProperty(example = "null", value = "Poptáno [persistentní položka]")
-  public Boolean getIsDemand() {
-    return isDemand;
+  @ApiModelProperty(example = "null", value = "poptáno [persistentní položka]")
+  public Boolean getIsdemand() {
+    return isdemand;
   }
 
-  public void setIsDemand(Boolean isDemand) {
-    this.isDemand = isDemand;
+  public void setIsdemand(Boolean isdemand) {
+    this.isdemand = isdemand;
   }
 
 
@@ -431,31 +467,31 @@ public class Ordersgeneration   {
       return false;
     }
     Ordersgeneration ordersgeneration = (Ordersgeneration) o;
-    return Objects.equals(this.displayName, ordersgeneration.displayName) &&
-        Objects.equals(this.ID, ordersgeneration.ID) &&
-        Objects.equals(this.classID, ordersgeneration.classID) &&
-        Objects.equals(this.objVersion, ordersgeneration.objVersion) &&
+    return Objects.equals(this.displayname, ordersgeneration.displayname) &&
+        Objects.equals(this.id, ordersgeneration.id) &&
+        Objects.equals(this.classid, ordersgeneration.classid) &&
+        Objects.equals(this.objversion, ordersgeneration.objversion) &&
         Objects.equals(this.quantity, ordersgeneration.quantity) &&
-        Objects.equals(this.requestedQuantity, ordersgeneration.requestedQuantity) &&
-        Objects.equals(this.storeID, ordersgeneration.storeID) &&
-        Objects.equals(this.storeCardID, ordersgeneration.storeCardID) &&
-        Objects.equals(this.firmID, ordersgeneration.firmID) &&
-        Objects.equals(this.unitRate, ordersgeneration.unitRate) &&
-        Objects.equals(this.qUnit, ordersgeneration.qUnit) &&
-        Objects.equals(this.unitQuantity, ordersgeneration.unitQuantity) &&
-        Objects.equals(this.busOrderID, ordersgeneration.busOrderID) &&
-        Objects.equals(this.busTransactionID, ordersgeneration.busTransactionID) &&
-        Objects.equals(this.requestedDeliveryDATE, ordersgeneration.requestedDeliveryDATE) &&
-        Objects.equals(this.busProjectID, ordersgeneration.busProjectID) &&
-        Objects.equals(this.createdByID, ordersgeneration.createdByID) &&
-        Objects.equals(this.correctedByID, ordersgeneration.correctedByID) &&
-        Objects.equals(this.reservationDateDATE, ordersgeneration.reservationDateDATE) &&
-        Objects.equals(this.isDemand, ordersgeneration.isDemand);
+        Objects.equals(this.requestedquantity, ordersgeneration.requestedquantity) &&
+        Objects.equals(this.storeId, ordersgeneration.storeId) &&
+        Objects.equals(this.storecardId, ordersgeneration.storecardId) &&
+        Objects.equals(this.firmId, ordersgeneration.firmId) &&
+        Objects.equals(this.unitrate, ordersgeneration.unitrate) &&
+        Objects.equals(this.qunit, ordersgeneration.qunit) &&
+        Objects.equals(this.unitquantity, ordersgeneration.unitquantity) &&
+        Objects.equals(this.busorderId, ordersgeneration.busorderId) &&
+        Objects.equals(this.bustransactionId, ordersgeneration.bustransactionId) &&
+        Objects.equals(this.requesteddeliverydate, ordersgeneration.requesteddeliverydate) &&
+        Objects.equals(this.busprojectId, ordersgeneration.busprojectId) &&
+        Objects.equals(this.createdbyId, ordersgeneration.createdbyId) &&
+        Objects.equals(this.correctedbyId, ordersgeneration.correctedbyId) &&
+        Objects.equals(this.reservationdatedate, ordersgeneration.reservationdatedate) &&
+        Objects.equals(this.isdemand, ordersgeneration.isdemand);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, quantity, requestedQuantity, storeID, storeCardID, firmID, unitRate, qUnit, unitQuantity, busOrderID, busTransactionID, requestedDeliveryDATE, busProjectID, createdByID, correctedByID, reservationDateDATE, isDemand);
+    return Objects.hash(displayname, id, classid, objversion, quantity, requestedquantity, storeId, storecardId, firmId, unitrate, qunit, unitquantity, busorderId, bustransactionId, requesteddeliverydate, busprojectId, createdbyId, correctedbyId, reservationdatedate, isdemand);
   }
 
   @Override
@@ -463,26 +499,26 @@ public class Ordersgeneration   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Ordersgeneration {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    requestedQuantity: ").append(toIndentedString(requestedQuantity)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitQuantity: ").append(toIndentedString(unitQuantity)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    requestedDeliveryDATE: ").append(toIndentedString(requestedDeliveryDATE)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    reservationDateDATE: ").append(toIndentedString(reservationDateDATE)).append("\n");
-    sb.append("    isDemand: ").append(toIndentedString(isDemand)).append("\n");
+    sb.append("    requestedquantity: ").append(toIndentedString(requestedquantity)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitquantity: ").append(toIndentedString(unitquantity)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    requesteddeliverydate: ").append(toIndentedString(requesteddeliverydate)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    reservationdatedate: ").append(toIndentedString(reservationdatedate)).append("\n");
+    sb.append("    isdemand: ").append(toIndentedString(isdemand)).append("\n");
     sb.append("}");
     return sb.toString();
   }

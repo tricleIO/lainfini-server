@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,123 +37,159 @@ import java.util.Objects;
 /**
  * Logstoredocument
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Logstoredocument   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Logstoredocumentrow> rows = new ArrayList<Logstoredocumentrow>();
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("DocumentType")
-  private String documentType = null;
+  @SerializedName("documenttype")
+  private String documenttype = null;
 
-  @SerializedName("StoreDocumentType")
-  private String storeDocumentType = null;
+  @SerializedName("storedocumenttype")
+  private String storedocumenttype = null;
 
-  @SerializedName("StoreDocument_ID")
-  private String storeDocumentID = null;
+  @SerializedName("storedocument_id")
+  private String storedocumentId = null;
 
-  @SerializedName("StoreGateway_ID")
-  private String storeGatewayID = null;
+  @SerializedName("storegateway_id")
+  private String storegatewayId = null;
 
-  @SerializedName("Executed")
+  @SerializedName("executed")
   private Boolean executed = null;
 
-  @SerializedName("NoStoreDocument")
-  private Boolean noStoreDocument = null;
+  @SerializedName("nostoredocument")
+  private Boolean nostoredocument = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("ExternalNumber")
-  private String externalNumber = null;
+  @SerializedName("externalnumber")
+  private String externalnumber = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("StoreMan_ID")
-  private String storeManID = null;
+  @SerializedName("storeman_id")
+  private String storemanId = null;
 
-  @SerializedName("ReservedForDocType")
-  private String reservedForDocType = null;
+  @SerializedName("reservedfordoctype")
+  private String reservedfordoctype = null;
 
-  @SerializedName("ReservedForDoc_ID")
-  private String reservedForDocID = null;
+  @SerializedName("reservedfordoc_id")
+  private String reservedfordocId = null;
 
-  @SerializedName("MasterDocCLSID")
-  private String masterDocCLSID = null;
+  @SerializedName("masterdocclsid")
+  private String masterdocclsid = null;
 
-  @SerializedName("MasterDocument_ID")
-  private String masterDocumentID = null;
+  @SerializedName("masterdocument_id")
+  private String masterdocumentId = null;
+
+  public Logstoredocument displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Logstoredocument id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Logstoredocument classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Logstoredocument objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Logstoredocument rows(List<Logstoredocumentrow> rows) {
@@ -167,10 +203,10 @@ public class Logstoredocument   {
   }
 
    /**
-   * Řádky; kolekce BO Polohovací doklad - řádek [nepersistentní položka]
+   * Řádky; kolekce bo polohovací doklad - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Polohovací doklad - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo polohovací doklad - řádek [nepersistentní položka]")
   public List<Logstoredocumentrow> getRows() {
     return rows;
   }
@@ -179,211 +215,220 @@ public class Logstoredocument   {
     this.rows = rows;
   }
 
-  public Logstoredocument docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Logstoredocument docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Logstoredocument periodID(String periodID) {
-    this.periodID = periodID;
+  public Logstoredocument periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Logstoredocument ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Logstoredocument ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Logstoredocument docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Logstoredocument docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Logstoredocument createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Logstoredocument createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Logstoredocument correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Logstoredocument correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Logstoredocument newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Logstoredocument newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Logstoredocument newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Logstoredocument newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-   /**
-   * Typ dokladu [persistentní položka]
-   * @return documentType
-  **/
-  @ApiModelProperty(example = "null", value = "Typ dokladu [persistentní položka]")
-  public String getDocumentType() {
-    return documentType;
-  }
-
-  public Logstoredocument storeDocumentType(String storeDocumentType) {
-    this.storeDocumentType = storeDocumentType;
+  public Logstoredocument documenttype(String documenttype) {
+    this.documenttype = documenttype;
     return this;
   }
 
    /**
-   * Typ skl.dokladu [persistentní položka]
-   * @return storeDocumentType
+   * typ dokladu [persistentní položka]
+   * @return documenttype
   **/
-  @ApiModelProperty(example = "null", value = "Typ skl.dokladu [persistentní položka]")
-  public String getStoreDocumentType() {
-    return storeDocumentType;
+  @ApiModelProperty(example = "null", value = "typ dokladu [persistentní položka]")
+  public String getDocumenttype() {
+    return documenttype;
   }
 
-  public void setStoreDocumentType(String storeDocumentType) {
-    this.storeDocumentType = storeDocumentType;
+  public void setDocumenttype(String documenttype) {
+    this.documenttype = documenttype;
   }
 
-  public Logstoredocument storeDocumentID(String storeDocumentID) {
-    this.storeDocumentID = storeDocumentID;
+  public Logstoredocument storedocumenttype(String storedocumenttype) {
+    this.storedocumenttype = storedocumenttype;
     return this;
   }
 
    /**
-   * Skl.doklad; ID objektu Dokument [persistentní položka]
-   * @return storeDocumentID
+   * typ skl.dokladu [persistentní položka]
+   * @return storedocumenttype
   **/
-  @ApiModelProperty(example = "null", value = "Skl.doklad; ID objektu Dokument [persistentní položka]")
-  public String getStoreDocumentID() {
-    return storeDocumentID;
+  @ApiModelProperty(example = "null", value = "typ skl.dokladu [persistentní položka]")
+  public String getStoredocumenttype() {
+    return storedocumenttype;
   }
 
-  public void setStoreDocumentID(String storeDocumentID) {
-    this.storeDocumentID = storeDocumentID;
+  public void setStoredocumenttype(String storedocumenttype) {
+    this.storedocumenttype = storedocumenttype;
   }
 
-  public Logstoredocument storeGatewayID(String storeGatewayID) {
-    this.storeGatewayID = storeGatewayID;
+  public Logstoredocument storedocumentId(String storedocumentId) {
+    this.storedocumentId = storedocumentId;
     return this;
   }
 
    /**
-   * Místo naskladnění/vyskladnění; ID objektu Nasklad. a vysklad. místo [persistentní položka]
-   * @return storeGatewayID
+   * skl.doklad; id objektu dokument [persistentní položka]
+   * @return storedocumentId
   **/
-  @ApiModelProperty(example = "null", value = "Místo naskladnění/vyskladnění; ID objektu Nasklad. a vysklad. místo [persistentní položka]")
-  public String getStoreGatewayID() {
-    return storeGatewayID;
+  @ApiModelProperty(example = "null", value = "skl.doklad; id objektu dokument [persistentní položka]")
+  public String getStoredocumentId() {
+    return storedocumentId;
   }
 
-  public void setStoreGatewayID(String storeGatewayID) {
-    this.storeGatewayID = storeGatewayID;
+  public void setStoredocumentId(String storedocumentId) {
+    this.storedocumentId = storedocumentId;
+  }
+
+  public Logstoredocument storegatewayId(String storegatewayId) {
+    this.storegatewayId = storegatewayId;
+    return this;
+  }
+
+   /**
+   * místo naskladnění/vyskladnění; id objektu nasklad. a vysklad. místo [persistentní položka]
+   * @return storegatewayId
+  **/
+  @ApiModelProperty(example = "null", value = "místo naskladnění/vyskladnění; id objektu nasklad. a vysklad. místo [persistentní položka]")
+  public String getStoregatewayId() {
+    return storegatewayId;
+  }
+
+  public void setStoregatewayId(String storegatewayId) {
+    this.storegatewayId = storegatewayId;
   }
 
   public Logstoredocument executed(Boolean executed) {
@@ -392,10 +437,10 @@ public class Logstoredocument   {
   }
 
    /**
-   * Provedeno [persistentní položka]
+   * provedeno [persistentní položka]
    * @return executed
   **/
-  @ApiModelProperty(example = "null", value = "Provedeno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "provedeno [persistentní položka]")
   public Boolean getExecuted() {
     return executed;
   }
@@ -404,22 +449,22 @@ public class Logstoredocument   {
     this.executed = executed;
   }
 
-  public Logstoredocument noStoreDocument(Boolean noStoreDocument) {
-    this.noStoreDocument = noStoreDocument;
+  public Logstoredocument nostoredocument(Boolean nostoredocument) {
+    this.nostoredocument = nostoredocument;
     return this;
   }
 
    /**
-   * Jen polohovací [persistentní položka]
-   * @return noStoreDocument
+   * jen polohovací [persistentní položka]
+   * @return nostoredocument
   **/
-  @ApiModelProperty(example = "null", value = "Jen polohovací [persistentní položka]")
-  public Boolean getNoStoreDocument() {
-    return noStoreDocument;
+  @ApiModelProperty(example = "null", value = "jen polohovací [persistentní položka]")
+  public Boolean getNostoredocument() {
+    return nostoredocument;
   }
 
-  public void setNoStoreDocument(Boolean noStoreDocument) {
-    this.noStoreDocument = noStoreDocument;
+  public void setNostoredocument(Boolean nostoredocument) {
+    this.nostoredocument = nostoredocument;
   }
 
   public Logstoredocument description(String description) {
@@ -428,10 +473,10 @@ public class Logstoredocument   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -440,130 +485,130 @@ public class Logstoredocument   {
     this.description = description;
   }
 
-  public Logstoredocument externalNumber(String externalNumber) {
-    this.externalNumber = externalNumber;
+  public Logstoredocument externalnumber(String externalnumber) {
+    this.externalnumber = externalnumber;
     return this;
   }
 
    /**
-   * Externí číslo [persistentní položka]
-   * @return externalNumber
+   * externí číslo [persistentní položka]
+   * @return externalnumber
   **/
-  @ApiModelProperty(example = "null", value = "Externí číslo [persistentní položka]")
-  public String getExternalNumber() {
-    return externalNumber;
+  @ApiModelProperty(example = "null", value = "externí číslo [persistentní položka]")
+  public String getExternalnumber() {
+    return externalnumber;
   }
 
-  public void setExternalNumber(String externalNumber) {
-    this.externalNumber = externalNumber;
+  public void setExternalnumber(String externalnumber) {
+    this.externalnumber = externalnumber;
   }
 
-  public Logstoredocument firmID(String firmID) {
-    this.firmID = firmID;
+  public Logstoredocument firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Logstoredocument storeManID(String storeManID) {
-    this.storeManID = storeManID;
+  public Logstoredocument storemanId(String storemanId) {
+    this.storemanId = storemanId;
     return this;
   }
 
    /**
-   * Skladník; ID objektu Osoba [persistentní položka]
-   * @return storeManID
+   * skladník; id objektu osoba [persistentní položka]
+   * @return storemanId
   **/
-  @ApiModelProperty(example = "null", value = "Skladník; ID objektu Osoba [persistentní položka]")
-  public String getStoreManID() {
-    return storeManID;
+  @ApiModelProperty(example = "null", value = "skladník; id objektu osoba [persistentní položka]")
+  public String getStoremanId() {
+    return storemanId;
   }
 
-  public void setStoreManID(String storeManID) {
-    this.storeManID = storeManID;
+  public void setStoremanId(String storemanId) {
+    this.storemanId = storemanId;
   }
 
-  public Logstoredocument reservedForDocType(String reservedForDocType) {
-    this.reservedForDocType = reservedForDocType;
+  public Logstoredocument reservedfordoctype(String reservedfordoctype) {
+    this.reservedfordoctype = reservedfordoctype;
     return this;
   }
 
    /**
-   * Typ svázaného dokladu [persistentní položka]
-   * @return reservedForDocType
+   * typ svázaného dokladu [persistentní položka]
+   * @return reservedfordoctype
   **/
-  @ApiModelProperty(example = "null", value = "Typ svázaného dokladu [persistentní položka]")
-  public String getReservedForDocType() {
-    return reservedForDocType;
+  @ApiModelProperty(example = "null", value = "typ svázaného dokladu [persistentní položka]")
+  public String getReservedfordoctype() {
+    return reservedfordoctype;
   }
 
-  public void setReservedForDocType(String reservedForDocType) {
-    this.reservedForDocType = reservedForDocType;
+  public void setReservedfordoctype(String reservedfordoctype) {
+    this.reservedfordoctype = reservedfordoctype;
   }
 
-  public Logstoredocument reservedForDocID(String reservedForDocID) {
-    this.reservedForDocID = reservedForDocID;
+  public Logstoredocument reservedfordocId(String reservedfordocId) {
+    this.reservedfordocId = reservedfordocId;
     return this;
   }
 
    /**
-   * Vazba na vychystávaný doklad; ID objektu Dokument [persistentní položka]
-   * @return reservedForDocID
+   * vazba na vychystávaný doklad; id objektu dokument [persistentní položka]
+   * @return reservedfordocId
   **/
-  @ApiModelProperty(example = "null", value = "Vazba na vychystávaný doklad; ID objektu Dokument [persistentní položka]")
-  public String getReservedForDocID() {
-    return reservedForDocID;
+  @ApiModelProperty(example = "null", value = "vazba na vychystávaný doklad; id objektu dokument [persistentní položka]")
+  public String getReservedfordocId() {
+    return reservedfordocId;
   }
 
-  public void setReservedForDocID(String reservedForDocID) {
-    this.reservedForDocID = reservedForDocID;
+  public void setReservedfordocId(String reservedfordocId) {
+    this.reservedfordocId = reservedfordocId;
   }
 
-  public Logstoredocument masterDocCLSID(String masterDocCLSID) {
-    this.masterDocCLSID = masterDocCLSID;
+  public Logstoredocument masterdocclsid(String masterdocclsid) {
+    this.masterdocclsid = masterdocclsid;
     return this;
   }
 
    /**
-   * Třída nadřízeného dokladu [persistentní položka]
-   * @return masterDocCLSID
+   * třída nadřízeného dokladu [persistentní položka]
+   * @return masterdocclsid
   **/
-  @ApiModelProperty(example = "null", value = "Třída nadřízeného dokladu [persistentní položka]")
-  public String getMasterDocCLSID() {
-    return masterDocCLSID;
+  @ApiModelProperty(example = "null", value = "třída nadřízeného dokladu [persistentní položka]")
+  public String getMasterdocclsid() {
+    return masterdocclsid;
   }
 
-  public void setMasterDocCLSID(String masterDocCLSID) {
-    this.masterDocCLSID = masterDocCLSID;
+  public void setMasterdocclsid(String masterdocclsid) {
+    this.masterdocclsid = masterdocclsid;
   }
 
-  public Logstoredocument masterDocumentID(String masterDocumentID) {
-    this.masterDocumentID = masterDocumentID;
+  public Logstoredocument masterdocumentId(String masterdocumentId) {
+    this.masterdocumentId = masterdocumentId;
     return this;
   }
 
    /**
-   * Nadřízený doklad; ID objektu Dokument [persistentní položka]
-   * @return masterDocumentID
+   * nadřízený doklad; id objektu dokument [persistentní položka]
+   * @return masterdocumentId
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízený doklad; ID objektu Dokument [persistentní položka]")
-  public String getMasterDocumentID() {
-    return masterDocumentID;
+  @ApiModelProperty(example = "null", value = "nadřízený doklad; id objektu dokument [persistentní položka]")
+  public String getMasterdocumentId() {
+    return masterdocumentId;
   }
 
-  public void setMasterDocumentID(String masterDocumentID) {
-    this.masterDocumentID = masterDocumentID;
+  public void setMasterdocumentId(String masterdocumentId) {
+    this.masterdocumentId = masterdocumentId;
   }
 
 
@@ -576,38 +621,38 @@ public class Logstoredocument   {
       return false;
     }
     Logstoredocument logstoredocument = (Logstoredocument) o;
-    return Objects.equals(this.displayName, logstoredocument.displayName) &&
-        Objects.equals(this.ID, logstoredocument.ID) &&
-        Objects.equals(this.classID, logstoredocument.classID) &&
-        Objects.equals(this.objVersion, logstoredocument.objVersion) &&
+    return Objects.equals(this.displayname, logstoredocument.displayname) &&
+        Objects.equals(this.id, logstoredocument.id) &&
+        Objects.equals(this.classid, logstoredocument.classid) &&
+        Objects.equals(this.objversion, logstoredocument.objversion) &&
         Objects.equals(this.rows, logstoredocument.rows) &&
-        Objects.equals(this.docQueueID, logstoredocument.docQueueID) &&
-        Objects.equals(this.periodID, logstoredocument.periodID) &&
-        Objects.equals(this.ordNumber, logstoredocument.ordNumber) &&
-        Objects.equals(this.docDateDATE, logstoredocument.docDateDATE) &&
-        Objects.equals(this.createdByID, logstoredocument.createdByID) &&
-        Objects.equals(this.correctedByID, logstoredocument.correctedByID) &&
-        Objects.equals(this.newRelatedType, logstoredocument.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, logstoredocument.newRelatedDocumentID) &&
-        Objects.equals(this.documentType, logstoredocument.documentType) &&
-        Objects.equals(this.storeDocumentType, logstoredocument.storeDocumentType) &&
-        Objects.equals(this.storeDocumentID, logstoredocument.storeDocumentID) &&
-        Objects.equals(this.storeGatewayID, logstoredocument.storeGatewayID) &&
+        Objects.equals(this.docqueueId, logstoredocument.docqueueId) &&
+        Objects.equals(this.periodId, logstoredocument.periodId) &&
+        Objects.equals(this.ordnumber, logstoredocument.ordnumber) &&
+        Objects.equals(this.docdatedate, logstoredocument.docdatedate) &&
+        Objects.equals(this.createdbyId, logstoredocument.createdbyId) &&
+        Objects.equals(this.correctedbyId, logstoredocument.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, logstoredocument.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, logstoredocument.newrelateddocumentId) &&
+        Objects.equals(this.documenttype, logstoredocument.documenttype) &&
+        Objects.equals(this.storedocumenttype, logstoredocument.storedocumenttype) &&
+        Objects.equals(this.storedocumentId, logstoredocument.storedocumentId) &&
+        Objects.equals(this.storegatewayId, logstoredocument.storegatewayId) &&
         Objects.equals(this.executed, logstoredocument.executed) &&
-        Objects.equals(this.noStoreDocument, logstoredocument.noStoreDocument) &&
+        Objects.equals(this.nostoredocument, logstoredocument.nostoredocument) &&
         Objects.equals(this.description, logstoredocument.description) &&
-        Objects.equals(this.externalNumber, logstoredocument.externalNumber) &&
-        Objects.equals(this.firmID, logstoredocument.firmID) &&
-        Objects.equals(this.storeManID, logstoredocument.storeManID) &&
-        Objects.equals(this.reservedForDocType, logstoredocument.reservedForDocType) &&
-        Objects.equals(this.reservedForDocID, logstoredocument.reservedForDocID) &&
-        Objects.equals(this.masterDocCLSID, logstoredocument.masterDocCLSID) &&
-        Objects.equals(this.masterDocumentID, logstoredocument.masterDocumentID);
+        Objects.equals(this.externalnumber, logstoredocument.externalnumber) &&
+        Objects.equals(this.firmId, logstoredocument.firmId) &&
+        Objects.equals(this.storemanId, logstoredocument.storemanId) &&
+        Objects.equals(this.reservedfordoctype, logstoredocument.reservedfordoctype) &&
+        Objects.equals(this.reservedfordocId, logstoredocument.reservedfordocId) &&
+        Objects.equals(this.masterdocclsid, logstoredocument.masterdocclsid) &&
+        Objects.equals(this.masterdocumentId, logstoredocument.masterdocumentId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, documentType, storeDocumentType, storeDocumentID, storeGatewayID, executed, noStoreDocument, description, externalNumber, firmID, storeManID, reservedForDocType, reservedForDocID, masterDocCLSID, masterDocumentID);
+    return Objects.hash(displayname, id, classid, objversion, rows, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, documenttype, storedocumenttype, storedocumentId, storegatewayId, executed, nostoredocument, description, externalnumber, firmId, storemanId, reservedfordoctype, reservedfordocId, masterdocclsid, masterdocumentId);
   }
 
   @Override
@@ -615,33 +660,33 @@ public class Logstoredocument   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Logstoredocument {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    documentType: ").append(toIndentedString(documentType)).append("\n");
-    sb.append("    storeDocumentType: ").append(toIndentedString(storeDocumentType)).append("\n");
-    sb.append("    storeDocumentID: ").append(toIndentedString(storeDocumentID)).append("\n");
-    sb.append("    storeGatewayID: ").append(toIndentedString(storeGatewayID)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    documenttype: ").append(toIndentedString(documenttype)).append("\n");
+    sb.append("    storedocumenttype: ").append(toIndentedString(storedocumenttype)).append("\n");
+    sb.append("    storedocumentId: ").append(toIndentedString(storedocumentId)).append("\n");
+    sb.append("    storegatewayId: ").append(toIndentedString(storegatewayId)).append("\n");
     sb.append("    executed: ").append(toIndentedString(executed)).append("\n");
-    sb.append("    noStoreDocument: ").append(toIndentedString(noStoreDocument)).append("\n");
+    sb.append("    nostoredocument: ").append(toIndentedString(nostoredocument)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    externalNumber: ").append(toIndentedString(externalNumber)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    storeManID: ").append(toIndentedString(storeManID)).append("\n");
-    sb.append("    reservedForDocType: ").append(toIndentedString(reservedForDocType)).append("\n");
-    sb.append("    reservedForDocID: ").append(toIndentedString(reservedForDocID)).append("\n");
-    sb.append("    masterDocCLSID: ").append(toIndentedString(masterDocCLSID)).append("\n");
-    sb.append("    masterDocumentID: ").append(toIndentedString(masterDocumentID)).append("\n");
+    sb.append("    externalnumber: ").append(toIndentedString(externalnumber)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    storemanId: ").append(toIndentedString(storemanId)).append("\n");
+    sb.append("    reservedfordoctype: ").append(toIndentedString(reservedfordoctype)).append("\n");
+    sb.append("    reservedfordocId: ").append(toIndentedString(reservedfordocId)).append("\n");
+    sb.append("    masterdocclsid: ").append(toIndentedString(masterdocclsid)).append("\n");
+    sb.append("    masterdocumentId: ").append(toIndentedString(masterdocumentId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

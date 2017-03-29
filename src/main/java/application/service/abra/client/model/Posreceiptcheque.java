@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,126 +34,171 @@ import java.util.Objects;
 /**
  * Posreceiptcheque
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posreceiptcheque   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("PaymentType_ID")
-  private String paymentTypeID = null;
+  @SerializedName("paymenttype_id")
+  private String paymenttypeId = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("TextDoc")
-  private String textDoc = null;
+  @SerializedName("textdoc")
+  private String textdoc = null;
 
-  @SerializedName("AuthCode")
-  private String authCode = null;
+  @SerializedName("authcode")
+  private String authcode = null;
 
-  @SerializedName("TransactionData")
-  private String transactionData = null;
+  @SerializedName("transactiondata")
+  private String transactiondata = null;
 
-  @SerializedName("ChequeState")
-  private Integer chequeState = null;
+  @SerializedName("chequestate")
+  private Integer chequestate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Tržba - řádek [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Tržba - řádek [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Posreceiptcheque currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Posreceiptcheque displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Posreceiptcheque paymentTypeID(String paymentTypeID) {
-    this.paymentTypeID = paymentTypeID;
+  public Posreceiptcheque id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Druh platby; ID objektu Způsob úhrady [persistentní položka]
-   * @return paymentTypeID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Druh platby; ID objektu Způsob úhrady [persistentní položka]")
-  public String getPaymentTypeID() {
-    return paymentTypeID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setPaymentTypeID(String paymentTypeID) {
-    this.paymentTypeID = paymentTypeID;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Posreceiptcheque classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Posreceiptcheque objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Posreceiptcheque parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu tržba - řádek [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu tržba - řádek [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Posreceiptcheque currencyId(String currencyId) {
+    this.currencyId = currencyId;
+    return this;
+  }
+
+   /**
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
+  **/
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
+  }
+
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
+  }
+
+  public Posreceiptcheque paymenttypeId(String paymenttypeId) {
+    this.paymenttypeId = paymenttypeId;
+    return this;
+  }
+
+   /**
+   * druh platby; id objektu způsob úhrady [persistentní položka]
+   * @return paymenttypeId
+  **/
+  @ApiModelProperty(example = "null", value = "druh platby; id objektu způsob úhrady [persistentní položka]")
+  public String getPaymenttypeId() {
+    return paymenttypeId;
+  }
+
+  public void setPaymenttypeId(String paymenttypeId) {
+    this.paymenttypeId = paymenttypeId;
   }
 
   public Posreceiptcheque amount(Double amount) {
@@ -162,10 +207,10 @@ public class Posreceiptcheque   {
   }
 
    /**
-   * Hodnota [persistentní položka]
+   * hodnota [persistentní položka]
    * @return amount
   **/
-  @ApiModelProperty(example = "null", value = "Hodnota [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "hodnota [persistentní položka]")
   public Double getAmount() {
     return amount;
   }
@@ -180,10 +225,10 @@ public class Posreceiptcheque   {
   }
 
    /**
-   * Text [persistentní položka]
+   * text [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Text [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "text [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -192,76 +237,76 @@ public class Posreceiptcheque   {
     this.description = description;
   }
 
-  public Posreceiptcheque textDoc(String textDoc) {
-    this.textDoc = textDoc;
+  public Posreceiptcheque textdoc(String textdoc) {
+    this.textdoc = textdoc;
     return this;
   }
 
    /**
    * Účtenka [persistentní položka]
-   * @return textDoc
+   * @return textdoc
   **/
   @ApiModelProperty(example = "null", value = "Účtenka [persistentní položka]")
-  public String getTextDoc() {
-    return textDoc;
+  public String getTextdoc() {
+    return textdoc;
   }
 
-  public void setTextDoc(String textDoc) {
-    this.textDoc = textDoc;
+  public void setTextdoc(String textdoc) {
+    this.textdoc = textdoc;
   }
 
-  public Posreceiptcheque authCode(String authCode) {
-    this.authCode = authCode;
+  public Posreceiptcheque authcode(String authcode) {
+    this.authcode = authcode;
     return this;
   }
 
    /**
-   * Autorizační kód [persistentní položka]
-   * @return authCode
+   * autorizační kód [persistentní položka]
+   * @return authcode
   **/
-  @ApiModelProperty(example = "null", value = "Autorizační kód [persistentní položka]")
-  public String getAuthCode() {
-    return authCode;
+  @ApiModelProperty(example = "null", value = "autorizační kód [persistentní položka]")
+  public String getAuthcode() {
+    return authcode;
   }
 
-  public void setAuthCode(String authCode) {
-    this.authCode = authCode;
+  public void setAuthcode(String authcode) {
+    this.authcode = authcode;
   }
 
-  public Posreceiptcheque transactionData(String transactionData) {
-    this.transactionData = transactionData;
+  public Posreceiptcheque transactiondata(String transactiondata) {
+    this.transactiondata = transactiondata;
     return this;
   }
 
    /**
-   * Transakční data [persistentní položka]
-   * @return transactionData
+   * transakční data [persistentní položka]
+   * @return transactiondata
   **/
-  @ApiModelProperty(example = "null", value = "Transakční data [persistentní položka]")
-  public String getTransactionData() {
-    return transactionData;
+  @ApiModelProperty(example = "null", value = "transakční data [persistentní položka]")
+  public String getTransactiondata() {
+    return transactiondata;
   }
 
-  public void setTransactionData(String transactionData) {
-    this.transactionData = transactionData;
+  public void setTransactiondata(String transactiondata) {
+    this.transactiondata = transactiondata;
   }
 
-  public Posreceiptcheque chequeState(Integer chequeState) {
-    this.chequeState = chequeState;
+  public Posreceiptcheque chequestate(Integer chequestate) {
+    this.chequestate = chequestate;
     return this;
   }
 
    /**
-   * Stav [persistentní položka]
-   * @return chequeState
+   * stav [persistentní položka]
+   * @return chequestate
   **/
-  @ApiModelProperty(example = "null", value = "Stav [persistentní položka]")
-  public Integer getChequeState() {
-    return chequeState;
+  @ApiModelProperty(example = "null", value = "stav [persistentní položka]")
+  public Integer getChequestate() {
+    return chequestate;
   }
 
-  public void setChequeState(Integer chequeState) {
-    this.chequeState = chequeState;
+  public void setChequestate(Integer chequestate) {
+    this.chequestate = chequestate;
   }
 
 
@@ -274,24 +319,24 @@ public class Posreceiptcheque   {
       return false;
     }
     Posreceiptcheque posreceiptcheque = (Posreceiptcheque) o;
-    return Objects.equals(this.displayName, posreceiptcheque.displayName) &&
-        Objects.equals(this.ID, posreceiptcheque.ID) &&
-        Objects.equals(this.classID, posreceiptcheque.classID) &&
-        Objects.equals(this.objVersion, posreceiptcheque.objVersion) &&
-        Objects.equals(this.parentID, posreceiptcheque.parentID) &&
-        Objects.equals(this.currencyID, posreceiptcheque.currencyID) &&
-        Objects.equals(this.paymentTypeID, posreceiptcheque.paymentTypeID) &&
+    return Objects.equals(this.displayname, posreceiptcheque.displayname) &&
+        Objects.equals(this.id, posreceiptcheque.id) &&
+        Objects.equals(this.classid, posreceiptcheque.classid) &&
+        Objects.equals(this.objversion, posreceiptcheque.objversion) &&
+        Objects.equals(this.parentId, posreceiptcheque.parentId) &&
+        Objects.equals(this.currencyId, posreceiptcheque.currencyId) &&
+        Objects.equals(this.paymenttypeId, posreceiptcheque.paymenttypeId) &&
         Objects.equals(this.amount, posreceiptcheque.amount) &&
         Objects.equals(this.description, posreceiptcheque.description) &&
-        Objects.equals(this.textDoc, posreceiptcheque.textDoc) &&
-        Objects.equals(this.authCode, posreceiptcheque.authCode) &&
-        Objects.equals(this.transactionData, posreceiptcheque.transactionData) &&
-        Objects.equals(this.chequeState, posreceiptcheque.chequeState);
+        Objects.equals(this.textdoc, posreceiptcheque.textdoc) &&
+        Objects.equals(this.authcode, posreceiptcheque.authcode) &&
+        Objects.equals(this.transactiondata, posreceiptcheque.transactiondata) &&
+        Objects.equals(this.chequestate, posreceiptcheque.chequestate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, currencyID, paymentTypeID, amount, description, textDoc, authCode, transactionData, chequeState);
+    return Objects.hash(displayname, id, classid, objversion, parentId, currencyId, paymenttypeId, amount, description, textdoc, authcode, transactiondata, chequestate);
   }
 
   @Override
@@ -299,19 +344,19 @@ public class Posreceiptcheque   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posreceiptcheque {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    paymentTypeID: ").append(toIndentedString(paymentTypeID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    paymenttypeId: ").append(toIndentedString(paymenttypeId)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    textDoc: ").append(toIndentedString(textDoc)).append("\n");
-    sb.append("    authCode: ").append(toIndentedString(authCode)).append("\n");
-    sb.append("    transactionData: ").append(toIndentedString(transactionData)).append("\n");
-    sb.append("    chequeState: ").append(toIndentedString(chequeState)).append("\n");
+    sb.append("    textdoc: ").append(toIndentedString(textdoc)).append("\n");
+    sb.append("    authcode: ").append(toIndentedString(authcode)).append("\n");
+    sb.append("    transactiondata: ").append(toIndentedString(transactiondata)).append("\n");
+    sb.append("    chequestate: ").append(toIndentedString(chequestate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

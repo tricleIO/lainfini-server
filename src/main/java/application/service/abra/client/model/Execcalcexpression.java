@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,183 +35,228 @@ import java.util.Objects;
 /**
  * Execcalcexpression
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Execcalcexpression   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("FieldCode")
-  private Integer fieldCode = null;
+  @SerializedName("fieldcode")
+  private Integer fieldcode = null;
 
-  @SerializedName("TypeOfSum")
-  private Integer typeOfSum = null;
+  @SerializedName("typeofsum")
+  private Integer typeofsum = null;
 
-  @SerializedName("Expression")
+  @SerializedName("expression")
   private String expression = null;
 
-  @SerializedName("Condition")
+  @SerializedName("condition")
   private String condition = null;
 
-  @SerializedName("Rounding")
+  @SerializedName("rounding")
   private Integer rounding = null;
 
-  @SerializedName("StdActionCode")
-  private Integer stdActionCode = null;
+  @SerializedName("stdactioncode")
+  private Integer stdactioncode = null;
 
-  @SerializedName("StdActionExecute")
-  private Integer stdActionExecute = null;
+  @SerializedName("stdactionexecute")
+  private Integer stdactionexecute = null;
 
-  @SerializedName("CheckExpression")
-  private String checkExpression = null;
+  @SerializedName("checkexpression")
+  private String checkexpression = null;
 
-  @SerializedName("ErrorSeverity")
-  private Integer errorSeverity = null;
+  @SerializedName("errorseverity")
+  private Integer errorseverity = null;
 
-  @SerializedName("ValidFrom$DATE")
-  private DateTime validFromDATE = null;
+  @SerializedName("validfrom$date")
+  private DateTime validfromdate = null;
 
-  @SerializedName("UserExpression")
-  private String userExpression = null;
+  @SerializedName("userexpression")
+  private String userexpression = null;
 
-  @SerializedName("UserCondition")
-  private String userCondition = null;
+  @SerializedName("usercondition")
+  private String usercondition = null;
 
-  @SerializedName("UserExplanation")
-  private String userExplanation = null;
+  @SerializedName("userexplanation")
+  private String userexplanation = null;
 
-  @SerializedName("UserCheckExpression")
-  private String userCheckExpression = null;
+  @SerializedName("usercheckexpression")
+  private String usercheckexpression = null;
 
-  @SerializedName("SupressExpression")
-  private Integer supressExpression = null;
+  @SerializedName("supressexpression")
+  private Integer supressexpression = null;
 
-  @SerializedName("FieldName")
-  private String fieldName = null;
+  @SerializedName("fieldname")
+  private String fieldname = null;
 
-  @SerializedName("FieldLabel")
-  private String fieldLabel = null;
+  @SerializedName("fieldlabel")
+  private String fieldlabel = null;
 
-  @SerializedName("TypeOfSumText")
-  private String typeOfSumText = null;
+  @SerializedName("typeofsumtext")
+  private String typeofsumtext = null;
 
-  @SerializedName("StdActionExecuteText")
-  private String stdActionExecuteText = null;
+  @SerializedName("stdactionexecutetext")
+  private String stdactionexecutetext = null;
 
-  @SerializedName("ErrorSeverityText")
-  private String errorSeverityText = null;
+  @SerializedName("errorseveritytext")
+  private String errorseveritytext = null;
 
-  @SerializedName("SupressExpressionText")
-  private String supressExpressionText = null;
+  @SerializedName("supressexpressiontext")
+  private String supressexpressiontext = null;
 
-  @SerializedName("StdActionName")
-  private String stdActionName = null;
+  @SerializedName("stdactionname")
+  private String stdactionname = null;
 
-  @SerializedName("RoundingText")
-  private String roundingText = null;
+  @SerializedName("roundingtext")
+  private String roundingtext = null;
 
-  @SerializedName("ErrorMessage")
-  private String errorMessage = null;
+  @SerializedName("errormessage")
+  private String errormessage = null;
 
-  @SerializedName("StdActionParams")
-  private String stdActionParams = null;
+  @SerializedName("stdactionparams")
+  private String stdactionparams = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-  @SerializedName("Explanation")
+  @SerializedName("explanation")
   private String explanation = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Výpočtové schéma [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Výpočtové schéma [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Execcalcexpression fieldCode(Integer fieldCode) {
-    this.fieldCode = fieldCode;
+  public Execcalcexpression displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Kód [persistentní položka]
-   * @return fieldCode
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
-  public Integer getFieldCode() {
-    return fieldCode;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setFieldCode(Integer fieldCode) {
-    this.fieldCode = fieldCode;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Execcalcexpression typeOfSum(Integer typeOfSum) {
-    this.typeOfSum = typeOfSum;
+  public Execcalcexpression id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Součet [persistentní položka]
-   * @return typeOfSum
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Součet [persistentní položka]")
-  public Integer getTypeOfSum() {
-    return typeOfSum;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setTypeOfSum(Integer typeOfSum) {
-    this.typeOfSum = typeOfSum;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Execcalcexpression classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Execcalcexpression objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Execcalcexpression parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu výpočtové schéma [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu výpočtové schéma [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Execcalcexpression fieldcode(Integer fieldcode) {
+    this.fieldcode = fieldcode;
+    return this;
+  }
+
+   /**
+   * kód [persistentní položka]
+   * @return fieldcode
+  **/
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
+  public Integer getFieldcode() {
+    return fieldcode;
+  }
+
+  public void setFieldcode(Integer fieldcode) {
+    this.fieldcode = fieldcode;
+  }
+
+  public Execcalcexpression typeofsum(Integer typeofsum) {
+    this.typeofsum = typeofsum;
+    return this;
+  }
+
+   /**
+   * součet [persistentní položka]
+   * @return typeofsum
+  **/
+  @ApiModelProperty(example = "null", value = "součet [persistentní položka]")
+  public Integer getTypeofsum() {
+    return typeofsum;
+  }
+
+  public void setTypeofsum(Integer typeofsum) {
+    this.typeofsum = typeofsum;
   }
 
   public Execcalcexpression expression(String expression) {
@@ -220,10 +265,10 @@ public class Execcalcexpression   {
   }
 
    /**
-   * Výraz [persistentní položka]
+   * výraz [persistentní položka]
    * @return expression
   **/
-  @ApiModelProperty(example = "null", value = "Výraz [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "výraz [persistentní položka]")
   public String getExpression() {
     return expression;
   }
@@ -238,10 +283,10 @@ public class Execcalcexpression   {
   }
 
    /**
-   * Podmínka [persistentní položka]
+   * podmínka [persistentní položka]
    * @return condition
   **/
-  @ApiModelProperty(example = "null", value = "Podmínka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "podmínka [persistentní položka]")
   public String getCondition() {
     return condition;
   }
@@ -256,10 +301,10 @@ public class Execcalcexpression   {
   }
 
    /**
-   * Zaokrouhlení [persistentní položka]
+   * zaokrouhlení [persistentní položka]
    * @return rounding
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlení [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "zaokrouhlení [persistentní položka]")
   public Integer getRounding() {
     return rounding;
   }
@@ -268,364 +313,364 @@ public class Execcalcexpression   {
     this.rounding = rounding;
   }
 
-  public Execcalcexpression stdActionCode(Integer stdActionCode) {
-    this.stdActionCode = stdActionCode;
+  public Execcalcexpression stdactioncode(Integer stdactioncode) {
+    this.stdactioncode = stdactioncode;
     return this;
   }
 
    /**
-   * Std. akce [persistentní položka]
-   * @return stdActionCode
+   * std. akce [persistentní položka]
+   * @return stdactioncode
   **/
-  @ApiModelProperty(example = "null", value = "Std. akce [persistentní položka]")
-  public Integer getStdActionCode() {
-    return stdActionCode;
+  @ApiModelProperty(example = "null", value = "std. akce [persistentní položka]")
+  public Integer getStdactioncode() {
+    return stdactioncode;
   }
 
-  public void setStdActionCode(Integer stdActionCode) {
-    this.stdActionCode = stdActionCode;
+  public void setStdactioncode(Integer stdactioncode) {
+    this.stdactioncode = stdactioncode;
   }
 
-  public Execcalcexpression stdActionExecute(Integer stdActionExecute) {
-    this.stdActionExecute = stdActionExecute;
+  public Execcalcexpression stdactionexecute(Integer stdactionexecute) {
+    this.stdactionexecute = stdactionexecute;
     return this;
   }
 
    /**
-   * Kde provést [persistentní položka]
-   * @return stdActionExecute
+   * kde provést [persistentní položka]
+   * @return stdactionexecute
   **/
-  @ApiModelProperty(example = "null", value = "Kde provést [persistentní položka]")
-  public Integer getStdActionExecute() {
-    return stdActionExecute;
+  @ApiModelProperty(example = "null", value = "kde provést [persistentní položka]")
+  public Integer getStdactionexecute() {
+    return stdactionexecute;
   }
 
-  public void setStdActionExecute(Integer stdActionExecute) {
-    this.stdActionExecute = stdActionExecute;
+  public void setStdactionexecute(Integer stdactionexecute) {
+    this.stdactionexecute = stdactionexecute;
   }
 
-  public Execcalcexpression checkExpression(String checkExpression) {
-    this.checkExpression = checkExpression;
+  public Execcalcexpression checkexpression(String checkexpression) {
+    this.checkexpression = checkexpression;
     return this;
   }
 
    /**
-   * Kontrola [persistentní položka]
-   * @return checkExpression
+   * kontrola [persistentní položka]
+   * @return checkexpression
   **/
-  @ApiModelProperty(example = "null", value = "Kontrola [persistentní položka]")
-  public String getCheckExpression() {
-    return checkExpression;
+  @ApiModelProperty(example = "null", value = "kontrola [persistentní položka]")
+  public String getCheckexpression() {
+    return checkexpression;
   }
 
-  public void setCheckExpression(String checkExpression) {
-    this.checkExpression = checkExpression;
+  public void setCheckexpression(String checkexpression) {
+    this.checkexpression = checkexpression;
   }
 
-  public Execcalcexpression errorSeverity(Integer errorSeverity) {
-    this.errorSeverity = errorSeverity;
+  public Execcalcexpression errorseverity(Integer errorseverity) {
+    this.errorseverity = errorseverity;
     return this;
   }
 
    /**
-   * Typ chyby [persistentní položka]
-   * @return errorSeverity
+   * typ chyby [persistentní položka]
+   * @return errorseverity
   **/
-  @ApiModelProperty(example = "null", value = "Typ chyby [persistentní položka]")
-  public Integer getErrorSeverity() {
-    return errorSeverity;
+  @ApiModelProperty(example = "null", value = "typ chyby [persistentní položka]")
+  public Integer getErrorseverity() {
+    return errorseverity;
   }
 
-  public void setErrorSeverity(Integer errorSeverity) {
-    this.errorSeverity = errorSeverity;
+  public void setErrorseverity(Integer errorseverity) {
+    this.errorseverity = errorseverity;
   }
 
-  public Execcalcexpression validFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public Execcalcexpression validfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
     return this;
   }
 
    /**
-   * Platí od [persistentní položka]
-   * @return validFromDATE
+   * platí od [persistentní položka]
+   * @return validfromdate
   **/
-  @ApiModelProperty(example = "null", value = "Platí od [persistentní položka]")
-  public DateTime getValidFromDATE() {
-    return validFromDATE;
+  @ApiModelProperty(example = "null", value = "platí od [persistentní položka]")
+  public DateTime getValidfromdate() {
+    return validfromdate;
   }
 
-  public void setValidFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public void setValidfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
   }
 
-  public Execcalcexpression userExpression(String userExpression) {
-    this.userExpression = userExpression;
+  public Execcalcexpression userexpression(String userexpression) {
+    this.userexpression = userexpression;
     return this;
   }
 
    /**
-   * Uživ. výraz
-   * @return userExpression
+   * uživ. výraz
+   * @return userexpression
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. výraz")
-  public String getUserExpression() {
-    return userExpression;
+  @ApiModelProperty(example = "null", value = "uživ. výraz")
+  public String getUserexpression() {
+    return userexpression;
   }
 
-  public void setUserExpression(String userExpression) {
-    this.userExpression = userExpression;
+  public void setUserexpression(String userexpression) {
+    this.userexpression = userexpression;
   }
 
-  public Execcalcexpression userCondition(String userCondition) {
-    this.userCondition = userCondition;
+  public Execcalcexpression usercondition(String usercondition) {
+    this.usercondition = usercondition;
     return this;
   }
 
    /**
-   * Uživ. podmínka
-   * @return userCondition
+   * uživ. podmínka
+   * @return usercondition
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. podmínka")
-  public String getUserCondition() {
-    return userCondition;
+  @ApiModelProperty(example = "null", value = "uživ. podmínka")
+  public String getUsercondition() {
+    return usercondition;
   }
 
-  public void setUserCondition(String userCondition) {
-    this.userCondition = userCondition;
+  public void setUsercondition(String usercondition) {
+    this.usercondition = usercondition;
   }
 
-  public Execcalcexpression userExplanation(String userExplanation) {
-    this.userExplanation = userExplanation;
+  public Execcalcexpression userexplanation(String userexplanation) {
+    this.userexplanation = userexplanation;
     return this;
   }
 
    /**
-   * Vysvětlení uživ. výrazu
-   * @return userExplanation
+   * vysvětlení uživ. výrazu
+   * @return userexplanation
   **/
-  @ApiModelProperty(example = "null", value = "Vysvětlení uživ. výrazu")
-  public String getUserExplanation() {
-    return userExplanation;
+  @ApiModelProperty(example = "null", value = "vysvětlení uživ. výrazu")
+  public String getUserexplanation() {
+    return userexplanation;
   }
 
-  public void setUserExplanation(String userExplanation) {
-    this.userExplanation = userExplanation;
+  public void setUserexplanation(String userexplanation) {
+    this.userexplanation = userexplanation;
   }
 
-  public Execcalcexpression userCheckExpression(String userCheckExpression) {
-    this.userCheckExpression = userCheckExpression;
+  public Execcalcexpression usercheckexpression(String usercheckexpression) {
+    this.usercheckexpression = usercheckexpression;
     return this;
   }
 
    /**
-   * Uživ. kontrola
-   * @return userCheckExpression
+   * uživ. kontrola
+   * @return usercheckexpression
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. kontrola")
-  public String getUserCheckExpression() {
-    return userCheckExpression;
+  @ApiModelProperty(example = "null", value = "uživ. kontrola")
+  public String getUsercheckexpression() {
+    return usercheckexpression;
   }
 
-  public void setUserCheckExpression(String userCheckExpression) {
-    this.userCheckExpression = userCheckExpression;
+  public void setUsercheckexpression(String usercheckexpression) {
+    this.usercheckexpression = usercheckexpression;
   }
 
-  public Execcalcexpression supressExpression(Integer supressExpression) {
-    this.supressExpression = supressExpression;
+  public Execcalcexpression supressexpression(Integer supressexpression) {
+    this.supressexpression = supressexpression;
     return this;
   }
 
    /**
-   * Použít výraz
-   * @return supressExpression
+   * použít výraz
+   * @return supressexpression
   **/
-  @ApiModelProperty(example = "null", value = "Použít výraz")
-  public Integer getSupressExpression() {
-    return supressExpression;
+  @ApiModelProperty(example = "null", value = "použít výraz")
+  public Integer getSupressexpression() {
+    return supressexpression;
   }
 
-  public void setSupressExpression(Integer supressExpression) {
-    this.supressExpression = supressExpression;
+  public void setSupressexpression(Integer supressexpression) {
+    this.supressexpression = supressexpression;
   }
 
-  public Execcalcexpression fieldName(String fieldName) {
-    this.fieldName = fieldName;
+  public Execcalcexpression fieldname(String fieldname) {
+    this.fieldname = fieldname;
     return this;
   }
 
    /**
-   * Název položky
-   * @return fieldName
+   * název položky
+   * @return fieldname
   **/
-  @ApiModelProperty(example = "null", value = "Název položky")
-  public String getFieldName() {
-    return fieldName;
+  @ApiModelProperty(example = "null", value = "název položky")
+  public String getFieldname() {
+    return fieldname;
   }
 
-  public void setFieldName(String fieldName) {
-    this.fieldName = fieldName;
+  public void setFieldname(String fieldname) {
+    this.fieldname = fieldname;
   }
 
-  public Execcalcexpression fieldLabel(String fieldLabel) {
-    this.fieldLabel = fieldLabel;
+  public Execcalcexpression fieldlabel(String fieldlabel) {
+    this.fieldlabel = fieldlabel;
     return this;
   }
 
    /**
-   * Popis položky
-   * @return fieldLabel
+   * popis položky
+   * @return fieldlabel
   **/
-  @ApiModelProperty(example = "null", value = "Popis položky")
-  public String getFieldLabel() {
-    return fieldLabel;
+  @ApiModelProperty(example = "null", value = "popis položky")
+  public String getFieldlabel() {
+    return fieldlabel;
   }
 
-  public void setFieldLabel(String fieldLabel) {
-    this.fieldLabel = fieldLabel;
+  public void setFieldlabel(String fieldlabel) {
+    this.fieldlabel = fieldlabel;
   }
 
-  public Execcalcexpression typeOfSumText(String typeOfSumText) {
-    this.typeOfSumText = typeOfSumText;
+  public Execcalcexpression typeofsumtext(String typeofsumtext) {
+    this.typeofsumtext = typeofsumtext;
     return this;
   }
 
    /**
-   * Součet
-   * @return typeOfSumText
+   * součet
+   * @return typeofsumtext
   **/
-  @ApiModelProperty(example = "null", value = "Součet")
-  public String getTypeOfSumText() {
-    return typeOfSumText;
+  @ApiModelProperty(example = "null", value = "součet")
+  public String getTypeofsumtext() {
+    return typeofsumtext;
   }
 
-  public void setTypeOfSumText(String typeOfSumText) {
-    this.typeOfSumText = typeOfSumText;
+  public void setTypeofsumtext(String typeofsumtext) {
+    this.typeofsumtext = typeofsumtext;
   }
 
-  public Execcalcexpression stdActionExecuteText(String stdActionExecuteText) {
-    this.stdActionExecuteText = stdActionExecuteText;
+  public Execcalcexpression stdactionexecutetext(String stdactionexecutetext) {
+    this.stdactionexecutetext = stdactionexecutetext;
     return this;
   }
 
    /**
-   * Kde provést
-   * @return stdActionExecuteText
+   * kde provést
+   * @return stdactionexecutetext
   **/
-  @ApiModelProperty(example = "null", value = "Kde provést")
-  public String getStdActionExecuteText() {
-    return stdActionExecuteText;
+  @ApiModelProperty(example = "null", value = "kde provést")
+  public String getStdactionexecutetext() {
+    return stdactionexecutetext;
   }
 
-  public void setStdActionExecuteText(String stdActionExecuteText) {
-    this.stdActionExecuteText = stdActionExecuteText;
+  public void setStdactionexecutetext(String stdactionexecutetext) {
+    this.stdactionexecutetext = stdactionexecutetext;
   }
 
-  public Execcalcexpression errorSeverityText(String errorSeverityText) {
-    this.errorSeverityText = errorSeverityText;
+  public Execcalcexpression errorseveritytext(String errorseveritytext) {
+    this.errorseveritytext = errorseveritytext;
     return this;
   }
 
    /**
-   * Typ chyby
-   * @return errorSeverityText
+   * typ chyby
+   * @return errorseveritytext
   **/
-  @ApiModelProperty(example = "null", value = "Typ chyby")
-  public String getErrorSeverityText() {
-    return errorSeverityText;
+  @ApiModelProperty(example = "null", value = "typ chyby")
+  public String getErrorseveritytext() {
+    return errorseveritytext;
   }
 
-  public void setErrorSeverityText(String errorSeverityText) {
-    this.errorSeverityText = errorSeverityText;
+  public void setErrorseveritytext(String errorseveritytext) {
+    this.errorseveritytext = errorseveritytext;
   }
 
-  public Execcalcexpression supressExpressionText(String supressExpressionText) {
-    this.supressExpressionText = supressExpressionText;
+  public Execcalcexpression supressexpressiontext(String supressexpressiontext) {
+    this.supressexpressiontext = supressexpressiontext;
     return this;
   }
 
    /**
-   * Použít výraz
-   * @return supressExpressionText
+   * použít výraz
+   * @return supressexpressiontext
   **/
-  @ApiModelProperty(example = "null", value = "Použít výraz")
-  public String getSupressExpressionText() {
-    return supressExpressionText;
+  @ApiModelProperty(example = "null", value = "použít výraz")
+  public String getSupressexpressiontext() {
+    return supressexpressiontext;
   }
 
-  public void setSupressExpressionText(String supressExpressionText) {
-    this.supressExpressionText = supressExpressionText;
+  public void setSupressexpressiontext(String supressexpressiontext) {
+    this.supressexpressiontext = supressexpressiontext;
   }
 
-  public Execcalcexpression stdActionName(String stdActionName) {
-    this.stdActionName = stdActionName;
+  public Execcalcexpression stdactionname(String stdactionname) {
+    this.stdactionname = stdactionname;
     return this;
   }
 
    /**
-   * Std. akce
-   * @return stdActionName
+   * std. akce
+   * @return stdactionname
   **/
-  @ApiModelProperty(example = "null", value = "Std. akce")
-  public String getStdActionName() {
-    return stdActionName;
+  @ApiModelProperty(example = "null", value = "std. akce")
+  public String getStdactionname() {
+    return stdactionname;
   }
 
-  public void setStdActionName(String stdActionName) {
-    this.stdActionName = stdActionName;
+  public void setStdactionname(String stdactionname) {
+    this.stdactionname = stdactionname;
   }
 
-  public Execcalcexpression roundingText(String roundingText) {
-    this.roundingText = roundingText;
+  public Execcalcexpression roundingtext(String roundingtext) {
+    this.roundingtext = roundingtext;
     return this;
   }
 
    /**
-   * Zaokrouhlení
-   * @return roundingText
+   * zaokrouhlení
+   * @return roundingtext
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlení")
-  public String getRoundingText() {
-    return roundingText;
+  @ApiModelProperty(example = "null", value = "zaokrouhlení")
+  public String getRoundingtext() {
+    return roundingtext;
   }
 
-  public void setRoundingText(String roundingText) {
-    this.roundingText = roundingText;
+  public void setRoundingtext(String roundingtext) {
+    this.roundingtext = roundingtext;
   }
 
-  public Execcalcexpression errorMessage(String errorMessage) {
-    this.errorMessage = errorMessage;
+  public Execcalcexpression errormessage(String errormessage) {
+    this.errormessage = errormessage;
     return this;
   }
 
    /**
-   * Zpráva [persistentní položka]
-   * @return errorMessage
+   * zpráva [persistentní položka]
+   * @return errormessage
   **/
-  @ApiModelProperty(example = "null", value = "Zpráva [persistentní položka]")
-  public String getErrorMessage() {
-    return errorMessage;
+  @ApiModelProperty(example = "null", value = "zpráva [persistentní položka]")
+  public String getErrormessage() {
+    return errormessage;
   }
 
-  public void setErrorMessage(String errorMessage) {
-    this.errorMessage = errorMessage;
+  public void setErrormessage(String errormessage) {
+    this.errormessage = errormessage;
   }
 
-  public Execcalcexpression stdActionParams(String stdActionParams) {
-    this.stdActionParams = stdActionParams;
+  public Execcalcexpression stdactionparams(String stdactionparams) {
+    this.stdactionparams = stdactionparams;
     return this;
   }
 
    /**
-   * Parametry std. akce [persistentní položka]
-   * @return stdActionParams
+   * parametry std. akce [persistentní položka]
+   * @return stdactionparams
   **/
-  @ApiModelProperty(example = "null", value = "Parametry std. akce [persistentní položka]")
-  public String getStdActionParams() {
-    return stdActionParams;
+  @ApiModelProperty(example = "null", value = "parametry std. akce [persistentní položka]")
+  public String getStdactionparams() {
+    return stdactionparams;
   }
 
-  public void setStdActionParams(String stdActionParams) {
-    this.stdActionParams = stdActionParams;
+  public void setStdactionparams(String stdactionparams) {
+    this.stdactionparams = stdactionparams;
   }
 
   public Execcalcexpression system(Boolean system) {
@@ -634,10 +679,10 @@ public class Execcalcexpression   {
   }
 
    /**
-   * Syst. definice [persistentní položka]
+   * syst. definice [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Syst. definice [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "syst. definice [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -652,10 +697,10 @@ public class Execcalcexpression   {
   }
 
    /**
-   * Vysvětlení [persistentní položka]
+   * vysvětlení [persistentní položka]
    * @return explanation
   **/
-  @ApiModelProperty(example = "null", value = "Vysvětlení [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "vysvětlení [persistentní položka]")
   public String getExplanation() {
     return explanation;
   }
@@ -674,43 +719,43 @@ public class Execcalcexpression   {
       return false;
     }
     Execcalcexpression execcalcexpression = (Execcalcexpression) o;
-    return Objects.equals(this.displayName, execcalcexpression.displayName) &&
-        Objects.equals(this.ID, execcalcexpression.ID) &&
-        Objects.equals(this.classID, execcalcexpression.classID) &&
-        Objects.equals(this.objVersion, execcalcexpression.objVersion) &&
-        Objects.equals(this.parentID, execcalcexpression.parentID) &&
-        Objects.equals(this.fieldCode, execcalcexpression.fieldCode) &&
-        Objects.equals(this.typeOfSum, execcalcexpression.typeOfSum) &&
+    return Objects.equals(this.displayname, execcalcexpression.displayname) &&
+        Objects.equals(this.id, execcalcexpression.id) &&
+        Objects.equals(this.classid, execcalcexpression.classid) &&
+        Objects.equals(this.objversion, execcalcexpression.objversion) &&
+        Objects.equals(this.parentId, execcalcexpression.parentId) &&
+        Objects.equals(this.fieldcode, execcalcexpression.fieldcode) &&
+        Objects.equals(this.typeofsum, execcalcexpression.typeofsum) &&
         Objects.equals(this.expression, execcalcexpression.expression) &&
         Objects.equals(this.condition, execcalcexpression.condition) &&
         Objects.equals(this.rounding, execcalcexpression.rounding) &&
-        Objects.equals(this.stdActionCode, execcalcexpression.stdActionCode) &&
-        Objects.equals(this.stdActionExecute, execcalcexpression.stdActionExecute) &&
-        Objects.equals(this.checkExpression, execcalcexpression.checkExpression) &&
-        Objects.equals(this.errorSeverity, execcalcexpression.errorSeverity) &&
-        Objects.equals(this.validFromDATE, execcalcexpression.validFromDATE) &&
-        Objects.equals(this.userExpression, execcalcexpression.userExpression) &&
-        Objects.equals(this.userCondition, execcalcexpression.userCondition) &&
-        Objects.equals(this.userExplanation, execcalcexpression.userExplanation) &&
-        Objects.equals(this.userCheckExpression, execcalcexpression.userCheckExpression) &&
-        Objects.equals(this.supressExpression, execcalcexpression.supressExpression) &&
-        Objects.equals(this.fieldName, execcalcexpression.fieldName) &&
-        Objects.equals(this.fieldLabel, execcalcexpression.fieldLabel) &&
-        Objects.equals(this.typeOfSumText, execcalcexpression.typeOfSumText) &&
-        Objects.equals(this.stdActionExecuteText, execcalcexpression.stdActionExecuteText) &&
-        Objects.equals(this.errorSeverityText, execcalcexpression.errorSeverityText) &&
-        Objects.equals(this.supressExpressionText, execcalcexpression.supressExpressionText) &&
-        Objects.equals(this.stdActionName, execcalcexpression.stdActionName) &&
-        Objects.equals(this.roundingText, execcalcexpression.roundingText) &&
-        Objects.equals(this.errorMessage, execcalcexpression.errorMessage) &&
-        Objects.equals(this.stdActionParams, execcalcexpression.stdActionParams) &&
+        Objects.equals(this.stdactioncode, execcalcexpression.stdactioncode) &&
+        Objects.equals(this.stdactionexecute, execcalcexpression.stdactionexecute) &&
+        Objects.equals(this.checkexpression, execcalcexpression.checkexpression) &&
+        Objects.equals(this.errorseverity, execcalcexpression.errorseverity) &&
+        Objects.equals(this.validfromdate, execcalcexpression.validfromdate) &&
+        Objects.equals(this.userexpression, execcalcexpression.userexpression) &&
+        Objects.equals(this.usercondition, execcalcexpression.usercondition) &&
+        Objects.equals(this.userexplanation, execcalcexpression.userexplanation) &&
+        Objects.equals(this.usercheckexpression, execcalcexpression.usercheckexpression) &&
+        Objects.equals(this.supressexpression, execcalcexpression.supressexpression) &&
+        Objects.equals(this.fieldname, execcalcexpression.fieldname) &&
+        Objects.equals(this.fieldlabel, execcalcexpression.fieldlabel) &&
+        Objects.equals(this.typeofsumtext, execcalcexpression.typeofsumtext) &&
+        Objects.equals(this.stdactionexecutetext, execcalcexpression.stdactionexecutetext) &&
+        Objects.equals(this.errorseveritytext, execcalcexpression.errorseveritytext) &&
+        Objects.equals(this.supressexpressiontext, execcalcexpression.supressexpressiontext) &&
+        Objects.equals(this.stdactionname, execcalcexpression.stdactionname) &&
+        Objects.equals(this.roundingtext, execcalcexpression.roundingtext) &&
+        Objects.equals(this.errormessage, execcalcexpression.errormessage) &&
+        Objects.equals(this.stdactionparams, execcalcexpression.stdactionparams) &&
         Objects.equals(this.system, execcalcexpression.system) &&
         Objects.equals(this.explanation, execcalcexpression.explanation);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, fieldCode, typeOfSum, expression, condition, rounding, stdActionCode, stdActionExecute, checkExpression, errorSeverity, validFromDATE, userExpression, userCondition, userExplanation, userCheckExpression, supressExpression, fieldName, fieldLabel, typeOfSumText, stdActionExecuteText, errorSeverityText, supressExpressionText, stdActionName, roundingText, errorMessage, stdActionParams, system, explanation);
+    return Objects.hash(displayname, id, classid, objversion, parentId, fieldcode, typeofsum, expression, condition, rounding, stdactioncode, stdactionexecute, checkexpression, errorseverity, validfromdate, userexpression, usercondition, userexplanation, usercheckexpression, supressexpression, fieldname, fieldlabel, typeofsumtext, stdactionexecutetext, errorseveritytext, supressexpressiontext, stdactionname, roundingtext, errormessage, stdactionparams, system, explanation);
   }
 
   @Override
@@ -718,36 +763,36 @@ public class Execcalcexpression   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Execcalcexpression {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    fieldCode: ").append(toIndentedString(fieldCode)).append("\n");
-    sb.append("    typeOfSum: ").append(toIndentedString(typeOfSum)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    fieldcode: ").append(toIndentedString(fieldcode)).append("\n");
+    sb.append("    typeofsum: ").append(toIndentedString(typeofsum)).append("\n");
     sb.append("    expression: ").append(toIndentedString(expression)).append("\n");
     sb.append("    condition: ").append(toIndentedString(condition)).append("\n");
     sb.append("    rounding: ").append(toIndentedString(rounding)).append("\n");
-    sb.append("    stdActionCode: ").append(toIndentedString(stdActionCode)).append("\n");
-    sb.append("    stdActionExecute: ").append(toIndentedString(stdActionExecute)).append("\n");
-    sb.append("    checkExpression: ").append(toIndentedString(checkExpression)).append("\n");
-    sb.append("    errorSeverity: ").append(toIndentedString(errorSeverity)).append("\n");
-    sb.append("    validFromDATE: ").append(toIndentedString(validFromDATE)).append("\n");
-    sb.append("    userExpression: ").append(toIndentedString(userExpression)).append("\n");
-    sb.append("    userCondition: ").append(toIndentedString(userCondition)).append("\n");
-    sb.append("    userExplanation: ").append(toIndentedString(userExplanation)).append("\n");
-    sb.append("    userCheckExpression: ").append(toIndentedString(userCheckExpression)).append("\n");
-    sb.append("    supressExpression: ").append(toIndentedString(supressExpression)).append("\n");
-    sb.append("    fieldName: ").append(toIndentedString(fieldName)).append("\n");
-    sb.append("    fieldLabel: ").append(toIndentedString(fieldLabel)).append("\n");
-    sb.append("    typeOfSumText: ").append(toIndentedString(typeOfSumText)).append("\n");
-    sb.append("    stdActionExecuteText: ").append(toIndentedString(stdActionExecuteText)).append("\n");
-    sb.append("    errorSeverityText: ").append(toIndentedString(errorSeverityText)).append("\n");
-    sb.append("    supressExpressionText: ").append(toIndentedString(supressExpressionText)).append("\n");
-    sb.append("    stdActionName: ").append(toIndentedString(stdActionName)).append("\n");
-    sb.append("    roundingText: ").append(toIndentedString(roundingText)).append("\n");
-    sb.append("    errorMessage: ").append(toIndentedString(errorMessage)).append("\n");
-    sb.append("    stdActionParams: ").append(toIndentedString(stdActionParams)).append("\n");
+    sb.append("    stdactioncode: ").append(toIndentedString(stdactioncode)).append("\n");
+    sb.append("    stdactionexecute: ").append(toIndentedString(stdactionexecute)).append("\n");
+    sb.append("    checkexpression: ").append(toIndentedString(checkexpression)).append("\n");
+    sb.append("    errorseverity: ").append(toIndentedString(errorseverity)).append("\n");
+    sb.append("    validfromdate: ").append(toIndentedString(validfromdate)).append("\n");
+    sb.append("    userexpression: ").append(toIndentedString(userexpression)).append("\n");
+    sb.append("    usercondition: ").append(toIndentedString(usercondition)).append("\n");
+    sb.append("    userexplanation: ").append(toIndentedString(userexplanation)).append("\n");
+    sb.append("    usercheckexpression: ").append(toIndentedString(usercheckexpression)).append("\n");
+    sb.append("    supressexpression: ").append(toIndentedString(supressexpression)).append("\n");
+    sb.append("    fieldname: ").append(toIndentedString(fieldname)).append("\n");
+    sb.append("    fieldlabel: ").append(toIndentedString(fieldlabel)).append("\n");
+    sb.append("    typeofsumtext: ").append(toIndentedString(typeofsumtext)).append("\n");
+    sb.append("    stdactionexecutetext: ").append(toIndentedString(stdactionexecutetext)).append("\n");
+    sb.append("    errorseveritytext: ").append(toIndentedString(errorseveritytext)).append("\n");
+    sb.append("    supressexpressiontext: ").append(toIndentedString(supressexpressiontext)).append("\n");
+    sb.append("    stdactionname: ").append(toIndentedString(stdactionname)).append("\n");
+    sb.append("    roundingtext: ").append(toIndentedString(roundingtext)).append("\n");
+    sb.append("    errormessage: ").append(toIndentedString(errormessage)).append("\n");
+    sb.append("    stdactionparams: ").append(toIndentedString(stdactionparams)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
     sb.append("    explanation: ").append(toIndentedString(explanation)).append("\n");
     sb.append("}");

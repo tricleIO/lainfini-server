@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,336 +36,372 @@ import java.util.Objects;
 /**
  * Plmworkscheduleitem
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmworkscheduleitem   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Priority$Date")
-  private DateTime priorityDate = null;
+  @SerializedName("priority$date")
+  private DateTime prioritydate = null;
 
-  @SerializedName("ReqRoutine_ID")
-  private String reqRoutineID = null;
+  @SerializedName("reqroutine_id")
+  private String reqroutineId = null;
 
-  @SerializedName("JORoutine_ID")
-  private String jORoutineID = null;
+  @SerializedName("joroutine_id")
+  private String joroutineId = null;
 
-  @SerializedName("Worker_ID")
-  private String workerID = null;
+  @SerializedName("worker_id")
+  private String workerId = null;
 
-  @SerializedName("WorkPlace_ID")
-  private String workPlaceID = null;
+  @SerializedName("workplace_id")
+  private String workplaceId = null;
 
-  @SerializedName("PlannedQuantity")
-  private Double plannedQuantity = null;
+  @SerializedName("plannedquantity")
+  private Double plannedquantity = null;
 
-  @SerializedName("Status")
+  @SerializedName("status")
   private Integer status = null;
 
-  @SerializedName("DateFrom$Date")
-  private LocalDate dateFromDate = null;
+  @SerializedName("datefrom$date")
+  private LocalDate datefromdate = null;
 
-  @SerializedName("ShiftType_ID")
-  private String shiftTypeID = null;
+  @SerializedName("shifttype_id")
+  private String shifttypeId = null;
 
-  @SerializedName("ConfirmedBy_ID")
-  private String confirmedByID = null;
+  @SerializedName("confirmedby_id")
+  private String confirmedbyId = null;
 
-  @SerializedName("RoutineTitle")
-  private String routineTitle = null;
+  @SerializedName("routinetitle")
+  private String routinetitle = null;
 
-  @SerializedName("RoutinePosition")
-  private Integer routinePosition = null;
+  @SerializedName("routineposition")
+  private Integer routineposition = null;
 
-  @SerializedName("RoutineQUnit")
-  private String routineQUnit = null;
+  @SerializedName("routinequnit")
+  private String routinequnit = null;
 
-  @SerializedName("RoutinePlannedQuantity")
-  private Double routinePlannedQuantity = null;
+  @SerializedName("routineplannedquantity")
+  private Double routineplannedquantity = null;
 
-  @SerializedName("RoutineRealizedQuantity")
-  private Double routineRealizedQuantity = null;
+  @SerializedName("routinerealizedquantity")
+  private Double routinerealizedquantity = null;
 
-  @SerializedName("RoutineMissedQuantity")
-  private Double routineMissedQuantity = null;
+  @SerializedName("routinemissedquantity")
+  private Double routinemissedquantity = null;
 
-  @SerializedName("RoutineRealizedWorkerQuantity")
-  private Double routineRealizedWorkerQuantity = null;
+  @SerializedName("routinerealizedworkerquantity")
+  private Double routinerealizedworkerquantity = null;
 
-  @SerializedName("RoutineRealizedWPlaceQuantity")
-  private Double routineRealizedWPlaceQuantity = null;
+  @SerializedName("routinerealizedwplacequantity")
+  private Double routinerealizedwplacequantity = null;
 
-  @SerializedName("RoutinePlannedTime")
-  private Double routinePlannedTime = null;
+  @SerializedName("routineplannedtime")
+  private Double routineplannedtime = null;
 
-  @SerializedName("RoutineRealizedTime")
-  private Double routineRealizedTime = null;
+  @SerializedName("routinerealizedtime")
+  private Double routinerealizedtime = null;
 
-  @SerializedName("RoutineMissedTime")
-  private Double routineMissedTime = null;
+  @SerializedName("routinemissedtime")
+  private Double routinemissedtime = null;
 
-  @SerializedName("RoutineRealizedWorkerTime")
-  private Double routineRealizedWorkerTime = null;
+  @SerializedName("routinerealizedworkertime")
+  private Double routinerealizedworkertime = null;
 
-  @SerializedName("RoutineRealizedWPlaceTime")
-  private Double routineRealizedWPlaceTime = null;
+  @SerializedName("routinerealizedwplacetime")
+  private Double routinerealizedwplacetime = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("RoutineWorkPlace_ID")
-  private String routineWorkPlaceID = null;
+  @SerializedName("routineworkplace_id")
+  private String routineworkplaceId = null;
 
-  @SerializedName("RoutinePhase_ID")
-  private String routinePhaseID = null;
+  @SerializedName("routinephase_id")
+  private String routinephaseId = null;
 
-  @SerializedName("RoutineTAC")
-  private Double routineTAC = null;
+  @SerializedName("routinetac")
+  private Double routinetac = null;
 
-  @SerializedName("RoutineTBC")
-  private Double routineTBC = null;
+  @SerializedName("routinetbc")
+  private Double routinetbc = null;
 
-  @SerializedName("RoutineNote")
-  private String routineNote = null;
+  @SerializedName("routinenote")
+  private String routinenote = null;
 
-  @SerializedName("RoutineCooperation")
-  private Boolean routineCooperation = null;
+  @SerializedName("routinecooperation")
+  private Boolean routinecooperation = null;
 
-  @SerializedName("RoutineCompulsoryOperation")
-  private Integer routineCompulsoryOperation = null;
+  @SerializedName("routinecompulsoryoperation")
+  private Integer routinecompulsoryoperation = null;
 
-  @SerializedName("RoutineFinished")
-  private Boolean routineFinished = null;
+  @SerializedName("routinefinished")
+  private Boolean routinefinished = null;
 
-  @SerializedName("RoutineSalaryClass_ID")
-  private String routineSalaryClassID = null;
+  @SerializedName("routinesalaryclass_id")
+  private String routinesalaryclassId = null;
 
-  @SerializedName("RoutineBatch")
-  private Boolean routineBatch = null;
+  @SerializedName("routinebatch")
+  private Boolean routinebatch = null;
 
-  @SerializedName("DocumentOID")
-  private String documentOID = null;
+  @SerializedName("documentoid")
+  private String documentoid = null;
 
-  @SerializedName("DocumentPlannedAt")
-  private LocalDate documentPlannedAt = null;
+  @SerializedName("documentplannedat")
+  private LocalDate documentplannedat = null;
 
-  @SerializedName("DocumentScheduledAt")
-  private LocalDate documentScheduledAt = null;
+  @SerializedName("documentscheduledat")
+  private LocalDate documentscheduledat = null;
 
-  @SerializedName("DocumentDisplayName")
-  private String documentDisplayName = null;
+  @SerializedName("documentdisplayname")
+  private String documentdisplayname = null;
 
-  @SerializedName("DocumentStoreCard_ID")
-  private String documentStoreCardID = null;
+  @SerializedName("documentstorecard_id")
+  private String documentstorecardId = null;
 
-  @SerializedName("BasedJobOrder")
-  private Boolean basedJobOrder = null;
+  @SerializedName("basedjoborder")
+  private Boolean basedjoborder = null;
 
-  @SerializedName("DocumentPriority")
-  private Integer documentPriority = null;
+  @SerializedName("documentpriority")
+  private Integer documentpriority = null;
 
-  @SerializedName("NodeTreeLevel")
-  private Integer nodeTreeLevel = null;
+  @SerializedName("nodetreelevel")
+  private Integer nodetreelevel = null;
 
-  @SerializedName("StatusText")
-  private String statusText = null;
+  @SerializedName("statustext")
+  private String statustext = null;
 
-  @SerializedName("PlannedTime")
-  private Double plannedTime = null;
+  @SerializedName("plannedtime")
+  private Double plannedtime = null;
 
-  @SerializedName("RealizedQuantity")
-  private Double realizedQuantity = null;
+  @SerializedName("realizedquantity")
+  private Double realizedquantity = null;
 
-  @SerializedName("RealizedTime")
-  private Double realizedTime = null;
+  @SerializedName("realizedtime")
+  private Double realizedtime = null;
 
-  @SerializedName("NoInRoutine")
-  private Integer noInRoutine = null;
+  @SerializedName("noinroutine")
+  private Integer noinroutine = null;
 
-  @SerializedName("Title")
+  @SerializedName("title")
   private String title = null;
 
-  @SerializedName("MissedQuantity")
-  private Double missedQuantity = null;
+  @SerializedName("missedquantity")
+  private Double missedquantity = null;
 
-  @SerializedName("MissedTime")
-  private Double missedTime = null;
+  @SerializedName("missedtime")
+  private Double missedtime = null;
 
-  @SerializedName("Fixed")
+  @SerializedName("fixed")
   private Boolean fixed = null;
 
-  @SerializedName("NodeIndex")
-  private Integer nodeIndex = null;
+  @SerializedName("nodeindex")
+  private Integer nodeindex = null;
 
-  @SerializedName("RoutineAdvanceQuantity")
-  private Double routineAdvanceQuantity = null;
+  @SerializedName("routineadvancequantity")
+  private Double routineadvancequantity = null;
 
-  @SerializedName("DocumentFirm_ID")
-  private String documentFirmID = null;
+  @SerializedName("documentfirm_id")
+  private String documentfirmId = null;
 
-  @SerializedName("DocumentDivision_ID")
-  private String documentDivisionID = null;
+  @SerializedName("documentdivision_id")
+  private String documentdivisionId = null;
 
-  @SerializedName("DocumentBusOrder_ID")
-  private String documentBusOrderID = null;
+  @SerializedName("documentbusorder_id")
+  private String documentbusorderId = null;
 
-  @SerializedName("DocumentBusTransaction_ID")
-  private String documentBusTransactionID = null;
+  @SerializedName("documentbustransaction_id")
+  private String documentbustransactionId = null;
 
-  @SerializedName("DocumentBusProject_ID")
-  private String documentBusProjectID = null;
+  @SerializedName("documentbusproject_id")
+  private String documentbusprojectId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Plmworkscheduleitem priorityDate(DateTime priorityDate) {
-    this.priorityDate = priorityDate;
+  public Plmworkscheduleitem displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return priorityDate
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public DateTime getPriorityDate() {
-    return priorityDate;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPriorityDate(DateTime priorityDate) {
-    this.priorityDate = priorityDate;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Plmworkscheduleitem reqRoutineID(String reqRoutineID) {
-    this.reqRoutineID = reqRoutineID;
+  public Plmworkscheduleitem id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Operace požadavku; ID objektu Požadavek na výrobu - technologický postup [persistentní položka]
-   * @return reqRoutineID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Operace požadavku; ID objektu Požadavek na výrobu - technologický postup [persistentní položka]")
-  public String getReqRoutineID() {
-    return reqRoutineID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setReqRoutineID(String reqRoutineID) {
-    this.reqRoutineID = reqRoutineID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Plmworkscheduleitem jORoutineID(String jORoutineID) {
-    this.jORoutineID = jORoutineID;
+  public Plmworkscheduleitem classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Operace výrobního příkazu; ID objektu VP - technologický postup [persistentní položka]
-   * @return jORoutineID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Operace výrobního příkazu; ID objektu VP - technologický postup [persistentní položka]")
-  public String getJORoutineID() {
-    return jORoutineID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setJORoutineID(String jORoutineID) {
-    this.jORoutineID = jORoutineID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Plmworkscheduleitem workerID(String workerID) {
-    this.workerID = workerID;
+  public Plmworkscheduleitem objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Pracovník; ID objektu Pracovník [persistentní položka]
-   * @return workerID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Pracovník; ID objektu Pracovník [persistentní položka]")
-  public String getWorkerID() {
-    return workerID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setWorkerID(String workerID) {
-    this.workerID = workerID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Plmworkscheduleitem workPlaceID(String workPlaceID) {
-    this.workPlaceID = workPlaceID;
+  public Plmworkscheduleitem prioritydate(DateTime prioritydate) {
+    this.prioritydate = prioritydate;
     return this;
   }
 
    /**
-   * Pracoviště; ID objektu Pracoviště a stroj [persistentní položka]
-   * @return workPlaceID
+   * pořadí [persistentní položka]
+   * @return prioritydate
   **/
-  @ApiModelProperty(example = "null", value = "Pracoviště; ID objektu Pracoviště a stroj [persistentní položka]")
-  public String getWorkPlaceID() {
-    return workPlaceID;
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public DateTime getPrioritydate() {
+    return prioritydate;
   }
 
-  public void setWorkPlaceID(String workPlaceID) {
-    this.workPlaceID = workPlaceID;
+  public void setPrioritydate(DateTime prioritydate) {
+    this.prioritydate = prioritydate;
   }
 
-  public Plmworkscheduleitem plannedQuantity(Double plannedQuantity) {
-    this.plannedQuantity = plannedQuantity;
+  public Plmworkscheduleitem reqroutineId(String reqroutineId) {
+    this.reqroutineId = reqroutineId;
     return this;
   }
 
    /**
-   * Plánované množství [persistentní položka]
-   * @return plannedQuantity
+   * operace požadavku; id objektu požadavek na výrobu - technologický postup [persistentní položka]
+   * @return reqroutineId
   **/
-  @ApiModelProperty(example = "null", value = "Plánované množství [persistentní položka]")
-  public Double getPlannedQuantity() {
-    return plannedQuantity;
+  @ApiModelProperty(example = "null", value = "operace požadavku; id objektu požadavek na výrobu - technologický postup [persistentní položka]")
+  public String getReqroutineId() {
+    return reqroutineId;
   }
 
-  public void setPlannedQuantity(Double plannedQuantity) {
-    this.plannedQuantity = plannedQuantity;
+  public void setReqroutineId(String reqroutineId) {
+    this.reqroutineId = reqroutineId;
+  }
+
+  public Plmworkscheduleitem joroutineId(String joroutineId) {
+    this.joroutineId = joroutineId;
+    return this;
+  }
+
+   /**
+   * operace výrobního příkazu; id objektu vp - technologický postup [persistentní položka]
+   * @return joroutineId
+  **/
+  @ApiModelProperty(example = "null", value = "operace výrobního příkazu; id objektu vp - technologický postup [persistentní položka]")
+  public String getJoroutineId() {
+    return joroutineId;
+  }
+
+  public void setJoroutineId(String joroutineId) {
+    this.joroutineId = joroutineId;
+  }
+
+  public Plmworkscheduleitem workerId(String workerId) {
+    this.workerId = workerId;
+    return this;
+  }
+
+   /**
+   * pracovník; id objektu pracovník [persistentní položka]
+   * @return workerId
+  **/
+  @ApiModelProperty(example = "null", value = "pracovník; id objektu pracovník [persistentní položka]")
+  public String getWorkerId() {
+    return workerId;
+  }
+
+  public void setWorkerId(String workerId) {
+    this.workerId = workerId;
+  }
+
+  public Plmworkscheduleitem workplaceId(String workplaceId) {
+    this.workplaceId = workplaceId;
+    return this;
+  }
+
+   /**
+   * pracoviště; id objektu pracoviště a stroj [persistentní položka]
+   * @return workplaceId
+  **/
+  @ApiModelProperty(example = "null", value = "pracoviště; id objektu pracoviště a stroj [persistentní položka]")
+  public String getWorkplaceId() {
+    return workplaceId;
+  }
+
+  public void setWorkplaceId(String workplaceId) {
+    this.workplaceId = workplaceId;
+  }
+
+  public Plmworkscheduleitem plannedquantity(Double plannedquantity) {
+    this.plannedquantity = plannedquantity;
+    return this;
+  }
+
+   /**
+   * plánované množství [persistentní položka]
+   * @return plannedquantity
+  **/
+  @ApiModelProperty(example = "null", value = "plánované množství [persistentní položka]")
+  public Double getPlannedquantity() {
+    return plannedquantity;
+  }
+
+  public void setPlannedquantity(Double plannedquantity) {
+    this.plannedquantity = plannedquantity;
   }
 
   public Plmworkscheduleitem status(Integer status) {
@@ -374,10 +410,10 @@ public class Plmworkscheduleitem   {
   }
 
    /**
-   * Stav [persistentní položka]
+   * stav [persistentní položka]
    * @return status
   **/
-  @ApiModelProperty(example = "null", value = "Stav [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "stav [persistentní položka]")
   public Integer getStatus() {
     return status;
   }
@@ -386,697 +422,724 @@ public class Plmworkscheduleitem   {
     this.status = status;
   }
 
-  public Plmworkscheduleitem dateFromDate(LocalDate dateFromDate) {
-    this.dateFromDate = dateFromDate;
+  public Plmworkscheduleitem datefromdate(LocalDate datefromdate) {
+    this.datefromdate = datefromdate;
     return this;
   }
 
    /**
-   * Datum [persistentní položka]
-   * @return dateFromDate
+   * datum [persistentní položka]
+   * @return datefromdate
   **/
-  @ApiModelProperty(example = "null", value = "Datum [persistentní položka]")
-  public LocalDate getDateFromDate() {
-    return dateFromDate;
+  @ApiModelProperty(example = "null", value = "datum [persistentní položka]")
+  public LocalDate getDatefromdate() {
+    return datefromdate;
   }
 
-  public void setDateFromDate(LocalDate dateFromDate) {
-    this.dateFromDate = dateFromDate;
+  public void setDatefromdate(LocalDate datefromdate) {
+    this.datefromdate = datefromdate;
   }
 
-  public Plmworkscheduleitem shiftTypeID(String shiftTypeID) {
-    this.shiftTypeID = shiftTypeID;
+  public Plmworkscheduleitem shifttypeId(String shifttypeId) {
+    this.shifttypeId = shifttypeId;
     return this;
   }
 
    /**
-   * Druh směny; ID objektu Druh pracovní směny [persistentní položka]
-   * @return shiftTypeID
+   * druh směny; id objektu druh pracovní směny [persistentní položka]
+   * @return shifttypeId
   **/
-  @ApiModelProperty(example = "null", value = "Druh směny; ID objektu Druh pracovní směny [persistentní položka]")
-  public String getShiftTypeID() {
-    return shiftTypeID;
+  @ApiModelProperty(example = "null", value = "druh směny; id objektu druh pracovní směny [persistentní položka]")
+  public String getShifttypeId() {
+    return shifttypeId;
   }
 
-  public void setShiftTypeID(String shiftTypeID) {
-    this.shiftTypeID = shiftTypeID;
+  public void setShifttypeId(String shifttypeId) {
+    this.shifttypeId = shifttypeId;
   }
 
-  public Plmworkscheduleitem confirmedByID(String confirmedByID) {
-    this.confirmedByID = confirmedByID;
+  public Plmworkscheduleitem confirmedbyId(String confirmedbyId) {
+    this.confirmedbyId = confirmedbyId;
     return this;
   }
 
    /**
-   * Potvrdil; ID objektu Uživatel [persistentní položka]
-   * @return confirmedByID
+   * potvrdil; id objektu uživatel [persistentní položka]
+   * @return confirmedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Potvrdil; ID objektu Uživatel [persistentní položka]")
-  public String getConfirmedByID() {
-    return confirmedByID;
+  @ApiModelProperty(example = "null", value = "potvrdil; id objektu uživatel [persistentní položka]")
+  public String getConfirmedbyId() {
+    return confirmedbyId;
   }
 
-  public void setConfirmedByID(String confirmedByID) {
-    this.confirmedByID = confirmedByID;
+  public void setConfirmedbyId(String confirmedbyId) {
+    this.confirmedbyId = confirmedbyId;
   }
 
-  public Plmworkscheduleitem routineTitle(String routineTitle) {
-    this.routineTitle = routineTitle;
+  public Plmworkscheduleitem routinetitle(String routinetitle) {
+    this.routinetitle = routinetitle;
     return this;
   }
 
    /**
-   * Operace
-   * @return routineTitle
+   * operace
+   * @return routinetitle
   **/
-  @ApiModelProperty(example = "null", value = "Operace")
-  public String getRoutineTitle() {
-    return routineTitle;
+  @ApiModelProperty(example = "null", value = "operace")
+  public String getRoutinetitle() {
+    return routinetitle;
   }
 
-  public void setRoutineTitle(String routineTitle) {
-    this.routineTitle = routineTitle;
+  public void setRoutinetitle(String routinetitle) {
+    this.routinetitle = routinetitle;
   }
 
-  public Plmworkscheduleitem routinePosition(Integer routinePosition) {
-    this.routinePosition = routinePosition;
+  public Plmworkscheduleitem routineposition(Integer routineposition) {
+    this.routineposition = routineposition;
     return this;
   }
 
    /**
-   * Pořadí/op.
-   * @return routinePosition
+   * pořadí/op.
+   * @return routineposition
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí/op.")
-  public Integer getRoutinePosition() {
-    return routinePosition;
+  @ApiModelProperty(example = "null", value = "pořadí/op.")
+  public Integer getRoutineposition() {
+    return routineposition;
   }
 
-  public void setRoutinePosition(Integer routinePosition) {
-    this.routinePosition = routinePosition;
+  public void setRoutineposition(Integer routineposition) {
+    this.routineposition = routineposition;
   }
 
-  public Plmworkscheduleitem routineQUnit(String routineQUnit) {
-    this.routineQUnit = routineQUnit;
+  public Plmworkscheduleitem routinequnit(String routinequnit) {
+    this.routinequnit = routinequnit;
     return this;
   }
 
    /**
-   * Jednotka/op.
-   * @return routineQUnit
+   * jednotka/op.
+   * @return routinequnit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka/op.")
-  public String getRoutineQUnit() {
-    return routineQUnit;
+  @ApiModelProperty(example = "null", value = "jednotka/op.")
+  public String getRoutinequnit() {
+    return routinequnit;
   }
 
-  public void setRoutineQUnit(String routineQUnit) {
-    this.routineQUnit = routineQUnit;
+  public void setRoutinequnit(String routinequnit) {
+    this.routinequnit = routinequnit;
   }
 
-  public Plmworkscheduleitem routinePlannedQuantity(Double routinePlannedQuantity) {
-    this.routinePlannedQuantity = routinePlannedQuantity;
+  public Plmworkscheduleitem routineplannedquantity(Double routineplannedquantity) {
+    this.routineplannedquantity = routineplannedquantity;
     return this;
   }
 
    /**
-   * Plán. množství/op.
-   * @return routinePlannedQuantity
+   * plán. množství/op.
+   * @return routineplannedquantity
   **/
-  @ApiModelProperty(example = "null", value = "Plán. množství/op.")
-  public Double getRoutinePlannedQuantity() {
-    return routinePlannedQuantity;
+  @ApiModelProperty(example = "null", value = "plán. množství/op.")
+  public Double getRoutineplannedquantity() {
+    return routineplannedquantity;
   }
 
-  public void setRoutinePlannedQuantity(Double routinePlannedQuantity) {
-    this.routinePlannedQuantity = routinePlannedQuantity;
+  public void setRoutineplannedquantity(Double routineplannedquantity) {
+    this.routineplannedquantity = routineplannedquantity;
   }
 
-  public Plmworkscheduleitem routineRealizedQuantity(Double routineRealizedQuantity) {
-    this.routineRealizedQuantity = routineRealizedQuantity;
+  public Plmworkscheduleitem routinerealizedquantity(Double routinerealizedquantity) {
+    this.routinerealizedquantity = routinerealizedquantity;
     return this;
   }
 
    /**
-   * Real. množstí/op.
-   * @return routineRealizedQuantity
+   * real. množstí/op.
+   * @return routinerealizedquantity
   **/
-  @ApiModelProperty(example = "null", value = "Real. množstí/op.")
-  public Double getRoutineRealizedQuantity() {
-    return routineRealizedQuantity;
+  @ApiModelProperty(example = "null", value = "real. množstí/op.")
+  public Double getRoutinerealizedquantity() {
+    return routinerealizedquantity;
   }
 
-  public void setRoutineRealizedQuantity(Double routineRealizedQuantity) {
-    this.routineRealizedQuantity = routineRealizedQuantity;
+  public void setRoutinerealizedquantity(Double routinerealizedquantity) {
+    this.routinerealizedquantity = routinerealizedquantity;
   }
 
-  public Plmworkscheduleitem routineMissedQuantity(Double routineMissedQuantity) {
-    this.routineMissedQuantity = routineMissedQuantity;
+  public Plmworkscheduleitem routinemissedquantity(Double routinemissedquantity) {
+    this.routinemissedquantity = routinemissedquantity;
     return this;
   }
 
    /**
-   * Chyb. množstí/op.
-   * @return routineMissedQuantity
+   * chyb. množstí/op.
+   * @return routinemissedquantity
   **/
-  @ApiModelProperty(example = "null", value = "Chyb. množstí/op.")
-  public Double getRoutineMissedQuantity() {
-    return routineMissedQuantity;
+  @ApiModelProperty(example = "null", value = "chyb. množstí/op.")
+  public Double getRoutinemissedquantity() {
+    return routinemissedquantity;
   }
 
-  public void setRoutineMissedQuantity(Double routineMissedQuantity) {
-    this.routineMissedQuantity = routineMissedQuantity;
+  public void setRoutinemissedquantity(Double routinemissedquantity) {
+    this.routinemissedquantity = routinemissedquantity;
   }
 
-  public Plmworkscheduleitem routineRealizedWorkerQuantity(Double routineRealizedWorkerQuantity) {
-    this.routineRealizedWorkerQuantity = routineRealizedWorkerQuantity;
+  public Plmworkscheduleitem routinerealizedworkerquantity(Double routinerealizedworkerquantity) {
+    this.routinerealizedworkerquantity = routinerealizedworkerquantity;
     return this;
   }
 
    /**
-   * Real. množství pracovníka/op.
-   * @return routineRealizedWorkerQuantity
+   * real. množství pracovníka/op.
+   * @return routinerealizedworkerquantity
   **/
-  @ApiModelProperty(example = "null", value = "Real. množství pracovníka/op.")
-  public Double getRoutineRealizedWorkerQuantity() {
-    return routineRealizedWorkerQuantity;
+  @ApiModelProperty(example = "null", value = "real. množství pracovníka/op.")
+  public Double getRoutinerealizedworkerquantity() {
+    return routinerealizedworkerquantity;
   }
 
-  public void setRoutineRealizedWorkerQuantity(Double routineRealizedWorkerQuantity) {
-    this.routineRealizedWorkerQuantity = routineRealizedWorkerQuantity;
+  public void setRoutinerealizedworkerquantity(Double routinerealizedworkerquantity) {
+    this.routinerealizedworkerquantity = routinerealizedworkerquantity;
   }
 
-  public Plmworkscheduleitem routineRealizedWPlaceQuantity(Double routineRealizedWPlaceQuantity) {
-    this.routineRealizedWPlaceQuantity = routineRealizedWPlaceQuantity;
+  public Plmworkscheduleitem routinerealizedwplacequantity(Double routinerealizedwplacequantity) {
+    this.routinerealizedwplacequantity = routinerealizedwplacequantity;
     return this;
   }
 
    /**
-   * Real. množství pracoviště/op.
-   * @return routineRealizedWPlaceQuantity
+   * real. množství pracoviště/op.
+   * @return routinerealizedwplacequantity
   **/
-  @ApiModelProperty(example = "null", value = "Real. množství pracoviště/op.")
-  public Double getRoutineRealizedWPlaceQuantity() {
-    return routineRealizedWPlaceQuantity;
+  @ApiModelProperty(example = "null", value = "real. množství pracoviště/op.")
+  public Double getRoutinerealizedwplacequantity() {
+    return routinerealizedwplacequantity;
   }
 
-  public void setRoutineRealizedWPlaceQuantity(Double routineRealizedWPlaceQuantity) {
-    this.routineRealizedWPlaceQuantity = routineRealizedWPlaceQuantity;
+  public void setRoutinerealizedwplacequantity(Double routinerealizedwplacequantity) {
+    this.routinerealizedwplacequantity = routinerealizedwplacequantity;
   }
 
-  public Plmworkscheduleitem routinePlannedTime(Double routinePlannedTime) {
-    this.routinePlannedTime = routinePlannedTime;
+  public Plmworkscheduleitem routineplannedtime(Double routineplannedtime) {
+    this.routineplannedtime = routineplannedtime;
     return this;
   }
 
    /**
-   * Plán. čas/op.
-   * @return routinePlannedTime
+   * plán. čas/op.
+   * @return routineplannedtime
   **/
-  @ApiModelProperty(example = "null", value = "Plán. čas/op.")
-  public Double getRoutinePlannedTime() {
-    return routinePlannedTime;
+  @ApiModelProperty(example = "null", value = "plán. čas/op.")
+  public Double getRoutineplannedtime() {
+    return routineplannedtime;
   }
 
-  public void setRoutinePlannedTime(Double routinePlannedTime) {
-    this.routinePlannedTime = routinePlannedTime;
+  public void setRoutineplannedtime(Double routineplannedtime) {
+    this.routineplannedtime = routineplannedtime;
   }
 
-  public Plmworkscheduleitem routineRealizedTime(Double routineRealizedTime) {
-    this.routineRealizedTime = routineRealizedTime;
+  public Plmworkscheduleitem routinerealizedtime(Double routinerealizedtime) {
+    this.routinerealizedtime = routinerealizedtime;
     return this;
   }
 
    /**
-   * Real. čas/op.
-   * @return routineRealizedTime
+   * real. čas/op.
+   * @return routinerealizedtime
   **/
-  @ApiModelProperty(example = "null", value = "Real. čas/op.")
-  public Double getRoutineRealizedTime() {
-    return routineRealizedTime;
+  @ApiModelProperty(example = "null", value = "real. čas/op.")
+  public Double getRoutinerealizedtime() {
+    return routinerealizedtime;
   }
 
-  public void setRoutineRealizedTime(Double routineRealizedTime) {
-    this.routineRealizedTime = routineRealizedTime;
+  public void setRoutinerealizedtime(Double routinerealizedtime) {
+    this.routinerealizedtime = routinerealizedtime;
   }
 
-  public Plmworkscheduleitem routineMissedTime(Double routineMissedTime) {
-    this.routineMissedTime = routineMissedTime;
+  public Plmworkscheduleitem routinemissedtime(Double routinemissedtime) {
+    this.routinemissedtime = routinemissedtime;
     return this;
   }
 
    /**
-   * Chyb. čas/op.
-   * @return routineMissedTime
+   * chyb. čas/op.
+   * @return routinemissedtime
   **/
-  @ApiModelProperty(example = "null", value = "Chyb. čas/op.")
-  public Double getRoutineMissedTime() {
-    return routineMissedTime;
+  @ApiModelProperty(example = "null", value = "chyb. čas/op.")
+  public Double getRoutinemissedtime() {
+    return routinemissedtime;
   }
 
-  public void setRoutineMissedTime(Double routineMissedTime) {
-    this.routineMissedTime = routineMissedTime;
+  public void setRoutinemissedtime(Double routinemissedtime) {
+    this.routinemissedtime = routinemissedtime;
   }
 
-  public Plmworkscheduleitem routineRealizedWorkerTime(Double routineRealizedWorkerTime) {
-    this.routineRealizedWorkerTime = routineRealizedWorkerTime;
+  public Plmworkscheduleitem routinerealizedworkertime(Double routinerealizedworkertime) {
+    this.routinerealizedworkertime = routinerealizedworkertime;
     return this;
   }
 
    /**
-   * Real. čas pracovníka/op.
-   * @return routineRealizedWorkerTime
+   * real. čas pracovníka/op.
+   * @return routinerealizedworkertime
   **/
-  @ApiModelProperty(example = "null", value = "Real. čas pracovníka/op.")
-  public Double getRoutineRealizedWorkerTime() {
-    return routineRealizedWorkerTime;
+  @ApiModelProperty(example = "null", value = "real. čas pracovníka/op.")
+  public Double getRoutinerealizedworkertime() {
+    return routinerealizedworkertime;
   }
 
-  public void setRoutineRealizedWorkerTime(Double routineRealizedWorkerTime) {
-    this.routineRealizedWorkerTime = routineRealizedWorkerTime;
+  public void setRoutinerealizedworkertime(Double routinerealizedworkertime) {
+    this.routinerealizedworkertime = routinerealizedworkertime;
   }
 
-  public Plmworkscheduleitem routineRealizedWPlaceTime(Double routineRealizedWPlaceTime) {
-    this.routineRealizedWPlaceTime = routineRealizedWPlaceTime;
+  public Plmworkscheduleitem routinerealizedwplacetime(Double routinerealizedwplacetime) {
+    this.routinerealizedwplacetime = routinerealizedwplacetime;
     return this;
   }
 
    /**
-   * Real. čas pracoviště/op.
-   * @return routineRealizedWPlaceTime
+   * real. čas pracoviště/op.
+   * @return routinerealizedwplacetime
   **/
-  @ApiModelProperty(example = "null", value = "Real. čas pracoviště/op.")
-  public Double getRoutineRealizedWPlaceTime() {
-    return routineRealizedWPlaceTime;
+  @ApiModelProperty(example = "null", value = "real. čas pracoviště/op.")
+  public Double getRoutinerealizedwplacetime() {
+    return routinerealizedwplacetime;
   }
 
-  public void setRoutineRealizedWPlaceTime(Double routineRealizedWPlaceTime) {
-    this.routineRealizedWPlaceTime = routineRealizedWPlaceTime;
+  public void setRoutinerealizedwplacetime(Double routinerealizedwplacetime) {
+    this.routinerealizedwplacetime = routinerealizedwplacetime;
   }
 
-  public Plmworkscheduleitem storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Plmworkscheduleitem storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta
-   * @return storeCardID
+   * skladová karta; id objektu skladová karta
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
   }
 
-  public Plmworkscheduleitem routineWorkPlaceID(String routineWorkPlaceID) {
-    this.routineWorkPlaceID = routineWorkPlaceID;
+  public Plmworkscheduleitem routineworkplaceId(String routineworkplaceId) {
+    this.routineworkplaceId = routineworkplaceId;
     return this;
   }
 
    /**
-   * Pracoviště/op.; ID objektu Pracoviště a stroj
-   * @return routineWorkPlaceID
+   * pracoviště/op.; id objektu pracoviště a stroj
+   * @return routineworkplaceId
   **/
-  @ApiModelProperty(example = "null", value = "Pracoviště/op.; ID objektu Pracoviště a stroj")
-  public String getRoutineWorkPlaceID() {
-    return routineWorkPlaceID;
+  @ApiModelProperty(example = "null", value = "pracoviště/op.; id objektu pracoviště a stroj")
+  public String getRoutineworkplaceId() {
+    return routineworkplaceId;
   }
 
-  public void setRoutineWorkPlaceID(String routineWorkPlaceID) {
-    this.routineWorkPlaceID = routineWorkPlaceID;
+  public void setRoutineworkplaceId(String routineworkplaceId) {
+    this.routineworkplaceId = routineworkplaceId;
   }
 
-  public Plmworkscheduleitem routinePhaseID(String routinePhaseID) {
-    this.routinePhaseID = routinePhaseID;
+  public Plmworkscheduleitem routinephaseId(String routinephaseId) {
+    this.routinephaseId = routinephaseId;
     return this;
   }
 
    /**
-   * Etapa/op.; ID objektu Etapa
-   * @return routinePhaseID
+   * etapa/op.; id objektu etapa
+   * @return routinephaseId
   **/
-  @ApiModelProperty(example = "null", value = "Etapa/op.; ID objektu Etapa")
-  public String getRoutinePhaseID() {
-    return routinePhaseID;
+  @ApiModelProperty(example = "null", value = "etapa/op.; id objektu etapa")
+  public String getRoutinephaseId() {
+    return routinephaseId;
   }
 
-  public void setRoutinePhaseID(String routinePhaseID) {
-    this.routinePhaseID = routinePhaseID;
+  public void setRoutinephaseId(String routinephaseId) {
+    this.routinephaseId = routinephaseId;
   }
 
-  public Plmworkscheduleitem routineTAC(Double routineTAC) {
-    this.routineTAC = routineTAC;
+  public Plmworkscheduleitem routinetac(Double routinetac) {
+    this.routinetac = routinetac;
     return this;
   }
 
    /**
-   * TAC/op.
-   * @return routineTAC
+   * tac/op.
+   * @return routinetac
   **/
-  @ApiModelProperty(example = "null", value = "TAC/op.")
-  public Double getRoutineTAC() {
-    return routineTAC;
+  @ApiModelProperty(example = "null", value = "tac/op.")
+  public Double getRoutinetac() {
+    return routinetac;
   }
 
-  public void setRoutineTAC(Double routineTAC) {
-    this.routineTAC = routineTAC;
+  public void setRoutinetac(Double routinetac) {
+    this.routinetac = routinetac;
   }
 
-  public Plmworkscheduleitem routineTBC(Double routineTBC) {
-    this.routineTBC = routineTBC;
+  public Plmworkscheduleitem routinetbc(Double routinetbc) {
+    this.routinetbc = routinetbc;
     return this;
   }
 
    /**
-   * TBC/op.
-   * @return routineTBC
+   * tbc/op.
+   * @return routinetbc
   **/
-  @ApiModelProperty(example = "null", value = "TBC/op.")
-  public Double getRoutineTBC() {
-    return routineTBC;
+  @ApiModelProperty(example = "null", value = "tbc/op.")
+  public Double getRoutinetbc() {
+    return routinetbc;
   }
 
-  public void setRoutineTBC(Double routineTBC) {
-    this.routineTBC = routineTBC;
+  public void setRoutinetbc(Double routinetbc) {
+    this.routinetbc = routinetbc;
   }
 
-  public Plmworkscheduleitem routineNote(String routineNote) {
-    this.routineNote = routineNote;
+  public Plmworkscheduleitem routinenote(String routinenote) {
+    this.routinenote = routinenote;
     return this;
   }
 
    /**
-   * Poznámka operace
-   * @return routineNote
+   * poznámka operace
+   * @return routinenote
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka operace")
-  public String getRoutineNote() {
-    return routineNote;
+  @ApiModelProperty(example = "null", value = "poznámka operace")
+  public String getRoutinenote() {
+    return routinenote;
   }
 
-  public void setRoutineNote(String routineNote) {
-    this.routineNote = routineNote;
+  public void setRoutinenote(String routinenote) {
+    this.routinenote = routinenote;
   }
 
-  public Plmworkscheduleitem routineCooperation(Boolean routineCooperation) {
-    this.routineCooperation = routineCooperation;
+  public Plmworkscheduleitem routinecooperation(Boolean routinecooperation) {
+    this.routinecooperation = routinecooperation;
     return this;
   }
 
    /**
-   * Kooperace/op.
-   * @return routineCooperation
+   * kooperace/op.
+   * @return routinecooperation
   **/
-  @ApiModelProperty(example = "null", value = "Kooperace/op.")
-  public Boolean getRoutineCooperation() {
-    return routineCooperation;
+  @ApiModelProperty(example = "null", value = "kooperace/op.")
+  public Boolean getRoutinecooperation() {
+    return routinecooperation;
   }
 
-  public void setRoutineCooperation(Boolean routineCooperation) {
-    this.routineCooperation = routineCooperation;
+  public void setRoutinecooperation(Boolean routinecooperation) {
+    this.routinecooperation = routinecooperation;
   }
 
-  public Plmworkscheduleitem routineCompulsoryOperation(Integer routineCompulsoryOperation) {
-    this.routineCompulsoryOperation = routineCompulsoryOperation;
+  public Plmworkscheduleitem routinecompulsoryoperation(Integer routinecompulsoryoperation) {
+    this.routinecompulsoryoperation = routinecompulsoryoperation;
     return this;
   }
 
    /**
-   * Povinné/op.
-   * @return routineCompulsoryOperation
+   * povinné/op.
+   * @return routinecompulsoryoperation
   **/
-  @ApiModelProperty(example = "null", value = "Povinné/op.")
-  public Integer getRoutineCompulsoryOperation() {
-    return routineCompulsoryOperation;
+  @ApiModelProperty(example = "null", value = "povinné/op.")
+  public Integer getRoutinecompulsoryoperation() {
+    return routinecompulsoryoperation;
   }
 
-  public void setRoutineCompulsoryOperation(Integer routineCompulsoryOperation) {
-    this.routineCompulsoryOperation = routineCompulsoryOperation;
+  public void setRoutinecompulsoryoperation(Integer routinecompulsoryoperation) {
+    this.routinecompulsoryoperation = routinecompulsoryoperation;
   }
 
-  public Plmworkscheduleitem routineFinished(Boolean routineFinished) {
-    this.routineFinished = routineFinished;
+  public Plmworkscheduleitem routinefinished(Boolean routinefinished) {
+    this.routinefinished = routinefinished;
     return this;
   }
 
    /**
-   * Dokončující/op.
-   * @return routineFinished
+   * dokončující/op.
+   * @return routinefinished
   **/
-  @ApiModelProperty(example = "null", value = "Dokončující/op.")
-  public Boolean getRoutineFinished() {
-    return routineFinished;
+  @ApiModelProperty(example = "null", value = "dokončující/op.")
+  public Boolean getRoutinefinished() {
+    return routinefinished;
   }
 
-  public void setRoutineFinished(Boolean routineFinished) {
-    this.routineFinished = routineFinished;
+  public void setRoutinefinished(Boolean routinefinished) {
+    this.routinefinished = routinefinished;
   }
 
-  public Plmworkscheduleitem routineSalaryClassID(String routineSalaryClassID) {
-    this.routineSalaryClassID = routineSalaryClassID;
+  public Plmworkscheduleitem routinesalaryclassId(String routinesalaryclassId) {
+    this.routinesalaryclassId = routinesalaryclassId;
     return this;
   }
 
    /**
-   * Tarifní třída/op.; ID objektu Tarifní třída
-   * @return routineSalaryClassID
+   * tarifní třída/op.; id objektu tarifní třída
+   * @return routinesalaryclassId
   **/
-  @ApiModelProperty(example = "null", value = "Tarifní třída/op.; ID objektu Tarifní třída")
-  public String getRoutineSalaryClassID() {
-    return routineSalaryClassID;
+  @ApiModelProperty(example = "null", value = "tarifní třída/op.; id objektu tarifní třída")
+  public String getRoutinesalaryclassId() {
+    return routinesalaryclassId;
   }
 
-  public void setRoutineSalaryClassID(String routineSalaryClassID) {
-    this.routineSalaryClassID = routineSalaryClassID;
+  public void setRoutinesalaryclassId(String routinesalaryclassId) {
+    this.routinesalaryclassId = routinesalaryclassId;
   }
 
-  public Plmworkscheduleitem routineBatch(Boolean routineBatch) {
-    this.routineBatch = routineBatch;
+  public Plmworkscheduleitem routinebatch(Boolean routinebatch) {
+    this.routinebatch = routinebatch;
     return this;
   }
 
    /**
-   * Dávková/op.
-   * @return routineBatch
+   * dávková/op.
+   * @return routinebatch
   **/
-  @ApiModelProperty(example = "null", value = "Dávková/op.")
-  public Boolean getRoutineBatch() {
-    return routineBatch;
+  @ApiModelProperty(example = "null", value = "dávková/op.")
+  public Boolean getRoutinebatch() {
+    return routinebatch;
   }
 
-  public void setRoutineBatch(Boolean routineBatch) {
-    this.routineBatch = routineBatch;
+  public void setRoutinebatch(Boolean routinebatch) {
+    this.routinebatch = routinebatch;
   }
 
-  public Plmworkscheduleitem documentOID(String documentOID) {
-    this.documentOID = documentOID;
+  public Plmworkscheduleitem documentoid(String documentoid) {
+    this.documentoid = documentoid;
     return this;
   }
 
    /**
-   * ID/dokl.
-   * @return documentOID
+   * id/dokl.
+   * @return documentoid
   **/
-  @ApiModelProperty(example = "null", value = "ID/dokl.")
-  public String getDocumentOID() {
-    return documentOID;
+  @ApiModelProperty(example = "null", value = "id/dokl.")
+  public String getDocumentoid() {
+    return documentoid;
   }
 
-  public void setDocumentOID(String documentOID) {
-    this.documentOID = documentOID;
+  public void setDocumentoid(String documentoid) {
+    this.documentoid = documentoid;
   }
 
-  public Plmworkscheduleitem documentPlannedAt(LocalDate documentPlannedAt) {
-    this.documentPlannedAt = documentPlannedAt;
+  public Plmworkscheduleitem documentplannedat(LocalDate documentplannedat) {
+    this.documentplannedat = documentplannedat;
     return this;
   }
 
    /**
-   * Plán. začátek/dokl.
-   * @return documentPlannedAt
+   * plán. začátek/dokl.
+   * @return documentplannedat
   **/
-  @ApiModelProperty(example = "null", value = "Plán. začátek/dokl.")
-  public LocalDate getDocumentPlannedAt() {
-    return documentPlannedAt;
+  @ApiModelProperty(example = "null", value = "plán. začátek/dokl.")
+  public LocalDate getDocumentplannedat() {
+    return documentplannedat;
   }
 
-  public void setDocumentPlannedAt(LocalDate documentPlannedAt) {
-    this.documentPlannedAt = documentPlannedAt;
+  public void setDocumentplannedat(LocalDate documentplannedat) {
+    this.documentplannedat = documentplannedat;
   }
 
-  public Plmworkscheduleitem documentScheduledAt(LocalDate documentScheduledAt) {
-    this.documentScheduledAt = documentScheduledAt;
+  public Plmworkscheduleitem documentscheduledat(LocalDate documentscheduledat) {
+    this.documentscheduledat = documentscheduledat;
     return this;
   }
 
    /**
-   * Plán. dokončení/dokl.
-   * @return documentScheduledAt
+   * plán. dokončení/dokl.
+   * @return documentscheduledat
   **/
-  @ApiModelProperty(example = "null", value = "Plán. dokončení/dokl.")
-  public LocalDate getDocumentScheduledAt() {
-    return documentScheduledAt;
+  @ApiModelProperty(example = "null", value = "plán. dokončení/dokl.")
+  public LocalDate getDocumentscheduledat() {
+    return documentscheduledat;
   }
 
-  public void setDocumentScheduledAt(LocalDate documentScheduledAt) {
-    this.documentScheduledAt = documentScheduledAt;
+  public void setDocumentscheduledat(LocalDate documentscheduledat) {
+    this.documentscheduledat = documentscheduledat;
   }
 
-  public Plmworkscheduleitem documentDisplayName(String documentDisplayName) {
-    this.documentDisplayName = documentDisplayName;
+  public Plmworkscheduleitem documentdisplayname(String documentdisplayname) {
+    this.documentdisplayname = documentdisplayname;
     return this;
   }
 
    /**
-   * Název/dokl.
-   * @return documentDisplayName
+   * název/dokl.
+   * @return documentdisplayname
   **/
-  @ApiModelProperty(example = "null", value = "Název/dokl.")
-  public String getDocumentDisplayName() {
-    return documentDisplayName;
+  @ApiModelProperty(example = "null", value = "název/dokl.")
+  public String getDocumentdisplayname() {
+    return documentdisplayname;
   }
 
-  public void setDocumentDisplayName(String documentDisplayName) {
-    this.documentDisplayName = documentDisplayName;
+  public void setDocumentdisplayname(String documentdisplayname) {
+    this.documentdisplayname = documentdisplayname;
   }
 
-  public Plmworkscheduleitem documentStoreCardID(String documentStoreCardID) {
-    this.documentStoreCardID = documentStoreCardID;
+  public Plmworkscheduleitem documentstorecardId(String documentstorecardId) {
+    this.documentstorecardId = documentstorecardId;
     return this;
   }
 
    /**
-   * Skladová karta/dokl.; ID objektu Skladová karta
-   * @return documentStoreCardID
+   * skladová karta/dokl.; id objektu skladová karta
+   * @return documentstorecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta/dokl.; ID objektu Skladová karta")
-  public String getDocumentStoreCardID() {
-    return documentStoreCardID;
+  @ApiModelProperty(example = "null", value = "skladová karta/dokl.; id objektu skladová karta")
+  public String getDocumentstorecardId() {
+    return documentstorecardId;
   }
 
-  public void setDocumentStoreCardID(String documentStoreCardID) {
-    this.documentStoreCardID = documentStoreCardID;
+  public void setDocumentstorecardId(String documentstorecardId) {
+    this.documentstorecardId = documentstorecardId;
   }
 
-  public Plmworkscheduleitem basedJobOrder(Boolean basedJobOrder) {
-    this.basedJobOrder = basedJobOrder;
+  public Plmworkscheduleitem basedjoborder(Boolean basedjoborder) {
+    this.basedjoborder = basedjoborder;
     return this;
   }
 
    /**
-   * Dle výr. příkazu
-   * @return basedJobOrder
+   * dle výr. příkazu
+   * @return basedjoborder
   **/
-  @ApiModelProperty(example = "null", value = "Dle výr. příkazu")
-  public Boolean getBasedJobOrder() {
-    return basedJobOrder;
+  @ApiModelProperty(example = "null", value = "dle výr. příkazu")
+  public Boolean getBasedjoborder() {
+    return basedjoborder;
   }
 
-  public void setBasedJobOrder(Boolean basedJobOrder) {
-    this.basedJobOrder = basedJobOrder;
+  public void setBasedjoborder(Boolean basedjoborder) {
+    this.basedjoborder = basedjoborder;
   }
 
-  public Plmworkscheduleitem documentPriority(Integer documentPriority) {
-    this.documentPriority = documentPriority;
+  public Plmworkscheduleitem documentpriority(Integer documentpriority) {
+    this.documentpriority = documentpriority;
     return this;
   }
 
    /**
-   * Priorita/dokl.
-   * @return documentPriority
+   * priorita/dokl.
+   * @return documentpriority
   **/
-  @ApiModelProperty(example = "null", value = "Priorita/dokl.")
-  public Integer getDocumentPriority() {
-    return documentPriority;
+  @ApiModelProperty(example = "null", value = "priorita/dokl.")
+  public Integer getDocumentpriority() {
+    return documentpriority;
   }
 
-  public void setDocumentPriority(Integer documentPriority) {
-    this.documentPriority = documentPriority;
+  public void setDocumentpriority(Integer documentpriority) {
+    this.documentpriority = documentpriority;
   }
 
-  public Plmworkscheduleitem nodeTreeLevel(Integer nodeTreeLevel) {
-    this.nodeTreeLevel = nodeTreeLevel;
+  public Plmworkscheduleitem nodetreelevel(Integer nodetreelevel) {
+    this.nodetreelevel = nodetreelevel;
     return this;
   }
 
    /**
    * Úroveň
-   * @return nodeTreeLevel
+   * @return nodetreelevel
   **/
   @ApiModelProperty(example = "null", value = "Úroveň")
-  public Integer getNodeTreeLevel() {
-    return nodeTreeLevel;
+  public Integer getNodetreelevel() {
+    return nodetreelevel;
   }
 
-  public void setNodeTreeLevel(Integer nodeTreeLevel) {
-    this.nodeTreeLevel = nodeTreeLevel;
+  public void setNodetreelevel(Integer nodetreelevel) {
+    this.nodetreelevel = nodetreelevel;
   }
 
-  public Plmworkscheduleitem statusText(String statusText) {
-    this.statusText = statusText;
+  public Plmworkscheduleitem statustext(String statustext) {
+    this.statustext = statustext;
     return this;
   }
 
    /**
-   * Stav
-   * @return statusText
+   * stav
+   * @return statustext
   **/
-  @ApiModelProperty(example = "null", value = "Stav")
-  public String getStatusText() {
-    return statusText;
+  @ApiModelProperty(example = "null", value = "stav")
+  public String getStatustext() {
+    return statustext;
   }
 
-  public void setStatusText(String statusText) {
-    this.statusText = statusText;
+  public void setStatustext(String statustext) {
+    this.statustext = statustext;
   }
 
-   /**
-   * Plánovaný čas
-   * @return plannedTime
-  **/
-  @ApiModelProperty(example = "null", value = "Plánovaný čas")
-  public Double getPlannedTime() {
-    return plannedTime;
-  }
-
-   /**
-   * Realizované množství
-   * @return realizedQuantity
-  **/
-  @ApiModelProperty(example = "null", value = "Realizované množství")
-  public Double getRealizedQuantity() {
-    return realizedQuantity;
-  }
-
-   /**
-   * Realizovaný čas
-   * @return realizedTime
-  **/
-  @ApiModelProperty(example = "null", value = "Realizovaný čas")
-  public Double getRealizedTime() {
-    return realizedTime;
-  }
-
-  public Plmworkscheduleitem noInRoutine(Integer noInRoutine) {
-    this.noInRoutine = noInRoutine;
+  public Plmworkscheduleitem plannedtime(Double plannedtime) {
+    this.plannedtime = plannedtime;
     return this;
   }
 
    /**
-   * Pořadí v op. [persistentní položka]
-   * @return noInRoutine
+   * plánovaný čas
+   * @return plannedtime
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí v op. [persistentní položka]")
-  public Integer getNoInRoutine() {
-    return noInRoutine;
+  @ApiModelProperty(example = "null", value = "plánovaný čas")
+  public Double getPlannedtime() {
+    return plannedtime;
   }
 
-  public void setNoInRoutine(Integer noInRoutine) {
-    this.noInRoutine = noInRoutine;
+  public void setPlannedtime(Double plannedtime) {
+    this.plannedtime = plannedtime;
+  }
+
+  public Plmworkscheduleitem realizedquantity(Double realizedquantity) {
+    this.realizedquantity = realizedquantity;
+    return this;
+  }
+
+   /**
+   * realizované množství
+   * @return realizedquantity
+  **/
+  @ApiModelProperty(example = "null", value = "realizované množství")
+  public Double getRealizedquantity() {
+    return realizedquantity;
+  }
+
+  public void setRealizedquantity(Double realizedquantity) {
+    this.realizedquantity = realizedquantity;
+  }
+
+  public Plmworkscheduleitem realizedtime(Double realizedtime) {
+    this.realizedtime = realizedtime;
+    return this;
+  }
+
+   /**
+   * realizovaný čas
+   * @return realizedtime
+  **/
+  @ApiModelProperty(example = "null", value = "realizovaný čas")
+  public Double getRealizedtime() {
+    return realizedtime;
+  }
+
+  public void setRealizedtime(Double realizedtime) {
+    this.realizedtime = realizedtime;
+  }
+
+  public Plmworkscheduleitem noinroutine(Integer noinroutine) {
+    this.noinroutine = noinroutine;
+    return this;
+  }
+
+   /**
+   * pořadí v op. [persistentní položka]
+   * @return noinroutine
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí v op. [persistentní položka]")
+  public Integer getNoinroutine() {
+    return noinroutine;
+  }
+
+  public void setNoinroutine(Integer noinroutine) {
+    this.noinroutine = noinroutine;
   }
 
   public Plmworkscheduleitem title(String title) {
@@ -1085,10 +1148,10 @@ public class Plmworkscheduleitem   {
   }
 
    /**
-   * Popis
+   * popis
    * @return title
   **/
-  @ApiModelProperty(example = "null", value = "Popis")
+  @ApiModelProperty(example = "null", value = "popis")
   public String getTitle() {
     return title;
   }
@@ -1097,157 +1160,184 @@ public class Plmworkscheduleitem   {
     this.title = title;
   }
 
-   /**
-   * Chybějící množství
-   * @return missedQuantity
-  **/
-  @ApiModelProperty(example = "null", value = "Chybějící množství")
-  public Double getMissedQuantity() {
-    return missedQuantity;
+  public Plmworkscheduleitem missedquantity(Double missedquantity) {
+    this.missedquantity = missedquantity;
+    return this;
   }
 
    /**
-   * Chybějící čas
-   * @return missedTime
+   * chybějící množství
+   * @return missedquantity
   **/
-  @ApiModelProperty(example = "null", value = "Chybějící čas")
-  public Double getMissedTime() {
-    return missedTime;
+  @ApiModelProperty(example = "null", value = "chybějící množství")
+  public Double getMissedquantity() {
+    return missedquantity;
+  }
+
+  public void setMissedquantity(Double missedquantity) {
+    this.missedquantity = missedquantity;
+  }
+
+  public Plmworkscheduleitem missedtime(Double missedtime) {
+    this.missedtime = missedtime;
+    return this;
   }
 
    /**
-   * Fixováno
+   * chybějící čas
+   * @return missedtime
+  **/
+  @ApiModelProperty(example = "null", value = "chybějící čas")
+  public Double getMissedtime() {
+    return missedtime;
+  }
+
+  public void setMissedtime(Double missedtime) {
+    this.missedtime = missedtime;
+  }
+
+  public Plmworkscheduleitem fixed(Boolean fixed) {
+    this.fixed = fixed;
+    return this;
+  }
+
+   /**
+   * fixováno
    * @return fixed
   **/
-  @ApiModelProperty(example = "null", value = "Fixováno")
+  @ApiModelProperty(example = "null", value = "fixováno")
   public Boolean getFixed() {
     return fixed;
   }
 
-  public Plmworkscheduleitem nodeIndex(Integer nodeIndex) {
-    this.nodeIndex = nodeIndex;
+  public void setFixed(Boolean fixed) {
+    this.fixed = fixed;
+  }
+
+  public Plmworkscheduleitem nodeindex(Integer nodeindex) {
+    this.nodeindex = nodeindex;
     return this;
   }
 
    /**
-   * Pořadí uzlu
-   * @return nodeIndex
+   * pořadí uzlu
+   * @return nodeindex
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí uzlu")
-  public Integer getNodeIndex() {
-    return nodeIndex;
+  @ApiModelProperty(example = "null", value = "pořadí uzlu")
+  public Integer getNodeindex() {
+    return nodeindex;
   }
 
-  public void setNodeIndex(Integer nodeIndex) {
-    this.nodeIndex = nodeIndex;
+  public void setNodeindex(Integer nodeindex) {
+    this.nodeindex = nodeindex;
   }
 
-  public Plmworkscheduleitem routineAdvanceQuantity(Double routineAdvanceQuantity) {
-    this.routineAdvanceQuantity = routineAdvanceQuantity;
+  public Plmworkscheduleitem routineadvancequantity(Double routineadvancequantity) {
+    this.routineadvancequantity = routineadvancequantity;
     return this;
   }
 
    /**
-   * Předstih/op.
-   * @return routineAdvanceQuantity
+   * předstih/op.
+   * @return routineadvancequantity
   **/
-  @ApiModelProperty(example = "null", value = "Předstih/op.")
-  public Double getRoutineAdvanceQuantity() {
-    return routineAdvanceQuantity;
+  @ApiModelProperty(example = "null", value = "předstih/op.")
+  public Double getRoutineadvancequantity() {
+    return routineadvancequantity;
   }
 
-  public void setRoutineAdvanceQuantity(Double routineAdvanceQuantity) {
-    this.routineAdvanceQuantity = routineAdvanceQuantity;
+  public void setRoutineadvancequantity(Double routineadvancequantity) {
+    this.routineadvancequantity = routineadvancequantity;
   }
 
-  public Plmworkscheduleitem documentFirmID(String documentFirmID) {
-    this.documentFirmID = documentFirmID;
+  public Plmworkscheduleitem documentfirmId(String documentfirmId) {
+    this.documentfirmId = documentfirmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma
-   * @return documentFirmID
+   * firma; id objektu firma
+   * @return documentfirmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma")
-  public String getDocumentFirmID() {
-    return documentFirmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma")
+  public String getDocumentfirmId() {
+    return documentfirmId;
   }
 
-  public void setDocumentFirmID(String documentFirmID) {
-    this.documentFirmID = documentFirmID;
+  public void setDocumentfirmId(String documentfirmId) {
+    this.documentfirmId = documentfirmId;
   }
 
-  public Plmworkscheduleitem documentDivisionID(String documentDivisionID) {
-    this.documentDivisionID = documentDivisionID;
+  public Plmworkscheduleitem documentdivisionId(String documentdivisionId) {
+    this.documentdivisionId = documentdivisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko
-   * @return documentDivisionID
+   * středisko; id objektu středisko
+   * @return documentdivisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko")
-  public String getDocumentDivisionID() {
-    return documentDivisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko")
+  public String getDocumentdivisionId() {
+    return documentdivisionId;
   }
 
-  public void setDocumentDivisionID(String documentDivisionID) {
-    this.documentDivisionID = documentDivisionID;
+  public void setDocumentdivisionId(String documentdivisionId) {
+    this.documentdivisionId = documentdivisionId;
   }
 
-  public Plmworkscheduleitem documentBusOrderID(String documentBusOrderID) {
-    this.documentBusOrderID = documentBusOrderID;
+  public Plmworkscheduleitem documentbusorderId(String documentbusorderId) {
+    this.documentbusorderId = documentbusorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka
-   * @return documentBusOrderID
+   * zakázka; id objektu zakázka
+   * @return documentbusorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka")
-  public String getDocumentBusOrderID() {
-    return documentBusOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka")
+  public String getDocumentbusorderId() {
+    return documentbusorderId;
   }
 
-  public void setDocumentBusOrderID(String documentBusOrderID) {
-    this.documentBusOrderID = documentBusOrderID;
+  public void setDocumentbusorderId(String documentbusorderId) {
+    this.documentbusorderId = documentbusorderId;
   }
 
-  public Plmworkscheduleitem documentBusTransactionID(String documentBusTransactionID) {
-    this.documentBusTransactionID = documentBusTransactionID;
+  public Plmworkscheduleitem documentbustransactionId(String documentbustransactionId) {
+    this.documentbustransactionId = documentbustransactionId;
     return this;
   }
 
    /**
-   * Obch. případ; ID objektu Obchodní případ
-   * @return documentBusTransactionID
+   * obch. případ; id objektu obchodní případ
+   * @return documentbustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obch. případ; ID objektu Obchodní případ")
-  public String getDocumentBusTransactionID() {
-    return documentBusTransactionID;
+  @ApiModelProperty(example = "null", value = "obch. případ; id objektu obchodní případ")
+  public String getDocumentbustransactionId() {
+    return documentbustransactionId;
   }
 
-  public void setDocumentBusTransactionID(String documentBusTransactionID) {
-    this.documentBusTransactionID = documentBusTransactionID;
+  public void setDocumentbustransactionId(String documentbustransactionId) {
+    this.documentbustransactionId = documentbustransactionId;
   }
 
-  public Plmworkscheduleitem documentBusProjectID(String documentBusProjectID) {
-    this.documentBusProjectID = documentBusProjectID;
+  public Plmworkscheduleitem documentbusprojectId(String documentbusprojectId) {
+    this.documentbusprojectId = documentbusprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt
-   * @return documentBusProjectID
+   * projekt; id objektu projekt
+   * @return documentbusprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt")
-  public String getDocumentBusProjectID() {
-    return documentBusProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt")
+  public String getDocumentbusprojectId() {
+    return documentbusprojectId;
   }
 
-  public void setDocumentBusProjectID(String documentBusProjectID) {
-    this.documentBusProjectID = documentBusProjectID;
+  public void setDocumentbusprojectId(String documentbusprojectId) {
+    this.documentbusprojectId = documentbusprojectId;
   }
 
 
@@ -1260,73 +1350,73 @@ public class Plmworkscheduleitem   {
       return false;
     }
     Plmworkscheduleitem plmworkscheduleitem = (Plmworkscheduleitem) o;
-    return Objects.equals(this.displayName, plmworkscheduleitem.displayName) &&
-        Objects.equals(this.ID, plmworkscheduleitem.ID) &&
-        Objects.equals(this.classID, plmworkscheduleitem.classID) &&
-        Objects.equals(this.objVersion, plmworkscheduleitem.objVersion) &&
-        Objects.equals(this.priorityDate, plmworkscheduleitem.priorityDate) &&
-        Objects.equals(this.reqRoutineID, plmworkscheduleitem.reqRoutineID) &&
-        Objects.equals(this.jORoutineID, plmworkscheduleitem.jORoutineID) &&
-        Objects.equals(this.workerID, plmworkscheduleitem.workerID) &&
-        Objects.equals(this.workPlaceID, plmworkscheduleitem.workPlaceID) &&
-        Objects.equals(this.plannedQuantity, plmworkscheduleitem.plannedQuantity) &&
+    return Objects.equals(this.displayname, plmworkscheduleitem.displayname) &&
+        Objects.equals(this.id, plmworkscheduleitem.id) &&
+        Objects.equals(this.classid, plmworkscheduleitem.classid) &&
+        Objects.equals(this.objversion, plmworkscheduleitem.objversion) &&
+        Objects.equals(this.prioritydate, plmworkscheduleitem.prioritydate) &&
+        Objects.equals(this.reqroutineId, plmworkscheduleitem.reqroutineId) &&
+        Objects.equals(this.joroutineId, plmworkscheduleitem.joroutineId) &&
+        Objects.equals(this.workerId, plmworkscheduleitem.workerId) &&
+        Objects.equals(this.workplaceId, plmworkscheduleitem.workplaceId) &&
+        Objects.equals(this.plannedquantity, plmworkscheduleitem.plannedquantity) &&
         Objects.equals(this.status, plmworkscheduleitem.status) &&
-        Objects.equals(this.dateFromDate, plmworkscheduleitem.dateFromDate) &&
-        Objects.equals(this.shiftTypeID, plmworkscheduleitem.shiftTypeID) &&
-        Objects.equals(this.confirmedByID, plmworkscheduleitem.confirmedByID) &&
-        Objects.equals(this.routineTitle, plmworkscheduleitem.routineTitle) &&
-        Objects.equals(this.routinePosition, plmworkscheduleitem.routinePosition) &&
-        Objects.equals(this.routineQUnit, plmworkscheduleitem.routineQUnit) &&
-        Objects.equals(this.routinePlannedQuantity, plmworkscheduleitem.routinePlannedQuantity) &&
-        Objects.equals(this.routineRealizedQuantity, plmworkscheduleitem.routineRealizedQuantity) &&
-        Objects.equals(this.routineMissedQuantity, plmworkscheduleitem.routineMissedQuantity) &&
-        Objects.equals(this.routineRealizedWorkerQuantity, plmworkscheduleitem.routineRealizedWorkerQuantity) &&
-        Objects.equals(this.routineRealizedWPlaceQuantity, plmworkscheduleitem.routineRealizedWPlaceQuantity) &&
-        Objects.equals(this.routinePlannedTime, plmworkscheduleitem.routinePlannedTime) &&
-        Objects.equals(this.routineRealizedTime, plmworkscheduleitem.routineRealizedTime) &&
-        Objects.equals(this.routineMissedTime, plmworkscheduleitem.routineMissedTime) &&
-        Objects.equals(this.routineRealizedWorkerTime, plmworkscheduleitem.routineRealizedWorkerTime) &&
-        Objects.equals(this.routineRealizedWPlaceTime, plmworkscheduleitem.routineRealizedWPlaceTime) &&
-        Objects.equals(this.storeCardID, plmworkscheduleitem.storeCardID) &&
-        Objects.equals(this.routineWorkPlaceID, plmworkscheduleitem.routineWorkPlaceID) &&
-        Objects.equals(this.routinePhaseID, plmworkscheduleitem.routinePhaseID) &&
-        Objects.equals(this.routineTAC, plmworkscheduleitem.routineTAC) &&
-        Objects.equals(this.routineTBC, plmworkscheduleitem.routineTBC) &&
-        Objects.equals(this.routineNote, plmworkscheduleitem.routineNote) &&
-        Objects.equals(this.routineCooperation, plmworkscheduleitem.routineCooperation) &&
-        Objects.equals(this.routineCompulsoryOperation, plmworkscheduleitem.routineCompulsoryOperation) &&
-        Objects.equals(this.routineFinished, plmworkscheduleitem.routineFinished) &&
-        Objects.equals(this.routineSalaryClassID, plmworkscheduleitem.routineSalaryClassID) &&
-        Objects.equals(this.routineBatch, plmworkscheduleitem.routineBatch) &&
-        Objects.equals(this.documentOID, plmworkscheduleitem.documentOID) &&
-        Objects.equals(this.documentPlannedAt, plmworkscheduleitem.documentPlannedAt) &&
-        Objects.equals(this.documentScheduledAt, plmworkscheduleitem.documentScheduledAt) &&
-        Objects.equals(this.documentDisplayName, plmworkscheduleitem.documentDisplayName) &&
-        Objects.equals(this.documentStoreCardID, plmworkscheduleitem.documentStoreCardID) &&
-        Objects.equals(this.basedJobOrder, plmworkscheduleitem.basedJobOrder) &&
-        Objects.equals(this.documentPriority, plmworkscheduleitem.documentPriority) &&
-        Objects.equals(this.nodeTreeLevel, plmworkscheduleitem.nodeTreeLevel) &&
-        Objects.equals(this.statusText, plmworkscheduleitem.statusText) &&
-        Objects.equals(this.plannedTime, plmworkscheduleitem.plannedTime) &&
-        Objects.equals(this.realizedQuantity, plmworkscheduleitem.realizedQuantity) &&
-        Objects.equals(this.realizedTime, plmworkscheduleitem.realizedTime) &&
-        Objects.equals(this.noInRoutine, plmworkscheduleitem.noInRoutine) &&
+        Objects.equals(this.datefromdate, plmworkscheduleitem.datefromdate) &&
+        Objects.equals(this.shifttypeId, plmworkscheduleitem.shifttypeId) &&
+        Objects.equals(this.confirmedbyId, plmworkscheduleitem.confirmedbyId) &&
+        Objects.equals(this.routinetitle, plmworkscheduleitem.routinetitle) &&
+        Objects.equals(this.routineposition, plmworkscheduleitem.routineposition) &&
+        Objects.equals(this.routinequnit, plmworkscheduleitem.routinequnit) &&
+        Objects.equals(this.routineplannedquantity, plmworkscheduleitem.routineplannedquantity) &&
+        Objects.equals(this.routinerealizedquantity, plmworkscheduleitem.routinerealizedquantity) &&
+        Objects.equals(this.routinemissedquantity, plmworkscheduleitem.routinemissedquantity) &&
+        Objects.equals(this.routinerealizedworkerquantity, plmworkscheduleitem.routinerealizedworkerquantity) &&
+        Objects.equals(this.routinerealizedwplacequantity, plmworkscheduleitem.routinerealizedwplacequantity) &&
+        Objects.equals(this.routineplannedtime, plmworkscheduleitem.routineplannedtime) &&
+        Objects.equals(this.routinerealizedtime, plmworkscheduleitem.routinerealizedtime) &&
+        Objects.equals(this.routinemissedtime, plmworkscheduleitem.routinemissedtime) &&
+        Objects.equals(this.routinerealizedworkertime, plmworkscheduleitem.routinerealizedworkertime) &&
+        Objects.equals(this.routinerealizedwplacetime, plmworkscheduleitem.routinerealizedwplacetime) &&
+        Objects.equals(this.storecardId, plmworkscheduleitem.storecardId) &&
+        Objects.equals(this.routineworkplaceId, plmworkscheduleitem.routineworkplaceId) &&
+        Objects.equals(this.routinephaseId, plmworkscheduleitem.routinephaseId) &&
+        Objects.equals(this.routinetac, plmworkscheduleitem.routinetac) &&
+        Objects.equals(this.routinetbc, plmworkscheduleitem.routinetbc) &&
+        Objects.equals(this.routinenote, plmworkscheduleitem.routinenote) &&
+        Objects.equals(this.routinecooperation, plmworkscheduleitem.routinecooperation) &&
+        Objects.equals(this.routinecompulsoryoperation, plmworkscheduleitem.routinecompulsoryoperation) &&
+        Objects.equals(this.routinefinished, plmworkscheduleitem.routinefinished) &&
+        Objects.equals(this.routinesalaryclassId, plmworkscheduleitem.routinesalaryclassId) &&
+        Objects.equals(this.routinebatch, plmworkscheduleitem.routinebatch) &&
+        Objects.equals(this.documentoid, plmworkscheduleitem.documentoid) &&
+        Objects.equals(this.documentplannedat, plmworkscheduleitem.documentplannedat) &&
+        Objects.equals(this.documentscheduledat, plmworkscheduleitem.documentscheduledat) &&
+        Objects.equals(this.documentdisplayname, plmworkscheduleitem.documentdisplayname) &&
+        Objects.equals(this.documentstorecardId, plmworkscheduleitem.documentstorecardId) &&
+        Objects.equals(this.basedjoborder, plmworkscheduleitem.basedjoborder) &&
+        Objects.equals(this.documentpriority, plmworkscheduleitem.documentpriority) &&
+        Objects.equals(this.nodetreelevel, plmworkscheduleitem.nodetreelevel) &&
+        Objects.equals(this.statustext, plmworkscheduleitem.statustext) &&
+        Objects.equals(this.plannedtime, plmworkscheduleitem.plannedtime) &&
+        Objects.equals(this.realizedquantity, plmworkscheduleitem.realizedquantity) &&
+        Objects.equals(this.realizedtime, plmworkscheduleitem.realizedtime) &&
+        Objects.equals(this.noinroutine, plmworkscheduleitem.noinroutine) &&
         Objects.equals(this.title, plmworkscheduleitem.title) &&
-        Objects.equals(this.missedQuantity, plmworkscheduleitem.missedQuantity) &&
-        Objects.equals(this.missedTime, plmworkscheduleitem.missedTime) &&
+        Objects.equals(this.missedquantity, plmworkscheduleitem.missedquantity) &&
+        Objects.equals(this.missedtime, plmworkscheduleitem.missedtime) &&
         Objects.equals(this.fixed, plmworkscheduleitem.fixed) &&
-        Objects.equals(this.nodeIndex, plmworkscheduleitem.nodeIndex) &&
-        Objects.equals(this.routineAdvanceQuantity, plmworkscheduleitem.routineAdvanceQuantity) &&
-        Objects.equals(this.documentFirmID, plmworkscheduleitem.documentFirmID) &&
-        Objects.equals(this.documentDivisionID, plmworkscheduleitem.documentDivisionID) &&
-        Objects.equals(this.documentBusOrderID, plmworkscheduleitem.documentBusOrderID) &&
-        Objects.equals(this.documentBusTransactionID, plmworkscheduleitem.documentBusTransactionID) &&
-        Objects.equals(this.documentBusProjectID, plmworkscheduleitem.documentBusProjectID);
+        Objects.equals(this.nodeindex, plmworkscheduleitem.nodeindex) &&
+        Objects.equals(this.routineadvancequantity, plmworkscheduleitem.routineadvancequantity) &&
+        Objects.equals(this.documentfirmId, plmworkscheduleitem.documentfirmId) &&
+        Objects.equals(this.documentdivisionId, plmworkscheduleitem.documentdivisionId) &&
+        Objects.equals(this.documentbusorderId, plmworkscheduleitem.documentbusorderId) &&
+        Objects.equals(this.documentbustransactionId, plmworkscheduleitem.documentbustransactionId) &&
+        Objects.equals(this.documentbusprojectId, plmworkscheduleitem.documentbusprojectId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, priorityDate, reqRoutineID, jORoutineID, workerID, workPlaceID, plannedQuantity, status, dateFromDate, shiftTypeID, confirmedByID, routineTitle, routinePosition, routineQUnit, routinePlannedQuantity, routineRealizedQuantity, routineMissedQuantity, routineRealizedWorkerQuantity, routineRealizedWPlaceQuantity, routinePlannedTime, routineRealizedTime, routineMissedTime, routineRealizedWorkerTime, routineRealizedWPlaceTime, storeCardID, routineWorkPlaceID, routinePhaseID, routineTAC, routineTBC, routineNote, routineCooperation, routineCompulsoryOperation, routineFinished, routineSalaryClassID, routineBatch, documentOID, documentPlannedAt, documentScheduledAt, documentDisplayName, documentStoreCardID, basedJobOrder, documentPriority, nodeTreeLevel, statusText, plannedTime, realizedQuantity, realizedTime, noInRoutine, title, missedQuantity, missedTime, fixed, nodeIndex, routineAdvanceQuantity, documentFirmID, documentDivisionID, documentBusOrderID, documentBusTransactionID, documentBusProjectID);
+    return Objects.hash(displayname, id, classid, objversion, prioritydate, reqroutineId, joroutineId, workerId, workplaceId, plannedquantity, status, datefromdate, shifttypeId, confirmedbyId, routinetitle, routineposition, routinequnit, routineplannedquantity, routinerealizedquantity, routinemissedquantity, routinerealizedworkerquantity, routinerealizedwplacequantity, routineplannedtime, routinerealizedtime, routinemissedtime, routinerealizedworkertime, routinerealizedwplacetime, storecardId, routineworkplaceId, routinephaseId, routinetac, routinetbc, routinenote, routinecooperation, routinecompulsoryoperation, routinefinished, routinesalaryclassId, routinebatch, documentoid, documentplannedat, documentscheduledat, documentdisplayname, documentstorecardId, basedjoborder, documentpriority, nodetreelevel, statustext, plannedtime, realizedquantity, realizedtime, noinroutine, title, missedquantity, missedtime, fixed, nodeindex, routineadvancequantity, documentfirmId, documentdivisionId, documentbusorderId, documentbustransactionId, documentbusprojectId);
   }
 
   @Override
@@ -1334,68 +1424,68 @@ public class Plmworkscheduleitem   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmworkscheduleitem {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    priorityDate: ").append(toIndentedString(priorityDate)).append("\n");
-    sb.append("    reqRoutineID: ").append(toIndentedString(reqRoutineID)).append("\n");
-    sb.append("    jORoutineID: ").append(toIndentedString(jORoutineID)).append("\n");
-    sb.append("    workerID: ").append(toIndentedString(workerID)).append("\n");
-    sb.append("    workPlaceID: ").append(toIndentedString(workPlaceID)).append("\n");
-    sb.append("    plannedQuantity: ").append(toIndentedString(plannedQuantity)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    prioritydate: ").append(toIndentedString(prioritydate)).append("\n");
+    sb.append("    reqroutineId: ").append(toIndentedString(reqroutineId)).append("\n");
+    sb.append("    joroutineId: ").append(toIndentedString(joroutineId)).append("\n");
+    sb.append("    workerId: ").append(toIndentedString(workerId)).append("\n");
+    sb.append("    workplaceId: ").append(toIndentedString(workplaceId)).append("\n");
+    sb.append("    plannedquantity: ").append(toIndentedString(plannedquantity)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
-    sb.append("    dateFromDate: ").append(toIndentedString(dateFromDate)).append("\n");
-    sb.append("    shiftTypeID: ").append(toIndentedString(shiftTypeID)).append("\n");
-    sb.append("    confirmedByID: ").append(toIndentedString(confirmedByID)).append("\n");
-    sb.append("    routineTitle: ").append(toIndentedString(routineTitle)).append("\n");
-    sb.append("    routinePosition: ").append(toIndentedString(routinePosition)).append("\n");
-    sb.append("    routineQUnit: ").append(toIndentedString(routineQUnit)).append("\n");
-    sb.append("    routinePlannedQuantity: ").append(toIndentedString(routinePlannedQuantity)).append("\n");
-    sb.append("    routineRealizedQuantity: ").append(toIndentedString(routineRealizedQuantity)).append("\n");
-    sb.append("    routineMissedQuantity: ").append(toIndentedString(routineMissedQuantity)).append("\n");
-    sb.append("    routineRealizedWorkerQuantity: ").append(toIndentedString(routineRealizedWorkerQuantity)).append("\n");
-    sb.append("    routineRealizedWPlaceQuantity: ").append(toIndentedString(routineRealizedWPlaceQuantity)).append("\n");
-    sb.append("    routinePlannedTime: ").append(toIndentedString(routinePlannedTime)).append("\n");
-    sb.append("    routineRealizedTime: ").append(toIndentedString(routineRealizedTime)).append("\n");
-    sb.append("    routineMissedTime: ").append(toIndentedString(routineMissedTime)).append("\n");
-    sb.append("    routineRealizedWorkerTime: ").append(toIndentedString(routineRealizedWorkerTime)).append("\n");
-    sb.append("    routineRealizedWPlaceTime: ").append(toIndentedString(routineRealizedWPlaceTime)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    routineWorkPlaceID: ").append(toIndentedString(routineWorkPlaceID)).append("\n");
-    sb.append("    routinePhaseID: ").append(toIndentedString(routinePhaseID)).append("\n");
-    sb.append("    routineTAC: ").append(toIndentedString(routineTAC)).append("\n");
-    sb.append("    routineTBC: ").append(toIndentedString(routineTBC)).append("\n");
-    sb.append("    routineNote: ").append(toIndentedString(routineNote)).append("\n");
-    sb.append("    routineCooperation: ").append(toIndentedString(routineCooperation)).append("\n");
-    sb.append("    routineCompulsoryOperation: ").append(toIndentedString(routineCompulsoryOperation)).append("\n");
-    sb.append("    routineFinished: ").append(toIndentedString(routineFinished)).append("\n");
-    sb.append("    routineSalaryClassID: ").append(toIndentedString(routineSalaryClassID)).append("\n");
-    sb.append("    routineBatch: ").append(toIndentedString(routineBatch)).append("\n");
-    sb.append("    documentOID: ").append(toIndentedString(documentOID)).append("\n");
-    sb.append("    documentPlannedAt: ").append(toIndentedString(documentPlannedAt)).append("\n");
-    sb.append("    documentScheduledAt: ").append(toIndentedString(documentScheduledAt)).append("\n");
-    sb.append("    documentDisplayName: ").append(toIndentedString(documentDisplayName)).append("\n");
-    sb.append("    documentStoreCardID: ").append(toIndentedString(documentStoreCardID)).append("\n");
-    sb.append("    basedJobOrder: ").append(toIndentedString(basedJobOrder)).append("\n");
-    sb.append("    documentPriority: ").append(toIndentedString(documentPriority)).append("\n");
-    sb.append("    nodeTreeLevel: ").append(toIndentedString(nodeTreeLevel)).append("\n");
-    sb.append("    statusText: ").append(toIndentedString(statusText)).append("\n");
-    sb.append("    plannedTime: ").append(toIndentedString(plannedTime)).append("\n");
-    sb.append("    realizedQuantity: ").append(toIndentedString(realizedQuantity)).append("\n");
-    sb.append("    realizedTime: ").append(toIndentedString(realizedTime)).append("\n");
-    sb.append("    noInRoutine: ").append(toIndentedString(noInRoutine)).append("\n");
+    sb.append("    datefromdate: ").append(toIndentedString(datefromdate)).append("\n");
+    sb.append("    shifttypeId: ").append(toIndentedString(shifttypeId)).append("\n");
+    sb.append("    confirmedbyId: ").append(toIndentedString(confirmedbyId)).append("\n");
+    sb.append("    routinetitle: ").append(toIndentedString(routinetitle)).append("\n");
+    sb.append("    routineposition: ").append(toIndentedString(routineposition)).append("\n");
+    sb.append("    routinequnit: ").append(toIndentedString(routinequnit)).append("\n");
+    sb.append("    routineplannedquantity: ").append(toIndentedString(routineplannedquantity)).append("\n");
+    sb.append("    routinerealizedquantity: ").append(toIndentedString(routinerealizedquantity)).append("\n");
+    sb.append("    routinemissedquantity: ").append(toIndentedString(routinemissedquantity)).append("\n");
+    sb.append("    routinerealizedworkerquantity: ").append(toIndentedString(routinerealizedworkerquantity)).append("\n");
+    sb.append("    routinerealizedwplacequantity: ").append(toIndentedString(routinerealizedwplacequantity)).append("\n");
+    sb.append("    routineplannedtime: ").append(toIndentedString(routineplannedtime)).append("\n");
+    sb.append("    routinerealizedtime: ").append(toIndentedString(routinerealizedtime)).append("\n");
+    sb.append("    routinemissedtime: ").append(toIndentedString(routinemissedtime)).append("\n");
+    sb.append("    routinerealizedworkertime: ").append(toIndentedString(routinerealizedworkertime)).append("\n");
+    sb.append("    routinerealizedwplacetime: ").append(toIndentedString(routinerealizedwplacetime)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    routineworkplaceId: ").append(toIndentedString(routineworkplaceId)).append("\n");
+    sb.append("    routinephaseId: ").append(toIndentedString(routinephaseId)).append("\n");
+    sb.append("    routinetac: ").append(toIndentedString(routinetac)).append("\n");
+    sb.append("    routinetbc: ").append(toIndentedString(routinetbc)).append("\n");
+    sb.append("    routinenote: ").append(toIndentedString(routinenote)).append("\n");
+    sb.append("    routinecooperation: ").append(toIndentedString(routinecooperation)).append("\n");
+    sb.append("    routinecompulsoryoperation: ").append(toIndentedString(routinecompulsoryoperation)).append("\n");
+    sb.append("    routinefinished: ").append(toIndentedString(routinefinished)).append("\n");
+    sb.append("    routinesalaryclassId: ").append(toIndentedString(routinesalaryclassId)).append("\n");
+    sb.append("    routinebatch: ").append(toIndentedString(routinebatch)).append("\n");
+    sb.append("    documentoid: ").append(toIndentedString(documentoid)).append("\n");
+    sb.append("    documentplannedat: ").append(toIndentedString(documentplannedat)).append("\n");
+    sb.append("    documentscheduledat: ").append(toIndentedString(documentscheduledat)).append("\n");
+    sb.append("    documentdisplayname: ").append(toIndentedString(documentdisplayname)).append("\n");
+    sb.append("    documentstorecardId: ").append(toIndentedString(documentstorecardId)).append("\n");
+    sb.append("    basedjoborder: ").append(toIndentedString(basedjoborder)).append("\n");
+    sb.append("    documentpriority: ").append(toIndentedString(documentpriority)).append("\n");
+    sb.append("    nodetreelevel: ").append(toIndentedString(nodetreelevel)).append("\n");
+    sb.append("    statustext: ").append(toIndentedString(statustext)).append("\n");
+    sb.append("    plannedtime: ").append(toIndentedString(plannedtime)).append("\n");
+    sb.append("    realizedquantity: ").append(toIndentedString(realizedquantity)).append("\n");
+    sb.append("    realizedtime: ").append(toIndentedString(realizedtime)).append("\n");
+    sb.append("    noinroutine: ").append(toIndentedString(noinroutine)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
-    sb.append("    missedQuantity: ").append(toIndentedString(missedQuantity)).append("\n");
-    sb.append("    missedTime: ").append(toIndentedString(missedTime)).append("\n");
+    sb.append("    missedquantity: ").append(toIndentedString(missedquantity)).append("\n");
+    sb.append("    missedtime: ").append(toIndentedString(missedtime)).append("\n");
     sb.append("    fixed: ").append(toIndentedString(fixed)).append("\n");
-    sb.append("    nodeIndex: ").append(toIndentedString(nodeIndex)).append("\n");
-    sb.append("    routineAdvanceQuantity: ").append(toIndentedString(routineAdvanceQuantity)).append("\n");
-    sb.append("    documentFirmID: ").append(toIndentedString(documentFirmID)).append("\n");
-    sb.append("    documentDivisionID: ").append(toIndentedString(documentDivisionID)).append("\n");
-    sb.append("    documentBusOrderID: ").append(toIndentedString(documentBusOrderID)).append("\n");
-    sb.append("    documentBusTransactionID: ").append(toIndentedString(documentBusTransactionID)).append("\n");
-    sb.append("    documentBusProjectID: ").append(toIndentedString(documentBusProjectID)).append("\n");
+    sb.append("    nodeindex: ").append(toIndentedString(nodeindex)).append("\n");
+    sb.append("    routineadvancequantity: ").append(toIndentedString(routineadvancequantity)).append("\n");
+    sb.append("    documentfirmId: ").append(toIndentedString(documentfirmId)).append("\n");
+    sb.append("    documentdivisionId: ").append(toIndentedString(documentdivisionId)).append("\n");
+    sb.append("    documentbusorderId: ").append(toIndentedString(documentbusorderId)).append("\n");
+    sb.append("    documentbustransactionId: ").append(toIndentedString(documentbustransactionId)).append("\n");
+    sb.append("    documentbusprojectId: ").append(toIndentedString(documentbusprojectId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

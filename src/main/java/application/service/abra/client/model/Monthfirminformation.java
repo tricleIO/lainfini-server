@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,117 +34,153 @@ import java.util.Objects;
 /**
  * Monthfirminformation
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Monthfirminformation   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("WagePeriod_ID")
-  private String wagePeriodID = null;
+  @SerializedName("wageperiod_id")
+  private String wageperiodId = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Monthfirminformation wagePeriodID(String wagePeriodID) {
-    this.wagePeriodID = wagePeriodID;
+  public Monthfirminformation displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Mzdové období; ID objektu Mzdové období [persistentní položka]
-   * @return wagePeriodID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Mzdové období; ID objektu Mzdové období [persistentní položka]")
-  public String getWagePeriodID() {
-    return wagePeriodID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setWagePeriodID(String wagePeriodID) {
-    this.wagePeriodID = wagePeriodID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Monthfirminformation createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Monthfirminformation id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Monthfirminformation correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Monthfirminformation classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Monthfirminformation objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Monthfirminformation wageperiodId(String wageperiodId) {
+    this.wageperiodId = wageperiodId;
+    return this;
+  }
+
+   /**
+   * mzdové období; id objektu mzdové období [persistentní položka]
+   * @return wageperiodId
+  **/
+  @ApiModelProperty(example = "null", value = "mzdové období; id objektu mzdové období [persistentní položka]")
+  public String getWageperiodId() {
+    return wageperiodId;
+  }
+
+  public void setWageperiodId(String wageperiodId) {
+    this.wageperiodId = wageperiodId;
+  }
+
+  public Monthfirminformation createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+    return this;
+  }
+
+   /**
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
+  }
+
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Monthfirminformation correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+    return this;
+  }
+
+   /**
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
+  }
+
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
 
@@ -157,18 +193,18 @@ public class Monthfirminformation   {
       return false;
     }
     Monthfirminformation monthfirminformation = (Monthfirminformation) o;
-    return Objects.equals(this.displayName, monthfirminformation.displayName) &&
-        Objects.equals(this.ID, monthfirminformation.ID) &&
-        Objects.equals(this.classID, monthfirminformation.classID) &&
-        Objects.equals(this.objVersion, monthfirminformation.objVersion) &&
-        Objects.equals(this.wagePeriodID, monthfirminformation.wagePeriodID) &&
-        Objects.equals(this.createdByID, monthfirminformation.createdByID) &&
-        Objects.equals(this.correctedByID, monthfirminformation.correctedByID);
+    return Objects.equals(this.displayname, monthfirminformation.displayname) &&
+        Objects.equals(this.id, monthfirminformation.id) &&
+        Objects.equals(this.classid, monthfirminformation.classid) &&
+        Objects.equals(this.objversion, monthfirminformation.objversion) &&
+        Objects.equals(this.wageperiodId, monthfirminformation.wageperiodId) &&
+        Objects.equals(this.createdbyId, monthfirminformation.createdbyId) &&
+        Objects.equals(this.correctedbyId, monthfirminformation.correctedbyId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, wagePeriodID, createdByID, correctedByID);
+    return Objects.hash(displayname, id, classid, objversion, wageperiodId, createdbyId, correctedbyId);
   }
 
   @Override
@@ -176,13 +212,13 @@ public class Monthfirminformation   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Monthfirminformation {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    wagePeriodID: ").append(toIndentedString(wagePeriodID)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    wageperiodId: ").append(toIndentedString(wageperiodId)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

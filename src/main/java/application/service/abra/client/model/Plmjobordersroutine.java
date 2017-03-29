@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,294 +37,339 @@ import java.util.Objects;
 /**
  * Plmjobordersroutine
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmjobordersroutine   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("WorkPlace_ID")
-  private String workPlaceID = null;
+  @SerializedName("workplace_id")
+  private String workplaceId = null;
 
-  @SerializedName("Phase_ID")
-  private String phaseID = null;
+  @SerializedName("phase_id")
+  private String phaseId = null;
 
-  @SerializedName("PartTime")
-  private Double partTime = null;
+  @SerializedName("parttime")
+  private Double parttime = null;
 
-  @SerializedName("SetupTime")
-  private Double setupTime = null;
+  @SerializedName("setuptime")
+  private Double setuptime = null;
 
-  @SerializedName("Title")
+  @SerializedName("title")
   private String title = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Cooperation")
+  @SerializedName("cooperation")
   private Boolean cooperation = null;
 
-  @SerializedName("CompulsoryOperation")
-  private Integer compulsoryOperation = null;
+  @SerializedName("compulsoryoperation")
+  private Integer compulsoryoperation = null;
 
-  @SerializedName("Finished")
+  @SerializedName("finished")
   private Boolean finished = null;
 
-  @SerializedName("SalaryClass_ID")
-  private String salaryClassID = null;
+  @SerializedName("salaryclass_id")
+  private String salaryclassId = null;
 
-  @SerializedName("Batch")
+  @SerializedName("batch")
   private Boolean batch = null;
 
-  @SerializedName("CommandLineExpr")
-  private String commandLineExpr = null;
+  @SerializedName("commandlineexpr")
+  private String commandlineexpr = null;
 
-  @SerializedName("ProtocolFileNameExpr")
-  private String protocolFileNameExpr = null;
+  @SerializedName("protocolfilenameexpr")
+  private String protocolfilenameexpr = null;
 
-  @SerializedName("UsersMessage")
-  private String usersMessage = null;
+  @SerializedName("usersmessage")
+  private String usersmessage = null;
 
-  @SerializedName("TACUnit")
-  private Integer tACUnit = null;
+  @SerializedName("tacunit")
+  private Integer tacunit = null;
 
-  @SerializedName("TBCUnit")
-  private Integer tBCUnit = null;
+  @SerializedName("tbcunit")
+  private Integer tbcunit = null;
 
-  @SerializedName("UnitTAC")
-  private Double unitTAC = null;
+  @SerializedName("unittac")
+  private Double unittac = null;
 
-  @SerializedName("UnitTBC")
-  private Double unitTBC = null;
+  @SerializedName("unittbc")
+  private Double unittbc = null;
 
-  @SerializedName("TAC")
-  private Double TAC = null;
+  @SerializedName("tac")
+  private Double tac = null;
 
-  @SerializedName("TBC")
-  private Double TBC = null;
+  @SerializedName("tbc")
+  private Double tbc = null;
 
-  @SerializedName("Ongoing")
+  @SerializedName("ongoing")
   private Boolean ongoing = null;
 
-  @SerializedName("Planned")
+  @SerializedName("planned")
   private Boolean planned = null;
 
-  @SerializedName("AdvanceQuantity")
-  private Double advanceQuantity = null;
+  @SerializedName("advancequantity")
+  private Double advancequantity = null;
 
-  @SerializedName("CRPGrain")
-  private Integer cRPGrain = null;
+  @SerializedName("crpgrain")
+  private Integer crpgrain = null;
 
-  @SerializedName("UnNormed")
-  private Boolean unNormed = null;
+  @SerializedName("unnormed")
+  private Boolean unnormed = null;
 
-  @SerializedName("PlannedDateFrom")
-  private DateTime plannedDateFrom = null;
+  @SerializedName("planneddatefrom")
+  private DateTime planneddatefrom = null;
 
-  @SerializedName("PlannedShiftType_ID")
-  private String plannedShiftTypeID = null;
+  @SerializedName("plannedshifttype_id")
+  private String plannedshifttypeId = null;
 
-  @SerializedName("PlannedQuantity")
-  private Double plannedQuantity = null;
+  @SerializedName("plannedquantity")
+  private Double plannedquantity = null;
 
-  @SerializedName("PlannedUnitQuantity")
-  private Double plannedUnitQuantity = null;
+  @SerializedName("plannedunitquantity")
+  private Double plannedunitquantity = null;
 
-  @SerializedName("PlannedTime")
-  private Double plannedTime = null;
+  @SerializedName("plannedtime")
+  private Double plannedtime = null;
 
-  @SerializedName("RealizedQuantity")
-  private Double realizedQuantity = null;
+  @SerializedName("realizedquantity")
+  private Double realizedquantity = null;
 
-  @SerializedName("RealizedUnitQuantity")
-  private Double realizedUnitQuantity = null;
+  @SerializedName("realizedunitquantity")
+  private Double realizedunitquantity = null;
 
-  @SerializedName("RealizedTime")
-  private Double realizedTime = null;
+  @SerializedName("realizedtime")
+  private Double realizedtime = null;
 
-  @SerializedName("MissedQuantity")
-  private Double missedQuantity = null;
+  @SerializedName("missedquantity")
+  private Double missedquantity = null;
 
-  @SerializedName("MissedUnitQuantity")
-  private Double missedUnitQuantity = null;
+  @SerializedName("missedunitquantity")
+  private Double missedunitquantity = null;
 
-  @SerializedName("MissedTime")
-  private Double missedTime = null;
+  @SerializedName("missedtime")
+  private Double missedtime = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("RealizedPerc")
-  private Double realizedPerc = null;
+  @SerializedName("realizedperc")
+  private Double realizedperc = null;
 
-  @SerializedName("RealizedTimePerc")
-  private Double realizedTimePerc = null;
+  @SerializedName("realizedtimeperc")
+  private Double realizedtimeperc = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("PLMJobOrdersRoutinesPictures")
-  private List<Plmjobordersroutinespicture> pLMJobOrdersRoutinesPictures = new ArrayList<Plmjobordersroutinespicture>();
+  @SerializedName("plmjobordersroutinespictures")
+  private List<Plmjobordersroutinespicture> plmjobordersroutinespictures = new ArrayList<Plmjobordersroutinespicture>();
 
-  @SerializedName("RealizedDuration")
-  private Double realizedDuration = null;
+  @SerializedName("realizedduration")
+  private Double realizedduration = null;
 
-  @SerializedName("MissedDuration")
-  private Double missedDuration = null;
+  @SerializedName("missedduration")
+  private Double missedduration = null;
 
-  @SerializedName("ADs")
-  private List<Plmjobordersroutinead> aDs = new ArrayList<Plmjobordersroutinead>();
+  @SerializedName("ads")
+  private List<Plmjobordersroutinead> ads = new ArrayList<Plmjobordersroutinead>();
 
-  @SerializedName("ConfirmationDifferences")
-  private List<Plmjoroutineconfdiff> confirmationDifferences = new ArrayList<Plmjoroutineconfdiff>();
+  @SerializedName("confirmationdifferences")
+  private List<Plmjoroutineconfdiff> confirmationdifferences = new ArrayList<Plmjoroutineconfdiff>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu VP - vyráběná položka [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu VP - vyráběná položka [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Plmjobordersroutine posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Plmjobordersroutine displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Plmjobordersroutine workPlaceID(String workPlaceID) {
-    this.workPlaceID = workPlaceID;
+  public Plmjobordersroutine id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Pracoviště; ID objektu Pracoviště a stroj [persistentní položka]
-   * @return workPlaceID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Pracoviště; ID objektu Pracoviště a stroj [persistentní položka]")
-  public String getWorkPlaceID() {
-    return workPlaceID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setWorkPlaceID(String workPlaceID) {
-    this.workPlaceID = workPlaceID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Plmjobordersroutine phaseID(String phaseID) {
-    this.phaseID = phaseID;
+  public Plmjobordersroutine classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Etapa; ID objektu Etapa [persistentní položka]
-   * @return phaseID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Etapa; ID objektu Etapa [persistentní položka]")
-  public String getPhaseID() {
-    return phaseID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPhaseID(String phaseID) {
-    this.phaseID = phaseID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Plmjobordersroutine partTime(Double partTime) {
-    this.partTime = partTime;
+  public Plmjobordersroutine objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Kusový čas v minutách
-   * @return partTime
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Kusový čas v minutách")
-  public Double getPartTime() {
-    return partTime;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setPartTime(Double partTime) {
-    this.partTime = partTime;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Plmjobordersroutine setupTime(Double setupTime) {
-    this.setupTime = setupTime;
+  public Plmjobordersroutine parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Dávkový čas v minutách
-   * @return setupTime
+   * vlastník; id objektu vp - vyráběná položka [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Dávkový čas v minutách")
-  public Double getSetupTime() {
-    return setupTime;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu vp - vyráběná položka [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setSetupTime(Double setupTime) {
-    this.setupTime = setupTime;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Plmjobordersroutine posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Plmjobordersroutine workplaceId(String workplaceId) {
+    this.workplaceId = workplaceId;
+    return this;
+  }
+
+   /**
+   * pracoviště; id objektu pracoviště a stroj [persistentní položka]
+   * @return workplaceId
+  **/
+  @ApiModelProperty(example = "null", value = "pracoviště; id objektu pracoviště a stroj [persistentní položka]")
+  public String getWorkplaceId() {
+    return workplaceId;
+  }
+
+  public void setWorkplaceId(String workplaceId) {
+    this.workplaceId = workplaceId;
+  }
+
+  public Plmjobordersroutine phaseId(String phaseId) {
+    this.phaseId = phaseId;
+    return this;
+  }
+
+   /**
+   * etapa; id objektu etapa [persistentní položka]
+   * @return phaseId
+  **/
+  @ApiModelProperty(example = "null", value = "etapa; id objektu etapa [persistentní položka]")
+  public String getPhaseId() {
+    return phaseId;
+  }
+
+  public void setPhaseId(String phaseId) {
+    this.phaseId = phaseId;
+  }
+
+  public Plmjobordersroutine parttime(Double parttime) {
+    this.parttime = parttime;
+    return this;
+  }
+
+   /**
+   * kusový čas v minutách
+   * @return parttime
+  **/
+  @ApiModelProperty(example = "null", value = "kusový čas v minutách")
+  public Double getParttime() {
+    return parttime;
+  }
+
+  public void setParttime(Double parttime) {
+    this.parttime = parttime;
+  }
+
+  public Plmjobordersroutine setuptime(Double setuptime) {
+    this.setuptime = setuptime;
+    return this;
+  }
+
+   /**
+   * dávkový čas v minutách
+   * @return setuptime
+  **/
+  @ApiModelProperty(example = "null", value = "dávkový čas v minutách")
+  public Double getSetuptime() {
+    return setuptime;
+  }
+
+  public void setSetuptime(Double setuptime) {
+    this.setuptime = setuptime;
   }
 
   public Plmjobordersroutine title(String title) {
@@ -333,10 +378,10 @@ public class Plmjobordersroutine   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return title
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getTitle() {
     return title;
   }
@@ -351,10 +396,10 @@ public class Plmjobordersroutine   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -369,10 +414,10 @@ public class Plmjobordersroutine   {
   }
 
    /**
-   * Kooperace [persistentní položka]
+   * kooperace [persistentní položka]
    * @return cooperation
   **/
-  @ApiModelProperty(example = "null", value = "Kooperace [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kooperace [persistentní položka]")
   public Boolean getCooperation() {
     return cooperation;
   }
@@ -381,22 +426,22 @@ public class Plmjobordersroutine   {
     this.cooperation = cooperation;
   }
 
-  public Plmjobordersroutine compulsoryOperation(Integer compulsoryOperation) {
-    this.compulsoryOperation = compulsoryOperation;
+  public Plmjobordersroutine compulsoryoperation(Integer compulsoryoperation) {
+    this.compulsoryoperation = compulsoryoperation;
     return this;
   }
 
    /**
-   * Povinná [persistentní položka]
-   * @return compulsoryOperation
+   * povinná [persistentní položka]
+   * @return compulsoryoperation
   **/
-  @ApiModelProperty(example = "null", value = "Povinná [persistentní položka]")
-  public Integer getCompulsoryOperation() {
-    return compulsoryOperation;
+  @ApiModelProperty(example = "null", value = "povinná [persistentní položka]")
+  public Integer getCompulsoryoperation() {
+    return compulsoryoperation;
   }
 
-  public void setCompulsoryOperation(Integer compulsoryOperation) {
-    this.compulsoryOperation = compulsoryOperation;
+  public void setCompulsoryoperation(Integer compulsoryoperation) {
+    this.compulsoryoperation = compulsoryoperation;
   }
 
   public Plmjobordersroutine finished(Boolean finished) {
@@ -405,10 +450,10 @@ public class Plmjobordersroutine   {
   }
 
    /**
-   * Výrobek dokončen [persistentní položka]
+   * výrobek dokončen [persistentní položka]
    * @return finished
   **/
-  @ApiModelProperty(example = "null", value = "Výrobek dokončen [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "výrobek dokončen [persistentní položka]")
   public Boolean getFinished() {
     return finished;
   }
@@ -417,22 +462,22 @@ public class Plmjobordersroutine   {
     this.finished = finished;
   }
 
-  public Plmjobordersroutine salaryClassID(String salaryClassID) {
-    this.salaryClassID = salaryClassID;
+  public Plmjobordersroutine salaryclassId(String salaryclassId) {
+    this.salaryclassId = salaryclassId;
     return this;
   }
 
    /**
-   * Tarif. třída; ID objektu Tarifní třída [persistentní položka]
-   * @return salaryClassID
+   * tarif. třída; id objektu tarifní třída [persistentní položka]
+   * @return salaryclassId
   **/
-  @ApiModelProperty(example = "null", value = "Tarif. třída; ID objektu Tarifní třída [persistentní položka]")
-  public String getSalaryClassID() {
-    return salaryClassID;
+  @ApiModelProperty(example = "null", value = "tarif. třída; id objektu tarifní třída [persistentní položka]")
+  public String getSalaryclassId() {
+    return salaryclassId;
   }
 
-  public void setSalaryClassID(String salaryClassID) {
-    this.salaryClassID = salaryClassID;
+  public void setSalaryclassId(String salaryclassId) {
+    this.salaryclassId = salaryclassId;
   }
 
   public Plmjobordersroutine batch(Boolean batch) {
@@ -441,10 +486,10 @@ public class Plmjobordersroutine   {
   }
 
    /**
-   * Dávkově [persistentní položka]
+   * dávkově [persistentní položka]
    * @return batch
   **/
-  @ApiModelProperty(example = "null", value = "Dávkově [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "dávkově [persistentní položka]")
   public Boolean getBatch() {
     return batch;
   }
@@ -453,166 +498,166 @@ public class Plmjobordersroutine   {
     this.batch = batch;
   }
 
-  public Plmjobordersroutine commandLineExpr(String commandLineExpr) {
-    this.commandLineExpr = commandLineExpr;
+  public Plmjobordersroutine commandlineexpr(String commandlineexpr) {
+    this.commandlineexpr = commandlineexpr;
     return this;
   }
 
    /**
-   * Příkaz ke spuštění - výraz [persistentní položka]
-   * @return commandLineExpr
+   * příkaz ke spuštění - výraz [persistentní položka]
+   * @return commandlineexpr
   **/
-  @ApiModelProperty(example = "null", value = "Příkaz ke spuštění - výraz [persistentní položka]")
-  public String getCommandLineExpr() {
-    return commandLineExpr;
+  @ApiModelProperty(example = "null", value = "příkaz ke spuštění - výraz [persistentní položka]")
+  public String getCommandlineexpr() {
+    return commandlineexpr;
   }
 
-  public void setCommandLineExpr(String commandLineExpr) {
-    this.commandLineExpr = commandLineExpr;
+  public void setCommandlineexpr(String commandlineexpr) {
+    this.commandlineexpr = commandlineexpr;
   }
 
-  public Plmjobordersroutine protocolFileNameExpr(String protocolFileNameExpr) {
-    this.protocolFileNameExpr = protocolFileNameExpr;
+  public Plmjobordersroutine protocolfilenameexpr(String protocolfilenameexpr) {
+    this.protocolfilenameexpr = protocolfilenameexpr;
     return this;
   }
 
    /**
-   * Jméno souboru s protokolem - výraz [persistentní položka]
-   * @return protocolFileNameExpr
+   * jméno souboru s protokolem - výraz [persistentní položka]
+   * @return protocolfilenameexpr
   **/
-  @ApiModelProperty(example = "null", value = "Jméno souboru s protokolem - výraz [persistentní položka]")
-  public String getProtocolFileNameExpr() {
-    return protocolFileNameExpr;
+  @ApiModelProperty(example = "null", value = "jméno souboru s protokolem - výraz [persistentní položka]")
+  public String getProtocolfilenameexpr() {
+    return protocolfilenameexpr;
   }
 
-  public void setProtocolFileNameExpr(String protocolFileNameExpr) {
-    this.protocolFileNameExpr = protocolFileNameExpr;
+  public void setProtocolfilenameexpr(String protocolfilenameexpr) {
+    this.protocolfilenameexpr = protocolfilenameexpr;
   }
 
-  public Plmjobordersroutine usersMessage(String usersMessage) {
-    this.usersMessage = usersMessage;
+  public Plmjobordersroutine usersmessage(String usersmessage) {
+    this.usersmessage = usersmessage;
     return this;
   }
 
    /**
-   * Zpráva pro uživatele [persistentní položka]
-   * @return usersMessage
+   * zpráva pro uživatele [persistentní položka]
+   * @return usersmessage
   **/
-  @ApiModelProperty(example = "null", value = "Zpráva pro uživatele [persistentní položka]")
-  public String getUsersMessage() {
-    return usersMessage;
+  @ApiModelProperty(example = "null", value = "zpráva pro uživatele [persistentní položka]")
+  public String getUsersmessage() {
+    return usersmessage;
   }
 
-  public void setUsersMessage(String usersMessage) {
-    this.usersMessage = usersMessage;
+  public void setUsersmessage(String usersmessage) {
+    this.usersmessage = usersmessage;
   }
 
-  public Plmjobordersroutine tACUnit(Integer tACUnit) {
-    this.tACUnit = tACUnit;
+  public Plmjobordersroutine tacunit(Integer tacunit) {
+    this.tacunit = tacunit;
     return this;
   }
 
    /**
-   * Jednotka času pro TAC [persistentní položka]
-   * @return tACUnit
+   * jednotka času pro tac [persistentní položka]
+   * @return tacunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka času pro TAC [persistentní položka]")
-  public Integer getTACUnit() {
-    return tACUnit;
+  @ApiModelProperty(example = "null", value = "jednotka času pro tac [persistentní položka]")
+  public Integer getTacunit() {
+    return tacunit;
   }
 
-  public void setTACUnit(Integer tACUnit) {
-    this.tACUnit = tACUnit;
+  public void setTacunit(Integer tacunit) {
+    this.tacunit = tacunit;
   }
 
-  public Plmjobordersroutine tBCUnit(Integer tBCUnit) {
-    this.tBCUnit = tBCUnit;
+  public Plmjobordersroutine tbcunit(Integer tbcunit) {
+    this.tbcunit = tbcunit;
     return this;
   }
 
    /**
-   * Jednotka času pro TBC [persistentní položka]
-   * @return tBCUnit
+   * jednotka času pro tbc [persistentní položka]
+   * @return tbcunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka času pro TBC [persistentní položka]")
-  public Integer getTBCUnit() {
-    return tBCUnit;
+  @ApiModelProperty(example = "null", value = "jednotka času pro tbc [persistentní položka]")
+  public Integer getTbcunit() {
+    return tbcunit;
   }
 
-  public void setTBCUnit(Integer tBCUnit) {
-    this.tBCUnit = tBCUnit;
+  public void setTbcunit(Integer tbcunit) {
+    this.tbcunit = tbcunit;
   }
 
-  public Plmjobordersroutine unitTAC(Double unitTAC) {
-    this.unitTAC = unitTAC;
+  public Plmjobordersroutine unittac(Double unittac) {
+    this.unittac = unittac;
     return this;
   }
 
    /**
-   * Kusový čas
-   * @return unitTAC
+   * kusový čas
+   * @return unittac
   **/
-  @ApiModelProperty(example = "null", value = "Kusový čas")
-  public Double getUnitTAC() {
-    return unitTAC;
+  @ApiModelProperty(example = "null", value = "kusový čas")
+  public Double getUnittac() {
+    return unittac;
   }
 
-  public void setUnitTAC(Double unitTAC) {
-    this.unitTAC = unitTAC;
+  public void setUnittac(Double unittac) {
+    this.unittac = unittac;
   }
 
-  public Plmjobordersroutine unitTBC(Double unitTBC) {
-    this.unitTBC = unitTBC;
+  public Plmjobordersroutine unittbc(Double unittbc) {
+    this.unittbc = unittbc;
     return this;
   }
 
    /**
-   * Dávkový čas
-   * @return unitTBC
+   * dávkový čas
+   * @return unittbc
   **/
-  @ApiModelProperty(example = "null", value = "Dávkový čas")
-  public Double getUnitTBC() {
-    return unitTBC;
+  @ApiModelProperty(example = "null", value = "dávkový čas")
+  public Double getUnittbc() {
+    return unittbc;
   }
 
-  public void setUnitTBC(Double unitTBC) {
-    this.unitTBC = unitTBC;
+  public void setUnittbc(Double unittbc) {
+    this.unittbc = unittbc;
   }
 
-  public Plmjobordersroutine TAC(Double TAC) {
-    this.TAC = TAC;
+  public Plmjobordersroutine tac(Double tac) {
+    this.tac = tac;
     return this;
   }
 
    /**
-   * Kusový čas v sekundách [persistentní položka]
-   * @return TAC
+   * kusový čas v sekundách [persistentní položka]
+   * @return tac
   **/
-  @ApiModelProperty(example = "null", value = "Kusový čas v sekundách [persistentní položka]")
-  public Double getTAC() {
-    return TAC;
+  @ApiModelProperty(example = "null", value = "kusový čas v sekundách [persistentní položka]")
+  public Double getTac() {
+    return tac;
   }
 
-  public void setTAC(Double TAC) {
-    this.TAC = TAC;
+  public void setTac(Double tac) {
+    this.tac = tac;
   }
 
-  public Plmjobordersroutine TBC(Double TBC) {
-    this.TBC = TBC;
+  public Plmjobordersroutine tbc(Double tbc) {
+    this.tbc = tbc;
     return this;
   }
 
    /**
-   * Dávkový čas v sekundách [persistentní položka]
-   * @return TBC
+   * dávkový čas v sekundách [persistentní položka]
+   * @return tbc
   **/
-  @ApiModelProperty(example = "null", value = "Dávkový čas v sekundách [persistentní položka]")
-  public Double getTBC() {
-    return TBC;
+  @ApiModelProperty(example = "null", value = "dávkový čas v sekundách [persistentní položka]")
+  public Double getTbc() {
+    return tbc;
   }
 
-  public void setTBC(Double TBC) {
-    this.TBC = TBC;
+  public void setTbc(Double tbc) {
+    this.tbc = tbc;
   }
 
   public Plmjobordersroutine ongoing(Boolean ongoing) {
@@ -621,10 +666,10 @@ public class Plmjobordersroutine   {
   }
 
    /**
-   * Průběžná [persistentní položka]
+   * průběžná [persistentní položka]
    * @return ongoing
   **/
-  @ApiModelProperty(example = "null", value = "Průběžná [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "průběžná [persistentní položka]")
   public Boolean getOngoing() {
     return ongoing;
   }
@@ -639,10 +684,10 @@ public class Plmjobordersroutine   {
   }
 
    /**
-   * Plánovaná [persistentní položka]
+   * plánovaná [persistentní položka]
    * @return planned
   **/
-  @ApiModelProperty(example = "null", value = "Plánovaná [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "plánovaná [persistentní položka]")
   public Boolean getPlanned() {
     return planned;
   }
@@ -651,343 +696,433 @@ public class Plmjobordersroutine   {
     this.planned = planned;
   }
 
-  public Plmjobordersroutine advanceQuantity(Double advanceQuantity) {
-    this.advanceQuantity = advanceQuantity;
+  public Plmjobordersroutine advancequantity(Double advancequantity) {
+    this.advancequantity = advancequantity;
     return this;
   }
 
    /**
-   * Předstih [persistentní položka]
-   * @return advanceQuantity
+   * předstih [persistentní položka]
+   * @return advancequantity
   **/
-  @ApiModelProperty(example = "null", value = "Předstih [persistentní položka]")
-  public Double getAdvanceQuantity() {
-    return advanceQuantity;
+  @ApiModelProperty(example = "null", value = "předstih [persistentní položka]")
+  public Double getAdvancequantity() {
+    return advancequantity;
   }
 
-  public void setAdvanceQuantity(Double advanceQuantity) {
-    this.advanceQuantity = advanceQuantity;
+  public void setAdvancequantity(Double advancequantity) {
+    this.advancequantity = advancequantity;
   }
 
-  public Plmjobordersroutine cRPGrain(Integer cRPGrain) {
-    this.cRPGrain = cRPGrain;
+  public Plmjobordersroutine crpgrain(Integer crpgrain) {
+    this.crpgrain = crpgrain;
     return this;
   }
 
    /**
-   * Zrnitost [persistentní položka]
-   * @return cRPGrain
+   * zrnitost [persistentní položka]
+   * @return crpgrain
   **/
-  @ApiModelProperty(example = "null", value = "Zrnitost [persistentní položka]")
-  public Integer getCRPGrain() {
-    return cRPGrain;
+  @ApiModelProperty(example = "null", value = "zrnitost [persistentní položka]")
+  public Integer getCrpgrain() {
+    return crpgrain;
   }
 
-  public void setCRPGrain(Integer cRPGrain) {
-    this.cRPGrain = cRPGrain;
+  public void setCrpgrain(Integer crpgrain) {
+    this.crpgrain = crpgrain;
   }
 
-  public Plmjobordersroutine unNormed(Boolean unNormed) {
-    this.unNormed = unNormed;
+  public Plmjobordersroutine unnormed(Boolean unnormed) {
+    this.unnormed = unnormed;
     return this;
   }
 
    /**
-   * Nenormovaná operace [persistentní položka]
-   * @return unNormed
+   * nenormovaná operace [persistentní položka]
+   * @return unnormed
   **/
-  @ApiModelProperty(example = "null", value = "Nenormovaná operace [persistentní položka]")
-  public Boolean getUnNormed() {
-    return unNormed;
+  @ApiModelProperty(example = "null", value = "nenormovaná operace [persistentní položka]")
+  public Boolean getUnnormed() {
+    return unnormed;
   }
 
-  public void setUnNormed(Boolean unNormed) {
-    this.unNormed = unNormed;
+  public void setUnnormed(Boolean unnormed) {
+    this.unnormed = unnormed;
   }
 
-   /**
-   * Plánované datum
-   * @return plannedDateFrom
-  **/
-  @ApiModelProperty(example = "null", value = "Plánované datum")
-  public DateTime getPlannedDateFrom() {
-    return plannedDateFrom;
-  }
-
-   /**
-   * Plánovaná směna; ID objektu Druh pracovní směny
-   * @return plannedShiftTypeID
-  **/
-  @ApiModelProperty(example = "null", value = "Plánovaná směna; ID objektu Druh pracovní směny")
-  public String getPlannedShiftTypeID() {
-    return plannedShiftTypeID;
-  }
-
-  public Plmjobordersroutine plannedQuantity(Double plannedQuantity) {
-    this.plannedQuantity = plannedQuantity;
+  public Plmjobordersroutine planneddatefrom(DateTime planneddatefrom) {
+    this.planneddatefrom = planneddatefrom;
     return this;
   }
 
    /**
-   * Plánované množství v ev.jedn.
-   * @return plannedQuantity
+   * plánované datum
+   * @return planneddatefrom
   **/
-  @ApiModelProperty(example = "null", value = "Plánované množství v ev.jedn.")
-  public Double getPlannedQuantity() {
-    return plannedQuantity;
+  @ApiModelProperty(example = "null", value = "plánované datum")
+  public DateTime getPlanneddatefrom() {
+    return planneddatefrom;
   }
 
-  public void setPlannedQuantity(Double plannedQuantity) {
-    this.plannedQuantity = plannedQuantity;
+  public void setPlanneddatefrom(DateTime planneddatefrom) {
+    this.planneddatefrom = planneddatefrom;
   }
 
-  public Plmjobordersroutine plannedUnitQuantity(Double plannedUnitQuantity) {
-    this.plannedUnitQuantity = plannedUnitQuantity;
+  public Plmjobordersroutine plannedshifttypeId(String plannedshifttypeId) {
+    this.plannedshifttypeId = plannedshifttypeId;
     return this;
   }
 
    /**
-   * Plánované množství
-   * @return plannedUnitQuantity
+   * plánovaná směna; id objektu druh pracovní směny
+   * @return plannedshifttypeId
   **/
-  @ApiModelProperty(example = "null", value = "Plánované množství")
-  public Double getPlannedUnitQuantity() {
-    return plannedUnitQuantity;
+  @ApiModelProperty(example = "null", value = "plánovaná směna; id objektu druh pracovní směny")
+  public String getPlannedshifttypeId() {
+    return plannedshifttypeId;
   }
 
-  public void setPlannedUnitQuantity(Double plannedUnitQuantity) {
-    this.plannedUnitQuantity = plannedUnitQuantity;
+  public void setPlannedshifttypeId(String plannedshifttypeId) {
+    this.plannedshifttypeId = plannedshifttypeId;
   }
 
-   /**
-   * Plánovaný čas v sekundách
-   * @return plannedTime
-  **/
-  @ApiModelProperty(example = "null", value = "Plánovaný čas v sekundách")
-  public Double getPlannedTime() {
-    return plannedTime;
-  }
-
-  public Plmjobordersroutine realizedQuantity(Double realizedQuantity) {
-    this.realizedQuantity = realizedQuantity;
+  public Plmjobordersroutine plannedquantity(Double plannedquantity) {
+    this.plannedquantity = plannedquantity;
     return this;
   }
 
    /**
-   * Realizované množství v ev.jedn.
-   * @return realizedQuantity
+   * plánované množství v ev.jedn.
+   * @return plannedquantity
   **/
-  @ApiModelProperty(example = "null", value = "Realizované množství v ev.jedn.")
-  public Double getRealizedQuantity() {
-    return realizedQuantity;
+  @ApiModelProperty(example = "null", value = "plánované množství v ev.jedn.")
+  public Double getPlannedquantity() {
+    return plannedquantity;
   }
 
-  public void setRealizedQuantity(Double realizedQuantity) {
-    this.realizedQuantity = realizedQuantity;
+  public void setPlannedquantity(Double plannedquantity) {
+    this.plannedquantity = plannedquantity;
   }
 
-  public Plmjobordersroutine realizedUnitQuantity(Double realizedUnitQuantity) {
-    this.realizedUnitQuantity = realizedUnitQuantity;
+  public Plmjobordersroutine plannedunitquantity(Double plannedunitquantity) {
+    this.plannedunitquantity = plannedunitquantity;
     return this;
   }
 
    /**
-   * Realizované množství
-   * @return realizedUnitQuantity
+   * plánované množství
+   * @return plannedunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Realizované množství")
-  public Double getRealizedUnitQuantity() {
-    return realizedUnitQuantity;
+  @ApiModelProperty(example = "null", value = "plánované množství")
+  public Double getPlannedunitquantity() {
+    return plannedunitquantity;
   }
 
-  public void setRealizedUnitQuantity(Double realizedUnitQuantity) {
-    this.realizedUnitQuantity = realizedUnitQuantity;
+  public void setPlannedunitquantity(Double plannedunitquantity) {
+    this.plannedunitquantity = plannedunitquantity;
   }
 
-   /**
-   * Realizovaný čas
-   * @return realizedTime
-  **/
-  @ApiModelProperty(example = "null", value = "Realizovaný čas")
-  public Double getRealizedTime() {
-    return realizedTime;
-  }
-
-  public Plmjobordersroutine missedQuantity(Double missedQuantity) {
-    this.missedQuantity = missedQuantity;
+  public Plmjobordersroutine plannedtime(Double plannedtime) {
+    this.plannedtime = plannedtime;
     return this;
   }
 
    /**
-   * Chybějící množství v ev.jedn.
-   * @return missedQuantity
+   * plánovaný čas v sekundách
+   * @return plannedtime
   **/
-  @ApiModelProperty(example = "null", value = "Chybějící množství v ev.jedn.")
-  public Double getMissedQuantity() {
-    return missedQuantity;
+  @ApiModelProperty(example = "null", value = "plánovaný čas v sekundách")
+  public Double getPlannedtime() {
+    return plannedtime;
   }
 
-  public void setMissedQuantity(Double missedQuantity) {
-    this.missedQuantity = missedQuantity;
+  public void setPlannedtime(Double plannedtime) {
+    this.plannedtime = plannedtime;
   }
 
-  public Plmjobordersroutine missedUnitQuantity(Double missedUnitQuantity) {
-    this.missedUnitQuantity = missedUnitQuantity;
+  public Plmjobordersroutine realizedquantity(Double realizedquantity) {
+    this.realizedquantity = realizedquantity;
     return this;
   }
 
    /**
-   * Chybějící množství
-   * @return missedUnitQuantity
+   * realizované množství v ev.jedn.
+   * @return realizedquantity
   **/
-  @ApiModelProperty(example = "null", value = "Chybějící množství")
-  public Double getMissedUnitQuantity() {
-    return missedUnitQuantity;
+  @ApiModelProperty(example = "null", value = "realizované množství v ev.jedn.")
+  public Double getRealizedquantity() {
+    return realizedquantity;
   }
 
-  public void setMissedUnitQuantity(Double missedUnitQuantity) {
-    this.missedUnitQuantity = missedUnitQuantity;
+  public void setRealizedquantity(Double realizedquantity) {
+    this.realizedquantity = realizedquantity;
   }
 
-   /**
-   * Chybějící čas
-   * @return missedTime
-  **/
-  @ApiModelProperty(example = "null", value = "Chybějící čas")
-  public Double getMissedTime() {
-    return missedTime;
-  }
-
-  public Plmjobordersroutine unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Plmjobordersroutine realizedunitquantity(Double realizedunitquantity) {
+    this.realizedunitquantity = realizedunitquantity;
     return this;
   }
 
    /**
-   * Vztah vyráběné položky
-   * @return unitRate
+   * realizované množství
+   * @return realizedunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Vztah vyráběné položky")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "realizované množství")
+  public Double getRealizedunitquantity() {
+    return realizedunitquantity;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setRealizedunitquantity(Double realizedunitquantity) {
+    this.realizedunitquantity = realizedunitquantity;
   }
 
-   /**
-   * Realizováné mn. (%)
-   * @return realizedPerc
-  **/
-  @ApiModelProperty(example = "null", value = "Realizováné mn. (%)")
-  public Double getRealizedPerc() {
-    return realizedPerc;
-  }
-
-   /**
-   * Realizovaný čas (%)
-   * @return realizedTimePerc
-  **/
-  @ApiModelProperty(example = "null", value = "Realizovaný čas (%)")
-  public Double getRealizedTimePerc() {
-    return realizedTimePerc;
-  }
-
-   /**
-   * Skladová karta TP; ID objektu Druh pracovní směny
-   * @return storeCardID
-  **/
-  @ApiModelProperty(example = "null", value = "Skladová karta TP; ID objektu Druh pracovní směny")
-  public String getStoreCardID() {
-    return storeCardID;
-  }
-
-  public Plmjobordersroutine pLMJobOrdersRoutinesPictures(List<Plmjobordersroutinespicture> pLMJobOrdersRoutinesPictures) {
-    this.pLMJobOrdersRoutinesPictures = pLMJobOrdersRoutinesPictures;
-    return this;
-  }
-
-  public Plmjobordersroutine addPLMJobOrdersRoutinesPicturesItem(Plmjobordersroutinespicture pLMJobOrdersRoutinesPicturesItem) {
-    this.pLMJobOrdersRoutinesPictures.add(pLMJobOrdersRoutinesPicturesItem);
+  public Plmjobordersroutine realizedtime(Double realizedtime) {
+    this.realizedtime = realizedtime;
     return this;
   }
 
    /**
-   * Obrázky; kolekce BO VP - obrázek tech. postupu [nepersistentní položka]
-   * @return pLMJobOrdersRoutinesPictures
+   * realizovaný čas
+   * @return realizedtime
   **/
-  @ApiModelProperty(example = "null", value = "Obrázky; kolekce BO VP - obrázek tech. postupu [nepersistentní položka]")
-  public List<Plmjobordersroutinespicture> getPLMJobOrdersRoutinesPictures() {
-    return pLMJobOrdersRoutinesPictures;
+  @ApiModelProperty(example = "null", value = "realizovaný čas")
+  public Double getRealizedtime() {
+    return realizedtime;
   }
 
-  public void setPLMJobOrdersRoutinesPictures(List<Plmjobordersroutinespicture> pLMJobOrdersRoutinesPictures) {
-    this.pLMJobOrdersRoutinesPictures = pLMJobOrdersRoutinesPictures;
+  public void setRealizedtime(Double realizedtime) {
+    this.realizedtime = realizedtime;
   }
 
-   /**
-   * Realizovaný čas v hodinách
-   * @return realizedDuration
-  **/
-  @ApiModelProperty(example = "null", value = "Realizovaný čas v hodinách")
-  public Double getRealizedDuration() {
-    return realizedDuration;
-  }
-
-   /**
-   * Chybějící čas v hodinách
-   * @return missedDuration
-  **/
-  @ApiModelProperty(example = "null", value = "Chybějící čas v hodinách")
-  public Double getMissedDuration() {
-    return missedDuration;
-  }
-
-  public Plmjobordersroutine aDs(List<Plmjobordersroutinead> aDs) {
-    this.aDs = aDs;
-    return this;
-  }
-
-  public Plmjobordersroutine addADsItem(Plmjobordersroutinead aDsItem) {
-    this.aDs.add(aDsItem);
+  public Plmjobordersroutine missedquantity(Double missedquantity) {
+    this.missedquantity = missedquantity;
     return this;
   }
 
    /**
-   * Oceňování; kolekce BO Vazba na vedlejší pořizovací náklady [nepersistentní položka]
-   * @return aDs
+   * chybějící množství v ev.jedn.
+   * @return missedquantity
   **/
-  @ApiModelProperty(example = "null", value = "Oceňování; kolekce BO Vazba na vedlejší pořizovací náklady [nepersistentní položka]")
-  public List<Plmjobordersroutinead> getADs() {
-    return aDs;
+  @ApiModelProperty(example = "null", value = "chybějící množství v ev.jedn.")
+  public Double getMissedquantity() {
+    return missedquantity;
   }
 
-  public void setADs(List<Plmjobordersroutinead> aDs) {
-    this.aDs = aDs;
+  public void setMissedquantity(Double missedquantity) {
+    this.missedquantity = missedquantity;
   }
 
-  public Plmjobordersroutine confirmationDifferences(List<Plmjoroutineconfdiff> confirmationDifferences) {
-    this.confirmationDifferences = confirmationDifferences;
-    return this;
-  }
-
-  public Plmjobordersroutine addConfirmationDifferencesItem(Plmjoroutineconfdiff confirmationDifferencesItem) {
-    this.confirmationDifferences.add(confirmationDifferencesItem);
+  public Plmjobordersroutine missedunitquantity(Double missedunitquantity) {
+    this.missedunitquantity = missedunitquantity;
     return this;
   }
 
    /**
-   * Potvrzení rozdílů; kolekce BO VP - potvrzení rozdílu času při ocenění [nepersistentní položka]
-   * @return confirmationDifferences
+   * chybějící množství
+   * @return missedunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Potvrzení rozdílů; kolekce BO VP - potvrzení rozdílu času při ocenění [nepersistentní položka]")
-  public List<Plmjoroutineconfdiff> getConfirmationDifferences() {
-    return confirmationDifferences;
+  @ApiModelProperty(example = "null", value = "chybějící množství")
+  public Double getMissedunitquantity() {
+    return missedunitquantity;
   }
 
-  public void setConfirmationDifferences(List<Plmjoroutineconfdiff> confirmationDifferences) {
-    this.confirmationDifferences = confirmationDifferences;
+  public void setMissedunitquantity(Double missedunitquantity) {
+    this.missedunitquantity = missedunitquantity;
+  }
+
+  public Plmjobordersroutine missedtime(Double missedtime) {
+    this.missedtime = missedtime;
+    return this;
+  }
+
+   /**
+   * chybějící čas
+   * @return missedtime
+  **/
+  @ApiModelProperty(example = "null", value = "chybějící čas")
+  public Double getMissedtime() {
+    return missedtime;
+  }
+
+  public void setMissedtime(Double missedtime) {
+    this.missedtime = missedtime;
+  }
+
+  public Plmjobordersroutine unitrate(Double unitrate) {
+    this.unitrate = unitrate;
+    return this;
+  }
+
+   /**
+   * vztah vyráběné položky
+   * @return unitrate
+  **/
+  @ApiModelProperty(example = "null", value = "vztah vyráběné položky")
+  public Double getUnitrate() {
+    return unitrate;
+  }
+
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
+  }
+
+  public Plmjobordersroutine realizedperc(Double realizedperc) {
+    this.realizedperc = realizedperc;
+    return this;
+  }
+
+   /**
+   * realizováné mn. (%)
+   * @return realizedperc
+  **/
+  @ApiModelProperty(example = "null", value = "realizováné mn. (%)")
+  public Double getRealizedperc() {
+    return realizedperc;
+  }
+
+  public void setRealizedperc(Double realizedperc) {
+    this.realizedperc = realizedperc;
+  }
+
+  public Plmjobordersroutine realizedtimeperc(Double realizedtimeperc) {
+    this.realizedtimeperc = realizedtimeperc;
+    return this;
+  }
+
+   /**
+   * realizovaný čas (%)
+   * @return realizedtimeperc
+  **/
+  @ApiModelProperty(example = "null", value = "realizovaný čas (%)")
+  public Double getRealizedtimeperc() {
+    return realizedtimeperc;
+  }
+
+  public void setRealizedtimeperc(Double realizedtimeperc) {
+    this.realizedtimeperc = realizedtimeperc;
+  }
+
+  public Plmjobordersroutine storecardId(String storecardId) {
+    this.storecardId = storecardId;
+    return this;
+  }
+
+   /**
+   * skladová karta tp; id objektu druh pracovní směny
+   * @return storecardId
+  **/
+  @ApiModelProperty(example = "null", value = "skladová karta tp; id objektu druh pracovní směny")
+  public String getStorecardId() {
+    return storecardId;
+  }
+
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
+  }
+
+  public Plmjobordersroutine plmjobordersroutinespictures(List<Plmjobordersroutinespicture> plmjobordersroutinespictures) {
+    this.plmjobordersroutinespictures = plmjobordersroutinespictures;
+    return this;
+  }
+
+  public Plmjobordersroutine addPlmjobordersroutinespicturesItem(Plmjobordersroutinespicture plmjobordersroutinespicturesItem) {
+    this.plmjobordersroutinespictures.add(plmjobordersroutinespicturesItem);
+    return this;
+  }
+
+   /**
+   * obrázky; kolekce bo vp - obrázek tech. postupu [nepersistentní položka]
+   * @return plmjobordersroutinespictures
+  **/
+  @ApiModelProperty(example = "null", value = "obrázky; kolekce bo vp - obrázek tech. postupu [nepersistentní položka]")
+  public List<Plmjobordersroutinespicture> getPlmjobordersroutinespictures() {
+    return plmjobordersroutinespictures;
+  }
+
+  public void setPlmjobordersroutinespictures(List<Plmjobordersroutinespicture> plmjobordersroutinespictures) {
+    this.plmjobordersroutinespictures = plmjobordersroutinespictures;
+  }
+
+  public Plmjobordersroutine realizedduration(Double realizedduration) {
+    this.realizedduration = realizedduration;
+    return this;
+  }
+
+   /**
+   * realizovaný čas v hodinách
+   * @return realizedduration
+  **/
+  @ApiModelProperty(example = "null", value = "realizovaný čas v hodinách")
+  public Double getRealizedduration() {
+    return realizedduration;
+  }
+
+  public void setRealizedduration(Double realizedduration) {
+    this.realizedduration = realizedduration;
+  }
+
+  public Plmjobordersroutine missedduration(Double missedduration) {
+    this.missedduration = missedduration;
+    return this;
+  }
+
+   /**
+   * chybějící čas v hodinách
+   * @return missedduration
+  **/
+  @ApiModelProperty(example = "null", value = "chybějící čas v hodinách")
+  public Double getMissedduration() {
+    return missedduration;
+  }
+
+  public void setMissedduration(Double missedduration) {
+    this.missedduration = missedduration;
+  }
+
+  public Plmjobordersroutine ads(List<Plmjobordersroutinead> ads) {
+    this.ads = ads;
+    return this;
+  }
+
+  public Plmjobordersroutine addAdsItem(Plmjobordersroutinead adsItem) {
+    this.ads.add(adsItem);
+    return this;
+  }
+
+   /**
+   * oceňování; kolekce bo vazba na vedlejší pořizovací náklady [nepersistentní položka]
+   * @return ads
+  **/
+  @ApiModelProperty(example = "null", value = "oceňování; kolekce bo vazba na vedlejší pořizovací náklady [nepersistentní položka]")
+  public List<Plmjobordersroutinead> getAds() {
+    return ads;
+  }
+
+  public void setAds(List<Plmjobordersroutinead> ads) {
+    this.ads = ads;
+  }
+
+  public Plmjobordersroutine confirmationdifferences(List<Plmjoroutineconfdiff> confirmationdifferences) {
+    this.confirmationdifferences = confirmationdifferences;
+    return this;
+  }
+
+  public Plmjobordersroutine addConfirmationdifferencesItem(Plmjoroutineconfdiff confirmationdifferencesItem) {
+    this.confirmationdifferences.add(confirmationdifferencesItem);
+    return this;
+  }
+
+   /**
+   * potvrzení rozdílů; kolekce bo vp - potvrzení rozdílu času při ocenění [nepersistentní položka]
+   * @return confirmationdifferences
+  **/
+  @ApiModelProperty(example = "null", value = "potvrzení rozdílů; kolekce bo vp - potvrzení rozdílu času při ocenění [nepersistentní položka]")
+  public List<Plmjoroutineconfdiff> getConfirmationdifferences() {
+    return confirmationdifferences;
+  }
+
+  public void setConfirmationdifferences(List<Plmjoroutineconfdiff> confirmationdifferences) {
+    this.confirmationdifferences = confirmationdifferences;
   }
 
 
@@ -1000,62 +1135,62 @@ public class Plmjobordersroutine   {
       return false;
     }
     Plmjobordersroutine plmjobordersroutine = (Plmjobordersroutine) o;
-    return Objects.equals(this.displayName, plmjobordersroutine.displayName) &&
-        Objects.equals(this.ID, plmjobordersroutine.ID) &&
-        Objects.equals(this.classID, plmjobordersroutine.classID) &&
-        Objects.equals(this.objVersion, plmjobordersroutine.objVersion) &&
-        Objects.equals(this.parentID, plmjobordersroutine.parentID) &&
-        Objects.equals(this.posIndex, plmjobordersroutine.posIndex) &&
-        Objects.equals(this.workPlaceID, plmjobordersroutine.workPlaceID) &&
-        Objects.equals(this.phaseID, plmjobordersroutine.phaseID) &&
-        Objects.equals(this.partTime, plmjobordersroutine.partTime) &&
-        Objects.equals(this.setupTime, plmjobordersroutine.setupTime) &&
+    return Objects.equals(this.displayname, plmjobordersroutine.displayname) &&
+        Objects.equals(this.id, plmjobordersroutine.id) &&
+        Objects.equals(this.classid, plmjobordersroutine.classid) &&
+        Objects.equals(this.objversion, plmjobordersroutine.objversion) &&
+        Objects.equals(this.parentId, plmjobordersroutine.parentId) &&
+        Objects.equals(this.posindex, plmjobordersroutine.posindex) &&
+        Objects.equals(this.workplaceId, plmjobordersroutine.workplaceId) &&
+        Objects.equals(this.phaseId, plmjobordersroutine.phaseId) &&
+        Objects.equals(this.parttime, plmjobordersroutine.parttime) &&
+        Objects.equals(this.setuptime, plmjobordersroutine.setuptime) &&
         Objects.equals(this.title, plmjobordersroutine.title) &&
         Objects.equals(this.note, plmjobordersroutine.note) &&
         Objects.equals(this.cooperation, plmjobordersroutine.cooperation) &&
-        Objects.equals(this.compulsoryOperation, plmjobordersroutine.compulsoryOperation) &&
+        Objects.equals(this.compulsoryoperation, plmjobordersroutine.compulsoryoperation) &&
         Objects.equals(this.finished, plmjobordersroutine.finished) &&
-        Objects.equals(this.salaryClassID, plmjobordersroutine.salaryClassID) &&
+        Objects.equals(this.salaryclassId, plmjobordersroutine.salaryclassId) &&
         Objects.equals(this.batch, plmjobordersroutine.batch) &&
-        Objects.equals(this.commandLineExpr, plmjobordersroutine.commandLineExpr) &&
-        Objects.equals(this.protocolFileNameExpr, plmjobordersroutine.protocolFileNameExpr) &&
-        Objects.equals(this.usersMessage, plmjobordersroutine.usersMessage) &&
-        Objects.equals(this.tACUnit, plmjobordersroutine.tACUnit) &&
-        Objects.equals(this.tBCUnit, plmjobordersroutine.tBCUnit) &&
-        Objects.equals(this.unitTAC, plmjobordersroutine.unitTAC) &&
-        Objects.equals(this.unitTBC, plmjobordersroutine.unitTBC) &&
-        Objects.equals(this.TAC, plmjobordersroutine.TAC) &&
-        Objects.equals(this.TBC, plmjobordersroutine.TBC) &&
+        Objects.equals(this.commandlineexpr, plmjobordersroutine.commandlineexpr) &&
+        Objects.equals(this.protocolfilenameexpr, plmjobordersroutine.protocolfilenameexpr) &&
+        Objects.equals(this.usersmessage, plmjobordersroutine.usersmessage) &&
+        Objects.equals(this.tacunit, plmjobordersroutine.tacunit) &&
+        Objects.equals(this.tbcunit, plmjobordersroutine.tbcunit) &&
+        Objects.equals(this.unittac, plmjobordersroutine.unittac) &&
+        Objects.equals(this.unittbc, plmjobordersroutine.unittbc) &&
+        Objects.equals(this.tac, plmjobordersroutine.tac) &&
+        Objects.equals(this.tbc, plmjobordersroutine.tbc) &&
         Objects.equals(this.ongoing, plmjobordersroutine.ongoing) &&
         Objects.equals(this.planned, plmjobordersroutine.planned) &&
-        Objects.equals(this.advanceQuantity, plmjobordersroutine.advanceQuantity) &&
-        Objects.equals(this.cRPGrain, plmjobordersroutine.cRPGrain) &&
-        Objects.equals(this.unNormed, plmjobordersroutine.unNormed) &&
-        Objects.equals(this.plannedDateFrom, plmjobordersroutine.plannedDateFrom) &&
-        Objects.equals(this.plannedShiftTypeID, plmjobordersroutine.plannedShiftTypeID) &&
-        Objects.equals(this.plannedQuantity, plmjobordersroutine.plannedQuantity) &&
-        Objects.equals(this.plannedUnitQuantity, plmjobordersroutine.plannedUnitQuantity) &&
-        Objects.equals(this.plannedTime, plmjobordersroutine.plannedTime) &&
-        Objects.equals(this.realizedQuantity, plmjobordersroutine.realizedQuantity) &&
-        Objects.equals(this.realizedUnitQuantity, plmjobordersroutine.realizedUnitQuantity) &&
-        Objects.equals(this.realizedTime, plmjobordersroutine.realizedTime) &&
-        Objects.equals(this.missedQuantity, plmjobordersroutine.missedQuantity) &&
-        Objects.equals(this.missedUnitQuantity, plmjobordersroutine.missedUnitQuantity) &&
-        Objects.equals(this.missedTime, plmjobordersroutine.missedTime) &&
-        Objects.equals(this.unitRate, plmjobordersroutine.unitRate) &&
-        Objects.equals(this.realizedPerc, plmjobordersroutine.realizedPerc) &&
-        Objects.equals(this.realizedTimePerc, plmjobordersroutine.realizedTimePerc) &&
-        Objects.equals(this.storeCardID, plmjobordersroutine.storeCardID) &&
-        Objects.equals(this.pLMJobOrdersRoutinesPictures, plmjobordersroutine.pLMJobOrdersRoutinesPictures) &&
-        Objects.equals(this.realizedDuration, plmjobordersroutine.realizedDuration) &&
-        Objects.equals(this.missedDuration, plmjobordersroutine.missedDuration) &&
-        Objects.equals(this.aDs, plmjobordersroutine.aDs) &&
-        Objects.equals(this.confirmationDifferences, plmjobordersroutine.confirmationDifferences);
+        Objects.equals(this.advancequantity, plmjobordersroutine.advancequantity) &&
+        Objects.equals(this.crpgrain, plmjobordersroutine.crpgrain) &&
+        Objects.equals(this.unnormed, plmjobordersroutine.unnormed) &&
+        Objects.equals(this.planneddatefrom, plmjobordersroutine.planneddatefrom) &&
+        Objects.equals(this.plannedshifttypeId, plmjobordersroutine.plannedshifttypeId) &&
+        Objects.equals(this.plannedquantity, plmjobordersroutine.plannedquantity) &&
+        Objects.equals(this.plannedunitquantity, plmjobordersroutine.plannedunitquantity) &&
+        Objects.equals(this.plannedtime, plmjobordersroutine.plannedtime) &&
+        Objects.equals(this.realizedquantity, plmjobordersroutine.realizedquantity) &&
+        Objects.equals(this.realizedunitquantity, plmjobordersroutine.realizedunitquantity) &&
+        Objects.equals(this.realizedtime, plmjobordersroutine.realizedtime) &&
+        Objects.equals(this.missedquantity, plmjobordersroutine.missedquantity) &&
+        Objects.equals(this.missedunitquantity, plmjobordersroutine.missedunitquantity) &&
+        Objects.equals(this.missedtime, plmjobordersroutine.missedtime) &&
+        Objects.equals(this.unitrate, plmjobordersroutine.unitrate) &&
+        Objects.equals(this.realizedperc, plmjobordersroutine.realizedperc) &&
+        Objects.equals(this.realizedtimeperc, plmjobordersroutine.realizedtimeperc) &&
+        Objects.equals(this.storecardId, plmjobordersroutine.storecardId) &&
+        Objects.equals(this.plmjobordersroutinespictures, plmjobordersroutine.plmjobordersroutinespictures) &&
+        Objects.equals(this.realizedduration, plmjobordersroutine.realizedduration) &&
+        Objects.equals(this.missedduration, plmjobordersroutine.missedduration) &&
+        Objects.equals(this.ads, plmjobordersroutine.ads) &&
+        Objects.equals(this.confirmationdifferences, plmjobordersroutine.confirmationdifferences);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, workPlaceID, phaseID, partTime, setupTime, title, note, cooperation, compulsoryOperation, finished, salaryClassID, batch, commandLineExpr, protocolFileNameExpr, usersMessage, tACUnit, tBCUnit, unitTAC, unitTBC, TAC, TBC, ongoing, planned, advanceQuantity, cRPGrain, unNormed, plannedDateFrom, plannedShiftTypeID, plannedQuantity, plannedUnitQuantity, plannedTime, realizedQuantity, realizedUnitQuantity, realizedTime, missedQuantity, missedUnitQuantity, missedTime, unitRate, realizedPerc, realizedTimePerc, storeCardID, pLMJobOrdersRoutinesPictures, realizedDuration, missedDuration, aDs, confirmationDifferences);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, workplaceId, phaseId, parttime, setuptime, title, note, cooperation, compulsoryoperation, finished, salaryclassId, batch, commandlineexpr, protocolfilenameexpr, usersmessage, tacunit, tbcunit, unittac, unittbc, tac, tbc, ongoing, planned, advancequantity, crpgrain, unnormed, planneddatefrom, plannedshifttypeId, plannedquantity, plannedunitquantity, plannedtime, realizedquantity, realizedunitquantity, realizedtime, missedquantity, missedunitquantity, missedtime, unitrate, realizedperc, realizedtimeperc, storecardId, plmjobordersroutinespictures, realizedduration, missedduration, ads, confirmationdifferences);
   }
 
   @Override
@@ -1063,57 +1198,57 @@ public class Plmjobordersroutine   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmjobordersroutine {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    workPlaceID: ").append(toIndentedString(workPlaceID)).append("\n");
-    sb.append("    phaseID: ").append(toIndentedString(phaseID)).append("\n");
-    sb.append("    partTime: ").append(toIndentedString(partTime)).append("\n");
-    sb.append("    setupTime: ").append(toIndentedString(setupTime)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    workplaceId: ").append(toIndentedString(workplaceId)).append("\n");
+    sb.append("    phaseId: ").append(toIndentedString(phaseId)).append("\n");
+    sb.append("    parttime: ").append(toIndentedString(parttime)).append("\n");
+    sb.append("    setuptime: ").append(toIndentedString(setuptime)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
     sb.append("    cooperation: ").append(toIndentedString(cooperation)).append("\n");
-    sb.append("    compulsoryOperation: ").append(toIndentedString(compulsoryOperation)).append("\n");
+    sb.append("    compulsoryoperation: ").append(toIndentedString(compulsoryoperation)).append("\n");
     sb.append("    finished: ").append(toIndentedString(finished)).append("\n");
-    sb.append("    salaryClassID: ").append(toIndentedString(salaryClassID)).append("\n");
+    sb.append("    salaryclassId: ").append(toIndentedString(salaryclassId)).append("\n");
     sb.append("    batch: ").append(toIndentedString(batch)).append("\n");
-    sb.append("    commandLineExpr: ").append(toIndentedString(commandLineExpr)).append("\n");
-    sb.append("    protocolFileNameExpr: ").append(toIndentedString(protocolFileNameExpr)).append("\n");
-    sb.append("    usersMessage: ").append(toIndentedString(usersMessage)).append("\n");
-    sb.append("    tACUnit: ").append(toIndentedString(tACUnit)).append("\n");
-    sb.append("    tBCUnit: ").append(toIndentedString(tBCUnit)).append("\n");
-    sb.append("    unitTAC: ").append(toIndentedString(unitTAC)).append("\n");
-    sb.append("    unitTBC: ").append(toIndentedString(unitTBC)).append("\n");
-    sb.append("    TAC: ").append(toIndentedString(TAC)).append("\n");
-    sb.append("    TBC: ").append(toIndentedString(TBC)).append("\n");
+    sb.append("    commandlineexpr: ").append(toIndentedString(commandlineexpr)).append("\n");
+    sb.append("    protocolfilenameexpr: ").append(toIndentedString(protocolfilenameexpr)).append("\n");
+    sb.append("    usersmessage: ").append(toIndentedString(usersmessage)).append("\n");
+    sb.append("    tacunit: ").append(toIndentedString(tacunit)).append("\n");
+    sb.append("    tbcunit: ").append(toIndentedString(tbcunit)).append("\n");
+    sb.append("    unittac: ").append(toIndentedString(unittac)).append("\n");
+    sb.append("    unittbc: ").append(toIndentedString(unittbc)).append("\n");
+    sb.append("    tac: ").append(toIndentedString(tac)).append("\n");
+    sb.append("    tbc: ").append(toIndentedString(tbc)).append("\n");
     sb.append("    ongoing: ").append(toIndentedString(ongoing)).append("\n");
     sb.append("    planned: ").append(toIndentedString(planned)).append("\n");
-    sb.append("    advanceQuantity: ").append(toIndentedString(advanceQuantity)).append("\n");
-    sb.append("    cRPGrain: ").append(toIndentedString(cRPGrain)).append("\n");
-    sb.append("    unNormed: ").append(toIndentedString(unNormed)).append("\n");
-    sb.append("    plannedDateFrom: ").append(toIndentedString(plannedDateFrom)).append("\n");
-    sb.append("    plannedShiftTypeID: ").append(toIndentedString(plannedShiftTypeID)).append("\n");
-    sb.append("    plannedQuantity: ").append(toIndentedString(plannedQuantity)).append("\n");
-    sb.append("    plannedUnitQuantity: ").append(toIndentedString(plannedUnitQuantity)).append("\n");
-    sb.append("    plannedTime: ").append(toIndentedString(plannedTime)).append("\n");
-    sb.append("    realizedQuantity: ").append(toIndentedString(realizedQuantity)).append("\n");
-    sb.append("    realizedUnitQuantity: ").append(toIndentedString(realizedUnitQuantity)).append("\n");
-    sb.append("    realizedTime: ").append(toIndentedString(realizedTime)).append("\n");
-    sb.append("    missedQuantity: ").append(toIndentedString(missedQuantity)).append("\n");
-    sb.append("    missedUnitQuantity: ").append(toIndentedString(missedUnitQuantity)).append("\n");
-    sb.append("    missedTime: ").append(toIndentedString(missedTime)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    realizedPerc: ").append(toIndentedString(realizedPerc)).append("\n");
-    sb.append("    realizedTimePerc: ").append(toIndentedString(realizedTimePerc)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    pLMJobOrdersRoutinesPictures: ").append(toIndentedString(pLMJobOrdersRoutinesPictures)).append("\n");
-    sb.append("    realizedDuration: ").append(toIndentedString(realizedDuration)).append("\n");
-    sb.append("    missedDuration: ").append(toIndentedString(missedDuration)).append("\n");
-    sb.append("    aDs: ").append(toIndentedString(aDs)).append("\n");
-    sb.append("    confirmationDifferences: ").append(toIndentedString(confirmationDifferences)).append("\n");
+    sb.append("    advancequantity: ").append(toIndentedString(advancequantity)).append("\n");
+    sb.append("    crpgrain: ").append(toIndentedString(crpgrain)).append("\n");
+    sb.append("    unnormed: ").append(toIndentedString(unnormed)).append("\n");
+    sb.append("    planneddatefrom: ").append(toIndentedString(planneddatefrom)).append("\n");
+    sb.append("    plannedshifttypeId: ").append(toIndentedString(plannedshifttypeId)).append("\n");
+    sb.append("    plannedquantity: ").append(toIndentedString(plannedquantity)).append("\n");
+    sb.append("    plannedunitquantity: ").append(toIndentedString(plannedunitquantity)).append("\n");
+    sb.append("    plannedtime: ").append(toIndentedString(plannedtime)).append("\n");
+    sb.append("    realizedquantity: ").append(toIndentedString(realizedquantity)).append("\n");
+    sb.append("    realizedunitquantity: ").append(toIndentedString(realizedunitquantity)).append("\n");
+    sb.append("    realizedtime: ").append(toIndentedString(realizedtime)).append("\n");
+    sb.append("    missedquantity: ").append(toIndentedString(missedquantity)).append("\n");
+    sb.append("    missedunitquantity: ").append(toIndentedString(missedunitquantity)).append("\n");
+    sb.append("    missedtime: ").append(toIndentedString(missedtime)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    realizedperc: ").append(toIndentedString(realizedperc)).append("\n");
+    sb.append("    realizedtimeperc: ").append(toIndentedString(realizedtimeperc)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    plmjobordersroutinespictures: ").append(toIndentedString(plmjobordersroutinespictures)).append("\n");
+    sb.append("    realizedduration: ").append(toIndentedString(realizedduration)).append("\n");
+    sb.append("    missedduration: ").append(toIndentedString(missedduration)).append("\n");
+    sb.append("    ads: ").append(toIndentedString(ads)).append("\n");
+    sb.append("    confirmationdifferences: ").append(toIndentedString(confirmationdifferences)).append("\n");
     sb.append("}");
     return sb.toString();
   }

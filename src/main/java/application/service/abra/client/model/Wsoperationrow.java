@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,96 +34,141 @@ import java.util.Objects;
 /**
  * Wsoperationrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wsoperationrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ParamType")
-  private Integer paramType = null;
+  @SerializedName("paramtype")
+  private Integer paramtype = null;
 
-  @SerializedName("ParamFlags")
-  private Integer paramFlags = null;
+  @SerializedName("paramflags")
+  private Integer paramflags = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Operace pro webovou službu [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Operace pro webovou službu [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Wsoperationrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Wsoperationrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wsoperationrow id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wsoperationrow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wsoperationrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Wsoperationrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu operace pro webovou službu [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu operace pro webovou službu [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Wsoperationrow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
   public Wsoperationrow name(String name) {
@@ -132,10 +177,10 @@ public class Wsoperationrow   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -144,40 +189,40 @@ public class Wsoperationrow   {
     this.name = name;
   }
 
-  public Wsoperationrow paramType(Integer paramType) {
-    this.paramType = paramType;
+  public Wsoperationrow paramtype(Integer paramtype) {
+    this.paramtype = paramtype;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return paramType
+   * typ [persistentní položka]
+   * @return paramtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getParamType() {
-    return paramType;
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getParamtype() {
+    return paramtype;
   }
 
-  public void setParamType(Integer paramType) {
-    this.paramType = paramType;
+  public void setParamtype(Integer paramtype) {
+    this.paramtype = paramtype;
   }
 
-  public Wsoperationrow paramFlags(Integer paramFlags) {
-    this.paramFlags = paramFlags;
+  public Wsoperationrow paramflags(Integer paramflags) {
+    this.paramflags = paramflags;
     return this;
   }
 
    /**
-   * Příznaky [persistentní položka]
-   * @return paramFlags
+   * příznaky [persistentní položka]
+   * @return paramflags
   **/
-  @ApiModelProperty(example = "null", value = "Příznaky [persistentní položka]")
-  public Integer getParamFlags() {
-    return paramFlags;
+  @ApiModelProperty(example = "null", value = "příznaky [persistentní položka]")
+  public Integer getParamflags() {
+    return paramflags;
   }
 
-  public void setParamFlags(Integer paramFlags) {
-    this.paramFlags = paramFlags;
+  public void setParamflags(Integer paramflags) {
+    this.paramflags = paramflags;
   }
 
 
@@ -190,20 +235,20 @@ public class Wsoperationrow   {
       return false;
     }
     Wsoperationrow wsoperationrow = (Wsoperationrow) o;
-    return Objects.equals(this.displayName, wsoperationrow.displayName) &&
-        Objects.equals(this.ID, wsoperationrow.ID) &&
-        Objects.equals(this.classID, wsoperationrow.classID) &&
-        Objects.equals(this.objVersion, wsoperationrow.objVersion) &&
-        Objects.equals(this.parentID, wsoperationrow.parentID) &&
-        Objects.equals(this.posIndex, wsoperationrow.posIndex) &&
+    return Objects.equals(this.displayname, wsoperationrow.displayname) &&
+        Objects.equals(this.id, wsoperationrow.id) &&
+        Objects.equals(this.classid, wsoperationrow.classid) &&
+        Objects.equals(this.objversion, wsoperationrow.objversion) &&
+        Objects.equals(this.parentId, wsoperationrow.parentId) &&
+        Objects.equals(this.posindex, wsoperationrow.posindex) &&
         Objects.equals(this.name, wsoperationrow.name) &&
-        Objects.equals(this.paramType, wsoperationrow.paramType) &&
-        Objects.equals(this.paramFlags, wsoperationrow.paramFlags);
+        Objects.equals(this.paramtype, wsoperationrow.paramtype) &&
+        Objects.equals(this.paramflags, wsoperationrow.paramflags);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, name, paramType, paramFlags);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, name, paramtype, paramflags);
   }
 
   @Override
@@ -211,15 +256,15 @@ public class Wsoperationrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wsoperationrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    paramType: ").append(toIndentedString(paramType)).append("\n");
-    sb.append("    paramFlags: ").append(toIndentedString(paramFlags)).append("\n");
+    sb.append("    paramtype: ").append(toIndentedString(paramtype)).append("\n");
+    sb.append("    paramflags: ").append(toIndentedString(paramflags)).append("\n");
     sb.append("}");
     return sb.toString();
   }

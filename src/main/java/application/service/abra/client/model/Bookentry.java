@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,255 +35,291 @@ import java.util.Objects;
 /**
  * Bookentry
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Bookentry   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("AccDate$DATE")
-  private DateTime accDateDATE = null;
+  @SerializedName("accdate$date")
+  private DateTime accdatedate = null;
 
-  @SerializedName("AccDocQueue_ID")
-  private String accDocQueueID = null;
+  @SerializedName("accdocqueue_id")
+  private String accdocqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("Text")
+  @SerializedName("text")
   private String text = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("AmountInCurrency")
-  private Double amountInCurrency = null;
+  @SerializedName("amountincurrency")
+  private Double amountincurrency = null;
 
-  @SerializedName("Audited")
+  @SerializedName("audited")
   private Boolean audited = null;
 
-  @SerializedName("AccGroup_ID")
-  private String accGroupID = null;
+  @SerializedName("accgroup_id")
+  private String accgroupId = null;
 
-  @SerializedName("IsRequest")
-  private Boolean isRequest = null;
+  @SerializedName("isrequest")
+  private Boolean isrequest = null;
 
-  @SerializedName("DebitAccount_ID")
-  private String debitAccountID = null;
+  @SerializedName("debitaccount_id")
+  private String debitaccountId = null;
 
-  @SerializedName("DebitDivision_ID")
-  private String debitDivisionID = null;
+  @SerializedName("debitdivision_id")
+  private String debitdivisionId = null;
 
-  @SerializedName("DebitBusOrder_ID")
-  private String debitBusOrderID = null;
+  @SerializedName("debitbusorder_id")
+  private String debitbusorderId = null;
 
-  @SerializedName("DebitBusTransaction_ID")
-  private String debitBusTransactionID = null;
+  @SerializedName("debitbustransaction_id")
+  private String debitbustransactionId = null;
 
-  @SerializedName("DebitBusProject_ID")
-  private String debitBusProjectID = null;
+  @SerializedName("debitbusproject_id")
+  private String debitbusprojectId = null;
 
-  @SerializedName("CreditAccount_ID")
-  private String creditAccountID = null;
+  @SerializedName("creditaccount_id")
+  private String creditaccountId = null;
 
-  @SerializedName("CreditDivision_ID")
-  private String creditDivisionID = null;
+  @SerializedName("creditdivision_id")
+  private String creditdivisionId = null;
 
-  @SerializedName("CreditBusOrder_ID")
-  private String creditBusOrderID = null;
+  @SerializedName("creditbusorder_id")
+  private String creditbusorderId = null;
 
-  @SerializedName("CreditBusTransaction_ID")
-  private String creditBusTransactionID = null;
+  @SerializedName("creditbustransaction_id")
+  private String creditbustransactionId = null;
 
-  @SerializedName("CreditBusProject_ID")
-  private String creditBusProjectID = null;
+  @SerializedName("creditbusproject_id")
+  private String creditbusprojectId = null;
 
-  @SerializedName("GroupFirm_ID")
-  private String groupFirmID = null;
+  @SerializedName("groupfirm_id")
+  private String groupfirmId = null;
+
+  public Bookentry displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
   }
 
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Bookentry accDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public Bookentry id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Datum účtování [persistentní položka]
-   * @return accDateDATE
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Datum účtování [persistentní položka]")
-  public DateTime getAccDateDATE() {
-    return accDateDATE;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setAccDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Bookentry accDocQueueID(String accDocQueueID) {
-    this.accDocQueueID = accDocQueueID;
+  public Bookentry classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Účetní řada; ID objektu Účetní řada dokladů [persistentní položka]
-   * @return accDocQueueID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Účetní řada; ID objektu Účetní řada dokladů [persistentní položka]")
-  public String getAccDocQueueID() {
-    return accDocQueueID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setAccDocQueueID(String accDocQueueID) {
-    this.accDocQueueID = accDocQueueID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Bookentry periodID(String periodID) {
-    this.periodID = periodID;
+  public Bookentry objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Bookentry ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Bookentry accdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * datum účtování [persistentní položka]
+   * @return accdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "datum účtování [persistentní položka]")
+  public DateTime getAccdatedate() {
+    return accdatedate;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setAccdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
   }
 
-  public Bookentry firmID(String firmID) {
-    this.firmID = firmID;
+  public Bookentry accdocqueueId(String accdocqueueId) {
+    this.accdocqueueId = accdocqueueId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * Účetní řada; id objektu Účetní řada dokladů [persistentní položka]
+   * @return accdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "Účetní řada; id objektu Účetní řada dokladů [persistentní položka]")
+  public String getAccdocqueueId() {
+    return accdocqueueId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setAccdocqueueId(String accdocqueueId) {
+    this.accdocqueueId = accdocqueueId;
   }
 
-  public Bookentry createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Bookentry periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Bookentry correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Bookentry ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
+  }
+
+  public Bookentry firmId(String firmId) {
+    this.firmId = firmId;
+    return this;
+  }
+
+   /**
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
+  **/
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
+  }
+
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
+  }
+
+  public Bookentry createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+    return this;
+  }
+
+   /**
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
+  }
+
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Bookentry correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+    return this;
+  }
+
+   /**
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
+  }
+
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
   public Bookentry text(String text) {
@@ -292,10 +328,10 @@ public class Bookentry   {
   }
 
    /**
-   * Text [persistentní položka]
+   * text [persistentní položka]
    * @return text
   **/
-  @ApiModelProperty(example = "null", value = "Text [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "text [persistentní položka]")
   public String getText() {
     return text;
   }
@@ -322,40 +358,40 @@ public class Bookentry   {
     this.amount = amount;
   }
 
-  public Bookentry currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Bookentry currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
-  public Bookentry amountInCurrency(Double amountInCurrency) {
-    this.amountInCurrency = amountInCurrency;
+  public Bookentry amountincurrency(Double amountincurrency) {
+    this.amountincurrency = amountincurrency;
     return this;
   }
 
    /**
-   * Cizí částka [persistentní položka]
-   * @return amountInCurrency
+   * cizí částka [persistentní položka]
+   * @return amountincurrency
   **/
-  @ApiModelProperty(example = "null", value = "Cizí částka [persistentní položka]")
-  public Double getAmountInCurrency() {
-    return amountInCurrency;
+  @ApiModelProperty(example = "null", value = "cizí částka [persistentní položka]")
+  public Double getAmountincurrency() {
+    return amountincurrency;
   }
 
-  public void setAmountInCurrency(Double amountInCurrency) {
-    this.amountInCurrency = amountInCurrency;
+  public void setAmountincurrency(Double amountincurrency) {
+    this.amountincurrency = amountincurrency;
   }
 
   public Bookentry audited(Boolean audited) {
@@ -364,10 +400,10 @@ public class Bookentry   {
   }
 
    /**
-   * Audit [persistentní položka]
+   * audit [persistentní položka]
    * @return audited
   **/
-  @ApiModelProperty(example = "null", value = "Audit [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "audit [persistentní položka]")
   public Boolean getAudited() {
     return audited;
   }
@@ -376,238 +412,238 @@ public class Bookentry   {
     this.audited = audited;
   }
 
-  public Bookentry accGroupID(String accGroupID) {
-    this.accGroupID = accGroupID;
+  public Bookentry accgroupId(String accgroupId) {
+    this.accgroupId = accgroupId;
     return this;
   }
 
    /**
-   * Účetní skupina; ID objektu Účetní skupina [persistentní položka]
-   * @return accGroupID
+   * Účetní skupina; id objektu Účetní skupina [persistentní položka]
+   * @return accgroupId
   **/
-  @ApiModelProperty(example = "null", value = "Účetní skupina; ID objektu Účetní skupina [persistentní položka]")
-  public String getAccGroupID() {
-    return accGroupID;
+  @ApiModelProperty(example = "null", value = "Účetní skupina; id objektu Účetní skupina [persistentní položka]")
+  public String getAccgroupId() {
+    return accgroupId;
   }
 
-  public void setAccGroupID(String accGroupID) {
-    this.accGroupID = accGroupID;
+  public void setAccgroupId(String accgroupId) {
+    this.accgroupId = accgroupId;
   }
 
-  public Bookentry isRequest(Boolean isRequest) {
-    this.isRequest = isRequest;
+  public Bookentry isrequest(Boolean isrequest) {
+    this.isrequest = isrequest;
     return this;
   }
 
    /**
    * Žádost [persistentní položka]
-   * @return isRequest
+   * @return isrequest
   **/
   @ApiModelProperty(example = "null", value = "Žádost [persistentní položka]")
-  public Boolean getIsRequest() {
-    return isRequest;
+  public Boolean getIsrequest() {
+    return isrequest;
   }
 
-  public void setIsRequest(Boolean isRequest) {
-    this.isRequest = isRequest;
+  public void setIsrequest(Boolean isrequest) {
+    this.isrequest = isrequest;
   }
 
-  public Bookentry debitAccountID(String debitAccountID) {
-    this.debitAccountID = debitAccountID;
+  public Bookentry debitaccountId(String debitaccountId) {
+    this.debitaccountId = debitaccountId;
     return this;
   }
 
    /**
-   * Účet MD; ID objektu Účet účetního rozvrhu [persistentní položka]
-   * @return debitAccountID
+   * Účet md; id objektu Účet účetního rozvrhu [persistentní položka]
+   * @return debitaccountId
   **/
-  @ApiModelProperty(example = "null", value = "Účet MD; ID objektu Účet účetního rozvrhu [persistentní položka]")
-  public String getDebitAccountID() {
-    return debitAccountID;
+  @ApiModelProperty(example = "null", value = "Účet md; id objektu Účet účetního rozvrhu [persistentní položka]")
+  public String getDebitaccountId() {
+    return debitaccountId;
   }
 
-  public void setDebitAccountID(String debitAccountID) {
-    this.debitAccountID = debitAccountID;
+  public void setDebitaccountId(String debitaccountId) {
+    this.debitaccountId = debitaccountId;
   }
 
-  public Bookentry debitDivisionID(String debitDivisionID) {
-    this.debitDivisionID = debitDivisionID;
+  public Bookentry debitdivisionId(String debitdivisionId) {
+    this.debitdivisionId = debitdivisionId;
     return this;
   }
 
    /**
-   * Středisko MD; ID objektu Středisko [persistentní položka]
-   * @return debitDivisionID
+   * středisko md; id objektu středisko [persistentní položka]
+   * @return debitdivisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko MD; ID objektu Středisko [persistentní položka]")
-  public String getDebitDivisionID() {
-    return debitDivisionID;
+  @ApiModelProperty(example = "null", value = "středisko md; id objektu středisko [persistentní položka]")
+  public String getDebitdivisionId() {
+    return debitdivisionId;
   }
 
-  public void setDebitDivisionID(String debitDivisionID) {
-    this.debitDivisionID = debitDivisionID;
+  public void setDebitdivisionId(String debitdivisionId) {
+    this.debitdivisionId = debitdivisionId;
   }
 
-  public Bookentry debitBusOrderID(String debitBusOrderID) {
-    this.debitBusOrderID = debitBusOrderID;
+  public Bookentry debitbusorderId(String debitbusorderId) {
+    this.debitbusorderId = debitbusorderId;
     return this;
   }
 
    /**
-   * Zakázka MD; ID objektu Zakázka [persistentní položka]
-   * @return debitBusOrderID
+   * zakázka md; id objektu zakázka [persistentní položka]
+   * @return debitbusorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka MD; ID objektu Zakázka [persistentní položka]")
-  public String getDebitBusOrderID() {
-    return debitBusOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka md; id objektu zakázka [persistentní položka]")
+  public String getDebitbusorderId() {
+    return debitbusorderId;
   }
 
-  public void setDebitBusOrderID(String debitBusOrderID) {
-    this.debitBusOrderID = debitBusOrderID;
+  public void setDebitbusorderId(String debitbusorderId) {
+    this.debitbusorderId = debitbusorderId;
   }
 
-  public Bookentry debitBusTransactionID(String debitBusTransactionID) {
-    this.debitBusTransactionID = debitBusTransactionID;
+  public Bookentry debitbustransactionId(String debitbustransactionId) {
+    this.debitbustransactionId = debitbustransactionId;
     return this;
   }
 
    /**
-   * O.případ MD; ID objektu Obchodní případ [persistentní položka]
-   * @return debitBusTransactionID
+   * o.případ md; id objektu obchodní případ [persistentní položka]
+   * @return debitbustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "O.případ MD; ID objektu Obchodní případ [persistentní položka]")
-  public String getDebitBusTransactionID() {
-    return debitBusTransactionID;
+  @ApiModelProperty(example = "null", value = "o.případ md; id objektu obchodní případ [persistentní položka]")
+  public String getDebitbustransactionId() {
+    return debitbustransactionId;
   }
 
-  public void setDebitBusTransactionID(String debitBusTransactionID) {
-    this.debitBusTransactionID = debitBusTransactionID;
+  public void setDebitbustransactionId(String debitbustransactionId) {
+    this.debitbustransactionId = debitbustransactionId;
   }
 
-  public Bookentry debitBusProjectID(String debitBusProjectID) {
-    this.debitBusProjectID = debitBusProjectID;
+  public Bookentry debitbusprojectId(String debitbusprojectId) {
+    this.debitbusprojectId = debitbusprojectId;
     return this;
   }
 
    /**
-   * Projekt MD; ID objektu Projekt [persistentní položka]
-   * @return debitBusProjectID
+   * projekt md; id objektu projekt [persistentní položka]
+   * @return debitbusprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt MD; ID objektu Projekt [persistentní položka]")
-  public String getDebitBusProjectID() {
-    return debitBusProjectID;
+  @ApiModelProperty(example = "null", value = "projekt md; id objektu projekt [persistentní položka]")
+  public String getDebitbusprojectId() {
+    return debitbusprojectId;
   }
 
-  public void setDebitBusProjectID(String debitBusProjectID) {
-    this.debitBusProjectID = debitBusProjectID;
+  public void setDebitbusprojectId(String debitbusprojectId) {
+    this.debitbusprojectId = debitbusprojectId;
   }
 
-  public Bookentry creditAccountID(String creditAccountID) {
-    this.creditAccountID = creditAccountID;
+  public Bookentry creditaccountId(String creditaccountId) {
+    this.creditaccountId = creditaccountId;
     return this;
   }
 
    /**
-   * Účet D; ID objektu Účet účetního rozvrhu [persistentní položka]
-   * @return creditAccountID
+   * Účet d; id objektu Účet účetního rozvrhu [persistentní položka]
+   * @return creditaccountId
   **/
-  @ApiModelProperty(example = "null", value = "Účet D; ID objektu Účet účetního rozvrhu [persistentní položka]")
-  public String getCreditAccountID() {
-    return creditAccountID;
+  @ApiModelProperty(example = "null", value = "Účet d; id objektu Účet účetního rozvrhu [persistentní položka]")
+  public String getCreditaccountId() {
+    return creditaccountId;
   }
 
-  public void setCreditAccountID(String creditAccountID) {
-    this.creditAccountID = creditAccountID;
+  public void setCreditaccountId(String creditaccountId) {
+    this.creditaccountId = creditaccountId;
   }
 
-  public Bookentry creditDivisionID(String creditDivisionID) {
-    this.creditDivisionID = creditDivisionID;
+  public Bookentry creditdivisionId(String creditdivisionId) {
+    this.creditdivisionId = creditdivisionId;
     return this;
   }
 
    /**
-   * Středisko D; ID objektu Středisko [persistentní položka]
-   * @return creditDivisionID
+   * středisko d; id objektu středisko [persistentní položka]
+   * @return creditdivisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko D; ID objektu Středisko [persistentní položka]")
-  public String getCreditDivisionID() {
-    return creditDivisionID;
+  @ApiModelProperty(example = "null", value = "středisko d; id objektu středisko [persistentní položka]")
+  public String getCreditdivisionId() {
+    return creditdivisionId;
   }
 
-  public void setCreditDivisionID(String creditDivisionID) {
-    this.creditDivisionID = creditDivisionID;
+  public void setCreditdivisionId(String creditdivisionId) {
+    this.creditdivisionId = creditdivisionId;
   }
 
-  public Bookentry creditBusOrderID(String creditBusOrderID) {
-    this.creditBusOrderID = creditBusOrderID;
+  public Bookentry creditbusorderId(String creditbusorderId) {
+    this.creditbusorderId = creditbusorderId;
     return this;
   }
 
    /**
-   * Zakázka D; ID objektu Zakázka [persistentní položka]
-   * @return creditBusOrderID
+   * zakázka d; id objektu zakázka [persistentní položka]
+   * @return creditbusorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka D; ID objektu Zakázka [persistentní položka]")
-  public String getCreditBusOrderID() {
-    return creditBusOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka d; id objektu zakázka [persistentní položka]")
+  public String getCreditbusorderId() {
+    return creditbusorderId;
   }
 
-  public void setCreditBusOrderID(String creditBusOrderID) {
-    this.creditBusOrderID = creditBusOrderID;
+  public void setCreditbusorderId(String creditbusorderId) {
+    this.creditbusorderId = creditbusorderId;
   }
 
-  public Bookentry creditBusTransactionID(String creditBusTransactionID) {
-    this.creditBusTransactionID = creditBusTransactionID;
+  public Bookentry creditbustransactionId(String creditbustransactionId) {
+    this.creditbustransactionId = creditbustransactionId;
     return this;
   }
 
    /**
-   * O.případ D; ID objektu Obchodní případ [persistentní položka]
-   * @return creditBusTransactionID
+   * o.případ d; id objektu obchodní případ [persistentní položka]
+   * @return creditbustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "O.případ D; ID objektu Obchodní případ [persistentní položka]")
-  public String getCreditBusTransactionID() {
-    return creditBusTransactionID;
+  @ApiModelProperty(example = "null", value = "o.případ d; id objektu obchodní případ [persistentní položka]")
+  public String getCreditbustransactionId() {
+    return creditbustransactionId;
   }
 
-  public void setCreditBusTransactionID(String creditBusTransactionID) {
-    this.creditBusTransactionID = creditBusTransactionID;
+  public void setCreditbustransactionId(String creditbustransactionId) {
+    this.creditbustransactionId = creditbustransactionId;
   }
 
-  public Bookentry creditBusProjectID(String creditBusProjectID) {
-    this.creditBusProjectID = creditBusProjectID;
+  public Bookentry creditbusprojectId(String creditbusprojectId) {
+    this.creditbusprojectId = creditbusprojectId;
     return this;
   }
 
    /**
-   * Projekt D; ID objektu Projekt [persistentní položka]
-   * @return creditBusProjectID
+   * projekt d; id objektu projekt [persistentní položka]
+   * @return creditbusprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt D; ID objektu Projekt [persistentní položka]")
-  public String getCreditBusProjectID() {
-    return creditBusProjectID;
+  @ApiModelProperty(example = "null", value = "projekt d; id objektu projekt [persistentní položka]")
+  public String getCreditbusprojectId() {
+    return creditbusprojectId;
   }
 
-  public void setCreditBusProjectID(String creditBusProjectID) {
-    this.creditBusProjectID = creditBusProjectID;
+  public void setCreditbusprojectId(String creditbusprojectId) {
+    this.creditbusprojectId = creditbusprojectId;
   }
 
-  public Bookentry groupFirmID(String groupFirmID) {
-    this.groupFirmID = groupFirmID;
+  public Bookentry groupfirmId(String groupfirmId) {
+    this.groupfirmId = groupfirmId;
     return this;
   }
 
    /**
-   * Firma pro skupinu; ID objektu Firma
-   * @return groupFirmID
+   * firma pro skupinu; id objektu firma
+   * @return groupfirmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma pro skupinu; ID objektu Firma")
-  public String getGroupFirmID() {
-    return groupFirmID;
+  @ApiModelProperty(example = "null", value = "firma pro skupinu; id objektu firma")
+  public String getGroupfirmId() {
+    return groupfirmId;
   }
 
-  public void setGroupFirmID(String groupFirmID) {
-    this.groupFirmID = groupFirmID;
+  public void setGroupfirmId(String groupfirmId) {
+    this.groupfirmId = groupfirmId;
   }
 
 
@@ -620,40 +656,40 @@ public class Bookentry   {
       return false;
     }
     Bookentry bookentry = (Bookentry) o;
-    return Objects.equals(this.displayName, bookentry.displayName) &&
-        Objects.equals(this.ID, bookentry.ID) &&
-        Objects.equals(this.classID, bookentry.classID) &&
-        Objects.equals(this.objVersion, bookentry.objVersion) &&
-        Objects.equals(this.accDateDATE, bookentry.accDateDATE) &&
-        Objects.equals(this.accDocQueueID, bookentry.accDocQueueID) &&
-        Objects.equals(this.periodID, bookentry.periodID) &&
-        Objects.equals(this.ordNumber, bookentry.ordNumber) &&
-        Objects.equals(this.firmID, bookentry.firmID) &&
-        Objects.equals(this.createdByID, bookentry.createdByID) &&
-        Objects.equals(this.correctedByID, bookentry.correctedByID) &&
+    return Objects.equals(this.displayname, bookentry.displayname) &&
+        Objects.equals(this.id, bookentry.id) &&
+        Objects.equals(this.classid, bookentry.classid) &&
+        Objects.equals(this.objversion, bookentry.objversion) &&
+        Objects.equals(this.accdatedate, bookentry.accdatedate) &&
+        Objects.equals(this.accdocqueueId, bookentry.accdocqueueId) &&
+        Objects.equals(this.periodId, bookentry.periodId) &&
+        Objects.equals(this.ordnumber, bookentry.ordnumber) &&
+        Objects.equals(this.firmId, bookentry.firmId) &&
+        Objects.equals(this.createdbyId, bookentry.createdbyId) &&
+        Objects.equals(this.correctedbyId, bookentry.correctedbyId) &&
         Objects.equals(this.text, bookentry.text) &&
         Objects.equals(this.amount, bookentry.amount) &&
-        Objects.equals(this.currencyID, bookentry.currencyID) &&
-        Objects.equals(this.amountInCurrency, bookentry.amountInCurrency) &&
+        Objects.equals(this.currencyId, bookentry.currencyId) &&
+        Objects.equals(this.amountincurrency, bookentry.amountincurrency) &&
         Objects.equals(this.audited, bookentry.audited) &&
-        Objects.equals(this.accGroupID, bookentry.accGroupID) &&
-        Objects.equals(this.isRequest, bookentry.isRequest) &&
-        Objects.equals(this.debitAccountID, bookentry.debitAccountID) &&
-        Objects.equals(this.debitDivisionID, bookentry.debitDivisionID) &&
-        Objects.equals(this.debitBusOrderID, bookentry.debitBusOrderID) &&
-        Objects.equals(this.debitBusTransactionID, bookentry.debitBusTransactionID) &&
-        Objects.equals(this.debitBusProjectID, bookentry.debitBusProjectID) &&
-        Objects.equals(this.creditAccountID, bookentry.creditAccountID) &&
-        Objects.equals(this.creditDivisionID, bookentry.creditDivisionID) &&
-        Objects.equals(this.creditBusOrderID, bookentry.creditBusOrderID) &&
-        Objects.equals(this.creditBusTransactionID, bookentry.creditBusTransactionID) &&
-        Objects.equals(this.creditBusProjectID, bookentry.creditBusProjectID) &&
-        Objects.equals(this.groupFirmID, bookentry.groupFirmID);
+        Objects.equals(this.accgroupId, bookentry.accgroupId) &&
+        Objects.equals(this.isrequest, bookentry.isrequest) &&
+        Objects.equals(this.debitaccountId, bookentry.debitaccountId) &&
+        Objects.equals(this.debitdivisionId, bookentry.debitdivisionId) &&
+        Objects.equals(this.debitbusorderId, bookentry.debitbusorderId) &&
+        Objects.equals(this.debitbustransactionId, bookentry.debitbustransactionId) &&
+        Objects.equals(this.debitbusprojectId, bookentry.debitbusprojectId) &&
+        Objects.equals(this.creditaccountId, bookentry.creditaccountId) &&
+        Objects.equals(this.creditdivisionId, bookentry.creditdivisionId) &&
+        Objects.equals(this.creditbusorderId, bookentry.creditbusorderId) &&
+        Objects.equals(this.creditbustransactionId, bookentry.creditbustransactionId) &&
+        Objects.equals(this.creditbusprojectId, bookentry.creditbusprojectId) &&
+        Objects.equals(this.groupfirmId, bookentry.groupfirmId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, accDateDATE, accDocQueueID, periodID, ordNumber, firmID, createdByID, correctedByID, text, amount, currencyID, amountInCurrency, audited, accGroupID, isRequest, debitAccountID, debitDivisionID, debitBusOrderID, debitBusTransactionID, debitBusProjectID, creditAccountID, creditDivisionID, creditBusOrderID, creditBusTransactionID, creditBusProjectID, groupFirmID);
+    return Objects.hash(displayname, id, classid, objversion, accdatedate, accdocqueueId, periodId, ordnumber, firmId, createdbyId, correctedbyId, text, amount, currencyId, amountincurrency, audited, accgroupId, isrequest, debitaccountId, debitdivisionId, debitbusorderId, debitbustransactionId, debitbusprojectId, creditaccountId, creditdivisionId, creditbusorderId, creditbustransactionId, creditbusprojectId, groupfirmId);
   }
 
   @Override
@@ -661,35 +697,35 @@ public class Bookentry   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Bookentry {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    accDateDATE: ").append(toIndentedString(accDateDATE)).append("\n");
-    sb.append("    accDocQueueID: ").append(toIndentedString(accDocQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    accdatedate: ").append(toIndentedString(accdatedate)).append("\n");
+    sb.append("    accdocqueueId: ").append(toIndentedString(accdocqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    amountInCurrency: ").append(toIndentedString(amountInCurrency)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    amountincurrency: ").append(toIndentedString(amountincurrency)).append("\n");
     sb.append("    audited: ").append(toIndentedString(audited)).append("\n");
-    sb.append("    accGroupID: ").append(toIndentedString(accGroupID)).append("\n");
-    sb.append("    isRequest: ").append(toIndentedString(isRequest)).append("\n");
-    sb.append("    debitAccountID: ").append(toIndentedString(debitAccountID)).append("\n");
-    sb.append("    debitDivisionID: ").append(toIndentedString(debitDivisionID)).append("\n");
-    sb.append("    debitBusOrderID: ").append(toIndentedString(debitBusOrderID)).append("\n");
-    sb.append("    debitBusTransactionID: ").append(toIndentedString(debitBusTransactionID)).append("\n");
-    sb.append("    debitBusProjectID: ").append(toIndentedString(debitBusProjectID)).append("\n");
-    sb.append("    creditAccountID: ").append(toIndentedString(creditAccountID)).append("\n");
-    sb.append("    creditDivisionID: ").append(toIndentedString(creditDivisionID)).append("\n");
-    sb.append("    creditBusOrderID: ").append(toIndentedString(creditBusOrderID)).append("\n");
-    sb.append("    creditBusTransactionID: ").append(toIndentedString(creditBusTransactionID)).append("\n");
-    sb.append("    creditBusProjectID: ").append(toIndentedString(creditBusProjectID)).append("\n");
-    sb.append("    groupFirmID: ").append(toIndentedString(groupFirmID)).append("\n");
+    sb.append("    accgroupId: ").append(toIndentedString(accgroupId)).append("\n");
+    sb.append("    isrequest: ").append(toIndentedString(isrequest)).append("\n");
+    sb.append("    debitaccountId: ").append(toIndentedString(debitaccountId)).append("\n");
+    sb.append("    debitdivisionId: ").append(toIndentedString(debitdivisionId)).append("\n");
+    sb.append("    debitbusorderId: ").append(toIndentedString(debitbusorderId)).append("\n");
+    sb.append("    debitbustransactionId: ").append(toIndentedString(debitbustransactionId)).append("\n");
+    sb.append("    debitbusprojectId: ").append(toIndentedString(debitbusprojectId)).append("\n");
+    sb.append("    creditaccountId: ").append(toIndentedString(creditaccountId)).append("\n");
+    sb.append("    creditdivisionId: ").append(toIndentedString(creditdivisionId)).append("\n");
+    sb.append("    creditbusorderId: ").append(toIndentedString(creditbusorderId)).append("\n");
+    sb.append("    creditbustransactionId: ").append(toIndentedString(creditbustransactionId)).append("\n");
+    sb.append("    creditbusprojectId: ").append(toIndentedString(creditbusprojectId)).append("\n");
+    sb.append("    groupfirmId: ").append(toIndentedString(groupfirmId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

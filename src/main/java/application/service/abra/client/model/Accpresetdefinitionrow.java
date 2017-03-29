@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,168 +34,213 @@ import java.util.Objects;
 /**
  * Accpresetdefinitionrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Accpresetdefinitionrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Condition")
+  @SerializedName("condition")
   private String condition = null;
 
-  @SerializedName("DebitAccount_ID")
-  private String debitAccountID = null;
+  @SerializedName("debitaccount_id")
+  private String debitaccountId = null;
 
-  @SerializedName("CreditAccount_ID")
-  private String creditAccountID = null;
+  @SerializedName("creditaccount_id")
+  private String creditaccountId = null;
 
-  @SerializedName("DebitDivision_ID")
-  private String debitDivisionID = null;
+  @SerializedName("debitdivision_id")
+  private String debitdivisionId = null;
 
-  @SerializedName("CreditDivision_ID")
-  private String creditDivisionID = null;
+  @SerializedName("creditdivision_id")
+  private String creditdivisionId = null;
 
-  @SerializedName("DebitBusOrder_ID")
-  private String debitBusOrderID = null;
+  @SerializedName("debitbusorder_id")
+  private String debitbusorderId = null;
 
-  @SerializedName("CreditBusOrder_ID")
-  private String creditBusOrderID = null;
+  @SerializedName("creditbusorder_id")
+  private String creditbusorderId = null;
 
-  @SerializedName("DebitBusTransaction_ID")
-  private String debitBusTransactionID = null;
+  @SerializedName("debitbustransaction_id")
+  private String debitbustransactionId = null;
 
-  @SerializedName("CreditBusTransaction_ID")
-  private String creditBusTransactionID = null;
+  @SerializedName("creditbustransaction_id")
+  private String creditbustransactionId = null;
 
-  @SerializedName("DebitBusProject_ID")
-  private String debitBusProjectID = null;
+  @SerializedName("debitbusproject_id")
+  private String debitbusprojectId = null;
 
-  @SerializedName("CreditBusProject_ID")
-  private String creditBusProjectID = null;
+  @SerializedName("creditbusproject_id")
+  private String creditbusprojectId = null;
 
-  @SerializedName("TextExpr")
-  private String textExpr = null;
+  @SerializedName("textexpr")
+  private String textexpr = null;
 
-  @SerializedName("Text2")
+  @SerializedName("text2")
   private String text2 = null;
 
-  @SerializedName("RowType")
-  private Integer rowType = null;
+  @SerializedName("rowtype")
+  private Integer rowtype = null;
 
-  @SerializedName("ExpressionRow")
-  private Boolean expressionRow = null;
+  @SerializedName("expressionrow")
+  private Boolean expressionrow = null;
 
-  @SerializedName("DebitAccountExpr")
-  private String debitAccountExpr = null;
+  @SerializedName("debitaccountexpr")
+  private String debitaccountexpr = null;
 
-  @SerializedName("CreditAccountExpr")
-  private String creditAccountExpr = null;
+  @SerializedName("creditaccountexpr")
+  private String creditaccountexpr = null;
 
-  @SerializedName("DebitDivisionExpr")
-  private String debitDivisionExpr = null;
+  @SerializedName("debitdivisionexpr")
+  private String debitdivisionexpr = null;
 
-  @SerializedName("CreditDivisionExpr")
-  private String creditDivisionExpr = null;
+  @SerializedName("creditdivisionexpr")
+  private String creditdivisionexpr = null;
 
-  @SerializedName("DebitBusOrderExpr")
-  private String debitBusOrderExpr = null;
+  @SerializedName("debitbusorderexpr")
+  private String debitbusorderexpr = null;
 
-  @SerializedName("CreditBusOrderExpr")
-  private String creditBusOrderExpr = null;
+  @SerializedName("creditbusorderexpr")
+  private String creditbusorderexpr = null;
 
-  @SerializedName("DebitBusTransactionExpr")
-  private String debitBusTransactionExpr = null;
+  @SerializedName("debitbustransactionexpr")
+  private String debitbustransactionexpr = null;
 
-  @SerializedName("CreditBusTransactionExpr")
-  private String creditBusTransactionExpr = null;
+  @SerializedName("creditbustransactionexpr")
+  private String creditbustransactionexpr = null;
 
-  @SerializedName("DebitBusProjectExpr")
-  private String debitBusProjectExpr = null;
+  @SerializedName("debitbusprojectexpr")
+  private String debitbusprojectexpr = null;
 
-  @SerializedName("CreditBusProjectExpr")
-  private String creditBusProjectExpr = null;
+  @SerializedName("creditbusprojectexpr")
+  private String creditbusprojectexpr = null;
 
-  @SerializedName("Exceptable")
+  @SerializedName("exceptable")
   private Boolean exceptable = null;
 
-  @SerializedName("ContinueEvaluation")
-  private Boolean continueEvaluation = null;
+  @SerializedName("continueevaluation")
+  private Boolean continueevaluation = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Účetní předkontace [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Účetní předkontace [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Accpresetdefinitionrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Accpresetdefinitionrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Accpresetdefinitionrow id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Accpresetdefinitionrow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Accpresetdefinitionrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Accpresetdefinitionrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu Účetní předkontace [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu Účetní předkontace [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Accpresetdefinitionrow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
   public Accpresetdefinitionrow condition(String condition) {
@@ -204,10 +249,10 @@ public class Accpresetdefinitionrow   {
   }
 
    /**
-   * Podmínka [persistentní položka]
+   * podmínka [persistentní položka]
    * @return condition
   **/
-  @ApiModelProperty(example = "null", value = "Podmínka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "podmínka [persistentní položka]")
   public String getCondition() {
     return condition;
   }
@@ -216,427 +261,436 @@ public class Accpresetdefinitionrow   {
     this.condition = condition;
   }
 
-  public Accpresetdefinitionrow debitAccountID(String debitAccountID) {
-    this.debitAccountID = debitAccountID;
+  public Accpresetdefinitionrow debitaccountId(String debitaccountId) {
+    this.debitaccountId = debitaccountId;
     return this;
   }
 
    /**
-   * Účet MD; ID objektu Účet účetního rozvrhu [persistentní položka]
-   * @return debitAccountID
+   * Účet md; id objektu Účet účetního rozvrhu [persistentní položka]
+   * @return debitaccountId
   **/
-  @ApiModelProperty(example = "null", value = "Účet MD; ID objektu Účet účetního rozvrhu [persistentní položka]")
-  public String getDebitAccountID() {
-    return debitAccountID;
+  @ApiModelProperty(example = "null", value = "Účet md; id objektu Účet účetního rozvrhu [persistentní položka]")
+  public String getDebitaccountId() {
+    return debitaccountId;
   }
 
-  public void setDebitAccountID(String debitAccountID) {
-    this.debitAccountID = debitAccountID;
+  public void setDebitaccountId(String debitaccountId) {
+    this.debitaccountId = debitaccountId;
   }
 
-  public Accpresetdefinitionrow creditAccountID(String creditAccountID) {
-    this.creditAccountID = creditAccountID;
+  public Accpresetdefinitionrow creditaccountId(String creditaccountId) {
+    this.creditaccountId = creditaccountId;
     return this;
   }
 
    /**
-   * Účet D; ID objektu Účet účetního rozvrhu [persistentní položka]
-   * @return creditAccountID
+   * Účet d; id objektu Účet účetního rozvrhu [persistentní položka]
+   * @return creditaccountId
   **/
-  @ApiModelProperty(example = "null", value = "Účet D; ID objektu Účet účetního rozvrhu [persistentní položka]")
-  public String getCreditAccountID() {
-    return creditAccountID;
+  @ApiModelProperty(example = "null", value = "Účet d; id objektu Účet účetního rozvrhu [persistentní položka]")
+  public String getCreditaccountId() {
+    return creditaccountId;
   }
 
-  public void setCreditAccountID(String creditAccountID) {
-    this.creditAccountID = creditAccountID;
+  public void setCreditaccountId(String creditaccountId) {
+    this.creditaccountId = creditaccountId;
   }
 
-  public Accpresetdefinitionrow debitDivisionID(String debitDivisionID) {
-    this.debitDivisionID = debitDivisionID;
+  public Accpresetdefinitionrow debitdivisionId(String debitdivisionId) {
+    this.debitdivisionId = debitdivisionId;
     return this;
   }
 
    /**
-   * Středisko MD; ID objektu Středisko [persistentní položka]
-   * @return debitDivisionID
+   * středisko md; id objektu středisko [persistentní položka]
+   * @return debitdivisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko MD; ID objektu Středisko [persistentní položka]")
-  public String getDebitDivisionID() {
-    return debitDivisionID;
+  @ApiModelProperty(example = "null", value = "středisko md; id objektu středisko [persistentní položka]")
+  public String getDebitdivisionId() {
+    return debitdivisionId;
   }
 
-  public void setDebitDivisionID(String debitDivisionID) {
-    this.debitDivisionID = debitDivisionID;
+  public void setDebitdivisionId(String debitdivisionId) {
+    this.debitdivisionId = debitdivisionId;
   }
 
-  public Accpresetdefinitionrow creditDivisionID(String creditDivisionID) {
-    this.creditDivisionID = creditDivisionID;
+  public Accpresetdefinitionrow creditdivisionId(String creditdivisionId) {
+    this.creditdivisionId = creditdivisionId;
     return this;
   }
 
    /**
-   * Středisko D; ID objektu Středisko [persistentní položka]
-   * @return creditDivisionID
+   * středisko d; id objektu středisko [persistentní položka]
+   * @return creditdivisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko D; ID objektu Středisko [persistentní položka]")
-  public String getCreditDivisionID() {
-    return creditDivisionID;
+  @ApiModelProperty(example = "null", value = "středisko d; id objektu středisko [persistentní položka]")
+  public String getCreditdivisionId() {
+    return creditdivisionId;
   }
 
-  public void setCreditDivisionID(String creditDivisionID) {
-    this.creditDivisionID = creditDivisionID;
+  public void setCreditdivisionId(String creditdivisionId) {
+    this.creditdivisionId = creditdivisionId;
   }
 
-  public Accpresetdefinitionrow debitBusOrderID(String debitBusOrderID) {
-    this.debitBusOrderID = debitBusOrderID;
+  public Accpresetdefinitionrow debitbusorderId(String debitbusorderId) {
+    this.debitbusorderId = debitbusorderId;
     return this;
   }
 
    /**
-   * Zakázka MD; ID objektu Zakázka [persistentní položka]
-   * @return debitBusOrderID
+   * zakázka md; id objektu zakázka [persistentní položka]
+   * @return debitbusorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka MD; ID objektu Zakázka [persistentní položka]")
-  public String getDebitBusOrderID() {
-    return debitBusOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka md; id objektu zakázka [persistentní položka]")
+  public String getDebitbusorderId() {
+    return debitbusorderId;
   }
 
-  public void setDebitBusOrderID(String debitBusOrderID) {
-    this.debitBusOrderID = debitBusOrderID;
+  public void setDebitbusorderId(String debitbusorderId) {
+    this.debitbusorderId = debitbusorderId;
   }
 
-  public Accpresetdefinitionrow creditBusOrderID(String creditBusOrderID) {
-    this.creditBusOrderID = creditBusOrderID;
+  public Accpresetdefinitionrow creditbusorderId(String creditbusorderId) {
+    this.creditbusorderId = creditbusorderId;
     return this;
   }
 
    /**
-   * Zakázka D; ID objektu Zakázka [persistentní položka]
-   * @return creditBusOrderID
+   * zakázka d; id objektu zakázka [persistentní položka]
+   * @return creditbusorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka D; ID objektu Zakázka [persistentní položka]")
-  public String getCreditBusOrderID() {
-    return creditBusOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka d; id objektu zakázka [persistentní položka]")
+  public String getCreditbusorderId() {
+    return creditbusorderId;
   }
 
-  public void setCreditBusOrderID(String creditBusOrderID) {
-    this.creditBusOrderID = creditBusOrderID;
+  public void setCreditbusorderId(String creditbusorderId) {
+    this.creditbusorderId = creditbusorderId;
   }
 
-  public Accpresetdefinitionrow debitBusTransactionID(String debitBusTransactionID) {
-    this.debitBusTransactionID = debitBusTransactionID;
+  public Accpresetdefinitionrow debitbustransactionId(String debitbustransactionId) {
+    this.debitbustransactionId = debitbustransactionId;
     return this;
   }
 
    /**
-   * O.případ MD; ID objektu Obchodní případ [persistentní položka]
-   * @return debitBusTransactionID
+   * o.případ md; id objektu obchodní případ [persistentní položka]
+   * @return debitbustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "O.případ MD; ID objektu Obchodní případ [persistentní položka]")
-  public String getDebitBusTransactionID() {
-    return debitBusTransactionID;
+  @ApiModelProperty(example = "null", value = "o.případ md; id objektu obchodní případ [persistentní položka]")
+  public String getDebitbustransactionId() {
+    return debitbustransactionId;
   }
 
-  public void setDebitBusTransactionID(String debitBusTransactionID) {
-    this.debitBusTransactionID = debitBusTransactionID;
+  public void setDebitbustransactionId(String debitbustransactionId) {
+    this.debitbustransactionId = debitbustransactionId;
   }
 
-  public Accpresetdefinitionrow creditBusTransactionID(String creditBusTransactionID) {
-    this.creditBusTransactionID = creditBusTransactionID;
+  public Accpresetdefinitionrow creditbustransactionId(String creditbustransactionId) {
+    this.creditbustransactionId = creditbustransactionId;
     return this;
   }
 
    /**
-   * O.případ D; ID objektu Obchodní případ [persistentní položka]
-   * @return creditBusTransactionID
+   * o.případ d; id objektu obchodní případ [persistentní položka]
+   * @return creditbustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "O.případ D; ID objektu Obchodní případ [persistentní položka]")
-  public String getCreditBusTransactionID() {
-    return creditBusTransactionID;
+  @ApiModelProperty(example = "null", value = "o.případ d; id objektu obchodní případ [persistentní položka]")
+  public String getCreditbustransactionId() {
+    return creditbustransactionId;
   }
 
-  public void setCreditBusTransactionID(String creditBusTransactionID) {
-    this.creditBusTransactionID = creditBusTransactionID;
+  public void setCreditbustransactionId(String creditbustransactionId) {
+    this.creditbustransactionId = creditbustransactionId;
   }
 
-  public Accpresetdefinitionrow debitBusProjectID(String debitBusProjectID) {
-    this.debitBusProjectID = debitBusProjectID;
+  public Accpresetdefinitionrow debitbusprojectId(String debitbusprojectId) {
+    this.debitbusprojectId = debitbusprojectId;
     return this;
   }
 
    /**
-   * Projekt MD; ID objektu Projekt [persistentní položka]
-   * @return debitBusProjectID
+   * projekt md; id objektu projekt [persistentní položka]
+   * @return debitbusprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt MD; ID objektu Projekt [persistentní položka]")
-  public String getDebitBusProjectID() {
-    return debitBusProjectID;
+  @ApiModelProperty(example = "null", value = "projekt md; id objektu projekt [persistentní položka]")
+  public String getDebitbusprojectId() {
+    return debitbusprojectId;
   }
 
-  public void setDebitBusProjectID(String debitBusProjectID) {
-    this.debitBusProjectID = debitBusProjectID;
+  public void setDebitbusprojectId(String debitbusprojectId) {
+    this.debitbusprojectId = debitbusprojectId;
   }
 
-  public Accpresetdefinitionrow creditBusProjectID(String creditBusProjectID) {
-    this.creditBusProjectID = creditBusProjectID;
+  public Accpresetdefinitionrow creditbusprojectId(String creditbusprojectId) {
+    this.creditbusprojectId = creditbusprojectId;
     return this;
   }
 
    /**
-   * Projekt D; ID objektu Projekt [persistentní položka]
-   * @return creditBusProjectID
+   * projekt d; id objektu projekt [persistentní položka]
+   * @return creditbusprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt D; ID objektu Projekt [persistentní položka]")
-  public String getCreditBusProjectID() {
-    return creditBusProjectID;
+  @ApiModelProperty(example = "null", value = "projekt d; id objektu projekt [persistentní položka]")
+  public String getCreditbusprojectId() {
+    return creditbusprojectId;
   }
 
-  public void setCreditBusProjectID(String creditBusProjectID) {
-    this.creditBusProjectID = creditBusProjectID;
+  public void setCreditbusprojectId(String creditbusprojectId) {
+    this.creditbusprojectId = creditbusprojectId;
   }
 
-  public Accpresetdefinitionrow textExpr(String textExpr) {
-    this.textExpr = textExpr;
+  public Accpresetdefinitionrow textexpr(String textexpr) {
+    this.textexpr = textexpr;
     return this;
   }
 
    /**
-   * Text [persistentní položka]
-   * @return textExpr
+   * text [persistentní položka]
+   * @return textexpr
   **/
-  @ApiModelProperty(example = "null", value = "Text [persistentní položka]")
-  public String getTextExpr() {
-    return textExpr;
+  @ApiModelProperty(example = "null", value = "text [persistentní položka]")
+  public String getTextexpr() {
+    return textexpr;
   }
 
-  public void setTextExpr(String textExpr) {
-    this.textExpr = textExpr;
+  public void setTextexpr(String textexpr) {
+    this.textexpr = textexpr;
+  }
+
+  public Accpresetdefinitionrow text2(String text2) {
+    this.text2 = text2;
+    return this;
   }
 
    /**
-   * Text
+   * text
    * @return text2
   **/
-  @ApiModelProperty(example = "null", value = "Text")
+  @ApiModelProperty(example = "null", value = "text")
   public String getText2() {
     return text2;
   }
 
-  public Accpresetdefinitionrow rowType(Integer rowType) {
-    this.rowType = rowType;
+  public void setText2(String text2) {
+    this.text2 = text2;
+  }
+
+  public Accpresetdefinitionrow rowtype(Integer rowtype) {
+    this.rowtype = rowtype;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return rowType
+   * typ [persistentní položka]
+   * @return rowtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getRowType() {
-    return rowType;
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getRowtype() {
+    return rowtype;
   }
 
-  public void setRowType(Integer rowType) {
-    this.rowType = rowType;
+  public void setRowtype(Integer rowtype) {
+    this.rowtype = rowtype;
   }
 
-  public Accpresetdefinitionrow expressionRow(Boolean expressionRow) {
-    this.expressionRow = expressionRow;
+  public Accpresetdefinitionrow expressionrow(Boolean expressionrow) {
+    this.expressionrow = expressionrow;
     return this;
   }
 
    /**
-   * Výraz [persistentní položka]
-   * @return expressionRow
+   * výraz [persistentní položka]
+   * @return expressionrow
   **/
-  @ApiModelProperty(example = "null", value = "Výraz [persistentní položka]")
-  public Boolean getExpressionRow() {
-    return expressionRow;
+  @ApiModelProperty(example = "null", value = "výraz [persistentní položka]")
+  public Boolean getExpressionrow() {
+    return expressionrow;
   }
 
-  public void setExpressionRow(Boolean expressionRow) {
-    this.expressionRow = expressionRow;
+  public void setExpressionrow(Boolean expressionrow) {
+    this.expressionrow = expressionrow;
   }
 
-  public Accpresetdefinitionrow debitAccountExpr(String debitAccountExpr) {
-    this.debitAccountExpr = debitAccountExpr;
+  public Accpresetdefinitionrow debitaccountexpr(String debitaccountexpr) {
+    this.debitaccountexpr = debitaccountexpr;
     return this;
   }
 
    /**
-   * Výraz Účet MD [persistentní položka]
-   * @return debitAccountExpr
+   * výraz Účet md [persistentní položka]
+   * @return debitaccountexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz Účet MD [persistentní položka]")
-  public String getDebitAccountExpr() {
-    return debitAccountExpr;
+  @ApiModelProperty(example = "null", value = "výraz Účet md [persistentní položka]")
+  public String getDebitaccountexpr() {
+    return debitaccountexpr;
   }
 
-  public void setDebitAccountExpr(String debitAccountExpr) {
-    this.debitAccountExpr = debitAccountExpr;
+  public void setDebitaccountexpr(String debitaccountexpr) {
+    this.debitaccountexpr = debitaccountexpr;
   }
 
-  public Accpresetdefinitionrow creditAccountExpr(String creditAccountExpr) {
-    this.creditAccountExpr = creditAccountExpr;
+  public Accpresetdefinitionrow creditaccountexpr(String creditaccountexpr) {
+    this.creditaccountexpr = creditaccountexpr;
     return this;
   }
 
    /**
-   * Výraz Účet D [persistentní položka]
-   * @return creditAccountExpr
+   * výraz Účet d [persistentní položka]
+   * @return creditaccountexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz Účet D [persistentní položka]")
-  public String getCreditAccountExpr() {
-    return creditAccountExpr;
+  @ApiModelProperty(example = "null", value = "výraz Účet d [persistentní položka]")
+  public String getCreditaccountexpr() {
+    return creditaccountexpr;
   }
 
-  public void setCreditAccountExpr(String creditAccountExpr) {
-    this.creditAccountExpr = creditAccountExpr;
+  public void setCreditaccountexpr(String creditaccountexpr) {
+    this.creditaccountexpr = creditaccountexpr;
   }
 
-  public Accpresetdefinitionrow debitDivisionExpr(String debitDivisionExpr) {
-    this.debitDivisionExpr = debitDivisionExpr;
+  public Accpresetdefinitionrow debitdivisionexpr(String debitdivisionexpr) {
+    this.debitdivisionexpr = debitdivisionexpr;
     return this;
   }
 
    /**
-   * Výraz Středisko MD [persistentní položka]
-   * @return debitDivisionExpr
+   * výraz středisko md [persistentní položka]
+   * @return debitdivisionexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz Středisko MD [persistentní položka]")
-  public String getDebitDivisionExpr() {
-    return debitDivisionExpr;
+  @ApiModelProperty(example = "null", value = "výraz středisko md [persistentní položka]")
+  public String getDebitdivisionexpr() {
+    return debitdivisionexpr;
   }
 
-  public void setDebitDivisionExpr(String debitDivisionExpr) {
-    this.debitDivisionExpr = debitDivisionExpr;
+  public void setDebitdivisionexpr(String debitdivisionexpr) {
+    this.debitdivisionexpr = debitdivisionexpr;
   }
 
-  public Accpresetdefinitionrow creditDivisionExpr(String creditDivisionExpr) {
-    this.creditDivisionExpr = creditDivisionExpr;
+  public Accpresetdefinitionrow creditdivisionexpr(String creditdivisionexpr) {
+    this.creditdivisionexpr = creditdivisionexpr;
     return this;
   }
 
    /**
-   * Výraz Středisko D [persistentní položka]
-   * @return creditDivisionExpr
+   * výraz středisko d [persistentní položka]
+   * @return creditdivisionexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz Středisko D [persistentní položka]")
-  public String getCreditDivisionExpr() {
-    return creditDivisionExpr;
+  @ApiModelProperty(example = "null", value = "výraz středisko d [persistentní položka]")
+  public String getCreditdivisionexpr() {
+    return creditdivisionexpr;
   }
 
-  public void setCreditDivisionExpr(String creditDivisionExpr) {
-    this.creditDivisionExpr = creditDivisionExpr;
+  public void setCreditdivisionexpr(String creditdivisionexpr) {
+    this.creditdivisionexpr = creditdivisionexpr;
   }
 
-  public Accpresetdefinitionrow debitBusOrderExpr(String debitBusOrderExpr) {
-    this.debitBusOrderExpr = debitBusOrderExpr;
+  public Accpresetdefinitionrow debitbusorderexpr(String debitbusorderexpr) {
+    this.debitbusorderexpr = debitbusorderexpr;
     return this;
   }
 
    /**
-   * Výraz Zakázka MD [persistentní položka]
-   * @return debitBusOrderExpr
+   * výraz zakázka md [persistentní položka]
+   * @return debitbusorderexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz Zakázka MD [persistentní položka]")
-  public String getDebitBusOrderExpr() {
-    return debitBusOrderExpr;
+  @ApiModelProperty(example = "null", value = "výraz zakázka md [persistentní položka]")
+  public String getDebitbusorderexpr() {
+    return debitbusorderexpr;
   }
 
-  public void setDebitBusOrderExpr(String debitBusOrderExpr) {
-    this.debitBusOrderExpr = debitBusOrderExpr;
+  public void setDebitbusorderexpr(String debitbusorderexpr) {
+    this.debitbusorderexpr = debitbusorderexpr;
   }
 
-  public Accpresetdefinitionrow creditBusOrderExpr(String creditBusOrderExpr) {
-    this.creditBusOrderExpr = creditBusOrderExpr;
+  public Accpresetdefinitionrow creditbusorderexpr(String creditbusorderexpr) {
+    this.creditbusorderexpr = creditbusorderexpr;
     return this;
   }
 
    /**
-   * Výraz Zakázka D [persistentní položka]
-   * @return creditBusOrderExpr
+   * výraz zakázka d [persistentní položka]
+   * @return creditbusorderexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz Zakázka D [persistentní položka]")
-  public String getCreditBusOrderExpr() {
-    return creditBusOrderExpr;
+  @ApiModelProperty(example = "null", value = "výraz zakázka d [persistentní položka]")
+  public String getCreditbusorderexpr() {
+    return creditbusorderexpr;
   }
 
-  public void setCreditBusOrderExpr(String creditBusOrderExpr) {
-    this.creditBusOrderExpr = creditBusOrderExpr;
+  public void setCreditbusorderexpr(String creditbusorderexpr) {
+    this.creditbusorderexpr = creditbusorderexpr;
   }
 
-  public Accpresetdefinitionrow debitBusTransactionExpr(String debitBusTransactionExpr) {
-    this.debitBusTransactionExpr = debitBusTransactionExpr;
+  public Accpresetdefinitionrow debitbustransactionexpr(String debitbustransactionexpr) {
+    this.debitbustransactionexpr = debitbustransactionexpr;
     return this;
   }
 
    /**
-   * Výraz Obchodní případ MD [persistentní položka]
-   * @return debitBusTransactionExpr
+   * výraz obchodní případ md [persistentní položka]
+   * @return debitbustransactionexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz Obchodní případ MD [persistentní položka]")
-  public String getDebitBusTransactionExpr() {
-    return debitBusTransactionExpr;
+  @ApiModelProperty(example = "null", value = "výraz obchodní případ md [persistentní položka]")
+  public String getDebitbustransactionexpr() {
+    return debitbustransactionexpr;
   }
 
-  public void setDebitBusTransactionExpr(String debitBusTransactionExpr) {
-    this.debitBusTransactionExpr = debitBusTransactionExpr;
+  public void setDebitbustransactionexpr(String debitbustransactionexpr) {
+    this.debitbustransactionexpr = debitbustransactionexpr;
   }
 
-  public Accpresetdefinitionrow creditBusTransactionExpr(String creditBusTransactionExpr) {
-    this.creditBusTransactionExpr = creditBusTransactionExpr;
+  public Accpresetdefinitionrow creditbustransactionexpr(String creditbustransactionexpr) {
+    this.creditbustransactionexpr = creditbustransactionexpr;
     return this;
   }
 
    /**
-   * Výraz Obchodní případ D [persistentní položka]
-   * @return creditBusTransactionExpr
+   * výraz obchodní případ d [persistentní položka]
+   * @return creditbustransactionexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz Obchodní případ D [persistentní položka]")
-  public String getCreditBusTransactionExpr() {
-    return creditBusTransactionExpr;
+  @ApiModelProperty(example = "null", value = "výraz obchodní případ d [persistentní položka]")
+  public String getCreditbustransactionexpr() {
+    return creditbustransactionexpr;
   }
 
-  public void setCreditBusTransactionExpr(String creditBusTransactionExpr) {
-    this.creditBusTransactionExpr = creditBusTransactionExpr;
+  public void setCreditbustransactionexpr(String creditbustransactionexpr) {
+    this.creditbustransactionexpr = creditbustransactionexpr;
   }
 
-  public Accpresetdefinitionrow debitBusProjectExpr(String debitBusProjectExpr) {
-    this.debitBusProjectExpr = debitBusProjectExpr;
+  public Accpresetdefinitionrow debitbusprojectexpr(String debitbusprojectexpr) {
+    this.debitbusprojectexpr = debitbusprojectexpr;
     return this;
   }
 
    /**
-   * Výraz Projekt MD [persistentní položka]
-   * @return debitBusProjectExpr
+   * výraz projekt md [persistentní položka]
+   * @return debitbusprojectexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz Projekt MD [persistentní položka]")
-  public String getDebitBusProjectExpr() {
-    return debitBusProjectExpr;
+  @ApiModelProperty(example = "null", value = "výraz projekt md [persistentní položka]")
+  public String getDebitbusprojectexpr() {
+    return debitbusprojectexpr;
   }
 
-  public void setDebitBusProjectExpr(String debitBusProjectExpr) {
-    this.debitBusProjectExpr = debitBusProjectExpr;
+  public void setDebitbusprojectexpr(String debitbusprojectexpr) {
+    this.debitbusprojectexpr = debitbusprojectexpr;
   }
 
-  public Accpresetdefinitionrow creditBusProjectExpr(String creditBusProjectExpr) {
-    this.creditBusProjectExpr = creditBusProjectExpr;
+  public Accpresetdefinitionrow creditbusprojectexpr(String creditbusprojectexpr) {
+    this.creditbusprojectexpr = creditbusprojectexpr;
     return this;
   }
 
    /**
-   * Výraz Projekt D [persistentní položka]
-   * @return creditBusProjectExpr
+   * výraz projekt d [persistentní položka]
+   * @return creditbusprojectexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz Projekt D [persistentní položka]")
-  public String getCreditBusProjectExpr() {
-    return creditBusProjectExpr;
+  @ApiModelProperty(example = "null", value = "výraz projekt d [persistentní položka]")
+  public String getCreditbusprojectexpr() {
+    return creditbusprojectexpr;
   }
 
-  public void setCreditBusProjectExpr(String creditBusProjectExpr) {
-    this.creditBusProjectExpr = creditBusProjectExpr;
+  public void setCreditbusprojectexpr(String creditbusprojectexpr) {
+    this.creditbusprojectexpr = creditbusprojectexpr;
   }
 
   public Accpresetdefinitionrow exceptable(Boolean exceptable) {
@@ -645,10 +699,10 @@ public class Accpresetdefinitionrow   {
   }
 
    /**
-   * Výjimka [persistentní položka]
+   * výjimka [persistentní položka]
    * @return exceptable
   **/
-  @ApiModelProperty(example = "null", value = "Výjimka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "výjimka [persistentní položka]")
   public Boolean getExceptable() {
     return exceptable;
   }
@@ -657,22 +711,22 @@ public class Accpresetdefinitionrow   {
     this.exceptable = exceptable;
   }
 
-  public Accpresetdefinitionrow continueEvaluation(Boolean continueEvaluation) {
-    this.continueEvaluation = continueEvaluation;
+  public Accpresetdefinitionrow continueevaluation(Boolean continueevaluation) {
+    this.continueevaluation = continueevaluation;
     return this;
   }
 
    /**
-   * Pokračovat [persistentní položka]
-   * @return continueEvaluation
+   * pokračovat [persistentní položka]
+   * @return continueevaluation
   **/
-  @ApiModelProperty(example = "null", value = "Pokračovat [persistentní položka]")
-  public Boolean getContinueEvaluation() {
-    return continueEvaluation;
+  @ApiModelProperty(example = "null", value = "pokračovat [persistentní položka]")
+  public Boolean getContinueevaluation() {
+    return continueevaluation;
   }
 
-  public void setContinueEvaluation(Boolean continueEvaluation) {
-    this.continueEvaluation = continueEvaluation;
+  public void setContinueevaluation(Boolean continueevaluation) {
+    this.continueevaluation = continueevaluation;
   }
 
 
@@ -685,44 +739,44 @@ public class Accpresetdefinitionrow   {
       return false;
     }
     Accpresetdefinitionrow accpresetdefinitionrow = (Accpresetdefinitionrow) o;
-    return Objects.equals(this.displayName, accpresetdefinitionrow.displayName) &&
-        Objects.equals(this.ID, accpresetdefinitionrow.ID) &&
-        Objects.equals(this.classID, accpresetdefinitionrow.classID) &&
-        Objects.equals(this.objVersion, accpresetdefinitionrow.objVersion) &&
-        Objects.equals(this.parentID, accpresetdefinitionrow.parentID) &&
-        Objects.equals(this.posIndex, accpresetdefinitionrow.posIndex) &&
+    return Objects.equals(this.displayname, accpresetdefinitionrow.displayname) &&
+        Objects.equals(this.id, accpresetdefinitionrow.id) &&
+        Objects.equals(this.classid, accpresetdefinitionrow.classid) &&
+        Objects.equals(this.objversion, accpresetdefinitionrow.objversion) &&
+        Objects.equals(this.parentId, accpresetdefinitionrow.parentId) &&
+        Objects.equals(this.posindex, accpresetdefinitionrow.posindex) &&
         Objects.equals(this.condition, accpresetdefinitionrow.condition) &&
-        Objects.equals(this.debitAccountID, accpresetdefinitionrow.debitAccountID) &&
-        Objects.equals(this.creditAccountID, accpresetdefinitionrow.creditAccountID) &&
-        Objects.equals(this.debitDivisionID, accpresetdefinitionrow.debitDivisionID) &&
-        Objects.equals(this.creditDivisionID, accpresetdefinitionrow.creditDivisionID) &&
-        Objects.equals(this.debitBusOrderID, accpresetdefinitionrow.debitBusOrderID) &&
-        Objects.equals(this.creditBusOrderID, accpresetdefinitionrow.creditBusOrderID) &&
-        Objects.equals(this.debitBusTransactionID, accpresetdefinitionrow.debitBusTransactionID) &&
-        Objects.equals(this.creditBusTransactionID, accpresetdefinitionrow.creditBusTransactionID) &&
-        Objects.equals(this.debitBusProjectID, accpresetdefinitionrow.debitBusProjectID) &&
-        Objects.equals(this.creditBusProjectID, accpresetdefinitionrow.creditBusProjectID) &&
-        Objects.equals(this.textExpr, accpresetdefinitionrow.textExpr) &&
+        Objects.equals(this.debitaccountId, accpresetdefinitionrow.debitaccountId) &&
+        Objects.equals(this.creditaccountId, accpresetdefinitionrow.creditaccountId) &&
+        Objects.equals(this.debitdivisionId, accpresetdefinitionrow.debitdivisionId) &&
+        Objects.equals(this.creditdivisionId, accpresetdefinitionrow.creditdivisionId) &&
+        Objects.equals(this.debitbusorderId, accpresetdefinitionrow.debitbusorderId) &&
+        Objects.equals(this.creditbusorderId, accpresetdefinitionrow.creditbusorderId) &&
+        Objects.equals(this.debitbustransactionId, accpresetdefinitionrow.debitbustransactionId) &&
+        Objects.equals(this.creditbustransactionId, accpresetdefinitionrow.creditbustransactionId) &&
+        Objects.equals(this.debitbusprojectId, accpresetdefinitionrow.debitbusprojectId) &&
+        Objects.equals(this.creditbusprojectId, accpresetdefinitionrow.creditbusprojectId) &&
+        Objects.equals(this.textexpr, accpresetdefinitionrow.textexpr) &&
         Objects.equals(this.text2, accpresetdefinitionrow.text2) &&
-        Objects.equals(this.rowType, accpresetdefinitionrow.rowType) &&
-        Objects.equals(this.expressionRow, accpresetdefinitionrow.expressionRow) &&
-        Objects.equals(this.debitAccountExpr, accpresetdefinitionrow.debitAccountExpr) &&
-        Objects.equals(this.creditAccountExpr, accpresetdefinitionrow.creditAccountExpr) &&
-        Objects.equals(this.debitDivisionExpr, accpresetdefinitionrow.debitDivisionExpr) &&
-        Objects.equals(this.creditDivisionExpr, accpresetdefinitionrow.creditDivisionExpr) &&
-        Objects.equals(this.debitBusOrderExpr, accpresetdefinitionrow.debitBusOrderExpr) &&
-        Objects.equals(this.creditBusOrderExpr, accpresetdefinitionrow.creditBusOrderExpr) &&
-        Objects.equals(this.debitBusTransactionExpr, accpresetdefinitionrow.debitBusTransactionExpr) &&
-        Objects.equals(this.creditBusTransactionExpr, accpresetdefinitionrow.creditBusTransactionExpr) &&
-        Objects.equals(this.debitBusProjectExpr, accpresetdefinitionrow.debitBusProjectExpr) &&
-        Objects.equals(this.creditBusProjectExpr, accpresetdefinitionrow.creditBusProjectExpr) &&
+        Objects.equals(this.rowtype, accpresetdefinitionrow.rowtype) &&
+        Objects.equals(this.expressionrow, accpresetdefinitionrow.expressionrow) &&
+        Objects.equals(this.debitaccountexpr, accpresetdefinitionrow.debitaccountexpr) &&
+        Objects.equals(this.creditaccountexpr, accpresetdefinitionrow.creditaccountexpr) &&
+        Objects.equals(this.debitdivisionexpr, accpresetdefinitionrow.debitdivisionexpr) &&
+        Objects.equals(this.creditdivisionexpr, accpresetdefinitionrow.creditdivisionexpr) &&
+        Objects.equals(this.debitbusorderexpr, accpresetdefinitionrow.debitbusorderexpr) &&
+        Objects.equals(this.creditbusorderexpr, accpresetdefinitionrow.creditbusorderexpr) &&
+        Objects.equals(this.debitbustransactionexpr, accpresetdefinitionrow.debitbustransactionexpr) &&
+        Objects.equals(this.creditbustransactionexpr, accpresetdefinitionrow.creditbustransactionexpr) &&
+        Objects.equals(this.debitbusprojectexpr, accpresetdefinitionrow.debitbusprojectexpr) &&
+        Objects.equals(this.creditbusprojectexpr, accpresetdefinitionrow.creditbusprojectexpr) &&
         Objects.equals(this.exceptable, accpresetdefinitionrow.exceptable) &&
-        Objects.equals(this.continueEvaluation, accpresetdefinitionrow.continueEvaluation);
+        Objects.equals(this.continueevaluation, accpresetdefinitionrow.continueevaluation);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, condition, debitAccountID, creditAccountID, debitDivisionID, creditDivisionID, debitBusOrderID, creditBusOrderID, debitBusTransactionID, creditBusTransactionID, debitBusProjectID, creditBusProjectID, textExpr, text2, rowType, expressionRow, debitAccountExpr, creditAccountExpr, debitDivisionExpr, creditDivisionExpr, debitBusOrderExpr, creditBusOrderExpr, debitBusTransactionExpr, creditBusTransactionExpr, debitBusProjectExpr, creditBusProjectExpr, exceptable, continueEvaluation);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, condition, debitaccountId, creditaccountId, debitdivisionId, creditdivisionId, debitbusorderId, creditbusorderId, debitbustransactionId, creditbustransactionId, debitbusprojectId, creditbusprojectId, textexpr, text2, rowtype, expressionrow, debitaccountexpr, creditaccountexpr, debitdivisionexpr, creditdivisionexpr, debitbusorderexpr, creditbusorderexpr, debitbustransactionexpr, creditbustransactionexpr, debitbusprojectexpr, creditbusprojectexpr, exceptable, continueevaluation);
   }
 
   @Override
@@ -730,39 +784,39 @@ public class Accpresetdefinitionrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Accpresetdefinitionrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
     sb.append("    condition: ").append(toIndentedString(condition)).append("\n");
-    sb.append("    debitAccountID: ").append(toIndentedString(debitAccountID)).append("\n");
-    sb.append("    creditAccountID: ").append(toIndentedString(creditAccountID)).append("\n");
-    sb.append("    debitDivisionID: ").append(toIndentedString(debitDivisionID)).append("\n");
-    sb.append("    creditDivisionID: ").append(toIndentedString(creditDivisionID)).append("\n");
-    sb.append("    debitBusOrderID: ").append(toIndentedString(debitBusOrderID)).append("\n");
-    sb.append("    creditBusOrderID: ").append(toIndentedString(creditBusOrderID)).append("\n");
-    sb.append("    debitBusTransactionID: ").append(toIndentedString(debitBusTransactionID)).append("\n");
-    sb.append("    creditBusTransactionID: ").append(toIndentedString(creditBusTransactionID)).append("\n");
-    sb.append("    debitBusProjectID: ").append(toIndentedString(debitBusProjectID)).append("\n");
-    sb.append("    creditBusProjectID: ").append(toIndentedString(creditBusProjectID)).append("\n");
-    sb.append("    textExpr: ").append(toIndentedString(textExpr)).append("\n");
+    sb.append("    debitaccountId: ").append(toIndentedString(debitaccountId)).append("\n");
+    sb.append("    creditaccountId: ").append(toIndentedString(creditaccountId)).append("\n");
+    sb.append("    debitdivisionId: ").append(toIndentedString(debitdivisionId)).append("\n");
+    sb.append("    creditdivisionId: ").append(toIndentedString(creditdivisionId)).append("\n");
+    sb.append("    debitbusorderId: ").append(toIndentedString(debitbusorderId)).append("\n");
+    sb.append("    creditbusorderId: ").append(toIndentedString(creditbusorderId)).append("\n");
+    sb.append("    debitbustransactionId: ").append(toIndentedString(debitbustransactionId)).append("\n");
+    sb.append("    creditbustransactionId: ").append(toIndentedString(creditbustransactionId)).append("\n");
+    sb.append("    debitbusprojectId: ").append(toIndentedString(debitbusprojectId)).append("\n");
+    sb.append("    creditbusprojectId: ").append(toIndentedString(creditbusprojectId)).append("\n");
+    sb.append("    textexpr: ").append(toIndentedString(textexpr)).append("\n");
     sb.append("    text2: ").append(toIndentedString(text2)).append("\n");
-    sb.append("    rowType: ").append(toIndentedString(rowType)).append("\n");
-    sb.append("    expressionRow: ").append(toIndentedString(expressionRow)).append("\n");
-    sb.append("    debitAccountExpr: ").append(toIndentedString(debitAccountExpr)).append("\n");
-    sb.append("    creditAccountExpr: ").append(toIndentedString(creditAccountExpr)).append("\n");
-    sb.append("    debitDivisionExpr: ").append(toIndentedString(debitDivisionExpr)).append("\n");
-    sb.append("    creditDivisionExpr: ").append(toIndentedString(creditDivisionExpr)).append("\n");
-    sb.append("    debitBusOrderExpr: ").append(toIndentedString(debitBusOrderExpr)).append("\n");
-    sb.append("    creditBusOrderExpr: ").append(toIndentedString(creditBusOrderExpr)).append("\n");
-    sb.append("    debitBusTransactionExpr: ").append(toIndentedString(debitBusTransactionExpr)).append("\n");
-    sb.append("    creditBusTransactionExpr: ").append(toIndentedString(creditBusTransactionExpr)).append("\n");
-    sb.append("    debitBusProjectExpr: ").append(toIndentedString(debitBusProjectExpr)).append("\n");
-    sb.append("    creditBusProjectExpr: ").append(toIndentedString(creditBusProjectExpr)).append("\n");
+    sb.append("    rowtype: ").append(toIndentedString(rowtype)).append("\n");
+    sb.append("    expressionrow: ").append(toIndentedString(expressionrow)).append("\n");
+    sb.append("    debitaccountexpr: ").append(toIndentedString(debitaccountexpr)).append("\n");
+    sb.append("    creditaccountexpr: ").append(toIndentedString(creditaccountexpr)).append("\n");
+    sb.append("    debitdivisionexpr: ").append(toIndentedString(debitdivisionexpr)).append("\n");
+    sb.append("    creditdivisionexpr: ").append(toIndentedString(creditdivisionexpr)).append("\n");
+    sb.append("    debitbusorderexpr: ").append(toIndentedString(debitbusorderexpr)).append("\n");
+    sb.append("    creditbusorderexpr: ").append(toIndentedString(creditbusorderexpr)).append("\n");
+    sb.append("    debitbustransactionexpr: ").append(toIndentedString(debitbustransactionexpr)).append("\n");
+    sb.append("    creditbustransactionexpr: ").append(toIndentedString(creditbustransactionexpr)).append("\n");
+    sb.append("    debitbusprojectexpr: ").append(toIndentedString(debitbusprojectexpr)).append("\n");
+    sb.append("    creditbusprojectexpr: ").append(toIndentedString(creditbusprojectexpr)).append("\n");
     sb.append("    exceptable: ").append(toIndentedString(exceptable)).append("\n");
-    sb.append("    continueEvaluation: ").append(toIndentedString(continueEvaluation)).append("\n");
+    sb.append("    continueevaluation: ").append(toIndentedString(continueevaluation)).append("\n");
     sb.append("}");
     return sb.toString();
   }

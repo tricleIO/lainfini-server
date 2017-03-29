@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,174 +37,210 @@ import java.util.Objects;
 /**
  * Servicedobject
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Servicedobject   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("DateOfChange")
-  private DateTime dateOfChange = null;
+  @SerializedName("dateofchange")
+  private DateTime dateofchange = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("FirmOffice_ID")
-  private String firmOfficeID = null;
+  @SerializedName("firmoffice_id")
+  private String firmofficeId = null;
 
-  @SerializedName("Person_ID")
-  private String personID = null;
+  @SerializedName("person_id")
+  private String personId = null;
 
-  @SerializedName("OwnerFirm_ID")
-  private String ownerFirmID = null;
+  @SerializedName("ownerfirm_id")
+  private String ownerfirmId = null;
 
-  @SerializedName("PayerFirm_ID")
-  private String payerFirmID = null;
+  @SerializedName("payerfirm_id")
+  private String payerfirmId = null;
 
-  @SerializedName("PayerFirmOffice_ID")
-  private String payerFirmOfficeID = null;
+  @SerializedName("payerfirmoffice_id")
+  private String payerfirmofficeId = null;
 
-  @SerializedName("PayerPerson_ID")
-  private String payerPersonID = null;
+  @SerializedName("payerperson_id")
+  private String payerpersonId = null;
 
-  @SerializedName("InformClientKind")
-  private Integer informClientKind = null;
+  @SerializedName("informclientkind")
+  private Integer informclientkind = null;
 
-  @SerializedName("ProductionYear")
-  private Integer productionYear = null;
+  @SerializedName("productionyear")
+  private Integer productionyear = null;
 
-  @SerializedName("DateOfSale$DATE")
-  private DateTime dateOfSaleDATE = null;
+  @SerializedName("dateofsale$date")
+  private DateTime dateofsaledate = null;
 
-  @SerializedName("GuaranteeEndDate$DATE")
-  private DateTime guaranteeEndDateDATE = null;
+  @SerializedName("guaranteeenddate$date")
+  private DateTime guaranteeenddatedate = null;
 
-  @SerializedName("ExtendedGuaranteeEndDate$DATE")
-  private DateTime extendedGuaranteeEndDateDATE = null;
+  @SerializedName("extendedguaranteeenddate$date")
+  private DateTime extendedguaranteeenddatedate = null;
 
-  @SerializedName("NextContactDate1$DATE")
-  private DateTime nextContactDate1DATE = null;
+  @SerializedName("nextcontactdate1$date")
+  private DateTime nextcontactdate1date = null;
 
-  @SerializedName("NextContactDate2$DATE")
-  private DateTime nextContactDate2DATE = null;
+  @SerializedName("nextcontactdate2$date")
+  private DateTime nextcontactdate2date = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("StoreBatch_ID")
-  private String storeBatchID = null;
+  @SerializedName("storebatch_id")
+  private String storebatchId = null;
 
-  @SerializedName("ServicedObjectType_ID")
-  private String servicedObjectTypeID = null;
+  @SerializedName("servicedobjecttype_id")
+  private String servicedobjecttypeId = null;
 
-  @SerializedName("Priority")
+  @SerializedName("priority")
   private Integer priority = null;
 
-  @SerializedName("OutdoorPlaceDescription")
-  private String outdoorPlaceDescription = null;
+  @SerializedName("outdoorplacedescription")
+  private String outdoorplacedescription = null;
 
-  @SerializedName("PlaceAddress_ID")
-  private Servicedobject placeAddressID = null;
+  @SerializedName("placeaddress_id")
+  private Servicedobject placeaddressId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("CorrectedDate$DATE")
-  private DateTime correctedDateDATE = null;
+  @SerializedName("correcteddate$date")
+  private DateTime correcteddatedate = null;
 
-  @SerializedName("PaymentTypeDefault")
-  private Integer paymentTypeDefault = null;
+  @SerializedName("paymenttypedefault")
+  private Integer paymenttypedefault = null;
 
-  @SerializedName("MaxDuration")
-  private Double maxDuration = null;
+  @SerializedName("maxduration")
+  private Double maxduration = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("Pictures")
+  @SerializedName("pictures")
   private List<Servicedobjectpicture> pictures = new ArrayList<Servicedobjectpicture>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-  public Servicedobject dateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public Servicedobject displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum změny
-   * @return dateOfChange
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum změny")
-  public DateTime getDateOfChange() {
-    return dateOfChange;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  public Servicedobject id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Servicedobject dateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+    return this;
+  }
+
+   /**
+   * datum změny
+   * @return dateofchange
+  **/
+  @ApiModelProperty(example = "null", value = "datum změny")
+  public DateTime getDateofchange() {
+    return dateofchange;
+  }
+
+  public void setDateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+  }
+
+  public Servicedobject classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Servicedobject objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Servicedobject hidden(Boolean hidden) {
@@ -213,10 +249,10 @@ public class Servicedobject   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -225,22 +261,22 @@ public class Servicedobject   {
     this.hidden = hidden;
   }
 
-  public Servicedobject parentID(String parentID) {
-    this.parentID = parentID;
+  public Servicedobject parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Nadřízený; ID objektu Servisovaný předmět [persistentní položka]
-   * @return parentID
+   * nadřízený; id objektu servisovaný předmět [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízený; ID objektu Servisovaný předmět [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "nadřízený; id objektu servisovaný předmět [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setParentID(String parentID) {
-    this.parentID = parentID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
   public Servicedobject code(String code) {
@@ -249,10 +285,10 @@ public class Servicedobject   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -267,10 +303,10 @@ public class Servicedobject   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -285,10 +321,10 @@ public class Servicedobject   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -297,310 +333,310 @@ public class Servicedobject   {
     this.note = note;
   }
 
-  public Servicedobject firmID(String firmID) {
-    this.firmID = firmID;
+  public Servicedobject firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Servicedobject firmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public Servicedobject firmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
     return this;
   }
 
    /**
-   * Provozovna; ID objektu Provozovna [persistentní položka]
-   * @return firmOfficeID
+   * provozovna; id objektu provozovna [persistentní položka]
+   * @return firmofficeId
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna; ID objektu Provozovna [persistentní položka]")
-  public String getFirmOfficeID() {
-    return firmOfficeID;
+  @ApiModelProperty(example = "null", value = "provozovna; id objektu provozovna [persistentní položka]")
+  public String getFirmofficeId() {
+    return firmofficeId;
   }
 
-  public void setFirmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public void setFirmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
   }
 
-  public Servicedobject personID(String personID) {
-    this.personID = personID;
+  public Servicedobject personId(String personId) {
+    this.personId = personId;
     return this;
   }
 
    /**
-   * Osoba; ID objektu Osoba [persistentní položka]
-   * @return personID
+   * osoba; id objektu osoba [persistentní položka]
+   * @return personId
   **/
-  @ApiModelProperty(example = "null", value = "Osoba; ID objektu Osoba [persistentní položka]")
-  public String getPersonID() {
-    return personID;
+  @ApiModelProperty(example = "null", value = "osoba; id objektu osoba [persistentní položka]")
+  public String getPersonId() {
+    return personId;
   }
 
-  public void setPersonID(String personID) {
-    this.personID = personID;
+  public void setPersonId(String personId) {
+    this.personId = personId;
   }
 
-  public Servicedobject ownerFirmID(String ownerFirmID) {
-    this.ownerFirmID = ownerFirmID;
+  public Servicedobject ownerfirmId(String ownerfirmId) {
+    this.ownerfirmId = ownerfirmId;
     return this;
   }
 
    /**
-   * Firma vlastníka; ID objektu Firma [persistentní položka]
-   * @return ownerFirmID
+   * firma vlastníka; id objektu firma [persistentní položka]
+   * @return ownerfirmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma vlastníka; ID objektu Firma [persistentní položka]")
-  public String getOwnerFirmID() {
-    return ownerFirmID;
+  @ApiModelProperty(example = "null", value = "firma vlastníka; id objektu firma [persistentní položka]")
+  public String getOwnerfirmId() {
+    return ownerfirmId;
   }
 
-  public void setOwnerFirmID(String ownerFirmID) {
-    this.ownerFirmID = ownerFirmID;
+  public void setOwnerfirmId(String ownerfirmId) {
+    this.ownerfirmId = ownerfirmId;
   }
 
-  public Servicedobject payerFirmID(String payerFirmID) {
-    this.payerFirmID = payerFirmID;
+  public Servicedobject payerfirmId(String payerfirmId) {
+    this.payerfirmId = payerfirmId;
     return this;
   }
 
    /**
-   * Firma plátce; ID objektu Firma [persistentní položka]
-   * @return payerFirmID
+   * firma plátce; id objektu firma [persistentní položka]
+   * @return payerfirmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma plátce; ID objektu Firma [persistentní položka]")
-  public String getPayerFirmID() {
-    return payerFirmID;
+  @ApiModelProperty(example = "null", value = "firma plátce; id objektu firma [persistentní položka]")
+  public String getPayerfirmId() {
+    return payerfirmId;
   }
 
-  public void setPayerFirmID(String payerFirmID) {
-    this.payerFirmID = payerFirmID;
+  public void setPayerfirmId(String payerfirmId) {
+    this.payerfirmId = payerfirmId;
   }
 
-  public Servicedobject payerFirmOfficeID(String payerFirmOfficeID) {
-    this.payerFirmOfficeID = payerFirmOfficeID;
+  public Servicedobject payerfirmofficeId(String payerfirmofficeId) {
+    this.payerfirmofficeId = payerfirmofficeId;
     return this;
   }
 
    /**
-   * Provozovna plátce; ID objektu Provozovna [persistentní položka]
-   * @return payerFirmOfficeID
+   * provozovna plátce; id objektu provozovna [persistentní položka]
+   * @return payerfirmofficeId
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna plátce; ID objektu Provozovna [persistentní položka]")
-  public String getPayerFirmOfficeID() {
-    return payerFirmOfficeID;
+  @ApiModelProperty(example = "null", value = "provozovna plátce; id objektu provozovna [persistentní položka]")
+  public String getPayerfirmofficeId() {
+    return payerfirmofficeId;
   }
 
-  public void setPayerFirmOfficeID(String payerFirmOfficeID) {
-    this.payerFirmOfficeID = payerFirmOfficeID;
+  public void setPayerfirmofficeId(String payerfirmofficeId) {
+    this.payerfirmofficeId = payerfirmofficeId;
   }
 
-  public Servicedobject payerPersonID(String payerPersonID) {
-    this.payerPersonID = payerPersonID;
+  public Servicedobject payerpersonId(String payerpersonId) {
+    this.payerpersonId = payerpersonId;
     return this;
   }
 
    /**
-   * Osoba plátce; ID objektu Osoba [persistentní položka]
-   * @return payerPersonID
+   * osoba plátce; id objektu osoba [persistentní položka]
+   * @return payerpersonId
   **/
-  @ApiModelProperty(example = "null", value = "Osoba plátce; ID objektu Osoba [persistentní položka]")
-  public String getPayerPersonID() {
-    return payerPersonID;
+  @ApiModelProperty(example = "null", value = "osoba plátce; id objektu osoba [persistentní položka]")
+  public String getPayerpersonId() {
+    return payerpersonId;
   }
 
-  public void setPayerPersonID(String payerPersonID) {
-    this.payerPersonID = payerPersonID;
+  public void setPayerpersonId(String payerpersonId) {
+    this.payerpersonId = payerpersonId;
   }
 
-  public Servicedobject informClientKind(Integer informClientKind) {
-    this.informClientKind = informClientKind;
+  public Servicedobject informclientkind(Integer informclientkind) {
+    this.informclientkind = informclientkind;
     return this;
   }
 
    /**
-   * Způsob informování [persistentní položka]
-   * @return informClientKind
+   * způsob informování [persistentní položka]
+   * @return informclientkind
   **/
-  @ApiModelProperty(example = "null", value = "Způsob informování [persistentní položka]")
-  public Integer getInformClientKind() {
-    return informClientKind;
+  @ApiModelProperty(example = "null", value = "způsob informování [persistentní položka]")
+  public Integer getInformclientkind() {
+    return informclientkind;
   }
 
-  public void setInformClientKind(Integer informClientKind) {
-    this.informClientKind = informClientKind;
+  public void setInformclientkind(Integer informclientkind) {
+    this.informclientkind = informclientkind;
   }
 
-  public Servicedobject productionYear(Integer productionYear) {
-    this.productionYear = productionYear;
+  public Servicedobject productionyear(Integer productionyear) {
+    this.productionyear = productionyear;
     return this;
   }
 
    /**
-   * Rok výroby [persistentní položka]
-   * @return productionYear
+   * rok výroby [persistentní položka]
+   * @return productionyear
   **/
-  @ApiModelProperty(example = "null", value = "Rok výroby [persistentní položka]")
-  public Integer getProductionYear() {
-    return productionYear;
+  @ApiModelProperty(example = "null", value = "rok výroby [persistentní položka]")
+  public Integer getProductionyear() {
+    return productionyear;
   }
 
-  public void setProductionYear(Integer productionYear) {
-    this.productionYear = productionYear;
+  public void setProductionyear(Integer productionyear) {
+    this.productionyear = productionyear;
   }
 
-  public Servicedobject dateOfSaleDATE(DateTime dateOfSaleDATE) {
-    this.dateOfSaleDATE = dateOfSaleDATE;
+  public Servicedobject dateofsaledate(DateTime dateofsaledate) {
+    this.dateofsaledate = dateofsaledate;
     return this;
   }
 
    /**
-   * Datum prodeje [persistentní položka]
-   * @return dateOfSaleDATE
+   * datum prodeje [persistentní položka]
+   * @return dateofsaledate
   **/
-  @ApiModelProperty(example = "null", value = "Datum prodeje [persistentní položka]")
-  public DateTime getDateOfSaleDATE() {
-    return dateOfSaleDATE;
+  @ApiModelProperty(example = "null", value = "datum prodeje [persistentní položka]")
+  public DateTime getDateofsaledate() {
+    return dateofsaledate;
   }
 
-  public void setDateOfSaleDATE(DateTime dateOfSaleDATE) {
-    this.dateOfSaleDATE = dateOfSaleDATE;
+  public void setDateofsaledate(DateTime dateofsaledate) {
+    this.dateofsaledate = dateofsaledate;
   }
 
-  public Servicedobject guaranteeEndDateDATE(DateTime guaranteeEndDateDATE) {
-    this.guaranteeEndDateDATE = guaranteeEndDateDATE;
+  public Servicedobject guaranteeenddatedate(DateTime guaranteeenddatedate) {
+    this.guaranteeenddatedate = guaranteeenddatedate;
     return this;
   }
 
    /**
-   * Záruka do [persistentní položka]
-   * @return guaranteeEndDateDATE
+   * záruka do [persistentní položka]
+   * @return guaranteeenddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Záruka do [persistentní položka]")
-  public DateTime getGuaranteeEndDateDATE() {
-    return guaranteeEndDateDATE;
+  @ApiModelProperty(example = "null", value = "záruka do [persistentní položka]")
+  public DateTime getGuaranteeenddatedate() {
+    return guaranteeenddatedate;
   }
 
-  public void setGuaranteeEndDateDATE(DateTime guaranteeEndDateDATE) {
-    this.guaranteeEndDateDATE = guaranteeEndDateDATE;
+  public void setGuaranteeenddatedate(DateTime guaranteeenddatedate) {
+    this.guaranteeenddatedate = guaranteeenddatedate;
   }
 
-  public Servicedobject extendedGuaranteeEndDateDATE(DateTime extendedGuaranteeEndDateDATE) {
-    this.extendedGuaranteeEndDateDATE = extendedGuaranteeEndDateDATE;
+  public Servicedobject extendedguaranteeenddatedate(DateTime extendedguaranteeenddatedate) {
+    this.extendedguaranteeenddatedate = extendedguaranteeenddatedate;
     return this;
   }
 
    /**
-   * Prodl.záruka do [persistentní položka]
-   * @return extendedGuaranteeEndDateDATE
+   * prodl.záruka do [persistentní položka]
+   * @return extendedguaranteeenddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Prodl.záruka do [persistentní položka]")
-  public DateTime getExtendedGuaranteeEndDateDATE() {
-    return extendedGuaranteeEndDateDATE;
+  @ApiModelProperty(example = "null", value = "prodl.záruka do [persistentní položka]")
+  public DateTime getExtendedguaranteeenddatedate() {
+    return extendedguaranteeenddatedate;
   }
 
-  public void setExtendedGuaranteeEndDateDATE(DateTime extendedGuaranteeEndDateDATE) {
-    this.extendedGuaranteeEndDateDATE = extendedGuaranteeEndDateDATE;
+  public void setExtendedguaranteeenddatedate(DateTime extendedguaranteeenddatedate) {
+    this.extendedguaranteeenddatedate = extendedguaranteeenddatedate;
   }
 
-  public Servicedobject nextContactDate1DATE(DateTime nextContactDate1DATE) {
-    this.nextContactDate1DATE = nextContactDate1DATE;
+  public Servicedobject nextcontactdate1date(DateTime nextcontactdate1date) {
+    this.nextcontactdate1date = nextcontactdate1date;
     return this;
   }
 
    /**
-   * Kontaktovat1 [persistentní položka]
-   * @return nextContactDate1DATE
+   * kontaktovat1 [persistentní položka]
+   * @return nextcontactdate1date
   **/
-  @ApiModelProperty(example = "null", value = "Kontaktovat1 [persistentní položka]")
-  public DateTime getNextContactDate1DATE() {
-    return nextContactDate1DATE;
+  @ApiModelProperty(example = "null", value = "kontaktovat1 [persistentní položka]")
+  public DateTime getNextcontactdate1date() {
+    return nextcontactdate1date;
   }
 
-  public void setNextContactDate1DATE(DateTime nextContactDate1DATE) {
-    this.nextContactDate1DATE = nextContactDate1DATE;
+  public void setNextcontactdate1date(DateTime nextcontactdate1date) {
+    this.nextcontactdate1date = nextcontactdate1date;
   }
 
-  public Servicedobject nextContactDate2DATE(DateTime nextContactDate2DATE) {
-    this.nextContactDate2DATE = nextContactDate2DATE;
+  public Servicedobject nextcontactdate2date(DateTime nextcontactdate2date) {
+    this.nextcontactdate2date = nextcontactdate2date;
     return this;
   }
 
    /**
-   * Kontaktovat2 [persistentní položka]
-   * @return nextContactDate2DATE
+   * kontaktovat2 [persistentní položka]
+   * @return nextcontactdate2date
   **/
-  @ApiModelProperty(example = "null", value = "Kontaktovat2 [persistentní položka]")
-  public DateTime getNextContactDate2DATE() {
-    return nextContactDate2DATE;
+  @ApiModelProperty(example = "null", value = "kontaktovat2 [persistentní položka]")
+  public DateTime getNextcontactdate2date() {
+    return nextcontactdate2date;
   }
 
-  public void setNextContactDate2DATE(DateTime nextContactDate2DATE) {
-    this.nextContactDate2DATE = nextContactDate2DATE;
+  public void setNextcontactdate2date(DateTime nextcontactdate2date) {
+    this.nextcontactdate2date = nextcontactdate2date;
   }
 
-  public Servicedobject storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Servicedobject storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * skladová karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
   }
 
-  public Servicedobject storeBatchID(String storeBatchID) {
-    this.storeBatchID = storeBatchID;
+  public Servicedobject storebatchId(String storebatchId) {
+    this.storebatchId = storebatchId;
     return this;
   }
 
    /**
-   * Sériové číslo; ID objektu Šarže/sériové číslo [persistentní položka]
-   * @return storeBatchID
+   * sériové číslo; id objektu Šarže/sériové číslo [persistentní položka]
+   * @return storebatchId
   **/
-  @ApiModelProperty(example = "null", value = "Sériové číslo; ID objektu Šarže/sériové číslo [persistentní položka]")
-  public String getStoreBatchID() {
-    return storeBatchID;
+  @ApiModelProperty(example = "null", value = "sériové číslo; id objektu Šarže/sériové číslo [persistentní položka]")
+  public String getStorebatchId() {
+    return storebatchId;
   }
 
-  public void setStoreBatchID(String storeBatchID) {
-    this.storeBatchID = storeBatchID;
+  public void setStorebatchId(String storebatchId) {
+    this.storebatchId = storebatchId;
   }
 
-  public Servicedobject servicedObjectTypeID(String servicedObjectTypeID) {
-    this.servicedObjectTypeID = servicedObjectTypeID;
+  public Servicedobject servicedobjecttypeId(String servicedobjecttypeId) {
+    this.servicedobjecttypeId = servicedobjecttypeId;
     return this;
   }
 
    /**
-   * Model; ID objektu Model servisovaného předmětu [persistentní položka]
-   * @return servicedObjectTypeID
+   * model; id objektu model servisovaného předmětu [persistentní položka]
+   * @return servicedobjecttypeId
   **/
-  @ApiModelProperty(example = "null", value = "Model; ID objektu Model servisovaného předmětu [persistentní položka]")
-  public String getServicedObjectTypeID() {
-    return servicedObjectTypeID;
+  @ApiModelProperty(example = "null", value = "model; id objektu model servisovaného předmětu [persistentní položka]")
+  public String getServicedobjecttypeId() {
+    return servicedobjecttypeId;
   }
 
-  public void setServicedObjectTypeID(String servicedObjectTypeID) {
-    this.servicedObjectTypeID = servicedObjectTypeID;
+  public void setServicedobjecttypeId(String servicedobjecttypeId) {
+    this.servicedobjecttypeId = servicedobjecttypeId;
   }
 
   public Servicedobject priority(Integer priority) {
@@ -609,10 +645,10 @@ public class Servicedobject   {
   }
 
    /**
-   * Priorita [persistentní položka]
+   * priorita [persistentní položka]
    * @return priority
   **/
-  @ApiModelProperty(example = "null", value = "Priorita [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "priorita [persistentní položka]")
   public Integer getPriority() {
     return priority;
   }
@@ -621,166 +657,166 @@ public class Servicedobject   {
     this.priority = priority;
   }
 
-  public Servicedobject outdoorPlaceDescription(String outdoorPlaceDescription) {
-    this.outdoorPlaceDescription = outdoorPlaceDescription;
+  public Servicedobject outdoorplacedescription(String outdoorplacedescription) {
+    this.outdoorplacedescription = outdoorplacedescription;
     return this;
   }
 
    /**
-   * Místo u klienta [persistentní položka]
-   * @return outdoorPlaceDescription
+   * místo u klienta [persistentní položka]
+   * @return outdoorplacedescription
   **/
-  @ApiModelProperty(example = "null", value = "Místo u klienta [persistentní položka]")
-  public String getOutdoorPlaceDescription() {
-    return outdoorPlaceDescription;
+  @ApiModelProperty(example = "null", value = "místo u klienta [persistentní položka]")
+  public String getOutdoorplacedescription() {
+    return outdoorplacedescription;
   }
 
-  public void setOutdoorPlaceDescription(String outdoorPlaceDescription) {
-    this.outdoorPlaceDescription = outdoorPlaceDescription;
+  public void setOutdoorplacedescription(String outdoorplacedescription) {
+    this.outdoorplacedescription = outdoorplacedescription;
   }
 
-  public Servicedobject placeAddressID(Servicedobject placeAddressID) {
-    this.placeAddressID = placeAddressID;
+  public Servicedobject placeaddressId(Servicedobject placeaddressId) {
+    this.placeaddressId = placeaddressId;
     return this;
   }
 
    /**
-   * Get placeAddressID
-   * @return placeAddressID
+   * Get placeaddressId
+   * @return placeaddressId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Servicedobject getPlaceAddressID() {
-    return placeAddressID;
+  public Servicedobject getPlaceaddressId() {
+    return placeaddressId;
   }
 
-  public void setPlaceAddressID(Servicedobject placeAddressID) {
-    this.placeAddressID = placeAddressID;
+  public void setPlaceaddressId(Servicedobject placeaddressId) {
+    this.placeaddressId = placeaddressId;
   }
 
-  public Servicedobject correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Servicedobject correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Změnil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * změnil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Změnil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "změnil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Servicedobject correctedDateDATE(DateTime correctedDateDATE) {
-    this.correctedDateDATE = correctedDateDATE;
+  public Servicedobject correcteddatedate(DateTime correcteddatedate) {
+    this.correcteddatedate = correcteddatedate;
     return this;
   }
 
    /**
-   * Datum změny [persistentní položka]
-   * @return correctedDateDATE
+   * datum změny [persistentní položka]
+   * @return correcteddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum změny [persistentní položka]")
-  public DateTime getCorrectedDateDATE() {
-    return correctedDateDATE;
+  @ApiModelProperty(example = "null", value = "datum změny [persistentní položka]")
+  public DateTime getCorrecteddatedate() {
+    return correcteddatedate;
   }
 
-  public void setCorrectedDateDATE(DateTime correctedDateDATE) {
-    this.correctedDateDATE = correctedDateDATE;
+  public void setCorrecteddatedate(DateTime correcteddatedate) {
+    this.correcteddatedate = correcteddatedate;
   }
 
-  public Servicedobject paymentTypeDefault(Integer paymentTypeDefault) {
-    this.paymentTypeDefault = paymentTypeDefault;
+  public Servicedobject paymenttypedefault(Integer paymenttypedefault) {
+    this.paymenttypedefault = paymenttypedefault;
     return this;
   }
 
    /**
-   * Výchozí způsob platby [persistentní položka]
-   * @return paymentTypeDefault
+   * výchozí způsob platby [persistentní položka]
+   * @return paymenttypedefault
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí způsob platby [persistentní položka]")
-  public Integer getPaymentTypeDefault() {
-    return paymentTypeDefault;
+  @ApiModelProperty(example = "null", value = "výchozí způsob platby [persistentní položka]")
+  public Integer getPaymenttypedefault() {
+    return paymenttypedefault;
   }
 
-  public void setPaymentTypeDefault(Integer paymentTypeDefault) {
-    this.paymentTypeDefault = paymentTypeDefault;
+  public void setPaymenttypedefault(Integer paymenttypedefault) {
+    this.paymenttypedefault = paymenttypedefault;
   }
 
-  public Servicedobject maxDuration(Double maxDuration) {
-    this.maxDuration = maxDuration;
+  public Servicedobject maxduration(Double maxduration) {
+    this.maxduration = maxduration;
     return this;
   }
 
    /**
-   * Max.délka trvání opravy [persistentní položka]
-   * @return maxDuration
+   * max.délka trvání opravy [persistentní položka]
+   * @return maxduration
   **/
-  @ApiModelProperty(example = "null", value = "Max.délka trvání opravy [persistentní položka]")
-  public Double getMaxDuration() {
-    return maxDuration;
+  @ApiModelProperty(example = "null", value = "max.délka trvání opravy [persistentní položka]")
+  public Double getMaxduration() {
+    return maxduration;
   }
 
-  public void setMaxDuration(Double maxDuration) {
-    this.maxDuration = maxDuration;
+  public void setMaxduration(Double maxduration) {
+    this.maxduration = maxduration;
   }
 
-  public Servicedobject busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Servicedobject busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Servicedobject busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Servicedobject bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obchodní případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obchodní případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obchodní případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obchodní případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Servicedobject busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Servicedobject busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
   public Servicedobject pictures(List<Servicedobjectpicture> pictures) {
@@ -794,10 +830,10 @@ public class Servicedobject   {
   }
 
    /**
-   * Obrázek; kolekce BO Obrázek k serv.předmětu [nepersistentní položka]
+   * obrázek; kolekce bo obrázek k serv.předmětu [nepersistentní položka]
    * @return pictures
   **/
-  @ApiModelProperty(example = "null", value = "Obrázek; kolekce BO Obrázek k serv.předmětu [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "obrázek; kolekce bo obrázek k serv.předmětu [nepersistentní položka]")
   public List<Servicedobjectpicture> getPictures() {
     return pictures;
   }
@@ -816,49 +852,49 @@ public class Servicedobject   {
       return false;
     }
     Servicedobject servicedobject = (Servicedobject) o;
-    return Objects.equals(this.displayName, servicedobject.displayName) &&
-        Objects.equals(this.ID, servicedobject.ID) &&
-        Objects.equals(this.dateOfChange, servicedobject.dateOfChange) &&
-        Objects.equals(this.classID, servicedobject.classID) &&
-        Objects.equals(this.objVersion, servicedobject.objVersion) &&
+    return Objects.equals(this.displayname, servicedobject.displayname) &&
+        Objects.equals(this.id, servicedobject.id) &&
+        Objects.equals(this.dateofchange, servicedobject.dateofchange) &&
+        Objects.equals(this.classid, servicedobject.classid) &&
+        Objects.equals(this.objversion, servicedobject.objversion) &&
         Objects.equals(this.hidden, servicedobject.hidden) &&
-        Objects.equals(this.parentID, servicedobject.parentID) &&
+        Objects.equals(this.parentId, servicedobject.parentId) &&
         Objects.equals(this.code, servicedobject.code) &&
         Objects.equals(this.name, servicedobject.name) &&
         Objects.equals(this.note, servicedobject.note) &&
-        Objects.equals(this.firmID, servicedobject.firmID) &&
-        Objects.equals(this.firmOfficeID, servicedobject.firmOfficeID) &&
-        Objects.equals(this.personID, servicedobject.personID) &&
-        Objects.equals(this.ownerFirmID, servicedobject.ownerFirmID) &&
-        Objects.equals(this.payerFirmID, servicedobject.payerFirmID) &&
-        Objects.equals(this.payerFirmOfficeID, servicedobject.payerFirmOfficeID) &&
-        Objects.equals(this.payerPersonID, servicedobject.payerPersonID) &&
-        Objects.equals(this.informClientKind, servicedobject.informClientKind) &&
-        Objects.equals(this.productionYear, servicedobject.productionYear) &&
-        Objects.equals(this.dateOfSaleDATE, servicedobject.dateOfSaleDATE) &&
-        Objects.equals(this.guaranteeEndDateDATE, servicedobject.guaranteeEndDateDATE) &&
-        Objects.equals(this.extendedGuaranteeEndDateDATE, servicedobject.extendedGuaranteeEndDateDATE) &&
-        Objects.equals(this.nextContactDate1DATE, servicedobject.nextContactDate1DATE) &&
-        Objects.equals(this.nextContactDate2DATE, servicedobject.nextContactDate2DATE) &&
-        Objects.equals(this.storeCardID, servicedobject.storeCardID) &&
-        Objects.equals(this.storeBatchID, servicedobject.storeBatchID) &&
-        Objects.equals(this.servicedObjectTypeID, servicedobject.servicedObjectTypeID) &&
+        Objects.equals(this.firmId, servicedobject.firmId) &&
+        Objects.equals(this.firmofficeId, servicedobject.firmofficeId) &&
+        Objects.equals(this.personId, servicedobject.personId) &&
+        Objects.equals(this.ownerfirmId, servicedobject.ownerfirmId) &&
+        Objects.equals(this.payerfirmId, servicedobject.payerfirmId) &&
+        Objects.equals(this.payerfirmofficeId, servicedobject.payerfirmofficeId) &&
+        Objects.equals(this.payerpersonId, servicedobject.payerpersonId) &&
+        Objects.equals(this.informclientkind, servicedobject.informclientkind) &&
+        Objects.equals(this.productionyear, servicedobject.productionyear) &&
+        Objects.equals(this.dateofsaledate, servicedobject.dateofsaledate) &&
+        Objects.equals(this.guaranteeenddatedate, servicedobject.guaranteeenddatedate) &&
+        Objects.equals(this.extendedguaranteeenddatedate, servicedobject.extendedguaranteeenddatedate) &&
+        Objects.equals(this.nextcontactdate1date, servicedobject.nextcontactdate1date) &&
+        Objects.equals(this.nextcontactdate2date, servicedobject.nextcontactdate2date) &&
+        Objects.equals(this.storecardId, servicedobject.storecardId) &&
+        Objects.equals(this.storebatchId, servicedobject.storebatchId) &&
+        Objects.equals(this.servicedobjecttypeId, servicedobject.servicedobjecttypeId) &&
         Objects.equals(this.priority, servicedobject.priority) &&
-        Objects.equals(this.outdoorPlaceDescription, servicedobject.outdoorPlaceDescription) &&
-        Objects.equals(this.placeAddressID, servicedobject.placeAddressID) &&
-        Objects.equals(this.correctedByID, servicedobject.correctedByID) &&
-        Objects.equals(this.correctedDateDATE, servicedobject.correctedDateDATE) &&
-        Objects.equals(this.paymentTypeDefault, servicedobject.paymentTypeDefault) &&
-        Objects.equals(this.maxDuration, servicedobject.maxDuration) &&
-        Objects.equals(this.busOrderID, servicedobject.busOrderID) &&
-        Objects.equals(this.busTransactionID, servicedobject.busTransactionID) &&
-        Objects.equals(this.busProjectID, servicedobject.busProjectID) &&
+        Objects.equals(this.outdoorplacedescription, servicedobject.outdoorplacedescription) &&
+        Objects.equals(this.placeaddressId, servicedobject.placeaddressId) &&
+        Objects.equals(this.correctedbyId, servicedobject.correctedbyId) &&
+        Objects.equals(this.correcteddatedate, servicedobject.correcteddatedate) &&
+        Objects.equals(this.paymenttypedefault, servicedobject.paymenttypedefault) &&
+        Objects.equals(this.maxduration, servicedobject.maxduration) &&
+        Objects.equals(this.busorderId, servicedobject.busorderId) &&
+        Objects.equals(this.bustransactionId, servicedobject.bustransactionId) &&
+        Objects.equals(this.busprojectId, servicedobject.busprojectId) &&
         Objects.equals(this.pictures, servicedobject.pictures);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, dateOfChange, classID, objVersion, hidden, parentID, code, name, note, firmID, firmOfficeID, personID, ownerFirmID, payerFirmID, payerFirmOfficeID, payerPersonID, informClientKind, productionYear, dateOfSaleDATE, guaranteeEndDateDATE, extendedGuaranteeEndDateDATE, nextContactDate1DATE, nextContactDate2DATE, storeCardID, storeBatchID, servicedObjectTypeID, priority, outdoorPlaceDescription, placeAddressID, correctedByID, correctedDateDATE, paymentTypeDefault, maxDuration, busOrderID, busTransactionID, busProjectID, pictures);
+    return Objects.hash(displayname, id, dateofchange, classid, objversion, hidden, parentId, code, name, note, firmId, firmofficeId, personId, ownerfirmId, payerfirmId, payerfirmofficeId, payerpersonId, informclientkind, productionyear, dateofsaledate, guaranteeenddatedate, extendedguaranteeenddatedate, nextcontactdate1date, nextcontactdate2date, storecardId, storebatchId, servicedobjecttypeId, priority, outdoorplacedescription, placeaddressId, correctedbyId, correcteddatedate, paymenttypedefault, maxduration, busorderId, bustransactionId, busprojectId, pictures);
   }
 
   @Override
@@ -866,43 +902,43 @@ public class Servicedobject   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Servicedobject {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    dateOfChange: ").append(toIndentedString(dateOfChange)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    dateofchange: ").append(toIndentedString(dateofchange)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    firmOfficeID: ").append(toIndentedString(firmOfficeID)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
-    sb.append("    ownerFirmID: ").append(toIndentedString(ownerFirmID)).append("\n");
-    sb.append("    payerFirmID: ").append(toIndentedString(payerFirmID)).append("\n");
-    sb.append("    payerFirmOfficeID: ").append(toIndentedString(payerFirmOfficeID)).append("\n");
-    sb.append("    payerPersonID: ").append(toIndentedString(payerPersonID)).append("\n");
-    sb.append("    informClientKind: ").append(toIndentedString(informClientKind)).append("\n");
-    sb.append("    productionYear: ").append(toIndentedString(productionYear)).append("\n");
-    sb.append("    dateOfSaleDATE: ").append(toIndentedString(dateOfSaleDATE)).append("\n");
-    sb.append("    guaranteeEndDateDATE: ").append(toIndentedString(guaranteeEndDateDATE)).append("\n");
-    sb.append("    extendedGuaranteeEndDateDATE: ").append(toIndentedString(extendedGuaranteeEndDateDATE)).append("\n");
-    sb.append("    nextContactDate1DATE: ").append(toIndentedString(nextContactDate1DATE)).append("\n");
-    sb.append("    nextContactDate2DATE: ").append(toIndentedString(nextContactDate2DATE)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    storeBatchID: ").append(toIndentedString(storeBatchID)).append("\n");
-    sb.append("    servicedObjectTypeID: ").append(toIndentedString(servicedObjectTypeID)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    firmofficeId: ").append(toIndentedString(firmofficeId)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
+    sb.append("    ownerfirmId: ").append(toIndentedString(ownerfirmId)).append("\n");
+    sb.append("    payerfirmId: ").append(toIndentedString(payerfirmId)).append("\n");
+    sb.append("    payerfirmofficeId: ").append(toIndentedString(payerfirmofficeId)).append("\n");
+    sb.append("    payerpersonId: ").append(toIndentedString(payerpersonId)).append("\n");
+    sb.append("    informclientkind: ").append(toIndentedString(informclientkind)).append("\n");
+    sb.append("    productionyear: ").append(toIndentedString(productionyear)).append("\n");
+    sb.append("    dateofsaledate: ").append(toIndentedString(dateofsaledate)).append("\n");
+    sb.append("    guaranteeenddatedate: ").append(toIndentedString(guaranteeenddatedate)).append("\n");
+    sb.append("    extendedguaranteeenddatedate: ").append(toIndentedString(extendedguaranteeenddatedate)).append("\n");
+    sb.append("    nextcontactdate1date: ").append(toIndentedString(nextcontactdate1date)).append("\n");
+    sb.append("    nextcontactdate2date: ").append(toIndentedString(nextcontactdate2date)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    storebatchId: ").append(toIndentedString(storebatchId)).append("\n");
+    sb.append("    servicedobjecttypeId: ").append(toIndentedString(servicedobjecttypeId)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
-    sb.append("    outdoorPlaceDescription: ").append(toIndentedString(outdoorPlaceDescription)).append("\n");
-    sb.append("    placeAddressID: ").append(toIndentedString(placeAddressID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    correctedDateDATE: ").append(toIndentedString(correctedDateDATE)).append("\n");
-    sb.append("    paymentTypeDefault: ").append(toIndentedString(paymentTypeDefault)).append("\n");
-    sb.append("    maxDuration: ").append(toIndentedString(maxDuration)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
+    sb.append("    outdoorplacedescription: ").append(toIndentedString(outdoorplacedescription)).append("\n");
+    sb.append("    placeaddressId: ").append(toIndentedString(placeaddressId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    correcteddatedate: ").append(toIndentedString(correcteddatedate)).append("\n");
+    sb.append("    paymenttypedefault: ").append(toIndentedString(paymenttypedefault)).append("\n");
+    sb.append("    maxduration: ").append(toIndentedString(maxduration)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
     sb.append("    pictures: ").append(toIndentedString(pictures)).append("\n");
     sb.append("}");
     return sb.toString();

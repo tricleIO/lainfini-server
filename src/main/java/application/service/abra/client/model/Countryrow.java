@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,108 +35,153 @@ import java.util.Objects;
 /**
  * Countryrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Countryrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("DateOfChange$DATE")
-  private DateTime dateOfChangeDATE = null;
+  @SerializedName("dateofchange$date")
+  private DateTime dateofchangedate = null;
 
-  @SerializedName("EUMember")
-  private Boolean eUMember = null;
+  @SerializedName("eumember")
+  private Boolean eumember = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Země [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Země [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Countryrow dateOfChangeDATE(DateTime dateOfChangeDATE) {
-    this.dateOfChangeDATE = dateOfChangeDATE;
+  public Countryrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum [persistentní položka]
-   * @return dateOfChangeDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum [persistentní položka]")
-  public DateTime getDateOfChangeDATE() {
-    return dateOfChangeDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateOfChangeDATE(DateTime dateOfChangeDATE) {
-    this.dateOfChangeDATE = dateOfChangeDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Countryrow eUMember(Boolean eUMember) {
-    this.eUMember = eUMember;
+  public Countryrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Je členem [persistentní položka]
-   * @return eUMember
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Je členem [persistentní položka]")
-  public Boolean getEUMember() {
-    return eUMember;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setEUMember(Boolean eUMember) {
-    this.eUMember = eUMember;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Countryrow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Countryrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Countryrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu země [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu země [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Countryrow dateofchangedate(DateTime dateofchangedate) {
+    this.dateofchangedate = dateofchangedate;
+    return this;
+  }
+
+   /**
+   * datum [persistentní položka]
+   * @return dateofchangedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum [persistentní položka]")
+  public DateTime getDateofchangedate() {
+    return dateofchangedate;
+  }
+
+  public void setDateofchangedate(DateTime dateofchangedate) {
+    this.dateofchangedate = dateofchangedate;
+  }
+
+  public Countryrow eumember(Boolean eumember) {
+    this.eumember = eumember;
+    return this;
+  }
+
+   /**
+   * je členem [persistentní položka]
+   * @return eumember
+  **/
+  @ApiModelProperty(example = "null", value = "je členem [persistentní položka]")
+  public Boolean getEumember() {
+    return eumember;
+  }
+
+  public void setEumember(Boolean eumember) {
+    this.eumember = eumember;
   }
 
 
@@ -149,18 +194,18 @@ public class Countryrow   {
       return false;
     }
     Countryrow countryrow = (Countryrow) o;
-    return Objects.equals(this.displayName, countryrow.displayName) &&
-        Objects.equals(this.ID, countryrow.ID) &&
-        Objects.equals(this.classID, countryrow.classID) &&
-        Objects.equals(this.objVersion, countryrow.objVersion) &&
-        Objects.equals(this.parentID, countryrow.parentID) &&
-        Objects.equals(this.dateOfChangeDATE, countryrow.dateOfChangeDATE) &&
-        Objects.equals(this.eUMember, countryrow.eUMember);
+    return Objects.equals(this.displayname, countryrow.displayname) &&
+        Objects.equals(this.id, countryrow.id) &&
+        Objects.equals(this.classid, countryrow.classid) &&
+        Objects.equals(this.objversion, countryrow.objversion) &&
+        Objects.equals(this.parentId, countryrow.parentId) &&
+        Objects.equals(this.dateofchangedate, countryrow.dateofchangedate) &&
+        Objects.equals(this.eumember, countryrow.eumember);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, dateOfChangeDATE, eUMember);
+    return Objects.hash(displayname, id, classid, objversion, parentId, dateofchangedate, eumember);
   }
 
   @Override
@@ -168,13 +213,13 @@ public class Countryrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Countryrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    dateOfChangeDATE: ").append(toIndentedString(dateOfChangeDATE)).append("\n");
-    sb.append("    eUMember: ").append(toIndentedString(eUMember)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    dateofchangedate: ").append(toIndentedString(dateofchangedate)).append("\n");
+    sb.append("    eumember: ").append(toIndentedString(eumember)).append("\n");
     sb.append("}");
     return sb.toString();
   }

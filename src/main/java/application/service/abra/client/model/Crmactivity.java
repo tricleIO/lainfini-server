@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,327 +37,363 @@ import java.util.Objects;
 /**
  * Crmactivity
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Crmactivity   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("ActQueue_ID")
-  private String actQueueID = null;
+  @SerializedName("actqueue_id")
+  private String actqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("Source_ID")
-  private String sourceID = null;
+  @SerializedName("source_id")
+  private String sourceId = null;
 
-  @SerializedName("ActivityType_ID")
-  private String activityTypeID = null;
+  @SerializedName("activitytype_id")
+  private String activitytypeId = null;
 
-  @SerializedName("ActivityProcess_ID")
-  private String activityProcessID = null;
+  @SerializedName("activityprocess_id")
+  private String activityprocessId = null;
 
-  @SerializedName("Status")
+  @SerializedName("status")
   private Integer status = null;
 
-  @SerializedName("Priority")
+  @SerializedName("priority")
   private Integer priority = null;
 
-  @SerializedName("IsPrivate")
-  private Boolean isPrivate = null;
+  @SerializedName("isprivate")
+  private Boolean isprivate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("SolverRole_ID")
-  private String solverRoleID = null;
+  @SerializedName("solverrole_id")
+  private String solverroleId = null;
 
-  @SerializedName("SolverUser_ID")
-  private String solverUserID = null;
+  @SerializedName("solveruser_id")
+  private String solveruserId = null;
 
-  @SerializedName("SheduledStart$DATE")
-  private DateTime sheduledStartDATE = null;
+  @SerializedName("sheduledstart$date")
+  private DateTime sheduledstartdate = null;
 
-  @SerializedName("SheduledEnd$DATE")
-  private DateTime sheduledEndDATE = null;
+  @SerializedName("sheduledend$date")
+  private DateTime sheduledenddate = null;
 
-  @SerializedName("SheduledDuration$DATE")
-  private DateTime sheduledDurationDATE = null;
+  @SerializedName("sheduledduration$date")
+  private DateTime sheduleddurationdate = null;
 
-  @SerializedName("RealStart$DATE")
-  private DateTime realStartDATE = null;
+  @SerializedName("realstart$date")
+  private DateTime realstartdate = null;
 
-  @SerializedName("RealEnd$DATE")
-  private DateTime realEndDATE = null;
+  @SerializedName("realend$date")
+  private DateTime realenddate = null;
 
-  @SerializedName("RealDuration$DATE")
-  private DateTime realDurationDATE = null;
+  @SerializedName("realduration$date")
+  private DateTime realdurationdate = null;
 
-  @SerializedName("Subject")
+  @SerializedName("subject")
   private String subject = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("Answer")
+  @SerializedName("answer")
   private String answer = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("Person_ID")
-  private String personID = null;
+  @SerializedName("person_id")
+  private String personId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("Product_ID")
-  private String productID = null;
+  @SerializedName("product_id")
+  private String productId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("CreatedAt$DATE")
-  private DateTime createdAtDATE = null;
+  @SerializedName("createdat$date")
+  private DateTime createdatdate = null;
 
-  @SerializedName("CorrectedAt$DATE")
-  private DateTime correctedAtDATE = null;
+  @SerializedName("correctedat$date")
+  private DateTime correctedatdate = null;
 
-  @SerializedName("ActivityArea_ID")
-  private String activityAreaID = null;
+  @SerializedName("activityarea_id")
+  private String activityareaId = null;
 
-  @SerializedName("ProcessIsRequired")
-  private Boolean processIsRequired = null;
+  @SerializedName("processisrequired")
+  private Boolean processisrequired = null;
 
-  @SerializedName("BlockActivityArea")
-  private Boolean blockActivityArea = null;
+  @SerializedName("blockactivityarea")
+  private Boolean blockactivityarea = null;
 
-  @SerializedName("BlockActivityType")
-  private Boolean blockActivityType = null;
+  @SerializedName("blockactivitytype")
+  private Boolean blockactivitytype = null;
 
-  @SerializedName("ResolvedBy_ID")
-  private String resolvedByID = null;
+  @SerializedName("resolvedby_id")
+  private String resolvedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("FirmOffice_ID")
-  private String firmOfficeID = null;
+  @SerializedName("firmoffice_id")
+  private String firmofficeId = null;
 
-  @SerializedName("ScheduledWorkingTimeInHours")
-  private Double scheduledWorkingTimeInHours = null;
+  @SerializedName("scheduledworkingtimeinhours")
+  private Double scheduledworkingtimeinhours = null;
 
-  @SerializedName("RealWorkingTimeInHours")
-  private Double realWorkingTimeInHours = null;
+  @SerializedName("realworkingtimeinhours")
+  private Double realworkingtimeinhours = null;
 
-  @SerializedName("ScheduledOverTime")
-  private Double scheduledOverTime = null;
+  @SerializedName("scheduledovertime")
+  private Double scheduledovertime = null;
 
-  @SerializedName("RealOverTime")
-  private Double realOverTime = null;
+  @SerializedName("realovertime")
+  private Double realovertime = null;
 
-  @SerializedName("ScheduledTotalWorkingTime")
-  private Double scheduledTotalWorkingTime = null;
+  @SerializedName("scheduledtotalworkingtime")
+  private Double scheduledtotalworkingtime = null;
 
-  @SerializedName("RealTotalWorkingTime")
-  private Double realTotalWorkingTime = null;
+  @SerializedName("realtotalworkingtime")
+  private Double realtotalworkingtime = null;
 
-  @SerializedName("Picture_ID")
-  private Crmactivity pictureID = null;
+  @SerializedName("picture_id")
+  private Crmactivity pictureId = null;
 
-  @SerializedName("FinancialVolume")
-  private Double financialVolume = null;
+  @SerializedName("financialvolume")
+  private Double financialvolume = null;
 
-  @SerializedName("NextContact$DATE")
-  private DateTime nextContactDATE = null;
+  @SerializedName("nextcontact$date")
+  private DateTime nextcontactdate = null;
 
-  @SerializedName("PipeLineStatus_ID")
-  private String pipeLineStatusID = null;
+  @SerializedName("pipelinestatus_id")
+  private String pipelinestatusId = null;
 
-  @SerializedName("Progress_ID")
-  private String progressID = null;
+  @SerializedName("progress_id")
+  private String progressId = null;
 
-  @SerializedName("TradeDate$DATE")
-  private DateTime tradeDateDATE = null;
+  @SerializedName("tradedate$date")
+  private DateTime tradedatedate = null;
 
-  @SerializedName("Pictures")
+  @SerializedName("pictures")
   private List<Crmactivitypicture> pictures = new ArrayList<Crmactivitypicture>();
 
-  @SerializedName("Participants")
+  @SerializedName("participants")
   private List<Crmactivityparticipants> participants = new ArrayList<Crmactivityparticipants>();
 
-  @SerializedName("TimeRecords")
-  private List<Crmactivityparticipants> timeRecords = new ArrayList<Crmactivityparticipants>();
+  @SerializedName("timerecords")
+  private List<Crmactivityparticipants> timerecords = new ArrayList<Crmactivityparticipants>();
 
-  @SerializedName("Contacts")
+  @SerializedName("contacts")
   private List<Crmactivitycontact> contacts = new ArrayList<Crmactivitycontact>();
 
-  @SerializedName("ContactNote")
-  private String contactNote = null;
+  @SerializedName("contactnote")
+  private String contactnote = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Crmactivity actQueueID(String actQueueID) {
-    this.actQueueID = actQueueID;
+  public Crmactivity displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Řada aktivit; ID objektu Řada aktivit [persistentní položka]
-   * @return actQueueID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Řada aktivit; ID objektu Řada aktivit [persistentní položka]")
-  public String getActQueueID() {
-    return actQueueID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setActQueueID(String actQueueID) {
-    this.actQueueID = actQueueID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Crmactivity periodID(String periodID) {
-    this.periodID = periodID;
+  public Crmactivity id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Crmactivity ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Crmactivity classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Crmactivity sourceID(String sourceID) {
-    this.sourceID = sourceID;
+  public Crmactivity objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Odkaz na aktivitu; ID objektu Aktivita [persistentní položka]
-   * @return sourceID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na aktivitu; ID objektu Aktivita [persistentní položka]")
-  public String getSourceID() {
-    return sourceID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setSourceID(String sourceID) {
-    this.sourceID = sourceID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Crmactivity activityTypeID(String activityTypeID) {
-    this.activityTypeID = activityTypeID;
+  public Crmactivity actqueueId(String actqueueId) {
+    this.actqueueId = actqueueId;
     return this;
   }
 
    /**
-   * Typ aktivity; ID objektu Typ aktivit [persistentní položka]
-   * @return activityTypeID
+   * Řada aktivit; id objektu Řada aktivit [persistentní položka]
+   * @return actqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Typ aktivity; ID objektu Typ aktivit [persistentní položka]")
-  public String getActivityTypeID() {
-    return activityTypeID;
+  @ApiModelProperty(example = "null", value = "Řada aktivit; id objektu Řada aktivit [persistentní položka]")
+  public String getActqueueId() {
+    return actqueueId;
   }
 
-  public void setActivityTypeID(String activityTypeID) {
-    this.activityTypeID = activityTypeID;
+  public void setActqueueId(String actqueueId) {
+    this.actqueueId = actqueueId;
   }
 
-  public Crmactivity activityProcessID(String activityProcessID) {
-    this.activityProcessID = activityProcessID;
+  public Crmactivity periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Proces aktivity; ID objektu Proces aktivit [persistentní položka]
-   * @return activityProcessID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Proces aktivity; ID objektu Proces aktivit [persistentní položka]")
-  public String getActivityProcessID() {
-    return activityProcessID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setActivityProcessID(String activityProcessID) {
-    this.activityProcessID = activityProcessID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
+  }
+
+  public Crmactivity ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
+    return this;
+  }
+
+   /**
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
+  **/
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
+  }
+
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
+  }
+
+  public Crmactivity sourceId(String sourceId) {
+    this.sourceId = sourceId;
+    return this;
+  }
+
+   /**
+   * odkaz na aktivitu; id objektu aktivita [persistentní položka]
+   * @return sourceId
+  **/
+  @ApiModelProperty(example = "null", value = "odkaz na aktivitu; id objektu aktivita [persistentní položka]")
+  public String getSourceId() {
+    return sourceId;
+  }
+
+  public void setSourceId(String sourceId) {
+    this.sourceId = sourceId;
+  }
+
+  public Crmactivity activitytypeId(String activitytypeId) {
+    this.activitytypeId = activitytypeId;
+    return this;
+  }
+
+   /**
+   * typ aktivity; id objektu typ aktivit [persistentní položka]
+   * @return activitytypeId
+  **/
+  @ApiModelProperty(example = "null", value = "typ aktivity; id objektu typ aktivit [persistentní položka]")
+  public String getActivitytypeId() {
+    return activitytypeId;
+  }
+
+  public void setActivitytypeId(String activitytypeId) {
+    this.activitytypeId = activitytypeId;
+  }
+
+  public Crmactivity activityprocessId(String activityprocessId) {
+    this.activityprocessId = activityprocessId;
+    return this;
+  }
+
+   /**
+   * proces aktivity; id objektu proces aktivit [persistentní položka]
+   * @return activityprocessId
+  **/
+  @ApiModelProperty(example = "null", value = "proces aktivity; id objektu proces aktivit [persistentní položka]")
+  public String getActivityprocessId() {
+    return activityprocessId;
+  }
+
+  public void setActivityprocessId(String activityprocessId) {
+    this.activityprocessId = activityprocessId;
   }
 
   public Crmactivity status(Integer status) {
@@ -366,10 +402,10 @@ public class Crmactivity   {
   }
 
    /**
-   * Stav [persistentní položka]
+   * stav [persistentní položka]
    * @return status
   **/
-  @ApiModelProperty(example = "null", value = "Stav [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "stav [persistentní položka]")
   public Integer getStatus() {
     return status;
   }
@@ -384,10 +420,10 @@ public class Crmactivity   {
   }
 
    /**
-   * Priorita [persistentní položka]
+   * priorita [persistentní položka]
    * @return priority
   **/
-  @ApiModelProperty(example = "null", value = "Priorita [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "priorita [persistentní položka]")
   public Integer getPriority() {
     return priority;
   }
@@ -396,184 +432,184 @@ public class Crmactivity   {
     this.priority = priority;
   }
 
-  public Crmactivity isPrivate(Boolean isPrivate) {
-    this.isPrivate = isPrivate;
+  public Crmactivity isprivate(Boolean isprivate) {
+    this.isprivate = isprivate;
     return this;
   }
 
    /**
-   * Neveřejná [persistentní položka]
-   * @return isPrivate
+   * neveřejná [persistentní položka]
+   * @return isprivate
   **/
-  @ApiModelProperty(example = "null", value = "Neveřejná [persistentní položka]")
-  public Boolean getIsPrivate() {
-    return isPrivate;
+  @ApiModelProperty(example = "null", value = "neveřejná [persistentní položka]")
+  public Boolean getIsprivate() {
+    return isprivate;
   }
 
-  public void setIsPrivate(Boolean isPrivate) {
-    this.isPrivate = isPrivate;
+  public void setIsprivate(Boolean isprivate) {
+    this.isprivate = isprivate;
   }
 
-  public Crmactivity createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Crmactivity createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Crmactivity solverRoleID(String solverRoleID) {
-    this.solverRoleID = solverRoleID;
+  public Crmactivity solverroleId(String solverroleId) {
+    this.solverroleId = solverroleId;
     return this;
   }
 
    /**
-   * Role řešitele; ID objektu Role [persistentní položka]
-   * @return solverRoleID
+   * role řešitele; id objektu role [persistentní položka]
+   * @return solverroleId
   **/
-  @ApiModelProperty(example = "null", value = "Role řešitele; ID objektu Role [persistentní položka]")
-  public String getSolverRoleID() {
-    return solverRoleID;
+  @ApiModelProperty(example = "null", value = "role řešitele; id objektu role [persistentní položka]")
+  public String getSolverroleId() {
+    return solverroleId;
   }
 
-  public void setSolverRoleID(String solverRoleID) {
-    this.solverRoleID = solverRoleID;
+  public void setSolverroleId(String solverroleId) {
+    this.solverroleId = solverroleId;
   }
 
-  public Crmactivity solverUserID(String solverUserID) {
-    this.solverUserID = solverUserID;
+  public Crmactivity solveruserId(String solveruserId) {
+    this.solveruserId = solveruserId;
     return this;
   }
 
    /**
-   * Řešitel; ID objektu Uživatel [persistentní položka]
-   * @return solverUserID
+   * Řešitel; id objektu uživatel [persistentní položka]
+   * @return solveruserId
   **/
-  @ApiModelProperty(example = "null", value = "Řešitel; ID objektu Uživatel [persistentní položka]")
-  public String getSolverUserID() {
-    return solverUserID;
+  @ApiModelProperty(example = "null", value = "Řešitel; id objektu uživatel [persistentní položka]")
+  public String getSolveruserId() {
+    return solveruserId;
   }
 
-  public void setSolverUserID(String solverUserID) {
-    this.solverUserID = solverUserID;
+  public void setSolveruserId(String solveruserId) {
+    this.solveruserId = solveruserId;
   }
 
-  public Crmactivity sheduledStartDATE(DateTime sheduledStartDATE) {
-    this.sheduledStartDATE = sheduledStartDATE;
+  public Crmactivity sheduledstartdate(DateTime sheduledstartdate) {
+    this.sheduledstartdate = sheduledstartdate;
     return this;
   }
 
    /**
    * Čas zahájení [persistentní položka]
-   * @return sheduledStartDATE
+   * @return sheduledstartdate
   **/
   @ApiModelProperty(example = "null", value = "Čas zahájení [persistentní položka]")
-  public DateTime getSheduledStartDATE() {
-    return sheduledStartDATE;
+  public DateTime getSheduledstartdate() {
+    return sheduledstartdate;
   }
 
-  public void setSheduledStartDATE(DateTime sheduledStartDATE) {
-    this.sheduledStartDATE = sheduledStartDATE;
+  public void setSheduledstartdate(DateTime sheduledstartdate) {
+    this.sheduledstartdate = sheduledstartdate;
   }
 
-  public Crmactivity sheduledEndDATE(DateTime sheduledEndDATE) {
-    this.sheduledEndDATE = sheduledEndDATE;
+  public Crmactivity sheduledenddate(DateTime sheduledenddate) {
+    this.sheduledenddate = sheduledenddate;
     return this;
   }
 
    /**
    * Čas dokončení [persistentní položka]
-   * @return sheduledEndDATE
+   * @return sheduledenddate
   **/
   @ApiModelProperty(example = "null", value = "Čas dokončení [persistentní položka]")
-  public DateTime getSheduledEndDATE() {
-    return sheduledEndDATE;
+  public DateTime getSheduledenddate() {
+    return sheduledenddate;
   }
 
-  public void setSheduledEndDATE(DateTime sheduledEndDATE) {
-    this.sheduledEndDATE = sheduledEndDATE;
+  public void setSheduledenddate(DateTime sheduledenddate) {
+    this.sheduledenddate = sheduledenddate;
   }
 
-  public Crmactivity sheduledDurationDATE(DateTime sheduledDurationDATE) {
-    this.sheduledDurationDATE = sheduledDurationDATE;
+  public Crmactivity sheduleddurationdate(DateTime sheduleddurationdate) {
+    this.sheduleddurationdate = sheduleddurationdate;
     return this;
   }
 
    /**
-   * Doba trvání
-   * @return sheduledDurationDATE
+   * doba trvání
+   * @return sheduleddurationdate
   **/
-  @ApiModelProperty(example = "null", value = "Doba trvání")
-  public DateTime getSheduledDurationDATE() {
-    return sheduledDurationDATE;
+  @ApiModelProperty(example = "null", value = "doba trvání")
+  public DateTime getSheduleddurationdate() {
+    return sheduleddurationdate;
   }
 
-  public void setSheduledDurationDATE(DateTime sheduledDurationDATE) {
-    this.sheduledDurationDATE = sheduledDurationDATE;
+  public void setSheduleddurationdate(DateTime sheduleddurationdate) {
+    this.sheduleddurationdate = sheduleddurationdate;
   }
 
-  public Crmactivity realStartDATE(DateTime realStartDATE) {
-    this.realStartDATE = realStartDATE;
+  public Crmactivity realstartdate(DateTime realstartdate) {
+    this.realstartdate = realstartdate;
     return this;
   }
 
    /**
-   * Skutečný čas zahájení [persistentní položka]
-   * @return realStartDATE
+   * skutečný čas zahájení [persistentní položka]
+   * @return realstartdate
   **/
-  @ApiModelProperty(example = "null", value = "Skutečný čas zahájení [persistentní položka]")
-  public DateTime getRealStartDATE() {
-    return realStartDATE;
+  @ApiModelProperty(example = "null", value = "skutečný čas zahájení [persistentní položka]")
+  public DateTime getRealstartdate() {
+    return realstartdate;
   }
 
-  public void setRealStartDATE(DateTime realStartDATE) {
-    this.realStartDATE = realStartDATE;
+  public void setRealstartdate(DateTime realstartdate) {
+    this.realstartdate = realstartdate;
   }
 
-  public Crmactivity realEndDATE(DateTime realEndDATE) {
-    this.realEndDATE = realEndDATE;
+  public Crmactivity realenddate(DateTime realenddate) {
+    this.realenddate = realenddate;
     return this;
   }
 
    /**
-   * Skutečný čas dokončení [persistentní položka]
-   * @return realEndDATE
+   * skutečný čas dokončení [persistentní položka]
+   * @return realenddate
   **/
-  @ApiModelProperty(example = "null", value = "Skutečný čas dokončení [persistentní položka]")
-  public DateTime getRealEndDATE() {
-    return realEndDATE;
+  @ApiModelProperty(example = "null", value = "skutečný čas dokončení [persistentní položka]")
+  public DateTime getRealenddate() {
+    return realenddate;
   }
 
-  public void setRealEndDATE(DateTime realEndDATE) {
-    this.realEndDATE = realEndDATE;
+  public void setRealenddate(DateTime realenddate) {
+    this.realenddate = realenddate;
   }
 
-  public Crmactivity realDurationDATE(DateTime realDurationDATE) {
-    this.realDurationDATE = realDurationDATE;
+  public Crmactivity realdurationdate(DateTime realdurationdate) {
+    this.realdurationdate = realdurationdate;
     return this;
   }
 
    /**
-   * Skutečná doba trvání
-   * @return realDurationDATE
+   * skutečná doba trvání
+   * @return realdurationdate
   **/
-  @ApiModelProperty(example = "null", value = "Skutečná doba trvání")
-  public DateTime getRealDurationDATE() {
-    return realDurationDATE;
+  @ApiModelProperty(example = "null", value = "skutečná doba trvání")
+  public DateTime getRealdurationdate() {
+    return realdurationdate;
   }
 
-  public void setRealDurationDATE(DateTime realDurationDATE) {
-    this.realDurationDATE = realDurationDATE;
+  public void setRealdurationdate(DateTime realdurationdate) {
+    this.realdurationdate = realdurationdate;
   }
 
   public Crmactivity subject(String subject) {
@@ -582,10 +618,10 @@ public class Crmactivity   {
   }
 
    /**
-   * Předmět [persistentní položka]
+   * předmět [persistentní položka]
    * @return subject
   **/
-  @ApiModelProperty(example = "null", value = "Předmět [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "předmět [persistentní položka]")
   public String getSubject() {
     return subject;
   }
@@ -600,10 +636,10 @@ public class Crmactivity   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -618,10 +654,10 @@ public class Crmactivity   {
   }
 
    /**
-   * Odpověď [persistentní položka]
+   * odpověď [persistentní položka]
    * @return answer
   **/
-  @ApiModelProperty(example = "null", value = "Odpověď [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "odpověď [persistentní položka]")
   public String getAnswer() {
     return answer;
   }
@@ -630,526 +666,526 @@ public class Crmactivity   {
     this.answer = answer;
   }
 
-  public Crmactivity firmID(String firmID) {
-    this.firmID = firmID;
+  public Crmactivity firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Crmactivity personID(String personID) {
-    this.personID = personID;
+  public Crmactivity personId(String personId) {
+    this.personId = personId;
     return this;
   }
 
    /**
-   * Osoba; ID objektu Osoba [persistentní položka]
-   * @return personID
+   * osoba; id objektu osoba [persistentní položka]
+   * @return personId
   **/
-  @ApiModelProperty(example = "null", value = "Osoba; ID objektu Osoba [persistentní položka]")
-  public String getPersonID() {
-    return personID;
+  @ApiModelProperty(example = "null", value = "osoba; id objektu osoba [persistentní položka]")
+  public String getPersonId() {
+    return personId;
   }
 
-  public void setPersonID(String personID) {
-    this.personID = personID;
+  public void setPersonId(String personId) {
+    this.personId = personId;
   }
 
-  public Crmactivity busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Crmactivity busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Crmactivity busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Crmactivity bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * O.případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * o.případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "O.případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "o.případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Crmactivity divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Crmactivity divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Crmactivity productID(String productID) {
-    this.productID = productID;
+  public Crmactivity productId(String productId) {
+    this.productId = productId;
     return this;
   }
 
    /**
-   * Produkt; ID objektu Produkt [persistentní položka]
-   * @return productID
+   * produkt; id objektu produkt [persistentní položka]
+   * @return productId
   **/
-  @ApiModelProperty(example = "null", value = "Produkt; ID objektu Produkt [persistentní položka]")
-  public String getProductID() {
-    return productID;
+  @ApiModelProperty(example = "null", value = "produkt; id objektu produkt [persistentní položka]")
+  public String getProductId() {
+    return productId;
   }
 
-  public void setProductID(String productID) {
-    this.productID = productID;
+  public void setProductId(String productId) {
+    this.productId = productId;
   }
 
-  public Crmactivity busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Crmactivity busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Crmactivity createdAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public Crmactivity createdatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
     return this;
   }
 
    /**
    * Čas vytvoření [persistentní položka]
-   * @return createdAtDATE
+   * @return createdatdate
   **/
   @ApiModelProperty(example = "null", value = "Čas vytvoření [persistentní položka]")
-  public DateTime getCreatedAtDATE() {
-    return createdAtDATE;
+  public DateTime getCreatedatdate() {
+    return createdatdate;
   }
 
-  public void setCreatedAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public void setCreatedatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
   }
 
-  public Crmactivity correctedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public Crmactivity correctedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
     return this;
   }
 
    /**
    * Čas poslední opravy [persistentní položka]
-   * @return correctedAtDATE
+   * @return correctedatdate
   **/
   @ApiModelProperty(example = "null", value = "Čas poslední opravy [persistentní položka]")
-  public DateTime getCorrectedAtDATE() {
-    return correctedAtDATE;
+  public DateTime getCorrectedatdate() {
+    return correctedatdate;
   }
 
-  public void setCorrectedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public void setCorrectedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
   }
 
-  public Crmactivity activityAreaID(String activityAreaID) {
-    this.activityAreaID = activityAreaID;
+  public Crmactivity activityareaId(String activityareaId) {
+    this.activityareaId = activityareaId;
     return this;
   }
 
    /**
-   * Oblast aktivit; ID objektu Oblast aktivity [persistentní položka]
-   * @return activityAreaID
+   * oblast aktivit; id objektu oblast aktivity [persistentní položka]
+   * @return activityareaId
   **/
-  @ApiModelProperty(example = "null", value = "Oblast aktivit; ID objektu Oblast aktivity [persistentní položka]")
-  public String getActivityAreaID() {
-    return activityAreaID;
+  @ApiModelProperty(example = "null", value = "oblast aktivit; id objektu oblast aktivity [persistentní položka]")
+  public String getActivityareaId() {
+    return activityareaId;
   }
 
-  public void setActivityAreaID(String activityAreaID) {
-    this.activityAreaID = activityAreaID;
+  public void setActivityareaId(String activityareaId) {
+    this.activityareaId = activityareaId;
   }
 
-  public Crmactivity processIsRequired(Boolean processIsRequired) {
-    this.processIsRequired = processIsRequired;
+  public Crmactivity processisrequired(Boolean processisrequired) {
+    this.processisrequired = processisrequired;
     return this;
   }
 
    /**
-   * Proces je povinný [persistentní položka]
-   * @return processIsRequired
+   * proces je povinný [persistentní položka]
+   * @return processisrequired
   **/
-  @ApiModelProperty(example = "null", value = "Proces je povinný [persistentní položka]")
-  public Boolean getProcessIsRequired() {
-    return processIsRequired;
+  @ApiModelProperty(example = "null", value = "proces je povinný [persistentní položka]")
+  public Boolean getProcessisrequired() {
+    return processisrequired;
   }
 
-  public void setProcessIsRequired(Boolean processIsRequired) {
-    this.processIsRequired = processIsRequired;
+  public void setProcessisrequired(Boolean processisrequired) {
+    this.processisrequired = processisrequired;
   }
 
-  public Crmactivity blockActivityArea(Boolean blockActivityArea) {
-    this.blockActivityArea = blockActivityArea;
+  public Crmactivity blockactivityarea(Boolean blockactivityarea) {
+    this.blockactivityarea = blockactivityarea;
     return this;
   }
 
    /**
-   * Nepovolit editaci oblasti aktivity
-   * @return blockActivityArea
+   * nepovolit editaci oblasti aktivity
+   * @return blockactivityarea
   **/
-  @ApiModelProperty(example = "null", value = "Nepovolit editaci oblasti aktivity")
-  public Boolean getBlockActivityArea() {
-    return blockActivityArea;
+  @ApiModelProperty(example = "null", value = "nepovolit editaci oblasti aktivity")
+  public Boolean getBlockactivityarea() {
+    return blockactivityarea;
   }
 
-  public void setBlockActivityArea(Boolean blockActivityArea) {
-    this.blockActivityArea = blockActivityArea;
+  public void setBlockactivityarea(Boolean blockactivityarea) {
+    this.blockactivityarea = blockactivityarea;
   }
 
-  public Crmactivity blockActivityType(Boolean blockActivityType) {
-    this.blockActivityType = blockActivityType;
+  public Crmactivity blockactivitytype(Boolean blockactivitytype) {
+    this.blockactivitytype = blockactivitytype;
     return this;
   }
 
    /**
-   * Nepovolit editaci typu aktivity
-   * @return blockActivityType
+   * nepovolit editaci typu aktivity
+   * @return blockactivitytype
   **/
-  @ApiModelProperty(example = "null", value = "Nepovolit editaci typu aktivity")
-  public Boolean getBlockActivityType() {
-    return blockActivityType;
+  @ApiModelProperty(example = "null", value = "nepovolit editaci typu aktivity")
+  public Boolean getBlockactivitytype() {
+    return blockactivitytype;
   }
 
-  public void setBlockActivityType(Boolean blockActivityType) {
-    this.blockActivityType = blockActivityType;
+  public void setBlockactivitytype(Boolean blockactivitytype) {
+    this.blockactivitytype = blockactivitytype;
   }
 
-  public Crmactivity resolvedByID(String resolvedByID) {
-    this.resolvedByID = resolvedByID;
+  public Crmactivity resolvedbyId(String resolvedbyId) {
+    this.resolvedbyId = resolvedbyId;
     return this;
   }
 
    /**
-   * Vyřešil; ID objektu Uživatel [persistentní položka]
-   * @return resolvedByID
+   * vyřešil; id objektu uživatel [persistentní položka]
+   * @return resolvedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vyřešil; ID objektu Uživatel [persistentní položka]")
-  public String getResolvedByID() {
-    return resolvedByID;
+  @ApiModelProperty(example = "null", value = "vyřešil; id objektu uživatel [persistentní položka]")
+  public String getResolvedbyId() {
+    return resolvedbyId;
   }
 
-  public void setResolvedByID(String resolvedByID) {
-    this.resolvedByID = resolvedByID;
+  public void setResolvedbyId(String resolvedbyId) {
+    this.resolvedbyId = resolvedbyId;
   }
 
-  public Crmactivity newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Crmactivity newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Crmactivity newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Crmactivity newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Crmactivity firmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public Crmactivity firmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
     return this;
   }
 
    /**
-   * Provozovna; ID objektu Provozovna [persistentní položka]
-   * @return firmOfficeID
+   * provozovna; id objektu provozovna [persistentní položka]
+   * @return firmofficeId
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna; ID objektu Provozovna [persistentní položka]")
-  public String getFirmOfficeID() {
-    return firmOfficeID;
+  @ApiModelProperty(example = "null", value = "provozovna; id objektu provozovna [persistentní položka]")
+  public String getFirmofficeId() {
+    return firmofficeId;
   }
 
-  public void setFirmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public void setFirmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
   }
 
-  public Crmactivity scheduledWorkingTimeInHours(Double scheduledWorkingTimeInHours) {
-    this.scheduledWorkingTimeInHours = scheduledWorkingTimeInHours;
+  public Crmactivity scheduledworkingtimeinhours(Double scheduledworkingtimeinhours) {
+    this.scheduledworkingtimeinhours = scheduledworkingtimeinhours;
     return this;
   }
 
    /**
-   * Prac.čas plánovaný
-   * @return scheduledWorkingTimeInHours
+   * prac.čas plánovaný
+   * @return scheduledworkingtimeinhours
   **/
-  @ApiModelProperty(example = "null", value = "Prac.čas plánovaný")
-  public Double getScheduledWorkingTimeInHours() {
-    return scheduledWorkingTimeInHours;
+  @ApiModelProperty(example = "null", value = "prac.čas plánovaný")
+  public Double getScheduledworkingtimeinhours() {
+    return scheduledworkingtimeinhours;
   }
 
-  public void setScheduledWorkingTimeInHours(Double scheduledWorkingTimeInHours) {
-    this.scheduledWorkingTimeInHours = scheduledWorkingTimeInHours;
+  public void setScheduledworkingtimeinhours(Double scheduledworkingtimeinhours) {
+    this.scheduledworkingtimeinhours = scheduledworkingtimeinhours;
   }
 
-  public Crmactivity realWorkingTimeInHours(Double realWorkingTimeInHours) {
-    this.realWorkingTimeInHours = realWorkingTimeInHours;
+  public Crmactivity realworkingtimeinhours(Double realworkingtimeinhours) {
+    this.realworkingtimeinhours = realworkingtimeinhours;
     return this;
   }
 
    /**
-   * Prac.čas skutečný
-   * @return realWorkingTimeInHours
+   * prac.čas skutečný
+   * @return realworkingtimeinhours
   **/
-  @ApiModelProperty(example = "null", value = "Prac.čas skutečný")
-  public Double getRealWorkingTimeInHours() {
-    return realWorkingTimeInHours;
+  @ApiModelProperty(example = "null", value = "prac.čas skutečný")
+  public Double getRealworkingtimeinhours() {
+    return realworkingtimeinhours;
   }
 
-  public void setRealWorkingTimeInHours(Double realWorkingTimeInHours) {
-    this.realWorkingTimeInHours = realWorkingTimeInHours;
+  public void setRealworkingtimeinhours(Double realworkingtimeinhours) {
+    this.realworkingtimeinhours = realworkingtimeinhours;
   }
 
-  public Crmactivity scheduledOverTime(Double scheduledOverTime) {
-    this.scheduledOverTime = scheduledOverTime;
+  public Crmactivity scheduledovertime(Double scheduledovertime) {
+    this.scheduledovertime = scheduledovertime;
     return this;
   }
 
    /**
-   * Plánovaný přesčas [persistentní položka]
-   * @return scheduledOverTime
+   * plánovaný přesčas [persistentní položka]
+   * @return scheduledovertime
   **/
-  @ApiModelProperty(example = "null", value = "Plánovaný přesčas [persistentní položka]")
-  public Double getScheduledOverTime() {
-    return scheduledOverTime;
+  @ApiModelProperty(example = "null", value = "plánovaný přesčas [persistentní položka]")
+  public Double getScheduledovertime() {
+    return scheduledovertime;
   }
 
-  public void setScheduledOverTime(Double scheduledOverTime) {
-    this.scheduledOverTime = scheduledOverTime;
+  public void setScheduledovertime(Double scheduledovertime) {
+    this.scheduledovertime = scheduledovertime;
   }
 
-  public Crmactivity realOverTime(Double realOverTime) {
-    this.realOverTime = realOverTime;
+  public Crmactivity realovertime(Double realovertime) {
+    this.realovertime = realovertime;
     return this;
   }
 
    /**
-   * Skutečný přesčas [persistentní položka]
-   * @return realOverTime
+   * skutečný přesčas [persistentní položka]
+   * @return realovertime
   **/
-  @ApiModelProperty(example = "null", value = "Skutečný přesčas [persistentní položka]")
-  public Double getRealOverTime() {
-    return realOverTime;
+  @ApiModelProperty(example = "null", value = "skutečný přesčas [persistentní položka]")
+  public Double getRealovertime() {
+    return realovertime;
   }
 
-  public void setRealOverTime(Double realOverTime) {
-    this.realOverTime = realOverTime;
+  public void setRealovertime(Double realovertime) {
+    this.realovertime = realovertime;
   }
 
-  public Crmactivity scheduledTotalWorkingTime(Double scheduledTotalWorkingTime) {
-    this.scheduledTotalWorkingTime = scheduledTotalWorkingTime;
+  public Crmactivity scheduledtotalworkingtime(Double scheduledtotalworkingtime) {
+    this.scheduledtotalworkingtime = scheduledtotalworkingtime;
     return this;
   }
 
    /**
-   * Celk.prac.čas plánovaný
-   * @return scheduledTotalWorkingTime
+   * celk.prac.čas plánovaný
+   * @return scheduledtotalworkingtime
   **/
-  @ApiModelProperty(example = "null", value = "Celk.prac.čas plánovaný")
-  public Double getScheduledTotalWorkingTime() {
-    return scheduledTotalWorkingTime;
+  @ApiModelProperty(example = "null", value = "celk.prac.čas plánovaný")
+  public Double getScheduledtotalworkingtime() {
+    return scheduledtotalworkingtime;
   }
 
-  public void setScheduledTotalWorkingTime(Double scheduledTotalWorkingTime) {
-    this.scheduledTotalWorkingTime = scheduledTotalWorkingTime;
+  public void setScheduledtotalworkingtime(Double scheduledtotalworkingtime) {
+    this.scheduledtotalworkingtime = scheduledtotalworkingtime;
   }
 
-  public Crmactivity realTotalWorkingTime(Double realTotalWorkingTime) {
-    this.realTotalWorkingTime = realTotalWorkingTime;
+  public Crmactivity realtotalworkingtime(Double realtotalworkingtime) {
+    this.realtotalworkingtime = realtotalworkingtime;
     return this;
   }
 
    /**
-   * Celk.prac.čas skutečný
-   * @return realTotalWorkingTime
+   * celk.prac.čas skutečný
+   * @return realtotalworkingtime
   **/
-  @ApiModelProperty(example = "null", value = "Celk.prac.čas skutečný")
-  public Double getRealTotalWorkingTime() {
-    return realTotalWorkingTime;
+  @ApiModelProperty(example = "null", value = "celk.prac.čas skutečný")
+  public Double getRealtotalworkingtime() {
+    return realtotalworkingtime;
   }
 
-  public void setRealTotalWorkingTime(Double realTotalWorkingTime) {
-    this.realTotalWorkingTime = realTotalWorkingTime;
+  public void setRealtotalworkingtime(Double realtotalworkingtime) {
+    this.realtotalworkingtime = realtotalworkingtime;
   }
 
-  public Crmactivity pictureID(Crmactivity pictureID) {
-    this.pictureID = pictureID;
+  public Crmactivity pictureId(Crmactivity pictureId) {
+    this.pictureId = pictureId;
     return this;
   }
 
    /**
-   * Get pictureID
-   * @return pictureID
+   * Get pictureId
+   * @return pictureId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Crmactivity getPictureID() {
-    return pictureID;
+  public Crmactivity getPictureId() {
+    return pictureId;
   }
 
-  public void setPictureID(Crmactivity pictureID) {
-    this.pictureID = pictureID;
+  public void setPictureId(Crmactivity pictureId) {
+    this.pictureId = pictureId;
   }
 
-  public Crmactivity financialVolume(Double financialVolume) {
-    this.financialVolume = financialVolume;
+  public Crmactivity financialvolume(Double financialvolume) {
+    this.financialvolume = financialvolume;
     return this;
   }
 
    /**
-   * Finanční objem [persistentní položka]
-   * @return financialVolume
+   * finanční objem [persistentní položka]
+   * @return financialvolume
   **/
-  @ApiModelProperty(example = "null", value = "Finanční objem [persistentní položka]")
-  public Double getFinancialVolume() {
-    return financialVolume;
+  @ApiModelProperty(example = "null", value = "finanční objem [persistentní položka]")
+  public Double getFinancialvolume() {
+    return financialvolume;
   }
 
-  public void setFinancialVolume(Double financialVolume) {
-    this.financialVolume = financialVolume;
+  public void setFinancialvolume(Double financialvolume) {
+    this.financialvolume = financialvolume;
   }
 
-  public Crmactivity nextContactDATE(DateTime nextContactDATE) {
-    this.nextContactDATE = nextContactDATE;
+  public Crmactivity nextcontactdate(DateTime nextcontactdate) {
+    this.nextcontactdate = nextcontactdate;
     return this;
   }
 
    /**
-   * Datum příštího kontaktu [persistentní položka]
-   * @return nextContactDATE
+   * datum příštího kontaktu [persistentní položka]
+   * @return nextcontactdate
   **/
-  @ApiModelProperty(example = "null", value = "Datum příštího kontaktu [persistentní položka]")
-  public DateTime getNextContactDATE() {
-    return nextContactDATE;
+  @ApiModelProperty(example = "null", value = "datum příštího kontaktu [persistentní položka]")
+  public DateTime getNextcontactdate() {
+    return nextcontactdate;
   }
 
-  public void setNextContactDATE(DateTime nextContactDATE) {
-    this.nextContactDATE = nextContactDATE;
+  public void setNextcontactdate(DateTime nextcontactdate) {
+    this.nextcontactdate = nextcontactdate;
   }
 
-  public Crmactivity pipeLineStatusID(String pipeLineStatusID) {
-    this.pipeLineStatusID = pipeLineStatusID;
+  public Crmactivity pipelinestatusId(String pipelinestatusId) {
+    this.pipelinestatusId = pipelinestatusId;
     return this;
   }
 
    /**
-   * Pravděpodobnost úspěchu; ID objektu Stav v pipe-line [persistentní položka]
-   * @return pipeLineStatusID
+   * pravděpodobnost úspěchu; id objektu stav v pipe-line [persistentní položka]
+   * @return pipelinestatusId
   **/
-  @ApiModelProperty(example = "null", value = "Pravděpodobnost úspěchu; ID objektu Stav v pipe-line [persistentní položka]")
-  public String getPipeLineStatusID() {
-    return pipeLineStatusID;
+  @ApiModelProperty(example = "null", value = "pravděpodobnost úspěchu; id objektu stav v pipe-line [persistentní položka]")
+  public String getPipelinestatusId() {
+    return pipelinestatusId;
   }
 
-  public void setPipeLineStatusID(String pipeLineStatusID) {
-    this.pipeLineStatusID = pipeLineStatusID;
+  public void setPipelinestatusId(String pipelinestatusId) {
+    this.pipelinestatusId = pipelinestatusId;
   }
 
-  public Crmactivity progressID(String progressID) {
-    this.progressID = progressID;
+  public Crmactivity progressId(String progressId) {
+    this.progressId = progressId;
     return this;
   }
 
    /**
-   * Krok procesu; ID objektu Krok procesu [persistentní položka]
-   * @return progressID
+   * krok procesu; id objektu krok procesu [persistentní položka]
+   * @return progressId
   **/
-  @ApiModelProperty(example = "null", value = "Krok procesu; ID objektu Krok procesu [persistentní položka]")
-  public String getProgressID() {
-    return progressID;
+  @ApiModelProperty(example = "null", value = "krok procesu; id objektu krok procesu [persistentní položka]")
+  public String getProgressId() {
+    return progressId;
   }
 
-  public void setProgressID(String progressID) {
-    this.progressID = progressID;
+  public void setProgressId(String progressId) {
+    this.progressId = progressId;
   }
 
-  public Crmactivity tradeDateDATE(DateTime tradeDateDATE) {
-    this.tradeDateDATE = tradeDateDATE;
+  public Crmactivity tradedatedate(DateTime tradedatedate) {
+    this.tradedatedate = tradedatedate;
     return this;
   }
 
    /**
-   * Plánované datum uzavř. obchodu [persistentní položka]
-   * @return tradeDateDATE
+   * plánované datum uzavř. obchodu [persistentní položka]
+   * @return tradedatedate
   **/
-  @ApiModelProperty(example = "null", value = "Plánované datum uzavř. obchodu [persistentní položka]")
-  public DateTime getTradeDateDATE() {
-    return tradeDateDATE;
+  @ApiModelProperty(example = "null", value = "plánované datum uzavř. obchodu [persistentní položka]")
+  public DateTime getTradedatedate() {
+    return tradedatedate;
   }
 
-  public void setTradeDateDATE(DateTime tradeDateDATE) {
-    this.tradeDateDATE = tradeDateDATE;
+  public void setTradedatedate(DateTime tradedatedate) {
+    this.tradedatedate = tradedatedate;
   }
 
   public Crmactivity pictures(List<Crmactivitypicture> pictures) {
@@ -1163,10 +1199,10 @@ public class Crmactivity   {
   }
 
    /**
-   * Obrázky; kolekce BO Obrázek k CRM aktivitě [nepersistentní položka]
+   * obrázky; kolekce bo obrázek k crm aktivitě [nepersistentní položka]
    * @return pictures
   **/
-  @ApiModelProperty(example = "null", value = "Obrázky; kolekce BO Obrázek k CRM aktivitě [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "obrázky; kolekce bo obrázek k crm aktivitě [nepersistentní položka]")
   public List<Crmactivitypicture> getPictures() {
     return pictures;
   }
@@ -1186,10 +1222,10 @@ public class Crmactivity   {
   }
 
    /**
-   * Účastníci; kolekce BO Účastník na CRM Aktivitě [nepersistentní položka]
+   * Účastníci; kolekce bo Účastník na crm aktivitě [nepersistentní položka]
    * @return participants
   **/
-  @ApiModelProperty(example = "null", value = "Účastníci; kolekce BO Účastník na CRM Aktivitě [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Účastníci; kolekce bo Účastník na crm aktivitě [nepersistentní položka]")
   public List<Crmactivityparticipants> getParticipants() {
     return participants;
   }
@@ -1198,27 +1234,27 @@ public class Crmactivity   {
     this.participants = participants;
   }
 
-  public Crmactivity timeRecords(List<Crmactivityparticipants> timeRecords) {
-    this.timeRecords = timeRecords;
+  public Crmactivity timerecords(List<Crmactivityparticipants> timerecords) {
+    this.timerecords = timerecords;
     return this;
   }
 
-  public Crmactivity addTimeRecordsItem(Crmactivityparticipants timeRecordsItem) {
-    this.timeRecords.add(timeRecordsItem);
+  public Crmactivity addTimerecordsItem(Crmactivityparticipants timerecordsItem) {
+    this.timerecords.add(timerecordsItem);
     return this;
   }
 
    /**
-   * Evidence času; kolekce BO Účastník na CRM Aktivitě [nepersistentní položka]
-   * @return timeRecords
+   * evidence času; kolekce bo Účastník na crm aktivitě [nepersistentní položka]
+   * @return timerecords
   **/
-  @ApiModelProperty(example = "null", value = "Evidence času; kolekce BO Účastník na CRM Aktivitě [nepersistentní položka]")
-  public List<Crmactivityparticipants> getTimeRecords() {
-    return timeRecords;
+  @ApiModelProperty(example = "null", value = "evidence času; kolekce bo Účastník na crm aktivitě [nepersistentní položka]")
+  public List<Crmactivityparticipants> getTimerecords() {
+    return timerecords;
   }
 
-  public void setTimeRecords(List<Crmactivityparticipants> timeRecords) {
-    this.timeRecords = timeRecords;
+  public void setTimerecords(List<Crmactivityparticipants> timerecords) {
+    this.timerecords = timerecords;
   }
 
   public Crmactivity contacts(List<Crmactivitycontact> contacts) {
@@ -1232,10 +1268,10 @@ public class Crmactivity   {
   }
 
    /**
-   * Kontakty; kolekce BO Adresáti [nepersistentní položka]
+   * kontakty; kolekce bo adresáti [nepersistentní položka]
    * @return contacts
   **/
-  @ApiModelProperty(example = "null", value = "Kontakty; kolekce BO Adresáti [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "kontakty; kolekce bo adresáti [nepersistentní položka]")
   public List<Crmactivitycontact> getContacts() {
     return contacts;
   }
@@ -1244,22 +1280,22 @@ public class Crmactivity   {
     this.contacts = contacts;
   }
 
-  public Crmactivity contactNote(String contactNote) {
-    this.contactNote = contactNote;
+  public Crmactivity contactnote(String contactnote) {
+    this.contactnote = contactnote;
     return this;
   }
 
    /**
-   * Poznámka kontaktu [persistentní položka]
-   * @return contactNote
+   * poznámka kontaktu [persistentní položka]
+   * @return contactnote
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka kontaktu [persistentní položka]")
-  public String getContactNote() {
-    return contactNote;
+  @ApiModelProperty(example = "null", value = "poznámka kontaktu [persistentní položka]")
+  public String getContactnote() {
+    return contactnote;
   }
 
-  public void setContactNote(String contactNote) {
-    this.contactNote = contactNote;
+  public void setContactnote(String contactnote) {
+    this.contactnote = contactnote;
   }
 
 
@@ -1272,70 +1308,70 @@ public class Crmactivity   {
       return false;
     }
     Crmactivity crmactivity = (Crmactivity) o;
-    return Objects.equals(this.displayName, crmactivity.displayName) &&
-        Objects.equals(this.ID, crmactivity.ID) &&
-        Objects.equals(this.classID, crmactivity.classID) &&
-        Objects.equals(this.objVersion, crmactivity.objVersion) &&
-        Objects.equals(this.actQueueID, crmactivity.actQueueID) &&
-        Objects.equals(this.periodID, crmactivity.periodID) &&
-        Objects.equals(this.ordNumber, crmactivity.ordNumber) &&
-        Objects.equals(this.sourceID, crmactivity.sourceID) &&
-        Objects.equals(this.activityTypeID, crmactivity.activityTypeID) &&
-        Objects.equals(this.activityProcessID, crmactivity.activityProcessID) &&
+    return Objects.equals(this.displayname, crmactivity.displayname) &&
+        Objects.equals(this.id, crmactivity.id) &&
+        Objects.equals(this.classid, crmactivity.classid) &&
+        Objects.equals(this.objversion, crmactivity.objversion) &&
+        Objects.equals(this.actqueueId, crmactivity.actqueueId) &&
+        Objects.equals(this.periodId, crmactivity.periodId) &&
+        Objects.equals(this.ordnumber, crmactivity.ordnumber) &&
+        Objects.equals(this.sourceId, crmactivity.sourceId) &&
+        Objects.equals(this.activitytypeId, crmactivity.activitytypeId) &&
+        Objects.equals(this.activityprocessId, crmactivity.activityprocessId) &&
         Objects.equals(this.status, crmactivity.status) &&
         Objects.equals(this.priority, crmactivity.priority) &&
-        Objects.equals(this.isPrivate, crmactivity.isPrivate) &&
-        Objects.equals(this.createdByID, crmactivity.createdByID) &&
-        Objects.equals(this.solverRoleID, crmactivity.solverRoleID) &&
-        Objects.equals(this.solverUserID, crmactivity.solverUserID) &&
-        Objects.equals(this.sheduledStartDATE, crmactivity.sheduledStartDATE) &&
-        Objects.equals(this.sheduledEndDATE, crmactivity.sheduledEndDATE) &&
-        Objects.equals(this.sheduledDurationDATE, crmactivity.sheduledDurationDATE) &&
-        Objects.equals(this.realStartDATE, crmactivity.realStartDATE) &&
-        Objects.equals(this.realEndDATE, crmactivity.realEndDATE) &&
-        Objects.equals(this.realDurationDATE, crmactivity.realDurationDATE) &&
+        Objects.equals(this.isprivate, crmactivity.isprivate) &&
+        Objects.equals(this.createdbyId, crmactivity.createdbyId) &&
+        Objects.equals(this.solverroleId, crmactivity.solverroleId) &&
+        Objects.equals(this.solveruserId, crmactivity.solveruserId) &&
+        Objects.equals(this.sheduledstartdate, crmactivity.sheduledstartdate) &&
+        Objects.equals(this.sheduledenddate, crmactivity.sheduledenddate) &&
+        Objects.equals(this.sheduleddurationdate, crmactivity.sheduleddurationdate) &&
+        Objects.equals(this.realstartdate, crmactivity.realstartdate) &&
+        Objects.equals(this.realenddate, crmactivity.realenddate) &&
+        Objects.equals(this.realdurationdate, crmactivity.realdurationdate) &&
         Objects.equals(this.subject, crmactivity.subject) &&
         Objects.equals(this.description, crmactivity.description) &&
         Objects.equals(this.answer, crmactivity.answer) &&
-        Objects.equals(this.firmID, crmactivity.firmID) &&
-        Objects.equals(this.personID, crmactivity.personID) &&
-        Objects.equals(this.busOrderID, crmactivity.busOrderID) &&
-        Objects.equals(this.busTransactionID, crmactivity.busTransactionID) &&
-        Objects.equals(this.divisionID, crmactivity.divisionID) &&
-        Objects.equals(this.productID, crmactivity.productID) &&
-        Objects.equals(this.busProjectID, crmactivity.busProjectID) &&
-        Objects.equals(this.createdAtDATE, crmactivity.createdAtDATE) &&
-        Objects.equals(this.correctedAtDATE, crmactivity.correctedAtDATE) &&
-        Objects.equals(this.activityAreaID, crmactivity.activityAreaID) &&
-        Objects.equals(this.processIsRequired, crmactivity.processIsRequired) &&
-        Objects.equals(this.blockActivityArea, crmactivity.blockActivityArea) &&
-        Objects.equals(this.blockActivityType, crmactivity.blockActivityType) &&
-        Objects.equals(this.resolvedByID, crmactivity.resolvedByID) &&
-        Objects.equals(this.newRelatedType, crmactivity.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, crmactivity.newRelatedDocumentID) &&
-        Objects.equals(this.firmOfficeID, crmactivity.firmOfficeID) &&
-        Objects.equals(this.scheduledWorkingTimeInHours, crmactivity.scheduledWorkingTimeInHours) &&
-        Objects.equals(this.realWorkingTimeInHours, crmactivity.realWorkingTimeInHours) &&
-        Objects.equals(this.scheduledOverTime, crmactivity.scheduledOverTime) &&
-        Objects.equals(this.realOverTime, crmactivity.realOverTime) &&
-        Objects.equals(this.scheduledTotalWorkingTime, crmactivity.scheduledTotalWorkingTime) &&
-        Objects.equals(this.realTotalWorkingTime, crmactivity.realTotalWorkingTime) &&
-        Objects.equals(this.pictureID, crmactivity.pictureID) &&
-        Objects.equals(this.financialVolume, crmactivity.financialVolume) &&
-        Objects.equals(this.nextContactDATE, crmactivity.nextContactDATE) &&
-        Objects.equals(this.pipeLineStatusID, crmactivity.pipeLineStatusID) &&
-        Objects.equals(this.progressID, crmactivity.progressID) &&
-        Objects.equals(this.tradeDateDATE, crmactivity.tradeDateDATE) &&
+        Objects.equals(this.firmId, crmactivity.firmId) &&
+        Objects.equals(this.personId, crmactivity.personId) &&
+        Objects.equals(this.busorderId, crmactivity.busorderId) &&
+        Objects.equals(this.bustransactionId, crmactivity.bustransactionId) &&
+        Objects.equals(this.divisionId, crmactivity.divisionId) &&
+        Objects.equals(this.productId, crmactivity.productId) &&
+        Objects.equals(this.busprojectId, crmactivity.busprojectId) &&
+        Objects.equals(this.createdatdate, crmactivity.createdatdate) &&
+        Objects.equals(this.correctedatdate, crmactivity.correctedatdate) &&
+        Objects.equals(this.activityareaId, crmactivity.activityareaId) &&
+        Objects.equals(this.processisrequired, crmactivity.processisrequired) &&
+        Objects.equals(this.blockactivityarea, crmactivity.blockactivityarea) &&
+        Objects.equals(this.blockactivitytype, crmactivity.blockactivitytype) &&
+        Objects.equals(this.resolvedbyId, crmactivity.resolvedbyId) &&
+        Objects.equals(this.newrelatedtype, crmactivity.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, crmactivity.newrelateddocumentId) &&
+        Objects.equals(this.firmofficeId, crmactivity.firmofficeId) &&
+        Objects.equals(this.scheduledworkingtimeinhours, crmactivity.scheduledworkingtimeinhours) &&
+        Objects.equals(this.realworkingtimeinhours, crmactivity.realworkingtimeinhours) &&
+        Objects.equals(this.scheduledovertime, crmactivity.scheduledovertime) &&
+        Objects.equals(this.realovertime, crmactivity.realovertime) &&
+        Objects.equals(this.scheduledtotalworkingtime, crmactivity.scheduledtotalworkingtime) &&
+        Objects.equals(this.realtotalworkingtime, crmactivity.realtotalworkingtime) &&
+        Objects.equals(this.pictureId, crmactivity.pictureId) &&
+        Objects.equals(this.financialvolume, crmactivity.financialvolume) &&
+        Objects.equals(this.nextcontactdate, crmactivity.nextcontactdate) &&
+        Objects.equals(this.pipelinestatusId, crmactivity.pipelinestatusId) &&
+        Objects.equals(this.progressId, crmactivity.progressId) &&
+        Objects.equals(this.tradedatedate, crmactivity.tradedatedate) &&
         Objects.equals(this.pictures, crmactivity.pictures) &&
         Objects.equals(this.participants, crmactivity.participants) &&
-        Objects.equals(this.timeRecords, crmactivity.timeRecords) &&
+        Objects.equals(this.timerecords, crmactivity.timerecords) &&
         Objects.equals(this.contacts, crmactivity.contacts) &&
-        Objects.equals(this.contactNote, crmactivity.contactNote);
+        Objects.equals(this.contactnote, crmactivity.contactnote);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, actQueueID, periodID, ordNumber, sourceID, activityTypeID, activityProcessID, status, priority, isPrivate, createdByID, solverRoleID, solverUserID, sheduledStartDATE, sheduledEndDATE, sheduledDurationDATE, realStartDATE, realEndDATE, realDurationDATE, subject, description, answer, firmID, personID, busOrderID, busTransactionID, divisionID, productID, busProjectID, createdAtDATE, correctedAtDATE, activityAreaID, processIsRequired, blockActivityArea, blockActivityType, resolvedByID, newRelatedType, newRelatedDocumentID, firmOfficeID, scheduledWorkingTimeInHours, realWorkingTimeInHours, scheduledOverTime, realOverTime, scheduledTotalWorkingTime, realTotalWorkingTime, pictureID, financialVolume, nextContactDATE, pipeLineStatusID, progressID, tradeDateDATE, pictures, participants, timeRecords, contacts, contactNote);
+    return Objects.hash(displayname, id, classid, objversion, actqueueId, periodId, ordnumber, sourceId, activitytypeId, activityprocessId, status, priority, isprivate, createdbyId, solverroleId, solveruserId, sheduledstartdate, sheduledenddate, sheduleddurationdate, realstartdate, realenddate, realdurationdate, subject, description, answer, firmId, personId, busorderId, bustransactionId, divisionId, productId, busprojectId, createdatdate, correctedatdate, activityareaId, processisrequired, blockactivityarea, blockactivitytype, resolvedbyId, newrelatedtype, newrelateddocumentId, firmofficeId, scheduledworkingtimeinhours, realworkingtimeinhours, scheduledovertime, realovertime, scheduledtotalworkingtime, realtotalworkingtime, pictureId, financialvolume, nextcontactdate, pipelinestatusId, progressId, tradedatedate, pictures, participants, timerecords, contacts, contactnote);
   }
 
   @Override
@@ -1343,65 +1379,65 @@ public class Crmactivity   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Crmactivity {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    actQueueID: ").append(toIndentedString(actQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    sourceID: ").append(toIndentedString(sourceID)).append("\n");
-    sb.append("    activityTypeID: ").append(toIndentedString(activityTypeID)).append("\n");
-    sb.append("    activityProcessID: ").append(toIndentedString(activityProcessID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    actqueueId: ").append(toIndentedString(actqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    sourceId: ").append(toIndentedString(sourceId)).append("\n");
+    sb.append("    activitytypeId: ").append(toIndentedString(activitytypeId)).append("\n");
+    sb.append("    activityprocessId: ").append(toIndentedString(activityprocessId)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
-    sb.append("    isPrivate: ").append(toIndentedString(isPrivate)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    solverRoleID: ").append(toIndentedString(solverRoleID)).append("\n");
-    sb.append("    solverUserID: ").append(toIndentedString(solverUserID)).append("\n");
-    sb.append("    sheduledStartDATE: ").append(toIndentedString(sheduledStartDATE)).append("\n");
-    sb.append("    sheduledEndDATE: ").append(toIndentedString(sheduledEndDATE)).append("\n");
-    sb.append("    sheduledDurationDATE: ").append(toIndentedString(sheduledDurationDATE)).append("\n");
-    sb.append("    realStartDATE: ").append(toIndentedString(realStartDATE)).append("\n");
-    sb.append("    realEndDATE: ").append(toIndentedString(realEndDATE)).append("\n");
-    sb.append("    realDurationDATE: ").append(toIndentedString(realDurationDATE)).append("\n");
+    sb.append("    isprivate: ").append(toIndentedString(isprivate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    solverroleId: ").append(toIndentedString(solverroleId)).append("\n");
+    sb.append("    solveruserId: ").append(toIndentedString(solveruserId)).append("\n");
+    sb.append("    sheduledstartdate: ").append(toIndentedString(sheduledstartdate)).append("\n");
+    sb.append("    sheduledenddate: ").append(toIndentedString(sheduledenddate)).append("\n");
+    sb.append("    sheduleddurationdate: ").append(toIndentedString(sheduleddurationdate)).append("\n");
+    sb.append("    realstartdate: ").append(toIndentedString(realstartdate)).append("\n");
+    sb.append("    realenddate: ").append(toIndentedString(realenddate)).append("\n");
+    sb.append("    realdurationdate: ").append(toIndentedString(realdurationdate)).append("\n");
     sb.append("    subject: ").append(toIndentedString(subject)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    answer: ").append(toIndentedString(answer)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    productID: ").append(toIndentedString(productID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    createdAtDATE: ").append(toIndentedString(createdAtDATE)).append("\n");
-    sb.append("    correctedAtDATE: ").append(toIndentedString(correctedAtDATE)).append("\n");
-    sb.append("    activityAreaID: ").append(toIndentedString(activityAreaID)).append("\n");
-    sb.append("    processIsRequired: ").append(toIndentedString(processIsRequired)).append("\n");
-    sb.append("    blockActivityArea: ").append(toIndentedString(blockActivityArea)).append("\n");
-    sb.append("    blockActivityType: ").append(toIndentedString(blockActivityType)).append("\n");
-    sb.append("    resolvedByID: ").append(toIndentedString(resolvedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    firmOfficeID: ").append(toIndentedString(firmOfficeID)).append("\n");
-    sb.append("    scheduledWorkingTimeInHours: ").append(toIndentedString(scheduledWorkingTimeInHours)).append("\n");
-    sb.append("    realWorkingTimeInHours: ").append(toIndentedString(realWorkingTimeInHours)).append("\n");
-    sb.append("    scheduledOverTime: ").append(toIndentedString(scheduledOverTime)).append("\n");
-    sb.append("    realOverTime: ").append(toIndentedString(realOverTime)).append("\n");
-    sb.append("    scheduledTotalWorkingTime: ").append(toIndentedString(scheduledTotalWorkingTime)).append("\n");
-    sb.append("    realTotalWorkingTime: ").append(toIndentedString(realTotalWorkingTime)).append("\n");
-    sb.append("    pictureID: ").append(toIndentedString(pictureID)).append("\n");
-    sb.append("    financialVolume: ").append(toIndentedString(financialVolume)).append("\n");
-    sb.append("    nextContactDATE: ").append(toIndentedString(nextContactDATE)).append("\n");
-    sb.append("    pipeLineStatusID: ").append(toIndentedString(pipeLineStatusID)).append("\n");
-    sb.append("    progressID: ").append(toIndentedString(progressID)).append("\n");
-    sb.append("    tradeDateDATE: ").append(toIndentedString(tradeDateDATE)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    createdatdate: ").append(toIndentedString(createdatdate)).append("\n");
+    sb.append("    correctedatdate: ").append(toIndentedString(correctedatdate)).append("\n");
+    sb.append("    activityareaId: ").append(toIndentedString(activityareaId)).append("\n");
+    sb.append("    processisrequired: ").append(toIndentedString(processisrequired)).append("\n");
+    sb.append("    blockactivityarea: ").append(toIndentedString(blockactivityarea)).append("\n");
+    sb.append("    blockactivitytype: ").append(toIndentedString(blockactivitytype)).append("\n");
+    sb.append("    resolvedbyId: ").append(toIndentedString(resolvedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    firmofficeId: ").append(toIndentedString(firmofficeId)).append("\n");
+    sb.append("    scheduledworkingtimeinhours: ").append(toIndentedString(scheduledworkingtimeinhours)).append("\n");
+    sb.append("    realworkingtimeinhours: ").append(toIndentedString(realworkingtimeinhours)).append("\n");
+    sb.append("    scheduledovertime: ").append(toIndentedString(scheduledovertime)).append("\n");
+    sb.append("    realovertime: ").append(toIndentedString(realovertime)).append("\n");
+    sb.append("    scheduledtotalworkingtime: ").append(toIndentedString(scheduledtotalworkingtime)).append("\n");
+    sb.append("    realtotalworkingtime: ").append(toIndentedString(realtotalworkingtime)).append("\n");
+    sb.append("    pictureId: ").append(toIndentedString(pictureId)).append("\n");
+    sb.append("    financialvolume: ").append(toIndentedString(financialvolume)).append("\n");
+    sb.append("    nextcontactdate: ").append(toIndentedString(nextcontactdate)).append("\n");
+    sb.append("    pipelinestatusId: ").append(toIndentedString(pipelinestatusId)).append("\n");
+    sb.append("    progressId: ").append(toIndentedString(progressId)).append("\n");
+    sb.append("    tradedatedate: ").append(toIndentedString(tradedatedate)).append("\n");
     sb.append("    pictures: ").append(toIndentedString(pictures)).append("\n");
     sb.append("    participants: ").append(toIndentedString(participants)).append("\n");
-    sb.append("    timeRecords: ").append(toIndentedString(timeRecords)).append("\n");
+    sb.append("    timerecords: ").append(toIndentedString(timerecords)).append("\n");
     sb.append("    contacts: ").append(toIndentedString(contacts)).append("\n");
-    sb.append("    contactNote: ").append(toIndentedString(contactNote)).append("\n");
+    sb.append("    contactnote: ").append(toIndentedString(contactnote)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,102 +37,138 @@ import java.util.Objects;
 /**
  * Wagenotice
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wagenotice   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Wagenoticeemployee> rows = new ArrayList<Wagenoticeemployee>();
 
-  @SerializedName("Repeated")
+  @SerializedName("repeated")
   private Boolean repeated = null;
 
-  @SerializedName("NoticeText")
-  private String noticeText = null;
+  @SerializedName("noticetext")
+  private String noticetext = null;
 
-  @SerializedName("PeriodType")
-  private Integer periodType = null;
+  @SerializedName("periodtype")
+  private Integer periodtype = null;
 
-  @SerializedName("PeriodLength")
-  private Integer periodLength = null;
+  @SerializedName("periodlength")
+  private Integer periodlength = null;
 
-  @SerializedName("DeadLine$DATE")
-  private DateTime deadLineDATE = null;
+  @SerializedName("deadline$date")
+  private DateTime deadlinedate = null;
 
-  @SerializedName("TaskClosedDate$DATE")
-  private DateTime taskClosedDateDATE = null;
+  @SerializedName("taskcloseddate$date")
+  private DateTime taskcloseddatedate = null;
 
-  @SerializedName("TaskClosed")
-  private Boolean taskClosed = null;
+  @SerializedName("taskclosed")
+  private Boolean taskclosed = null;
 
-  @SerializedName("WageNoticeType_ID")
-  private String wageNoticeTypeID = null;
+  @SerializedName("wagenoticetype_id")
+  private String wagenoticetypeId = null;
 
-  @SerializedName("TaskOwner_ID")
-  private String taskOwnerID = null;
+  @SerializedName("taskowner_id")
+  private String taskownerId = null;
 
-  @SerializedName("TaskOwnerRole_ID")
-  private String taskOwnerRoleID = null;
+  @SerializedName("taskownerrole_id")
+  private String taskownerroleId = null;
 
-  @SerializedName("FixedDate")
-  private Boolean fixedDate = null;
+  @SerializedName("fixeddate")
+  private Boolean fixeddate = null;
 
-  @SerializedName("RepetitionDay")
-  private Integer repetitionDay = null;
+  @SerializedName("repetitionday")
+  private Integer repetitionday = null;
 
-  @SerializedName("RepetitionMonth")
-  private Integer repetitionMonth = null;
+  @SerializedName("repetitionmonth")
+  private Integer repetitionmonth = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("ParentText")
-  private String parentText = null;
+  @SerializedName("parenttext")
+  private String parenttext = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Wagenotice displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wagenotice id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wagenotice classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wagenotice objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Wagenotice rows(List<Wagenoticeemployee> rows) {
@@ -146,10 +182,10 @@ public class Wagenotice   {
   }
 
    /**
-   * Řádky; kolekce BO Související zaměstnanec [nepersistentní položka]
+   * Řádky; kolekce bo související zaměstnanec [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Související zaměstnanec [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo související zaměstnanec [nepersistentní položka]")
   public List<Wagenoticeemployee> getRows() {
     return rows;
   }
@@ -164,10 +200,10 @@ public class Wagenotice   {
   }
 
    /**
-   * Opakovat [persistentní položka]
+   * opakovat [persistentní položka]
    * @return repeated
   **/
-  @ApiModelProperty(example = "null", value = "Opakovat [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "opakovat [persistentní položka]")
   public Boolean getRepeated() {
     return repeated;
   }
@@ -176,256 +212,256 @@ public class Wagenotice   {
     this.repeated = repeated;
   }
 
-  public Wagenotice noticeText(String noticeText) {
-    this.noticeText = noticeText;
+  public Wagenotice noticetext(String noticetext) {
+    this.noticetext = noticetext;
     return this;
   }
 
    /**
-   * Popis [persistentní položka]
-   * @return noticeText
+   * popis [persistentní položka]
+   * @return noticetext
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
-  public String getNoticeText() {
-    return noticeText;
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
+  public String getNoticetext() {
+    return noticetext;
   }
 
-  public void setNoticeText(String noticeText) {
-    this.noticeText = noticeText;
+  public void setNoticetext(String noticetext) {
+    this.noticetext = noticetext;
   }
 
-  public Wagenotice periodType(Integer periodType) {
-    this.periodType = periodType;
+  public Wagenotice periodtype(Integer periodtype) {
+    this.periodtype = periodtype;
     return this;
   }
 
    /**
-   * Typ opakování [persistentní položka]
-   * @return periodType
+   * typ opakování [persistentní položka]
+   * @return periodtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ opakování [persistentní položka]")
-  public Integer getPeriodType() {
-    return periodType;
+  @ApiModelProperty(example = "null", value = "typ opakování [persistentní položka]")
+  public Integer getPeriodtype() {
+    return periodtype;
   }
 
-  public void setPeriodType(Integer periodType) {
-    this.periodType = periodType;
+  public void setPeriodtype(Integer periodtype) {
+    this.periodtype = periodtype;
   }
 
-  public Wagenotice periodLength(Integer periodLength) {
-    this.periodLength = periodLength;
+  public Wagenotice periodlength(Integer periodlength) {
+    this.periodlength = periodlength;
     return this;
   }
 
    /**
-   * Délka [persistentní položka]
-   * @return periodLength
+   * délka [persistentní položka]
+   * @return periodlength
   **/
-  @ApiModelProperty(example = "null", value = "Délka [persistentní položka]")
-  public Integer getPeriodLength() {
-    return periodLength;
+  @ApiModelProperty(example = "null", value = "délka [persistentní položka]")
+  public Integer getPeriodlength() {
+    return periodlength;
   }
 
-  public void setPeriodLength(Integer periodLength) {
-    this.periodLength = periodLength;
+  public void setPeriodlength(Integer periodlength) {
+    this.periodlength = periodlength;
   }
 
-  public Wagenotice deadLineDATE(DateTime deadLineDATE) {
-    this.deadLineDATE = deadLineDATE;
+  public Wagenotice deadlinedate(DateTime deadlinedate) {
+    this.deadlinedate = deadlinedate;
     return this;
   }
 
    /**
-   * Termín [persistentní položka]
-   * @return deadLineDATE
+   * termín [persistentní položka]
+   * @return deadlinedate
   **/
-  @ApiModelProperty(example = "null", value = "Termín [persistentní položka]")
-  public DateTime getDeadLineDATE() {
-    return deadLineDATE;
+  @ApiModelProperty(example = "null", value = "termín [persistentní položka]")
+  public DateTime getDeadlinedate() {
+    return deadlinedate;
   }
 
-  public void setDeadLineDATE(DateTime deadLineDATE) {
-    this.deadLineDATE = deadLineDATE;
+  public void setDeadlinedate(DateTime deadlinedate) {
+    this.deadlinedate = deadlinedate;
   }
 
-  public Wagenotice taskClosedDateDATE(DateTime taskClosedDateDATE) {
-    this.taskClosedDateDATE = taskClosedDateDATE;
+  public Wagenotice taskcloseddatedate(DateTime taskcloseddatedate) {
+    this.taskcloseddatedate = taskcloseddatedate;
     return this;
   }
 
    /**
-   * Datum vyřešení [persistentní položka]
-   * @return taskClosedDateDATE
+   * datum vyřešení [persistentní položka]
+   * @return taskcloseddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum vyřešení [persistentní položka]")
-  public DateTime getTaskClosedDateDATE() {
-    return taskClosedDateDATE;
+  @ApiModelProperty(example = "null", value = "datum vyřešení [persistentní položka]")
+  public DateTime getTaskcloseddatedate() {
+    return taskcloseddatedate;
   }
 
-  public void setTaskClosedDateDATE(DateTime taskClosedDateDATE) {
-    this.taskClosedDateDATE = taskClosedDateDATE;
+  public void setTaskcloseddatedate(DateTime taskcloseddatedate) {
+    this.taskcloseddatedate = taskcloseddatedate;
   }
 
-  public Wagenotice taskClosed(Boolean taskClosed) {
-    this.taskClosed = taskClosed;
+  public Wagenotice taskclosed(Boolean taskclosed) {
+    this.taskclosed = taskclosed;
     return this;
   }
 
    /**
-   * Vyřešeno [persistentní položka]
-   * @return taskClosed
+   * vyřešeno [persistentní položka]
+   * @return taskclosed
   **/
-  @ApiModelProperty(example = "null", value = "Vyřešeno [persistentní položka]")
-  public Boolean getTaskClosed() {
-    return taskClosed;
+  @ApiModelProperty(example = "null", value = "vyřešeno [persistentní položka]")
+  public Boolean getTaskclosed() {
+    return taskclosed;
   }
 
-  public void setTaskClosed(Boolean taskClosed) {
-    this.taskClosed = taskClosed;
+  public void setTaskclosed(Boolean taskclosed) {
+    this.taskclosed = taskclosed;
   }
 
-  public Wagenotice wageNoticeTypeID(String wageNoticeTypeID) {
-    this.wageNoticeTypeID = wageNoticeTypeID;
+  public Wagenotice wagenoticetypeId(String wagenoticetypeId) {
+    this.wagenoticetypeId = wagenoticetypeId;
     return this;
   }
 
    /**
-   * Druh úkolu; ID objektu Typ úkolu [persistentní položka]
-   * @return wageNoticeTypeID
+   * druh úkolu; id objektu typ úkolu [persistentní položka]
+   * @return wagenoticetypeId
   **/
-  @ApiModelProperty(example = "null", value = "Druh úkolu; ID objektu Typ úkolu [persistentní položka]")
-  public String getWageNoticeTypeID() {
-    return wageNoticeTypeID;
+  @ApiModelProperty(example = "null", value = "druh úkolu; id objektu typ úkolu [persistentní položka]")
+  public String getWagenoticetypeId() {
+    return wagenoticetypeId;
   }
 
-  public void setWageNoticeTypeID(String wageNoticeTypeID) {
-    this.wageNoticeTypeID = wageNoticeTypeID;
+  public void setWagenoticetypeId(String wagenoticetypeId) {
+    this.wagenoticetypeId = wagenoticetypeId;
   }
 
-  public Wagenotice taskOwnerID(String taskOwnerID) {
-    this.taskOwnerID = taskOwnerID;
+  public Wagenotice taskownerId(String taskownerId) {
+    this.taskownerId = taskownerId;
     return this;
   }
 
    /**
-   * Řešitel; ID objektu Uživatel [persistentní položka]
-   * @return taskOwnerID
+   * Řešitel; id objektu uživatel [persistentní položka]
+   * @return taskownerId
   **/
-  @ApiModelProperty(example = "null", value = "Řešitel; ID objektu Uživatel [persistentní položka]")
-  public String getTaskOwnerID() {
-    return taskOwnerID;
+  @ApiModelProperty(example = "null", value = "Řešitel; id objektu uživatel [persistentní položka]")
+  public String getTaskownerId() {
+    return taskownerId;
   }
 
-  public void setTaskOwnerID(String taskOwnerID) {
-    this.taskOwnerID = taskOwnerID;
+  public void setTaskownerId(String taskownerId) {
+    this.taskownerId = taskownerId;
   }
 
-  public Wagenotice taskOwnerRoleID(String taskOwnerRoleID) {
-    this.taskOwnerRoleID = taskOwnerRoleID;
+  public Wagenotice taskownerroleId(String taskownerroleId) {
+    this.taskownerroleId = taskownerroleId;
     return this;
   }
 
    /**
-   * Role řešitele; ID objektu Role [persistentní položka]
-   * @return taskOwnerRoleID
+   * role řešitele; id objektu role [persistentní položka]
+   * @return taskownerroleId
   **/
-  @ApiModelProperty(example = "null", value = "Role řešitele; ID objektu Role [persistentní položka]")
-  public String getTaskOwnerRoleID() {
-    return taskOwnerRoleID;
+  @ApiModelProperty(example = "null", value = "role řešitele; id objektu role [persistentní položka]")
+  public String getTaskownerroleId() {
+    return taskownerroleId;
   }
 
-  public void setTaskOwnerRoleID(String taskOwnerRoleID) {
-    this.taskOwnerRoleID = taskOwnerRoleID;
+  public void setTaskownerroleId(String taskownerroleId) {
+    this.taskownerroleId = taskownerroleId;
   }
 
-  public Wagenotice fixedDate(Boolean fixedDate) {
-    this.fixedDate = fixedDate;
+  public Wagenotice fixeddate(Boolean fixeddate) {
+    this.fixeddate = fixeddate;
     return this;
   }
 
    /**
-   * Pevné datum [persistentní položka]
-   * @return fixedDate
+   * pevné datum [persistentní položka]
+   * @return fixeddate
   **/
-  @ApiModelProperty(example = "null", value = "Pevné datum [persistentní položka]")
-  public Boolean getFixedDate() {
-    return fixedDate;
+  @ApiModelProperty(example = "null", value = "pevné datum [persistentní položka]")
+  public Boolean getFixeddate() {
+    return fixeddate;
   }
 
-  public void setFixedDate(Boolean fixedDate) {
-    this.fixedDate = fixedDate;
+  public void setFixeddate(Boolean fixeddate) {
+    this.fixeddate = fixeddate;
   }
 
-  public Wagenotice repetitionDay(Integer repetitionDay) {
-    this.repetitionDay = repetitionDay;
+  public Wagenotice repetitionday(Integer repetitionday) {
+    this.repetitionday = repetitionday;
     return this;
   }
 
    /**
-   * Den opakování [persistentní položka]
-   * @return repetitionDay
+   * den opakování [persistentní položka]
+   * @return repetitionday
   **/
-  @ApiModelProperty(example = "null", value = "Den opakování [persistentní položka]")
-  public Integer getRepetitionDay() {
-    return repetitionDay;
+  @ApiModelProperty(example = "null", value = "den opakování [persistentní položka]")
+  public Integer getRepetitionday() {
+    return repetitionday;
   }
 
-  public void setRepetitionDay(Integer repetitionDay) {
-    this.repetitionDay = repetitionDay;
+  public void setRepetitionday(Integer repetitionday) {
+    this.repetitionday = repetitionday;
   }
 
-  public Wagenotice repetitionMonth(Integer repetitionMonth) {
-    this.repetitionMonth = repetitionMonth;
+  public Wagenotice repetitionmonth(Integer repetitionmonth) {
+    this.repetitionmonth = repetitionmonth;
     return this;
   }
 
    /**
-   * Měsíc opakování [persistentní položka]
-   * @return repetitionMonth
+   * měsíc opakování [persistentní položka]
+   * @return repetitionmonth
   **/
-  @ApiModelProperty(example = "null", value = "Měsíc opakování [persistentní položka]")
-  public Integer getRepetitionMonth() {
-    return repetitionMonth;
+  @ApiModelProperty(example = "null", value = "měsíc opakování [persistentní položka]")
+  public Integer getRepetitionmonth() {
+    return repetitionmonth;
   }
 
-  public void setRepetitionMonth(Integer repetitionMonth) {
-    this.repetitionMonth = repetitionMonth;
+  public void setRepetitionmonth(Integer repetitionmonth) {
+    this.repetitionmonth = repetitionmonth;
   }
 
-  public Wagenotice parentID(String parentID) {
-    this.parentID = parentID;
+  public Wagenotice parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Zdrojový úkol; ID objektu Úkol [persistentní položka]
-   * @return parentID
+   * zdrojový úkol; id objektu Úkol [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojový úkol; ID objektu Úkol [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "zdrojový úkol; id objektu Úkol [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setParentID(String parentID) {
-    this.parentID = parentID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Wagenotice parentText(String parentText) {
-    this.parentText = parentText;
+  public Wagenotice parenttext(String parenttext) {
+    this.parenttext = parenttext;
     return this;
   }
 
    /**
-   * Popis zdrojového úkolu
-   * @return parentText
+   * popis zdrojového úkolu
+   * @return parenttext
   **/
-  @ApiModelProperty(example = "null", value = "Popis zdrojového úkolu")
-  public String getParentText() {
-    return parentText;
+  @ApiModelProperty(example = "null", value = "popis zdrojového úkolu")
+  public String getParenttext() {
+    return parenttext;
   }
 
-  public void setParentText(String parentText) {
-    this.parentText = parentText;
+  public void setParenttext(String parenttext) {
+    this.parenttext = parenttext;
   }
 
 
@@ -438,31 +474,31 @@ public class Wagenotice   {
       return false;
     }
     Wagenotice wagenotice = (Wagenotice) o;
-    return Objects.equals(this.displayName, wagenotice.displayName) &&
-        Objects.equals(this.ID, wagenotice.ID) &&
-        Objects.equals(this.classID, wagenotice.classID) &&
-        Objects.equals(this.objVersion, wagenotice.objVersion) &&
+    return Objects.equals(this.displayname, wagenotice.displayname) &&
+        Objects.equals(this.id, wagenotice.id) &&
+        Objects.equals(this.classid, wagenotice.classid) &&
+        Objects.equals(this.objversion, wagenotice.objversion) &&
         Objects.equals(this.rows, wagenotice.rows) &&
         Objects.equals(this.repeated, wagenotice.repeated) &&
-        Objects.equals(this.noticeText, wagenotice.noticeText) &&
-        Objects.equals(this.periodType, wagenotice.periodType) &&
-        Objects.equals(this.periodLength, wagenotice.periodLength) &&
-        Objects.equals(this.deadLineDATE, wagenotice.deadLineDATE) &&
-        Objects.equals(this.taskClosedDateDATE, wagenotice.taskClosedDateDATE) &&
-        Objects.equals(this.taskClosed, wagenotice.taskClosed) &&
-        Objects.equals(this.wageNoticeTypeID, wagenotice.wageNoticeTypeID) &&
-        Objects.equals(this.taskOwnerID, wagenotice.taskOwnerID) &&
-        Objects.equals(this.taskOwnerRoleID, wagenotice.taskOwnerRoleID) &&
-        Objects.equals(this.fixedDate, wagenotice.fixedDate) &&
-        Objects.equals(this.repetitionDay, wagenotice.repetitionDay) &&
-        Objects.equals(this.repetitionMonth, wagenotice.repetitionMonth) &&
-        Objects.equals(this.parentID, wagenotice.parentID) &&
-        Objects.equals(this.parentText, wagenotice.parentText);
+        Objects.equals(this.noticetext, wagenotice.noticetext) &&
+        Objects.equals(this.periodtype, wagenotice.periodtype) &&
+        Objects.equals(this.periodlength, wagenotice.periodlength) &&
+        Objects.equals(this.deadlinedate, wagenotice.deadlinedate) &&
+        Objects.equals(this.taskcloseddatedate, wagenotice.taskcloseddatedate) &&
+        Objects.equals(this.taskclosed, wagenotice.taskclosed) &&
+        Objects.equals(this.wagenoticetypeId, wagenotice.wagenoticetypeId) &&
+        Objects.equals(this.taskownerId, wagenotice.taskownerId) &&
+        Objects.equals(this.taskownerroleId, wagenotice.taskownerroleId) &&
+        Objects.equals(this.fixeddate, wagenotice.fixeddate) &&
+        Objects.equals(this.repetitionday, wagenotice.repetitionday) &&
+        Objects.equals(this.repetitionmonth, wagenotice.repetitionmonth) &&
+        Objects.equals(this.parentId, wagenotice.parentId) &&
+        Objects.equals(this.parenttext, wagenotice.parenttext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, repeated, noticeText, periodType, periodLength, deadLineDATE, taskClosedDateDATE, taskClosed, wageNoticeTypeID, taskOwnerID, taskOwnerRoleID, fixedDate, repetitionDay, repetitionMonth, parentID, parentText);
+    return Objects.hash(displayname, id, classid, objversion, rows, repeated, noticetext, periodtype, periodlength, deadlinedate, taskcloseddatedate, taskclosed, wagenoticetypeId, taskownerId, taskownerroleId, fixeddate, repetitionday, repetitionmonth, parentId, parenttext);
   }
 
   @Override
@@ -470,26 +506,26 @@ public class Wagenotice   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wagenotice {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    repeated: ").append(toIndentedString(repeated)).append("\n");
-    sb.append("    noticeText: ").append(toIndentedString(noticeText)).append("\n");
-    sb.append("    periodType: ").append(toIndentedString(periodType)).append("\n");
-    sb.append("    periodLength: ").append(toIndentedString(periodLength)).append("\n");
-    sb.append("    deadLineDATE: ").append(toIndentedString(deadLineDATE)).append("\n");
-    sb.append("    taskClosedDateDATE: ").append(toIndentedString(taskClosedDateDATE)).append("\n");
-    sb.append("    taskClosed: ").append(toIndentedString(taskClosed)).append("\n");
-    sb.append("    wageNoticeTypeID: ").append(toIndentedString(wageNoticeTypeID)).append("\n");
-    sb.append("    taskOwnerID: ").append(toIndentedString(taskOwnerID)).append("\n");
-    sb.append("    taskOwnerRoleID: ").append(toIndentedString(taskOwnerRoleID)).append("\n");
-    sb.append("    fixedDate: ").append(toIndentedString(fixedDate)).append("\n");
-    sb.append("    repetitionDay: ").append(toIndentedString(repetitionDay)).append("\n");
-    sb.append("    repetitionMonth: ").append(toIndentedString(repetitionMonth)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    parentText: ").append(toIndentedString(parentText)).append("\n");
+    sb.append("    noticetext: ").append(toIndentedString(noticetext)).append("\n");
+    sb.append("    periodtype: ").append(toIndentedString(periodtype)).append("\n");
+    sb.append("    periodlength: ").append(toIndentedString(periodlength)).append("\n");
+    sb.append("    deadlinedate: ").append(toIndentedString(deadlinedate)).append("\n");
+    sb.append("    taskcloseddatedate: ").append(toIndentedString(taskcloseddatedate)).append("\n");
+    sb.append("    taskclosed: ").append(toIndentedString(taskclosed)).append("\n");
+    sb.append("    wagenoticetypeId: ").append(toIndentedString(wagenoticetypeId)).append("\n");
+    sb.append("    taskownerId: ").append(toIndentedString(taskownerId)).append("\n");
+    sb.append("    taskownerroleId: ").append(toIndentedString(taskownerroleId)).append("\n");
+    sb.append("    fixeddate: ").append(toIndentedString(fixeddate)).append("\n");
+    sb.append("    repetitionday: ").append(toIndentedString(repetitionday)).append("\n");
+    sb.append("    repetitionmonth: ").append(toIndentedString(repetitionmonth)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    parenttext: ").append(toIndentedString(parenttext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

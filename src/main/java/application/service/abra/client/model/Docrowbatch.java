@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,132 +35,177 @@ import java.util.Objects;
 /**
  * Docrowbatch
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Docrowbatch   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("StoreBatch_ID")
-  private String storeBatchID = null;
+  @SerializedName("storebatch_id")
+  private String storebatchId = null;
 
-  @SerializedName("StoreSubBatch_ID")
-  private String storeSubBatchID = null;
+  @SerializedName("storesubbatch_id")
+  private String storesubbatchId = null;
 
-  @SerializedName("NewBatch")
-  private Boolean newBatch = null;
+  @SerializedName("newbatch")
+  private Boolean newbatch = null;
 
-  @SerializedName("NewBatchName")
-  private String newBatchName = null;
+  @SerializedName("newbatchname")
+  private String newbatchname = null;
 
-  @SerializedName("NewBatchExpirationDate$DATE")
-  private DateTime newBatchExpirationDateDATE = null;
+  @SerializedName("newbatchexpirationdate$date")
+  private DateTime newbatchexpirationdatedate = null;
 
-  @SerializedName("NewBatchComment")
-  private String newBatchComment = null;
+  @SerializedName("newbatchcomment")
+  private String newbatchcomment = null;
 
-  @SerializedName("NewBatchSpecification")
-  private String newBatchSpecification = null;
+  @SerializedName("newbatchspecification")
+  private String newbatchspecification = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("MainUnitRate")
-  private Double mainUnitRate = null;
+  @SerializedName("mainunitrate")
+  private Double mainunitrate = null;
 
-  @SerializedName("UnitQuantity")
-  private Double unitQuantity = null;
+  @SerializedName("unitquantity")
+  private Double unitquantity = null;
 
-  @SerializedName("MainUnitQuantity")
-  private Double mainUnitQuantity = null;
+  @SerializedName("mainunitquantity")
+  private Double mainunitquantity = null;
 
-  @SerializedName("DeliveredQuantity")
-  private Double deliveredQuantity = null;
+  @SerializedName("deliveredquantity")
+  private Double deliveredquantity = null;
 
-  @SerializedName("ProvideRowBatch_ID")
-  private String provideRowBatchID = null;
+  @SerializedName("providerowbatch_id")
+  private String providerowbatchId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Skladový doklad - řádek [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Skladový doklad - řádek [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Docrowbatch posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Docrowbatch displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Docrowbatch id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Docrowbatch classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Docrowbatch objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Docrowbatch parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu skladový doklad - řádek [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu skladový doklad - řádek [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Docrowbatch posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
   public Docrowbatch quantity(Double quantity) {
@@ -169,10 +214,10 @@ public class Docrowbatch   {
   }
 
    /**
-   * Počet [persistentní položka]
+   * počet [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "počet [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -181,238 +226,256 @@ public class Docrowbatch   {
     this.quantity = quantity;
   }
 
-  public Docrowbatch storeBatchID(String storeBatchID) {
-    this.storeBatchID = storeBatchID;
+  public Docrowbatch storebatchId(String storebatchId) {
+    this.storebatchId = storebatchId;
     return this;
   }
 
    /**
-   * Sériové číslo/šarže; ID objektu Šarže/sériové číslo [persistentní položka]
-   * @return storeBatchID
+   * sériové číslo/šarže; id objektu Šarže/sériové číslo [persistentní položka]
+   * @return storebatchId
   **/
-  @ApiModelProperty(example = "null", value = "Sériové číslo/šarže; ID objektu Šarže/sériové číslo [persistentní položka]")
-  public String getStoreBatchID() {
-    return storeBatchID;
+  @ApiModelProperty(example = "null", value = "sériové číslo/šarže; id objektu Šarže/sériové číslo [persistentní položka]")
+  public String getStorebatchId() {
+    return storebatchId;
   }
 
-  public void setStoreBatchID(String storeBatchID) {
-    this.storeBatchID = storeBatchID;
+  public void setStorebatchId(String storebatchId) {
+    this.storebatchId = storebatchId;
   }
 
-  public Docrowbatch storeSubBatchID(String storeSubBatchID) {
-    this.storeSubBatchID = storeSubBatchID;
+  public Docrowbatch storesubbatchId(String storesubbatchId) {
+    this.storesubbatchId = storesubbatchId;
     return this;
   }
 
    /**
-   * Dílčí sériové číslo/šarže; ID objektu Dílčí šarže/sériové číslo
-   * @return storeSubBatchID
+   * dílčí sériové číslo/šarže; id objektu dílčí šarže/sériové číslo
+   * @return storesubbatchId
   **/
-  @ApiModelProperty(example = "null", value = "Dílčí sériové číslo/šarže; ID objektu Dílčí šarže/sériové číslo")
-  public String getStoreSubBatchID() {
-    return storeSubBatchID;
+  @ApiModelProperty(example = "null", value = "dílčí sériové číslo/šarže; id objektu dílčí šarže/sériové číslo")
+  public String getStoresubbatchId() {
+    return storesubbatchId;
   }
 
-  public void setStoreSubBatchID(String storeSubBatchID) {
-    this.storeSubBatchID = storeSubBatchID;
+  public void setStoresubbatchId(String storesubbatchId) {
+    this.storesubbatchId = storesubbatchId;
   }
 
-  public Docrowbatch newBatch(Boolean newBatch) {
-    this.newBatch = newBatch;
+  public Docrowbatch newbatch(Boolean newbatch) {
+    this.newbatch = newbatch;
     return this;
   }
 
    /**
-   * Nová šarže
-   * @return newBatch
+   * nová šarže
+   * @return newbatch
   **/
-  @ApiModelProperty(example = "null", value = "Nová šarže")
-  public Boolean getNewBatch() {
-    return newBatch;
+  @ApiModelProperty(example = "null", value = "nová šarže")
+  public Boolean getNewbatch() {
+    return newbatch;
   }
 
-  public void setNewBatch(Boolean newBatch) {
-    this.newBatch = newBatch;
+  public void setNewbatch(Boolean newbatch) {
+    this.newbatch = newbatch;
   }
 
-  public Docrowbatch newBatchName(String newBatchName) {
-    this.newBatchName = newBatchName;
+  public Docrowbatch newbatchname(String newbatchname) {
+    this.newbatchname = newbatchname;
     return this;
   }
 
    /**
-   * Název
-   * @return newBatchName
+   * název
+   * @return newbatchname
   **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getNewBatchName() {
-    return newBatchName;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getNewbatchname() {
+    return newbatchname;
   }
 
-  public void setNewBatchName(String newBatchName) {
-    this.newBatchName = newBatchName;
+  public void setNewbatchname(String newbatchname) {
+    this.newbatchname = newbatchname;
   }
 
-  public Docrowbatch newBatchExpirationDateDATE(DateTime newBatchExpirationDateDATE) {
-    this.newBatchExpirationDateDATE = newBatchExpirationDateDATE;
+  public Docrowbatch newbatchexpirationdatedate(DateTime newbatchexpirationdatedate) {
+    this.newbatchexpirationdatedate = newbatchexpirationdatedate;
     return this;
   }
 
    /**
-   * Datum expirace
-   * @return newBatchExpirationDateDATE
+   * datum expirace
+   * @return newbatchexpirationdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum expirace")
-  public DateTime getNewBatchExpirationDateDATE() {
-    return newBatchExpirationDateDATE;
+  @ApiModelProperty(example = "null", value = "datum expirace")
+  public DateTime getNewbatchexpirationdatedate() {
+    return newbatchexpirationdatedate;
   }
 
-  public void setNewBatchExpirationDateDATE(DateTime newBatchExpirationDateDATE) {
-    this.newBatchExpirationDateDATE = newBatchExpirationDateDATE;
+  public void setNewbatchexpirationdatedate(DateTime newbatchexpirationdatedate) {
+    this.newbatchexpirationdatedate = newbatchexpirationdatedate;
   }
 
-  public Docrowbatch newBatchComment(String newBatchComment) {
-    this.newBatchComment = newBatchComment;
+  public Docrowbatch newbatchcomment(String newbatchcomment) {
+    this.newbatchcomment = newbatchcomment;
     return this;
   }
 
    /**
-   * Popis
-   * @return newBatchComment
+   * popis
+   * @return newbatchcomment
   **/
-  @ApiModelProperty(example = "null", value = "Popis")
-  public String getNewBatchComment() {
-    return newBatchComment;
+  @ApiModelProperty(example = "null", value = "popis")
+  public String getNewbatchcomment() {
+    return newbatchcomment;
   }
 
-  public void setNewBatchComment(String newBatchComment) {
-    this.newBatchComment = newBatchComment;
+  public void setNewbatchcomment(String newbatchcomment) {
+    this.newbatchcomment = newbatchcomment;
   }
 
-  public Docrowbatch newBatchSpecification(String newBatchSpecification) {
-    this.newBatchSpecification = newBatchSpecification;
+  public Docrowbatch newbatchspecification(String newbatchspecification) {
+    this.newbatchspecification = newbatchspecification;
     return this;
   }
 
    /**
-   * Specifikace
-   * @return newBatchSpecification
+   * specifikace
+   * @return newbatchspecification
   **/
-  @ApiModelProperty(example = "null", value = "Specifikace")
-  public String getNewBatchSpecification() {
-    return newBatchSpecification;
+  @ApiModelProperty(example = "null", value = "specifikace")
+  public String getNewbatchspecification() {
+    return newbatchspecification;
   }
 
-  public void setNewBatchSpecification(String newBatchSpecification) {
-    this.newBatchSpecification = newBatchSpecification;
+  public void setNewbatchspecification(String newbatchspecification) {
+    this.newbatchspecification = newbatchspecification;
   }
 
-  public Docrowbatch qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Docrowbatch qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
   }
 
-  public Docrowbatch unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Docrowbatch unitrate(Double unitrate) {
+    this.unitrate = unitrate;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return unitRate
+   * vztah [persistentní položka]
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
-  public Docrowbatch mainUnitRate(Double mainUnitRate) {
-    this.mainUnitRate = mainUnitRate;
+  public Docrowbatch mainunitrate(Double mainunitrate) {
+    this.mainunitrate = mainunitrate;
     return this;
   }
 
    /**
-   * Vztah hl. jednotky
-   * @return mainUnitRate
+   * vztah hl. jednotky
+   * @return mainunitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah hl. jednotky")
-  public Double getMainUnitRate() {
-    return mainUnitRate;
+  @ApiModelProperty(example = "null", value = "vztah hl. jednotky")
+  public Double getMainunitrate() {
+    return mainunitrate;
   }
 
-  public void setMainUnitRate(Double mainUnitRate) {
-    this.mainUnitRate = mainUnitRate;
+  public void setMainunitrate(Double mainunitrate) {
+    this.mainunitrate = mainunitrate;
   }
 
-  public Docrowbatch unitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public Docrowbatch unitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
     return this;
   }
 
    /**
-   * Počet
-   * @return unitQuantity
+   * počet
+   * @return unitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet")
-  public Double getUnitQuantity() {
-    return unitQuantity;
+  @ApiModelProperty(example = "null", value = "počet")
+  public Double getUnitquantity() {
+    return unitquantity;
   }
 
-  public void setUnitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public void setUnitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
   }
 
-  public Docrowbatch mainUnitQuantity(Double mainUnitQuantity) {
-    this.mainUnitQuantity = mainUnitQuantity;
+  public Docrowbatch mainunitquantity(Double mainunitquantity) {
+    this.mainunitquantity = mainunitquantity;
     return this;
   }
 
    /**
-   * Počet v hl. jednotce
-   * @return mainUnitQuantity
+   * počet v hl. jednotce
+   * @return mainunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet v hl. jednotce")
-  public Double getMainUnitQuantity() {
-    return mainUnitQuantity;
+  @ApiModelProperty(example = "null", value = "počet v hl. jednotce")
+  public Double getMainunitquantity() {
+    return mainunitquantity;
   }
 
-  public void setMainUnitQuantity(Double mainUnitQuantity) {
-    this.mainUnitQuantity = mainUnitQuantity;
+  public void setMainunitquantity(Double mainunitquantity) {
+    this.mainunitquantity = mainunitquantity;
+  }
+
+  public Docrowbatch deliveredquantity(Double deliveredquantity) {
+    this.deliveredquantity = deliveredquantity;
+    return this;
   }
 
    /**
    * Čerpané množství [persistentní položka]
-   * @return deliveredQuantity
+   * @return deliveredquantity
   **/
   @ApiModelProperty(example = "null", value = "Čerpané množství [persistentní položka]")
-  public Double getDeliveredQuantity() {
-    return deliveredQuantity;
+  public Double getDeliveredquantity() {
+    return deliveredquantity;
+  }
+
+  public void setDeliveredquantity(Double deliveredquantity) {
+    this.deliveredquantity = deliveredquantity;
+  }
+
+  public Docrowbatch providerowbatchId(String providerowbatchId) {
+    this.providerowbatchId = providerowbatchId;
+    return this;
   }
 
    /**
    * Čerpaná šarže [persistentní položka]
-   * @return provideRowBatchID
+   * @return providerowbatchId
   **/
   @ApiModelProperty(example = "null", value = "Čerpaná šarže [persistentní položka]")
-  public String getProvideRowBatchID() {
-    return provideRowBatchID;
+  public String getProviderowbatchId() {
+    return providerowbatchId;
+  }
+
+  public void setProviderowbatchId(String providerowbatchId) {
+    this.providerowbatchId = providerowbatchId;
   }
 
 
@@ -425,32 +488,32 @@ public class Docrowbatch   {
       return false;
     }
     Docrowbatch docrowbatch = (Docrowbatch) o;
-    return Objects.equals(this.displayName, docrowbatch.displayName) &&
-        Objects.equals(this.ID, docrowbatch.ID) &&
-        Objects.equals(this.classID, docrowbatch.classID) &&
-        Objects.equals(this.objVersion, docrowbatch.objVersion) &&
-        Objects.equals(this.parentID, docrowbatch.parentID) &&
-        Objects.equals(this.posIndex, docrowbatch.posIndex) &&
+    return Objects.equals(this.displayname, docrowbatch.displayname) &&
+        Objects.equals(this.id, docrowbatch.id) &&
+        Objects.equals(this.classid, docrowbatch.classid) &&
+        Objects.equals(this.objversion, docrowbatch.objversion) &&
+        Objects.equals(this.parentId, docrowbatch.parentId) &&
+        Objects.equals(this.posindex, docrowbatch.posindex) &&
         Objects.equals(this.quantity, docrowbatch.quantity) &&
-        Objects.equals(this.storeBatchID, docrowbatch.storeBatchID) &&
-        Objects.equals(this.storeSubBatchID, docrowbatch.storeSubBatchID) &&
-        Objects.equals(this.newBatch, docrowbatch.newBatch) &&
-        Objects.equals(this.newBatchName, docrowbatch.newBatchName) &&
-        Objects.equals(this.newBatchExpirationDateDATE, docrowbatch.newBatchExpirationDateDATE) &&
-        Objects.equals(this.newBatchComment, docrowbatch.newBatchComment) &&
-        Objects.equals(this.newBatchSpecification, docrowbatch.newBatchSpecification) &&
-        Objects.equals(this.qUnit, docrowbatch.qUnit) &&
-        Objects.equals(this.unitRate, docrowbatch.unitRate) &&
-        Objects.equals(this.mainUnitRate, docrowbatch.mainUnitRate) &&
-        Objects.equals(this.unitQuantity, docrowbatch.unitQuantity) &&
-        Objects.equals(this.mainUnitQuantity, docrowbatch.mainUnitQuantity) &&
-        Objects.equals(this.deliveredQuantity, docrowbatch.deliveredQuantity) &&
-        Objects.equals(this.provideRowBatchID, docrowbatch.provideRowBatchID);
+        Objects.equals(this.storebatchId, docrowbatch.storebatchId) &&
+        Objects.equals(this.storesubbatchId, docrowbatch.storesubbatchId) &&
+        Objects.equals(this.newbatch, docrowbatch.newbatch) &&
+        Objects.equals(this.newbatchname, docrowbatch.newbatchname) &&
+        Objects.equals(this.newbatchexpirationdatedate, docrowbatch.newbatchexpirationdatedate) &&
+        Objects.equals(this.newbatchcomment, docrowbatch.newbatchcomment) &&
+        Objects.equals(this.newbatchspecification, docrowbatch.newbatchspecification) &&
+        Objects.equals(this.qunit, docrowbatch.qunit) &&
+        Objects.equals(this.unitrate, docrowbatch.unitrate) &&
+        Objects.equals(this.mainunitrate, docrowbatch.mainunitrate) &&
+        Objects.equals(this.unitquantity, docrowbatch.unitquantity) &&
+        Objects.equals(this.mainunitquantity, docrowbatch.mainunitquantity) &&
+        Objects.equals(this.deliveredquantity, docrowbatch.deliveredquantity) &&
+        Objects.equals(this.providerowbatchId, docrowbatch.providerowbatchId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, quantity, storeBatchID, storeSubBatchID, newBatch, newBatchName, newBatchExpirationDateDATE, newBatchComment, newBatchSpecification, qUnit, unitRate, mainUnitRate, unitQuantity, mainUnitQuantity, deliveredQuantity, provideRowBatchID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, quantity, storebatchId, storesubbatchId, newbatch, newbatchname, newbatchexpirationdatedate, newbatchcomment, newbatchspecification, qunit, unitrate, mainunitrate, unitquantity, mainunitquantity, deliveredquantity, providerowbatchId);
   }
 
   @Override
@@ -458,27 +521,27 @@ public class Docrowbatch   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Docrowbatch {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    storeBatchID: ").append(toIndentedString(storeBatchID)).append("\n");
-    sb.append("    storeSubBatchID: ").append(toIndentedString(storeSubBatchID)).append("\n");
-    sb.append("    newBatch: ").append(toIndentedString(newBatch)).append("\n");
-    sb.append("    newBatchName: ").append(toIndentedString(newBatchName)).append("\n");
-    sb.append("    newBatchExpirationDateDATE: ").append(toIndentedString(newBatchExpirationDateDATE)).append("\n");
-    sb.append("    newBatchComment: ").append(toIndentedString(newBatchComment)).append("\n");
-    sb.append("    newBatchSpecification: ").append(toIndentedString(newBatchSpecification)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    mainUnitRate: ").append(toIndentedString(mainUnitRate)).append("\n");
-    sb.append("    unitQuantity: ").append(toIndentedString(unitQuantity)).append("\n");
-    sb.append("    mainUnitQuantity: ").append(toIndentedString(mainUnitQuantity)).append("\n");
-    sb.append("    deliveredQuantity: ").append(toIndentedString(deliveredQuantity)).append("\n");
-    sb.append("    provideRowBatchID: ").append(toIndentedString(provideRowBatchID)).append("\n");
+    sb.append("    storebatchId: ").append(toIndentedString(storebatchId)).append("\n");
+    sb.append("    storesubbatchId: ").append(toIndentedString(storesubbatchId)).append("\n");
+    sb.append("    newbatch: ").append(toIndentedString(newbatch)).append("\n");
+    sb.append("    newbatchname: ").append(toIndentedString(newbatchname)).append("\n");
+    sb.append("    newbatchexpirationdatedate: ").append(toIndentedString(newbatchexpirationdatedate)).append("\n");
+    sb.append("    newbatchcomment: ").append(toIndentedString(newbatchcomment)).append("\n");
+    sb.append("    newbatchspecification: ").append(toIndentedString(newbatchspecification)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    mainunitrate: ").append(toIndentedString(mainunitrate)).append("\n");
+    sb.append("    unitquantity: ").append(toIndentedString(unitquantity)).append("\n");
+    sb.append("    mainunitquantity: ").append(toIndentedString(mainunitquantity)).append("\n");
+    sb.append("    deliveredquantity: ").append(toIndentedString(deliveredquantity)).append("\n");
+    sb.append("    providerowbatchId: ").append(toIndentedString(providerowbatchId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

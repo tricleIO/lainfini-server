@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,198 +34,243 @@ import java.util.Objects;
 /**
  * Busordersource
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Busordersource   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("SourceRole_ID")
-  private String sourceRoleID = null;
+  @SerializedName("sourcerole_id")
+  private String sourceroleId = null;
 
-  @SerializedName("SourceOrder")
-  private Integer sourceOrder = null;
+  @SerializedName("sourceorder")
+  private Integer sourceorder = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("CRMActivityArea_ID")
-  private String cRMActivityAreaID = null;
+  @SerializedName("crmactivityarea_id")
+  private String crmactivityareaId = null;
 
-  @SerializedName("CRMActivityType_ID")
-  private String cRMActivityTypeID = null;
+  @SerializedName("crmactivitytype_id")
+  private String crmactivitytypeId = null;
 
-  @SerializedName("CRMActivityQueue_ID")
-  private String cRMActivityQueueID = null;
+  @SerializedName("crmactivityqueue_id")
+  private String crmactivityqueueId = null;
 
-  @SerializedName("PlannedTotalHours")
-  private Double plannedTotalHours = null;
+  @SerializedName("plannedtotalhours")
+  private Double plannedtotalhours = null;
 
-  @SerializedName("RealTotalHours")
-  private Double realTotalHours = null;
+  @SerializedName("realtotalhours")
+  private Double realtotalhours = null;
 
-  @SerializedName("CanExceedPlan")
-  private Integer canExceedPlan = null;
+  @SerializedName("canexceedplan")
+  private Integer canexceedplan = null;
 
-  @SerializedName("Invoicing")
+  @SerializedName("invoicing")
   private Boolean invoicing = null;
 
-  @SerializedName("SalePriceType")
-  private Integer salePriceType = null;
+  @SerializedName("salepricetype")
+  private Integer salepricetype = null;
 
-  @SerializedName("HourRate")
-  private Double hourRate = null;
+  @SerializedName("hourrate")
+  private Double hourrate = null;
 
-  @SerializedName("OverTimeHourRate")
-  private Double overTimeHourRate = null;
+  @SerializedName("overtimehourrate")
+  private Double overtimehourrate = null;
 
-  @SerializedName("VATRate_ID")
-  private String vATRateID = null;
+  @SerializedName("vatrate_id")
+  private String vatrateId = null;
 
-  @SerializedName("CostHourRate")
-  private Double costHourRate = null;
+  @SerializedName("costhourrate")
+  private Double costhourrate = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("StoreUnit_ID")
-  private String storeUnitID = null;
+  @SerializedName("storeunit_id")
+  private String storeunitId = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("PriceDefinition1_ID")
-  private String priceDefinition1ID = null;
+  @SerializedName("pricedefinition1_id")
+  private String pricedefinition1Id = null;
 
-  @SerializedName("PriceDefinition2_ID")
-  private String priceDefinition2ID = null;
+  @SerializedName("pricedefinition2_id")
+  private String pricedefinition2Id = null;
 
-  @SerializedName("Finished")
+  @SerializedName("finished")
   private Boolean finished = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Zakázka [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Zakázka [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Busordersource posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Busordersource displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Busordersource sourceRoleID(String sourceRoleID) {
-    this.sourceRoleID = sourceRoleID;
+  public Busordersource id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Role zdroje; ID objektu Role [persistentní položka]
-   * @return sourceRoleID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Role zdroje; ID objektu Role [persistentní položka]")
-  public String getSourceRoleID() {
-    return sourceRoleID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setSourceRoleID(String sourceRoleID) {
-    this.sourceRoleID = sourceRoleID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Busordersource sourceOrder(Integer sourceOrder) {
-    this.sourceOrder = sourceOrder;
+  public Busordersource classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return sourceOrder
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getSourceOrder() {
-    return sourceOrder;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setSourceOrder(Integer sourceOrder) {
-    this.sourceOrder = sourceOrder;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Busordersource objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Busordersource parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu zakázka [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu zakázka [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Busordersource posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Busordersource sourceroleId(String sourceroleId) {
+    this.sourceroleId = sourceroleId;
+    return this;
+  }
+
+   /**
+   * role zdroje; id objektu role [persistentní položka]
+   * @return sourceroleId
+  **/
+  @ApiModelProperty(example = "null", value = "role zdroje; id objektu role [persistentní položka]")
+  public String getSourceroleId() {
+    return sourceroleId;
+  }
+
+  public void setSourceroleId(String sourceroleId) {
+    this.sourceroleId = sourceroleId;
+  }
+
+  public Busordersource sourceorder(Integer sourceorder) {
+    this.sourceorder = sourceorder;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return sourceorder
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getSourceorder() {
+    return sourceorder;
+  }
+
+  public void setSourceorder(Integer sourceorder) {
+    this.sourceorder = sourceorder;
   }
 
   public Busordersource description(String description) {
@@ -234,10 +279,10 @@ public class Busordersource   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -246,112 +291,112 @@ public class Busordersource   {
     this.description = description;
   }
 
-  public Busordersource cRMActivityAreaID(String cRMActivityAreaID) {
-    this.cRMActivityAreaID = cRMActivityAreaID;
+  public Busordersource crmactivityareaId(String crmactivityareaId) {
+    this.crmactivityareaId = crmactivityareaId;
     return this;
   }
 
    /**
-   * Oblast aktivity; ID objektu Oblast aktivity [persistentní položka]
-   * @return cRMActivityAreaID
+   * oblast aktivity; id objektu oblast aktivity [persistentní položka]
+   * @return crmactivityareaId
   **/
-  @ApiModelProperty(example = "null", value = "Oblast aktivity; ID objektu Oblast aktivity [persistentní položka]")
-  public String getCRMActivityAreaID() {
-    return cRMActivityAreaID;
+  @ApiModelProperty(example = "null", value = "oblast aktivity; id objektu oblast aktivity [persistentní položka]")
+  public String getCrmactivityareaId() {
+    return crmactivityareaId;
   }
 
-  public void setCRMActivityAreaID(String cRMActivityAreaID) {
-    this.cRMActivityAreaID = cRMActivityAreaID;
+  public void setCrmactivityareaId(String crmactivityareaId) {
+    this.crmactivityareaId = crmactivityareaId;
   }
 
-  public Busordersource cRMActivityTypeID(String cRMActivityTypeID) {
-    this.cRMActivityTypeID = cRMActivityTypeID;
+  public Busordersource crmactivitytypeId(String crmactivitytypeId) {
+    this.crmactivitytypeId = crmactivitytypeId;
     return this;
   }
 
    /**
-   * Typ aktivity; ID objektu Typ aktivit [persistentní položka]
-   * @return cRMActivityTypeID
+   * typ aktivity; id objektu typ aktivit [persistentní položka]
+   * @return crmactivitytypeId
   **/
-  @ApiModelProperty(example = "null", value = "Typ aktivity; ID objektu Typ aktivit [persistentní položka]")
-  public String getCRMActivityTypeID() {
-    return cRMActivityTypeID;
+  @ApiModelProperty(example = "null", value = "typ aktivity; id objektu typ aktivit [persistentní položka]")
+  public String getCrmactivitytypeId() {
+    return crmactivitytypeId;
   }
 
-  public void setCRMActivityTypeID(String cRMActivityTypeID) {
-    this.cRMActivityTypeID = cRMActivityTypeID;
+  public void setCrmactivitytypeId(String crmactivitytypeId) {
+    this.crmactivitytypeId = crmactivitytypeId;
   }
 
-  public Busordersource cRMActivityQueueID(String cRMActivityQueueID) {
-    this.cRMActivityQueueID = cRMActivityQueueID;
+  public Busordersource crmactivityqueueId(String crmactivityqueueId) {
+    this.crmactivityqueueId = crmactivityqueueId;
     return this;
   }
 
    /**
-   * Řada akt.; ID objektu Řada aktivit [persistentní položka]
-   * @return cRMActivityQueueID
+   * Řada akt.; id objektu Řada aktivit [persistentní položka]
+   * @return crmactivityqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada akt.; ID objektu Řada aktivit [persistentní položka]")
-  public String getCRMActivityQueueID() {
-    return cRMActivityQueueID;
+  @ApiModelProperty(example = "null", value = "Řada akt.; id objektu Řada aktivit [persistentní položka]")
+  public String getCrmactivityqueueId() {
+    return crmactivityqueueId;
   }
 
-  public void setCRMActivityQueueID(String cRMActivityQueueID) {
-    this.cRMActivityQueueID = cRMActivityQueueID;
+  public void setCrmactivityqueueId(String crmactivityqueueId) {
+    this.crmactivityqueueId = crmactivityqueueId;
   }
 
-  public Busordersource plannedTotalHours(Double plannedTotalHours) {
-    this.plannedTotalHours = plannedTotalHours;
+  public Busordersource plannedtotalhours(Double plannedtotalhours) {
+    this.plannedtotalhours = plannedtotalhours;
     return this;
   }
 
    /**
-   * Plánováno [persistentní položka]
-   * @return plannedTotalHours
+   * plánováno [persistentní položka]
+   * @return plannedtotalhours
   **/
-  @ApiModelProperty(example = "null", value = "Plánováno [persistentní položka]")
-  public Double getPlannedTotalHours() {
-    return plannedTotalHours;
+  @ApiModelProperty(example = "null", value = "plánováno [persistentní položka]")
+  public Double getPlannedtotalhours() {
+    return plannedtotalhours;
   }
 
-  public void setPlannedTotalHours(Double plannedTotalHours) {
-    this.plannedTotalHours = plannedTotalHours;
+  public void setPlannedtotalhours(Double plannedtotalhours) {
+    this.plannedtotalhours = plannedtotalhours;
   }
 
-  public Busordersource realTotalHours(Double realTotalHours) {
-    this.realTotalHours = realTotalHours;
+  public Busordersource realtotalhours(Double realtotalhours) {
+    this.realtotalhours = realtotalhours;
     return this;
   }
 
    /**
-   * Odpracováno [persistentní položka]
-   * @return realTotalHours
+   * odpracováno [persistentní položka]
+   * @return realtotalhours
   **/
-  @ApiModelProperty(example = "null", value = "Odpracováno [persistentní položka]")
-  public Double getRealTotalHours() {
-    return realTotalHours;
+  @ApiModelProperty(example = "null", value = "odpracováno [persistentní položka]")
+  public Double getRealtotalhours() {
+    return realtotalhours;
   }
 
-  public void setRealTotalHours(Double realTotalHours) {
-    this.realTotalHours = realTotalHours;
+  public void setRealtotalhours(Double realtotalhours) {
+    this.realtotalhours = realtotalhours;
   }
 
-  public Busordersource canExceedPlan(Integer canExceedPlan) {
-    this.canExceedPlan = canExceedPlan;
+  public Busordersource canexceedplan(Integer canexceedplan) {
+    this.canexceedplan = canexceedplan;
     return this;
   }
 
    /**
-   * Povol.přesčas [persistentní položka]
-   * @return canExceedPlan
+   * povol.přesčas [persistentní položka]
+   * @return canexceedplan
   **/
-  @ApiModelProperty(example = "null", value = "Povol.přesčas [persistentní položka]")
-  public Integer getCanExceedPlan() {
-    return canExceedPlan;
+  @ApiModelProperty(example = "null", value = "povol.přesčas [persistentní položka]")
+  public Integer getCanexceedplan() {
+    return canexceedplan;
   }
 
-  public void setCanExceedPlan(Integer canExceedPlan) {
-    this.canExceedPlan = canExceedPlan;
+  public void setCanexceedplan(Integer canexceedplan) {
+    this.canexceedplan = canexceedplan;
   }
 
   public Busordersource invoicing(Boolean invoicing) {
@@ -360,10 +405,10 @@ public class Busordersource   {
   }
 
    /**
-   * Fakturovat [persistentní položka]
+   * fakturovat [persistentní položka]
    * @return invoicing
   **/
-  @ApiModelProperty(example = "null", value = "Fakturovat [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "fakturovat [persistentní položka]")
   public Boolean getInvoicing() {
     return invoicing;
   }
@@ -372,184 +417,184 @@ public class Busordersource   {
     this.invoicing = invoicing;
   }
 
-  public Busordersource salePriceType(Integer salePriceType) {
-    this.salePriceType = salePriceType;
+  public Busordersource salepricetype(Integer salepricetype) {
+    this.salepricetype = salepricetype;
     return this;
   }
 
    /**
-   * Typ ceny [persistentní položka]
-   * @return salePriceType
+   * typ ceny [persistentní položka]
+   * @return salepricetype
   **/
-  @ApiModelProperty(example = "null", value = "Typ ceny [persistentní položka]")
-  public Integer getSalePriceType() {
-    return salePriceType;
+  @ApiModelProperty(example = "null", value = "typ ceny [persistentní položka]")
+  public Integer getSalepricetype() {
+    return salepricetype;
   }
 
-  public void setSalePriceType(Integer salePriceType) {
-    this.salePriceType = salePriceType;
+  public void setSalepricetype(Integer salepricetype) {
+    this.salepricetype = salepricetype;
   }
 
-  public Busordersource hourRate(Double hourRate) {
-    this.hourRate = hourRate;
+  public Busordersource hourrate(Double hourrate) {
+    this.hourrate = hourrate;
     return this;
   }
 
    /**
-   * Zákl.sazba [persistentní položka]
-   * @return hourRate
+   * zákl.sazba [persistentní položka]
+   * @return hourrate
   **/
-  @ApiModelProperty(example = "null", value = "Zákl.sazba [persistentní položka]")
-  public Double getHourRate() {
-    return hourRate;
+  @ApiModelProperty(example = "null", value = "zákl.sazba [persistentní položka]")
+  public Double getHourrate() {
+    return hourrate;
   }
 
-  public void setHourRate(Double hourRate) {
-    this.hourRate = hourRate;
+  public void setHourrate(Double hourrate) {
+    this.hourrate = hourrate;
   }
 
-  public Busordersource overTimeHourRate(Double overTimeHourRate) {
-    this.overTimeHourRate = overTimeHourRate;
+  public Busordersource overtimehourrate(Double overtimehourrate) {
+    this.overtimehourrate = overtimehourrate;
     return this;
   }
 
    /**
-   * Přesčas.sazba [persistentní položka]
-   * @return overTimeHourRate
+   * přesčas.sazba [persistentní položka]
+   * @return overtimehourrate
   **/
-  @ApiModelProperty(example = "null", value = "Přesčas.sazba [persistentní položka]")
-  public Double getOverTimeHourRate() {
-    return overTimeHourRate;
+  @ApiModelProperty(example = "null", value = "přesčas.sazba [persistentní položka]")
+  public Double getOvertimehourrate() {
+    return overtimehourrate;
   }
 
-  public void setOverTimeHourRate(Double overTimeHourRate) {
-    this.overTimeHourRate = overTimeHourRate;
+  public void setOvertimehourrate(Double overtimehourrate) {
+    this.overtimehourrate = overtimehourrate;
   }
 
-  public Busordersource vATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public Busordersource vatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
     return this;
   }
 
    /**
-   * Sazba DPH; ID objektu DPH sazba [persistentní položka]
-   * @return vATRateID
+   * sazba dph; id objektu dph sazba [persistentní položka]
+   * @return vatrateId
   **/
-  @ApiModelProperty(example = "null", value = "Sazba DPH; ID objektu DPH sazba [persistentní položka]")
-  public String getVATRateID() {
-    return vATRateID;
+  @ApiModelProperty(example = "null", value = "sazba dph; id objektu dph sazba [persistentní položka]")
+  public String getVatrateId() {
+    return vatrateId;
   }
 
-  public void setVATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public void setVatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
   }
 
-  public Busordersource costHourRate(Double costHourRate) {
-    this.costHourRate = costHourRate;
+  public Busordersource costhourrate(Double costhourrate) {
+    this.costhourrate = costhourrate;
     return this;
   }
 
    /**
-   * Náklad.sazba [persistentní položka]
-   * @return costHourRate
+   * náklad.sazba [persistentní položka]
+   * @return costhourrate
   **/
-  @ApiModelProperty(example = "null", value = "Náklad.sazba [persistentní položka]")
-  public Double getCostHourRate() {
-    return costHourRate;
+  @ApiModelProperty(example = "null", value = "náklad.sazba [persistentní položka]")
+  public Double getCosthourrate() {
+    return costhourrate;
   }
 
-  public void setCostHourRate(Double costHourRate) {
-    this.costHourRate = costHourRate;
+  public void setCosthourrate(Double costhourrate) {
+    this.costhourrate = costhourrate;
   }
 
-  public Busordersource storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Busordersource storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * skladová karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
   }
 
-  public Busordersource storeUnitID(String storeUnitID) {
-    this.storeUnitID = storeUnitID;
+  public Busordersource storeunitId(String storeunitId) {
+    this.storeunitId = storeunitId;
     return this;
   }
 
    /**
-   * Jednotka; ID objektu Jednotka skladové karty [persistentní položka]
-   * @return storeUnitID
+   * jednotka; id objektu jednotka skladové karty [persistentní položka]
+   * @return storeunitId
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka; ID objektu Jednotka skladové karty [persistentní položka]")
-  public String getStoreUnitID() {
-    return storeUnitID;
+  @ApiModelProperty(example = "null", value = "jednotka; id objektu jednotka skladové karty [persistentní položka]")
+  public String getStoreunitId() {
+    return storeunitId;
   }
 
-  public void setStoreUnitID(String storeUnitID) {
-    this.storeUnitID = storeUnitID;
+  public void setStoreunitId(String storeunitId) {
+    this.storeunitId = storeunitId;
   }
 
-  public Busordersource storeID(String storeID) {
-    this.storeID = storeID;
+  public Busordersource storeId(String storeId) {
+    this.storeId = storeId;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
-  public Busordersource priceDefinition1ID(String priceDefinition1ID) {
-    this.priceDefinition1ID = priceDefinition1ID;
+  public Busordersource pricedefinition1Id(String pricedefinition1Id) {
+    this.pricedefinition1Id = pricedefinition1Id;
     return this;
   }
 
    /**
-   * Def.ceny zákl.; ID objektu Definice ceny [persistentní položka]
-   * @return priceDefinition1ID
+   * def.ceny zákl.; id objektu definice ceny [persistentní položka]
+   * @return pricedefinition1Id
   **/
-  @ApiModelProperty(example = "null", value = "Def.ceny zákl.; ID objektu Definice ceny [persistentní položka]")
-  public String getPriceDefinition1ID() {
-    return priceDefinition1ID;
+  @ApiModelProperty(example = "null", value = "def.ceny zákl.; id objektu definice ceny [persistentní položka]")
+  public String getPricedefinition1Id() {
+    return pricedefinition1Id;
   }
 
-  public void setPriceDefinition1ID(String priceDefinition1ID) {
-    this.priceDefinition1ID = priceDefinition1ID;
+  public void setPricedefinition1Id(String pricedefinition1Id) {
+    this.pricedefinition1Id = pricedefinition1Id;
   }
 
-  public Busordersource priceDefinition2ID(String priceDefinition2ID) {
-    this.priceDefinition2ID = priceDefinition2ID;
+  public Busordersource pricedefinition2Id(String pricedefinition2Id) {
+    this.pricedefinition2Id = pricedefinition2Id;
     return this;
   }
 
    /**
-   * Def.ceny přesč.; ID objektu Definice ceny [persistentní položka]
-   * @return priceDefinition2ID
+   * def.ceny přesč.; id objektu definice ceny [persistentní položka]
+   * @return pricedefinition2Id
   **/
-  @ApiModelProperty(example = "null", value = "Def.ceny přesč.; ID objektu Definice ceny [persistentní položka]")
-  public String getPriceDefinition2ID() {
-    return priceDefinition2ID;
+  @ApiModelProperty(example = "null", value = "def.ceny přesč.; id objektu definice ceny [persistentní položka]")
+  public String getPricedefinition2Id() {
+    return pricedefinition2Id;
   }
 
-  public void setPriceDefinition2ID(String priceDefinition2ID) {
-    this.priceDefinition2ID = priceDefinition2ID;
+  public void setPricedefinition2Id(String pricedefinition2Id) {
+    this.pricedefinition2Id = pricedefinition2Id;
   }
 
   public Busordersource finished(Boolean finished) {
@@ -558,10 +603,10 @@ public class Busordersource   {
   }
 
    /**
-   * Dokončeno [persistentní položka]
+   * dokončeno [persistentní položka]
    * @return finished
   **/
-  @ApiModelProperty(example = "null", value = "Dokončeno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "dokončeno [persistentní položka]")
   public Boolean getFinished() {
     return finished;
   }
@@ -576,10 +621,10 @@ public class Busordersource   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -588,58 +633,58 @@ public class Busordersource   {
     this.note = note;
   }
 
-  public Busordersource divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Busordersource divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Busordersource busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Busordersource bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * obchodní případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obchodní případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "obchodní případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obchodní případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Busordersource busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Busordersource busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
 
@@ -652,42 +697,42 @@ public class Busordersource   {
       return false;
     }
     Busordersource busordersource = (Busordersource) o;
-    return Objects.equals(this.displayName, busordersource.displayName) &&
-        Objects.equals(this.ID, busordersource.ID) &&
-        Objects.equals(this.classID, busordersource.classID) &&
-        Objects.equals(this.objVersion, busordersource.objVersion) &&
-        Objects.equals(this.parentID, busordersource.parentID) &&
-        Objects.equals(this.posIndex, busordersource.posIndex) &&
-        Objects.equals(this.sourceRoleID, busordersource.sourceRoleID) &&
-        Objects.equals(this.sourceOrder, busordersource.sourceOrder) &&
+    return Objects.equals(this.displayname, busordersource.displayname) &&
+        Objects.equals(this.id, busordersource.id) &&
+        Objects.equals(this.classid, busordersource.classid) &&
+        Objects.equals(this.objversion, busordersource.objversion) &&
+        Objects.equals(this.parentId, busordersource.parentId) &&
+        Objects.equals(this.posindex, busordersource.posindex) &&
+        Objects.equals(this.sourceroleId, busordersource.sourceroleId) &&
+        Objects.equals(this.sourceorder, busordersource.sourceorder) &&
         Objects.equals(this.description, busordersource.description) &&
-        Objects.equals(this.cRMActivityAreaID, busordersource.cRMActivityAreaID) &&
-        Objects.equals(this.cRMActivityTypeID, busordersource.cRMActivityTypeID) &&
-        Objects.equals(this.cRMActivityQueueID, busordersource.cRMActivityQueueID) &&
-        Objects.equals(this.plannedTotalHours, busordersource.plannedTotalHours) &&
-        Objects.equals(this.realTotalHours, busordersource.realTotalHours) &&
-        Objects.equals(this.canExceedPlan, busordersource.canExceedPlan) &&
+        Objects.equals(this.crmactivityareaId, busordersource.crmactivityareaId) &&
+        Objects.equals(this.crmactivitytypeId, busordersource.crmactivitytypeId) &&
+        Objects.equals(this.crmactivityqueueId, busordersource.crmactivityqueueId) &&
+        Objects.equals(this.plannedtotalhours, busordersource.plannedtotalhours) &&
+        Objects.equals(this.realtotalhours, busordersource.realtotalhours) &&
+        Objects.equals(this.canexceedplan, busordersource.canexceedplan) &&
         Objects.equals(this.invoicing, busordersource.invoicing) &&
-        Objects.equals(this.salePriceType, busordersource.salePriceType) &&
-        Objects.equals(this.hourRate, busordersource.hourRate) &&
-        Objects.equals(this.overTimeHourRate, busordersource.overTimeHourRate) &&
-        Objects.equals(this.vATRateID, busordersource.vATRateID) &&
-        Objects.equals(this.costHourRate, busordersource.costHourRate) &&
-        Objects.equals(this.storeCardID, busordersource.storeCardID) &&
-        Objects.equals(this.storeUnitID, busordersource.storeUnitID) &&
-        Objects.equals(this.storeID, busordersource.storeID) &&
-        Objects.equals(this.priceDefinition1ID, busordersource.priceDefinition1ID) &&
-        Objects.equals(this.priceDefinition2ID, busordersource.priceDefinition2ID) &&
+        Objects.equals(this.salepricetype, busordersource.salepricetype) &&
+        Objects.equals(this.hourrate, busordersource.hourrate) &&
+        Objects.equals(this.overtimehourrate, busordersource.overtimehourrate) &&
+        Objects.equals(this.vatrateId, busordersource.vatrateId) &&
+        Objects.equals(this.costhourrate, busordersource.costhourrate) &&
+        Objects.equals(this.storecardId, busordersource.storecardId) &&
+        Objects.equals(this.storeunitId, busordersource.storeunitId) &&
+        Objects.equals(this.storeId, busordersource.storeId) &&
+        Objects.equals(this.pricedefinition1Id, busordersource.pricedefinition1Id) &&
+        Objects.equals(this.pricedefinition2Id, busordersource.pricedefinition2Id) &&
         Objects.equals(this.finished, busordersource.finished) &&
         Objects.equals(this.note, busordersource.note) &&
-        Objects.equals(this.divisionID, busordersource.divisionID) &&
-        Objects.equals(this.busTransactionID, busordersource.busTransactionID) &&
-        Objects.equals(this.busProjectID, busordersource.busProjectID);
+        Objects.equals(this.divisionId, busordersource.divisionId) &&
+        Objects.equals(this.bustransactionId, busordersource.bustransactionId) &&
+        Objects.equals(this.busprojectId, busordersource.busprojectId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, sourceRoleID, sourceOrder, description, cRMActivityAreaID, cRMActivityTypeID, cRMActivityQueueID, plannedTotalHours, realTotalHours, canExceedPlan, invoicing, salePriceType, hourRate, overTimeHourRate, vATRateID, costHourRate, storeCardID, storeUnitID, storeID, priceDefinition1ID, priceDefinition2ID, finished, note, divisionID, busTransactionID, busProjectID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, sourceroleId, sourceorder, description, crmactivityareaId, crmactivitytypeId, crmactivityqueueId, plannedtotalhours, realtotalhours, canexceedplan, invoicing, salepricetype, hourrate, overtimehourrate, vatrateId, costhourrate, storecardId, storeunitId, storeId, pricedefinition1Id, pricedefinition2Id, finished, note, divisionId, bustransactionId, busprojectId);
   }
 
   @Override
@@ -695,37 +740,37 @@ public class Busordersource   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Busordersource {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    sourceRoleID: ").append(toIndentedString(sourceRoleID)).append("\n");
-    sb.append("    sourceOrder: ").append(toIndentedString(sourceOrder)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    sourceroleId: ").append(toIndentedString(sourceroleId)).append("\n");
+    sb.append("    sourceorder: ").append(toIndentedString(sourceorder)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    cRMActivityAreaID: ").append(toIndentedString(cRMActivityAreaID)).append("\n");
-    sb.append("    cRMActivityTypeID: ").append(toIndentedString(cRMActivityTypeID)).append("\n");
-    sb.append("    cRMActivityQueueID: ").append(toIndentedString(cRMActivityQueueID)).append("\n");
-    sb.append("    plannedTotalHours: ").append(toIndentedString(plannedTotalHours)).append("\n");
-    sb.append("    realTotalHours: ").append(toIndentedString(realTotalHours)).append("\n");
-    sb.append("    canExceedPlan: ").append(toIndentedString(canExceedPlan)).append("\n");
+    sb.append("    crmactivityareaId: ").append(toIndentedString(crmactivityareaId)).append("\n");
+    sb.append("    crmactivitytypeId: ").append(toIndentedString(crmactivitytypeId)).append("\n");
+    sb.append("    crmactivityqueueId: ").append(toIndentedString(crmactivityqueueId)).append("\n");
+    sb.append("    plannedtotalhours: ").append(toIndentedString(plannedtotalhours)).append("\n");
+    sb.append("    realtotalhours: ").append(toIndentedString(realtotalhours)).append("\n");
+    sb.append("    canexceedplan: ").append(toIndentedString(canexceedplan)).append("\n");
     sb.append("    invoicing: ").append(toIndentedString(invoicing)).append("\n");
-    sb.append("    salePriceType: ").append(toIndentedString(salePriceType)).append("\n");
-    sb.append("    hourRate: ").append(toIndentedString(hourRate)).append("\n");
-    sb.append("    overTimeHourRate: ").append(toIndentedString(overTimeHourRate)).append("\n");
-    sb.append("    vATRateID: ").append(toIndentedString(vATRateID)).append("\n");
-    sb.append("    costHourRate: ").append(toIndentedString(costHourRate)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    storeUnitID: ").append(toIndentedString(storeUnitID)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    priceDefinition1ID: ").append(toIndentedString(priceDefinition1ID)).append("\n");
-    sb.append("    priceDefinition2ID: ").append(toIndentedString(priceDefinition2ID)).append("\n");
+    sb.append("    salepricetype: ").append(toIndentedString(salepricetype)).append("\n");
+    sb.append("    hourrate: ").append(toIndentedString(hourrate)).append("\n");
+    sb.append("    overtimehourrate: ").append(toIndentedString(overtimehourrate)).append("\n");
+    sb.append("    vatrateId: ").append(toIndentedString(vatrateId)).append("\n");
+    sb.append("    costhourrate: ").append(toIndentedString(costhourrate)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    storeunitId: ").append(toIndentedString(storeunitId)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    pricedefinition1Id: ").append(toIndentedString(pricedefinition1Id)).append("\n");
+    sb.append("    pricedefinition2Id: ").append(toIndentedString(pricedefinition2Id)).append("\n");
     sb.append("    finished: ").append(toIndentedString(finished)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

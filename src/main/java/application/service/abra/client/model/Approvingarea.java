@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,75 +37,111 @@ import java.util.Objects;
 /**
  * Approvingarea
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Approvingarea   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Approvingareacriterion> rows = new ArrayList<Approvingareacriterion>();
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("StoreCards")
-  private List<Approvingareastorecard> storeCards = new ArrayList<Approvingareastorecard>();
+  @SerializedName("storecards")
+  private List<Approvingareastorecard> storecards = new ArrayList<Approvingareastorecard>();
 
-  @SerializedName("TypeDefinition")
-  private Integer typeDefinition = null;
+  @SerializedName("typedefinition")
+  private Integer typedefinition = null;
 
-  @SerializedName("StoreMenus")
-  private List<Approvingareastoremenu> storeMenus = new ArrayList<Approvingareastoremenu>();
+  @SerializedName("storemenus")
+  private List<Approvingareastoremenu> storemenus = new ArrayList<Approvingareastoremenu>();
 
-  @SerializedName("ApprovalFromDate")
-  private LocalDate approvalFromDate = null;
+  @SerializedName("approvalfromdate")
+  private LocalDate approvalfromdate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Approvingarea displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Approvingarea id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Approvingarea classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Approvingarea objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Approvingarea rows(List<Approvingareacriterion> rows) {
@@ -119,10 +155,10 @@ public class Approvingarea   {
   }
 
    /**
-   * Řádky; kolekce BO Oblast hodnocení - hodnotící kritérium [nepersistentní položka]
+   * Řádky; kolekce bo oblast hodnocení - hodnotící kritérium [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Oblast hodnocení - hodnotící kritérium [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo oblast hodnocení - hodnotící kritérium [nepersistentní položka]")
   public List<Approvingareacriterion> getRows() {
     return rows;
   }
@@ -137,10 +173,10 @@ public class Approvingarea   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -155,10 +191,10 @@ public class Approvingarea   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -167,86 +203,86 @@ public class Approvingarea   {
     this.name = name;
   }
 
-  public Approvingarea storeCards(List<Approvingareastorecard> storeCards) {
-    this.storeCards = storeCards;
+  public Approvingarea storecards(List<Approvingareastorecard> storecards) {
+    this.storecards = storecards;
     return this;
   }
 
-  public Approvingarea addStoreCardsItem(Approvingareastorecard storeCardsItem) {
-    this.storeCards.add(storeCardsItem);
-    return this;
-  }
-
-   /**
-   * Skladové karty; kolekce BO Oblast hodnocení - skladová karta [nepersistentní položka]
-   * @return storeCards
-  **/
-  @ApiModelProperty(example = "null", value = "Skladové karty; kolekce BO Oblast hodnocení - skladová karta [nepersistentní položka]")
-  public List<Approvingareastorecard> getStoreCards() {
-    return storeCards;
-  }
-
-  public void setStoreCards(List<Approvingareastorecard> storeCards) {
-    this.storeCards = storeCards;
-  }
-
-  public Approvingarea typeDefinition(Integer typeDefinition) {
-    this.typeDefinition = typeDefinition;
+  public Approvingarea addStorecardsItem(Approvingareastorecard storecardsItem) {
+    this.storecards.add(storecardsItem);
     return this;
   }
 
    /**
-   * Typ vymezení [persistentní položka]
-   * @return typeDefinition
+   * skladové karty; kolekce bo oblast hodnocení - skladová karta [nepersistentní položka]
+   * @return storecards
   **/
-  @ApiModelProperty(example = "null", value = "Typ vymezení [persistentní položka]")
-  public Integer getTypeDefinition() {
-    return typeDefinition;
+  @ApiModelProperty(example = "null", value = "skladové karty; kolekce bo oblast hodnocení - skladová karta [nepersistentní položka]")
+  public List<Approvingareastorecard> getStorecards() {
+    return storecards;
   }
 
-  public void setTypeDefinition(Integer typeDefinition) {
-    this.typeDefinition = typeDefinition;
+  public void setStorecards(List<Approvingareastorecard> storecards) {
+    this.storecards = storecards;
   }
 
-  public Approvingarea storeMenus(List<Approvingareastoremenu> storeMenus) {
-    this.storeMenus = storeMenus;
-    return this;
-  }
-
-  public Approvingarea addStoreMenusItem(Approvingareastoremenu storeMenusItem) {
-    this.storeMenus.add(storeMenusItem);
+  public Approvingarea typedefinition(Integer typedefinition) {
+    this.typedefinition = typedefinition;
     return this;
   }
 
    /**
-   * Skladové menu; kolekce BO Oblast hodnocení - skladové menu [nepersistentní položka]
-   * @return storeMenus
+   * typ vymezení [persistentní položka]
+   * @return typedefinition
   **/
-  @ApiModelProperty(example = "null", value = "Skladové menu; kolekce BO Oblast hodnocení - skladové menu [nepersistentní položka]")
-  public List<Approvingareastoremenu> getStoreMenus() {
-    return storeMenus;
+  @ApiModelProperty(example = "null", value = "typ vymezení [persistentní položka]")
+  public Integer getTypedefinition() {
+    return typedefinition;
   }
 
-  public void setStoreMenus(List<Approvingareastoremenu> storeMenus) {
-    this.storeMenus = storeMenus;
+  public void setTypedefinition(Integer typedefinition) {
+    this.typedefinition = typedefinition;
   }
 
-  public Approvingarea approvalFromDate(LocalDate approvalFromDate) {
-    this.approvalFromDate = approvalFromDate;
+  public Approvingarea storemenus(List<Approvingareastoremenu> storemenus) {
+    this.storemenus = storemenus;
+    return this;
+  }
+
+  public Approvingarea addStoremenusItem(Approvingareastoremenu storemenusItem) {
+    this.storemenus.add(storemenusItem);
     return this;
   }
 
    /**
-   * Schvalování od [persistentní položka]
-   * @return approvalFromDate
+   * skladové menu; kolekce bo oblast hodnocení - skladové menu [nepersistentní položka]
+   * @return storemenus
   **/
-  @ApiModelProperty(example = "null", value = "Schvalování od [persistentní položka]")
-  public LocalDate getApprovalFromDate() {
-    return approvalFromDate;
+  @ApiModelProperty(example = "null", value = "skladové menu; kolekce bo oblast hodnocení - skladové menu [nepersistentní položka]")
+  public List<Approvingareastoremenu> getStoremenus() {
+    return storemenus;
   }
 
-  public void setApprovalFromDate(LocalDate approvalFromDate) {
-    this.approvalFromDate = approvalFromDate;
+  public void setStoremenus(List<Approvingareastoremenu> storemenus) {
+    this.storemenus = storemenus;
+  }
+
+  public Approvingarea approvalfromdate(LocalDate approvalfromdate) {
+    this.approvalfromdate = approvalfromdate;
+    return this;
+  }
+
+   /**
+   * schvalování od [persistentní položka]
+   * @return approvalfromdate
+  **/
+  @ApiModelProperty(example = "null", value = "schvalování od [persistentní položka]")
+  public LocalDate getApprovalfromdate() {
+    return approvalfromdate;
+  }
+
+  public void setApprovalfromdate(LocalDate approvalfromdate) {
+    this.approvalfromdate = approvalfromdate;
   }
 
 
@@ -259,22 +295,22 @@ public class Approvingarea   {
       return false;
     }
     Approvingarea approvingarea = (Approvingarea) o;
-    return Objects.equals(this.displayName, approvingarea.displayName) &&
-        Objects.equals(this.ID, approvingarea.ID) &&
-        Objects.equals(this.classID, approvingarea.classID) &&
-        Objects.equals(this.objVersion, approvingarea.objVersion) &&
+    return Objects.equals(this.displayname, approvingarea.displayname) &&
+        Objects.equals(this.id, approvingarea.id) &&
+        Objects.equals(this.classid, approvingarea.classid) &&
+        Objects.equals(this.objversion, approvingarea.objversion) &&
         Objects.equals(this.rows, approvingarea.rows) &&
         Objects.equals(this.code, approvingarea.code) &&
         Objects.equals(this.name, approvingarea.name) &&
-        Objects.equals(this.storeCards, approvingarea.storeCards) &&
-        Objects.equals(this.typeDefinition, approvingarea.typeDefinition) &&
-        Objects.equals(this.storeMenus, approvingarea.storeMenus) &&
-        Objects.equals(this.approvalFromDate, approvingarea.approvalFromDate);
+        Objects.equals(this.storecards, approvingarea.storecards) &&
+        Objects.equals(this.typedefinition, approvingarea.typedefinition) &&
+        Objects.equals(this.storemenus, approvingarea.storemenus) &&
+        Objects.equals(this.approvalfromdate, approvingarea.approvalfromdate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, code, name, storeCards, typeDefinition, storeMenus, approvalFromDate);
+    return Objects.hash(displayname, id, classid, objversion, rows, code, name, storecards, typedefinition, storemenus, approvalfromdate);
   }
 
   @Override
@@ -282,17 +318,17 @@ public class Approvingarea   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Approvingarea {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    storeCards: ").append(toIndentedString(storeCards)).append("\n");
-    sb.append("    typeDefinition: ").append(toIndentedString(typeDefinition)).append("\n");
-    sb.append("    storeMenus: ").append(toIndentedString(storeMenus)).append("\n");
-    sb.append("    approvalFromDate: ").append(toIndentedString(approvalFromDate)).append("\n");
+    sb.append("    storecards: ").append(toIndentedString(storecards)).append("\n");
+    sb.append("    typedefinition: ").append(toIndentedString(typedefinition)).append("\n");
+    sb.append("    storemenus: ").append(toIndentedString(storemenus)).append("\n");
+    sb.append("    approvalfromdate: ").append(toIndentedString(approvalfromdate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

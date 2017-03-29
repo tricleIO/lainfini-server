@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,99 +34,144 @@ import java.util.Objects;
 /**
  * Installsetversionrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Installsetversionrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("ISClassID")
-  private String iSClassID = null;
+  @SerializedName("isclassid")
+  private String isclassid = null;
 
-  @SerializedName("Identifier")
+  @SerializedName("identifier")
   private String identifier = null;
 
-  @SerializedName("ISClassIDText")
-  private String iSClassIDText = null;
+  @SerializedName("isclassidtext")
+  private String isclassidtext = null;
 
-  @SerializedName("KindName")
-  private String kindName = null;
+  @SerializedName("kindname")
+  private String kindname = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Verze instalační sady [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Verze instalační sady [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Installsetversionrow iSClassID(String iSClassID) {
-    this.iSClassID = iSClassID;
+  public Installsetversionrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Třída [persistentní položka]
-   * @return iSClassID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Třída [persistentní položka]")
-  public String getISClassID() {
-    return iSClassID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setISClassID(String iSClassID) {
-    this.iSClassID = iSClassID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Installsetversionrow id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Installsetversionrow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Installsetversionrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Installsetversionrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu verze instalační sady [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu verze instalační sady [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Installsetversionrow isclassid(String isclassid) {
+    this.isclassid = isclassid;
+    return this;
+  }
+
+   /**
+   * třída [persistentní položka]
+   * @return isclassid
+  **/
+  @ApiModelProperty(example = "null", value = "třída [persistentní položka]")
+  public String getIsclassid() {
+    return isclassid;
+  }
+
+  public void setIsclassid(String isclassid) {
+    this.isclassid = isclassid;
   }
 
   public Installsetversionrow identifier(String identifier) {
@@ -135,10 +180,10 @@ public class Installsetversionrow   {
   }
 
    /**
-   * Identifikátor [persistentní položka]
+   * identifikátor [persistentní položka]
    * @return identifier
   **/
-  @ApiModelProperty(example = "null", value = "Identifikátor [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "identifikátor [persistentní položka]")
   public String getIdentifier() {
     return identifier;
   }
@@ -147,40 +192,40 @@ public class Installsetversionrow   {
     this.identifier = identifier;
   }
 
-  public Installsetversionrow iSClassIDText(String iSClassIDText) {
-    this.iSClassIDText = iSClassIDText;
+  public Installsetversionrow isclassidtext(String isclassidtext) {
+    this.isclassidtext = isclassidtext;
     return this;
   }
 
    /**
-   * Typ položky
-   * @return iSClassIDText
+   * typ položky
+   * @return isclassidtext
   **/
-  @ApiModelProperty(example = "null", value = "Typ položky")
-  public String getISClassIDText() {
-    return iSClassIDText;
+  @ApiModelProperty(example = "null", value = "typ položky")
+  public String getIsclassidtext() {
+    return isclassidtext;
   }
 
-  public void setISClassIDText(String iSClassIDText) {
-    this.iSClassIDText = iSClassIDText;
+  public void setIsclassidtext(String isclassidtext) {
+    this.isclassidtext = isclassidtext;
   }
 
-  public Installsetversionrow kindName(String kindName) {
-    this.kindName = kindName;
+  public Installsetversionrow kindname(String kindname) {
+    this.kindname = kindname;
     return this;
   }
 
    /**
-   * Zařazení
-   * @return kindName
+   * zařazení
+   * @return kindname
   **/
-  @ApiModelProperty(example = "null", value = "Zařazení")
-  public String getKindName() {
-    return kindName;
+  @ApiModelProperty(example = "null", value = "zařazení")
+  public String getKindname() {
+    return kindname;
   }
 
-  public void setKindName(String kindName) {
-    this.kindName = kindName;
+  public void setKindname(String kindname) {
+    this.kindname = kindname;
   }
 
   public Installsetversionrow name(String name) {
@@ -189,10 +234,10 @@ public class Installsetversionrow   {
   }
 
    /**
-   * Název
+   * název
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název")
+  @ApiModelProperty(example = "null", value = "název")
   public String getName() {
     return name;
   }
@@ -211,21 +256,21 @@ public class Installsetversionrow   {
       return false;
     }
     Installsetversionrow installsetversionrow = (Installsetversionrow) o;
-    return Objects.equals(this.displayName, installsetversionrow.displayName) &&
-        Objects.equals(this.ID, installsetversionrow.ID) &&
-        Objects.equals(this.classID, installsetversionrow.classID) &&
-        Objects.equals(this.objVersion, installsetversionrow.objVersion) &&
-        Objects.equals(this.parentID, installsetversionrow.parentID) &&
-        Objects.equals(this.iSClassID, installsetversionrow.iSClassID) &&
+    return Objects.equals(this.displayname, installsetversionrow.displayname) &&
+        Objects.equals(this.id, installsetversionrow.id) &&
+        Objects.equals(this.classid, installsetversionrow.classid) &&
+        Objects.equals(this.objversion, installsetversionrow.objversion) &&
+        Objects.equals(this.parentId, installsetversionrow.parentId) &&
+        Objects.equals(this.isclassid, installsetversionrow.isclassid) &&
         Objects.equals(this.identifier, installsetversionrow.identifier) &&
-        Objects.equals(this.iSClassIDText, installsetversionrow.iSClassIDText) &&
-        Objects.equals(this.kindName, installsetversionrow.kindName) &&
+        Objects.equals(this.isclassidtext, installsetversionrow.isclassidtext) &&
+        Objects.equals(this.kindname, installsetversionrow.kindname) &&
         Objects.equals(this.name, installsetversionrow.name);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, iSClassID, identifier, iSClassIDText, kindName, name);
+    return Objects.hash(displayname, id, classid, objversion, parentId, isclassid, identifier, isclassidtext, kindname, name);
   }
 
   @Override
@@ -233,15 +278,15 @@ public class Installsetversionrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Installsetversionrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    iSClassID: ").append(toIndentedString(iSClassID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    isclassid: ").append(toIndentedString(isclassid)).append("\n");
     sb.append("    identifier: ").append(toIndentedString(identifier)).append("\n");
-    sb.append("    iSClassIDText: ").append(toIndentedString(iSClassIDText)).append("\n");
-    sb.append("    kindName: ").append(toIndentedString(kindName)).append("\n");
+    sb.append("    isclassidtext: ").append(toIndentedString(isclassidtext)).append("\n");
+    sb.append("    kindname: ").append(toIndentedString(kindname)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("}");
     return sb.toString();

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,78 +35,114 @@ import java.util.Objects;
 /**
  * Workposition
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Workposition   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("ValidFrom$DATE")
-  private DateTime validFromDATE = null;
+  @SerializedName("validfrom$date")
+  private DateTime validfromdate = null;
 
-  @SerializedName("ValidTo$DATE")
-  private DateTime validToDATE = null;
+  @SerializedName("validto$date")
+  private DateTime validtodate = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("JobClasification_ID")
-  private String jobClasificationID = null;
+  @SerializedName("jobclasification_id")
+  private String jobclasificationId = null;
 
-  @SerializedName("JobClasificationISCO_ID")
-  private String jobClasificationISCOID = null;
+  @SerializedName("jobclasificationisco_id")
+  private String jobclasificationiscoId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Workposition displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Workposition id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Workposition classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Workposition objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Workposition hidden(Boolean hidden) {
@@ -115,10 +151,10 @@ public class Workposition   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -127,58 +163,58 @@ public class Workposition   {
     this.hidden = hidden;
   }
 
-  public Workposition parentID(String parentID) {
-    this.parentID = parentID;
+  public Workposition parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Nadřízená funkce; ID objektu Pracovní zařazení [persistentní položka]
-   * @return parentID
+   * nadřízená funkce; id objektu pracovní zařazení [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízená funkce; ID objektu Pracovní zařazení [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "nadřízená funkce; id objektu pracovní zařazení [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setParentID(String parentID) {
-    this.parentID = parentID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Workposition validFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public Workposition validfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
     return this;
   }
 
    /**
-   * Platí od [persistentní položka]
-   * @return validFromDATE
+   * platí od [persistentní položka]
+   * @return validfromdate
   **/
-  @ApiModelProperty(example = "null", value = "Platí od [persistentní položka]")
-  public DateTime getValidFromDATE() {
-    return validFromDATE;
+  @ApiModelProperty(example = "null", value = "platí od [persistentní položka]")
+  public DateTime getValidfromdate() {
+    return validfromdate;
   }
 
-  public void setValidFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public void setValidfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
   }
 
-  public Workposition validToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public Workposition validtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
     return this;
   }
 
    /**
-   * Platí do [persistentní položka]
-   * @return validToDATE
+   * platí do [persistentní položka]
+   * @return validtodate
   **/
-  @ApiModelProperty(example = "null", value = "Platí do [persistentní položka]")
-  public DateTime getValidToDATE() {
-    return validToDATE;
+  @ApiModelProperty(example = "null", value = "platí do [persistentní položka]")
+  public DateTime getValidtodate() {
+    return validtodate;
   }
 
-  public void setValidToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public void setValidtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
   }
 
   public Workposition code(String code) {
@@ -187,10 +223,10 @@ public class Workposition   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -205,10 +241,10 @@ public class Workposition   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -217,40 +253,40 @@ public class Workposition   {
     this.name = name;
   }
 
-  public Workposition jobClasificationID(String jobClasificationID) {
-    this.jobClasificationID = jobClasificationID;
+  public Workposition jobclasificationId(String jobclasificationId) {
+    this.jobclasificationId = jobclasificationId;
     return this;
   }
 
    /**
-   * Klasifikace zam.; ID objektu Klasifikace zaměstnání [persistentní položka]
-   * @return jobClasificationID
+   * klasifikace zam.; id objektu klasifikace zaměstnání [persistentní položka]
+   * @return jobclasificationId
   **/
-  @ApiModelProperty(example = "null", value = "Klasifikace zam.; ID objektu Klasifikace zaměstnání [persistentní položka]")
-  public String getJobClasificationID() {
-    return jobClasificationID;
+  @ApiModelProperty(example = "null", value = "klasifikace zam.; id objektu klasifikace zaměstnání [persistentní položka]")
+  public String getJobclasificationId() {
+    return jobclasificationId;
   }
 
-  public void setJobClasificationID(String jobClasificationID) {
-    this.jobClasificationID = jobClasificationID;
+  public void setJobclasificationId(String jobclasificationId) {
+    this.jobclasificationId = jobclasificationId;
   }
 
-  public Workposition jobClasificationISCOID(String jobClasificationISCOID) {
-    this.jobClasificationISCOID = jobClasificationISCOID;
+  public Workposition jobclasificationiscoId(String jobclasificationiscoId) {
+    this.jobclasificationiscoId = jobclasificationiscoId;
     return this;
   }
 
    /**
-   * Klasifikace zam. ISCO; ID objektu Klasifikace zaměstnání ISCO [persistentní položka]
-   * @return jobClasificationISCOID
+   * klasifikace zam. isco; id objektu klasifikace zaměstnání isco [persistentní položka]
+   * @return jobclasificationiscoId
   **/
-  @ApiModelProperty(example = "null", value = "Klasifikace zam. ISCO; ID objektu Klasifikace zaměstnání ISCO [persistentní položka]")
-  public String getJobClasificationISCOID() {
-    return jobClasificationISCOID;
+  @ApiModelProperty(example = "null", value = "klasifikace zam. isco; id objektu klasifikace zaměstnání isco [persistentní položka]")
+  public String getJobclasificationiscoId() {
+    return jobclasificationiscoId;
   }
 
-  public void setJobClasificationISCOID(String jobClasificationISCOID) {
-    this.jobClasificationISCOID = jobClasificationISCOID;
+  public void setJobclasificationiscoId(String jobclasificationiscoId) {
+    this.jobclasificationiscoId = jobclasificationiscoId;
   }
 
 
@@ -263,23 +299,23 @@ public class Workposition   {
       return false;
     }
     Workposition workposition = (Workposition) o;
-    return Objects.equals(this.displayName, workposition.displayName) &&
-        Objects.equals(this.ID, workposition.ID) &&
-        Objects.equals(this.classID, workposition.classID) &&
-        Objects.equals(this.objVersion, workposition.objVersion) &&
+    return Objects.equals(this.displayname, workposition.displayname) &&
+        Objects.equals(this.id, workposition.id) &&
+        Objects.equals(this.classid, workposition.classid) &&
+        Objects.equals(this.objversion, workposition.objversion) &&
         Objects.equals(this.hidden, workposition.hidden) &&
-        Objects.equals(this.parentID, workposition.parentID) &&
-        Objects.equals(this.validFromDATE, workposition.validFromDATE) &&
-        Objects.equals(this.validToDATE, workposition.validToDATE) &&
+        Objects.equals(this.parentId, workposition.parentId) &&
+        Objects.equals(this.validfromdate, workposition.validfromdate) &&
+        Objects.equals(this.validtodate, workposition.validtodate) &&
         Objects.equals(this.code, workposition.code) &&
         Objects.equals(this.name, workposition.name) &&
-        Objects.equals(this.jobClasificationID, workposition.jobClasificationID) &&
-        Objects.equals(this.jobClasificationISCOID, workposition.jobClasificationISCOID);
+        Objects.equals(this.jobclasificationId, workposition.jobclasificationId) &&
+        Objects.equals(this.jobclasificationiscoId, workposition.jobclasificationiscoId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, parentID, validFromDATE, validToDATE, code, name, jobClasificationID, jobClasificationISCOID);
+    return Objects.hash(displayname, id, classid, objversion, hidden, parentId, validfromdate, validtodate, code, name, jobclasificationId, jobclasificationiscoId);
   }
 
   @Override
@@ -287,18 +323,18 @@ public class Workposition   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Workposition {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    validFromDATE: ").append(toIndentedString(validFromDATE)).append("\n");
-    sb.append("    validToDATE: ").append(toIndentedString(validToDATE)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    validfromdate: ").append(toIndentedString(validfromdate)).append("\n");
+    sb.append("    validtodate: ").append(toIndentedString(validtodate)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    jobClasificationID: ").append(toIndentedString(jobClasificationID)).append("\n");
-    sb.append("    jobClasificationISCOID: ").append(toIndentedString(jobClasificationISCOID)).append("\n");
+    sb.append("    jobclasificationId: ").append(toIndentedString(jobclasificationId)).append("\n");
+    sb.append("    jobclasificationiscoId: ").append(toIndentedString(jobclasificationiscoId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

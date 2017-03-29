@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,606 +35,678 @@ import java.util.Objects;
 /**
  * Absence
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Absence   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("WorkingRelation_ID")
-  private String workingRelationID = null;
+  @SerializedName("workingrelation_id")
+  private String workingrelationId = null;
 
-  @SerializedName("Absence_ID")
-  private String absenceID = null;
+  @SerializedName("absence_id")
+  private String absenceId = null;
 
-  @SerializedName("AbsenceBaseType")
-  private Integer absenceBaseType = null;
+  @SerializedName("absencebasetype")
+  private Integer absencebasetype = null;
 
-  @SerializedName("AbsentFrom$DATE")
-  private DateTime absentFromDATE = null;
+  @SerializedName("absentfrom$date")
+  private DateTime absentfromdate = null;
 
-  @SerializedName("AbsentTo$DATE")
-  private DateTime absentToDATE = null;
+  @SerializedName("absentto$date")
+  private DateTime absenttodate = null;
 
-  @SerializedName("FirstDay")
-  private Double firstDay = null;
+  @SerializedName("firstday")
+  private Double firstday = null;
 
-  @SerializedName("GiveCalendarDays")
-  private Boolean giveCalendarDays = null;
+  @SerializedName("givecalendardays")
+  private Boolean givecalendardays = null;
 
-  @SerializedName("NoEvidenceState")
-  private Boolean noEvidenceState = null;
+  @SerializedName("noevidencestate")
+  private Boolean noevidencestate = null;
 
-  @SerializedName("NoCalculation")
-  private Boolean noCalculation = null;
+  @SerializedName("nocalculation")
+  private Boolean nocalculation = null;
 
-  @SerializedName("ExTimeType")
-  private Integer exTimeType = null;
+  @SerializedName("extimetype")
+  private Integer extimetype = null;
 
-  @SerializedName("NoInsurance")
-  private Boolean noInsurance = null;
+  @SerializedName("noinsurance")
+  private Boolean noinsurance = null;
 
-  @SerializedName("PaidFreeType")
-  private Integer paidFreeType = null;
+  @SerializedName("paidfreetype")
+  private Integer paidfreetype = null;
 
-  @SerializedName("ImportSource_ID")
-  private String importSourceID = null;
+  @SerializedName("importsource_id")
+  private String importsourceId = null;
 
-  @SerializedName("Employee_ID")
-  private String employeeID = null;
+  @SerializedName("employee_id")
+  private String employeeId = null;
 
-  @SerializedName("AbsenceBaseType_Text")
-  private String absenceBaseTypeText = null;
+  @SerializedName("absencebasetype_text")
+  private String absencebasetypeText = null;
 
-  @SerializedName("ExTimeType_Text")
-  private String exTimeTypeText = null;
+  @SerializedName("extimetype_text")
+  private String extimetypeText = null;
 
-  @SerializedName("EmployeeName")
-  private String employeeName = null;
+  @SerializedName("employeename")
+  private String employeename = null;
 
-  @SerializedName("PERS_PersonalNumber")
-  private String pERSPersonalNumber = null;
+  @SerializedName("pers_personalnumber")
+  private String persPersonalnumber = null;
 
-  @SerializedName("PaidFreeTypeText")
-  private String paidFreeTypeText = null;
+  @SerializedName("paidfreetypetext")
+  private String paidfreetypetext = null;
 
-  @SerializedName("LastDay")
-  private Double lastDay = null;
+  @SerializedName("lastday")
+  private Double lastday = null;
+
+  public Absence displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
   }
 
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Absence docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Absence id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Absence periodID(String periodID) {
-    this.periodID = periodID;
+  public Absence classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Absence ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Absence objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Absence docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Absence docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Absence createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Absence periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Absence correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Absence ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Absence newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Absence docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Absence newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Absence createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Absence workingRelationID(String workingRelationID) {
-    this.workingRelationID = workingRelationID;
+  public Absence correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Pracovní poměr; ID objektu Pracovní poměr [persistentní položka]
-   * @return workingRelationID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Pracovní poměr; ID objektu Pracovní poměr [persistentní položka]")
-  public String getWorkingRelationID() {
-    return workingRelationID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setWorkingRelationID(String workingRelationID) {
-    this.workingRelationID = workingRelationID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Absence absenceID(String absenceID) {
-    this.absenceID = absenceID;
+  public Absence newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Druh nepřítomnosti; ID objektu Druh nepřítomnosti [persistentní položka]
-   * @return absenceID
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Druh nepřítomnosti; ID objektu Druh nepřítomnosti [persistentní položka]")
-  public String getAbsenceID() {
-    return absenceID;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setAbsenceID(String absenceID) {
-    this.absenceID = absenceID;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Absence absenceBaseType(Integer absenceBaseType) {
-    this.absenceBaseType = absenceBaseType;
+  public Absence newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * Základní typ [persistentní položka]
-   * @return absenceBaseType
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "Základní typ [persistentní položka]")
-  public Integer getAbsenceBaseType() {
-    return absenceBaseType;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setAbsenceBaseType(Integer absenceBaseType) {
-    this.absenceBaseType = absenceBaseType;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Absence absentFromDATE(DateTime absentFromDATE) {
-    this.absentFromDATE = absentFromDATE;
+  public Absence workingrelationId(String workingrelationId) {
+    this.workingrelationId = workingrelationId;
     return this;
   }
 
    /**
-   * Počátek nepřítomnosti [persistentní položka]
-   * @return absentFromDATE
+   * pracovní poměr; id objektu pracovní poměr [persistentní položka]
+   * @return workingrelationId
   **/
-  @ApiModelProperty(example = "null", value = "Počátek nepřítomnosti [persistentní položka]")
-  public DateTime getAbsentFromDATE() {
-    return absentFromDATE;
+  @ApiModelProperty(example = "null", value = "pracovní poměr; id objektu pracovní poměr [persistentní položka]")
+  public String getWorkingrelationId() {
+    return workingrelationId;
   }
 
-  public void setAbsentFromDATE(DateTime absentFromDATE) {
-    this.absentFromDATE = absentFromDATE;
+  public void setWorkingrelationId(String workingrelationId) {
+    this.workingrelationId = workingrelationId;
   }
 
-  public Absence absentToDATE(DateTime absentToDATE) {
-    this.absentToDATE = absentToDATE;
+  public Absence absenceId(String absenceId) {
+    this.absenceId = absenceId;
     return this;
   }
 
    /**
-   * Konec nepřítomnosti [persistentní položka]
-   * @return absentToDATE
+   * druh nepřítomnosti; id objektu druh nepřítomnosti [persistentní položka]
+   * @return absenceId
   **/
-  @ApiModelProperty(example = "null", value = "Konec nepřítomnosti [persistentní položka]")
-  public DateTime getAbsentToDATE() {
-    return absentToDATE;
+  @ApiModelProperty(example = "null", value = "druh nepřítomnosti; id objektu druh nepřítomnosti [persistentní položka]")
+  public String getAbsenceId() {
+    return absenceId;
   }
 
-  public void setAbsentToDATE(DateTime absentToDATE) {
-    this.absentToDATE = absentToDATE;
+  public void setAbsenceId(String absenceId) {
+    this.absenceId = absenceId;
   }
 
-  public Absence firstDay(Double firstDay) {
-    this.firstDay = firstDay;
+  public Absence absencebasetype(Integer absencebasetype) {
+    this.absencebasetype = absencebasetype;
     return this;
   }
 
    /**
-   * Nepřítomnost v prvém dni [persistentní položka]
-   * @return firstDay
+   * základní typ [persistentní položka]
+   * @return absencebasetype
   **/
-  @ApiModelProperty(example = "null", value = "Nepřítomnost v prvém dni [persistentní položka]")
-  public Double getFirstDay() {
-    return firstDay;
+  @ApiModelProperty(example = "null", value = "základní typ [persistentní položka]")
+  public Integer getAbsencebasetype() {
+    return absencebasetype;
   }
 
-  public void setFirstDay(Double firstDay) {
-    this.firstDay = firstDay;
+  public void setAbsencebasetype(Integer absencebasetype) {
+    this.absencebasetype = absencebasetype;
   }
 
-  public Absence giveCalendarDays(Boolean giveCalendarDays) {
-    this.giveCalendarDays = giveCalendarDays;
+  public Absence absentfromdate(DateTime absentfromdate) {
+    this.absentfromdate = absentfromdate;
     return this;
   }
 
    /**
-   * Počítat kalendářní dny [persistentní položka]
-   * @return giveCalendarDays
+   * počátek nepřítomnosti [persistentní položka]
+   * @return absentfromdate
   **/
-  @ApiModelProperty(example = "null", value = "Počítat kalendářní dny [persistentní položka]")
-  public Boolean getGiveCalendarDays() {
-    return giveCalendarDays;
+  @ApiModelProperty(example = "null", value = "počátek nepřítomnosti [persistentní položka]")
+  public DateTime getAbsentfromdate() {
+    return absentfromdate;
   }
 
-  public void setGiveCalendarDays(Boolean giveCalendarDays) {
-    this.giveCalendarDays = giveCalendarDays;
+  public void setAbsentfromdate(DateTime absentfromdate) {
+    this.absentfromdate = absentfromdate;
   }
 
-  public Absence noEvidenceState(Boolean noEvidenceState) {
-    this.noEvidenceState = noEvidenceState;
+  public Absence absenttodate(DateTime absenttodate) {
+    this.absenttodate = absenttodate;
     return this;
   }
 
    /**
-   * Mimo evidenční stav [persistentní položka]
-   * @return noEvidenceState
+   * konec nepřítomnosti [persistentní položka]
+   * @return absenttodate
   **/
-  @ApiModelProperty(example = "null", value = "Mimo evidenční stav [persistentní položka]")
-  public Boolean getNoEvidenceState() {
-    return noEvidenceState;
+  @ApiModelProperty(example = "null", value = "konec nepřítomnosti [persistentní položka]")
+  public DateTime getAbsenttodate() {
+    return absenttodate;
   }
 
-  public void setNoEvidenceState(Boolean noEvidenceState) {
-    this.noEvidenceState = noEvidenceState;
+  public void setAbsenttodate(DateTime absenttodate) {
+    this.absenttodate = absenttodate;
   }
 
-  public Absence noCalculation(Boolean noCalculation) {
-    this.noCalculation = noCalculation;
+  public Absence firstday(Double firstday) {
+    this.firstday = firstday;
     return this;
   }
 
    /**
-   * Nepočítat mzdu [persistentní položka]
-   * @return noCalculation
+   * nepřítomnost v prvém dni [persistentní položka]
+   * @return firstday
   **/
-  @ApiModelProperty(example = "null", value = "Nepočítat mzdu [persistentní položka]")
-  public Boolean getNoCalculation() {
-    return noCalculation;
+  @ApiModelProperty(example = "null", value = "nepřítomnost v prvém dni [persistentní položka]")
+  public Double getFirstday() {
+    return firstday;
   }
 
-  public void setNoCalculation(Boolean noCalculation) {
-    this.noCalculation = noCalculation;
+  public void setFirstday(Double firstday) {
+    this.firstday = firstday;
   }
 
-  public Absence exTimeType(Integer exTimeType) {
-    this.exTimeType = exTimeType;
+  public Absence givecalendardays(Boolean givecalendardays) {
+    this.givecalendardays = givecalendardays;
     return this;
   }
 
    /**
-   * Dlouhodobá nepřítomnost [persistentní položka]
-   * @return exTimeType
+   * počítat kalendářní dny [persistentní položka]
+   * @return givecalendardays
   **/
-  @ApiModelProperty(example = "null", value = "Dlouhodobá nepřítomnost [persistentní položka]")
-  public Integer getExTimeType() {
-    return exTimeType;
+  @ApiModelProperty(example = "null", value = "počítat kalendářní dny [persistentní položka]")
+  public Boolean getGivecalendardays() {
+    return givecalendardays;
   }
 
-  public void setExTimeType(Integer exTimeType) {
-    this.exTimeType = exTimeType;
+  public void setGivecalendardays(Boolean givecalendardays) {
+    this.givecalendardays = givecalendardays;
   }
 
-  public Absence noInsurance(Boolean noInsurance) {
-    this.noInsurance = noInsurance;
+  public Absence noevidencestate(Boolean noevidencestate) {
+    this.noevidencestate = noevidencestate;
     return this;
   }
 
    /**
-   * Bez pojištění [persistentní položka]
-   * @return noInsurance
+   * mimo evidenční stav [persistentní položka]
+   * @return noevidencestate
   **/
-  @ApiModelProperty(example = "null", value = "Bez pojištění [persistentní položka]")
-  public Boolean getNoInsurance() {
-    return noInsurance;
+  @ApiModelProperty(example = "null", value = "mimo evidenční stav [persistentní položka]")
+  public Boolean getNoevidencestate() {
+    return noevidencestate;
   }
 
-  public void setNoInsurance(Boolean noInsurance) {
-    this.noInsurance = noInsurance;
+  public void setNoevidencestate(Boolean noevidencestate) {
+    this.noevidencestate = noevidencestate;
   }
 
-  public Absence paidFreeType(Integer paidFreeType) {
-    this.paidFreeType = paidFreeType;
+  public Absence nocalculation(Boolean nocalculation) {
+    this.nocalculation = nocalculation;
     return this;
   }
 
    /**
-   * Kat. plac. volna [persistentní položka]
-   * @return paidFreeType
+   * nepočítat mzdu [persistentní položka]
+   * @return nocalculation
   **/
-  @ApiModelProperty(example = "null", value = "Kat. plac. volna [persistentní položka]")
-  public Integer getPaidFreeType() {
-    return paidFreeType;
+  @ApiModelProperty(example = "null", value = "nepočítat mzdu [persistentní položka]")
+  public Boolean getNocalculation() {
+    return nocalculation;
   }
 
-  public void setPaidFreeType(Integer paidFreeType) {
-    this.paidFreeType = paidFreeType;
+  public void setNocalculation(Boolean nocalculation) {
+    this.nocalculation = nocalculation;
   }
 
-  public Absence importSourceID(String importSourceID) {
-    this.importSourceID = importSourceID;
+  public Absence extimetype(Integer extimetype) {
+    this.extimetype = extimetype;
     return this;
   }
 
    /**
-   * Zdroj importu; ID objektu Import do Nepřítomností [persistentní položka]
-   * @return importSourceID
+   * dlouhodobá nepřítomnost [persistentní položka]
+   * @return extimetype
   **/
-  @ApiModelProperty(example = "null", value = "Zdroj importu; ID objektu Import do Nepřítomností [persistentní položka]")
-  public String getImportSourceID() {
-    return importSourceID;
+  @ApiModelProperty(example = "null", value = "dlouhodobá nepřítomnost [persistentní položka]")
+  public Integer getExtimetype() {
+    return extimetype;
   }
 
-  public void setImportSourceID(String importSourceID) {
-    this.importSourceID = importSourceID;
+  public void setExtimetype(Integer extimetype) {
+    this.extimetype = extimetype;
   }
 
-  public Absence employeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public Absence noinsurance(Boolean noinsurance) {
+    this.noinsurance = noinsurance;
     return this;
   }
 
    /**
-   * Zaměstnanec; ID objektu Zaměstnanec
-   * @return employeeID
+   * bez pojištění [persistentní položka]
+   * @return noinsurance
   **/
-  @ApiModelProperty(example = "null", value = "Zaměstnanec; ID objektu Zaměstnanec")
-  public String getEmployeeID() {
-    return employeeID;
+  @ApiModelProperty(example = "null", value = "bez pojištění [persistentní položka]")
+  public Boolean getNoinsurance() {
+    return noinsurance;
   }
 
-  public void setEmployeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public void setNoinsurance(Boolean noinsurance) {
+    this.noinsurance = noinsurance;
   }
 
-   /**
-   * Druh nepřítomnosti
-   * @return absenceBaseTypeText
-  **/
-  @ApiModelProperty(example = "null", value = "Druh nepřítomnosti")
-  public String getAbsenceBaseTypeText() {
-    return absenceBaseTypeText;
-  }
-
-   /**
-   * Dlouhodobá nepřítomnost
-   * @return exTimeTypeText
-  **/
-  @ApiModelProperty(example = "null", value = "Dlouhodobá nepřítomnost")
-  public String getExTimeTypeText() {
-    return exTimeTypeText;
-  }
-
-   /**
-   * Příjmení a jméno
-   * @return employeeName
-  **/
-  @ApiModelProperty(example = "null", value = "Příjmení a jméno")
-  public String getEmployeeName() {
-    return employeeName;
-  }
-
-   /**
-   * Osobní číslo
-   * @return pERSPersonalNumber
-  **/
-  @ApiModelProperty(example = "null", value = "Osobní číslo")
-  public String getPERSPersonalNumber() {
-    return pERSPersonalNumber;
-  }
-
-  public Absence paidFreeTypeText(String paidFreeTypeText) {
-    this.paidFreeTypeText = paidFreeTypeText;
+  public Absence paidfreetype(Integer paidfreetype) {
+    this.paidfreetype = paidfreetype;
     return this;
   }
 
    /**
-   * Kat. plac. volna
-   * @return paidFreeTypeText
+   * kat. plac. volna [persistentní položka]
+   * @return paidfreetype
   **/
-  @ApiModelProperty(example = "null", value = "Kat. plac. volna")
-  public String getPaidFreeTypeText() {
-    return paidFreeTypeText;
+  @ApiModelProperty(example = "null", value = "kat. plac. volna [persistentní položka]")
+  public Integer getPaidfreetype() {
+    return paidfreetype;
   }
 
-  public void setPaidFreeTypeText(String paidFreeTypeText) {
-    this.paidFreeTypeText = paidFreeTypeText;
+  public void setPaidfreetype(Integer paidfreetype) {
+    this.paidfreetype = paidfreetype;
   }
 
-  public Absence lastDay(Double lastDay) {
-    this.lastDay = lastDay;
+  public Absence importsourceId(String importsourceId) {
+    this.importsourceId = importsourceId;
     return this;
   }
 
    /**
-   * Nepřítomnost v posledním dni [persistentní položka]
-   * @return lastDay
+   * zdroj importu; id objektu import do nepřítomností [persistentní položka]
+   * @return importsourceId
   **/
-  @ApiModelProperty(example = "null", value = "Nepřítomnost v posledním dni [persistentní položka]")
-  public Double getLastDay() {
-    return lastDay;
+  @ApiModelProperty(example = "null", value = "zdroj importu; id objektu import do nepřítomností [persistentní položka]")
+  public String getImportsourceId() {
+    return importsourceId;
   }
 
-  public void setLastDay(Double lastDay) {
-    this.lastDay = lastDay;
+  public void setImportsourceId(String importsourceId) {
+    this.importsourceId = importsourceId;
+  }
+
+  public Absence employeeId(String employeeId) {
+    this.employeeId = employeeId;
+    return this;
+  }
+
+   /**
+   * zaměstnanec; id objektu zaměstnanec
+   * @return employeeId
+  **/
+  @ApiModelProperty(example = "null", value = "zaměstnanec; id objektu zaměstnanec")
+  public String getEmployeeId() {
+    return employeeId;
+  }
+
+  public void setEmployeeId(String employeeId) {
+    this.employeeId = employeeId;
+  }
+
+  public Absence absencebasetypeText(String absencebasetypeText) {
+    this.absencebasetypeText = absencebasetypeText;
+    return this;
+  }
+
+   /**
+   * druh nepřítomnosti
+   * @return absencebasetypeText
+  **/
+  @ApiModelProperty(example = "null", value = "druh nepřítomnosti")
+  public String getAbsencebasetypeText() {
+    return absencebasetypeText;
+  }
+
+  public void setAbsencebasetypeText(String absencebasetypeText) {
+    this.absencebasetypeText = absencebasetypeText;
+  }
+
+  public Absence extimetypeText(String extimetypeText) {
+    this.extimetypeText = extimetypeText;
+    return this;
+  }
+
+   /**
+   * dlouhodobá nepřítomnost
+   * @return extimetypeText
+  **/
+  @ApiModelProperty(example = "null", value = "dlouhodobá nepřítomnost")
+  public String getExtimetypeText() {
+    return extimetypeText;
+  }
+
+  public void setExtimetypeText(String extimetypeText) {
+    this.extimetypeText = extimetypeText;
+  }
+
+  public Absence employeename(String employeename) {
+    this.employeename = employeename;
+    return this;
+  }
+
+   /**
+   * příjmení a jméno
+   * @return employeename
+  **/
+  @ApiModelProperty(example = "null", value = "příjmení a jméno")
+  public String getEmployeename() {
+    return employeename;
+  }
+
+  public void setEmployeename(String employeename) {
+    this.employeename = employeename;
+  }
+
+  public Absence persPersonalnumber(String persPersonalnumber) {
+    this.persPersonalnumber = persPersonalnumber;
+    return this;
+  }
+
+   /**
+   * osobní číslo
+   * @return persPersonalnumber
+  **/
+  @ApiModelProperty(example = "null", value = "osobní číslo")
+  public String getPersPersonalnumber() {
+    return persPersonalnumber;
+  }
+
+  public void setPersPersonalnumber(String persPersonalnumber) {
+    this.persPersonalnumber = persPersonalnumber;
+  }
+
+  public Absence paidfreetypetext(String paidfreetypetext) {
+    this.paidfreetypetext = paidfreetypetext;
+    return this;
+  }
+
+   /**
+   * kat. plac. volna
+   * @return paidfreetypetext
+  **/
+  @ApiModelProperty(example = "null", value = "kat. plac. volna")
+  public String getPaidfreetypetext() {
+    return paidfreetypetext;
+  }
+
+  public void setPaidfreetypetext(String paidfreetypetext) {
+    this.paidfreetypetext = paidfreetypetext;
+  }
+
+  public Absence lastday(Double lastday) {
+    this.lastday = lastday;
+    return this;
+  }
+
+   /**
+   * nepřítomnost v posledním dni [persistentní položka]
+   * @return lastday
+  **/
+  @ApiModelProperty(example = "null", value = "nepřítomnost v posledním dni [persistentní položka]")
+  public Double getLastday() {
+    return lastday;
+  }
+
+  public void setLastday(Double lastday) {
+    this.lastday = lastday;
   }
 
 
@@ -647,43 +719,43 @@ public class Absence   {
       return false;
     }
     Absence absence = (Absence) o;
-    return Objects.equals(this.displayName, absence.displayName) &&
-        Objects.equals(this.ID, absence.ID) &&
-        Objects.equals(this.classID, absence.classID) &&
-        Objects.equals(this.objVersion, absence.objVersion) &&
-        Objects.equals(this.docQueueID, absence.docQueueID) &&
-        Objects.equals(this.periodID, absence.periodID) &&
-        Objects.equals(this.ordNumber, absence.ordNumber) &&
-        Objects.equals(this.docDateDATE, absence.docDateDATE) &&
-        Objects.equals(this.createdByID, absence.createdByID) &&
-        Objects.equals(this.correctedByID, absence.correctedByID) &&
-        Objects.equals(this.newRelatedType, absence.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, absence.newRelatedDocumentID) &&
-        Objects.equals(this.workingRelationID, absence.workingRelationID) &&
-        Objects.equals(this.absenceID, absence.absenceID) &&
-        Objects.equals(this.absenceBaseType, absence.absenceBaseType) &&
-        Objects.equals(this.absentFromDATE, absence.absentFromDATE) &&
-        Objects.equals(this.absentToDATE, absence.absentToDATE) &&
-        Objects.equals(this.firstDay, absence.firstDay) &&
-        Objects.equals(this.giveCalendarDays, absence.giveCalendarDays) &&
-        Objects.equals(this.noEvidenceState, absence.noEvidenceState) &&
-        Objects.equals(this.noCalculation, absence.noCalculation) &&
-        Objects.equals(this.exTimeType, absence.exTimeType) &&
-        Objects.equals(this.noInsurance, absence.noInsurance) &&
-        Objects.equals(this.paidFreeType, absence.paidFreeType) &&
-        Objects.equals(this.importSourceID, absence.importSourceID) &&
-        Objects.equals(this.employeeID, absence.employeeID) &&
-        Objects.equals(this.absenceBaseTypeText, absence.absenceBaseTypeText) &&
-        Objects.equals(this.exTimeTypeText, absence.exTimeTypeText) &&
-        Objects.equals(this.employeeName, absence.employeeName) &&
-        Objects.equals(this.pERSPersonalNumber, absence.pERSPersonalNumber) &&
-        Objects.equals(this.paidFreeTypeText, absence.paidFreeTypeText) &&
-        Objects.equals(this.lastDay, absence.lastDay);
+    return Objects.equals(this.displayname, absence.displayname) &&
+        Objects.equals(this.id, absence.id) &&
+        Objects.equals(this.classid, absence.classid) &&
+        Objects.equals(this.objversion, absence.objversion) &&
+        Objects.equals(this.docqueueId, absence.docqueueId) &&
+        Objects.equals(this.periodId, absence.periodId) &&
+        Objects.equals(this.ordnumber, absence.ordnumber) &&
+        Objects.equals(this.docdatedate, absence.docdatedate) &&
+        Objects.equals(this.createdbyId, absence.createdbyId) &&
+        Objects.equals(this.correctedbyId, absence.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, absence.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, absence.newrelateddocumentId) &&
+        Objects.equals(this.workingrelationId, absence.workingrelationId) &&
+        Objects.equals(this.absenceId, absence.absenceId) &&
+        Objects.equals(this.absencebasetype, absence.absencebasetype) &&
+        Objects.equals(this.absentfromdate, absence.absentfromdate) &&
+        Objects.equals(this.absenttodate, absence.absenttodate) &&
+        Objects.equals(this.firstday, absence.firstday) &&
+        Objects.equals(this.givecalendardays, absence.givecalendardays) &&
+        Objects.equals(this.noevidencestate, absence.noevidencestate) &&
+        Objects.equals(this.nocalculation, absence.nocalculation) &&
+        Objects.equals(this.extimetype, absence.extimetype) &&
+        Objects.equals(this.noinsurance, absence.noinsurance) &&
+        Objects.equals(this.paidfreetype, absence.paidfreetype) &&
+        Objects.equals(this.importsourceId, absence.importsourceId) &&
+        Objects.equals(this.employeeId, absence.employeeId) &&
+        Objects.equals(this.absencebasetypeText, absence.absencebasetypeText) &&
+        Objects.equals(this.extimetypeText, absence.extimetypeText) &&
+        Objects.equals(this.employeename, absence.employeename) &&
+        Objects.equals(this.persPersonalnumber, absence.persPersonalnumber) &&
+        Objects.equals(this.paidfreetypetext, absence.paidfreetypetext) &&
+        Objects.equals(this.lastday, absence.lastday);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, workingRelationID, absenceID, absenceBaseType, absentFromDATE, absentToDATE, firstDay, giveCalendarDays, noEvidenceState, noCalculation, exTimeType, noInsurance, paidFreeType, importSourceID, employeeID, absenceBaseTypeText, exTimeTypeText, employeeName, pERSPersonalNumber, paidFreeTypeText, lastDay);
+    return Objects.hash(displayname, id, classid, objversion, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, workingrelationId, absenceId, absencebasetype, absentfromdate, absenttodate, firstday, givecalendardays, noevidencestate, nocalculation, extimetype, noinsurance, paidfreetype, importsourceId, employeeId, absencebasetypeText, extimetypeText, employeename, persPersonalnumber, paidfreetypetext, lastday);
   }
 
   @Override
@@ -691,38 +763,38 @@ public class Absence   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Absence {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    workingRelationID: ").append(toIndentedString(workingRelationID)).append("\n");
-    sb.append("    absenceID: ").append(toIndentedString(absenceID)).append("\n");
-    sb.append("    absenceBaseType: ").append(toIndentedString(absenceBaseType)).append("\n");
-    sb.append("    absentFromDATE: ").append(toIndentedString(absentFromDATE)).append("\n");
-    sb.append("    absentToDATE: ").append(toIndentedString(absentToDATE)).append("\n");
-    sb.append("    firstDay: ").append(toIndentedString(firstDay)).append("\n");
-    sb.append("    giveCalendarDays: ").append(toIndentedString(giveCalendarDays)).append("\n");
-    sb.append("    noEvidenceState: ").append(toIndentedString(noEvidenceState)).append("\n");
-    sb.append("    noCalculation: ").append(toIndentedString(noCalculation)).append("\n");
-    sb.append("    exTimeType: ").append(toIndentedString(exTimeType)).append("\n");
-    sb.append("    noInsurance: ").append(toIndentedString(noInsurance)).append("\n");
-    sb.append("    paidFreeType: ").append(toIndentedString(paidFreeType)).append("\n");
-    sb.append("    importSourceID: ").append(toIndentedString(importSourceID)).append("\n");
-    sb.append("    employeeID: ").append(toIndentedString(employeeID)).append("\n");
-    sb.append("    absenceBaseTypeText: ").append(toIndentedString(absenceBaseTypeText)).append("\n");
-    sb.append("    exTimeTypeText: ").append(toIndentedString(exTimeTypeText)).append("\n");
-    sb.append("    employeeName: ").append(toIndentedString(employeeName)).append("\n");
-    sb.append("    pERSPersonalNumber: ").append(toIndentedString(pERSPersonalNumber)).append("\n");
-    sb.append("    paidFreeTypeText: ").append(toIndentedString(paidFreeTypeText)).append("\n");
-    sb.append("    lastDay: ").append(toIndentedString(lastDay)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    workingrelationId: ").append(toIndentedString(workingrelationId)).append("\n");
+    sb.append("    absenceId: ").append(toIndentedString(absenceId)).append("\n");
+    sb.append("    absencebasetype: ").append(toIndentedString(absencebasetype)).append("\n");
+    sb.append("    absentfromdate: ").append(toIndentedString(absentfromdate)).append("\n");
+    sb.append("    absenttodate: ").append(toIndentedString(absenttodate)).append("\n");
+    sb.append("    firstday: ").append(toIndentedString(firstday)).append("\n");
+    sb.append("    givecalendardays: ").append(toIndentedString(givecalendardays)).append("\n");
+    sb.append("    noevidencestate: ").append(toIndentedString(noevidencestate)).append("\n");
+    sb.append("    nocalculation: ").append(toIndentedString(nocalculation)).append("\n");
+    sb.append("    extimetype: ").append(toIndentedString(extimetype)).append("\n");
+    sb.append("    noinsurance: ").append(toIndentedString(noinsurance)).append("\n");
+    sb.append("    paidfreetype: ").append(toIndentedString(paidfreetype)).append("\n");
+    sb.append("    importsourceId: ").append(toIndentedString(importsourceId)).append("\n");
+    sb.append("    employeeId: ").append(toIndentedString(employeeId)).append("\n");
+    sb.append("    absencebasetypeText: ").append(toIndentedString(absencebasetypeText)).append("\n");
+    sb.append("    extimetypeText: ").append(toIndentedString(extimetypeText)).append("\n");
+    sb.append("    employeename: ").append(toIndentedString(employeename)).append("\n");
+    sb.append("    persPersonalnumber: ").append(toIndentedString(persPersonalnumber)).append("\n");
+    sb.append("    paidfreetypetext: ").append(toIndentedString(paidfreetypetext)).append("\n");
+    sb.append("    lastday: ").append(toIndentedString(lastday)).append("\n");
     sb.append("}");
     return sb.toString();
   }

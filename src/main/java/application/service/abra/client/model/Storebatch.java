@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,93 +35,129 @@ import java.util.Objects;
 /**
  * Storebatch
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Storebatch   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ExpirationDate$DATE")
-  private DateTime expirationDateDATE = null;
+  @SerializedName("expirationdate$date")
+  private DateTime expirationdatedate = null;
 
-  @SerializedName("SerialNumber")
-  private Boolean serialNumber = null;
+  @SerializedName("serialnumber")
+  private Boolean serialnumber = null;
 
-  @SerializedName("PrefixCode")
-  private String prefixCode = null;
+  @SerializedName("prefixcode")
+  private String prefixcode = null;
 
-  @SerializedName("SuffixCode")
-  private String suffixCode = null;
+  @SerializedName("suffixcode")
+  private String suffixcode = null;
 
-  @SerializedName("BodyCode")
-  private String bodyCode = null;
+  @SerializedName("bodycode")
+  private String bodycode = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Specification")
+  @SerializedName("specification")
   private String specification = null;
 
-  @SerializedName("Comment")
+  @SerializedName("comment")
   private String comment = null;
 
-  @SerializedName("SkipNewCode")
-  private Boolean skipNewCode = null;
+  @SerializedName("skipnewcode")
+  private Boolean skipnewcode = null;
 
-  @SerializedName("ProductionDate$DATE")
-  private DateTime productionDateDATE = null;
+  @SerializedName("productiondate$date")
+  private DateTime productiondatedate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Storebatch displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Storebatch id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Storebatch classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Storebatch objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Storebatch hidden(Boolean hidden) {
@@ -130,10 +166,10 @@ public class Storebatch   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -142,22 +178,22 @@ public class Storebatch   {
     this.hidden = hidden;
   }
 
-  public Storebatch storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Storebatch storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Skl. karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * skl. karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skl. karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "skl. karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
   }
 
   public Storebatch name(String name) {
@@ -166,10 +202,10 @@ public class Storebatch   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -178,94 +214,94 @@ public class Storebatch   {
     this.name = name;
   }
 
-  public Storebatch expirationDateDATE(DateTime expirationDateDATE) {
-    this.expirationDateDATE = expirationDateDATE;
+  public Storebatch expirationdatedate(DateTime expirationdatedate) {
+    this.expirationdatedate = expirationdatedate;
     return this;
   }
 
    /**
-   * Datum expirace [persistentní položka]
-   * @return expirationDateDATE
+   * datum expirace [persistentní položka]
+   * @return expirationdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum expirace [persistentní položka]")
-  public DateTime getExpirationDateDATE() {
-    return expirationDateDATE;
+  @ApiModelProperty(example = "null", value = "datum expirace [persistentní položka]")
+  public DateTime getExpirationdatedate() {
+    return expirationdatedate;
   }
 
-  public void setExpirationDateDATE(DateTime expirationDateDATE) {
-    this.expirationDateDATE = expirationDateDATE;
+  public void setExpirationdatedate(DateTime expirationdatedate) {
+    this.expirationdatedate = expirationdatedate;
   }
 
-  public Storebatch serialNumber(Boolean serialNumber) {
-    this.serialNumber = serialNumber;
+  public Storebatch serialnumber(Boolean serialnumber) {
+    this.serialnumber = serialnumber;
     return this;
   }
 
    /**
-   * Sér. číslo [persistentní položka]
-   * @return serialNumber
+   * sér. číslo [persistentní položka]
+   * @return serialnumber
   **/
-  @ApiModelProperty(example = "null", value = "Sér. číslo [persistentní položka]")
-  public Boolean getSerialNumber() {
-    return serialNumber;
+  @ApiModelProperty(example = "null", value = "sér. číslo [persistentní položka]")
+  public Boolean getSerialnumber() {
+    return serialnumber;
   }
 
-  public void setSerialNumber(Boolean serialNumber) {
-    this.serialNumber = serialNumber;
+  public void setSerialnumber(Boolean serialnumber) {
+    this.serialnumber = serialnumber;
   }
 
-  public Storebatch prefixCode(String prefixCode) {
-    this.prefixCode = prefixCode;
+  public Storebatch prefixcode(String prefixcode) {
+    this.prefixcode = prefixcode;
     return this;
   }
 
    /**
-   * Prefix kódu
-   * @return prefixCode
+   * prefix kódu
+   * @return prefixcode
   **/
-  @ApiModelProperty(example = "null", value = "Prefix kódu")
-  public String getPrefixCode() {
-    return prefixCode;
+  @ApiModelProperty(example = "null", value = "prefix kódu")
+  public String getPrefixcode() {
+    return prefixcode;
   }
 
-  public void setPrefixCode(String prefixCode) {
-    this.prefixCode = prefixCode;
+  public void setPrefixcode(String prefixcode) {
+    this.prefixcode = prefixcode;
   }
 
-  public Storebatch suffixCode(String suffixCode) {
-    this.suffixCode = suffixCode;
+  public Storebatch suffixcode(String suffixcode) {
+    this.suffixcode = suffixcode;
     return this;
   }
 
    /**
-   * Sufix kódu
-   * @return suffixCode
+   * sufix kódu
+   * @return suffixcode
   **/
-  @ApiModelProperty(example = "null", value = "Sufix kódu")
-  public String getSuffixCode() {
-    return suffixCode;
+  @ApiModelProperty(example = "null", value = "sufix kódu")
+  public String getSuffixcode() {
+    return suffixcode;
   }
 
-  public void setSuffixCode(String suffixCode) {
-    this.suffixCode = suffixCode;
+  public void setSuffixcode(String suffixcode) {
+    this.suffixcode = suffixcode;
   }
 
-  public Storebatch bodyCode(String bodyCode) {
-    this.bodyCode = bodyCode;
+  public Storebatch bodycode(String bodycode) {
+    this.bodycode = bodycode;
     return this;
   }
 
    /**
    * Číslo kódu
-   * @return bodyCode
+   * @return bodycode
   **/
   @ApiModelProperty(example = "null", value = "Číslo kódu")
-  public String getBodyCode() {
-    return bodyCode;
+  public String getBodycode() {
+    return bodycode;
   }
 
-  public void setBodyCode(String bodyCode) {
-    this.bodyCode = bodyCode;
+  public void setBodycode(String bodycode) {
+    this.bodycode = bodycode;
   }
 
   public Storebatch note(String note) {
@@ -274,10 +310,10 @@ public class Storebatch   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -292,10 +328,10 @@ public class Storebatch   {
   }
 
    /**
-   * Specifikace [persistentní položka]
+   * specifikace [persistentní položka]
    * @return specification
   **/
-  @ApiModelProperty(example = "null", value = "Specifikace [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "specifikace [persistentní položka]")
   public String getSpecification() {
     return specification;
   }
@@ -310,10 +346,10 @@ public class Storebatch   {
   }
 
    /**
-   * Poznámka
+   * poznámka
    * @return comment
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka")
+  @ApiModelProperty(example = "null", value = "poznámka")
   public String getComment() {
     return comment;
   }
@@ -322,40 +358,40 @@ public class Storebatch   {
     this.comment = comment;
   }
 
-  public Storebatch skipNewCode(Boolean skipNewCode) {
-    this.skipNewCode = skipNewCode;
+  public Storebatch skipnewcode(Boolean skipnewcode) {
+    this.skipnewcode = skipnewcode;
     return this;
   }
 
    /**
-   * Negeneruj nový kód
-   * @return skipNewCode
+   * negeneruj nový kód
+   * @return skipnewcode
   **/
-  @ApiModelProperty(example = "null", value = "Negeneruj nový kód")
-  public Boolean getSkipNewCode() {
-    return skipNewCode;
+  @ApiModelProperty(example = "null", value = "negeneruj nový kód")
+  public Boolean getSkipnewcode() {
+    return skipnewcode;
   }
 
-  public void setSkipNewCode(Boolean skipNewCode) {
-    this.skipNewCode = skipNewCode;
+  public void setSkipnewcode(Boolean skipnewcode) {
+    this.skipnewcode = skipnewcode;
   }
 
-  public Storebatch productionDateDATE(DateTime productionDateDATE) {
-    this.productionDateDATE = productionDateDATE;
+  public Storebatch productiondatedate(DateTime productiondatedate) {
+    this.productiondatedate = productiondatedate;
     return this;
   }
 
    /**
-   * Datum a čas výroby [persistentní položka]
-   * @return productionDateDATE
+   * datum a čas výroby [persistentní položka]
+   * @return productiondatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum a čas výroby [persistentní položka]")
-  public DateTime getProductionDateDATE() {
-    return productionDateDATE;
+  @ApiModelProperty(example = "null", value = "datum a čas výroby [persistentní položka]")
+  public DateTime getProductiondatedate() {
+    return productiondatedate;
   }
 
-  public void setProductionDateDATE(DateTime productionDateDATE) {
-    this.productionDateDATE = productionDateDATE;
+  public void setProductiondatedate(DateTime productiondatedate) {
+    this.productiondatedate = productiondatedate;
   }
 
 
@@ -368,28 +404,28 @@ public class Storebatch   {
       return false;
     }
     Storebatch storebatch = (Storebatch) o;
-    return Objects.equals(this.displayName, storebatch.displayName) &&
-        Objects.equals(this.ID, storebatch.ID) &&
-        Objects.equals(this.classID, storebatch.classID) &&
-        Objects.equals(this.objVersion, storebatch.objVersion) &&
+    return Objects.equals(this.displayname, storebatch.displayname) &&
+        Objects.equals(this.id, storebatch.id) &&
+        Objects.equals(this.classid, storebatch.classid) &&
+        Objects.equals(this.objversion, storebatch.objversion) &&
         Objects.equals(this.hidden, storebatch.hidden) &&
-        Objects.equals(this.storeCardID, storebatch.storeCardID) &&
+        Objects.equals(this.storecardId, storebatch.storecardId) &&
         Objects.equals(this.name, storebatch.name) &&
-        Objects.equals(this.expirationDateDATE, storebatch.expirationDateDATE) &&
-        Objects.equals(this.serialNumber, storebatch.serialNumber) &&
-        Objects.equals(this.prefixCode, storebatch.prefixCode) &&
-        Objects.equals(this.suffixCode, storebatch.suffixCode) &&
-        Objects.equals(this.bodyCode, storebatch.bodyCode) &&
+        Objects.equals(this.expirationdatedate, storebatch.expirationdatedate) &&
+        Objects.equals(this.serialnumber, storebatch.serialnumber) &&
+        Objects.equals(this.prefixcode, storebatch.prefixcode) &&
+        Objects.equals(this.suffixcode, storebatch.suffixcode) &&
+        Objects.equals(this.bodycode, storebatch.bodycode) &&
         Objects.equals(this.note, storebatch.note) &&
         Objects.equals(this.specification, storebatch.specification) &&
         Objects.equals(this.comment, storebatch.comment) &&
-        Objects.equals(this.skipNewCode, storebatch.skipNewCode) &&
-        Objects.equals(this.productionDateDATE, storebatch.productionDateDATE);
+        Objects.equals(this.skipnewcode, storebatch.skipnewcode) &&
+        Objects.equals(this.productiondatedate, storebatch.productiondatedate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, storeCardID, name, expirationDateDATE, serialNumber, prefixCode, suffixCode, bodyCode, note, specification, comment, skipNewCode, productionDateDATE);
+    return Objects.hash(displayname, id, classid, objversion, hidden, storecardId, name, expirationdatedate, serialnumber, prefixcode, suffixcode, bodycode, note, specification, comment, skipnewcode, productiondatedate);
   }
 
   @Override
@@ -397,23 +433,23 @@ public class Storebatch   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Storebatch {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    expirationDateDATE: ").append(toIndentedString(expirationDateDATE)).append("\n");
-    sb.append("    serialNumber: ").append(toIndentedString(serialNumber)).append("\n");
-    sb.append("    prefixCode: ").append(toIndentedString(prefixCode)).append("\n");
-    sb.append("    suffixCode: ").append(toIndentedString(suffixCode)).append("\n");
-    sb.append("    bodyCode: ").append(toIndentedString(bodyCode)).append("\n");
+    sb.append("    expirationdatedate: ").append(toIndentedString(expirationdatedate)).append("\n");
+    sb.append("    serialnumber: ").append(toIndentedString(serialnumber)).append("\n");
+    sb.append("    prefixcode: ").append(toIndentedString(prefixcode)).append("\n");
+    sb.append("    suffixcode: ").append(toIndentedString(suffixcode)).append("\n");
+    sb.append("    bodycode: ").append(toIndentedString(bodycode)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
     sb.append("    specification: ").append(toIndentedString(specification)).append("\n");
     sb.append("    comment: ").append(toIndentedString(comment)).append("\n");
-    sb.append("    skipNewCode: ").append(toIndentedString(skipNewCode)).append("\n");
-    sb.append("    productionDateDATE: ").append(toIndentedString(productionDateDATE)).append("\n");
+    sb.append("    skipnewcode: ").append(toIndentedString(skipnewcode)).append("\n");
+    sb.append("    productiondatedate: ").append(toIndentedString(productiondatedate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

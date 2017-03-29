@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,276 +34,321 @@ import java.util.Objects;
 /**
  * Insuranceperioddetail
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Insuranceperioddetail   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("WagePeriod_ID")
-  private String wagePeriodID = null;
+  @SerializedName("wageperiod_id")
+  private String wageperiodId = null;
 
-  @SerializedName("InsuranceBase")
-  private Double insuranceBase = null;
+  @SerializedName("insurancebase")
+  private Double insurancebase = null;
 
-  @SerializedName("InsBaseCorrection")
-  private Double insBaseCorrection = null;
+  @SerializedName("insbasecorrection")
+  private Double insbasecorrection = null;
 
-  @SerializedName("ExclDaysInsBase")
-  private Double exclDaysInsBase = null;
+  @SerializedName("excldaysinsbase")
+  private Double excldaysinsbase = null;
 
-  @SerializedName("ExclDaysInsBaseCorrection")
-  private Double exclDaysInsBaseCorrection = null;
+  @SerializedName("excldaysinsbasecorrection")
+  private Double excldaysinsbasecorrection = null;
 
-  @SerializedName("ExclDays")
-  private Integer exclDays = null;
+  @SerializedName("excldays")
+  private Integer excldays = null;
 
-  @SerializedName("ExclDaysCorrection")
-  private Integer exclDaysCorrection = null;
+  @SerializedName("excldayscorrection")
+  private Integer excldayscorrection = null;
 
-  @SerializedName("InsuranceBaseTotal")
-  private Double insuranceBaseTotal = null;
+  @SerializedName("insurancebasetotal")
+  private Double insurancebasetotal = null;
 
-  @SerializedName("ExclDaysInsBaseTotal")
-  private Double exclDaysInsBaseTotal = null;
+  @SerializedName("excldaysinsbasetotal")
+  private Double excldaysinsbasetotal = null;
 
-  @SerializedName("ExclDaysTotal")
-  private Integer exclDaysTotal = null;
+  @SerializedName("excldaystotal")
+  private Integer excldaystotal = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Hlavičkový objekt [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Hlavičkový objekt [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Insuranceperioddetail wagePeriodID(String wagePeriodID) {
-    this.wagePeriodID = wagePeriodID;
+  public Insuranceperioddetail displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Mzdové období; ID objektu Mzdové období [persistentní položka]
-   * @return wagePeriodID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Mzdové období; ID objektu Mzdové období [persistentní položka]")
-  public String getWagePeriodID() {
-    return wagePeriodID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setWagePeriodID(String wagePeriodID) {
-    this.wagePeriodID = wagePeriodID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Insuranceperioddetail insuranceBase(Double insuranceBase) {
-    this.insuranceBase = insuranceBase;
+  public Insuranceperioddetail id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Vyměřovací základ [persistentní položka]
-   * @return insuranceBase
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vyměřovací základ [persistentní položka]")
-  public Double getInsuranceBase() {
-    return insuranceBase;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setInsuranceBase(Double insuranceBase) {
-    this.insuranceBase = insuranceBase;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Insuranceperioddetail insBaseCorrection(Double insBaseCorrection) {
-    this.insBaseCorrection = insBaseCorrection;
+  public Insuranceperioddetail classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Vym.základ-opr. [persistentní položka]
-   * @return insBaseCorrection
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Vym.základ-opr. [persistentní položka]")
-  public Double getInsBaseCorrection() {
-    return insBaseCorrection;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setInsBaseCorrection(Double insBaseCorrection) {
-    this.insBaseCorrection = insBaseCorrection;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Insuranceperioddetail exclDaysInsBase(Double exclDaysInsBase) {
-    this.exclDaysInsBase = exclDaysInsBase;
+  public Insuranceperioddetail objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * VZ při vyl.době [persistentní položka]
-   * @return exclDaysInsBase
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "VZ při vyl.době [persistentní položka]")
-  public Double getExclDaysInsBase() {
-    return exclDaysInsBase;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setExclDaysInsBase(Double exclDaysInsBase) {
-    this.exclDaysInsBase = exclDaysInsBase;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Insuranceperioddetail exclDaysInsBaseCorrection(Double exclDaysInsBaseCorrection) {
-    this.exclDaysInsBaseCorrection = exclDaysInsBaseCorrection;
+  public Insuranceperioddetail parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * VZ při vyl.době-opr [persistentní položka]
-   * @return exclDaysInsBaseCorrection
+   * vlastník; id objektu hlavičkový objekt [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "VZ při vyl.době-opr [persistentní položka]")
-  public Double getExclDaysInsBaseCorrection() {
-    return exclDaysInsBaseCorrection;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu hlavičkový objekt [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setExclDaysInsBaseCorrection(Double exclDaysInsBaseCorrection) {
-    this.exclDaysInsBaseCorrection = exclDaysInsBaseCorrection;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Insuranceperioddetail exclDays(Integer exclDays) {
-    this.exclDays = exclDays;
+  public Insuranceperioddetail wageperiodId(String wageperiodId) {
+    this.wageperiodId = wageperiodId;
     return this;
   }
 
    /**
-   * Vyloučená doba [persistentní položka]
-   * @return exclDays
+   * mzdové období; id objektu mzdové období [persistentní položka]
+   * @return wageperiodId
   **/
-  @ApiModelProperty(example = "null", value = "Vyloučená doba [persistentní položka]")
-  public Integer getExclDays() {
-    return exclDays;
+  @ApiModelProperty(example = "null", value = "mzdové období; id objektu mzdové období [persistentní položka]")
+  public String getWageperiodId() {
+    return wageperiodId;
   }
 
-  public void setExclDays(Integer exclDays) {
-    this.exclDays = exclDays;
+  public void setWageperiodId(String wageperiodId) {
+    this.wageperiodId = wageperiodId;
   }
 
-  public Insuranceperioddetail exclDaysCorrection(Integer exclDaysCorrection) {
-    this.exclDaysCorrection = exclDaysCorrection;
+  public Insuranceperioddetail insurancebase(Double insurancebase) {
+    this.insurancebase = insurancebase;
     return this;
   }
 
    /**
-   * Vyloučená doba-opr. [persistentní položka]
-   * @return exclDaysCorrection
+   * vyměřovací základ [persistentní položka]
+   * @return insurancebase
   **/
-  @ApiModelProperty(example = "null", value = "Vyloučená doba-opr. [persistentní položka]")
-  public Integer getExclDaysCorrection() {
-    return exclDaysCorrection;
+  @ApiModelProperty(example = "null", value = "vyměřovací základ [persistentní položka]")
+  public Double getInsurancebase() {
+    return insurancebase;
   }
 
-  public void setExclDaysCorrection(Integer exclDaysCorrection) {
-    this.exclDaysCorrection = exclDaysCorrection;
+  public void setInsurancebase(Double insurancebase) {
+    this.insurancebase = insurancebase;
   }
 
-  public Insuranceperioddetail insuranceBaseTotal(Double insuranceBaseTotal) {
-    this.insuranceBaseTotal = insuranceBaseTotal;
+  public Insuranceperioddetail insbasecorrection(Double insbasecorrection) {
+    this.insbasecorrection = insbasecorrection;
     return this;
   }
 
    /**
-   * Celkový vym.základ
-   * @return insuranceBaseTotal
+   * vym.základ-opr. [persistentní položka]
+   * @return insbasecorrection
   **/
-  @ApiModelProperty(example = "null", value = "Celkový vym.základ")
-  public Double getInsuranceBaseTotal() {
-    return insuranceBaseTotal;
+  @ApiModelProperty(example = "null", value = "vym.základ-opr. [persistentní položka]")
+  public Double getInsbasecorrection() {
+    return insbasecorrection;
   }
 
-  public void setInsuranceBaseTotal(Double insuranceBaseTotal) {
-    this.insuranceBaseTotal = insuranceBaseTotal;
+  public void setInsbasecorrection(Double insbasecorrection) {
+    this.insbasecorrection = insbasecorrection;
   }
 
-  public Insuranceperioddetail exclDaysInsBaseTotal(Double exclDaysInsBaseTotal) {
-    this.exclDaysInsBaseTotal = exclDaysInsBaseTotal;
+  public Insuranceperioddetail excldaysinsbase(Double excldaysinsbase) {
+    this.excldaysinsbase = excldaysinsbase;
     return this;
   }
 
    /**
-   * Celkový vym.základ v době vyloučené doby
-   * @return exclDaysInsBaseTotal
+   * vz při vyl.době [persistentní položka]
+   * @return excldaysinsbase
   **/
-  @ApiModelProperty(example = "null", value = "Celkový vym.základ v době vyloučené doby")
-  public Double getExclDaysInsBaseTotal() {
-    return exclDaysInsBaseTotal;
+  @ApiModelProperty(example = "null", value = "vz při vyl.době [persistentní položka]")
+  public Double getExcldaysinsbase() {
+    return excldaysinsbase;
   }
 
-  public void setExclDaysInsBaseTotal(Double exclDaysInsBaseTotal) {
-    this.exclDaysInsBaseTotal = exclDaysInsBaseTotal;
+  public void setExcldaysinsbase(Double excldaysinsbase) {
+    this.excldaysinsbase = excldaysinsbase;
   }
 
-  public Insuranceperioddetail exclDaysTotal(Integer exclDaysTotal) {
-    this.exclDaysTotal = exclDaysTotal;
+  public Insuranceperioddetail excldaysinsbasecorrection(Double excldaysinsbasecorrection) {
+    this.excldaysinsbasecorrection = excldaysinsbasecorrection;
     return this;
   }
 
    /**
-   * Celkové vyloučená doba
-   * @return exclDaysTotal
+   * vz při vyl.době-opr [persistentní položka]
+   * @return excldaysinsbasecorrection
   **/
-  @ApiModelProperty(example = "null", value = "Celkové vyloučená doba")
-  public Integer getExclDaysTotal() {
-    return exclDaysTotal;
+  @ApiModelProperty(example = "null", value = "vz při vyl.době-opr [persistentní položka]")
+  public Double getExcldaysinsbasecorrection() {
+    return excldaysinsbasecorrection;
   }
 
-  public void setExclDaysTotal(Integer exclDaysTotal) {
-    this.exclDaysTotal = exclDaysTotal;
+  public void setExcldaysinsbasecorrection(Double excldaysinsbasecorrection) {
+    this.excldaysinsbasecorrection = excldaysinsbasecorrection;
+  }
+
+  public Insuranceperioddetail excldays(Integer excldays) {
+    this.excldays = excldays;
+    return this;
+  }
+
+   /**
+   * vyloučená doba [persistentní položka]
+   * @return excldays
+  **/
+  @ApiModelProperty(example = "null", value = "vyloučená doba [persistentní položka]")
+  public Integer getExcldays() {
+    return excldays;
+  }
+
+  public void setExcldays(Integer excldays) {
+    this.excldays = excldays;
+  }
+
+  public Insuranceperioddetail excldayscorrection(Integer excldayscorrection) {
+    this.excldayscorrection = excldayscorrection;
+    return this;
+  }
+
+   /**
+   * vyloučená doba-opr. [persistentní položka]
+   * @return excldayscorrection
+  **/
+  @ApiModelProperty(example = "null", value = "vyloučená doba-opr. [persistentní položka]")
+  public Integer getExcldayscorrection() {
+    return excldayscorrection;
+  }
+
+  public void setExcldayscorrection(Integer excldayscorrection) {
+    this.excldayscorrection = excldayscorrection;
+  }
+
+  public Insuranceperioddetail insurancebasetotal(Double insurancebasetotal) {
+    this.insurancebasetotal = insurancebasetotal;
+    return this;
+  }
+
+   /**
+   * celkový vym.základ
+   * @return insurancebasetotal
+  **/
+  @ApiModelProperty(example = "null", value = "celkový vym.základ")
+  public Double getInsurancebasetotal() {
+    return insurancebasetotal;
+  }
+
+  public void setInsurancebasetotal(Double insurancebasetotal) {
+    this.insurancebasetotal = insurancebasetotal;
+  }
+
+  public Insuranceperioddetail excldaysinsbasetotal(Double excldaysinsbasetotal) {
+    this.excldaysinsbasetotal = excldaysinsbasetotal;
+    return this;
+  }
+
+   /**
+   * celkový vym.základ v době vyloučené doby
+   * @return excldaysinsbasetotal
+  **/
+  @ApiModelProperty(example = "null", value = "celkový vym.základ v době vyloučené doby")
+  public Double getExcldaysinsbasetotal() {
+    return excldaysinsbasetotal;
+  }
+
+  public void setExcldaysinsbasetotal(Double excldaysinsbasetotal) {
+    this.excldaysinsbasetotal = excldaysinsbasetotal;
+  }
+
+  public Insuranceperioddetail excldaystotal(Integer excldaystotal) {
+    this.excldaystotal = excldaystotal;
+    return this;
+  }
+
+   /**
+   * celkové vyloučená doba
+   * @return excldaystotal
+  **/
+  @ApiModelProperty(example = "null", value = "celkové vyloučená doba")
+  public Integer getExcldaystotal() {
+    return excldaystotal;
+  }
+
+  public void setExcldaystotal(Integer excldaystotal) {
+    this.excldaystotal = excldaystotal;
   }
 
 
@@ -316,26 +361,26 @@ public class Insuranceperioddetail   {
       return false;
     }
     Insuranceperioddetail insuranceperioddetail = (Insuranceperioddetail) o;
-    return Objects.equals(this.displayName, insuranceperioddetail.displayName) &&
-        Objects.equals(this.ID, insuranceperioddetail.ID) &&
-        Objects.equals(this.classID, insuranceperioddetail.classID) &&
-        Objects.equals(this.objVersion, insuranceperioddetail.objVersion) &&
-        Objects.equals(this.parentID, insuranceperioddetail.parentID) &&
-        Objects.equals(this.wagePeriodID, insuranceperioddetail.wagePeriodID) &&
-        Objects.equals(this.insuranceBase, insuranceperioddetail.insuranceBase) &&
-        Objects.equals(this.insBaseCorrection, insuranceperioddetail.insBaseCorrection) &&
-        Objects.equals(this.exclDaysInsBase, insuranceperioddetail.exclDaysInsBase) &&
-        Objects.equals(this.exclDaysInsBaseCorrection, insuranceperioddetail.exclDaysInsBaseCorrection) &&
-        Objects.equals(this.exclDays, insuranceperioddetail.exclDays) &&
-        Objects.equals(this.exclDaysCorrection, insuranceperioddetail.exclDaysCorrection) &&
-        Objects.equals(this.insuranceBaseTotal, insuranceperioddetail.insuranceBaseTotal) &&
-        Objects.equals(this.exclDaysInsBaseTotal, insuranceperioddetail.exclDaysInsBaseTotal) &&
-        Objects.equals(this.exclDaysTotal, insuranceperioddetail.exclDaysTotal);
+    return Objects.equals(this.displayname, insuranceperioddetail.displayname) &&
+        Objects.equals(this.id, insuranceperioddetail.id) &&
+        Objects.equals(this.classid, insuranceperioddetail.classid) &&
+        Objects.equals(this.objversion, insuranceperioddetail.objversion) &&
+        Objects.equals(this.parentId, insuranceperioddetail.parentId) &&
+        Objects.equals(this.wageperiodId, insuranceperioddetail.wageperiodId) &&
+        Objects.equals(this.insurancebase, insuranceperioddetail.insurancebase) &&
+        Objects.equals(this.insbasecorrection, insuranceperioddetail.insbasecorrection) &&
+        Objects.equals(this.excldaysinsbase, insuranceperioddetail.excldaysinsbase) &&
+        Objects.equals(this.excldaysinsbasecorrection, insuranceperioddetail.excldaysinsbasecorrection) &&
+        Objects.equals(this.excldays, insuranceperioddetail.excldays) &&
+        Objects.equals(this.excldayscorrection, insuranceperioddetail.excldayscorrection) &&
+        Objects.equals(this.insurancebasetotal, insuranceperioddetail.insurancebasetotal) &&
+        Objects.equals(this.excldaysinsbasetotal, insuranceperioddetail.excldaysinsbasetotal) &&
+        Objects.equals(this.excldaystotal, insuranceperioddetail.excldaystotal);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, wagePeriodID, insuranceBase, insBaseCorrection, exclDaysInsBase, exclDaysInsBaseCorrection, exclDays, exclDaysCorrection, insuranceBaseTotal, exclDaysInsBaseTotal, exclDaysTotal);
+    return Objects.hash(displayname, id, classid, objversion, parentId, wageperiodId, insurancebase, insbasecorrection, excldaysinsbase, excldaysinsbasecorrection, excldays, excldayscorrection, insurancebasetotal, excldaysinsbasetotal, excldaystotal);
   }
 
   @Override
@@ -343,21 +388,21 @@ public class Insuranceperioddetail   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Insuranceperioddetail {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    wagePeriodID: ").append(toIndentedString(wagePeriodID)).append("\n");
-    sb.append("    insuranceBase: ").append(toIndentedString(insuranceBase)).append("\n");
-    sb.append("    insBaseCorrection: ").append(toIndentedString(insBaseCorrection)).append("\n");
-    sb.append("    exclDaysInsBase: ").append(toIndentedString(exclDaysInsBase)).append("\n");
-    sb.append("    exclDaysInsBaseCorrection: ").append(toIndentedString(exclDaysInsBaseCorrection)).append("\n");
-    sb.append("    exclDays: ").append(toIndentedString(exclDays)).append("\n");
-    sb.append("    exclDaysCorrection: ").append(toIndentedString(exclDaysCorrection)).append("\n");
-    sb.append("    insuranceBaseTotal: ").append(toIndentedString(insuranceBaseTotal)).append("\n");
-    sb.append("    exclDaysInsBaseTotal: ").append(toIndentedString(exclDaysInsBaseTotal)).append("\n");
-    sb.append("    exclDaysTotal: ").append(toIndentedString(exclDaysTotal)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    wageperiodId: ").append(toIndentedString(wageperiodId)).append("\n");
+    sb.append("    insurancebase: ").append(toIndentedString(insurancebase)).append("\n");
+    sb.append("    insbasecorrection: ").append(toIndentedString(insbasecorrection)).append("\n");
+    sb.append("    excldaysinsbase: ").append(toIndentedString(excldaysinsbase)).append("\n");
+    sb.append("    excldaysinsbasecorrection: ").append(toIndentedString(excldaysinsbasecorrection)).append("\n");
+    sb.append("    excldays: ").append(toIndentedString(excldays)).append("\n");
+    sb.append("    excldayscorrection: ").append(toIndentedString(excldayscorrection)).append("\n");
+    sb.append("    insurancebasetotal: ").append(toIndentedString(insurancebasetotal)).append("\n");
+    sb.append("    excldaysinsbasetotal: ").append(toIndentedString(excldaysinsbasetotal)).append("\n");
+    sb.append("    excldaystotal: ").append(toIndentedString(excldaystotal)).append("\n");
     sb.append("}");
     return sb.toString();
   }

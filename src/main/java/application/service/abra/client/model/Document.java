@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,213 +37,290 @@ import java.util.Objects;
 /**
  * Document
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Document   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Revided_ID")
-  private String revidedID = null;
+  @SerializedName("revided_id")
+  private String revidedId = null;
 
-  @SerializedName("RevisionDescription")
-  private String revisionDescription = null;
+  @SerializedName("revisiondescription")
+  private String revisiondescription = null;
 
-  @SerializedName("RevisionDate$DATE")
-  private DateTime revisionDateDATE = null;
+  @SerializedName("revisiondate$date")
+  private DateTime revisiondatedate = null;
 
-  @SerializedName("RevisionAuthor_ID")
-  private String revisionAuthorID = null;
+  @SerializedName("revisionauthor_id")
+  private String revisionauthorId = null;
 
-  @SerializedName("Revision")
+  @SerializedName("revision")
   private Integer revision = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("Closed")
+  @SerializedName("closed")
   private Boolean closed = null;
 
-  @SerializedName("CorrectionTime$DATE")
-  private DateTime correctionTimeDATE = null;
+  @SerializedName("correctiontime$date")
+  private DateTime correctiontimedate = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("Category_ID")
-  private String categoryID = null;
+  @SerializedName("category_id")
+  private String categoryId = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("FirmOffice_ID")
-  private String firmOfficeID = null;
+  @SerializedName("firmoffice_id")
+  private String firmofficeId = null;
 
-  @SerializedName("DocState")
-  private Integer docState = null;
+  @SerializedName("docstate")
+  private Integer docstate = null;
 
-  @SerializedName("DocStateName")
-  private String docStateName = null;
+  @SerializedName("docstatename")
+  private String docstatename = null;
 
-  @SerializedName("ProcessingType")
-  private Integer processingType = null;
+  @SerializedName("processingtype")
+  private Integer processingtype = null;
 
-  @SerializedName("ProcessingTypeName")
-  private String processingTypeName = null;
+  @SerializedName("processingtypename")
+  private String processingtypename = null;
 
-  @SerializedName("Person_ID")
-  private String personID = null;
+  @SerializedName("person_id")
+  private String personId = null;
 
-  @SerializedName("Interrupted")
+  @SerializedName("interrupted")
   private Boolean interrupted = null;
 
-  @SerializedName("ErrorCode")
-  private Integer errorCode = null;
+  @SerializedName("errorcode")
+  private Integer errorcode = null;
 
-  @SerializedName("ErrorMessage")
-  private String errorMessage = null;
+  @SerializedName("errormessage")
+  private String errormessage = null;
 
-  @SerializedName("ErrorMessageLine")
-  private String errorMessageLine = null;
+  @SerializedName("errormessageline")
+  private String errormessageline = null;
 
-  @SerializedName("DriverParams")
-  private byte[] driverParams = null;
+  @SerializedName("driverparams")
+  private byte[] driverparams = null;
 
-  @SerializedName("Contents")
+  @SerializedName("contents")
   private List<Documentcontent> contents = new ArrayList<Documentcontent>();
 
-  @SerializedName("Participants")
+  @SerializedName("participants")
   private List<Documentparticipant> participants = new ArrayList<Documentparticipant>();
 
-  @SerializedName("RuleDriverParams")
-  private byte[] ruleDriverParams = null;
+  @SerializedName("ruledriverparams")
+  private byte[] ruledriverparams = null;
 
-  @SerializedName("TotalOriginalSize")
-  private Integer totalOriginalSize = null;
+  @SerializedName("totaloriginalsize")
+  private Integer totaloriginalsize = null;
 
-  @SerializedName("TotalCompressedSize")
-  private Integer totalCompressedSize = null;
+  @SerializedName("totalcompressedsize")
+  private Integer totalcompressedsize = null;
 
-  @SerializedName("LockedBy_ID")
-  private String lockedByID = null;
+  @SerializedName("lockedby_id")
+  private String lockedbyId = null;
 
-  @SerializedName("CreatedAt$DATE")
-  private DateTime createdAtDATE = null;
+  @SerializedName("createdat$date")
+  private DateTime createdatdate = null;
 
-  @SerializedName("CorrectedAt$DATE")
-  private DateTime correctedAtDATE = null;
+  @SerializedName("correctedat$date")
+  private DateTime correctedatdate = null;
+
+  public Document displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Document id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Document classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Document objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Document revidedId(String revidedId) {
+    this.revidedId = revidedId;
+    return this;
   }
 
    /**
-   * ID revidovaného objektu; ID objektu Dokument
-   * @return revidedID
+   * id revidovaného objektu; id objektu dokument
+   * @return revidedId
   **/
-  @ApiModelProperty(example = "null", value = "ID revidovaného objektu; ID objektu Dokument")
-  public String getRevidedID() {
-    return revidedID;
+  @ApiModelProperty(example = "null", value = "id revidovaného objektu; id objektu dokument")
+  public String getRevidedId() {
+    return revidedId;
+  }
+
+  public void setRevidedId(String revidedId) {
+    this.revidedId = revidedId;
+  }
+
+  public Document revisiondescription(String revisiondescription) {
+    this.revisiondescription = revisiondescription;
+    return this;
   }
 
    /**
-   * Popis revize
-   * @return revisionDescription
+   * popis revize
+   * @return revisiondescription
   **/
-  @ApiModelProperty(example = "null", value = "Popis revize")
-  public String getRevisionDescription() {
-    return revisionDescription;
+  @ApiModelProperty(example = "null", value = "popis revize")
+  public String getRevisiondescription() {
+    return revisiondescription;
+  }
+
+  public void setRevisiondescription(String revisiondescription) {
+    this.revisiondescription = revisiondescription;
+  }
+
+  public Document revisiondatedate(DateTime revisiondatedate) {
+    this.revisiondatedate = revisiondatedate;
+    return this;
   }
 
    /**
-   * Datum revize
-   * @return revisionDateDATE
+   * datum revize
+   * @return revisiondatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum revize")
-  public DateTime getRevisionDateDATE() {
-    return revisionDateDATE;
+  @ApiModelProperty(example = "null", value = "datum revize")
+  public DateTime getRevisiondatedate() {
+    return revisiondatedate;
+  }
+
+  public void setRevisiondatedate(DateTime revisiondatedate) {
+    this.revisiondatedate = revisiondatedate;
+  }
+
+  public Document revisionauthorId(String revisionauthorId) {
+    this.revisionauthorId = revisionauthorId;
+    return this;
   }
 
    /**
-   * Autor revize; ID objektu Uživatel
-   * @return revisionAuthorID
+   * autor revize; id objektu uživatel
+   * @return revisionauthorId
   **/
-  @ApiModelProperty(example = "null", value = "Autor revize; ID objektu Uživatel")
-  public String getRevisionAuthorID() {
-    return revisionAuthorID;
+  @ApiModelProperty(example = "null", value = "autor revize; id objektu uživatel")
+  public String getRevisionauthorId() {
+    return revisionauthorId;
+  }
+
+  public void setRevisionauthorId(String revisionauthorId) {
+    this.revisionauthorId = revisionauthorId;
+  }
+
+  public Document revision(Integer revision) {
+    this.revision = revision;
+    return this;
   }
 
    /**
@@ -255,202 +332,206 @@ public class Document   {
     return revision;
   }
 
-  public Document docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setRevision(Integer revision) {
+    this.revision = revision;
+  }
+
+  public Document docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Document periodID(String periodID) {
-    this.periodID = periodID;
+  public Document periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Document ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Document ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Document docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Document docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Document createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Document createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Document correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Document correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Document newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Document newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Document newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Document newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Document busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Document busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Document busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Document busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Document busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Document bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obch. případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obch. případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obch. případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obch. případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
   public Document closed(Boolean closed) {
@@ -459,10 +540,10 @@ public class Document   {
   }
 
    /**
-   * Vyřízen [persistentní položka]
+   * vyřízen [persistentní položka]
    * @return closed
   **/
-  @ApiModelProperty(example = "null", value = "Vyřízen [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "vyřízen [persistentní položka]")
   public Boolean getClosed() {
     return closed;
   }
@@ -471,22 +552,22 @@ public class Document   {
     this.closed = closed;
   }
 
-  public Document correctionTimeDATE(DateTime correctionTimeDATE) {
-    this.correctionTimeDATE = correctionTimeDATE;
+  public Document correctiontimedate(DateTime correctiontimedate) {
+    this.correctiontimedate = correctiontimedate;
     return this;
   }
 
    /**
-   * Opraveno [persistentní položka]
-   * @return correctionTimeDATE
+   * opraveno [persistentní položka]
+   * @return correctiontimedate
   **/
-  @ApiModelProperty(example = "null", value = "Opraveno [persistentní položka]")
-  public DateTime getCorrectionTimeDATE() {
-    return correctionTimeDATE;
+  @ApiModelProperty(example = "null", value = "opraveno [persistentní položka]")
+  public DateTime getCorrectiontimedate() {
+    return correctiontimedate;
   }
 
-  public void setCorrectionTimeDATE(DateTime correctionTimeDATE) {
-    this.correctionTimeDATE = correctionTimeDATE;
+  public void setCorrectiontimedate(DateTime correctiontimedate) {
+    this.correctiontimedate = correctiontimedate;
   }
 
   public Document description(String description) {
@@ -495,10 +576,10 @@ public class Document   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -507,166 +588,166 @@ public class Document   {
     this.description = description;
   }
 
-  public Document divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Document divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Document categoryID(String categoryID) {
-    this.categoryID = categoryID;
+  public Document categoryId(String categoryId) {
+    this.categoryId = categoryId;
     return this;
   }
 
    /**
-   * Kategorie dokumentu; ID objektu Kategorie dokumentu [persistentní položka]
-   * @return categoryID
+   * kategorie dokumentu; id objektu kategorie dokumentu [persistentní položka]
+   * @return categoryId
   **/
-  @ApiModelProperty(example = "null", value = "Kategorie dokumentu; ID objektu Kategorie dokumentu [persistentní položka]")
-  public String getCategoryID() {
-    return categoryID;
+  @ApiModelProperty(example = "null", value = "kategorie dokumentu; id objektu kategorie dokumentu [persistentní položka]")
+  public String getCategoryId() {
+    return categoryId;
   }
 
-  public void setCategoryID(String categoryID) {
-    this.categoryID = categoryID;
+  public void setCategoryId(String categoryId) {
+    this.categoryId = categoryId;
   }
 
-  public Document firmID(String firmID) {
-    this.firmID = firmID;
+  public Document firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Document firmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public Document firmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
     return this;
   }
 
    /**
-   * Provozovna; ID objektu Provozovna [persistentní položka]
-   * @return firmOfficeID
+   * provozovna; id objektu provozovna [persistentní položka]
+   * @return firmofficeId
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna; ID objektu Provozovna [persistentní položka]")
-  public String getFirmOfficeID() {
-    return firmOfficeID;
+  @ApiModelProperty(example = "null", value = "provozovna; id objektu provozovna [persistentní položka]")
+  public String getFirmofficeId() {
+    return firmofficeId;
   }
 
-  public void setFirmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public void setFirmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
   }
 
-  public Document docState(Integer docState) {
-    this.docState = docState;
+  public Document docstate(Integer docstate) {
+    this.docstate = docstate;
     return this;
   }
 
    /**
-   * Stav [persistentní položka]
-   * @return docState
+   * stav [persistentní položka]
+   * @return docstate
   **/
-  @ApiModelProperty(example = "null", value = "Stav [persistentní položka]")
-  public Integer getDocState() {
-    return docState;
+  @ApiModelProperty(example = "null", value = "stav [persistentní položka]")
+  public Integer getDocstate() {
+    return docstate;
   }
 
-  public void setDocState(Integer docState) {
-    this.docState = docState;
+  public void setDocstate(Integer docstate) {
+    this.docstate = docstate;
   }
 
-  public Document docStateName(String docStateName) {
-    this.docStateName = docStateName;
+  public Document docstatename(String docstatename) {
+    this.docstatename = docstatename;
     return this;
   }
 
    /**
-   * Stav (název)
-   * @return docStateName
+   * stav (název)
+   * @return docstatename
   **/
-  @ApiModelProperty(example = "null", value = "Stav (název)")
-  public String getDocStateName() {
-    return docStateName;
+  @ApiModelProperty(example = "null", value = "stav (název)")
+  public String getDocstatename() {
+    return docstatename;
   }
 
-  public void setDocStateName(String docStateName) {
-    this.docStateName = docStateName;
+  public void setDocstatename(String docstatename) {
+    this.docstatename = docstatename;
   }
 
-  public Document processingType(Integer processingType) {
-    this.processingType = processingType;
+  public Document processingtype(Integer processingtype) {
+    this.processingtype = processingtype;
     return this;
   }
 
    /**
-   * Způsob zpracování [persistentní položka]
-   * @return processingType
+   * způsob zpracování [persistentní položka]
+   * @return processingtype
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zpracování [persistentní položka]")
-  public Integer getProcessingType() {
-    return processingType;
+  @ApiModelProperty(example = "null", value = "způsob zpracování [persistentní položka]")
+  public Integer getProcessingtype() {
+    return processingtype;
   }
 
-  public void setProcessingType(Integer processingType) {
-    this.processingType = processingType;
+  public void setProcessingtype(Integer processingtype) {
+    this.processingtype = processingtype;
   }
 
-  public Document processingTypeName(String processingTypeName) {
-    this.processingTypeName = processingTypeName;
+  public Document processingtypename(String processingtypename) {
+    this.processingtypename = processingtypename;
     return this;
   }
 
    /**
-   * Způsob zpracování (název)
-   * @return processingTypeName
+   * způsob zpracování (název)
+   * @return processingtypename
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zpracování (název)")
-  public String getProcessingTypeName() {
-    return processingTypeName;
+  @ApiModelProperty(example = "null", value = "způsob zpracování (název)")
+  public String getProcessingtypename() {
+    return processingtypename;
   }
 
-  public void setProcessingTypeName(String processingTypeName) {
-    this.processingTypeName = processingTypeName;
+  public void setProcessingtypename(String processingtypename) {
+    this.processingtypename = processingtypename;
   }
 
-  public Document personID(String personID) {
-    this.personID = personID;
+  public Document personId(String personId) {
+    this.personId = personId;
     return this;
   }
 
    /**
-   * Osoba; ID objektu Osoba [persistentní položka]
-   * @return personID
+   * osoba; id objektu osoba [persistentní položka]
+   * @return personId
   **/
-  @ApiModelProperty(example = "null", value = "Osoba; ID objektu Osoba [persistentní položka]")
-  public String getPersonID() {
-    return personID;
+  @ApiModelProperty(example = "null", value = "osoba; id objektu osoba [persistentní položka]")
+  public String getPersonId() {
+    return personId;
   }
 
-  public void setPersonID(String personID) {
-    this.personID = personID;
+  public void setPersonId(String personId) {
+    this.personId = personId;
   }
 
   public Document interrupted(Boolean interrupted) {
@@ -675,10 +756,10 @@ public class Document   {
   }
 
    /**
-   * Přerušeno [persistentní položka]
+   * přerušeno [persistentní položka]
    * @return interrupted
   **/
-  @ApiModelProperty(example = "null", value = "Přerušeno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "přerušeno [persistentní položka]")
   public Boolean getInterrupted() {
     return interrupted;
   }
@@ -687,76 +768,76 @@ public class Document   {
     this.interrupted = interrupted;
   }
 
-  public Document errorCode(Integer errorCode) {
-    this.errorCode = errorCode;
+  public Document errorcode(Integer errorcode) {
+    this.errorcode = errorcode;
     return this;
   }
 
    /**
-   * Kód chyby [persistentní položka]
-   * @return errorCode
+   * kód chyby [persistentní položka]
+   * @return errorcode
   **/
-  @ApiModelProperty(example = "null", value = "Kód chyby [persistentní položka]")
-  public Integer getErrorCode() {
-    return errorCode;
+  @ApiModelProperty(example = "null", value = "kód chyby [persistentní položka]")
+  public Integer getErrorcode() {
+    return errorcode;
   }
 
-  public void setErrorCode(Integer errorCode) {
-    this.errorCode = errorCode;
+  public void setErrorcode(Integer errorcode) {
+    this.errorcode = errorcode;
   }
 
-  public Document errorMessage(String errorMessage) {
-    this.errorMessage = errorMessage;
+  public Document errormessage(String errormessage) {
+    this.errormessage = errormessage;
     return this;
   }
 
    /**
-   * Popis chyby [persistentní položka]
-   * @return errorMessage
+   * popis chyby [persistentní položka]
+   * @return errormessage
   **/
-  @ApiModelProperty(example = "null", value = "Popis chyby [persistentní položka]")
-  public String getErrorMessage() {
-    return errorMessage;
+  @ApiModelProperty(example = "null", value = "popis chyby [persistentní položka]")
+  public String getErrormessage() {
+    return errormessage;
   }
 
-  public void setErrorMessage(String errorMessage) {
-    this.errorMessage = errorMessage;
+  public void setErrormessage(String errormessage) {
+    this.errormessage = errormessage;
   }
 
-  public Document errorMessageLine(String errorMessageLine) {
-    this.errorMessageLine = errorMessageLine;
+  public Document errormessageline(String errormessageline) {
+    this.errormessageline = errormessageline;
     return this;
   }
 
    /**
-   * Popis chyby (jednořádkový)
-   * @return errorMessageLine
+   * popis chyby (jednořádkový)
+   * @return errormessageline
   **/
-  @ApiModelProperty(example = "null", value = "Popis chyby (jednořádkový)")
-  public String getErrorMessageLine() {
-    return errorMessageLine;
+  @ApiModelProperty(example = "null", value = "popis chyby (jednořádkový)")
+  public String getErrormessageline() {
+    return errormessageline;
   }
 
-  public void setErrorMessageLine(String errorMessageLine) {
-    this.errorMessageLine = errorMessageLine;
+  public void setErrormessageline(String errormessageline) {
+    this.errormessageline = errormessageline;
   }
 
-  public Document driverParams(byte[] driverParams) {
-    this.driverParams = driverParams;
+  public Document driverparams(byte[] driverparams) {
+    this.driverparams = driverparams;
     return this;
   }
 
    /**
-   * Parametry ovladače [persistentní položka]
-   * @return driverParams
+   * parametry ovladače [persistentní položka]
+   * @return driverparams
   **/
-  @ApiModelProperty(example = "null", value = "Parametry ovladače [persistentní položka]")
-  public byte[] getDriverParams() {
-    return driverParams;
+  @ApiModelProperty(example = "null", value = "parametry ovladače [persistentní položka]")
+  public byte[] getDriverparams() {
+    return driverparams;
   }
 
-  public void setDriverParams(byte[] driverParams) {
-    this.driverParams = driverParams;
+  public void setDriverparams(byte[] driverparams) {
+    this.driverparams = driverparams;
   }
 
   public Document contents(List<Documentcontent> contents) {
@@ -770,10 +851,10 @@ public class Document   {
   }
 
    /**
-   * Obsahy; kolekce BO Obsah dokumentu [nepersistentní položka]
+   * obsahy; kolekce bo obsah dokumentu [nepersistentní položka]
    * @return contents
   **/
-  @ApiModelProperty(example = "null", value = "Obsahy; kolekce BO Obsah dokumentu [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "obsahy; kolekce bo obsah dokumentu [nepersistentní položka]")
   public List<Documentcontent> getContents() {
     return contents;
   }
@@ -793,10 +874,10 @@ public class Document   {
   }
 
    /**
-   * Účastníci; kolekce BO Účastník dokumentu [nepersistentní položka]
+   * Účastníci; kolekce bo Účastník dokumentu [nepersistentní položka]
    * @return participants
   **/
-  @ApiModelProperty(example = "null", value = "Účastníci; kolekce BO Účastník dokumentu [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Účastníci; kolekce bo Účastník dokumentu [nepersistentní položka]")
   public List<Documentparticipant> getParticipants() {
     return participants;
   }
@@ -805,112 +886,112 @@ public class Document   {
     this.participants = participants;
   }
 
-  public Document ruleDriverParams(byte[] ruleDriverParams) {
-    this.ruleDriverParams = ruleDriverParams;
+  public Document ruledriverparams(byte[] ruledriverparams) {
+    this.ruledriverparams = ruledriverparams;
     return this;
   }
 
    /**
-   * Parametry ovladače z pravidla [persistentní položka]
-   * @return ruleDriverParams
+   * parametry ovladače z pravidla [persistentní položka]
+   * @return ruledriverparams
   **/
-  @ApiModelProperty(example = "null", value = "Parametry ovladače z pravidla [persistentní položka]")
-  public byte[] getRuleDriverParams() {
-    return ruleDriverParams;
+  @ApiModelProperty(example = "null", value = "parametry ovladače z pravidla [persistentní položka]")
+  public byte[] getRuledriverparams() {
+    return ruledriverparams;
   }
 
-  public void setRuleDriverParams(byte[] ruleDriverParams) {
-    this.ruleDriverParams = ruleDriverParams;
+  public void setRuledriverparams(byte[] ruledriverparams) {
+    this.ruledriverparams = ruledriverparams;
   }
 
-  public Document totalOriginalSize(Integer totalOriginalSize) {
-    this.totalOriginalSize = totalOriginalSize;
+  public Document totaloriginalsize(Integer totaloriginalsize) {
+    this.totaloriginalsize = totaloriginalsize;
     return this;
   }
 
    /**
-   * Původní velikost dat
-   * @return totalOriginalSize
+   * původní velikost dat
+   * @return totaloriginalsize
   **/
-  @ApiModelProperty(example = "null", value = "Původní velikost dat")
-  public Integer getTotalOriginalSize() {
-    return totalOriginalSize;
+  @ApiModelProperty(example = "null", value = "původní velikost dat")
+  public Integer getTotaloriginalsize() {
+    return totaloriginalsize;
   }
 
-  public void setTotalOriginalSize(Integer totalOriginalSize) {
-    this.totalOriginalSize = totalOriginalSize;
+  public void setTotaloriginalsize(Integer totaloriginalsize) {
+    this.totaloriginalsize = totaloriginalsize;
   }
 
-  public Document totalCompressedSize(Integer totalCompressedSize) {
-    this.totalCompressedSize = totalCompressedSize;
+  public Document totalcompressedsize(Integer totalcompressedsize) {
+    this.totalcompressedsize = totalcompressedsize;
     return this;
   }
 
    /**
-   * Komprimovaná velikost dat
-   * @return totalCompressedSize
+   * komprimovaná velikost dat
+   * @return totalcompressedsize
   **/
-  @ApiModelProperty(example = "null", value = "Komprimovaná velikost dat")
-  public Integer getTotalCompressedSize() {
-    return totalCompressedSize;
+  @ApiModelProperty(example = "null", value = "komprimovaná velikost dat")
+  public Integer getTotalcompressedsize() {
+    return totalcompressedsize;
   }
 
-  public void setTotalCompressedSize(Integer totalCompressedSize) {
-    this.totalCompressedSize = totalCompressedSize;
+  public void setTotalcompressedsize(Integer totalcompressedsize) {
+    this.totalcompressedsize = totalcompressedsize;
   }
 
-  public Document lockedByID(String lockedByID) {
-    this.lockedByID = lockedByID;
+  public Document lockedbyId(String lockedbyId) {
+    this.lockedbyId = lockedbyId;
     return this;
   }
 
    /**
-   * Uživatel zamykající dokument; ID objektu Uživatel [persistentní položka]
-   * @return lockedByID
+   * uživatel zamykající dokument; id objektu uživatel [persistentní položka]
+   * @return lockedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Uživatel zamykající dokument; ID objektu Uživatel [persistentní položka]")
-  public String getLockedByID() {
-    return lockedByID;
+  @ApiModelProperty(example = "null", value = "uživatel zamykající dokument; id objektu uživatel [persistentní položka]")
+  public String getLockedbyId() {
+    return lockedbyId;
   }
 
-  public void setLockedByID(String lockedByID) {
-    this.lockedByID = lockedByID;
+  public void setLockedbyId(String lockedbyId) {
+    this.lockedbyId = lockedbyId;
   }
 
-  public Document createdAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public Document createdatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
     return this;
   }
 
    /**
-   * Vytvořeno [persistentní položka]
-   * @return createdAtDATE
+   * vytvořeno [persistentní položka]
+   * @return createdatdate
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořeno [persistentní položka]")
-  public DateTime getCreatedAtDATE() {
-    return createdAtDATE;
+  @ApiModelProperty(example = "null", value = "vytvořeno [persistentní položka]")
+  public DateTime getCreatedatdate() {
+    return createdatdate;
   }
 
-  public void setCreatedAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public void setCreatedatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
   }
 
-  public Document correctedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public Document correctedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
     return this;
   }
 
    /**
-   * Opraveno [persistentní položka]
-   * @return correctedAtDATE
+   * opraveno [persistentní položka]
+   * @return correctedatdate
   **/
-  @ApiModelProperty(example = "null", value = "Opraveno [persistentní položka]")
-  public DateTime getCorrectedAtDATE() {
-    return correctedAtDATE;
+  @ApiModelProperty(example = "null", value = "opraveno [persistentní položka]")
+  public DateTime getCorrectedatdate() {
+    return correctedatdate;
   }
 
-  public void setCorrectedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public void setCorrectedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
   }
 
 
@@ -923,56 +1004,56 @@ public class Document   {
       return false;
     }
     Document document = (Document) o;
-    return Objects.equals(this.displayName, document.displayName) &&
-        Objects.equals(this.ID, document.ID) &&
-        Objects.equals(this.classID, document.classID) &&
-        Objects.equals(this.objVersion, document.objVersion) &&
-        Objects.equals(this.revidedID, document.revidedID) &&
-        Objects.equals(this.revisionDescription, document.revisionDescription) &&
-        Objects.equals(this.revisionDateDATE, document.revisionDateDATE) &&
-        Objects.equals(this.revisionAuthorID, document.revisionAuthorID) &&
+    return Objects.equals(this.displayname, document.displayname) &&
+        Objects.equals(this.id, document.id) &&
+        Objects.equals(this.classid, document.classid) &&
+        Objects.equals(this.objversion, document.objversion) &&
+        Objects.equals(this.revidedId, document.revidedId) &&
+        Objects.equals(this.revisiondescription, document.revisiondescription) &&
+        Objects.equals(this.revisiondatedate, document.revisiondatedate) &&
+        Objects.equals(this.revisionauthorId, document.revisionauthorId) &&
         Objects.equals(this.revision, document.revision) &&
-        Objects.equals(this.docQueueID, document.docQueueID) &&
-        Objects.equals(this.periodID, document.periodID) &&
-        Objects.equals(this.ordNumber, document.ordNumber) &&
-        Objects.equals(this.docDateDATE, document.docDateDATE) &&
-        Objects.equals(this.createdByID, document.createdByID) &&
-        Objects.equals(this.correctedByID, document.correctedByID) &&
-        Objects.equals(this.newRelatedType, document.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, document.newRelatedDocumentID) &&
-        Objects.equals(this.busOrderID, document.busOrderID) &&
-        Objects.equals(this.busProjectID, document.busProjectID) &&
-        Objects.equals(this.busTransactionID, document.busTransactionID) &&
+        Objects.equals(this.docqueueId, document.docqueueId) &&
+        Objects.equals(this.periodId, document.periodId) &&
+        Objects.equals(this.ordnumber, document.ordnumber) &&
+        Objects.equals(this.docdatedate, document.docdatedate) &&
+        Objects.equals(this.createdbyId, document.createdbyId) &&
+        Objects.equals(this.correctedbyId, document.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, document.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, document.newrelateddocumentId) &&
+        Objects.equals(this.busorderId, document.busorderId) &&
+        Objects.equals(this.busprojectId, document.busprojectId) &&
+        Objects.equals(this.bustransactionId, document.bustransactionId) &&
         Objects.equals(this.closed, document.closed) &&
-        Objects.equals(this.correctionTimeDATE, document.correctionTimeDATE) &&
+        Objects.equals(this.correctiontimedate, document.correctiontimedate) &&
         Objects.equals(this.description, document.description) &&
-        Objects.equals(this.divisionID, document.divisionID) &&
-        Objects.equals(this.categoryID, document.categoryID) &&
-        Objects.equals(this.firmID, document.firmID) &&
-        Objects.equals(this.firmOfficeID, document.firmOfficeID) &&
-        Objects.equals(this.docState, document.docState) &&
-        Objects.equals(this.docStateName, document.docStateName) &&
-        Objects.equals(this.processingType, document.processingType) &&
-        Objects.equals(this.processingTypeName, document.processingTypeName) &&
-        Objects.equals(this.personID, document.personID) &&
+        Objects.equals(this.divisionId, document.divisionId) &&
+        Objects.equals(this.categoryId, document.categoryId) &&
+        Objects.equals(this.firmId, document.firmId) &&
+        Objects.equals(this.firmofficeId, document.firmofficeId) &&
+        Objects.equals(this.docstate, document.docstate) &&
+        Objects.equals(this.docstatename, document.docstatename) &&
+        Objects.equals(this.processingtype, document.processingtype) &&
+        Objects.equals(this.processingtypename, document.processingtypename) &&
+        Objects.equals(this.personId, document.personId) &&
         Objects.equals(this.interrupted, document.interrupted) &&
-        Objects.equals(this.errorCode, document.errorCode) &&
-        Objects.equals(this.errorMessage, document.errorMessage) &&
-        Objects.equals(this.errorMessageLine, document.errorMessageLine) &&
-        Objects.equals(this.driverParams, document.driverParams) &&
+        Objects.equals(this.errorcode, document.errorcode) &&
+        Objects.equals(this.errormessage, document.errormessage) &&
+        Objects.equals(this.errormessageline, document.errormessageline) &&
+        Objects.equals(this.driverparams, document.driverparams) &&
         Objects.equals(this.contents, document.contents) &&
         Objects.equals(this.participants, document.participants) &&
-        Objects.equals(this.ruleDriverParams, document.ruleDriverParams) &&
-        Objects.equals(this.totalOriginalSize, document.totalOriginalSize) &&
-        Objects.equals(this.totalCompressedSize, document.totalCompressedSize) &&
-        Objects.equals(this.lockedByID, document.lockedByID) &&
-        Objects.equals(this.createdAtDATE, document.createdAtDATE) &&
-        Objects.equals(this.correctedAtDATE, document.correctedAtDATE);
+        Objects.equals(this.ruledriverparams, document.ruledriverparams) &&
+        Objects.equals(this.totaloriginalsize, document.totaloriginalsize) &&
+        Objects.equals(this.totalcompressedsize, document.totalcompressedsize) &&
+        Objects.equals(this.lockedbyId, document.lockedbyId) &&
+        Objects.equals(this.createdatdate, document.createdatdate) &&
+        Objects.equals(this.correctedatdate, document.correctedatdate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, revidedID, revisionDescription, revisionDateDATE, revisionAuthorID, revision, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, busOrderID, busProjectID, busTransactionID, closed, correctionTimeDATE, description, divisionID, categoryID, firmID, firmOfficeID, docState, docStateName, processingType, processingTypeName, personID, interrupted, errorCode, errorMessage, errorMessageLine, driverParams, contents, participants, ruleDriverParams, totalOriginalSize, totalCompressedSize, lockedByID, createdAtDATE, correctedAtDATE);
+    return Objects.hash(displayname, id, classid, objversion, revidedId, revisiondescription, revisiondatedate, revisionauthorId, revision, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, busorderId, busprojectId, bustransactionId, closed, correctiontimedate, description, divisionId, categoryId, firmId, firmofficeId, docstate, docstatename, processingtype, processingtypename, personId, interrupted, errorcode, errormessage, errormessageline, driverparams, contents, participants, ruledriverparams, totaloriginalsize, totalcompressedsize, lockedbyId, createdatdate, correctedatdate);
   }
 
   @Override
@@ -980,51 +1061,51 @@ public class Document   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Document {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    revidedID: ").append(toIndentedString(revidedID)).append("\n");
-    sb.append("    revisionDescription: ").append(toIndentedString(revisionDescription)).append("\n");
-    sb.append("    revisionDateDATE: ").append(toIndentedString(revisionDateDATE)).append("\n");
-    sb.append("    revisionAuthorID: ").append(toIndentedString(revisionAuthorID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    revidedId: ").append(toIndentedString(revidedId)).append("\n");
+    sb.append("    revisiondescription: ").append(toIndentedString(revisiondescription)).append("\n");
+    sb.append("    revisiondatedate: ").append(toIndentedString(revisiondatedate)).append("\n");
+    sb.append("    revisionauthorId: ").append(toIndentedString(revisionauthorId)).append("\n");
     sb.append("    revision: ").append(toIndentedString(revision)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
     sb.append("    closed: ").append(toIndentedString(closed)).append("\n");
-    sb.append("    correctionTimeDATE: ").append(toIndentedString(correctionTimeDATE)).append("\n");
+    sb.append("    correctiontimedate: ").append(toIndentedString(correctiontimedate)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    categoryID: ").append(toIndentedString(categoryID)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    firmOfficeID: ").append(toIndentedString(firmOfficeID)).append("\n");
-    sb.append("    docState: ").append(toIndentedString(docState)).append("\n");
-    sb.append("    docStateName: ").append(toIndentedString(docStateName)).append("\n");
-    sb.append("    processingType: ").append(toIndentedString(processingType)).append("\n");
-    sb.append("    processingTypeName: ").append(toIndentedString(processingTypeName)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    categoryId: ").append(toIndentedString(categoryId)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    firmofficeId: ").append(toIndentedString(firmofficeId)).append("\n");
+    sb.append("    docstate: ").append(toIndentedString(docstate)).append("\n");
+    sb.append("    docstatename: ").append(toIndentedString(docstatename)).append("\n");
+    sb.append("    processingtype: ").append(toIndentedString(processingtype)).append("\n");
+    sb.append("    processingtypename: ").append(toIndentedString(processingtypename)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
     sb.append("    interrupted: ").append(toIndentedString(interrupted)).append("\n");
-    sb.append("    errorCode: ").append(toIndentedString(errorCode)).append("\n");
-    sb.append("    errorMessage: ").append(toIndentedString(errorMessage)).append("\n");
-    sb.append("    errorMessageLine: ").append(toIndentedString(errorMessageLine)).append("\n");
-    sb.append("    driverParams: ").append(toIndentedString(driverParams)).append("\n");
+    sb.append("    errorcode: ").append(toIndentedString(errorcode)).append("\n");
+    sb.append("    errormessage: ").append(toIndentedString(errormessage)).append("\n");
+    sb.append("    errormessageline: ").append(toIndentedString(errormessageline)).append("\n");
+    sb.append("    driverparams: ").append(toIndentedString(driverparams)).append("\n");
     sb.append("    contents: ").append(toIndentedString(contents)).append("\n");
     sb.append("    participants: ").append(toIndentedString(participants)).append("\n");
-    sb.append("    ruleDriverParams: ").append(toIndentedString(ruleDriverParams)).append("\n");
-    sb.append("    totalOriginalSize: ").append(toIndentedString(totalOriginalSize)).append("\n");
-    sb.append("    totalCompressedSize: ").append(toIndentedString(totalCompressedSize)).append("\n");
-    sb.append("    lockedByID: ").append(toIndentedString(lockedByID)).append("\n");
-    sb.append("    createdAtDATE: ").append(toIndentedString(createdAtDATE)).append("\n");
-    sb.append("    correctedAtDATE: ").append(toIndentedString(correctedAtDATE)).append("\n");
+    sb.append("    ruledriverparams: ").append(toIndentedString(ruledriverparams)).append("\n");
+    sb.append("    totaloriginalsize: ").append(toIndentedString(totaloriginalsize)).append("\n");
+    sb.append("    totalcompressedsize: ").append(toIndentedString(totalcompressedsize)).append("\n");
+    sb.append("    lockedbyId: ").append(toIndentedString(lockedbyId)).append("\n");
+    sb.append("    createdatdate: ").append(toIndentedString(createdatdate)).append("\n");
+    sb.append("    correctedatdate: ").append(toIndentedString(correctedatdate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

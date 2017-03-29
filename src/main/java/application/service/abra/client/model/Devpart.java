@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,69 +34,105 @@ import java.util.Objects;
 /**
  * Devpart
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Devpart   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("Product_ID")
-  private String productID = null;
+  @SerializedName("product_id")
+  private String productId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Devpart displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Devpart id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Devpart classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Devpart objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Devpart hidden(Boolean hidden) {
@@ -105,10 +141,10 @@ public class Devpart   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -123,10 +159,10 @@ public class Devpart   {
   }
 
    /**
-   * Zkratka [persistentní položka]
+   * zkratka [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Zkratka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "zkratka [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -141,10 +177,10 @@ public class Devpart   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -159,10 +195,10 @@ public class Devpart   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -171,22 +207,22 @@ public class Devpart   {
     this.description = description;
   }
 
-  public Devpart productID(String productID) {
-    this.productID = productID;
+  public Devpart productId(String productId) {
+    this.productId = productId;
     return this;
   }
 
    /**
-   * Produkt; ID objektu Vývojový produkt [persistentní položka]
-   * @return productID
+   * produkt; id objektu vývojový produkt [persistentní položka]
+   * @return productId
   **/
-  @ApiModelProperty(example = "null", value = "Produkt; ID objektu Vývojový produkt [persistentní položka]")
-  public String getProductID() {
-    return productID;
+  @ApiModelProperty(example = "null", value = "produkt; id objektu vývojový produkt [persistentní položka]")
+  public String getProductId() {
+    return productId;
   }
 
-  public void setProductID(String productID) {
-    this.productID = productID;
+  public void setProductId(String productId) {
+    this.productId = productId;
   }
 
 
@@ -199,20 +235,20 @@ public class Devpart   {
       return false;
     }
     Devpart devpart = (Devpart) o;
-    return Objects.equals(this.displayName, devpart.displayName) &&
-        Objects.equals(this.ID, devpart.ID) &&
-        Objects.equals(this.classID, devpart.classID) &&
-        Objects.equals(this.objVersion, devpart.objVersion) &&
+    return Objects.equals(this.displayname, devpart.displayname) &&
+        Objects.equals(this.id, devpart.id) &&
+        Objects.equals(this.classid, devpart.classid) &&
+        Objects.equals(this.objversion, devpart.objversion) &&
         Objects.equals(this.hidden, devpart.hidden) &&
         Objects.equals(this.code, devpart.code) &&
         Objects.equals(this.name, devpart.name) &&
         Objects.equals(this.description, devpart.description) &&
-        Objects.equals(this.productID, devpart.productID);
+        Objects.equals(this.productId, devpart.productId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, description, productID);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, description, productId);
   }
 
   @Override
@@ -220,15 +256,15 @@ public class Devpart   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Devpart {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    productID: ").append(toIndentedString(productID)).append("\n");
+    sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

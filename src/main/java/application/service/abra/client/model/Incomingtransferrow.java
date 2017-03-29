@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,240 +36,285 @@ import java.util.Objects;
 /**
  * Incomingtransferrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Incomingtransferrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Text")
+  @SerializedName("text")
   private String text = null;
 
-  @SerializedName("RowType")
-  private Integer rowType = null;
+  @SerializedName("rowtype")
+  private Integer rowtype = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("TAmount")
-  private Double tAmount = null;
+  @SerializedName("tamount")
+  private Double tamount = null;
 
-  @SerializedName("LocalTAmount")
-  private Double localTAmount = null;
+  @SerializedName("localtamount")
+  private Double localtamount = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("MainUnitRate")
-  private Double mainUnitRate = null;
+  @SerializedName("mainunitrate")
+  private Double mainunitrate = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("ClosingOrder")
-  private Integer closingOrder = null;
+  @SerializedName("closingorder")
+  private Integer closingorder = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("UnitQuantity")
-  private Double unitQuantity = null;
+  @SerializedName("unitquantity")
+  private Double unitquantity = null;
 
-  @SerializedName("MainUnitQuantity")
-  private Double mainUnitQuantity = null;
+  @SerializedName("mainunitquantity")
+  private Double mainunitquantity = null;
 
-  @SerializedName("UnitPrice")
-  private Double unitPrice = null;
+  @SerializedName("unitprice")
+  private Double unitprice = null;
 
-  @SerializedName("TotalPrice")
-  private Double totalPrice = null;
+  @SerializedName("totalprice")
+  private Double totalprice = null;
 
-  @SerializedName("ClosingIndex")
-  private Integer closingIndex = null;
+  @SerializedName("closingindex")
+  private Integer closingindex = null;
 
-  @SerializedName("RDocumentRow_ID")
-  private String rDocumentRowID = null;
+  @SerializedName("rdocumentrow_id")
+  private String rdocumentrowId = null;
 
-  @SerializedName("CompletePrices")
-  private Boolean completePrices = null;
+  @SerializedName("completeprices")
+  private Boolean completeprices = null;
 
-  @SerializedName("Weight")
+  @SerializedName("weight")
   private Double weight = null;
 
-  @SerializedName("Capacity")
+  @SerializedName("capacity")
   private Double capacity = null;
 
-  @SerializedName("WeightUnit")
-  private Integer weightUnit = null;
+  @SerializedName("weightunit")
+  private Integer weightunit = null;
 
-  @SerializedName("CapacityUnit")
-  private Integer capacityUnit = null;
+  @SerializedName("capacityunit")
+  private Integer capacityunit = null;
 
-  @SerializedName("ReservedQuantity")
-  private Double reservedQuantity = null;
+  @SerializedName("reservedquantity")
+  private Double reservedquantity = null;
 
-  @SerializedName("BatchStatus")
-  private Integer batchStatus = null;
+  @SerializedName("batchstatus")
+  private Integer batchstatus = null;
 
-  @SerializedName("DeliveredQuantity")
-  private Double deliveredQuantity = null;
+  @SerializedName("deliveredquantity")
+  private Double deliveredquantity = null;
 
-  @SerializedName("DeliveredQuantityStr")
-  private String deliveredQuantityStr = null;
+  @SerializedName("deliveredquantitystr")
+  private String deliveredquantitystr = null;
 
-  @SerializedName("ProvideRow_ID")
-  private String provideRowID = null;
+  @SerializedName("providerow_id")
+  private String providerowId = null;
 
-  @SerializedName("DocRowBatches")
-  private List<Docrowbatch> docRowBatches = new ArrayList<Docrowbatch>();
+  @SerializedName("docrowbatches")
+  private List<Docrowbatch> docrowbatches = new ArrayList<Docrowbatch>();
 
-  @SerializedName("AdditionalCosts_ID")
-  private Incomingtransferrow additionalCostsID = null;
+  @SerializedName("additionalcosts_id")
+  private Incomingtransferrow additionalcostsId = null;
 
-  @SerializedName("ProductionTask_ID")
-  private String productionTaskID = null;
+  @SerializedName("productiontask_id")
+  private String productiontaskId = null;
 
-  @SerializedName("ToIntrastat")
-  private Boolean toIntrastat = null;
+  @SerializedName("tointrastat")
+  private Boolean tointrastat = null;
 
-  @SerializedName("OriginCountry_ID")
-  private String originCountryID = null;
+  @SerializedName("origincountry_id")
+  private String origincountryId = null;
 
-  @SerializedName("IntrastatRegion_ID")
-  private String intrastatRegionID = null;
+  @SerializedName("intrastatregion_id")
+  private String intrastatregionId = null;
 
-  @SerializedName("IntrastatInputStatistic_ID")
-  private String intrastatInputStatisticID = null;
+  @SerializedName("intrastatinputstatistic_id")
+  private String intrastatinputstatisticId = null;
 
-  @SerializedName("StatisticAmount")
-  private Double statisticAmount = null;
+  @SerializedName("statisticamount")
+  private Double statisticamount = null;
 
-  @SerializedName("IntrastatTransport")
-  private Boolean intrastatTransport = null;
+  @SerializedName("intrastattransport")
+  private Boolean intrastattransport = null;
 
-  @SerializedName("IntrastatCurrency_ID")
-  private String intrastatCurrencyID = null;
+  @SerializedName("intrastatcurrency_id")
+  private String intrastatcurrencyId = null;
 
-  @SerializedName("IntrastatAmount")
-  private Double intrastatAmount = null;
+  @SerializedName("intrastatamount")
+  private Double intrastatamount = null;
 
-  @SerializedName("LocalIntrastatAmount")
-  private Double localIntrastatAmount = null;
+  @SerializedName("localintrastatamount")
+  private Double localintrastatamount = null;
 
-  @SerializedName("IntrastatOutputStatistic_ID")
-  private String intrastatOutputStatisticID = null;
+  @SerializedName("intrastatoutputstatistic_id")
+  private String intrastatoutputstatisticId = null;
 
-  @SerializedName("Provide_ID")
-  private String provideID = null;
+  @SerializedName("provide_id")
+  private String provideId = null;
 
-  @SerializedName("IntrastatStatus")
-  private Integer intrastatStatus = null;
+  @SerializedName("intrastatstatus")
+  private Integer intrastatstatus = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("RowExtID")
-  private String rowExtID = null;
+  @SerializedName("rowextid")
+  private String rowextid = null;
 
-  @SerializedName("InventoryCoupon")
-  private Boolean inventoryCoupon = null;
+  @SerializedName("inventorycoupon")
+  private Boolean inventorycoupon = null;
 
-  @SerializedName("OrderFlow")
-  private Integer orderFlow = null;
+  @SerializedName("orderflow")
+  private Integer orderflow = null;
 
-  @SerializedName("Valuated")
+  @SerializedName("valuated")
   private Boolean valuated = null;
 
-  @SerializedName("ProvideRowDisplayName")
-  private String provideRowDisplayName = null;
+  @SerializedName("providerowdisplayname")
+  private String providerowdisplayname = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Převodka příjem [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Převodka příjem [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Incomingtransferrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Incomingtransferrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Incomingtransferrow id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Incomingtransferrow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Incomingtransferrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Incomingtransferrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu převodka příjem [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu převodka příjem [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Incomingtransferrow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
   public Incomingtransferrow text(String text) {
@@ -278,10 +323,10 @@ public class Incomingtransferrow   {
   }
 
    /**
-   * Text [persistentní položka]
+   * text [persistentní položka]
    * @return text
   **/
-  @ApiModelProperty(example = "null", value = "Text [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "text [persistentní položka]")
   public String getText() {
     return text;
   }
@@ -290,193 +335,220 @@ public class Incomingtransferrow   {
     this.text = text;
   }
 
-  public Incomingtransferrow rowType(Integer rowType) {
-    this.rowType = rowType;
+  public Incomingtransferrow rowtype(Integer rowtype) {
+    this.rowtype = rowtype;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return rowType
+   * typ [persistentní položka]
+   * @return rowtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getRowType() {
-    return rowType;
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getRowtype() {
+    return rowtype;
   }
 
-  public void setRowType(Integer rowType) {
-    this.rowType = rowType;
+  public void setRowtype(Integer rowtype) {
+    this.rowtype = rowtype;
   }
 
-  public Incomingtransferrow divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Incomingtransferrow divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Incomingtransferrow busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Incomingtransferrow busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Incomingtransferrow busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Incomingtransferrow bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * O.případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * o.případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "O.případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "o.případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-   /**
-   * Celkem [persistentní položka]
-   * @return tAmount
-  **/
-  @ApiModelProperty(example = "null", value = "Celkem [persistentní položka]")
-  public Double getTAmount() {
-    return tAmount;
-  }
-
-   /**
-   * Celkem lokálně [persistentní položka]
-   * @return localTAmount
-  **/
-  @ApiModelProperty(example = "null", value = "Celkem lokálně [persistentní položka]")
-  public Double getLocalTAmount() {
-    return localTAmount;
-  }
-
-  public Incomingtransferrow qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Incomingtransferrow tamount(Double tamount) {
+    this.tamount = tamount;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * celkem [persistentní položka]
+   * @return tamount
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "celkem [persistentní položka]")
+  public Double getTamount() {
+    return tamount;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setTamount(Double tamount) {
+    this.tamount = tamount;
   }
 
-  public Incomingtransferrow unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Incomingtransferrow localtamount(Double localtamount) {
+    this.localtamount = localtamount;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return unitRate
+   * celkem lokálně [persistentní položka]
+   * @return localtamount
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "celkem lokálně [persistentní položka]")
+  public Double getLocaltamount() {
+    return localtamount;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setLocaltamount(Double localtamount) {
+    this.localtamount = localtamount;
   }
 
-  public Incomingtransferrow mainUnitRate(Double mainUnitRate) {
-    this.mainUnitRate = mainUnitRate;
+  public Incomingtransferrow qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Vztah hl. jednotky
-   * @return mainUnitRate
+   * jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Vztah hl. jednotky")
-  public Double getMainUnitRate() {
-    return mainUnitRate;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setMainUnitRate(Double mainUnitRate) {
-    this.mainUnitRate = mainUnitRate;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
   }
 
-  public Incomingtransferrow storeID(String storeID) {
-    this.storeID = storeID;
+  public Incomingtransferrow unitrate(Double unitrate) {
+    this.unitrate = unitrate;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * vztah [persistentní položka]
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
-  public Incomingtransferrow storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Incomingtransferrow mainunitrate(Double mainunitrate) {
+    this.mainunitrate = mainunitrate;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * vztah hl. jednotky
+   * @return mainunitrate
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "vztah hl. jednotky")
+  public Double getMainunitrate() {
+    return mainunitrate;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setMainunitrate(Double mainunitrate) {
+    this.mainunitrate = mainunitrate;
+  }
+
+  public Incomingtransferrow storeId(String storeId) {
+    this.storeId = storeId;
+    return this;
+  }
+
+   /**
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
+  **/
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
+  }
+
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
+  }
+
+  public Incomingtransferrow storecardId(String storecardId) {
+    this.storecardId = storecardId;
+    return this;
+  }
+
+   /**
+   * skladová karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
+  **/
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
+  }
+
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
+  }
+
+  public Incomingtransferrow closingorder(Integer closingorder) {
+    this.closingorder = closingorder;
+    return this;
   }
 
    /**
    * Číslo uzávěrky [persistentní položka]
-   * @return closingOrder
+   * @return closingorder
   **/
   @ApiModelProperty(example = "null", value = "Číslo uzávěrky [persistentní položka]")
-  public Integer getClosingOrder() {
-    return closingOrder;
+  public Integer getClosingorder() {
+    return closingorder;
+  }
+
+  public void setClosingorder(Integer closingorder) {
+    this.closingorder = closingorder;
   }
 
   public Incomingtransferrow quantity(Double quantity) {
@@ -485,10 +557,10 @@ public class Incomingtransferrow   {
   }
 
    /**
-   * Počet v ev.jedn. [persistentní položka]
+   * počet v ev.jedn. [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet v ev.jedn. [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "počet v ev.jedn. [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -497,121 +569,130 @@ public class Incomingtransferrow   {
     this.quantity = quantity;
   }
 
-  public Incomingtransferrow unitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public Incomingtransferrow unitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
     return this;
   }
 
    /**
-   * Počet
-   * @return unitQuantity
+   * počet
+   * @return unitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet")
-  public Double getUnitQuantity() {
-    return unitQuantity;
+  @ApiModelProperty(example = "null", value = "počet")
+  public Double getUnitquantity() {
+    return unitquantity;
   }
 
-  public void setUnitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public void setUnitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
   }
 
-  public Incomingtransferrow mainUnitQuantity(Double mainUnitQuantity) {
-    this.mainUnitQuantity = mainUnitQuantity;
+  public Incomingtransferrow mainunitquantity(Double mainunitquantity) {
+    this.mainunitquantity = mainunitquantity;
     return this;
   }
 
    /**
-   * Počet v hl. jednotce
-   * @return mainUnitQuantity
+   * počet v hl. jednotce
+   * @return mainunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet v hl. jednotce")
-  public Double getMainUnitQuantity() {
-    return mainUnitQuantity;
+  @ApiModelProperty(example = "null", value = "počet v hl. jednotce")
+  public Double getMainunitquantity() {
+    return mainunitquantity;
   }
 
-  public void setMainUnitQuantity(Double mainUnitQuantity) {
-    this.mainUnitQuantity = mainUnitQuantity;
+  public void setMainunitquantity(Double mainunitquantity) {
+    this.mainunitquantity = mainunitquantity;
   }
 
-  public Incomingtransferrow unitPrice(Double unitPrice) {
-    this.unitPrice = unitPrice;
+  public Incomingtransferrow unitprice(Double unitprice) {
+    this.unitprice = unitprice;
     return this;
   }
 
    /**
-   * Jedn.cena [persistentní položka]
-   * @return unitPrice
+   * jedn.cena [persistentní položka]
+   * @return unitprice
   **/
-  @ApiModelProperty(example = "null", value = "Jedn.cena [persistentní položka]")
-  public Double getUnitPrice() {
-    return unitPrice;
+  @ApiModelProperty(example = "null", value = "jedn.cena [persistentní položka]")
+  public Double getUnitprice() {
+    return unitprice;
   }
 
-  public void setUnitPrice(Double unitPrice) {
-    this.unitPrice = unitPrice;
+  public void setUnitprice(Double unitprice) {
+    this.unitprice = unitprice;
   }
 
-  public Incomingtransferrow totalPrice(Double totalPrice) {
-    this.totalPrice = totalPrice;
+  public Incomingtransferrow totalprice(Double totalprice) {
+    this.totalprice = totalprice;
     return this;
   }
 
    /**
-   * Celk.cena [persistentní položka]
-   * @return totalPrice
+   * celk.cena [persistentní položka]
+   * @return totalprice
   **/
-  @ApiModelProperty(example = "null", value = "Celk.cena [persistentní položka]")
-  public Double getTotalPrice() {
-    return totalPrice;
+  @ApiModelProperty(example = "null", value = "celk.cena [persistentní položka]")
+  public Double getTotalprice() {
+    return totalprice;
   }
 
-  public void setTotalPrice(Double totalPrice) {
-    this.totalPrice = totalPrice;
+  public void setTotalprice(Double totalprice) {
+    this.totalprice = totalprice;
   }
 
-   /**
-   * Poř.číslo [persistentní položka]
-   * @return closingIndex
-  **/
-  @ApiModelProperty(example = "null", value = "Poř.číslo [persistentní položka]")
-  public Integer getClosingIndex() {
-    return closingIndex;
-  }
-
-  public Incomingtransferrow rDocumentRowID(String rDocumentRowID) {
-    this.rDocumentRowID = rDocumentRowID;
+  public Incomingtransferrow closingindex(Integer closingindex) {
+    this.closingindex = closingindex;
     return this;
   }
 
    /**
-   * Vazební řádka; ID objektu Skladový doklad - řádek [persistentní položka]
-   * @return rDocumentRowID
+   * poř.číslo [persistentní položka]
+   * @return closingindex
   **/
-  @ApiModelProperty(example = "null", value = "Vazební řádka; ID objektu Skladový doklad - řádek [persistentní položka]")
-  public String getRDocumentRowID() {
-    return rDocumentRowID;
+  @ApiModelProperty(example = "null", value = "poř.číslo [persistentní položka]")
+  public Integer getClosingindex() {
+    return closingindex;
   }
 
-  public void setRDocumentRowID(String rDocumentRowID) {
-    this.rDocumentRowID = rDocumentRowID;
+  public void setClosingindex(Integer closingindex) {
+    this.closingindex = closingindex;
   }
 
-  public Incomingtransferrow completePrices(Boolean completePrices) {
-    this.completePrices = completePrices;
+  public Incomingtransferrow rdocumentrowId(String rdocumentrowId) {
+    this.rdocumentrowId = rdocumentrowId;
     return this;
   }
 
    /**
-   * Kompletní ceny [persistentní položka]
-   * @return completePrices
+   * vazební řádka; id objektu skladový doklad - řádek [persistentní položka]
+   * @return rdocumentrowId
   **/
-  @ApiModelProperty(example = "null", value = "Kompletní ceny [persistentní položka]")
-  public Boolean getCompletePrices() {
-    return completePrices;
+  @ApiModelProperty(example = "null", value = "vazební řádka; id objektu skladový doklad - řádek [persistentní položka]")
+  public String getRdocumentrowId() {
+    return rdocumentrowId;
   }
 
-  public void setCompletePrices(Boolean completePrices) {
-    this.completePrices = completePrices;
+  public void setRdocumentrowId(String rdocumentrowId) {
+    this.rdocumentrowId = rdocumentrowId;
+  }
+
+  public Incomingtransferrow completeprices(Boolean completeprices) {
+    this.completeprices = completeprices;
+    return this;
+  }
+
+   /**
+   * kompletní ceny [persistentní položka]
+   * @return completeprices
+  **/
+  @ApiModelProperty(example = "null", value = "kompletní ceny [persistentní položka]")
+  public Boolean getCompleteprices() {
+    return completeprices;
+  }
+
+  public void setCompleteprices(Boolean completeprices) {
+    this.completeprices = completeprices;
   }
 
   public Incomingtransferrow weight(Double weight) {
@@ -620,10 +701,10 @@ public class Incomingtransferrow   {
   }
 
    /**
-   * Celk.hmot.
+   * celk.hmot.
    * @return weight
   **/
-  @ApiModelProperty(example = "null", value = "Celk.hmot.")
+  @ApiModelProperty(example = "null", value = "celk.hmot.")
   public Double getWeight() {
     return weight;
   }
@@ -638,10 +719,10 @@ public class Incomingtransferrow   {
   }
 
    /**
-   * Celk.obj.
+   * celk.obj.
    * @return capacity
   **/
-  @ApiModelProperty(example = "null", value = "Celk.obj.")
+  @ApiModelProperty(example = "null", value = "celk.obj.")
   public Double getCapacity() {
     return capacity;
   }
@@ -650,414 +731,477 @@ public class Incomingtransferrow   {
     this.capacity = capacity;
   }
 
-  public Incomingtransferrow weightUnit(Integer weightUnit) {
-    this.weightUnit = weightUnit;
+  public Incomingtransferrow weightunit(Integer weightunit) {
+    this.weightunit = weightunit;
     return this;
   }
 
    /**
-   * Jedn.celk.hm.
-   * @return weightUnit
+   * jedn.celk.hm.
+   * @return weightunit
   **/
-  @ApiModelProperty(example = "null", value = "Jedn.celk.hm.")
-  public Integer getWeightUnit() {
-    return weightUnit;
+  @ApiModelProperty(example = "null", value = "jedn.celk.hm.")
+  public Integer getWeightunit() {
+    return weightunit;
   }
 
-  public void setWeightUnit(Integer weightUnit) {
-    this.weightUnit = weightUnit;
+  public void setWeightunit(Integer weightunit) {
+    this.weightunit = weightunit;
   }
 
-  public Incomingtransferrow capacityUnit(Integer capacityUnit) {
-    this.capacityUnit = capacityUnit;
+  public Incomingtransferrow capacityunit(Integer capacityunit) {
+    this.capacityunit = capacityunit;
     return this;
   }
 
    /**
-   * Jedn.celk.obj.
-   * @return capacityUnit
+   * jedn.celk.obj.
+   * @return capacityunit
   **/
-  @ApiModelProperty(example = "null", value = "Jedn.celk.obj.")
-  public Integer getCapacityUnit() {
-    return capacityUnit;
+  @ApiModelProperty(example = "null", value = "jedn.celk.obj.")
+  public Integer getCapacityunit() {
+    return capacityunit;
   }
 
-  public void setCapacityUnit(Integer capacityUnit) {
-    this.capacityUnit = capacityUnit;
+  public void setCapacityunit(Integer capacityunit) {
+    this.capacityunit = capacityunit;
   }
 
-   /**
-   * Z rezervace [persistentní položka]
-   * @return reservedQuantity
-  **/
-  @ApiModelProperty(example = "null", value = "Z rezervace [persistentní položka]")
-  public Double getReservedQuantity() {
-    return reservedQuantity;
-  }
-
-  public Incomingtransferrow batchStatus(Integer batchStatus) {
-    this.batchStatus = batchStatus;
+  public Incomingtransferrow reservedquantity(Double reservedquantity) {
+    this.reservedquantity = reservedquantity;
     return this;
   }
 
    /**
-   * Status šarží [persistentní položka]
-   * @return batchStatus
+   * z rezervace [persistentní položka]
+   * @return reservedquantity
   **/
-  @ApiModelProperty(example = "null", value = "Status šarží [persistentní položka]")
-  public Integer getBatchStatus() {
-    return batchStatus;
+  @ApiModelProperty(example = "null", value = "z rezervace [persistentní položka]")
+  public Double getReservedquantity() {
+    return reservedquantity;
   }
 
-  public void setBatchStatus(Integer batchStatus) {
-    this.batchStatus = batchStatus;
+  public void setReservedquantity(Double reservedquantity) {
+    this.reservedquantity = reservedquantity;
   }
 
-   /**
-   * Dodáno [persistentní položka]
-   * @return deliveredQuantity
-  **/
-  @ApiModelProperty(example = "null", value = "Dodáno [persistentní položka]")
-  public Double getDeliveredQuantity() {
-    return deliveredQuantity;
-  }
-
-   /**
-   * Dodáno
-   * @return deliveredQuantityStr
-  **/
-  @ApiModelProperty(example = "null", value = "Dodáno")
-  public String getDeliveredQuantityStr() {
-    return deliveredQuantityStr;
-  }
-
-   /**
-   * OID zdrojového řádku [persistentní položka]
-   * @return provideRowID
-  **/
-  @ApiModelProperty(example = "null", value = "OID zdrojového řádku [persistentní položka]")
-  public String getProvideRowID() {
-    return provideRowID;
-  }
-
-  public Incomingtransferrow docRowBatches(List<Docrowbatch> docRowBatches) {
-    this.docRowBatches = docRowBatches;
-    return this;
-  }
-
-  public Incomingtransferrow addDocRowBatchesItem(Docrowbatch docRowBatchesItem) {
-    this.docRowBatches.add(docRowBatchesItem);
+  public Incomingtransferrow batchstatus(Integer batchstatus) {
+    this.batchstatus = batchstatus;
     return this;
   }
 
    /**
-   * Řádky šarží; kolekce BO Skladový doklad - pohyb šarže/sériového čísla [nepersistentní položka]
-   * @return docRowBatches
+   * status šarží [persistentní položka]
+   * @return batchstatus
   **/
-  @ApiModelProperty(example = "null", value = "Řádky šarží; kolekce BO Skladový doklad - pohyb šarže/sériového čísla [nepersistentní položka]")
-  public List<Docrowbatch> getDocRowBatches() {
-    return docRowBatches;
+  @ApiModelProperty(example = "null", value = "status šarží [persistentní položka]")
+  public Integer getBatchstatus() {
+    return batchstatus;
   }
 
-  public void setDocRowBatches(List<Docrowbatch> docRowBatches) {
-    this.docRowBatches = docRowBatches;
+  public void setBatchstatus(Integer batchstatus) {
+    this.batchstatus = batchstatus;
   }
 
-  public Incomingtransferrow additionalCostsID(Incomingtransferrow additionalCostsID) {
-    this.additionalCostsID = additionalCostsID;
+  public Incomingtransferrow deliveredquantity(Double deliveredquantity) {
+    this.deliveredquantity = deliveredquantity;
     return this;
   }
 
    /**
-   * Get additionalCostsID
-   * @return additionalCostsID
+   * dodáno [persistentní položka]
+   * @return deliveredquantity
+  **/
+  @ApiModelProperty(example = "null", value = "dodáno [persistentní položka]")
+  public Double getDeliveredquantity() {
+    return deliveredquantity;
+  }
+
+  public void setDeliveredquantity(Double deliveredquantity) {
+    this.deliveredquantity = deliveredquantity;
+  }
+
+  public Incomingtransferrow deliveredquantitystr(String deliveredquantitystr) {
+    this.deliveredquantitystr = deliveredquantitystr;
+    return this;
+  }
+
+   /**
+   * dodáno
+   * @return deliveredquantitystr
+  **/
+  @ApiModelProperty(example = "null", value = "dodáno")
+  public String getDeliveredquantitystr() {
+    return deliveredquantitystr;
+  }
+
+  public void setDeliveredquantitystr(String deliveredquantitystr) {
+    this.deliveredquantitystr = deliveredquantitystr;
+  }
+
+  public Incomingtransferrow providerowId(String providerowId) {
+    this.providerowId = providerowId;
+    return this;
+  }
+
+   /**
+   * oid zdrojového řádku [persistentní položka]
+   * @return providerowId
+  **/
+  @ApiModelProperty(example = "null", value = "oid zdrojového řádku [persistentní položka]")
+  public String getProviderowId() {
+    return providerowId;
+  }
+
+  public void setProviderowId(String providerowId) {
+    this.providerowId = providerowId;
+  }
+
+  public Incomingtransferrow docrowbatches(List<Docrowbatch> docrowbatches) {
+    this.docrowbatches = docrowbatches;
+    return this;
+  }
+
+  public Incomingtransferrow addDocrowbatchesItem(Docrowbatch docrowbatchesItem) {
+    this.docrowbatches.add(docrowbatchesItem);
+    return this;
+  }
+
+   /**
+   * Řádky šarží; kolekce bo skladový doklad - pohyb šarže/sériového čísla [nepersistentní položka]
+   * @return docrowbatches
+  **/
+  @ApiModelProperty(example = "null", value = "Řádky šarží; kolekce bo skladový doklad - pohyb šarže/sériového čísla [nepersistentní položka]")
+  public List<Docrowbatch> getDocrowbatches() {
+    return docrowbatches;
+  }
+
+  public void setDocrowbatches(List<Docrowbatch> docrowbatches) {
+    this.docrowbatches = docrowbatches;
+  }
+
+  public Incomingtransferrow additionalcostsId(Incomingtransferrow additionalcostsId) {
+    this.additionalcostsId = additionalcostsId;
+    return this;
+  }
+
+   /**
+   * Get additionalcostsId
+   * @return additionalcostsId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Incomingtransferrow getAdditionalCostsID() {
-    return additionalCostsID;
+  public Incomingtransferrow getAdditionalcostsId() {
+    return additionalcostsId;
   }
 
-  public void setAdditionalCostsID(Incomingtransferrow additionalCostsID) {
-    this.additionalCostsID = additionalCostsID;
+  public void setAdditionalcostsId(Incomingtransferrow additionalcostsId) {
+    this.additionalcostsId = additionalcostsId;
   }
 
-  public Incomingtransferrow productionTaskID(String productionTaskID) {
-    this.productionTaskID = productionTaskID;
+  public Incomingtransferrow productiontaskId(String productiontaskId) {
+    this.productiontaskId = productiontaskId;
     return this;
   }
 
    /**
-   * Výrobní úloha; ID objektu Výrobní úloha [persistentní položka]
-   * @return productionTaskID
+   * výrobní úloha; id objektu výrobní úloha [persistentní položka]
+   * @return productiontaskId
   **/
-  @ApiModelProperty(example = "null", value = "Výrobní úloha; ID objektu Výrobní úloha [persistentní položka]")
-  public String getProductionTaskID() {
-    return productionTaskID;
+  @ApiModelProperty(example = "null", value = "výrobní úloha; id objektu výrobní úloha [persistentní položka]")
+  public String getProductiontaskId() {
+    return productiontaskId;
   }
 
-  public void setProductionTaskID(String productionTaskID) {
-    this.productionTaskID = productionTaskID;
+  public void setProductiontaskId(String productiontaskId) {
+    this.productiontaskId = productiontaskId;
   }
 
-  public Incomingtransferrow toIntrastat(Boolean toIntrastat) {
-    this.toIntrastat = toIntrastat;
+  public Incomingtransferrow tointrastat(Boolean tointrastat) {
+    this.tointrastat = tointrastat;
     return this;
   }
 
    /**
-   * Do Intrastat [persistentní položka]
-   * @return toIntrastat
+   * do intrastat [persistentní položka]
+   * @return tointrastat
   **/
-  @ApiModelProperty(example = "null", value = "Do Intrastat [persistentní položka]")
-  public Boolean getToIntrastat() {
-    return toIntrastat;
+  @ApiModelProperty(example = "null", value = "do intrastat [persistentní položka]")
+  public Boolean getTointrastat() {
+    return tointrastat;
   }
 
-  public void setToIntrastat(Boolean toIntrastat) {
-    this.toIntrastat = toIntrastat;
+  public void setTointrastat(Boolean tointrastat) {
+    this.tointrastat = tointrastat;
   }
 
-  public Incomingtransferrow originCountryID(String originCountryID) {
-    this.originCountryID = originCountryID;
+  public Incomingtransferrow origincountryId(String origincountryId) {
+    this.origincountryId = origincountryId;
     return this;
   }
 
    /**
-   * Země původu; ID objektu Země [persistentní položka]
-   * @return originCountryID
+   * země původu; id objektu země [persistentní položka]
+   * @return origincountryId
   **/
-  @ApiModelProperty(example = "null", value = "Země původu; ID objektu Země [persistentní položka]")
-  public String getOriginCountryID() {
-    return originCountryID;
+  @ApiModelProperty(example = "null", value = "země původu; id objektu země [persistentní položka]")
+  public String getOrigincountryId() {
+    return origincountryId;
   }
 
-  public void setOriginCountryID(String originCountryID) {
-    this.originCountryID = originCountryID;
+  public void setOrigincountryId(String origincountryId) {
+    this.origincountryId = origincountryId;
   }
 
-  public Incomingtransferrow intrastatRegionID(String intrastatRegionID) {
-    this.intrastatRegionID = intrastatRegionID;
+  public Incomingtransferrow intrastatregionId(String intrastatregionId) {
+    this.intrastatregionId = intrastatregionId;
     return this;
   }
 
    /**
-   * Kraj určení; ID objektu Kraj [persistentní položka]
-   * @return intrastatRegionID
+   * kraj určení; id objektu kraj [persistentní položka]
+   * @return intrastatregionId
   **/
-  @ApiModelProperty(example = "null", value = "Kraj určení; ID objektu Kraj [persistentní položka]")
-  public String getIntrastatRegionID() {
-    return intrastatRegionID;
+  @ApiModelProperty(example = "null", value = "kraj určení; id objektu kraj [persistentní položka]")
+  public String getIntrastatregionId() {
+    return intrastatregionId;
   }
 
-  public void setIntrastatRegionID(String intrastatRegionID) {
-    this.intrastatRegionID = intrastatRegionID;
+  public void setIntrastatregionId(String intrastatregionId) {
+    this.intrastatregionId = intrastatregionId;
   }
 
-  public Incomingtransferrow intrastatInputStatisticID(String intrastatInputStatisticID) {
-    this.intrastatInputStatisticID = intrastatInputStatisticID;
+  public Incomingtransferrow intrastatinputstatisticId(String intrastatinputstatisticId) {
+    this.intrastatinputstatisticId = intrastatinputstatisticId;
     return this;
   }
 
    /**
-   * Def.stat.hodnoty na vstupu; ID objektu Definice statistické hodnoty na vstupu [persistentní položka]
-   * @return intrastatInputStatisticID
+   * def.stat.hodnoty na vstupu; id objektu definice statistické hodnoty na vstupu [persistentní položka]
+   * @return intrastatinputstatisticId
   **/
-  @ApiModelProperty(example = "null", value = "Def.stat.hodnoty na vstupu; ID objektu Definice statistické hodnoty na vstupu [persistentní položka]")
-  public String getIntrastatInputStatisticID() {
-    return intrastatInputStatisticID;
+  @ApiModelProperty(example = "null", value = "def.stat.hodnoty na vstupu; id objektu definice statistické hodnoty na vstupu [persistentní položka]")
+  public String getIntrastatinputstatisticId() {
+    return intrastatinputstatisticId;
   }
 
-  public void setIntrastatInputStatisticID(String intrastatInputStatisticID) {
-    this.intrastatInputStatisticID = intrastatInputStatisticID;
+  public void setIntrastatinputstatisticId(String intrastatinputstatisticId) {
+    this.intrastatinputstatisticId = intrastatinputstatisticId;
   }
 
-  public Incomingtransferrow statisticAmount(Double statisticAmount) {
-    this.statisticAmount = statisticAmount;
+  public Incomingtransferrow statisticamount(Double statisticamount) {
+    this.statisticamount = statisticamount;
     return this;
   }
 
    /**
-   * Stat.hodnota [persistentní položka]
-   * @return statisticAmount
+   * stat.hodnota [persistentní položka]
+   * @return statisticamount
   **/
-  @ApiModelProperty(example = "null", value = "Stat.hodnota [persistentní položka]")
-  public Double getStatisticAmount() {
-    return statisticAmount;
+  @ApiModelProperty(example = "null", value = "stat.hodnota [persistentní položka]")
+  public Double getStatisticamount() {
+    return statisticamount;
   }
 
-  public void setStatisticAmount(Double statisticAmount) {
-    this.statisticAmount = statisticAmount;
+  public void setStatisticamount(Double statisticamount) {
+    this.statisticamount = statisticamount;
   }
 
-  public Incomingtransferrow intrastatTransport(Boolean intrastatTransport) {
-    this.intrastatTransport = intrastatTransport;
+  public Incomingtransferrow intrastattransport(Boolean intrastattransport) {
+    this.intrastattransport = intrastattransport;
     return this;
   }
 
    /**
-   * Doprava do Intrastatu [persistentní položka]
-   * @return intrastatTransport
+   * doprava do intrastatu [persistentní položka]
+   * @return intrastattransport
   **/
-  @ApiModelProperty(example = "null", value = "Doprava do Intrastatu [persistentní položka]")
-  public Boolean getIntrastatTransport() {
-    return intrastatTransport;
+  @ApiModelProperty(example = "null", value = "doprava do intrastatu [persistentní položka]")
+  public Boolean getIntrastattransport() {
+    return intrastattransport;
   }
 
-  public void setIntrastatTransport(Boolean intrastatTransport) {
-    this.intrastatTransport = intrastatTransport;
+  public void setIntrastattransport(Boolean intrastattransport) {
+    this.intrastattransport = intrastattransport;
   }
 
-  public Incomingtransferrow intrastatCurrencyID(String intrastatCurrencyID) {
-    this.intrastatCurrencyID = intrastatCurrencyID;
+  public Incomingtransferrow intrastatcurrencyId(String intrastatcurrencyId) {
+    this.intrastatcurrencyId = intrastatcurrencyId;
     return this;
   }
 
    /**
-   * Měna Intrastat; ID objektu Měna [persistentní položka]
-   * @return intrastatCurrencyID
+   * měna intrastat; id objektu měna [persistentní položka]
+   * @return intrastatcurrencyId
   **/
-  @ApiModelProperty(example = "null", value = "Měna Intrastat; ID objektu Měna [persistentní položka]")
-  public String getIntrastatCurrencyID() {
-    return intrastatCurrencyID;
+  @ApiModelProperty(example = "null", value = "měna intrastat; id objektu měna [persistentní položka]")
+  public String getIntrastatcurrencyId() {
+    return intrastatcurrencyId;
   }
 
-  public void setIntrastatCurrencyID(String intrastatCurrencyID) {
-    this.intrastatCurrencyID = intrastatCurrencyID;
+  public void setIntrastatcurrencyId(String intrastatcurrencyId) {
+    this.intrastatcurrencyId = intrastatcurrencyId;
   }
 
-  public Incomingtransferrow intrastatAmount(Double intrastatAmount) {
-    this.intrastatAmount = intrastatAmount;
+  public Incomingtransferrow intrastatamount(Double intrastatamount) {
+    this.intrastatamount = intrastatamount;
     return this;
   }
 
    /**
-   * Částka pro Intrastat [persistentní položka]
-   * @return intrastatAmount
+   * Částka pro intrastat [persistentní položka]
+   * @return intrastatamount
   **/
-  @ApiModelProperty(example = "null", value = "Částka pro Intrastat [persistentní položka]")
-  public Double getIntrastatAmount() {
-    return intrastatAmount;
+  @ApiModelProperty(example = "null", value = "Částka pro intrastat [persistentní položka]")
+  public Double getIntrastatamount() {
+    return intrastatamount;
   }
 
-  public void setIntrastatAmount(Double intrastatAmount) {
-    this.intrastatAmount = intrastatAmount;
+  public void setIntrastatamount(Double intrastatamount) {
+    this.intrastatamount = intrastatamount;
   }
 
-  public Incomingtransferrow localIntrastatAmount(Double localIntrastatAmount) {
-    this.localIntrastatAmount = localIntrastatAmount;
+  public Incomingtransferrow localintrastatamount(Double localintrastatamount) {
+    this.localintrastatamount = localintrastatamount;
     return this;
   }
 
    /**
-   * Částka pro Intrastat [persistentní položka]
-   * @return localIntrastatAmount
+   * Částka pro intrastat [persistentní položka]
+   * @return localintrastatamount
   **/
-  @ApiModelProperty(example = "null", value = "Částka pro Intrastat [persistentní položka]")
-  public Double getLocalIntrastatAmount() {
-    return localIntrastatAmount;
+  @ApiModelProperty(example = "null", value = "Částka pro intrastat [persistentní položka]")
+  public Double getLocalintrastatamount() {
+    return localintrastatamount;
   }
 
-  public void setLocalIntrastatAmount(Double localIntrastatAmount) {
-    this.localIntrastatAmount = localIntrastatAmount;
+  public void setLocalintrastatamount(Double localintrastatamount) {
+    this.localintrastatamount = localintrastatamount;
   }
 
-  public Incomingtransferrow intrastatOutputStatisticID(String intrastatOutputStatisticID) {
-    this.intrastatOutputStatisticID = intrastatOutputStatisticID;
+  public Incomingtransferrow intrastatoutputstatisticId(String intrastatoutputstatisticId) {
+    this.intrastatoutputstatisticId = intrastatoutputstatisticId;
     return this;
   }
 
    /**
-   * Def.stat.hodnoty na výstupu; ID objektu Definice statistické hodnoty na vstupu [persistentní položka]
-   * @return intrastatOutputStatisticID
+   * def.stat.hodnoty na výstupu; id objektu definice statistické hodnoty na vstupu [persistentní položka]
+   * @return intrastatoutputstatisticId
   **/
-  @ApiModelProperty(example = "null", value = "Def.stat.hodnoty na výstupu; ID objektu Definice statistické hodnoty na vstupu [persistentní položka]")
-  public String getIntrastatOutputStatisticID() {
-    return intrastatOutputStatisticID;
+  @ApiModelProperty(example = "null", value = "def.stat.hodnoty na výstupu; id objektu definice statistické hodnoty na vstupu [persistentní položka]")
+  public String getIntrastatoutputstatisticId() {
+    return intrastatoutputstatisticId;
   }
 
-  public void setIntrastatOutputStatisticID(String intrastatOutputStatisticID) {
-    this.intrastatOutputStatisticID = intrastatOutputStatisticID;
+  public void setIntrastatoutputstatisticId(String intrastatoutputstatisticId) {
+    this.intrastatoutputstatisticId = intrastatoutputstatisticId;
   }
 
-   /**
-   * OID zdrojového dokladu [persistentní položka]
-   * @return provideID
-  **/
-  @ApiModelProperty(example = "null", value = "OID zdrojového dokladu [persistentní položka]")
-  public String getProvideID() {
-    return provideID;
-  }
-
-   /**
-   * Do Intrastat
-   * @return intrastatStatus
-  **/
-  @ApiModelProperty(example = "null", value = "Do Intrastat")
-  public Integer getIntrastatStatus() {
-    return intrastatStatus;
-  }
-
-  public Incomingtransferrow busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Incomingtransferrow provideId(String provideId) {
+    this.provideId = provideId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * oid zdrojového dokladu [persistentní položka]
+   * @return provideId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "oid zdrojového dokladu [persistentní položka]")
+  public String getProvideId() {
+    return provideId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setProvideId(String provideId) {
+    this.provideId = provideId;
   }
 
-  public Incomingtransferrow rowExtID(String rowExtID) {
-    this.rowExtID = rowExtID;
+  public Incomingtransferrow intrastatstatus(Integer intrastatstatus) {
+    this.intrastatstatus = intrastatstatus;
     return this;
   }
 
    /**
-   * Odkaz na ISDOC [persistentní položka]
-   * @return rowExtID
+   * do intrastat
+   * @return intrastatstatus
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na ISDOC [persistentní položka]")
-  public String getRowExtID() {
-    return rowExtID;
+  @ApiModelProperty(example = "null", value = "do intrastat")
+  public Integer getIntrastatstatus() {
+    return intrastatstatus;
   }
 
-  public void setRowExtID(String rowExtID) {
-    this.rowExtID = rowExtID;
+  public void setIntrastatstatus(Integer intrastatstatus) {
+    this.intrastatstatus = intrastatstatus;
   }
 
-  public Incomingtransferrow inventoryCoupon(Boolean inventoryCoupon) {
-    this.inventoryCoupon = inventoryCoupon;
+  public Incomingtransferrow busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Inventární lístek [persistentní položka]
-   * @return inventoryCoupon
+   * zakázka; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Inventární lístek [persistentní položka]")
-  public Boolean getInventoryCoupon() {
-    return inventoryCoupon;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setInventoryCoupon(Boolean inventoryCoupon) {
-    this.inventoryCoupon = inventoryCoupon;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
+  }
+
+  public Incomingtransferrow rowextid(String rowextid) {
+    this.rowextid = rowextid;
+    return this;
   }
 
    /**
-   * OrderFlow [persistentní položka]
-   * @return orderFlow
+   * odkaz na isdoc [persistentní položka]
+   * @return rowextid
   **/
-  @ApiModelProperty(example = "null", value = "OrderFlow [persistentní položka]")
-  public Integer getOrderFlow() {
-    return orderFlow;
+  @ApiModelProperty(example = "null", value = "odkaz na isdoc [persistentní položka]")
+  public String getRowextid() {
+    return rowextid;
+  }
+
+  public void setRowextid(String rowextid) {
+    this.rowextid = rowextid;
+  }
+
+  public Incomingtransferrow inventorycoupon(Boolean inventorycoupon) {
+    this.inventorycoupon = inventorycoupon;
+    return this;
+  }
+
+   /**
+   * inventární lístek [persistentní položka]
+   * @return inventorycoupon
+  **/
+  @ApiModelProperty(example = "null", value = "inventární lístek [persistentní položka]")
+  public Boolean getInventorycoupon() {
+    return inventorycoupon;
+  }
+
+  public void setInventorycoupon(Boolean inventorycoupon) {
+    this.inventorycoupon = inventorycoupon;
+  }
+
+  public Incomingtransferrow orderflow(Integer orderflow) {
+    this.orderflow = orderflow;
+    return this;
+  }
+
+   /**
+   * orderflow [persistentní položka]
+   * @return orderflow
+  **/
+  @ApiModelProperty(example = "null", value = "orderflow [persistentní položka]")
+  public Integer getOrderflow() {
+    return orderflow;
+  }
+
+  public void setOrderflow(Integer orderflow) {
+    this.orderflow = orderflow;
   }
 
   public Incomingtransferrow valuated(Boolean valuated) {
@@ -1066,10 +1210,10 @@ public class Incomingtransferrow   {
   }
 
    /**
-   * Oceněno [persistentní položka]
+   * oceněno [persistentní položka]
    * @return valuated
   **/
-  @ApiModelProperty(example = "null", value = "Oceněno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "oceněno [persistentní položka]")
   public Boolean getValuated() {
     return valuated;
   }
@@ -1078,13 +1222,22 @@ public class Incomingtransferrow   {
     this.valuated = valuated;
   }
 
+  public Incomingtransferrow providerowdisplayname(String providerowdisplayname) {
+    this.providerowdisplayname = providerowdisplayname;
+    return this;
+  }
+
    /**
    * Čerpáno z
-   * @return provideRowDisplayName
+   * @return providerowdisplayname
   **/
   @ApiModelProperty(example = "null", value = "Čerpáno z")
-  public String getProvideRowDisplayName() {
-    return provideRowDisplayName;
+  public String getProviderowdisplayname() {
+    return providerowdisplayname;
+  }
+
+  public void setProviderowdisplayname(String providerowdisplayname) {
+    this.providerowdisplayname = providerowdisplayname;
   }
 
 
@@ -1097,68 +1250,68 @@ public class Incomingtransferrow   {
       return false;
     }
     Incomingtransferrow incomingtransferrow = (Incomingtransferrow) o;
-    return Objects.equals(this.displayName, incomingtransferrow.displayName) &&
-        Objects.equals(this.ID, incomingtransferrow.ID) &&
-        Objects.equals(this.classID, incomingtransferrow.classID) &&
-        Objects.equals(this.objVersion, incomingtransferrow.objVersion) &&
-        Objects.equals(this.parentID, incomingtransferrow.parentID) &&
-        Objects.equals(this.posIndex, incomingtransferrow.posIndex) &&
+    return Objects.equals(this.displayname, incomingtransferrow.displayname) &&
+        Objects.equals(this.id, incomingtransferrow.id) &&
+        Objects.equals(this.classid, incomingtransferrow.classid) &&
+        Objects.equals(this.objversion, incomingtransferrow.objversion) &&
+        Objects.equals(this.parentId, incomingtransferrow.parentId) &&
+        Objects.equals(this.posindex, incomingtransferrow.posindex) &&
         Objects.equals(this.text, incomingtransferrow.text) &&
-        Objects.equals(this.rowType, incomingtransferrow.rowType) &&
-        Objects.equals(this.divisionID, incomingtransferrow.divisionID) &&
-        Objects.equals(this.busOrderID, incomingtransferrow.busOrderID) &&
-        Objects.equals(this.busTransactionID, incomingtransferrow.busTransactionID) &&
-        Objects.equals(this.tAmount, incomingtransferrow.tAmount) &&
-        Objects.equals(this.localTAmount, incomingtransferrow.localTAmount) &&
-        Objects.equals(this.qUnit, incomingtransferrow.qUnit) &&
-        Objects.equals(this.unitRate, incomingtransferrow.unitRate) &&
-        Objects.equals(this.mainUnitRate, incomingtransferrow.mainUnitRate) &&
-        Objects.equals(this.storeID, incomingtransferrow.storeID) &&
-        Objects.equals(this.storeCardID, incomingtransferrow.storeCardID) &&
-        Objects.equals(this.closingOrder, incomingtransferrow.closingOrder) &&
+        Objects.equals(this.rowtype, incomingtransferrow.rowtype) &&
+        Objects.equals(this.divisionId, incomingtransferrow.divisionId) &&
+        Objects.equals(this.busorderId, incomingtransferrow.busorderId) &&
+        Objects.equals(this.bustransactionId, incomingtransferrow.bustransactionId) &&
+        Objects.equals(this.tamount, incomingtransferrow.tamount) &&
+        Objects.equals(this.localtamount, incomingtransferrow.localtamount) &&
+        Objects.equals(this.qunit, incomingtransferrow.qunit) &&
+        Objects.equals(this.unitrate, incomingtransferrow.unitrate) &&
+        Objects.equals(this.mainunitrate, incomingtransferrow.mainunitrate) &&
+        Objects.equals(this.storeId, incomingtransferrow.storeId) &&
+        Objects.equals(this.storecardId, incomingtransferrow.storecardId) &&
+        Objects.equals(this.closingorder, incomingtransferrow.closingorder) &&
         Objects.equals(this.quantity, incomingtransferrow.quantity) &&
-        Objects.equals(this.unitQuantity, incomingtransferrow.unitQuantity) &&
-        Objects.equals(this.mainUnitQuantity, incomingtransferrow.mainUnitQuantity) &&
-        Objects.equals(this.unitPrice, incomingtransferrow.unitPrice) &&
-        Objects.equals(this.totalPrice, incomingtransferrow.totalPrice) &&
-        Objects.equals(this.closingIndex, incomingtransferrow.closingIndex) &&
-        Objects.equals(this.rDocumentRowID, incomingtransferrow.rDocumentRowID) &&
-        Objects.equals(this.completePrices, incomingtransferrow.completePrices) &&
+        Objects.equals(this.unitquantity, incomingtransferrow.unitquantity) &&
+        Objects.equals(this.mainunitquantity, incomingtransferrow.mainunitquantity) &&
+        Objects.equals(this.unitprice, incomingtransferrow.unitprice) &&
+        Objects.equals(this.totalprice, incomingtransferrow.totalprice) &&
+        Objects.equals(this.closingindex, incomingtransferrow.closingindex) &&
+        Objects.equals(this.rdocumentrowId, incomingtransferrow.rdocumentrowId) &&
+        Objects.equals(this.completeprices, incomingtransferrow.completeprices) &&
         Objects.equals(this.weight, incomingtransferrow.weight) &&
         Objects.equals(this.capacity, incomingtransferrow.capacity) &&
-        Objects.equals(this.weightUnit, incomingtransferrow.weightUnit) &&
-        Objects.equals(this.capacityUnit, incomingtransferrow.capacityUnit) &&
-        Objects.equals(this.reservedQuantity, incomingtransferrow.reservedQuantity) &&
-        Objects.equals(this.batchStatus, incomingtransferrow.batchStatus) &&
-        Objects.equals(this.deliveredQuantity, incomingtransferrow.deliveredQuantity) &&
-        Objects.equals(this.deliveredQuantityStr, incomingtransferrow.deliveredQuantityStr) &&
-        Objects.equals(this.provideRowID, incomingtransferrow.provideRowID) &&
-        Objects.equals(this.docRowBatches, incomingtransferrow.docRowBatches) &&
-        Objects.equals(this.additionalCostsID, incomingtransferrow.additionalCostsID) &&
-        Objects.equals(this.productionTaskID, incomingtransferrow.productionTaskID) &&
-        Objects.equals(this.toIntrastat, incomingtransferrow.toIntrastat) &&
-        Objects.equals(this.originCountryID, incomingtransferrow.originCountryID) &&
-        Objects.equals(this.intrastatRegionID, incomingtransferrow.intrastatRegionID) &&
-        Objects.equals(this.intrastatInputStatisticID, incomingtransferrow.intrastatInputStatisticID) &&
-        Objects.equals(this.statisticAmount, incomingtransferrow.statisticAmount) &&
-        Objects.equals(this.intrastatTransport, incomingtransferrow.intrastatTransport) &&
-        Objects.equals(this.intrastatCurrencyID, incomingtransferrow.intrastatCurrencyID) &&
-        Objects.equals(this.intrastatAmount, incomingtransferrow.intrastatAmount) &&
-        Objects.equals(this.localIntrastatAmount, incomingtransferrow.localIntrastatAmount) &&
-        Objects.equals(this.intrastatOutputStatisticID, incomingtransferrow.intrastatOutputStatisticID) &&
-        Objects.equals(this.provideID, incomingtransferrow.provideID) &&
-        Objects.equals(this.intrastatStatus, incomingtransferrow.intrastatStatus) &&
-        Objects.equals(this.busProjectID, incomingtransferrow.busProjectID) &&
-        Objects.equals(this.rowExtID, incomingtransferrow.rowExtID) &&
-        Objects.equals(this.inventoryCoupon, incomingtransferrow.inventoryCoupon) &&
-        Objects.equals(this.orderFlow, incomingtransferrow.orderFlow) &&
+        Objects.equals(this.weightunit, incomingtransferrow.weightunit) &&
+        Objects.equals(this.capacityunit, incomingtransferrow.capacityunit) &&
+        Objects.equals(this.reservedquantity, incomingtransferrow.reservedquantity) &&
+        Objects.equals(this.batchstatus, incomingtransferrow.batchstatus) &&
+        Objects.equals(this.deliveredquantity, incomingtransferrow.deliveredquantity) &&
+        Objects.equals(this.deliveredquantitystr, incomingtransferrow.deliveredquantitystr) &&
+        Objects.equals(this.providerowId, incomingtransferrow.providerowId) &&
+        Objects.equals(this.docrowbatches, incomingtransferrow.docrowbatches) &&
+        Objects.equals(this.additionalcostsId, incomingtransferrow.additionalcostsId) &&
+        Objects.equals(this.productiontaskId, incomingtransferrow.productiontaskId) &&
+        Objects.equals(this.tointrastat, incomingtransferrow.tointrastat) &&
+        Objects.equals(this.origincountryId, incomingtransferrow.origincountryId) &&
+        Objects.equals(this.intrastatregionId, incomingtransferrow.intrastatregionId) &&
+        Objects.equals(this.intrastatinputstatisticId, incomingtransferrow.intrastatinputstatisticId) &&
+        Objects.equals(this.statisticamount, incomingtransferrow.statisticamount) &&
+        Objects.equals(this.intrastattransport, incomingtransferrow.intrastattransport) &&
+        Objects.equals(this.intrastatcurrencyId, incomingtransferrow.intrastatcurrencyId) &&
+        Objects.equals(this.intrastatamount, incomingtransferrow.intrastatamount) &&
+        Objects.equals(this.localintrastatamount, incomingtransferrow.localintrastatamount) &&
+        Objects.equals(this.intrastatoutputstatisticId, incomingtransferrow.intrastatoutputstatisticId) &&
+        Objects.equals(this.provideId, incomingtransferrow.provideId) &&
+        Objects.equals(this.intrastatstatus, incomingtransferrow.intrastatstatus) &&
+        Objects.equals(this.busprojectId, incomingtransferrow.busprojectId) &&
+        Objects.equals(this.rowextid, incomingtransferrow.rowextid) &&
+        Objects.equals(this.inventorycoupon, incomingtransferrow.inventorycoupon) &&
+        Objects.equals(this.orderflow, incomingtransferrow.orderflow) &&
         Objects.equals(this.valuated, incomingtransferrow.valuated) &&
-        Objects.equals(this.provideRowDisplayName, incomingtransferrow.provideRowDisplayName);
+        Objects.equals(this.providerowdisplayname, incomingtransferrow.providerowdisplayname);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, text, rowType, divisionID, busOrderID, busTransactionID, tAmount, localTAmount, qUnit, unitRate, mainUnitRate, storeID, storeCardID, closingOrder, quantity, unitQuantity, mainUnitQuantity, unitPrice, totalPrice, closingIndex, rDocumentRowID, completePrices, weight, capacity, weightUnit, capacityUnit, reservedQuantity, batchStatus, deliveredQuantity, deliveredQuantityStr, provideRowID, docRowBatches, additionalCostsID, productionTaskID, toIntrastat, originCountryID, intrastatRegionID, intrastatInputStatisticID, statisticAmount, intrastatTransport, intrastatCurrencyID, intrastatAmount, localIntrastatAmount, intrastatOutputStatisticID, provideID, intrastatStatus, busProjectID, rowExtID, inventoryCoupon, orderFlow, valuated, provideRowDisplayName);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, text, rowtype, divisionId, busorderId, bustransactionId, tamount, localtamount, qunit, unitrate, mainunitrate, storeId, storecardId, closingorder, quantity, unitquantity, mainunitquantity, unitprice, totalprice, closingindex, rdocumentrowId, completeprices, weight, capacity, weightunit, capacityunit, reservedquantity, batchstatus, deliveredquantity, deliveredquantitystr, providerowId, docrowbatches, additionalcostsId, productiontaskId, tointrastat, origincountryId, intrastatregionId, intrastatinputstatisticId, statisticamount, intrastattransport, intrastatcurrencyId, intrastatamount, localintrastatamount, intrastatoutputstatisticId, provideId, intrastatstatus, busprojectId, rowextid, inventorycoupon, orderflow, valuated, providerowdisplayname);
   }
 
   @Override
@@ -1166,63 +1319,63 @@ public class Incomingtransferrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Incomingtransferrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
-    sb.append("    rowType: ").append(toIndentedString(rowType)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    tAmount: ").append(toIndentedString(tAmount)).append("\n");
-    sb.append("    localTAmount: ").append(toIndentedString(localTAmount)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    mainUnitRate: ").append(toIndentedString(mainUnitRate)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    closingOrder: ").append(toIndentedString(closingOrder)).append("\n");
+    sb.append("    rowtype: ").append(toIndentedString(rowtype)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    tamount: ").append(toIndentedString(tamount)).append("\n");
+    sb.append("    localtamount: ").append(toIndentedString(localtamount)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    mainunitrate: ").append(toIndentedString(mainunitrate)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    closingorder: ").append(toIndentedString(closingorder)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    unitQuantity: ").append(toIndentedString(unitQuantity)).append("\n");
-    sb.append("    mainUnitQuantity: ").append(toIndentedString(mainUnitQuantity)).append("\n");
-    sb.append("    unitPrice: ").append(toIndentedString(unitPrice)).append("\n");
-    sb.append("    totalPrice: ").append(toIndentedString(totalPrice)).append("\n");
-    sb.append("    closingIndex: ").append(toIndentedString(closingIndex)).append("\n");
-    sb.append("    rDocumentRowID: ").append(toIndentedString(rDocumentRowID)).append("\n");
-    sb.append("    completePrices: ").append(toIndentedString(completePrices)).append("\n");
+    sb.append("    unitquantity: ").append(toIndentedString(unitquantity)).append("\n");
+    sb.append("    mainunitquantity: ").append(toIndentedString(mainunitquantity)).append("\n");
+    sb.append("    unitprice: ").append(toIndentedString(unitprice)).append("\n");
+    sb.append("    totalprice: ").append(toIndentedString(totalprice)).append("\n");
+    sb.append("    closingindex: ").append(toIndentedString(closingindex)).append("\n");
+    sb.append("    rdocumentrowId: ").append(toIndentedString(rdocumentrowId)).append("\n");
+    sb.append("    completeprices: ").append(toIndentedString(completeprices)).append("\n");
     sb.append("    weight: ").append(toIndentedString(weight)).append("\n");
     sb.append("    capacity: ").append(toIndentedString(capacity)).append("\n");
-    sb.append("    weightUnit: ").append(toIndentedString(weightUnit)).append("\n");
-    sb.append("    capacityUnit: ").append(toIndentedString(capacityUnit)).append("\n");
-    sb.append("    reservedQuantity: ").append(toIndentedString(reservedQuantity)).append("\n");
-    sb.append("    batchStatus: ").append(toIndentedString(batchStatus)).append("\n");
-    sb.append("    deliveredQuantity: ").append(toIndentedString(deliveredQuantity)).append("\n");
-    sb.append("    deliveredQuantityStr: ").append(toIndentedString(deliveredQuantityStr)).append("\n");
-    sb.append("    provideRowID: ").append(toIndentedString(provideRowID)).append("\n");
-    sb.append("    docRowBatches: ").append(toIndentedString(docRowBatches)).append("\n");
-    sb.append("    additionalCostsID: ").append(toIndentedString(additionalCostsID)).append("\n");
-    sb.append("    productionTaskID: ").append(toIndentedString(productionTaskID)).append("\n");
-    sb.append("    toIntrastat: ").append(toIndentedString(toIntrastat)).append("\n");
-    sb.append("    originCountryID: ").append(toIndentedString(originCountryID)).append("\n");
-    sb.append("    intrastatRegionID: ").append(toIndentedString(intrastatRegionID)).append("\n");
-    sb.append("    intrastatInputStatisticID: ").append(toIndentedString(intrastatInputStatisticID)).append("\n");
-    sb.append("    statisticAmount: ").append(toIndentedString(statisticAmount)).append("\n");
-    sb.append("    intrastatTransport: ").append(toIndentedString(intrastatTransport)).append("\n");
-    sb.append("    intrastatCurrencyID: ").append(toIndentedString(intrastatCurrencyID)).append("\n");
-    sb.append("    intrastatAmount: ").append(toIndentedString(intrastatAmount)).append("\n");
-    sb.append("    localIntrastatAmount: ").append(toIndentedString(localIntrastatAmount)).append("\n");
-    sb.append("    intrastatOutputStatisticID: ").append(toIndentedString(intrastatOutputStatisticID)).append("\n");
-    sb.append("    provideID: ").append(toIndentedString(provideID)).append("\n");
-    sb.append("    intrastatStatus: ").append(toIndentedString(intrastatStatus)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    rowExtID: ").append(toIndentedString(rowExtID)).append("\n");
-    sb.append("    inventoryCoupon: ").append(toIndentedString(inventoryCoupon)).append("\n");
-    sb.append("    orderFlow: ").append(toIndentedString(orderFlow)).append("\n");
+    sb.append("    weightunit: ").append(toIndentedString(weightunit)).append("\n");
+    sb.append("    capacityunit: ").append(toIndentedString(capacityunit)).append("\n");
+    sb.append("    reservedquantity: ").append(toIndentedString(reservedquantity)).append("\n");
+    sb.append("    batchstatus: ").append(toIndentedString(batchstatus)).append("\n");
+    sb.append("    deliveredquantity: ").append(toIndentedString(deliveredquantity)).append("\n");
+    sb.append("    deliveredquantitystr: ").append(toIndentedString(deliveredquantitystr)).append("\n");
+    sb.append("    providerowId: ").append(toIndentedString(providerowId)).append("\n");
+    sb.append("    docrowbatches: ").append(toIndentedString(docrowbatches)).append("\n");
+    sb.append("    additionalcostsId: ").append(toIndentedString(additionalcostsId)).append("\n");
+    sb.append("    productiontaskId: ").append(toIndentedString(productiontaskId)).append("\n");
+    sb.append("    tointrastat: ").append(toIndentedString(tointrastat)).append("\n");
+    sb.append("    origincountryId: ").append(toIndentedString(origincountryId)).append("\n");
+    sb.append("    intrastatregionId: ").append(toIndentedString(intrastatregionId)).append("\n");
+    sb.append("    intrastatinputstatisticId: ").append(toIndentedString(intrastatinputstatisticId)).append("\n");
+    sb.append("    statisticamount: ").append(toIndentedString(statisticamount)).append("\n");
+    sb.append("    intrastattransport: ").append(toIndentedString(intrastattransport)).append("\n");
+    sb.append("    intrastatcurrencyId: ").append(toIndentedString(intrastatcurrencyId)).append("\n");
+    sb.append("    intrastatamount: ").append(toIndentedString(intrastatamount)).append("\n");
+    sb.append("    localintrastatamount: ").append(toIndentedString(localintrastatamount)).append("\n");
+    sb.append("    intrastatoutputstatisticId: ").append(toIndentedString(intrastatoutputstatisticId)).append("\n");
+    sb.append("    provideId: ").append(toIndentedString(provideId)).append("\n");
+    sb.append("    intrastatstatus: ").append(toIndentedString(intrastatstatus)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    rowextid: ").append(toIndentedString(rowextid)).append("\n");
+    sb.append("    inventorycoupon: ").append(toIndentedString(inventorycoupon)).append("\n");
+    sb.append("    orderflow: ").append(toIndentedString(orderflow)).append("\n");
     sb.append("    valuated: ").append(toIndentedString(valuated)).append("\n");
-    sb.append("    provideRowDisplayName: ").append(toIndentedString(provideRowDisplayName)).append("\n");
+    sb.append("    providerowdisplayname: ").append(toIndentedString(providerowdisplayname)).append("\n");
     sb.append("}");
     return sb.toString();
   }

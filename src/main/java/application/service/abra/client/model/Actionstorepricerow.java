@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,132 +34,177 @@ import java.util.Objects;
 /**
  * Actionstorepricerow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Actionstorepricerow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Price_ID")
-  private String priceID = null;
+  @SerializedName("price_id")
+  private String priceId = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Položka akčního ceníku [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Položka akčního ceníku [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Actionstorepricerow priceID(String priceID) {
-    this.priceID = priceID;
+  public Actionstorepricerow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Cena; ID objektu Definice ceny [persistentní položka]
-   * @return priceID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Cena; ID objektu Definice ceny [persistentní položka]")
-  public String getPriceID() {
-    return priceID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPriceID(String priceID) {
-    this.priceID = priceID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Actionstorepricerow qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Actionstorepricerow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Actionstorepricerow unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Actionstorepricerow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return unitRate
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Actionstorepricerow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Actionstorepricerow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu položka akčního ceníku [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu položka akčního ceníku [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Actionstorepricerow priceId(String priceId) {
+    this.priceId = priceId;
+    return this;
+  }
+
+   /**
+   * cena; id objektu definice ceny [persistentní položka]
+   * @return priceId
+  **/
+  @ApiModelProperty(example = "null", value = "cena; id objektu definice ceny [persistentní položka]")
+  public String getPriceId() {
+    return priceId;
+  }
+
+  public void setPriceId(String priceId) {
+    this.priceId = priceId;
+  }
+
+  public Actionstorepricerow qunit(String qunit) {
+    this.qunit = qunit;
+    return this;
+  }
+
+   /**
+   * jednotka [persistentní položka]
+   * @return qunit
+  **/
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
+  }
+
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
+  }
+
+  public Actionstorepricerow unitrate(Double unitrate) {
+    this.unitrate = unitrate;
+    return this;
+  }
+
+   /**
+   * vztah [persistentní položka]
+   * @return unitrate
+  **/
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
+  }
+
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
   public Actionstorepricerow amount(Double amount) {
@@ -190,20 +235,20 @@ public class Actionstorepricerow   {
       return false;
     }
     Actionstorepricerow actionstorepricerow = (Actionstorepricerow) o;
-    return Objects.equals(this.displayName, actionstorepricerow.displayName) &&
-        Objects.equals(this.ID, actionstorepricerow.ID) &&
-        Objects.equals(this.classID, actionstorepricerow.classID) &&
-        Objects.equals(this.objVersion, actionstorepricerow.objVersion) &&
-        Objects.equals(this.parentID, actionstorepricerow.parentID) &&
-        Objects.equals(this.priceID, actionstorepricerow.priceID) &&
-        Objects.equals(this.qUnit, actionstorepricerow.qUnit) &&
-        Objects.equals(this.unitRate, actionstorepricerow.unitRate) &&
+    return Objects.equals(this.displayname, actionstorepricerow.displayname) &&
+        Objects.equals(this.id, actionstorepricerow.id) &&
+        Objects.equals(this.classid, actionstorepricerow.classid) &&
+        Objects.equals(this.objversion, actionstorepricerow.objversion) &&
+        Objects.equals(this.parentId, actionstorepricerow.parentId) &&
+        Objects.equals(this.priceId, actionstorepricerow.priceId) &&
+        Objects.equals(this.qunit, actionstorepricerow.qunit) &&
+        Objects.equals(this.unitrate, actionstorepricerow.unitrate) &&
         Objects.equals(this.amount, actionstorepricerow.amount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, priceID, qUnit, unitRate, amount);
+    return Objects.hash(displayname, id, classid, objversion, parentId, priceId, qunit, unitrate, amount);
   }
 
   @Override
@@ -211,14 +256,14 @@ public class Actionstorepricerow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Actionstorepricerow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    priceID: ").append(toIndentedString(priceID)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    priceId: ").append(toIndentedString(priceId)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
     sb.append("}");
     return sb.toString();

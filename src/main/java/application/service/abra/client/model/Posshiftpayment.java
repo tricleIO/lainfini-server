@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,114 +34,195 @@ import java.util.Objects;
 /**
  * Posshiftpayment
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posshiftpayment   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PaymentType_ID")
-  private String paymentTypeID = null;
+  @SerializedName("paymenttype_id")
+  private String paymenttypeId = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("Payment")
+  @SerializedName("payment")
   private Double payment = null;
 
-  @SerializedName("Refund")
+  @SerializedName("refund")
   private Double refund = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Posshiftpayment displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Posshiftpayment id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Posshiftpayment classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Posshiftpayment objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Směna [persistentní položka]
-   * @return parentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Směna [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Posshiftpayment parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
   }
 
    /**
-   * Způsob úhrady; ID objektu Způsob úhrady [persistentní položka]
-   * @return paymentTypeID
+   * vlastník; id objektu směna [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Způsob úhrady; ID objektu Způsob úhrady [persistentní položka]")
-  public String getPaymentTypeID() {
-    return paymentTypeID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu směna [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Posshiftpayment paymenttypeId(String paymenttypeId) {
+    this.paymenttypeId = paymenttypeId;
+    return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * způsob úhrady; id objektu způsob úhrady [persistentní položka]
+   * @return paymenttypeId
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "způsob úhrady; id objektu způsob úhrady [persistentní položka]")
+  public String getPaymenttypeId() {
+    return paymenttypeId;
+  }
+
+  public void setPaymenttypeId(String paymenttypeId) {
+    this.paymenttypeId = paymenttypeId;
+  }
+
+  public Posshiftpayment currencyId(String currencyId) {
+    this.currencyId = currencyId;
+    return this;
   }
 
    /**
-   * Placeno [persistentní položka]
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
+  **/
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
+  }
+
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
+  }
+
+  public Posshiftpayment payment(Double payment) {
+    this.payment = payment;
+    return this;
+  }
+
+   /**
+   * placeno [persistentní položka]
    * @return payment
   **/
-  @ApiModelProperty(example = "null", value = "Placeno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "placeno [persistentní položka]")
   public Double getPayment() {
     return payment;
   }
 
+  public void setPayment(Double payment) {
+    this.payment = payment;
+  }
+
+  public Posshiftpayment refund(Double refund) {
+    this.refund = refund;
+    return this;
+  }
+
    /**
-   * Vráceno [persistentní položka]
+   * vráceno [persistentní položka]
    * @return refund
   **/
-  @ApiModelProperty(example = "null", value = "Vráceno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "vráceno [persistentní položka]")
   public Double getRefund() {
     return refund;
+  }
+
+  public void setRefund(Double refund) {
+    this.refund = refund;
   }
 
 
@@ -154,20 +235,20 @@ public class Posshiftpayment   {
       return false;
     }
     Posshiftpayment posshiftpayment = (Posshiftpayment) o;
-    return Objects.equals(this.displayName, posshiftpayment.displayName) &&
-        Objects.equals(this.ID, posshiftpayment.ID) &&
-        Objects.equals(this.classID, posshiftpayment.classID) &&
-        Objects.equals(this.objVersion, posshiftpayment.objVersion) &&
-        Objects.equals(this.parentID, posshiftpayment.parentID) &&
-        Objects.equals(this.paymentTypeID, posshiftpayment.paymentTypeID) &&
-        Objects.equals(this.currencyID, posshiftpayment.currencyID) &&
+    return Objects.equals(this.displayname, posshiftpayment.displayname) &&
+        Objects.equals(this.id, posshiftpayment.id) &&
+        Objects.equals(this.classid, posshiftpayment.classid) &&
+        Objects.equals(this.objversion, posshiftpayment.objversion) &&
+        Objects.equals(this.parentId, posshiftpayment.parentId) &&
+        Objects.equals(this.paymenttypeId, posshiftpayment.paymenttypeId) &&
+        Objects.equals(this.currencyId, posshiftpayment.currencyId) &&
         Objects.equals(this.payment, posshiftpayment.payment) &&
         Objects.equals(this.refund, posshiftpayment.refund);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, paymentTypeID, currencyID, payment, refund);
+    return Objects.hash(displayname, id, classid, objversion, parentId, paymenttypeId, currencyId, payment, refund);
   }
 
   @Override
@@ -175,13 +256,13 @@ public class Posshiftpayment   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posshiftpayment {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    paymentTypeID: ").append(toIndentedString(paymentTypeID)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    paymenttypeId: ").append(toIndentedString(paymenttypeId)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
     sb.append("    payment: ").append(toIndentedString(payment)).append("\n");
     sb.append("    refund: ").append(toIndentedString(refund)).append("\n");
     sb.append("}");

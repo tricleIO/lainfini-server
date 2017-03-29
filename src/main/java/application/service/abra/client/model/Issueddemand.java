@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,138 +37,174 @@ import java.util.Objects;
 /**
  * Issueddemand
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Issueddemand   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Issueddemandrow> rows = new ArrayList<Issueddemandrow>();
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("FirmOffice_ID")
-  private String firmOfficeID = null;
+  @SerializedName("firmoffice_id")
+  private String firmofficeId = null;
 
-  @SerializedName("Person_ID")
-  private String personID = null;
+  @SerializedName("person_id")
+  private String personId = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("CurrRate")
-  private Double currRate = null;
+  @SerializedName("currrate")
+  private Double currrate = null;
 
-  @SerializedName("RefCurrRate")
-  private Double refCurrRate = null;
+  @SerializedName("refcurrrate")
+  private Double refcurrrate = null;
 
-  @SerializedName("RequestedAnswerDate$DATE")
-  private DateTime requestedAnswerDateDATE = null;
+  @SerializedName("requestedanswerdate$date")
+  private DateTime requestedanswerdatedate = null;
 
-  @SerializedName("ValidToDate$DATE")
-  private DateTime validToDateDATE = null;
+  @SerializedName("validtodate$date")
+  private DateTime validtodatedate = null;
 
-  @SerializedName("TransportationType_ID")
-  private String transportationTypeID = null;
+  @SerializedName("transportationtype_id")
+  private String transportationtypeId = null;
 
-  @SerializedName("OtherCosts")
-  private Double otherCosts = null;
+  @SerializedName("othercosts")
+  private Double othercosts = null;
 
-  @SerializedName("LocalOtherCosts")
-  private Double localOtherCosts = null;
+  @SerializedName("localothercosts")
+  private Double localothercosts = null;
 
-  @SerializedName("CommunicationType_ID")
-  private String communicationTypeID = null;
+  @SerializedName("communicationtype_id")
+  private String communicationtypeId = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("RefCurrency_ID")
-  private String refCurrencyID = null;
+  @SerializedName("refcurrency_id")
+  private String refcurrencyId = null;
 
-  @SerializedName("LocalRefCurrency_ID")
-  private String localRefCurrencyID = null;
+  @SerializedName("localrefcurrency_id")
+  private String localrefcurrencyId = null;
 
-  @SerializedName("Address_ID")
-  private String addressID = null;
+  @SerializedName("address_id")
+  private String addressId = null;
 
-  @SerializedName("PricePrecision")
-  private Integer pricePrecision = null;
+  @SerializedName("priceprecision")
+  private Integer priceprecision = null;
 
-  @SerializedName("DemandFailureReason_ID")
-  private String demandFailureReasonID = null;
+  @SerializedName("demandfailurereason_id")
+  private String demandfailurereasonId = null;
 
-  @SerializedName("DemandFailureComment")
-  private String demandFailureComment = null;
+  @SerializedName("demandfailurecomment")
+  private String demandfailurecomment = null;
+
+  public Issueddemand displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Issueddemand id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Issueddemand classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Issueddemand objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Issueddemand rows(List<Issueddemandrow> rows) {
@@ -182,10 +218,10 @@ public class Issueddemand   {
   }
 
    /**
-   * Řádky; kolekce BO Poptávka vydaná - řádek [nepersistentní položka]
+   * Řádky; kolekce bo poptávka vydaná - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Poptávka vydaná - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo poptávka vydaná - řádek [nepersistentní položka]")
   public List<Issueddemandrow> getRows() {
     return rows;
   }
@@ -194,364 +230,364 @@ public class Issueddemand   {
     this.rows = rows;
   }
 
-  public Issueddemand docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Issueddemand docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Issueddemand periodID(String periodID) {
-    this.periodID = periodID;
+  public Issueddemand periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Issueddemand ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Issueddemand ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Issueddemand docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Issueddemand docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Issueddemand createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Issueddemand createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Issueddemand correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Issueddemand correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Issueddemand newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Issueddemand newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Issueddemand newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Issueddemand newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Issueddemand firmID(String firmID) {
-    this.firmID = firmID;
+  public Issueddemand firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma dodavatele; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma dodavatele; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma dodavatele; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma dodavatele; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Issueddemand firmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public Issueddemand firmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
     return this;
   }
 
    /**
-   * Provozovna firmy dodavatele; ID objektu Provozovna [persistentní položka]
-   * @return firmOfficeID
+   * provozovna firmy dodavatele; id objektu provozovna [persistentní položka]
+   * @return firmofficeId
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna firmy dodavatele; ID objektu Provozovna [persistentní položka]")
-  public String getFirmOfficeID() {
-    return firmOfficeID;
+  @ApiModelProperty(example = "null", value = "provozovna firmy dodavatele; id objektu provozovna [persistentní položka]")
+  public String getFirmofficeId() {
+    return firmofficeId;
   }
 
-  public void setFirmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public void setFirmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
   }
 
-  public Issueddemand personID(String personID) {
-    this.personID = personID;
+  public Issueddemand personId(String personId) {
+    this.personId = personId;
     return this;
   }
 
    /**
-   * Osoba ve firmě dodavatele; ID objektu Osoba [persistentní položka]
-   * @return personID
+   * osoba ve firmě dodavatele; id objektu osoba [persistentní položka]
+   * @return personId
   **/
-  @ApiModelProperty(example = "null", value = "Osoba ve firmě dodavatele; ID objektu Osoba [persistentní položka]")
-  public String getPersonID() {
-    return personID;
+  @ApiModelProperty(example = "null", value = "osoba ve firmě dodavatele; id objektu osoba [persistentní položka]")
+  public String getPersonId() {
+    return personId;
   }
 
-  public void setPersonID(String personID) {
-    this.personID = personID;
+  public void setPersonId(String personId) {
+    this.personId = personId;
   }
 
-  public Issueddemand currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Issueddemand currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
-  public Issueddemand currRate(Double currRate) {
-    this.currRate = currRate;
+  public Issueddemand currrate(Double currrate) {
+    this.currrate = currrate;
     return this;
   }
 
    /**
-   * Kurz měny [persistentní položka]
-   * @return currRate
+   * kurz měny [persistentní položka]
+   * @return currrate
   **/
-  @ApiModelProperty(example = "null", value = "Kurz měny [persistentní položka]")
-  public Double getCurrRate() {
-    return currRate;
+  @ApiModelProperty(example = "null", value = "kurz měny [persistentní položka]")
+  public Double getCurrrate() {
+    return currrate;
   }
 
-  public void setCurrRate(Double currRate) {
-    this.currRate = currRate;
+  public void setCurrrate(Double currrate) {
+    this.currrate = currrate;
   }
 
-  public Issueddemand refCurrRate(Double refCurrRate) {
-    this.refCurrRate = refCurrRate;
+  public Issueddemand refcurrrate(Double refcurrrate) {
+    this.refcurrrate = refcurrrate;
     return this;
   }
 
    /**
-   * Vztažný kurz měny [persistentní položka]
-   * @return refCurrRate
+   * vztažný kurz měny [persistentní položka]
+   * @return refcurrrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztažný kurz měny [persistentní položka]")
-  public Double getRefCurrRate() {
-    return refCurrRate;
+  @ApiModelProperty(example = "null", value = "vztažný kurz měny [persistentní položka]")
+  public Double getRefcurrrate() {
+    return refcurrrate;
   }
 
-  public void setRefCurrRate(Double refCurrRate) {
-    this.refCurrRate = refCurrRate;
+  public void setRefcurrrate(Double refcurrrate) {
+    this.refcurrrate = refcurrrate;
   }
 
-  public Issueddemand requestedAnswerDateDATE(DateTime requestedAnswerDateDATE) {
-    this.requestedAnswerDateDATE = requestedAnswerDateDATE;
+  public Issueddemand requestedanswerdatedate(DateTime requestedanswerdatedate) {
+    this.requestedanswerdatedate = requestedanswerdatedate;
     return this;
   }
 
    /**
-   * Požadovaný termín dodání odpovědi [persistentní položka]
-   * @return requestedAnswerDateDATE
+   * požadovaný termín dodání odpovědi [persistentní položka]
+   * @return requestedanswerdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Požadovaný termín dodání odpovědi [persistentní položka]")
-  public DateTime getRequestedAnswerDateDATE() {
-    return requestedAnswerDateDATE;
+  @ApiModelProperty(example = "null", value = "požadovaný termín dodání odpovědi [persistentní položka]")
+  public DateTime getRequestedanswerdatedate() {
+    return requestedanswerdatedate;
   }
 
-  public void setRequestedAnswerDateDATE(DateTime requestedAnswerDateDATE) {
-    this.requestedAnswerDateDATE = requestedAnswerDateDATE;
+  public void setRequestedanswerdatedate(DateTime requestedanswerdatedate) {
+    this.requestedanswerdatedate = requestedanswerdatedate;
   }
 
-  public Issueddemand validToDateDATE(DateTime validToDateDATE) {
-    this.validToDateDATE = validToDateDATE;
+  public Issueddemand validtodatedate(DateTime validtodatedate) {
+    this.validtodatedate = validtodatedate;
     return this;
   }
 
    /**
-   * Dokdy je nabídka dodavatele platná [persistentní položka]
-   * @return validToDateDATE
+   * dokdy je nabídka dodavatele platná [persistentní položka]
+   * @return validtodatedate
   **/
-  @ApiModelProperty(example = "null", value = "Dokdy je nabídka dodavatele platná [persistentní položka]")
-  public DateTime getValidToDateDATE() {
-    return validToDateDATE;
+  @ApiModelProperty(example = "null", value = "dokdy je nabídka dodavatele platná [persistentní položka]")
+  public DateTime getValidtodatedate() {
+    return validtodatedate;
   }
 
-  public void setValidToDateDATE(DateTime validToDateDATE) {
-    this.validToDateDATE = validToDateDATE;
+  public void setValidtodatedate(DateTime validtodatedate) {
+    this.validtodatedate = validtodatedate;
   }
 
-  public Issueddemand transportationTypeID(String transportationTypeID) {
-    this.transportationTypeID = transportationTypeID;
+  public Issueddemand transportationtypeId(String transportationtypeId) {
+    this.transportationtypeId = transportationtypeId;
     return this;
   }
 
    /**
-   * Způsob dopravy; ID objektu Způsob dopravy [persistentní položka]
-   * @return transportationTypeID
+   * způsob dopravy; id objektu způsob dopravy [persistentní položka]
+   * @return transportationtypeId
   **/
-  @ApiModelProperty(example = "null", value = "Způsob dopravy; ID objektu Způsob dopravy [persistentní položka]")
-  public String getTransportationTypeID() {
-    return transportationTypeID;
+  @ApiModelProperty(example = "null", value = "způsob dopravy; id objektu způsob dopravy [persistentní položka]")
+  public String getTransportationtypeId() {
+    return transportationtypeId;
   }
 
-  public void setTransportationTypeID(String transportationTypeID) {
-    this.transportationTypeID = transportationTypeID;
+  public void setTransportationtypeId(String transportationtypeId) {
+    this.transportationtypeId = transportationtypeId;
   }
 
-  public Issueddemand otherCosts(Double otherCosts) {
-    this.otherCosts = otherCosts;
+  public Issueddemand othercosts(Double othercosts) {
+    this.othercosts = othercosts;
     return this;
   }
 
    /**
-   * Odhad ostatních nákladů [persistentní položka]
-   * @return otherCosts
+   * odhad ostatních nákladů [persistentní položka]
+   * @return othercosts
   **/
-  @ApiModelProperty(example = "null", value = "Odhad ostatních nákladů [persistentní položka]")
-  public Double getOtherCosts() {
-    return otherCosts;
+  @ApiModelProperty(example = "null", value = "odhad ostatních nákladů [persistentní položka]")
+  public Double getOthercosts() {
+    return othercosts;
   }
 
-  public void setOtherCosts(Double otherCosts) {
-    this.otherCosts = otherCosts;
+  public void setOthercosts(Double othercosts) {
+    this.othercosts = othercosts;
   }
 
-  public Issueddemand localOtherCosts(Double localOtherCosts) {
-    this.localOtherCosts = localOtherCosts;
+  public Issueddemand localothercosts(Double localothercosts) {
+    this.localothercosts = localothercosts;
     return this;
   }
 
    /**
-   * Odhad ostatních nákladů v lokální měně [persistentní položka]
-   * @return localOtherCosts
+   * odhad ostatních nákladů v lokální měně [persistentní položka]
+   * @return localothercosts
   **/
-  @ApiModelProperty(example = "null", value = "Odhad ostatních nákladů v lokální měně [persistentní položka]")
-  public Double getLocalOtherCosts() {
-    return localOtherCosts;
+  @ApiModelProperty(example = "null", value = "odhad ostatních nákladů v lokální měně [persistentní položka]")
+  public Double getLocalothercosts() {
+    return localothercosts;
   }
 
-  public void setLocalOtherCosts(Double localOtherCosts) {
-    this.localOtherCosts = localOtherCosts;
+  public void setLocalothercosts(Double localothercosts) {
+    this.localothercosts = localothercosts;
   }
 
-  public Issueddemand communicationTypeID(String communicationTypeID) {
-    this.communicationTypeID = communicationTypeID;
+  public Issueddemand communicationtypeId(String communicationtypeId) {
+    this.communicationtypeId = communicationtypeId;
     return this;
   }
 
    /**
-   * Způsob komunikace; ID objektu Způsob komunikace [persistentní položka]
-   * @return communicationTypeID
+   * způsob komunikace; id objektu způsob komunikace [persistentní položka]
+   * @return communicationtypeId
   **/
-  @ApiModelProperty(example = "null", value = "Způsob komunikace; ID objektu Způsob komunikace [persistentní položka]")
-  public String getCommunicationTypeID() {
-    return communicationTypeID;
+  @ApiModelProperty(example = "null", value = "způsob komunikace; id objektu způsob komunikace [persistentní položka]")
+  public String getCommunicationtypeId() {
+    return communicationtypeId;
   }
 
-  public void setCommunicationTypeID(String communicationTypeID) {
-    this.communicationTypeID = communicationTypeID;
+  public void setCommunicationtypeId(String communicationtypeId) {
+    this.communicationtypeId = communicationtypeId;
   }
 
   public Issueddemand note(String note) {
@@ -560,10 +596,10 @@ public class Issueddemand   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -572,94 +608,112 @@ public class Issueddemand   {
     this.note = note;
   }
 
-   /**
-   * Ref.měna; ID objektu Měna
-   * @return refCurrencyID
-  **/
-  @ApiModelProperty(example = "null", value = "Ref.měna; ID objektu Měna")
-  public String getRefCurrencyID() {
-    return refCurrencyID;
-  }
-
-   /**
-   * Lok.ref.měna; ID objektu Měna
-   * @return localRefCurrencyID
-  **/
-  @ApiModelProperty(example = "null", value = "Lok.ref.měna; ID objektu Měna")
-  public String getLocalRefCurrencyID() {
-    return localRefCurrencyID;
-  }
-
-  public Issueddemand addressID(String addressID) {
-    this.addressID = addressID;
+  public Issueddemand refcurrencyId(String refcurrencyId) {
+    this.refcurrencyId = refcurrencyId;
     return this;
   }
 
    /**
-   * Vlastní adresa; ID objektu Adresa [persistentní položka]
-   * @return addressID
+   * ref.měna; id objektu měna
+   * @return refcurrencyId
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní adresa; ID objektu Adresa [persistentní položka]")
-  public String getAddressID() {
-    return addressID;
+  @ApiModelProperty(example = "null", value = "ref.měna; id objektu měna")
+  public String getRefcurrencyId() {
+    return refcurrencyId;
   }
 
-  public void setAddressID(String addressID) {
-    this.addressID = addressID;
+  public void setRefcurrencyId(String refcurrencyId) {
+    this.refcurrencyId = refcurrencyId;
   }
 
-  public Issueddemand pricePrecision(Integer pricePrecision) {
-    this.pricePrecision = pricePrecision;
+  public Issueddemand localrefcurrencyId(String localrefcurrencyId) {
+    this.localrefcurrencyId = localrefcurrencyId;
     return this;
   }
 
    /**
-   * Zobrazení desetinných míst pro zadávací částky [persistentní položka]
-   * @return pricePrecision
+   * lok.ref.měna; id objektu měna
+   * @return localrefcurrencyId
   **/
-  @ApiModelProperty(example = "null", value = "Zobrazení desetinných míst pro zadávací částky [persistentní položka]")
-  public Integer getPricePrecision() {
-    return pricePrecision;
+  @ApiModelProperty(example = "null", value = "lok.ref.měna; id objektu měna")
+  public String getLocalrefcurrencyId() {
+    return localrefcurrencyId;
   }
 
-  public void setPricePrecision(Integer pricePrecision) {
-    this.pricePrecision = pricePrecision;
+  public void setLocalrefcurrencyId(String localrefcurrencyId) {
+    this.localrefcurrencyId = localrefcurrencyId;
   }
 
-  public Issueddemand demandFailureReasonID(String demandFailureReasonID) {
-    this.demandFailureReasonID = demandFailureReasonID;
+  public Issueddemand addressId(String addressId) {
+    this.addressId = addressId;
     return this;
   }
 
    /**
-   * Důvod neúspěchu; ID objektu Důvod neúspěchu oslovených dodavatelů [persistentní položka]
-   * @return demandFailureReasonID
+   * vlastní adresa; id objektu adresa [persistentní položka]
+   * @return addressId
   **/
-  @ApiModelProperty(example = "null", value = "Důvod neúspěchu; ID objektu Důvod neúspěchu oslovených dodavatelů [persistentní položka]")
-  public String getDemandFailureReasonID() {
-    return demandFailureReasonID;
+  @ApiModelProperty(example = "null", value = "vlastní adresa; id objektu adresa [persistentní položka]")
+  public String getAddressId() {
+    return addressId;
   }
 
-  public void setDemandFailureReasonID(String demandFailureReasonID) {
-    this.demandFailureReasonID = demandFailureReasonID;
+  public void setAddressId(String addressId) {
+    this.addressId = addressId;
   }
 
-  public Issueddemand demandFailureComment(String demandFailureComment) {
-    this.demandFailureComment = demandFailureComment;
+  public Issueddemand priceprecision(Integer priceprecision) {
+    this.priceprecision = priceprecision;
     return this;
   }
 
    /**
-   * Komentář důvodů neúspěchu [persistentní položka]
-   * @return demandFailureComment
+   * zobrazení desetinných míst pro zadávací částky [persistentní položka]
+   * @return priceprecision
   **/
-  @ApiModelProperty(example = "null", value = "Komentář důvodů neúspěchu [persistentní položka]")
-  public String getDemandFailureComment() {
-    return demandFailureComment;
+  @ApiModelProperty(example = "null", value = "zobrazení desetinných míst pro zadávací částky [persistentní položka]")
+  public Integer getPriceprecision() {
+    return priceprecision;
   }
 
-  public void setDemandFailureComment(String demandFailureComment) {
-    this.demandFailureComment = demandFailureComment;
+  public void setPriceprecision(Integer priceprecision) {
+    this.priceprecision = priceprecision;
+  }
+
+  public Issueddemand demandfailurereasonId(String demandfailurereasonId) {
+    this.demandfailurereasonId = demandfailurereasonId;
+    return this;
+  }
+
+   /**
+   * důvod neúspěchu; id objektu důvod neúspěchu oslovených dodavatelů [persistentní položka]
+   * @return demandfailurereasonId
+  **/
+  @ApiModelProperty(example = "null", value = "důvod neúspěchu; id objektu důvod neúspěchu oslovených dodavatelů [persistentní položka]")
+  public String getDemandfailurereasonId() {
+    return demandfailurereasonId;
+  }
+
+  public void setDemandfailurereasonId(String demandfailurereasonId) {
+    this.demandfailurereasonId = demandfailurereasonId;
+  }
+
+  public Issueddemand demandfailurecomment(String demandfailurecomment) {
+    this.demandfailurecomment = demandfailurecomment;
+    return this;
+  }
+
+   /**
+   * komentář důvodů neúspěchu [persistentní položka]
+   * @return demandfailurecomment
+  **/
+  @ApiModelProperty(example = "null", value = "komentář důvodů neúspěchu [persistentní položka]")
+  public String getDemandfailurecomment() {
+    return demandfailurecomment;
+  }
+
+  public void setDemandfailurecomment(String demandfailurecomment) {
+    this.demandfailurecomment = demandfailurecomment;
   }
 
 
@@ -672,43 +726,43 @@ public class Issueddemand   {
       return false;
     }
     Issueddemand issueddemand = (Issueddemand) o;
-    return Objects.equals(this.displayName, issueddemand.displayName) &&
-        Objects.equals(this.ID, issueddemand.ID) &&
-        Objects.equals(this.classID, issueddemand.classID) &&
-        Objects.equals(this.objVersion, issueddemand.objVersion) &&
+    return Objects.equals(this.displayname, issueddemand.displayname) &&
+        Objects.equals(this.id, issueddemand.id) &&
+        Objects.equals(this.classid, issueddemand.classid) &&
+        Objects.equals(this.objversion, issueddemand.objversion) &&
         Objects.equals(this.rows, issueddemand.rows) &&
-        Objects.equals(this.docQueueID, issueddemand.docQueueID) &&
-        Objects.equals(this.periodID, issueddemand.periodID) &&
-        Objects.equals(this.ordNumber, issueddemand.ordNumber) &&
-        Objects.equals(this.docDateDATE, issueddemand.docDateDATE) &&
-        Objects.equals(this.createdByID, issueddemand.createdByID) &&
-        Objects.equals(this.correctedByID, issueddemand.correctedByID) &&
-        Objects.equals(this.newRelatedType, issueddemand.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, issueddemand.newRelatedDocumentID) &&
-        Objects.equals(this.firmID, issueddemand.firmID) &&
-        Objects.equals(this.firmOfficeID, issueddemand.firmOfficeID) &&
-        Objects.equals(this.personID, issueddemand.personID) &&
-        Objects.equals(this.currencyID, issueddemand.currencyID) &&
-        Objects.equals(this.currRate, issueddemand.currRate) &&
-        Objects.equals(this.refCurrRate, issueddemand.refCurrRate) &&
-        Objects.equals(this.requestedAnswerDateDATE, issueddemand.requestedAnswerDateDATE) &&
-        Objects.equals(this.validToDateDATE, issueddemand.validToDateDATE) &&
-        Objects.equals(this.transportationTypeID, issueddemand.transportationTypeID) &&
-        Objects.equals(this.otherCosts, issueddemand.otherCosts) &&
-        Objects.equals(this.localOtherCosts, issueddemand.localOtherCosts) &&
-        Objects.equals(this.communicationTypeID, issueddemand.communicationTypeID) &&
+        Objects.equals(this.docqueueId, issueddemand.docqueueId) &&
+        Objects.equals(this.periodId, issueddemand.periodId) &&
+        Objects.equals(this.ordnumber, issueddemand.ordnumber) &&
+        Objects.equals(this.docdatedate, issueddemand.docdatedate) &&
+        Objects.equals(this.createdbyId, issueddemand.createdbyId) &&
+        Objects.equals(this.correctedbyId, issueddemand.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, issueddemand.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, issueddemand.newrelateddocumentId) &&
+        Objects.equals(this.firmId, issueddemand.firmId) &&
+        Objects.equals(this.firmofficeId, issueddemand.firmofficeId) &&
+        Objects.equals(this.personId, issueddemand.personId) &&
+        Objects.equals(this.currencyId, issueddemand.currencyId) &&
+        Objects.equals(this.currrate, issueddemand.currrate) &&
+        Objects.equals(this.refcurrrate, issueddemand.refcurrrate) &&
+        Objects.equals(this.requestedanswerdatedate, issueddemand.requestedanswerdatedate) &&
+        Objects.equals(this.validtodatedate, issueddemand.validtodatedate) &&
+        Objects.equals(this.transportationtypeId, issueddemand.transportationtypeId) &&
+        Objects.equals(this.othercosts, issueddemand.othercosts) &&
+        Objects.equals(this.localothercosts, issueddemand.localothercosts) &&
+        Objects.equals(this.communicationtypeId, issueddemand.communicationtypeId) &&
         Objects.equals(this.note, issueddemand.note) &&
-        Objects.equals(this.refCurrencyID, issueddemand.refCurrencyID) &&
-        Objects.equals(this.localRefCurrencyID, issueddemand.localRefCurrencyID) &&
-        Objects.equals(this.addressID, issueddemand.addressID) &&
-        Objects.equals(this.pricePrecision, issueddemand.pricePrecision) &&
-        Objects.equals(this.demandFailureReasonID, issueddemand.demandFailureReasonID) &&
-        Objects.equals(this.demandFailureComment, issueddemand.demandFailureComment);
+        Objects.equals(this.refcurrencyId, issueddemand.refcurrencyId) &&
+        Objects.equals(this.localrefcurrencyId, issueddemand.localrefcurrencyId) &&
+        Objects.equals(this.addressId, issueddemand.addressId) &&
+        Objects.equals(this.priceprecision, issueddemand.priceprecision) &&
+        Objects.equals(this.demandfailurereasonId, issueddemand.demandfailurereasonId) &&
+        Objects.equals(this.demandfailurecomment, issueddemand.demandfailurecomment);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, firmID, firmOfficeID, personID, currencyID, currRate, refCurrRate, requestedAnswerDateDATE, validToDateDATE, transportationTypeID, otherCosts, localOtherCosts, communicationTypeID, note, refCurrencyID, localRefCurrencyID, addressID, pricePrecision, demandFailureReasonID, demandFailureComment);
+    return Objects.hash(displayname, id, classid, objversion, rows, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, firmId, firmofficeId, personId, currencyId, currrate, refcurrrate, requestedanswerdatedate, validtodatedate, transportationtypeId, othercosts, localothercosts, communicationtypeId, note, refcurrencyId, localrefcurrencyId, addressId, priceprecision, demandfailurereasonId, demandfailurecomment);
   }
 
   @Override
@@ -716,38 +770,38 @@ public class Issueddemand   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Issueddemand {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    firmOfficeID: ").append(toIndentedString(firmOfficeID)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    currRate: ").append(toIndentedString(currRate)).append("\n");
-    sb.append("    refCurrRate: ").append(toIndentedString(refCurrRate)).append("\n");
-    sb.append("    requestedAnswerDateDATE: ").append(toIndentedString(requestedAnswerDateDATE)).append("\n");
-    sb.append("    validToDateDATE: ").append(toIndentedString(validToDateDATE)).append("\n");
-    sb.append("    transportationTypeID: ").append(toIndentedString(transportationTypeID)).append("\n");
-    sb.append("    otherCosts: ").append(toIndentedString(otherCosts)).append("\n");
-    sb.append("    localOtherCosts: ").append(toIndentedString(localOtherCosts)).append("\n");
-    sb.append("    communicationTypeID: ").append(toIndentedString(communicationTypeID)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    firmofficeId: ").append(toIndentedString(firmofficeId)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    currrate: ").append(toIndentedString(currrate)).append("\n");
+    sb.append("    refcurrrate: ").append(toIndentedString(refcurrrate)).append("\n");
+    sb.append("    requestedanswerdatedate: ").append(toIndentedString(requestedanswerdatedate)).append("\n");
+    sb.append("    validtodatedate: ").append(toIndentedString(validtodatedate)).append("\n");
+    sb.append("    transportationtypeId: ").append(toIndentedString(transportationtypeId)).append("\n");
+    sb.append("    othercosts: ").append(toIndentedString(othercosts)).append("\n");
+    sb.append("    localothercosts: ").append(toIndentedString(localothercosts)).append("\n");
+    sb.append("    communicationtypeId: ").append(toIndentedString(communicationtypeId)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
-    sb.append("    refCurrencyID: ").append(toIndentedString(refCurrencyID)).append("\n");
-    sb.append("    localRefCurrencyID: ").append(toIndentedString(localRefCurrencyID)).append("\n");
-    sb.append("    addressID: ").append(toIndentedString(addressID)).append("\n");
-    sb.append("    pricePrecision: ").append(toIndentedString(pricePrecision)).append("\n");
-    sb.append("    demandFailureReasonID: ").append(toIndentedString(demandFailureReasonID)).append("\n");
-    sb.append("    demandFailureComment: ").append(toIndentedString(demandFailureComment)).append("\n");
+    sb.append("    refcurrencyId: ").append(toIndentedString(refcurrencyId)).append("\n");
+    sb.append("    localrefcurrencyId: ").append(toIndentedString(localrefcurrencyId)).append("\n");
+    sb.append("    addressId: ").append(toIndentedString(addressId)).append("\n");
+    sb.append("    priceprecision: ").append(toIndentedString(priceprecision)).append("\n");
+    sb.append("    demandfailurereasonId: ").append(toIndentedString(demandfailurereasonId)).append("\n");
+    sb.append("    demandfailurecomment: ").append(toIndentedString(demandfailurecomment)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,285 +35,321 @@ import java.util.Objects;
 /**
  * Vatclosingdocument
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Vatclosingdocument   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("DocumentType")
-  private String documentType = null;
+  @SerializedName("documenttype")
+  private String documenttype = null;
 
-  @SerializedName("Document_ID")
-  private String documentID = null;
+  @SerializedName("document_id")
+  private String documentId = null;
 
-  @SerializedName("IsInVATDeclarationReport")
-  private Boolean isInVATDeclarationReport = null;
+  @SerializedName("isinvatdeclarationreport")
+  private Boolean isinvatdeclarationreport = null;
 
-  @SerializedName("IsInVATCheckReport")
-  private Boolean isInVATCheckReport = null;
+  @SerializedName("isinvatcheckreport")
+  private Boolean isinvatcheckreport = null;
 
-  @SerializedName("DocumentStatus")
-  private Integer documentStatus = null;
+  @SerializedName("documentstatus")
+  private Integer documentstatus = null;
 
-  @SerializedName("DocumentStatusAsText")
-  private String documentStatusAsText = null;
+  @SerializedName("documentstatusastext")
+  private String documentstatusastext = null;
 
-  @SerializedName("VATDate$DATE")
-  private DateTime vATDateDATE = null;
+  @SerializedName("vatdate$date")
+  private DateTime vatdatedate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Vatclosingdocument parentID(String parentID) {
-    this.parentID = parentID;
+  public Vatclosingdocument displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Uzávěrka; ID objektu Uzávěrka DPH [persistentní položka]
-   * @return parentID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Uzávěrka; ID objektu Uzávěrka DPH [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setParentID(String parentID) {
-    this.parentID = parentID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Vatclosingdocument docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Vatclosingdocument id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Vatclosingdocument ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Vatclosingdocument classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Vatclosingdocument periodID(String periodID) {
-    this.periodID = periodID;
+  public Vatclosingdocument objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Vatclosingdocument documentType(String documentType) {
-    this.documentType = documentType;
+  public Vatclosingdocument parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Typ dokladu [persistentní položka]
-   * @return documentType
+   * uzávěrka; id objektu uzávěrka dph [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Typ dokladu [persistentní položka]")
-  public String getDocumentType() {
-    return documentType;
+  @ApiModelProperty(example = "null", value = "uzávěrka; id objektu uzávěrka dph [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setDocumentType(String documentType) {
-    this.documentType = documentType;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Vatclosingdocument documentID(String documentID) {
-    this.documentID = documentID;
+  public Vatclosingdocument docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * ID dokladu; ID objektu Dokument [persistentní položka]
-   * @return documentID
+   * Řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu; ID objektu Dokument [persistentní položka]")
-  public String getDocumentID() {
-    return documentID;
+  @ApiModelProperty(example = "null", value = "Řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocumentID(String documentID) {
-    this.documentID = documentID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Vatclosingdocument isInVATDeclarationReport(Boolean isInVATDeclarationReport) {
-    this.isInVATDeclarationReport = isInVATDeclarationReport;
+  public Vatclosingdocument ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Je v DPH přiznání [persistentní položka]
-   * @return isInVATDeclarationReport
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Je v DPH přiznání [persistentní položka]")
-  public Boolean getIsInVATDeclarationReport() {
-    return isInVATDeclarationReport;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setIsInVATDeclarationReport(Boolean isInVATDeclarationReport) {
-    this.isInVATDeclarationReport = isInVATDeclarationReport;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Vatclosingdocument isInVATCheckReport(Boolean isInVATCheckReport) {
-    this.isInVATCheckReport = isInVATCheckReport;
+  public Vatclosingdocument periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Je v KV/KH DPH [persistentní položka]
-   * @return isInVATCheckReport
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Je v KV/KH DPH [persistentní položka]")
-  public Boolean getIsInVATCheckReport() {
-    return isInVATCheckReport;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setIsInVATCheckReport(Boolean isInVATCheckReport) {
-    this.isInVATCheckReport = isInVATCheckReport;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Vatclosingdocument documentStatus(Integer documentStatus) {
-    this.documentStatus = documentStatus;
+  public Vatclosingdocument documenttype(String documenttype) {
+    this.documenttype = documenttype;
     return this;
   }
 
    /**
-   * Stav dokumentu [persistentní položka]
-   * @return documentStatus
+   * typ dokladu [persistentní položka]
+   * @return documenttype
   **/
-  @ApiModelProperty(example = "null", value = "Stav dokumentu [persistentní položka]")
-  public Integer getDocumentStatus() {
-    return documentStatus;
+  @ApiModelProperty(example = "null", value = "typ dokladu [persistentní položka]")
+  public String getDocumenttype() {
+    return documenttype;
   }
 
-  public void setDocumentStatus(Integer documentStatus) {
-    this.documentStatus = documentStatus;
+  public void setDocumenttype(String documenttype) {
+    this.documenttype = documenttype;
   }
 
-  public Vatclosingdocument documentStatusAsText(String documentStatusAsText) {
-    this.documentStatusAsText = documentStatusAsText;
+  public Vatclosingdocument documentId(String documentId) {
+    this.documentId = documentId;
     return this;
   }
 
    /**
-   * Stav dokumentu
-   * @return documentStatusAsText
+   * id dokladu; id objektu dokument [persistentní položka]
+   * @return documentId
   **/
-  @ApiModelProperty(example = "null", value = "Stav dokumentu")
-  public String getDocumentStatusAsText() {
-    return documentStatusAsText;
+  @ApiModelProperty(example = "null", value = "id dokladu; id objektu dokument [persistentní položka]")
+  public String getDocumentId() {
+    return documentId;
   }
 
-  public void setDocumentStatusAsText(String documentStatusAsText) {
-    this.documentStatusAsText = documentStatusAsText;
+  public void setDocumentId(String documentId) {
+    this.documentId = documentId;
   }
 
-  public Vatclosingdocument vATDateDATE(DateTime vATDateDATE) {
-    this.vATDateDATE = vATDateDATE;
+  public Vatclosingdocument isinvatdeclarationreport(Boolean isinvatdeclarationreport) {
+    this.isinvatdeclarationreport = isinvatdeclarationreport;
     return this;
   }
 
    /**
-   * Datum plnění
-   * @return vATDateDATE
+   * je v dph přiznání [persistentní položka]
+   * @return isinvatdeclarationreport
   **/
-  @ApiModelProperty(example = "null", value = "Datum plnění")
-  public DateTime getVATDateDATE() {
-    return vATDateDATE;
+  @ApiModelProperty(example = "null", value = "je v dph přiznání [persistentní položka]")
+  public Boolean getIsinvatdeclarationreport() {
+    return isinvatdeclarationreport;
   }
 
-  public void setVATDateDATE(DateTime vATDateDATE) {
-    this.vATDateDATE = vATDateDATE;
+  public void setIsinvatdeclarationreport(Boolean isinvatdeclarationreport) {
+    this.isinvatdeclarationreport = isinvatdeclarationreport;
+  }
+
+  public Vatclosingdocument isinvatcheckreport(Boolean isinvatcheckreport) {
+    this.isinvatcheckreport = isinvatcheckreport;
+    return this;
+  }
+
+   /**
+   * je v kv/kh dph [persistentní položka]
+   * @return isinvatcheckreport
+  **/
+  @ApiModelProperty(example = "null", value = "je v kv/kh dph [persistentní položka]")
+  public Boolean getIsinvatcheckreport() {
+    return isinvatcheckreport;
+  }
+
+  public void setIsinvatcheckreport(Boolean isinvatcheckreport) {
+    this.isinvatcheckreport = isinvatcheckreport;
+  }
+
+  public Vatclosingdocument documentstatus(Integer documentstatus) {
+    this.documentstatus = documentstatus;
+    return this;
+  }
+
+   /**
+   * stav dokumentu [persistentní položka]
+   * @return documentstatus
+  **/
+  @ApiModelProperty(example = "null", value = "stav dokumentu [persistentní položka]")
+  public Integer getDocumentstatus() {
+    return documentstatus;
+  }
+
+  public void setDocumentstatus(Integer documentstatus) {
+    this.documentstatus = documentstatus;
+  }
+
+  public Vatclosingdocument documentstatusastext(String documentstatusastext) {
+    this.documentstatusastext = documentstatusastext;
+    return this;
+  }
+
+   /**
+   * stav dokumentu
+   * @return documentstatusastext
+  **/
+  @ApiModelProperty(example = "null", value = "stav dokumentu")
+  public String getDocumentstatusastext() {
+    return documentstatusastext;
+  }
+
+  public void setDocumentstatusastext(String documentstatusastext) {
+    this.documentstatusastext = documentstatusastext;
+  }
+
+  public Vatclosingdocument vatdatedate(DateTime vatdatedate) {
+    this.vatdatedate = vatdatedate;
+    return this;
+  }
+
+   /**
+   * datum plnění
+   * @return vatdatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum plnění")
+  public DateTime getVatdatedate() {
+    return vatdatedate;
+  }
+
+  public void setVatdatedate(DateTime vatdatedate) {
+    this.vatdatedate = vatdatedate;
   }
 
 
@@ -326,26 +362,26 @@ public class Vatclosingdocument   {
       return false;
     }
     Vatclosingdocument vatclosingdocument = (Vatclosingdocument) o;
-    return Objects.equals(this.displayName, vatclosingdocument.displayName) &&
-        Objects.equals(this.ID, vatclosingdocument.ID) &&
-        Objects.equals(this.classID, vatclosingdocument.classID) &&
-        Objects.equals(this.objVersion, vatclosingdocument.objVersion) &&
-        Objects.equals(this.parentID, vatclosingdocument.parentID) &&
-        Objects.equals(this.docQueueID, vatclosingdocument.docQueueID) &&
-        Objects.equals(this.ordNumber, vatclosingdocument.ordNumber) &&
-        Objects.equals(this.periodID, vatclosingdocument.periodID) &&
-        Objects.equals(this.documentType, vatclosingdocument.documentType) &&
-        Objects.equals(this.documentID, vatclosingdocument.documentID) &&
-        Objects.equals(this.isInVATDeclarationReport, vatclosingdocument.isInVATDeclarationReport) &&
-        Objects.equals(this.isInVATCheckReport, vatclosingdocument.isInVATCheckReport) &&
-        Objects.equals(this.documentStatus, vatclosingdocument.documentStatus) &&
-        Objects.equals(this.documentStatusAsText, vatclosingdocument.documentStatusAsText) &&
-        Objects.equals(this.vATDateDATE, vatclosingdocument.vATDateDATE);
+    return Objects.equals(this.displayname, vatclosingdocument.displayname) &&
+        Objects.equals(this.id, vatclosingdocument.id) &&
+        Objects.equals(this.classid, vatclosingdocument.classid) &&
+        Objects.equals(this.objversion, vatclosingdocument.objversion) &&
+        Objects.equals(this.parentId, vatclosingdocument.parentId) &&
+        Objects.equals(this.docqueueId, vatclosingdocument.docqueueId) &&
+        Objects.equals(this.ordnumber, vatclosingdocument.ordnumber) &&
+        Objects.equals(this.periodId, vatclosingdocument.periodId) &&
+        Objects.equals(this.documenttype, vatclosingdocument.documenttype) &&
+        Objects.equals(this.documentId, vatclosingdocument.documentId) &&
+        Objects.equals(this.isinvatdeclarationreport, vatclosingdocument.isinvatdeclarationreport) &&
+        Objects.equals(this.isinvatcheckreport, vatclosingdocument.isinvatcheckreport) &&
+        Objects.equals(this.documentstatus, vatclosingdocument.documentstatus) &&
+        Objects.equals(this.documentstatusastext, vatclosingdocument.documentstatusastext) &&
+        Objects.equals(this.vatdatedate, vatclosingdocument.vatdatedate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, docQueueID, ordNumber, periodID, documentType, documentID, isInVATDeclarationReport, isInVATCheckReport, documentStatus, documentStatusAsText, vATDateDATE);
+    return Objects.hash(displayname, id, classid, objversion, parentId, docqueueId, ordnumber, periodId, documenttype, documentId, isinvatdeclarationreport, isinvatcheckreport, documentstatus, documentstatusastext, vatdatedate);
   }
 
   @Override
@@ -353,21 +389,21 @@ public class Vatclosingdocument   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Vatclosingdocument {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    documentType: ").append(toIndentedString(documentType)).append("\n");
-    sb.append("    documentID: ").append(toIndentedString(documentID)).append("\n");
-    sb.append("    isInVATDeclarationReport: ").append(toIndentedString(isInVATDeclarationReport)).append("\n");
-    sb.append("    isInVATCheckReport: ").append(toIndentedString(isInVATCheckReport)).append("\n");
-    sb.append("    documentStatus: ").append(toIndentedString(documentStatus)).append("\n");
-    sb.append("    documentStatusAsText: ").append(toIndentedString(documentStatusAsText)).append("\n");
-    sb.append("    vATDateDATE: ").append(toIndentedString(vATDateDATE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    documenttype: ").append(toIndentedString(documenttype)).append("\n");
+    sb.append("    documentId: ").append(toIndentedString(documentId)).append("\n");
+    sb.append("    isinvatdeclarationreport: ").append(toIndentedString(isinvatdeclarationreport)).append("\n");
+    sb.append("    isinvatcheckreport: ").append(toIndentedString(isinvatcheckreport)).append("\n");
+    sb.append("    documentstatus: ").append(toIndentedString(documentstatus)).append("\n");
+    sb.append("    documentstatusastext: ").append(toIndentedString(documentstatusastext)).append("\n");
+    sb.append("    vatdatedate: ").append(toIndentedString(vatdatedate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

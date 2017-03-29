@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,66 +34,102 @@ import java.util.Objects;
 /**
  * Hipaysgovernmenttype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Hipaysgovernmenttype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("StartCode")
-  private String startCode = null;
+  @SerializedName("startcode")
+  private String startcode = null;
 
-  @SerializedName("EndCode")
-  private String endCode = null;
+  @SerializedName("endcode")
+  private String endcode = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Hipaysgovernmenttype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Hipaysgovernmenttype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Hipaysgovernmenttype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Hipaysgovernmenttype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Hipaysgovernmenttype code(String code) {
@@ -102,10 +138,10 @@ public class Hipaysgovernmenttype   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -120,10 +156,10 @@ public class Hipaysgovernmenttype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -132,40 +168,40 @@ public class Hipaysgovernmenttype   {
     this.name = name;
   }
 
-  public Hipaysgovernmenttype startCode(String startCode) {
-    this.startCode = startCode;
+  public Hipaysgovernmenttype startcode(String startcode) {
+    this.startcode = startcode;
     return this;
   }
 
    /**
-   * Kód začátku [persistentní položka]
-   * @return startCode
+   * kód začátku [persistentní položka]
+   * @return startcode
   **/
-  @ApiModelProperty(example = "null", value = "Kód začátku [persistentní položka]")
-  public String getStartCode() {
-    return startCode;
+  @ApiModelProperty(example = "null", value = "kód začátku [persistentní položka]")
+  public String getStartcode() {
+    return startcode;
   }
 
-  public void setStartCode(String startCode) {
-    this.startCode = startCode;
+  public void setStartcode(String startcode) {
+    this.startcode = startcode;
   }
 
-  public Hipaysgovernmenttype endCode(String endCode) {
-    this.endCode = endCode;
+  public Hipaysgovernmenttype endcode(String endcode) {
+    this.endcode = endcode;
     return this;
   }
 
    /**
-   * Kód ukončení [persistentní položka]
-   * @return endCode
+   * kód ukončení [persistentní položka]
+   * @return endcode
   **/
-  @ApiModelProperty(example = "null", value = "Kód ukončení [persistentní položka]")
-  public String getEndCode() {
-    return endCode;
+  @ApiModelProperty(example = "null", value = "kód ukončení [persistentní položka]")
+  public String getEndcode() {
+    return endcode;
   }
 
-  public void setEndCode(String endCode) {
-    this.endCode = endCode;
+  public void setEndcode(String endcode) {
+    this.endcode = endcode;
   }
 
 
@@ -178,19 +214,19 @@ public class Hipaysgovernmenttype   {
       return false;
     }
     Hipaysgovernmenttype hipaysgovernmenttype = (Hipaysgovernmenttype) o;
-    return Objects.equals(this.displayName, hipaysgovernmenttype.displayName) &&
-        Objects.equals(this.ID, hipaysgovernmenttype.ID) &&
-        Objects.equals(this.classID, hipaysgovernmenttype.classID) &&
-        Objects.equals(this.objVersion, hipaysgovernmenttype.objVersion) &&
+    return Objects.equals(this.displayname, hipaysgovernmenttype.displayname) &&
+        Objects.equals(this.id, hipaysgovernmenttype.id) &&
+        Objects.equals(this.classid, hipaysgovernmenttype.classid) &&
+        Objects.equals(this.objversion, hipaysgovernmenttype.objversion) &&
         Objects.equals(this.code, hipaysgovernmenttype.code) &&
         Objects.equals(this.name, hipaysgovernmenttype.name) &&
-        Objects.equals(this.startCode, hipaysgovernmenttype.startCode) &&
-        Objects.equals(this.endCode, hipaysgovernmenttype.endCode);
+        Objects.equals(this.startcode, hipaysgovernmenttype.startcode) &&
+        Objects.equals(this.endcode, hipaysgovernmenttype.endcode);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, code, name, startCode, endCode);
+    return Objects.hash(displayname, id, classid, objversion, code, name, startcode, endcode);
   }
 
   @Override
@@ -198,14 +234,14 @@ public class Hipaysgovernmenttype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Hipaysgovernmenttype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    startCode: ").append(toIndentedString(startCode)).append("\n");
-    sb.append("    endCode: ").append(toIndentedString(endCode)).append("\n");
+    sb.append("    startcode: ").append(toIndentedString(startcode)).append("\n");
+    sb.append("    endcode: ").append(toIndentedString(endcode)).append("\n");
     sb.append("}");
     return sb.toString();
   }

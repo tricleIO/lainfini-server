@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,309 +37,345 @@ import java.util.Objects;
 /**
  * Vatissueddepositinvoice
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Vatissueddepositinvoice   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Vatissueddepositinvoicerow> rows = new ArrayList<Vatissueddepositinvoicerow>();
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("DocUUID")
-  private String docUUID = null;
+  @SerializedName("docuuid")
+  private String docuuid = null;
 
-  @SerializedName("AccPresetDef_ID")
-  private String accPresetDefID = null;
+  @SerializedName("accpresetdef_id")
+  private String accpresetdefId = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("FirmOffice_ID")
-  private String firmOfficeID = null;
+  @SerializedName("firmoffice_id")
+  private String firmofficeId = null;
 
-  @SerializedName("Person_ID")
-  private String personID = null;
+  @SerializedName("person_id")
+  private String personId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("AccDate$DATE")
-  private DateTime accDateDATE = null;
+  @SerializedName("accdate$date")
+  private DateTime accdatedate = null;
 
-  @SerializedName("AccDocQueue_ID")
-  private String accDocQueueID = null;
+  @SerializedName("accdocqueue_id")
+  private String accdocqueueId = null;
 
-  @SerializedName("AccountingType")
-  private Integer accountingType = null;
+  @SerializedName("accountingtype")
+  private Integer accountingtype = null;
 
-  @SerializedName("IsAccounted")
-  private Boolean isAccounted = null;
+  @SerializedName("isaccounted")
+  private Boolean isaccounted = null;
 
-  @SerializedName("Dirty")
+  @SerializedName("dirty")
   private Boolean dirty = null;
 
-  @SerializedName("Country_ID")
-  private String countryID = null;
+  @SerializedName("country_id")
+  private String countryId = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("CurrRate")
-  private Double currRate = null;
+  @SerializedName("currrate")
+  private Double currrate = null;
 
-  @SerializedName("RefCurrRate")
-  private Double refCurrRate = null;
+  @SerializedName("refcurrrate")
+  private Double refcurrrate = null;
 
-  @SerializedName("Coef")
+  @SerializedName("coef")
   private Integer coef = null;
 
-  @SerializedName("LocalCoef")
-  private Integer localCoef = null;
+  @SerializedName("localcoef")
+  private Integer localcoef = null;
 
-  @SerializedName("Zone_ID")
-  private String zoneID = null;
+  @SerializedName("zone_id")
+  private String zoneId = null;
 
-  @SerializedName("LocalZone_ID")
-  private String localZoneID = null;
+  @SerializedName("localzone_id")
+  private String localzoneId = null;
 
-  @SerializedName("RefCurrency_ID")
-  private String refCurrencyID = null;
+  @SerializedName("refcurrency_id")
+  private String refcurrencyId = null;
 
-  @SerializedName("LocalRefCurrency_ID")
-  private String localRefCurrencyID = null;
+  @SerializedName("localrefcurrency_id")
+  private String localrefcurrencyId = null;
 
-  @SerializedName("CurrRateInfo")
-  private String currRateInfo = null;
+  @SerializedName("currrateinfo")
+  private String currrateinfo = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("LocalAmount")
-  private Double localAmount = null;
+  @SerializedName("localamount")
+  private Double localamount = null;
 
-  @SerializedName("PaidAmount")
-  private Double paidAmount = null;
+  @SerializedName("paidamount")
+  private Double paidamount = null;
 
-  @SerializedName("LocalPaidAmount")
-  private Double localPaidAmount = null;
+  @SerializedName("localpaidamount")
+  private Double localpaidamount = null;
 
-  @SerializedName("NotPaidAmount")
-  private Double notPaidAmount = null;
+  @SerializedName("notpaidamount")
+  private Double notpaidamount = null;
 
-  @SerializedName("LocalNotPaidAmount")
-  private Double localNotPaidAmount = null;
+  @SerializedName("localnotpaidamount")
+  private Double localnotpaidamount = null;
 
-  @SerializedName("ClosingPeriod_ID")
-  private String closingPeriodID = null;
+  @SerializedName("closingperiod_id")
+  private String closingperiodId = null;
 
-  @SerializedName("LastPaymentPeriod_ID")
-  private String lastPaymentPeriodID = null;
+  @SerializedName("lastpaymentperiod_id")
+  private String lastpaymentperiodId = null;
 
-  @SerializedName("IsProfit")
-  private Boolean isProfit = null;
+  @SerializedName("isprofit")
+  private Boolean isprofit = null;
 
-  @SerializedName("Address_ID")
-  private String addressID = null;
+  @SerializedName("address_id")
+  private String addressId = null;
 
-  @SerializedName("VATCountry_ID")
-  private String vATCountryID = null;
+  @SerializedName("vatcountry_id")
+  private String vatcountryId = null;
 
-  @SerializedName("AmountWithoutVAT")
-  private Double amountWithoutVAT = null;
+  @SerializedName("amountwithoutvat")
+  private Double amountwithoutvat = null;
 
-  @SerializedName("LocalAmountWithoutVAT")
-  private Double localAmountWithoutVAT = null;
+  @SerializedName("localamountwithoutvat")
+  private Double localamountwithoutvat = null;
 
-  @SerializedName("VATDate$DATE")
-  private DateTime vATDateDATE = null;
+  @SerializedName("vatdate$date")
+  private DateTime vatdatedate = null;
 
-  @SerializedName("VATDocument")
-  private Boolean vATDocument = null;
+  @SerializedName("vatdocument")
+  private Boolean vatdocument = null;
 
-  @SerializedName("PricesWithVAT")
-  private Boolean pricesWithVAT = null;
+  @SerializedName("priceswithvat")
+  private Boolean priceswithvat = null;
 
-  @SerializedName("TradeType")
-  private Integer tradeType = null;
+  @SerializedName("tradetype")
+  private Integer tradetype = null;
 
-  @SerializedName("TradeTypeDescription")
-  private String tradeTypeDescription = null;
+  @SerializedName("tradetypedescription")
+  private String tradetypedescription = null;
 
-  @SerializedName("VATRounding")
-  private Integer vATRounding = null;
+  @SerializedName("vatrounding")
+  private Integer vatrounding = null;
 
-  @SerializedName("VATFromAbovePrecision")
-  private Integer vATFromAbovePrecision = null;
+  @SerializedName("vatfromaboveprecision")
+  private Integer vatfromaboveprecision = null;
 
-  @SerializedName("RoundingAmount")
-  private Double roundingAmount = null;
+  @SerializedName("roundingamount")
+  private Double roundingamount = null;
 
-  @SerializedName("LocalRoundingAmount")
-  private Double localRoundingAmount = null;
+  @SerializedName("localroundingamount")
+  private Double localroundingamount = null;
 
-  @SerializedName("IsReverseChargeDeclared")
-  private Boolean isReverseChargeDeclared = null;
+  @SerializedName("isreversechargedeclared")
+  private Boolean isreversechargedeclared = null;
 
-  @SerializedName("SimplifiedVATDocument")
-  private Boolean simplifiedVATDocument = null;
+  @SerializedName("simplifiedvatdocument")
+  private Boolean simplifiedvatdocument = null;
 
-  @SerializedName("VATReportPreference")
-  private String vATReportPreference = null;
+  @SerializedName("vatreportpreference")
+  private String vatreportpreference = null;
 
-  @SerializedName("ExternalNumber")
-  private String externalNumber = null;
+  @SerializedName("externalnumber")
+  private String externalnumber = null;
 
-  @SerializedName("VATByPayment")
-  private Boolean vATByPayment = null;
+  @SerializedName("vatbypayment")
+  private Boolean vatbypayment = null;
 
-  @SerializedName("VATByPaymentEndDate$DATE")
-  private DateTime vATByPaymentEndDateDATE = null;
+  @SerializedName("vatbypaymentenddate$date")
+  private DateTime vatbypaymentenddatedate = null;
 
-  @SerializedName("UsedAmountWithoutVAT")
-  private Double usedAmountWithoutVAT = null;
+  @SerializedName("usedamountwithoutvat")
+  private Double usedamountwithoutvat = null;
 
-  @SerializedName("LocalUsedAmountWithoutVAT")
-  private Double localUsedAmountWithoutVAT = null;
+  @SerializedName("localusedamountwithoutvat")
+  private Double localusedamountwithoutvat = null;
 
-  @SerializedName("CreditAmount")
-  private Double creditAmount = null;
+  @SerializedName("creditamount")
+  private Double creditamount = null;
 
-  @SerializedName("LocalCreditAmount")
-  private Double localCreditAmount = null;
+  @SerializedName("localcreditamount")
+  private Double localcreditamount = null;
 
-  @SerializedName("CreditAmountWithoutVAT")
-  private Double creditAmountWithoutVAT = null;
+  @SerializedName("creditamountwithoutvat")
+  private Double creditamountwithoutvat = null;
 
-  @SerializedName("LocalCreditAmountWithoutVAT")
-  private Double localCreditAmountWithoutVAT = null;
+  @SerializedName("localcreditamountwithoutvat")
+  private Double localcreditamountwithoutvat = null;
 
-  @SerializedName("UsedAmount")
-  private Double usedAmount = null;
+  @SerializedName("usedamount")
+  private Double usedamount = null;
 
-  @SerializedName("LocalUsedAmount")
-  private Double localUsedAmount = null;
+  @SerializedName("localusedamount")
+  private Double localusedamount = null;
 
-  @SerializedName("PaidCreditAmount")
-  private Double paidCreditAmount = null;
+  @SerializedName("paidcreditamount")
+  private Double paidcreditamount = null;
 
-  @SerializedName("LocalPaidCreditAmount")
-  private Double localPaidCreditAmount = null;
+  @SerializedName("localpaidcreditamount")
+  private Double localpaidcreditamount = null;
 
-  @SerializedName("PaymentSourcePAmount")
-  private Double paymentSourcePAmount = null;
+  @SerializedName("paymentsourcepamount")
+  private Double paymentsourcepamount = null;
 
-  @SerializedName("RemainUsedAmount")
-  private Double remainUsedAmount = null;
+  @SerializedName("remainusedamount")
+  private Double remainusedamount = null;
 
-  @SerializedName("LocalRemainUsedAmount")
-  private Double localRemainUsedAmount = null;
+  @SerializedName("localremainusedamount")
+  private Double localremainusedamount = null;
 
-  @SerializedName("RemainUsedAmountWithoutVAT")
-  private Double remainUsedAmountWithoutVAT = null;
+  @SerializedName("remainusedamountwithoutvat")
+  private Double remainusedamountwithoutvat = null;
 
-  @SerializedName("LocalRemainUsedAmountWithoutVAT")
-  private Double localRemainUsedAmountWithoutVAT = null;
+  @SerializedName("localremainusedamountwithoutvat")
+  private Double localremainusedamountwithoutvat = null;
 
-  @SerializedName("CorrectionAmount")
-  private Double correctionAmount = null;
+  @SerializedName("correctionamount")
+  private Double correctionamount = null;
 
-  @SerializedName("LocalCorrectionAmount")
-  private Double localCorrectionAmount = null;
+  @SerializedName("localcorrectionamount")
+  private Double localcorrectionamount = null;
 
-  @SerializedName("CorrectionAmountWithoutVAT")
-  private Double correctionAmountWithoutVAT = null;
+  @SerializedName("correctionamountwithoutvat")
+  private Double correctionamountwithoutvat = null;
 
-  @SerializedName("LocalCorrectionAmountWithoutVAT")
-  private Double localCorrectionAmountWithoutVAT = null;
+  @SerializedName("localcorrectionamountwithoutvat")
+  private Double localcorrectionamountwithoutvat = null;
 
-  @SerializedName("CorrectedUsedAmount")
-  private Double correctedUsedAmount = null;
+  @SerializedName("correctedusedamount")
+  private Double correctedusedamount = null;
 
-  @SerializedName("LocalCorrectedUsedAmount")
-  private Double localCorrectedUsedAmount = null;
+  @SerializedName("localcorrectedusedamount")
+  private Double localcorrectedusedamount = null;
 
-  @SerializedName("Usable")
+  @SerializedName("usable")
   private Boolean usable = null;
 
-  @SerializedName("VATVoluntaryPaid")
-  private Boolean vATVoluntaryPaid = null;
+  @SerializedName("vatvoluntarypaid")
+  private Boolean vatvoluntarypaid = null;
 
-  @SerializedName("VATReportReference")
-  private String vATReportReference = null;
+  @SerializedName("vatreportreference")
+  private String vatreportreference = null;
 
-  @SerializedName("CreatedAt$DATE")
-  private DateTime createdAtDATE = null;
+  @SerializedName("createdat$date")
+  private DateTime createdatdate = null;
 
-  @SerializedName("CorrectedAt$DATE")
-  private DateTime correctedAtDATE = null;
+  @SerializedName("correctedat$date")
+  private DateTime correctedatdate = null;
+
+  public Vatissueddepositinvoice displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Vatissueddepositinvoice id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Vatissueddepositinvoice classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Vatissueddepositinvoice objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Vatissueddepositinvoice rows(List<Vatissueddepositinvoicerow> rows) {
@@ -353,10 +389,10 @@ public class Vatissueddepositinvoice   {
   }
 
    /**
-   * Řádky; kolekce BO Daňový zálohový list vydaný - řádek [nepersistentní položka]
+   * Řádky; kolekce bo daňový zálohový list vydaný - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Daňový zálohový list vydaný - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo daňový zálohový list vydaný - řádek [nepersistentní položka]")
   public List<Vatissueddepositinvoicerow> getRows() {
     return rows;
   }
@@ -365,238 +401,238 @@ public class Vatissueddepositinvoice   {
     this.rows = rows;
   }
 
-  public Vatissueddepositinvoice docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Vatissueddepositinvoice docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Vatissueddepositinvoice periodID(String periodID) {
-    this.periodID = periodID;
+  public Vatissueddepositinvoice periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Vatissueddepositinvoice ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Vatissueddepositinvoice ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Vatissueddepositinvoice docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Vatissueddepositinvoice docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Vatissueddepositinvoice createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Vatissueddepositinvoice createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Vatissueddepositinvoice correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Vatissueddepositinvoice correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Vatissueddepositinvoice newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Vatissueddepositinvoice newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Vatissueddepositinvoice newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Vatissueddepositinvoice newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Vatissueddepositinvoice docUUID(String docUUID) {
-    this.docUUID = docUUID;
+  public Vatissueddepositinvoice docuuid(String docuuid) {
+    this.docuuid = docuuid;
     return this;
   }
 
    /**
-   * GUID dokladu pro exporty [persistentní položka]
-   * @return docUUID
+   * guid dokladu pro exporty [persistentní položka]
+   * @return docuuid
   **/
-  @ApiModelProperty(example = "null", value = "GUID dokladu pro exporty [persistentní položka]")
-  public String getDocUUID() {
-    return docUUID;
+  @ApiModelProperty(example = "null", value = "guid dokladu pro exporty [persistentní položka]")
+  public String getDocuuid() {
+    return docuuid;
   }
 
-  public void setDocUUID(String docUUID) {
-    this.docUUID = docUUID;
+  public void setDocuuid(String docuuid) {
+    this.docuuid = docuuid;
   }
 
-  public Vatissueddepositinvoice accPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public Vatissueddepositinvoice accpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
     return this;
   }
 
    /**
-   * Předkontace; ID objektu Účetní předkontace [persistentní položka]
-   * @return accPresetDefID
+   * předkontace; id objektu Účetní předkontace [persistentní položka]
+   * @return accpresetdefId
   **/
-  @ApiModelProperty(example = "null", value = "Předkontace; ID objektu Účetní předkontace [persistentní položka]")
-  public String getAccPresetDefID() {
-    return accPresetDefID;
+  @ApiModelProperty(example = "null", value = "předkontace; id objektu Účetní předkontace [persistentní položka]")
+  public String getAccpresetdefId() {
+    return accpresetdefId;
   }
 
-  public void setAccPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public void setAccpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
   }
 
-  public Vatissueddepositinvoice firmID(String firmID) {
-    this.firmID = firmID;
+  public Vatissueddepositinvoice firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Vatissueddepositinvoice firmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public Vatissueddepositinvoice firmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
     return this;
   }
 
    /**
-   * Provozovna; ID objektu Provozovna [persistentní položka]
-   * @return firmOfficeID
+   * provozovna; id objektu provozovna [persistentní položka]
+   * @return firmofficeId
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna; ID objektu Provozovna [persistentní položka]")
-  public String getFirmOfficeID() {
-    return firmOfficeID;
+  @ApiModelProperty(example = "null", value = "provozovna; id objektu provozovna [persistentní položka]")
+  public String getFirmofficeId() {
+    return firmofficeId;
   }
 
-  public void setFirmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public void setFirmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
   }
 
-  public Vatissueddepositinvoice personID(String personID) {
-    this.personID = personID;
+  public Vatissueddepositinvoice personId(String personId) {
+    this.personId = personId;
     return this;
   }
 
    /**
-   * Osoba; ID objektu Osoba [persistentní položka]
-   * @return personID
+   * osoba; id objektu osoba [persistentní položka]
+   * @return personId
   **/
-  @ApiModelProperty(example = "null", value = "Osoba; ID objektu Osoba [persistentní položka]")
-  public String getPersonID() {
-    return personID;
+  @ApiModelProperty(example = "null", value = "osoba; id objektu osoba [persistentní položka]")
+  public String getPersonId() {
+    return personId;
   }
 
-  public void setPersonID(String personID) {
-    this.personID = personID;
+  public void setPersonId(String personId) {
+    this.personId = personId;
   }
 
   public Vatissueddepositinvoice description(String description) {
@@ -605,10 +641,10 @@ public class Vatissueddepositinvoice   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -617,76 +653,76 @@ public class Vatissueddepositinvoice   {
     this.description = description;
   }
 
-  public Vatissueddepositinvoice accDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public Vatissueddepositinvoice accdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
     return this;
   }
 
    /**
-   * Datum účt. [persistentní položka]
-   * @return accDateDATE
+   * datum účt. [persistentní položka]
+   * @return accdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum účt. [persistentní položka]")
-  public DateTime getAccDateDATE() {
-    return accDateDATE;
+  @ApiModelProperty(example = "null", value = "datum účt. [persistentní položka]")
+  public DateTime getAccdatedate() {
+    return accdatedate;
   }
 
-  public void setAccDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public void setAccdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
   }
 
-  public Vatissueddepositinvoice accDocQueueID(String accDocQueueID) {
-    this.accDocQueueID = accDocQueueID;
+  public Vatissueddepositinvoice accdocqueueId(String accdocqueueId) {
+    this.accdocqueueId = accdocqueueId;
     return this;
   }
 
    /**
-   * Účetní řada; ID objektu Účetní řada dokladů [persistentní položka]
-   * @return accDocQueueID
+   * Účetní řada; id objektu Účetní řada dokladů [persistentní položka]
+   * @return accdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Účetní řada; ID objektu Účetní řada dokladů [persistentní položka]")
-  public String getAccDocQueueID() {
-    return accDocQueueID;
+  @ApiModelProperty(example = "null", value = "Účetní řada; id objektu Účetní řada dokladů [persistentní položka]")
+  public String getAccdocqueueId() {
+    return accdocqueueId;
   }
 
-  public void setAccDocQueueID(String accDocQueueID) {
-    this.accDocQueueID = accDocQueueID;
+  public void setAccdocqueueId(String accdocqueueId) {
+    this.accdocqueueId = accdocqueueId;
   }
 
-  public Vatissueddepositinvoice accountingType(Integer accountingType) {
-    this.accountingType = accountingType;
+  public Vatissueddepositinvoice accountingtype(Integer accountingtype) {
+    this.accountingtype = accountingtype;
     return this;
   }
 
    /**
-   * Jak účtovat
-   * @return accountingType
+   * jak účtovat
+   * @return accountingtype
   **/
-  @ApiModelProperty(example = "null", value = "Jak účtovat")
-  public Integer getAccountingType() {
-    return accountingType;
+  @ApiModelProperty(example = "null", value = "jak účtovat")
+  public Integer getAccountingtype() {
+    return accountingtype;
   }
 
-  public void setAccountingType(Integer accountingType) {
-    this.accountingType = accountingType;
+  public void setAccountingtype(Integer accountingtype) {
+    this.accountingtype = accountingtype;
   }
 
-  public Vatissueddepositinvoice isAccounted(Boolean isAccounted) {
-    this.isAccounted = isAccounted;
+  public Vatissueddepositinvoice isaccounted(Boolean isaccounted) {
+    this.isaccounted = isaccounted;
     return this;
   }
 
    /**
    * Účtováno
-   * @return isAccounted
+   * @return isaccounted
   **/
   @ApiModelProperty(example = "null", value = "Účtováno")
-  public Boolean getIsAccounted() {
-    return isAccounted;
+  public Boolean getIsaccounted() {
+    return isaccounted;
   }
 
-  public void setIsAccounted(Boolean isAccounted) {
-    this.isAccounted = isAccounted;
+  public void setIsaccounted(Boolean isaccounted) {
+    this.isaccounted = isaccounted;
   }
 
   public Vatissueddepositinvoice dirty(Boolean dirty) {
@@ -695,10 +731,10 @@ public class Vatissueddepositinvoice   {
   }
 
    /**
-   * Zakázané přepočítání [persistentní položka]
+   * zakázané přepočítání [persistentní položka]
    * @return dirty
   **/
-  @ApiModelProperty(example = "null", value = "Zakázané přepočítání [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "zakázané přepočítání [persistentní položka]")
   public Boolean getDirty() {
     return dirty;
   }
@@ -707,76 +743,76 @@ public class Vatissueddepositinvoice   {
     this.dirty = dirty;
   }
 
-  public Vatissueddepositinvoice countryID(String countryID) {
-    this.countryID = countryID;
+  public Vatissueddepositinvoice countryId(String countryId) {
+    this.countryId = countryId;
     return this;
   }
 
    /**
-   * Země; ID objektu Země [persistentní položka]
-   * @return countryID
+   * země; id objektu země [persistentní položka]
+   * @return countryId
   **/
-  @ApiModelProperty(example = "null", value = "Země; ID objektu Země [persistentní položka]")
-  public String getCountryID() {
-    return countryID;
+  @ApiModelProperty(example = "null", value = "země; id objektu země [persistentní položka]")
+  public String getCountryId() {
+    return countryId;
   }
 
-  public void setCountryID(String countryID) {
-    this.countryID = countryID;
+  public void setCountryId(String countryId) {
+    this.countryId = countryId;
   }
 
-  public Vatissueddepositinvoice currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Vatissueddepositinvoice currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
-  public Vatissueddepositinvoice currRate(Double currRate) {
-    this.currRate = currRate;
+  public Vatissueddepositinvoice currrate(Double currrate) {
+    this.currrate = currrate;
     return this;
   }
 
    /**
-   * Kurz měny [persistentní položka]
-   * @return currRate
+   * kurz měny [persistentní položka]
+   * @return currrate
   **/
-  @ApiModelProperty(example = "null", value = "Kurz měny [persistentní položka]")
-  public Double getCurrRate() {
-    return currRate;
+  @ApiModelProperty(example = "null", value = "kurz měny [persistentní položka]")
+  public Double getCurrrate() {
+    return currrate;
   }
 
-  public void setCurrRate(Double currRate) {
-    this.currRate = currRate;
+  public void setCurrrate(Double currrate) {
+    this.currrate = currrate;
   }
 
-  public Vatissueddepositinvoice refCurrRate(Double refCurrRate) {
-    this.refCurrRate = refCurrRate;
+  public Vatissueddepositinvoice refcurrrate(Double refcurrrate) {
+    this.refcurrrate = refcurrrate;
     return this;
   }
 
    /**
-   * Kurz vztažný [persistentní položka]
-   * @return refCurrRate
+   * kurz vztažný [persistentní položka]
+   * @return refcurrrate
   **/
-  @ApiModelProperty(example = "null", value = "Kurz vztažný [persistentní položka]")
-  public Double getRefCurrRate() {
-    return refCurrRate;
+  @ApiModelProperty(example = "null", value = "kurz vztažný [persistentní položka]")
+  public Double getRefcurrrate() {
+    return refcurrrate;
   }
 
-  public void setRefCurrRate(Double refCurrRate) {
-    this.refCurrRate = refCurrRate;
+  public void setRefcurrrate(Double refcurrrate) {
+    this.refcurrrate = refcurrrate;
   }
 
   public Vatissueddepositinvoice coef(Integer coef) {
@@ -785,10 +821,10 @@ public class Vatissueddepositinvoice   {
   }
 
    /**
-   * Koeficient [persistentní položka]
+   * koeficient [persistentní položka]
    * @return coef
   **/
-  @ApiModelProperty(example = "null", value = "Koeficient [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "koeficient [persistentní položka]")
   public Integer getCoef() {
     return coef;
   }
@@ -797,85 +833,112 @@ public class Vatissueddepositinvoice   {
     this.coef = coef;
   }
 
-  public Vatissueddepositinvoice localCoef(Integer localCoef) {
-    this.localCoef = localCoef;
+  public Vatissueddepositinvoice localcoef(Integer localcoef) {
+    this.localcoef = localcoef;
     return this;
   }
 
    /**
-   * Lokální koeficient [persistentní položka]
-   * @return localCoef
+   * lokální koeficient [persistentní položka]
+   * @return localcoef
   **/
-  @ApiModelProperty(example = "null", value = "Lokální koeficient [persistentní položka]")
-  public Integer getLocalCoef() {
-    return localCoef;
+  @ApiModelProperty(example = "null", value = "lokální koeficient [persistentní položka]")
+  public Integer getLocalcoef() {
+    return localcoef;
   }
 
-  public void setLocalCoef(Integer localCoef) {
-    this.localCoef = localCoef;
+  public void setLocalcoef(Integer localcoef) {
+    this.localcoef = localcoef;
   }
 
-  public Vatissueddepositinvoice zoneID(String zoneID) {
-    this.zoneID = zoneID;
+  public Vatissueddepositinvoice zoneId(String zoneId) {
+    this.zoneId = zoneId;
     return this;
   }
 
    /**
-   * Zóna; ID objektu Měna [persistentní položka]
-   * @return zoneID
+   * zóna; id objektu měna [persistentní položka]
+   * @return zoneId
   **/
-  @ApiModelProperty(example = "null", value = "Zóna; ID objektu Měna [persistentní položka]")
-  public String getZoneID() {
-    return zoneID;
+  @ApiModelProperty(example = "null", value = "zóna; id objektu měna [persistentní položka]")
+  public String getZoneId() {
+    return zoneId;
   }
 
-  public void setZoneID(String zoneID) {
-    this.zoneID = zoneID;
+  public void setZoneId(String zoneId) {
+    this.zoneId = zoneId;
   }
 
-  public Vatissueddepositinvoice localZoneID(String localZoneID) {
-    this.localZoneID = localZoneID;
+  public Vatissueddepositinvoice localzoneId(String localzoneId) {
+    this.localzoneId = localzoneId;
     return this;
   }
 
    /**
-   * Lokální zóna; ID objektu Měna [persistentní položka]
-   * @return localZoneID
+   * lokální zóna; id objektu měna [persistentní položka]
+   * @return localzoneId
   **/
-  @ApiModelProperty(example = "null", value = "Lokální zóna; ID objektu Měna [persistentní položka]")
-  public String getLocalZoneID() {
-    return localZoneID;
+  @ApiModelProperty(example = "null", value = "lokální zóna; id objektu měna [persistentní položka]")
+  public String getLocalzoneId() {
+    return localzoneId;
   }
 
-  public void setLocalZoneID(String localZoneID) {
-    this.localZoneID = localZoneID;
+  public void setLocalzoneId(String localzoneId) {
+    this.localzoneId = localzoneId;
   }
 
-   /**
-   * Ref.měna; ID objektu Měna
-   * @return refCurrencyID
-  **/
-  @ApiModelProperty(example = "null", value = "Ref.měna; ID objektu Měna")
-  public String getRefCurrencyID() {
-    return refCurrencyID;
+  public Vatissueddepositinvoice refcurrencyId(String refcurrencyId) {
+    this.refcurrencyId = refcurrencyId;
+    return this;
   }
 
    /**
-   * Lok.ref.měna; ID objektu Měna
-   * @return localRefCurrencyID
+   * ref.měna; id objektu měna
+   * @return refcurrencyId
   **/
-  @ApiModelProperty(example = "null", value = "Lok.ref.měna; ID objektu Měna")
-  public String getLocalRefCurrencyID() {
-    return localRefCurrencyID;
+  @ApiModelProperty(example = "null", value = "ref.měna; id objektu měna")
+  public String getRefcurrencyId() {
+    return refcurrencyId;
+  }
+
+  public void setRefcurrencyId(String refcurrencyId) {
+    this.refcurrencyId = refcurrencyId;
+  }
+
+  public Vatissueddepositinvoice localrefcurrencyId(String localrefcurrencyId) {
+    this.localrefcurrencyId = localrefcurrencyId;
+    return this;
   }
 
    /**
-   * Kurz měny textově
-   * @return currRateInfo
+   * lok.ref.měna; id objektu měna
+   * @return localrefcurrencyId
   **/
-  @ApiModelProperty(example = "null", value = "Kurz měny textově")
-  public String getCurrRateInfo() {
-    return currRateInfo;
+  @ApiModelProperty(example = "null", value = "lok.ref.měna; id objektu měna")
+  public String getLocalrefcurrencyId() {
+    return localrefcurrencyId;
+  }
+
+  public void setLocalrefcurrencyId(String localrefcurrencyId) {
+    this.localrefcurrencyId = localrefcurrencyId;
+  }
+
+  public Vatissueddepositinvoice currrateinfo(String currrateinfo) {
+    this.currrateinfo = currrateinfo;
+    return this;
+  }
+
+   /**
+   * kurz měny textově
+   * @return currrateinfo
+  **/
+  @ApiModelProperty(example = "null", value = "kurz měny textově")
+  public String getCurrrateinfo() {
+    return currrateinfo;
+  }
+
+  public void setCurrrateinfo(String currrateinfo) {
+    this.currrateinfo = currrateinfo;
   }
 
   public Vatissueddepositinvoice amount(Double amount) {
@@ -884,10 +947,10 @@ public class Vatissueddepositinvoice   {
   }
 
    /**
-   * Celkem [persistentní položka]
+   * celkem [persistentní položka]
    * @return amount
   **/
-  @ApiModelProperty(example = "null", value = "Celkem [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "celkem [persistentní položka]")
   public Double getAmount() {
     return amount;
   }
@@ -896,697 +959,958 @@ public class Vatissueddepositinvoice   {
     this.amount = amount;
   }
 
-  public Vatissueddepositinvoice localAmount(Double localAmount) {
-    this.localAmount = localAmount;
+  public Vatissueddepositinvoice localamount(Double localamount) {
+    this.localamount = localamount;
     return this;
   }
 
    /**
-   * Celkem lokálně [persistentní položka]
-   * @return localAmount
+   * celkem lokálně [persistentní položka]
+   * @return localamount
   **/
-  @ApiModelProperty(example = "null", value = "Celkem lokálně [persistentní položka]")
-  public Double getLocalAmount() {
-    return localAmount;
+  @ApiModelProperty(example = "null", value = "celkem lokálně [persistentní položka]")
+  public Double getLocalamount() {
+    return localamount;
   }
 
-  public void setLocalAmount(Double localAmount) {
-    this.localAmount = localAmount;
+  public void setLocalamount(Double localamount) {
+    this.localamount = localamount;
   }
 
-   /**
-   * Celkem zapl. [persistentní položka]
-   * @return paidAmount
-  **/
-  @ApiModelProperty(example = "null", value = "Celkem zapl. [persistentní položka]")
-  public Double getPaidAmount() {
-    return paidAmount;
-  }
-
-   /**
-   * Zaplaceno lokálně [persistentní položka]
-   * @return localPaidAmount
-  **/
-  @ApiModelProperty(example = "null", value = "Zaplaceno lokálně [persistentní položka]")
-  public Double getLocalPaidAmount() {
-    return localPaidAmount;
-  }
-
-  public Vatissueddepositinvoice notPaidAmount(Double notPaidAmount) {
-    this.notPaidAmount = notPaidAmount;
+  public Vatissueddepositinvoice paidamount(Double paidamount) {
+    this.paidamount = paidamount;
     return this;
   }
 
    /**
-   * Nezaplaceno
-   * @return notPaidAmount
+   * celkem zapl. [persistentní položka]
+   * @return paidamount
   **/
-  @ApiModelProperty(example = "null", value = "Nezaplaceno")
-  public Double getNotPaidAmount() {
-    return notPaidAmount;
+  @ApiModelProperty(example = "null", value = "celkem zapl. [persistentní položka]")
+  public Double getPaidamount() {
+    return paidamount;
   }
 
-  public void setNotPaidAmount(Double notPaidAmount) {
-    this.notPaidAmount = notPaidAmount;
+  public void setPaidamount(Double paidamount) {
+    this.paidamount = paidamount;
   }
 
-  public Vatissueddepositinvoice localNotPaidAmount(Double localNotPaidAmount) {
-    this.localNotPaidAmount = localNotPaidAmount;
+  public Vatissueddepositinvoice localpaidamount(Double localpaidamount) {
+    this.localpaidamount = localpaidamount;
     return this;
   }
 
    /**
-   * Nezaplaceno lokálně
-   * @return localNotPaidAmount
+   * zaplaceno lokálně [persistentní položka]
+   * @return localpaidamount
   **/
-  @ApiModelProperty(example = "null", value = "Nezaplaceno lokálně")
-  public Double getLocalNotPaidAmount() {
-    return localNotPaidAmount;
+  @ApiModelProperty(example = "null", value = "zaplaceno lokálně [persistentní položka]")
+  public Double getLocalpaidamount() {
+    return localpaidamount;
   }
 
-  public void setLocalNotPaidAmount(Double localNotPaidAmount) {
-    this.localNotPaidAmount = localNotPaidAmount;
+  public void setLocalpaidamount(Double localpaidamount) {
+    this.localpaidamount = localpaidamount;
   }
 
-   /**
-   * Období uzávěrky; ID objektu Období [persistentní položka]
-   * @return closingPeriodID
-  **/
-  @ApiModelProperty(example = "null", value = "Období uzávěrky; ID objektu Období [persistentní položka]")
-  public String getClosingPeriodID() {
-    return closingPeriodID;
-  }
-
-   /**
-   * Období posl. platby; ID objektu Období [persistentní položka]
-   * @return lastPaymentPeriodID
-  **/
-  @ApiModelProperty(example = "null", value = "Období posl. platby; ID objektu Období [persistentní položka]")
-  public String getLastPaymentPeriodID() {
-    return lastPaymentPeriodID;
-  }
-
-  public Vatissueddepositinvoice isProfit(Boolean isProfit) {
-    this.isProfit = isProfit;
+  public Vatissueddepositinvoice notpaidamount(Double notpaidamount) {
+    this.notpaidamount = notpaidamount;
     return this;
   }
 
    /**
-   * Výnos
-   * @return isProfit
+   * nezaplaceno
+   * @return notpaidamount
   **/
-  @ApiModelProperty(example = "null", value = "Výnos")
-  public Boolean getIsProfit() {
-    return isProfit;
+  @ApiModelProperty(example = "null", value = "nezaplaceno")
+  public Double getNotpaidamount() {
+    return notpaidamount;
   }
 
-  public void setIsProfit(Boolean isProfit) {
-    this.isProfit = isProfit;
+  public void setNotpaidamount(Double notpaidamount) {
+    this.notpaidamount = notpaidamount;
   }
 
-  public Vatissueddepositinvoice addressID(String addressID) {
-    this.addressID = addressID;
+  public Vatissueddepositinvoice localnotpaidamount(Double localnotpaidamount) {
+    this.localnotpaidamount = localnotpaidamount;
     return this;
   }
 
    /**
-   * Vlastní adresa; ID objektu Adresa [persistentní položka]
-   * @return addressID
+   * nezaplaceno lokálně
+   * @return localnotpaidamount
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní adresa; ID objektu Adresa [persistentní položka]")
-  public String getAddressID() {
-    return addressID;
+  @ApiModelProperty(example = "null", value = "nezaplaceno lokálně")
+  public Double getLocalnotpaidamount() {
+    return localnotpaidamount;
   }
 
-  public void setAddressID(String addressID) {
-    this.addressID = addressID;
+  public void setLocalnotpaidamount(Double localnotpaidamount) {
+    this.localnotpaidamount = localnotpaidamount;
   }
 
-  public Vatissueddepositinvoice vATCountryID(String vATCountryID) {
-    this.vATCountryID = vATCountryID;
+  public Vatissueddepositinvoice closingperiodId(String closingperiodId) {
+    this.closingperiodId = closingperiodId;
     return this;
   }
 
    /**
-   * Země přiznání DPH; ID objektu Země [persistentní položka]
-   * @return vATCountryID
+   * období uzávěrky; id objektu období [persistentní položka]
+   * @return closingperiodId
   **/
-  @ApiModelProperty(example = "null", value = "Země přiznání DPH; ID objektu Země [persistentní položka]")
-  public String getVATCountryID() {
-    return vATCountryID;
+  @ApiModelProperty(example = "null", value = "období uzávěrky; id objektu období [persistentní položka]")
+  public String getClosingperiodId() {
+    return closingperiodId;
   }
 
-  public void setVATCountryID(String vATCountryID) {
-    this.vATCountryID = vATCountryID;
+  public void setClosingperiodId(String closingperiodId) {
+    this.closingperiodId = closingperiodId;
   }
 
-   /**
-   * Celkem bez [persistentní položka]
-   * @return amountWithoutVAT
-  **/
-  @ApiModelProperty(example = "null", value = "Celkem bez [persistentní položka]")
-  public Double getAmountWithoutVAT() {
-    return amountWithoutVAT;
-  }
-
-   /**
-   * Celkem lokálně bez daně [persistentní položka]
-   * @return localAmountWithoutVAT
-  **/
-  @ApiModelProperty(example = "null", value = "Celkem lokálně bez daně [persistentní položka]")
-  public Double getLocalAmountWithoutVAT() {
-    return localAmountWithoutVAT;
-  }
-
-  public Vatissueddepositinvoice vATDateDATE(DateTime vATDateDATE) {
-    this.vATDateDATE = vATDateDATE;
+  public Vatissueddepositinvoice lastpaymentperiodId(String lastpaymentperiodId) {
+    this.lastpaymentperiodId = lastpaymentperiodId;
     return this;
   }
 
    /**
-   * Datum přijetí úplaty. [persistentní položka]
-   * @return vATDateDATE
+   * období posl. platby; id objektu období [persistentní položka]
+   * @return lastpaymentperiodId
   **/
-  @ApiModelProperty(example = "null", value = "Datum přijetí úplaty. [persistentní položka]")
-  public DateTime getVATDateDATE() {
-    return vATDateDATE;
+  @ApiModelProperty(example = "null", value = "období posl. platby; id objektu období [persistentní položka]")
+  public String getLastpaymentperiodId() {
+    return lastpaymentperiodId;
   }
 
-  public void setVATDateDATE(DateTime vATDateDATE) {
-    this.vATDateDATE = vATDateDATE;
+  public void setLastpaymentperiodId(String lastpaymentperiodId) {
+    this.lastpaymentperiodId = lastpaymentperiodId;
   }
 
-  public Vatissueddepositinvoice vATDocument(Boolean vATDocument) {
-    this.vATDocument = vATDocument;
+  public Vatissueddepositinvoice isprofit(Boolean isprofit) {
+    this.isprofit = isprofit;
     return this;
   }
 
    /**
-   * DPH doklad
-   * @return vATDocument
+   * výnos
+   * @return isprofit
   **/
-  @ApiModelProperty(example = "null", value = "DPH doklad")
-  public Boolean getVATDocument() {
-    return vATDocument;
+  @ApiModelProperty(example = "null", value = "výnos")
+  public Boolean getIsprofit() {
+    return isprofit;
   }
 
-  public void setVATDocument(Boolean vATDocument) {
-    this.vATDocument = vATDocument;
+  public void setIsprofit(Boolean isprofit) {
+    this.isprofit = isprofit;
   }
 
-  public Vatissueddepositinvoice pricesWithVAT(Boolean pricesWithVAT) {
-    this.pricesWithVAT = pricesWithVAT;
+  public Vatissueddepositinvoice addressId(String addressId) {
+    this.addressId = addressId;
     return this;
   }
 
    /**
-   * Ceny s daní [persistentní položka]
-   * @return pricesWithVAT
+   * vlastní adresa; id objektu adresa [persistentní položka]
+   * @return addressId
   **/
-  @ApiModelProperty(example = "null", value = "Ceny s daní [persistentní položka]")
-  public Boolean getPricesWithVAT() {
-    return pricesWithVAT;
+  @ApiModelProperty(example = "null", value = "vlastní adresa; id objektu adresa [persistentní položka]")
+  public String getAddressId() {
+    return addressId;
   }
 
-  public void setPricesWithVAT(Boolean pricesWithVAT) {
-    this.pricesWithVAT = pricesWithVAT;
+  public void setAddressId(String addressId) {
+    this.addressId = addressId;
   }
 
-  public Vatissueddepositinvoice tradeType(Integer tradeType) {
-    this.tradeType = tradeType;
+  public Vatissueddepositinvoice vatcountryId(String vatcountryId) {
+    this.vatcountryId = vatcountryId;
     return this;
   }
 
    /**
-   * Typ obchodu [persistentní položka]
-   * @return tradeType
+   * země přiznání dph; id objektu země [persistentní položka]
+   * @return vatcountryId
   **/
-  @ApiModelProperty(example = "null", value = "Typ obchodu [persistentní položka]")
-  public Integer getTradeType() {
-    return tradeType;
+  @ApiModelProperty(example = "null", value = "země přiznání dph; id objektu země [persistentní položka]")
+  public String getVatcountryId() {
+    return vatcountryId;
   }
 
-  public void setTradeType(Integer tradeType) {
-    this.tradeType = tradeType;
+  public void setVatcountryId(String vatcountryId) {
+    this.vatcountryId = vatcountryId;
   }
 
-   /**
-   * Popis typu obchodu
-   * @return tradeTypeDescription
-  **/
-  @ApiModelProperty(example = "null", value = "Popis typu obchodu")
-  public String getTradeTypeDescription() {
-    return tradeTypeDescription;
-  }
-
-  public Vatissueddepositinvoice vATRounding(Integer vATRounding) {
-    this.vATRounding = vATRounding;
+  public Vatissueddepositinvoice amountwithoutvat(Double amountwithoutvat) {
+    this.amountwithoutvat = amountwithoutvat;
     return this;
   }
 
    /**
-   * Zaokrouhlení DPH [persistentní položka]
-   * @return vATRounding
+   * celkem bez [persistentní položka]
+   * @return amountwithoutvat
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlení DPH [persistentní položka]")
-  public Integer getVATRounding() {
-    return vATRounding;
+  @ApiModelProperty(example = "null", value = "celkem bez [persistentní položka]")
+  public Double getAmountwithoutvat() {
+    return amountwithoutvat;
   }
 
-  public void setVATRounding(Integer vATRounding) {
-    this.vATRounding = vATRounding;
+  public void setAmountwithoutvat(Double amountwithoutvat) {
+    this.amountwithoutvat = amountwithoutvat;
   }
 
-  public Vatissueddepositinvoice vATFromAbovePrecision(Integer vATFromAbovePrecision) {
-    this.vATFromAbovePrecision = vATFromAbovePrecision;
+  public Vatissueddepositinvoice localamountwithoutvat(Double localamountwithoutvat) {
+    this.localamountwithoutvat = localamountwithoutvat;
     return this;
   }
 
    /**
-   * Přesnost zdanění zaokrouhlení [persistentní položka]
-   * @return vATFromAbovePrecision
+   * celkem lokálně bez daně [persistentní položka]
+   * @return localamountwithoutvat
   **/
-  @ApiModelProperty(example = "null", value = "Přesnost zdanění zaokrouhlení [persistentní položka]")
-  public Integer getVATFromAbovePrecision() {
-    return vATFromAbovePrecision;
+  @ApiModelProperty(example = "null", value = "celkem lokálně bez daně [persistentní položka]")
+  public Double getLocalamountwithoutvat() {
+    return localamountwithoutvat;
   }
 
-  public void setVATFromAbovePrecision(Integer vATFromAbovePrecision) {
-    this.vATFromAbovePrecision = vATFromAbovePrecision;
+  public void setLocalamountwithoutvat(Double localamountwithoutvat) {
+    this.localamountwithoutvat = localamountwithoutvat;
   }
 
-  public Vatissueddepositinvoice roundingAmount(Double roundingAmount) {
-    this.roundingAmount = roundingAmount;
+  public Vatissueddepositinvoice vatdatedate(DateTime vatdatedate) {
+    this.vatdatedate = vatdatedate;
     return this;
   }
 
    /**
-   * Zaok.v nulové sazbě [persistentní položka]
-   * @return roundingAmount
+   * datum přijetí úplaty. [persistentní položka]
+   * @return vatdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Zaok.v nulové sazbě [persistentní položka]")
-  public Double getRoundingAmount() {
-    return roundingAmount;
+  @ApiModelProperty(example = "null", value = "datum přijetí úplaty. [persistentní položka]")
+  public DateTime getVatdatedate() {
+    return vatdatedate;
   }
 
-  public void setRoundingAmount(Double roundingAmount) {
-    this.roundingAmount = roundingAmount;
+  public void setVatdatedate(DateTime vatdatedate) {
+    this.vatdatedate = vatdatedate;
   }
 
-  public Vatissueddepositinvoice localRoundingAmount(Double localRoundingAmount) {
-    this.localRoundingAmount = localRoundingAmount;
+  public Vatissueddepositinvoice vatdocument(Boolean vatdocument) {
+    this.vatdocument = vatdocument;
     return this;
   }
 
    /**
-   * Zaok.v nulové sazbě lokálně [persistentní položka]
-   * @return localRoundingAmount
+   * dph doklad
+   * @return vatdocument
   **/
-  @ApiModelProperty(example = "null", value = "Zaok.v nulové sazbě lokálně [persistentní položka]")
-  public Double getLocalRoundingAmount() {
-    return localRoundingAmount;
+  @ApiModelProperty(example = "null", value = "dph doklad")
+  public Boolean getVatdocument() {
+    return vatdocument;
   }
 
-  public void setLocalRoundingAmount(Double localRoundingAmount) {
-    this.localRoundingAmount = localRoundingAmount;
+  public void setVatdocument(Boolean vatdocument) {
+    this.vatdocument = vatdocument;
   }
 
-  public Vatissueddepositinvoice isReverseChargeDeclared(Boolean isReverseChargeDeclared) {
-    this.isReverseChargeDeclared = isReverseChargeDeclared;
+  public Vatissueddepositinvoice priceswithvat(Boolean priceswithvat) {
+    this.priceswithvat = priceswithvat;
     return this;
   }
 
    /**
-   * Režim Přenesení daňové povinnosti [persistentní položka]
-   * @return isReverseChargeDeclared
+   * ceny s daní [persistentní položka]
+   * @return priceswithvat
   **/
-  @ApiModelProperty(example = "null", value = "Režim Přenesení daňové povinnosti [persistentní položka]")
-  public Boolean getIsReverseChargeDeclared() {
-    return isReverseChargeDeclared;
+  @ApiModelProperty(example = "null", value = "ceny s daní [persistentní položka]")
+  public Boolean getPriceswithvat() {
+    return priceswithvat;
   }
 
-  public void setIsReverseChargeDeclared(Boolean isReverseChargeDeclared) {
-    this.isReverseChargeDeclared = isReverseChargeDeclared;
+  public void setPriceswithvat(Boolean priceswithvat) {
+    this.priceswithvat = priceswithvat;
   }
 
-  public Vatissueddepositinvoice simplifiedVATDocument(Boolean simplifiedVATDocument) {
-    this.simplifiedVATDocument = simplifiedVATDocument;
+  public Vatissueddepositinvoice tradetype(Integer tradetype) {
+    this.tradetype = tradetype;
     return this;
   }
 
    /**
-   * Zjednodušený daňový doklad [persistentní položka]
-   * @return simplifiedVATDocument
+   * typ obchodu [persistentní položka]
+   * @return tradetype
   **/
-  @ApiModelProperty(example = "null", value = "Zjednodušený daňový doklad [persistentní položka]")
-  public Boolean getSimplifiedVATDocument() {
-    return simplifiedVATDocument;
+  @ApiModelProperty(example = "null", value = "typ obchodu [persistentní položka]")
+  public Integer getTradetype() {
+    return tradetype;
   }
 
-  public void setSimplifiedVATDocument(Boolean simplifiedVATDocument) {
-    this.simplifiedVATDocument = simplifiedVATDocument;
+  public void setTradetype(Integer tradetype) {
+    this.tradetype = tradetype;
   }
 
-  public Vatissueddepositinvoice vATReportPreference(String vATReportPreference) {
-    this.vATReportPreference = vATReportPreference;
+  public Vatissueddepositinvoice tradetypedescription(String tradetypedescription) {
+    this.tradetypedescription = tradetypedescription;
     return this;
   }
 
    /**
-   * Preference výkazu DPH [persistentní položka]
-   * @return vATReportPreference
+   * popis typu obchodu
+   * @return tradetypedescription
   **/
-  @ApiModelProperty(example = "null", value = "Preference výkazu DPH [persistentní položka]")
-  public String getVATReportPreference() {
-    return vATReportPreference;
+  @ApiModelProperty(example = "null", value = "popis typu obchodu")
+  public String getTradetypedescription() {
+    return tradetypedescription;
   }
 
-  public void setVATReportPreference(String vATReportPreference) {
-    this.vATReportPreference = vATReportPreference;
+  public void setTradetypedescription(String tradetypedescription) {
+    this.tradetypedescription = tradetypedescription;
   }
 
-  public Vatissueddepositinvoice externalNumber(String externalNumber) {
-    this.externalNumber = externalNumber;
+  public Vatissueddepositinvoice vatrounding(Integer vatrounding) {
+    this.vatrounding = vatrounding;
     return this;
   }
 
    /**
-   * Doplňkové číslo [persistentní položka]
-   * @return externalNumber
+   * zaokrouhlení dph [persistentní položka]
+   * @return vatrounding
   **/
-  @ApiModelProperty(example = "null", value = "Doplňkové číslo [persistentní položka]")
-  public String getExternalNumber() {
-    return externalNumber;
+  @ApiModelProperty(example = "null", value = "zaokrouhlení dph [persistentní položka]")
+  public Integer getVatrounding() {
+    return vatrounding;
   }
 
-  public void setExternalNumber(String externalNumber) {
-    this.externalNumber = externalNumber;
+  public void setVatrounding(Integer vatrounding) {
+    this.vatrounding = vatrounding;
   }
 
-  public Vatissueddepositinvoice vATByPayment(Boolean vATByPayment) {
-    this.vATByPayment = vATByPayment;
+  public Vatissueddepositinvoice vatfromaboveprecision(Integer vatfromaboveprecision) {
+    this.vatfromaboveprecision = vatfromaboveprecision;
     return this;
   }
 
    /**
-   * DPH na základě přijetí platby [persistentní položka]
-   * @return vATByPayment
+   * přesnost zdanění zaokrouhlení [persistentní položka]
+   * @return vatfromaboveprecision
   **/
-  @ApiModelProperty(example = "null", value = "DPH na základě přijetí platby [persistentní položka]")
-  public Boolean getVATByPayment() {
-    return vATByPayment;
+  @ApiModelProperty(example = "null", value = "přesnost zdanění zaokrouhlení [persistentní položka]")
+  public Integer getVatfromaboveprecision() {
+    return vatfromaboveprecision;
   }
 
-  public void setVATByPayment(Boolean vATByPayment) {
-    this.vATByPayment = vATByPayment;
+  public void setVatfromaboveprecision(Integer vatfromaboveprecision) {
+    this.vatfromaboveprecision = vatfromaboveprecision;
   }
 
-  public Vatissueddepositinvoice vATByPaymentEndDateDATE(DateTime vATByPaymentEndDateDATE) {
-    this.vATByPaymentEndDateDATE = vATByPaymentEndDateDATE;
+  public Vatissueddepositinvoice roundingamount(Double roundingamount) {
+    this.roundingamount = roundingamount;
     return this;
   }
 
    /**
-   * Datum ukončení zvl. režimu [persistentní položka]
-   * @return vATByPaymentEndDateDATE
+   * zaok.v nulové sazbě [persistentní položka]
+   * @return roundingamount
   **/
-  @ApiModelProperty(example = "null", value = "Datum ukončení zvl. režimu [persistentní položka]")
-  public DateTime getVATByPaymentEndDateDATE() {
-    return vATByPaymentEndDateDATE;
+  @ApiModelProperty(example = "null", value = "zaok.v nulové sazbě [persistentní položka]")
+  public Double getRoundingamount() {
+    return roundingamount;
   }
 
-  public void setVATByPaymentEndDateDATE(DateTime vATByPaymentEndDateDATE) {
-    this.vATByPaymentEndDateDATE = vATByPaymentEndDateDATE;
+  public void setRoundingamount(Double roundingamount) {
+    this.roundingamount = roundingamount;
   }
 
-   /**
-   * Částka použ. bez DPH [persistentní položka]
-   * @return usedAmountWithoutVAT
-  **/
-  @ApiModelProperty(example = "null", value = "Částka použ. bez DPH [persistentní položka]")
-  public Double getUsedAmountWithoutVAT() {
-    return usedAmountWithoutVAT;
+  public Vatissueddepositinvoice localroundingamount(Double localroundingamount) {
+    this.localroundingamount = localroundingamount;
+    return this;
   }
 
    /**
-   * Částka použ. v lok. měně bez DPH [persistentní položka]
-   * @return localUsedAmountWithoutVAT
+   * zaok.v nulové sazbě lokálně [persistentní položka]
+   * @return localroundingamount
   **/
-  @ApiModelProperty(example = "null", value = "Částka použ. v lok. měně bez DPH [persistentní položka]")
-  public Double getLocalUsedAmountWithoutVAT() {
-    return localUsedAmountWithoutVAT;
+  @ApiModelProperty(example = "null", value = "zaok.v nulové sazbě lokálně [persistentní položka]")
+  public Double getLocalroundingamount() {
+    return localroundingamount;
+  }
+
+  public void setLocalroundingamount(Double localroundingamount) {
+    this.localroundingamount = localroundingamount;
+  }
+
+  public Vatissueddepositinvoice isreversechargedeclared(Boolean isreversechargedeclared) {
+    this.isreversechargedeclared = isreversechargedeclared;
+    return this;
   }
 
    /**
-   * Dobr.celkem [persistentní položka]
-   * @return creditAmount
+   * režim přenesení daňové povinnosti [persistentní položka]
+   * @return isreversechargedeclared
   **/
-  @ApiModelProperty(example = "null", value = "Dobr.celkem [persistentní položka]")
-  public Double getCreditAmount() {
-    return creditAmount;
+  @ApiModelProperty(example = "null", value = "režim přenesení daňové povinnosti [persistentní položka]")
+  public Boolean getIsreversechargedeclared() {
+    return isreversechargedeclared;
+  }
+
+  public void setIsreversechargedeclared(Boolean isreversechargedeclared) {
+    this.isreversechargedeclared = isreversechargedeclared;
+  }
+
+  public Vatissueddepositinvoice simplifiedvatdocument(Boolean simplifiedvatdocument) {
+    this.simplifiedvatdocument = simplifiedvatdocument;
+    return this;
   }
 
    /**
-   * Dobr.lokálně [persistentní položka]
-   * @return localCreditAmount
+   * zjednodušený daňový doklad [persistentní položka]
+   * @return simplifiedvatdocument
   **/
-  @ApiModelProperty(example = "null", value = "Dobr.lokálně [persistentní položka]")
-  public Double getLocalCreditAmount() {
-    return localCreditAmount;
+  @ApiModelProperty(example = "null", value = "zjednodušený daňový doklad [persistentní položka]")
+  public Boolean getSimplifiedvatdocument() {
+    return simplifiedvatdocument;
+  }
+
+  public void setSimplifiedvatdocument(Boolean simplifiedvatdocument) {
+    this.simplifiedvatdocument = simplifiedvatdocument;
+  }
+
+  public Vatissueddepositinvoice vatreportpreference(String vatreportpreference) {
+    this.vatreportpreference = vatreportpreference;
+    return this;
   }
 
    /**
-   * Dobr.celkem bez daně [persistentní položka]
-   * @return creditAmountWithoutVAT
+   * preference výkazu dph [persistentní položka]
+   * @return vatreportpreference
   **/
-  @ApiModelProperty(example = "null", value = "Dobr.celkem bez daně [persistentní položka]")
-  public Double getCreditAmountWithoutVAT() {
-    return creditAmountWithoutVAT;
+  @ApiModelProperty(example = "null", value = "preference výkazu dph [persistentní položka]")
+  public String getVatreportpreference() {
+    return vatreportpreference;
+  }
+
+  public void setVatreportpreference(String vatreportpreference) {
+    this.vatreportpreference = vatreportpreference;
+  }
+
+  public Vatissueddepositinvoice externalnumber(String externalnumber) {
+    this.externalnumber = externalnumber;
+    return this;
   }
 
    /**
-   * Dobr.lokálně bez daně [persistentní položka]
-   * @return localCreditAmountWithoutVAT
+   * doplňkové číslo [persistentní položka]
+   * @return externalnumber
   **/
-  @ApiModelProperty(example = "null", value = "Dobr.lokálně bez daně [persistentní položka]")
-  public Double getLocalCreditAmountWithoutVAT() {
-    return localCreditAmountWithoutVAT;
+  @ApiModelProperty(example = "null", value = "doplňkové číslo [persistentní položka]")
+  public String getExternalnumber() {
+    return externalnumber;
+  }
+
+  public void setExternalnumber(String externalnumber) {
+    this.externalnumber = externalnumber;
+  }
+
+  public Vatissueddepositinvoice vatbypayment(Boolean vatbypayment) {
+    this.vatbypayment = vatbypayment;
+    return this;
+  }
+
+   /**
+   * dph na základě přijetí platby [persistentní položka]
+   * @return vatbypayment
+  **/
+  @ApiModelProperty(example = "null", value = "dph na základě přijetí platby [persistentní položka]")
+  public Boolean getVatbypayment() {
+    return vatbypayment;
+  }
+
+  public void setVatbypayment(Boolean vatbypayment) {
+    this.vatbypayment = vatbypayment;
+  }
+
+  public Vatissueddepositinvoice vatbypaymentenddatedate(DateTime vatbypaymentenddatedate) {
+    this.vatbypaymentenddatedate = vatbypaymentenddatedate;
+    return this;
+  }
+
+   /**
+   * datum ukončení zvl. režimu [persistentní položka]
+   * @return vatbypaymentenddatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum ukončení zvl. režimu [persistentní položka]")
+  public DateTime getVatbypaymentenddatedate() {
+    return vatbypaymentenddatedate;
+  }
+
+  public void setVatbypaymentenddatedate(DateTime vatbypaymentenddatedate) {
+    this.vatbypaymentenddatedate = vatbypaymentenddatedate;
+  }
+
+  public Vatissueddepositinvoice usedamountwithoutvat(Double usedamountwithoutvat) {
+    this.usedamountwithoutvat = usedamountwithoutvat;
+    return this;
+  }
+
+   /**
+   * Částka použ. bez dph [persistentní položka]
+   * @return usedamountwithoutvat
+  **/
+  @ApiModelProperty(example = "null", value = "Částka použ. bez dph [persistentní položka]")
+  public Double getUsedamountwithoutvat() {
+    return usedamountwithoutvat;
+  }
+
+  public void setUsedamountwithoutvat(Double usedamountwithoutvat) {
+    this.usedamountwithoutvat = usedamountwithoutvat;
+  }
+
+  public Vatissueddepositinvoice localusedamountwithoutvat(Double localusedamountwithoutvat) {
+    this.localusedamountwithoutvat = localusedamountwithoutvat;
+    return this;
+  }
+
+   /**
+   * Částka použ. v lok. měně bez dph [persistentní položka]
+   * @return localusedamountwithoutvat
+  **/
+  @ApiModelProperty(example = "null", value = "Částka použ. v lok. měně bez dph [persistentní položka]")
+  public Double getLocalusedamountwithoutvat() {
+    return localusedamountwithoutvat;
+  }
+
+  public void setLocalusedamountwithoutvat(Double localusedamountwithoutvat) {
+    this.localusedamountwithoutvat = localusedamountwithoutvat;
+  }
+
+  public Vatissueddepositinvoice creditamount(Double creditamount) {
+    this.creditamount = creditamount;
+    return this;
+  }
+
+   /**
+   * dobr.celkem [persistentní položka]
+   * @return creditamount
+  **/
+  @ApiModelProperty(example = "null", value = "dobr.celkem [persistentní položka]")
+  public Double getCreditamount() {
+    return creditamount;
+  }
+
+  public void setCreditamount(Double creditamount) {
+    this.creditamount = creditamount;
+  }
+
+  public Vatissueddepositinvoice localcreditamount(Double localcreditamount) {
+    this.localcreditamount = localcreditamount;
+    return this;
+  }
+
+   /**
+   * dobr.lokálně [persistentní položka]
+   * @return localcreditamount
+  **/
+  @ApiModelProperty(example = "null", value = "dobr.lokálně [persistentní položka]")
+  public Double getLocalcreditamount() {
+    return localcreditamount;
+  }
+
+  public void setLocalcreditamount(Double localcreditamount) {
+    this.localcreditamount = localcreditamount;
+  }
+
+  public Vatissueddepositinvoice creditamountwithoutvat(Double creditamountwithoutvat) {
+    this.creditamountwithoutvat = creditamountwithoutvat;
+    return this;
+  }
+
+   /**
+   * dobr.celkem bez daně [persistentní položka]
+   * @return creditamountwithoutvat
+  **/
+  @ApiModelProperty(example = "null", value = "dobr.celkem bez daně [persistentní položka]")
+  public Double getCreditamountwithoutvat() {
+    return creditamountwithoutvat;
+  }
+
+  public void setCreditamountwithoutvat(Double creditamountwithoutvat) {
+    this.creditamountwithoutvat = creditamountwithoutvat;
+  }
+
+  public Vatissueddepositinvoice localcreditamountwithoutvat(Double localcreditamountwithoutvat) {
+    this.localcreditamountwithoutvat = localcreditamountwithoutvat;
+    return this;
+  }
+
+   /**
+   * dobr.lokálně bez daně [persistentní položka]
+   * @return localcreditamountwithoutvat
+  **/
+  @ApiModelProperty(example = "null", value = "dobr.lokálně bez daně [persistentní položka]")
+  public Double getLocalcreditamountwithoutvat() {
+    return localcreditamountwithoutvat;
+  }
+
+  public void setLocalcreditamountwithoutvat(Double localcreditamountwithoutvat) {
+    this.localcreditamountwithoutvat = localcreditamountwithoutvat;
+  }
+
+  public Vatissueddepositinvoice usedamount(Double usedamount) {
+    this.usedamount = usedamount;
+    return this;
   }
 
    /**
    * Částka použ. [persistentní položka]
-   * @return usedAmount
+   * @return usedamount
   **/
   @ApiModelProperty(example = "null", value = "Částka použ. [persistentní položka]")
-  public Double getUsedAmount() {
-    return usedAmount;
+  public Double getUsedamount() {
+    return usedamount;
+  }
+
+  public void setUsedamount(Double usedamount) {
+    this.usedamount = usedamount;
+  }
+
+  public Vatissueddepositinvoice localusedamount(Double localusedamount) {
+    this.localusedamount = localusedamount;
+    return this;
   }
 
    /**
    * Částka použ.lok. [persistentní položka]
-   * @return localUsedAmount
+   * @return localusedamount
   **/
   @ApiModelProperty(example = "null", value = "Částka použ.lok. [persistentní položka]")
-  public Double getLocalUsedAmount() {
-    return localUsedAmount;
+  public Double getLocalusedamount() {
+    return localusedamount;
+  }
+
+  public void setLocalusedamount(Double localusedamount) {
+    this.localusedamount = localusedamount;
+  }
+
+  public Vatissueddepositinvoice paidcreditamount(Double paidcreditamount) {
+    this.paidcreditamount = paidcreditamount;
+    return this;
   }
 
    /**
-   * Celkem zapl. na dobropisech [persistentní položka]
-   * @return paidCreditAmount
+   * celkem zapl. na dobropisech [persistentní položka]
+   * @return paidcreditamount
   **/
-  @ApiModelProperty(example = "null", value = "Celkem zapl. na dobropisech [persistentní položka]")
-  public Double getPaidCreditAmount() {
-    return paidCreditAmount;
+  @ApiModelProperty(example = "null", value = "celkem zapl. na dobropisech [persistentní položka]")
+  public Double getPaidcreditamount() {
+    return paidcreditamount;
+  }
+
+  public void setPaidcreditamount(Double paidcreditamount) {
+    this.paidcreditamount = paidcreditamount;
+  }
+
+  public Vatissueddepositinvoice localpaidcreditamount(Double localpaidcreditamount) {
+    this.localpaidcreditamount = localpaidcreditamount;
+    return this;
   }
 
    /**
-   * Zapl. lokálně na dobropisech [persistentní položka]
-   * @return localPaidCreditAmount
+   * zapl. lokálně na dobropisech [persistentní položka]
+   * @return localpaidcreditamount
   **/
-  @ApiModelProperty(example = "null", value = "Zapl. lokálně na dobropisech [persistentní položka]")
-  public Double getLocalPaidCreditAmount() {
-    return localPaidCreditAmount;
+  @ApiModelProperty(example = "null", value = "zapl. lokálně na dobropisech [persistentní položka]")
+  public Double getLocalpaidcreditamount() {
+    return localpaidcreditamount;
+  }
+
+  public void setLocalpaidcreditamount(Double localpaidcreditamount) {
+    this.localpaidcreditamount = localpaidcreditamount;
+  }
+
+  public Vatissueddepositinvoice paymentsourcepamount(Double paymentsourcepamount) {
+    this.paymentsourcepamount = paymentsourcepamount;
+    return this;
   }
 
    /**
-   * Placená částka
-   * @return paymentSourcePAmount
+   * placená částka
+   * @return paymentsourcepamount
   **/
-  @ApiModelProperty(example = "null", value = "Placená částka")
-  public Double getPaymentSourcePAmount() {
-    return paymentSourcePAmount;
+  @ApiModelProperty(example = "null", value = "placená částka")
+  public Double getPaymentsourcepamount() {
+    return paymentsourcepamount;
+  }
+
+  public void setPaymentsourcepamount(Double paymentsourcepamount) {
+    this.paymentsourcepamount = paymentsourcepamount;
+  }
+
+  public Vatissueddepositinvoice remainusedamount(Double remainusedamount) {
+    this.remainusedamount = remainusedamount;
+    return this;
   }
 
    /**
-   * Zbývá zúčtovat
-   * @return remainUsedAmount
+   * zbývá zúčtovat
+   * @return remainusedamount
   **/
-  @ApiModelProperty(example = "null", value = "Zbývá zúčtovat")
-  public Double getRemainUsedAmount() {
-    return remainUsedAmount;
+  @ApiModelProperty(example = "null", value = "zbývá zúčtovat")
+  public Double getRemainusedamount() {
+    return remainusedamount;
+  }
+
+  public void setRemainusedamount(Double remainusedamount) {
+    this.remainusedamount = remainusedamount;
+  }
+
+  public Vatissueddepositinvoice localremainusedamount(Double localremainusedamount) {
+    this.localremainusedamount = localremainusedamount;
+    return this;
   }
 
    /**
-   * Zbývá zúčtovat v lok. měně
-   * @return localRemainUsedAmount
+   * zbývá zúčtovat v lok. měně
+   * @return localremainusedamount
   **/
-  @ApiModelProperty(example = "null", value = "Zbývá zúčtovat v lok. měně")
-  public Double getLocalRemainUsedAmount() {
-    return localRemainUsedAmount;
+  @ApiModelProperty(example = "null", value = "zbývá zúčtovat v lok. měně")
+  public Double getLocalremainusedamount() {
+    return localremainusedamount;
+  }
+
+  public void setLocalremainusedamount(Double localremainusedamount) {
+    this.localremainusedamount = localremainusedamount;
+  }
+
+  public Vatissueddepositinvoice remainusedamountwithoutvat(Double remainusedamountwithoutvat) {
+    this.remainusedamountwithoutvat = remainusedamountwithoutvat;
+    return this;
   }
 
    /**
-   * Zbývá zúčtovat bez DPH
-   * @return remainUsedAmountWithoutVAT
+   * zbývá zúčtovat bez dph
+   * @return remainusedamountwithoutvat
   **/
-  @ApiModelProperty(example = "null", value = "Zbývá zúčtovat bez DPH")
-  public Double getRemainUsedAmountWithoutVAT() {
-    return remainUsedAmountWithoutVAT;
+  @ApiModelProperty(example = "null", value = "zbývá zúčtovat bez dph")
+  public Double getRemainusedamountwithoutvat() {
+    return remainusedamountwithoutvat;
+  }
+
+  public void setRemainusedamountwithoutvat(Double remainusedamountwithoutvat) {
+    this.remainusedamountwithoutvat = remainusedamountwithoutvat;
+  }
+
+  public Vatissueddepositinvoice localremainusedamountwithoutvat(Double localremainusedamountwithoutvat) {
+    this.localremainusedamountwithoutvat = localremainusedamountwithoutvat;
+    return this;
   }
 
    /**
-   * Zbývá zúčtovat v lok. měně bez DPH
-   * @return localRemainUsedAmountWithoutVAT
+   * zbývá zúčtovat v lok. měně bez dph
+   * @return localremainusedamountwithoutvat
   **/
-  @ApiModelProperty(example = "null", value = "Zbývá zúčtovat v lok. měně bez DPH")
-  public Double getLocalRemainUsedAmountWithoutVAT() {
-    return localRemainUsedAmountWithoutVAT;
+  @ApiModelProperty(example = "null", value = "zbývá zúčtovat v lok. měně bez dph")
+  public Double getLocalremainusedamountwithoutvat() {
+    return localremainusedamountwithoutvat;
+  }
+
+  public void setLocalremainusedamountwithoutvat(Double localremainusedamountwithoutvat) {
+    this.localremainusedamountwithoutvat = localremainusedamountwithoutvat;
+  }
+
+  public Vatissueddepositinvoice correctionamount(Double correctionamount) {
+    this.correctionamount = correctionamount;
+    return this;
   }
 
    /**
-   * Korekční částka
-   * @return correctionAmount
+   * korekční částka
+   * @return correctionamount
   **/
-  @ApiModelProperty(example = "null", value = "Korekční částka")
-  public Double getCorrectionAmount() {
-    return correctionAmount;
+  @ApiModelProperty(example = "null", value = "korekční částka")
+  public Double getCorrectionamount() {
+    return correctionamount;
+  }
+
+  public void setCorrectionamount(Double correctionamount) {
+    this.correctionamount = correctionamount;
+  }
+
+  public Vatissueddepositinvoice localcorrectionamount(Double localcorrectionamount) {
+    this.localcorrectionamount = localcorrectionamount;
+    return this;
   }
 
    /**
-   * Korekční částka v lok. měně
-   * @return localCorrectionAmount
+   * korekční částka v lok. měně
+   * @return localcorrectionamount
   **/
-  @ApiModelProperty(example = "null", value = "Korekční částka v lok. měně")
-  public Double getLocalCorrectionAmount() {
-    return localCorrectionAmount;
+  @ApiModelProperty(example = "null", value = "korekční částka v lok. měně")
+  public Double getLocalcorrectionamount() {
+    return localcorrectionamount;
+  }
+
+  public void setLocalcorrectionamount(Double localcorrectionamount) {
+    this.localcorrectionamount = localcorrectionamount;
+  }
+
+  public Vatissueddepositinvoice correctionamountwithoutvat(Double correctionamountwithoutvat) {
+    this.correctionamountwithoutvat = correctionamountwithoutvat;
+    return this;
   }
 
    /**
-   * Korekční částka bez DPH
-   * @return correctionAmountWithoutVAT
+   * korekční částka bez dph
+   * @return correctionamountwithoutvat
   **/
-  @ApiModelProperty(example = "null", value = "Korekční částka bez DPH")
-  public Double getCorrectionAmountWithoutVAT() {
-    return correctionAmountWithoutVAT;
+  @ApiModelProperty(example = "null", value = "korekční částka bez dph")
+  public Double getCorrectionamountwithoutvat() {
+    return correctionamountwithoutvat;
+  }
+
+  public void setCorrectionamountwithoutvat(Double correctionamountwithoutvat) {
+    this.correctionamountwithoutvat = correctionamountwithoutvat;
+  }
+
+  public Vatissueddepositinvoice localcorrectionamountwithoutvat(Double localcorrectionamountwithoutvat) {
+    this.localcorrectionamountwithoutvat = localcorrectionamountwithoutvat;
+    return this;
   }
 
    /**
-   * Korekční částka v lok. měně bez DPH
-   * @return localCorrectionAmountWithoutVAT
+   * korekční částka v lok. měně bez dph
+   * @return localcorrectionamountwithoutvat
   **/
-  @ApiModelProperty(example = "null", value = "Korekční částka v lok. měně bez DPH")
-  public Double getLocalCorrectionAmountWithoutVAT() {
-    return localCorrectionAmountWithoutVAT;
+  @ApiModelProperty(example = "null", value = "korekční částka v lok. měně bez dph")
+  public Double getLocalcorrectionamountwithoutvat() {
+    return localcorrectionamountwithoutvat;
+  }
+
+  public void setLocalcorrectionamountwithoutvat(Double localcorrectionamountwithoutvat) {
+    this.localcorrectionamountwithoutvat = localcorrectionamountwithoutvat;
+  }
+
+  public Vatissueddepositinvoice correctedusedamount(Double correctedusedamount) {
+    this.correctedusedamount = correctedusedamount;
+    return this;
   }
 
    /**
-   * Zúčt.vč.korekce
-   * @return correctedUsedAmount
+   * zúčt.vč.korekce
+   * @return correctedusedamount
   **/
-  @ApiModelProperty(example = "null", value = "Zúčt.vč.korekce")
-  public Double getCorrectedUsedAmount() {
-    return correctedUsedAmount;
+  @ApiModelProperty(example = "null", value = "zúčt.vč.korekce")
+  public Double getCorrectedusedamount() {
+    return correctedusedamount;
+  }
+
+  public void setCorrectedusedamount(Double correctedusedamount) {
+    this.correctedusedamount = correctedusedamount;
+  }
+
+  public Vatissueddepositinvoice localcorrectedusedamount(Double localcorrectedusedamount) {
+    this.localcorrectedusedamount = localcorrectedusedamount;
+    return this;
   }
 
    /**
-   * Zúčt.vč.korekce v lok. měně
-   * @return localCorrectedUsedAmount
+   * zúčt.vč.korekce v lok. měně
+   * @return localcorrectedusedamount
   **/
-  @ApiModelProperty(example = "null", value = "Zúčt.vč.korekce v lok. měně")
-  public Double getLocalCorrectedUsedAmount() {
-    return localCorrectedUsedAmount;
+  @ApiModelProperty(example = "null", value = "zúčt.vč.korekce v lok. měně")
+  public Double getLocalcorrectedusedamount() {
+    return localcorrectedusedamount;
+  }
+
+  public void setLocalcorrectedusedamount(Double localcorrectedusedamount) {
+    this.localcorrectedusedamount = localcorrectedusedamount;
+  }
+
+  public Vatissueddepositinvoice usable(Boolean usable) {
+    this.usable = usable;
+    return this;
   }
 
    /**
-   * Zúčtovat [persistentní položka]
+   * zúčtovat [persistentní položka]
    * @return usable
   **/
-  @ApiModelProperty(example = "null", value = "Zúčtovat [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "zúčtovat [persistentní položka]")
   public Boolean getUsable() {
     return usable;
   }
 
-  public Vatissueddepositinvoice vATVoluntaryPaid(Boolean vATVoluntaryPaid) {
-    this.vATVoluntaryPaid = vATVoluntaryPaid;
+  public void setUsable(Boolean usable) {
+    this.usable = usable;
+  }
+
+  public Vatissueddepositinvoice vatvoluntarypaid(Boolean vatvoluntarypaid) {
+    this.vatvoluntarypaid = vatvoluntarypaid;
     return this;
   }
 
    /**
-   * Dobrovolné zaplacení daně [persistentní položka]
-   * @return vATVoluntaryPaid
+   * dobrovolné zaplacení daně [persistentní položka]
+   * @return vatvoluntarypaid
   **/
-  @ApiModelProperty(example = "null", value = "Dobrovolné zaplacení daně [persistentní položka]")
-  public Boolean getVATVoluntaryPaid() {
-    return vATVoluntaryPaid;
+  @ApiModelProperty(example = "null", value = "dobrovolné zaplacení daně [persistentní položka]")
+  public Boolean getVatvoluntarypaid() {
+    return vatvoluntarypaid;
   }
 
-  public void setVATVoluntaryPaid(Boolean vATVoluntaryPaid) {
-    this.vATVoluntaryPaid = vATVoluntaryPaid;
+  public void setVatvoluntarypaid(Boolean vatvoluntarypaid) {
+    this.vatvoluntarypaid = vatvoluntarypaid;
   }
 
-  public Vatissueddepositinvoice vATReportReference(String vATReportReference) {
-    this.vATReportReference = vATReportReference;
+  public Vatissueddepositinvoice vatreportreference(String vatreportreference) {
+    this.vatreportreference = vatreportreference;
     return this;
   }
 
    /**
-   * Reference [persistentní položka]
-   * @return vATReportReference
+   * reference [persistentní položka]
+   * @return vatreportreference
   **/
-  @ApiModelProperty(example = "null", value = "Reference [persistentní položka]")
-  public String getVATReportReference() {
-    return vATReportReference;
+  @ApiModelProperty(example = "null", value = "reference [persistentní položka]")
+  public String getVatreportreference() {
+    return vatreportreference;
   }
 
-  public void setVATReportReference(String vATReportReference) {
-    this.vATReportReference = vATReportReference;
+  public void setVatreportreference(String vatreportreference) {
+    this.vatreportreference = vatreportreference;
   }
 
-  public Vatissueddepositinvoice createdAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public Vatissueddepositinvoice createdatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
     return this;
   }
 
    /**
-   * Vytvořeno [persistentní položka]
-   * @return createdAtDATE
+   * vytvořeno [persistentní položka]
+   * @return createdatdate
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořeno [persistentní položka]")
-  public DateTime getCreatedAtDATE() {
-    return createdAtDATE;
+  @ApiModelProperty(example = "null", value = "vytvořeno [persistentní položka]")
+  public DateTime getCreatedatdate() {
+    return createdatdate;
   }
 
-  public void setCreatedAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public void setCreatedatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
   }
 
-  public Vatissueddepositinvoice correctedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public Vatissueddepositinvoice correctedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
     return this;
   }
 
    /**
-   * Opraveno [persistentní položka]
-   * @return correctedAtDATE
+   * opraveno [persistentní položka]
+   * @return correctedatdate
   **/
-  @ApiModelProperty(example = "null", value = "Opraveno [persistentní položka]")
-  public DateTime getCorrectedAtDATE() {
-    return correctedAtDATE;
+  @ApiModelProperty(example = "null", value = "opraveno [persistentní položka]")
+  public DateTime getCorrectedatdate() {
+    return correctedatdate;
   }
 
-  public void setCorrectedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public void setCorrectedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
   }
 
 
@@ -1599,100 +1923,100 @@ public class Vatissueddepositinvoice   {
       return false;
     }
     Vatissueddepositinvoice vatissueddepositinvoice = (Vatissueddepositinvoice) o;
-    return Objects.equals(this.displayName, vatissueddepositinvoice.displayName) &&
-        Objects.equals(this.ID, vatissueddepositinvoice.ID) &&
-        Objects.equals(this.classID, vatissueddepositinvoice.classID) &&
-        Objects.equals(this.objVersion, vatissueddepositinvoice.objVersion) &&
+    return Objects.equals(this.displayname, vatissueddepositinvoice.displayname) &&
+        Objects.equals(this.id, vatissueddepositinvoice.id) &&
+        Objects.equals(this.classid, vatissueddepositinvoice.classid) &&
+        Objects.equals(this.objversion, vatissueddepositinvoice.objversion) &&
         Objects.equals(this.rows, vatissueddepositinvoice.rows) &&
-        Objects.equals(this.docQueueID, vatissueddepositinvoice.docQueueID) &&
-        Objects.equals(this.periodID, vatissueddepositinvoice.periodID) &&
-        Objects.equals(this.ordNumber, vatissueddepositinvoice.ordNumber) &&
-        Objects.equals(this.docDateDATE, vatissueddepositinvoice.docDateDATE) &&
-        Objects.equals(this.createdByID, vatissueddepositinvoice.createdByID) &&
-        Objects.equals(this.correctedByID, vatissueddepositinvoice.correctedByID) &&
-        Objects.equals(this.newRelatedType, vatissueddepositinvoice.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, vatissueddepositinvoice.newRelatedDocumentID) &&
-        Objects.equals(this.docUUID, vatissueddepositinvoice.docUUID) &&
-        Objects.equals(this.accPresetDefID, vatissueddepositinvoice.accPresetDefID) &&
-        Objects.equals(this.firmID, vatissueddepositinvoice.firmID) &&
-        Objects.equals(this.firmOfficeID, vatissueddepositinvoice.firmOfficeID) &&
-        Objects.equals(this.personID, vatissueddepositinvoice.personID) &&
+        Objects.equals(this.docqueueId, vatissueddepositinvoice.docqueueId) &&
+        Objects.equals(this.periodId, vatissueddepositinvoice.periodId) &&
+        Objects.equals(this.ordnumber, vatissueddepositinvoice.ordnumber) &&
+        Objects.equals(this.docdatedate, vatissueddepositinvoice.docdatedate) &&
+        Objects.equals(this.createdbyId, vatissueddepositinvoice.createdbyId) &&
+        Objects.equals(this.correctedbyId, vatissueddepositinvoice.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, vatissueddepositinvoice.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, vatissueddepositinvoice.newrelateddocumentId) &&
+        Objects.equals(this.docuuid, vatissueddepositinvoice.docuuid) &&
+        Objects.equals(this.accpresetdefId, vatissueddepositinvoice.accpresetdefId) &&
+        Objects.equals(this.firmId, vatissueddepositinvoice.firmId) &&
+        Objects.equals(this.firmofficeId, vatissueddepositinvoice.firmofficeId) &&
+        Objects.equals(this.personId, vatissueddepositinvoice.personId) &&
         Objects.equals(this.description, vatissueddepositinvoice.description) &&
-        Objects.equals(this.accDateDATE, vatissueddepositinvoice.accDateDATE) &&
-        Objects.equals(this.accDocQueueID, vatissueddepositinvoice.accDocQueueID) &&
-        Objects.equals(this.accountingType, vatissueddepositinvoice.accountingType) &&
-        Objects.equals(this.isAccounted, vatissueddepositinvoice.isAccounted) &&
+        Objects.equals(this.accdatedate, vatissueddepositinvoice.accdatedate) &&
+        Objects.equals(this.accdocqueueId, vatissueddepositinvoice.accdocqueueId) &&
+        Objects.equals(this.accountingtype, vatissueddepositinvoice.accountingtype) &&
+        Objects.equals(this.isaccounted, vatissueddepositinvoice.isaccounted) &&
         Objects.equals(this.dirty, vatissueddepositinvoice.dirty) &&
-        Objects.equals(this.countryID, vatissueddepositinvoice.countryID) &&
-        Objects.equals(this.currencyID, vatissueddepositinvoice.currencyID) &&
-        Objects.equals(this.currRate, vatissueddepositinvoice.currRate) &&
-        Objects.equals(this.refCurrRate, vatissueddepositinvoice.refCurrRate) &&
+        Objects.equals(this.countryId, vatissueddepositinvoice.countryId) &&
+        Objects.equals(this.currencyId, vatissueddepositinvoice.currencyId) &&
+        Objects.equals(this.currrate, vatissueddepositinvoice.currrate) &&
+        Objects.equals(this.refcurrrate, vatissueddepositinvoice.refcurrrate) &&
         Objects.equals(this.coef, vatissueddepositinvoice.coef) &&
-        Objects.equals(this.localCoef, vatissueddepositinvoice.localCoef) &&
-        Objects.equals(this.zoneID, vatissueddepositinvoice.zoneID) &&
-        Objects.equals(this.localZoneID, vatissueddepositinvoice.localZoneID) &&
-        Objects.equals(this.refCurrencyID, vatissueddepositinvoice.refCurrencyID) &&
-        Objects.equals(this.localRefCurrencyID, vatissueddepositinvoice.localRefCurrencyID) &&
-        Objects.equals(this.currRateInfo, vatissueddepositinvoice.currRateInfo) &&
+        Objects.equals(this.localcoef, vatissueddepositinvoice.localcoef) &&
+        Objects.equals(this.zoneId, vatissueddepositinvoice.zoneId) &&
+        Objects.equals(this.localzoneId, vatissueddepositinvoice.localzoneId) &&
+        Objects.equals(this.refcurrencyId, vatissueddepositinvoice.refcurrencyId) &&
+        Objects.equals(this.localrefcurrencyId, vatissueddepositinvoice.localrefcurrencyId) &&
+        Objects.equals(this.currrateinfo, vatissueddepositinvoice.currrateinfo) &&
         Objects.equals(this.amount, vatissueddepositinvoice.amount) &&
-        Objects.equals(this.localAmount, vatissueddepositinvoice.localAmount) &&
-        Objects.equals(this.paidAmount, vatissueddepositinvoice.paidAmount) &&
-        Objects.equals(this.localPaidAmount, vatissueddepositinvoice.localPaidAmount) &&
-        Objects.equals(this.notPaidAmount, vatissueddepositinvoice.notPaidAmount) &&
-        Objects.equals(this.localNotPaidAmount, vatissueddepositinvoice.localNotPaidAmount) &&
-        Objects.equals(this.closingPeriodID, vatissueddepositinvoice.closingPeriodID) &&
-        Objects.equals(this.lastPaymentPeriodID, vatissueddepositinvoice.lastPaymentPeriodID) &&
-        Objects.equals(this.isProfit, vatissueddepositinvoice.isProfit) &&
-        Objects.equals(this.addressID, vatissueddepositinvoice.addressID) &&
-        Objects.equals(this.vATCountryID, vatissueddepositinvoice.vATCountryID) &&
-        Objects.equals(this.amountWithoutVAT, vatissueddepositinvoice.amountWithoutVAT) &&
-        Objects.equals(this.localAmountWithoutVAT, vatissueddepositinvoice.localAmountWithoutVAT) &&
-        Objects.equals(this.vATDateDATE, vatissueddepositinvoice.vATDateDATE) &&
-        Objects.equals(this.vATDocument, vatissueddepositinvoice.vATDocument) &&
-        Objects.equals(this.pricesWithVAT, vatissueddepositinvoice.pricesWithVAT) &&
-        Objects.equals(this.tradeType, vatissueddepositinvoice.tradeType) &&
-        Objects.equals(this.tradeTypeDescription, vatissueddepositinvoice.tradeTypeDescription) &&
-        Objects.equals(this.vATRounding, vatissueddepositinvoice.vATRounding) &&
-        Objects.equals(this.vATFromAbovePrecision, vatissueddepositinvoice.vATFromAbovePrecision) &&
-        Objects.equals(this.roundingAmount, vatissueddepositinvoice.roundingAmount) &&
-        Objects.equals(this.localRoundingAmount, vatissueddepositinvoice.localRoundingAmount) &&
-        Objects.equals(this.isReverseChargeDeclared, vatissueddepositinvoice.isReverseChargeDeclared) &&
-        Objects.equals(this.simplifiedVATDocument, vatissueddepositinvoice.simplifiedVATDocument) &&
-        Objects.equals(this.vATReportPreference, vatissueddepositinvoice.vATReportPreference) &&
-        Objects.equals(this.externalNumber, vatissueddepositinvoice.externalNumber) &&
-        Objects.equals(this.vATByPayment, vatissueddepositinvoice.vATByPayment) &&
-        Objects.equals(this.vATByPaymentEndDateDATE, vatissueddepositinvoice.vATByPaymentEndDateDATE) &&
-        Objects.equals(this.usedAmountWithoutVAT, vatissueddepositinvoice.usedAmountWithoutVAT) &&
-        Objects.equals(this.localUsedAmountWithoutVAT, vatissueddepositinvoice.localUsedAmountWithoutVAT) &&
-        Objects.equals(this.creditAmount, vatissueddepositinvoice.creditAmount) &&
-        Objects.equals(this.localCreditAmount, vatissueddepositinvoice.localCreditAmount) &&
-        Objects.equals(this.creditAmountWithoutVAT, vatissueddepositinvoice.creditAmountWithoutVAT) &&
-        Objects.equals(this.localCreditAmountWithoutVAT, vatissueddepositinvoice.localCreditAmountWithoutVAT) &&
-        Objects.equals(this.usedAmount, vatissueddepositinvoice.usedAmount) &&
-        Objects.equals(this.localUsedAmount, vatissueddepositinvoice.localUsedAmount) &&
-        Objects.equals(this.paidCreditAmount, vatissueddepositinvoice.paidCreditAmount) &&
-        Objects.equals(this.localPaidCreditAmount, vatissueddepositinvoice.localPaidCreditAmount) &&
-        Objects.equals(this.paymentSourcePAmount, vatissueddepositinvoice.paymentSourcePAmount) &&
-        Objects.equals(this.remainUsedAmount, vatissueddepositinvoice.remainUsedAmount) &&
-        Objects.equals(this.localRemainUsedAmount, vatissueddepositinvoice.localRemainUsedAmount) &&
-        Objects.equals(this.remainUsedAmountWithoutVAT, vatissueddepositinvoice.remainUsedAmountWithoutVAT) &&
-        Objects.equals(this.localRemainUsedAmountWithoutVAT, vatissueddepositinvoice.localRemainUsedAmountWithoutVAT) &&
-        Objects.equals(this.correctionAmount, vatissueddepositinvoice.correctionAmount) &&
-        Objects.equals(this.localCorrectionAmount, vatissueddepositinvoice.localCorrectionAmount) &&
-        Objects.equals(this.correctionAmountWithoutVAT, vatissueddepositinvoice.correctionAmountWithoutVAT) &&
-        Objects.equals(this.localCorrectionAmountWithoutVAT, vatissueddepositinvoice.localCorrectionAmountWithoutVAT) &&
-        Objects.equals(this.correctedUsedAmount, vatissueddepositinvoice.correctedUsedAmount) &&
-        Objects.equals(this.localCorrectedUsedAmount, vatissueddepositinvoice.localCorrectedUsedAmount) &&
+        Objects.equals(this.localamount, vatissueddepositinvoice.localamount) &&
+        Objects.equals(this.paidamount, vatissueddepositinvoice.paidamount) &&
+        Objects.equals(this.localpaidamount, vatissueddepositinvoice.localpaidamount) &&
+        Objects.equals(this.notpaidamount, vatissueddepositinvoice.notpaidamount) &&
+        Objects.equals(this.localnotpaidamount, vatissueddepositinvoice.localnotpaidamount) &&
+        Objects.equals(this.closingperiodId, vatissueddepositinvoice.closingperiodId) &&
+        Objects.equals(this.lastpaymentperiodId, vatissueddepositinvoice.lastpaymentperiodId) &&
+        Objects.equals(this.isprofit, vatissueddepositinvoice.isprofit) &&
+        Objects.equals(this.addressId, vatissueddepositinvoice.addressId) &&
+        Objects.equals(this.vatcountryId, vatissueddepositinvoice.vatcountryId) &&
+        Objects.equals(this.amountwithoutvat, vatissueddepositinvoice.amountwithoutvat) &&
+        Objects.equals(this.localamountwithoutvat, vatissueddepositinvoice.localamountwithoutvat) &&
+        Objects.equals(this.vatdatedate, vatissueddepositinvoice.vatdatedate) &&
+        Objects.equals(this.vatdocument, vatissueddepositinvoice.vatdocument) &&
+        Objects.equals(this.priceswithvat, vatissueddepositinvoice.priceswithvat) &&
+        Objects.equals(this.tradetype, vatissueddepositinvoice.tradetype) &&
+        Objects.equals(this.tradetypedescription, vatissueddepositinvoice.tradetypedescription) &&
+        Objects.equals(this.vatrounding, vatissueddepositinvoice.vatrounding) &&
+        Objects.equals(this.vatfromaboveprecision, vatissueddepositinvoice.vatfromaboveprecision) &&
+        Objects.equals(this.roundingamount, vatissueddepositinvoice.roundingamount) &&
+        Objects.equals(this.localroundingamount, vatissueddepositinvoice.localroundingamount) &&
+        Objects.equals(this.isreversechargedeclared, vatissueddepositinvoice.isreversechargedeclared) &&
+        Objects.equals(this.simplifiedvatdocument, vatissueddepositinvoice.simplifiedvatdocument) &&
+        Objects.equals(this.vatreportpreference, vatissueddepositinvoice.vatreportpreference) &&
+        Objects.equals(this.externalnumber, vatissueddepositinvoice.externalnumber) &&
+        Objects.equals(this.vatbypayment, vatissueddepositinvoice.vatbypayment) &&
+        Objects.equals(this.vatbypaymentenddatedate, vatissueddepositinvoice.vatbypaymentenddatedate) &&
+        Objects.equals(this.usedamountwithoutvat, vatissueddepositinvoice.usedamountwithoutvat) &&
+        Objects.equals(this.localusedamountwithoutvat, vatissueddepositinvoice.localusedamountwithoutvat) &&
+        Objects.equals(this.creditamount, vatissueddepositinvoice.creditamount) &&
+        Objects.equals(this.localcreditamount, vatissueddepositinvoice.localcreditamount) &&
+        Objects.equals(this.creditamountwithoutvat, vatissueddepositinvoice.creditamountwithoutvat) &&
+        Objects.equals(this.localcreditamountwithoutvat, vatissueddepositinvoice.localcreditamountwithoutvat) &&
+        Objects.equals(this.usedamount, vatissueddepositinvoice.usedamount) &&
+        Objects.equals(this.localusedamount, vatissueddepositinvoice.localusedamount) &&
+        Objects.equals(this.paidcreditamount, vatissueddepositinvoice.paidcreditamount) &&
+        Objects.equals(this.localpaidcreditamount, vatissueddepositinvoice.localpaidcreditamount) &&
+        Objects.equals(this.paymentsourcepamount, vatissueddepositinvoice.paymentsourcepamount) &&
+        Objects.equals(this.remainusedamount, vatissueddepositinvoice.remainusedamount) &&
+        Objects.equals(this.localremainusedamount, vatissueddepositinvoice.localremainusedamount) &&
+        Objects.equals(this.remainusedamountwithoutvat, vatissueddepositinvoice.remainusedamountwithoutvat) &&
+        Objects.equals(this.localremainusedamountwithoutvat, vatissueddepositinvoice.localremainusedamountwithoutvat) &&
+        Objects.equals(this.correctionamount, vatissueddepositinvoice.correctionamount) &&
+        Objects.equals(this.localcorrectionamount, vatissueddepositinvoice.localcorrectionamount) &&
+        Objects.equals(this.correctionamountwithoutvat, vatissueddepositinvoice.correctionamountwithoutvat) &&
+        Objects.equals(this.localcorrectionamountwithoutvat, vatissueddepositinvoice.localcorrectionamountwithoutvat) &&
+        Objects.equals(this.correctedusedamount, vatissueddepositinvoice.correctedusedamount) &&
+        Objects.equals(this.localcorrectedusedamount, vatissueddepositinvoice.localcorrectedusedamount) &&
         Objects.equals(this.usable, vatissueddepositinvoice.usable) &&
-        Objects.equals(this.vATVoluntaryPaid, vatissueddepositinvoice.vATVoluntaryPaid) &&
-        Objects.equals(this.vATReportReference, vatissueddepositinvoice.vATReportReference) &&
-        Objects.equals(this.createdAtDATE, vatissueddepositinvoice.createdAtDATE) &&
-        Objects.equals(this.correctedAtDATE, vatissueddepositinvoice.correctedAtDATE);
+        Objects.equals(this.vatvoluntarypaid, vatissueddepositinvoice.vatvoluntarypaid) &&
+        Objects.equals(this.vatreportreference, vatissueddepositinvoice.vatreportreference) &&
+        Objects.equals(this.createdatdate, vatissueddepositinvoice.createdatdate) &&
+        Objects.equals(this.correctedatdate, vatissueddepositinvoice.correctedatdate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, docUUID, accPresetDefID, firmID, firmOfficeID, personID, description, accDateDATE, accDocQueueID, accountingType, isAccounted, dirty, countryID, currencyID, currRate, refCurrRate, coef, localCoef, zoneID, localZoneID, refCurrencyID, localRefCurrencyID, currRateInfo, amount, localAmount, paidAmount, localPaidAmount, notPaidAmount, localNotPaidAmount, closingPeriodID, lastPaymentPeriodID, isProfit, addressID, vATCountryID, amountWithoutVAT, localAmountWithoutVAT, vATDateDATE, vATDocument, pricesWithVAT, tradeType, tradeTypeDescription, vATRounding, vATFromAbovePrecision, roundingAmount, localRoundingAmount, isReverseChargeDeclared, simplifiedVATDocument, vATReportPreference, externalNumber, vATByPayment, vATByPaymentEndDateDATE, usedAmountWithoutVAT, localUsedAmountWithoutVAT, creditAmount, localCreditAmount, creditAmountWithoutVAT, localCreditAmountWithoutVAT, usedAmount, localUsedAmount, paidCreditAmount, localPaidCreditAmount, paymentSourcePAmount, remainUsedAmount, localRemainUsedAmount, remainUsedAmountWithoutVAT, localRemainUsedAmountWithoutVAT, correctionAmount, localCorrectionAmount, correctionAmountWithoutVAT, localCorrectionAmountWithoutVAT, correctedUsedAmount, localCorrectedUsedAmount, usable, vATVoluntaryPaid, vATReportReference, createdAtDATE, correctedAtDATE);
+    return Objects.hash(displayname, id, classid, objversion, rows, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, docuuid, accpresetdefId, firmId, firmofficeId, personId, description, accdatedate, accdocqueueId, accountingtype, isaccounted, dirty, countryId, currencyId, currrate, refcurrrate, coef, localcoef, zoneId, localzoneId, refcurrencyId, localrefcurrencyId, currrateinfo, amount, localamount, paidamount, localpaidamount, notpaidamount, localnotpaidamount, closingperiodId, lastpaymentperiodId, isprofit, addressId, vatcountryId, amountwithoutvat, localamountwithoutvat, vatdatedate, vatdocument, priceswithvat, tradetype, tradetypedescription, vatrounding, vatfromaboveprecision, roundingamount, localroundingamount, isreversechargedeclared, simplifiedvatdocument, vatreportpreference, externalnumber, vatbypayment, vatbypaymentenddatedate, usedamountwithoutvat, localusedamountwithoutvat, creditamount, localcreditamount, creditamountwithoutvat, localcreditamountwithoutvat, usedamount, localusedamount, paidcreditamount, localpaidcreditamount, paymentsourcepamount, remainusedamount, localremainusedamount, remainusedamountwithoutvat, localremainusedamountwithoutvat, correctionamount, localcorrectionamount, correctionamountwithoutvat, localcorrectionamountwithoutvat, correctedusedamount, localcorrectedusedamount, usable, vatvoluntarypaid, vatreportreference, createdatdate, correctedatdate);
   }
 
   @Override
@@ -1700,95 +2024,95 @@ public class Vatissueddepositinvoice   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Vatissueddepositinvoice {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    docUUID: ").append(toIndentedString(docUUID)).append("\n");
-    sb.append("    accPresetDefID: ").append(toIndentedString(accPresetDefID)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    firmOfficeID: ").append(toIndentedString(firmOfficeID)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    docuuid: ").append(toIndentedString(docuuid)).append("\n");
+    sb.append("    accpresetdefId: ").append(toIndentedString(accpresetdefId)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    firmofficeId: ").append(toIndentedString(firmofficeId)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    accDateDATE: ").append(toIndentedString(accDateDATE)).append("\n");
-    sb.append("    accDocQueueID: ").append(toIndentedString(accDocQueueID)).append("\n");
-    sb.append("    accountingType: ").append(toIndentedString(accountingType)).append("\n");
-    sb.append("    isAccounted: ").append(toIndentedString(isAccounted)).append("\n");
+    sb.append("    accdatedate: ").append(toIndentedString(accdatedate)).append("\n");
+    sb.append("    accdocqueueId: ").append(toIndentedString(accdocqueueId)).append("\n");
+    sb.append("    accountingtype: ").append(toIndentedString(accountingtype)).append("\n");
+    sb.append("    isaccounted: ").append(toIndentedString(isaccounted)).append("\n");
     sb.append("    dirty: ").append(toIndentedString(dirty)).append("\n");
-    sb.append("    countryID: ").append(toIndentedString(countryID)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    currRate: ").append(toIndentedString(currRate)).append("\n");
-    sb.append("    refCurrRate: ").append(toIndentedString(refCurrRate)).append("\n");
+    sb.append("    countryId: ").append(toIndentedString(countryId)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    currrate: ").append(toIndentedString(currrate)).append("\n");
+    sb.append("    refcurrrate: ").append(toIndentedString(refcurrrate)).append("\n");
     sb.append("    coef: ").append(toIndentedString(coef)).append("\n");
-    sb.append("    localCoef: ").append(toIndentedString(localCoef)).append("\n");
-    sb.append("    zoneID: ").append(toIndentedString(zoneID)).append("\n");
-    sb.append("    localZoneID: ").append(toIndentedString(localZoneID)).append("\n");
-    sb.append("    refCurrencyID: ").append(toIndentedString(refCurrencyID)).append("\n");
-    sb.append("    localRefCurrencyID: ").append(toIndentedString(localRefCurrencyID)).append("\n");
-    sb.append("    currRateInfo: ").append(toIndentedString(currRateInfo)).append("\n");
+    sb.append("    localcoef: ").append(toIndentedString(localcoef)).append("\n");
+    sb.append("    zoneId: ").append(toIndentedString(zoneId)).append("\n");
+    sb.append("    localzoneId: ").append(toIndentedString(localzoneId)).append("\n");
+    sb.append("    refcurrencyId: ").append(toIndentedString(refcurrencyId)).append("\n");
+    sb.append("    localrefcurrencyId: ").append(toIndentedString(localrefcurrencyId)).append("\n");
+    sb.append("    currrateinfo: ").append(toIndentedString(currrateinfo)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    localAmount: ").append(toIndentedString(localAmount)).append("\n");
-    sb.append("    paidAmount: ").append(toIndentedString(paidAmount)).append("\n");
-    sb.append("    localPaidAmount: ").append(toIndentedString(localPaidAmount)).append("\n");
-    sb.append("    notPaidAmount: ").append(toIndentedString(notPaidAmount)).append("\n");
-    sb.append("    localNotPaidAmount: ").append(toIndentedString(localNotPaidAmount)).append("\n");
-    sb.append("    closingPeriodID: ").append(toIndentedString(closingPeriodID)).append("\n");
-    sb.append("    lastPaymentPeriodID: ").append(toIndentedString(lastPaymentPeriodID)).append("\n");
-    sb.append("    isProfit: ").append(toIndentedString(isProfit)).append("\n");
-    sb.append("    addressID: ").append(toIndentedString(addressID)).append("\n");
-    sb.append("    vATCountryID: ").append(toIndentedString(vATCountryID)).append("\n");
-    sb.append("    amountWithoutVAT: ").append(toIndentedString(amountWithoutVAT)).append("\n");
-    sb.append("    localAmountWithoutVAT: ").append(toIndentedString(localAmountWithoutVAT)).append("\n");
-    sb.append("    vATDateDATE: ").append(toIndentedString(vATDateDATE)).append("\n");
-    sb.append("    vATDocument: ").append(toIndentedString(vATDocument)).append("\n");
-    sb.append("    pricesWithVAT: ").append(toIndentedString(pricesWithVAT)).append("\n");
-    sb.append("    tradeType: ").append(toIndentedString(tradeType)).append("\n");
-    sb.append("    tradeTypeDescription: ").append(toIndentedString(tradeTypeDescription)).append("\n");
-    sb.append("    vATRounding: ").append(toIndentedString(vATRounding)).append("\n");
-    sb.append("    vATFromAbovePrecision: ").append(toIndentedString(vATFromAbovePrecision)).append("\n");
-    sb.append("    roundingAmount: ").append(toIndentedString(roundingAmount)).append("\n");
-    sb.append("    localRoundingAmount: ").append(toIndentedString(localRoundingAmount)).append("\n");
-    sb.append("    isReverseChargeDeclared: ").append(toIndentedString(isReverseChargeDeclared)).append("\n");
-    sb.append("    simplifiedVATDocument: ").append(toIndentedString(simplifiedVATDocument)).append("\n");
-    sb.append("    vATReportPreference: ").append(toIndentedString(vATReportPreference)).append("\n");
-    sb.append("    externalNumber: ").append(toIndentedString(externalNumber)).append("\n");
-    sb.append("    vATByPayment: ").append(toIndentedString(vATByPayment)).append("\n");
-    sb.append("    vATByPaymentEndDateDATE: ").append(toIndentedString(vATByPaymentEndDateDATE)).append("\n");
-    sb.append("    usedAmountWithoutVAT: ").append(toIndentedString(usedAmountWithoutVAT)).append("\n");
-    sb.append("    localUsedAmountWithoutVAT: ").append(toIndentedString(localUsedAmountWithoutVAT)).append("\n");
-    sb.append("    creditAmount: ").append(toIndentedString(creditAmount)).append("\n");
-    sb.append("    localCreditAmount: ").append(toIndentedString(localCreditAmount)).append("\n");
-    sb.append("    creditAmountWithoutVAT: ").append(toIndentedString(creditAmountWithoutVAT)).append("\n");
-    sb.append("    localCreditAmountWithoutVAT: ").append(toIndentedString(localCreditAmountWithoutVAT)).append("\n");
-    sb.append("    usedAmount: ").append(toIndentedString(usedAmount)).append("\n");
-    sb.append("    localUsedAmount: ").append(toIndentedString(localUsedAmount)).append("\n");
-    sb.append("    paidCreditAmount: ").append(toIndentedString(paidCreditAmount)).append("\n");
-    sb.append("    localPaidCreditAmount: ").append(toIndentedString(localPaidCreditAmount)).append("\n");
-    sb.append("    paymentSourcePAmount: ").append(toIndentedString(paymentSourcePAmount)).append("\n");
-    sb.append("    remainUsedAmount: ").append(toIndentedString(remainUsedAmount)).append("\n");
-    sb.append("    localRemainUsedAmount: ").append(toIndentedString(localRemainUsedAmount)).append("\n");
-    sb.append("    remainUsedAmountWithoutVAT: ").append(toIndentedString(remainUsedAmountWithoutVAT)).append("\n");
-    sb.append("    localRemainUsedAmountWithoutVAT: ").append(toIndentedString(localRemainUsedAmountWithoutVAT)).append("\n");
-    sb.append("    correctionAmount: ").append(toIndentedString(correctionAmount)).append("\n");
-    sb.append("    localCorrectionAmount: ").append(toIndentedString(localCorrectionAmount)).append("\n");
-    sb.append("    correctionAmountWithoutVAT: ").append(toIndentedString(correctionAmountWithoutVAT)).append("\n");
-    sb.append("    localCorrectionAmountWithoutVAT: ").append(toIndentedString(localCorrectionAmountWithoutVAT)).append("\n");
-    sb.append("    correctedUsedAmount: ").append(toIndentedString(correctedUsedAmount)).append("\n");
-    sb.append("    localCorrectedUsedAmount: ").append(toIndentedString(localCorrectedUsedAmount)).append("\n");
+    sb.append("    localamount: ").append(toIndentedString(localamount)).append("\n");
+    sb.append("    paidamount: ").append(toIndentedString(paidamount)).append("\n");
+    sb.append("    localpaidamount: ").append(toIndentedString(localpaidamount)).append("\n");
+    sb.append("    notpaidamount: ").append(toIndentedString(notpaidamount)).append("\n");
+    sb.append("    localnotpaidamount: ").append(toIndentedString(localnotpaidamount)).append("\n");
+    sb.append("    closingperiodId: ").append(toIndentedString(closingperiodId)).append("\n");
+    sb.append("    lastpaymentperiodId: ").append(toIndentedString(lastpaymentperiodId)).append("\n");
+    sb.append("    isprofit: ").append(toIndentedString(isprofit)).append("\n");
+    sb.append("    addressId: ").append(toIndentedString(addressId)).append("\n");
+    sb.append("    vatcountryId: ").append(toIndentedString(vatcountryId)).append("\n");
+    sb.append("    amountwithoutvat: ").append(toIndentedString(amountwithoutvat)).append("\n");
+    sb.append("    localamountwithoutvat: ").append(toIndentedString(localamountwithoutvat)).append("\n");
+    sb.append("    vatdatedate: ").append(toIndentedString(vatdatedate)).append("\n");
+    sb.append("    vatdocument: ").append(toIndentedString(vatdocument)).append("\n");
+    sb.append("    priceswithvat: ").append(toIndentedString(priceswithvat)).append("\n");
+    sb.append("    tradetype: ").append(toIndentedString(tradetype)).append("\n");
+    sb.append("    tradetypedescription: ").append(toIndentedString(tradetypedescription)).append("\n");
+    sb.append("    vatrounding: ").append(toIndentedString(vatrounding)).append("\n");
+    sb.append("    vatfromaboveprecision: ").append(toIndentedString(vatfromaboveprecision)).append("\n");
+    sb.append("    roundingamount: ").append(toIndentedString(roundingamount)).append("\n");
+    sb.append("    localroundingamount: ").append(toIndentedString(localroundingamount)).append("\n");
+    sb.append("    isreversechargedeclared: ").append(toIndentedString(isreversechargedeclared)).append("\n");
+    sb.append("    simplifiedvatdocument: ").append(toIndentedString(simplifiedvatdocument)).append("\n");
+    sb.append("    vatreportpreference: ").append(toIndentedString(vatreportpreference)).append("\n");
+    sb.append("    externalnumber: ").append(toIndentedString(externalnumber)).append("\n");
+    sb.append("    vatbypayment: ").append(toIndentedString(vatbypayment)).append("\n");
+    sb.append("    vatbypaymentenddatedate: ").append(toIndentedString(vatbypaymentenddatedate)).append("\n");
+    sb.append("    usedamountwithoutvat: ").append(toIndentedString(usedamountwithoutvat)).append("\n");
+    sb.append("    localusedamountwithoutvat: ").append(toIndentedString(localusedamountwithoutvat)).append("\n");
+    sb.append("    creditamount: ").append(toIndentedString(creditamount)).append("\n");
+    sb.append("    localcreditamount: ").append(toIndentedString(localcreditamount)).append("\n");
+    sb.append("    creditamountwithoutvat: ").append(toIndentedString(creditamountwithoutvat)).append("\n");
+    sb.append("    localcreditamountwithoutvat: ").append(toIndentedString(localcreditamountwithoutvat)).append("\n");
+    sb.append("    usedamount: ").append(toIndentedString(usedamount)).append("\n");
+    sb.append("    localusedamount: ").append(toIndentedString(localusedamount)).append("\n");
+    sb.append("    paidcreditamount: ").append(toIndentedString(paidcreditamount)).append("\n");
+    sb.append("    localpaidcreditamount: ").append(toIndentedString(localpaidcreditamount)).append("\n");
+    sb.append("    paymentsourcepamount: ").append(toIndentedString(paymentsourcepamount)).append("\n");
+    sb.append("    remainusedamount: ").append(toIndentedString(remainusedamount)).append("\n");
+    sb.append("    localremainusedamount: ").append(toIndentedString(localremainusedamount)).append("\n");
+    sb.append("    remainusedamountwithoutvat: ").append(toIndentedString(remainusedamountwithoutvat)).append("\n");
+    sb.append("    localremainusedamountwithoutvat: ").append(toIndentedString(localremainusedamountwithoutvat)).append("\n");
+    sb.append("    correctionamount: ").append(toIndentedString(correctionamount)).append("\n");
+    sb.append("    localcorrectionamount: ").append(toIndentedString(localcorrectionamount)).append("\n");
+    sb.append("    correctionamountwithoutvat: ").append(toIndentedString(correctionamountwithoutvat)).append("\n");
+    sb.append("    localcorrectionamountwithoutvat: ").append(toIndentedString(localcorrectionamountwithoutvat)).append("\n");
+    sb.append("    correctedusedamount: ").append(toIndentedString(correctedusedamount)).append("\n");
+    sb.append("    localcorrectedusedamount: ").append(toIndentedString(localcorrectedusedamount)).append("\n");
     sb.append("    usable: ").append(toIndentedString(usable)).append("\n");
-    sb.append("    vATVoluntaryPaid: ").append(toIndentedString(vATVoluntaryPaid)).append("\n");
-    sb.append("    vATReportReference: ").append(toIndentedString(vATReportReference)).append("\n");
-    sb.append("    createdAtDATE: ").append(toIndentedString(createdAtDATE)).append("\n");
-    sb.append("    correctedAtDATE: ").append(toIndentedString(correctedAtDATE)).append("\n");
+    sb.append("    vatvoluntarypaid: ").append(toIndentedString(vatvoluntarypaid)).append("\n");
+    sb.append("    vatreportreference: ").append(toIndentedString(vatreportreference)).append("\n");
+    sb.append("    createdatdate: ").append(toIndentedString(createdatdate)).append("\n");
+    sb.append("    correctedatdate: ").append(toIndentedString(correctedatdate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

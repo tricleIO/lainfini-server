@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,192 +34,237 @@ import java.util.Objects;
 /**
  * Crmactivityparticipants
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Crmactivityparticipants   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("ParticipantUser_ID")
-  private String participantUserID = null;
+  @SerializedName("participantuser_id")
+  private String participantuserId = null;
 
-  @SerializedName("ParticipantRole_ID")
-  private String participantRoleID = null;
+  @SerializedName("participantrole_id")
+  private String participantroleId = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("CRMActivityCompetence")
-  private Integer cRMActivityCompetence = null;
+  @SerializedName("crmactivitycompetence")
+  private Integer crmactivitycompetence = null;
 
-  @SerializedName("VisibleInTimeSheet")
-  private Boolean visibleInTimeSheet = null;
+  @SerializedName("visibleintimesheet")
+  private Boolean visibleintimesheet = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Aktivita [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Aktivita [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Crmactivityparticipants participantUserID(String participantUserID) {
-    this.participantUserID = participantUserID;
+  public Crmactivityparticipants displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Účastník; ID objektu Uživatel [persistentní položka]
-   * @return participantUserID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Účastník; ID objektu Uživatel [persistentní položka]")
-  public String getParticipantUserID() {
-    return participantUserID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setParticipantUserID(String participantUserID) {
-    this.participantUserID = participantUserID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Crmactivityparticipants participantRoleID(String participantRoleID) {
-    this.participantRoleID = participantRoleID;
+  public Crmactivityparticipants id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Role účastníka; ID objektu Role [persistentní položka]
-   * @return participantRoleID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Role účastníka; ID objektu Role [persistentní položka]")
-  public String getParticipantRoleID() {
-    return participantRoleID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setParticipantRoleID(String participantRoleID) {
-    this.participantRoleID = participantRoleID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Crmactivityparticipants createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Crmactivityparticipants classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Crmactivityparticipants correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Crmactivityparticipants objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Crmactivityparticipants cRMActivityCompetence(Integer cRMActivityCompetence) {
-    this.cRMActivityCompetence = cRMActivityCompetence;
+  public Crmactivityparticipants parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Práva [persistentní položka]
-   * @return cRMActivityCompetence
+   * vlastník; id objektu aktivita [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Práva [persistentní položka]")
-  public Integer getCRMActivityCompetence() {
-    return cRMActivityCompetence;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu aktivita [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setCRMActivityCompetence(Integer cRMActivityCompetence) {
-    this.cRMActivityCompetence = cRMActivityCompetence;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Crmactivityparticipants visibleInTimeSheet(Boolean visibleInTimeSheet) {
-    this.visibleInTimeSheet = visibleInTimeSheet;
+  public Crmactivityparticipants participantuserId(String participantuserId) {
+    this.participantuserId = participantuserId;
     return this;
   }
 
    /**
-   * Zobrazovat v časovém plánu [persistentní položka]
-   * @return visibleInTimeSheet
+   * Účastník; id objektu uživatel [persistentní položka]
+   * @return participantuserId
   **/
-  @ApiModelProperty(example = "null", value = "Zobrazovat v časovém plánu [persistentní položka]")
-  public Boolean getVisibleInTimeSheet() {
-    return visibleInTimeSheet;
+  @ApiModelProperty(example = "null", value = "Účastník; id objektu uživatel [persistentní položka]")
+  public String getParticipantuserId() {
+    return participantuserId;
   }
 
-  public void setVisibleInTimeSheet(Boolean visibleInTimeSheet) {
-    this.visibleInTimeSheet = visibleInTimeSheet;
+  public void setParticipantuserId(String participantuserId) {
+    this.participantuserId = participantuserId;
+  }
+
+  public Crmactivityparticipants participantroleId(String participantroleId) {
+    this.participantroleId = participantroleId;
+    return this;
+  }
+
+   /**
+   * role účastníka; id objektu role [persistentní položka]
+   * @return participantroleId
+  **/
+  @ApiModelProperty(example = "null", value = "role účastníka; id objektu role [persistentní položka]")
+  public String getParticipantroleId() {
+    return participantroleId;
+  }
+
+  public void setParticipantroleId(String participantroleId) {
+    this.participantroleId = participantroleId;
+  }
+
+  public Crmactivityparticipants createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+    return this;
+  }
+
+   /**
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
+  }
+
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Crmactivityparticipants correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+    return this;
+  }
+
+   /**
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
+  }
+
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+  }
+
+  public Crmactivityparticipants crmactivitycompetence(Integer crmactivitycompetence) {
+    this.crmactivitycompetence = crmactivitycompetence;
+    return this;
+  }
+
+   /**
+   * práva [persistentní položka]
+   * @return crmactivitycompetence
+  **/
+  @ApiModelProperty(example = "null", value = "práva [persistentní položka]")
+  public Integer getCrmactivitycompetence() {
+    return crmactivitycompetence;
+  }
+
+  public void setCrmactivitycompetence(Integer crmactivitycompetence) {
+    this.crmactivitycompetence = crmactivitycompetence;
+  }
+
+  public Crmactivityparticipants visibleintimesheet(Boolean visibleintimesheet) {
+    this.visibleintimesheet = visibleintimesheet;
+    return this;
+  }
+
+   /**
+   * zobrazovat v časovém plánu [persistentní položka]
+   * @return visibleintimesheet
+  **/
+  @ApiModelProperty(example = "null", value = "zobrazovat v časovém plánu [persistentní položka]")
+  public Boolean getVisibleintimesheet() {
+    return visibleintimesheet;
+  }
+
+  public void setVisibleintimesheet(Boolean visibleintimesheet) {
+    this.visibleintimesheet = visibleintimesheet;
   }
 
 
@@ -232,22 +277,22 @@ public class Crmactivityparticipants   {
       return false;
     }
     Crmactivityparticipants crmactivityparticipants = (Crmactivityparticipants) o;
-    return Objects.equals(this.displayName, crmactivityparticipants.displayName) &&
-        Objects.equals(this.ID, crmactivityparticipants.ID) &&
-        Objects.equals(this.classID, crmactivityparticipants.classID) &&
-        Objects.equals(this.objVersion, crmactivityparticipants.objVersion) &&
-        Objects.equals(this.parentID, crmactivityparticipants.parentID) &&
-        Objects.equals(this.participantUserID, crmactivityparticipants.participantUserID) &&
-        Objects.equals(this.participantRoleID, crmactivityparticipants.participantRoleID) &&
-        Objects.equals(this.createdByID, crmactivityparticipants.createdByID) &&
-        Objects.equals(this.correctedByID, crmactivityparticipants.correctedByID) &&
-        Objects.equals(this.cRMActivityCompetence, crmactivityparticipants.cRMActivityCompetence) &&
-        Objects.equals(this.visibleInTimeSheet, crmactivityparticipants.visibleInTimeSheet);
+    return Objects.equals(this.displayname, crmactivityparticipants.displayname) &&
+        Objects.equals(this.id, crmactivityparticipants.id) &&
+        Objects.equals(this.classid, crmactivityparticipants.classid) &&
+        Objects.equals(this.objversion, crmactivityparticipants.objversion) &&
+        Objects.equals(this.parentId, crmactivityparticipants.parentId) &&
+        Objects.equals(this.participantuserId, crmactivityparticipants.participantuserId) &&
+        Objects.equals(this.participantroleId, crmactivityparticipants.participantroleId) &&
+        Objects.equals(this.createdbyId, crmactivityparticipants.createdbyId) &&
+        Objects.equals(this.correctedbyId, crmactivityparticipants.correctedbyId) &&
+        Objects.equals(this.crmactivitycompetence, crmactivityparticipants.crmactivitycompetence) &&
+        Objects.equals(this.visibleintimesheet, crmactivityparticipants.visibleintimesheet);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, participantUserID, participantRoleID, createdByID, correctedByID, cRMActivityCompetence, visibleInTimeSheet);
+    return Objects.hash(displayname, id, classid, objversion, parentId, participantuserId, participantroleId, createdbyId, correctedbyId, crmactivitycompetence, visibleintimesheet);
   }
 
   @Override
@@ -255,17 +300,17 @@ public class Crmactivityparticipants   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Crmactivityparticipants {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    participantUserID: ").append(toIndentedString(participantUserID)).append("\n");
-    sb.append("    participantRoleID: ").append(toIndentedString(participantRoleID)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    cRMActivityCompetence: ").append(toIndentedString(cRMActivityCompetence)).append("\n");
-    sb.append("    visibleInTimeSheet: ").append(toIndentedString(visibleInTimeSheet)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    participantuserId: ").append(toIndentedString(participantuserId)).append("\n");
+    sb.append("    participantroleId: ").append(toIndentedString(participantroleId)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    crmactivitycompetence: ").append(toIndentedString(crmactivitycompetence)).append("\n");
+    sb.append("    visibleintimesheet: ").append(toIndentedString(visibleintimesheet)).append("\n");
     sb.append("}");
     return sb.toString();
   }

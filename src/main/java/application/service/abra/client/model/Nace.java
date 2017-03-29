@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,69 +34,105 @@ import java.util.Objects;
 /**
  * Nace
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Nace   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("IsFinalLevel")
-  private Boolean isFinalLevel = null;
+  @SerializedName("isfinallevel")
+  private Boolean isfinallevel = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Nace displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Nace id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Nace classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Nace objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Nace hidden(Boolean hidden) {
@@ -105,10 +141,10 @@ public class Nace   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -117,22 +153,22 @@ public class Nace   {
     this.hidden = hidden;
   }
 
-  public Nace parentID(String parentID) {
-    this.parentID = parentID;
+  public Nace parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Nadřízený kód; ID objektu NACE kód [persistentní položka]
-   * @return parentID
+   * nadřízený kód; id objektu nace kód [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízený kód; ID objektu NACE kód [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "nadřízený kód; id objektu nace kód [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setParentID(String parentID) {
-    this.parentID = parentID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
   public Nace code(String code) {
@@ -141,10 +177,10 @@ public class Nace   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -159,10 +195,10 @@ public class Nace   {
   }
 
    /**
-   * Název NACE [persistentní položka]
+   * název nace [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název NACE [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název nace [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -171,22 +207,22 @@ public class Nace   {
     this.name = name;
   }
 
-  public Nace isFinalLevel(Boolean isFinalLevel) {
-    this.isFinalLevel = isFinalLevel;
+  public Nace isfinallevel(Boolean isfinallevel) {
+    this.isfinallevel = isfinallevel;
     return this;
   }
 
    /**
-   * Konečná úroveň
-   * @return isFinalLevel
+   * konečná úroveň
+   * @return isfinallevel
   **/
-  @ApiModelProperty(example = "null", value = "Konečná úroveň")
-  public Boolean getIsFinalLevel() {
-    return isFinalLevel;
+  @ApiModelProperty(example = "null", value = "konečná úroveň")
+  public Boolean getIsfinallevel() {
+    return isfinallevel;
   }
 
-  public void setIsFinalLevel(Boolean isFinalLevel) {
-    this.isFinalLevel = isFinalLevel;
+  public void setIsfinallevel(Boolean isfinallevel) {
+    this.isfinallevel = isfinallevel;
   }
 
 
@@ -199,20 +235,20 @@ public class Nace   {
       return false;
     }
     Nace nace = (Nace) o;
-    return Objects.equals(this.displayName, nace.displayName) &&
-        Objects.equals(this.ID, nace.ID) &&
-        Objects.equals(this.classID, nace.classID) &&
-        Objects.equals(this.objVersion, nace.objVersion) &&
+    return Objects.equals(this.displayname, nace.displayname) &&
+        Objects.equals(this.id, nace.id) &&
+        Objects.equals(this.classid, nace.classid) &&
+        Objects.equals(this.objversion, nace.objversion) &&
         Objects.equals(this.hidden, nace.hidden) &&
-        Objects.equals(this.parentID, nace.parentID) &&
+        Objects.equals(this.parentId, nace.parentId) &&
         Objects.equals(this.code, nace.code) &&
         Objects.equals(this.name, nace.name) &&
-        Objects.equals(this.isFinalLevel, nace.isFinalLevel);
+        Objects.equals(this.isfinallevel, nace.isfinallevel);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, parentID, code, name, isFinalLevel);
+    return Objects.hash(displayname, id, classid, objversion, hidden, parentId, code, name, isfinallevel);
   }
 
   @Override
@@ -220,15 +256,15 @@ public class Nace   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Nace {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    isFinalLevel: ").append(toIndentedString(isFinalLevel)).append("\n");
+    sb.append("    isfinallevel: ").append(toIndentedString(isfinallevel)).append("\n");
     sb.append("}");
     return sb.toString();
   }

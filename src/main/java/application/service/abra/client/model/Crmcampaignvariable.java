@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,66 +34,102 @@ import java.util.Objects;
 /**
  * Crmcampaignvariable
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Crmcampaignvariable   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Expression")
+  @SerializedName("expression")
   private String expression = null;
 
-  @SerializedName("DataType")
-  private Integer dataType = null;
+  @SerializedName("datatype")
+  private Integer datatype = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Crmcampaignvariable displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Crmcampaignvariable id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Crmcampaignvariable classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Crmcampaignvariable objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Crmcampaignvariable hidden(Boolean hidden) {
@@ -102,10 +138,10 @@ public class Crmcampaignvariable   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -120,10 +156,10 @@ public class Crmcampaignvariable   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -138,10 +174,10 @@ public class Crmcampaignvariable   {
   }
 
    /**
-   * Výraz [persistentní položka]
+   * výraz [persistentní položka]
    * @return expression
   **/
-  @ApiModelProperty(example = "null", value = "Výraz [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "výraz [persistentní položka]")
   public String getExpression() {
     return expression;
   }
@@ -150,22 +186,22 @@ public class Crmcampaignvariable   {
     this.expression = expression;
   }
 
-  public Crmcampaignvariable dataType(Integer dataType) {
-    this.dataType = dataType;
+  public Crmcampaignvariable datatype(Integer datatype) {
+    this.datatype = datatype;
     return this;
   }
 
    /**
-   * Datový typ [persistentní položka]
-   * @return dataType
+   * datový typ [persistentní položka]
+   * @return datatype
   **/
-  @ApiModelProperty(example = "null", value = "Datový typ [persistentní položka]")
-  public Integer getDataType() {
-    return dataType;
+  @ApiModelProperty(example = "null", value = "datový typ [persistentní položka]")
+  public Integer getDatatype() {
+    return datatype;
   }
 
-  public void setDataType(Integer dataType) {
-    this.dataType = dataType;
+  public void setDatatype(Integer datatype) {
+    this.datatype = datatype;
   }
 
 
@@ -178,19 +214,19 @@ public class Crmcampaignvariable   {
       return false;
     }
     Crmcampaignvariable crmcampaignvariable = (Crmcampaignvariable) o;
-    return Objects.equals(this.displayName, crmcampaignvariable.displayName) &&
-        Objects.equals(this.ID, crmcampaignvariable.ID) &&
-        Objects.equals(this.classID, crmcampaignvariable.classID) &&
-        Objects.equals(this.objVersion, crmcampaignvariable.objVersion) &&
+    return Objects.equals(this.displayname, crmcampaignvariable.displayname) &&
+        Objects.equals(this.id, crmcampaignvariable.id) &&
+        Objects.equals(this.classid, crmcampaignvariable.classid) &&
+        Objects.equals(this.objversion, crmcampaignvariable.objversion) &&
         Objects.equals(this.hidden, crmcampaignvariable.hidden) &&
         Objects.equals(this.name, crmcampaignvariable.name) &&
         Objects.equals(this.expression, crmcampaignvariable.expression) &&
-        Objects.equals(this.dataType, crmcampaignvariable.dataType);
+        Objects.equals(this.datatype, crmcampaignvariable.datatype);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, name, expression, dataType);
+    return Objects.hash(displayname, id, classid, objversion, hidden, name, expression, datatype);
   }
 
   @Override
@@ -198,14 +234,14 @@ public class Crmcampaignvariable   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Crmcampaignvariable {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    expression: ").append(toIndentedString(expression)).append("\n");
-    sb.append("    dataType: ").append(toIndentedString(dataType)).append("\n");
+    sb.append("    datatype: ").append(toIndentedString(datatype)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,102 +37,138 @@ import java.util.Objects;
 /**
  * Maininvprotocolrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Maininvprotocolrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Maininvprotocolbatch> rows = new ArrayList<Maininvprotocolbatch>();
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("DocumentedQuantity")
-  private Double documentedQuantity = null;
+  @SerializedName("documentedquantity")
+  private Double documentedquantity = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("RealQuantity")
-  private Double realQuantity = null;
+  @SerializedName("realquantity")
+  private Double realquantity = null;
 
-  @SerializedName("Completed")
+  @SerializedName("completed")
   private Boolean completed = null;
 
-  @SerializedName("MIPPosition_ID")
-  private String mIPPositionID = null;
+  @SerializedName("mipposition_id")
+  private String mippositionId = null;
 
-  @SerializedName("OrderFlow")
-  private Integer orderFlow = null;
+  @SerializedName("orderflow")
+  private Integer orderflow = null;
 
-  @SerializedName("Closed")
+  @SerializedName("closed")
   private Boolean closed = null;
 
-  @SerializedName("InventoryBegin$DATE")
-  private DateTime inventoryBeginDATE = null;
+  @SerializedName("inventorybegin$date")
+  private DateTime inventorybegindate = null;
 
-  @SerializedName("UnitDocumentedQuantity")
-  private Double unitDocumentedQuantity = null;
+  @SerializedName("unitdocumentedquantity")
+  private Double unitdocumentedquantity = null;
 
-  @SerializedName("UnitRealQuantity")
-  private Double unitRealQuantity = null;
+  @SerializedName("unitrealquantity")
+  private Double unitrealquantity = null;
 
-  @SerializedName("ReadyToClose")
-  private Boolean readyToClose = null;
+  @SerializedName("readytoclose")
+  private Boolean readytoclose = null;
 
-  @SerializedName("IncorrectBatches")
-  private Boolean incorrectBatches = null;
+  @SerializedName("incorrectbatches")
+  private Boolean incorrectbatches = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Maininvprotocolrow displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Maininvprotocolrow id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Maininvprotocolrow classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Maininvprotocolrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Maininvprotocolrow rows(List<Maininvprotocolbatch> rows) {
@@ -146,10 +182,10 @@ public class Maininvprotocolrow   {
   }
 
    /**
-   * Řádky; kolekce BO Hlavní inventární protokol - šarže [nepersistentní položka]
+   * Řádky; kolekce bo hlavní inventární protokol - šarže [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Hlavní inventární protokol - šarže [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo hlavní inventární protokol - šarže [nepersistentní položka]")
   public List<Maininvprotocolbatch> getRows() {
     return rows;
   }
@@ -158,202 +194,274 @@ public class Maininvprotocolrow   {
     this.rows = rows;
   }
 
-  public Maininvprotocolrow parentID(String parentID) {
-    this.parentID = parentID;
+  public Maininvprotocolrow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Hlavní inventární protokol; ID objektu Hlavní inventární protokol [persistentní položka]
-   * @return parentID
+   * hlavní inventární protokol; id objektu hlavní inventární protokol [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Hlavní inventární protokol; ID objektu Hlavní inventární protokol [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "hlavní inventární protokol; id objektu hlavní inventární protokol [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setParentID(String parentID) {
-    this.parentID = parentID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Maininvprotocolrow storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Maininvprotocolrow storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * skladová karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
   }
 
-   /**
-   * Evidenční množství [persistentní položka]
-   * @return documentedQuantity
-  **/
-  @ApiModelProperty(example = "null", value = "Evidenční množství [persistentní položka]")
-  public Double getDocumentedQuantity() {
-    return documentedQuantity;
-  }
-
-  public Maininvprotocolrow qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Maininvprotocolrow documentedquantity(Double documentedquantity) {
+    this.documentedquantity = documentedquantity;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * evidenční množství [persistentní položka]
+   * @return documentedquantity
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "evidenční množství [persistentní položka]")
+  public Double getDocumentedquantity() {
+    return documentedquantity;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setDocumentedquantity(Double documentedquantity) {
+    this.documentedquantity = documentedquantity;
   }
 
-  public Maininvprotocolrow unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Maininvprotocolrow qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return unitRate
+   * jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
+  }
+
+  public Maininvprotocolrow unitrate(Double unitrate) {
+    this.unitrate = unitrate;
+    return this;
   }
 
    /**
-   * Zjištěné množství [persistentní položka]
-   * @return realQuantity
+   * vztah [persistentní položka]
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Zjištěné množství [persistentní položka]")
-  public Double getRealQuantity() {
-    return realQuantity;
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
+  }
+
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
+  }
+
+  public Maininvprotocolrow realquantity(Double realquantity) {
+    this.realquantity = realquantity;
+    return this;
   }
 
    /**
-   * Kompletní [persistentní položka]
+   * zjištěné množství [persistentní položka]
+   * @return realquantity
+  **/
+  @ApiModelProperty(example = "null", value = "zjištěné množství [persistentní položka]")
+  public Double getRealquantity() {
+    return realquantity;
+  }
+
+  public void setRealquantity(Double realquantity) {
+    this.realquantity = realquantity;
+  }
+
+  public Maininvprotocolrow completed(Boolean completed) {
+    this.completed = completed;
+    return this;
+  }
+
+   /**
+   * kompletní [persistentní položka]
    * @return completed
   **/
-  @ApiModelProperty(example = "null", value = "Kompletní [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kompletní [persistentní položka]")
   public Boolean getCompleted() {
     return completed;
   }
 
-  public Maininvprotocolrow mIPPositionID(String mIPPositionID) {
-    this.mIPPositionID = mIPPositionID;
+  public void setCompleted(Boolean completed) {
+    this.completed = completed;
+  }
+
+  public Maininvprotocolrow mippositionId(String mippositionId) {
+    this.mippositionId = mippositionId;
     return this;
   }
 
    /**
-   * Pozice; ID objektu Hlavní inventární protokol - pozice [persistentní položka]
-   * @return mIPPositionID
+   * pozice; id objektu hlavní inventární protokol - pozice [persistentní položka]
+   * @return mippositionId
   **/
-  @ApiModelProperty(example = "null", value = "Pozice; ID objektu Hlavní inventární protokol - pozice [persistentní položka]")
-  public String getMIPPositionID() {
-    return mIPPositionID;
+  @ApiModelProperty(example = "null", value = "pozice; id objektu hlavní inventární protokol - pozice [persistentní položka]")
+  public String getMippositionId() {
+    return mippositionId;
   }
 
-  public void setMIPPositionID(String mIPPositionID) {
-    this.mIPPositionID = mIPPositionID;
+  public void setMippositionId(String mippositionId) {
+    this.mippositionId = mippositionId;
+  }
+
+  public Maininvprotocolrow orderflow(Integer orderflow) {
+    this.orderflow = orderflow;
+    return this;
   }
 
    /**
-   * OrderFlow [persistentní položka]
-   * @return orderFlow
+   * orderflow [persistentní položka]
+   * @return orderflow
   **/
-  @ApiModelProperty(example = "null", value = "OrderFlow [persistentní položka]")
-  public Integer getOrderFlow() {
-    return orderFlow;
+  @ApiModelProperty(example = "null", value = "orderflow [persistentní položka]")
+  public Integer getOrderflow() {
+    return orderflow;
+  }
+
+  public void setOrderflow(Integer orderflow) {
+    this.orderflow = orderflow;
+  }
+
+  public Maininvprotocolrow closed(Boolean closed) {
+    this.closed = closed;
+    return this;
   }
 
    /**
-   * Uzavřen [persistentní položka]
+   * uzavřen [persistentní položka]
    * @return closed
   **/
-  @ApiModelProperty(example = "null", value = "Uzavřen [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "uzavřen [persistentní položka]")
   public Boolean getClosed() {
     return closed;
   }
 
-   /**
-   * Vložení do inventury [persistentní položka]
-   * @return inventoryBeginDATE
-  **/
-  @ApiModelProperty(example = "null", value = "Vložení do inventury [persistentní položka]")
-  public DateTime getInventoryBeginDATE() {
-    return inventoryBeginDATE;
+  public void setClosed(Boolean closed) {
+    this.closed = closed;
   }
 
-  public Maininvprotocolrow unitDocumentedQuantity(Double unitDocumentedQuantity) {
-    this.unitDocumentedQuantity = unitDocumentedQuantity;
+  public Maininvprotocolrow inventorybegindate(DateTime inventorybegindate) {
+    this.inventorybegindate = inventorybegindate;
     return this;
   }
 
    /**
-   * Evidenční množství
-   * @return unitDocumentedQuantity
+   * vložení do inventury [persistentní položka]
+   * @return inventorybegindate
   **/
-  @ApiModelProperty(example = "null", value = "Evidenční množství")
-  public Double getUnitDocumentedQuantity() {
-    return unitDocumentedQuantity;
+  @ApiModelProperty(example = "null", value = "vložení do inventury [persistentní položka]")
+  public DateTime getInventorybegindate() {
+    return inventorybegindate;
   }
 
-  public void setUnitDocumentedQuantity(Double unitDocumentedQuantity) {
-    this.unitDocumentedQuantity = unitDocumentedQuantity;
+  public void setInventorybegindate(DateTime inventorybegindate) {
+    this.inventorybegindate = inventorybegindate;
   }
 
-   /**
-   * Zjištěné množství
-   * @return unitRealQuantity
-  **/
-  @ApiModelProperty(example = "null", value = "Zjištěné množství")
-  public Double getUnitRealQuantity() {
-    return unitRealQuantity;
-  }
-
-  public Maininvprotocolrow readyToClose(Boolean readyToClose) {
-    this.readyToClose = readyToClose;
+  public Maininvprotocolrow unitdocumentedquantity(Double unitdocumentedquantity) {
+    this.unitdocumentedquantity = unitdocumentedquantity;
     return this;
   }
 
    /**
-   * K uzavření
-   * @return readyToClose
+   * evidenční množství
+   * @return unitdocumentedquantity
   **/
-  @ApiModelProperty(example = "null", value = "K uzavření")
-  public Boolean getReadyToClose() {
-    return readyToClose;
+  @ApiModelProperty(example = "null", value = "evidenční množství")
+  public Double getUnitdocumentedquantity() {
+    return unitdocumentedquantity;
   }
 
-  public void setReadyToClose(Boolean readyToClose) {
-    this.readyToClose = readyToClose;
+  public void setUnitdocumentedquantity(Double unitdocumentedquantity) {
+    this.unitdocumentedquantity = unitdocumentedquantity;
+  }
+
+  public Maininvprotocolrow unitrealquantity(Double unitrealquantity) {
+    this.unitrealquantity = unitrealquantity;
+    return this;
   }
 
    /**
-   * Nesprávné šarže [persistentní položka]
-   * @return incorrectBatches
+   * zjištěné množství
+   * @return unitrealquantity
   **/
-  @ApiModelProperty(example = "null", value = "Nesprávné šarže [persistentní položka]")
-  public Boolean getIncorrectBatches() {
-    return incorrectBatches;
+  @ApiModelProperty(example = "null", value = "zjištěné množství")
+  public Double getUnitrealquantity() {
+    return unitrealquantity;
+  }
+
+  public void setUnitrealquantity(Double unitrealquantity) {
+    this.unitrealquantity = unitrealquantity;
+  }
+
+  public Maininvprotocolrow readytoclose(Boolean readytoclose) {
+    this.readytoclose = readytoclose;
+    return this;
+  }
+
+   /**
+   * k uzavření
+   * @return readytoclose
+  **/
+  @ApiModelProperty(example = "null", value = "k uzavření")
+  public Boolean getReadytoclose() {
+    return readytoclose;
+  }
+
+  public void setReadytoclose(Boolean readytoclose) {
+    this.readytoclose = readytoclose;
+  }
+
+  public Maininvprotocolrow incorrectbatches(Boolean incorrectbatches) {
+    this.incorrectbatches = incorrectbatches;
+    return this;
+  }
+
+   /**
+   * nesprávné šarže [persistentní položka]
+   * @return incorrectbatches
+  **/
+  @ApiModelProperty(example = "null", value = "nesprávné šarže [persistentní položka]")
+  public Boolean getIncorrectbatches() {
+    return incorrectbatches;
+  }
+
+  public void setIncorrectbatches(Boolean incorrectbatches) {
+    this.incorrectbatches = incorrectbatches;
   }
 
 
@@ -366,31 +474,31 @@ public class Maininvprotocolrow   {
       return false;
     }
     Maininvprotocolrow maininvprotocolrow = (Maininvprotocolrow) o;
-    return Objects.equals(this.displayName, maininvprotocolrow.displayName) &&
-        Objects.equals(this.ID, maininvprotocolrow.ID) &&
-        Objects.equals(this.classID, maininvprotocolrow.classID) &&
-        Objects.equals(this.objVersion, maininvprotocolrow.objVersion) &&
+    return Objects.equals(this.displayname, maininvprotocolrow.displayname) &&
+        Objects.equals(this.id, maininvprotocolrow.id) &&
+        Objects.equals(this.classid, maininvprotocolrow.classid) &&
+        Objects.equals(this.objversion, maininvprotocolrow.objversion) &&
         Objects.equals(this.rows, maininvprotocolrow.rows) &&
-        Objects.equals(this.parentID, maininvprotocolrow.parentID) &&
-        Objects.equals(this.storeCardID, maininvprotocolrow.storeCardID) &&
-        Objects.equals(this.documentedQuantity, maininvprotocolrow.documentedQuantity) &&
-        Objects.equals(this.qUnit, maininvprotocolrow.qUnit) &&
-        Objects.equals(this.unitRate, maininvprotocolrow.unitRate) &&
-        Objects.equals(this.realQuantity, maininvprotocolrow.realQuantity) &&
+        Objects.equals(this.parentId, maininvprotocolrow.parentId) &&
+        Objects.equals(this.storecardId, maininvprotocolrow.storecardId) &&
+        Objects.equals(this.documentedquantity, maininvprotocolrow.documentedquantity) &&
+        Objects.equals(this.qunit, maininvprotocolrow.qunit) &&
+        Objects.equals(this.unitrate, maininvprotocolrow.unitrate) &&
+        Objects.equals(this.realquantity, maininvprotocolrow.realquantity) &&
         Objects.equals(this.completed, maininvprotocolrow.completed) &&
-        Objects.equals(this.mIPPositionID, maininvprotocolrow.mIPPositionID) &&
-        Objects.equals(this.orderFlow, maininvprotocolrow.orderFlow) &&
+        Objects.equals(this.mippositionId, maininvprotocolrow.mippositionId) &&
+        Objects.equals(this.orderflow, maininvprotocolrow.orderflow) &&
         Objects.equals(this.closed, maininvprotocolrow.closed) &&
-        Objects.equals(this.inventoryBeginDATE, maininvprotocolrow.inventoryBeginDATE) &&
-        Objects.equals(this.unitDocumentedQuantity, maininvprotocolrow.unitDocumentedQuantity) &&
-        Objects.equals(this.unitRealQuantity, maininvprotocolrow.unitRealQuantity) &&
-        Objects.equals(this.readyToClose, maininvprotocolrow.readyToClose) &&
-        Objects.equals(this.incorrectBatches, maininvprotocolrow.incorrectBatches);
+        Objects.equals(this.inventorybegindate, maininvprotocolrow.inventorybegindate) &&
+        Objects.equals(this.unitdocumentedquantity, maininvprotocolrow.unitdocumentedquantity) &&
+        Objects.equals(this.unitrealquantity, maininvprotocolrow.unitrealquantity) &&
+        Objects.equals(this.readytoclose, maininvprotocolrow.readytoclose) &&
+        Objects.equals(this.incorrectbatches, maininvprotocolrow.incorrectbatches);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, parentID, storeCardID, documentedQuantity, qUnit, unitRate, realQuantity, completed, mIPPositionID, orderFlow, closed, inventoryBeginDATE, unitDocumentedQuantity, unitRealQuantity, readyToClose, incorrectBatches);
+    return Objects.hash(displayname, id, classid, objversion, rows, parentId, storecardId, documentedquantity, qunit, unitrate, realquantity, completed, mippositionId, orderflow, closed, inventorybegindate, unitdocumentedquantity, unitrealquantity, readytoclose, incorrectbatches);
   }
 
   @Override
@@ -398,26 +506,26 @@ public class Maininvprotocolrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Maininvprotocolrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    documentedQuantity: ").append(toIndentedString(documentedQuantity)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    realQuantity: ").append(toIndentedString(realQuantity)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    documentedquantity: ").append(toIndentedString(documentedquantity)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    realquantity: ").append(toIndentedString(realquantity)).append("\n");
     sb.append("    completed: ").append(toIndentedString(completed)).append("\n");
-    sb.append("    mIPPositionID: ").append(toIndentedString(mIPPositionID)).append("\n");
-    sb.append("    orderFlow: ").append(toIndentedString(orderFlow)).append("\n");
+    sb.append("    mippositionId: ").append(toIndentedString(mippositionId)).append("\n");
+    sb.append("    orderflow: ").append(toIndentedString(orderflow)).append("\n");
     sb.append("    closed: ").append(toIndentedString(closed)).append("\n");
-    sb.append("    inventoryBeginDATE: ").append(toIndentedString(inventoryBeginDATE)).append("\n");
-    sb.append("    unitDocumentedQuantity: ").append(toIndentedString(unitDocumentedQuantity)).append("\n");
-    sb.append("    unitRealQuantity: ").append(toIndentedString(unitRealQuantity)).append("\n");
-    sb.append("    readyToClose: ").append(toIndentedString(readyToClose)).append("\n");
-    sb.append("    incorrectBatches: ").append(toIndentedString(incorrectBatches)).append("\n");
+    sb.append("    inventorybegindate: ").append(toIndentedString(inventorybegindate)).append("\n");
+    sb.append("    unitdocumentedquantity: ").append(toIndentedString(unitdocumentedquantity)).append("\n");
+    sb.append("    unitrealquantity: ").append(toIndentedString(unitrealquantity)).append("\n");
+    sb.append("    readytoclose: ").append(toIndentedString(readytoclose)).append("\n");
+    sb.append("    incorrectbatches: ").append(toIndentedString(incorrectbatches)).append("\n");
     sb.append("}");
     return sb.toString();
   }

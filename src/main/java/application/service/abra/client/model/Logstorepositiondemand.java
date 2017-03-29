@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,144 +34,189 @@ import java.util.Objects;
 /**
  * Logstorepositiondemand
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Logstorepositiondemand   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("BasicSpace")
-  private Double basicSpace = null;
+  @SerializedName("basicspace")
+  private Double basicspace = null;
 
-  @SerializedName("BasicWeight")
-  private Double basicWeight = null;
+  @SerializedName("basicweight")
+  private Double basicweight = null;
 
-  @SerializedName("MaxQuantity")
-  private Integer maxQuantity = null;
+  @SerializedName("maxquantity")
+  private Integer maxquantity = null;
 
-  @SerializedName("UnitQuantity")
-  private Double unitQuantity = null;
+  @SerializedName("unitquantity")
+  private Double unitquantity = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Skladová pozice [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Skladová pozice [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Logstorepositiondemand storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Logstorepositiondemand displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Logstorepositiondemand qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Logstorepositiondemand id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Logstorepositiondemand unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Logstorepositiondemand classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Převodní vztah jedn. [persistentní položka]
-   * @return unitRate
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Převodní vztah jedn. [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Logstorepositiondemand objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Logstorepositiondemand parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu skladová pozice [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu skladová pozice [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Logstorepositiondemand storecardId(String storecardId) {
+    this.storecardId = storecardId;
+    return this;
+  }
+
+   /**
+   * skladová karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
+  **/
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
+  }
+
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
+  }
+
+  public Logstorepositiondemand qunit(String qunit) {
+    this.qunit = qunit;
+    return this;
+  }
+
+   /**
+   * jednotka [persistentní položka]
+   * @return qunit
+  **/
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
+  }
+
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
+  }
+
+  public Logstorepositiondemand unitrate(Double unitrate) {
+    this.unitrate = unitrate;
+    return this;
+  }
+
+   /**
+   * převodní vztah jedn. [persistentní položka]
+   * @return unitrate
+  **/
+  @ApiModelProperty(example = "null", value = "převodní vztah jedn. [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
+  }
+
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
   public Logstorepositiondemand quantity(Double quantity) {
@@ -180,10 +225,10 @@ public class Logstorepositiondemand   {
   }
 
    /**
-   * Množství [persistentní položka]
+   * množství [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "množství [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -192,49 +237,76 @@ public class Logstorepositiondemand   {
     this.quantity = quantity;
   }
 
-   /**
-   * Objem přednost. naskl.
-   * @return basicSpace
-  **/
-  @ApiModelProperty(example = "null", value = "Objem přednost. naskl.")
-  public Double getBasicSpace() {
-    return basicSpace;
-  }
-
-   /**
-   * Hmotnost přednost. naskl.
-   * @return basicWeight
-  **/
-  @ApiModelProperty(example = "null", value = "Hmotnost přednost. naskl.")
-  public Double getBasicWeight() {
-    return basicWeight;
-  }
-
-   /**
-   * Možné maximum
-   * @return maxQuantity
-  **/
-  @ApiModelProperty(example = "null", value = "Možné maximum")
-  public Integer getMaxQuantity() {
-    return maxQuantity;
-  }
-
-  public Logstorepositiondemand unitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public Logstorepositiondemand basicspace(Double basicspace) {
+    this.basicspace = basicspace;
     return this;
   }
 
    /**
-   * Množství v ev. jedn.
-   * @return unitQuantity
+   * objem přednost. naskl.
+   * @return basicspace
   **/
-  @ApiModelProperty(example = "null", value = "Množství v ev. jedn.")
-  public Double getUnitQuantity() {
-    return unitQuantity;
+  @ApiModelProperty(example = "null", value = "objem přednost. naskl.")
+  public Double getBasicspace() {
+    return basicspace;
   }
 
-  public void setUnitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public void setBasicspace(Double basicspace) {
+    this.basicspace = basicspace;
+  }
+
+  public Logstorepositiondemand basicweight(Double basicweight) {
+    this.basicweight = basicweight;
+    return this;
+  }
+
+   /**
+   * hmotnost přednost. naskl.
+   * @return basicweight
+  **/
+  @ApiModelProperty(example = "null", value = "hmotnost přednost. naskl.")
+  public Double getBasicweight() {
+    return basicweight;
+  }
+
+  public void setBasicweight(Double basicweight) {
+    this.basicweight = basicweight;
+  }
+
+  public Logstorepositiondemand maxquantity(Integer maxquantity) {
+    this.maxquantity = maxquantity;
+    return this;
+  }
+
+   /**
+   * možné maximum
+   * @return maxquantity
+  **/
+  @ApiModelProperty(example = "null", value = "možné maximum")
+  public Integer getMaxquantity() {
+    return maxquantity;
+  }
+
+  public void setMaxquantity(Integer maxquantity) {
+    this.maxquantity = maxquantity;
+  }
+
+  public Logstorepositiondemand unitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
+    return this;
+  }
+
+   /**
+   * množství v ev. jedn.
+   * @return unitquantity
+  **/
+  @ApiModelProperty(example = "null", value = "množství v ev. jedn.")
+  public Double getUnitquantity() {
+    return unitquantity;
+  }
+
+  public void setUnitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
   }
 
 
@@ -247,24 +319,24 @@ public class Logstorepositiondemand   {
       return false;
     }
     Logstorepositiondemand logstorepositiondemand = (Logstorepositiondemand) o;
-    return Objects.equals(this.displayName, logstorepositiondemand.displayName) &&
-        Objects.equals(this.ID, logstorepositiondemand.ID) &&
-        Objects.equals(this.classID, logstorepositiondemand.classID) &&
-        Objects.equals(this.objVersion, logstorepositiondemand.objVersion) &&
-        Objects.equals(this.parentID, logstorepositiondemand.parentID) &&
-        Objects.equals(this.storeCardID, logstorepositiondemand.storeCardID) &&
-        Objects.equals(this.qUnit, logstorepositiondemand.qUnit) &&
-        Objects.equals(this.unitRate, logstorepositiondemand.unitRate) &&
+    return Objects.equals(this.displayname, logstorepositiondemand.displayname) &&
+        Objects.equals(this.id, logstorepositiondemand.id) &&
+        Objects.equals(this.classid, logstorepositiondemand.classid) &&
+        Objects.equals(this.objversion, logstorepositiondemand.objversion) &&
+        Objects.equals(this.parentId, logstorepositiondemand.parentId) &&
+        Objects.equals(this.storecardId, logstorepositiondemand.storecardId) &&
+        Objects.equals(this.qunit, logstorepositiondemand.qunit) &&
+        Objects.equals(this.unitrate, logstorepositiondemand.unitrate) &&
         Objects.equals(this.quantity, logstorepositiondemand.quantity) &&
-        Objects.equals(this.basicSpace, logstorepositiondemand.basicSpace) &&
-        Objects.equals(this.basicWeight, logstorepositiondemand.basicWeight) &&
-        Objects.equals(this.maxQuantity, logstorepositiondemand.maxQuantity) &&
-        Objects.equals(this.unitQuantity, logstorepositiondemand.unitQuantity);
+        Objects.equals(this.basicspace, logstorepositiondemand.basicspace) &&
+        Objects.equals(this.basicweight, logstorepositiondemand.basicweight) &&
+        Objects.equals(this.maxquantity, logstorepositiondemand.maxquantity) &&
+        Objects.equals(this.unitquantity, logstorepositiondemand.unitquantity);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, storeCardID, qUnit, unitRate, quantity, basicSpace, basicWeight, maxQuantity, unitQuantity);
+    return Objects.hash(displayname, id, classid, objversion, parentId, storecardId, qunit, unitrate, quantity, basicspace, basicweight, maxquantity, unitquantity);
   }
 
   @Override
@@ -272,19 +344,19 @@ public class Logstorepositiondemand   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Logstorepositiondemand {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    basicSpace: ").append(toIndentedString(basicSpace)).append("\n");
-    sb.append("    basicWeight: ").append(toIndentedString(basicWeight)).append("\n");
-    sb.append("    maxQuantity: ").append(toIndentedString(maxQuantity)).append("\n");
-    sb.append("    unitQuantity: ").append(toIndentedString(unitQuantity)).append("\n");
+    sb.append("    basicspace: ").append(toIndentedString(basicspace)).append("\n");
+    sb.append("    basicweight: ").append(toIndentedString(basicweight)).append("\n");
+    sb.append("    maxquantity: ").append(toIndentedString(maxquantity)).append("\n");
+    sb.append("    unitquantity: ").append(toIndentedString(unitquantity)).append("\n");
     sb.append("}");
     return sb.toString();
   }

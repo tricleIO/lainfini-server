@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,192 +34,237 @@ import java.util.Objects;
 /**
  * Storecarddrcarticle
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Storecarddrcarticle   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Country_ID")
-  private String countryID = null;
+  @SerializedName("country_id")
+  private String countryId = null;
 
-  @SerializedName("DRCVATMode")
-  private Boolean dRCVATMode = null;
+  @SerializedName("drcvatmode")
+  private Boolean drcvatmode = null;
 
-  @SerializedName("DRCArticle_ID")
-  private String dRCArticleID = null;
+  @SerializedName("drcarticle_id")
+  private String drcarticleId = null;
 
-  @SerializedName("DRCArticleUnitRate")
-  private Double dRCArticleUnitRate = null;
+  @SerializedName("drcarticleunitrate")
+  private Double drcarticleunitrate = null;
 
-  @SerializedName("DRCArticleUnitRateRef")
-  private Double dRCArticleUnitRateRef = null;
+  @SerializedName("drcarticleunitrateref")
+  private Double drcarticleunitrateref = null;
 
-  @SerializedName("DRCArticleQUnit")
-  private String dRCArticleQUnit = null;
+  @SerializedName("drcarticlequnit")
+  private String drcarticlequnit = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Hlavičkový objekt [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Hlavičkový objekt [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Storecarddrcarticle countryID(String countryID) {
-    this.countryID = countryID;
+  public Storecarddrcarticle displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Země; ID objektu Země [persistentní položka]
-   * @return countryID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Země; ID objektu Země [persistentní položka]")
-  public String getCountryID() {
-    return countryID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setCountryID(String countryID) {
-    this.countryID = countryID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Storecarddrcarticle dRCVATMode(Boolean dRCVATMode) {
-    this.dRCVATMode = dRCVATMode;
+  public Storecarddrcarticle id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Režim Přenesení daňové povinnosti [persistentní položka]
-   * @return dRCVATMode
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Režim Přenesení daňové povinnosti [persistentní položka]")
-  public Boolean getDRCVATMode() {
-    return dRCVATMode;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDRCVATMode(Boolean dRCVATMode) {
-    this.dRCVATMode = dRCVATMode;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Storecarddrcarticle dRCArticleID(String dRCArticleID) {
-    this.dRCArticleID = dRCArticleID;
+  public Storecarddrcarticle classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Typ plnění - přenesení DP; ID objektu Kód typu plnění [persistentní položka]
-   * @return dRCArticleID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Typ plnění - přenesení DP; ID objektu Kód typu plnění [persistentní položka]")
-  public String getDRCArticleID() {
-    return dRCArticleID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setDRCArticleID(String dRCArticleID) {
-    this.dRCArticleID = dRCArticleID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Storecarddrcarticle dRCArticleUnitRate(Double dRCArticleUnitRate) {
-    this.dRCArticleUnitRate = dRCArticleUnitRate;
+  public Storecarddrcarticle objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Vztah jednotky typu plnění [persistentní položka]
-   * @return dRCArticleUnitRate
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vztah jednotky typu plnění [persistentní položka]")
-  public Double getDRCArticleUnitRate() {
-    return dRCArticleUnitRate;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setDRCArticleUnitRate(Double dRCArticleUnitRate) {
-    this.dRCArticleUnitRate = dRCArticleUnitRate;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Storecarddrcarticle dRCArticleUnitRateRef(Double dRCArticleUnitRateRef) {
-    this.dRCArticleUnitRateRef = dRCArticleUnitRateRef;
+  public Storecarddrcarticle parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Ref.vztah jednotky typu plnění [persistentní položka]
-   * @return dRCArticleUnitRateRef
+   * vlastník; id objektu hlavičkový objekt [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Ref.vztah jednotky typu plnění [persistentní položka]")
-  public Double getDRCArticleUnitRateRef() {
-    return dRCArticleUnitRateRef;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu hlavičkový objekt [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setDRCArticleUnitRateRef(Double dRCArticleUnitRateRef) {
-    this.dRCArticleUnitRateRef = dRCArticleUnitRateRef;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Storecarddrcarticle dRCArticleQUnit(String dRCArticleQUnit) {
-    this.dRCArticleQUnit = dRCArticleQUnit;
+  public Storecarddrcarticle countryId(String countryId) {
+    this.countryId = countryId;
     return this;
   }
 
    /**
-   * Vykazovaná jednotka [persistentní položka]
-   * @return dRCArticleQUnit
+   * země; id objektu země [persistentní položka]
+   * @return countryId
   **/
-  @ApiModelProperty(example = "null", value = "Vykazovaná jednotka [persistentní položka]")
-  public String getDRCArticleQUnit() {
-    return dRCArticleQUnit;
+  @ApiModelProperty(example = "null", value = "země; id objektu země [persistentní položka]")
+  public String getCountryId() {
+    return countryId;
   }
 
-  public void setDRCArticleQUnit(String dRCArticleQUnit) {
-    this.dRCArticleQUnit = dRCArticleQUnit;
+  public void setCountryId(String countryId) {
+    this.countryId = countryId;
+  }
+
+  public Storecarddrcarticle drcvatmode(Boolean drcvatmode) {
+    this.drcvatmode = drcvatmode;
+    return this;
+  }
+
+   /**
+   * režim přenesení daňové povinnosti [persistentní položka]
+   * @return drcvatmode
+  **/
+  @ApiModelProperty(example = "null", value = "režim přenesení daňové povinnosti [persistentní položka]")
+  public Boolean getDrcvatmode() {
+    return drcvatmode;
+  }
+
+  public void setDrcvatmode(Boolean drcvatmode) {
+    this.drcvatmode = drcvatmode;
+  }
+
+  public Storecarddrcarticle drcarticleId(String drcarticleId) {
+    this.drcarticleId = drcarticleId;
+    return this;
+  }
+
+   /**
+   * typ plnění - přenesení dp; id objektu kód typu plnění [persistentní položka]
+   * @return drcarticleId
+  **/
+  @ApiModelProperty(example = "null", value = "typ plnění - přenesení dp; id objektu kód typu plnění [persistentní položka]")
+  public String getDrcarticleId() {
+    return drcarticleId;
+  }
+
+  public void setDrcarticleId(String drcarticleId) {
+    this.drcarticleId = drcarticleId;
+  }
+
+  public Storecarddrcarticle drcarticleunitrate(Double drcarticleunitrate) {
+    this.drcarticleunitrate = drcarticleunitrate;
+    return this;
+  }
+
+   /**
+   * vztah jednotky typu plnění [persistentní položka]
+   * @return drcarticleunitrate
+  **/
+  @ApiModelProperty(example = "null", value = "vztah jednotky typu plnění [persistentní položka]")
+  public Double getDrcarticleunitrate() {
+    return drcarticleunitrate;
+  }
+
+  public void setDrcarticleunitrate(Double drcarticleunitrate) {
+    this.drcarticleunitrate = drcarticleunitrate;
+  }
+
+  public Storecarddrcarticle drcarticleunitrateref(Double drcarticleunitrateref) {
+    this.drcarticleunitrateref = drcarticleunitrateref;
+    return this;
+  }
+
+   /**
+   * ref.vztah jednotky typu plnění [persistentní položka]
+   * @return drcarticleunitrateref
+  **/
+  @ApiModelProperty(example = "null", value = "ref.vztah jednotky typu plnění [persistentní položka]")
+  public Double getDrcarticleunitrateref() {
+    return drcarticleunitrateref;
+  }
+
+  public void setDrcarticleunitrateref(Double drcarticleunitrateref) {
+    this.drcarticleunitrateref = drcarticleunitrateref;
+  }
+
+  public Storecarddrcarticle drcarticlequnit(String drcarticlequnit) {
+    this.drcarticlequnit = drcarticlequnit;
+    return this;
+  }
+
+   /**
+   * vykazovaná jednotka [persistentní položka]
+   * @return drcarticlequnit
+  **/
+  @ApiModelProperty(example = "null", value = "vykazovaná jednotka [persistentní položka]")
+  public String getDrcarticlequnit() {
+    return drcarticlequnit;
+  }
+
+  public void setDrcarticlequnit(String drcarticlequnit) {
+    this.drcarticlequnit = drcarticlequnit;
   }
 
 
@@ -232,22 +277,22 @@ public class Storecarddrcarticle   {
       return false;
     }
     Storecarddrcarticle storecarddrcarticle = (Storecarddrcarticle) o;
-    return Objects.equals(this.displayName, storecarddrcarticle.displayName) &&
-        Objects.equals(this.ID, storecarddrcarticle.ID) &&
-        Objects.equals(this.classID, storecarddrcarticle.classID) &&
-        Objects.equals(this.objVersion, storecarddrcarticle.objVersion) &&
-        Objects.equals(this.parentID, storecarddrcarticle.parentID) &&
-        Objects.equals(this.countryID, storecarddrcarticle.countryID) &&
-        Objects.equals(this.dRCVATMode, storecarddrcarticle.dRCVATMode) &&
-        Objects.equals(this.dRCArticleID, storecarddrcarticle.dRCArticleID) &&
-        Objects.equals(this.dRCArticleUnitRate, storecarddrcarticle.dRCArticleUnitRate) &&
-        Objects.equals(this.dRCArticleUnitRateRef, storecarddrcarticle.dRCArticleUnitRateRef) &&
-        Objects.equals(this.dRCArticleQUnit, storecarddrcarticle.dRCArticleQUnit);
+    return Objects.equals(this.displayname, storecarddrcarticle.displayname) &&
+        Objects.equals(this.id, storecarddrcarticle.id) &&
+        Objects.equals(this.classid, storecarddrcarticle.classid) &&
+        Objects.equals(this.objversion, storecarddrcarticle.objversion) &&
+        Objects.equals(this.parentId, storecarddrcarticle.parentId) &&
+        Objects.equals(this.countryId, storecarddrcarticle.countryId) &&
+        Objects.equals(this.drcvatmode, storecarddrcarticle.drcvatmode) &&
+        Objects.equals(this.drcarticleId, storecarddrcarticle.drcarticleId) &&
+        Objects.equals(this.drcarticleunitrate, storecarddrcarticle.drcarticleunitrate) &&
+        Objects.equals(this.drcarticleunitrateref, storecarddrcarticle.drcarticleunitrateref) &&
+        Objects.equals(this.drcarticlequnit, storecarddrcarticle.drcarticlequnit);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, countryID, dRCVATMode, dRCArticleID, dRCArticleUnitRate, dRCArticleUnitRateRef, dRCArticleQUnit);
+    return Objects.hash(displayname, id, classid, objversion, parentId, countryId, drcvatmode, drcarticleId, drcarticleunitrate, drcarticleunitrateref, drcarticlequnit);
   }
 
   @Override
@@ -255,17 +300,17 @@ public class Storecarddrcarticle   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Storecarddrcarticle {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    countryID: ").append(toIndentedString(countryID)).append("\n");
-    sb.append("    dRCVATMode: ").append(toIndentedString(dRCVATMode)).append("\n");
-    sb.append("    dRCArticleID: ").append(toIndentedString(dRCArticleID)).append("\n");
-    sb.append("    dRCArticleUnitRate: ").append(toIndentedString(dRCArticleUnitRate)).append("\n");
-    sb.append("    dRCArticleUnitRateRef: ").append(toIndentedString(dRCArticleUnitRateRef)).append("\n");
-    sb.append("    dRCArticleQUnit: ").append(toIndentedString(dRCArticleQUnit)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    countryId: ").append(toIndentedString(countryId)).append("\n");
+    sb.append("    drcvatmode: ").append(toIndentedString(drcvatmode)).append("\n");
+    sb.append("    drcarticleId: ").append(toIndentedString(drcarticleId)).append("\n");
+    sb.append("    drcarticleunitrate: ").append(toIndentedString(drcarticleunitrate)).append("\n");
+    sb.append("    drcarticleunitrateref: ").append(toIndentedString(drcarticleunitrateref)).append("\n");
+    sb.append("    drcarticlequnit: ").append(toIndentedString(drcarticlequnit)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,60 +36,96 @@ import java.util.Objects;
 /**
  * Wageimportrelationheader
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wageimportrelationheader   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Wageimportrelation> rows = new ArrayList<Wageimportrelation>();
 
-  @SerializedName("CLSID")
-  private String CLSID = null;
+  @SerializedName("clsid")
+  private String clsid = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Wageimportrelationheader displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wageimportrelationheader id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wageimportrelationheader classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wageimportrelationheader objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Wageimportrelationheader rows(List<Wageimportrelation> rows) {
@@ -103,10 +139,10 @@ public class Wageimportrelationheader   {
   }
 
    /**
-   * Řádky; kolekce BO Převodní vztah [nepersistentní položka]
+   * Řádky; kolekce bo převodní vztah [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Převodní vztah [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo převodní vztah [nepersistentní položka]")
   public List<Wageimportrelation> getRows() {
     return rows;
   }
@@ -115,22 +151,22 @@ public class Wageimportrelationheader   {
     this.rows = rows;
   }
 
-  public Wageimportrelationheader CLSID(String CLSID) {
-    this.CLSID = CLSID;
+  public Wageimportrelationheader clsid(String clsid) {
+    this.clsid = clsid;
     return this;
   }
 
    /**
-   * Třída [persistentní položka]
-   * @return CLSID
+   * třída [persistentní položka]
+   * @return clsid
   **/
-  @ApiModelProperty(example = "null", value = "Třída [persistentní položka]")
-  public String getCLSID() {
-    return CLSID;
+  @ApiModelProperty(example = "null", value = "třída [persistentní položka]")
+  public String getClsid() {
+    return clsid;
   }
 
-  public void setCLSID(String CLSID) {
-    this.CLSID = CLSID;
+  public void setClsid(String clsid) {
+    this.clsid = clsid;
   }
 
 
@@ -143,17 +179,17 @@ public class Wageimportrelationheader   {
       return false;
     }
     Wageimportrelationheader wageimportrelationheader = (Wageimportrelationheader) o;
-    return Objects.equals(this.displayName, wageimportrelationheader.displayName) &&
-        Objects.equals(this.ID, wageimportrelationheader.ID) &&
-        Objects.equals(this.classID, wageimportrelationheader.classID) &&
-        Objects.equals(this.objVersion, wageimportrelationheader.objVersion) &&
+    return Objects.equals(this.displayname, wageimportrelationheader.displayname) &&
+        Objects.equals(this.id, wageimportrelationheader.id) &&
+        Objects.equals(this.classid, wageimportrelationheader.classid) &&
+        Objects.equals(this.objversion, wageimportrelationheader.objversion) &&
         Objects.equals(this.rows, wageimportrelationheader.rows) &&
-        Objects.equals(this.CLSID, wageimportrelationheader.CLSID);
+        Objects.equals(this.clsid, wageimportrelationheader.clsid);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, CLSID);
+    return Objects.hash(displayname, id, classid, objversion, rows, clsid);
   }
 
   @Override
@@ -161,12 +197,12 @@ public class Wageimportrelationheader   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wageimportrelationheader {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    CLSID: ").append(toIndentedString(CLSID)).append("\n");
+    sb.append("    clsid: ").append(toIndentedString(clsid)).append("\n");
     sb.append("}");
     return sb.toString();
   }

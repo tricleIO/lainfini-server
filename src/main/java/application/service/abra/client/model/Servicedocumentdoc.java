@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,213 +35,258 @@ import java.util.Objects;
 /**
  * Servicedocumentdoc
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Servicedocumentdoc   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("DocType")
-  private String docType = null;
+  @SerializedName("doctype")
+  private String doctype = null;
 
-  @SerializedName("SubType")
-  private Integer subType = null;
+  @SerializedName("subtype")
+  private Integer subtype = null;
 
-  @SerializedName("StoreDoc_ID")
-  private String storeDocID = null;
+  @SerializedName("storedoc_id")
+  private String storedocId = null;
 
-  @SerializedName("Document_ID")
-  private String documentID = null;
+  @SerializedName("document_id")
+  private String documentId = null;
 
-  @SerializedName("IsGroupInvoice")
-  private Boolean isGroupInvoice = null;
+  @SerializedName("isgroupinvoice")
+  private Boolean isgroupinvoice = null;
 
-  @SerializedName("RangeDateFrom")
-  private DateTime rangeDateFrom = null;
+  @SerializedName("rangedatefrom")
+  private DateTime rangedatefrom = null;
 
-  @SerializedName("RangeDateTo")
-  private DateTime rangeDateTo = null;
+  @SerializedName("rangedateto")
+  private DateTime rangedateto = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Servisní list [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Servisní list [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Servicedocumentdoc docType(String docType) {
-    this.docType = docType;
+  public Servicedocumentdoc displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return docType
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public String getDocType() {
-    return docType;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDocType(String docType) {
-    this.docType = docType;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Servicedocumentdoc subType(Integer subType) {
-    this.subType = subType;
+  public Servicedocumentdoc id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Subtyp dokladu [persistentní položka]
-   * @return subType
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Subtyp dokladu [persistentní položka]")
-  public Integer getSubType() {
-    return subType;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setSubType(Integer subType) {
-    this.subType = subType;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Servicedocumentdoc storeDocID(String storeDocID) {
-    this.storeDocID = storeDocID;
+  public Servicedocumentdoc classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Skladový doklad; ID objektu Skladový doklad [persistentní položka]
-   * @return storeDocID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Skladový doklad; ID objektu Skladový doklad [persistentní položka]")
-  public String getStoreDocID() {
-    return storeDocID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setStoreDocID(String storeDocID) {
-    this.storeDocID = storeDocID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Servicedocumentdoc documentID(String documentID) {
-    this.documentID = documentID;
+  public Servicedocumentdoc objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Doklad; ID objektu Dokument [persistentní položka]
-   * @return documentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Doklad; ID objektu Dokument [persistentní položka]")
-  public String getDocumentID() {
-    return documentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setDocumentID(String documentID) {
-    this.documentID = documentID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Servicedocumentdoc isGroupInvoice(Boolean isGroupInvoice) {
-    this.isGroupInvoice = isGroupInvoice;
+  public Servicedocumentdoc parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Hromadná [persistentní položka]
-   * @return isGroupInvoice
+   * vlastník; id objektu servisní list [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Hromadná [persistentní položka]")
-  public Boolean getIsGroupInvoice() {
-    return isGroupInvoice;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu servisní list [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setIsGroupInvoice(Boolean isGroupInvoice) {
-    this.isGroupInvoice = isGroupInvoice;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Servicedocumentdoc rangeDateFrom(DateTime rangeDateFrom) {
-    this.rangeDateFrom = rangeDateFrom;
+  public Servicedocumentdoc doctype(String doctype) {
+    this.doctype = doctype;
     return this;
   }
 
    /**
-   * Datum od [persistentní položka]
-   * @return rangeDateFrom
+   * typ [persistentní položka]
+   * @return doctype
   **/
-  @ApiModelProperty(example = "null", value = "Datum od [persistentní položka]")
-  public DateTime getRangeDateFrom() {
-    return rangeDateFrom;
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public String getDoctype() {
+    return doctype;
   }
 
-  public void setRangeDateFrom(DateTime rangeDateFrom) {
-    this.rangeDateFrom = rangeDateFrom;
+  public void setDoctype(String doctype) {
+    this.doctype = doctype;
   }
 
-  public Servicedocumentdoc rangeDateTo(DateTime rangeDateTo) {
-    this.rangeDateTo = rangeDateTo;
+  public Servicedocumentdoc subtype(Integer subtype) {
+    this.subtype = subtype;
     return this;
   }
 
    /**
-   * Datum do [persistentní položka]
-   * @return rangeDateTo
+   * subtyp dokladu [persistentní položka]
+   * @return subtype
   **/
-  @ApiModelProperty(example = "null", value = "Datum do [persistentní položka]")
-  public DateTime getRangeDateTo() {
-    return rangeDateTo;
+  @ApiModelProperty(example = "null", value = "subtyp dokladu [persistentní položka]")
+  public Integer getSubtype() {
+    return subtype;
   }
 
-  public void setRangeDateTo(DateTime rangeDateTo) {
-    this.rangeDateTo = rangeDateTo;
+  public void setSubtype(Integer subtype) {
+    this.subtype = subtype;
+  }
+
+  public Servicedocumentdoc storedocId(String storedocId) {
+    this.storedocId = storedocId;
+    return this;
+  }
+
+   /**
+   * skladový doklad; id objektu skladový doklad [persistentní položka]
+   * @return storedocId
+  **/
+  @ApiModelProperty(example = "null", value = "skladový doklad; id objektu skladový doklad [persistentní položka]")
+  public String getStoredocId() {
+    return storedocId;
+  }
+
+  public void setStoredocId(String storedocId) {
+    this.storedocId = storedocId;
+  }
+
+  public Servicedocumentdoc documentId(String documentId) {
+    this.documentId = documentId;
+    return this;
+  }
+
+   /**
+   * doklad; id objektu dokument [persistentní položka]
+   * @return documentId
+  **/
+  @ApiModelProperty(example = "null", value = "doklad; id objektu dokument [persistentní položka]")
+  public String getDocumentId() {
+    return documentId;
+  }
+
+  public void setDocumentId(String documentId) {
+    this.documentId = documentId;
+  }
+
+  public Servicedocumentdoc isgroupinvoice(Boolean isgroupinvoice) {
+    this.isgroupinvoice = isgroupinvoice;
+    return this;
+  }
+
+   /**
+   * hromadná [persistentní položka]
+   * @return isgroupinvoice
+  **/
+  @ApiModelProperty(example = "null", value = "hromadná [persistentní položka]")
+  public Boolean getIsgroupinvoice() {
+    return isgroupinvoice;
+  }
+
+  public void setIsgroupinvoice(Boolean isgroupinvoice) {
+    this.isgroupinvoice = isgroupinvoice;
+  }
+
+  public Servicedocumentdoc rangedatefrom(DateTime rangedatefrom) {
+    this.rangedatefrom = rangedatefrom;
+    return this;
+  }
+
+   /**
+   * datum od [persistentní položka]
+   * @return rangedatefrom
+  **/
+  @ApiModelProperty(example = "null", value = "datum od [persistentní položka]")
+  public DateTime getRangedatefrom() {
+    return rangedatefrom;
+  }
+
+  public void setRangedatefrom(DateTime rangedatefrom) {
+    this.rangedatefrom = rangedatefrom;
+  }
+
+  public Servicedocumentdoc rangedateto(DateTime rangedateto) {
+    this.rangedateto = rangedateto;
+    return this;
+  }
+
+   /**
+   * datum do [persistentní položka]
+   * @return rangedateto
+  **/
+  @ApiModelProperty(example = "null", value = "datum do [persistentní položka]")
+  public DateTime getRangedateto() {
+    return rangedateto;
+  }
+
+  public void setRangedateto(DateTime rangedateto) {
+    this.rangedateto = rangedateto;
   }
 
 
@@ -254,23 +299,23 @@ public class Servicedocumentdoc   {
       return false;
     }
     Servicedocumentdoc servicedocumentdoc = (Servicedocumentdoc) o;
-    return Objects.equals(this.displayName, servicedocumentdoc.displayName) &&
-        Objects.equals(this.ID, servicedocumentdoc.ID) &&
-        Objects.equals(this.classID, servicedocumentdoc.classID) &&
-        Objects.equals(this.objVersion, servicedocumentdoc.objVersion) &&
-        Objects.equals(this.parentID, servicedocumentdoc.parentID) &&
-        Objects.equals(this.docType, servicedocumentdoc.docType) &&
-        Objects.equals(this.subType, servicedocumentdoc.subType) &&
-        Objects.equals(this.storeDocID, servicedocumentdoc.storeDocID) &&
-        Objects.equals(this.documentID, servicedocumentdoc.documentID) &&
-        Objects.equals(this.isGroupInvoice, servicedocumentdoc.isGroupInvoice) &&
-        Objects.equals(this.rangeDateFrom, servicedocumentdoc.rangeDateFrom) &&
-        Objects.equals(this.rangeDateTo, servicedocumentdoc.rangeDateTo);
+    return Objects.equals(this.displayname, servicedocumentdoc.displayname) &&
+        Objects.equals(this.id, servicedocumentdoc.id) &&
+        Objects.equals(this.classid, servicedocumentdoc.classid) &&
+        Objects.equals(this.objversion, servicedocumentdoc.objversion) &&
+        Objects.equals(this.parentId, servicedocumentdoc.parentId) &&
+        Objects.equals(this.doctype, servicedocumentdoc.doctype) &&
+        Objects.equals(this.subtype, servicedocumentdoc.subtype) &&
+        Objects.equals(this.storedocId, servicedocumentdoc.storedocId) &&
+        Objects.equals(this.documentId, servicedocumentdoc.documentId) &&
+        Objects.equals(this.isgroupinvoice, servicedocumentdoc.isgroupinvoice) &&
+        Objects.equals(this.rangedatefrom, servicedocumentdoc.rangedatefrom) &&
+        Objects.equals(this.rangedateto, servicedocumentdoc.rangedateto);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, docType, subType, storeDocID, documentID, isGroupInvoice, rangeDateFrom, rangeDateTo);
+    return Objects.hash(displayname, id, classid, objversion, parentId, doctype, subtype, storedocId, documentId, isgroupinvoice, rangedatefrom, rangedateto);
   }
 
   @Override
@@ -278,18 +323,18 @@ public class Servicedocumentdoc   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Servicedocumentdoc {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    docType: ").append(toIndentedString(docType)).append("\n");
-    sb.append("    subType: ").append(toIndentedString(subType)).append("\n");
-    sb.append("    storeDocID: ").append(toIndentedString(storeDocID)).append("\n");
-    sb.append("    documentID: ").append(toIndentedString(documentID)).append("\n");
-    sb.append("    isGroupInvoice: ").append(toIndentedString(isGroupInvoice)).append("\n");
-    sb.append("    rangeDateFrom: ").append(toIndentedString(rangeDateFrom)).append("\n");
-    sb.append("    rangeDateTo: ").append(toIndentedString(rangeDateTo)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    doctype: ").append(toIndentedString(doctype)).append("\n");
+    sb.append("    subtype: ").append(toIndentedString(subtype)).append("\n");
+    sb.append("    storedocId: ").append(toIndentedString(storedocId)).append("\n");
+    sb.append("    documentId: ").append(toIndentedString(documentId)).append("\n");
+    sb.append("    isgroupinvoice: ").append(toIndentedString(isgroupinvoice)).append("\n");
+    sb.append("    rangedatefrom: ").append(toIndentedString(rangedatefrom)).append("\n");
+    sb.append("    rangedateto: ").append(toIndentedString(rangedateto)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,174 +35,210 @@ import java.util.Objects;
 /**
  * Wlworklog
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wlworklog   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Worker_ID")
-  private String workerID = null;
+  @SerializedName("worker_id")
+  private String workerId = null;
 
-  @SerializedName("EntryType_ID")
-  private String entryTypeID = null;
+  @SerializedName("entrytype_id")
+  private String entrytypeId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("BaseType")
-  private Integer baseType = null;
+  @SerializedName("basetype")
+  private Integer basetype = null;
 
-  @SerializedName("EntryValue")
-  private Double entryValue = null;
+  @SerializedName("entryvalue")
+  private Double entryvalue = null;
 
-  @SerializedName("BeginDate$DATE")
-  private DateTime beginDateDATE = null;
+  @SerializedName("begindate$date")
+  private DateTime begindatedate = null;
 
-  @SerializedName("EndDate$DATE")
-  private DateTime endDateDATE = null;
+  @SerializedName("enddate$date")
+  private DateTime enddatedate = null;
 
-  @SerializedName("LengthDate$DATE")
-  private DateTime lengthDateDATE = null;
+  @SerializedName("lengthdate$date")
+  private DateTime lengthdatedate = null;
 
-  @SerializedName("ClosedDate$DATE")
-  private DateTime closedDateDATE = null;
+  @SerializedName("closeddate$date")
+  private DateTime closeddatedate = null;
 
-  @SerializedName("ClosingWPeriod_ID")
-  private String closingWPeriodID = null;
+  @SerializedName("closingwperiod_id")
+  private String closingwperiodId = null;
 
-  @SerializedName("EntryStatus")
-  private Integer entryStatus = null;
+  @SerializedName("entrystatus")
+  private Integer entrystatus = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("Closing_ID")
-  private String closingID = null;
+  @SerializedName("closing_id")
+  private String closingId = null;
 
-  @SerializedName("FeastHours")
-  private Double feastHours = null;
+  @SerializedName("feasthours")
+  private Double feasthours = null;
 
-  @SerializedName("NightHours")
-  private Double nightHours = null;
+  @SerializedName("nighthours")
+  private Double nighthours = null;
 
-  @SerializedName("EnvHours")
-  private Double envHours = null;
+  @SerializedName("envhours")
+  private Double envhours = null;
 
-  @SerializedName("WEndHours")
-  private Double wEndHours = null;
+  @SerializedName("wendhours")
+  private Double wendhours = null;
 
-  @SerializedName("DefTypeAsText")
-  private String defTypeAsText = null;
+  @SerializedName("deftypeastext")
+  private String deftypeastext = null;
 
-  @SerializedName("DurationInDays")
-  private Double durationInDays = null;
+  @SerializedName("durationindays")
+  private Double durationindays = null;
 
-  @SerializedName("NetDurationInDays")
-  private Double netDurationInDays = null;
+  @SerializedName("netdurationindays")
+  private Double netdurationindays = null;
 
-  @SerializedName("DurationInHours")
-  private Double durationInHours = null;
+  @SerializedName("durationinhours")
+  private Double durationinhours = null;
 
-  @SerializedName("NetDurationInHours")
-  private Double netDurationInHours = null;
+  @SerializedName("netdurationinhours")
+  private Double netdurationinhours = null;
 
-  @SerializedName("NetLengthDate")
-  private DateTime netLengthDate = null;
+  @SerializedName("netlengthdate")
+  private DateTime netlengthdate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Wlworklog workerID(String workerID) {
-    this.workerID = workerID;
+  public Wlworklog displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pracovník; ID objektu Docházka - pracovníci [persistentní položka]
-   * @return workerID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pracovník; ID objektu Docházka - pracovníci [persistentní položka]")
-  public String getWorkerID() {
-    return workerID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setWorkerID(String workerID) {
-    this.workerID = workerID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Wlworklog entryTypeID(String entryTypeID) {
-    this.entryTypeID = entryTypeID;
+  public Wlworklog id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Typ záznamu; ID objektu Docházka - Druh činnosti [persistentní položka]
-   * @return entryTypeID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Typ záznamu; ID objektu Docházka - Druh činnosti [persistentní položka]")
-  public String getEntryTypeID() {
-    return entryTypeID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setEntryTypeID(String entryTypeID) {
-    this.entryTypeID = entryTypeID;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wlworklog classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wlworklog objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Wlworklog workerId(String workerId) {
+    this.workerId = workerId;
+    return this;
+  }
+
+   /**
+   * pracovník; id objektu docházka - pracovníci [persistentní položka]
+   * @return workerId
+  **/
+  @ApiModelProperty(example = "null", value = "pracovník; id objektu docházka - pracovníci [persistentní položka]")
+  public String getWorkerId() {
+    return workerId;
+  }
+
+  public void setWorkerId(String workerId) {
+    this.workerId = workerId;
+  }
+
+  public Wlworklog entrytypeId(String entrytypeId) {
+    this.entrytypeId = entrytypeId;
+    return this;
+  }
+
+   /**
+   * typ záznamu; id objektu docházka - druh činnosti [persistentní položka]
+   * @return entrytypeId
+  **/
+  @ApiModelProperty(example = "null", value = "typ záznamu; id objektu docházka - druh činnosti [persistentní položka]")
+  public String getEntrytypeId() {
+    return entrytypeId;
+  }
+
+  public void setEntrytypeId(String entrytypeId) {
+    this.entrytypeId = entrytypeId;
   }
 
   public Wlworklog description(String description) {
@@ -211,10 +247,10 @@ public class Wlworklog   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -223,454 +259,454 @@ public class Wlworklog   {
     this.description = description;
   }
 
-  public Wlworklog baseType(Integer baseType) {
-    this.baseType = baseType;
+  public Wlworklog basetype(Integer basetype) {
+    this.basetype = basetype;
     return this;
   }
 
    /**
-   * Základní typ [persistentní položka]
-   * @return baseType
+   * základní typ [persistentní položka]
+   * @return basetype
   **/
-  @ApiModelProperty(example = "null", value = "Základní typ [persistentní položka]")
-  public Integer getBaseType() {
-    return baseType;
+  @ApiModelProperty(example = "null", value = "základní typ [persistentní položka]")
+  public Integer getBasetype() {
+    return basetype;
   }
 
-  public void setBaseType(Integer baseType) {
-    this.baseType = baseType;
+  public void setBasetype(Integer basetype) {
+    this.basetype = basetype;
   }
 
-  public Wlworklog entryValue(Double entryValue) {
-    this.entryValue = entryValue;
+  public Wlworklog entryvalue(Double entryvalue) {
+    this.entryvalue = entryvalue;
     return this;
   }
 
    /**
-   * Hodnota záznamu [persistentní položka]
-   * @return entryValue
+   * hodnota záznamu [persistentní položka]
+   * @return entryvalue
   **/
-  @ApiModelProperty(example = "null", value = "Hodnota záznamu [persistentní položka]")
-  public Double getEntryValue() {
-    return entryValue;
+  @ApiModelProperty(example = "null", value = "hodnota záznamu [persistentní položka]")
+  public Double getEntryvalue() {
+    return entryvalue;
   }
 
-  public void setEntryValue(Double entryValue) {
-    this.entryValue = entryValue;
+  public void setEntryvalue(Double entryvalue) {
+    this.entryvalue = entryvalue;
   }
 
-  public Wlworklog beginDateDATE(DateTime beginDateDATE) {
-    this.beginDateDATE = beginDateDATE;
+  public Wlworklog begindatedate(DateTime begindatedate) {
+    this.begindatedate = begindatedate;
     return this;
   }
 
    /**
-   * Datum a čas počátku [persistentní položka]
-   * @return beginDateDATE
+   * datum a čas počátku [persistentní položka]
+   * @return begindatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum a čas počátku [persistentní položka]")
-  public DateTime getBeginDateDATE() {
-    return beginDateDATE;
+  @ApiModelProperty(example = "null", value = "datum a čas počátku [persistentní položka]")
+  public DateTime getBegindatedate() {
+    return begindatedate;
   }
 
-  public void setBeginDateDATE(DateTime beginDateDATE) {
-    this.beginDateDATE = beginDateDATE;
+  public void setBegindatedate(DateTime begindatedate) {
+    this.begindatedate = begindatedate;
   }
 
-  public Wlworklog endDateDATE(DateTime endDateDATE) {
-    this.endDateDATE = endDateDATE;
+  public Wlworklog enddatedate(DateTime enddatedate) {
+    this.enddatedate = enddatedate;
     return this;
   }
 
    /**
-   * Datum a čas konce [persistentní položka]
-   * @return endDateDATE
+   * datum a čas konce [persistentní položka]
+   * @return enddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum a čas konce [persistentní položka]")
-  public DateTime getEndDateDATE() {
-    return endDateDATE;
+  @ApiModelProperty(example = "null", value = "datum a čas konce [persistentní položka]")
+  public DateTime getEnddatedate() {
+    return enddatedate;
   }
 
-  public void setEndDateDATE(DateTime endDateDATE) {
-    this.endDateDATE = endDateDATE;
+  public void setEnddatedate(DateTime enddatedate) {
+    this.enddatedate = enddatedate;
   }
 
-  public Wlworklog lengthDateDATE(DateTime lengthDateDATE) {
-    this.lengthDateDATE = lengthDateDATE;
+  public Wlworklog lengthdatedate(DateTime lengthdatedate) {
+    this.lengthdatedate = lengthdatedate;
     return this;
   }
 
    /**
-   * Datum a čas konce - délka
-   * @return lengthDateDATE
+   * datum a čas konce - délka
+   * @return lengthdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum a čas konce - délka")
-  public DateTime getLengthDateDATE() {
-    return lengthDateDATE;
+  @ApiModelProperty(example = "null", value = "datum a čas konce - délka")
+  public DateTime getLengthdatedate() {
+    return lengthdatedate;
   }
 
-  public void setLengthDateDATE(DateTime lengthDateDATE) {
-    this.lengthDateDATE = lengthDateDATE;
+  public void setLengthdatedate(DateTime lengthdatedate) {
+    this.lengthdatedate = lengthdatedate;
   }
 
-  public Wlworklog closedDateDATE(DateTime closedDateDATE) {
-    this.closedDateDATE = closedDateDATE;
+  public Wlworklog closeddatedate(DateTime closeddatedate) {
+    this.closeddatedate = closeddatedate;
     return this;
   }
 
    /**
-   * Datum uzavření [persistentní položka]
-   * @return closedDateDATE
+   * datum uzavření [persistentní položka]
+   * @return closeddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum uzavření [persistentní položka]")
-  public DateTime getClosedDateDATE() {
-    return closedDateDATE;
+  @ApiModelProperty(example = "null", value = "datum uzavření [persistentní položka]")
+  public DateTime getCloseddatedate() {
+    return closeddatedate;
   }
 
-  public void setClosedDateDATE(DateTime closedDateDATE) {
-    this.closedDateDATE = closedDateDATE;
+  public void setCloseddatedate(DateTime closeddatedate) {
+    this.closeddatedate = closeddatedate;
   }
 
-  public Wlworklog closingWPeriodID(String closingWPeriodID) {
-    this.closingWPeriodID = closingWPeriodID;
+  public Wlworklog closingwperiodId(String closingwperiodId) {
+    this.closingwperiodId = closingwperiodId;
     return this;
   }
 
    /**
-   * Mzdové období uzavření; ID objektu Mzdové období [persistentní položka]
-   * @return closingWPeriodID
+   * mzdové období uzavření; id objektu mzdové období [persistentní položka]
+   * @return closingwperiodId
   **/
-  @ApiModelProperty(example = "null", value = "Mzdové období uzavření; ID objektu Mzdové období [persistentní položka]")
-  public String getClosingWPeriodID() {
-    return closingWPeriodID;
+  @ApiModelProperty(example = "null", value = "mzdové období uzavření; id objektu mzdové období [persistentní položka]")
+  public String getClosingwperiodId() {
+    return closingwperiodId;
   }
 
-  public void setClosingWPeriodID(String closingWPeriodID) {
-    this.closingWPeriodID = closingWPeriodID;
+  public void setClosingwperiodId(String closingwperiodId) {
+    this.closingwperiodId = closingwperiodId;
   }
 
-  public Wlworklog entryStatus(Integer entryStatus) {
-    this.entryStatus = entryStatus;
+  public Wlworklog entrystatus(Integer entrystatus) {
+    this.entrystatus = entrystatus;
     return this;
   }
 
    /**
-   * Status záznamu [persistentní položka]
-   * @return entryStatus
+   * status záznamu [persistentní položka]
+   * @return entrystatus
   **/
-  @ApiModelProperty(example = "null", value = "Status záznamu [persistentní položka]")
-  public Integer getEntryStatus() {
-    return entryStatus;
+  @ApiModelProperty(example = "null", value = "status záznamu [persistentní položka]")
+  public Integer getEntrystatus() {
+    return entrystatus;
   }
 
-  public void setEntryStatus(Integer entryStatus) {
-    this.entryStatus = entryStatus;
+  public void setEntrystatus(Integer entrystatus) {
+    this.entrystatus = entrystatus;
   }
 
-  public Wlworklog divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Wlworklog divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Wlworklog busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Wlworklog busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Wlworklog busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Wlworklog bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obchodní případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obchodní případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obchodní případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obchodní případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Wlworklog busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Wlworklog busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Wlworklog createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Wlworklog createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Wlworklog correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Wlworklog correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Wlworklog closingID(String closingID) {
-    this.closingID = closingID;
+  public Wlworklog closingId(String closingId) {
+    this.closingId = closingId;
     return this;
   }
 
    /**
-   * Uzávěrka; ID objektu Docházka - uzávěrka [persistentní položka]
-   * @return closingID
+   * uzávěrka; id objektu docházka - uzávěrka [persistentní položka]
+   * @return closingId
   **/
-  @ApiModelProperty(example = "null", value = "Uzávěrka; ID objektu Docházka - uzávěrka [persistentní položka]")
-  public String getClosingID() {
-    return closingID;
+  @ApiModelProperty(example = "null", value = "uzávěrka; id objektu docházka - uzávěrka [persistentní položka]")
+  public String getClosingId() {
+    return closingId;
   }
 
-  public void setClosingID(String closingID) {
-    this.closingID = closingID;
+  public void setClosingId(String closingId) {
+    this.closingId = closingId;
   }
 
-  public Wlworklog feastHours(Double feastHours) {
-    this.feastHours = feastHours;
+  public Wlworklog feasthours(Double feasthours) {
+    this.feasthours = feasthours;
     return this;
   }
 
    /**
-   * Hodiny ve svátek [persistentní položka]
-   * @return feastHours
+   * hodiny ve svátek [persistentní položka]
+   * @return feasthours
   **/
-  @ApiModelProperty(example = "null", value = "Hodiny ve svátek [persistentní položka]")
-  public Double getFeastHours() {
-    return feastHours;
+  @ApiModelProperty(example = "null", value = "hodiny ve svátek [persistentní položka]")
+  public Double getFeasthours() {
+    return feasthours;
   }
 
-  public void setFeastHours(Double feastHours) {
-    this.feastHours = feastHours;
+  public void setFeasthours(Double feasthours) {
+    this.feasthours = feasthours;
   }
 
-  public Wlworklog nightHours(Double nightHours) {
-    this.nightHours = nightHours;
+  public Wlworklog nighthours(Double nighthours) {
+    this.nighthours = nighthours;
     return this;
   }
 
    /**
-   * Hodiny v noci [persistentní položka]
-   * @return nightHours
+   * hodiny v noci [persistentní položka]
+   * @return nighthours
   **/
-  @ApiModelProperty(example = "null", value = "Hodiny v noci [persistentní položka]")
-  public Double getNightHours() {
-    return nightHours;
+  @ApiModelProperty(example = "null", value = "hodiny v noci [persistentní položka]")
+  public Double getNighthours() {
+    return nighthours;
   }
 
-  public void setNightHours(Double nightHours) {
-    this.nightHours = nightHours;
+  public void setNighthours(Double nighthours) {
+    this.nighthours = nighthours;
   }
 
-  public Wlworklog envHours(Double envHours) {
-    this.envHours = envHours;
+  public Wlworklog envhours(Double envhours) {
+    this.envhours = envhours;
     return this;
   }
 
    /**
-   * Hodiny ve st. prostředí [persistentní položka]
-   * @return envHours
+   * hodiny ve st. prostředí [persistentní položka]
+   * @return envhours
   **/
-  @ApiModelProperty(example = "null", value = "Hodiny ve st. prostředí [persistentní položka]")
-  public Double getEnvHours() {
-    return envHours;
+  @ApiModelProperty(example = "null", value = "hodiny ve st. prostředí [persistentní položka]")
+  public Double getEnvhours() {
+    return envhours;
   }
 
-  public void setEnvHours(Double envHours) {
-    this.envHours = envHours;
+  public void setEnvhours(Double envhours) {
+    this.envhours = envhours;
   }
 
-  public Wlworklog wEndHours(Double wEndHours) {
-    this.wEndHours = wEndHours;
+  public Wlworklog wendhours(Double wendhours) {
+    this.wendhours = wendhours;
     return this;
   }
 
    /**
-   * Hodiny o víkendu [persistentní položka]
-   * @return wEndHours
+   * hodiny o víkendu [persistentní položka]
+   * @return wendhours
   **/
-  @ApiModelProperty(example = "null", value = "Hodiny o víkendu [persistentní položka]")
-  public Double getWEndHours() {
-    return wEndHours;
+  @ApiModelProperty(example = "null", value = "hodiny o víkendu [persistentní položka]")
+  public Double getWendhours() {
+    return wendhours;
   }
 
-  public void setWEndHours(Double wEndHours) {
-    this.wEndHours = wEndHours;
+  public void setWendhours(Double wendhours) {
+    this.wendhours = wendhours;
   }
 
-  public Wlworklog defTypeAsText(String defTypeAsText) {
-    this.defTypeAsText = defTypeAsText;
+  public Wlworklog deftypeastext(String deftypeastext) {
+    this.deftypeastext = deftypeastext;
     return this;
   }
 
    /**
-   * Status záznamu
-   * @return defTypeAsText
+   * status záznamu
+   * @return deftypeastext
   **/
-  @ApiModelProperty(example = "null", value = "Status záznamu")
-  public String getDefTypeAsText() {
-    return defTypeAsText;
+  @ApiModelProperty(example = "null", value = "status záznamu")
+  public String getDeftypeastext() {
+    return deftypeastext;
   }
 
-  public void setDefTypeAsText(String defTypeAsText) {
-    this.defTypeAsText = defTypeAsText;
+  public void setDeftypeastext(String deftypeastext) {
+    this.deftypeastext = deftypeastext;
   }
 
-  public Wlworklog durationInDays(Double durationInDays) {
-    this.durationInDays = durationInDays;
+  public Wlworklog durationindays(Double durationindays) {
+    this.durationindays = durationindays;
     return this;
   }
 
    /**
    * Čas ve dnech
-   * @return durationInDays
+   * @return durationindays
   **/
   @ApiModelProperty(example = "null", value = "Čas ve dnech")
-  public Double getDurationInDays() {
-    return durationInDays;
+  public Double getDurationindays() {
+    return durationindays;
   }
 
-  public void setDurationInDays(Double durationInDays) {
-    this.durationInDays = durationInDays;
+  public void setDurationindays(Double durationindays) {
+    this.durationindays = durationindays;
   }
 
-  public Wlworklog netDurationInDays(Double netDurationInDays) {
-    this.netDurationInDays = netDurationInDays;
+  public Wlworklog netdurationindays(Double netdurationindays) {
+    this.netdurationindays = netdurationindays;
     return this;
   }
 
    /**
    * Čistý čas ve dnech
-   * @return netDurationInDays
+   * @return netdurationindays
   **/
   @ApiModelProperty(example = "null", value = "Čistý čas ve dnech")
-  public Double getNetDurationInDays() {
-    return netDurationInDays;
+  public Double getNetdurationindays() {
+    return netdurationindays;
   }
 
-  public void setNetDurationInDays(Double netDurationInDays) {
-    this.netDurationInDays = netDurationInDays;
+  public void setNetdurationindays(Double netdurationindays) {
+    this.netdurationindays = netdurationindays;
   }
 
-  public Wlworklog durationInHours(Double durationInHours) {
-    this.durationInHours = durationInHours;
+  public Wlworklog durationinhours(Double durationinhours) {
+    this.durationinhours = durationinhours;
     return this;
   }
 
    /**
    * Čas v hodinách
-   * @return durationInHours
+   * @return durationinhours
   **/
   @ApiModelProperty(example = "null", value = "Čas v hodinách")
-  public Double getDurationInHours() {
-    return durationInHours;
+  public Double getDurationinhours() {
+    return durationinhours;
   }
 
-  public void setDurationInHours(Double durationInHours) {
-    this.durationInHours = durationInHours;
+  public void setDurationinhours(Double durationinhours) {
+    this.durationinhours = durationinhours;
   }
 
-  public Wlworklog netDurationInHours(Double netDurationInHours) {
-    this.netDurationInHours = netDurationInHours;
+  public Wlworklog netdurationinhours(Double netdurationinhours) {
+    this.netdurationinhours = netdurationinhours;
     return this;
   }
 
    /**
    * Čistý čas v hodinách
-   * @return netDurationInHours
+   * @return netdurationinhours
   **/
   @ApiModelProperty(example = "null", value = "Čistý čas v hodinách")
-  public Double getNetDurationInHours() {
-    return netDurationInHours;
+  public Double getNetdurationinhours() {
+    return netdurationinhours;
   }
 
-  public void setNetDurationInHours(Double netDurationInHours) {
-    this.netDurationInHours = netDurationInHours;
+  public void setNetdurationinhours(Double netdurationinhours) {
+    this.netdurationinhours = netdurationinhours;
   }
 
-  public Wlworklog netLengthDate(DateTime netLengthDate) {
-    this.netLengthDate = netLengthDate;
+  public Wlworklog netlengthdate(DateTime netlengthdate) {
+    this.netlengthdate = netlengthdate;
     return this;
   }
 
    /**
    * Čistý čas bez nepřítomností
-   * @return netLengthDate
+   * @return netlengthdate
   **/
   @ApiModelProperty(example = "null", value = "Čistý čas bez nepřítomností")
-  public DateTime getNetLengthDate() {
-    return netLengthDate;
+  public DateTime getNetlengthdate() {
+    return netlengthdate;
   }
 
-  public void setNetLengthDate(DateTime netLengthDate) {
-    this.netLengthDate = netLengthDate;
+  public void setNetlengthdate(DateTime netlengthdate) {
+    this.netlengthdate = netlengthdate;
   }
 
 
@@ -683,43 +719,43 @@ public class Wlworklog   {
       return false;
     }
     Wlworklog wlworklog = (Wlworklog) o;
-    return Objects.equals(this.displayName, wlworklog.displayName) &&
-        Objects.equals(this.ID, wlworklog.ID) &&
-        Objects.equals(this.classID, wlworklog.classID) &&
-        Objects.equals(this.objVersion, wlworklog.objVersion) &&
-        Objects.equals(this.workerID, wlworklog.workerID) &&
-        Objects.equals(this.entryTypeID, wlworklog.entryTypeID) &&
+    return Objects.equals(this.displayname, wlworklog.displayname) &&
+        Objects.equals(this.id, wlworklog.id) &&
+        Objects.equals(this.classid, wlworklog.classid) &&
+        Objects.equals(this.objversion, wlworklog.objversion) &&
+        Objects.equals(this.workerId, wlworklog.workerId) &&
+        Objects.equals(this.entrytypeId, wlworklog.entrytypeId) &&
         Objects.equals(this.description, wlworklog.description) &&
-        Objects.equals(this.baseType, wlworklog.baseType) &&
-        Objects.equals(this.entryValue, wlworklog.entryValue) &&
-        Objects.equals(this.beginDateDATE, wlworklog.beginDateDATE) &&
-        Objects.equals(this.endDateDATE, wlworklog.endDateDATE) &&
-        Objects.equals(this.lengthDateDATE, wlworklog.lengthDateDATE) &&
-        Objects.equals(this.closedDateDATE, wlworklog.closedDateDATE) &&
-        Objects.equals(this.closingWPeriodID, wlworklog.closingWPeriodID) &&
-        Objects.equals(this.entryStatus, wlworklog.entryStatus) &&
-        Objects.equals(this.divisionID, wlworklog.divisionID) &&
-        Objects.equals(this.busOrderID, wlworklog.busOrderID) &&
-        Objects.equals(this.busTransactionID, wlworklog.busTransactionID) &&
-        Objects.equals(this.busProjectID, wlworklog.busProjectID) &&
-        Objects.equals(this.createdByID, wlworklog.createdByID) &&
-        Objects.equals(this.correctedByID, wlworklog.correctedByID) &&
-        Objects.equals(this.closingID, wlworklog.closingID) &&
-        Objects.equals(this.feastHours, wlworklog.feastHours) &&
-        Objects.equals(this.nightHours, wlworklog.nightHours) &&
-        Objects.equals(this.envHours, wlworklog.envHours) &&
-        Objects.equals(this.wEndHours, wlworklog.wEndHours) &&
-        Objects.equals(this.defTypeAsText, wlworklog.defTypeAsText) &&
-        Objects.equals(this.durationInDays, wlworklog.durationInDays) &&
-        Objects.equals(this.netDurationInDays, wlworklog.netDurationInDays) &&
-        Objects.equals(this.durationInHours, wlworklog.durationInHours) &&
-        Objects.equals(this.netDurationInHours, wlworklog.netDurationInHours) &&
-        Objects.equals(this.netLengthDate, wlworklog.netLengthDate);
+        Objects.equals(this.basetype, wlworklog.basetype) &&
+        Objects.equals(this.entryvalue, wlworklog.entryvalue) &&
+        Objects.equals(this.begindatedate, wlworklog.begindatedate) &&
+        Objects.equals(this.enddatedate, wlworklog.enddatedate) &&
+        Objects.equals(this.lengthdatedate, wlworklog.lengthdatedate) &&
+        Objects.equals(this.closeddatedate, wlworklog.closeddatedate) &&
+        Objects.equals(this.closingwperiodId, wlworklog.closingwperiodId) &&
+        Objects.equals(this.entrystatus, wlworklog.entrystatus) &&
+        Objects.equals(this.divisionId, wlworklog.divisionId) &&
+        Objects.equals(this.busorderId, wlworklog.busorderId) &&
+        Objects.equals(this.bustransactionId, wlworklog.bustransactionId) &&
+        Objects.equals(this.busprojectId, wlworklog.busprojectId) &&
+        Objects.equals(this.createdbyId, wlworklog.createdbyId) &&
+        Objects.equals(this.correctedbyId, wlworklog.correctedbyId) &&
+        Objects.equals(this.closingId, wlworklog.closingId) &&
+        Objects.equals(this.feasthours, wlworklog.feasthours) &&
+        Objects.equals(this.nighthours, wlworklog.nighthours) &&
+        Objects.equals(this.envhours, wlworklog.envhours) &&
+        Objects.equals(this.wendhours, wlworklog.wendhours) &&
+        Objects.equals(this.deftypeastext, wlworklog.deftypeastext) &&
+        Objects.equals(this.durationindays, wlworklog.durationindays) &&
+        Objects.equals(this.netdurationindays, wlworklog.netdurationindays) &&
+        Objects.equals(this.durationinhours, wlworklog.durationinhours) &&
+        Objects.equals(this.netdurationinhours, wlworklog.netdurationinhours) &&
+        Objects.equals(this.netlengthdate, wlworklog.netlengthdate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, workerID, entryTypeID, description, baseType, entryValue, beginDateDATE, endDateDATE, lengthDateDATE, closedDateDATE, closingWPeriodID, entryStatus, divisionID, busOrderID, busTransactionID, busProjectID, createdByID, correctedByID, closingID, feastHours, nightHours, envHours, wEndHours, defTypeAsText, durationInDays, netDurationInDays, durationInHours, netDurationInHours, netLengthDate);
+    return Objects.hash(displayname, id, classid, objversion, workerId, entrytypeId, description, basetype, entryvalue, begindatedate, enddatedate, lengthdatedate, closeddatedate, closingwperiodId, entrystatus, divisionId, busorderId, bustransactionId, busprojectId, createdbyId, correctedbyId, closingId, feasthours, nighthours, envhours, wendhours, deftypeastext, durationindays, netdurationindays, durationinhours, netdurationinhours, netlengthdate);
   }
 
   @Override
@@ -727,38 +763,38 @@ public class Wlworklog   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wlworklog {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    workerID: ").append(toIndentedString(workerID)).append("\n");
-    sb.append("    entryTypeID: ").append(toIndentedString(entryTypeID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    workerId: ").append(toIndentedString(workerId)).append("\n");
+    sb.append("    entrytypeId: ").append(toIndentedString(entrytypeId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    baseType: ").append(toIndentedString(baseType)).append("\n");
-    sb.append("    entryValue: ").append(toIndentedString(entryValue)).append("\n");
-    sb.append("    beginDateDATE: ").append(toIndentedString(beginDateDATE)).append("\n");
-    sb.append("    endDateDATE: ").append(toIndentedString(endDateDATE)).append("\n");
-    sb.append("    lengthDateDATE: ").append(toIndentedString(lengthDateDATE)).append("\n");
-    sb.append("    closedDateDATE: ").append(toIndentedString(closedDateDATE)).append("\n");
-    sb.append("    closingWPeriodID: ").append(toIndentedString(closingWPeriodID)).append("\n");
-    sb.append("    entryStatus: ").append(toIndentedString(entryStatus)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    closingID: ").append(toIndentedString(closingID)).append("\n");
-    sb.append("    feastHours: ").append(toIndentedString(feastHours)).append("\n");
-    sb.append("    nightHours: ").append(toIndentedString(nightHours)).append("\n");
-    sb.append("    envHours: ").append(toIndentedString(envHours)).append("\n");
-    sb.append("    wEndHours: ").append(toIndentedString(wEndHours)).append("\n");
-    sb.append("    defTypeAsText: ").append(toIndentedString(defTypeAsText)).append("\n");
-    sb.append("    durationInDays: ").append(toIndentedString(durationInDays)).append("\n");
-    sb.append("    netDurationInDays: ").append(toIndentedString(netDurationInDays)).append("\n");
-    sb.append("    durationInHours: ").append(toIndentedString(durationInHours)).append("\n");
-    sb.append("    netDurationInHours: ").append(toIndentedString(netDurationInHours)).append("\n");
-    sb.append("    netLengthDate: ").append(toIndentedString(netLengthDate)).append("\n");
+    sb.append("    basetype: ").append(toIndentedString(basetype)).append("\n");
+    sb.append("    entryvalue: ").append(toIndentedString(entryvalue)).append("\n");
+    sb.append("    begindatedate: ").append(toIndentedString(begindatedate)).append("\n");
+    sb.append("    enddatedate: ").append(toIndentedString(enddatedate)).append("\n");
+    sb.append("    lengthdatedate: ").append(toIndentedString(lengthdatedate)).append("\n");
+    sb.append("    closeddatedate: ").append(toIndentedString(closeddatedate)).append("\n");
+    sb.append("    closingwperiodId: ").append(toIndentedString(closingwperiodId)).append("\n");
+    sb.append("    entrystatus: ").append(toIndentedString(entrystatus)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    closingId: ").append(toIndentedString(closingId)).append("\n");
+    sb.append("    feasthours: ").append(toIndentedString(feasthours)).append("\n");
+    sb.append("    nighthours: ").append(toIndentedString(nighthours)).append("\n");
+    sb.append("    envhours: ").append(toIndentedString(envhours)).append("\n");
+    sb.append("    wendhours: ").append(toIndentedString(wendhours)).append("\n");
+    sb.append("    deftypeastext: ").append(toIndentedString(deftypeastext)).append("\n");
+    sb.append("    durationindays: ").append(toIndentedString(durationindays)).append("\n");
+    sb.append("    netdurationindays: ").append(toIndentedString(netdurationindays)).append("\n");
+    sb.append("    durationinhours: ").append(toIndentedString(durationinhours)).append("\n");
+    sb.append("    netdurationinhours: ").append(toIndentedString(netdurationinhours)).append("\n");
+    sb.append("    netlengthdate: ").append(toIndentedString(netlengthdate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

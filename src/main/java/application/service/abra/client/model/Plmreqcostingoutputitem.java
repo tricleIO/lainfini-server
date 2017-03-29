@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,152 +36,188 @@ import java.util.Objects;
 /**
  * Plmreqcostingoutputitem
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmreqcostingoutputitem   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("PLMReqCostingRoutines")
-  private List<Plmreqcostingroutine> pLMReqCostingRoutines = new ArrayList<Plmreqcostingroutine>();
+  @SerializedName("plmreqcostingroutines")
+  private List<Plmreqcostingroutine> plmreqcostingroutines = new ArrayList<Plmreqcostingroutine>();
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("UnitQuantity")
-  private Double unitQuantity = null;
+  @SerializedName("unitquantity")
+  private Double unitquantity = null;
 
-  @SerializedName("RoutineType_ID")
-  private String routineTypeID = null;
+  @SerializedName("routinetype_id")
+  private String routinetypeId = null;
 
-  @SerializedName("PLQuantity")
-  private Double pLQuantity = null;
+  @SerializedName("plquantity")
+  private Double plquantity = null;
 
-  @SerializedName("PLQUnit")
-  private String pLQUnit = null;
+  @SerializedName("plqunit")
+  private String plqunit = null;
 
-  @SerializedName("PLUnitRate")
-  private Double pLUnitRate = null;
+  @SerializedName("plunitrate")
+  private Double plunitrate = null;
 
-  @SerializedName("RoutineQuantity")
-  private Double routineQuantity = null;
+  @SerializedName("routinequantity")
+  private Double routinequantity = null;
 
-  @SerializedName("RoutineQUnit")
-  private String routineQUnit = null;
+  @SerializedName("routinequnit")
+  private String routinequnit = null;
 
-  @SerializedName("RoutineUnitRate")
-  private Double routineUnitRate = null;
+  @SerializedName("routineunitrate")
+  private Double routineunitrate = null;
 
-  @SerializedName("PLUnitQuantity")
-  private Double pLUnitQuantity = null;
+  @SerializedName("plunitquantity")
+  private Double plunitquantity = null;
 
-  @SerializedName("RoutineUnitQuantity")
-  private Double routineUnitQuantity = null;
+  @SerializedName("routineunitquantity")
+  private Double routineunitquantity = null;
 
-  @SerializedName("MaterialAmount")
-  private Double materialAmount = null;
+  @SerializedName("materialamount")
+  private Double materialamount = null;
 
-  @SerializedName("SemiFinProdAmount")
-  private Double semiFinProdAmount = null;
+  @SerializedName("semifinprodamount")
+  private Double semifinprodamount = null;
 
-  @SerializedName("ConsumablesAmount")
-  private Double consumablesAmount = null;
+  @SerializedName("consumablesamount")
+  private Double consumablesamount = null;
 
-  @SerializedName("TotalTime")
-  private Double totalTime = null;
+  @SerializedName("totaltime")
+  private Double totaltime = null;
 
-  @SerializedName("Salary")
+  @SerializedName("salary")
   private Double salary = null;
 
-  @SerializedName("OverheadCosts")
-  private Double overheadCosts = null;
+  @SerializedName("overheadcosts")
+  private Double overheadcosts = null;
 
-  @SerializedName("GeneralExpense")
-  private Double generalExpense = null;
+  @SerializedName("generalexpense")
+  private Double generalexpense = null;
 
-  @SerializedName("TotalOverheads")
-  private Double totalOverheads = null;
+  @SerializedName("totaloverheads")
+  private Double totaloverheads = null;
 
-  @SerializedName("MaterialAmountCompl")
-  private Boolean materialAmountCompl = null;
+  @SerializedName("materialamountcompl")
+  private Boolean materialamountcompl = null;
 
-  @SerializedName("MaterialExpense")
-  private Double materialExpense = null;
+  @SerializedName("materialexpense")
+  private Double materialexpense = null;
 
-  @SerializedName("Owner_ID")
-  private String ownerID = null;
+  @SerializedName("owner_id")
+  private String ownerId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Plmreqcostingoutputitem pLMReqCostingRoutines(List<Plmreqcostingroutine> pLMReqCostingRoutines) {
-    this.pLMReqCostingRoutines = pLMReqCostingRoutines;
-    return this;
-  }
-
-  public Plmreqcostingoutputitem addPLMReqCostingRoutinesItem(Plmreqcostingroutine pLMReqCostingRoutinesItem) {
-    this.pLMReqCostingRoutines.add(pLMReqCostingRoutinesItem);
+  public Plmreqcostingoutputitem displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Technologický postup; kolekce BO Požadavek na výrobu - kalkulace technologický postup [nepersistentní položka]
-   * @return pLMReqCostingRoutines
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Technologický postup; kolekce BO Požadavek na výrobu - kalkulace technologický postup [nepersistentní položka]")
-  public List<Plmreqcostingroutine> getPLMReqCostingRoutines() {
-    return pLMReqCostingRoutines;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPLMReqCostingRoutines(List<Plmreqcostingroutine> pLMReqCostingRoutines) {
-    this.pLMReqCostingRoutines = pLMReqCostingRoutines;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Plmreqcostingoutputitem id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmreqcostingoutputitem classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmreqcostingoutputitem objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Plmreqcostingoutputitem plmreqcostingroutines(List<Plmreqcostingroutine> plmreqcostingroutines) {
+    this.plmreqcostingroutines = plmreqcostingroutines;
+    return this;
+  }
+
+  public Plmreqcostingoutputitem addPlmreqcostingroutinesItem(Plmreqcostingroutine plmreqcostingroutinesItem) {
+    this.plmreqcostingroutines.add(plmreqcostingroutinesItem);
+    return this;
+  }
+
+   /**
+   * technologický postup; kolekce bo požadavek na výrobu - kalkulace technologický postup [nepersistentní položka]
+   * @return plmreqcostingroutines
+  **/
+  @ApiModelProperty(example = "null", value = "technologický postup; kolekce bo požadavek na výrobu - kalkulace technologický postup [nepersistentní položka]")
+  public List<Plmreqcostingroutine> getPlmreqcostingroutines() {
+    return plmreqcostingroutines;
+  }
+
+  public void setPlmreqcostingroutines(List<Plmreqcostingroutine> plmreqcostingroutines) {
+    this.plmreqcostingroutines = plmreqcostingroutines;
   }
 
   public Plmreqcostingoutputitem quantity(Double quantity) {
@@ -190,10 +226,10 @@ public class Plmreqcostingoutputitem   {
   }
 
    /**
-   * Množství [persistentní položka]
+   * množství [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "množství [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -202,292 +238,292 @@ public class Plmreqcostingoutputitem   {
     this.quantity = quantity;
   }
 
-  public Plmreqcostingoutputitem qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Plmreqcostingoutputitem qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Měrná jednotka [persistentní položka]
-   * @return qUnit
+   * měrná jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Měrná jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "měrná jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
   }
 
-  public Plmreqcostingoutputitem unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Plmreqcostingoutputitem unitrate(Double unitrate) {
+    this.unitrate = unitrate;
     return this;
   }
 
    /**
-   * Vztah jednotky [persistentní položka]
-   * @return unitRate
+   * vztah jednotky [persistentní položka]
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah jednotky [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "vztah jednotky [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
-  public Plmreqcostingoutputitem unitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public Plmreqcostingoutputitem unitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
     return this;
   }
 
    /**
-   * Množství
-   * @return unitQuantity
+   * množství
+   * @return unitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství")
-  public Double getUnitQuantity() {
-    return unitQuantity;
+  @ApiModelProperty(example = "null", value = "množství")
+  public Double getUnitquantity() {
+    return unitquantity;
   }
 
-  public void setUnitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public void setUnitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
   }
 
-  public Plmreqcostingoutputitem routineTypeID(String routineTypeID) {
-    this.routineTypeID = routineTypeID;
+  public Plmreqcostingoutputitem routinetypeId(String routinetypeId) {
+    this.routinetypeId = routinetypeId;
     return this;
   }
 
    /**
-   * Typ technologického postupu; ID objektu Typ technologického postupu [persistentní položka]
-   * @return routineTypeID
+   * typ technologického postupu; id objektu typ technologického postupu [persistentní položka]
+   * @return routinetypeId
   **/
-  @ApiModelProperty(example = "null", value = "Typ technologického postupu; ID objektu Typ technologického postupu [persistentní položka]")
-  public String getRoutineTypeID() {
-    return routineTypeID;
+  @ApiModelProperty(example = "null", value = "typ technologického postupu; id objektu typ technologického postupu [persistentní položka]")
+  public String getRoutinetypeId() {
+    return routinetypeId;
   }
 
-  public void setRoutineTypeID(String routineTypeID) {
-    this.routineTypeID = routineTypeID;
+  public void setRoutinetypeId(String routinetypeId) {
+    this.routinetypeId = routinetypeId;
   }
 
-  public Plmreqcostingoutputitem pLQuantity(Double pLQuantity) {
-    this.pLQuantity = pLQuantity;
+  public Plmreqcostingoutputitem plquantity(Double plquantity) {
+    this.plquantity = plquantity;
     return this;
   }
 
    /**
-   * Množství z kusovníku [persistentní položka]
-   * @return pLQuantity
+   * množství z kusovníku [persistentní položka]
+   * @return plquantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství z kusovníku [persistentní položka]")
-  public Double getPLQuantity() {
-    return pLQuantity;
+  @ApiModelProperty(example = "null", value = "množství z kusovníku [persistentní položka]")
+  public Double getPlquantity() {
+    return plquantity;
   }
 
-  public void setPLQuantity(Double pLQuantity) {
-    this.pLQuantity = pLQuantity;
+  public void setPlquantity(Double plquantity) {
+    this.plquantity = plquantity;
   }
 
-  public Plmreqcostingoutputitem pLQUnit(String pLQUnit) {
-    this.pLQUnit = pLQUnit;
+  public Plmreqcostingoutputitem plqunit(String plqunit) {
+    this.plqunit = plqunit;
     return this;
   }
 
    /**
-   * Jednotka z kusovníku [persistentní položka]
-   * @return pLQUnit
+   * jednotka z kusovníku [persistentní položka]
+   * @return plqunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka z kusovníku [persistentní položka]")
-  public String getPLQUnit() {
-    return pLQUnit;
+  @ApiModelProperty(example = "null", value = "jednotka z kusovníku [persistentní položka]")
+  public String getPlqunit() {
+    return plqunit;
   }
 
-  public void setPLQUnit(String pLQUnit) {
-    this.pLQUnit = pLQUnit;
+  public void setPlqunit(String plqunit) {
+    this.plqunit = plqunit;
   }
 
-  public Plmreqcostingoutputitem pLUnitRate(Double pLUnitRate) {
-    this.pLUnitRate = pLUnitRate;
+  public Plmreqcostingoutputitem plunitrate(Double plunitrate) {
+    this.plunitrate = plunitrate;
     return this;
   }
 
    /**
-   * Vztah jednotky z kusovníku [persistentní položka]
-   * @return pLUnitRate
+   * vztah jednotky z kusovníku [persistentní položka]
+   * @return plunitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah jednotky z kusovníku [persistentní položka]")
-  public Double getPLUnitRate() {
-    return pLUnitRate;
+  @ApiModelProperty(example = "null", value = "vztah jednotky z kusovníku [persistentní položka]")
+  public Double getPlunitrate() {
+    return plunitrate;
   }
 
-  public void setPLUnitRate(Double pLUnitRate) {
-    this.pLUnitRate = pLUnitRate;
+  public void setPlunitrate(Double plunitrate) {
+    this.plunitrate = plunitrate;
   }
 
-  public Plmreqcostingoutputitem routineQuantity(Double routineQuantity) {
-    this.routineQuantity = routineQuantity;
+  public Plmreqcostingoutputitem routinequantity(Double routinequantity) {
+    this.routinequantity = routinequantity;
     return this;
   }
 
    /**
-   * Množství z tech. postupu [persistentní položka]
-   * @return routineQuantity
+   * množství z tech. postupu [persistentní položka]
+   * @return routinequantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství z tech. postupu [persistentní položka]")
-  public Double getRoutineQuantity() {
-    return routineQuantity;
+  @ApiModelProperty(example = "null", value = "množství z tech. postupu [persistentní položka]")
+  public Double getRoutinequantity() {
+    return routinequantity;
   }
 
-  public void setRoutineQuantity(Double routineQuantity) {
-    this.routineQuantity = routineQuantity;
+  public void setRoutinequantity(Double routinequantity) {
+    this.routinequantity = routinequantity;
   }
 
-  public Plmreqcostingoutputitem routineQUnit(String routineQUnit) {
-    this.routineQUnit = routineQUnit;
+  public Plmreqcostingoutputitem routinequnit(String routinequnit) {
+    this.routinequnit = routinequnit;
     return this;
   }
 
    /**
-   * Jednotka z tech. postupu [persistentní položka]
-   * @return routineQUnit
+   * jednotka z tech. postupu [persistentní položka]
+   * @return routinequnit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka z tech. postupu [persistentní položka]")
-  public String getRoutineQUnit() {
-    return routineQUnit;
+  @ApiModelProperty(example = "null", value = "jednotka z tech. postupu [persistentní položka]")
+  public String getRoutinequnit() {
+    return routinequnit;
   }
 
-  public void setRoutineQUnit(String routineQUnit) {
-    this.routineQUnit = routineQUnit;
+  public void setRoutinequnit(String routinequnit) {
+    this.routinequnit = routinequnit;
   }
 
-  public Plmreqcostingoutputitem routineUnitRate(Double routineUnitRate) {
-    this.routineUnitRate = routineUnitRate;
+  public Plmreqcostingoutputitem routineunitrate(Double routineunitrate) {
+    this.routineunitrate = routineunitrate;
     return this;
   }
 
    /**
-   * Vztah jednotky z tech. postupu [persistentní položka]
-   * @return routineUnitRate
+   * vztah jednotky z tech. postupu [persistentní položka]
+   * @return routineunitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah jednotky z tech. postupu [persistentní položka]")
-  public Double getRoutineUnitRate() {
-    return routineUnitRate;
+  @ApiModelProperty(example = "null", value = "vztah jednotky z tech. postupu [persistentní položka]")
+  public Double getRoutineunitrate() {
+    return routineunitrate;
   }
 
-  public void setRoutineUnitRate(Double routineUnitRate) {
-    this.routineUnitRate = routineUnitRate;
+  public void setRoutineunitrate(Double routineunitrate) {
+    this.routineunitrate = routineunitrate;
   }
 
-  public Plmreqcostingoutputitem pLUnitQuantity(Double pLUnitQuantity) {
-    this.pLUnitQuantity = pLUnitQuantity;
+  public Plmreqcostingoutputitem plunitquantity(Double plunitquantity) {
+    this.plunitquantity = plunitquantity;
     return this;
   }
 
    /**
-   * Množství z kusovníku
-   * @return pLUnitQuantity
+   * množství z kusovníku
+   * @return plunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství z kusovníku")
-  public Double getPLUnitQuantity() {
-    return pLUnitQuantity;
+  @ApiModelProperty(example = "null", value = "množství z kusovníku")
+  public Double getPlunitquantity() {
+    return plunitquantity;
   }
 
-  public void setPLUnitQuantity(Double pLUnitQuantity) {
-    this.pLUnitQuantity = pLUnitQuantity;
+  public void setPlunitquantity(Double plunitquantity) {
+    this.plunitquantity = plunitquantity;
   }
 
-  public Plmreqcostingoutputitem routineUnitQuantity(Double routineUnitQuantity) {
-    this.routineUnitQuantity = routineUnitQuantity;
+  public Plmreqcostingoutputitem routineunitquantity(Double routineunitquantity) {
+    this.routineunitquantity = routineunitquantity;
     return this;
   }
 
    /**
-   * Množství z tech. postupu
-   * @return routineUnitQuantity
+   * množství z tech. postupu
+   * @return routineunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství z tech. postupu")
-  public Double getRoutineUnitQuantity() {
-    return routineUnitQuantity;
+  @ApiModelProperty(example = "null", value = "množství z tech. postupu")
+  public Double getRoutineunitquantity() {
+    return routineunitquantity;
   }
 
-  public void setRoutineUnitQuantity(Double routineUnitQuantity) {
-    this.routineUnitQuantity = routineUnitQuantity;
+  public void setRoutineunitquantity(Double routineunitquantity) {
+    this.routineunitquantity = routineunitquantity;
   }
 
-  public Plmreqcostingoutputitem materialAmount(Double materialAmount) {
-    this.materialAmount = materialAmount;
+  public Plmreqcostingoutputitem materialamount(Double materialamount) {
+    this.materialamount = materialamount;
     return this;
   }
 
    /**
-   * Materiál - částka [persistentní položka]
-   * @return materialAmount
+   * materiál - částka [persistentní položka]
+   * @return materialamount
   **/
-  @ApiModelProperty(example = "null", value = "Materiál - částka [persistentní položka]")
-  public Double getMaterialAmount() {
-    return materialAmount;
+  @ApiModelProperty(example = "null", value = "materiál - částka [persistentní položka]")
+  public Double getMaterialamount() {
+    return materialamount;
   }
 
-  public void setMaterialAmount(Double materialAmount) {
-    this.materialAmount = materialAmount;
+  public void setMaterialamount(Double materialamount) {
+    this.materialamount = materialamount;
   }
 
-  public Plmreqcostingoutputitem semiFinProdAmount(Double semiFinProdAmount) {
-    this.semiFinProdAmount = semiFinProdAmount;
+  public Plmreqcostingoutputitem semifinprodamount(Double semifinprodamount) {
+    this.semifinprodamount = semifinprodamount;
     return this;
   }
 
    /**
-   * Polotovary - částka [persistentní položka]
-   * @return semiFinProdAmount
+   * polotovary - částka [persistentní položka]
+   * @return semifinprodamount
   **/
-  @ApiModelProperty(example = "null", value = "Polotovary - částka [persistentní položka]")
-  public Double getSemiFinProdAmount() {
-    return semiFinProdAmount;
+  @ApiModelProperty(example = "null", value = "polotovary - částka [persistentní položka]")
+  public Double getSemifinprodamount() {
+    return semifinprodamount;
   }
 
-  public void setSemiFinProdAmount(Double semiFinProdAmount) {
-    this.semiFinProdAmount = semiFinProdAmount;
+  public void setSemifinprodamount(Double semifinprodamount) {
+    this.semifinprodamount = semifinprodamount;
   }
 
-  public Plmreqcostingoutputitem consumablesAmount(Double consumablesAmount) {
-    this.consumablesAmount = consumablesAmount;
+  public Plmreqcostingoutputitem consumablesamount(Double consumablesamount) {
+    this.consumablesamount = consumablesamount;
     return this;
   }
 
    /**
-   * Spotř. materiál - částka [persistentní položka]
-   * @return consumablesAmount
+   * spotř. materiál - částka [persistentní položka]
+   * @return consumablesamount
   **/
-  @ApiModelProperty(example = "null", value = "Spotř. materiál - částka [persistentní položka]")
-  public Double getConsumablesAmount() {
-    return consumablesAmount;
+  @ApiModelProperty(example = "null", value = "spotř. materiál - částka [persistentní položka]")
+  public Double getConsumablesamount() {
+    return consumablesamount;
   }
 
-  public void setConsumablesAmount(Double consumablesAmount) {
-    this.consumablesAmount = consumablesAmount;
+  public void setConsumablesamount(Double consumablesamount) {
+    this.consumablesamount = consumablesamount;
   }
 
-  public Plmreqcostingoutputitem totalTime(Double totalTime) {
-    this.totalTime = totalTime;
+  public Plmreqcostingoutputitem totaltime(Double totaltime) {
+    this.totaltime = totaltime;
     return this;
   }
 
    /**
-   * Celkový čas v sekundách [persistentní položka]
-   * @return totalTime
+   * celkový čas v sekundách [persistentní položka]
+   * @return totaltime
   **/
-  @ApiModelProperty(example = "null", value = "Celkový čas v sekundách [persistentní položka]")
-  public Double getTotalTime() {
-    return totalTime;
+  @ApiModelProperty(example = "null", value = "celkový čas v sekundách [persistentní položka]")
+  public Double getTotaltime() {
+    return totaltime;
   }
 
-  public void setTotalTime(Double totalTime) {
-    this.totalTime = totalTime;
+  public void setTotaltime(Double totaltime) {
+    this.totaltime = totaltime;
   }
 
   public Plmreqcostingoutputitem salary(Double salary) {
@@ -496,10 +532,10 @@ public class Plmreqcostingoutputitem   {
   }
 
    /**
-   * Mzda [persistentní položka]
+   * mzda [persistentní položka]
    * @return salary
   **/
-  @ApiModelProperty(example = "null", value = "Mzda [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "mzda [persistentní položka]")
   public Double getSalary() {
     return salary;
   }
@@ -508,103 +544,112 @@ public class Plmreqcostingoutputitem   {
     this.salary = salary;
   }
 
-  public Plmreqcostingoutputitem overheadCosts(Double overheadCosts) {
-    this.overheadCosts = overheadCosts;
+  public Plmreqcostingoutputitem overheadcosts(Double overheadcosts) {
+    this.overheadcosts = overheadcosts;
     return this;
   }
 
    /**
-   * Výrobní režie [persistentní položka]
-   * @return overheadCosts
+   * výrobní režie [persistentní položka]
+   * @return overheadcosts
   **/
-  @ApiModelProperty(example = "null", value = "Výrobní režie [persistentní položka]")
-  public Double getOverheadCosts() {
-    return overheadCosts;
+  @ApiModelProperty(example = "null", value = "výrobní režie [persistentní položka]")
+  public Double getOverheadcosts() {
+    return overheadcosts;
   }
 
-  public void setOverheadCosts(Double overheadCosts) {
-    this.overheadCosts = overheadCosts;
+  public void setOverheadcosts(Double overheadcosts) {
+    this.overheadcosts = overheadcosts;
   }
 
-  public Plmreqcostingoutputitem generalExpense(Double generalExpense) {
-    this.generalExpense = generalExpense;
+  public Plmreqcostingoutputitem generalexpense(Double generalexpense) {
+    this.generalexpense = generalexpense;
     return this;
   }
 
    /**
-   * Správní režie [persistentní položka]
-   * @return generalExpense
+   * správní režie [persistentní položka]
+   * @return generalexpense
   **/
-  @ApiModelProperty(example = "null", value = "Správní režie [persistentní položka]")
-  public Double getGeneralExpense() {
-    return generalExpense;
+  @ApiModelProperty(example = "null", value = "správní režie [persistentní položka]")
+  public Double getGeneralexpense() {
+    return generalexpense;
   }
 
-  public void setGeneralExpense(Double generalExpense) {
-    this.generalExpense = generalExpense;
+  public void setGeneralexpense(Double generalexpense) {
+    this.generalexpense = generalexpense;
   }
 
-  public Plmreqcostingoutputitem totalOverheads(Double totalOverheads) {
-    this.totalOverheads = totalOverheads;
+  public Plmreqcostingoutputitem totaloverheads(Double totaloverheads) {
+    this.totaloverheads = totaloverheads;
     return this;
   }
 
    /**
    * Čas. režie
-   * @return totalOverheads
+   * @return totaloverheads
   **/
   @ApiModelProperty(example = "null", value = "Čas. režie")
-  public Double getTotalOverheads() {
-    return totalOverheads;
+  public Double getTotaloverheads() {
+    return totaloverheads;
   }
 
-  public void setTotalOverheads(Double totalOverheads) {
-    this.totalOverheads = totalOverheads;
+  public void setTotaloverheads(Double totaloverheads) {
+    this.totaloverheads = totaloverheads;
   }
 
-  public Plmreqcostingoutputitem materialAmountCompl(Boolean materialAmountCompl) {
-    this.materialAmountCompl = materialAmountCompl;
+  public Plmreqcostingoutputitem materialamountcompl(Boolean materialamountcompl) {
+    this.materialamountcompl = materialamountcompl;
     return this;
   }
 
    /**
-   * Cena za materiál kompletní [persistentní položka]
-   * @return materialAmountCompl
+   * cena za materiál kompletní [persistentní položka]
+   * @return materialamountcompl
   **/
-  @ApiModelProperty(example = "null", value = "Cena za materiál kompletní [persistentní položka]")
-  public Boolean getMaterialAmountCompl() {
-    return materialAmountCompl;
+  @ApiModelProperty(example = "null", value = "cena za materiál kompletní [persistentní položka]")
+  public Boolean getMaterialamountcompl() {
+    return materialamountcompl;
   }
 
-  public void setMaterialAmountCompl(Boolean materialAmountCompl) {
-    this.materialAmountCompl = materialAmountCompl;
+  public void setMaterialamountcompl(Boolean materialamountcompl) {
+    this.materialamountcompl = materialamountcompl;
   }
 
-  public Plmreqcostingoutputitem materialExpense(Double materialExpense) {
-    this.materialExpense = materialExpense;
+  public Plmreqcostingoutputitem materialexpense(Double materialexpense) {
+    this.materialexpense = materialexpense;
     return this;
   }
 
    /**
-   * Materiálová režie [persistentní položka]
-   * @return materialExpense
+   * materiálová režie [persistentní položka]
+   * @return materialexpense
   **/
-  @ApiModelProperty(example = "null", value = "Materiálová režie [persistentní položka]")
-  public Double getMaterialExpense() {
-    return materialExpense;
+  @ApiModelProperty(example = "null", value = "materiálová režie [persistentní položka]")
+  public Double getMaterialexpense() {
+    return materialexpense;
   }
 
-  public void setMaterialExpense(Double materialExpense) {
-    this.materialExpense = materialExpense;
+  public void setMaterialexpense(Double materialexpense) {
+    this.materialexpense = materialexpense;
+  }
+
+  public Plmreqcostingoutputitem ownerId(String ownerId) {
+    this.ownerId = ownerId;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Uzel stromu kalkulace požadavku na výrobu [persistentní položka]
-   * @return ownerID
+   * vlastník; id objektu uzel stromu kalkulace požadavku na výrobu [persistentní položka]
+   * @return ownerId
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Uzel stromu kalkulace požadavku na výrobu [persistentní položka]")
-  public String getOwnerID() {
-    return ownerID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu uzel stromu kalkulace požadavku na výrobu [persistentní položka]")
+  public String getOwnerId() {
+    return ownerId;
+  }
+
+  public void setOwnerId(String ownerId) {
+    this.ownerId = ownerId;
   }
 
 
@@ -617,40 +662,40 @@ public class Plmreqcostingoutputitem   {
       return false;
     }
     Plmreqcostingoutputitem plmreqcostingoutputitem = (Plmreqcostingoutputitem) o;
-    return Objects.equals(this.displayName, plmreqcostingoutputitem.displayName) &&
-        Objects.equals(this.ID, plmreqcostingoutputitem.ID) &&
-        Objects.equals(this.classID, plmreqcostingoutputitem.classID) &&
-        Objects.equals(this.objVersion, plmreqcostingoutputitem.objVersion) &&
-        Objects.equals(this.pLMReqCostingRoutines, plmreqcostingoutputitem.pLMReqCostingRoutines) &&
+    return Objects.equals(this.displayname, plmreqcostingoutputitem.displayname) &&
+        Objects.equals(this.id, plmreqcostingoutputitem.id) &&
+        Objects.equals(this.classid, plmreqcostingoutputitem.classid) &&
+        Objects.equals(this.objversion, plmreqcostingoutputitem.objversion) &&
+        Objects.equals(this.plmreqcostingroutines, plmreqcostingoutputitem.plmreqcostingroutines) &&
         Objects.equals(this.quantity, plmreqcostingoutputitem.quantity) &&
-        Objects.equals(this.qUnit, plmreqcostingoutputitem.qUnit) &&
-        Objects.equals(this.unitRate, plmreqcostingoutputitem.unitRate) &&
-        Objects.equals(this.unitQuantity, plmreqcostingoutputitem.unitQuantity) &&
-        Objects.equals(this.routineTypeID, plmreqcostingoutputitem.routineTypeID) &&
-        Objects.equals(this.pLQuantity, plmreqcostingoutputitem.pLQuantity) &&
-        Objects.equals(this.pLQUnit, plmreqcostingoutputitem.pLQUnit) &&
-        Objects.equals(this.pLUnitRate, plmreqcostingoutputitem.pLUnitRate) &&
-        Objects.equals(this.routineQuantity, plmreqcostingoutputitem.routineQuantity) &&
-        Objects.equals(this.routineQUnit, plmreqcostingoutputitem.routineQUnit) &&
-        Objects.equals(this.routineUnitRate, plmreqcostingoutputitem.routineUnitRate) &&
-        Objects.equals(this.pLUnitQuantity, plmreqcostingoutputitem.pLUnitQuantity) &&
-        Objects.equals(this.routineUnitQuantity, plmreqcostingoutputitem.routineUnitQuantity) &&
-        Objects.equals(this.materialAmount, plmreqcostingoutputitem.materialAmount) &&
-        Objects.equals(this.semiFinProdAmount, plmreqcostingoutputitem.semiFinProdAmount) &&
-        Objects.equals(this.consumablesAmount, plmreqcostingoutputitem.consumablesAmount) &&
-        Objects.equals(this.totalTime, plmreqcostingoutputitem.totalTime) &&
+        Objects.equals(this.qunit, plmreqcostingoutputitem.qunit) &&
+        Objects.equals(this.unitrate, plmreqcostingoutputitem.unitrate) &&
+        Objects.equals(this.unitquantity, plmreqcostingoutputitem.unitquantity) &&
+        Objects.equals(this.routinetypeId, plmreqcostingoutputitem.routinetypeId) &&
+        Objects.equals(this.plquantity, plmreqcostingoutputitem.plquantity) &&
+        Objects.equals(this.plqunit, plmreqcostingoutputitem.plqunit) &&
+        Objects.equals(this.plunitrate, plmreqcostingoutputitem.plunitrate) &&
+        Objects.equals(this.routinequantity, plmreqcostingoutputitem.routinequantity) &&
+        Objects.equals(this.routinequnit, plmreqcostingoutputitem.routinequnit) &&
+        Objects.equals(this.routineunitrate, plmreqcostingoutputitem.routineunitrate) &&
+        Objects.equals(this.plunitquantity, plmreqcostingoutputitem.plunitquantity) &&
+        Objects.equals(this.routineunitquantity, plmreqcostingoutputitem.routineunitquantity) &&
+        Objects.equals(this.materialamount, plmreqcostingoutputitem.materialamount) &&
+        Objects.equals(this.semifinprodamount, plmreqcostingoutputitem.semifinprodamount) &&
+        Objects.equals(this.consumablesamount, plmreqcostingoutputitem.consumablesamount) &&
+        Objects.equals(this.totaltime, plmreqcostingoutputitem.totaltime) &&
         Objects.equals(this.salary, plmreqcostingoutputitem.salary) &&
-        Objects.equals(this.overheadCosts, plmreqcostingoutputitem.overheadCosts) &&
-        Objects.equals(this.generalExpense, plmreqcostingoutputitem.generalExpense) &&
-        Objects.equals(this.totalOverheads, plmreqcostingoutputitem.totalOverheads) &&
-        Objects.equals(this.materialAmountCompl, plmreqcostingoutputitem.materialAmountCompl) &&
-        Objects.equals(this.materialExpense, plmreqcostingoutputitem.materialExpense) &&
-        Objects.equals(this.ownerID, plmreqcostingoutputitem.ownerID);
+        Objects.equals(this.overheadcosts, plmreqcostingoutputitem.overheadcosts) &&
+        Objects.equals(this.generalexpense, plmreqcostingoutputitem.generalexpense) &&
+        Objects.equals(this.totaloverheads, plmreqcostingoutputitem.totaloverheads) &&
+        Objects.equals(this.materialamountcompl, plmreqcostingoutputitem.materialamountcompl) &&
+        Objects.equals(this.materialexpense, plmreqcostingoutputitem.materialexpense) &&
+        Objects.equals(this.ownerId, plmreqcostingoutputitem.ownerId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, pLMReqCostingRoutines, quantity, qUnit, unitRate, unitQuantity, routineTypeID, pLQuantity, pLQUnit, pLUnitRate, routineQuantity, routineQUnit, routineUnitRate, pLUnitQuantity, routineUnitQuantity, materialAmount, semiFinProdAmount, consumablesAmount, totalTime, salary, overheadCosts, generalExpense, totalOverheads, materialAmountCompl, materialExpense, ownerID);
+    return Objects.hash(displayname, id, classid, objversion, plmreqcostingroutines, quantity, qunit, unitrate, unitquantity, routinetypeId, plquantity, plqunit, plunitrate, routinequantity, routinequnit, routineunitrate, plunitquantity, routineunitquantity, materialamount, semifinprodamount, consumablesamount, totaltime, salary, overheadcosts, generalexpense, totaloverheads, materialamountcompl, materialexpense, ownerId);
   }
 
   @Override
@@ -658,35 +703,35 @@ public class Plmreqcostingoutputitem   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmreqcostingoutputitem {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    pLMReqCostingRoutines: ").append(toIndentedString(pLMReqCostingRoutines)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    plmreqcostingroutines: ").append(toIndentedString(plmreqcostingroutines)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    unitQuantity: ").append(toIndentedString(unitQuantity)).append("\n");
-    sb.append("    routineTypeID: ").append(toIndentedString(routineTypeID)).append("\n");
-    sb.append("    pLQuantity: ").append(toIndentedString(pLQuantity)).append("\n");
-    sb.append("    pLQUnit: ").append(toIndentedString(pLQUnit)).append("\n");
-    sb.append("    pLUnitRate: ").append(toIndentedString(pLUnitRate)).append("\n");
-    sb.append("    routineQuantity: ").append(toIndentedString(routineQuantity)).append("\n");
-    sb.append("    routineQUnit: ").append(toIndentedString(routineQUnit)).append("\n");
-    sb.append("    routineUnitRate: ").append(toIndentedString(routineUnitRate)).append("\n");
-    sb.append("    pLUnitQuantity: ").append(toIndentedString(pLUnitQuantity)).append("\n");
-    sb.append("    routineUnitQuantity: ").append(toIndentedString(routineUnitQuantity)).append("\n");
-    sb.append("    materialAmount: ").append(toIndentedString(materialAmount)).append("\n");
-    sb.append("    semiFinProdAmount: ").append(toIndentedString(semiFinProdAmount)).append("\n");
-    sb.append("    consumablesAmount: ").append(toIndentedString(consumablesAmount)).append("\n");
-    sb.append("    totalTime: ").append(toIndentedString(totalTime)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    unitquantity: ").append(toIndentedString(unitquantity)).append("\n");
+    sb.append("    routinetypeId: ").append(toIndentedString(routinetypeId)).append("\n");
+    sb.append("    plquantity: ").append(toIndentedString(plquantity)).append("\n");
+    sb.append("    plqunit: ").append(toIndentedString(plqunit)).append("\n");
+    sb.append("    plunitrate: ").append(toIndentedString(plunitrate)).append("\n");
+    sb.append("    routinequantity: ").append(toIndentedString(routinequantity)).append("\n");
+    sb.append("    routinequnit: ").append(toIndentedString(routinequnit)).append("\n");
+    sb.append("    routineunitrate: ").append(toIndentedString(routineunitrate)).append("\n");
+    sb.append("    plunitquantity: ").append(toIndentedString(plunitquantity)).append("\n");
+    sb.append("    routineunitquantity: ").append(toIndentedString(routineunitquantity)).append("\n");
+    sb.append("    materialamount: ").append(toIndentedString(materialamount)).append("\n");
+    sb.append("    semifinprodamount: ").append(toIndentedString(semifinprodamount)).append("\n");
+    sb.append("    consumablesamount: ").append(toIndentedString(consumablesamount)).append("\n");
+    sb.append("    totaltime: ").append(toIndentedString(totaltime)).append("\n");
     sb.append("    salary: ").append(toIndentedString(salary)).append("\n");
-    sb.append("    overheadCosts: ").append(toIndentedString(overheadCosts)).append("\n");
-    sb.append("    generalExpense: ").append(toIndentedString(generalExpense)).append("\n");
-    sb.append("    totalOverheads: ").append(toIndentedString(totalOverheads)).append("\n");
-    sb.append("    materialAmountCompl: ").append(toIndentedString(materialAmountCompl)).append("\n");
-    sb.append("    materialExpense: ").append(toIndentedString(materialExpense)).append("\n");
-    sb.append("    ownerID: ").append(toIndentedString(ownerID)).append("\n");
+    sb.append("    overheadcosts: ").append(toIndentedString(overheadcosts)).append("\n");
+    sb.append("    generalexpense: ").append(toIndentedString(generalexpense)).append("\n");
+    sb.append("    totaloverheads: ").append(toIndentedString(totaloverheads)).append("\n");
+    sb.append("    materialamountcompl: ").append(toIndentedString(materialamountcompl)).append("\n");
+    sb.append("    materialexpense: ").append(toIndentedString(materialexpense)).append("\n");
+    sb.append("    ownerId: ").append(toIndentedString(ownerId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

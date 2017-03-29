@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,66 +34,102 @@ import java.util.Objects;
 /**
  * Plmphase
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmphase   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("AutoRelease")
-  private Boolean autoRelease = null;
+  @SerializedName("autorelease")
+  private Boolean autorelease = null;
 
-  @SerializedName("LumpoverView")
-  private Boolean lumpoverView = null;
+  @SerializedName("lumpoverview")
+  private Boolean lumpoverview = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Plmphase displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Plmphase id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmphase classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmphase objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Plmphase code(String code) {
@@ -102,10 +138,10 @@ public class Plmphase   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -120,10 +156,10 @@ public class Plmphase   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -132,40 +168,40 @@ public class Plmphase   {
     this.name = name;
   }
 
-  public Plmphase autoRelease(Boolean autoRelease) {
-    this.autoRelease = autoRelease;
+  public Plmphase autorelease(Boolean autorelease) {
+    this.autorelease = autorelease;
     return this;
   }
 
    /**
-   * Aut. uvolnění [persistentní položka]
-   * @return autoRelease
+   * aut. uvolnění [persistentní položka]
+   * @return autorelease
   **/
-  @ApiModelProperty(example = "null", value = "Aut. uvolnění [persistentní položka]")
-  public Boolean getAutoRelease() {
-    return autoRelease;
+  @ApiModelProperty(example = "null", value = "aut. uvolnění [persistentní položka]")
+  public Boolean getAutorelease() {
+    return autorelease;
   }
 
-  public void setAutoRelease(Boolean autoRelease) {
-    this.autoRelease = autoRelease;
+  public void setAutorelease(Boolean autorelease) {
+    this.autorelease = autorelease;
   }
 
-  public Plmphase lumpoverView(Boolean lumpoverView) {
-    this.lumpoverView = lumpoverView;
+  public Plmphase lumpoverview(Boolean lumpoverview) {
+    this.lumpoverview = lumpoverview;
     return this;
   }
 
    /**
-   * Přehled kusově [persistentní položka]
-   * @return lumpoverView
+   * přehled kusově [persistentní položka]
+   * @return lumpoverview
   **/
-  @ApiModelProperty(example = "null", value = "Přehled kusově [persistentní položka]")
-  public Boolean getLumpoverView() {
-    return lumpoverView;
+  @ApiModelProperty(example = "null", value = "přehled kusově [persistentní položka]")
+  public Boolean getLumpoverview() {
+    return lumpoverview;
   }
 
-  public void setLumpoverView(Boolean lumpoverView) {
-    this.lumpoverView = lumpoverView;
+  public void setLumpoverview(Boolean lumpoverview) {
+    this.lumpoverview = lumpoverview;
   }
 
 
@@ -178,19 +214,19 @@ public class Plmphase   {
       return false;
     }
     Plmphase plmphase = (Plmphase) o;
-    return Objects.equals(this.displayName, plmphase.displayName) &&
-        Objects.equals(this.ID, plmphase.ID) &&
-        Objects.equals(this.classID, plmphase.classID) &&
-        Objects.equals(this.objVersion, plmphase.objVersion) &&
+    return Objects.equals(this.displayname, plmphase.displayname) &&
+        Objects.equals(this.id, plmphase.id) &&
+        Objects.equals(this.classid, plmphase.classid) &&
+        Objects.equals(this.objversion, plmphase.objversion) &&
         Objects.equals(this.code, plmphase.code) &&
         Objects.equals(this.name, plmphase.name) &&
-        Objects.equals(this.autoRelease, plmphase.autoRelease) &&
-        Objects.equals(this.lumpoverView, plmphase.lumpoverView);
+        Objects.equals(this.autorelease, plmphase.autorelease) &&
+        Objects.equals(this.lumpoverview, plmphase.lumpoverview);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, code, name, autoRelease, lumpoverView);
+    return Objects.hash(displayname, id, classid, objversion, code, name, autorelease, lumpoverview);
   }
 
   @Override
@@ -198,14 +234,14 @@ public class Plmphase   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmphase {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    autoRelease: ").append(toIndentedString(autoRelease)).append("\n");
-    sb.append("    lumpoverView: ").append(toIndentedString(lumpoverView)).append("\n");
+    sb.append("    autorelease: ").append(toIndentedString(autorelease)).append("\n");
+    sb.append("    lumpoverview: ").append(toIndentedString(lumpoverview)).append("\n");
     sb.append("}");
     return sb.toString();
   }

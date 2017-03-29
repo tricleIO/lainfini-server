@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,78 +36,114 @@ import java.util.Objects;
 /**
  * Gpmparameter
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Gpmparameter   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Gpmparameterrows> rows = new ArrayList<Gpmparameterrows>();
 
-  @SerializedName("Site")
+  @SerializedName("site")
   private String site = null;
 
-  @SerializedName("PreferredPriceOrigin")
-  private Integer preferredPriceOrigin = null;
+  @SerializedName("preferredpriceorigin")
+  private Integer preferredpriceorigin = null;
 
-  @SerializedName("AutomaticallyCreateTransfers")
-  private Boolean automaticallyCreateTransfers = null;
+  @SerializedName("automaticallycreatetransfers")
+  private Boolean automaticallycreatetransfers = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("HideALTabMaterialsSummared")
-  private Boolean hideALTabMaterialsSummared = null;
+  @SerializedName("hidealtabmaterialssummared")
+  private Boolean hidealtabmaterialssummared = null;
 
-  @SerializedName("HideALTabMaterials")
-  private Boolean hideALTabMaterials = null;
+  @SerializedName("hidealtabmaterials")
+  private Boolean hidealtabmaterials = null;
 
-  @SerializedName("UseMDForCUCosts")
-  private Boolean useMDForCUCosts = null;
+  @SerializedName("usemdforcucosts")
+  private Boolean usemdforcucosts = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Gpmparameter displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Gpmparameter id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Gpmparameter classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Gpmparameter objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Gpmparameter rows(List<Gpmparameterrows> rows) {
@@ -121,10 +157,10 @@ public class Gpmparameter   {
   }
 
    /**
-   * Řádky; kolekce BO Řádek nastavení gastrovýroby [nepersistentní položka]
+   * Řádky; kolekce bo Řádek nastavení gastrovýroby [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Řádek nastavení gastrovýroby [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo Řádek nastavení gastrovýroby [nepersistentní položka]")
   public List<Gpmparameterrows> getRows() {
     return rows;
   }
@@ -139,10 +175,10 @@ public class Gpmparameter   {
   }
 
    /**
-   * Hnízdo [persistentní položka]
+   * hnízdo [persistentní položka]
    * @return site
   **/
-  @ApiModelProperty(example = "null", value = "Hnízdo [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "hnízdo [persistentní položka]")
   public String getSite() {
     return site;
   }
@@ -151,112 +187,112 @@ public class Gpmparameter   {
     this.site = site;
   }
 
-  public Gpmparameter preferredPriceOrigin(Integer preferredPriceOrigin) {
-    this.preferredPriceOrigin = preferredPriceOrigin;
+  public Gpmparameter preferredpriceorigin(Integer preferredpriceorigin) {
+    this.preferredpriceorigin = preferredpriceorigin;
     return this;
   }
 
    /**
-   * Preferované ceny pro kalkulace [persistentní položka]
-   * @return preferredPriceOrigin
+   * preferované ceny pro kalkulace [persistentní položka]
+   * @return preferredpriceorigin
   **/
-  @ApiModelProperty(example = "null", value = "Preferované ceny pro kalkulace [persistentní položka]")
-  public Integer getPreferredPriceOrigin() {
-    return preferredPriceOrigin;
+  @ApiModelProperty(example = "null", value = "preferované ceny pro kalkulace [persistentní položka]")
+  public Integer getPreferredpriceorigin() {
+    return preferredpriceorigin;
   }
 
-  public void setPreferredPriceOrigin(Integer preferredPriceOrigin) {
-    this.preferredPriceOrigin = preferredPriceOrigin;
+  public void setPreferredpriceorigin(Integer preferredpriceorigin) {
+    this.preferredpriceorigin = preferredpriceorigin;
   }
 
-  public Gpmparameter automaticallyCreateTransfers(Boolean automaticallyCreateTransfers) {
-    this.automaticallyCreateTransfers = automaticallyCreateTransfers;
+  public Gpmparameter automaticallycreatetransfers(Boolean automaticallycreatetransfers) {
+    this.automaticallycreatetransfers = automaticallycreatetransfers;
     return this;
   }
 
    /**
-   * Při výdeji automaticky vytvářet převodky [persistentní položka]
-   * @return automaticallyCreateTransfers
+   * při výdeji automaticky vytvářet převodky [persistentní položka]
+   * @return automaticallycreatetransfers
   **/
-  @ApiModelProperty(example = "null", value = "Při výdeji automaticky vytvářet převodky [persistentní položka]")
-  public Boolean getAutomaticallyCreateTransfers() {
-    return automaticallyCreateTransfers;
+  @ApiModelProperty(example = "null", value = "při výdeji automaticky vytvářet převodky [persistentní položka]")
+  public Boolean getAutomaticallycreatetransfers() {
+    return automaticallycreatetransfers;
   }
 
-  public void setAutomaticallyCreateTransfers(Boolean automaticallyCreateTransfers) {
-    this.automaticallyCreateTransfers = automaticallyCreateTransfers;
+  public void setAutomaticallycreatetransfers(Boolean automaticallycreatetransfers) {
+    this.automaticallycreatetransfers = automaticallycreatetransfers;
   }
 
-  public Gpmparameter storeID(String storeID) {
-    this.storeID = storeID;
+  public Gpmparameter storeId(String storeId) {
+    this.storeId = storeId;
     return this;
   }
 
    /**
-   * Kalkulační sklad surovin; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * kalkulační sklad surovin; id objektu sklad [persistentní položka]
+   * @return storeId
   **/
-  @ApiModelProperty(example = "null", value = "Kalkulační sklad surovin; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "kalkulační sklad surovin; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
-  public Gpmparameter hideALTabMaterialsSummared(Boolean hideALTabMaterialsSummared) {
-    this.hideALTabMaterialsSummared = hideALTabMaterialsSummared;
+  public Gpmparameter hidealtabmaterialssummared(Boolean hidealtabmaterialssummared) {
+    this.hidealtabmaterialssummared = hidealtabmaterialssummared;
     return this;
   }
 
    /**
-   * Skrýt ve VL záložku Souhrn surovin [persistentní položka]
-   * @return hideALTabMaterialsSummared
+   * skrýt ve vl záložku souhrn surovin [persistentní položka]
+   * @return hidealtabmaterialssummared
   **/
-  @ApiModelProperty(example = "null", value = "Skrýt ve VL záložku Souhrn surovin [persistentní položka]")
-  public Boolean getHideALTabMaterialsSummared() {
-    return hideALTabMaterialsSummared;
+  @ApiModelProperty(example = "null", value = "skrýt ve vl záložku souhrn surovin [persistentní položka]")
+  public Boolean getHidealtabmaterialssummared() {
+    return hidealtabmaterialssummared;
   }
 
-  public void setHideALTabMaterialsSummared(Boolean hideALTabMaterialsSummared) {
-    this.hideALTabMaterialsSummared = hideALTabMaterialsSummared;
+  public void setHidealtabmaterialssummared(Boolean hidealtabmaterialssummared) {
+    this.hidealtabmaterialssummared = hidealtabmaterialssummared;
   }
 
-  public Gpmparameter hideALTabMaterials(Boolean hideALTabMaterials) {
-    this.hideALTabMaterials = hideALTabMaterials;
+  public Gpmparameter hidealtabmaterials(Boolean hidealtabmaterials) {
+    this.hidealtabmaterials = hidealtabmaterials;
     return this;
   }
 
    /**
-   * Skrýt ve VL záložku Výskyt surovin [persistentní položka]
-   * @return hideALTabMaterials
+   * skrýt ve vl záložku výskyt surovin [persistentní položka]
+   * @return hidealtabmaterials
   **/
-  @ApiModelProperty(example = "null", value = "Skrýt ve VL záložku Výskyt surovin [persistentní položka]")
-  public Boolean getHideALTabMaterials() {
-    return hideALTabMaterials;
+  @ApiModelProperty(example = "null", value = "skrýt ve vl záložku výskyt surovin [persistentní položka]")
+  public Boolean getHidealtabmaterials() {
+    return hidealtabmaterials;
   }
 
-  public void setHideALTabMaterials(Boolean hideALTabMaterials) {
-    this.hideALTabMaterials = hideALTabMaterials;
+  public void setHidealtabmaterials(Boolean hidealtabmaterials) {
+    this.hidealtabmaterials = hidealtabmaterials;
   }
 
-  public Gpmparameter useMDForCUCosts(Boolean useMDForCUCosts) {
-    this.useMDForCUCosts = useMDForCUCosts;
+  public Gpmparameter usemdforcucosts(Boolean usemdforcucosts) {
+    this.usemdforcucosts = usemdforcucosts;
     return this;
   }
 
    /**
-   * Čerpat náklady pro SJ přednostně z VMV [persistentní položka]
-   * @return useMDForCUCosts
+   * Čerpat náklady pro sj přednostně z vmv [persistentní položka]
+   * @return usemdforcucosts
   **/
-  @ApiModelProperty(example = "null", value = "Čerpat náklady pro SJ přednostně z VMV [persistentní položka]")
-  public Boolean getUseMDForCUCosts() {
-    return useMDForCUCosts;
+  @ApiModelProperty(example = "null", value = "Čerpat náklady pro sj přednostně z vmv [persistentní položka]")
+  public Boolean getUsemdforcucosts() {
+    return usemdforcucosts;
   }
 
-  public void setUseMDForCUCosts(Boolean useMDForCUCosts) {
-    this.useMDForCUCosts = useMDForCUCosts;
+  public void setUsemdforcucosts(Boolean usemdforcucosts) {
+    this.usemdforcucosts = usemdforcucosts;
   }
 
 
@@ -269,23 +305,23 @@ public class Gpmparameter   {
       return false;
     }
     Gpmparameter gpmparameter = (Gpmparameter) o;
-    return Objects.equals(this.displayName, gpmparameter.displayName) &&
-        Objects.equals(this.ID, gpmparameter.ID) &&
-        Objects.equals(this.classID, gpmparameter.classID) &&
-        Objects.equals(this.objVersion, gpmparameter.objVersion) &&
+    return Objects.equals(this.displayname, gpmparameter.displayname) &&
+        Objects.equals(this.id, gpmparameter.id) &&
+        Objects.equals(this.classid, gpmparameter.classid) &&
+        Objects.equals(this.objversion, gpmparameter.objversion) &&
         Objects.equals(this.rows, gpmparameter.rows) &&
         Objects.equals(this.site, gpmparameter.site) &&
-        Objects.equals(this.preferredPriceOrigin, gpmparameter.preferredPriceOrigin) &&
-        Objects.equals(this.automaticallyCreateTransfers, gpmparameter.automaticallyCreateTransfers) &&
-        Objects.equals(this.storeID, gpmparameter.storeID) &&
-        Objects.equals(this.hideALTabMaterialsSummared, gpmparameter.hideALTabMaterialsSummared) &&
-        Objects.equals(this.hideALTabMaterials, gpmparameter.hideALTabMaterials) &&
-        Objects.equals(this.useMDForCUCosts, gpmparameter.useMDForCUCosts);
+        Objects.equals(this.preferredpriceorigin, gpmparameter.preferredpriceorigin) &&
+        Objects.equals(this.automaticallycreatetransfers, gpmparameter.automaticallycreatetransfers) &&
+        Objects.equals(this.storeId, gpmparameter.storeId) &&
+        Objects.equals(this.hidealtabmaterialssummared, gpmparameter.hidealtabmaterialssummared) &&
+        Objects.equals(this.hidealtabmaterials, gpmparameter.hidealtabmaterials) &&
+        Objects.equals(this.usemdforcucosts, gpmparameter.usemdforcucosts);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, site, preferredPriceOrigin, automaticallyCreateTransfers, storeID, hideALTabMaterialsSummared, hideALTabMaterials, useMDForCUCosts);
+    return Objects.hash(displayname, id, classid, objversion, rows, site, preferredpriceorigin, automaticallycreatetransfers, storeId, hidealtabmaterialssummared, hidealtabmaterials, usemdforcucosts);
   }
 
   @Override
@@ -293,18 +329,18 @@ public class Gpmparameter   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Gpmparameter {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    site: ").append(toIndentedString(site)).append("\n");
-    sb.append("    preferredPriceOrigin: ").append(toIndentedString(preferredPriceOrigin)).append("\n");
-    sb.append("    automaticallyCreateTransfers: ").append(toIndentedString(automaticallyCreateTransfers)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    hideALTabMaterialsSummared: ").append(toIndentedString(hideALTabMaterialsSummared)).append("\n");
-    sb.append("    hideALTabMaterials: ").append(toIndentedString(hideALTabMaterials)).append("\n");
-    sb.append("    useMDForCUCosts: ").append(toIndentedString(useMDForCUCosts)).append("\n");
+    sb.append("    preferredpriceorigin: ").append(toIndentedString(preferredpriceorigin)).append("\n");
+    sb.append("    automaticallycreatetransfers: ").append(toIndentedString(automaticallycreatetransfers)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    hidealtabmaterialssummared: ").append(toIndentedString(hidealtabmaterialssummared)).append("\n");
+    sb.append("    hidealtabmaterials: ").append(toIndentedString(hidealtabmaterials)).append("\n");
+    sb.append("    usemdforcucosts: ").append(toIndentedString(usemdforcucosts)).append("\n");
     sb.append("}");
     return sb.toString();
   }

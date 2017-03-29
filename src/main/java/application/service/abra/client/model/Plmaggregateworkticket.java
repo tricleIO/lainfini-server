@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,348 +35,384 @@ import java.util.Objects;
 /**
  * Plmaggregateworkticket
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmaggregateworkticket   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("AccPresetDef_ID")
-  private String accPresetDefID = null;
+  @SerializedName("accpresetdef_id")
+  private String accpresetdefId = null;
 
-  @SerializedName("AccDate$DATE")
-  private DateTime accDateDATE = null;
+  @SerializedName("accdate$date")
+  private DateTime accdatedate = null;
 
-  @SerializedName("AccDocQueue_ID")
-  private String accDocQueueID = null;
+  @SerializedName("accdocqueue_id")
+  private String accdocqueueId = null;
 
-  @SerializedName("AccountingType")
-  private Integer accountingType = null;
+  @SerializedName("accountingtype")
+  private Integer accountingtype = null;
 
-  @SerializedName("IsAccounted")
-  private Boolean isAccounted = null;
+  @SerializedName("isaccounted")
+  private Boolean isaccounted = null;
 
-  @SerializedName("Dirty")
+  @SerializedName("dirty")
   private Boolean dirty = null;
 
-  @SerializedName("JobOrder_ID")
-  private String jobOrderID = null;
+  @SerializedName("joborder_id")
+  private String joborderId = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
+
+  public Plmaggregateworkticket displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
   }
 
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Plmaggregateworkticket docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Plmaggregateworkticket id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Plmaggregateworkticket periodID(String periodID) {
-    this.periodID = periodID;
+  public Plmaggregateworkticket classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Plmaggregateworkticket ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Plmaggregateworkticket objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Plmaggregateworkticket docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Plmaggregateworkticket docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Plmaggregateworkticket createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Plmaggregateworkticket periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Plmaggregateworkticket correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Plmaggregateworkticket ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Plmaggregateworkticket newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Plmaggregateworkticket docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Plmaggregateworkticket newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Plmaggregateworkticket createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Plmaggregateworkticket accPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public Plmaggregateworkticket correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Předkontace; ID objektu Účetní předkontace [persistentní položka]
-   * @return accPresetDefID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Předkontace; ID objektu Účetní předkontace [persistentní položka]")
-  public String getAccPresetDefID() {
-    return accPresetDefID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setAccPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Plmaggregateworkticket accDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public Plmaggregateworkticket newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Datum účt. [persistentní položka]
-   * @return accDateDATE
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Datum účt. [persistentní položka]")
-  public DateTime getAccDateDATE() {
-    return accDateDATE;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setAccDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Plmaggregateworkticket accDocQueueID(String accDocQueueID) {
-    this.accDocQueueID = accDocQueueID;
+  public Plmaggregateworkticket newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * Účetní řada; ID objektu Účetní řada dokladů [persistentní položka]
-   * @return accDocQueueID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "Účetní řada; ID objektu Účetní řada dokladů [persistentní položka]")
-  public String getAccDocQueueID() {
-    return accDocQueueID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setAccDocQueueID(String accDocQueueID) {
-    this.accDocQueueID = accDocQueueID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Plmaggregateworkticket accountingType(Integer accountingType) {
-    this.accountingType = accountingType;
+  public Plmaggregateworkticket accpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
     return this;
   }
 
    /**
-   * Jak účtovat
-   * @return accountingType
+   * předkontace; id objektu Účetní předkontace [persistentní položka]
+   * @return accpresetdefId
   **/
-  @ApiModelProperty(example = "null", value = "Jak účtovat")
-  public Integer getAccountingType() {
-    return accountingType;
+  @ApiModelProperty(example = "null", value = "předkontace; id objektu Účetní předkontace [persistentní položka]")
+  public String getAccpresetdefId() {
+    return accpresetdefId;
   }
 
-  public void setAccountingType(Integer accountingType) {
-    this.accountingType = accountingType;
+  public void setAccpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
   }
 
-  public Plmaggregateworkticket isAccounted(Boolean isAccounted) {
-    this.isAccounted = isAccounted;
+  public Plmaggregateworkticket accdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
+    return this;
+  }
+
+   /**
+   * datum účt. [persistentní položka]
+   * @return accdatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum účt. [persistentní položka]")
+  public DateTime getAccdatedate() {
+    return accdatedate;
+  }
+
+  public void setAccdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
+  }
+
+  public Plmaggregateworkticket accdocqueueId(String accdocqueueId) {
+    this.accdocqueueId = accdocqueueId;
+    return this;
+  }
+
+   /**
+   * Účetní řada; id objektu Účetní řada dokladů [persistentní položka]
+   * @return accdocqueueId
+  **/
+  @ApiModelProperty(example = "null", value = "Účetní řada; id objektu Účetní řada dokladů [persistentní položka]")
+  public String getAccdocqueueId() {
+    return accdocqueueId;
+  }
+
+  public void setAccdocqueueId(String accdocqueueId) {
+    this.accdocqueueId = accdocqueueId;
+  }
+
+  public Plmaggregateworkticket accountingtype(Integer accountingtype) {
+    this.accountingtype = accountingtype;
+    return this;
+  }
+
+   /**
+   * jak účtovat
+   * @return accountingtype
+  **/
+  @ApiModelProperty(example = "null", value = "jak účtovat")
+  public Integer getAccountingtype() {
+    return accountingtype;
+  }
+
+  public void setAccountingtype(Integer accountingtype) {
+    this.accountingtype = accountingtype;
+  }
+
+  public Plmaggregateworkticket isaccounted(Boolean isaccounted) {
+    this.isaccounted = isaccounted;
     return this;
   }
 
    /**
    * Účtováno
-   * @return isAccounted
+   * @return isaccounted
   **/
   @ApiModelProperty(example = "null", value = "Účtováno")
-  public Boolean getIsAccounted() {
-    return isAccounted;
+  public Boolean getIsaccounted() {
+    return isaccounted;
   }
 
-  public void setIsAccounted(Boolean isAccounted) {
-    this.isAccounted = isAccounted;
+  public void setIsaccounted(Boolean isaccounted) {
+    this.isaccounted = isaccounted;
   }
 
   public Plmaggregateworkticket dirty(Boolean dirty) {
@@ -385,10 +421,10 @@ public class Plmaggregateworkticket   {
   }
 
    /**
-   * Zakázané přepočítání
+   * zakázané přepočítání
    * @return dirty
   **/
-  @ApiModelProperty(example = "null", value = "Zakázané přepočítání")
+  @ApiModelProperty(example = "null", value = "zakázané přepočítání")
   public Boolean getDirty() {
     return dirty;
   }
@@ -397,22 +433,22 @@ public class Plmaggregateworkticket   {
     this.dirty = dirty;
   }
 
-  public Plmaggregateworkticket jobOrderID(String jobOrderID) {
-    this.jobOrderID = jobOrderID;
+  public Plmaggregateworkticket joborderId(String joborderId) {
+    this.joborderId = joborderId;
     return this;
   }
 
    /**
-   * Výrobní příkaz; ID objektu Výrobní příkaz [persistentní položka]
-   * @return jobOrderID
+   * výrobní příkaz; id objektu výrobní příkaz [persistentní položka]
+   * @return joborderId
   **/
-  @ApiModelProperty(example = "null", value = "Výrobní příkaz; ID objektu Výrobní příkaz [persistentní položka]")
-  public String getJobOrderID() {
-    return jobOrderID;
+  @ApiModelProperty(example = "null", value = "výrobní příkaz; id objektu výrobní příkaz [persistentní položka]")
+  public String getJoborderId() {
+    return joborderId;
   }
 
-  public void setJobOrderID(String jobOrderID) {
-    this.jobOrderID = jobOrderID;
+  public void setJoborderId(String joborderId) {
+    this.joborderId = joborderId;
   }
 
   public Plmaggregateworkticket amount(Double amount) {
@@ -433,76 +469,76 @@ public class Plmaggregateworkticket   {
     this.amount = amount;
   }
 
-  public Plmaggregateworkticket divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Plmaggregateworkticket divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Plmaggregateworkticket busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Plmaggregateworkticket busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Plmaggregateworkticket busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Plmaggregateworkticket bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obch. případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obch. případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obch. případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obch. případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Plmaggregateworkticket busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Plmaggregateworkticket busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
 
@@ -515,35 +551,35 @@ public class Plmaggregateworkticket   {
       return false;
     }
     Plmaggregateworkticket plmaggregateworkticket = (Plmaggregateworkticket) o;
-    return Objects.equals(this.displayName, plmaggregateworkticket.displayName) &&
-        Objects.equals(this.ID, plmaggregateworkticket.ID) &&
-        Objects.equals(this.classID, plmaggregateworkticket.classID) &&
-        Objects.equals(this.objVersion, plmaggregateworkticket.objVersion) &&
-        Objects.equals(this.docQueueID, plmaggregateworkticket.docQueueID) &&
-        Objects.equals(this.periodID, plmaggregateworkticket.periodID) &&
-        Objects.equals(this.ordNumber, plmaggregateworkticket.ordNumber) &&
-        Objects.equals(this.docDateDATE, plmaggregateworkticket.docDateDATE) &&
-        Objects.equals(this.createdByID, plmaggregateworkticket.createdByID) &&
-        Objects.equals(this.correctedByID, plmaggregateworkticket.correctedByID) &&
-        Objects.equals(this.newRelatedType, plmaggregateworkticket.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, plmaggregateworkticket.newRelatedDocumentID) &&
-        Objects.equals(this.accPresetDefID, plmaggregateworkticket.accPresetDefID) &&
-        Objects.equals(this.accDateDATE, plmaggregateworkticket.accDateDATE) &&
-        Objects.equals(this.accDocQueueID, plmaggregateworkticket.accDocQueueID) &&
-        Objects.equals(this.accountingType, plmaggregateworkticket.accountingType) &&
-        Objects.equals(this.isAccounted, plmaggregateworkticket.isAccounted) &&
+    return Objects.equals(this.displayname, plmaggregateworkticket.displayname) &&
+        Objects.equals(this.id, plmaggregateworkticket.id) &&
+        Objects.equals(this.classid, plmaggregateworkticket.classid) &&
+        Objects.equals(this.objversion, plmaggregateworkticket.objversion) &&
+        Objects.equals(this.docqueueId, plmaggregateworkticket.docqueueId) &&
+        Objects.equals(this.periodId, plmaggregateworkticket.periodId) &&
+        Objects.equals(this.ordnumber, plmaggregateworkticket.ordnumber) &&
+        Objects.equals(this.docdatedate, plmaggregateworkticket.docdatedate) &&
+        Objects.equals(this.createdbyId, plmaggregateworkticket.createdbyId) &&
+        Objects.equals(this.correctedbyId, plmaggregateworkticket.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, plmaggregateworkticket.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, plmaggregateworkticket.newrelateddocumentId) &&
+        Objects.equals(this.accpresetdefId, plmaggregateworkticket.accpresetdefId) &&
+        Objects.equals(this.accdatedate, plmaggregateworkticket.accdatedate) &&
+        Objects.equals(this.accdocqueueId, plmaggregateworkticket.accdocqueueId) &&
+        Objects.equals(this.accountingtype, plmaggregateworkticket.accountingtype) &&
+        Objects.equals(this.isaccounted, plmaggregateworkticket.isaccounted) &&
         Objects.equals(this.dirty, plmaggregateworkticket.dirty) &&
-        Objects.equals(this.jobOrderID, plmaggregateworkticket.jobOrderID) &&
+        Objects.equals(this.joborderId, plmaggregateworkticket.joborderId) &&
         Objects.equals(this.amount, plmaggregateworkticket.amount) &&
-        Objects.equals(this.divisionID, plmaggregateworkticket.divisionID) &&
-        Objects.equals(this.busOrderID, plmaggregateworkticket.busOrderID) &&
-        Objects.equals(this.busTransactionID, plmaggregateworkticket.busTransactionID) &&
-        Objects.equals(this.busProjectID, plmaggregateworkticket.busProjectID);
+        Objects.equals(this.divisionId, plmaggregateworkticket.divisionId) &&
+        Objects.equals(this.busorderId, plmaggregateworkticket.busorderId) &&
+        Objects.equals(this.bustransactionId, plmaggregateworkticket.bustransactionId) &&
+        Objects.equals(this.busprojectId, plmaggregateworkticket.busprojectId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, accPresetDefID, accDateDATE, accDocQueueID, accountingType, isAccounted, dirty, jobOrderID, amount, divisionID, busOrderID, busTransactionID, busProjectID);
+    return Objects.hash(displayname, id, classid, objversion, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, accpresetdefId, accdatedate, accdocqueueId, accountingtype, isaccounted, dirty, joborderId, amount, divisionId, busorderId, bustransactionId, busprojectId);
   }
 
   @Override
@@ -551,30 +587,30 @@ public class Plmaggregateworkticket   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmaggregateworkticket {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    accPresetDefID: ").append(toIndentedString(accPresetDefID)).append("\n");
-    sb.append("    accDateDATE: ").append(toIndentedString(accDateDATE)).append("\n");
-    sb.append("    accDocQueueID: ").append(toIndentedString(accDocQueueID)).append("\n");
-    sb.append("    accountingType: ").append(toIndentedString(accountingType)).append("\n");
-    sb.append("    isAccounted: ").append(toIndentedString(isAccounted)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    accpresetdefId: ").append(toIndentedString(accpresetdefId)).append("\n");
+    sb.append("    accdatedate: ").append(toIndentedString(accdatedate)).append("\n");
+    sb.append("    accdocqueueId: ").append(toIndentedString(accdocqueueId)).append("\n");
+    sb.append("    accountingtype: ").append(toIndentedString(accountingtype)).append("\n");
+    sb.append("    isaccounted: ").append(toIndentedString(isaccounted)).append("\n");
     sb.append("    dirty: ").append(toIndentedString(dirty)).append("\n");
-    sb.append("    jobOrderID: ").append(toIndentedString(jobOrderID)).append("\n");
+    sb.append("    joborderId: ").append(toIndentedString(joborderId)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

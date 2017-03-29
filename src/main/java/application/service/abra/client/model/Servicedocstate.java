@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,75 +34,111 @@ import java.util.Objects;
 /**
  * Servicedocstate
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Servicedocstate   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("IsDefault")
-  private Boolean isDefault = null;
+  @SerializedName("isdefault")
+  private Boolean isdefault = null;
 
-  @SerializedName("IsFinished")
-  private Boolean isFinished = null;
+  @SerializedName("isfinished")
+  private Boolean isfinished = null;
 
-  @SerializedName("IsClosed")
-  private Boolean isClosed = null;
+  @SerializedName("isclosed")
+  private Boolean isclosed = null;
 
-  @SerializedName("IsInvoiced")
-  private Boolean isInvoiced = null;
+  @SerializedName("isinvoiced")
+  private Boolean isinvoiced = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Servicedocstate displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Servicedocstate id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Servicedocstate classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Servicedocstate objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Servicedocstate hidden(Boolean hidden) {
@@ -111,10 +147,10 @@ public class Servicedocstate   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -129,10 +165,10 @@ public class Servicedocstate   {
   }
 
    /**
-   * Název stavu [persistentní položka]
+   * název stavu [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název stavu [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název stavu [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -141,94 +177,94 @@ public class Servicedocstate   {
     this.name = name;
   }
 
-  public Servicedocstate posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Servicedocstate posindex(Integer posindex) {
+    this.posindex = posindex;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * pořadí [persistentní položka]
+   * @return posindex
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
-  public Servicedocstate isDefault(Boolean isDefault) {
-    this.isDefault = isDefault;
+  public Servicedocstate isdefault(Boolean isdefault) {
+    this.isdefault = isdefault;
     return this;
   }
 
    /**
-   * Výchozí [persistentní položka]
-   * @return isDefault
+   * výchozí [persistentní položka]
+   * @return isdefault
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí [persistentní položka]")
-  public Boolean getIsDefault() {
-    return isDefault;
+  @ApiModelProperty(example = "null", value = "výchozí [persistentní položka]")
+  public Boolean getIsdefault() {
+    return isdefault;
   }
 
-  public void setIsDefault(Boolean isDefault) {
-    this.isDefault = isDefault;
+  public void setIsdefault(Boolean isdefault) {
+    this.isdefault = isdefault;
   }
 
-  public Servicedocstate isFinished(Boolean isFinished) {
-    this.isFinished = isFinished;
+  public Servicedocstate isfinished(Boolean isfinished) {
+    this.isfinished = isfinished;
     return this;
   }
 
    /**
-   * Ukončený [persistentní položka]
-   * @return isFinished
+   * ukončený [persistentní položka]
+   * @return isfinished
   **/
-  @ApiModelProperty(example = "null", value = "Ukončený [persistentní položka]")
-  public Boolean getIsFinished() {
-    return isFinished;
+  @ApiModelProperty(example = "null", value = "ukončený [persistentní položka]")
+  public Boolean getIsfinished() {
+    return isfinished;
   }
 
-  public void setIsFinished(Boolean isFinished) {
-    this.isFinished = isFinished;
+  public void setIsfinished(Boolean isfinished) {
+    this.isfinished = isfinished;
   }
 
-  public Servicedocstate isClosed(Boolean isClosed) {
-    this.isClosed = isClosed;
+  public Servicedocstate isclosed(Boolean isclosed) {
+    this.isclosed = isclosed;
     return this;
   }
 
    /**
-   * Uzavřený [persistentní položka]
-   * @return isClosed
+   * uzavřený [persistentní položka]
+   * @return isclosed
   **/
-  @ApiModelProperty(example = "null", value = "Uzavřený [persistentní položka]")
-  public Boolean getIsClosed() {
-    return isClosed;
+  @ApiModelProperty(example = "null", value = "uzavřený [persistentní položka]")
+  public Boolean getIsclosed() {
+    return isclosed;
   }
 
-  public void setIsClosed(Boolean isClosed) {
-    this.isClosed = isClosed;
+  public void setIsclosed(Boolean isclosed) {
+    this.isclosed = isclosed;
   }
 
-  public Servicedocstate isInvoiced(Boolean isInvoiced) {
-    this.isInvoiced = isInvoiced;
+  public Servicedocstate isinvoiced(Boolean isinvoiced) {
+    this.isinvoiced = isinvoiced;
     return this;
   }
 
    /**
-   * Fakturovaný [persistentní položka]
-   * @return isInvoiced
+   * fakturovaný [persistentní položka]
+   * @return isinvoiced
   **/
-  @ApiModelProperty(example = "null", value = "Fakturovaný [persistentní položka]")
-  public Boolean getIsInvoiced() {
-    return isInvoiced;
+  @ApiModelProperty(example = "null", value = "fakturovaný [persistentní položka]")
+  public Boolean getIsinvoiced() {
+    return isinvoiced;
   }
 
-  public void setIsInvoiced(Boolean isInvoiced) {
-    this.isInvoiced = isInvoiced;
+  public void setIsinvoiced(Boolean isinvoiced) {
+    this.isinvoiced = isinvoiced;
   }
 
 
@@ -241,22 +277,22 @@ public class Servicedocstate   {
       return false;
     }
     Servicedocstate servicedocstate = (Servicedocstate) o;
-    return Objects.equals(this.displayName, servicedocstate.displayName) &&
-        Objects.equals(this.ID, servicedocstate.ID) &&
-        Objects.equals(this.classID, servicedocstate.classID) &&
-        Objects.equals(this.objVersion, servicedocstate.objVersion) &&
+    return Objects.equals(this.displayname, servicedocstate.displayname) &&
+        Objects.equals(this.id, servicedocstate.id) &&
+        Objects.equals(this.classid, servicedocstate.classid) &&
+        Objects.equals(this.objversion, servicedocstate.objversion) &&
         Objects.equals(this.hidden, servicedocstate.hidden) &&
         Objects.equals(this.name, servicedocstate.name) &&
-        Objects.equals(this.posIndex, servicedocstate.posIndex) &&
-        Objects.equals(this.isDefault, servicedocstate.isDefault) &&
-        Objects.equals(this.isFinished, servicedocstate.isFinished) &&
-        Objects.equals(this.isClosed, servicedocstate.isClosed) &&
-        Objects.equals(this.isInvoiced, servicedocstate.isInvoiced);
+        Objects.equals(this.posindex, servicedocstate.posindex) &&
+        Objects.equals(this.isdefault, servicedocstate.isdefault) &&
+        Objects.equals(this.isfinished, servicedocstate.isfinished) &&
+        Objects.equals(this.isclosed, servicedocstate.isclosed) &&
+        Objects.equals(this.isinvoiced, servicedocstate.isinvoiced);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, name, posIndex, isDefault, isFinished, isClosed, isInvoiced);
+    return Objects.hash(displayname, id, classid, objversion, hidden, name, posindex, isdefault, isfinished, isclosed, isinvoiced);
   }
 
   @Override
@@ -264,17 +300,17 @@ public class Servicedocstate   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Servicedocstate {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    isDefault: ").append(toIndentedString(isDefault)).append("\n");
-    sb.append("    isFinished: ").append(toIndentedString(isFinished)).append("\n");
-    sb.append("    isClosed: ").append(toIndentedString(isClosed)).append("\n");
-    sb.append("    isInvoiced: ").append(toIndentedString(isInvoiced)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    isdefault: ").append(toIndentedString(isdefault)).append("\n");
+    sb.append("    isfinished: ").append(toIndentedString(isfinished)).append("\n");
+    sb.append("    isclosed: ").append(toIndentedString(isclosed)).append("\n");
+    sb.append("    isinvoiced: ").append(toIndentedString(isinvoiced)).append("\n");
     sb.append("}");
     return sb.toString();
   }

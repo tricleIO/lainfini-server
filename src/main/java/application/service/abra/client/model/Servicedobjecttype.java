@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,66 +34,102 @@ import java.util.Objects;
 /**
  * Servicedobjecttype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Servicedobjecttype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ServiceType_ID")
-  private String serviceTypeID = null;
+  @SerializedName("servicetype_id")
+  private String servicetypeId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Servicedobjecttype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Servicedobjecttype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Servicedobjecttype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Servicedobjecttype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Servicedobjecttype hidden(Boolean hidden) {
@@ -102,10 +138,10 @@ public class Servicedobjecttype   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -114,22 +150,22 @@ public class Servicedobjecttype   {
     this.hidden = hidden;
   }
 
-  public Servicedobjecttype parentID(String parentID) {
-    this.parentID = parentID;
+  public Servicedobjecttype parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Nadřízený model; ID objektu Model servisovaného předmětu [persistentní položka]
-   * @return parentID
+   * nadřízený model; id objektu model servisovaného předmětu [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízený model; ID objektu Model servisovaného předmětu [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "nadřízený model; id objektu model servisovaného předmětu [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setParentID(String parentID) {
-    this.parentID = parentID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
   public Servicedobjecttype name(String name) {
@@ -138,10 +174,10 @@ public class Servicedobjecttype   {
   }
 
    /**
-   * Model [persistentní položka]
+   * model [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Model [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "model [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -150,22 +186,22 @@ public class Servicedobjecttype   {
     this.name = name;
   }
 
-  public Servicedobjecttype serviceTypeID(String serviceTypeID) {
-    this.serviceTypeID = serviceTypeID;
+  public Servicedobjecttype servicetypeId(String servicetypeId) {
+    this.servicetypeId = servicetypeId;
     return this;
   }
 
    /**
-   * Typ servisního případu; ID objektu Typ servisního případu [persistentní položka]
-   * @return serviceTypeID
+   * typ servisního případu; id objektu typ servisního případu [persistentní položka]
+   * @return servicetypeId
   **/
-  @ApiModelProperty(example = "null", value = "Typ servisního případu; ID objektu Typ servisního případu [persistentní položka]")
-  public String getServiceTypeID() {
-    return serviceTypeID;
+  @ApiModelProperty(example = "null", value = "typ servisního případu; id objektu typ servisního případu [persistentní položka]")
+  public String getServicetypeId() {
+    return servicetypeId;
   }
 
-  public void setServiceTypeID(String serviceTypeID) {
-    this.serviceTypeID = serviceTypeID;
+  public void setServicetypeId(String servicetypeId) {
+    this.servicetypeId = servicetypeId;
   }
 
 
@@ -178,19 +214,19 @@ public class Servicedobjecttype   {
       return false;
     }
     Servicedobjecttype servicedobjecttype = (Servicedobjecttype) o;
-    return Objects.equals(this.displayName, servicedobjecttype.displayName) &&
-        Objects.equals(this.ID, servicedobjecttype.ID) &&
-        Objects.equals(this.classID, servicedobjecttype.classID) &&
-        Objects.equals(this.objVersion, servicedobjecttype.objVersion) &&
+    return Objects.equals(this.displayname, servicedobjecttype.displayname) &&
+        Objects.equals(this.id, servicedobjecttype.id) &&
+        Objects.equals(this.classid, servicedobjecttype.classid) &&
+        Objects.equals(this.objversion, servicedobjecttype.objversion) &&
         Objects.equals(this.hidden, servicedobjecttype.hidden) &&
-        Objects.equals(this.parentID, servicedobjecttype.parentID) &&
+        Objects.equals(this.parentId, servicedobjecttype.parentId) &&
         Objects.equals(this.name, servicedobjecttype.name) &&
-        Objects.equals(this.serviceTypeID, servicedobjecttype.serviceTypeID);
+        Objects.equals(this.servicetypeId, servicedobjecttype.servicetypeId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, parentID, name, serviceTypeID);
+    return Objects.hash(displayname, id, classid, objversion, hidden, parentId, name, servicetypeId);
   }
 
   @Override
@@ -198,14 +234,14 @@ public class Servicedobjecttype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Servicedobjecttype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    serviceTypeID: ").append(toIndentedString(serviceTypeID)).append("\n");
+    sb.append("    servicetypeId: ").append(toIndentedString(servicetypeId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

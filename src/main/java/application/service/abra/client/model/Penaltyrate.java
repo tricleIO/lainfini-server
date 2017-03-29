@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,96 +35,132 @@ import java.util.Objects;
 /**
  * Penaltyrate
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Penaltyrate   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("PenaltyPercent")
-  private Double penaltyPercent = null;
+  @SerializedName("penaltypercent")
+  private Double penaltypercent = null;
 
-  @SerializedName("Date$DATE")
-  private DateTime dateDATE = null;
+  @SerializedName("date$date")
+  private DateTime datedate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Penaltyrate penaltyPercent(Double penaltyPercent) {
-    this.penaltyPercent = penaltyPercent;
+  public Penaltyrate displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Sazba [persistentní položka]
-   * @return penaltyPercent
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Sazba [persistentní položka]")
-  public Double getPenaltyPercent() {
-    return penaltyPercent;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPenaltyPercent(Double penaltyPercent) {
-    this.penaltyPercent = penaltyPercent;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Penaltyrate dateDATE(DateTime dateDATE) {
-    this.dateDATE = dateDATE;
+  public Penaltyrate id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Datum [persistentní položka]
-   * @return dateDATE
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Datum [persistentní položka]")
-  public DateTime getDateDATE() {
-    return dateDATE;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDateDATE(DateTime dateDATE) {
-    this.dateDATE = dateDATE;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Penaltyrate classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Penaltyrate objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Penaltyrate penaltypercent(Double penaltypercent) {
+    this.penaltypercent = penaltypercent;
+    return this;
+  }
+
+   /**
+   * sazba [persistentní položka]
+   * @return penaltypercent
+  **/
+  @ApiModelProperty(example = "null", value = "sazba [persistentní položka]")
+  public Double getPenaltypercent() {
+    return penaltypercent;
+  }
+
+  public void setPenaltypercent(Double penaltypercent) {
+    this.penaltypercent = penaltypercent;
+  }
+
+  public Penaltyrate datedate(DateTime datedate) {
+    this.datedate = datedate;
+    return this;
+  }
+
+   /**
+   * datum [persistentní položka]
+   * @return datedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum [persistentní položka]")
+  public DateTime getDatedate() {
+    return datedate;
+  }
+
+  public void setDatedate(DateTime datedate) {
+    this.datedate = datedate;
   }
 
 
@@ -137,17 +173,17 @@ public class Penaltyrate   {
       return false;
     }
     Penaltyrate penaltyrate = (Penaltyrate) o;
-    return Objects.equals(this.displayName, penaltyrate.displayName) &&
-        Objects.equals(this.ID, penaltyrate.ID) &&
-        Objects.equals(this.classID, penaltyrate.classID) &&
-        Objects.equals(this.objVersion, penaltyrate.objVersion) &&
-        Objects.equals(this.penaltyPercent, penaltyrate.penaltyPercent) &&
-        Objects.equals(this.dateDATE, penaltyrate.dateDATE);
+    return Objects.equals(this.displayname, penaltyrate.displayname) &&
+        Objects.equals(this.id, penaltyrate.id) &&
+        Objects.equals(this.classid, penaltyrate.classid) &&
+        Objects.equals(this.objversion, penaltyrate.objversion) &&
+        Objects.equals(this.penaltypercent, penaltyrate.penaltypercent) &&
+        Objects.equals(this.datedate, penaltyrate.datedate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, penaltyPercent, dateDATE);
+    return Objects.hash(displayname, id, classid, objversion, penaltypercent, datedate);
   }
 
   @Override
@@ -155,12 +191,12 @@ public class Penaltyrate   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Penaltyrate {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    penaltyPercent: ").append(toIndentedString(penaltyPercent)).append("\n");
-    sb.append("    dateDATE: ").append(toIndentedString(dateDATE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    penaltypercent: ").append(toIndentedString(penaltypercent)).append("\n");
+    sb.append("    datedate: ").append(toIndentedString(datedate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

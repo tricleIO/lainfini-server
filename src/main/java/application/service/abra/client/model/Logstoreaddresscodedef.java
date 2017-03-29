@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,69 +36,105 @@ import java.util.Objects;
 /**
  * Logstoreaddresscodedef
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Logstoreaddresscodedef   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Logstoreaddresscodedefrow> rows = new ArrayList<Logstoreaddresscodedefrow>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("CodeSample")
-  private String codeSample = null;
+  @SerializedName("codesample")
+  private String codesample = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Logstoreaddresscodedef displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Logstoreaddresscodedef id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Logstoreaddresscodedef classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Logstoreaddresscodedef objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Logstoreaddresscodedef rows(List<Logstoreaddresscodedefrow> rows) {
@@ -112,10 +148,10 @@ public class Logstoreaddresscodedef   {
   }
 
    /**
-   * Řádky; kolekce BO Segment struktury adresy skl. poz. [nepersistentní položka]
+   * Řádky; kolekce bo segment struktury adresy skl. poz. [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Segment struktury adresy skl. poz. [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo segment struktury adresy skl. poz. [nepersistentní položka]")
   public List<Logstoreaddresscodedefrow> getRows() {
     return rows;
   }
@@ -130,10 +166,10 @@ public class Logstoreaddresscodedef   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -148,10 +184,10 @@ public class Logstoreaddresscodedef   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -160,22 +196,40 @@ public class Logstoreaddresscodedef   {
     this.name = name;
   }
 
+  public Logstoreaddresscodedef code(String code) {
+    this.code = code;
+    return this;
+  }
+
    /**
-   * Kód
+   * kód
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód")
+  @ApiModelProperty(example = "null", value = "kód")
   public String getCode() {
     return code;
   }
 
+  public void setCode(String code) {
+    this.code = code;
+  }
+
+  public Logstoreaddresscodedef codesample(String codesample) {
+    this.codesample = codesample;
+    return this;
+  }
+
    /**
-   * Ukázka kódu
-   * @return codeSample
+   * ukázka kódu
+   * @return codesample
   **/
-  @ApiModelProperty(example = "null", value = "Ukázka kódu")
-  public String getCodeSample() {
-    return codeSample;
+  @ApiModelProperty(example = "null", value = "ukázka kódu")
+  public String getCodesample() {
+    return codesample;
+  }
+
+  public void setCodesample(String codesample) {
+    this.codesample = codesample;
   }
 
 
@@ -188,20 +242,20 @@ public class Logstoreaddresscodedef   {
       return false;
     }
     Logstoreaddresscodedef logstoreaddresscodedef = (Logstoreaddresscodedef) o;
-    return Objects.equals(this.displayName, logstoreaddresscodedef.displayName) &&
-        Objects.equals(this.ID, logstoreaddresscodedef.ID) &&
-        Objects.equals(this.classID, logstoreaddresscodedef.classID) &&
-        Objects.equals(this.objVersion, logstoreaddresscodedef.objVersion) &&
+    return Objects.equals(this.displayname, logstoreaddresscodedef.displayname) &&
+        Objects.equals(this.id, logstoreaddresscodedef.id) &&
+        Objects.equals(this.classid, logstoreaddresscodedef.classid) &&
+        Objects.equals(this.objversion, logstoreaddresscodedef.objversion) &&
         Objects.equals(this.rows, logstoreaddresscodedef.rows) &&
         Objects.equals(this.hidden, logstoreaddresscodedef.hidden) &&
         Objects.equals(this.name, logstoreaddresscodedef.name) &&
         Objects.equals(this.code, logstoreaddresscodedef.code) &&
-        Objects.equals(this.codeSample, logstoreaddresscodedef.codeSample);
+        Objects.equals(this.codesample, logstoreaddresscodedef.codesample);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, name, code, codeSample);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, name, code, codesample);
   }
 
   @Override
@@ -209,15 +263,15 @@ public class Logstoreaddresscodedef   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Logstoreaddresscodedef {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
-    sb.append("    codeSample: ").append(toIndentedString(codeSample)).append("\n");
+    sb.append("    codesample: ").append(toIndentedString(codesample)).append("\n");
     sb.append("}");
     return sb.toString();
   }

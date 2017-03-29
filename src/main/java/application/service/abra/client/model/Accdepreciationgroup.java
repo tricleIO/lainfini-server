@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,93 +37,129 @@ import java.util.Objects;
 /**
  * Accdepreciationgroup
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Accdepreciationgroup   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Accdepreciationgrouprow> rows = new ArrayList<Accdepreciationgrouprow>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("MonthCount")
-  private Integer monthCount = null;
+  @SerializedName("monthcount")
+  private Integer monthcount = null;
 
-  @SerializedName("LinearRate")
-  private Double linearRate = null;
+  @SerializedName("linearrate")
+  private Double linearrate = null;
 
-  @SerializedName("DepreciationType")
-  private Integer depreciationType = null;
+  @SerializedName("depreciationtype")
+  private Integer depreciationtype = null;
 
-  @SerializedName("DepreciationTypeAsText")
-  private String depreciationTypeAsText = null;
+  @SerializedName("depreciationtypeastext")
+  private String depreciationtypeastext = null;
 
-  @SerializedName("RateInOtherYears")
-  private Double rateInOtherYears = null;
+  @SerializedName("rateinotheryears")
+  private Double rateinotheryears = null;
 
-  @SerializedName("ValidFromDate$DATE")
-  private DateTime validFromDateDATE = null;
+  @SerializedName("validfromdate$date")
+  private DateTime validfromdatedate = null;
 
-  @SerializedName("ValidToDate$DATE")
-  private DateTime validToDateDATE = null;
+  @SerializedName("validtodate$date")
+  private DateTime validtodatedate = null;
 
-  @SerializedName("RatesTotal")
-  private Double ratesTotal = null;
+  @SerializedName("ratestotal")
+  private Double ratestotal = null;
 
-  @SerializedName("RemainsTotal")
-  private Double remainsTotal = null;
+  @SerializedName("remainstotal")
+  private Double remainstotal = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Accdepreciationgroup displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Accdepreciationgroup id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Accdepreciationgroup classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Accdepreciationgroup objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Accdepreciationgroup rows(List<Accdepreciationgrouprow> rows) {
@@ -137,10 +173,10 @@ public class Accdepreciationgroup   {
   }
 
    /**
-   * Řádky; kolekce BO Řádky účetní odpisové skupiny [nepersistentní položka]
+   * Řádky; kolekce bo Řádky účetní odpisové skupiny [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Řádky účetní odpisové skupiny [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo Řádky účetní odpisové skupiny [nepersistentní položka]")
   public List<Accdepreciationgrouprow> getRows() {
     return rows;
   }
@@ -155,10 +191,10 @@ public class Accdepreciationgroup   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -173,10 +209,10 @@ public class Accdepreciationgroup   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -191,10 +227,10 @@ public class Accdepreciationgroup   {
   }
 
    /**
-   * Název/popis skupiny [persistentní položka]
+   * název/popis skupiny [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název/popis skupiny [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název/popis skupiny [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -203,166 +239,166 @@ public class Accdepreciationgroup   {
     this.name = name;
   }
 
-  public Accdepreciationgroup monthCount(Integer monthCount) {
-    this.monthCount = monthCount;
+  public Accdepreciationgroup monthcount(Integer monthcount) {
+    this.monthcount = monthcount;
     return this;
   }
 
    /**
-   * Poč.měsíců [persistentní položka]
-   * @return monthCount
+   * poč.měsíců [persistentní položka]
+   * @return monthcount
   **/
-  @ApiModelProperty(example = "null", value = "Poč.měsíců [persistentní položka]")
-  public Integer getMonthCount() {
-    return monthCount;
+  @ApiModelProperty(example = "null", value = "poč.měsíců [persistentní položka]")
+  public Integer getMonthcount() {
+    return monthcount;
   }
 
-  public void setMonthCount(Integer monthCount) {
-    this.monthCount = monthCount;
+  public void setMonthcount(Integer monthcount) {
+    this.monthcount = monthcount;
   }
 
-  public Accdepreciationgroup linearRate(Double linearRate) {
-    this.linearRate = linearRate;
+  public Accdepreciationgroup linearrate(Double linearrate) {
+    this.linearrate = linearrate;
     return this;
   }
 
    /**
-   * Sazba lineárního odpisu
-   * @return linearRate
+   * sazba lineárního odpisu
+   * @return linearrate
   **/
-  @ApiModelProperty(example = "null", value = "Sazba lineárního odpisu")
-  public Double getLinearRate() {
-    return linearRate;
+  @ApiModelProperty(example = "null", value = "sazba lineárního odpisu")
+  public Double getLinearrate() {
+    return linearrate;
   }
 
-  public void setLinearRate(Double linearRate) {
-    this.linearRate = linearRate;
+  public void setLinearrate(Double linearrate) {
+    this.linearrate = linearrate;
   }
 
-  public Accdepreciationgroup depreciationType(Integer depreciationType) {
-    this.depreciationType = depreciationType;
+  public Accdepreciationgroup depreciationtype(Integer depreciationtype) {
+    this.depreciationtype = depreciationtype;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return depreciationType
+   * typ [persistentní položka]
+   * @return depreciationtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getDepreciationType() {
-    return depreciationType;
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getDepreciationtype() {
+    return depreciationtype;
   }
 
-  public void setDepreciationType(Integer depreciationType) {
-    this.depreciationType = depreciationType;
+  public void setDepreciationtype(Integer depreciationtype) {
+    this.depreciationtype = depreciationtype;
   }
 
-  public Accdepreciationgroup depreciationTypeAsText(String depreciationTypeAsText) {
-    this.depreciationTypeAsText = depreciationTypeAsText;
+  public Accdepreciationgroup depreciationtypeastext(String depreciationtypeastext) {
+    this.depreciationtypeastext = depreciationtypeastext;
     return this;
   }
 
    /**
-   * Typ skupiny
-   * @return depreciationTypeAsText
+   * typ skupiny
+   * @return depreciationtypeastext
   **/
-  @ApiModelProperty(example = "null", value = "Typ skupiny")
-  public String getDepreciationTypeAsText() {
-    return depreciationTypeAsText;
+  @ApiModelProperty(example = "null", value = "typ skupiny")
+  public String getDepreciationtypeastext() {
+    return depreciationtypeastext;
   }
 
-  public void setDepreciationTypeAsText(String depreciationTypeAsText) {
-    this.depreciationTypeAsText = depreciationTypeAsText;
+  public void setDepreciationtypeastext(String depreciationtypeastext) {
+    this.depreciationtypeastext = depreciationtypeastext;
   }
 
-  public Accdepreciationgroup rateInOtherYears(Double rateInOtherYears) {
-    this.rateInOtherYears = rateInOtherYears;
+  public Accdepreciationgroup rateinotheryears(Double rateinotheryears) {
+    this.rateinotheryears = rateinotheryears;
     return this;
   }
 
    /**
-   * V dalších letech [persistentní položka]
-   * @return rateInOtherYears
+   * v dalších letech [persistentní položka]
+   * @return rateinotheryears
   **/
-  @ApiModelProperty(example = "null", value = "V dalších letech [persistentní položka]")
-  public Double getRateInOtherYears() {
-    return rateInOtherYears;
+  @ApiModelProperty(example = "null", value = "v dalších letech [persistentní položka]")
+  public Double getRateinotheryears() {
+    return rateinotheryears;
   }
 
-  public void setRateInOtherYears(Double rateInOtherYears) {
-    this.rateInOtherYears = rateInOtherYears;
+  public void setRateinotheryears(Double rateinotheryears) {
+    this.rateinotheryears = rateinotheryears;
   }
 
-  public Accdepreciationgroup validFromDateDATE(DateTime validFromDateDATE) {
-    this.validFromDateDATE = validFromDateDATE;
+  public Accdepreciationgroup validfromdatedate(DateTime validfromdatedate) {
+    this.validfromdatedate = validfromdatedate;
     return this;
   }
 
    /**
-   * Platí od data [persistentní položka]
-   * @return validFromDateDATE
+   * platí od data [persistentní položka]
+   * @return validfromdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Platí od data [persistentní položka]")
-  public DateTime getValidFromDateDATE() {
-    return validFromDateDATE;
+  @ApiModelProperty(example = "null", value = "platí od data [persistentní položka]")
+  public DateTime getValidfromdatedate() {
+    return validfromdatedate;
   }
 
-  public void setValidFromDateDATE(DateTime validFromDateDATE) {
-    this.validFromDateDATE = validFromDateDATE;
+  public void setValidfromdatedate(DateTime validfromdatedate) {
+    this.validfromdatedate = validfromdatedate;
   }
 
-  public Accdepreciationgroup validToDateDATE(DateTime validToDateDATE) {
-    this.validToDateDATE = validToDateDATE;
+  public Accdepreciationgroup validtodatedate(DateTime validtodatedate) {
+    this.validtodatedate = validtodatedate;
     return this;
   }
 
    /**
-   * Platí do data [persistentní položka]
-   * @return validToDateDATE
+   * platí do data [persistentní položka]
+   * @return validtodatedate
   **/
-  @ApiModelProperty(example = "null", value = "Platí do data [persistentní položka]")
-  public DateTime getValidToDateDATE() {
-    return validToDateDATE;
+  @ApiModelProperty(example = "null", value = "platí do data [persistentní položka]")
+  public DateTime getValidtodatedate() {
+    return validtodatedate;
   }
 
-  public void setValidToDateDATE(DateTime validToDateDATE) {
-    this.validToDateDATE = validToDateDATE;
+  public void setValidtodatedate(DateTime validtodatedate) {
+    this.validtodatedate = validtodatedate;
   }
 
-  public Accdepreciationgroup ratesTotal(Double ratesTotal) {
-    this.ratesTotal = ratesTotal;
+  public Accdepreciationgroup ratestotal(Double ratestotal) {
+    this.ratestotal = ratestotal;
     return this;
   }
 
    /**
-   * Celkem součet sazeb
-   * @return ratesTotal
+   * celkem součet sazeb
+   * @return ratestotal
   **/
-  @ApiModelProperty(example = "null", value = "Celkem součet sazeb")
-  public Double getRatesTotal() {
-    return ratesTotal;
+  @ApiModelProperty(example = "null", value = "celkem součet sazeb")
+  public Double getRatestotal() {
+    return ratestotal;
   }
 
-  public void setRatesTotal(Double ratesTotal) {
-    this.ratesTotal = ratesTotal;
+  public void setRatestotal(Double ratestotal) {
+    this.ratestotal = ratestotal;
   }
 
-  public Accdepreciationgroup remainsTotal(Double remainsTotal) {
-    this.remainsTotal = remainsTotal;
+  public Accdepreciationgroup remainstotal(Double remainstotal) {
+    this.remainstotal = remainstotal;
     return this;
   }
 
    /**
-   * Celkem zbývá
-   * @return remainsTotal
+   * celkem zbývá
+   * @return remainstotal
   **/
-  @ApiModelProperty(example = "null", value = "Celkem zbývá")
-  public Double getRemainsTotal() {
-    return remainsTotal;
+  @ApiModelProperty(example = "null", value = "celkem zbývá")
+  public Double getRemainstotal() {
+    return remainstotal;
   }
 
-  public void setRemainsTotal(Double remainsTotal) {
-    this.remainsTotal = remainsTotal;
+  public void setRemainstotal(Double remainstotal) {
+    this.remainstotal = remainstotal;
   }
 
 
@@ -375,28 +411,28 @@ public class Accdepreciationgroup   {
       return false;
     }
     Accdepreciationgroup accdepreciationgroup = (Accdepreciationgroup) o;
-    return Objects.equals(this.displayName, accdepreciationgroup.displayName) &&
-        Objects.equals(this.ID, accdepreciationgroup.ID) &&
-        Objects.equals(this.classID, accdepreciationgroup.classID) &&
-        Objects.equals(this.objVersion, accdepreciationgroup.objVersion) &&
+    return Objects.equals(this.displayname, accdepreciationgroup.displayname) &&
+        Objects.equals(this.id, accdepreciationgroup.id) &&
+        Objects.equals(this.classid, accdepreciationgroup.classid) &&
+        Objects.equals(this.objversion, accdepreciationgroup.objversion) &&
         Objects.equals(this.rows, accdepreciationgroup.rows) &&
         Objects.equals(this.hidden, accdepreciationgroup.hidden) &&
         Objects.equals(this.code, accdepreciationgroup.code) &&
         Objects.equals(this.name, accdepreciationgroup.name) &&
-        Objects.equals(this.monthCount, accdepreciationgroup.monthCount) &&
-        Objects.equals(this.linearRate, accdepreciationgroup.linearRate) &&
-        Objects.equals(this.depreciationType, accdepreciationgroup.depreciationType) &&
-        Objects.equals(this.depreciationTypeAsText, accdepreciationgroup.depreciationTypeAsText) &&
-        Objects.equals(this.rateInOtherYears, accdepreciationgroup.rateInOtherYears) &&
-        Objects.equals(this.validFromDateDATE, accdepreciationgroup.validFromDateDATE) &&
-        Objects.equals(this.validToDateDATE, accdepreciationgroup.validToDateDATE) &&
-        Objects.equals(this.ratesTotal, accdepreciationgroup.ratesTotal) &&
-        Objects.equals(this.remainsTotal, accdepreciationgroup.remainsTotal);
+        Objects.equals(this.monthcount, accdepreciationgroup.monthcount) &&
+        Objects.equals(this.linearrate, accdepreciationgroup.linearrate) &&
+        Objects.equals(this.depreciationtype, accdepreciationgroup.depreciationtype) &&
+        Objects.equals(this.depreciationtypeastext, accdepreciationgroup.depreciationtypeastext) &&
+        Objects.equals(this.rateinotheryears, accdepreciationgroup.rateinotheryears) &&
+        Objects.equals(this.validfromdatedate, accdepreciationgroup.validfromdatedate) &&
+        Objects.equals(this.validtodatedate, accdepreciationgroup.validtodatedate) &&
+        Objects.equals(this.ratestotal, accdepreciationgroup.ratestotal) &&
+        Objects.equals(this.remainstotal, accdepreciationgroup.remainstotal);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, code, name, monthCount, linearRate, depreciationType, depreciationTypeAsText, rateInOtherYears, validFromDateDATE, validToDateDATE, ratesTotal, remainsTotal);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, code, name, monthcount, linearrate, depreciationtype, depreciationtypeastext, rateinotheryears, validfromdatedate, validtodatedate, ratestotal, remainstotal);
   }
 
   @Override
@@ -404,23 +440,23 @@ public class Accdepreciationgroup   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Accdepreciationgroup {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    monthCount: ").append(toIndentedString(monthCount)).append("\n");
-    sb.append("    linearRate: ").append(toIndentedString(linearRate)).append("\n");
-    sb.append("    depreciationType: ").append(toIndentedString(depreciationType)).append("\n");
-    sb.append("    depreciationTypeAsText: ").append(toIndentedString(depreciationTypeAsText)).append("\n");
-    sb.append("    rateInOtherYears: ").append(toIndentedString(rateInOtherYears)).append("\n");
-    sb.append("    validFromDateDATE: ").append(toIndentedString(validFromDateDATE)).append("\n");
-    sb.append("    validToDateDATE: ").append(toIndentedString(validToDateDATE)).append("\n");
-    sb.append("    ratesTotal: ").append(toIndentedString(ratesTotal)).append("\n");
-    sb.append("    remainsTotal: ").append(toIndentedString(remainsTotal)).append("\n");
+    sb.append("    monthcount: ").append(toIndentedString(monthcount)).append("\n");
+    sb.append("    linearrate: ").append(toIndentedString(linearrate)).append("\n");
+    sb.append("    depreciationtype: ").append(toIndentedString(depreciationtype)).append("\n");
+    sb.append("    depreciationtypeastext: ").append(toIndentedString(depreciationtypeastext)).append("\n");
+    sb.append("    rateinotheryears: ").append(toIndentedString(rateinotheryears)).append("\n");
+    sb.append("    validfromdatedate: ").append(toIndentedString(validfromdatedate)).append("\n");
+    sb.append("    validtodatedate: ").append(toIndentedString(validtodatedate)).append("\n");
+    sb.append("    ratestotal: ").append(toIndentedString(ratestotal)).append("\n");
+    sb.append("    remainstotal: ").append(toIndentedString(remainstotal)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,150 +35,186 @@ import java.util.Objects;
 /**
  * Autoservertasklog
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Autoservertasklog   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("CreatedAt$DATE")
-  private DateTime createdAtDATE = null;
+  @SerializedName("createdat$date")
+  private DateTime createdatdate = null;
 
-  @SerializedName("InstanceID")
-  private String instanceID = null;
+  @SerializedName("instanceid")
+  private String instanceid = null;
 
-  @SerializedName("SchedulerItem_ID")
-  private String schedulerItemID = null;
+  @SerializedName("scheduleritem_id")
+  private String scheduleritemId = null;
 
-  @SerializedName("QueueItem_ID")
-  private String queueItemID = null;
+  @SerializedName("queueitem_id")
+  private String queueitemId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("TaskCLSID")
-  private String taskCLSID = null;
+  @SerializedName("taskclsid")
+  private String taskclsid = null;
 
-  @SerializedName("TaskParameters")
-  private String taskParameters = null;
+  @SerializedName("taskparameters")
+  private String taskparameters = null;
 
-  @SerializedName("SPID")
-  private Integer SPID = null;
+  @SerializedName("spid")
+  private Integer spid = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Autoservertasklog createdAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public Autoservertasklog displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Začátek [persistentní položka]
-   * @return createdAtDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Začátek [persistentní položka]")
-  public DateTime getCreatedAtDATE() {
-    return createdAtDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setCreatedAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Autoservertasklog instanceID(String instanceID) {
-    this.instanceID = instanceID;
+  public Autoservertasklog id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Identifikace automat.serveru [persistentní položka]
-   * @return instanceID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Identifikace automat.serveru [persistentní položka]")
-  public String getInstanceID() {
-    return instanceID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setInstanceID(String instanceID) {
-    this.instanceID = instanceID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Autoservertasklog schedulerItemID(String schedulerItemID) {
-    this.schedulerItemID = schedulerItemID;
+  public Autoservertasklog classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Naplánovaná úloha [persistentní položka]
-   * @return schedulerItemID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Naplánovaná úloha [persistentní položka]")
-  public String getSchedulerItemID() {
-    return schedulerItemID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setSchedulerItemID(String schedulerItemID) {
-    this.schedulerItemID = schedulerItemID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Autoservertasklog queueItemID(String queueItemID) {
-    this.queueItemID = queueItemID;
+  public Autoservertasklog objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Autoservertasklog createdatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
+    return this;
+  }
+
+   /**
+   * začátek [persistentní položka]
+   * @return createdatdate
+  **/
+  @ApiModelProperty(example = "null", value = "začátek [persistentní položka]")
+  public DateTime getCreatedatdate() {
+    return createdatdate;
+  }
+
+  public void setCreatedatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
+  }
+
+  public Autoservertasklog instanceid(String instanceid) {
+    this.instanceid = instanceid;
+    return this;
+  }
+
+   /**
+   * identifikace automat.serveru [persistentní položka]
+   * @return instanceid
+  **/
+  @ApiModelProperty(example = "null", value = "identifikace automat.serveru [persistentní položka]")
+  public String getInstanceid() {
+    return instanceid;
+  }
+
+  public void setInstanceid(String instanceid) {
+    this.instanceid = instanceid;
+  }
+
+  public Autoservertasklog scheduleritemId(String scheduleritemId) {
+    this.scheduleritemId = scheduleritemId;
+    return this;
+  }
+
+   /**
+   * naplánovaná úloha [persistentní položka]
+   * @return scheduleritemId
+  **/
+  @ApiModelProperty(example = "null", value = "naplánovaná úloha [persistentní položka]")
+  public String getScheduleritemId() {
+    return scheduleritemId;
+  }
+
+  public void setScheduleritemId(String scheduleritemId) {
+    this.scheduleritemId = scheduleritemId;
+  }
+
+  public Autoservertasklog queueitemId(String queueitemId) {
+    this.queueitemId = queueitemId;
     return this;
   }
 
    /**
    * Úloha ve frontě [persistentní položka]
-   * @return queueItemID
+   * @return queueitemId
   **/
   @ApiModelProperty(example = "null", value = "Úloha ve frontě [persistentní položka]")
-  public String getQueueItemID() {
-    return queueItemID;
+  public String getQueueitemId() {
+    return queueitemId;
   }
 
-  public void setQueueItemID(String queueItemID) {
-    this.queueItemID = queueItemID;
+  public void setQueueitemId(String queueitemId) {
+    this.queueitemId = queueitemId;
   }
 
   public Autoservertasklog description(String description) {
@@ -187,10 +223,10 @@ public class Autoservertasklog   {
   }
 
    /**
-   * Popis úlohy [persistentní položka]
+   * popis úlohy [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis úlohy [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis úlohy [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -199,58 +235,58 @@ public class Autoservertasklog   {
     this.description = description;
   }
 
-  public Autoservertasklog taskCLSID(String taskCLSID) {
-    this.taskCLSID = taskCLSID;
+  public Autoservertasklog taskclsid(String taskclsid) {
+    this.taskclsid = taskclsid;
     return this;
   }
 
    /**
-   * Typ úlohy [persistentní položka]
-   * @return taskCLSID
+   * typ úlohy [persistentní položka]
+   * @return taskclsid
   **/
-  @ApiModelProperty(example = "null", value = "Typ úlohy [persistentní položka]")
-  public String getTaskCLSID() {
-    return taskCLSID;
+  @ApiModelProperty(example = "null", value = "typ úlohy [persistentní položka]")
+  public String getTaskclsid() {
+    return taskclsid;
   }
 
-  public void setTaskCLSID(String taskCLSID) {
-    this.taskCLSID = taskCLSID;
+  public void setTaskclsid(String taskclsid) {
+    this.taskclsid = taskclsid;
   }
 
-  public Autoservertasklog taskParameters(String taskParameters) {
-    this.taskParameters = taskParameters;
+  public Autoservertasklog taskparameters(String taskparameters) {
+    this.taskparameters = taskparameters;
     return this;
   }
 
    /**
-   * Parametry úlohy [persistentní položka]
-   * @return taskParameters
+   * parametry úlohy [persistentní položka]
+   * @return taskparameters
   **/
-  @ApiModelProperty(example = "null", value = "Parametry úlohy [persistentní položka]")
-  public String getTaskParameters() {
-    return taskParameters;
+  @ApiModelProperty(example = "null", value = "parametry úlohy [persistentní položka]")
+  public String getTaskparameters() {
+    return taskparameters;
   }
 
-  public void setTaskParameters(String taskParameters) {
-    this.taskParameters = taskParameters;
+  public void setTaskparameters(String taskparameters) {
+    this.taskparameters = taskparameters;
   }
 
-  public Autoservertasklog SPID(Integer SPID) {
-    this.SPID = SPID;
+  public Autoservertasklog spid(Integer spid) {
+    this.spid = spid;
     return this;
   }
 
    /**
-   * PID [persistentní položka]
-   * @return SPID
+   * pid [persistentní položka]
+   * @return spid
   **/
-  @ApiModelProperty(example = "null", value = "PID [persistentní položka]")
-  public Integer getSPID() {
-    return SPID;
+  @ApiModelProperty(example = "null", value = "pid [persistentní položka]")
+  public Integer getSpid() {
+    return spid;
   }
 
-  public void setSPID(Integer SPID) {
-    this.SPID = SPID;
+  public void setSpid(Integer spid) {
+    this.spid = spid;
   }
 
 
@@ -263,23 +299,23 @@ public class Autoservertasklog   {
       return false;
     }
     Autoservertasklog autoservertasklog = (Autoservertasklog) o;
-    return Objects.equals(this.displayName, autoservertasklog.displayName) &&
-        Objects.equals(this.ID, autoservertasklog.ID) &&
-        Objects.equals(this.classID, autoservertasklog.classID) &&
-        Objects.equals(this.objVersion, autoservertasklog.objVersion) &&
-        Objects.equals(this.createdAtDATE, autoservertasklog.createdAtDATE) &&
-        Objects.equals(this.instanceID, autoservertasklog.instanceID) &&
-        Objects.equals(this.schedulerItemID, autoservertasklog.schedulerItemID) &&
-        Objects.equals(this.queueItemID, autoservertasklog.queueItemID) &&
+    return Objects.equals(this.displayname, autoservertasklog.displayname) &&
+        Objects.equals(this.id, autoservertasklog.id) &&
+        Objects.equals(this.classid, autoservertasklog.classid) &&
+        Objects.equals(this.objversion, autoservertasklog.objversion) &&
+        Objects.equals(this.createdatdate, autoservertasklog.createdatdate) &&
+        Objects.equals(this.instanceid, autoservertasklog.instanceid) &&
+        Objects.equals(this.scheduleritemId, autoservertasklog.scheduleritemId) &&
+        Objects.equals(this.queueitemId, autoservertasklog.queueitemId) &&
         Objects.equals(this.description, autoservertasklog.description) &&
-        Objects.equals(this.taskCLSID, autoservertasklog.taskCLSID) &&
-        Objects.equals(this.taskParameters, autoservertasklog.taskParameters) &&
-        Objects.equals(this.SPID, autoservertasklog.SPID);
+        Objects.equals(this.taskclsid, autoservertasklog.taskclsid) &&
+        Objects.equals(this.taskparameters, autoservertasklog.taskparameters) &&
+        Objects.equals(this.spid, autoservertasklog.spid);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, createdAtDATE, instanceID, schedulerItemID, queueItemID, description, taskCLSID, taskParameters, SPID);
+    return Objects.hash(displayname, id, classid, objversion, createdatdate, instanceid, scheduleritemId, queueitemId, description, taskclsid, taskparameters, spid);
   }
 
   @Override
@@ -287,18 +323,18 @@ public class Autoservertasklog   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Autoservertasklog {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    createdAtDATE: ").append(toIndentedString(createdAtDATE)).append("\n");
-    sb.append("    instanceID: ").append(toIndentedString(instanceID)).append("\n");
-    sb.append("    schedulerItemID: ").append(toIndentedString(schedulerItemID)).append("\n");
-    sb.append("    queueItemID: ").append(toIndentedString(queueItemID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    createdatdate: ").append(toIndentedString(createdatdate)).append("\n");
+    sb.append("    instanceid: ").append(toIndentedString(instanceid)).append("\n");
+    sb.append("    scheduleritemId: ").append(toIndentedString(scheduleritemId)).append("\n");
+    sb.append("    queueitemId: ").append(toIndentedString(queueitemId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    taskCLSID: ").append(toIndentedString(taskCLSID)).append("\n");
-    sb.append("    taskParameters: ").append(toIndentedString(taskParameters)).append("\n");
-    sb.append("    SPID: ").append(toIndentedString(SPID)).append("\n");
+    sb.append("    taskclsid: ").append(toIndentedString(taskclsid)).append("\n");
+    sb.append("    taskparameters: ").append(toIndentedString(taskparameters)).append("\n");
+    sb.append("    spid: ").append(toIndentedString(spid)).append("\n");
     sb.append("}");
     return sb.toString();
   }

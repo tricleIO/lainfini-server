@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,135 +35,171 @@ import java.util.Objects;
 /**
  * Storeclosing
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Storeclosing   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("ClosingDate$DATE")
-  private DateTime closingDateDATE = null;
+  @SerializedName("closingdate$date")
+  private DateTime closingdatedate = null;
 
-  @SerializedName("Beginning")
+  @SerializedName("beginning")
   private Boolean beginning = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("LocalAmount")
-  private Double localAmount = null;
+  @SerializedName("localamount")
+  private Double localamount = null;
 
-  @SerializedName("ClosingOrder")
-  private Integer closingOrder = null;
+  @SerializedName("closingorder")
+  private Integer closingorder = null;
 
-  @SerializedName("TypeEstimate")
-  private Integer typeEstimate = null;
+  @SerializedName("typeestimate")
+  private Integer typeestimate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Storeclosing storeID(String storeID) {
-    this.storeID = storeID;
+  public Storeclosing displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Storeclosing periodID(String periodID) {
-    this.periodID = periodID;
+  public Storeclosing id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Storeclosing closingDateDATE(DateTime closingDateDATE) {
-    this.closingDateDATE = closingDateDATE;
+  public Storeclosing classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Datum [persistentní položka]
-   * @return closingDateDATE
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Datum [persistentní položka]")
-  public DateTime getClosingDateDATE() {
-    return closingDateDATE;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setClosingDateDATE(DateTime closingDateDATE) {
-    this.closingDateDATE = closingDateDATE;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Storeclosing objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Storeclosing storeId(String storeId) {
+    this.storeId = storeId;
+    return this;
+  }
+
+   /**
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
+  **/
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
+  }
+
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
+  }
+
+  public Storeclosing periodId(String periodId) {
+    this.periodId = periodId;
+    return this;
+  }
+
+   /**
+   * období; id objektu období [persistentní položka]
+   * @return periodId
+  **/
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
+  }
+
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
+  }
+
+  public Storeclosing closingdatedate(DateTime closingdatedate) {
+    this.closingdatedate = closingdatedate;
+    return this;
+  }
+
+   /**
+   * datum [persistentní položka]
+   * @return closingdatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum [persistentní položka]")
+  public DateTime getClosingdatedate() {
+    return closingdatedate;
+  }
+
+  public void setClosingdatedate(DateTime closingdatedate) {
+    this.closingdatedate = closingdatedate;
   }
 
   public Storeclosing beginning(Boolean beginning) {
@@ -172,10 +208,10 @@ public class Storeclosing   {
   }
 
    /**
-   * Aktivní [persistentní položka]
+   * aktivní [persistentní položka]
    * @return beginning
   **/
-  @ApiModelProperty(example = "null", value = "Aktivní [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "aktivní [persistentní položka]")
   public Boolean getBeginning() {
     return beginning;
   }
@@ -184,22 +220,22 @@ public class Storeclosing   {
     this.beginning = beginning;
   }
 
-  public Storeclosing createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Storeclosing createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
   public Storeclosing description(String description) {
@@ -208,10 +244,10 @@ public class Storeclosing   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -220,58 +256,58 @@ public class Storeclosing   {
     this.description = description;
   }
 
-  public Storeclosing localAmount(Double localAmount) {
-    this.localAmount = localAmount;
+  public Storeclosing localamount(Double localamount) {
+    this.localamount = localamount;
     return this;
   }
 
    /**
    * Částka [persistentní položka]
-   * @return localAmount
+   * @return localamount
   **/
   @ApiModelProperty(example = "null", value = "Částka [persistentní položka]")
-  public Double getLocalAmount() {
-    return localAmount;
+  public Double getLocalamount() {
+    return localamount;
   }
 
-  public void setLocalAmount(Double localAmount) {
-    this.localAmount = localAmount;
+  public void setLocalamount(Double localamount) {
+    this.localamount = localamount;
   }
 
-  public Storeclosing closingOrder(Integer closingOrder) {
-    this.closingOrder = closingOrder;
+  public Storeclosing closingorder(Integer closingorder) {
+    this.closingorder = closingorder;
     return this;
   }
 
    /**
-   * Identifikace [persistentní položka]
-   * @return closingOrder
+   * identifikace [persistentní položka]
+   * @return closingorder
   **/
-  @ApiModelProperty(example = "null", value = "Identifikace [persistentní položka]")
-  public Integer getClosingOrder() {
-    return closingOrder;
+  @ApiModelProperty(example = "null", value = "identifikace [persistentní položka]")
+  public Integer getClosingorder() {
+    return closingorder;
   }
 
-  public void setClosingOrder(Integer closingOrder) {
-    this.closingOrder = closingOrder;
+  public void setClosingorder(Integer closingorder) {
+    this.closingorder = closingorder;
   }
 
-  public Storeclosing typeEstimate(Integer typeEstimate) {
-    this.typeEstimate = typeEstimate;
+  public Storeclosing typeestimate(Integer typeestimate) {
+    this.typeestimate = typeestimate;
     return this;
   }
 
    /**
-   * Typ oceňování [persistentní položka]
-   * @return typeEstimate
+   * typ oceňování [persistentní položka]
+   * @return typeestimate
   **/
-  @ApiModelProperty(example = "null", value = "Typ oceňování [persistentní položka]")
-  public Integer getTypeEstimate() {
-    return typeEstimate;
+  @ApiModelProperty(example = "null", value = "typ oceňování [persistentní položka]")
+  public Integer getTypeestimate() {
+    return typeestimate;
   }
 
-  public void setTypeEstimate(Integer typeEstimate) {
-    this.typeEstimate = typeEstimate;
+  public void setTypeestimate(Integer typeestimate) {
+    this.typeestimate = typeestimate;
   }
 
 
@@ -284,24 +320,24 @@ public class Storeclosing   {
       return false;
     }
     Storeclosing storeclosing = (Storeclosing) o;
-    return Objects.equals(this.displayName, storeclosing.displayName) &&
-        Objects.equals(this.ID, storeclosing.ID) &&
-        Objects.equals(this.classID, storeclosing.classID) &&
-        Objects.equals(this.objVersion, storeclosing.objVersion) &&
-        Objects.equals(this.storeID, storeclosing.storeID) &&
-        Objects.equals(this.periodID, storeclosing.periodID) &&
-        Objects.equals(this.closingDateDATE, storeclosing.closingDateDATE) &&
+    return Objects.equals(this.displayname, storeclosing.displayname) &&
+        Objects.equals(this.id, storeclosing.id) &&
+        Objects.equals(this.classid, storeclosing.classid) &&
+        Objects.equals(this.objversion, storeclosing.objversion) &&
+        Objects.equals(this.storeId, storeclosing.storeId) &&
+        Objects.equals(this.periodId, storeclosing.periodId) &&
+        Objects.equals(this.closingdatedate, storeclosing.closingdatedate) &&
         Objects.equals(this.beginning, storeclosing.beginning) &&
-        Objects.equals(this.createdByID, storeclosing.createdByID) &&
+        Objects.equals(this.createdbyId, storeclosing.createdbyId) &&
         Objects.equals(this.description, storeclosing.description) &&
-        Objects.equals(this.localAmount, storeclosing.localAmount) &&
-        Objects.equals(this.closingOrder, storeclosing.closingOrder) &&
-        Objects.equals(this.typeEstimate, storeclosing.typeEstimate);
+        Objects.equals(this.localamount, storeclosing.localamount) &&
+        Objects.equals(this.closingorder, storeclosing.closingorder) &&
+        Objects.equals(this.typeestimate, storeclosing.typeestimate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, storeID, periodID, closingDateDATE, beginning, createdByID, description, localAmount, closingOrder, typeEstimate);
+    return Objects.hash(displayname, id, classid, objversion, storeId, periodId, closingdatedate, beginning, createdbyId, description, localamount, closingorder, typeestimate);
   }
 
   @Override
@@ -309,19 +345,19 @@ public class Storeclosing   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Storeclosing {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    closingDateDATE: ").append(toIndentedString(closingDateDATE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    closingdatedate: ").append(toIndentedString(closingdatedate)).append("\n");
     sb.append("    beginning: ").append(toIndentedString(beginning)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    localAmount: ").append(toIndentedString(localAmount)).append("\n");
-    sb.append("    closingOrder: ").append(toIndentedString(closingOrder)).append("\n");
-    sb.append("    typeEstimate: ").append(toIndentedString(typeEstimate)).append("\n");
+    sb.append("    localamount: ").append(toIndentedString(localamount)).append("\n");
+    sb.append("    closingorder: ").append(toIndentedString(closingorder)).append("\n");
+    sb.append("    typeestimate: ").append(toIndentedString(typeestimate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

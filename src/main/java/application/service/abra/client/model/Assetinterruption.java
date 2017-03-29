@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,192 +35,237 @@ import java.util.Objects;
 /**
  * Assetinterruption
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Assetinterruption   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("AccInterruptToo")
-  private Boolean accInterruptToo = null;
+  @SerializedName("accinterrupttoo")
+  private Boolean accinterrupttoo = null;
 
-  @SerializedName("AccInterruptTooAsText")
-  private String accInterruptTooAsText = null;
+  @SerializedName("accinterrupttooastext")
+  private String accinterrupttooastext = null;
 
-  @SerializedName("CreatedDate$DATE")
-  private DateTime createdDateDATE = null;
+  @SerializedName("createddate$date")
+  private DateTime createddatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("TaxWithAccounted")
-  private Boolean taxWithAccounted = null;
+  @SerializedName("taxwithaccounted")
+  private Boolean taxwithaccounted = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Karta majetku [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Karta majetku [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Assetinterruption periodID(String periodID) {
-    this.periodID = periodID;
+  public Assetinterruption displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Období přer.; ID objektu Období [persistentní položka]
-   * @return periodID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Období přer.; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Assetinterruption accInterruptToo(Boolean accInterruptToo) {
-    this.accInterruptToo = accInterruptToo;
+  public Assetinterruption id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * I účetní? [persistentní položka]
-   * @return accInterruptToo
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "I účetní? [persistentní položka]")
-  public Boolean getAccInterruptToo() {
-    return accInterruptToo;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setAccInterruptToo(Boolean accInterruptToo) {
-    this.accInterruptToo = accInterruptToo;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Assetinterruption accInterruptTooAsText(String accInterruptTooAsText) {
-    this.accInterruptTooAsText = accInterruptTooAsText;
+  public Assetinterruption classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * I účetní?
-   * @return accInterruptTooAsText
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "I účetní?")
-  public String getAccInterruptTooAsText() {
-    return accInterruptTooAsText;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setAccInterruptTooAsText(String accInterruptTooAsText) {
-    this.accInterruptTooAsText = accInterruptTooAsText;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Assetinterruption createdDateDATE(DateTime createdDateDATE) {
-    this.createdDateDATE = createdDateDATE;
+  public Assetinterruption objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Datum [persistentní položka]
-   * @return createdDateDATE
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Datum [persistentní položka]")
-  public DateTime getCreatedDateDATE() {
-    return createdDateDATE;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setCreatedDateDATE(DateTime createdDateDATE) {
-    this.createdDateDATE = createdDateDATE;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Assetinterruption createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Assetinterruption parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Kdo zadal; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vlastník; id objektu karta majetku [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Kdo zadal; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu karta majetku [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Assetinterruption taxWithAccounted(Boolean taxWithAccounted) {
-    this.taxWithAccounted = taxWithAccounted;
+  public Assetinterruption periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Přerušit i zaúčtované [persistentní položka]
-   * @return taxWithAccounted
+   * období přer.; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Přerušit i zaúčtované [persistentní položka]")
-  public Boolean getTaxWithAccounted() {
-    return taxWithAccounted;
+  @ApiModelProperty(example = "null", value = "období přer.; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setTaxWithAccounted(Boolean taxWithAccounted) {
-    this.taxWithAccounted = taxWithAccounted;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
+  }
+
+  public Assetinterruption accinterrupttoo(Boolean accinterrupttoo) {
+    this.accinterrupttoo = accinterrupttoo;
+    return this;
+  }
+
+   /**
+   * i účetní? [persistentní položka]
+   * @return accinterrupttoo
+  **/
+  @ApiModelProperty(example = "null", value = "i účetní? [persistentní položka]")
+  public Boolean getAccinterrupttoo() {
+    return accinterrupttoo;
+  }
+
+  public void setAccinterrupttoo(Boolean accinterrupttoo) {
+    this.accinterrupttoo = accinterrupttoo;
+  }
+
+  public Assetinterruption accinterrupttooastext(String accinterrupttooastext) {
+    this.accinterrupttooastext = accinterrupttooastext;
+    return this;
+  }
+
+   /**
+   * i účetní?
+   * @return accinterrupttooastext
+  **/
+  @ApiModelProperty(example = "null", value = "i účetní?")
+  public String getAccinterrupttooastext() {
+    return accinterrupttooastext;
+  }
+
+  public void setAccinterrupttooastext(String accinterrupttooastext) {
+    this.accinterrupttooastext = accinterrupttooastext;
+  }
+
+  public Assetinterruption createddatedate(DateTime createddatedate) {
+    this.createddatedate = createddatedate;
+    return this;
+  }
+
+   /**
+   * datum [persistentní položka]
+   * @return createddatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum [persistentní položka]")
+  public DateTime getCreateddatedate() {
+    return createddatedate;
+  }
+
+  public void setCreateddatedate(DateTime createddatedate) {
+    this.createddatedate = createddatedate;
+  }
+
+  public Assetinterruption createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+    return this;
+  }
+
+   /**
+   * kdo zadal; id objektu uživatel [persistentní položka]
+   * @return createdbyId
+  **/
+  @ApiModelProperty(example = "null", value = "kdo zadal; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
+  }
+
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Assetinterruption taxwithaccounted(Boolean taxwithaccounted) {
+    this.taxwithaccounted = taxwithaccounted;
+    return this;
+  }
+
+   /**
+   * přerušit i zaúčtované [persistentní položka]
+   * @return taxwithaccounted
+  **/
+  @ApiModelProperty(example = "null", value = "přerušit i zaúčtované [persistentní položka]")
+  public Boolean getTaxwithaccounted() {
+    return taxwithaccounted;
+  }
+
+  public void setTaxwithaccounted(Boolean taxwithaccounted) {
+    this.taxwithaccounted = taxwithaccounted;
   }
 
 
@@ -233,22 +278,22 @@ public class Assetinterruption   {
       return false;
     }
     Assetinterruption assetinterruption = (Assetinterruption) o;
-    return Objects.equals(this.displayName, assetinterruption.displayName) &&
-        Objects.equals(this.ID, assetinterruption.ID) &&
-        Objects.equals(this.classID, assetinterruption.classID) &&
-        Objects.equals(this.objVersion, assetinterruption.objVersion) &&
-        Objects.equals(this.parentID, assetinterruption.parentID) &&
-        Objects.equals(this.periodID, assetinterruption.periodID) &&
-        Objects.equals(this.accInterruptToo, assetinterruption.accInterruptToo) &&
-        Objects.equals(this.accInterruptTooAsText, assetinterruption.accInterruptTooAsText) &&
-        Objects.equals(this.createdDateDATE, assetinterruption.createdDateDATE) &&
-        Objects.equals(this.createdByID, assetinterruption.createdByID) &&
-        Objects.equals(this.taxWithAccounted, assetinterruption.taxWithAccounted);
+    return Objects.equals(this.displayname, assetinterruption.displayname) &&
+        Objects.equals(this.id, assetinterruption.id) &&
+        Objects.equals(this.classid, assetinterruption.classid) &&
+        Objects.equals(this.objversion, assetinterruption.objversion) &&
+        Objects.equals(this.parentId, assetinterruption.parentId) &&
+        Objects.equals(this.periodId, assetinterruption.periodId) &&
+        Objects.equals(this.accinterrupttoo, assetinterruption.accinterrupttoo) &&
+        Objects.equals(this.accinterrupttooastext, assetinterruption.accinterrupttooastext) &&
+        Objects.equals(this.createddatedate, assetinterruption.createddatedate) &&
+        Objects.equals(this.createdbyId, assetinterruption.createdbyId) &&
+        Objects.equals(this.taxwithaccounted, assetinterruption.taxwithaccounted);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, periodID, accInterruptToo, accInterruptTooAsText, createdDateDATE, createdByID, taxWithAccounted);
+    return Objects.hash(displayname, id, classid, objversion, parentId, periodId, accinterrupttoo, accinterrupttooastext, createddatedate, createdbyId, taxwithaccounted);
   }
 
   @Override
@@ -256,17 +301,17 @@ public class Assetinterruption   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Assetinterruption {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    accInterruptToo: ").append(toIndentedString(accInterruptToo)).append("\n");
-    sb.append("    accInterruptTooAsText: ").append(toIndentedString(accInterruptTooAsText)).append("\n");
-    sb.append("    createdDateDATE: ").append(toIndentedString(createdDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    taxWithAccounted: ").append(toIndentedString(taxWithAccounted)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    accinterrupttoo: ").append(toIndentedString(accinterrupttoo)).append("\n");
+    sb.append("    accinterrupttooastext: ").append(toIndentedString(accinterrupttooastext)).append("\n");
+    sb.append("    createddatedate: ").append(toIndentedString(createddatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    taxwithaccounted: ").append(toIndentedString(taxwithaccounted)).append("\n");
     sb.append("}");
     return sb.toString();
   }

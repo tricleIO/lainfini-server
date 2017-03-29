@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,87 +36,123 @@ import java.util.Objects;
 /**
  * Installset
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Installset   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Installsetsrow> rows = new ArrayList<Installsetsrow>();
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ImportNoteStart")
-  private String importNoteStart = null;
+  @SerializedName("importnotestart")
+  private String importnotestart = null;
 
-  @SerializedName("ImportNoteFinish")
-  private String importNoteFinish = null;
+  @SerializedName("importnotefinish")
+  private String importnotefinish = null;
 
-  @SerializedName("SystemVersion")
-  private String systemVersion = null;
+  @SerializedName("systemversion")
+  private String systemversion = null;
 
-  @SerializedName("VersionSupport")
-  private Boolean versionSupport = null;
+  @SerializedName("versionsupport")
+  private Boolean versionsupport = null;
 
-  @SerializedName("Versions")
+  @SerializedName("versions")
   private List<Installsetversion> versions = new ArrayList<Installsetversion>();
 
-  @SerializedName("AdvancedOption")
-  private Boolean advancedOption = null;
+  @SerializedName("advancedoption")
+  private Boolean advancedoption = null;
 
-  @SerializedName("CurrentVersion")
-  private Integer currentVersion = null;
+  @SerializedName("currentversion")
+  private Integer currentversion = null;
 
-  @SerializedName("NeedSynchronize")
-  private Boolean needSynchronize = null;
+  @SerializedName("needsynchronize")
+  private Boolean needsynchronize = null;
 
-  @SerializedName("NeedNewVersion")
-  private Boolean needNewVersion = null;
+  @SerializedName("neednewversion")
+  private Boolean neednewversion = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Installset displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Installset id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Installset classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Installset objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Installset rows(List<Installsetsrow> rows) {
@@ -130,10 +166,10 @@ public class Installset   {
   }
 
    /**
-   * Řádky; kolekce BO Instalační sada - řádek [nepersistentní položka]
+   * Řádky; kolekce bo instalační sada - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Instalační sada - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo instalační sada - řádek [nepersistentní položka]")
   public List<Installsetsrow> getRows() {
     return rows;
   }
@@ -148,10 +184,10 @@ public class Installset   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -160,76 +196,76 @@ public class Installset   {
     this.name = name;
   }
 
-  public Installset importNoteStart(String importNoteStart) {
-    this.importNoteStart = importNoteStart;
+  public Installset importnotestart(String importnotestart) {
+    this.importnotestart = importnotestart;
     return this;
   }
 
    /**
-   * Poznámka k zahájení importu [persistentní položka]
-   * @return importNoteStart
+   * poznámka k zahájení importu [persistentní položka]
+   * @return importnotestart
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka k zahájení importu [persistentní položka]")
-  public String getImportNoteStart() {
-    return importNoteStart;
+  @ApiModelProperty(example = "null", value = "poznámka k zahájení importu [persistentní položka]")
+  public String getImportnotestart() {
+    return importnotestart;
   }
 
-  public void setImportNoteStart(String importNoteStart) {
-    this.importNoteStart = importNoteStart;
+  public void setImportnotestart(String importnotestart) {
+    this.importnotestart = importnotestart;
   }
 
-  public Installset importNoteFinish(String importNoteFinish) {
-    this.importNoteFinish = importNoteFinish;
+  public Installset importnotefinish(String importnotefinish) {
+    this.importnotefinish = importnotefinish;
     return this;
   }
 
    /**
-   * Poznámka k ukončení importu [persistentní položka]
-   * @return importNoteFinish
+   * poznámka k ukončení importu [persistentní položka]
+   * @return importnotefinish
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka k ukončení importu [persistentní položka]")
-  public String getImportNoteFinish() {
-    return importNoteFinish;
+  @ApiModelProperty(example = "null", value = "poznámka k ukončení importu [persistentní položka]")
+  public String getImportnotefinish() {
+    return importnotefinish;
   }
 
-  public void setImportNoteFinish(String importNoteFinish) {
-    this.importNoteFinish = importNoteFinish;
+  public void setImportnotefinish(String importnotefinish) {
+    this.importnotefinish = importnotefinish;
   }
 
-  public Installset systemVersion(String systemVersion) {
-    this.systemVersion = systemVersion;
+  public Installset systemversion(String systemversion) {
+    this.systemversion = systemversion;
     return this;
   }
 
    /**
-   * Verze ABRY [persistentní položka]
-   * @return systemVersion
+   * verze abry [persistentní položka]
+   * @return systemversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze ABRY [persistentní položka]")
-  public String getSystemVersion() {
-    return systemVersion;
+  @ApiModelProperty(example = "null", value = "verze abry [persistentní položka]")
+  public String getSystemversion() {
+    return systemversion;
   }
 
-  public void setSystemVersion(String systemVersion) {
-    this.systemVersion = systemVersion;
+  public void setSystemversion(String systemversion) {
+    this.systemversion = systemversion;
   }
 
-  public Installset versionSupport(Boolean versionSupport) {
-    this.versionSupport = versionSupport;
+  public Installset versionsupport(Boolean versionsupport) {
+    this.versionsupport = versionsupport;
     return this;
   }
 
    /**
-   * Podpora verzí [persistentní položka]
-   * @return versionSupport
+   * podpora verzí [persistentní položka]
+   * @return versionsupport
   **/
-  @ApiModelProperty(example = "null", value = "Podpora verzí [persistentní položka]")
-  public Boolean getVersionSupport() {
-    return versionSupport;
+  @ApiModelProperty(example = "null", value = "podpora verzí [persistentní položka]")
+  public Boolean getVersionsupport() {
+    return versionsupport;
   }
 
-  public void setVersionSupport(Boolean versionSupport) {
-    this.versionSupport = versionSupport;
+  public void setVersionsupport(Boolean versionsupport) {
+    this.versionsupport = versionsupport;
   }
 
   public Installset versions(List<Installsetversion> versions) {
@@ -243,10 +279,10 @@ public class Installset   {
   }
 
    /**
-   * Verze; kolekce BO Verze instalační sady [nepersistentní položka]
+   * verze; kolekce bo verze instalační sady [nepersistentní položka]
    * @return versions
   **/
-  @ApiModelProperty(example = "null", value = "Verze; kolekce BO Verze instalační sady [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "verze; kolekce bo verze instalační sady [nepersistentní položka]")
   public List<Installsetversion> getVersions() {
     return versions;
   }
@@ -255,76 +291,76 @@ public class Installset   {
     this.versions = versions;
   }
 
-  public Installset advancedOption(Boolean advancedOption) {
-    this.advancedOption = advancedOption;
+  public Installset advancedoption(Boolean advancedoption) {
+    this.advancedoption = advancedoption;
     return this;
   }
 
    /**
-   * Rozšířené zobrazení [persistentní položka]
-   * @return advancedOption
+   * rozšířené zobrazení [persistentní položka]
+   * @return advancedoption
   **/
-  @ApiModelProperty(example = "null", value = "Rozšířené zobrazení [persistentní položka]")
-  public Boolean getAdvancedOption() {
-    return advancedOption;
+  @ApiModelProperty(example = "null", value = "rozšířené zobrazení [persistentní položka]")
+  public Boolean getAdvancedoption() {
+    return advancedoption;
   }
 
-  public void setAdvancedOption(Boolean advancedOption) {
-    this.advancedOption = advancedOption;
+  public void setAdvancedoption(Boolean advancedoption) {
+    this.advancedoption = advancedoption;
   }
 
-  public Installset currentVersion(Integer currentVersion) {
-    this.currentVersion = currentVersion;
+  public Installset currentversion(Integer currentversion) {
+    this.currentversion = currentversion;
     return this;
   }
 
    /**
-   * Aktuální verze
-   * @return currentVersion
+   * aktuální verze
+   * @return currentversion
   **/
-  @ApiModelProperty(example = "null", value = "Aktuální verze")
-  public Integer getCurrentVersion() {
-    return currentVersion;
+  @ApiModelProperty(example = "null", value = "aktuální verze")
+  public Integer getCurrentversion() {
+    return currentversion;
   }
 
-  public void setCurrentVersion(Integer currentVersion) {
-    this.currentVersion = currentVersion;
+  public void setCurrentversion(Integer currentversion) {
+    this.currentversion = currentversion;
   }
 
-  public Installset needSynchronize(Boolean needSynchronize) {
-    this.needSynchronize = needSynchronize;
+  public Installset needsynchronize(Boolean needsynchronize) {
+    this.needsynchronize = needsynchronize;
     return this;
   }
 
    /**
-   * Vyžaduje synchronizaci
-   * @return needSynchronize
+   * vyžaduje synchronizaci
+   * @return needsynchronize
   **/
-  @ApiModelProperty(example = "null", value = "Vyžaduje synchronizaci")
-  public Boolean getNeedSynchronize() {
-    return needSynchronize;
+  @ApiModelProperty(example = "null", value = "vyžaduje synchronizaci")
+  public Boolean getNeedsynchronize() {
+    return needsynchronize;
   }
 
-  public void setNeedSynchronize(Boolean needSynchronize) {
-    this.needSynchronize = needSynchronize;
+  public void setNeedsynchronize(Boolean needsynchronize) {
+    this.needsynchronize = needsynchronize;
   }
 
-  public Installset needNewVersion(Boolean needNewVersion) {
-    this.needNewVersion = needNewVersion;
+  public Installset neednewversion(Boolean neednewversion) {
+    this.neednewversion = neednewversion;
     return this;
   }
 
    /**
-   * Vyžaduje založení nové verze
-   * @return needNewVersion
+   * vyžaduje založení nové verze
+   * @return neednewversion
   **/
-  @ApiModelProperty(example = "null", value = "Vyžaduje založení nové verze")
-  public Boolean getNeedNewVersion() {
-    return needNewVersion;
+  @ApiModelProperty(example = "null", value = "vyžaduje založení nové verze")
+  public Boolean getNeednewversion() {
+    return neednewversion;
   }
 
-  public void setNeedNewVersion(Boolean needNewVersion) {
-    this.needNewVersion = needNewVersion;
+  public void setNeednewversion(Boolean neednewversion) {
+    this.neednewversion = neednewversion;
   }
 
 
@@ -337,26 +373,26 @@ public class Installset   {
       return false;
     }
     Installset installset = (Installset) o;
-    return Objects.equals(this.displayName, installset.displayName) &&
-        Objects.equals(this.ID, installset.ID) &&
-        Objects.equals(this.classID, installset.classID) &&
-        Objects.equals(this.objVersion, installset.objVersion) &&
+    return Objects.equals(this.displayname, installset.displayname) &&
+        Objects.equals(this.id, installset.id) &&
+        Objects.equals(this.classid, installset.classid) &&
+        Objects.equals(this.objversion, installset.objversion) &&
         Objects.equals(this.rows, installset.rows) &&
         Objects.equals(this.name, installset.name) &&
-        Objects.equals(this.importNoteStart, installset.importNoteStart) &&
-        Objects.equals(this.importNoteFinish, installset.importNoteFinish) &&
-        Objects.equals(this.systemVersion, installset.systemVersion) &&
-        Objects.equals(this.versionSupport, installset.versionSupport) &&
+        Objects.equals(this.importnotestart, installset.importnotestart) &&
+        Objects.equals(this.importnotefinish, installset.importnotefinish) &&
+        Objects.equals(this.systemversion, installset.systemversion) &&
+        Objects.equals(this.versionsupport, installset.versionsupport) &&
         Objects.equals(this.versions, installset.versions) &&
-        Objects.equals(this.advancedOption, installset.advancedOption) &&
-        Objects.equals(this.currentVersion, installset.currentVersion) &&
-        Objects.equals(this.needSynchronize, installset.needSynchronize) &&
-        Objects.equals(this.needNewVersion, installset.needNewVersion);
+        Objects.equals(this.advancedoption, installset.advancedoption) &&
+        Objects.equals(this.currentversion, installset.currentversion) &&
+        Objects.equals(this.needsynchronize, installset.needsynchronize) &&
+        Objects.equals(this.neednewversion, installset.neednewversion);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, name, importNoteStart, importNoteFinish, systemVersion, versionSupport, versions, advancedOption, currentVersion, needSynchronize, needNewVersion);
+    return Objects.hash(displayname, id, classid, objversion, rows, name, importnotestart, importnotefinish, systemversion, versionsupport, versions, advancedoption, currentversion, needsynchronize, neednewversion);
   }
 
   @Override
@@ -364,21 +400,21 @@ public class Installset   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Installset {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    importNoteStart: ").append(toIndentedString(importNoteStart)).append("\n");
-    sb.append("    importNoteFinish: ").append(toIndentedString(importNoteFinish)).append("\n");
-    sb.append("    systemVersion: ").append(toIndentedString(systemVersion)).append("\n");
-    sb.append("    versionSupport: ").append(toIndentedString(versionSupport)).append("\n");
+    sb.append("    importnotestart: ").append(toIndentedString(importnotestart)).append("\n");
+    sb.append("    importnotefinish: ").append(toIndentedString(importnotefinish)).append("\n");
+    sb.append("    systemversion: ").append(toIndentedString(systemversion)).append("\n");
+    sb.append("    versionsupport: ").append(toIndentedString(versionsupport)).append("\n");
     sb.append("    versions: ").append(toIndentedString(versions)).append("\n");
-    sb.append("    advancedOption: ").append(toIndentedString(advancedOption)).append("\n");
-    sb.append("    currentVersion: ").append(toIndentedString(currentVersion)).append("\n");
-    sb.append("    needSynchronize: ").append(toIndentedString(needSynchronize)).append("\n");
-    sb.append("    needNewVersion: ").append(toIndentedString(needNewVersion)).append("\n");
+    sb.append("    advancedoption: ").append(toIndentedString(advancedoption)).append("\n");
+    sb.append("    currentversion: ").append(toIndentedString(currentversion)).append("\n");
+    sb.append("    needsynchronize: ").append(toIndentedString(needsynchronize)).append("\n");
+    sb.append("    neednewversion: ").append(toIndentedString(neednewversion)).append("\n");
     sb.append("}");
     return sb.toString();
   }

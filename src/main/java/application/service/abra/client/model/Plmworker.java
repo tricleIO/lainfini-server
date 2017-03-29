@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,81 +34,117 @@ import java.util.Objects;
 /**
  * Plmworker
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmworker   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("SecurityUser_ID")
-  private String securityUserID = null;
+  @SerializedName("securityuser_id")
+  private String securityuserId = null;
 
-  @SerializedName("Person_ID")
-  private String personID = null;
+  @SerializedName("person_id")
+  private String personId = null;
 
-  @SerializedName("DIVISION_ID")
-  private String DIVISION_ID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("SalaryClass_ID")
-  private String salaryClassID = null;
+  @SerializedName("salaryclass_id")
+  private String salaryclassId = null;
 
-  @SerializedName("WorkerName")
-  private String workerName = null;
+  @SerializedName("workername")
+  private String workername = null;
 
-  @SerializedName("WorkingRelation_ID")
-  private String workingRelationID = null;
+  @SerializedName("workingrelation_id")
+  private String workingrelationId = null;
 
-  @SerializedName("WorkingRelation_Code")
-  private String workingRelationCode = null;
+  @SerializedName("workingrelation_code")
+  private String workingrelationCode = null;
 
-  @SerializedName("PersonalNumber")
-  private String personalNumber = null;
+  @SerializedName("personalnumber")
+  private String personalnumber = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Plmworker displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Plmworker id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmworker classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmworker objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Plmworker hidden(Boolean hidden) {
@@ -117,10 +153,10 @@ public class Plmworker   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -129,148 +165,148 @@ public class Plmworker   {
     this.hidden = hidden;
   }
 
-  public Plmworker securityUserID(String securityUserID) {
-    this.securityUserID = securityUserID;
+  public Plmworker securityuserId(String securityuserId) {
+    this.securityuserId = securityuserId;
     return this;
   }
 
    /**
-   * Uživatel; ID objektu Uživatel [persistentní položka]
-   * @return securityUserID
+   * uživatel; id objektu uživatel [persistentní položka]
+   * @return securityuserId
   **/
-  @ApiModelProperty(example = "null", value = "Uživatel; ID objektu Uživatel [persistentní položka]")
-  public String getSecurityUserID() {
-    return securityUserID;
+  @ApiModelProperty(example = "null", value = "uživatel; id objektu uživatel [persistentní položka]")
+  public String getSecurityuserId() {
+    return securityuserId;
   }
 
-  public void setSecurityUserID(String securityUserID) {
-    this.securityUserID = securityUserID;
+  public void setSecurityuserId(String securityuserId) {
+    this.securityuserId = securityuserId;
   }
 
-  public Plmworker personID(String personID) {
-    this.personID = personID;
+  public Plmworker personId(String personId) {
+    this.personId = personId;
     return this;
   }
 
    /**
-   * Osoba; ID objektu Osoba [persistentní položka]
-   * @return personID
+   * osoba; id objektu osoba [persistentní položka]
+   * @return personId
   **/
-  @ApiModelProperty(example = "null", value = "Osoba; ID objektu Osoba [persistentní položka]")
-  public String getPersonID() {
-    return personID;
+  @ApiModelProperty(example = "null", value = "osoba; id objektu osoba [persistentní položka]")
+  public String getPersonId() {
+    return personId;
   }
 
-  public void setPersonID(String personID) {
-    this.personID = personID;
+  public void setPersonId(String personId) {
+    this.personId = personId;
   }
 
-  public Plmworker DIVISION_ID(String DIVISION_ID) {
-    this.DIVISION_ID = DIVISION_ID;
+  public Plmworker divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return DIVISION_ID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDIVISIONID() {
-    return DIVISION_ID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDIVISIONID(String DIVISION_ID) {
-    this.DIVISION_ID = DIVISION_ID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Plmworker salaryClassID(String salaryClassID) {
-    this.salaryClassID = salaryClassID;
+  public Plmworker salaryclassId(String salaryclassId) {
+    this.salaryclassId = salaryclassId;
     return this;
   }
 
    /**
-   * Tarifní třída; ID objektu Tarifní třída [persistentní položka]
-   * @return salaryClassID
+   * tarifní třída; id objektu tarifní třída [persistentní položka]
+   * @return salaryclassId
   **/
-  @ApiModelProperty(example = "null", value = "Tarifní třída; ID objektu Tarifní třída [persistentní položka]")
-  public String getSalaryClassID() {
-    return salaryClassID;
+  @ApiModelProperty(example = "null", value = "tarifní třída; id objektu tarifní třída [persistentní položka]")
+  public String getSalaryclassId() {
+    return salaryclassId;
   }
 
-  public void setSalaryClassID(String salaryClassID) {
-    this.salaryClassID = salaryClassID;
+  public void setSalaryclassId(String salaryclassId) {
+    this.salaryclassId = salaryclassId;
   }
 
-  public Plmworker workerName(String workerName) {
-    this.workerName = workerName;
+  public Plmworker workername(String workername) {
+    this.workername = workername;
     return this;
   }
 
    /**
-   * Jméno
-   * @return workerName
+   * jméno
+   * @return workername
   **/
-  @ApiModelProperty(example = "null", value = "Jméno")
-  public String getWorkerName() {
-    return workerName;
+  @ApiModelProperty(example = "null", value = "jméno")
+  public String getWorkername() {
+    return workername;
   }
 
-  public void setWorkerName(String workerName) {
-    this.workerName = workerName;
+  public void setWorkername(String workername) {
+    this.workername = workername;
   }
 
-  public Plmworker workingRelationID(String workingRelationID) {
-    this.workingRelationID = workingRelationID;
+  public Plmworker workingrelationId(String workingrelationId) {
+    this.workingrelationId = workingrelationId;
     return this;
   }
 
    /**
-   * Pracovní poměr [persistentní položka]
-   * @return workingRelationID
+   * pracovní poměr [persistentní položka]
+   * @return workingrelationId
   **/
-  @ApiModelProperty(example = "null", value = "Pracovní poměr [persistentní položka]")
-  public String getWorkingRelationID() {
-    return workingRelationID;
+  @ApiModelProperty(example = "null", value = "pracovní poměr [persistentní položka]")
+  public String getWorkingrelationId() {
+    return workingrelationId;
   }
 
-  public void setWorkingRelationID(String workingRelationID) {
-    this.workingRelationID = workingRelationID;
+  public void setWorkingrelationId(String workingrelationId) {
+    this.workingrelationId = workingrelationId;
   }
 
-  public Plmworker workingRelationCode(String workingRelationCode) {
-    this.workingRelationCode = workingRelationCode;
+  public Plmworker workingrelationCode(String workingrelationCode) {
+    this.workingrelationCode = workingrelationCode;
     return this;
   }
 
    /**
-   * Kód Pracovního poměru
-   * @return workingRelationCode
+   * kód pracovního poměru
+   * @return workingrelationCode
   **/
-  @ApiModelProperty(example = "null", value = "Kód Pracovního poměru")
-  public String getWorkingRelationCode() {
-    return workingRelationCode;
+  @ApiModelProperty(example = "null", value = "kód pracovního poměru")
+  public String getWorkingrelationCode() {
+    return workingrelationCode;
   }
 
-  public void setWorkingRelationCode(String workingRelationCode) {
-    this.workingRelationCode = workingRelationCode;
+  public void setWorkingrelationCode(String workingrelationCode) {
+    this.workingrelationCode = workingrelationCode;
   }
 
-  public Plmworker personalNumber(String personalNumber) {
-    this.personalNumber = personalNumber;
+  public Plmworker personalnumber(String personalnumber) {
+    this.personalnumber = personalnumber;
     return this;
   }
 
    /**
-   * Osobní číslo
-   * @return personalNumber
+   * osobní číslo
+   * @return personalnumber
   **/
-  @ApiModelProperty(example = "null", value = "Osobní číslo")
-  public String getPersonalNumber() {
-    return personalNumber;
+  @ApiModelProperty(example = "null", value = "osobní číslo")
+  public String getPersonalnumber() {
+    return personalnumber;
   }
 
-  public void setPersonalNumber(String personalNumber) {
-    this.personalNumber = personalNumber;
+  public void setPersonalnumber(String personalnumber) {
+    this.personalnumber = personalnumber;
   }
 
 
@@ -283,24 +319,24 @@ public class Plmworker   {
       return false;
     }
     Plmworker plmworker = (Plmworker) o;
-    return Objects.equals(this.displayName, plmworker.displayName) &&
-        Objects.equals(this.ID, plmworker.ID) &&
-        Objects.equals(this.classID, plmworker.classID) &&
-        Objects.equals(this.objVersion, plmworker.objVersion) &&
+    return Objects.equals(this.displayname, plmworker.displayname) &&
+        Objects.equals(this.id, plmworker.id) &&
+        Objects.equals(this.classid, plmworker.classid) &&
+        Objects.equals(this.objversion, plmworker.objversion) &&
         Objects.equals(this.hidden, plmworker.hidden) &&
-        Objects.equals(this.securityUserID, plmworker.securityUserID) &&
-        Objects.equals(this.personID, plmworker.personID) &&
-        Objects.equals(this.DIVISION_ID, plmworker.DIVISION_ID) &&
-        Objects.equals(this.salaryClassID, plmworker.salaryClassID) &&
-        Objects.equals(this.workerName, plmworker.workerName) &&
-        Objects.equals(this.workingRelationID, plmworker.workingRelationID) &&
-        Objects.equals(this.workingRelationCode, plmworker.workingRelationCode) &&
-        Objects.equals(this.personalNumber, plmworker.personalNumber);
+        Objects.equals(this.securityuserId, plmworker.securityuserId) &&
+        Objects.equals(this.personId, plmworker.personId) &&
+        Objects.equals(this.divisionId, plmworker.divisionId) &&
+        Objects.equals(this.salaryclassId, plmworker.salaryclassId) &&
+        Objects.equals(this.workername, plmworker.workername) &&
+        Objects.equals(this.workingrelationId, plmworker.workingrelationId) &&
+        Objects.equals(this.workingrelationCode, plmworker.workingrelationCode) &&
+        Objects.equals(this.personalnumber, plmworker.personalnumber);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, securityUserID, personID, DIVISION_ID, salaryClassID, workerName, workingRelationID, workingRelationCode, personalNumber);
+    return Objects.hash(displayname, id, classid, objversion, hidden, securityuserId, personId, divisionId, salaryclassId, workername, workingrelationId, workingrelationCode, personalnumber);
   }
 
   @Override
@@ -308,19 +344,19 @@ public class Plmworker   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmworker {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    securityUserID: ").append(toIndentedString(securityUserID)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
-    sb.append("    DIVISION_ID: ").append(toIndentedString(DIVISION_ID)).append("\n");
-    sb.append("    salaryClassID: ").append(toIndentedString(salaryClassID)).append("\n");
-    sb.append("    workerName: ").append(toIndentedString(workerName)).append("\n");
-    sb.append("    workingRelationID: ").append(toIndentedString(workingRelationID)).append("\n");
-    sb.append("    workingRelationCode: ").append(toIndentedString(workingRelationCode)).append("\n");
-    sb.append("    personalNumber: ").append(toIndentedString(personalNumber)).append("\n");
+    sb.append("    securityuserId: ").append(toIndentedString(securityuserId)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    salaryclassId: ").append(toIndentedString(salaryclassId)).append("\n");
+    sb.append("    workername: ").append(toIndentedString(workername)).append("\n");
+    sb.append("    workingrelationId: ").append(toIndentedString(workingrelationId)).append("\n");
+    sb.append("    workingrelationCode: ").append(toIndentedString(workingrelationCode)).append("\n");
+    sb.append("    personalnumber: ").append(toIndentedString(personalnumber)).append("\n");
     sb.append("}");
     return sb.toString();
   }

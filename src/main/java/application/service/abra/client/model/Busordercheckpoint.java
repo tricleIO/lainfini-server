@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,117 +35,162 @@ import java.util.Objects;
 /**
  * Busordercheckpoint
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Busordercheckpoint   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PointDate$DATE")
-  private DateTime pointDateDATE = null;
+  @SerializedName("pointdate$date")
+  private DateTime pointdatedate = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ResponsibleSupplierRole_ID")
-  private String responsibleSupplierRoleID = null;
+  @SerializedName("responsiblesupplierrole_id")
+  private String responsiblesupplierroleId = null;
 
-  @SerializedName("ResponsibleCustomerPerson_ID")
-  private String responsibleCustomerPersonID = null;
+  @SerializedName("responsiblecustomerperson_id")
+  private String responsiblecustomerpersonId = null;
 
-  @SerializedName("CheckDescription")
-  private String checkDescription = null;
+  @SerializedName("checkdescription")
+  private String checkdescription = null;
 
-  @SerializedName("PlannedCosts")
-  private Double plannedCosts = null;
+  @SerializedName("plannedcosts")
+  private Double plannedcosts = null;
 
-  @SerializedName("PlannedRevenues")
-  private Double plannedRevenues = null;
+  @SerializedName("plannedrevenues")
+  private Double plannedrevenues = null;
 
-  @SerializedName("PlannedInvoicing")
-  private Double plannedInvoicing = null;
+  @SerializedName("plannedinvoicing")
+  private Double plannedinvoicing = null;
 
-  @SerializedName("CheckDone")
-  private Boolean checkDone = null;
+  @SerializedName("checkdone")
+  private Boolean checkdone = null;
 
-  @SerializedName("CheckResult")
-  private String checkResult = null;
+  @SerializedName("checkresult")
+  private String checkresult = null;
 
-  @SerializedName("DoCalculateBilance")
-  private Boolean doCalculateBilance = null;
+  @SerializedName("docalculatebilance")
+  private Boolean docalculatebilance = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Zakázka [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Zakázka [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Busordercheckpoint pointDateDATE(DateTime pointDateDATE) {
-    this.pointDateDATE = pointDateDATE;
+  public Busordercheckpoint displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Kontrolní bod [persistentní položka]
-   * @return pointDateDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Kontrolní bod [persistentní položka]")
-  public DateTime getPointDateDATE() {
-    return pointDateDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPointDateDATE(DateTime pointDateDATE) {
-    this.pointDateDATE = pointDateDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Busordercheckpoint id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Busordercheckpoint classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Busordercheckpoint objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Busordercheckpoint parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu zakázka [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu zakázka [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Busordercheckpoint pointdatedate(DateTime pointdatedate) {
+    this.pointdatedate = pointdatedate;
+    return this;
+  }
+
+   /**
+   * kontrolní bod [persistentní položka]
+   * @return pointdatedate
+  **/
+  @ApiModelProperty(example = "null", value = "kontrolní bod [persistentní položka]")
+  public DateTime getPointdatedate() {
+    return pointdatedate;
+  }
+
+  public void setPointdatedate(DateTime pointdatedate) {
+    this.pointdatedate = pointdatedate;
   }
 
   public Busordercheckpoint name(String name) {
@@ -154,10 +199,10 @@ public class Busordercheckpoint   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -166,166 +211,166 @@ public class Busordercheckpoint   {
     this.name = name;
   }
 
-  public Busordercheckpoint responsibleSupplierRoleID(String responsibleSupplierRoleID) {
-    this.responsibleSupplierRoleID = responsibleSupplierRoleID;
+  public Busordercheckpoint responsiblesupplierroleId(String responsiblesupplierroleId) {
+    this.responsiblesupplierroleId = responsiblesupplierroleId;
     return this;
   }
 
    /**
-   * Za dodavatele; ID objektu Role [persistentní položka]
-   * @return responsibleSupplierRoleID
+   * za dodavatele; id objektu role [persistentní položka]
+   * @return responsiblesupplierroleId
   **/
-  @ApiModelProperty(example = "null", value = "Za dodavatele; ID objektu Role [persistentní položka]")
-  public String getResponsibleSupplierRoleID() {
-    return responsibleSupplierRoleID;
+  @ApiModelProperty(example = "null", value = "za dodavatele; id objektu role [persistentní položka]")
+  public String getResponsiblesupplierroleId() {
+    return responsiblesupplierroleId;
   }
 
-  public void setResponsibleSupplierRoleID(String responsibleSupplierRoleID) {
-    this.responsibleSupplierRoleID = responsibleSupplierRoleID;
+  public void setResponsiblesupplierroleId(String responsiblesupplierroleId) {
+    this.responsiblesupplierroleId = responsiblesupplierroleId;
   }
 
-  public Busordercheckpoint responsibleCustomerPersonID(String responsibleCustomerPersonID) {
-    this.responsibleCustomerPersonID = responsibleCustomerPersonID;
+  public Busordercheckpoint responsiblecustomerpersonId(String responsiblecustomerpersonId) {
+    this.responsiblecustomerpersonId = responsiblecustomerpersonId;
     return this;
   }
 
    /**
-   * Za zákazníka; ID objektu Osoba [persistentní položka]
-   * @return responsibleCustomerPersonID
+   * za zákazníka; id objektu osoba [persistentní položka]
+   * @return responsiblecustomerpersonId
   **/
-  @ApiModelProperty(example = "null", value = "Za zákazníka; ID objektu Osoba [persistentní položka]")
-  public String getResponsibleCustomerPersonID() {
-    return responsibleCustomerPersonID;
+  @ApiModelProperty(example = "null", value = "za zákazníka; id objektu osoba [persistentní položka]")
+  public String getResponsiblecustomerpersonId() {
+    return responsiblecustomerpersonId;
   }
 
-  public void setResponsibleCustomerPersonID(String responsibleCustomerPersonID) {
-    this.responsibleCustomerPersonID = responsibleCustomerPersonID;
+  public void setResponsiblecustomerpersonId(String responsiblecustomerpersonId) {
+    this.responsiblecustomerpersonId = responsiblecustomerpersonId;
   }
 
-  public Busordercheckpoint checkDescription(String checkDescription) {
-    this.checkDescription = checkDescription;
+  public Busordercheckpoint checkdescription(String checkdescription) {
+    this.checkdescription = checkdescription;
     return this;
   }
 
    /**
-   * Popis [persistentní položka]
-   * @return checkDescription
+   * popis [persistentní položka]
+   * @return checkdescription
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
-  public String getCheckDescription() {
-    return checkDescription;
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
+  public String getCheckdescription() {
+    return checkdescription;
   }
 
-  public void setCheckDescription(String checkDescription) {
-    this.checkDescription = checkDescription;
+  public void setCheckdescription(String checkdescription) {
+    this.checkdescription = checkdescription;
   }
 
-  public Busordercheckpoint plannedCosts(Double plannedCosts) {
-    this.plannedCosts = plannedCosts;
+  public Busordercheckpoint plannedcosts(Double plannedcosts) {
+    this.plannedcosts = plannedcosts;
     return this;
   }
 
    /**
-   * Plánované náklady [persistentní položka]
-   * @return plannedCosts
+   * plánované náklady [persistentní položka]
+   * @return plannedcosts
   **/
-  @ApiModelProperty(example = "null", value = "Plánované náklady [persistentní položka]")
-  public Double getPlannedCosts() {
-    return plannedCosts;
+  @ApiModelProperty(example = "null", value = "plánované náklady [persistentní položka]")
+  public Double getPlannedcosts() {
+    return plannedcosts;
   }
 
-  public void setPlannedCosts(Double plannedCosts) {
-    this.plannedCosts = plannedCosts;
+  public void setPlannedcosts(Double plannedcosts) {
+    this.plannedcosts = plannedcosts;
   }
 
-  public Busordercheckpoint plannedRevenues(Double plannedRevenues) {
-    this.plannedRevenues = plannedRevenues;
+  public Busordercheckpoint plannedrevenues(Double plannedrevenues) {
+    this.plannedrevenues = plannedrevenues;
     return this;
   }
 
    /**
-   * Plánované výnosy [persistentní položka]
-   * @return plannedRevenues
+   * plánované výnosy [persistentní položka]
+   * @return plannedrevenues
   **/
-  @ApiModelProperty(example = "null", value = "Plánované výnosy [persistentní položka]")
-  public Double getPlannedRevenues() {
-    return plannedRevenues;
+  @ApiModelProperty(example = "null", value = "plánované výnosy [persistentní položka]")
+  public Double getPlannedrevenues() {
+    return plannedrevenues;
   }
 
-  public void setPlannedRevenues(Double plannedRevenues) {
-    this.plannedRevenues = plannedRevenues;
+  public void setPlannedrevenues(Double plannedrevenues) {
+    this.plannedrevenues = plannedrevenues;
   }
 
-  public Busordercheckpoint plannedInvoicing(Double plannedInvoicing) {
-    this.plannedInvoicing = plannedInvoicing;
+  public Busordercheckpoint plannedinvoicing(Double plannedinvoicing) {
+    this.plannedinvoicing = plannedinvoicing;
     return this;
   }
 
    /**
-   * Plánovaná fakturace [persistentní položka]
-   * @return plannedInvoicing
+   * plánovaná fakturace [persistentní položka]
+   * @return plannedinvoicing
   **/
-  @ApiModelProperty(example = "null", value = "Plánovaná fakturace [persistentní položka]")
-  public Double getPlannedInvoicing() {
-    return plannedInvoicing;
+  @ApiModelProperty(example = "null", value = "plánovaná fakturace [persistentní položka]")
+  public Double getPlannedinvoicing() {
+    return plannedinvoicing;
   }
 
-  public void setPlannedInvoicing(Double plannedInvoicing) {
-    this.plannedInvoicing = plannedInvoicing;
+  public void setPlannedinvoicing(Double plannedinvoicing) {
+    this.plannedinvoicing = plannedinvoicing;
   }
 
-  public Busordercheckpoint checkDone(Boolean checkDone) {
-    this.checkDone = checkDone;
+  public Busordercheckpoint checkdone(Boolean checkdone) {
+    this.checkdone = checkdone;
     return this;
   }
 
    /**
-   * Zkontrolováno [persistentní položka]
-   * @return checkDone
+   * zkontrolováno [persistentní položka]
+   * @return checkdone
   **/
-  @ApiModelProperty(example = "null", value = "Zkontrolováno [persistentní položka]")
-  public Boolean getCheckDone() {
-    return checkDone;
+  @ApiModelProperty(example = "null", value = "zkontrolováno [persistentní položka]")
+  public Boolean getCheckdone() {
+    return checkdone;
   }
 
-  public void setCheckDone(Boolean checkDone) {
-    this.checkDone = checkDone;
+  public void setCheckdone(Boolean checkdone) {
+    this.checkdone = checkdone;
   }
 
-  public Busordercheckpoint checkResult(String checkResult) {
-    this.checkResult = checkResult;
+  public Busordercheckpoint checkresult(String checkresult) {
+    this.checkresult = checkresult;
     return this;
   }
 
    /**
-   * Výsledky kontrol [persistentní položka]
-   * @return checkResult
+   * výsledky kontrol [persistentní položka]
+   * @return checkresult
   **/
-  @ApiModelProperty(example = "null", value = "Výsledky kontrol [persistentní položka]")
-  public String getCheckResult() {
-    return checkResult;
+  @ApiModelProperty(example = "null", value = "výsledky kontrol [persistentní položka]")
+  public String getCheckresult() {
+    return checkresult;
   }
 
-  public void setCheckResult(String checkResult) {
-    this.checkResult = checkResult;
+  public void setCheckresult(String checkresult) {
+    this.checkresult = checkresult;
   }
 
-  public Busordercheckpoint doCalculateBilance(Boolean doCalculateBilance) {
-    this.doCalculateBilance = doCalculateBilance;
+  public Busordercheckpoint docalculatebilance(Boolean docalculatebilance) {
+    this.docalculatebilance = docalculatebilance;
     return this;
   }
 
    /**
-   * Spočítat bilanci
-   * @return doCalculateBilance
+   * spočítat bilanci
+   * @return docalculatebilance
   **/
-  @ApiModelProperty(example = "null", value = "Spočítat bilanci")
-  public Boolean getDoCalculateBilance() {
-    return doCalculateBilance;
+  @ApiModelProperty(example = "null", value = "spočítat bilanci")
+  public Boolean getDocalculatebilance() {
+    return docalculatebilance;
   }
 
-  public void setDoCalculateBilance(Boolean doCalculateBilance) {
-    this.doCalculateBilance = doCalculateBilance;
+  public void setDocalculatebilance(Boolean docalculatebilance) {
+    this.docalculatebilance = docalculatebilance;
   }
 
 
@@ -338,27 +383,27 @@ public class Busordercheckpoint   {
       return false;
     }
     Busordercheckpoint busordercheckpoint = (Busordercheckpoint) o;
-    return Objects.equals(this.displayName, busordercheckpoint.displayName) &&
-        Objects.equals(this.ID, busordercheckpoint.ID) &&
-        Objects.equals(this.classID, busordercheckpoint.classID) &&
-        Objects.equals(this.objVersion, busordercheckpoint.objVersion) &&
-        Objects.equals(this.parentID, busordercheckpoint.parentID) &&
-        Objects.equals(this.pointDateDATE, busordercheckpoint.pointDateDATE) &&
+    return Objects.equals(this.displayname, busordercheckpoint.displayname) &&
+        Objects.equals(this.id, busordercheckpoint.id) &&
+        Objects.equals(this.classid, busordercheckpoint.classid) &&
+        Objects.equals(this.objversion, busordercheckpoint.objversion) &&
+        Objects.equals(this.parentId, busordercheckpoint.parentId) &&
+        Objects.equals(this.pointdatedate, busordercheckpoint.pointdatedate) &&
         Objects.equals(this.name, busordercheckpoint.name) &&
-        Objects.equals(this.responsibleSupplierRoleID, busordercheckpoint.responsibleSupplierRoleID) &&
-        Objects.equals(this.responsibleCustomerPersonID, busordercheckpoint.responsibleCustomerPersonID) &&
-        Objects.equals(this.checkDescription, busordercheckpoint.checkDescription) &&
-        Objects.equals(this.plannedCosts, busordercheckpoint.plannedCosts) &&
-        Objects.equals(this.plannedRevenues, busordercheckpoint.plannedRevenues) &&
-        Objects.equals(this.plannedInvoicing, busordercheckpoint.plannedInvoicing) &&
-        Objects.equals(this.checkDone, busordercheckpoint.checkDone) &&
-        Objects.equals(this.checkResult, busordercheckpoint.checkResult) &&
-        Objects.equals(this.doCalculateBilance, busordercheckpoint.doCalculateBilance);
+        Objects.equals(this.responsiblesupplierroleId, busordercheckpoint.responsiblesupplierroleId) &&
+        Objects.equals(this.responsiblecustomerpersonId, busordercheckpoint.responsiblecustomerpersonId) &&
+        Objects.equals(this.checkdescription, busordercheckpoint.checkdescription) &&
+        Objects.equals(this.plannedcosts, busordercheckpoint.plannedcosts) &&
+        Objects.equals(this.plannedrevenues, busordercheckpoint.plannedrevenues) &&
+        Objects.equals(this.plannedinvoicing, busordercheckpoint.plannedinvoicing) &&
+        Objects.equals(this.checkdone, busordercheckpoint.checkdone) &&
+        Objects.equals(this.checkresult, busordercheckpoint.checkresult) &&
+        Objects.equals(this.docalculatebilance, busordercheckpoint.docalculatebilance);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, pointDateDATE, name, responsibleSupplierRoleID, responsibleCustomerPersonID, checkDescription, plannedCosts, plannedRevenues, plannedInvoicing, checkDone, checkResult, doCalculateBilance);
+    return Objects.hash(displayname, id, classid, objversion, parentId, pointdatedate, name, responsiblesupplierroleId, responsiblecustomerpersonId, checkdescription, plannedcosts, plannedrevenues, plannedinvoicing, checkdone, checkresult, docalculatebilance);
   }
 
   @Override
@@ -366,22 +411,22 @@ public class Busordercheckpoint   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Busordercheckpoint {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    pointDateDATE: ").append(toIndentedString(pointDateDATE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    pointdatedate: ").append(toIndentedString(pointdatedate)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    responsibleSupplierRoleID: ").append(toIndentedString(responsibleSupplierRoleID)).append("\n");
-    sb.append("    responsibleCustomerPersonID: ").append(toIndentedString(responsibleCustomerPersonID)).append("\n");
-    sb.append("    checkDescription: ").append(toIndentedString(checkDescription)).append("\n");
-    sb.append("    plannedCosts: ").append(toIndentedString(plannedCosts)).append("\n");
-    sb.append("    plannedRevenues: ").append(toIndentedString(plannedRevenues)).append("\n");
-    sb.append("    plannedInvoicing: ").append(toIndentedString(plannedInvoicing)).append("\n");
-    sb.append("    checkDone: ").append(toIndentedString(checkDone)).append("\n");
-    sb.append("    checkResult: ").append(toIndentedString(checkResult)).append("\n");
-    sb.append("    doCalculateBilance: ").append(toIndentedString(doCalculateBilance)).append("\n");
+    sb.append("    responsiblesupplierroleId: ").append(toIndentedString(responsiblesupplierroleId)).append("\n");
+    sb.append("    responsiblecustomerpersonId: ").append(toIndentedString(responsiblecustomerpersonId)).append("\n");
+    sb.append("    checkdescription: ").append(toIndentedString(checkdescription)).append("\n");
+    sb.append("    plannedcosts: ").append(toIndentedString(plannedcosts)).append("\n");
+    sb.append("    plannedrevenues: ").append(toIndentedString(plannedrevenues)).append("\n");
+    sb.append("    plannedinvoicing: ").append(toIndentedString(plannedinvoicing)).append("\n");
+    sb.append("    checkdone: ").append(toIndentedString(checkdone)).append("\n");
+    sb.append("    checkresult: ").append(toIndentedString(checkresult)).append("\n");
+    sb.append("    docalculatebilance: ").append(toIndentedString(docalculatebilance)).append("\n");
     sb.append("}");
     return sb.toString();
   }

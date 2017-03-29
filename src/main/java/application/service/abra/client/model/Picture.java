@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,208 +34,240 @@ import java.util.Objects;
 /**
  * Picture
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Picture   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid2 = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("BlobData")
-  private byte[] blobData = null;
+  @SerializedName("blobdata")
+  private byte[] blobdata = null;
 
-  @SerializedName("PictureTitle")
-  private String pictureTitle = null;
+  @SerializedName("picturetitle")
+  private String picturetitle = null;
 
-  @SerializedName("ExternalFile")
-  private Boolean externalFile = null;
+  @SerializedName("externalfile")
+  private Boolean externalfile = null;
 
-  @SerializedName("PathAndFileName")
-  private String pathAndFileName = null;
+  @SerializedName("pathandfilename")
+  private String pathandfilename = null;
 
-  @SerializedName("RefCount")
-  private Integer refCount = null;
+  @SerializedName("refcount")
+  private Integer refcount = null;
 
-  @SerializedName("IsProtected")
-  private Boolean isProtected = null;
+  @SerializedName("isprotected")
+  private Boolean isprotected = null;
 
-  @SerializedName("Class_ID")
-  private String class_ID = null;
+  @SerializedName("class_id")
+  private String classId = null;
 
-  @SerializedName("Class_Name")
+  @SerializedName("class_name")
   private String className = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Picture blobData(byte[] blobData) {
-    this.blobData = blobData;
+  public Picture displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Data [persistentní položka]
-   * @return blobData
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Data [persistentní položka]")
-  public byte[] getBlobData() {
-    return blobData;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setBlobData(byte[] blobData) {
-    this.blobData = blobData;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Picture pictureTitle(String pictureTitle) {
-    this.pictureTitle = pictureTitle;
+  public Picture id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Popis [persistentní položka]
-   * @return pictureTitle
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
-  public String getPictureTitle() {
-    return pictureTitle;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setPictureTitle(String pictureTitle) {
-    this.pictureTitle = pictureTitle;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Picture externalFile(Boolean externalFile) {
-    this.externalFile = externalFile;
+  public Picture classid2(String classid) {
+    this.classid2 = classid;
     return this;
   }
 
    /**
-   * Externí [persistentní položka]
-   * @return externalFile
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Externí [persistentní položka]")
-  public Boolean getExternalFile() {
-    return externalFile;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid2() {
+    return classid2;
   }
 
-  public void setExternalFile(Boolean externalFile) {
-    this.externalFile = externalFile;
+  public void setClassid2(String classid) {
+    this.classid2 = classid;
   }
 
-  public Picture pathAndFileName(String pathAndFileName) {
-    this.pathAndFileName = pathAndFileName;
+  public Picture objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Cesta a soubor [persistentní položka]
-   * @return pathAndFileName
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Cesta a soubor [persistentní položka]")
-  public String getPathAndFileName() {
-    return pathAndFileName;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setPathAndFileName(String pathAndFileName) {
-    this.pathAndFileName = pathAndFileName;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Picture refCount(Integer refCount) {
-    this.refCount = refCount;
+  public Picture blobdata(byte[] blobdata) {
+    this.blobdata = blobdata;
     return this;
   }
 
    /**
-   * Počet referencí [persistentní položka]
-   * @return refCount
+   * data [persistentní položka]
+   * @return blobdata
   **/
-  @ApiModelProperty(example = "null", value = "Počet referencí [persistentní položka]")
-  public Integer getRefCount() {
-    return refCount;
+  @ApiModelProperty(example = "null", value = "data [persistentní položka]")
+  public byte[] getBlobdata() {
+    return blobdata;
   }
 
-  public void setRefCount(Integer refCount) {
-    this.refCount = refCount;
+  public void setBlobdata(byte[] blobdata) {
+    this.blobdata = blobdata;
   }
 
-  public Picture isProtected(Boolean isProtected) {
-    this.isProtected = isProtected;
+  public Picture picturetitle(String picturetitle) {
+    this.picturetitle = picturetitle;
     return this;
   }
 
    /**
-   * Chráněn [persistentní položka]
-   * @return isProtected
+   * popis [persistentní položka]
+   * @return picturetitle
   **/
-  @ApiModelProperty(example = "null", value = "Chráněn [persistentní položka]")
-  public Boolean getIsProtected() {
-    return isProtected;
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
+  public String getPicturetitle() {
+    return picturetitle;
   }
 
-  public void setIsProtected(Boolean isProtected) {
-    this.isProtected = isProtected;
+  public void setPicturetitle(String picturetitle) {
+    this.picturetitle = picturetitle;
   }
 
-  public Picture classID(String classID) {
-    this.classID = classID;
+  public Picture externalfile(Boolean externalfile) {
+    this.externalfile = externalfile;
     return this;
   }
 
    /**
-   * Třída vlastníka - GUID [persistentní položka]
-   * @return classID
+   * externí [persistentní položka]
+   * @return externalfile
   **/
-  @ApiModelProperty(example = "null", value = "Třída vlastníka - GUID [persistentní položka]")
-  public String getClass_ID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "externí [persistentní položka]")
+  public Boolean getExternalfile() {
+    return externalfile;
   }
 
-  public void setClassID(String classID) {
-    this.classID = classID;
+  public void setExternalfile(Boolean externalfile) {
+    this.externalfile = externalfile;
   }
 
-  public void setClass_ID(String classID) {
-    this.class_ID = classID;
+  public Picture pathandfilename(String pathandfilename) {
+    this.pathandfilename = pathandfilename;
+    return this;
+  }
+
+   /**
+   * cesta a soubor [persistentní položka]
+   * @return pathandfilename
+  **/
+  @ApiModelProperty(example = "null", value = "cesta a soubor [persistentní položka]")
+  public String getPathandfilename() {
+    return pathandfilename;
+  }
+
+  public void setPathandfilename(String pathandfilename) {
+    this.pathandfilename = pathandfilename;
+  }
+
+  public Picture refcount(Integer refcount) {
+    this.refcount = refcount;
+    return this;
+  }
+
+   /**
+   * počet referencí [persistentní položka]
+   * @return refcount
+  **/
+  @ApiModelProperty(example = "null", value = "počet referencí [persistentní položka]")
+  public Integer getRefcount() {
+    return refcount;
+  }
+
+  public void setRefcount(Integer refcount) {
+    this.refcount = refcount;
+  }
+
+  public Picture isprotected(Boolean isprotected) {
+    this.isprotected = isprotected;
+    return this;
+  }
+
+   /**
+   * chráněn [persistentní položka]
+   * @return isprotected
+  **/
+  @ApiModelProperty(example = "null", value = "chráněn [persistentní položka]")
+  public Boolean getIsprotected() {
+    return isprotected;
+  }
+
+  public void setIsprotected(Boolean isprotected) {
+    this.isprotected = isprotected;
+  }
+
+  public Picture classId(String classId) {
+    this.classId = classId;
+    return this;
+  }
+
+   /**
+   * třída vlastníka - guid [persistentní položka]
+   * @return classId
+  **/
+  @ApiModelProperty(example = "null", value = "třída vlastníka - guid [persistentní položka]")
+  public String getClassId() {
+    return classId;
+  }
+
+  public void setClassId(String classId) {
+    this.classId = classId;
   }
 
   public Picture className(String className) {
@@ -244,10 +276,10 @@ public class Picture   {
   }
 
    /**
-   * Třída vlastníka - název
+   * třída vlastníka - název
    * @return className
   **/
-  @ApiModelProperty(example = "null", value = "Třída vlastníka - název")
+  @ApiModelProperty(example = "null", value = "třída vlastníka - název")
   public String getClassName() {
     return className;
   }
@@ -266,23 +298,23 @@ public class Picture   {
       return false;
     }
     Picture picture = (Picture) o;
-    return Objects.equals(this.displayName, picture.displayName) &&
-        Objects.equals(this.ID, picture.ID) &&
-        Objects.equals(this.classID, picture.classID) &&
-        Objects.equals(this.objVersion, picture.objVersion) &&
-        Objects.equals(this.blobData, picture.blobData) &&
-        Objects.equals(this.pictureTitle, picture.pictureTitle) &&
-        Objects.equals(this.externalFile, picture.externalFile) &&
-        Objects.equals(this.pathAndFileName, picture.pathAndFileName) &&
-        Objects.equals(this.refCount, picture.refCount) &&
-        Objects.equals(this.isProtected, picture.isProtected) &&
-        Objects.equals(this.classID, picture.classID) &&
+    return Objects.equals(this.displayname, picture.displayname) &&
+        Objects.equals(this.id, picture.id) &&
+        Objects.equals(this.classid2, picture.classid2) &&
+        Objects.equals(this.objversion, picture.objversion) &&
+        Objects.equals(this.blobdata, picture.blobdata) &&
+        Objects.equals(this.picturetitle, picture.picturetitle) &&
+        Objects.equals(this.externalfile, picture.externalfile) &&
+        Objects.equals(this.pathandfilename, picture.pathandfilename) &&
+        Objects.equals(this.refcount, picture.refcount) &&
+        Objects.equals(this.isprotected, picture.isprotected) &&
+        Objects.equals(this.classId, picture.classId) &&
         Objects.equals(this.className, picture.className);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, blobData, pictureTitle, externalFile, pathAndFileName, refCount, isProtected, classID, className);
+    return Objects.hash(displayname, id, classid2, objversion, blobdata, picturetitle, externalfile, pathandfilename, refcount, isprotected, classId, className);
   }
 
   @Override
@@ -290,17 +322,17 @@ public class Picture   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Picture {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    blobData: ").append(toIndentedString(blobData)).append("\n");
-    sb.append("    pictureTitle: ").append(toIndentedString(pictureTitle)).append("\n");
-    sb.append("    externalFile: ").append(toIndentedString(externalFile)).append("\n");
-    sb.append("    pathAndFileName: ").append(toIndentedString(pathAndFileName)).append("\n");
-    sb.append("    refCount: ").append(toIndentedString(refCount)).append("\n");
-    sb.append("    isProtected: ").append(toIndentedString(isProtected)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid2)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    blobdata: ").append(toIndentedString(blobdata)).append("\n");
+    sb.append("    picturetitle: ").append(toIndentedString(picturetitle)).append("\n");
+    sb.append("    externalfile: ").append(toIndentedString(externalfile)).append("\n");
+    sb.append("    pathandfilename: ").append(toIndentedString(pathandfilename)).append("\n");
+    sb.append("    refcount: ").append(toIndentedString(refcount)).append("\n");
+    sb.append("    isprotected: ").append(toIndentedString(isprotected)).append("\n");
+    sb.append("    classId: ").append(toIndentedString(classId)).append("\n");
     sb.append("    className: ").append(toIndentedString(className)).append("\n");
     sb.append("}");
     return sb.toString();

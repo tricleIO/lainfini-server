@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,117 +35,153 @@ import java.util.Objects;
 /**
  * Store
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Store   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Address_ID")
-  private Store addressID = null;
+  @SerializedName("address_id")
+  private Store addressId = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Account_ID")
-  private String accountID = null;
+  @SerializedName("account_id")
+  private String accountId = null;
 
-  @SerializedName("PriceList_ID")
-  private String priceListID = null;
+  @SerializedName("pricelist_id")
+  private String pricelistId = null;
 
-  @SerializedName("InventoryState")
-  private Integer inventoryState = null;
+  @SerializedName("inventorystate")
+  private Integer inventorystate = null;
 
-  @SerializedName("MachineName")
-  private String machineName = null;
+  @SerializedName("machinename")
+  private String machinename = null;
 
-  @SerializedName("InvStartedBy_ID")
-  private String invStartedByID = null;
+  @SerializedName("invstartedby_id")
+  private String invstartedbyId = null;
 
-  @SerializedName("RefundStore_ID")
-  private String refundStoreID = null;
+  @SerializedName("refundstore_id")
+  private String refundstoreId = null;
 
-  @SerializedName("FirstOpenPeriod_ID")
-  private String firstOpenPeriodID = null;
+  @SerializedName("firstopenperiod_id")
+  private String firstopenperiodId = null;
 
-  @SerializedName("LastOpenPeriod_ID")
-  private String lastOpenPeriodID = null;
+  @SerializedName("lastopenperiod_id")
+  private String lastopenperiodId = null;
 
-  @SerializedName("FIFO")
-  private Boolean FIFO = null;
+  @SerializedName("fifo")
+  private Boolean fifo = null;
 
-  @SerializedName("ToAccount")
-  private Boolean toAccount = null;
+  @SerializedName("toaccount")
+  private Boolean toaccount = null;
 
-  @SerializedName("OutOfStockDelivery")
-  private Integer outOfStockDelivery = null;
+  @SerializedName("outofstockdelivery")
+  private Integer outofstockdelivery = null;
 
-  @SerializedName("OutOfStockBatchDelivery")
-  private Integer outOfStockBatchDelivery = null;
+  @SerializedName("outofstockbatchdelivery")
+  private Integer outofstockbatchdelivery = null;
 
-  @SerializedName("IntrastatInputStatistic_ID")
-  private String intrastatInputStatisticID = null;
+  @SerializedName("intrastatinputstatistic_id")
+  private String intrastatinputstatisticId = null;
 
-  @SerializedName("IntrastatOutputStatistic_ID")
-  private String intrastatOutputStatisticID = null;
+  @SerializedName("intrastatoutputstatistic_id")
+  private String intrastatoutputstatisticId = null;
 
-  @SerializedName("IntrastatRegion_ID")
-  private String intrastatRegionID = null;
+  @SerializedName("intrastatregion_id")
+  private String intrastatregionId = null;
 
-  @SerializedName("IsLogistic")
-  private Boolean isLogistic = null;
+  @SerializedName("islogistic")
+  private Boolean islogistic = null;
 
-  @SerializedName("IsLogisticFromDate$DATE")
-  private DateTime isLogisticFromDateDATE = null;
+  @SerializedName("islogisticfromdate$date")
+  private DateTime islogisticfromdatedate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Store displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Store id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Store classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Store objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Store hidden(Boolean hidden) {
@@ -154,10 +190,10 @@ public class Store   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -166,22 +202,22 @@ public class Store   {
     this.hidden = hidden;
   }
 
-  public Store addressID(Store addressID) {
-    this.addressID = addressID;
+  public Store addressId(Store addressId) {
+    this.addressId = addressId;
     return this;
   }
 
    /**
-   * Get addressID
-   * @return addressID
+   * Get addressId
+   * @return addressId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Store getAddressID() {
-    return addressID;
+  public Store getAddressId() {
+    return addressId;
   }
 
-  public void setAddressID(Store addressID) {
-    this.addressID = addressID;
+  public void setAddressId(Store addressId) {
+    this.addressId = addressId;
   }
 
   public Store name(String name) {
@@ -190,10 +226,10 @@ public class Store   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -208,10 +244,10 @@ public class Store   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -220,301 +256,310 @@ public class Store   {
     this.code = code;
   }
 
-  public Store accountID(String accountID) {
-    this.accountID = accountID;
+  public Store accountId(String accountId) {
+    this.accountId = accountId;
     return this;
   }
 
    /**
-   * Účet; ID objektu Účet účetního rozvrhu [persistentní položka]
-   * @return accountID
+   * Účet; id objektu Účet účetního rozvrhu [persistentní položka]
+   * @return accountId
   **/
-  @ApiModelProperty(example = "null", value = "Účet; ID objektu Účet účetního rozvrhu [persistentní položka]")
-  public String getAccountID() {
-    return accountID;
+  @ApiModelProperty(example = "null", value = "Účet; id objektu Účet účetního rozvrhu [persistentní položka]")
+  public String getAccountId() {
+    return accountId;
   }
 
-  public void setAccountID(String accountID) {
-    this.accountID = accountID;
+  public void setAccountId(String accountId) {
+    this.accountId = accountId;
   }
 
-  public Store priceListID(String priceListID) {
-    this.priceListID = priceListID;
+  public Store pricelistId(String pricelistId) {
+    this.pricelistId = pricelistId;
     return this;
   }
 
    /**
-   * Ceník; ID objektu Ceník [persistentní položka]
-   * @return priceListID
+   * ceník; id objektu ceník [persistentní položka]
+   * @return pricelistId
   **/
-  @ApiModelProperty(example = "null", value = "Ceník; ID objektu Ceník [persistentní položka]")
-  public String getPriceListID() {
-    return priceListID;
+  @ApiModelProperty(example = "null", value = "ceník; id objektu ceník [persistentní položka]")
+  public String getPricelistId() {
+    return pricelistId;
   }
 
-  public void setPriceListID(String priceListID) {
-    this.priceListID = priceListID;
+  public void setPricelistId(String pricelistId) {
+    this.pricelistId = pricelistId;
   }
 
-  public Store inventoryState(Integer inventoryState) {
-    this.inventoryState = inventoryState;
+  public Store inventorystate(Integer inventorystate) {
+    this.inventorystate = inventorystate;
     return this;
   }
 
    /**
-   * Je inventura [persistentní položka]
-   * @return inventoryState
+   * je inventura [persistentní položka]
+   * @return inventorystate
   **/
-  @ApiModelProperty(example = "null", value = "Je inventura [persistentní položka]")
-  public Integer getInventoryState() {
-    return inventoryState;
+  @ApiModelProperty(example = "null", value = "je inventura [persistentní položka]")
+  public Integer getInventorystate() {
+    return inventorystate;
   }
 
-  public void setInventoryState(Integer inventoryState) {
-    this.inventoryState = inventoryState;
+  public void setInventorystate(Integer inventorystate) {
+    this.inventorystate = inventorystate;
   }
 
-  public Store machineName(String machineName) {
-    this.machineName = machineName;
+  public Store machinename(String machinename) {
+    this.machinename = machinename;
     return this;
   }
 
    /**
-   * Stanice [persistentní položka]
-   * @return machineName
+   * stanice [persistentní položka]
+   * @return machinename
   **/
-  @ApiModelProperty(example = "null", value = "Stanice [persistentní položka]")
-  public String getMachineName() {
-    return machineName;
+  @ApiModelProperty(example = "null", value = "stanice [persistentní položka]")
+  public String getMachinename() {
+    return machinename;
   }
 
-  public void setMachineName(String machineName) {
-    this.machineName = machineName;
+  public void setMachinename(String machinename) {
+    this.machinename = machinename;
   }
 
-  public Store invStartedByID(String invStartedByID) {
-    this.invStartedByID = invStartedByID;
+  public Store invstartedbyId(String invstartedbyId) {
+    this.invstartedbyId = invstartedbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return invStartedByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return invstartedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getInvStartedByID() {
-    return invStartedByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getInvstartedbyId() {
+    return invstartedbyId;
   }
 
-  public void setInvStartedByID(String invStartedByID) {
-    this.invStartedByID = invStartedByID;
+  public void setInvstartedbyId(String invstartedbyId) {
+    this.invstartedbyId = invstartedbyId;
   }
 
-  public Store refundStoreID(String refundStoreID) {
-    this.refundStoreID = refundStoreID;
+  public Store refundstoreId(String refundstoreId) {
+    this.refundstoreId = refundstoreId;
     return this;
   }
 
    /**
-   * Vracet do; ID objektu Sklad [persistentní položka]
-   * @return refundStoreID
+   * vracet do; id objektu sklad [persistentní položka]
+   * @return refundstoreId
   **/
-  @ApiModelProperty(example = "null", value = "Vracet do; ID objektu Sklad [persistentní položka]")
-  public String getRefundStoreID() {
-    return refundStoreID;
+  @ApiModelProperty(example = "null", value = "vracet do; id objektu sklad [persistentní položka]")
+  public String getRefundstoreId() {
+    return refundstoreId;
   }
 
-  public void setRefundStoreID(String refundStoreID) {
-    this.refundStoreID = refundStoreID;
+  public void setRefundstoreId(String refundstoreId) {
+    this.refundstoreId = refundstoreId;
   }
 
-  public Store firstOpenPeriodID(String firstOpenPeriodID) {
-    this.firstOpenPeriodID = firstOpenPeriodID;
+  public Store firstopenperiodId(String firstopenperiodId) {
+    this.firstopenperiodId = firstopenperiodId;
     return this;
   }
 
    /**
-   * První období; ID objektu Období [persistentní položka]
-   * @return firstOpenPeriodID
+   * první období; id objektu období [persistentní položka]
+   * @return firstopenperiodId
   **/
-  @ApiModelProperty(example = "null", value = "První období; ID objektu Období [persistentní položka]")
-  public String getFirstOpenPeriodID() {
-    return firstOpenPeriodID;
+  @ApiModelProperty(example = "null", value = "první období; id objektu období [persistentní položka]")
+  public String getFirstopenperiodId() {
+    return firstopenperiodId;
   }
 
-  public void setFirstOpenPeriodID(String firstOpenPeriodID) {
-    this.firstOpenPeriodID = firstOpenPeriodID;
+  public void setFirstopenperiodId(String firstopenperiodId) {
+    this.firstopenperiodId = firstopenperiodId;
   }
 
-   /**
-   * Akt.období; ID objektu Období [persistentní položka]
-   * @return lastOpenPeriodID
-  **/
-  @ApiModelProperty(example = "null", value = "Akt.období; ID objektu Období [persistentní položka]")
-  public String getLastOpenPeriodID() {
-    return lastOpenPeriodID;
-  }
-
-  public Store FIFO(Boolean FIFO) {
-    this.FIFO = FIFO;
+  public Store lastopenperiodId(String lastopenperiodId) {
+    this.lastopenperiodId = lastopenperiodId;
     return this;
   }
 
    /**
-   * FIFO [persistentní položka]
-   * @return FIFO
+   * akt.období; id objektu období [persistentní položka]
+   * @return lastopenperiodId
   **/
-  @ApiModelProperty(example = "null", value = "FIFO [persistentní položka]")
-  public Boolean getFIFO() {
-    return FIFO;
+  @ApiModelProperty(example = "null", value = "akt.období; id objektu období [persistentní položka]")
+  public String getLastopenperiodId() {
+    return lastopenperiodId;
   }
 
-  public void setFIFO(Boolean FIFO) {
-    this.FIFO = FIFO;
+  public void setLastopenperiodId(String lastopenperiodId) {
+    this.lastopenperiodId = lastopenperiodId;
   }
 
-  public Store toAccount(Boolean toAccount) {
-    this.toAccount = toAccount;
+  public Store fifo(Boolean fifo) {
+    this.fifo = fifo;
+    return this;
+  }
+
+   /**
+   * fifo [persistentní položka]
+   * @return fifo
+  **/
+  @ApiModelProperty(example = "null", value = "fifo [persistentní položka]")
+  public Boolean getFifo() {
+    return fifo;
+  }
+
+  public void setFifo(Boolean fifo) {
+    this.fifo = fifo;
+  }
+
+  public Store toaccount(Boolean toaccount) {
+    this.toaccount = toaccount;
     return this;
   }
 
    /**
    * Účtovat [persistentní položka]
-   * @return toAccount
+   * @return toaccount
   **/
   @ApiModelProperty(example = "null", value = "Účtovat [persistentní položka]")
-  public Boolean getToAccount() {
-    return toAccount;
+  public Boolean getToaccount() {
+    return toaccount;
   }
 
-  public void setToAccount(Boolean toAccount) {
-    this.toAccount = toAccount;
+  public void setToaccount(Boolean toaccount) {
+    this.toaccount = toaccount;
   }
 
-  public Store outOfStockDelivery(Integer outOfStockDelivery) {
-    this.outOfStockDelivery = outOfStockDelivery;
+  public Store outofstockdelivery(Integer outofstockdelivery) {
+    this.outofstockdelivery = outofstockdelivery;
     return this;
   }
 
    /**
-   * Vyskl. [persistentní položka]
-   * @return outOfStockDelivery
+   * vyskl. [persistentní položka]
+   * @return outofstockdelivery
   **/
-  @ApiModelProperty(example = "null", value = "Vyskl. [persistentní položka]")
-  public Integer getOutOfStockDelivery() {
-    return outOfStockDelivery;
+  @ApiModelProperty(example = "null", value = "vyskl. [persistentní položka]")
+  public Integer getOutofstockdelivery() {
+    return outofstockdelivery;
   }
 
-  public void setOutOfStockDelivery(Integer outOfStockDelivery) {
-    this.outOfStockDelivery = outOfStockDelivery;
+  public void setOutofstockdelivery(Integer outofstockdelivery) {
+    this.outofstockdelivery = outofstockdelivery;
   }
 
-  public Store outOfStockBatchDelivery(Integer outOfStockBatchDelivery) {
-    this.outOfStockBatchDelivery = outOfStockBatchDelivery;
+  public Store outofstockbatchdelivery(Integer outofstockbatchdelivery) {
+    this.outofstockbatchdelivery = outofstockbatchdelivery;
     return this;
   }
 
    /**
-   * Vyskl. šarží/s.čísel [persistentní položka]
-   * @return outOfStockBatchDelivery
+   * vyskl. šarží/s.čísel [persistentní položka]
+   * @return outofstockbatchdelivery
   **/
-  @ApiModelProperty(example = "null", value = "Vyskl. šarží/s.čísel [persistentní položka]")
-  public Integer getOutOfStockBatchDelivery() {
-    return outOfStockBatchDelivery;
+  @ApiModelProperty(example = "null", value = "vyskl. šarží/s.čísel [persistentní položka]")
+  public Integer getOutofstockbatchdelivery() {
+    return outofstockbatchdelivery;
   }
 
-  public void setOutOfStockBatchDelivery(Integer outOfStockBatchDelivery) {
-    this.outOfStockBatchDelivery = outOfStockBatchDelivery;
+  public void setOutofstockbatchdelivery(Integer outofstockbatchdelivery) {
+    this.outofstockbatchdelivery = outofstockbatchdelivery;
   }
 
-  public Store intrastatInputStatisticID(String intrastatInputStatisticID) {
-    this.intrastatInputStatisticID = intrastatInputStatisticID;
+  public Store intrastatinputstatisticId(String intrastatinputstatisticId) {
+    this.intrastatinputstatisticId = intrastatinputstatisticId;
     return this;
   }
 
    /**
-   * Stat.hodnota na vstupu; ID objektu Definice statistické hodnoty na vstupu [persistentní položka]
-   * @return intrastatInputStatisticID
+   * stat.hodnota na vstupu; id objektu definice statistické hodnoty na vstupu [persistentní položka]
+   * @return intrastatinputstatisticId
   **/
-  @ApiModelProperty(example = "null", value = "Stat.hodnota na vstupu; ID objektu Definice statistické hodnoty na vstupu [persistentní položka]")
-  public String getIntrastatInputStatisticID() {
-    return intrastatInputStatisticID;
+  @ApiModelProperty(example = "null", value = "stat.hodnota na vstupu; id objektu definice statistické hodnoty na vstupu [persistentní položka]")
+  public String getIntrastatinputstatisticId() {
+    return intrastatinputstatisticId;
   }
 
-  public void setIntrastatInputStatisticID(String intrastatInputStatisticID) {
-    this.intrastatInputStatisticID = intrastatInputStatisticID;
+  public void setIntrastatinputstatisticId(String intrastatinputstatisticId) {
+    this.intrastatinputstatisticId = intrastatinputstatisticId;
   }
 
-  public Store intrastatOutputStatisticID(String intrastatOutputStatisticID) {
-    this.intrastatOutputStatisticID = intrastatOutputStatisticID;
+  public Store intrastatoutputstatisticId(String intrastatoutputstatisticId) {
+    this.intrastatoutputstatisticId = intrastatoutputstatisticId;
     return this;
   }
 
    /**
-   * Stat.hodnota na výstupu; ID objektu Definice statistické hodnoty na výstupu [persistentní položka]
-   * @return intrastatOutputStatisticID
+   * stat.hodnota na výstupu; id objektu definice statistické hodnoty na výstupu [persistentní položka]
+   * @return intrastatoutputstatisticId
   **/
-  @ApiModelProperty(example = "null", value = "Stat.hodnota na výstupu; ID objektu Definice statistické hodnoty na výstupu [persistentní položka]")
-  public String getIntrastatOutputStatisticID() {
-    return intrastatOutputStatisticID;
+  @ApiModelProperty(example = "null", value = "stat.hodnota na výstupu; id objektu definice statistické hodnoty na výstupu [persistentní položka]")
+  public String getIntrastatoutputstatisticId() {
+    return intrastatoutputstatisticId;
   }
 
-  public void setIntrastatOutputStatisticID(String intrastatOutputStatisticID) {
-    this.intrastatOutputStatisticID = intrastatOutputStatisticID;
+  public void setIntrastatoutputstatisticId(String intrastatoutputstatisticId) {
+    this.intrastatoutputstatisticId = intrastatoutputstatisticId;
   }
 
-  public Store intrastatRegionID(String intrastatRegionID) {
-    this.intrastatRegionID = intrastatRegionID;
+  public Store intrastatregionId(String intrastatregionId) {
+    this.intrastatregionId = intrastatregionId;
     return this;
   }
 
    /**
-   * Kraj původu; ID objektu Kraj [persistentní položka]
-   * @return intrastatRegionID
+   * kraj původu; id objektu kraj [persistentní položka]
+   * @return intrastatregionId
   **/
-  @ApiModelProperty(example = "null", value = "Kraj původu; ID objektu Kraj [persistentní položka]")
-  public String getIntrastatRegionID() {
-    return intrastatRegionID;
+  @ApiModelProperty(example = "null", value = "kraj původu; id objektu kraj [persistentní položka]")
+  public String getIntrastatregionId() {
+    return intrastatregionId;
   }
 
-  public void setIntrastatRegionID(String intrastatRegionID) {
-    this.intrastatRegionID = intrastatRegionID;
+  public void setIntrastatregionId(String intrastatregionId) {
+    this.intrastatregionId = intrastatregionId;
   }
 
-  public Store isLogistic(Boolean isLogistic) {
-    this.isLogistic = isLogistic;
+  public Store islogistic(Boolean islogistic) {
+    this.islogistic = islogistic;
     return this;
   }
 
    /**
-   * Sklad je polohovaný [persistentní položka]
-   * @return isLogistic
+   * sklad je polohovaný [persistentní položka]
+   * @return islogistic
   **/
-  @ApiModelProperty(example = "null", value = "Sklad je polohovaný [persistentní položka]")
-  public Boolean getIsLogistic() {
-    return isLogistic;
+  @ApiModelProperty(example = "null", value = "sklad je polohovaný [persistentní položka]")
+  public Boolean getIslogistic() {
+    return islogistic;
   }
 
-  public void setIsLogistic(Boolean isLogistic) {
-    this.isLogistic = isLogistic;
+  public void setIslogistic(Boolean islogistic) {
+    this.islogistic = islogistic;
   }
 
-  public Store isLogisticFromDateDATE(DateTime isLogisticFromDateDATE) {
-    this.isLogisticFromDateDATE = isLogisticFromDateDATE;
+  public Store islogisticfromdatedate(DateTime islogisticfromdatedate) {
+    this.islogisticfromdatedate = islogisticfromdatedate;
     return this;
   }
 
    /**
-   * Dat. zahájení poloh. [persistentní položka]
-   * @return isLogisticFromDateDATE
+   * dat. zahájení poloh. [persistentní položka]
+   * @return islogisticfromdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Dat. zahájení poloh. [persistentní položka]")
-  public DateTime getIsLogisticFromDateDATE() {
-    return isLogisticFromDateDATE;
+  @ApiModelProperty(example = "null", value = "dat. zahájení poloh. [persistentní položka]")
+  public DateTime getIslogisticfromdatedate() {
+    return islogisticfromdatedate;
   }
 
-  public void setIsLogisticFromDateDATE(DateTime isLogisticFromDateDATE) {
-    this.isLogisticFromDateDATE = isLogisticFromDateDATE;
+  public void setIslogisticfromdatedate(DateTime islogisticfromdatedate) {
+    this.islogisticfromdatedate = islogisticfromdatedate;
   }
 
 
@@ -527,36 +572,36 @@ public class Store   {
       return false;
     }
     Store store = (Store) o;
-    return Objects.equals(this.displayName, store.displayName) &&
-        Objects.equals(this.ID, store.ID) &&
-        Objects.equals(this.classID, store.classID) &&
-        Objects.equals(this.objVersion, store.objVersion) &&
+    return Objects.equals(this.displayname, store.displayname) &&
+        Objects.equals(this.id, store.id) &&
+        Objects.equals(this.classid, store.classid) &&
+        Objects.equals(this.objversion, store.objversion) &&
         Objects.equals(this.hidden, store.hidden) &&
-        Objects.equals(this.addressID, store.addressID) &&
+        Objects.equals(this.addressId, store.addressId) &&
         Objects.equals(this.name, store.name) &&
         Objects.equals(this.code, store.code) &&
-        Objects.equals(this.accountID, store.accountID) &&
-        Objects.equals(this.priceListID, store.priceListID) &&
-        Objects.equals(this.inventoryState, store.inventoryState) &&
-        Objects.equals(this.machineName, store.machineName) &&
-        Objects.equals(this.invStartedByID, store.invStartedByID) &&
-        Objects.equals(this.refundStoreID, store.refundStoreID) &&
-        Objects.equals(this.firstOpenPeriodID, store.firstOpenPeriodID) &&
-        Objects.equals(this.lastOpenPeriodID, store.lastOpenPeriodID) &&
-        Objects.equals(this.FIFO, store.FIFO) &&
-        Objects.equals(this.toAccount, store.toAccount) &&
-        Objects.equals(this.outOfStockDelivery, store.outOfStockDelivery) &&
-        Objects.equals(this.outOfStockBatchDelivery, store.outOfStockBatchDelivery) &&
-        Objects.equals(this.intrastatInputStatisticID, store.intrastatInputStatisticID) &&
-        Objects.equals(this.intrastatOutputStatisticID, store.intrastatOutputStatisticID) &&
-        Objects.equals(this.intrastatRegionID, store.intrastatRegionID) &&
-        Objects.equals(this.isLogistic, store.isLogistic) &&
-        Objects.equals(this.isLogisticFromDateDATE, store.isLogisticFromDateDATE);
+        Objects.equals(this.accountId, store.accountId) &&
+        Objects.equals(this.pricelistId, store.pricelistId) &&
+        Objects.equals(this.inventorystate, store.inventorystate) &&
+        Objects.equals(this.machinename, store.machinename) &&
+        Objects.equals(this.invstartedbyId, store.invstartedbyId) &&
+        Objects.equals(this.refundstoreId, store.refundstoreId) &&
+        Objects.equals(this.firstopenperiodId, store.firstopenperiodId) &&
+        Objects.equals(this.lastopenperiodId, store.lastopenperiodId) &&
+        Objects.equals(this.fifo, store.fifo) &&
+        Objects.equals(this.toaccount, store.toaccount) &&
+        Objects.equals(this.outofstockdelivery, store.outofstockdelivery) &&
+        Objects.equals(this.outofstockbatchdelivery, store.outofstockbatchdelivery) &&
+        Objects.equals(this.intrastatinputstatisticId, store.intrastatinputstatisticId) &&
+        Objects.equals(this.intrastatoutputstatisticId, store.intrastatoutputstatisticId) &&
+        Objects.equals(this.intrastatregionId, store.intrastatregionId) &&
+        Objects.equals(this.islogistic, store.islogistic) &&
+        Objects.equals(this.islogisticfromdatedate, store.islogisticfromdatedate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, addressID, name, code, accountID, priceListID, inventoryState, machineName, invStartedByID, refundStoreID, firstOpenPeriodID, lastOpenPeriodID, FIFO, toAccount, outOfStockDelivery, outOfStockBatchDelivery, intrastatInputStatisticID, intrastatOutputStatisticID, intrastatRegionID, isLogistic, isLogisticFromDateDATE);
+    return Objects.hash(displayname, id, classid, objversion, hidden, addressId, name, code, accountId, pricelistId, inventorystate, machinename, invstartedbyId, refundstoreId, firstopenperiodId, lastopenperiodId, fifo, toaccount, outofstockdelivery, outofstockbatchdelivery, intrastatinputstatisticId, intrastatoutputstatisticId, intrastatregionId, islogistic, islogisticfromdatedate);
   }
 
   @Override
@@ -564,31 +609,31 @@ public class Store   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Store {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    addressID: ").append(toIndentedString(addressID)).append("\n");
+    sb.append("    addressId: ").append(toIndentedString(addressId)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
-    sb.append("    accountID: ").append(toIndentedString(accountID)).append("\n");
-    sb.append("    priceListID: ").append(toIndentedString(priceListID)).append("\n");
-    sb.append("    inventoryState: ").append(toIndentedString(inventoryState)).append("\n");
-    sb.append("    machineName: ").append(toIndentedString(machineName)).append("\n");
-    sb.append("    invStartedByID: ").append(toIndentedString(invStartedByID)).append("\n");
-    sb.append("    refundStoreID: ").append(toIndentedString(refundStoreID)).append("\n");
-    sb.append("    firstOpenPeriodID: ").append(toIndentedString(firstOpenPeriodID)).append("\n");
-    sb.append("    lastOpenPeriodID: ").append(toIndentedString(lastOpenPeriodID)).append("\n");
-    sb.append("    FIFO: ").append(toIndentedString(FIFO)).append("\n");
-    sb.append("    toAccount: ").append(toIndentedString(toAccount)).append("\n");
-    sb.append("    outOfStockDelivery: ").append(toIndentedString(outOfStockDelivery)).append("\n");
-    sb.append("    outOfStockBatchDelivery: ").append(toIndentedString(outOfStockBatchDelivery)).append("\n");
-    sb.append("    intrastatInputStatisticID: ").append(toIndentedString(intrastatInputStatisticID)).append("\n");
-    sb.append("    intrastatOutputStatisticID: ").append(toIndentedString(intrastatOutputStatisticID)).append("\n");
-    sb.append("    intrastatRegionID: ").append(toIndentedString(intrastatRegionID)).append("\n");
-    sb.append("    isLogistic: ").append(toIndentedString(isLogistic)).append("\n");
-    sb.append("    isLogisticFromDateDATE: ").append(toIndentedString(isLogisticFromDateDATE)).append("\n");
+    sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
+    sb.append("    pricelistId: ").append(toIndentedString(pricelistId)).append("\n");
+    sb.append("    inventorystate: ").append(toIndentedString(inventorystate)).append("\n");
+    sb.append("    machinename: ").append(toIndentedString(machinename)).append("\n");
+    sb.append("    invstartedbyId: ").append(toIndentedString(invstartedbyId)).append("\n");
+    sb.append("    refundstoreId: ").append(toIndentedString(refundstoreId)).append("\n");
+    sb.append("    firstopenperiodId: ").append(toIndentedString(firstopenperiodId)).append("\n");
+    sb.append("    lastopenperiodId: ").append(toIndentedString(lastopenperiodId)).append("\n");
+    sb.append("    fifo: ").append(toIndentedString(fifo)).append("\n");
+    sb.append("    toaccount: ").append(toIndentedString(toaccount)).append("\n");
+    sb.append("    outofstockdelivery: ").append(toIndentedString(outofstockdelivery)).append("\n");
+    sb.append("    outofstockbatchdelivery: ").append(toIndentedString(outofstockbatchdelivery)).append("\n");
+    sb.append("    intrastatinputstatisticId: ").append(toIndentedString(intrastatinputstatisticId)).append("\n");
+    sb.append("    intrastatoutputstatisticId: ").append(toIndentedString(intrastatoutputstatisticId)).append("\n");
+    sb.append("    intrastatregionId: ").append(toIndentedString(intrastatregionId)).append("\n");
+    sb.append("    islogistic: ").append(toIndentedString(islogistic)).append("\n");
+    sb.append("    islogisticfromdatedate: ").append(toIndentedString(islogisticfromdatedate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

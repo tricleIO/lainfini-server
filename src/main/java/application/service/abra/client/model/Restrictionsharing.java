@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,129 +34,174 @@ import java.util.Objects;
 /**
  * Restrictionsharing
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Restrictionsharing   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("VisibleForUser_ID")
-  private String visibleForUserID = null;
+  @SerializedName("visibleforuser_id")
+  private String visibleforuserId = null;
 
-  @SerializedName("VisibleForRole_ID")
-  private String visibleForRoleID = null;
+  @SerializedName("visibleforrole_id")
+  private String visibleforroleId = null;
 
-  @SerializedName("VisibleForGroup_ID")
-  private String visibleForGroupID = null;
+  @SerializedName("visibleforgroup_id")
+  private String visibleforgroupId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Definice omezení [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Definice omezení [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Restrictionsharing visibleForUserID(String visibleForUserID) {
-    this.visibleForUserID = visibleForUserID;
+  public Restrictionsharing displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Uživatel; ID objektu Uživatel [persistentní položka]
-   * @return visibleForUserID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Uživatel; ID objektu Uživatel [persistentní položka]")
-  public String getVisibleForUserID() {
-    return visibleForUserID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setVisibleForUserID(String visibleForUserID) {
-    this.visibleForUserID = visibleForUserID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Restrictionsharing visibleForRoleID(String visibleForRoleID) {
-    this.visibleForRoleID = visibleForRoleID;
+  public Restrictionsharing id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Role; ID objektu Role [persistentní položka]
-   * @return visibleForRoleID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Role; ID objektu Role [persistentní položka]")
-  public String getVisibleForRoleID() {
-    return visibleForRoleID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setVisibleForRoleID(String visibleForRoleID) {
-    this.visibleForRoleID = visibleForRoleID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Restrictionsharing visibleForGroupID(String visibleForGroupID) {
-    this.visibleForGroupID = visibleForGroupID;
+  public Restrictionsharing classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Skupina rolí; ID objektu Skupina rolí [persistentní položka]
-   * @return visibleForGroupID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Skupina rolí; ID objektu Skupina rolí [persistentní položka]")
-  public String getVisibleForGroupID() {
-    return visibleForGroupID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setVisibleForGroupID(String visibleForGroupID) {
-    this.visibleForGroupID = visibleForGroupID;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Restrictionsharing objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Restrictionsharing parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu definice omezení [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu definice omezení [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Restrictionsharing visibleforuserId(String visibleforuserId) {
+    this.visibleforuserId = visibleforuserId;
+    return this;
+  }
+
+   /**
+   * uživatel; id objektu uživatel [persistentní položka]
+   * @return visibleforuserId
+  **/
+  @ApiModelProperty(example = "null", value = "uživatel; id objektu uživatel [persistentní položka]")
+  public String getVisibleforuserId() {
+    return visibleforuserId;
+  }
+
+  public void setVisibleforuserId(String visibleforuserId) {
+    this.visibleforuserId = visibleforuserId;
+  }
+
+  public Restrictionsharing visibleforroleId(String visibleforroleId) {
+    this.visibleforroleId = visibleforroleId;
+    return this;
+  }
+
+   /**
+   * role; id objektu role [persistentní položka]
+   * @return visibleforroleId
+  **/
+  @ApiModelProperty(example = "null", value = "role; id objektu role [persistentní položka]")
+  public String getVisibleforroleId() {
+    return visibleforroleId;
+  }
+
+  public void setVisibleforroleId(String visibleforroleId) {
+    this.visibleforroleId = visibleforroleId;
+  }
+
+  public Restrictionsharing visibleforgroupId(String visibleforgroupId) {
+    this.visibleforgroupId = visibleforgroupId;
+    return this;
+  }
+
+   /**
+   * skupina rolí; id objektu skupina rolí [persistentní položka]
+   * @return visibleforgroupId
+  **/
+  @ApiModelProperty(example = "null", value = "skupina rolí; id objektu skupina rolí [persistentní položka]")
+  public String getVisibleforgroupId() {
+    return visibleforgroupId;
+  }
+
+  public void setVisibleforgroupId(String visibleforgroupId) {
+    this.visibleforgroupId = visibleforgroupId;
   }
 
 
@@ -169,19 +214,19 @@ public class Restrictionsharing   {
       return false;
     }
     Restrictionsharing restrictionsharing = (Restrictionsharing) o;
-    return Objects.equals(this.displayName, restrictionsharing.displayName) &&
-        Objects.equals(this.ID, restrictionsharing.ID) &&
-        Objects.equals(this.classID, restrictionsharing.classID) &&
-        Objects.equals(this.objVersion, restrictionsharing.objVersion) &&
-        Objects.equals(this.parentID, restrictionsharing.parentID) &&
-        Objects.equals(this.visibleForUserID, restrictionsharing.visibleForUserID) &&
-        Objects.equals(this.visibleForRoleID, restrictionsharing.visibleForRoleID) &&
-        Objects.equals(this.visibleForGroupID, restrictionsharing.visibleForGroupID);
+    return Objects.equals(this.displayname, restrictionsharing.displayname) &&
+        Objects.equals(this.id, restrictionsharing.id) &&
+        Objects.equals(this.classid, restrictionsharing.classid) &&
+        Objects.equals(this.objversion, restrictionsharing.objversion) &&
+        Objects.equals(this.parentId, restrictionsharing.parentId) &&
+        Objects.equals(this.visibleforuserId, restrictionsharing.visibleforuserId) &&
+        Objects.equals(this.visibleforroleId, restrictionsharing.visibleforroleId) &&
+        Objects.equals(this.visibleforgroupId, restrictionsharing.visibleforgroupId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, visibleForUserID, visibleForRoleID, visibleForGroupID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, visibleforuserId, visibleforroleId, visibleforgroupId);
   }
 
   @Override
@@ -189,14 +234,14 @@ public class Restrictionsharing   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Restrictionsharing {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    visibleForUserID: ").append(toIndentedString(visibleForUserID)).append("\n");
-    sb.append("    visibleForRoleID: ").append(toIndentedString(visibleForRoleID)).append("\n");
-    sb.append("    visibleForGroupID: ").append(toIndentedString(visibleForGroupID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    visibleforuserId: ").append(toIndentedString(visibleforuserId)).append("\n");
+    sb.append("    visibleforroleId: ").append(toIndentedString(visibleforroleId)).append("\n");
+    sb.append("    visibleforgroupId: ").append(toIndentedString(visibleforgroupId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

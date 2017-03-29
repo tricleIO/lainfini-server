@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,72 +36,108 @@ import java.util.Objects;
 /**
  * Logstoregateway
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Logstoregateway   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Logstoregatewayrow> rows = new ArrayList<Logstoregatewayrow>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ForInput")
-  private Boolean forInput = null;
+  @SerializedName("forinput")
+  private Boolean forinput = null;
 
-  @SerializedName("ForOutput")
-  private Boolean forOutput = null;
+  @SerializedName("foroutput")
+  private Boolean foroutput = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Logstoregateway displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Logstoregateway id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Logstoregateway classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Logstoregateway objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Logstoregateway rows(List<Logstoregatewayrow> rows) {
@@ -115,10 +151,10 @@ public class Logstoregateway   {
   }
 
    /**
-   * Řádky; kolekce BO Nasklad. a vysklad. místo - řádek [nepersistentní položka]
+   * Řádky; kolekce bo nasklad. a vysklad. místo - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Nasklad. a vysklad. místo - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo nasklad. a vysklad. místo - řádek [nepersistentní položka]")
   public List<Logstoregatewayrow> getRows() {
     return rows;
   }
@@ -133,10 +169,10 @@ public class Logstoregateway   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -151,10 +187,10 @@ public class Logstoregateway   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -169,10 +205,10 @@ public class Logstoregateway   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -181,40 +217,40 @@ public class Logstoregateway   {
     this.name = name;
   }
 
-  public Logstoregateway forInput(Boolean forInput) {
-    this.forInput = forInput;
+  public Logstoregateway forinput(Boolean forinput) {
+    this.forinput = forinput;
     return this;
   }
 
    /**
-   * Pro naskladnění [persistentní položka]
-   * @return forInput
+   * pro naskladnění [persistentní položka]
+   * @return forinput
   **/
-  @ApiModelProperty(example = "null", value = "Pro naskladnění [persistentní položka]")
-  public Boolean getForInput() {
-    return forInput;
+  @ApiModelProperty(example = "null", value = "pro naskladnění [persistentní položka]")
+  public Boolean getForinput() {
+    return forinput;
   }
 
-  public void setForInput(Boolean forInput) {
-    this.forInput = forInput;
+  public void setForinput(Boolean forinput) {
+    this.forinput = forinput;
   }
 
-  public Logstoregateway forOutput(Boolean forOutput) {
-    this.forOutput = forOutput;
+  public Logstoregateway foroutput(Boolean foroutput) {
+    this.foroutput = foroutput;
     return this;
   }
 
    /**
-   * Pro vyskladnění [persistentní položka]
-   * @return forOutput
+   * pro vyskladnění [persistentní položka]
+   * @return foroutput
   **/
-  @ApiModelProperty(example = "null", value = "Pro vyskladnění [persistentní položka]")
-  public Boolean getForOutput() {
-    return forOutput;
+  @ApiModelProperty(example = "null", value = "pro vyskladnění [persistentní položka]")
+  public Boolean getForoutput() {
+    return foroutput;
   }
 
-  public void setForOutput(Boolean forOutput) {
-    this.forOutput = forOutput;
+  public void setForoutput(Boolean foroutput) {
+    this.foroutput = foroutput;
   }
 
 
@@ -227,21 +263,21 @@ public class Logstoregateway   {
       return false;
     }
     Logstoregateway logstoregateway = (Logstoregateway) o;
-    return Objects.equals(this.displayName, logstoregateway.displayName) &&
-        Objects.equals(this.ID, logstoregateway.ID) &&
-        Objects.equals(this.classID, logstoregateway.classID) &&
-        Objects.equals(this.objVersion, logstoregateway.objVersion) &&
+    return Objects.equals(this.displayname, logstoregateway.displayname) &&
+        Objects.equals(this.id, logstoregateway.id) &&
+        Objects.equals(this.classid, logstoregateway.classid) &&
+        Objects.equals(this.objversion, logstoregateway.objversion) &&
         Objects.equals(this.rows, logstoregateway.rows) &&
         Objects.equals(this.hidden, logstoregateway.hidden) &&
         Objects.equals(this.code, logstoregateway.code) &&
         Objects.equals(this.name, logstoregateway.name) &&
-        Objects.equals(this.forInput, logstoregateway.forInput) &&
-        Objects.equals(this.forOutput, logstoregateway.forOutput);
+        Objects.equals(this.forinput, logstoregateway.forinput) &&
+        Objects.equals(this.foroutput, logstoregateway.foroutput);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, code, name, forInput, forOutput);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, code, name, forinput, foroutput);
   }
 
   @Override
@@ -249,16 +285,16 @@ public class Logstoregateway   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Logstoregateway {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    forInput: ").append(toIndentedString(forInput)).append("\n");
-    sb.append("    forOutput: ").append(toIndentedString(forOutput)).append("\n");
+    sb.append("    forinput: ").append(toIndentedString(forinput)).append("\n");
+    sb.append("    foroutput: ").append(toIndentedString(foroutput)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,84 +34,120 @@ import java.util.Objects;
 /**
  * Division
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Division   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Address_ID")
-  private Division addressID = null;
+  @SerializedName("address_id")
+  private Division addressId = null;
 
-  @SerializedName("DisplayAddress")
-  private String displayAddress = null;
+  @SerializedName("displayaddress")
+  private String displayaddress = null;
 
-  @SerializedName("DisplayParent")
-  private String displayParent = null;
+  @SerializedName("displayparent")
+  private String displayparent = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Comment")
+  @SerializedName("comment")
   private String comment = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("District_ID")
-  private String districtID = null;
+  @SerializedName("district_id")
+  private String districtId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Division displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Division id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Division classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Division objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Division hidden(Boolean hidden) {
@@ -120,10 +156,10 @@ public class Division   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -132,40 +168,58 @@ public class Division   {
     this.hidden = hidden;
   }
 
-  public Division addressID(Division addressID) {
-    this.addressID = addressID;
+  public Division addressId(Division addressId) {
+    this.addressId = addressId;
     return this;
   }
 
    /**
-   * Get addressID
-   * @return addressID
+   * Get addressId
+   * @return addressId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Division getAddressID() {
-    return addressID;
+  public Division getAddressId() {
+    return addressId;
   }
 
-  public void setAddressID(Division addressID) {
-    this.addressID = addressID;
+  public void setAddressId(Division addressId) {
+    this.addressId = addressId;
   }
 
-   /**
-   * Adresa(zobr.)
-   * @return displayAddress
-  **/
-  @ApiModelProperty(example = "null", value = "Adresa(zobr.)")
-  public String getDisplayAddress() {
-    return displayAddress;
+  public Division displayaddress(String displayaddress) {
+    this.displayaddress = displayaddress;
+    return this;
   }
 
    /**
-   * Nadřízené(zobr.)
-   * @return displayParent
+   * adresa(zobr.)
+   * @return displayaddress
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízené(zobr.)")
-  public String getDisplayParent() {
-    return displayParent;
+  @ApiModelProperty(example = "null", value = "adresa(zobr.)")
+  public String getDisplayaddress() {
+    return displayaddress;
+  }
+
+  public void setDisplayaddress(String displayaddress) {
+    this.displayaddress = displayaddress;
+  }
+
+  public Division displayparent(String displayparent) {
+    this.displayparent = displayparent;
+    return this;
+  }
+
+   /**
+   * nadřízené(zobr.)
+   * @return displayparent
+  **/
+  @ApiModelProperty(example = "null", value = "nadřízené(zobr.)")
+  public String getDisplayparent() {
+    return displayparent;
+  }
+
+  public void setDisplayparent(String displayparent) {
+    this.displayparent = displayparent;
   }
 
   public Division note(String note) {
@@ -174,10 +228,10 @@ public class Division   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -192,10 +246,10 @@ public class Division   {
   }
 
    /**
-   * Poznámka
+   * poznámka
    * @return comment
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka")
+  @ApiModelProperty(example = "null", value = "poznámka")
   public String getComment() {
     return comment;
   }
@@ -204,22 +258,22 @@ public class Division   {
     this.comment = comment;
   }
 
-  public Division parentID(String parentID) {
-    this.parentID = parentID;
+  public Division parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Nadřízené s.; ID objektu Středisko [persistentní položka]
-   * @return parentID
+   * nadřízené s.; id objektu středisko [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízené s.; ID objektu Středisko [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "nadřízené s.; id objektu středisko [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setParentID(String parentID) {
-    this.parentID = parentID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
   public Division code(String code) {
@@ -228,10 +282,10 @@ public class Division   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -246,10 +300,10 @@ public class Division   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -258,22 +312,22 @@ public class Division   {
     this.name = name;
   }
 
-  public Division districtID(String districtID) {
-    this.districtID = districtID;
+  public Division districtId(String districtId) {
+    this.districtId = districtId;
     return this;
   }
 
    /**
-   * Okres (NUTS4); ID objektu Okres [persistentní položka]
-   * @return districtID
+   * okres (nuts4); id objektu okres [persistentní položka]
+   * @return districtId
   **/
-  @ApiModelProperty(example = "null", value = "Okres (NUTS4); ID objektu Okres [persistentní položka]")
-  public String getDistrictID() {
-    return districtID;
+  @ApiModelProperty(example = "null", value = "okres (nuts4); id objektu okres [persistentní položka]")
+  public String getDistrictId() {
+    return districtId;
   }
 
-  public void setDistrictID(String districtID) {
-    this.districtID = districtID;
+  public void setDistrictId(String districtId) {
+    this.districtId = districtId;
   }
 
 
@@ -286,25 +340,25 @@ public class Division   {
       return false;
     }
     Division division = (Division) o;
-    return Objects.equals(this.displayName, division.displayName) &&
-        Objects.equals(this.ID, division.ID) &&
-        Objects.equals(this.classID, division.classID) &&
-        Objects.equals(this.objVersion, division.objVersion) &&
+    return Objects.equals(this.displayname, division.displayname) &&
+        Objects.equals(this.id, division.id) &&
+        Objects.equals(this.classid, division.classid) &&
+        Objects.equals(this.objversion, division.objversion) &&
         Objects.equals(this.hidden, division.hidden) &&
-        Objects.equals(this.addressID, division.addressID) &&
-        Objects.equals(this.displayAddress, division.displayAddress) &&
-        Objects.equals(this.displayParent, division.displayParent) &&
+        Objects.equals(this.addressId, division.addressId) &&
+        Objects.equals(this.displayaddress, division.displayaddress) &&
+        Objects.equals(this.displayparent, division.displayparent) &&
         Objects.equals(this.note, division.note) &&
         Objects.equals(this.comment, division.comment) &&
-        Objects.equals(this.parentID, division.parentID) &&
+        Objects.equals(this.parentId, division.parentId) &&
         Objects.equals(this.code, division.code) &&
         Objects.equals(this.name, division.name) &&
-        Objects.equals(this.districtID, division.districtID);
+        Objects.equals(this.districtId, division.districtId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, addressID, displayAddress, displayParent, note, comment, parentID, code, name, districtID);
+    return Objects.hash(displayname, id, classid, objversion, hidden, addressId, displayaddress, displayparent, note, comment, parentId, code, name, districtId);
   }
 
   @Override
@@ -312,20 +366,20 @@ public class Division   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Division {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    addressID: ").append(toIndentedString(addressID)).append("\n");
-    sb.append("    displayAddress: ").append(toIndentedString(displayAddress)).append("\n");
-    sb.append("    displayParent: ").append(toIndentedString(displayParent)).append("\n");
+    sb.append("    addressId: ").append(toIndentedString(addressId)).append("\n");
+    sb.append("    displayaddress: ").append(toIndentedString(displayaddress)).append("\n");
+    sb.append("    displayparent: ").append(toIndentedString(displayparent)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
     sb.append("    comment: ").append(toIndentedString(comment)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    districtID: ").append(toIndentedString(districtID)).append("\n");
+    sb.append("    districtId: ").append(toIndentedString(districtId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

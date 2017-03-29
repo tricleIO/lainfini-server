@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,183 +34,228 @@ import java.util.Objects;
 /**
  * Serviceoperationvariants
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Serviceoperationvariants   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("ServiceObjectType_ID")
-  private String serviceObjectTypeID = null;
+  @SerializedName("serviceobjecttype_id")
+  private String serviceobjecttypeId = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("WorkHoursPlanned")
-  private Double workHoursPlanned = null;
+  @SerializedName("workhoursplanned")
+  private Double workhoursplanned = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("VATRate_ID")
-  private String vATRateID = null;
+  @SerializedName("vatrate_id")
+  private String vatrateId = null;
 
-  @SerializedName("TotalAmountWithoutVAT")
-  private Double totalAmountWithoutVAT = null;
+  @SerializedName("totalamountwithoutvat")
+  private Double totalamountwithoutvat = null;
 
-  @SerializedName("TotalAmountWithVAT")
-  private Double totalAmountWithVAT = null;
+  @SerializedName("totalamountwithvat")
+  private Double totalamountwithvat = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Řádek servisní operace [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Řádek servisní operace [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Serviceoperationvariants serviceObjectTypeID(String serviceObjectTypeID) {
-    this.serviceObjectTypeID = serviceObjectTypeID;
+  public Serviceoperationvariants displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Model; ID objektu Model servisovaného předmětu [persistentní položka]
-   * @return serviceObjectTypeID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Model; ID objektu Model servisovaného předmětu [persistentní položka]")
-  public String getServiceObjectTypeID() {
-    return serviceObjectTypeID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setServiceObjectTypeID(String serviceObjectTypeID) {
-    this.serviceObjectTypeID = serviceObjectTypeID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Serviceoperationvariants storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Serviceoperationvariants id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Serviceoperationvariants qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Serviceoperationvariants classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Jed. [persistentní položka]
-   * @return qUnit
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Jed. [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Serviceoperationvariants unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Serviceoperationvariants objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return unitRate
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Serviceoperationvariants workHoursPlanned(Double workHoursPlanned) {
-    this.workHoursPlanned = workHoursPlanned;
+  public Serviceoperationvariants parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Plán.hodin [persistentní položka]
-   * @return workHoursPlanned
+   * vlastník; id objektu Řádek servisní operace [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Plán.hodin [persistentní položka]")
-  public Double getWorkHoursPlanned() {
-    return workHoursPlanned;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu Řádek servisní operace [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setWorkHoursPlanned(Double workHoursPlanned) {
-    this.workHoursPlanned = workHoursPlanned;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Serviceoperationvariants serviceobjecttypeId(String serviceobjecttypeId) {
+    this.serviceobjecttypeId = serviceobjecttypeId;
+    return this;
+  }
+
+   /**
+   * model; id objektu model servisovaného předmětu [persistentní položka]
+   * @return serviceobjecttypeId
+  **/
+  @ApiModelProperty(example = "null", value = "model; id objektu model servisovaného předmětu [persistentní položka]")
+  public String getServiceobjecttypeId() {
+    return serviceobjecttypeId;
+  }
+
+  public void setServiceobjecttypeId(String serviceobjecttypeId) {
+    this.serviceobjecttypeId = serviceobjecttypeId;
+  }
+
+  public Serviceoperationvariants storecardId(String storecardId) {
+    this.storecardId = storecardId;
+    return this;
+  }
+
+   /**
+   * skladová karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
+  **/
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
+  }
+
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
+  }
+
+  public Serviceoperationvariants qunit(String qunit) {
+    this.qunit = qunit;
+    return this;
+  }
+
+   /**
+   * jed. [persistentní položka]
+   * @return qunit
+  **/
+  @ApiModelProperty(example = "null", value = "jed. [persistentní položka]")
+  public String getQunit() {
+    return qunit;
+  }
+
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
+  }
+
+  public Serviceoperationvariants unitrate(Double unitrate) {
+    this.unitrate = unitrate;
+    return this;
+  }
+
+   /**
+   * vztah [persistentní položka]
+   * @return unitrate
+  **/
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
+  }
+
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
+  }
+
+  public Serviceoperationvariants workhoursplanned(Double workhoursplanned) {
+    this.workhoursplanned = workhoursplanned;
+    return this;
+  }
+
+   /**
+   * plán.hodin [persistentní položka]
+   * @return workhoursplanned
+  **/
+  @ApiModelProperty(example = "null", value = "plán.hodin [persistentní položka]")
+  public Double getWorkhoursplanned() {
+    return workhoursplanned;
+  }
+
+  public void setWorkhoursplanned(Double workhoursplanned) {
+    this.workhoursplanned = workhoursplanned;
   }
 
   public Serviceoperationvariants quantity(Double quantity) {
@@ -219,10 +264,10 @@ public class Serviceoperationvariants   {
   }
 
    /**
-   * Množství [persistentní položka]
+   * množství [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "množství [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -231,58 +276,58 @@ public class Serviceoperationvariants   {
     this.quantity = quantity;
   }
 
-  public Serviceoperationvariants vATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public Serviceoperationvariants vatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
     return this;
   }
 
    /**
-   * Sazba DPH; ID objektu DPH sazba [persistentní položka]
-   * @return vATRateID
+   * sazba dph; id objektu dph sazba [persistentní položka]
+   * @return vatrateId
   **/
-  @ApiModelProperty(example = "null", value = "Sazba DPH; ID objektu DPH sazba [persistentní položka]")
-  public String getVATRateID() {
-    return vATRateID;
+  @ApiModelProperty(example = "null", value = "sazba dph; id objektu dph sazba [persistentní položka]")
+  public String getVatrateId() {
+    return vatrateId;
   }
 
-  public void setVATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public void setVatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
   }
 
-  public Serviceoperationvariants totalAmountWithoutVAT(Double totalAmountWithoutVAT) {
-    this.totalAmountWithoutVAT = totalAmountWithoutVAT;
+  public Serviceoperationvariants totalamountwithoutvat(Double totalamountwithoutvat) {
+    this.totalamountwithoutvat = totalamountwithoutvat;
     return this;
   }
 
    /**
-   * Celkem bez DPH
-   * @return totalAmountWithoutVAT
+   * celkem bez dph
+   * @return totalamountwithoutvat
   **/
-  @ApiModelProperty(example = "null", value = "Celkem bez DPH")
-  public Double getTotalAmountWithoutVAT() {
-    return totalAmountWithoutVAT;
+  @ApiModelProperty(example = "null", value = "celkem bez dph")
+  public Double getTotalamountwithoutvat() {
+    return totalamountwithoutvat;
   }
 
-  public void setTotalAmountWithoutVAT(Double totalAmountWithoutVAT) {
-    this.totalAmountWithoutVAT = totalAmountWithoutVAT;
+  public void setTotalamountwithoutvat(Double totalamountwithoutvat) {
+    this.totalamountwithoutvat = totalamountwithoutvat;
   }
 
-  public Serviceoperationvariants totalAmountWithVAT(Double totalAmountWithVAT) {
-    this.totalAmountWithVAT = totalAmountWithVAT;
+  public Serviceoperationvariants totalamountwithvat(Double totalamountwithvat) {
+    this.totalamountwithvat = totalamountwithvat;
     return this;
   }
 
    /**
-   * Celkem s DPH
-   * @return totalAmountWithVAT
+   * celkem s dph
+   * @return totalamountwithvat
   **/
-  @ApiModelProperty(example = "null", value = "Celkem s DPH")
-  public Double getTotalAmountWithVAT() {
-    return totalAmountWithVAT;
+  @ApiModelProperty(example = "null", value = "celkem s dph")
+  public Double getTotalamountwithvat() {
+    return totalamountwithvat;
   }
 
-  public void setTotalAmountWithVAT(Double totalAmountWithVAT) {
-    this.totalAmountWithVAT = totalAmountWithVAT;
+  public void setTotalamountwithvat(Double totalamountwithvat) {
+    this.totalamountwithvat = totalamountwithvat;
   }
 
 
@@ -295,25 +340,25 @@ public class Serviceoperationvariants   {
       return false;
     }
     Serviceoperationvariants serviceoperationvariants = (Serviceoperationvariants) o;
-    return Objects.equals(this.displayName, serviceoperationvariants.displayName) &&
-        Objects.equals(this.ID, serviceoperationvariants.ID) &&
-        Objects.equals(this.classID, serviceoperationvariants.classID) &&
-        Objects.equals(this.objVersion, serviceoperationvariants.objVersion) &&
-        Objects.equals(this.parentID, serviceoperationvariants.parentID) &&
-        Objects.equals(this.serviceObjectTypeID, serviceoperationvariants.serviceObjectTypeID) &&
-        Objects.equals(this.storeCardID, serviceoperationvariants.storeCardID) &&
-        Objects.equals(this.qUnit, serviceoperationvariants.qUnit) &&
-        Objects.equals(this.unitRate, serviceoperationvariants.unitRate) &&
-        Objects.equals(this.workHoursPlanned, serviceoperationvariants.workHoursPlanned) &&
+    return Objects.equals(this.displayname, serviceoperationvariants.displayname) &&
+        Objects.equals(this.id, serviceoperationvariants.id) &&
+        Objects.equals(this.classid, serviceoperationvariants.classid) &&
+        Objects.equals(this.objversion, serviceoperationvariants.objversion) &&
+        Objects.equals(this.parentId, serviceoperationvariants.parentId) &&
+        Objects.equals(this.serviceobjecttypeId, serviceoperationvariants.serviceobjecttypeId) &&
+        Objects.equals(this.storecardId, serviceoperationvariants.storecardId) &&
+        Objects.equals(this.qunit, serviceoperationvariants.qunit) &&
+        Objects.equals(this.unitrate, serviceoperationvariants.unitrate) &&
+        Objects.equals(this.workhoursplanned, serviceoperationvariants.workhoursplanned) &&
         Objects.equals(this.quantity, serviceoperationvariants.quantity) &&
-        Objects.equals(this.vATRateID, serviceoperationvariants.vATRateID) &&
-        Objects.equals(this.totalAmountWithoutVAT, serviceoperationvariants.totalAmountWithoutVAT) &&
-        Objects.equals(this.totalAmountWithVAT, serviceoperationvariants.totalAmountWithVAT);
+        Objects.equals(this.vatrateId, serviceoperationvariants.vatrateId) &&
+        Objects.equals(this.totalamountwithoutvat, serviceoperationvariants.totalamountwithoutvat) &&
+        Objects.equals(this.totalamountwithvat, serviceoperationvariants.totalamountwithvat);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, serviceObjectTypeID, storeCardID, qUnit, unitRate, workHoursPlanned, quantity, vATRateID, totalAmountWithoutVAT, totalAmountWithVAT);
+    return Objects.hash(displayname, id, classid, objversion, parentId, serviceobjecttypeId, storecardId, qunit, unitrate, workhoursplanned, quantity, vatrateId, totalamountwithoutvat, totalamountwithvat);
   }
 
   @Override
@@ -321,20 +366,20 @@ public class Serviceoperationvariants   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Serviceoperationvariants {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    serviceObjectTypeID: ").append(toIndentedString(serviceObjectTypeID)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    workHoursPlanned: ").append(toIndentedString(workHoursPlanned)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    serviceobjecttypeId: ").append(toIndentedString(serviceobjecttypeId)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    workhoursplanned: ").append(toIndentedString(workhoursplanned)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    vATRateID: ").append(toIndentedString(vATRateID)).append("\n");
-    sb.append("    totalAmountWithoutVAT: ").append(toIndentedString(totalAmountWithoutVAT)).append("\n");
-    sb.append("    totalAmountWithVAT: ").append(toIndentedString(totalAmountWithVAT)).append("\n");
+    sb.append("    vatrateId: ").append(toIndentedString(vatrateId)).append("\n");
+    sb.append("    totalamountwithoutvat: ").append(toIndentedString(totalamountwithoutvat)).append("\n");
+    sb.append("    totalamountwithvat: ").append(toIndentedString(totalamountwithvat)).append("\n");
     sb.append("}");
     return sb.toString();
   }

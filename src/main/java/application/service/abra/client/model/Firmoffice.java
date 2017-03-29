@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,159 +34,204 @@ import java.util.Objects;
 /**
  * Firmoffice
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Firmoffice   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Address_ID")
-  private Firmoffice addressID = null;
+  @SerializedName("address_id")
+  private Firmoffice addressId = null;
 
-  @SerializedName("MassCorrespondence")
-  private Boolean massCorrespondence = null;
+  @SerializedName("masscorrespondence")
+  private Boolean masscorrespondence = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("SynchronizeAddress")
-  private Boolean synchronizeAddress = null;
+  @SerializedName("synchronizeaddress")
+  private Boolean synchronizeaddress = null;
 
-  @SerializedName("Credit")
+  @SerializedName("credit")
   private Double credit = null;
 
-  @SerializedName("CheckCredit")
-  private Boolean checkCredit = null;
+  @SerializedName("checkcredit")
+  private Boolean checkcredit = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("DealerCategory_ID")
-  private String dealerCategoryID = null;
+  @SerializedName("dealercategory_id")
+  private String dealercategoryId = null;
 
-  @SerializedName("OfficeUnique_ID")
-  private String officeUniqueID = null;
+  @SerializedName("officeunique_id")
+  private String officeuniqueId = null;
 
-  @SerializedName("LastChild_ID")
-  private String lastChildID = null;
+  @SerializedName("lastchild_id")
+  private String lastchildId = null;
 
-  @SerializedName("OfficeIdentNumber")
-  private String officeIdentNumber = null;
+  @SerializedName("officeidentnumber")
+  private String officeidentnumber = null;
 
-  @SerializedName("ElectronicAddress_ID")
-  private Firmoffice electronicAddressID = null;
+  @SerializedName("electronicaddress_id")
+  private Firmoffice electronicaddressId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Firma [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Firma [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Firmoffice posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Firmoffice displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Firmoffice addressID(Firmoffice addressID) {
-    this.addressID = addressID;
+  public Firmoffice id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Get addressID
-   * @return addressID
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Firmoffice classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Firmoffice objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Firmoffice parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu firma [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu firma [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Firmoffice posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Firmoffice addressId(Firmoffice addressId) {
+    this.addressId = addressId;
+    return this;
+  }
+
+   /**
+   * Get addressId
+   * @return addressId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Firmoffice getAddressID() {
-    return addressID;
+  public Firmoffice getAddressId() {
+    return addressId;
   }
 
-  public void setAddressID(Firmoffice addressID) {
-    this.addressID = addressID;
+  public void setAddressId(Firmoffice addressId) {
+    this.addressId = addressId;
   }
 
-  public Firmoffice massCorrespondence(Boolean massCorrespondence) {
-    this.massCorrespondence = massCorrespondence;
+  public Firmoffice masscorrespondence(Boolean masscorrespondence) {
+    this.masscorrespondence = masscorrespondence;
     return this;
   }
 
    /**
-   * Hromadná korespondence [persistentní položka]
-   * @return massCorrespondence
+   * hromadná korespondence [persistentní položka]
+   * @return masscorrespondence
   **/
-  @ApiModelProperty(example = "null", value = "Hromadná korespondence [persistentní položka]")
-  public Boolean getMassCorrespondence() {
-    return massCorrespondence;
+  @ApiModelProperty(example = "null", value = "hromadná korespondence [persistentní položka]")
+  public Boolean getMasscorrespondence() {
+    return masscorrespondence;
   }
 
-  public void setMassCorrespondence(Boolean massCorrespondence) {
-    this.massCorrespondence = massCorrespondence;
+  public void setMasscorrespondence(Boolean masscorrespondence) {
+    this.masscorrespondence = masscorrespondence;
   }
 
   public Firmoffice name(String name) {
@@ -195,10 +240,10 @@ public class Firmoffice   {
   }
 
    /**
-   * Název provozovny [persistentní položka]
+   * název provozovny [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název provozovny [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název provozovny [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -207,22 +252,22 @@ public class Firmoffice   {
     this.name = name;
   }
 
-  public Firmoffice synchronizeAddress(Boolean synchronizeAddress) {
-    this.synchronizeAddress = synchronizeAddress;
+  public Firmoffice synchronizeaddress(Boolean synchronizeaddress) {
+    this.synchronizeaddress = synchronizeaddress;
     return this;
   }
 
    /**
-   * Synchronizovat [persistentní položka]
-   * @return synchronizeAddress
+   * synchronizovat [persistentní položka]
+   * @return synchronizeaddress
   **/
-  @ApiModelProperty(example = "null", value = "Synchronizovat [persistentní položka]")
-  public Boolean getSynchronizeAddress() {
-    return synchronizeAddress;
+  @ApiModelProperty(example = "null", value = "synchronizovat [persistentní položka]")
+  public Boolean getSynchronizeaddress() {
+    return synchronizeaddress;
   }
 
-  public void setSynchronizeAddress(Boolean synchronizeAddress) {
-    this.synchronizeAddress = synchronizeAddress;
+  public void setSynchronizeaddress(Boolean synchronizeaddress) {
+    this.synchronizeaddress = synchronizeaddress;
   }
 
   public Firmoffice credit(Double credit) {
@@ -231,10 +276,10 @@ public class Firmoffice   {
   }
 
    /**
-   * Kredit [persistentní položka]
+   * kredit [persistentní položka]
    * @return credit
   **/
-  @ApiModelProperty(example = "null", value = "Kredit [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kredit [persistentní položka]")
   public Double getCredit() {
     return credit;
   }
@@ -243,130 +288,130 @@ public class Firmoffice   {
     this.credit = credit;
   }
 
-  public Firmoffice checkCredit(Boolean checkCredit) {
-    this.checkCredit = checkCredit;
+  public Firmoffice checkcredit(Boolean checkcredit) {
+    this.checkcredit = checkcredit;
     return this;
   }
 
    /**
-   * Sledovat kredit [persistentní položka]
-   * @return checkCredit
+   * sledovat kredit [persistentní položka]
+   * @return checkcredit
   **/
-  @ApiModelProperty(example = "null", value = "Sledovat kredit [persistentní položka]")
-  public Boolean getCheckCredit() {
-    return checkCredit;
+  @ApiModelProperty(example = "null", value = "sledovat kredit [persistentní položka]")
+  public Boolean getCheckcredit() {
+    return checkcredit;
   }
 
-  public void setCheckCredit(Boolean checkCredit) {
-    this.checkCredit = checkCredit;
+  public void setCheckcredit(Boolean checkcredit) {
+    this.checkcredit = checkcredit;
   }
 
-  public Firmoffice storeID(String storeID) {
-    this.storeID = storeID;
+  public Firmoffice storeId(String storeId) {
+    this.storeId = storeId;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
-  public Firmoffice dealerCategoryID(String dealerCategoryID) {
-    this.dealerCategoryID = dealerCategoryID;
+  public Firmoffice dealercategoryId(String dealercategoryId) {
+    this.dealercategoryId = dealercategoryId;
     return this;
   }
 
    /**
-   * Dealerská třída; ID objektu Dealerská třída [persistentní položka]
-   * @return dealerCategoryID
+   * dealerská třída; id objektu dealerská třída [persistentní položka]
+   * @return dealercategoryId
   **/
-  @ApiModelProperty(example = "null", value = "Dealerská třída; ID objektu Dealerská třída [persistentní položka]")
-  public String getDealerCategoryID() {
-    return dealerCategoryID;
+  @ApiModelProperty(example = "null", value = "dealerská třída; id objektu dealerská třída [persistentní položka]")
+  public String getDealercategoryId() {
+    return dealercategoryId;
   }
 
-  public void setDealerCategoryID(String dealerCategoryID) {
-    this.dealerCategoryID = dealerCategoryID;
+  public void setDealercategoryId(String dealercategoryId) {
+    this.dealercategoryId = dealercategoryId;
   }
 
-  public Firmoffice officeUniqueID(String officeUniqueID) {
-    this.officeUniqueID = officeUniqueID;
+  public Firmoffice officeuniqueId(String officeuniqueId) {
+    this.officeuniqueId = officeuniqueId;
     return this;
   }
 
    /**
-   * Interní identifikátor provozovny [persistentní položka]
-   * @return officeUniqueID
+   * interní identifikátor provozovny [persistentní položka]
+   * @return officeuniqueId
   **/
-  @ApiModelProperty(example = "null", value = "Interní identifikátor provozovny [persistentní položka]")
-  public String getOfficeUniqueID() {
-    return officeUniqueID;
+  @ApiModelProperty(example = "null", value = "interní identifikátor provozovny [persistentní položka]")
+  public String getOfficeuniqueId() {
+    return officeuniqueId;
   }
 
-  public void setOfficeUniqueID(String officeUniqueID) {
-    this.officeUniqueID = officeUniqueID;
+  public void setOfficeuniqueId(String officeuniqueId) {
+    this.officeuniqueId = officeuniqueId;
   }
 
-  public Firmoffice lastChildID(String lastChildID) {
-    this.lastChildID = lastChildID;
+  public Firmoffice lastchildId(String lastchildId) {
+    this.lastchildId = lastchildId;
     return this;
   }
 
    /**
-   * Potomek; ID objektu Provozovna
-   * @return lastChildID
+   * potomek; id objektu provozovna
+   * @return lastchildId
   **/
-  @ApiModelProperty(example = "null", value = "Potomek; ID objektu Provozovna")
-  public String getLastChildID() {
-    return lastChildID;
+  @ApiModelProperty(example = "null", value = "potomek; id objektu provozovna")
+  public String getLastchildId() {
+    return lastchildId;
   }
 
-  public void setLastChildID(String lastChildID) {
-    this.lastChildID = lastChildID;
+  public void setLastchildId(String lastchildId) {
+    this.lastchildId = lastchildId;
   }
 
-  public Firmoffice officeIdentNumber(String officeIdentNumber) {
-    this.officeIdentNumber = officeIdentNumber;
+  public Firmoffice officeidentnumber(String officeidentnumber) {
+    this.officeidentnumber = officeidentnumber;
     return this;
   }
 
    /**
-   * IČP [persistentní položka]
-   * @return officeIdentNumber
+   * iČp [persistentní položka]
+   * @return officeidentnumber
   **/
-  @ApiModelProperty(example = "null", value = "IČP [persistentní položka]")
-  public String getOfficeIdentNumber() {
-    return officeIdentNumber;
+  @ApiModelProperty(example = "null", value = "iČp [persistentní položka]")
+  public String getOfficeidentnumber() {
+    return officeidentnumber;
   }
 
-  public void setOfficeIdentNumber(String officeIdentNumber) {
-    this.officeIdentNumber = officeIdentNumber;
+  public void setOfficeidentnumber(String officeidentnumber) {
+    this.officeidentnumber = officeidentnumber;
   }
 
-  public Firmoffice electronicAddressID(Firmoffice electronicAddressID) {
-    this.electronicAddressID = electronicAddressID;
+  public Firmoffice electronicaddressId(Firmoffice electronicaddressId) {
+    this.electronicaddressId = electronicaddressId;
     return this;
   }
 
    /**
-   * Get electronicAddressID
-   * @return electronicAddressID
+   * Get electronicaddressId
+   * @return electronicaddressId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Firmoffice getElectronicAddressID() {
-    return electronicAddressID;
+  public Firmoffice getElectronicaddressId() {
+    return electronicaddressId;
   }
 
-  public void setElectronicAddressID(Firmoffice electronicAddressID) {
-    this.electronicAddressID = electronicAddressID;
+  public void setElectronicaddressId(Firmoffice electronicaddressId) {
+    this.electronicaddressId = electronicaddressId;
   }
 
 
@@ -379,29 +424,29 @@ public class Firmoffice   {
       return false;
     }
     Firmoffice firmoffice = (Firmoffice) o;
-    return Objects.equals(this.displayName, firmoffice.displayName) &&
-        Objects.equals(this.ID, firmoffice.ID) &&
-        Objects.equals(this.classID, firmoffice.classID) &&
-        Objects.equals(this.objVersion, firmoffice.objVersion) &&
-        Objects.equals(this.parentID, firmoffice.parentID) &&
-        Objects.equals(this.posIndex, firmoffice.posIndex) &&
-        Objects.equals(this.addressID, firmoffice.addressID) &&
-        Objects.equals(this.massCorrespondence, firmoffice.massCorrespondence) &&
+    return Objects.equals(this.displayname, firmoffice.displayname) &&
+        Objects.equals(this.id, firmoffice.id) &&
+        Objects.equals(this.classid, firmoffice.classid) &&
+        Objects.equals(this.objversion, firmoffice.objversion) &&
+        Objects.equals(this.parentId, firmoffice.parentId) &&
+        Objects.equals(this.posindex, firmoffice.posindex) &&
+        Objects.equals(this.addressId, firmoffice.addressId) &&
+        Objects.equals(this.masscorrespondence, firmoffice.masscorrespondence) &&
         Objects.equals(this.name, firmoffice.name) &&
-        Objects.equals(this.synchronizeAddress, firmoffice.synchronizeAddress) &&
+        Objects.equals(this.synchronizeaddress, firmoffice.synchronizeaddress) &&
         Objects.equals(this.credit, firmoffice.credit) &&
-        Objects.equals(this.checkCredit, firmoffice.checkCredit) &&
-        Objects.equals(this.storeID, firmoffice.storeID) &&
-        Objects.equals(this.dealerCategoryID, firmoffice.dealerCategoryID) &&
-        Objects.equals(this.officeUniqueID, firmoffice.officeUniqueID) &&
-        Objects.equals(this.lastChildID, firmoffice.lastChildID) &&
-        Objects.equals(this.officeIdentNumber, firmoffice.officeIdentNumber) &&
-        Objects.equals(this.electronicAddressID, firmoffice.electronicAddressID);
+        Objects.equals(this.checkcredit, firmoffice.checkcredit) &&
+        Objects.equals(this.storeId, firmoffice.storeId) &&
+        Objects.equals(this.dealercategoryId, firmoffice.dealercategoryId) &&
+        Objects.equals(this.officeuniqueId, firmoffice.officeuniqueId) &&
+        Objects.equals(this.lastchildId, firmoffice.lastchildId) &&
+        Objects.equals(this.officeidentnumber, firmoffice.officeidentnumber) &&
+        Objects.equals(this.electronicaddressId, firmoffice.electronicaddressId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, addressID, massCorrespondence, name, synchronizeAddress, credit, checkCredit, storeID, dealerCategoryID, officeUniqueID, lastChildID, officeIdentNumber, electronicAddressID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, addressId, masscorrespondence, name, synchronizeaddress, credit, checkcredit, storeId, dealercategoryId, officeuniqueId, lastchildId, officeidentnumber, electronicaddressId);
   }
 
   @Override
@@ -409,24 +454,24 @@ public class Firmoffice   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Firmoffice {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    addressID: ").append(toIndentedString(addressID)).append("\n");
-    sb.append("    massCorrespondence: ").append(toIndentedString(massCorrespondence)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    addressId: ").append(toIndentedString(addressId)).append("\n");
+    sb.append("    masscorrespondence: ").append(toIndentedString(masscorrespondence)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    synchronizeAddress: ").append(toIndentedString(synchronizeAddress)).append("\n");
+    sb.append("    synchronizeaddress: ").append(toIndentedString(synchronizeaddress)).append("\n");
     sb.append("    credit: ").append(toIndentedString(credit)).append("\n");
-    sb.append("    checkCredit: ").append(toIndentedString(checkCredit)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    dealerCategoryID: ").append(toIndentedString(dealerCategoryID)).append("\n");
-    sb.append("    officeUniqueID: ").append(toIndentedString(officeUniqueID)).append("\n");
-    sb.append("    lastChildID: ").append(toIndentedString(lastChildID)).append("\n");
-    sb.append("    officeIdentNumber: ").append(toIndentedString(officeIdentNumber)).append("\n");
-    sb.append("    electronicAddressID: ").append(toIndentedString(electronicAddressID)).append("\n");
+    sb.append("    checkcredit: ").append(toIndentedString(checkcredit)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    dealercategoryId: ").append(toIndentedString(dealercategoryId)).append("\n");
+    sb.append("    officeuniqueId: ").append(toIndentedString(officeuniqueId)).append("\n");
+    sb.append("    lastchildId: ").append(toIndentedString(lastchildId)).append("\n");
+    sb.append("    officeidentnumber: ").append(toIndentedString(officeidentnumber)).append("\n");
+    sb.append("    electronicaddressId: ").append(toIndentedString(electronicaddressId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,78 +36,114 @@ import java.util.Objects;
 /**
  * Wsoperation
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wsoperation   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Wsoperationrow> rows = new ArrayList<Wsoperationrow>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("MethodType")
-  private Integer methodType = null;
+  @SerializedName("methodtype")
+  private Integer methodtype = null;
 
-  @SerializedName("SCRPackageName")
-  private String sCRPackageName = null;
+  @SerializedName("scrpackagename")
+  private String scrpackagename = null;
 
-  @SerializedName("SCRLibraryName")
-  private String sCRLibraryName = null;
+  @SerializedName("scrlibraryname")
+  private String scrlibraryname = null;
 
-  @SerializedName("SCRMethodName")
-  private String sCRMethodName = null;
+  @SerializedName("scrmethodname")
+  private String scrmethodname = null;
 
-  @SerializedName("SCRDescription")
-  private String sCRDescription = null;
+  @SerializedName("scrdescription")
+  private String scrdescription = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Wsoperation displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wsoperation id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wsoperation classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wsoperation objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Wsoperation rows(List<Wsoperationrow> rows) {
@@ -121,10 +157,10 @@ public class Wsoperation   {
   }
 
    /**
-   * Řádky; kolekce BO Operace pro webovou službu - parametr [nepersistentní položka]
+   * Řádky; kolekce bo operace pro webovou službu - parametr [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Operace pro webovou službu - parametr [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo operace pro webovou službu - parametr [nepersistentní položka]")
   public List<Wsoperationrow> getRows() {
     return rows;
   }
@@ -139,10 +175,10 @@ public class Wsoperation   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -157,10 +193,10 @@ public class Wsoperation   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -169,94 +205,94 @@ public class Wsoperation   {
     this.name = name;
   }
 
-  public Wsoperation methodType(Integer methodType) {
-    this.methodType = methodType;
+  public Wsoperation methodtype(Integer methodtype) {
+    this.methodtype = methodtype;
     return this;
   }
 
    /**
-   * Typ operace [persistentní položka]
-   * @return methodType
+   * typ operace [persistentní položka]
+   * @return methodtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ operace [persistentní položka]")
-  public Integer getMethodType() {
-    return methodType;
+  @ApiModelProperty(example = "null", value = "typ operace [persistentní položka]")
+  public Integer getMethodtype() {
+    return methodtype;
   }
 
-  public void setMethodType(Integer methodType) {
-    this.methodType = methodType;
+  public void setMethodtype(Integer methodtype) {
+    this.methodtype = methodtype;
   }
 
-  public Wsoperation sCRPackageName(String sCRPackageName) {
-    this.sCRPackageName = sCRPackageName;
+  public Wsoperation scrpackagename(String scrpackagename) {
+    this.scrpackagename = scrpackagename;
     return this;
   }
 
    /**
-   * Jméno balíčku [persistentní položka]
-   * @return sCRPackageName
+   * jméno balíčku [persistentní položka]
+   * @return scrpackagename
   **/
-  @ApiModelProperty(example = "null", value = "Jméno balíčku [persistentní položka]")
-  public String getSCRPackageName() {
-    return sCRPackageName;
+  @ApiModelProperty(example = "null", value = "jméno balíčku [persistentní položka]")
+  public String getScrpackagename() {
+    return scrpackagename;
   }
 
-  public void setSCRPackageName(String sCRPackageName) {
-    this.sCRPackageName = sCRPackageName;
+  public void setScrpackagename(String scrpackagename) {
+    this.scrpackagename = scrpackagename;
   }
 
-  public Wsoperation sCRLibraryName(String sCRLibraryName) {
-    this.sCRLibraryName = sCRLibraryName;
+  public Wsoperation scrlibraryname(String scrlibraryname) {
+    this.scrlibraryname = scrlibraryname;
     return this;
   }
 
    /**
-   * Jméno knihovny [persistentní položka]
-   * @return sCRLibraryName
+   * jméno knihovny [persistentní položka]
+   * @return scrlibraryname
   **/
-  @ApiModelProperty(example = "null", value = "Jméno knihovny [persistentní položka]")
-  public String getSCRLibraryName() {
-    return sCRLibraryName;
+  @ApiModelProperty(example = "null", value = "jméno knihovny [persistentní položka]")
+  public String getScrlibraryname() {
+    return scrlibraryname;
   }
 
-  public void setSCRLibraryName(String sCRLibraryName) {
-    this.sCRLibraryName = sCRLibraryName;
+  public void setScrlibraryname(String scrlibraryname) {
+    this.scrlibraryname = scrlibraryname;
   }
 
-  public Wsoperation sCRMethodName(String sCRMethodName) {
-    this.sCRMethodName = sCRMethodName;
+  public Wsoperation scrmethodname(String scrmethodname) {
+    this.scrmethodname = scrmethodname;
     return this;
   }
 
    /**
-   * Jméno metody [persistentní položka]
-   * @return sCRMethodName
+   * jméno metody [persistentní položka]
+   * @return scrmethodname
   **/
-  @ApiModelProperty(example = "null", value = "Jméno metody [persistentní položka]")
-  public String getSCRMethodName() {
-    return sCRMethodName;
+  @ApiModelProperty(example = "null", value = "jméno metody [persistentní položka]")
+  public String getScrmethodname() {
+    return scrmethodname;
   }
 
-  public void setSCRMethodName(String sCRMethodName) {
-    this.sCRMethodName = sCRMethodName;
+  public void setScrmethodname(String scrmethodname) {
+    this.scrmethodname = scrmethodname;
   }
 
-  public Wsoperation sCRDescription(String sCRDescription) {
-    this.sCRDescription = sCRDescription;
+  public Wsoperation scrdescription(String scrdescription) {
+    this.scrdescription = scrdescription;
     return this;
   }
 
    /**
-   * Identifikace skriptu
-   * @return sCRDescription
+   * identifikace skriptu
+   * @return scrdescription
   **/
-  @ApiModelProperty(example = "null", value = "Identifikace skriptu")
-  public String getSCRDescription() {
-    return sCRDescription;
+  @ApiModelProperty(example = "null", value = "identifikace skriptu")
+  public String getScrdescription() {
+    return scrdescription;
   }
 
-  public void setSCRDescription(String sCRDescription) {
-    this.sCRDescription = sCRDescription;
+  public void setScrdescription(String scrdescription) {
+    this.scrdescription = scrdescription;
   }
 
 
@@ -269,23 +305,23 @@ public class Wsoperation   {
       return false;
     }
     Wsoperation wsoperation = (Wsoperation) o;
-    return Objects.equals(this.displayName, wsoperation.displayName) &&
-        Objects.equals(this.ID, wsoperation.ID) &&
-        Objects.equals(this.classID, wsoperation.classID) &&
-        Objects.equals(this.objVersion, wsoperation.objVersion) &&
+    return Objects.equals(this.displayname, wsoperation.displayname) &&
+        Objects.equals(this.id, wsoperation.id) &&
+        Objects.equals(this.classid, wsoperation.classid) &&
+        Objects.equals(this.objversion, wsoperation.objversion) &&
         Objects.equals(this.rows, wsoperation.rows) &&
         Objects.equals(this.hidden, wsoperation.hidden) &&
         Objects.equals(this.name, wsoperation.name) &&
-        Objects.equals(this.methodType, wsoperation.methodType) &&
-        Objects.equals(this.sCRPackageName, wsoperation.sCRPackageName) &&
-        Objects.equals(this.sCRLibraryName, wsoperation.sCRLibraryName) &&
-        Objects.equals(this.sCRMethodName, wsoperation.sCRMethodName) &&
-        Objects.equals(this.sCRDescription, wsoperation.sCRDescription);
+        Objects.equals(this.methodtype, wsoperation.methodtype) &&
+        Objects.equals(this.scrpackagename, wsoperation.scrpackagename) &&
+        Objects.equals(this.scrlibraryname, wsoperation.scrlibraryname) &&
+        Objects.equals(this.scrmethodname, wsoperation.scrmethodname) &&
+        Objects.equals(this.scrdescription, wsoperation.scrdescription);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, name, methodType, sCRPackageName, sCRLibraryName, sCRMethodName, sCRDescription);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, name, methodtype, scrpackagename, scrlibraryname, scrmethodname, scrdescription);
   }
 
   @Override
@@ -293,18 +329,18 @@ public class Wsoperation   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wsoperation {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    methodType: ").append(toIndentedString(methodType)).append("\n");
-    sb.append("    sCRPackageName: ").append(toIndentedString(sCRPackageName)).append("\n");
-    sb.append("    sCRLibraryName: ").append(toIndentedString(sCRLibraryName)).append("\n");
-    sb.append("    sCRMethodName: ").append(toIndentedString(sCRMethodName)).append("\n");
-    sb.append("    sCRDescription: ").append(toIndentedString(sCRDescription)).append("\n");
+    sb.append("    methodtype: ").append(toIndentedString(methodtype)).append("\n");
+    sb.append("    scrpackagename: ").append(toIndentedString(scrpackagename)).append("\n");
+    sb.append("    scrlibraryname: ").append(toIndentedString(scrlibraryname)).append("\n");
+    sb.append("    scrmethodname: ").append(toIndentedString(scrmethodname)).append("\n");
+    sb.append("    scrdescription: ").append(toIndentedString(scrdescription)).append("\n");
     sb.append("}");
     return sb.toString();
   }

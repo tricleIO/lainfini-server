@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,318 +34,363 @@ import java.util.Objects;
 /**
  * Workinginjuryrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Workinginjuryrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("WagePeriod_ID")
-  private String wagePeriodID = null;
+  @SerializedName("wageperiod_id")
+  private String wageperiodId = null;
 
-  @SerializedName("S_SicknessComp")
-  private Double sSicknessComp = null;
+  @SerializedName("s_sicknesscomp")
+  private Double sSicknesscomp = null;
 
-  @SerializedName("S_AfterSicknessComp")
-  private Double sAfterSicknessComp = null;
+  @SerializedName("s_aftersicknesscomp")
+  private Double sAftersicknesscomp = null;
 
-  @SerializedName("S_TherapyCostComp")
-  private Double sTherapyCostComp = null;
+  @SerializedName("s_therapycostcomp")
+  private Double sTherapycostcomp = null;
 
-  @SerializedName("S_DamagesComp")
-  private Double sDamagesComp = null;
+  @SerializedName("s_damagescomp")
+  private Double sDamagescomp = null;
 
-  @SerializedName("S_CureCostComp")
-  private Double sCureCostComp = null;
+  @SerializedName("s_curecostcomp")
+  private Double sCurecostcomp = null;
 
-  @SerializedName("S_FuneralComp")
-  private Double sFuneralComp = null;
+  @SerializedName("s_funeralcomp")
+  private Double sFuneralcomp = null;
 
-  @SerializedName("S_ResidualFeedComp")
-  private Double sResidualFeedComp = null;
+  @SerializedName("s_residualfeedcomp")
+  private Double sResidualfeedcomp = null;
 
-  @SerializedName("S_ResidualOneCaseComp")
-  private Double sResidualOneCaseComp = null;
+  @SerializedName("s_residualonecasecomp")
+  private Double sResidualonecasecomp = null;
 
-  @SerializedName("S_TotalComp")
-  private Double sTotalComp = null;
+  @SerializedName("s_totalcomp")
+  private Double sTotalcomp = null;
 
-  @SerializedName("S_ResidualDamagesComp")
-  private Double sResidualDamagesComp = null;
+  @SerializedName("s_residualdamagescomp")
+  private Double sResidualdamagescomp = null;
 
-  @SerializedName("S_PainAndSocialProblemsComp")
-  private Double sPainAndSocialProblemsComp = null;
+  @SerializedName("s_painandsocialproblemscomp")
+  private Double sPainandsocialproblemscomp = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Pracovní úraz [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Pracovní úraz [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Workinginjuryrow wagePeriodID(String wagePeriodID) {
-    this.wagePeriodID = wagePeriodID;
+  public Workinginjuryrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Mzdové období; ID objektu Mzdové období [persistentní položka]
-   * @return wagePeriodID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Mzdové období; ID objektu Mzdové období [persistentní položka]")
-  public String getWagePeriodID() {
-    return wagePeriodID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setWagePeriodID(String wagePeriodID) {
-    this.wagePeriodID = wagePeriodID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Workinginjuryrow sSicknessComp(Double sSicknessComp) {
-    this.sSicknessComp = sSicknessComp;
+  public Workinginjuryrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Náhrada po dobu prac. neschop. [persistentní položka]
-   * @return sSicknessComp
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Náhrada po dobu prac. neschop. [persistentní položka]")
-  public Double getSSicknessComp() {
-    return sSicknessComp;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setSSicknessComp(Double sSicknessComp) {
-    this.sSicknessComp = sSicknessComp;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Workinginjuryrow sAfterSicknessComp(Double sAfterSicknessComp) {
-    this.sAfterSicknessComp = sAfterSicknessComp;
+  public Workinginjuryrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Náhrada po prac. neschopnosti [persistentní položka]
-   * @return sAfterSicknessComp
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Náhrada po prac. neschopnosti [persistentní položka]")
-  public Double getSAfterSicknessComp() {
-    return sAfterSicknessComp;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setSAfterSicknessComp(Double sAfterSicknessComp) {
-    this.sAfterSicknessComp = sAfterSicknessComp;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Workinginjuryrow sTherapyCostComp(Double sTherapyCostComp) {
-    this.sTherapyCostComp = sTherapyCostComp;
+  public Workinginjuryrow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Náhrada nákladů léčení [persistentní položka]
-   * @return sTherapyCostComp
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Náhrada nákladů léčení [persistentní položka]")
-  public Double getSTherapyCostComp() {
-    return sTherapyCostComp;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setSTherapyCostComp(Double sTherapyCostComp) {
-    this.sTherapyCostComp = sTherapyCostComp;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Workinginjuryrow sDamagesComp(Double sDamagesComp) {
-    this.sDamagesComp = sDamagesComp;
+  public Workinginjuryrow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Náhrada věcné škody [persistentní položka]
-   * @return sDamagesComp
+   * vlastník; id objektu pracovní úraz [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Náhrada věcné škody [persistentní položka]")
-  public Double getSDamagesComp() {
-    return sDamagesComp;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu pracovní úraz [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setSDamagesComp(Double sDamagesComp) {
-    this.sDamagesComp = sDamagesComp;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Workinginjuryrow sCureCostComp(Double sCureCostComp) {
-    this.sCureCostComp = sCureCostComp;
+  public Workinginjuryrow wageperiodId(String wageperiodId) {
+    this.wageperiodId = wageperiodId;
     return this;
   }
 
    /**
-   * Náhrada nákladů léčení [persistentní položka]
-   * @return sCureCostComp
+   * mzdové období; id objektu mzdové období [persistentní položka]
+   * @return wageperiodId
   **/
-  @ApiModelProperty(example = "null", value = "Náhrada nákladů léčení [persistentní položka]")
-  public Double getSCureCostComp() {
-    return sCureCostComp;
+  @ApiModelProperty(example = "null", value = "mzdové období; id objektu mzdové období [persistentní položka]")
+  public String getWageperiodId() {
+    return wageperiodId;
   }
 
-  public void setSCureCostComp(Double sCureCostComp) {
-    this.sCureCostComp = sCureCostComp;
+  public void setWageperiodId(String wageperiodId) {
+    this.wageperiodId = wageperiodId;
   }
 
-  public Workinginjuryrow sFuneralComp(Double sFuneralComp) {
-    this.sFuneralComp = sFuneralComp;
+  public Workinginjuryrow sSicknesscomp(Double sSicknesscomp) {
+    this.sSicknesscomp = sSicknesscomp;
     return this;
   }
 
    /**
-   * Náhrada pohřbu [persistentní položka]
-   * @return sFuneralComp
+   * náhrada po dobu prac. neschop. [persistentní položka]
+   * @return sSicknesscomp
   **/
-  @ApiModelProperty(example = "null", value = "Náhrada pohřbu [persistentní položka]")
-  public Double getSFuneralComp() {
-    return sFuneralComp;
+  @ApiModelProperty(example = "null", value = "náhrada po dobu prac. neschop. [persistentní položka]")
+  public Double getSSicknesscomp() {
+    return sSicknesscomp;
   }
 
-  public void setSFuneralComp(Double sFuneralComp) {
-    this.sFuneralComp = sFuneralComp;
+  public void setSSicknesscomp(Double sSicknesscomp) {
+    this.sSicknesscomp = sSicknesscomp;
   }
 
-  public Workinginjuryrow sResidualFeedComp(Double sResidualFeedComp) {
-    this.sResidualFeedComp = sResidualFeedComp;
+  public Workinginjuryrow sAftersicknesscomp(Double sAftersicknesscomp) {
+    this.sAftersicknesscomp = sAftersicknesscomp;
     return this;
   }
 
    /**
-   * Náhrada na výživu pozůstalých [persistentní položka]
-   * @return sResidualFeedComp
+   * náhrada po prac. neschopnosti [persistentní položka]
+   * @return sAftersicknesscomp
   **/
-  @ApiModelProperty(example = "null", value = "Náhrada na výživu pozůstalých [persistentní položka]")
-  public Double getSResidualFeedComp() {
-    return sResidualFeedComp;
+  @ApiModelProperty(example = "null", value = "náhrada po prac. neschopnosti [persistentní položka]")
+  public Double getSAftersicknesscomp() {
+    return sAftersicknesscomp;
   }
 
-  public void setSResidualFeedComp(Double sResidualFeedComp) {
-    this.sResidualFeedComp = sResidualFeedComp;
+  public void setSAftersicknesscomp(Double sAftersicknesscomp) {
+    this.sAftersicknesscomp = sAftersicknesscomp;
   }
 
-  public Workinginjuryrow sResidualOneCaseComp(Double sResidualOneCaseComp) {
-    this.sResidualOneCaseComp = sResidualOneCaseComp;
+  public Workinginjuryrow sTherapycostcomp(Double sTherapycostcomp) {
+    this.sTherapycostcomp = sTherapycostcomp;
     return this;
   }
 
    /**
-   * Jednorázové odškod. pozůst. [persistentní položka]
-   * @return sResidualOneCaseComp
+   * náhrada nákladů léčení [persistentní položka]
+   * @return sTherapycostcomp
   **/
-  @ApiModelProperty(example = "null", value = "Jednorázové odškod. pozůst. [persistentní položka]")
-  public Double getSResidualOneCaseComp() {
-    return sResidualOneCaseComp;
+  @ApiModelProperty(example = "null", value = "náhrada nákladů léčení [persistentní položka]")
+  public Double getSTherapycostcomp() {
+    return sTherapycostcomp;
   }
 
-  public void setSResidualOneCaseComp(Double sResidualOneCaseComp) {
-    this.sResidualOneCaseComp = sResidualOneCaseComp;
+  public void setSTherapycostcomp(Double sTherapycostcomp) {
+    this.sTherapycostcomp = sTherapycostcomp;
   }
 
-  public Workinginjuryrow sTotalComp(Double sTotalComp) {
-    this.sTotalComp = sTotalComp;
+  public Workinginjuryrow sDamagescomp(Double sDamagescomp) {
+    this.sDamagescomp = sDamagescomp;
     return this;
   }
 
    /**
-   * Celková částka [persistentní položka]
-   * @return sTotalComp
+   * náhrada věcné škody [persistentní položka]
+   * @return sDamagescomp
   **/
-  @ApiModelProperty(example = "null", value = "Celková částka [persistentní položka]")
-  public Double getSTotalComp() {
-    return sTotalComp;
+  @ApiModelProperty(example = "null", value = "náhrada věcné škody [persistentní položka]")
+  public Double getSDamagescomp() {
+    return sDamagescomp;
   }
 
-  public void setSTotalComp(Double sTotalComp) {
-    this.sTotalComp = sTotalComp;
+  public void setSDamagescomp(Double sDamagescomp) {
+    this.sDamagescomp = sDamagescomp;
   }
 
-  public Workinginjuryrow sResidualDamagesComp(Double sResidualDamagesComp) {
-    this.sResidualDamagesComp = sResidualDamagesComp;
+  public Workinginjuryrow sCurecostcomp(Double sCurecostcomp) {
+    this.sCurecostcomp = sCurecostcomp;
     return this;
   }
 
    /**
-   * Náhrada věcné škody dědicům [persistentní položka]
-   * @return sResidualDamagesComp
+   * náhrada nákladů léčení [persistentní položka]
+   * @return sCurecostcomp
   **/
-  @ApiModelProperty(example = "null", value = "Náhrada věcné škody dědicům [persistentní položka]")
-  public Double getSResidualDamagesComp() {
-    return sResidualDamagesComp;
+  @ApiModelProperty(example = "null", value = "náhrada nákladů léčení [persistentní položka]")
+  public Double getSCurecostcomp() {
+    return sCurecostcomp;
   }
 
-  public void setSResidualDamagesComp(Double sResidualDamagesComp) {
-    this.sResidualDamagesComp = sResidualDamagesComp;
+  public void setSCurecostcomp(Double sCurecostcomp) {
+    this.sCurecostcomp = sCurecostcomp;
   }
 
-  public Workinginjuryrow sPainAndSocialProblemsComp(Double sPainAndSocialProblemsComp) {
-    this.sPainAndSocialProblemsComp = sPainAndSocialProblemsComp;
+  public Workinginjuryrow sFuneralcomp(Double sFuneralcomp) {
+    this.sFuneralcomp = sFuneralcomp;
     return this;
   }
 
    /**
-   * Náhr.za bolest a ztíž.uplat. [persistentní položka]
-   * @return sPainAndSocialProblemsComp
+   * náhrada pohřbu [persistentní položka]
+   * @return sFuneralcomp
   **/
-  @ApiModelProperty(example = "null", value = "Náhr.za bolest a ztíž.uplat. [persistentní položka]")
-  public Double getSPainAndSocialProblemsComp() {
-    return sPainAndSocialProblemsComp;
+  @ApiModelProperty(example = "null", value = "náhrada pohřbu [persistentní položka]")
+  public Double getSFuneralcomp() {
+    return sFuneralcomp;
   }
 
-  public void setSPainAndSocialProblemsComp(Double sPainAndSocialProblemsComp) {
-    this.sPainAndSocialProblemsComp = sPainAndSocialProblemsComp;
+  public void setSFuneralcomp(Double sFuneralcomp) {
+    this.sFuneralcomp = sFuneralcomp;
+  }
+
+  public Workinginjuryrow sResidualfeedcomp(Double sResidualfeedcomp) {
+    this.sResidualfeedcomp = sResidualfeedcomp;
+    return this;
+  }
+
+   /**
+   * náhrada na výživu pozůstalých [persistentní položka]
+   * @return sResidualfeedcomp
+  **/
+  @ApiModelProperty(example = "null", value = "náhrada na výživu pozůstalých [persistentní položka]")
+  public Double getSResidualfeedcomp() {
+    return sResidualfeedcomp;
+  }
+
+  public void setSResidualfeedcomp(Double sResidualfeedcomp) {
+    this.sResidualfeedcomp = sResidualfeedcomp;
+  }
+
+  public Workinginjuryrow sResidualonecasecomp(Double sResidualonecasecomp) {
+    this.sResidualonecasecomp = sResidualonecasecomp;
+    return this;
+  }
+
+   /**
+   * jednorázové odškod. pozůst. [persistentní položka]
+   * @return sResidualonecasecomp
+  **/
+  @ApiModelProperty(example = "null", value = "jednorázové odškod. pozůst. [persistentní položka]")
+  public Double getSResidualonecasecomp() {
+    return sResidualonecasecomp;
+  }
+
+  public void setSResidualonecasecomp(Double sResidualonecasecomp) {
+    this.sResidualonecasecomp = sResidualonecasecomp;
+  }
+
+  public Workinginjuryrow sTotalcomp(Double sTotalcomp) {
+    this.sTotalcomp = sTotalcomp;
+    return this;
+  }
+
+   /**
+   * celková částka [persistentní položka]
+   * @return sTotalcomp
+  **/
+  @ApiModelProperty(example = "null", value = "celková částka [persistentní položka]")
+  public Double getSTotalcomp() {
+    return sTotalcomp;
+  }
+
+  public void setSTotalcomp(Double sTotalcomp) {
+    this.sTotalcomp = sTotalcomp;
+  }
+
+  public Workinginjuryrow sResidualdamagescomp(Double sResidualdamagescomp) {
+    this.sResidualdamagescomp = sResidualdamagescomp;
+    return this;
+  }
+
+   /**
+   * náhrada věcné škody dědicům [persistentní položka]
+   * @return sResidualdamagescomp
+  **/
+  @ApiModelProperty(example = "null", value = "náhrada věcné škody dědicům [persistentní položka]")
+  public Double getSResidualdamagescomp() {
+    return sResidualdamagescomp;
+  }
+
+  public void setSResidualdamagescomp(Double sResidualdamagescomp) {
+    this.sResidualdamagescomp = sResidualdamagescomp;
+  }
+
+  public Workinginjuryrow sPainandsocialproblemscomp(Double sPainandsocialproblemscomp) {
+    this.sPainandsocialproblemscomp = sPainandsocialproblemscomp;
+    return this;
+  }
+
+   /**
+   * náhr.za bolest a ztíž.uplat. [persistentní položka]
+   * @return sPainandsocialproblemscomp
+  **/
+  @ApiModelProperty(example = "null", value = "náhr.za bolest a ztíž.uplat. [persistentní položka]")
+  public Double getSPainandsocialproblemscomp() {
+    return sPainandsocialproblemscomp;
+  }
+
+  public void setSPainandsocialproblemscomp(Double sPainandsocialproblemscomp) {
+    this.sPainandsocialproblemscomp = sPainandsocialproblemscomp;
   }
 
 
@@ -358,28 +403,28 @@ public class Workinginjuryrow   {
       return false;
     }
     Workinginjuryrow workinginjuryrow = (Workinginjuryrow) o;
-    return Objects.equals(this.displayName, workinginjuryrow.displayName) &&
-        Objects.equals(this.ID, workinginjuryrow.ID) &&
-        Objects.equals(this.classID, workinginjuryrow.classID) &&
-        Objects.equals(this.objVersion, workinginjuryrow.objVersion) &&
-        Objects.equals(this.parentID, workinginjuryrow.parentID) &&
-        Objects.equals(this.wagePeriodID, workinginjuryrow.wagePeriodID) &&
-        Objects.equals(this.sSicknessComp, workinginjuryrow.sSicknessComp) &&
-        Objects.equals(this.sAfterSicknessComp, workinginjuryrow.sAfterSicknessComp) &&
-        Objects.equals(this.sTherapyCostComp, workinginjuryrow.sTherapyCostComp) &&
-        Objects.equals(this.sDamagesComp, workinginjuryrow.sDamagesComp) &&
-        Objects.equals(this.sCureCostComp, workinginjuryrow.sCureCostComp) &&
-        Objects.equals(this.sFuneralComp, workinginjuryrow.sFuneralComp) &&
-        Objects.equals(this.sResidualFeedComp, workinginjuryrow.sResidualFeedComp) &&
-        Objects.equals(this.sResidualOneCaseComp, workinginjuryrow.sResidualOneCaseComp) &&
-        Objects.equals(this.sTotalComp, workinginjuryrow.sTotalComp) &&
-        Objects.equals(this.sResidualDamagesComp, workinginjuryrow.sResidualDamagesComp) &&
-        Objects.equals(this.sPainAndSocialProblemsComp, workinginjuryrow.sPainAndSocialProblemsComp);
+    return Objects.equals(this.displayname, workinginjuryrow.displayname) &&
+        Objects.equals(this.id, workinginjuryrow.id) &&
+        Objects.equals(this.classid, workinginjuryrow.classid) &&
+        Objects.equals(this.objversion, workinginjuryrow.objversion) &&
+        Objects.equals(this.parentId, workinginjuryrow.parentId) &&
+        Objects.equals(this.wageperiodId, workinginjuryrow.wageperiodId) &&
+        Objects.equals(this.sSicknesscomp, workinginjuryrow.sSicknesscomp) &&
+        Objects.equals(this.sAftersicknesscomp, workinginjuryrow.sAftersicknesscomp) &&
+        Objects.equals(this.sTherapycostcomp, workinginjuryrow.sTherapycostcomp) &&
+        Objects.equals(this.sDamagescomp, workinginjuryrow.sDamagescomp) &&
+        Objects.equals(this.sCurecostcomp, workinginjuryrow.sCurecostcomp) &&
+        Objects.equals(this.sFuneralcomp, workinginjuryrow.sFuneralcomp) &&
+        Objects.equals(this.sResidualfeedcomp, workinginjuryrow.sResidualfeedcomp) &&
+        Objects.equals(this.sResidualonecasecomp, workinginjuryrow.sResidualonecasecomp) &&
+        Objects.equals(this.sTotalcomp, workinginjuryrow.sTotalcomp) &&
+        Objects.equals(this.sResidualdamagescomp, workinginjuryrow.sResidualdamagescomp) &&
+        Objects.equals(this.sPainandsocialproblemscomp, workinginjuryrow.sPainandsocialproblemscomp);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, wagePeriodID, sSicknessComp, sAfterSicknessComp, sTherapyCostComp, sDamagesComp, sCureCostComp, sFuneralComp, sResidualFeedComp, sResidualOneCaseComp, sTotalComp, sResidualDamagesComp, sPainAndSocialProblemsComp);
+    return Objects.hash(displayname, id, classid, objversion, parentId, wageperiodId, sSicknesscomp, sAftersicknesscomp, sTherapycostcomp, sDamagescomp, sCurecostcomp, sFuneralcomp, sResidualfeedcomp, sResidualonecasecomp, sTotalcomp, sResidualdamagescomp, sPainandsocialproblemscomp);
   }
 
   @Override
@@ -387,23 +432,23 @@ public class Workinginjuryrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Workinginjuryrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    wagePeriodID: ").append(toIndentedString(wagePeriodID)).append("\n");
-    sb.append("    sSicknessComp: ").append(toIndentedString(sSicknessComp)).append("\n");
-    sb.append("    sAfterSicknessComp: ").append(toIndentedString(sAfterSicknessComp)).append("\n");
-    sb.append("    sTherapyCostComp: ").append(toIndentedString(sTherapyCostComp)).append("\n");
-    sb.append("    sDamagesComp: ").append(toIndentedString(sDamagesComp)).append("\n");
-    sb.append("    sCureCostComp: ").append(toIndentedString(sCureCostComp)).append("\n");
-    sb.append("    sFuneralComp: ").append(toIndentedString(sFuneralComp)).append("\n");
-    sb.append("    sResidualFeedComp: ").append(toIndentedString(sResidualFeedComp)).append("\n");
-    sb.append("    sResidualOneCaseComp: ").append(toIndentedString(sResidualOneCaseComp)).append("\n");
-    sb.append("    sTotalComp: ").append(toIndentedString(sTotalComp)).append("\n");
-    sb.append("    sResidualDamagesComp: ").append(toIndentedString(sResidualDamagesComp)).append("\n");
-    sb.append("    sPainAndSocialProblemsComp: ").append(toIndentedString(sPainAndSocialProblemsComp)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    wageperiodId: ").append(toIndentedString(wageperiodId)).append("\n");
+    sb.append("    sSicknesscomp: ").append(toIndentedString(sSicknesscomp)).append("\n");
+    sb.append("    sAftersicknesscomp: ").append(toIndentedString(sAftersicknesscomp)).append("\n");
+    sb.append("    sTherapycostcomp: ").append(toIndentedString(sTherapycostcomp)).append("\n");
+    sb.append("    sDamagescomp: ").append(toIndentedString(sDamagescomp)).append("\n");
+    sb.append("    sCurecostcomp: ").append(toIndentedString(sCurecostcomp)).append("\n");
+    sb.append("    sFuneralcomp: ").append(toIndentedString(sFuneralcomp)).append("\n");
+    sb.append("    sResidualfeedcomp: ").append(toIndentedString(sResidualfeedcomp)).append("\n");
+    sb.append("    sResidualonecasecomp: ").append(toIndentedString(sResidualonecasecomp)).append("\n");
+    sb.append("    sTotalcomp: ").append(toIndentedString(sTotalcomp)).append("\n");
+    sb.append("    sResidualdamagescomp: ").append(toIndentedString(sResidualdamagescomp)).append("\n");
+    sb.append("    sPainandsocialproblemscomp: ").append(toIndentedString(sPainandsocialproblemscomp)).append("\n");
     sb.append("}");
     return sb.toString();
   }

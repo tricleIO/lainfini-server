@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,150 +34,195 @@ import java.util.Objects;
 /**
  * Emailprocessingruleaction
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Emailprocessingruleaction   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("ActionType")
-  private Integer actionType = null;
+  @SerializedName("actiontype")
+  private Integer actiontype = null;
 
-  @SerializedName("ActionTypeStr")
-  private String actionTypeStr = null;
+  @SerializedName("actiontypestr")
+  private String actiontypestr = null;
 
-  @SerializedName("ActionParams")
-  private byte[] actionParams = null;
+  @SerializedName("actionparams")
+  private byte[] actionparams = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Hlavičkový objekt [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Hlavičkový objekt [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Emailprocessingruleaction posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Emailprocessingruleaction displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Emailprocessingruleaction actionType(Integer actionType) {
-    this.actionType = actionType;
+  public Emailprocessingruleaction id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return actionType
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getActionType() {
-    return actionType;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setActionType(Integer actionType) {
-    this.actionType = actionType;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Emailprocessingruleaction actionTypeStr(String actionTypeStr) {
-    this.actionTypeStr = actionTypeStr;
+  public Emailprocessingruleaction classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Popis typu
-   * @return actionTypeStr
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Popis typu")
-  public String getActionTypeStr() {
-    return actionTypeStr;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setActionTypeStr(String actionTypeStr) {
-    this.actionTypeStr = actionTypeStr;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Emailprocessingruleaction actionParams(byte[] actionParams) {
-    this.actionParams = actionParams;
+  public Emailprocessingruleaction objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Parametry [persistentní položka]
-   * @return actionParams
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Parametry [persistentní položka]")
-  public byte[] getActionParams() {
-    return actionParams;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setActionParams(byte[] actionParams) {
-    this.actionParams = actionParams;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Emailprocessingruleaction parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu hlavičkový objekt [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu hlavičkový objekt [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Emailprocessingruleaction posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Emailprocessingruleaction actiontype(Integer actiontype) {
+    this.actiontype = actiontype;
+    return this;
+  }
+
+   /**
+   * typ [persistentní položka]
+   * @return actiontype
+  **/
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getActiontype() {
+    return actiontype;
+  }
+
+  public void setActiontype(Integer actiontype) {
+    this.actiontype = actiontype;
+  }
+
+  public Emailprocessingruleaction actiontypestr(String actiontypestr) {
+    this.actiontypestr = actiontypestr;
+    return this;
+  }
+
+   /**
+   * popis typu
+   * @return actiontypestr
+  **/
+  @ApiModelProperty(example = "null", value = "popis typu")
+  public String getActiontypestr() {
+    return actiontypestr;
+  }
+
+  public void setActiontypestr(String actiontypestr) {
+    this.actiontypestr = actiontypestr;
+  }
+
+  public Emailprocessingruleaction actionparams(byte[] actionparams) {
+    this.actionparams = actionparams;
+    return this;
+  }
+
+   /**
+   * parametry [persistentní položka]
+   * @return actionparams
+  **/
+  @ApiModelProperty(example = "null", value = "parametry [persistentní položka]")
+  public byte[] getActionparams() {
+    return actionparams;
+  }
+
+  public void setActionparams(byte[] actionparams) {
+    this.actionparams = actionparams;
   }
 
 
@@ -190,20 +235,20 @@ public class Emailprocessingruleaction   {
       return false;
     }
     Emailprocessingruleaction emailprocessingruleaction = (Emailprocessingruleaction) o;
-    return Objects.equals(this.displayName, emailprocessingruleaction.displayName) &&
-        Objects.equals(this.ID, emailprocessingruleaction.ID) &&
-        Objects.equals(this.classID, emailprocessingruleaction.classID) &&
-        Objects.equals(this.objVersion, emailprocessingruleaction.objVersion) &&
-        Objects.equals(this.parentID, emailprocessingruleaction.parentID) &&
-        Objects.equals(this.posIndex, emailprocessingruleaction.posIndex) &&
-        Objects.equals(this.actionType, emailprocessingruleaction.actionType) &&
-        Objects.equals(this.actionTypeStr, emailprocessingruleaction.actionTypeStr) &&
-        Objects.equals(this.actionParams, emailprocessingruleaction.actionParams);
+    return Objects.equals(this.displayname, emailprocessingruleaction.displayname) &&
+        Objects.equals(this.id, emailprocessingruleaction.id) &&
+        Objects.equals(this.classid, emailprocessingruleaction.classid) &&
+        Objects.equals(this.objversion, emailprocessingruleaction.objversion) &&
+        Objects.equals(this.parentId, emailprocessingruleaction.parentId) &&
+        Objects.equals(this.posindex, emailprocessingruleaction.posindex) &&
+        Objects.equals(this.actiontype, emailprocessingruleaction.actiontype) &&
+        Objects.equals(this.actiontypestr, emailprocessingruleaction.actiontypestr) &&
+        Objects.equals(this.actionparams, emailprocessingruleaction.actionparams);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, actionType, actionTypeStr, actionParams);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, actiontype, actiontypestr, actionparams);
   }
 
   @Override
@@ -211,15 +256,15 @@ public class Emailprocessingruleaction   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Emailprocessingruleaction {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    actionType: ").append(toIndentedString(actionType)).append("\n");
-    sb.append("    actionTypeStr: ").append(toIndentedString(actionTypeStr)).append("\n");
-    sb.append("    actionParams: ").append(toIndentedString(actionParams)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    actiontype: ").append(toIndentedString(actiontype)).append("\n");
+    sb.append("    actiontypestr: ").append(toIndentedString(actiontypestr)).append("\n");
+    sb.append("    actionparams: ").append(toIndentedString(actionparams)).append("\n");
     sb.append("}");
     return sb.toString();
   }

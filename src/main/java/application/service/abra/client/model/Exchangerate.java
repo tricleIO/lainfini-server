@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,159 +35,195 @@ import java.util.Objects;
 /**
  * Exchangerate
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Exchangerate   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("RefCurrency_ID")
-  private String refCurrencyID = null;
+  @SerializedName("refcurrency_id")
+  private String refcurrencyId = null;
 
-  @SerializedName("Date$DATE")
-  private DateTime dateDATE = null;
+  @SerializedName("date$date")
+  private DateTime datedate = null;
 
-  @SerializedName("CurrRate")
-  private Double currRate = null;
+  @SerializedName("currrate")
+  private Double currrate = null;
 
-  @SerializedName("RefCurrRate")
-  private Double refCurrRate = null;
+  @SerializedName("refcurrrate")
+  private Double refcurrrate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Exchangerate currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Exchangerate displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Exchangerate refCurrencyID(String refCurrencyID) {
-    this.refCurrencyID = refCurrencyID;
+  public Exchangerate id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Vztažná měna; ID objektu Měna [persistentní položka]
-   * @return refCurrencyID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vztažná měna; ID objektu Měna [persistentní položka]")
-  public String getRefCurrencyID() {
-    return refCurrencyID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setRefCurrencyID(String refCurrencyID) {
-    this.refCurrencyID = refCurrencyID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Exchangerate dateDATE(DateTime dateDATE) {
-    this.dateDATE = dateDATE;
+  public Exchangerate classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Datum
-   * @return dateDATE
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Datum")
-  public DateTime getDateDATE() {
-    return dateDATE;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setDateDATE(DateTime dateDATE) {
-    this.dateDATE = dateDATE;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Exchangerate currRate(Double currRate) {
-    this.currRate = currRate;
+  public Exchangerate objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Kurz
-   * @return currRate
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Kurz")
-  public Double getCurrRate() {
-    return currRate;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setCurrRate(Double currRate) {
-    this.currRate = currRate;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Exchangerate refCurrRate(Double refCurrRate) {
-    this.refCurrRate = refCurrRate;
+  public Exchangerate currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Kurz vztažný
-   * @return refCurrRate
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Kurz vztažný")
-  public Double getRefCurrRate() {
-    return refCurrRate;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setRefCurrRate(Double refCurrRate) {
-    this.refCurrRate = refCurrRate;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
+  }
+
+  public Exchangerate refcurrencyId(String refcurrencyId) {
+    this.refcurrencyId = refcurrencyId;
+    return this;
+  }
+
+   /**
+   * vztažná měna; id objektu měna [persistentní položka]
+   * @return refcurrencyId
+  **/
+  @ApiModelProperty(example = "null", value = "vztažná měna; id objektu měna [persistentní položka]")
+  public String getRefcurrencyId() {
+    return refcurrencyId;
+  }
+
+  public void setRefcurrencyId(String refcurrencyId) {
+    this.refcurrencyId = refcurrencyId;
+  }
+
+  public Exchangerate datedate(DateTime datedate) {
+    this.datedate = datedate;
+    return this;
+  }
+
+   /**
+   * datum
+   * @return datedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum")
+  public DateTime getDatedate() {
+    return datedate;
+  }
+
+  public void setDatedate(DateTime datedate) {
+    this.datedate = datedate;
+  }
+
+  public Exchangerate currrate(Double currrate) {
+    this.currrate = currrate;
+    return this;
+  }
+
+   /**
+   * kurz
+   * @return currrate
+  **/
+  @ApiModelProperty(example = "null", value = "kurz")
+  public Double getCurrrate() {
+    return currrate;
+  }
+
+  public void setCurrrate(Double currrate) {
+    this.currrate = currrate;
+  }
+
+  public Exchangerate refcurrrate(Double refcurrrate) {
+    this.refcurrrate = refcurrrate;
+    return this;
+  }
+
+   /**
+   * kurz vztažný
+   * @return refcurrrate
+  **/
+  @ApiModelProperty(example = "null", value = "kurz vztažný")
+  public Double getRefcurrrate() {
+    return refcurrrate;
+  }
+
+  public void setRefcurrrate(Double refcurrrate) {
+    this.refcurrrate = refcurrrate;
   }
 
 
@@ -200,20 +236,20 @@ public class Exchangerate   {
       return false;
     }
     Exchangerate exchangerate = (Exchangerate) o;
-    return Objects.equals(this.displayName, exchangerate.displayName) &&
-        Objects.equals(this.ID, exchangerate.ID) &&
-        Objects.equals(this.classID, exchangerate.classID) &&
-        Objects.equals(this.objVersion, exchangerate.objVersion) &&
-        Objects.equals(this.currencyID, exchangerate.currencyID) &&
-        Objects.equals(this.refCurrencyID, exchangerate.refCurrencyID) &&
-        Objects.equals(this.dateDATE, exchangerate.dateDATE) &&
-        Objects.equals(this.currRate, exchangerate.currRate) &&
-        Objects.equals(this.refCurrRate, exchangerate.refCurrRate);
+    return Objects.equals(this.displayname, exchangerate.displayname) &&
+        Objects.equals(this.id, exchangerate.id) &&
+        Objects.equals(this.classid, exchangerate.classid) &&
+        Objects.equals(this.objversion, exchangerate.objversion) &&
+        Objects.equals(this.currencyId, exchangerate.currencyId) &&
+        Objects.equals(this.refcurrencyId, exchangerate.refcurrencyId) &&
+        Objects.equals(this.datedate, exchangerate.datedate) &&
+        Objects.equals(this.currrate, exchangerate.currrate) &&
+        Objects.equals(this.refcurrrate, exchangerate.refcurrrate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, currencyID, refCurrencyID, dateDATE, currRate, refCurrRate);
+    return Objects.hash(displayname, id, classid, objversion, currencyId, refcurrencyId, datedate, currrate, refcurrrate);
   }
 
   @Override
@@ -221,15 +257,15 @@ public class Exchangerate   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Exchangerate {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    refCurrencyID: ").append(toIndentedString(refCurrencyID)).append("\n");
-    sb.append("    dateDATE: ").append(toIndentedString(dateDATE)).append("\n");
-    sb.append("    currRate: ").append(toIndentedString(currRate)).append("\n");
-    sb.append("    refCurrRate: ").append(toIndentedString(refCurrRate)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    refcurrencyId: ").append(toIndentedString(refcurrencyId)).append("\n");
+    sb.append("    datedate: ").append(toIndentedString(datedate)).append("\n");
+    sb.append("    currrate: ").append(toIndentedString(currrate)).append("\n");
+    sb.append("    refcurrrate: ").append(toIndentedString(refcurrrate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

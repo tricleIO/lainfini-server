@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,189 +34,243 @@ import java.util.Objects;
 /**
  * Logstorepreferencerow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Logstorepreferencerow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PreferredObjectType")
-  private Integer preferredObjectType = null;
+  @SerializedName("preferredobjecttype")
+  private Integer preferredobjecttype = null;
 
-  @SerializedName("PreferredObjectTypeDesc")
-  private String preferredObjectTypeDesc = null;
+  @SerializedName("preferredobjecttypedesc")
+  private String preferredobjecttypedesc = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("StoreCardCategory_ID")
-  private String storeCardCategoryID = null;
+  @SerializedName("storecardcategory_id")
+  private String storecardcategoryId = null;
 
-  @SerializedName("StoreMenuItem_ID")
-  private String storeMenuItemID = null;
+  @SerializedName("storemenuitem_id")
+  private String storemenuitemId = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("Strictly")
+  @SerializedName("strictly")
   private Integer strictly = null;
 
-  @SerializedName("StrictlyDesc")
-  private String strictlyDesc = null;
+  @SerializedName("strictlydesc")
+  private String strictlydesc = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Preference skladových pozic [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Preference skladových pozic [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Logstorepreferencerow preferredObjectType(Integer preferredObjectType) {
-    this.preferredObjectType = preferredObjectType;
+  public Logstorepreferencerow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Typ preference [persistentní položka]
-   * @return preferredObjectType
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Typ preference [persistentní položka]")
-  public Integer getPreferredObjectType() {
-    return preferredObjectType;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPreferredObjectType(Integer preferredObjectType) {
-    this.preferredObjectType = preferredObjectType;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * Typ preference - popis
-   * @return preferredObjectTypeDesc
-  **/
-  @ApiModelProperty(example = "null", value = "Typ preference - popis")
-  public String getPreferredObjectTypeDesc() {
-    return preferredObjectTypeDesc;
-  }
-
-  public Logstorepreferencerow storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Logstorepreferencerow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Logstorepreferencerow storeCardCategoryID(String storeCardCategoryID) {
-    this.storeCardCategoryID = storeCardCategoryID;
+  public Logstorepreferencerow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Typ skladové karty; ID objektu Typ skladové karty [persistentní položka]
-   * @return storeCardCategoryID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Typ skladové karty; ID objektu Typ skladové karty [persistentní položka]")
-  public String getStoreCardCategoryID() {
-    return storeCardCategoryID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setStoreCardCategoryID(String storeCardCategoryID) {
-    this.storeCardCategoryID = storeCardCategoryID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Logstorepreferencerow storeMenuItemID(String storeMenuItemID) {
-    this.storeMenuItemID = storeMenuItemID;
+  public Logstorepreferencerow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Skladové menu; ID objektu Skladové menu [persistentní položka]
-   * @return storeMenuItemID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Skladové menu; ID objektu Skladové menu [persistentní položka]")
-  public String getStoreMenuItemID() {
-    return storeMenuItemID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setStoreMenuItemID(String storeMenuItemID) {
-    this.storeMenuItemID = storeMenuItemID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Logstorepreferencerow firmID(String firmID) {
-    this.firmID = firmID;
+  public Logstorepreferencerow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * vlastník; id objektu preference skladových pozic [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu preference skladových pozic [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Logstorepreferencerow preferredobjecttype(Integer preferredobjecttype) {
+    this.preferredobjecttype = preferredobjecttype;
+    return this;
+  }
+
+   /**
+   * typ preference [persistentní položka]
+   * @return preferredobjecttype
+  **/
+  @ApiModelProperty(example = "null", value = "typ preference [persistentní položka]")
+  public Integer getPreferredobjecttype() {
+    return preferredobjecttype;
+  }
+
+  public void setPreferredobjecttype(Integer preferredobjecttype) {
+    this.preferredobjecttype = preferredobjecttype;
+  }
+
+  public Logstorepreferencerow preferredobjecttypedesc(String preferredobjecttypedesc) {
+    this.preferredobjecttypedesc = preferredobjecttypedesc;
+    return this;
+  }
+
+   /**
+   * typ preference - popis
+   * @return preferredobjecttypedesc
+  **/
+  @ApiModelProperty(example = "null", value = "typ preference - popis")
+  public String getPreferredobjecttypedesc() {
+    return preferredobjecttypedesc;
+  }
+
+  public void setPreferredobjecttypedesc(String preferredobjecttypedesc) {
+    this.preferredobjecttypedesc = preferredobjecttypedesc;
+  }
+
+  public Logstorepreferencerow storecardId(String storecardId) {
+    this.storecardId = storecardId;
+    return this;
+  }
+
+   /**
+   * skladová karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
+  **/
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
+  }
+
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
+  }
+
+  public Logstorepreferencerow storecardcategoryId(String storecardcategoryId) {
+    this.storecardcategoryId = storecardcategoryId;
+    return this;
+  }
+
+   /**
+   * typ skladové karty; id objektu typ skladové karty [persistentní položka]
+   * @return storecardcategoryId
+  **/
+  @ApiModelProperty(example = "null", value = "typ skladové karty; id objektu typ skladové karty [persistentní položka]")
+  public String getStorecardcategoryId() {
+    return storecardcategoryId;
+  }
+
+  public void setStorecardcategoryId(String storecardcategoryId) {
+    this.storecardcategoryId = storecardcategoryId;
+  }
+
+  public Logstorepreferencerow storemenuitemId(String storemenuitemId) {
+    this.storemenuitemId = storemenuitemId;
+    return this;
+  }
+
+   /**
+   * skladové menu; id objektu skladové menu [persistentní položka]
+   * @return storemenuitemId
+  **/
+  @ApiModelProperty(example = "null", value = "skladové menu; id objektu skladové menu [persistentní položka]")
+  public String getStoremenuitemId() {
+    return storemenuitemId;
+  }
+
+  public void setStoremenuitemId(String storemenuitemId) {
+    this.storemenuitemId = storemenuitemId;
+  }
+
+  public Logstorepreferencerow firmId(String firmId) {
+    this.firmId = firmId;
+    return this;
+  }
+
+   /**
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
+  **/
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
+  }
+
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
   public Logstorepreferencerow strictly(Integer strictly) {
@@ -225,10 +279,10 @@ public class Logstorepreferencerow   {
   }
 
    /**
-   * Striktní [persistentní položka]
+   * striktní [persistentní položka]
    * @return strictly
   **/
-  @ApiModelProperty(example = "null", value = "Striktní [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "striktní [persistentní položka]")
   public Integer getStrictly() {
     return strictly;
   }
@@ -237,13 +291,22 @@ public class Logstorepreferencerow   {
     this.strictly = strictly;
   }
 
+  public Logstorepreferencerow strictlydesc(String strictlydesc) {
+    this.strictlydesc = strictlydesc;
+    return this;
+  }
+
    /**
-   * Striktní - popis
-   * @return strictlyDesc
+   * striktní - popis
+   * @return strictlydesc
   **/
-  @ApiModelProperty(example = "null", value = "Striktní - popis")
-  public String getStrictlyDesc() {
-    return strictlyDesc;
+  @ApiModelProperty(example = "null", value = "striktní - popis")
+  public String getStrictlydesc() {
+    return strictlydesc;
+  }
+
+  public void setStrictlydesc(String strictlydesc) {
+    this.strictlydesc = strictlydesc;
   }
 
 
@@ -256,24 +319,24 @@ public class Logstorepreferencerow   {
       return false;
     }
     Logstorepreferencerow logstorepreferencerow = (Logstorepreferencerow) o;
-    return Objects.equals(this.displayName, logstorepreferencerow.displayName) &&
-        Objects.equals(this.ID, logstorepreferencerow.ID) &&
-        Objects.equals(this.classID, logstorepreferencerow.classID) &&
-        Objects.equals(this.objVersion, logstorepreferencerow.objVersion) &&
-        Objects.equals(this.parentID, logstorepreferencerow.parentID) &&
-        Objects.equals(this.preferredObjectType, logstorepreferencerow.preferredObjectType) &&
-        Objects.equals(this.preferredObjectTypeDesc, logstorepreferencerow.preferredObjectTypeDesc) &&
-        Objects.equals(this.storeCardID, logstorepreferencerow.storeCardID) &&
-        Objects.equals(this.storeCardCategoryID, logstorepreferencerow.storeCardCategoryID) &&
-        Objects.equals(this.storeMenuItemID, logstorepreferencerow.storeMenuItemID) &&
-        Objects.equals(this.firmID, logstorepreferencerow.firmID) &&
+    return Objects.equals(this.displayname, logstorepreferencerow.displayname) &&
+        Objects.equals(this.id, logstorepreferencerow.id) &&
+        Objects.equals(this.classid, logstorepreferencerow.classid) &&
+        Objects.equals(this.objversion, logstorepreferencerow.objversion) &&
+        Objects.equals(this.parentId, logstorepreferencerow.parentId) &&
+        Objects.equals(this.preferredobjecttype, logstorepreferencerow.preferredobjecttype) &&
+        Objects.equals(this.preferredobjecttypedesc, logstorepreferencerow.preferredobjecttypedesc) &&
+        Objects.equals(this.storecardId, logstorepreferencerow.storecardId) &&
+        Objects.equals(this.storecardcategoryId, logstorepreferencerow.storecardcategoryId) &&
+        Objects.equals(this.storemenuitemId, logstorepreferencerow.storemenuitemId) &&
+        Objects.equals(this.firmId, logstorepreferencerow.firmId) &&
         Objects.equals(this.strictly, logstorepreferencerow.strictly) &&
-        Objects.equals(this.strictlyDesc, logstorepreferencerow.strictlyDesc);
+        Objects.equals(this.strictlydesc, logstorepreferencerow.strictlydesc);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, preferredObjectType, preferredObjectTypeDesc, storeCardID, storeCardCategoryID, storeMenuItemID, firmID, strictly, strictlyDesc);
+    return Objects.hash(displayname, id, classid, objversion, parentId, preferredobjecttype, preferredobjecttypedesc, storecardId, storecardcategoryId, storemenuitemId, firmId, strictly, strictlydesc);
   }
 
   @Override
@@ -281,19 +344,19 @@ public class Logstorepreferencerow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Logstorepreferencerow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    preferredObjectType: ").append(toIndentedString(preferredObjectType)).append("\n");
-    sb.append("    preferredObjectTypeDesc: ").append(toIndentedString(preferredObjectTypeDesc)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    storeCardCategoryID: ").append(toIndentedString(storeCardCategoryID)).append("\n");
-    sb.append("    storeMenuItemID: ").append(toIndentedString(storeMenuItemID)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    preferredobjecttype: ").append(toIndentedString(preferredobjecttype)).append("\n");
+    sb.append("    preferredobjecttypedesc: ").append(toIndentedString(preferredobjecttypedesc)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    storecardcategoryId: ").append(toIndentedString(storecardcategoryId)).append("\n");
+    sb.append("    storemenuitemId: ").append(toIndentedString(storemenuitemId)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
     sb.append("    strictly: ").append(toIndentedString(strictly)).append("\n");
-    sb.append("    strictlyDesc: ").append(toIndentedString(strictlyDesc)).append("\n");
+    sb.append("    strictlydesc: ").append(toIndentedString(strictlydesc)).append("\n");
     sb.append("}");
     return sb.toString();
   }

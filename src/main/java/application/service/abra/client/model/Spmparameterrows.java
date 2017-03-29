@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,360 +34,405 @@ import java.util.Objects;
 /**
  * Spmparameterrows
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Spmparameterrows   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("ProductReception_DocQ_ID")
-  private String productReceptionDocQID = null;
+  @SerializedName("productreception_docq_id")
+  private String productreceptionDocqId = null;
 
-  @SerializedName("OutgoingTransfer_DocQ_ID")
-  private String outgoingTransferDocQID = null;
+  @SerializedName("outgoingtransfer_docq_id")
+  private String outgoingtransferDocqId = null;
 
-  @SerializedName("IncomingTransfer_DocQ_ID")
-  private String incomingTransferDocQID = null;
+  @SerializedName("incomingtransfer_docq_id")
+  private String incomingtransferDocqId = null;
 
-  @SerializedName("ProductStore_ID")
-  private String productStoreID = null;
+  @SerializedName("productstore_id")
+  private String productstoreId = null;
 
-  @SerializedName("OperatingStore_ID")
-  private String operatingStoreID = null;
+  @SerializedName("operatingstore_id")
+  private String operatingstoreId = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("MaterialDistribution_DocQ_ID")
-  private String materialDistributionDocQID = null;
+  @SerializedName("materialdistribution_docq_id")
+  private String materialdistributionDocqId = null;
 
-  @SerializedName("MaterialStore_ID")
-  private String materialStoreID = null;
+  @SerializedName("materialstore_id")
+  private String materialstoreId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Nastavení kompletace [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Nastavení kompletace [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Spmparameterrows posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Spmparameterrows displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Spmparameterrows docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Spmparameterrows id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Řada dokladů; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Spmparameterrows divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Spmparameterrows classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Spmparameterrows busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Spmparameterrows objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Spmparameterrows busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Spmparameterrows parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Obch. případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * vlastník; id objektu nastavení kompletace [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Obch. případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu nastavení kompletace [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Spmparameterrows busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Spmparameterrows posindex(Integer posindex) {
+    this.posindex = posindex;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * pořadí [persistentní položka]
+   * @return posindex
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
-  public Spmparameterrows productReceptionDocQID(String productReceptionDocQID) {
-    this.productReceptionDocQID = productReceptionDocQID;
+  public Spmparameterrows docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Řada PHV; ID objektu Řada dokladů [persistentní položka]
-   * @return productReceptionDocQID
+   * Řada dokladů; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada PHV; ID objektu Řada dokladů [persistentní položka]")
-  public String getProductReceptionDocQID() {
-    return productReceptionDocQID;
+  @ApiModelProperty(example = "null", value = "Řada dokladů; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setProductReceptionDocQID(String productReceptionDocQID) {
-    this.productReceptionDocQID = productReceptionDocQID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Spmparameterrows outgoingTransferDocQID(String outgoingTransferDocQID) {
-    this.outgoingTransferDocQID = outgoingTransferDocQID;
+  public Spmparameterrows divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Řada PRV; ID objektu Řada dokladů [persistentní položka]
-   * @return outgoingTransferDocQID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Řada PRV; ID objektu Řada dokladů [persistentní položka]")
-  public String getOutgoingTransferDocQID() {
-    return outgoingTransferDocQID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setOutgoingTransferDocQID(String outgoingTransferDocQID) {
-    this.outgoingTransferDocQID = outgoingTransferDocQID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Spmparameterrows incomingTransferDocQID(String incomingTransferDocQID) {
-    this.incomingTransferDocQID = incomingTransferDocQID;
+  public Spmparameterrows busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Řada PRP; ID objektu Řada dokladů [persistentní položka]
-   * @return incomingTransferDocQID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Řada PRP; ID objektu Řada dokladů [persistentní položka]")
-  public String getIncomingTransferDocQID() {
-    return incomingTransferDocQID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setIncomingTransferDocQID(String incomingTransferDocQID) {
-    this.incomingTransferDocQID = incomingTransferDocQID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Spmparameterrows productStoreID(String productStoreID) {
-    this.productStoreID = productStoreID;
+  public Spmparameterrows bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Sklad výrobků; ID objektu Sklad [persistentní položka]
-   * @return productStoreID
+   * obch. případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad výrobků; ID objektu Sklad [persistentní položka]")
-  public String getProductStoreID() {
-    return productStoreID;
+  @ApiModelProperty(example = "null", value = "obch. případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setProductStoreID(String productStoreID) {
-    this.productStoreID = productStoreID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Spmparameterrows operatingStoreID(String operatingStoreID) {
-    this.operatingStoreID = operatingStoreID;
+  public Spmparameterrows busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Provozní sklad; ID objektu Sklad [persistentní položka]
-   * @return operatingStoreID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Provozní sklad; ID objektu Sklad [persistentní položka]")
-  public String getOperatingStoreID() {
-    return operatingStoreID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setOperatingStoreID(String operatingStoreID) {
-    this.operatingStoreID = operatingStoreID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Spmparameterrows firmID(String firmID) {
-    this.firmID = firmID;
+  public Spmparameterrows productreceptionDocqId(String productreceptionDocqId) {
+    this.productreceptionDocqId = productreceptionDocqId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * Řada phv; id objektu Řada dokladů [persistentní položka]
+   * @return productreceptionDocqId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "Řada phv; id objektu Řada dokladů [persistentní položka]")
+  public String getProductreceptionDocqId() {
+    return productreceptionDocqId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setProductreceptionDocqId(String productreceptionDocqId) {
+    this.productreceptionDocqId = productreceptionDocqId;
   }
 
-  public Spmparameterrows materialDistributionDocQID(String materialDistributionDocQID) {
-    this.materialDistributionDocQID = materialDistributionDocQID;
+  public Spmparameterrows outgoingtransferDocqId(String outgoingtransferDocqId) {
+    this.outgoingtransferDocqId = outgoingtransferDocqId;
     return this;
   }
 
    /**
-   * Řada VMV; ID objektu Řada dokladů [persistentní položka]
-   * @return materialDistributionDocQID
+   * Řada prv; id objektu Řada dokladů [persistentní položka]
+   * @return outgoingtransferDocqId
   **/
-  @ApiModelProperty(example = "null", value = "Řada VMV; ID objektu Řada dokladů [persistentní položka]")
-  public String getMaterialDistributionDocQID() {
-    return materialDistributionDocQID;
+  @ApiModelProperty(example = "null", value = "Řada prv; id objektu Řada dokladů [persistentní položka]")
+  public String getOutgoingtransferDocqId() {
+    return outgoingtransferDocqId;
   }
 
-  public void setMaterialDistributionDocQID(String materialDistributionDocQID) {
-    this.materialDistributionDocQID = materialDistributionDocQID;
+  public void setOutgoingtransferDocqId(String outgoingtransferDocqId) {
+    this.outgoingtransferDocqId = outgoingtransferDocqId;
   }
 
-  public Spmparameterrows materialStoreID(String materialStoreID) {
-    this.materialStoreID = materialStoreID;
+  public Spmparameterrows incomingtransferDocqId(String incomingtransferDocqId) {
+    this.incomingtransferDocqId = incomingtransferDocqId;
     return this;
   }
 
    /**
-   * Sklad materiálu; ID objektu Sklad [persistentní položka]
-   * @return materialStoreID
+   * Řada prp; id objektu Řada dokladů [persistentní položka]
+   * @return incomingtransferDocqId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad materiálu; ID objektu Sklad [persistentní položka]")
-  public String getMaterialStoreID() {
-    return materialStoreID;
+  @ApiModelProperty(example = "null", value = "Řada prp; id objektu Řada dokladů [persistentní položka]")
+  public String getIncomingtransferDocqId() {
+    return incomingtransferDocqId;
   }
 
-  public void setMaterialStoreID(String materialStoreID) {
-    this.materialStoreID = materialStoreID;
+  public void setIncomingtransferDocqId(String incomingtransferDocqId) {
+    this.incomingtransferDocqId = incomingtransferDocqId;
+  }
+
+  public Spmparameterrows productstoreId(String productstoreId) {
+    this.productstoreId = productstoreId;
+    return this;
+  }
+
+   /**
+   * sklad výrobků; id objektu sklad [persistentní položka]
+   * @return productstoreId
+  **/
+  @ApiModelProperty(example = "null", value = "sklad výrobků; id objektu sklad [persistentní položka]")
+  public String getProductstoreId() {
+    return productstoreId;
+  }
+
+  public void setProductstoreId(String productstoreId) {
+    this.productstoreId = productstoreId;
+  }
+
+  public Spmparameterrows operatingstoreId(String operatingstoreId) {
+    this.operatingstoreId = operatingstoreId;
+    return this;
+  }
+
+   /**
+   * provozní sklad; id objektu sklad [persistentní položka]
+   * @return operatingstoreId
+  **/
+  @ApiModelProperty(example = "null", value = "provozní sklad; id objektu sklad [persistentní položka]")
+  public String getOperatingstoreId() {
+    return operatingstoreId;
+  }
+
+  public void setOperatingstoreId(String operatingstoreId) {
+    this.operatingstoreId = operatingstoreId;
+  }
+
+  public Spmparameterrows firmId(String firmId) {
+    this.firmId = firmId;
+    return this;
+  }
+
+   /**
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
+  **/
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
+  }
+
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
+  }
+
+  public Spmparameterrows materialdistributionDocqId(String materialdistributionDocqId) {
+    this.materialdistributionDocqId = materialdistributionDocqId;
+    return this;
+  }
+
+   /**
+   * Řada vmv; id objektu Řada dokladů [persistentní položka]
+   * @return materialdistributionDocqId
+  **/
+  @ApiModelProperty(example = "null", value = "Řada vmv; id objektu Řada dokladů [persistentní položka]")
+  public String getMaterialdistributionDocqId() {
+    return materialdistributionDocqId;
+  }
+
+  public void setMaterialdistributionDocqId(String materialdistributionDocqId) {
+    this.materialdistributionDocqId = materialdistributionDocqId;
+  }
+
+  public Spmparameterrows materialstoreId(String materialstoreId) {
+    this.materialstoreId = materialstoreId;
+    return this;
+  }
+
+   /**
+   * sklad materiálu; id objektu sklad [persistentní položka]
+   * @return materialstoreId
+  **/
+  @ApiModelProperty(example = "null", value = "sklad materiálu; id objektu sklad [persistentní položka]")
+  public String getMaterialstoreId() {
+    return materialstoreId;
+  }
+
+  public void setMaterialstoreId(String materialstoreId) {
+    this.materialstoreId = materialstoreId;
   }
 
 
@@ -400,30 +445,30 @@ public class Spmparameterrows   {
       return false;
     }
     Spmparameterrows spmparameterrows = (Spmparameterrows) o;
-    return Objects.equals(this.displayName, spmparameterrows.displayName) &&
-        Objects.equals(this.ID, spmparameterrows.ID) &&
-        Objects.equals(this.classID, spmparameterrows.classID) &&
-        Objects.equals(this.objVersion, spmparameterrows.objVersion) &&
-        Objects.equals(this.parentID, spmparameterrows.parentID) &&
-        Objects.equals(this.posIndex, spmparameterrows.posIndex) &&
-        Objects.equals(this.docQueueID, spmparameterrows.docQueueID) &&
-        Objects.equals(this.divisionID, spmparameterrows.divisionID) &&
-        Objects.equals(this.busOrderID, spmparameterrows.busOrderID) &&
-        Objects.equals(this.busTransactionID, spmparameterrows.busTransactionID) &&
-        Objects.equals(this.busProjectID, spmparameterrows.busProjectID) &&
-        Objects.equals(this.productReceptionDocQID, spmparameterrows.productReceptionDocQID) &&
-        Objects.equals(this.outgoingTransferDocQID, spmparameterrows.outgoingTransferDocQID) &&
-        Objects.equals(this.incomingTransferDocQID, spmparameterrows.incomingTransferDocQID) &&
-        Objects.equals(this.productStoreID, spmparameterrows.productStoreID) &&
-        Objects.equals(this.operatingStoreID, spmparameterrows.operatingStoreID) &&
-        Objects.equals(this.firmID, spmparameterrows.firmID) &&
-        Objects.equals(this.materialDistributionDocQID, spmparameterrows.materialDistributionDocQID) &&
-        Objects.equals(this.materialStoreID, spmparameterrows.materialStoreID);
+    return Objects.equals(this.displayname, spmparameterrows.displayname) &&
+        Objects.equals(this.id, spmparameterrows.id) &&
+        Objects.equals(this.classid, spmparameterrows.classid) &&
+        Objects.equals(this.objversion, spmparameterrows.objversion) &&
+        Objects.equals(this.parentId, spmparameterrows.parentId) &&
+        Objects.equals(this.posindex, spmparameterrows.posindex) &&
+        Objects.equals(this.docqueueId, spmparameterrows.docqueueId) &&
+        Objects.equals(this.divisionId, spmparameterrows.divisionId) &&
+        Objects.equals(this.busorderId, spmparameterrows.busorderId) &&
+        Objects.equals(this.bustransactionId, spmparameterrows.bustransactionId) &&
+        Objects.equals(this.busprojectId, spmparameterrows.busprojectId) &&
+        Objects.equals(this.productreceptionDocqId, spmparameterrows.productreceptionDocqId) &&
+        Objects.equals(this.outgoingtransferDocqId, spmparameterrows.outgoingtransferDocqId) &&
+        Objects.equals(this.incomingtransferDocqId, spmparameterrows.incomingtransferDocqId) &&
+        Objects.equals(this.productstoreId, spmparameterrows.productstoreId) &&
+        Objects.equals(this.operatingstoreId, spmparameterrows.operatingstoreId) &&
+        Objects.equals(this.firmId, spmparameterrows.firmId) &&
+        Objects.equals(this.materialdistributionDocqId, spmparameterrows.materialdistributionDocqId) &&
+        Objects.equals(this.materialstoreId, spmparameterrows.materialstoreId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, docQueueID, divisionID, busOrderID, busTransactionID, busProjectID, productReceptionDocQID, outgoingTransferDocQID, incomingTransferDocQID, productStoreID, operatingStoreID, firmID, materialDistributionDocQID, materialStoreID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, docqueueId, divisionId, busorderId, bustransactionId, busprojectId, productreceptionDocqId, outgoingtransferDocqId, incomingtransferDocqId, productstoreId, operatingstoreId, firmId, materialdistributionDocqId, materialstoreId);
   }
 
   @Override
@@ -431,25 +476,25 @@ public class Spmparameterrows   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Spmparameterrows {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    productReceptionDocQID: ").append(toIndentedString(productReceptionDocQID)).append("\n");
-    sb.append("    outgoingTransferDocQID: ").append(toIndentedString(outgoingTransferDocQID)).append("\n");
-    sb.append("    incomingTransferDocQID: ").append(toIndentedString(incomingTransferDocQID)).append("\n");
-    sb.append("    productStoreID: ").append(toIndentedString(productStoreID)).append("\n");
-    sb.append("    operatingStoreID: ").append(toIndentedString(operatingStoreID)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    materialDistributionDocQID: ").append(toIndentedString(materialDistributionDocQID)).append("\n");
-    sb.append("    materialStoreID: ").append(toIndentedString(materialStoreID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    productreceptionDocqId: ").append(toIndentedString(productreceptionDocqId)).append("\n");
+    sb.append("    outgoingtransferDocqId: ").append(toIndentedString(outgoingtransferDocqId)).append("\n");
+    sb.append("    incomingtransferDocqId: ").append(toIndentedString(incomingtransferDocqId)).append("\n");
+    sb.append("    productstoreId: ").append(toIndentedString(productstoreId)).append("\n");
+    sb.append("    operatingstoreId: ").append(toIndentedString(operatingstoreId)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    materialdistributionDocqId: ").append(toIndentedString(materialdistributionDocqId)).append("\n");
+    sb.append("    materialstoreId: ").append(toIndentedString(materialstoreId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

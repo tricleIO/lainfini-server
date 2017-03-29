@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,147 +34,183 @@ import java.util.Objects;
 /**
  * Assetdeprecgroupshistory
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Assetdeprecgroupshistory   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("AssetCard_ID")
-  private String assetCardID = null;
+  @SerializedName("assetcard_id")
+  private String assetcardId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("TaxDepreciationGroup_ID")
-  private String taxDepreciationGroupID = null;
+  @SerializedName("taxdepreciationgroup_id")
+  private String taxdepreciationgroupId = null;
 
-  @SerializedName("AccDepreciationGroup_ID")
-  private String accDepreciationGroupID = null;
+  @SerializedName("accdepreciationgroup_id")
+  private String accdepreciationgroupId = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Comment")
+  @SerializedName("comment")
   private String comment = null;
 
-  @SerializedName("TaxWithAccounted")
-  private Boolean taxWithAccounted = null;
+  @SerializedName("taxwithaccounted")
+  private Boolean taxwithaccounted = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Assetdeprecgroupshistory assetCardID(String assetCardID) {
-    this.assetCardID = assetCardID;
+  public Assetdeprecgroupshistory displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Karta majetku; ID objektu Karta majetku [persistentní položka]
-   * @return assetCardID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Karta majetku; ID objektu Karta majetku [persistentní položka]")
-  public String getAssetCardID() {
-    return assetCardID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setAssetCardID(String assetCardID) {
-    this.assetCardID = assetCardID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Assetdeprecgroupshistory periodID(String periodID) {
-    this.periodID = periodID;
+  public Assetdeprecgroupshistory id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Assetdeprecgroupshistory taxDepreciationGroupID(String taxDepreciationGroupID) {
-    this.taxDepreciationGroupID = taxDepreciationGroupID;
+  public Assetdeprecgroupshistory classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Daň.odpis.sk.; ID objektu Daňová odpisová skupina [persistentní položka]
-   * @return taxDepreciationGroupID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Daň.odpis.sk.; ID objektu Daňová odpisová skupina [persistentní položka]")
-  public String getTaxDepreciationGroupID() {
-    return taxDepreciationGroupID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setTaxDepreciationGroupID(String taxDepreciationGroupID) {
-    this.taxDepreciationGroupID = taxDepreciationGroupID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Assetdeprecgroupshistory accDepreciationGroupID(String accDepreciationGroupID) {
-    this.accDepreciationGroupID = accDepreciationGroupID;
+  public Assetdeprecgroupshistory objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Účet.odpis.sk.; ID objektu Účetní odpisová skupina [persistentní položka]
-   * @return accDepreciationGroupID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Účet.odpis.sk.; ID objektu Účetní odpisová skupina [persistentní položka]")
-  public String getAccDepreciationGroupID() {
-    return accDepreciationGroupID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setAccDepreciationGroupID(String accDepreciationGroupID) {
-    this.accDepreciationGroupID = accDepreciationGroupID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Assetdeprecgroupshistory assetcardId(String assetcardId) {
+    this.assetcardId = assetcardId;
+    return this;
+  }
+
+   /**
+   * karta majetku; id objektu karta majetku [persistentní položka]
+   * @return assetcardId
+  **/
+  @ApiModelProperty(example = "null", value = "karta majetku; id objektu karta majetku [persistentní položka]")
+  public String getAssetcardId() {
+    return assetcardId;
+  }
+
+  public void setAssetcardId(String assetcardId) {
+    this.assetcardId = assetcardId;
+  }
+
+  public Assetdeprecgroupshistory periodId(String periodId) {
+    this.periodId = periodId;
+    return this;
+  }
+
+   /**
+   * období; id objektu období [persistentní položka]
+   * @return periodId
+  **/
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
+  }
+
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
+  }
+
+  public Assetdeprecgroupshistory taxdepreciationgroupId(String taxdepreciationgroupId) {
+    this.taxdepreciationgroupId = taxdepreciationgroupId;
+    return this;
+  }
+
+   /**
+   * daň.odpis.sk.; id objektu daňová odpisová skupina [persistentní položka]
+   * @return taxdepreciationgroupId
+  **/
+  @ApiModelProperty(example = "null", value = "daň.odpis.sk.; id objektu daňová odpisová skupina [persistentní položka]")
+  public String getTaxdepreciationgroupId() {
+    return taxdepreciationgroupId;
+  }
+
+  public void setTaxdepreciationgroupId(String taxdepreciationgroupId) {
+    this.taxdepreciationgroupId = taxdepreciationgroupId;
+  }
+
+  public Assetdeprecgroupshistory accdepreciationgroupId(String accdepreciationgroupId) {
+    this.accdepreciationgroupId = accdepreciationgroupId;
+    return this;
+  }
+
+   /**
+   * Účet.odpis.sk.; id objektu Účetní odpisová skupina [persistentní položka]
+   * @return accdepreciationgroupId
+  **/
+  @ApiModelProperty(example = "null", value = "Účet.odpis.sk.; id objektu Účetní odpisová skupina [persistentní položka]")
+  public String getAccdepreciationgroupId() {
+    return accdepreciationgroupId;
+  }
+
+  public void setAccdepreciationgroupId(String accdepreciationgroupId) {
+    this.accdepreciationgroupId = accdepreciationgroupId;
   }
 
   public Assetdeprecgroupshistory note(String note) {
@@ -183,10 +219,10 @@ public class Assetdeprecgroupshistory   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -201,10 +237,10 @@ public class Assetdeprecgroupshistory   {
   }
 
    /**
-   * Poznámka
+   * poznámka
    * @return comment
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka")
+  @ApiModelProperty(example = "null", value = "poznámka")
   public String getComment() {
     return comment;
   }
@@ -213,22 +249,22 @@ public class Assetdeprecgroupshistory   {
     this.comment = comment;
   }
 
-  public Assetdeprecgroupshistory taxWithAccounted(Boolean taxWithAccounted) {
-    this.taxWithAccounted = taxWithAccounted;
+  public Assetdeprecgroupshistory taxwithaccounted(Boolean taxwithaccounted) {
+    this.taxwithaccounted = taxwithaccounted;
     return this;
   }
 
    /**
-   * Změnit i zaúčtované [persistentní položka]
-   * @return taxWithAccounted
+   * změnit i zaúčtované [persistentní položka]
+   * @return taxwithaccounted
   **/
-  @ApiModelProperty(example = "null", value = "Změnit i zaúčtované [persistentní položka]")
-  public Boolean getTaxWithAccounted() {
-    return taxWithAccounted;
+  @ApiModelProperty(example = "null", value = "změnit i zaúčtované [persistentní položka]")
+  public Boolean getTaxwithaccounted() {
+    return taxwithaccounted;
   }
 
-  public void setTaxWithAccounted(Boolean taxWithAccounted) {
-    this.taxWithAccounted = taxWithAccounted;
+  public void setTaxwithaccounted(Boolean taxwithaccounted) {
+    this.taxwithaccounted = taxwithaccounted;
   }
 
 
@@ -241,22 +277,22 @@ public class Assetdeprecgroupshistory   {
       return false;
     }
     Assetdeprecgroupshistory assetdeprecgroupshistory = (Assetdeprecgroupshistory) o;
-    return Objects.equals(this.displayName, assetdeprecgroupshistory.displayName) &&
-        Objects.equals(this.ID, assetdeprecgroupshistory.ID) &&
-        Objects.equals(this.classID, assetdeprecgroupshistory.classID) &&
-        Objects.equals(this.objVersion, assetdeprecgroupshistory.objVersion) &&
-        Objects.equals(this.assetCardID, assetdeprecgroupshistory.assetCardID) &&
-        Objects.equals(this.periodID, assetdeprecgroupshistory.periodID) &&
-        Objects.equals(this.taxDepreciationGroupID, assetdeprecgroupshistory.taxDepreciationGroupID) &&
-        Objects.equals(this.accDepreciationGroupID, assetdeprecgroupshistory.accDepreciationGroupID) &&
+    return Objects.equals(this.displayname, assetdeprecgroupshistory.displayname) &&
+        Objects.equals(this.id, assetdeprecgroupshistory.id) &&
+        Objects.equals(this.classid, assetdeprecgroupshistory.classid) &&
+        Objects.equals(this.objversion, assetdeprecgroupshistory.objversion) &&
+        Objects.equals(this.assetcardId, assetdeprecgroupshistory.assetcardId) &&
+        Objects.equals(this.periodId, assetdeprecgroupshistory.periodId) &&
+        Objects.equals(this.taxdepreciationgroupId, assetdeprecgroupshistory.taxdepreciationgroupId) &&
+        Objects.equals(this.accdepreciationgroupId, assetdeprecgroupshistory.accdepreciationgroupId) &&
         Objects.equals(this.note, assetdeprecgroupshistory.note) &&
         Objects.equals(this.comment, assetdeprecgroupshistory.comment) &&
-        Objects.equals(this.taxWithAccounted, assetdeprecgroupshistory.taxWithAccounted);
+        Objects.equals(this.taxwithaccounted, assetdeprecgroupshistory.taxwithaccounted);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, assetCardID, periodID, taxDepreciationGroupID, accDepreciationGroupID, note, comment, taxWithAccounted);
+    return Objects.hash(displayname, id, classid, objversion, assetcardId, periodId, taxdepreciationgroupId, accdepreciationgroupId, note, comment, taxwithaccounted);
   }
 
   @Override
@@ -264,17 +300,17 @@ public class Assetdeprecgroupshistory   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Assetdeprecgroupshistory {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    assetCardID: ").append(toIndentedString(assetCardID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    taxDepreciationGroupID: ").append(toIndentedString(taxDepreciationGroupID)).append("\n");
-    sb.append("    accDepreciationGroupID: ").append(toIndentedString(accDepreciationGroupID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    assetcardId: ").append(toIndentedString(assetcardId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    taxdepreciationgroupId: ").append(toIndentedString(taxdepreciationgroupId)).append("\n");
+    sb.append("    accdepreciationgroupId: ").append(toIndentedString(accdepreciationgroupId)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
     sb.append("    comment: ").append(toIndentedString(comment)).append("\n");
-    sb.append("    taxWithAccounted: ").append(toIndentedString(taxWithAccounted)).append("\n");
+    sb.append("    taxwithaccounted: ").append(toIndentedString(taxwithaccounted)).append("\n");
     sb.append("}");
     return sb.toString();
   }

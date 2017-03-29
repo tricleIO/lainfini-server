@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,72 +34,108 @@ import java.util.Objects;
 /**
  * Intrastatcommodity
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Intrastatcommodity   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("UnitCode")
-  private String unitCode = null;
+  @SerializedName("unitcode")
+  private String unitcode = null;
 
-  @SerializedName("WeightIsOptional")
-  private Boolean weightIsOptional = null;
+  @SerializedName("weightisoptional")
+  private Boolean weightisoptional = null;
 
-  @SerializedName("ConstantWeight")
-  private Double constantWeight = null;
+  @SerializedName("constantweight")
+  private Double constantweight = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Intrastatcommodity displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Intrastatcommodity id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Intrastatcommodity classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Intrastatcommodity objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Intrastatcommodity hidden(Boolean hidden) {
@@ -108,10 +144,10 @@ public class Intrastatcommodity   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -126,10 +162,10 @@ public class Intrastatcommodity   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -144,10 +180,10 @@ public class Intrastatcommodity   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -156,58 +192,58 @@ public class Intrastatcommodity   {
     this.description = description;
   }
 
-  public Intrastatcommodity unitCode(String unitCode) {
-    this.unitCode = unitCode;
+  public Intrastatcommodity unitcode(String unitcode) {
+    this.unitcode = unitcode;
     return this;
   }
 
    /**
-   * Dop.měr.jednotka [persistentní položka]
-   * @return unitCode
+   * dop.měr.jednotka [persistentní položka]
+   * @return unitcode
   **/
-  @ApiModelProperty(example = "null", value = "Dop.měr.jednotka [persistentní položka]")
-  public String getUnitCode() {
-    return unitCode;
+  @ApiModelProperty(example = "null", value = "dop.měr.jednotka [persistentní položka]")
+  public String getUnitcode() {
+    return unitcode;
   }
 
-  public void setUnitCode(String unitCode) {
-    this.unitCode = unitCode;
+  public void setUnitcode(String unitcode) {
+    this.unitcode = unitcode;
   }
 
-  public Intrastatcommodity weightIsOptional(Boolean weightIsOptional) {
-    this.weightIsOptional = weightIsOptional;
+  public Intrastatcommodity weightisoptional(Boolean weightisoptional) {
+    this.weightisoptional = weightisoptional;
     return this;
   }
 
    /**
-   * Nepovinná hmotnost [persistentní položka]
-   * @return weightIsOptional
+   * nepovinná hmotnost [persistentní položka]
+   * @return weightisoptional
   **/
-  @ApiModelProperty(example = "null", value = "Nepovinná hmotnost [persistentní položka]")
-  public Boolean getWeightIsOptional() {
-    return weightIsOptional;
+  @ApiModelProperty(example = "null", value = "nepovinná hmotnost [persistentní položka]")
+  public Boolean getWeightisoptional() {
+    return weightisoptional;
   }
 
-  public void setWeightIsOptional(Boolean weightIsOptional) {
-    this.weightIsOptional = weightIsOptional;
+  public void setWeightisoptional(Boolean weightisoptional) {
+    this.weightisoptional = weightisoptional;
   }
 
-  public Intrastatcommodity constantWeight(Double constantWeight) {
-    this.constantWeight = constantWeight;
+  public Intrastatcommodity constantweight(Double constantweight) {
+    this.constantweight = constantweight;
     return this;
   }
 
    /**
-   * Vlastní hmotnost - konstantní hodnota [persistentní položka]
-   * @return constantWeight
+   * vlastní hmotnost - konstantní hodnota [persistentní položka]
+   * @return constantweight
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní hmotnost - konstantní hodnota [persistentní položka]")
-  public Double getConstantWeight() {
-    return constantWeight;
+  @ApiModelProperty(example = "null", value = "vlastní hmotnost - konstantní hodnota [persistentní položka]")
+  public Double getConstantweight() {
+    return constantweight;
   }
 
-  public void setConstantWeight(Double constantWeight) {
-    this.constantWeight = constantWeight;
+  public void setConstantweight(Double constantweight) {
+    this.constantweight = constantweight;
   }
 
 
@@ -220,21 +256,21 @@ public class Intrastatcommodity   {
       return false;
     }
     Intrastatcommodity intrastatcommodity = (Intrastatcommodity) o;
-    return Objects.equals(this.displayName, intrastatcommodity.displayName) &&
-        Objects.equals(this.ID, intrastatcommodity.ID) &&
-        Objects.equals(this.classID, intrastatcommodity.classID) &&
-        Objects.equals(this.objVersion, intrastatcommodity.objVersion) &&
+    return Objects.equals(this.displayname, intrastatcommodity.displayname) &&
+        Objects.equals(this.id, intrastatcommodity.id) &&
+        Objects.equals(this.classid, intrastatcommodity.classid) &&
+        Objects.equals(this.objversion, intrastatcommodity.objversion) &&
         Objects.equals(this.hidden, intrastatcommodity.hidden) &&
         Objects.equals(this.code, intrastatcommodity.code) &&
         Objects.equals(this.description, intrastatcommodity.description) &&
-        Objects.equals(this.unitCode, intrastatcommodity.unitCode) &&
-        Objects.equals(this.weightIsOptional, intrastatcommodity.weightIsOptional) &&
-        Objects.equals(this.constantWeight, intrastatcommodity.constantWeight);
+        Objects.equals(this.unitcode, intrastatcommodity.unitcode) &&
+        Objects.equals(this.weightisoptional, intrastatcommodity.weightisoptional) &&
+        Objects.equals(this.constantweight, intrastatcommodity.constantweight);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, description, unitCode, weightIsOptional, constantWeight);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, description, unitcode, weightisoptional, constantweight);
   }
 
   @Override
@@ -242,16 +278,16 @@ public class Intrastatcommodity   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Intrastatcommodity {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    unitCode: ").append(toIndentedString(unitCode)).append("\n");
-    sb.append("    weightIsOptional: ").append(toIndentedString(weightIsOptional)).append("\n");
-    sb.append("    constantWeight: ").append(toIndentedString(constantWeight)).append("\n");
+    sb.append("    unitcode: ").append(toIndentedString(unitcode)).append("\n");
+    sb.append("    weightisoptional: ").append(toIndentedString(weightisoptional)).append("\n");
+    sb.append("    constantweight: ").append(toIndentedString(constantweight)).append("\n");
     sb.append("}");
     return sb.toString();
   }

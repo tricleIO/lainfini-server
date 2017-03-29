@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,117 +34,153 @@ import java.util.Objects;
 /**
  * Crmactivityqueueperiod
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Crmactivityqueueperiod   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("LastNumber")
-  private Integer lastNumber = null;
+  @SerializedName("lastnumber")
+  private Integer lastnumber = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Crmactivityqueueperiod docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Crmactivityqueueperiod displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Řada; ID objektu Řada aktivit [persistentní položka]
-   * @return docQueueID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Řada; ID objektu Řada aktivit [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Crmactivityqueueperiod periodID(String periodID) {
-    this.periodID = periodID;
+  public Crmactivityqueueperiod id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Crmactivityqueueperiod lastNumber(Integer lastNumber) {
-    this.lastNumber = lastNumber;
+  public Crmactivityqueueperiod classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Poslední číslo [persistentní položka]
-   * @return lastNumber
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Poslední číslo [persistentní položka]")
-  public Integer getLastNumber() {
-    return lastNumber;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setLastNumber(Integer lastNumber) {
-    this.lastNumber = lastNumber;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Crmactivityqueueperiod objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Crmactivityqueueperiod docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
+    return this;
+  }
+
+   /**
+   * Řada; id objektu Řada aktivit [persistentní položka]
+   * @return docqueueId
+  **/
+  @ApiModelProperty(example = "null", value = "Řada; id objektu Řada aktivit [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
+  }
+
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
+  }
+
+  public Crmactivityqueueperiod periodId(String periodId) {
+    this.periodId = periodId;
+    return this;
+  }
+
+   /**
+   * období; id objektu období [persistentní položka]
+   * @return periodId
+  **/
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
+  }
+
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
+  }
+
+  public Crmactivityqueueperiod lastnumber(Integer lastnumber) {
+    this.lastnumber = lastnumber;
+    return this;
+  }
+
+   /**
+   * poslední číslo [persistentní položka]
+   * @return lastnumber
+  **/
+  @ApiModelProperty(example = "null", value = "poslední číslo [persistentní položka]")
+  public Integer getLastnumber() {
+    return lastnumber;
+  }
+
+  public void setLastnumber(Integer lastnumber) {
+    this.lastnumber = lastnumber;
   }
 
 
@@ -157,18 +193,18 @@ public class Crmactivityqueueperiod   {
       return false;
     }
     Crmactivityqueueperiod crmactivityqueueperiod = (Crmactivityqueueperiod) o;
-    return Objects.equals(this.displayName, crmactivityqueueperiod.displayName) &&
-        Objects.equals(this.ID, crmactivityqueueperiod.ID) &&
-        Objects.equals(this.classID, crmactivityqueueperiod.classID) &&
-        Objects.equals(this.objVersion, crmactivityqueueperiod.objVersion) &&
-        Objects.equals(this.docQueueID, crmactivityqueueperiod.docQueueID) &&
-        Objects.equals(this.periodID, crmactivityqueueperiod.periodID) &&
-        Objects.equals(this.lastNumber, crmactivityqueueperiod.lastNumber);
+    return Objects.equals(this.displayname, crmactivityqueueperiod.displayname) &&
+        Objects.equals(this.id, crmactivityqueueperiod.id) &&
+        Objects.equals(this.classid, crmactivityqueueperiod.classid) &&
+        Objects.equals(this.objversion, crmactivityqueueperiod.objversion) &&
+        Objects.equals(this.docqueueId, crmactivityqueueperiod.docqueueId) &&
+        Objects.equals(this.periodId, crmactivityqueueperiod.periodId) &&
+        Objects.equals(this.lastnumber, crmactivityqueueperiod.lastnumber);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, docQueueID, periodID, lastNumber);
+    return Objects.hash(displayname, id, classid, objversion, docqueueId, periodId, lastnumber);
   }
 
   @Override
@@ -176,13 +212,13 @@ public class Crmactivityqueueperiod   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Crmactivityqueueperiod {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    lastNumber: ").append(toIndentedString(lastNumber)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    lastnumber: ").append(toIndentedString(lastnumber)).append("\n");
     sb.append("}");
     return sb.toString();
   }

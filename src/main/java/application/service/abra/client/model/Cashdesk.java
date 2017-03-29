@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,90 +36,126 @@ import java.util.Objects;
 /**
  * Cashdesk
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Cashdesk   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Cashdeskbeginning> rows = new ArrayList<Cashdeskbeginning>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Account_ID")
-  private String accountID = null;
+  @SerializedName("account_id")
+  private String accountId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("FirstOpenPeriod_ID")
-  private String firstOpenPeriodID = null;
+  @SerializedName("firstopenperiod_id")
+  private String firstopenperiodId = null;
 
-  @SerializedName("LastOpenPeriod_ID")
-  private String lastOpenPeriodID = null;
+  @SerializedName("lastopenperiod_id")
+  private String lastopenperiodId = null;
 
-  @SerializedName("FirstLocalAmount")
-  private Double firstLocalAmount = null;
+  @SerializedName("firstlocalamount")
+  private Double firstlocalamount = null;
 
-  @SerializedName("FirstAmount")
-  private Double firstAmount = null;
+  @SerializedName("firstamount")
+  private Double firstamount = null;
 
-  @SerializedName("BalanceAmount")
-  private Double balanceAmount = null;
+  @SerializedName("balanceamount")
+  private Double balanceamount = null;
 
-  @SerializedName("LocalBalanceAmount")
-  private Double localBalanceAmount = null;
+  @SerializedName("localbalanceamount")
+  private Double localbalanceamount = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Cashdesk displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Cashdesk id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Cashdesk classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Cashdesk objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Cashdesk rows(List<Cashdeskbeginning> rows) {
@@ -133,10 +169,10 @@ public class Cashdesk   {
   }
 
    /**
-   * Počátky; kolekce BO Počátek pokladny [nepersistentní položka]
+   * počátky; kolekce bo počátek pokladny [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Počátky; kolekce BO Počátek pokladny [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "počátky; kolekce bo počátek pokladny [nepersistentní položka]")
   public List<Cashdeskbeginning> getRows() {
     return rows;
   }
@@ -151,10 +187,10 @@ public class Cashdesk   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -169,10 +205,10 @@ public class Cashdesk   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -181,121 +217,166 @@ public class Cashdesk   {
     this.name = name;
   }
 
-  public Cashdesk accountID(String accountID) {
-    this.accountID = accountID;
+  public Cashdesk accountId(String accountId) {
+    this.accountId = accountId;
     return this;
   }
 
    /**
-   * Účet; ID objektu Účet účetního rozvrhu [persistentní položka]
-   * @return accountID
+   * Účet; id objektu Účet účetního rozvrhu [persistentní položka]
+   * @return accountId
   **/
-  @ApiModelProperty(example = "null", value = "Účet; ID objektu Účet účetního rozvrhu [persistentní položka]")
-  public String getAccountID() {
-    return accountID;
+  @ApiModelProperty(example = "null", value = "Účet; id objektu Účet účetního rozvrhu [persistentní položka]")
+  public String getAccountId() {
+    return accountId;
   }
 
-  public void setAccountID(String accountID) {
-    this.accountID = accountID;
+  public void setAccountId(String accountId) {
+    this.accountId = accountId;
   }
 
-  public Cashdesk divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Cashdesk divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Cashdesk currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Cashdesk currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
-  public Cashdesk firstOpenPeriodID(String firstOpenPeriodID) {
-    this.firstOpenPeriodID = firstOpenPeriodID;
+  public Cashdesk firstopenperiodId(String firstopenperiodId) {
+    this.firstopenperiodId = firstopenperiodId;
     return this;
   }
 
    /**
-   * První období; ID objektu Období [persistentní položka]
-   * @return firstOpenPeriodID
+   * první období; id objektu období [persistentní položka]
+   * @return firstopenperiodId
   **/
-  @ApiModelProperty(example = "null", value = "První období; ID objektu Období [persistentní položka]")
-  public String getFirstOpenPeriodID() {
-    return firstOpenPeriodID;
+  @ApiModelProperty(example = "null", value = "první období; id objektu období [persistentní položka]")
+  public String getFirstopenperiodId() {
+    return firstopenperiodId;
   }
 
-  public void setFirstOpenPeriodID(String firstOpenPeriodID) {
-    this.firstOpenPeriodID = firstOpenPeriodID;
+  public void setFirstopenperiodId(String firstopenperiodId) {
+    this.firstopenperiodId = firstopenperiodId;
   }
 
-   /**
-   * Akt.období; ID objektu Období [persistentní položka]
-   * @return lastOpenPeriodID
-  **/
-  @ApiModelProperty(example = "null", value = "Akt.období; ID objektu Období [persistentní položka]")
-  public String getLastOpenPeriodID() {
-    return lastOpenPeriodID;
+  public Cashdesk lastopenperiodId(String lastopenperiodId) {
+    this.lastopenperiodId = lastopenperiodId;
+    return this;
   }
 
    /**
-   * Lokál.částka prvního poč.
-   * @return firstLocalAmount
+   * akt.období; id objektu období [persistentní položka]
+   * @return lastopenperiodId
   **/
-  @ApiModelProperty(example = "null", value = "Lokál.částka prvního poč.")
-  public Double getFirstLocalAmount() {
-    return firstLocalAmount;
+  @ApiModelProperty(example = "null", value = "akt.období; id objektu období [persistentní položka]")
+  public String getLastopenperiodId() {
+    return lastopenperiodId;
+  }
+
+  public void setLastopenperiodId(String lastopenperiodId) {
+    this.lastopenperiodId = lastopenperiodId;
+  }
+
+  public Cashdesk firstlocalamount(Double firstlocalamount) {
+    this.firstlocalamount = firstlocalamount;
+    return this;
+  }
+
+   /**
+   * lokál.částka prvního poč.
+   * @return firstlocalamount
+  **/
+  @ApiModelProperty(example = "null", value = "lokál.částka prvního poč.")
+  public Double getFirstlocalamount() {
+    return firstlocalamount;
+  }
+
+  public void setFirstlocalamount(Double firstlocalamount) {
+    this.firstlocalamount = firstlocalamount;
+  }
+
+  public Cashdesk firstamount(Double firstamount) {
+    this.firstamount = firstamount;
+    return this;
   }
 
    /**
    * Částka prvního poč.
-   * @return firstAmount
+   * @return firstamount
   **/
   @ApiModelProperty(example = "null", value = "Částka prvního poč.")
-  public Double getFirstAmount() {
-    return firstAmount;
+  public Double getFirstamount() {
+    return firstamount;
+  }
+
+  public void setFirstamount(Double firstamount) {
+    this.firstamount = firstamount;
+  }
+
+  public Cashdesk balanceamount(Double balanceamount) {
+    this.balanceamount = balanceamount;
+    return this;
   }
 
    /**
-   * Zůstatek
-   * @return balanceAmount
+   * zůstatek
+   * @return balanceamount
   **/
-  @ApiModelProperty(example = "null", value = "Zůstatek")
-  public Double getBalanceAmount() {
-    return balanceAmount;
+  @ApiModelProperty(example = "null", value = "zůstatek")
+  public Double getBalanceamount() {
+    return balanceamount;
+  }
+
+  public void setBalanceamount(Double balanceamount) {
+    this.balanceamount = balanceamount;
+  }
+
+  public Cashdesk localbalanceamount(Double localbalanceamount) {
+    this.localbalanceamount = localbalanceamount;
+    return this;
   }
 
    /**
-   * Zůstatek lok.
-   * @return localBalanceAmount
+   * zůstatek lok.
+   * @return localbalanceamount
   **/
-  @ApiModelProperty(example = "null", value = "Zůstatek lok.")
-  public Double getLocalBalanceAmount() {
-    return localBalanceAmount;
+  @ApiModelProperty(example = "null", value = "zůstatek lok.")
+  public Double getLocalbalanceamount() {
+    return localbalanceamount;
+  }
+
+  public void setLocalbalanceamount(Double localbalanceamount) {
+    this.localbalanceamount = localbalanceamount;
   }
 
 
@@ -308,27 +389,27 @@ public class Cashdesk   {
       return false;
     }
     Cashdesk cashdesk = (Cashdesk) o;
-    return Objects.equals(this.displayName, cashdesk.displayName) &&
-        Objects.equals(this.ID, cashdesk.ID) &&
-        Objects.equals(this.classID, cashdesk.classID) &&
-        Objects.equals(this.objVersion, cashdesk.objVersion) &&
+    return Objects.equals(this.displayname, cashdesk.displayname) &&
+        Objects.equals(this.id, cashdesk.id) &&
+        Objects.equals(this.classid, cashdesk.classid) &&
+        Objects.equals(this.objversion, cashdesk.objversion) &&
         Objects.equals(this.rows, cashdesk.rows) &&
         Objects.equals(this.hidden, cashdesk.hidden) &&
         Objects.equals(this.name, cashdesk.name) &&
-        Objects.equals(this.accountID, cashdesk.accountID) &&
-        Objects.equals(this.divisionID, cashdesk.divisionID) &&
-        Objects.equals(this.currencyID, cashdesk.currencyID) &&
-        Objects.equals(this.firstOpenPeriodID, cashdesk.firstOpenPeriodID) &&
-        Objects.equals(this.lastOpenPeriodID, cashdesk.lastOpenPeriodID) &&
-        Objects.equals(this.firstLocalAmount, cashdesk.firstLocalAmount) &&
-        Objects.equals(this.firstAmount, cashdesk.firstAmount) &&
-        Objects.equals(this.balanceAmount, cashdesk.balanceAmount) &&
-        Objects.equals(this.localBalanceAmount, cashdesk.localBalanceAmount);
+        Objects.equals(this.accountId, cashdesk.accountId) &&
+        Objects.equals(this.divisionId, cashdesk.divisionId) &&
+        Objects.equals(this.currencyId, cashdesk.currencyId) &&
+        Objects.equals(this.firstopenperiodId, cashdesk.firstopenperiodId) &&
+        Objects.equals(this.lastopenperiodId, cashdesk.lastopenperiodId) &&
+        Objects.equals(this.firstlocalamount, cashdesk.firstlocalamount) &&
+        Objects.equals(this.firstamount, cashdesk.firstamount) &&
+        Objects.equals(this.balanceamount, cashdesk.balanceamount) &&
+        Objects.equals(this.localbalanceamount, cashdesk.localbalanceamount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, name, accountID, divisionID, currencyID, firstOpenPeriodID, lastOpenPeriodID, firstLocalAmount, firstAmount, balanceAmount, localBalanceAmount);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, name, accountId, divisionId, currencyId, firstopenperiodId, lastopenperiodId, firstlocalamount, firstamount, balanceamount, localbalanceamount);
   }
 
   @Override
@@ -336,22 +417,22 @@ public class Cashdesk   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Cashdesk {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    accountID: ").append(toIndentedString(accountID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    firstOpenPeriodID: ").append(toIndentedString(firstOpenPeriodID)).append("\n");
-    sb.append("    lastOpenPeriodID: ").append(toIndentedString(lastOpenPeriodID)).append("\n");
-    sb.append("    firstLocalAmount: ").append(toIndentedString(firstLocalAmount)).append("\n");
-    sb.append("    firstAmount: ").append(toIndentedString(firstAmount)).append("\n");
-    sb.append("    balanceAmount: ").append(toIndentedString(balanceAmount)).append("\n");
-    sb.append("    localBalanceAmount: ").append(toIndentedString(localBalanceAmount)).append("\n");
+    sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    firstopenperiodId: ").append(toIndentedString(firstopenperiodId)).append("\n");
+    sb.append("    lastopenperiodId: ").append(toIndentedString(lastopenperiodId)).append("\n");
+    sb.append("    firstlocalamount: ").append(toIndentedString(firstlocalamount)).append("\n");
+    sb.append("    firstamount: ").append(toIndentedString(firstamount)).append("\n");
+    sb.append("    balanceamount: ").append(toIndentedString(balanceamount)).append("\n");
+    sb.append("    localbalanceamount: ").append(toIndentedString(localbalanceamount)).append("\n");
     sb.append("}");
     return sb.toString();
   }

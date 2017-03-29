@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,93 +37,129 @@ import java.util.Objects;
 /**
  * Productiontask
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Productiontask   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Productiontaskrow> rows = new ArrayList<Productiontaskrow>();
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("PlannedQuantity")
-  private Double plannedQuantity = null;
+  @SerializedName("plannedquantity")
+  private Double plannedquantity = null;
 
-  @SerializedName("DeadLine$DATE")
-  private DateTime deadLineDATE = null;
+  @SerializedName("deadline$date")
+  private DateTime deadlinedate = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("Ordnumber")
+  @SerializedName("ordnumber")
   private Integer ordnumber = null;
 
-  @SerializedName("Text")
+  @SerializedName("text")
   private String text = null;
 
-  @SerializedName("OwnerType")
-  private Integer ownerType = null;
+  @SerializedName("ownertype")
+  private Integer ownertype = null;
 
-  @SerializedName("CreatedAt$DATE")
-  private DateTime createdAtDATE = null;
+  @SerializedName("createdat$date")
+  private DateTime createdatdate = null;
 
-  @SerializedName("CorrectedAt$DATE")
-  private DateTime correctedAtDATE = null;
+  @SerializedName("correctedat$date")
+  private DateTime correctedatdate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Productiontask displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Productiontask id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Productiontask classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Productiontask objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Productiontask rows(List<Productiontaskrow> rows) {
@@ -137,10 +173,10 @@ public class Productiontask   {
   }
 
    /**
-   * Řádky; kolekce BO Výrobní úloha - řádek [nepersistentní položka]
+   * Řádky; kolekce bo výrobní úloha - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Výrobní úloha - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo výrobní úloha - řádek [nepersistentní položka]")
   public List<Productiontaskrow> getRows() {
     return rows;
   }
@@ -149,76 +185,76 @@ public class Productiontask   {
     this.rows = rows;
   }
 
-  public Productiontask storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Productiontask storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Skl. karta výrobku; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * skl. karta výrobku; id objektu skladová karta [persistentní položka]
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skl. karta výrobku; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "skl. karta výrobku; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
   }
 
-  public Productiontask storeID(String storeID) {
-    this.storeID = storeID;
+  public Productiontask storeId(String storeId) {
+    this.storeId = storeId;
     return this;
   }
 
    /**
-   * Sklad výrobku; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * sklad výrobku; id objektu sklad [persistentní položka]
+   * @return storeId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad výrobku; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "sklad výrobku; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
-  public Productiontask plannedQuantity(Double plannedQuantity) {
-    this.plannedQuantity = plannedQuantity;
+  public Productiontask plannedquantity(Double plannedquantity) {
+    this.plannedquantity = plannedquantity;
     return this;
   }
 
    /**
-   * Plánováno [persistentní položka]
-   * @return plannedQuantity
+   * plánováno [persistentní položka]
+   * @return plannedquantity
   **/
-  @ApiModelProperty(example = "null", value = "Plánováno [persistentní položka]")
-  public Double getPlannedQuantity() {
-    return plannedQuantity;
+  @ApiModelProperty(example = "null", value = "plánováno [persistentní položka]")
+  public Double getPlannedquantity() {
+    return plannedquantity;
   }
 
-  public void setPlannedQuantity(Double plannedQuantity) {
-    this.plannedQuantity = plannedQuantity;
+  public void setPlannedquantity(Double plannedquantity) {
+    this.plannedquantity = plannedquantity;
   }
 
-  public Productiontask deadLineDATE(DateTime deadLineDATE) {
-    this.deadLineDATE = deadLineDATE;
+  public Productiontask deadlinedate(DateTime deadlinedate) {
+    this.deadlinedate = deadlinedate;
     return this;
   }
 
    /**
-   * Termín [persistentní položka]
-   * @return deadLineDATE
+   * termín [persistentní položka]
+   * @return deadlinedate
   **/
-  @ApiModelProperty(example = "null", value = "Termín [persistentní položka]")
-  public DateTime getDeadLineDATE() {
-    return deadLineDATE;
+  @ApiModelProperty(example = "null", value = "termín [persistentní položka]")
+  public DateTime getDeadlinedate() {
+    return deadlinedate;
   }
 
-  public void setDeadLineDATE(DateTime deadLineDATE) {
-    this.deadLineDATE = deadLineDATE;
+  public void setDeadlinedate(DateTime deadlinedate) {
+    this.deadlinedate = deadlinedate;
   }
 
   public Productiontask quantity(Double quantity) {
@@ -227,10 +263,10 @@ public class Productiontask   {
   }
 
    /**
-   * Přijato výrobků [persistentní položka]
+   * přijato výrobků [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Přijato výrobků [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "přijato výrobků [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -239,40 +275,40 @@ public class Productiontask   {
     this.quantity = quantity;
   }
 
-  public Productiontask docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Productiontask docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * Řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "Řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Productiontask periodID(String periodID) {
-    this.periodID = periodID;
+  public Productiontask periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
   public Productiontask ordnumber(Integer ordnumber) {
@@ -299,10 +335,10 @@ public class Productiontask   {
   }
 
    /**
-   * Text [persistentní položka]
+   * text [persistentní položka]
    * @return text
   **/
-  @ApiModelProperty(example = "null", value = "Text [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "text [persistentní položka]")
   public String getText() {
     return text;
   }
@@ -311,58 +347,58 @@ public class Productiontask   {
     this.text = text;
   }
 
-  public Productiontask ownerType(Integer ownerType) {
-    this.ownerType = ownerType;
+  public Productiontask ownertype(Integer ownertype) {
+    this.ownertype = ownertype;
     return this;
   }
 
    /**
-   * Typ vlastníka [persistentní položka]
-   * @return ownerType
+   * typ vlastníka [persistentní položka]
+   * @return ownertype
   **/
-  @ApiModelProperty(example = "null", value = "Typ vlastníka [persistentní položka]")
-  public Integer getOwnerType() {
-    return ownerType;
+  @ApiModelProperty(example = "null", value = "typ vlastníka [persistentní položka]")
+  public Integer getOwnertype() {
+    return ownertype;
   }
 
-  public void setOwnerType(Integer ownerType) {
-    this.ownerType = ownerType;
+  public void setOwnertype(Integer ownertype) {
+    this.ownertype = ownertype;
   }
 
-  public Productiontask createdAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public Productiontask createdatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
     return this;
   }
 
    /**
-   * Vytvořeno [persistentní položka]
-   * @return createdAtDATE
+   * vytvořeno [persistentní položka]
+   * @return createdatdate
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořeno [persistentní položka]")
-  public DateTime getCreatedAtDATE() {
-    return createdAtDATE;
+  @ApiModelProperty(example = "null", value = "vytvořeno [persistentní položka]")
+  public DateTime getCreatedatdate() {
+    return createdatdate;
   }
 
-  public void setCreatedAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public void setCreatedatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
   }
 
-  public Productiontask correctedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public Productiontask correctedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
     return this;
   }
 
    /**
-   * Opraveno [persistentní položka]
-   * @return correctedAtDATE
+   * opraveno [persistentní položka]
+   * @return correctedatdate
   **/
-  @ApiModelProperty(example = "null", value = "Opraveno [persistentní položka]")
-  public DateTime getCorrectedAtDATE() {
-    return correctedAtDATE;
+  @ApiModelProperty(example = "null", value = "opraveno [persistentní položka]")
+  public DateTime getCorrectedatdate() {
+    return correctedatdate;
   }
 
-  public void setCorrectedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public void setCorrectedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
   }
 
 
@@ -375,28 +411,28 @@ public class Productiontask   {
       return false;
     }
     Productiontask productiontask = (Productiontask) o;
-    return Objects.equals(this.displayName, productiontask.displayName) &&
-        Objects.equals(this.ID, productiontask.ID) &&
-        Objects.equals(this.classID, productiontask.classID) &&
-        Objects.equals(this.objVersion, productiontask.objVersion) &&
+    return Objects.equals(this.displayname, productiontask.displayname) &&
+        Objects.equals(this.id, productiontask.id) &&
+        Objects.equals(this.classid, productiontask.classid) &&
+        Objects.equals(this.objversion, productiontask.objversion) &&
         Objects.equals(this.rows, productiontask.rows) &&
-        Objects.equals(this.storeCardID, productiontask.storeCardID) &&
-        Objects.equals(this.storeID, productiontask.storeID) &&
-        Objects.equals(this.plannedQuantity, productiontask.plannedQuantity) &&
-        Objects.equals(this.deadLineDATE, productiontask.deadLineDATE) &&
+        Objects.equals(this.storecardId, productiontask.storecardId) &&
+        Objects.equals(this.storeId, productiontask.storeId) &&
+        Objects.equals(this.plannedquantity, productiontask.plannedquantity) &&
+        Objects.equals(this.deadlinedate, productiontask.deadlinedate) &&
         Objects.equals(this.quantity, productiontask.quantity) &&
-        Objects.equals(this.docQueueID, productiontask.docQueueID) &&
-        Objects.equals(this.periodID, productiontask.periodID) &&
+        Objects.equals(this.docqueueId, productiontask.docqueueId) &&
+        Objects.equals(this.periodId, productiontask.periodId) &&
         Objects.equals(this.ordnumber, productiontask.ordnumber) &&
         Objects.equals(this.text, productiontask.text) &&
-        Objects.equals(this.ownerType, productiontask.ownerType) &&
-        Objects.equals(this.createdAtDATE, productiontask.createdAtDATE) &&
-        Objects.equals(this.correctedAtDATE, productiontask.correctedAtDATE);
+        Objects.equals(this.ownertype, productiontask.ownertype) &&
+        Objects.equals(this.createdatdate, productiontask.createdatdate) &&
+        Objects.equals(this.correctedatdate, productiontask.correctedatdate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, storeCardID, storeID, plannedQuantity, deadLineDATE, quantity, docQueueID, periodID, ordnumber, text, ownerType, createdAtDATE, correctedAtDATE);
+    return Objects.hash(displayname, id, classid, objversion, rows, storecardId, storeId, plannedquantity, deadlinedate, quantity, docqueueId, periodId, ordnumber, text, ownertype, createdatdate, correctedatdate);
   }
 
   @Override
@@ -404,23 +440,23 @@ public class Productiontask   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Productiontask {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    plannedQuantity: ").append(toIndentedString(plannedQuantity)).append("\n");
-    sb.append("    deadLineDATE: ").append(toIndentedString(deadLineDATE)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    plannedquantity: ").append(toIndentedString(plannedquantity)).append("\n");
+    sb.append("    deadlinedate: ").append(toIndentedString(deadlinedate)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
     sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
-    sb.append("    ownerType: ").append(toIndentedString(ownerType)).append("\n");
-    sb.append("    createdAtDATE: ").append(toIndentedString(createdAtDATE)).append("\n");
-    sb.append("    correctedAtDATE: ").append(toIndentedString(correctedAtDATE)).append("\n");
+    sb.append("    ownertype: ").append(toIndentedString(ownertype)).append("\n");
+    sb.append("    createdatdate: ").append(toIndentedString(createdatdate)).append("\n");
+    sb.append("    correctedatdate: ").append(toIndentedString(correctedatdate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,138 +34,174 @@ import java.util.Objects;
 /**
  * Emailreceiveduidl
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Emailreceiveduidl   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("UIDL")
-  private String UIDL = null;
+  @SerializedName("uidl")
+  private String uidl = null;
 
-  @SerializedName("EmailAccount_ID")
-  private String emailAccountID = null;
+  @SerializedName("emailaccount_id")
+  private String emailaccountId = null;
 
-  @SerializedName("EmailReceivedOID")
-  private String emailReceivedOID = null;
+  @SerializedName("emailreceivedoid")
+  private String emailreceivedoid = null;
 
-  @SerializedName("IsDownloaded")
-  private Boolean isDownloaded = null;
+  @SerializedName("isdownloaded")
+  private Boolean isdownloaded = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Emailreceiveduidl UIDL(String UIDL) {
-    this.UIDL = UIDL;
+  public Emailreceiveduidl displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Unikátní POP3 ID [persistentní položka]
-   * @return UIDL
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Unikátní POP3 ID [persistentní položka]")
-  public String getUIDL() {
-    return UIDL;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setUIDL(String UIDL) {
-    this.UIDL = UIDL;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Emailreceiveduidl emailAccountID(String emailAccountID) {
-    this.emailAccountID = emailAccountID;
+  public Emailreceiveduidl id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Vlastní e-mail. účet; ID objektu E-mailový účet [persistentní položka]
-   * @return emailAccountID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní e-mail. účet; ID objektu E-mailový účet [persistentní položka]")
-  public String getEmailAccountID() {
-    return emailAccountID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setEmailAccountID(String emailAccountID) {
-    this.emailAccountID = emailAccountID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Emailreceiveduidl emailReceivedOID(String emailReceivedOID) {
-    this.emailReceivedOID = emailReceivedOID;
+  public Emailreceiveduidl classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Doručený e-mail [persistentní položka]
-   * @return emailReceivedOID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Doručený e-mail [persistentní položka]")
-  public String getEmailReceivedOID() {
-    return emailReceivedOID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setEmailReceivedOID(String emailReceivedOID) {
-    this.emailReceivedOID = emailReceivedOID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Emailreceiveduidl isDownloaded(Boolean isDownloaded) {
-    this.isDownloaded = isDownloaded;
+  public Emailreceiveduidl objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Staženo [persistentní položka]
-   * @return isDownloaded
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Staženo [persistentní položka]")
-  public Boolean getIsDownloaded() {
-    return isDownloaded;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setIsDownloaded(Boolean isDownloaded) {
-    this.isDownloaded = isDownloaded;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Emailreceiveduidl uidl(String uidl) {
+    this.uidl = uidl;
+    return this;
+  }
+
+   /**
+   * unikátní pop3 id [persistentní položka]
+   * @return uidl
+  **/
+  @ApiModelProperty(example = "null", value = "unikátní pop3 id [persistentní položka]")
+  public String getUidl() {
+    return uidl;
+  }
+
+  public void setUidl(String uidl) {
+    this.uidl = uidl;
+  }
+
+  public Emailreceiveduidl emailaccountId(String emailaccountId) {
+    this.emailaccountId = emailaccountId;
+    return this;
+  }
+
+   /**
+   * vlastní e-mail. účet; id objektu e-mailový účet [persistentní položka]
+   * @return emailaccountId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní e-mail. účet; id objektu e-mailový účet [persistentní položka]")
+  public String getEmailaccountId() {
+    return emailaccountId;
+  }
+
+  public void setEmailaccountId(String emailaccountId) {
+    this.emailaccountId = emailaccountId;
+  }
+
+  public Emailreceiveduidl emailreceivedoid(String emailreceivedoid) {
+    this.emailreceivedoid = emailreceivedoid;
+    return this;
+  }
+
+   /**
+   * doručený e-mail [persistentní položka]
+   * @return emailreceivedoid
+  **/
+  @ApiModelProperty(example = "null", value = "doručený e-mail [persistentní položka]")
+  public String getEmailreceivedoid() {
+    return emailreceivedoid;
+  }
+
+  public void setEmailreceivedoid(String emailreceivedoid) {
+    this.emailreceivedoid = emailreceivedoid;
+  }
+
+  public Emailreceiveduidl isdownloaded(Boolean isdownloaded) {
+    this.isdownloaded = isdownloaded;
+    return this;
+  }
+
+   /**
+   * staženo [persistentní položka]
+   * @return isdownloaded
+  **/
+  @ApiModelProperty(example = "null", value = "staženo [persistentní položka]")
+  public Boolean getIsdownloaded() {
+    return isdownloaded;
+  }
+
+  public void setIsdownloaded(Boolean isdownloaded) {
+    this.isdownloaded = isdownloaded;
   }
 
 
@@ -178,19 +214,19 @@ public class Emailreceiveduidl   {
       return false;
     }
     Emailreceiveduidl emailreceiveduidl = (Emailreceiveduidl) o;
-    return Objects.equals(this.displayName, emailreceiveduidl.displayName) &&
-        Objects.equals(this.ID, emailreceiveduidl.ID) &&
-        Objects.equals(this.classID, emailreceiveduidl.classID) &&
-        Objects.equals(this.objVersion, emailreceiveduidl.objVersion) &&
-        Objects.equals(this.UIDL, emailreceiveduidl.UIDL) &&
-        Objects.equals(this.emailAccountID, emailreceiveduidl.emailAccountID) &&
-        Objects.equals(this.emailReceivedOID, emailreceiveduidl.emailReceivedOID) &&
-        Objects.equals(this.isDownloaded, emailreceiveduidl.isDownloaded);
+    return Objects.equals(this.displayname, emailreceiveduidl.displayname) &&
+        Objects.equals(this.id, emailreceiveduidl.id) &&
+        Objects.equals(this.classid, emailreceiveduidl.classid) &&
+        Objects.equals(this.objversion, emailreceiveduidl.objversion) &&
+        Objects.equals(this.uidl, emailreceiveduidl.uidl) &&
+        Objects.equals(this.emailaccountId, emailreceiveduidl.emailaccountId) &&
+        Objects.equals(this.emailreceivedoid, emailreceiveduidl.emailreceivedoid) &&
+        Objects.equals(this.isdownloaded, emailreceiveduidl.isdownloaded);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, UIDL, emailAccountID, emailReceivedOID, isDownloaded);
+    return Objects.hash(displayname, id, classid, objversion, uidl, emailaccountId, emailreceivedoid, isdownloaded);
   }
 
   @Override
@@ -198,14 +234,14 @@ public class Emailreceiveduidl   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Emailreceiveduidl {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    UIDL: ").append(toIndentedString(UIDL)).append("\n");
-    sb.append("    emailAccountID: ").append(toIndentedString(emailAccountID)).append("\n");
-    sb.append("    emailReceivedOID: ").append(toIndentedString(emailReceivedOID)).append("\n");
-    sb.append("    isDownloaded: ").append(toIndentedString(isDownloaded)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    uidl: ").append(toIndentedString(uidl)).append("\n");
+    sb.append("    emailaccountId: ").append(toIndentedString(emailaccountId)).append("\n");
+    sb.append("    emailreceivedoid: ").append(toIndentedString(emailreceivedoid)).append("\n");
+    sb.append("    isdownloaded: ").append(toIndentedString(isdownloaded)).append("\n");
     sb.append("}");
     return sb.toString();
   }

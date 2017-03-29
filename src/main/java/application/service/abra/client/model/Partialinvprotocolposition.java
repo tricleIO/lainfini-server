@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,96 +34,132 @@ import java.util.Objects;
 /**
  * Partialinvprotocolposition
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Partialinvprotocolposition   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("MIPPosition_ID")
-  private String mIPPositionID = null;
+  @SerializedName("mipposition_id")
+  private String mippositionId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Partialinvprotocolposition parentID(String parentID) {
-    this.parentID = parentID;
+  public Partialinvprotocolposition displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Dílčí inventární protokol; ID objektu Hlavní inventární protokol [persistentní položka]
-   * @return parentID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Dílčí inventární protokol; ID objektu Hlavní inventární protokol [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setParentID(String parentID) {
-    this.parentID = parentID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Partialinvprotocolposition mIPPositionID(String mIPPositionID) {
-    this.mIPPositionID = mIPPositionID;
+  public Partialinvprotocolposition id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Hlavní inventární protokol - pozice; ID objektu Hlavní inventární protokol - pozice [persistentní položka]
-   * @return mIPPositionID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Hlavní inventární protokol - pozice; ID objektu Hlavní inventární protokol - pozice [persistentní položka]")
-  public String getMIPPositionID() {
-    return mIPPositionID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setMIPPositionID(String mIPPositionID) {
-    this.mIPPositionID = mIPPositionID;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Partialinvprotocolposition classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Partialinvprotocolposition objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Partialinvprotocolposition parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * dílčí inventární protokol; id objektu hlavní inventární protokol [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "dílčí inventární protokol; id objektu hlavní inventární protokol [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Partialinvprotocolposition mippositionId(String mippositionId) {
+    this.mippositionId = mippositionId;
+    return this;
+  }
+
+   /**
+   * hlavní inventární protokol - pozice; id objektu hlavní inventární protokol - pozice [persistentní položka]
+   * @return mippositionId
+  **/
+  @ApiModelProperty(example = "null", value = "hlavní inventární protokol - pozice; id objektu hlavní inventární protokol - pozice [persistentní položka]")
+  public String getMippositionId() {
+    return mippositionId;
+  }
+
+  public void setMippositionId(String mippositionId) {
+    this.mippositionId = mippositionId;
   }
 
 
@@ -136,17 +172,17 @@ public class Partialinvprotocolposition   {
       return false;
     }
     Partialinvprotocolposition partialinvprotocolposition = (Partialinvprotocolposition) o;
-    return Objects.equals(this.displayName, partialinvprotocolposition.displayName) &&
-        Objects.equals(this.ID, partialinvprotocolposition.ID) &&
-        Objects.equals(this.classID, partialinvprotocolposition.classID) &&
-        Objects.equals(this.objVersion, partialinvprotocolposition.objVersion) &&
-        Objects.equals(this.parentID, partialinvprotocolposition.parentID) &&
-        Objects.equals(this.mIPPositionID, partialinvprotocolposition.mIPPositionID);
+    return Objects.equals(this.displayname, partialinvprotocolposition.displayname) &&
+        Objects.equals(this.id, partialinvprotocolposition.id) &&
+        Objects.equals(this.classid, partialinvprotocolposition.classid) &&
+        Objects.equals(this.objversion, partialinvprotocolposition.objversion) &&
+        Objects.equals(this.parentId, partialinvprotocolposition.parentId) &&
+        Objects.equals(this.mippositionId, partialinvprotocolposition.mippositionId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, mIPPositionID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, mippositionId);
   }
 
   @Override
@@ -154,12 +190,12 @@ public class Partialinvprotocolposition   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Partialinvprotocolposition {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    mIPPositionID: ").append(toIndentedString(mIPPositionID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    mippositionId: ").append(toIndentedString(mippositionId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

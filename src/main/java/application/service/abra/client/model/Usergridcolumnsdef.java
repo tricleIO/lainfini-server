@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,231 +34,267 @@ import java.util.Objects;
 /**
  * Usergridcolumnsdef
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Usergridcolumnsdef   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("SiteID")
-  private String siteID = null;
+  @SerializedName("siteid")
+  private String siteid = null;
 
-  @SerializedName("GridID")
-  private String gridID = null;
+  @SerializedName("gridid")
+  private String gridid = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-  @SerializedName("Title")
+  @SerializedName("title")
   private String title = null;
 
-  @SerializedName("DefaultSize")
-  private Integer defaultSize = null;
+  @SerializedName("defaultsize")
+  private Integer defaultsize = null;
 
-  @SerializedName("ColumnType")
-  private Integer columnType = null;
+  @SerializedName("columntype")
+  private Integer columntype = null;
 
-  @SerializedName("FieldName")
-  private String fieldName = null;
+  @SerializedName("fieldname")
+  private String fieldname = null;
 
-  @SerializedName("Expression")
+  @SerializedName("expression")
   private String expression = null;
 
-  @SerializedName("DisplayType")
-  private Integer displayType = null;
+  @SerializedName("displaytype")
+  private Integer displaytype = null;
 
-  @SerializedName("DisplayLinkedField")
-  private String displayLinkedField = null;
+  @SerializedName("displaylinkedfield")
+  private String displaylinkedfield = null;
 
-  @SerializedName("ConditionalFormat")
-  private Boolean conditionalFormat = null;
+  @SerializedName("conditionalformat")
+  private Boolean conditionalformat = null;
 
-  @SerializedName("Condition")
+  @SerializedName("condition")
   private String condition = null;
 
-  @SerializedName("IsCondForeColor")
-  private Boolean isCondForeColor = null;
+  @SerializedName("iscondforecolor")
+  private Boolean iscondforecolor = null;
 
-  @SerializedName("CondForeColor")
-  private Integer condForeColor = null;
+  @SerializedName("condforecolor")
+  private Integer condforecolor = null;
 
-  @SerializedName("IsCondBackColor")
-  private Boolean isCondBackColor = null;
+  @SerializedName("iscondbackcolor")
+  private Boolean iscondbackcolor = null;
 
-  @SerializedName("CondBackColor")
-  private Integer condBackColor = null;
+  @SerializedName("condbackcolor")
+  private Integer condbackcolor = null;
 
-  @SerializedName("CondBold")
-  private Boolean condBold = null;
+  @SerializedName("condbold")
+  private Boolean condbold = null;
 
-  @SerializedName("CondItalic")
-  private Boolean condItalic = null;
+  @SerializedName("conditalic")
+  private Boolean conditalic = null;
 
-  @SerializedName("Alignment")
+  @SerializedName("alignment")
   private Integer alignment = null;
 
-  @SerializedName("IsForeColor")
-  private Boolean isForeColor = null;
+  @SerializedName("isforecolor")
+  private Boolean isforecolor = null;
 
-  @SerializedName("ForeColor")
-  private Integer foreColor = null;
+  @SerializedName("forecolor")
+  private Integer forecolor = null;
 
-  @SerializedName("IsBackColor")
-  private Boolean isBackColor = null;
+  @SerializedName("isbackcolor")
+  private Boolean isbackcolor = null;
 
-  @SerializedName("BackColor")
-  private Integer backColor = null;
+  @SerializedName("backcolor")
+  private Integer backcolor = null;
 
-  @SerializedName("Bold")
+  @SerializedName("bold")
   private Boolean bold = null;
 
-  @SerializedName("Italic")
+  @SerializedName("italic")
   private Boolean italic = null;
 
-  @SerializedName("DisplayMask")
-  private String displayMask = null;
+  @SerializedName("displaymask")
+  private String displaymask = null;
 
-  @SerializedName("DisplayPercent")
-  private Boolean displayPercent = null;
+  @SerializedName("displaypercent")
+  private Boolean displaypercent = null;
 
-  @SerializedName("IsOver100Color")
-  private Boolean isOver100Color = null;
+  @SerializedName("isover100color")
+  private Boolean isover100color = null;
 
-  @SerializedName("Over100Color")
-  private Integer over100Color = null;
+  @SerializedName("over100color")
+  private Integer over100color = null;
 
-  @SerializedName("ColumnID")
-  private String columnID = null;
+  @SerializedName("columnid")
+  private String columnid = null;
 
-  @SerializedName("ProtectViaViewPurchasePrices")
-  private Boolean protectViaViewPurchasePrices = null;
+  @SerializedName("protectviaviewpurchaseprices")
+  private Boolean protectviaviewpurchaseprices = null;
 
-  @SerializedName("BusinessObjectCLSID")
-  private String businessObjectCLSID = null;
+  @SerializedName("businessobjectclsid")
+  private String businessobjectclsid = null;
 
-  @SerializedName("BusinessObjectCLSIDText")
-  private String businessObjectCLSIDText = null;
+  @SerializedName("businessobjectclsidtext")
+  private String businessobjectclsidtext = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Usergridcolumnsdef siteID(String siteID) {
-    this.siteID = siteID;
+  public Usergridcolumnsdef displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * SiteID [persistentní položka]
-   * @return siteID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "SiteID [persistentní položka]")
-  public String getSiteID() {
-    return siteID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setSiteID(String siteID) {
-    this.siteID = siteID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Usergridcolumnsdef gridID(String gridID) {
-    this.gridID = gridID;
+  public Usergridcolumnsdef id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * GridID [persistentní položka]
-   * @return gridID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "GridID [persistentní položka]")
-  public String getGridID() {
-    return gridID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setGridID(String gridID) {
-    this.gridID = gridID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Usergridcolumnsdef createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Usergridcolumnsdef classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Usergridcolumnsdef correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Usergridcolumnsdef objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Usergridcolumnsdef siteid(String siteid) {
+    this.siteid = siteid;
+    return this;
+  }
+
+   /**
+   * siteid [persistentní položka]
+   * @return siteid
+  **/
+  @ApiModelProperty(example = "null", value = "siteid [persistentní položka]")
+  public String getSiteid() {
+    return siteid;
+  }
+
+  public void setSiteid(String siteid) {
+    this.siteid = siteid;
+  }
+
+  public Usergridcolumnsdef gridid(String gridid) {
+    this.gridid = gridid;
+    return this;
+  }
+
+   /**
+   * gridid [persistentní položka]
+   * @return gridid
+  **/
+  @ApiModelProperty(example = "null", value = "gridid [persistentní položka]")
+  public String getGridid() {
+    return gridid;
+  }
+
+  public void setGridid(String gridid) {
+    this.gridid = gridid;
+  }
+
+  public Usergridcolumnsdef createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+    return this;
+  }
+
+   /**
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
+  }
+
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Usergridcolumnsdef correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+    return this;
+  }
+
+   /**
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
+  }
+
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
   public Usergridcolumnsdef system(Boolean system) {
@@ -267,10 +303,10 @@ public class Usergridcolumnsdef   {
   }
 
    /**
-   * Systémový sloupec [persistentní položka]
+   * systémový sloupec [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Systémový sloupec [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "systémový sloupec [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -285,10 +321,10 @@ public class Usergridcolumnsdef   {
   }
 
    /**
-   * Nadpis sloupce [persistentní položka]
+   * nadpis sloupce [persistentní položka]
    * @return title
   **/
-  @ApiModelProperty(example = "null", value = "Nadpis sloupce [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "nadpis sloupce [persistentní položka]")
   public String getTitle() {
     return title;
   }
@@ -297,58 +333,58 @@ public class Usergridcolumnsdef   {
     this.title = title;
   }
 
-  public Usergridcolumnsdef defaultSize(Integer defaultSize) {
-    this.defaultSize = defaultSize;
+  public Usergridcolumnsdef defaultsize(Integer defaultsize) {
+    this.defaultsize = defaultsize;
     return this;
   }
 
    /**
-   * Výchozí šířka sloupce: [persistentní položka]
-   * @return defaultSize
+   * výchozí šířka sloupce: [persistentní položka]
+   * @return defaultsize
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí šířka sloupce: [persistentní položka]")
-  public Integer getDefaultSize() {
-    return defaultSize;
+  @ApiModelProperty(example = "null", value = "výchozí šířka sloupce: [persistentní položka]")
+  public Integer getDefaultsize() {
+    return defaultsize;
   }
 
-  public void setDefaultSize(Integer defaultSize) {
-    this.defaultSize = defaultSize;
+  public void setDefaultsize(Integer defaultsize) {
+    this.defaultsize = defaultsize;
   }
 
-  public Usergridcolumnsdef columnType(Integer columnType) {
-    this.columnType = columnType;
+  public Usergridcolumnsdef columntype(Integer columntype) {
+    this.columntype = columntype;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return columnType
+   * typ [persistentní položka]
+   * @return columntype
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getColumnType() {
-    return columnType;
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getColumntype() {
+    return columntype;
   }
 
-  public void setColumnType(Integer columnType) {
-    this.columnType = columnType;
+  public void setColumntype(Integer columntype) {
+    this.columntype = columntype;
   }
 
-  public Usergridcolumnsdef fieldName(String fieldName) {
-    this.fieldName = fieldName;
+  public Usergridcolumnsdef fieldname(String fieldname) {
+    this.fieldname = fieldname;
     return this;
   }
 
    /**
-   * Jméno položky [persistentní položka]
-   * @return fieldName
+   * jméno položky [persistentní položka]
+   * @return fieldname
   **/
-  @ApiModelProperty(example = "null", value = "Jméno položky [persistentní položka]")
-  public String getFieldName() {
-    return fieldName;
+  @ApiModelProperty(example = "null", value = "jméno položky [persistentní položka]")
+  public String getFieldname() {
+    return fieldname;
   }
 
-  public void setFieldName(String fieldName) {
-    this.fieldName = fieldName;
+  public void setFieldname(String fieldname) {
+    this.fieldname = fieldname;
   }
 
   public Usergridcolumnsdef expression(String expression) {
@@ -357,10 +393,10 @@ public class Usergridcolumnsdef   {
   }
 
    /**
-   * Výraz [persistentní položka]
+   * výraz [persistentní položka]
    * @return expression
   **/
-  @ApiModelProperty(example = "null", value = "Výraz [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "výraz [persistentní položka]")
   public String getExpression() {
     return expression;
   }
@@ -369,58 +405,58 @@ public class Usergridcolumnsdef   {
     this.expression = expression;
   }
 
-  public Usergridcolumnsdef displayType(Integer displayType) {
-    this.displayType = displayType;
+  public Usergridcolumnsdef displaytype(Integer displaytype) {
+    this.displaytype = displaytype;
     return this;
   }
 
    /**
-   * Způsob zobrazení [persistentní položka]
-   * @return displayType
+   * způsob zobrazení [persistentní položka]
+   * @return displaytype
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zobrazení [persistentní položka]")
-  public Integer getDisplayType() {
-    return displayType;
+  @ApiModelProperty(example = "null", value = "způsob zobrazení [persistentní položka]")
+  public Integer getDisplaytype() {
+    return displaytype;
   }
 
-  public void setDisplayType(Integer displayType) {
-    this.displayType = displayType;
+  public void setDisplaytype(Integer displaytype) {
+    this.displaytype = displaytype;
   }
 
-  public Usergridcolumnsdef displayLinkedField(String displayLinkedField) {
-    this.displayLinkedField = displayLinkedField;
+  public Usergridcolumnsdef displaylinkedfield(String displaylinkedfield) {
+    this.displaylinkedfield = displaylinkedfield;
     return this;
   }
 
    /**
-   * Položka číselníku k zobrazení [persistentní položka]
-   * @return displayLinkedField
+   * položka číselníku k zobrazení [persistentní položka]
+   * @return displaylinkedfield
   **/
-  @ApiModelProperty(example = "null", value = "Položka číselníku k zobrazení [persistentní položka]")
-  public String getDisplayLinkedField() {
-    return displayLinkedField;
+  @ApiModelProperty(example = "null", value = "položka číselníku k zobrazení [persistentní položka]")
+  public String getDisplaylinkedfield() {
+    return displaylinkedfield;
   }
 
-  public void setDisplayLinkedField(String displayLinkedField) {
-    this.displayLinkedField = displayLinkedField;
+  public void setDisplaylinkedfield(String displaylinkedfield) {
+    this.displaylinkedfield = displaylinkedfield;
   }
 
-  public Usergridcolumnsdef conditionalFormat(Boolean conditionalFormat) {
-    this.conditionalFormat = conditionalFormat;
+  public Usergridcolumnsdef conditionalformat(Boolean conditionalformat) {
+    this.conditionalformat = conditionalformat;
     return this;
   }
 
    /**
-   * Podmíněné formátování [persistentní položka]
-   * @return conditionalFormat
+   * podmíněné formátování [persistentní položka]
+   * @return conditionalformat
   **/
-  @ApiModelProperty(example = "null", value = "Podmíněné formátování [persistentní položka]")
-  public Boolean getConditionalFormat() {
-    return conditionalFormat;
+  @ApiModelProperty(example = "null", value = "podmíněné formátování [persistentní položka]")
+  public Boolean getConditionalformat() {
+    return conditionalformat;
   }
 
-  public void setConditionalFormat(Boolean conditionalFormat) {
-    this.conditionalFormat = conditionalFormat;
+  public void setConditionalformat(Boolean conditionalformat) {
+    this.conditionalformat = conditionalformat;
   }
 
   public Usergridcolumnsdef condition(String condition) {
@@ -429,10 +465,10 @@ public class Usergridcolumnsdef   {
   }
 
    /**
-   * Podmínka [persistentní položka]
+   * podmínka [persistentní položka]
    * @return condition
   **/
-  @ApiModelProperty(example = "null", value = "Podmínka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "podmínka [persistentní položka]")
   public String getCondition() {
     return condition;
   }
@@ -441,112 +477,112 @@ public class Usergridcolumnsdef   {
     this.condition = condition;
   }
 
-  public Usergridcolumnsdef isCondForeColor(Boolean isCondForeColor) {
-    this.isCondForeColor = isCondForeColor;
+  public Usergridcolumnsdef iscondforecolor(Boolean iscondforecolor) {
+    this.iscondforecolor = iscondforecolor;
     return this;
   }
 
    /**
-   * Podmíněná barva písma zapnuta [persistentní položka]
-   * @return isCondForeColor
+   * podmíněná barva písma zapnuta [persistentní položka]
+   * @return iscondforecolor
   **/
-  @ApiModelProperty(example = "null", value = "Podmíněná barva písma zapnuta [persistentní položka]")
-  public Boolean getIsCondForeColor() {
-    return isCondForeColor;
+  @ApiModelProperty(example = "null", value = "podmíněná barva písma zapnuta [persistentní položka]")
+  public Boolean getIscondforecolor() {
+    return iscondforecolor;
   }
 
-  public void setIsCondForeColor(Boolean isCondForeColor) {
-    this.isCondForeColor = isCondForeColor;
+  public void setIscondforecolor(Boolean iscondforecolor) {
+    this.iscondforecolor = iscondforecolor;
   }
 
-  public Usergridcolumnsdef condForeColor(Integer condForeColor) {
-    this.condForeColor = condForeColor;
+  public Usergridcolumnsdef condforecolor(Integer condforecolor) {
+    this.condforecolor = condforecolor;
     return this;
   }
 
    /**
-   * Podmíněná barva písma [persistentní položka]
-   * @return condForeColor
+   * podmíněná barva písma [persistentní položka]
+   * @return condforecolor
   **/
-  @ApiModelProperty(example = "null", value = "Podmíněná barva písma [persistentní položka]")
-  public Integer getCondForeColor() {
-    return condForeColor;
+  @ApiModelProperty(example = "null", value = "podmíněná barva písma [persistentní položka]")
+  public Integer getCondforecolor() {
+    return condforecolor;
   }
 
-  public void setCondForeColor(Integer condForeColor) {
-    this.condForeColor = condForeColor;
+  public void setCondforecolor(Integer condforecolor) {
+    this.condforecolor = condforecolor;
   }
 
-  public Usergridcolumnsdef isCondBackColor(Boolean isCondBackColor) {
-    this.isCondBackColor = isCondBackColor;
+  public Usergridcolumnsdef iscondbackcolor(Boolean iscondbackcolor) {
+    this.iscondbackcolor = iscondbackcolor;
     return this;
   }
 
    /**
-   * Podmíněná barva podkladu zapnuta [persistentní položka]
-   * @return isCondBackColor
+   * podmíněná barva podkladu zapnuta [persistentní položka]
+   * @return iscondbackcolor
   **/
-  @ApiModelProperty(example = "null", value = "Podmíněná barva podkladu zapnuta [persistentní položka]")
-  public Boolean getIsCondBackColor() {
-    return isCondBackColor;
+  @ApiModelProperty(example = "null", value = "podmíněná barva podkladu zapnuta [persistentní položka]")
+  public Boolean getIscondbackcolor() {
+    return iscondbackcolor;
   }
 
-  public void setIsCondBackColor(Boolean isCondBackColor) {
-    this.isCondBackColor = isCondBackColor;
+  public void setIscondbackcolor(Boolean iscondbackcolor) {
+    this.iscondbackcolor = iscondbackcolor;
   }
 
-  public Usergridcolumnsdef condBackColor(Integer condBackColor) {
-    this.condBackColor = condBackColor;
+  public Usergridcolumnsdef condbackcolor(Integer condbackcolor) {
+    this.condbackcolor = condbackcolor;
     return this;
   }
 
    /**
-   * Podmíněná barva podkladu [persistentní položka]
-   * @return condBackColor
+   * podmíněná barva podkladu [persistentní položka]
+   * @return condbackcolor
   **/
-  @ApiModelProperty(example = "null", value = "Podmíněná barva podkladu [persistentní položka]")
-  public Integer getCondBackColor() {
-    return condBackColor;
+  @ApiModelProperty(example = "null", value = "podmíněná barva podkladu [persistentní položka]")
+  public Integer getCondbackcolor() {
+    return condbackcolor;
   }
 
-  public void setCondBackColor(Integer condBackColor) {
-    this.condBackColor = condBackColor;
+  public void setCondbackcolor(Integer condbackcolor) {
+    this.condbackcolor = condbackcolor;
   }
 
-  public Usergridcolumnsdef condBold(Boolean condBold) {
-    this.condBold = condBold;
+  public Usergridcolumnsdef condbold(Boolean condbold) {
+    this.condbold = condbold;
     return this;
   }
 
    /**
-   * Podmíněné tučné písmo [persistentní položka]
-   * @return condBold
+   * podmíněné tučné písmo [persistentní položka]
+   * @return condbold
   **/
-  @ApiModelProperty(example = "null", value = "Podmíněné tučné písmo [persistentní položka]")
-  public Boolean getCondBold() {
-    return condBold;
+  @ApiModelProperty(example = "null", value = "podmíněné tučné písmo [persistentní položka]")
+  public Boolean getCondbold() {
+    return condbold;
   }
 
-  public void setCondBold(Boolean condBold) {
-    this.condBold = condBold;
+  public void setCondbold(Boolean condbold) {
+    this.condbold = condbold;
   }
 
-  public Usergridcolumnsdef condItalic(Boolean condItalic) {
-    this.condItalic = condItalic;
+  public Usergridcolumnsdef conditalic(Boolean conditalic) {
+    this.conditalic = conditalic;
     return this;
   }
 
    /**
-   * Podmíněné kurzíva písmo [persistentní položka]
-   * @return condItalic
+   * podmíněné kurzíva písmo [persistentní položka]
+   * @return conditalic
   **/
-  @ApiModelProperty(example = "null", value = "Podmíněné kurzíva písmo [persistentní položka]")
-  public Boolean getCondItalic() {
-    return condItalic;
+  @ApiModelProperty(example = "null", value = "podmíněné kurzíva písmo [persistentní položka]")
+  public Boolean getConditalic() {
+    return conditalic;
   }
 
-  public void setCondItalic(Boolean condItalic) {
-    this.condItalic = condItalic;
+  public void setConditalic(Boolean conditalic) {
+    this.conditalic = conditalic;
   }
 
   public Usergridcolumnsdef alignment(Integer alignment) {
@@ -555,10 +591,10 @@ public class Usergridcolumnsdef   {
   }
 
    /**
-   * Zarovnání [persistentní položka]
+   * zarovnání [persistentní položka]
    * @return alignment
   **/
-  @ApiModelProperty(example = "null", value = "Zarovnání [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "zarovnání [persistentní položka]")
   public Integer getAlignment() {
     return alignment;
   }
@@ -567,76 +603,76 @@ public class Usergridcolumnsdef   {
     this.alignment = alignment;
   }
 
-  public Usergridcolumnsdef isForeColor(Boolean isForeColor) {
-    this.isForeColor = isForeColor;
+  public Usergridcolumnsdef isforecolor(Boolean isforecolor) {
+    this.isforecolor = isforecolor;
     return this;
   }
 
    /**
-   * Barva písma zapnuta [persistentní položka]
-   * @return isForeColor
+   * barva písma zapnuta [persistentní položka]
+   * @return isforecolor
   **/
-  @ApiModelProperty(example = "null", value = "Barva písma zapnuta [persistentní položka]")
-  public Boolean getIsForeColor() {
-    return isForeColor;
+  @ApiModelProperty(example = "null", value = "barva písma zapnuta [persistentní položka]")
+  public Boolean getIsforecolor() {
+    return isforecolor;
   }
 
-  public void setIsForeColor(Boolean isForeColor) {
-    this.isForeColor = isForeColor;
+  public void setIsforecolor(Boolean isforecolor) {
+    this.isforecolor = isforecolor;
   }
 
-  public Usergridcolumnsdef foreColor(Integer foreColor) {
-    this.foreColor = foreColor;
+  public Usergridcolumnsdef forecolor(Integer forecolor) {
+    this.forecolor = forecolor;
     return this;
   }
 
    /**
-   * Barva písma [persistentní položka]
-   * @return foreColor
+   * barva písma [persistentní položka]
+   * @return forecolor
   **/
-  @ApiModelProperty(example = "null", value = "Barva písma [persistentní položka]")
-  public Integer getForeColor() {
-    return foreColor;
+  @ApiModelProperty(example = "null", value = "barva písma [persistentní položka]")
+  public Integer getForecolor() {
+    return forecolor;
   }
 
-  public void setForeColor(Integer foreColor) {
-    this.foreColor = foreColor;
+  public void setForecolor(Integer forecolor) {
+    this.forecolor = forecolor;
   }
 
-  public Usergridcolumnsdef isBackColor(Boolean isBackColor) {
-    this.isBackColor = isBackColor;
+  public Usergridcolumnsdef isbackcolor(Boolean isbackcolor) {
+    this.isbackcolor = isbackcolor;
     return this;
   }
 
    /**
-   * Barva podkladu zapnuta [persistentní položka]
-   * @return isBackColor
+   * barva podkladu zapnuta [persistentní položka]
+   * @return isbackcolor
   **/
-  @ApiModelProperty(example = "null", value = "Barva podkladu zapnuta [persistentní položka]")
-  public Boolean getIsBackColor() {
-    return isBackColor;
+  @ApiModelProperty(example = "null", value = "barva podkladu zapnuta [persistentní položka]")
+  public Boolean getIsbackcolor() {
+    return isbackcolor;
   }
 
-  public void setIsBackColor(Boolean isBackColor) {
-    this.isBackColor = isBackColor;
+  public void setIsbackcolor(Boolean isbackcolor) {
+    this.isbackcolor = isbackcolor;
   }
 
-  public Usergridcolumnsdef backColor(Integer backColor) {
-    this.backColor = backColor;
+  public Usergridcolumnsdef backcolor(Integer backcolor) {
+    this.backcolor = backcolor;
     return this;
   }
 
    /**
-   * Barva podkladu [persistentní položka]
-   * @return backColor
+   * barva podkladu [persistentní položka]
+   * @return backcolor
   **/
-  @ApiModelProperty(example = "null", value = "Barva podkladu [persistentní položka]")
-  public Integer getBackColor() {
-    return backColor;
+  @ApiModelProperty(example = "null", value = "barva podkladu [persistentní položka]")
+  public Integer getBackcolor() {
+    return backcolor;
   }
 
-  public void setBackColor(Integer backColor) {
-    this.backColor = backColor;
+  public void setBackcolor(Integer backcolor) {
+    this.backcolor = backcolor;
   }
 
   public Usergridcolumnsdef bold(Boolean bold) {
@@ -645,10 +681,10 @@ public class Usergridcolumnsdef   {
   }
 
    /**
-   * Tučné písmo [persistentní položka]
+   * tučné písmo [persistentní položka]
    * @return bold
   **/
-  @ApiModelProperty(example = "null", value = "Tučné písmo [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "tučné písmo [persistentní položka]")
   public Boolean getBold() {
     return bold;
   }
@@ -663,10 +699,10 @@ public class Usergridcolumnsdef   {
   }
 
    /**
-   * Kurzíva písmo [persistentní položka]
+   * kurzíva písmo [persistentní položka]
    * @return italic
   **/
-  @ApiModelProperty(example = "null", value = "Kurzíva písmo [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kurzíva písmo [persistentní položka]")
   public Boolean getItalic() {
     return italic;
   }
@@ -675,148 +711,148 @@ public class Usergridcolumnsdef   {
     this.italic = italic;
   }
 
-  public Usergridcolumnsdef displayMask(String displayMask) {
-    this.displayMask = displayMask;
+  public Usergridcolumnsdef displaymask(String displaymask) {
+    this.displaymask = displaymask;
     return this;
   }
 
    /**
-   * Maska [persistentní položka]
-   * @return displayMask
+   * maska [persistentní položka]
+   * @return displaymask
   **/
-  @ApiModelProperty(example = "null", value = "Maska [persistentní položka]")
-  public String getDisplayMask() {
-    return displayMask;
+  @ApiModelProperty(example = "null", value = "maska [persistentní položka]")
+  public String getDisplaymask() {
+    return displaymask;
   }
 
-  public void setDisplayMask(String displayMask) {
-    this.displayMask = displayMask;
+  public void setDisplaymask(String displaymask) {
+    this.displaymask = displaymask;
   }
 
-  public Usergridcolumnsdef displayPercent(Boolean displayPercent) {
-    this.displayPercent = displayPercent;
+  public Usergridcolumnsdef displaypercent(Boolean displaypercent) {
+    this.displaypercent = displaypercent;
     return this;
   }
 
    /**
-   * Zobrazit číselně procento [persistentní položka]
-   * @return displayPercent
+   * zobrazit číselně procento [persistentní položka]
+   * @return displaypercent
   **/
-  @ApiModelProperty(example = "null", value = "Zobrazit číselně procento [persistentní položka]")
-  public Boolean getDisplayPercent() {
-    return displayPercent;
+  @ApiModelProperty(example = "null", value = "zobrazit číselně procento [persistentní položka]")
+  public Boolean getDisplaypercent() {
+    return displaypercent;
   }
 
-  public void setDisplayPercent(Boolean displayPercent) {
-    this.displayPercent = displayPercent;
+  public void setDisplaypercent(Boolean displaypercent) {
+    this.displaypercent = displaypercent;
   }
 
-  public Usergridcolumnsdef isOver100Color(Boolean isOver100Color) {
-    this.isOver100Color = isOver100Color;
+  public Usergridcolumnsdef isover100color(Boolean isover100color) {
+    this.isover100color = isover100color;
     return this;
   }
 
    /**
-   * Barva sloupce nad 100% - zapnout [persistentní položka]
-   * @return isOver100Color
+   * barva sloupce nad 100% - zapnout [persistentní položka]
+   * @return isover100color
   **/
-  @ApiModelProperty(example = "null", value = "Barva sloupce nad 100% - zapnout [persistentní položka]")
-  public Boolean getIsOver100Color() {
-    return isOver100Color;
+  @ApiModelProperty(example = "null", value = "barva sloupce nad 100% - zapnout [persistentní položka]")
+  public Boolean getIsover100color() {
+    return isover100color;
   }
 
-  public void setIsOver100Color(Boolean isOver100Color) {
-    this.isOver100Color = isOver100Color;
+  public void setIsover100color(Boolean isover100color) {
+    this.isover100color = isover100color;
   }
 
-  public Usergridcolumnsdef over100Color(Integer over100Color) {
-    this.over100Color = over100Color;
+  public Usergridcolumnsdef over100color(Integer over100color) {
+    this.over100color = over100color;
     return this;
   }
 
    /**
-   * Barva sloupce nad 100% [persistentní položka]
-   * @return over100Color
+   * barva sloupce nad 100% [persistentní položka]
+   * @return over100color
   **/
-  @ApiModelProperty(example = "null", value = "Barva sloupce nad 100% [persistentní položka]")
-  public Integer getOver100Color() {
-    return over100Color;
+  @ApiModelProperty(example = "null", value = "barva sloupce nad 100% [persistentní položka]")
+  public Integer getOver100color() {
+    return over100color;
   }
 
-  public void setOver100Color(Integer over100Color) {
-    this.over100Color = over100Color;
+  public void setOver100color(Integer over100color) {
+    this.over100color = over100color;
   }
 
-  public Usergridcolumnsdef columnID(String columnID) {
-    this.columnID = columnID;
+  public Usergridcolumnsdef columnid(String columnid) {
+    this.columnid = columnid;
     return this;
   }
 
    /**
-   * ColumnID [persistentní položka]
-   * @return columnID
+   * columnid [persistentní položka]
+   * @return columnid
   **/
-  @ApiModelProperty(example = "null", value = "ColumnID [persistentní položka]")
-  public String getColumnID() {
-    return columnID;
+  @ApiModelProperty(example = "null", value = "columnid [persistentní položka]")
+  public String getColumnid() {
+    return columnid;
   }
 
-  public void setColumnID(String columnID) {
-    this.columnID = columnID;
+  public void setColumnid(String columnid) {
+    this.columnid = columnid;
   }
 
-  public Usergridcolumnsdef protectViaViewPurchasePrices(Boolean protectViaViewPurchasePrices) {
-    this.protectViaViewPurchasePrices = protectViaViewPurchasePrices;
+  public Usergridcolumnsdef protectviaviewpurchaseprices(Boolean protectviaviewpurchaseprices) {
+    this.protectviaviewpurchaseprices = protectviaviewpurchaseprices;
     return this;
   }
 
    /**
-   * Chránit právem Vidět nákupní ceny [persistentní položka]
-   * @return protectViaViewPurchasePrices
+   * chránit právem vidět nákupní ceny [persistentní položka]
+   * @return protectviaviewpurchaseprices
   **/
-  @ApiModelProperty(example = "null", value = "Chránit právem Vidět nákupní ceny [persistentní položka]")
-  public Boolean getProtectViaViewPurchasePrices() {
-    return protectViaViewPurchasePrices;
+  @ApiModelProperty(example = "null", value = "chránit právem vidět nákupní ceny [persistentní položka]")
+  public Boolean getProtectviaviewpurchaseprices() {
+    return protectviaviewpurchaseprices;
   }
 
-  public void setProtectViaViewPurchasePrices(Boolean protectViaViewPurchasePrices) {
-    this.protectViaViewPurchasePrices = protectViaViewPurchasePrices;
+  public void setProtectviaviewpurchaseprices(Boolean protectviaviewpurchaseprices) {
+    this.protectviaviewpurchaseprices = protectviaviewpurchaseprices;
   }
 
-  public Usergridcolumnsdef businessObjectCLSID(String businessObjectCLSID) {
-    this.businessObjectCLSID = businessObjectCLSID;
+  public Usergridcolumnsdef businessobjectclsid(String businessobjectclsid) {
+    this.businessobjectclsid = businessobjectclsid;
     return this;
   }
 
    /**
-   * Třída objektu použitého ve výrazu [persistentní položka]
-   * @return businessObjectCLSID
+   * třída objektu použitého ve výrazu [persistentní položka]
+   * @return businessobjectclsid
   **/
-  @ApiModelProperty(example = "null", value = "Třída objektu použitého ve výrazu [persistentní položka]")
-  public String getBusinessObjectCLSID() {
-    return businessObjectCLSID;
+  @ApiModelProperty(example = "null", value = "třída objektu použitého ve výrazu [persistentní položka]")
+  public String getBusinessobjectclsid() {
+    return businessobjectclsid;
   }
 
-  public void setBusinessObjectCLSID(String businessObjectCLSID) {
-    this.businessObjectCLSID = businessObjectCLSID;
+  public void setBusinessobjectclsid(String businessobjectclsid) {
+    this.businessobjectclsid = businessobjectclsid;
   }
 
-  public Usergridcolumnsdef businessObjectCLSIDText(String businessObjectCLSIDText) {
-    this.businessObjectCLSIDText = businessObjectCLSIDText;
+  public Usergridcolumnsdef businessobjectclsidtext(String businessobjectclsidtext) {
+    this.businessobjectclsidtext = businessobjectclsidtext;
     return this;
   }
 
    /**
-   * Třída objektu textově
-   * @return businessObjectCLSIDText
+   * třída objektu textově
+   * @return businessobjectclsidtext
   **/
-  @ApiModelProperty(example = "null", value = "Třída objektu textově")
-  public String getBusinessObjectCLSIDText() {
-    return businessObjectCLSIDText;
+  @ApiModelProperty(example = "null", value = "třída objektu textově")
+  public String getBusinessobjectclsidtext() {
+    return businessobjectclsidtext;
   }
 
-  public void setBusinessObjectCLSIDText(String businessObjectCLSIDText) {
-    this.businessObjectCLSIDText = businessObjectCLSIDText;
+  public void setBusinessobjectclsidtext(String businessobjectclsidtext) {
+    this.businessobjectclsidtext = businessobjectclsidtext;
   }
 
 
@@ -829,50 +865,50 @@ public class Usergridcolumnsdef   {
       return false;
     }
     Usergridcolumnsdef usergridcolumnsdef = (Usergridcolumnsdef) o;
-    return Objects.equals(this.displayName, usergridcolumnsdef.displayName) &&
-        Objects.equals(this.ID, usergridcolumnsdef.ID) &&
-        Objects.equals(this.classID, usergridcolumnsdef.classID) &&
-        Objects.equals(this.objVersion, usergridcolumnsdef.objVersion) &&
-        Objects.equals(this.siteID, usergridcolumnsdef.siteID) &&
-        Objects.equals(this.gridID, usergridcolumnsdef.gridID) &&
-        Objects.equals(this.createdByID, usergridcolumnsdef.createdByID) &&
-        Objects.equals(this.correctedByID, usergridcolumnsdef.correctedByID) &&
+    return Objects.equals(this.displayname, usergridcolumnsdef.displayname) &&
+        Objects.equals(this.id, usergridcolumnsdef.id) &&
+        Objects.equals(this.classid, usergridcolumnsdef.classid) &&
+        Objects.equals(this.objversion, usergridcolumnsdef.objversion) &&
+        Objects.equals(this.siteid, usergridcolumnsdef.siteid) &&
+        Objects.equals(this.gridid, usergridcolumnsdef.gridid) &&
+        Objects.equals(this.createdbyId, usergridcolumnsdef.createdbyId) &&
+        Objects.equals(this.correctedbyId, usergridcolumnsdef.correctedbyId) &&
         Objects.equals(this.system, usergridcolumnsdef.system) &&
         Objects.equals(this.title, usergridcolumnsdef.title) &&
-        Objects.equals(this.defaultSize, usergridcolumnsdef.defaultSize) &&
-        Objects.equals(this.columnType, usergridcolumnsdef.columnType) &&
-        Objects.equals(this.fieldName, usergridcolumnsdef.fieldName) &&
+        Objects.equals(this.defaultsize, usergridcolumnsdef.defaultsize) &&
+        Objects.equals(this.columntype, usergridcolumnsdef.columntype) &&
+        Objects.equals(this.fieldname, usergridcolumnsdef.fieldname) &&
         Objects.equals(this.expression, usergridcolumnsdef.expression) &&
-        Objects.equals(this.displayType, usergridcolumnsdef.displayType) &&
-        Objects.equals(this.displayLinkedField, usergridcolumnsdef.displayLinkedField) &&
-        Objects.equals(this.conditionalFormat, usergridcolumnsdef.conditionalFormat) &&
+        Objects.equals(this.displaytype, usergridcolumnsdef.displaytype) &&
+        Objects.equals(this.displaylinkedfield, usergridcolumnsdef.displaylinkedfield) &&
+        Objects.equals(this.conditionalformat, usergridcolumnsdef.conditionalformat) &&
         Objects.equals(this.condition, usergridcolumnsdef.condition) &&
-        Objects.equals(this.isCondForeColor, usergridcolumnsdef.isCondForeColor) &&
-        Objects.equals(this.condForeColor, usergridcolumnsdef.condForeColor) &&
-        Objects.equals(this.isCondBackColor, usergridcolumnsdef.isCondBackColor) &&
-        Objects.equals(this.condBackColor, usergridcolumnsdef.condBackColor) &&
-        Objects.equals(this.condBold, usergridcolumnsdef.condBold) &&
-        Objects.equals(this.condItalic, usergridcolumnsdef.condItalic) &&
+        Objects.equals(this.iscondforecolor, usergridcolumnsdef.iscondforecolor) &&
+        Objects.equals(this.condforecolor, usergridcolumnsdef.condforecolor) &&
+        Objects.equals(this.iscondbackcolor, usergridcolumnsdef.iscondbackcolor) &&
+        Objects.equals(this.condbackcolor, usergridcolumnsdef.condbackcolor) &&
+        Objects.equals(this.condbold, usergridcolumnsdef.condbold) &&
+        Objects.equals(this.conditalic, usergridcolumnsdef.conditalic) &&
         Objects.equals(this.alignment, usergridcolumnsdef.alignment) &&
-        Objects.equals(this.isForeColor, usergridcolumnsdef.isForeColor) &&
-        Objects.equals(this.foreColor, usergridcolumnsdef.foreColor) &&
-        Objects.equals(this.isBackColor, usergridcolumnsdef.isBackColor) &&
-        Objects.equals(this.backColor, usergridcolumnsdef.backColor) &&
+        Objects.equals(this.isforecolor, usergridcolumnsdef.isforecolor) &&
+        Objects.equals(this.forecolor, usergridcolumnsdef.forecolor) &&
+        Objects.equals(this.isbackcolor, usergridcolumnsdef.isbackcolor) &&
+        Objects.equals(this.backcolor, usergridcolumnsdef.backcolor) &&
         Objects.equals(this.bold, usergridcolumnsdef.bold) &&
         Objects.equals(this.italic, usergridcolumnsdef.italic) &&
-        Objects.equals(this.displayMask, usergridcolumnsdef.displayMask) &&
-        Objects.equals(this.displayPercent, usergridcolumnsdef.displayPercent) &&
-        Objects.equals(this.isOver100Color, usergridcolumnsdef.isOver100Color) &&
-        Objects.equals(this.over100Color, usergridcolumnsdef.over100Color) &&
-        Objects.equals(this.columnID, usergridcolumnsdef.columnID) &&
-        Objects.equals(this.protectViaViewPurchasePrices, usergridcolumnsdef.protectViaViewPurchasePrices) &&
-        Objects.equals(this.businessObjectCLSID, usergridcolumnsdef.businessObjectCLSID) &&
-        Objects.equals(this.businessObjectCLSIDText, usergridcolumnsdef.businessObjectCLSIDText);
+        Objects.equals(this.displaymask, usergridcolumnsdef.displaymask) &&
+        Objects.equals(this.displaypercent, usergridcolumnsdef.displaypercent) &&
+        Objects.equals(this.isover100color, usergridcolumnsdef.isover100color) &&
+        Objects.equals(this.over100color, usergridcolumnsdef.over100color) &&
+        Objects.equals(this.columnid, usergridcolumnsdef.columnid) &&
+        Objects.equals(this.protectviaviewpurchaseprices, usergridcolumnsdef.protectviaviewpurchaseprices) &&
+        Objects.equals(this.businessobjectclsid, usergridcolumnsdef.businessobjectclsid) &&
+        Objects.equals(this.businessobjectclsidtext, usergridcolumnsdef.businessobjectclsidtext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, siteID, gridID, createdByID, correctedByID, system, title, defaultSize, columnType, fieldName, expression, displayType, displayLinkedField, conditionalFormat, condition, isCondForeColor, condForeColor, isCondBackColor, condBackColor, condBold, condItalic, alignment, isForeColor, foreColor, isBackColor, backColor, bold, italic, displayMask, displayPercent, isOver100Color, over100Color, columnID, protectViaViewPurchasePrices, businessObjectCLSID, businessObjectCLSIDText);
+    return Objects.hash(displayname, id, classid, objversion, siteid, gridid, createdbyId, correctedbyId, system, title, defaultsize, columntype, fieldname, expression, displaytype, displaylinkedfield, conditionalformat, condition, iscondforecolor, condforecolor, iscondbackcolor, condbackcolor, condbold, conditalic, alignment, isforecolor, forecolor, isbackcolor, backcolor, bold, italic, displaymask, displaypercent, isover100color, over100color, columnid, protectviaviewpurchaseprices, businessobjectclsid, businessobjectclsidtext);
   }
 
   @Override
@@ -880,45 +916,45 @@ public class Usergridcolumnsdef   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Usergridcolumnsdef {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    siteID: ").append(toIndentedString(siteID)).append("\n");
-    sb.append("    gridID: ").append(toIndentedString(gridID)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    siteid: ").append(toIndentedString(siteid)).append("\n");
+    sb.append("    gridid: ").append(toIndentedString(gridid)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
-    sb.append("    defaultSize: ").append(toIndentedString(defaultSize)).append("\n");
-    sb.append("    columnType: ").append(toIndentedString(columnType)).append("\n");
-    sb.append("    fieldName: ").append(toIndentedString(fieldName)).append("\n");
+    sb.append("    defaultsize: ").append(toIndentedString(defaultsize)).append("\n");
+    sb.append("    columntype: ").append(toIndentedString(columntype)).append("\n");
+    sb.append("    fieldname: ").append(toIndentedString(fieldname)).append("\n");
     sb.append("    expression: ").append(toIndentedString(expression)).append("\n");
-    sb.append("    displayType: ").append(toIndentedString(displayType)).append("\n");
-    sb.append("    displayLinkedField: ").append(toIndentedString(displayLinkedField)).append("\n");
-    sb.append("    conditionalFormat: ").append(toIndentedString(conditionalFormat)).append("\n");
+    sb.append("    displaytype: ").append(toIndentedString(displaytype)).append("\n");
+    sb.append("    displaylinkedfield: ").append(toIndentedString(displaylinkedfield)).append("\n");
+    sb.append("    conditionalformat: ").append(toIndentedString(conditionalformat)).append("\n");
     sb.append("    condition: ").append(toIndentedString(condition)).append("\n");
-    sb.append("    isCondForeColor: ").append(toIndentedString(isCondForeColor)).append("\n");
-    sb.append("    condForeColor: ").append(toIndentedString(condForeColor)).append("\n");
-    sb.append("    isCondBackColor: ").append(toIndentedString(isCondBackColor)).append("\n");
-    sb.append("    condBackColor: ").append(toIndentedString(condBackColor)).append("\n");
-    sb.append("    condBold: ").append(toIndentedString(condBold)).append("\n");
-    sb.append("    condItalic: ").append(toIndentedString(condItalic)).append("\n");
+    sb.append("    iscondforecolor: ").append(toIndentedString(iscondforecolor)).append("\n");
+    sb.append("    condforecolor: ").append(toIndentedString(condforecolor)).append("\n");
+    sb.append("    iscondbackcolor: ").append(toIndentedString(iscondbackcolor)).append("\n");
+    sb.append("    condbackcolor: ").append(toIndentedString(condbackcolor)).append("\n");
+    sb.append("    condbold: ").append(toIndentedString(condbold)).append("\n");
+    sb.append("    conditalic: ").append(toIndentedString(conditalic)).append("\n");
     sb.append("    alignment: ").append(toIndentedString(alignment)).append("\n");
-    sb.append("    isForeColor: ").append(toIndentedString(isForeColor)).append("\n");
-    sb.append("    foreColor: ").append(toIndentedString(foreColor)).append("\n");
-    sb.append("    isBackColor: ").append(toIndentedString(isBackColor)).append("\n");
-    sb.append("    backColor: ").append(toIndentedString(backColor)).append("\n");
+    sb.append("    isforecolor: ").append(toIndentedString(isforecolor)).append("\n");
+    sb.append("    forecolor: ").append(toIndentedString(forecolor)).append("\n");
+    sb.append("    isbackcolor: ").append(toIndentedString(isbackcolor)).append("\n");
+    sb.append("    backcolor: ").append(toIndentedString(backcolor)).append("\n");
     sb.append("    bold: ").append(toIndentedString(bold)).append("\n");
     sb.append("    italic: ").append(toIndentedString(italic)).append("\n");
-    sb.append("    displayMask: ").append(toIndentedString(displayMask)).append("\n");
-    sb.append("    displayPercent: ").append(toIndentedString(displayPercent)).append("\n");
-    sb.append("    isOver100Color: ").append(toIndentedString(isOver100Color)).append("\n");
-    sb.append("    over100Color: ").append(toIndentedString(over100Color)).append("\n");
-    sb.append("    columnID: ").append(toIndentedString(columnID)).append("\n");
-    sb.append("    protectViaViewPurchasePrices: ").append(toIndentedString(protectViaViewPurchasePrices)).append("\n");
-    sb.append("    businessObjectCLSID: ").append(toIndentedString(businessObjectCLSID)).append("\n");
-    sb.append("    businessObjectCLSIDText: ").append(toIndentedString(businessObjectCLSIDText)).append("\n");
+    sb.append("    displaymask: ").append(toIndentedString(displaymask)).append("\n");
+    sb.append("    displaypercent: ").append(toIndentedString(displaypercent)).append("\n");
+    sb.append("    isover100color: ").append(toIndentedString(isover100color)).append("\n");
+    sb.append("    over100color: ").append(toIndentedString(over100color)).append("\n");
+    sb.append("    columnid: ").append(toIndentedString(columnid)).append("\n");
+    sb.append("    protectviaviewpurchaseprices: ").append(toIndentedString(protectviaviewpurchaseprices)).append("\n");
+    sb.append("    businessobjectclsid: ").append(toIndentedString(businessobjectclsid)).append("\n");
+    sb.append("    businessobjectclsidtext: ").append(toIndentedString(businessobjectclsidtext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

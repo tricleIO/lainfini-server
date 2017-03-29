@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,81 +36,117 @@ import java.util.Objects;
 /**
  * Watchdogpoint
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Watchdogpoint   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Notpositionedrowbusinessobject> rows = new ArrayList<Notpositionedrowbusinessobject>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-  @SerializedName("InternalName")
-  private String internalName = null;
+  @SerializedName("internalname")
+  private String internalname = null;
 
-  @SerializedName("ScriptPackage")
-  private String scriptPackage = null;
+  @SerializedName("scriptpackage")
+  private String scriptpackage = null;
 
-  @SerializedName("LibraryName")
-  private String libraryName = null;
+  @SerializedName("libraryname")
+  private String libraryname = null;
 
-  @SerializedName("AgendaRows")
-  private List<Watchdogpointagenda> agendaRows = new ArrayList<Watchdogpointagenda>();
+  @SerializedName("agendarows")
+  private List<Watchdogpointagenda> agendarows = new ArrayList<Watchdogpointagenda>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Watchdogpoint displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Watchdogpoint id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Watchdogpoint classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Watchdogpoint objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Watchdogpoint rows(List<Notpositionedrowbusinessobject> rows) {
@@ -124,10 +160,10 @@ public class Watchdogpoint   {
   }
 
    /**
-   * Řádky; kolekce BO Řádek bez pořadí [nepersistentní položka]
+   * Řádky; kolekce bo Řádek bez pořadí [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Řádek bez pořadí [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo Řádek bez pořadí [nepersistentní položka]")
   public List<Notpositionedrowbusinessobject> getRows() {
     return rows;
   }
@@ -142,10 +178,10 @@ public class Watchdogpoint   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -160,10 +196,10 @@ public class Watchdogpoint   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -178,10 +214,10 @@ public class Watchdogpoint   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -196,10 +232,10 @@ public class Watchdogpoint   {
   }
 
    /**
-   * Syst. [persistentní položka]
+   * syst. [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Syst. [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "syst. [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -208,81 +244,81 @@ public class Watchdogpoint   {
     this.system = system;
   }
 
-  public Watchdogpoint internalName(String internalName) {
-    this.internalName = internalName;
+  public Watchdogpoint internalname(String internalname) {
+    this.internalname = internalname;
     return this;
   }
 
    /**
-   * Interní název [persistentní položka]
-   * @return internalName
+   * interní název [persistentní položka]
+   * @return internalname
   **/
-  @ApiModelProperty(example = "null", value = "Interní název [persistentní položka]")
-  public String getInternalName() {
-    return internalName;
+  @ApiModelProperty(example = "null", value = "interní název [persistentní položka]")
+  public String getInternalname() {
+    return internalname;
   }
 
-  public void setInternalName(String internalName) {
-    this.internalName = internalName;
+  public void setInternalname(String internalname) {
+    this.internalname = internalname;
   }
 
-  public Watchdogpoint scriptPackage(String scriptPackage) {
-    this.scriptPackage = scriptPackage;
+  public Watchdogpoint scriptpackage(String scriptpackage) {
+    this.scriptpackage = scriptpackage;
     return this;
   }
 
    /**
-   * Balíček skriptů [persistentní položka]
-   * @return scriptPackage
+   * balíček skriptů [persistentní položka]
+   * @return scriptpackage
   **/
-  @ApiModelProperty(example = "null", value = "Balíček skriptů [persistentní položka]")
-  public String getScriptPackage() {
-    return scriptPackage;
+  @ApiModelProperty(example = "null", value = "balíček skriptů [persistentní položka]")
+  public String getScriptpackage() {
+    return scriptpackage;
   }
 
-  public void setScriptPackage(String scriptPackage) {
-    this.scriptPackage = scriptPackage;
+  public void setScriptpackage(String scriptpackage) {
+    this.scriptpackage = scriptpackage;
   }
 
-  public Watchdogpoint libraryName(String libraryName) {
-    this.libraryName = libraryName;
+  public Watchdogpoint libraryname(String libraryname) {
+    this.libraryname = libraryname;
     return this;
   }
 
    /**
-   * Knihovna [persistentní položka]
-   * @return libraryName
+   * knihovna [persistentní položka]
+   * @return libraryname
   **/
-  @ApiModelProperty(example = "null", value = "Knihovna [persistentní položka]")
-  public String getLibraryName() {
-    return libraryName;
+  @ApiModelProperty(example = "null", value = "knihovna [persistentní položka]")
+  public String getLibraryname() {
+    return libraryname;
   }
 
-  public void setLibraryName(String libraryName) {
-    this.libraryName = libraryName;
+  public void setLibraryname(String libraryname) {
+    this.libraryname = libraryname;
   }
 
-  public Watchdogpoint agendaRows(List<Watchdogpointagenda> agendaRows) {
-    this.agendaRows = agendaRows;
+  public Watchdogpoint agendarows(List<Watchdogpointagenda> agendarows) {
+    this.agendarows = agendarows;
     return this;
   }
 
-  public Watchdogpoint addAgendaRowsItem(Watchdogpointagenda agendaRowsItem) {
-    this.agendaRows.add(agendaRowsItem);
+  public Watchdogpoint addAgendarowsItem(Watchdogpointagenda agendarowsItem) {
+    this.agendarows.add(agendarowsItem);
     return this;
   }
 
    /**
-   * Agendy; kolekce BO Agenda kontrolního bodu [nepersistentní položka]
-   * @return agendaRows
+   * agendy; kolekce bo agenda kontrolního bodu [nepersistentní položka]
+   * @return agendarows
   **/
-  @ApiModelProperty(example = "null", value = "Agendy; kolekce BO Agenda kontrolního bodu [nepersistentní položka]")
-  public List<Watchdogpointagenda> getAgendaRows() {
-    return agendaRows;
+  @ApiModelProperty(example = "null", value = "agendy; kolekce bo agenda kontrolního bodu [nepersistentní položka]")
+  public List<Watchdogpointagenda> getAgendarows() {
+    return agendarows;
   }
 
-  public void setAgendaRows(List<Watchdogpointagenda> agendaRows) {
-    this.agendaRows = agendaRows;
+  public void setAgendarows(List<Watchdogpointagenda> agendarows) {
+    this.agendarows = agendarows;
   }
 
 
@@ -295,24 +331,24 @@ public class Watchdogpoint   {
       return false;
     }
     Watchdogpoint watchdogpoint = (Watchdogpoint) o;
-    return Objects.equals(this.displayName, watchdogpoint.displayName) &&
-        Objects.equals(this.ID, watchdogpoint.ID) &&
-        Objects.equals(this.classID, watchdogpoint.classID) &&
-        Objects.equals(this.objVersion, watchdogpoint.objVersion) &&
+    return Objects.equals(this.displayname, watchdogpoint.displayname) &&
+        Objects.equals(this.id, watchdogpoint.id) &&
+        Objects.equals(this.classid, watchdogpoint.classid) &&
+        Objects.equals(this.objversion, watchdogpoint.objversion) &&
         Objects.equals(this.rows, watchdogpoint.rows) &&
         Objects.equals(this.hidden, watchdogpoint.hidden) &&
         Objects.equals(this.name, watchdogpoint.name) &&
         Objects.equals(this.description, watchdogpoint.description) &&
         Objects.equals(this.system, watchdogpoint.system) &&
-        Objects.equals(this.internalName, watchdogpoint.internalName) &&
-        Objects.equals(this.scriptPackage, watchdogpoint.scriptPackage) &&
-        Objects.equals(this.libraryName, watchdogpoint.libraryName) &&
-        Objects.equals(this.agendaRows, watchdogpoint.agendaRows);
+        Objects.equals(this.internalname, watchdogpoint.internalname) &&
+        Objects.equals(this.scriptpackage, watchdogpoint.scriptpackage) &&
+        Objects.equals(this.libraryname, watchdogpoint.libraryname) &&
+        Objects.equals(this.agendarows, watchdogpoint.agendarows);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, name, description, system, internalName, scriptPackage, libraryName, agendaRows);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, name, description, system, internalname, scriptpackage, libraryname, agendarows);
   }
 
   @Override
@@ -320,19 +356,19 @@ public class Watchdogpoint   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Watchdogpoint {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
-    sb.append("    internalName: ").append(toIndentedString(internalName)).append("\n");
-    sb.append("    scriptPackage: ").append(toIndentedString(scriptPackage)).append("\n");
-    sb.append("    libraryName: ").append(toIndentedString(libraryName)).append("\n");
-    sb.append("    agendaRows: ").append(toIndentedString(agendaRows)).append("\n");
+    sb.append("    internalname: ").append(toIndentedString(internalname)).append("\n");
+    sb.append("    scriptpackage: ").append(toIndentedString(scriptpackage)).append("\n");
+    sb.append("    libraryname: ").append(toIndentedString(libraryname)).append("\n");
+    sb.append("    agendarows: ").append(toIndentedString(agendarows)).append("\n");
     sb.append("}");
     return sb.toString();
   }

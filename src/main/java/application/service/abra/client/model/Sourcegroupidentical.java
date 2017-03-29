@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,117 +34,153 @@ import java.util.Objects;
 /**
  * Sourcegroupidentical
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Sourcegroupidentical   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Source_ID")
-  private String sourceID = null;
+  @SerializedName("source_id")
+  private String sourceId = null;
 
-  @SerializedName("Target_ID")
-  private String targetID = null;
+  @SerializedName("target_id")
+  private String targetId = null;
 
-  @SerializedName("IsUser")
-  private Boolean isUser = null;
+  @SerializedName("isuser")
+  private Boolean isuser = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Sourcegroupidentical sourceID(String sourceID) {
-    this.sourceID = sourceID;
+  public Sourcegroupidentical displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Zdr. skupina zdroje; ID objektu Zdrojová skupina [persistentní položka]
-   * @return sourceID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Zdr. skupina zdroje; ID objektu Zdrojová skupina [persistentní položka]")
-  public String getSourceID() {
-    return sourceID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setSourceID(String sourceID) {
-    this.sourceID = sourceID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Sourcegroupidentical targetID(String targetID) {
-    this.targetID = targetID;
+  public Sourcegroupidentical id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Zdr. skupina cíle; ID objektu Zdrojová skupina [persistentní položka]
-   * @return targetID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Zdr. skupina cíle; ID objektu Zdrojová skupina [persistentní položka]")
-  public String getTargetID() {
-    return targetID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setTargetID(String targetID) {
-    this.targetID = targetID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Sourcegroupidentical isUser(Boolean isUser) {
-    this.isUser = isUser;
+  public Sourcegroupidentical classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Uživatelský záznam [persistentní položka]
-   * @return isUser
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Uživatelský záznam [persistentní položka]")
-  public Boolean getIsUser() {
-    return isUser;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setIsUser(Boolean isUser) {
-    this.isUser = isUser;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Sourcegroupidentical objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Sourcegroupidentical sourceId(String sourceId) {
+    this.sourceId = sourceId;
+    return this;
+  }
+
+   /**
+   * zdr. skupina zdroje; id objektu zdrojová skupina [persistentní položka]
+   * @return sourceId
+  **/
+  @ApiModelProperty(example = "null", value = "zdr. skupina zdroje; id objektu zdrojová skupina [persistentní položka]")
+  public String getSourceId() {
+    return sourceId;
+  }
+
+  public void setSourceId(String sourceId) {
+    this.sourceId = sourceId;
+  }
+
+  public Sourcegroupidentical targetId(String targetId) {
+    this.targetId = targetId;
+    return this;
+  }
+
+   /**
+   * zdr. skupina cíle; id objektu zdrojová skupina [persistentní položka]
+   * @return targetId
+  **/
+  @ApiModelProperty(example = "null", value = "zdr. skupina cíle; id objektu zdrojová skupina [persistentní položka]")
+  public String getTargetId() {
+    return targetId;
+  }
+
+  public void setTargetId(String targetId) {
+    this.targetId = targetId;
+  }
+
+  public Sourcegroupidentical isuser(Boolean isuser) {
+    this.isuser = isuser;
+    return this;
+  }
+
+   /**
+   * uživatelský záznam [persistentní položka]
+   * @return isuser
+  **/
+  @ApiModelProperty(example = "null", value = "uživatelský záznam [persistentní položka]")
+  public Boolean getIsuser() {
+    return isuser;
+  }
+
+  public void setIsuser(Boolean isuser) {
+    this.isuser = isuser;
   }
 
 
@@ -157,18 +193,18 @@ public class Sourcegroupidentical   {
       return false;
     }
     Sourcegroupidentical sourcegroupidentical = (Sourcegroupidentical) o;
-    return Objects.equals(this.displayName, sourcegroupidentical.displayName) &&
-        Objects.equals(this.ID, sourcegroupidentical.ID) &&
-        Objects.equals(this.classID, sourcegroupidentical.classID) &&
-        Objects.equals(this.objVersion, sourcegroupidentical.objVersion) &&
-        Objects.equals(this.sourceID, sourcegroupidentical.sourceID) &&
-        Objects.equals(this.targetID, sourcegroupidentical.targetID) &&
-        Objects.equals(this.isUser, sourcegroupidentical.isUser);
+    return Objects.equals(this.displayname, sourcegroupidentical.displayname) &&
+        Objects.equals(this.id, sourcegroupidentical.id) &&
+        Objects.equals(this.classid, sourcegroupidentical.classid) &&
+        Objects.equals(this.objversion, sourcegroupidentical.objversion) &&
+        Objects.equals(this.sourceId, sourcegroupidentical.sourceId) &&
+        Objects.equals(this.targetId, sourcegroupidentical.targetId) &&
+        Objects.equals(this.isuser, sourcegroupidentical.isuser);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, sourceID, targetID, isUser);
+    return Objects.hash(displayname, id, classid, objversion, sourceId, targetId, isuser);
   }
 
   @Override
@@ -176,13 +212,13 @@ public class Sourcegroupidentical   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Sourcegroupidentical {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    sourceID: ").append(toIndentedString(sourceID)).append("\n");
-    sb.append("    targetID: ").append(toIndentedString(targetID)).append("\n");
-    sb.append("    isUser: ").append(toIndentedString(isUser)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    sourceId: ").append(toIndentedString(sourceId)).append("\n");
+    sb.append("    targetId: ").append(toIndentedString(targetId)).append("\n");
+    sb.append("    isuser: ").append(toIndentedString(isuser)).append("\n");
     sb.append("}");
     return sb.toString();
   }

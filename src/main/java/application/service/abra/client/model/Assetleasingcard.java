@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,246 +37,282 @@ import java.util.Objects;
 /**
  * Assetleasingcard
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Assetleasingcard   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("DateOfChange")
-  private DateTime dateOfChange = null;
+  @SerializedName("dateofchange")
+  private DateTime dateofchange = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("InventoryNr")
-  private String inventoryNr = null;
+  @SerializedName("inventorynr")
+  private String inventorynr = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("AssetLocation_ID")
-  private String assetLocationID = null;
+  @SerializedName("assetlocation_id")
+  private String assetlocationId = null;
 
-  @SerializedName("Responsible_ID")
-  private String responsibleID = null;
+  @SerializedName("responsible_id")
+  private String responsibleId = null;
 
-  @SerializedName("ProductNr")
-  private String productNr = null;
+  @SerializedName("productnr")
+  private String productnr = null;
 
-  @SerializedName("YearOfProduction")
-  private Integer yearOfProduction = null;
+  @SerializedName("yearofproduction")
+  private Integer yearofproduction = null;
 
-  @SerializedName("EvidenceDivision_ID")
-  private String evidenceDivisionID = null;
+  @SerializedName("evidencedivision_id")
+  private String evidencedivisionId = null;
 
-  @SerializedName("ExpensesDivision_ID")
-  private String expensesDivisionID = null;
+  @SerializedName("expensesdivision_id")
+  private String expensesdivisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("PrefixInventoryNr")
-  private String prefixInventoryNr = null;
+  @SerializedName("prefixinventorynr")
+  private String prefixinventorynr = null;
 
-  @SerializedName("BodyInventoryNr")
-  private String bodyInventoryNr = null;
+  @SerializedName("bodyinventorynr")
+  private String bodyinventorynr = null;
 
-  @SerializedName("SuffixInventoryNr")
-  private String suffixInventoryNr = null;
+  @SerializedName("suffixinventorynr")
+  private String suffixinventorynr = null;
 
-  @SerializedName("CardType")
-  private String cardType = null;
+  @SerializedName("cardtype")
+  private String cardtype = null;
 
-  @SerializedName("EAN")
-  private String EAN = null;
+  @SerializedName("ean")
+  private String ean = null;
 
-  @SerializedName("AssetType_ID")
-  private String assetTypeID = null;
+  @SerializedName("assettype_id")
+  private String assettypeId = null;
 
-  @SerializedName("MonthOfProduction")
-  private Integer monthOfProduction = null;
+  @SerializedName("monthofproduction")
+  private Integer monthofproduction = null;
 
-  @SerializedName("ServiceLife")
-  private Integer serviceLife = null;
+  @SerializedName("servicelife")
+  private Integer servicelife = null;
 
-  @SerializedName("IsCollection")
-  private Integer isCollection = null;
+  @SerializedName("iscollection")
+  private Integer iscollection = null;
 
-  @SerializedName("ContractDate$DATE")
-  private DateTime contractDateDATE = null;
+  @SerializedName("contractdate$date")
+  private DateTime contractdatedate = null;
 
-  @SerializedName("LeasingCompany_ID")
-  private String leasingCompanyID = null;
+  @SerializedName("leasingcompany_id")
+  private String leasingcompanyId = null;
 
-  @SerializedName("LeasingLength")
-  private Integer leasingLength = null;
+  @SerializedName("leasinglength")
+  private Integer leasinglength = null;
 
-  @SerializedName("AssetTotalPriceBase")
-  private Double assetTotalPriceBase = null;
+  @SerializedName("assettotalpricebase")
+  private Double assettotalpricebase = null;
 
-  @SerializedName("OverTakenDate$DATE")
-  private DateTime overTakenDateDATE = null;
+  @SerializedName("overtakendate$date")
+  private DateTime overtakendatedate = null;
 
-  @SerializedName("AssetTotalPriceVAT")
-  private Double assetTotalPriceVAT = null;
+  @SerializedName("assettotalpricevat")
+  private Double assettotalpricevat = null;
 
-  @SerializedName("AssetVATRate")
-  private Double assetVATRate = null;
+  @SerializedName("assetvatrate")
+  private Double assetvatrate = null;
 
-  @SerializedName("VATSubtractable")
-  private Boolean vATSubtractable = null;
+  @SerializedName("vatsubtractable")
+  private Boolean vatsubtractable = null;
 
-  @SerializedName("ServicePriceBase")
-  private Double servicePriceBase = null;
+  @SerializedName("servicepricebase")
+  private Double servicepricebase = null;
 
-  @SerializedName("ServicePriceVAT")
-  private Double servicePriceVAT = null;
+  @SerializedName("servicepricevat")
+  private Double servicepricevat = null;
 
-  @SerializedName("ServiceVATRate")
-  private Double serviceVATRate = null;
+  @SerializedName("servicevatrate")
+  private Double servicevatrate = null;
 
-  @SerializedName("InsuaranceBase")
-  private Double insuaranceBase = null;
+  @SerializedName("insuarancebase")
+  private Double insuarancebase = null;
 
-  @SerializedName("InsuaranceVAT")
-  private Double insuaranceVAT = null;
+  @SerializedName("insuarancevat")
+  private Double insuarancevat = null;
 
-  @SerializedName("InsuaranceVATRate")
-  private Double insuaranceVATRate = null;
+  @SerializedName("insuarancevatrate")
+  private Double insuarancevatrate = null;
 
-  @SerializedName("RemainderBase")
-  private Double remainderBase = null;
+  @SerializedName("remainderbase")
+  private Double remainderbase = null;
 
-  @SerializedName("RemainderVAT")
-  private Double remainderVAT = null;
+  @SerializedName("remaindervat")
+  private Double remaindervat = null;
 
-  @SerializedName("Deposit")
+  @SerializedName("deposit")
   private Double deposit = null;
 
-  @SerializedName("DepositType")
-  private Integer depositType = null;
+  @SerializedName("deposittype")
+  private Integer deposittype = null;
 
-  @SerializedName("DepositDate$DATE")
-  private DateTime depositDateDATE = null;
+  @SerializedName("depositdate$date")
+  private DateTime depositdatedate = null;
 
-  @SerializedName("LeasingFinished")
-  private Double leasingFinished = null;
+  @SerializedName("leasingfinished")
+  private Double leasingfinished = null;
 
-  @SerializedName("LeasingFinishedDate$DATE")
-  private DateTime leasingFinishedDateDATE = null;
+  @SerializedName("leasingfinisheddate$date")
+  private DateTime leasingfinisheddatedate = null;
 
-  @SerializedName("FinishedComment")
-  private String finishedComment = null;
+  @SerializedName("finishedcomment")
+  private String finishedcomment = null;
 
-  @SerializedName("AssetCard_ID")
-  private String assetCardID = null;
+  @SerializedName("assetcard_id")
+  private String assetcardId = null;
 
-  @SerializedName("HireDocQueue_ID")
-  private String hireDocQueueID = null;
+  @SerializedName("hiredocqueue_id")
+  private String hiredocqueueId = null;
 
-  @SerializedName("HireAccPresetDef_ID")
-  private String hireAccPresetDefID = null;
+  @SerializedName("hireaccpresetdef_id")
+  private String hireaccpresetdefId = null;
 
-  @SerializedName("InstDocQueue_ID")
-  private String instDocQueueID = null;
+  @SerializedName("instdocqueue_id")
+  private String instdocqueueId = null;
 
-  @SerializedName("InstAccPresetDef_ID")
-  private String instAccPresetDefID = null;
+  @SerializedName("instaccpresetdef_id")
+  private String instaccpresetdefId = null;
 
-  @SerializedName("FinalPurchaseDoc_Type")
-  private String finalPurchaseDocType = null;
+  @SerializedName("finalpurchasedoc_type")
+  private String finalpurchasedocType = null;
 
-  @SerializedName("FinalPurchaseDoc_ID")
-  private String finalPurchaseDocID = null;
+  @SerializedName("finalpurchasedoc_id")
+  private String finalpurchasedocId = null;
 
-  @SerializedName("DayInMonthOfPayment")
-  private Integer dayInMonthOfPayment = null;
+  @SerializedName("dayinmonthofpayment")
+  private Integer dayinmonthofpayment = null;
 
-  @SerializedName("Picture_ID")
-  private String pictureID = null;
+  @SerializedName("picture_id")
+  private String pictureId = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Comment")
+  @SerializedName("comment")
   private String comment = null;
 
-  @SerializedName("Payments")
+  @SerializedName("payments")
   private List<Assetleasingpayment> payments = new ArrayList<Assetleasingpayment>();
 
-   /**
-   * Karta - leasing
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Karta - leasing")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-  public Assetleasingcard dateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public Assetleasingcard displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum změny
-   * @return dateOfChange
+   * karta - leasing
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum změny")
-  public DateTime getDateOfChange() {
-    return dateOfChange;
+  @ApiModelProperty(example = "null", value = "karta - leasing")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  public Assetleasingcard id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Assetleasingcard dateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+    return this;
+  }
+
+   /**
+   * datum změny
+   * @return dateofchange
+  **/
+  @ApiModelProperty(example = "null", value = "datum změny")
+  public DateTime getDateofchange() {
+    return dateofchange;
+  }
+
+  public void setDateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+  }
+
+  public Assetleasingcard classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Assetleasingcard objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Assetleasingcard code(String code) {
@@ -285,10 +321,10 @@ public class Assetleasingcard   {
   }
 
    /**
-   * Kód CPA [persistentní položka]
+   * kód cpa [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód CPA [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód cpa [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -297,22 +333,22 @@ public class Assetleasingcard   {
     this.code = code;
   }
 
-  public Assetleasingcard inventoryNr(String inventoryNr) {
-    this.inventoryNr = inventoryNr;
+  public Assetleasingcard inventorynr(String inventorynr) {
+    this.inventorynr = inventorynr;
     return this;
   }
 
    /**
-   * Inventární číslo [persistentní položka]
-   * @return inventoryNr
+   * inventární číslo [persistentní položka]
+   * @return inventorynr
   **/
-  @ApiModelProperty(example = "null", value = "Inventární číslo [persistentní položka]")
-  public String getInventoryNr() {
-    return inventoryNr;
+  @ApiModelProperty(example = "null", value = "inventární číslo [persistentní položka]")
+  public String getInventorynr() {
+    return inventorynr;
   }
 
-  public void setInventoryNr(String inventoryNr) {
-    this.inventoryNr = inventoryNr;
+  public void setInventorynr(String inventorynr) {
+    this.inventorynr = inventorynr;
   }
 
   public Assetleasingcard name(String name) {
@@ -321,10 +357,10 @@ public class Assetleasingcard   {
   }
 
    /**
-   * Název majetku [persistentní položka]
+   * název majetku [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název majetku [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název majetku [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -333,652 +369,652 @@ public class Assetleasingcard   {
     this.name = name;
   }
 
-  public Assetleasingcard assetLocationID(String assetLocationID) {
-    this.assetLocationID = assetLocationID;
+  public Assetleasingcard assetlocationId(String assetlocationId) {
+    this.assetlocationId = assetlocationId;
     return this;
   }
 
    /**
-   * Umístění; ID objektu Umístění majetku [persistentní položka]
-   * @return assetLocationID
+   * umístění; id objektu umístění majetku [persistentní položka]
+   * @return assetlocationId
   **/
-  @ApiModelProperty(example = "null", value = "Umístění; ID objektu Umístění majetku [persistentní položka]")
-  public String getAssetLocationID() {
-    return assetLocationID;
+  @ApiModelProperty(example = "null", value = "umístění; id objektu umístění majetku [persistentní položka]")
+  public String getAssetlocationId() {
+    return assetlocationId;
   }
 
-  public void setAssetLocationID(String assetLocationID) {
-    this.assetLocationID = assetLocationID;
+  public void setAssetlocationId(String assetlocationId) {
+    this.assetlocationId = assetlocationId;
   }
 
-  public Assetleasingcard responsibleID(String responsibleID) {
-    this.responsibleID = responsibleID;
+  public Assetleasingcard responsibleId(String responsibleId) {
+    this.responsibleId = responsibleId;
     return this;
   }
 
    /**
-   * Odpověd.osoba; ID objektu Odpovědná osoba [persistentní položka]
-   * @return responsibleID
+   * odpověd.osoba; id objektu odpovědná osoba [persistentní položka]
+   * @return responsibleId
   **/
-  @ApiModelProperty(example = "null", value = "Odpověd.osoba; ID objektu Odpovědná osoba [persistentní položka]")
-  public String getResponsibleID() {
-    return responsibleID;
+  @ApiModelProperty(example = "null", value = "odpověd.osoba; id objektu odpovědná osoba [persistentní položka]")
+  public String getResponsibleId() {
+    return responsibleId;
   }
 
-  public void setResponsibleID(String responsibleID) {
-    this.responsibleID = responsibleID;
+  public void setResponsibleId(String responsibleId) {
+    this.responsibleId = responsibleId;
   }
 
-  public Assetleasingcard productNr(String productNr) {
-    this.productNr = productNr;
+  public Assetleasingcard productnr(String productnr) {
+    this.productnr = productnr;
     return this;
   }
 
    /**
-   * Výrobní čís. [persistentní položka]
-   * @return productNr
+   * výrobní čís. [persistentní položka]
+   * @return productnr
   **/
-  @ApiModelProperty(example = "null", value = "Výrobní čís. [persistentní položka]")
-  public String getProductNr() {
-    return productNr;
+  @ApiModelProperty(example = "null", value = "výrobní čís. [persistentní položka]")
+  public String getProductnr() {
+    return productnr;
   }
 
-  public void setProductNr(String productNr) {
-    this.productNr = productNr;
+  public void setProductnr(String productnr) {
+    this.productnr = productnr;
   }
 
-  public Assetleasingcard yearOfProduction(Integer yearOfProduction) {
-    this.yearOfProduction = yearOfProduction;
+  public Assetleasingcard yearofproduction(Integer yearofproduction) {
+    this.yearofproduction = yearofproduction;
     return this;
   }
 
    /**
-   * Rok výr. [persistentní položka]
-   * @return yearOfProduction
+   * rok výr. [persistentní položka]
+   * @return yearofproduction
   **/
-  @ApiModelProperty(example = "null", value = "Rok výr. [persistentní položka]")
-  public Integer getYearOfProduction() {
-    return yearOfProduction;
+  @ApiModelProperty(example = "null", value = "rok výr. [persistentní položka]")
+  public Integer getYearofproduction() {
+    return yearofproduction;
   }
 
-  public void setYearOfProduction(Integer yearOfProduction) {
-    this.yearOfProduction = yearOfProduction;
+  public void setYearofproduction(Integer yearofproduction) {
+    this.yearofproduction = yearofproduction;
   }
 
-  public Assetleasingcard evidenceDivisionID(String evidenceDivisionID) {
-    this.evidenceDivisionID = evidenceDivisionID;
+  public Assetleasingcard evidencedivisionId(String evidencedivisionId) {
+    this.evidencedivisionId = evidencedivisionId;
     return this;
   }
 
    /**
-   * Ev.stř.; ID objektu Středisko [persistentní položka]
-   * @return evidenceDivisionID
+   * ev.stř.; id objektu středisko [persistentní položka]
+   * @return evidencedivisionId
   **/
-  @ApiModelProperty(example = "null", value = "Ev.stř.; ID objektu Středisko [persistentní položka]")
-  public String getEvidenceDivisionID() {
-    return evidenceDivisionID;
+  @ApiModelProperty(example = "null", value = "ev.stř.; id objektu středisko [persistentní položka]")
+  public String getEvidencedivisionId() {
+    return evidencedivisionId;
   }
 
-  public void setEvidenceDivisionID(String evidenceDivisionID) {
-    this.evidenceDivisionID = evidenceDivisionID;
+  public void setEvidencedivisionId(String evidencedivisionId) {
+    this.evidencedivisionId = evidencedivisionId;
   }
 
-  public Assetleasingcard expensesDivisionID(String expensesDivisionID) {
-    this.expensesDivisionID = expensesDivisionID;
+  public Assetleasingcard expensesdivisionId(String expensesdivisionId) {
+    this.expensesdivisionId = expensesdivisionId;
     return this;
   }
 
    /**
-   * Nákl.stř.; ID objektu Středisko [persistentní položka]
-   * @return expensesDivisionID
+   * nákl.stř.; id objektu středisko [persistentní položka]
+   * @return expensesdivisionId
   **/
-  @ApiModelProperty(example = "null", value = "Nákl.stř.; ID objektu Středisko [persistentní položka]")
-  public String getExpensesDivisionID() {
-    return expensesDivisionID;
+  @ApiModelProperty(example = "null", value = "nákl.stř.; id objektu středisko [persistentní položka]")
+  public String getExpensesdivisionId() {
+    return expensesdivisionId;
   }
 
-  public void setExpensesDivisionID(String expensesDivisionID) {
-    this.expensesDivisionID = expensesDivisionID;
+  public void setExpensesdivisionId(String expensesdivisionId) {
+    this.expensesdivisionId = expensesdivisionId;
   }
 
-  public Assetleasingcard busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Assetleasingcard busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Assetleasingcard busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Assetleasingcard bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obch.případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obch.případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obch.případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obch.případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Assetleasingcard busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Assetleasingcard busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Assetleasingcard createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Assetleasingcard createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Assetleasingcard correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Assetleasingcard correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Assetleasingcard prefixInventoryNr(String prefixInventoryNr) {
-    this.prefixInventoryNr = prefixInventoryNr;
+  public Assetleasingcard prefixinventorynr(String prefixinventorynr) {
+    this.prefixinventorynr = prefixinventorynr;
     return this;
   }
 
    /**
-   * Prefix inventárního čísla
-   * @return prefixInventoryNr
+   * prefix inventárního čísla
+   * @return prefixinventorynr
   **/
-  @ApiModelProperty(example = "null", value = "Prefix inventárního čísla")
-  public String getPrefixInventoryNr() {
-    return prefixInventoryNr;
+  @ApiModelProperty(example = "null", value = "prefix inventárního čísla")
+  public String getPrefixinventorynr() {
+    return prefixinventorynr;
   }
 
-  public void setPrefixInventoryNr(String prefixInventoryNr) {
-    this.prefixInventoryNr = prefixInventoryNr;
+  public void setPrefixinventorynr(String prefixinventorynr) {
+    this.prefixinventorynr = prefixinventorynr;
   }
 
-  public Assetleasingcard bodyInventoryNr(String bodyInventoryNr) {
-    this.bodyInventoryNr = bodyInventoryNr;
+  public Assetleasingcard bodyinventorynr(String bodyinventorynr) {
+    this.bodyinventorynr = bodyinventorynr;
     return this;
   }
 
    /**
-   * Tělo inventárního čísla
-   * @return bodyInventoryNr
+   * tělo inventárního čísla
+   * @return bodyinventorynr
   **/
-  @ApiModelProperty(example = "null", value = "Tělo inventárního čísla")
-  public String getBodyInventoryNr() {
-    return bodyInventoryNr;
+  @ApiModelProperty(example = "null", value = "tělo inventárního čísla")
+  public String getBodyinventorynr() {
+    return bodyinventorynr;
   }
 
-  public void setBodyInventoryNr(String bodyInventoryNr) {
-    this.bodyInventoryNr = bodyInventoryNr;
+  public void setBodyinventorynr(String bodyinventorynr) {
+    this.bodyinventorynr = bodyinventorynr;
   }
 
-  public Assetleasingcard suffixInventoryNr(String suffixInventoryNr) {
-    this.suffixInventoryNr = suffixInventoryNr;
+  public Assetleasingcard suffixinventorynr(String suffixinventorynr) {
+    this.suffixinventorynr = suffixinventorynr;
     return this;
   }
 
    /**
-   * Sufix inventárního čísla
-   * @return suffixInventoryNr
+   * sufix inventárního čísla
+   * @return suffixinventorynr
   **/
-  @ApiModelProperty(example = "null", value = "Sufix inventárního čísla")
-  public String getSuffixInventoryNr() {
-    return suffixInventoryNr;
+  @ApiModelProperty(example = "null", value = "sufix inventárního čísla")
+  public String getSuffixinventorynr() {
+    return suffixinventorynr;
   }
 
-  public void setSuffixInventoryNr(String suffixInventoryNr) {
-    this.suffixInventoryNr = suffixInventoryNr;
+  public void setSuffixinventorynr(String suffixinventorynr) {
+    this.suffixinventorynr = suffixinventorynr;
   }
 
-  public Assetleasingcard cardType(String cardType) {
-    this.cardType = cardType;
+  public Assetleasingcard cardtype(String cardtype) {
+    this.cardtype = cardtype;
     return this;
   }
 
    /**
-   * Typ karty
-   * @return cardType
+   * typ karty
+   * @return cardtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ karty")
-  public String getCardType() {
-    return cardType;
+  @ApiModelProperty(example = "null", value = "typ karty")
+  public String getCardtype() {
+    return cardtype;
   }
 
-  public void setCardType(String cardType) {
-    this.cardType = cardType;
+  public void setCardtype(String cardtype) {
+    this.cardtype = cardtype;
   }
 
-  public Assetleasingcard EAN(String EAN) {
-    this.EAN = EAN;
+  public Assetleasingcard ean(String ean) {
+    this.ean = ean;
     return this;
   }
 
    /**
-   * EAN [persistentní položka]
-   * @return EAN
+   * ean [persistentní položka]
+   * @return ean
   **/
-  @ApiModelProperty(example = "null", value = "EAN [persistentní položka]")
-  public String getEAN() {
-    return EAN;
+  @ApiModelProperty(example = "null", value = "ean [persistentní položka]")
+  public String getEan() {
+    return ean;
   }
 
-  public void setEAN(String EAN) {
-    this.EAN = EAN;
+  public void setEan(String ean) {
+    this.ean = ean;
   }
 
-  public Assetleasingcard assetTypeID(String assetTypeID) {
-    this.assetTypeID = assetTypeID;
+  public Assetleasingcard assettypeId(String assettypeId) {
+    this.assettypeId = assettypeId;
     return this;
   }
 
    /**
-   * Druh majetku; ID objektu Druh majetku [persistentní položka]
-   * @return assetTypeID
+   * druh majetku; id objektu druh majetku [persistentní položka]
+   * @return assettypeId
   **/
-  @ApiModelProperty(example = "null", value = "Druh majetku; ID objektu Druh majetku [persistentní položka]")
-  public String getAssetTypeID() {
-    return assetTypeID;
+  @ApiModelProperty(example = "null", value = "druh majetku; id objektu druh majetku [persistentní položka]")
+  public String getAssettypeId() {
+    return assettypeId;
   }
 
-  public void setAssetTypeID(String assetTypeID) {
-    this.assetTypeID = assetTypeID;
+  public void setAssettypeId(String assettypeId) {
+    this.assettypeId = assettypeId;
   }
 
-  public Assetleasingcard monthOfProduction(Integer monthOfProduction) {
-    this.monthOfProduction = monthOfProduction;
+  public Assetleasingcard monthofproduction(Integer monthofproduction) {
+    this.monthofproduction = monthofproduction;
     return this;
   }
 
    /**
-   * Měsíc výr. [persistentní položka]
-   * @return monthOfProduction
+   * měsíc výr. [persistentní položka]
+   * @return monthofproduction
   **/
-  @ApiModelProperty(example = "null", value = "Měsíc výr. [persistentní položka]")
-  public Integer getMonthOfProduction() {
-    return monthOfProduction;
+  @ApiModelProperty(example = "null", value = "měsíc výr. [persistentní položka]")
+  public Integer getMonthofproduction() {
+    return monthofproduction;
   }
 
-  public void setMonthOfProduction(Integer monthOfProduction) {
-    this.monthOfProduction = monthOfProduction;
+  public void setMonthofproduction(Integer monthofproduction) {
+    this.monthofproduction = monthofproduction;
   }
 
-  public Assetleasingcard serviceLife(Integer serviceLife) {
-    this.serviceLife = serviceLife;
+  public Assetleasingcard servicelife(Integer servicelife) {
+    this.servicelife = servicelife;
     return this;
   }
 
    /**
    * Životnost [persistentní položka]
-   * @return serviceLife
+   * @return servicelife
   **/
   @ApiModelProperty(example = "null", value = "Životnost [persistentní položka]")
-  public Integer getServiceLife() {
-    return serviceLife;
+  public Integer getServicelife() {
+    return servicelife;
   }
 
-  public void setServiceLife(Integer serviceLife) {
-    this.serviceLife = serviceLife;
+  public void setServicelife(Integer servicelife) {
+    this.servicelife = servicelife;
   }
 
-  public Assetleasingcard isCollection(Integer isCollection) {
-    this.isCollection = isCollection;
+  public Assetleasingcard iscollection(Integer iscollection) {
+    this.iscollection = iscollection;
     return this;
   }
 
    /**
-   * Je kolekce [persistentní položka]
-   * @return isCollection
+   * je kolekce [persistentní položka]
+   * @return iscollection
   **/
-  @ApiModelProperty(example = "null", value = "Je kolekce [persistentní položka]")
-  public Integer getIsCollection() {
-    return isCollection;
+  @ApiModelProperty(example = "null", value = "je kolekce [persistentní položka]")
+  public Integer getIscollection() {
+    return iscollection;
   }
 
-  public void setIsCollection(Integer isCollection) {
-    this.isCollection = isCollection;
+  public void setIscollection(Integer iscollection) {
+    this.iscollection = iscollection;
   }
 
-  public Assetleasingcard contractDateDATE(DateTime contractDateDATE) {
-    this.contractDateDATE = contractDateDATE;
+  public Assetleasingcard contractdatedate(DateTime contractdatedate) {
+    this.contractdatedate = contractdatedate;
     return this;
   }
 
    /**
-   * Datum sml. [persistentní položka]
-   * @return contractDateDATE
+   * datum sml. [persistentní položka]
+   * @return contractdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum sml. [persistentní položka]")
-  public DateTime getContractDateDATE() {
-    return contractDateDATE;
+  @ApiModelProperty(example = "null", value = "datum sml. [persistentní položka]")
+  public DateTime getContractdatedate() {
+    return contractdatedate;
   }
 
-  public void setContractDateDATE(DateTime contractDateDATE) {
-    this.contractDateDATE = contractDateDATE;
+  public void setContractdatedate(DateTime contractdatedate) {
+    this.contractdatedate = contractdatedate;
   }
 
-  public Assetleasingcard leasingCompanyID(String leasingCompanyID) {
-    this.leasingCompanyID = leasingCompanyID;
+  public Assetleasingcard leasingcompanyId(String leasingcompanyId) {
+    this.leasingcompanyId = leasingcompanyId;
     return this;
   }
 
    /**
-   * Leas.firma; ID objektu Firma [persistentní položka]
-   * @return leasingCompanyID
+   * leas.firma; id objektu firma [persistentní položka]
+   * @return leasingcompanyId
   **/
-  @ApiModelProperty(example = "null", value = "Leas.firma; ID objektu Firma [persistentní položka]")
-  public String getLeasingCompanyID() {
-    return leasingCompanyID;
+  @ApiModelProperty(example = "null", value = "leas.firma; id objektu firma [persistentní položka]")
+  public String getLeasingcompanyId() {
+    return leasingcompanyId;
   }
 
-  public void setLeasingCompanyID(String leasingCompanyID) {
-    this.leasingCompanyID = leasingCompanyID;
+  public void setLeasingcompanyId(String leasingcompanyId) {
+    this.leasingcompanyId = leasingcompanyId;
   }
 
-  public Assetleasingcard leasingLength(Integer leasingLength) {
-    this.leasingLength = leasingLength;
+  public Assetleasingcard leasinglength(Integer leasinglength) {
+    this.leasinglength = leasinglength;
     return this;
   }
 
    /**
-   * Délka leas. [persistentní položka]
-   * @return leasingLength
+   * délka leas. [persistentní položka]
+   * @return leasinglength
   **/
-  @ApiModelProperty(example = "null", value = "Délka leas. [persistentní položka]")
-  public Integer getLeasingLength() {
-    return leasingLength;
+  @ApiModelProperty(example = "null", value = "délka leas. [persistentní položka]")
+  public Integer getLeasinglength() {
+    return leasinglength;
   }
 
-  public void setLeasingLength(Integer leasingLength) {
-    this.leasingLength = leasingLength;
+  public void setLeasinglength(Integer leasinglength) {
+    this.leasinglength = leasinglength;
   }
 
-  public Assetleasingcard assetTotalPriceBase(Double assetTotalPriceBase) {
-    this.assetTotalPriceBase = assetTotalPriceBase;
+  public Assetleasingcard assettotalpricebase(Double assettotalpricebase) {
+    this.assettotalpricebase = assettotalpricebase;
     return this;
   }
 
    /**
-   * Celk.cena [persistentní položka]
-   * @return assetTotalPriceBase
+   * celk.cena [persistentní položka]
+   * @return assettotalpricebase
   **/
-  @ApiModelProperty(example = "null", value = "Celk.cena [persistentní položka]")
-  public Double getAssetTotalPriceBase() {
-    return assetTotalPriceBase;
+  @ApiModelProperty(example = "null", value = "celk.cena [persistentní položka]")
+  public Double getAssettotalpricebase() {
+    return assettotalpricebase;
   }
 
-  public void setAssetTotalPriceBase(Double assetTotalPriceBase) {
-    this.assetTotalPriceBase = assetTotalPriceBase;
+  public void setAssettotalpricebase(Double assettotalpricebase) {
+    this.assettotalpricebase = assettotalpricebase;
   }
 
-  public Assetleasingcard overTakenDateDATE(DateTime overTakenDateDATE) {
-    this.overTakenDateDATE = overTakenDateDATE;
+  public Assetleasingcard overtakendatedate(DateTime overtakendatedate) {
+    this.overtakendatedate = overtakendatedate;
     return this;
   }
 
    /**
-   * Datum převzetí [persistentní položka]
-   * @return overTakenDateDATE
+   * datum převzetí [persistentní položka]
+   * @return overtakendatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum převzetí [persistentní položka]")
-  public DateTime getOverTakenDateDATE() {
-    return overTakenDateDATE;
+  @ApiModelProperty(example = "null", value = "datum převzetí [persistentní položka]")
+  public DateTime getOvertakendatedate() {
+    return overtakendatedate;
   }
 
-  public void setOverTakenDateDATE(DateTime overTakenDateDATE) {
-    this.overTakenDateDATE = overTakenDateDATE;
+  public void setOvertakendatedate(DateTime overtakendatedate) {
+    this.overtakendatedate = overtakendatedate;
   }
 
-  public Assetleasingcard assetTotalPriceVAT(Double assetTotalPriceVAT) {
-    this.assetTotalPriceVAT = assetTotalPriceVAT;
+  public Assetleasingcard assettotalpricevat(Double assettotalpricevat) {
+    this.assettotalpricevat = assettotalpricevat;
     return this;
   }
 
    /**
-   * Celk.DPH [persistentní položka]
-   * @return assetTotalPriceVAT
+   * celk.dph [persistentní položka]
+   * @return assettotalpricevat
   **/
-  @ApiModelProperty(example = "null", value = "Celk.DPH [persistentní položka]")
-  public Double getAssetTotalPriceVAT() {
-    return assetTotalPriceVAT;
+  @ApiModelProperty(example = "null", value = "celk.dph [persistentní položka]")
+  public Double getAssettotalpricevat() {
+    return assettotalpricevat;
   }
 
-  public void setAssetTotalPriceVAT(Double assetTotalPriceVAT) {
-    this.assetTotalPriceVAT = assetTotalPriceVAT;
+  public void setAssettotalpricevat(Double assettotalpricevat) {
+    this.assettotalpricevat = assettotalpricevat;
   }
 
-  public Assetleasingcard assetVATRate(Double assetVATRate) {
-    this.assetVATRate = assetVATRate;
+  public Assetleasingcard assetvatrate(Double assetvatrate) {
+    this.assetvatrate = assetvatrate;
     return this;
   }
 
    /**
-   * % DPH [persistentní položka]
-   * @return assetVATRate
+   * % dph [persistentní položka]
+   * @return assetvatrate
   **/
-  @ApiModelProperty(example = "null", value = "% DPH [persistentní položka]")
-  public Double getAssetVATRate() {
-    return assetVATRate;
+  @ApiModelProperty(example = "null", value = "% dph [persistentní položka]")
+  public Double getAssetvatrate() {
+    return assetvatrate;
   }
 
-  public void setAssetVATRate(Double assetVATRate) {
-    this.assetVATRate = assetVATRate;
+  public void setAssetvatrate(Double assetvatrate) {
+    this.assetvatrate = assetvatrate;
   }
 
-  public Assetleasingcard vATSubtractable(Boolean vATSubtractable) {
-    this.vATSubtractable = vATSubtractable;
+  public Assetleasingcard vatsubtractable(Boolean vatsubtractable) {
+    this.vatsubtractable = vatsubtractable;
     return this;
   }
 
    /**
-   * DPH odpočitatelná [persistentní položka]
-   * @return vATSubtractable
+   * dph odpočitatelná [persistentní položka]
+   * @return vatsubtractable
   **/
-  @ApiModelProperty(example = "null", value = "DPH odpočitatelná [persistentní položka]")
-  public Boolean getVATSubtractable() {
-    return vATSubtractable;
+  @ApiModelProperty(example = "null", value = "dph odpočitatelná [persistentní položka]")
+  public Boolean getVatsubtractable() {
+    return vatsubtractable;
   }
 
-  public void setVATSubtractable(Boolean vATSubtractable) {
-    this.vATSubtractable = vATSubtractable;
+  public void setVatsubtractable(Boolean vatsubtractable) {
+    this.vatsubtractable = vatsubtractable;
   }
 
-  public Assetleasingcard servicePriceBase(Double servicePriceBase) {
-    this.servicePriceBase = servicePriceBase;
+  public Assetleasingcard servicepricebase(Double servicepricebase) {
+    this.servicepricebase = servicepricebase;
     return this;
   }
 
    /**
-   * Cena pronájmu [persistentní položka]
-   * @return servicePriceBase
+   * cena pronájmu [persistentní položka]
+   * @return servicepricebase
   **/
-  @ApiModelProperty(example = "null", value = "Cena pronájmu [persistentní položka]")
-  public Double getServicePriceBase() {
-    return servicePriceBase;
+  @ApiModelProperty(example = "null", value = "cena pronájmu [persistentní položka]")
+  public Double getServicepricebase() {
+    return servicepricebase;
   }
 
-  public void setServicePriceBase(Double servicePriceBase) {
-    this.servicePriceBase = servicePriceBase;
+  public void setServicepricebase(Double servicepricebase) {
+    this.servicepricebase = servicepricebase;
   }
 
-  public Assetleasingcard servicePriceVAT(Double servicePriceVAT) {
-    this.servicePriceVAT = servicePriceVAT;
+  public Assetleasingcard servicepricevat(Double servicepricevat) {
+    this.servicepricevat = servicepricevat;
     return this;
   }
 
    /**
-   * DPH pronájmu [persistentní položka]
-   * @return servicePriceVAT
+   * dph pronájmu [persistentní položka]
+   * @return servicepricevat
   **/
-  @ApiModelProperty(example = "null", value = "DPH pronájmu [persistentní položka]")
-  public Double getServicePriceVAT() {
-    return servicePriceVAT;
+  @ApiModelProperty(example = "null", value = "dph pronájmu [persistentní položka]")
+  public Double getServicepricevat() {
+    return servicepricevat;
   }
 
-  public void setServicePriceVAT(Double servicePriceVAT) {
-    this.servicePriceVAT = servicePriceVAT;
+  public void setServicepricevat(Double servicepricevat) {
+    this.servicepricevat = servicepricevat;
   }
 
-  public Assetleasingcard serviceVATRate(Double serviceVATRate) {
-    this.serviceVATRate = serviceVATRate;
+  public Assetleasingcard servicevatrate(Double servicevatrate) {
+    this.servicevatrate = servicevatrate;
     return this;
   }
 
    /**
-   * % DPH [persistentní položka]
-   * @return serviceVATRate
+   * % dph [persistentní položka]
+   * @return servicevatrate
   **/
-  @ApiModelProperty(example = "null", value = "% DPH [persistentní položka]")
-  public Double getServiceVATRate() {
-    return serviceVATRate;
+  @ApiModelProperty(example = "null", value = "% dph [persistentní položka]")
+  public Double getServicevatrate() {
+    return servicevatrate;
   }
 
-  public void setServiceVATRate(Double serviceVATRate) {
-    this.serviceVATRate = serviceVATRate;
+  public void setServicevatrate(Double servicevatrate) {
+    this.servicevatrate = servicevatrate;
   }
 
-  public Assetleasingcard insuaranceBase(Double insuaranceBase) {
-    this.insuaranceBase = insuaranceBase;
+  public Assetleasingcard insuarancebase(Double insuarancebase) {
+    this.insuarancebase = insuarancebase;
     return this;
   }
 
    /**
-   * Cena pojištění [persistentní položka]
-   * @return insuaranceBase
+   * cena pojištění [persistentní položka]
+   * @return insuarancebase
   **/
-  @ApiModelProperty(example = "null", value = "Cena pojištění [persistentní položka]")
-  public Double getInsuaranceBase() {
-    return insuaranceBase;
+  @ApiModelProperty(example = "null", value = "cena pojištění [persistentní položka]")
+  public Double getInsuarancebase() {
+    return insuarancebase;
   }
 
-  public void setInsuaranceBase(Double insuaranceBase) {
-    this.insuaranceBase = insuaranceBase;
+  public void setInsuarancebase(Double insuarancebase) {
+    this.insuarancebase = insuarancebase;
   }
 
-  public Assetleasingcard insuaranceVAT(Double insuaranceVAT) {
-    this.insuaranceVAT = insuaranceVAT;
+  public Assetleasingcard insuarancevat(Double insuarancevat) {
+    this.insuarancevat = insuarancevat;
     return this;
   }
 
    /**
-   * DPH pojištění [persistentní položka]
-   * @return insuaranceVAT
+   * dph pojištění [persistentní položka]
+   * @return insuarancevat
   **/
-  @ApiModelProperty(example = "null", value = "DPH pojištění [persistentní položka]")
-  public Double getInsuaranceVAT() {
-    return insuaranceVAT;
+  @ApiModelProperty(example = "null", value = "dph pojištění [persistentní položka]")
+  public Double getInsuarancevat() {
+    return insuarancevat;
   }
 
-  public void setInsuaranceVAT(Double insuaranceVAT) {
-    this.insuaranceVAT = insuaranceVAT;
+  public void setInsuarancevat(Double insuarancevat) {
+    this.insuarancevat = insuarancevat;
   }
 
-  public Assetleasingcard insuaranceVATRate(Double insuaranceVATRate) {
-    this.insuaranceVATRate = insuaranceVATRate;
+  public Assetleasingcard insuarancevatrate(Double insuarancevatrate) {
+    this.insuarancevatrate = insuarancevatrate;
     return this;
   }
 
    /**
-   * %DPH [persistentní položka]
-   * @return insuaranceVATRate
+   * %dph [persistentní položka]
+   * @return insuarancevatrate
   **/
-  @ApiModelProperty(example = "null", value = "%DPH [persistentní položka]")
-  public Double getInsuaranceVATRate() {
-    return insuaranceVATRate;
+  @ApiModelProperty(example = "null", value = "%dph [persistentní položka]")
+  public Double getInsuarancevatrate() {
+    return insuarancevatrate;
   }
 
-  public void setInsuaranceVATRate(Double insuaranceVATRate) {
-    this.insuaranceVATRate = insuaranceVATRate;
+  public void setInsuarancevatrate(Double insuarancevatrate) {
+    this.insuarancevatrate = insuarancevatrate;
   }
 
-  public Assetleasingcard remainderBase(Double remainderBase) {
-    this.remainderBase = remainderBase;
+  public Assetleasingcard remainderbase(Double remainderbase) {
+    this.remainderbase = remainderbase;
     return this;
   }
 
    /**
-   * Zůstat.cena [persistentní položka]
-   * @return remainderBase
+   * zůstat.cena [persistentní položka]
+   * @return remainderbase
   **/
-  @ApiModelProperty(example = "null", value = "Zůstat.cena [persistentní položka]")
-  public Double getRemainderBase() {
-    return remainderBase;
+  @ApiModelProperty(example = "null", value = "zůstat.cena [persistentní položka]")
+  public Double getRemainderbase() {
+    return remainderbase;
   }
 
-  public void setRemainderBase(Double remainderBase) {
-    this.remainderBase = remainderBase;
+  public void setRemainderbase(Double remainderbase) {
+    this.remainderbase = remainderbase;
   }
 
-  public Assetleasingcard remainderVAT(Double remainderVAT) {
-    this.remainderVAT = remainderVAT;
+  public Assetleasingcard remaindervat(Double remaindervat) {
+    this.remaindervat = remaindervat;
     return this;
   }
 
    /**
-   * DPH zůst.ceny [persistentní položka]
-   * @return remainderVAT
+   * dph zůst.ceny [persistentní položka]
+   * @return remaindervat
   **/
-  @ApiModelProperty(example = "null", value = "DPH zůst.ceny [persistentní položka]")
-  public Double getRemainderVAT() {
-    return remainderVAT;
+  @ApiModelProperty(example = "null", value = "dph zůst.ceny [persistentní položka]")
+  public Double getRemaindervat() {
+    return remaindervat;
   }
 
-  public void setRemainderVAT(Double remainderVAT) {
-    this.remainderVAT = remainderVAT;
+  public void setRemaindervat(Double remaindervat) {
+    this.remaindervat = remaindervat;
   }
 
   public Assetleasingcard deposit(Double deposit) {
@@ -987,10 +1023,10 @@ public class Assetleasingcard   {
   }
 
    /**
-   * Záloha [persistentní položka]
+   * záloha [persistentní položka]
    * @return deposit
   **/
-  @ApiModelProperty(example = "null", value = "Záloha [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "záloha [persistentní položka]")
   public Double getDeposit() {
     return deposit;
   }
@@ -999,256 +1035,256 @@ public class Assetleasingcard   {
     this.deposit = deposit;
   }
 
-  public Assetleasingcard depositType(Integer depositType) {
-    this.depositType = depositType;
+  public Assetleasingcard deposittype(Integer deposittype) {
+    this.deposittype = deposittype;
     return this;
   }
 
    /**
-   * Typ zálohy [persistentní položka]
-   * @return depositType
+   * typ zálohy [persistentní položka]
+   * @return deposittype
   **/
-  @ApiModelProperty(example = "null", value = "Typ zálohy [persistentní položka]")
-  public Integer getDepositType() {
-    return depositType;
+  @ApiModelProperty(example = "null", value = "typ zálohy [persistentní položka]")
+  public Integer getDeposittype() {
+    return deposittype;
   }
 
-  public void setDepositType(Integer depositType) {
-    this.depositType = depositType;
+  public void setDeposittype(Integer deposittype) {
+    this.deposittype = deposittype;
   }
 
-  public Assetleasingcard depositDateDATE(DateTime depositDateDATE) {
-    this.depositDateDATE = depositDateDATE;
+  public Assetleasingcard depositdatedate(DateTime depositdatedate) {
+    this.depositdatedate = depositdatedate;
     return this;
   }
 
    /**
-   * Splatnost zál. [persistentní položka]
-   * @return depositDateDATE
+   * splatnost zál. [persistentní položka]
+   * @return depositdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Splatnost zál. [persistentní položka]")
-  public DateTime getDepositDateDATE() {
-    return depositDateDATE;
+  @ApiModelProperty(example = "null", value = "splatnost zál. [persistentní položka]")
+  public DateTime getDepositdatedate() {
+    return depositdatedate;
   }
 
-  public void setDepositDateDATE(DateTime depositDateDATE) {
-    this.depositDateDATE = depositDateDATE;
+  public void setDepositdatedate(DateTime depositdatedate) {
+    this.depositdatedate = depositdatedate;
   }
 
-  public Assetleasingcard leasingFinished(Double leasingFinished) {
-    this.leasingFinished = leasingFinished;
+  public Assetleasingcard leasingfinished(Double leasingfinished) {
+    this.leasingfinished = leasingfinished;
     return this;
   }
 
    /**
-   * Ukončen [persistentní položka]
-   * @return leasingFinished
+   * ukončen [persistentní položka]
+   * @return leasingfinished
   **/
-  @ApiModelProperty(example = "null", value = "Ukončen [persistentní položka]")
-  public Double getLeasingFinished() {
-    return leasingFinished;
+  @ApiModelProperty(example = "null", value = "ukončen [persistentní položka]")
+  public Double getLeasingfinished() {
+    return leasingfinished;
   }
 
-  public void setLeasingFinished(Double leasingFinished) {
-    this.leasingFinished = leasingFinished;
+  public void setLeasingfinished(Double leasingfinished) {
+    this.leasingfinished = leasingfinished;
   }
 
-  public Assetleasingcard leasingFinishedDateDATE(DateTime leasingFinishedDateDATE) {
-    this.leasingFinishedDateDATE = leasingFinishedDateDATE;
+  public Assetleasingcard leasingfinisheddatedate(DateTime leasingfinisheddatedate) {
+    this.leasingfinisheddatedate = leasingfinisheddatedate;
     return this;
   }
 
    /**
-   * Datum ukonč. [persistentní položka]
-   * @return leasingFinishedDateDATE
+   * datum ukonč. [persistentní položka]
+   * @return leasingfinisheddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum ukonč. [persistentní položka]")
-  public DateTime getLeasingFinishedDateDATE() {
-    return leasingFinishedDateDATE;
+  @ApiModelProperty(example = "null", value = "datum ukonč. [persistentní položka]")
+  public DateTime getLeasingfinisheddatedate() {
+    return leasingfinisheddatedate;
   }
 
-  public void setLeasingFinishedDateDATE(DateTime leasingFinishedDateDATE) {
-    this.leasingFinishedDateDATE = leasingFinishedDateDATE;
+  public void setLeasingfinisheddatedate(DateTime leasingfinisheddatedate) {
+    this.leasingfinisheddatedate = leasingfinisheddatedate;
   }
 
-  public Assetleasingcard finishedComment(String finishedComment) {
-    this.finishedComment = finishedComment;
+  public Assetleasingcard finishedcomment(String finishedcomment) {
+    this.finishedcomment = finishedcomment;
     return this;
   }
 
    /**
-   * Poznámka [persistentní položka]
-   * @return finishedComment
+   * poznámka [persistentní položka]
+   * @return finishedcomment
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
-  public String getFinishedComment() {
-    return finishedComment;
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
+  public String getFinishedcomment() {
+    return finishedcomment;
   }
 
-  public void setFinishedComment(String finishedComment) {
-    this.finishedComment = finishedComment;
+  public void setFinishedcomment(String finishedcomment) {
+    this.finishedcomment = finishedcomment;
   }
 
-  public Assetleasingcard assetCardID(String assetCardID) {
-    this.assetCardID = assetCardID;
+  public Assetleasingcard assetcardId(String assetcardId) {
+    this.assetcardId = assetcardId;
     return this;
   }
 
    /**
-   * Následná karta; ID objektu Karta majetku [persistentní položka]
-   * @return assetCardID
+   * následná karta; id objektu karta majetku [persistentní položka]
+   * @return assetcardId
   **/
-  @ApiModelProperty(example = "null", value = "Následná karta; ID objektu Karta majetku [persistentní položka]")
-  public String getAssetCardID() {
-    return assetCardID;
+  @ApiModelProperty(example = "null", value = "následná karta; id objektu karta majetku [persistentní položka]")
+  public String getAssetcardId() {
+    return assetcardId;
   }
 
-  public void setAssetCardID(String assetCardID) {
-    this.assetCardID = assetCardID;
+  public void setAssetcardId(String assetcardId) {
+    this.assetcardId = assetcardId;
   }
 
-  public Assetleasingcard hireDocQueueID(String hireDocQueueID) {
-    this.hireDocQueueID = hireDocQueueID;
+  public Assetleasingcard hiredocqueueId(String hiredocqueueId) {
+    this.hiredocqueueId = hiredocqueueId;
     return this;
   }
 
    /**
-   * Řada dokl.-nájem; ID objektu Řada dokladů [persistentní položka]
-   * @return hireDocQueueID
+   * Řada dokl.-nájem; id objektu Řada dokladů [persistentní položka]
+   * @return hiredocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokl.-nájem; ID objektu Řada dokladů [persistentní položka]")
-  public String getHireDocQueueID() {
-    return hireDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada dokl.-nájem; id objektu Řada dokladů [persistentní položka]")
+  public String getHiredocqueueId() {
+    return hiredocqueueId;
   }
 
-  public void setHireDocQueueID(String hireDocQueueID) {
-    this.hireDocQueueID = hireDocQueueID;
+  public void setHiredocqueueId(String hiredocqueueId) {
+    this.hiredocqueueId = hiredocqueueId;
   }
 
-  public Assetleasingcard hireAccPresetDefID(String hireAccPresetDefID) {
-    this.hireAccPresetDefID = hireAccPresetDefID;
+  public Assetleasingcard hireaccpresetdefId(String hireaccpresetdefId) {
+    this.hireaccpresetdefId = hireaccpresetdefId;
     return this;
   }
 
    /**
-   * Předkontace pronájmu; ID objektu Účetní předkontace [persistentní položka]
-   * @return hireAccPresetDefID
+   * předkontace pronájmu; id objektu Účetní předkontace [persistentní položka]
+   * @return hireaccpresetdefId
   **/
-  @ApiModelProperty(example = "null", value = "Předkontace pronájmu; ID objektu Účetní předkontace [persistentní položka]")
-  public String getHireAccPresetDefID() {
-    return hireAccPresetDefID;
+  @ApiModelProperty(example = "null", value = "předkontace pronájmu; id objektu Účetní předkontace [persistentní položka]")
+  public String getHireaccpresetdefId() {
+    return hireaccpresetdefId;
   }
 
-  public void setHireAccPresetDefID(String hireAccPresetDefID) {
-    this.hireAccPresetDefID = hireAccPresetDefID;
+  public void setHireaccpresetdefId(String hireaccpresetdefId) {
+    this.hireaccpresetdefId = hireaccpresetdefId;
   }
 
-  public Assetleasingcard instDocQueueID(String instDocQueueID) {
-    this.instDocQueueID = instDocQueueID;
+  public Assetleasingcard instdocqueueId(String instdocqueueId) {
+    this.instdocqueueId = instdocqueueId;
     return this;
   }
 
    /**
-   * Řada dokl.-splátky; ID objektu Řada dokladů [persistentní položka]
-   * @return instDocQueueID
+   * Řada dokl.-splátky; id objektu Řada dokladů [persistentní položka]
+   * @return instdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokl.-splátky; ID objektu Řada dokladů [persistentní položka]")
-  public String getInstDocQueueID() {
-    return instDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada dokl.-splátky; id objektu Řada dokladů [persistentní položka]")
+  public String getInstdocqueueId() {
+    return instdocqueueId;
   }
 
-  public void setInstDocQueueID(String instDocQueueID) {
-    this.instDocQueueID = instDocQueueID;
+  public void setInstdocqueueId(String instdocqueueId) {
+    this.instdocqueueId = instdocqueueId;
   }
 
-  public Assetleasingcard instAccPresetDefID(String instAccPresetDefID) {
-    this.instAccPresetDefID = instAccPresetDefID;
+  public Assetleasingcard instaccpresetdefId(String instaccpresetdefId) {
+    this.instaccpresetdefId = instaccpresetdefId;
     return this;
   }
 
    /**
-   * Předkontace splátek; ID objektu Účetní předkontace [persistentní položka]
-   * @return instAccPresetDefID
+   * předkontace splátek; id objektu Účetní předkontace [persistentní položka]
+   * @return instaccpresetdefId
   **/
-  @ApiModelProperty(example = "null", value = "Předkontace splátek; ID objektu Účetní předkontace [persistentní položka]")
-  public String getInstAccPresetDefID() {
-    return instAccPresetDefID;
+  @ApiModelProperty(example = "null", value = "předkontace splátek; id objektu Účetní předkontace [persistentní položka]")
+  public String getInstaccpresetdefId() {
+    return instaccpresetdefId;
   }
 
-  public void setInstAccPresetDefID(String instAccPresetDefID) {
-    this.instAccPresetDefID = instAccPresetDefID;
+  public void setInstaccpresetdefId(String instaccpresetdefId) {
+    this.instaccpresetdefId = instaccpresetdefId;
   }
 
-  public Assetleasingcard finalPurchaseDocType(String finalPurchaseDocType) {
-    this.finalPurchaseDocType = finalPurchaseDocType;
+  public Assetleasingcard finalpurchasedocType(String finalpurchasedocType) {
+    this.finalpurchasedocType = finalpurchasedocType;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return finalPurchaseDocType
+   * typ [persistentní položka]
+   * @return finalpurchasedocType
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public String getFinalPurchaseDocType() {
-    return finalPurchaseDocType;
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public String getFinalpurchasedocType() {
+    return finalpurchasedocType;
   }
 
-  public void setFinalPurchaseDocType(String finalPurchaseDocType) {
-    this.finalPurchaseDocType = finalPurchaseDocType;
+  public void setFinalpurchasedocType(String finalpurchasedocType) {
+    this.finalpurchasedocType = finalpurchasedocType;
   }
 
-  public Assetleasingcard finalPurchaseDocID(String finalPurchaseDocID) {
-    this.finalPurchaseDocID = finalPurchaseDocID;
+  public Assetleasingcard finalpurchasedocId(String finalpurchasedocId) {
+    this.finalpurchasedocId = finalpurchasedocId;
     return this;
   }
 
    /**
-   * Odkaz na odkup.doklad; ID objektu Dokument [persistentní položka]
-   * @return finalPurchaseDocID
+   * odkaz na odkup.doklad; id objektu dokument [persistentní položka]
+   * @return finalpurchasedocId
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na odkup.doklad; ID objektu Dokument [persistentní položka]")
-  public String getFinalPurchaseDocID() {
-    return finalPurchaseDocID;
+  @ApiModelProperty(example = "null", value = "odkaz na odkup.doklad; id objektu dokument [persistentní položka]")
+  public String getFinalpurchasedocId() {
+    return finalpurchasedocId;
   }
 
-  public void setFinalPurchaseDocID(String finalPurchaseDocID) {
-    this.finalPurchaseDocID = finalPurchaseDocID;
+  public void setFinalpurchasedocId(String finalpurchasedocId) {
+    this.finalpurchasedocId = finalpurchasedocId;
   }
 
-  public Assetleasingcard dayInMonthOfPayment(Integer dayInMonthOfPayment) {
-    this.dayInMonthOfPayment = dayInMonthOfPayment;
+  public Assetleasingcard dayinmonthofpayment(Integer dayinmonthofpayment) {
+    this.dayinmonthofpayment = dayinmonthofpayment;
     return this;
   }
 
    /**
-   * Den v měsíci [persistentní položka]
-   * @return dayInMonthOfPayment
+   * den v měsíci [persistentní položka]
+   * @return dayinmonthofpayment
   **/
-  @ApiModelProperty(example = "null", value = "Den v měsíci [persistentní položka]")
-  public Integer getDayInMonthOfPayment() {
-    return dayInMonthOfPayment;
+  @ApiModelProperty(example = "null", value = "den v měsíci [persistentní položka]")
+  public Integer getDayinmonthofpayment() {
+    return dayinmonthofpayment;
   }
 
-  public void setDayInMonthOfPayment(Integer dayInMonthOfPayment) {
-    this.dayInMonthOfPayment = dayInMonthOfPayment;
+  public void setDayinmonthofpayment(Integer dayinmonthofpayment) {
+    this.dayinmonthofpayment = dayinmonthofpayment;
   }
 
-  public Assetleasingcard pictureID(String pictureID) {
-    this.pictureID = pictureID;
+  public Assetleasingcard pictureId(String pictureId) {
+    this.pictureId = pictureId;
     return this;
   }
 
    /**
-   * Obrázek; ID objektu Data obrázku [persistentní položka]
-   * @return pictureID
+   * obrázek; id objektu data obrázku [persistentní položka]
+   * @return pictureId
   **/
-  @ApiModelProperty(example = "null", value = "Obrázek; ID objektu Data obrázku [persistentní položka]")
-  public String getPictureID() {
-    return pictureID;
+  @ApiModelProperty(example = "null", value = "obrázek; id objektu data obrázku [persistentní položka]")
+  public String getPictureId() {
+    return pictureId;
   }
 
-  public void setPictureID(String pictureID) {
-    this.pictureID = pictureID;
+  public void setPictureId(String pictureId) {
+    this.pictureId = pictureId;
   }
 
   public Assetleasingcard note(String note) {
@@ -1257,10 +1293,10 @@ public class Assetleasingcard   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -1275,10 +1311,10 @@ public class Assetleasingcard   {
   }
 
    /**
-   * Poznámka
+   * poznámka
    * @return comment
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka")
+  @ApiModelProperty(example = "null", value = "poznámka")
   public String getComment() {
     return comment;
   }
@@ -1298,10 +1334,10 @@ public class Assetleasingcard   {
   }
 
    /**
-   * Subkolekce plateb; kolekce BO Splátka majetku na leasing [nepersistentní položka]
+   * subkolekce plateb; kolekce bo splátka majetku na leasing [nepersistentní položka]
    * @return payments
   **/
-  @ApiModelProperty(example = "null", value = "Subkolekce plateb; kolekce BO Splátka majetku na leasing [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "subkolekce plateb; kolekce bo splátka majetku na leasing [nepersistentní položka]")
   public List<Assetleasingpayment> getPayments() {
     return payments;
   }
@@ -1320,65 +1356,65 @@ public class Assetleasingcard   {
       return false;
     }
     Assetleasingcard assetleasingcard = (Assetleasingcard) o;
-    return Objects.equals(this.displayName, assetleasingcard.displayName) &&
-        Objects.equals(this.ID, assetleasingcard.ID) &&
-        Objects.equals(this.dateOfChange, assetleasingcard.dateOfChange) &&
-        Objects.equals(this.classID, assetleasingcard.classID) &&
-        Objects.equals(this.objVersion, assetleasingcard.objVersion) &&
+    return Objects.equals(this.displayname, assetleasingcard.displayname) &&
+        Objects.equals(this.id, assetleasingcard.id) &&
+        Objects.equals(this.dateofchange, assetleasingcard.dateofchange) &&
+        Objects.equals(this.classid, assetleasingcard.classid) &&
+        Objects.equals(this.objversion, assetleasingcard.objversion) &&
         Objects.equals(this.code, assetleasingcard.code) &&
-        Objects.equals(this.inventoryNr, assetleasingcard.inventoryNr) &&
+        Objects.equals(this.inventorynr, assetleasingcard.inventorynr) &&
         Objects.equals(this.name, assetleasingcard.name) &&
-        Objects.equals(this.assetLocationID, assetleasingcard.assetLocationID) &&
-        Objects.equals(this.responsibleID, assetleasingcard.responsibleID) &&
-        Objects.equals(this.productNr, assetleasingcard.productNr) &&
-        Objects.equals(this.yearOfProduction, assetleasingcard.yearOfProduction) &&
-        Objects.equals(this.evidenceDivisionID, assetleasingcard.evidenceDivisionID) &&
-        Objects.equals(this.expensesDivisionID, assetleasingcard.expensesDivisionID) &&
-        Objects.equals(this.busOrderID, assetleasingcard.busOrderID) &&
-        Objects.equals(this.busTransactionID, assetleasingcard.busTransactionID) &&
-        Objects.equals(this.busProjectID, assetleasingcard.busProjectID) &&
-        Objects.equals(this.createdByID, assetleasingcard.createdByID) &&
-        Objects.equals(this.correctedByID, assetleasingcard.correctedByID) &&
-        Objects.equals(this.prefixInventoryNr, assetleasingcard.prefixInventoryNr) &&
-        Objects.equals(this.bodyInventoryNr, assetleasingcard.bodyInventoryNr) &&
-        Objects.equals(this.suffixInventoryNr, assetleasingcard.suffixInventoryNr) &&
-        Objects.equals(this.cardType, assetleasingcard.cardType) &&
-        Objects.equals(this.EAN, assetleasingcard.EAN) &&
-        Objects.equals(this.assetTypeID, assetleasingcard.assetTypeID) &&
-        Objects.equals(this.monthOfProduction, assetleasingcard.monthOfProduction) &&
-        Objects.equals(this.serviceLife, assetleasingcard.serviceLife) &&
-        Objects.equals(this.isCollection, assetleasingcard.isCollection) &&
-        Objects.equals(this.contractDateDATE, assetleasingcard.contractDateDATE) &&
-        Objects.equals(this.leasingCompanyID, assetleasingcard.leasingCompanyID) &&
-        Objects.equals(this.leasingLength, assetleasingcard.leasingLength) &&
-        Objects.equals(this.assetTotalPriceBase, assetleasingcard.assetTotalPriceBase) &&
-        Objects.equals(this.overTakenDateDATE, assetleasingcard.overTakenDateDATE) &&
-        Objects.equals(this.assetTotalPriceVAT, assetleasingcard.assetTotalPriceVAT) &&
-        Objects.equals(this.assetVATRate, assetleasingcard.assetVATRate) &&
-        Objects.equals(this.vATSubtractable, assetleasingcard.vATSubtractable) &&
-        Objects.equals(this.servicePriceBase, assetleasingcard.servicePriceBase) &&
-        Objects.equals(this.servicePriceVAT, assetleasingcard.servicePriceVAT) &&
-        Objects.equals(this.serviceVATRate, assetleasingcard.serviceVATRate) &&
-        Objects.equals(this.insuaranceBase, assetleasingcard.insuaranceBase) &&
-        Objects.equals(this.insuaranceVAT, assetleasingcard.insuaranceVAT) &&
-        Objects.equals(this.insuaranceVATRate, assetleasingcard.insuaranceVATRate) &&
-        Objects.equals(this.remainderBase, assetleasingcard.remainderBase) &&
-        Objects.equals(this.remainderVAT, assetleasingcard.remainderVAT) &&
+        Objects.equals(this.assetlocationId, assetleasingcard.assetlocationId) &&
+        Objects.equals(this.responsibleId, assetleasingcard.responsibleId) &&
+        Objects.equals(this.productnr, assetleasingcard.productnr) &&
+        Objects.equals(this.yearofproduction, assetleasingcard.yearofproduction) &&
+        Objects.equals(this.evidencedivisionId, assetleasingcard.evidencedivisionId) &&
+        Objects.equals(this.expensesdivisionId, assetleasingcard.expensesdivisionId) &&
+        Objects.equals(this.busorderId, assetleasingcard.busorderId) &&
+        Objects.equals(this.bustransactionId, assetleasingcard.bustransactionId) &&
+        Objects.equals(this.busprojectId, assetleasingcard.busprojectId) &&
+        Objects.equals(this.createdbyId, assetleasingcard.createdbyId) &&
+        Objects.equals(this.correctedbyId, assetleasingcard.correctedbyId) &&
+        Objects.equals(this.prefixinventorynr, assetleasingcard.prefixinventorynr) &&
+        Objects.equals(this.bodyinventorynr, assetleasingcard.bodyinventorynr) &&
+        Objects.equals(this.suffixinventorynr, assetleasingcard.suffixinventorynr) &&
+        Objects.equals(this.cardtype, assetleasingcard.cardtype) &&
+        Objects.equals(this.ean, assetleasingcard.ean) &&
+        Objects.equals(this.assettypeId, assetleasingcard.assettypeId) &&
+        Objects.equals(this.monthofproduction, assetleasingcard.monthofproduction) &&
+        Objects.equals(this.servicelife, assetleasingcard.servicelife) &&
+        Objects.equals(this.iscollection, assetleasingcard.iscollection) &&
+        Objects.equals(this.contractdatedate, assetleasingcard.contractdatedate) &&
+        Objects.equals(this.leasingcompanyId, assetleasingcard.leasingcompanyId) &&
+        Objects.equals(this.leasinglength, assetleasingcard.leasinglength) &&
+        Objects.equals(this.assettotalpricebase, assetleasingcard.assettotalpricebase) &&
+        Objects.equals(this.overtakendatedate, assetleasingcard.overtakendatedate) &&
+        Objects.equals(this.assettotalpricevat, assetleasingcard.assettotalpricevat) &&
+        Objects.equals(this.assetvatrate, assetleasingcard.assetvatrate) &&
+        Objects.equals(this.vatsubtractable, assetleasingcard.vatsubtractable) &&
+        Objects.equals(this.servicepricebase, assetleasingcard.servicepricebase) &&
+        Objects.equals(this.servicepricevat, assetleasingcard.servicepricevat) &&
+        Objects.equals(this.servicevatrate, assetleasingcard.servicevatrate) &&
+        Objects.equals(this.insuarancebase, assetleasingcard.insuarancebase) &&
+        Objects.equals(this.insuarancevat, assetleasingcard.insuarancevat) &&
+        Objects.equals(this.insuarancevatrate, assetleasingcard.insuarancevatrate) &&
+        Objects.equals(this.remainderbase, assetleasingcard.remainderbase) &&
+        Objects.equals(this.remaindervat, assetleasingcard.remaindervat) &&
         Objects.equals(this.deposit, assetleasingcard.deposit) &&
-        Objects.equals(this.depositType, assetleasingcard.depositType) &&
-        Objects.equals(this.depositDateDATE, assetleasingcard.depositDateDATE) &&
-        Objects.equals(this.leasingFinished, assetleasingcard.leasingFinished) &&
-        Objects.equals(this.leasingFinishedDateDATE, assetleasingcard.leasingFinishedDateDATE) &&
-        Objects.equals(this.finishedComment, assetleasingcard.finishedComment) &&
-        Objects.equals(this.assetCardID, assetleasingcard.assetCardID) &&
-        Objects.equals(this.hireDocQueueID, assetleasingcard.hireDocQueueID) &&
-        Objects.equals(this.hireAccPresetDefID, assetleasingcard.hireAccPresetDefID) &&
-        Objects.equals(this.instDocQueueID, assetleasingcard.instDocQueueID) &&
-        Objects.equals(this.instAccPresetDefID, assetleasingcard.instAccPresetDefID) &&
-        Objects.equals(this.finalPurchaseDocType, assetleasingcard.finalPurchaseDocType) &&
-        Objects.equals(this.finalPurchaseDocID, assetleasingcard.finalPurchaseDocID) &&
-        Objects.equals(this.dayInMonthOfPayment, assetleasingcard.dayInMonthOfPayment) &&
-        Objects.equals(this.pictureID, assetleasingcard.pictureID) &&
+        Objects.equals(this.deposittype, assetleasingcard.deposittype) &&
+        Objects.equals(this.depositdatedate, assetleasingcard.depositdatedate) &&
+        Objects.equals(this.leasingfinished, assetleasingcard.leasingfinished) &&
+        Objects.equals(this.leasingfinisheddatedate, assetleasingcard.leasingfinisheddatedate) &&
+        Objects.equals(this.finishedcomment, assetleasingcard.finishedcomment) &&
+        Objects.equals(this.assetcardId, assetleasingcard.assetcardId) &&
+        Objects.equals(this.hiredocqueueId, assetleasingcard.hiredocqueueId) &&
+        Objects.equals(this.hireaccpresetdefId, assetleasingcard.hireaccpresetdefId) &&
+        Objects.equals(this.instdocqueueId, assetleasingcard.instdocqueueId) &&
+        Objects.equals(this.instaccpresetdefId, assetleasingcard.instaccpresetdefId) &&
+        Objects.equals(this.finalpurchasedocType, assetleasingcard.finalpurchasedocType) &&
+        Objects.equals(this.finalpurchasedocId, assetleasingcard.finalpurchasedocId) &&
+        Objects.equals(this.dayinmonthofpayment, assetleasingcard.dayinmonthofpayment) &&
+        Objects.equals(this.pictureId, assetleasingcard.pictureId) &&
         Objects.equals(this.note, assetleasingcard.note) &&
         Objects.equals(this.comment, assetleasingcard.comment) &&
         Objects.equals(this.payments, assetleasingcard.payments);
@@ -1386,7 +1422,7 @@ public class Assetleasingcard   {
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, dateOfChange, classID, objVersion, code, inventoryNr, name, assetLocationID, responsibleID, productNr, yearOfProduction, evidenceDivisionID, expensesDivisionID, busOrderID, busTransactionID, busProjectID, createdByID, correctedByID, prefixInventoryNr, bodyInventoryNr, suffixInventoryNr, cardType, EAN, assetTypeID, monthOfProduction, serviceLife, isCollection, contractDateDATE, leasingCompanyID, leasingLength, assetTotalPriceBase, overTakenDateDATE, assetTotalPriceVAT, assetVATRate, vATSubtractable, servicePriceBase, servicePriceVAT, serviceVATRate, insuaranceBase, insuaranceVAT, insuaranceVATRate, remainderBase, remainderVAT, deposit, depositType, depositDateDATE, leasingFinished, leasingFinishedDateDATE, finishedComment, assetCardID, hireDocQueueID, hireAccPresetDefID, instDocQueueID, instAccPresetDefID, finalPurchaseDocType, finalPurchaseDocID, dayInMonthOfPayment, pictureID, note, comment, payments);
+    return Objects.hash(displayname, id, dateofchange, classid, objversion, code, inventorynr, name, assetlocationId, responsibleId, productnr, yearofproduction, evidencedivisionId, expensesdivisionId, busorderId, bustransactionId, busprojectId, createdbyId, correctedbyId, prefixinventorynr, bodyinventorynr, suffixinventorynr, cardtype, ean, assettypeId, monthofproduction, servicelife, iscollection, contractdatedate, leasingcompanyId, leasinglength, assettotalpricebase, overtakendatedate, assettotalpricevat, assetvatrate, vatsubtractable, servicepricebase, servicepricevat, servicevatrate, insuarancebase, insuarancevat, insuarancevatrate, remainderbase, remaindervat, deposit, deposittype, depositdatedate, leasingfinished, leasingfinisheddatedate, finishedcomment, assetcardId, hiredocqueueId, hireaccpresetdefId, instdocqueueId, instaccpresetdefId, finalpurchasedocType, finalpurchasedocId, dayinmonthofpayment, pictureId, note, comment, payments);
   }
 
   @Override
@@ -1394,65 +1430,65 @@ public class Assetleasingcard   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Assetleasingcard {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    dateOfChange: ").append(toIndentedString(dateOfChange)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    dateofchange: ").append(toIndentedString(dateofchange)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
-    sb.append("    inventoryNr: ").append(toIndentedString(inventoryNr)).append("\n");
+    sb.append("    inventorynr: ").append(toIndentedString(inventorynr)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    assetLocationID: ").append(toIndentedString(assetLocationID)).append("\n");
-    sb.append("    responsibleID: ").append(toIndentedString(responsibleID)).append("\n");
-    sb.append("    productNr: ").append(toIndentedString(productNr)).append("\n");
-    sb.append("    yearOfProduction: ").append(toIndentedString(yearOfProduction)).append("\n");
-    sb.append("    evidenceDivisionID: ").append(toIndentedString(evidenceDivisionID)).append("\n");
-    sb.append("    expensesDivisionID: ").append(toIndentedString(expensesDivisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    prefixInventoryNr: ").append(toIndentedString(prefixInventoryNr)).append("\n");
-    sb.append("    bodyInventoryNr: ").append(toIndentedString(bodyInventoryNr)).append("\n");
-    sb.append("    suffixInventoryNr: ").append(toIndentedString(suffixInventoryNr)).append("\n");
-    sb.append("    cardType: ").append(toIndentedString(cardType)).append("\n");
-    sb.append("    EAN: ").append(toIndentedString(EAN)).append("\n");
-    sb.append("    assetTypeID: ").append(toIndentedString(assetTypeID)).append("\n");
-    sb.append("    monthOfProduction: ").append(toIndentedString(monthOfProduction)).append("\n");
-    sb.append("    serviceLife: ").append(toIndentedString(serviceLife)).append("\n");
-    sb.append("    isCollection: ").append(toIndentedString(isCollection)).append("\n");
-    sb.append("    contractDateDATE: ").append(toIndentedString(contractDateDATE)).append("\n");
-    sb.append("    leasingCompanyID: ").append(toIndentedString(leasingCompanyID)).append("\n");
-    sb.append("    leasingLength: ").append(toIndentedString(leasingLength)).append("\n");
-    sb.append("    assetTotalPriceBase: ").append(toIndentedString(assetTotalPriceBase)).append("\n");
-    sb.append("    overTakenDateDATE: ").append(toIndentedString(overTakenDateDATE)).append("\n");
-    sb.append("    assetTotalPriceVAT: ").append(toIndentedString(assetTotalPriceVAT)).append("\n");
-    sb.append("    assetVATRate: ").append(toIndentedString(assetVATRate)).append("\n");
-    sb.append("    vATSubtractable: ").append(toIndentedString(vATSubtractable)).append("\n");
-    sb.append("    servicePriceBase: ").append(toIndentedString(servicePriceBase)).append("\n");
-    sb.append("    servicePriceVAT: ").append(toIndentedString(servicePriceVAT)).append("\n");
-    sb.append("    serviceVATRate: ").append(toIndentedString(serviceVATRate)).append("\n");
-    sb.append("    insuaranceBase: ").append(toIndentedString(insuaranceBase)).append("\n");
-    sb.append("    insuaranceVAT: ").append(toIndentedString(insuaranceVAT)).append("\n");
-    sb.append("    insuaranceVATRate: ").append(toIndentedString(insuaranceVATRate)).append("\n");
-    sb.append("    remainderBase: ").append(toIndentedString(remainderBase)).append("\n");
-    sb.append("    remainderVAT: ").append(toIndentedString(remainderVAT)).append("\n");
+    sb.append("    assetlocationId: ").append(toIndentedString(assetlocationId)).append("\n");
+    sb.append("    responsibleId: ").append(toIndentedString(responsibleId)).append("\n");
+    sb.append("    productnr: ").append(toIndentedString(productnr)).append("\n");
+    sb.append("    yearofproduction: ").append(toIndentedString(yearofproduction)).append("\n");
+    sb.append("    evidencedivisionId: ").append(toIndentedString(evidencedivisionId)).append("\n");
+    sb.append("    expensesdivisionId: ").append(toIndentedString(expensesdivisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    prefixinventorynr: ").append(toIndentedString(prefixinventorynr)).append("\n");
+    sb.append("    bodyinventorynr: ").append(toIndentedString(bodyinventorynr)).append("\n");
+    sb.append("    suffixinventorynr: ").append(toIndentedString(suffixinventorynr)).append("\n");
+    sb.append("    cardtype: ").append(toIndentedString(cardtype)).append("\n");
+    sb.append("    ean: ").append(toIndentedString(ean)).append("\n");
+    sb.append("    assettypeId: ").append(toIndentedString(assettypeId)).append("\n");
+    sb.append("    monthofproduction: ").append(toIndentedString(monthofproduction)).append("\n");
+    sb.append("    servicelife: ").append(toIndentedString(servicelife)).append("\n");
+    sb.append("    iscollection: ").append(toIndentedString(iscollection)).append("\n");
+    sb.append("    contractdatedate: ").append(toIndentedString(contractdatedate)).append("\n");
+    sb.append("    leasingcompanyId: ").append(toIndentedString(leasingcompanyId)).append("\n");
+    sb.append("    leasinglength: ").append(toIndentedString(leasinglength)).append("\n");
+    sb.append("    assettotalpricebase: ").append(toIndentedString(assettotalpricebase)).append("\n");
+    sb.append("    overtakendatedate: ").append(toIndentedString(overtakendatedate)).append("\n");
+    sb.append("    assettotalpricevat: ").append(toIndentedString(assettotalpricevat)).append("\n");
+    sb.append("    assetvatrate: ").append(toIndentedString(assetvatrate)).append("\n");
+    sb.append("    vatsubtractable: ").append(toIndentedString(vatsubtractable)).append("\n");
+    sb.append("    servicepricebase: ").append(toIndentedString(servicepricebase)).append("\n");
+    sb.append("    servicepricevat: ").append(toIndentedString(servicepricevat)).append("\n");
+    sb.append("    servicevatrate: ").append(toIndentedString(servicevatrate)).append("\n");
+    sb.append("    insuarancebase: ").append(toIndentedString(insuarancebase)).append("\n");
+    sb.append("    insuarancevat: ").append(toIndentedString(insuarancevat)).append("\n");
+    sb.append("    insuarancevatrate: ").append(toIndentedString(insuarancevatrate)).append("\n");
+    sb.append("    remainderbase: ").append(toIndentedString(remainderbase)).append("\n");
+    sb.append("    remaindervat: ").append(toIndentedString(remaindervat)).append("\n");
     sb.append("    deposit: ").append(toIndentedString(deposit)).append("\n");
-    sb.append("    depositType: ").append(toIndentedString(depositType)).append("\n");
-    sb.append("    depositDateDATE: ").append(toIndentedString(depositDateDATE)).append("\n");
-    sb.append("    leasingFinished: ").append(toIndentedString(leasingFinished)).append("\n");
-    sb.append("    leasingFinishedDateDATE: ").append(toIndentedString(leasingFinishedDateDATE)).append("\n");
-    sb.append("    finishedComment: ").append(toIndentedString(finishedComment)).append("\n");
-    sb.append("    assetCardID: ").append(toIndentedString(assetCardID)).append("\n");
-    sb.append("    hireDocQueueID: ").append(toIndentedString(hireDocQueueID)).append("\n");
-    sb.append("    hireAccPresetDefID: ").append(toIndentedString(hireAccPresetDefID)).append("\n");
-    sb.append("    instDocQueueID: ").append(toIndentedString(instDocQueueID)).append("\n");
-    sb.append("    instAccPresetDefID: ").append(toIndentedString(instAccPresetDefID)).append("\n");
-    sb.append("    finalPurchaseDocType: ").append(toIndentedString(finalPurchaseDocType)).append("\n");
-    sb.append("    finalPurchaseDocID: ").append(toIndentedString(finalPurchaseDocID)).append("\n");
-    sb.append("    dayInMonthOfPayment: ").append(toIndentedString(dayInMonthOfPayment)).append("\n");
-    sb.append("    pictureID: ").append(toIndentedString(pictureID)).append("\n");
+    sb.append("    deposittype: ").append(toIndentedString(deposittype)).append("\n");
+    sb.append("    depositdatedate: ").append(toIndentedString(depositdatedate)).append("\n");
+    sb.append("    leasingfinished: ").append(toIndentedString(leasingfinished)).append("\n");
+    sb.append("    leasingfinisheddatedate: ").append(toIndentedString(leasingfinisheddatedate)).append("\n");
+    sb.append("    finishedcomment: ").append(toIndentedString(finishedcomment)).append("\n");
+    sb.append("    assetcardId: ").append(toIndentedString(assetcardId)).append("\n");
+    sb.append("    hiredocqueueId: ").append(toIndentedString(hiredocqueueId)).append("\n");
+    sb.append("    hireaccpresetdefId: ").append(toIndentedString(hireaccpresetdefId)).append("\n");
+    sb.append("    instdocqueueId: ").append(toIndentedString(instdocqueueId)).append("\n");
+    sb.append("    instaccpresetdefId: ").append(toIndentedString(instaccpresetdefId)).append("\n");
+    sb.append("    finalpurchasedocType: ").append(toIndentedString(finalpurchasedocType)).append("\n");
+    sb.append("    finalpurchasedocId: ").append(toIndentedString(finalpurchasedocId)).append("\n");
+    sb.append("    dayinmonthofpayment: ").append(toIndentedString(dayinmonthofpayment)).append("\n");
+    sb.append("    pictureId: ").append(toIndentedString(pictureId)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
     sb.append("    comment: ").append(toIndentedString(comment)).append("\n");
     sb.append("    payments: ").append(toIndentedString(payments)).append("\n");

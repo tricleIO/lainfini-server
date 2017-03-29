@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,174 +34,219 @@ import java.util.Objects;
 /**
  * Servicedocumentdefect
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Servicedocumentdefect   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("DefectText")
-  private String defectText = null;
+  @SerializedName("defecttext")
+  private String defecttext = null;
 
-  @SerializedName("ServiceDefect_ID")
-  private String serviceDefectID = null;
+  @SerializedName("servicedefect_id")
+  private String servicedefectId = null;
 
-  @SerializedName("EstimatedPriceWithoutVAT")
-  private Double estimatedPriceWithoutVAT = null;
+  @SerializedName("estimatedpricewithoutvat")
+  private Double estimatedpricewithoutvat = null;
 
-  @SerializedName("EstimatedPrice")
-  private Double estimatedPrice = null;
+  @SerializedName("estimatedprice")
+  private Double estimatedprice = null;
 
-  @SerializedName("Charged")
+  @SerializedName("charged")
   private Boolean charged = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Servisní list [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Servisní list [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Servicedocumentdefect posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Servicedocumentdefect displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Servicedocumentdefect defectText(String defectText) {
-    this.defectText = defectText;
+  public Servicedocumentdefect id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Závada textově [persistentní položka]
-   * @return defectText
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Závada textově [persistentní položka]")
-  public String getDefectText() {
-    return defectText;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDefectText(String defectText) {
-    this.defectText = defectText;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Servicedocumentdefect serviceDefectID(String serviceDefectID) {
-    this.serviceDefectID = serviceDefectID;
+  public Servicedocumentdefect classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Závada; ID objektu Servisní závada [persistentní položka]
-   * @return serviceDefectID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Závada; ID objektu Servisní závada [persistentní položka]")
-  public String getServiceDefectID() {
-    return serviceDefectID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setServiceDefectID(String serviceDefectID) {
-    this.serviceDefectID = serviceDefectID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Servicedocumentdefect estimatedPriceWithoutVAT(Double estimatedPriceWithoutVAT) {
-    this.estimatedPriceWithoutVAT = estimatedPriceWithoutVAT;
+  public Servicedocumentdefect objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Odhadovaná cena bez daně [persistentní položka]
-   * @return estimatedPriceWithoutVAT
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Odhadovaná cena bez daně [persistentní položka]")
-  public Double getEstimatedPriceWithoutVAT() {
-    return estimatedPriceWithoutVAT;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setEstimatedPriceWithoutVAT(Double estimatedPriceWithoutVAT) {
-    this.estimatedPriceWithoutVAT = estimatedPriceWithoutVAT;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Servicedocumentdefect estimatedPrice(Double estimatedPrice) {
-    this.estimatedPrice = estimatedPrice;
+  public Servicedocumentdefect parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Odhadovaná cena s daní [persistentní položka]
-   * @return estimatedPrice
+   * vlastník; id objektu servisní list [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Odhadovaná cena s daní [persistentní položka]")
-  public Double getEstimatedPrice() {
-    return estimatedPrice;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu servisní list [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setEstimatedPrice(Double estimatedPrice) {
-    this.estimatedPrice = estimatedPrice;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Servicedocumentdefect posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Servicedocumentdefect defecttext(String defecttext) {
+    this.defecttext = defecttext;
+    return this;
+  }
+
+   /**
+   * závada textově [persistentní položka]
+   * @return defecttext
+  **/
+  @ApiModelProperty(example = "null", value = "závada textově [persistentní položka]")
+  public String getDefecttext() {
+    return defecttext;
+  }
+
+  public void setDefecttext(String defecttext) {
+    this.defecttext = defecttext;
+  }
+
+  public Servicedocumentdefect servicedefectId(String servicedefectId) {
+    this.servicedefectId = servicedefectId;
+    return this;
+  }
+
+   /**
+   * závada; id objektu servisní závada [persistentní položka]
+   * @return servicedefectId
+  **/
+  @ApiModelProperty(example = "null", value = "závada; id objektu servisní závada [persistentní položka]")
+  public String getServicedefectId() {
+    return servicedefectId;
+  }
+
+  public void setServicedefectId(String servicedefectId) {
+    this.servicedefectId = servicedefectId;
+  }
+
+  public Servicedocumentdefect estimatedpricewithoutvat(Double estimatedpricewithoutvat) {
+    this.estimatedpricewithoutvat = estimatedpricewithoutvat;
+    return this;
+  }
+
+   /**
+   * odhadovaná cena bez daně [persistentní položka]
+   * @return estimatedpricewithoutvat
+  **/
+  @ApiModelProperty(example = "null", value = "odhadovaná cena bez daně [persistentní položka]")
+  public Double getEstimatedpricewithoutvat() {
+    return estimatedpricewithoutvat;
+  }
+
+  public void setEstimatedpricewithoutvat(Double estimatedpricewithoutvat) {
+    this.estimatedpricewithoutvat = estimatedpricewithoutvat;
+  }
+
+  public Servicedocumentdefect estimatedprice(Double estimatedprice) {
+    this.estimatedprice = estimatedprice;
+    return this;
+  }
+
+   /**
+   * odhadovaná cena s daní [persistentní položka]
+   * @return estimatedprice
+  **/
+  @ApiModelProperty(example = "null", value = "odhadovaná cena s daní [persistentní položka]")
+  public Double getEstimatedprice() {
+    return estimatedprice;
+  }
+
+  public void setEstimatedprice(Double estimatedprice) {
+    this.estimatedprice = estimatedprice;
   }
 
   public Servicedocumentdefect charged(Boolean charged) {
@@ -210,10 +255,10 @@ public class Servicedocumentdefect   {
   }
 
    /**
-   * Placená [persistentní položka]
+   * placená [persistentní položka]
    * @return charged
   **/
-  @ApiModelProperty(example = "null", value = "Placená [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "placená [persistentní položka]")
   public Boolean getCharged() {
     return charged;
   }
@@ -232,22 +277,22 @@ public class Servicedocumentdefect   {
       return false;
     }
     Servicedocumentdefect servicedocumentdefect = (Servicedocumentdefect) o;
-    return Objects.equals(this.displayName, servicedocumentdefect.displayName) &&
-        Objects.equals(this.ID, servicedocumentdefect.ID) &&
-        Objects.equals(this.classID, servicedocumentdefect.classID) &&
-        Objects.equals(this.objVersion, servicedocumentdefect.objVersion) &&
-        Objects.equals(this.parentID, servicedocumentdefect.parentID) &&
-        Objects.equals(this.posIndex, servicedocumentdefect.posIndex) &&
-        Objects.equals(this.defectText, servicedocumentdefect.defectText) &&
-        Objects.equals(this.serviceDefectID, servicedocumentdefect.serviceDefectID) &&
-        Objects.equals(this.estimatedPriceWithoutVAT, servicedocumentdefect.estimatedPriceWithoutVAT) &&
-        Objects.equals(this.estimatedPrice, servicedocumentdefect.estimatedPrice) &&
+    return Objects.equals(this.displayname, servicedocumentdefect.displayname) &&
+        Objects.equals(this.id, servicedocumentdefect.id) &&
+        Objects.equals(this.classid, servicedocumentdefect.classid) &&
+        Objects.equals(this.objversion, servicedocumentdefect.objversion) &&
+        Objects.equals(this.parentId, servicedocumentdefect.parentId) &&
+        Objects.equals(this.posindex, servicedocumentdefect.posindex) &&
+        Objects.equals(this.defecttext, servicedocumentdefect.defecttext) &&
+        Objects.equals(this.servicedefectId, servicedocumentdefect.servicedefectId) &&
+        Objects.equals(this.estimatedpricewithoutvat, servicedocumentdefect.estimatedpricewithoutvat) &&
+        Objects.equals(this.estimatedprice, servicedocumentdefect.estimatedprice) &&
         Objects.equals(this.charged, servicedocumentdefect.charged);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, defectText, serviceDefectID, estimatedPriceWithoutVAT, estimatedPrice, charged);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, defecttext, servicedefectId, estimatedpricewithoutvat, estimatedprice, charged);
   }
 
   @Override
@@ -255,16 +300,16 @@ public class Servicedocumentdefect   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Servicedocumentdefect {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    defectText: ").append(toIndentedString(defectText)).append("\n");
-    sb.append("    serviceDefectID: ").append(toIndentedString(serviceDefectID)).append("\n");
-    sb.append("    estimatedPriceWithoutVAT: ").append(toIndentedString(estimatedPriceWithoutVAT)).append("\n");
-    sb.append("    estimatedPrice: ").append(toIndentedString(estimatedPrice)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    defecttext: ").append(toIndentedString(defecttext)).append("\n");
+    sb.append("    servicedefectId: ").append(toIndentedString(servicedefectId)).append("\n");
+    sb.append("    estimatedpricewithoutvat: ").append(toIndentedString(estimatedpricewithoutvat)).append("\n");
+    sb.append("    estimatedprice: ").append(toIndentedString(estimatedprice)).append("\n");
     sb.append("    charged: ").append(toIndentedString(charged)).append("\n");
     sb.append("}");
     return sb.toString();

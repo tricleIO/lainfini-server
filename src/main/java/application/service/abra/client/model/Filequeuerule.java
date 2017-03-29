@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,134 +36,170 @@ import java.util.Objects;
 /**
  * Filequeuerule
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Filequeuerule   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("GoOn")
-  private Boolean goOn = null;
+  @SerializedName("goon")
+  private Boolean goon = null;
 
-  @SerializedName("RuleActions")
-  private List<Filequeueruleaction> ruleActions = new ArrayList<Filequeueruleaction>();
+  @SerializedName("ruleactions")
+  private List<Filequeueruleaction> ruleactions = new ArrayList<Filequeueruleaction>();
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("FileNameMask")
-  private String fileNameMask = null;
+  @SerializedName("filenamemask")
+  private String filenamemask = null;
 
-  @SerializedName("FileNameMaskIsRegEx")
-  private Boolean fileNameMaskIsRegEx = null;
+  @SerializedName("filenamemaskisregex")
+  private Boolean filenamemaskisregex = null;
 
-  @SerializedName("FileQueue_ID")
-  private String fileQueueID = null;
+  @SerializedName("filequeue_id")
+  private String filequeueId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Filequeuerule posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Filequeuerule displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Filequeuerule goOn(Boolean goOn) {
-    this.goOn = goOn;
+  public Filequeuerule id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Pokračovat [persistentní položka]
-   * @return goOn
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Pokračovat [persistentní položka]")
-  public Boolean getGoOn() {
-    return goOn;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setGoOn(Boolean goOn) {
-    this.goOn = goOn;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Filequeuerule ruleActions(List<Filequeueruleaction> ruleActions) {
-    this.ruleActions = ruleActions;
-    return this;
-  }
-
-  public Filequeuerule addRuleActionsItem(Filequeueruleaction ruleActionsItem) {
-    this.ruleActions.add(ruleActionsItem);
+  public Filequeuerule classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Akce; kolekce BO Akce pravidla pro zpracování front souborů [nepersistentní položka]
-   * @return ruleActions
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Akce; kolekce BO Akce pravidla pro zpracování front souborů [nepersistentní položka]")
-  public List<Filequeueruleaction> getRuleActions() {
-    return ruleActions;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setRuleActions(List<Filequeueruleaction> ruleActions) {
-    this.ruleActions = ruleActions;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Filequeuerule objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Filequeuerule posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Filequeuerule goon(Boolean goon) {
+    this.goon = goon;
+    return this;
+  }
+
+   /**
+   * pokračovat [persistentní položka]
+   * @return goon
+  **/
+  @ApiModelProperty(example = "null", value = "pokračovat [persistentní položka]")
+  public Boolean getGoon() {
+    return goon;
+  }
+
+  public void setGoon(Boolean goon) {
+    this.goon = goon;
+  }
+
+  public Filequeuerule ruleactions(List<Filequeueruleaction> ruleactions) {
+    this.ruleactions = ruleactions;
+    return this;
+  }
+
+  public Filequeuerule addRuleactionsItem(Filequeueruleaction ruleactionsItem) {
+    this.ruleactions.add(ruleactionsItem);
+    return this;
+  }
+
+   /**
+   * akce; kolekce bo akce pravidla pro zpracování front souborů [nepersistentní položka]
+   * @return ruleactions
+  **/
+  @ApiModelProperty(example = "null", value = "akce; kolekce bo akce pravidla pro zpracování front souborů [nepersistentní položka]")
+  public List<Filequeueruleaction> getRuleactions() {
+    return ruleactions;
+  }
+
+  public void setRuleactions(List<Filequeueruleaction> ruleactions) {
+    this.ruleactions = ruleactions;
   }
 
   public Filequeuerule description(String description) {
@@ -172,10 +208,10 @@ public class Filequeuerule   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -184,58 +220,58 @@ public class Filequeuerule   {
     this.description = description;
   }
 
-  public Filequeuerule fileNameMask(String fileNameMask) {
-    this.fileNameMask = fileNameMask;
+  public Filequeuerule filenamemask(String filenamemask) {
+    this.filenamemask = filenamemask;
     return this;
   }
 
    /**
-   * Maska pro název souboru [persistentní položka]
-   * @return fileNameMask
+   * maska pro název souboru [persistentní položka]
+   * @return filenamemask
   **/
-  @ApiModelProperty(example = "null", value = "Maska pro název souboru [persistentní položka]")
-  public String getFileNameMask() {
-    return fileNameMask;
+  @ApiModelProperty(example = "null", value = "maska pro název souboru [persistentní položka]")
+  public String getFilenamemask() {
+    return filenamemask;
   }
 
-  public void setFileNameMask(String fileNameMask) {
-    this.fileNameMask = fileNameMask;
+  public void setFilenamemask(String filenamemask) {
+    this.filenamemask = filenamemask;
   }
 
-  public Filequeuerule fileNameMaskIsRegEx(Boolean fileNameMaskIsRegEx) {
-    this.fileNameMaskIsRegEx = fileNameMaskIsRegEx;
+  public Filequeuerule filenamemaskisregex(Boolean filenamemaskisregex) {
+    this.filenamemaskisregex = filenamemaskisregex;
     return this;
   }
 
    /**
-   * Maska názvu souborů je regulární výraz [persistentní položka]
-   * @return fileNameMaskIsRegEx
+   * maska názvu souborů je regulární výraz [persistentní položka]
+   * @return filenamemaskisregex
   **/
-  @ApiModelProperty(example = "null", value = "Maska názvu souborů je regulární výraz [persistentní položka]")
-  public Boolean getFileNameMaskIsRegEx() {
-    return fileNameMaskIsRegEx;
+  @ApiModelProperty(example = "null", value = "maska názvu souborů je regulární výraz [persistentní položka]")
+  public Boolean getFilenamemaskisregex() {
+    return filenamemaskisregex;
   }
 
-  public void setFileNameMaskIsRegEx(Boolean fileNameMaskIsRegEx) {
-    this.fileNameMaskIsRegEx = fileNameMaskIsRegEx;
+  public void setFilenamemaskisregex(Boolean filenamemaskisregex) {
+    this.filenamemaskisregex = filenamemaskisregex;
   }
 
-  public Filequeuerule fileQueueID(String fileQueueID) {
-    this.fileQueueID = fileQueueID;
+  public Filequeuerule filequeueId(String filequeueId) {
+    this.filequeueId = filequeueId;
     return this;
   }
 
    /**
-   * Fronta souborů; ID objektu Fronta souborů [persistentní položka]
-   * @return fileQueueID
+   * fronta souborů; id objektu fronta souborů [persistentní položka]
+   * @return filequeueId
   **/
-  @ApiModelProperty(example = "null", value = "Fronta souborů; ID objektu Fronta souborů [persistentní položka]")
-  public String getFileQueueID() {
-    return fileQueueID;
+  @ApiModelProperty(example = "null", value = "fronta souborů; id objektu fronta souborů [persistentní položka]")
+  public String getFilequeueId() {
+    return filequeueId;
   }
 
-  public void setFileQueueID(String fileQueueID) {
-    this.fileQueueID = fileQueueID;
+  public void setFilequeueId(String filequeueId) {
+    this.filequeueId = filequeueId;
   }
 
 
@@ -248,22 +284,22 @@ public class Filequeuerule   {
       return false;
     }
     Filequeuerule filequeuerule = (Filequeuerule) o;
-    return Objects.equals(this.displayName, filequeuerule.displayName) &&
-        Objects.equals(this.ID, filequeuerule.ID) &&
-        Objects.equals(this.classID, filequeuerule.classID) &&
-        Objects.equals(this.objVersion, filequeuerule.objVersion) &&
-        Objects.equals(this.posIndex, filequeuerule.posIndex) &&
-        Objects.equals(this.goOn, filequeuerule.goOn) &&
-        Objects.equals(this.ruleActions, filequeuerule.ruleActions) &&
+    return Objects.equals(this.displayname, filequeuerule.displayname) &&
+        Objects.equals(this.id, filequeuerule.id) &&
+        Objects.equals(this.classid, filequeuerule.classid) &&
+        Objects.equals(this.objversion, filequeuerule.objversion) &&
+        Objects.equals(this.posindex, filequeuerule.posindex) &&
+        Objects.equals(this.goon, filequeuerule.goon) &&
+        Objects.equals(this.ruleactions, filequeuerule.ruleactions) &&
         Objects.equals(this.description, filequeuerule.description) &&
-        Objects.equals(this.fileNameMask, filequeuerule.fileNameMask) &&
-        Objects.equals(this.fileNameMaskIsRegEx, filequeuerule.fileNameMaskIsRegEx) &&
-        Objects.equals(this.fileQueueID, filequeuerule.fileQueueID);
+        Objects.equals(this.filenamemask, filequeuerule.filenamemask) &&
+        Objects.equals(this.filenamemaskisregex, filequeuerule.filenamemaskisregex) &&
+        Objects.equals(this.filequeueId, filequeuerule.filequeueId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, posIndex, goOn, ruleActions, description, fileNameMask, fileNameMaskIsRegEx, fileQueueID);
+    return Objects.hash(displayname, id, classid, objversion, posindex, goon, ruleactions, description, filenamemask, filenamemaskisregex, filequeueId);
   }
 
   @Override
@@ -271,17 +307,17 @@ public class Filequeuerule   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Filequeuerule {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    goOn: ").append(toIndentedString(goOn)).append("\n");
-    sb.append("    ruleActions: ").append(toIndentedString(ruleActions)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    goon: ").append(toIndentedString(goon)).append("\n");
+    sb.append("    ruleactions: ").append(toIndentedString(ruleactions)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    fileNameMask: ").append(toIndentedString(fileNameMask)).append("\n");
-    sb.append("    fileNameMaskIsRegEx: ").append(toIndentedString(fileNameMaskIsRegEx)).append("\n");
-    sb.append("    fileQueueID: ").append(toIndentedString(fileQueueID)).append("\n");
+    sb.append("    filenamemask: ").append(toIndentedString(filenamemask)).append("\n");
+    sb.append("    filenamemaskisregex: ").append(toIndentedString(filenamemaskisregex)).append("\n");
+    sb.append("    filequeueId: ").append(toIndentedString(filequeueId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

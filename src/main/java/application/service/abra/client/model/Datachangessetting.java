@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,186 +34,258 @@ import java.util.Objects;
 /**
  * Datachangessetting
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Datachangessetting   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CLSID")
-  private String CLSID = null;
+  @SerializedName("clsid")
+  private String clsid = null;
 
-  @SerializedName("Status")
+  @SerializedName("status")
   private Integer status = null;
 
-  @SerializedName("IsActive")
-  private Boolean isActive = null;
+  @SerializedName("isactive")
+  private Boolean isactive = null;
 
-  @SerializedName("CLSIDText")
-  private String cLSIDText = null;
+  @SerializedName("clsidtext")
+  private String clsidtext = null;
 
-  @SerializedName("LogInsert")
-  private Boolean logInsert = null;
+  @SerializedName("loginsert")
+  private Boolean loginsert = null;
 
-  @SerializedName("LogUpdate")
-  private Boolean logUpdate = null;
+  @SerializedName("logupdate")
+  private Boolean logupdate = null;
 
-  @SerializedName("LogDelete")
-  private Boolean logDelete = null;
+  @SerializedName("logdelete")
+  private Boolean logdelete = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Datachangessetting displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Datachangessetting id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Datachangessetting classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Datachangessetting objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Datachangessetting createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+    return this;
   }
 
    /**
-   * Třída [persistentní položka]
-   * @return CLSID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Třída [persistentní položka]")
-  public String getCLSID() {
-    return CLSID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
+  }
+
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Datachangessetting clsid(String clsid) {
+    this.clsid = clsid;
+    return this;
   }
 
    /**
-   * Typ změny [persistentní položka]
+   * třída [persistentní položka]
+   * @return clsid
+  **/
+  @ApiModelProperty(example = "null", value = "třída [persistentní položka]")
+  public String getClsid() {
+    return clsid;
+  }
+
+  public void setClsid(String clsid) {
+    this.clsid = clsid;
+  }
+
+  public Datachangessetting status(Integer status) {
+    this.status = status;
+    return this;
+  }
+
+   /**
+   * typ změny [persistentní položka]
    * @return status
   **/
-  @ApiModelProperty(example = "null", value = "Typ změny [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "typ změny [persistentní položka]")
   public Integer getStatus() {
     return status;
   }
 
-   /**
-   * Aktivní [persistentní položka]
-   * @return isActive
-  **/
-  @ApiModelProperty(example = "null", value = "Aktivní [persistentní položka]")
-  public Boolean getIsActive() {
-    return isActive;
+  public void setStatus(Integer status) {
+    this.status = status;
   }
 
-  public Datachangessetting cLSIDText(String cLSIDText) {
-    this.cLSIDText = cLSIDText;
+  public Datachangessetting isactive(Boolean isactive) {
+    this.isactive = isactive;
     return this;
   }
 
    /**
-   * Třída (textově)
-   * @return cLSIDText
+   * aktivní [persistentní položka]
+   * @return isactive
   **/
-  @ApiModelProperty(example = "null", value = "Třída (textově)")
-  public String getCLSIDText() {
-    return cLSIDText;
+  @ApiModelProperty(example = "null", value = "aktivní [persistentní položka]")
+  public Boolean getIsactive() {
+    return isactive;
   }
 
-  public void setCLSIDText(String cLSIDText) {
-    this.cLSIDText = cLSIDText;
+  public void setIsactive(Boolean isactive) {
+    this.isactive = isactive;
   }
 
-  public Datachangessetting logInsert(Boolean logInsert) {
-    this.logInsert = logInsert;
+  public Datachangessetting clsidtext(String clsidtext) {
+    this.clsidtext = clsidtext;
     return this;
   }
 
    /**
-   * Zaznamenávat nové
-   * @return logInsert
+   * třída (textově)
+   * @return clsidtext
   **/
-  @ApiModelProperty(example = "null", value = "Zaznamenávat nové")
-  public Boolean getLogInsert() {
-    return logInsert;
+  @ApiModelProperty(example = "null", value = "třída (textově)")
+  public String getClsidtext() {
+    return clsidtext;
   }
 
-  public void setLogInsert(Boolean logInsert) {
-    this.logInsert = logInsert;
+  public void setClsidtext(String clsidtext) {
+    this.clsidtext = clsidtext;
   }
 
-  public Datachangessetting logUpdate(Boolean logUpdate) {
-    this.logUpdate = logUpdate;
+  public Datachangessetting loginsert(Boolean loginsert) {
+    this.loginsert = loginsert;
     return this;
   }
 
    /**
-   * Zaznamenávat opravy
-   * @return logUpdate
+   * zaznamenávat nové
+   * @return loginsert
   **/
-  @ApiModelProperty(example = "null", value = "Zaznamenávat opravy")
-  public Boolean getLogUpdate() {
-    return logUpdate;
+  @ApiModelProperty(example = "null", value = "zaznamenávat nové")
+  public Boolean getLoginsert() {
+    return loginsert;
   }
 
-  public void setLogUpdate(Boolean logUpdate) {
-    this.logUpdate = logUpdate;
+  public void setLoginsert(Boolean loginsert) {
+    this.loginsert = loginsert;
   }
 
-  public Datachangessetting logDelete(Boolean logDelete) {
-    this.logDelete = logDelete;
+  public Datachangessetting logupdate(Boolean logupdate) {
+    this.logupdate = logupdate;
     return this;
   }
 
    /**
-   * Zaznamenávat mazání
-   * @return logDelete
+   * zaznamenávat opravy
+   * @return logupdate
   **/
-  @ApiModelProperty(example = "null", value = "Zaznamenávat mazání")
-  public Boolean getLogDelete() {
-    return logDelete;
+  @ApiModelProperty(example = "null", value = "zaznamenávat opravy")
+  public Boolean getLogupdate() {
+    return logupdate;
   }
 
-  public void setLogDelete(Boolean logDelete) {
-    this.logDelete = logDelete;
+  public void setLogupdate(Boolean logupdate) {
+    this.logupdate = logupdate;
+  }
+
+  public Datachangessetting logdelete(Boolean logdelete) {
+    this.logdelete = logdelete;
+    return this;
+  }
+
+   /**
+   * zaznamenávat mazání
+   * @return logdelete
+  **/
+  @ApiModelProperty(example = "null", value = "zaznamenávat mazání")
+  public Boolean getLogdelete() {
+    return logdelete;
+  }
+
+  public void setLogdelete(Boolean logdelete) {
+    this.logdelete = logdelete;
   }
 
 
@@ -226,23 +298,23 @@ public class Datachangessetting   {
       return false;
     }
     Datachangessetting datachangessetting = (Datachangessetting) o;
-    return Objects.equals(this.displayName, datachangessetting.displayName) &&
-        Objects.equals(this.ID, datachangessetting.ID) &&
-        Objects.equals(this.classID, datachangessetting.classID) &&
-        Objects.equals(this.objVersion, datachangessetting.objVersion) &&
-        Objects.equals(this.createdByID, datachangessetting.createdByID) &&
-        Objects.equals(this.CLSID, datachangessetting.CLSID) &&
+    return Objects.equals(this.displayname, datachangessetting.displayname) &&
+        Objects.equals(this.id, datachangessetting.id) &&
+        Objects.equals(this.classid, datachangessetting.classid) &&
+        Objects.equals(this.objversion, datachangessetting.objversion) &&
+        Objects.equals(this.createdbyId, datachangessetting.createdbyId) &&
+        Objects.equals(this.clsid, datachangessetting.clsid) &&
         Objects.equals(this.status, datachangessetting.status) &&
-        Objects.equals(this.isActive, datachangessetting.isActive) &&
-        Objects.equals(this.cLSIDText, datachangessetting.cLSIDText) &&
-        Objects.equals(this.logInsert, datachangessetting.logInsert) &&
-        Objects.equals(this.logUpdate, datachangessetting.logUpdate) &&
-        Objects.equals(this.logDelete, datachangessetting.logDelete);
+        Objects.equals(this.isactive, datachangessetting.isactive) &&
+        Objects.equals(this.clsidtext, datachangessetting.clsidtext) &&
+        Objects.equals(this.loginsert, datachangessetting.loginsert) &&
+        Objects.equals(this.logupdate, datachangessetting.logupdate) &&
+        Objects.equals(this.logdelete, datachangessetting.logdelete);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, createdByID, CLSID, status, isActive, cLSIDText, logInsert, logUpdate, logDelete);
+    return Objects.hash(displayname, id, classid, objversion, createdbyId, clsid, status, isactive, clsidtext, loginsert, logupdate, logdelete);
   }
 
   @Override
@@ -250,18 +322,18 @@ public class Datachangessetting   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Datachangessetting {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    CLSID: ").append(toIndentedString(CLSID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    clsid: ").append(toIndentedString(clsid)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
-    sb.append("    isActive: ").append(toIndentedString(isActive)).append("\n");
-    sb.append("    cLSIDText: ").append(toIndentedString(cLSIDText)).append("\n");
-    sb.append("    logInsert: ").append(toIndentedString(logInsert)).append("\n");
-    sb.append("    logUpdate: ").append(toIndentedString(logUpdate)).append("\n");
-    sb.append("    logDelete: ").append(toIndentedString(logDelete)).append("\n");
+    sb.append("    isactive: ").append(toIndentedString(isactive)).append("\n");
+    sb.append("    clsidtext: ").append(toIndentedString(clsidtext)).append("\n");
+    sb.append("    loginsert: ").append(toIndentedString(loginsert)).append("\n");
+    sb.append("    logupdate: ").append(toIndentedString(logupdate)).append("\n");
+    sb.append("    logdelete: ").append(toIndentedString(logdelete)).append("\n");
     sb.append("}");
     return sb.toString();
   }

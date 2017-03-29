@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,183 +35,219 @@ import java.util.Objects;
 /**
  * Documentblocking
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Documentblocking   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("BlockingType")
-  private Integer blockingType = null;
+  @SerializedName("blockingtype")
+  private Integer blockingtype = null;
 
-  @SerializedName("ValidTo$DATE")
-  private DateTime validToDATE = null;
+  @SerializedName("validto$date")
+  private DateTime validtodate = null;
 
-  @SerializedName("DocumentType")
-  private String documentType = null;
+  @SerializedName("documenttype")
+  private String documenttype = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Documentblocking blockingType(Integer blockingType) {
-    this.blockingType = blockingType;
+  public Documentblocking displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Typ blokace [persistentní položka]
-   * @return blockingType
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Typ blokace [persistentní položka]")
-  public Integer getBlockingType() {
-    return blockingType;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setBlockingType(Integer blockingType) {
-    this.blockingType = blockingType;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Documentblocking validToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public Documentblocking id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Platnost do data [persistentní položka]
-   * @return validToDATE
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Platnost do data [persistentní položka]")
-  public DateTime getValidToDATE() {
-    return validToDATE;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setValidToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Documentblocking documentType(String documentType) {
-    this.documentType = documentType;
+  public Documentblocking classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Typ dokladu [persistentní položka]
-   * @return documentType
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Typ dokladu [persistentní položka]")
-  public String getDocumentType() {
-    return documentType;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setDocumentType(String documentType) {
-    this.documentType = documentType;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Documentblocking docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Documentblocking objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Řada dokladů; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Documentblocking createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Documentblocking blockingtype(Integer blockingtype) {
+    this.blockingtype = blockingtype;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * typ blokace [persistentní položka]
+   * @return blockingtype
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "typ blokace [persistentní položka]")
+  public Integer getBlockingtype() {
+    return blockingtype;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setBlockingtype(Integer blockingtype) {
+    this.blockingtype = blockingtype;
   }
 
-  public Documentblocking correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Documentblocking validtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * platnost do data [persistentní položka]
+   * @return validtodate
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "platnost do data [persistentní položka]")
+  public DateTime getValidtodate() {
+    return validtodate;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setValidtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
+  }
+
+  public Documentblocking documenttype(String documenttype) {
+    this.documenttype = documenttype;
+    return this;
+  }
+
+   /**
+   * typ dokladu [persistentní položka]
+   * @return documenttype
+  **/
+  @ApiModelProperty(example = "null", value = "typ dokladu [persistentní položka]")
+  public String getDocumenttype() {
+    return documenttype;
+  }
+
+  public void setDocumenttype(String documenttype) {
+    this.documenttype = documenttype;
+  }
+
+  public Documentblocking docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
+    return this;
+  }
+
+   /**
+   * Řada dokladů; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
+  **/
+  @ApiModelProperty(example = "null", value = "Řada dokladů; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
+  }
+
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
+  }
+
+  public Documentblocking createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+    return this;
+  }
+
+   /**
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
+  }
+
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Documentblocking correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+    return this;
+  }
+
+   /**
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
+  }
+
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
   public Documentblocking description(String description) {
@@ -220,10 +256,10 @@ public class Documentblocking   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -242,22 +278,22 @@ public class Documentblocking   {
       return false;
     }
     Documentblocking documentblocking = (Documentblocking) o;
-    return Objects.equals(this.displayName, documentblocking.displayName) &&
-        Objects.equals(this.ID, documentblocking.ID) &&
-        Objects.equals(this.classID, documentblocking.classID) &&
-        Objects.equals(this.objVersion, documentblocking.objVersion) &&
-        Objects.equals(this.blockingType, documentblocking.blockingType) &&
-        Objects.equals(this.validToDATE, documentblocking.validToDATE) &&
-        Objects.equals(this.documentType, documentblocking.documentType) &&
-        Objects.equals(this.docQueueID, documentblocking.docQueueID) &&
-        Objects.equals(this.createdByID, documentblocking.createdByID) &&
-        Objects.equals(this.correctedByID, documentblocking.correctedByID) &&
+    return Objects.equals(this.displayname, documentblocking.displayname) &&
+        Objects.equals(this.id, documentblocking.id) &&
+        Objects.equals(this.classid, documentblocking.classid) &&
+        Objects.equals(this.objversion, documentblocking.objversion) &&
+        Objects.equals(this.blockingtype, documentblocking.blockingtype) &&
+        Objects.equals(this.validtodate, documentblocking.validtodate) &&
+        Objects.equals(this.documenttype, documentblocking.documenttype) &&
+        Objects.equals(this.docqueueId, documentblocking.docqueueId) &&
+        Objects.equals(this.createdbyId, documentblocking.createdbyId) &&
+        Objects.equals(this.correctedbyId, documentblocking.correctedbyId) &&
         Objects.equals(this.description, documentblocking.description);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, blockingType, validToDATE, documentType, docQueueID, createdByID, correctedByID, description);
+    return Objects.hash(displayname, id, classid, objversion, blockingtype, validtodate, documenttype, docqueueId, createdbyId, correctedbyId, description);
   }
 
   @Override
@@ -265,16 +301,16 @@ public class Documentblocking   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Documentblocking {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    blockingType: ").append(toIndentedString(blockingType)).append("\n");
-    sb.append("    validToDATE: ").append(toIndentedString(validToDATE)).append("\n");
-    sb.append("    documentType: ").append(toIndentedString(documentType)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    blockingtype: ").append(toIndentedString(blockingtype)).append("\n");
+    sb.append("    validtodate: ").append(toIndentedString(validtodate)).append("\n");
+    sb.append("    documenttype: ").append(toIndentedString(documenttype)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("}");
     return sb.toString();

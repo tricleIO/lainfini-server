@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,114 +37,150 @@ import java.util.Objects;
 /**
  * Cdconfirm
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Cdconfirm   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Cdconfirmrow> rows = new ArrayList<Cdconfirmrow>();
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("PricePrecision")
-  private Integer pricePrecision = null;
+  @SerializedName("priceprecision")
+  private Integer priceprecision = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("AdditionAMount")
-  private Double additionAMount = null;
+  @SerializedName("additionamount")
+  private Double additionamount = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("Description2")
+  @SerializedName("description2")
   private String description2 = null;
 
-  @SerializedName("PeriodicityIssue")
-  private Integer periodicityIssue = null;
+  @SerializedName("periodicityissue")
+  private Integer periodicityissue = null;
 
-  @SerializedName("ValidityFrom$DATE")
-  private DateTime validityFromDATE = null;
+  @SerializedName("validityfrom$date")
+  private DateTime validityfromdate = null;
 
-  @SerializedName("ValidityTo$DATE")
-  private DateTime validityToDATE = null;
+  @SerializedName("validityto$date")
+  private DateTime validitytodate = null;
 
-  @SerializedName("ApprovedDocQueue_ID")
-  private String approvedDocQueueID = null;
+  @SerializedName("approveddocqueue_id")
+  private String approveddocqueueId = null;
 
-  @SerializedName("ApprovedExpenditur")
-  private List<Cdconfirmapproved> approvedExpenditur = new ArrayList<Cdconfirmapproved>();
+  @SerializedName("approvedexpenditur")
+  private List<Cdconfirmapproved> approvedexpenditur = new ArrayList<Cdconfirmapproved>();
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
+
+  public Cdconfirm displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Cdconfirm id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Cdconfirm classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Cdconfirm objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Cdconfirm rows(List<Cdconfirmrow> rows) {
@@ -158,10 +194,10 @@ public class Cdconfirm   {
   }
 
    /**
-   * Řádky; kolekce BO Požadavek na schválení výdaje - řádek [nepersistentní položka]
+   * Řádky; kolekce bo požadavek na schválení výdaje - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Požadavek na schválení výdaje - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo požadavek na schválení výdaje - řádek [nepersistentní položka]")
   public List<Cdconfirmrow> getRows() {
     return rows;
   }
@@ -170,166 +206,166 @@ public class Cdconfirm   {
     this.rows = rows;
   }
 
-  public Cdconfirm docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Cdconfirm docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Cdconfirm periodID(String periodID) {
-    this.periodID = periodID;
+  public Cdconfirm periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Cdconfirm ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Cdconfirm ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Cdconfirm docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Cdconfirm docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Cdconfirm createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Cdconfirm createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Cdconfirm correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Cdconfirm correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Cdconfirm newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Cdconfirm newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Cdconfirm newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Cdconfirm newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Cdconfirm pricePrecision(Integer pricePrecision) {
-    this.pricePrecision = pricePrecision;
+  public Cdconfirm priceprecision(Integer priceprecision) {
+    this.priceprecision = priceprecision;
     return this;
   }
 
    /**
-   * Zobrazení desetinných míst pro zadávací částky [persistentní položka]
-   * @return pricePrecision
+   * zobrazení desetinných míst pro zadávací částky [persistentní položka]
+   * @return priceprecision
   **/
-  @ApiModelProperty(example = "null", value = "Zobrazení desetinných míst pro zadávací částky [persistentní položka]")
-  public Integer getPricePrecision() {
-    return pricePrecision;
+  @ApiModelProperty(example = "null", value = "zobrazení desetinných míst pro zadávací částky [persistentní položka]")
+  public Integer getPriceprecision() {
+    return priceprecision;
   }
 
-  public void setPricePrecision(Integer pricePrecision) {
-    this.pricePrecision = pricePrecision;
+  public void setPriceprecision(Integer priceprecision) {
+    this.priceprecision = priceprecision;
   }
 
   public Cdconfirm amount(Double amount) {
@@ -350,22 +386,22 @@ public class Cdconfirm   {
     this.amount = amount;
   }
 
-  public Cdconfirm additionAMount(Double additionAMount) {
-    this.additionAMount = additionAMount;
+  public Cdconfirm additionamount(Double additionamount) {
+    this.additionamount = additionamount;
     return this;
   }
 
    /**
    * Částka fin. přínosu [persistentní položka]
-   * @return additionAMount
+   * @return additionamount
   **/
   @ApiModelProperty(example = "null", value = "Částka fin. přínosu [persistentní položka]")
-  public Double getAdditionAMount() {
-    return additionAMount;
+  public Double getAdditionamount() {
+    return additionamount;
   }
 
-  public void setAdditionAMount(Double additionAMount) {
-    this.additionAMount = additionAMount;
+  public void setAdditionamount(Double additionamount) {
+    this.additionamount = additionamount;
   }
 
   public Cdconfirm description(String description) {
@@ -374,10 +410,10 @@ public class Cdconfirm   {
   }
 
    /**
-   * Popis výdaje [persistentní položka]
+   * popis výdaje [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis výdaje [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis výdaje [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -392,10 +428,10 @@ public class Cdconfirm   {
   }
 
    /**
-   * Popis fin. přínosu: [persistentní položka]
+   * popis fin. přínosu: [persistentní položka]
    * @return description2
   **/
-  @ApiModelProperty(example = "null", value = "Popis fin. přínosu: [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis fin. přínosu: [persistentní položka]")
   public String getDescription2() {
     return description2;
   }
@@ -404,117 +440,117 @@ public class Cdconfirm   {
     this.description2 = description2;
   }
 
-  public Cdconfirm periodicityIssue(Integer periodicityIssue) {
-    this.periodicityIssue = periodicityIssue;
+  public Cdconfirm periodicityissue(Integer periodicityissue) {
+    this.periodicityissue = periodicityissue;
     return this;
   }
 
    /**
-   * Periodicita výdaje [persistentní položka]
-   * @return periodicityIssue
+   * periodicita výdaje [persistentní položka]
+   * @return periodicityissue
   **/
-  @ApiModelProperty(example = "null", value = "Periodicita výdaje [persistentní položka]")
-  public Integer getPeriodicityIssue() {
-    return periodicityIssue;
+  @ApiModelProperty(example = "null", value = "periodicita výdaje [persistentní položka]")
+  public Integer getPeriodicityissue() {
+    return periodicityissue;
   }
 
-  public void setPeriodicityIssue(Integer periodicityIssue) {
-    this.periodicityIssue = periodicityIssue;
+  public void setPeriodicityissue(Integer periodicityissue) {
+    this.periodicityissue = periodicityissue;
   }
 
-  public Cdconfirm validityFromDATE(DateTime validityFromDATE) {
-    this.validityFromDATE = validityFromDATE;
+  public Cdconfirm validityfromdate(DateTime validityfromdate) {
+    this.validityfromdate = validityfromdate;
     return this;
   }
 
    /**
-   * Platnost od [persistentní položka]
-   * @return validityFromDATE
+   * platnost od [persistentní položka]
+   * @return validityfromdate
   **/
-  @ApiModelProperty(example = "null", value = "Platnost od [persistentní položka]")
-  public DateTime getValidityFromDATE() {
-    return validityFromDATE;
+  @ApiModelProperty(example = "null", value = "platnost od [persistentní položka]")
+  public DateTime getValidityfromdate() {
+    return validityfromdate;
   }
 
-  public void setValidityFromDATE(DateTime validityFromDATE) {
-    this.validityFromDATE = validityFromDATE;
+  public void setValidityfromdate(DateTime validityfromdate) {
+    this.validityfromdate = validityfromdate;
   }
 
-  public Cdconfirm validityToDATE(DateTime validityToDATE) {
-    this.validityToDATE = validityToDATE;
+  public Cdconfirm validitytodate(DateTime validitytodate) {
+    this.validitytodate = validitytodate;
     return this;
   }
 
    /**
-   * Platnost do [persistentní položka]
-   * @return validityToDATE
+   * platnost do [persistentní položka]
+   * @return validitytodate
   **/
-  @ApiModelProperty(example = "null", value = "Platnost do [persistentní položka]")
-  public DateTime getValidityToDATE() {
-    return validityToDATE;
+  @ApiModelProperty(example = "null", value = "platnost do [persistentní položka]")
+  public DateTime getValiditytodate() {
+    return validitytodate;
   }
 
-  public void setValidityToDATE(DateTime validityToDATE) {
-    this.validityToDATE = validityToDATE;
+  public void setValiditytodate(DateTime validitytodate) {
+    this.validitytodate = validitytodate;
   }
 
-  public Cdconfirm approvedDocQueueID(String approvedDocQueueID) {
-    this.approvedDocQueueID = approvedDocQueueID;
+  public Cdconfirm approveddocqueueId(String approveddocqueueId) {
+    this.approveddocqueueId = approveddocqueueId;
     return this;
   }
 
    /**
-   * Řada schválených výdajů; ID objektu Řada dokladů [persistentní položka]
-   * @return approvedDocQueueID
+   * Řada schválených výdajů; id objektu Řada dokladů [persistentní položka]
+   * @return approveddocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada schválených výdajů; ID objektu Řada dokladů [persistentní položka]")
-  public String getApprovedDocQueueID() {
-    return approvedDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada schválených výdajů; id objektu Řada dokladů [persistentní položka]")
+  public String getApproveddocqueueId() {
+    return approveddocqueueId;
   }
 
-  public void setApprovedDocQueueID(String approvedDocQueueID) {
-    this.approvedDocQueueID = approvedDocQueueID;
+  public void setApproveddocqueueId(String approveddocqueueId) {
+    this.approveddocqueueId = approveddocqueueId;
   }
 
-  public Cdconfirm approvedExpenditur(List<Cdconfirmapproved> approvedExpenditur) {
-    this.approvedExpenditur = approvedExpenditur;
+  public Cdconfirm approvedexpenditur(List<Cdconfirmapproved> approvedexpenditur) {
+    this.approvedexpenditur = approvedexpenditur;
     return this;
   }
 
-  public Cdconfirm addApprovedExpenditurItem(Cdconfirmapproved approvedExpenditurItem) {
-    this.approvedExpenditur.add(approvedExpenditurItem);
-    return this;
-  }
-
-   /**
-   * Schválené výdaje; kolekce BO Schválený výdaj [nepersistentní položka]
-   * @return approvedExpenditur
-  **/
-  @ApiModelProperty(example = "null", value = "Schválené výdaje; kolekce BO Schválený výdaj [nepersistentní položka]")
-  public List<Cdconfirmapproved> getApprovedExpenditur() {
-    return approvedExpenditur;
-  }
-
-  public void setApprovedExpenditur(List<Cdconfirmapproved> approvedExpenditur) {
-    this.approvedExpenditur = approvedExpenditur;
-  }
-
-  public Cdconfirm currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Cdconfirm addApprovedexpenditurItem(Cdconfirmapproved approvedexpenditurItem) {
+    this.approvedexpenditur.add(approvedexpenditurItem);
     return this;
   }
 
    /**
-   * Měna požadavku na schválení výdaje; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * schválené výdaje; kolekce bo schválený výdaj [nepersistentní položka]
+   * @return approvedexpenditur
   **/
-  @ApiModelProperty(example = "null", value = "Měna požadavku na schválení výdaje; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "schválené výdaje; kolekce bo schválený výdaj [nepersistentní položka]")
+  public List<Cdconfirmapproved> getApprovedexpenditur() {
+    return approvedexpenditur;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setApprovedexpenditur(List<Cdconfirmapproved> approvedexpenditur) {
+    this.approvedexpenditur = approvedexpenditur;
+  }
+
+  public Cdconfirm currencyId(String currencyId) {
+    this.currencyId = currencyId;
+    return this;
+  }
+
+   /**
+   * měna požadavku na schválení výdaje; id objektu měna [persistentní položka]
+   * @return currencyId
+  **/
+  @ApiModelProperty(example = "null", value = "měna požadavku na schválení výdaje; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
+  }
+
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
 
@@ -527,35 +563,35 @@ public class Cdconfirm   {
       return false;
     }
     Cdconfirm cdconfirm = (Cdconfirm) o;
-    return Objects.equals(this.displayName, cdconfirm.displayName) &&
-        Objects.equals(this.ID, cdconfirm.ID) &&
-        Objects.equals(this.classID, cdconfirm.classID) &&
-        Objects.equals(this.objVersion, cdconfirm.objVersion) &&
+    return Objects.equals(this.displayname, cdconfirm.displayname) &&
+        Objects.equals(this.id, cdconfirm.id) &&
+        Objects.equals(this.classid, cdconfirm.classid) &&
+        Objects.equals(this.objversion, cdconfirm.objversion) &&
         Objects.equals(this.rows, cdconfirm.rows) &&
-        Objects.equals(this.docQueueID, cdconfirm.docQueueID) &&
-        Objects.equals(this.periodID, cdconfirm.periodID) &&
-        Objects.equals(this.ordNumber, cdconfirm.ordNumber) &&
-        Objects.equals(this.docDateDATE, cdconfirm.docDateDATE) &&
-        Objects.equals(this.createdByID, cdconfirm.createdByID) &&
-        Objects.equals(this.correctedByID, cdconfirm.correctedByID) &&
-        Objects.equals(this.newRelatedType, cdconfirm.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, cdconfirm.newRelatedDocumentID) &&
-        Objects.equals(this.pricePrecision, cdconfirm.pricePrecision) &&
+        Objects.equals(this.docqueueId, cdconfirm.docqueueId) &&
+        Objects.equals(this.periodId, cdconfirm.periodId) &&
+        Objects.equals(this.ordnumber, cdconfirm.ordnumber) &&
+        Objects.equals(this.docdatedate, cdconfirm.docdatedate) &&
+        Objects.equals(this.createdbyId, cdconfirm.createdbyId) &&
+        Objects.equals(this.correctedbyId, cdconfirm.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, cdconfirm.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, cdconfirm.newrelateddocumentId) &&
+        Objects.equals(this.priceprecision, cdconfirm.priceprecision) &&
         Objects.equals(this.amount, cdconfirm.amount) &&
-        Objects.equals(this.additionAMount, cdconfirm.additionAMount) &&
+        Objects.equals(this.additionamount, cdconfirm.additionamount) &&
         Objects.equals(this.description, cdconfirm.description) &&
         Objects.equals(this.description2, cdconfirm.description2) &&
-        Objects.equals(this.periodicityIssue, cdconfirm.periodicityIssue) &&
-        Objects.equals(this.validityFromDATE, cdconfirm.validityFromDATE) &&
-        Objects.equals(this.validityToDATE, cdconfirm.validityToDATE) &&
-        Objects.equals(this.approvedDocQueueID, cdconfirm.approvedDocQueueID) &&
-        Objects.equals(this.approvedExpenditur, cdconfirm.approvedExpenditur) &&
-        Objects.equals(this.currencyID, cdconfirm.currencyID);
+        Objects.equals(this.periodicityissue, cdconfirm.periodicityissue) &&
+        Objects.equals(this.validityfromdate, cdconfirm.validityfromdate) &&
+        Objects.equals(this.validitytodate, cdconfirm.validitytodate) &&
+        Objects.equals(this.approveddocqueueId, cdconfirm.approveddocqueueId) &&
+        Objects.equals(this.approvedexpenditur, cdconfirm.approvedexpenditur) &&
+        Objects.equals(this.currencyId, cdconfirm.currencyId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, pricePrecision, amount, additionAMount, description, description2, periodicityIssue, validityFromDATE, validityToDATE, approvedDocQueueID, approvedExpenditur, currencyID);
+    return Objects.hash(displayname, id, classid, objversion, rows, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, priceprecision, amount, additionamount, description, description2, periodicityissue, validityfromdate, validitytodate, approveddocqueueId, approvedexpenditur, currencyId);
   }
 
   @Override
@@ -563,30 +599,30 @@ public class Cdconfirm   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Cdconfirm {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    pricePrecision: ").append(toIndentedString(pricePrecision)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    priceprecision: ").append(toIndentedString(priceprecision)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    additionAMount: ").append(toIndentedString(additionAMount)).append("\n");
+    sb.append("    additionamount: ").append(toIndentedString(additionamount)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    description2: ").append(toIndentedString(description2)).append("\n");
-    sb.append("    periodicityIssue: ").append(toIndentedString(periodicityIssue)).append("\n");
-    sb.append("    validityFromDATE: ").append(toIndentedString(validityFromDATE)).append("\n");
-    sb.append("    validityToDATE: ").append(toIndentedString(validityToDATE)).append("\n");
-    sb.append("    approvedDocQueueID: ").append(toIndentedString(approvedDocQueueID)).append("\n");
-    sb.append("    approvedExpenditur: ").append(toIndentedString(approvedExpenditur)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
+    sb.append("    periodicityissue: ").append(toIndentedString(periodicityissue)).append("\n");
+    sb.append("    validityfromdate: ").append(toIndentedString(validityfromdate)).append("\n");
+    sb.append("    validitytodate: ").append(toIndentedString(validitytodate)).append("\n");
+    sb.append("    approveddocqueueId: ").append(toIndentedString(approveddocqueueId)).append("\n");
+    sb.append("    approvedexpenditur: ").append(toIndentedString(approvedexpenditur)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

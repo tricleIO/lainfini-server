@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,111 +34,156 @@ import java.util.Objects;
 /**
  * Bankaccountbeginning
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Bankaccountbeginning   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("BeginningLocal")
-  private Double beginningLocal = null;
+  @SerializedName("beginninglocal")
+  private Double beginninglocal = null;
 
-  @SerializedName("Beginning")
+  @SerializedName("beginning")
   private Double beginning = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Bankovní účet [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Bankovní účet [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Bankaccountbeginning periodID(String periodID) {
-    this.periodID = periodID;
+  public Bankaccountbeginning displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Bankaccountbeginning beginningLocal(Double beginningLocal) {
-    this.beginningLocal = beginningLocal;
+  public Bankaccountbeginning id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Počáteční stav lokální [persistentní položka]
-   * @return beginningLocal
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Počáteční stav lokální [persistentní položka]")
-  public Double getBeginningLocal() {
-    return beginningLocal;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setBeginningLocal(Double beginningLocal) {
-    this.beginningLocal = beginningLocal;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Bankaccountbeginning classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Bankaccountbeginning objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Bankaccountbeginning parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu bankovní účet [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu bankovní účet [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Bankaccountbeginning periodId(String periodId) {
+    this.periodId = periodId;
+    return this;
+  }
+
+   /**
+   * období; id objektu období [persistentní položka]
+   * @return periodId
+  **/
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
+  }
+
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
+  }
+
+  public Bankaccountbeginning beginninglocal(Double beginninglocal) {
+    this.beginninglocal = beginninglocal;
+    return this;
+  }
+
+   /**
+   * počáteční stav lokální [persistentní položka]
+   * @return beginninglocal
+  **/
+  @ApiModelProperty(example = "null", value = "počáteční stav lokální [persistentní položka]")
+  public Double getBeginninglocal() {
+    return beginninglocal;
+  }
+
+  public void setBeginninglocal(Double beginninglocal) {
+    this.beginninglocal = beginninglocal;
   }
 
   public Bankaccountbeginning beginning(Double beginning) {
@@ -147,10 +192,10 @@ public class Bankaccountbeginning   {
   }
 
    /**
-   * Počáteční stav [persistentní položka]
+   * počáteční stav [persistentní položka]
    * @return beginning
   **/
-  @ApiModelProperty(example = "null", value = "Počáteční stav [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "počáteční stav [persistentní položka]")
   public Double getBeginning() {
     return beginning;
   }
@@ -169,19 +214,19 @@ public class Bankaccountbeginning   {
       return false;
     }
     Bankaccountbeginning bankaccountbeginning = (Bankaccountbeginning) o;
-    return Objects.equals(this.displayName, bankaccountbeginning.displayName) &&
-        Objects.equals(this.ID, bankaccountbeginning.ID) &&
-        Objects.equals(this.classID, bankaccountbeginning.classID) &&
-        Objects.equals(this.objVersion, bankaccountbeginning.objVersion) &&
-        Objects.equals(this.parentID, bankaccountbeginning.parentID) &&
-        Objects.equals(this.periodID, bankaccountbeginning.periodID) &&
-        Objects.equals(this.beginningLocal, bankaccountbeginning.beginningLocal) &&
+    return Objects.equals(this.displayname, bankaccountbeginning.displayname) &&
+        Objects.equals(this.id, bankaccountbeginning.id) &&
+        Objects.equals(this.classid, bankaccountbeginning.classid) &&
+        Objects.equals(this.objversion, bankaccountbeginning.objversion) &&
+        Objects.equals(this.parentId, bankaccountbeginning.parentId) &&
+        Objects.equals(this.periodId, bankaccountbeginning.periodId) &&
+        Objects.equals(this.beginninglocal, bankaccountbeginning.beginninglocal) &&
         Objects.equals(this.beginning, bankaccountbeginning.beginning);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, periodID, beginningLocal, beginning);
+    return Objects.hash(displayname, id, classid, objversion, parentId, periodId, beginninglocal, beginning);
   }
 
   @Override
@@ -189,13 +234,13 @@ public class Bankaccountbeginning   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Bankaccountbeginning {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    beginningLocal: ").append(toIndentedString(beginningLocal)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    beginninglocal: ").append(toIndentedString(beginninglocal)).append("\n");
     sb.append("    beginning: ").append(toIndentedString(beginning)).append("\n");
     sb.append("}");
     return sb.toString();

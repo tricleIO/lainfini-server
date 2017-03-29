@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,180 +35,225 @@ import java.util.Objects;
 /**
  * Crmactivitytimerecord
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Crmactivitytimerecord   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("DateOfRecord$DATE")
-  private DateTime dateOfRecordDATE = null;
+  @SerializedName("dateofrecord$date")
+  private DateTime dateofrecorddate = null;
 
-  @SerializedName("Worker_ID")
-  private String workerID = null;
+  @SerializedName("worker_id")
+  private String workerId = null;
 
-  @SerializedName("TimeOfWork")
-  private Double timeOfWork = null;
+  @SerializedName("timeofwork")
+  private Double timeofwork = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("StartDate$DATE")
-  private DateTime startDateDATE = null;
+  @SerializedName("startdate$date")
+  private DateTime startdatedate = null;
 
-  @SerializedName("EndDate$DATE")
-  private DateTime endDateDATE = null;
+  @SerializedName("enddate$date")
+  private DateTime enddatedate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Hlavičkový objekt [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Hlavičkový objekt [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Crmactivitytimerecord dateOfRecordDATE(DateTime dateOfRecordDATE) {
-    this.dateOfRecordDATE = dateOfRecordDATE;
+  public Crmactivitytimerecord displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Ve dni [persistentní položka]
-   * @return dateOfRecordDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Ve dni [persistentní položka]")
-  public DateTime getDateOfRecordDATE() {
-    return dateOfRecordDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateOfRecordDATE(DateTime dateOfRecordDATE) {
-    this.dateOfRecordDATE = dateOfRecordDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Crmactivitytimerecord workerID(String workerID) {
-    this.workerID = workerID;
+  public Crmactivitytimerecord id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Pracovník; ID objektu Uživatel [persistentní položka]
-   * @return workerID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Pracovník; ID objektu Uživatel [persistentní položka]")
-  public String getWorkerID() {
-    return workerID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setWorkerID(String workerID) {
-    this.workerID = workerID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Crmactivitytimerecord timeOfWork(Double timeOfWork) {
-    this.timeOfWork = timeOfWork;
+  public Crmactivitytimerecord classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Strávený čas [persistentní položka]
-   * @return timeOfWork
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Strávený čas [persistentní položka]")
-  public Double getTimeOfWork() {
-    return timeOfWork;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setTimeOfWork(Double timeOfWork) {
-    this.timeOfWork = timeOfWork;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Crmactivitytimerecord createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Crmactivitytimerecord objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Crmactivitytimerecord correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Crmactivitytimerecord parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * vlastník; id objektu hlavičkový objekt [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu hlavičkový objekt [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Crmactivitytimerecord dateofrecorddate(DateTime dateofrecorddate) {
+    this.dateofrecorddate = dateofrecorddate;
+    return this;
+  }
+
+   /**
+   * ve dni [persistentní položka]
+   * @return dateofrecorddate
+  **/
+  @ApiModelProperty(example = "null", value = "ve dni [persistentní položka]")
+  public DateTime getDateofrecorddate() {
+    return dateofrecorddate;
+  }
+
+  public void setDateofrecorddate(DateTime dateofrecorddate) {
+    this.dateofrecorddate = dateofrecorddate;
+  }
+
+  public Crmactivitytimerecord workerId(String workerId) {
+    this.workerId = workerId;
+    return this;
+  }
+
+   /**
+   * pracovník; id objektu uživatel [persistentní položka]
+   * @return workerId
+  **/
+  @ApiModelProperty(example = "null", value = "pracovník; id objektu uživatel [persistentní položka]")
+  public String getWorkerId() {
+    return workerId;
+  }
+
+  public void setWorkerId(String workerId) {
+    this.workerId = workerId;
+  }
+
+  public Crmactivitytimerecord timeofwork(Double timeofwork) {
+    this.timeofwork = timeofwork;
+    return this;
+  }
+
+   /**
+   * strávený čas [persistentní položka]
+   * @return timeofwork
+  **/
+  @ApiModelProperty(example = "null", value = "strávený čas [persistentní položka]")
+  public Double getTimeofwork() {
+    return timeofwork;
+  }
+
+  public void setTimeofwork(Double timeofwork) {
+    this.timeofwork = timeofwork;
+  }
+
+  public Crmactivitytimerecord createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+    return this;
+  }
+
+   /**
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
+  }
+
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Crmactivitytimerecord correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+    return this;
+  }
+
+   /**
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
+  }
+
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
   public Crmactivitytimerecord description(String description) {
@@ -217,10 +262,10 @@ public class Crmactivitytimerecord   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -229,40 +274,40 @@ public class Crmactivitytimerecord   {
     this.description = description;
   }
 
-  public Crmactivitytimerecord startDateDATE(DateTime startDateDATE) {
-    this.startDateDATE = startDateDATE;
+  public Crmactivitytimerecord startdatedate(DateTime startdatedate) {
+    this.startdatedate = startdatedate;
     return this;
   }
 
    /**
-   * Od [persistentní položka]
-   * @return startDateDATE
+   * od [persistentní položka]
+   * @return startdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Od [persistentní položka]")
-  public DateTime getStartDateDATE() {
-    return startDateDATE;
+  @ApiModelProperty(example = "null", value = "od [persistentní položka]")
+  public DateTime getStartdatedate() {
+    return startdatedate;
   }
 
-  public void setStartDateDATE(DateTime startDateDATE) {
-    this.startDateDATE = startDateDATE;
+  public void setStartdatedate(DateTime startdatedate) {
+    this.startdatedate = startdatedate;
   }
 
-  public Crmactivitytimerecord endDateDATE(DateTime endDateDATE) {
-    this.endDateDATE = endDateDATE;
+  public Crmactivitytimerecord enddatedate(DateTime enddatedate) {
+    this.enddatedate = enddatedate;
     return this;
   }
 
    /**
-   * Do [persistentní položka]
-   * @return endDateDATE
+   * do [persistentní položka]
+   * @return enddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Do [persistentní položka]")
-  public DateTime getEndDateDATE() {
-    return endDateDATE;
+  @ApiModelProperty(example = "null", value = "do [persistentní položka]")
+  public DateTime getEnddatedate() {
+    return enddatedate;
   }
 
-  public void setEndDateDATE(DateTime endDateDATE) {
-    this.endDateDATE = endDateDATE;
+  public void setEnddatedate(DateTime enddatedate) {
+    this.enddatedate = enddatedate;
   }
 
 
@@ -275,24 +320,24 @@ public class Crmactivitytimerecord   {
       return false;
     }
     Crmactivitytimerecord crmactivitytimerecord = (Crmactivitytimerecord) o;
-    return Objects.equals(this.displayName, crmactivitytimerecord.displayName) &&
-        Objects.equals(this.ID, crmactivitytimerecord.ID) &&
-        Objects.equals(this.classID, crmactivitytimerecord.classID) &&
-        Objects.equals(this.objVersion, crmactivitytimerecord.objVersion) &&
-        Objects.equals(this.parentID, crmactivitytimerecord.parentID) &&
-        Objects.equals(this.dateOfRecordDATE, crmactivitytimerecord.dateOfRecordDATE) &&
-        Objects.equals(this.workerID, crmactivitytimerecord.workerID) &&
-        Objects.equals(this.timeOfWork, crmactivitytimerecord.timeOfWork) &&
-        Objects.equals(this.createdByID, crmactivitytimerecord.createdByID) &&
-        Objects.equals(this.correctedByID, crmactivitytimerecord.correctedByID) &&
+    return Objects.equals(this.displayname, crmactivitytimerecord.displayname) &&
+        Objects.equals(this.id, crmactivitytimerecord.id) &&
+        Objects.equals(this.classid, crmactivitytimerecord.classid) &&
+        Objects.equals(this.objversion, crmactivitytimerecord.objversion) &&
+        Objects.equals(this.parentId, crmactivitytimerecord.parentId) &&
+        Objects.equals(this.dateofrecorddate, crmactivitytimerecord.dateofrecorddate) &&
+        Objects.equals(this.workerId, crmactivitytimerecord.workerId) &&
+        Objects.equals(this.timeofwork, crmactivitytimerecord.timeofwork) &&
+        Objects.equals(this.createdbyId, crmactivitytimerecord.createdbyId) &&
+        Objects.equals(this.correctedbyId, crmactivitytimerecord.correctedbyId) &&
         Objects.equals(this.description, crmactivitytimerecord.description) &&
-        Objects.equals(this.startDateDATE, crmactivitytimerecord.startDateDATE) &&
-        Objects.equals(this.endDateDATE, crmactivitytimerecord.endDateDATE);
+        Objects.equals(this.startdatedate, crmactivitytimerecord.startdatedate) &&
+        Objects.equals(this.enddatedate, crmactivitytimerecord.enddatedate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, dateOfRecordDATE, workerID, timeOfWork, createdByID, correctedByID, description, startDateDATE, endDateDATE);
+    return Objects.hash(displayname, id, classid, objversion, parentId, dateofrecorddate, workerId, timeofwork, createdbyId, correctedbyId, description, startdatedate, enddatedate);
   }
 
   @Override
@@ -300,19 +345,19 @@ public class Crmactivitytimerecord   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Crmactivitytimerecord {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    dateOfRecordDATE: ").append(toIndentedString(dateOfRecordDATE)).append("\n");
-    sb.append("    workerID: ").append(toIndentedString(workerID)).append("\n");
-    sb.append("    timeOfWork: ").append(toIndentedString(timeOfWork)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    dateofrecorddate: ").append(toIndentedString(dateofrecorddate)).append("\n");
+    sb.append("    workerId: ").append(toIndentedString(workerId)).append("\n");
+    sb.append("    timeofwork: ").append(toIndentedString(timeofwork)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    startDateDATE: ").append(toIndentedString(startDateDATE)).append("\n");
-    sb.append("    endDateDATE: ").append(toIndentedString(endDateDATE)).append("\n");
+    sb.append("    startdatedate: ").append(toIndentedString(startdatedate)).append("\n");
+    sb.append("    enddatedate: ").append(toIndentedString(enddatedate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

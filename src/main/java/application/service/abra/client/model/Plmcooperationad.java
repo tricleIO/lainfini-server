@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,129 +34,174 @@ import java.util.Objects;
 /**
  * Plmcooperationad
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmcooperationad   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("AdditionalCosts_ID")
-  private String additionalCostsID = null;
+  @SerializedName("additionalcosts_id")
+  private String additionalcostsId = null;
 
-  @SerializedName("MaterialPrice")
-  private Double materialPrice = null;
+  @SerializedName("materialprice")
+  private Double materialprice = null;
 
-  @SerializedName("WorkPrice")
-  private Double workPrice = null;
+  @SerializedName("workprice")
+  private Double workprice = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Kooperace [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Kooperace [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Plmcooperationad additionalCostsID(String additionalCostsID) {
-    this.additionalCostsID = additionalCostsID;
+  public Plmcooperationad displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Vedlejší pořizovací náklady; ID objektu Příjemka - Vedlejší pořizovací náklady [persistentní položka]
-   * @return additionalCostsID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vedlejší pořizovací náklady; ID objektu Příjemka - Vedlejší pořizovací náklady [persistentní položka]")
-  public String getAdditionalCostsID() {
-    return additionalCostsID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setAdditionalCostsID(String additionalCostsID) {
-    this.additionalCostsID = additionalCostsID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Plmcooperationad materialPrice(Double materialPrice) {
-    this.materialPrice = materialPrice;
+  public Plmcooperationad id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Cena za materiál [persistentní položka]
-   * @return materialPrice
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Cena za materiál [persistentní položka]")
-  public Double getMaterialPrice() {
-    return materialPrice;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setMaterialPrice(Double materialPrice) {
-    this.materialPrice = materialPrice;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Plmcooperationad workPrice(Double workPrice) {
-    this.workPrice = workPrice;
+  public Plmcooperationad classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Cena za práci [persistentní položka]
-   * @return workPrice
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Cena za práci [persistentní položka]")
-  public Double getWorkPrice() {
-    return workPrice;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setWorkPrice(Double workPrice) {
-    this.workPrice = workPrice;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmcooperationad objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Plmcooperationad parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu kooperace [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu kooperace [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Plmcooperationad additionalcostsId(String additionalcostsId) {
+    this.additionalcostsId = additionalcostsId;
+    return this;
+  }
+
+   /**
+   * vedlejší pořizovací náklady; id objektu příjemka - vedlejší pořizovací náklady [persistentní položka]
+   * @return additionalcostsId
+  **/
+  @ApiModelProperty(example = "null", value = "vedlejší pořizovací náklady; id objektu příjemka - vedlejší pořizovací náklady [persistentní položka]")
+  public String getAdditionalcostsId() {
+    return additionalcostsId;
+  }
+
+  public void setAdditionalcostsId(String additionalcostsId) {
+    this.additionalcostsId = additionalcostsId;
+  }
+
+  public Plmcooperationad materialprice(Double materialprice) {
+    this.materialprice = materialprice;
+    return this;
+  }
+
+   /**
+   * cena za materiál [persistentní položka]
+   * @return materialprice
+  **/
+  @ApiModelProperty(example = "null", value = "cena za materiál [persistentní položka]")
+  public Double getMaterialprice() {
+    return materialprice;
+  }
+
+  public void setMaterialprice(Double materialprice) {
+    this.materialprice = materialprice;
+  }
+
+  public Plmcooperationad workprice(Double workprice) {
+    this.workprice = workprice;
+    return this;
+  }
+
+   /**
+   * cena za práci [persistentní položka]
+   * @return workprice
+  **/
+  @ApiModelProperty(example = "null", value = "cena za práci [persistentní položka]")
+  public Double getWorkprice() {
+    return workprice;
+  }
+
+  public void setWorkprice(Double workprice) {
+    this.workprice = workprice;
   }
 
 
@@ -169,19 +214,19 @@ public class Plmcooperationad   {
       return false;
     }
     Plmcooperationad plmcooperationad = (Plmcooperationad) o;
-    return Objects.equals(this.displayName, plmcooperationad.displayName) &&
-        Objects.equals(this.ID, plmcooperationad.ID) &&
-        Objects.equals(this.classID, plmcooperationad.classID) &&
-        Objects.equals(this.objVersion, plmcooperationad.objVersion) &&
-        Objects.equals(this.parentID, plmcooperationad.parentID) &&
-        Objects.equals(this.additionalCostsID, plmcooperationad.additionalCostsID) &&
-        Objects.equals(this.materialPrice, plmcooperationad.materialPrice) &&
-        Objects.equals(this.workPrice, plmcooperationad.workPrice);
+    return Objects.equals(this.displayname, plmcooperationad.displayname) &&
+        Objects.equals(this.id, plmcooperationad.id) &&
+        Objects.equals(this.classid, plmcooperationad.classid) &&
+        Objects.equals(this.objversion, plmcooperationad.objversion) &&
+        Objects.equals(this.parentId, plmcooperationad.parentId) &&
+        Objects.equals(this.additionalcostsId, plmcooperationad.additionalcostsId) &&
+        Objects.equals(this.materialprice, plmcooperationad.materialprice) &&
+        Objects.equals(this.workprice, plmcooperationad.workprice);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, additionalCostsID, materialPrice, workPrice);
+    return Objects.hash(displayname, id, classid, objversion, parentId, additionalcostsId, materialprice, workprice);
   }
 
   @Override
@@ -189,14 +234,14 @@ public class Plmcooperationad   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmcooperationad {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    additionalCostsID: ").append(toIndentedString(additionalCostsID)).append("\n");
-    sb.append("    materialPrice: ").append(toIndentedString(materialPrice)).append("\n");
-    sb.append("    workPrice: ").append(toIndentedString(workPrice)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    additionalcostsId: ").append(toIndentedString(additionalcostsId)).append("\n");
+    sb.append("    materialprice: ").append(toIndentedString(materialprice)).append("\n");
+    sb.append("    workprice: ").append(toIndentedString(workprice)).append("\n");
     sb.append("}");
     return sb.toString();
   }

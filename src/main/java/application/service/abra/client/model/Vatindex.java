@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,114 +34,150 @@ import java.util.Objects;
 /**
  * Vatindex
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Vatindex   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Tariff")
+  @SerializedName("tariff")
   private Double tariff = null;
 
-  @SerializedName("Income")
+  @SerializedName("income")
   private Boolean income = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("AnalyticalAccount")
-  private String analyticalAccount = null;
+  @SerializedName("analyticalaccount")
+  private String analyticalaccount = null;
 
-  @SerializedName("VATRate_ID")
-  private String vATRateID = null;
+  @SerializedName("vatrate_id")
+  private String vatrateId = null;
 
-  @SerializedName("AllowanceVATIndex_ID")
-  private String allowanceVATIndexID = null;
+  @SerializedName("allowancevatindex_id")
+  private String allowancevatindexId = null;
 
-  @SerializedName("ReverseVATIndex_ID")
-  private String reverseVATIndexID = null;
+  @SerializedName("reversevatindex_id")
+  private String reversevatindexId = null;
 
-  @SerializedName("IsCommon")
-  private Boolean isCommon = null;
+  @SerializedName("iscommon")
+  private Boolean iscommon = null;
 
-  @SerializedName("IsAllowance")
-  private Boolean isAllowance = null;
+  @SerializedName("isallowance")
+  private Boolean isallowance = null;
 
-  @SerializedName("IsReverse")
-  private Boolean isReverse = null;
+  @SerializedName("isreverse")
+  private Boolean isreverse = null;
 
-  @SerializedName("Country_ID")
-  private String countryID = null;
+  @SerializedName("country_id")
+  private String countryId = null;
 
-  @SerializedName("VATIndexType")
-  private Integer vATIndexType = null;
+  @SerializedName("vatindextype")
+  private Integer vatindextype = null;
 
-  @SerializedName("LegalNotice")
-  private String legalNotice = null;
+  @SerializedName("legalnotice")
+  private String legalnotice = null;
 
-  @SerializedName("UsingNotice")
-  private String usingNotice = null;
+  @SerializedName("usingnotice")
+  private String usingnotice = null;
 
-  @SerializedName("ForCustomsDeclaration")
-  private Boolean forCustomsDeclaration = null;
+  @SerializedName("forcustomsdeclaration")
+  private Boolean forcustomsdeclaration = null;
 
-  @SerializedName("ForDomesticReverseCharge")
-  private Boolean forDomesticReverseCharge = null;
+  @SerializedName("fordomesticreversecharge")
+  private Boolean fordomesticreversecharge = null;
 
-  @SerializedName("ForInsolventVATCorrection")
-  private Boolean forInsolventVATCorrection = null;
+  @SerializedName("forinsolventvatcorrection")
+  private Boolean forinsolventvatcorrection = null;
 
-  @SerializedName("OutOfVAT")
-  private Boolean outOfVAT = null;
+  @SerializedName("outofvat")
+  private Boolean outofvat = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Vatindex displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Vatindex id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Vatindex classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Vatindex objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Vatindex hidden(Boolean hidden) {
@@ -150,10 +186,10 @@ public class Vatindex   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -168,10 +204,10 @@ public class Vatindex   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -180,13 +216,22 @@ public class Vatindex   {
     this.code = code;
   }
 
+  public Vatindex tariff(Double tariff) {
+    this.tariff = tariff;
+    return this;
+  }
+
    /**
-   * Sazba [persistentní položka]
+   * sazba [persistentní položka]
    * @return tariff
   **/
-  @ApiModelProperty(example = "null", value = "Sazba [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "sazba [persistentní položka]")
   public Double getTariff() {
     return tariff;
+  }
+
+  public void setTariff(Double tariff) {
+    this.tariff = tariff;
   }
 
   public Vatindex income(Boolean income) {
@@ -195,10 +240,10 @@ public class Vatindex   {
   }
 
    /**
-   * Výstup [persistentní položka]
+   * výstup [persistentní položka]
    * @return income
   **/
-  @ApiModelProperty(example = "null", value = "Výstup [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "výstup [persistentní položka]")
   public Boolean getIncome() {
     return income;
   }
@@ -213,10 +258,10 @@ public class Vatindex   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -225,274 +270,274 @@ public class Vatindex   {
     this.description = description;
   }
 
-  public Vatindex analyticalAccount(String analyticalAccount) {
-    this.analyticalAccount = analyticalAccount;
+  public Vatindex analyticalaccount(String analyticalaccount) {
+    this.analyticalaccount = analyticalaccount;
     return this;
   }
 
    /**
-   * Analytika [persistentní položka]
-   * @return analyticalAccount
+   * analytika [persistentní položka]
+   * @return analyticalaccount
   **/
-  @ApiModelProperty(example = "null", value = "Analytika [persistentní položka]")
-  public String getAnalyticalAccount() {
-    return analyticalAccount;
+  @ApiModelProperty(example = "null", value = "analytika [persistentní položka]")
+  public String getAnalyticalaccount() {
+    return analyticalaccount;
   }
 
-  public void setAnalyticalAccount(String analyticalAccount) {
-    this.analyticalAccount = analyticalAccount;
+  public void setAnalyticalaccount(String analyticalaccount) {
+    this.analyticalaccount = analyticalaccount;
   }
 
-  public Vatindex vATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public Vatindex vatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
     return this;
   }
 
    /**
-   * %DPH; ID objektu DPH sazba [persistentní položka]
-   * @return vATRateID
+   * %dph; id objektu dph sazba [persistentní položka]
+   * @return vatrateId
   **/
-  @ApiModelProperty(example = "null", value = "%DPH; ID objektu DPH sazba [persistentní položka]")
-  public String getVATRateID() {
-    return vATRateID;
+  @ApiModelProperty(example = "null", value = "%dph; id objektu dph sazba [persistentní položka]")
+  public String getVatrateId() {
+    return vatrateId;
   }
 
-  public void setVATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public void setVatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
   }
 
-  public Vatindex allowanceVATIndexID(String allowanceVATIndexID) {
-    this.allowanceVATIndexID = allowanceVATIndexID;
+  public Vatindex allowancevatindexId(String allowancevatindexId) {
+    this.allowancevatindexId = allowancevatindexId;
     return this;
   }
 
    /**
-   * Odpočet DPH; ID objektu DPH index [persistentní položka]
-   * @return allowanceVATIndexID
+   * odpočet dph; id objektu dph index [persistentní položka]
+   * @return allowancevatindexId
   **/
-  @ApiModelProperty(example = "null", value = "Odpočet DPH; ID objektu DPH index [persistentní položka]")
-  public String getAllowanceVATIndexID() {
-    return allowanceVATIndexID;
+  @ApiModelProperty(example = "null", value = "odpočet dph; id objektu dph index [persistentní položka]")
+  public String getAllowancevatindexId() {
+    return allowancevatindexId;
   }
 
-  public void setAllowanceVATIndexID(String allowanceVATIndexID) {
-    this.allowanceVATIndexID = allowanceVATIndexID;
+  public void setAllowancevatindexId(String allowancevatindexId) {
+    this.allowancevatindexId = allowancevatindexId;
   }
 
-  public Vatindex reverseVATIndexID(String reverseVATIndexID) {
-    this.reverseVATIndexID = reverseVATIndexID;
+  public Vatindex reversevatindexId(String reversevatindexId) {
+    this.reversevatindexId = reversevatindexId;
     return this;
   }
 
    /**
-   * Inverzní index; ID objektu DPH index [persistentní položka]
-   * @return reverseVATIndexID
+   * inverzní index; id objektu dph index [persistentní položka]
+   * @return reversevatindexId
   **/
-  @ApiModelProperty(example = "null", value = "Inverzní index; ID objektu DPH index [persistentní položka]")
-  public String getReverseVATIndexID() {
-    return reverseVATIndexID;
+  @ApiModelProperty(example = "null", value = "inverzní index; id objektu dph index [persistentní položka]")
+  public String getReversevatindexId() {
+    return reversevatindexId;
   }
 
-  public void setReverseVATIndexID(String reverseVATIndexID) {
-    this.reverseVATIndexID = reverseVATIndexID;
+  public void setReversevatindexId(String reversevatindexId) {
+    this.reversevatindexId = reversevatindexId;
   }
 
-  public Vatindex isCommon(Boolean isCommon) {
-    this.isCommon = isCommon;
+  public Vatindex iscommon(Boolean iscommon) {
+    this.iscommon = iscommon;
     return this;
   }
 
    /**
-   * Bez ohledu [persistentní položka]
-   * @return isCommon
+   * bez ohledu [persistentní položka]
+   * @return iscommon
   **/
-  @ApiModelProperty(example = "null", value = "Bez ohledu [persistentní položka]")
-  public Boolean getIsCommon() {
-    return isCommon;
+  @ApiModelProperty(example = "null", value = "bez ohledu [persistentní položka]")
+  public Boolean getIscommon() {
+    return iscommon;
   }
 
-  public void setIsCommon(Boolean isCommon) {
-    this.isCommon = isCommon;
+  public void setIscommon(Boolean iscommon) {
+    this.iscommon = iscommon;
   }
 
-  public Vatindex isAllowance(Boolean isAllowance) {
-    this.isAllowance = isAllowance;
+  public Vatindex isallowance(Boolean isallowance) {
+    this.isallowance = isallowance;
     return this;
   }
 
    /**
-   * Je odpočet [persistentní položka]
-   * @return isAllowance
+   * je odpočet [persistentní položka]
+   * @return isallowance
   **/
-  @ApiModelProperty(example = "null", value = "Je odpočet [persistentní položka]")
-  public Boolean getIsAllowance() {
-    return isAllowance;
+  @ApiModelProperty(example = "null", value = "je odpočet [persistentní položka]")
+  public Boolean getIsallowance() {
+    return isallowance;
   }
 
-  public void setIsAllowance(Boolean isAllowance) {
-    this.isAllowance = isAllowance;
+  public void setIsallowance(Boolean isallowance) {
+    this.isallowance = isallowance;
   }
 
-  public Vatindex isReverse(Boolean isReverse) {
-    this.isReverse = isReverse;
+  public Vatindex isreverse(Boolean isreverse) {
+    this.isreverse = isreverse;
     return this;
   }
 
    /**
-   * Je inverzní [persistentní položka]
-   * @return isReverse
+   * je inverzní [persistentní položka]
+   * @return isreverse
   **/
-  @ApiModelProperty(example = "null", value = "Je inverzní [persistentní položka]")
-  public Boolean getIsReverse() {
-    return isReverse;
+  @ApiModelProperty(example = "null", value = "je inverzní [persistentní položka]")
+  public Boolean getIsreverse() {
+    return isreverse;
   }
 
-  public void setIsReverse(Boolean isReverse) {
-    this.isReverse = isReverse;
+  public void setIsreverse(Boolean isreverse) {
+    this.isreverse = isreverse;
   }
 
-  public Vatindex countryID(String countryID) {
-    this.countryID = countryID;
+  public Vatindex countryId(String countryId) {
+    this.countryId = countryId;
     return this;
   }
 
    /**
-   * Země; ID objektu Země [persistentní položka]
-   * @return countryID
+   * země; id objektu země [persistentní položka]
+   * @return countryId
   **/
-  @ApiModelProperty(example = "null", value = "Země; ID objektu Země [persistentní položka]")
-  public String getCountryID() {
-    return countryID;
+  @ApiModelProperty(example = "null", value = "země; id objektu země [persistentní položka]")
+  public String getCountryId() {
+    return countryId;
   }
 
-  public void setCountryID(String countryID) {
-    this.countryID = countryID;
+  public void setCountryId(String countryId) {
+    this.countryId = countryId;
   }
 
-  public Vatindex vATIndexType(Integer vATIndexType) {
-    this.vATIndexType = vATIndexType;
+  public Vatindex vatindextype(Integer vatindextype) {
+    this.vatindextype = vatindextype;
     return this;
   }
 
    /**
-   * Typ DPH Indexu [persistentní položka]
-   * @return vATIndexType
+   * typ dph indexu [persistentní položka]
+   * @return vatindextype
   **/
-  @ApiModelProperty(example = "null", value = "Typ DPH Indexu [persistentní položka]")
-  public Integer getVATIndexType() {
-    return vATIndexType;
+  @ApiModelProperty(example = "null", value = "typ dph indexu [persistentní položka]")
+  public Integer getVatindextype() {
+    return vatindextype;
   }
 
-  public void setVATIndexType(Integer vATIndexType) {
-    this.vATIndexType = vATIndexType;
+  public void setVatindextype(Integer vatindextype) {
+    this.vatindextype = vatindextype;
   }
 
-  public Vatindex legalNotice(String legalNotice) {
-    this.legalNotice = legalNotice;
+  public Vatindex legalnotice(String legalnotice) {
+    this.legalnotice = legalnotice;
     return this;
   }
 
    /**
-   * Upozornění [persistentní položka]
-   * @return legalNotice
+   * upozornění [persistentní položka]
+   * @return legalnotice
   **/
-  @ApiModelProperty(example = "null", value = "Upozornění [persistentní položka]")
-  public String getLegalNotice() {
-    return legalNotice;
+  @ApiModelProperty(example = "null", value = "upozornění [persistentní položka]")
+  public String getLegalnotice() {
+    return legalnotice;
   }
 
-  public void setLegalNotice(String legalNotice) {
-    this.legalNotice = legalNotice;
+  public void setLegalnotice(String legalnotice) {
+    this.legalnotice = legalnotice;
   }
 
-  public Vatindex usingNotice(String usingNotice) {
-    this.usingNotice = usingNotice;
+  public Vatindex usingnotice(String usingnotice) {
+    this.usingnotice = usingnotice;
     return this;
   }
 
    /**
-   * Použití [persistentní položka]
-   * @return usingNotice
+   * použití [persistentní položka]
+   * @return usingnotice
   **/
-  @ApiModelProperty(example = "null", value = "Použití [persistentní položka]")
-  public String getUsingNotice() {
-    return usingNotice;
+  @ApiModelProperty(example = "null", value = "použití [persistentní položka]")
+  public String getUsingnotice() {
+    return usingnotice;
   }
 
-  public void setUsingNotice(String usingNotice) {
-    this.usingNotice = usingNotice;
+  public void setUsingnotice(String usingnotice) {
+    this.usingnotice = usingnotice;
   }
 
-  public Vatindex forCustomsDeclaration(Boolean forCustomsDeclaration) {
-    this.forCustomsDeclaration = forCustomsDeclaration;
+  public Vatindex forcustomsdeclaration(Boolean forcustomsdeclaration) {
+    this.forcustomsdeclaration = forcustomsdeclaration;
     return this;
   }
 
    /**
-   * Pro celní prohlášení [persistentní položka]
-   * @return forCustomsDeclaration
+   * pro celní prohlášení [persistentní položka]
+   * @return forcustomsdeclaration
   **/
-  @ApiModelProperty(example = "null", value = "Pro celní prohlášení [persistentní položka]")
-  public Boolean getForCustomsDeclaration() {
-    return forCustomsDeclaration;
+  @ApiModelProperty(example = "null", value = "pro celní prohlášení [persistentní položka]")
+  public Boolean getForcustomsdeclaration() {
+    return forcustomsdeclaration;
   }
 
-  public void setForCustomsDeclaration(Boolean forCustomsDeclaration) {
-    this.forCustomsDeclaration = forCustomsDeclaration;
+  public void setForcustomsdeclaration(Boolean forcustomsdeclaration) {
+    this.forcustomsdeclaration = forcustomsdeclaration;
   }
 
-  public Vatindex forDomesticReverseCharge(Boolean forDomesticReverseCharge) {
-    this.forDomesticReverseCharge = forDomesticReverseCharge;
+  public Vatindex fordomesticreversecharge(Boolean fordomesticreversecharge) {
+    this.fordomesticreversecharge = fordomesticreversecharge;
     return this;
   }
 
    /**
-   * Režim Přenesení daňové povinnosti [persistentní položka]
-   * @return forDomesticReverseCharge
+   * režim přenesení daňové povinnosti [persistentní položka]
+   * @return fordomesticreversecharge
   **/
-  @ApiModelProperty(example = "null", value = "Režim Přenesení daňové povinnosti [persistentní položka]")
-  public Boolean getForDomesticReverseCharge() {
-    return forDomesticReverseCharge;
+  @ApiModelProperty(example = "null", value = "režim přenesení daňové povinnosti [persistentní položka]")
+  public Boolean getFordomesticreversecharge() {
+    return fordomesticreversecharge;
   }
 
-  public void setForDomesticReverseCharge(Boolean forDomesticReverseCharge) {
-    this.forDomesticReverseCharge = forDomesticReverseCharge;
+  public void setFordomesticreversecharge(Boolean fordomesticreversecharge) {
+    this.fordomesticreversecharge = fordomesticreversecharge;
   }
 
-  public Vatindex forInsolventVATCorrection(Boolean forInsolventVATCorrection) {
-    this.forInsolventVATCorrection = forInsolventVATCorrection;
+  public Vatindex forinsolventvatcorrection(Boolean forinsolventvatcorrection) {
+    this.forinsolventvatcorrection = forinsolventvatcorrection;
     return this;
   }
 
    /**
-   * Oprava daně u pohledávek za dlužníky v insolvenci [persistentní položka]
-   * @return forInsolventVATCorrection
+   * oprava daně u pohledávek za dlužníky v insolvenci [persistentní položka]
+   * @return forinsolventvatcorrection
   **/
-  @ApiModelProperty(example = "null", value = "Oprava daně u pohledávek za dlužníky v insolvenci [persistentní položka]")
-  public Boolean getForInsolventVATCorrection() {
-    return forInsolventVATCorrection;
+  @ApiModelProperty(example = "null", value = "oprava daně u pohledávek za dlužníky v insolvenci [persistentní položka]")
+  public Boolean getForinsolventvatcorrection() {
+    return forinsolventvatcorrection;
   }
 
-  public void setForInsolventVATCorrection(Boolean forInsolventVATCorrection) {
-    this.forInsolventVATCorrection = forInsolventVATCorrection;
+  public void setForinsolventvatcorrection(Boolean forinsolventvatcorrection) {
+    this.forinsolventvatcorrection = forinsolventvatcorrection;
   }
 
-  public Vatindex outOfVAT(Boolean outOfVAT) {
-    this.outOfVAT = outOfVAT;
+  public Vatindex outofvat(Boolean outofvat) {
+    this.outofvat = outofvat;
     return this;
   }
 
    /**
-   * Mimo evidenci DPH [persistentní položka]
-   * @return outOfVAT
+   * mimo evidenci dph [persistentní položka]
+   * @return outofvat
   **/
-  @ApiModelProperty(example = "null", value = "Mimo evidenci DPH [persistentní položka]")
-  public Boolean getOutOfVAT() {
-    return outOfVAT;
+  @ApiModelProperty(example = "null", value = "mimo evidenci dph [persistentní položka]")
+  public Boolean getOutofvat() {
+    return outofvat;
   }
 
-  public void setOutOfVAT(Boolean outOfVAT) {
-    this.outOfVAT = outOfVAT;
+  public void setOutofvat(Boolean outofvat) {
+    this.outofvat = outofvat;
   }
 
 
@@ -505,35 +550,35 @@ public class Vatindex   {
       return false;
     }
     Vatindex vatindex = (Vatindex) o;
-    return Objects.equals(this.displayName, vatindex.displayName) &&
-        Objects.equals(this.ID, vatindex.ID) &&
-        Objects.equals(this.classID, vatindex.classID) &&
-        Objects.equals(this.objVersion, vatindex.objVersion) &&
+    return Objects.equals(this.displayname, vatindex.displayname) &&
+        Objects.equals(this.id, vatindex.id) &&
+        Objects.equals(this.classid, vatindex.classid) &&
+        Objects.equals(this.objversion, vatindex.objversion) &&
         Objects.equals(this.hidden, vatindex.hidden) &&
         Objects.equals(this.code, vatindex.code) &&
         Objects.equals(this.tariff, vatindex.tariff) &&
         Objects.equals(this.income, vatindex.income) &&
         Objects.equals(this.description, vatindex.description) &&
-        Objects.equals(this.analyticalAccount, vatindex.analyticalAccount) &&
-        Objects.equals(this.vATRateID, vatindex.vATRateID) &&
-        Objects.equals(this.allowanceVATIndexID, vatindex.allowanceVATIndexID) &&
-        Objects.equals(this.reverseVATIndexID, vatindex.reverseVATIndexID) &&
-        Objects.equals(this.isCommon, vatindex.isCommon) &&
-        Objects.equals(this.isAllowance, vatindex.isAllowance) &&
-        Objects.equals(this.isReverse, vatindex.isReverse) &&
-        Objects.equals(this.countryID, vatindex.countryID) &&
-        Objects.equals(this.vATIndexType, vatindex.vATIndexType) &&
-        Objects.equals(this.legalNotice, vatindex.legalNotice) &&
-        Objects.equals(this.usingNotice, vatindex.usingNotice) &&
-        Objects.equals(this.forCustomsDeclaration, vatindex.forCustomsDeclaration) &&
-        Objects.equals(this.forDomesticReverseCharge, vatindex.forDomesticReverseCharge) &&
-        Objects.equals(this.forInsolventVATCorrection, vatindex.forInsolventVATCorrection) &&
-        Objects.equals(this.outOfVAT, vatindex.outOfVAT);
+        Objects.equals(this.analyticalaccount, vatindex.analyticalaccount) &&
+        Objects.equals(this.vatrateId, vatindex.vatrateId) &&
+        Objects.equals(this.allowancevatindexId, vatindex.allowancevatindexId) &&
+        Objects.equals(this.reversevatindexId, vatindex.reversevatindexId) &&
+        Objects.equals(this.iscommon, vatindex.iscommon) &&
+        Objects.equals(this.isallowance, vatindex.isallowance) &&
+        Objects.equals(this.isreverse, vatindex.isreverse) &&
+        Objects.equals(this.countryId, vatindex.countryId) &&
+        Objects.equals(this.vatindextype, vatindex.vatindextype) &&
+        Objects.equals(this.legalnotice, vatindex.legalnotice) &&
+        Objects.equals(this.usingnotice, vatindex.usingnotice) &&
+        Objects.equals(this.forcustomsdeclaration, vatindex.forcustomsdeclaration) &&
+        Objects.equals(this.fordomesticreversecharge, vatindex.fordomesticreversecharge) &&
+        Objects.equals(this.forinsolventvatcorrection, vatindex.forinsolventvatcorrection) &&
+        Objects.equals(this.outofvat, vatindex.outofvat);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, tariff, income, description, analyticalAccount, vATRateID, allowanceVATIndexID, reverseVATIndexID, isCommon, isAllowance, isReverse, countryID, vATIndexType, legalNotice, usingNotice, forCustomsDeclaration, forDomesticReverseCharge, forInsolventVATCorrection, outOfVAT);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, tariff, income, description, analyticalaccount, vatrateId, allowancevatindexId, reversevatindexId, iscommon, isallowance, isreverse, countryId, vatindextype, legalnotice, usingnotice, forcustomsdeclaration, fordomesticreversecharge, forinsolventvatcorrection, outofvat);
   }
 
   @Override
@@ -541,30 +586,30 @@ public class Vatindex   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Vatindex {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    tariff: ").append(toIndentedString(tariff)).append("\n");
     sb.append("    income: ").append(toIndentedString(income)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    analyticalAccount: ").append(toIndentedString(analyticalAccount)).append("\n");
-    sb.append("    vATRateID: ").append(toIndentedString(vATRateID)).append("\n");
-    sb.append("    allowanceVATIndexID: ").append(toIndentedString(allowanceVATIndexID)).append("\n");
-    sb.append("    reverseVATIndexID: ").append(toIndentedString(reverseVATIndexID)).append("\n");
-    sb.append("    isCommon: ").append(toIndentedString(isCommon)).append("\n");
-    sb.append("    isAllowance: ").append(toIndentedString(isAllowance)).append("\n");
-    sb.append("    isReverse: ").append(toIndentedString(isReverse)).append("\n");
-    sb.append("    countryID: ").append(toIndentedString(countryID)).append("\n");
-    sb.append("    vATIndexType: ").append(toIndentedString(vATIndexType)).append("\n");
-    sb.append("    legalNotice: ").append(toIndentedString(legalNotice)).append("\n");
-    sb.append("    usingNotice: ").append(toIndentedString(usingNotice)).append("\n");
-    sb.append("    forCustomsDeclaration: ").append(toIndentedString(forCustomsDeclaration)).append("\n");
-    sb.append("    forDomesticReverseCharge: ").append(toIndentedString(forDomesticReverseCharge)).append("\n");
-    sb.append("    forInsolventVATCorrection: ").append(toIndentedString(forInsolventVATCorrection)).append("\n");
-    sb.append("    outOfVAT: ").append(toIndentedString(outOfVAT)).append("\n");
+    sb.append("    analyticalaccount: ").append(toIndentedString(analyticalaccount)).append("\n");
+    sb.append("    vatrateId: ").append(toIndentedString(vatrateId)).append("\n");
+    sb.append("    allowancevatindexId: ").append(toIndentedString(allowancevatindexId)).append("\n");
+    sb.append("    reversevatindexId: ").append(toIndentedString(reversevatindexId)).append("\n");
+    sb.append("    iscommon: ").append(toIndentedString(iscommon)).append("\n");
+    sb.append("    isallowance: ").append(toIndentedString(isallowance)).append("\n");
+    sb.append("    isreverse: ").append(toIndentedString(isreverse)).append("\n");
+    sb.append("    countryId: ").append(toIndentedString(countryId)).append("\n");
+    sb.append("    vatindextype: ").append(toIndentedString(vatindextype)).append("\n");
+    sb.append("    legalnotice: ").append(toIndentedString(legalnotice)).append("\n");
+    sb.append("    usingnotice: ").append(toIndentedString(usingnotice)).append("\n");
+    sb.append("    forcustomsdeclaration: ").append(toIndentedString(forcustomsdeclaration)).append("\n");
+    sb.append("    fordomesticreversecharge: ").append(toIndentedString(fordomesticreversecharge)).append("\n");
+    sb.append("    forinsolventvatcorrection: ").append(toIndentedString(forinsolventvatcorrection)).append("\n");
+    sb.append("    outofvat: ").append(toIndentedString(outofvat)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,159 +34,204 @@ import java.util.Objects;
 /**
  * Servicedocumentoperation
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Servicedocumentoperation   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("OperationText")
-  private String operationText = null;
+  @SerializedName("operationtext")
+  private String operationtext = null;
 
-  @SerializedName("DocumentDefect_ID")
-  private String documentDefectID = null;
+  @SerializedName("documentdefect_id")
+  private String documentdefectId = null;
 
-  @SerializedName("ServiceOperation_ID")
-  private String serviceOperationID = null;
+  @SerializedName("serviceoperation_id")
+  private String serviceoperationId = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("WorkOperationTime")
-  private Double workOperationTime = null;
+  @SerializedName("workoperationtime")
+  private Double workoperationtime = null;
 
-  @SerializedName("DefectCode")
-  private String defectCode = null;
+  @SerializedName("defectcode")
+  private String defectcode = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Servisní list [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Servisní list [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Servicedocumentoperation posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Servicedocumentoperation displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Servicedocumentoperation operationText(String operationText) {
-    this.operationText = operationText;
+  public Servicedocumentoperation id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Operace textově [persistentní položka]
-   * @return operationText
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Operace textově [persistentní položka]")
-  public String getOperationText() {
-    return operationText;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setOperationText(String operationText) {
-    this.operationText = operationText;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Servicedocumentoperation documentDefectID(String documentDefectID) {
-    this.documentDefectID = documentDefectID;
+  public Servicedocumentoperation classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Závada; ID objektu Závada k serv.listu [persistentní položka]
-   * @return documentDefectID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Závada; ID objektu Závada k serv.listu [persistentní položka]")
-  public String getDocumentDefectID() {
-    return documentDefectID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setDocumentDefectID(String documentDefectID) {
-    this.documentDefectID = documentDefectID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Servicedocumentoperation serviceOperationID(String serviceOperationID) {
-    this.serviceOperationID = serviceOperationID;
+  public Servicedocumentoperation objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Operace; ID objektu Servisní operace [persistentní položka]
-   * @return serviceOperationID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Operace; ID objektu Servisní operace [persistentní položka]")
-  public String getServiceOperationID() {
-    return serviceOperationID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setServiceOperationID(String serviceOperationID) {
-    this.serviceOperationID = serviceOperationID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Servicedocumentoperation parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu servisní list [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu servisní list [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Servicedocumentoperation posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Servicedocumentoperation operationtext(String operationtext) {
+    this.operationtext = operationtext;
+    return this;
+  }
+
+   /**
+   * operace textově [persistentní položka]
+   * @return operationtext
+  **/
+  @ApiModelProperty(example = "null", value = "operace textově [persistentní položka]")
+  public String getOperationtext() {
+    return operationtext;
+  }
+
+  public void setOperationtext(String operationtext) {
+    this.operationtext = operationtext;
+  }
+
+  public Servicedocumentoperation documentdefectId(String documentdefectId) {
+    this.documentdefectId = documentdefectId;
+    return this;
+  }
+
+   /**
+   * závada; id objektu závada k serv.listu [persistentní položka]
+   * @return documentdefectId
+  **/
+  @ApiModelProperty(example = "null", value = "závada; id objektu závada k serv.listu [persistentní položka]")
+  public String getDocumentdefectId() {
+    return documentdefectId;
+  }
+
+  public void setDocumentdefectId(String documentdefectId) {
+    this.documentdefectId = documentdefectId;
+  }
+
+  public Servicedocumentoperation serviceoperationId(String serviceoperationId) {
+    this.serviceoperationId = serviceoperationId;
+    return this;
+  }
+
+   /**
+   * operace; id objektu servisní operace [persistentní položka]
+   * @return serviceoperationId
+  **/
+  @ApiModelProperty(example = "null", value = "operace; id objektu servisní operace [persistentní položka]")
+  public String getServiceoperationId() {
+    return serviceoperationId;
+  }
+
+  public void setServiceoperationId(String serviceoperationId) {
+    this.serviceoperationId = serviceoperationId;
   }
 
   public Servicedocumentoperation quantity(Double quantity) {
@@ -195,10 +240,10 @@ public class Servicedocumentoperation   {
   }
 
    /**
-   * Počet [persistentní položka]
+   * počet [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "počet [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -207,40 +252,40 @@ public class Servicedocumentoperation   {
     this.quantity = quantity;
   }
 
-  public Servicedocumentoperation workOperationTime(Double workOperationTime) {
-    this.workOperationTime = workOperationTime;
+  public Servicedocumentoperation workoperationtime(Double workoperationtime) {
+    this.workoperationtime = workoperationtime;
     return this;
   }
 
    /**
-   * Pracovní čas
-   * @return workOperationTime
+   * pracovní čas
+   * @return workoperationtime
   **/
-  @ApiModelProperty(example = "null", value = "Pracovní čas")
-  public Double getWorkOperationTime() {
-    return workOperationTime;
+  @ApiModelProperty(example = "null", value = "pracovní čas")
+  public Double getWorkoperationtime() {
+    return workoperationtime;
   }
 
-  public void setWorkOperationTime(Double workOperationTime) {
-    this.workOperationTime = workOperationTime;
+  public void setWorkoperationtime(Double workoperationtime) {
+    this.workoperationtime = workoperationtime;
   }
 
-  public Servicedocumentoperation defectCode(String defectCode) {
-    this.defectCode = defectCode;
+  public Servicedocumentoperation defectcode(String defectcode) {
+    this.defectcode = defectcode;
     return this;
   }
 
    /**
-   * K závadě
-   * @return defectCode
+   * k závadě
+   * @return defectcode
   **/
-  @ApiModelProperty(example = "null", value = "K závadě")
-  public String getDefectCode() {
-    return defectCode;
+  @ApiModelProperty(example = "null", value = "k závadě")
+  public String getDefectcode() {
+    return defectcode;
   }
 
-  public void setDefectCode(String defectCode) {
-    this.defectCode = defectCode;
+  public void setDefectcode(String defectcode) {
+    this.defectcode = defectcode;
   }
 
 
@@ -253,23 +298,23 @@ public class Servicedocumentoperation   {
       return false;
     }
     Servicedocumentoperation servicedocumentoperation = (Servicedocumentoperation) o;
-    return Objects.equals(this.displayName, servicedocumentoperation.displayName) &&
-        Objects.equals(this.ID, servicedocumentoperation.ID) &&
-        Objects.equals(this.classID, servicedocumentoperation.classID) &&
-        Objects.equals(this.objVersion, servicedocumentoperation.objVersion) &&
-        Objects.equals(this.parentID, servicedocumentoperation.parentID) &&
-        Objects.equals(this.posIndex, servicedocumentoperation.posIndex) &&
-        Objects.equals(this.operationText, servicedocumentoperation.operationText) &&
-        Objects.equals(this.documentDefectID, servicedocumentoperation.documentDefectID) &&
-        Objects.equals(this.serviceOperationID, servicedocumentoperation.serviceOperationID) &&
+    return Objects.equals(this.displayname, servicedocumentoperation.displayname) &&
+        Objects.equals(this.id, servicedocumentoperation.id) &&
+        Objects.equals(this.classid, servicedocumentoperation.classid) &&
+        Objects.equals(this.objversion, servicedocumentoperation.objversion) &&
+        Objects.equals(this.parentId, servicedocumentoperation.parentId) &&
+        Objects.equals(this.posindex, servicedocumentoperation.posindex) &&
+        Objects.equals(this.operationtext, servicedocumentoperation.operationtext) &&
+        Objects.equals(this.documentdefectId, servicedocumentoperation.documentdefectId) &&
+        Objects.equals(this.serviceoperationId, servicedocumentoperation.serviceoperationId) &&
         Objects.equals(this.quantity, servicedocumentoperation.quantity) &&
-        Objects.equals(this.workOperationTime, servicedocumentoperation.workOperationTime) &&
-        Objects.equals(this.defectCode, servicedocumentoperation.defectCode);
+        Objects.equals(this.workoperationtime, servicedocumentoperation.workoperationtime) &&
+        Objects.equals(this.defectcode, servicedocumentoperation.defectcode);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, operationText, documentDefectID, serviceOperationID, quantity, workOperationTime, defectCode);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, operationtext, documentdefectId, serviceoperationId, quantity, workoperationtime, defectcode);
   }
 
   @Override
@@ -277,18 +322,18 @@ public class Servicedocumentoperation   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Servicedocumentoperation {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    operationText: ").append(toIndentedString(operationText)).append("\n");
-    sb.append("    documentDefectID: ").append(toIndentedString(documentDefectID)).append("\n");
-    sb.append("    serviceOperationID: ").append(toIndentedString(serviceOperationID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    operationtext: ").append(toIndentedString(operationtext)).append("\n");
+    sb.append("    documentdefectId: ").append(toIndentedString(documentdefectId)).append("\n");
+    sb.append("    serviceoperationId: ").append(toIndentedString(serviceoperationId)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    workOperationTime: ").append(toIndentedString(workOperationTime)).append("\n");
-    sb.append("    defectCode: ").append(toIndentedString(defectCode)).append("\n");
+    sb.append("    workoperationtime: ").append(toIndentedString(workoperationtime)).append("\n");
+    sb.append("    defectcode: ").append(toIndentedString(defectcode)).append("\n");
     sb.append("}");
     return sb.toString();
   }

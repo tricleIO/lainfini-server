@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,393 +35,429 @@ import java.util.Objects;
 /**
  * Devdoc
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Devdoc   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("Product_ID")
-  private String productID = null;
+  @SerializedName("product_id")
+  private String productId = null;
 
-  @SerializedName("Part_ID")
-  private String partID = null;
+  @SerializedName("part_id")
+  private String partId = null;
 
-  @SerializedName("Version_ID")
-  private String versionID = null;
+  @SerializedName("version_id")
+  private String versionId = null;
 
-  @SerializedName("ShortDesc")
-  private String shortDesc = null;
+  @SerializedName("shortdesc")
+  private String shortdesc = null;
 
-  @SerializedName("Description_ID")
-  private Devdoc descriptionID = null;
+  @SerializedName("description_id")
+  private Devdoc descriptionId = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("Topics")
+  @SerializedName("topics")
   private String topics = null;
 
-  @SerializedName("DevBug_ID")
-  private String devBugID = null;
+  @SerializedName("devbug_id")
+  private String devbugId = null;
 
-  @SerializedName("DevDoc_ID")
-  private String devDocID = null;
+  @SerializedName("devdoc_id")
+  private String devdocId = null;
 
-  @SerializedName("EstimatedTime")
-  private Double estimatedTime = null;
+  @SerializedName("estimatedtime")
+  private Double estimatedtime = null;
 
-  @SerializedName("ElapsedTime")
-  private Double elapsedTime = null;
+  @SerializedName("elapsedtime")
+  private Double elapsedtime = null;
 
-  @SerializedName("RemainingTime")
-  private Double remainingTime = null;
+  @SerializedName("remainingtime")
+  private Double remainingtime = null;
 
-  @SerializedName("Priority")
+  @SerializedName("priority")
   private Integer priority = null;
 
-  @SerializedName("RemainingTimeValidityDate$DATE")
-  private DateTime remainingTimeValidityDateDATE = null;
+  @SerializedName("remainingtimevaliditydate$date")
+  private DateTime remainingtimevaliditydatedate = null;
 
-  @SerializedName("TestedBy_ID")
-  private String testedByID = null;
+  @SerializedName("testedby_id")
+  private String testedbyId = null;
 
-  @SerializedName("RelatedTo_ID")
-  private Devdoc relatedToID = null;
+  @SerializedName("relatedto_id")
+  private Devdoc relatedtoId = null;
 
-  @SerializedName("Tested")
+  @SerializedName("tested")
   private Integer tested = null;
 
-  @SerializedName("TestDate$DATE")
-  private DateTime testDateDATE = null;
+  @SerializedName("testdate$date")
+  private DateTime testdatedate = null;
 
-  @SerializedName("RelatedToHelp")
-  private Integer relatedToHelp = null;
+  @SerializedName("relatedtohelp")
+  private Integer relatedtohelp = null;
 
-  @SerializedName("DocumentedBy_ID")
-  private String documentedByID = null;
+  @SerializedName("documentedby_id")
+  private String documentedbyId = null;
 
-  @SerializedName("ReleaseInfo")
-  private String releaseInfo = null;
+  @SerializedName("releaseinfo")
+  private String releaseinfo = null;
+
+  public Devdoc displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
   }
 
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Devdoc docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Devdoc id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Devdoc periodID(String periodID) {
-    this.periodID = periodID;
+  public Devdoc classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Devdoc ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Devdoc objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Devdoc docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Devdoc docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Devdoc createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Devdoc periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Devdoc correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Devdoc ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Devdoc newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Devdoc docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Devdoc newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Devdoc createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Devdoc productID(String productID) {
-    this.productID = productID;
+  public Devdoc correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Produkt; ID objektu Vývojový produkt [persistentní položka]
-   * @return productID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Produkt; ID objektu Vývojový produkt [persistentní položka]")
-  public String getProductID() {
-    return productID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setProductID(String productID) {
-    this.productID = productID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Devdoc partID(String partID) {
-    this.partID = partID;
+  public Devdoc newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Část; ID objektu Část vývojových produktů [persistentní položka]
-   * @return partID
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Část; ID objektu Část vývojových produktů [persistentní položka]")
-  public String getPartID() {
-    return partID;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setPartID(String partID) {
-    this.partID = partID;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Devdoc versionID(String versionID) {
-    this.versionID = versionID;
+  public Devdoc newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * Verze; ID objektu Plánovaná verze vývojového produktu [persistentní položka]
-   * @return versionID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "Verze; ID objektu Plánovaná verze vývojového produktu [persistentní položka]")
-  public String getVersionID() {
-    return versionID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setVersionID(String versionID) {
-    this.versionID = versionID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Devdoc shortDesc(String shortDesc) {
-    this.shortDesc = shortDesc;
+  public Devdoc productId(String productId) {
+    this.productId = productId;
     return this;
   }
 
    /**
-   * Nadpis [persistentní položka]
-   * @return shortDesc
+   * produkt; id objektu vývojový produkt [persistentní položka]
+   * @return productId
   **/
-  @ApiModelProperty(example = "null", value = "Nadpis [persistentní položka]")
-  public String getShortDesc() {
-    return shortDesc;
+  @ApiModelProperty(example = "null", value = "produkt; id objektu vývojový produkt [persistentní položka]")
+  public String getProductId() {
+    return productId;
   }
 
-  public void setShortDesc(String shortDesc) {
-    this.shortDesc = shortDesc;
+  public void setProductId(String productId) {
+    this.productId = productId;
   }
 
-  public Devdoc descriptionID(Devdoc descriptionID) {
-    this.descriptionID = descriptionID;
+  public Devdoc partId(String partId) {
+    this.partId = partId;
     return this;
   }
 
    /**
-   * Get descriptionID
-   * @return descriptionID
+   * Část; id objektu Část vývojových produktů [persistentní položka]
+   * @return partId
+  **/
+  @ApiModelProperty(example = "null", value = "Část; id objektu Část vývojových produktů [persistentní položka]")
+  public String getPartId() {
+    return partId;
+  }
+
+  public void setPartId(String partId) {
+    this.partId = partId;
+  }
+
+  public Devdoc versionId(String versionId) {
+    this.versionId = versionId;
+    return this;
+  }
+
+   /**
+   * verze; id objektu plánovaná verze vývojového produktu [persistentní položka]
+   * @return versionId
+  **/
+  @ApiModelProperty(example = "null", value = "verze; id objektu plánovaná verze vývojového produktu [persistentní položka]")
+  public String getVersionId() {
+    return versionId;
+  }
+
+  public void setVersionId(String versionId) {
+    this.versionId = versionId;
+  }
+
+  public Devdoc shortdesc(String shortdesc) {
+    this.shortdesc = shortdesc;
+    return this;
+  }
+
+   /**
+   * nadpis [persistentní položka]
+   * @return shortdesc
+  **/
+  @ApiModelProperty(example = "null", value = "nadpis [persistentní položka]")
+  public String getShortdesc() {
+    return shortdesc;
+  }
+
+  public void setShortdesc(String shortdesc) {
+    this.shortdesc = shortdesc;
+  }
+
+  public Devdoc descriptionId(Devdoc descriptionId) {
+    this.descriptionId = descriptionId;
+    return this;
+  }
+
+   /**
+   * Get descriptionId
+   * @return descriptionId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Devdoc getDescriptionID() {
-    return descriptionID;
+  public Devdoc getDescriptionId() {
+    return descriptionId;
   }
 
-  public void setDescriptionID(Devdoc descriptionID) {
-    this.descriptionID = descriptionID;
+  public void setDescriptionId(Devdoc descriptionId) {
+    this.descriptionId = descriptionId;
   }
 
-  public Devdoc firmID(String firmID) {
-    this.firmID = firmID;
+  public Devdoc firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
   public Devdoc topics(String topics) {
@@ -430,10 +466,10 @@ public class Devdoc   {
   }
 
    /**
-   * Témata [persistentní položka]
+   * témata [persistentní položka]
    * @return topics
   **/
-  @ApiModelProperty(example = "null", value = "Témata [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "témata [persistentní položka]")
   public String getTopics() {
     return topics;
   }
@@ -442,94 +478,94 @@ public class Devdoc   {
     this.topics = topics;
   }
 
-  public Devdoc devBugID(String devBugID) {
-    this.devBugID = devBugID;
+  public Devdoc devbugId(String devbugId) {
+    this.devbugId = devbugId;
     return this;
   }
 
    /**
-   * Zdrojový požadavek; ID objektu Vývojový požadavek [persistentní položka]
-   * @return devBugID
+   * zdrojový požadavek; id objektu vývojový požadavek [persistentní položka]
+   * @return devbugId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojový požadavek; ID objektu Vývojový požadavek [persistentní položka]")
-  public String getDevBugID() {
-    return devBugID;
+  @ApiModelProperty(example = "null", value = "zdrojový požadavek; id objektu vývojový požadavek [persistentní položka]")
+  public String getDevbugId() {
+    return devbugId;
   }
 
-  public void setDevBugID(String devBugID) {
-    this.devBugID = devBugID;
+  public void setDevbugId(String devbugId) {
+    this.devbugId = devbugId;
   }
 
-  public Devdoc devDocID(String devDocID) {
-    this.devDocID = devDocID;
+  public Devdoc devdocId(String devdocId) {
+    this.devdocId = devdocId;
     return this;
   }
 
    /**
-   * Zdrojová dokumentace; ID objektu Vývojová dokumentace [persistentní položka]
-   * @return devDocID
+   * zdrojová dokumentace; id objektu vývojová dokumentace [persistentní položka]
+   * @return devdocId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová dokumentace; ID objektu Vývojová dokumentace [persistentní položka]")
-  public String getDevDocID() {
-    return devDocID;
+  @ApiModelProperty(example = "null", value = "zdrojová dokumentace; id objektu vývojová dokumentace [persistentní položka]")
+  public String getDevdocId() {
+    return devdocId;
   }
 
-  public void setDevDocID(String devDocID) {
-    this.devDocID = devDocID;
+  public void setDevdocId(String devdocId) {
+    this.devdocId = devdocId;
   }
 
-  public Devdoc estimatedTime(Double estimatedTime) {
-    this.estimatedTime = estimatedTime;
+  public Devdoc estimatedtime(Double estimatedtime) {
+    this.estimatedtime = estimatedtime;
     return this;
   }
 
    /**
-   * Odhadovaný čas [persistentní položka]
-   * @return estimatedTime
+   * odhadovaný čas [persistentní položka]
+   * @return estimatedtime
   **/
-  @ApiModelProperty(example = "null", value = "Odhadovaný čas [persistentní položka]")
-  public Double getEstimatedTime() {
-    return estimatedTime;
+  @ApiModelProperty(example = "null", value = "odhadovaný čas [persistentní položka]")
+  public Double getEstimatedtime() {
+    return estimatedtime;
   }
 
-  public void setEstimatedTime(Double estimatedTime) {
-    this.estimatedTime = estimatedTime;
+  public void setEstimatedtime(Double estimatedtime) {
+    this.estimatedtime = estimatedtime;
   }
 
-  public Devdoc elapsedTime(Double elapsedTime) {
-    this.elapsedTime = elapsedTime;
+  public Devdoc elapsedtime(Double elapsedtime) {
+    this.elapsedtime = elapsedtime;
     return this;
   }
 
    /**
-   * Strávený čas [persistentní položka]
-   * @return elapsedTime
+   * strávený čas [persistentní položka]
+   * @return elapsedtime
   **/
-  @ApiModelProperty(example = "null", value = "Strávený čas [persistentní položka]")
-  public Double getElapsedTime() {
-    return elapsedTime;
+  @ApiModelProperty(example = "null", value = "strávený čas [persistentní položka]")
+  public Double getElapsedtime() {
+    return elapsedtime;
   }
 
-  public void setElapsedTime(Double elapsedTime) {
-    this.elapsedTime = elapsedTime;
+  public void setElapsedtime(Double elapsedtime) {
+    this.elapsedtime = elapsedtime;
   }
 
-  public Devdoc remainingTime(Double remainingTime) {
-    this.remainingTime = remainingTime;
+  public Devdoc remainingtime(Double remainingtime) {
+    this.remainingtime = remainingtime;
     return this;
   }
 
    /**
-   * Zbývající čas [persistentní položka]
-   * @return remainingTime
+   * zbývající čas [persistentní položka]
+   * @return remainingtime
   **/
-  @ApiModelProperty(example = "null", value = "Zbývající čas [persistentní položka]")
-  public Double getRemainingTime() {
-    return remainingTime;
+  @ApiModelProperty(example = "null", value = "zbývající čas [persistentní položka]")
+  public Double getRemainingtime() {
+    return remainingtime;
   }
 
-  public void setRemainingTime(Double remainingTime) {
-    this.remainingTime = remainingTime;
+  public void setRemainingtime(Double remainingtime) {
+    this.remainingtime = remainingtime;
   }
 
   public Devdoc priority(Integer priority) {
@@ -538,10 +574,10 @@ public class Devdoc   {
   }
 
    /**
-   * Priorita [persistentní položka]
+   * priorita [persistentní položka]
    * @return priority
   **/
-  @ApiModelProperty(example = "null", value = "Priorita [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "priorita [persistentní položka]")
   public Integer getPriority() {
     return priority;
   }
@@ -550,49 +586,58 @@ public class Devdoc   {
     this.priority = priority;
   }
 
-   /**
-   * Datum platnosti
-   * @return remainingTimeValidityDateDATE
-  **/
-  @ApiModelProperty(example = "null", value = "Datum platnosti")
-  public DateTime getRemainingTimeValidityDateDATE() {
-    return remainingTimeValidityDateDATE;
-  }
-
-  public Devdoc testedByID(String testedByID) {
-    this.testedByID = testedByID;
+  public Devdoc remainingtimevaliditydatedate(DateTime remainingtimevaliditydatedate) {
+    this.remainingtimevaliditydatedate = remainingtimevaliditydatedate;
     return this;
   }
 
    /**
-   * Tester; ID objektu Uživatel [persistentní položka]
-   * @return testedByID
+   * datum platnosti
+   * @return remainingtimevaliditydatedate
   **/
-  @ApiModelProperty(example = "null", value = "Tester; ID objektu Uživatel [persistentní položka]")
-  public String getTestedByID() {
-    return testedByID;
+  @ApiModelProperty(example = "null", value = "datum platnosti")
+  public DateTime getRemainingtimevaliditydatedate() {
+    return remainingtimevaliditydatedate;
   }
 
-  public void setTestedByID(String testedByID) {
-    this.testedByID = testedByID;
+  public void setRemainingtimevaliditydatedate(DateTime remainingtimevaliditydatedate) {
+    this.remainingtimevaliditydatedate = remainingtimevaliditydatedate;
   }
 
-  public Devdoc relatedToID(Devdoc relatedToID) {
-    this.relatedToID = relatedToID;
+  public Devdoc testedbyId(String testedbyId) {
+    this.testedbyId = testedbyId;
     return this;
   }
 
    /**
-   * Get relatedToID
-   * @return relatedToID
+   * tester; id objektu uživatel [persistentní položka]
+   * @return testedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "tester; id objektu uživatel [persistentní položka]")
+  public String getTestedbyId() {
+    return testedbyId;
+  }
+
+  public void setTestedbyId(String testedbyId) {
+    this.testedbyId = testedbyId;
+  }
+
+  public Devdoc relatedtoId(Devdoc relatedtoId) {
+    this.relatedtoId = relatedtoId;
+    return this;
+  }
+
+   /**
+   * Get relatedtoId
+   * @return relatedtoId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Devdoc getRelatedToID() {
-    return relatedToID;
+  public Devdoc getRelatedtoId() {
+    return relatedtoId;
   }
 
-  public void setRelatedToID(Devdoc relatedToID) {
-    this.relatedToID = relatedToID;
+  public void setRelatedtoId(Devdoc relatedtoId) {
+    this.relatedtoId = relatedtoId;
   }
 
   public Devdoc tested(Integer tested) {
@@ -601,10 +646,10 @@ public class Devdoc   {
   }
 
    /**
-   * Stav [persistentní položka]
+   * stav [persistentní položka]
    * @return tested
   **/
-  @ApiModelProperty(example = "null", value = "Stav [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "stav [persistentní položka]")
   public Integer getTested() {
     return tested;
   }
@@ -613,76 +658,76 @@ public class Devdoc   {
     this.tested = tested;
   }
 
-  public Devdoc testDateDATE(DateTime testDateDATE) {
-    this.testDateDATE = testDateDATE;
+  public Devdoc testdatedate(DateTime testdatedate) {
+    this.testdatedate = testdatedate;
     return this;
   }
 
    /**
-   * Dat.testování [persistentní položka]
-   * @return testDateDATE
+   * dat.testování [persistentní položka]
+   * @return testdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Dat.testování [persistentní položka]")
-  public DateTime getTestDateDATE() {
-    return testDateDATE;
+  @ApiModelProperty(example = "null", value = "dat.testování [persistentní položka]")
+  public DateTime getTestdatedate() {
+    return testdatedate;
   }
 
-  public void setTestDateDATE(DateTime testDateDATE) {
-    this.testDateDATE = testDateDATE;
+  public void setTestdatedate(DateTime testdatedate) {
+    this.testdatedate = testdatedate;
   }
 
-  public Devdoc relatedToHelp(Integer relatedToHelp) {
-    this.relatedToHelp = relatedToHelp;
+  public Devdoc relatedtohelp(Integer relatedtohelp) {
+    this.relatedtohelp = relatedtohelp;
     return this;
   }
 
    /**
-   * Vazba na help [persistentní položka]
-   * @return relatedToHelp
+   * vazba na help [persistentní položka]
+   * @return relatedtohelp
   **/
-  @ApiModelProperty(example = "null", value = "Vazba na help [persistentní položka]")
-  public Integer getRelatedToHelp() {
-    return relatedToHelp;
+  @ApiModelProperty(example = "null", value = "vazba na help [persistentní položka]")
+  public Integer getRelatedtohelp() {
+    return relatedtohelp;
   }
 
-  public void setRelatedToHelp(Integer relatedToHelp) {
-    this.relatedToHelp = relatedToHelp;
+  public void setRelatedtohelp(Integer relatedtohelp) {
+    this.relatedtohelp = relatedtohelp;
   }
 
-  public Devdoc documentedByID(String documentedByID) {
-    this.documentedByID = documentedByID;
+  public Devdoc documentedbyId(String documentedbyId) {
+    this.documentedbyId = documentedbyId;
     return this;
   }
 
    /**
-   * Autor dokumentace; ID objektu Uživatel [persistentní položka]
-   * @return documentedByID
+   * autor dokumentace; id objektu uživatel [persistentní položka]
+   * @return documentedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Autor dokumentace; ID objektu Uživatel [persistentní položka]")
-  public String getDocumentedByID() {
-    return documentedByID;
+  @ApiModelProperty(example = "null", value = "autor dokumentace; id objektu uživatel [persistentní položka]")
+  public String getDocumentedbyId() {
+    return documentedbyId;
   }
 
-  public void setDocumentedByID(String documentedByID) {
-    this.documentedByID = documentedByID;
+  public void setDocumentedbyId(String documentedbyId) {
+    this.documentedbyId = documentedbyId;
   }
 
-  public Devdoc releaseInfo(String releaseInfo) {
-    this.releaseInfo = releaseInfo;
+  public Devdoc releaseinfo(String releaseinfo) {
+    this.releaseinfo = releaseinfo;
     return this;
   }
 
    /**
-   * Ke zveřejnění [persistentní položka]
-   * @return releaseInfo
+   * ke zveřejnění [persistentní položka]
+   * @return releaseinfo
   **/
-  @ApiModelProperty(example = "null", value = "Ke zveřejnění [persistentní položka]")
-  public String getReleaseInfo() {
-    return releaseInfo;
+  @ApiModelProperty(example = "null", value = "ke zveřejnění [persistentní položka]")
+  public String getReleaseinfo() {
+    return releaseinfo;
   }
 
-  public void setReleaseInfo(String releaseInfo) {
-    this.releaseInfo = releaseInfo;
+  public void setReleaseinfo(String releaseinfo) {
+    this.releaseinfo = releaseinfo;
   }
 
 
@@ -695,44 +740,44 @@ public class Devdoc   {
       return false;
     }
     Devdoc devdoc = (Devdoc) o;
-    return Objects.equals(this.displayName, devdoc.displayName) &&
-        Objects.equals(this.ID, devdoc.ID) &&
-        Objects.equals(this.classID, devdoc.classID) &&
-        Objects.equals(this.objVersion, devdoc.objVersion) &&
-        Objects.equals(this.docQueueID, devdoc.docQueueID) &&
-        Objects.equals(this.periodID, devdoc.periodID) &&
-        Objects.equals(this.ordNumber, devdoc.ordNumber) &&
-        Objects.equals(this.docDateDATE, devdoc.docDateDATE) &&
-        Objects.equals(this.createdByID, devdoc.createdByID) &&
-        Objects.equals(this.correctedByID, devdoc.correctedByID) &&
-        Objects.equals(this.newRelatedType, devdoc.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, devdoc.newRelatedDocumentID) &&
-        Objects.equals(this.productID, devdoc.productID) &&
-        Objects.equals(this.partID, devdoc.partID) &&
-        Objects.equals(this.versionID, devdoc.versionID) &&
-        Objects.equals(this.shortDesc, devdoc.shortDesc) &&
-        Objects.equals(this.descriptionID, devdoc.descriptionID) &&
-        Objects.equals(this.firmID, devdoc.firmID) &&
+    return Objects.equals(this.displayname, devdoc.displayname) &&
+        Objects.equals(this.id, devdoc.id) &&
+        Objects.equals(this.classid, devdoc.classid) &&
+        Objects.equals(this.objversion, devdoc.objversion) &&
+        Objects.equals(this.docqueueId, devdoc.docqueueId) &&
+        Objects.equals(this.periodId, devdoc.periodId) &&
+        Objects.equals(this.ordnumber, devdoc.ordnumber) &&
+        Objects.equals(this.docdatedate, devdoc.docdatedate) &&
+        Objects.equals(this.createdbyId, devdoc.createdbyId) &&
+        Objects.equals(this.correctedbyId, devdoc.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, devdoc.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, devdoc.newrelateddocumentId) &&
+        Objects.equals(this.productId, devdoc.productId) &&
+        Objects.equals(this.partId, devdoc.partId) &&
+        Objects.equals(this.versionId, devdoc.versionId) &&
+        Objects.equals(this.shortdesc, devdoc.shortdesc) &&
+        Objects.equals(this.descriptionId, devdoc.descriptionId) &&
+        Objects.equals(this.firmId, devdoc.firmId) &&
         Objects.equals(this.topics, devdoc.topics) &&
-        Objects.equals(this.devBugID, devdoc.devBugID) &&
-        Objects.equals(this.devDocID, devdoc.devDocID) &&
-        Objects.equals(this.estimatedTime, devdoc.estimatedTime) &&
-        Objects.equals(this.elapsedTime, devdoc.elapsedTime) &&
-        Objects.equals(this.remainingTime, devdoc.remainingTime) &&
+        Objects.equals(this.devbugId, devdoc.devbugId) &&
+        Objects.equals(this.devdocId, devdoc.devdocId) &&
+        Objects.equals(this.estimatedtime, devdoc.estimatedtime) &&
+        Objects.equals(this.elapsedtime, devdoc.elapsedtime) &&
+        Objects.equals(this.remainingtime, devdoc.remainingtime) &&
         Objects.equals(this.priority, devdoc.priority) &&
-        Objects.equals(this.remainingTimeValidityDateDATE, devdoc.remainingTimeValidityDateDATE) &&
-        Objects.equals(this.testedByID, devdoc.testedByID) &&
-        Objects.equals(this.relatedToID, devdoc.relatedToID) &&
+        Objects.equals(this.remainingtimevaliditydatedate, devdoc.remainingtimevaliditydatedate) &&
+        Objects.equals(this.testedbyId, devdoc.testedbyId) &&
+        Objects.equals(this.relatedtoId, devdoc.relatedtoId) &&
         Objects.equals(this.tested, devdoc.tested) &&
-        Objects.equals(this.testDateDATE, devdoc.testDateDATE) &&
-        Objects.equals(this.relatedToHelp, devdoc.relatedToHelp) &&
-        Objects.equals(this.documentedByID, devdoc.documentedByID) &&
-        Objects.equals(this.releaseInfo, devdoc.releaseInfo);
+        Objects.equals(this.testdatedate, devdoc.testdatedate) &&
+        Objects.equals(this.relatedtohelp, devdoc.relatedtohelp) &&
+        Objects.equals(this.documentedbyId, devdoc.documentedbyId) &&
+        Objects.equals(this.releaseinfo, devdoc.releaseinfo);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, productID, partID, versionID, shortDesc, descriptionID, firmID, topics, devBugID, devDocID, estimatedTime, elapsedTime, remainingTime, priority, remainingTimeValidityDateDATE, testedByID, relatedToID, tested, testDateDATE, relatedToHelp, documentedByID, releaseInfo);
+    return Objects.hash(displayname, id, classid, objversion, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, productId, partId, versionId, shortdesc, descriptionId, firmId, topics, devbugId, devdocId, estimatedtime, elapsedtime, remainingtime, priority, remainingtimevaliditydatedate, testedbyId, relatedtoId, tested, testdatedate, relatedtohelp, documentedbyId, releaseinfo);
   }
 
   @Override
@@ -740,39 +785,39 @@ public class Devdoc   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Devdoc {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    productID: ").append(toIndentedString(productID)).append("\n");
-    sb.append("    partID: ").append(toIndentedString(partID)).append("\n");
-    sb.append("    versionID: ").append(toIndentedString(versionID)).append("\n");
-    sb.append("    shortDesc: ").append(toIndentedString(shortDesc)).append("\n");
-    sb.append("    descriptionID: ").append(toIndentedString(descriptionID)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
+    sb.append("    partId: ").append(toIndentedString(partId)).append("\n");
+    sb.append("    versionId: ").append(toIndentedString(versionId)).append("\n");
+    sb.append("    shortdesc: ").append(toIndentedString(shortdesc)).append("\n");
+    sb.append("    descriptionId: ").append(toIndentedString(descriptionId)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
     sb.append("    topics: ").append(toIndentedString(topics)).append("\n");
-    sb.append("    devBugID: ").append(toIndentedString(devBugID)).append("\n");
-    sb.append("    devDocID: ").append(toIndentedString(devDocID)).append("\n");
-    sb.append("    estimatedTime: ").append(toIndentedString(estimatedTime)).append("\n");
-    sb.append("    elapsedTime: ").append(toIndentedString(elapsedTime)).append("\n");
-    sb.append("    remainingTime: ").append(toIndentedString(remainingTime)).append("\n");
+    sb.append("    devbugId: ").append(toIndentedString(devbugId)).append("\n");
+    sb.append("    devdocId: ").append(toIndentedString(devdocId)).append("\n");
+    sb.append("    estimatedtime: ").append(toIndentedString(estimatedtime)).append("\n");
+    sb.append("    elapsedtime: ").append(toIndentedString(elapsedtime)).append("\n");
+    sb.append("    remainingtime: ").append(toIndentedString(remainingtime)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
-    sb.append("    remainingTimeValidityDateDATE: ").append(toIndentedString(remainingTimeValidityDateDATE)).append("\n");
-    sb.append("    testedByID: ").append(toIndentedString(testedByID)).append("\n");
-    sb.append("    relatedToID: ").append(toIndentedString(relatedToID)).append("\n");
+    sb.append("    remainingtimevaliditydatedate: ").append(toIndentedString(remainingtimevaliditydatedate)).append("\n");
+    sb.append("    testedbyId: ").append(toIndentedString(testedbyId)).append("\n");
+    sb.append("    relatedtoId: ").append(toIndentedString(relatedtoId)).append("\n");
     sb.append("    tested: ").append(toIndentedString(tested)).append("\n");
-    sb.append("    testDateDATE: ").append(toIndentedString(testDateDATE)).append("\n");
-    sb.append("    relatedToHelp: ").append(toIndentedString(relatedToHelp)).append("\n");
-    sb.append("    documentedByID: ").append(toIndentedString(documentedByID)).append("\n");
-    sb.append("    releaseInfo: ").append(toIndentedString(releaseInfo)).append("\n");
+    sb.append("    testdatedate: ").append(toIndentedString(testdatedate)).append("\n");
+    sb.append("    relatedtohelp: ").append(toIndentedString(relatedtohelp)).append("\n");
+    sb.append("    documentedbyId: ").append(toIndentedString(documentedbyId)).append("\n");
+    sb.append("    releaseinfo: ").append(toIndentedString(releaseinfo)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,108 +37,144 @@ import java.util.Objects;
 /**
  * Paymentorder
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Paymentorder   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Paymentorderrow> rows = new ArrayList<Paymentorderrow>();
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("DueDate$DATE")
-  private DateTime dueDateDATE = null;
+  @SerializedName("duedate$date")
+  private DateTime duedatedate = null;
 
-  @SerializedName("SentDate$DATE")
-  private DateTime sentDateDATE = null;
+  @SerializedName("sentdate$date")
+  private DateTime sentdatedate = null;
 
-  @SerializedName("BankAccount_ID")
-  private String bankAccountID = null;
+  @SerializedName("bankaccount_id")
+  private String bankaccountId = null;
 
-  @SerializedName("TotalAmount")
-  private Double totalAmount = null;
+  @SerializedName("totalamount")
+  private Double totalamount = null;
 
-  @SerializedName("RowsCurrency")
-  private String rowsCurrency = null;
+  @SerializedName("rowscurrency")
+  private String rowscurrency = null;
 
-  @SerializedName("Sent")
+  @SerializedName("sent")
   private Boolean sent = null;
 
-  @SerializedName("HomeBankUsed")
-  private Boolean homeBankUsed = null;
+  @SerializedName("homebankused")
+  private Boolean homebankused = null;
 
-  @SerializedName("CreatedAt$DATE")
-  private DateTime createdAtDATE = null;
+  @SerializedName("createdat$date")
+  private DateTime createdatdate = null;
 
-  @SerializedName("CorrectedAt$DATE")
-  private DateTime correctedAtDATE = null;
+  @SerializedName("correctedat$date")
+  private DateTime correctedatdate = null;
+
+  public Paymentorder displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Paymentorder id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Paymentorder classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Paymentorder objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Paymentorder rows(List<Paymentorderrow> rows) {
@@ -152,10 +188,10 @@ public class Paymentorder   {
   }
 
    /**
-   * Řádky; kolekce BO Platební příkaz - řádek [nepersistentní položka]
+   * Řádky; kolekce bo platební příkaz - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Platební příkaz - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo platební příkaz - řádek [nepersistentní položka]")
   public List<Paymentorderrow> getRows() {
     return rows;
   }
@@ -164,238 +200,238 @@ public class Paymentorder   {
     this.rows = rows;
   }
 
-  public Paymentorder docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Paymentorder docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Paymentorder periodID(String periodID) {
-    this.periodID = periodID;
+  public Paymentorder periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Paymentorder ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Paymentorder ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Paymentorder docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Paymentorder docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Paymentorder createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Paymentorder createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Paymentorder correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Paymentorder correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Paymentorder newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Paymentorder newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Paymentorder newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Paymentorder newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Paymentorder dueDateDATE(DateTime dueDateDATE) {
-    this.dueDateDATE = dueDateDATE;
+  public Paymentorder duedatedate(DateTime duedatedate) {
+    this.duedatedate = duedatedate;
     return this;
   }
 
    /**
-   * Datum spl. [persistentní položka]
-   * @return dueDateDATE
+   * datum spl. [persistentní položka]
+   * @return duedatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum spl. [persistentní položka]")
-  public DateTime getDueDateDATE() {
-    return dueDateDATE;
+  @ApiModelProperty(example = "null", value = "datum spl. [persistentní položka]")
+  public DateTime getDuedatedate() {
+    return duedatedate;
   }
 
-  public void setDueDateDATE(DateTime dueDateDATE) {
-    this.dueDateDATE = dueDateDATE;
+  public void setDuedatedate(DateTime duedatedate) {
+    this.duedatedate = duedatedate;
   }
 
-  public Paymentorder sentDateDATE(DateTime sentDateDATE) {
-    this.sentDateDATE = sentDateDATE;
+  public Paymentorder sentdatedate(DateTime sentdatedate) {
+    this.sentdatedate = sentdatedate;
     return this;
   }
 
    /**
-   * Datum odesl. [persistentní položka]
-   * @return sentDateDATE
+   * datum odesl. [persistentní položka]
+   * @return sentdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum odesl. [persistentní položka]")
-  public DateTime getSentDateDATE() {
-    return sentDateDATE;
+  @ApiModelProperty(example = "null", value = "datum odesl. [persistentní položka]")
+  public DateTime getSentdatedate() {
+    return sentdatedate;
   }
 
-  public void setSentDateDATE(DateTime sentDateDATE) {
-    this.sentDateDATE = sentDateDATE;
+  public void setSentdatedate(DateTime sentdatedate) {
+    this.sentdatedate = sentdatedate;
   }
 
-  public Paymentorder bankAccountID(String bankAccountID) {
-    this.bankAccountID = bankAccountID;
+  public Paymentorder bankaccountId(String bankaccountId) {
+    this.bankaccountId = bankaccountId;
     return this;
   }
 
    /**
-   * Vlastní účet; ID objektu Bankovní účet [persistentní položka]
-   * @return bankAccountID
+   * vlastní účet; id objektu bankovní účet [persistentní položka]
+   * @return bankaccountId
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní účet; ID objektu Bankovní účet [persistentní položka]")
-  public String getBankAccountID() {
-    return bankAccountID;
+  @ApiModelProperty(example = "null", value = "vlastní účet; id objektu bankovní účet [persistentní položka]")
+  public String getBankaccountId() {
+    return bankaccountId;
   }
 
-  public void setBankAccountID(String bankAccountID) {
-    this.bankAccountID = bankAccountID;
+  public void setBankaccountId(String bankaccountId) {
+    this.bankaccountId = bankaccountId;
   }
 
-  public Paymentorder totalAmount(Double totalAmount) {
-    this.totalAmount = totalAmount;
+  public Paymentorder totalamount(Double totalamount) {
+    this.totalamount = totalamount;
     return this;
   }
 
    /**
-   * Celková částka
-   * @return totalAmount
+   * celková částka
+   * @return totalamount
   **/
-  @ApiModelProperty(example = "null", value = "Celková částka")
-  public Double getTotalAmount() {
-    return totalAmount;
+  @ApiModelProperty(example = "null", value = "celková částka")
+  public Double getTotalamount() {
+    return totalamount;
   }
 
-  public void setTotalAmount(Double totalAmount) {
-    this.totalAmount = totalAmount;
+  public void setTotalamount(Double totalamount) {
+    this.totalamount = totalamount;
   }
 
-  public Paymentorder rowsCurrency(String rowsCurrency) {
-    this.rowsCurrency = rowsCurrency;
+  public Paymentorder rowscurrency(String rowscurrency) {
+    this.rowscurrency = rowscurrency;
     return this;
   }
 
    /**
-   * Měna řádků
-   * @return rowsCurrency
+   * měna řádků
+   * @return rowscurrency
   **/
-  @ApiModelProperty(example = "null", value = "Měna řádků")
-  public String getRowsCurrency() {
-    return rowsCurrency;
+  @ApiModelProperty(example = "null", value = "měna řádků")
+  public String getRowscurrency() {
+    return rowscurrency;
   }
 
-  public void setRowsCurrency(String rowsCurrency) {
-    this.rowsCurrency = rowsCurrency;
+  public void setRowscurrency(String rowscurrency) {
+    this.rowscurrency = rowscurrency;
   }
 
   public Paymentorder sent(Boolean sent) {
@@ -404,10 +440,10 @@ public class Paymentorder   {
   }
 
    /**
-   * Odesláno [persistentní položka]
+   * odesláno [persistentní položka]
    * @return sent
   **/
-  @ApiModelProperty(example = "null", value = "Odesláno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "odesláno [persistentní položka]")
   public Boolean getSent() {
     return sent;
   }
@@ -416,58 +452,58 @@ public class Paymentorder   {
     this.sent = sent;
   }
 
-  public Paymentorder homeBankUsed(Boolean homeBankUsed) {
-    this.homeBankUsed = homeBankUsed;
+  public Paymentorder homebankused(Boolean homebankused) {
+    this.homebankused = homebankused;
     return this;
   }
 
    /**
-   * Homebanking použit [persistentní položka]
-   * @return homeBankUsed
+   * homebanking použit [persistentní položka]
+   * @return homebankused
   **/
-  @ApiModelProperty(example = "null", value = "Homebanking použit [persistentní položka]")
-  public Boolean getHomeBankUsed() {
-    return homeBankUsed;
+  @ApiModelProperty(example = "null", value = "homebanking použit [persistentní položka]")
+  public Boolean getHomebankused() {
+    return homebankused;
   }
 
-  public void setHomeBankUsed(Boolean homeBankUsed) {
-    this.homeBankUsed = homeBankUsed;
+  public void setHomebankused(Boolean homebankused) {
+    this.homebankused = homebankused;
   }
 
-  public Paymentorder createdAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public Paymentorder createdatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
     return this;
   }
 
    /**
-   * Vytvořeno [persistentní položka]
-   * @return createdAtDATE
+   * vytvořeno [persistentní položka]
+   * @return createdatdate
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořeno [persistentní položka]")
-  public DateTime getCreatedAtDATE() {
-    return createdAtDATE;
+  @ApiModelProperty(example = "null", value = "vytvořeno [persistentní položka]")
+  public DateTime getCreatedatdate() {
+    return createdatdate;
   }
 
-  public void setCreatedAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public void setCreatedatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
   }
 
-  public Paymentorder correctedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public Paymentorder correctedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
     return this;
   }
 
    /**
-   * Opraveno [persistentní položka]
-   * @return correctedAtDATE
+   * opraveno [persistentní položka]
+   * @return correctedatdate
   **/
-  @ApiModelProperty(example = "null", value = "Opraveno [persistentní položka]")
-  public DateTime getCorrectedAtDATE() {
-    return correctedAtDATE;
+  @ApiModelProperty(example = "null", value = "opraveno [persistentní položka]")
+  public DateTime getCorrectedatdate() {
+    return correctedatdate;
   }
 
-  public void setCorrectedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public void setCorrectedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
   }
 
 
@@ -480,33 +516,33 @@ public class Paymentorder   {
       return false;
     }
     Paymentorder paymentorder = (Paymentorder) o;
-    return Objects.equals(this.displayName, paymentorder.displayName) &&
-        Objects.equals(this.ID, paymentorder.ID) &&
-        Objects.equals(this.classID, paymentorder.classID) &&
-        Objects.equals(this.objVersion, paymentorder.objVersion) &&
+    return Objects.equals(this.displayname, paymentorder.displayname) &&
+        Objects.equals(this.id, paymentorder.id) &&
+        Objects.equals(this.classid, paymentorder.classid) &&
+        Objects.equals(this.objversion, paymentorder.objversion) &&
         Objects.equals(this.rows, paymentorder.rows) &&
-        Objects.equals(this.docQueueID, paymentorder.docQueueID) &&
-        Objects.equals(this.periodID, paymentorder.periodID) &&
-        Objects.equals(this.ordNumber, paymentorder.ordNumber) &&
-        Objects.equals(this.docDateDATE, paymentorder.docDateDATE) &&
-        Objects.equals(this.createdByID, paymentorder.createdByID) &&
-        Objects.equals(this.correctedByID, paymentorder.correctedByID) &&
-        Objects.equals(this.newRelatedType, paymentorder.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, paymentorder.newRelatedDocumentID) &&
-        Objects.equals(this.dueDateDATE, paymentorder.dueDateDATE) &&
-        Objects.equals(this.sentDateDATE, paymentorder.sentDateDATE) &&
-        Objects.equals(this.bankAccountID, paymentorder.bankAccountID) &&
-        Objects.equals(this.totalAmount, paymentorder.totalAmount) &&
-        Objects.equals(this.rowsCurrency, paymentorder.rowsCurrency) &&
+        Objects.equals(this.docqueueId, paymentorder.docqueueId) &&
+        Objects.equals(this.periodId, paymentorder.periodId) &&
+        Objects.equals(this.ordnumber, paymentorder.ordnumber) &&
+        Objects.equals(this.docdatedate, paymentorder.docdatedate) &&
+        Objects.equals(this.createdbyId, paymentorder.createdbyId) &&
+        Objects.equals(this.correctedbyId, paymentorder.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, paymentorder.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, paymentorder.newrelateddocumentId) &&
+        Objects.equals(this.duedatedate, paymentorder.duedatedate) &&
+        Objects.equals(this.sentdatedate, paymentorder.sentdatedate) &&
+        Objects.equals(this.bankaccountId, paymentorder.bankaccountId) &&
+        Objects.equals(this.totalamount, paymentorder.totalamount) &&
+        Objects.equals(this.rowscurrency, paymentorder.rowscurrency) &&
         Objects.equals(this.sent, paymentorder.sent) &&
-        Objects.equals(this.homeBankUsed, paymentorder.homeBankUsed) &&
-        Objects.equals(this.createdAtDATE, paymentorder.createdAtDATE) &&
-        Objects.equals(this.correctedAtDATE, paymentorder.correctedAtDATE);
+        Objects.equals(this.homebankused, paymentorder.homebankused) &&
+        Objects.equals(this.createdatdate, paymentorder.createdatdate) &&
+        Objects.equals(this.correctedatdate, paymentorder.correctedatdate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, dueDateDATE, sentDateDATE, bankAccountID, totalAmount, rowsCurrency, sent, homeBankUsed, createdAtDATE, correctedAtDATE);
+    return Objects.hash(displayname, id, classid, objversion, rows, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, duedatedate, sentdatedate, bankaccountId, totalamount, rowscurrency, sent, homebankused, createdatdate, correctedatdate);
   }
 
   @Override
@@ -514,28 +550,28 @@ public class Paymentorder   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Paymentorder {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    dueDateDATE: ").append(toIndentedString(dueDateDATE)).append("\n");
-    sb.append("    sentDateDATE: ").append(toIndentedString(sentDateDATE)).append("\n");
-    sb.append("    bankAccountID: ").append(toIndentedString(bankAccountID)).append("\n");
-    sb.append("    totalAmount: ").append(toIndentedString(totalAmount)).append("\n");
-    sb.append("    rowsCurrency: ").append(toIndentedString(rowsCurrency)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    duedatedate: ").append(toIndentedString(duedatedate)).append("\n");
+    sb.append("    sentdatedate: ").append(toIndentedString(sentdatedate)).append("\n");
+    sb.append("    bankaccountId: ").append(toIndentedString(bankaccountId)).append("\n");
+    sb.append("    totalamount: ").append(toIndentedString(totalamount)).append("\n");
+    sb.append("    rowscurrency: ").append(toIndentedString(rowscurrency)).append("\n");
     sb.append("    sent: ").append(toIndentedString(sent)).append("\n");
-    sb.append("    homeBankUsed: ").append(toIndentedString(homeBankUsed)).append("\n");
-    sb.append("    createdAtDATE: ").append(toIndentedString(createdAtDATE)).append("\n");
-    sb.append("    correctedAtDATE: ").append(toIndentedString(correctedAtDATE)).append("\n");
+    sb.append("    homebankused: ").append(toIndentedString(homebankused)).append("\n");
+    sb.append("    createdatdate: ").append(toIndentedString(createdatdate)).append("\n");
+    sb.append("    correctedatdate: ").append(toIndentedString(correctedatdate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

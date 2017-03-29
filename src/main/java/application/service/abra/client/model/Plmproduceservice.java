@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,285 +35,321 @@ import java.util.Objects;
 /**
  * Plmproduceservice
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmproduceservice   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("SN_ID")
-  private String SN_ID = null;
+  @SerializedName("sn_id")
+  private String snId = null;
 
-  @SerializedName("FaultType_ID")
-  private String faultTypeID = null;
+  @SerializedName("faulttype_id")
+  private String faulttypeId = null;
 
-  @SerializedName("JOInputItem_ID")
-  private String jOInputItemID = null;
+  @SerializedName("joinputitem_id")
+  private String joinputitemId = null;
 
-  @SerializedName("Routine_ID")
-  private String routineID = null;
+  @SerializedName("routine_id")
+  private String routineId = null;
 
-  @SerializedName("ServicedBy_ID")
-  private String servicedByID = null;
+  @SerializedName("servicedby_id")
+  private String servicedbyId = null;
 
-  @SerializedName("ServicedAt$DATE")
-  private DateTime servicedAtDATE = null;
+  @SerializedName("servicedat$date")
+  private DateTime servicedatdate = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("Operation_ID")
-  private String operationID = null;
+  @SerializedName("operation_id")
+  private String operationId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("SourceRoutine_ID")
-  private String sourceRoutineID = null;
+  @SerializedName("sourceroutine_id")
+  private String sourceroutineId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Plmproduceservice SN_ID(String SN_ID) {
-    this.SN_ID = SN_ID;
+  public Plmproduceservice displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Sériové číslo; ID objektu VP - sériové číslo [persistentní položka]
-   * @return SN_ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Sériové číslo; ID objektu VP - sériové číslo [persistentní položka]")
-  public String getSNID() {
-    return SN_ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setSNID(String SN_ID) {
-    this.SN_ID = SN_ID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Plmproduceservice faultTypeID(String faultTypeID) {
-    this.faultTypeID = faultTypeID;
+  public Plmproduceservice id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Závada; ID objektu Závada [persistentní položka]
-   * @return faultTypeID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Závada; ID objektu Závada [persistentní položka]")
-  public String getFaultTypeID() {
-    return faultTypeID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setFaultTypeID(String faultTypeID) {
-    this.faultTypeID = faultTypeID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Plmproduceservice jOInputItemID(String jOInputItemID) {
-    this.jOInputItemID = jOInputItemID;
+  public Plmproduceservice classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Komponenta; ID objektu VP - kusovník [persistentní položka]
-   * @return jOInputItemID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Komponenta; ID objektu VP - kusovník [persistentní položka]")
-  public String getJOInputItemID() {
-    return jOInputItemID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setJOInputItemID(String jOInputItemID) {
-    this.jOInputItemID = jOInputItemID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Plmproduceservice routineID(String routineID) {
-    this.routineID = routineID;
+  public Plmproduceservice objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Operace; ID objektu VP - technologický postup [persistentní položka]
-   * @return routineID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Operace; ID objektu VP - technologický postup [persistentní položka]")
-  public String getRoutineID() {
-    return routineID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setRoutineID(String routineID) {
-    this.routineID = routineID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Plmproduceservice servicedByID(String servicedByID) {
-    this.servicedByID = servicedByID;
+  public Plmproduceservice snId(String snId) {
+    this.snId = snId;
     return this;
   }
 
    /**
-   * Servis provedl; ID objektu Pracovník [persistentní položka]
-   * @return servicedByID
+   * sériové číslo; id objektu vp - sériové číslo [persistentní položka]
+   * @return snId
   **/
-  @ApiModelProperty(example = "null", value = "Servis provedl; ID objektu Pracovník [persistentní položka]")
-  public String getServicedByID() {
-    return servicedByID;
+  @ApiModelProperty(example = "null", value = "sériové číslo; id objektu vp - sériové číslo [persistentní položka]")
+  public String getSnId() {
+    return snId;
   }
 
-  public void setServicedByID(String servicedByID) {
-    this.servicedByID = servicedByID;
+  public void setSnId(String snId) {
+    this.snId = snId;
   }
 
-  public Plmproduceservice servicedAtDATE(DateTime servicedAtDATE) {
-    this.servicedAtDATE = servicedAtDATE;
+  public Plmproduceservice faulttypeId(String faulttypeId) {
+    this.faulttypeId = faulttypeId;
     return this;
   }
 
    /**
-   * Servis proveden [persistentní položka]
-   * @return servicedAtDATE
+   * závada; id objektu závada [persistentní položka]
+   * @return faulttypeId
   **/
-  @ApiModelProperty(example = "null", value = "Servis proveden [persistentní položka]")
-  public DateTime getServicedAtDATE() {
-    return servicedAtDATE;
+  @ApiModelProperty(example = "null", value = "závada; id objektu závada [persistentní položka]")
+  public String getFaulttypeId() {
+    return faulttypeId;
   }
 
-  public void setServicedAtDATE(DateTime servicedAtDATE) {
-    this.servicedAtDATE = servicedAtDATE;
+  public void setFaulttypeId(String faulttypeId) {
+    this.faulttypeId = faulttypeId;
   }
 
-  public Plmproduceservice busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Plmproduceservice joinputitemId(String joinputitemId) {
+    this.joinputitemId = joinputitemId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * komponenta; id objektu vp - kusovník [persistentní položka]
+   * @return joinputitemId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "komponenta; id objektu vp - kusovník [persistentní položka]")
+  public String getJoinputitemId() {
+    return joinputitemId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setJoinputitemId(String joinputitemId) {
+    this.joinputitemId = joinputitemId;
   }
 
-  public Plmproduceservice busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Plmproduceservice routineId(String routineId) {
+    this.routineId = routineId;
     return this;
   }
 
    /**
-   * Obch. případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * operace; id objektu vp - technologický postup [persistentní položka]
+   * @return routineId
   **/
-  @ApiModelProperty(example = "null", value = "Obch. případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "operace; id objektu vp - technologický postup [persistentní položka]")
+  public String getRoutineId() {
+    return routineId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setRoutineId(String routineId) {
+    this.routineId = routineId;
   }
 
-  public Plmproduceservice operationID(String operationID) {
-    this.operationID = operationID;
+  public Plmproduceservice servicedbyId(String servicedbyId) {
+    this.servicedbyId = servicedbyId;
     return this;
   }
 
    /**
-   * Pracovní lístek; ID objektu Pracovní lístek [persistentní položka]
-   * @return operationID
+   * servis provedl; id objektu pracovník [persistentní položka]
+   * @return servicedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Pracovní lístek; ID objektu Pracovní lístek [persistentní položka]")
-  public String getOperationID() {
-    return operationID;
+  @ApiModelProperty(example = "null", value = "servis provedl; id objektu pracovník [persistentní položka]")
+  public String getServicedbyId() {
+    return servicedbyId;
   }
 
-  public void setOperationID(String operationID) {
-    this.operationID = operationID;
+  public void setServicedbyId(String servicedbyId) {
+    this.servicedbyId = servicedbyId;
   }
 
-  public Plmproduceservice busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Plmproduceservice servicedatdate(DateTime servicedatdate) {
+    this.servicedatdate = servicedatdate;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * servis proveden [persistentní položka]
+   * @return servicedatdate
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "servis proveden [persistentní položka]")
+  public DateTime getServicedatdate() {
+    return servicedatdate;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setServicedatdate(DateTime servicedatdate) {
+    this.servicedatdate = servicedatdate;
   }
 
-  public Plmproduceservice sourceRoutineID(String sourceRoutineID) {
-    this.sourceRoutineID = sourceRoutineID;
+  public Plmproduceservice busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zdrojová operace; ID objektu VP - technologický postup [persistentní položka]
-   * @return sourceRoutineID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová operace; ID objektu VP - technologický postup [persistentní položka]")
-  public String getSourceRoutineID() {
-    return sourceRoutineID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setSourceRoutineID(String sourceRoutineID) {
-    this.sourceRoutineID = sourceRoutineID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
+  }
+
+  public Plmproduceservice bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
+    return this;
+  }
+
+   /**
+   * obch. případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
+  **/
+  @ApiModelProperty(example = "null", value = "obch. případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
+  }
+
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
+  }
+
+  public Plmproduceservice operationId(String operationId) {
+    this.operationId = operationId;
+    return this;
+  }
+
+   /**
+   * pracovní lístek; id objektu pracovní lístek [persistentní položka]
+   * @return operationId
+  **/
+  @ApiModelProperty(example = "null", value = "pracovní lístek; id objektu pracovní lístek [persistentní položka]")
+  public String getOperationId() {
+    return operationId;
+  }
+
+  public void setOperationId(String operationId) {
+    this.operationId = operationId;
+  }
+
+  public Plmproduceservice busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
+    return this;
+  }
+
+   /**
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
+  **/
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
+  }
+
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
+  }
+
+  public Plmproduceservice sourceroutineId(String sourceroutineId) {
+    this.sourceroutineId = sourceroutineId;
+    return this;
+  }
+
+   /**
+   * zdrojová operace; id objektu vp - technologický postup [persistentní položka]
+   * @return sourceroutineId
+  **/
+  @ApiModelProperty(example = "null", value = "zdrojová operace; id objektu vp - technologický postup [persistentní položka]")
+  public String getSourceroutineId() {
+    return sourceroutineId;
+  }
+
+  public void setSourceroutineId(String sourceroutineId) {
+    this.sourceroutineId = sourceroutineId;
   }
 
 
@@ -326,26 +362,26 @@ public class Plmproduceservice   {
       return false;
     }
     Plmproduceservice plmproduceservice = (Plmproduceservice) o;
-    return Objects.equals(this.displayName, plmproduceservice.displayName) &&
-        Objects.equals(this.ID, plmproduceservice.ID) &&
-        Objects.equals(this.classID, plmproduceservice.classID) &&
-        Objects.equals(this.objVersion, plmproduceservice.objVersion) &&
-        Objects.equals(this.SN_ID, plmproduceservice.SN_ID) &&
-        Objects.equals(this.faultTypeID, plmproduceservice.faultTypeID) &&
-        Objects.equals(this.jOInputItemID, plmproduceservice.jOInputItemID) &&
-        Objects.equals(this.routineID, plmproduceservice.routineID) &&
-        Objects.equals(this.servicedByID, plmproduceservice.servicedByID) &&
-        Objects.equals(this.servicedAtDATE, plmproduceservice.servicedAtDATE) &&
-        Objects.equals(this.busOrderID, plmproduceservice.busOrderID) &&
-        Objects.equals(this.busTransactionID, plmproduceservice.busTransactionID) &&
-        Objects.equals(this.operationID, plmproduceservice.operationID) &&
-        Objects.equals(this.busProjectID, plmproduceservice.busProjectID) &&
-        Objects.equals(this.sourceRoutineID, plmproduceservice.sourceRoutineID);
+    return Objects.equals(this.displayname, plmproduceservice.displayname) &&
+        Objects.equals(this.id, plmproduceservice.id) &&
+        Objects.equals(this.classid, plmproduceservice.classid) &&
+        Objects.equals(this.objversion, plmproduceservice.objversion) &&
+        Objects.equals(this.snId, plmproduceservice.snId) &&
+        Objects.equals(this.faulttypeId, plmproduceservice.faulttypeId) &&
+        Objects.equals(this.joinputitemId, plmproduceservice.joinputitemId) &&
+        Objects.equals(this.routineId, plmproduceservice.routineId) &&
+        Objects.equals(this.servicedbyId, plmproduceservice.servicedbyId) &&
+        Objects.equals(this.servicedatdate, plmproduceservice.servicedatdate) &&
+        Objects.equals(this.busorderId, plmproduceservice.busorderId) &&
+        Objects.equals(this.bustransactionId, plmproduceservice.bustransactionId) &&
+        Objects.equals(this.operationId, plmproduceservice.operationId) &&
+        Objects.equals(this.busprojectId, plmproduceservice.busprojectId) &&
+        Objects.equals(this.sourceroutineId, plmproduceservice.sourceroutineId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, SN_ID, faultTypeID, jOInputItemID, routineID, servicedByID, servicedAtDATE, busOrderID, busTransactionID, operationID, busProjectID, sourceRoutineID);
+    return Objects.hash(displayname, id, classid, objversion, snId, faulttypeId, joinputitemId, routineId, servicedbyId, servicedatdate, busorderId, bustransactionId, operationId, busprojectId, sourceroutineId);
   }
 
   @Override
@@ -353,21 +389,21 @@ public class Plmproduceservice   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmproduceservice {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    SN_ID: ").append(toIndentedString(SN_ID)).append("\n");
-    sb.append("    faultTypeID: ").append(toIndentedString(faultTypeID)).append("\n");
-    sb.append("    jOInputItemID: ").append(toIndentedString(jOInputItemID)).append("\n");
-    sb.append("    routineID: ").append(toIndentedString(routineID)).append("\n");
-    sb.append("    servicedByID: ").append(toIndentedString(servicedByID)).append("\n");
-    sb.append("    servicedAtDATE: ").append(toIndentedString(servicedAtDATE)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    operationID: ").append(toIndentedString(operationID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    sourceRoutineID: ").append(toIndentedString(sourceRoutineID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    snId: ").append(toIndentedString(snId)).append("\n");
+    sb.append("    faulttypeId: ").append(toIndentedString(faulttypeId)).append("\n");
+    sb.append("    joinputitemId: ").append(toIndentedString(joinputitemId)).append("\n");
+    sb.append("    routineId: ").append(toIndentedString(routineId)).append("\n");
+    sb.append("    servicedbyId: ").append(toIndentedString(servicedbyId)).append("\n");
+    sb.append("    servicedatdate: ").append(toIndentedString(servicedatdate)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    operationId: ").append(toIndentedString(operationId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    sourceroutineId: ").append(toIndentedString(sourceroutineId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

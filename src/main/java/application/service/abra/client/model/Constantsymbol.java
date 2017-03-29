@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,66 +34,102 @@ import java.util.Objects;
 /**
  * Constantsymbol
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Constantsymbol   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private Integer code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("IsForeign")
-  private Boolean isForeign = null;
+  @SerializedName("isforeign")
+  private Boolean isforeign = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Constantsymbol displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Constantsymbol id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Constantsymbol classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Constantsymbol objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Constantsymbol hidden(Boolean hidden) {
@@ -102,10 +138,10 @@ public class Constantsymbol   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -120,10 +156,10 @@ public class Constantsymbol   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public Integer getCode() {
     return code;
   }
@@ -138,10 +174,10 @@ public class Constantsymbol   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -150,22 +186,22 @@ public class Constantsymbol   {
     this.name = name;
   }
 
-  public Constantsymbol isForeign(Boolean isForeign) {
-    this.isForeign = isForeign;
+  public Constantsymbol isforeign(Boolean isforeign) {
+    this.isforeign = isforeign;
     return this;
   }
 
    /**
-   * Zahr. [persistentní položka]
-   * @return isForeign
+   * zahr. [persistentní položka]
+   * @return isforeign
   **/
-  @ApiModelProperty(example = "null", value = "Zahr. [persistentní položka]")
-  public Boolean getIsForeign() {
-    return isForeign;
+  @ApiModelProperty(example = "null", value = "zahr. [persistentní položka]")
+  public Boolean getIsforeign() {
+    return isforeign;
   }
 
-  public void setIsForeign(Boolean isForeign) {
-    this.isForeign = isForeign;
+  public void setIsforeign(Boolean isforeign) {
+    this.isforeign = isforeign;
   }
 
 
@@ -178,19 +214,19 @@ public class Constantsymbol   {
       return false;
     }
     Constantsymbol constantsymbol = (Constantsymbol) o;
-    return Objects.equals(this.displayName, constantsymbol.displayName) &&
-        Objects.equals(this.ID, constantsymbol.ID) &&
-        Objects.equals(this.classID, constantsymbol.classID) &&
-        Objects.equals(this.objVersion, constantsymbol.objVersion) &&
+    return Objects.equals(this.displayname, constantsymbol.displayname) &&
+        Objects.equals(this.id, constantsymbol.id) &&
+        Objects.equals(this.classid, constantsymbol.classid) &&
+        Objects.equals(this.objversion, constantsymbol.objversion) &&
         Objects.equals(this.hidden, constantsymbol.hidden) &&
         Objects.equals(this.code, constantsymbol.code) &&
         Objects.equals(this.name, constantsymbol.name) &&
-        Objects.equals(this.isForeign, constantsymbol.isForeign);
+        Objects.equals(this.isforeign, constantsymbol.isforeign);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, isForeign);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, isforeign);
   }
 
   @Override
@@ -198,14 +234,14 @@ public class Constantsymbol   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Constantsymbol {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    isForeign: ").append(toIndentedString(isForeign)).append("\n");
+    sb.append("    isforeign: ").append(toIndentedString(isforeign)).append("\n");
     sb.append("}");
     return sb.toString();
   }

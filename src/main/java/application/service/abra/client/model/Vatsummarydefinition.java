@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,81 +36,117 @@ import java.util.Objects;
 /**
  * Vatsummarydefinition
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Vatsummarydefinition   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Vatsummarydefinitionrow> rows = new ArrayList<Vatsummarydefinitionrow>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("Country_ID")
-  private String countryID = null;
+  @SerializedName("country_id")
+  private String countryId = null;
 
-  @SerializedName("PrefillExpressions")
-  private List<Vatsummarydefinitionprefillexpression> prefillExpressions = new ArrayList<Vatsummarydefinitionprefillexpression>();
+  @SerializedName("prefillexpressions")
+  private List<Vatsummarydefinitionprefillexpression> prefillexpressions = new ArrayList<Vatsummarydefinitionprefillexpression>();
 
-  @SerializedName("ClosingKind")
-  private Integer closingKind = null;
+  @SerializedName("closingkind")
+  private Integer closingkind = null;
 
-  @SerializedName("ClosingKindAsText")
-  private String closingKindAsText = null;
+  @SerializedName("closingkindastext")
+  private String closingkindastext = null;
 
-  @SerializedName("NotForVATClosing")
-  private Boolean notForVATClosing = null;
+  @SerializedName("notforvatclosing")
+  private Boolean notforvatclosing = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Vatsummarydefinition displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Vatsummarydefinition id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Vatsummarydefinition classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Vatsummarydefinition objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Vatsummarydefinition rows(List<Vatsummarydefinitionrow> rows) {
@@ -124,10 +160,10 @@ public class Vatsummarydefinition   {
   }
 
    /**
-   * Řádky; kolekce BO Definice pro DPH přiznání - řádek [nepersistentní položka]
+   * Řádky; kolekce bo definice pro dph přiznání - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Definice pro DPH přiznání - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo definice pro dph přiznání - řádek [nepersistentní položka]")
   public List<Vatsummarydefinitionrow> getRows() {
     return rows;
   }
@@ -142,10 +178,10 @@ public class Vatsummarydefinition   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -160,10 +196,10 @@ public class Vatsummarydefinition   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -178,10 +214,10 @@ public class Vatsummarydefinition   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -190,99 +226,99 @@ public class Vatsummarydefinition   {
     this.description = description;
   }
 
-  public Vatsummarydefinition countryID(String countryID) {
-    this.countryID = countryID;
+  public Vatsummarydefinition countryId(String countryId) {
+    this.countryId = countryId;
     return this;
   }
 
    /**
-   * Země; ID objektu Země [persistentní položka]
-   * @return countryID
+   * země; id objektu země [persistentní položka]
+   * @return countryId
   **/
-  @ApiModelProperty(example = "null", value = "Země; ID objektu Země [persistentní položka]")
-  public String getCountryID() {
-    return countryID;
+  @ApiModelProperty(example = "null", value = "země; id objektu země [persistentní položka]")
+  public String getCountryId() {
+    return countryId;
   }
 
-  public void setCountryID(String countryID) {
-    this.countryID = countryID;
+  public void setCountryId(String countryId) {
+    this.countryId = countryId;
   }
 
-  public Vatsummarydefinition prefillExpressions(List<Vatsummarydefinitionprefillexpression> prefillExpressions) {
-    this.prefillExpressions = prefillExpressions;
+  public Vatsummarydefinition prefillexpressions(List<Vatsummarydefinitionprefillexpression> prefillexpressions) {
+    this.prefillexpressions = prefillexpressions;
     return this;
   }
 
-  public Vatsummarydefinition addPrefillExpressionsItem(Vatsummarydefinitionprefillexpression prefillExpressionsItem) {
-    this.prefillExpressions.add(prefillExpressionsItem);
-    return this;
-  }
-
-   /**
-   * Předvyplnění; kolekce BO Definice pro DPH přiznání - předvyplnění [nepersistentní položka]
-   * @return prefillExpressions
-  **/
-  @ApiModelProperty(example = "null", value = "Předvyplnění; kolekce BO Definice pro DPH přiznání - předvyplnění [nepersistentní položka]")
-  public List<Vatsummarydefinitionprefillexpression> getPrefillExpressions() {
-    return prefillExpressions;
-  }
-
-  public void setPrefillExpressions(List<Vatsummarydefinitionprefillexpression> prefillExpressions) {
-    this.prefillExpressions = prefillExpressions;
-  }
-
-  public Vatsummarydefinition closingKind(Integer closingKind) {
-    this.closingKind = closingKind;
+  public Vatsummarydefinition addPrefillexpressionsItem(Vatsummarydefinitionprefillexpression prefillexpressionsItem) {
+    this.prefillexpressions.add(prefillexpressionsItem);
     return this;
   }
 
    /**
-   * Typ přiznání [persistentní položka]
-   * @return closingKind
+   * předvyplnění; kolekce bo definice pro dph přiznání - předvyplnění [nepersistentní položka]
+   * @return prefillexpressions
   **/
-  @ApiModelProperty(example = "null", value = "Typ přiznání [persistentní položka]")
-  public Integer getClosingKind() {
-    return closingKind;
+  @ApiModelProperty(example = "null", value = "předvyplnění; kolekce bo definice pro dph přiznání - předvyplnění [nepersistentní položka]")
+  public List<Vatsummarydefinitionprefillexpression> getPrefillexpressions() {
+    return prefillexpressions;
   }
 
-  public void setClosingKind(Integer closingKind) {
-    this.closingKind = closingKind;
+  public void setPrefillexpressions(List<Vatsummarydefinitionprefillexpression> prefillexpressions) {
+    this.prefillexpressions = prefillexpressions;
   }
 
-  public Vatsummarydefinition closingKindAsText(String closingKindAsText) {
-    this.closingKindAsText = closingKindAsText;
+  public Vatsummarydefinition closingkind(Integer closingkind) {
+    this.closingkind = closingkind;
     return this;
   }
 
    /**
-   * Typ přiznání
-   * @return closingKindAsText
+   * typ přiznání [persistentní položka]
+   * @return closingkind
   **/
-  @ApiModelProperty(example = "null", value = "Typ přiznání")
-  public String getClosingKindAsText() {
-    return closingKindAsText;
+  @ApiModelProperty(example = "null", value = "typ přiznání [persistentní položka]")
+  public Integer getClosingkind() {
+    return closingkind;
   }
 
-  public void setClosingKindAsText(String closingKindAsText) {
-    this.closingKindAsText = closingKindAsText;
+  public void setClosingkind(Integer closingkind) {
+    this.closingkind = closingkind;
   }
 
-  public Vatsummarydefinition notForVATClosing(Boolean notForVATClosing) {
-    this.notForVATClosing = notForVATClosing;
+  public Vatsummarydefinition closingkindastext(String closingkindastext) {
+    this.closingkindastext = closingkindastext;
     return this;
   }
 
    /**
-   * Ne pro uzávěrku DPH [persistentní položka]
-   * @return notForVATClosing
+   * typ přiznání
+   * @return closingkindastext
   **/
-  @ApiModelProperty(example = "null", value = "Ne pro uzávěrku DPH [persistentní položka]")
-  public Boolean getNotForVATClosing() {
-    return notForVATClosing;
+  @ApiModelProperty(example = "null", value = "typ přiznání")
+  public String getClosingkindastext() {
+    return closingkindastext;
   }
 
-  public void setNotForVATClosing(Boolean notForVATClosing) {
-    this.notForVATClosing = notForVATClosing;
+  public void setClosingkindastext(String closingkindastext) {
+    this.closingkindastext = closingkindastext;
+  }
+
+  public Vatsummarydefinition notforvatclosing(Boolean notforvatclosing) {
+    this.notforvatclosing = notforvatclosing;
+    return this;
+  }
+
+   /**
+   * ne pro uzávěrku dph [persistentní položka]
+   * @return notforvatclosing
+  **/
+  @ApiModelProperty(example = "null", value = "ne pro uzávěrku dph [persistentní položka]")
+  public Boolean getNotforvatclosing() {
+    return notforvatclosing;
+  }
+
+  public void setNotforvatclosing(Boolean notforvatclosing) {
+    this.notforvatclosing = notforvatclosing;
   }
 
 
@@ -295,24 +331,24 @@ public class Vatsummarydefinition   {
       return false;
     }
     Vatsummarydefinition vatsummarydefinition = (Vatsummarydefinition) o;
-    return Objects.equals(this.displayName, vatsummarydefinition.displayName) &&
-        Objects.equals(this.ID, vatsummarydefinition.ID) &&
-        Objects.equals(this.classID, vatsummarydefinition.classID) &&
-        Objects.equals(this.objVersion, vatsummarydefinition.objVersion) &&
+    return Objects.equals(this.displayname, vatsummarydefinition.displayname) &&
+        Objects.equals(this.id, vatsummarydefinition.id) &&
+        Objects.equals(this.classid, vatsummarydefinition.classid) &&
+        Objects.equals(this.objversion, vatsummarydefinition.objversion) &&
         Objects.equals(this.rows, vatsummarydefinition.rows) &&
         Objects.equals(this.hidden, vatsummarydefinition.hidden) &&
         Objects.equals(this.code, vatsummarydefinition.code) &&
         Objects.equals(this.description, vatsummarydefinition.description) &&
-        Objects.equals(this.countryID, vatsummarydefinition.countryID) &&
-        Objects.equals(this.prefillExpressions, vatsummarydefinition.prefillExpressions) &&
-        Objects.equals(this.closingKind, vatsummarydefinition.closingKind) &&
-        Objects.equals(this.closingKindAsText, vatsummarydefinition.closingKindAsText) &&
-        Objects.equals(this.notForVATClosing, vatsummarydefinition.notForVATClosing);
+        Objects.equals(this.countryId, vatsummarydefinition.countryId) &&
+        Objects.equals(this.prefillexpressions, vatsummarydefinition.prefillexpressions) &&
+        Objects.equals(this.closingkind, vatsummarydefinition.closingkind) &&
+        Objects.equals(this.closingkindastext, vatsummarydefinition.closingkindastext) &&
+        Objects.equals(this.notforvatclosing, vatsummarydefinition.notforvatclosing);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, code, description, countryID, prefillExpressions, closingKind, closingKindAsText, notForVATClosing);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, code, description, countryId, prefillexpressions, closingkind, closingkindastext, notforvatclosing);
   }
 
   @Override
@@ -320,19 +356,19 @@ public class Vatsummarydefinition   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Vatsummarydefinition {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    countryID: ").append(toIndentedString(countryID)).append("\n");
-    sb.append("    prefillExpressions: ").append(toIndentedString(prefillExpressions)).append("\n");
-    sb.append("    closingKind: ").append(toIndentedString(closingKind)).append("\n");
-    sb.append("    closingKindAsText: ").append(toIndentedString(closingKindAsText)).append("\n");
-    sb.append("    notForVATClosing: ").append(toIndentedString(notForVATClosing)).append("\n");
+    sb.append("    countryId: ").append(toIndentedString(countryId)).append("\n");
+    sb.append("    prefillexpressions: ").append(toIndentedString(prefillexpressions)).append("\n");
+    sb.append("    closingkind: ").append(toIndentedString(closingkind)).append("\n");
+    sb.append("    closingkindastext: ").append(toIndentedString(closingkindastext)).append("\n");
+    sb.append("    notforvatclosing: ").append(toIndentedString(notforvatclosing)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,168 +37,213 @@ import java.util.Objects;
 /**
  * Demandsheetrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Demandsheetrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("RowType")
-  private Integer rowType = null;
+  @SerializedName("rowtype")
+  private Integer rowtype = null;
 
-  @SerializedName("Text")
+  @SerializedName("text")
   private String text = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("UnitQuantity")
-  private Double unitQuantity = null;
+  @SerializedName("unitquantity")
+  private Double unitquantity = null;
 
-  @SerializedName("DemandAnswersCount")
-  private Integer demandAnswersCount = null;
+  @SerializedName("demandanswerscount")
+  private Integer demandanswerscount = null;
 
-  @SerializedName("DemandAnswersAnsweredCount")
-  private Integer demandAnswersAnsweredCount = null;
+  @SerializedName("demandanswersansweredcount")
+  private Integer demandanswersansweredcount = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("RequestedDeliveryDate$DATE")
-  private DateTime requestedDeliveryDateDATE = null;
+  @SerializedName("requesteddeliverydate$date")
+  private DateTime requesteddeliverydatedate = null;
 
-  @SerializedName("LocalPriceLimit")
-  private Double localPriceLimit = null;
+  @SerializedName("localpricelimit")
+  private Double localpricelimit = null;
 
-  @SerializedName("DemandingDocType")
-  private String demandingDocType = null;
+  @SerializedName("demandingdoctype")
+  private String demandingdoctype = null;
 
-  @SerializedName("DemandingDocRow_ID")
-  private String demandingDocRowID = null;
+  @SerializedName("demandingdocrow_id")
+  private String demandingdocrowId = null;
 
-  @SerializedName("DemandingDoc_DisplayName")
-  private String demandingDocDisplayName = null;
+  @SerializedName("demandingdoc_displayname")
+  private String demandingdocDisplayname = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("WinnerFirm_ID")
-  private String winnerFirmID = null;
+  @SerializedName("winnerfirm_id")
+  private String winnerfirmId = null;
 
-  @SerializedName("DemandAnswers")
-  private List<Demandanswer> demandAnswers = new ArrayList<Demandanswer>();
+  @SerializedName("demandanswers")
+  private List<Demandanswer> demandanswers = new ArrayList<Demandanswer>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Poptávkový list [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Poptávkový list [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Demandsheetrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Demandsheetrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Demandsheetrow rowType(Integer rowType) {
-    this.rowType = rowType;
+  public Demandsheetrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Typ řádku [persistentní položka]
-   * @return rowType
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Typ řádku [persistentní položka]")
-  public Integer getRowType() {
-    return rowType;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setRowType(Integer rowType) {
-    this.rowType = rowType;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Demandsheetrow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Demandsheetrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Demandsheetrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu poptávkový list [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu poptávkový list [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Demandsheetrow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Demandsheetrow rowtype(Integer rowtype) {
+    this.rowtype = rowtype;
+    return this;
+  }
+
+   /**
+   * typ řádku [persistentní položka]
+   * @return rowtype
+  **/
+  @ApiModelProperty(example = "null", value = "typ řádku [persistentní položka]")
+  public Integer getRowtype() {
+    return rowtype;
+  }
+
+  public void setRowtype(Integer rowtype) {
+    this.rowtype = rowtype;
   }
 
   public Demandsheetrow text(String text) {
@@ -207,10 +252,10 @@ public class Demandsheetrow   {
   }
 
    /**
-   * Text [persistentní položka]
+   * text [persistentní položka]
    * @return text
   **/
-  @ApiModelProperty(example = "null", value = "Text [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "text [persistentní položka]")
   public String getText() {
     return text;
   }
@@ -219,40 +264,40 @@ public class Demandsheetrow   {
     this.text = text;
   }
 
-  public Demandsheetrow storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Demandsheetrow storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * skladová karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
   }
 
-  public Demandsheetrow storeID(String storeID) {
-    this.storeID = storeID;
+  public Demandsheetrow storeId(String storeId) {
+    this.storeId = storeId;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
   public Demandsheetrow quantity(Double quantity) {
@@ -261,10 +306,10 @@ public class Demandsheetrow   {
   }
 
    /**
-   * Počet v jedn.se vzt.1 [persistentní položka]
+   * počet v jedn.se vzt.1 [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet v jedn.se vzt.1 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "počet v jedn.se vzt.1 [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -273,288 +318,297 @@ public class Demandsheetrow   {
     this.quantity = quantity;
   }
 
-  public Demandsheetrow unitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public Demandsheetrow unitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
     return this;
   }
 
    /**
-   * Počet
-   * @return unitQuantity
+   * počet
+   * @return unitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet")
-  public Double getUnitQuantity() {
-    return unitQuantity;
+  @ApiModelProperty(example = "null", value = "počet")
+  public Double getUnitquantity() {
+    return unitquantity;
   }
 
-  public void setUnitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public void setUnitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
   }
 
-   /**
-   * Osloveno
-   * @return demandAnswersCount
-  **/
-  @ApiModelProperty(example = "null", value = "Osloveno")
-  public Integer getDemandAnswersCount() {
-    return demandAnswersCount;
-  }
-
-  public Demandsheetrow demandAnswersAnsweredCount(Integer demandAnswersAnsweredCount) {
-    this.demandAnswersAnsweredCount = demandAnswersAnsweredCount;
+  public Demandsheetrow demandanswerscount(Integer demandanswerscount) {
+    this.demandanswerscount = demandanswerscount;
     return this;
   }
 
    /**
-   * Odpovědělo
-   * @return demandAnswersAnsweredCount
+   * osloveno
+   * @return demandanswerscount
   **/
-  @ApiModelProperty(example = "null", value = "Odpovědělo")
-  public Integer getDemandAnswersAnsweredCount() {
-    return demandAnswersAnsweredCount;
+  @ApiModelProperty(example = "null", value = "osloveno")
+  public Integer getDemandanswerscount() {
+    return demandanswerscount;
   }
 
-  public void setDemandAnswersAnsweredCount(Integer demandAnswersAnsweredCount) {
-    this.demandAnswersAnsweredCount = demandAnswersAnsweredCount;
+  public void setDemandanswerscount(Integer demandanswerscount) {
+    this.demandanswerscount = demandanswerscount;
   }
 
-  public Demandsheetrow qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Demandsheetrow demandanswersansweredcount(Integer demandanswersansweredcount) {
+    this.demandanswersansweredcount = demandanswersansweredcount;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * odpovědělo
+   * @return demandanswersansweredcount
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "odpovědělo")
+  public Integer getDemandanswersansweredcount() {
+    return demandanswersansweredcount;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setDemandanswersansweredcount(Integer demandanswersansweredcount) {
+    this.demandanswersansweredcount = demandanswersansweredcount;
   }
 
-  public Demandsheetrow unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Demandsheetrow qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return unitRate
+   * jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
   }
 
-  public Demandsheetrow requestedDeliveryDateDATE(DateTime requestedDeliveryDateDATE) {
-    this.requestedDeliveryDateDATE = requestedDeliveryDateDATE;
+  public Demandsheetrow unitrate(Double unitrate) {
+    this.unitrate = unitrate;
     return this;
   }
 
    /**
-   * Požadovaný termín dodání [persistentní položka]
-   * @return requestedDeliveryDateDATE
+   * vztah [persistentní položka]
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Požadovaný termín dodání [persistentní položka]")
-  public DateTime getRequestedDeliveryDateDATE() {
-    return requestedDeliveryDateDATE;
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
   }
 
-  public void setRequestedDeliveryDateDATE(DateTime requestedDeliveryDateDATE) {
-    this.requestedDeliveryDateDATE = requestedDeliveryDateDATE;
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
-  public Demandsheetrow localPriceLimit(Double localPriceLimit) {
-    this.localPriceLimit = localPriceLimit;
+  public Demandsheetrow requesteddeliverydatedate(DateTime requesteddeliverydatedate) {
+    this.requesteddeliverydatedate = requesteddeliverydatedate;
     return this;
   }
 
    /**
-   * Limitní cena [persistentní položka]
-   * @return localPriceLimit
+   * požadovaný termín dodání [persistentní položka]
+   * @return requesteddeliverydatedate
   **/
-  @ApiModelProperty(example = "null", value = "Limitní cena [persistentní položka]")
-  public Double getLocalPriceLimit() {
-    return localPriceLimit;
+  @ApiModelProperty(example = "null", value = "požadovaný termín dodání [persistentní položka]")
+  public DateTime getRequesteddeliverydatedate() {
+    return requesteddeliverydatedate;
   }
 
-  public void setLocalPriceLimit(Double localPriceLimit) {
-    this.localPriceLimit = localPriceLimit;
+  public void setRequesteddeliverydatedate(DateTime requesteddeliverydatedate) {
+    this.requesteddeliverydatedate = requesteddeliverydatedate;
   }
 
-  public Demandsheetrow demandingDocType(String demandingDocType) {
-    this.demandingDocType = demandingDocType;
+  public Demandsheetrow localpricelimit(Double localpricelimit) {
+    this.localpricelimit = localpricelimit;
     return this;
   }
 
    /**
-   * Typ zdrojového dokladu [persistentní položka]
-   * @return demandingDocType
+   * limitní cena [persistentní položka]
+   * @return localpricelimit
   **/
-  @ApiModelProperty(example = "null", value = "Typ zdrojového dokladu [persistentní položka]")
-  public String getDemandingDocType() {
-    return demandingDocType;
+  @ApiModelProperty(example = "null", value = "limitní cena [persistentní položka]")
+  public Double getLocalpricelimit() {
+    return localpricelimit;
   }
 
-  public void setDemandingDocType(String demandingDocType) {
-    this.demandingDocType = demandingDocType;
+  public void setLocalpricelimit(Double localpricelimit) {
+    this.localpricelimit = localpricelimit;
   }
 
-  public Demandsheetrow demandingDocRowID(String demandingDocRowID) {
-    this.demandingDocRowID = demandingDocRowID;
+  public Demandsheetrow demandingdoctype(String demandingdoctype) {
+    this.demandingdoctype = demandingdoctype;
     return this;
   }
 
    /**
-   * Zdrojový řádek [persistentní položka]
-   * @return demandingDocRowID
+   * typ zdrojového dokladu [persistentní položka]
+   * @return demandingdoctype
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojový řádek [persistentní položka]")
-  public String getDemandingDocRowID() {
-    return demandingDocRowID;
+  @ApiModelProperty(example = "null", value = "typ zdrojového dokladu [persistentní položka]")
+  public String getDemandingdoctype() {
+    return demandingdoctype;
   }
 
-  public void setDemandingDocRowID(String demandingDocRowID) {
-    this.demandingDocRowID = demandingDocRowID;
+  public void setDemandingdoctype(String demandingdoctype) {
+    this.demandingdoctype = demandingdoctype;
   }
 
-  public Demandsheetrow demandingDocDisplayName(String demandingDocDisplayName) {
-    this.demandingDocDisplayName = demandingDocDisplayName;
+  public Demandsheetrow demandingdocrowId(String demandingdocrowId) {
+    this.demandingdocrowId = demandingdocrowId;
     return this;
   }
 
    /**
-   * Zdrojový doklad
-   * @return demandingDocDisplayName
+   * zdrojový řádek [persistentní položka]
+   * @return demandingdocrowId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojový doklad")
-  public String getDemandingDocDisplayName() {
-    return demandingDocDisplayName;
+  @ApiModelProperty(example = "null", value = "zdrojový řádek [persistentní položka]")
+  public String getDemandingdocrowId() {
+    return demandingdocrowId;
   }
 
-  public void setDemandingDocDisplayName(String demandingDocDisplayName) {
-    this.demandingDocDisplayName = demandingDocDisplayName;
+  public void setDemandingdocrowId(String demandingdocrowId) {
+    this.demandingdocrowId = demandingdocrowId;
   }
 
-  public Demandsheetrow divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Demandsheetrow demandingdocDisplayname(String demandingdocDisplayname) {
+    this.demandingdocDisplayname = demandingdocDisplayname;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * zdrojový doklad
+   * @return demandingdocDisplayname
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "zdrojový doklad")
+  public String getDemandingdocDisplayname() {
+    return demandingdocDisplayname;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDemandingdocDisplayname(String demandingdocDisplayname) {
+    this.demandingdocDisplayname = demandingdocDisplayname;
   }
 
-  public Demandsheetrow busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Demandsheetrow divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Demandsheetrow busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Demandsheetrow busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Obch.případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Obch.případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Demandsheetrow busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Demandsheetrow bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * obch.případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "obch.případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Demandsheetrow winnerFirmID(String winnerFirmID) {
-    this.winnerFirmID = winnerFirmID;
+  public Demandsheetrow busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Vítězný dodavatel/firma; ID objektu Firma
-   * @return winnerFirmID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Vítězný dodavatel/firma; ID objektu Firma")
-  public String getWinnerFirmID() {
-    return winnerFirmID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setWinnerFirmID(String winnerFirmID) {
-    this.winnerFirmID = winnerFirmID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Demandsheetrow demandAnswers(List<Demandanswer> demandAnswers) {
-    this.demandAnswers = demandAnswers;
-    return this;
-  }
-
-  public Demandsheetrow addDemandAnswersItem(Demandanswer demandAnswersItem) {
-    this.demandAnswers.add(demandAnswersItem);
+  public Demandsheetrow winnerfirmId(String winnerfirmId) {
+    this.winnerfirmId = winnerfirmId;
     return this;
   }
 
    /**
-   * Oslovení dodavatelé; kolekce BO Oslovený dodavatel pro poptávku [nepersistentní položka]
-   * @return demandAnswers
+   * vítězný dodavatel/firma; id objektu firma
+   * @return winnerfirmId
   **/
-  @ApiModelProperty(example = "null", value = "Oslovení dodavatelé; kolekce BO Oslovený dodavatel pro poptávku [nepersistentní položka]")
-  public List<Demandanswer> getDemandAnswers() {
-    return demandAnswers;
+  @ApiModelProperty(example = "null", value = "vítězný dodavatel/firma; id objektu firma")
+  public String getWinnerfirmId() {
+    return winnerfirmId;
   }
 
-  public void setDemandAnswers(List<Demandanswer> demandAnswers) {
-    this.demandAnswers = demandAnswers;
+  public void setWinnerfirmId(String winnerfirmId) {
+    this.winnerfirmId = winnerfirmId;
+  }
+
+  public Demandsheetrow demandanswers(List<Demandanswer> demandanswers) {
+    this.demandanswers = demandanswers;
+    return this;
+  }
+
+  public Demandsheetrow addDemandanswersItem(Demandanswer demandanswersItem) {
+    this.demandanswers.add(demandanswersItem);
+    return this;
+  }
+
+   /**
+   * oslovení dodavatelé; kolekce bo oslovený dodavatel pro poptávku [nepersistentní položka]
+   * @return demandanswers
+  **/
+  @ApiModelProperty(example = "null", value = "oslovení dodavatelé; kolekce bo oslovený dodavatel pro poptávku [nepersistentní položka]")
+  public List<Demandanswer> getDemandanswers() {
+    return demandanswers;
+  }
+
+  public void setDemandanswers(List<Demandanswer> demandanswers) {
+    this.demandanswers = demandanswers;
   }
 
 
@@ -567,38 +621,38 @@ public class Demandsheetrow   {
       return false;
     }
     Demandsheetrow demandsheetrow = (Demandsheetrow) o;
-    return Objects.equals(this.displayName, demandsheetrow.displayName) &&
-        Objects.equals(this.ID, demandsheetrow.ID) &&
-        Objects.equals(this.classID, demandsheetrow.classID) &&
-        Objects.equals(this.objVersion, demandsheetrow.objVersion) &&
-        Objects.equals(this.parentID, demandsheetrow.parentID) &&
-        Objects.equals(this.posIndex, demandsheetrow.posIndex) &&
-        Objects.equals(this.rowType, demandsheetrow.rowType) &&
+    return Objects.equals(this.displayname, demandsheetrow.displayname) &&
+        Objects.equals(this.id, demandsheetrow.id) &&
+        Objects.equals(this.classid, demandsheetrow.classid) &&
+        Objects.equals(this.objversion, demandsheetrow.objversion) &&
+        Objects.equals(this.parentId, demandsheetrow.parentId) &&
+        Objects.equals(this.posindex, demandsheetrow.posindex) &&
+        Objects.equals(this.rowtype, demandsheetrow.rowtype) &&
         Objects.equals(this.text, demandsheetrow.text) &&
-        Objects.equals(this.storeCardID, demandsheetrow.storeCardID) &&
-        Objects.equals(this.storeID, demandsheetrow.storeID) &&
+        Objects.equals(this.storecardId, demandsheetrow.storecardId) &&
+        Objects.equals(this.storeId, demandsheetrow.storeId) &&
         Objects.equals(this.quantity, demandsheetrow.quantity) &&
-        Objects.equals(this.unitQuantity, demandsheetrow.unitQuantity) &&
-        Objects.equals(this.demandAnswersCount, demandsheetrow.demandAnswersCount) &&
-        Objects.equals(this.demandAnswersAnsweredCount, demandsheetrow.demandAnswersAnsweredCount) &&
-        Objects.equals(this.qUnit, demandsheetrow.qUnit) &&
-        Objects.equals(this.unitRate, demandsheetrow.unitRate) &&
-        Objects.equals(this.requestedDeliveryDateDATE, demandsheetrow.requestedDeliveryDateDATE) &&
-        Objects.equals(this.localPriceLimit, demandsheetrow.localPriceLimit) &&
-        Objects.equals(this.demandingDocType, demandsheetrow.demandingDocType) &&
-        Objects.equals(this.demandingDocRowID, demandsheetrow.demandingDocRowID) &&
-        Objects.equals(this.demandingDocDisplayName, demandsheetrow.demandingDocDisplayName) &&
-        Objects.equals(this.divisionID, demandsheetrow.divisionID) &&
-        Objects.equals(this.busOrderID, demandsheetrow.busOrderID) &&
-        Objects.equals(this.busTransactionID, demandsheetrow.busTransactionID) &&
-        Objects.equals(this.busProjectID, demandsheetrow.busProjectID) &&
-        Objects.equals(this.winnerFirmID, demandsheetrow.winnerFirmID) &&
-        Objects.equals(this.demandAnswers, demandsheetrow.demandAnswers);
+        Objects.equals(this.unitquantity, demandsheetrow.unitquantity) &&
+        Objects.equals(this.demandanswerscount, demandsheetrow.demandanswerscount) &&
+        Objects.equals(this.demandanswersansweredcount, demandsheetrow.demandanswersansweredcount) &&
+        Objects.equals(this.qunit, demandsheetrow.qunit) &&
+        Objects.equals(this.unitrate, demandsheetrow.unitrate) &&
+        Objects.equals(this.requesteddeliverydatedate, demandsheetrow.requesteddeliverydatedate) &&
+        Objects.equals(this.localpricelimit, demandsheetrow.localpricelimit) &&
+        Objects.equals(this.demandingdoctype, demandsheetrow.demandingdoctype) &&
+        Objects.equals(this.demandingdocrowId, demandsheetrow.demandingdocrowId) &&
+        Objects.equals(this.demandingdocDisplayname, demandsheetrow.demandingdocDisplayname) &&
+        Objects.equals(this.divisionId, demandsheetrow.divisionId) &&
+        Objects.equals(this.busorderId, demandsheetrow.busorderId) &&
+        Objects.equals(this.bustransactionId, demandsheetrow.bustransactionId) &&
+        Objects.equals(this.busprojectId, demandsheetrow.busprojectId) &&
+        Objects.equals(this.winnerfirmId, demandsheetrow.winnerfirmId) &&
+        Objects.equals(this.demandanswers, demandsheetrow.demandanswers);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, rowType, text, storeCardID, storeID, quantity, unitQuantity, demandAnswersCount, demandAnswersAnsweredCount, qUnit, unitRate, requestedDeliveryDateDATE, localPriceLimit, demandingDocType, demandingDocRowID, demandingDocDisplayName, divisionID, busOrderID, busTransactionID, busProjectID, winnerFirmID, demandAnswers);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, rowtype, text, storecardId, storeId, quantity, unitquantity, demandanswerscount, demandanswersansweredcount, qunit, unitrate, requesteddeliverydatedate, localpricelimit, demandingdoctype, demandingdocrowId, demandingdocDisplayname, divisionId, busorderId, bustransactionId, busprojectId, winnerfirmId, demandanswers);
   }
 
   @Override
@@ -606,33 +660,33 @@ public class Demandsheetrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Demandsheetrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    rowType: ").append(toIndentedString(rowType)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    rowtype: ").append(toIndentedString(rowtype)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    unitQuantity: ").append(toIndentedString(unitQuantity)).append("\n");
-    sb.append("    demandAnswersCount: ").append(toIndentedString(demandAnswersCount)).append("\n");
-    sb.append("    demandAnswersAnsweredCount: ").append(toIndentedString(demandAnswersAnsweredCount)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    requestedDeliveryDateDATE: ").append(toIndentedString(requestedDeliveryDateDATE)).append("\n");
-    sb.append("    localPriceLimit: ").append(toIndentedString(localPriceLimit)).append("\n");
-    sb.append("    demandingDocType: ").append(toIndentedString(demandingDocType)).append("\n");
-    sb.append("    demandingDocRowID: ").append(toIndentedString(demandingDocRowID)).append("\n");
-    sb.append("    demandingDocDisplayName: ").append(toIndentedString(demandingDocDisplayName)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    winnerFirmID: ").append(toIndentedString(winnerFirmID)).append("\n");
-    sb.append("    demandAnswers: ").append(toIndentedString(demandAnswers)).append("\n");
+    sb.append("    unitquantity: ").append(toIndentedString(unitquantity)).append("\n");
+    sb.append("    demandanswerscount: ").append(toIndentedString(demandanswerscount)).append("\n");
+    sb.append("    demandanswersansweredcount: ").append(toIndentedString(demandanswersansweredcount)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    requesteddeliverydatedate: ").append(toIndentedString(requesteddeliverydatedate)).append("\n");
+    sb.append("    localpricelimit: ").append(toIndentedString(localpricelimit)).append("\n");
+    sb.append("    demandingdoctype: ").append(toIndentedString(demandingdoctype)).append("\n");
+    sb.append("    demandingdocrowId: ").append(toIndentedString(demandingdocrowId)).append("\n");
+    sb.append("    demandingdocDisplayname: ").append(toIndentedString(demandingdocDisplayname)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    winnerfirmId: ").append(toIndentedString(winnerfirmId)).append("\n");
+    sb.append("    demandanswers: ").append(toIndentedString(demandanswers)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,114 +34,150 @@ import java.util.Objects;
 /**
  * Wageclosingdef
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wageclosingdef   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Periodicity")
+  @SerializedName("periodicity")
   private Integer periodicity = null;
 
-  @SerializedName("CalcChart_ID")
-  private String calcChartID = null;
+  @SerializedName("calcchart_id")
+  private String calcchartId = null;
 
-  @SerializedName("ToAccounting")
-  private Boolean toAccounting = null;
+  @SerializedName("toaccounting")
+  private Boolean toaccounting = null;
 
-  @SerializedName("AccPresetDef_ID")
-  private String accPresetDefID = null;
+  @SerializedName("accpresetdef_id")
+  private String accpresetdefId = null;
 
-  @SerializedName("SplitByOperations")
-  private Boolean splitByOperations = null;
+  @SerializedName("splitbyoperations")
+  private Boolean splitbyoperations = null;
 
-  @SerializedName("OperationCodes")
-  private String operationCodes = null;
+  @SerializedName("operationcodes")
+  private String operationcodes = null;
 
-  @SerializedName("ToPaymentOrder")
-  private Boolean toPaymentOrder = null;
+  @SerializedName("topaymentorder")
+  private Boolean topaymentorder = null;
 
-  @SerializedName("MinusSign")
-  private Boolean minusSign = null;
+  @SerializedName("minussign")
+  private Boolean minussign = null;
 
-  @SerializedName("PaymentDef_ID")
-  private String paymentDefID = null;
+  @SerializedName("paymentdef_id")
+  private String paymentdefId = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("Rounding")
+  @SerializedName("rounding")
   private Integer rounding = null;
 
-  @SerializedName("CorrectionType")
-  private Integer correctionType = null;
+  @SerializedName("correctiontype")
+  private Integer correctiontype = null;
 
-  @SerializedName("CorrectionExpr")
-  private String correctionExpr = null;
+  @SerializedName("correctionexpr")
+  private String correctionexpr = null;
 
-  @SerializedName("CorrectionTypeAsText")
-  private String correctionTypeAsText = null;
+  @SerializedName("correctiontypeastext")
+  private String correctiontypeastext = null;
 
-  @SerializedName("OnlyEvalExpression")
-  private Boolean onlyEvalExpression = null;
+  @SerializedName("onlyevalexpression")
+  private Boolean onlyevalexpression = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Wageclosingdef displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wageclosingdef id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wageclosingdef classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wageclosingdef objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Wageclosingdef hidden(Boolean hidden) {
@@ -150,10 +186,10 @@ public class Wageclosingdef   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -168,10 +204,10 @@ public class Wageclosingdef   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -186,10 +222,10 @@ public class Wageclosingdef   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -204,10 +240,10 @@ public class Wageclosingdef   {
   }
 
    /**
-   * Periodicita [persistentní položka]
+   * periodicita [persistentní položka]
    * @return periodicity
   **/
-  @ApiModelProperty(example = "null", value = "Periodicita [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "periodicita [persistentní položka]")
   public Integer getPeriodicity() {
     return periodicity;
   }
@@ -216,202 +252,202 @@ public class Wageclosingdef   {
     this.periodicity = periodicity;
   }
 
-  public Wageclosingdef calcChartID(String calcChartID) {
-    this.calcChartID = calcChartID;
+  public Wageclosingdef calcchartId(String calcchartId) {
+    this.calcchartId = calcchartId;
     return this;
   }
 
    /**
-   * Výpočtové schéma; ID objektu Výpočtové schéma [persistentní položka]
-   * @return calcChartID
+   * výpočtové schéma; id objektu výpočtové schéma [persistentní položka]
+   * @return calcchartId
   **/
-  @ApiModelProperty(example = "null", value = "Výpočtové schéma; ID objektu Výpočtové schéma [persistentní položka]")
-  public String getCalcChartID() {
-    return calcChartID;
+  @ApiModelProperty(example = "null", value = "výpočtové schéma; id objektu výpočtové schéma [persistentní položka]")
+  public String getCalcchartId() {
+    return calcchartId;
   }
 
-  public void setCalcChartID(String calcChartID) {
-    this.calcChartID = calcChartID;
+  public void setCalcchartId(String calcchartId) {
+    this.calcchartId = calcchartId;
   }
 
-  public Wageclosingdef toAccounting(Boolean toAccounting) {
-    this.toAccounting = toAccounting;
+  public Wageclosingdef toaccounting(Boolean toaccounting) {
+    this.toaccounting = toaccounting;
     return this;
   }
 
    /**
    * Účtovat částku [persistentní položka]
-   * @return toAccounting
+   * @return toaccounting
   **/
   @ApiModelProperty(example = "null", value = "Účtovat částku [persistentní položka]")
-  public Boolean getToAccounting() {
-    return toAccounting;
+  public Boolean getToaccounting() {
+    return toaccounting;
   }
 
-  public void setToAccounting(Boolean toAccounting) {
-    this.toAccounting = toAccounting;
+  public void setToaccounting(Boolean toaccounting) {
+    this.toaccounting = toaccounting;
   }
 
-  public Wageclosingdef accPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public Wageclosingdef accpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
     return this;
   }
 
    /**
-   * Předkontace; ID objektu Účetní předkontace [persistentní položka]
-   * @return accPresetDefID
+   * předkontace; id objektu Účetní předkontace [persistentní položka]
+   * @return accpresetdefId
   **/
-  @ApiModelProperty(example = "null", value = "Předkontace; ID objektu Účetní předkontace [persistentní položka]")
-  public String getAccPresetDefID() {
-    return accPresetDefID;
+  @ApiModelProperty(example = "null", value = "předkontace; id objektu Účetní předkontace [persistentní položka]")
+  public String getAccpresetdefId() {
+    return accpresetdefId;
   }
 
-  public void setAccPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public void setAccpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
   }
 
-  public Wageclosingdef splitByOperations(Boolean splitByOperations) {
-    this.splitByOperations = splitByOperations;
+  public Wageclosingdef splitbyoperations(Boolean splitbyoperations) {
+    this.splitbyoperations = splitbyoperations;
     return this;
   }
 
    /**
-   * Rozdělit [persistentní položka]
-   * @return splitByOperations
+   * rozdělit [persistentní položka]
+   * @return splitbyoperations
   **/
-  @ApiModelProperty(example = "null", value = "Rozdělit [persistentní položka]")
-  public Boolean getSplitByOperations() {
-    return splitByOperations;
+  @ApiModelProperty(example = "null", value = "rozdělit [persistentní položka]")
+  public Boolean getSplitbyoperations() {
+    return splitbyoperations;
   }
 
-  public void setSplitByOperations(Boolean splitByOperations) {
-    this.splitByOperations = splitByOperations;
+  public void setSplitbyoperations(Boolean splitbyoperations) {
+    this.splitbyoperations = splitbyoperations;
   }
 
-  public Wageclosingdef operationCodes(String operationCodes) {
-    this.operationCodes = operationCodes;
+  public Wageclosingdef operationcodes(String operationcodes) {
+    this.operationcodes = operationcodes;
     return this;
   }
 
    /**
-   * Výkony [persistentní položka]
-   * @return operationCodes
+   * výkony [persistentní položka]
+   * @return operationcodes
   **/
-  @ApiModelProperty(example = "null", value = "Výkony [persistentní položka]")
-  public String getOperationCodes() {
-    return operationCodes;
+  @ApiModelProperty(example = "null", value = "výkony [persistentní položka]")
+  public String getOperationcodes() {
+    return operationcodes;
   }
 
-  public void setOperationCodes(String operationCodes) {
-    this.operationCodes = operationCodes;
+  public void setOperationcodes(String operationcodes) {
+    this.operationcodes = operationcodes;
   }
 
-  public Wageclosingdef toPaymentOrder(Boolean toPaymentOrder) {
-    this.toPaymentOrder = toPaymentOrder;
+  public Wageclosingdef topaymentorder(Boolean topaymentorder) {
+    this.topaymentorder = topaymentorder;
     return this;
   }
 
    /**
-   * Platební příkaz [persistentní položka]
-   * @return toPaymentOrder
+   * platební příkaz [persistentní položka]
+   * @return topaymentorder
   **/
-  @ApiModelProperty(example = "null", value = "Platební příkaz [persistentní položka]")
-  public Boolean getToPaymentOrder() {
-    return toPaymentOrder;
+  @ApiModelProperty(example = "null", value = "platební příkaz [persistentní položka]")
+  public Boolean getTopaymentorder() {
+    return topaymentorder;
   }
 
-  public void setToPaymentOrder(Boolean toPaymentOrder) {
-    this.toPaymentOrder = toPaymentOrder;
+  public void setTopaymentorder(Boolean topaymentorder) {
+    this.topaymentorder = topaymentorder;
   }
 
-  public Wageclosingdef minusSign(Boolean minusSign) {
-    this.minusSign = minusSign;
+  public Wageclosingdef minussign(Boolean minussign) {
+    this.minussign = minussign;
     return this;
   }
 
    /**
-   * Záporná částka [persistentní položka]
-   * @return minusSign
+   * záporná částka [persistentní položka]
+   * @return minussign
   **/
-  @ApiModelProperty(example = "null", value = "Záporná částka [persistentní položka]")
-  public Boolean getMinusSign() {
-    return minusSign;
+  @ApiModelProperty(example = "null", value = "záporná částka [persistentní položka]")
+  public Boolean getMinussign() {
+    return minussign;
   }
 
-  public void setMinusSign(Boolean minusSign) {
-    this.minusSign = minusSign;
+  public void setMinussign(Boolean minussign) {
+    this.minussign = minussign;
   }
 
-  public Wageclosingdef paymentDefID(String paymentDefID) {
-    this.paymentDefID = paymentDefID;
+  public Wageclosingdef paymentdefId(String paymentdefId) {
+    this.paymentdefId = paymentdefId;
     return this;
   }
 
    /**
-   * Definice platby; ID objektu Definice plateb [persistentní položka]
-   * @return paymentDefID
+   * definice platby; id objektu definice plateb [persistentní položka]
+   * @return paymentdefId
   **/
-  @ApiModelProperty(example = "null", value = "Definice platby; ID objektu Definice plateb [persistentní položka]")
-  public String getPaymentDefID() {
-    return paymentDefID;
+  @ApiModelProperty(example = "null", value = "definice platby; id objektu definice plateb [persistentní položka]")
+  public String getPaymentdefId() {
+    return paymentdefId;
   }
 
-  public void setPaymentDefID(String paymentDefID) {
-    this.paymentDefID = paymentDefID;
+  public void setPaymentdefId(String paymentdefId) {
+    this.paymentdefId = paymentdefId;
   }
 
-  public Wageclosingdef docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Wageclosingdef docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Řada dokladů uzávěrky; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * Řada dokladů uzávěrky; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů uzávěrky; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "Řada dokladů uzávěrky; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Wageclosingdef correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Wageclosingdef correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Wageclosingdef createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Wageclosingdef createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
   public Wageclosingdef rounding(Integer rounding) {
@@ -420,10 +456,10 @@ public class Wageclosingdef   {
   }
 
    /**
-   * Zaokrouhlení [persistentní položka]
+   * zaokrouhlení [persistentní položka]
    * @return rounding
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlení [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "zaokrouhlení [persistentní položka]")
   public Integer getRounding() {
     return rounding;
   }
@@ -432,76 +468,76 @@ public class Wageclosingdef   {
     this.rounding = rounding;
   }
 
-  public Wageclosingdef correctionType(Integer correctionType) {
-    this.correctionType = correctionType;
+  public Wageclosingdef correctiontype(Integer correctiontype) {
+    this.correctiontype = correctiontype;
     return this;
   }
 
    /**
-   * Typ korekce [persistentní položka]
-   * @return correctionType
+   * typ korekce [persistentní položka]
+   * @return correctiontype
   **/
-  @ApiModelProperty(example = "null", value = "Typ korekce [persistentní položka]")
-  public Integer getCorrectionType() {
-    return correctionType;
+  @ApiModelProperty(example = "null", value = "typ korekce [persistentní položka]")
+  public Integer getCorrectiontype() {
+    return correctiontype;
   }
 
-  public void setCorrectionType(Integer correctionType) {
-    this.correctionType = correctionType;
+  public void setCorrectiontype(Integer correctiontype) {
+    this.correctiontype = correctiontype;
   }
 
-  public Wageclosingdef correctionExpr(String correctionExpr) {
-    this.correctionExpr = correctionExpr;
+  public Wageclosingdef correctionexpr(String correctionexpr) {
+    this.correctionexpr = correctionexpr;
     return this;
   }
 
    /**
-   * Korekce [persistentní položka]
-   * @return correctionExpr
+   * korekce [persistentní položka]
+   * @return correctionexpr
   **/
-  @ApiModelProperty(example = "null", value = "Korekce [persistentní položka]")
-  public String getCorrectionExpr() {
-    return correctionExpr;
+  @ApiModelProperty(example = "null", value = "korekce [persistentní položka]")
+  public String getCorrectionexpr() {
+    return correctionexpr;
   }
 
-  public void setCorrectionExpr(String correctionExpr) {
-    this.correctionExpr = correctionExpr;
+  public void setCorrectionexpr(String correctionexpr) {
+    this.correctionexpr = correctionexpr;
   }
 
-  public Wageclosingdef correctionTypeAsText(String correctionTypeAsText) {
-    this.correctionTypeAsText = correctionTypeAsText;
+  public Wageclosingdef correctiontypeastext(String correctiontypeastext) {
+    this.correctiontypeastext = correctiontypeastext;
     return this;
   }
 
    /**
-   * Typ korekce
-   * @return correctionTypeAsText
+   * typ korekce
+   * @return correctiontypeastext
   **/
-  @ApiModelProperty(example = "null", value = "Typ korekce")
-  public String getCorrectionTypeAsText() {
-    return correctionTypeAsText;
+  @ApiModelProperty(example = "null", value = "typ korekce")
+  public String getCorrectiontypeastext() {
+    return correctiontypeastext;
   }
 
-  public void setCorrectionTypeAsText(String correctionTypeAsText) {
-    this.correctionTypeAsText = correctionTypeAsText;
+  public void setCorrectiontypeastext(String correctiontypeastext) {
+    this.correctiontypeastext = correctiontypeastext;
   }
 
-  public Wageclosingdef onlyEvalExpression(Boolean onlyEvalExpression) {
-    this.onlyEvalExpression = onlyEvalExpression;
+  public Wageclosingdef onlyevalexpression(Boolean onlyevalexpression) {
+    this.onlyevalexpression = onlyevalexpression;
     return this;
   }
 
    /**
-   * Jen vyhodnotit výraz [persistentní položka]
-   * @return onlyEvalExpression
+   * jen vyhodnotit výraz [persistentní položka]
+   * @return onlyevalexpression
   **/
-  @ApiModelProperty(example = "null", value = "Jen vyhodnotit výraz [persistentní položka]")
-  public Boolean getOnlyEvalExpression() {
-    return onlyEvalExpression;
+  @ApiModelProperty(example = "null", value = "jen vyhodnotit výraz [persistentní položka]")
+  public Boolean getOnlyevalexpression() {
+    return onlyevalexpression;
   }
 
-  public void setOnlyEvalExpression(Boolean onlyEvalExpression) {
-    this.onlyEvalExpression = onlyEvalExpression;
+  public void setOnlyevalexpression(Boolean onlyevalexpression) {
+    this.onlyevalexpression = onlyevalexpression;
   }
 
 
@@ -514,35 +550,35 @@ public class Wageclosingdef   {
       return false;
     }
     Wageclosingdef wageclosingdef = (Wageclosingdef) o;
-    return Objects.equals(this.displayName, wageclosingdef.displayName) &&
-        Objects.equals(this.ID, wageclosingdef.ID) &&
-        Objects.equals(this.classID, wageclosingdef.classID) &&
-        Objects.equals(this.objVersion, wageclosingdef.objVersion) &&
+    return Objects.equals(this.displayname, wageclosingdef.displayname) &&
+        Objects.equals(this.id, wageclosingdef.id) &&
+        Objects.equals(this.classid, wageclosingdef.classid) &&
+        Objects.equals(this.objversion, wageclosingdef.objversion) &&
         Objects.equals(this.hidden, wageclosingdef.hidden) &&
         Objects.equals(this.code, wageclosingdef.code) &&
         Objects.equals(this.name, wageclosingdef.name) &&
         Objects.equals(this.periodicity, wageclosingdef.periodicity) &&
-        Objects.equals(this.calcChartID, wageclosingdef.calcChartID) &&
-        Objects.equals(this.toAccounting, wageclosingdef.toAccounting) &&
-        Objects.equals(this.accPresetDefID, wageclosingdef.accPresetDefID) &&
-        Objects.equals(this.splitByOperations, wageclosingdef.splitByOperations) &&
-        Objects.equals(this.operationCodes, wageclosingdef.operationCodes) &&
-        Objects.equals(this.toPaymentOrder, wageclosingdef.toPaymentOrder) &&
-        Objects.equals(this.minusSign, wageclosingdef.minusSign) &&
-        Objects.equals(this.paymentDefID, wageclosingdef.paymentDefID) &&
-        Objects.equals(this.docQueueID, wageclosingdef.docQueueID) &&
-        Objects.equals(this.correctedByID, wageclosingdef.correctedByID) &&
-        Objects.equals(this.createdByID, wageclosingdef.createdByID) &&
+        Objects.equals(this.calcchartId, wageclosingdef.calcchartId) &&
+        Objects.equals(this.toaccounting, wageclosingdef.toaccounting) &&
+        Objects.equals(this.accpresetdefId, wageclosingdef.accpresetdefId) &&
+        Objects.equals(this.splitbyoperations, wageclosingdef.splitbyoperations) &&
+        Objects.equals(this.operationcodes, wageclosingdef.operationcodes) &&
+        Objects.equals(this.topaymentorder, wageclosingdef.topaymentorder) &&
+        Objects.equals(this.minussign, wageclosingdef.minussign) &&
+        Objects.equals(this.paymentdefId, wageclosingdef.paymentdefId) &&
+        Objects.equals(this.docqueueId, wageclosingdef.docqueueId) &&
+        Objects.equals(this.correctedbyId, wageclosingdef.correctedbyId) &&
+        Objects.equals(this.createdbyId, wageclosingdef.createdbyId) &&
         Objects.equals(this.rounding, wageclosingdef.rounding) &&
-        Objects.equals(this.correctionType, wageclosingdef.correctionType) &&
-        Objects.equals(this.correctionExpr, wageclosingdef.correctionExpr) &&
-        Objects.equals(this.correctionTypeAsText, wageclosingdef.correctionTypeAsText) &&
-        Objects.equals(this.onlyEvalExpression, wageclosingdef.onlyEvalExpression);
+        Objects.equals(this.correctiontype, wageclosingdef.correctiontype) &&
+        Objects.equals(this.correctionexpr, wageclosingdef.correctionexpr) &&
+        Objects.equals(this.correctiontypeastext, wageclosingdef.correctiontypeastext) &&
+        Objects.equals(this.onlyevalexpression, wageclosingdef.onlyevalexpression);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, periodicity, calcChartID, toAccounting, accPresetDefID, splitByOperations, operationCodes, toPaymentOrder, minusSign, paymentDefID, docQueueID, correctedByID, createdByID, rounding, correctionType, correctionExpr, correctionTypeAsText, onlyEvalExpression);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, periodicity, calcchartId, toaccounting, accpresetdefId, splitbyoperations, operationcodes, topaymentorder, minussign, paymentdefId, docqueueId, correctedbyId, createdbyId, rounding, correctiontype, correctionexpr, correctiontypeastext, onlyevalexpression);
   }
 
   @Override
@@ -550,30 +586,30 @@ public class Wageclosingdef   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wageclosingdef {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    periodicity: ").append(toIndentedString(periodicity)).append("\n");
-    sb.append("    calcChartID: ").append(toIndentedString(calcChartID)).append("\n");
-    sb.append("    toAccounting: ").append(toIndentedString(toAccounting)).append("\n");
-    sb.append("    accPresetDefID: ").append(toIndentedString(accPresetDefID)).append("\n");
-    sb.append("    splitByOperations: ").append(toIndentedString(splitByOperations)).append("\n");
-    sb.append("    operationCodes: ").append(toIndentedString(operationCodes)).append("\n");
-    sb.append("    toPaymentOrder: ").append(toIndentedString(toPaymentOrder)).append("\n");
-    sb.append("    minusSign: ").append(toIndentedString(minusSign)).append("\n");
-    sb.append("    paymentDefID: ").append(toIndentedString(paymentDefID)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
+    sb.append("    calcchartId: ").append(toIndentedString(calcchartId)).append("\n");
+    sb.append("    toaccounting: ").append(toIndentedString(toaccounting)).append("\n");
+    sb.append("    accpresetdefId: ").append(toIndentedString(accpresetdefId)).append("\n");
+    sb.append("    splitbyoperations: ").append(toIndentedString(splitbyoperations)).append("\n");
+    sb.append("    operationcodes: ").append(toIndentedString(operationcodes)).append("\n");
+    sb.append("    topaymentorder: ").append(toIndentedString(topaymentorder)).append("\n");
+    sb.append("    minussign: ").append(toIndentedString(minussign)).append("\n");
+    sb.append("    paymentdefId: ").append(toIndentedString(paymentdefId)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
     sb.append("    rounding: ").append(toIndentedString(rounding)).append("\n");
-    sb.append("    correctionType: ").append(toIndentedString(correctionType)).append("\n");
-    sb.append("    correctionExpr: ").append(toIndentedString(correctionExpr)).append("\n");
-    sb.append("    correctionTypeAsText: ").append(toIndentedString(correctionTypeAsText)).append("\n");
-    sb.append("    onlyEvalExpression: ").append(toIndentedString(onlyEvalExpression)).append("\n");
+    sb.append("    correctiontype: ").append(toIndentedString(correctiontype)).append("\n");
+    sb.append("    correctionexpr: ").append(toIndentedString(correctionexpr)).append("\n");
+    sb.append("    correctiontypeastext: ").append(toIndentedString(correctiontypeastext)).append("\n");
+    sb.append("    onlyevalexpression: ").append(toIndentedString(onlyevalexpression)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,72 +36,108 @@ import java.util.Objects;
 /**
  * Dealerturnoverdefinition
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Dealerturnoverdefinition   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Dealerturnoverdefinitionrow> rows = new ArrayList<Dealerturnoverdefinitionrow>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Comment")
+  @SerializedName("comment")
   private String comment = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Dealerturnoverdefinition displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Dealerturnoverdefinition id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Dealerturnoverdefinition classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Dealerturnoverdefinition objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Dealerturnoverdefinition rows(List<Dealerturnoverdefinitionrow> rows) {
@@ -115,10 +151,10 @@ public class Dealerturnoverdefinition   {
   }
 
    /**
-   * Řádky; kolekce BO Tabulka obratů dealerských skupin - řádek [nepersistentní položka]
+   * Řádky; kolekce bo tabulka obratů dealerských skupin - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Tabulka obratů dealerských skupin - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo tabulka obratů dealerských skupin - řádek [nepersistentní položka]")
   public List<Dealerturnoverdefinitionrow> getRows() {
     return rows;
   }
@@ -133,10 +169,10 @@ public class Dealerturnoverdefinition   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -151,10 +187,10 @@ public class Dealerturnoverdefinition   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -169,10 +205,10 @@ public class Dealerturnoverdefinition   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -187,10 +223,10 @@ public class Dealerturnoverdefinition   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -205,10 +241,10 @@ public class Dealerturnoverdefinition   {
   }
 
    /**
-   * Poznámka
+   * poznámka
    * @return comment
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka")
+  @ApiModelProperty(example = "null", value = "poznámka")
   public String getComment() {
     return comment;
   }
@@ -227,10 +263,10 @@ public class Dealerturnoverdefinition   {
       return false;
     }
     Dealerturnoverdefinition dealerturnoverdefinition = (Dealerturnoverdefinition) o;
-    return Objects.equals(this.displayName, dealerturnoverdefinition.displayName) &&
-        Objects.equals(this.ID, dealerturnoverdefinition.ID) &&
-        Objects.equals(this.classID, dealerturnoverdefinition.classID) &&
-        Objects.equals(this.objVersion, dealerturnoverdefinition.objVersion) &&
+    return Objects.equals(this.displayname, dealerturnoverdefinition.displayname) &&
+        Objects.equals(this.id, dealerturnoverdefinition.id) &&
+        Objects.equals(this.classid, dealerturnoverdefinition.classid) &&
+        Objects.equals(this.objversion, dealerturnoverdefinition.objversion) &&
         Objects.equals(this.rows, dealerturnoverdefinition.rows) &&
         Objects.equals(this.hidden, dealerturnoverdefinition.hidden) &&
         Objects.equals(this.name, dealerturnoverdefinition.name) &&
@@ -241,7 +277,7 @@ public class Dealerturnoverdefinition   {
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, name, code, note, comment);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, name, code, note, comment);
   }
 
   @Override
@@ -249,10 +285,10 @@ public class Dealerturnoverdefinition   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Dealerturnoverdefinition {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,309 +34,363 @@ import java.util.Objects;
 /**
  * Posdocumentvat
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posdocumentvat   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("TAmountWithoutVAT")
-  private Double tAmountWithoutVAT = null;
+  @SerializedName("tamountwithoutvat")
+  private Double tamountwithoutvat = null;
 
-  @SerializedName("TAmount")
-  private Double tAmount = null;
+  @SerializedName("tamount")
+  private Double tamount = null;
 
-  @SerializedName("VATRate")
-  private Double vATRate = null;
+  @SerializedName("vatrate")
+  private Double vatrate = null;
 
-  @SerializedName("LocalTAmountWithoutVAT")
-  private Double localTAmountWithoutVAT = null;
+  @SerializedName("localtamountwithoutvat")
+  private Double localtamountwithoutvat = null;
 
-  @SerializedName("LocalTAmount")
-  private Double localTAmount = null;
+  @SerializedName("localtamount")
+  private Double localtamount = null;
 
-  @SerializedName("VATRound")
-  private Double vATRound = null;
+  @SerializedName("vatround")
+  private Double vatround = null;
 
-  @SerializedName("LocalVATRound")
-  private Double localVATRound = null;
+  @SerializedName("localvatround")
+  private Double localvatround = null;
 
-  @SerializedName("VATRate_ID")
-  private String vATRateID = null;
+  @SerializedName("vatrate_id")
+  private String vatrateId = null;
 
-  @SerializedName("RoundingAmount")
-  private Double roundingAmount = null;
+  @SerializedName("roundingamount")
+  private Double roundingamount = null;
 
-  @SerializedName("RoundingWithoutVAT")
-  private Double roundingWithoutVAT = null;
+  @SerializedName("roundingwithoutvat")
+  private Double roundingwithoutvat = null;
 
-  @SerializedName("LocalRoundingAmount")
-  private Double localRoundingAmount = null;
+  @SerializedName("localroundingamount")
+  private Double localroundingamount = null;
 
-  @SerializedName("LocalRoundingWithoutVAT")
-  private Double localRoundingWithoutVAT = null;
+  @SerializedName("localroundingwithoutvat")
+  private Double localroundingwithoutvat = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Účtenka [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Účtenka [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Posdocumentvat tAmountWithoutVAT(Double tAmountWithoutVAT) {
-    this.tAmountWithoutVAT = tAmountWithoutVAT;
+  public Posdocumentvat displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Bez daně [persistentní položka]
-   * @return tAmountWithoutVAT
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Bez daně [persistentní položka]")
-  public Double getTAmountWithoutVAT() {
-    return tAmountWithoutVAT;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setTAmountWithoutVAT(Double tAmountWithoutVAT) {
-    this.tAmountWithoutVAT = tAmountWithoutVAT;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Posdocumentvat tAmount(Double tAmount) {
-    this.tAmount = tAmount;
+  public Posdocumentvat id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Celkem [persistentní položka]
-   * @return tAmount
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Celkem [persistentní položka]")
-  public Double getTAmount() {
-    return tAmount;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setTAmount(Double tAmount) {
-    this.tAmount = tAmount;
+  public void setId(String id) {
+    this.id = id;
   }
 
-   /**
-   * Sazba [persistentní položka]
-   * @return vATRate
-  **/
-  @ApiModelProperty(example = "null", value = "Sazba [persistentní položka]")
-  public Double getVATRate() {
-    return vATRate;
-  }
-
-  public Posdocumentvat localTAmountWithoutVAT(Double localTAmountWithoutVAT) {
-    this.localTAmountWithoutVAT = localTAmountWithoutVAT;
+  public Posdocumentvat classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Lokálně bez daně [persistentní položka]
-   * @return localTAmountWithoutVAT
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Lokálně bez daně [persistentní položka]")
-  public Double getLocalTAmountWithoutVAT() {
-    return localTAmountWithoutVAT;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setLocalTAmountWithoutVAT(Double localTAmountWithoutVAT) {
-    this.localTAmountWithoutVAT = localTAmountWithoutVAT;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Posdocumentvat localTAmount(Double localTAmount) {
-    this.localTAmount = localTAmount;
+  public Posdocumentvat objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Celkem lokálně [persistentní položka]
-   * @return localTAmount
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Celkem lokálně [persistentní položka]")
-  public Double getLocalTAmount() {
-    return localTAmount;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setLocalTAmount(Double localTAmount) {
-    this.localTAmount = localTAmount;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Posdocumentvat vATRound(Double vATRound) {
-    this.vATRound = vATRound;
+  public Posdocumentvat parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Zaokrouhlení [persistentní položka]
-   * @return vATRound
+   * vlastník; id objektu Účtenka [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlení [persistentní položka]")
-  public Double getVATRound() {
-    return vATRound;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu Účtenka [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setVATRound(Double vATRound) {
-    this.vATRound = vATRound;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Posdocumentvat localVATRound(Double localVATRound) {
-    this.localVATRound = localVATRound;
+  public Posdocumentvat tamountwithoutvat(Double tamountwithoutvat) {
+    this.tamountwithoutvat = tamountwithoutvat;
     return this;
   }
 
    /**
-   * Zaokrouhlení lokálně [persistentní položka]
-   * @return localVATRound
+   * bez daně [persistentní položka]
+   * @return tamountwithoutvat
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlení lokálně [persistentní položka]")
-  public Double getLocalVATRound() {
-    return localVATRound;
+  @ApiModelProperty(example = "null", value = "bez daně [persistentní položka]")
+  public Double getTamountwithoutvat() {
+    return tamountwithoutvat;
   }
 
-  public void setLocalVATRound(Double localVATRound) {
-    this.localVATRound = localVATRound;
+  public void setTamountwithoutvat(Double tamountwithoutvat) {
+    this.tamountwithoutvat = tamountwithoutvat;
   }
 
-  public Posdocumentvat vATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public Posdocumentvat tamount(Double tamount) {
+    this.tamount = tamount;
     return this;
   }
 
    /**
-   * %DPH; ID objektu DPH sazba [persistentní položka]
-   * @return vATRateID
+   * celkem [persistentní položka]
+   * @return tamount
   **/
-  @ApiModelProperty(example = "null", value = "%DPH; ID objektu DPH sazba [persistentní položka]")
-  public String getVATRateID() {
-    return vATRateID;
+  @ApiModelProperty(example = "null", value = "celkem [persistentní položka]")
+  public Double getTamount() {
+    return tamount;
   }
 
-  public void setVATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public void setTamount(Double tamount) {
+    this.tamount = tamount;
   }
 
-  public Posdocumentvat roundingAmount(Double roundingAmount) {
-    this.roundingAmount = roundingAmount;
+  public Posdocumentvat vatrate(Double vatrate) {
+    this.vatrate = vatrate;
     return this;
   }
 
    /**
-   * Hal. [persistentní položka]
-   * @return roundingAmount
+   * sazba [persistentní položka]
+   * @return vatrate
   **/
-  @ApiModelProperty(example = "null", value = "Hal. [persistentní položka]")
-  public Double getRoundingAmount() {
-    return roundingAmount;
+  @ApiModelProperty(example = "null", value = "sazba [persistentní položka]")
+  public Double getVatrate() {
+    return vatrate;
   }
 
-  public void setRoundingAmount(Double roundingAmount) {
-    this.roundingAmount = roundingAmount;
+  public void setVatrate(Double vatrate) {
+    this.vatrate = vatrate;
   }
 
-  public Posdocumentvat roundingWithoutVAT(Double roundingWithoutVAT) {
-    this.roundingWithoutVAT = roundingWithoutVAT;
+  public Posdocumentvat localtamountwithoutvat(Double localtamountwithoutvat) {
+    this.localtamountwithoutvat = localtamountwithoutvat;
     return this;
   }
 
    /**
-   * Hal. bez DPH [persistentní položka]
-   * @return roundingWithoutVAT
+   * lokálně bez daně [persistentní položka]
+   * @return localtamountwithoutvat
   **/
-  @ApiModelProperty(example = "null", value = "Hal. bez DPH [persistentní položka]")
-  public Double getRoundingWithoutVAT() {
-    return roundingWithoutVAT;
+  @ApiModelProperty(example = "null", value = "lokálně bez daně [persistentní položka]")
+  public Double getLocaltamountwithoutvat() {
+    return localtamountwithoutvat;
   }
 
-  public void setRoundingWithoutVAT(Double roundingWithoutVAT) {
-    this.roundingWithoutVAT = roundingWithoutVAT;
+  public void setLocaltamountwithoutvat(Double localtamountwithoutvat) {
+    this.localtamountwithoutvat = localtamountwithoutvat;
   }
 
-  public Posdocumentvat localRoundingAmount(Double localRoundingAmount) {
-    this.localRoundingAmount = localRoundingAmount;
+  public Posdocumentvat localtamount(Double localtamount) {
+    this.localtamount = localtamount;
     return this;
   }
 
    /**
-   * Hal.vyr.lok. [persistentní položka]
-   * @return localRoundingAmount
+   * celkem lokálně [persistentní položka]
+   * @return localtamount
   **/
-  @ApiModelProperty(example = "null", value = "Hal.vyr.lok. [persistentní položka]")
-  public Double getLocalRoundingAmount() {
-    return localRoundingAmount;
+  @ApiModelProperty(example = "null", value = "celkem lokálně [persistentní položka]")
+  public Double getLocaltamount() {
+    return localtamount;
   }
 
-  public void setLocalRoundingAmount(Double localRoundingAmount) {
-    this.localRoundingAmount = localRoundingAmount;
+  public void setLocaltamount(Double localtamount) {
+    this.localtamount = localtamount;
   }
 
-  public Posdocumentvat localRoundingWithoutVAT(Double localRoundingWithoutVAT) {
-    this.localRoundingWithoutVAT = localRoundingWithoutVAT;
+  public Posdocumentvat vatround(Double vatround) {
+    this.vatround = vatround;
     return this;
   }
 
    /**
-   * Hal. bez DPH lok [persistentní položka]
-   * @return localRoundingWithoutVAT
+   * zaokrouhlení [persistentní položka]
+   * @return vatround
   **/
-  @ApiModelProperty(example = "null", value = "Hal. bez DPH lok [persistentní položka]")
-  public Double getLocalRoundingWithoutVAT() {
-    return localRoundingWithoutVAT;
+  @ApiModelProperty(example = "null", value = "zaokrouhlení [persistentní položka]")
+  public Double getVatround() {
+    return vatround;
   }
 
-  public void setLocalRoundingWithoutVAT(Double localRoundingWithoutVAT) {
-    this.localRoundingWithoutVAT = localRoundingWithoutVAT;
+  public void setVatround(Double vatround) {
+    this.vatround = vatround;
+  }
+
+  public Posdocumentvat localvatround(Double localvatround) {
+    this.localvatround = localvatround;
+    return this;
+  }
+
+   /**
+   * zaokrouhlení lokálně [persistentní položka]
+   * @return localvatround
+  **/
+  @ApiModelProperty(example = "null", value = "zaokrouhlení lokálně [persistentní položka]")
+  public Double getLocalvatround() {
+    return localvatround;
+  }
+
+  public void setLocalvatround(Double localvatround) {
+    this.localvatround = localvatround;
+  }
+
+  public Posdocumentvat vatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
+    return this;
+  }
+
+   /**
+   * %dph; id objektu dph sazba [persistentní položka]
+   * @return vatrateId
+  **/
+  @ApiModelProperty(example = "null", value = "%dph; id objektu dph sazba [persistentní položka]")
+  public String getVatrateId() {
+    return vatrateId;
+  }
+
+  public void setVatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
+  }
+
+  public Posdocumentvat roundingamount(Double roundingamount) {
+    this.roundingamount = roundingamount;
+    return this;
+  }
+
+   /**
+   * hal. [persistentní položka]
+   * @return roundingamount
+  **/
+  @ApiModelProperty(example = "null", value = "hal. [persistentní položka]")
+  public Double getRoundingamount() {
+    return roundingamount;
+  }
+
+  public void setRoundingamount(Double roundingamount) {
+    this.roundingamount = roundingamount;
+  }
+
+  public Posdocumentvat roundingwithoutvat(Double roundingwithoutvat) {
+    this.roundingwithoutvat = roundingwithoutvat;
+    return this;
+  }
+
+   /**
+   * hal. bez dph [persistentní položka]
+   * @return roundingwithoutvat
+  **/
+  @ApiModelProperty(example = "null", value = "hal. bez dph [persistentní položka]")
+  public Double getRoundingwithoutvat() {
+    return roundingwithoutvat;
+  }
+
+  public void setRoundingwithoutvat(Double roundingwithoutvat) {
+    this.roundingwithoutvat = roundingwithoutvat;
+  }
+
+  public Posdocumentvat localroundingamount(Double localroundingamount) {
+    this.localroundingamount = localroundingamount;
+    return this;
+  }
+
+   /**
+   * hal.vyr.lok. [persistentní položka]
+   * @return localroundingamount
+  **/
+  @ApiModelProperty(example = "null", value = "hal.vyr.lok. [persistentní položka]")
+  public Double getLocalroundingamount() {
+    return localroundingamount;
+  }
+
+  public void setLocalroundingamount(Double localroundingamount) {
+    this.localroundingamount = localroundingamount;
+  }
+
+  public Posdocumentvat localroundingwithoutvat(Double localroundingwithoutvat) {
+    this.localroundingwithoutvat = localroundingwithoutvat;
+    return this;
+  }
+
+   /**
+   * hal. bez dph lok [persistentní položka]
+   * @return localroundingwithoutvat
+  **/
+  @ApiModelProperty(example = "null", value = "hal. bez dph lok [persistentní položka]")
+  public Double getLocalroundingwithoutvat() {
+    return localroundingwithoutvat;
+  }
+
+  public void setLocalroundingwithoutvat(Double localroundingwithoutvat) {
+    this.localroundingwithoutvat = localroundingwithoutvat;
   }
 
 
@@ -349,28 +403,28 @@ public class Posdocumentvat   {
       return false;
     }
     Posdocumentvat posdocumentvat = (Posdocumentvat) o;
-    return Objects.equals(this.displayName, posdocumentvat.displayName) &&
-        Objects.equals(this.ID, posdocumentvat.ID) &&
-        Objects.equals(this.classID, posdocumentvat.classID) &&
-        Objects.equals(this.objVersion, posdocumentvat.objVersion) &&
-        Objects.equals(this.parentID, posdocumentvat.parentID) &&
-        Objects.equals(this.tAmountWithoutVAT, posdocumentvat.tAmountWithoutVAT) &&
-        Objects.equals(this.tAmount, posdocumentvat.tAmount) &&
-        Objects.equals(this.vATRate, posdocumentvat.vATRate) &&
-        Objects.equals(this.localTAmountWithoutVAT, posdocumentvat.localTAmountWithoutVAT) &&
-        Objects.equals(this.localTAmount, posdocumentvat.localTAmount) &&
-        Objects.equals(this.vATRound, posdocumentvat.vATRound) &&
-        Objects.equals(this.localVATRound, posdocumentvat.localVATRound) &&
-        Objects.equals(this.vATRateID, posdocumentvat.vATRateID) &&
-        Objects.equals(this.roundingAmount, posdocumentvat.roundingAmount) &&
-        Objects.equals(this.roundingWithoutVAT, posdocumentvat.roundingWithoutVAT) &&
-        Objects.equals(this.localRoundingAmount, posdocumentvat.localRoundingAmount) &&
-        Objects.equals(this.localRoundingWithoutVAT, posdocumentvat.localRoundingWithoutVAT);
+    return Objects.equals(this.displayname, posdocumentvat.displayname) &&
+        Objects.equals(this.id, posdocumentvat.id) &&
+        Objects.equals(this.classid, posdocumentvat.classid) &&
+        Objects.equals(this.objversion, posdocumentvat.objversion) &&
+        Objects.equals(this.parentId, posdocumentvat.parentId) &&
+        Objects.equals(this.tamountwithoutvat, posdocumentvat.tamountwithoutvat) &&
+        Objects.equals(this.tamount, posdocumentvat.tamount) &&
+        Objects.equals(this.vatrate, posdocumentvat.vatrate) &&
+        Objects.equals(this.localtamountwithoutvat, posdocumentvat.localtamountwithoutvat) &&
+        Objects.equals(this.localtamount, posdocumentvat.localtamount) &&
+        Objects.equals(this.vatround, posdocumentvat.vatround) &&
+        Objects.equals(this.localvatround, posdocumentvat.localvatround) &&
+        Objects.equals(this.vatrateId, posdocumentvat.vatrateId) &&
+        Objects.equals(this.roundingamount, posdocumentvat.roundingamount) &&
+        Objects.equals(this.roundingwithoutvat, posdocumentvat.roundingwithoutvat) &&
+        Objects.equals(this.localroundingamount, posdocumentvat.localroundingamount) &&
+        Objects.equals(this.localroundingwithoutvat, posdocumentvat.localroundingwithoutvat);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, tAmountWithoutVAT, tAmount, vATRate, localTAmountWithoutVAT, localTAmount, vATRound, localVATRound, vATRateID, roundingAmount, roundingWithoutVAT, localRoundingAmount, localRoundingWithoutVAT);
+    return Objects.hash(displayname, id, classid, objversion, parentId, tamountwithoutvat, tamount, vatrate, localtamountwithoutvat, localtamount, vatround, localvatround, vatrateId, roundingamount, roundingwithoutvat, localroundingamount, localroundingwithoutvat);
   }
 
   @Override
@@ -378,23 +432,23 @@ public class Posdocumentvat   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posdocumentvat {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    tAmountWithoutVAT: ").append(toIndentedString(tAmountWithoutVAT)).append("\n");
-    sb.append("    tAmount: ").append(toIndentedString(tAmount)).append("\n");
-    sb.append("    vATRate: ").append(toIndentedString(vATRate)).append("\n");
-    sb.append("    localTAmountWithoutVAT: ").append(toIndentedString(localTAmountWithoutVAT)).append("\n");
-    sb.append("    localTAmount: ").append(toIndentedString(localTAmount)).append("\n");
-    sb.append("    vATRound: ").append(toIndentedString(vATRound)).append("\n");
-    sb.append("    localVATRound: ").append(toIndentedString(localVATRound)).append("\n");
-    sb.append("    vATRateID: ").append(toIndentedString(vATRateID)).append("\n");
-    sb.append("    roundingAmount: ").append(toIndentedString(roundingAmount)).append("\n");
-    sb.append("    roundingWithoutVAT: ").append(toIndentedString(roundingWithoutVAT)).append("\n");
-    sb.append("    localRoundingAmount: ").append(toIndentedString(localRoundingAmount)).append("\n");
-    sb.append("    localRoundingWithoutVAT: ").append(toIndentedString(localRoundingWithoutVAT)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    tamountwithoutvat: ").append(toIndentedString(tamountwithoutvat)).append("\n");
+    sb.append("    tamount: ").append(toIndentedString(tamount)).append("\n");
+    sb.append("    vatrate: ").append(toIndentedString(vatrate)).append("\n");
+    sb.append("    localtamountwithoutvat: ").append(toIndentedString(localtamountwithoutvat)).append("\n");
+    sb.append("    localtamount: ").append(toIndentedString(localtamount)).append("\n");
+    sb.append("    vatround: ").append(toIndentedString(vatround)).append("\n");
+    sb.append("    localvatround: ").append(toIndentedString(localvatround)).append("\n");
+    sb.append("    vatrateId: ").append(toIndentedString(vatrateId)).append("\n");
+    sb.append("    roundingamount: ").append(toIndentedString(roundingamount)).append("\n");
+    sb.append("    roundingwithoutvat: ").append(toIndentedString(roundingwithoutvat)).append("\n");
+    sb.append("    localroundingamount: ").append(toIndentedString(localroundingamount)).append("\n");
+    sb.append("    localroundingwithoutvat: ").append(toIndentedString(localroundingwithoutvat)).append("\n");
     sb.append("}");
     return sb.toString();
   }

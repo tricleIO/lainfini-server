@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,126 +34,171 @@ import java.util.Objects;
 /**
  * Cdconfirmapprovedrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Cdconfirmapprovedrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("TAmount")
-  private Double tAmount = null;
+  @SerializedName("tamount")
+  private Double tamount = null;
 
-  @SerializedName("Text")
+  @SerializedName("text")
   private String text = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("DrawingAmount")
-  private Double drawingAmount = null;
+  @SerializedName("drawingamount")
+  private Double drawingamount = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Schválený výdaj [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Schválený výdaj [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Cdconfirmapprovedrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Cdconfirmapprovedrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Cdconfirmapprovedrow tAmount(Double tAmount) {
-    this.tAmount = tAmount;
+  public Cdconfirmapprovedrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Celkem [persistentní položka]
-   * @return tAmount
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Celkem [persistentní položka]")
-  public Double getTAmount() {
-    return tAmount;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setTAmount(Double tAmount) {
-    this.tAmount = tAmount;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Cdconfirmapprovedrow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Cdconfirmapprovedrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Cdconfirmapprovedrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu schválený výdaj [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu schválený výdaj [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Cdconfirmapprovedrow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Cdconfirmapprovedrow tamount(Double tamount) {
+    this.tamount = tamount;
+    return this;
+  }
+
+   /**
+   * celkem [persistentní položka]
+   * @return tamount
+  **/
+  @ApiModelProperty(example = "null", value = "celkem [persistentní položka]")
+  public Double getTamount() {
+    return tamount;
+  }
+
+  public void setTamount(Double tamount) {
+    this.tamount = tamount;
   }
 
   public Cdconfirmapprovedrow text(String text) {
@@ -162,10 +207,10 @@ public class Cdconfirmapprovedrow   {
   }
 
    /**
-   * Text [persistentní položka]
+   * text [persistentní položka]
    * @return text
   **/
-  @ApiModelProperty(example = "null", value = "Text [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "text [persistentní položka]")
   public String getText() {
     return text;
   }
@@ -174,94 +219,94 @@ public class Cdconfirmapprovedrow   {
     this.text = text;
   }
 
-  public Cdconfirmapprovedrow divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Cdconfirmapprovedrow divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Cdconfirmapprovedrow busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Cdconfirmapprovedrow busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Cdconfirmapprovedrow busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Cdconfirmapprovedrow bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * O.případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * o.případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "O.případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "o.případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Cdconfirmapprovedrow busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Cdconfirmapprovedrow busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Cdconfirmapprovedrow drawingAmount(Double drawingAmount) {
-    this.drawingAmount = drawingAmount;
+  public Cdconfirmapprovedrow drawingamount(Double drawingamount) {
+    this.drawingamount = drawingamount;
     return this;
   }
 
    /**
    * Čerpaná částka
-   * @return drawingAmount
+   * @return drawingamount
   **/
   @ApiModelProperty(example = "null", value = "Čerpaná částka")
-  public Double getDrawingAmount() {
-    return drawingAmount;
+  public Double getDrawingamount() {
+    return drawingamount;
   }
 
-  public void setDrawingAmount(Double drawingAmount) {
-    this.drawingAmount = drawingAmount;
+  public void setDrawingamount(Double drawingamount) {
+    this.drawingamount = drawingamount;
   }
 
 
@@ -274,24 +319,24 @@ public class Cdconfirmapprovedrow   {
       return false;
     }
     Cdconfirmapprovedrow cdconfirmapprovedrow = (Cdconfirmapprovedrow) o;
-    return Objects.equals(this.displayName, cdconfirmapprovedrow.displayName) &&
-        Objects.equals(this.ID, cdconfirmapprovedrow.ID) &&
-        Objects.equals(this.classID, cdconfirmapprovedrow.classID) &&
-        Objects.equals(this.objVersion, cdconfirmapprovedrow.objVersion) &&
-        Objects.equals(this.parentID, cdconfirmapprovedrow.parentID) &&
-        Objects.equals(this.posIndex, cdconfirmapprovedrow.posIndex) &&
-        Objects.equals(this.tAmount, cdconfirmapprovedrow.tAmount) &&
+    return Objects.equals(this.displayname, cdconfirmapprovedrow.displayname) &&
+        Objects.equals(this.id, cdconfirmapprovedrow.id) &&
+        Objects.equals(this.classid, cdconfirmapprovedrow.classid) &&
+        Objects.equals(this.objversion, cdconfirmapprovedrow.objversion) &&
+        Objects.equals(this.parentId, cdconfirmapprovedrow.parentId) &&
+        Objects.equals(this.posindex, cdconfirmapprovedrow.posindex) &&
+        Objects.equals(this.tamount, cdconfirmapprovedrow.tamount) &&
         Objects.equals(this.text, cdconfirmapprovedrow.text) &&
-        Objects.equals(this.divisionID, cdconfirmapprovedrow.divisionID) &&
-        Objects.equals(this.busOrderID, cdconfirmapprovedrow.busOrderID) &&
-        Objects.equals(this.busTransactionID, cdconfirmapprovedrow.busTransactionID) &&
-        Objects.equals(this.busProjectID, cdconfirmapprovedrow.busProjectID) &&
-        Objects.equals(this.drawingAmount, cdconfirmapprovedrow.drawingAmount);
+        Objects.equals(this.divisionId, cdconfirmapprovedrow.divisionId) &&
+        Objects.equals(this.busorderId, cdconfirmapprovedrow.busorderId) &&
+        Objects.equals(this.bustransactionId, cdconfirmapprovedrow.bustransactionId) &&
+        Objects.equals(this.busprojectId, cdconfirmapprovedrow.busprojectId) &&
+        Objects.equals(this.drawingamount, cdconfirmapprovedrow.drawingamount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, tAmount, text, divisionID, busOrderID, busTransactionID, busProjectID, drawingAmount);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, tamount, text, divisionId, busorderId, bustransactionId, busprojectId, drawingamount);
   }
 
   @Override
@@ -299,19 +344,19 @@ public class Cdconfirmapprovedrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Cdconfirmapprovedrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    tAmount: ").append(toIndentedString(tAmount)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    tamount: ").append(toIndentedString(tamount)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    drawingAmount: ").append(toIndentedString(drawingAmount)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    drawingamount: ").append(toIndentedString(drawingamount)).append("\n");
     sb.append("}");
     return sb.toString();
   }

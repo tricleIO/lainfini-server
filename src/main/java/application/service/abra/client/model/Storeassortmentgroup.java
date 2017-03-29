@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,78 +34,114 @@ import java.util.Objects;
 /**
  * Storeassortmentgroup
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Storeassortmentgroup   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("UsualGrossProfit")
-  private Double usualGrossProfit = null;
+  @SerializedName("usualgrossprofit")
+  private Double usualgrossprofit = null;
 
-  @SerializedName("ToleranceType")
-  private Integer toleranceType = null;
+  @SerializedName("tolerancetype")
+  private Integer tolerancetype = null;
 
-  @SerializedName("TolerancePlus")
-  private Double tolerancePlus = null;
+  @SerializedName("toleranceplus")
+  private Double toleranceplus = null;
 
-  @SerializedName("ToleranceMinus")
-  private Double toleranceMinus = null;
+  @SerializedName("toleranceminus")
+  private Double toleranceminus = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Storeassortmentgroup displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Storeassortmentgroup id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Storeassortmentgroup classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Storeassortmentgroup objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Storeassortmentgroup hidden(Boolean hidden) {
@@ -114,10 +150,10 @@ public class Storeassortmentgroup   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -132,10 +168,10 @@ public class Storeassortmentgroup   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -150,10 +186,10 @@ public class Storeassortmentgroup   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -162,94 +198,94 @@ public class Storeassortmentgroup   {
     this.name = name;
   }
 
-  public Storeassortmentgroup parentID(String parentID) {
-    this.parentID = parentID;
+  public Storeassortmentgroup parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Nadřízená sk.; ID objektu Sortimentní skupina [persistentní položka]
-   * @return parentID
+   * nadřízená sk.; id objektu sortimentní skupina [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízená sk.; ID objektu Sortimentní skupina [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "nadřízená sk.; id objektu sortimentní skupina [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setParentID(String parentID) {
-    this.parentID = parentID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Storeassortmentgroup usualGrossProfit(Double usualGrossProfit) {
-    this.usualGrossProfit = usualGrossProfit;
+  public Storeassortmentgroup usualgrossprofit(Double usualgrossprofit) {
+    this.usualgrossprofit = usualgrossprofit;
     return this;
   }
 
    /**
-   * Procento obvyklé marže [persistentní položka]
-   * @return usualGrossProfit
+   * procento obvyklé marže [persistentní položka]
+   * @return usualgrossprofit
   **/
-  @ApiModelProperty(example = "null", value = "Procento obvyklé marže [persistentní položka]")
-  public Double getUsualGrossProfit() {
-    return usualGrossProfit;
+  @ApiModelProperty(example = "null", value = "procento obvyklé marže [persistentní položka]")
+  public Double getUsualgrossprofit() {
+    return usualgrossprofit;
   }
 
-  public void setUsualGrossProfit(Double usualGrossProfit) {
-    this.usualGrossProfit = usualGrossProfit;
+  public void setUsualgrossprofit(Double usualgrossprofit) {
+    this.usualgrossprofit = usualgrossprofit;
   }
 
-  public Storeassortmentgroup toleranceType(Integer toleranceType) {
-    this.toleranceType = toleranceType;
+  public Storeassortmentgroup tolerancetype(Integer tolerancetype) {
+    this.tolerancetype = tolerancetype;
     return this;
   }
 
    /**
-   * Typ tolerance marže [persistentní položka]
-   * @return toleranceType
+   * typ tolerance marže [persistentní položka]
+   * @return tolerancetype
   **/
-  @ApiModelProperty(example = "null", value = "Typ tolerance marže [persistentní položka]")
-  public Integer getToleranceType() {
-    return toleranceType;
+  @ApiModelProperty(example = "null", value = "typ tolerance marže [persistentní položka]")
+  public Integer getTolerancetype() {
+    return tolerancetype;
   }
 
-  public void setToleranceType(Integer toleranceType) {
-    this.toleranceType = toleranceType;
+  public void setTolerancetype(Integer tolerancetype) {
+    this.tolerancetype = tolerancetype;
   }
 
-  public Storeassortmentgroup tolerancePlus(Double tolerancePlus) {
-    this.tolerancePlus = tolerancePlus;
+  public Storeassortmentgroup toleranceplus(Double toleranceplus) {
+    this.toleranceplus = toleranceplus;
     return this;
   }
 
    /**
-   * Tolerance nahoru [persistentní položka]
-   * @return tolerancePlus
+   * tolerance nahoru [persistentní položka]
+   * @return toleranceplus
   **/
-  @ApiModelProperty(example = "null", value = "Tolerance nahoru [persistentní položka]")
-  public Double getTolerancePlus() {
-    return tolerancePlus;
+  @ApiModelProperty(example = "null", value = "tolerance nahoru [persistentní položka]")
+  public Double getToleranceplus() {
+    return toleranceplus;
   }
 
-  public void setTolerancePlus(Double tolerancePlus) {
-    this.tolerancePlus = tolerancePlus;
+  public void setToleranceplus(Double toleranceplus) {
+    this.toleranceplus = toleranceplus;
   }
 
-  public Storeassortmentgroup toleranceMinus(Double toleranceMinus) {
-    this.toleranceMinus = toleranceMinus;
+  public Storeassortmentgroup toleranceminus(Double toleranceminus) {
+    this.toleranceminus = toleranceminus;
     return this;
   }
 
    /**
-   * Tolerance dolů [persistentní položka]
-   * @return toleranceMinus
+   * tolerance dolů [persistentní položka]
+   * @return toleranceminus
   **/
-  @ApiModelProperty(example = "null", value = "Tolerance dolů [persistentní položka]")
-  public Double getToleranceMinus() {
-    return toleranceMinus;
+  @ApiModelProperty(example = "null", value = "tolerance dolů [persistentní položka]")
+  public Double getToleranceminus() {
+    return toleranceminus;
   }
 
-  public void setToleranceMinus(Double toleranceMinus) {
-    this.toleranceMinus = toleranceMinus;
+  public void setToleranceminus(Double toleranceminus) {
+    this.toleranceminus = toleranceminus;
   }
 
 
@@ -262,23 +298,23 @@ public class Storeassortmentgroup   {
       return false;
     }
     Storeassortmentgroup storeassortmentgroup = (Storeassortmentgroup) o;
-    return Objects.equals(this.displayName, storeassortmentgroup.displayName) &&
-        Objects.equals(this.ID, storeassortmentgroup.ID) &&
-        Objects.equals(this.classID, storeassortmentgroup.classID) &&
-        Objects.equals(this.objVersion, storeassortmentgroup.objVersion) &&
+    return Objects.equals(this.displayname, storeassortmentgroup.displayname) &&
+        Objects.equals(this.id, storeassortmentgroup.id) &&
+        Objects.equals(this.classid, storeassortmentgroup.classid) &&
+        Objects.equals(this.objversion, storeassortmentgroup.objversion) &&
         Objects.equals(this.hidden, storeassortmentgroup.hidden) &&
         Objects.equals(this.code, storeassortmentgroup.code) &&
         Objects.equals(this.name, storeassortmentgroup.name) &&
-        Objects.equals(this.parentID, storeassortmentgroup.parentID) &&
-        Objects.equals(this.usualGrossProfit, storeassortmentgroup.usualGrossProfit) &&
-        Objects.equals(this.toleranceType, storeassortmentgroup.toleranceType) &&
-        Objects.equals(this.tolerancePlus, storeassortmentgroup.tolerancePlus) &&
-        Objects.equals(this.toleranceMinus, storeassortmentgroup.toleranceMinus);
+        Objects.equals(this.parentId, storeassortmentgroup.parentId) &&
+        Objects.equals(this.usualgrossprofit, storeassortmentgroup.usualgrossprofit) &&
+        Objects.equals(this.tolerancetype, storeassortmentgroup.tolerancetype) &&
+        Objects.equals(this.toleranceplus, storeassortmentgroup.toleranceplus) &&
+        Objects.equals(this.toleranceminus, storeassortmentgroup.toleranceminus);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, parentID, usualGrossProfit, toleranceType, tolerancePlus, toleranceMinus);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, parentId, usualgrossprofit, tolerancetype, toleranceplus, toleranceminus);
   }
 
   @Override
@@ -286,18 +322,18 @@ public class Storeassortmentgroup   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Storeassortmentgroup {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    usualGrossProfit: ").append(toIndentedString(usualGrossProfit)).append("\n");
-    sb.append("    toleranceType: ").append(toIndentedString(toleranceType)).append("\n");
-    sb.append("    tolerancePlus: ").append(toIndentedString(tolerancePlus)).append("\n");
-    sb.append("    toleranceMinus: ").append(toIndentedString(toleranceMinus)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    usualgrossprofit: ").append(toIndentedString(usualgrossprofit)).append("\n");
+    sb.append("    tolerancetype: ").append(toIndentedString(tolerancetype)).append("\n");
+    sb.append("    toleranceplus: ").append(toIndentedString(toleranceplus)).append("\n");
+    sb.append("    toleranceminus: ").append(toIndentedString(toleranceminus)).append("\n");
     sb.append("}");
     return sb.toString();
   }

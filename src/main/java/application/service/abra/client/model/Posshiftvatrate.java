@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,114 +34,195 @@ import java.util.Objects;
 /**
  * Posshiftvatrate
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posshiftvatrate   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("VATRate_ID")
-  private String vATRateID = null;
+  @SerializedName("vatrate_id")
+  private String vatrateId = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("VATRate")
-  private Double vATRate = null;
+  @SerializedName("vatrate")
+  private Double vatrate = null;
 
-  @SerializedName("AmountWithoutVAT")
-  private Double amountWithoutVAT = null;
+  @SerializedName("amountwithoutvat")
+  private Double amountwithoutvat = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Posshiftvatrate displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Posshiftvatrate id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Posshiftvatrate classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Posshiftvatrate objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Směna [persistentní položka]
-   * @return parentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Směna [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Posshiftvatrate parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
   }
 
    /**
-   * Sazba DPH; ID objektu DPH sazba [persistentní položka]
-   * @return vATRateID
+   * vlastník; id objektu směna [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Sazba DPH; ID objektu DPH sazba [persistentní položka]")
-  public String getVATRateID() {
-    return vATRateID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu směna [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Posshiftvatrate vatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
+    return this;
   }
 
    /**
-   * Celkem [persistentní položka]
+   * sazba dph; id objektu dph sazba [persistentní položka]
+   * @return vatrateId
+  **/
+  @ApiModelProperty(example = "null", value = "sazba dph; id objektu dph sazba [persistentní položka]")
+  public String getVatrateId() {
+    return vatrateId;
+  }
+
+  public void setVatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
+  }
+
+  public Posshiftvatrate amount(Double amount) {
+    this.amount = amount;
+    return this;
+  }
+
+   /**
+   * celkem [persistentní položka]
    * @return amount
   **/
-  @ApiModelProperty(example = "null", value = "Celkem [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "celkem [persistentní položka]")
   public Double getAmount() {
     return amount;
   }
 
-   /**
-   * Sazba DPH [persistentní položka]
-   * @return vATRate
-  **/
-  @ApiModelProperty(example = "null", value = "Sazba DPH [persistentní položka]")
-  public Double getVATRate() {
-    return vATRate;
+  public void setAmount(Double amount) {
+    this.amount = amount;
+  }
+
+  public Posshiftvatrate vatrate(Double vatrate) {
+    this.vatrate = vatrate;
+    return this;
   }
 
    /**
-   * Bez daně [persistentní položka]
-   * @return amountWithoutVAT
+   * sazba dph [persistentní položka]
+   * @return vatrate
   **/
-  @ApiModelProperty(example = "null", value = "Bez daně [persistentní položka]")
-  public Double getAmountWithoutVAT() {
-    return amountWithoutVAT;
+  @ApiModelProperty(example = "null", value = "sazba dph [persistentní položka]")
+  public Double getVatrate() {
+    return vatrate;
+  }
+
+  public void setVatrate(Double vatrate) {
+    this.vatrate = vatrate;
+  }
+
+  public Posshiftvatrate amountwithoutvat(Double amountwithoutvat) {
+    this.amountwithoutvat = amountwithoutvat;
+    return this;
+  }
+
+   /**
+   * bez daně [persistentní položka]
+   * @return amountwithoutvat
+  **/
+  @ApiModelProperty(example = "null", value = "bez daně [persistentní položka]")
+  public Double getAmountwithoutvat() {
+    return amountwithoutvat;
+  }
+
+  public void setAmountwithoutvat(Double amountwithoutvat) {
+    this.amountwithoutvat = amountwithoutvat;
   }
 
 
@@ -154,20 +235,20 @@ public class Posshiftvatrate   {
       return false;
     }
     Posshiftvatrate posshiftvatrate = (Posshiftvatrate) o;
-    return Objects.equals(this.displayName, posshiftvatrate.displayName) &&
-        Objects.equals(this.ID, posshiftvatrate.ID) &&
-        Objects.equals(this.classID, posshiftvatrate.classID) &&
-        Objects.equals(this.objVersion, posshiftvatrate.objVersion) &&
-        Objects.equals(this.parentID, posshiftvatrate.parentID) &&
-        Objects.equals(this.vATRateID, posshiftvatrate.vATRateID) &&
+    return Objects.equals(this.displayname, posshiftvatrate.displayname) &&
+        Objects.equals(this.id, posshiftvatrate.id) &&
+        Objects.equals(this.classid, posshiftvatrate.classid) &&
+        Objects.equals(this.objversion, posshiftvatrate.objversion) &&
+        Objects.equals(this.parentId, posshiftvatrate.parentId) &&
+        Objects.equals(this.vatrateId, posshiftvatrate.vatrateId) &&
         Objects.equals(this.amount, posshiftvatrate.amount) &&
-        Objects.equals(this.vATRate, posshiftvatrate.vATRate) &&
-        Objects.equals(this.amountWithoutVAT, posshiftvatrate.amountWithoutVAT);
+        Objects.equals(this.vatrate, posshiftvatrate.vatrate) &&
+        Objects.equals(this.amountwithoutvat, posshiftvatrate.amountwithoutvat);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, vATRateID, amount, vATRate, amountWithoutVAT);
+    return Objects.hash(displayname, id, classid, objversion, parentId, vatrateId, amount, vatrate, amountwithoutvat);
   }
 
   @Override
@@ -175,15 +256,15 @@ public class Posshiftvatrate   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posshiftvatrate {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    vATRateID: ").append(toIndentedString(vATRateID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    vatrateId: ").append(toIndentedString(vatrateId)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    vATRate: ").append(toIndentedString(vATRate)).append("\n");
-    sb.append("    amountWithoutVAT: ").append(toIndentedString(amountWithoutVAT)).append("\n");
+    sb.append("    vatrate: ").append(toIndentedString(vatrate)).append("\n");
+    sb.append("    amountwithoutvat: ").append(toIndentedString(amountwithoutvat)).append("\n");
     sb.append("}");
     return sb.toString();
   }

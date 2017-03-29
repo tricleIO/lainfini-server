@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,207 +34,252 @@ import java.util.Objects;
 /**
  * Logstoredocumentrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Logstoredocumentrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("StoreBatch_ID")
-  private String storeBatchID = null;
+  @SerializedName("storebatch_id")
+  private String storebatchId = null;
 
-  @SerializedName("StoreDocRow_ID")
-  private String storeDocRowID = null;
+  @SerializedName("storedocrow_id")
+  private String storedocrowId = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("StorePosition_ID")
-  private String storePositionID = null;
+  @SerializedName("storeposition_id")
+  private String storepositionId = null;
 
-  @SerializedName("RestQuantity")
-  private Double restQuantity = null;
+  @SerializedName("restquantity")
+  private Double restquantity = null;
 
-  @SerializedName("UnitRestQuantity")
-  private Double unitRestQuantity = null;
+  @SerializedName("unitrestquantity")
+  private Double unitrestquantity = null;
 
-  @SerializedName("InPositionQuantity")
-  private Double inPositionQuantity = null;
+  @SerializedName("inpositionquantity")
+  private Double inpositionquantity = null;
 
-  @SerializedName("MasterRow_ID")
-  private String masterRowID = null;
+  @SerializedName("masterrow_id")
+  private String masterrowId = null;
 
-  @SerializedName("SortKey")
-  private String sortKey = null;
+  @SerializedName("sortkey")
+  private String sortkey = null;
 
-  @SerializedName("ContentUnit")
-  private String contentUnit = null;
+  @SerializedName("contentunit")
+  private String contentunit = null;
 
-  @SerializedName("ContentUnitRate")
-  private Double contentUnitRate = null;
+  @SerializedName("contentunitrate")
+  private Double contentunitrate = null;
 
-  @SerializedName("OrderFlow")
-  private Integer orderFlow = null;
+  @SerializedName("orderflow")
+  private Integer orderflow = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Polohovací doklad [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Polohovací doklad [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Logstoredocumentrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Logstoredocumentrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Logstoredocumentrow storeID(String storeID) {
-    this.storeID = storeID;
+  public Logstoredocumentrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Logstoredocumentrow storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Logstoredocumentrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Logstoredocumentrow storeBatchID(String storeBatchID) {
-    this.storeBatchID = storeBatchID;
+  public Logstoredocumentrow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Sériové číslo/šarže; ID objektu Šarže/sériové číslo [persistentní položka]
-   * @return storeBatchID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Sériové číslo/šarže; ID objektu Šarže/sériové číslo [persistentní položka]")
-  public String getStoreBatchID() {
-    return storeBatchID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setStoreBatchID(String storeBatchID) {
-    this.storeBatchID = storeBatchID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Logstoredocumentrow storeDocRowID(String storeDocRowID) {
-    this.storeDocRowID = storeDocRowID;
+  public Logstoredocumentrow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Odkaz na skladový řádek [persistentní položka]
-   * @return storeDocRowID
+   * vlastník; id objektu polohovací doklad [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na skladový řádek [persistentní položka]")
-  public String getStoreDocRowID() {
-    return storeDocRowID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu polohovací doklad [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setStoreDocRowID(String storeDocRowID) {
-    this.storeDocRowID = storeDocRowID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Logstoredocumentrow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Logstoredocumentrow storeId(String storeId) {
+    this.storeId = storeId;
+    return this;
+  }
+
+   /**
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
+  **/
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
+  }
+
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
+  }
+
+  public Logstoredocumentrow storecardId(String storecardId) {
+    this.storecardId = storecardId;
+    return this;
+  }
+
+   /**
+   * skladová karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
+  **/
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
+  }
+
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
+  }
+
+  public Logstoredocumentrow storebatchId(String storebatchId) {
+    this.storebatchId = storebatchId;
+    return this;
+  }
+
+   /**
+   * sériové číslo/šarže; id objektu Šarže/sériové číslo [persistentní položka]
+   * @return storebatchId
+  **/
+  @ApiModelProperty(example = "null", value = "sériové číslo/šarže; id objektu Šarže/sériové číslo [persistentní položka]")
+  public String getStorebatchId() {
+    return storebatchId;
+  }
+
+  public void setStorebatchId(String storebatchId) {
+    this.storebatchId = storebatchId;
+  }
+
+  public Logstoredocumentrow storedocrowId(String storedocrowId) {
+    this.storedocrowId = storedocrowId;
+    return this;
+  }
+
+   /**
+   * odkaz na skladový řádek [persistentní položka]
+   * @return storedocrowId
+  **/
+  @ApiModelProperty(example = "null", value = "odkaz na skladový řádek [persistentní položka]")
+  public String getStoredocrowId() {
+    return storedocrowId;
+  }
+
+  public void setStoredocrowId(String storedocrowId) {
+    this.storedocrowId = storedocrowId;
   }
 
   public Logstoredocumentrow quantity(Double quantity) {
@@ -243,10 +288,10 @@ public class Logstoredocumentrow   {
   }
 
    /**
-   * Počet v ev.jedn. [persistentní položka]
+   * počet v ev.jedn. [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet v ev.jedn. [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "počet v ev.jedn. [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -255,175 +300,202 @@ public class Logstoredocumentrow   {
     this.quantity = quantity;
   }
 
-  public Logstoredocumentrow qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Logstoredocumentrow qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
   }
 
-  public Logstoredocumentrow unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Logstoredocumentrow unitrate(Double unitrate) {
+    this.unitrate = unitrate;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return unitRate
+   * vztah [persistentní položka]
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
-  public Logstoredocumentrow storePositionID(String storePositionID) {
-    this.storePositionID = storePositionID;
+  public Logstoredocumentrow storepositionId(String storepositionId) {
+    this.storepositionId = storepositionId;
     return this;
   }
 
    /**
-   * Skladová pozice; ID objektu Skladová pozice [persistentní položka]
-   * @return storePositionID
+   * skladová pozice; id objektu skladová pozice [persistentní položka]
+   * @return storepositionId
   **/
-  @ApiModelProperty(example = "null", value = "Skladová pozice; ID objektu Skladová pozice [persistentní položka]")
-  public String getStorePositionID() {
-    return storePositionID;
+  @ApiModelProperty(example = "null", value = "skladová pozice; id objektu skladová pozice [persistentní položka]")
+  public String getStorepositionId() {
+    return storepositionId;
   }
 
-  public void setStorePositionID(String storePositionID) {
-    this.storePositionID = storePositionID;
+  public void setStorepositionId(String storepositionId) {
+    this.storepositionId = storepositionId;
   }
 
-  public Logstoredocumentrow restQuantity(Double restQuantity) {
-    this.restQuantity = restQuantity;
+  public Logstoredocumentrow restquantity(Double restquantity) {
+    this.restquantity = restquantity;
     return this;
   }
 
    /**
-   * Zbývá
-   * @return restQuantity
+   * zbývá
+   * @return restquantity
   **/
-  @ApiModelProperty(example = "null", value = "Zbývá")
-  public Double getRestQuantity() {
-    return restQuantity;
+  @ApiModelProperty(example = "null", value = "zbývá")
+  public Double getRestquantity() {
+    return restquantity;
   }
 
-  public void setRestQuantity(Double restQuantity) {
-    this.restQuantity = restQuantity;
+  public void setRestquantity(Double restquantity) {
+    this.restquantity = restquantity;
   }
 
-  public Logstoredocumentrow unitRestQuantity(Double unitRestQuantity) {
-    this.unitRestQuantity = unitRestQuantity;
+  public Logstoredocumentrow unitrestquantity(Double unitrestquantity) {
+    this.unitrestquantity = unitrestquantity;
     return this;
   }
 
    /**
-   * Zbývá v ev.jedn.
-   * @return unitRestQuantity
+   * zbývá v ev.jedn.
+   * @return unitrestquantity
   **/
-  @ApiModelProperty(example = "null", value = "Zbývá v ev.jedn.")
-  public Double getUnitRestQuantity() {
-    return unitRestQuantity;
+  @ApiModelProperty(example = "null", value = "zbývá v ev.jedn.")
+  public Double getUnitrestquantity() {
+    return unitrestquantity;
   }
 
-  public void setUnitRestQuantity(Double unitRestQuantity) {
-    this.unitRestQuantity = unitRestQuantity;
+  public void setUnitrestquantity(Double unitrestquantity) {
+    this.unitrestquantity = unitrestquantity;
   }
 
-  public Logstoredocumentrow inPositionQuantity(Double inPositionQuantity) {
-    this.inPositionQuantity = inPositionQuantity;
+  public Logstoredocumentrow inpositionquantity(Double inpositionquantity) {
+    this.inpositionquantity = inpositionquantity;
     return this;
   }
 
    /**
-   * V pozici
-   * @return inPositionQuantity
+   * v pozici
+   * @return inpositionquantity
   **/
-  @ApiModelProperty(example = "null", value = "V pozici")
-  public Double getInPositionQuantity() {
-    return inPositionQuantity;
+  @ApiModelProperty(example = "null", value = "v pozici")
+  public Double getInpositionquantity() {
+    return inpositionquantity;
   }
 
-  public void setInPositionQuantity(Double inPositionQuantity) {
-    this.inPositionQuantity = inPositionQuantity;
+  public void setInpositionquantity(Double inpositionquantity) {
+    this.inpositionquantity = inpositionquantity;
   }
 
-  public Logstoredocumentrow masterRowID(String masterRowID) {
-    this.masterRowID = masterRowID;
+  public Logstoredocumentrow masterrowId(String masterrowId) {
+    this.masterrowId = masterrowId;
     return this;
   }
 
    /**
    * Řádek se zdroj. pozicí [persistentní položka]
-   * @return masterRowID
+   * @return masterrowId
   **/
   @ApiModelProperty(example = "null", value = "Řádek se zdroj. pozicí [persistentní položka]")
-  public String getMasterRowID() {
-    return masterRowID;
+  public String getMasterrowId() {
+    return masterrowId;
   }
 
-  public void setMasterRowID(String masterRowID) {
-    this.masterRowID = masterRowID;
+  public void setMasterrowId(String masterrowId) {
+    this.masterrowId = masterrowId;
   }
 
-  public Logstoredocumentrow sortKey(String sortKey) {
-    this.sortKey = sortKey;
+  public Logstoredocumentrow sortkey(String sortkey) {
+    this.sortkey = sortkey;
     return this;
   }
 
    /**
-   * Klíč
-   * @return sortKey
+   * klíč
+   * @return sortkey
   **/
-  @ApiModelProperty(example = "null", value = "Klíč")
-  public String getSortKey() {
-    return sortKey;
+  @ApiModelProperty(example = "null", value = "klíč")
+  public String getSortkey() {
+    return sortkey;
   }
 
-  public void setSortKey(String sortKey) {
-    this.sortKey = sortKey;
+  public void setSortkey(String sortkey) {
+    this.sortkey = sortkey;
   }
 
-   /**
-   * Jednotka obsahu pozice [persistentní položka]
-   * @return contentUnit
-  **/
-  @ApiModelProperty(example = "null", value = "Jednotka obsahu pozice [persistentní položka]")
-  public String getContentUnit() {
-    return contentUnit;
+  public Logstoredocumentrow contentunit(String contentunit) {
+    this.contentunit = contentunit;
+    return this;
   }
 
    /**
-   * Vztah jednotky obsahu pozice [persistentní položka]
-   * @return contentUnitRate
+   * jednotka obsahu pozice [persistentní položka]
+   * @return contentunit
   **/
-  @ApiModelProperty(example = "null", value = "Vztah jednotky obsahu pozice [persistentní položka]")
-  public Double getContentUnitRate() {
-    return contentUnitRate;
+  @ApiModelProperty(example = "null", value = "jednotka obsahu pozice [persistentní položka]")
+  public String getContentunit() {
+    return contentunit;
+  }
+
+  public void setContentunit(String contentunit) {
+    this.contentunit = contentunit;
+  }
+
+  public Logstoredocumentrow contentunitrate(Double contentunitrate) {
+    this.contentunitrate = contentunitrate;
+    return this;
   }
 
    /**
-   * Pořadové číslo pohybu [persistentní položka]
-   * @return orderFlow
+   * vztah jednotky obsahu pozice [persistentní položka]
+   * @return contentunitrate
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo pohybu [persistentní položka]")
-  public Integer getOrderFlow() {
-    return orderFlow;
+  @ApiModelProperty(example = "null", value = "vztah jednotky obsahu pozice [persistentní položka]")
+  public Double getContentunitrate() {
+    return contentunitrate;
+  }
+
+  public void setContentunitrate(Double contentunitrate) {
+    this.contentunitrate = contentunitrate;
+  }
+
+  public Logstoredocumentrow orderflow(Integer orderflow) {
+    this.orderflow = orderflow;
+    return this;
+  }
+
+   /**
+   * pořadové číslo pohybu [persistentní položka]
+   * @return orderflow
+  **/
+  @ApiModelProperty(example = "null", value = "pořadové číslo pohybu [persistentní položka]")
+  public Integer getOrderflow() {
+    return orderflow;
+  }
+
+  public void setOrderflow(Integer orderflow) {
+    this.orderflow = orderflow;
   }
 
 
@@ -436,33 +508,33 @@ public class Logstoredocumentrow   {
       return false;
     }
     Logstoredocumentrow logstoredocumentrow = (Logstoredocumentrow) o;
-    return Objects.equals(this.displayName, logstoredocumentrow.displayName) &&
-        Objects.equals(this.ID, logstoredocumentrow.ID) &&
-        Objects.equals(this.classID, logstoredocumentrow.classID) &&
-        Objects.equals(this.objVersion, logstoredocumentrow.objVersion) &&
-        Objects.equals(this.parentID, logstoredocumentrow.parentID) &&
-        Objects.equals(this.posIndex, logstoredocumentrow.posIndex) &&
-        Objects.equals(this.storeID, logstoredocumentrow.storeID) &&
-        Objects.equals(this.storeCardID, logstoredocumentrow.storeCardID) &&
-        Objects.equals(this.storeBatchID, logstoredocumentrow.storeBatchID) &&
-        Objects.equals(this.storeDocRowID, logstoredocumentrow.storeDocRowID) &&
+    return Objects.equals(this.displayname, logstoredocumentrow.displayname) &&
+        Objects.equals(this.id, logstoredocumentrow.id) &&
+        Objects.equals(this.classid, logstoredocumentrow.classid) &&
+        Objects.equals(this.objversion, logstoredocumentrow.objversion) &&
+        Objects.equals(this.parentId, logstoredocumentrow.parentId) &&
+        Objects.equals(this.posindex, logstoredocumentrow.posindex) &&
+        Objects.equals(this.storeId, logstoredocumentrow.storeId) &&
+        Objects.equals(this.storecardId, logstoredocumentrow.storecardId) &&
+        Objects.equals(this.storebatchId, logstoredocumentrow.storebatchId) &&
+        Objects.equals(this.storedocrowId, logstoredocumentrow.storedocrowId) &&
         Objects.equals(this.quantity, logstoredocumentrow.quantity) &&
-        Objects.equals(this.qUnit, logstoredocumentrow.qUnit) &&
-        Objects.equals(this.unitRate, logstoredocumentrow.unitRate) &&
-        Objects.equals(this.storePositionID, logstoredocumentrow.storePositionID) &&
-        Objects.equals(this.restQuantity, logstoredocumentrow.restQuantity) &&
-        Objects.equals(this.unitRestQuantity, logstoredocumentrow.unitRestQuantity) &&
-        Objects.equals(this.inPositionQuantity, logstoredocumentrow.inPositionQuantity) &&
-        Objects.equals(this.masterRowID, logstoredocumentrow.masterRowID) &&
-        Objects.equals(this.sortKey, logstoredocumentrow.sortKey) &&
-        Objects.equals(this.contentUnit, logstoredocumentrow.contentUnit) &&
-        Objects.equals(this.contentUnitRate, logstoredocumentrow.contentUnitRate) &&
-        Objects.equals(this.orderFlow, logstoredocumentrow.orderFlow);
+        Objects.equals(this.qunit, logstoredocumentrow.qunit) &&
+        Objects.equals(this.unitrate, logstoredocumentrow.unitrate) &&
+        Objects.equals(this.storepositionId, logstoredocumentrow.storepositionId) &&
+        Objects.equals(this.restquantity, logstoredocumentrow.restquantity) &&
+        Objects.equals(this.unitrestquantity, logstoredocumentrow.unitrestquantity) &&
+        Objects.equals(this.inpositionquantity, logstoredocumentrow.inpositionquantity) &&
+        Objects.equals(this.masterrowId, logstoredocumentrow.masterrowId) &&
+        Objects.equals(this.sortkey, logstoredocumentrow.sortkey) &&
+        Objects.equals(this.contentunit, logstoredocumentrow.contentunit) &&
+        Objects.equals(this.contentunitrate, logstoredocumentrow.contentunitrate) &&
+        Objects.equals(this.orderflow, logstoredocumentrow.orderflow);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, storeID, storeCardID, storeBatchID, storeDocRowID, quantity, qUnit, unitRate, storePositionID, restQuantity, unitRestQuantity, inPositionQuantity, masterRowID, sortKey, contentUnit, contentUnitRate, orderFlow);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, storeId, storecardId, storebatchId, storedocrowId, quantity, qunit, unitrate, storepositionId, restquantity, unitrestquantity, inpositionquantity, masterrowId, sortkey, contentunit, contentunitrate, orderflow);
   }
 
   @Override
@@ -470,28 +542,28 @@ public class Logstoredocumentrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Logstoredocumentrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    storeBatchID: ").append(toIndentedString(storeBatchID)).append("\n");
-    sb.append("    storeDocRowID: ").append(toIndentedString(storeDocRowID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    storebatchId: ").append(toIndentedString(storebatchId)).append("\n");
+    sb.append("    storedocrowId: ").append(toIndentedString(storedocrowId)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    storePositionID: ").append(toIndentedString(storePositionID)).append("\n");
-    sb.append("    restQuantity: ").append(toIndentedString(restQuantity)).append("\n");
-    sb.append("    unitRestQuantity: ").append(toIndentedString(unitRestQuantity)).append("\n");
-    sb.append("    inPositionQuantity: ").append(toIndentedString(inPositionQuantity)).append("\n");
-    sb.append("    masterRowID: ").append(toIndentedString(masterRowID)).append("\n");
-    sb.append("    sortKey: ").append(toIndentedString(sortKey)).append("\n");
-    sb.append("    contentUnit: ").append(toIndentedString(contentUnit)).append("\n");
-    sb.append("    contentUnitRate: ").append(toIndentedString(contentUnitRate)).append("\n");
-    sb.append("    orderFlow: ").append(toIndentedString(orderFlow)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    storepositionId: ").append(toIndentedString(storepositionId)).append("\n");
+    sb.append("    restquantity: ").append(toIndentedString(restquantity)).append("\n");
+    sb.append("    unitrestquantity: ").append(toIndentedString(unitrestquantity)).append("\n");
+    sb.append("    inpositionquantity: ").append(toIndentedString(inpositionquantity)).append("\n");
+    sb.append("    masterrowId: ").append(toIndentedString(masterrowId)).append("\n");
+    sb.append("    sortkey: ").append(toIndentedString(sortkey)).append("\n");
+    sb.append("    contentunit: ").append(toIndentedString(contentunit)).append("\n");
+    sb.append("    contentunitrate: ").append(toIndentedString(contentunitrate)).append("\n");
+    sb.append("    orderflow: ").append(toIndentedString(orderflow)).append("\n");
     sb.append("}");
     return sb.toString();
   }

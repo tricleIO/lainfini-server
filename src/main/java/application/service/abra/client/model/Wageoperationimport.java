@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,117 +35,153 @@ import java.util.Objects;
 /**
  * Wageoperationimport
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wageoperationimport   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("ExternalCreator")
-  private String externalCreator = null;
+  @SerializedName("externalcreator")
+  private String externalcreator = null;
 
-  @SerializedName("InformationalText")
-  private String informationalText = null;
+  @SerializedName("informationaltext")
+  private String informationaltext = null;
 
-  @SerializedName("ImportDate$DATE")
-  private DateTime importDateDATE = null;
+  @SerializedName("importdate$date")
+  private DateTime importdatedate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Wageoperationimport externalCreator(String externalCreator) {
-    this.externalCreator = externalCreator;
+  public Wageoperationimport displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Zdroj importu [persistentní položka]
-   * @return externalCreator
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Zdroj importu [persistentní položka]")
-  public String getExternalCreator() {
-    return externalCreator;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setExternalCreator(String externalCreator) {
-    this.externalCreator = externalCreator;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Wageoperationimport informationalText(String informationalText) {
-    this.informationalText = informationalText;
+  public Wageoperationimport id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Informace [persistentní položka]
-   * @return informationalText
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Informace [persistentní položka]")
-  public String getInformationalText() {
-    return informationalText;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setInformationalText(String informationalText) {
-    this.informationalText = informationalText;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Wageoperationimport importDateDATE(DateTime importDateDATE) {
-    this.importDateDATE = importDateDATE;
+  public Wageoperationimport classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Datum importu [persistentní položka]
-   * @return importDateDATE
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Datum importu [persistentní položka]")
-  public DateTime getImportDateDATE() {
-    return importDateDATE;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setImportDateDATE(DateTime importDateDATE) {
-    this.importDateDATE = importDateDATE;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wageoperationimport objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Wageoperationimport externalcreator(String externalcreator) {
+    this.externalcreator = externalcreator;
+    return this;
+  }
+
+   /**
+   * zdroj importu [persistentní položka]
+   * @return externalcreator
+  **/
+  @ApiModelProperty(example = "null", value = "zdroj importu [persistentní položka]")
+  public String getExternalcreator() {
+    return externalcreator;
+  }
+
+  public void setExternalcreator(String externalcreator) {
+    this.externalcreator = externalcreator;
+  }
+
+  public Wageoperationimport informationaltext(String informationaltext) {
+    this.informationaltext = informationaltext;
+    return this;
+  }
+
+   /**
+   * informace [persistentní položka]
+   * @return informationaltext
+  **/
+  @ApiModelProperty(example = "null", value = "informace [persistentní položka]")
+  public String getInformationaltext() {
+    return informationaltext;
+  }
+
+  public void setInformationaltext(String informationaltext) {
+    this.informationaltext = informationaltext;
+  }
+
+  public Wageoperationimport importdatedate(DateTime importdatedate) {
+    this.importdatedate = importdatedate;
+    return this;
+  }
+
+   /**
+   * datum importu [persistentní položka]
+   * @return importdatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum importu [persistentní položka]")
+  public DateTime getImportdatedate() {
+    return importdatedate;
+  }
+
+  public void setImportdatedate(DateTime importdatedate) {
+    this.importdatedate = importdatedate;
   }
 
 
@@ -158,18 +194,18 @@ public class Wageoperationimport   {
       return false;
     }
     Wageoperationimport wageoperationimport = (Wageoperationimport) o;
-    return Objects.equals(this.displayName, wageoperationimport.displayName) &&
-        Objects.equals(this.ID, wageoperationimport.ID) &&
-        Objects.equals(this.classID, wageoperationimport.classID) &&
-        Objects.equals(this.objVersion, wageoperationimport.objVersion) &&
-        Objects.equals(this.externalCreator, wageoperationimport.externalCreator) &&
-        Objects.equals(this.informationalText, wageoperationimport.informationalText) &&
-        Objects.equals(this.importDateDATE, wageoperationimport.importDateDATE);
+    return Objects.equals(this.displayname, wageoperationimport.displayname) &&
+        Objects.equals(this.id, wageoperationimport.id) &&
+        Objects.equals(this.classid, wageoperationimport.classid) &&
+        Objects.equals(this.objversion, wageoperationimport.objversion) &&
+        Objects.equals(this.externalcreator, wageoperationimport.externalcreator) &&
+        Objects.equals(this.informationaltext, wageoperationimport.informationaltext) &&
+        Objects.equals(this.importdatedate, wageoperationimport.importdatedate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, externalCreator, informationalText, importDateDATE);
+    return Objects.hash(displayname, id, classid, objversion, externalcreator, informationaltext, importdatedate);
   }
 
   @Override
@@ -177,13 +213,13 @@ public class Wageoperationimport   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wageoperationimport {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    externalCreator: ").append(toIndentedString(externalCreator)).append("\n");
-    sb.append("    informationalText: ").append(toIndentedString(informationalText)).append("\n");
-    sb.append("    importDateDATE: ").append(toIndentedString(importDateDATE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    externalcreator: ").append(toIndentedString(externalcreator)).append("\n");
+    sb.append("    informationaltext: ").append(toIndentedString(informationaltext)).append("\n");
+    sb.append("    importdatedate: ").append(toIndentedString(importdatedate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

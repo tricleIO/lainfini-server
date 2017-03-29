@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,96 +34,141 @@ import java.util.Objects;
 /**
  * Posshopsellingstands
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posshopsellingstands   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("PaymentType_ID")
-  private String paymentTypeID = null;
+  @SerializedName("paymenttype_id")
+  private String paymenttypeId = null;
 
-  @SerializedName("UseAlternativeVATRate")
-  private Boolean useAlternativeVATRate = null;
+  @SerializedName("usealternativevatrate")
+  private Boolean usealternativevatrate = null;
 
-  @SerializedName("BarSale")
-  private Boolean barSale = null;
+  @SerializedName("barsale")
+  private Boolean barsale = null;
 
-  @SerializedName("FillBillByOTPPresets")
-  private Integer fillBillByOTPPresets = null;
+  @SerializedName("fillbillbyotppresets")
+  private Integer fillbillbyotppresets = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Posshopsellingstands displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Posshopsellingstands id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Posshopsellingstands classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Posshopsellingstands objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Nastavení provozu [persistentní položka]
-   * @return parentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Nastavení provozu [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Posshopsellingstands parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu nastavení provozu [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu nastavení provozu [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
   public Posshopsellingstands code(String code) {
@@ -132,10 +177,10 @@ public class Posshopsellingstands   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -150,10 +195,10 @@ public class Posshopsellingstands   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -162,148 +207,148 @@ public class Posshopsellingstands   {
     this.name = name;
   }
 
-  public Posshopsellingstands firmID(String firmID) {
-    this.firmID = firmID;
+  public Posshopsellingstands firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Posshopsellingstands busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Posshopsellingstands bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obchodní případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obchodní případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obchodní případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obchodní případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Posshopsellingstands busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Posshopsellingstands busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Posshopsellingstands busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Posshopsellingstands busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Posshopsellingstands paymentTypeID(String paymentTypeID) {
-    this.paymentTypeID = paymentTypeID;
+  public Posshopsellingstands paymenttypeId(String paymenttypeId) {
+    this.paymenttypeId = paymenttypeId;
     return this;
   }
 
    /**
-   * Způsob úhrady; ID objektu Způsob úhrady [persistentní položka]
-   * @return paymentTypeID
+   * způsob úhrady; id objektu způsob úhrady [persistentní položka]
+   * @return paymenttypeId
   **/
-  @ApiModelProperty(example = "null", value = "Způsob úhrady; ID objektu Způsob úhrady [persistentní položka]")
-  public String getPaymentTypeID() {
-    return paymentTypeID;
+  @ApiModelProperty(example = "null", value = "způsob úhrady; id objektu způsob úhrady [persistentní položka]")
+  public String getPaymenttypeId() {
+    return paymenttypeId;
   }
 
-  public void setPaymentTypeID(String paymentTypeID) {
-    this.paymentTypeID = paymentTypeID;
+  public void setPaymenttypeId(String paymenttypeId) {
+    this.paymenttypeId = paymenttypeId;
   }
 
-  public Posshopsellingstands useAlternativeVATRate(Boolean useAlternativeVATRate) {
-    this.useAlternativeVATRate = useAlternativeVATRate;
+  public Posshopsellingstands usealternativevatrate(Boolean usealternativevatrate) {
+    this.usealternativevatrate = usealternativevatrate;
     return this;
   }
 
    /**
-   * Použít alternativní DPH [persistentní položka]
-   * @return useAlternativeVATRate
+   * použít alternativní dph [persistentní položka]
+   * @return usealternativevatrate
   **/
-  @ApiModelProperty(example = "null", value = "Použít alternativní DPH [persistentní položka]")
-  public Boolean getUseAlternativeVATRate() {
-    return useAlternativeVATRate;
+  @ApiModelProperty(example = "null", value = "použít alternativní dph [persistentní položka]")
+  public Boolean getUsealternativevatrate() {
+    return usealternativevatrate;
   }
 
-  public void setUseAlternativeVATRate(Boolean useAlternativeVATRate) {
-    this.useAlternativeVATRate = useAlternativeVATRate;
+  public void setUsealternativevatrate(Boolean usealternativevatrate) {
+    this.usealternativevatrate = usealternativevatrate;
   }
 
-  public Posshopsellingstands barSale(Boolean barSale) {
-    this.barSale = barSale;
+  public Posshopsellingstands barsale(Boolean barsale) {
+    this.barsale = barsale;
     return this;
   }
 
    /**
-   * Barový prodej [persistentní položka]
-   * @return barSale
+   * barový prodej [persistentní položka]
+   * @return barsale
   **/
-  @ApiModelProperty(example = "null", value = "Barový prodej [persistentní položka]")
-  public Boolean getBarSale() {
-    return barSale;
+  @ApiModelProperty(example = "null", value = "barový prodej [persistentní položka]")
+  public Boolean getBarsale() {
+    return barsale;
   }
 
-  public void setBarSale(Boolean barSale) {
-    this.barSale = barSale;
+  public void setBarsale(Boolean barsale) {
+    this.barsale = barsale;
   }
 
-  public Posshopsellingstands fillBillByOTPPresets(Integer fillBillByOTPPresets) {
-    this.fillBillByOTPPresets = fillBillByOTPPresets;
+  public Posshopsellingstands fillbillbyotppresets(Integer fillbillbyotppresets) {
+    this.fillbillbyotppresets = fillbillbyotppresets;
     return this;
   }
 
    /**
-   * Plnit účtenku předvolbami [persistentní položka]
-   * @return fillBillByOTPPresets
+   * plnit účtenku předvolbami [persistentní položka]
+   * @return fillbillbyotppresets
   **/
-  @ApiModelProperty(example = "null", value = "Plnit účtenku předvolbami [persistentní položka]")
-  public Integer getFillBillByOTPPresets() {
-    return fillBillByOTPPresets;
+  @ApiModelProperty(example = "null", value = "plnit účtenku předvolbami [persistentní položka]")
+  public Integer getFillbillbyotppresets() {
+    return fillbillbyotppresets;
   }
 
-  public void setFillBillByOTPPresets(Integer fillBillByOTPPresets) {
-    this.fillBillByOTPPresets = fillBillByOTPPresets;
+  public void setFillbillbyotppresets(Integer fillbillbyotppresets) {
+    this.fillbillbyotppresets = fillbillbyotppresets;
   }
 
 
@@ -316,26 +361,26 @@ public class Posshopsellingstands   {
       return false;
     }
     Posshopsellingstands posshopsellingstands = (Posshopsellingstands) o;
-    return Objects.equals(this.displayName, posshopsellingstands.displayName) &&
-        Objects.equals(this.ID, posshopsellingstands.ID) &&
-        Objects.equals(this.classID, posshopsellingstands.classID) &&
-        Objects.equals(this.objVersion, posshopsellingstands.objVersion) &&
-        Objects.equals(this.parentID, posshopsellingstands.parentID) &&
+    return Objects.equals(this.displayname, posshopsellingstands.displayname) &&
+        Objects.equals(this.id, posshopsellingstands.id) &&
+        Objects.equals(this.classid, posshopsellingstands.classid) &&
+        Objects.equals(this.objversion, posshopsellingstands.objversion) &&
+        Objects.equals(this.parentId, posshopsellingstands.parentId) &&
         Objects.equals(this.code, posshopsellingstands.code) &&
         Objects.equals(this.name, posshopsellingstands.name) &&
-        Objects.equals(this.firmID, posshopsellingstands.firmID) &&
-        Objects.equals(this.busTransactionID, posshopsellingstands.busTransactionID) &&
-        Objects.equals(this.busProjectID, posshopsellingstands.busProjectID) &&
-        Objects.equals(this.busOrderID, posshopsellingstands.busOrderID) &&
-        Objects.equals(this.paymentTypeID, posshopsellingstands.paymentTypeID) &&
-        Objects.equals(this.useAlternativeVATRate, posshopsellingstands.useAlternativeVATRate) &&
-        Objects.equals(this.barSale, posshopsellingstands.barSale) &&
-        Objects.equals(this.fillBillByOTPPresets, posshopsellingstands.fillBillByOTPPresets);
+        Objects.equals(this.firmId, posshopsellingstands.firmId) &&
+        Objects.equals(this.bustransactionId, posshopsellingstands.bustransactionId) &&
+        Objects.equals(this.busprojectId, posshopsellingstands.busprojectId) &&
+        Objects.equals(this.busorderId, posshopsellingstands.busorderId) &&
+        Objects.equals(this.paymenttypeId, posshopsellingstands.paymenttypeId) &&
+        Objects.equals(this.usealternativevatrate, posshopsellingstands.usealternativevatrate) &&
+        Objects.equals(this.barsale, posshopsellingstands.barsale) &&
+        Objects.equals(this.fillbillbyotppresets, posshopsellingstands.fillbillbyotppresets);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, code, name, firmID, busTransactionID, busProjectID, busOrderID, paymentTypeID, useAlternativeVATRate, barSale, fillBillByOTPPresets);
+    return Objects.hash(displayname, id, classid, objversion, parentId, code, name, firmId, bustransactionId, busprojectId, busorderId, paymenttypeId, usealternativevatrate, barsale, fillbillbyotppresets);
   }
 
   @Override
@@ -343,21 +388,21 @@ public class Posshopsellingstands   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posshopsellingstands {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    paymentTypeID: ").append(toIndentedString(paymentTypeID)).append("\n");
-    sb.append("    useAlternativeVATRate: ").append(toIndentedString(useAlternativeVATRate)).append("\n");
-    sb.append("    barSale: ").append(toIndentedString(barSale)).append("\n");
-    sb.append("    fillBillByOTPPresets: ").append(toIndentedString(fillBillByOTPPresets)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    paymenttypeId: ").append(toIndentedString(paymenttypeId)).append("\n");
+    sb.append("    usealternativevatrate: ").append(toIndentedString(usealternativevatrate)).append("\n");
+    sb.append("    barsale: ").append(toIndentedString(barsale)).append("\n");
+    sb.append("    fillbillbyotppresets: ").append(toIndentedString(fillbillbyotppresets)).append("\n");
     sb.append("}");
     return sb.toString();
   }

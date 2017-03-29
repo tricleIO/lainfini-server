@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,171 +34,216 @@ import java.util.Objects;
 /**
  * Inputpaneldefinition
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Inputpaneldefinition   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("User_ID")
-  private String userID = null;
+  @SerializedName("user_id")
+  private String userId = null;
 
-  @SerializedName("DynamicDisplay")
-  private Integer dynamicDisplay = null;
+  @SerializedName("dynamicdisplay")
+  private Integer dynamicdisplay = null;
 
-  @SerializedName("FieldsDefinition")
-  private byte[] fieldsDefinition = null;
+  @SerializedName("fieldsdefinition")
+  private byte[] fieldsdefinition = null;
 
-  @SerializedName("FieldsDef")
-  private String fieldsDef = null;
+  @SerializedName("fieldsdef")
+  private String fieldsdef = null;
 
-  @SerializedName("GID")
-  private String GID = null;
+  @SerializedName("gid")
+  private String gid = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Variantní formuláře - varianta [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Variantní formuláře - varianta [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Inputpaneldefinition userID(String userID) {
-    this.userID = userID;
+  public Inputpaneldefinition displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Uživatel; ID objektu Uživatel [persistentní položka]
-   * @return userID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Uživatel; ID objektu Uživatel [persistentní položka]")
-  public String getUserID() {
-    return userID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setUserID(String userID) {
-    this.userID = userID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Inputpaneldefinition dynamicDisplay(Integer dynamicDisplay) {
-    this.dynamicDisplay = dynamicDisplay;
+  public Inputpaneldefinition id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Způsob zobrazení [persistentní položka]
-   * @return dynamicDisplay
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zobrazení [persistentní položka]")
-  public Integer getDynamicDisplay() {
-    return dynamicDisplay;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDynamicDisplay(Integer dynamicDisplay) {
-    this.dynamicDisplay = dynamicDisplay;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Inputpaneldefinition fieldsDefinition(byte[] fieldsDefinition) {
-    this.fieldsDefinition = fieldsDefinition;
+  public Inputpaneldefinition classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Definice položek [persistentní položka]
-   * @return fieldsDefinition
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Definice položek [persistentní položka]")
-  public byte[] getFieldsDefinition() {
-    return fieldsDefinition;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setFieldsDefinition(byte[] fieldsDefinition) {
-    this.fieldsDefinition = fieldsDefinition;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Inputpaneldefinition fieldsDef(String fieldsDef) {
-    this.fieldsDef = fieldsDef;
+  public Inputpaneldefinition objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Definice položek
-   * @return fieldsDef
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Definice položek")
-  public String getFieldsDef() {
-    return fieldsDef;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setFieldsDef(String fieldsDef) {
-    this.fieldsDef = fieldsDef;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Inputpaneldefinition GID(String GID) {
-    this.GID = GID;
+  public Inputpaneldefinition parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * GID [persistentní položka]
-   * @return GID
+   * vlastník; id objektu variantní formuláře - varianta [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "GID [persistentní položka]")
-  public String getGID() {
-    return GID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu variantní formuláře - varianta [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setGID(String GID) {
-    this.GID = GID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Inputpaneldefinition userId(String userId) {
+    this.userId = userId;
+    return this;
+  }
+
+   /**
+   * uživatel; id objektu uživatel [persistentní položka]
+   * @return userId
+  **/
+  @ApiModelProperty(example = "null", value = "uživatel; id objektu uživatel [persistentní položka]")
+  public String getUserId() {
+    return userId;
+  }
+
+  public void setUserId(String userId) {
+    this.userId = userId;
+  }
+
+  public Inputpaneldefinition dynamicdisplay(Integer dynamicdisplay) {
+    this.dynamicdisplay = dynamicdisplay;
+    return this;
+  }
+
+   /**
+   * způsob zobrazení [persistentní položka]
+   * @return dynamicdisplay
+  **/
+  @ApiModelProperty(example = "null", value = "způsob zobrazení [persistentní položka]")
+  public Integer getDynamicdisplay() {
+    return dynamicdisplay;
+  }
+
+  public void setDynamicdisplay(Integer dynamicdisplay) {
+    this.dynamicdisplay = dynamicdisplay;
+  }
+
+  public Inputpaneldefinition fieldsdefinition(byte[] fieldsdefinition) {
+    this.fieldsdefinition = fieldsdefinition;
+    return this;
+  }
+
+   /**
+   * definice položek [persistentní položka]
+   * @return fieldsdefinition
+  **/
+  @ApiModelProperty(example = "null", value = "definice položek [persistentní položka]")
+  public byte[] getFieldsdefinition() {
+    return fieldsdefinition;
+  }
+
+  public void setFieldsdefinition(byte[] fieldsdefinition) {
+    this.fieldsdefinition = fieldsdefinition;
+  }
+
+  public Inputpaneldefinition fieldsdef(String fieldsdef) {
+    this.fieldsdef = fieldsdef;
+    return this;
+  }
+
+   /**
+   * definice položek
+   * @return fieldsdef
+  **/
+  @ApiModelProperty(example = "null", value = "definice položek")
+  public String getFieldsdef() {
+    return fieldsdef;
+  }
+
+  public void setFieldsdef(String fieldsdef) {
+    this.fieldsdef = fieldsdef;
+  }
+
+  public Inputpaneldefinition gid(String gid) {
+    this.gid = gid;
+    return this;
+  }
+
+   /**
+   * gid [persistentní položka]
+   * @return gid
+  **/
+  @ApiModelProperty(example = "null", value = "gid [persistentní položka]")
+  public String getGid() {
+    return gid;
+  }
+
+  public void setGid(String gid) {
+    this.gid = gid;
   }
 
 
@@ -211,21 +256,21 @@ public class Inputpaneldefinition   {
       return false;
     }
     Inputpaneldefinition inputpaneldefinition = (Inputpaneldefinition) o;
-    return Objects.equals(this.displayName, inputpaneldefinition.displayName) &&
-        Objects.equals(this.ID, inputpaneldefinition.ID) &&
-        Objects.equals(this.classID, inputpaneldefinition.classID) &&
-        Objects.equals(this.objVersion, inputpaneldefinition.objVersion) &&
-        Objects.equals(this.parentID, inputpaneldefinition.parentID) &&
-        Objects.equals(this.userID, inputpaneldefinition.userID) &&
-        Objects.equals(this.dynamicDisplay, inputpaneldefinition.dynamicDisplay) &&
-        Objects.equals(this.fieldsDefinition, inputpaneldefinition.fieldsDefinition) &&
-        Objects.equals(this.fieldsDef, inputpaneldefinition.fieldsDef) &&
-        Objects.equals(this.GID, inputpaneldefinition.GID);
+    return Objects.equals(this.displayname, inputpaneldefinition.displayname) &&
+        Objects.equals(this.id, inputpaneldefinition.id) &&
+        Objects.equals(this.classid, inputpaneldefinition.classid) &&
+        Objects.equals(this.objversion, inputpaneldefinition.objversion) &&
+        Objects.equals(this.parentId, inputpaneldefinition.parentId) &&
+        Objects.equals(this.userId, inputpaneldefinition.userId) &&
+        Objects.equals(this.dynamicdisplay, inputpaneldefinition.dynamicdisplay) &&
+        Objects.equals(this.fieldsdefinition, inputpaneldefinition.fieldsdefinition) &&
+        Objects.equals(this.fieldsdef, inputpaneldefinition.fieldsdef) &&
+        Objects.equals(this.gid, inputpaneldefinition.gid);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, userID, dynamicDisplay, fieldsDefinition, fieldsDef, GID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, userId, dynamicdisplay, fieldsdefinition, fieldsdef, gid);
   }
 
   @Override
@@ -233,16 +278,16 @@ public class Inputpaneldefinition   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Inputpaneldefinition {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    userID: ").append(toIndentedString(userID)).append("\n");
-    sb.append("    dynamicDisplay: ").append(toIndentedString(dynamicDisplay)).append("\n");
-    sb.append("    fieldsDefinition: ").append(toIndentedString(fieldsDefinition)).append("\n");
-    sb.append("    fieldsDef: ").append(toIndentedString(fieldsDef)).append("\n");
-    sb.append("    GID: ").append(toIndentedString(GID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    userId: ").append(toIndentedString(userId)).append("\n");
+    sb.append("    dynamicdisplay: ").append(toIndentedString(dynamicdisplay)).append("\n");
+    sb.append("    fieldsdefinition: ").append(toIndentedString(fieldsdefinition)).append("\n");
+    sb.append("    fieldsdef: ").append(toIndentedString(fieldsdef)).append("\n");
+    sb.append("    gid: ").append(toIndentedString(gid)).append("\n");
     sb.append("}");
     return sb.toString();
   }

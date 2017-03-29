@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,288 +35,333 @@ import java.util.Objects;
 /**
  * Paymentreminderrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Paymentreminderrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("TAmount")
-  private Double tAmount = null;
+  @SerializedName("tamount")
+  private Double tamount = null;
 
-  @SerializedName("LocalTAmount")
-  private Double localTAmount = null;
+  @SerializedName("localtamount")
+  private Double localtamount = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("IncomeType_ID")
-  private String incomeTypeID = null;
+  @SerializedName("incometype_id")
+  private String incometypeId = null;
 
-  @SerializedName("DatePenaltyFrom$DATE")
-  private DateTime datePenaltyFromDATE = null;
+  @SerializedName("datepenaltyfrom$date")
+  private DateTime datepenaltyfromdate = null;
 
-  @SerializedName("DatePenaltyTo$DATE")
-  private DateTime datePenaltyToDATE = null;
+  @SerializedName("datepenaltyto$date")
+  private DateTime datepenaltytodate = null;
 
-  @SerializedName("AmountInvoice")
-  private Double amountInvoice = null;
+  @SerializedName("amountinvoice")
+  private Double amountinvoice = null;
 
-  @SerializedName("Text")
+  @SerializedName("text")
   private String text = null;
 
-  @SerializedName("PenaltyPercent")
-  private Double penaltyPercent = null;
+  @SerializedName("penaltypercent")
+  private Double penaltypercent = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("NumberPenaltyDays")
-  private Integer numberPenaltyDays = null;
+  @SerializedName("numberpenaltydays")
+  private Integer numberpenaltydays = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Upomínka [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Upomínka [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Paymentreminderrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Paymentreminderrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Paymentreminderrow tAmount(Double tAmount) {
-    this.tAmount = tAmount;
+  public Paymentreminderrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Celkem [persistentní položka]
-   * @return tAmount
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Celkem [persistentní položka]")
-  public Double getTAmount() {
-    return tAmount;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setTAmount(Double tAmount) {
-    this.tAmount = tAmount;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Paymentreminderrow localTAmount(Double localTAmount) {
-    this.localTAmount = localTAmount;
+  public Paymentreminderrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Celkem lokálně [persistentní položka]
-   * @return localTAmount
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Celkem lokálně [persistentní položka]")
-  public Double getLocalTAmount() {
-    return localTAmount;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setLocalTAmount(Double localTAmount) {
-    this.localTAmount = localTAmount;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Paymentreminderrow divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Paymentreminderrow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Paymentreminderrow busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Paymentreminderrow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * vlastník; id objektu upomínka [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu upomínka [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Paymentreminderrow busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Paymentreminderrow posindex(Integer posindex) {
+    this.posindex = posindex;
     return this;
   }
 
    /**
-   * O.případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * pořadí [persistentní položka]
+   * @return posindex
   **/
-  @ApiModelProperty(example = "null", value = "O.případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
-  public Paymentreminderrow incomeTypeID(String incomeTypeID) {
-    this.incomeTypeID = incomeTypeID;
+  public Paymentreminderrow tamount(Double tamount) {
+    this.tamount = tamount;
     return this;
   }
 
    /**
-   * Typ příjmu; ID objektu Typ příjmu [persistentní položka]
-   * @return incomeTypeID
+   * celkem [persistentní položka]
+   * @return tamount
   **/
-  @ApiModelProperty(example = "null", value = "Typ příjmu; ID objektu Typ příjmu [persistentní položka]")
-  public String getIncomeTypeID() {
-    return incomeTypeID;
+  @ApiModelProperty(example = "null", value = "celkem [persistentní položka]")
+  public Double getTamount() {
+    return tamount;
   }
 
-  public void setIncomeTypeID(String incomeTypeID) {
-    this.incomeTypeID = incomeTypeID;
+  public void setTamount(Double tamount) {
+    this.tamount = tamount;
   }
 
-  public Paymentreminderrow datePenaltyFromDATE(DateTime datePenaltyFromDATE) {
-    this.datePenaltyFromDATE = datePenaltyFromDATE;
+  public Paymentreminderrow localtamount(Double localtamount) {
+    this.localtamount = localtamount;
     return this;
   }
 
    /**
-   * Poč. dat. sankce [persistentní položka]
-   * @return datePenaltyFromDATE
+   * celkem lokálně [persistentní položka]
+   * @return localtamount
   **/
-  @ApiModelProperty(example = "null", value = "Poč. dat. sankce [persistentní položka]")
-  public DateTime getDatePenaltyFromDATE() {
-    return datePenaltyFromDATE;
+  @ApiModelProperty(example = "null", value = "celkem lokálně [persistentní položka]")
+  public Double getLocaltamount() {
+    return localtamount;
   }
 
-  public void setDatePenaltyFromDATE(DateTime datePenaltyFromDATE) {
-    this.datePenaltyFromDATE = datePenaltyFromDATE;
+  public void setLocaltamount(Double localtamount) {
+    this.localtamount = localtamount;
   }
 
-  public Paymentreminderrow datePenaltyToDATE(DateTime datePenaltyToDATE) {
-    this.datePenaltyToDATE = datePenaltyToDATE;
+  public Paymentreminderrow divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Konc. dat. sankce [persistentní položka]
-   * @return datePenaltyToDATE
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Konc. dat. sankce [persistentní položka]")
-  public DateTime getDatePenaltyToDATE() {
-    return datePenaltyToDATE;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDatePenaltyToDATE(DateTime datePenaltyToDATE) {
-    this.datePenaltyToDATE = datePenaltyToDATE;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Paymentreminderrow amountInvoice(Double amountInvoice) {
-    this.amountInvoice = amountInvoice;
+  public Paymentreminderrow busorderId(String busorderId) {
+    this.busorderId = busorderId;
+    return this;
+  }
+
+   /**
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
+  **/
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
+  }
+
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
+  }
+
+  public Paymentreminderrow bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
+    return this;
+  }
+
+   /**
+   * o.případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
+  **/
+  @ApiModelProperty(example = "null", value = "o.případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
+  }
+
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
+  }
+
+  public Paymentreminderrow incometypeId(String incometypeId) {
+    this.incometypeId = incometypeId;
+    return this;
+  }
+
+   /**
+   * typ příjmu; id objektu typ příjmu [persistentní položka]
+   * @return incometypeId
+  **/
+  @ApiModelProperty(example = "null", value = "typ příjmu; id objektu typ příjmu [persistentní položka]")
+  public String getIncometypeId() {
+    return incometypeId;
+  }
+
+  public void setIncometypeId(String incometypeId) {
+    this.incometypeId = incometypeId;
+  }
+
+  public Paymentreminderrow datepenaltyfromdate(DateTime datepenaltyfromdate) {
+    this.datepenaltyfromdate = datepenaltyfromdate;
+    return this;
+  }
+
+   /**
+   * poč. dat. sankce [persistentní položka]
+   * @return datepenaltyfromdate
+  **/
+  @ApiModelProperty(example = "null", value = "poč. dat. sankce [persistentní položka]")
+  public DateTime getDatepenaltyfromdate() {
+    return datepenaltyfromdate;
+  }
+
+  public void setDatepenaltyfromdate(DateTime datepenaltyfromdate) {
+    this.datepenaltyfromdate = datepenaltyfromdate;
+  }
+
+  public Paymentreminderrow datepenaltytodate(DateTime datepenaltytodate) {
+    this.datepenaltytodate = datepenaltytodate;
+    return this;
+  }
+
+   /**
+   * konc. dat. sankce [persistentní položka]
+   * @return datepenaltytodate
+  **/
+  @ApiModelProperty(example = "null", value = "konc. dat. sankce [persistentní položka]")
+  public DateTime getDatepenaltytodate() {
+    return datepenaltytodate;
+  }
+
+  public void setDatepenaltytodate(DateTime datepenaltytodate) {
+    this.datepenaltytodate = datepenaltytodate;
+  }
+
+  public Paymentreminderrow amountinvoice(Double amountinvoice) {
+    this.amountinvoice = amountinvoice;
     return this;
   }
 
    /**
    * Částka pro výp. sankce [persistentní položka]
-   * @return amountInvoice
+   * @return amountinvoice
   **/
   @ApiModelProperty(example = "null", value = "Částka pro výp. sankce [persistentní položka]")
-  public Double getAmountInvoice() {
-    return amountInvoice;
+  public Double getAmountinvoice() {
+    return amountinvoice;
   }
 
-  public void setAmountInvoice(Double amountInvoice) {
-    this.amountInvoice = amountInvoice;
+  public void setAmountinvoice(Double amountinvoice) {
+    this.amountinvoice = amountinvoice;
   }
 
   public Paymentreminderrow text(String text) {
@@ -325,10 +370,10 @@ public class Paymentreminderrow   {
   }
 
    /**
-   * Text [persistentní položka]
+   * text [persistentní položka]
    * @return text
   **/
-  @ApiModelProperty(example = "null", value = "Text [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "text [persistentní položka]")
   public String getText() {
     return text;
   }
@@ -337,49 +382,58 @@ public class Paymentreminderrow   {
     this.text = text;
   }
 
-  public Paymentreminderrow penaltyPercent(Double penaltyPercent) {
-    this.penaltyPercent = penaltyPercent;
+  public Paymentreminderrow penaltypercent(Double penaltypercent) {
+    this.penaltypercent = penaltypercent;
     return this;
   }
 
    /**
    * Úrok z prodlení [%] [persistentní položka]
-   * @return penaltyPercent
+   * @return penaltypercent
   **/
   @ApiModelProperty(example = "null", value = "Úrok z prodlení [%] [persistentní položka]")
-  public Double getPenaltyPercent() {
-    return penaltyPercent;
+  public Double getPenaltypercent() {
+    return penaltypercent;
   }
 
-  public void setPenaltyPercent(Double penaltyPercent) {
-    this.penaltyPercent = penaltyPercent;
+  public void setPenaltypercent(Double penaltypercent) {
+    this.penaltypercent = penaltypercent;
   }
 
-  public Paymentreminderrow busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Paymentreminderrow busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
+  }
+
+  public Paymentreminderrow numberpenaltydays(Integer numberpenaltydays) {
+    this.numberpenaltydays = numberpenaltydays;
+    return this;
   }
 
    /**
-   * Počet dní
-   * @return numberPenaltyDays
+   * počet dní
+   * @return numberpenaltydays
   **/
-  @ApiModelProperty(example = "null", value = "Počet dní")
-  public Integer getNumberPenaltyDays() {
-    return numberPenaltyDays;
+  @ApiModelProperty(example = "null", value = "počet dní")
+  public Integer getNumberpenaltydays() {
+    return numberpenaltydays;
+  }
+
+  public void setNumberpenaltydays(Integer numberpenaltydays) {
+    this.numberpenaltydays = numberpenaltydays;
   }
 
 
@@ -392,30 +446,30 @@ public class Paymentreminderrow   {
       return false;
     }
     Paymentreminderrow paymentreminderrow = (Paymentreminderrow) o;
-    return Objects.equals(this.displayName, paymentreminderrow.displayName) &&
-        Objects.equals(this.ID, paymentreminderrow.ID) &&
-        Objects.equals(this.classID, paymentreminderrow.classID) &&
-        Objects.equals(this.objVersion, paymentreminderrow.objVersion) &&
-        Objects.equals(this.parentID, paymentreminderrow.parentID) &&
-        Objects.equals(this.posIndex, paymentreminderrow.posIndex) &&
-        Objects.equals(this.tAmount, paymentreminderrow.tAmount) &&
-        Objects.equals(this.localTAmount, paymentreminderrow.localTAmount) &&
-        Objects.equals(this.divisionID, paymentreminderrow.divisionID) &&
-        Objects.equals(this.busOrderID, paymentreminderrow.busOrderID) &&
-        Objects.equals(this.busTransactionID, paymentreminderrow.busTransactionID) &&
-        Objects.equals(this.incomeTypeID, paymentreminderrow.incomeTypeID) &&
-        Objects.equals(this.datePenaltyFromDATE, paymentreminderrow.datePenaltyFromDATE) &&
-        Objects.equals(this.datePenaltyToDATE, paymentreminderrow.datePenaltyToDATE) &&
-        Objects.equals(this.amountInvoice, paymentreminderrow.amountInvoice) &&
+    return Objects.equals(this.displayname, paymentreminderrow.displayname) &&
+        Objects.equals(this.id, paymentreminderrow.id) &&
+        Objects.equals(this.classid, paymentreminderrow.classid) &&
+        Objects.equals(this.objversion, paymentreminderrow.objversion) &&
+        Objects.equals(this.parentId, paymentreminderrow.parentId) &&
+        Objects.equals(this.posindex, paymentreminderrow.posindex) &&
+        Objects.equals(this.tamount, paymentreminderrow.tamount) &&
+        Objects.equals(this.localtamount, paymentreminderrow.localtamount) &&
+        Objects.equals(this.divisionId, paymentreminderrow.divisionId) &&
+        Objects.equals(this.busorderId, paymentreminderrow.busorderId) &&
+        Objects.equals(this.bustransactionId, paymentreminderrow.bustransactionId) &&
+        Objects.equals(this.incometypeId, paymentreminderrow.incometypeId) &&
+        Objects.equals(this.datepenaltyfromdate, paymentreminderrow.datepenaltyfromdate) &&
+        Objects.equals(this.datepenaltytodate, paymentreminderrow.datepenaltytodate) &&
+        Objects.equals(this.amountinvoice, paymentreminderrow.amountinvoice) &&
         Objects.equals(this.text, paymentreminderrow.text) &&
-        Objects.equals(this.penaltyPercent, paymentreminderrow.penaltyPercent) &&
-        Objects.equals(this.busProjectID, paymentreminderrow.busProjectID) &&
-        Objects.equals(this.numberPenaltyDays, paymentreminderrow.numberPenaltyDays);
+        Objects.equals(this.penaltypercent, paymentreminderrow.penaltypercent) &&
+        Objects.equals(this.busprojectId, paymentreminderrow.busprojectId) &&
+        Objects.equals(this.numberpenaltydays, paymentreminderrow.numberpenaltydays);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, tAmount, localTAmount, divisionID, busOrderID, busTransactionID, incomeTypeID, datePenaltyFromDATE, datePenaltyToDATE, amountInvoice, text, penaltyPercent, busProjectID, numberPenaltyDays);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, tamount, localtamount, divisionId, busorderId, bustransactionId, incometypeId, datepenaltyfromdate, datepenaltytodate, amountinvoice, text, penaltypercent, busprojectId, numberpenaltydays);
   }
 
   @Override
@@ -423,25 +477,25 @@ public class Paymentreminderrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Paymentreminderrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    tAmount: ").append(toIndentedString(tAmount)).append("\n");
-    sb.append("    localTAmount: ").append(toIndentedString(localTAmount)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    incomeTypeID: ").append(toIndentedString(incomeTypeID)).append("\n");
-    sb.append("    datePenaltyFromDATE: ").append(toIndentedString(datePenaltyFromDATE)).append("\n");
-    sb.append("    datePenaltyToDATE: ").append(toIndentedString(datePenaltyToDATE)).append("\n");
-    sb.append("    amountInvoice: ").append(toIndentedString(amountInvoice)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    tamount: ").append(toIndentedString(tamount)).append("\n");
+    sb.append("    localtamount: ").append(toIndentedString(localtamount)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    incometypeId: ").append(toIndentedString(incometypeId)).append("\n");
+    sb.append("    datepenaltyfromdate: ").append(toIndentedString(datepenaltyfromdate)).append("\n");
+    sb.append("    datepenaltytodate: ").append(toIndentedString(datepenaltytodate)).append("\n");
+    sb.append("    amountinvoice: ").append(toIndentedString(amountinvoice)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
-    sb.append("    penaltyPercent: ").append(toIndentedString(penaltyPercent)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    numberPenaltyDays: ").append(toIndentedString(numberPenaltyDays)).append("\n");
+    sb.append("    penaltypercent: ").append(toIndentedString(penaltypercent)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    numberpenaltydays: ").append(toIndentedString(numberpenaltydays)).append("\n");
     sb.append("}");
     return sb.toString();
   }

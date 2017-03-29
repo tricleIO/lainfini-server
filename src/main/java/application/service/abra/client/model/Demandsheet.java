@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,111 +37,147 @@ import java.util.Objects;
 /**
  * Demandsheet
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Demandsheet   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Demandsheetrow> rows = new ArrayList<Demandsheetrow>();
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("RequestedClosingDate$DATE")
-  private DateTime requestedClosingDateDATE = null;
+  @SerializedName("requestedclosingdate$date")
+  private DateTime requestedclosingdatedate = null;
 
-  @SerializedName("RealClosingDate$DATE")
-  private DateTime realClosingDateDATE = null;
+  @SerializedName("realclosingdate$date")
+  private DateTime realclosingdatedate = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("DemandingDocTxt")
-  private String demandingDocTxt = null;
+  @SerializedName("demandingdoctxt")
+  private String demandingdoctxt = null;
 
-  @SerializedName("Closed")
+  @SerializedName("closed")
   private Boolean closed = null;
 
-  @SerializedName("Address_ID")
-  private String addressID = null;
+  @SerializedName("address_id")
+  private String addressId = null;
 
-  @SerializedName("PricePrecision")
-  private Integer pricePrecision = null;
+  @SerializedName("priceprecision")
+  private Integer priceprecision = null;
 
-  @SerializedName("AutoAddSuppliers")
-  private Integer autoAddSuppliers = null;
+  @SerializedName("autoaddsuppliers")
+  private Integer autoaddsuppliers = null;
 
-  @SerializedName("AutoAddOnlyDoDemand")
-  private Boolean autoAddOnlyDoDemand = null;
+  @SerializedName("autoaddonlydodemand")
+  private Boolean autoaddonlydodemand = null;
 
-  @SerializedName("CloneDemandAnswers")
-  private Boolean cloneDemandAnswers = null;
+  @SerializedName("clonedemandanswers")
+  private Boolean clonedemandanswers = null;
+
+  public Demandsheet displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Demandsheet id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Demandsheet classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Demandsheet objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Demandsheet rows(List<Demandsheetrow> rows) {
@@ -155,10 +191,10 @@ public class Demandsheet   {
   }
 
    /**
-   * Řádky; kolekce BO Poptávkový list - řádek [nepersistentní položka]
+   * Řádky; kolekce bo poptávkový list - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Poptávkový list - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo poptávkový list - řádek [nepersistentní položka]")
   public List<Demandsheetrow> getRows() {
     return rows;
   }
@@ -167,184 +203,184 @@ public class Demandsheet   {
     this.rows = rows;
   }
 
-  public Demandsheet docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Demandsheet docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Demandsheet periodID(String periodID) {
-    this.periodID = periodID;
+  public Demandsheet periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Demandsheet ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Demandsheet ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Demandsheet docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Demandsheet docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Demandsheet createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Demandsheet createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Demandsheet correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Demandsheet correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Demandsheet newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Demandsheet newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Demandsheet newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Demandsheet newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Demandsheet requestedClosingDateDATE(DateTime requestedClosingDateDATE) {
-    this.requestedClosingDateDATE = requestedClosingDateDATE;
+  public Demandsheet requestedclosingdatedate(DateTime requestedclosingdatedate) {
+    this.requestedclosingdatedate = requestedclosingdatedate;
     return this;
   }
 
    /**
-   * Požadovaný termín uzavření [persistentní položka]
-   * @return requestedClosingDateDATE
+   * požadovaný termín uzavření [persistentní položka]
+   * @return requestedclosingdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Požadovaný termín uzavření [persistentní položka]")
-  public DateTime getRequestedClosingDateDATE() {
-    return requestedClosingDateDATE;
+  @ApiModelProperty(example = "null", value = "požadovaný termín uzavření [persistentní položka]")
+  public DateTime getRequestedclosingdatedate() {
+    return requestedclosingdatedate;
   }
 
-  public void setRequestedClosingDateDATE(DateTime requestedClosingDateDATE) {
-    this.requestedClosingDateDATE = requestedClosingDateDATE;
+  public void setRequestedclosingdatedate(DateTime requestedclosingdatedate) {
+    this.requestedclosingdatedate = requestedclosingdatedate;
   }
 
-  public Demandsheet realClosingDateDATE(DateTime realClosingDateDATE) {
-    this.realClosingDateDATE = realClosingDateDATE;
+  public Demandsheet realclosingdatedate(DateTime realclosingdatedate) {
+    this.realclosingdatedate = realclosingdatedate;
     return this;
   }
 
    /**
-   * Skutečný termín uzavření [persistentní položka]
-   * @return realClosingDateDATE
+   * skutečný termín uzavření [persistentní položka]
+   * @return realclosingdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Skutečný termín uzavření [persistentní položka]")
-  public DateTime getRealClosingDateDATE() {
-    return realClosingDateDATE;
+  @ApiModelProperty(example = "null", value = "skutečný termín uzavření [persistentní položka]")
+  public DateTime getRealclosingdatedate() {
+    return realclosingdatedate;
   }
 
-  public void setRealClosingDateDATE(DateTime realClosingDateDATE) {
-    this.realClosingDateDATE = realClosingDateDATE;
+  public void setRealclosingdatedate(DateTime realclosingdatedate) {
+    this.realclosingdatedate = realclosingdatedate;
   }
 
   public Demandsheet note(String note) {
@@ -353,10 +389,10 @@ public class Demandsheet   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -365,22 +401,22 @@ public class Demandsheet   {
     this.note = note;
   }
 
-  public Demandsheet demandingDocTxt(String demandingDocTxt) {
-    this.demandingDocTxt = demandingDocTxt;
+  public Demandsheet demandingdoctxt(String demandingdoctxt) {
+    this.demandingdoctxt = demandingdoctxt;
     return this;
   }
 
    /**
-   * Zdrojový doklad
-   * @return demandingDocTxt
+   * zdrojový doklad
+   * @return demandingdoctxt
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojový doklad")
-  public String getDemandingDocTxt() {
-    return demandingDocTxt;
+  @ApiModelProperty(example = "null", value = "zdrojový doklad")
+  public String getDemandingdoctxt() {
+    return demandingdoctxt;
   }
 
-  public void setDemandingDocTxt(String demandingDocTxt) {
-    this.demandingDocTxt = demandingDocTxt;
+  public void setDemandingdoctxt(String demandingdoctxt) {
+    this.demandingdoctxt = demandingdoctxt;
   }
 
   public Demandsheet closed(Boolean closed) {
@@ -389,10 +425,10 @@ public class Demandsheet   {
   }
 
    /**
-   * Příznak uzavření [persistentní položka]
+   * příznak uzavření [persistentní položka]
    * @return closed
   **/
-  @ApiModelProperty(example = "null", value = "Příznak uzavření [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "příznak uzavření [persistentní položka]")
   public Boolean getClosed() {
     return closed;
   }
@@ -401,94 +437,94 @@ public class Demandsheet   {
     this.closed = closed;
   }
 
-  public Demandsheet addressID(String addressID) {
-    this.addressID = addressID;
+  public Demandsheet addressId(String addressId) {
+    this.addressId = addressId;
     return this;
   }
 
    /**
-   * Vlastní adresa; ID objektu Adresa [persistentní položka]
-   * @return addressID
+   * vlastní adresa; id objektu adresa [persistentní položka]
+   * @return addressId
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní adresa; ID objektu Adresa [persistentní položka]")
-  public String getAddressID() {
-    return addressID;
+  @ApiModelProperty(example = "null", value = "vlastní adresa; id objektu adresa [persistentní položka]")
+  public String getAddressId() {
+    return addressId;
   }
 
-  public void setAddressID(String addressID) {
-    this.addressID = addressID;
+  public void setAddressId(String addressId) {
+    this.addressId = addressId;
   }
 
-  public Demandsheet pricePrecision(Integer pricePrecision) {
-    this.pricePrecision = pricePrecision;
+  public Demandsheet priceprecision(Integer priceprecision) {
+    this.priceprecision = priceprecision;
     return this;
   }
 
    /**
-   * Zobrazení desetinných míst pro zadávací částky [persistentní položka]
-   * @return pricePrecision
+   * zobrazení desetinných míst pro zadávací částky [persistentní položka]
+   * @return priceprecision
   **/
-  @ApiModelProperty(example = "null", value = "Zobrazení desetinných míst pro zadávací částky [persistentní položka]")
-  public Integer getPricePrecision() {
-    return pricePrecision;
+  @ApiModelProperty(example = "null", value = "zobrazení desetinných míst pro zadávací částky [persistentní položka]")
+  public Integer getPriceprecision() {
+    return priceprecision;
   }
 
-  public void setPricePrecision(Integer pricePrecision) {
-    this.pricePrecision = pricePrecision;
+  public void setPriceprecision(Integer priceprecision) {
+    this.priceprecision = priceprecision;
   }
 
-  public Demandsheet autoAddSuppliers(Integer autoAddSuppliers) {
-    this.autoAddSuppliers = autoAddSuppliers;
+  public Demandsheet autoaddsuppliers(Integer autoaddsuppliers) {
+    this.autoaddsuppliers = autoaddsuppliers;
     return this;
   }
 
    /**
-   * Doplňovat oslovené dodavatele [persistentní položka]
-   * @return autoAddSuppliers
+   * doplňovat oslovené dodavatele [persistentní položka]
+   * @return autoaddsuppliers
   **/
-  @ApiModelProperty(example = "null", value = "Doplňovat oslovené dodavatele [persistentní položka]")
-  public Integer getAutoAddSuppliers() {
-    return autoAddSuppliers;
+  @ApiModelProperty(example = "null", value = "doplňovat oslovené dodavatele [persistentní položka]")
+  public Integer getAutoaddsuppliers() {
+    return autoaddsuppliers;
   }
 
-  public void setAutoAddSuppliers(Integer autoAddSuppliers) {
-    this.autoAddSuppliers = autoAddSuppliers;
+  public void setAutoaddsuppliers(Integer autoaddsuppliers) {
+    this.autoaddsuppliers = autoaddsuppliers;
   }
 
-  public Demandsheet autoAddOnlyDoDemand(Boolean autoAddOnlyDoDemand) {
-    this.autoAddOnlyDoDemand = autoAddOnlyDoDemand;
+  public Demandsheet autoaddonlydodemand(Boolean autoaddonlydodemand) {
+    this.autoaddonlydodemand = autoaddonlydodemand;
     return this;
   }
 
    /**
-   * Omezení automatického plnění oslovených dodavatelů. [persistentní položka]
-   * @return autoAddOnlyDoDemand
+   * omezení automatického plnění oslovených dodavatelů. [persistentní položka]
+   * @return autoaddonlydodemand
   **/
-  @ApiModelProperty(example = "null", value = "Omezení automatického plnění oslovených dodavatelů. [persistentní položka]")
-  public Boolean getAutoAddOnlyDoDemand() {
-    return autoAddOnlyDoDemand;
+  @ApiModelProperty(example = "null", value = "omezení automatického plnění oslovených dodavatelů. [persistentní položka]")
+  public Boolean getAutoaddonlydodemand() {
+    return autoaddonlydodemand;
   }
 
-  public void setAutoAddOnlyDoDemand(Boolean autoAddOnlyDoDemand) {
-    this.autoAddOnlyDoDemand = autoAddOnlyDoDemand;
+  public void setAutoaddonlydodemand(Boolean autoaddonlydodemand) {
+    this.autoaddonlydodemand = autoaddonlydodemand;
   }
 
-  public Demandsheet cloneDemandAnswers(Boolean cloneDemandAnswers) {
-    this.cloneDemandAnswers = cloneDemandAnswers;
+  public Demandsheet clonedemandanswers(Boolean clonedemandanswers) {
+    this.clonedemandanswers = clonedemandanswers;
     return this;
   }
 
    /**
-   * Zkopírovat i oslovené dodavatele
-   * @return cloneDemandAnswers
+   * zkopírovat i oslovené dodavatele
+   * @return clonedemandanswers
   **/
-  @ApiModelProperty(example = "null", value = "Zkopírovat i oslovené dodavatele")
-  public Boolean getCloneDemandAnswers() {
-    return cloneDemandAnswers;
+  @ApiModelProperty(example = "null", value = "zkopírovat i oslovené dodavatele")
+  public Boolean getClonedemandanswers() {
+    return clonedemandanswers;
   }
 
-  public void setCloneDemandAnswers(Boolean cloneDemandAnswers) {
-    this.cloneDemandAnswers = cloneDemandAnswers;
+  public void setClonedemandanswers(Boolean clonedemandanswers) {
+    this.clonedemandanswers = clonedemandanswers;
   }
 
 
@@ -501,34 +537,34 @@ public class Demandsheet   {
       return false;
     }
     Demandsheet demandsheet = (Demandsheet) o;
-    return Objects.equals(this.displayName, demandsheet.displayName) &&
-        Objects.equals(this.ID, demandsheet.ID) &&
-        Objects.equals(this.classID, demandsheet.classID) &&
-        Objects.equals(this.objVersion, demandsheet.objVersion) &&
+    return Objects.equals(this.displayname, demandsheet.displayname) &&
+        Objects.equals(this.id, demandsheet.id) &&
+        Objects.equals(this.classid, demandsheet.classid) &&
+        Objects.equals(this.objversion, demandsheet.objversion) &&
         Objects.equals(this.rows, demandsheet.rows) &&
-        Objects.equals(this.docQueueID, demandsheet.docQueueID) &&
-        Objects.equals(this.periodID, demandsheet.periodID) &&
-        Objects.equals(this.ordNumber, demandsheet.ordNumber) &&
-        Objects.equals(this.docDateDATE, demandsheet.docDateDATE) &&
-        Objects.equals(this.createdByID, demandsheet.createdByID) &&
-        Objects.equals(this.correctedByID, demandsheet.correctedByID) &&
-        Objects.equals(this.newRelatedType, demandsheet.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, demandsheet.newRelatedDocumentID) &&
-        Objects.equals(this.requestedClosingDateDATE, demandsheet.requestedClosingDateDATE) &&
-        Objects.equals(this.realClosingDateDATE, demandsheet.realClosingDateDATE) &&
+        Objects.equals(this.docqueueId, demandsheet.docqueueId) &&
+        Objects.equals(this.periodId, demandsheet.periodId) &&
+        Objects.equals(this.ordnumber, demandsheet.ordnumber) &&
+        Objects.equals(this.docdatedate, demandsheet.docdatedate) &&
+        Objects.equals(this.createdbyId, demandsheet.createdbyId) &&
+        Objects.equals(this.correctedbyId, demandsheet.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, demandsheet.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, demandsheet.newrelateddocumentId) &&
+        Objects.equals(this.requestedclosingdatedate, demandsheet.requestedclosingdatedate) &&
+        Objects.equals(this.realclosingdatedate, demandsheet.realclosingdatedate) &&
         Objects.equals(this.note, demandsheet.note) &&
-        Objects.equals(this.demandingDocTxt, demandsheet.demandingDocTxt) &&
+        Objects.equals(this.demandingdoctxt, demandsheet.demandingdoctxt) &&
         Objects.equals(this.closed, demandsheet.closed) &&
-        Objects.equals(this.addressID, demandsheet.addressID) &&
-        Objects.equals(this.pricePrecision, demandsheet.pricePrecision) &&
-        Objects.equals(this.autoAddSuppliers, demandsheet.autoAddSuppliers) &&
-        Objects.equals(this.autoAddOnlyDoDemand, demandsheet.autoAddOnlyDoDemand) &&
-        Objects.equals(this.cloneDemandAnswers, demandsheet.cloneDemandAnswers);
+        Objects.equals(this.addressId, demandsheet.addressId) &&
+        Objects.equals(this.priceprecision, demandsheet.priceprecision) &&
+        Objects.equals(this.autoaddsuppliers, demandsheet.autoaddsuppliers) &&
+        Objects.equals(this.autoaddonlydodemand, demandsheet.autoaddonlydodemand) &&
+        Objects.equals(this.clonedemandanswers, demandsheet.clonedemandanswers);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, requestedClosingDateDATE, realClosingDateDATE, note, demandingDocTxt, closed, addressID, pricePrecision, autoAddSuppliers, autoAddOnlyDoDemand, cloneDemandAnswers);
+    return Objects.hash(displayname, id, classid, objversion, rows, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, requestedclosingdatedate, realclosingdatedate, note, demandingdoctxt, closed, addressId, priceprecision, autoaddsuppliers, autoaddonlydodemand, clonedemandanswers);
   }
 
   @Override
@@ -536,29 +572,29 @@ public class Demandsheet   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Demandsheet {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    requestedClosingDateDATE: ").append(toIndentedString(requestedClosingDateDATE)).append("\n");
-    sb.append("    realClosingDateDATE: ").append(toIndentedString(realClosingDateDATE)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    requestedclosingdatedate: ").append(toIndentedString(requestedclosingdatedate)).append("\n");
+    sb.append("    realclosingdatedate: ").append(toIndentedString(realclosingdatedate)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
-    sb.append("    demandingDocTxt: ").append(toIndentedString(demandingDocTxt)).append("\n");
+    sb.append("    demandingdoctxt: ").append(toIndentedString(demandingdoctxt)).append("\n");
     sb.append("    closed: ").append(toIndentedString(closed)).append("\n");
-    sb.append("    addressID: ").append(toIndentedString(addressID)).append("\n");
-    sb.append("    pricePrecision: ").append(toIndentedString(pricePrecision)).append("\n");
-    sb.append("    autoAddSuppliers: ").append(toIndentedString(autoAddSuppliers)).append("\n");
-    sb.append("    autoAddOnlyDoDemand: ").append(toIndentedString(autoAddOnlyDoDemand)).append("\n");
-    sb.append("    cloneDemandAnswers: ").append(toIndentedString(cloneDemandAnswers)).append("\n");
+    sb.append("    addressId: ").append(toIndentedString(addressId)).append("\n");
+    sb.append("    priceprecision: ").append(toIndentedString(priceprecision)).append("\n");
+    sb.append("    autoaddsuppliers: ").append(toIndentedString(autoaddsuppliers)).append("\n");
+    sb.append("    autoaddonlydodemand: ").append(toIndentedString(autoaddonlydodemand)).append("\n");
+    sb.append("    clonedemandanswers: ").append(toIndentedString(clonedemandanswers)).append("\n");
     sb.append("}");
     return sb.toString();
   }

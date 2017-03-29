@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,135 +34,180 @@ import java.util.Objects;
 /**
  * Supplierpricelistrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Supplierpricelistrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("EAN")
-  private String EAN = null;
+  @SerializedName("ean")
+  private String ean = null;
 
-  @SerializedName("PurchasePrice")
-  private Double purchasePrice = null;
+  @SerializedName("purchaseprice")
+  private Double purchaseprice = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("VATRate")
-  private Double vATRate = null;
+  @SerializedName("vatrate")
+  private Double vatrate = null;
 
-  @SerializedName("DeliveryTime")
-  private Integer deliveryTime = null;
+  @SerializedName("deliverytime")
+  private Integer deliverytime = null;
 
-  @SerializedName("MinimalQuantity")
-  private Double minimalQuantity = null;
+  @SerializedName("minimalquantity")
+  private Double minimalquantity = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Picture_ID")
-  private String pictureID = null;
+  @SerializedName("picture_id")
+  private String pictureId = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("StoreUnit_ID")
-  private String storeUnitID = null;
+  @SerializedName("storeunit_id")
+  private String storeunitId = null;
 
-  @SerializedName("Supplier_ID")
-  private String supplierID = null;
+  @SerializedName("supplier_id")
+  private String supplierId = null;
 
-  @SerializedName("DiscountedPrice")
-  private Double discountedPrice = null;
+  @SerializedName("discountedprice")
+  private Double discountedprice = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Dodavatelský ceník [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Dodavatelský ceník [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Supplierpricelistrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Supplierpricelistrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Supplierpricelistrow id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Supplierpricelistrow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Supplierpricelistrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Supplierpricelistrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu dodavatelský ceník [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu dodavatelský ceník [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Supplierpricelistrow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
   public Supplierpricelistrow code(String code) {
@@ -171,10 +216,10 @@ public class Supplierpricelistrow   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -189,10 +234,10 @@ public class Supplierpricelistrow   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -201,130 +246,130 @@ public class Supplierpricelistrow   {
     this.name = name;
   }
 
-  public Supplierpricelistrow qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Supplierpricelistrow qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
   }
 
-  public Supplierpricelistrow EAN(String EAN) {
-    this.EAN = EAN;
+  public Supplierpricelistrow ean(String ean) {
+    this.ean = ean;
     return this;
   }
 
    /**
-   * EAN [persistentní položka]
-   * @return EAN
+   * ean [persistentní položka]
+   * @return ean
   **/
-  @ApiModelProperty(example = "null", value = "EAN [persistentní položka]")
-  public String getEAN() {
-    return EAN;
+  @ApiModelProperty(example = "null", value = "ean [persistentní položka]")
+  public String getEan() {
+    return ean;
   }
 
-  public void setEAN(String EAN) {
-    this.EAN = EAN;
+  public void setEan(String ean) {
+    this.ean = ean;
   }
 
-  public Supplierpricelistrow purchasePrice(Double purchasePrice) {
-    this.purchasePrice = purchasePrice;
+  public Supplierpricelistrow purchaseprice(Double purchaseprice) {
+    this.purchaseprice = purchaseprice;
     return this;
   }
 
    /**
-   * Cena [persistentní položka]
-   * @return purchasePrice
+   * cena [persistentní položka]
+   * @return purchaseprice
   **/
-  @ApiModelProperty(example = "null", value = "Cena [persistentní položka]")
-  public Double getPurchasePrice() {
-    return purchasePrice;
+  @ApiModelProperty(example = "null", value = "cena [persistentní položka]")
+  public Double getPurchaseprice() {
+    return purchaseprice;
   }
 
-  public void setPurchasePrice(Double purchasePrice) {
-    this.purchasePrice = purchasePrice;
+  public void setPurchaseprice(Double purchaseprice) {
+    this.purchaseprice = purchaseprice;
   }
 
-  public Supplierpricelistrow currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Supplierpricelistrow currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
-  public Supplierpricelistrow vATRate(Double vATRate) {
-    this.vATRate = vATRate;
+  public Supplierpricelistrow vatrate(Double vatrate) {
+    this.vatrate = vatrate;
     return this;
   }
 
    /**
-   * Sazba DPH [persistentní položka]
-   * @return vATRate
+   * sazba dph [persistentní položka]
+   * @return vatrate
   **/
-  @ApiModelProperty(example = "null", value = "Sazba DPH [persistentní položka]")
-  public Double getVATRate() {
-    return vATRate;
+  @ApiModelProperty(example = "null", value = "sazba dph [persistentní položka]")
+  public Double getVatrate() {
+    return vatrate;
   }
 
-  public void setVATRate(Double vATRate) {
-    this.vATRate = vATRate;
+  public void setVatrate(Double vatrate) {
+    this.vatrate = vatrate;
   }
 
-  public Supplierpricelistrow deliveryTime(Integer deliveryTime) {
-    this.deliveryTime = deliveryTime;
+  public Supplierpricelistrow deliverytime(Integer deliverytime) {
+    this.deliverytime = deliverytime;
     return this;
   }
 
    /**
-   * Dodací lhůta [persistentní položka]
-   * @return deliveryTime
+   * dodací lhůta [persistentní položka]
+   * @return deliverytime
   **/
-  @ApiModelProperty(example = "null", value = "Dodací lhůta [persistentní položka]")
-  public Integer getDeliveryTime() {
-    return deliveryTime;
+  @ApiModelProperty(example = "null", value = "dodací lhůta [persistentní položka]")
+  public Integer getDeliverytime() {
+    return deliverytime;
   }
 
-  public void setDeliveryTime(Integer deliveryTime) {
-    this.deliveryTime = deliveryTime;
+  public void setDeliverytime(Integer deliverytime) {
+    this.deliverytime = deliverytime;
   }
 
-  public Supplierpricelistrow minimalQuantity(Double minimalQuantity) {
-    this.minimalQuantity = minimalQuantity;
+  public Supplierpricelistrow minimalquantity(Double minimalquantity) {
+    this.minimalquantity = minimalquantity;
     return this;
   }
 
    /**
-   * Min. množství [persistentní položka]
-   * @return minimalQuantity
+   * min. množství [persistentní položka]
+   * @return minimalquantity
   **/
-  @ApiModelProperty(example = "null", value = "Min. množství [persistentní položka]")
-  public Double getMinimalQuantity() {
-    return minimalQuantity;
+  @ApiModelProperty(example = "null", value = "min. množství [persistentní položka]")
+  public Double getMinimalquantity() {
+    return minimalquantity;
   }
 
-  public void setMinimalQuantity(Double minimalQuantity) {
-    this.minimalQuantity = minimalQuantity;
+  public void setMinimalquantity(Double minimalquantity) {
+    this.minimalquantity = minimalquantity;
   }
 
   public Supplierpricelistrow note(String note) {
@@ -333,10 +378,10 @@ public class Supplierpricelistrow   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -345,112 +390,112 @@ public class Supplierpricelistrow   {
     this.note = note;
   }
 
-  public Supplierpricelistrow pictureID(String pictureID) {
-    this.pictureID = pictureID;
+  public Supplierpricelistrow pictureId(String pictureId) {
+    this.pictureId = pictureId;
     return this;
   }
 
    /**
-   * Obrázek; ID objektu Data obrázku [persistentní položka]
-   * @return pictureID
+   * obrázek; id objektu data obrázku [persistentní položka]
+   * @return pictureId
   **/
-  @ApiModelProperty(example = "null", value = "Obrázek; ID objektu Data obrázku [persistentní položka]")
-  public String getPictureID() {
-    return pictureID;
+  @ApiModelProperty(example = "null", value = "obrázek; id objektu data obrázku [persistentní položka]")
+  public String getPictureId() {
+    return pictureId;
   }
 
-  public void setPictureID(String pictureID) {
-    this.pictureID = pictureID;
+  public void setPictureId(String pictureId) {
+    this.pictureId = pictureId;
   }
 
-  public Supplierpricelistrow storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Supplierpricelistrow storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Skl. karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * skl. karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skl. karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "skl. karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
   }
 
-  public Supplierpricelistrow storeUnitID(String storeUnitID) {
-    this.storeUnitID = storeUnitID;
+  public Supplierpricelistrow storeunitId(String storeunitId) {
+    this.storeunitId = storeunitId;
     return this;
   }
 
    /**
-   * Skl. jednotka; ID objektu Jednotka skladové karty [persistentní položka]
-   * @return storeUnitID
+   * skl. jednotka; id objektu jednotka skladové karty [persistentní položka]
+   * @return storeunitId
   **/
-  @ApiModelProperty(example = "null", value = "Skl. jednotka; ID objektu Jednotka skladové karty [persistentní položka]")
-  public String getStoreUnitID() {
-    return storeUnitID;
+  @ApiModelProperty(example = "null", value = "skl. jednotka; id objektu jednotka skladové karty [persistentní položka]")
+  public String getStoreunitId() {
+    return storeunitId;
   }
 
-  public void setStoreUnitID(String storeUnitID) {
-    this.storeUnitID = storeUnitID;
+  public void setStoreunitId(String storeunitId) {
+    this.storeunitId = storeunitId;
   }
 
-  public Supplierpricelistrow supplierID(String supplierID) {
-    this.supplierID = supplierID;
+  public Supplierpricelistrow supplierId(String supplierId) {
+    this.supplierId = supplierId;
     return this;
   }
 
    /**
-   * Dodavatel; ID objektu Dodavatel [persistentní položka]
-   * @return supplierID
+   * dodavatel; id objektu dodavatel [persistentní položka]
+   * @return supplierId
   **/
-  @ApiModelProperty(example = "null", value = "Dodavatel; ID objektu Dodavatel [persistentní položka]")
-  public String getSupplierID() {
-    return supplierID;
+  @ApiModelProperty(example = "null", value = "dodavatel; id objektu dodavatel [persistentní položka]")
+  public String getSupplierId() {
+    return supplierId;
   }
 
-  public void setSupplierID(String supplierID) {
-    this.supplierID = supplierID;
+  public void setSupplierId(String supplierId) {
+    this.supplierId = supplierId;
   }
 
-  public Supplierpricelistrow discountedPrice(Double discountedPrice) {
-    this.discountedPrice = discountedPrice;
+  public Supplierpricelistrow discountedprice(Double discountedprice) {
+    this.discountedprice = discountedprice;
     return this;
   }
 
    /**
-   * Cena po slevě
-   * @return discountedPrice
+   * cena po slevě
+   * @return discountedprice
   **/
-  @ApiModelProperty(example = "null", value = "Cena po slevě")
-  public Double getDiscountedPrice() {
-    return discountedPrice;
+  @ApiModelProperty(example = "null", value = "cena po slevě")
+  public Double getDiscountedprice() {
+    return discountedprice;
   }
 
-  public void setDiscountedPrice(Double discountedPrice) {
-    this.discountedPrice = discountedPrice;
+  public void setDiscountedprice(Double discountedprice) {
+    this.discountedprice = discountedprice;
   }
 
-  public Supplierpricelistrow unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Supplierpricelistrow unitrate(Double unitrate) {
+    this.unitrate = unitrate;
     return this;
   }
 
    /**
-   * Vztah
-   * @return unitRate
+   * vztah
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "vztah")
+  public Double getUnitrate() {
+    return unitrate;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
 
@@ -463,33 +508,33 @@ public class Supplierpricelistrow   {
       return false;
     }
     Supplierpricelistrow supplierpricelistrow = (Supplierpricelistrow) o;
-    return Objects.equals(this.displayName, supplierpricelistrow.displayName) &&
-        Objects.equals(this.ID, supplierpricelistrow.ID) &&
-        Objects.equals(this.classID, supplierpricelistrow.classID) &&
-        Objects.equals(this.objVersion, supplierpricelistrow.objVersion) &&
-        Objects.equals(this.parentID, supplierpricelistrow.parentID) &&
-        Objects.equals(this.posIndex, supplierpricelistrow.posIndex) &&
+    return Objects.equals(this.displayname, supplierpricelistrow.displayname) &&
+        Objects.equals(this.id, supplierpricelistrow.id) &&
+        Objects.equals(this.classid, supplierpricelistrow.classid) &&
+        Objects.equals(this.objversion, supplierpricelistrow.objversion) &&
+        Objects.equals(this.parentId, supplierpricelistrow.parentId) &&
+        Objects.equals(this.posindex, supplierpricelistrow.posindex) &&
         Objects.equals(this.code, supplierpricelistrow.code) &&
         Objects.equals(this.name, supplierpricelistrow.name) &&
-        Objects.equals(this.qUnit, supplierpricelistrow.qUnit) &&
-        Objects.equals(this.EAN, supplierpricelistrow.EAN) &&
-        Objects.equals(this.purchasePrice, supplierpricelistrow.purchasePrice) &&
-        Objects.equals(this.currencyID, supplierpricelistrow.currencyID) &&
-        Objects.equals(this.vATRate, supplierpricelistrow.vATRate) &&
-        Objects.equals(this.deliveryTime, supplierpricelistrow.deliveryTime) &&
-        Objects.equals(this.minimalQuantity, supplierpricelistrow.minimalQuantity) &&
+        Objects.equals(this.qunit, supplierpricelistrow.qunit) &&
+        Objects.equals(this.ean, supplierpricelistrow.ean) &&
+        Objects.equals(this.purchaseprice, supplierpricelistrow.purchaseprice) &&
+        Objects.equals(this.currencyId, supplierpricelistrow.currencyId) &&
+        Objects.equals(this.vatrate, supplierpricelistrow.vatrate) &&
+        Objects.equals(this.deliverytime, supplierpricelistrow.deliverytime) &&
+        Objects.equals(this.minimalquantity, supplierpricelistrow.minimalquantity) &&
         Objects.equals(this.note, supplierpricelistrow.note) &&
-        Objects.equals(this.pictureID, supplierpricelistrow.pictureID) &&
-        Objects.equals(this.storeCardID, supplierpricelistrow.storeCardID) &&
-        Objects.equals(this.storeUnitID, supplierpricelistrow.storeUnitID) &&
-        Objects.equals(this.supplierID, supplierpricelistrow.supplierID) &&
-        Objects.equals(this.discountedPrice, supplierpricelistrow.discountedPrice) &&
-        Objects.equals(this.unitRate, supplierpricelistrow.unitRate);
+        Objects.equals(this.pictureId, supplierpricelistrow.pictureId) &&
+        Objects.equals(this.storecardId, supplierpricelistrow.storecardId) &&
+        Objects.equals(this.storeunitId, supplierpricelistrow.storeunitId) &&
+        Objects.equals(this.supplierId, supplierpricelistrow.supplierId) &&
+        Objects.equals(this.discountedprice, supplierpricelistrow.discountedprice) &&
+        Objects.equals(this.unitrate, supplierpricelistrow.unitrate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, code, name, qUnit, EAN, purchasePrice, currencyID, vATRate, deliveryTime, minimalQuantity, note, pictureID, storeCardID, storeUnitID, supplierID, discountedPrice, unitRate);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, code, name, qunit, ean, purchaseprice, currencyId, vatrate, deliverytime, minimalquantity, note, pictureId, storecardId, storeunitId, supplierId, discountedprice, unitrate);
   }
 
   @Override
@@ -497,28 +542,28 @@ public class Supplierpricelistrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Supplierpricelistrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    EAN: ").append(toIndentedString(EAN)).append("\n");
-    sb.append("    purchasePrice: ").append(toIndentedString(purchasePrice)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    vATRate: ").append(toIndentedString(vATRate)).append("\n");
-    sb.append("    deliveryTime: ").append(toIndentedString(deliveryTime)).append("\n");
-    sb.append("    minimalQuantity: ").append(toIndentedString(minimalQuantity)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    ean: ").append(toIndentedString(ean)).append("\n");
+    sb.append("    purchaseprice: ").append(toIndentedString(purchaseprice)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    vatrate: ").append(toIndentedString(vatrate)).append("\n");
+    sb.append("    deliverytime: ").append(toIndentedString(deliverytime)).append("\n");
+    sb.append("    minimalquantity: ").append(toIndentedString(minimalquantity)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
-    sb.append("    pictureID: ").append(toIndentedString(pictureID)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    storeUnitID: ").append(toIndentedString(storeUnitID)).append("\n");
-    sb.append("    supplierID: ").append(toIndentedString(supplierID)).append("\n");
-    sb.append("    discountedPrice: ").append(toIndentedString(discountedPrice)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
+    sb.append("    pictureId: ").append(toIndentedString(pictureId)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    storeunitId: ").append(toIndentedString(storeunitId)).append("\n");
+    sb.append("    supplierId: ").append(toIndentedString(supplierId)).append("\n");
+    sb.append("    discountedprice: ").append(toIndentedString(discountedprice)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

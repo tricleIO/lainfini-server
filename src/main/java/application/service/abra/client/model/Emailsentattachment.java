@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,213 +34,258 @@ import java.util.Objects;
 /**
  * Emailsentattachment
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Emailsentattachment   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("FileName")
-  private String fileName = null;
+  @SerializedName("filename")
+  private String filename = null;
 
-  @SerializedName("FileSize")
-  private Integer fileSize = null;
+  @SerializedName("filesize")
+  private Integer filesize = null;
 
-  @SerializedName("Content_ID")
-  private Emailsentattachment contentID = null;
+  @SerializedName("content_id")
+  private Emailsentattachment contentId = null;
 
-  @SerializedName("ContentType")
-  private Integer contentType = null;
+  @SerializedName("contenttype")
+  private Integer contenttype = null;
 
-  @SerializedName("Document_ID")
-  private String documentID = null;
+  @SerializedName("document_id")
+  private String documentId = null;
 
-  @SerializedName("ContentTypeStr")
-  private String contentTypeStr = null;
+  @SerializedName("contenttypestr")
+  private String contenttypestr = null;
 
-  @SerializedName("CID")
-  private String CID = null;
+  @SerializedName("cid")
+  private String cid = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Hlavičkový objekt [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Hlavičkový objekt [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Emailsentattachment fileName(String fileName) {
-    this.fileName = fileName;
+  public Emailsentattachment displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Název souboru [persistentní položka]
-   * @return fileName
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Název souboru [persistentní položka]")
-  public String getFileName() {
-    return fileName;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setFileName(String fileName) {
-    this.fileName = fileName;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Emailsentattachment fileSize(Integer fileSize) {
-    this.fileSize = fileSize;
+  public Emailsentattachment id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Velikost (B) [persistentní položka]
-   * @return fileSize
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Velikost (B) [persistentní položka]")
-  public Integer getFileSize() {
-    return fileSize;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setFileSize(Integer fileSize) {
-    this.fileSize = fileSize;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Emailsentattachment contentID(Emailsentattachment contentID) {
-    this.contentID = contentID;
+  public Emailsentattachment classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Get contentID
-   * @return contentID
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Emailsentattachment objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Emailsentattachment parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu hlavičkový objekt [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu hlavičkový objekt [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Emailsentattachment filename(String filename) {
+    this.filename = filename;
+    return this;
+  }
+
+   /**
+   * název souboru [persistentní položka]
+   * @return filename
+  **/
+  @ApiModelProperty(example = "null", value = "název souboru [persistentní položka]")
+  public String getFilename() {
+    return filename;
+  }
+
+  public void setFilename(String filename) {
+    this.filename = filename;
+  }
+
+  public Emailsentattachment filesize(Integer filesize) {
+    this.filesize = filesize;
+    return this;
+  }
+
+   /**
+   * velikost (b) [persistentní položka]
+   * @return filesize
+  **/
+  @ApiModelProperty(example = "null", value = "velikost (b) [persistentní položka]")
+  public Integer getFilesize() {
+    return filesize;
+  }
+
+  public void setFilesize(Integer filesize) {
+    this.filesize = filesize;
+  }
+
+  public Emailsentattachment contentId(Emailsentattachment contentId) {
+    this.contentId = contentId;
+    return this;
+  }
+
+   /**
+   * Get contentId
+   * @return contentId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Emailsentattachment getContentID() {
-    return contentID;
+  public Emailsentattachment getContentId() {
+    return contentId;
   }
 
-  public void setContentID(Emailsentattachment contentID) {
-    this.contentID = contentID;
+  public void setContentId(Emailsentattachment contentId) {
+    this.contentId = contentId;
   }
 
-  public Emailsentattachment contentType(Integer contentType) {
-    this.contentType = contentType;
+  public Emailsentattachment contenttype(Integer contenttype) {
+    this.contenttype = contenttype;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return contentType
+   * typ [persistentní položka]
+   * @return contenttype
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getContentType() {
-    return contentType;
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getContenttype() {
+    return contenttype;
   }
 
-  public void setContentType(Integer contentType) {
-    this.contentType = contentType;
+  public void setContenttype(Integer contenttype) {
+    this.contenttype = contenttype;
   }
 
-  public Emailsentattachment documentID(String documentID) {
-    this.documentID = documentID;
+  public Emailsentattachment documentId(String documentId) {
+    this.documentId = documentId;
     return this;
   }
 
    /**
-   * Dokument; ID objektu Dokument [persistentní položka]
-   * @return documentID
+   * dokument; id objektu dokument [persistentní položka]
+   * @return documentId
   **/
-  @ApiModelProperty(example = "null", value = "Dokument; ID objektu Dokument [persistentní položka]")
-  public String getDocumentID() {
-    return documentID;
+  @ApiModelProperty(example = "null", value = "dokument; id objektu dokument [persistentní položka]")
+  public String getDocumentId() {
+    return documentId;
   }
 
-  public void setDocumentID(String documentID) {
-    this.documentID = documentID;
+  public void setDocumentId(String documentId) {
+    this.documentId = documentId;
   }
 
-  public Emailsentattachment contentTypeStr(String contentTypeStr) {
-    this.contentTypeStr = contentTypeStr;
+  public Emailsentattachment contenttypestr(String contenttypestr) {
+    this.contenttypestr = contenttypestr;
     return this;
   }
 
    /**
-   * Typ
-   * @return contentTypeStr
+   * typ
+   * @return contenttypestr
   **/
-  @ApiModelProperty(example = "null", value = "Typ")
-  public String getContentTypeStr() {
-    return contentTypeStr;
+  @ApiModelProperty(example = "null", value = "typ")
+  public String getContenttypestr() {
+    return contenttypestr;
   }
 
-  public void setContentTypeStr(String contentTypeStr) {
-    this.contentTypeStr = contentTypeStr;
+  public void setContenttypestr(String contenttypestr) {
+    this.contenttypestr = contenttypestr;
   }
 
-  public Emailsentattachment CID(String CID) {
-    this.CID = CID;
+  public Emailsentattachment cid(String cid) {
+    this.cid = cid;
     return this;
   }
 
    /**
-   * CID
-   * @return CID
+   * cid
+   * @return cid
   **/
-  @ApiModelProperty(example = "null", value = "CID")
-  public String getCID() {
-    return CID;
+  @ApiModelProperty(example = "null", value = "cid")
+  public String getCid() {
+    return cid;
   }
 
-  public void setCID(String CID) {
-    this.CID = CID;
+  public void setCid(String cid) {
+    this.cid = cid;
   }
 
 
@@ -253,23 +298,23 @@ public class Emailsentattachment   {
       return false;
     }
     Emailsentattachment emailsentattachment = (Emailsentattachment) o;
-    return Objects.equals(this.displayName, emailsentattachment.displayName) &&
-        Objects.equals(this.ID, emailsentattachment.ID) &&
-        Objects.equals(this.classID, emailsentattachment.classID) &&
-        Objects.equals(this.objVersion, emailsentattachment.objVersion) &&
-        Objects.equals(this.parentID, emailsentattachment.parentID) &&
-        Objects.equals(this.fileName, emailsentattachment.fileName) &&
-        Objects.equals(this.fileSize, emailsentattachment.fileSize) &&
-        Objects.equals(this.contentID, emailsentattachment.contentID) &&
-        Objects.equals(this.contentType, emailsentattachment.contentType) &&
-        Objects.equals(this.documentID, emailsentattachment.documentID) &&
-        Objects.equals(this.contentTypeStr, emailsentattachment.contentTypeStr) &&
-        Objects.equals(this.CID, emailsentattachment.CID);
+    return Objects.equals(this.displayname, emailsentattachment.displayname) &&
+        Objects.equals(this.id, emailsentattachment.id) &&
+        Objects.equals(this.classid, emailsentattachment.classid) &&
+        Objects.equals(this.objversion, emailsentattachment.objversion) &&
+        Objects.equals(this.parentId, emailsentattachment.parentId) &&
+        Objects.equals(this.filename, emailsentattachment.filename) &&
+        Objects.equals(this.filesize, emailsentattachment.filesize) &&
+        Objects.equals(this.contentId, emailsentattachment.contentId) &&
+        Objects.equals(this.contenttype, emailsentattachment.contenttype) &&
+        Objects.equals(this.documentId, emailsentattachment.documentId) &&
+        Objects.equals(this.contenttypestr, emailsentattachment.contenttypestr) &&
+        Objects.equals(this.cid, emailsentattachment.cid);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, fileName, fileSize, contentID, contentType, documentID, contentTypeStr, CID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, filename, filesize, contentId, contenttype, documentId, contenttypestr, cid);
   }
 
   @Override
@@ -277,18 +322,18 @@ public class Emailsentattachment   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Emailsentattachment {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    fileName: ").append(toIndentedString(fileName)).append("\n");
-    sb.append("    fileSize: ").append(toIndentedString(fileSize)).append("\n");
-    sb.append("    contentID: ").append(toIndentedString(contentID)).append("\n");
-    sb.append("    contentType: ").append(toIndentedString(contentType)).append("\n");
-    sb.append("    documentID: ").append(toIndentedString(documentID)).append("\n");
-    sb.append("    contentTypeStr: ").append(toIndentedString(contentTypeStr)).append("\n");
-    sb.append("    CID: ").append(toIndentedString(CID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    filename: ").append(toIndentedString(filename)).append("\n");
+    sb.append("    filesize: ").append(toIndentedString(filesize)).append("\n");
+    sb.append("    contentId: ").append(toIndentedString(contentId)).append("\n");
+    sb.append("    contenttype: ").append(toIndentedString(contenttype)).append("\n");
+    sb.append("    documentId: ").append(toIndentedString(documentId)).append("\n");
+    sb.append("    contenttypestr: ").append(toIndentedString(contenttypestr)).append("\n");
+    sb.append("    cid: ").append(toIndentedString(cid)).append("\n");
     sb.append("}");
     return sb.toString();
   }

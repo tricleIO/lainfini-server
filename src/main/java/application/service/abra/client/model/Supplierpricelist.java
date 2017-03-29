@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,105 +37,141 @@ import java.util.Objects;
 /**
  * Supplierpricelist
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Supplierpricelist   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Supplierpricelistrow> rows = new ArrayList<Supplierpricelistrow>();
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("FirmOffice_ID")
-  private String firmOfficeID = null;
+  @SerializedName("firmoffice_id")
+  private String firmofficeId = null;
 
-  @SerializedName("Person_ID")
-  private String personID = null;
+  @SerializedName("person_id")
+  private String personId = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ValidFromDate$DATE")
-  private DateTime validFromDateDATE = null;
+  @SerializedName("validfromdate$date")
+  private DateTime validfromdatedate = null;
 
-  @SerializedName("LastImportDate$DATE")
-  private DateTime lastImportDateDATE = null;
+  @SerializedName("lastimportdate$date")
+  private DateTime lastimportdatedate = null;
 
-  @SerializedName("Country_ID")
-  private String countryID = null;
+  @SerializedName("country_id")
+  private String countryId = null;
 
-  @SerializedName("Discount1")
+  @SerializedName("discount1")
   private Double discount1 = null;
 
-  @SerializedName("Discount2")
+  @SerializedName("discount2")
   private Double discount2 = null;
 
-  @SerializedName("Discount3")
+  @SerializedName("discount3")
   private Double discount3 = null;
 
-  @SerializedName("PricesWithVAT")
-  private Boolean pricesWithVAT = null;
+  @SerializedName("priceswithvat")
+  private Boolean priceswithvat = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("TotalDiscount")
-  private Double totalDiscount = null;
+  @SerializedName("totaldiscount")
+  private Double totaldiscount = null;
 
-  @SerializedName("CountOfAssigned")
-  private Integer countOfAssigned = null;
+  @SerializedName("countofassigned")
+  private Integer countofassigned = null;
 
-  @SerializedName("CountOfUnAssigned")
-  private Integer countOfUnAssigned = null;
+  @SerializedName("countofunassigned")
+  private Integer countofunassigned = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Supplierpricelist displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Supplierpricelist id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Supplierpricelist classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Supplierpricelist objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Supplierpricelist rows(List<Supplierpricelistrow> rows) {
@@ -149,10 +185,10 @@ public class Supplierpricelist   {
   }
 
    /**
-   * Řádky; kolekce BO Položka dod. ceníku [nepersistentní položka]
+   * Řádky; kolekce bo položka dod. ceníku [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Položka dod. ceníku [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo položka dod. ceníku [nepersistentní položka]")
   public List<Supplierpricelistrow> getRows() {
     return rows;
   }
@@ -161,58 +197,58 @@ public class Supplierpricelist   {
     this.rows = rows;
   }
 
-  public Supplierpricelist firmID(String firmID) {
-    this.firmID = firmID;
+  public Supplierpricelist firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Supplierpricelist firmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public Supplierpricelist firmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
     return this;
   }
 
    /**
-   * Provozovna; ID objektu Provozovna [persistentní položka]
-   * @return firmOfficeID
+   * provozovna; id objektu provozovna [persistentní položka]
+   * @return firmofficeId
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna; ID objektu Provozovna [persistentní položka]")
-  public String getFirmOfficeID() {
-    return firmOfficeID;
+  @ApiModelProperty(example = "null", value = "provozovna; id objektu provozovna [persistentní položka]")
+  public String getFirmofficeId() {
+    return firmofficeId;
   }
 
-  public void setFirmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public void setFirmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
   }
 
-  public Supplierpricelist personID(String personID) {
-    this.personID = personID;
+  public Supplierpricelist personId(String personId) {
+    this.personId = personId;
     return this;
   }
 
    /**
-   * Osoba; ID objektu Osoba [persistentní položka]
-   * @return personID
+   * osoba; id objektu osoba [persistentní položka]
+   * @return personId
   **/
-  @ApiModelProperty(example = "null", value = "Osoba; ID objektu Osoba [persistentní položka]")
-  public String getPersonID() {
-    return personID;
+  @ApiModelProperty(example = "null", value = "osoba; id objektu osoba [persistentní položka]")
+  public String getPersonId() {
+    return personId;
   }
 
-  public void setPersonID(String personID) {
-    this.personID = personID;
+  public void setPersonId(String personId) {
+    this.personId = personId;
   }
 
   public Supplierpricelist code(String code) {
@@ -221,10 +257,10 @@ public class Supplierpricelist   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -239,10 +275,10 @@ public class Supplierpricelist   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -251,58 +287,58 @@ public class Supplierpricelist   {
     this.name = name;
   }
 
-  public Supplierpricelist validFromDateDATE(DateTime validFromDateDATE) {
-    this.validFromDateDATE = validFromDateDATE;
+  public Supplierpricelist validfromdatedate(DateTime validfromdatedate) {
+    this.validfromdatedate = validfromdatedate;
     return this;
   }
 
    /**
-   * Platný od [persistentní položka]
-   * @return validFromDateDATE
+   * platný od [persistentní položka]
+   * @return validfromdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Platný od [persistentní položka]")
-  public DateTime getValidFromDateDATE() {
-    return validFromDateDATE;
+  @ApiModelProperty(example = "null", value = "platný od [persistentní položka]")
+  public DateTime getValidfromdatedate() {
+    return validfromdatedate;
   }
 
-  public void setValidFromDateDATE(DateTime validFromDateDATE) {
-    this.validFromDateDATE = validFromDateDATE;
+  public void setValidfromdatedate(DateTime validfromdatedate) {
+    this.validfromdatedate = validfromdatedate;
   }
 
-  public Supplierpricelist lastImportDateDATE(DateTime lastImportDateDATE) {
-    this.lastImportDateDATE = lastImportDateDATE;
+  public Supplierpricelist lastimportdatedate(DateTime lastimportdatedate) {
+    this.lastimportdatedate = lastimportdatedate;
     return this;
   }
 
    /**
-   * Datum importu [persistentní položka]
-   * @return lastImportDateDATE
+   * datum importu [persistentní položka]
+   * @return lastimportdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum importu [persistentní položka]")
-  public DateTime getLastImportDateDATE() {
-    return lastImportDateDATE;
+  @ApiModelProperty(example = "null", value = "datum importu [persistentní položka]")
+  public DateTime getLastimportdatedate() {
+    return lastimportdatedate;
   }
 
-  public void setLastImportDateDATE(DateTime lastImportDateDATE) {
-    this.lastImportDateDATE = lastImportDateDATE;
+  public void setLastimportdatedate(DateTime lastimportdatedate) {
+    this.lastimportdatedate = lastimportdatedate;
   }
 
-  public Supplierpricelist countryID(String countryID) {
-    this.countryID = countryID;
+  public Supplierpricelist countryId(String countryId) {
+    this.countryId = countryId;
     return this;
   }
 
    /**
-   * Země; ID objektu Země [persistentní položka]
-   * @return countryID
+   * země; id objektu země [persistentní položka]
+   * @return countryId
   **/
-  @ApiModelProperty(example = "null", value = "Země; ID objektu Země [persistentní položka]")
-  public String getCountryID() {
-    return countryID;
+  @ApiModelProperty(example = "null", value = "země; id objektu země [persistentní položka]")
+  public String getCountryId() {
+    return countryId;
   }
 
-  public void setCountryID(String countryID) {
-    this.countryID = countryID;
+  public void setCountryId(String countryId) {
+    this.countryId = countryId;
   }
 
   public Supplierpricelist discount1(Double discount1) {
@@ -311,10 +347,10 @@ public class Supplierpricelist   {
   }
 
    /**
-   * Sleva 1 [persistentní položka]
+   * sleva 1 [persistentní položka]
    * @return discount1
   **/
-  @ApiModelProperty(example = "null", value = "Sleva 1 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "sleva 1 [persistentní položka]")
   public Double getDiscount1() {
     return discount1;
   }
@@ -329,10 +365,10 @@ public class Supplierpricelist   {
   }
 
    /**
-   * Sleva 2 [persistentní položka]
+   * sleva 2 [persistentní položka]
    * @return discount2
   **/
-  @ApiModelProperty(example = "null", value = "Sleva 2 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "sleva 2 [persistentní položka]")
   public Double getDiscount2() {
     return discount2;
   }
@@ -347,10 +383,10 @@ public class Supplierpricelist   {
   }
 
    /**
-   * Sleva 3 [persistentní položka]
+   * sleva 3 [persistentní položka]
    * @return discount3
   **/
-  @ApiModelProperty(example = "null", value = "Sleva 3 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "sleva 3 [persistentní položka]")
   public Double getDiscount3() {
     return discount3;
   }
@@ -359,22 +395,22 @@ public class Supplierpricelist   {
     this.discount3 = discount3;
   }
 
-  public Supplierpricelist pricesWithVAT(Boolean pricesWithVAT) {
-    this.pricesWithVAT = pricesWithVAT;
+  public Supplierpricelist priceswithvat(Boolean priceswithvat) {
+    this.priceswithvat = priceswithvat;
     return this;
   }
 
    /**
-   * Cena s DPH [persistentní položka]
-   * @return pricesWithVAT
+   * cena s dph [persistentní položka]
+   * @return priceswithvat
   **/
-  @ApiModelProperty(example = "null", value = "Cena s DPH [persistentní položka]")
-  public Boolean getPricesWithVAT() {
-    return pricesWithVAT;
+  @ApiModelProperty(example = "null", value = "cena s dph [persistentní položka]")
+  public Boolean getPriceswithvat() {
+    return priceswithvat;
   }
 
-  public void setPricesWithVAT(Boolean pricesWithVAT) {
-    this.pricesWithVAT = pricesWithVAT;
+  public void setPriceswithvat(Boolean priceswithvat) {
+    this.priceswithvat = priceswithvat;
   }
 
   public Supplierpricelist note(String note) {
@@ -383,10 +419,10 @@ public class Supplierpricelist   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -395,58 +431,58 @@ public class Supplierpricelist   {
     this.note = note;
   }
 
-  public Supplierpricelist totalDiscount(Double totalDiscount) {
-    this.totalDiscount = totalDiscount;
+  public Supplierpricelist totaldiscount(Double totaldiscount) {
+    this.totaldiscount = totaldiscount;
     return this;
   }
 
    /**
-   * Celková sleva
-   * @return totalDiscount
+   * celková sleva
+   * @return totaldiscount
   **/
-  @ApiModelProperty(example = "null", value = "Celková sleva")
-  public Double getTotalDiscount() {
-    return totalDiscount;
+  @ApiModelProperty(example = "null", value = "celková sleva")
+  public Double getTotaldiscount() {
+    return totaldiscount;
   }
 
-  public void setTotalDiscount(Double totalDiscount) {
-    this.totalDiscount = totalDiscount;
+  public void setTotaldiscount(Double totaldiscount) {
+    this.totaldiscount = totaldiscount;
   }
 
-  public Supplierpricelist countOfAssigned(Integer countOfAssigned) {
-    this.countOfAssigned = countOfAssigned;
+  public Supplierpricelist countofassigned(Integer countofassigned) {
+    this.countofassigned = countofassigned;
     return this;
   }
 
    /**
-   * Připojených
-   * @return countOfAssigned
+   * připojených
+   * @return countofassigned
   **/
-  @ApiModelProperty(example = "null", value = "Připojených")
-  public Integer getCountOfAssigned() {
-    return countOfAssigned;
+  @ApiModelProperty(example = "null", value = "připojených")
+  public Integer getCountofassigned() {
+    return countofassigned;
   }
 
-  public void setCountOfAssigned(Integer countOfAssigned) {
-    this.countOfAssigned = countOfAssigned;
+  public void setCountofassigned(Integer countofassigned) {
+    this.countofassigned = countofassigned;
   }
 
-  public Supplierpricelist countOfUnAssigned(Integer countOfUnAssigned) {
-    this.countOfUnAssigned = countOfUnAssigned;
+  public Supplierpricelist countofunassigned(Integer countofunassigned) {
+    this.countofunassigned = countofunassigned;
     return this;
   }
 
    /**
-   * Nepřipojených
-   * @return countOfUnAssigned
+   * nepřipojených
+   * @return countofunassigned
   **/
-  @ApiModelProperty(example = "null", value = "Nepřipojených")
-  public Integer getCountOfUnAssigned() {
-    return countOfUnAssigned;
+  @ApiModelProperty(example = "null", value = "nepřipojených")
+  public Integer getCountofunassigned() {
+    return countofunassigned;
   }
 
-  public void setCountOfUnAssigned(Integer countOfUnAssigned) {
-    this.countOfUnAssigned = countOfUnAssigned;
+  public void setCountofunassigned(Integer countofunassigned) {
+    this.countofunassigned = countofunassigned;
   }
 
 
@@ -459,32 +495,32 @@ public class Supplierpricelist   {
       return false;
     }
     Supplierpricelist supplierpricelist = (Supplierpricelist) o;
-    return Objects.equals(this.displayName, supplierpricelist.displayName) &&
-        Objects.equals(this.ID, supplierpricelist.ID) &&
-        Objects.equals(this.classID, supplierpricelist.classID) &&
-        Objects.equals(this.objVersion, supplierpricelist.objVersion) &&
+    return Objects.equals(this.displayname, supplierpricelist.displayname) &&
+        Objects.equals(this.id, supplierpricelist.id) &&
+        Objects.equals(this.classid, supplierpricelist.classid) &&
+        Objects.equals(this.objversion, supplierpricelist.objversion) &&
         Objects.equals(this.rows, supplierpricelist.rows) &&
-        Objects.equals(this.firmID, supplierpricelist.firmID) &&
-        Objects.equals(this.firmOfficeID, supplierpricelist.firmOfficeID) &&
-        Objects.equals(this.personID, supplierpricelist.personID) &&
+        Objects.equals(this.firmId, supplierpricelist.firmId) &&
+        Objects.equals(this.firmofficeId, supplierpricelist.firmofficeId) &&
+        Objects.equals(this.personId, supplierpricelist.personId) &&
         Objects.equals(this.code, supplierpricelist.code) &&
         Objects.equals(this.name, supplierpricelist.name) &&
-        Objects.equals(this.validFromDateDATE, supplierpricelist.validFromDateDATE) &&
-        Objects.equals(this.lastImportDateDATE, supplierpricelist.lastImportDateDATE) &&
-        Objects.equals(this.countryID, supplierpricelist.countryID) &&
+        Objects.equals(this.validfromdatedate, supplierpricelist.validfromdatedate) &&
+        Objects.equals(this.lastimportdatedate, supplierpricelist.lastimportdatedate) &&
+        Objects.equals(this.countryId, supplierpricelist.countryId) &&
         Objects.equals(this.discount1, supplierpricelist.discount1) &&
         Objects.equals(this.discount2, supplierpricelist.discount2) &&
         Objects.equals(this.discount3, supplierpricelist.discount3) &&
-        Objects.equals(this.pricesWithVAT, supplierpricelist.pricesWithVAT) &&
+        Objects.equals(this.priceswithvat, supplierpricelist.priceswithvat) &&
         Objects.equals(this.note, supplierpricelist.note) &&
-        Objects.equals(this.totalDiscount, supplierpricelist.totalDiscount) &&
-        Objects.equals(this.countOfAssigned, supplierpricelist.countOfAssigned) &&
-        Objects.equals(this.countOfUnAssigned, supplierpricelist.countOfUnAssigned);
+        Objects.equals(this.totaldiscount, supplierpricelist.totaldiscount) &&
+        Objects.equals(this.countofassigned, supplierpricelist.countofassigned) &&
+        Objects.equals(this.countofunassigned, supplierpricelist.countofunassigned);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, firmID, firmOfficeID, personID, code, name, validFromDateDATE, lastImportDateDATE, countryID, discount1, discount2, discount3, pricesWithVAT, note, totalDiscount, countOfAssigned, countOfUnAssigned);
+    return Objects.hash(displayname, id, classid, objversion, rows, firmId, firmofficeId, personId, code, name, validfromdatedate, lastimportdatedate, countryId, discount1, discount2, discount3, priceswithvat, note, totaldiscount, countofassigned, countofunassigned);
   }
 
   @Override
@@ -492,27 +528,27 @@ public class Supplierpricelist   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Supplierpricelist {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    firmOfficeID: ").append(toIndentedString(firmOfficeID)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    firmofficeId: ").append(toIndentedString(firmofficeId)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    validFromDateDATE: ").append(toIndentedString(validFromDateDATE)).append("\n");
-    sb.append("    lastImportDateDATE: ").append(toIndentedString(lastImportDateDATE)).append("\n");
-    sb.append("    countryID: ").append(toIndentedString(countryID)).append("\n");
+    sb.append("    validfromdatedate: ").append(toIndentedString(validfromdatedate)).append("\n");
+    sb.append("    lastimportdatedate: ").append(toIndentedString(lastimportdatedate)).append("\n");
+    sb.append("    countryId: ").append(toIndentedString(countryId)).append("\n");
     sb.append("    discount1: ").append(toIndentedString(discount1)).append("\n");
     sb.append("    discount2: ").append(toIndentedString(discount2)).append("\n");
     sb.append("    discount3: ").append(toIndentedString(discount3)).append("\n");
-    sb.append("    pricesWithVAT: ").append(toIndentedString(pricesWithVAT)).append("\n");
+    sb.append("    priceswithvat: ").append(toIndentedString(priceswithvat)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
-    sb.append("    totalDiscount: ").append(toIndentedString(totalDiscount)).append("\n");
-    sb.append("    countOfAssigned: ").append(toIndentedString(countOfAssigned)).append("\n");
-    sb.append("    countOfUnAssigned: ").append(toIndentedString(countOfUnAssigned)).append("\n");
+    sb.append("    totaldiscount: ").append(toIndentedString(totaldiscount)).append("\n");
+    sb.append("    countofassigned: ").append(toIndentedString(countofassigned)).append("\n");
+    sb.append("    countofunassigned: ").append(toIndentedString(countofunassigned)).append("\n");
     sb.append("}");
     return sb.toString();
   }

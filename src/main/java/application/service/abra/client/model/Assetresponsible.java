@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,117 +34,153 @@ import java.util.Objects;
 /**
  * Assetresponsible
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Assetresponsible   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Person_ID")
-  private String personID = null;
+  @SerializedName("person_id")
+  private String personId = null;
 
-  @SerializedName("PersonName")
-  private String personName = null;
+  @SerializedName("personname")
+  private String personname = null;
 
-  @SerializedName("PersonalNumber")
-  private String personalNumber = null;
+  @SerializedName("personalnumber")
+  private String personalnumber = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Assetresponsible personID(String personID) {
-    this.personID = personID;
+  public Assetresponsible displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Odpovědná osoba; ID objektu Osoba [persistentní položka]
-   * @return personID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Odpovědná osoba; ID objektu Osoba [persistentní položka]")
-  public String getPersonID() {
-    return personID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPersonID(String personID) {
-    this.personID = personID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Assetresponsible personName(String personName) {
-    this.personName = personName;
+  public Assetresponsible id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Jméno
-   * @return personName
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Jméno")
-  public String getPersonName() {
-    return personName;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setPersonName(String personName) {
-    this.personName = personName;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Assetresponsible personalNumber(String personalNumber) {
-    this.personalNumber = personalNumber;
+  public Assetresponsible classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Osob.číslo
-   * @return personalNumber
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Osob.číslo")
-  public String getPersonalNumber() {
-    return personalNumber;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPersonalNumber(String personalNumber) {
-    this.personalNumber = personalNumber;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Assetresponsible objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Assetresponsible personId(String personId) {
+    this.personId = personId;
+    return this;
+  }
+
+   /**
+   * odpovědná osoba; id objektu osoba [persistentní položka]
+   * @return personId
+  **/
+  @ApiModelProperty(example = "null", value = "odpovědná osoba; id objektu osoba [persistentní položka]")
+  public String getPersonId() {
+    return personId;
+  }
+
+  public void setPersonId(String personId) {
+    this.personId = personId;
+  }
+
+  public Assetresponsible personname(String personname) {
+    this.personname = personname;
+    return this;
+  }
+
+   /**
+   * jméno
+   * @return personname
+  **/
+  @ApiModelProperty(example = "null", value = "jméno")
+  public String getPersonname() {
+    return personname;
+  }
+
+  public void setPersonname(String personname) {
+    this.personname = personname;
+  }
+
+  public Assetresponsible personalnumber(String personalnumber) {
+    this.personalnumber = personalnumber;
+    return this;
+  }
+
+   /**
+   * osob.číslo
+   * @return personalnumber
+  **/
+  @ApiModelProperty(example = "null", value = "osob.číslo")
+  public String getPersonalnumber() {
+    return personalnumber;
+  }
+
+  public void setPersonalnumber(String personalnumber) {
+    this.personalnumber = personalnumber;
   }
 
 
@@ -157,18 +193,18 @@ public class Assetresponsible   {
       return false;
     }
     Assetresponsible assetresponsible = (Assetresponsible) o;
-    return Objects.equals(this.displayName, assetresponsible.displayName) &&
-        Objects.equals(this.ID, assetresponsible.ID) &&
-        Objects.equals(this.classID, assetresponsible.classID) &&
-        Objects.equals(this.objVersion, assetresponsible.objVersion) &&
-        Objects.equals(this.personID, assetresponsible.personID) &&
-        Objects.equals(this.personName, assetresponsible.personName) &&
-        Objects.equals(this.personalNumber, assetresponsible.personalNumber);
+    return Objects.equals(this.displayname, assetresponsible.displayname) &&
+        Objects.equals(this.id, assetresponsible.id) &&
+        Objects.equals(this.classid, assetresponsible.classid) &&
+        Objects.equals(this.objversion, assetresponsible.objversion) &&
+        Objects.equals(this.personId, assetresponsible.personId) &&
+        Objects.equals(this.personname, assetresponsible.personname) &&
+        Objects.equals(this.personalnumber, assetresponsible.personalnumber);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, personID, personName, personalNumber);
+    return Objects.hash(displayname, id, classid, objversion, personId, personname, personalnumber);
   }
 
   @Override
@@ -176,13 +212,13 @@ public class Assetresponsible   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Assetresponsible {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
-    sb.append("    personName: ").append(toIndentedString(personName)).append("\n");
-    sb.append("    personalNumber: ").append(toIndentedString(personalNumber)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
+    sb.append("    personname: ").append(toIndentedString(personname)).append("\n");
+    sb.append("    personalnumber: ").append(toIndentedString(personalnumber)).append("\n");
     sb.append("}");
     return sb.toString();
   }

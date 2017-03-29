@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,87 +34,132 @@ import java.util.Objects;
 /**
  * Wagecompensation
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wagecompensation   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("OperType")
-  private String operType = null;
+  @SerializedName("opertype")
+  private String opertype = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("RelativePart")
-  private Boolean relativePart = null;
+  @SerializedName("relativepart")
+  private Boolean relativepart = null;
 
-  @SerializedName("InInsurance")
-  private Boolean inInsurance = null;
+  @SerializedName("ininsurance")
+  private Boolean ininsurance = null;
 
-  @SerializedName("TotalAmount")
-  private Double totalAmount = null;
+  @SerializedName("totalamount")
+  private Double totalamount = null;
 
-  @SerializedName("InsuranceBase")
-  private Double insuranceBase = null;
+  @SerializedName("insurancebase")
+  private Double insurancebase = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Wagecompensation displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wagecompensation id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wagecompensation classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wagecompensation objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Mzdový list dílčí [persistentní položka]
-   * @return parentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Mzdový list dílčí [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Wagecompensation parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu mzdový list dílčí [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu mzdový list dílčí [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
   public Wagecompensation description(String description) {
@@ -123,10 +168,10 @@ public class Wagecompensation   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -135,22 +180,22 @@ public class Wagecompensation   {
     this.description = description;
   }
 
-  public Wagecompensation operType(String operType) {
-    this.operType = operType;
+  public Wagecompensation opertype(String opertype) {
+    this.opertype = opertype;
     return this;
   }
 
    /**
    * Část. výkon [persistentní položka]
-   * @return operType
+   * @return opertype
   **/
   @ApiModelProperty(example = "null", value = "Část. výkon [persistentní položka]")
-  public String getOperType() {
-    return operType;
+  public String getOpertype() {
+    return opertype;
   }
 
-  public void setOperType(String operType) {
-    this.operType = operType;
+  public void setOpertype(String opertype) {
+    this.opertype = opertype;
   }
 
   public Wagecompensation amount(Double amount) {
@@ -171,58 +216,76 @@ public class Wagecompensation   {
     this.amount = amount;
   }
 
-  public Wagecompensation relativePart(Boolean relativePart) {
-    this.relativePart = relativePart;
+  public Wagecompensation relativepart(Boolean relativepart) {
+    this.relativepart = relativepart;
     return this;
   }
 
    /**
-   * Poměrná část [persistentní položka]
-   * @return relativePart
+   * poměrná část [persistentní položka]
+   * @return relativepart
   **/
-  @ApiModelProperty(example = "null", value = "Poměrná část [persistentní položka]")
-  public Boolean getRelativePart() {
-    return relativePart;
+  @ApiModelProperty(example = "null", value = "poměrná část [persistentní položka]")
+  public Boolean getRelativepart() {
+    return relativepart;
   }
 
-  public void setRelativePart(Boolean relativePart) {
-    this.relativePart = relativePart;
+  public void setRelativepart(Boolean relativepart) {
+    this.relativepart = relativepart;
   }
 
-  public Wagecompensation inInsurance(Boolean inInsurance) {
-    this.inInsurance = inInsurance;
+  public Wagecompensation ininsurance(Boolean ininsurance) {
+    this.ininsurance = ininsurance;
     return this;
   }
 
    /**
-   * Pojištění [persistentní položka]
-   * @return inInsurance
+   * pojištění [persistentní položka]
+   * @return ininsurance
   **/
-  @ApiModelProperty(example = "null", value = "Pojištění [persistentní položka]")
-  public Boolean getInInsurance() {
-    return inInsurance;
+  @ApiModelProperty(example = "null", value = "pojištění [persistentní položka]")
+  public Boolean getIninsurance() {
+    return ininsurance;
   }
 
-  public void setInInsurance(Boolean inInsurance) {
-    this.inInsurance = inInsurance;
+  public void setIninsurance(Boolean ininsurance) {
+    this.ininsurance = ininsurance;
   }
 
-   /**
-   * Celková částka
-   * @return totalAmount
-  **/
-  @ApiModelProperty(example = "null", value = "Celková částka")
-  public Double getTotalAmount() {
-    return totalAmount;
+  public Wagecompensation totalamount(Double totalamount) {
+    this.totalamount = totalamount;
+    return this;
   }
 
    /**
-   * Základ pojištění
-   * @return insuranceBase
+   * celková částka
+   * @return totalamount
   **/
-  @ApiModelProperty(example = "null", value = "Základ pojištění")
-  public Double getInsuranceBase() {
-    return insuranceBase;
+  @ApiModelProperty(example = "null", value = "celková částka")
+  public Double getTotalamount() {
+    return totalamount;
+  }
+
+  public void setTotalamount(Double totalamount) {
+    this.totalamount = totalamount;
+  }
+
+  public Wagecompensation insurancebase(Double insurancebase) {
+    this.insurancebase = insurancebase;
+    return this;
+  }
+
+   /**
+   * základ pojištění
+   * @return insurancebase
+  **/
+  @ApiModelProperty(example = "null", value = "základ pojištění")
+  public Double getInsurancebase() {
+    return insurancebase;
+  }
+
+  public void setInsurancebase(Double insurancebase) {
+    this.insurancebase = insurancebase;
   }
 
 
@@ -235,23 +298,23 @@ public class Wagecompensation   {
       return false;
     }
     Wagecompensation wagecompensation = (Wagecompensation) o;
-    return Objects.equals(this.displayName, wagecompensation.displayName) &&
-        Objects.equals(this.ID, wagecompensation.ID) &&
-        Objects.equals(this.classID, wagecompensation.classID) &&
-        Objects.equals(this.objVersion, wagecompensation.objVersion) &&
-        Objects.equals(this.parentID, wagecompensation.parentID) &&
+    return Objects.equals(this.displayname, wagecompensation.displayname) &&
+        Objects.equals(this.id, wagecompensation.id) &&
+        Objects.equals(this.classid, wagecompensation.classid) &&
+        Objects.equals(this.objversion, wagecompensation.objversion) &&
+        Objects.equals(this.parentId, wagecompensation.parentId) &&
         Objects.equals(this.description, wagecompensation.description) &&
-        Objects.equals(this.operType, wagecompensation.operType) &&
+        Objects.equals(this.opertype, wagecompensation.opertype) &&
         Objects.equals(this.amount, wagecompensation.amount) &&
-        Objects.equals(this.relativePart, wagecompensation.relativePart) &&
-        Objects.equals(this.inInsurance, wagecompensation.inInsurance) &&
-        Objects.equals(this.totalAmount, wagecompensation.totalAmount) &&
-        Objects.equals(this.insuranceBase, wagecompensation.insuranceBase);
+        Objects.equals(this.relativepart, wagecompensation.relativepart) &&
+        Objects.equals(this.ininsurance, wagecompensation.ininsurance) &&
+        Objects.equals(this.totalamount, wagecompensation.totalamount) &&
+        Objects.equals(this.insurancebase, wagecompensation.insurancebase);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, description, operType, amount, relativePart, inInsurance, totalAmount, insuranceBase);
+    return Objects.hash(displayname, id, classid, objversion, parentId, description, opertype, amount, relativepart, ininsurance, totalamount, insurancebase);
   }
 
   @Override
@@ -259,18 +322,18 @@ public class Wagecompensation   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wagecompensation {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    operType: ").append(toIndentedString(operType)).append("\n");
+    sb.append("    opertype: ").append(toIndentedString(opertype)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    relativePart: ").append(toIndentedString(relativePart)).append("\n");
-    sb.append("    inInsurance: ").append(toIndentedString(inInsurance)).append("\n");
-    sb.append("    totalAmount: ").append(toIndentedString(totalAmount)).append("\n");
-    sb.append("    insuranceBase: ").append(toIndentedString(insuranceBase)).append("\n");
+    sb.append("    relativepart: ").append(toIndentedString(relativepart)).append("\n");
+    sb.append("    ininsurance: ").append(toIndentedString(ininsurance)).append("\n");
+    sb.append("    totalamount: ").append(toIndentedString(totalamount)).append("\n");
+    sb.append("    insurancebase: ").append(toIndentedString(insurancebase)).append("\n");
     sb.append("}");
     return sb.toString();
   }

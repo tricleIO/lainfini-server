@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,159 +35,195 @@ import java.util.Objects;
 /**
  * Mlbbalance
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Mlbbalance   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("TRMCar_ID")
-  private String tRMCarID = null;
+  @SerializedName("trmcar_id")
+  private String trmcarId = null;
 
-  @SerializedName("BalanceDate$DATE")
-  private DateTime balanceDateDATE = null;
+  @SerializedName("balancedate$date")
+  private DateTime balancedatedate = null;
 
-  @SerializedName("CreationDate$DATE")
-  private DateTime creationDateDATE = null;
+  @SerializedName("creationdate$date")
+  private DateTime creationdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Mlbbalance tRMCarID(String tRMCarID) {
-    this.tRMCarID = tRMCarID;
+  public Mlbbalance displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Vozidlo; ID objektu Vozidlo [persistentní položka]
-   * @return tRMCarID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vozidlo; ID objektu Vozidlo [persistentní položka]")
-  public String getTRMCarID() {
-    return tRMCarID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setTRMCarID(String tRMCarID) {
-    this.tRMCarID = tRMCarID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Mlbbalance balanceDateDATE(DateTime balanceDateDATE) {
-    this.balanceDateDATE = balanceDateDATE;
+  public Mlbbalance id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Datum uzávěrky [persistentní položka]
-   * @return balanceDateDATE
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Datum uzávěrky [persistentní položka]")
-  public DateTime getBalanceDateDATE() {
-    return balanceDateDATE;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setBalanceDateDATE(DateTime balanceDateDATE) {
-    this.balanceDateDATE = balanceDateDATE;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Mlbbalance creationDateDATE(DateTime creationDateDATE) {
-    this.creationDateDATE = creationDateDATE;
+  public Mlbbalance classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Datum provedení uzávěrky [persistentní položka]
-   * @return creationDateDATE
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Datum provedení uzávěrky [persistentní položka]")
-  public DateTime getCreationDateDATE() {
-    return creationDateDATE;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setCreationDateDATE(DateTime creationDateDATE) {
-    this.creationDateDATE = creationDateDATE;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Mlbbalance createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Mlbbalance objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Mlbbalance correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Mlbbalance trmcarId(String trmcarId) {
+    this.trmcarId = trmcarId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * vozidlo; id objektu vozidlo [persistentní položka]
+   * @return trmcarId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "vozidlo; id objektu vozidlo [persistentní položka]")
+  public String getTrmcarId() {
+    return trmcarId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setTrmcarId(String trmcarId) {
+    this.trmcarId = trmcarId;
+  }
+
+  public Mlbbalance balancedatedate(DateTime balancedatedate) {
+    this.balancedatedate = balancedatedate;
+    return this;
+  }
+
+   /**
+   * datum uzávěrky [persistentní položka]
+   * @return balancedatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum uzávěrky [persistentní položka]")
+  public DateTime getBalancedatedate() {
+    return balancedatedate;
+  }
+
+  public void setBalancedatedate(DateTime balancedatedate) {
+    this.balancedatedate = balancedatedate;
+  }
+
+  public Mlbbalance creationdatedate(DateTime creationdatedate) {
+    this.creationdatedate = creationdatedate;
+    return this;
+  }
+
+   /**
+   * datum provedení uzávěrky [persistentní položka]
+   * @return creationdatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum provedení uzávěrky [persistentní položka]")
+  public DateTime getCreationdatedate() {
+    return creationdatedate;
+  }
+
+  public void setCreationdatedate(DateTime creationdatedate) {
+    this.creationdatedate = creationdatedate;
+  }
+
+  public Mlbbalance createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+    return this;
+  }
+
+   /**
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
+  }
+
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Mlbbalance correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+    return this;
+  }
+
+   /**
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
+  }
+
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
 
@@ -200,20 +236,20 @@ public class Mlbbalance   {
       return false;
     }
     Mlbbalance mlbbalance = (Mlbbalance) o;
-    return Objects.equals(this.displayName, mlbbalance.displayName) &&
-        Objects.equals(this.ID, mlbbalance.ID) &&
-        Objects.equals(this.classID, mlbbalance.classID) &&
-        Objects.equals(this.objVersion, mlbbalance.objVersion) &&
-        Objects.equals(this.tRMCarID, mlbbalance.tRMCarID) &&
-        Objects.equals(this.balanceDateDATE, mlbbalance.balanceDateDATE) &&
-        Objects.equals(this.creationDateDATE, mlbbalance.creationDateDATE) &&
-        Objects.equals(this.createdByID, mlbbalance.createdByID) &&
-        Objects.equals(this.correctedByID, mlbbalance.correctedByID);
+    return Objects.equals(this.displayname, mlbbalance.displayname) &&
+        Objects.equals(this.id, mlbbalance.id) &&
+        Objects.equals(this.classid, mlbbalance.classid) &&
+        Objects.equals(this.objversion, mlbbalance.objversion) &&
+        Objects.equals(this.trmcarId, mlbbalance.trmcarId) &&
+        Objects.equals(this.balancedatedate, mlbbalance.balancedatedate) &&
+        Objects.equals(this.creationdatedate, mlbbalance.creationdatedate) &&
+        Objects.equals(this.createdbyId, mlbbalance.createdbyId) &&
+        Objects.equals(this.correctedbyId, mlbbalance.correctedbyId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, tRMCarID, balanceDateDATE, creationDateDATE, createdByID, correctedByID);
+    return Objects.hash(displayname, id, classid, objversion, trmcarId, balancedatedate, creationdatedate, createdbyId, correctedbyId);
   }
 
   @Override
@@ -221,15 +257,15 @@ public class Mlbbalance   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Mlbbalance {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    tRMCarID: ").append(toIndentedString(tRMCarID)).append("\n");
-    sb.append("    balanceDateDATE: ").append(toIndentedString(balanceDateDATE)).append("\n");
-    sb.append("    creationDateDATE: ").append(toIndentedString(creationDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    trmcarId: ").append(toIndentedString(trmcarId)).append("\n");
+    sb.append("    balancedatedate: ").append(toIndentedString(balancedatedate)).append("\n");
+    sb.append("    creationdatedate: ").append(toIndentedString(creationdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

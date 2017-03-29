@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,189 +35,225 @@ import java.util.Objects;
 /**
  * Receiveddepositusage
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Receiveddepositusage   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DepositDocument_ID")
-  private String depositDocumentID = null;
+  @SerializedName("depositdocument_id")
+  private String depositdocumentId = null;
 
-  @SerializedName("PaymentDate$DATE")
-  private DateTime paymentDateDATE = null;
+  @SerializedName("paymentdate$date")
+  private DateTime paymentdatedate = null;
 
-  @SerializedName("AccDate$DATE")
-  private DateTime accDateDATE = null;
+  @SerializedName("accdate$date")
+  private DateTime accdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("LocalAmount")
-  private Double localAmount = null;
+  @SerializedName("localamount")
+  private Double localamount = null;
 
-  @SerializedName("PAmount")
-  private Double pAmount = null;
+  @SerializedName("pamount")
+  private Double pamount = null;
 
-  @SerializedName("PDocument_ID")
-  private String pDocumentID = null;
+  @SerializedName("pdocument_id")
+  private String pdocumentId = null;
 
-  @SerializedName("PDocumentType")
-  private String pDocumentType = null;
+  @SerializedName("pdocumenttype")
+  private String pdocumenttype = null;
 
-  @SerializedName("PDisKind")
-  private Integer pDisKind = null;
+  @SerializedName("pdiskind")
+  private Integer pdiskind = null;
 
-  @SerializedName("AccPresetDef_ID")
-  private String accPresetDefID = null;
+  @SerializedName("accpresetdef_id")
+  private String accpresetdefId = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("AccDocQueue_ID")
-  private String accDocQueueID = null;
+  @SerializedName("accdocqueue_id")
+  private String accdocqueueId = null;
 
-  @SerializedName("SourceGroupIdentical_ID")
-  private String sourceGroupIdenticalID = null;
+  @SerializedName("sourcegroupidentical_id")
+  private String sourcegroupidenticalId = null;
+
+  public Receiveddepositusage displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
   }
 
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Receiveddepositusage depositDocumentID(String depositDocumentID) {
-    this.depositDocumentID = depositDocumentID;
+  public Receiveddepositusage id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Zálohový list; ID objektu Zálohový list přijatý [persistentní položka]
-   * @return depositDocumentID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Zálohový list; ID objektu Zálohový list přijatý [persistentní položka]")
-  public String getDepositDocumentID() {
-    return depositDocumentID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDepositDocumentID(String depositDocumentID) {
-    this.depositDocumentID = depositDocumentID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Receiveddepositusage paymentDateDATE(DateTime paymentDateDATE) {
-    this.paymentDateDATE = paymentDateDATE;
+  public Receiveddepositusage classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Datum zúčtování [persistentní položka]
-   * @return paymentDateDATE
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Datum zúčtování [persistentní položka]")
-  public DateTime getPaymentDateDATE() {
-    return paymentDateDATE;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPaymentDateDATE(DateTime paymentDateDATE) {
-    this.paymentDateDATE = paymentDateDATE;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Receiveddepositusage accDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public Receiveddepositusage objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Datum účtování [persistentní položka]
-   * @return accDateDATE
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Datum účtování [persistentní položka]")
-  public DateTime getAccDateDATE() {
-    return accDateDATE;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setAccDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Receiveddepositusage createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Receiveddepositusage depositdocumentId(String depositdocumentId) {
+    this.depositdocumentId = depositdocumentId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * zálohový list; id objektu zálohový list přijatý [persistentní položka]
+   * @return depositdocumentId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "zálohový list; id objektu zálohový list přijatý [persistentní položka]")
+  public String getDepositdocumentId() {
+    return depositdocumentId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setDepositdocumentId(String depositdocumentId) {
+    this.depositdocumentId = depositdocumentId;
   }
 
-  public Receiveddepositusage correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Receiveddepositusage paymentdatedate(DateTime paymentdatedate) {
+    this.paymentdatedate = paymentdatedate;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * datum zúčtování [persistentní položka]
+   * @return paymentdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "datum zúčtování [persistentní položka]")
+  public DateTime getPaymentdatedate() {
+    return paymentdatedate;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setPaymentdatedate(DateTime paymentdatedate) {
+    this.paymentdatedate = paymentdatedate;
+  }
+
+  public Receiveddepositusage accdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
+    return this;
+  }
+
+   /**
+   * datum účtování [persistentní položka]
+   * @return accdatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum účtování [persistentní položka]")
+  public DateTime getAccdatedate() {
+    return accdatedate;
+  }
+
+  public void setAccdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
+  }
+
+  public Receiveddepositusage createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+    return this;
+  }
+
+   /**
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
+  }
+
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Receiveddepositusage correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+    return this;
+  }
+
+   /**
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
+  }
+
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
   public Receiveddepositusage amount(Double amount) {
@@ -226,10 +262,10 @@ public class Receiveddepositusage   {
   }
 
    /**
-   * Celková částka [persistentní položka]
+   * celková částka [persistentní položka]
    * @return amount
   **/
-  @ApiModelProperty(example = "null", value = "Celková částka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "celková částka [persistentní položka]")
   public Double getAmount() {
     return amount;
   }
@@ -238,139 +274,166 @@ public class Receiveddepositusage   {
     this.amount = amount;
   }
 
-   /**
-   * Celk. částka lok. [persistentní položka]
-   * @return localAmount
-  **/
-  @ApiModelProperty(example = "null", value = "Celk. částka lok. [persistentní položka]")
-  public Double getLocalAmount() {
-    return localAmount;
-  }
-
-  public Receiveddepositusage pAmount(Double pAmount) {
-    this.pAmount = pAmount;
+  public Receiveddepositusage localamount(Double localamount) {
+    this.localamount = localamount;
     return this;
   }
 
    /**
-   * Platba [persistentní položka]
-   * @return pAmount
+   * celk. částka lok. [persistentní položka]
+   * @return localamount
   **/
-  @ApiModelProperty(example = "null", value = "Platba [persistentní položka]")
-  public Double getPAmount() {
-    return pAmount;
+  @ApiModelProperty(example = "null", value = "celk. částka lok. [persistentní položka]")
+  public Double getLocalamount() {
+    return localamount;
   }
 
-  public void setPAmount(Double pAmount) {
-    this.pAmount = pAmount;
+  public void setLocalamount(Double localamount) {
+    this.localamount = localamount;
   }
 
-  public Receiveddepositusage pDocumentID(String pDocumentID) {
-    this.pDocumentID = pDocumentID;
+  public Receiveddepositusage pamount(Double pamount) {
+    this.pamount = pamount;
     return this;
   }
 
    /**
-   * Placený doklad; ID objektu Dokument [persistentní položka]
-   * @return pDocumentID
+   * platba [persistentní položka]
+   * @return pamount
   **/
-  @ApiModelProperty(example = "null", value = "Placený doklad; ID objektu Dokument [persistentní položka]")
-  public String getPDocumentID() {
-    return pDocumentID;
+  @ApiModelProperty(example = "null", value = "platba [persistentní položka]")
+  public Double getPamount() {
+    return pamount;
   }
 
-  public void setPDocumentID(String pDocumentID) {
-    this.pDocumentID = pDocumentID;
+  public void setPamount(Double pamount) {
+    this.pamount = pamount;
   }
 
-  public Receiveddepositusage pDocumentType(String pDocumentType) {
-    this.pDocumentType = pDocumentType;
+  public Receiveddepositusage pdocumentId(String pdocumentId) {
+    this.pdocumentId = pdocumentId;
     return this;
   }
 
    /**
-   * Typ plac.dokl. [persistentní položka]
-   * @return pDocumentType
+   * placený doklad; id objektu dokument [persistentní položka]
+   * @return pdocumentId
   **/
-  @ApiModelProperty(example = "null", value = "Typ plac.dokl. [persistentní položka]")
-  public String getPDocumentType() {
-    return pDocumentType;
+  @ApiModelProperty(example = "null", value = "placený doklad; id objektu dokument [persistentní položka]")
+  public String getPdocumentId() {
+    return pdocumentId;
   }
 
-  public void setPDocumentType(String pDocumentType) {
-    this.pDocumentType = pDocumentType;
+  public void setPdocumentId(String pdocumentId) {
+    this.pdocumentId = pdocumentId;
   }
 
-  public Receiveddepositusage pDisKind(Integer pDisKind) {
-    this.pDisKind = pDisKind;
+  public Receiveddepositusage pdocumenttype(String pdocumenttype) {
+    this.pdocumenttype = pdocumenttype;
     return this;
   }
 
    /**
-   * Rozdělení platby [persistentní položka]
-   * @return pDisKind
+   * typ plac.dokl. [persistentní položka]
+   * @return pdocumenttype
   **/
-  @ApiModelProperty(example = "null", value = "Rozdělení platby [persistentní položka]")
-  public Integer getPDisKind() {
-    return pDisKind;
+  @ApiModelProperty(example = "null", value = "typ plac.dokl. [persistentní položka]")
+  public String getPdocumenttype() {
+    return pdocumenttype;
   }
 
-  public void setPDisKind(Integer pDisKind) {
-    this.pDisKind = pDisKind;
+  public void setPdocumenttype(String pdocumenttype) {
+    this.pdocumenttype = pdocumenttype;
   }
 
-  public Receiveddepositusage accPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public Receiveddepositusage pdiskind(Integer pdiskind) {
+    this.pdiskind = pdiskind;
     return this;
   }
 
    /**
-   * Předkontace; ID objektu Účetní předkontace [persistentní položka]
-   * @return accPresetDefID
+   * rozdělení platby [persistentní položka]
+   * @return pdiskind
   **/
-  @ApiModelProperty(example = "null", value = "Předkontace; ID objektu Účetní předkontace [persistentní položka]")
-  public String getAccPresetDefID() {
-    return accPresetDefID;
+  @ApiModelProperty(example = "null", value = "rozdělení platby [persistentní položka]")
+  public Integer getPdiskind() {
+    return pdiskind;
   }
 
-  public void setAccPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public void setPdiskind(Integer pdiskind) {
+    this.pdiskind = pdiskind;
   }
 
-   /**
-   * Měna; ID objektu Měna
-   * @return currencyID
-  **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna")
-  public String getCurrencyID() {
-    return currencyID;
-  }
-
-  public Receiveddepositusage accDocQueueID(String accDocQueueID) {
-    this.accDocQueueID = accDocQueueID;
+  public Receiveddepositusage accpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
     return this;
   }
 
    /**
-   * Účetní řada; ID objektu Účetní řada dokladů [persistentní položka]
-   * @return accDocQueueID
+   * předkontace; id objektu Účetní předkontace [persistentní položka]
+   * @return accpresetdefId
   **/
-  @ApiModelProperty(example = "null", value = "Účetní řada; ID objektu Účetní řada dokladů [persistentní položka]")
-  public String getAccDocQueueID() {
-    return accDocQueueID;
+  @ApiModelProperty(example = "null", value = "předkontace; id objektu Účetní předkontace [persistentní položka]")
+  public String getAccpresetdefId() {
+    return accpresetdefId;
   }
 
-  public void setAccDocQueueID(String accDocQueueID) {
-    this.accDocQueueID = accDocQueueID;
+  public void setAccpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
+  }
+
+  public Receiveddepositusage currencyId(String currencyId) {
+    this.currencyId = currencyId;
+    return this;
   }
 
    /**
-   * Souv. zdrojových skupin; ID objektu Souvislost zdrojových skupin [persistentní položka]
-   * @return sourceGroupIdenticalID
+   * měna; id objektu měna
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Souv. zdrojových skupin; ID objektu Souvislost zdrojových skupin [persistentní položka]")
-  public String getSourceGroupIdenticalID() {
-    return sourceGroupIdenticalID;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna")
+  public String getCurrencyId() {
+    return currencyId;
+  }
+
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
+  }
+
+  public Receiveddepositusage accdocqueueId(String accdocqueueId) {
+    this.accdocqueueId = accdocqueueId;
+    return this;
+  }
+
+   /**
+   * Účetní řada; id objektu Účetní řada dokladů [persistentní položka]
+   * @return accdocqueueId
+  **/
+  @ApiModelProperty(example = "null", value = "Účetní řada; id objektu Účetní řada dokladů [persistentní položka]")
+  public String getAccdocqueueId() {
+    return accdocqueueId;
+  }
+
+  public void setAccdocqueueId(String accdocqueueId) {
+    this.accdocqueueId = accdocqueueId;
+  }
+
+  public Receiveddepositusage sourcegroupidenticalId(String sourcegroupidenticalId) {
+    this.sourcegroupidenticalId = sourcegroupidenticalId;
+    return this;
+  }
+
+   /**
+   * souv. zdrojových skupin; id objektu souvislost zdrojových skupin [persistentní položka]
+   * @return sourcegroupidenticalId
+  **/
+  @ApiModelProperty(example = "null", value = "souv. zdrojových skupin; id objektu souvislost zdrojových skupin [persistentní položka]")
+  public String getSourcegroupidenticalId() {
+    return sourcegroupidenticalId;
+  }
+
+  public void setSourcegroupidenticalId(String sourcegroupidenticalId) {
+    this.sourcegroupidenticalId = sourcegroupidenticalId;
   }
 
 
@@ -383,30 +446,30 @@ public class Receiveddepositusage   {
       return false;
     }
     Receiveddepositusage receiveddepositusage = (Receiveddepositusage) o;
-    return Objects.equals(this.displayName, receiveddepositusage.displayName) &&
-        Objects.equals(this.ID, receiveddepositusage.ID) &&
-        Objects.equals(this.classID, receiveddepositusage.classID) &&
-        Objects.equals(this.objVersion, receiveddepositusage.objVersion) &&
-        Objects.equals(this.depositDocumentID, receiveddepositusage.depositDocumentID) &&
-        Objects.equals(this.paymentDateDATE, receiveddepositusage.paymentDateDATE) &&
-        Objects.equals(this.accDateDATE, receiveddepositusage.accDateDATE) &&
-        Objects.equals(this.createdByID, receiveddepositusage.createdByID) &&
-        Objects.equals(this.correctedByID, receiveddepositusage.correctedByID) &&
+    return Objects.equals(this.displayname, receiveddepositusage.displayname) &&
+        Objects.equals(this.id, receiveddepositusage.id) &&
+        Objects.equals(this.classid, receiveddepositusage.classid) &&
+        Objects.equals(this.objversion, receiveddepositusage.objversion) &&
+        Objects.equals(this.depositdocumentId, receiveddepositusage.depositdocumentId) &&
+        Objects.equals(this.paymentdatedate, receiveddepositusage.paymentdatedate) &&
+        Objects.equals(this.accdatedate, receiveddepositusage.accdatedate) &&
+        Objects.equals(this.createdbyId, receiveddepositusage.createdbyId) &&
+        Objects.equals(this.correctedbyId, receiveddepositusage.correctedbyId) &&
         Objects.equals(this.amount, receiveddepositusage.amount) &&
-        Objects.equals(this.localAmount, receiveddepositusage.localAmount) &&
-        Objects.equals(this.pAmount, receiveddepositusage.pAmount) &&
-        Objects.equals(this.pDocumentID, receiveddepositusage.pDocumentID) &&
-        Objects.equals(this.pDocumentType, receiveddepositusage.pDocumentType) &&
-        Objects.equals(this.pDisKind, receiveddepositusage.pDisKind) &&
-        Objects.equals(this.accPresetDefID, receiveddepositusage.accPresetDefID) &&
-        Objects.equals(this.currencyID, receiveddepositusage.currencyID) &&
-        Objects.equals(this.accDocQueueID, receiveddepositusage.accDocQueueID) &&
-        Objects.equals(this.sourceGroupIdenticalID, receiveddepositusage.sourceGroupIdenticalID);
+        Objects.equals(this.localamount, receiveddepositusage.localamount) &&
+        Objects.equals(this.pamount, receiveddepositusage.pamount) &&
+        Objects.equals(this.pdocumentId, receiveddepositusage.pdocumentId) &&
+        Objects.equals(this.pdocumenttype, receiveddepositusage.pdocumenttype) &&
+        Objects.equals(this.pdiskind, receiveddepositusage.pdiskind) &&
+        Objects.equals(this.accpresetdefId, receiveddepositusage.accpresetdefId) &&
+        Objects.equals(this.currencyId, receiveddepositusage.currencyId) &&
+        Objects.equals(this.accdocqueueId, receiveddepositusage.accdocqueueId) &&
+        Objects.equals(this.sourcegroupidenticalId, receiveddepositusage.sourcegroupidenticalId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, depositDocumentID, paymentDateDATE, accDateDATE, createdByID, correctedByID, amount, localAmount, pAmount, pDocumentID, pDocumentType, pDisKind, accPresetDefID, currencyID, accDocQueueID, sourceGroupIdenticalID);
+    return Objects.hash(displayname, id, classid, objversion, depositdocumentId, paymentdatedate, accdatedate, createdbyId, correctedbyId, amount, localamount, pamount, pdocumentId, pdocumenttype, pdiskind, accpresetdefId, currencyId, accdocqueueId, sourcegroupidenticalId);
   }
 
   @Override
@@ -414,25 +477,25 @@ public class Receiveddepositusage   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Receiveddepositusage {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    depositDocumentID: ").append(toIndentedString(depositDocumentID)).append("\n");
-    sb.append("    paymentDateDATE: ").append(toIndentedString(paymentDateDATE)).append("\n");
-    sb.append("    accDateDATE: ").append(toIndentedString(accDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    depositdocumentId: ").append(toIndentedString(depositdocumentId)).append("\n");
+    sb.append("    paymentdatedate: ").append(toIndentedString(paymentdatedate)).append("\n");
+    sb.append("    accdatedate: ").append(toIndentedString(accdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    localAmount: ").append(toIndentedString(localAmount)).append("\n");
-    sb.append("    pAmount: ").append(toIndentedString(pAmount)).append("\n");
-    sb.append("    pDocumentID: ").append(toIndentedString(pDocumentID)).append("\n");
-    sb.append("    pDocumentType: ").append(toIndentedString(pDocumentType)).append("\n");
-    sb.append("    pDisKind: ").append(toIndentedString(pDisKind)).append("\n");
-    sb.append("    accPresetDefID: ").append(toIndentedString(accPresetDefID)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    accDocQueueID: ").append(toIndentedString(accDocQueueID)).append("\n");
-    sb.append("    sourceGroupIdenticalID: ").append(toIndentedString(sourceGroupIdenticalID)).append("\n");
+    sb.append("    localamount: ").append(toIndentedString(localamount)).append("\n");
+    sb.append("    pamount: ").append(toIndentedString(pamount)).append("\n");
+    sb.append("    pdocumentId: ").append(toIndentedString(pdocumentId)).append("\n");
+    sb.append("    pdocumenttype: ").append(toIndentedString(pdocumenttype)).append("\n");
+    sb.append("    pdiskind: ").append(toIndentedString(pdiskind)).append("\n");
+    sb.append("    accpresetdefId: ").append(toIndentedString(accpresetdefId)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    accdocqueueId: ").append(toIndentedString(accdocqueueId)).append("\n");
+    sb.append("    sourcegroupidenticalId: ").append(toIndentedString(sourcegroupidenticalId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

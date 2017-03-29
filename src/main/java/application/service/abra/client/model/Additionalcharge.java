@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,87 +34,132 @@ import java.util.Objects;
 /**
  * Additionalcharge
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Additionalcharge   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("Percentage")
+  @SerializedName("percentage")
   private Double percentage = null;
 
-  @SerializedName("HourRate")
-  private Double hourRate = null;
+  @SerializedName("hourrate")
+  private Double hourrate = null;
 
-  @SerializedName("HourOperType")
-  private String hourOperType = null;
+  @SerializedName("houropertype")
+  private String houropertype = null;
 
-  @SerializedName("HourCount")
-  private Double hourCount = null;
+  @SerializedName("hourcount")
+  private Double hourcount = null;
 
-  @SerializedName("AmtOperType")
-  private String amtOperType = null;
+  @SerializedName("amtopertype")
+  private String amtopertype = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Additionalcharge displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Additionalcharge id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Additionalcharge classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Additionalcharge objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Mzdový list dílčí [persistentní položka]
-   * @return parentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Mzdový list dílčí [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Additionalcharge parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu mzdový list dílčí [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu mzdový list dílčí [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
   public Additionalcharge description(String description) {
@@ -123,10 +168,10 @@ public class Additionalcharge   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -141,10 +186,10 @@ public class Additionalcharge   {
   }
 
    /**
-   * Procento [persistentní položka]
+   * procento [persistentní položka]
    * @return percentage
   **/
-  @ApiModelProperty(example = "null", value = "Procento [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "procento [persistentní položka]")
   public Double getPercentage() {
     return percentage;
   }
@@ -153,76 +198,76 @@ public class Additionalcharge   {
     this.percentage = percentage;
   }
 
-  public Additionalcharge hourRate(Double hourRate) {
-    this.hourRate = hourRate;
+  public Additionalcharge hourrate(Double hourrate) {
+    this.hourrate = hourrate;
     return this;
   }
 
    /**
-   * Sazba [persistentní položka]
-   * @return hourRate
+   * sazba [persistentní položka]
+   * @return hourrate
   **/
-  @ApiModelProperty(example = "null", value = "Sazba [persistentní položka]")
-  public Double getHourRate() {
-    return hourRate;
+  @ApiModelProperty(example = "null", value = "sazba [persistentní položka]")
+  public Double getHourrate() {
+    return hourrate;
   }
 
-  public void setHourRate(Double hourRate) {
-    this.hourRate = hourRate;
+  public void setHourrate(Double hourrate) {
+    this.hourrate = hourrate;
   }
 
-  public Additionalcharge hourOperType(String hourOperType) {
-    this.hourOperType = hourOperType;
+  public Additionalcharge houropertype(String houropertype) {
+    this.houropertype = houropertype;
     return this;
   }
 
    /**
-   * Hod. výkon [persistentní položka]
-   * @return hourOperType
+   * hod. výkon [persistentní položka]
+   * @return houropertype
   **/
-  @ApiModelProperty(example = "null", value = "Hod. výkon [persistentní položka]")
-  public String getHourOperType() {
-    return hourOperType;
+  @ApiModelProperty(example = "null", value = "hod. výkon [persistentní položka]")
+  public String getHouropertype() {
+    return houropertype;
   }
 
-  public void setHourOperType(String hourOperType) {
-    this.hourOperType = hourOperType;
+  public void setHouropertype(String houropertype) {
+    this.houropertype = houropertype;
   }
 
-  public Additionalcharge hourCount(Double hourCount) {
-    this.hourCount = hourCount;
+  public Additionalcharge hourcount(Double hourcount) {
+    this.hourcount = hourcount;
     return this;
   }
 
    /**
-   * Hodin [persistentní položka]
-   * @return hourCount
+   * hodin [persistentní položka]
+   * @return hourcount
   **/
-  @ApiModelProperty(example = "null", value = "Hodin [persistentní položka]")
-  public Double getHourCount() {
-    return hourCount;
+  @ApiModelProperty(example = "null", value = "hodin [persistentní položka]")
+  public Double getHourcount() {
+    return hourcount;
   }
 
-  public void setHourCount(Double hourCount) {
-    this.hourCount = hourCount;
+  public void setHourcount(Double hourcount) {
+    this.hourcount = hourcount;
   }
 
-  public Additionalcharge amtOperType(String amtOperType) {
-    this.amtOperType = amtOperType;
+  public Additionalcharge amtopertype(String amtopertype) {
+    this.amtopertype = amtopertype;
     return this;
   }
 
    /**
    * Část. výkon [persistentní položka]
-   * @return amtOperType
+   * @return amtopertype
   **/
   @ApiModelProperty(example = "null", value = "Část. výkon [persistentní položka]")
-  public String getAmtOperType() {
-    return amtOperType;
+  public String getAmtopertype() {
+    return amtopertype;
   }
 
-  public void setAmtOperType(String amtOperType) {
-    this.amtOperType = amtOperType;
+  public void setAmtopertype(String amtopertype) {
+    this.amtopertype = amtopertype;
   }
 
   public Additionalcharge amount(Double amount) {
@@ -253,23 +298,23 @@ public class Additionalcharge   {
       return false;
     }
     Additionalcharge additionalcharge = (Additionalcharge) o;
-    return Objects.equals(this.displayName, additionalcharge.displayName) &&
-        Objects.equals(this.ID, additionalcharge.ID) &&
-        Objects.equals(this.classID, additionalcharge.classID) &&
-        Objects.equals(this.objVersion, additionalcharge.objVersion) &&
-        Objects.equals(this.parentID, additionalcharge.parentID) &&
+    return Objects.equals(this.displayname, additionalcharge.displayname) &&
+        Objects.equals(this.id, additionalcharge.id) &&
+        Objects.equals(this.classid, additionalcharge.classid) &&
+        Objects.equals(this.objversion, additionalcharge.objversion) &&
+        Objects.equals(this.parentId, additionalcharge.parentId) &&
         Objects.equals(this.description, additionalcharge.description) &&
         Objects.equals(this.percentage, additionalcharge.percentage) &&
-        Objects.equals(this.hourRate, additionalcharge.hourRate) &&
-        Objects.equals(this.hourOperType, additionalcharge.hourOperType) &&
-        Objects.equals(this.hourCount, additionalcharge.hourCount) &&
-        Objects.equals(this.amtOperType, additionalcharge.amtOperType) &&
+        Objects.equals(this.hourrate, additionalcharge.hourrate) &&
+        Objects.equals(this.houropertype, additionalcharge.houropertype) &&
+        Objects.equals(this.hourcount, additionalcharge.hourcount) &&
+        Objects.equals(this.amtopertype, additionalcharge.amtopertype) &&
         Objects.equals(this.amount, additionalcharge.amount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, description, percentage, hourRate, hourOperType, hourCount, amtOperType, amount);
+    return Objects.hash(displayname, id, classid, objversion, parentId, description, percentage, hourrate, houropertype, hourcount, amtopertype, amount);
   }
 
   @Override
@@ -277,17 +322,17 @@ public class Additionalcharge   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Additionalcharge {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    percentage: ").append(toIndentedString(percentage)).append("\n");
-    sb.append("    hourRate: ").append(toIndentedString(hourRate)).append("\n");
-    sb.append("    hourOperType: ").append(toIndentedString(hourOperType)).append("\n");
-    sb.append("    hourCount: ").append(toIndentedString(hourCount)).append("\n");
-    sb.append("    amtOperType: ").append(toIndentedString(amtOperType)).append("\n");
+    sb.append("    hourrate: ").append(toIndentedString(hourrate)).append("\n");
+    sb.append("    houropertype: ").append(toIndentedString(houropertype)).append("\n");
+    sb.append("    hourcount: ").append(toIndentedString(hourcount)).append("\n");
+    sb.append("    amtopertype: ").append(toIndentedString(amtopertype)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
     sb.append("}");
     return sb.toString();

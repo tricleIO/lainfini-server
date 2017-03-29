@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,84 +34,120 @@ import java.util.Objects;
 /**
  * Mlbmaplinkdefinition
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Mlbmaplinkdefinition   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("LinkType")
-  private Integer linkType = null;
+  @SerializedName("linktype")
+  private Integer linktype = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("LinkDefinition")
-  private String linkDefinition = null;
+  @SerializedName("linkdefinition")
+  private String linkdefinition = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Mlbmaplinkdefinition linkType(Integer linkType) {
-    this.linkType = linkType;
+  public Mlbmaplinkdefinition displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return linkType
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getLinkType() {
-    return linkType;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setLinkType(Integer linkType) {
-    this.linkType = linkType;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Mlbmaplinkdefinition id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Mlbmaplinkdefinition classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Mlbmaplinkdefinition objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Mlbmaplinkdefinition linktype(Integer linktype) {
+    this.linktype = linktype;
+    return this;
+  }
+
+   /**
+   * typ [persistentní položka]
+   * @return linktype
+  **/
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getLinktype() {
+    return linktype;
+  }
+
+  public void setLinktype(Integer linktype) {
+    this.linktype = linktype;
   }
 
   public Mlbmaplinkdefinition code(String code) {
@@ -120,10 +156,10 @@ public class Mlbmaplinkdefinition   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -138,10 +174,10 @@ public class Mlbmaplinkdefinition   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -150,22 +186,22 @@ public class Mlbmaplinkdefinition   {
     this.name = name;
   }
 
-  public Mlbmaplinkdefinition linkDefinition(String linkDefinition) {
-    this.linkDefinition = linkDefinition;
+  public Mlbmaplinkdefinition linkdefinition(String linkdefinition) {
+    this.linkdefinition = linkdefinition;
     return this;
   }
 
    /**
-   * Definice odkazu na web [persistentní položka]
-   * @return linkDefinition
+   * definice odkazu na web [persistentní položka]
+   * @return linkdefinition
   **/
-  @ApiModelProperty(example = "null", value = "Definice odkazu na web [persistentní položka]")
-  public String getLinkDefinition() {
-    return linkDefinition;
+  @ApiModelProperty(example = "null", value = "definice odkazu na web [persistentní položka]")
+  public String getLinkdefinition() {
+    return linkdefinition;
   }
 
-  public void setLinkDefinition(String linkDefinition) {
-    this.linkDefinition = linkDefinition;
+  public void setLinkdefinition(String linkdefinition) {
+    this.linkdefinition = linkdefinition;
   }
 
 
@@ -178,19 +214,19 @@ public class Mlbmaplinkdefinition   {
       return false;
     }
     Mlbmaplinkdefinition mlbmaplinkdefinition = (Mlbmaplinkdefinition) o;
-    return Objects.equals(this.displayName, mlbmaplinkdefinition.displayName) &&
-        Objects.equals(this.ID, mlbmaplinkdefinition.ID) &&
-        Objects.equals(this.classID, mlbmaplinkdefinition.classID) &&
-        Objects.equals(this.objVersion, mlbmaplinkdefinition.objVersion) &&
-        Objects.equals(this.linkType, mlbmaplinkdefinition.linkType) &&
+    return Objects.equals(this.displayname, mlbmaplinkdefinition.displayname) &&
+        Objects.equals(this.id, mlbmaplinkdefinition.id) &&
+        Objects.equals(this.classid, mlbmaplinkdefinition.classid) &&
+        Objects.equals(this.objversion, mlbmaplinkdefinition.objversion) &&
+        Objects.equals(this.linktype, mlbmaplinkdefinition.linktype) &&
         Objects.equals(this.code, mlbmaplinkdefinition.code) &&
         Objects.equals(this.name, mlbmaplinkdefinition.name) &&
-        Objects.equals(this.linkDefinition, mlbmaplinkdefinition.linkDefinition);
+        Objects.equals(this.linkdefinition, mlbmaplinkdefinition.linkdefinition);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, linkType, code, name, linkDefinition);
+    return Objects.hash(displayname, id, classid, objversion, linktype, code, name, linkdefinition);
   }
 
   @Override
@@ -198,14 +234,14 @@ public class Mlbmaplinkdefinition   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Mlbmaplinkdefinition {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    linkType: ").append(toIndentedString(linkType)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    linktype: ").append(toIndentedString(linktype)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    linkDefinition: ").append(toIndentedString(linkDefinition)).append("\n");
+    sb.append("    linkdefinition: ").append(toIndentedString(linkdefinition)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,120 +35,156 @@ import java.util.Objects;
 /**
  * Mlbrepeatedroute
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Mlbrepeatedroute   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("RouteType")
-  private Integer routeType = null;
+  @SerializedName("routetype")
+  private Integer routetype = null;
 
-  @SerializedName("RepetitionPause")
-  private Integer repetitionPause = null;
+  @SerializedName("repetitionpause")
+  private Integer repetitionpause = null;
 
-  @SerializedName("TRMCar_ID")
-  private String tRMCarID = null;
+  @SerializedName("trmcar_id")
+  private String trmcarId = null;
 
-  @SerializedName("TRMDriver_ID")
-  private String tRMDriverID = null;
+  @SerializedName("trmdriver_id")
+  private String trmdriverId = null;
 
-  @SerializedName("MLBRoute_ID")
-  private String mLBRouteID = null;
+  @SerializedName("mlbroute_id")
+  private String mlbrouteId = null;
 
-  @SerializedName("ValidFrom$DATE")
-  private DateTime validFromDATE = null;
+  @SerializedName("validfrom$date")
+  private DateTime validfromdate = null;
 
-  @SerializedName("ValidTo$DATE")
-  private DateTime validToDATE = null;
+  @SerializedName("validto$date")
+  private DateTime validtodate = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("Monday")
+  @SerializedName("monday")
   private Boolean monday = null;
 
-  @SerializedName("Tuesday")
+  @SerializedName("tuesday")
   private Boolean tuesday = null;
 
-  @SerializedName("Wednesday")
+  @SerializedName("wednesday")
   private Boolean wednesday = null;
 
-  @SerializedName("Thursday")
+  @SerializedName("thursday")
   private Boolean thursday = null;
 
-  @SerializedName("Friday")
+  @SerializedName("friday")
   private Boolean friday = null;
 
-  @SerializedName("Saturday")
+  @SerializedName("saturday")
   private Boolean saturday = null;
 
-  @SerializedName("Sunday")
+  @SerializedName("sunday")
   private Boolean sunday = null;
 
-  @SerializedName("DepartTimeFrom$DATE")
-  private DateTime departTimeFromDATE = null;
+  @SerializedName("departtimefrom$date")
+  private DateTime departtimefromdate = null;
 
-  @SerializedName("DepartTimeTo$DATE")
-  private DateTime departTimeToDATE = null;
+  @SerializedName("departtimeto$date")
+  private DateTime departtimetodate = null;
 
-  @SerializedName("SpeedFrom")
-  private Integer speedFrom = null;
+  @SerializedName("speedfrom")
+  private Integer speedfrom = null;
 
-  @SerializedName("SpeedTo")
-  private Integer speedTo = null;
+  @SerializedName("speedto")
+  private Integer speedto = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Mlbrepeatedroute displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Mlbrepeatedroute id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Mlbrepeatedroute classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Mlbrepeatedroute objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Mlbrepeatedroute hidden(Boolean hidden) {
@@ -157,10 +193,10 @@ public class Mlbrepeatedroute   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -169,184 +205,184 @@ public class Mlbrepeatedroute   {
     this.hidden = hidden;
   }
 
-  public Mlbrepeatedroute routeType(Integer routeType) {
-    this.routeType = routeType;
+  public Mlbrepeatedroute routetype(Integer routetype) {
+    this.routetype = routetype;
     return this;
   }
 
    /**
-   * Typ jízdy [persistentní položka]
-   * @return routeType
+   * typ jízdy [persistentní položka]
+   * @return routetype
   **/
-  @ApiModelProperty(example = "null", value = "Typ jízdy [persistentní položka]")
-  public Integer getRouteType() {
-    return routeType;
+  @ApiModelProperty(example = "null", value = "typ jízdy [persistentní položka]")
+  public Integer getRoutetype() {
+    return routetype;
   }
 
-  public void setRouteType(Integer routeType) {
-    this.routeType = routeType;
+  public void setRoutetype(Integer routetype) {
+    this.routetype = routetype;
   }
 
-  public Mlbrepeatedroute repetitionPause(Integer repetitionPause) {
-    this.repetitionPause = repetitionPause;
+  public Mlbrepeatedroute repetitionpause(Integer repetitionpause) {
+    this.repetitionpause = repetitionpause;
     return this;
   }
 
    /**
-   * Počet dní mezi opakováním [persistentní položka]
-   * @return repetitionPause
+   * počet dní mezi opakováním [persistentní položka]
+   * @return repetitionpause
   **/
-  @ApiModelProperty(example = "null", value = "Počet dní mezi opakováním [persistentní položka]")
-  public Integer getRepetitionPause() {
-    return repetitionPause;
+  @ApiModelProperty(example = "null", value = "počet dní mezi opakováním [persistentní položka]")
+  public Integer getRepetitionpause() {
+    return repetitionpause;
   }
 
-  public void setRepetitionPause(Integer repetitionPause) {
-    this.repetitionPause = repetitionPause;
+  public void setRepetitionpause(Integer repetitionpause) {
+    this.repetitionpause = repetitionpause;
   }
 
-  public Mlbrepeatedroute tRMCarID(String tRMCarID) {
-    this.tRMCarID = tRMCarID;
+  public Mlbrepeatedroute trmcarId(String trmcarId) {
+    this.trmcarId = trmcarId;
     return this;
   }
 
    /**
-   * Vozidlo; ID objektu Vozidlo [persistentní položka]
-   * @return tRMCarID
+   * vozidlo; id objektu vozidlo [persistentní položka]
+   * @return trmcarId
   **/
-  @ApiModelProperty(example = "null", value = "Vozidlo; ID objektu Vozidlo [persistentní položka]")
-  public String getTRMCarID() {
-    return tRMCarID;
+  @ApiModelProperty(example = "null", value = "vozidlo; id objektu vozidlo [persistentní položka]")
+  public String getTrmcarId() {
+    return trmcarId;
   }
 
-  public void setTRMCarID(String tRMCarID) {
-    this.tRMCarID = tRMCarID;
+  public void setTrmcarId(String trmcarId) {
+    this.trmcarId = trmcarId;
   }
 
-  public Mlbrepeatedroute tRMDriverID(String tRMDriverID) {
-    this.tRMDriverID = tRMDriverID;
+  public Mlbrepeatedroute trmdriverId(String trmdriverId) {
+    this.trmdriverId = trmdriverId;
     return this;
   }
 
    /**
-   * Řidič; ID objektu Řidič [persistentní položka]
-   * @return tRMDriverID
+   * Řidič; id objektu Řidič [persistentní položka]
+   * @return trmdriverId
   **/
-  @ApiModelProperty(example = "null", value = "Řidič; ID objektu Řidič [persistentní položka]")
-  public String getTRMDriverID() {
-    return tRMDriverID;
+  @ApiModelProperty(example = "null", value = "Řidič; id objektu Řidič [persistentní položka]")
+  public String getTrmdriverId() {
+    return trmdriverId;
   }
 
-  public void setTRMDriverID(String tRMDriverID) {
-    this.tRMDriverID = tRMDriverID;
+  public void setTrmdriverId(String trmdriverId) {
+    this.trmdriverId = trmdriverId;
   }
 
-  public Mlbrepeatedroute mLBRouteID(String mLBRouteID) {
-    this.mLBRouteID = mLBRouteID;
+  public Mlbrepeatedroute mlbrouteId(String mlbrouteId) {
+    this.mlbrouteId = mlbrouteId;
     return this;
   }
 
    /**
-   * Vzor jízdy; ID objektu Vzor jízdy [persistentní položka]
-   * @return mLBRouteID
+   * vzor jízdy; id objektu vzor jízdy [persistentní položka]
+   * @return mlbrouteId
   **/
-  @ApiModelProperty(example = "null", value = "Vzor jízdy; ID objektu Vzor jízdy [persistentní položka]")
-  public String getMLBRouteID() {
-    return mLBRouteID;
+  @ApiModelProperty(example = "null", value = "vzor jízdy; id objektu vzor jízdy [persistentní položka]")
+  public String getMlbrouteId() {
+    return mlbrouteId;
   }
 
-  public void setMLBRouteID(String mLBRouteID) {
-    this.mLBRouteID = mLBRouteID;
+  public void setMlbrouteId(String mlbrouteId) {
+    this.mlbrouteId = mlbrouteId;
   }
 
-  public Mlbrepeatedroute validFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public Mlbrepeatedroute validfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
     return this;
   }
 
    /**
-   * Definice platná od [persistentní položka]
-   * @return validFromDATE
+   * definice platná od [persistentní položka]
+   * @return validfromdate
   **/
-  @ApiModelProperty(example = "null", value = "Definice platná od [persistentní položka]")
-  public DateTime getValidFromDATE() {
-    return validFromDATE;
+  @ApiModelProperty(example = "null", value = "definice platná od [persistentní položka]")
+  public DateTime getValidfromdate() {
+    return validfromdate;
   }
 
-  public void setValidFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public void setValidfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
   }
 
-  public Mlbrepeatedroute validToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public Mlbrepeatedroute validtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
     return this;
   }
 
    /**
-   * Definice platná do [persistentní položka]
-   * @return validToDATE
+   * definice platná do [persistentní položka]
+   * @return validtodate
   **/
-  @ApiModelProperty(example = "null", value = "Definice platná do [persistentní položka]")
-  public DateTime getValidToDATE() {
-    return validToDATE;
+  @ApiModelProperty(example = "null", value = "definice platná do [persistentní položka]")
+  public DateTime getValidtodate() {
+    return validtodate;
   }
 
-  public void setValidToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public void setValidtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
   }
 
-  public Mlbrepeatedroute divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Mlbrepeatedroute divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Mlbrepeatedroute busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Mlbrepeatedroute busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Mlbrepeatedroute busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Mlbrepeatedroute bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obchodní případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obchodní případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obchodní případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obchodní případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
   public Mlbrepeatedroute monday(Boolean monday) {
@@ -355,10 +391,10 @@ public class Mlbrepeatedroute   {
   }
 
    /**
-   * Lze generovat v pondělí [persistentní položka]
+   * lze generovat v pondělí [persistentní položka]
    * @return monday
   **/
-  @ApiModelProperty(example = "null", value = "Lze generovat v pondělí [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "lze generovat v pondělí [persistentní položka]")
   public Boolean getMonday() {
     return monday;
   }
@@ -373,10 +409,10 @@ public class Mlbrepeatedroute   {
   }
 
    /**
-   * Lze generovat v úterý [persistentní položka]
+   * lze generovat v úterý [persistentní položka]
    * @return tuesday
   **/
-  @ApiModelProperty(example = "null", value = "Lze generovat v úterý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "lze generovat v úterý [persistentní položka]")
   public Boolean getTuesday() {
     return tuesday;
   }
@@ -391,10 +427,10 @@ public class Mlbrepeatedroute   {
   }
 
    /**
-   * Lze generovat ve středu [persistentní položka]
+   * lze generovat ve středu [persistentní položka]
    * @return wednesday
   **/
-  @ApiModelProperty(example = "null", value = "Lze generovat ve středu [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "lze generovat ve středu [persistentní položka]")
   public Boolean getWednesday() {
     return wednesday;
   }
@@ -409,10 +445,10 @@ public class Mlbrepeatedroute   {
   }
 
    /**
-   * Lze generovat ve čtvrtek [persistentní položka]
+   * lze generovat ve čtvrtek [persistentní položka]
    * @return thursday
   **/
-  @ApiModelProperty(example = "null", value = "Lze generovat ve čtvrtek [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "lze generovat ve čtvrtek [persistentní položka]")
   public Boolean getThursday() {
     return thursday;
   }
@@ -427,10 +463,10 @@ public class Mlbrepeatedroute   {
   }
 
    /**
-   * Lze generovat v pátek [persistentní položka]
+   * lze generovat v pátek [persistentní položka]
    * @return friday
   **/
-  @ApiModelProperty(example = "null", value = "Lze generovat v pátek [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "lze generovat v pátek [persistentní položka]")
   public Boolean getFriday() {
     return friday;
   }
@@ -445,10 +481,10 @@ public class Mlbrepeatedroute   {
   }
 
    /**
-   * Lze generovat v sobotu [persistentní položka]
+   * lze generovat v sobotu [persistentní položka]
    * @return saturday
   **/
-  @ApiModelProperty(example = "null", value = "Lze generovat v sobotu [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "lze generovat v sobotu [persistentní položka]")
   public Boolean getSaturday() {
     return saturday;
   }
@@ -463,10 +499,10 @@ public class Mlbrepeatedroute   {
   }
 
    /**
-   * Lze generovat v neděli [persistentní položka]
+   * lze generovat v neděli [persistentní položka]
    * @return sunday
   **/
-  @ApiModelProperty(example = "null", value = "Lze generovat v neděli [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "lze generovat v neděli [persistentní položka]")
   public Boolean getSunday() {
     return sunday;
   }
@@ -475,76 +511,76 @@ public class Mlbrepeatedroute   {
     this.sunday = sunday;
   }
 
-  public Mlbrepeatedroute departTimeFromDATE(DateTime departTimeFromDATE) {
-    this.departTimeFromDATE = departTimeFromDATE;
+  public Mlbrepeatedroute departtimefromdate(DateTime departtimefromdate) {
+    this.departtimefromdate = departtimefromdate;
     return this;
   }
 
    /**
    * Čas odjezdu od [persistentní položka]
-   * @return departTimeFromDATE
+   * @return departtimefromdate
   **/
   @ApiModelProperty(example = "null", value = "Čas odjezdu od [persistentní položka]")
-  public DateTime getDepartTimeFromDATE() {
-    return departTimeFromDATE;
+  public DateTime getDeparttimefromdate() {
+    return departtimefromdate;
   }
 
-  public void setDepartTimeFromDATE(DateTime departTimeFromDATE) {
-    this.departTimeFromDATE = departTimeFromDATE;
+  public void setDeparttimefromdate(DateTime departtimefromdate) {
+    this.departtimefromdate = departtimefromdate;
   }
 
-  public Mlbrepeatedroute departTimeToDATE(DateTime departTimeToDATE) {
-    this.departTimeToDATE = departTimeToDATE;
+  public Mlbrepeatedroute departtimetodate(DateTime departtimetodate) {
+    this.departtimetodate = departtimetodate;
     return this;
   }
 
    /**
    * Čas odjezdu do [persistentní položka]
-   * @return departTimeToDATE
+   * @return departtimetodate
   **/
   @ApiModelProperty(example = "null", value = "Čas odjezdu do [persistentní položka]")
-  public DateTime getDepartTimeToDATE() {
-    return departTimeToDATE;
+  public DateTime getDeparttimetodate() {
+    return departtimetodate;
   }
 
-  public void setDepartTimeToDATE(DateTime departTimeToDATE) {
-    this.departTimeToDATE = departTimeToDATE;
+  public void setDeparttimetodate(DateTime departtimetodate) {
+    this.departtimetodate = departtimetodate;
   }
 
-  public Mlbrepeatedroute speedFrom(Integer speedFrom) {
-    this.speedFrom = speedFrom;
+  public Mlbrepeatedroute speedfrom(Integer speedfrom) {
+    this.speedfrom = speedfrom;
     return this;
   }
 
    /**
-   * Rychlost jízdy od [persistentní položka]
-   * @return speedFrom
+   * rychlost jízdy od [persistentní položka]
+   * @return speedfrom
   **/
-  @ApiModelProperty(example = "null", value = "Rychlost jízdy od [persistentní položka]")
-  public Integer getSpeedFrom() {
-    return speedFrom;
+  @ApiModelProperty(example = "null", value = "rychlost jízdy od [persistentní položka]")
+  public Integer getSpeedfrom() {
+    return speedfrom;
   }
 
-  public void setSpeedFrom(Integer speedFrom) {
-    this.speedFrom = speedFrom;
+  public void setSpeedfrom(Integer speedfrom) {
+    this.speedfrom = speedfrom;
   }
 
-  public Mlbrepeatedroute speedTo(Integer speedTo) {
-    this.speedTo = speedTo;
+  public Mlbrepeatedroute speedto(Integer speedto) {
+    this.speedto = speedto;
     return this;
   }
 
    /**
-   * Rychlost jízdy do [persistentní položka]
-   * @return speedTo
+   * rychlost jízdy do [persistentní položka]
+   * @return speedto
   **/
-  @ApiModelProperty(example = "null", value = "Rychlost jízdy do [persistentní položka]")
-  public Integer getSpeedTo() {
-    return speedTo;
+  @ApiModelProperty(example = "null", value = "rychlost jízdy do [persistentní položka]")
+  public Integer getSpeedto() {
+    return speedto;
   }
 
-  public void setSpeedTo(Integer speedTo) {
-    this.speedTo = speedTo;
+  public void setSpeedto(Integer speedto) {
+    this.speedto = speedto;
   }
 
 
@@ -557,21 +593,21 @@ public class Mlbrepeatedroute   {
       return false;
     }
     Mlbrepeatedroute mlbrepeatedroute = (Mlbrepeatedroute) o;
-    return Objects.equals(this.displayName, mlbrepeatedroute.displayName) &&
-        Objects.equals(this.ID, mlbrepeatedroute.ID) &&
-        Objects.equals(this.classID, mlbrepeatedroute.classID) &&
-        Objects.equals(this.objVersion, mlbrepeatedroute.objVersion) &&
+    return Objects.equals(this.displayname, mlbrepeatedroute.displayname) &&
+        Objects.equals(this.id, mlbrepeatedroute.id) &&
+        Objects.equals(this.classid, mlbrepeatedroute.classid) &&
+        Objects.equals(this.objversion, mlbrepeatedroute.objversion) &&
         Objects.equals(this.hidden, mlbrepeatedroute.hidden) &&
-        Objects.equals(this.routeType, mlbrepeatedroute.routeType) &&
-        Objects.equals(this.repetitionPause, mlbrepeatedroute.repetitionPause) &&
-        Objects.equals(this.tRMCarID, mlbrepeatedroute.tRMCarID) &&
-        Objects.equals(this.tRMDriverID, mlbrepeatedroute.tRMDriverID) &&
-        Objects.equals(this.mLBRouteID, mlbrepeatedroute.mLBRouteID) &&
-        Objects.equals(this.validFromDATE, mlbrepeatedroute.validFromDATE) &&
-        Objects.equals(this.validToDATE, mlbrepeatedroute.validToDATE) &&
-        Objects.equals(this.divisionID, mlbrepeatedroute.divisionID) &&
-        Objects.equals(this.busOrderID, mlbrepeatedroute.busOrderID) &&
-        Objects.equals(this.busTransactionID, mlbrepeatedroute.busTransactionID) &&
+        Objects.equals(this.routetype, mlbrepeatedroute.routetype) &&
+        Objects.equals(this.repetitionpause, mlbrepeatedroute.repetitionpause) &&
+        Objects.equals(this.trmcarId, mlbrepeatedroute.trmcarId) &&
+        Objects.equals(this.trmdriverId, mlbrepeatedroute.trmdriverId) &&
+        Objects.equals(this.mlbrouteId, mlbrepeatedroute.mlbrouteId) &&
+        Objects.equals(this.validfromdate, mlbrepeatedroute.validfromdate) &&
+        Objects.equals(this.validtodate, mlbrepeatedroute.validtodate) &&
+        Objects.equals(this.divisionId, mlbrepeatedroute.divisionId) &&
+        Objects.equals(this.busorderId, mlbrepeatedroute.busorderId) &&
+        Objects.equals(this.bustransactionId, mlbrepeatedroute.bustransactionId) &&
         Objects.equals(this.monday, mlbrepeatedroute.monday) &&
         Objects.equals(this.tuesday, mlbrepeatedroute.tuesday) &&
         Objects.equals(this.wednesday, mlbrepeatedroute.wednesday) &&
@@ -579,15 +615,15 @@ public class Mlbrepeatedroute   {
         Objects.equals(this.friday, mlbrepeatedroute.friday) &&
         Objects.equals(this.saturday, mlbrepeatedroute.saturday) &&
         Objects.equals(this.sunday, mlbrepeatedroute.sunday) &&
-        Objects.equals(this.departTimeFromDATE, mlbrepeatedroute.departTimeFromDATE) &&
-        Objects.equals(this.departTimeToDATE, mlbrepeatedroute.departTimeToDATE) &&
-        Objects.equals(this.speedFrom, mlbrepeatedroute.speedFrom) &&
-        Objects.equals(this.speedTo, mlbrepeatedroute.speedTo);
+        Objects.equals(this.departtimefromdate, mlbrepeatedroute.departtimefromdate) &&
+        Objects.equals(this.departtimetodate, mlbrepeatedroute.departtimetodate) &&
+        Objects.equals(this.speedfrom, mlbrepeatedroute.speedfrom) &&
+        Objects.equals(this.speedto, mlbrepeatedroute.speedto);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, routeType, repetitionPause, tRMCarID, tRMDriverID, mLBRouteID, validFromDATE, validToDATE, divisionID, busOrderID, busTransactionID, monday, tuesday, wednesday, thursday, friday, saturday, sunday, departTimeFromDATE, departTimeToDATE, speedFrom, speedTo);
+    return Objects.hash(displayname, id, classid, objversion, hidden, routetype, repetitionpause, trmcarId, trmdriverId, mlbrouteId, validfromdate, validtodate, divisionId, busorderId, bustransactionId, monday, tuesday, wednesday, thursday, friday, saturday, sunday, departtimefromdate, departtimetodate, speedfrom, speedto);
   }
 
   @Override
@@ -595,21 +631,21 @@ public class Mlbrepeatedroute   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Mlbrepeatedroute {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    routeType: ").append(toIndentedString(routeType)).append("\n");
-    sb.append("    repetitionPause: ").append(toIndentedString(repetitionPause)).append("\n");
-    sb.append("    tRMCarID: ").append(toIndentedString(tRMCarID)).append("\n");
-    sb.append("    tRMDriverID: ").append(toIndentedString(tRMDriverID)).append("\n");
-    sb.append("    mLBRouteID: ").append(toIndentedString(mLBRouteID)).append("\n");
-    sb.append("    validFromDATE: ").append(toIndentedString(validFromDATE)).append("\n");
-    sb.append("    validToDATE: ").append(toIndentedString(validToDATE)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
+    sb.append("    routetype: ").append(toIndentedString(routetype)).append("\n");
+    sb.append("    repetitionpause: ").append(toIndentedString(repetitionpause)).append("\n");
+    sb.append("    trmcarId: ").append(toIndentedString(trmcarId)).append("\n");
+    sb.append("    trmdriverId: ").append(toIndentedString(trmdriverId)).append("\n");
+    sb.append("    mlbrouteId: ").append(toIndentedString(mlbrouteId)).append("\n");
+    sb.append("    validfromdate: ").append(toIndentedString(validfromdate)).append("\n");
+    sb.append("    validtodate: ").append(toIndentedString(validtodate)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
     sb.append("    monday: ").append(toIndentedString(monday)).append("\n");
     sb.append("    tuesday: ").append(toIndentedString(tuesday)).append("\n");
     sb.append("    wednesday: ").append(toIndentedString(wednesday)).append("\n");
@@ -617,10 +653,10 @@ public class Mlbrepeatedroute   {
     sb.append("    friday: ").append(toIndentedString(friday)).append("\n");
     sb.append("    saturday: ").append(toIndentedString(saturday)).append("\n");
     sb.append("    sunday: ").append(toIndentedString(sunday)).append("\n");
-    sb.append("    departTimeFromDATE: ").append(toIndentedString(departTimeFromDATE)).append("\n");
-    sb.append("    departTimeToDATE: ").append(toIndentedString(departTimeToDATE)).append("\n");
-    sb.append("    speedFrom: ").append(toIndentedString(speedFrom)).append("\n");
-    sb.append("    speedTo: ").append(toIndentedString(speedTo)).append("\n");
+    sb.append("    departtimefromdate: ").append(toIndentedString(departtimefromdate)).append("\n");
+    sb.append("    departtimetodate: ").append(toIndentedString(departtimetodate)).append("\n");
+    sb.append("    speedfrom: ").append(toIndentedString(speedfrom)).append("\n");
+    sb.append("    speedto: ").append(toIndentedString(speedto)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,171 +37,216 @@ import java.util.Objects;
 /**
  * Poscashpaidrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Poscashpaidrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("TAmount")
-  private Double tAmount = null;
+  @SerializedName("tamount")
+  private Double tamount = null;
 
-  @SerializedName("LocalTAmount")
-  private Double localTAmount = null;
+  @SerializedName("localtamount")
+  private Double localtamount = null;
 
-  @SerializedName("Nominals")
+  @SerializedName("nominals")
   private List<Poscashpaidrownominal> nominals = new ArrayList<Poscashpaidrownominal>();
 
-  @SerializedName("Cheques")
+  @SerializedName("cheques")
   private List<Poscashpaidcheque> cheques = new ArrayList<Poscashpaidcheque>();
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("Text")
+  @SerializedName("text")
   private String text = null;
 
-  @SerializedName("TextDoc")
-  private String textDoc = null;
+  @SerializedName("textdoc")
+  private String textdoc = null;
 
-  @SerializedName("AuthCode")
-  private String authCode = null;
+  @SerializedName("authcode")
+  private String authcode = null;
 
-  @SerializedName("TransactionData")
-  private String transactionData = null;
+  @SerializedName("transactiondata")
+  private String transactiondata = null;
 
-  @SerializedName("BankPayment")
-  private Double bankPayment = null;
+  @SerializedName("bankpayment")
+  private Double bankpayment = null;
 
-  @SerializedName("BankTariff")
-  private Double bankTariff = null;
+  @SerializedName("banktariff")
+  private Double banktariff = null;
 
-  @SerializedName("BankPaymentDate$DATE")
-  private DateTime bankPaymentDateDATE = null;
+  @SerializedName("bankpaymentdate$date")
+  private DateTime bankpaymentdatedate = null;
 
-  @SerializedName("BankStatementsRow_ID")
-  private String bankStatementsRowID = null;
+  @SerializedName("bankstatementsrow_id")
+  private String bankstatementsrowId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Výdej z pokladního místa [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Výdej z pokladního místa [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Poscashpaidrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Poscashpaidrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Poscashpaidrow tAmount(Double tAmount) {
-    this.tAmount = tAmount;
+  public Poscashpaidrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Celkem [persistentní položka]
-   * @return tAmount
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Celkem [persistentní položka]")
-  public Double getTAmount() {
-    return tAmount;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setTAmount(Double tAmount) {
-    this.tAmount = tAmount;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Poscashpaidrow localTAmount(Double localTAmount) {
-    this.localTAmount = localTAmount;
+  public Poscashpaidrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Celkem lokálně [persistentní položka]
-   * @return localTAmount
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Celkem lokálně [persistentní položka]")
-  public Double getLocalTAmount() {
-    return localTAmount;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setLocalTAmount(Double localTAmount) {
-    this.localTAmount = localTAmount;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Poscashpaidrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Poscashpaidrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu výdej z pokladního místa [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu výdej z pokladního místa [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Poscashpaidrow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Poscashpaidrow tamount(Double tamount) {
+    this.tamount = tamount;
+    return this;
+  }
+
+   /**
+   * celkem [persistentní položka]
+   * @return tamount
+  **/
+  @ApiModelProperty(example = "null", value = "celkem [persistentní položka]")
+  public Double getTamount() {
+    return tamount;
+  }
+
+  public void setTamount(Double tamount) {
+    this.tamount = tamount;
+  }
+
+  public Poscashpaidrow localtamount(Double localtamount) {
+    this.localtamount = localtamount;
+    return this;
+  }
+
+   /**
+   * celkem lokálně [persistentní položka]
+   * @return localtamount
+  **/
+  @ApiModelProperty(example = "null", value = "celkem lokálně [persistentní položka]")
+  public Double getLocaltamount() {
+    return localtamount;
+  }
+
+  public void setLocaltamount(Double localtamount) {
+    this.localtamount = localtamount;
   }
 
   public Poscashpaidrow nominals(List<Poscashpaidrownominal> nominals) {
@@ -215,10 +260,10 @@ public class Poscashpaidrow   {
   }
 
    /**
-   * Mincovka; kolekce BO Výdej z pokladního místa - řádek - mincovka [nepersistentní položka]
+   * mincovka; kolekce bo výdej z pokladního místa - řádek - mincovka [nepersistentní položka]
    * @return nominals
   **/
-  @ApiModelProperty(example = "null", value = "Mincovka; kolekce BO Výdej z pokladního místa - řádek - mincovka [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "mincovka; kolekce bo výdej z pokladního místa - řádek - mincovka [nepersistentní položka]")
   public List<Poscashpaidrownominal> getNominals() {
     return nominals;
   }
@@ -238,10 +283,10 @@ public class Poscashpaidrow   {
   }
 
    /**
-   * Šeky; kolekce BO Výdej z pokladního místa - šek [nepersistentní položka]
+   * Šeky; kolekce bo výdej z pokladního místa - šek [nepersistentní položka]
    * @return cheques
   **/
-  @ApiModelProperty(example = "null", value = "Šeky; kolekce BO Výdej z pokladního místa - šek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Šeky; kolekce bo výdej z pokladního místa - šek [nepersistentní položka]")
   public List<Poscashpaidcheque> getCheques() {
     return cheques;
   }
@@ -250,58 +295,58 @@ public class Poscashpaidrow   {
     this.cheques = cheques;
   }
 
-  public Poscashpaidrow divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Poscashpaidrow divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Poscashpaidrow busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Poscashpaidrow busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Poscashpaidrow busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Poscashpaidrow bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * O.případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * o.případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "O.případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "o.případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
   public Poscashpaidrow text(String text) {
@@ -310,10 +355,10 @@ public class Poscashpaidrow   {
   }
 
    /**
-   * Komentář platby [persistentní položka]
+   * komentář platby [persistentní položka]
    * @return text
   **/
-  @ApiModelProperty(example = "null", value = "Komentář platby [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "komentář platby [persistentní položka]")
   public String getText() {
     return text;
   }
@@ -322,148 +367,148 @@ public class Poscashpaidrow   {
     this.text = text;
   }
 
-  public Poscashpaidrow textDoc(String textDoc) {
-    this.textDoc = textDoc;
+  public Poscashpaidrow textdoc(String textdoc) {
+    this.textdoc = textdoc;
     return this;
   }
 
    /**
    * Číslo účtenky [persistentní položka]
-   * @return textDoc
+   * @return textdoc
   **/
   @ApiModelProperty(example = "null", value = "Číslo účtenky [persistentní položka]")
-  public String getTextDoc() {
-    return textDoc;
+  public String getTextdoc() {
+    return textdoc;
   }
 
-  public void setTextDoc(String textDoc) {
-    this.textDoc = textDoc;
+  public void setTextdoc(String textdoc) {
+    this.textdoc = textdoc;
   }
 
-  public Poscashpaidrow authCode(String authCode) {
-    this.authCode = authCode;
+  public Poscashpaidrow authcode(String authcode) {
+    this.authcode = authcode;
     return this;
   }
 
    /**
-   * Autorizační kód [persistentní položka]
-   * @return authCode
+   * autorizační kód [persistentní položka]
+   * @return authcode
   **/
-  @ApiModelProperty(example = "null", value = "Autorizační kód [persistentní položka]")
-  public String getAuthCode() {
-    return authCode;
+  @ApiModelProperty(example = "null", value = "autorizační kód [persistentní položka]")
+  public String getAuthcode() {
+    return authcode;
   }
 
-  public void setAuthCode(String authCode) {
-    this.authCode = authCode;
+  public void setAuthcode(String authcode) {
+    this.authcode = authcode;
   }
 
-  public Poscashpaidrow transactionData(String transactionData) {
-    this.transactionData = transactionData;
+  public Poscashpaidrow transactiondata(String transactiondata) {
+    this.transactiondata = transactiondata;
     return this;
   }
 
    /**
-   * Transakční data [persistentní položka]
-   * @return transactionData
+   * transakční data [persistentní položka]
+   * @return transactiondata
   **/
-  @ApiModelProperty(example = "null", value = "Transakční data [persistentní položka]")
-  public String getTransactionData() {
-    return transactionData;
+  @ApiModelProperty(example = "null", value = "transakční data [persistentní položka]")
+  public String getTransactiondata() {
+    return transactiondata;
   }
 
-  public void setTransactionData(String transactionData) {
-    this.transactionData = transactionData;
+  public void setTransactiondata(String transactiondata) {
+    this.transactiondata = transactiondata;
   }
 
-  public Poscashpaidrow bankPayment(Double bankPayment) {
-    this.bankPayment = bankPayment;
+  public Poscashpaidrow bankpayment(Double bankpayment) {
+    this.bankpayment = bankpayment;
     return this;
   }
 
    /**
-   * Zaplaceno [persistentní položka]
-   * @return bankPayment
+   * zaplaceno [persistentní položka]
+   * @return bankpayment
   **/
-  @ApiModelProperty(example = "null", value = "Zaplaceno [persistentní položka]")
-  public Double getBankPayment() {
-    return bankPayment;
+  @ApiModelProperty(example = "null", value = "zaplaceno [persistentní položka]")
+  public Double getBankpayment() {
+    return bankpayment;
   }
 
-  public void setBankPayment(Double bankPayment) {
-    this.bankPayment = bankPayment;
+  public void setBankpayment(Double bankpayment) {
+    this.bankpayment = bankpayment;
   }
 
-  public Poscashpaidrow bankTariff(Double bankTariff) {
-    this.bankTariff = bankTariff;
+  public Poscashpaidrow banktariff(Double banktariff) {
+    this.banktariff = banktariff;
     return this;
   }
 
    /**
-   * Srážka [persistentní položka]
-   * @return bankTariff
+   * srážka [persistentní položka]
+   * @return banktariff
   **/
-  @ApiModelProperty(example = "null", value = "Srážka [persistentní položka]")
-  public Double getBankTariff() {
-    return bankTariff;
+  @ApiModelProperty(example = "null", value = "srážka [persistentní položka]")
+  public Double getBanktariff() {
+    return banktariff;
   }
 
-  public void setBankTariff(Double bankTariff) {
-    this.bankTariff = bankTariff;
+  public void setBanktariff(Double banktariff) {
+    this.banktariff = banktariff;
   }
 
-  public Poscashpaidrow bankPaymentDateDATE(DateTime bankPaymentDateDATE) {
-    this.bankPaymentDateDATE = bankPaymentDateDATE;
+  public Poscashpaidrow bankpaymentdatedate(DateTime bankpaymentdatedate) {
+    this.bankpaymentdatedate = bankpaymentdatedate;
     return this;
   }
 
    /**
-   * Placeno [persistentní položka]
-   * @return bankPaymentDateDATE
+   * placeno [persistentní položka]
+   * @return bankpaymentdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Placeno [persistentní položka]")
-  public DateTime getBankPaymentDateDATE() {
-    return bankPaymentDateDATE;
+  @ApiModelProperty(example = "null", value = "placeno [persistentní položka]")
+  public DateTime getBankpaymentdatedate() {
+    return bankpaymentdatedate;
   }
 
-  public void setBankPaymentDateDATE(DateTime bankPaymentDateDATE) {
-    this.bankPaymentDateDATE = bankPaymentDateDATE;
+  public void setBankpaymentdatedate(DateTime bankpaymentdatedate) {
+    this.bankpaymentdatedate = bankpaymentdatedate;
   }
 
-  public Poscashpaidrow bankStatementsRowID(String bankStatementsRowID) {
-    this.bankStatementsRowID = bankStatementsRowID;
+  public Poscashpaidrow bankstatementsrowId(String bankstatementsrowId) {
+    this.bankstatementsrowId = bankstatementsrowId;
     return this;
   }
 
    /**
-   * Řádek výpisu; ID objektu Bankovní výpis - řádek [persistentní položka]
-   * @return bankStatementsRowID
+   * Řádek výpisu; id objektu bankovní výpis - řádek [persistentní položka]
+   * @return bankstatementsrowId
   **/
-  @ApiModelProperty(example = "null", value = "Řádek výpisu; ID objektu Bankovní výpis - řádek [persistentní položka]")
-  public String getBankStatementsRowID() {
-    return bankStatementsRowID;
+  @ApiModelProperty(example = "null", value = "Řádek výpisu; id objektu bankovní výpis - řádek [persistentní položka]")
+  public String getBankstatementsrowId() {
+    return bankstatementsrowId;
   }
 
-  public void setBankStatementsRowID(String bankStatementsRowID) {
-    this.bankStatementsRowID = bankStatementsRowID;
+  public void setBankstatementsrowId(String bankstatementsrowId) {
+    this.bankstatementsrowId = bankstatementsrowId;
   }
 
-  public Poscashpaidrow busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Poscashpaidrow busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
 
@@ -476,33 +521,33 @@ public class Poscashpaidrow   {
       return false;
     }
     Poscashpaidrow poscashpaidrow = (Poscashpaidrow) o;
-    return Objects.equals(this.displayName, poscashpaidrow.displayName) &&
-        Objects.equals(this.ID, poscashpaidrow.ID) &&
-        Objects.equals(this.classID, poscashpaidrow.classID) &&
-        Objects.equals(this.objVersion, poscashpaidrow.objVersion) &&
-        Objects.equals(this.parentID, poscashpaidrow.parentID) &&
-        Objects.equals(this.posIndex, poscashpaidrow.posIndex) &&
-        Objects.equals(this.tAmount, poscashpaidrow.tAmount) &&
-        Objects.equals(this.localTAmount, poscashpaidrow.localTAmount) &&
+    return Objects.equals(this.displayname, poscashpaidrow.displayname) &&
+        Objects.equals(this.id, poscashpaidrow.id) &&
+        Objects.equals(this.classid, poscashpaidrow.classid) &&
+        Objects.equals(this.objversion, poscashpaidrow.objversion) &&
+        Objects.equals(this.parentId, poscashpaidrow.parentId) &&
+        Objects.equals(this.posindex, poscashpaidrow.posindex) &&
+        Objects.equals(this.tamount, poscashpaidrow.tamount) &&
+        Objects.equals(this.localtamount, poscashpaidrow.localtamount) &&
         Objects.equals(this.nominals, poscashpaidrow.nominals) &&
         Objects.equals(this.cheques, poscashpaidrow.cheques) &&
-        Objects.equals(this.divisionID, poscashpaidrow.divisionID) &&
-        Objects.equals(this.busOrderID, poscashpaidrow.busOrderID) &&
-        Objects.equals(this.busTransactionID, poscashpaidrow.busTransactionID) &&
+        Objects.equals(this.divisionId, poscashpaidrow.divisionId) &&
+        Objects.equals(this.busorderId, poscashpaidrow.busorderId) &&
+        Objects.equals(this.bustransactionId, poscashpaidrow.bustransactionId) &&
         Objects.equals(this.text, poscashpaidrow.text) &&
-        Objects.equals(this.textDoc, poscashpaidrow.textDoc) &&
-        Objects.equals(this.authCode, poscashpaidrow.authCode) &&
-        Objects.equals(this.transactionData, poscashpaidrow.transactionData) &&
-        Objects.equals(this.bankPayment, poscashpaidrow.bankPayment) &&
-        Objects.equals(this.bankTariff, poscashpaidrow.bankTariff) &&
-        Objects.equals(this.bankPaymentDateDATE, poscashpaidrow.bankPaymentDateDATE) &&
-        Objects.equals(this.bankStatementsRowID, poscashpaidrow.bankStatementsRowID) &&
-        Objects.equals(this.busProjectID, poscashpaidrow.busProjectID);
+        Objects.equals(this.textdoc, poscashpaidrow.textdoc) &&
+        Objects.equals(this.authcode, poscashpaidrow.authcode) &&
+        Objects.equals(this.transactiondata, poscashpaidrow.transactiondata) &&
+        Objects.equals(this.bankpayment, poscashpaidrow.bankpayment) &&
+        Objects.equals(this.banktariff, poscashpaidrow.banktariff) &&
+        Objects.equals(this.bankpaymentdatedate, poscashpaidrow.bankpaymentdatedate) &&
+        Objects.equals(this.bankstatementsrowId, poscashpaidrow.bankstatementsrowId) &&
+        Objects.equals(this.busprojectId, poscashpaidrow.busprojectId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, tAmount, localTAmount, nominals, cheques, divisionID, busOrderID, busTransactionID, text, textDoc, authCode, transactionData, bankPayment, bankTariff, bankPaymentDateDATE, bankStatementsRowID, busProjectID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, tamount, localtamount, nominals, cheques, divisionId, busorderId, bustransactionId, text, textdoc, authcode, transactiondata, bankpayment, banktariff, bankpaymentdatedate, bankstatementsrowId, busprojectId);
   }
 
   @Override
@@ -510,28 +555,28 @@ public class Poscashpaidrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Poscashpaidrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    tAmount: ").append(toIndentedString(tAmount)).append("\n");
-    sb.append("    localTAmount: ").append(toIndentedString(localTAmount)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    tamount: ").append(toIndentedString(tamount)).append("\n");
+    sb.append("    localtamount: ").append(toIndentedString(localtamount)).append("\n");
     sb.append("    nominals: ").append(toIndentedString(nominals)).append("\n");
     sb.append("    cheques: ").append(toIndentedString(cheques)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
-    sb.append("    textDoc: ").append(toIndentedString(textDoc)).append("\n");
-    sb.append("    authCode: ").append(toIndentedString(authCode)).append("\n");
-    sb.append("    transactionData: ").append(toIndentedString(transactionData)).append("\n");
-    sb.append("    bankPayment: ").append(toIndentedString(bankPayment)).append("\n");
-    sb.append("    bankTariff: ").append(toIndentedString(bankTariff)).append("\n");
-    sb.append("    bankPaymentDateDATE: ").append(toIndentedString(bankPaymentDateDATE)).append("\n");
-    sb.append("    bankStatementsRowID: ").append(toIndentedString(bankStatementsRowID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
+    sb.append("    textdoc: ").append(toIndentedString(textdoc)).append("\n");
+    sb.append("    authcode: ").append(toIndentedString(authcode)).append("\n");
+    sb.append("    transactiondata: ").append(toIndentedString(transactiondata)).append("\n");
+    sb.append("    bankpayment: ").append(toIndentedString(bankpayment)).append("\n");
+    sb.append("    banktariff: ").append(toIndentedString(banktariff)).append("\n");
+    sb.append("    bankpaymentdatedate: ").append(toIndentedString(bankpaymentdatedate)).append("\n");
+    sb.append("    bankstatementsrowId: ").append(toIndentedString(bankstatementsrowId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

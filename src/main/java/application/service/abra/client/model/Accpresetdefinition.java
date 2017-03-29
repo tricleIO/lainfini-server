@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,78 +36,114 @@ import java.util.Objects;
 /**
  * Accpresetdefinition
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Accpresetdefinition   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Accpresetdefinitionrow> rows = new ArrayList<Accpresetdefinitionrow>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("DocumentType")
-  private String documentType = null;
+  @SerializedName("documenttype")
+  private String documenttype = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Basic")
+  @SerializedName("basic")
   private Boolean basic = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("SplitAmountDefs")
-  private List<Accpresetdefinitionsplitamountrow> splitAmountDefs = new ArrayList<Accpresetdefinitionsplitamountrow>();
+  @SerializedName("splitamountdefs")
+  private List<Accpresetdefinitionsplitamountrow> splitamountdefs = new ArrayList<Accpresetdefinitionsplitamountrow>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Accpresetdefinition displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Accpresetdefinition id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Accpresetdefinition classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Accpresetdefinition objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Accpresetdefinition rows(List<Accpresetdefinitionrow> rows) {
@@ -121,10 +157,10 @@ public class Accpresetdefinition   {
   }
 
    /**
-   * Řádky; kolekce BO Účetní předkontace - řádek [nepersistentní položka]
+   * Řádky; kolekce bo Účetní předkontace - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Účetní předkontace - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo Účetní předkontace - řádek [nepersistentní položka]")
   public List<Accpresetdefinitionrow> getRows() {
     return rows;
   }
@@ -139,10 +175,10 @@ public class Accpresetdefinition   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -151,40 +187,40 @@ public class Accpresetdefinition   {
     this.hidden = hidden;
   }
 
-  public Accpresetdefinition documentType(String documentType) {
-    this.documentType = documentType;
+  public Accpresetdefinition documenttype(String documenttype) {
+    this.documenttype = documenttype;
     return this;
   }
 
    /**
-   * Typ dokladu [persistentní položka]
-   * @return documentType
+   * typ dokladu [persistentní položka]
+   * @return documenttype
   **/
-  @ApiModelProperty(example = "null", value = "Typ dokladu [persistentní položka]")
-  public String getDocumentType() {
-    return documentType;
+  @ApiModelProperty(example = "null", value = "typ dokladu [persistentní položka]")
+  public String getDocumenttype() {
+    return documenttype;
   }
 
-  public void setDocumentType(String documentType) {
-    this.documentType = documentType;
+  public void setDocumenttype(String documenttype) {
+    this.documenttype = documenttype;
   }
 
-  public Accpresetdefinition docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Accpresetdefinition docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * Řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "Řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
   public Accpresetdefinition name(String name) {
@@ -193,10 +229,10 @@ public class Accpresetdefinition   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -211,10 +247,10 @@ public class Accpresetdefinition   {
   }
 
    /**
-   * Základní [persistentní položka]
+   * základní [persistentní položka]
    * @return basic
   **/
-  @ApiModelProperty(example = "null", value = "Základní [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "základní [persistentní položka]")
   public Boolean getBasic() {
     return basic;
   }
@@ -229,10 +265,10 @@ public class Accpresetdefinition   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -241,27 +277,27 @@ public class Accpresetdefinition   {
     this.code = code;
   }
 
-  public Accpresetdefinition splitAmountDefs(List<Accpresetdefinitionsplitamountrow> splitAmountDefs) {
-    this.splitAmountDefs = splitAmountDefs;
+  public Accpresetdefinition splitamountdefs(List<Accpresetdefinitionsplitamountrow> splitamountdefs) {
+    this.splitamountdefs = splitamountdefs;
     return this;
   }
 
-  public Accpresetdefinition addSplitAmountDefsItem(Accpresetdefinitionsplitamountrow splitAmountDefsItem) {
-    this.splitAmountDefs.add(splitAmountDefsItem);
+  public Accpresetdefinition addSplitamountdefsItem(Accpresetdefinitionsplitamountrow splitamountdefsItem) {
+    this.splitamountdefs.add(splitamountdefsItem);
     return this;
   }
 
    /**
-   * Rozúčtování částek; kolekce BO Účetní předkontace - řádek rozúčtování částek [nepersistentní položka]
-   * @return splitAmountDefs
+   * rozúčtování částek; kolekce bo Účetní předkontace - řádek rozúčtování částek [nepersistentní položka]
+   * @return splitamountdefs
   **/
-  @ApiModelProperty(example = "null", value = "Rozúčtování částek; kolekce BO Účetní předkontace - řádek rozúčtování částek [nepersistentní položka]")
-  public List<Accpresetdefinitionsplitamountrow> getSplitAmountDefs() {
-    return splitAmountDefs;
+  @ApiModelProperty(example = "null", value = "rozúčtování částek; kolekce bo Účetní předkontace - řádek rozúčtování částek [nepersistentní položka]")
+  public List<Accpresetdefinitionsplitamountrow> getSplitamountdefs() {
+    return splitamountdefs;
   }
 
-  public void setSplitAmountDefs(List<Accpresetdefinitionsplitamountrow> splitAmountDefs) {
-    this.splitAmountDefs = splitAmountDefs;
+  public void setSplitamountdefs(List<Accpresetdefinitionsplitamountrow> splitamountdefs) {
+    this.splitamountdefs = splitamountdefs;
   }
 
 
@@ -274,23 +310,23 @@ public class Accpresetdefinition   {
       return false;
     }
     Accpresetdefinition accpresetdefinition = (Accpresetdefinition) o;
-    return Objects.equals(this.displayName, accpresetdefinition.displayName) &&
-        Objects.equals(this.ID, accpresetdefinition.ID) &&
-        Objects.equals(this.classID, accpresetdefinition.classID) &&
-        Objects.equals(this.objVersion, accpresetdefinition.objVersion) &&
+    return Objects.equals(this.displayname, accpresetdefinition.displayname) &&
+        Objects.equals(this.id, accpresetdefinition.id) &&
+        Objects.equals(this.classid, accpresetdefinition.classid) &&
+        Objects.equals(this.objversion, accpresetdefinition.objversion) &&
         Objects.equals(this.rows, accpresetdefinition.rows) &&
         Objects.equals(this.hidden, accpresetdefinition.hidden) &&
-        Objects.equals(this.documentType, accpresetdefinition.documentType) &&
-        Objects.equals(this.docQueueID, accpresetdefinition.docQueueID) &&
+        Objects.equals(this.documenttype, accpresetdefinition.documenttype) &&
+        Objects.equals(this.docqueueId, accpresetdefinition.docqueueId) &&
         Objects.equals(this.name, accpresetdefinition.name) &&
         Objects.equals(this.basic, accpresetdefinition.basic) &&
         Objects.equals(this.code, accpresetdefinition.code) &&
-        Objects.equals(this.splitAmountDefs, accpresetdefinition.splitAmountDefs);
+        Objects.equals(this.splitamountdefs, accpresetdefinition.splitamountdefs);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, documentType, docQueueID, name, basic, code, splitAmountDefs);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, documenttype, docqueueId, name, basic, code, splitamountdefs);
   }
 
   @Override
@@ -298,18 +334,18 @@ public class Accpresetdefinition   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Accpresetdefinition {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    documentType: ").append(toIndentedString(documentType)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
+    sb.append("    documenttype: ").append(toIndentedString(documenttype)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    basic: ").append(toIndentedString(basic)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
-    sb.append("    splitAmountDefs: ").append(toIndentedString(splitAmountDefs)).append("\n");
+    sb.append("    splitamountdefs: ").append(toIndentedString(splitamountdefs)).append("\n");
     sb.append("}");
     return sb.toString();
   }

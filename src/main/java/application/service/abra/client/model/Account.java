@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,90 +34,126 @@ import java.util.Objects;
 /**
  * Account
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Account   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("AccountType")
-  private String accountType = null;
+  @SerializedName("accounttype")
+  private String accounttype = null;
 
-  @SerializedName("Taxable")
+  @SerializedName("taxable")
   private Boolean taxable = null;
 
-  @SerializedName("Short")
+  @SerializedName("short")
   private Boolean _short = null;
 
-  @SerializedName("AccountTypeName")
-  private String accountTypeName = null;
+  @SerializedName("accounttypename")
+  private String accounttypename = null;
 
-  @SerializedName("IsIncomplete")
-  private Boolean isIncomplete = null;
+  @SerializedName("isincomplete")
+  private Boolean isincomplete = null;
 
-  @SerializedName("Transferable")
+  @SerializedName("transferable")
   private Boolean transferable = null;
 
-  @SerializedName("IsCostForProjectControl")
-  private Boolean isCostForProjectControl = null;
+  @SerializedName("iscostforprojectcontrol")
+  private Boolean iscostforprojectcontrol = null;
 
-  @SerializedName("IsRevenueForProjectControl")
-  private Boolean isRevenueForProjectControl = null;
+  @SerializedName("isrevenueforprojectcontrol")
+  private Boolean isrevenueforprojectcontrol = null;
 
-  @SerializedName("TypeOfActivity")
-  private Integer typeOfActivity = null;
+  @SerializedName("typeofactivity")
+  private Integer typeofactivity = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Account displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Account id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Account classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Account objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Account hidden(Boolean hidden) {
@@ -126,10 +162,10 @@ public class Account   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -162,10 +198,10 @@ public class Account   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -174,22 +210,22 @@ public class Account   {
     this.name = name;
   }
 
-  public Account accountType(String accountType) {
-    this.accountType = accountType;
+  public Account accounttype(String accounttype) {
+    this.accounttype = accounttype;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return accountType
+   * typ [persistentní položka]
+   * @return accounttype
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public String getAccountType() {
-    return accountType;
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public String getAccounttype() {
+    return accounttype;
   }
 
-  public void setAccountType(String accountType) {
-    this.accountType = accountType;
+  public void setAccounttype(String accounttype) {
+    this.accounttype = accounttype;
   }
 
   public Account taxable(Boolean taxable) {
@@ -198,10 +234,10 @@ public class Account   {
   }
 
    /**
-   * Daňový [persistentní položka]
+   * daňový [persistentní položka]
    * @return taxable
   **/
-  @ApiModelProperty(example = "null", value = "Daňový [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "daňový [persistentní položka]")
   public Boolean getTaxable() {
     return taxable;
   }
@@ -216,10 +252,10 @@ public class Account   {
   }
 
    /**
-   * Krátkodobý [persistentní položka]
+   * krátkodobý [persistentní položka]
    * @return _short
   **/
-  @ApiModelProperty(example = "null", value = "Krátkodobý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "krátkodobý [persistentní položka]")
   public Boolean getShort() {
     return _short;
   }
@@ -228,40 +264,40 @@ public class Account   {
     this._short = _short;
   }
 
-  public Account accountTypeName(String accountTypeName) {
-    this.accountTypeName = accountTypeName;
+  public Account accounttypename(String accounttypename) {
+    this.accounttypename = accounttypename;
     return this;
   }
 
    /**
-   * Typ účtu
-   * @return accountTypeName
+   * typ účtu
+   * @return accounttypename
   **/
-  @ApiModelProperty(example = "null", value = "Typ účtu")
-  public String getAccountTypeName() {
-    return accountTypeName;
+  @ApiModelProperty(example = "null", value = "typ účtu")
+  public String getAccounttypename() {
+    return accounttypename;
   }
 
-  public void setAccountTypeName(String accountTypeName) {
-    this.accountTypeName = accountTypeName;
+  public void setAccounttypename(String accounttypename) {
+    this.accounttypename = accounttypename;
   }
 
-  public Account isIncomplete(Boolean isIncomplete) {
-    this.isIncomplete = isIncomplete;
+  public Account isincomplete(Boolean isincomplete) {
+    this.isincomplete = isincomplete;
     return this;
   }
 
    /**
-   * Neúplný [persistentní položka]
-   * @return isIncomplete
+   * neúplný [persistentní položka]
+   * @return isincomplete
   **/
-  @ApiModelProperty(example = "null", value = "Neúplný [persistentní položka]")
-  public Boolean getIsIncomplete() {
-    return isIncomplete;
+  @ApiModelProperty(example = "null", value = "neúplný [persistentní položka]")
+  public Boolean getIsincomplete() {
+    return isincomplete;
   }
 
-  public void setIsIncomplete(Boolean isIncomplete) {
-    this.isIncomplete = isIncomplete;
+  public void setIsincomplete(Boolean isincomplete) {
+    this.isincomplete = isincomplete;
   }
 
   public Account transferable(Boolean transferable) {
@@ -270,10 +306,10 @@ public class Account   {
   }
 
    /**
-   * Přenášet koncové stavy [persistentní položka]
+   * přenášet koncové stavy [persistentní položka]
    * @return transferable
   **/
-  @ApiModelProperty(example = "null", value = "Přenášet koncové stavy [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "přenášet koncové stavy [persistentní položka]")
   public Boolean getTransferable() {
     return transferable;
   }
@@ -282,58 +318,58 @@ public class Account   {
     this.transferable = transferable;
   }
 
-  public Account isCostForProjectControl(Boolean isCostForProjectControl) {
-    this.isCostForProjectControl = isCostForProjectControl;
+  public Account iscostforprojectcontrol(Boolean iscostforprojectcontrol) {
+    this.iscostforprojectcontrol = iscostforprojectcontrol;
     return this;
   }
 
    /**
-   * Náklad proj.ř. [persistentní položka]
-   * @return isCostForProjectControl
+   * náklad proj.ř. [persistentní položka]
+   * @return iscostforprojectcontrol
   **/
-  @ApiModelProperty(example = "null", value = "Náklad proj.ř. [persistentní položka]")
-  public Boolean getIsCostForProjectControl() {
-    return isCostForProjectControl;
+  @ApiModelProperty(example = "null", value = "náklad proj.ř. [persistentní položka]")
+  public Boolean getIscostforprojectcontrol() {
+    return iscostforprojectcontrol;
   }
 
-  public void setIsCostForProjectControl(Boolean isCostForProjectControl) {
-    this.isCostForProjectControl = isCostForProjectControl;
+  public void setIscostforprojectcontrol(Boolean iscostforprojectcontrol) {
+    this.iscostforprojectcontrol = iscostforprojectcontrol;
   }
 
-  public Account isRevenueForProjectControl(Boolean isRevenueForProjectControl) {
-    this.isRevenueForProjectControl = isRevenueForProjectControl;
+  public Account isrevenueforprojectcontrol(Boolean isrevenueforprojectcontrol) {
+    this.isrevenueforprojectcontrol = isrevenueforprojectcontrol;
     return this;
   }
 
    /**
-   * Výnos proj.ř. [persistentní položka]
-   * @return isRevenueForProjectControl
+   * výnos proj.ř. [persistentní položka]
+   * @return isrevenueforprojectcontrol
   **/
-  @ApiModelProperty(example = "null", value = "Výnos proj.ř. [persistentní položka]")
-  public Boolean getIsRevenueForProjectControl() {
-    return isRevenueForProjectControl;
+  @ApiModelProperty(example = "null", value = "výnos proj.ř. [persistentní položka]")
+  public Boolean getIsrevenueforprojectcontrol() {
+    return isrevenueforprojectcontrol;
   }
 
-  public void setIsRevenueForProjectControl(Boolean isRevenueForProjectControl) {
-    this.isRevenueForProjectControl = isRevenueForProjectControl;
+  public void setIsrevenueforprojectcontrol(Boolean isrevenueforprojectcontrol) {
+    this.isrevenueforprojectcontrol = isrevenueforprojectcontrol;
   }
 
-  public Account typeOfActivity(Integer typeOfActivity) {
-    this.typeOfActivity = typeOfActivity;
+  public Account typeofactivity(Integer typeofactivity) {
+    this.typeofactivity = typeofactivity;
     return this;
   }
 
    /**
-   * Ekonomická činnost [persistentní položka]
-   * @return typeOfActivity
+   * ekonomická činnost [persistentní položka]
+   * @return typeofactivity
   **/
-  @ApiModelProperty(example = "null", value = "Ekonomická činnost [persistentní položka]")
-  public Integer getTypeOfActivity() {
-    return typeOfActivity;
+  @ApiModelProperty(example = "null", value = "ekonomická činnost [persistentní položka]")
+  public Integer getTypeofactivity() {
+    return typeofactivity;
   }
 
-  public void setTypeOfActivity(Integer typeOfActivity) {
-    this.typeOfActivity = typeOfActivity;
+  public void setTypeofactivity(Integer typeofactivity) {
+    this.typeofactivity = typeofactivity;
   }
 
 
@@ -346,27 +382,27 @@ public class Account   {
       return false;
     }
     Account account = (Account) o;
-    return Objects.equals(this.displayName, account.displayName) &&
-        Objects.equals(this.ID, account.ID) &&
-        Objects.equals(this.classID, account.classID) &&
-        Objects.equals(this.objVersion, account.objVersion) &&
+    return Objects.equals(this.displayname, account.displayname) &&
+        Objects.equals(this.id, account.id) &&
+        Objects.equals(this.classid, account.classid) &&
+        Objects.equals(this.objversion, account.objversion) &&
         Objects.equals(this.hidden, account.hidden) &&
         Objects.equals(this.code, account.code) &&
         Objects.equals(this.name, account.name) &&
-        Objects.equals(this.accountType, account.accountType) &&
+        Objects.equals(this.accounttype, account.accounttype) &&
         Objects.equals(this.taxable, account.taxable) &&
         Objects.equals(this._short, account._short) &&
-        Objects.equals(this.accountTypeName, account.accountTypeName) &&
-        Objects.equals(this.isIncomplete, account.isIncomplete) &&
+        Objects.equals(this.accounttypename, account.accounttypename) &&
+        Objects.equals(this.isincomplete, account.isincomplete) &&
         Objects.equals(this.transferable, account.transferable) &&
-        Objects.equals(this.isCostForProjectControl, account.isCostForProjectControl) &&
-        Objects.equals(this.isRevenueForProjectControl, account.isRevenueForProjectControl) &&
-        Objects.equals(this.typeOfActivity, account.typeOfActivity);
+        Objects.equals(this.iscostforprojectcontrol, account.iscostforprojectcontrol) &&
+        Objects.equals(this.isrevenueforprojectcontrol, account.isrevenueforprojectcontrol) &&
+        Objects.equals(this.typeofactivity, account.typeofactivity);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, accountType, taxable, _short, accountTypeName, isIncomplete, transferable, isCostForProjectControl, isRevenueForProjectControl, typeOfActivity);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, accounttype, taxable, _short, accounttypename, isincomplete, transferable, iscostforprojectcontrol, isrevenueforprojectcontrol, typeofactivity);
   }
 
   @Override
@@ -374,22 +410,22 @@ public class Account   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Account {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    accountType: ").append(toIndentedString(accountType)).append("\n");
+    sb.append("    accounttype: ").append(toIndentedString(accounttype)).append("\n");
     sb.append("    taxable: ").append(toIndentedString(taxable)).append("\n");
     sb.append("    _short: ").append(toIndentedString(_short)).append("\n");
-    sb.append("    accountTypeName: ").append(toIndentedString(accountTypeName)).append("\n");
-    sb.append("    isIncomplete: ").append(toIndentedString(isIncomplete)).append("\n");
+    sb.append("    accounttypename: ").append(toIndentedString(accounttypename)).append("\n");
+    sb.append("    isincomplete: ").append(toIndentedString(isincomplete)).append("\n");
     sb.append("    transferable: ").append(toIndentedString(transferable)).append("\n");
-    sb.append("    isCostForProjectControl: ").append(toIndentedString(isCostForProjectControl)).append("\n");
-    sb.append("    isRevenueForProjectControl: ").append(toIndentedString(isRevenueForProjectControl)).append("\n");
-    sb.append("    typeOfActivity: ").append(toIndentedString(typeOfActivity)).append("\n");
+    sb.append("    iscostforprojectcontrol: ").append(toIndentedString(iscostforprojectcontrol)).append("\n");
+    sb.append("    isrevenueforprojectcontrol: ").append(toIndentedString(isrevenueforprojectcontrol)).append("\n");
+    sb.append("    typeofactivity: ").append(toIndentedString(typeofactivity)).append("\n");
     sb.append("}");
     return sb.toString();
   }

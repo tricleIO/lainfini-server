@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,78 +36,114 @@ import java.util.Objects;
 /**
  * Scmcolumnsdefinition
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Scmcolumnsdefinition   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Scmcolumnsdefinitionrow> rows = new ArrayList<Scmcolumnsdefinitionrow>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("DataSourceSet_ID")
-  private String dataSourceSetID = null;
+  @SerializedName("datasourceset_id")
+  private String datasourcesetId = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-  @SerializedName("Setting_ID")
-  private String settingID = null;
+  @SerializedName("setting_id")
+  private String settingId = null;
 
-  @SerializedName("Groups")
+  @SerializedName("groups")
   private List<Scmcolumnsdefinitiongroup> groups = new ArrayList<Scmcolumnsdefinitiongroup>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Scmcolumnsdefinition displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Scmcolumnsdefinition id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Scmcolumnsdefinition classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Scmcolumnsdefinition objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Scmcolumnsdefinition rows(List<Scmcolumnsdefinitionrow> rows) {
@@ -121,10 +157,10 @@ public class Scmcolumnsdefinition   {
   }
 
    /**
-   * Řádky; kolekce BO Řádek definice sloupců [nepersistentní položka]
+   * Řádky; kolekce bo Řádek definice sloupců [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Řádek definice sloupců [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo Řádek definice sloupců [nepersistentní položka]")
   public List<Scmcolumnsdefinitionrow> getRows() {
     return rows;
   }
@@ -139,10 +175,10 @@ public class Scmcolumnsdefinition   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -157,10 +193,10 @@ public class Scmcolumnsdefinition   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -175,10 +211,10 @@ public class Scmcolumnsdefinition   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -187,22 +223,22 @@ public class Scmcolumnsdefinition   {
     this.name = name;
   }
 
-  public Scmcolumnsdefinition dataSourceSetID(String dataSourceSetID) {
-    this.dataSourceSetID = dataSourceSetID;
+  public Scmcolumnsdefinition datasourcesetId(String datasourcesetId) {
+    this.datasourcesetId = datasourcesetId;
     return this;
   }
 
    /**
-   * Sada datových zdrojů; ID objektu Sada datových zdrojů [persistentní položka]
-   * @return dataSourceSetID
+   * sada datových zdrojů; id objektu sada datových zdrojů [persistentní položka]
+   * @return datasourcesetId
   **/
-  @ApiModelProperty(example = "null", value = "Sada datových zdrojů; ID objektu Sada datových zdrojů [persistentní položka]")
-  public String getDataSourceSetID() {
-    return dataSourceSetID;
+  @ApiModelProperty(example = "null", value = "sada datových zdrojů; id objektu sada datových zdrojů [persistentní položka]")
+  public String getDatasourcesetId() {
+    return datasourcesetId;
   }
 
-  public void setDataSourceSetID(String dataSourceSetID) {
-    this.dataSourceSetID = dataSourceSetID;
+  public void setDatasourcesetId(String datasourcesetId) {
+    this.datasourcesetId = datasourcesetId;
   }
 
   public Scmcolumnsdefinition system(Boolean system) {
@@ -211,10 +247,10 @@ public class Scmcolumnsdefinition   {
   }
 
    /**
-   * Systémová [persistentní položka]
+   * systémová [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Systémová [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "systémová [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -223,22 +259,22 @@ public class Scmcolumnsdefinition   {
     this.system = system;
   }
 
-  public Scmcolumnsdefinition settingID(String settingID) {
-    this.settingID = settingID;
+  public Scmcolumnsdefinition settingId(String settingId) {
+    this.settingId = settingId;
     return this;
   }
 
    /**
-   * Nastavení; ID objektu Nastavení SCM [persistentní položka]
-   * @return settingID
+   * nastavení; id objektu nastavení scm [persistentní položka]
+   * @return settingId
   **/
-  @ApiModelProperty(example = "null", value = "Nastavení; ID objektu Nastavení SCM [persistentní položka]")
-  public String getSettingID() {
-    return settingID;
+  @ApiModelProperty(example = "null", value = "nastavení; id objektu nastavení scm [persistentní položka]")
+  public String getSettingId() {
+    return settingId;
   }
 
-  public void setSettingID(String settingID) {
-    this.settingID = settingID;
+  public void setSettingId(String settingId) {
+    this.settingId = settingId;
   }
 
   public Scmcolumnsdefinition groups(List<Scmcolumnsdefinitiongroup> groups) {
@@ -252,10 +288,10 @@ public class Scmcolumnsdefinition   {
   }
 
    /**
-   * Skupiny; kolekce BO Skupina definice sloupců [nepersistentní položka]
+   * skupiny; kolekce bo skupina definice sloupců [nepersistentní položka]
    * @return groups
   **/
-  @ApiModelProperty(example = "null", value = "Skupiny; kolekce BO Skupina definice sloupců [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "skupiny; kolekce bo skupina definice sloupců [nepersistentní položka]")
   public List<Scmcolumnsdefinitiongroup> getGroups() {
     return groups;
   }
@@ -274,23 +310,23 @@ public class Scmcolumnsdefinition   {
       return false;
     }
     Scmcolumnsdefinition scmcolumnsdefinition = (Scmcolumnsdefinition) o;
-    return Objects.equals(this.displayName, scmcolumnsdefinition.displayName) &&
-        Objects.equals(this.ID, scmcolumnsdefinition.ID) &&
-        Objects.equals(this.classID, scmcolumnsdefinition.classID) &&
-        Objects.equals(this.objVersion, scmcolumnsdefinition.objVersion) &&
+    return Objects.equals(this.displayname, scmcolumnsdefinition.displayname) &&
+        Objects.equals(this.id, scmcolumnsdefinition.id) &&
+        Objects.equals(this.classid, scmcolumnsdefinition.classid) &&
+        Objects.equals(this.objversion, scmcolumnsdefinition.objversion) &&
         Objects.equals(this.rows, scmcolumnsdefinition.rows) &&
         Objects.equals(this.hidden, scmcolumnsdefinition.hidden) &&
         Objects.equals(this.code, scmcolumnsdefinition.code) &&
         Objects.equals(this.name, scmcolumnsdefinition.name) &&
-        Objects.equals(this.dataSourceSetID, scmcolumnsdefinition.dataSourceSetID) &&
+        Objects.equals(this.datasourcesetId, scmcolumnsdefinition.datasourcesetId) &&
         Objects.equals(this.system, scmcolumnsdefinition.system) &&
-        Objects.equals(this.settingID, scmcolumnsdefinition.settingID) &&
+        Objects.equals(this.settingId, scmcolumnsdefinition.settingId) &&
         Objects.equals(this.groups, scmcolumnsdefinition.groups);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, code, name, dataSourceSetID, system, settingID, groups);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, code, name, datasourcesetId, system, settingId, groups);
   }
 
   @Override
@@ -298,17 +334,17 @@ public class Scmcolumnsdefinition   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Scmcolumnsdefinition {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    dataSourceSetID: ").append(toIndentedString(dataSourceSetID)).append("\n");
+    sb.append("    datasourcesetId: ").append(toIndentedString(datasourcesetId)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
-    sb.append("    settingID: ").append(toIndentedString(settingID)).append("\n");
+    sb.append("    settingId: ").append(toIndentedString(settingId)).append("\n");
     sb.append("    groups: ").append(toIndentedString(groups)).append("\n");
     sb.append("}");
     return sb.toString();

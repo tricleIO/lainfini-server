@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,69 +36,105 @@ import java.util.Objects;
 /**
  * Wsservice
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wsservice   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Wsservicerow> rows = new ArrayList<Wsservicerow>();
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("GUID")
-  private String GUID = null;
+  @SerializedName("guid")
+  private String guid = null;
 
-  @SerializedName("ABRAUserName")
-  private String aBRAUserName = null;
+  @SerializedName("abrausername")
+  private String abrausername = null;
 
-  @SerializedName("ServiceKind")
-  private Integer serviceKind = null;
+  @SerializedName("servicekind")
+  private Integer servicekind = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Wsservice displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wsservice id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wsservice classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wsservice objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Wsservice rows(List<Wsservicerow> rows) {
@@ -112,10 +148,10 @@ public class Wsservice   {
   }
 
    /**
-   * Řádky; kolekce BO Webová služba - operace [nepersistentní položka]
+   * Řádky; kolekce bo webová služba - operace [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Webová služba - operace [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo webová služba - operace [nepersistentní položka]")
   public List<Wsservicerow> getRows() {
     return rows;
   }
@@ -130,10 +166,10 @@ public class Wsservice   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -142,58 +178,58 @@ public class Wsservice   {
     this.name = name;
   }
 
-  public Wsservice GUID(String GUID) {
-    this.GUID = GUID;
+  public Wsservice guid(String guid) {
+    this.guid = guid;
     return this;
   }
 
    /**
-   * Identifikace [persistentní položka]
-   * @return GUID
+   * identifikace [persistentní položka]
+   * @return guid
   **/
-  @ApiModelProperty(example = "null", value = "Identifikace [persistentní položka]")
-  public String getGUID() {
-    return GUID;
+  @ApiModelProperty(example = "null", value = "identifikace [persistentní položka]")
+  public String getGuid() {
+    return guid;
   }
 
-  public void setGUID(String GUID) {
-    this.GUID = GUID;
+  public void setGuid(String guid) {
+    this.guid = guid;
   }
 
-  public Wsservice aBRAUserName(String aBRAUserName) {
-    this.aBRAUserName = aBRAUserName;
+  public Wsservice abrausername(String abrausername) {
+    this.abrausername = abrausername;
     return this;
   }
 
    /**
-   * Uživatelské jméno [persistentní položka]
-   * @return aBRAUserName
+   * uživatelské jméno [persistentní položka]
+   * @return abrausername
   **/
-  @ApiModelProperty(example = "null", value = "Uživatelské jméno [persistentní položka]")
-  public String getABRAUserName() {
-    return aBRAUserName;
+  @ApiModelProperty(example = "null", value = "uživatelské jméno [persistentní položka]")
+  public String getAbrausername() {
+    return abrausername;
   }
 
-  public void setABRAUserName(String aBRAUserName) {
-    this.aBRAUserName = aBRAUserName;
+  public void setAbrausername(String abrausername) {
+    this.abrausername = abrausername;
   }
 
-  public Wsservice serviceKind(Integer serviceKind) {
-    this.serviceKind = serviceKind;
+  public Wsservice servicekind(Integer servicekind) {
+    this.servicekind = servicekind;
     return this;
   }
 
    /**
-   * Druh služby [persistentní položka]
-   * @return serviceKind
+   * druh služby [persistentní položka]
+   * @return servicekind
   **/
-  @ApiModelProperty(example = "null", value = "Druh služby [persistentní položka]")
-  public Integer getServiceKind() {
-    return serviceKind;
+  @ApiModelProperty(example = "null", value = "druh služby [persistentní položka]")
+  public Integer getServicekind() {
+    return servicekind;
   }
 
-  public void setServiceKind(Integer serviceKind) {
-    this.serviceKind = serviceKind;
+  public void setServicekind(Integer servicekind) {
+    this.servicekind = servicekind;
   }
 
 
@@ -206,20 +242,20 @@ public class Wsservice   {
       return false;
     }
     Wsservice wsservice = (Wsservice) o;
-    return Objects.equals(this.displayName, wsservice.displayName) &&
-        Objects.equals(this.ID, wsservice.ID) &&
-        Objects.equals(this.classID, wsservice.classID) &&
-        Objects.equals(this.objVersion, wsservice.objVersion) &&
+    return Objects.equals(this.displayname, wsservice.displayname) &&
+        Objects.equals(this.id, wsservice.id) &&
+        Objects.equals(this.classid, wsservice.classid) &&
+        Objects.equals(this.objversion, wsservice.objversion) &&
         Objects.equals(this.rows, wsservice.rows) &&
         Objects.equals(this.name, wsservice.name) &&
-        Objects.equals(this.GUID, wsservice.GUID) &&
-        Objects.equals(this.aBRAUserName, wsservice.aBRAUserName) &&
-        Objects.equals(this.serviceKind, wsservice.serviceKind);
+        Objects.equals(this.guid, wsservice.guid) &&
+        Objects.equals(this.abrausername, wsservice.abrausername) &&
+        Objects.equals(this.servicekind, wsservice.servicekind);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, name, GUID, aBRAUserName, serviceKind);
+    return Objects.hash(displayname, id, classid, objversion, rows, name, guid, abrausername, servicekind);
   }
 
   @Override
@@ -227,15 +263,15 @@ public class Wsservice   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wsservice {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    GUID: ").append(toIndentedString(GUID)).append("\n");
-    sb.append("    aBRAUserName: ").append(toIndentedString(aBRAUserName)).append("\n");
-    sb.append("    serviceKind: ").append(toIndentedString(serviceKind)).append("\n");
+    sb.append("    guid: ").append(toIndentedString(guid)).append("\n");
+    sb.append("    abrausername: ").append(toIndentedString(abrausername)).append("\n");
+    sb.append("    servicekind: ").append(toIndentedString(servicekind)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,93 +35,129 @@ import java.util.Objects;
 /**
  * Wikipage
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wikipage   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Title")
+  @SerializedName("title")
   private String title = null;
 
-  @SerializedName("CreatedAt$DATE")
-  private DateTime createdAtDATE = null;
+  @SerializedName("createdat$date")
+  private DateTime createdatdate = null;
 
-  @SerializedName("CorrectedAt$DATE")
-  private DateTime correctedAtDATE = null;
+  @SerializedName("correctedat$date")
+  private DateTime correctedatdate = null;
 
-  @SerializedName("Body")
+  @SerializedName("body")
   private String body = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("LockedBy_ID")
-  private String lockedByID = null;
+  @SerializedName("lockedby_id")
+  private String lockedbyId = null;
 
-  @SerializedName("Space_ID")
-  private String spaceID = null;
+  @SerializedName("space_id")
+  private String spaceId = null;
 
-  @SerializedName("Locked")
+  @SerializedName("locked")
   private Boolean locked = null;
 
-  @SerializedName("CamelCaseEnable")
-  private Boolean camelCaseEnable = null;
+  @SerializedName("camelcaseenable")
+  private Boolean camelcaseenable = null;
 
-  @SerializedName("UseSelfOptions")
-  private Boolean useSelfOptions = null;
+  @SerializedName("useselfoptions")
+  private Boolean useselfoptions = null;
 
-  @SerializedName("PageStyle_ID")
-  private String pageStyleID = null;
+  @SerializedName("pagestyle_id")
+  private String pagestyleId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Wikipage displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wikipage id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wikipage classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wikipage objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Wikipage name(String name) {
@@ -130,10 +166,10 @@ public class Wikipage   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -148,10 +184,10 @@ public class Wikipage   {
   }
 
    /**
-   * Titulek [persistentní položka]
+   * titulek [persistentní položka]
    * @return title
   **/
-  @ApiModelProperty(example = "null", value = "Titulek [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "titulek [persistentní položka]")
   public String getTitle() {
     return title;
   }
@@ -160,40 +196,40 @@ public class Wikipage   {
     this.title = title;
   }
 
-  public Wikipage createdAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public Wikipage createdatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
     return this;
   }
 
    /**
-   * Vytvořeno [persistentní položka]
-   * @return createdAtDATE
+   * vytvořeno [persistentní položka]
+   * @return createdatdate
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořeno [persistentní položka]")
-  public DateTime getCreatedAtDATE() {
-    return createdAtDATE;
+  @ApiModelProperty(example = "null", value = "vytvořeno [persistentní položka]")
+  public DateTime getCreatedatdate() {
+    return createdatdate;
   }
 
-  public void setCreatedAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public void setCreatedatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
   }
 
-  public Wikipage correctedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public Wikipage correctedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
     return this;
   }
 
    /**
-   * Opraveno [persistentní položka]
-   * @return correctedAtDATE
+   * opraveno [persistentní položka]
+   * @return correctedatdate
   **/
-  @ApiModelProperty(example = "null", value = "Opraveno [persistentní položka]")
-  public DateTime getCorrectedAtDATE() {
-    return correctedAtDATE;
+  @ApiModelProperty(example = "null", value = "opraveno [persistentní položka]")
+  public DateTime getCorrectedatdate() {
+    return correctedatdate;
   }
 
-  public void setCorrectedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public void setCorrectedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
   }
 
   public Wikipage body(String body) {
@@ -202,10 +238,10 @@ public class Wikipage   {
   }
 
    /**
-   * Tělo stránky [persistentní položka]
+   * tělo stránky [persistentní položka]
    * @return body
   **/
-  @ApiModelProperty(example = "null", value = "Tělo stránky [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "tělo stránky [persistentní položka]")
   public String getBody() {
     return body;
   }
@@ -214,76 +250,76 @@ public class Wikipage   {
     this.body = body;
   }
 
-  public Wikipage createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Wikipage createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Wikipage correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Wikipage correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Wikipage lockedByID(String lockedByID) {
-    this.lockedByID = lockedByID;
+  public Wikipage lockedbyId(String lockedbyId) {
+    this.lockedbyId = lockedbyId;
     return this;
   }
 
    /**
-   * Uzamkl; ID objektu Uživatel [persistentní položka]
-   * @return lockedByID
+   * uzamkl; id objektu uživatel [persistentní položka]
+   * @return lockedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Uzamkl; ID objektu Uživatel [persistentní položka]")
-  public String getLockedByID() {
-    return lockedByID;
+  @ApiModelProperty(example = "null", value = "uzamkl; id objektu uživatel [persistentní položka]")
+  public String getLockedbyId() {
+    return lockedbyId;
   }
 
-  public void setLockedByID(String lockedByID) {
-    this.lockedByID = lockedByID;
+  public void setLockedbyId(String lockedbyId) {
+    this.lockedbyId = lockedbyId;
   }
 
-  public Wikipage spaceID(String spaceID) {
-    this.spaceID = spaceID;
+  public Wikipage spaceId(String spaceId) {
+    this.spaceId = spaceId;
     return this;
   }
 
    /**
-   * Prostor; ID objektu Wiki prostor [persistentní položka]
-   * @return spaceID
+   * prostor; id objektu wiki prostor [persistentní položka]
+   * @return spaceId
   **/
-  @ApiModelProperty(example = "null", value = "Prostor; ID objektu Wiki prostor [persistentní položka]")
-  public String getSpaceID() {
-    return spaceID;
+  @ApiModelProperty(example = "null", value = "prostor; id objektu wiki prostor [persistentní položka]")
+  public String getSpaceId() {
+    return spaceId;
   }
 
-  public void setSpaceID(String spaceID) {
-    this.spaceID = spaceID;
+  public void setSpaceId(String spaceId) {
+    this.spaceId = spaceId;
   }
 
   public Wikipage locked(Boolean locked) {
@@ -292,10 +328,10 @@ public class Wikipage   {
   }
 
    /**
-   * Uzamčena [persistentní položka]
+   * uzamčena [persistentní položka]
    * @return locked
   **/
-  @ApiModelProperty(example = "null", value = "Uzamčena [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "uzamčena [persistentní položka]")
   public Boolean getLocked() {
     return locked;
   }
@@ -304,58 +340,58 @@ public class Wikipage   {
     this.locked = locked;
   }
 
-  public Wikipage camelCaseEnable(Boolean camelCaseEnable) {
-    this.camelCaseEnable = camelCaseEnable;
+  public Wikipage camelcaseenable(Boolean camelcaseenable) {
+    this.camelcaseenable = camelcaseenable;
     return this;
   }
 
    /**
-   * Rozlišovat CamelCase [persistentní položka]
-   * @return camelCaseEnable
+   * rozlišovat camelcase [persistentní položka]
+   * @return camelcaseenable
   **/
-  @ApiModelProperty(example = "null", value = "Rozlišovat CamelCase [persistentní položka]")
-  public Boolean getCamelCaseEnable() {
-    return camelCaseEnable;
+  @ApiModelProperty(example = "null", value = "rozlišovat camelcase [persistentní položka]")
+  public Boolean getCamelcaseenable() {
+    return camelcaseenable;
   }
 
-  public void setCamelCaseEnable(Boolean camelCaseEnable) {
-    this.camelCaseEnable = camelCaseEnable;
+  public void setCamelcaseenable(Boolean camelcaseenable) {
+    this.camelcaseenable = camelcaseenable;
   }
 
-  public Wikipage useSelfOptions(Boolean useSelfOptions) {
-    this.useSelfOptions = useSelfOptions;
+  public Wikipage useselfoptions(Boolean useselfoptions) {
+    this.useselfoptions = useselfoptions;
     return this;
   }
 
    /**
-   * Použít vlastní nastavení CamelCase [persistentní položka]
-   * @return useSelfOptions
+   * použít vlastní nastavení camelcase [persistentní položka]
+   * @return useselfoptions
   **/
-  @ApiModelProperty(example = "null", value = "Použít vlastní nastavení CamelCase [persistentní položka]")
-  public Boolean getUseSelfOptions() {
-    return useSelfOptions;
+  @ApiModelProperty(example = "null", value = "použít vlastní nastavení camelcase [persistentní položka]")
+  public Boolean getUseselfoptions() {
+    return useselfoptions;
   }
 
-  public void setUseSelfOptions(Boolean useSelfOptions) {
-    this.useSelfOptions = useSelfOptions;
+  public void setUseselfoptions(Boolean useselfoptions) {
+    this.useselfoptions = useselfoptions;
   }
 
-  public Wikipage pageStyleID(String pageStyleID) {
-    this.pageStyleID = pageStyleID;
+  public Wikipage pagestyleId(String pagestyleId) {
+    this.pagestyleId = pagestyleId;
     return this;
   }
 
    /**
-   * Styl stránky; ID objektu Systémový soubor stylů [persistentní položka]
-   * @return pageStyleID
+   * styl stránky; id objektu systémový soubor stylů [persistentní položka]
+   * @return pagestyleId
   **/
-  @ApiModelProperty(example = "null", value = "Styl stránky; ID objektu Systémový soubor stylů [persistentní položka]")
-  public String getPageStyleID() {
-    return pageStyleID;
+  @ApiModelProperty(example = "null", value = "styl stránky; id objektu systémový soubor stylů [persistentní položka]")
+  public String getPagestyleId() {
+    return pagestyleId;
   }
 
-  public void setPageStyleID(String pageStyleID) {
-    this.pageStyleID = pageStyleID;
+  public void setPagestyleId(String pagestyleId) {
+    this.pagestyleId = pagestyleId;
   }
 
 
@@ -368,28 +404,28 @@ public class Wikipage   {
       return false;
     }
     Wikipage wikipage = (Wikipage) o;
-    return Objects.equals(this.displayName, wikipage.displayName) &&
-        Objects.equals(this.ID, wikipage.ID) &&
-        Objects.equals(this.classID, wikipage.classID) &&
-        Objects.equals(this.objVersion, wikipage.objVersion) &&
+    return Objects.equals(this.displayname, wikipage.displayname) &&
+        Objects.equals(this.id, wikipage.id) &&
+        Objects.equals(this.classid, wikipage.classid) &&
+        Objects.equals(this.objversion, wikipage.objversion) &&
         Objects.equals(this.name, wikipage.name) &&
         Objects.equals(this.title, wikipage.title) &&
-        Objects.equals(this.createdAtDATE, wikipage.createdAtDATE) &&
-        Objects.equals(this.correctedAtDATE, wikipage.correctedAtDATE) &&
+        Objects.equals(this.createdatdate, wikipage.createdatdate) &&
+        Objects.equals(this.correctedatdate, wikipage.correctedatdate) &&
         Objects.equals(this.body, wikipage.body) &&
-        Objects.equals(this.createdByID, wikipage.createdByID) &&
-        Objects.equals(this.correctedByID, wikipage.correctedByID) &&
-        Objects.equals(this.lockedByID, wikipage.lockedByID) &&
-        Objects.equals(this.spaceID, wikipage.spaceID) &&
+        Objects.equals(this.createdbyId, wikipage.createdbyId) &&
+        Objects.equals(this.correctedbyId, wikipage.correctedbyId) &&
+        Objects.equals(this.lockedbyId, wikipage.lockedbyId) &&
+        Objects.equals(this.spaceId, wikipage.spaceId) &&
         Objects.equals(this.locked, wikipage.locked) &&
-        Objects.equals(this.camelCaseEnable, wikipage.camelCaseEnable) &&
-        Objects.equals(this.useSelfOptions, wikipage.useSelfOptions) &&
-        Objects.equals(this.pageStyleID, wikipage.pageStyleID);
+        Objects.equals(this.camelcaseenable, wikipage.camelcaseenable) &&
+        Objects.equals(this.useselfoptions, wikipage.useselfoptions) &&
+        Objects.equals(this.pagestyleId, wikipage.pagestyleId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, name, title, createdAtDATE, correctedAtDATE, body, createdByID, correctedByID, lockedByID, spaceID, locked, camelCaseEnable, useSelfOptions, pageStyleID);
+    return Objects.hash(displayname, id, classid, objversion, name, title, createdatdate, correctedatdate, body, createdbyId, correctedbyId, lockedbyId, spaceId, locked, camelcaseenable, useselfoptions, pagestyleId);
   }
 
   @Override
@@ -397,23 +433,23 @@ public class Wikipage   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wikipage {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
-    sb.append("    createdAtDATE: ").append(toIndentedString(createdAtDATE)).append("\n");
-    sb.append("    correctedAtDATE: ").append(toIndentedString(correctedAtDATE)).append("\n");
+    sb.append("    createdatdate: ").append(toIndentedString(createdatdate)).append("\n");
+    sb.append("    correctedatdate: ").append(toIndentedString(correctedatdate)).append("\n");
     sb.append("    body: ").append(toIndentedString(body)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    lockedByID: ").append(toIndentedString(lockedByID)).append("\n");
-    sb.append("    spaceID: ").append(toIndentedString(spaceID)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    lockedbyId: ").append(toIndentedString(lockedbyId)).append("\n");
+    sb.append("    spaceId: ").append(toIndentedString(spaceId)).append("\n");
     sb.append("    locked: ").append(toIndentedString(locked)).append("\n");
-    sb.append("    camelCaseEnable: ").append(toIndentedString(camelCaseEnable)).append("\n");
-    sb.append("    useSelfOptions: ").append(toIndentedString(useSelfOptions)).append("\n");
-    sb.append("    pageStyleID: ").append(toIndentedString(pageStyleID)).append("\n");
+    sb.append("    camelcaseenable: ").append(toIndentedString(camelcaseenable)).append("\n");
+    sb.append("    useselfoptions: ").append(toIndentedString(useselfoptions)).append("\n");
+    sb.append("    pagestyleId: ").append(toIndentedString(pagestyleId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

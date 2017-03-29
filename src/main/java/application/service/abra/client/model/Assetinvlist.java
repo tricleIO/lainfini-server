@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,155 +36,200 @@ import java.util.Objects;
 /**
  * Assetinvlist
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Assetinvlist   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Committee_ID")
-  private String committeeID = null;
+  @SerializedName("committee_id")
+  private String committeeId = null;
 
-  @SerializedName("RestrictionRows")
-  private List<Assetinvlistrestriction> restrictionRows = new ArrayList<Assetinvlistrestriction>();
+  @SerializedName("restrictionrows")
+  private List<Assetinvlistrestriction> restrictionrows = new ArrayList<Assetinvlistrestriction>();
 
-  @SerializedName("IncludedAssetTypes")
-  private Integer includedAssetTypes = null;
+  @SerializedName("includedassettypes")
+  private Integer includedassettypes = null;
 
-  @SerializedName("IncludedAssetTypeAsText")
-  private String includedAssetTypeAsText = null;
+  @SerializedName("includedassettypeastext")
+  private String includedassettypeastext = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Inventura majetku [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Inventura majetku [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Assetinvlist committeeID(String committeeID) {
-    this.committeeID = committeeID;
+  public Assetinvlist displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Inventarizační komise; ID objektu Inventarizační komise [persistentní položka]
-   * @return committeeID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Inventarizační komise; ID objektu Inventarizační komise [persistentní položka]")
-  public String getCommitteeID() {
-    return committeeID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setCommitteeID(String committeeID) {
-    this.committeeID = committeeID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Assetinvlist restrictionRows(List<Assetinvlistrestriction> restrictionRows) {
-    this.restrictionRows = restrictionRows;
-    return this;
-  }
-
-  public Assetinvlist addRestrictionRowsItem(Assetinvlistrestriction restrictionRowsItem) {
-    this.restrictionRows.add(restrictionRowsItem);
+  public Assetinvlist id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Omezení; kolekce BO Omezení seznamu inventury majetku [nepersistentní položka]
-   * @return restrictionRows
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Omezení; kolekce BO Omezení seznamu inventury majetku [nepersistentní položka]")
-  public List<Assetinvlistrestriction> getRestrictionRows() {
-    return restrictionRows;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setRestrictionRows(List<Assetinvlistrestriction> restrictionRows) {
-    this.restrictionRows = restrictionRows;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Assetinvlist includedAssetTypes(Integer includedAssetTypes) {
-    this.includedAssetTypes = includedAssetTypes;
+  public Assetinvlist classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Omezení
-   * @return includedAssetTypes
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Omezení")
-  public Integer getIncludedAssetTypes() {
-    return includedAssetTypes;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setIncludedAssetTypes(Integer includedAssetTypes) {
-    this.includedAssetTypes = includedAssetTypes;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Assetinvlist includedAssetTypeAsText(String includedAssetTypeAsText) {
-    this.includedAssetTypeAsText = includedAssetTypeAsText;
+  public Assetinvlist objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Omezení
-   * @return includedAssetTypeAsText
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Omezení")
-  public String getIncludedAssetTypeAsText() {
-    return includedAssetTypeAsText;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setIncludedAssetTypeAsText(String includedAssetTypeAsText) {
-    this.includedAssetTypeAsText = includedAssetTypeAsText;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Assetinvlist parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu inventura majetku [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu inventura majetku [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Assetinvlist committeeId(String committeeId) {
+    this.committeeId = committeeId;
+    return this;
+  }
+
+   /**
+   * inventarizační komise; id objektu inventarizační komise [persistentní položka]
+   * @return committeeId
+  **/
+  @ApiModelProperty(example = "null", value = "inventarizační komise; id objektu inventarizační komise [persistentní položka]")
+  public String getCommitteeId() {
+    return committeeId;
+  }
+
+  public void setCommitteeId(String committeeId) {
+    this.committeeId = committeeId;
+  }
+
+  public Assetinvlist restrictionrows(List<Assetinvlistrestriction> restrictionrows) {
+    this.restrictionrows = restrictionrows;
+    return this;
+  }
+
+  public Assetinvlist addRestrictionrowsItem(Assetinvlistrestriction restrictionrowsItem) {
+    this.restrictionrows.add(restrictionrowsItem);
+    return this;
+  }
+
+   /**
+   * omezení; kolekce bo omezení seznamu inventury majetku [nepersistentní položka]
+   * @return restrictionrows
+  **/
+  @ApiModelProperty(example = "null", value = "omezení; kolekce bo omezení seznamu inventury majetku [nepersistentní položka]")
+  public List<Assetinvlistrestriction> getRestrictionrows() {
+    return restrictionrows;
+  }
+
+  public void setRestrictionrows(List<Assetinvlistrestriction> restrictionrows) {
+    this.restrictionrows = restrictionrows;
+  }
+
+  public Assetinvlist includedassettypes(Integer includedassettypes) {
+    this.includedassettypes = includedassettypes;
+    return this;
+  }
+
+   /**
+   * omezení
+   * @return includedassettypes
+  **/
+  @ApiModelProperty(example = "null", value = "omezení")
+  public Integer getIncludedassettypes() {
+    return includedassettypes;
+  }
+
+  public void setIncludedassettypes(Integer includedassettypes) {
+    this.includedassettypes = includedassettypes;
+  }
+
+  public Assetinvlist includedassettypeastext(String includedassettypeastext) {
+    this.includedassettypeastext = includedassettypeastext;
+    return this;
+  }
+
+   /**
+   * omezení
+   * @return includedassettypeastext
+  **/
+  @ApiModelProperty(example = "null", value = "omezení")
+  public String getIncludedassettypeastext() {
+    return includedassettypeastext;
+  }
+
+  public void setIncludedassettypeastext(String includedassettypeastext) {
+    this.includedassettypeastext = includedassettypeastext;
   }
 
 
@@ -197,20 +242,20 @@ public class Assetinvlist   {
       return false;
     }
     Assetinvlist assetinvlist = (Assetinvlist) o;
-    return Objects.equals(this.displayName, assetinvlist.displayName) &&
-        Objects.equals(this.ID, assetinvlist.ID) &&
-        Objects.equals(this.classID, assetinvlist.classID) &&
-        Objects.equals(this.objVersion, assetinvlist.objVersion) &&
-        Objects.equals(this.parentID, assetinvlist.parentID) &&
-        Objects.equals(this.committeeID, assetinvlist.committeeID) &&
-        Objects.equals(this.restrictionRows, assetinvlist.restrictionRows) &&
-        Objects.equals(this.includedAssetTypes, assetinvlist.includedAssetTypes) &&
-        Objects.equals(this.includedAssetTypeAsText, assetinvlist.includedAssetTypeAsText);
+    return Objects.equals(this.displayname, assetinvlist.displayname) &&
+        Objects.equals(this.id, assetinvlist.id) &&
+        Objects.equals(this.classid, assetinvlist.classid) &&
+        Objects.equals(this.objversion, assetinvlist.objversion) &&
+        Objects.equals(this.parentId, assetinvlist.parentId) &&
+        Objects.equals(this.committeeId, assetinvlist.committeeId) &&
+        Objects.equals(this.restrictionrows, assetinvlist.restrictionrows) &&
+        Objects.equals(this.includedassettypes, assetinvlist.includedassettypes) &&
+        Objects.equals(this.includedassettypeastext, assetinvlist.includedassettypeastext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, committeeID, restrictionRows, includedAssetTypes, includedAssetTypeAsText);
+    return Objects.hash(displayname, id, classid, objversion, parentId, committeeId, restrictionrows, includedassettypes, includedassettypeastext);
   }
 
   @Override
@@ -218,15 +263,15 @@ public class Assetinvlist   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Assetinvlist {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    committeeID: ").append(toIndentedString(committeeID)).append("\n");
-    sb.append("    restrictionRows: ").append(toIndentedString(restrictionRows)).append("\n");
-    sb.append("    includedAssetTypes: ").append(toIndentedString(includedAssetTypes)).append("\n");
-    sb.append("    includedAssetTypeAsText: ").append(toIndentedString(includedAssetTypeAsText)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    committeeId: ").append(toIndentedString(committeeId)).append("\n");
+    sb.append("    restrictionrows: ").append(toIndentedString(restrictionrows)).append("\n");
+    sb.append("    includedassettypes: ").append(toIndentedString(includedassettypes)).append("\n");
+    sb.append("    includedassettypeastext: ").append(toIndentedString(includedassettypeastext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

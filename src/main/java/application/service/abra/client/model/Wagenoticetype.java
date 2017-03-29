@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,90 +34,126 @@ import java.util.Objects;
 /**
  * Wagenoticetype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wagenoticetype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("NoticeText")
-  private String noticeText = null;
+  @SerializedName("noticetext")
+  private String noticetext = null;
 
-  @SerializedName("Repeated")
+  @SerializedName("repeated")
   private Boolean repeated = null;
 
-  @SerializedName("PeriodType")
-  private Integer periodType = null;
+  @SerializedName("periodtype")
+  private Integer periodtype = null;
 
-  @SerializedName("PeriodLength")
-  private Integer periodLength = null;
+  @SerializedName("periodlength")
+  private Integer periodlength = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Wagenoticetype noticeText(String noticeText) {
-    this.noticeText = noticeText;
+  public Wagenoticetype displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Popis úkolu [persistentní položka]
-   * @return noticeText
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Popis úkolu [persistentní položka]")
-  public String getNoticeText() {
-    return noticeText;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setNoticeText(String noticeText) {
-    this.noticeText = noticeText;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wagenoticetype id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wagenoticetype classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wagenoticetype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Wagenoticetype noticetext(String noticetext) {
+    this.noticetext = noticetext;
+    return this;
+  }
+
+   /**
+   * popis úkolu [persistentní položka]
+   * @return noticetext
+  **/
+  @ApiModelProperty(example = "null", value = "popis úkolu [persistentní položka]")
+  public String getNoticetext() {
+    return noticetext;
+  }
+
+  public void setNoticetext(String noticetext) {
+    this.noticetext = noticetext;
   }
 
   public Wagenoticetype repeated(Boolean repeated) {
@@ -126,10 +162,10 @@ public class Wagenoticetype   {
   }
 
    /**
-   * Opakovat [persistentní položka]
+   * opakovat [persistentní položka]
    * @return repeated
   **/
-  @ApiModelProperty(example = "null", value = "Opakovat [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "opakovat [persistentní položka]")
   public Boolean getRepeated() {
     return repeated;
   }
@@ -138,40 +174,40 @@ public class Wagenoticetype   {
     this.repeated = repeated;
   }
 
-  public Wagenoticetype periodType(Integer periodType) {
-    this.periodType = periodType;
+  public Wagenoticetype periodtype(Integer periodtype) {
+    this.periodtype = periodtype;
     return this;
   }
 
    /**
-   * Typ opakování [persistentní položka]
-   * @return periodType
+   * typ opakování [persistentní položka]
+   * @return periodtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ opakování [persistentní položka]")
-  public Integer getPeriodType() {
-    return periodType;
+  @ApiModelProperty(example = "null", value = "typ opakování [persistentní položka]")
+  public Integer getPeriodtype() {
+    return periodtype;
   }
 
-  public void setPeriodType(Integer periodType) {
-    this.periodType = periodType;
+  public void setPeriodtype(Integer periodtype) {
+    this.periodtype = periodtype;
   }
 
-  public Wagenoticetype periodLength(Integer periodLength) {
-    this.periodLength = periodLength;
+  public Wagenoticetype periodlength(Integer periodlength) {
+    this.periodlength = periodlength;
     return this;
   }
 
    /**
-   * Délka [persistentní položka]
-   * @return periodLength
+   * délka [persistentní položka]
+   * @return periodlength
   **/
-  @ApiModelProperty(example = "null", value = "Délka [persistentní položka]")
-  public Integer getPeriodLength() {
-    return periodLength;
+  @ApiModelProperty(example = "null", value = "délka [persistentní položka]")
+  public Integer getPeriodlength() {
+    return periodlength;
   }
 
-  public void setPeriodLength(Integer periodLength) {
-    this.periodLength = periodLength;
+  public void setPeriodlength(Integer periodlength) {
+    this.periodlength = periodlength;
   }
 
   public Wagenoticetype code(String code) {
@@ -180,10 +216,10 @@ public class Wagenoticetype   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -198,10 +234,10 @@ public class Wagenoticetype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -220,21 +256,21 @@ public class Wagenoticetype   {
       return false;
     }
     Wagenoticetype wagenoticetype = (Wagenoticetype) o;
-    return Objects.equals(this.displayName, wagenoticetype.displayName) &&
-        Objects.equals(this.ID, wagenoticetype.ID) &&
-        Objects.equals(this.classID, wagenoticetype.classID) &&
-        Objects.equals(this.objVersion, wagenoticetype.objVersion) &&
-        Objects.equals(this.noticeText, wagenoticetype.noticeText) &&
+    return Objects.equals(this.displayname, wagenoticetype.displayname) &&
+        Objects.equals(this.id, wagenoticetype.id) &&
+        Objects.equals(this.classid, wagenoticetype.classid) &&
+        Objects.equals(this.objversion, wagenoticetype.objversion) &&
+        Objects.equals(this.noticetext, wagenoticetype.noticetext) &&
         Objects.equals(this.repeated, wagenoticetype.repeated) &&
-        Objects.equals(this.periodType, wagenoticetype.periodType) &&
-        Objects.equals(this.periodLength, wagenoticetype.periodLength) &&
+        Objects.equals(this.periodtype, wagenoticetype.periodtype) &&
+        Objects.equals(this.periodlength, wagenoticetype.periodlength) &&
         Objects.equals(this.code, wagenoticetype.code) &&
         Objects.equals(this.name, wagenoticetype.name);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, noticeText, repeated, periodType, periodLength, code, name);
+    return Objects.hash(displayname, id, classid, objversion, noticetext, repeated, periodtype, periodlength, code, name);
   }
 
   @Override
@@ -242,14 +278,14 @@ public class Wagenoticetype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wagenoticetype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    noticeText: ").append(toIndentedString(noticeText)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    noticetext: ").append(toIndentedString(noticetext)).append("\n");
     sb.append("    repeated: ").append(toIndentedString(repeated)).append("\n");
-    sb.append("    periodType: ").append(toIndentedString(periodType)).append("\n");
-    sb.append("    periodLength: ").append(toIndentedString(periodLength)).append("\n");
+    sb.append("    periodtype: ").append(toIndentedString(periodtype)).append("\n");
+    sb.append("    periodlength: ").append(toIndentedString(periodlength)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("}");

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,171 +35,216 @@ import java.util.Objects;
 /**
  * Plmjobordersphase
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmjobordersphase   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Phase_ID")
-  private String phaseID = null;
+  @SerializedName("phase_id")
+  private String phaseId = null;
 
-  @SerializedName("ReleasedAt$DATE")
-  private DateTime releasedAtDATE = null;
+  @SerializedName("releasedat$date")
+  private DateTime releasedatdate = null;
 
-  @SerializedName("ReleasedBy_ID")
-  private String releasedByID = null;
+  @SerializedName("releasedby_id")
+  private String releasedbyId = null;
 
-  @SerializedName("FinishedAt$DATE")
-  private DateTime finishedAtDATE = null;
+  @SerializedName("finishedat$date")
+  private DateTime finishedatdate = null;
 
-  @SerializedName("FinishedBy_ID")
-  private String finishedByID = null;
+  @SerializedName("finishedby_id")
+  private String finishedbyId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Výrobní příkaz [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Výrobní příkaz [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Plmjobordersphase phaseID(String phaseID) {
-    this.phaseID = phaseID;
+  public Plmjobordersphase displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Etapa; ID objektu Etapa [persistentní položka]
-   * @return phaseID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Etapa; ID objektu Etapa [persistentní položka]")
-  public String getPhaseID() {
-    return phaseID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPhaseID(String phaseID) {
-    this.phaseID = phaseID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Plmjobordersphase releasedAtDATE(DateTime releasedAtDATE) {
-    this.releasedAtDATE = releasedAtDATE;
+  public Plmjobordersphase id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Uvolněna [persistentní položka]
-   * @return releasedAtDATE
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Uvolněna [persistentní položka]")
-  public DateTime getReleasedAtDATE() {
-    return releasedAtDATE;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setReleasedAtDATE(DateTime releasedAtDATE) {
-    this.releasedAtDATE = releasedAtDATE;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Plmjobordersphase releasedByID(String releasedByID) {
-    this.releasedByID = releasedByID;
+  public Plmjobordersphase classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Uvolnil; ID objektu Uživatel [persistentní položka]
-   * @return releasedByID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Uvolnil; ID objektu Uživatel [persistentní položka]")
-  public String getReleasedByID() {
-    return releasedByID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setReleasedByID(String releasedByID) {
-    this.releasedByID = releasedByID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Plmjobordersphase finishedAtDATE(DateTime finishedAtDATE) {
-    this.finishedAtDATE = finishedAtDATE;
+  public Plmjobordersphase objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Ukončena [persistentní položka]
-   * @return finishedAtDATE
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Ukončena [persistentní položka]")
-  public DateTime getFinishedAtDATE() {
-    return finishedAtDATE;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setFinishedAtDATE(DateTime finishedAtDATE) {
-    this.finishedAtDATE = finishedAtDATE;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Plmjobordersphase finishedByID(String finishedByID) {
-    this.finishedByID = finishedByID;
+  public Plmjobordersphase parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Ukončil; ID objektu Uživatel [persistentní položka]
-   * @return finishedByID
+   * vlastník; id objektu výrobní příkaz [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Ukončil; ID objektu Uživatel [persistentní položka]")
-  public String getFinishedByID() {
-    return finishedByID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu výrobní příkaz [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setFinishedByID(String finishedByID) {
-    this.finishedByID = finishedByID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Plmjobordersphase phaseId(String phaseId) {
+    this.phaseId = phaseId;
+    return this;
+  }
+
+   /**
+   * etapa; id objektu etapa [persistentní položka]
+   * @return phaseId
+  **/
+  @ApiModelProperty(example = "null", value = "etapa; id objektu etapa [persistentní položka]")
+  public String getPhaseId() {
+    return phaseId;
+  }
+
+  public void setPhaseId(String phaseId) {
+    this.phaseId = phaseId;
+  }
+
+  public Plmjobordersphase releasedatdate(DateTime releasedatdate) {
+    this.releasedatdate = releasedatdate;
+    return this;
+  }
+
+   /**
+   * uvolněna [persistentní položka]
+   * @return releasedatdate
+  **/
+  @ApiModelProperty(example = "null", value = "uvolněna [persistentní položka]")
+  public DateTime getReleasedatdate() {
+    return releasedatdate;
+  }
+
+  public void setReleasedatdate(DateTime releasedatdate) {
+    this.releasedatdate = releasedatdate;
+  }
+
+  public Plmjobordersphase releasedbyId(String releasedbyId) {
+    this.releasedbyId = releasedbyId;
+    return this;
+  }
+
+   /**
+   * uvolnil; id objektu uživatel [persistentní položka]
+   * @return releasedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "uvolnil; id objektu uživatel [persistentní položka]")
+  public String getReleasedbyId() {
+    return releasedbyId;
+  }
+
+  public void setReleasedbyId(String releasedbyId) {
+    this.releasedbyId = releasedbyId;
+  }
+
+  public Plmjobordersphase finishedatdate(DateTime finishedatdate) {
+    this.finishedatdate = finishedatdate;
+    return this;
+  }
+
+   /**
+   * ukončena [persistentní položka]
+   * @return finishedatdate
+  **/
+  @ApiModelProperty(example = "null", value = "ukončena [persistentní položka]")
+  public DateTime getFinishedatdate() {
+    return finishedatdate;
+  }
+
+  public void setFinishedatdate(DateTime finishedatdate) {
+    this.finishedatdate = finishedatdate;
+  }
+
+  public Plmjobordersphase finishedbyId(String finishedbyId) {
+    this.finishedbyId = finishedbyId;
+    return this;
+  }
+
+   /**
+   * ukončil; id objektu uživatel [persistentní položka]
+   * @return finishedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "ukončil; id objektu uživatel [persistentní položka]")
+  public String getFinishedbyId() {
+    return finishedbyId;
+  }
+
+  public void setFinishedbyId(String finishedbyId) {
+    this.finishedbyId = finishedbyId;
   }
 
 
@@ -212,21 +257,21 @@ public class Plmjobordersphase   {
       return false;
     }
     Plmjobordersphase plmjobordersphase = (Plmjobordersphase) o;
-    return Objects.equals(this.displayName, plmjobordersphase.displayName) &&
-        Objects.equals(this.ID, plmjobordersphase.ID) &&
-        Objects.equals(this.classID, plmjobordersphase.classID) &&
-        Objects.equals(this.objVersion, plmjobordersphase.objVersion) &&
-        Objects.equals(this.parentID, plmjobordersphase.parentID) &&
-        Objects.equals(this.phaseID, plmjobordersphase.phaseID) &&
-        Objects.equals(this.releasedAtDATE, plmjobordersphase.releasedAtDATE) &&
-        Objects.equals(this.releasedByID, plmjobordersphase.releasedByID) &&
-        Objects.equals(this.finishedAtDATE, plmjobordersphase.finishedAtDATE) &&
-        Objects.equals(this.finishedByID, plmjobordersphase.finishedByID);
+    return Objects.equals(this.displayname, plmjobordersphase.displayname) &&
+        Objects.equals(this.id, plmjobordersphase.id) &&
+        Objects.equals(this.classid, plmjobordersphase.classid) &&
+        Objects.equals(this.objversion, plmjobordersphase.objversion) &&
+        Objects.equals(this.parentId, plmjobordersphase.parentId) &&
+        Objects.equals(this.phaseId, plmjobordersphase.phaseId) &&
+        Objects.equals(this.releasedatdate, plmjobordersphase.releasedatdate) &&
+        Objects.equals(this.releasedbyId, plmjobordersphase.releasedbyId) &&
+        Objects.equals(this.finishedatdate, plmjobordersphase.finishedatdate) &&
+        Objects.equals(this.finishedbyId, plmjobordersphase.finishedbyId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, phaseID, releasedAtDATE, releasedByID, finishedAtDATE, finishedByID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, phaseId, releasedatdate, releasedbyId, finishedatdate, finishedbyId);
   }
 
   @Override
@@ -234,16 +279,16 @@ public class Plmjobordersphase   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmjobordersphase {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    phaseID: ").append(toIndentedString(phaseID)).append("\n");
-    sb.append("    releasedAtDATE: ").append(toIndentedString(releasedAtDATE)).append("\n");
-    sb.append("    releasedByID: ").append(toIndentedString(releasedByID)).append("\n");
-    sb.append("    finishedAtDATE: ").append(toIndentedString(finishedAtDATE)).append("\n");
-    sb.append("    finishedByID: ").append(toIndentedString(finishedByID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    phaseId: ").append(toIndentedString(phaseId)).append("\n");
+    sb.append("    releasedatdate: ").append(toIndentedString(releasedatdate)).append("\n");
+    sb.append("    releasedbyId: ").append(toIndentedString(releasedbyId)).append("\n");
+    sb.append("    finishedatdate: ").append(toIndentedString(finishedatdate)).append("\n");
+    sb.append("    finishedbyId: ").append(toIndentedString(finishedbyId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

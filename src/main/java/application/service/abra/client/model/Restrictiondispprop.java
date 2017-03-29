@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,69 +36,105 @@ import java.util.Objects;
 /**
  * Restrictiondispprop
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Restrictiondispprop   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Restrictiondispproprow> rows = new ArrayList<Restrictiondispproprow>();
 
-  @SerializedName("Site")
+  @SerializedName("site")
   private String site = null;
 
-  @SerializedName("ProgramPoint")
-  private String programPoint = null;
+  @SerializedName("programpoint")
+  private String programpoint = null;
 
-  @SerializedName("Kind")
+  @SerializedName("kind")
   private Integer kind = null;
 
-  @SerializedName("User_ID")
-  private String userID = null;
+  @SerializedName("user_id")
+  private String userId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Restrictiondispprop displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Restrictiondispprop id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Restrictiondispprop classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Restrictiondispprop objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Restrictiondispprop rows(List<Restrictiondispproprow> rows) {
@@ -112,10 +148,10 @@ public class Restrictiondispprop   {
   }
 
    /**
-   * Řádky; kolekce BO Řádek vlastností zobrazení definic omezení [nepersistentní položka]
+   * Řádky; kolekce bo Řádek vlastností zobrazení definic omezení [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Řádek vlastností zobrazení definic omezení [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo Řádek vlastností zobrazení definic omezení [nepersistentní položka]")
   public List<Restrictiondispproprow> getRows() {
     return rows;
   }
@@ -130,10 +166,10 @@ public class Restrictiondispprop   {
   }
 
    /**
-   * Hnízdo [persistentní položka]
+   * hnízdo [persistentní položka]
    * @return site
   **/
-  @ApiModelProperty(example = "null", value = "Hnízdo [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "hnízdo [persistentní položka]")
   public String getSite() {
     return site;
   }
@@ -142,22 +178,22 @@ public class Restrictiondispprop   {
     this.site = site;
   }
 
-  public Restrictiondispprop programPoint(String programPoint) {
-    this.programPoint = programPoint;
+  public Restrictiondispprop programpoint(String programpoint) {
+    this.programpoint = programpoint;
     return this;
   }
 
    /**
-   * Místo v programu (program point) [persistentní položka]
-   * @return programPoint
+   * místo v programu (program point) [persistentní položka]
+   * @return programpoint
   **/
-  @ApiModelProperty(example = "null", value = "Místo v programu (program point) [persistentní položka]")
-  public String getProgramPoint() {
-    return programPoint;
+  @ApiModelProperty(example = "null", value = "místo v programu (program point) [persistentní položka]")
+  public String getProgrampoint() {
+    return programpoint;
   }
 
-  public void setProgramPoint(String programPoint) {
-    this.programPoint = programPoint;
+  public void setProgrampoint(String programpoint) {
+    this.programpoint = programpoint;
   }
 
   public Restrictiondispprop kind(Integer kind) {
@@ -166,10 +202,10 @@ public class Restrictiondispprop   {
   }
 
    /**
-   * Druh [persistentní položka]
+   * druh [persistentní položka]
    * @return kind
   **/
-  @ApiModelProperty(example = "null", value = "Druh [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "druh [persistentní položka]")
   public Integer getKind() {
     return kind;
   }
@@ -178,22 +214,22 @@ public class Restrictiondispprop   {
     this.kind = kind;
   }
 
-  public Restrictiondispprop userID(String userID) {
-    this.userID = userID;
+  public Restrictiondispprop userId(String userId) {
+    this.userId = userId;
     return this;
   }
 
    /**
-   * Uživatel; ID objektu Uživatel [persistentní položka]
-   * @return userID
+   * uživatel; id objektu uživatel [persistentní položka]
+   * @return userId
   **/
-  @ApiModelProperty(example = "null", value = "Uživatel; ID objektu Uživatel [persistentní položka]")
-  public String getUserID() {
-    return userID;
+  @ApiModelProperty(example = "null", value = "uživatel; id objektu uživatel [persistentní položka]")
+  public String getUserId() {
+    return userId;
   }
 
-  public void setUserID(String userID) {
-    this.userID = userID;
+  public void setUserId(String userId) {
+    this.userId = userId;
   }
 
 
@@ -206,20 +242,20 @@ public class Restrictiondispprop   {
       return false;
     }
     Restrictiondispprop restrictiondispprop = (Restrictiondispprop) o;
-    return Objects.equals(this.displayName, restrictiondispprop.displayName) &&
-        Objects.equals(this.ID, restrictiondispprop.ID) &&
-        Objects.equals(this.classID, restrictiondispprop.classID) &&
-        Objects.equals(this.objVersion, restrictiondispprop.objVersion) &&
+    return Objects.equals(this.displayname, restrictiondispprop.displayname) &&
+        Objects.equals(this.id, restrictiondispprop.id) &&
+        Objects.equals(this.classid, restrictiondispprop.classid) &&
+        Objects.equals(this.objversion, restrictiondispprop.objversion) &&
         Objects.equals(this.rows, restrictiondispprop.rows) &&
         Objects.equals(this.site, restrictiondispprop.site) &&
-        Objects.equals(this.programPoint, restrictiondispprop.programPoint) &&
+        Objects.equals(this.programpoint, restrictiondispprop.programpoint) &&
         Objects.equals(this.kind, restrictiondispprop.kind) &&
-        Objects.equals(this.userID, restrictiondispprop.userID);
+        Objects.equals(this.userId, restrictiondispprop.userId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, site, programPoint, kind, userID);
+    return Objects.hash(displayname, id, classid, objversion, rows, site, programpoint, kind, userId);
   }
 
   @Override
@@ -227,15 +263,15 @@ public class Restrictiondispprop   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Restrictiondispprop {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    site: ").append(toIndentedString(site)).append("\n");
-    sb.append("    programPoint: ").append(toIndentedString(programPoint)).append("\n");
+    sb.append("    programpoint: ").append(toIndentedString(programpoint)).append("\n");
     sb.append("    kind: ").append(toIndentedString(kind)).append("\n");
-    sb.append("    userID: ").append(toIndentedString(userID)).append("\n");
+    sb.append("    userId: ").append(toIndentedString(userId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,99 +35,144 @@ import java.util.Objects;
 /**
  * Currencyrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Currencyrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("DateOfChange$DATE")
-  private DateTime dateOfChangeDATE = null;
+  @SerializedName("dateofchange$date")
+  private DateTime dateofchangedate = null;
 
-  @SerializedName("Denomination")
+  @SerializedName("denomination")
   private Boolean denomination = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("Coef")
+  @SerializedName("coef")
   private Integer coef = null;
 
-  @SerializedName("FloatCoef")
-  private Double floatCoef = null;
+  @SerializedName("floatcoef")
+  private Double floatcoef = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Měna [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Měna [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Currencyrow dateOfChangeDATE(DateTime dateOfChangeDATE) {
-    this.dateOfChangeDATE = dateOfChangeDATE;
+  public Currencyrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum [persistentní položka]
-   * @return dateOfChangeDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum [persistentní položka]")
-  public DateTime getDateOfChangeDATE() {
-    return dateOfChangeDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateOfChangeDATE(DateTime dateOfChangeDATE) {
-    this.dateOfChangeDATE = dateOfChangeDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Currencyrow id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Currencyrow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Currencyrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Currencyrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu měna [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu měna [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Currencyrow dateofchangedate(DateTime dateofchangedate) {
+    this.dateofchangedate = dateofchangedate;
+    return this;
+  }
+
+   /**
+   * datum [persistentní položka]
+   * @return dateofchangedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum [persistentní položka]")
+  public DateTime getDateofchangedate() {
+    return dateofchangedate;
+  }
+
+  public void setDateofchangedate(DateTime dateofchangedate) {
+    this.dateofchangedate = dateofchangedate;
   }
 
   public Currencyrow denomination(Boolean denomination) {
@@ -136,10 +181,10 @@ public class Currencyrow   {
   }
 
    /**
-   * Denominace [persistentní položka]
+   * denominace [persistentní položka]
    * @return denomination
   **/
-  @ApiModelProperty(example = "null", value = "Denominace [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "denominace [persistentní položka]")
   public Boolean getDenomination() {
     return denomination;
   }
@@ -148,22 +193,22 @@ public class Currencyrow   {
     this.denomination = denomination;
   }
 
-  public Currencyrow currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Currencyrow currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
   public Currencyrow coef(Integer coef) {
@@ -172,10 +217,10 @@ public class Currencyrow   {
   }
 
    /**
-   * Komprimovaný koeficient [persistentní položka]
+   * komprimovaný koeficient [persistentní položka]
    * @return coef
   **/
-  @ApiModelProperty(example = "null", value = "Komprimovaný koeficient [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "komprimovaný koeficient [persistentní položka]")
   public Integer getCoef() {
     return coef;
   }
@@ -184,22 +229,22 @@ public class Currencyrow   {
     this.coef = coef;
   }
 
-  public Currencyrow floatCoef(Double floatCoef) {
-    this.floatCoef = floatCoef;
+  public Currencyrow floatcoef(Double floatcoef) {
+    this.floatcoef = floatcoef;
     return this;
   }
 
    /**
-   * Koeficient
-   * @return floatCoef
+   * koeficient
+   * @return floatcoef
   **/
-  @ApiModelProperty(example = "null", value = "Koeficient")
-  public Double getFloatCoef() {
-    return floatCoef;
+  @ApiModelProperty(example = "null", value = "koeficient")
+  public Double getFloatcoef() {
+    return floatcoef;
   }
 
-  public void setFloatCoef(Double floatCoef) {
-    this.floatCoef = floatCoef;
+  public void setFloatcoef(Double floatcoef) {
+    this.floatcoef = floatcoef;
   }
 
 
@@ -212,21 +257,21 @@ public class Currencyrow   {
       return false;
     }
     Currencyrow currencyrow = (Currencyrow) o;
-    return Objects.equals(this.displayName, currencyrow.displayName) &&
-        Objects.equals(this.ID, currencyrow.ID) &&
-        Objects.equals(this.classID, currencyrow.classID) &&
-        Objects.equals(this.objVersion, currencyrow.objVersion) &&
-        Objects.equals(this.parentID, currencyrow.parentID) &&
-        Objects.equals(this.dateOfChangeDATE, currencyrow.dateOfChangeDATE) &&
+    return Objects.equals(this.displayname, currencyrow.displayname) &&
+        Objects.equals(this.id, currencyrow.id) &&
+        Objects.equals(this.classid, currencyrow.classid) &&
+        Objects.equals(this.objversion, currencyrow.objversion) &&
+        Objects.equals(this.parentId, currencyrow.parentId) &&
+        Objects.equals(this.dateofchangedate, currencyrow.dateofchangedate) &&
         Objects.equals(this.denomination, currencyrow.denomination) &&
-        Objects.equals(this.currencyID, currencyrow.currencyID) &&
+        Objects.equals(this.currencyId, currencyrow.currencyId) &&
         Objects.equals(this.coef, currencyrow.coef) &&
-        Objects.equals(this.floatCoef, currencyrow.floatCoef);
+        Objects.equals(this.floatcoef, currencyrow.floatcoef);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, dateOfChangeDATE, denomination, currencyID, coef, floatCoef);
+    return Objects.hash(displayname, id, classid, objversion, parentId, dateofchangedate, denomination, currencyId, coef, floatcoef);
   }
 
   @Override
@@ -234,16 +279,16 @@ public class Currencyrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Currencyrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    dateOfChangeDATE: ").append(toIndentedString(dateOfChangeDATE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    dateofchangedate: ").append(toIndentedString(dateofchangedate)).append("\n");
     sb.append("    denomination: ").append(toIndentedString(denomination)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
     sb.append("    coef: ").append(toIndentedString(coef)).append("\n");
-    sb.append("    floatCoef: ").append(toIndentedString(floatCoef)).append("\n");
+    sb.append("    floatcoef: ").append(toIndentedString(floatcoef)).append("\n");
     sb.append("}");
     return sb.toString();
   }

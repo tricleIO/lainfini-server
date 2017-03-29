@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,84 +36,120 @@ import java.util.Objects;
 /**
  * Securityrole
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Securityrole   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ShortName")
-  private String shortName = null;
+  @SerializedName("shortname")
+  private String shortname = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Comment")
+  @SerializedName("comment")
   private String comment = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("DisplayParent")
-  private String displayParent = null;
+  @SerializedName("displayparent")
+  private String displayparent = null;
 
-  @SerializedName("IsImpersonal")
-  private Boolean isImpersonal = null;
+  @SerializedName("isimpersonal")
+  private Boolean isimpersonal = null;
 
-  @SerializedName("ShiftCalendar_ID")
-  private String shiftCalendarID = null;
+  @SerializedName("shiftcalendar_id")
+  private String shiftcalendarId = null;
 
-  @SerializedName("ExcludedTimes")
-  private List<Securityroleexcludedtime> excludedTimes = new ArrayList<Securityroleexcludedtime>();
+  @SerializedName("excludedtimes")
+  private List<Securityroleexcludedtime> excludedtimes = new ArrayList<Securityroleexcludedtime>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Securityrole displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Securityrole id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Securityrole classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Securityrole objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Securityrole hidden(Boolean hidden) {
@@ -122,10 +158,10 @@ public class Securityrole   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -140,10 +176,10 @@ public class Securityrole   {
   }
 
    /**
-   * Jméno [persistentní položka]
+   * jméno [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Jméno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "jméno [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -152,22 +188,22 @@ public class Securityrole   {
     this.name = name;
   }
 
-  public Securityrole shortName(String shortName) {
-    this.shortName = shortName;
+  public Securityrole shortname(String shortname) {
+    this.shortname = shortname;
     return this;
   }
 
    /**
-   * Zkratka [persistentní položka]
-   * @return shortName
+   * zkratka [persistentní položka]
+   * @return shortname
   **/
-  @ApiModelProperty(example = "null", value = "Zkratka [persistentní položka]")
-  public String getShortName() {
-    return shortName;
+  @ApiModelProperty(example = "null", value = "zkratka [persistentní položka]")
+  public String getShortname() {
+    return shortname;
   }
 
-  public void setShortName(String shortName) {
-    this.shortName = shortName;
+  public void setShortname(String shortname) {
+    this.shortname = shortname;
   }
 
   public Securityrole note(String note) {
@@ -176,10 +212,10 @@ public class Securityrole   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -194,10 +230,10 @@ public class Securityrole   {
   }
 
    /**
-   * Poznámka
+   * poznámka
    * @return comment
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka")
+  @ApiModelProperty(example = "null", value = "poznámka")
   public String getComment() {
     return comment;
   }
@@ -206,90 +242,99 @@ public class Securityrole   {
     this.comment = comment;
   }
 
-  public Securityrole parentID(String parentID) {
-    this.parentID = parentID;
+  public Securityrole parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Nadřízená r.; ID objektu Role [persistentní položka]
-   * @return parentID
+   * nadřízená r.; id objektu role [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízená r.; ID objektu Role [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "nadřízená r.; id objektu role [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setParentID(String parentID) {
-    this.parentID = parentID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-   /**
-   * Nadřízená(zobr.)
-   * @return displayParent
-  **/
-  @ApiModelProperty(example = "null", value = "Nadřízená(zobr.)")
-  public String getDisplayParent() {
-    return displayParent;
-  }
-
-  public Securityrole isImpersonal(Boolean isImpersonal) {
-    this.isImpersonal = isImpersonal;
+  public Securityrole displayparent(String displayparent) {
+    this.displayparent = displayparent;
     return this;
   }
 
    /**
-   * Nepersonální [persistentní položka]
-   * @return isImpersonal
+   * nadřízená(zobr.)
+   * @return displayparent
   **/
-  @ApiModelProperty(example = "null", value = "Nepersonální [persistentní položka]")
-  public Boolean getIsImpersonal() {
-    return isImpersonal;
+  @ApiModelProperty(example = "null", value = "nadřízená(zobr.)")
+  public String getDisplayparent() {
+    return displayparent;
   }
 
-  public void setIsImpersonal(Boolean isImpersonal) {
-    this.isImpersonal = isImpersonal;
+  public void setDisplayparent(String displayparent) {
+    this.displayparent = displayparent;
   }
 
-  public Securityrole shiftCalendarID(String shiftCalendarID) {
-    this.shiftCalendarID = shiftCalendarID;
+  public Securityrole isimpersonal(Boolean isimpersonal) {
+    this.isimpersonal = isimpersonal;
     return this;
   }
 
    /**
-   * Pracovní kalendář; ID objektu Pracovní kalendář [persistentní položka]
-   * @return shiftCalendarID
+   * nepersonální [persistentní položka]
+   * @return isimpersonal
   **/
-  @ApiModelProperty(example = "null", value = "Pracovní kalendář; ID objektu Pracovní kalendář [persistentní položka]")
-  public String getShiftCalendarID() {
-    return shiftCalendarID;
+  @ApiModelProperty(example = "null", value = "nepersonální [persistentní položka]")
+  public Boolean getIsimpersonal() {
+    return isimpersonal;
   }
 
-  public void setShiftCalendarID(String shiftCalendarID) {
-    this.shiftCalendarID = shiftCalendarID;
+  public void setIsimpersonal(Boolean isimpersonal) {
+    this.isimpersonal = isimpersonal;
   }
 
-  public Securityrole excludedTimes(List<Securityroleexcludedtime> excludedTimes) {
-    this.excludedTimes = excludedTimes;
-    return this;
-  }
-
-  public Securityrole addExcludedTimesItem(Securityroleexcludedtime excludedTimesItem) {
-    this.excludedTimes.add(excludedTimesItem);
+  public Securityrole shiftcalendarId(String shiftcalendarId) {
+    this.shiftcalendarId = shiftcalendarId;
     return this;
   }
 
    /**
-   * Vyloučené časy; kolekce BO Nepracovní časy rolí [nepersistentní položka]
-   * @return excludedTimes
+   * pracovní kalendář; id objektu pracovní kalendář [persistentní položka]
+   * @return shiftcalendarId
   **/
-  @ApiModelProperty(example = "null", value = "Vyloučené časy; kolekce BO Nepracovní časy rolí [nepersistentní položka]")
-  public List<Securityroleexcludedtime> getExcludedTimes() {
-    return excludedTimes;
+  @ApiModelProperty(example = "null", value = "pracovní kalendář; id objektu pracovní kalendář [persistentní položka]")
+  public String getShiftcalendarId() {
+    return shiftcalendarId;
   }
 
-  public void setExcludedTimes(List<Securityroleexcludedtime> excludedTimes) {
-    this.excludedTimes = excludedTimes;
+  public void setShiftcalendarId(String shiftcalendarId) {
+    this.shiftcalendarId = shiftcalendarId;
+  }
+
+  public Securityrole excludedtimes(List<Securityroleexcludedtime> excludedtimes) {
+    this.excludedtimes = excludedtimes;
+    return this;
+  }
+
+  public Securityrole addExcludedtimesItem(Securityroleexcludedtime excludedtimesItem) {
+    this.excludedtimes.add(excludedtimesItem);
+    return this;
+  }
+
+   /**
+   * vyloučené časy; kolekce bo nepracovní časy rolí [nepersistentní položka]
+   * @return excludedtimes
+  **/
+  @ApiModelProperty(example = "null", value = "vyloučené časy; kolekce bo nepracovní časy rolí [nepersistentní položka]")
+  public List<Securityroleexcludedtime> getExcludedtimes() {
+    return excludedtimes;
+  }
+
+  public void setExcludedtimes(List<Securityroleexcludedtime> excludedtimes) {
+    this.excludedtimes = excludedtimes;
   }
 
 
@@ -302,25 +347,25 @@ public class Securityrole   {
       return false;
     }
     Securityrole securityrole = (Securityrole) o;
-    return Objects.equals(this.displayName, securityrole.displayName) &&
-        Objects.equals(this.ID, securityrole.ID) &&
-        Objects.equals(this.classID, securityrole.classID) &&
-        Objects.equals(this.objVersion, securityrole.objVersion) &&
+    return Objects.equals(this.displayname, securityrole.displayname) &&
+        Objects.equals(this.id, securityrole.id) &&
+        Objects.equals(this.classid, securityrole.classid) &&
+        Objects.equals(this.objversion, securityrole.objversion) &&
         Objects.equals(this.hidden, securityrole.hidden) &&
         Objects.equals(this.name, securityrole.name) &&
-        Objects.equals(this.shortName, securityrole.shortName) &&
+        Objects.equals(this.shortname, securityrole.shortname) &&
         Objects.equals(this.note, securityrole.note) &&
         Objects.equals(this.comment, securityrole.comment) &&
-        Objects.equals(this.parentID, securityrole.parentID) &&
-        Objects.equals(this.displayParent, securityrole.displayParent) &&
-        Objects.equals(this.isImpersonal, securityrole.isImpersonal) &&
-        Objects.equals(this.shiftCalendarID, securityrole.shiftCalendarID) &&
-        Objects.equals(this.excludedTimes, securityrole.excludedTimes);
+        Objects.equals(this.parentId, securityrole.parentId) &&
+        Objects.equals(this.displayparent, securityrole.displayparent) &&
+        Objects.equals(this.isimpersonal, securityrole.isimpersonal) &&
+        Objects.equals(this.shiftcalendarId, securityrole.shiftcalendarId) &&
+        Objects.equals(this.excludedtimes, securityrole.excludedtimes);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, name, shortName, note, comment, parentID, displayParent, isImpersonal, shiftCalendarID, excludedTimes);
+    return Objects.hash(displayname, id, classid, objversion, hidden, name, shortname, note, comment, parentId, displayparent, isimpersonal, shiftcalendarId, excludedtimes);
   }
 
   @Override
@@ -328,20 +373,20 @@ public class Securityrole   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Securityrole {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    shortName: ").append(toIndentedString(shortName)).append("\n");
+    sb.append("    shortname: ").append(toIndentedString(shortname)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
     sb.append("    comment: ").append(toIndentedString(comment)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    displayParent: ").append(toIndentedString(displayParent)).append("\n");
-    sb.append("    isImpersonal: ").append(toIndentedString(isImpersonal)).append("\n");
-    sb.append("    shiftCalendarID: ").append(toIndentedString(shiftCalendarID)).append("\n");
-    sb.append("    excludedTimes: ").append(toIndentedString(excludedTimes)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    displayparent: ").append(toIndentedString(displayparent)).append("\n");
+    sb.append("    isimpersonal: ").append(toIndentedString(isimpersonal)).append("\n");
+    sb.append("    shiftcalendarId: ").append(toIndentedString(shiftcalendarId)).append("\n");
+    sb.append("    excludedtimes: ").append(toIndentedString(excludedtimes)).append("\n");
     sb.append("}");
     return sb.toString();
   }

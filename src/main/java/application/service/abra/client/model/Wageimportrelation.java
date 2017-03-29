@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,153 +34,198 @@ import java.util.Objects;
 /**
  * Wageimportrelation
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wageimportrelation   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("DestinationField")
-  private Integer destinationField = null;
+  @SerializedName("destinationfield")
+  private Integer destinationfield = null;
 
-  @SerializedName("SourceField")
-  private String sourceField = null;
+  @SerializedName("sourcefield")
+  private String sourcefield = null;
 
-  @SerializedName("WithExpression")
-  private Boolean withExpression = null;
+  @SerializedName("withexpression")
+  private Boolean withexpression = null;
 
-  @SerializedName("Expression")
+  @SerializedName("expression")
   private String expression = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Definice převodů dat [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Definice převodů dat [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Wageimportrelation posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Wageimportrelation displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Wageimportrelation destinationField(Integer destinationField) {
-    this.destinationField = destinationField;
+  public Wageimportrelation id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Do položky [persistentní položka]
-   * @return destinationField
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Do položky [persistentní položka]")
-  public Integer getDestinationField() {
-    return destinationField;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDestinationField(Integer destinationField) {
-    this.destinationField = destinationField;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Wageimportrelation sourceField(String sourceField) {
-    this.sourceField = sourceField;
+  public Wageimportrelation classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Z položky [persistentní položka]
-   * @return sourceField
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Z položky [persistentní položka]")
-  public String getSourceField() {
-    return sourceField;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setSourceField(String sourceField) {
-    this.sourceField = sourceField;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Wageimportrelation withExpression(Boolean withExpression) {
-    this.withExpression = withExpression;
+  public Wageimportrelation objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Výrazem [persistentní položka]
-   * @return withExpression
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Výrazem [persistentní položka]")
-  public Boolean getWithExpression() {
-    return withExpression;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setWithExpression(Boolean withExpression) {
-    this.withExpression = withExpression;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Wageimportrelation parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu definice převodů dat [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu definice převodů dat [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Wageimportrelation posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Wageimportrelation destinationfield(Integer destinationfield) {
+    this.destinationfield = destinationfield;
+    return this;
+  }
+
+   /**
+   * do položky [persistentní položka]
+   * @return destinationfield
+  **/
+  @ApiModelProperty(example = "null", value = "do položky [persistentní položka]")
+  public Integer getDestinationfield() {
+    return destinationfield;
+  }
+
+  public void setDestinationfield(Integer destinationfield) {
+    this.destinationfield = destinationfield;
+  }
+
+  public Wageimportrelation sourcefield(String sourcefield) {
+    this.sourcefield = sourcefield;
+    return this;
+  }
+
+   /**
+   * z položky [persistentní položka]
+   * @return sourcefield
+  **/
+  @ApiModelProperty(example = "null", value = "z položky [persistentní položka]")
+  public String getSourcefield() {
+    return sourcefield;
+  }
+
+  public void setSourcefield(String sourcefield) {
+    this.sourcefield = sourcefield;
+  }
+
+  public Wageimportrelation withexpression(Boolean withexpression) {
+    this.withexpression = withexpression;
+    return this;
+  }
+
+   /**
+   * výrazem [persistentní položka]
+   * @return withexpression
+  **/
+  @ApiModelProperty(example = "null", value = "výrazem [persistentní položka]")
+  public Boolean getWithexpression() {
+    return withexpression;
+  }
+
+  public void setWithexpression(Boolean withexpression) {
+    this.withexpression = withexpression;
   }
 
   public Wageimportrelation expression(String expression) {
@@ -189,10 +234,10 @@ public class Wageimportrelation   {
   }
 
    /**
-   * Výraz [persistentní položka]
+   * výraz [persistentní položka]
    * @return expression
   **/
-  @ApiModelProperty(example = "null", value = "Výraz [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "výraz [persistentní položka]")
   public String getExpression() {
     return expression;
   }
@@ -211,21 +256,21 @@ public class Wageimportrelation   {
       return false;
     }
     Wageimportrelation wageimportrelation = (Wageimportrelation) o;
-    return Objects.equals(this.displayName, wageimportrelation.displayName) &&
-        Objects.equals(this.ID, wageimportrelation.ID) &&
-        Objects.equals(this.classID, wageimportrelation.classID) &&
-        Objects.equals(this.objVersion, wageimportrelation.objVersion) &&
-        Objects.equals(this.parentID, wageimportrelation.parentID) &&
-        Objects.equals(this.posIndex, wageimportrelation.posIndex) &&
-        Objects.equals(this.destinationField, wageimportrelation.destinationField) &&
-        Objects.equals(this.sourceField, wageimportrelation.sourceField) &&
-        Objects.equals(this.withExpression, wageimportrelation.withExpression) &&
+    return Objects.equals(this.displayname, wageimportrelation.displayname) &&
+        Objects.equals(this.id, wageimportrelation.id) &&
+        Objects.equals(this.classid, wageimportrelation.classid) &&
+        Objects.equals(this.objversion, wageimportrelation.objversion) &&
+        Objects.equals(this.parentId, wageimportrelation.parentId) &&
+        Objects.equals(this.posindex, wageimportrelation.posindex) &&
+        Objects.equals(this.destinationfield, wageimportrelation.destinationfield) &&
+        Objects.equals(this.sourcefield, wageimportrelation.sourcefield) &&
+        Objects.equals(this.withexpression, wageimportrelation.withexpression) &&
         Objects.equals(this.expression, wageimportrelation.expression);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, destinationField, sourceField, withExpression, expression);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, destinationfield, sourcefield, withexpression, expression);
   }
 
   @Override
@@ -233,15 +278,15 @@ public class Wageimportrelation   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wageimportrelation {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    destinationField: ").append(toIndentedString(destinationField)).append("\n");
-    sb.append("    sourceField: ").append(toIndentedString(sourceField)).append("\n");
-    sb.append("    withExpression: ").append(toIndentedString(withExpression)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    destinationfield: ").append(toIndentedString(destinationfield)).append("\n");
+    sb.append("    sourcefield: ").append(toIndentedString(sourcefield)).append("\n");
+    sb.append("    withexpression: ").append(toIndentedString(withexpression)).append("\n");
     sb.append("    expression: ").append(toIndentedString(expression)).append("\n");
     sb.append("}");
     return sb.toString();

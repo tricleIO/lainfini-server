@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,192 +34,237 @@ import java.util.Objects;
 /**
  * Partialinvprotocolbatch
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Partialinvprotocolbatch   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("qUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("RealQuantity")
-  private Double realQuantity = null;
+  @SerializedName("realquantity")
+  private Double realquantity = null;
 
-  @SerializedName("MIPBatch_ID")
-  private String mIPBatchID = null;
+  @SerializedName("mipbatch_id")
+  private String mipbatchId = null;
 
-  @SerializedName("UnitDocumentedQuantity")
-  private Double unitDocumentedQuantity = null;
+  @SerializedName("unitdocumentedquantity")
+  private Double unitdocumentedquantity = null;
 
-  @SerializedName("UnitRealQuantity")
-  private Double unitRealQuantity = null;
+  @SerializedName("unitrealquantity")
+  private Double unitrealquantity = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Dílčí inventární protokol - řádek [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Dílčí inventární protokol - řádek [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Partialinvprotocolbatch qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Partialinvprotocolbatch displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Partialinvprotocolbatch unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Partialinvprotocolbatch id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return unitRate
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Partialinvprotocolbatch realQuantity(Double realQuantity) {
-    this.realQuantity = realQuantity;
+  public Partialinvprotocolbatch classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Zjištěné množství [persistentní položka]
-   * @return realQuantity
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Zjištěné množství [persistentní položka]")
-  public Double getRealQuantity() {
-    return realQuantity;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setRealQuantity(Double realQuantity) {
-    this.realQuantity = realQuantity;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Partialinvprotocolbatch mIPBatchID(String mIPBatchID) {
-    this.mIPBatchID = mIPBatchID;
+  public Partialinvprotocolbatch objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Šarže/sér. č.; ID objektu Hlavní inventární protokol - šarže [persistentní položka]
-   * @return mIPBatchID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Šarže/sér. č.; ID objektu Hlavní inventární protokol - šarže [persistentní položka]")
-  public String getMIPBatchID() {
-    return mIPBatchID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setMIPBatchID(String mIPBatchID) {
-    this.mIPBatchID = mIPBatchID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Partialinvprotocolbatch unitDocumentedQuantity(Double unitDocumentedQuantity) {
-    this.unitDocumentedQuantity = unitDocumentedQuantity;
+  public Partialinvprotocolbatch parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Evidenční množství
-   * @return unitDocumentedQuantity
+   * vlastník; id objektu dílčí inventární protokol - řádek [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Evidenční množství")
-  public Double getUnitDocumentedQuantity() {
-    return unitDocumentedQuantity;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu dílčí inventární protokol - řádek [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setUnitDocumentedQuantity(Double unitDocumentedQuantity) {
-    this.unitDocumentedQuantity = unitDocumentedQuantity;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Partialinvprotocolbatch unitRealQuantity(Double unitRealQuantity) {
-    this.unitRealQuantity = unitRealQuantity;
+  public Partialinvprotocolbatch qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Zjištěné množství
-   * @return unitRealQuantity
+   * jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Zjištěné množství")
-  public Double getUnitRealQuantity() {
-    return unitRealQuantity;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setUnitRealQuantity(Double unitRealQuantity) {
-    this.unitRealQuantity = unitRealQuantity;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
+  }
+
+  public Partialinvprotocolbatch unitrate(Double unitrate) {
+    this.unitrate = unitrate;
+    return this;
+  }
+
+   /**
+   * vztah [persistentní položka]
+   * @return unitrate
+  **/
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
+  }
+
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
+  }
+
+  public Partialinvprotocolbatch realquantity(Double realquantity) {
+    this.realquantity = realquantity;
+    return this;
+  }
+
+   /**
+   * zjištěné množství [persistentní položka]
+   * @return realquantity
+  **/
+  @ApiModelProperty(example = "null", value = "zjištěné množství [persistentní položka]")
+  public Double getRealquantity() {
+    return realquantity;
+  }
+
+  public void setRealquantity(Double realquantity) {
+    this.realquantity = realquantity;
+  }
+
+  public Partialinvprotocolbatch mipbatchId(String mipbatchId) {
+    this.mipbatchId = mipbatchId;
+    return this;
+  }
+
+   /**
+   * Šarže/sér. č.; id objektu hlavní inventární protokol - šarže [persistentní položka]
+   * @return mipbatchId
+  **/
+  @ApiModelProperty(example = "null", value = "Šarže/sér. č.; id objektu hlavní inventární protokol - šarže [persistentní položka]")
+  public String getMipbatchId() {
+    return mipbatchId;
+  }
+
+  public void setMipbatchId(String mipbatchId) {
+    this.mipbatchId = mipbatchId;
+  }
+
+  public Partialinvprotocolbatch unitdocumentedquantity(Double unitdocumentedquantity) {
+    this.unitdocumentedquantity = unitdocumentedquantity;
+    return this;
+  }
+
+   /**
+   * evidenční množství
+   * @return unitdocumentedquantity
+  **/
+  @ApiModelProperty(example = "null", value = "evidenční množství")
+  public Double getUnitdocumentedquantity() {
+    return unitdocumentedquantity;
+  }
+
+  public void setUnitdocumentedquantity(Double unitdocumentedquantity) {
+    this.unitdocumentedquantity = unitdocumentedquantity;
+  }
+
+  public Partialinvprotocolbatch unitrealquantity(Double unitrealquantity) {
+    this.unitrealquantity = unitrealquantity;
+    return this;
+  }
+
+   /**
+   * zjištěné množství
+   * @return unitrealquantity
+  **/
+  @ApiModelProperty(example = "null", value = "zjištěné množství")
+  public Double getUnitrealquantity() {
+    return unitrealquantity;
+  }
+
+  public void setUnitrealquantity(Double unitrealquantity) {
+    this.unitrealquantity = unitrealquantity;
   }
 
 
@@ -232,22 +277,22 @@ public class Partialinvprotocolbatch   {
       return false;
     }
     Partialinvprotocolbatch partialinvprotocolbatch = (Partialinvprotocolbatch) o;
-    return Objects.equals(this.displayName, partialinvprotocolbatch.displayName) &&
-        Objects.equals(this.ID, partialinvprotocolbatch.ID) &&
-        Objects.equals(this.classID, partialinvprotocolbatch.classID) &&
-        Objects.equals(this.objVersion, partialinvprotocolbatch.objVersion) &&
-        Objects.equals(this.parentID, partialinvprotocolbatch.parentID) &&
-        Objects.equals(this.qUnit, partialinvprotocolbatch.qUnit) &&
-        Objects.equals(this.unitRate, partialinvprotocolbatch.unitRate) &&
-        Objects.equals(this.realQuantity, partialinvprotocolbatch.realQuantity) &&
-        Objects.equals(this.mIPBatchID, partialinvprotocolbatch.mIPBatchID) &&
-        Objects.equals(this.unitDocumentedQuantity, partialinvprotocolbatch.unitDocumentedQuantity) &&
-        Objects.equals(this.unitRealQuantity, partialinvprotocolbatch.unitRealQuantity);
+    return Objects.equals(this.displayname, partialinvprotocolbatch.displayname) &&
+        Objects.equals(this.id, partialinvprotocolbatch.id) &&
+        Objects.equals(this.classid, partialinvprotocolbatch.classid) &&
+        Objects.equals(this.objversion, partialinvprotocolbatch.objversion) &&
+        Objects.equals(this.parentId, partialinvprotocolbatch.parentId) &&
+        Objects.equals(this.qunit, partialinvprotocolbatch.qunit) &&
+        Objects.equals(this.unitrate, partialinvprotocolbatch.unitrate) &&
+        Objects.equals(this.realquantity, partialinvprotocolbatch.realquantity) &&
+        Objects.equals(this.mipbatchId, partialinvprotocolbatch.mipbatchId) &&
+        Objects.equals(this.unitdocumentedquantity, partialinvprotocolbatch.unitdocumentedquantity) &&
+        Objects.equals(this.unitrealquantity, partialinvprotocolbatch.unitrealquantity);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, qUnit, unitRate, realQuantity, mIPBatchID, unitDocumentedQuantity, unitRealQuantity);
+    return Objects.hash(displayname, id, classid, objversion, parentId, qunit, unitrate, realquantity, mipbatchId, unitdocumentedquantity, unitrealquantity);
   }
 
   @Override
@@ -255,17 +300,17 @@ public class Partialinvprotocolbatch   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Partialinvprotocolbatch {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    realQuantity: ").append(toIndentedString(realQuantity)).append("\n");
-    sb.append("    mIPBatchID: ").append(toIndentedString(mIPBatchID)).append("\n");
-    sb.append("    unitDocumentedQuantity: ").append(toIndentedString(unitDocumentedQuantity)).append("\n");
-    sb.append("    unitRealQuantity: ").append(toIndentedString(unitRealQuantity)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    realquantity: ").append(toIndentedString(realquantity)).append("\n");
+    sb.append("    mipbatchId: ").append(toIndentedString(mipbatchId)).append("\n");
+    sb.append("    unitdocumentedquantity: ").append(toIndentedString(unitdocumentedquantity)).append("\n");
+    sb.append("    unitrealquantity: ").append(toIndentedString(unitrealquantity)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,120 +34,165 @@ import java.util.Objects;
 /**
  * Plmjobordersroutinead
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmjobordersroutinead   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("AdditionalCosts_ID")
-  private String additionalCostsID = null;
+  @SerializedName("additionalcosts_id")
+  private String additionalcostsId = null;
 
-  @SerializedName("AmountTime")
-  private Double amountTime = null;
+  @SerializedName("amounttime")
+  private Double amounttime = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("SalaryCosts")
-  private Double salaryCosts = null;
+  @SerializedName("salarycosts")
+  private Double salarycosts = null;
 
-  @SerializedName("OverheadCosts")
-  private Double overheadCosts = null;
+  @SerializedName("overheadcosts")
+  private Double overheadcosts = null;
 
-  @SerializedName("GeneralExpense")
-  private Double generalExpense = null;
+  @SerializedName("generalexpense")
+  private Double generalexpense = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu VP - technologický postup [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu VP - technologický postup [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Plmjobordersroutinead additionalCostsID(String additionalCostsID) {
-    this.additionalCostsID = additionalCostsID;
+  public Plmjobordersroutinead displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Vedlejší pořizovací náklady; ID objektu Příjemka - Vedlejší pořizovací náklady [persistentní položka]
-   * @return additionalCostsID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vedlejší pořizovací náklady; ID objektu Příjemka - Vedlejší pořizovací náklady [persistentní položka]")
-  public String getAdditionalCostsID() {
-    return additionalCostsID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setAdditionalCostsID(String additionalCostsID) {
-    this.additionalCostsID = additionalCostsID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Plmjobordersroutinead amountTime(Double amountTime) {
-    this.amountTime = amountTime;
+  public Plmjobordersroutinead id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Doba trvání [persistentní položka]
-   * @return amountTime
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Doba trvání [persistentní položka]")
-  public Double getAmountTime() {
-    return amountTime;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setAmountTime(Double amountTime) {
-    this.amountTime = amountTime;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmjobordersroutinead classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmjobordersroutinead objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Plmjobordersroutinead parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu vp - technologický postup [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu vp - technologický postup [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Plmjobordersroutinead additionalcostsId(String additionalcostsId) {
+    this.additionalcostsId = additionalcostsId;
+    return this;
+  }
+
+   /**
+   * vedlejší pořizovací náklady; id objektu příjemka - vedlejší pořizovací náklady [persistentní položka]
+   * @return additionalcostsId
+  **/
+  @ApiModelProperty(example = "null", value = "vedlejší pořizovací náklady; id objektu příjemka - vedlejší pořizovací náklady [persistentní položka]")
+  public String getAdditionalcostsId() {
+    return additionalcostsId;
+  }
+
+  public void setAdditionalcostsId(String additionalcostsId) {
+    this.additionalcostsId = additionalcostsId;
+  }
+
+  public Plmjobordersroutinead amounttime(Double amounttime) {
+    this.amounttime = amounttime;
+    return this;
+  }
+
+   /**
+   * doba trvání [persistentní položka]
+   * @return amounttime
+  **/
+  @ApiModelProperty(example = "null", value = "doba trvání [persistentní položka]")
+  public Double getAmounttime() {
+    return amounttime;
+  }
+
+  public void setAmounttime(Double amounttime) {
+    this.amounttime = amounttime;
   }
 
   public Plmjobordersroutinead amount(Double amount) {
@@ -168,58 +213,58 @@ public class Plmjobordersroutinead   {
     this.amount = amount;
   }
 
-  public Plmjobordersroutinead salaryCosts(Double salaryCosts) {
-    this.salaryCosts = salaryCosts;
+  public Plmjobordersroutinead salarycosts(Double salarycosts) {
+    this.salarycosts = salarycosts;
     return this;
   }
 
    /**
-   * Mzdové náklady [persistentní položka]
-   * @return salaryCosts
+   * mzdové náklady [persistentní položka]
+   * @return salarycosts
   **/
-  @ApiModelProperty(example = "null", value = "Mzdové náklady [persistentní položka]")
-  public Double getSalaryCosts() {
-    return salaryCosts;
+  @ApiModelProperty(example = "null", value = "mzdové náklady [persistentní položka]")
+  public Double getSalarycosts() {
+    return salarycosts;
   }
 
-  public void setSalaryCosts(Double salaryCosts) {
-    this.salaryCosts = salaryCosts;
+  public void setSalarycosts(Double salarycosts) {
+    this.salarycosts = salarycosts;
   }
 
-  public Plmjobordersroutinead overheadCosts(Double overheadCosts) {
-    this.overheadCosts = overheadCosts;
+  public Plmjobordersroutinead overheadcosts(Double overheadcosts) {
+    this.overheadcosts = overheadcosts;
     return this;
   }
 
    /**
-   * Výrobní režie [persistentní položka]
-   * @return overheadCosts
+   * výrobní režie [persistentní položka]
+   * @return overheadcosts
   **/
-  @ApiModelProperty(example = "null", value = "Výrobní režie [persistentní položka]")
-  public Double getOverheadCosts() {
-    return overheadCosts;
+  @ApiModelProperty(example = "null", value = "výrobní režie [persistentní položka]")
+  public Double getOverheadcosts() {
+    return overheadcosts;
   }
 
-  public void setOverheadCosts(Double overheadCosts) {
-    this.overheadCosts = overheadCosts;
+  public void setOverheadcosts(Double overheadcosts) {
+    this.overheadcosts = overheadcosts;
   }
 
-  public Plmjobordersroutinead generalExpense(Double generalExpense) {
-    this.generalExpense = generalExpense;
+  public Plmjobordersroutinead generalexpense(Double generalexpense) {
+    this.generalexpense = generalexpense;
     return this;
   }
 
    /**
-   * Správní režie [persistentní položka]
-   * @return generalExpense
+   * správní režie [persistentní položka]
+   * @return generalexpense
   **/
-  @ApiModelProperty(example = "null", value = "Správní režie [persistentní položka]")
-  public Double getGeneralExpense() {
-    return generalExpense;
+  @ApiModelProperty(example = "null", value = "správní režie [persistentní položka]")
+  public Double getGeneralexpense() {
+    return generalexpense;
   }
 
-  public void setGeneralExpense(Double generalExpense) {
-    this.generalExpense = generalExpense;
+  public void setGeneralexpense(Double generalexpense) {
+    this.generalexpense = generalexpense;
   }
 
 
@@ -232,22 +277,22 @@ public class Plmjobordersroutinead   {
       return false;
     }
     Plmjobordersroutinead plmjobordersroutinead = (Plmjobordersroutinead) o;
-    return Objects.equals(this.displayName, plmjobordersroutinead.displayName) &&
-        Objects.equals(this.ID, plmjobordersroutinead.ID) &&
-        Objects.equals(this.classID, plmjobordersroutinead.classID) &&
-        Objects.equals(this.objVersion, plmjobordersroutinead.objVersion) &&
-        Objects.equals(this.parentID, plmjobordersroutinead.parentID) &&
-        Objects.equals(this.additionalCostsID, plmjobordersroutinead.additionalCostsID) &&
-        Objects.equals(this.amountTime, plmjobordersroutinead.amountTime) &&
+    return Objects.equals(this.displayname, plmjobordersroutinead.displayname) &&
+        Objects.equals(this.id, plmjobordersroutinead.id) &&
+        Objects.equals(this.classid, plmjobordersroutinead.classid) &&
+        Objects.equals(this.objversion, plmjobordersroutinead.objversion) &&
+        Objects.equals(this.parentId, plmjobordersroutinead.parentId) &&
+        Objects.equals(this.additionalcostsId, plmjobordersroutinead.additionalcostsId) &&
+        Objects.equals(this.amounttime, plmjobordersroutinead.amounttime) &&
         Objects.equals(this.amount, plmjobordersroutinead.amount) &&
-        Objects.equals(this.salaryCosts, plmjobordersroutinead.salaryCosts) &&
-        Objects.equals(this.overheadCosts, plmjobordersroutinead.overheadCosts) &&
-        Objects.equals(this.generalExpense, plmjobordersroutinead.generalExpense);
+        Objects.equals(this.salarycosts, plmjobordersroutinead.salarycosts) &&
+        Objects.equals(this.overheadcosts, plmjobordersroutinead.overheadcosts) &&
+        Objects.equals(this.generalexpense, plmjobordersroutinead.generalexpense);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, additionalCostsID, amountTime, amount, salaryCosts, overheadCosts, generalExpense);
+    return Objects.hash(displayname, id, classid, objversion, parentId, additionalcostsId, amounttime, amount, salarycosts, overheadcosts, generalexpense);
   }
 
   @Override
@@ -255,17 +300,17 @@ public class Plmjobordersroutinead   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmjobordersroutinead {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    additionalCostsID: ").append(toIndentedString(additionalCostsID)).append("\n");
-    sb.append("    amountTime: ").append(toIndentedString(amountTime)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    additionalcostsId: ").append(toIndentedString(additionalcostsId)).append("\n");
+    sb.append("    amounttime: ").append(toIndentedString(amounttime)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    salaryCosts: ").append(toIndentedString(salaryCosts)).append("\n");
-    sb.append("    overheadCosts: ").append(toIndentedString(overheadCosts)).append("\n");
-    sb.append("    generalExpense: ").append(toIndentedString(generalExpense)).append("\n");
+    sb.append("    salarycosts: ").append(toIndentedString(salarycosts)).append("\n");
+    sb.append("    overheadcosts: ").append(toIndentedString(overheadcosts)).append("\n");
+    sb.append("    generalexpense: ").append(toIndentedString(generalexpense)).append("\n");
     sb.append("}");
     return sb.toString();
   }

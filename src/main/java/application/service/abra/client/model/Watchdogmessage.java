@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,186 +35,222 @@ import java.util.Objects;
 /**
  * Watchdogmessage
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Watchdogmessage   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("WatchDogPoint_ID")
-  private String watchDogPointID = null;
+  @SerializedName("watchdogpoint_id")
+  private String watchdogpointId = null;
 
-  @SerializedName("FieldValues")
-  private byte[] fieldValues = null;
+  @SerializedName("fieldvalues")
+  private byte[] fieldvalues = null;
 
-  @SerializedName("CreatedAt$DATE")
-  private DateTime createdAtDATE = null;
+  @SerializedName("createdat$date")
+  private DateTime createdatdate = null;
 
-  @SerializedName("Object_ID")
-  private String objectID = null;
+  @SerializedName("object_id")
+  private String objectId = null;
 
-  @SerializedName("Object_CLSID")
-  private String objectCLSID = null;
+  @SerializedName("object_clsid")
+  private String objectClsid = null;
 
-  @SerializedName("FieldNames")
-  private String fieldNames = null;
+  @SerializedName("fieldnames")
+  private String fieldnames = null;
 
-  @SerializedName("Status")
+  @SerializedName("status")
   private Integer status = null;
 
-  @SerializedName("SentAt$DATE")
-  private DateTime sentAtDATE = null;
+  @SerializedName("sentat$date")
+  private DateTime sentatdate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Watchdogmessage watchDogPointID(String watchDogPointID) {
-    this.watchDogPointID = watchDogPointID;
+  public Watchdogmessage displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Kontrolní bod; ID objektu Kontrolní bod [persistentní položka]
-   * @return watchDogPointID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Kontrolní bod; ID objektu Kontrolní bod [persistentní položka]")
-  public String getWatchDogPointID() {
-    return watchDogPointID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setWatchDogPointID(String watchDogPointID) {
-    this.watchDogPointID = watchDogPointID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Watchdogmessage fieldValues(byte[] fieldValues) {
-    this.fieldValues = fieldValues;
+  public Watchdogmessage id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Data [persistentní položka]
-   * @return fieldValues
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Data [persistentní položka]")
-  public byte[] getFieldValues() {
-    return fieldValues;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setFieldValues(byte[] fieldValues) {
-    this.fieldValues = fieldValues;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Watchdogmessage createdAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public Watchdogmessage classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Vytvořeno [persistentní položka]
-   * @return createdAtDATE
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořeno [persistentní položka]")
-  public DateTime getCreatedAtDATE() {
-    return createdAtDATE;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setCreatedAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Watchdogmessage objectID(String objectID) {
-    this.objectID = objectID;
+  public Watchdogmessage objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Identifikace objektu [persistentní položka]
-   * @return objectID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Identifikace objektu [persistentní položka]")
-  public String getObjectID() {
-    return objectID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setObjectID(String objectID) {
-    this.objectID = objectID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Watchdogmessage objectCLSID(String objectCLSID) {
-    this.objectCLSID = objectCLSID;
+  public Watchdogmessage watchdogpointId(String watchdogpointId) {
+    this.watchdogpointId = watchdogpointId;
     return this;
   }
 
    /**
-   * Třída objektu [persistentní položka]
-   * @return objectCLSID
+   * kontrolní bod; id objektu kontrolní bod [persistentní položka]
+   * @return watchdogpointId
   **/
-  @ApiModelProperty(example = "null", value = "Třída objektu [persistentní položka]")
-  public String getObjectCLSID() {
-    return objectCLSID;
+  @ApiModelProperty(example = "null", value = "kontrolní bod; id objektu kontrolní bod [persistentní položka]")
+  public String getWatchdogpointId() {
+    return watchdogpointId;
   }
 
-  public void setObjectCLSID(String objectCLSID) {
-    this.objectCLSID = objectCLSID;
+  public void setWatchdogpointId(String watchdogpointId) {
+    this.watchdogpointId = watchdogpointId;
   }
 
-  public Watchdogmessage fieldNames(String fieldNames) {
-    this.fieldNames = fieldNames;
+  public Watchdogmessage fieldvalues(byte[] fieldvalues) {
+    this.fieldvalues = fieldvalues;
     return this;
   }
 
    /**
-   * Sloupce [persistentní položka]
-   * @return fieldNames
+   * data [persistentní položka]
+   * @return fieldvalues
   **/
-  @ApiModelProperty(example = "null", value = "Sloupce [persistentní položka]")
-  public String getFieldNames() {
-    return fieldNames;
+  @ApiModelProperty(example = "null", value = "data [persistentní položka]")
+  public byte[] getFieldvalues() {
+    return fieldvalues;
   }
 
-  public void setFieldNames(String fieldNames) {
-    this.fieldNames = fieldNames;
+  public void setFieldvalues(byte[] fieldvalues) {
+    this.fieldvalues = fieldvalues;
+  }
+
+  public Watchdogmessage createdatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
+    return this;
+  }
+
+   /**
+   * vytvořeno [persistentní položka]
+   * @return createdatdate
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořeno [persistentní položka]")
+  public DateTime getCreatedatdate() {
+    return createdatdate;
+  }
+
+  public void setCreatedatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
+  }
+
+  public Watchdogmessage objectId(String objectId) {
+    this.objectId = objectId;
+    return this;
+  }
+
+   /**
+   * identifikace objektu [persistentní položka]
+   * @return objectId
+  **/
+  @ApiModelProperty(example = "null", value = "identifikace objektu [persistentní položka]")
+  public String getObjectId() {
+    return objectId;
+  }
+
+  public void setObjectId(String objectId) {
+    this.objectId = objectId;
+  }
+
+  public Watchdogmessage objectClsid(String objectClsid) {
+    this.objectClsid = objectClsid;
+    return this;
+  }
+
+   /**
+   * třída objektu [persistentní položka]
+   * @return objectClsid
+  **/
+  @ApiModelProperty(example = "null", value = "třída objektu [persistentní položka]")
+  public String getObjectClsid() {
+    return objectClsid;
+  }
+
+  public void setObjectClsid(String objectClsid) {
+    this.objectClsid = objectClsid;
+  }
+
+  public Watchdogmessage fieldnames(String fieldnames) {
+    this.fieldnames = fieldnames;
+    return this;
+  }
+
+   /**
+   * sloupce [persistentní položka]
+   * @return fieldnames
+  **/
+  @ApiModelProperty(example = "null", value = "sloupce [persistentní položka]")
+  public String getFieldnames() {
+    return fieldnames;
+  }
+
+  public void setFieldnames(String fieldnames) {
+    this.fieldnames = fieldnames;
   }
 
   public Watchdogmessage status(Integer status) {
@@ -223,10 +259,10 @@ public class Watchdogmessage   {
   }
 
    /**
-   * Stav [persistentní položka]
+   * stav [persistentní položka]
    * @return status
   **/
-  @ApiModelProperty(example = "null", value = "Stav [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "stav [persistentní položka]")
   public Integer getStatus() {
     return status;
   }
@@ -235,22 +271,22 @@ public class Watchdogmessage   {
     this.status = status;
   }
 
-  public Watchdogmessage sentAtDATE(DateTime sentAtDATE) {
-    this.sentAtDATE = sentAtDATE;
+  public Watchdogmessage sentatdate(DateTime sentatdate) {
+    this.sentatdate = sentatdate;
     return this;
   }
 
    /**
-   * Odesláno [persistentní položka]
-   * @return sentAtDATE
+   * odesláno [persistentní položka]
+   * @return sentatdate
   **/
-  @ApiModelProperty(example = "null", value = "Odesláno [persistentní položka]")
-  public DateTime getSentAtDATE() {
-    return sentAtDATE;
+  @ApiModelProperty(example = "null", value = "odesláno [persistentní položka]")
+  public DateTime getSentatdate() {
+    return sentatdate;
   }
 
-  public void setSentAtDATE(DateTime sentAtDATE) {
-    this.sentAtDATE = sentAtDATE;
+  public void setSentatdate(DateTime sentatdate) {
+    this.sentatdate = sentatdate;
   }
 
 
@@ -263,23 +299,23 @@ public class Watchdogmessage   {
       return false;
     }
     Watchdogmessage watchdogmessage = (Watchdogmessage) o;
-    return Objects.equals(this.displayName, watchdogmessage.displayName) &&
-        Objects.equals(this.ID, watchdogmessage.ID) &&
-        Objects.equals(this.classID, watchdogmessage.classID) &&
-        Objects.equals(this.objVersion, watchdogmessage.objVersion) &&
-        Objects.equals(this.watchDogPointID, watchdogmessage.watchDogPointID) &&
-        Objects.equals(this.fieldValues, watchdogmessage.fieldValues) &&
-        Objects.equals(this.createdAtDATE, watchdogmessage.createdAtDATE) &&
-        Objects.equals(this.objectID, watchdogmessage.objectID) &&
-        Objects.equals(this.objectCLSID, watchdogmessage.objectCLSID) &&
-        Objects.equals(this.fieldNames, watchdogmessage.fieldNames) &&
+    return Objects.equals(this.displayname, watchdogmessage.displayname) &&
+        Objects.equals(this.id, watchdogmessage.id) &&
+        Objects.equals(this.classid, watchdogmessage.classid) &&
+        Objects.equals(this.objversion, watchdogmessage.objversion) &&
+        Objects.equals(this.watchdogpointId, watchdogmessage.watchdogpointId) &&
+        Objects.equals(this.fieldvalues, watchdogmessage.fieldvalues) &&
+        Objects.equals(this.createdatdate, watchdogmessage.createdatdate) &&
+        Objects.equals(this.objectId, watchdogmessage.objectId) &&
+        Objects.equals(this.objectClsid, watchdogmessage.objectClsid) &&
+        Objects.equals(this.fieldnames, watchdogmessage.fieldnames) &&
         Objects.equals(this.status, watchdogmessage.status) &&
-        Objects.equals(this.sentAtDATE, watchdogmessage.sentAtDATE);
+        Objects.equals(this.sentatdate, watchdogmessage.sentatdate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, watchDogPointID, fieldValues, createdAtDATE, objectID, objectCLSID, fieldNames, status, sentAtDATE);
+    return Objects.hash(displayname, id, classid, objversion, watchdogpointId, fieldvalues, createdatdate, objectId, objectClsid, fieldnames, status, sentatdate);
   }
 
   @Override
@@ -287,18 +323,18 @@ public class Watchdogmessage   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Watchdogmessage {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    watchDogPointID: ").append(toIndentedString(watchDogPointID)).append("\n");
-    sb.append("    fieldValues: ").append(toIndentedString(fieldValues)).append("\n");
-    sb.append("    createdAtDATE: ").append(toIndentedString(createdAtDATE)).append("\n");
-    sb.append("    objectID: ").append(toIndentedString(objectID)).append("\n");
-    sb.append("    objectCLSID: ").append(toIndentedString(objectCLSID)).append("\n");
-    sb.append("    fieldNames: ").append(toIndentedString(fieldNames)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    watchdogpointId: ").append(toIndentedString(watchdogpointId)).append("\n");
+    sb.append("    fieldvalues: ").append(toIndentedString(fieldvalues)).append("\n");
+    sb.append("    createdatdate: ").append(toIndentedString(createdatdate)).append("\n");
+    sb.append("    objectId: ").append(toIndentedString(objectId)).append("\n");
+    sb.append("    objectClsid: ").append(toIndentedString(objectClsid)).append("\n");
+    sb.append("    fieldnames: ").append(toIndentedString(fieldnames)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
-    sb.append("    sentAtDATE: ").append(toIndentedString(sentAtDATE)).append("\n");
+    sb.append("    sentatdate: ").append(toIndentedString(sentatdate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

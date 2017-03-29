@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,81 +36,117 @@ import java.util.Objects;
 /**
  * Restrictionusage
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Restrictionusage   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Notpositionedrowbusinessobject> rows = new ArrayList<Notpositionedrowbusinessobject>();
 
-  @SerializedName("RestrictionDefinition_ID")
-  private String restrictionDefinitionID = null;
+  @SerializedName("restrictiondefinition_id")
+  private String restrictiondefinitionId = null;
 
-  @SerializedName("Site")
+  @SerializedName("site")
   private String site = null;
 
-  @SerializedName("ProgramPoint")
-  private String programPoint = null;
+  @SerializedName("programpoint")
+  private String programpoint = null;
 
-  @SerializedName("Kind")
+  @SerializedName("kind")
   private Integer kind = null;
 
-  @SerializedName("User_ID")
-  private String userID = null;
+  @SerializedName("user_id")
+  private String userId = null;
 
-  @SerializedName("MonthOfUse")
-  private Integer monthOfUse = null;
+  @SerializedName("monthofuse")
+  private Integer monthofuse = null;
 
-  @SerializedName("YearOfUse")
-  private Integer yearOfUse = null;
+  @SerializedName("yearofuse")
+  private Integer yearofuse = null;
 
-  @SerializedName("NumberOfUse")
-  private Integer numberOfUse = null;
+  @SerializedName("numberofuse")
+  private Integer numberofuse = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Restrictionusage displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Restrictionusage id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Restrictionusage classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Restrictionusage objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Restrictionusage rows(List<Notpositionedrowbusinessobject> rows) {
@@ -124,10 +160,10 @@ public class Restrictionusage   {
   }
 
    /**
-   * Řádky; kolekce BO Řádek bez pořadí [nepersistentní položka]
+   * Řádky; kolekce bo Řádek bez pořadí [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Řádek bez pořadí [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo Řádek bez pořadí [nepersistentní položka]")
   public List<Notpositionedrowbusinessobject> getRows() {
     return rows;
   }
@@ -136,22 +172,22 @@ public class Restrictionusage   {
     this.rows = rows;
   }
 
-  public Restrictionusage restrictionDefinitionID(String restrictionDefinitionID) {
-    this.restrictionDefinitionID = restrictionDefinitionID;
+  public Restrictionusage restrictiondefinitionId(String restrictiondefinitionId) {
+    this.restrictiondefinitionId = restrictiondefinitionId;
     return this;
   }
 
    /**
-   * Definice omezení; ID objektu Definice omezení [persistentní položka]
-   * @return restrictionDefinitionID
+   * definice omezení; id objektu definice omezení [persistentní položka]
+   * @return restrictiondefinitionId
   **/
-  @ApiModelProperty(example = "null", value = "Definice omezení; ID objektu Definice omezení [persistentní položka]")
-  public String getRestrictionDefinitionID() {
-    return restrictionDefinitionID;
+  @ApiModelProperty(example = "null", value = "definice omezení; id objektu definice omezení [persistentní položka]")
+  public String getRestrictiondefinitionId() {
+    return restrictiondefinitionId;
   }
 
-  public void setRestrictionDefinitionID(String restrictionDefinitionID) {
-    this.restrictionDefinitionID = restrictionDefinitionID;
+  public void setRestrictiondefinitionId(String restrictiondefinitionId) {
+    this.restrictiondefinitionId = restrictiondefinitionId;
   }
 
   public Restrictionusage site(String site) {
@@ -160,10 +196,10 @@ public class Restrictionusage   {
   }
 
    /**
-   * Hnízdo [persistentní položka]
+   * hnízdo [persistentní položka]
    * @return site
   **/
-  @ApiModelProperty(example = "null", value = "Hnízdo [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "hnízdo [persistentní položka]")
   public String getSite() {
     return site;
   }
@@ -172,22 +208,22 @@ public class Restrictionusage   {
     this.site = site;
   }
 
-  public Restrictionusage programPoint(String programPoint) {
-    this.programPoint = programPoint;
+  public Restrictionusage programpoint(String programpoint) {
+    this.programpoint = programpoint;
     return this;
   }
 
    /**
-   * Místo v programu (program point) [persistentní položka]
-   * @return programPoint
+   * místo v programu (program point) [persistentní položka]
+   * @return programpoint
   **/
-  @ApiModelProperty(example = "null", value = "Místo v programu (program point) [persistentní položka]")
-  public String getProgramPoint() {
-    return programPoint;
+  @ApiModelProperty(example = "null", value = "místo v programu (program point) [persistentní položka]")
+  public String getProgrampoint() {
+    return programpoint;
   }
 
-  public void setProgramPoint(String programPoint) {
-    this.programPoint = programPoint;
+  public void setProgrampoint(String programpoint) {
+    this.programpoint = programpoint;
   }
 
   public Restrictionusage kind(Integer kind) {
@@ -196,10 +232,10 @@ public class Restrictionusage   {
   }
 
    /**
-   * Druh [persistentní položka]
+   * druh [persistentní položka]
    * @return kind
   **/
-  @ApiModelProperty(example = "null", value = "Druh [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "druh [persistentní položka]")
   public Integer getKind() {
     return kind;
   }
@@ -208,76 +244,76 @@ public class Restrictionusage   {
     this.kind = kind;
   }
 
-  public Restrictionusage userID(String userID) {
-    this.userID = userID;
+  public Restrictionusage userId(String userId) {
+    this.userId = userId;
     return this;
   }
 
    /**
-   * Uživatel; ID objektu Uživatel [persistentní položka]
-   * @return userID
+   * uživatel; id objektu uživatel [persistentní položka]
+   * @return userId
   **/
-  @ApiModelProperty(example = "null", value = "Uživatel; ID objektu Uživatel [persistentní položka]")
-  public String getUserID() {
-    return userID;
+  @ApiModelProperty(example = "null", value = "uživatel; id objektu uživatel [persistentní položka]")
+  public String getUserId() {
+    return userId;
   }
 
-  public void setUserID(String userID) {
-    this.userID = userID;
+  public void setUserId(String userId) {
+    this.userId = userId;
   }
 
-  public Restrictionusage monthOfUse(Integer monthOfUse) {
-    this.monthOfUse = monthOfUse;
+  public Restrictionusage monthofuse(Integer monthofuse) {
+    this.monthofuse = monthofuse;
     return this;
   }
 
    /**
-   * Měsíc použití [persistentní položka]
-   * @return monthOfUse
+   * měsíc použití [persistentní položka]
+   * @return monthofuse
   **/
-  @ApiModelProperty(example = "null", value = "Měsíc použití [persistentní položka]")
-  public Integer getMonthOfUse() {
-    return monthOfUse;
+  @ApiModelProperty(example = "null", value = "měsíc použití [persistentní položka]")
+  public Integer getMonthofuse() {
+    return monthofuse;
   }
 
-  public void setMonthOfUse(Integer monthOfUse) {
-    this.monthOfUse = monthOfUse;
+  public void setMonthofuse(Integer monthofuse) {
+    this.monthofuse = monthofuse;
   }
 
-  public Restrictionusage yearOfUse(Integer yearOfUse) {
-    this.yearOfUse = yearOfUse;
+  public Restrictionusage yearofuse(Integer yearofuse) {
+    this.yearofuse = yearofuse;
     return this;
   }
 
    /**
-   * Rok použití [persistentní položka]
-   * @return yearOfUse
+   * rok použití [persistentní položka]
+   * @return yearofuse
   **/
-  @ApiModelProperty(example = "null", value = "Rok použití [persistentní položka]")
-  public Integer getYearOfUse() {
-    return yearOfUse;
+  @ApiModelProperty(example = "null", value = "rok použití [persistentní položka]")
+  public Integer getYearofuse() {
+    return yearofuse;
   }
 
-  public void setYearOfUse(Integer yearOfUse) {
-    this.yearOfUse = yearOfUse;
+  public void setYearofuse(Integer yearofuse) {
+    this.yearofuse = yearofuse;
   }
 
-  public Restrictionusage numberOfUse(Integer numberOfUse) {
-    this.numberOfUse = numberOfUse;
+  public Restrictionusage numberofuse(Integer numberofuse) {
+    this.numberofuse = numberofuse;
     return this;
   }
 
    /**
-   * Počet použití [persistentní položka]
-   * @return numberOfUse
+   * počet použití [persistentní položka]
+   * @return numberofuse
   **/
-  @ApiModelProperty(example = "null", value = "Počet použití [persistentní položka]")
-  public Integer getNumberOfUse() {
-    return numberOfUse;
+  @ApiModelProperty(example = "null", value = "počet použití [persistentní položka]")
+  public Integer getNumberofuse() {
+    return numberofuse;
   }
 
-  public void setNumberOfUse(Integer numberOfUse) {
-    this.numberOfUse = numberOfUse;
+  public void setNumberofuse(Integer numberofuse) {
+    this.numberofuse = numberofuse;
   }
 
 
@@ -290,24 +326,24 @@ public class Restrictionusage   {
       return false;
     }
     Restrictionusage restrictionusage = (Restrictionusage) o;
-    return Objects.equals(this.displayName, restrictionusage.displayName) &&
-        Objects.equals(this.ID, restrictionusage.ID) &&
-        Objects.equals(this.classID, restrictionusage.classID) &&
-        Objects.equals(this.objVersion, restrictionusage.objVersion) &&
+    return Objects.equals(this.displayname, restrictionusage.displayname) &&
+        Objects.equals(this.id, restrictionusage.id) &&
+        Objects.equals(this.classid, restrictionusage.classid) &&
+        Objects.equals(this.objversion, restrictionusage.objversion) &&
         Objects.equals(this.rows, restrictionusage.rows) &&
-        Objects.equals(this.restrictionDefinitionID, restrictionusage.restrictionDefinitionID) &&
+        Objects.equals(this.restrictiondefinitionId, restrictionusage.restrictiondefinitionId) &&
         Objects.equals(this.site, restrictionusage.site) &&
-        Objects.equals(this.programPoint, restrictionusage.programPoint) &&
+        Objects.equals(this.programpoint, restrictionusage.programpoint) &&
         Objects.equals(this.kind, restrictionusage.kind) &&
-        Objects.equals(this.userID, restrictionusage.userID) &&
-        Objects.equals(this.monthOfUse, restrictionusage.monthOfUse) &&
-        Objects.equals(this.yearOfUse, restrictionusage.yearOfUse) &&
-        Objects.equals(this.numberOfUse, restrictionusage.numberOfUse);
+        Objects.equals(this.userId, restrictionusage.userId) &&
+        Objects.equals(this.monthofuse, restrictionusage.monthofuse) &&
+        Objects.equals(this.yearofuse, restrictionusage.yearofuse) &&
+        Objects.equals(this.numberofuse, restrictionusage.numberofuse);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, restrictionDefinitionID, site, programPoint, kind, userID, monthOfUse, yearOfUse, numberOfUse);
+    return Objects.hash(displayname, id, classid, objversion, rows, restrictiondefinitionId, site, programpoint, kind, userId, monthofuse, yearofuse, numberofuse);
   }
 
   @Override
@@ -315,19 +351,19 @@ public class Restrictionusage   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Restrictionusage {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    restrictionDefinitionID: ").append(toIndentedString(restrictionDefinitionID)).append("\n");
+    sb.append("    restrictiondefinitionId: ").append(toIndentedString(restrictiondefinitionId)).append("\n");
     sb.append("    site: ").append(toIndentedString(site)).append("\n");
-    sb.append("    programPoint: ").append(toIndentedString(programPoint)).append("\n");
+    sb.append("    programpoint: ").append(toIndentedString(programpoint)).append("\n");
     sb.append("    kind: ").append(toIndentedString(kind)).append("\n");
-    sb.append("    userID: ").append(toIndentedString(userID)).append("\n");
-    sb.append("    monthOfUse: ").append(toIndentedString(monthOfUse)).append("\n");
-    sb.append("    yearOfUse: ").append(toIndentedString(yearOfUse)).append("\n");
-    sb.append("    numberOfUse: ").append(toIndentedString(numberOfUse)).append("\n");
+    sb.append("    userId: ").append(toIndentedString(userId)).append("\n");
+    sb.append("    monthofuse: ").append(toIndentedString(monthofuse)).append("\n");
+    sb.append("    yearofuse: ").append(toIndentedString(yearofuse)).append("\n");
+    sb.append("    numberofuse: ").append(toIndentedString(numberofuse)).append("\n");
     sb.append("}");
     return sb.toString();
   }

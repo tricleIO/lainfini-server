@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,117 +37,153 @@ import java.util.Objects;
 /**
  * Sickbenefittype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Sickbenefittype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Sickbenefittyperow> rows = new ArrayList<Sickbenefittyperow>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("SickBaseType")
-  private Integer sickBaseType = null;
+  @SerializedName("sickbasetype")
+  private Integer sickbasetype = null;
 
-  @SerializedName("OneCase")
-  private Boolean oneCase = null;
+  @SerializedName("onecase")
+  private Boolean onecase = null;
 
-  @SerializedName("IsAbsent")
-  private Boolean isAbsent = null;
+  @SerializedName("isabsent")
+  private Boolean isabsent = null;
 
-  @SerializedName("MaxDayCount")
-  private Double maxDayCount = null;
+  @SerializedName("maxdaycount")
+  private Double maxdaycount = null;
 
-  @SerializedName("AverageReduction")
-  private Boolean averageReduction = null;
+  @SerializedName("averagereduction")
+  private Boolean averagereduction = null;
 
-  @SerializedName("NoExcludedDays")
-  private Boolean noExcludedDays = null;
+  @SerializedName("noexcludeddays")
+  private Boolean noexcludeddays = null;
 
-  @SerializedName("IsUnpaid")
-  private Boolean isUnpaid = null;
+  @SerializedName("isunpaid")
+  private Boolean isunpaid = null;
 
-  @SerializedName("MaxExcludedDays")
-  private Double maxExcludedDays = null;
+  @SerializedName("maxexcludeddays")
+  private Double maxexcludeddays = null;
 
-  @SerializedName("SBaseTypeSText")
-  private String sBaseTypeSText = null;
+  @SerializedName("sbasetypestext")
+  private String sbasetypestext = null;
 
-  @SerializedName("SBaseTypeLText")
-  private String sBaseTypeLText = null;
+  @SerializedName("sbasetypeltext")
+  private String sbasetypeltext = null;
 
-  @SerializedName("PayWorkingDays")
-  private Boolean payWorkingDays = null;
+  @SerializedName("payworkingdays")
+  private Boolean payworkingdays = null;
 
-  @SerializedName("AmountExpression")
-  private String amountExpression = null;
+  @SerializedName("amountexpression")
+  private String amountexpression = null;
 
-  @SerializedName("ValidTo$DATE")
-  private DateTime validToDATE = null;
+  @SerializedName("validto$date")
+  private DateTime validtodate = null;
 
-  @SerializedName("ContinuingSickBenefit")
-  private Boolean continuingSickBenefit = null;
+  @SerializedName("continuingsickbenefit")
+  private Boolean continuingsickbenefit = null;
 
-  @SerializedName("SickBenefitRounding")
-  private Integer sickBenefitRounding = null;
+  @SerializedName("sickbenefitrounding")
+  private Integer sickbenefitrounding = null;
 
-  @SerializedName("DayBaseRounding")
-  private Integer dayBaseRounding = null;
+  @SerializedName("daybaserounding")
+  private Integer daybaserounding = null;
 
-  @SerializedName("Preferred")
+  @SerializedName("preferred")
   private Boolean preferred = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Sickbenefittype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Sickbenefittype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Sickbenefittype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Sickbenefittype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Sickbenefittype rows(List<Sickbenefittyperow> rows) {
@@ -161,10 +197,10 @@ public class Sickbenefittype   {
   }
 
    /**
-   * Sazby; kolekce BO Sazba nemocenské dávky [nepersistentní položka]
+   * sazby; kolekce bo sazba nemocenské dávky [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Sazby; kolekce BO Sazba nemocenské dávky [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "sazby; kolekce bo sazba nemocenské dávky [nepersistentní položka]")
   public List<Sickbenefittyperow> getRows() {
     return rows;
   }
@@ -179,10 +215,10 @@ public class Sickbenefittype   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -197,10 +233,10 @@ public class Sickbenefittype   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -215,10 +251,10 @@ public class Sickbenefittype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -227,292 +263,292 @@ public class Sickbenefittype   {
     this.name = name;
   }
 
-  public Sickbenefittype sickBaseType(Integer sickBaseType) {
-    this.sickBaseType = sickBaseType;
+  public Sickbenefittype sickbasetype(Integer sickbasetype) {
+    this.sickbasetype = sickbasetype;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return sickBaseType
+   * typ [persistentní položka]
+   * @return sickbasetype
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getSickBaseType() {
-    return sickBaseType;
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getSickbasetype() {
+    return sickbasetype;
   }
 
-  public void setSickBaseType(Integer sickBaseType) {
-    this.sickBaseType = sickBaseType;
+  public void setSickbasetype(Integer sickbasetype) {
+    this.sickbasetype = sickbasetype;
   }
 
-  public Sickbenefittype oneCase(Boolean oneCase) {
-    this.oneCase = oneCase;
+  public Sickbenefittype onecase(Boolean onecase) {
+    this.onecase = onecase;
     return this;
   }
 
    /**
-   * Jedn. [persistentní položka]
-   * @return oneCase
+   * jedn. [persistentní položka]
+   * @return onecase
   **/
-  @ApiModelProperty(example = "null", value = "Jedn. [persistentní položka]")
-  public Boolean getOneCase() {
-    return oneCase;
+  @ApiModelProperty(example = "null", value = "jedn. [persistentní položka]")
+  public Boolean getOnecase() {
+    return onecase;
   }
 
-  public void setOneCase(Boolean oneCase) {
-    this.oneCase = oneCase;
+  public void setOnecase(Boolean onecase) {
+    this.onecase = onecase;
   }
 
-  public Sickbenefittype isAbsent(Boolean isAbsent) {
-    this.isAbsent = isAbsent;
+  public Sickbenefittype isabsent(Boolean isabsent) {
+    this.isabsent = isabsent;
     return this;
   }
 
    /**
-   * Nepřít. [persistentní položka]
-   * @return isAbsent
+   * nepřít. [persistentní položka]
+   * @return isabsent
   **/
-  @ApiModelProperty(example = "null", value = "Nepřít. [persistentní položka]")
-  public Boolean getIsAbsent() {
-    return isAbsent;
+  @ApiModelProperty(example = "null", value = "nepřít. [persistentní položka]")
+  public Boolean getIsabsent() {
+    return isabsent;
   }
 
-  public void setIsAbsent(Boolean isAbsent) {
-    this.isAbsent = isAbsent;
+  public void setIsabsent(Boolean isabsent) {
+    this.isabsent = isabsent;
   }
 
-  public Sickbenefittype maxDayCount(Double maxDayCount) {
-    this.maxDayCount = maxDayCount;
+  public Sickbenefittype maxdaycount(Double maxdaycount) {
+    this.maxdaycount = maxdaycount;
     return this;
   }
 
    /**
-   * Max. dní [persistentní položka]
-   * @return maxDayCount
+   * max. dní [persistentní položka]
+   * @return maxdaycount
   **/
-  @ApiModelProperty(example = "null", value = "Max. dní [persistentní položka]")
-  public Double getMaxDayCount() {
-    return maxDayCount;
+  @ApiModelProperty(example = "null", value = "max. dní [persistentní položka]")
+  public Double getMaxdaycount() {
+    return maxdaycount;
   }
 
-  public void setMaxDayCount(Double maxDayCount) {
-    this.maxDayCount = maxDayCount;
+  public void setMaxdaycount(Double maxdaycount) {
+    this.maxdaycount = maxdaycount;
   }
 
-  public Sickbenefittype averageReduction(Boolean averageReduction) {
-    this.averageReduction = averageReduction;
+  public Sickbenefittype averagereduction(Boolean averagereduction) {
+    this.averagereduction = averagereduction;
     return this;
   }
 
    /**
-   * Redukce DVZ [persistentní položka]
-   * @return averageReduction
+   * redukce dvz [persistentní položka]
+   * @return averagereduction
   **/
-  @ApiModelProperty(example = "null", value = "Redukce DVZ [persistentní položka]")
-  public Boolean getAverageReduction() {
-    return averageReduction;
+  @ApiModelProperty(example = "null", value = "redukce dvz [persistentní položka]")
+  public Boolean getAveragereduction() {
+    return averagereduction;
   }
 
-  public void setAverageReduction(Boolean averageReduction) {
-    this.averageReduction = averageReduction;
+  public void setAveragereduction(Boolean averagereduction) {
+    this.averagereduction = averagereduction;
   }
 
-  public Sickbenefittype noExcludedDays(Boolean noExcludedDays) {
-    this.noExcludedDays = noExcludedDays;
+  public Sickbenefittype noexcludeddays(Boolean noexcludeddays) {
+    this.noexcludeddays = noexcludeddays;
     return this;
   }
 
    /**
-   * Není vyl.doba [persistentní položka]
-   * @return noExcludedDays
+   * není vyl.doba [persistentní položka]
+   * @return noexcludeddays
   **/
-  @ApiModelProperty(example = "null", value = "Není vyl.doba [persistentní položka]")
-  public Boolean getNoExcludedDays() {
-    return noExcludedDays;
+  @ApiModelProperty(example = "null", value = "není vyl.doba [persistentní položka]")
+  public Boolean getNoexcludeddays() {
+    return noexcludeddays;
   }
 
-  public void setNoExcludedDays(Boolean noExcludedDays) {
-    this.noExcludedDays = noExcludedDays;
+  public void setNoexcludeddays(Boolean noexcludeddays) {
+    this.noexcludeddays = noexcludeddays;
   }
 
-  public Sickbenefittype isUnpaid(Boolean isUnpaid) {
-    this.isUnpaid = isUnpaid;
+  public Sickbenefittype isunpaid(Boolean isunpaid) {
+    this.isunpaid = isunpaid;
     return this;
   }
 
    /**
-   * Neproplácí se [persistentní položka]
-   * @return isUnpaid
+   * neproplácí se [persistentní položka]
+   * @return isunpaid
   **/
-  @ApiModelProperty(example = "null", value = "Neproplácí se [persistentní položka]")
-  public Boolean getIsUnpaid() {
-    return isUnpaid;
+  @ApiModelProperty(example = "null", value = "neproplácí se [persistentní položka]")
+  public Boolean getIsunpaid() {
+    return isunpaid;
   }
 
-  public void setIsUnpaid(Boolean isUnpaid) {
-    this.isUnpaid = isUnpaid;
+  public void setIsunpaid(Boolean isunpaid) {
+    this.isunpaid = isunpaid;
   }
 
-  public Sickbenefittype maxExcludedDays(Double maxExcludedDays) {
-    this.maxExcludedDays = maxExcludedDays;
+  public Sickbenefittype maxexcludeddays(Double maxexcludeddays) {
+    this.maxexcludeddays = maxexcludeddays;
     return this;
   }
 
    /**
-   * Max. počet vyl. dob [persistentní položka]
-   * @return maxExcludedDays
+   * max. počet vyl. dob [persistentní položka]
+   * @return maxexcludeddays
   **/
-  @ApiModelProperty(example = "null", value = "Max. počet vyl. dob [persistentní položka]")
-  public Double getMaxExcludedDays() {
-    return maxExcludedDays;
+  @ApiModelProperty(example = "null", value = "max. počet vyl. dob [persistentní položka]")
+  public Double getMaxexcludeddays() {
+    return maxexcludeddays;
   }
 
-  public void setMaxExcludedDays(Double maxExcludedDays) {
-    this.maxExcludedDays = maxExcludedDays;
+  public void setMaxexcludeddays(Double maxexcludeddays) {
+    this.maxexcludeddays = maxexcludeddays;
   }
 
-  public Sickbenefittype sBaseTypeSText(String sBaseTypeSText) {
-    this.sBaseTypeSText = sBaseTypeSText;
+  public Sickbenefittype sbasetypestext(String sbasetypestext) {
+    this.sbasetypestext = sbasetypestext;
     return this;
   }
 
    /**
-   * Typ
-   * @return sBaseTypeSText
+   * typ
+   * @return sbasetypestext
   **/
-  @ApiModelProperty(example = "null", value = "Typ")
-  public String getSBaseTypeSText() {
-    return sBaseTypeSText;
+  @ApiModelProperty(example = "null", value = "typ")
+  public String getSbasetypestext() {
+    return sbasetypestext;
   }
 
-  public void setSBaseTypeSText(String sBaseTypeSText) {
-    this.sBaseTypeSText = sBaseTypeSText;
+  public void setSbasetypestext(String sbasetypestext) {
+    this.sbasetypestext = sbasetypestext;
   }
 
-  public Sickbenefittype sBaseTypeLText(String sBaseTypeLText) {
-    this.sBaseTypeLText = sBaseTypeLText;
+  public Sickbenefittype sbasetypeltext(String sbasetypeltext) {
+    this.sbasetypeltext = sbasetypeltext;
     return this;
   }
 
    /**
-   * Typ - popis
-   * @return sBaseTypeLText
+   * typ - popis
+   * @return sbasetypeltext
   **/
-  @ApiModelProperty(example = "null", value = "Typ - popis")
-  public String getSBaseTypeLText() {
-    return sBaseTypeLText;
+  @ApiModelProperty(example = "null", value = "typ - popis")
+  public String getSbasetypeltext() {
+    return sbasetypeltext;
   }
 
-  public void setSBaseTypeLText(String sBaseTypeLText) {
-    this.sBaseTypeLText = sBaseTypeLText;
+  public void setSbasetypeltext(String sbasetypeltext) {
+    this.sbasetypeltext = sbasetypeltext;
   }
 
-  public Sickbenefittype payWorkingDays(Boolean payWorkingDays) {
-    this.payWorkingDays = payWorkingDays;
+  public Sickbenefittype payworkingdays(Boolean payworkingdays) {
+    this.payworkingdays = payworkingdays;
     return this;
   }
 
    /**
-   * Proplácet pracovní dny [persistentní položka]
-   * @return payWorkingDays
+   * proplácet pracovní dny [persistentní položka]
+   * @return payworkingdays
   **/
-  @ApiModelProperty(example = "null", value = "Proplácet pracovní dny [persistentní položka]")
-  public Boolean getPayWorkingDays() {
-    return payWorkingDays;
+  @ApiModelProperty(example = "null", value = "proplácet pracovní dny [persistentní položka]")
+  public Boolean getPayworkingdays() {
+    return payworkingdays;
   }
 
-  public void setPayWorkingDays(Boolean payWorkingDays) {
-    this.payWorkingDays = payWorkingDays;
+  public void setPayworkingdays(Boolean payworkingdays) {
+    this.payworkingdays = payworkingdays;
   }
 
-  public Sickbenefittype amountExpression(String amountExpression) {
-    this.amountExpression = amountExpression;
+  public Sickbenefittype amountexpression(String amountexpression) {
+    this.amountexpression = amountexpression;
     return this;
   }
 
    /**
-   * Korekce částky [persistentní položka]
-   * @return amountExpression
+   * korekce částky [persistentní položka]
+   * @return amountexpression
   **/
-  @ApiModelProperty(example = "null", value = "Korekce částky [persistentní položka]")
-  public String getAmountExpression() {
-    return amountExpression;
+  @ApiModelProperty(example = "null", value = "korekce částky [persistentní položka]")
+  public String getAmountexpression() {
+    return amountexpression;
   }
 
-  public void setAmountExpression(String amountExpression) {
-    this.amountExpression = amountExpression;
+  public void setAmountexpression(String amountexpression) {
+    this.amountexpression = amountexpression;
   }
 
-  public Sickbenefittype validToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public Sickbenefittype validtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
     return this;
   }
 
    /**
-   * Platí do [persistentní položka]
-   * @return validToDATE
+   * platí do [persistentní položka]
+   * @return validtodate
   **/
-  @ApiModelProperty(example = "null", value = "Platí do [persistentní položka]")
-  public DateTime getValidToDATE() {
-    return validToDATE;
+  @ApiModelProperty(example = "null", value = "platí do [persistentní položka]")
+  public DateTime getValidtodate() {
+    return validtodate;
   }
 
-  public void setValidToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public void setValidtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
   }
 
-  public Sickbenefittype continuingSickBenefit(Boolean continuingSickBenefit) {
-    this.continuingSickBenefit = continuingSickBenefit;
+  public Sickbenefittype continuingsickbenefit(Boolean continuingsickbenefit) {
+    this.continuingsickbenefit = continuingsickbenefit;
     return this;
   }
 
    /**
-   * Pokračující dávka [persistentní položka]
-   * @return continuingSickBenefit
+   * pokračující dávka [persistentní položka]
+   * @return continuingsickbenefit
   **/
-  @ApiModelProperty(example = "null", value = "Pokračující dávka [persistentní položka]")
-  public Boolean getContinuingSickBenefit() {
-    return continuingSickBenefit;
+  @ApiModelProperty(example = "null", value = "pokračující dávka [persistentní položka]")
+  public Boolean getContinuingsickbenefit() {
+    return continuingsickbenefit;
   }
 
-  public void setContinuingSickBenefit(Boolean continuingSickBenefit) {
-    this.continuingSickBenefit = continuingSickBenefit;
+  public void setContinuingsickbenefit(Boolean continuingsickbenefit) {
+    this.continuingsickbenefit = continuingsickbenefit;
   }
 
-  public Sickbenefittype sickBenefitRounding(Integer sickBenefitRounding) {
-    this.sickBenefitRounding = sickBenefitRounding;
+  public Sickbenefittype sickbenefitrounding(Integer sickbenefitrounding) {
+    this.sickbenefitrounding = sickbenefitrounding;
     return this;
   }
 
    /**
-   * Zaokrouhlení dávky [persistentní položka]
-   * @return sickBenefitRounding
+   * zaokrouhlení dávky [persistentní položka]
+   * @return sickbenefitrounding
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlení dávky [persistentní položka]")
-  public Integer getSickBenefitRounding() {
-    return sickBenefitRounding;
+  @ApiModelProperty(example = "null", value = "zaokrouhlení dávky [persistentní položka]")
+  public Integer getSickbenefitrounding() {
+    return sickbenefitrounding;
   }
 
-  public void setSickBenefitRounding(Integer sickBenefitRounding) {
-    this.sickBenefitRounding = sickBenefitRounding;
+  public void setSickbenefitrounding(Integer sickbenefitrounding) {
+    this.sickbenefitrounding = sickbenefitrounding;
   }
 
-  public Sickbenefittype dayBaseRounding(Integer dayBaseRounding) {
-    this.dayBaseRounding = dayBaseRounding;
+  public Sickbenefittype daybaserounding(Integer daybaserounding) {
+    this.daybaserounding = daybaserounding;
     return this;
   }
 
    /**
-   * Zaokrouhlení DVZ [persistentní položka]
-   * @return dayBaseRounding
+   * zaokrouhlení dvz [persistentní položka]
+   * @return daybaserounding
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlení DVZ [persistentní položka]")
-  public Integer getDayBaseRounding() {
-    return dayBaseRounding;
+  @ApiModelProperty(example = "null", value = "zaokrouhlení dvz [persistentní položka]")
+  public Integer getDaybaserounding() {
+    return daybaserounding;
   }
 
-  public void setDayBaseRounding(Integer dayBaseRounding) {
-    this.dayBaseRounding = dayBaseRounding;
+  public void setDaybaserounding(Integer daybaserounding) {
+    this.daybaserounding = daybaserounding;
   }
 
   public Sickbenefittype preferred(Boolean preferred) {
@@ -521,10 +557,10 @@ public class Sickbenefittype   {
   }
 
    /**
-   * Předvyplňovat [persistentní položka]
+   * předvyplňovat [persistentní položka]
    * @return preferred
   **/
-  @ApiModelProperty(example = "null", value = "Předvyplňovat [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "předvyplňovat [persistentní položka]")
   public Boolean getPreferred() {
     return preferred;
   }
@@ -543,36 +579,36 @@ public class Sickbenefittype   {
       return false;
     }
     Sickbenefittype sickbenefittype = (Sickbenefittype) o;
-    return Objects.equals(this.displayName, sickbenefittype.displayName) &&
-        Objects.equals(this.ID, sickbenefittype.ID) &&
-        Objects.equals(this.classID, sickbenefittype.classID) &&
-        Objects.equals(this.objVersion, sickbenefittype.objVersion) &&
+    return Objects.equals(this.displayname, sickbenefittype.displayname) &&
+        Objects.equals(this.id, sickbenefittype.id) &&
+        Objects.equals(this.classid, sickbenefittype.classid) &&
+        Objects.equals(this.objversion, sickbenefittype.objversion) &&
         Objects.equals(this.rows, sickbenefittype.rows) &&
         Objects.equals(this.hidden, sickbenefittype.hidden) &&
         Objects.equals(this.code, sickbenefittype.code) &&
         Objects.equals(this.name, sickbenefittype.name) &&
-        Objects.equals(this.sickBaseType, sickbenefittype.sickBaseType) &&
-        Objects.equals(this.oneCase, sickbenefittype.oneCase) &&
-        Objects.equals(this.isAbsent, sickbenefittype.isAbsent) &&
-        Objects.equals(this.maxDayCount, sickbenefittype.maxDayCount) &&
-        Objects.equals(this.averageReduction, sickbenefittype.averageReduction) &&
-        Objects.equals(this.noExcludedDays, sickbenefittype.noExcludedDays) &&
-        Objects.equals(this.isUnpaid, sickbenefittype.isUnpaid) &&
-        Objects.equals(this.maxExcludedDays, sickbenefittype.maxExcludedDays) &&
-        Objects.equals(this.sBaseTypeSText, sickbenefittype.sBaseTypeSText) &&
-        Objects.equals(this.sBaseTypeLText, sickbenefittype.sBaseTypeLText) &&
-        Objects.equals(this.payWorkingDays, sickbenefittype.payWorkingDays) &&
-        Objects.equals(this.amountExpression, sickbenefittype.amountExpression) &&
-        Objects.equals(this.validToDATE, sickbenefittype.validToDATE) &&
-        Objects.equals(this.continuingSickBenefit, sickbenefittype.continuingSickBenefit) &&
-        Objects.equals(this.sickBenefitRounding, sickbenefittype.sickBenefitRounding) &&
-        Objects.equals(this.dayBaseRounding, sickbenefittype.dayBaseRounding) &&
+        Objects.equals(this.sickbasetype, sickbenefittype.sickbasetype) &&
+        Objects.equals(this.onecase, sickbenefittype.onecase) &&
+        Objects.equals(this.isabsent, sickbenefittype.isabsent) &&
+        Objects.equals(this.maxdaycount, sickbenefittype.maxdaycount) &&
+        Objects.equals(this.averagereduction, sickbenefittype.averagereduction) &&
+        Objects.equals(this.noexcludeddays, sickbenefittype.noexcludeddays) &&
+        Objects.equals(this.isunpaid, sickbenefittype.isunpaid) &&
+        Objects.equals(this.maxexcludeddays, sickbenefittype.maxexcludeddays) &&
+        Objects.equals(this.sbasetypestext, sickbenefittype.sbasetypestext) &&
+        Objects.equals(this.sbasetypeltext, sickbenefittype.sbasetypeltext) &&
+        Objects.equals(this.payworkingdays, sickbenefittype.payworkingdays) &&
+        Objects.equals(this.amountexpression, sickbenefittype.amountexpression) &&
+        Objects.equals(this.validtodate, sickbenefittype.validtodate) &&
+        Objects.equals(this.continuingsickbenefit, sickbenefittype.continuingsickbenefit) &&
+        Objects.equals(this.sickbenefitrounding, sickbenefittype.sickbenefitrounding) &&
+        Objects.equals(this.daybaserounding, sickbenefittype.daybaserounding) &&
         Objects.equals(this.preferred, sickbenefittype.preferred);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, code, name, sickBaseType, oneCase, isAbsent, maxDayCount, averageReduction, noExcludedDays, isUnpaid, maxExcludedDays, sBaseTypeSText, sBaseTypeLText, payWorkingDays, amountExpression, validToDATE, continuingSickBenefit, sickBenefitRounding, dayBaseRounding, preferred);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, code, name, sickbasetype, onecase, isabsent, maxdaycount, averagereduction, noexcludeddays, isunpaid, maxexcludeddays, sbasetypestext, sbasetypeltext, payworkingdays, amountexpression, validtodate, continuingsickbenefit, sickbenefitrounding, daybaserounding, preferred);
   }
 
   @Override
@@ -580,30 +616,30 @@ public class Sickbenefittype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Sickbenefittype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    sickBaseType: ").append(toIndentedString(sickBaseType)).append("\n");
-    sb.append("    oneCase: ").append(toIndentedString(oneCase)).append("\n");
-    sb.append("    isAbsent: ").append(toIndentedString(isAbsent)).append("\n");
-    sb.append("    maxDayCount: ").append(toIndentedString(maxDayCount)).append("\n");
-    sb.append("    averageReduction: ").append(toIndentedString(averageReduction)).append("\n");
-    sb.append("    noExcludedDays: ").append(toIndentedString(noExcludedDays)).append("\n");
-    sb.append("    isUnpaid: ").append(toIndentedString(isUnpaid)).append("\n");
-    sb.append("    maxExcludedDays: ").append(toIndentedString(maxExcludedDays)).append("\n");
-    sb.append("    sBaseTypeSText: ").append(toIndentedString(sBaseTypeSText)).append("\n");
-    sb.append("    sBaseTypeLText: ").append(toIndentedString(sBaseTypeLText)).append("\n");
-    sb.append("    payWorkingDays: ").append(toIndentedString(payWorkingDays)).append("\n");
-    sb.append("    amountExpression: ").append(toIndentedString(amountExpression)).append("\n");
-    sb.append("    validToDATE: ").append(toIndentedString(validToDATE)).append("\n");
-    sb.append("    continuingSickBenefit: ").append(toIndentedString(continuingSickBenefit)).append("\n");
-    sb.append("    sickBenefitRounding: ").append(toIndentedString(sickBenefitRounding)).append("\n");
-    sb.append("    dayBaseRounding: ").append(toIndentedString(dayBaseRounding)).append("\n");
+    sb.append("    sickbasetype: ").append(toIndentedString(sickbasetype)).append("\n");
+    sb.append("    onecase: ").append(toIndentedString(onecase)).append("\n");
+    sb.append("    isabsent: ").append(toIndentedString(isabsent)).append("\n");
+    sb.append("    maxdaycount: ").append(toIndentedString(maxdaycount)).append("\n");
+    sb.append("    averagereduction: ").append(toIndentedString(averagereduction)).append("\n");
+    sb.append("    noexcludeddays: ").append(toIndentedString(noexcludeddays)).append("\n");
+    sb.append("    isunpaid: ").append(toIndentedString(isunpaid)).append("\n");
+    sb.append("    maxexcludeddays: ").append(toIndentedString(maxexcludeddays)).append("\n");
+    sb.append("    sbasetypestext: ").append(toIndentedString(sbasetypestext)).append("\n");
+    sb.append("    sbasetypeltext: ").append(toIndentedString(sbasetypeltext)).append("\n");
+    sb.append("    payworkingdays: ").append(toIndentedString(payworkingdays)).append("\n");
+    sb.append("    amountexpression: ").append(toIndentedString(amountexpression)).append("\n");
+    sb.append("    validtodate: ").append(toIndentedString(validtodate)).append("\n");
+    sb.append("    continuingsickbenefit: ").append(toIndentedString(continuingsickbenefit)).append("\n");
+    sb.append("    sickbenefitrounding: ").append(toIndentedString(sickbenefitrounding)).append("\n");
+    sb.append("    daybaserounding: ").append(toIndentedString(daybaserounding)).append("\n");
     sb.append("    preferred: ").append(toIndentedString(preferred)).append("\n");
     sb.append("}");
     return sb.toString();

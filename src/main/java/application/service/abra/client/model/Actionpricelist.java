@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,138 +37,174 @@ import java.util.Objects;
 /**
  * Actionpricelist
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Actionpricelist   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Comment")
+  @SerializedName("comment")
   private String comment = null;
 
-  @SerializedName("ManagedBy_ID")
-  private String managedByID = null;
+  @SerializedName("managedby_id")
+  private String managedbyId = null;
 
-  @SerializedName("CreationDate$DATE")
-  private DateTime creationDateDATE = null;
+  @SerializedName("creationdate$date")
+  private DateTime creationdatedate = null;
 
-  @SerializedName("DealerDiscountExcluded")
-  private Boolean dealerDiscountExcluded = null;
+  @SerializedName("dealerdiscountexcluded")
+  private Boolean dealerdiscountexcluded = null;
 
-  @SerializedName("IndividualDiscountExcluded")
-  private Boolean individualDiscountExcluded = null;
+  @SerializedName("individualdiscountexcluded")
+  private Boolean individualdiscountexcluded = null;
 
-  @SerializedName("FinancialDiscountExcluded")
-  private Boolean financialDiscountExcluded = null;
+  @SerializedName("financialdiscountexcluded")
+  private Boolean financialdiscountexcluded = null;
 
-  @SerializedName("QuantityDiscountExcluded")
-  private Boolean quantityDiscountExcluded = null;
+  @SerializedName("quantitydiscountexcluded")
+  private Boolean quantitydiscountexcluded = null;
 
-  @SerializedName("DocumentDiscountExcluded")
-  private Boolean documentDiscountExcluded = null;
+  @SerializedName("documentdiscountexcluded")
+  private Boolean documentdiscountexcluded = null;
 
-  @SerializedName("Priority")
+  @SerializedName("priority")
   private Integer priority = null;
 
-  @SerializedName("DateFrom$DATE")
-  private DateTime dateFromDATE = null;
+  @SerializedName("datefrom$date")
+  private DateTime datefromdate = null;
 
-  @SerializedName("DateTo$DATE")
-  private DateTime dateToDATE = null;
+  @SerializedName("dateto$date")
+  private DateTime datetodate = null;
 
-  @SerializedName("ByTime")
-  private Boolean byTime = null;
+  @SerializedName("bytime")
+  private Boolean bytime = null;
 
-  @SerializedName("TimeFrom")
-  private DateTime timeFrom = null;
+  @SerializedName("timefrom")
+  private DateTime timefrom = null;
 
-  @SerializedName("TimeTo")
-  private DateTime timeTo = null;
+  @SerializedName("timeto")
+  private DateTime timeto = null;
 
-  @SerializedName("ByDateOfWeek")
-  private Boolean byDateOfWeek = null;
+  @SerializedName("bydateofweek")
+  private Boolean bydateofweek = null;
 
-  @SerializedName("Monday")
+  @SerializedName("monday")
   private Boolean monday = null;
 
-  @SerializedName("Tuesday")
+  @SerializedName("tuesday")
   private Boolean tuesday = null;
 
-  @SerializedName("Wednesday")
+  @SerializedName("wednesday")
   private Boolean wednesday = null;
 
-  @SerializedName("Thursday")
+  @SerializedName("thursday")
   private Boolean thursday = null;
 
-  @SerializedName("Friday")
+  @SerializedName("friday")
   private Boolean friday = null;
 
-  @SerializedName("Saturday")
+  @SerializedName("saturday")
   private Boolean saturday = null;
 
-  @SerializedName("Sunday")
+  @SerializedName("sunday")
   private Boolean sunday = null;
 
-  @SerializedName("PriceListRoundings")
-  private List<Actionpricelistrounding> priceListRoundings = new ArrayList<Actionpricelistrounding>();
+  @SerializedName("pricelistroundings")
+  private List<Actionpricelistrounding> pricelistroundings = new ArrayList<Actionpricelistrounding>();
 
-  @SerializedName("RestrictionUses")
-  private List<Actionpricelistrestrictionuse> restrictionUses = new ArrayList<Actionpricelistrestrictionuse>();
+  @SerializedName("restrictionuses")
+  private List<Actionpricelistrestrictionuse> restrictionuses = new ArrayList<Actionpricelistrestrictionuse>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Actionpricelist displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Actionpricelist id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Actionpricelist classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Actionpricelist objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Actionpricelist hidden(Boolean hidden) {
@@ -177,10 +213,10 @@ public class Actionpricelist   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -195,10 +231,10 @@ public class Actionpricelist   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -213,10 +249,10 @@ public class Actionpricelist   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -231,10 +267,10 @@ public class Actionpricelist   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -249,10 +285,10 @@ public class Actionpricelist   {
   }
 
    /**
-   * Poznámka
+   * poznámka
    * @return comment
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka")
+  @ApiModelProperty(example = "null", value = "poznámka")
   public String getComment() {
     return comment;
   }
@@ -261,130 +297,130 @@ public class Actionpricelist   {
     this.comment = comment;
   }
 
-  public Actionpricelist managedByID(String managedByID) {
-    this.managedByID = managedByID;
+  public Actionpricelist managedbyId(String managedbyId) {
+    this.managedbyId = managedbyId;
     return this;
   }
 
    /**
-   * Správce ceníku; ID objektu Uživatel [persistentní položka]
-   * @return managedByID
+   * správce ceníku; id objektu uživatel [persistentní položka]
+   * @return managedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Správce ceníku; ID objektu Uživatel [persistentní položka]")
-  public String getManagedByID() {
-    return managedByID;
+  @ApiModelProperty(example = "null", value = "správce ceníku; id objektu uživatel [persistentní položka]")
+  public String getManagedbyId() {
+    return managedbyId;
   }
 
-  public void setManagedByID(String managedByID) {
-    this.managedByID = managedByID;
+  public void setManagedbyId(String managedbyId) {
+    this.managedbyId = managedbyId;
   }
 
-  public Actionpricelist creationDateDATE(DateTime creationDateDATE) {
-    this.creationDateDATE = creationDateDATE;
+  public Actionpricelist creationdatedate(DateTime creationdatedate) {
+    this.creationdatedate = creationdatedate;
     return this;
   }
 
    /**
-   * Datum vytvoření ceníku [persistentní položka]
-   * @return creationDateDATE
+   * datum vytvoření ceníku [persistentní položka]
+   * @return creationdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum vytvoření ceníku [persistentní položka]")
-  public DateTime getCreationDateDATE() {
-    return creationDateDATE;
+  @ApiModelProperty(example = "null", value = "datum vytvoření ceníku [persistentní položka]")
+  public DateTime getCreationdatedate() {
+    return creationdatedate;
   }
 
-  public void setCreationDateDATE(DateTime creationDateDATE) {
-    this.creationDateDATE = creationDateDATE;
+  public void setCreationdatedate(DateTime creationdatedate) {
+    this.creationdatedate = creationdatedate;
   }
 
-  public Actionpricelist dealerDiscountExcluded(Boolean dealerDiscountExcluded) {
-    this.dealerDiscountExcluded = dealerDiscountExcluded;
+  public Actionpricelist dealerdiscountexcluded(Boolean dealerdiscountexcluded) {
+    this.dealerdiscountexcluded = dealerdiscountexcluded;
     return this;
   }
 
    /**
-   * Neuplatňovat dealerské slevy [persistentní položka]
-   * @return dealerDiscountExcluded
+   * neuplatňovat dealerské slevy [persistentní položka]
+   * @return dealerdiscountexcluded
   **/
-  @ApiModelProperty(example = "null", value = "Neuplatňovat dealerské slevy [persistentní položka]")
-  public Boolean getDealerDiscountExcluded() {
-    return dealerDiscountExcluded;
+  @ApiModelProperty(example = "null", value = "neuplatňovat dealerské slevy [persistentní položka]")
+  public Boolean getDealerdiscountexcluded() {
+    return dealerdiscountexcluded;
   }
 
-  public void setDealerDiscountExcluded(Boolean dealerDiscountExcluded) {
-    this.dealerDiscountExcluded = dealerDiscountExcluded;
+  public void setDealerdiscountexcluded(Boolean dealerdiscountexcluded) {
+    this.dealerdiscountexcluded = dealerdiscountexcluded;
   }
 
-  public Actionpricelist individualDiscountExcluded(Boolean individualDiscountExcluded) {
-    this.individualDiscountExcluded = individualDiscountExcluded;
+  public Actionpricelist individualdiscountexcluded(Boolean individualdiscountexcluded) {
+    this.individualdiscountexcluded = individualdiscountexcluded;
     return this;
   }
 
    /**
-   * Neuplatňovat individuální slevy [persistentní položka]
-   * @return individualDiscountExcluded
+   * neuplatňovat individuální slevy [persistentní položka]
+   * @return individualdiscountexcluded
   **/
-  @ApiModelProperty(example = "null", value = "Neuplatňovat individuální slevy [persistentní položka]")
-  public Boolean getIndividualDiscountExcluded() {
-    return individualDiscountExcluded;
+  @ApiModelProperty(example = "null", value = "neuplatňovat individuální slevy [persistentní položka]")
+  public Boolean getIndividualdiscountexcluded() {
+    return individualdiscountexcluded;
   }
 
-  public void setIndividualDiscountExcluded(Boolean individualDiscountExcluded) {
-    this.individualDiscountExcluded = individualDiscountExcluded;
+  public void setIndividualdiscountexcluded(Boolean individualdiscountexcluded) {
+    this.individualdiscountexcluded = individualdiscountexcluded;
   }
 
-  public Actionpricelist financialDiscountExcluded(Boolean financialDiscountExcluded) {
-    this.financialDiscountExcluded = financialDiscountExcluded;
+  public Actionpricelist financialdiscountexcluded(Boolean financialdiscountexcluded) {
+    this.financialdiscountexcluded = financialdiscountexcluded;
     return this;
   }
 
    /**
-   * Neuplatňovat finanční slevy [persistentní položka]
-   * @return financialDiscountExcluded
+   * neuplatňovat finanční slevy [persistentní položka]
+   * @return financialdiscountexcluded
   **/
-  @ApiModelProperty(example = "null", value = "Neuplatňovat finanční slevy [persistentní položka]")
-  public Boolean getFinancialDiscountExcluded() {
-    return financialDiscountExcluded;
+  @ApiModelProperty(example = "null", value = "neuplatňovat finanční slevy [persistentní položka]")
+  public Boolean getFinancialdiscountexcluded() {
+    return financialdiscountexcluded;
   }
 
-  public void setFinancialDiscountExcluded(Boolean financialDiscountExcluded) {
-    this.financialDiscountExcluded = financialDiscountExcluded;
+  public void setFinancialdiscountexcluded(Boolean financialdiscountexcluded) {
+    this.financialdiscountexcluded = financialdiscountexcluded;
   }
 
-  public Actionpricelist quantityDiscountExcluded(Boolean quantityDiscountExcluded) {
-    this.quantityDiscountExcluded = quantityDiscountExcluded;
+  public Actionpricelist quantitydiscountexcluded(Boolean quantitydiscountexcluded) {
+    this.quantitydiscountexcluded = quantitydiscountexcluded;
     return this;
   }
 
    /**
-   * Neuplatňovat množstevní slevy [persistentní položka]
-   * @return quantityDiscountExcluded
+   * neuplatňovat množstevní slevy [persistentní položka]
+   * @return quantitydiscountexcluded
   **/
-  @ApiModelProperty(example = "null", value = "Neuplatňovat množstevní slevy [persistentní položka]")
-  public Boolean getQuantityDiscountExcluded() {
-    return quantityDiscountExcluded;
+  @ApiModelProperty(example = "null", value = "neuplatňovat množstevní slevy [persistentní položka]")
+  public Boolean getQuantitydiscountexcluded() {
+    return quantitydiscountexcluded;
   }
 
-  public void setQuantityDiscountExcluded(Boolean quantityDiscountExcluded) {
-    this.quantityDiscountExcluded = quantityDiscountExcluded;
+  public void setQuantitydiscountexcluded(Boolean quantitydiscountexcluded) {
+    this.quantitydiscountexcluded = quantitydiscountexcluded;
   }
 
-  public Actionpricelist documentDiscountExcluded(Boolean documentDiscountExcluded) {
-    this.documentDiscountExcluded = documentDiscountExcluded;
+  public Actionpricelist documentdiscountexcluded(Boolean documentdiscountexcluded) {
+    this.documentdiscountexcluded = documentdiscountexcluded;
     return this;
   }
 
    /**
-   * Vyloučeno z dodatečné slevy [persistentní položka]
-   * @return documentDiscountExcluded
+   * vyloučeno z dodatečné slevy [persistentní položka]
+   * @return documentdiscountexcluded
   **/
-  @ApiModelProperty(example = "null", value = "Vyloučeno z dodatečné slevy [persistentní položka]")
-  public Boolean getDocumentDiscountExcluded() {
-    return documentDiscountExcluded;
+  @ApiModelProperty(example = "null", value = "vyloučeno z dodatečné slevy [persistentní položka]")
+  public Boolean getDocumentdiscountexcluded() {
+    return documentdiscountexcluded;
   }
 
-  public void setDocumentDiscountExcluded(Boolean documentDiscountExcluded) {
-    this.documentDiscountExcluded = documentDiscountExcluded;
+  public void setDocumentdiscountexcluded(Boolean documentdiscountexcluded) {
+    this.documentdiscountexcluded = documentdiscountexcluded;
   }
 
   public Actionpricelist priority(Integer priority) {
@@ -393,10 +429,10 @@ public class Actionpricelist   {
   }
 
    /**
-   * Priorita [persistentní položka]
+   * priorita [persistentní položka]
    * @return priority
   **/
-  @ApiModelProperty(example = "null", value = "Priorita [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "priorita [persistentní položka]")
   public Integer getPriority() {
     return priority;
   }
@@ -405,112 +441,112 @@ public class Actionpricelist   {
     this.priority = priority;
   }
 
-  public Actionpricelist dateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public Actionpricelist datefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
     return this;
   }
 
    /**
-   * Datum platnosti od [persistentní položka]
-   * @return dateFromDATE
+   * datum platnosti od [persistentní položka]
+   * @return datefromdate
   **/
-  @ApiModelProperty(example = "null", value = "Datum platnosti od [persistentní položka]")
-  public DateTime getDateFromDATE() {
-    return dateFromDATE;
+  @ApiModelProperty(example = "null", value = "datum platnosti od [persistentní položka]")
+  public DateTime getDatefromdate() {
+    return datefromdate;
   }
 
-  public void setDateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public void setDatefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
   }
 
-  public Actionpricelist dateToDATE(DateTime dateToDATE) {
-    this.dateToDATE = dateToDATE;
+  public Actionpricelist datetodate(DateTime datetodate) {
+    this.datetodate = datetodate;
     return this;
   }
 
    /**
-   * Datum platnosti do [persistentní položka]
-   * @return dateToDATE
+   * datum platnosti do [persistentní položka]
+   * @return datetodate
   **/
-  @ApiModelProperty(example = "null", value = "Datum platnosti do [persistentní položka]")
-  public DateTime getDateToDATE() {
-    return dateToDATE;
+  @ApiModelProperty(example = "null", value = "datum platnosti do [persistentní položka]")
+  public DateTime getDatetodate() {
+    return datetodate;
   }
 
-  public void setDateToDATE(DateTime dateToDATE) {
-    this.dateToDATE = dateToDATE;
+  public void setDatetodate(DateTime datetodate) {
+    this.datetodate = datetodate;
   }
 
-  public Actionpricelist byTime(Boolean byTime) {
-    this.byTime = byTime;
+  public Actionpricelist bytime(Boolean bytime) {
+    this.bytime = bytime;
     return this;
   }
 
    /**
-   * Omezovat časovým omezením [persistentní položka]
-   * @return byTime
+   * omezovat časovým omezením [persistentní položka]
+   * @return bytime
   **/
-  @ApiModelProperty(example = "null", value = "Omezovat časovým omezením [persistentní položka]")
-  public Boolean getByTime() {
-    return byTime;
+  @ApiModelProperty(example = "null", value = "omezovat časovým omezením [persistentní položka]")
+  public Boolean getBytime() {
+    return bytime;
   }
 
-  public void setByTime(Boolean byTime) {
-    this.byTime = byTime;
+  public void setBytime(Boolean bytime) {
+    this.bytime = bytime;
   }
 
-  public Actionpricelist timeFrom(DateTime timeFrom) {
-    this.timeFrom = timeFrom;
+  public Actionpricelist timefrom(DateTime timefrom) {
+    this.timefrom = timefrom;
     return this;
   }
 
    /**
    * čas od [persistentní položka]
-   * @return timeFrom
+   * @return timefrom
   **/
   @ApiModelProperty(example = "null", value = "čas od [persistentní položka]")
-  public DateTime getTimeFrom() {
-    return timeFrom;
+  public DateTime getTimefrom() {
+    return timefrom;
   }
 
-  public void setTimeFrom(DateTime timeFrom) {
-    this.timeFrom = timeFrom;
+  public void setTimefrom(DateTime timefrom) {
+    this.timefrom = timefrom;
   }
 
-  public Actionpricelist timeTo(DateTime timeTo) {
-    this.timeTo = timeTo;
+  public Actionpricelist timeto(DateTime timeto) {
+    this.timeto = timeto;
     return this;
   }
 
    /**
    * čas do [persistentní položka]
-   * @return timeTo
+   * @return timeto
   **/
   @ApiModelProperty(example = "null", value = "čas do [persistentní položka]")
-  public DateTime getTimeTo() {
-    return timeTo;
+  public DateTime getTimeto() {
+    return timeto;
   }
 
-  public void setTimeTo(DateTime timeTo) {
-    this.timeTo = timeTo;
+  public void setTimeto(DateTime timeto) {
+    this.timeto = timeto;
   }
 
-  public Actionpricelist byDateOfWeek(Boolean byDateOfWeek) {
-    this.byDateOfWeek = byDateOfWeek;
+  public Actionpricelist bydateofweek(Boolean bydateofweek) {
+    this.bydateofweek = bydateofweek;
     return this;
   }
 
    /**
-   * Omezovat omezením dne v týdnu [persistentní položka]
-   * @return byDateOfWeek
+   * omezovat omezením dne v týdnu [persistentní položka]
+   * @return bydateofweek
   **/
-  @ApiModelProperty(example = "null", value = "Omezovat omezením dne v týdnu [persistentní položka]")
-  public Boolean getByDateOfWeek() {
-    return byDateOfWeek;
+  @ApiModelProperty(example = "null", value = "omezovat omezením dne v týdnu [persistentní položka]")
+  public Boolean getBydateofweek() {
+    return bydateofweek;
   }
 
-  public void setByDateOfWeek(Boolean byDateOfWeek) {
-    this.byDateOfWeek = byDateOfWeek;
+  public void setBydateofweek(Boolean bydateofweek) {
+    this.bydateofweek = bydateofweek;
   }
 
   public Actionpricelist monday(Boolean monday) {
@@ -519,10 +555,10 @@ public class Actionpricelist   {
   }
 
    /**
-   * Pondělí [persistentní položka]
+   * pondělí [persistentní položka]
    * @return monday
   **/
-  @ApiModelProperty(example = "null", value = "Pondělí [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "pondělí [persistentní položka]")
   public Boolean getMonday() {
     return monday;
   }
@@ -555,10 +591,10 @@ public class Actionpricelist   {
   }
 
    /**
-   * Středa [persistentní položka]
+   * středa [persistentní položka]
    * @return wednesday
   **/
-  @ApiModelProperty(example = "null", value = "Středa [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "středa [persistentní položka]")
   public Boolean getWednesday() {
     return wednesday;
   }
@@ -591,10 +627,10 @@ public class Actionpricelist   {
   }
 
    /**
-   * Pátek [persistentní položka]
+   * pátek [persistentní položka]
    * @return friday
   **/
-  @ApiModelProperty(example = "null", value = "Pátek [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "pátek [persistentní položka]")
   public Boolean getFriday() {
     return friday;
   }
@@ -609,10 +645,10 @@ public class Actionpricelist   {
   }
 
    /**
-   * Sobota [persistentní položka]
+   * sobota [persistentní položka]
    * @return saturday
   **/
-  @ApiModelProperty(example = "null", value = "Sobota [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "sobota [persistentní položka]")
   public Boolean getSaturday() {
     return saturday;
   }
@@ -627,10 +663,10 @@ public class Actionpricelist   {
   }
 
    /**
-   * Neděle [persistentní položka]
+   * neděle [persistentní položka]
    * @return sunday
   **/
-  @ApiModelProperty(example = "null", value = "Neděle [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "neděle [persistentní položka]")
   public Boolean getSunday() {
     return sunday;
   }
@@ -639,50 +675,50 @@ public class Actionpricelist   {
     this.sunday = sunday;
   }
 
-  public Actionpricelist priceListRoundings(List<Actionpricelistrounding> priceListRoundings) {
-    this.priceListRoundings = priceListRoundings;
+  public Actionpricelist pricelistroundings(List<Actionpricelistrounding> pricelistroundings) {
+    this.pricelistroundings = pricelistroundings;
     return this;
   }
 
-  public Actionpricelist addPriceListRoundingsItem(Actionpricelistrounding priceListRoundingsItem) {
-    this.priceListRoundings.add(priceListRoundingsItem);
-    return this;
-  }
-
-   /**
-   * Zaokrouhlování ceníku; kolekce BO Zaokrouhlování ceníku [nepersistentní položka]
-   * @return priceListRoundings
-  **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlování ceníku; kolekce BO Zaokrouhlování ceníku [nepersistentní položka]")
-  public List<Actionpricelistrounding> getPriceListRoundings() {
-    return priceListRoundings;
-  }
-
-  public void setPriceListRoundings(List<Actionpricelistrounding> priceListRoundings) {
-    this.priceListRoundings = priceListRoundings;
-  }
-
-  public Actionpricelist restrictionUses(List<Actionpricelistrestrictionuse> restrictionUses) {
-    this.restrictionUses = restrictionUses;
-    return this;
-  }
-
-  public Actionpricelist addRestrictionUsesItem(Actionpricelistrestrictionuse restrictionUsesItem) {
-    this.restrictionUses.add(restrictionUsesItem);
+  public Actionpricelist addPricelistroundingsItem(Actionpricelistrounding pricelistroundingsItem) {
+    this.pricelistroundings.add(pricelistroundingsItem);
     return this;
   }
 
    /**
-   * Omezení použití; kolekce BO ActionPriceListRestrictionUse [nepersistentní položka]
-   * @return restrictionUses
+   * zaokrouhlování ceníku; kolekce bo zaokrouhlování ceníku [nepersistentní položka]
+   * @return pricelistroundings
   **/
-  @ApiModelProperty(example = "null", value = "Omezení použití; kolekce BO ActionPriceListRestrictionUse [nepersistentní položka]")
-  public List<Actionpricelistrestrictionuse> getRestrictionUses() {
-    return restrictionUses;
+  @ApiModelProperty(example = "null", value = "zaokrouhlování ceníku; kolekce bo zaokrouhlování ceníku [nepersistentní položka]")
+  public List<Actionpricelistrounding> getPricelistroundings() {
+    return pricelistroundings;
   }
 
-  public void setRestrictionUses(List<Actionpricelistrestrictionuse> restrictionUses) {
-    this.restrictionUses = restrictionUses;
+  public void setPricelistroundings(List<Actionpricelistrounding> pricelistroundings) {
+    this.pricelistroundings = pricelistroundings;
+  }
+
+  public Actionpricelist restrictionuses(List<Actionpricelistrestrictionuse> restrictionuses) {
+    this.restrictionuses = restrictionuses;
+    return this;
+  }
+
+  public Actionpricelist addRestrictionusesItem(Actionpricelistrestrictionuse restrictionusesItem) {
+    this.restrictionuses.add(restrictionusesItem);
+    return this;
+  }
+
+   /**
+   * omezení použití; kolekce bo actionpricelistrestrictionuse [nepersistentní položka]
+   * @return restrictionuses
+  **/
+  @ApiModelProperty(example = "null", value = "omezení použití; kolekce bo actionpricelistrestrictionuse [nepersistentní položka]")
+  public List<Actionpricelistrestrictionuse> getRestrictionuses() {
+    return restrictionuses;
+  }
+
+  public void setRestrictionuses(List<Actionpricelistrestrictionuse> restrictionuses) {
+    this.restrictionuses = restrictionuses;
   }
 
 
@@ -695,29 +731,29 @@ public class Actionpricelist   {
       return false;
     }
     Actionpricelist actionpricelist = (Actionpricelist) o;
-    return Objects.equals(this.displayName, actionpricelist.displayName) &&
-        Objects.equals(this.ID, actionpricelist.ID) &&
-        Objects.equals(this.classID, actionpricelist.classID) &&
-        Objects.equals(this.objVersion, actionpricelist.objVersion) &&
+    return Objects.equals(this.displayname, actionpricelist.displayname) &&
+        Objects.equals(this.id, actionpricelist.id) &&
+        Objects.equals(this.classid, actionpricelist.classid) &&
+        Objects.equals(this.objversion, actionpricelist.objversion) &&
         Objects.equals(this.hidden, actionpricelist.hidden) &&
         Objects.equals(this.code, actionpricelist.code) &&
         Objects.equals(this.name, actionpricelist.name) &&
         Objects.equals(this.note, actionpricelist.note) &&
         Objects.equals(this.comment, actionpricelist.comment) &&
-        Objects.equals(this.managedByID, actionpricelist.managedByID) &&
-        Objects.equals(this.creationDateDATE, actionpricelist.creationDateDATE) &&
-        Objects.equals(this.dealerDiscountExcluded, actionpricelist.dealerDiscountExcluded) &&
-        Objects.equals(this.individualDiscountExcluded, actionpricelist.individualDiscountExcluded) &&
-        Objects.equals(this.financialDiscountExcluded, actionpricelist.financialDiscountExcluded) &&
-        Objects.equals(this.quantityDiscountExcluded, actionpricelist.quantityDiscountExcluded) &&
-        Objects.equals(this.documentDiscountExcluded, actionpricelist.documentDiscountExcluded) &&
+        Objects.equals(this.managedbyId, actionpricelist.managedbyId) &&
+        Objects.equals(this.creationdatedate, actionpricelist.creationdatedate) &&
+        Objects.equals(this.dealerdiscountexcluded, actionpricelist.dealerdiscountexcluded) &&
+        Objects.equals(this.individualdiscountexcluded, actionpricelist.individualdiscountexcluded) &&
+        Objects.equals(this.financialdiscountexcluded, actionpricelist.financialdiscountexcluded) &&
+        Objects.equals(this.quantitydiscountexcluded, actionpricelist.quantitydiscountexcluded) &&
+        Objects.equals(this.documentdiscountexcluded, actionpricelist.documentdiscountexcluded) &&
         Objects.equals(this.priority, actionpricelist.priority) &&
-        Objects.equals(this.dateFromDATE, actionpricelist.dateFromDATE) &&
-        Objects.equals(this.dateToDATE, actionpricelist.dateToDATE) &&
-        Objects.equals(this.byTime, actionpricelist.byTime) &&
-        Objects.equals(this.timeFrom, actionpricelist.timeFrom) &&
-        Objects.equals(this.timeTo, actionpricelist.timeTo) &&
-        Objects.equals(this.byDateOfWeek, actionpricelist.byDateOfWeek) &&
+        Objects.equals(this.datefromdate, actionpricelist.datefromdate) &&
+        Objects.equals(this.datetodate, actionpricelist.datetodate) &&
+        Objects.equals(this.bytime, actionpricelist.bytime) &&
+        Objects.equals(this.timefrom, actionpricelist.timefrom) &&
+        Objects.equals(this.timeto, actionpricelist.timeto) &&
+        Objects.equals(this.bydateofweek, actionpricelist.bydateofweek) &&
         Objects.equals(this.monday, actionpricelist.monday) &&
         Objects.equals(this.tuesday, actionpricelist.tuesday) &&
         Objects.equals(this.wednesday, actionpricelist.wednesday) &&
@@ -725,13 +761,13 @@ public class Actionpricelist   {
         Objects.equals(this.friday, actionpricelist.friday) &&
         Objects.equals(this.saturday, actionpricelist.saturday) &&
         Objects.equals(this.sunday, actionpricelist.sunday) &&
-        Objects.equals(this.priceListRoundings, actionpricelist.priceListRoundings) &&
-        Objects.equals(this.restrictionUses, actionpricelist.restrictionUses);
+        Objects.equals(this.pricelistroundings, actionpricelist.pricelistroundings) &&
+        Objects.equals(this.restrictionuses, actionpricelist.restrictionuses);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, note, comment, managedByID, creationDateDATE, dealerDiscountExcluded, individualDiscountExcluded, financialDiscountExcluded, quantityDiscountExcluded, documentDiscountExcluded, priority, dateFromDATE, dateToDATE, byTime, timeFrom, timeTo, byDateOfWeek, monday, tuesday, wednesday, thursday, friday, saturday, sunday, priceListRoundings, restrictionUses);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, note, comment, managedbyId, creationdatedate, dealerdiscountexcluded, individualdiscountexcluded, financialdiscountexcluded, quantitydiscountexcluded, documentdiscountexcluded, priority, datefromdate, datetodate, bytime, timefrom, timeto, bydateofweek, monday, tuesday, wednesday, thursday, friday, saturday, sunday, pricelistroundings, restrictionuses);
   }
 
   @Override
@@ -739,29 +775,29 @@ public class Actionpricelist   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Actionpricelist {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
     sb.append("    comment: ").append(toIndentedString(comment)).append("\n");
-    sb.append("    managedByID: ").append(toIndentedString(managedByID)).append("\n");
-    sb.append("    creationDateDATE: ").append(toIndentedString(creationDateDATE)).append("\n");
-    sb.append("    dealerDiscountExcluded: ").append(toIndentedString(dealerDiscountExcluded)).append("\n");
-    sb.append("    individualDiscountExcluded: ").append(toIndentedString(individualDiscountExcluded)).append("\n");
-    sb.append("    financialDiscountExcluded: ").append(toIndentedString(financialDiscountExcluded)).append("\n");
-    sb.append("    quantityDiscountExcluded: ").append(toIndentedString(quantityDiscountExcluded)).append("\n");
-    sb.append("    documentDiscountExcluded: ").append(toIndentedString(documentDiscountExcluded)).append("\n");
+    sb.append("    managedbyId: ").append(toIndentedString(managedbyId)).append("\n");
+    sb.append("    creationdatedate: ").append(toIndentedString(creationdatedate)).append("\n");
+    sb.append("    dealerdiscountexcluded: ").append(toIndentedString(dealerdiscountexcluded)).append("\n");
+    sb.append("    individualdiscountexcluded: ").append(toIndentedString(individualdiscountexcluded)).append("\n");
+    sb.append("    financialdiscountexcluded: ").append(toIndentedString(financialdiscountexcluded)).append("\n");
+    sb.append("    quantitydiscountexcluded: ").append(toIndentedString(quantitydiscountexcluded)).append("\n");
+    sb.append("    documentdiscountexcluded: ").append(toIndentedString(documentdiscountexcluded)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
-    sb.append("    dateFromDATE: ").append(toIndentedString(dateFromDATE)).append("\n");
-    sb.append("    dateToDATE: ").append(toIndentedString(dateToDATE)).append("\n");
-    sb.append("    byTime: ").append(toIndentedString(byTime)).append("\n");
-    sb.append("    timeFrom: ").append(toIndentedString(timeFrom)).append("\n");
-    sb.append("    timeTo: ").append(toIndentedString(timeTo)).append("\n");
-    sb.append("    byDateOfWeek: ").append(toIndentedString(byDateOfWeek)).append("\n");
+    sb.append("    datefromdate: ").append(toIndentedString(datefromdate)).append("\n");
+    sb.append("    datetodate: ").append(toIndentedString(datetodate)).append("\n");
+    sb.append("    bytime: ").append(toIndentedString(bytime)).append("\n");
+    sb.append("    timefrom: ").append(toIndentedString(timefrom)).append("\n");
+    sb.append("    timeto: ").append(toIndentedString(timeto)).append("\n");
+    sb.append("    bydateofweek: ").append(toIndentedString(bydateofweek)).append("\n");
     sb.append("    monday: ").append(toIndentedString(monday)).append("\n");
     sb.append("    tuesday: ").append(toIndentedString(tuesday)).append("\n");
     sb.append("    wednesday: ").append(toIndentedString(wednesday)).append("\n");
@@ -769,8 +805,8 @@ public class Actionpricelist   {
     sb.append("    friday: ").append(toIndentedString(friday)).append("\n");
     sb.append("    saturday: ").append(toIndentedString(saturday)).append("\n");
     sb.append("    sunday: ").append(toIndentedString(sunday)).append("\n");
-    sb.append("    priceListRoundings: ").append(toIndentedString(priceListRoundings)).append("\n");
-    sb.append("    restrictionUses: ").append(toIndentedString(restrictionUses)).append("\n");
+    sb.append("    pricelistroundings: ").append(toIndentedString(pricelistroundings)).append("\n");
+    sb.append("    restrictionuses: ").append(toIndentedString(restrictionuses)).append("\n");
     sb.append("}");
     return sb.toString();
   }

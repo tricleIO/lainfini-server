@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,120 +34,156 @@ import java.util.Objects;
 /**
  * Holidaytype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Holidaytype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Regular")
+  @SerializedName("regular")
   private Boolean regular = null;
 
-  @SerializedName("Claim")
+  @SerializedName("claim")
   private Double claim = null;
 
-  @SerializedName("GoOn")
-  private Boolean goOn = null;
+  @SerializedName("goon")
+  private Boolean goon = null;
 
-  @SerializedName("RestTransfer")
-  private Double restTransfer = null;
+  @SerializedName("resttransfer")
+  private Double resttransfer = null;
 
-  @SerializedName("ValidFromMonthDay")
-  private Integer validFromMonthDay = null;
+  @SerializedName("validfrommonthday")
+  private Integer validfrommonthday = null;
 
-  @SerializedName("ValidFromMonth")
-  private Integer validFromMonth = null;
+  @SerializedName("validfrommonth")
+  private Integer validfrommonth = null;
 
-  @SerializedName("ValidFromDay")
-  private Integer validFromDay = null;
+  @SerializedName("validfromday")
+  private Integer validfromday = null;
 
-  @SerializedName("ValidFromDate")
-  private String validFromDate = null;
+  @SerializedName("validfromdate")
+  private String validfromdate = null;
 
-  @SerializedName("ValidToMonthDay")
-  private Integer validToMonthDay = null;
+  @SerializedName("validtomonthday")
+  private Integer validtomonthday = null;
 
-  @SerializedName("ValidToMonth")
-  private Integer validToMonth = null;
+  @SerializedName("validtomonth")
+  private Integer validtomonth = null;
 
-  @SerializedName("ValidToDay")
-  private Integer validToDay = null;
+  @SerializedName("validtoday")
+  private Integer validtoday = null;
 
-  @SerializedName("ValidToDate")
-  private String validToDate = null;
+  @SerializedName("validtodate")
+  private String validtodate = null;
 
-  @SerializedName("Priority")
+  @SerializedName("priority")
   private Integer priority = null;
 
-  @SerializedName("PayAble")
-  private Boolean payAble = null;
+  @SerializedName("payable")
+  private Boolean payable = null;
 
-  @SerializedName("ClaimType")
-  private Integer claimType = null;
+  @SerializedName("claimtype")
+  private Integer claimtype = null;
 
-  @SerializedName("TransferWholeRest")
-  private Boolean transferWholeRest = null;
+  @SerializedName("transferwholerest")
+  private Boolean transferwholerest = null;
 
-  @SerializedName("ClaimByExpression")
-  private Boolean claimByExpression = null;
+  @SerializedName("claimbyexpression")
+  private Boolean claimbyexpression = null;
 
-  @SerializedName("ClaimExpression")
-  private String claimExpression = null;
+  @SerializedName("claimexpression")
+  private String claimexpression = null;
 
-  @SerializedName("ClaimText")
-  private String claimText = null;
+  @SerializedName("claimtext")
+  private String claimtext = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Holidaytype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Holidaytype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Holidaytype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Holidaytype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Holidaytype hidden(Boolean hidden) {
@@ -156,10 +192,10 @@ public class Holidaytype   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -174,10 +210,10 @@ public class Holidaytype   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -192,10 +228,10 @@ public class Holidaytype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -228,10 +264,10 @@ public class Holidaytype   {
   }
 
    /**
-   * Nárok [persistentní položka]
+   * nárok [persistentní položka]
    * @return claim
   **/
-  @ApiModelProperty(example = "null", value = "Nárok [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "nárok [persistentní položka]")
   public Double getClaim() {
     return claim;
   }
@@ -240,184 +276,184 @@ public class Holidaytype   {
     this.claim = claim;
   }
 
-  public Holidaytype goOn(Boolean goOn) {
-    this.goOn = goOn;
+  public Holidaytype goon(Boolean goon) {
+    this.goon = goon;
     return this;
   }
 
    /**
-   * Přenos [persistentní položka]
-   * @return goOn
+   * přenos [persistentní položka]
+   * @return goon
   **/
-  @ApiModelProperty(example = "null", value = "Přenos [persistentní položka]")
-  public Boolean getGoOn() {
-    return goOn;
+  @ApiModelProperty(example = "null", value = "přenos [persistentní položka]")
+  public Boolean getGoon() {
+    return goon;
   }
 
-  public void setGoOn(Boolean goOn) {
-    this.goOn = goOn;
+  public void setGoon(Boolean goon) {
+    this.goon = goon;
   }
 
-  public Holidaytype restTransfer(Double restTransfer) {
-    this.restTransfer = restTransfer;
+  public Holidaytype resttransfer(Double resttransfer) {
+    this.resttransfer = resttransfer;
     return this;
   }
 
    /**
-   * Zbytek [persistentní položka]
-   * @return restTransfer
+   * zbytek [persistentní položka]
+   * @return resttransfer
   **/
-  @ApiModelProperty(example = "null", value = "Zbytek [persistentní položka]")
-  public Double getRestTransfer() {
-    return restTransfer;
+  @ApiModelProperty(example = "null", value = "zbytek [persistentní položka]")
+  public Double getResttransfer() {
+    return resttransfer;
   }
 
-  public void setRestTransfer(Double restTransfer) {
-    this.restTransfer = restTransfer;
+  public void setResttransfer(Double resttransfer) {
+    this.resttransfer = resttransfer;
   }
 
-  public Holidaytype validFromMonthDay(Integer validFromMonthDay) {
-    this.validFromMonthDay = validFromMonthDay;
+  public Holidaytype validfrommonthday(Integer validfrommonthday) {
+    this.validfrommonthday = validfrommonthday;
     return this;
   }
 
    /**
-   * Měsíc, den od [persistentní položka]
-   * @return validFromMonthDay
+   * měsíc, den od [persistentní položka]
+   * @return validfrommonthday
   **/
-  @ApiModelProperty(example = "null", value = "Měsíc, den od [persistentní položka]")
-  public Integer getValidFromMonthDay() {
-    return validFromMonthDay;
+  @ApiModelProperty(example = "null", value = "měsíc, den od [persistentní položka]")
+  public Integer getValidfrommonthday() {
+    return validfrommonthday;
   }
 
-  public void setValidFromMonthDay(Integer validFromMonthDay) {
-    this.validFromMonthDay = validFromMonthDay;
+  public void setValidfrommonthday(Integer validfrommonthday) {
+    this.validfrommonthday = validfrommonthday;
   }
 
-  public Holidaytype validFromMonth(Integer validFromMonth) {
-    this.validFromMonth = validFromMonth;
+  public Holidaytype validfrommonth(Integer validfrommonth) {
+    this.validfrommonth = validfrommonth;
     return this;
   }
 
    /**
-   * Měsíc od
-   * @return validFromMonth
+   * měsíc od
+   * @return validfrommonth
   **/
-  @ApiModelProperty(example = "null", value = "Měsíc od")
-  public Integer getValidFromMonth() {
-    return validFromMonth;
+  @ApiModelProperty(example = "null", value = "měsíc od")
+  public Integer getValidfrommonth() {
+    return validfrommonth;
   }
 
-  public void setValidFromMonth(Integer validFromMonth) {
-    this.validFromMonth = validFromMonth;
+  public void setValidfrommonth(Integer validfrommonth) {
+    this.validfrommonth = validfrommonth;
   }
 
-  public Holidaytype validFromDay(Integer validFromDay) {
-    this.validFromDay = validFromDay;
+  public Holidaytype validfromday(Integer validfromday) {
+    this.validfromday = validfromday;
     return this;
   }
 
    /**
-   * Den od
-   * @return validFromDay
+   * den od
+   * @return validfromday
   **/
-  @ApiModelProperty(example = "null", value = "Den od")
-  public Integer getValidFromDay() {
-    return validFromDay;
+  @ApiModelProperty(example = "null", value = "den od")
+  public Integer getValidfromday() {
+    return validfromday;
   }
 
-  public void setValidFromDay(Integer validFromDay) {
-    this.validFromDay = validFromDay;
+  public void setValidfromday(Integer validfromday) {
+    this.validfromday = validfromday;
   }
 
-  public Holidaytype validFromDate(String validFromDate) {
-    this.validFromDate = validFromDate;
+  public Holidaytype validfromdate(String validfromdate) {
+    this.validfromdate = validfromdate;
     return this;
   }
 
    /**
-   * Datum od
-   * @return validFromDate
+   * datum od
+   * @return validfromdate
   **/
-  @ApiModelProperty(example = "null", value = "Datum od")
-  public String getValidFromDate() {
-    return validFromDate;
+  @ApiModelProperty(example = "null", value = "datum od")
+  public String getValidfromdate() {
+    return validfromdate;
   }
 
-  public void setValidFromDate(String validFromDate) {
-    this.validFromDate = validFromDate;
+  public void setValidfromdate(String validfromdate) {
+    this.validfromdate = validfromdate;
   }
 
-  public Holidaytype validToMonthDay(Integer validToMonthDay) {
-    this.validToMonthDay = validToMonthDay;
+  public Holidaytype validtomonthday(Integer validtomonthday) {
+    this.validtomonthday = validtomonthday;
     return this;
   }
 
    /**
-   * Měsíc, den do [persistentní položka]
-   * @return validToMonthDay
+   * měsíc, den do [persistentní položka]
+   * @return validtomonthday
   **/
-  @ApiModelProperty(example = "null", value = "Měsíc, den do [persistentní položka]")
-  public Integer getValidToMonthDay() {
-    return validToMonthDay;
+  @ApiModelProperty(example = "null", value = "měsíc, den do [persistentní položka]")
+  public Integer getValidtomonthday() {
+    return validtomonthday;
   }
 
-  public void setValidToMonthDay(Integer validToMonthDay) {
-    this.validToMonthDay = validToMonthDay;
+  public void setValidtomonthday(Integer validtomonthday) {
+    this.validtomonthday = validtomonthday;
   }
 
-  public Holidaytype validToMonth(Integer validToMonth) {
-    this.validToMonth = validToMonth;
+  public Holidaytype validtomonth(Integer validtomonth) {
+    this.validtomonth = validtomonth;
     return this;
   }
 
    /**
-   * Měsíc do
-   * @return validToMonth
+   * měsíc do
+   * @return validtomonth
   **/
-  @ApiModelProperty(example = "null", value = "Měsíc do")
-  public Integer getValidToMonth() {
-    return validToMonth;
+  @ApiModelProperty(example = "null", value = "měsíc do")
+  public Integer getValidtomonth() {
+    return validtomonth;
   }
 
-  public void setValidToMonth(Integer validToMonth) {
-    this.validToMonth = validToMonth;
+  public void setValidtomonth(Integer validtomonth) {
+    this.validtomonth = validtomonth;
   }
 
-  public Holidaytype validToDay(Integer validToDay) {
-    this.validToDay = validToDay;
+  public Holidaytype validtoday(Integer validtoday) {
+    this.validtoday = validtoday;
     return this;
   }
 
    /**
-   * Den do
-   * @return validToDay
+   * den do
+   * @return validtoday
   **/
-  @ApiModelProperty(example = "null", value = "Den do")
-  public Integer getValidToDay() {
-    return validToDay;
+  @ApiModelProperty(example = "null", value = "den do")
+  public Integer getValidtoday() {
+    return validtoday;
   }
 
-  public void setValidToDay(Integer validToDay) {
-    this.validToDay = validToDay;
+  public void setValidtoday(Integer validtoday) {
+    this.validtoday = validtoday;
   }
 
-  public Holidaytype validToDate(String validToDate) {
-    this.validToDate = validToDate;
+  public Holidaytype validtodate(String validtodate) {
+    this.validtodate = validtodate;
     return this;
   }
 
    /**
-   * Datum do
-   * @return validToDate
+   * datum do
+   * @return validtodate
   **/
-  @ApiModelProperty(example = "null", value = "Datum do")
-  public String getValidToDate() {
-    return validToDate;
+  @ApiModelProperty(example = "null", value = "datum do")
+  public String getValidtodate() {
+    return validtodate;
   }
 
-  public void setValidToDate(String validToDate) {
-    this.validToDate = validToDate;
+  public void setValidtodate(String validtodate) {
+    this.validtodate = validtodate;
   }
 
   public Holidaytype priority(Integer priority) {
@@ -426,10 +462,10 @@ public class Holidaytype   {
   }
 
    /**
-   * Priorita [persistentní položka]
+   * priorita [persistentní položka]
    * @return priority
   **/
-  @ApiModelProperty(example = "null", value = "Priorita [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "priorita [persistentní položka]")
   public Integer getPriority() {
     return priority;
   }
@@ -438,112 +474,112 @@ public class Holidaytype   {
     this.priority = priority;
   }
 
-  public Holidaytype payAble(Boolean payAble) {
-    this.payAble = payAble;
+  public Holidaytype payable(Boolean payable) {
+    this.payable = payable;
     return this;
   }
 
    /**
-   * Proplácet [persistentní položka]
-   * @return payAble
+   * proplácet [persistentní položka]
+   * @return payable
   **/
-  @ApiModelProperty(example = "null", value = "Proplácet [persistentní položka]")
-  public Boolean getPayAble() {
-    return payAble;
+  @ApiModelProperty(example = "null", value = "proplácet [persistentní položka]")
+  public Boolean getPayable() {
+    return payable;
   }
 
-  public void setPayAble(Boolean payAble) {
-    this.payAble = payAble;
+  public void setPayable(Boolean payable) {
+    this.payable = payable;
   }
 
-  public Holidaytype claimType(Integer claimType) {
-    this.claimType = claimType;
+  public Holidaytype claimtype(Integer claimtype) {
+    this.claimtype = claimtype;
     return this;
   }
 
    /**
-   * Jednotka nároku [persistentní položka]
-   * @return claimType
+   * jednotka nároku [persistentní položka]
+   * @return claimtype
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka nároku [persistentní položka]")
-  public Integer getClaimType() {
-    return claimType;
+  @ApiModelProperty(example = "null", value = "jednotka nároku [persistentní položka]")
+  public Integer getClaimtype() {
+    return claimtype;
   }
 
-  public void setClaimType(Integer claimType) {
-    this.claimType = claimType;
+  public void setClaimtype(Integer claimtype) {
+    this.claimtype = claimtype;
   }
 
-  public Holidaytype transferWholeRest(Boolean transferWholeRest) {
-    this.transferWholeRest = transferWholeRest;
+  public Holidaytype transferwholerest(Boolean transferwholerest) {
+    this.transferwholerest = transferwholerest;
     return this;
   }
 
    /**
-   * Přenášet vše [persistentní položka]
-   * @return transferWholeRest
+   * přenášet vše [persistentní položka]
+   * @return transferwholerest
   **/
-  @ApiModelProperty(example = "null", value = "Přenášet vše [persistentní položka]")
-  public Boolean getTransferWholeRest() {
-    return transferWholeRest;
+  @ApiModelProperty(example = "null", value = "přenášet vše [persistentní položka]")
+  public Boolean getTransferwholerest() {
+    return transferwholerest;
   }
 
-  public void setTransferWholeRest(Boolean transferWholeRest) {
-    this.transferWholeRest = transferWholeRest;
+  public void setTransferwholerest(Boolean transferwholerest) {
+    this.transferwholerest = transferwholerest;
   }
 
-  public Holidaytype claimByExpression(Boolean claimByExpression) {
-    this.claimByExpression = claimByExpression;
+  public Holidaytype claimbyexpression(Boolean claimbyexpression) {
+    this.claimbyexpression = claimbyexpression;
     return this;
   }
 
    /**
-   * Nárok výrazem [persistentní položka]
-   * @return claimByExpression
+   * nárok výrazem [persistentní položka]
+   * @return claimbyexpression
   **/
-  @ApiModelProperty(example = "null", value = "Nárok výrazem [persistentní položka]")
-  public Boolean getClaimByExpression() {
-    return claimByExpression;
+  @ApiModelProperty(example = "null", value = "nárok výrazem [persistentní položka]")
+  public Boolean getClaimbyexpression() {
+    return claimbyexpression;
   }
 
-  public void setClaimByExpression(Boolean claimByExpression) {
-    this.claimByExpression = claimByExpression;
+  public void setClaimbyexpression(Boolean claimbyexpression) {
+    this.claimbyexpression = claimbyexpression;
   }
 
-  public Holidaytype claimExpression(String claimExpression) {
-    this.claimExpression = claimExpression;
+  public Holidaytype claimexpression(String claimexpression) {
+    this.claimexpression = claimexpression;
     return this;
   }
 
    /**
-   * Výraz nároku [persistentní položka]
-   * @return claimExpression
+   * výraz nároku [persistentní položka]
+   * @return claimexpression
   **/
-  @ApiModelProperty(example = "null", value = "Výraz nároku [persistentní položka]")
-  public String getClaimExpression() {
-    return claimExpression;
+  @ApiModelProperty(example = "null", value = "výraz nároku [persistentní položka]")
+  public String getClaimexpression() {
+    return claimexpression;
   }
 
-  public void setClaimExpression(String claimExpression) {
-    this.claimExpression = claimExpression;
+  public void setClaimexpression(String claimexpression) {
+    this.claimexpression = claimexpression;
   }
 
-  public Holidaytype claimText(String claimText) {
-    this.claimText = claimText;
+  public Holidaytype claimtext(String claimtext) {
+    this.claimtext = claimtext;
     return this;
   }
 
    /**
-   * Nárok textově
-   * @return claimText
+   * nárok textově
+   * @return claimtext
   **/
-  @ApiModelProperty(example = "null", value = "Nárok textově")
-  public String getClaimText() {
-    return claimText;
+  @ApiModelProperty(example = "null", value = "nárok textově")
+  public String getClaimtext() {
+    return claimtext;
   }
 
-  public void setClaimText(String claimText) {
-    this.claimText = claimText;
+  public void setClaimtext(String claimtext) {
+    this.claimtext = claimtext;
   }
 
 
@@ -556,37 +592,37 @@ public class Holidaytype   {
       return false;
     }
     Holidaytype holidaytype = (Holidaytype) o;
-    return Objects.equals(this.displayName, holidaytype.displayName) &&
-        Objects.equals(this.ID, holidaytype.ID) &&
-        Objects.equals(this.classID, holidaytype.classID) &&
-        Objects.equals(this.objVersion, holidaytype.objVersion) &&
+    return Objects.equals(this.displayname, holidaytype.displayname) &&
+        Objects.equals(this.id, holidaytype.id) &&
+        Objects.equals(this.classid, holidaytype.classid) &&
+        Objects.equals(this.objversion, holidaytype.objversion) &&
         Objects.equals(this.hidden, holidaytype.hidden) &&
         Objects.equals(this.code, holidaytype.code) &&
         Objects.equals(this.name, holidaytype.name) &&
         Objects.equals(this.regular, holidaytype.regular) &&
         Objects.equals(this.claim, holidaytype.claim) &&
-        Objects.equals(this.goOn, holidaytype.goOn) &&
-        Objects.equals(this.restTransfer, holidaytype.restTransfer) &&
-        Objects.equals(this.validFromMonthDay, holidaytype.validFromMonthDay) &&
-        Objects.equals(this.validFromMonth, holidaytype.validFromMonth) &&
-        Objects.equals(this.validFromDay, holidaytype.validFromDay) &&
-        Objects.equals(this.validFromDate, holidaytype.validFromDate) &&
-        Objects.equals(this.validToMonthDay, holidaytype.validToMonthDay) &&
-        Objects.equals(this.validToMonth, holidaytype.validToMonth) &&
-        Objects.equals(this.validToDay, holidaytype.validToDay) &&
-        Objects.equals(this.validToDate, holidaytype.validToDate) &&
+        Objects.equals(this.goon, holidaytype.goon) &&
+        Objects.equals(this.resttransfer, holidaytype.resttransfer) &&
+        Objects.equals(this.validfrommonthday, holidaytype.validfrommonthday) &&
+        Objects.equals(this.validfrommonth, holidaytype.validfrommonth) &&
+        Objects.equals(this.validfromday, holidaytype.validfromday) &&
+        Objects.equals(this.validfromdate, holidaytype.validfromdate) &&
+        Objects.equals(this.validtomonthday, holidaytype.validtomonthday) &&
+        Objects.equals(this.validtomonth, holidaytype.validtomonth) &&
+        Objects.equals(this.validtoday, holidaytype.validtoday) &&
+        Objects.equals(this.validtodate, holidaytype.validtodate) &&
         Objects.equals(this.priority, holidaytype.priority) &&
-        Objects.equals(this.payAble, holidaytype.payAble) &&
-        Objects.equals(this.claimType, holidaytype.claimType) &&
-        Objects.equals(this.transferWholeRest, holidaytype.transferWholeRest) &&
-        Objects.equals(this.claimByExpression, holidaytype.claimByExpression) &&
-        Objects.equals(this.claimExpression, holidaytype.claimExpression) &&
-        Objects.equals(this.claimText, holidaytype.claimText);
+        Objects.equals(this.payable, holidaytype.payable) &&
+        Objects.equals(this.claimtype, holidaytype.claimtype) &&
+        Objects.equals(this.transferwholerest, holidaytype.transferwholerest) &&
+        Objects.equals(this.claimbyexpression, holidaytype.claimbyexpression) &&
+        Objects.equals(this.claimexpression, holidaytype.claimexpression) &&
+        Objects.equals(this.claimtext, holidaytype.claimtext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, regular, claim, goOn, restTransfer, validFromMonthDay, validFromMonth, validFromDay, validFromDate, validToMonthDay, validToMonth, validToDay, validToDate, priority, payAble, claimType, transferWholeRest, claimByExpression, claimExpression, claimText);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, regular, claim, goon, resttransfer, validfrommonthday, validfrommonth, validfromday, validfromdate, validtomonthday, validtomonth, validtoday, validtodate, priority, payable, claimtype, transferwholerest, claimbyexpression, claimexpression, claimtext);
   }
 
   @Override
@@ -594,32 +630,32 @@ public class Holidaytype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Holidaytype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    regular: ").append(toIndentedString(regular)).append("\n");
     sb.append("    claim: ").append(toIndentedString(claim)).append("\n");
-    sb.append("    goOn: ").append(toIndentedString(goOn)).append("\n");
-    sb.append("    restTransfer: ").append(toIndentedString(restTransfer)).append("\n");
-    sb.append("    validFromMonthDay: ").append(toIndentedString(validFromMonthDay)).append("\n");
-    sb.append("    validFromMonth: ").append(toIndentedString(validFromMonth)).append("\n");
-    sb.append("    validFromDay: ").append(toIndentedString(validFromDay)).append("\n");
-    sb.append("    validFromDate: ").append(toIndentedString(validFromDate)).append("\n");
-    sb.append("    validToMonthDay: ").append(toIndentedString(validToMonthDay)).append("\n");
-    sb.append("    validToMonth: ").append(toIndentedString(validToMonth)).append("\n");
-    sb.append("    validToDay: ").append(toIndentedString(validToDay)).append("\n");
-    sb.append("    validToDate: ").append(toIndentedString(validToDate)).append("\n");
+    sb.append("    goon: ").append(toIndentedString(goon)).append("\n");
+    sb.append("    resttransfer: ").append(toIndentedString(resttransfer)).append("\n");
+    sb.append("    validfrommonthday: ").append(toIndentedString(validfrommonthday)).append("\n");
+    sb.append("    validfrommonth: ").append(toIndentedString(validfrommonth)).append("\n");
+    sb.append("    validfromday: ").append(toIndentedString(validfromday)).append("\n");
+    sb.append("    validfromdate: ").append(toIndentedString(validfromdate)).append("\n");
+    sb.append("    validtomonthday: ").append(toIndentedString(validtomonthday)).append("\n");
+    sb.append("    validtomonth: ").append(toIndentedString(validtomonth)).append("\n");
+    sb.append("    validtoday: ").append(toIndentedString(validtoday)).append("\n");
+    sb.append("    validtodate: ").append(toIndentedString(validtodate)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
-    sb.append("    payAble: ").append(toIndentedString(payAble)).append("\n");
-    sb.append("    claimType: ").append(toIndentedString(claimType)).append("\n");
-    sb.append("    transferWholeRest: ").append(toIndentedString(transferWholeRest)).append("\n");
-    sb.append("    claimByExpression: ").append(toIndentedString(claimByExpression)).append("\n");
-    sb.append("    claimExpression: ").append(toIndentedString(claimExpression)).append("\n");
-    sb.append("    claimText: ").append(toIndentedString(claimText)).append("\n");
+    sb.append("    payable: ").append(toIndentedString(payable)).append("\n");
+    sb.append("    claimtype: ").append(toIndentedString(claimtype)).append("\n");
+    sb.append("    transferwholerest: ").append(toIndentedString(transferwholerest)).append("\n");
+    sb.append("    claimbyexpression: ").append(toIndentedString(claimbyexpression)).append("\n");
+    sb.append("    claimexpression: ").append(toIndentedString(claimexpression)).append("\n");
+    sb.append("    claimtext: ").append(toIndentedString(claimtext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

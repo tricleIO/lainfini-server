@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,345 +37,381 @@ import java.util.Objects;
 /**
  * Assetvaluechange
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Assetvaluechange   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("AccPresetDef_ID")
-  private String accPresetDefID = null;
+  @SerializedName("accpresetdef_id")
+  private String accpresetdefId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("AccDate$DATE")
-  private DateTime accDateDATE = null;
+  @SerializedName("accdate$date")
+  private DateTime accdatedate = null;
 
-  @SerializedName("AccDocQueue_ID")
-  private String accDocQueueID = null;
+  @SerializedName("accdocqueue_id")
+  private String accdocqueueId = null;
 
-  @SerializedName("AccountingType")
-  private Integer accountingType = null;
+  @SerializedName("accountingtype")
+  private Integer accountingtype = null;
 
-  @SerializedName("IsAccounted")
-  private Boolean isAccounted = null;
+  @SerializedName("isaccounted")
+  private Boolean isaccounted = null;
 
-  @SerializedName("Dirty")
+  @SerializedName("dirty")
   private Boolean dirty = null;
 
-  @SerializedName("AssetCard_Type")
-  private Integer assetCardType = null;
+  @SerializedName("assetcard_type")
+  private Integer assetcardType = null;
 
-  @SerializedName("AssetCard_ID")
-  private String assetCardID = null;
+  @SerializedName("assetcard_id")
+  private String assetcardId = null;
 
-  @SerializedName("TaxBasePriceAmount")
-  private Double taxBasePriceAmount = null;
+  @SerializedName("taxbasepriceamount")
+  private Double taxbasepriceamount = null;
 
-  @SerializedName("AccBasePriceAmount")
-  private Double accBasePriceAmount = null;
+  @SerializedName("accbasepriceamount")
+  private Double accbasepriceamount = null;
 
-  @SerializedName("TaxRemainderPriceAmount")
-  private Double taxRemainderPriceAmount = null;
+  @SerializedName("taxremainderpriceamount")
+  private Double taxremainderpriceamount = null;
 
-  @SerializedName("AccRemainderPriceAmount")
-  private Double accRemainderPriceAmount = null;
+  @SerializedName("accremainderpriceamount")
+  private Double accremainderpriceamount = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("IsValorisation")
-  private Boolean isValorisation = null;
+  @SerializedName("isvalorisation")
+  private Boolean isvalorisation = null;
 
-  @SerializedName("IsApplyInCard")
-  private Boolean isApplyInCard = null;
+  @SerializedName("isapplyincard")
+  private Boolean isapplyincard = null;
 
-  @SerializedName("IsValorisationAsText")
-  private String isValorisationAsText = null;
+  @SerializedName("isvalorisationastext")
+  private String isvalorisationastext = null;
 
-  @SerializedName("DateUseInAssetCard$DATE")
-  private DateTime dateUseInAssetCardDATE = null;
+  @SerializedName("dateuseinassetcard$date")
+  private DateTime dateuseinassetcarddate = null;
 
-  @SerializedName("Components")
+  @SerializedName("components")
   private List<Assetvaluechangecomponent> components = new ArrayList<Assetvaluechangecomponent>();
 
-  @SerializedName("AccountValorisationAmount")
-  private Double accountValorisationAmount = null;
+  @SerializedName("accountvalorisationamount")
+  private Double accountvalorisationamount = null;
 
-  @SerializedName("AccountIncreaseAmount")
-  private Double accountIncreaseAmount = null;
+  @SerializedName("accountincreaseamount")
+  private Double accountincreaseamount = null;
 
-  @SerializedName("AccountValueChangeAmount")
-  private Double accountValueChangeAmount = null;
+  @SerializedName("accountvaluechangeamount")
+  private Double accountvaluechangeamount = null;
 
-  @SerializedName("ApplyInCardRegardlessOfAmount")
-  private Boolean applyInCardRegardlessOfAmount = null;
+  @SerializedName("applyincardregardlessofamount")
+  private Boolean applyincardregardlessofamount = null;
 
-  @SerializedName("CutByLimit")
-  private Double cutByLimit = null;
+  @SerializedName("cutbylimit")
+  private Double cutbylimit = null;
 
-  @SerializedName("RestMonthDeprecCount")
-  private Integer restMonthDeprecCount = null;
+  @SerializedName("restmonthdepreccount")
+  private Integer restmonthdepreccount = null;
 
-  @SerializedName("EndDepreciationDate$DATE")
-  private DateTime endDepreciationDateDATE = null;
+  @SerializedName("enddepreciationdate$date")
+  private DateTime enddepreciationdatedate = null;
 
-  @SerializedName("IsSubsidy")
-  private Boolean isSubsidy = null;
+  @SerializedName("issubsidy")
+  private Boolean issubsidy = null;
 
-  @SerializedName("DepreciationCorrectionSubsidy")
-  private Double depreciationCorrectionSubsidy = null;
+  @SerializedName("depreciationcorrectionsubsidy")
+  private Double depreciationcorrectionsubsidy = null;
 
-  @SerializedName("DepreciationCorrectDate$DATE")
-  private DateTime depreciationCorrectDateDATE = null;
+  @SerializedName("depreciationcorrectdate$date")
+  private DateTime depreciationcorrectdatedate = null;
 
-  @SerializedName("AccountAccValorisationAmount")
-  private Double accountAccValorisationAmount = null;
+  @SerializedName("accountaccvalorisationamount")
+  private Double accountaccvalorisationamount = null;
 
-  @SerializedName("AccountAccIncreaseAmount")
-  private Double accountAccIncreaseAmount = null;
+  @SerializedName("accountaccincreaseamount")
+  private Double accountaccincreaseamount = null;
 
-  @SerializedName("AccountAccValueChangeAmount")
-  private Double accountAccValueChangeAmount = null;
+  @SerializedName("accountaccvaluechangeamount")
+  private Double accountaccvaluechangeamount = null;
+
+  public Assetvaluechange displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
   }
 
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Assetvaluechange docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Assetvaluechange id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Assetvaluechange periodID(String periodID) {
-    this.periodID = periodID;
+  public Assetvaluechange classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Assetvaluechange ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Assetvaluechange objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Assetvaluechange docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Assetvaluechange docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Assetvaluechange createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Assetvaluechange periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Assetvaluechange correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Assetvaluechange ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Assetvaluechange newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Assetvaluechange docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Assetvaluechange newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Assetvaluechange createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Assetvaluechange accPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public Assetvaluechange correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Předkontace; ID objektu Účetní předkontace [persistentní položka]
-   * @return accPresetDefID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Předkontace; ID objektu Účetní předkontace [persistentní položka]")
-  public String getAccPresetDefID() {
-    return accPresetDefID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setAccPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+  }
+
+  public Assetvaluechange newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
+    return this;
+  }
+
+   /**
+   * typ relace
+   * @return newrelatedtype
+  **/
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
+  }
+
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
+  }
+
+  public Assetvaluechange newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
+    return this;
+  }
+
+   /**
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
+  **/
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
+  }
+
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
+  }
+
+  public Assetvaluechange accpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
+    return this;
+  }
+
+   /**
+   * předkontace; id objektu Účetní předkontace [persistentní položka]
+   * @return accpresetdefId
+  **/
+  @ApiModelProperty(example = "null", value = "předkontace; id objektu Účetní předkontace [persistentní položka]")
+  public String getAccpresetdefId() {
+    return accpresetdefId;
+  }
+
+  public void setAccpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
   }
 
   public Assetvaluechange description(String description) {
@@ -384,10 +420,10 @@ public class Assetvaluechange   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -396,76 +432,76 @@ public class Assetvaluechange   {
     this.description = description;
   }
 
-  public Assetvaluechange accDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public Assetvaluechange accdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
     return this;
   }
 
    /**
-   * Datum účt. [persistentní položka]
-   * @return accDateDATE
+   * datum účt. [persistentní položka]
+   * @return accdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum účt. [persistentní položka]")
-  public DateTime getAccDateDATE() {
-    return accDateDATE;
+  @ApiModelProperty(example = "null", value = "datum účt. [persistentní položka]")
+  public DateTime getAccdatedate() {
+    return accdatedate;
   }
 
-  public void setAccDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public void setAccdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
   }
 
-  public Assetvaluechange accDocQueueID(String accDocQueueID) {
-    this.accDocQueueID = accDocQueueID;
+  public Assetvaluechange accdocqueueId(String accdocqueueId) {
+    this.accdocqueueId = accdocqueueId;
     return this;
   }
 
    /**
-   * Účetní řada; ID objektu Účetní řada dokladů [persistentní položka]
-   * @return accDocQueueID
+   * Účetní řada; id objektu Účetní řada dokladů [persistentní položka]
+   * @return accdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Účetní řada; ID objektu Účetní řada dokladů [persistentní položka]")
-  public String getAccDocQueueID() {
-    return accDocQueueID;
+  @ApiModelProperty(example = "null", value = "Účetní řada; id objektu Účetní řada dokladů [persistentní položka]")
+  public String getAccdocqueueId() {
+    return accdocqueueId;
   }
 
-  public void setAccDocQueueID(String accDocQueueID) {
-    this.accDocQueueID = accDocQueueID;
+  public void setAccdocqueueId(String accdocqueueId) {
+    this.accdocqueueId = accdocqueueId;
   }
 
-  public Assetvaluechange accountingType(Integer accountingType) {
-    this.accountingType = accountingType;
+  public Assetvaluechange accountingtype(Integer accountingtype) {
+    this.accountingtype = accountingtype;
     return this;
   }
 
    /**
-   * Jak účtovat
-   * @return accountingType
+   * jak účtovat
+   * @return accountingtype
   **/
-  @ApiModelProperty(example = "null", value = "Jak účtovat")
-  public Integer getAccountingType() {
-    return accountingType;
+  @ApiModelProperty(example = "null", value = "jak účtovat")
+  public Integer getAccountingtype() {
+    return accountingtype;
   }
 
-  public void setAccountingType(Integer accountingType) {
-    this.accountingType = accountingType;
+  public void setAccountingtype(Integer accountingtype) {
+    this.accountingtype = accountingtype;
   }
 
-  public Assetvaluechange isAccounted(Boolean isAccounted) {
-    this.isAccounted = isAccounted;
+  public Assetvaluechange isaccounted(Boolean isaccounted) {
+    this.isaccounted = isaccounted;
     return this;
   }
 
    /**
    * Účtováno
-   * @return isAccounted
+   * @return isaccounted
   **/
   @ApiModelProperty(example = "null", value = "Účtováno")
-  public Boolean getIsAccounted() {
-    return isAccounted;
+  public Boolean getIsaccounted() {
+    return isaccounted;
   }
 
-  public void setIsAccounted(Boolean isAccounted) {
-    this.isAccounted = isAccounted;
+  public void setIsaccounted(Boolean isaccounted) {
+    this.isaccounted = isaccounted;
   }
 
   public Assetvaluechange dirty(Boolean dirty) {
@@ -474,10 +510,10 @@ public class Assetvaluechange   {
   }
 
    /**
-   * Zakázané přepočítání
+   * zakázané přepočítání
    * @return dirty
   **/
-  @ApiModelProperty(example = "null", value = "Zakázané přepočítání")
+  @ApiModelProperty(example = "null", value = "zakázané přepočítání")
   public Boolean getDirty() {
     return dirty;
   }
@@ -486,256 +522,256 @@ public class Assetvaluechange   {
     this.dirty = dirty;
   }
 
-  public Assetvaluechange assetCardType(Integer assetCardType) {
-    this.assetCardType = assetCardType;
+  public Assetvaluechange assetcardType(Integer assetcardType) {
+    this.assetcardType = assetcardType;
     return this;
   }
 
    /**
-   * Typ karty
-   * @return assetCardType
+   * typ karty
+   * @return assetcardType
   **/
-  @ApiModelProperty(example = "null", value = "Typ karty")
-  public Integer getAssetCardType() {
-    return assetCardType;
+  @ApiModelProperty(example = "null", value = "typ karty")
+  public Integer getAssetcardType() {
+    return assetcardType;
   }
 
-  public void setAssetCardType(Integer assetCardType) {
-    this.assetCardType = assetCardType;
+  public void setAssetcardType(Integer assetcardType) {
+    this.assetcardType = assetcardType;
   }
 
-  public Assetvaluechange assetCardID(String assetCardID) {
-    this.assetCardID = assetCardID;
+  public Assetvaluechange assetcardId(String assetcardId) {
+    this.assetcardId = assetcardId;
     return this;
   }
 
    /**
-   * Karta majetku; ID objektu Karta majetku [persistentní položka]
-   * @return assetCardID
+   * karta majetku; id objektu karta majetku [persistentní položka]
+   * @return assetcardId
   **/
-  @ApiModelProperty(example = "null", value = "Karta majetku; ID objektu Karta majetku [persistentní položka]")
-  public String getAssetCardID() {
-    return assetCardID;
+  @ApiModelProperty(example = "null", value = "karta majetku; id objektu karta majetku [persistentní položka]")
+  public String getAssetcardId() {
+    return assetcardId;
   }
 
-  public void setAssetCardID(String assetCardID) {
-    this.assetCardID = assetCardID;
+  public void setAssetcardId(String assetcardId) {
+    this.assetcardId = assetcardId;
   }
 
-  public Assetvaluechange taxBasePriceAmount(Double taxBasePriceAmount) {
-    this.taxBasePriceAmount = taxBasePriceAmount;
+  public Assetvaluechange taxbasepriceamount(Double taxbasepriceamount) {
+    this.taxbasepriceamount = taxbasepriceamount;
     return this;
   }
 
    /**
-   * Daň.vstup.cena [persistentní položka]
-   * @return taxBasePriceAmount
+   * daň.vstup.cena [persistentní položka]
+   * @return taxbasepriceamount
   **/
-  @ApiModelProperty(example = "null", value = "Daň.vstup.cena [persistentní položka]")
-  public Double getTaxBasePriceAmount() {
-    return taxBasePriceAmount;
+  @ApiModelProperty(example = "null", value = "daň.vstup.cena [persistentní položka]")
+  public Double getTaxbasepriceamount() {
+    return taxbasepriceamount;
   }
 
-  public void setTaxBasePriceAmount(Double taxBasePriceAmount) {
-    this.taxBasePriceAmount = taxBasePriceAmount;
+  public void setTaxbasepriceamount(Double taxbasepriceamount) {
+    this.taxbasepriceamount = taxbasepriceamount;
   }
 
-  public Assetvaluechange accBasePriceAmount(Double accBasePriceAmount) {
-    this.accBasePriceAmount = accBasePriceAmount;
+  public Assetvaluechange accbasepriceamount(Double accbasepriceamount) {
+    this.accbasepriceamount = accbasepriceamount;
     return this;
   }
 
    /**
    * Účet.vstup.cena [persistentní položka]
-   * @return accBasePriceAmount
+   * @return accbasepriceamount
   **/
   @ApiModelProperty(example = "null", value = "Účet.vstup.cena [persistentní položka]")
-  public Double getAccBasePriceAmount() {
-    return accBasePriceAmount;
+  public Double getAccbasepriceamount() {
+    return accbasepriceamount;
   }
 
-  public void setAccBasePriceAmount(Double accBasePriceAmount) {
-    this.accBasePriceAmount = accBasePriceAmount;
+  public void setAccbasepriceamount(Double accbasepriceamount) {
+    this.accbasepriceamount = accbasepriceamount;
   }
 
-  public Assetvaluechange taxRemainderPriceAmount(Double taxRemainderPriceAmount) {
-    this.taxRemainderPriceAmount = taxRemainderPriceAmount;
+  public Assetvaluechange taxremainderpriceamount(Double taxremainderpriceamount) {
+    this.taxremainderpriceamount = taxremainderpriceamount;
     return this;
   }
 
    /**
-   * Daň.zůst.cena [persistentní položka]
-   * @return taxRemainderPriceAmount
+   * daň.zůst.cena [persistentní položka]
+   * @return taxremainderpriceamount
   **/
-  @ApiModelProperty(example = "null", value = "Daň.zůst.cena [persistentní položka]")
-  public Double getTaxRemainderPriceAmount() {
-    return taxRemainderPriceAmount;
+  @ApiModelProperty(example = "null", value = "daň.zůst.cena [persistentní položka]")
+  public Double getTaxremainderpriceamount() {
+    return taxremainderpriceamount;
   }
 
-  public void setTaxRemainderPriceAmount(Double taxRemainderPriceAmount) {
-    this.taxRemainderPriceAmount = taxRemainderPriceAmount;
+  public void setTaxremainderpriceamount(Double taxremainderpriceamount) {
+    this.taxremainderpriceamount = taxremainderpriceamount;
   }
 
-  public Assetvaluechange accRemainderPriceAmount(Double accRemainderPriceAmount) {
-    this.accRemainderPriceAmount = accRemainderPriceAmount;
+  public Assetvaluechange accremainderpriceamount(Double accremainderpriceamount) {
+    this.accremainderpriceamount = accremainderpriceamount;
     return this;
   }
 
    /**
    * Účet.zůst.cena [persistentní položka]
-   * @return accRemainderPriceAmount
+   * @return accremainderpriceamount
   **/
   @ApiModelProperty(example = "null", value = "Účet.zůst.cena [persistentní položka]")
-  public Double getAccRemainderPriceAmount() {
-    return accRemainderPriceAmount;
+  public Double getAccremainderpriceamount() {
+    return accremainderpriceamount;
   }
 
-  public void setAccRemainderPriceAmount(Double accRemainderPriceAmount) {
-    this.accRemainderPriceAmount = accRemainderPriceAmount;
+  public void setAccremainderpriceamount(Double accremainderpriceamount) {
+    this.accremainderpriceamount = accremainderpriceamount;
   }
 
-  public Assetvaluechange divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Assetvaluechange divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Assetvaluechange busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Assetvaluechange busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Assetvaluechange busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Assetvaluechange bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obch.případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obch.případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obch.případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obch.případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Assetvaluechange busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Assetvaluechange busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Assetvaluechange isValorisation(Boolean isValorisation) {
-    this.isValorisation = isValorisation;
+  public Assetvaluechange isvalorisation(Boolean isvalorisation) {
+    this.isvalorisation = isvalorisation;
     return this;
   }
 
    /**
-   * Tech.zhodnoc. [persistentní položka]
-   * @return isValorisation
+   * tech.zhodnoc. [persistentní položka]
+   * @return isvalorisation
   **/
-  @ApiModelProperty(example = "null", value = "Tech.zhodnoc. [persistentní položka]")
-  public Boolean getIsValorisation() {
-    return isValorisation;
+  @ApiModelProperty(example = "null", value = "tech.zhodnoc. [persistentní položka]")
+  public Boolean getIsvalorisation() {
+    return isvalorisation;
   }
 
-  public void setIsValorisation(Boolean isValorisation) {
-    this.isValorisation = isValorisation;
+  public void setIsvalorisation(Boolean isvalorisation) {
+    this.isvalorisation = isvalorisation;
   }
 
-  public Assetvaluechange isApplyInCard(Boolean isApplyInCard) {
-    this.isApplyInCard = isApplyInCard;
+  public Assetvaluechange isapplyincard(Boolean isapplyincard) {
+    this.isapplyincard = isapplyincard;
     return this;
   }
 
    /**
-   * Promítá se do karty [persistentní položka]
-   * @return isApplyInCard
+   * promítá se do karty [persistentní položka]
+   * @return isapplyincard
   **/
-  @ApiModelProperty(example = "null", value = "Promítá se do karty [persistentní položka]")
-  public Boolean getIsApplyInCard() {
-    return isApplyInCard;
+  @ApiModelProperty(example = "null", value = "promítá se do karty [persistentní položka]")
+  public Boolean getIsapplyincard() {
+    return isapplyincard;
   }
 
-  public void setIsApplyInCard(Boolean isApplyInCard) {
-    this.isApplyInCard = isApplyInCard;
+  public void setIsapplyincard(Boolean isapplyincard) {
+    this.isapplyincard = isapplyincard;
   }
 
-  public Assetvaluechange isValorisationAsText(String isValorisationAsText) {
-    this.isValorisationAsText = isValorisationAsText;
+  public Assetvaluechange isvalorisationastext(String isvalorisationastext) {
+    this.isvalorisationastext = isvalorisationastext;
     return this;
   }
 
    /**
-   * Tech.zhodnoc.
-   * @return isValorisationAsText
+   * tech.zhodnoc.
+   * @return isvalorisationastext
   **/
-  @ApiModelProperty(example = "null", value = "Tech.zhodnoc.")
-  public String getIsValorisationAsText() {
-    return isValorisationAsText;
+  @ApiModelProperty(example = "null", value = "tech.zhodnoc.")
+  public String getIsvalorisationastext() {
+    return isvalorisationastext;
   }
 
-  public void setIsValorisationAsText(String isValorisationAsText) {
-    this.isValorisationAsText = isValorisationAsText;
+  public void setIsvalorisationastext(String isvalorisationastext) {
+    this.isvalorisationastext = isvalorisationastext;
   }
 
-  public Assetvaluechange dateUseInAssetCardDATE(DateTime dateUseInAssetCardDATE) {
-    this.dateUseInAssetCardDATE = dateUseInAssetCardDATE;
+  public Assetvaluechange dateuseinassetcarddate(DateTime dateuseinassetcarddate) {
+    this.dateuseinassetcarddate = dateuseinassetcarddate;
     return this;
   }
 
    /**
-   * Datum uplatnění do karty [persistentní položka]
-   * @return dateUseInAssetCardDATE
+   * datum uplatnění do karty [persistentní položka]
+   * @return dateuseinassetcarddate
   **/
-  @ApiModelProperty(example = "null", value = "Datum uplatnění do karty [persistentní položka]")
-  public DateTime getDateUseInAssetCardDATE() {
-    return dateUseInAssetCardDATE;
+  @ApiModelProperty(example = "null", value = "datum uplatnění do karty [persistentní položka]")
+  public DateTime getDateuseinassetcarddate() {
+    return dateuseinassetcarddate;
   }
 
-  public void setDateUseInAssetCardDATE(DateTime dateUseInAssetCardDATE) {
-    this.dateUseInAssetCardDATE = dateUseInAssetCardDATE;
+  public void setDateuseinassetcarddate(DateTime dateuseinassetcarddate) {
+    this.dateuseinassetcarddate = dateuseinassetcarddate;
   }
 
   public Assetvaluechange components(List<Assetvaluechangecomponent> components) {
@@ -749,10 +785,10 @@ public class Assetvaluechange   {
   }
 
    /**
-   * Prvky dokladu změny ceny; kolekce BO Prvek na dokladu změny ceny majetku [nepersistentní položka]
+   * prvky dokladu změny ceny; kolekce bo prvek na dokladu změny ceny majetku [nepersistentní položka]
    * @return components
   **/
-  @ApiModelProperty(example = "null", value = "Prvky dokladu změny ceny; kolekce BO Prvek na dokladu změny ceny majetku [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "prvky dokladu změny ceny; kolekce bo prvek na dokladu změny ceny majetku [nepersistentní položka]")
   public List<Assetvaluechangecomponent> getComponents() {
     return components;
   }
@@ -761,238 +797,238 @@ public class Assetvaluechange   {
     this.components = components;
   }
 
-  public Assetvaluechange accountValorisationAmount(Double accountValorisationAmount) {
-    this.accountValorisationAmount = accountValorisationAmount;
+  public Assetvaluechange accountvalorisationamount(Double accountvalorisationamount) {
+    this.accountvalorisationamount = accountvalorisationamount;
     return this;
   }
 
    /**
-   * Zaúčtování tech.zhodnocení daň. část [persistentní položka]
-   * @return accountValorisationAmount
+   * zaúčtování tech.zhodnocení daň. část [persistentní položka]
+   * @return accountvalorisationamount
   **/
-  @ApiModelProperty(example = "null", value = "Zaúčtování tech.zhodnocení daň. část [persistentní položka]")
-  public Double getAccountValorisationAmount() {
-    return accountValorisationAmount;
+  @ApiModelProperty(example = "null", value = "zaúčtování tech.zhodnocení daň. část [persistentní položka]")
+  public Double getAccountvalorisationamount() {
+    return accountvalorisationamount;
   }
 
-  public void setAccountValorisationAmount(Double accountValorisationAmount) {
-    this.accountValorisationAmount = accountValorisationAmount;
+  public void setAccountvalorisationamount(Double accountvalorisationamount) {
+    this.accountvalorisationamount = accountvalorisationamount;
   }
 
-  public Assetvaluechange accountIncreaseAmount(Double accountIncreaseAmount) {
-    this.accountIncreaseAmount = accountIncreaseAmount;
+  public Assetvaluechange accountincreaseamount(Double accountincreaseamount) {
+    this.accountincreaseamount = accountincreaseamount;
     return this;
   }
 
    /**
-   * Zaúčtování tech.zhodnocení daň. část [persistentní položka]
-   * @return accountIncreaseAmount
+   * zaúčtování tech.zhodnocení daň. část [persistentní položka]
+   * @return accountincreaseamount
   **/
-  @ApiModelProperty(example = "null", value = "Zaúčtování tech.zhodnocení daň. část [persistentní položka]")
-  public Double getAccountIncreaseAmount() {
-    return accountIncreaseAmount;
+  @ApiModelProperty(example = "null", value = "zaúčtování tech.zhodnocení daň. část [persistentní položka]")
+  public Double getAccountincreaseamount() {
+    return accountincreaseamount;
   }
 
-  public void setAccountIncreaseAmount(Double accountIncreaseAmount) {
-    this.accountIncreaseAmount = accountIncreaseAmount;
+  public void setAccountincreaseamount(Double accountincreaseamount) {
+    this.accountincreaseamount = accountincreaseamount;
   }
 
-  public Assetvaluechange accountValueChangeAmount(Double accountValueChangeAmount) {
-    this.accountValueChangeAmount = accountValueChangeAmount;
+  public Assetvaluechange accountvaluechangeamount(Double accountvaluechangeamount) {
+    this.accountvaluechangeamount = accountvaluechangeamount;
     return this;
   }
 
    /**
-   * Zaúčtování změny ceny daň. část [persistentní položka]
-   * @return accountValueChangeAmount
+   * zaúčtování změny ceny daň. část [persistentní položka]
+   * @return accountvaluechangeamount
   **/
-  @ApiModelProperty(example = "null", value = "Zaúčtování změny ceny daň. část [persistentní položka]")
-  public Double getAccountValueChangeAmount() {
-    return accountValueChangeAmount;
+  @ApiModelProperty(example = "null", value = "zaúčtování změny ceny daň. část [persistentní položka]")
+  public Double getAccountvaluechangeamount() {
+    return accountvaluechangeamount;
   }
 
-  public void setAccountValueChangeAmount(Double accountValueChangeAmount) {
-    this.accountValueChangeAmount = accountValueChangeAmount;
+  public void setAccountvaluechangeamount(Double accountvaluechangeamount) {
+    this.accountvaluechangeamount = accountvaluechangeamount;
   }
 
-  public Assetvaluechange applyInCardRegardlessOfAmount(Boolean applyInCardRegardlessOfAmount) {
-    this.applyInCardRegardlessOfAmount = applyInCardRegardlessOfAmount;
+  public Assetvaluechange applyincardregardlessofamount(Boolean applyincardregardlessofamount) {
+    this.applyincardregardlessofamount = applyincardregardlessofamount;
     return this;
   }
 
    /**
-   * Uplatnit do karty bez ohledu na limit [persistentní položka]
-   * @return applyInCardRegardlessOfAmount
+   * uplatnit do karty bez ohledu na limit [persistentní položka]
+   * @return applyincardregardlessofamount
   **/
-  @ApiModelProperty(example = "null", value = "Uplatnit do karty bez ohledu na limit [persistentní položka]")
-  public Boolean getApplyInCardRegardlessOfAmount() {
-    return applyInCardRegardlessOfAmount;
+  @ApiModelProperty(example = "null", value = "uplatnit do karty bez ohledu na limit [persistentní položka]")
+  public Boolean getApplyincardregardlessofamount() {
+    return applyincardregardlessofamount;
   }
 
-  public void setApplyInCardRegardlessOfAmount(Boolean applyInCardRegardlessOfAmount) {
-    this.applyInCardRegardlessOfAmount = applyInCardRegardlessOfAmount;
+  public void setApplyincardregardlessofamount(Boolean applyincardregardlessofamount) {
+    this.applyincardregardlessofamount = applyincardregardlessofamount;
   }
 
-  public Assetvaluechange cutByLimit(Double cutByLimit) {
-    this.cutByLimit = cutByLimit;
+  public Assetvaluechange cutbylimit(Double cutbylimit) {
+    this.cutbylimit = cutbylimit;
     return this;
   }
 
    /**
-   * Limitováno o [persistentní položka]
-   * @return cutByLimit
+   * limitováno o [persistentní položka]
+   * @return cutbylimit
   **/
-  @ApiModelProperty(example = "null", value = "Limitováno o [persistentní položka]")
-  public Double getCutByLimit() {
-    return cutByLimit;
+  @ApiModelProperty(example = "null", value = "limitováno o [persistentní položka]")
+  public Double getCutbylimit() {
+    return cutbylimit;
   }
 
-  public void setCutByLimit(Double cutByLimit) {
-    this.cutByLimit = cutByLimit;
+  public void setCutbylimit(Double cutbylimit) {
+    this.cutbylimit = cutbylimit;
   }
 
-  public Assetvaluechange restMonthDeprecCount(Integer restMonthDeprecCount) {
-    this.restMonthDeprecCount = restMonthDeprecCount;
+  public Assetvaluechange restmonthdepreccount(Integer restmonthdepreccount) {
+    this.restmonthdepreccount = restmonthdepreccount;
     return this;
   }
 
    /**
-   * Počet měs.odp. [persistentní položka]
-   * @return restMonthDeprecCount
+   * počet měs.odp. [persistentní položka]
+   * @return restmonthdepreccount
   **/
-  @ApiModelProperty(example = "null", value = "Počet měs.odp. [persistentní položka]")
-  public Integer getRestMonthDeprecCount() {
-    return restMonthDeprecCount;
+  @ApiModelProperty(example = "null", value = "počet měs.odp. [persistentní položka]")
+  public Integer getRestmonthdepreccount() {
+    return restmonthdepreccount;
   }
 
-  public void setRestMonthDeprecCount(Integer restMonthDeprecCount) {
-    this.restMonthDeprecCount = restMonthDeprecCount;
+  public void setRestmonthdepreccount(Integer restmonthdepreccount) {
+    this.restmonthdepreccount = restmonthdepreccount;
   }
 
-  public Assetvaluechange endDepreciationDateDATE(DateTime endDepreciationDateDATE) {
-    this.endDepreciationDateDATE = endDepreciationDateDATE;
+  public Assetvaluechange enddepreciationdatedate(DateTime enddepreciationdatedate) {
+    this.enddepreciationdatedate = enddepreciationdatedate;
     return this;
   }
 
    /**
-   * Datum konce odepisování
-   * @return endDepreciationDateDATE
+   * datum konce odepisování
+   * @return enddepreciationdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum konce odepisování")
-  public DateTime getEndDepreciationDateDATE() {
-    return endDepreciationDateDATE;
+  @ApiModelProperty(example = "null", value = "datum konce odepisování")
+  public DateTime getEnddepreciationdatedate() {
+    return enddepreciationdatedate;
   }
 
-  public void setEndDepreciationDateDATE(DateTime endDepreciationDateDATE) {
-    this.endDepreciationDateDATE = endDepreciationDateDATE;
+  public void setEnddepreciationdatedate(DateTime enddepreciationdatedate) {
+    this.enddepreciationdatedate = enddepreciationdatedate;
   }
 
-  public Assetvaluechange isSubsidy(Boolean isSubsidy) {
-    this.isSubsidy = isSubsidy;
+  public Assetvaluechange issubsidy(Boolean issubsidy) {
+    this.issubsidy = issubsidy;
     return this;
   }
 
    /**
-   * Dotace [persistentní položka]
-   * @return isSubsidy
+   * dotace [persistentní položka]
+   * @return issubsidy
   **/
-  @ApiModelProperty(example = "null", value = "Dotace [persistentní položka]")
-  public Boolean getIsSubsidy() {
-    return isSubsidy;
+  @ApiModelProperty(example = "null", value = "dotace [persistentní položka]")
+  public Boolean getIssubsidy() {
+    return issubsidy;
   }
 
-  public void setIsSubsidy(Boolean isSubsidy) {
-    this.isSubsidy = isSubsidy;
+  public void setIssubsidy(Boolean issubsidy) {
+    this.issubsidy = issubsidy;
   }
 
-  public Assetvaluechange depreciationCorrectionSubsidy(Double depreciationCorrectionSubsidy) {
-    this.depreciationCorrectionSubsidy = depreciationCorrectionSubsidy;
+  public Assetvaluechange depreciationcorrectionsubsidy(Double depreciationcorrectionsubsidy) {
+    this.depreciationcorrectionsubsidy = depreciationcorrectionsubsidy;
     return this;
   }
 
    /**
-   * Korekce úč. odpisu z dotace [persistentní položka]
-   * @return depreciationCorrectionSubsidy
+   * korekce úč. odpisu z dotace [persistentní položka]
+   * @return depreciationcorrectionsubsidy
   **/
-  @ApiModelProperty(example = "null", value = "Korekce úč. odpisu z dotace [persistentní položka]")
-  public Double getDepreciationCorrectionSubsidy() {
-    return depreciationCorrectionSubsidy;
+  @ApiModelProperty(example = "null", value = "korekce úč. odpisu z dotace [persistentní položka]")
+  public Double getDepreciationcorrectionsubsidy() {
+    return depreciationcorrectionsubsidy;
   }
 
-  public void setDepreciationCorrectionSubsidy(Double depreciationCorrectionSubsidy) {
-    this.depreciationCorrectionSubsidy = depreciationCorrectionSubsidy;
+  public void setDepreciationcorrectionsubsidy(Double depreciationcorrectionsubsidy) {
+    this.depreciationcorrectionsubsidy = depreciationcorrectionsubsidy;
   }
 
-  public Assetvaluechange depreciationCorrectDateDATE(DateTime depreciationCorrectDateDATE) {
-    this.depreciationCorrectDateDATE = depreciationCorrectDateDATE;
+  public Assetvaluechange depreciationcorrectdatedate(DateTime depreciationcorrectdatedate) {
+    this.depreciationcorrectdatedate = depreciationcorrectdatedate;
     return this;
   }
 
    /**
-   * Datum korekce účetního odpisu z dotace [persistentní položka]
-   * @return depreciationCorrectDateDATE
+   * datum korekce účetního odpisu z dotace [persistentní položka]
+   * @return depreciationcorrectdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum korekce účetního odpisu z dotace [persistentní položka]")
-  public DateTime getDepreciationCorrectDateDATE() {
-    return depreciationCorrectDateDATE;
+  @ApiModelProperty(example = "null", value = "datum korekce účetního odpisu z dotace [persistentní položka]")
+  public DateTime getDepreciationcorrectdatedate() {
+    return depreciationcorrectdatedate;
   }
 
-  public void setDepreciationCorrectDateDATE(DateTime depreciationCorrectDateDATE) {
-    this.depreciationCorrectDateDATE = depreciationCorrectDateDATE;
+  public void setDepreciationcorrectdatedate(DateTime depreciationcorrectdatedate) {
+    this.depreciationcorrectdatedate = depreciationcorrectdatedate;
   }
 
-  public Assetvaluechange accountAccValorisationAmount(Double accountAccValorisationAmount) {
-    this.accountAccValorisationAmount = accountAccValorisationAmount;
+  public Assetvaluechange accountaccvalorisationamount(Double accountaccvalorisationamount) {
+    this.accountaccvalorisationamount = accountaccvalorisationamount;
     return this;
   }
 
    /**
-   * Zaúčtování tech.zhodnocení nadlim. složka [persistentní položka]
-   * @return accountAccValorisationAmount
+   * zaúčtování tech.zhodnocení nadlim. složka [persistentní položka]
+   * @return accountaccvalorisationamount
   **/
-  @ApiModelProperty(example = "null", value = "Zaúčtování tech.zhodnocení nadlim. složka [persistentní položka]")
-  public Double getAccountAccValorisationAmount() {
-    return accountAccValorisationAmount;
+  @ApiModelProperty(example = "null", value = "zaúčtování tech.zhodnocení nadlim. složka [persistentní položka]")
+  public Double getAccountaccvalorisationamount() {
+    return accountaccvalorisationamount;
   }
 
-  public void setAccountAccValorisationAmount(Double accountAccValorisationAmount) {
-    this.accountAccValorisationAmount = accountAccValorisationAmount;
+  public void setAccountaccvalorisationamount(Double accountaccvalorisationamount) {
+    this.accountaccvalorisationamount = accountaccvalorisationamount;
   }
 
-  public Assetvaluechange accountAccIncreaseAmount(Double accountAccIncreaseAmount) {
-    this.accountAccIncreaseAmount = accountAccIncreaseAmount;
+  public Assetvaluechange accountaccincreaseamount(Double accountaccincreaseamount) {
+    this.accountaccincreaseamount = accountaccincreaseamount;
     return this;
   }
 
    /**
-   * Zaúčtování tech.zhodnocení nadlim. složka [persistentní položka]
-   * @return accountAccIncreaseAmount
+   * zaúčtování tech.zhodnocení nadlim. složka [persistentní položka]
+   * @return accountaccincreaseamount
   **/
-  @ApiModelProperty(example = "null", value = "Zaúčtování tech.zhodnocení nadlim. složka [persistentní položka]")
-  public Double getAccountAccIncreaseAmount() {
-    return accountAccIncreaseAmount;
+  @ApiModelProperty(example = "null", value = "zaúčtování tech.zhodnocení nadlim. složka [persistentní položka]")
+  public Double getAccountaccincreaseamount() {
+    return accountaccincreaseamount;
   }
 
-  public void setAccountAccIncreaseAmount(Double accountAccIncreaseAmount) {
-    this.accountAccIncreaseAmount = accountAccIncreaseAmount;
+  public void setAccountaccincreaseamount(Double accountaccincreaseamount) {
+    this.accountaccincreaseamount = accountaccincreaseamount;
   }
 
-  public Assetvaluechange accountAccValueChangeAmount(Double accountAccValueChangeAmount) {
-    this.accountAccValueChangeAmount = accountAccValueChangeAmount;
+  public Assetvaluechange accountaccvaluechangeamount(Double accountaccvaluechangeamount) {
+    this.accountaccvaluechangeamount = accountaccvaluechangeamount;
     return this;
   }
 
    /**
-   * Zaúčtování změny ceny nadlim. složka [persistentní položka]
-   * @return accountAccValueChangeAmount
+   * zaúčtování změny ceny nadlim. složka [persistentní položka]
+   * @return accountaccvaluechangeamount
   **/
-  @ApiModelProperty(example = "null", value = "Zaúčtování změny ceny nadlim. složka [persistentní položka]")
-  public Double getAccountAccValueChangeAmount() {
-    return accountAccValueChangeAmount;
+  @ApiModelProperty(example = "null", value = "zaúčtování změny ceny nadlim. složka [persistentní položka]")
+  public Double getAccountaccvaluechangeamount() {
+    return accountaccvaluechangeamount;
   }
 
-  public void setAccountAccValueChangeAmount(Double accountAccValueChangeAmount) {
-    this.accountAccValueChangeAmount = accountAccValueChangeAmount;
+  public void setAccountaccvaluechangeamount(Double accountaccvaluechangeamount) {
+    this.accountaccvaluechangeamount = accountaccvaluechangeamount;
   }
 
 
@@ -1005,58 +1041,58 @@ public class Assetvaluechange   {
       return false;
     }
     Assetvaluechange assetvaluechange = (Assetvaluechange) o;
-    return Objects.equals(this.displayName, assetvaluechange.displayName) &&
-        Objects.equals(this.ID, assetvaluechange.ID) &&
-        Objects.equals(this.classID, assetvaluechange.classID) &&
-        Objects.equals(this.objVersion, assetvaluechange.objVersion) &&
-        Objects.equals(this.docQueueID, assetvaluechange.docQueueID) &&
-        Objects.equals(this.periodID, assetvaluechange.periodID) &&
-        Objects.equals(this.ordNumber, assetvaluechange.ordNumber) &&
-        Objects.equals(this.docDateDATE, assetvaluechange.docDateDATE) &&
-        Objects.equals(this.createdByID, assetvaluechange.createdByID) &&
-        Objects.equals(this.correctedByID, assetvaluechange.correctedByID) &&
-        Objects.equals(this.newRelatedType, assetvaluechange.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, assetvaluechange.newRelatedDocumentID) &&
-        Objects.equals(this.accPresetDefID, assetvaluechange.accPresetDefID) &&
+    return Objects.equals(this.displayname, assetvaluechange.displayname) &&
+        Objects.equals(this.id, assetvaluechange.id) &&
+        Objects.equals(this.classid, assetvaluechange.classid) &&
+        Objects.equals(this.objversion, assetvaluechange.objversion) &&
+        Objects.equals(this.docqueueId, assetvaluechange.docqueueId) &&
+        Objects.equals(this.periodId, assetvaluechange.periodId) &&
+        Objects.equals(this.ordnumber, assetvaluechange.ordnumber) &&
+        Objects.equals(this.docdatedate, assetvaluechange.docdatedate) &&
+        Objects.equals(this.createdbyId, assetvaluechange.createdbyId) &&
+        Objects.equals(this.correctedbyId, assetvaluechange.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, assetvaluechange.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, assetvaluechange.newrelateddocumentId) &&
+        Objects.equals(this.accpresetdefId, assetvaluechange.accpresetdefId) &&
         Objects.equals(this.description, assetvaluechange.description) &&
-        Objects.equals(this.accDateDATE, assetvaluechange.accDateDATE) &&
-        Objects.equals(this.accDocQueueID, assetvaluechange.accDocQueueID) &&
-        Objects.equals(this.accountingType, assetvaluechange.accountingType) &&
-        Objects.equals(this.isAccounted, assetvaluechange.isAccounted) &&
+        Objects.equals(this.accdatedate, assetvaluechange.accdatedate) &&
+        Objects.equals(this.accdocqueueId, assetvaluechange.accdocqueueId) &&
+        Objects.equals(this.accountingtype, assetvaluechange.accountingtype) &&
+        Objects.equals(this.isaccounted, assetvaluechange.isaccounted) &&
         Objects.equals(this.dirty, assetvaluechange.dirty) &&
-        Objects.equals(this.assetCardType, assetvaluechange.assetCardType) &&
-        Objects.equals(this.assetCardID, assetvaluechange.assetCardID) &&
-        Objects.equals(this.taxBasePriceAmount, assetvaluechange.taxBasePriceAmount) &&
-        Objects.equals(this.accBasePriceAmount, assetvaluechange.accBasePriceAmount) &&
-        Objects.equals(this.taxRemainderPriceAmount, assetvaluechange.taxRemainderPriceAmount) &&
-        Objects.equals(this.accRemainderPriceAmount, assetvaluechange.accRemainderPriceAmount) &&
-        Objects.equals(this.divisionID, assetvaluechange.divisionID) &&
-        Objects.equals(this.busOrderID, assetvaluechange.busOrderID) &&
-        Objects.equals(this.busTransactionID, assetvaluechange.busTransactionID) &&
-        Objects.equals(this.busProjectID, assetvaluechange.busProjectID) &&
-        Objects.equals(this.isValorisation, assetvaluechange.isValorisation) &&
-        Objects.equals(this.isApplyInCard, assetvaluechange.isApplyInCard) &&
-        Objects.equals(this.isValorisationAsText, assetvaluechange.isValorisationAsText) &&
-        Objects.equals(this.dateUseInAssetCardDATE, assetvaluechange.dateUseInAssetCardDATE) &&
+        Objects.equals(this.assetcardType, assetvaluechange.assetcardType) &&
+        Objects.equals(this.assetcardId, assetvaluechange.assetcardId) &&
+        Objects.equals(this.taxbasepriceamount, assetvaluechange.taxbasepriceamount) &&
+        Objects.equals(this.accbasepriceamount, assetvaluechange.accbasepriceamount) &&
+        Objects.equals(this.taxremainderpriceamount, assetvaluechange.taxremainderpriceamount) &&
+        Objects.equals(this.accremainderpriceamount, assetvaluechange.accremainderpriceamount) &&
+        Objects.equals(this.divisionId, assetvaluechange.divisionId) &&
+        Objects.equals(this.busorderId, assetvaluechange.busorderId) &&
+        Objects.equals(this.bustransactionId, assetvaluechange.bustransactionId) &&
+        Objects.equals(this.busprojectId, assetvaluechange.busprojectId) &&
+        Objects.equals(this.isvalorisation, assetvaluechange.isvalorisation) &&
+        Objects.equals(this.isapplyincard, assetvaluechange.isapplyincard) &&
+        Objects.equals(this.isvalorisationastext, assetvaluechange.isvalorisationastext) &&
+        Objects.equals(this.dateuseinassetcarddate, assetvaluechange.dateuseinassetcarddate) &&
         Objects.equals(this.components, assetvaluechange.components) &&
-        Objects.equals(this.accountValorisationAmount, assetvaluechange.accountValorisationAmount) &&
-        Objects.equals(this.accountIncreaseAmount, assetvaluechange.accountIncreaseAmount) &&
-        Objects.equals(this.accountValueChangeAmount, assetvaluechange.accountValueChangeAmount) &&
-        Objects.equals(this.applyInCardRegardlessOfAmount, assetvaluechange.applyInCardRegardlessOfAmount) &&
-        Objects.equals(this.cutByLimit, assetvaluechange.cutByLimit) &&
-        Objects.equals(this.restMonthDeprecCount, assetvaluechange.restMonthDeprecCount) &&
-        Objects.equals(this.endDepreciationDateDATE, assetvaluechange.endDepreciationDateDATE) &&
-        Objects.equals(this.isSubsidy, assetvaluechange.isSubsidy) &&
-        Objects.equals(this.depreciationCorrectionSubsidy, assetvaluechange.depreciationCorrectionSubsidy) &&
-        Objects.equals(this.depreciationCorrectDateDATE, assetvaluechange.depreciationCorrectDateDATE) &&
-        Objects.equals(this.accountAccValorisationAmount, assetvaluechange.accountAccValorisationAmount) &&
-        Objects.equals(this.accountAccIncreaseAmount, assetvaluechange.accountAccIncreaseAmount) &&
-        Objects.equals(this.accountAccValueChangeAmount, assetvaluechange.accountAccValueChangeAmount);
+        Objects.equals(this.accountvalorisationamount, assetvaluechange.accountvalorisationamount) &&
+        Objects.equals(this.accountincreaseamount, assetvaluechange.accountincreaseamount) &&
+        Objects.equals(this.accountvaluechangeamount, assetvaluechange.accountvaluechangeamount) &&
+        Objects.equals(this.applyincardregardlessofamount, assetvaluechange.applyincardregardlessofamount) &&
+        Objects.equals(this.cutbylimit, assetvaluechange.cutbylimit) &&
+        Objects.equals(this.restmonthdepreccount, assetvaluechange.restmonthdepreccount) &&
+        Objects.equals(this.enddepreciationdatedate, assetvaluechange.enddepreciationdatedate) &&
+        Objects.equals(this.issubsidy, assetvaluechange.issubsidy) &&
+        Objects.equals(this.depreciationcorrectionsubsidy, assetvaluechange.depreciationcorrectionsubsidy) &&
+        Objects.equals(this.depreciationcorrectdatedate, assetvaluechange.depreciationcorrectdatedate) &&
+        Objects.equals(this.accountaccvalorisationamount, assetvaluechange.accountaccvalorisationamount) &&
+        Objects.equals(this.accountaccincreaseamount, assetvaluechange.accountaccincreaseamount) &&
+        Objects.equals(this.accountaccvaluechangeamount, assetvaluechange.accountaccvaluechangeamount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, accPresetDefID, description, accDateDATE, accDocQueueID, accountingType, isAccounted, dirty, assetCardType, assetCardID, taxBasePriceAmount, accBasePriceAmount, taxRemainderPriceAmount, accRemainderPriceAmount, divisionID, busOrderID, busTransactionID, busProjectID, isValorisation, isApplyInCard, isValorisationAsText, dateUseInAssetCardDATE, components, accountValorisationAmount, accountIncreaseAmount, accountValueChangeAmount, applyInCardRegardlessOfAmount, cutByLimit, restMonthDeprecCount, endDepreciationDateDATE, isSubsidy, depreciationCorrectionSubsidy, depreciationCorrectDateDATE, accountAccValorisationAmount, accountAccIncreaseAmount, accountAccValueChangeAmount);
+    return Objects.hash(displayname, id, classid, objversion, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, accpresetdefId, description, accdatedate, accdocqueueId, accountingtype, isaccounted, dirty, assetcardType, assetcardId, taxbasepriceamount, accbasepriceamount, taxremainderpriceamount, accremainderpriceamount, divisionId, busorderId, bustransactionId, busprojectId, isvalorisation, isapplyincard, isvalorisationastext, dateuseinassetcarddate, components, accountvalorisationamount, accountincreaseamount, accountvaluechangeamount, applyincardregardlessofamount, cutbylimit, restmonthdepreccount, enddepreciationdatedate, issubsidy, depreciationcorrectionsubsidy, depreciationcorrectdatedate, accountaccvalorisationamount, accountaccincreaseamount, accountaccvaluechangeamount);
   }
 
   @Override
@@ -1064,53 +1100,53 @@ public class Assetvaluechange   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Assetvaluechange {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    accPresetDefID: ").append(toIndentedString(accPresetDefID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    accpresetdefId: ").append(toIndentedString(accpresetdefId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    accDateDATE: ").append(toIndentedString(accDateDATE)).append("\n");
-    sb.append("    accDocQueueID: ").append(toIndentedString(accDocQueueID)).append("\n");
-    sb.append("    accountingType: ").append(toIndentedString(accountingType)).append("\n");
-    sb.append("    isAccounted: ").append(toIndentedString(isAccounted)).append("\n");
+    sb.append("    accdatedate: ").append(toIndentedString(accdatedate)).append("\n");
+    sb.append("    accdocqueueId: ").append(toIndentedString(accdocqueueId)).append("\n");
+    sb.append("    accountingtype: ").append(toIndentedString(accountingtype)).append("\n");
+    sb.append("    isaccounted: ").append(toIndentedString(isaccounted)).append("\n");
     sb.append("    dirty: ").append(toIndentedString(dirty)).append("\n");
-    sb.append("    assetCardType: ").append(toIndentedString(assetCardType)).append("\n");
-    sb.append("    assetCardID: ").append(toIndentedString(assetCardID)).append("\n");
-    sb.append("    taxBasePriceAmount: ").append(toIndentedString(taxBasePriceAmount)).append("\n");
-    sb.append("    accBasePriceAmount: ").append(toIndentedString(accBasePriceAmount)).append("\n");
-    sb.append("    taxRemainderPriceAmount: ").append(toIndentedString(taxRemainderPriceAmount)).append("\n");
-    sb.append("    accRemainderPriceAmount: ").append(toIndentedString(accRemainderPriceAmount)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    isValorisation: ").append(toIndentedString(isValorisation)).append("\n");
-    sb.append("    isApplyInCard: ").append(toIndentedString(isApplyInCard)).append("\n");
-    sb.append("    isValorisationAsText: ").append(toIndentedString(isValorisationAsText)).append("\n");
-    sb.append("    dateUseInAssetCardDATE: ").append(toIndentedString(dateUseInAssetCardDATE)).append("\n");
+    sb.append("    assetcardType: ").append(toIndentedString(assetcardType)).append("\n");
+    sb.append("    assetcardId: ").append(toIndentedString(assetcardId)).append("\n");
+    sb.append("    taxbasepriceamount: ").append(toIndentedString(taxbasepriceamount)).append("\n");
+    sb.append("    accbasepriceamount: ").append(toIndentedString(accbasepriceamount)).append("\n");
+    sb.append("    taxremainderpriceamount: ").append(toIndentedString(taxremainderpriceamount)).append("\n");
+    sb.append("    accremainderpriceamount: ").append(toIndentedString(accremainderpriceamount)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    isvalorisation: ").append(toIndentedString(isvalorisation)).append("\n");
+    sb.append("    isapplyincard: ").append(toIndentedString(isapplyincard)).append("\n");
+    sb.append("    isvalorisationastext: ").append(toIndentedString(isvalorisationastext)).append("\n");
+    sb.append("    dateuseinassetcarddate: ").append(toIndentedString(dateuseinassetcarddate)).append("\n");
     sb.append("    components: ").append(toIndentedString(components)).append("\n");
-    sb.append("    accountValorisationAmount: ").append(toIndentedString(accountValorisationAmount)).append("\n");
-    sb.append("    accountIncreaseAmount: ").append(toIndentedString(accountIncreaseAmount)).append("\n");
-    sb.append("    accountValueChangeAmount: ").append(toIndentedString(accountValueChangeAmount)).append("\n");
-    sb.append("    applyInCardRegardlessOfAmount: ").append(toIndentedString(applyInCardRegardlessOfAmount)).append("\n");
-    sb.append("    cutByLimit: ").append(toIndentedString(cutByLimit)).append("\n");
-    sb.append("    restMonthDeprecCount: ").append(toIndentedString(restMonthDeprecCount)).append("\n");
-    sb.append("    endDepreciationDateDATE: ").append(toIndentedString(endDepreciationDateDATE)).append("\n");
-    sb.append("    isSubsidy: ").append(toIndentedString(isSubsidy)).append("\n");
-    sb.append("    depreciationCorrectionSubsidy: ").append(toIndentedString(depreciationCorrectionSubsidy)).append("\n");
-    sb.append("    depreciationCorrectDateDATE: ").append(toIndentedString(depreciationCorrectDateDATE)).append("\n");
-    sb.append("    accountAccValorisationAmount: ").append(toIndentedString(accountAccValorisationAmount)).append("\n");
-    sb.append("    accountAccIncreaseAmount: ").append(toIndentedString(accountAccIncreaseAmount)).append("\n");
-    sb.append("    accountAccValueChangeAmount: ").append(toIndentedString(accountAccValueChangeAmount)).append("\n");
+    sb.append("    accountvalorisationamount: ").append(toIndentedString(accountvalorisationamount)).append("\n");
+    sb.append("    accountincreaseamount: ").append(toIndentedString(accountincreaseamount)).append("\n");
+    sb.append("    accountvaluechangeamount: ").append(toIndentedString(accountvaluechangeamount)).append("\n");
+    sb.append("    applyincardregardlessofamount: ").append(toIndentedString(applyincardregardlessofamount)).append("\n");
+    sb.append("    cutbylimit: ").append(toIndentedString(cutbylimit)).append("\n");
+    sb.append("    restmonthdepreccount: ").append(toIndentedString(restmonthdepreccount)).append("\n");
+    sb.append("    enddepreciationdatedate: ").append(toIndentedString(enddepreciationdatedate)).append("\n");
+    sb.append("    issubsidy: ").append(toIndentedString(issubsidy)).append("\n");
+    sb.append("    depreciationcorrectionsubsidy: ").append(toIndentedString(depreciationcorrectionsubsidy)).append("\n");
+    sb.append("    depreciationcorrectdatedate: ").append(toIndentedString(depreciationcorrectdatedate)).append("\n");
+    sb.append("    accountaccvalorisationamount: ").append(toIndentedString(accountaccvalorisationamount)).append("\n");
+    sb.append("    accountaccincreaseamount: ").append(toIndentedString(accountaccincreaseamount)).append("\n");
+    sb.append("    accountaccvaluechangeamount: ").append(toIndentedString(accountaccvaluechangeamount)).append("\n");
     sb.append("}");
     return sb.toString();
   }

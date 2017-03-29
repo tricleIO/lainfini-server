@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,96 +37,132 @@ import java.util.Objects;
 /**
  * Pricelist
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Pricelist   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Pricelistvalidity> rows = new ArrayList<Pricelistvalidity>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Comment")
+  @SerializedName("comment")
   private String comment = null;
 
-  @SerializedName("ManagedBy_ID")
-  private String managedByID = null;
+  @SerializedName("managedby_id")
+  private String managedbyId = null;
 
-  @SerializedName("CreationDate$DATE")
-  private DateTime creationDateDATE = null;
+  @SerializedName("creationdate$date")
+  private DateTime creationdatedate = null;
 
-  @SerializedName("DealerDiscountExcluded")
-  private Boolean dealerDiscountExcluded = null;
+  @SerializedName("dealerdiscountexcluded")
+  private Boolean dealerdiscountexcluded = null;
 
-  @SerializedName("IndividualDiscountExcluded")
-  private Boolean individualDiscountExcluded = null;
+  @SerializedName("individualdiscountexcluded")
+  private Boolean individualdiscountexcluded = null;
 
-  @SerializedName("FinancialDiscountExcluded")
-  private Boolean financialDiscountExcluded = null;
+  @SerializedName("financialdiscountexcluded")
+  private Boolean financialdiscountexcluded = null;
 
-  @SerializedName("QuantityDiscountExcluded")
-  private Boolean quantityDiscountExcluded = null;
+  @SerializedName("quantitydiscountexcluded")
+  private Boolean quantitydiscountexcluded = null;
 
-  @SerializedName("DocumentDiscountExcluded")
-  private Boolean documentDiscountExcluded = null;
+  @SerializedName("documentdiscountexcluded")
+  private Boolean documentdiscountexcluded = null;
 
-  @SerializedName("PriceListRoundings")
-  private List<Pricelistrounding> priceListRoundings = new ArrayList<Pricelistrounding>();
+  @SerializedName("pricelistroundings")
+  private List<Pricelistrounding> pricelistroundings = new ArrayList<Pricelistrounding>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Pricelist displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Pricelist id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Pricelist classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Pricelist objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Pricelist rows(List<Pricelistvalidity> rows) {
@@ -140,10 +176,10 @@ public class Pricelist   {
   }
 
    /**
-   * Řádky; kolekce BO Datové platnosti ceníku [nepersistentní položka]
+   * Řádky; kolekce bo datové platnosti ceníku [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Datové platnosti ceníku [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo datové platnosti ceníku [nepersistentní položka]")
   public List<Pricelistvalidity> getRows() {
     return rows;
   }
@@ -158,10 +194,10 @@ public class Pricelist   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -176,10 +212,10 @@ public class Pricelist   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -194,10 +230,10 @@ public class Pricelist   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -212,10 +248,10 @@ public class Pricelist   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -230,10 +266,10 @@ public class Pricelist   {
   }
 
    /**
-   * Poznámka
+   * poznámka
    * @return comment
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka")
+  @ApiModelProperty(example = "null", value = "poznámka")
   public String getComment() {
     return comment;
   }
@@ -242,153 +278,153 @@ public class Pricelist   {
     this.comment = comment;
   }
 
-  public Pricelist managedByID(String managedByID) {
-    this.managedByID = managedByID;
+  public Pricelist managedbyId(String managedbyId) {
+    this.managedbyId = managedbyId;
     return this;
   }
 
    /**
-   * Správce ceníku; ID objektu Uživatel [persistentní položka]
-   * @return managedByID
+   * správce ceníku; id objektu uživatel [persistentní položka]
+   * @return managedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Správce ceníku; ID objektu Uživatel [persistentní položka]")
-  public String getManagedByID() {
-    return managedByID;
+  @ApiModelProperty(example = "null", value = "správce ceníku; id objektu uživatel [persistentní položka]")
+  public String getManagedbyId() {
+    return managedbyId;
   }
 
-  public void setManagedByID(String managedByID) {
-    this.managedByID = managedByID;
+  public void setManagedbyId(String managedbyId) {
+    this.managedbyId = managedbyId;
   }
 
-  public Pricelist creationDateDATE(DateTime creationDateDATE) {
-    this.creationDateDATE = creationDateDATE;
+  public Pricelist creationdatedate(DateTime creationdatedate) {
+    this.creationdatedate = creationdatedate;
     return this;
   }
 
    /**
-   * Datum vytvoření ceníku [persistentní položka]
-   * @return creationDateDATE
+   * datum vytvoření ceníku [persistentní položka]
+   * @return creationdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum vytvoření ceníku [persistentní položka]")
-  public DateTime getCreationDateDATE() {
-    return creationDateDATE;
+  @ApiModelProperty(example = "null", value = "datum vytvoření ceníku [persistentní položka]")
+  public DateTime getCreationdatedate() {
+    return creationdatedate;
   }
 
-  public void setCreationDateDATE(DateTime creationDateDATE) {
-    this.creationDateDATE = creationDateDATE;
+  public void setCreationdatedate(DateTime creationdatedate) {
+    this.creationdatedate = creationdatedate;
   }
 
-  public Pricelist dealerDiscountExcluded(Boolean dealerDiscountExcluded) {
-    this.dealerDiscountExcluded = dealerDiscountExcluded;
+  public Pricelist dealerdiscountexcluded(Boolean dealerdiscountexcluded) {
+    this.dealerdiscountexcluded = dealerdiscountexcluded;
     return this;
   }
 
    /**
-   * Neuplatňovat dealerské slevy [persistentní položka]
-   * @return dealerDiscountExcluded
+   * neuplatňovat dealerské slevy [persistentní položka]
+   * @return dealerdiscountexcluded
   **/
-  @ApiModelProperty(example = "null", value = "Neuplatňovat dealerské slevy [persistentní položka]")
-  public Boolean getDealerDiscountExcluded() {
-    return dealerDiscountExcluded;
+  @ApiModelProperty(example = "null", value = "neuplatňovat dealerské slevy [persistentní položka]")
+  public Boolean getDealerdiscountexcluded() {
+    return dealerdiscountexcluded;
   }
 
-  public void setDealerDiscountExcluded(Boolean dealerDiscountExcluded) {
-    this.dealerDiscountExcluded = dealerDiscountExcluded;
+  public void setDealerdiscountexcluded(Boolean dealerdiscountexcluded) {
+    this.dealerdiscountexcluded = dealerdiscountexcluded;
   }
 
-  public Pricelist individualDiscountExcluded(Boolean individualDiscountExcluded) {
-    this.individualDiscountExcluded = individualDiscountExcluded;
+  public Pricelist individualdiscountexcluded(Boolean individualdiscountexcluded) {
+    this.individualdiscountexcluded = individualdiscountexcluded;
     return this;
   }
 
    /**
-   * Neuplatňovat individuální slevy [persistentní položka]
-   * @return individualDiscountExcluded
+   * neuplatňovat individuální slevy [persistentní položka]
+   * @return individualdiscountexcluded
   **/
-  @ApiModelProperty(example = "null", value = "Neuplatňovat individuální slevy [persistentní položka]")
-  public Boolean getIndividualDiscountExcluded() {
-    return individualDiscountExcluded;
+  @ApiModelProperty(example = "null", value = "neuplatňovat individuální slevy [persistentní položka]")
+  public Boolean getIndividualdiscountexcluded() {
+    return individualdiscountexcluded;
   }
 
-  public void setIndividualDiscountExcluded(Boolean individualDiscountExcluded) {
-    this.individualDiscountExcluded = individualDiscountExcluded;
+  public void setIndividualdiscountexcluded(Boolean individualdiscountexcluded) {
+    this.individualdiscountexcluded = individualdiscountexcluded;
   }
 
-  public Pricelist financialDiscountExcluded(Boolean financialDiscountExcluded) {
-    this.financialDiscountExcluded = financialDiscountExcluded;
+  public Pricelist financialdiscountexcluded(Boolean financialdiscountexcluded) {
+    this.financialdiscountexcluded = financialdiscountexcluded;
     return this;
   }
 
    /**
-   * Neuplatňovat finanční slevy [persistentní položka]
-   * @return financialDiscountExcluded
+   * neuplatňovat finanční slevy [persistentní položka]
+   * @return financialdiscountexcluded
   **/
-  @ApiModelProperty(example = "null", value = "Neuplatňovat finanční slevy [persistentní položka]")
-  public Boolean getFinancialDiscountExcluded() {
-    return financialDiscountExcluded;
+  @ApiModelProperty(example = "null", value = "neuplatňovat finanční slevy [persistentní položka]")
+  public Boolean getFinancialdiscountexcluded() {
+    return financialdiscountexcluded;
   }
 
-  public void setFinancialDiscountExcluded(Boolean financialDiscountExcluded) {
-    this.financialDiscountExcluded = financialDiscountExcluded;
+  public void setFinancialdiscountexcluded(Boolean financialdiscountexcluded) {
+    this.financialdiscountexcluded = financialdiscountexcluded;
   }
 
-  public Pricelist quantityDiscountExcluded(Boolean quantityDiscountExcluded) {
-    this.quantityDiscountExcluded = quantityDiscountExcluded;
+  public Pricelist quantitydiscountexcluded(Boolean quantitydiscountexcluded) {
+    this.quantitydiscountexcluded = quantitydiscountexcluded;
     return this;
   }
 
    /**
-   * Neuplatňovat množstevní slevy [persistentní položka]
-   * @return quantityDiscountExcluded
+   * neuplatňovat množstevní slevy [persistentní položka]
+   * @return quantitydiscountexcluded
   **/
-  @ApiModelProperty(example = "null", value = "Neuplatňovat množstevní slevy [persistentní položka]")
-  public Boolean getQuantityDiscountExcluded() {
-    return quantityDiscountExcluded;
+  @ApiModelProperty(example = "null", value = "neuplatňovat množstevní slevy [persistentní položka]")
+  public Boolean getQuantitydiscountexcluded() {
+    return quantitydiscountexcluded;
   }
 
-  public void setQuantityDiscountExcluded(Boolean quantityDiscountExcluded) {
-    this.quantityDiscountExcluded = quantityDiscountExcluded;
+  public void setQuantitydiscountexcluded(Boolean quantitydiscountexcluded) {
+    this.quantitydiscountexcluded = quantitydiscountexcluded;
   }
 
-  public Pricelist documentDiscountExcluded(Boolean documentDiscountExcluded) {
-    this.documentDiscountExcluded = documentDiscountExcluded;
+  public Pricelist documentdiscountexcluded(Boolean documentdiscountexcluded) {
+    this.documentdiscountexcluded = documentdiscountexcluded;
     return this;
   }
 
    /**
-   * Vyloučeno z dodatečné slevy [persistentní položka]
-   * @return documentDiscountExcluded
+   * vyloučeno z dodatečné slevy [persistentní položka]
+   * @return documentdiscountexcluded
   **/
-  @ApiModelProperty(example = "null", value = "Vyloučeno z dodatečné slevy [persistentní položka]")
-  public Boolean getDocumentDiscountExcluded() {
-    return documentDiscountExcluded;
+  @ApiModelProperty(example = "null", value = "vyloučeno z dodatečné slevy [persistentní položka]")
+  public Boolean getDocumentdiscountexcluded() {
+    return documentdiscountexcluded;
   }
 
-  public void setDocumentDiscountExcluded(Boolean documentDiscountExcluded) {
-    this.documentDiscountExcluded = documentDiscountExcluded;
+  public void setDocumentdiscountexcluded(Boolean documentdiscountexcluded) {
+    this.documentdiscountexcluded = documentdiscountexcluded;
   }
 
-  public Pricelist priceListRoundings(List<Pricelistrounding> priceListRoundings) {
-    this.priceListRoundings = priceListRoundings;
+  public Pricelist pricelistroundings(List<Pricelistrounding> pricelistroundings) {
+    this.pricelistroundings = pricelistroundings;
     return this;
   }
 
-  public Pricelist addPriceListRoundingsItem(Pricelistrounding priceListRoundingsItem) {
-    this.priceListRoundings.add(priceListRoundingsItem);
+  public Pricelist addPricelistroundingsItem(Pricelistrounding pricelistroundingsItem) {
+    this.pricelistroundings.add(pricelistroundingsItem);
     return this;
   }
 
    /**
-   * Zaokrouhlování ceníku; kolekce BO Zaokrouhlování ceníku [nepersistentní položka]
-   * @return priceListRoundings
+   * zaokrouhlování ceníku; kolekce bo zaokrouhlování ceníku [nepersistentní položka]
+   * @return pricelistroundings
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlování ceníku; kolekce BO Zaokrouhlování ceníku [nepersistentní položka]")
-  public List<Pricelistrounding> getPriceListRoundings() {
-    return priceListRoundings;
+  @ApiModelProperty(example = "null", value = "zaokrouhlování ceníku; kolekce bo zaokrouhlování ceníku [nepersistentní položka]")
+  public List<Pricelistrounding> getPricelistroundings() {
+    return pricelistroundings;
   }
 
-  public void setPriceListRoundings(List<Pricelistrounding> priceListRoundings) {
-    this.priceListRoundings = priceListRoundings;
+  public void setPricelistroundings(List<Pricelistrounding> pricelistroundings) {
+    this.pricelistroundings = pricelistroundings;
   }
 
 
@@ -401,29 +437,29 @@ public class Pricelist   {
       return false;
     }
     Pricelist pricelist = (Pricelist) o;
-    return Objects.equals(this.displayName, pricelist.displayName) &&
-        Objects.equals(this.ID, pricelist.ID) &&
-        Objects.equals(this.classID, pricelist.classID) &&
-        Objects.equals(this.objVersion, pricelist.objVersion) &&
+    return Objects.equals(this.displayname, pricelist.displayname) &&
+        Objects.equals(this.id, pricelist.id) &&
+        Objects.equals(this.classid, pricelist.classid) &&
+        Objects.equals(this.objversion, pricelist.objversion) &&
         Objects.equals(this.rows, pricelist.rows) &&
         Objects.equals(this.hidden, pricelist.hidden) &&
         Objects.equals(this.code, pricelist.code) &&
         Objects.equals(this.name, pricelist.name) &&
         Objects.equals(this.note, pricelist.note) &&
         Objects.equals(this.comment, pricelist.comment) &&
-        Objects.equals(this.managedByID, pricelist.managedByID) &&
-        Objects.equals(this.creationDateDATE, pricelist.creationDateDATE) &&
-        Objects.equals(this.dealerDiscountExcluded, pricelist.dealerDiscountExcluded) &&
-        Objects.equals(this.individualDiscountExcluded, pricelist.individualDiscountExcluded) &&
-        Objects.equals(this.financialDiscountExcluded, pricelist.financialDiscountExcluded) &&
-        Objects.equals(this.quantityDiscountExcluded, pricelist.quantityDiscountExcluded) &&
-        Objects.equals(this.documentDiscountExcluded, pricelist.documentDiscountExcluded) &&
-        Objects.equals(this.priceListRoundings, pricelist.priceListRoundings);
+        Objects.equals(this.managedbyId, pricelist.managedbyId) &&
+        Objects.equals(this.creationdatedate, pricelist.creationdatedate) &&
+        Objects.equals(this.dealerdiscountexcluded, pricelist.dealerdiscountexcluded) &&
+        Objects.equals(this.individualdiscountexcluded, pricelist.individualdiscountexcluded) &&
+        Objects.equals(this.financialdiscountexcluded, pricelist.financialdiscountexcluded) &&
+        Objects.equals(this.quantitydiscountexcluded, pricelist.quantitydiscountexcluded) &&
+        Objects.equals(this.documentdiscountexcluded, pricelist.documentdiscountexcluded) &&
+        Objects.equals(this.pricelistroundings, pricelist.pricelistroundings);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, code, name, note, comment, managedByID, creationDateDATE, dealerDiscountExcluded, individualDiscountExcluded, financialDiscountExcluded, quantityDiscountExcluded, documentDiscountExcluded, priceListRoundings);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, code, name, note, comment, managedbyId, creationdatedate, dealerdiscountexcluded, individualdiscountexcluded, financialdiscountexcluded, quantitydiscountexcluded, documentdiscountexcluded, pricelistroundings);
   }
 
   @Override
@@ -431,24 +467,24 @@ public class Pricelist   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Pricelist {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
     sb.append("    comment: ").append(toIndentedString(comment)).append("\n");
-    sb.append("    managedByID: ").append(toIndentedString(managedByID)).append("\n");
-    sb.append("    creationDateDATE: ").append(toIndentedString(creationDateDATE)).append("\n");
-    sb.append("    dealerDiscountExcluded: ").append(toIndentedString(dealerDiscountExcluded)).append("\n");
-    sb.append("    individualDiscountExcluded: ").append(toIndentedString(individualDiscountExcluded)).append("\n");
-    sb.append("    financialDiscountExcluded: ").append(toIndentedString(financialDiscountExcluded)).append("\n");
-    sb.append("    quantityDiscountExcluded: ").append(toIndentedString(quantityDiscountExcluded)).append("\n");
-    sb.append("    documentDiscountExcluded: ").append(toIndentedString(documentDiscountExcluded)).append("\n");
-    sb.append("    priceListRoundings: ").append(toIndentedString(priceListRoundings)).append("\n");
+    sb.append("    managedbyId: ").append(toIndentedString(managedbyId)).append("\n");
+    sb.append("    creationdatedate: ").append(toIndentedString(creationdatedate)).append("\n");
+    sb.append("    dealerdiscountexcluded: ").append(toIndentedString(dealerdiscountexcluded)).append("\n");
+    sb.append("    individualdiscountexcluded: ").append(toIndentedString(individualdiscountexcluded)).append("\n");
+    sb.append("    financialdiscountexcluded: ").append(toIndentedString(financialdiscountexcluded)).append("\n");
+    sb.append("    quantitydiscountexcluded: ").append(toIndentedString(quantitydiscountexcluded)).append("\n");
+    sb.append("    documentdiscountexcluded: ").append(toIndentedString(documentdiscountexcluded)).append("\n");
+    sb.append("    pricelistroundings: ").append(toIndentedString(pricelistroundings)).append("\n");
     sb.append("}");
     return sb.toString();
   }

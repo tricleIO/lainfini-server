@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,156 +35,192 @@ import java.util.Objects;
 /**
  * Unreliablefirmlog
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Unreliablefirmlog   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("LogDate$DATE")
-  private DateTime logDateDATE = null;
+  @SerializedName("logdate$date")
+  private DateTime logdatedate = null;
 
-  @SerializedName("StatusDate$DATE")
-  private DateTime statusDateDATE = null;
+  @SerializedName("statusdate$date")
+  private DateTime statusdatedate = null;
 
-  @SerializedName("StatusCode")
-  private Integer statusCode = null;
+  @SerializedName("statuscode")
+  private Integer statuscode = null;
 
-  @SerializedName("StatusText")
-  private String statusText = null;
+  @SerializedName("statustext")
+  private String statustext = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("InputXML")
-  private String inputXML = null;
+  @SerializedName("inputxml")
+  private String inputxml = null;
 
-  @SerializedName("OutputXML")
-  private String outputXML = null;
+  @SerializedName("outputxml")
+  private String outputxml = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("DownloadKind")
-  private Integer downloadKind = null;
+  @SerializedName("downloadkind")
+  private Integer downloadkind = null;
 
-  @SerializedName("StatusCodeAsText")
-  private String statusCodeAsText = null;
+  @SerializedName("statuscodeastext")
+  private String statuscodeastext = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Unreliablefirmlog logDateDATE(DateTime logDateDATE) {
-    this.logDateDATE = logDateDATE;
+  public Unreliablefirmlog displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum kontroly [persistentní položka]
-   * @return logDateDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum kontroly [persistentní položka]")
-  public DateTime getLogDateDATE() {
-    return logDateDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setLogDateDATE(DateTime logDateDATE) {
-    this.logDateDATE = logDateDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Unreliablefirmlog statusDateDATE(DateTime statusDateDATE) {
-    this.statusDateDATE = statusDateDATE;
+  public Unreliablefirmlog id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Datum odpovědi [persistentní položka]
-   * @return statusDateDATE
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Datum odpovědi [persistentní položka]")
-  public DateTime getStatusDateDATE() {
-    return statusDateDATE;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setStatusDateDATE(DateTime statusDateDATE) {
-    this.statusDateDATE = statusDateDATE;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Unreliablefirmlog statusCode(Integer statusCode) {
-    this.statusCode = statusCode;
+  public Unreliablefirmlog classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Kód výsledku komunikace s DPH registrem [persistentní položka]
-   * @return statusCode
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Kód výsledku komunikace s DPH registrem [persistentní položka]")
-  public Integer getStatusCode() {
-    return statusCode;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setStatusCode(Integer statusCode) {
-    this.statusCode = statusCode;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Unreliablefirmlog statusText(String statusText) {
-    this.statusText = statusText;
+  public Unreliablefirmlog objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Popis výsledku komunikace [persistentní položka]
-   * @return statusText
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Popis výsledku komunikace [persistentní položka]")
-  public String getStatusText() {
-    return statusText;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setStatusText(String statusText) {
-    this.statusText = statusText;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Unreliablefirmlog logdatedate(DateTime logdatedate) {
+    this.logdatedate = logdatedate;
+    return this;
+  }
+
+   /**
+   * datum kontroly [persistentní položka]
+   * @return logdatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum kontroly [persistentní položka]")
+  public DateTime getLogdatedate() {
+    return logdatedate;
+  }
+
+  public void setLogdatedate(DateTime logdatedate) {
+    this.logdatedate = logdatedate;
+  }
+
+  public Unreliablefirmlog statusdatedate(DateTime statusdatedate) {
+    this.statusdatedate = statusdatedate;
+    return this;
+  }
+
+   /**
+   * datum odpovědi [persistentní položka]
+   * @return statusdatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum odpovědi [persistentní položka]")
+  public DateTime getStatusdatedate() {
+    return statusdatedate;
+  }
+
+  public void setStatusdatedate(DateTime statusdatedate) {
+    this.statusdatedate = statusdatedate;
+  }
+
+  public Unreliablefirmlog statuscode(Integer statuscode) {
+    this.statuscode = statuscode;
+    return this;
+  }
+
+   /**
+   * kód výsledku komunikace s dph registrem [persistentní položka]
+   * @return statuscode
+  **/
+  @ApiModelProperty(example = "null", value = "kód výsledku komunikace s dph registrem [persistentní položka]")
+  public Integer getStatuscode() {
+    return statuscode;
+  }
+
+  public void setStatuscode(Integer statuscode) {
+    this.statuscode = statuscode;
+  }
+
+  public Unreliablefirmlog statustext(String statustext) {
+    this.statustext = statustext;
+    return this;
+  }
+
+   /**
+   * popis výsledku komunikace [persistentní položka]
+   * @return statustext
+  **/
+  @ApiModelProperty(example = "null", value = "popis výsledku komunikace [persistentní položka]")
+  public String getStatustext() {
+    return statustext;
+  }
+
+  public void setStatustext(String statustext) {
+    this.statustext = statustext;
   }
 
   public Unreliablefirmlog description(String description) {
@@ -193,10 +229,10 @@ public class Unreliablefirmlog   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -205,85 +241,94 @@ public class Unreliablefirmlog   {
     this.description = description;
   }
 
-  public Unreliablefirmlog inputXML(String inputXML) {
-    this.inputXML = inputXML;
+  public Unreliablefirmlog inputxml(String inputxml) {
+    this.inputxml = inputxml;
     return this;
   }
 
    /**
-   * Vstupní data [persistentní položka]
-   * @return inputXML
+   * vstupní data [persistentní položka]
+   * @return inputxml
   **/
-  @ApiModelProperty(example = "null", value = "Vstupní data [persistentní položka]")
-  public String getInputXML() {
-    return inputXML;
+  @ApiModelProperty(example = "null", value = "vstupní data [persistentní položka]")
+  public String getInputxml() {
+    return inputxml;
   }
 
-  public void setInputXML(String inputXML) {
-    this.inputXML = inputXML;
+  public void setInputxml(String inputxml) {
+    this.inputxml = inputxml;
   }
 
-  public Unreliablefirmlog outputXML(String outputXML) {
-    this.outputXML = outputXML;
+  public Unreliablefirmlog outputxml(String outputxml) {
+    this.outputxml = outputxml;
     return this;
   }
 
    /**
-   * Výstupní data [persistentní položka]
-   * @return outputXML
+   * výstupní data [persistentní položka]
+   * @return outputxml
   **/
-  @ApiModelProperty(example = "null", value = "Výstupní data [persistentní položka]")
-  public String getOutputXML() {
-    return outputXML;
+  @ApiModelProperty(example = "null", value = "výstupní data [persistentní položka]")
+  public String getOutputxml() {
+    return outputxml;
   }
 
-  public void setOutputXML(String outputXML) {
-    this.outputXML = outputXML;
+  public void setOutputxml(String outputxml) {
+    this.outputxml = outputxml;
   }
 
-  public Unreliablefirmlog createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Unreliablefirmlog createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Unreliablefirmlog downloadKind(Integer downloadKind) {
-    this.downloadKind = downloadKind;
+  public Unreliablefirmlog downloadkind(Integer downloadkind) {
+    this.downloadkind = downloadkind;
     return this;
   }
 
    /**
-   * Způsob stažení údajů [persistentní položka]
-   * @return downloadKind
+   * způsob stažení údajů [persistentní položka]
+   * @return downloadkind
   **/
-  @ApiModelProperty(example = "null", value = "Způsob stažení údajů [persistentní položka]")
-  public Integer getDownloadKind() {
-    return downloadKind;
+  @ApiModelProperty(example = "null", value = "způsob stažení údajů [persistentní položka]")
+  public Integer getDownloadkind() {
+    return downloadkind;
   }
 
-  public void setDownloadKind(Integer downloadKind) {
-    this.downloadKind = downloadKind;
+  public void setDownloadkind(Integer downloadkind) {
+    this.downloadkind = downloadkind;
+  }
+
+  public Unreliablefirmlog statuscodeastext(String statuscodeastext) {
+    this.statuscodeastext = statuscodeastext;
+    return this;
   }
 
    /**
-   * Výsledek komunikace s DPH registrem-text
-   * @return statusCodeAsText
+   * výsledek komunikace s dph registrem-text
+   * @return statuscodeastext
   **/
-  @ApiModelProperty(example = "null", value = "Výsledek komunikace s DPH registrem-text")
-  public String getStatusCodeAsText() {
-    return statusCodeAsText;
+  @ApiModelProperty(example = "null", value = "výsledek komunikace s dph registrem-text")
+  public String getStatuscodeastext() {
+    return statuscodeastext;
+  }
+
+  public void setStatuscodeastext(String statuscodeastext) {
+    this.statuscodeastext = statuscodeastext;
   }
 
 
@@ -296,25 +341,25 @@ public class Unreliablefirmlog   {
       return false;
     }
     Unreliablefirmlog unreliablefirmlog = (Unreliablefirmlog) o;
-    return Objects.equals(this.displayName, unreliablefirmlog.displayName) &&
-        Objects.equals(this.ID, unreliablefirmlog.ID) &&
-        Objects.equals(this.classID, unreliablefirmlog.classID) &&
-        Objects.equals(this.objVersion, unreliablefirmlog.objVersion) &&
-        Objects.equals(this.logDateDATE, unreliablefirmlog.logDateDATE) &&
-        Objects.equals(this.statusDateDATE, unreliablefirmlog.statusDateDATE) &&
-        Objects.equals(this.statusCode, unreliablefirmlog.statusCode) &&
-        Objects.equals(this.statusText, unreliablefirmlog.statusText) &&
+    return Objects.equals(this.displayname, unreliablefirmlog.displayname) &&
+        Objects.equals(this.id, unreliablefirmlog.id) &&
+        Objects.equals(this.classid, unreliablefirmlog.classid) &&
+        Objects.equals(this.objversion, unreliablefirmlog.objversion) &&
+        Objects.equals(this.logdatedate, unreliablefirmlog.logdatedate) &&
+        Objects.equals(this.statusdatedate, unreliablefirmlog.statusdatedate) &&
+        Objects.equals(this.statuscode, unreliablefirmlog.statuscode) &&
+        Objects.equals(this.statustext, unreliablefirmlog.statustext) &&
         Objects.equals(this.description, unreliablefirmlog.description) &&
-        Objects.equals(this.inputXML, unreliablefirmlog.inputXML) &&
-        Objects.equals(this.outputXML, unreliablefirmlog.outputXML) &&
-        Objects.equals(this.createdByID, unreliablefirmlog.createdByID) &&
-        Objects.equals(this.downloadKind, unreliablefirmlog.downloadKind) &&
-        Objects.equals(this.statusCodeAsText, unreliablefirmlog.statusCodeAsText);
+        Objects.equals(this.inputxml, unreliablefirmlog.inputxml) &&
+        Objects.equals(this.outputxml, unreliablefirmlog.outputxml) &&
+        Objects.equals(this.createdbyId, unreliablefirmlog.createdbyId) &&
+        Objects.equals(this.downloadkind, unreliablefirmlog.downloadkind) &&
+        Objects.equals(this.statuscodeastext, unreliablefirmlog.statuscodeastext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, logDateDATE, statusDateDATE, statusCode, statusText, description, inputXML, outputXML, createdByID, downloadKind, statusCodeAsText);
+    return Objects.hash(displayname, id, classid, objversion, logdatedate, statusdatedate, statuscode, statustext, description, inputxml, outputxml, createdbyId, downloadkind, statuscodeastext);
   }
 
   @Override
@@ -322,20 +367,20 @@ public class Unreliablefirmlog   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Unreliablefirmlog {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    logDateDATE: ").append(toIndentedString(logDateDATE)).append("\n");
-    sb.append("    statusDateDATE: ").append(toIndentedString(statusDateDATE)).append("\n");
-    sb.append("    statusCode: ").append(toIndentedString(statusCode)).append("\n");
-    sb.append("    statusText: ").append(toIndentedString(statusText)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    logdatedate: ").append(toIndentedString(logdatedate)).append("\n");
+    sb.append("    statusdatedate: ").append(toIndentedString(statusdatedate)).append("\n");
+    sb.append("    statuscode: ").append(toIndentedString(statuscode)).append("\n");
+    sb.append("    statustext: ").append(toIndentedString(statustext)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    inputXML: ").append(toIndentedString(inputXML)).append("\n");
-    sb.append("    outputXML: ").append(toIndentedString(outputXML)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    downloadKind: ").append(toIndentedString(downloadKind)).append("\n");
-    sb.append("    statusCodeAsText: ").append(toIndentedString(statusCodeAsText)).append("\n");
+    sb.append("    inputxml: ").append(toIndentedString(inputxml)).append("\n");
+    sb.append("    outputxml: ").append(toIndentedString(outputxml)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    downloadkind: ").append(toIndentedString(downloadkind)).append("\n");
+    sb.append("    statuscodeastext: ").append(toIndentedString(statuscodeastext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

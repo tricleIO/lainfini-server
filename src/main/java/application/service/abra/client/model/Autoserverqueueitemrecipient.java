@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,177 +34,222 @@ import java.util.Objects;
 /**
  * Autoserverqueueitemrecipient
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Autoserverqueueitemrecipient   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("RecipientType")
-  private Integer recipientType = null;
+  @SerializedName("recipienttype")
+  private Integer recipienttype = null;
 
-  @SerializedName("SecurityUser_ID")
-  private String securityUserID = null;
+  @SerializedName("securityuser_id")
+  private String securityuserId = null;
 
-  @SerializedName("SecurityRole_ID")
-  private String securityRoleID = null;
+  @SerializedName("securityrole_id")
+  private String securityroleId = null;
 
-  @SerializedName("SecurityGroup_ID")
-  private String securityGroupID = null;
+  @SerializedName("securitygroup_id")
+  private String securitygroupId = null;
 
-  @SerializedName("Email")
+  @SerializedName("email")
   private String email = null;
 
-  @SerializedName("SentKind")
-  private Integer sentKind = null;
+  @SerializedName("sentkind")
+  private Integer sentkind = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Úloha ve frontě automatizačního serveru [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Úloha ve frontě automatizačního serveru [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Autoserverqueueitemrecipient posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Autoserverqueueitemrecipient displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Autoserverqueueitemrecipient recipientType(Integer recipientType) {
-    this.recipientType = recipientType;
+  public Autoserverqueueitemrecipient id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Typ příjemce [persistentní položka]
-   * @return recipientType
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Typ příjemce [persistentní položka]")
-  public Integer getRecipientType() {
-    return recipientType;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setRecipientType(Integer recipientType) {
-    this.recipientType = recipientType;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Autoserverqueueitemrecipient securityUserID(String securityUserID) {
-    this.securityUserID = securityUserID;
+  public Autoserverqueueitemrecipient classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Vzkaz - uživatel; ID objektu Uživatel [persistentní položka]
-   * @return securityUserID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Vzkaz - uživatel; ID objektu Uživatel [persistentní položka]")
-  public String getSecurityUserID() {
-    return securityUserID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setSecurityUserID(String securityUserID) {
-    this.securityUserID = securityUserID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Autoserverqueueitemrecipient securityRoleID(String securityRoleID) {
-    this.securityRoleID = securityRoleID;
+  public Autoserverqueueitemrecipient objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Vzkaz - role; ID objektu Role [persistentní položka]
-   * @return securityRoleID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vzkaz - role; ID objektu Role [persistentní položka]")
-  public String getSecurityRoleID() {
-    return securityRoleID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setSecurityRoleID(String securityRoleID) {
-    this.securityRoleID = securityRoleID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Autoserverqueueitemrecipient securityGroupID(String securityGroupID) {
-    this.securityGroupID = securityGroupID;
+  public Autoserverqueueitemrecipient parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Vzkaz - skupina; ID objektu Skupina rolí [persistentní položka]
-   * @return securityGroupID
+   * vlastník; id objektu Úloha ve frontě automatizačního serveru [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Vzkaz - skupina; ID objektu Skupina rolí [persistentní položka]")
-  public String getSecurityGroupID() {
-    return securityGroupID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu Úloha ve frontě automatizačního serveru [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setSecurityGroupID(String securityGroupID) {
-    this.securityGroupID = securityGroupID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Autoserverqueueitemrecipient posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Autoserverqueueitemrecipient recipienttype(Integer recipienttype) {
+    this.recipienttype = recipienttype;
+    return this;
+  }
+
+   /**
+   * typ příjemce [persistentní položka]
+   * @return recipienttype
+  **/
+  @ApiModelProperty(example = "null", value = "typ příjemce [persistentní položka]")
+  public Integer getRecipienttype() {
+    return recipienttype;
+  }
+
+  public void setRecipienttype(Integer recipienttype) {
+    this.recipienttype = recipienttype;
+  }
+
+  public Autoserverqueueitemrecipient securityuserId(String securityuserId) {
+    this.securityuserId = securityuserId;
+    return this;
+  }
+
+   /**
+   * vzkaz - uživatel; id objektu uživatel [persistentní položka]
+   * @return securityuserId
+  **/
+  @ApiModelProperty(example = "null", value = "vzkaz - uživatel; id objektu uživatel [persistentní položka]")
+  public String getSecurityuserId() {
+    return securityuserId;
+  }
+
+  public void setSecurityuserId(String securityuserId) {
+    this.securityuserId = securityuserId;
+  }
+
+  public Autoserverqueueitemrecipient securityroleId(String securityroleId) {
+    this.securityroleId = securityroleId;
+    return this;
+  }
+
+   /**
+   * vzkaz - role; id objektu role [persistentní položka]
+   * @return securityroleId
+  **/
+  @ApiModelProperty(example = "null", value = "vzkaz - role; id objektu role [persistentní položka]")
+  public String getSecurityroleId() {
+    return securityroleId;
+  }
+
+  public void setSecurityroleId(String securityroleId) {
+    this.securityroleId = securityroleId;
+  }
+
+  public Autoserverqueueitemrecipient securitygroupId(String securitygroupId) {
+    this.securitygroupId = securitygroupId;
+    return this;
+  }
+
+   /**
+   * vzkaz - skupina; id objektu skupina rolí [persistentní položka]
+   * @return securitygroupId
+  **/
+  @ApiModelProperty(example = "null", value = "vzkaz - skupina; id objektu skupina rolí [persistentní položka]")
+  public String getSecuritygroupId() {
+    return securitygroupId;
+  }
+
+  public void setSecuritygroupId(String securitygroupId) {
+    this.securitygroupId = securitygroupId;
   }
 
   public Autoserverqueueitemrecipient email(String email) {
@@ -213,10 +258,10 @@ public class Autoserverqueueitemrecipient   {
   }
 
    /**
-   * E-mail [persistentní položka]
+   * e-mail [persistentní položka]
    * @return email
   **/
-  @ApiModelProperty(example = "null", value = "E-mail [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "e-mail [persistentní položka]")
   public String getEmail() {
     return email;
   }
@@ -225,22 +270,22 @@ public class Autoserverqueueitemrecipient   {
     this.email = email;
   }
 
-  public Autoserverqueueitemrecipient sentKind(Integer sentKind) {
-    this.sentKind = sentKind;
+  public Autoserverqueueitemrecipient sentkind(Integer sentkind) {
+    this.sentkind = sentkind;
     return this;
   }
 
    /**
-   * Typ odeslání [persistentní položka]
-   * @return sentKind
+   * typ odeslání [persistentní položka]
+   * @return sentkind
   **/
-  @ApiModelProperty(example = "null", value = "Typ odeslání [persistentní položka]")
-  public Integer getSentKind() {
-    return sentKind;
+  @ApiModelProperty(example = "null", value = "typ odeslání [persistentní položka]")
+  public Integer getSentkind() {
+    return sentkind;
   }
 
-  public void setSentKind(Integer sentKind) {
-    this.sentKind = sentKind;
+  public void setSentkind(Integer sentkind) {
+    this.sentkind = sentkind;
   }
 
 
@@ -253,23 +298,23 @@ public class Autoserverqueueitemrecipient   {
       return false;
     }
     Autoserverqueueitemrecipient autoserverqueueitemrecipient = (Autoserverqueueitemrecipient) o;
-    return Objects.equals(this.displayName, autoserverqueueitemrecipient.displayName) &&
-        Objects.equals(this.ID, autoserverqueueitemrecipient.ID) &&
-        Objects.equals(this.classID, autoserverqueueitemrecipient.classID) &&
-        Objects.equals(this.objVersion, autoserverqueueitemrecipient.objVersion) &&
-        Objects.equals(this.parentID, autoserverqueueitemrecipient.parentID) &&
-        Objects.equals(this.posIndex, autoserverqueueitemrecipient.posIndex) &&
-        Objects.equals(this.recipientType, autoserverqueueitemrecipient.recipientType) &&
-        Objects.equals(this.securityUserID, autoserverqueueitemrecipient.securityUserID) &&
-        Objects.equals(this.securityRoleID, autoserverqueueitemrecipient.securityRoleID) &&
-        Objects.equals(this.securityGroupID, autoserverqueueitemrecipient.securityGroupID) &&
+    return Objects.equals(this.displayname, autoserverqueueitemrecipient.displayname) &&
+        Objects.equals(this.id, autoserverqueueitemrecipient.id) &&
+        Objects.equals(this.classid, autoserverqueueitemrecipient.classid) &&
+        Objects.equals(this.objversion, autoserverqueueitemrecipient.objversion) &&
+        Objects.equals(this.parentId, autoserverqueueitemrecipient.parentId) &&
+        Objects.equals(this.posindex, autoserverqueueitemrecipient.posindex) &&
+        Objects.equals(this.recipienttype, autoserverqueueitemrecipient.recipienttype) &&
+        Objects.equals(this.securityuserId, autoserverqueueitemrecipient.securityuserId) &&
+        Objects.equals(this.securityroleId, autoserverqueueitemrecipient.securityroleId) &&
+        Objects.equals(this.securitygroupId, autoserverqueueitemrecipient.securitygroupId) &&
         Objects.equals(this.email, autoserverqueueitemrecipient.email) &&
-        Objects.equals(this.sentKind, autoserverqueueitemrecipient.sentKind);
+        Objects.equals(this.sentkind, autoserverqueueitemrecipient.sentkind);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, recipientType, securityUserID, securityRoleID, securityGroupID, email, sentKind);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, recipienttype, securityuserId, securityroleId, securitygroupId, email, sentkind);
   }
 
   @Override
@@ -277,18 +322,18 @@ public class Autoserverqueueitemrecipient   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Autoserverqueueitemrecipient {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    recipientType: ").append(toIndentedString(recipientType)).append("\n");
-    sb.append("    securityUserID: ").append(toIndentedString(securityUserID)).append("\n");
-    sb.append("    securityRoleID: ").append(toIndentedString(securityRoleID)).append("\n");
-    sb.append("    securityGroupID: ").append(toIndentedString(securityGroupID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    recipienttype: ").append(toIndentedString(recipienttype)).append("\n");
+    sb.append("    securityuserId: ").append(toIndentedString(securityuserId)).append("\n");
+    sb.append("    securityroleId: ").append(toIndentedString(securityroleId)).append("\n");
+    sb.append("    securitygroupId: ").append(toIndentedString(securitygroupId)).append("\n");
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
-    sb.append("    sentKind: ").append(toIndentedString(sentKind)).append("\n");
+    sb.append("    sentkind: ").append(toIndentedString(sentkind)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,78 +34,114 @@ import java.util.Objects;
 /**
  * Wikiuserstyle
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wikiuserstyle   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("StyleKind")
-  private Integer styleKind = null;
+  @SerializedName("stylekind")
+  private Integer stylekind = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("StyleData")
-  private byte[] styleData = null;
+  @SerializedName("styledata")
+  private byte[] styledata = null;
 
-  @SerializedName("StyleText")
-  private String styleText = null;
+  @SerializedName("styletext")
+  private String styletext = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Wikiuserstyle displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wikiuserstyle id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wikiuserstyle classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wikiuserstyle objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Wikiuserstyle hidden(Boolean hidden) {
@@ -114,10 +150,10 @@ public class Wikiuserstyle   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -126,22 +162,22 @@ public class Wikiuserstyle   {
     this.hidden = hidden;
   }
 
-  public Wikiuserstyle styleKind(Integer styleKind) {
-    this.styleKind = styleKind;
+  public Wikiuserstyle stylekind(Integer stylekind) {
+    this.stylekind = stylekind;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return styleKind
+   * typ [persistentní položka]
+   * @return stylekind
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getStyleKind() {
-    return styleKind;
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getStylekind() {
+    return stylekind;
   }
 
-  public void setStyleKind(Integer styleKind) {
-    this.styleKind = styleKind;
+  public void setStylekind(Integer stylekind) {
+    this.stylekind = stylekind;
   }
 
   public Wikiuserstyle name(String name) {
@@ -150,10 +186,10 @@ public class Wikiuserstyle   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -168,10 +204,10 @@ public class Wikiuserstyle   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -180,76 +216,76 @@ public class Wikiuserstyle   {
     this.description = description;
   }
 
-  public Wikiuserstyle styleData(byte[] styleData) {
-    this.styleData = styleData;
+  public Wikiuserstyle styledata(byte[] styledata) {
+    this.styledata = styledata;
     return this;
   }
 
    /**
-   * Parametry [persistentní položka]
-   * @return styleData
+   * parametry [persistentní položka]
+   * @return styledata
   **/
-  @ApiModelProperty(example = "null", value = "Parametry [persistentní položka]")
-  public byte[] getStyleData() {
-    return styleData;
+  @ApiModelProperty(example = "null", value = "parametry [persistentní položka]")
+  public byte[] getStyledata() {
+    return styledata;
   }
 
-  public void setStyleData(byte[] styleData) {
-    this.styleData = styleData;
+  public void setStyledata(byte[] styledata) {
+    this.styledata = styledata;
   }
 
-  public Wikiuserstyle styleText(String styleText) {
-    this.styleText = styleText;
+  public Wikiuserstyle styletext(String styletext) {
+    this.styletext = styletext;
     return this;
   }
 
    /**
-   * Styl [persistentní položka]
-   * @return styleText
+   * styl [persistentní položka]
+   * @return styletext
   **/
-  @ApiModelProperty(example = "null", value = "Styl [persistentní položka]")
-  public String getStyleText() {
-    return styleText;
+  @ApiModelProperty(example = "null", value = "styl [persistentní položka]")
+  public String getStyletext() {
+    return styletext;
   }
 
-  public void setStyleText(String styleText) {
-    this.styleText = styleText;
+  public void setStyletext(String styletext) {
+    this.styletext = styletext;
   }
 
-  public Wikiuserstyle createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Wikiuserstyle createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Styl vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * styl vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Styl vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "styl vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Wikiuserstyle correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Wikiuserstyle correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Styl opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * styl opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Styl opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "styl opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
 
@@ -262,23 +298,23 @@ public class Wikiuserstyle   {
       return false;
     }
     Wikiuserstyle wikiuserstyle = (Wikiuserstyle) o;
-    return Objects.equals(this.displayName, wikiuserstyle.displayName) &&
-        Objects.equals(this.ID, wikiuserstyle.ID) &&
-        Objects.equals(this.classID, wikiuserstyle.classID) &&
-        Objects.equals(this.objVersion, wikiuserstyle.objVersion) &&
+    return Objects.equals(this.displayname, wikiuserstyle.displayname) &&
+        Objects.equals(this.id, wikiuserstyle.id) &&
+        Objects.equals(this.classid, wikiuserstyle.classid) &&
+        Objects.equals(this.objversion, wikiuserstyle.objversion) &&
         Objects.equals(this.hidden, wikiuserstyle.hidden) &&
-        Objects.equals(this.styleKind, wikiuserstyle.styleKind) &&
+        Objects.equals(this.stylekind, wikiuserstyle.stylekind) &&
         Objects.equals(this.name, wikiuserstyle.name) &&
         Objects.equals(this.description, wikiuserstyle.description) &&
-        Objects.equals(this.styleData, wikiuserstyle.styleData) &&
-        Objects.equals(this.styleText, wikiuserstyle.styleText) &&
-        Objects.equals(this.createdByID, wikiuserstyle.createdByID) &&
-        Objects.equals(this.correctedByID, wikiuserstyle.correctedByID);
+        Objects.equals(this.styledata, wikiuserstyle.styledata) &&
+        Objects.equals(this.styletext, wikiuserstyle.styletext) &&
+        Objects.equals(this.createdbyId, wikiuserstyle.createdbyId) &&
+        Objects.equals(this.correctedbyId, wikiuserstyle.correctedbyId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, styleKind, name, description, styleData, styleText, createdByID, correctedByID);
+    return Objects.hash(displayname, id, classid, objversion, hidden, stylekind, name, description, styledata, styletext, createdbyId, correctedbyId);
   }
 
   @Override
@@ -286,18 +322,18 @@ public class Wikiuserstyle   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wikiuserstyle {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    styleKind: ").append(toIndentedString(styleKind)).append("\n");
+    sb.append("    stylekind: ").append(toIndentedString(stylekind)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    styleData: ").append(toIndentedString(styleData)).append("\n");
-    sb.append("    styleText: ").append(toIndentedString(styleText)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
+    sb.append("    styledata: ").append(toIndentedString(styledata)).append("\n");
+    sb.append("    styletext: ").append(toIndentedString(styletext)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

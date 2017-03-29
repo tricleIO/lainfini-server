@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,96 +37,132 @@ import java.util.Objects;
 /**
  * Plmexceptionworkplace
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmexceptionworkplace   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Plmexceptionworkplace2> rows = new ArrayList<Plmexceptionworkplace2>();
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("Corrected$DATE")
-  private DateTime correctedDATE = null;
+  @SerializedName("corrected$date")
+  private DateTime correcteddate = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("RowsMinDate")
-  private DateTime rowsMinDate = null;
+  @SerializedName("rowsmindate")
+  private DateTime rowsmindate = null;
 
-  @SerializedName("RowsMaxDate")
-  private DateTime rowsMaxDate = null;
+  @SerializedName("rowsmaxdate")
+  private DateTime rowsmaxdate = null;
+
+  public Plmexceptionworkplace displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Plmexceptionworkplace id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmexceptionworkplace classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmexceptionworkplace objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Plmexceptionworkplace rows(List<Plmexceptionworkplace2> rows) {
@@ -140,10 +176,10 @@ public class Plmexceptionworkplace   {
   }
 
    /**
-   * Řádky; kolekce BO Výjimka pracoviště - platnost [nepersistentní položka]
+   * Řádky; kolekce bo výjimka pracoviště - platnost [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Výjimka pracoviště - platnost [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo výjimka pracoviště - platnost [nepersistentní položka]")
   public List<Plmexceptionworkplace2> getRows() {
     return rows;
   }
@@ -152,166 +188,166 @@ public class Plmexceptionworkplace   {
     this.rows = rows;
   }
 
-  public Plmexceptionworkplace docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Plmexceptionworkplace docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Plmexceptionworkplace periodID(String periodID) {
-    this.periodID = periodID;
+  public Plmexceptionworkplace periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Plmexceptionworkplace ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Plmexceptionworkplace ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Plmexceptionworkplace docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Plmexceptionworkplace docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Plmexceptionworkplace createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Plmexceptionworkplace createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Plmexceptionworkplace correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Plmexceptionworkplace correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Plmexceptionworkplace newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Plmexceptionworkplace newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Plmexceptionworkplace newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Plmexceptionworkplace newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Plmexceptionworkplace correctedDATE(DateTime correctedDATE) {
-    this.correctedDATE = correctedDATE;
+  public Plmexceptionworkplace correcteddate(DateTime correcteddate) {
+    this.correcteddate = correcteddate;
     return this;
   }
 
    /**
-   * Opraven [persistentní položka]
-   * @return correctedDATE
+   * opraven [persistentní položka]
+   * @return correcteddate
   **/
-  @ApiModelProperty(example = "null", value = "Opraven [persistentní položka]")
-  public DateTime getCorrectedDATE() {
-    return correctedDATE;
+  @ApiModelProperty(example = "null", value = "opraven [persistentní položka]")
+  public DateTime getCorrecteddate() {
+    return correcteddate;
   }
 
-  public void setCorrectedDATE(DateTime correctedDATE) {
-    this.correctedDATE = correctedDATE;
+  public void setCorrecteddate(DateTime correcteddate) {
+    this.correcteddate = correcteddate;
   }
 
   public Plmexceptionworkplace note(String note) {
@@ -320,10 +356,10 @@ public class Plmexceptionworkplace   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -338,10 +374,10 @@ public class Plmexceptionworkplace   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -350,40 +386,40 @@ public class Plmexceptionworkplace   {
     this.name = name;
   }
 
-  public Plmexceptionworkplace rowsMinDate(DateTime rowsMinDate) {
-    this.rowsMinDate = rowsMinDate;
+  public Plmexceptionworkplace rowsmindate(DateTime rowsmindate) {
+    this.rowsmindate = rowsmindate;
     return this;
   }
 
    /**
-   * Minimální platnost od
-   * @return rowsMinDate
+   * minimální platnost od
+   * @return rowsmindate
   **/
-  @ApiModelProperty(example = "null", value = "Minimální platnost od")
-  public DateTime getRowsMinDate() {
-    return rowsMinDate;
+  @ApiModelProperty(example = "null", value = "minimální platnost od")
+  public DateTime getRowsmindate() {
+    return rowsmindate;
   }
 
-  public void setRowsMinDate(DateTime rowsMinDate) {
-    this.rowsMinDate = rowsMinDate;
+  public void setRowsmindate(DateTime rowsmindate) {
+    this.rowsmindate = rowsmindate;
   }
 
-  public Plmexceptionworkplace rowsMaxDate(DateTime rowsMaxDate) {
-    this.rowsMaxDate = rowsMaxDate;
+  public Plmexceptionworkplace rowsmaxdate(DateTime rowsmaxdate) {
+    this.rowsmaxdate = rowsmaxdate;
     return this;
   }
 
    /**
-   * Maximální platnost do
-   * @return rowsMaxDate
+   * maximální platnost do
+   * @return rowsmaxdate
   **/
-  @ApiModelProperty(example = "null", value = "Maximální platnost do")
-  public DateTime getRowsMaxDate() {
-    return rowsMaxDate;
+  @ApiModelProperty(example = "null", value = "maximální platnost do")
+  public DateTime getRowsmaxdate() {
+    return rowsmaxdate;
   }
 
-  public void setRowsMaxDate(DateTime rowsMaxDate) {
-    this.rowsMaxDate = rowsMaxDate;
+  public void setRowsmaxdate(DateTime rowsmaxdate) {
+    this.rowsmaxdate = rowsmaxdate;
   }
 
 
@@ -396,29 +432,29 @@ public class Plmexceptionworkplace   {
       return false;
     }
     Plmexceptionworkplace plmexceptionworkplace = (Plmexceptionworkplace) o;
-    return Objects.equals(this.displayName, plmexceptionworkplace.displayName) &&
-        Objects.equals(this.ID, plmexceptionworkplace.ID) &&
-        Objects.equals(this.classID, plmexceptionworkplace.classID) &&
-        Objects.equals(this.objVersion, plmexceptionworkplace.objVersion) &&
+    return Objects.equals(this.displayname, plmexceptionworkplace.displayname) &&
+        Objects.equals(this.id, plmexceptionworkplace.id) &&
+        Objects.equals(this.classid, plmexceptionworkplace.classid) &&
+        Objects.equals(this.objversion, plmexceptionworkplace.objversion) &&
         Objects.equals(this.rows, plmexceptionworkplace.rows) &&
-        Objects.equals(this.docQueueID, plmexceptionworkplace.docQueueID) &&
-        Objects.equals(this.periodID, plmexceptionworkplace.periodID) &&
-        Objects.equals(this.ordNumber, plmexceptionworkplace.ordNumber) &&
-        Objects.equals(this.docDateDATE, plmexceptionworkplace.docDateDATE) &&
-        Objects.equals(this.createdByID, plmexceptionworkplace.createdByID) &&
-        Objects.equals(this.correctedByID, plmexceptionworkplace.correctedByID) &&
-        Objects.equals(this.newRelatedType, plmexceptionworkplace.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, plmexceptionworkplace.newRelatedDocumentID) &&
-        Objects.equals(this.correctedDATE, plmexceptionworkplace.correctedDATE) &&
+        Objects.equals(this.docqueueId, plmexceptionworkplace.docqueueId) &&
+        Objects.equals(this.periodId, plmexceptionworkplace.periodId) &&
+        Objects.equals(this.ordnumber, plmexceptionworkplace.ordnumber) &&
+        Objects.equals(this.docdatedate, plmexceptionworkplace.docdatedate) &&
+        Objects.equals(this.createdbyId, plmexceptionworkplace.createdbyId) &&
+        Objects.equals(this.correctedbyId, plmexceptionworkplace.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, plmexceptionworkplace.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, plmexceptionworkplace.newrelateddocumentId) &&
+        Objects.equals(this.correcteddate, plmexceptionworkplace.correcteddate) &&
         Objects.equals(this.note, plmexceptionworkplace.note) &&
         Objects.equals(this.name, plmexceptionworkplace.name) &&
-        Objects.equals(this.rowsMinDate, plmexceptionworkplace.rowsMinDate) &&
-        Objects.equals(this.rowsMaxDate, plmexceptionworkplace.rowsMaxDate);
+        Objects.equals(this.rowsmindate, plmexceptionworkplace.rowsmindate) &&
+        Objects.equals(this.rowsmaxdate, plmexceptionworkplace.rowsmaxdate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, correctedDATE, note, name, rowsMinDate, rowsMaxDate);
+    return Objects.hash(displayname, id, classid, objversion, rows, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, correcteddate, note, name, rowsmindate, rowsmaxdate);
   }
 
   @Override
@@ -426,24 +462,24 @@ public class Plmexceptionworkplace   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmexceptionworkplace {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    correctedDATE: ").append(toIndentedString(correctedDATE)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    correcteddate: ").append(toIndentedString(correcteddate)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    rowsMinDate: ").append(toIndentedString(rowsMinDate)).append("\n");
-    sb.append("    rowsMaxDate: ").append(toIndentedString(rowsMaxDate)).append("\n");
+    sb.append("    rowsmindate: ").append(toIndentedString(rowsmindate)).append("\n");
+    sb.append("    rowsmaxdate: ").append(toIndentedString(rowsmaxdate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,189 +34,234 @@ import java.util.Objects;
 /**
  * Vatreceiveddepositcreditnoterow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Vatreceiveddepositcreditnoterow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("TAmount")
-  private Double tAmount = null;
+  @SerializedName("tamount")
+  private Double tamount = null;
 
-  @SerializedName("LocalTAmount")
-  private Double localTAmount = null;
+  @SerializedName("localtamount")
+  private Double localtamount = null;
 
-  @SerializedName("Text")
+  @SerializedName("text")
   private String text = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("VATRate_ID")
-  private String vATRateID = null;
+  @SerializedName("vatrate_id")
+  private String vatrateId = null;
 
-  @SerializedName("VATIndex_ID")
-  private String vATIndexID = null;
+  @SerializedName("vatindex_id")
+  private String vatindexId = null;
 
-  @SerializedName("VATRate")
-  private Double vATRate = null;
+  @SerializedName("vatrate")
+  private Double vatrate = null;
 
-  @SerializedName("TAmountWithoutVAT")
-  private Double tAmountWithoutVAT = null;
+  @SerializedName("tamountwithoutvat")
+  private Double tamountwithoutvat = null;
 
-  @SerializedName("LocalTAmountWithoutVAT")
-  private Double localTAmountWithoutVAT = null;
+  @SerializedName("localtamountwithoutvat")
+  private Double localtamountwithoutvat = null;
 
-  @SerializedName("VATTAmount")
-  private Double vATTAmount = null;
+  @SerializedName("vattamount")
+  private Double vattamount = null;
 
-  @SerializedName("DRCArticle_ID")
-  private String dRCArticleID = null;
+  @SerializedName("drcarticle_id")
+  private String drcarticleId = null;
 
-  @SerializedName("DRCQuantity")
-  private Double dRCQuantity = null;
+  @SerializedName("drcquantity")
+  private Double drcquantity = null;
 
-  @SerializedName("DRCQUnit")
-  private String dRCQUnit = null;
+  @SerializedName("drcqunit")
+  private String drcqunit = null;
 
-  @SerializedName("LocalByHand")
-  private Boolean localByHand = null;
+  @SerializedName("localbyhand")
+  private Boolean localbyhand = null;
 
-  @SerializedName("LocalVATTAmount")
-  private Double localVATTAmount = null;
+  @SerializedName("localvattamount")
+  private Double localvattamount = null;
 
-  @SerializedName("VATMode")
-  private Integer vATMode = null;
+  @SerializedName("vatmode")
+  private Integer vatmode = null;
 
-  @SerializedName("UsedRatio")
-  private Boolean usedRatio = null;
+  @SerializedName("usedratio")
+  private Boolean usedratio = null;
 
-  @SerializedName("RSource_ID")
-  private String rSourceID = null;
+  @SerializedName("rsource_id")
+  private String rsourceId = null;
 
-  @SerializedName("RowExtID")
-  private String rowExtID = null;
+  @SerializedName("rowextid")
+  private String rowextid = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Dobropis daň.zál.listu přijatého [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Dobropis daň.zál.listu přijatého [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Vatreceiveddepositcreditnoterow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Vatreceiveddepositcreditnoterow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Vatreceiveddepositcreditnoterow tAmount(Double tAmount) {
-    this.tAmount = tAmount;
+  public Vatreceiveddepositcreditnoterow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Celkem [persistentní položka]
-   * @return tAmount
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Celkem [persistentní položka]")
-  public Double getTAmount() {
-    return tAmount;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setTAmount(Double tAmount) {
-    this.tAmount = tAmount;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Vatreceiveddepositcreditnoterow localTAmount(Double localTAmount) {
-    this.localTAmount = localTAmount;
+  public Vatreceiveddepositcreditnoterow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Celkem lokálně [persistentní položka]
-   * @return localTAmount
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Celkem lokálně [persistentní položka]")
-  public Double getLocalTAmount() {
-    return localTAmount;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setLocalTAmount(Double localTAmount) {
-    this.localTAmount = localTAmount;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Vatreceiveddepositcreditnoterow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Vatreceiveddepositcreditnoterow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu dobropis daň.zál.listu přijatého [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu dobropis daň.zál.listu přijatého [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Vatreceiveddepositcreditnoterow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Vatreceiveddepositcreditnoterow tamount(Double tamount) {
+    this.tamount = tamount;
+    return this;
+  }
+
+   /**
+   * celkem [persistentní položka]
+   * @return tamount
+  **/
+  @ApiModelProperty(example = "null", value = "celkem [persistentní položka]")
+  public Double getTamount() {
+    return tamount;
+  }
+
+  public void setTamount(Double tamount) {
+    this.tamount = tamount;
+  }
+
+  public Vatreceiveddepositcreditnoterow localtamount(Double localtamount) {
+    this.localtamount = localtamount;
+    return this;
+  }
+
+   /**
+   * celkem lokálně [persistentní položka]
+   * @return localtamount
+  **/
+  @ApiModelProperty(example = "null", value = "celkem lokálně [persistentní položka]")
+  public Double getLocaltamount() {
+    return localtamount;
+  }
+
+  public void setLocaltamount(Double localtamount) {
+    this.localtamount = localtamount;
   }
 
   public Vatreceiveddepositcreditnoterow text(String text) {
@@ -225,10 +270,10 @@ public class Vatreceiveddepositcreditnoterow   {
   }
 
    /**
-   * Text [persistentní položka]
+   * text [persistentní položka]
    * @return text
   **/
-  @ApiModelProperty(example = "null", value = "Text [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "text [persistentní položka]")
   public String getText() {
     return text;
   }
@@ -237,310 +282,346 @@ public class Vatreceiveddepositcreditnoterow   {
     this.text = text;
   }
 
-  public Vatreceiveddepositcreditnoterow divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Vatreceiveddepositcreditnoterow divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Vatreceiveddepositcreditnoterow busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Vatreceiveddepositcreditnoterow busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Vatreceiveddepositcreditnoterow busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Vatreceiveddepositcreditnoterow bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obch.případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obch.případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obch.případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obch.případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Vatreceiveddepositcreditnoterow busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Vatreceiveddepositcreditnoterow busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Vatreceiveddepositcreditnoterow vATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public Vatreceiveddepositcreditnoterow vatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
     return this;
   }
 
    /**
-   * %DPH; ID objektu DPH sazba [persistentní položka]
-   * @return vATRateID
+   * %dph; id objektu dph sazba [persistentní položka]
+   * @return vatrateId
   **/
-  @ApiModelProperty(example = "null", value = "%DPH; ID objektu DPH sazba [persistentní položka]")
-  public String getVATRateID() {
-    return vATRateID;
+  @ApiModelProperty(example = "null", value = "%dph; id objektu dph sazba [persistentní položka]")
+  public String getVatrateId() {
+    return vatrateId;
   }
 
-  public void setVATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public void setVatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
   }
 
-  public Vatreceiveddepositcreditnoterow vATIndexID(String vATIndexID) {
-    this.vATIndexID = vATIndexID;
+  public Vatreceiveddepositcreditnoterow vatindexId(String vatindexId) {
+    this.vatindexId = vatindexId;
     return this;
   }
 
    /**
-   * DPHIndex; ID objektu DPH index [persistentní položka]
-   * @return vATIndexID
+   * dphindex; id objektu dph index [persistentní položka]
+   * @return vatindexId
   **/
-  @ApiModelProperty(example = "null", value = "DPHIndex; ID objektu DPH index [persistentní položka]")
-  public String getVATIndexID() {
-    return vATIndexID;
+  @ApiModelProperty(example = "null", value = "dphindex; id objektu dph index [persistentní položka]")
+  public String getVatindexId() {
+    return vatindexId;
   }
 
-  public void setVATIndexID(String vATIndexID) {
-    this.vATIndexID = vATIndexID;
+  public void setVatindexId(String vatindexId) {
+    this.vatindexId = vatindexId;
   }
 
-   /**
-   * %DPH [persistentní položka]
-   * @return vATRate
-  **/
-  @ApiModelProperty(example = "null", value = "%DPH [persistentní položka]")
-  public Double getVATRate() {
-    return vATRate;
-  }
-
-  public Vatreceiveddepositcreditnoterow tAmountWithoutVAT(Double tAmountWithoutVAT) {
-    this.tAmountWithoutVAT = tAmountWithoutVAT;
+  public Vatreceiveddepositcreditnoterow vatrate(Double vatrate) {
+    this.vatrate = vatrate;
     return this;
   }
 
    /**
-   * Bez daně [persistentní položka]
-   * @return tAmountWithoutVAT
+   * %dph [persistentní položka]
+   * @return vatrate
   **/
-  @ApiModelProperty(example = "null", value = "Bez daně [persistentní položka]")
-  public Double getTAmountWithoutVAT() {
-    return tAmountWithoutVAT;
+  @ApiModelProperty(example = "null", value = "%dph [persistentní položka]")
+  public Double getVatrate() {
+    return vatrate;
   }
 
-  public void setTAmountWithoutVAT(Double tAmountWithoutVAT) {
-    this.tAmountWithoutVAT = tAmountWithoutVAT;
+  public void setVatrate(Double vatrate) {
+    this.vatrate = vatrate;
   }
 
-   /**
-   * Bez daně lokálně [persistentní položka]
-   * @return localTAmountWithoutVAT
-  **/
-  @ApiModelProperty(example = "null", value = "Bez daně lokálně [persistentní položka]")
-  public Double getLocalTAmountWithoutVAT() {
-    return localTAmountWithoutVAT;
-  }
-
-   /**
-   * DPH
-   * @return vATTAmount
-  **/
-  @ApiModelProperty(example = "null", value = "DPH")
-  public Double getVATTAmount() {
-    return vATTAmount;
-  }
-
-  public Vatreceiveddepositcreditnoterow dRCArticleID(String dRCArticleID) {
-    this.dRCArticleID = dRCArticleID;
+  public Vatreceiveddepositcreditnoterow tamountwithoutvat(Double tamountwithoutvat) {
+    this.tamountwithoutvat = tamountwithoutvat;
     return this;
   }
 
    /**
-   * Typ plnění; ID objektu Kód typu plnění [persistentní položka]
-   * @return dRCArticleID
+   * bez daně [persistentní položka]
+   * @return tamountwithoutvat
   **/
-  @ApiModelProperty(example = "null", value = "Typ plnění; ID objektu Kód typu plnění [persistentní položka]")
-  public String getDRCArticleID() {
-    return dRCArticleID;
+  @ApiModelProperty(example = "null", value = "bez daně [persistentní položka]")
+  public Double getTamountwithoutvat() {
+    return tamountwithoutvat;
   }
 
-  public void setDRCArticleID(String dRCArticleID) {
-    this.dRCArticleID = dRCArticleID;
+  public void setTamountwithoutvat(Double tamountwithoutvat) {
+    this.tamountwithoutvat = tamountwithoutvat;
   }
 
-  public Vatreceiveddepositcreditnoterow dRCQuantity(Double dRCQuantity) {
-    this.dRCQuantity = dRCQuantity;
+  public Vatreceiveddepositcreditnoterow localtamountwithoutvat(Double localtamountwithoutvat) {
+    this.localtamountwithoutvat = localtamountwithoutvat;
     return this;
   }
 
    /**
-   * Vykazované množství [persistentní položka]
-   * @return dRCQuantity
+   * bez daně lokálně [persistentní položka]
+   * @return localtamountwithoutvat
   **/
-  @ApiModelProperty(example = "null", value = "Vykazované množství [persistentní položka]")
-  public Double getDRCQuantity() {
-    return dRCQuantity;
+  @ApiModelProperty(example = "null", value = "bez daně lokálně [persistentní položka]")
+  public Double getLocaltamountwithoutvat() {
+    return localtamountwithoutvat;
   }
 
-  public void setDRCQuantity(Double dRCQuantity) {
-    this.dRCQuantity = dRCQuantity;
+  public void setLocaltamountwithoutvat(Double localtamountwithoutvat) {
+    this.localtamountwithoutvat = localtamountwithoutvat;
   }
 
-  public Vatreceiveddepositcreditnoterow dRCQUnit(String dRCQUnit) {
-    this.dRCQUnit = dRCQUnit;
+  public Vatreceiveddepositcreditnoterow vattamount(Double vattamount) {
+    this.vattamount = vattamount;
     return this;
   }
 
    /**
-   * Vykazovaná jednotka [persistentní položka]
-   * @return dRCQUnit
+   * dph
+   * @return vattamount
   **/
-  @ApiModelProperty(example = "null", value = "Vykazovaná jednotka [persistentní položka]")
-  public String getDRCQUnit() {
-    return dRCQUnit;
+  @ApiModelProperty(example = "null", value = "dph")
+  public Double getVattamount() {
+    return vattamount;
   }
 
-  public void setDRCQUnit(String dRCQUnit) {
-    this.dRCQUnit = dRCQUnit;
+  public void setVattamount(Double vattamount) {
+    this.vattamount = vattamount;
   }
 
-  public Vatreceiveddepositcreditnoterow localByHand(Boolean localByHand) {
-    this.localByHand = localByHand;
+  public Vatreceiveddepositcreditnoterow drcarticleId(String drcarticleId) {
+    this.drcarticleId = drcarticleId;
     return this;
   }
 
    /**
-   * Ručně zadáno [persistentní položka]
-   * @return localByHand
+   * typ plnění; id objektu kód typu plnění [persistentní položka]
+   * @return drcarticleId
   **/
-  @ApiModelProperty(example = "null", value = "Ručně zadáno [persistentní položka]")
-  public Boolean getLocalByHand() {
-    return localByHand;
+  @ApiModelProperty(example = "null", value = "typ plnění; id objektu kód typu plnění [persistentní položka]")
+  public String getDrcarticleId() {
+    return drcarticleId;
   }
 
-  public void setLocalByHand(Boolean localByHand) {
-    this.localByHand = localByHand;
+  public void setDrcarticleId(String drcarticleId) {
+    this.drcarticleId = drcarticleId;
   }
 
-   /**
-   * DPH (lok.)
-   * @return localVATTAmount
-  **/
-  @ApiModelProperty(example = "null", value = "DPH (lok.)")
-  public Double getLocalVATTAmount() {
-    return localVATTAmount;
-  }
-
-  public Vatreceiveddepositcreditnoterow vATMode(Integer vATMode) {
-    this.vATMode = vATMode;
+  public Vatreceiveddepositcreditnoterow drcquantity(Double drcquantity) {
+    this.drcquantity = drcquantity;
     return this;
   }
 
    /**
-   * Režim DPH [persistentní položka]
-   * @return vATMode
+   * vykazované množství [persistentní položka]
+   * @return drcquantity
   **/
-  @ApiModelProperty(example = "null", value = "Režim DPH [persistentní položka]")
-  public Integer getVATMode() {
-    return vATMode;
+  @ApiModelProperty(example = "null", value = "vykazované množství [persistentní položka]")
+  public Double getDrcquantity() {
+    return drcquantity;
   }
 
-  public void setVATMode(Integer vATMode) {
-    this.vATMode = vATMode;
+  public void setDrcquantity(Double drcquantity) {
+    this.drcquantity = drcquantity;
   }
 
-  public Vatreceiveddepositcreditnoterow usedRatio(Boolean usedRatio) {
-    this.usedRatio = usedRatio;
+  public Vatreceiveddepositcreditnoterow drcqunit(String drcqunit) {
+    this.drcqunit = drcqunit;
     return this;
   }
 
    /**
-   * Použit poměr [persistentní položka]
-   * @return usedRatio
+   * vykazovaná jednotka [persistentní položka]
+   * @return drcqunit
   **/
-  @ApiModelProperty(example = "null", value = "Použit poměr [persistentní položka]")
-  public Boolean getUsedRatio() {
-    return usedRatio;
+  @ApiModelProperty(example = "null", value = "vykazovaná jednotka [persistentní položka]")
+  public String getDrcqunit() {
+    return drcqunit;
   }
 
-  public void setUsedRatio(Boolean usedRatio) {
-    this.usedRatio = usedRatio;
+  public void setDrcqunit(String drcqunit) {
+    this.drcqunit = drcqunit;
   }
 
-  public Vatreceiveddepositcreditnoterow rSourceID(String rSourceID) {
-    this.rSourceID = rSourceID;
+  public Vatreceiveddepositcreditnoterow localbyhand(Boolean localbyhand) {
+    this.localbyhand = localbyhand;
     return this;
   }
 
    /**
-   * Ř. dobr.dokladu; ID objektu Daňový zálohový list přijatý - řádek [persistentní položka]
-   * @return rSourceID
+   * ručně zadáno [persistentní položka]
+   * @return localbyhand
   **/
-  @ApiModelProperty(example = "null", value = "Ř. dobr.dokladu; ID objektu Daňový zálohový list přijatý - řádek [persistentní položka]")
-  public String getRSourceID() {
-    return rSourceID;
+  @ApiModelProperty(example = "null", value = "ručně zadáno [persistentní položka]")
+  public Boolean getLocalbyhand() {
+    return localbyhand;
   }
 
-  public void setRSourceID(String rSourceID) {
-    this.rSourceID = rSourceID;
+  public void setLocalbyhand(Boolean localbyhand) {
+    this.localbyhand = localbyhand;
   }
 
-  public Vatreceiveddepositcreditnoterow rowExtID(String rowExtID) {
-    this.rowExtID = rowExtID;
+  public Vatreceiveddepositcreditnoterow localvattamount(Double localvattamount) {
+    this.localvattamount = localvattamount;
     return this;
   }
 
    /**
-   * Odkaz na ISDOC [persistentní položka]
-   * @return rowExtID
+   * dph (lok.)
+   * @return localvattamount
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na ISDOC [persistentní položka]")
-  public String getRowExtID() {
-    return rowExtID;
+  @ApiModelProperty(example = "null", value = "dph (lok.)")
+  public Double getLocalvattamount() {
+    return localvattamount;
   }
 
-  public void setRowExtID(String rowExtID) {
-    this.rowExtID = rowExtID;
+  public void setLocalvattamount(Double localvattamount) {
+    this.localvattamount = localvattamount;
+  }
+
+  public Vatreceiveddepositcreditnoterow vatmode(Integer vatmode) {
+    this.vatmode = vatmode;
+    return this;
+  }
+
+   /**
+   * režim dph [persistentní položka]
+   * @return vatmode
+  **/
+  @ApiModelProperty(example = "null", value = "režim dph [persistentní položka]")
+  public Integer getVatmode() {
+    return vatmode;
+  }
+
+  public void setVatmode(Integer vatmode) {
+    this.vatmode = vatmode;
+  }
+
+  public Vatreceiveddepositcreditnoterow usedratio(Boolean usedratio) {
+    this.usedratio = usedratio;
+    return this;
+  }
+
+   /**
+   * použit poměr [persistentní položka]
+   * @return usedratio
+  **/
+  @ApiModelProperty(example = "null", value = "použit poměr [persistentní položka]")
+  public Boolean getUsedratio() {
+    return usedratio;
+  }
+
+  public void setUsedratio(Boolean usedratio) {
+    this.usedratio = usedratio;
+  }
+
+  public Vatreceiveddepositcreditnoterow rsourceId(String rsourceId) {
+    this.rsourceId = rsourceId;
+    return this;
+  }
+
+   /**
+   * Ř. dobr.dokladu; id objektu daňový zálohový list přijatý - řádek [persistentní položka]
+   * @return rsourceId
+  **/
+  @ApiModelProperty(example = "null", value = "Ř. dobr.dokladu; id objektu daňový zálohový list přijatý - řádek [persistentní položka]")
+  public String getRsourceId() {
+    return rsourceId;
+  }
+
+  public void setRsourceId(String rsourceId) {
+    this.rsourceId = rsourceId;
+  }
+
+  public Vatreceiveddepositcreditnoterow rowextid(String rowextid) {
+    this.rowextid = rowextid;
+    return this;
+  }
+
+   /**
+   * odkaz na isdoc [persistentní položka]
+   * @return rowextid
+  **/
+  @ApiModelProperty(example = "null", value = "odkaz na isdoc [persistentní položka]")
+  public String getRowextid() {
+    return rowextid;
+  }
+
+  public void setRowextid(String rowextid) {
+    this.rowextid = rowextid;
   }
 
 
@@ -553,39 +634,39 @@ public class Vatreceiveddepositcreditnoterow   {
       return false;
     }
     Vatreceiveddepositcreditnoterow vatreceiveddepositcreditnoterow = (Vatreceiveddepositcreditnoterow) o;
-    return Objects.equals(this.displayName, vatreceiveddepositcreditnoterow.displayName) &&
-        Objects.equals(this.ID, vatreceiveddepositcreditnoterow.ID) &&
-        Objects.equals(this.classID, vatreceiveddepositcreditnoterow.classID) &&
-        Objects.equals(this.objVersion, vatreceiveddepositcreditnoterow.objVersion) &&
-        Objects.equals(this.parentID, vatreceiveddepositcreditnoterow.parentID) &&
-        Objects.equals(this.posIndex, vatreceiveddepositcreditnoterow.posIndex) &&
-        Objects.equals(this.tAmount, vatreceiveddepositcreditnoterow.tAmount) &&
-        Objects.equals(this.localTAmount, vatreceiveddepositcreditnoterow.localTAmount) &&
+    return Objects.equals(this.displayname, vatreceiveddepositcreditnoterow.displayname) &&
+        Objects.equals(this.id, vatreceiveddepositcreditnoterow.id) &&
+        Objects.equals(this.classid, vatreceiveddepositcreditnoterow.classid) &&
+        Objects.equals(this.objversion, vatreceiveddepositcreditnoterow.objversion) &&
+        Objects.equals(this.parentId, vatreceiveddepositcreditnoterow.parentId) &&
+        Objects.equals(this.posindex, vatreceiveddepositcreditnoterow.posindex) &&
+        Objects.equals(this.tamount, vatreceiveddepositcreditnoterow.tamount) &&
+        Objects.equals(this.localtamount, vatreceiveddepositcreditnoterow.localtamount) &&
         Objects.equals(this.text, vatreceiveddepositcreditnoterow.text) &&
-        Objects.equals(this.divisionID, vatreceiveddepositcreditnoterow.divisionID) &&
-        Objects.equals(this.busOrderID, vatreceiveddepositcreditnoterow.busOrderID) &&
-        Objects.equals(this.busTransactionID, vatreceiveddepositcreditnoterow.busTransactionID) &&
-        Objects.equals(this.busProjectID, vatreceiveddepositcreditnoterow.busProjectID) &&
-        Objects.equals(this.vATRateID, vatreceiveddepositcreditnoterow.vATRateID) &&
-        Objects.equals(this.vATIndexID, vatreceiveddepositcreditnoterow.vATIndexID) &&
-        Objects.equals(this.vATRate, vatreceiveddepositcreditnoterow.vATRate) &&
-        Objects.equals(this.tAmountWithoutVAT, vatreceiveddepositcreditnoterow.tAmountWithoutVAT) &&
-        Objects.equals(this.localTAmountWithoutVAT, vatreceiveddepositcreditnoterow.localTAmountWithoutVAT) &&
-        Objects.equals(this.vATTAmount, vatreceiveddepositcreditnoterow.vATTAmount) &&
-        Objects.equals(this.dRCArticleID, vatreceiveddepositcreditnoterow.dRCArticleID) &&
-        Objects.equals(this.dRCQuantity, vatreceiveddepositcreditnoterow.dRCQuantity) &&
-        Objects.equals(this.dRCQUnit, vatreceiveddepositcreditnoterow.dRCQUnit) &&
-        Objects.equals(this.localByHand, vatreceiveddepositcreditnoterow.localByHand) &&
-        Objects.equals(this.localVATTAmount, vatreceiveddepositcreditnoterow.localVATTAmount) &&
-        Objects.equals(this.vATMode, vatreceiveddepositcreditnoterow.vATMode) &&
-        Objects.equals(this.usedRatio, vatreceiveddepositcreditnoterow.usedRatio) &&
-        Objects.equals(this.rSourceID, vatreceiveddepositcreditnoterow.rSourceID) &&
-        Objects.equals(this.rowExtID, vatreceiveddepositcreditnoterow.rowExtID);
+        Objects.equals(this.divisionId, vatreceiveddepositcreditnoterow.divisionId) &&
+        Objects.equals(this.busorderId, vatreceiveddepositcreditnoterow.busorderId) &&
+        Objects.equals(this.bustransactionId, vatreceiveddepositcreditnoterow.bustransactionId) &&
+        Objects.equals(this.busprojectId, vatreceiveddepositcreditnoterow.busprojectId) &&
+        Objects.equals(this.vatrateId, vatreceiveddepositcreditnoterow.vatrateId) &&
+        Objects.equals(this.vatindexId, vatreceiveddepositcreditnoterow.vatindexId) &&
+        Objects.equals(this.vatrate, vatreceiveddepositcreditnoterow.vatrate) &&
+        Objects.equals(this.tamountwithoutvat, vatreceiveddepositcreditnoterow.tamountwithoutvat) &&
+        Objects.equals(this.localtamountwithoutvat, vatreceiveddepositcreditnoterow.localtamountwithoutvat) &&
+        Objects.equals(this.vattamount, vatreceiveddepositcreditnoterow.vattamount) &&
+        Objects.equals(this.drcarticleId, vatreceiveddepositcreditnoterow.drcarticleId) &&
+        Objects.equals(this.drcquantity, vatreceiveddepositcreditnoterow.drcquantity) &&
+        Objects.equals(this.drcqunit, vatreceiveddepositcreditnoterow.drcqunit) &&
+        Objects.equals(this.localbyhand, vatreceiveddepositcreditnoterow.localbyhand) &&
+        Objects.equals(this.localvattamount, vatreceiveddepositcreditnoterow.localvattamount) &&
+        Objects.equals(this.vatmode, vatreceiveddepositcreditnoterow.vatmode) &&
+        Objects.equals(this.usedratio, vatreceiveddepositcreditnoterow.usedratio) &&
+        Objects.equals(this.rsourceId, vatreceiveddepositcreditnoterow.rsourceId) &&
+        Objects.equals(this.rowextid, vatreceiveddepositcreditnoterow.rowextid);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, tAmount, localTAmount, text, divisionID, busOrderID, busTransactionID, busProjectID, vATRateID, vATIndexID, vATRate, tAmountWithoutVAT, localTAmountWithoutVAT, vATTAmount, dRCArticleID, dRCQuantity, dRCQUnit, localByHand, localVATTAmount, vATMode, usedRatio, rSourceID, rowExtID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, tamount, localtamount, text, divisionId, busorderId, bustransactionId, busprojectId, vatrateId, vatindexId, vatrate, tamountwithoutvat, localtamountwithoutvat, vattamount, drcarticleId, drcquantity, drcqunit, localbyhand, localvattamount, vatmode, usedratio, rsourceId, rowextid);
   }
 
   @Override
@@ -593,34 +674,34 @@ public class Vatreceiveddepositcreditnoterow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Vatreceiveddepositcreditnoterow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    tAmount: ").append(toIndentedString(tAmount)).append("\n");
-    sb.append("    localTAmount: ").append(toIndentedString(localTAmount)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    tamount: ").append(toIndentedString(tamount)).append("\n");
+    sb.append("    localtamount: ").append(toIndentedString(localtamount)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    vATRateID: ").append(toIndentedString(vATRateID)).append("\n");
-    sb.append("    vATIndexID: ").append(toIndentedString(vATIndexID)).append("\n");
-    sb.append("    vATRate: ").append(toIndentedString(vATRate)).append("\n");
-    sb.append("    tAmountWithoutVAT: ").append(toIndentedString(tAmountWithoutVAT)).append("\n");
-    sb.append("    localTAmountWithoutVAT: ").append(toIndentedString(localTAmountWithoutVAT)).append("\n");
-    sb.append("    vATTAmount: ").append(toIndentedString(vATTAmount)).append("\n");
-    sb.append("    dRCArticleID: ").append(toIndentedString(dRCArticleID)).append("\n");
-    sb.append("    dRCQuantity: ").append(toIndentedString(dRCQuantity)).append("\n");
-    sb.append("    dRCQUnit: ").append(toIndentedString(dRCQUnit)).append("\n");
-    sb.append("    localByHand: ").append(toIndentedString(localByHand)).append("\n");
-    sb.append("    localVATTAmount: ").append(toIndentedString(localVATTAmount)).append("\n");
-    sb.append("    vATMode: ").append(toIndentedString(vATMode)).append("\n");
-    sb.append("    usedRatio: ").append(toIndentedString(usedRatio)).append("\n");
-    sb.append("    rSourceID: ").append(toIndentedString(rSourceID)).append("\n");
-    sb.append("    rowExtID: ").append(toIndentedString(rowExtID)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    vatrateId: ").append(toIndentedString(vatrateId)).append("\n");
+    sb.append("    vatindexId: ").append(toIndentedString(vatindexId)).append("\n");
+    sb.append("    vatrate: ").append(toIndentedString(vatrate)).append("\n");
+    sb.append("    tamountwithoutvat: ").append(toIndentedString(tamountwithoutvat)).append("\n");
+    sb.append("    localtamountwithoutvat: ").append(toIndentedString(localtamountwithoutvat)).append("\n");
+    sb.append("    vattamount: ").append(toIndentedString(vattamount)).append("\n");
+    sb.append("    drcarticleId: ").append(toIndentedString(drcarticleId)).append("\n");
+    sb.append("    drcquantity: ").append(toIndentedString(drcquantity)).append("\n");
+    sb.append("    drcqunit: ").append(toIndentedString(drcqunit)).append("\n");
+    sb.append("    localbyhand: ").append(toIndentedString(localbyhand)).append("\n");
+    sb.append("    localvattamount: ").append(toIndentedString(localvattamount)).append("\n");
+    sb.append("    vatmode: ").append(toIndentedString(vatmode)).append("\n");
+    sb.append("    usedratio: ").append(toIndentedString(usedratio)).append("\n");
+    sb.append("    rsourceId: ").append(toIndentedString(rsourceId)).append("\n");
+    sb.append("    rowextid: ").append(toIndentedString(rowextid)).append("\n");
     sb.append("}");
     return sb.toString();
   }

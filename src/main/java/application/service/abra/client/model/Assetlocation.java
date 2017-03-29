@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,69 +34,105 @@ import java.util.Objects;
 /**
  * Assetlocation
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Assetlocation   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("DisplayParent")
-  private String displayParent = null;
+  @SerializedName("displayparent")
+  private String displayparent = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Assetlocation displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Assetlocation id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Assetlocation classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Assetlocation objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Assetlocation hidden(Boolean hidden) {
@@ -105,10 +141,10 @@ public class Assetlocation   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -123,10 +159,10 @@ public class Assetlocation   {
   }
 
    /**
-   * Místo [persistentní položka]
+   * místo [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Místo [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "místo [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -141,10 +177,10 @@ public class Assetlocation   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -153,31 +189,40 @@ public class Assetlocation   {
     this.code = code;
   }
 
-  public Assetlocation parentID(String parentID) {
-    this.parentID = parentID;
+  public Assetlocation parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Nadřízené místo (ID); ID objektu Umístění majetku [persistentní položka]
-   * @return parentID
+   * nadřízené místo (id); id objektu umístění majetku [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízené místo (ID); ID objektu Umístění majetku [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "nadřízené místo (id); id objektu umístění majetku [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setParentID(String parentID) {
-    this.parentID = parentID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Assetlocation displayparent(String displayparent) {
+    this.displayparent = displayparent;
+    return this;
   }
 
    /**
-   * Nadřízené místo
-   * @return displayParent
+   * nadřízené místo
+   * @return displayparent
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízené místo")
-  public String getDisplayParent() {
-    return displayParent;
+  @ApiModelProperty(example = "null", value = "nadřízené místo")
+  public String getDisplayparent() {
+    return displayparent;
+  }
+
+  public void setDisplayparent(String displayparent) {
+    this.displayparent = displayparent;
   }
 
 
@@ -190,20 +235,20 @@ public class Assetlocation   {
       return false;
     }
     Assetlocation assetlocation = (Assetlocation) o;
-    return Objects.equals(this.displayName, assetlocation.displayName) &&
-        Objects.equals(this.ID, assetlocation.ID) &&
-        Objects.equals(this.classID, assetlocation.classID) &&
-        Objects.equals(this.objVersion, assetlocation.objVersion) &&
+    return Objects.equals(this.displayname, assetlocation.displayname) &&
+        Objects.equals(this.id, assetlocation.id) &&
+        Objects.equals(this.classid, assetlocation.classid) &&
+        Objects.equals(this.objversion, assetlocation.objversion) &&
         Objects.equals(this.hidden, assetlocation.hidden) &&
         Objects.equals(this.name, assetlocation.name) &&
         Objects.equals(this.code, assetlocation.code) &&
-        Objects.equals(this.parentID, assetlocation.parentID) &&
-        Objects.equals(this.displayParent, assetlocation.displayParent);
+        Objects.equals(this.parentId, assetlocation.parentId) &&
+        Objects.equals(this.displayparent, assetlocation.displayparent);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, name, code, parentID, displayParent);
+    return Objects.hash(displayname, id, classid, objversion, hidden, name, code, parentId, displayparent);
   }
 
   @Override
@@ -211,15 +256,15 @@ public class Assetlocation   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Assetlocation {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    displayParent: ").append(toIndentedString(displayParent)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    displayparent: ").append(toIndentedString(displayparent)).append("\n");
     sb.append("}");
     return sb.toString();
   }

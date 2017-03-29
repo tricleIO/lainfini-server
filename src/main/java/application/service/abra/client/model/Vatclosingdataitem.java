@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,276 +34,321 @@ import java.util.Objects;
 /**
  * Vatclosingdataitem
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Vatclosingdataitem   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("RowNumber")
-  private String rowNumber = null;
+  @SerializedName("rownumber")
+  private String rownumber = null;
 
-  @SerializedName("CorrectionValue")
-  private Double correctionValue = null;
+  @SerializedName("correctionvalue")
+  private Double correctionvalue = null;
 
-  @SerializedName("CalculatedValue")
-  private Double calculatedValue = null;
+  @SerializedName("calculatedvalue")
+  private Double calculatedvalue = null;
 
-  @SerializedName("RowValue")
-  private Double rowValue = null;
+  @SerializedName("rowvalue")
+  private Double rowvalue = null;
 
-  @SerializedName("OldRowValue")
-  private Double oldRowValue = null;
+  @SerializedName("oldrowvalue")
+  private Double oldrowvalue = null;
 
-  @SerializedName("DefinitionType")
-  private Integer definitionType = null;
+  @SerializedName("definitiontype")
+  private Integer definitiontype = null;
 
-  @SerializedName("RowValueKind")
-  private Integer rowValueKind = null;
+  @SerializedName("rowvaluekind")
+  private Integer rowvaluekind = null;
 
-  @SerializedName("VATDefinitionRow_ID")
-  private String vATDefinitionRowID = null;
+  @SerializedName("vatdefinitionrow_id")
+  private String vatdefinitionrowId = null;
 
-  @SerializedName("DefinitionTypeAsText")
-  private String definitionTypeAsText = null;
+  @SerializedName("definitiontypeastext")
+  private String definitiontypeastext = null;
 
-  @SerializedName("RowValueKindAsText")
-  private String rowValueKindAsText = null;
+  @SerializedName("rowvaluekindastext")
+  private String rowvaluekindastext = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Vatclosingdataitem displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Vatclosingdataitem id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Vatclosingdataitem classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Vatclosingdataitem objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Uzávěrka DPH [persistentní položka]
-   * @return parentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Uzávěrka DPH [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public Vatclosingdataitem rowNumber(String rowNumber) {
-    this.rowNumber = rowNumber;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Vatclosingdataitem parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu uzávěrka dph [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu uzávěrka dph [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Vatclosingdataitem rownumber(String rownumber) {
+    this.rownumber = rownumber;
     return this;
   }
 
    /**
    * Řádek [persistentní položka]
-   * @return rowNumber
+   * @return rownumber
   **/
   @ApiModelProperty(example = "null", value = "Řádek [persistentní položka]")
-  public String getRowNumber() {
-    return rowNumber;
+  public String getRownumber() {
+    return rownumber;
   }
 
-  public void setRowNumber(String rowNumber) {
-    this.rowNumber = rowNumber;
+  public void setRownumber(String rownumber) {
+    this.rownumber = rownumber;
   }
 
-  public Vatclosingdataitem correctionValue(Double correctionValue) {
-    this.correctionValue = correctionValue;
+  public Vatclosingdataitem correctionvalue(Double correctionvalue) {
+    this.correctionvalue = correctionvalue;
     return this;
   }
 
    /**
-   * Oprava hodnoty [persistentní položka]
-   * @return correctionValue
+   * oprava hodnoty [persistentní položka]
+   * @return correctionvalue
   **/
-  @ApiModelProperty(example = "null", value = "Oprava hodnoty [persistentní položka]")
-  public Double getCorrectionValue() {
-    return correctionValue;
+  @ApiModelProperty(example = "null", value = "oprava hodnoty [persistentní položka]")
+  public Double getCorrectionvalue() {
+    return correctionvalue;
   }
 
-  public void setCorrectionValue(Double correctionValue) {
-    this.correctionValue = correctionValue;
+  public void setCorrectionvalue(Double correctionvalue) {
+    this.correctionvalue = correctionvalue;
   }
 
-  public Vatclosingdataitem calculatedValue(Double calculatedValue) {
-    this.calculatedValue = calculatedValue;
+  public Vatclosingdataitem calculatedvalue(Double calculatedvalue) {
+    this.calculatedvalue = calculatedvalue;
     return this;
   }
 
    /**
-   * Vypočtená hodnota [persistentní položka]
-   * @return calculatedValue
+   * vypočtená hodnota [persistentní položka]
+   * @return calculatedvalue
   **/
-  @ApiModelProperty(example = "null", value = "Vypočtená hodnota [persistentní položka]")
-  public Double getCalculatedValue() {
-    return calculatedValue;
+  @ApiModelProperty(example = "null", value = "vypočtená hodnota [persistentní položka]")
+  public Double getCalculatedvalue() {
+    return calculatedvalue;
   }
 
-  public void setCalculatedValue(Double calculatedValue) {
-    this.calculatedValue = calculatedValue;
+  public void setCalculatedvalue(Double calculatedvalue) {
+    this.calculatedvalue = calculatedvalue;
   }
 
-  public Vatclosingdataitem rowValue(Double rowValue) {
-    this.rowValue = rowValue;
+  public Vatclosingdataitem rowvalue(Double rowvalue) {
+    this.rowvalue = rowvalue;
     return this;
   }
 
    /**
-   * Hodnota [persistentní položka]
-   * @return rowValue
+   * hodnota [persistentní položka]
+   * @return rowvalue
   **/
-  @ApiModelProperty(example = "null", value = "Hodnota [persistentní položka]")
-  public Double getRowValue() {
-    return rowValue;
+  @ApiModelProperty(example = "null", value = "hodnota [persistentní položka]")
+  public Double getRowvalue() {
+    return rowvalue;
   }
 
-  public void setRowValue(Double rowValue) {
-    this.rowValue = rowValue;
+  public void setRowvalue(Double rowvalue) {
+    this.rowvalue = rowvalue;
   }
 
-  public Vatclosingdataitem oldRowValue(Double oldRowValue) {
-    this.oldRowValue = oldRowValue;
+  public Vatclosingdataitem oldrowvalue(Double oldrowvalue) {
+    this.oldrowvalue = oldrowvalue;
     return this;
   }
 
    /**
-   * Původní hodnota [persistentní položka]
-   * @return oldRowValue
+   * původní hodnota [persistentní položka]
+   * @return oldrowvalue
   **/
-  @ApiModelProperty(example = "null", value = "Původní hodnota [persistentní položka]")
-  public Double getOldRowValue() {
-    return oldRowValue;
+  @ApiModelProperty(example = "null", value = "původní hodnota [persistentní položka]")
+  public Double getOldrowvalue() {
+    return oldrowvalue;
   }
 
-  public void setOldRowValue(Double oldRowValue) {
-    this.oldRowValue = oldRowValue;
+  public void setOldrowvalue(Double oldrowvalue) {
+    this.oldrowvalue = oldrowvalue;
   }
 
-  public Vatclosingdataitem definitionType(Integer definitionType) {
-    this.definitionType = definitionType;
+  public Vatclosingdataitem definitiontype(Integer definitiontype) {
+    this.definitiontype = definitiontype;
     return this;
   }
 
    /**
-   * Typ řádku definice [persistentní položka]
-   * @return definitionType
+   * typ řádku definice [persistentní položka]
+   * @return definitiontype
   **/
-  @ApiModelProperty(example = "null", value = "Typ řádku definice [persistentní položka]")
-  public Integer getDefinitionType() {
-    return definitionType;
+  @ApiModelProperty(example = "null", value = "typ řádku definice [persistentní položka]")
+  public Integer getDefinitiontype() {
+    return definitiontype;
   }
 
-  public void setDefinitionType(Integer definitionType) {
-    this.definitionType = definitionType;
+  public void setDefinitiontype(Integer definitiontype) {
+    this.definitiontype = definitiontype;
   }
 
-  public Vatclosingdataitem rowValueKind(Integer rowValueKind) {
-    this.rowValueKind = rowValueKind;
+  public Vatclosingdataitem rowvaluekind(Integer rowvaluekind) {
+    this.rowvaluekind = rowvaluekind;
     return this;
   }
 
    /**
-   * Typ hodnoty řádku definice [persistentní položka]
-   * @return rowValueKind
+   * typ hodnoty řádku definice [persistentní položka]
+   * @return rowvaluekind
   **/
-  @ApiModelProperty(example = "null", value = "Typ hodnoty řádku definice [persistentní položka]")
-  public Integer getRowValueKind() {
-    return rowValueKind;
+  @ApiModelProperty(example = "null", value = "typ hodnoty řádku definice [persistentní položka]")
+  public Integer getRowvaluekind() {
+    return rowvaluekind;
   }
 
-  public void setRowValueKind(Integer rowValueKind) {
-    this.rowValueKind = rowValueKind;
+  public void setRowvaluekind(Integer rowvaluekind) {
+    this.rowvaluekind = rowvaluekind;
   }
 
-  public Vatclosingdataitem vATDefinitionRowID(String vATDefinitionRowID) {
-    this.vATDefinitionRowID = vATDefinitionRowID;
+  public Vatclosingdataitem vatdefinitionrowId(String vatdefinitionrowId) {
+    this.vatdefinitionrowId = vatdefinitionrowId;
     return this;
   }
 
    /**
-   * Definice DPH; ID objektu Definice pro DPH přiznání - řádek [persistentní položka]
-   * @return vATDefinitionRowID
+   * definice dph; id objektu definice pro dph přiznání - řádek [persistentní položka]
+   * @return vatdefinitionrowId
   **/
-  @ApiModelProperty(example = "null", value = "Definice DPH; ID objektu Definice pro DPH přiznání - řádek [persistentní položka]")
-  public String getVATDefinitionRowID() {
-    return vATDefinitionRowID;
+  @ApiModelProperty(example = "null", value = "definice dph; id objektu definice pro dph přiznání - řádek [persistentní položka]")
+  public String getVatdefinitionrowId() {
+    return vatdefinitionrowId;
   }
 
-  public void setVATDefinitionRowID(String vATDefinitionRowID) {
-    this.vATDefinitionRowID = vATDefinitionRowID;
+  public void setVatdefinitionrowId(String vatdefinitionrowId) {
+    this.vatdefinitionrowId = vatdefinitionrowId;
   }
 
-  public Vatclosingdataitem definitionTypeAsText(String definitionTypeAsText) {
-    this.definitionTypeAsText = definitionTypeAsText;
+  public Vatclosingdataitem definitiontypeastext(String definitiontypeastext) {
+    this.definitiontypeastext = definitiontypeastext;
     return this;
   }
 
    /**
-   * Typ řádku definice - text
-   * @return definitionTypeAsText
+   * typ řádku definice - text
+   * @return definitiontypeastext
   **/
-  @ApiModelProperty(example = "null", value = "Typ řádku definice - text")
-  public String getDefinitionTypeAsText() {
-    return definitionTypeAsText;
+  @ApiModelProperty(example = "null", value = "typ řádku definice - text")
+  public String getDefinitiontypeastext() {
+    return definitiontypeastext;
   }
 
-  public void setDefinitionTypeAsText(String definitionTypeAsText) {
-    this.definitionTypeAsText = definitionTypeAsText;
+  public void setDefinitiontypeastext(String definitiontypeastext) {
+    this.definitiontypeastext = definitiontypeastext;
   }
 
-  public Vatclosingdataitem rowValueKindAsText(String rowValueKindAsText) {
-    this.rowValueKindAsText = rowValueKindAsText;
+  public Vatclosingdataitem rowvaluekindastext(String rowvaluekindastext) {
+    this.rowvaluekindastext = rowvaluekindastext;
     return this;
   }
 
    /**
-   * Typ řádku definice - text
-   * @return rowValueKindAsText
+   * typ řádku definice - text
+   * @return rowvaluekindastext
   **/
-  @ApiModelProperty(example = "null", value = "Typ řádku definice - text")
-  public String getRowValueKindAsText() {
-    return rowValueKindAsText;
+  @ApiModelProperty(example = "null", value = "typ řádku definice - text")
+  public String getRowvaluekindastext() {
+    return rowvaluekindastext;
   }
 
-  public void setRowValueKindAsText(String rowValueKindAsText) {
-    this.rowValueKindAsText = rowValueKindAsText;
+  public void setRowvaluekindastext(String rowvaluekindastext) {
+    this.rowvaluekindastext = rowvaluekindastext;
   }
 
 
@@ -316,26 +361,26 @@ public class Vatclosingdataitem   {
       return false;
     }
     Vatclosingdataitem vatclosingdataitem = (Vatclosingdataitem) o;
-    return Objects.equals(this.displayName, vatclosingdataitem.displayName) &&
-        Objects.equals(this.ID, vatclosingdataitem.ID) &&
-        Objects.equals(this.classID, vatclosingdataitem.classID) &&
-        Objects.equals(this.objVersion, vatclosingdataitem.objVersion) &&
-        Objects.equals(this.parentID, vatclosingdataitem.parentID) &&
-        Objects.equals(this.rowNumber, vatclosingdataitem.rowNumber) &&
-        Objects.equals(this.correctionValue, vatclosingdataitem.correctionValue) &&
-        Objects.equals(this.calculatedValue, vatclosingdataitem.calculatedValue) &&
-        Objects.equals(this.rowValue, vatclosingdataitem.rowValue) &&
-        Objects.equals(this.oldRowValue, vatclosingdataitem.oldRowValue) &&
-        Objects.equals(this.definitionType, vatclosingdataitem.definitionType) &&
-        Objects.equals(this.rowValueKind, vatclosingdataitem.rowValueKind) &&
-        Objects.equals(this.vATDefinitionRowID, vatclosingdataitem.vATDefinitionRowID) &&
-        Objects.equals(this.definitionTypeAsText, vatclosingdataitem.definitionTypeAsText) &&
-        Objects.equals(this.rowValueKindAsText, vatclosingdataitem.rowValueKindAsText);
+    return Objects.equals(this.displayname, vatclosingdataitem.displayname) &&
+        Objects.equals(this.id, vatclosingdataitem.id) &&
+        Objects.equals(this.classid, vatclosingdataitem.classid) &&
+        Objects.equals(this.objversion, vatclosingdataitem.objversion) &&
+        Objects.equals(this.parentId, vatclosingdataitem.parentId) &&
+        Objects.equals(this.rownumber, vatclosingdataitem.rownumber) &&
+        Objects.equals(this.correctionvalue, vatclosingdataitem.correctionvalue) &&
+        Objects.equals(this.calculatedvalue, vatclosingdataitem.calculatedvalue) &&
+        Objects.equals(this.rowvalue, vatclosingdataitem.rowvalue) &&
+        Objects.equals(this.oldrowvalue, vatclosingdataitem.oldrowvalue) &&
+        Objects.equals(this.definitiontype, vatclosingdataitem.definitiontype) &&
+        Objects.equals(this.rowvaluekind, vatclosingdataitem.rowvaluekind) &&
+        Objects.equals(this.vatdefinitionrowId, vatclosingdataitem.vatdefinitionrowId) &&
+        Objects.equals(this.definitiontypeastext, vatclosingdataitem.definitiontypeastext) &&
+        Objects.equals(this.rowvaluekindastext, vatclosingdataitem.rowvaluekindastext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, rowNumber, correctionValue, calculatedValue, rowValue, oldRowValue, definitionType, rowValueKind, vATDefinitionRowID, definitionTypeAsText, rowValueKindAsText);
+    return Objects.hash(displayname, id, classid, objversion, parentId, rownumber, correctionvalue, calculatedvalue, rowvalue, oldrowvalue, definitiontype, rowvaluekind, vatdefinitionrowId, definitiontypeastext, rowvaluekindastext);
   }
 
   @Override
@@ -343,21 +388,21 @@ public class Vatclosingdataitem   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Vatclosingdataitem {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    rowNumber: ").append(toIndentedString(rowNumber)).append("\n");
-    sb.append("    correctionValue: ").append(toIndentedString(correctionValue)).append("\n");
-    sb.append("    calculatedValue: ").append(toIndentedString(calculatedValue)).append("\n");
-    sb.append("    rowValue: ").append(toIndentedString(rowValue)).append("\n");
-    sb.append("    oldRowValue: ").append(toIndentedString(oldRowValue)).append("\n");
-    sb.append("    definitionType: ").append(toIndentedString(definitionType)).append("\n");
-    sb.append("    rowValueKind: ").append(toIndentedString(rowValueKind)).append("\n");
-    sb.append("    vATDefinitionRowID: ").append(toIndentedString(vATDefinitionRowID)).append("\n");
-    sb.append("    definitionTypeAsText: ").append(toIndentedString(definitionTypeAsText)).append("\n");
-    sb.append("    rowValueKindAsText: ").append(toIndentedString(rowValueKindAsText)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    rownumber: ").append(toIndentedString(rownumber)).append("\n");
+    sb.append("    correctionvalue: ").append(toIndentedString(correctionvalue)).append("\n");
+    sb.append("    calculatedvalue: ").append(toIndentedString(calculatedvalue)).append("\n");
+    sb.append("    rowvalue: ").append(toIndentedString(rowvalue)).append("\n");
+    sb.append("    oldrowvalue: ").append(toIndentedString(oldrowvalue)).append("\n");
+    sb.append("    definitiontype: ").append(toIndentedString(definitiontype)).append("\n");
+    sb.append("    rowvaluekind: ").append(toIndentedString(rowvaluekind)).append("\n");
+    sb.append("    vatdefinitionrowId: ").append(toIndentedString(vatdefinitionrowId)).append("\n");
+    sb.append("    definitiontypeastext: ").append(toIndentedString(definitiontypeastext)).append("\n");
+    sb.append("    rowvaluekindastext: ").append(toIndentedString(rowvaluekindastext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

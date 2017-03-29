@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,786 +37,822 @@ import java.util.Objects;
 /**
  * Servicedocument
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Servicedocument   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("DateOfChange")
-  private DateTime dateOfChange = null;
+  @SerializedName("dateofchange")
+  private DateTime dateofchange = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("ServiceType_ID")
-  private String serviceTypeID = null;
+  @SerializedName("servicetype_id")
+  private String servicetypeId = null;
 
-  @SerializedName("ObjectKind")
-  private Integer objectKind = null;
+  @SerializedName("objectkind")
+  private Integer objectkind = null;
 
-  @SerializedName("ServicedObjectOnStore")
-  private Boolean servicedObjectOnStore = null;
+  @SerializedName("servicedobjectonstore")
+  private Boolean servicedobjectonstore = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("StoreBatch_ID")
-  private String storeBatchID = null;
+  @SerializedName("storebatch_id")
+  private String storebatchId = null;
 
-  @SerializedName("ServicedObject_ID")
-  private String servicedObjectID = null;
+  @SerializedName("servicedobject_id")
+  private String servicedobjectId = null;
 
-  @SerializedName("ServicedObjectIDCode")
-  private String servicedObjectIDCode = null;
+  @SerializedName("servicedobjectidcode")
+  private String servicedobjectidcode = null;
 
-  @SerializedName("ServicedObjectText")
-  private String servicedObjectText = null;
+  @SerializedName("servicedobjecttext")
+  private String servicedobjecttext = null;
 
-  @SerializedName("ServicedObjectSerialNr")
-  private String servicedObjectSerialNr = null;
+  @SerializedName("servicedobjectserialnr")
+  private String servicedobjectserialnr = null;
 
-  @SerializedName("ServicedObjectType_ID")
-  private String servicedObjectTypeID = null;
+  @SerializedName("servicedobjecttype_id")
+  private String servicedobjecttypeId = null;
 
-  @SerializedName("GuarantyRepair")
-  private Integer guarantyRepair = null;
+  @SerializedName("guarantyrepair")
+  private Integer guarantyrepair = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("FirmOffice_ID")
-  private String firmOfficeID = null;
+  @SerializedName("firmoffice_id")
+  private String firmofficeId = null;
 
-  @SerializedName("Person_ID")
-  private String personID = null;
+  @SerializedName("person_id")
+  private String personId = null;
 
-  @SerializedName("PayerFirm_ID")
-  private String payerFirmID = null;
+  @SerializedName("payerfirm_id")
+  private String payerfirmId = null;
 
-  @SerializedName("PayerFirmOffice_ID")
-  private String payerFirmOfficeID = null;
+  @SerializedName("payerfirmoffice_id")
+  private String payerfirmofficeId = null;
 
-  @SerializedName("PayerPerson_ID")
-  private String payerPersonID = null;
+  @SerializedName("payerperson_id")
+  private String payerpersonId = null;
 
-  @SerializedName("OutdoorPlaceDescription")
-  private String outdoorPlaceDescription = null;
+  @SerializedName("outdoorplacedescription")
+  private String outdoorplacedescription = null;
 
-  @SerializedName("Equipment")
+  @SerializedName("equipment")
   private String equipment = null;
 
-  @SerializedName("DamageDescription")
-  private String damageDescription = null;
+  @SerializedName("damagedescription")
+  private String damagedescription = null;
 
-  @SerializedName("PaymentType")
-  private Integer paymentType = null;
+  @SerializedName("paymenttype")
+  private Integer paymenttype = null;
 
-  @SerializedName("InsuaranceFirm_ID")
-  private String insuaranceFirmID = null;
+  @SerializedName("insuarancefirm_id")
+  private String insuarancefirmId = null;
 
-  @SerializedName("AcceptedByUser_ID")
-  private String acceptedByUserID = null;
+  @SerializedName("acceptedbyuser_id")
+  private String acceptedbyuserId = null;
 
-  @SerializedName("PromisedDeadLine$DATE")
-  private DateTime promisedDeadLineDATE = null;
+  @SerializedName("promiseddeadline$date")
+  private DateTime promiseddeadlinedate = null;
 
-  @SerializedName("EstimatedPrice")
-  private Double estimatedPrice = null;
+  @SerializedName("estimatedprice")
+  private Double estimatedprice = null;
 
-  @SerializedName("InformClientKind")
-  private Integer informClientKind = null;
+  @SerializedName("informclientkind")
+  private Integer informclientkind = null;
 
-  @SerializedName("ServiceDocState_ID")
-  private String serviceDocStateID = null;
+  @SerializedName("servicedocstate_id")
+  private String servicedocstateId = null;
 
-  @SerializedName("ServiceSolutionKind_ID")
-  private String serviceSolutionKindID = null;
+  @SerializedName("servicesolutionkind_id")
+  private String servicesolutionkindId = null;
 
-  @SerializedName("ReturnedByUser_ID")
-  private String returnedByUserID = null;
+  @SerializedName("returnedbyuser_id")
+  private String returnedbyuserId = null;
 
-  @SerializedName("ReturnedAtDate$DATE")
-  private DateTime returnedAtDateDATE = null;
+  @SerializedName("returnedatdate$date")
+  private DateTime returnedatdatedate = null;
 
-  @SerializedName("TotalMaterial")
-  private Double totalMaterial = null;
+  @SerializedName("totalmaterial")
+  private Double totalmaterial = null;
 
-  @SerializedName("TotalWork")
-  private Double totalWork = null;
+  @SerializedName("totalwork")
+  private Double totalwork = null;
 
-  @SerializedName("TinyMaterial")
-  private Double tinyMaterial = null;
+  @SerializedName("tinymaterial")
+  private Double tinymaterial = null;
 
-  @SerializedName("TotalOther")
-  private Double totalOther = null;
+  @SerializedName("totalother")
+  private Double totalother = null;
 
-  @SerializedName("TotalAmount")
-  private Double totalAmount = null;
+  @SerializedName("totalamount")
+  private Double totalamount = null;
 
-  @SerializedName("InvoicedAmount")
-  private Double invoicedAmount = null;
+  @SerializedName("invoicedamount")
+  private Double invoicedamount = null;
 
-  @SerializedName("Priority")
+  @SerializedName("priority")
   private Integer priority = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("Address_ID")
-  private String addressID = null;
+  @SerializedName("address_id")
+  private String addressId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("LastClosingDocState_ID")
-  private String lastClosingDocStateID = null;
+  @SerializedName("lastclosingdocstate_id")
+  private String lastclosingdocstateId = null;
 
-  @SerializedName("StoreReceiptDocType")
-  private Integer storeReceiptDocType = null;
+  @SerializedName("storereceiptdoctype")
+  private Integer storereceiptdoctype = null;
 
-  @SerializedName("SaleBillOfDelivery_ID")
-  private String saleBillOfDeliveryID = null;
+  @SerializedName("salebillofdelivery_id")
+  private String salebillofdeliveryId = null;
 
-  @SerializedName("MainSourceStore_ID")
-  private String mainSourceStoreID = null;
+  @SerializedName("mainsourcestore_id")
+  private String mainsourcestoreId = null;
 
-  @SerializedName("ChangedStoreCard_ID")
-  private String changedStoreCardID = null;
+  @SerializedName("changedstorecard_id")
+  private String changedstorecardId = null;
 
-  @SerializedName("ChangedStoreBatch_ID")
-  private String changedStoreBatchID = null;
+  @SerializedName("changedstorebatch_id")
+  private String changedstorebatchId = null;
 
-  @SerializedName("Defects")
+  @SerializedName("defects")
   private List<Servicedocumentdefect> defects = new ArrayList<Servicedocumentdefect>();
 
-  @SerializedName("Operations")
+  @SerializedName("operations")
   private List<Servicedocumentoperation> operations = new ArrayList<Servicedocumentoperation>();
 
-  @SerializedName("Docs")
+  @SerializedName("docs")
   private List<Servicedocumentdoc> docs = new ArrayList<Servicedocumentdoc>();
 
-  @SerializedName("Pictures")
+  @SerializedName("pictures")
   private List<Servicedocumentpicture> pictures = new ArrayList<Servicedocumentpicture>();
 
-  @SerializedName("SubjectCode")
-  private String subjectCode = null;
+  @SerializedName("subjectcode")
+  private String subjectcode = null;
 
-  @SerializedName("SubjectName")
-  private String subjectName = null;
+  @SerializedName("subjectname")
+  private String subjectname = null;
 
-  @SerializedName("SubjectSerial")
-  private String subjectSerial = null;
+  @SerializedName("subjectserial")
+  private String subjectserial = null;
 
-  @SerializedName("TotalWorkOperationTime")
-  private Double totalWorkOperationTime = null;
+  @SerializedName("totalworkoperationtime")
+  private Double totalworkoperationtime = null;
 
-  @SerializedName("GuaranteeEndDate")
-  private DateTime guaranteeEndDate = null;
+  @SerializedName("guaranteeenddate")
+  private DateTime guaranteeenddate = null;
 
-  @SerializedName("DefectsAsText")
-  private String defectsAsText = null;
+  @SerializedName("defectsastext")
+  private String defectsastext = null;
 
-  @SerializedName("FirstServiceAssemblyForm_ID")
-  private String firstServiceAssemblyFormID = null;
+  @SerializedName("firstserviceassemblyform_id")
+  private String firstserviceassemblyformId = null;
+
+  public Servicedocument displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
   }
 
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Servicedocument dateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public Servicedocument id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Datum změny
-   * @return dateOfChange
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Datum změny")
-  public DateTime getDateOfChange() {
-    return dateOfChange;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public void setId(String id) {
+    this.id = id;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Servicedocument docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Servicedocument dateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * datum změny
+   * @return dateofchange
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "datum změny")
+  public DateTime getDateofchange() {
+    return dateofchange;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
   }
 
-  public Servicedocument periodID(String periodID) {
-    this.periodID = periodID;
+  public Servicedocument classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Servicedocument ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Servicedocument objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Servicedocument docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Servicedocument docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Servicedocument createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Servicedocument periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Servicedocument correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Servicedocument ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Servicedocument newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Servicedocument docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Servicedocument newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Servicedocument createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Servicedocument divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Servicedocument correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Servicedocument serviceTypeID(String serviceTypeID) {
-    this.serviceTypeID = serviceTypeID;
+  public Servicedocument newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ; ID objektu Typ servisního případu [persistentní položka]
-   * @return serviceTypeID
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ; ID objektu Typ servisního případu [persistentní položka]")
-  public String getServiceTypeID() {
-    return serviceTypeID;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setServiceTypeID(String serviceTypeID) {
-    this.serviceTypeID = serviceTypeID;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Servicedocument objectKind(Integer objectKind) {
-    this.objectKind = objectKind;
+  public Servicedocument newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * Typ předmětu [persistentní položka]
-   * @return objectKind
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "Typ předmětu [persistentní položka]")
-  public Integer getObjectKind() {
-    return objectKind;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setObjectKind(Integer objectKind) {
-    this.objectKind = objectKind;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Servicedocument servicedObjectOnStore(Boolean servicedObjectOnStore) {
-    this.servicedObjectOnStore = servicedObjectOnStore;
+  public Servicedocument divisionId(String divisionId) {
+    this.divisionId = divisionId;
+    return this;
+  }
+
+   /**
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
+  **/
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
+  }
+
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
+  }
+
+  public Servicedocument servicetypeId(String servicetypeId) {
+    this.servicetypeId = servicetypeId;
+    return this;
+  }
+
+   /**
+   * typ; id objektu typ servisního případu [persistentní položka]
+   * @return servicetypeId
+  **/
+  @ApiModelProperty(example = "null", value = "typ; id objektu typ servisního případu [persistentní položka]")
+  public String getServicetypeId() {
+    return servicetypeId;
+  }
+
+  public void setServicetypeId(String servicetypeId) {
+    this.servicetypeId = servicetypeId;
+  }
+
+  public Servicedocument objectkind(Integer objectkind) {
+    this.objectkind = objectkind;
+    return this;
+  }
+
+   /**
+   * typ předmětu [persistentní položka]
+   * @return objectkind
+  **/
+  @ApiModelProperty(example = "null", value = "typ předmětu [persistentní položka]")
+  public Integer getObjectkind() {
+    return objectkind;
+  }
+
+  public void setObjectkind(Integer objectkind) {
+    this.objectkind = objectkind;
+  }
+
+  public Servicedocument servicedobjectonstore(Boolean servicedobjectonstore) {
+    this.servicedobjectonstore = servicedobjectonstore;
     return this;
   }
 
    /**
    * Účtovat [persistentní položka]
-   * @return servicedObjectOnStore
+   * @return servicedobjectonstore
   **/
   @ApiModelProperty(example = "null", value = "Účtovat [persistentní položka]")
-  public Boolean getServicedObjectOnStore() {
-    return servicedObjectOnStore;
+  public Boolean getServicedobjectonstore() {
+    return servicedobjectonstore;
   }
 
-  public void setServicedObjectOnStore(Boolean servicedObjectOnStore) {
-    this.servicedObjectOnStore = servicedObjectOnStore;
+  public void setServicedobjectonstore(Boolean servicedobjectonstore) {
+    this.servicedobjectonstore = servicedobjectonstore;
   }
 
-  public Servicedocument storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Servicedocument storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Skl.karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * skl.karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skl.karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "skl.karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
   }
 
-  public Servicedocument storeID(String storeID) {
-    this.storeID = storeID;
+  public Servicedocument storeId(String storeId) {
+    this.storeId = storeId;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
-  public Servicedocument storeBatchID(String storeBatchID) {
-    this.storeBatchID = storeBatchID;
+  public Servicedocument storebatchId(String storebatchId) {
+    this.storebatchId = storebatchId;
     return this;
   }
 
    /**
-   * Sériové číslo; ID objektu Šarže/sériové číslo [persistentní položka]
-   * @return storeBatchID
+   * sériové číslo; id objektu Šarže/sériové číslo [persistentní položka]
+   * @return storebatchId
   **/
-  @ApiModelProperty(example = "null", value = "Sériové číslo; ID objektu Šarže/sériové číslo [persistentní položka]")
-  public String getStoreBatchID() {
-    return storeBatchID;
+  @ApiModelProperty(example = "null", value = "sériové číslo; id objektu Šarže/sériové číslo [persistentní položka]")
+  public String getStorebatchId() {
+    return storebatchId;
   }
 
-  public void setStoreBatchID(String storeBatchID) {
-    this.storeBatchID = storeBatchID;
+  public void setStorebatchId(String storebatchId) {
+    this.storebatchId = storebatchId;
   }
 
-  public Servicedocument servicedObjectID(String servicedObjectID) {
-    this.servicedObjectID = servicedObjectID;
+  public Servicedocument servicedobjectId(String servicedobjectId) {
+    this.servicedobjectId = servicedobjectId;
     return this;
   }
 
    /**
-   * Předmět; ID objektu Servisovaný předmět [persistentní položka]
-   * @return servicedObjectID
+   * předmět; id objektu servisovaný předmět [persistentní položka]
+   * @return servicedobjectId
   **/
-  @ApiModelProperty(example = "null", value = "Předmět; ID objektu Servisovaný předmět [persistentní položka]")
-  public String getServicedObjectID() {
-    return servicedObjectID;
+  @ApiModelProperty(example = "null", value = "předmět; id objektu servisovaný předmět [persistentní položka]")
+  public String getServicedobjectId() {
+    return servicedobjectId;
   }
 
-  public void setServicedObjectID(String servicedObjectID) {
-    this.servicedObjectID = servicedObjectID;
+  public void setServicedobjectId(String servicedobjectId) {
+    this.servicedobjectId = servicedobjectId;
   }
 
-  public Servicedocument servicedObjectIDCode(String servicedObjectIDCode) {
-    this.servicedObjectIDCode = servicedObjectIDCode;
+  public Servicedocument servicedobjectidcode(String servicedobjectidcode) {
+    this.servicedobjectidcode = servicedobjectidcode;
     return this;
   }
 
    /**
-   * Kód předmětu [persistentní položka]
-   * @return servicedObjectIDCode
+   * kód předmětu [persistentní položka]
+   * @return servicedobjectidcode
   **/
-  @ApiModelProperty(example = "null", value = "Kód předmětu [persistentní položka]")
-  public String getServicedObjectIDCode() {
-    return servicedObjectIDCode;
+  @ApiModelProperty(example = "null", value = "kód předmětu [persistentní položka]")
+  public String getServicedobjectidcode() {
+    return servicedobjectidcode;
   }
 
-  public void setServicedObjectIDCode(String servicedObjectIDCode) {
-    this.servicedObjectIDCode = servicedObjectIDCode;
+  public void setServicedobjectidcode(String servicedobjectidcode) {
+    this.servicedobjectidcode = servicedobjectidcode;
   }
 
-  public Servicedocument servicedObjectText(String servicedObjectText) {
-    this.servicedObjectText = servicedObjectText;
+  public Servicedocument servicedobjecttext(String servicedobjecttext) {
+    this.servicedobjecttext = servicedobjecttext;
     return this;
   }
 
    /**
-   * Předmět [persistentní položka]
-   * @return servicedObjectText
+   * předmět [persistentní položka]
+   * @return servicedobjecttext
   **/
-  @ApiModelProperty(example = "null", value = "Předmět [persistentní položka]")
-  public String getServicedObjectText() {
-    return servicedObjectText;
+  @ApiModelProperty(example = "null", value = "předmět [persistentní položka]")
+  public String getServicedobjecttext() {
+    return servicedobjecttext;
   }
 
-  public void setServicedObjectText(String servicedObjectText) {
-    this.servicedObjectText = servicedObjectText;
+  public void setServicedobjecttext(String servicedobjecttext) {
+    this.servicedobjecttext = servicedobjecttext;
   }
 
-  public Servicedocument servicedObjectSerialNr(String servicedObjectSerialNr) {
-    this.servicedObjectSerialNr = servicedObjectSerialNr;
+  public Servicedocument servicedobjectserialnr(String servicedobjectserialnr) {
+    this.servicedobjectserialnr = servicedobjectserialnr;
     return this;
   }
 
    /**
-   * Sériové číslo [persistentní položka]
-   * @return servicedObjectSerialNr
+   * sériové číslo [persistentní položka]
+   * @return servicedobjectserialnr
   **/
-  @ApiModelProperty(example = "null", value = "Sériové číslo [persistentní položka]")
-  public String getServicedObjectSerialNr() {
-    return servicedObjectSerialNr;
+  @ApiModelProperty(example = "null", value = "sériové číslo [persistentní položka]")
+  public String getServicedobjectserialnr() {
+    return servicedobjectserialnr;
   }
 
-  public void setServicedObjectSerialNr(String servicedObjectSerialNr) {
-    this.servicedObjectSerialNr = servicedObjectSerialNr;
+  public void setServicedobjectserialnr(String servicedobjectserialnr) {
+    this.servicedobjectserialnr = servicedobjectserialnr;
   }
 
-  public Servicedocument servicedObjectTypeID(String servicedObjectTypeID) {
-    this.servicedObjectTypeID = servicedObjectTypeID;
+  public Servicedocument servicedobjecttypeId(String servicedobjecttypeId) {
+    this.servicedobjecttypeId = servicedobjecttypeId;
     return this;
   }
 
    /**
-   * Model; ID objektu Model servisovaného předmětu [persistentní položka]
-   * @return servicedObjectTypeID
+   * model; id objektu model servisovaného předmětu [persistentní položka]
+   * @return servicedobjecttypeId
   **/
-  @ApiModelProperty(example = "null", value = "Model; ID objektu Model servisovaného předmětu [persistentní položka]")
-  public String getServicedObjectTypeID() {
-    return servicedObjectTypeID;
+  @ApiModelProperty(example = "null", value = "model; id objektu model servisovaného předmětu [persistentní položka]")
+  public String getServicedobjecttypeId() {
+    return servicedobjecttypeId;
   }
 
-  public void setServicedObjectTypeID(String servicedObjectTypeID) {
-    this.servicedObjectTypeID = servicedObjectTypeID;
+  public void setServicedobjecttypeId(String servicedobjecttypeId) {
+    this.servicedobjecttypeId = servicedobjecttypeId;
   }
 
-  public Servicedocument guarantyRepair(Integer guarantyRepair) {
-    this.guarantyRepair = guarantyRepair;
+  public Servicedocument guarantyrepair(Integer guarantyrepair) {
+    this.guarantyrepair = guarantyrepair;
     return this;
   }
 
    /**
-   * Záruční [persistentní položka]
-   * @return guarantyRepair
+   * záruční [persistentní položka]
+   * @return guarantyrepair
   **/
-  @ApiModelProperty(example = "null", value = "Záruční [persistentní položka]")
-  public Integer getGuarantyRepair() {
-    return guarantyRepair;
+  @ApiModelProperty(example = "null", value = "záruční [persistentní položka]")
+  public Integer getGuarantyrepair() {
+    return guarantyrepair;
   }
 
-  public void setGuarantyRepair(Integer guarantyRepair) {
-    this.guarantyRepair = guarantyRepair;
+  public void setGuarantyrepair(Integer guarantyrepair) {
+    this.guarantyrepair = guarantyrepair;
   }
 
-  public Servicedocument firmID(String firmID) {
-    this.firmID = firmID;
+  public Servicedocument firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Servicedocument firmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public Servicedocument firmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
     return this;
   }
 
    /**
-   * Provozovna; ID objektu Provozovna [persistentní položka]
-   * @return firmOfficeID
+   * provozovna; id objektu provozovna [persistentní položka]
+   * @return firmofficeId
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna; ID objektu Provozovna [persistentní položka]")
-  public String getFirmOfficeID() {
-    return firmOfficeID;
+  @ApiModelProperty(example = "null", value = "provozovna; id objektu provozovna [persistentní položka]")
+  public String getFirmofficeId() {
+    return firmofficeId;
   }
 
-  public void setFirmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public void setFirmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
   }
 
-  public Servicedocument personID(String personID) {
-    this.personID = personID;
+  public Servicedocument personId(String personId) {
+    this.personId = personId;
     return this;
   }
 
    /**
-   * Osoba; ID objektu Osoba [persistentní položka]
-   * @return personID
+   * osoba; id objektu osoba [persistentní položka]
+   * @return personId
   **/
-  @ApiModelProperty(example = "null", value = "Osoba; ID objektu Osoba [persistentní položka]")
-  public String getPersonID() {
-    return personID;
+  @ApiModelProperty(example = "null", value = "osoba; id objektu osoba [persistentní položka]")
+  public String getPersonId() {
+    return personId;
   }
 
-  public void setPersonID(String personID) {
-    this.personID = personID;
+  public void setPersonId(String personId) {
+    this.personId = personId;
   }
 
-  public Servicedocument payerFirmID(String payerFirmID) {
-    this.payerFirmID = payerFirmID;
+  public Servicedocument payerfirmId(String payerfirmId) {
+    this.payerfirmId = payerfirmId;
     return this;
   }
 
    /**
-   * Firma plátce; ID objektu Firma [persistentní položka]
-   * @return payerFirmID
+   * firma plátce; id objektu firma [persistentní položka]
+   * @return payerfirmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma plátce; ID objektu Firma [persistentní položka]")
-  public String getPayerFirmID() {
-    return payerFirmID;
+  @ApiModelProperty(example = "null", value = "firma plátce; id objektu firma [persistentní položka]")
+  public String getPayerfirmId() {
+    return payerfirmId;
   }
 
-  public void setPayerFirmID(String payerFirmID) {
-    this.payerFirmID = payerFirmID;
+  public void setPayerfirmId(String payerfirmId) {
+    this.payerfirmId = payerfirmId;
   }
 
-  public Servicedocument payerFirmOfficeID(String payerFirmOfficeID) {
-    this.payerFirmOfficeID = payerFirmOfficeID;
+  public Servicedocument payerfirmofficeId(String payerfirmofficeId) {
+    this.payerfirmofficeId = payerfirmofficeId;
     return this;
   }
 
    /**
-   * Provozovna plátce; ID objektu Provozovna [persistentní položka]
-   * @return payerFirmOfficeID
+   * provozovna plátce; id objektu provozovna [persistentní položka]
+   * @return payerfirmofficeId
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna plátce; ID objektu Provozovna [persistentní položka]")
-  public String getPayerFirmOfficeID() {
-    return payerFirmOfficeID;
+  @ApiModelProperty(example = "null", value = "provozovna plátce; id objektu provozovna [persistentní položka]")
+  public String getPayerfirmofficeId() {
+    return payerfirmofficeId;
   }
 
-  public void setPayerFirmOfficeID(String payerFirmOfficeID) {
-    this.payerFirmOfficeID = payerFirmOfficeID;
+  public void setPayerfirmofficeId(String payerfirmofficeId) {
+    this.payerfirmofficeId = payerfirmofficeId;
   }
 
-  public Servicedocument payerPersonID(String payerPersonID) {
-    this.payerPersonID = payerPersonID;
+  public Servicedocument payerpersonId(String payerpersonId) {
+    this.payerpersonId = payerpersonId;
     return this;
   }
 
    /**
-   * Osoba plátce; ID objektu Osoba [persistentní položka]
-   * @return payerPersonID
+   * osoba plátce; id objektu osoba [persistentní položka]
+   * @return payerpersonId
   **/
-  @ApiModelProperty(example = "null", value = "Osoba plátce; ID objektu Osoba [persistentní položka]")
-  public String getPayerPersonID() {
-    return payerPersonID;
+  @ApiModelProperty(example = "null", value = "osoba plátce; id objektu osoba [persistentní položka]")
+  public String getPayerpersonId() {
+    return payerpersonId;
   }
 
-  public void setPayerPersonID(String payerPersonID) {
-    this.payerPersonID = payerPersonID;
+  public void setPayerpersonId(String payerpersonId) {
+    this.payerpersonId = payerpersonId;
   }
 
-  public Servicedocument outdoorPlaceDescription(String outdoorPlaceDescription) {
-    this.outdoorPlaceDescription = outdoorPlaceDescription;
+  public Servicedocument outdoorplacedescription(String outdoorplacedescription) {
+    this.outdoorplacedescription = outdoorplacedescription;
     return this;
   }
 
    /**
-   * Popis místa [persistentní položka]
-   * @return outdoorPlaceDescription
+   * popis místa [persistentní položka]
+   * @return outdoorplacedescription
   **/
-  @ApiModelProperty(example = "null", value = "Popis místa [persistentní položka]")
-  public String getOutdoorPlaceDescription() {
-    return outdoorPlaceDescription;
+  @ApiModelProperty(example = "null", value = "popis místa [persistentní položka]")
+  public String getOutdoorplacedescription() {
+    return outdoorplacedescription;
   }
 
-  public void setOutdoorPlaceDescription(String outdoorPlaceDescription) {
-    this.outdoorPlaceDescription = outdoorPlaceDescription;
+  public void setOutdoorplacedescription(String outdoorplacedescription) {
+    this.outdoorplacedescription = outdoorplacedescription;
   }
 
   public Servicedocument equipment(String equipment) {
@@ -825,10 +861,10 @@ public class Servicedocument   {
   }
 
    /**
-   * Výbava [persistentní položka]
+   * výbava [persistentní položka]
    * @return equipment
   **/
-  @ApiModelProperty(example = "null", value = "Výbava [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "výbava [persistentní položka]")
   public String getEquipment() {
     return equipment;
   }
@@ -837,310 +873,310 @@ public class Servicedocument   {
     this.equipment = equipment;
   }
 
-  public Servicedocument damageDescription(String damageDescription) {
-    this.damageDescription = damageDescription;
+  public Servicedocument damagedescription(String damagedescription) {
+    this.damagedescription = damagedescription;
     return this;
   }
 
    /**
-   * Popis poškození [persistentní položka]
-   * @return damageDescription
+   * popis poškození [persistentní položka]
+   * @return damagedescription
   **/
-  @ApiModelProperty(example = "null", value = "Popis poškození [persistentní položka]")
-  public String getDamageDescription() {
-    return damageDescription;
+  @ApiModelProperty(example = "null", value = "popis poškození [persistentní položka]")
+  public String getDamagedescription() {
+    return damagedescription;
   }
 
-  public void setDamageDescription(String damageDescription) {
-    this.damageDescription = damageDescription;
+  public void setDamagedescription(String damagedescription) {
+    this.damagedescription = damagedescription;
   }
 
-  public Servicedocument paymentType(Integer paymentType) {
-    this.paymentType = paymentType;
+  public Servicedocument paymenttype(Integer paymenttype) {
+    this.paymenttype = paymenttype;
     return this;
   }
 
    /**
-   * Způsob platby [persistentní položka]
-   * @return paymentType
+   * způsob platby [persistentní položka]
+   * @return paymenttype
   **/
-  @ApiModelProperty(example = "null", value = "Způsob platby [persistentní položka]")
-  public Integer getPaymentType() {
-    return paymentType;
+  @ApiModelProperty(example = "null", value = "způsob platby [persistentní položka]")
+  public Integer getPaymenttype() {
+    return paymenttype;
   }
 
-  public void setPaymentType(Integer paymentType) {
-    this.paymentType = paymentType;
+  public void setPaymenttype(Integer paymenttype) {
+    this.paymenttype = paymenttype;
   }
 
-  public Servicedocument insuaranceFirmID(String insuaranceFirmID) {
-    this.insuaranceFirmID = insuaranceFirmID;
+  public Servicedocument insuarancefirmId(String insuarancefirmId) {
+    this.insuarancefirmId = insuarancefirmId;
     return this;
   }
 
    /**
-   * Pojišťovna; ID objektu Firma [persistentní položka]
-   * @return insuaranceFirmID
+   * pojišťovna; id objektu firma [persistentní položka]
+   * @return insuarancefirmId
   **/
-  @ApiModelProperty(example = "null", value = "Pojišťovna; ID objektu Firma [persistentní položka]")
-  public String getInsuaranceFirmID() {
-    return insuaranceFirmID;
+  @ApiModelProperty(example = "null", value = "pojišťovna; id objektu firma [persistentní položka]")
+  public String getInsuarancefirmId() {
+    return insuarancefirmId;
   }
 
-  public void setInsuaranceFirmID(String insuaranceFirmID) {
-    this.insuaranceFirmID = insuaranceFirmID;
+  public void setInsuarancefirmId(String insuarancefirmId) {
+    this.insuarancefirmId = insuarancefirmId;
   }
 
-  public Servicedocument acceptedByUserID(String acceptedByUserID) {
-    this.acceptedByUserID = acceptedByUserID;
+  public Servicedocument acceptedbyuserId(String acceptedbyuserId) {
+    this.acceptedbyuserId = acceptedbyuserId;
     return this;
   }
 
    /**
-   * Přijal; ID objektu Uživatel [persistentní položka]
-   * @return acceptedByUserID
+   * přijal; id objektu uživatel [persistentní položka]
+   * @return acceptedbyuserId
   **/
-  @ApiModelProperty(example = "null", value = "Přijal; ID objektu Uživatel [persistentní položka]")
-  public String getAcceptedByUserID() {
-    return acceptedByUserID;
+  @ApiModelProperty(example = "null", value = "přijal; id objektu uživatel [persistentní položka]")
+  public String getAcceptedbyuserId() {
+    return acceptedbyuserId;
   }
 
-  public void setAcceptedByUserID(String acceptedByUserID) {
-    this.acceptedByUserID = acceptedByUserID;
+  public void setAcceptedbyuserId(String acceptedbyuserId) {
+    this.acceptedbyuserId = acceptedbyuserId;
   }
 
-  public Servicedocument promisedDeadLineDATE(DateTime promisedDeadLineDATE) {
-    this.promisedDeadLineDATE = promisedDeadLineDATE;
+  public Servicedocument promiseddeadlinedate(DateTime promiseddeadlinedate) {
+    this.promiseddeadlinedate = promiseddeadlinedate;
     return this;
   }
 
    /**
-   * Termín dokončení [persistentní položka]
-   * @return promisedDeadLineDATE
+   * termín dokončení [persistentní položka]
+   * @return promiseddeadlinedate
   **/
-  @ApiModelProperty(example = "null", value = "Termín dokončení [persistentní položka]")
-  public DateTime getPromisedDeadLineDATE() {
-    return promisedDeadLineDATE;
+  @ApiModelProperty(example = "null", value = "termín dokončení [persistentní položka]")
+  public DateTime getPromiseddeadlinedate() {
+    return promiseddeadlinedate;
   }
 
-  public void setPromisedDeadLineDATE(DateTime promisedDeadLineDATE) {
-    this.promisedDeadLineDATE = promisedDeadLineDATE;
+  public void setPromiseddeadlinedate(DateTime promiseddeadlinedate) {
+    this.promiseddeadlinedate = promiseddeadlinedate;
   }
 
-  public Servicedocument estimatedPrice(Double estimatedPrice) {
-    this.estimatedPrice = estimatedPrice;
+  public Servicedocument estimatedprice(Double estimatedprice) {
+    this.estimatedprice = estimatedprice;
     return this;
   }
 
    /**
-   * Odhadovaná cena [persistentní položka]
-   * @return estimatedPrice
+   * odhadovaná cena [persistentní položka]
+   * @return estimatedprice
   **/
-  @ApiModelProperty(example = "null", value = "Odhadovaná cena [persistentní položka]")
-  public Double getEstimatedPrice() {
-    return estimatedPrice;
+  @ApiModelProperty(example = "null", value = "odhadovaná cena [persistentní položka]")
+  public Double getEstimatedprice() {
+    return estimatedprice;
   }
 
-  public void setEstimatedPrice(Double estimatedPrice) {
-    this.estimatedPrice = estimatedPrice;
+  public void setEstimatedprice(Double estimatedprice) {
+    this.estimatedprice = estimatedprice;
   }
 
-  public Servicedocument informClientKind(Integer informClientKind) {
-    this.informClientKind = informClientKind;
+  public Servicedocument informclientkind(Integer informclientkind) {
+    this.informclientkind = informclientkind;
     return this;
   }
 
    /**
-   * Způsob informování [persistentní položka]
-   * @return informClientKind
+   * způsob informování [persistentní položka]
+   * @return informclientkind
   **/
-  @ApiModelProperty(example = "null", value = "Způsob informování [persistentní položka]")
-  public Integer getInformClientKind() {
-    return informClientKind;
+  @ApiModelProperty(example = "null", value = "způsob informování [persistentní položka]")
+  public Integer getInformclientkind() {
+    return informclientkind;
   }
 
-  public void setInformClientKind(Integer informClientKind) {
-    this.informClientKind = informClientKind;
+  public void setInformclientkind(Integer informclientkind) {
+    this.informclientkind = informclientkind;
   }
 
-  public Servicedocument serviceDocStateID(String serviceDocStateID) {
-    this.serviceDocStateID = serviceDocStateID;
+  public Servicedocument servicedocstateId(String servicedocstateId) {
+    this.servicedocstateId = servicedocstateId;
     return this;
   }
 
    /**
-   * Stav; ID objektu Stav servisního listu [persistentní položka]
-   * @return serviceDocStateID
+   * stav; id objektu stav servisního listu [persistentní položka]
+   * @return servicedocstateId
   **/
-  @ApiModelProperty(example = "null", value = "Stav; ID objektu Stav servisního listu [persistentní položka]")
-  public String getServiceDocStateID() {
-    return serviceDocStateID;
+  @ApiModelProperty(example = "null", value = "stav; id objektu stav servisního listu [persistentní položka]")
+  public String getServicedocstateId() {
+    return servicedocstateId;
   }
 
-  public void setServiceDocStateID(String serviceDocStateID) {
-    this.serviceDocStateID = serviceDocStateID;
+  public void setServicedocstateId(String servicedocstateId) {
+    this.servicedocstateId = servicedocstateId;
   }
 
-  public Servicedocument serviceSolutionKindID(String serviceSolutionKindID) {
-    this.serviceSolutionKindID = serviceSolutionKindID;
+  public Servicedocument servicesolutionkindId(String servicesolutionkindId) {
+    this.servicesolutionkindId = servicesolutionkindId;
     return this;
   }
 
    /**
-   * Způsob vyřešení; ID objektu Způsob vyřízení servisu [persistentní položka]
-   * @return serviceSolutionKindID
+   * způsob vyřešení; id objektu způsob vyřízení servisu [persistentní položka]
+   * @return servicesolutionkindId
   **/
-  @ApiModelProperty(example = "null", value = "Způsob vyřešení; ID objektu Způsob vyřízení servisu [persistentní položka]")
-  public String getServiceSolutionKindID() {
-    return serviceSolutionKindID;
+  @ApiModelProperty(example = "null", value = "způsob vyřešení; id objektu způsob vyřízení servisu [persistentní položka]")
+  public String getServicesolutionkindId() {
+    return servicesolutionkindId;
   }
 
-  public void setServiceSolutionKindID(String serviceSolutionKindID) {
-    this.serviceSolutionKindID = serviceSolutionKindID;
+  public void setServicesolutionkindId(String servicesolutionkindId) {
+    this.servicesolutionkindId = servicesolutionkindId;
   }
 
-  public Servicedocument returnedByUserID(String returnedByUserID) {
-    this.returnedByUserID = returnedByUserID;
+  public Servicedocument returnedbyuserId(String returnedbyuserId) {
+    this.returnedbyuserId = returnedbyuserId;
     return this;
   }
 
    /**
-   * Předal; ID objektu Uživatel [persistentní položka]
-   * @return returnedByUserID
+   * předal; id objektu uživatel [persistentní položka]
+   * @return returnedbyuserId
   **/
-  @ApiModelProperty(example = "null", value = "Předal; ID objektu Uživatel [persistentní položka]")
-  public String getReturnedByUserID() {
-    return returnedByUserID;
+  @ApiModelProperty(example = "null", value = "předal; id objektu uživatel [persistentní položka]")
+  public String getReturnedbyuserId() {
+    return returnedbyuserId;
   }
 
-  public void setReturnedByUserID(String returnedByUserID) {
-    this.returnedByUserID = returnedByUserID;
+  public void setReturnedbyuserId(String returnedbyuserId) {
+    this.returnedbyuserId = returnedbyuserId;
   }
 
-  public Servicedocument returnedAtDateDATE(DateTime returnedAtDateDATE) {
-    this.returnedAtDateDATE = returnedAtDateDATE;
+  public Servicedocument returnedatdatedate(DateTime returnedatdatedate) {
+    this.returnedatdatedate = returnedatdatedate;
     return this;
   }
 
    /**
-   * Vráceno dne [persistentní položka]
-   * @return returnedAtDateDATE
+   * vráceno dne [persistentní položka]
+   * @return returnedatdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Vráceno dne [persistentní položka]")
-  public DateTime getReturnedAtDateDATE() {
-    return returnedAtDateDATE;
+  @ApiModelProperty(example = "null", value = "vráceno dne [persistentní položka]")
+  public DateTime getReturnedatdatedate() {
+    return returnedatdatedate;
   }
 
-  public void setReturnedAtDateDATE(DateTime returnedAtDateDATE) {
-    this.returnedAtDateDATE = returnedAtDateDATE;
+  public void setReturnedatdatedate(DateTime returnedatdatedate) {
+    this.returnedatdatedate = returnedatdatedate;
   }
 
-  public Servicedocument totalMaterial(Double totalMaterial) {
-    this.totalMaterial = totalMaterial;
+  public Servicedocument totalmaterial(Double totalmaterial) {
+    this.totalmaterial = totalmaterial;
     return this;
   }
 
    /**
-   * Materiál celkem [persistentní položka]
-   * @return totalMaterial
+   * materiál celkem [persistentní položka]
+   * @return totalmaterial
   **/
-  @ApiModelProperty(example = "null", value = "Materiál celkem [persistentní položka]")
-  public Double getTotalMaterial() {
-    return totalMaterial;
+  @ApiModelProperty(example = "null", value = "materiál celkem [persistentní položka]")
+  public Double getTotalmaterial() {
+    return totalmaterial;
   }
 
-  public void setTotalMaterial(Double totalMaterial) {
-    this.totalMaterial = totalMaterial;
+  public void setTotalmaterial(Double totalmaterial) {
+    this.totalmaterial = totalmaterial;
   }
 
-  public Servicedocument totalWork(Double totalWork) {
-    this.totalWork = totalWork;
+  public Servicedocument totalwork(Double totalwork) {
+    this.totalwork = totalwork;
     return this;
   }
 
    /**
-   * Práce celkem [persistentní položka]
-   * @return totalWork
+   * práce celkem [persistentní položka]
+   * @return totalwork
   **/
-  @ApiModelProperty(example = "null", value = "Práce celkem [persistentní položka]")
-  public Double getTotalWork() {
-    return totalWork;
+  @ApiModelProperty(example = "null", value = "práce celkem [persistentní položka]")
+  public Double getTotalwork() {
+    return totalwork;
   }
 
-  public void setTotalWork(Double totalWork) {
-    this.totalWork = totalWork;
+  public void setTotalwork(Double totalwork) {
+    this.totalwork = totalwork;
   }
 
-  public Servicedocument tinyMaterial(Double tinyMaterial) {
-    this.tinyMaterial = tinyMaterial;
+  public Servicedocument tinymaterial(Double tinymaterial) {
+    this.tinymaterial = tinymaterial;
     return this;
   }
 
    /**
-   * Drobný materiál [persistentní položka]
-   * @return tinyMaterial
+   * drobný materiál [persistentní položka]
+   * @return tinymaterial
   **/
-  @ApiModelProperty(example = "null", value = "Drobný materiál [persistentní položka]")
-  public Double getTinyMaterial() {
-    return tinyMaterial;
+  @ApiModelProperty(example = "null", value = "drobný materiál [persistentní položka]")
+  public Double getTinymaterial() {
+    return tinymaterial;
   }
 
-  public void setTinyMaterial(Double tinyMaterial) {
-    this.tinyMaterial = tinyMaterial;
+  public void setTinymaterial(Double tinymaterial) {
+    this.tinymaterial = tinymaterial;
   }
 
-  public Servicedocument totalOther(Double totalOther) {
-    this.totalOther = totalOther;
+  public Servicedocument totalother(Double totalother) {
+    this.totalother = totalother;
     return this;
   }
 
    /**
-   * Ostatní [persistentní položka]
-   * @return totalOther
+   * ostatní [persistentní položka]
+   * @return totalother
   **/
-  @ApiModelProperty(example = "null", value = "Ostatní [persistentní položka]")
-  public Double getTotalOther() {
-    return totalOther;
+  @ApiModelProperty(example = "null", value = "ostatní [persistentní položka]")
+  public Double getTotalother() {
+    return totalother;
   }
 
-  public void setTotalOther(Double totalOther) {
-    this.totalOther = totalOther;
+  public void setTotalother(Double totalother) {
+    this.totalother = totalother;
   }
 
-  public Servicedocument totalAmount(Double totalAmount) {
-    this.totalAmount = totalAmount;
+  public Servicedocument totalamount(Double totalamount) {
+    this.totalamount = totalamount;
     return this;
   }
 
    /**
-   * Celkem [persistentní položka]
-   * @return totalAmount
+   * celkem [persistentní položka]
+   * @return totalamount
   **/
-  @ApiModelProperty(example = "null", value = "Celkem [persistentní položka]")
-  public Double getTotalAmount() {
-    return totalAmount;
+  @ApiModelProperty(example = "null", value = "celkem [persistentní položka]")
+  public Double getTotalamount() {
+    return totalamount;
   }
 
-  public void setTotalAmount(Double totalAmount) {
-    this.totalAmount = totalAmount;
+  public void setTotalamount(Double totalamount) {
+    this.totalamount = totalamount;
   }
 
-  public Servicedocument invoicedAmount(Double invoicedAmount) {
-    this.invoicedAmount = invoicedAmount;
+  public Servicedocument invoicedamount(Double invoicedamount) {
+    this.invoicedamount = invoicedamount;
     return this;
   }
 
    /**
-   * Fakturováno [persistentní položka]
-   * @return invoicedAmount
+   * fakturováno [persistentní položka]
+   * @return invoicedamount
   **/
-  @ApiModelProperty(example = "null", value = "Fakturováno [persistentní položka]")
-  public Double getInvoicedAmount() {
-    return invoicedAmount;
+  @ApiModelProperty(example = "null", value = "fakturováno [persistentní položka]")
+  public Double getInvoicedamount() {
+    return invoicedamount;
   }
 
-  public void setInvoicedAmount(Double invoicedAmount) {
-    this.invoicedAmount = invoicedAmount;
+  public void setInvoicedamount(Double invoicedamount) {
+    this.invoicedamount = invoicedamount;
   }
 
   public Servicedocument priority(Integer priority) {
@@ -1149,10 +1185,10 @@ public class Servicedocument   {
   }
 
    /**
-   * Priorita [persistentní položka]
+   * priorita [persistentní položka]
    * @return priority
   **/
-  @ApiModelProperty(example = "null", value = "Priorita [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "priorita [persistentní položka]")
   public Integer getPriority() {
     return priority;
   }
@@ -1167,10 +1203,10 @@ public class Servicedocument   {
   }
 
    /**
-   * Množství [persistentní položka]
+   * množství [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "množství [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -1179,184 +1215,184 @@ public class Servicedocument   {
     this.quantity = quantity;
   }
 
-  public Servicedocument addressID(String addressID) {
-    this.addressID = addressID;
+  public Servicedocument addressId(String addressId) {
+    this.addressId = addressId;
     return this;
   }
 
    /**
-   * Vlastní adresa; ID objektu Adresa [persistentní položka]
-   * @return addressID
+   * vlastní adresa; id objektu adresa [persistentní položka]
+   * @return addressId
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní adresa; ID objektu Adresa [persistentní položka]")
-  public String getAddressID() {
-    return addressID;
+  @ApiModelProperty(example = "null", value = "vlastní adresa; id objektu adresa [persistentní položka]")
+  public String getAddressId() {
+    return addressId;
   }
 
-  public void setAddressID(String addressID) {
-    this.addressID = addressID;
+  public void setAddressId(String addressId) {
+    this.addressId = addressId;
   }
 
-  public Servicedocument busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Servicedocument busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Servicedocument busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Servicedocument bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obchodní případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obchodní případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obchodní případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obchodní případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Servicedocument busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Servicedocument busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Obchodní případ [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu obchodní případ [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu obchodní případ [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Servicedocument lastClosingDocStateID(String lastClosingDocStateID) {
-    this.lastClosingDocStateID = lastClosingDocStateID;
+  public Servicedocument lastclosingdocstateId(String lastclosingdocstateId) {
+    this.lastclosingdocstateId = lastclosingdocstateId;
     return this;
   }
 
    /**
-   * Poslední stav uzavření; ID objektu Stav servisního listu [persistentní položka]
-   * @return lastClosingDocStateID
+   * poslední stav uzavření; id objektu stav servisního listu [persistentní položka]
+   * @return lastclosingdocstateId
   **/
-  @ApiModelProperty(example = "null", value = "Poslední stav uzavření; ID objektu Stav servisního listu [persistentní položka]")
-  public String getLastClosingDocStateID() {
-    return lastClosingDocStateID;
+  @ApiModelProperty(example = "null", value = "poslední stav uzavření; id objektu stav servisního listu [persistentní položka]")
+  public String getLastclosingdocstateId() {
+    return lastclosingdocstateId;
   }
 
-  public void setLastClosingDocStateID(String lastClosingDocStateID) {
-    this.lastClosingDocStateID = lastClosingDocStateID;
+  public void setLastclosingdocstateId(String lastclosingdocstateId) {
+    this.lastclosingdocstateId = lastclosingdocstateId;
   }
 
-  public Servicedocument storeReceiptDocType(Integer storeReceiptDocType) {
-    this.storeReceiptDocType = storeReceiptDocType;
+  public Servicedocument storereceiptdoctype(Integer storereceiptdoctype) {
+    this.storereceiptdoctype = storereceiptdoctype;
     return this;
   }
 
    /**
-   * Typ dokladu při příjmu [persistentní položka]
-   * @return storeReceiptDocType
+   * typ dokladu při příjmu [persistentní položka]
+   * @return storereceiptdoctype
   **/
-  @ApiModelProperty(example = "null", value = "Typ dokladu při příjmu [persistentní položka]")
-  public Integer getStoreReceiptDocType() {
-    return storeReceiptDocType;
+  @ApiModelProperty(example = "null", value = "typ dokladu při příjmu [persistentní položka]")
+  public Integer getStorereceiptdoctype() {
+    return storereceiptdoctype;
   }
 
-  public void setStoreReceiptDocType(Integer storeReceiptDocType) {
-    this.storeReceiptDocType = storeReceiptDocType;
+  public void setStorereceiptdoctype(Integer storereceiptdoctype) {
+    this.storereceiptdoctype = storereceiptdoctype;
   }
 
-  public Servicedocument saleBillOfDeliveryID(String saleBillOfDeliveryID) {
-    this.saleBillOfDeliveryID = saleBillOfDeliveryID;
+  public Servicedocument salebillofdeliveryId(String salebillofdeliveryId) {
+    this.salebillofdeliveryId = salebillofdeliveryId;
     return this;
   }
 
    /**
-   * Dodací list prodeje; ID objektu Dodací list [persistentní položka]
-   * @return saleBillOfDeliveryID
+   * dodací list prodeje; id objektu dodací list [persistentní položka]
+   * @return salebillofdeliveryId
   **/
-  @ApiModelProperty(example = "null", value = "Dodací list prodeje; ID objektu Dodací list [persistentní položka]")
-  public String getSaleBillOfDeliveryID() {
-    return saleBillOfDeliveryID;
+  @ApiModelProperty(example = "null", value = "dodací list prodeje; id objektu dodací list [persistentní položka]")
+  public String getSalebillofdeliveryId() {
+    return salebillofdeliveryId;
   }
 
-  public void setSaleBillOfDeliveryID(String saleBillOfDeliveryID) {
-    this.saleBillOfDeliveryID = saleBillOfDeliveryID;
+  public void setSalebillofdeliveryId(String salebillofdeliveryId) {
+    this.salebillofdeliveryId = salebillofdeliveryId;
   }
 
-  public Servicedocument mainSourceStoreID(String mainSourceStoreID) {
-    this.mainSourceStoreID = mainSourceStoreID;
+  public Servicedocument mainsourcestoreId(String mainsourcestoreId) {
+    this.mainsourcestoreId = mainsourcestoreId;
     return this;
   }
 
    /**
-   * Zdrojový sklad; ID objektu Sklad [persistentní položka]
-   * @return mainSourceStoreID
+   * zdrojový sklad; id objektu sklad [persistentní položka]
+   * @return mainsourcestoreId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojový sklad; ID objektu Sklad [persistentní položka]")
-  public String getMainSourceStoreID() {
-    return mainSourceStoreID;
+  @ApiModelProperty(example = "null", value = "zdrojový sklad; id objektu sklad [persistentní položka]")
+  public String getMainsourcestoreId() {
+    return mainsourcestoreId;
   }
 
-  public void setMainSourceStoreID(String mainSourceStoreID) {
-    this.mainSourceStoreID = mainSourceStoreID;
+  public void setMainsourcestoreId(String mainsourcestoreId) {
+    this.mainsourcestoreId = mainsourcestoreId;
   }
 
-  public Servicedocument changedStoreCardID(String changedStoreCardID) {
-    this.changedStoreCardID = changedStoreCardID;
+  public Servicedocument changedstorecardId(String changedstorecardId) {
+    this.changedstorecardId = changedstorecardId;
     return this;
   }
 
    /**
-   * Zaměněná skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return changedStoreCardID
+   * zaměněná skladová karta; id objektu skladová karta [persistentní položka]
+   * @return changedstorecardId
   **/
-  @ApiModelProperty(example = "null", value = "Zaměněná skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getChangedStoreCardID() {
-    return changedStoreCardID;
+  @ApiModelProperty(example = "null", value = "zaměněná skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getChangedstorecardId() {
+    return changedstorecardId;
   }
 
-  public void setChangedStoreCardID(String changedStoreCardID) {
-    this.changedStoreCardID = changedStoreCardID;
+  public void setChangedstorecardId(String changedstorecardId) {
+    this.changedstorecardId = changedstorecardId;
   }
 
-  public Servicedocument changedStoreBatchID(String changedStoreBatchID) {
-    this.changedStoreBatchID = changedStoreBatchID;
+  public Servicedocument changedstorebatchId(String changedstorebatchId) {
+    this.changedstorebatchId = changedstorebatchId;
     return this;
   }
 
    /**
-   * Zaměněné s.č.; ID objektu Šarže/sériové číslo [persistentní položka]
-   * @return changedStoreBatchID
+   * zaměněné s.č.; id objektu Šarže/sériové číslo [persistentní položka]
+   * @return changedstorebatchId
   **/
-  @ApiModelProperty(example = "null", value = "Zaměněné s.č.; ID objektu Šarže/sériové číslo [persistentní položka]")
-  public String getChangedStoreBatchID() {
-    return changedStoreBatchID;
+  @ApiModelProperty(example = "null", value = "zaměněné s.č.; id objektu Šarže/sériové číslo [persistentní položka]")
+  public String getChangedstorebatchId() {
+    return changedstorebatchId;
   }
 
-  public void setChangedStoreBatchID(String changedStoreBatchID) {
-    this.changedStoreBatchID = changedStoreBatchID;
+  public void setChangedstorebatchId(String changedstorebatchId) {
+    this.changedstorebatchId = changedstorebatchId;
   }
 
   public Servicedocument defects(List<Servicedocumentdefect> defects) {
@@ -1370,10 +1406,10 @@ public class Servicedocument   {
   }
 
    /**
-   * Závady; kolekce BO Závada k serv.listu [nepersistentní položka]
+   * závady; kolekce bo závada k serv.listu [nepersistentní položka]
    * @return defects
   **/
-  @ApiModelProperty(example = "null", value = "Závady; kolekce BO Závada k serv.listu [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "závady; kolekce bo závada k serv.listu [nepersistentní položka]")
   public List<Servicedocumentdefect> getDefects() {
     return defects;
   }
@@ -1393,10 +1429,10 @@ public class Servicedocument   {
   }
 
    /**
-   * Servisní operace; kolekce BO Operace k serv.listu [nepersistentní položka]
+   * servisní operace; kolekce bo operace k serv.listu [nepersistentní položka]
    * @return operations
   **/
-  @ApiModelProperty(example = "null", value = "Servisní operace; kolekce BO Operace k serv.listu [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "servisní operace; kolekce bo operace k serv.listu [nepersistentní položka]")
   public List<Servicedocumentoperation> getOperations() {
     return operations;
   }
@@ -1416,10 +1452,10 @@ public class Servicedocument   {
   }
 
    /**
-   * Dokumenty; kolekce BO Doklad k serv.listu [nepersistentní položka]
+   * dokumenty; kolekce bo doklad k serv.listu [nepersistentní položka]
    * @return docs
   **/
-  @ApiModelProperty(example = "null", value = "Dokumenty; kolekce BO Doklad k serv.listu [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "dokumenty; kolekce bo doklad k serv.listu [nepersistentní položka]")
   public List<Servicedocumentdoc> getDocs() {
     return docs;
   }
@@ -1439,10 +1475,10 @@ public class Servicedocument   {
   }
 
    /**
-   * Obrázky; kolekce BO Obrázek k serv.listu [nepersistentní položka]
+   * obrázky; kolekce bo obrázek k serv.listu [nepersistentní položka]
    * @return pictures
   **/
-  @ApiModelProperty(example = "null", value = "Obrázky; kolekce BO Obrázek k serv.listu [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "obrázky; kolekce bo obrázek k serv.listu [nepersistentní položka]")
   public List<Servicedocumentpicture> getPictures() {
     return pictures;
   }
@@ -1451,130 +1487,130 @@ public class Servicedocument   {
     this.pictures = pictures;
   }
 
-  public Servicedocument subjectCode(String subjectCode) {
-    this.subjectCode = subjectCode;
+  public Servicedocument subjectcode(String subjectcode) {
+    this.subjectcode = subjectcode;
     return this;
   }
 
    /**
-   * Kód předmětu
-   * @return subjectCode
+   * kód předmětu
+   * @return subjectcode
   **/
-  @ApiModelProperty(example = "null", value = "Kód předmětu")
-  public String getSubjectCode() {
-    return subjectCode;
+  @ApiModelProperty(example = "null", value = "kód předmětu")
+  public String getSubjectcode() {
+    return subjectcode;
   }
 
-  public void setSubjectCode(String subjectCode) {
-    this.subjectCode = subjectCode;
+  public void setSubjectcode(String subjectcode) {
+    this.subjectcode = subjectcode;
   }
 
-  public Servicedocument subjectName(String subjectName) {
-    this.subjectName = subjectName;
+  public Servicedocument subjectname(String subjectname) {
+    this.subjectname = subjectname;
     return this;
   }
 
    /**
-   * Název předmětu
-   * @return subjectName
+   * název předmětu
+   * @return subjectname
   **/
-  @ApiModelProperty(example = "null", value = "Název předmětu")
-  public String getSubjectName() {
-    return subjectName;
+  @ApiModelProperty(example = "null", value = "název předmětu")
+  public String getSubjectname() {
+    return subjectname;
   }
 
-  public void setSubjectName(String subjectName) {
-    this.subjectName = subjectName;
+  public void setSubjectname(String subjectname) {
+    this.subjectname = subjectname;
   }
 
-  public Servicedocument subjectSerial(String subjectSerial) {
-    this.subjectSerial = subjectSerial;
+  public Servicedocument subjectserial(String subjectserial) {
+    this.subjectserial = subjectserial;
     return this;
   }
 
    /**
-   * Sériové/výrobní číslo předmětu
-   * @return subjectSerial
+   * sériové/výrobní číslo předmětu
+   * @return subjectserial
   **/
-  @ApiModelProperty(example = "null", value = "Sériové/výrobní číslo předmětu")
-  public String getSubjectSerial() {
-    return subjectSerial;
+  @ApiModelProperty(example = "null", value = "sériové/výrobní číslo předmětu")
+  public String getSubjectserial() {
+    return subjectserial;
   }
 
-  public void setSubjectSerial(String subjectSerial) {
-    this.subjectSerial = subjectSerial;
+  public void setSubjectserial(String subjectserial) {
+    this.subjectserial = subjectserial;
   }
 
-  public Servicedocument totalWorkOperationTime(Double totalWorkOperationTime) {
-    this.totalWorkOperationTime = totalWorkOperationTime;
+  public Servicedocument totalworkoperationtime(Double totalworkoperationtime) {
+    this.totalworkoperationtime = totalworkoperationtime;
     return this;
   }
 
    /**
-   * Celkový čas práce
-   * @return totalWorkOperationTime
+   * celkový čas práce
+   * @return totalworkoperationtime
   **/
-  @ApiModelProperty(example = "null", value = "Celkový čas práce")
-  public Double getTotalWorkOperationTime() {
-    return totalWorkOperationTime;
+  @ApiModelProperty(example = "null", value = "celkový čas práce")
+  public Double getTotalworkoperationtime() {
+    return totalworkoperationtime;
   }
 
-  public void setTotalWorkOperationTime(Double totalWorkOperationTime) {
-    this.totalWorkOperationTime = totalWorkOperationTime;
+  public void setTotalworkoperationtime(Double totalworkoperationtime) {
+    this.totalworkoperationtime = totalworkoperationtime;
   }
 
-  public Servicedocument guaranteeEndDate(DateTime guaranteeEndDate) {
-    this.guaranteeEndDate = guaranteeEndDate;
+  public Servicedocument guaranteeenddate(DateTime guaranteeenddate) {
+    this.guaranteeenddate = guaranteeenddate;
     return this;
   }
 
    /**
-   * Datum záruky do
-   * @return guaranteeEndDate
+   * datum záruky do
+   * @return guaranteeenddate
   **/
-  @ApiModelProperty(example = "null", value = "Datum záruky do")
-  public DateTime getGuaranteeEndDate() {
-    return guaranteeEndDate;
+  @ApiModelProperty(example = "null", value = "datum záruky do")
+  public DateTime getGuaranteeenddate() {
+    return guaranteeenddate;
   }
 
-  public void setGuaranteeEndDate(DateTime guaranteeEndDate) {
-    this.guaranteeEndDate = guaranteeEndDate;
+  public void setGuaranteeenddate(DateTime guaranteeenddate) {
+    this.guaranteeenddate = guaranteeenddate;
   }
 
-  public Servicedocument defectsAsText(String defectsAsText) {
-    this.defectsAsText = defectsAsText;
+  public Servicedocument defectsastext(String defectsastext) {
+    this.defectsastext = defectsastext;
     return this;
   }
 
    /**
-   * Závady ...
-   * @return defectsAsText
+   * závady ...
+   * @return defectsastext
   **/
-  @ApiModelProperty(example = "null", value = "Závady ...")
-  public String getDefectsAsText() {
-    return defectsAsText;
+  @ApiModelProperty(example = "null", value = "závady ...")
+  public String getDefectsastext() {
+    return defectsastext;
   }
 
-  public void setDefectsAsText(String defectsAsText) {
-    this.defectsAsText = defectsAsText;
+  public void setDefectsastext(String defectsastext) {
+    this.defectsastext = defectsastext;
   }
 
-  public Servicedocument firstServiceAssemblyFormID(String firstServiceAssemblyFormID) {
-    this.firstServiceAssemblyFormID = firstServiceAssemblyFormID;
+  public Servicedocument firstserviceassemblyformId(String firstserviceassemblyformId) {
+    this.firstserviceassemblyformId = firstserviceassemblyformId;
     return this;
   }
 
    /**
-   * První montážní list; ID objektu Montážní list
-   * @return firstServiceAssemblyFormID
+   * první montážní list; id objektu montážní list
+   * @return firstserviceassemblyformId
   **/
-  @ApiModelProperty(example = "null", value = "První montážní list; ID objektu Montážní list")
-  public String getFirstServiceAssemblyFormID() {
-    return firstServiceAssemblyFormID;
+  @ApiModelProperty(example = "null", value = "první montážní list; id objektu montážní list")
+  public String getFirstserviceassemblyformId() {
+    return firstserviceassemblyformId;
   }
 
-  public void setFirstServiceAssemblyFormID(String firstServiceAssemblyFormID) {
-    this.firstServiceAssemblyFormID = firstServiceAssemblyFormID;
+  public void setFirstserviceassemblyformId(String firstserviceassemblyformId) {
+    this.firstserviceassemblyformId = firstserviceassemblyformId;
   }
 
 
@@ -1587,85 +1623,85 @@ public class Servicedocument   {
       return false;
     }
     Servicedocument servicedocument = (Servicedocument) o;
-    return Objects.equals(this.displayName, servicedocument.displayName) &&
-        Objects.equals(this.ID, servicedocument.ID) &&
-        Objects.equals(this.dateOfChange, servicedocument.dateOfChange) &&
-        Objects.equals(this.classID, servicedocument.classID) &&
-        Objects.equals(this.objVersion, servicedocument.objVersion) &&
-        Objects.equals(this.docQueueID, servicedocument.docQueueID) &&
-        Objects.equals(this.periodID, servicedocument.periodID) &&
-        Objects.equals(this.ordNumber, servicedocument.ordNumber) &&
-        Objects.equals(this.docDateDATE, servicedocument.docDateDATE) &&
-        Objects.equals(this.createdByID, servicedocument.createdByID) &&
-        Objects.equals(this.correctedByID, servicedocument.correctedByID) &&
-        Objects.equals(this.newRelatedType, servicedocument.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, servicedocument.newRelatedDocumentID) &&
-        Objects.equals(this.divisionID, servicedocument.divisionID) &&
-        Objects.equals(this.serviceTypeID, servicedocument.serviceTypeID) &&
-        Objects.equals(this.objectKind, servicedocument.objectKind) &&
-        Objects.equals(this.servicedObjectOnStore, servicedocument.servicedObjectOnStore) &&
-        Objects.equals(this.storeCardID, servicedocument.storeCardID) &&
-        Objects.equals(this.storeID, servicedocument.storeID) &&
-        Objects.equals(this.storeBatchID, servicedocument.storeBatchID) &&
-        Objects.equals(this.servicedObjectID, servicedocument.servicedObjectID) &&
-        Objects.equals(this.servicedObjectIDCode, servicedocument.servicedObjectIDCode) &&
-        Objects.equals(this.servicedObjectText, servicedocument.servicedObjectText) &&
-        Objects.equals(this.servicedObjectSerialNr, servicedocument.servicedObjectSerialNr) &&
-        Objects.equals(this.servicedObjectTypeID, servicedocument.servicedObjectTypeID) &&
-        Objects.equals(this.guarantyRepair, servicedocument.guarantyRepair) &&
-        Objects.equals(this.firmID, servicedocument.firmID) &&
-        Objects.equals(this.firmOfficeID, servicedocument.firmOfficeID) &&
-        Objects.equals(this.personID, servicedocument.personID) &&
-        Objects.equals(this.payerFirmID, servicedocument.payerFirmID) &&
-        Objects.equals(this.payerFirmOfficeID, servicedocument.payerFirmOfficeID) &&
-        Objects.equals(this.payerPersonID, servicedocument.payerPersonID) &&
-        Objects.equals(this.outdoorPlaceDescription, servicedocument.outdoorPlaceDescription) &&
+    return Objects.equals(this.displayname, servicedocument.displayname) &&
+        Objects.equals(this.id, servicedocument.id) &&
+        Objects.equals(this.dateofchange, servicedocument.dateofchange) &&
+        Objects.equals(this.classid, servicedocument.classid) &&
+        Objects.equals(this.objversion, servicedocument.objversion) &&
+        Objects.equals(this.docqueueId, servicedocument.docqueueId) &&
+        Objects.equals(this.periodId, servicedocument.periodId) &&
+        Objects.equals(this.ordnumber, servicedocument.ordnumber) &&
+        Objects.equals(this.docdatedate, servicedocument.docdatedate) &&
+        Objects.equals(this.createdbyId, servicedocument.createdbyId) &&
+        Objects.equals(this.correctedbyId, servicedocument.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, servicedocument.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, servicedocument.newrelateddocumentId) &&
+        Objects.equals(this.divisionId, servicedocument.divisionId) &&
+        Objects.equals(this.servicetypeId, servicedocument.servicetypeId) &&
+        Objects.equals(this.objectkind, servicedocument.objectkind) &&
+        Objects.equals(this.servicedobjectonstore, servicedocument.servicedobjectonstore) &&
+        Objects.equals(this.storecardId, servicedocument.storecardId) &&
+        Objects.equals(this.storeId, servicedocument.storeId) &&
+        Objects.equals(this.storebatchId, servicedocument.storebatchId) &&
+        Objects.equals(this.servicedobjectId, servicedocument.servicedobjectId) &&
+        Objects.equals(this.servicedobjectidcode, servicedocument.servicedobjectidcode) &&
+        Objects.equals(this.servicedobjecttext, servicedocument.servicedobjecttext) &&
+        Objects.equals(this.servicedobjectserialnr, servicedocument.servicedobjectserialnr) &&
+        Objects.equals(this.servicedobjecttypeId, servicedocument.servicedobjecttypeId) &&
+        Objects.equals(this.guarantyrepair, servicedocument.guarantyrepair) &&
+        Objects.equals(this.firmId, servicedocument.firmId) &&
+        Objects.equals(this.firmofficeId, servicedocument.firmofficeId) &&
+        Objects.equals(this.personId, servicedocument.personId) &&
+        Objects.equals(this.payerfirmId, servicedocument.payerfirmId) &&
+        Objects.equals(this.payerfirmofficeId, servicedocument.payerfirmofficeId) &&
+        Objects.equals(this.payerpersonId, servicedocument.payerpersonId) &&
+        Objects.equals(this.outdoorplacedescription, servicedocument.outdoorplacedescription) &&
         Objects.equals(this.equipment, servicedocument.equipment) &&
-        Objects.equals(this.damageDescription, servicedocument.damageDescription) &&
-        Objects.equals(this.paymentType, servicedocument.paymentType) &&
-        Objects.equals(this.insuaranceFirmID, servicedocument.insuaranceFirmID) &&
-        Objects.equals(this.acceptedByUserID, servicedocument.acceptedByUserID) &&
-        Objects.equals(this.promisedDeadLineDATE, servicedocument.promisedDeadLineDATE) &&
-        Objects.equals(this.estimatedPrice, servicedocument.estimatedPrice) &&
-        Objects.equals(this.informClientKind, servicedocument.informClientKind) &&
-        Objects.equals(this.serviceDocStateID, servicedocument.serviceDocStateID) &&
-        Objects.equals(this.serviceSolutionKindID, servicedocument.serviceSolutionKindID) &&
-        Objects.equals(this.returnedByUserID, servicedocument.returnedByUserID) &&
-        Objects.equals(this.returnedAtDateDATE, servicedocument.returnedAtDateDATE) &&
-        Objects.equals(this.totalMaterial, servicedocument.totalMaterial) &&
-        Objects.equals(this.totalWork, servicedocument.totalWork) &&
-        Objects.equals(this.tinyMaterial, servicedocument.tinyMaterial) &&
-        Objects.equals(this.totalOther, servicedocument.totalOther) &&
-        Objects.equals(this.totalAmount, servicedocument.totalAmount) &&
-        Objects.equals(this.invoicedAmount, servicedocument.invoicedAmount) &&
+        Objects.equals(this.damagedescription, servicedocument.damagedescription) &&
+        Objects.equals(this.paymenttype, servicedocument.paymenttype) &&
+        Objects.equals(this.insuarancefirmId, servicedocument.insuarancefirmId) &&
+        Objects.equals(this.acceptedbyuserId, servicedocument.acceptedbyuserId) &&
+        Objects.equals(this.promiseddeadlinedate, servicedocument.promiseddeadlinedate) &&
+        Objects.equals(this.estimatedprice, servicedocument.estimatedprice) &&
+        Objects.equals(this.informclientkind, servicedocument.informclientkind) &&
+        Objects.equals(this.servicedocstateId, servicedocument.servicedocstateId) &&
+        Objects.equals(this.servicesolutionkindId, servicedocument.servicesolutionkindId) &&
+        Objects.equals(this.returnedbyuserId, servicedocument.returnedbyuserId) &&
+        Objects.equals(this.returnedatdatedate, servicedocument.returnedatdatedate) &&
+        Objects.equals(this.totalmaterial, servicedocument.totalmaterial) &&
+        Objects.equals(this.totalwork, servicedocument.totalwork) &&
+        Objects.equals(this.tinymaterial, servicedocument.tinymaterial) &&
+        Objects.equals(this.totalother, servicedocument.totalother) &&
+        Objects.equals(this.totalamount, servicedocument.totalamount) &&
+        Objects.equals(this.invoicedamount, servicedocument.invoicedamount) &&
         Objects.equals(this.priority, servicedocument.priority) &&
         Objects.equals(this.quantity, servicedocument.quantity) &&
-        Objects.equals(this.addressID, servicedocument.addressID) &&
-        Objects.equals(this.busOrderID, servicedocument.busOrderID) &&
-        Objects.equals(this.busTransactionID, servicedocument.busTransactionID) &&
-        Objects.equals(this.busProjectID, servicedocument.busProjectID) &&
-        Objects.equals(this.lastClosingDocStateID, servicedocument.lastClosingDocStateID) &&
-        Objects.equals(this.storeReceiptDocType, servicedocument.storeReceiptDocType) &&
-        Objects.equals(this.saleBillOfDeliveryID, servicedocument.saleBillOfDeliveryID) &&
-        Objects.equals(this.mainSourceStoreID, servicedocument.mainSourceStoreID) &&
-        Objects.equals(this.changedStoreCardID, servicedocument.changedStoreCardID) &&
-        Objects.equals(this.changedStoreBatchID, servicedocument.changedStoreBatchID) &&
+        Objects.equals(this.addressId, servicedocument.addressId) &&
+        Objects.equals(this.busorderId, servicedocument.busorderId) &&
+        Objects.equals(this.bustransactionId, servicedocument.bustransactionId) &&
+        Objects.equals(this.busprojectId, servicedocument.busprojectId) &&
+        Objects.equals(this.lastclosingdocstateId, servicedocument.lastclosingdocstateId) &&
+        Objects.equals(this.storereceiptdoctype, servicedocument.storereceiptdoctype) &&
+        Objects.equals(this.salebillofdeliveryId, servicedocument.salebillofdeliveryId) &&
+        Objects.equals(this.mainsourcestoreId, servicedocument.mainsourcestoreId) &&
+        Objects.equals(this.changedstorecardId, servicedocument.changedstorecardId) &&
+        Objects.equals(this.changedstorebatchId, servicedocument.changedstorebatchId) &&
         Objects.equals(this.defects, servicedocument.defects) &&
         Objects.equals(this.operations, servicedocument.operations) &&
         Objects.equals(this.docs, servicedocument.docs) &&
         Objects.equals(this.pictures, servicedocument.pictures) &&
-        Objects.equals(this.subjectCode, servicedocument.subjectCode) &&
-        Objects.equals(this.subjectName, servicedocument.subjectName) &&
-        Objects.equals(this.subjectSerial, servicedocument.subjectSerial) &&
-        Objects.equals(this.totalWorkOperationTime, servicedocument.totalWorkOperationTime) &&
-        Objects.equals(this.guaranteeEndDate, servicedocument.guaranteeEndDate) &&
-        Objects.equals(this.defectsAsText, servicedocument.defectsAsText) &&
-        Objects.equals(this.firstServiceAssemblyFormID, servicedocument.firstServiceAssemblyFormID);
+        Objects.equals(this.subjectcode, servicedocument.subjectcode) &&
+        Objects.equals(this.subjectname, servicedocument.subjectname) &&
+        Objects.equals(this.subjectserial, servicedocument.subjectserial) &&
+        Objects.equals(this.totalworkoperationtime, servicedocument.totalworkoperationtime) &&
+        Objects.equals(this.guaranteeenddate, servicedocument.guaranteeenddate) &&
+        Objects.equals(this.defectsastext, servicedocument.defectsastext) &&
+        Objects.equals(this.firstserviceassemblyformId, servicedocument.firstserviceassemblyformId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, dateOfChange, classID, objVersion, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, divisionID, serviceTypeID, objectKind, servicedObjectOnStore, storeCardID, storeID, storeBatchID, servicedObjectID, servicedObjectIDCode, servicedObjectText, servicedObjectSerialNr, servicedObjectTypeID, guarantyRepair, firmID, firmOfficeID, personID, payerFirmID, payerFirmOfficeID, payerPersonID, outdoorPlaceDescription, equipment, damageDescription, paymentType, insuaranceFirmID, acceptedByUserID, promisedDeadLineDATE, estimatedPrice, informClientKind, serviceDocStateID, serviceSolutionKindID, returnedByUserID, returnedAtDateDATE, totalMaterial, totalWork, tinyMaterial, totalOther, totalAmount, invoicedAmount, priority, quantity, addressID, busOrderID, busTransactionID, busProjectID, lastClosingDocStateID, storeReceiptDocType, saleBillOfDeliveryID, mainSourceStoreID, changedStoreCardID, changedStoreBatchID, defects, operations, docs, pictures, subjectCode, subjectName, subjectSerial, totalWorkOperationTime, guaranteeEndDate, defectsAsText, firstServiceAssemblyFormID);
+    return Objects.hash(displayname, id, dateofchange, classid, objversion, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, divisionId, servicetypeId, objectkind, servicedobjectonstore, storecardId, storeId, storebatchId, servicedobjectId, servicedobjectidcode, servicedobjecttext, servicedobjectserialnr, servicedobjecttypeId, guarantyrepair, firmId, firmofficeId, personId, payerfirmId, payerfirmofficeId, payerpersonId, outdoorplacedescription, equipment, damagedescription, paymenttype, insuarancefirmId, acceptedbyuserId, promiseddeadlinedate, estimatedprice, informclientkind, servicedocstateId, servicesolutionkindId, returnedbyuserId, returnedatdatedate, totalmaterial, totalwork, tinymaterial, totalother, totalamount, invoicedamount, priority, quantity, addressId, busorderId, bustransactionId, busprojectId, lastclosingdocstateId, storereceiptdoctype, salebillofdeliveryId, mainsourcestoreId, changedstorecardId, changedstorebatchId, defects, operations, docs, pictures, subjectcode, subjectname, subjectserial, totalworkoperationtime, guaranteeenddate, defectsastext, firstserviceassemblyformId);
   }
 
   @Override
@@ -1673,80 +1709,80 @@ public class Servicedocument   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Servicedocument {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    dateOfChange: ").append(toIndentedString(dateOfChange)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    serviceTypeID: ").append(toIndentedString(serviceTypeID)).append("\n");
-    sb.append("    objectKind: ").append(toIndentedString(objectKind)).append("\n");
-    sb.append("    servicedObjectOnStore: ").append(toIndentedString(servicedObjectOnStore)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    storeBatchID: ").append(toIndentedString(storeBatchID)).append("\n");
-    sb.append("    servicedObjectID: ").append(toIndentedString(servicedObjectID)).append("\n");
-    sb.append("    servicedObjectIDCode: ").append(toIndentedString(servicedObjectIDCode)).append("\n");
-    sb.append("    servicedObjectText: ").append(toIndentedString(servicedObjectText)).append("\n");
-    sb.append("    servicedObjectSerialNr: ").append(toIndentedString(servicedObjectSerialNr)).append("\n");
-    sb.append("    servicedObjectTypeID: ").append(toIndentedString(servicedObjectTypeID)).append("\n");
-    sb.append("    guarantyRepair: ").append(toIndentedString(guarantyRepair)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    firmOfficeID: ").append(toIndentedString(firmOfficeID)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
-    sb.append("    payerFirmID: ").append(toIndentedString(payerFirmID)).append("\n");
-    sb.append("    payerFirmOfficeID: ").append(toIndentedString(payerFirmOfficeID)).append("\n");
-    sb.append("    payerPersonID: ").append(toIndentedString(payerPersonID)).append("\n");
-    sb.append("    outdoorPlaceDescription: ").append(toIndentedString(outdoorPlaceDescription)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    dateofchange: ").append(toIndentedString(dateofchange)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    servicetypeId: ").append(toIndentedString(servicetypeId)).append("\n");
+    sb.append("    objectkind: ").append(toIndentedString(objectkind)).append("\n");
+    sb.append("    servicedobjectonstore: ").append(toIndentedString(servicedobjectonstore)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    storebatchId: ").append(toIndentedString(storebatchId)).append("\n");
+    sb.append("    servicedobjectId: ").append(toIndentedString(servicedobjectId)).append("\n");
+    sb.append("    servicedobjectidcode: ").append(toIndentedString(servicedobjectidcode)).append("\n");
+    sb.append("    servicedobjecttext: ").append(toIndentedString(servicedobjecttext)).append("\n");
+    sb.append("    servicedobjectserialnr: ").append(toIndentedString(servicedobjectserialnr)).append("\n");
+    sb.append("    servicedobjecttypeId: ").append(toIndentedString(servicedobjecttypeId)).append("\n");
+    sb.append("    guarantyrepair: ").append(toIndentedString(guarantyrepair)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    firmofficeId: ").append(toIndentedString(firmofficeId)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
+    sb.append("    payerfirmId: ").append(toIndentedString(payerfirmId)).append("\n");
+    sb.append("    payerfirmofficeId: ").append(toIndentedString(payerfirmofficeId)).append("\n");
+    sb.append("    payerpersonId: ").append(toIndentedString(payerpersonId)).append("\n");
+    sb.append("    outdoorplacedescription: ").append(toIndentedString(outdoorplacedescription)).append("\n");
     sb.append("    equipment: ").append(toIndentedString(equipment)).append("\n");
-    sb.append("    damageDescription: ").append(toIndentedString(damageDescription)).append("\n");
-    sb.append("    paymentType: ").append(toIndentedString(paymentType)).append("\n");
-    sb.append("    insuaranceFirmID: ").append(toIndentedString(insuaranceFirmID)).append("\n");
-    sb.append("    acceptedByUserID: ").append(toIndentedString(acceptedByUserID)).append("\n");
-    sb.append("    promisedDeadLineDATE: ").append(toIndentedString(promisedDeadLineDATE)).append("\n");
-    sb.append("    estimatedPrice: ").append(toIndentedString(estimatedPrice)).append("\n");
-    sb.append("    informClientKind: ").append(toIndentedString(informClientKind)).append("\n");
-    sb.append("    serviceDocStateID: ").append(toIndentedString(serviceDocStateID)).append("\n");
-    sb.append("    serviceSolutionKindID: ").append(toIndentedString(serviceSolutionKindID)).append("\n");
-    sb.append("    returnedByUserID: ").append(toIndentedString(returnedByUserID)).append("\n");
-    sb.append("    returnedAtDateDATE: ").append(toIndentedString(returnedAtDateDATE)).append("\n");
-    sb.append("    totalMaterial: ").append(toIndentedString(totalMaterial)).append("\n");
-    sb.append("    totalWork: ").append(toIndentedString(totalWork)).append("\n");
-    sb.append("    tinyMaterial: ").append(toIndentedString(tinyMaterial)).append("\n");
-    sb.append("    totalOther: ").append(toIndentedString(totalOther)).append("\n");
-    sb.append("    totalAmount: ").append(toIndentedString(totalAmount)).append("\n");
-    sb.append("    invoicedAmount: ").append(toIndentedString(invoicedAmount)).append("\n");
+    sb.append("    damagedescription: ").append(toIndentedString(damagedescription)).append("\n");
+    sb.append("    paymenttype: ").append(toIndentedString(paymenttype)).append("\n");
+    sb.append("    insuarancefirmId: ").append(toIndentedString(insuarancefirmId)).append("\n");
+    sb.append("    acceptedbyuserId: ").append(toIndentedString(acceptedbyuserId)).append("\n");
+    sb.append("    promiseddeadlinedate: ").append(toIndentedString(promiseddeadlinedate)).append("\n");
+    sb.append("    estimatedprice: ").append(toIndentedString(estimatedprice)).append("\n");
+    sb.append("    informclientkind: ").append(toIndentedString(informclientkind)).append("\n");
+    sb.append("    servicedocstateId: ").append(toIndentedString(servicedocstateId)).append("\n");
+    sb.append("    servicesolutionkindId: ").append(toIndentedString(servicesolutionkindId)).append("\n");
+    sb.append("    returnedbyuserId: ").append(toIndentedString(returnedbyuserId)).append("\n");
+    sb.append("    returnedatdatedate: ").append(toIndentedString(returnedatdatedate)).append("\n");
+    sb.append("    totalmaterial: ").append(toIndentedString(totalmaterial)).append("\n");
+    sb.append("    totalwork: ").append(toIndentedString(totalwork)).append("\n");
+    sb.append("    tinymaterial: ").append(toIndentedString(tinymaterial)).append("\n");
+    sb.append("    totalother: ").append(toIndentedString(totalother)).append("\n");
+    sb.append("    totalamount: ").append(toIndentedString(totalamount)).append("\n");
+    sb.append("    invoicedamount: ").append(toIndentedString(invoicedamount)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    addressID: ").append(toIndentedString(addressID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    lastClosingDocStateID: ").append(toIndentedString(lastClosingDocStateID)).append("\n");
-    sb.append("    storeReceiptDocType: ").append(toIndentedString(storeReceiptDocType)).append("\n");
-    sb.append("    saleBillOfDeliveryID: ").append(toIndentedString(saleBillOfDeliveryID)).append("\n");
-    sb.append("    mainSourceStoreID: ").append(toIndentedString(mainSourceStoreID)).append("\n");
-    sb.append("    changedStoreCardID: ").append(toIndentedString(changedStoreCardID)).append("\n");
-    sb.append("    changedStoreBatchID: ").append(toIndentedString(changedStoreBatchID)).append("\n");
+    sb.append("    addressId: ").append(toIndentedString(addressId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    lastclosingdocstateId: ").append(toIndentedString(lastclosingdocstateId)).append("\n");
+    sb.append("    storereceiptdoctype: ").append(toIndentedString(storereceiptdoctype)).append("\n");
+    sb.append("    salebillofdeliveryId: ").append(toIndentedString(salebillofdeliveryId)).append("\n");
+    sb.append("    mainsourcestoreId: ").append(toIndentedString(mainsourcestoreId)).append("\n");
+    sb.append("    changedstorecardId: ").append(toIndentedString(changedstorecardId)).append("\n");
+    sb.append("    changedstorebatchId: ").append(toIndentedString(changedstorebatchId)).append("\n");
     sb.append("    defects: ").append(toIndentedString(defects)).append("\n");
     sb.append("    operations: ").append(toIndentedString(operations)).append("\n");
     sb.append("    docs: ").append(toIndentedString(docs)).append("\n");
     sb.append("    pictures: ").append(toIndentedString(pictures)).append("\n");
-    sb.append("    subjectCode: ").append(toIndentedString(subjectCode)).append("\n");
-    sb.append("    subjectName: ").append(toIndentedString(subjectName)).append("\n");
-    sb.append("    subjectSerial: ").append(toIndentedString(subjectSerial)).append("\n");
-    sb.append("    totalWorkOperationTime: ").append(toIndentedString(totalWorkOperationTime)).append("\n");
-    sb.append("    guaranteeEndDate: ").append(toIndentedString(guaranteeEndDate)).append("\n");
-    sb.append("    defectsAsText: ").append(toIndentedString(defectsAsText)).append("\n");
-    sb.append("    firstServiceAssemblyFormID: ").append(toIndentedString(firstServiceAssemblyFormID)).append("\n");
+    sb.append("    subjectcode: ").append(toIndentedString(subjectcode)).append("\n");
+    sb.append("    subjectname: ").append(toIndentedString(subjectname)).append("\n");
+    sb.append("    subjectserial: ").append(toIndentedString(subjectserial)).append("\n");
+    sb.append("    totalworkoperationtime: ").append(toIndentedString(totalworkoperationtime)).append("\n");
+    sb.append("    guaranteeenddate: ").append(toIndentedString(guaranteeenddate)).append("\n");
+    sb.append("    defectsastext: ").append(toIndentedString(defectsastext)).append("\n");
+    sb.append("    firstserviceassemblyformId: ").append(toIndentedString(firstserviceassemblyformId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

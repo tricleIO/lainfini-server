@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,66 +34,102 @@ import java.util.Objects;
 /**
  * Plmroutinetype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmroutinetype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("DefaultType")
-  private Boolean defaultType = null;
+  @SerializedName("defaulttype")
+  private Boolean defaulttype = null;
 
-  @SerializedName("ManuallyEnteredRtn")
-  private Boolean manuallyEnteredRtn = null;
+  @SerializedName("manuallyenteredrtn")
+  private Boolean manuallyenteredrtn = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Plmroutinetype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Plmroutinetype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmroutinetype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmroutinetype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Plmroutinetype code(String code) {
@@ -102,10 +138,10 @@ public class Plmroutinetype   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -120,10 +156,10 @@ public class Plmroutinetype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -132,40 +168,40 @@ public class Plmroutinetype   {
     this.name = name;
   }
 
-  public Plmroutinetype defaultType(Boolean defaultType) {
-    this.defaultType = defaultType;
+  public Plmroutinetype defaulttype(Boolean defaulttype) {
+    this.defaulttype = defaulttype;
     return this;
   }
 
    /**
-   * Výchozí [persistentní položka]
-   * @return defaultType
+   * výchozí [persistentní položka]
+   * @return defaulttype
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí [persistentní položka]")
-  public Boolean getDefaultType() {
-    return defaultType;
+  @ApiModelProperty(example = "null", value = "výchozí [persistentní položka]")
+  public Boolean getDefaulttype() {
+    return defaulttype;
   }
 
-  public void setDefaultType(Boolean defaultType) {
-    this.defaultType = defaultType;
+  public void setDefaulttype(Boolean defaulttype) {
+    this.defaulttype = defaulttype;
   }
 
-  public Plmroutinetype manuallyEnteredRtn(Boolean manuallyEnteredRtn) {
-    this.manuallyEnteredRtn = manuallyEnteredRtn;
+  public Plmroutinetype manuallyenteredrtn(Boolean manuallyenteredrtn) {
+    this.manuallyenteredrtn = manuallyenteredrtn;
     return this;
   }
 
    /**
-   * Ručně zadaný [persistentní položka]
-   * @return manuallyEnteredRtn
+   * ručně zadaný [persistentní položka]
+   * @return manuallyenteredrtn
   **/
-  @ApiModelProperty(example = "null", value = "Ručně zadaný [persistentní položka]")
-  public Boolean getManuallyEnteredRtn() {
-    return manuallyEnteredRtn;
+  @ApiModelProperty(example = "null", value = "ručně zadaný [persistentní položka]")
+  public Boolean getManuallyenteredrtn() {
+    return manuallyenteredrtn;
   }
 
-  public void setManuallyEnteredRtn(Boolean manuallyEnteredRtn) {
-    this.manuallyEnteredRtn = manuallyEnteredRtn;
+  public void setManuallyenteredrtn(Boolean manuallyenteredrtn) {
+    this.manuallyenteredrtn = manuallyenteredrtn;
   }
 
 
@@ -178,19 +214,19 @@ public class Plmroutinetype   {
       return false;
     }
     Plmroutinetype plmroutinetype = (Plmroutinetype) o;
-    return Objects.equals(this.displayName, plmroutinetype.displayName) &&
-        Objects.equals(this.ID, plmroutinetype.ID) &&
-        Objects.equals(this.classID, plmroutinetype.classID) &&
-        Objects.equals(this.objVersion, plmroutinetype.objVersion) &&
+    return Objects.equals(this.displayname, plmroutinetype.displayname) &&
+        Objects.equals(this.id, plmroutinetype.id) &&
+        Objects.equals(this.classid, plmroutinetype.classid) &&
+        Objects.equals(this.objversion, plmroutinetype.objversion) &&
         Objects.equals(this.code, plmroutinetype.code) &&
         Objects.equals(this.name, plmroutinetype.name) &&
-        Objects.equals(this.defaultType, plmroutinetype.defaultType) &&
-        Objects.equals(this.manuallyEnteredRtn, plmroutinetype.manuallyEnteredRtn);
+        Objects.equals(this.defaulttype, plmroutinetype.defaulttype) &&
+        Objects.equals(this.manuallyenteredrtn, plmroutinetype.manuallyenteredrtn);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, code, name, defaultType, manuallyEnteredRtn);
+    return Objects.hash(displayname, id, classid, objversion, code, name, defaulttype, manuallyenteredrtn);
   }
 
   @Override
@@ -198,14 +234,14 @@ public class Plmroutinetype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmroutinetype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    defaultType: ").append(toIndentedString(defaultType)).append("\n");
-    sb.append("    manuallyEnteredRtn: ").append(toIndentedString(manuallyEnteredRtn)).append("\n");
+    sb.append("    defaulttype: ").append(toIndentedString(defaulttype)).append("\n");
+    sb.append("    manuallyenteredrtn: ").append(toIndentedString(manuallyenteredrtn)).append("\n");
     sb.append("}");
     return sb.toString();
   }

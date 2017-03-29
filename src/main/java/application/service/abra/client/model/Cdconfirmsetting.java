@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,99 +35,135 @@ import java.util.Objects;
 /**
  * Cdconfirmsetting
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Cdconfirmsetting   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DateFrom$DATE")
-  private DateTime dateFromDATE = null;
+  @SerializedName("datefrom$date")
+  private DateTime datefromdate = null;
 
-  @SerializedName("DateTo$DATE")
-  private DateTime dateToDATE = null;
+  @SerializedName("dateto$date")
+  private DateTime datetodate = null;
 
-  @SerializedName("Status")
+  @SerializedName("status")
   private Integer status = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Cdconfirmsetting dateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public Cdconfirmsetting displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum platnosti od [persistentní položka]
-   * @return dateFromDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum platnosti od [persistentní položka]")
-  public DateTime getDateFromDATE() {
-    return dateFromDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Cdconfirmsetting dateToDATE(DateTime dateToDATE) {
-    this.dateToDATE = dateToDATE;
+  public Cdconfirmsetting id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Datum platnosti do [persistentní položka]
-   * @return dateToDATE
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Datum platnosti do [persistentní položka]")
-  public DateTime getDateToDATE() {
-    return dateToDATE;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDateToDATE(DateTime dateToDATE) {
-    this.dateToDATE = dateToDATE;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Cdconfirmsetting classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Cdconfirmsetting objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Cdconfirmsetting datefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
+    return this;
+  }
+
+   /**
+   * datum platnosti od [persistentní položka]
+   * @return datefromdate
+  **/
+  @ApiModelProperty(example = "null", value = "datum platnosti od [persistentní položka]")
+  public DateTime getDatefromdate() {
+    return datefromdate;
+  }
+
+  public void setDatefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
+  }
+
+  public Cdconfirmsetting datetodate(DateTime datetodate) {
+    this.datetodate = datetodate;
+    return this;
+  }
+
+   /**
+   * datum platnosti do [persistentní položka]
+   * @return datetodate
+  **/
+  @ApiModelProperty(example = "null", value = "datum platnosti do [persistentní položka]")
+  public DateTime getDatetodate() {
+    return datetodate;
+  }
+
+  public void setDatetodate(DateTime datetodate) {
+    this.datetodate = datetodate;
   }
 
   public Cdconfirmsetting status(Integer status) {
@@ -136,10 +172,10 @@ public class Cdconfirmsetting   {
   }
 
    /**
-   * Stav [persistentní položka]
+   * stav [persistentní položka]
    * @return status
   **/
-  @ApiModelProperty(example = "null", value = "Stav [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "stav [persistentní položka]")
   public Integer getStatus() {
     return status;
   }
@@ -158,18 +194,18 @@ public class Cdconfirmsetting   {
       return false;
     }
     Cdconfirmsetting cdconfirmsetting = (Cdconfirmsetting) o;
-    return Objects.equals(this.displayName, cdconfirmsetting.displayName) &&
-        Objects.equals(this.ID, cdconfirmsetting.ID) &&
-        Objects.equals(this.classID, cdconfirmsetting.classID) &&
-        Objects.equals(this.objVersion, cdconfirmsetting.objVersion) &&
-        Objects.equals(this.dateFromDATE, cdconfirmsetting.dateFromDATE) &&
-        Objects.equals(this.dateToDATE, cdconfirmsetting.dateToDATE) &&
+    return Objects.equals(this.displayname, cdconfirmsetting.displayname) &&
+        Objects.equals(this.id, cdconfirmsetting.id) &&
+        Objects.equals(this.classid, cdconfirmsetting.classid) &&
+        Objects.equals(this.objversion, cdconfirmsetting.objversion) &&
+        Objects.equals(this.datefromdate, cdconfirmsetting.datefromdate) &&
+        Objects.equals(this.datetodate, cdconfirmsetting.datetodate) &&
         Objects.equals(this.status, cdconfirmsetting.status);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, dateFromDATE, dateToDATE, status);
+    return Objects.hash(displayname, id, classid, objversion, datefromdate, datetodate, status);
   }
 
   @Override
@@ -177,12 +213,12 @@ public class Cdconfirmsetting   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Cdconfirmsetting {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    dateFromDATE: ").append(toIndentedString(dateFromDATE)).append("\n");
-    sb.append("    dateToDATE: ").append(toIndentedString(dateToDATE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    datefromdate: ").append(toIndentedString(datefromdate)).append("\n");
+    sb.append("    datetodate: ").append(toIndentedString(datetodate)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("}");
     return sb.toString();

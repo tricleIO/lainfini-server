@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,159 +34,195 @@ import java.util.Objects;
 /**
  * Wageclosingbookaccounting
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wageclosingbookaccounting   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("ClosingDefinition_ID")
-  private String closingDefinitionID = null;
+  @SerializedName("closingdefinition_id")
+  private String closingdefinitionId = null;
 
-  @SerializedName("AccPresetDef_ID")
-  private String accPresetDefID = null;
+  @SerializedName("accpresetdef_id")
+  private String accpresetdefId = null;
 
-  @SerializedName("WageList_ID")
-  private String wageListID = null;
+  @SerializedName("wagelist_id")
+  private String wagelistId = null;
 
-  @SerializedName("WageOperation_ID")
-  private String wageOperationID = null;
+  @SerializedName("wageoperation_id")
+  private String wageoperationId = null;
 
-  @SerializedName("Dock_ID")
-  private String dockID = null;
+  @SerializedName("dock_id")
+  private String dockId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Wageclosingbookaccounting closingDefinitionID(String closingDefinitionID) {
-    this.closingDefinitionID = closingDefinitionID;
+  public Wageclosingbookaccounting displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Definice zaúčtování; ID objektu Definice výpočtu uzávěrky [persistentní položka]
-   * @return closingDefinitionID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Definice zaúčtování; ID objektu Definice výpočtu uzávěrky [persistentní položka]")
-  public String getClosingDefinitionID() {
-    return closingDefinitionID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setClosingDefinitionID(String closingDefinitionID) {
-    this.closingDefinitionID = closingDefinitionID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Wageclosingbookaccounting accPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public Wageclosingbookaccounting id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Předkontace; ID objektu Účetní předkontace [persistentní položka]
-   * @return accPresetDefID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Předkontace; ID objektu Účetní předkontace [persistentní položka]")
-  public String getAccPresetDefID() {
-    return accPresetDefID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setAccPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Wageclosingbookaccounting wageListID(String wageListID) {
-    this.wageListID = wageListID;
+  public Wageclosingbookaccounting classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Mzdový list; ID objektu Mzdový list dílčí [persistentní položka]
-   * @return wageListID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Mzdový list; ID objektu Mzdový list dílčí [persistentní položka]")
-  public String getWageListID() {
-    return wageListID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setWageListID(String wageListID) {
-    this.wageListID = wageListID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Wageclosingbookaccounting wageOperationID(String wageOperationID) {
-    this.wageOperationID = wageOperationID;
+  public Wageclosingbookaccounting objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Druh výkonu; ID objektu Výkon [persistentní položka]
-   * @return wageOperationID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Druh výkonu; ID objektu Výkon [persistentní položka]")
-  public String getWageOperationID() {
-    return wageOperationID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setWageOperationID(String wageOperationID) {
-    this.wageOperationID = wageOperationID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Wageclosingbookaccounting dockID(String dockID) {
-    this.dockID = dockID;
+  public Wageclosingbookaccounting closingdefinitionId(String closingdefinitionId) {
+    this.closingdefinitionId = closingdefinitionId;
     return this;
   }
 
    /**
-   * Srážka; ID objektu Srážka [persistentní položka]
-   * @return dockID
+   * definice zaúčtování; id objektu definice výpočtu uzávěrky [persistentní položka]
+   * @return closingdefinitionId
   **/
-  @ApiModelProperty(example = "null", value = "Srážka; ID objektu Srážka [persistentní položka]")
-  public String getDockID() {
-    return dockID;
+  @ApiModelProperty(example = "null", value = "definice zaúčtování; id objektu definice výpočtu uzávěrky [persistentní položka]")
+  public String getClosingdefinitionId() {
+    return closingdefinitionId;
   }
 
-  public void setDockID(String dockID) {
-    this.dockID = dockID;
+  public void setClosingdefinitionId(String closingdefinitionId) {
+    this.closingdefinitionId = closingdefinitionId;
+  }
+
+  public Wageclosingbookaccounting accpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
+    return this;
+  }
+
+   /**
+   * předkontace; id objektu Účetní předkontace [persistentní položka]
+   * @return accpresetdefId
+  **/
+  @ApiModelProperty(example = "null", value = "předkontace; id objektu Účetní předkontace [persistentní položka]")
+  public String getAccpresetdefId() {
+    return accpresetdefId;
+  }
+
+  public void setAccpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
+  }
+
+  public Wageclosingbookaccounting wagelistId(String wagelistId) {
+    this.wagelistId = wagelistId;
+    return this;
+  }
+
+   /**
+   * mzdový list; id objektu mzdový list dílčí [persistentní položka]
+   * @return wagelistId
+  **/
+  @ApiModelProperty(example = "null", value = "mzdový list; id objektu mzdový list dílčí [persistentní položka]")
+  public String getWagelistId() {
+    return wagelistId;
+  }
+
+  public void setWagelistId(String wagelistId) {
+    this.wagelistId = wagelistId;
+  }
+
+  public Wageclosingbookaccounting wageoperationId(String wageoperationId) {
+    this.wageoperationId = wageoperationId;
+    return this;
+  }
+
+   /**
+   * druh výkonu; id objektu výkon [persistentní položka]
+   * @return wageoperationId
+  **/
+  @ApiModelProperty(example = "null", value = "druh výkonu; id objektu výkon [persistentní položka]")
+  public String getWageoperationId() {
+    return wageoperationId;
+  }
+
+  public void setWageoperationId(String wageoperationId) {
+    this.wageoperationId = wageoperationId;
+  }
+
+  public Wageclosingbookaccounting dockId(String dockId) {
+    this.dockId = dockId;
+    return this;
+  }
+
+   /**
+   * srážka; id objektu srážka [persistentní položka]
+   * @return dockId
+  **/
+  @ApiModelProperty(example = "null", value = "srážka; id objektu srážka [persistentní položka]")
+  public String getDockId() {
+    return dockId;
+  }
+
+  public void setDockId(String dockId) {
+    this.dockId = dockId;
   }
 
 
@@ -199,20 +235,20 @@ public class Wageclosingbookaccounting   {
       return false;
     }
     Wageclosingbookaccounting wageclosingbookaccounting = (Wageclosingbookaccounting) o;
-    return Objects.equals(this.displayName, wageclosingbookaccounting.displayName) &&
-        Objects.equals(this.ID, wageclosingbookaccounting.ID) &&
-        Objects.equals(this.classID, wageclosingbookaccounting.classID) &&
-        Objects.equals(this.objVersion, wageclosingbookaccounting.objVersion) &&
-        Objects.equals(this.closingDefinitionID, wageclosingbookaccounting.closingDefinitionID) &&
-        Objects.equals(this.accPresetDefID, wageclosingbookaccounting.accPresetDefID) &&
-        Objects.equals(this.wageListID, wageclosingbookaccounting.wageListID) &&
-        Objects.equals(this.wageOperationID, wageclosingbookaccounting.wageOperationID) &&
-        Objects.equals(this.dockID, wageclosingbookaccounting.dockID);
+    return Objects.equals(this.displayname, wageclosingbookaccounting.displayname) &&
+        Objects.equals(this.id, wageclosingbookaccounting.id) &&
+        Objects.equals(this.classid, wageclosingbookaccounting.classid) &&
+        Objects.equals(this.objversion, wageclosingbookaccounting.objversion) &&
+        Objects.equals(this.closingdefinitionId, wageclosingbookaccounting.closingdefinitionId) &&
+        Objects.equals(this.accpresetdefId, wageclosingbookaccounting.accpresetdefId) &&
+        Objects.equals(this.wagelistId, wageclosingbookaccounting.wagelistId) &&
+        Objects.equals(this.wageoperationId, wageclosingbookaccounting.wageoperationId) &&
+        Objects.equals(this.dockId, wageclosingbookaccounting.dockId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, closingDefinitionID, accPresetDefID, wageListID, wageOperationID, dockID);
+    return Objects.hash(displayname, id, classid, objversion, closingdefinitionId, accpresetdefId, wagelistId, wageoperationId, dockId);
   }
 
   @Override
@@ -220,15 +256,15 @@ public class Wageclosingbookaccounting   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wageclosingbookaccounting {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    closingDefinitionID: ").append(toIndentedString(closingDefinitionID)).append("\n");
-    sb.append("    accPresetDefID: ").append(toIndentedString(accPresetDefID)).append("\n");
-    sb.append("    wageListID: ").append(toIndentedString(wageListID)).append("\n");
-    sb.append("    wageOperationID: ").append(toIndentedString(wageOperationID)).append("\n");
-    sb.append("    dockID: ").append(toIndentedString(dockID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    closingdefinitionId: ").append(toIndentedString(closingdefinitionId)).append("\n");
+    sb.append("    accpresetdefId: ").append(toIndentedString(accpresetdefId)).append("\n");
+    sb.append("    wagelistId: ").append(toIndentedString(wagelistId)).append("\n");
+    sb.append("    wageoperationId: ").append(toIndentedString(wageoperationId)).append("\n");
+    sb.append("    dockId: ").append(toIndentedString(dockId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

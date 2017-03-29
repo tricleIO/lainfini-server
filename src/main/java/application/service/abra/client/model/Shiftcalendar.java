@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,75 +37,111 @@ import java.util.Objects;
 /**
  * Shiftcalendar
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Shiftcalendar   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Shiftcalendarrow> rows = new ArrayList<Shiftcalendarrow>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Shifts")
+  @SerializedName("shifts")
   private List<Shiftcalendarshift> shifts = new ArrayList<Shiftcalendarshift>();
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Duty")
+  @SerializedName("duty")
   private Double duty = null;
 
-  @SerializedName("Begining$DATE")
-  private DateTime beginingDATE = null;
+  @SerializedName("begining$date")
+  private DateTime beginingdate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Shiftcalendar displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Shiftcalendar id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Shiftcalendar classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Shiftcalendar objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Shiftcalendar rows(List<Shiftcalendarrow> rows) {
@@ -119,10 +155,10 @@ public class Shiftcalendar   {
   }
 
    /**
-   * Kalendář; kolekce BO Plánovaná směna [nepersistentní položka]
+   * kalendář; kolekce bo plánovaná směna [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Kalendář; kolekce BO Plánovaná směna [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "kalendář; kolekce bo plánovaná směna [nepersistentní položka]")
   public List<Shiftcalendarrow> getRows() {
     return rows;
   }
@@ -137,10 +173,10 @@ public class Shiftcalendar   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -160,10 +196,10 @@ public class Shiftcalendar   {
   }
 
    /**
-   * Směny; kolekce BO Pořadí směny [nepersistentní položka]
+   * směny; kolekce bo pořadí směny [nepersistentní položka]
    * @return shifts
   **/
-  @ApiModelProperty(example = "null", value = "Směny; kolekce BO Pořadí směny [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "směny; kolekce bo pořadí směny [nepersistentní položka]")
   public List<Shiftcalendarshift> getShifts() {
     return shifts;
   }
@@ -178,10 +214,10 @@ public class Shiftcalendar   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -196,10 +232,10 @@ public class Shiftcalendar   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -226,22 +262,22 @@ public class Shiftcalendar   {
     this.duty = duty;
   }
 
-  public Shiftcalendar beginingDATE(DateTime beginingDATE) {
-    this.beginingDATE = beginingDATE;
+  public Shiftcalendar beginingdate(DateTime beginingdate) {
+    this.beginingdate = beginingdate;
     return this;
   }
 
    /**
-   * První den [persistentní položka]
-   * @return beginingDATE
+   * první den [persistentní položka]
+   * @return beginingdate
   **/
-  @ApiModelProperty(example = "null", value = "První den [persistentní položka]")
-  public DateTime getBeginingDATE() {
-    return beginingDATE;
+  @ApiModelProperty(example = "null", value = "první den [persistentní položka]")
+  public DateTime getBeginingdate() {
+    return beginingdate;
   }
 
-  public void setBeginingDATE(DateTime beginingDATE) {
-    this.beginingDATE = beginingDATE;
+  public void setBeginingdate(DateTime beginingdate) {
+    this.beginingdate = beginingdate;
   }
 
 
@@ -254,22 +290,22 @@ public class Shiftcalendar   {
       return false;
     }
     Shiftcalendar shiftcalendar = (Shiftcalendar) o;
-    return Objects.equals(this.displayName, shiftcalendar.displayName) &&
-        Objects.equals(this.ID, shiftcalendar.ID) &&
-        Objects.equals(this.classID, shiftcalendar.classID) &&
-        Objects.equals(this.objVersion, shiftcalendar.objVersion) &&
+    return Objects.equals(this.displayname, shiftcalendar.displayname) &&
+        Objects.equals(this.id, shiftcalendar.id) &&
+        Objects.equals(this.classid, shiftcalendar.classid) &&
+        Objects.equals(this.objversion, shiftcalendar.objversion) &&
         Objects.equals(this.rows, shiftcalendar.rows) &&
         Objects.equals(this.hidden, shiftcalendar.hidden) &&
         Objects.equals(this.shifts, shiftcalendar.shifts) &&
         Objects.equals(this.code, shiftcalendar.code) &&
         Objects.equals(this.name, shiftcalendar.name) &&
         Objects.equals(this.duty, shiftcalendar.duty) &&
-        Objects.equals(this.beginingDATE, shiftcalendar.beginingDATE);
+        Objects.equals(this.beginingdate, shiftcalendar.beginingdate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, shifts, code, name, duty, beginingDATE);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, shifts, code, name, duty, beginingdate);
   }
 
   @Override
@@ -277,17 +313,17 @@ public class Shiftcalendar   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Shiftcalendar {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    shifts: ").append(toIndentedString(shifts)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    duty: ").append(toIndentedString(duty)).append("\n");
-    sb.append("    beginingDATE: ").append(toIndentedString(beginingDATE)).append("\n");
+    sb.append("    beginingdate: ").append(toIndentedString(beginingdate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

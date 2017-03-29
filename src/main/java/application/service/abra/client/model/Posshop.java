@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,552 +36,588 @@ import java.util.Objects;
 /**
  * Posshop
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posshop   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Posshoprow> rows = new ArrayList<Posshoprow>();
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Site")
+  @SerializedName("site")
   private String site = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("ShopAddress_ID")
-  private Posshop shopAddressID = null;
+  @SerializedName("shopaddress_id")
+  private Posshop shopaddressId = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("StoreDocQueue_ID")
-  private String storeDocQueueID = null;
+  @SerializedName("storedocqueue_id")
+  private String storedocqueueId = null;
 
-  @SerializedName("RefundedStoreDocQueue_ID")
-  private String refundedStoreDocQueueID = null;
+  @SerializedName("refundedstoredocqueue_id")
+  private String refundedstoredocqueueId = null;
 
-  @SerializedName("IncomeStoreDocQueue_ID")
-  private String incomeStoreDocQueueID = null;
+  @SerializedName("incomestoredocqueue_id")
+  private String incomestoredocqueueId = null;
 
-  @SerializedName("PaymentType_ID")
-  private String paymentTypeID = null;
+  @SerializedName("paymenttype_id")
+  private String paymenttypeId = null;
 
-  @SerializedName("ContainerPaymentType_ID")
-  private String containerPaymentTypeID = null;
+  @SerializedName("containerpaymenttype_id")
+  private String containerpaymenttypeId = null;
 
-  @SerializedName("DealerCategoryCaption")
-  private String dealerCategoryCaption = null;
+  @SerializedName("dealercategorycaption")
+  private String dealercategorycaption = null;
 
-  @SerializedName("Description2Caption")
-  private String description2Caption = null;
+  @SerializedName("description2caption")
+  private String description2caption = null;
 
-  @SerializedName("BillHeader1")
-  private String billHeader1 = null;
+  @SerializedName("billheader1")
+  private String billheader1 = null;
 
-  @SerializedName("BillHeader2")
-  private String billHeader2 = null;
+  @SerializedName("billheader2")
+  private String billheader2 = null;
 
-  @SerializedName("BillHeader3")
-  private String billHeader3 = null;
+  @SerializedName("billheader3")
+  private String billheader3 = null;
 
-  @SerializedName("BillHeader1Wide")
-  private Boolean billHeader1Wide = null;
+  @SerializedName("billheader1wide")
+  private Boolean billheader1wide = null;
 
-  @SerializedName("BillHeader2Wide")
-  private Boolean billHeader2Wide = null;
+  @SerializedName("billheader2wide")
+  private Boolean billheader2wide = null;
 
-  @SerializedName("BillHeader3Wide")
-  private Boolean billHeader3Wide = null;
+  @SerializedName("billheader3wide")
+  private Boolean billheader3wide = null;
 
-  @SerializedName("BillFooter1")
-  private String billFooter1 = null;
+  @SerializedName("billfooter1")
+  private String billfooter1 = null;
 
-  @SerializedName("BillFooter2")
-  private String billFooter2 = null;
+  @SerializedName("billfooter2")
+  private String billfooter2 = null;
 
-  @SerializedName("BillFooter3")
-  private String billFooter3 = null;
+  @SerializedName("billfooter3")
+  private String billfooter3 = null;
 
-  @SerializedName("BillFooter1Wide")
-  private Boolean billFooter1Wide = null;
+  @SerializedName("billfooter1wide")
+  private Boolean billfooter1wide = null;
 
-  @SerializedName("BillFooter2Wide")
-  private Boolean billFooter2Wide = null;
+  @SerializedName("billfooter2wide")
+  private Boolean billfooter2wide = null;
 
-  @SerializedName("BillFooter3Wide")
-  private Boolean billFooter3Wide = null;
+  @SerializedName("billfooter3wide")
+  private Boolean billfooter3wide = null;
 
-  @SerializedName("PrintStoreCardCode")
-  private Boolean printStoreCardCode = null;
+  @SerializedName("printstorecardcode")
+  private Boolean printstorecardcode = null;
 
-  @SerializedName("PrintPLU")
-  private Boolean printPLU = null;
+  @SerializedName("printplu")
+  private Boolean printplu = null;
 
-  @SerializedName("PrintFirmName")
-  private Boolean printFirmName = null;
+  @SerializedName("printfirmname")
+  private Boolean printfirmname = null;
 
-  @SerializedName("PrintShopName")
-  private Boolean printShopName = null;
+  @SerializedName("printshopname")
+  private Boolean printshopname = null;
 
-  @SerializedName("PrintAdress")
-  private Boolean printAdress = null;
+  @SerializedName("printadress")
+  private Boolean printadress = null;
 
-  @SerializedName("PrintShopAddress")
-  private Boolean printShopAddress = null;
+  @SerializedName("printshopaddress")
+  private Boolean printshopaddress = null;
 
-  @SerializedName("PrintUserName")
-  private Boolean printUserName = null;
+  @SerializedName("printusername")
+  private Boolean printusername = null;
 
-  @SerializedName("PrintPhone")
-  private Boolean printPhone = null;
+  @SerializedName("printphone")
+  private Boolean printphone = null;
 
-  @SerializedName("PrintShopPhone")
-  private Boolean printShopPhone = null;
+  @SerializedName("printshopphone")
+  private Boolean printshopphone = null;
 
-  @SerializedName("PrintFax")
-  private Boolean printFax = null;
+  @SerializedName("printfax")
+  private Boolean printfax = null;
 
-  @SerializedName("PrintShopFax")
-  private Boolean printShopFax = null;
+  @SerializedName("printshopfax")
+  private Boolean printshopfax = null;
 
-  @SerializedName("PrintEMail")
-  private Boolean printEMail = null;
+  @SerializedName("printemail")
+  private Boolean printemail = null;
 
-  @SerializedName("PrintShopEMail")
-  private Boolean printShopEMail = null;
+  @SerializedName("printshopemail")
+  private Boolean printshopemail = null;
 
-  @SerializedName("PrintWWW")
-  private Boolean printWWW = null;
+  @SerializedName("printwww")
+  private Boolean printwww = null;
 
-  @SerializedName("PrintDateTime")
-  private Boolean printDateTime = null;
+  @SerializedName("printdatetime")
+  private Boolean printdatetime = null;
 
-  @SerializedName("PrintPaymentResume")
-  private Boolean printPaymentResume = null;
+  @SerializedName("printpaymentresume")
+  private Boolean printpaymentresume = null;
 
-  @SerializedName("PrintVATResume")
-  private Boolean printVATResume = null;
+  @SerializedName("printvatresume")
+  private Boolean printvatresume = null;
 
-  @SerializedName("PrintIdentNumber")
-  private Boolean printIdentNumber = null;
+  @SerializedName("printidentnumber")
+  private Boolean printidentnumber = null;
 
-  @SerializedName("PrintBillBarCode")
-  private Boolean printBillBarCode = null;
+  @SerializedName("printbillbarcode")
+  private Boolean printbillbarcode = null;
 
-  @SerializedName("PrintDescription2")
-  private Boolean printDescription2 = null;
+  @SerializedName("printdescription2")
+  private Boolean printdescription2 = null;
 
-  @SerializedName("PrintCustomer")
-  private Boolean printCustomer = null;
+  @SerializedName("printcustomer")
+  private Boolean printcustomer = null;
 
-  @SerializedName("PrintDealerCategory")
-  private Boolean printDealerCategory = null;
+  @SerializedName("printdealercategory")
+  private Boolean printdealercategory = null;
 
-  @SerializedName("PrintSpecification1")
-  private Boolean printSpecification1 = null;
+  @SerializedName("printspecification1")
+  private Boolean printspecification1 = null;
 
-  @SerializedName("PrintSpecification2")
-  private Boolean printSpecification2 = null;
+  @SerializedName("printspecification2")
+  private Boolean printspecification2 = null;
 
-  @SerializedName("SplitByUnits")
-  private Boolean splitByUnits = null;
+  @SerializedName("splitbyunits")
+  private Boolean splitbyunits = null;
 
-  @SerializedName("LockZeroPurchasePrice")
-  private Boolean lockZeroPurchasePrice = null;
+  @SerializedName("lockzeropurchaseprice")
+  private Boolean lockzeropurchaseprice = null;
 
-  @SerializedName("PrintRegisterInfo")
-  private Boolean printRegisterInfo = null;
+  @SerializedName("printregisterinfo")
+  private Boolean printregisterinfo = null;
 
-  @SerializedName("PrintCurrencyCoef")
-  private Boolean printCurrencyCoef = null;
+  @SerializedName("printcurrencycoef")
+  private Boolean printcurrencycoef = null;
 
-  @SerializedName("UseLowBorderPLU")
-  private Boolean useLowBorderPLU = null;
+  @SerializedName("uselowborderplu")
+  private Boolean uselowborderplu = null;
 
-  @SerializedName("LowBorderPLU")
-  private Integer lowBorderPLU = null;
+  @SerializedName("lowborderplu")
+  private Integer lowborderplu = null;
 
-  @SerializedName("VATRounding")
-  private Integer vATRounding = null;
+  @SerializedName("vatrounding")
+  private Integer vatrounding = null;
 
-  @SerializedName("RowRounding")
-  private Integer rowRounding = null;
+  @SerializedName("rowrounding")
+  private Integer rowrounding = null;
 
-  @SerializedName("TotalRounding")
-  private Integer totalRounding = null;
+  @SerializedName("totalrounding")
+  private Integer totalrounding = null;
 
-  @SerializedName("PriceAndVAT")
-  private Integer priceAndVAT = null;
+  @SerializedName("priceandvat")
+  private Integer priceandvat = null;
 
-  @SerializedName("SummaryLevel")
-  private Integer summaryLevel = null;
+  @SerializedName("summarylevel")
+  private Integer summarylevel = null;
 
-  @SerializedName("CompletePrices")
-  private Boolean completePrices = null;
+  @SerializedName("completeprices")
+  private Boolean completeprices = null;
 
-  @SerializedName("ContainerCompletePrices")
-  private Boolean containerCompletePrices = null;
+  @SerializedName("containercompleteprices")
+  private Boolean containercompleteprices = null;
 
-  @SerializedName("UseFirmPriceDefinition")
-  private Boolean useFirmPriceDefinition = null;
+  @SerializedName("usefirmpricedefinition")
+  private Boolean usefirmpricedefinition = null;
 
-  @SerializedName("ContainerRefundPrice")
-  private Integer containerRefundPrice = null;
+  @SerializedName("containerrefundprice")
+  private Integer containerrefundprice = null;
 
-  @SerializedName("GastroDocQueue_ID")
-  private String gastroDocQueueID = null;
+  @SerializedName("gastrodocqueue_id")
+  private String gastrodocqueueId = null;
 
-  @SerializedName("SearchOrder")
-  private String searchOrder = null;
+  @SerializedName("searchorder")
+  private String searchorder = null;
 
-  @SerializedName("SearchMode")
-  private Integer searchMode = null;
+  @SerializedName("searchmode")
+  private Integer searchmode = null;
 
-  @SerializedName("UseUnitSelection")
-  private Integer useUnitSelection = null;
+  @SerializedName("useunitselection")
+  private Integer useunitselection = null;
 
-  @SerializedName("DealerDiscountKind")
-  private Integer dealerDiscountKind = null;
+  @SerializedName("dealerdiscountkind")
+  private Integer dealerdiscountkind = null;
 
-  @SerializedName("UseQuantityDiscount")
-  private Boolean useQuantityDiscount = null;
+  @SerializedName("usequantitydiscount")
+  private Boolean usequantitydiscount = null;
 
-  @SerializedName("DealerDiscountOnHandMadePrice")
-  private Boolean dealerDiscountOnHandMadePrice = null;
+  @SerializedName("dealerdiscountonhandmadeprice")
+  private Boolean dealerdiscountonhandmadeprice = null;
 
-  @SerializedName("RefundInForeignCurrency")
-  private Boolean refundInForeignCurrency = null;
+  @SerializedName("refundinforeigncurrency")
+  private Boolean refundinforeigncurrency = null;
 
-  @SerializedName("UseRefundStore")
-  private Boolean useRefundStore = null;
+  @SerializedName("userefundstore")
+  private Boolean userefundstore = null;
 
-  @SerializedName("RefundPayments")
-  private Boolean refundPayments = null;
+  @SerializedName("refundpayments")
+  private Boolean refundpayments = null;
 
-  @SerializedName("EntireMacroCard")
-  private Boolean entireMacroCard = null;
+  @SerializedName("entiremacrocard")
+  private Boolean entiremacrocard = null;
 
-  @SerializedName("UseBusOrder")
-  private Integer useBusOrder = null;
+  @SerializedName("usebusorder")
+  private Integer usebusorder = null;
 
-  @SerializedName("UseBusTransaction")
-  private Integer useBusTransaction = null;
+  @SerializedName("usebustransaction")
+  private Integer usebustransaction = null;
 
-  @SerializedName("UseBusProject")
-  private Integer useBusProject = null;
+  @SerializedName("usebusproject")
+  private Integer usebusproject = null;
 
-  @SerializedName("UseDescription")
-  private Integer useDescription = null;
+  @SerializedName("usedescription")
+  private Integer usedescription = null;
 
-  @SerializedName("UseDescription2")
-  private Integer useDescription2 = null;
+  @SerializedName("usedescription2")
+  private Integer usedescription2 = null;
 
-  @SerializedName("OnLineStore")
-  private Boolean onLineStore = null;
+  @SerializedName("onlinestore")
+  private Boolean onlinestore = null;
 
-  @SerializedName("UseSerialNumbers")
-  private Boolean useSerialNumbers = null;
+  @SerializedName("useserialnumbers")
+  private Boolean useserialnumbers = null;
 
-  @SerializedName("UseStoreBatches")
-  private Boolean useStoreBatches = null;
+  @SerializedName("usestorebatches")
+  private Boolean usestorebatches = null;
 
-  @SerializedName("UseMultipleBills")
-  private Boolean useMultipleBills = null;
+  @SerializedName("usemultiplebills")
+  private Boolean usemultiplebills = null;
 
-  @SerializedName("UseIdentificationLimit")
-  private Boolean useIdentificationLimit = null;
+  @SerializedName("useidentificationlimit")
+  private Boolean useidentificationlimit = null;
 
-  @SerializedName("IdentificationLimit")
-  private Double identificationLimit = null;
+  @SerializedName("identificationlimit")
+  private Double identificationlimit = null;
 
-  @SerializedName("ShowStock")
-  private Boolean showStock = null;
+  @SerializedName("showstock")
+  private Boolean showstock = null;
 
-  @SerializedName("ShowStockInPriceList")
-  private Boolean showStockInPriceList = null;
+  @SerializedName("showstockinpricelist")
+  private Boolean showstockinpricelist = null;
 
-  @SerializedName("OutOfStockDelivery")
-  private Integer outOfStockDelivery = null;
+  @SerializedName("outofstockdelivery")
+  private Integer outofstockdelivery = null;
 
-  @SerializedName("OutOfStockDeliveryG")
-  private Integer outOfStockDeliveryG = null;
+  @SerializedName("outofstockdeliveryg")
+  private Integer outofstockdeliveryg = null;
 
-  @SerializedName("CashBackPositive")
-  private Boolean cashBackPositive = null;
+  @SerializedName("cashbackpositive")
+  private Boolean cashbackpositive = null;
 
-  @SerializedName("UsePriceSelection")
-  private Integer usePriceSelection = null;
+  @SerializedName("usepriceselection")
+  private Integer usepriceselection = null;
 
-  @SerializedName("PaymentMode")
-  private Integer paymentMode = null;
+  @SerializedName("paymentmode")
+  private Integer paymentmode = null;
 
-  @SerializedName("CountOfDecimalPlaces")
-  private Integer countOfDecimalPlaces = null;
+  @SerializedName("countofdecimalplaces")
+  private Integer countofdecimalplaces = null;
 
-  @SerializedName("PricePrecision")
-  private Integer pricePrecision = null;
+  @SerializedName("priceprecision")
+  private Integer priceprecision = null;
 
-  @SerializedName("ReturnOnlyFullBill")
-  private Boolean returnOnlyFullBill = null;
+  @SerializedName("returnonlyfullbill")
+  private Boolean returnonlyfullbill = null;
 
-  @SerializedName("ReturnOnlyTodayBill")
-  private Boolean returnOnlyTodayBill = null;
+  @SerializedName("returnonlytodaybill")
+  private Boolean returnonlytodaybill = null;
 
-  @SerializedName("EnableConsignmentSale")
-  private Boolean enableConsignmentSale = null;
+  @SerializedName("enableconsignmentsale")
+  private Boolean enableconsignmentsale = null;
 
-  @SerializedName("GivePriorityToConsignmentStore")
-  private Boolean givePriorityToConsignmentStore = null;
+  @SerializedName("giveprioritytoconsignmentstore")
+  private Boolean giveprioritytoconsignmentstore = null;
 
-  @SerializedName("FirmSearchMode")
-  private Integer firmSearchMode = null;
+  @SerializedName("firmsearchmode")
+  private Integer firmsearchmode = null;
 
-  @SerializedName("StoreCardNameFullText")
-  private Boolean storeCardNameFullText = null;
+  @SerializedName("storecardnamefulltext")
+  private Boolean storecardnamefulltext = null;
 
-  @SerializedName("StoreCardCodeFullText")
-  private Boolean storeCardCodeFullText = null;
+  @SerializedName("storecardcodefulltext")
+  private Boolean storecardcodefulltext = null;
 
-  @SerializedName("StoreCardSpecificationFullText")
-  private Boolean storeCardSpecificationFullText = null;
+  @SerializedName("storecardspecificationfulltext")
+  private Boolean storecardspecificationfulltext = null;
 
-  @SerializedName("FirmCodeFullText")
-  private Boolean firmCodeFullText = null;
+  @SerializedName("firmcodefulltext")
+  private Boolean firmcodefulltext = null;
 
-  @SerializedName("FirmNameFullText")
-  private Boolean firmNameFullText = null;
+  @SerializedName("firmnamefulltext")
+  private Boolean firmnamefulltext = null;
 
-  @SerializedName("ViewSpecification")
-  private Boolean viewSpecification = null;
+  @SerializedName("viewspecification")
+  private Boolean viewspecification = null;
 
-  @SerializedName("ViewSpecification2")
-  private Boolean viewSpecification2 = null;
+  @SerializedName("viewspecification2")
+  private Boolean viewspecification2 = null;
 
-  @SerializedName("PriceListKeyF2")
-  private Integer priceListKeyF2 = null;
+  @SerializedName("pricelistkeyf2")
+  private Integer pricelistkeyf2 = null;
 
-  @SerializedName("PriceListKeyF3")
-  private Integer priceListKeyF3 = null;
+  @SerializedName("pricelistkeyf3")
+  private Integer pricelistkeyf3 = null;
 
-  @SerializedName("PriceListKeyF4")
-  private Integer priceListKeyF4 = null;
+  @SerializedName("pricelistkeyf4")
+  private Integer pricelistkeyf4 = null;
 
-  @SerializedName("PriceListKeyF5")
-  private Integer priceListKeyF5 = null;
+  @SerializedName("pricelistkeyf5")
+  private Integer pricelistkeyf5 = null;
 
-  @SerializedName("PriceListKeyF6")
-  private Integer priceListKeyF6 = null;
+  @SerializedName("pricelistkeyf6")
+  private Integer pricelistkeyf6 = null;
 
-  @SerializedName("PriceListKeyF7")
-  private Integer priceListKeyF7 = null;
+  @SerializedName("pricelistkeyf7")
+  private Integer pricelistkeyf7 = null;
 
-  @SerializedName("PriceListKeyF8")
-  private Integer priceListKeyF8 = null;
+  @SerializedName("pricelistkeyf8")
+  private Integer pricelistkeyf8 = null;
 
-  @SerializedName("AdressListKeyF2")
-  private Integer adressListKeyF2 = null;
+  @SerializedName("adresslistkeyf2")
+  private Integer adresslistkeyf2 = null;
 
-  @SerializedName("AdressListKeyF3")
-  private Integer adressListKeyF3 = null;
+  @SerializedName("adresslistkeyf3")
+  private Integer adresslistkeyf3 = null;
 
-  @SerializedName("AdressListKeyF4")
-  private Integer adressListKeyF4 = null;
+  @SerializedName("adresslistkeyf4")
+  private Integer adresslistkeyf4 = null;
 
-  @SerializedName("AdressListKeyF5")
-  private Integer adressListKeyF5 = null;
+  @SerializedName("adresslistkeyf5")
+  private Integer adresslistkeyf5 = null;
 
-  @SerializedName("AdressListKeyF6")
-  private Integer adressListKeyF6 = null;
+  @SerializedName("adresslistkeyf6")
+  private Integer adresslistkeyf6 = null;
 
-  @SerializedName("AdressListKeyF7")
-  private Integer adressListKeyF7 = null;
+  @SerializedName("adresslistkeyf7")
+  private Integer adresslistkeyf7 = null;
 
-  @SerializedName("AdressListKeyF8")
-  private Integer adressListKeyF8 = null;
+  @SerializedName("adresslistkeyf8")
+  private Integer adresslistkeyf8 = null;
 
-  @SerializedName("AdressListMenuRow1")
-  private Integer adressListMenuRow1 = null;
+  @SerializedName("adresslistmenurow1")
+  private Integer adresslistmenurow1 = null;
 
-  @SerializedName("AdressListMenuRow2")
-  private Integer adressListMenuRow2 = null;
+  @SerializedName("adresslistmenurow2")
+  private Integer adresslistmenurow2 = null;
 
-  @SerializedName("AdressListMenuRow3")
-  private Integer adressListMenuRow3 = null;
+  @SerializedName("adresslistmenurow3")
+  private Integer adresslistmenurow3 = null;
 
-  @SerializedName("AdressListMenuRow4")
-  private Integer adressListMenuRow4 = null;
+  @SerializedName("adresslistmenurow4")
+  private Integer adresslistmenurow4 = null;
 
-  @SerializedName("AdressListMenuRow5")
-  private Integer adressListMenuRow5 = null;
+  @SerializedName("adresslistmenurow5")
+  private Integer adresslistmenurow5 = null;
 
-  @SerializedName("AdressListMenuRow6")
-  private Integer adressListMenuRow6 = null;
+  @SerializedName("adresslistmenurow6")
+  private Integer adresslistmenurow6 = null;
 
-  @SerializedName("AdressListMenuRow7")
-  private Integer adressListMenuRow7 = null;
+  @SerializedName("adresslistmenurow7")
+  private Integer adresslistmenurow7 = null;
 
-  @SerializedName("OrderPrintSequence")
-  private Integer orderPrintSequence = null;
+  @SerializedName("orderprintsequence")
+  private Integer orderprintsequence = null;
 
-  @SerializedName("OrderPrintMode")
-  private Integer orderPrintMode = null;
+  @SerializedName("orderprintmode")
+  private Integer orderprintmode = null;
 
-  @SerializedName("PrintAmountMode")
-  private Integer printAmountMode = null;
+  @SerializedName("printamountmode")
+  private Integer printamountmode = null;
 
-  @SerializedName("OrderPrintEvent")
-  private Integer orderPrintEvent = null;
+  @SerializedName("orderprintevent")
+  private Integer orderprintevent = null;
 
-  @SerializedName("OrderPrintStoreCardCode")
-  private Boolean orderPrintStoreCardCode = null;
+  @SerializedName("orderprintstorecardcode")
+  private Boolean orderprintstorecardcode = null;
 
-  @SerializedName("OrderPrintPrice")
-  private Boolean orderPrintPrice = null;
+  @SerializedName("orderprintprice")
+  private Boolean orderprintprice = null;
 
-  @SerializedName("OrderPrintQUnit")
-  private Boolean orderPrintQUnit = null;
+  @SerializedName("orderprintqunit")
+  private Boolean orderprintqunit = null;
 
-  @SerializedName("OrderPrintWideStoreCard")
-  private Boolean orderPrintWideStoreCard = null;
+  @SerializedName("orderprintwidestorecard")
+  private Boolean orderprintwidestorecard = null;
 
-  @SerializedName("OrderPrintWideQuantity")
-  private Boolean orderPrintWideQuantity = null;
+  @SerializedName("orderprintwidequantity")
+  private Boolean orderprintwidequantity = null;
 
-  @SerializedName("BillOneUserOnly")
-  private Boolean billOneUserOnly = null;
+  @SerializedName("billoneuseronly")
+  private Boolean billoneuseronly = null;
 
-  @SerializedName("ConsignmentStores")
-  private List<Posshopconsignmentstore> consignmentStores = new ArrayList<Posshopconsignmentstore>();
+  @SerializedName("consignmentstores")
+  private List<Posshopconsignmentstore> consignmentstores = new ArrayList<Posshopconsignmentstore>();
 
-  @SerializedName("Payments")
+  @SerializedName("payments")
   private List<Posshoppayments> payments = new ArrayList<Posshoppayments>();
 
-  @SerializedName("Suppliers")
+  @SerializedName("suppliers")
   private List<Posshopsuppliers> suppliers = new ArrayList<Posshopsuppliers>();
 
-  @SerializedName("SellingStands")
-  private List<Posshopsellingstands> sellingStands = new ArrayList<Posshopsellingstands>();
+  @SerializedName("sellingstands")
+  private List<Posshopsellingstands> sellingstands = new ArrayList<Posshopsellingstands>();
 
-  @SerializedName("ShiftCalendars")
-  private List<Posshopshiftcalendars> shiftCalendars = new ArrayList<Posshopshiftcalendars>();
+  @SerializedName("shiftcalendars")
+  private List<Posshopshiftcalendars> shiftcalendars = new ArrayList<Posshopshiftcalendars>();
 
-  @SerializedName("WasteDocQueue_ID")
-  private String wasteDocQueueID = null;
+  @SerializedName("wastedocqueue_id")
+  private String wastedocqueueId = null;
 
-  @SerializedName("ShiftDocQueue_ID")
-  private String shiftDocQueueID = null;
+  @SerializedName("shiftdocqueue_id")
+  private String shiftdocqueueId = null;
 
-  @SerializedName("AdvanceDocQueue_ID")
-  private String advanceDocQueueID = null;
+  @SerializedName("advancedocqueue_id")
+  private String advancedocqueueId = null;
 
-  @SerializedName("NotAccPaidDocQueue_ID")
-  private String notAccPaidDocQueueID = null;
+  @SerializedName("notaccpaiddocqueue_id")
+  private String notaccpaiddocqueueId = null;
 
-  @SerializedName("NotAccReceivedDocQueue_ID")
-  private String notAccReceivedDocQueueID = null;
+  @SerializedName("notaccreceiveddocqueue_id")
+  private String notaccreceiveddocqueueId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("POSMirrorDefinition_ID")
-  private String pOSMirrorDefinitionID = null;
+  @SerializedName("posmirrordefinition_id")
+  private String posmirrordefinitionId = null;
 
-  @SerializedName("POSShift_ID")
-  private String pOSShiftID = null;
+  @SerializedName("posshift_id")
+  private String posshiftId = null;
 
-  @SerializedName("VirtualPOS_ID")
-  private String virtualPOSID = null;
+  @SerializedName("virtualpos_id")
+  private String virtualposId = null;
 
-  @SerializedName("PrefillOrderCorrection")
-  private Integer prefillOrderCorrection = null;
+  @SerializedName("prefillordercorrection")
+  private Integer prefillordercorrection = null;
 
-  @SerializedName("RefreshRate")
-  private Integer refreshRate = null;
+  @SerializedName("refreshrate")
+  private Integer refreshrate = null;
 
-  @SerializedName("VirtualPOSSelectionMethod")
-  private Integer virtualPOSSelectionMethod = null;
+  @SerializedName("virtualposselectionmethod")
+  private Integer virtualposselectionmethod = null;
 
-  @SerializedName("ImportedBillOfDeliveryMode")
-  private Integer importedBillOfDeliveryMode = null;
+  @SerializedName("importedbillofdeliverymode")
+  private Integer importedbillofdeliverymode = null;
 
-  @SerializedName("HalfPortionEnabled")
-  private Boolean halfPortionEnabled = null;
+  @SerializedName("halfportionenabled")
+  private Boolean halfportionenabled = null;
 
-  @SerializedName("UseShifts")
-  private Boolean useShifts = null;
+  @SerializedName("useshifts")
+  private Boolean useshifts = null;
 
-  @SerializedName("OneShiftToReceipt")
-  private Boolean oneShiftToReceipt = null;
+  @SerializedName("oneshifttoreceipt")
+  private Boolean oneshifttoreceipt = null;
 
-  @SerializedName("HalfPortionWeight")
-  private Double halfPortionWeight = null;
+  @SerializedName("halfportionweight")
+  private Double halfportionweight = null;
 
-  @SerializedName("HalfPortionPrice")
-  private Double halfPortionPrice = null;
+  @SerializedName("halfportionprice")
+  private Double halfportionprice = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Posshop displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Posshop id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Posshop classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Posshop objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Posshop rows(List<Posshoprow> rows) {
@@ -595,10 +631,10 @@ public class Posshop   {
   }
 
    /**
-   * Řádky; kolekce BO Zboží vyloučené ze slev [nepersistentní položka]
+   * Řádky; kolekce bo zboží vyloučené ze slev [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Zboží vyloučené ze slev [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo zboží vyloučené ze slev [nepersistentní položka]")
   public List<Posshoprow> getRows() {
     return rows;
   }
@@ -613,10 +649,10 @@ public class Posshop   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -631,10 +667,10 @@ public class Posshop   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -649,10 +685,10 @@ public class Posshop   {
   }
 
    /**
-   * Hnízdo [persistentní položka]
+   * hnízdo [persistentní položka]
    * @return site
   **/
-  @ApiModelProperty(example = "null", value = "Hnízdo [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "hnízdo [persistentní položka]")
   public String getSite() {
     return site;
   }
@@ -661,2475 +697,2475 @@ public class Posshop   {
     this.site = site;
   }
 
-  public Posshop storeID(String storeID) {
-    this.storeID = storeID;
+  public Posshop storeId(String storeId) {
+    this.storeId = storeId;
     return this;
   }
 
    /**
-   * Výchozí prodejní sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * výchozí prodejní sklad; id objektu sklad [persistentní položka]
+   * @return storeId
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí prodejní sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "výchozí prodejní sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
-  public Posshop firmID(String firmID) {
-    this.firmID = firmID;
+  public Posshop firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma pro předvyplnění; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma pro předvyplnění; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma pro předvyplnění; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma pro předvyplnění; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Posshop shopAddressID(Posshop shopAddressID) {
-    this.shopAddressID = shopAddressID;
+  public Posshop shopaddressId(Posshop shopaddressId) {
+    this.shopaddressId = shopaddressId;
     return this;
   }
 
    /**
-   * Get shopAddressID
-   * @return shopAddressID
+   * Get shopaddressId
+   * @return shopaddressId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Posshop getShopAddressID() {
-    return shopAddressID;
+  public Posshop getShopaddressId() {
+    return shopaddressId;
   }
 
-  public void setShopAddressID(Posshop shopAddressID) {
-    this.shopAddressID = shopAddressID;
+  public void setShopaddressId(Posshop shopaddressId) {
+    this.shopaddressId = shopaddressId;
   }
 
-  public Posshop docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Posshop docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Řada dokladů pro souhr.účtenky; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * Řada dokladů pro souhr.účtenky; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů pro souhr.účtenky; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "Řada dokladů pro souhr.účtenky; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Posshop storeDocQueueID(String storeDocQueueID) {
-    this.storeDocQueueID = storeDocQueueID;
+  public Posshop storedocqueueId(String storedocqueueId) {
+    this.storedocqueueId = storedocqueueId;
     return this;
   }
 
    /**
-   * Řada dodacích listů ze skladu; ID objektu Řada dokladů [persistentní položka]
-   * @return storeDocQueueID
+   * Řada dodacích listů ze skladu; id objektu Řada dokladů [persistentní položka]
+   * @return storedocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada dodacích listů ze skladu; ID objektu Řada dokladů [persistentní položka]")
-  public String getStoreDocQueueID() {
-    return storeDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada dodacích listů ze skladu; id objektu Řada dokladů [persistentní položka]")
+  public String getStoredocqueueId() {
+    return storedocqueueId;
   }
 
-  public void setStoreDocQueueID(String storeDocQueueID) {
-    this.storeDocQueueID = storeDocQueueID;
+  public void setStoredocqueueId(String storedocqueueId) {
+    this.storedocqueueId = storedocqueueId;
   }
 
-  public Posshop refundedStoreDocQueueID(String refundedStoreDocQueueID) {
-    this.refundedStoreDocQueueID = refundedStoreDocQueueID;
+  public Posshop refundedstoredocqueueId(String refundedstoredocqueueId) {
+    this.refundedstoredocqueueId = refundedstoredocqueueId;
     return this;
   }
 
    /**
-   * Řada vratek k dodacím listům; ID objektu Řada dokladů [persistentní položka]
-   * @return refundedStoreDocQueueID
+   * Řada vratek k dodacím listům; id objektu Řada dokladů [persistentní položka]
+   * @return refundedstoredocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada vratek k dodacím listům; ID objektu Řada dokladů [persistentní položka]")
-  public String getRefundedStoreDocQueueID() {
-    return refundedStoreDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada vratek k dodacím listům; id objektu Řada dokladů [persistentní položka]")
+  public String getRefundedstoredocqueueId() {
+    return refundedstoredocqueueId;
   }
 
-  public void setRefundedStoreDocQueueID(String refundedStoreDocQueueID) {
-    this.refundedStoreDocQueueID = refundedStoreDocQueueID;
+  public void setRefundedstoredocqueueId(String refundedstoredocqueueId) {
+    this.refundedstoredocqueueId = refundedstoredocqueueId;
   }
 
-  public Posshop incomeStoreDocQueueID(String incomeStoreDocQueueID) {
-    this.incomeStoreDocQueueID = incomeStoreDocQueueID;
+  public Posshop incomestoredocqueueId(String incomestoredocqueueId) {
+    this.incomestoredocqueueId = incomestoredocqueueId;
     return this;
   }
 
    /**
-   * Řada příj. pro vracení do skl. ; ID objektu Řada dokladů [persistentní položka]
-   * @return incomeStoreDocQueueID
+   * Řada příj. pro vracení do skl. ; id objektu Řada dokladů [persistentní položka]
+   * @return incomestoredocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada příj. pro vracení do skl. ; ID objektu Řada dokladů [persistentní položka]")
-  public String getIncomeStoreDocQueueID() {
-    return incomeStoreDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada příj. pro vracení do skl. ; id objektu Řada dokladů [persistentní položka]")
+  public String getIncomestoredocqueueId() {
+    return incomestoredocqueueId;
   }
 
-  public void setIncomeStoreDocQueueID(String incomeStoreDocQueueID) {
-    this.incomeStoreDocQueueID = incomeStoreDocQueueID;
+  public void setIncomestoredocqueueId(String incomestoredocqueueId) {
+    this.incomestoredocqueueId = incomestoredocqueueId;
   }
 
-  public Posshop paymentTypeID(String paymentTypeID) {
-    this.paymentTypeID = paymentTypeID;
+  public Posshop paymenttypeId(String paymenttypeId) {
+    this.paymenttypeId = paymenttypeId;
     return this;
   }
 
    /**
-   * Standardní způsob úhrady; ID objektu Způsob úhrady [persistentní položka]
-   * @return paymentTypeID
+   * standardní způsob úhrady; id objektu způsob úhrady [persistentní položka]
+   * @return paymenttypeId
   **/
-  @ApiModelProperty(example = "null", value = "Standardní způsob úhrady; ID objektu Způsob úhrady [persistentní položka]")
-  public String getPaymentTypeID() {
-    return paymentTypeID;
+  @ApiModelProperty(example = "null", value = "standardní způsob úhrady; id objektu způsob úhrady [persistentní položka]")
+  public String getPaymenttypeId() {
+    return paymenttypeId;
   }
 
-  public void setPaymentTypeID(String paymentTypeID) {
-    this.paymentTypeID = paymentTypeID;
+  public void setPaymenttypeId(String paymenttypeId) {
+    this.paymenttypeId = paymenttypeId;
   }
 
-  public Posshop containerPaymentTypeID(String containerPaymentTypeID) {
-    this.containerPaymentTypeID = containerPaymentTypeID;
+  public Posshop containerpaymenttypeId(String containerpaymenttypeId) {
+    this.containerpaymenttypeId = containerpaymenttypeId;
     return this;
   }
 
    /**
-   * Způsob úhr. za vrac. obaly; ID objektu Způsob úhrady [persistentní položka]
-   * @return containerPaymentTypeID
+   * způsob úhr. za vrac. obaly; id objektu způsob úhrady [persistentní položka]
+   * @return containerpaymenttypeId
   **/
-  @ApiModelProperty(example = "null", value = "Způsob úhr. za vrac. obaly; ID objektu Způsob úhrady [persistentní položka]")
-  public String getContainerPaymentTypeID() {
-    return containerPaymentTypeID;
+  @ApiModelProperty(example = "null", value = "způsob úhr. za vrac. obaly; id objektu způsob úhrady [persistentní položka]")
+  public String getContainerpaymenttypeId() {
+    return containerpaymenttypeId;
   }
 
-  public void setContainerPaymentTypeID(String containerPaymentTypeID) {
-    this.containerPaymentTypeID = containerPaymentTypeID;
+  public void setContainerpaymenttypeId(String containerpaymenttypeId) {
+    this.containerpaymenttypeId = containerpaymenttypeId;
   }
 
-  public Posshop dealerCategoryCaption(String dealerCategoryCaption) {
-    this.dealerCategoryCaption = dealerCategoryCaption;
+  public Posshop dealercategorycaption(String dealercategorycaption) {
+    this.dealercategorycaption = dealercategorycaption;
     return this;
   }
 
    /**
-   * Nadpis dealerské kategorie [persistentní položka]
-   * @return dealerCategoryCaption
+   * nadpis dealerské kategorie [persistentní položka]
+   * @return dealercategorycaption
   **/
-  @ApiModelProperty(example = "null", value = "Nadpis dealerské kategorie [persistentní položka]")
-  public String getDealerCategoryCaption() {
-    return dealerCategoryCaption;
+  @ApiModelProperty(example = "null", value = "nadpis dealerské kategorie [persistentní položka]")
+  public String getDealercategorycaption() {
+    return dealercategorycaption;
   }
 
-  public void setDealerCategoryCaption(String dealerCategoryCaption) {
-    this.dealerCategoryCaption = dealerCategoryCaption;
+  public void setDealercategorycaption(String dealercategorycaption) {
+    this.dealercategorycaption = dealercategorycaption;
   }
 
-  public Posshop description2Caption(String description2Caption) {
-    this.description2Caption = description2Caption;
+  public Posshop description2caption(String description2caption) {
+    this.description2caption = description2caption;
     return this;
   }
 
    /**
-   * Nadpis poznámky 2 [persistentní položka]
-   * @return description2Caption
+   * nadpis poznámky 2 [persistentní položka]
+   * @return description2caption
   **/
-  @ApiModelProperty(example = "null", value = "Nadpis poznámky 2 [persistentní položka]")
-  public String getDescription2Caption() {
-    return description2Caption;
+  @ApiModelProperty(example = "null", value = "nadpis poznámky 2 [persistentní položka]")
+  public String getDescription2caption() {
+    return description2caption;
   }
 
-  public void setDescription2Caption(String description2Caption) {
-    this.description2Caption = description2Caption;
+  public void setDescription2caption(String description2caption) {
+    this.description2caption = description2caption;
   }
 
-  public Posshop billHeader1(String billHeader1) {
-    this.billHeader1 = billHeader1;
+  public Posshop billheader1(String billheader1) {
+    this.billheader1 = billheader1;
     return this;
   }
 
    /**
-   * První řádek hlavičky [persistentní položka]
-   * @return billHeader1
+   * první řádek hlavičky [persistentní položka]
+   * @return billheader1
   **/
-  @ApiModelProperty(example = "null", value = "První řádek hlavičky [persistentní položka]")
-  public String getBillHeader1() {
-    return billHeader1;
+  @ApiModelProperty(example = "null", value = "první řádek hlavičky [persistentní položka]")
+  public String getBillheader1() {
+    return billheader1;
   }
 
-  public void setBillHeader1(String billHeader1) {
-    this.billHeader1 = billHeader1;
+  public void setBillheader1(String billheader1) {
+    this.billheader1 = billheader1;
   }
 
-  public Posshop billHeader2(String billHeader2) {
-    this.billHeader2 = billHeader2;
+  public Posshop billheader2(String billheader2) {
+    this.billheader2 = billheader2;
     return this;
   }
 
    /**
-   * Druhý řádek hlavičky [persistentní položka]
-   * @return billHeader2
+   * druhý řádek hlavičky [persistentní položka]
+   * @return billheader2
   **/
-  @ApiModelProperty(example = "null", value = "Druhý řádek hlavičky [persistentní položka]")
-  public String getBillHeader2() {
-    return billHeader2;
+  @ApiModelProperty(example = "null", value = "druhý řádek hlavičky [persistentní položka]")
+  public String getBillheader2() {
+    return billheader2;
   }
 
-  public void setBillHeader2(String billHeader2) {
-    this.billHeader2 = billHeader2;
+  public void setBillheader2(String billheader2) {
+    this.billheader2 = billheader2;
   }
 
-  public Posshop billHeader3(String billHeader3) {
-    this.billHeader3 = billHeader3;
+  public Posshop billheader3(String billheader3) {
+    this.billheader3 = billheader3;
     return this;
   }
 
    /**
-   * Třetí řádek hlavičky [persistentní položka]
-   * @return billHeader3
+   * třetí řádek hlavičky [persistentní položka]
+   * @return billheader3
   **/
-  @ApiModelProperty(example = "null", value = "Třetí řádek hlavičky [persistentní položka]")
-  public String getBillHeader3() {
-    return billHeader3;
+  @ApiModelProperty(example = "null", value = "třetí řádek hlavičky [persistentní položka]")
+  public String getBillheader3() {
+    return billheader3;
   }
 
-  public void setBillHeader3(String billHeader3) {
-    this.billHeader3 = billHeader3;
+  public void setBillheader3(String billheader3) {
+    this.billheader3 = billheader3;
   }
 
-  public Posshop billHeader1Wide(Boolean billHeader1Wide) {
-    this.billHeader1Wide = billHeader1Wide;
-    return this;
-  }
-
-   /**
-   * Široké písmo [persistentní položka]
-   * @return billHeader1Wide
-  **/
-  @ApiModelProperty(example = "null", value = "Široké písmo [persistentní položka]")
-  public Boolean getBillHeader1Wide() {
-    return billHeader1Wide;
-  }
-
-  public void setBillHeader1Wide(Boolean billHeader1Wide) {
-    this.billHeader1Wide = billHeader1Wide;
-  }
-
-  public Posshop billHeader2Wide(Boolean billHeader2Wide) {
-    this.billHeader2Wide = billHeader2Wide;
+  public Posshop billheader1wide(Boolean billheader1wide) {
+    this.billheader1wide = billheader1wide;
     return this;
   }
 
    /**
    * Široké písmo [persistentní položka]
-   * @return billHeader2Wide
+   * @return billheader1wide
   **/
   @ApiModelProperty(example = "null", value = "Široké písmo [persistentní položka]")
-  public Boolean getBillHeader2Wide() {
-    return billHeader2Wide;
+  public Boolean getBillheader1wide() {
+    return billheader1wide;
   }
 
-  public void setBillHeader2Wide(Boolean billHeader2Wide) {
-    this.billHeader2Wide = billHeader2Wide;
+  public void setBillheader1wide(Boolean billheader1wide) {
+    this.billheader1wide = billheader1wide;
   }
 
-  public Posshop billHeader3Wide(Boolean billHeader3Wide) {
-    this.billHeader3Wide = billHeader3Wide;
+  public Posshop billheader2wide(Boolean billheader2wide) {
+    this.billheader2wide = billheader2wide;
     return this;
   }
 
    /**
    * Široké písmo [persistentní položka]
-   * @return billHeader3Wide
+   * @return billheader2wide
   **/
   @ApiModelProperty(example = "null", value = "Široké písmo [persistentní položka]")
-  public Boolean getBillHeader3Wide() {
-    return billHeader3Wide;
+  public Boolean getBillheader2wide() {
+    return billheader2wide;
   }
 
-  public void setBillHeader3Wide(Boolean billHeader3Wide) {
-    this.billHeader3Wide = billHeader3Wide;
+  public void setBillheader2wide(Boolean billheader2wide) {
+    this.billheader2wide = billheader2wide;
   }
 
-  public Posshop billFooter1(String billFooter1) {
-    this.billFooter1 = billFooter1;
-    return this;
-  }
-
-   /**
-   * První řádek patičky [persistentní položka]
-   * @return billFooter1
-  **/
-  @ApiModelProperty(example = "null", value = "První řádek patičky [persistentní položka]")
-  public String getBillFooter1() {
-    return billFooter1;
-  }
-
-  public void setBillFooter1(String billFooter1) {
-    this.billFooter1 = billFooter1;
-  }
-
-  public Posshop billFooter2(String billFooter2) {
-    this.billFooter2 = billFooter2;
-    return this;
-  }
-
-   /**
-   * Druhý řádek patičky [persistentní položka]
-   * @return billFooter2
-  **/
-  @ApiModelProperty(example = "null", value = "Druhý řádek patičky [persistentní položka]")
-  public String getBillFooter2() {
-    return billFooter2;
-  }
-
-  public void setBillFooter2(String billFooter2) {
-    this.billFooter2 = billFooter2;
-  }
-
-  public Posshop billFooter3(String billFooter3) {
-    this.billFooter3 = billFooter3;
-    return this;
-  }
-
-   /**
-   * Třetí řádek patičky [persistentní položka]
-   * @return billFooter3
-  **/
-  @ApiModelProperty(example = "null", value = "Třetí řádek patičky [persistentní položka]")
-  public String getBillFooter3() {
-    return billFooter3;
-  }
-
-  public void setBillFooter3(String billFooter3) {
-    this.billFooter3 = billFooter3;
-  }
-
-  public Posshop billFooter1Wide(Boolean billFooter1Wide) {
-    this.billFooter1Wide = billFooter1Wide;
+  public Posshop billheader3wide(Boolean billheader3wide) {
+    this.billheader3wide = billheader3wide;
     return this;
   }
 
    /**
    * Široké písmo [persistentní položka]
-   * @return billFooter1Wide
+   * @return billheader3wide
   **/
   @ApiModelProperty(example = "null", value = "Široké písmo [persistentní položka]")
-  public Boolean getBillFooter1Wide() {
-    return billFooter1Wide;
+  public Boolean getBillheader3wide() {
+    return billheader3wide;
   }
 
-  public void setBillFooter1Wide(Boolean billFooter1Wide) {
-    this.billFooter1Wide = billFooter1Wide;
+  public void setBillheader3wide(Boolean billheader3wide) {
+    this.billheader3wide = billheader3wide;
   }
 
-  public Posshop billFooter2Wide(Boolean billFooter2Wide) {
-    this.billFooter2Wide = billFooter2Wide;
+  public Posshop billfooter1(String billfooter1) {
+    this.billfooter1 = billfooter1;
+    return this;
+  }
+
+   /**
+   * první řádek patičky [persistentní položka]
+   * @return billfooter1
+  **/
+  @ApiModelProperty(example = "null", value = "první řádek patičky [persistentní položka]")
+  public String getBillfooter1() {
+    return billfooter1;
+  }
+
+  public void setBillfooter1(String billfooter1) {
+    this.billfooter1 = billfooter1;
+  }
+
+  public Posshop billfooter2(String billfooter2) {
+    this.billfooter2 = billfooter2;
+    return this;
+  }
+
+   /**
+   * druhý řádek patičky [persistentní položka]
+   * @return billfooter2
+  **/
+  @ApiModelProperty(example = "null", value = "druhý řádek patičky [persistentní položka]")
+  public String getBillfooter2() {
+    return billfooter2;
+  }
+
+  public void setBillfooter2(String billfooter2) {
+    this.billfooter2 = billfooter2;
+  }
+
+  public Posshop billfooter3(String billfooter3) {
+    this.billfooter3 = billfooter3;
+    return this;
+  }
+
+   /**
+   * třetí řádek patičky [persistentní položka]
+   * @return billfooter3
+  **/
+  @ApiModelProperty(example = "null", value = "třetí řádek patičky [persistentní položka]")
+  public String getBillfooter3() {
+    return billfooter3;
+  }
+
+  public void setBillfooter3(String billfooter3) {
+    this.billfooter3 = billfooter3;
+  }
+
+  public Posshop billfooter1wide(Boolean billfooter1wide) {
+    this.billfooter1wide = billfooter1wide;
     return this;
   }
 
    /**
    * Široké písmo [persistentní položka]
-   * @return billFooter2Wide
+   * @return billfooter1wide
   **/
   @ApiModelProperty(example = "null", value = "Široké písmo [persistentní položka]")
-  public Boolean getBillFooter2Wide() {
-    return billFooter2Wide;
+  public Boolean getBillfooter1wide() {
+    return billfooter1wide;
   }
 
-  public void setBillFooter2Wide(Boolean billFooter2Wide) {
-    this.billFooter2Wide = billFooter2Wide;
+  public void setBillfooter1wide(Boolean billfooter1wide) {
+    this.billfooter1wide = billfooter1wide;
   }
 
-  public Posshop billFooter3Wide(Boolean billFooter3Wide) {
-    this.billFooter3Wide = billFooter3Wide;
+  public Posshop billfooter2wide(Boolean billfooter2wide) {
+    this.billfooter2wide = billfooter2wide;
     return this;
   }
 
    /**
    * Široké písmo [persistentní položka]
-   * @return billFooter3Wide
+   * @return billfooter2wide
   **/
   @ApiModelProperty(example = "null", value = "Široké písmo [persistentní položka]")
-  public Boolean getBillFooter3Wide() {
-    return billFooter3Wide;
+  public Boolean getBillfooter2wide() {
+    return billfooter2wide;
   }
 
-  public void setBillFooter3Wide(Boolean billFooter3Wide) {
-    this.billFooter3Wide = billFooter3Wide;
+  public void setBillfooter2wide(Boolean billfooter2wide) {
+    this.billfooter2wide = billfooter2wide;
   }
 
-  public Posshop printStoreCardCode(Boolean printStoreCardCode) {
-    this.printStoreCardCode = printStoreCardCode;
+  public Posshop billfooter3wide(Boolean billfooter3wide) {
+    this.billfooter3wide = billfooter3wide;
     return this;
   }
 
    /**
-   * Tisknout kód zboží [persistentní položka]
-   * @return printStoreCardCode
+   * Široké písmo [persistentní položka]
+   * @return billfooter3wide
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout kód zboží [persistentní položka]")
-  public Boolean getPrintStoreCardCode() {
-    return printStoreCardCode;
+  @ApiModelProperty(example = "null", value = "Široké písmo [persistentní položka]")
+  public Boolean getBillfooter3wide() {
+    return billfooter3wide;
   }
 
-  public void setPrintStoreCardCode(Boolean printStoreCardCode) {
-    this.printStoreCardCode = printStoreCardCode;
+  public void setBillfooter3wide(Boolean billfooter3wide) {
+    this.billfooter3wide = billfooter3wide;
   }
 
-  public Posshop printPLU(Boolean printPLU) {
-    this.printPLU = printPLU;
+  public Posshop printstorecardcode(Boolean printstorecardcode) {
+    this.printstorecardcode = printstorecardcode;
     return this;
   }
 
    /**
-   * Tisknout PLU [persistentní položka]
-   * @return printPLU
+   * tisknout kód zboží [persistentní položka]
+   * @return printstorecardcode
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout PLU [persistentní položka]")
-  public Boolean getPrintPLU() {
-    return printPLU;
+  @ApiModelProperty(example = "null", value = "tisknout kód zboží [persistentní položka]")
+  public Boolean getPrintstorecardcode() {
+    return printstorecardcode;
   }
 
-  public void setPrintPLU(Boolean printPLU) {
-    this.printPLU = printPLU;
+  public void setPrintstorecardcode(Boolean printstorecardcode) {
+    this.printstorecardcode = printstorecardcode;
   }
 
-  public Posshop printFirmName(Boolean printFirmName) {
-    this.printFirmName = printFirmName;
+  public Posshop printplu(Boolean printplu) {
+    this.printplu = printplu;
     return this;
   }
 
    /**
-   * Tisknout název firmy [persistentní položka]
-   * @return printFirmName
+   * tisknout plu [persistentní položka]
+   * @return printplu
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout název firmy [persistentní položka]")
-  public Boolean getPrintFirmName() {
-    return printFirmName;
+  @ApiModelProperty(example = "null", value = "tisknout plu [persistentní položka]")
+  public Boolean getPrintplu() {
+    return printplu;
   }
 
-  public void setPrintFirmName(Boolean printFirmName) {
-    this.printFirmName = printFirmName;
+  public void setPrintplu(Boolean printplu) {
+    this.printplu = printplu;
   }
 
-  public Posshop printShopName(Boolean printShopName) {
-    this.printShopName = printShopName;
+  public Posshop printfirmname(Boolean printfirmname) {
+    this.printfirmname = printfirmname;
     return this;
   }
 
    /**
-   * Tisknout název provozu [persistentní položka]
-   * @return printShopName
+   * tisknout název firmy [persistentní položka]
+   * @return printfirmname
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout název provozu [persistentní položka]")
-  public Boolean getPrintShopName() {
-    return printShopName;
+  @ApiModelProperty(example = "null", value = "tisknout název firmy [persistentní položka]")
+  public Boolean getPrintfirmname() {
+    return printfirmname;
   }
 
-  public void setPrintShopName(Boolean printShopName) {
-    this.printShopName = printShopName;
+  public void setPrintfirmname(Boolean printfirmname) {
+    this.printfirmname = printfirmname;
   }
 
-  public Posshop printAdress(Boolean printAdress) {
-    this.printAdress = printAdress;
+  public Posshop printshopname(Boolean printshopname) {
+    this.printshopname = printshopname;
     return this;
   }
 
    /**
-   * Tisknout adresu firmy [persistentní položka]
-   * @return printAdress
+   * tisknout název provozu [persistentní položka]
+   * @return printshopname
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout adresu firmy [persistentní položka]")
-  public Boolean getPrintAdress() {
-    return printAdress;
+  @ApiModelProperty(example = "null", value = "tisknout název provozu [persistentní položka]")
+  public Boolean getPrintshopname() {
+    return printshopname;
   }
 
-  public void setPrintAdress(Boolean printAdress) {
-    this.printAdress = printAdress;
+  public void setPrintshopname(Boolean printshopname) {
+    this.printshopname = printshopname;
   }
 
-  public Posshop printShopAddress(Boolean printShopAddress) {
-    this.printShopAddress = printShopAddress;
+  public Posshop printadress(Boolean printadress) {
+    this.printadress = printadress;
     return this;
   }
 
    /**
-   * Tisknout adresu provozu [persistentní položka]
-   * @return printShopAddress
+   * tisknout adresu firmy [persistentní položka]
+   * @return printadress
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout adresu provozu [persistentní položka]")
-  public Boolean getPrintShopAddress() {
-    return printShopAddress;
+  @ApiModelProperty(example = "null", value = "tisknout adresu firmy [persistentní položka]")
+  public Boolean getPrintadress() {
+    return printadress;
   }
 
-  public void setPrintShopAddress(Boolean printShopAddress) {
-    this.printShopAddress = printShopAddress;
+  public void setPrintadress(Boolean printadress) {
+    this.printadress = printadress;
   }
 
-  public Posshop printUserName(Boolean printUserName) {
-    this.printUserName = printUserName;
+  public Posshop printshopaddress(Boolean printshopaddress) {
+    this.printshopaddress = printshopaddress;
     return this;
   }
 
    /**
-   * Tisknout obsluhujícího [persistentní položka]
-   * @return printUserName
+   * tisknout adresu provozu [persistentní položka]
+   * @return printshopaddress
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout obsluhujícího [persistentní položka]")
-  public Boolean getPrintUserName() {
-    return printUserName;
+  @ApiModelProperty(example = "null", value = "tisknout adresu provozu [persistentní položka]")
+  public Boolean getPrintshopaddress() {
+    return printshopaddress;
   }
 
-  public void setPrintUserName(Boolean printUserName) {
-    this.printUserName = printUserName;
+  public void setPrintshopaddress(Boolean printshopaddress) {
+    this.printshopaddress = printshopaddress;
   }
 
-  public Posshop printPhone(Boolean printPhone) {
-    this.printPhone = printPhone;
+  public Posshop printusername(Boolean printusername) {
+    this.printusername = printusername;
     return this;
   }
 
    /**
-   * Tisknout telefon [persistentní položka]
-   * @return printPhone
+   * tisknout obsluhujícího [persistentní položka]
+   * @return printusername
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout telefon [persistentní položka]")
-  public Boolean getPrintPhone() {
-    return printPhone;
+  @ApiModelProperty(example = "null", value = "tisknout obsluhujícího [persistentní položka]")
+  public Boolean getPrintusername() {
+    return printusername;
   }
 
-  public void setPrintPhone(Boolean printPhone) {
-    this.printPhone = printPhone;
+  public void setPrintusername(Boolean printusername) {
+    this.printusername = printusername;
   }
 
-  public Posshop printShopPhone(Boolean printShopPhone) {
-    this.printShopPhone = printShopPhone;
+  public Posshop printphone(Boolean printphone) {
+    this.printphone = printphone;
     return this;
   }
 
    /**
-   * Tisknout telefon provozu [persistentní položka]
-   * @return printShopPhone
+   * tisknout telefon [persistentní položka]
+   * @return printphone
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout telefon provozu [persistentní položka]")
-  public Boolean getPrintShopPhone() {
-    return printShopPhone;
+  @ApiModelProperty(example = "null", value = "tisknout telefon [persistentní položka]")
+  public Boolean getPrintphone() {
+    return printphone;
   }
 
-  public void setPrintShopPhone(Boolean printShopPhone) {
-    this.printShopPhone = printShopPhone;
+  public void setPrintphone(Boolean printphone) {
+    this.printphone = printphone;
   }
 
-  public Posshop printFax(Boolean printFax) {
-    this.printFax = printFax;
+  public Posshop printshopphone(Boolean printshopphone) {
+    this.printshopphone = printshopphone;
     return this;
   }
 
    /**
-   * Tisknout fax [persistentní položka]
-   * @return printFax
+   * tisknout telefon provozu [persistentní položka]
+   * @return printshopphone
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout fax [persistentní položka]")
-  public Boolean getPrintFax() {
-    return printFax;
+  @ApiModelProperty(example = "null", value = "tisknout telefon provozu [persistentní položka]")
+  public Boolean getPrintshopphone() {
+    return printshopphone;
   }
 
-  public void setPrintFax(Boolean printFax) {
-    this.printFax = printFax;
+  public void setPrintshopphone(Boolean printshopphone) {
+    this.printshopphone = printshopphone;
   }
 
-  public Posshop printShopFax(Boolean printShopFax) {
-    this.printShopFax = printShopFax;
+  public Posshop printfax(Boolean printfax) {
+    this.printfax = printfax;
     return this;
   }
 
    /**
-   * Tisknout fax provozu [persistentní položka]
-   * @return printShopFax
+   * tisknout fax [persistentní položka]
+   * @return printfax
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout fax provozu [persistentní položka]")
-  public Boolean getPrintShopFax() {
-    return printShopFax;
+  @ApiModelProperty(example = "null", value = "tisknout fax [persistentní položka]")
+  public Boolean getPrintfax() {
+    return printfax;
   }
 
-  public void setPrintShopFax(Boolean printShopFax) {
-    this.printShopFax = printShopFax;
+  public void setPrintfax(Boolean printfax) {
+    this.printfax = printfax;
   }
 
-  public Posshop printEMail(Boolean printEMail) {
-    this.printEMail = printEMail;
+  public Posshop printshopfax(Boolean printshopfax) {
+    this.printshopfax = printshopfax;
     return this;
   }
 
    /**
-   * Tisknout e-mail [persistentní položka]
-   * @return printEMail
+   * tisknout fax provozu [persistentní položka]
+   * @return printshopfax
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout e-mail [persistentní položka]")
-  public Boolean getPrintEMail() {
-    return printEMail;
+  @ApiModelProperty(example = "null", value = "tisknout fax provozu [persistentní položka]")
+  public Boolean getPrintshopfax() {
+    return printshopfax;
   }
 
-  public void setPrintEMail(Boolean printEMail) {
-    this.printEMail = printEMail;
+  public void setPrintshopfax(Boolean printshopfax) {
+    this.printshopfax = printshopfax;
   }
 
-  public Posshop printShopEMail(Boolean printShopEMail) {
-    this.printShopEMail = printShopEMail;
+  public Posshop printemail(Boolean printemail) {
+    this.printemail = printemail;
     return this;
   }
 
    /**
-   * Tisknout e-mail provozu [persistentní položka]
-   * @return printShopEMail
+   * tisknout e-mail [persistentní položka]
+   * @return printemail
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout e-mail provozu [persistentní položka]")
-  public Boolean getPrintShopEMail() {
-    return printShopEMail;
+  @ApiModelProperty(example = "null", value = "tisknout e-mail [persistentní položka]")
+  public Boolean getPrintemail() {
+    return printemail;
   }
 
-  public void setPrintShopEMail(Boolean printShopEMail) {
-    this.printShopEMail = printShopEMail;
+  public void setPrintemail(Boolean printemail) {
+    this.printemail = printemail;
   }
 
-  public Posshop printWWW(Boolean printWWW) {
-    this.printWWW = printWWW;
+  public Posshop printshopemail(Boolean printshopemail) {
+    this.printshopemail = printshopemail;
     return this;
   }
 
    /**
-   * Tisknout WWW adresu [persistentní položka]
-   * @return printWWW
+   * tisknout e-mail provozu [persistentní položka]
+   * @return printshopemail
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout WWW adresu [persistentní položka]")
-  public Boolean getPrintWWW() {
-    return printWWW;
+  @ApiModelProperty(example = "null", value = "tisknout e-mail provozu [persistentní položka]")
+  public Boolean getPrintshopemail() {
+    return printshopemail;
   }
 
-  public void setPrintWWW(Boolean printWWW) {
-    this.printWWW = printWWW;
+  public void setPrintshopemail(Boolean printshopemail) {
+    this.printshopemail = printshopemail;
   }
 
-  public Posshop printDateTime(Boolean printDateTime) {
-    this.printDateTime = printDateTime;
+  public Posshop printwww(Boolean printwww) {
+    this.printwww = printwww;
     return this;
   }
 
    /**
-   * Tisknout datum a čas [persistentní položka]
-   * @return printDateTime
+   * tisknout www adresu [persistentní položka]
+   * @return printwww
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout datum a čas [persistentní položka]")
-  public Boolean getPrintDateTime() {
-    return printDateTime;
+  @ApiModelProperty(example = "null", value = "tisknout www adresu [persistentní položka]")
+  public Boolean getPrintwww() {
+    return printwww;
   }
 
-  public void setPrintDateTime(Boolean printDateTime) {
-    this.printDateTime = printDateTime;
+  public void setPrintwww(Boolean printwww) {
+    this.printwww = printwww;
   }
 
-  public Posshop printPaymentResume(Boolean printPaymentResume) {
-    this.printPaymentResume = printPaymentResume;
+  public Posshop printdatetime(Boolean printdatetime) {
+    this.printdatetime = printdatetime;
     return this;
   }
 
    /**
-   * Tisknout rekapitulaci platby [persistentní položka]
-   * @return printPaymentResume
+   * tisknout datum a čas [persistentní položka]
+   * @return printdatetime
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout rekapitulaci platby [persistentní položka]")
-  public Boolean getPrintPaymentResume() {
-    return printPaymentResume;
+  @ApiModelProperty(example = "null", value = "tisknout datum a čas [persistentní položka]")
+  public Boolean getPrintdatetime() {
+    return printdatetime;
   }
 
-  public void setPrintPaymentResume(Boolean printPaymentResume) {
-    this.printPaymentResume = printPaymentResume;
+  public void setPrintdatetime(Boolean printdatetime) {
+    this.printdatetime = printdatetime;
   }
 
-  public Posshop printVATResume(Boolean printVATResume) {
-    this.printVATResume = printVATResume;
+  public Posshop printpaymentresume(Boolean printpaymentresume) {
+    this.printpaymentresume = printpaymentresume;
     return this;
   }
 
    /**
-   * Tisknout rekapitulaci DPH [persistentní položka]
-   * @return printVATResume
+   * tisknout rekapitulaci platby [persistentní položka]
+   * @return printpaymentresume
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout rekapitulaci DPH [persistentní položka]")
-  public Boolean getPrintVATResume() {
-    return printVATResume;
+  @ApiModelProperty(example = "null", value = "tisknout rekapitulaci platby [persistentní položka]")
+  public Boolean getPrintpaymentresume() {
+    return printpaymentresume;
   }
 
-  public void setPrintVATResume(Boolean printVATResume) {
-    this.printVATResume = printVATResume;
+  public void setPrintpaymentresume(Boolean printpaymentresume) {
+    this.printpaymentresume = printpaymentresume;
   }
 
-  public Posshop printIdentNumber(Boolean printIdentNumber) {
-    this.printIdentNumber = printIdentNumber;
+  public Posshop printvatresume(Boolean printvatresume) {
+    this.printvatresume = printvatresume;
     return this;
   }
 
    /**
-   * Tisknout IČO a DIČ [persistentní položka]
-   * @return printIdentNumber
+   * tisknout rekapitulaci dph [persistentní položka]
+   * @return printvatresume
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout IČO a DIČ [persistentní položka]")
-  public Boolean getPrintIdentNumber() {
-    return printIdentNumber;
+  @ApiModelProperty(example = "null", value = "tisknout rekapitulaci dph [persistentní položka]")
+  public Boolean getPrintvatresume() {
+    return printvatresume;
   }
 
-  public void setPrintIdentNumber(Boolean printIdentNumber) {
-    this.printIdentNumber = printIdentNumber;
+  public void setPrintvatresume(Boolean printvatresume) {
+    this.printvatresume = printvatresume;
   }
 
-  public Posshop printBillBarCode(Boolean printBillBarCode) {
-    this.printBillBarCode = printBillBarCode;
+  public Posshop printidentnumber(Boolean printidentnumber) {
+    this.printidentnumber = printidentnumber;
     return this;
   }
 
    /**
-   * Tisknout číslo účtenky čárovým kódem [persistentní položka]
-   * @return printBillBarCode
+   * tisknout iČo a diČ [persistentní položka]
+   * @return printidentnumber
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout číslo účtenky čárovým kódem [persistentní položka]")
-  public Boolean getPrintBillBarCode() {
-    return printBillBarCode;
+  @ApiModelProperty(example = "null", value = "tisknout iČo a diČ [persistentní položka]")
+  public Boolean getPrintidentnumber() {
+    return printidentnumber;
   }
 
-  public void setPrintBillBarCode(Boolean printBillBarCode) {
-    this.printBillBarCode = printBillBarCode;
+  public void setPrintidentnumber(Boolean printidentnumber) {
+    this.printidentnumber = printidentnumber;
   }
 
-  public Posshop printDescription2(Boolean printDescription2) {
-    this.printDescription2 = printDescription2;
+  public Posshop printbillbarcode(Boolean printbillbarcode) {
+    this.printbillbarcode = printbillbarcode;
     return this;
   }
 
    /**
-   * Tisknout poznámku 2 [persistentní položka]
-   * @return printDescription2
+   * tisknout číslo účtenky čárovým kódem [persistentní položka]
+   * @return printbillbarcode
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout poznámku 2 [persistentní položka]")
-  public Boolean getPrintDescription2() {
-    return printDescription2;
+  @ApiModelProperty(example = "null", value = "tisknout číslo účtenky čárovým kódem [persistentní položka]")
+  public Boolean getPrintbillbarcode() {
+    return printbillbarcode;
   }
 
-  public void setPrintDescription2(Boolean printDescription2) {
-    this.printDescription2 = printDescription2;
+  public void setPrintbillbarcode(Boolean printbillbarcode) {
+    this.printbillbarcode = printbillbarcode;
   }
 
-  public Posshop printCustomer(Boolean printCustomer) {
-    this.printCustomer = printCustomer;
+  public Posshop printdescription2(Boolean printdescription2) {
+    this.printdescription2 = printdescription2;
     return this;
   }
 
    /**
-   * Tisknout zákazníka [persistentní položka]
-   * @return printCustomer
+   * tisknout poznámku 2 [persistentní položka]
+   * @return printdescription2
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout zákazníka [persistentní položka]")
-  public Boolean getPrintCustomer() {
-    return printCustomer;
+  @ApiModelProperty(example = "null", value = "tisknout poznámku 2 [persistentní položka]")
+  public Boolean getPrintdescription2() {
+    return printdescription2;
   }
 
-  public void setPrintCustomer(Boolean printCustomer) {
-    this.printCustomer = printCustomer;
+  public void setPrintdescription2(Boolean printdescription2) {
+    this.printdescription2 = printdescription2;
   }
 
-  public Posshop printDealerCategory(Boolean printDealerCategory) {
-    this.printDealerCategory = printDealerCategory;
+  public Posshop printcustomer(Boolean printcustomer) {
+    this.printcustomer = printcustomer;
     return this;
   }
 
    /**
-   * Tisknout třídu [persistentní položka]
-   * @return printDealerCategory
+   * tisknout zákazníka [persistentní položka]
+   * @return printcustomer
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout třídu [persistentní položka]")
-  public Boolean getPrintDealerCategory() {
-    return printDealerCategory;
+  @ApiModelProperty(example = "null", value = "tisknout zákazníka [persistentní položka]")
+  public Boolean getPrintcustomer() {
+    return printcustomer;
   }
 
-  public void setPrintDealerCategory(Boolean printDealerCategory) {
-    this.printDealerCategory = printDealerCategory;
+  public void setPrintcustomer(Boolean printcustomer) {
+    this.printcustomer = printcustomer;
   }
 
-  public Posshop printSpecification1(Boolean printSpecification1) {
-    this.printSpecification1 = printSpecification1;
+  public Posshop printdealercategory(Boolean printdealercategory) {
+    this.printdealercategory = printdealercategory;
     return this;
   }
 
    /**
-   * Tisknout specifikaci 1 [persistentní položka]
-   * @return printSpecification1
+   * tisknout třídu [persistentní položka]
+   * @return printdealercategory
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout specifikaci 1 [persistentní položka]")
-  public Boolean getPrintSpecification1() {
-    return printSpecification1;
+  @ApiModelProperty(example = "null", value = "tisknout třídu [persistentní položka]")
+  public Boolean getPrintdealercategory() {
+    return printdealercategory;
   }
 
-  public void setPrintSpecification1(Boolean printSpecification1) {
-    this.printSpecification1 = printSpecification1;
+  public void setPrintdealercategory(Boolean printdealercategory) {
+    this.printdealercategory = printdealercategory;
   }
 
-  public Posshop printSpecification2(Boolean printSpecification2) {
-    this.printSpecification2 = printSpecification2;
+  public Posshop printspecification1(Boolean printspecification1) {
+    this.printspecification1 = printspecification1;
     return this;
   }
 
    /**
-   * Tisknout specifikaci 2 [persistentní položka]
-   * @return printSpecification2
+   * tisknout specifikaci 1 [persistentní položka]
+   * @return printspecification1
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout specifikaci 2 [persistentní položka]")
-  public Boolean getPrintSpecification2() {
-    return printSpecification2;
+  @ApiModelProperty(example = "null", value = "tisknout specifikaci 1 [persistentní položka]")
+  public Boolean getPrintspecification1() {
+    return printspecification1;
   }
 
-  public void setPrintSpecification2(Boolean printSpecification2) {
-    this.printSpecification2 = printSpecification2;
+  public void setPrintspecification1(Boolean printspecification1) {
+    this.printspecification1 = printspecification1;
   }
 
-  public Posshop splitByUnits(Boolean splitByUnits) {
-    this.splitByUnits = splitByUnits;
+  public Posshop printspecification2(Boolean printspecification2) {
+    this.printspecification2 = printspecification2;
     return this;
   }
 
    /**
-   * Rozdělit pohyby podle jednotek [persistentní položka]
-   * @return splitByUnits
+   * tisknout specifikaci 2 [persistentní položka]
+   * @return printspecification2
   **/
-  @ApiModelProperty(example = "null", value = "Rozdělit pohyby podle jednotek [persistentní položka]")
-  public Boolean getSplitByUnits() {
-    return splitByUnits;
+  @ApiModelProperty(example = "null", value = "tisknout specifikaci 2 [persistentní položka]")
+  public Boolean getPrintspecification2() {
+    return printspecification2;
   }
 
-  public void setSplitByUnits(Boolean splitByUnits) {
-    this.splitByUnits = splitByUnits;
+  public void setPrintspecification2(Boolean printspecification2) {
+    this.printspecification2 = printspecification2;
   }
 
-  public Posshop lockZeroPurchasePrice(Boolean lockZeroPurchasePrice) {
-    this.lockZeroPurchasePrice = lockZeroPurchasePrice;
+  public Posshop splitbyunits(Boolean splitbyunits) {
+    this.splitbyunits = splitbyunits;
     return this;
   }
 
    /**
-   * Neprodávat nenakoupené zboží [persistentní položka]
-   * @return lockZeroPurchasePrice
+   * rozdělit pohyby podle jednotek [persistentní položka]
+   * @return splitbyunits
   **/
-  @ApiModelProperty(example = "null", value = "Neprodávat nenakoupené zboží [persistentní položka]")
-  public Boolean getLockZeroPurchasePrice() {
-    return lockZeroPurchasePrice;
+  @ApiModelProperty(example = "null", value = "rozdělit pohyby podle jednotek [persistentní položka]")
+  public Boolean getSplitbyunits() {
+    return splitbyunits;
   }
 
-  public void setLockZeroPurchasePrice(Boolean lockZeroPurchasePrice) {
-    this.lockZeroPurchasePrice = lockZeroPurchasePrice;
+  public void setSplitbyunits(Boolean splitbyunits) {
+    this.splitbyunits = splitbyunits;
   }
 
-  public Posshop printRegisterInfo(Boolean printRegisterInfo) {
-    this.printRegisterInfo = printRegisterInfo;
+  public Posshop lockzeropurchaseprice(Boolean lockzeropurchaseprice) {
+    this.lockzeropurchaseprice = lockzeropurchaseprice;
     return this;
   }
 
    /**
-   * Tisknout registraci [persistentní položka]
-   * @return printRegisterInfo
+   * neprodávat nenakoupené zboží [persistentní položka]
+   * @return lockzeropurchaseprice
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout registraci [persistentní položka]")
-  public Boolean getPrintRegisterInfo() {
-    return printRegisterInfo;
+  @ApiModelProperty(example = "null", value = "neprodávat nenakoupené zboží [persistentní položka]")
+  public Boolean getLockzeropurchaseprice() {
+    return lockzeropurchaseprice;
   }
 
-  public void setPrintRegisterInfo(Boolean printRegisterInfo) {
-    this.printRegisterInfo = printRegisterInfo;
+  public void setLockzeropurchaseprice(Boolean lockzeropurchaseprice) {
+    this.lockzeropurchaseprice = lockzeropurchaseprice;
   }
 
-  public Posshop printCurrencyCoef(Boolean printCurrencyCoef) {
-    this.printCurrencyCoef = printCurrencyCoef;
+  public Posshop printregisterinfo(Boolean printregisterinfo) {
+    this.printregisterinfo = printregisterinfo;
     return this;
   }
 
    /**
-   * Tisknout kurz [persistentní položka]
-   * @return printCurrencyCoef
+   * tisknout registraci [persistentní položka]
+   * @return printregisterinfo
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout kurz [persistentní položka]")
-  public Boolean getPrintCurrencyCoef() {
-    return printCurrencyCoef;
+  @ApiModelProperty(example = "null", value = "tisknout registraci [persistentní položka]")
+  public Boolean getPrintregisterinfo() {
+    return printregisterinfo;
   }
 
-  public void setPrintCurrencyCoef(Boolean printCurrencyCoef) {
-    this.printCurrencyCoef = printCurrencyCoef;
+  public void setPrintregisterinfo(Boolean printregisterinfo) {
+    this.printregisterinfo = printregisterinfo;
   }
 
-  public Posshop useLowBorderPLU(Boolean useLowBorderPLU) {
-    this.useLowBorderPLU = useLowBorderPLU;
+  public Posshop printcurrencycoef(Boolean printcurrencycoef) {
+    this.printcurrencycoef = printcurrencycoef;
     return this;
   }
 
    /**
-   * Hranice PLU [persistentní položka]
-   * @return useLowBorderPLU
+   * tisknout kurz [persistentní položka]
+   * @return printcurrencycoef
   **/
-  @ApiModelProperty(example = "null", value = "Hranice PLU [persistentní položka]")
-  public Boolean getUseLowBorderPLU() {
-    return useLowBorderPLU;
+  @ApiModelProperty(example = "null", value = "tisknout kurz [persistentní položka]")
+  public Boolean getPrintcurrencycoef() {
+    return printcurrencycoef;
   }
 
-  public void setUseLowBorderPLU(Boolean useLowBorderPLU) {
-    this.useLowBorderPLU = useLowBorderPLU;
+  public void setPrintcurrencycoef(Boolean printcurrencycoef) {
+    this.printcurrencycoef = printcurrencycoef;
   }
 
-  public Posshop lowBorderPLU(Integer lowBorderPLU) {
-    this.lowBorderPLU = lowBorderPLU;
+  public Posshop uselowborderplu(Boolean uselowborderplu) {
+    this.uselowborderplu = uselowborderplu;
     return this;
   }
 
    /**
-   * Nejmenší PLU [persistentní položka]
-   * @return lowBorderPLU
+   * hranice plu [persistentní položka]
+   * @return uselowborderplu
   **/
-  @ApiModelProperty(example = "null", value = "Nejmenší PLU [persistentní položka]")
-  public Integer getLowBorderPLU() {
-    return lowBorderPLU;
+  @ApiModelProperty(example = "null", value = "hranice plu [persistentní položka]")
+  public Boolean getUselowborderplu() {
+    return uselowborderplu;
   }
 
-  public void setLowBorderPLU(Integer lowBorderPLU) {
-    this.lowBorderPLU = lowBorderPLU;
+  public void setUselowborderplu(Boolean uselowborderplu) {
+    this.uselowborderplu = uselowborderplu;
   }
 
-  public Posshop vATRounding(Integer vATRounding) {
-    this.vATRounding = vATRounding;
+  public Posshop lowborderplu(Integer lowborderplu) {
+    this.lowborderplu = lowborderplu;
     return this;
   }
 
    /**
-   * Zaokrouhlení DPH [persistentní položka]
-   * @return vATRounding
+   * nejmenší plu [persistentní položka]
+   * @return lowborderplu
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlení DPH [persistentní položka]")
-  public Integer getVATRounding() {
-    return vATRounding;
+  @ApiModelProperty(example = "null", value = "nejmenší plu [persistentní položka]")
+  public Integer getLowborderplu() {
+    return lowborderplu;
   }
 
-  public void setVATRounding(Integer vATRounding) {
-    this.vATRounding = vATRounding;
+  public void setLowborderplu(Integer lowborderplu) {
+    this.lowborderplu = lowborderplu;
   }
 
-  public Posshop rowRounding(Integer rowRounding) {
-    this.rowRounding = rowRounding;
+  public Posshop vatrounding(Integer vatrounding) {
+    this.vatrounding = vatrounding;
     return this;
   }
 
    /**
-   * Zaokrouhlení pohybu [persistentní položka]
-   * @return rowRounding
+   * zaokrouhlení dph [persistentní položka]
+   * @return vatrounding
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlení pohybu [persistentní položka]")
-  public Integer getRowRounding() {
-    return rowRounding;
+  @ApiModelProperty(example = "null", value = "zaokrouhlení dph [persistentní položka]")
+  public Integer getVatrounding() {
+    return vatrounding;
   }
 
-  public void setRowRounding(Integer rowRounding) {
-    this.rowRounding = rowRounding;
+  public void setVatrounding(Integer vatrounding) {
+    this.vatrounding = vatrounding;
   }
 
-  public Posshop totalRounding(Integer totalRounding) {
-    this.totalRounding = totalRounding;
+  public Posshop rowrounding(Integer rowrounding) {
+    this.rowrounding = rowrounding;
     return this;
   }
 
    /**
-   * Celkové zaokrouhlení [persistentní položka]
-   * @return totalRounding
+   * zaokrouhlení pohybu [persistentní položka]
+   * @return rowrounding
   **/
-  @ApiModelProperty(example = "null", value = "Celkové zaokrouhlení [persistentní položka]")
-  public Integer getTotalRounding() {
-    return totalRounding;
+  @ApiModelProperty(example = "null", value = "zaokrouhlení pohybu [persistentní položka]")
+  public Integer getRowrounding() {
+    return rowrounding;
   }
 
-  public void setTotalRounding(Integer totalRounding) {
-    this.totalRounding = totalRounding;
+  public void setRowrounding(Integer rowrounding) {
+    this.rowrounding = rowrounding;
   }
 
-  public Posshop priceAndVAT(Integer priceAndVAT) {
-    this.priceAndVAT = priceAndVAT;
+  public Posshop totalrounding(Integer totalrounding) {
+    this.totalrounding = totalrounding;
     return this;
   }
 
    /**
-   * DPH na kase [persistentní položka]
-   * @return priceAndVAT
+   * celkové zaokrouhlení [persistentní položka]
+   * @return totalrounding
   **/
-  @ApiModelProperty(example = "null", value = "DPH na kase [persistentní položka]")
-  public Integer getPriceAndVAT() {
-    return priceAndVAT;
+  @ApiModelProperty(example = "null", value = "celkové zaokrouhlení [persistentní položka]")
+  public Integer getTotalrounding() {
+    return totalrounding;
   }
 
-  public void setPriceAndVAT(Integer priceAndVAT) {
-    this.priceAndVAT = priceAndVAT;
+  public void setTotalrounding(Integer totalrounding) {
+    this.totalrounding = totalrounding;
   }
 
-  public Posshop summaryLevel(Integer summaryLevel) {
-    this.summaryLevel = summaryLevel;
+  public Posshop priceandvat(Integer priceandvat) {
+    this.priceandvat = priceandvat;
     return this;
   }
 
    /**
-   * Sčítání prodejů [persistentní položka]
-   * @return summaryLevel
+   * dph na kase [persistentní položka]
+   * @return priceandvat
   **/
-  @ApiModelProperty(example = "null", value = "Sčítání prodejů [persistentní položka]")
-  public Integer getSummaryLevel() {
-    return summaryLevel;
+  @ApiModelProperty(example = "null", value = "dph na kase [persistentní položka]")
+  public Integer getPriceandvat() {
+    return priceandvat;
   }
 
-  public void setSummaryLevel(Integer summaryLevel) {
-    this.summaryLevel = summaryLevel;
+  public void setPriceandvat(Integer priceandvat) {
+    this.priceandvat = priceandvat;
   }
 
-  public Posshop completePrices(Boolean completePrices) {
-    this.completePrices = completePrices;
+  public Posshop summarylevel(Integer summarylevel) {
+    this.summarylevel = summarylevel;
     return this;
   }
 
    /**
-   * Příjemky zboží mají kompletní ceny [persistentní položka]
-   * @return completePrices
+   * sčítání prodejů [persistentní položka]
+   * @return summarylevel
   **/
-  @ApiModelProperty(example = "null", value = "Příjemky zboží mají kompletní ceny [persistentní položka]")
-  public Boolean getCompletePrices() {
-    return completePrices;
+  @ApiModelProperty(example = "null", value = "sčítání prodejů [persistentní položka]")
+  public Integer getSummarylevel() {
+    return summarylevel;
   }
 
-  public void setCompletePrices(Boolean completePrices) {
-    this.completePrices = completePrices;
+  public void setSummarylevel(Integer summarylevel) {
+    this.summarylevel = summarylevel;
   }
 
-  public Posshop containerCompletePrices(Boolean containerCompletePrices) {
-    this.containerCompletePrices = containerCompletePrices;
+  public Posshop completeprices(Boolean completeprices) {
+    this.completeprices = completeprices;
     return this;
   }
 
    /**
-   * Příjemky obalů mají kompletní ceny [persistentní položka]
-   * @return containerCompletePrices
+   * příjemky zboží mají kompletní ceny [persistentní položka]
+   * @return completeprices
   **/
-  @ApiModelProperty(example = "null", value = "Příjemky obalů mají kompletní ceny [persistentní položka]")
-  public Boolean getContainerCompletePrices() {
-    return containerCompletePrices;
+  @ApiModelProperty(example = "null", value = "příjemky zboží mají kompletní ceny [persistentní položka]")
+  public Boolean getCompleteprices() {
+    return completeprices;
   }
 
-  public void setContainerCompletePrices(Boolean containerCompletePrices) {
-    this.containerCompletePrices = containerCompletePrices;
+  public void setCompleteprices(Boolean completeprices) {
+    this.completeprices = completeprices;
   }
 
-  public Posshop useFirmPriceDefinition(Boolean useFirmPriceDefinition) {
-    this.useFirmPriceDefinition = useFirmPriceDefinition;
+  public Posshop containercompleteprices(Boolean containercompleteprices) {
+    this.containercompleteprices = containercompleteprices;
     return this;
   }
 
    /**
-   * Preferovat definici ceny z firmy [persistentní položka]
-   * @return useFirmPriceDefinition
+   * příjemky obalů mají kompletní ceny [persistentní položka]
+   * @return containercompleteprices
   **/
-  @ApiModelProperty(example = "null", value = "Preferovat definici ceny z firmy [persistentní položka]")
-  public Boolean getUseFirmPriceDefinition() {
-    return useFirmPriceDefinition;
+  @ApiModelProperty(example = "null", value = "příjemky obalů mají kompletní ceny [persistentní položka]")
+  public Boolean getContainercompleteprices() {
+    return containercompleteprices;
   }
 
-  public void setUseFirmPriceDefinition(Boolean useFirmPriceDefinition) {
-    this.useFirmPriceDefinition = useFirmPriceDefinition;
+  public void setContainercompleteprices(Boolean containercompleteprices) {
+    this.containercompleteprices = containercompleteprices;
   }
 
-  public Posshop containerRefundPrice(Integer containerRefundPrice) {
-    this.containerRefundPrice = containerRefundPrice;
+  public Posshop usefirmpricedefinition(Boolean usefirmpricedefinition) {
+    this.usefirmpricedefinition = usefirmpricedefinition;
     return this;
   }
 
    /**
-   * Cena obalu na příjemce [persistentní položka]
-   * @return containerRefundPrice
+   * preferovat definici ceny z firmy [persistentní položka]
+   * @return usefirmpricedefinition
   **/
-  @ApiModelProperty(example = "null", value = "Cena obalu na příjemce [persistentní položka]")
-  public Integer getContainerRefundPrice() {
-    return containerRefundPrice;
+  @ApiModelProperty(example = "null", value = "preferovat definici ceny z firmy [persistentní položka]")
+  public Boolean getUsefirmpricedefinition() {
+    return usefirmpricedefinition;
   }
 
-  public void setContainerRefundPrice(Integer containerRefundPrice) {
-    this.containerRefundPrice = containerRefundPrice;
+  public void setUsefirmpricedefinition(Boolean usefirmpricedefinition) {
+    this.usefirmpricedefinition = usefirmpricedefinition;
   }
 
-  public Posshop gastroDocQueueID(String gastroDocQueueID) {
-    this.gastroDocQueueID = gastroDocQueueID;
+  public Posshop containerrefundprice(Integer containerrefundprice) {
+    this.containerrefundprice = containerrefundprice;
     return this;
   }
 
    /**
-   * Řada účtenek restauračního prodeje; ID objektu Řada dokladů [persistentní položka]
-   * @return gastroDocQueueID
+   * cena obalu na příjemce [persistentní položka]
+   * @return containerrefundprice
   **/
-  @ApiModelProperty(example = "null", value = "Řada účtenek restauračního prodeje; ID objektu Řada dokladů [persistentní položka]")
-  public String getGastroDocQueueID() {
-    return gastroDocQueueID;
+  @ApiModelProperty(example = "null", value = "cena obalu na příjemce [persistentní položka]")
+  public Integer getContainerrefundprice() {
+    return containerrefundprice;
   }
 
-  public void setGastroDocQueueID(String gastroDocQueueID) {
-    this.gastroDocQueueID = gastroDocQueueID;
+  public void setContainerrefundprice(Integer containerrefundprice) {
+    this.containerrefundprice = containerrefundprice;
   }
 
-  public Posshop searchOrder(String searchOrder) {
-    this.searchOrder = searchOrder;
+  public Posshop gastrodocqueueId(String gastrodocqueueId) {
+    this.gastrodocqueueId = gastrodocqueueId;
     return this;
   }
 
    /**
-   * Pořadí hledání [persistentní položka]
-   * @return searchOrder
+   * Řada účtenek restauračního prodeje; id objektu Řada dokladů [persistentní položka]
+   * @return gastrodocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí hledání [persistentní položka]")
-  public String getSearchOrder() {
-    return searchOrder;
+  @ApiModelProperty(example = "null", value = "Řada účtenek restauračního prodeje; id objektu Řada dokladů [persistentní položka]")
+  public String getGastrodocqueueId() {
+    return gastrodocqueueId;
   }
 
-  public void setSearchOrder(String searchOrder) {
-    this.searchOrder = searchOrder;
+  public void setGastrodocqueueId(String gastrodocqueueId) {
+    this.gastrodocqueueId = gastrodocqueueId;
   }
 
-  public Posshop searchMode(Integer searchMode) {
-    this.searchMode = searchMode;
+  public Posshop searchorder(String searchorder) {
+    this.searchorder = searchorder;
     return this;
   }
 
    /**
-   * Režim vyhledávání [persistentní položka]
-   * @return searchMode
+   * pořadí hledání [persistentní položka]
+   * @return searchorder
   **/
-  @ApiModelProperty(example = "null", value = "Režim vyhledávání [persistentní položka]")
-  public Integer getSearchMode() {
-    return searchMode;
+  @ApiModelProperty(example = "null", value = "pořadí hledání [persistentní položka]")
+  public String getSearchorder() {
+    return searchorder;
   }
 
-  public void setSearchMode(Integer searchMode) {
-    this.searchMode = searchMode;
+  public void setSearchorder(String searchorder) {
+    this.searchorder = searchorder;
   }
 
-  public Posshop useUnitSelection(Integer useUnitSelection) {
-    this.useUnitSelection = useUnitSelection;
+  public Posshop searchmode(Integer searchmode) {
+    this.searchmode = searchmode;
     return this;
   }
 
    /**
-   * Nabízet volbu jednotky [persistentní položka]
-   * @return useUnitSelection
+   * režim vyhledávání [persistentní položka]
+   * @return searchmode
   **/
-  @ApiModelProperty(example = "null", value = "Nabízet volbu jednotky [persistentní položka]")
-  public Integer getUseUnitSelection() {
-    return useUnitSelection;
+  @ApiModelProperty(example = "null", value = "režim vyhledávání [persistentní položka]")
+  public Integer getSearchmode() {
+    return searchmode;
   }
 
-  public void setUseUnitSelection(Integer useUnitSelection) {
-    this.useUnitSelection = useUnitSelection;
+  public void setSearchmode(Integer searchmode) {
+    this.searchmode = searchmode;
   }
 
-  public Posshop dealerDiscountKind(Integer dealerDiscountKind) {
-    this.dealerDiscountKind = dealerDiscountKind;
+  public Posshop useunitselection(Integer useunitselection) {
+    this.useunitselection = useunitselection;
     return this;
   }
 
    /**
-   * Dealerské slevy [persistentní položka]
-   * @return dealerDiscountKind
+   * nabízet volbu jednotky [persistentní položka]
+   * @return useunitselection
   **/
-  @ApiModelProperty(example = "null", value = "Dealerské slevy [persistentní položka]")
-  public Integer getDealerDiscountKind() {
-    return dealerDiscountKind;
+  @ApiModelProperty(example = "null", value = "nabízet volbu jednotky [persistentní položka]")
+  public Integer getUseunitselection() {
+    return useunitselection;
   }
 
-  public void setDealerDiscountKind(Integer dealerDiscountKind) {
-    this.dealerDiscountKind = dealerDiscountKind;
+  public void setUseunitselection(Integer useunitselection) {
+    this.useunitselection = useunitselection;
   }
 
-  public Posshop useQuantityDiscount(Boolean useQuantityDiscount) {
-    this.useQuantityDiscount = useQuantityDiscount;
+  public Posshop dealerdiscountkind(Integer dealerdiscountkind) {
+    this.dealerdiscountkind = dealerdiscountkind;
     return this;
   }
 
    /**
-   * Množstevní slevy [persistentní položka]
-   * @return useQuantityDiscount
+   * dealerské slevy [persistentní položka]
+   * @return dealerdiscountkind
   **/
-  @ApiModelProperty(example = "null", value = "Množstevní slevy [persistentní položka]")
-  public Boolean getUseQuantityDiscount() {
-    return useQuantityDiscount;
+  @ApiModelProperty(example = "null", value = "dealerské slevy [persistentní položka]")
+  public Integer getDealerdiscountkind() {
+    return dealerdiscountkind;
   }
 
-  public void setUseQuantityDiscount(Boolean useQuantityDiscount) {
-    this.useQuantityDiscount = useQuantityDiscount;
+  public void setDealerdiscountkind(Integer dealerdiscountkind) {
+    this.dealerdiscountkind = dealerdiscountkind;
   }
 
-  public Posshop dealerDiscountOnHandMadePrice(Boolean dealerDiscountOnHandMadePrice) {
-    this.dealerDiscountOnHandMadePrice = dealerDiscountOnHandMadePrice;
+  public Posshop usequantitydiscount(Boolean usequantitydiscount) {
+    this.usequantitydiscount = usequantitydiscount;
     return this;
   }
 
    /**
-   * Použít dealerské slevy při ručně zadané ceně [persistentní položka]
-   * @return dealerDiscountOnHandMadePrice
+   * množstevní slevy [persistentní položka]
+   * @return usequantitydiscount
   **/
-  @ApiModelProperty(example = "null", value = "Použít dealerské slevy při ručně zadané ceně [persistentní položka]")
-  public Boolean getDealerDiscountOnHandMadePrice() {
-    return dealerDiscountOnHandMadePrice;
+  @ApiModelProperty(example = "null", value = "množstevní slevy [persistentní položka]")
+  public Boolean getUsequantitydiscount() {
+    return usequantitydiscount;
   }
 
-  public void setDealerDiscountOnHandMadePrice(Boolean dealerDiscountOnHandMadePrice) {
-    this.dealerDiscountOnHandMadePrice = dealerDiscountOnHandMadePrice;
+  public void setUsequantitydiscount(Boolean usequantitydiscount) {
+    this.usequantitydiscount = usequantitydiscount;
   }
 
-  public Posshop refundInForeignCurrency(Boolean refundInForeignCurrency) {
-    this.refundInForeignCurrency = refundInForeignCurrency;
+  public Posshop dealerdiscountonhandmadeprice(Boolean dealerdiscountonhandmadeprice) {
+    this.dealerdiscountonhandmadeprice = dealerdiscountonhandmadeprice;
     return this;
   }
 
    /**
-   * Vracet cizí měnu [persistentní položka]
-   * @return refundInForeignCurrency
+   * použít dealerské slevy při ručně zadané ceně [persistentní položka]
+   * @return dealerdiscountonhandmadeprice
   **/
-  @ApiModelProperty(example = "null", value = "Vracet cizí měnu [persistentní položka]")
-  public Boolean getRefundInForeignCurrency() {
-    return refundInForeignCurrency;
+  @ApiModelProperty(example = "null", value = "použít dealerské slevy při ručně zadané ceně [persistentní položka]")
+  public Boolean getDealerdiscountonhandmadeprice() {
+    return dealerdiscountonhandmadeprice;
   }
 
-  public void setRefundInForeignCurrency(Boolean refundInForeignCurrency) {
-    this.refundInForeignCurrency = refundInForeignCurrency;
+  public void setDealerdiscountonhandmadeprice(Boolean dealerdiscountonhandmadeprice) {
+    this.dealerdiscountonhandmadeprice = dealerdiscountonhandmadeprice;
   }
 
-  public Posshop useRefundStore(Boolean useRefundStore) {
-    this.useRefundStore = useRefundStore;
+  public Posshop refundinforeigncurrency(Boolean refundinforeigncurrency) {
+    this.refundinforeigncurrency = refundinforeigncurrency;
     return this;
   }
 
    /**
-   * Vracet do reklamačního skladu [persistentní položka]
-   * @return useRefundStore
+   * vracet cizí měnu [persistentní položka]
+   * @return refundinforeigncurrency
   **/
-  @ApiModelProperty(example = "null", value = "Vracet do reklamačního skladu [persistentní položka]")
-  public Boolean getUseRefundStore() {
-    return useRefundStore;
+  @ApiModelProperty(example = "null", value = "vracet cizí měnu [persistentní položka]")
+  public Boolean getRefundinforeigncurrency() {
+    return refundinforeigncurrency;
   }
 
-  public void setUseRefundStore(Boolean useRefundStore) {
-    this.useRefundStore = useRefundStore;
+  public void setRefundinforeigncurrency(Boolean refundinforeigncurrency) {
+    this.refundinforeigncurrency = refundinforeigncurrency;
   }
 
-  public Posshop refundPayments(Boolean refundPayments) {
-    this.refundPayments = refundPayments;
+  public Posshop userefundstore(Boolean userefundstore) {
+    this.userefundstore = userefundstore;
     return this;
   }
 
    /**
-   * Vracet platby [persistentní položka]
-   * @return refundPayments
+   * vracet do reklamačního skladu [persistentní položka]
+   * @return userefundstore
   **/
-  @ApiModelProperty(example = "null", value = "Vracet platby [persistentní položka]")
-  public Boolean getRefundPayments() {
-    return refundPayments;
+  @ApiModelProperty(example = "null", value = "vracet do reklamačního skladu [persistentní položka]")
+  public Boolean getUserefundstore() {
+    return userefundstore;
   }
 
-  public void setRefundPayments(Boolean refundPayments) {
-    this.refundPayments = refundPayments;
+  public void setUserefundstore(Boolean userefundstore) {
+    this.userefundstore = userefundstore;
   }
 
-  public Posshop entireMacroCard(Boolean entireMacroCard) {
-    this.entireMacroCard = entireMacroCard;
+  public Posshop refundpayments(Boolean refundpayments) {
+    this.refundpayments = refundpayments;
     return this;
   }
 
    /**
-   * Pracovat s celou makrokartou [persistentní položka]
-   * @return entireMacroCard
+   * vracet platby [persistentní položka]
+   * @return refundpayments
   **/
-  @ApiModelProperty(example = "null", value = "Pracovat s celou makrokartou [persistentní položka]")
-  public Boolean getEntireMacroCard() {
-    return entireMacroCard;
+  @ApiModelProperty(example = "null", value = "vracet platby [persistentní položka]")
+  public Boolean getRefundpayments() {
+    return refundpayments;
   }
 
-  public void setEntireMacroCard(Boolean entireMacroCard) {
-    this.entireMacroCard = entireMacroCard;
+  public void setRefundpayments(Boolean refundpayments) {
+    this.refundpayments = refundpayments;
   }
 
-  public Posshop useBusOrder(Integer useBusOrder) {
-    this.useBusOrder = useBusOrder;
+  public Posshop entiremacrocard(Boolean entiremacrocard) {
+    this.entiremacrocard = entiremacrocard;
     return this;
   }
 
    /**
-   * Používat zakázky [persistentní položka]
-   * @return useBusOrder
+   * pracovat s celou makrokartou [persistentní položka]
+   * @return entiremacrocard
   **/
-  @ApiModelProperty(example = "null", value = "Používat zakázky [persistentní položka]")
-  public Integer getUseBusOrder() {
-    return useBusOrder;
+  @ApiModelProperty(example = "null", value = "pracovat s celou makrokartou [persistentní položka]")
+  public Boolean getEntiremacrocard() {
+    return entiremacrocard;
   }
 
-  public void setUseBusOrder(Integer useBusOrder) {
-    this.useBusOrder = useBusOrder;
+  public void setEntiremacrocard(Boolean entiremacrocard) {
+    this.entiremacrocard = entiremacrocard;
   }
 
-  public Posshop useBusTransaction(Integer useBusTransaction) {
-    this.useBusTransaction = useBusTransaction;
+  public Posshop usebusorder(Integer usebusorder) {
+    this.usebusorder = usebusorder;
     return this;
   }
 
    /**
-   * Používat obch.případy [persistentní položka]
-   * @return useBusTransaction
+   * používat zakázky [persistentní položka]
+   * @return usebusorder
   **/
-  @ApiModelProperty(example = "null", value = "Používat obch.případy [persistentní položka]")
-  public Integer getUseBusTransaction() {
-    return useBusTransaction;
+  @ApiModelProperty(example = "null", value = "používat zakázky [persistentní položka]")
+  public Integer getUsebusorder() {
+    return usebusorder;
   }
 
-  public void setUseBusTransaction(Integer useBusTransaction) {
-    this.useBusTransaction = useBusTransaction;
+  public void setUsebusorder(Integer usebusorder) {
+    this.usebusorder = usebusorder;
   }
 
-  public Posshop useBusProject(Integer useBusProject) {
-    this.useBusProject = useBusProject;
+  public Posshop usebustransaction(Integer usebustransaction) {
+    this.usebustransaction = usebustransaction;
     return this;
   }
 
    /**
-   * Používat projekty [persistentní položka]
-   * @return useBusProject
+   * používat obch.případy [persistentní položka]
+   * @return usebustransaction
   **/
-  @ApiModelProperty(example = "null", value = "Používat projekty [persistentní položka]")
-  public Integer getUseBusProject() {
-    return useBusProject;
+  @ApiModelProperty(example = "null", value = "používat obch.případy [persistentní položka]")
+  public Integer getUsebustransaction() {
+    return usebustransaction;
   }
 
-  public void setUseBusProject(Integer useBusProject) {
-    this.useBusProject = useBusProject;
+  public void setUsebustransaction(Integer usebustransaction) {
+    this.usebustransaction = usebustransaction;
   }
 
-  public Posshop useDescription(Integer useDescription) {
-    this.useDescription = useDescription;
+  public Posshop usebusproject(Integer usebusproject) {
+    this.usebusproject = usebusproject;
     return this;
   }
 
    /**
-   * Používat poznámku [persistentní položka]
-   * @return useDescription
+   * používat projekty [persistentní položka]
+   * @return usebusproject
   **/
-  @ApiModelProperty(example = "null", value = "Používat poznámku [persistentní položka]")
-  public Integer getUseDescription() {
-    return useDescription;
+  @ApiModelProperty(example = "null", value = "používat projekty [persistentní položka]")
+  public Integer getUsebusproject() {
+    return usebusproject;
   }
 
-  public void setUseDescription(Integer useDescription) {
-    this.useDescription = useDescription;
+  public void setUsebusproject(Integer usebusproject) {
+    this.usebusproject = usebusproject;
   }
 
-  public Posshop useDescription2(Integer useDescription2) {
-    this.useDescription2 = useDescription2;
+  public Posshop usedescription(Integer usedescription) {
+    this.usedescription = usedescription;
     return this;
   }
 
    /**
-   * Používat poznámku 2 [persistentní položka]
-   * @return useDescription2
+   * používat poznámku [persistentní položka]
+   * @return usedescription
   **/
-  @ApiModelProperty(example = "null", value = "Používat poznámku 2 [persistentní položka]")
-  public Integer getUseDescription2() {
-    return useDescription2;
+  @ApiModelProperty(example = "null", value = "používat poznámku [persistentní položka]")
+  public Integer getUsedescription() {
+    return usedescription;
   }
 
-  public void setUseDescription2(Integer useDescription2) {
-    this.useDescription2 = useDescription2;
+  public void setUsedescription(Integer usedescription) {
+    this.usedescription = usedescription;
   }
 
-  public Posshop onLineStore(Boolean onLineStore) {
-    this.onLineStore = onLineStore;
+  public Posshop usedescription2(Integer usedescription2) {
+    this.usedescription2 = usedescription2;
     return this;
   }
 
    /**
-   * OnLine [persistentní položka]
-   * @return onLineStore
+   * používat poznámku 2 [persistentní položka]
+   * @return usedescription2
   **/
-  @ApiModelProperty(example = "null", value = "OnLine [persistentní položka]")
-  public Boolean getOnLineStore() {
-    return onLineStore;
+  @ApiModelProperty(example = "null", value = "používat poznámku 2 [persistentní položka]")
+  public Integer getUsedescription2() {
+    return usedescription2;
   }
 
-  public void setOnLineStore(Boolean onLineStore) {
-    this.onLineStore = onLineStore;
+  public void setUsedescription2(Integer usedescription2) {
+    this.usedescription2 = usedescription2;
   }
 
-  public Posshop useSerialNumbers(Boolean useSerialNumbers) {
-    this.useSerialNumbers = useSerialNumbers;
+  public Posshop onlinestore(Boolean onlinestore) {
+    this.onlinestore = onlinestore;
     return this;
   }
 
    /**
-   * Zadávat sériová čísla [persistentní položka]
-   * @return useSerialNumbers
+   * online [persistentní položka]
+   * @return onlinestore
   **/
-  @ApiModelProperty(example = "null", value = "Zadávat sériová čísla [persistentní položka]")
-  public Boolean getUseSerialNumbers() {
-    return useSerialNumbers;
+  @ApiModelProperty(example = "null", value = "online [persistentní položka]")
+  public Boolean getOnlinestore() {
+    return onlinestore;
   }
 
-  public void setUseSerialNumbers(Boolean useSerialNumbers) {
-    this.useSerialNumbers = useSerialNumbers;
+  public void setOnlinestore(Boolean onlinestore) {
+    this.onlinestore = onlinestore;
   }
 
-  public Posshop useStoreBatches(Boolean useStoreBatches) {
-    this.useStoreBatches = useStoreBatches;
+  public Posshop useserialnumbers(Boolean useserialnumbers) {
+    this.useserialnumbers = useserialnumbers;
     return this;
   }
 
    /**
-   * Zadávat šarže [persistentní položka]
-   * @return useStoreBatches
+   * zadávat sériová čísla [persistentní položka]
+   * @return useserialnumbers
   **/
-  @ApiModelProperty(example = "null", value = "Zadávat šarže [persistentní položka]")
-  public Boolean getUseStoreBatches() {
-    return useStoreBatches;
+  @ApiModelProperty(example = "null", value = "zadávat sériová čísla [persistentní položka]")
+  public Boolean getUseserialnumbers() {
+    return useserialnumbers;
   }
 
-  public void setUseStoreBatches(Boolean useStoreBatches) {
-    this.useStoreBatches = useStoreBatches;
+  public void setUseserialnumbers(Boolean useserialnumbers) {
+    this.useserialnumbers = useserialnumbers;
   }
 
-  public Posshop useMultipleBills(Boolean useMultipleBills) {
-    this.useMultipleBills = useMultipleBills;
+  public Posshop usestorebatches(Boolean usestorebatches) {
+    this.usestorebatches = usestorebatches;
     return this;
   }
 
    /**
-   * Více otevřených účtenek [persistentní položka]
-   * @return useMultipleBills
+   * zadávat šarže [persistentní položka]
+   * @return usestorebatches
   **/
-  @ApiModelProperty(example = "null", value = "Více otevřených účtenek [persistentní položka]")
-  public Boolean getUseMultipleBills() {
-    return useMultipleBills;
+  @ApiModelProperty(example = "null", value = "zadávat šarže [persistentní položka]")
+  public Boolean getUsestorebatches() {
+    return usestorebatches;
   }
 
-  public void setUseMultipleBills(Boolean useMultipleBills) {
-    this.useMultipleBills = useMultipleBills;
+  public void setUsestorebatches(Boolean usestorebatches) {
+    this.usestorebatches = usestorebatches;
   }
 
-  public Posshop useIdentificationLimit(Boolean useIdentificationLimit) {
-    this.useIdentificationLimit = useIdentificationLimit;
+  public Posshop usemultiplebills(Boolean usemultiplebills) {
+    this.usemultiplebills = usemultiplebills;
     return this;
   }
 
    /**
-   * Používat limit ceny [persistentní položka]
-   * @return useIdentificationLimit
+   * více otevřených účtenek [persistentní položka]
+   * @return usemultiplebills
   **/
-  @ApiModelProperty(example = "null", value = "Používat limit ceny [persistentní položka]")
-  public Boolean getUseIdentificationLimit() {
-    return useIdentificationLimit;
+  @ApiModelProperty(example = "null", value = "více otevřených účtenek [persistentní položka]")
+  public Boolean getUsemultiplebills() {
+    return usemultiplebills;
   }
 
-  public void setUseIdentificationLimit(Boolean useIdentificationLimit) {
-    this.useIdentificationLimit = useIdentificationLimit;
+  public void setUsemultiplebills(Boolean usemultiplebills) {
+    this.usemultiplebills = usemultiplebills;
   }
 
-  public Posshop identificationLimit(Double identificationLimit) {
-    this.identificationLimit = identificationLimit;
+  public Posshop useidentificationlimit(Boolean useidentificationlimit) {
+    this.useidentificationlimit = useidentificationlimit;
     return this;
   }
 
    /**
-   * Limit ceny [persistentní položka]
-   * @return identificationLimit
+   * používat limit ceny [persistentní položka]
+   * @return useidentificationlimit
   **/
-  @ApiModelProperty(example = "null", value = "Limit ceny [persistentní položka]")
-  public Double getIdentificationLimit() {
-    return identificationLimit;
+  @ApiModelProperty(example = "null", value = "používat limit ceny [persistentní položka]")
+  public Boolean getUseidentificationlimit() {
+    return useidentificationlimit;
   }
 
-  public void setIdentificationLimit(Double identificationLimit) {
-    this.identificationLimit = identificationLimit;
+  public void setUseidentificationlimit(Boolean useidentificationlimit) {
+    this.useidentificationlimit = useidentificationlimit;
   }
 
-  public Posshop showStock(Boolean showStock) {
-    this.showStock = showStock;
+  public Posshop identificationlimit(Double identificationlimit) {
+    this.identificationlimit = identificationlimit;
     return this;
   }
 
    /**
-   * Zobrazovat zásobu [persistentní položka]
-   * @return showStock
+   * limit ceny [persistentní položka]
+   * @return identificationlimit
   **/
-  @ApiModelProperty(example = "null", value = "Zobrazovat zásobu [persistentní položka]")
-  public Boolean getShowStock() {
-    return showStock;
+  @ApiModelProperty(example = "null", value = "limit ceny [persistentní položka]")
+  public Double getIdentificationlimit() {
+    return identificationlimit;
   }
 
-  public void setShowStock(Boolean showStock) {
-    this.showStock = showStock;
+  public void setIdentificationlimit(Double identificationlimit) {
+    this.identificationlimit = identificationlimit;
   }
 
-  public Posshop showStockInPriceList(Boolean showStockInPriceList) {
-    this.showStockInPriceList = showStockInPriceList;
+  public Posshop showstock(Boolean showstock) {
+    this.showstock = showstock;
     return this;
   }
 
    /**
-   * V ceníku zobrazovat zásobu [persistentní položka]
-   * @return showStockInPriceList
+   * zobrazovat zásobu [persistentní položka]
+   * @return showstock
   **/
-  @ApiModelProperty(example = "null", value = "V ceníku zobrazovat zásobu [persistentní položka]")
-  public Boolean getShowStockInPriceList() {
-    return showStockInPriceList;
+  @ApiModelProperty(example = "null", value = "zobrazovat zásobu [persistentní položka]")
+  public Boolean getShowstock() {
+    return showstock;
   }
 
-  public void setShowStockInPriceList(Boolean showStockInPriceList) {
-    this.showStockInPriceList = showStockInPriceList;
+  public void setShowstock(Boolean showstock) {
+    this.showstock = showstock;
   }
 
-  public Posshop outOfStockDelivery(Integer outOfStockDelivery) {
-    this.outOfStockDelivery = outOfStockDelivery;
+  public Posshop showstockinpricelist(Boolean showstockinpricelist) {
+    this.showstockinpricelist = showstockinpricelist;
     return this;
   }
 
    /**
-   * Prodej do mínusu [persistentní položka]
-   * @return outOfStockDelivery
+   * v ceníku zobrazovat zásobu [persistentní položka]
+   * @return showstockinpricelist
   **/
-  @ApiModelProperty(example = "null", value = "Prodej do mínusu [persistentní položka]")
-  public Integer getOutOfStockDelivery() {
-    return outOfStockDelivery;
+  @ApiModelProperty(example = "null", value = "v ceníku zobrazovat zásobu [persistentní položka]")
+  public Boolean getShowstockinpricelist() {
+    return showstockinpricelist;
   }
 
-  public void setOutOfStockDelivery(Integer outOfStockDelivery) {
-    this.outOfStockDelivery = outOfStockDelivery;
+  public void setShowstockinpricelist(Boolean showstockinpricelist) {
+    this.showstockinpricelist = showstockinpricelist;
   }
 
-  public Posshop outOfStockDeliveryG(Integer outOfStockDeliveryG) {
-    this.outOfStockDeliveryG = outOfStockDeliveryG;
+  public Posshop outofstockdelivery(Integer outofstockdelivery) {
+    this.outofstockdelivery = outofstockdelivery;
     return this;
   }
 
    /**
-   * Prodej do mínusu [persistentní položka]
-   * @return outOfStockDeliveryG
+   * prodej do mínusu [persistentní položka]
+   * @return outofstockdelivery
   **/
-  @ApiModelProperty(example = "null", value = "Prodej do mínusu [persistentní položka]")
-  public Integer getOutOfStockDeliveryG() {
-    return outOfStockDeliveryG;
+  @ApiModelProperty(example = "null", value = "prodej do mínusu [persistentní položka]")
+  public Integer getOutofstockdelivery() {
+    return outofstockdelivery;
   }
 
-  public void setOutOfStockDeliveryG(Integer outOfStockDeliveryG) {
-    this.outOfStockDeliveryG = outOfStockDeliveryG;
+  public void setOutofstockdelivery(Integer outofstockdelivery) {
+    this.outofstockdelivery = outofstockdelivery;
   }
 
-  public Posshop cashBackPositive(Boolean cashBackPositive) {
-    this.cashBackPositive = cashBackPositive;
+  public Posshop outofstockdeliveryg(Integer outofstockdeliveryg) {
+    this.outofstockdeliveryg = outofstockdeliveryg;
     return this;
   }
 
    /**
-   * Vracení peněz kladně [persistentní položka]
-   * @return cashBackPositive
+   * prodej do mínusu [persistentní položka]
+   * @return outofstockdeliveryg
   **/
-  @ApiModelProperty(example = "null", value = "Vracení peněz kladně [persistentní položka]")
-  public Boolean getCashBackPositive() {
-    return cashBackPositive;
+  @ApiModelProperty(example = "null", value = "prodej do mínusu [persistentní položka]")
+  public Integer getOutofstockdeliveryg() {
+    return outofstockdeliveryg;
   }
 
-  public void setCashBackPositive(Boolean cashBackPositive) {
-    this.cashBackPositive = cashBackPositive;
+  public void setOutofstockdeliveryg(Integer outofstockdeliveryg) {
+    this.outofstockdeliveryg = outofstockdeliveryg;
   }
 
-  public Posshop usePriceSelection(Integer usePriceSelection) {
-    this.usePriceSelection = usePriceSelection;
+  public Posshop cashbackpositive(Boolean cashbackpositive) {
+    this.cashbackpositive = cashbackpositive;
     return this;
   }
 
    /**
-   * Nabízet ceny [persistentní položka]
-   * @return usePriceSelection
+   * vracení peněz kladně [persistentní položka]
+   * @return cashbackpositive
   **/
-  @ApiModelProperty(example = "null", value = "Nabízet ceny [persistentní položka]")
-  public Integer getUsePriceSelection() {
-    return usePriceSelection;
+  @ApiModelProperty(example = "null", value = "vracení peněz kladně [persistentní položka]")
+  public Boolean getCashbackpositive() {
+    return cashbackpositive;
   }
 
-  public void setUsePriceSelection(Integer usePriceSelection) {
-    this.usePriceSelection = usePriceSelection;
+  public void setCashbackpositive(Boolean cashbackpositive) {
+    this.cashbackpositive = cashbackpositive;
   }
 
-  public Posshop paymentMode(Integer paymentMode) {
-    this.paymentMode = paymentMode;
+  public Posshop usepriceselection(Integer usepriceselection) {
+    this.usepriceselection = usepriceselection;
     return this;
   }
 
    /**
-   * Způsob placení [persistentní položka]
-   * @return paymentMode
+   * nabízet ceny [persistentní položka]
+   * @return usepriceselection
   **/
-  @ApiModelProperty(example = "null", value = "Způsob placení [persistentní položka]")
-  public Integer getPaymentMode() {
-    return paymentMode;
+  @ApiModelProperty(example = "null", value = "nabízet ceny [persistentní položka]")
+  public Integer getUsepriceselection() {
+    return usepriceselection;
   }
 
-  public void setPaymentMode(Integer paymentMode) {
-    this.paymentMode = paymentMode;
+  public void setUsepriceselection(Integer usepriceselection) {
+    this.usepriceselection = usepriceselection;
   }
 
-  public Posshop countOfDecimalPlaces(Integer countOfDecimalPlaces) {
-    this.countOfDecimalPlaces = countOfDecimalPlaces;
+  public Posshop paymentmode(Integer paymentmode) {
+    this.paymentmode = paymentmode;
     return this;
   }
 
    /**
-   * Počet desetinných míst [persistentní položka]
-   * @return countOfDecimalPlaces
+   * způsob placení [persistentní položka]
+   * @return paymentmode
   **/
-  @ApiModelProperty(example = "null", value = "Počet desetinných míst [persistentní položka]")
-  public Integer getCountOfDecimalPlaces() {
-    return countOfDecimalPlaces;
+  @ApiModelProperty(example = "null", value = "způsob placení [persistentní položka]")
+  public Integer getPaymentmode() {
+    return paymentmode;
   }
 
-  public void setCountOfDecimalPlaces(Integer countOfDecimalPlaces) {
-    this.countOfDecimalPlaces = countOfDecimalPlaces;
+  public void setPaymentmode(Integer paymentmode) {
+    this.paymentmode = paymentmode;
   }
 
-  public Posshop pricePrecision(Integer pricePrecision) {
-    this.pricePrecision = pricePrecision;
+  public Posshop countofdecimalplaces(Integer countofdecimalplaces) {
+    this.countofdecimalplaces = countofdecimalplaces;
     return this;
   }
 
    /**
-   * Přesnost ceny [persistentní položka]
-   * @return pricePrecision
+   * počet desetinných míst [persistentní položka]
+   * @return countofdecimalplaces
   **/
-  @ApiModelProperty(example = "null", value = "Přesnost ceny [persistentní položka]")
-  public Integer getPricePrecision() {
-    return pricePrecision;
+  @ApiModelProperty(example = "null", value = "počet desetinných míst [persistentní položka]")
+  public Integer getCountofdecimalplaces() {
+    return countofdecimalplaces;
   }
 
-  public void setPricePrecision(Integer pricePrecision) {
-    this.pricePrecision = pricePrecision;
+  public void setCountofdecimalplaces(Integer countofdecimalplaces) {
+    this.countofdecimalplaces = countofdecimalplaces;
   }
 
-  public Posshop returnOnlyFullBill(Boolean returnOnlyFullBill) {
-    this.returnOnlyFullBill = returnOnlyFullBill;
+  public Posshop priceprecision(Integer priceprecision) {
+    this.priceprecision = priceprecision;
     return this;
   }
 
    /**
-   * Vracet jen celé účtenky [persistentní položka]
-   * @return returnOnlyFullBill
+   * přesnost ceny [persistentní položka]
+   * @return priceprecision
   **/
-  @ApiModelProperty(example = "null", value = "Vracet jen celé účtenky [persistentní položka]")
-  public Boolean getReturnOnlyFullBill() {
-    return returnOnlyFullBill;
+  @ApiModelProperty(example = "null", value = "přesnost ceny [persistentní položka]")
+  public Integer getPriceprecision() {
+    return priceprecision;
   }
 
-  public void setReturnOnlyFullBill(Boolean returnOnlyFullBill) {
-    this.returnOnlyFullBill = returnOnlyFullBill;
+  public void setPriceprecision(Integer priceprecision) {
+    this.priceprecision = priceprecision;
   }
 
-  public Posshop returnOnlyTodayBill(Boolean returnOnlyTodayBill) {
-    this.returnOnlyTodayBill = returnOnlyTodayBill;
+  public Posshop returnonlyfullbill(Boolean returnonlyfullbill) {
+    this.returnonlyfullbill = returnonlyfullbill;
     return this;
   }
 
    /**
-   * Vracet jen dnešní účtenky [persistentní položka]
-   * @return returnOnlyTodayBill
+   * vracet jen celé účtenky [persistentní položka]
+   * @return returnonlyfullbill
   **/
-  @ApiModelProperty(example = "null", value = "Vracet jen dnešní účtenky [persistentní položka]")
-  public Boolean getReturnOnlyTodayBill() {
-    return returnOnlyTodayBill;
+  @ApiModelProperty(example = "null", value = "vracet jen celé účtenky [persistentní položka]")
+  public Boolean getReturnonlyfullbill() {
+    return returnonlyfullbill;
   }
 
-  public void setReturnOnlyTodayBill(Boolean returnOnlyTodayBill) {
-    this.returnOnlyTodayBill = returnOnlyTodayBill;
+  public void setReturnonlyfullbill(Boolean returnonlyfullbill) {
+    this.returnonlyfullbill = returnonlyfullbill;
   }
 
-  public Posshop enableConsignmentSale(Boolean enableConsignmentSale) {
-    this.enableConsignmentSale = enableConsignmentSale;
+  public Posshop returnonlytodaybill(Boolean returnonlytodaybill) {
+    this.returnonlytodaybill = returnonlytodaybill;
     return this;
   }
 
    /**
-   * Prodejní sklady [persistentní položka]
-   * @return enableConsignmentSale
+   * vracet jen dnešní účtenky [persistentní položka]
+   * @return returnonlytodaybill
   **/
-  @ApiModelProperty(example = "null", value = "Prodejní sklady [persistentní položka]")
-  public Boolean getEnableConsignmentSale() {
-    return enableConsignmentSale;
+  @ApiModelProperty(example = "null", value = "vracet jen dnešní účtenky [persistentní položka]")
+  public Boolean getReturnonlytodaybill() {
+    return returnonlytodaybill;
   }
 
-  public void setEnableConsignmentSale(Boolean enableConsignmentSale) {
-    this.enableConsignmentSale = enableConsignmentSale;
+  public void setReturnonlytodaybill(Boolean returnonlytodaybill) {
+    this.returnonlytodaybill = returnonlytodaybill;
   }
 
-  public Posshop givePriorityToConsignmentStore(Boolean givePriorityToConsignmentStore) {
-    this.givePriorityToConsignmentStore = givePriorityToConsignmentStore;
+  public Posshop enableconsignmentsale(Boolean enableconsignmentsale) {
+    this.enableconsignmentsale = enableconsignmentsale;
     return this;
   }
 
    /**
-   * Preferovat prodejní sklady [persistentní položka]
-   * @return givePriorityToConsignmentStore
+   * prodejní sklady [persistentní položka]
+   * @return enableconsignmentsale
   **/
-  @ApiModelProperty(example = "null", value = "Preferovat prodejní sklady [persistentní položka]")
-  public Boolean getGivePriorityToConsignmentStore() {
-    return givePriorityToConsignmentStore;
+  @ApiModelProperty(example = "null", value = "prodejní sklady [persistentní položka]")
+  public Boolean getEnableconsignmentsale() {
+    return enableconsignmentsale;
   }
 
-  public void setGivePriorityToConsignmentStore(Boolean givePriorityToConsignmentStore) {
-    this.givePriorityToConsignmentStore = givePriorityToConsignmentStore;
+  public void setEnableconsignmentsale(Boolean enableconsignmentsale) {
+    this.enableconsignmentsale = enableconsignmentsale;
   }
 
-  public Posshop firmSearchMode(Integer firmSearchMode) {
-    this.firmSearchMode = firmSearchMode;
+  public Posshop giveprioritytoconsignmentstore(Boolean giveprioritytoconsignmentstore) {
+    this.giveprioritytoconsignmentstore = giveprioritytoconsignmentstore;
     return this;
   }
 
    /**
-   * Režim hledání firmy [persistentní položka]
-   * @return firmSearchMode
+   * preferovat prodejní sklady [persistentní položka]
+   * @return giveprioritytoconsignmentstore
   **/
-  @ApiModelProperty(example = "null", value = "Režim hledání firmy [persistentní položka]")
-  public Integer getFirmSearchMode() {
-    return firmSearchMode;
+  @ApiModelProperty(example = "null", value = "preferovat prodejní sklady [persistentní položka]")
+  public Boolean getGiveprioritytoconsignmentstore() {
+    return giveprioritytoconsignmentstore;
   }
 
-  public void setFirmSearchMode(Integer firmSearchMode) {
-    this.firmSearchMode = firmSearchMode;
+  public void setGiveprioritytoconsignmentstore(Boolean giveprioritytoconsignmentstore) {
+    this.giveprioritytoconsignmentstore = giveprioritytoconsignmentstore;
   }
 
-  public Posshop storeCardNameFullText(Boolean storeCardNameFullText) {
-    this.storeCardNameFullText = storeCardNameFullText;
+  public Posshop firmsearchmode(Integer firmsearchmode) {
+    this.firmsearchmode = firmsearchmode;
     return this;
   }
 
    /**
-   * Režim hledání názvu zboží [persistentní položka]
-   * @return storeCardNameFullText
+   * režim hledání firmy [persistentní položka]
+   * @return firmsearchmode
   **/
-  @ApiModelProperty(example = "null", value = "Režim hledání názvu zboží [persistentní položka]")
-  public Boolean getStoreCardNameFullText() {
-    return storeCardNameFullText;
+  @ApiModelProperty(example = "null", value = "režim hledání firmy [persistentní položka]")
+  public Integer getFirmsearchmode() {
+    return firmsearchmode;
   }
 
-  public void setStoreCardNameFullText(Boolean storeCardNameFullText) {
-    this.storeCardNameFullText = storeCardNameFullText;
+  public void setFirmsearchmode(Integer firmsearchmode) {
+    this.firmsearchmode = firmsearchmode;
   }
 
-  public Posshop storeCardCodeFullText(Boolean storeCardCodeFullText) {
-    this.storeCardCodeFullText = storeCardCodeFullText;
+  public Posshop storecardnamefulltext(Boolean storecardnamefulltext) {
+    this.storecardnamefulltext = storecardnamefulltext;
     return this;
   }
 
    /**
-   * Režim hledání kódu zboží [persistentní položka]
-   * @return storeCardCodeFullText
+   * režim hledání názvu zboží [persistentní položka]
+   * @return storecardnamefulltext
   **/
-  @ApiModelProperty(example = "null", value = "Režim hledání kódu zboží [persistentní položka]")
-  public Boolean getStoreCardCodeFullText() {
-    return storeCardCodeFullText;
+  @ApiModelProperty(example = "null", value = "režim hledání názvu zboží [persistentní položka]")
+  public Boolean getStorecardnamefulltext() {
+    return storecardnamefulltext;
   }
 
-  public void setStoreCardCodeFullText(Boolean storeCardCodeFullText) {
-    this.storeCardCodeFullText = storeCardCodeFullText;
+  public void setStorecardnamefulltext(Boolean storecardnamefulltext) {
+    this.storecardnamefulltext = storecardnamefulltext;
   }
 
-  public Posshop storeCardSpecificationFullText(Boolean storeCardSpecificationFullText) {
-    this.storeCardSpecificationFullText = storeCardSpecificationFullText;
+  public Posshop storecardcodefulltext(Boolean storecardcodefulltext) {
+    this.storecardcodefulltext = storecardcodefulltext;
     return this;
   }
 
    /**
-   * Režim hledání specifikací zboží [persistentní položka]
-   * @return storeCardSpecificationFullText
+   * režim hledání kódu zboží [persistentní položka]
+   * @return storecardcodefulltext
   **/
-  @ApiModelProperty(example = "null", value = "Režim hledání specifikací zboží [persistentní položka]")
-  public Boolean getStoreCardSpecificationFullText() {
-    return storeCardSpecificationFullText;
+  @ApiModelProperty(example = "null", value = "režim hledání kódu zboží [persistentní položka]")
+  public Boolean getStorecardcodefulltext() {
+    return storecardcodefulltext;
   }
 
-  public void setStoreCardSpecificationFullText(Boolean storeCardSpecificationFullText) {
-    this.storeCardSpecificationFullText = storeCardSpecificationFullText;
+  public void setStorecardcodefulltext(Boolean storecardcodefulltext) {
+    this.storecardcodefulltext = storecardcodefulltext;
   }
 
-  public Posshop firmCodeFullText(Boolean firmCodeFullText) {
-    this.firmCodeFullText = firmCodeFullText;
+  public Posshop storecardspecificationfulltext(Boolean storecardspecificationfulltext) {
+    this.storecardspecificationfulltext = storecardspecificationfulltext;
     return this;
   }
 
    /**
-   * Režim hledání kódu firmy [persistentní položka]
-   * @return firmCodeFullText
+   * režim hledání specifikací zboží [persistentní položka]
+   * @return storecardspecificationfulltext
   **/
-  @ApiModelProperty(example = "null", value = "Režim hledání kódu firmy [persistentní položka]")
-  public Boolean getFirmCodeFullText() {
-    return firmCodeFullText;
+  @ApiModelProperty(example = "null", value = "režim hledání specifikací zboží [persistentní položka]")
+  public Boolean getStorecardspecificationfulltext() {
+    return storecardspecificationfulltext;
   }
 
-  public void setFirmCodeFullText(Boolean firmCodeFullText) {
-    this.firmCodeFullText = firmCodeFullText;
+  public void setStorecardspecificationfulltext(Boolean storecardspecificationfulltext) {
+    this.storecardspecificationfulltext = storecardspecificationfulltext;
   }
 
-  public Posshop firmNameFullText(Boolean firmNameFullText) {
-    this.firmNameFullText = firmNameFullText;
+  public Posshop firmcodefulltext(Boolean firmcodefulltext) {
+    this.firmcodefulltext = firmcodefulltext;
     return this;
   }
 
    /**
-   * Režim hledání názvu firmy [persistentní položka]
-   * @return firmNameFullText
+   * režim hledání kódu firmy [persistentní položka]
+   * @return firmcodefulltext
   **/
-  @ApiModelProperty(example = "null", value = "Režim hledání názvu firmy [persistentní položka]")
-  public Boolean getFirmNameFullText() {
-    return firmNameFullText;
+  @ApiModelProperty(example = "null", value = "režim hledání kódu firmy [persistentní položka]")
+  public Boolean getFirmcodefulltext() {
+    return firmcodefulltext;
   }
 
-  public void setFirmNameFullText(Boolean firmNameFullText) {
-    this.firmNameFullText = firmNameFullText;
+  public void setFirmcodefulltext(Boolean firmcodefulltext) {
+    this.firmcodefulltext = firmcodefulltext;
   }
 
-  public Posshop viewSpecification(Boolean viewSpecification) {
-    this.viewSpecification = viewSpecification;
+  public Posshop firmnamefulltext(Boolean firmnamefulltext) {
+    this.firmnamefulltext = firmnamefulltext;
     return this;
   }
 
    /**
-   * Zobrazovat specifikace [persistentní položka]
-   * @return viewSpecification
+   * režim hledání názvu firmy [persistentní položka]
+   * @return firmnamefulltext
   **/
-  @ApiModelProperty(example = "null", value = "Zobrazovat specifikace [persistentní položka]")
-  public Boolean getViewSpecification() {
-    return viewSpecification;
+  @ApiModelProperty(example = "null", value = "režim hledání názvu firmy [persistentní položka]")
+  public Boolean getFirmnamefulltext() {
+    return firmnamefulltext;
   }
 
-  public void setViewSpecification(Boolean viewSpecification) {
-    this.viewSpecification = viewSpecification;
+  public void setFirmnamefulltext(Boolean firmnamefulltext) {
+    this.firmnamefulltext = firmnamefulltext;
   }
 
-  public Posshop viewSpecification2(Boolean viewSpecification2) {
-    this.viewSpecification2 = viewSpecification2;
+  public Posshop viewspecification(Boolean viewspecification) {
+    this.viewspecification = viewspecification;
     return this;
   }
 
    /**
-   * Zobrazovat specifikace 2 [persistentní položka]
-   * @return viewSpecification2
+   * zobrazovat specifikace [persistentní položka]
+   * @return viewspecification
   **/
-  @ApiModelProperty(example = "null", value = "Zobrazovat specifikace 2 [persistentní položka]")
-  public Boolean getViewSpecification2() {
-    return viewSpecification2;
+  @ApiModelProperty(example = "null", value = "zobrazovat specifikace [persistentní položka]")
+  public Boolean getViewspecification() {
+    return viewspecification;
   }
 
-  public void setViewSpecification2(Boolean viewSpecification2) {
-    this.viewSpecification2 = viewSpecification2;
+  public void setViewspecification(Boolean viewspecification) {
+    this.viewspecification = viewspecification;
   }
 
-  public Posshop priceListKeyF2(Integer priceListKeyF2) {
-    this.priceListKeyF2 = priceListKeyF2;
+  public Posshop viewspecification2(Boolean viewspecification2) {
+    this.viewspecification2 = viewspecification2;
     return this;
   }
 
    /**
-   * Klávesa F2 v ceníku [persistentní položka]
-   * @return priceListKeyF2
+   * zobrazovat specifikace 2 [persistentní položka]
+   * @return viewspecification2
   **/
-  @ApiModelProperty(example = "null", value = "Klávesa F2 v ceníku [persistentní položka]")
-  public Integer getPriceListKeyF2() {
-    return priceListKeyF2;
+  @ApiModelProperty(example = "null", value = "zobrazovat specifikace 2 [persistentní položka]")
+  public Boolean getViewspecification2() {
+    return viewspecification2;
   }
 
-  public void setPriceListKeyF2(Integer priceListKeyF2) {
-    this.priceListKeyF2 = priceListKeyF2;
+  public void setViewspecification2(Boolean viewspecification2) {
+    this.viewspecification2 = viewspecification2;
   }
 
-  public Posshop priceListKeyF3(Integer priceListKeyF3) {
-    this.priceListKeyF3 = priceListKeyF3;
+  public Posshop pricelistkeyf2(Integer pricelistkeyf2) {
+    this.pricelistkeyf2 = pricelistkeyf2;
     return this;
   }
 
    /**
-   * Klávesa F3 v ceníku [persistentní položka]
-   * @return priceListKeyF3
+   * klávesa f2 v ceníku [persistentní položka]
+   * @return pricelistkeyf2
   **/
-  @ApiModelProperty(example = "null", value = "Klávesa F3 v ceníku [persistentní položka]")
-  public Integer getPriceListKeyF3() {
-    return priceListKeyF3;
+  @ApiModelProperty(example = "null", value = "klávesa f2 v ceníku [persistentní položka]")
+  public Integer getPricelistkeyf2() {
+    return pricelistkeyf2;
   }
 
-  public void setPriceListKeyF3(Integer priceListKeyF3) {
-    this.priceListKeyF3 = priceListKeyF3;
+  public void setPricelistkeyf2(Integer pricelistkeyf2) {
+    this.pricelistkeyf2 = pricelistkeyf2;
   }
 
-  public Posshop priceListKeyF4(Integer priceListKeyF4) {
-    this.priceListKeyF4 = priceListKeyF4;
+  public Posshop pricelistkeyf3(Integer pricelistkeyf3) {
+    this.pricelistkeyf3 = pricelistkeyf3;
     return this;
   }
 
    /**
-   * Klávesa F4 v ceníku [persistentní položka]
-   * @return priceListKeyF4
+   * klávesa f3 v ceníku [persistentní položka]
+   * @return pricelistkeyf3
   **/
-  @ApiModelProperty(example = "null", value = "Klávesa F4 v ceníku [persistentní položka]")
-  public Integer getPriceListKeyF4() {
-    return priceListKeyF4;
+  @ApiModelProperty(example = "null", value = "klávesa f3 v ceníku [persistentní položka]")
+  public Integer getPricelistkeyf3() {
+    return pricelistkeyf3;
   }
 
-  public void setPriceListKeyF4(Integer priceListKeyF4) {
-    this.priceListKeyF4 = priceListKeyF4;
+  public void setPricelistkeyf3(Integer pricelistkeyf3) {
+    this.pricelistkeyf3 = pricelistkeyf3;
   }
 
-  public Posshop priceListKeyF5(Integer priceListKeyF5) {
-    this.priceListKeyF5 = priceListKeyF5;
+  public Posshop pricelistkeyf4(Integer pricelistkeyf4) {
+    this.pricelistkeyf4 = pricelistkeyf4;
     return this;
   }
 
    /**
-   * Klávesa F5 v ceníku [persistentní položka]
-   * @return priceListKeyF5
+   * klávesa f4 v ceníku [persistentní položka]
+   * @return pricelistkeyf4
   **/
-  @ApiModelProperty(example = "null", value = "Klávesa F5 v ceníku [persistentní položka]")
-  public Integer getPriceListKeyF5() {
-    return priceListKeyF5;
+  @ApiModelProperty(example = "null", value = "klávesa f4 v ceníku [persistentní položka]")
+  public Integer getPricelistkeyf4() {
+    return pricelistkeyf4;
   }
 
-  public void setPriceListKeyF5(Integer priceListKeyF5) {
-    this.priceListKeyF5 = priceListKeyF5;
+  public void setPricelistkeyf4(Integer pricelistkeyf4) {
+    this.pricelistkeyf4 = pricelistkeyf4;
   }
 
-  public Posshop priceListKeyF6(Integer priceListKeyF6) {
-    this.priceListKeyF6 = priceListKeyF6;
+  public Posshop pricelistkeyf5(Integer pricelistkeyf5) {
+    this.pricelistkeyf5 = pricelistkeyf5;
     return this;
   }
 
    /**
-   * Klávesa F5 v ceníku [persistentní položka]
-   * @return priceListKeyF6
+   * klávesa f5 v ceníku [persistentní položka]
+   * @return pricelistkeyf5
   **/
-  @ApiModelProperty(example = "null", value = "Klávesa F5 v ceníku [persistentní položka]")
-  public Integer getPriceListKeyF6() {
-    return priceListKeyF6;
+  @ApiModelProperty(example = "null", value = "klávesa f5 v ceníku [persistentní položka]")
+  public Integer getPricelistkeyf5() {
+    return pricelistkeyf5;
   }
 
-  public void setPriceListKeyF6(Integer priceListKeyF6) {
-    this.priceListKeyF6 = priceListKeyF6;
+  public void setPricelistkeyf5(Integer pricelistkeyf5) {
+    this.pricelistkeyf5 = pricelistkeyf5;
   }
 
-  public Posshop priceListKeyF7(Integer priceListKeyF7) {
-    this.priceListKeyF7 = priceListKeyF7;
+  public Posshop pricelistkeyf6(Integer pricelistkeyf6) {
+    this.pricelistkeyf6 = pricelistkeyf6;
     return this;
   }
 
    /**
-   * Klávesa F6 v ceníku [persistentní položka]
-   * @return priceListKeyF7
+   * klávesa f5 v ceníku [persistentní položka]
+   * @return pricelistkeyf6
   **/
-  @ApiModelProperty(example = "null", value = "Klávesa F6 v ceníku [persistentní položka]")
-  public Integer getPriceListKeyF7() {
-    return priceListKeyF7;
+  @ApiModelProperty(example = "null", value = "klávesa f5 v ceníku [persistentní položka]")
+  public Integer getPricelistkeyf6() {
+    return pricelistkeyf6;
   }
 
-  public void setPriceListKeyF7(Integer priceListKeyF7) {
-    this.priceListKeyF7 = priceListKeyF7;
+  public void setPricelistkeyf6(Integer pricelistkeyf6) {
+    this.pricelistkeyf6 = pricelistkeyf6;
   }
 
-  public Posshop priceListKeyF8(Integer priceListKeyF8) {
-    this.priceListKeyF8 = priceListKeyF8;
+  public Posshop pricelistkeyf7(Integer pricelistkeyf7) {
+    this.pricelistkeyf7 = pricelistkeyf7;
     return this;
   }
 
    /**
-   * Klávesa F8 v ceníku [persistentní položka]
-   * @return priceListKeyF8
+   * klávesa f6 v ceníku [persistentní položka]
+   * @return pricelistkeyf7
   **/
-  @ApiModelProperty(example = "null", value = "Klávesa F8 v ceníku [persistentní položka]")
-  public Integer getPriceListKeyF8() {
-    return priceListKeyF8;
+  @ApiModelProperty(example = "null", value = "klávesa f6 v ceníku [persistentní položka]")
+  public Integer getPricelistkeyf7() {
+    return pricelistkeyf7;
   }
 
-  public void setPriceListKeyF8(Integer priceListKeyF8) {
-    this.priceListKeyF8 = priceListKeyF8;
+  public void setPricelistkeyf7(Integer pricelistkeyf7) {
+    this.pricelistkeyf7 = pricelistkeyf7;
   }
 
-  public Posshop adressListKeyF2(Integer adressListKeyF2) {
-    this.adressListKeyF2 = adressListKeyF2;
+  public Posshop pricelistkeyf8(Integer pricelistkeyf8) {
+    this.pricelistkeyf8 = pricelistkeyf8;
     return this;
   }
 
    /**
-   * Klávesa F2 v adresáři [persistentní položka]
-   * @return adressListKeyF2
+   * klávesa f8 v ceníku [persistentní položka]
+   * @return pricelistkeyf8
   **/
-  @ApiModelProperty(example = "null", value = "Klávesa F2 v adresáři [persistentní položka]")
-  public Integer getAdressListKeyF2() {
-    return adressListKeyF2;
+  @ApiModelProperty(example = "null", value = "klávesa f8 v ceníku [persistentní položka]")
+  public Integer getPricelistkeyf8() {
+    return pricelistkeyf8;
   }
 
-  public void setAdressListKeyF2(Integer adressListKeyF2) {
-    this.adressListKeyF2 = adressListKeyF2;
+  public void setPricelistkeyf8(Integer pricelistkeyf8) {
+    this.pricelistkeyf8 = pricelistkeyf8;
   }
 
-  public Posshop adressListKeyF3(Integer adressListKeyF3) {
-    this.adressListKeyF3 = adressListKeyF3;
+  public Posshop adresslistkeyf2(Integer adresslistkeyf2) {
+    this.adresslistkeyf2 = adresslistkeyf2;
     return this;
   }
 
    /**
-   * Klávesa F3 v adresáři [persistentní položka]
-   * @return adressListKeyF3
+   * klávesa f2 v adresáři [persistentní položka]
+   * @return adresslistkeyf2
   **/
-  @ApiModelProperty(example = "null", value = "Klávesa F3 v adresáři [persistentní položka]")
-  public Integer getAdressListKeyF3() {
-    return adressListKeyF3;
+  @ApiModelProperty(example = "null", value = "klávesa f2 v adresáři [persistentní položka]")
+  public Integer getAdresslistkeyf2() {
+    return adresslistkeyf2;
   }
 
-  public void setAdressListKeyF3(Integer adressListKeyF3) {
-    this.adressListKeyF3 = adressListKeyF3;
+  public void setAdresslistkeyf2(Integer adresslistkeyf2) {
+    this.adresslistkeyf2 = adresslistkeyf2;
   }
 
-  public Posshop adressListKeyF4(Integer adressListKeyF4) {
-    this.adressListKeyF4 = adressListKeyF4;
+  public Posshop adresslistkeyf3(Integer adresslistkeyf3) {
+    this.adresslistkeyf3 = adresslistkeyf3;
     return this;
   }
 
    /**
-   * Klávesa F4 v adresáři [persistentní položka]
-   * @return adressListKeyF4
+   * klávesa f3 v adresáři [persistentní položka]
+   * @return adresslistkeyf3
   **/
-  @ApiModelProperty(example = "null", value = "Klávesa F4 v adresáři [persistentní položka]")
-  public Integer getAdressListKeyF4() {
-    return adressListKeyF4;
+  @ApiModelProperty(example = "null", value = "klávesa f3 v adresáři [persistentní položka]")
+  public Integer getAdresslistkeyf3() {
+    return adresslistkeyf3;
   }
 
-  public void setAdressListKeyF4(Integer adressListKeyF4) {
-    this.adressListKeyF4 = adressListKeyF4;
+  public void setAdresslistkeyf3(Integer adresslistkeyf3) {
+    this.adresslistkeyf3 = adresslistkeyf3;
   }
 
-  public Posshop adressListKeyF5(Integer adressListKeyF5) {
-    this.adressListKeyF5 = adressListKeyF5;
+  public Posshop adresslistkeyf4(Integer adresslistkeyf4) {
+    this.adresslistkeyf4 = adresslistkeyf4;
     return this;
   }
 
    /**
-   * Klávesa F5 v adresáři [persistentní položka]
-   * @return adressListKeyF5
+   * klávesa f4 v adresáři [persistentní položka]
+   * @return adresslistkeyf4
   **/
-  @ApiModelProperty(example = "null", value = "Klávesa F5 v adresáři [persistentní položka]")
-  public Integer getAdressListKeyF5() {
-    return adressListKeyF5;
+  @ApiModelProperty(example = "null", value = "klávesa f4 v adresáři [persistentní položka]")
+  public Integer getAdresslistkeyf4() {
+    return adresslistkeyf4;
   }
 
-  public void setAdressListKeyF5(Integer adressListKeyF5) {
-    this.adressListKeyF5 = adressListKeyF5;
+  public void setAdresslistkeyf4(Integer adresslistkeyf4) {
+    this.adresslistkeyf4 = adresslistkeyf4;
   }
 
-  public Posshop adressListKeyF6(Integer adressListKeyF6) {
-    this.adressListKeyF6 = adressListKeyF6;
+  public Posshop adresslistkeyf5(Integer adresslistkeyf5) {
+    this.adresslistkeyf5 = adresslistkeyf5;
     return this;
   }
 
    /**
-   * Klávesa F5 v adresáři [persistentní položka]
-   * @return adressListKeyF6
+   * klávesa f5 v adresáři [persistentní položka]
+   * @return adresslistkeyf5
   **/
-  @ApiModelProperty(example = "null", value = "Klávesa F5 v adresáři [persistentní položka]")
-  public Integer getAdressListKeyF6() {
-    return adressListKeyF6;
+  @ApiModelProperty(example = "null", value = "klávesa f5 v adresáři [persistentní položka]")
+  public Integer getAdresslistkeyf5() {
+    return adresslistkeyf5;
   }
 
-  public void setAdressListKeyF6(Integer adressListKeyF6) {
-    this.adressListKeyF6 = adressListKeyF6;
+  public void setAdresslistkeyf5(Integer adresslistkeyf5) {
+    this.adresslistkeyf5 = adresslistkeyf5;
   }
 
-  public Posshop adressListKeyF7(Integer adressListKeyF7) {
-    this.adressListKeyF7 = adressListKeyF7;
+  public Posshop adresslistkeyf6(Integer adresslistkeyf6) {
+    this.adresslistkeyf6 = adresslistkeyf6;
     return this;
   }
 
    /**
-   * Klávesa F6 v adresáři [persistentní položka]
-   * @return adressListKeyF7
+   * klávesa f5 v adresáři [persistentní položka]
+   * @return adresslistkeyf6
   **/
-  @ApiModelProperty(example = "null", value = "Klávesa F6 v adresáři [persistentní položka]")
-  public Integer getAdressListKeyF7() {
-    return adressListKeyF7;
+  @ApiModelProperty(example = "null", value = "klávesa f5 v adresáři [persistentní položka]")
+  public Integer getAdresslistkeyf6() {
+    return adresslistkeyf6;
   }
 
-  public void setAdressListKeyF7(Integer adressListKeyF7) {
-    this.adressListKeyF7 = adressListKeyF7;
+  public void setAdresslistkeyf6(Integer adresslistkeyf6) {
+    this.adresslistkeyf6 = adresslistkeyf6;
   }
 
-  public Posshop adressListKeyF8(Integer adressListKeyF8) {
-    this.adressListKeyF8 = adressListKeyF8;
+  public Posshop adresslistkeyf7(Integer adresslistkeyf7) {
+    this.adresslistkeyf7 = adresslistkeyf7;
     return this;
   }
 
    /**
-   * Klávesa F8 v adresáři [persistentní položka]
-   * @return adressListKeyF8
+   * klávesa f6 v adresáři [persistentní položka]
+   * @return adresslistkeyf7
   **/
-  @ApiModelProperty(example = "null", value = "Klávesa F8 v adresáři [persistentní položka]")
-  public Integer getAdressListKeyF8() {
-    return adressListKeyF8;
+  @ApiModelProperty(example = "null", value = "klávesa f6 v adresáři [persistentní položka]")
+  public Integer getAdresslistkeyf7() {
+    return adresslistkeyf7;
   }
 
-  public void setAdressListKeyF8(Integer adressListKeyF8) {
-    this.adressListKeyF8 = adressListKeyF8;
+  public void setAdresslistkeyf7(Integer adresslistkeyf7) {
+    this.adresslistkeyf7 = adresslistkeyf7;
   }
 
-  public Posshop adressListMenuRow1(Integer adressListMenuRow1) {
-    this.adressListMenuRow1 = adressListMenuRow1;
+  public Posshop adresslistkeyf8(Integer adresslistkeyf8) {
+    this.adresslistkeyf8 = adresslistkeyf8;
+    return this;
+  }
+
+   /**
+   * klávesa f8 v adresáři [persistentní položka]
+   * @return adresslistkeyf8
+  **/
+  @ApiModelProperty(example = "null", value = "klávesa f8 v adresáři [persistentní položka]")
+  public Integer getAdresslistkeyf8() {
+    return adresslistkeyf8;
+  }
+
+  public void setAdresslistkeyf8(Integer adresslistkeyf8) {
+    this.adresslistkeyf8 = adresslistkeyf8;
+  }
+
+  public Posshop adresslistmenurow1(Integer adresslistmenurow1) {
+    this.adresslistmenurow1 = adresslistmenurow1;
     return this;
   }
 
    /**
    * Řádek 1. v menu adresáře [persistentní položka]
-   * @return adressListMenuRow1
+   * @return adresslistmenurow1
   **/
   @ApiModelProperty(example = "null", value = "Řádek 1. v menu adresáře [persistentní položka]")
-  public Integer getAdressListMenuRow1() {
-    return adressListMenuRow1;
+  public Integer getAdresslistmenurow1() {
+    return adresslistmenurow1;
   }
 
-  public void setAdressListMenuRow1(Integer adressListMenuRow1) {
-    this.adressListMenuRow1 = adressListMenuRow1;
+  public void setAdresslistmenurow1(Integer adresslistmenurow1) {
+    this.adresslistmenurow1 = adresslistmenurow1;
   }
 
-  public Posshop adressListMenuRow2(Integer adressListMenuRow2) {
-    this.adressListMenuRow2 = adressListMenuRow2;
+  public Posshop adresslistmenurow2(Integer adresslistmenurow2) {
+    this.adresslistmenurow2 = adresslistmenurow2;
     return this;
   }
 
    /**
    * Řádek 2. v menu adresáře [persistentní položka]
-   * @return adressListMenuRow2
+   * @return adresslistmenurow2
   **/
   @ApiModelProperty(example = "null", value = "Řádek 2. v menu adresáře [persistentní položka]")
-  public Integer getAdressListMenuRow2() {
-    return adressListMenuRow2;
+  public Integer getAdresslistmenurow2() {
+    return adresslistmenurow2;
   }
 
-  public void setAdressListMenuRow2(Integer adressListMenuRow2) {
-    this.adressListMenuRow2 = adressListMenuRow2;
+  public void setAdresslistmenurow2(Integer adresslistmenurow2) {
+    this.adresslistmenurow2 = adresslistmenurow2;
   }
 
-  public Posshop adressListMenuRow3(Integer adressListMenuRow3) {
-    this.adressListMenuRow3 = adressListMenuRow3;
+  public Posshop adresslistmenurow3(Integer adresslistmenurow3) {
+    this.adresslistmenurow3 = adresslistmenurow3;
     return this;
   }
 
    /**
    * Řádek 3. v menu adresáře [persistentní položka]
-   * @return adressListMenuRow3
+   * @return adresslistmenurow3
   **/
   @ApiModelProperty(example = "null", value = "Řádek 3. v menu adresáře [persistentní položka]")
-  public Integer getAdressListMenuRow3() {
-    return adressListMenuRow3;
+  public Integer getAdresslistmenurow3() {
+    return adresslistmenurow3;
   }
 
-  public void setAdressListMenuRow3(Integer adressListMenuRow3) {
-    this.adressListMenuRow3 = adressListMenuRow3;
+  public void setAdresslistmenurow3(Integer adresslistmenurow3) {
+    this.adresslistmenurow3 = adresslistmenurow3;
   }
 
-  public Posshop adressListMenuRow4(Integer adressListMenuRow4) {
-    this.adressListMenuRow4 = adressListMenuRow4;
+  public Posshop adresslistmenurow4(Integer adresslistmenurow4) {
+    this.adresslistmenurow4 = adresslistmenurow4;
     return this;
   }
 
    /**
    * Řádek 4. v menu adresáře [persistentní položka]
-   * @return adressListMenuRow4
+   * @return adresslistmenurow4
   **/
   @ApiModelProperty(example = "null", value = "Řádek 4. v menu adresáře [persistentní položka]")
-  public Integer getAdressListMenuRow4() {
-    return adressListMenuRow4;
+  public Integer getAdresslistmenurow4() {
+    return adresslistmenurow4;
   }
 
-  public void setAdressListMenuRow4(Integer adressListMenuRow4) {
-    this.adressListMenuRow4 = adressListMenuRow4;
+  public void setAdresslistmenurow4(Integer adresslistmenurow4) {
+    this.adresslistmenurow4 = adresslistmenurow4;
   }
 
-  public Posshop adressListMenuRow5(Integer adressListMenuRow5) {
-    this.adressListMenuRow5 = adressListMenuRow5;
+  public Posshop adresslistmenurow5(Integer adresslistmenurow5) {
+    this.adresslistmenurow5 = adresslistmenurow5;
     return this;
   }
 
    /**
    * Řádek 5. v menu adresáře [persistentní položka]
-   * @return adressListMenuRow5
+   * @return adresslistmenurow5
   **/
   @ApiModelProperty(example = "null", value = "Řádek 5. v menu adresáře [persistentní položka]")
-  public Integer getAdressListMenuRow5() {
-    return adressListMenuRow5;
+  public Integer getAdresslistmenurow5() {
+    return adresslistmenurow5;
   }
 
-  public void setAdressListMenuRow5(Integer adressListMenuRow5) {
-    this.adressListMenuRow5 = adressListMenuRow5;
+  public void setAdresslistmenurow5(Integer adresslistmenurow5) {
+    this.adresslistmenurow5 = adresslistmenurow5;
   }
 
-  public Posshop adressListMenuRow6(Integer adressListMenuRow6) {
-    this.adressListMenuRow6 = adressListMenuRow6;
+  public Posshop adresslistmenurow6(Integer adresslistmenurow6) {
+    this.adresslistmenurow6 = adresslistmenurow6;
     return this;
   }
 
    /**
    * Řádek 6. v menu adresáře [persistentní položka]
-   * @return adressListMenuRow6
+   * @return adresslistmenurow6
   **/
   @ApiModelProperty(example = "null", value = "Řádek 6. v menu adresáře [persistentní položka]")
-  public Integer getAdressListMenuRow6() {
-    return adressListMenuRow6;
+  public Integer getAdresslistmenurow6() {
+    return adresslistmenurow6;
   }
 
-  public void setAdressListMenuRow6(Integer adressListMenuRow6) {
-    this.adressListMenuRow6 = adressListMenuRow6;
+  public void setAdresslistmenurow6(Integer adresslistmenurow6) {
+    this.adresslistmenurow6 = adresslistmenurow6;
   }
 
-  public Posshop adressListMenuRow7(Integer adressListMenuRow7) {
-    this.adressListMenuRow7 = adressListMenuRow7;
+  public Posshop adresslistmenurow7(Integer adresslistmenurow7) {
+    this.adresslistmenurow7 = adresslistmenurow7;
     return this;
   }
 
    /**
    * Řádek 7. v menu adresáře [persistentní položka]
-   * @return adressListMenuRow7
+   * @return adresslistmenurow7
   **/
   @ApiModelProperty(example = "null", value = "Řádek 7. v menu adresáře [persistentní položka]")
-  public Integer getAdressListMenuRow7() {
-    return adressListMenuRow7;
+  public Integer getAdresslistmenurow7() {
+    return adresslistmenurow7;
   }
 
-  public void setAdressListMenuRow7(Integer adressListMenuRow7) {
-    this.adressListMenuRow7 = adressListMenuRow7;
+  public void setAdresslistmenurow7(Integer adresslistmenurow7) {
+    this.adresslistmenurow7 = adresslistmenurow7;
   }
 
-  public Posshop orderPrintSequence(Integer orderPrintSequence) {
-    this.orderPrintSequence = orderPrintSequence;
+  public Posshop orderprintsequence(Integer orderprintsequence) {
+    this.orderprintsequence = orderprintsequence;
     return this;
   }
 
    /**
    * Řazení bonů při tisku [persistentní položka]
-   * @return orderPrintSequence
+   * @return orderprintsequence
   **/
   @ApiModelProperty(example = "null", value = "Řazení bonů při tisku [persistentní položka]")
-  public Integer getOrderPrintSequence() {
-    return orderPrintSequence;
+  public Integer getOrderprintsequence() {
+    return orderprintsequence;
   }
 
-  public void setOrderPrintSequence(Integer orderPrintSequence) {
-    this.orderPrintSequence = orderPrintSequence;
+  public void setOrderprintsequence(Integer orderprintsequence) {
+    this.orderprintsequence = orderprintsequence;
   }
 
-  public Posshop orderPrintMode(Integer orderPrintMode) {
-    this.orderPrintMode = orderPrintMode;
+  public Posshop orderprintmode(Integer orderprintmode) {
+    this.orderprintmode = orderprintmode;
     return this;
   }
 
    /**
-   * Způsob tisku bonů [persistentní položka]
-   * @return orderPrintMode
+   * způsob tisku bonů [persistentní položka]
+   * @return orderprintmode
   **/
-  @ApiModelProperty(example = "null", value = "Způsob tisku bonů [persistentní položka]")
-  public Integer getOrderPrintMode() {
-    return orderPrintMode;
+  @ApiModelProperty(example = "null", value = "způsob tisku bonů [persistentní položka]")
+  public Integer getOrderprintmode() {
+    return orderprintmode;
   }
 
-  public void setOrderPrintMode(Integer orderPrintMode) {
-    this.orderPrintMode = orderPrintMode;
+  public void setOrderprintmode(Integer orderprintmode) {
+    this.orderprintmode = orderprintmode;
   }
 
-  public Posshop printAmountMode(Integer printAmountMode) {
-    this.printAmountMode = printAmountMode;
+  public Posshop printamountmode(Integer printamountmode) {
+    this.printamountmode = printamountmode;
     return this;
   }
 
    /**
-   * Způsob tisku ceny řádku [persistentní položka]
-   * @return printAmountMode
+   * způsob tisku ceny řádku [persistentní položka]
+   * @return printamountmode
   **/
-  @ApiModelProperty(example = "null", value = "Způsob tisku ceny řádku [persistentní položka]")
-  public Integer getPrintAmountMode() {
-    return printAmountMode;
+  @ApiModelProperty(example = "null", value = "způsob tisku ceny řádku [persistentní položka]")
+  public Integer getPrintamountmode() {
+    return printamountmode;
   }
 
-  public void setPrintAmountMode(Integer printAmountMode) {
-    this.printAmountMode = printAmountMode;
+  public void setPrintamountmode(Integer printamountmode) {
+    this.printamountmode = printamountmode;
   }
 
-  public Posshop orderPrintEvent(Integer orderPrintEvent) {
-    this.orderPrintEvent = orderPrintEvent;
+  public Posshop orderprintevent(Integer orderprintevent) {
+    this.orderprintevent = orderprintevent;
     return this;
   }
 
    /**
-   * Spuštění tisku bonů [persistentní položka]
-   * @return orderPrintEvent
+   * spuštění tisku bonů [persistentní položka]
+   * @return orderprintevent
   **/
-  @ApiModelProperty(example = "null", value = "Spuštění tisku bonů [persistentní položka]")
-  public Integer getOrderPrintEvent() {
-    return orderPrintEvent;
+  @ApiModelProperty(example = "null", value = "spuštění tisku bonů [persistentní položka]")
+  public Integer getOrderprintevent() {
+    return orderprintevent;
   }
 
-  public void setOrderPrintEvent(Integer orderPrintEvent) {
-    this.orderPrintEvent = orderPrintEvent;
+  public void setOrderprintevent(Integer orderprintevent) {
+    this.orderprintevent = orderprintevent;
   }
 
-  public Posshop orderPrintStoreCardCode(Boolean orderPrintStoreCardCode) {
-    this.orderPrintStoreCardCode = orderPrintStoreCardCode;
+  public Posshop orderprintstorecardcode(Boolean orderprintstorecardcode) {
+    this.orderprintstorecardcode = orderprintstorecardcode;
     return this;
   }
 
    /**
-   * Na bonu tisknout kód skladové karty [persistentní položka]
-   * @return orderPrintStoreCardCode
+   * na bonu tisknout kód skladové karty [persistentní položka]
+   * @return orderprintstorecardcode
   **/
-  @ApiModelProperty(example = "null", value = "Na bonu tisknout kód skladové karty [persistentní položka]")
-  public Boolean getOrderPrintStoreCardCode() {
-    return orderPrintStoreCardCode;
+  @ApiModelProperty(example = "null", value = "na bonu tisknout kód skladové karty [persistentní položka]")
+  public Boolean getOrderprintstorecardcode() {
+    return orderprintstorecardcode;
   }
 
-  public void setOrderPrintStoreCardCode(Boolean orderPrintStoreCardCode) {
-    this.orderPrintStoreCardCode = orderPrintStoreCardCode;
+  public void setOrderprintstorecardcode(Boolean orderprintstorecardcode) {
+    this.orderprintstorecardcode = orderprintstorecardcode;
   }
 
-  public Posshop orderPrintPrice(Boolean orderPrintPrice) {
-    this.orderPrintPrice = orderPrintPrice;
+  public Posshop orderprintprice(Boolean orderprintprice) {
+    this.orderprintprice = orderprintprice;
     return this;
   }
 
    /**
-   * Na bonu tisknout cenu [persistentní položka]
-   * @return orderPrintPrice
+   * na bonu tisknout cenu [persistentní položka]
+   * @return orderprintprice
   **/
-  @ApiModelProperty(example = "null", value = "Na bonu tisknout cenu [persistentní položka]")
-  public Boolean getOrderPrintPrice() {
-    return orderPrintPrice;
+  @ApiModelProperty(example = "null", value = "na bonu tisknout cenu [persistentní položka]")
+  public Boolean getOrderprintprice() {
+    return orderprintprice;
   }
 
-  public void setOrderPrintPrice(Boolean orderPrintPrice) {
-    this.orderPrintPrice = orderPrintPrice;
+  public void setOrderprintprice(Boolean orderprintprice) {
+    this.orderprintprice = orderprintprice;
   }
 
-  public Posshop orderPrintQUnit(Boolean orderPrintQUnit) {
-    this.orderPrintQUnit = orderPrintQUnit;
+  public Posshop orderprintqunit(Boolean orderprintqunit) {
+    this.orderprintqunit = orderprintqunit;
     return this;
   }
 
    /**
-   * Na bonu tisknout jednotku [persistentní položka]
-   * @return orderPrintQUnit
+   * na bonu tisknout jednotku [persistentní položka]
+   * @return orderprintqunit
   **/
-  @ApiModelProperty(example = "null", value = "Na bonu tisknout jednotku [persistentní položka]")
-  public Boolean getOrderPrintQUnit() {
-    return orderPrintQUnit;
+  @ApiModelProperty(example = "null", value = "na bonu tisknout jednotku [persistentní položka]")
+  public Boolean getOrderprintqunit() {
+    return orderprintqunit;
   }
 
-  public void setOrderPrintQUnit(Boolean orderPrintQUnit) {
-    this.orderPrintQUnit = orderPrintQUnit;
+  public void setOrderprintqunit(Boolean orderprintqunit) {
+    this.orderprintqunit = orderprintqunit;
   }
 
-  public Posshop orderPrintWideStoreCard(Boolean orderPrintWideStoreCard) {
-    this.orderPrintWideStoreCard = orderPrintWideStoreCard;
+  public Posshop orderprintwidestorecard(Boolean orderprintwidestorecard) {
+    this.orderprintwidestorecard = orderprintwidestorecard;
     return this;
   }
 
    /**
-   * Na bonu zvýraznit kartu [persistentní položka]
-   * @return orderPrintWideStoreCard
+   * na bonu zvýraznit kartu [persistentní položka]
+   * @return orderprintwidestorecard
   **/
-  @ApiModelProperty(example = "null", value = "Na bonu zvýraznit kartu [persistentní položka]")
-  public Boolean getOrderPrintWideStoreCard() {
-    return orderPrintWideStoreCard;
+  @ApiModelProperty(example = "null", value = "na bonu zvýraznit kartu [persistentní položka]")
+  public Boolean getOrderprintwidestorecard() {
+    return orderprintwidestorecard;
   }
 
-  public void setOrderPrintWideStoreCard(Boolean orderPrintWideStoreCard) {
-    this.orderPrintWideStoreCard = orderPrintWideStoreCard;
+  public void setOrderprintwidestorecard(Boolean orderprintwidestorecard) {
+    this.orderprintwidestorecard = orderprintwidestorecard;
   }
 
-  public Posshop orderPrintWideQuantity(Boolean orderPrintWideQuantity) {
-    this.orderPrintWideQuantity = orderPrintWideQuantity;
+  public Posshop orderprintwidequantity(Boolean orderprintwidequantity) {
+    this.orderprintwidequantity = orderprintwidequantity;
     return this;
   }
 
    /**
-   * Na bonu zvýraznit množství [persistentní položka]
-   * @return orderPrintWideQuantity
+   * na bonu zvýraznit množství [persistentní položka]
+   * @return orderprintwidequantity
   **/
-  @ApiModelProperty(example = "null", value = "Na bonu zvýraznit množství [persistentní položka]")
-  public Boolean getOrderPrintWideQuantity() {
-    return orderPrintWideQuantity;
+  @ApiModelProperty(example = "null", value = "na bonu zvýraznit množství [persistentní položka]")
+  public Boolean getOrderprintwidequantity() {
+    return orderprintwidequantity;
   }
 
-  public void setOrderPrintWideQuantity(Boolean orderPrintWideQuantity) {
-    this.orderPrintWideQuantity = orderPrintWideQuantity;
+  public void setOrderprintwidequantity(Boolean orderprintwidequantity) {
+    this.orderprintwidequantity = orderprintwidequantity;
   }
 
-  public Posshop billOneUserOnly(Boolean billOneUserOnly) {
-    this.billOneUserOnly = billOneUserOnly;
+  public Posshop billoneuseronly(Boolean billoneuseronly) {
+    this.billoneuseronly = billoneuseronly;
     return this;
   }
 
    /**
-   * Vyhrazený přístup na účtenku [persistentní položka]
-   * @return billOneUserOnly
+   * vyhrazený přístup na účtenku [persistentní položka]
+   * @return billoneuseronly
   **/
-  @ApiModelProperty(example = "null", value = "Vyhrazený přístup na účtenku [persistentní položka]")
-  public Boolean getBillOneUserOnly() {
-    return billOneUserOnly;
+  @ApiModelProperty(example = "null", value = "vyhrazený přístup na účtenku [persistentní položka]")
+  public Boolean getBilloneuseronly() {
+    return billoneuseronly;
   }
 
-  public void setBillOneUserOnly(Boolean billOneUserOnly) {
-    this.billOneUserOnly = billOneUserOnly;
+  public void setBilloneuseronly(Boolean billoneuseronly) {
+    this.billoneuseronly = billoneuseronly;
   }
 
-  public Posshop consignmentStores(List<Posshopconsignmentstore> consignmentStores) {
-    this.consignmentStores = consignmentStores;
+  public Posshop consignmentstores(List<Posshopconsignmentstore> consignmentstores) {
+    this.consignmentstores = consignmentstores;
     return this;
   }
 
-  public Posshop addConsignmentStoresItem(Posshopconsignmentstore consignmentStoresItem) {
-    this.consignmentStores.add(consignmentStoresItem);
+  public Posshop addConsignmentstoresItem(Posshopconsignmentstore consignmentstoresItem) {
+    this.consignmentstores.add(consignmentstoresItem);
     return this;
   }
 
    /**
-   * Prodejní sklady; kolekce BO Prodejní sklad [nepersistentní položka]
-   * @return consignmentStores
+   * prodejní sklady; kolekce bo prodejní sklad [nepersistentní položka]
+   * @return consignmentstores
   **/
-  @ApiModelProperty(example = "null", value = "Prodejní sklady; kolekce BO Prodejní sklad [nepersistentní položka]")
-  public List<Posshopconsignmentstore> getConsignmentStores() {
-    return consignmentStores;
+  @ApiModelProperty(example = "null", value = "prodejní sklady; kolekce bo prodejní sklad [nepersistentní položka]")
+  public List<Posshopconsignmentstore> getConsignmentstores() {
+    return consignmentstores;
   }
 
-  public void setConsignmentStores(List<Posshopconsignmentstore> consignmentStores) {
-    this.consignmentStores = consignmentStores;
+  public void setConsignmentstores(List<Posshopconsignmentstore> consignmentstores) {
+    this.consignmentstores = consignmentstores;
   }
 
   public Posshop payments(List<Posshoppayments> payments) {
@@ -3143,10 +3179,10 @@ public class Posshop   {
   }
 
    /**
-   * Způsoby úhrady; kolekce BO Povolený způsob úhrady [nepersistentní položka]
+   * způsoby úhrady; kolekce bo povolený způsob úhrady [nepersistentní položka]
    * @return payments
   **/
-  @ApiModelProperty(example = "null", value = "Způsoby úhrady; kolekce BO Povolený způsob úhrady [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "způsoby úhrady; kolekce bo povolený způsob úhrady [nepersistentní položka]")
   public List<Posshoppayments> getPayments() {
     return payments;
   }
@@ -3166,10 +3202,10 @@ public class Posshop   {
   }
 
    /**
-   * Dodavatelé; kolekce BO Dodavatel [nepersistentní položka]
+   * dodavatelé; kolekce bo dodavatel [nepersistentní položka]
    * @return suppliers
   **/
-  @ApiModelProperty(example = "null", value = "Dodavatelé; kolekce BO Dodavatel [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "dodavatelé; kolekce bo dodavatel [nepersistentní položka]")
   public List<Posshopsuppliers> getSuppliers() {
     return suppliers;
   }
@@ -3178,428 +3214,428 @@ public class Posshop   {
     this.suppliers = suppliers;
   }
 
-  public Posshop sellingStands(List<Posshopsellingstands> sellingStands) {
-    this.sellingStands = sellingStands;
+  public Posshop sellingstands(List<Posshopsellingstands> sellingstands) {
+    this.sellingstands = sellingstands;
     return this;
   }
 
-  public Posshop addSellingStandsItem(Posshopsellingstands sellingStandsItem) {
-    this.sellingStands.add(sellingStandsItem);
-    return this;
-  }
-
-   /**
-   * Prodejní místa; kolekce BO Prodejní místo [nepersistentní položka]
-   * @return sellingStands
-  **/
-  @ApiModelProperty(example = "null", value = "Prodejní místa; kolekce BO Prodejní místo [nepersistentní položka]")
-  public List<Posshopsellingstands> getSellingStands() {
-    return sellingStands;
-  }
-
-  public void setSellingStands(List<Posshopsellingstands> sellingStands) {
-    this.sellingStands = sellingStands;
-  }
-
-  public Posshop shiftCalendars(List<Posshopshiftcalendars> shiftCalendars) {
-    this.shiftCalendars = shiftCalendars;
-    return this;
-  }
-
-  public Posshop addShiftCalendarsItem(Posshopshiftcalendars shiftCalendarsItem) {
-    this.shiftCalendars.add(shiftCalendarsItem);
+  public Posshop addSellingstandsItem(Posshopsellingstands sellingstandsItem) {
+    this.sellingstands.add(sellingstandsItem);
     return this;
   }
 
    /**
-   * Směny; kolekce BO Směna [nepersistentní položka]
-   * @return shiftCalendars
+   * prodejní místa; kolekce bo prodejní místo [nepersistentní položka]
+   * @return sellingstands
   **/
-  @ApiModelProperty(example = "null", value = "Směny; kolekce BO Směna [nepersistentní položka]")
-  public List<Posshopshiftcalendars> getShiftCalendars() {
-    return shiftCalendars;
+  @ApiModelProperty(example = "null", value = "prodejní místa; kolekce bo prodejní místo [nepersistentní položka]")
+  public List<Posshopsellingstands> getSellingstands() {
+    return sellingstands;
   }
 
-  public void setShiftCalendars(List<Posshopshiftcalendars> shiftCalendars) {
-    this.shiftCalendars = shiftCalendars;
+  public void setSellingstands(List<Posshopsellingstands> sellingstands) {
+    this.sellingstands = sellingstands;
   }
 
-  public Posshop wasteDocQueueID(String wasteDocQueueID) {
-    this.wasteDocQueueID = wasteDocQueueID;
+  public Posshop shiftcalendars(List<Posshopshiftcalendars> shiftcalendars) {
+    this.shiftcalendars = shiftcalendars;
+    return this;
+  }
+
+  public Posshop addShiftcalendarsItem(Posshopshiftcalendars shiftcalendarsItem) {
+    this.shiftcalendars.add(shiftcalendarsItem);
     return this;
   }
 
    /**
-   * Řada dokladů pro ztráty prodeje; ID objektu Řada dokladů [persistentní položka]
-   * @return wasteDocQueueID
+   * směny; kolekce bo směna [nepersistentní položka]
+   * @return shiftcalendars
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů pro ztráty prodeje; ID objektu Řada dokladů [persistentní položka]")
-  public String getWasteDocQueueID() {
-    return wasteDocQueueID;
+  @ApiModelProperty(example = "null", value = "směny; kolekce bo směna [nepersistentní položka]")
+  public List<Posshopshiftcalendars> getShiftcalendars() {
+    return shiftcalendars;
   }
 
-  public void setWasteDocQueueID(String wasteDocQueueID) {
-    this.wasteDocQueueID = wasteDocQueueID;
+  public void setShiftcalendars(List<Posshopshiftcalendars> shiftcalendars) {
+    this.shiftcalendars = shiftcalendars;
   }
 
-  public Posshop shiftDocQueueID(String shiftDocQueueID) {
-    this.shiftDocQueueID = shiftDocQueueID;
+  public Posshop wastedocqueueId(String wastedocqueueId) {
+    this.wastedocqueueId = wastedocqueueId;
     return this;
   }
 
    /**
-   * Řada dokladů pro směny; ID objektu Řada dokladů [persistentní položka]
-   * @return shiftDocQueueID
+   * Řada dokladů pro ztráty prodeje; id objektu Řada dokladů [persistentní položka]
+   * @return wastedocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů pro směny; ID objektu Řada dokladů [persistentní položka]")
-  public String getShiftDocQueueID() {
-    return shiftDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada dokladů pro ztráty prodeje; id objektu Řada dokladů [persistentní položka]")
+  public String getWastedocqueueId() {
+    return wastedocqueueId;
   }
 
-  public void setShiftDocQueueID(String shiftDocQueueID) {
-    this.shiftDocQueueID = shiftDocQueueID;
+  public void setWastedocqueueId(String wastedocqueueId) {
+    this.wastedocqueueId = wastedocqueueId;
   }
 
-  public Posshop advanceDocQueueID(String advanceDocQueueID) {
-    this.advanceDocQueueID = advanceDocQueueID;
+  public Posshop shiftdocqueueId(String shiftdocqueueId) {
+    this.shiftdocqueueId = shiftdocqueueId;
     return this;
   }
 
    /**
-   * Řada dokladů pro vydané zálohové listy; ID objektu Řada dokladů [persistentní položka]
-   * @return advanceDocQueueID
+   * Řada dokladů pro směny; id objektu Řada dokladů [persistentní položka]
+   * @return shiftdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů pro vydané zálohové listy; ID objektu Řada dokladů [persistentní položka]")
-  public String getAdvanceDocQueueID() {
-    return advanceDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada dokladů pro směny; id objektu Řada dokladů [persistentní položka]")
+  public String getShiftdocqueueId() {
+    return shiftdocqueueId;
   }
 
-  public void setAdvanceDocQueueID(String advanceDocQueueID) {
-    this.advanceDocQueueID = advanceDocQueueID;
+  public void setShiftdocqueueId(String shiftdocqueueId) {
+    this.shiftdocqueueId = shiftdocqueueId;
   }
 
-  public Posshop notAccPaidDocQueueID(String notAccPaidDocQueueID) {
-    this.notAccPaidDocQueueID = notAccPaidDocQueueID;
+  public Posshop advancedocqueueId(String advancedocqueueId) {
+    this.advancedocqueueId = advancedocqueueId;
     return this;
   }
 
    /**
-   * Řada pro neúčtované vklady; ID objektu Řada dokladů [persistentní položka]
-   * @return notAccPaidDocQueueID
+   * Řada dokladů pro vydané zálohové listy; id objektu Řada dokladů [persistentní položka]
+   * @return advancedocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada pro neúčtované vklady; ID objektu Řada dokladů [persistentní položka]")
-  public String getNotAccPaidDocQueueID() {
-    return notAccPaidDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada dokladů pro vydané zálohové listy; id objektu Řada dokladů [persistentní položka]")
+  public String getAdvancedocqueueId() {
+    return advancedocqueueId;
   }
 
-  public void setNotAccPaidDocQueueID(String notAccPaidDocQueueID) {
-    this.notAccPaidDocQueueID = notAccPaidDocQueueID;
+  public void setAdvancedocqueueId(String advancedocqueueId) {
+    this.advancedocqueueId = advancedocqueueId;
   }
 
-  public Posshop notAccReceivedDocQueueID(String notAccReceivedDocQueueID) {
-    this.notAccReceivedDocQueueID = notAccReceivedDocQueueID;
+  public Posshop notaccpaiddocqueueId(String notaccpaiddocqueueId) {
+    this.notaccpaiddocqueueId = notaccpaiddocqueueId;
     return this;
   }
 
    /**
-   * Řada pro neúčtované výdeje; ID objektu Řada dokladů [persistentní položka]
-   * @return notAccReceivedDocQueueID
+   * Řada pro neúčtované vklady; id objektu Řada dokladů [persistentní položka]
+   * @return notaccpaiddocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada pro neúčtované výdeje; ID objektu Řada dokladů [persistentní položka]")
-  public String getNotAccReceivedDocQueueID() {
-    return notAccReceivedDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada pro neúčtované vklady; id objektu Řada dokladů [persistentní položka]")
+  public String getNotaccpaiddocqueueId() {
+    return notaccpaiddocqueueId;
   }
 
-  public void setNotAccReceivedDocQueueID(String notAccReceivedDocQueueID) {
-    this.notAccReceivedDocQueueID = notAccReceivedDocQueueID;
+  public void setNotaccpaiddocqueueId(String notaccpaiddocqueueId) {
+    this.notaccpaiddocqueueId = notaccpaiddocqueueId;
   }
 
-  public Posshop divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Posshop notaccreceiveddocqueueId(String notaccreceiveddocqueueId) {
+    this.notaccreceiveddocqueueId = notaccreceiveddocqueueId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * Řada pro neúčtované výdeje; id objektu Řada dokladů [persistentní položka]
+   * @return notaccreceiveddocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "Řada pro neúčtované výdeje; id objektu Řada dokladů [persistentní položka]")
+  public String getNotaccreceiveddocqueueId() {
+    return notaccreceiveddocqueueId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setNotaccreceiveddocqueueId(String notaccreceiveddocqueueId) {
+    this.notaccreceiveddocqueueId = notaccreceiveddocqueueId;
   }
 
-  public Posshop busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Posshop divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Posshop busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Posshop busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Obchodní případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Obchodní případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Posshop busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Posshop bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * obchodní případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "obchodní případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Posshop pOSMirrorDefinitionID(String pOSMirrorDefinitionID) {
-    this.pOSMirrorDefinitionID = pOSMirrorDefinitionID;
+  public Posshop busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Předvolba definice zrcadla; ID objektu Definice zrcadla [persistentní položka]
-   * @return pOSMirrorDefinitionID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Předvolba definice zrcadla; ID objektu Definice zrcadla [persistentní položka]")
-  public String getPOSMirrorDefinitionID() {
-    return pOSMirrorDefinitionID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setPOSMirrorDefinitionID(String pOSMirrorDefinitionID) {
-    this.pOSMirrorDefinitionID = pOSMirrorDefinitionID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Posshop pOSShiftID(String pOSShiftID) {
-    this.pOSShiftID = pOSShiftID;
+  public Posshop posmirrordefinitionId(String posmirrordefinitionId) {
+    this.posmirrordefinitionId = posmirrordefinitionId;
     return this;
   }
 
    /**
-   * Aktivní směna; ID objektu Směna
-   * @return pOSShiftID
+   * předvolba definice zrcadla; id objektu definice zrcadla [persistentní položka]
+   * @return posmirrordefinitionId
   **/
-  @ApiModelProperty(example = "null", value = "Aktivní směna; ID objektu Směna")
-  public String getPOSShiftID() {
-    return pOSShiftID;
+  @ApiModelProperty(example = "null", value = "předvolba definice zrcadla; id objektu definice zrcadla [persistentní položka]")
+  public String getPosmirrordefinitionId() {
+    return posmirrordefinitionId;
   }
 
-  public void setPOSShiftID(String pOSShiftID) {
-    this.pOSShiftID = pOSShiftID;
+  public void setPosmirrordefinitionId(String posmirrordefinitionId) {
+    this.posmirrordefinitionId = posmirrordefinitionId;
   }
 
-  public Posshop virtualPOSID(String virtualPOSID) {
-    this.virtualPOSID = virtualPOSID;
+  public Posshop posshiftId(String posshiftId) {
+    this.posshiftId = posshiftId;
     return this;
   }
 
    /**
-   * Pokladní místo; ID objektu Pokladní místo [persistentní položka]
-   * @return virtualPOSID
+   * aktivní směna; id objektu směna
+   * @return posshiftId
   **/
-  @ApiModelProperty(example = "null", value = "Pokladní místo; ID objektu Pokladní místo [persistentní položka]")
-  public String getVirtualPOSID() {
-    return virtualPOSID;
+  @ApiModelProperty(example = "null", value = "aktivní směna; id objektu směna")
+  public String getPosshiftId() {
+    return posshiftId;
   }
 
-  public void setVirtualPOSID(String virtualPOSID) {
-    this.virtualPOSID = virtualPOSID;
+  public void setPosshiftId(String posshiftId) {
+    this.posshiftId = posshiftId;
   }
 
-  public Posshop prefillOrderCorrection(Integer prefillOrderCorrection) {
-    this.prefillOrderCorrection = prefillOrderCorrection;
+  public Posshop virtualposId(String virtualposId) {
+    this.virtualposId = virtualposId;
     return this;
   }
 
    /**
-   * Předvolba typu opravy bonů [persistentní položka]
-   * @return prefillOrderCorrection
+   * pokladní místo; id objektu pokladní místo [persistentní položka]
+   * @return virtualposId
   **/
-  @ApiModelProperty(example = "null", value = "Předvolba typu opravy bonů [persistentní položka]")
-  public Integer getPrefillOrderCorrection() {
-    return prefillOrderCorrection;
+  @ApiModelProperty(example = "null", value = "pokladní místo; id objektu pokladní místo [persistentní položka]")
+  public String getVirtualposId() {
+    return virtualposId;
   }
 
-  public void setPrefillOrderCorrection(Integer prefillOrderCorrection) {
-    this.prefillOrderCorrection = prefillOrderCorrection;
+  public void setVirtualposId(String virtualposId) {
+    this.virtualposId = virtualposId;
   }
 
-  public Posshop refreshRate(Integer refreshRate) {
-    this.refreshRate = refreshRate;
+  public Posshop prefillordercorrection(Integer prefillordercorrection) {
+    this.prefillordercorrection = prefillordercorrection;
     return this;
   }
 
    /**
-   * Doba obnovy seznamu účtenek [persistentní položka]
-   * @return refreshRate
+   * předvolba typu opravy bonů [persistentní položka]
+   * @return prefillordercorrection
   **/
-  @ApiModelProperty(example = "null", value = "Doba obnovy seznamu účtenek [persistentní položka]")
-  public Integer getRefreshRate() {
-    return refreshRate;
+  @ApiModelProperty(example = "null", value = "předvolba typu opravy bonů [persistentní položka]")
+  public Integer getPrefillordercorrection() {
+    return prefillordercorrection;
   }
 
-  public void setRefreshRate(Integer refreshRate) {
-    this.refreshRate = refreshRate;
+  public void setPrefillordercorrection(Integer prefillordercorrection) {
+    this.prefillordercorrection = prefillordercorrection;
   }
 
-  public Posshop virtualPOSSelectionMethod(Integer virtualPOSSelectionMethod) {
-    this.virtualPOSSelectionMethod = virtualPOSSelectionMethod;
+  public Posshop refreshrate(Integer refreshrate) {
+    this.refreshrate = refreshrate;
     return this;
   }
 
    /**
-   * Způsob výběru pokladního místa [persistentní položka]
-   * @return virtualPOSSelectionMethod
+   * doba obnovy seznamu účtenek [persistentní položka]
+   * @return refreshrate
   **/
-  @ApiModelProperty(example = "null", value = "Způsob výběru pokladního místa [persistentní položka]")
-  public Integer getVirtualPOSSelectionMethod() {
-    return virtualPOSSelectionMethod;
+  @ApiModelProperty(example = "null", value = "doba obnovy seznamu účtenek [persistentní položka]")
+  public Integer getRefreshrate() {
+    return refreshrate;
   }
 
-  public void setVirtualPOSSelectionMethod(Integer virtualPOSSelectionMethod) {
-    this.virtualPOSSelectionMethod = virtualPOSSelectionMethod;
+  public void setRefreshrate(Integer refreshrate) {
+    this.refreshrate = refreshrate;
   }
 
-  public Posshop importedBillOfDeliveryMode(Integer importedBillOfDeliveryMode) {
-    this.importedBillOfDeliveryMode = importedBillOfDeliveryMode;
+  public Posshop virtualposselectionmethod(Integer virtualposselectionmethod) {
+    this.virtualposselectionmethod = virtualposselectionmethod;
     return this;
   }
 
    /**
-   * Ochrana importovaného DL [persistentní položka]
-   * @return importedBillOfDeliveryMode
+   * způsob výběru pokladního místa [persistentní položka]
+   * @return virtualposselectionmethod
   **/
-  @ApiModelProperty(example = "null", value = "Ochrana importovaného DL [persistentní položka]")
-  public Integer getImportedBillOfDeliveryMode() {
-    return importedBillOfDeliveryMode;
+  @ApiModelProperty(example = "null", value = "způsob výběru pokladního místa [persistentní položka]")
+  public Integer getVirtualposselectionmethod() {
+    return virtualposselectionmethod;
   }
 
-  public void setImportedBillOfDeliveryMode(Integer importedBillOfDeliveryMode) {
-    this.importedBillOfDeliveryMode = importedBillOfDeliveryMode;
+  public void setVirtualposselectionmethod(Integer virtualposselectionmethod) {
+    this.virtualposselectionmethod = virtualposselectionmethod;
   }
 
-  public Posshop halfPortionEnabled(Boolean halfPortionEnabled) {
-    this.halfPortionEnabled = halfPortionEnabled;
+  public Posshop importedbillofdeliverymode(Integer importedbillofdeliverymode) {
+    this.importedbillofdeliverymode = importedbillofdeliverymode;
     return this;
   }
 
    /**
-   * Prodávat poloviční porce [persistentní položka]
-   * @return halfPortionEnabled
+   * ochrana importovaného dl [persistentní položka]
+   * @return importedbillofdeliverymode
   **/
-  @ApiModelProperty(example = "null", value = "Prodávat poloviční porce [persistentní položka]")
-  public Boolean getHalfPortionEnabled() {
-    return halfPortionEnabled;
+  @ApiModelProperty(example = "null", value = "ochrana importovaného dl [persistentní položka]")
+  public Integer getImportedbillofdeliverymode() {
+    return importedbillofdeliverymode;
   }
 
-  public void setHalfPortionEnabled(Boolean halfPortionEnabled) {
-    this.halfPortionEnabled = halfPortionEnabled;
+  public void setImportedbillofdeliverymode(Integer importedbillofdeliverymode) {
+    this.importedbillofdeliverymode = importedbillofdeliverymode;
   }
 
-  public Posshop useShifts(Boolean useShifts) {
-    this.useShifts = useShifts;
+  public Posshop halfportionenabled(Boolean halfportionenabled) {
+    this.halfportionenabled = halfportionenabled;
     return this;
   }
 
    /**
-   * Pracovat na směny [persistentní položka]
-   * @return useShifts
+   * prodávat poloviční porce [persistentní položka]
+   * @return halfportionenabled
   **/
-  @ApiModelProperty(example = "null", value = "Pracovat na směny [persistentní položka]")
-  public Boolean getUseShifts() {
-    return useShifts;
+  @ApiModelProperty(example = "null", value = "prodávat poloviční porce [persistentní položka]")
+  public Boolean getHalfportionenabled() {
+    return halfportionenabled;
   }
 
-  public void setUseShifts(Boolean useShifts) {
-    this.useShifts = useShifts;
+  public void setHalfportionenabled(Boolean halfportionenabled) {
+    this.halfportionenabled = halfportionenabled;
   }
 
-  public Posshop oneShiftToReceipt(Boolean oneShiftToReceipt) {
-    this.oneShiftToReceipt = oneShiftToReceipt;
+  public Posshop useshifts(Boolean useshifts) {
+    this.useshifts = useshifts;
     return this;
   }
 
    /**
-   * Jedna tržba na směnu [persistentní položka]
-   * @return oneShiftToReceipt
+   * pracovat na směny [persistentní položka]
+   * @return useshifts
   **/
-  @ApiModelProperty(example = "null", value = "Jedna tržba na směnu [persistentní položka]")
-  public Boolean getOneShiftToReceipt() {
-    return oneShiftToReceipt;
+  @ApiModelProperty(example = "null", value = "pracovat na směny [persistentní položka]")
+  public Boolean getUseshifts() {
+    return useshifts;
   }
 
-  public void setOneShiftToReceipt(Boolean oneShiftToReceipt) {
-    this.oneShiftToReceipt = oneShiftToReceipt;
+  public void setUseshifts(Boolean useshifts) {
+    this.useshifts = useshifts;
   }
 
-  public Posshop halfPortionWeight(Double halfPortionWeight) {
-    this.halfPortionWeight = halfPortionWeight;
+  public Posshop oneshifttoreceipt(Boolean oneshifttoreceipt) {
+    this.oneshifttoreceipt = oneshifttoreceipt;
     return this;
   }
 
    /**
-   * Velikost poloviční porce [persistentní položka]
-   * @return halfPortionWeight
+   * jedna tržba na směnu [persistentní položka]
+   * @return oneshifttoreceipt
   **/
-  @ApiModelProperty(example = "null", value = "Velikost poloviční porce [persistentní položka]")
-  public Double getHalfPortionWeight() {
-    return halfPortionWeight;
+  @ApiModelProperty(example = "null", value = "jedna tržba na směnu [persistentní položka]")
+  public Boolean getOneshifttoreceipt() {
+    return oneshifttoreceipt;
   }
 
-  public void setHalfPortionWeight(Double halfPortionWeight) {
-    this.halfPortionWeight = halfPortionWeight;
+  public void setOneshifttoreceipt(Boolean oneshifttoreceipt) {
+    this.oneshifttoreceipt = oneshifttoreceipt;
   }
 
-  public Posshop halfPortionPrice(Double halfPortionPrice) {
-    this.halfPortionPrice = halfPortionPrice;
+  public Posshop halfportionweight(Double halfportionweight) {
+    this.halfportionweight = halfportionweight;
     return this;
   }
 
    /**
-   * Cena poloviční porce [persistentní položka]
-   * @return halfPortionPrice
+   * velikost poloviční porce [persistentní položka]
+   * @return halfportionweight
   **/
-  @ApiModelProperty(example = "null", value = "Cena poloviční porce [persistentní položka]")
-  public Double getHalfPortionPrice() {
-    return halfPortionPrice;
+  @ApiModelProperty(example = "null", value = "velikost poloviční porce [persistentní položka]")
+  public Double getHalfportionweight() {
+    return halfportionweight;
   }
 
-  public void setHalfPortionPrice(Double halfPortionPrice) {
-    this.halfPortionPrice = halfPortionPrice;
+  public void setHalfportionweight(Double halfportionweight) {
+    this.halfportionweight = halfportionweight;
+  }
+
+  public Posshop halfportionprice(Double halfportionprice) {
+    this.halfportionprice = halfportionprice;
+    return this;
+  }
+
+   /**
+   * cena poloviční porce [persistentní položka]
+   * @return halfportionprice
+  **/
+  @ApiModelProperty(example = "null", value = "cena poloviční porce [persistentní položka]")
+  public Double getHalfportionprice() {
+    return halfportionprice;
+  }
+
+  public void setHalfportionprice(Double halfportionprice) {
+    this.halfportionprice = halfportionprice;
   }
 
 
@@ -3612,181 +3648,181 @@ public class Posshop   {
       return false;
     }
     Posshop posshop = (Posshop) o;
-    return Objects.equals(this.displayName, posshop.displayName) &&
-        Objects.equals(this.ID, posshop.ID) &&
-        Objects.equals(this.classID, posshop.classID) &&
-        Objects.equals(this.objVersion, posshop.objVersion) &&
+    return Objects.equals(this.displayname, posshop.displayname) &&
+        Objects.equals(this.id, posshop.id) &&
+        Objects.equals(this.classid, posshop.classid) &&
+        Objects.equals(this.objversion, posshop.objversion) &&
         Objects.equals(this.rows, posshop.rows) &&
         Objects.equals(this.code, posshop.code) &&
         Objects.equals(this.name, posshop.name) &&
         Objects.equals(this.site, posshop.site) &&
-        Objects.equals(this.storeID, posshop.storeID) &&
-        Objects.equals(this.firmID, posshop.firmID) &&
-        Objects.equals(this.shopAddressID, posshop.shopAddressID) &&
-        Objects.equals(this.docQueueID, posshop.docQueueID) &&
-        Objects.equals(this.storeDocQueueID, posshop.storeDocQueueID) &&
-        Objects.equals(this.refundedStoreDocQueueID, posshop.refundedStoreDocQueueID) &&
-        Objects.equals(this.incomeStoreDocQueueID, posshop.incomeStoreDocQueueID) &&
-        Objects.equals(this.paymentTypeID, posshop.paymentTypeID) &&
-        Objects.equals(this.containerPaymentTypeID, posshop.containerPaymentTypeID) &&
-        Objects.equals(this.dealerCategoryCaption, posshop.dealerCategoryCaption) &&
-        Objects.equals(this.description2Caption, posshop.description2Caption) &&
-        Objects.equals(this.billHeader1, posshop.billHeader1) &&
-        Objects.equals(this.billHeader2, posshop.billHeader2) &&
-        Objects.equals(this.billHeader3, posshop.billHeader3) &&
-        Objects.equals(this.billHeader1Wide, posshop.billHeader1Wide) &&
-        Objects.equals(this.billHeader2Wide, posshop.billHeader2Wide) &&
-        Objects.equals(this.billHeader3Wide, posshop.billHeader3Wide) &&
-        Objects.equals(this.billFooter1, posshop.billFooter1) &&
-        Objects.equals(this.billFooter2, posshop.billFooter2) &&
-        Objects.equals(this.billFooter3, posshop.billFooter3) &&
-        Objects.equals(this.billFooter1Wide, posshop.billFooter1Wide) &&
-        Objects.equals(this.billFooter2Wide, posshop.billFooter2Wide) &&
-        Objects.equals(this.billFooter3Wide, posshop.billFooter3Wide) &&
-        Objects.equals(this.printStoreCardCode, posshop.printStoreCardCode) &&
-        Objects.equals(this.printPLU, posshop.printPLU) &&
-        Objects.equals(this.printFirmName, posshop.printFirmName) &&
-        Objects.equals(this.printShopName, posshop.printShopName) &&
-        Objects.equals(this.printAdress, posshop.printAdress) &&
-        Objects.equals(this.printShopAddress, posshop.printShopAddress) &&
-        Objects.equals(this.printUserName, posshop.printUserName) &&
-        Objects.equals(this.printPhone, posshop.printPhone) &&
-        Objects.equals(this.printShopPhone, posshop.printShopPhone) &&
-        Objects.equals(this.printFax, posshop.printFax) &&
-        Objects.equals(this.printShopFax, posshop.printShopFax) &&
-        Objects.equals(this.printEMail, posshop.printEMail) &&
-        Objects.equals(this.printShopEMail, posshop.printShopEMail) &&
-        Objects.equals(this.printWWW, posshop.printWWW) &&
-        Objects.equals(this.printDateTime, posshop.printDateTime) &&
-        Objects.equals(this.printPaymentResume, posshop.printPaymentResume) &&
-        Objects.equals(this.printVATResume, posshop.printVATResume) &&
-        Objects.equals(this.printIdentNumber, posshop.printIdentNumber) &&
-        Objects.equals(this.printBillBarCode, posshop.printBillBarCode) &&
-        Objects.equals(this.printDescription2, posshop.printDescription2) &&
-        Objects.equals(this.printCustomer, posshop.printCustomer) &&
-        Objects.equals(this.printDealerCategory, posshop.printDealerCategory) &&
-        Objects.equals(this.printSpecification1, posshop.printSpecification1) &&
-        Objects.equals(this.printSpecification2, posshop.printSpecification2) &&
-        Objects.equals(this.splitByUnits, posshop.splitByUnits) &&
-        Objects.equals(this.lockZeroPurchasePrice, posshop.lockZeroPurchasePrice) &&
-        Objects.equals(this.printRegisterInfo, posshop.printRegisterInfo) &&
-        Objects.equals(this.printCurrencyCoef, posshop.printCurrencyCoef) &&
-        Objects.equals(this.useLowBorderPLU, posshop.useLowBorderPLU) &&
-        Objects.equals(this.lowBorderPLU, posshop.lowBorderPLU) &&
-        Objects.equals(this.vATRounding, posshop.vATRounding) &&
-        Objects.equals(this.rowRounding, posshop.rowRounding) &&
-        Objects.equals(this.totalRounding, posshop.totalRounding) &&
-        Objects.equals(this.priceAndVAT, posshop.priceAndVAT) &&
-        Objects.equals(this.summaryLevel, posshop.summaryLevel) &&
-        Objects.equals(this.completePrices, posshop.completePrices) &&
-        Objects.equals(this.containerCompletePrices, posshop.containerCompletePrices) &&
-        Objects.equals(this.useFirmPriceDefinition, posshop.useFirmPriceDefinition) &&
-        Objects.equals(this.containerRefundPrice, posshop.containerRefundPrice) &&
-        Objects.equals(this.gastroDocQueueID, posshop.gastroDocQueueID) &&
-        Objects.equals(this.searchOrder, posshop.searchOrder) &&
-        Objects.equals(this.searchMode, posshop.searchMode) &&
-        Objects.equals(this.useUnitSelection, posshop.useUnitSelection) &&
-        Objects.equals(this.dealerDiscountKind, posshop.dealerDiscountKind) &&
-        Objects.equals(this.useQuantityDiscount, posshop.useQuantityDiscount) &&
-        Objects.equals(this.dealerDiscountOnHandMadePrice, posshop.dealerDiscountOnHandMadePrice) &&
-        Objects.equals(this.refundInForeignCurrency, posshop.refundInForeignCurrency) &&
-        Objects.equals(this.useRefundStore, posshop.useRefundStore) &&
-        Objects.equals(this.refundPayments, posshop.refundPayments) &&
-        Objects.equals(this.entireMacroCard, posshop.entireMacroCard) &&
-        Objects.equals(this.useBusOrder, posshop.useBusOrder) &&
-        Objects.equals(this.useBusTransaction, posshop.useBusTransaction) &&
-        Objects.equals(this.useBusProject, posshop.useBusProject) &&
-        Objects.equals(this.useDescription, posshop.useDescription) &&
-        Objects.equals(this.useDescription2, posshop.useDescription2) &&
-        Objects.equals(this.onLineStore, posshop.onLineStore) &&
-        Objects.equals(this.useSerialNumbers, posshop.useSerialNumbers) &&
-        Objects.equals(this.useStoreBatches, posshop.useStoreBatches) &&
-        Objects.equals(this.useMultipleBills, posshop.useMultipleBills) &&
-        Objects.equals(this.useIdentificationLimit, posshop.useIdentificationLimit) &&
-        Objects.equals(this.identificationLimit, posshop.identificationLimit) &&
-        Objects.equals(this.showStock, posshop.showStock) &&
-        Objects.equals(this.showStockInPriceList, posshop.showStockInPriceList) &&
-        Objects.equals(this.outOfStockDelivery, posshop.outOfStockDelivery) &&
-        Objects.equals(this.outOfStockDeliveryG, posshop.outOfStockDeliveryG) &&
-        Objects.equals(this.cashBackPositive, posshop.cashBackPositive) &&
-        Objects.equals(this.usePriceSelection, posshop.usePriceSelection) &&
-        Objects.equals(this.paymentMode, posshop.paymentMode) &&
-        Objects.equals(this.countOfDecimalPlaces, posshop.countOfDecimalPlaces) &&
-        Objects.equals(this.pricePrecision, posshop.pricePrecision) &&
-        Objects.equals(this.returnOnlyFullBill, posshop.returnOnlyFullBill) &&
-        Objects.equals(this.returnOnlyTodayBill, posshop.returnOnlyTodayBill) &&
-        Objects.equals(this.enableConsignmentSale, posshop.enableConsignmentSale) &&
-        Objects.equals(this.givePriorityToConsignmentStore, posshop.givePriorityToConsignmentStore) &&
-        Objects.equals(this.firmSearchMode, posshop.firmSearchMode) &&
-        Objects.equals(this.storeCardNameFullText, posshop.storeCardNameFullText) &&
-        Objects.equals(this.storeCardCodeFullText, posshop.storeCardCodeFullText) &&
-        Objects.equals(this.storeCardSpecificationFullText, posshop.storeCardSpecificationFullText) &&
-        Objects.equals(this.firmCodeFullText, posshop.firmCodeFullText) &&
-        Objects.equals(this.firmNameFullText, posshop.firmNameFullText) &&
-        Objects.equals(this.viewSpecification, posshop.viewSpecification) &&
-        Objects.equals(this.viewSpecification2, posshop.viewSpecification2) &&
-        Objects.equals(this.priceListKeyF2, posshop.priceListKeyF2) &&
-        Objects.equals(this.priceListKeyF3, posshop.priceListKeyF3) &&
-        Objects.equals(this.priceListKeyF4, posshop.priceListKeyF4) &&
-        Objects.equals(this.priceListKeyF5, posshop.priceListKeyF5) &&
-        Objects.equals(this.priceListKeyF6, posshop.priceListKeyF6) &&
-        Objects.equals(this.priceListKeyF7, posshop.priceListKeyF7) &&
-        Objects.equals(this.priceListKeyF8, posshop.priceListKeyF8) &&
-        Objects.equals(this.adressListKeyF2, posshop.adressListKeyF2) &&
-        Objects.equals(this.adressListKeyF3, posshop.adressListKeyF3) &&
-        Objects.equals(this.adressListKeyF4, posshop.adressListKeyF4) &&
-        Objects.equals(this.adressListKeyF5, posshop.adressListKeyF5) &&
-        Objects.equals(this.adressListKeyF6, posshop.adressListKeyF6) &&
-        Objects.equals(this.adressListKeyF7, posshop.adressListKeyF7) &&
-        Objects.equals(this.adressListKeyF8, posshop.adressListKeyF8) &&
-        Objects.equals(this.adressListMenuRow1, posshop.adressListMenuRow1) &&
-        Objects.equals(this.adressListMenuRow2, posshop.adressListMenuRow2) &&
-        Objects.equals(this.adressListMenuRow3, posshop.adressListMenuRow3) &&
-        Objects.equals(this.adressListMenuRow4, posshop.adressListMenuRow4) &&
-        Objects.equals(this.adressListMenuRow5, posshop.adressListMenuRow5) &&
-        Objects.equals(this.adressListMenuRow6, posshop.adressListMenuRow6) &&
-        Objects.equals(this.adressListMenuRow7, posshop.adressListMenuRow7) &&
-        Objects.equals(this.orderPrintSequence, posshop.orderPrintSequence) &&
-        Objects.equals(this.orderPrintMode, posshop.orderPrintMode) &&
-        Objects.equals(this.printAmountMode, posshop.printAmountMode) &&
-        Objects.equals(this.orderPrintEvent, posshop.orderPrintEvent) &&
-        Objects.equals(this.orderPrintStoreCardCode, posshop.orderPrintStoreCardCode) &&
-        Objects.equals(this.orderPrintPrice, posshop.orderPrintPrice) &&
-        Objects.equals(this.orderPrintQUnit, posshop.orderPrintQUnit) &&
-        Objects.equals(this.orderPrintWideStoreCard, posshop.orderPrintWideStoreCard) &&
-        Objects.equals(this.orderPrintWideQuantity, posshop.orderPrintWideQuantity) &&
-        Objects.equals(this.billOneUserOnly, posshop.billOneUserOnly) &&
-        Objects.equals(this.consignmentStores, posshop.consignmentStores) &&
+        Objects.equals(this.storeId, posshop.storeId) &&
+        Objects.equals(this.firmId, posshop.firmId) &&
+        Objects.equals(this.shopaddressId, posshop.shopaddressId) &&
+        Objects.equals(this.docqueueId, posshop.docqueueId) &&
+        Objects.equals(this.storedocqueueId, posshop.storedocqueueId) &&
+        Objects.equals(this.refundedstoredocqueueId, posshop.refundedstoredocqueueId) &&
+        Objects.equals(this.incomestoredocqueueId, posshop.incomestoredocqueueId) &&
+        Objects.equals(this.paymenttypeId, posshop.paymenttypeId) &&
+        Objects.equals(this.containerpaymenttypeId, posshop.containerpaymenttypeId) &&
+        Objects.equals(this.dealercategorycaption, posshop.dealercategorycaption) &&
+        Objects.equals(this.description2caption, posshop.description2caption) &&
+        Objects.equals(this.billheader1, posshop.billheader1) &&
+        Objects.equals(this.billheader2, posshop.billheader2) &&
+        Objects.equals(this.billheader3, posshop.billheader3) &&
+        Objects.equals(this.billheader1wide, posshop.billheader1wide) &&
+        Objects.equals(this.billheader2wide, posshop.billheader2wide) &&
+        Objects.equals(this.billheader3wide, posshop.billheader3wide) &&
+        Objects.equals(this.billfooter1, posshop.billfooter1) &&
+        Objects.equals(this.billfooter2, posshop.billfooter2) &&
+        Objects.equals(this.billfooter3, posshop.billfooter3) &&
+        Objects.equals(this.billfooter1wide, posshop.billfooter1wide) &&
+        Objects.equals(this.billfooter2wide, posshop.billfooter2wide) &&
+        Objects.equals(this.billfooter3wide, posshop.billfooter3wide) &&
+        Objects.equals(this.printstorecardcode, posshop.printstorecardcode) &&
+        Objects.equals(this.printplu, posshop.printplu) &&
+        Objects.equals(this.printfirmname, posshop.printfirmname) &&
+        Objects.equals(this.printshopname, posshop.printshopname) &&
+        Objects.equals(this.printadress, posshop.printadress) &&
+        Objects.equals(this.printshopaddress, posshop.printshopaddress) &&
+        Objects.equals(this.printusername, posshop.printusername) &&
+        Objects.equals(this.printphone, posshop.printphone) &&
+        Objects.equals(this.printshopphone, posshop.printshopphone) &&
+        Objects.equals(this.printfax, posshop.printfax) &&
+        Objects.equals(this.printshopfax, posshop.printshopfax) &&
+        Objects.equals(this.printemail, posshop.printemail) &&
+        Objects.equals(this.printshopemail, posshop.printshopemail) &&
+        Objects.equals(this.printwww, posshop.printwww) &&
+        Objects.equals(this.printdatetime, posshop.printdatetime) &&
+        Objects.equals(this.printpaymentresume, posshop.printpaymentresume) &&
+        Objects.equals(this.printvatresume, posshop.printvatresume) &&
+        Objects.equals(this.printidentnumber, posshop.printidentnumber) &&
+        Objects.equals(this.printbillbarcode, posshop.printbillbarcode) &&
+        Objects.equals(this.printdescription2, posshop.printdescription2) &&
+        Objects.equals(this.printcustomer, posshop.printcustomer) &&
+        Objects.equals(this.printdealercategory, posshop.printdealercategory) &&
+        Objects.equals(this.printspecification1, posshop.printspecification1) &&
+        Objects.equals(this.printspecification2, posshop.printspecification2) &&
+        Objects.equals(this.splitbyunits, posshop.splitbyunits) &&
+        Objects.equals(this.lockzeropurchaseprice, posshop.lockzeropurchaseprice) &&
+        Objects.equals(this.printregisterinfo, posshop.printregisterinfo) &&
+        Objects.equals(this.printcurrencycoef, posshop.printcurrencycoef) &&
+        Objects.equals(this.uselowborderplu, posshop.uselowborderplu) &&
+        Objects.equals(this.lowborderplu, posshop.lowborderplu) &&
+        Objects.equals(this.vatrounding, posshop.vatrounding) &&
+        Objects.equals(this.rowrounding, posshop.rowrounding) &&
+        Objects.equals(this.totalrounding, posshop.totalrounding) &&
+        Objects.equals(this.priceandvat, posshop.priceandvat) &&
+        Objects.equals(this.summarylevel, posshop.summarylevel) &&
+        Objects.equals(this.completeprices, posshop.completeprices) &&
+        Objects.equals(this.containercompleteprices, posshop.containercompleteprices) &&
+        Objects.equals(this.usefirmpricedefinition, posshop.usefirmpricedefinition) &&
+        Objects.equals(this.containerrefundprice, posshop.containerrefundprice) &&
+        Objects.equals(this.gastrodocqueueId, posshop.gastrodocqueueId) &&
+        Objects.equals(this.searchorder, posshop.searchorder) &&
+        Objects.equals(this.searchmode, posshop.searchmode) &&
+        Objects.equals(this.useunitselection, posshop.useunitselection) &&
+        Objects.equals(this.dealerdiscountkind, posshop.dealerdiscountkind) &&
+        Objects.equals(this.usequantitydiscount, posshop.usequantitydiscount) &&
+        Objects.equals(this.dealerdiscountonhandmadeprice, posshop.dealerdiscountonhandmadeprice) &&
+        Objects.equals(this.refundinforeigncurrency, posshop.refundinforeigncurrency) &&
+        Objects.equals(this.userefundstore, posshop.userefundstore) &&
+        Objects.equals(this.refundpayments, posshop.refundpayments) &&
+        Objects.equals(this.entiremacrocard, posshop.entiremacrocard) &&
+        Objects.equals(this.usebusorder, posshop.usebusorder) &&
+        Objects.equals(this.usebustransaction, posshop.usebustransaction) &&
+        Objects.equals(this.usebusproject, posshop.usebusproject) &&
+        Objects.equals(this.usedescription, posshop.usedescription) &&
+        Objects.equals(this.usedescription2, posshop.usedescription2) &&
+        Objects.equals(this.onlinestore, posshop.onlinestore) &&
+        Objects.equals(this.useserialnumbers, posshop.useserialnumbers) &&
+        Objects.equals(this.usestorebatches, posshop.usestorebatches) &&
+        Objects.equals(this.usemultiplebills, posshop.usemultiplebills) &&
+        Objects.equals(this.useidentificationlimit, posshop.useidentificationlimit) &&
+        Objects.equals(this.identificationlimit, posshop.identificationlimit) &&
+        Objects.equals(this.showstock, posshop.showstock) &&
+        Objects.equals(this.showstockinpricelist, posshop.showstockinpricelist) &&
+        Objects.equals(this.outofstockdelivery, posshop.outofstockdelivery) &&
+        Objects.equals(this.outofstockdeliveryg, posshop.outofstockdeliveryg) &&
+        Objects.equals(this.cashbackpositive, posshop.cashbackpositive) &&
+        Objects.equals(this.usepriceselection, posshop.usepriceselection) &&
+        Objects.equals(this.paymentmode, posshop.paymentmode) &&
+        Objects.equals(this.countofdecimalplaces, posshop.countofdecimalplaces) &&
+        Objects.equals(this.priceprecision, posshop.priceprecision) &&
+        Objects.equals(this.returnonlyfullbill, posshop.returnonlyfullbill) &&
+        Objects.equals(this.returnonlytodaybill, posshop.returnonlytodaybill) &&
+        Objects.equals(this.enableconsignmentsale, posshop.enableconsignmentsale) &&
+        Objects.equals(this.giveprioritytoconsignmentstore, posshop.giveprioritytoconsignmentstore) &&
+        Objects.equals(this.firmsearchmode, posshop.firmsearchmode) &&
+        Objects.equals(this.storecardnamefulltext, posshop.storecardnamefulltext) &&
+        Objects.equals(this.storecardcodefulltext, posshop.storecardcodefulltext) &&
+        Objects.equals(this.storecardspecificationfulltext, posshop.storecardspecificationfulltext) &&
+        Objects.equals(this.firmcodefulltext, posshop.firmcodefulltext) &&
+        Objects.equals(this.firmnamefulltext, posshop.firmnamefulltext) &&
+        Objects.equals(this.viewspecification, posshop.viewspecification) &&
+        Objects.equals(this.viewspecification2, posshop.viewspecification2) &&
+        Objects.equals(this.pricelistkeyf2, posshop.pricelistkeyf2) &&
+        Objects.equals(this.pricelistkeyf3, posshop.pricelistkeyf3) &&
+        Objects.equals(this.pricelistkeyf4, posshop.pricelistkeyf4) &&
+        Objects.equals(this.pricelistkeyf5, posshop.pricelistkeyf5) &&
+        Objects.equals(this.pricelistkeyf6, posshop.pricelistkeyf6) &&
+        Objects.equals(this.pricelistkeyf7, posshop.pricelistkeyf7) &&
+        Objects.equals(this.pricelistkeyf8, posshop.pricelistkeyf8) &&
+        Objects.equals(this.adresslistkeyf2, posshop.adresslistkeyf2) &&
+        Objects.equals(this.adresslistkeyf3, posshop.adresslistkeyf3) &&
+        Objects.equals(this.adresslistkeyf4, posshop.adresslistkeyf4) &&
+        Objects.equals(this.adresslistkeyf5, posshop.adresslistkeyf5) &&
+        Objects.equals(this.adresslistkeyf6, posshop.adresslistkeyf6) &&
+        Objects.equals(this.adresslistkeyf7, posshop.adresslistkeyf7) &&
+        Objects.equals(this.adresslistkeyf8, posshop.adresslistkeyf8) &&
+        Objects.equals(this.adresslistmenurow1, posshop.adresslistmenurow1) &&
+        Objects.equals(this.adresslistmenurow2, posshop.adresslistmenurow2) &&
+        Objects.equals(this.adresslistmenurow3, posshop.adresslistmenurow3) &&
+        Objects.equals(this.adresslistmenurow4, posshop.adresslistmenurow4) &&
+        Objects.equals(this.adresslistmenurow5, posshop.adresslistmenurow5) &&
+        Objects.equals(this.adresslistmenurow6, posshop.adresslistmenurow6) &&
+        Objects.equals(this.adresslistmenurow7, posshop.adresslistmenurow7) &&
+        Objects.equals(this.orderprintsequence, posshop.orderprintsequence) &&
+        Objects.equals(this.orderprintmode, posshop.orderprintmode) &&
+        Objects.equals(this.printamountmode, posshop.printamountmode) &&
+        Objects.equals(this.orderprintevent, posshop.orderprintevent) &&
+        Objects.equals(this.orderprintstorecardcode, posshop.orderprintstorecardcode) &&
+        Objects.equals(this.orderprintprice, posshop.orderprintprice) &&
+        Objects.equals(this.orderprintqunit, posshop.orderprintqunit) &&
+        Objects.equals(this.orderprintwidestorecard, posshop.orderprintwidestorecard) &&
+        Objects.equals(this.orderprintwidequantity, posshop.orderprintwidequantity) &&
+        Objects.equals(this.billoneuseronly, posshop.billoneuseronly) &&
+        Objects.equals(this.consignmentstores, posshop.consignmentstores) &&
         Objects.equals(this.payments, posshop.payments) &&
         Objects.equals(this.suppliers, posshop.suppliers) &&
-        Objects.equals(this.sellingStands, posshop.sellingStands) &&
-        Objects.equals(this.shiftCalendars, posshop.shiftCalendars) &&
-        Objects.equals(this.wasteDocQueueID, posshop.wasteDocQueueID) &&
-        Objects.equals(this.shiftDocQueueID, posshop.shiftDocQueueID) &&
-        Objects.equals(this.advanceDocQueueID, posshop.advanceDocQueueID) &&
-        Objects.equals(this.notAccPaidDocQueueID, posshop.notAccPaidDocQueueID) &&
-        Objects.equals(this.notAccReceivedDocQueueID, posshop.notAccReceivedDocQueueID) &&
-        Objects.equals(this.divisionID, posshop.divisionID) &&
-        Objects.equals(this.busOrderID, posshop.busOrderID) &&
-        Objects.equals(this.busTransactionID, posshop.busTransactionID) &&
-        Objects.equals(this.busProjectID, posshop.busProjectID) &&
-        Objects.equals(this.pOSMirrorDefinitionID, posshop.pOSMirrorDefinitionID) &&
-        Objects.equals(this.pOSShiftID, posshop.pOSShiftID) &&
-        Objects.equals(this.virtualPOSID, posshop.virtualPOSID) &&
-        Objects.equals(this.prefillOrderCorrection, posshop.prefillOrderCorrection) &&
-        Objects.equals(this.refreshRate, posshop.refreshRate) &&
-        Objects.equals(this.virtualPOSSelectionMethod, posshop.virtualPOSSelectionMethod) &&
-        Objects.equals(this.importedBillOfDeliveryMode, posshop.importedBillOfDeliveryMode) &&
-        Objects.equals(this.halfPortionEnabled, posshop.halfPortionEnabled) &&
-        Objects.equals(this.useShifts, posshop.useShifts) &&
-        Objects.equals(this.oneShiftToReceipt, posshop.oneShiftToReceipt) &&
-        Objects.equals(this.halfPortionWeight, posshop.halfPortionWeight) &&
-        Objects.equals(this.halfPortionPrice, posshop.halfPortionPrice);
+        Objects.equals(this.sellingstands, posshop.sellingstands) &&
+        Objects.equals(this.shiftcalendars, posshop.shiftcalendars) &&
+        Objects.equals(this.wastedocqueueId, posshop.wastedocqueueId) &&
+        Objects.equals(this.shiftdocqueueId, posshop.shiftdocqueueId) &&
+        Objects.equals(this.advancedocqueueId, posshop.advancedocqueueId) &&
+        Objects.equals(this.notaccpaiddocqueueId, posshop.notaccpaiddocqueueId) &&
+        Objects.equals(this.notaccreceiveddocqueueId, posshop.notaccreceiveddocqueueId) &&
+        Objects.equals(this.divisionId, posshop.divisionId) &&
+        Objects.equals(this.busorderId, posshop.busorderId) &&
+        Objects.equals(this.bustransactionId, posshop.bustransactionId) &&
+        Objects.equals(this.busprojectId, posshop.busprojectId) &&
+        Objects.equals(this.posmirrordefinitionId, posshop.posmirrordefinitionId) &&
+        Objects.equals(this.posshiftId, posshop.posshiftId) &&
+        Objects.equals(this.virtualposId, posshop.virtualposId) &&
+        Objects.equals(this.prefillordercorrection, posshop.prefillordercorrection) &&
+        Objects.equals(this.refreshrate, posshop.refreshrate) &&
+        Objects.equals(this.virtualposselectionmethod, posshop.virtualposselectionmethod) &&
+        Objects.equals(this.importedbillofdeliverymode, posshop.importedbillofdeliverymode) &&
+        Objects.equals(this.halfportionenabled, posshop.halfportionenabled) &&
+        Objects.equals(this.useshifts, posshop.useshifts) &&
+        Objects.equals(this.oneshifttoreceipt, posshop.oneshifttoreceipt) &&
+        Objects.equals(this.halfportionweight, posshop.halfportionweight) &&
+        Objects.equals(this.halfportionprice, posshop.halfportionprice);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, code, name, site, storeID, firmID, shopAddressID, docQueueID, storeDocQueueID, refundedStoreDocQueueID, incomeStoreDocQueueID, paymentTypeID, containerPaymentTypeID, dealerCategoryCaption, description2Caption, billHeader1, billHeader2, billHeader3, billHeader1Wide, billHeader2Wide, billHeader3Wide, billFooter1, billFooter2, billFooter3, billFooter1Wide, billFooter2Wide, billFooter3Wide, printStoreCardCode, printPLU, printFirmName, printShopName, printAdress, printShopAddress, printUserName, printPhone, printShopPhone, printFax, printShopFax, printEMail, printShopEMail, printWWW, printDateTime, printPaymentResume, printVATResume, printIdentNumber, printBillBarCode, printDescription2, printCustomer, printDealerCategory, printSpecification1, printSpecification2, splitByUnits, lockZeroPurchasePrice, printRegisterInfo, printCurrencyCoef, useLowBorderPLU, lowBorderPLU, vATRounding, rowRounding, totalRounding, priceAndVAT, summaryLevel, completePrices, containerCompletePrices, useFirmPriceDefinition, containerRefundPrice, gastroDocQueueID, searchOrder, searchMode, useUnitSelection, dealerDiscountKind, useQuantityDiscount, dealerDiscountOnHandMadePrice, refundInForeignCurrency, useRefundStore, refundPayments, entireMacroCard, useBusOrder, useBusTransaction, useBusProject, useDescription, useDescription2, onLineStore, useSerialNumbers, useStoreBatches, useMultipleBills, useIdentificationLimit, identificationLimit, showStock, showStockInPriceList, outOfStockDelivery, outOfStockDeliveryG, cashBackPositive, usePriceSelection, paymentMode, countOfDecimalPlaces, pricePrecision, returnOnlyFullBill, returnOnlyTodayBill, enableConsignmentSale, givePriorityToConsignmentStore, firmSearchMode, storeCardNameFullText, storeCardCodeFullText, storeCardSpecificationFullText, firmCodeFullText, firmNameFullText, viewSpecification, viewSpecification2, priceListKeyF2, priceListKeyF3, priceListKeyF4, priceListKeyF5, priceListKeyF6, priceListKeyF7, priceListKeyF8, adressListKeyF2, adressListKeyF3, adressListKeyF4, adressListKeyF5, adressListKeyF6, adressListKeyF7, adressListKeyF8, adressListMenuRow1, adressListMenuRow2, adressListMenuRow3, adressListMenuRow4, adressListMenuRow5, adressListMenuRow6, adressListMenuRow7, orderPrintSequence, orderPrintMode, printAmountMode, orderPrintEvent, orderPrintStoreCardCode, orderPrintPrice, orderPrintQUnit, orderPrintWideStoreCard, orderPrintWideQuantity, billOneUserOnly, consignmentStores, payments, suppliers, sellingStands, shiftCalendars, wasteDocQueueID, shiftDocQueueID, advanceDocQueueID, notAccPaidDocQueueID, notAccReceivedDocQueueID, divisionID, busOrderID, busTransactionID, busProjectID, pOSMirrorDefinitionID, pOSShiftID, virtualPOSID, prefillOrderCorrection, refreshRate, virtualPOSSelectionMethod, importedBillOfDeliveryMode, halfPortionEnabled, useShifts, oneShiftToReceipt, halfPortionWeight, halfPortionPrice);
+    return Objects.hash(displayname, id, classid, objversion, rows, code, name, site, storeId, firmId, shopaddressId, docqueueId, storedocqueueId, refundedstoredocqueueId, incomestoredocqueueId, paymenttypeId, containerpaymenttypeId, dealercategorycaption, description2caption, billheader1, billheader2, billheader3, billheader1wide, billheader2wide, billheader3wide, billfooter1, billfooter2, billfooter3, billfooter1wide, billfooter2wide, billfooter3wide, printstorecardcode, printplu, printfirmname, printshopname, printadress, printshopaddress, printusername, printphone, printshopphone, printfax, printshopfax, printemail, printshopemail, printwww, printdatetime, printpaymentresume, printvatresume, printidentnumber, printbillbarcode, printdescription2, printcustomer, printdealercategory, printspecification1, printspecification2, splitbyunits, lockzeropurchaseprice, printregisterinfo, printcurrencycoef, uselowborderplu, lowborderplu, vatrounding, rowrounding, totalrounding, priceandvat, summarylevel, completeprices, containercompleteprices, usefirmpricedefinition, containerrefundprice, gastrodocqueueId, searchorder, searchmode, useunitselection, dealerdiscountkind, usequantitydiscount, dealerdiscountonhandmadeprice, refundinforeigncurrency, userefundstore, refundpayments, entiremacrocard, usebusorder, usebustransaction, usebusproject, usedescription, usedescription2, onlinestore, useserialnumbers, usestorebatches, usemultiplebills, useidentificationlimit, identificationlimit, showstock, showstockinpricelist, outofstockdelivery, outofstockdeliveryg, cashbackpositive, usepriceselection, paymentmode, countofdecimalplaces, priceprecision, returnonlyfullbill, returnonlytodaybill, enableconsignmentsale, giveprioritytoconsignmentstore, firmsearchmode, storecardnamefulltext, storecardcodefulltext, storecardspecificationfulltext, firmcodefulltext, firmnamefulltext, viewspecification, viewspecification2, pricelistkeyf2, pricelistkeyf3, pricelistkeyf4, pricelistkeyf5, pricelistkeyf6, pricelistkeyf7, pricelistkeyf8, adresslistkeyf2, adresslistkeyf3, adresslistkeyf4, adresslistkeyf5, adresslistkeyf6, adresslistkeyf7, adresslistkeyf8, adresslistmenurow1, adresslistmenurow2, adresslistmenurow3, adresslistmenurow4, adresslistmenurow5, adresslistmenurow6, adresslistmenurow7, orderprintsequence, orderprintmode, printamountmode, orderprintevent, orderprintstorecardcode, orderprintprice, orderprintqunit, orderprintwidestorecard, orderprintwidequantity, billoneuseronly, consignmentstores, payments, suppliers, sellingstands, shiftcalendars, wastedocqueueId, shiftdocqueueId, advancedocqueueId, notaccpaiddocqueueId, notaccreceiveddocqueueId, divisionId, busorderId, bustransactionId, busprojectId, posmirrordefinitionId, posshiftId, virtualposId, prefillordercorrection, refreshrate, virtualposselectionmethod, importedbillofdeliverymode, halfportionenabled, useshifts, oneshifttoreceipt, halfportionweight, halfportionprice);
   }
 
   @Override
@@ -3794,176 +3830,176 @@ public class Posshop   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posshop {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    site: ").append(toIndentedString(site)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    shopAddressID: ").append(toIndentedString(shopAddressID)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    storeDocQueueID: ").append(toIndentedString(storeDocQueueID)).append("\n");
-    sb.append("    refundedStoreDocQueueID: ").append(toIndentedString(refundedStoreDocQueueID)).append("\n");
-    sb.append("    incomeStoreDocQueueID: ").append(toIndentedString(incomeStoreDocQueueID)).append("\n");
-    sb.append("    paymentTypeID: ").append(toIndentedString(paymentTypeID)).append("\n");
-    sb.append("    containerPaymentTypeID: ").append(toIndentedString(containerPaymentTypeID)).append("\n");
-    sb.append("    dealerCategoryCaption: ").append(toIndentedString(dealerCategoryCaption)).append("\n");
-    sb.append("    description2Caption: ").append(toIndentedString(description2Caption)).append("\n");
-    sb.append("    billHeader1: ").append(toIndentedString(billHeader1)).append("\n");
-    sb.append("    billHeader2: ").append(toIndentedString(billHeader2)).append("\n");
-    sb.append("    billHeader3: ").append(toIndentedString(billHeader3)).append("\n");
-    sb.append("    billHeader1Wide: ").append(toIndentedString(billHeader1Wide)).append("\n");
-    sb.append("    billHeader2Wide: ").append(toIndentedString(billHeader2Wide)).append("\n");
-    sb.append("    billHeader3Wide: ").append(toIndentedString(billHeader3Wide)).append("\n");
-    sb.append("    billFooter1: ").append(toIndentedString(billFooter1)).append("\n");
-    sb.append("    billFooter2: ").append(toIndentedString(billFooter2)).append("\n");
-    sb.append("    billFooter3: ").append(toIndentedString(billFooter3)).append("\n");
-    sb.append("    billFooter1Wide: ").append(toIndentedString(billFooter1Wide)).append("\n");
-    sb.append("    billFooter2Wide: ").append(toIndentedString(billFooter2Wide)).append("\n");
-    sb.append("    billFooter3Wide: ").append(toIndentedString(billFooter3Wide)).append("\n");
-    sb.append("    printStoreCardCode: ").append(toIndentedString(printStoreCardCode)).append("\n");
-    sb.append("    printPLU: ").append(toIndentedString(printPLU)).append("\n");
-    sb.append("    printFirmName: ").append(toIndentedString(printFirmName)).append("\n");
-    sb.append("    printShopName: ").append(toIndentedString(printShopName)).append("\n");
-    sb.append("    printAdress: ").append(toIndentedString(printAdress)).append("\n");
-    sb.append("    printShopAddress: ").append(toIndentedString(printShopAddress)).append("\n");
-    sb.append("    printUserName: ").append(toIndentedString(printUserName)).append("\n");
-    sb.append("    printPhone: ").append(toIndentedString(printPhone)).append("\n");
-    sb.append("    printShopPhone: ").append(toIndentedString(printShopPhone)).append("\n");
-    sb.append("    printFax: ").append(toIndentedString(printFax)).append("\n");
-    sb.append("    printShopFax: ").append(toIndentedString(printShopFax)).append("\n");
-    sb.append("    printEMail: ").append(toIndentedString(printEMail)).append("\n");
-    sb.append("    printShopEMail: ").append(toIndentedString(printShopEMail)).append("\n");
-    sb.append("    printWWW: ").append(toIndentedString(printWWW)).append("\n");
-    sb.append("    printDateTime: ").append(toIndentedString(printDateTime)).append("\n");
-    sb.append("    printPaymentResume: ").append(toIndentedString(printPaymentResume)).append("\n");
-    sb.append("    printVATResume: ").append(toIndentedString(printVATResume)).append("\n");
-    sb.append("    printIdentNumber: ").append(toIndentedString(printIdentNumber)).append("\n");
-    sb.append("    printBillBarCode: ").append(toIndentedString(printBillBarCode)).append("\n");
-    sb.append("    printDescription2: ").append(toIndentedString(printDescription2)).append("\n");
-    sb.append("    printCustomer: ").append(toIndentedString(printCustomer)).append("\n");
-    sb.append("    printDealerCategory: ").append(toIndentedString(printDealerCategory)).append("\n");
-    sb.append("    printSpecification1: ").append(toIndentedString(printSpecification1)).append("\n");
-    sb.append("    printSpecification2: ").append(toIndentedString(printSpecification2)).append("\n");
-    sb.append("    splitByUnits: ").append(toIndentedString(splitByUnits)).append("\n");
-    sb.append("    lockZeroPurchasePrice: ").append(toIndentedString(lockZeroPurchasePrice)).append("\n");
-    sb.append("    printRegisterInfo: ").append(toIndentedString(printRegisterInfo)).append("\n");
-    sb.append("    printCurrencyCoef: ").append(toIndentedString(printCurrencyCoef)).append("\n");
-    sb.append("    useLowBorderPLU: ").append(toIndentedString(useLowBorderPLU)).append("\n");
-    sb.append("    lowBorderPLU: ").append(toIndentedString(lowBorderPLU)).append("\n");
-    sb.append("    vATRounding: ").append(toIndentedString(vATRounding)).append("\n");
-    sb.append("    rowRounding: ").append(toIndentedString(rowRounding)).append("\n");
-    sb.append("    totalRounding: ").append(toIndentedString(totalRounding)).append("\n");
-    sb.append("    priceAndVAT: ").append(toIndentedString(priceAndVAT)).append("\n");
-    sb.append("    summaryLevel: ").append(toIndentedString(summaryLevel)).append("\n");
-    sb.append("    completePrices: ").append(toIndentedString(completePrices)).append("\n");
-    sb.append("    containerCompletePrices: ").append(toIndentedString(containerCompletePrices)).append("\n");
-    sb.append("    useFirmPriceDefinition: ").append(toIndentedString(useFirmPriceDefinition)).append("\n");
-    sb.append("    containerRefundPrice: ").append(toIndentedString(containerRefundPrice)).append("\n");
-    sb.append("    gastroDocQueueID: ").append(toIndentedString(gastroDocQueueID)).append("\n");
-    sb.append("    searchOrder: ").append(toIndentedString(searchOrder)).append("\n");
-    sb.append("    searchMode: ").append(toIndentedString(searchMode)).append("\n");
-    sb.append("    useUnitSelection: ").append(toIndentedString(useUnitSelection)).append("\n");
-    sb.append("    dealerDiscountKind: ").append(toIndentedString(dealerDiscountKind)).append("\n");
-    sb.append("    useQuantityDiscount: ").append(toIndentedString(useQuantityDiscount)).append("\n");
-    sb.append("    dealerDiscountOnHandMadePrice: ").append(toIndentedString(dealerDiscountOnHandMadePrice)).append("\n");
-    sb.append("    refundInForeignCurrency: ").append(toIndentedString(refundInForeignCurrency)).append("\n");
-    sb.append("    useRefundStore: ").append(toIndentedString(useRefundStore)).append("\n");
-    sb.append("    refundPayments: ").append(toIndentedString(refundPayments)).append("\n");
-    sb.append("    entireMacroCard: ").append(toIndentedString(entireMacroCard)).append("\n");
-    sb.append("    useBusOrder: ").append(toIndentedString(useBusOrder)).append("\n");
-    sb.append("    useBusTransaction: ").append(toIndentedString(useBusTransaction)).append("\n");
-    sb.append("    useBusProject: ").append(toIndentedString(useBusProject)).append("\n");
-    sb.append("    useDescription: ").append(toIndentedString(useDescription)).append("\n");
-    sb.append("    useDescription2: ").append(toIndentedString(useDescription2)).append("\n");
-    sb.append("    onLineStore: ").append(toIndentedString(onLineStore)).append("\n");
-    sb.append("    useSerialNumbers: ").append(toIndentedString(useSerialNumbers)).append("\n");
-    sb.append("    useStoreBatches: ").append(toIndentedString(useStoreBatches)).append("\n");
-    sb.append("    useMultipleBills: ").append(toIndentedString(useMultipleBills)).append("\n");
-    sb.append("    useIdentificationLimit: ").append(toIndentedString(useIdentificationLimit)).append("\n");
-    sb.append("    identificationLimit: ").append(toIndentedString(identificationLimit)).append("\n");
-    sb.append("    showStock: ").append(toIndentedString(showStock)).append("\n");
-    sb.append("    showStockInPriceList: ").append(toIndentedString(showStockInPriceList)).append("\n");
-    sb.append("    outOfStockDelivery: ").append(toIndentedString(outOfStockDelivery)).append("\n");
-    sb.append("    outOfStockDeliveryG: ").append(toIndentedString(outOfStockDeliveryG)).append("\n");
-    sb.append("    cashBackPositive: ").append(toIndentedString(cashBackPositive)).append("\n");
-    sb.append("    usePriceSelection: ").append(toIndentedString(usePriceSelection)).append("\n");
-    sb.append("    paymentMode: ").append(toIndentedString(paymentMode)).append("\n");
-    sb.append("    countOfDecimalPlaces: ").append(toIndentedString(countOfDecimalPlaces)).append("\n");
-    sb.append("    pricePrecision: ").append(toIndentedString(pricePrecision)).append("\n");
-    sb.append("    returnOnlyFullBill: ").append(toIndentedString(returnOnlyFullBill)).append("\n");
-    sb.append("    returnOnlyTodayBill: ").append(toIndentedString(returnOnlyTodayBill)).append("\n");
-    sb.append("    enableConsignmentSale: ").append(toIndentedString(enableConsignmentSale)).append("\n");
-    sb.append("    givePriorityToConsignmentStore: ").append(toIndentedString(givePriorityToConsignmentStore)).append("\n");
-    sb.append("    firmSearchMode: ").append(toIndentedString(firmSearchMode)).append("\n");
-    sb.append("    storeCardNameFullText: ").append(toIndentedString(storeCardNameFullText)).append("\n");
-    sb.append("    storeCardCodeFullText: ").append(toIndentedString(storeCardCodeFullText)).append("\n");
-    sb.append("    storeCardSpecificationFullText: ").append(toIndentedString(storeCardSpecificationFullText)).append("\n");
-    sb.append("    firmCodeFullText: ").append(toIndentedString(firmCodeFullText)).append("\n");
-    sb.append("    firmNameFullText: ").append(toIndentedString(firmNameFullText)).append("\n");
-    sb.append("    viewSpecification: ").append(toIndentedString(viewSpecification)).append("\n");
-    sb.append("    viewSpecification2: ").append(toIndentedString(viewSpecification2)).append("\n");
-    sb.append("    priceListKeyF2: ").append(toIndentedString(priceListKeyF2)).append("\n");
-    sb.append("    priceListKeyF3: ").append(toIndentedString(priceListKeyF3)).append("\n");
-    sb.append("    priceListKeyF4: ").append(toIndentedString(priceListKeyF4)).append("\n");
-    sb.append("    priceListKeyF5: ").append(toIndentedString(priceListKeyF5)).append("\n");
-    sb.append("    priceListKeyF6: ").append(toIndentedString(priceListKeyF6)).append("\n");
-    sb.append("    priceListKeyF7: ").append(toIndentedString(priceListKeyF7)).append("\n");
-    sb.append("    priceListKeyF8: ").append(toIndentedString(priceListKeyF8)).append("\n");
-    sb.append("    adressListKeyF2: ").append(toIndentedString(adressListKeyF2)).append("\n");
-    sb.append("    adressListKeyF3: ").append(toIndentedString(adressListKeyF3)).append("\n");
-    sb.append("    adressListKeyF4: ").append(toIndentedString(adressListKeyF4)).append("\n");
-    sb.append("    adressListKeyF5: ").append(toIndentedString(adressListKeyF5)).append("\n");
-    sb.append("    adressListKeyF6: ").append(toIndentedString(adressListKeyF6)).append("\n");
-    sb.append("    adressListKeyF7: ").append(toIndentedString(adressListKeyF7)).append("\n");
-    sb.append("    adressListKeyF8: ").append(toIndentedString(adressListKeyF8)).append("\n");
-    sb.append("    adressListMenuRow1: ").append(toIndentedString(adressListMenuRow1)).append("\n");
-    sb.append("    adressListMenuRow2: ").append(toIndentedString(adressListMenuRow2)).append("\n");
-    sb.append("    adressListMenuRow3: ").append(toIndentedString(adressListMenuRow3)).append("\n");
-    sb.append("    adressListMenuRow4: ").append(toIndentedString(adressListMenuRow4)).append("\n");
-    sb.append("    adressListMenuRow5: ").append(toIndentedString(adressListMenuRow5)).append("\n");
-    sb.append("    adressListMenuRow6: ").append(toIndentedString(adressListMenuRow6)).append("\n");
-    sb.append("    adressListMenuRow7: ").append(toIndentedString(adressListMenuRow7)).append("\n");
-    sb.append("    orderPrintSequence: ").append(toIndentedString(orderPrintSequence)).append("\n");
-    sb.append("    orderPrintMode: ").append(toIndentedString(orderPrintMode)).append("\n");
-    sb.append("    printAmountMode: ").append(toIndentedString(printAmountMode)).append("\n");
-    sb.append("    orderPrintEvent: ").append(toIndentedString(orderPrintEvent)).append("\n");
-    sb.append("    orderPrintStoreCardCode: ").append(toIndentedString(orderPrintStoreCardCode)).append("\n");
-    sb.append("    orderPrintPrice: ").append(toIndentedString(orderPrintPrice)).append("\n");
-    sb.append("    orderPrintQUnit: ").append(toIndentedString(orderPrintQUnit)).append("\n");
-    sb.append("    orderPrintWideStoreCard: ").append(toIndentedString(orderPrintWideStoreCard)).append("\n");
-    sb.append("    orderPrintWideQuantity: ").append(toIndentedString(orderPrintWideQuantity)).append("\n");
-    sb.append("    billOneUserOnly: ").append(toIndentedString(billOneUserOnly)).append("\n");
-    sb.append("    consignmentStores: ").append(toIndentedString(consignmentStores)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    shopaddressId: ").append(toIndentedString(shopaddressId)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    storedocqueueId: ").append(toIndentedString(storedocqueueId)).append("\n");
+    sb.append("    refundedstoredocqueueId: ").append(toIndentedString(refundedstoredocqueueId)).append("\n");
+    sb.append("    incomestoredocqueueId: ").append(toIndentedString(incomestoredocqueueId)).append("\n");
+    sb.append("    paymenttypeId: ").append(toIndentedString(paymenttypeId)).append("\n");
+    sb.append("    containerpaymenttypeId: ").append(toIndentedString(containerpaymenttypeId)).append("\n");
+    sb.append("    dealercategorycaption: ").append(toIndentedString(dealercategorycaption)).append("\n");
+    sb.append("    description2caption: ").append(toIndentedString(description2caption)).append("\n");
+    sb.append("    billheader1: ").append(toIndentedString(billheader1)).append("\n");
+    sb.append("    billheader2: ").append(toIndentedString(billheader2)).append("\n");
+    sb.append("    billheader3: ").append(toIndentedString(billheader3)).append("\n");
+    sb.append("    billheader1wide: ").append(toIndentedString(billheader1wide)).append("\n");
+    sb.append("    billheader2wide: ").append(toIndentedString(billheader2wide)).append("\n");
+    sb.append("    billheader3wide: ").append(toIndentedString(billheader3wide)).append("\n");
+    sb.append("    billfooter1: ").append(toIndentedString(billfooter1)).append("\n");
+    sb.append("    billfooter2: ").append(toIndentedString(billfooter2)).append("\n");
+    sb.append("    billfooter3: ").append(toIndentedString(billfooter3)).append("\n");
+    sb.append("    billfooter1wide: ").append(toIndentedString(billfooter1wide)).append("\n");
+    sb.append("    billfooter2wide: ").append(toIndentedString(billfooter2wide)).append("\n");
+    sb.append("    billfooter3wide: ").append(toIndentedString(billfooter3wide)).append("\n");
+    sb.append("    printstorecardcode: ").append(toIndentedString(printstorecardcode)).append("\n");
+    sb.append("    printplu: ").append(toIndentedString(printplu)).append("\n");
+    sb.append("    printfirmname: ").append(toIndentedString(printfirmname)).append("\n");
+    sb.append("    printshopname: ").append(toIndentedString(printshopname)).append("\n");
+    sb.append("    printadress: ").append(toIndentedString(printadress)).append("\n");
+    sb.append("    printshopaddress: ").append(toIndentedString(printshopaddress)).append("\n");
+    sb.append("    printusername: ").append(toIndentedString(printusername)).append("\n");
+    sb.append("    printphone: ").append(toIndentedString(printphone)).append("\n");
+    sb.append("    printshopphone: ").append(toIndentedString(printshopphone)).append("\n");
+    sb.append("    printfax: ").append(toIndentedString(printfax)).append("\n");
+    sb.append("    printshopfax: ").append(toIndentedString(printshopfax)).append("\n");
+    sb.append("    printemail: ").append(toIndentedString(printemail)).append("\n");
+    sb.append("    printshopemail: ").append(toIndentedString(printshopemail)).append("\n");
+    sb.append("    printwww: ").append(toIndentedString(printwww)).append("\n");
+    sb.append("    printdatetime: ").append(toIndentedString(printdatetime)).append("\n");
+    sb.append("    printpaymentresume: ").append(toIndentedString(printpaymentresume)).append("\n");
+    sb.append("    printvatresume: ").append(toIndentedString(printvatresume)).append("\n");
+    sb.append("    printidentnumber: ").append(toIndentedString(printidentnumber)).append("\n");
+    sb.append("    printbillbarcode: ").append(toIndentedString(printbillbarcode)).append("\n");
+    sb.append("    printdescription2: ").append(toIndentedString(printdescription2)).append("\n");
+    sb.append("    printcustomer: ").append(toIndentedString(printcustomer)).append("\n");
+    sb.append("    printdealercategory: ").append(toIndentedString(printdealercategory)).append("\n");
+    sb.append("    printspecification1: ").append(toIndentedString(printspecification1)).append("\n");
+    sb.append("    printspecification2: ").append(toIndentedString(printspecification2)).append("\n");
+    sb.append("    splitbyunits: ").append(toIndentedString(splitbyunits)).append("\n");
+    sb.append("    lockzeropurchaseprice: ").append(toIndentedString(lockzeropurchaseprice)).append("\n");
+    sb.append("    printregisterinfo: ").append(toIndentedString(printregisterinfo)).append("\n");
+    sb.append("    printcurrencycoef: ").append(toIndentedString(printcurrencycoef)).append("\n");
+    sb.append("    uselowborderplu: ").append(toIndentedString(uselowborderplu)).append("\n");
+    sb.append("    lowborderplu: ").append(toIndentedString(lowborderplu)).append("\n");
+    sb.append("    vatrounding: ").append(toIndentedString(vatrounding)).append("\n");
+    sb.append("    rowrounding: ").append(toIndentedString(rowrounding)).append("\n");
+    sb.append("    totalrounding: ").append(toIndentedString(totalrounding)).append("\n");
+    sb.append("    priceandvat: ").append(toIndentedString(priceandvat)).append("\n");
+    sb.append("    summarylevel: ").append(toIndentedString(summarylevel)).append("\n");
+    sb.append("    completeprices: ").append(toIndentedString(completeprices)).append("\n");
+    sb.append("    containercompleteprices: ").append(toIndentedString(containercompleteprices)).append("\n");
+    sb.append("    usefirmpricedefinition: ").append(toIndentedString(usefirmpricedefinition)).append("\n");
+    sb.append("    containerrefundprice: ").append(toIndentedString(containerrefundprice)).append("\n");
+    sb.append("    gastrodocqueueId: ").append(toIndentedString(gastrodocqueueId)).append("\n");
+    sb.append("    searchorder: ").append(toIndentedString(searchorder)).append("\n");
+    sb.append("    searchmode: ").append(toIndentedString(searchmode)).append("\n");
+    sb.append("    useunitselection: ").append(toIndentedString(useunitselection)).append("\n");
+    sb.append("    dealerdiscountkind: ").append(toIndentedString(dealerdiscountkind)).append("\n");
+    sb.append("    usequantitydiscount: ").append(toIndentedString(usequantitydiscount)).append("\n");
+    sb.append("    dealerdiscountonhandmadeprice: ").append(toIndentedString(dealerdiscountonhandmadeprice)).append("\n");
+    sb.append("    refundinforeigncurrency: ").append(toIndentedString(refundinforeigncurrency)).append("\n");
+    sb.append("    userefundstore: ").append(toIndentedString(userefundstore)).append("\n");
+    sb.append("    refundpayments: ").append(toIndentedString(refundpayments)).append("\n");
+    sb.append("    entiremacrocard: ").append(toIndentedString(entiremacrocard)).append("\n");
+    sb.append("    usebusorder: ").append(toIndentedString(usebusorder)).append("\n");
+    sb.append("    usebustransaction: ").append(toIndentedString(usebustransaction)).append("\n");
+    sb.append("    usebusproject: ").append(toIndentedString(usebusproject)).append("\n");
+    sb.append("    usedescription: ").append(toIndentedString(usedescription)).append("\n");
+    sb.append("    usedescription2: ").append(toIndentedString(usedescription2)).append("\n");
+    sb.append("    onlinestore: ").append(toIndentedString(onlinestore)).append("\n");
+    sb.append("    useserialnumbers: ").append(toIndentedString(useserialnumbers)).append("\n");
+    sb.append("    usestorebatches: ").append(toIndentedString(usestorebatches)).append("\n");
+    sb.append("    usemultiplebills: ").append(toIndentedString(usemultiplebills)).append("\n");
+    sb.append("    useidentificationlimit: ").append(toIndentedString(useidentificationlimit)).append("\n");
+    sb.append("    identificationlimit: ").append(toIndentedString(identificationlimit)).append("\n");
+    sb.append("    showstock: ").append(toIndentedString(showstock)).append("\n");
+    sb.append("    showstockinpricelist: ").append(toIndentedString(showstockinpricelist)).append("\n");
+    sb.append("    outofstockdelivery: ").append(toIndentedString(outofstockdelivery)).append("\n");
+    sb.append("    outofstockdeliveryg: ").append(toIndentedString(outofstockdeliveryg)).append("\n");
+    sb.append("    cashbackpositive: ").append(toIndentedString(cashbackpositive)).append("\n");
+    sb.append("    usepriceselection: ").append(toIndentedString(usepriceselection)).append("\n");
+    sb.append("    paymentmode: ").append(toIndentedString(paymentmode)).append("\n");
+    sb.append("    countofdecimalplaces: ").append(toIndentedString(countofdecimalplaces)).append("\n");
+    sb.append("    priceprecision: ").append(toIndentedString(priceprecision)).append("\n");
+    sb.append("    returnonlyfullbill: ").append(toIndentedString(returnonlyfullbill)).append("\n");
+    sb.append("    returnonlytodaybill: ").append(toIndentedString(returnonlytodaybill)).append("\n");
+    sb.append("    enableconsignmentsale: ").append(toIndentedString(enableconsignmentsale)).append("\n");
+    sb.append("    giveprioritytoconsignmentstore: ").append(toIndentedString(giveprioritytoconsignmentstore)).append("\n");
+    sb.append("    firmsearchmode: ").append(toIndentedString(firmsearchmode)).append("\n");
+    sb.append("    storecardnamefulltext: ").append(toIndentedString(storecardnamefulltext)).append("\n");
+    sb.append("    storecardcodefulltext: ").append(toIndentedString(storecardcodefulltext)).append("\n");
+    sb.append("    storecardspecificationfulltext: ").append(toIndentedString(storecardspecificationfulltext)).append("\n");
+    sb.append("    firmcodefulltext: ").append(toIndentedString(firmcodefulltext)).append("\n");
+    sb.append("    firmnamefulltext: ").append(toIndentedString(firmnamefulltext)).append("\n");
+    sb.append("    viewspecification: ").append(toIndentedString(viewspecification)).append("\n");
+    sb.append("    viewspecification2: ").append(toIndentedString(viewspecification2)).append("\n");
+    sb.append("    pricelistkeyf2: ").append(toIndentedString(pricelistkeyf2)).append("\n");
+    sb.append("    pricelistkeyf3: ").append(toIndentedString(pricelistkeyf3)).append("\n");
+    sb.append("    pricelistkeyf4: ").append(toIndentedString(pricelistkeyf4)).append("\n");
+    sb.append("    pricelistkeyf5: ").append(toIndentedString(pricelistkeyf5)).append("\n");
+    sb.append("    pricelistkeyf6: ").append(toIndentedString(pricelistkeyf6)).append("\n");
+    sb.append("    pricelistkeyf7: ").append(toIndentedString(pricelistkeyf7)).append("\n");
+    sb.append("    pricelistkeyf8: ").append(toIndentedString(pricelistkeyf8)).append("\n");
+    sb.append("    adresslistkeyf2: ").append(toIndentedString(adresslistkeyf2)).append("\n");
+    sb.append("    adresslistkeyf3: ").append(toIndentedString(adresslistkeyf3)).append("\n");
+    sb.append("    adresslistkeyf4: ").append(toIndentedString(adresslistkeyf4)).append("\n");
+    sb.append("    adresslistkeyf5: ").append(toIndentedString(adresslistkeyf5)).append("\n");
+    sb.append("    adresslistkeyf6: ").append(toIndentedString(adresslistkeyf6)).append("\n");
+    sb.append("    adresslistkeyf7: ").append(toIndentedString(adresslistkeyf7)).append("\n");
+    sb.append("    adresslistkeyf8: ").append(toIndentedString(adresslistkeyf8)).append("\n");
+    sb.append("    adresslistmenurow1: ").append(toIndentedString(adresslistmenurow1)).append("\n");
+    sb.append("    adresslistmenurow2: ").append(toIndentedString(adresslistmenurow2)).append("\n");
+    sb.append("    adresslistmenurow3: ").append(toIndentedString(adresslistmenurow3)).append("\n");
+    sb.append("    adresslistmenurow4: ").append(toIndentedString(adresslistmenurow4)).append("\n");
+    sb.append("    adresslistmenurow5: ").append(toIndentedString(adresslistmenurow5)).append("\n");
+    sb.append("    adresslistmenurow6: ").append(toIndentedString(adresslistmenurow6)).append("\n");
+    sb.append("    adresslistmenurow7: ").append(toIndentedString(adresslistmenurow7)).append("\n");
+    sb.append("    orderprintsequence: ").append(toIndentedString(orderprintsequence)).append("\n");
+    sb.append("    orderprintmode: ").append(toIndentedString(orderprintmode)).append("\n");
+    sb.append("    printamountmode: ").append(toIndentedString(printamountmode)).append("\n");
+    sb.append("    orderprintevent: ").append(toIndentedString(orderprintevent)).append("\n");
+    sb.append("    orderprintstorecardcode: ").append(toIndentedString(orderprintstorecardcode)).append("\n");
+    sb.append("    orderprintprice: ").append(toIndentedString(orderprintprice)).append("\n");
+    sb.append("    orderprintqunit: ").append(toIndentedString(orderprintqunit)).append("\n");
+    sb.append("    orderprintwidestorecard: ").append(toIndentedString(orderprintwidestorecard)).append("\n");
+    sb.append("    orderprintwidequantity: ").append(toIndentedString(orderprintwidequantity)).append("\n");
+    sb.append("    billoneuseronly: ").append(toIndentedString(billoneuseronly)).append("\n");
+    sb.append("    consignmentstores: ").append(toIndentedString(consignmentstores)).append("\n");
     sb.append("    payments: ").append(toIndentedString(payments)).append("\n");
     sb.append("    suppliers: ").append(toIndentedString(suppliers)).append("\n");
-    sb.append("    sellingStands: ").append(toIndentedString(sellingStands)).append("\n");
-    sb.append("    shiftCalendars: ").append(toIndentedString(shiftCalendars)).append("\n");
-    sb.append("    wasteDocQueueID: ").append(toIndentedString(wasteDocQueueID)).append("\n");
-    sb.append("    shiftDocQueueID: ").append(toIndentedString(shiftDocQueueID)).append("\n");
-    sb.append("    advanceDocQueueID: ").append(toIndentedString(advanceDocQueueID)).append("\n");
-    sb.append("    notAccPaidDocQueueID: ").append(toIndentedString(notAccPaidDocQueueID)).append("\n");
-    sb.append("    notAccReceivedDocQueueID: ").append(toIndentedString(notAccReceivedDocQueueID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    pOSMirrorDefinitionID: ").append(toIndentedString(pOSMirrorDefinitionID)).append("\n");
-    sb.append("    pOSShiftID: ").append(toIndentedString(pOSShiftID)).append("\n");
-    sb.append("    virtualPOSID: ").append(toIndentedString(virtualPOSID)).append("\n");
-    sb.append("    prefillOrderCorrection: ").append(toIndentedString(prefillOrderCorrection)).append("\n");
-    sb.append("    refreshRate: ").append(toIndentedString(refreshRate)).append("\n");
-    sb.append("    virtualPOSSelectionMethod: ").append(toIndentedString(virtualPOSSelectionMethod)).append("\n");
-    sb.append("    importedBillOfDeliveryMode: ").append(toIndentedString(importedBillOfDeliveryMode)).append("\n");
-    sb.append("    halfPortionEnabled: ").append(toIndentedString(halfPortionEnabled)).append("\n");
-    sb.append("    useShifts: ").append(toIndentedString(useShifts)).append("\n");
-    sb.append("    oneShiftToReceipt: ").append(toIndentedString(oneShiftToReceipt)).append("\n");
-    sb.append("    halfPortionWeight: ").append(toIndentedString(halfPortionWeight)).append("\n");
-    sb.append("    halfPortionPrice: ").append(toIndentedString(halfPortionPrice)).append("\n");
+    sb.append("    sellingstands: ").append(toIndentedString(sellingstands)).append("\n");
+    sb.append("    shiftcalendars: ").append(toIndentedString(shiftcalendars)).append("\n");
+    sb.append("    wastedocqueueId: ").append(toIndentedString(wastedocqueueId)).append("\n");
+    sb.append("    shiftdocqueueId: ").append(toIndentedString(shiftdocqueueId)).append("\n");
+    sb.append("    advancedocqueueId: ").append(toIndentedString(advancedocqueueId)).append("\n");
+    sb.append("    notaccpaiddocqueueId: ").append(toIndentedString(notaccpaiddocqueueId)).append("\n");
+    sb.append("    notaccreceiveddocqueueId: ").append(toIndentedString(notaccreceiveddocqueueId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    posmirrordefinitionId: ").append(toIndentedString(posmirrordefinitionId)).append("\n");
+    sb.append("    posshiftId: ").append(toIndentedString(posshiftId)).append("\n");
+    sb.append("    virtualposId: ").append(toIndentedString(virtualposId)).append("\n");
+    sb.append("    prefillordercorrection: ").append(toIndentedString(prefillordercorrection)).append("\n");
+    sb.append("    refreshrate: ").append(toIndentedString(refreshrate)).append("\n");
+    sb.append("    virtualposselectionmethod: ").append(toIndentedString(virtualposselectionmethod)).append("\n");
+    sb.append("    importedbillofdeliverymode: ").append(toIndentedString(importedbillofdeliverymode)).append("\n");
+    sb.append("    halfportionenabled: ").append(toIndentedString(halfportionenabled)).append("\n");
+    sb.append("    useshifts: ").append(toIndentedString(useshifts)).append("\n");
+    sb.append("    oneshifttoreceipt: ").append(toIndentedString(oneshifttoreceipt)).append("\n");
+    sb.append("    halfportionweight: ").append(toIndentedString(halfportionweight)).append("\n");
+    sb.append("    halfportionprice: ").append(toIndentedString(halfportionprice)).append("\n");
     sb.append("}");
     return sb.toString();
   }

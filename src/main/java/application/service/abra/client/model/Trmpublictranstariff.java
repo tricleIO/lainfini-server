@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,72 +34,108 @@ import java.util.Objects;
 /**
  * Trmpublictranstariff
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Trmpublictranstariff   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("KmTariff")
-  private Double kmTariff = null;
+  @SerializedName("kmtariff")
+  private Double kmtariff = null;
 
-  @SerializedName("WaitTariff")
-  private Double waitTariff = null;
+  @SerializedName("waittariff")
+  private Double waittariff = null;
 
-  @SerializedName("RuntimeTariff")
-  private Double runtimeTariff = null;
+  @SerializedName("runtimetariff")
+  private Double runtimetariff = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Trmpublictranstariff displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Trmpublictranstariff id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Trmpublictranstariff classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Trmpublictranstariff objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Trmpublictranstariff hidden(Boolean hidden) {
@@ -108,10 +144,10 @@ public class Trmpublictranstariff   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -126,10 +162,10 @@ public class Trmpublictranstariff   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -144,10 +180,10 @@ public class Trmpublictranstariff   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -156,58 +192,58 @@ public class Trmpublictranstariff   {
     this.name = name;
   }
 
-  public Trmpublictranstariff kmTariff(Double kmTariff) {
-    this.kmTariff = kmTariff;
+  public Trmpublictranstariff kmtariff(Double kmtariff) {
+    this.kmtariff = kmtariff;
     return this;
   }
 
    /**
-   * Cena za km [persistentní položka]
-   * @return kmTariff
+   * cena za km [persistentní položka]
+   * @return kmtariff
   **/
-  @ApiModelProperty(example = "null", value = "Cena za km [persistentní položka]")
-  public Double getKmTariff() {
-    return kmTariff;
+  @ApiModelProperty(example = "null", value = "cena za km [persistentní položka]")
+  public Double getKmtariff() {
+    return kmtariff;
   }
 
-  public void setKmTariff(Double kmTariff) {
-    this.kmTariff = kmTariff;
+  public void setKmtariff(Double kmtariff) {
+    this.kmtariff = kmtariff;
   }
 
-  public Trmpublictranstariff waitTariff(Double waitTariff) {
-    this.waitTariff = waitTariff;
+  public Trmpublictranstariff waittariff(Double waittariff) {
+    this.waittariff = waittariff;
     return this;
   }
 
    /**
-   * Cena za čekání [persistentní položka]
-   * @return waitTariff
+   * cena za čekání [persistentní položka]
+   * @return waittariff
   **/
-  @ApiModelProperty(example = "null", value = "Cena za čekání [persistentní položka]")
-  public Double getWaitTariff() {
-    return waitTariff;
+  @ApiModelProperty(example = "null", value = "cena za čekání [persistentní položka]")
+  public Double getWaittariff() {
+    return waittariff;
   }
 
-  public void setWaitTariff(Double waitTariff) {
-    this.waitTariff = waitTariff;
+  public void setWaittariff(Double waittariff) {
+    this.waittariff = waittariff;
   }
 
-  public Trmpublictranstariff runtimeTariff(Double runtimeTariff) {
-    this.runtimeTariff = runtimeTariff;
+  public Trmpublictranstariff runtimetariff(Double runtimetariff) {
+    this.runtimetariff = runtimetariff;
     return this;
   }
 
    /**
-   * Cena za dobu provozu [persistentní položka]
-   * @return runtimeTariff
+   * cena za dobu provozu [persistentní položka]
+   * @return runtimetariff
   **/
-  @ApiModelProperty(example = "null", value = "Cena za dobu provozu [persistentní položka]")
-  public Double getRuntimeTariff() {
-    return runtimeTariff;
+  @ApiModelProperty(example = "null", value = "cena za dobu provozu [persistentní položka]")
+  public Double getRuntimetariff() {
+    return runtimetariff;
   }
 
-  public void setRuntimeTariff(Double runtimeTariff) {
-    this.runtimeTariff = runtimeTariff;
+  public void setRuntimetariff(Double runtimetariff) {
+    this.runtimetariff = runtimetariff;
   }
 
 
@@ -220,21 +256,21 @@ public class Trmpublictranstariff   {
       return false;
     }
     Trmpublictranstariff trmpublictranstariff = (Trmpublictranstariff) o;
-    return Objects.equals(this.displayName, trmpublictranstariff.displayName) &&
-        Objects.equals(this.ID, trmpublictranstariff.ID) &&
-        Objects.equals(this.classID, trmpublictranstariff.classID) &&
-        Objects.equals(this.objVersion, trmpublictranstariff.objVersion) &&
+    return Objects.equals(this.displayname, trmpublictranstariff.displayname) &&
+        Objects.equals(this.id, trmpublictranstariff.id) &&
+        Objects.equals(this.classid, trmpublictranstariff.classid) &&
+        Objects.equals(this.objversion, trmpublictranstariff.objversion) &&
         Objects.equals(this.hidden, trmpublictranstariff.hidden) &&
         Objects.equals(this.code, trmpublictranstariff.code) &&
         Objects.equals(this.name, trmpublictranstariff.name) &&
-        Objects.equals(this.kmTariff, trmpublictranstariff.kmTariff) &&
-        Objects.equals(this.waitTariff, trmpublictranstariff.waitTariff) &&
-        Objects.equals(this.runtimeTariff, trmpublictranstariff.runtimeTariff);
+        Objects.equals(this.kmtariff, trmpublictranstariff.kmtariff) &&
+        Objects.equals(this.waittariff, trmpublictranstariff.waittariff) &&
+        Objects.equals(this.runtimetariff, trmpublictranstariff.runtimetariff);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, kmTariff, waitTariff, runtimeTariff);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, kmtariff, waittariff, runtimetariff);
   }
 
   @Override
@@ -242,16 +278,16 @@ public class Trmpublictranstariff   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Trmpublictranstariff {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    kmTariff: ").append(toIndentedString(kmTariff)).append("\n");
-    sb.append("    waitTariff: ").append(toIndentedString(waitTariff)).append("\n");
-    sb.append("    runtimeTariff: ").append(toIndentedString(runtimeTariff)).append("\n");
+    sb.append("    kmtariff: ").append(toIndentedString(kmtariff)).append("\n");
+    sb.append("    waittariff: ").append(toIndentedString(waittariff)).append("\n");
+    sb.append("    runtimetariff: ").append(toIndentedString(runtimetariff)).append("\n");
     sb.append("}");
     return sb.toString();
   }

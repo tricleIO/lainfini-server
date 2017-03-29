@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,369 +34,405 @@ import java.util.Objects;
 /**
  * Additionalcosts
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Additionalcosts   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("CustomsAmount")
-  private Double customsAmount = null;
+  @SerializedName("customsamount")
+  private Double customsamount = null;
 
-  @SerializedName("SpendingTaxAmount")
-  private Double spendingTaxAmount = null;
+  @SerializedName("spendingtaxamount")
+  private Double spendingtaxamount = null;
 
-  @SerializedName("TransportationAmount")
-  private Double transportationAmount = null;
+  @SerializedName("transportationamount")
+  private Double transportationamount = null;
 
-  @SerializedName("OtherCostAmount")
-  private Double otherCostAmount = null;
+  @SerializedName("othercostamount")
+  private Double othercostamount = null;
 
-  @SerializedName("CustomsTariff")
-  private Double customsTariff = null;
+  @SerializedName("customstariff")
+  private Double customstariff = null;
 
-  @SerializedName("OtherCostTariff")
-  private Double otherCostTariff = null;
+  @SerializedName("othercosttariff")
+  private Double othercosttariff = null;
 
-  @SerializedName("SpendingTaxTariff")
-  private Double spendingTaxTariff = null;
+  @SerializedName("spendingtaxtariff")
+  private Double spendingtaxtariff = null;
 
-  @SerializedName("TransportationTariff")
-  private Double transportationTariff = null;
+  @SerializedName("transportationtariff")
+  private Double transportationtariff = null;
 
-  @SerializedName("TransportationUsed")
-  private Boolean transportationUsed = null;
+  @SerializedName("transportationused")
+  private Boolean transportationused = null;
 
-  @SerializedName("OtherCostUsed")
-  private Boolean otherCostUsed = null;
+  @SerializedName("othercostused")
+  private Boolean othercostused = null;
 
-  @SerializedName("TransportationIsLocal")
-  private Boolean transportationIsLocal = null;
+  @SerializedName("transportationislocal")
+  private Boolean transportationislocal = null;
 
-  @SerializedName("OtherCostIsLocal")
-  private Boolean otherCostIsLocal = null;
+  @SerializedName("othercostislocal")
+  private Boolean othercostislocal = null;
 
-  @SerializedName("CustomsIsLocal")
-  private Boolean customsIsLocal = null;
+  @SerializedName("customsislocal")
+  private Boolean customsislocal = null;
 
-  @SerializedName("SpendingTaxIsLocal")
-  private Boolean spendingTaxIsLocal = null;
+  @SerializedName("spendingtaxislocal")
+  private Boolean spendingtaxislocal = null;
 
-  @SerializedName("IntrastatAffectKind")
-  private Integer intrastatAffectKind = null;
+  @SerializedName("intrastataffectkind")
+  private Integer intrastataffectkind = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Additionalcosts customsAmount(Double customsAmount) {
-    this.customsAmount = customsAmount;
+  public Additionalcosts displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Clo [persistentní položka]
-   * @return customsAmount
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Clo [persistentní položka]")
-  public Double getCustomsAmount() {
-    return customsAmount;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setCustomsAmount(Double customsAmount) {
-    this.customsAmount = customsAmount;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Additionalcosts spendingTaxAmount(Double spendingTaxAmount) {
-    this.spendingTaxAmount = spendingTaxAmount;
+  public Additionalcosts id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Proc.náklady [persistentní položka]
-   * @return spendingTaxAmount
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Proc.náklady [persistentní položka]")
-  public Double getSpendingTaxAmount() {
-    return spendingTaxAmount;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setSpendingTaxAmount(Double spendingTaxAmount) {
-    this.spendingTaxAmount = spendingTaxAmount;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Additionalcosts transportationAmount(Double transportationAmount) {
-    this.transportationAmount = transportationAmount;
+  public Additionalcosts classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Doprava [persistentní položka]
-   * @return transportationAmount
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Doprava [persistentní položka]")
-  public Double getTransportationAmount() {
-    return transportationAmount;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setTransportationAmount(Double transportationAmount) {
-    this.transportationAmount = transportationAmount;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Additionalcosts otherCostAmount(Double otherCostAmount) {
-    this.otherCostAmount = otherCostAmount;
+  public Additionalcosts objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Ostatní náklady [persistentní položka]
-   * @return otherCostAmount
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Ostatní náklady [persistentní položka]")
-  public Double getOtherCostAmount() {
-    return otherCostAmount;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setOtherCostAmount(Double otherCostAmount) {
-    this.otherCostAmount = otherCostAmount;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Additionalcosts customsTariff(Double customsTariff) {
-    this.customsTariff = customsTariff;
+  public Additionalcosts customsamount(Double customsamount) {
+    this.customsamount = customsamount;
     return this;
   }
 
    /**
-   * Clo - sazba [persistentní položka]
-   * @return customsTariff
+   * clo [persistentní položka]
+   * @return customsamount
   **/
-  @ApiModelProperty(example = "null", value = "Clo - sazba [persistentní položka]")
-  public Double getCustomsTariff() {
-    return customsTariff;
+  @ApiModelProperty(example = "null", value = "clo [persistentní položka]")
+  public Double getCustomsamount() {
+    return customsamount;
   }
 
-  public void setCustomsTariff(Double customsTariff) {
-    this.customsTariff = customsTariff;
+  public void setCustomsamount(Double customsamount) {
+    this.customsamount = customsamount;
   }
 
-  public Additionalcosts otherCostTariff(Double otherCostTariff) {
-    this.otherCostTariff = otherCostTariff;
+  public Additionalcosts spendingtaxamount(Double spendingtaxamount) {
+    this.spendingtaxamount = spendingtaxamount;
     return this;
   }
 
    /**
-   * Ost.nákl. - sazba [persistentní položka]
-   * @return otherCostTariff
+   * proc.náklady [persistentní položka]
+   * @return spendingtaxamount
   **/
-  @ApiModelProperty(example = "null", value = "Ost.nákl. - sazba [persistentní položka]")
-  public Double getOtherCostTariff() {
-    return otherCostTariff;
+  @ApiModelProperty(example = "null", value = "proc.náklady [persistentní položka]")
+  public Double getSpendingtaxamount() {
+    return spendingtaxamount;
   }
 
-  public void setOtherCostTariff(Double otherCostTariff) {
-    this.otherCostTariff = otherCostTariff;
+  public void setSpendingtaxamount(Double spendingtaxamount) {
+    this.spendingtaxamount = spendingtaxamount;
   }
 
-  public Additionalcosts spendingTaxTariff(Double spendingTaxTariff) {
-    this.spendingTaxTariff = spendingTaxTariff;
+  public Additionalcosts transportationamount(Double transportationamount) {
+    this.transportationamount = transportationamount;
     return this;
   }
 
    /**
-   * Proc.náklady - sazba [persistentní položka]
-   * @return spendingTaxTariff
+   * doprava [persistentní položka]
+   * @return transportationamount
   **/
-  @ApiModelProperty(example = "null", value = "Proc.náklady - sazba [persistentní položka]")
-  public Double getSpendingTaxTariff() {
-    return spendingTaxTariff;
+  @ApiModelProperty(example = "null", value = "doprava [persistentní položka]")
+  public Double getTransportationamount() {
+    return transportationamount;
   }
 
-  public void setSpendingTaxTariff(Double spendingTaxTariff) {
-    this.spendingTaxTariff = spendingTaxTariff;
+  public void setTransportationamount(Double transportationamount) {
+    this.transportationamount = transportationamount;
   }
 
-  public Additionalcosts transportationTariff(Double transportationTariff) {
-    this.transportationTariff = transportationTariff;
+  public Additionalcosts othercostamount(Double othercostamount) {
+    this.othercostamount = othercostamount;
     return this;
   }
 
    /**
-   * Doprava - sazba [persistentní položka]
-   * @return transportationTariff
+   * ostatní náklady [persistentní položka]
+   * @return othercostamount
   **/
-  @ApiModelProperty(example = "null", value = "Doprava - sazba [persistentní položka]")
-  public Double getTransportationTariff() {
-    return transportationTariff;
+  @ApiModelProperty(example = "null", value = "ostatní náklady [persistentní položka]")
+  public Double getOthercostamount() {
+    return othercostamount;
   }
 
-  public void setTransportationTariff(Double transportationTariff) {
-    this.transportationTariff = transportationTariff;
+  public void setOthercostamount(Double othercostamount) {
+    this.othercostamount = othercostamount;
   }
 
-  public Additionalcosts transportationUsed(Boolean transportationUsed) {
-    this.transportationUsed = transportationUsed;
+  public Additionalcosts customstariff(Double customstariff) {
+    this.customstariff = customstariff;
     return this;
   }
 
    /**
-   * Je doprava [persistentní položka]
-   * @return transportationUsed
+   * clo - sazba [persistentní položka]
+   * @return customstariff
   **/
-  @ApiModelProperty(example = "null", value = "Je doprava [persistentní položka]")
-  public Boolean getTransportationUsed() {
-    return transportationUsed;
+  @ApiModelProperty(example = "null", value = "clo - sazba [persistentní položka]")
+  public Double getCustomstariff() {
+    return customstariff;
   }
 
-  public void setTransportationUsed(Boolean transportationUsed) {
-    this.transportationUsed = transportationUsed;
+  public void setCustomstariff(Double customstariff) {
+    this.customstariff = customstariff;
   }
 
-  public Additionalcosts otherCostUsed(Boolean otherCostUsed) {
-    this.otherCostUsed = otherCostUsed;
+  public Additionalcosts othercosttariff(Double othercosttariff) {
+    this.othercosttariff = othercosttariff;
     return this;
   }
 
    /**
-   * Jsou ostat.nákl. [persistentní položka]
-   * @return otherCostUsed
+   * ost.nákl. - sazba [persistentní položka]
+   * @return othercosttariff
   **/
-  @ApiModelProperty(example = "null", value = "Jsou ostat.nákl. [persistentní položka]")
-  public Boolean getOtherCostUsed() {
-    return otherCostUsed;
+  @ApiModelProperty(example = "null", value = "ost.nákl. - sazba [persistentní položka]")
+  public Double getOthercosttariff() {
+    return othercosttariff;
   }
 
-  public void setOtherCostUsed(Boolean otherCostUsed) {
-    this.otherCostUsed = otherCostUsed;
+  public void setOthercosttariff(Double othercosttariff) {
+    this.othercosttariff = othercosttariff;
   }
 
-  public Additionalcosts transportationIsLocal(Boolean transportationIsLocal) {
-    this.transportationIsLocal = transportationIsLocal;
+  public Additionalcosts spendingtaxtariff(Double spendingtaxtariff) {
+    this.spendingtaxtariff = spendingtaxtariff;
     return this;
   }
 
    /**
-   * Dopr.lokál. [persistentní položka]
-   * @return transportationIsLocal
+   * proc.náklady - sazba [persistentní položka]
+   * @return spendingtaxtariff
   **/
-  @ApiModelProperty(example = "null", value = "Dopr.lokál. [persistentní položka]")
-  public Boolean getTransportationIsLocal() {
-    return transportationIsLocal;
+  @ApiModelProperty(example = "null", value = "proc.náklady - sazba [persistentní položka]")
+  public Double getSpendingtaxtariff() {
+    return spendingtaxtariff;
   }
 
-  public void setTransportationIsLocal(Boolean transportationIsLocal) {
-    this.transportationIsLocal = transportationIsLocal;
+  public void setSpendingtaxtariff(Double spendingtaxtariff) {
+    this.spendingtaxtariff = spendingtaxtariff;
   }
 
-  public Additionalcosts otherCostIsLocal(Boolean otherCostIsLocal) {
-    this.otherCostIsLocal = otherCostIsLocal;
+  public Additionalcosts transportationtariff(Double transportationtariff) {
+    this.transportationtariff = transportationtariff;
     return this;
   }
 
    /**
-   * Ost.nákl.lokál. [persistentní položka]
-   * @return otherCostIsLocal
+   * doprava - sazba [persistentní položka]
+   * @return transportationtariff
   **/
-  @ApiModelProperty(example = "null", value = "Ost.nákl.lokál. [persistentní položka]")
-  public Boolean getOtherCostIsLocal() {
-    return otherCostIsLocal;
+  @ApiModelProperty(example = "null", value = "doprava - sazba [persistentní položka]")
+  public Double getTransportationtariff() {
+    return transportationtariff;
   }
 
-  public void setOtherCostIsLocal(Boolean otherCostIsLocal) {
-    this.otherCostIsLocal = otherCostIsLocal;
+  public void setTransportationtariff(Double transportationtariff) {
+    this.transportationtariff = transportationtariff;
   }
 
-  public Additionalcosts customsIsLocal(Boolean customsIsLocal) {
-    this.customsIsLocal = customsIsLocal;
+  public Additionalcosts transportationused(Boolean transportationused) {
+    this.transportationused = transportationused;
     return this;
   }
 
    /**
-   * Clo lokálně [persistentní položka]
-   * @return customsIsLocal
+   * je doprava [persistentní položka]
+   * @return transportationused
   **/
-  @ApiModelProperty(example = "null", value = "Clo lokálně [persistentní položka]")
-  public Boolean getCustomsIsLocal() {
-    return customsIsLocal;
+  @ApiModelProperty(example = "null", value = "je doprava [persistentní položka]")
+  public Boolean getTransportationused() {
+    return transportationused;
   }
 
-  public void setCustomsIsLocal(Boolean customsIsLocal) {
-    this.customsIsLocal = customsIsLocal;
+  public void setTransportationused(Boolean transportationused) {
+    this.transportationused = transportationused;
   }
 
-  public Additionalcosts spendingTaxIsLocal(Boolean spendingTaxIsLocal) {
-    this.spendingTaxIsLocal = spendingTaxIsLocal;
+  public Additionalcosts othercostused(Boolean othercostused) {
+    this.othercostused = othercostused;
     return this;
   }
 
    /**
-   * Proc.náklady lokál. [persistentní položka]
-   * @return spendingTaxIsLocal
+   * jsou ostat.nákl. [persistentní položka]
+   * @return othercostused
   **/
-  @ApiModelProperty(example = "null", value = "Proc.náklady lokál. [persistentní položka]")
-  public Boolean getSpendingTaxIsLocal() {
-    return spendingTaxIsLocal;
+  @ApiModelProperty(example = "null", value = "jsou ostat.nákl. [persistentní položka]")
+  public Boolean getOthercostused() {
+    return othercostused;
   }
 
-  public void setSpendingTaxIsLocal(Boolean spendingTaxIsLocal) {
-    this.spendingTaxIsLocal = spendingTaxIsLocal;
+  public void setOthercostused(Boolean othercostused) {
+    this.othercostused = othercostused;
   }
 
-  public Additionalcosts intrastatAffectKind(Integer intrastatAffectKind) {
-    this.intrastatAffectKind = intrastatAffectKind;
+  public Additionalcosts transportationislocal(Boolean transportationislocal) {
+    this.transportationislocal = transportationislocal;
     return this;
   }
 
    /**
-   * Započítat do částky pro Intrastat [persistentní položka]
-   * @return intrastatAffectKind
+   * dopr.lokál. [persistentní položka]
+   * @return transportationislocal
   **/
-  @ApiModelProperty(example = "null", value = "Započítat do částky pro Intrastat [persistentní položka]")
-  public Integer getIntrastatAffectKind() {
-    return intrastatAffectKind;
+  @ApiModelProperty(example = "null", value = "dopr.lokál. [persistentní položka]")
+  public Boolean getTransportationislocal() {
+    return transportationislocal;
   }
 
-  public void setIntrastatAffectKind(Integer intrastatAffectKind) {
-    this.intrastatAffectKind = intrastatAffectKind;
+  public void setTransportationislocal(Boolean transportationislocal) {
+    this.transportationislocal = transportationislocal;
+  }
+
+  public Additionalcosts othercostislocal(Boolean othercostislocal) {
+    this.othercostislocal = othercostislocal;
+    return this;
+  }
+
+   /**
+   * ost.nákl.lokál. [persistentní položka]
+   * @return othercostislocal
+  **/
+  @ApiModelProperty(example = "null", value = "ost.nákl.lokál. [persistentní položka]")
+  public Boolean getOthercostislocal() {
+    return othercostislocal;
+  }
+
+  public void setOthercostislocal(Boolean othercostislocal) {
+    this.othercostislocal = othercostislocal;
+  }
+
+  public Additionalcosts customsislocal(Boolean customsislocal) {
+    this.customsislocal = customsislocal;
+    return this;
+  }
+
+   /**
+   * clo lokálně [persistentní položka]
+   * @return customsislocal
+  **/
+  @ApiModelProperty(example = "null", value = "clo lokálně [persistentní položka]")
+  public Boolean getCustomsislocal() {
+    return customsislocal;
+  }
+
+  public void setCustomsislocal(Boolean customsislocal) {
+    this.customsislocal = customsislocal;
+  }
+
+  public Additionalcosts spendingtaxislocal(Boolean spendingtaxislocal) {
+    this.spendingtaxislocal = spendingtaxislocal;
+    return this;
+  }
+
+   /**
+   * proc.náklady lokál. [persistentní položka]
+   * @return spendingtaxislocal
+  **/
+  @ApiModelProperty(example = "null", value = "proc.náklady lokál. [persistentní položka]")
+  public Boolean getSpendingtaxislocal() {
+    return spendingtaxislocal;
+  }
+
+  public void setSpendingtaxislocal(Boolean spendingtaxislocal) {
+    this.spendingtaxislocal = spendingtaxislocal;
+  }
+
+  public Additionalcosts intrastataffectkind(Integer intrastataffectkind) {
+    this.intrastataffectkind = intrastataffectkind;
+    return this;
+  }
+
+   /**
+   * započítat do částky pro intrastat [persistentní položka]
+   * @return intrastataffectkind
+  **/
+  @ApiModelProperty(example = "null", value = "započítat do částky pro intrastat [persistentní položka]")
+  public Integer getIntrastataffectkind() {
+    return intrastataffectkind;
+  }
+
+  public void setIntrastataffectkind(Integer intrastataffectkind) {
+    this.intrastataffectkind = intrastataffectkind;
   }
 
 
@@ -409,30 +445,30 @@ public class Additionalcosts   {
       return false;
     }
     Additionalcosts additionalcosts = (Additionalcosts) o;
-    return Objects.equals(this.displayName, additionalcosts.displayName) &&
-        Objects.equals(this.ID, additionalcosts.ID) &&
-        Objects.equals(this.classID, additionalcosts.classID) &&
-        Objects.equals(this.objVersion, additionalcosts.objVersion) &&
-        Objects.equals(this.customsAmount, additionalcosts.customsAmount) &&
-        Objects.equals(this.spendingTaxAmount, additionalcosts.spendingTaxAmount) &&
-        Objects.equals(this.transportationAmount, additionalcosts.transportationAmount) &&
-        Objects.equals(this.otherCostAmount, additionalcosts.otherCostAmount) &&
-        Objects.equals(this.customsTariff, additionalcosts.customsTariff) &&
-        Objects.equals(this.otherCostTariff, additionalcosts.otherCostTariff) &&
-        Objects.equals(this.spendingTaxTariff, additionalcosts.spendingTaxTariff) &&
-        Objects.equals(this.transportationTariff, additionalcosts.transportationTariff) &&
-        Objects.equals(this.transportationUsed, additionalcosts.transportationUsed) &&
-        Objects.equals(this.otherCostUsed, additionalcosts.otherCostUsed) &&
-        Objects.equals(this.transportationIsLocal, additionalcosts.transportationIsLocal) &&
-        Objects.equals(this.otherCostIsLocal, additionalcosts.otherCostIsLocal) &&
-        Objects.equals(this.customsIsLocal, additionalcosts.customsIsLocal) &&
-        Objects.equals(this.spendingTaxIsLocal, additionalcosts.spendingTaxIsLocal) &&
-        Objects.equals(this.intrastatAffectKind, additionalcosts.intrastatAffectKind);
+    return Objects.equals(this.displayname, additionalcosts.displayname) &&
+        Objects.equals(this.id, additionalcosts.id) &&
+        Objects.equals(this.classid, additionalcosts.classid) &&
+        Objects.equals(this.objversion, additionalcosts.objversion) &&
+        Objects.equals(this.customsamount, additionalcosts.customsamount) &&
+        Objects.equals(this.spendingtaxamount, additionalcosts.spendingtaxamount) &&
+        Objects.equals(this.transportationamount, additionalcosts.transportationamount) &&
+        Objects.equals(this.othercostamount, additionalcosts.othercostamount) &&
+        Objects.equals(this.customstariff, additionalcosts.customstariff) &&
+        Objects.equals(this.othercosttariff, additionalcosts.othercosttariff) &&
+        Objects.equals(this.spendingtaxtariff, additionalcosts.spendingtaxtariff) &&
+        Objects.equals(this.transportationtariff, additionalcosts.transportationtariff) &&
+        Objects.equals(this.transportationused, additionalcosts.transportationused) &&
+        Objects.equals(this.othercostused, additionalcosts.othercostused) &&
+        Objects.equals(this.transportationislocal, additionalcosts.transportationislocal) &&
+        Objects.equals(this.othercostislocal, additionalcosts.othercostislocal) &&
+        Objects.equals(this.customsislocal, additionalcosts.customsislocal) &&
+        Objects.equals(this.spendingtaxislocal, additionalcosts.spendingtaxislocal) &&
+        Objects.equals(this.intrastataffectkind, additionalcosts.intrastataffectkind);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, customsAmount, spendingTaxAmount, transportationAmount, otherCostAmount, customsTariff, otherCostTariff, spendingTaxTariff, transportationTariff, transportationUsed, otherCostUsed, transportationIsLocal, otherCostIsLocal, customsIsLocal, spendingTaxIsLocal, intrastatAffectKind);
+    return Objects.hash(displayname, id, classid, objversion, customsamount, spendingtaxamount, transportationamount, othercostamount, customstariff, othercosttariff, spendingtaxtariff, transportationtariff, transportationused, othercostused, transportationislocal, othercostislocal, customsislocal, spendingtaxislocal, intrastataffectkind);
   }
 
   @Override
@@ -440,25 +476,25 @@ public class Additionalcosts   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Additionalcosts {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    customsAmount: ").append(toIndentedString(customsAmount)).append("\n");
-    sb.append("    spendingTaxAmount: ").append(toIndentedString(spendingTaxAmount)).append("\n");
-    sb.append("    transportationAmount: ").append(toIndentedString(transportationAmount)).append("\n");
-    sb.append("    otherCostAmount: ").append(toIndentedString(otherCostAmount)).append("\n");
-    sb.append("    customsTariff: ").append(toIndentedString(customsTariff)).append("\n");
-    sb.append("    otherCostTariff: ").append(toIndentedString(otherCostTariff)).append("\n");
-    sb.append("    spendingTaxTariff: ").append(toIndentedString(spendingTaxTariff)).append("\n");
-    sb.append("    transportationTariff: ").append(toIndentedString(transportationTariff)).append("\n");
-    sb.append("    transportationUsed: ").append(toIndentedString(transportationUsed)).append("\n");
-    sb.append("    otherCostUsed: ").append(toIndentedString(otherCostUsed)).append("\n");
-    sb.append("    transportationIsLocal: ").append(toIndentedString(transportationIsLocal)).append("\n");
-    sb.append("    otherCostIsLocal: ").append(toIndentedString(otherCostIsLocal)).append("\n");
-    sb.append("    customsIsLocal: ").append(toIndentedString(customsIsLocal)).append("\n");
-    sb.append("    spendingTaxIsLocal: ").append(toIndentedString(spendingTaxIsLocal)).append("\n");
-    sb.append("    intrastatAffectKind: ").append(toIndentedString(intrastatAffectKind)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    customsamount: ").append(toIndentedString(customsamount)).append("\n");
+    sb.append("    spendingtaxamount: ").append(toIndentedString(spendingtaxamount)).append("\n");
+    sb.append("    transportationamount: ").append(toIndentedString(transportationamount)).append("\n");
+    sb.append("    othercostamount: ").append(toIndentedString(othercostamount)).append("\n");
+    sb.append("    customstariff: ").append(toIndentedString(customstariff)).append("\n");
+    sb.append("    othercosttariff: ").append(toIndentedString(othercosttariff)).append("\n");
+    sb.append("    spendingtaxtariff: ").append(toIndentedString(spendingtaxtariff)).append("\n");
+    sb.append("    transportationtariff: ").append(toIndentedString(transportationtariff)).append("\n");
+    sb.append("    transportationused: ").append(toIndentedString(transportationused)).append("\n");
+    sb.append("    othercostused: ").append(toIndentedString(othercostused)).append("\n");
+    sb.append("    transportationislocal: ").append(toIndentedString(transportationislocal)).append("\n");
+    sb.append("    othercostislocal: ").append(toIndentedString(othercostislocal)).append("\n");
+    sb.append("    customsislocal: ").append(toIndentedString(customsislocal)).append("\n");
+    sb.append("    spendingtaxislocal: ").append(toIndentedString(spendingtaxislocal)).append("\n");
+    sb.append("    intrastataffectkind: ").append(toIndentedString(intrastataffectkind)).append("\n");
     sb.append("}");
     return sb.toString();
   }

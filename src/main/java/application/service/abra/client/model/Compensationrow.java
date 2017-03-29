@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,297 +35,342 @@ import java.util.Objects;
 /**
  * Compensationrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Compensationrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("CurrRate")
-  private Double currRate = null;
+  @SerializedName("currrate")
+  private Double currrate = null;
 
-  @SerializedName("RefCurrRate")
-  private Double refCurrRate = null;
+  @SerializedName("refcurrrate")
+  private Double refcurrrate = null;
 
-  @SerializedName("Credit")
+  @SerializedName("credit")
   private Boolean credit = null;
 
-  @SerializedName("VarSymbol")
-  private String varSymbol = null;
+  @SerializedName("varsymbol")
+  private String varsymbol = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("TAmount")
-  private Double tAmount = null;
+  @SerializedName("tamount")
+  private Double tamount = null;
 
-  @SerializedName("LocalTAmount")
-  private Double localTAmount = null;
+  @SerializedName("localtamount")
+  private Double localtamount = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("PAmount")
-  private Double pAmount = null;
+  @SerializedName("pamount")
+  private Double pamount = null;
 
-  @SerializedName("PDocumentType")
-  private String pDocumentType = null;
+  @SerializedName("pdocumenttype")
+  private String pdocumenttype = null;
 
-  @SerializedName("PDocument_ID")
-  private String pDocumentID = null;
+  @SerializedName("pdocument_id")
+  private String pdocumentId = null;
 
-  @SerializedName("Coef")
+  @SerializedName("coef")
   private Integer coef = null;
 
-  @SerializedName("LocalCoef")
-  private Integer localCoef = null;
+  @SerializedName("localcoef")
+  private Integer localcoef = null;
 
-  @SerializedName("Zone_ID")
-  private String zoneID = null;
+  @SerializedName("zone_id")
+  private String zoneId = null;
 
-  @SerializedName("LocalZone_ID")
-  private String localZoneID = null;
+  @SerializedName("localzone_id")
+  private String localzoneId = null;
 
-  @SerializedName("RefCurrency_ID")
-  private String refCurrencyID = null;
+  @SerializedName("refcurrency_id")
+  private String refcurrencyId = null;
 
-  @SerializedName("LocalRefCurrency_ID")
-  private String localRefCurrencyID = null;
+  @SerializedName("localrefcurrency_id")
+  private String localrefcurrencyId = null;
 
-  @SerializedName("AccPresetDef_ID")
-  private String accPresetDefID = null;
+  @SerializedName("accpresetdef_id")
+  private String accpresetdefId = null;
 
-  @SerializedName("AccDate$DATE")
-  private DateTime accDateDATE = null;
+  @SerializedName("accdate$date")
+  private DateTime accdatedate = null;
 
-  @SerializedName("PDisKind")
-  private Integer pDisKind = null;
+  @SerializedName("pdiskind")
+  private Integer pdiskind = null;
 
-  @SerializedName("Text")
+  @SerializedName("text")
   private String text = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("CorrectionRow")
-  private Boolean correctionRow = null;
+  @SerializedName("correctionrow")
+  private Boolean correctionrow = null;
+
+  public Compensationrow displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
   }
 
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Vzájemný zápočet [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Vzájemný zápočet [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Compensationrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Compensationrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Compensationrow divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Compensationrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Compensationrow busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Compensationrow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Compensationrow busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Compensationrow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Obch.případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * vlastník; id objektu vzájemný zápočet [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Obch.případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu vzájemný zápočet [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Compensationrow firmID(String firmID) {
-    this.firmID = firmID;
+  public Compensationrow posindex(Integer posindex) {
+    this.posindex = posindex;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * pořadí [persistentní položka]
+   * @return posindex
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
-  public Compensationrow currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Compensationrow divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Compensationrow currRate(Double currRate) {
-    this.currRate = currRate;
+  public Compensationrow busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Kurz [persistentní položka]
-   * @return currRate
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Kurz [persistentní položka]")
-  public Double getCurrRate() {
-    return currRate;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setCurrRate(Double currRate) {
-    this.currRate = currRate;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Compensationrow refCurrRate(Double refCurrRate) {
-    this.refCurrRate = refCurrRate;
+  public Compensationrow bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Vztažný [persistentní položka]
-   * @return refCurrRate
+   * obch.případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Vztažný [persistentní položka]")
-  public Double getRefCurrRate() {
-    return refCurrRate;
+  @ApiModelProperty(example = "null", value = "obch.případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setRefCurrRate(Double refCurrRate) {
-    this.refCurrRate = refCurrRate;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
+  }
+
+  public Compensationrow firmId(String firmId) {
+    this.firmId = firmId;
+    return this;
+  }
+
+   /**
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
+  **/
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
+  }
+
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
+  }
+
+  public Compensationrow currencyId(String currencyId) {
+    this.currencyId = currencyId;
+    return this;
+  }
+
+   /**
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
+  **/
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
+  }
+
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
+  }
+
+  public Compensationrow currrate(Double currrate) {
+    this.currrate = currrate;
+    return this;
+  }
+
+   /**
+   * kurz [persistentní položka]
+   * @return currrate
+  **/
+  @ApiModelProperty(example = "null", value = "kurz [persistentní položka]")
+  public Double getCurrrate() {
+    return currrate;
+  }
+
+  public void setCurrrate(Double currrate) {
+    this.currrate = currrate;
+  }
+
+  public Compensationrow refcurrrate(Double refcurrrate) {
+    this.refcurrrate = refcurrrate;
+    return this;
+  }
+
+   /**
+   * vztažný [persistentní položka]
+   * @return refcurrrate
+  **/
+  @ApiModelProperty(example = "null", value = "vztažný [persistentní položka]")
+  public Double getRefcurrrate() {
+    return refcurrrate;
+  }
+
+  public void setRefcurrrate(Double refcurrrate) {
+    this.refcurrrate = refcurrrate;
   }
 
   public Compensationrow credit(Boolean credit) {
@@ -334,10 +379,10 @@ public class Compensationrow   {
   }
 
    /**
-   * Kredit [persistentní položka]
+   * kredit [persistentní položka]
    * @return credit
   **/
-  @ApiModelProperty(example = "null", value = "Kredit [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kredit [persistentní položka]")
   public Boolean getCredit() {
     return credit;
   }
@@ -346,22 +391,22 @@ public class Compensationrow   {
     this.credit = credit;
   }
 
-  public Compensationrow varSymbol(String varSymbol) {
-    this.varSymbol = varSymbol;
+  public Compensationrow varsymbol(String varsymbol) {
+    this.varsymbol = varsymbol;
     return this;
   }
 
    /**
-   * Var.symbol [persistentní položka]
-   * @return varSymbol
+   * var.symbol [persistentní položka]
+   * @return varsymbol
   **/
-  @ApiModelProperty(example = "null", value = "Var.symbol [persistentní položka]")
-  public String getVarSymbol() {
-    return varSymbol;
+  @ApiModelProperty(example = "null", value = "var.symbol [persistentní položka]")
+  public String getVarsymbol() {
+    return varsymbol;
   }
 
-  public void setVarSymbol(String varSymbol) {
-    this.varSymbol = varSymbol;
+  public void setVarsymbol(String varsymbol) {
+    this.varsymbol = varsymbol;
   }
 
   public Compensationrow amount(Double amount) {
@@ -382,94 +427,112 @@ public class Compensationrow   {
     this.amount = amount;
   }
 
-   /**
-   * Celkem [persistentní položka]
-   * @return tAmount
-  **/
-  @ApiModelProperty(example = "null", value = "Celkem [persistentní položka]")
-  public Double getTAmount() {
-    return tAmount;
-  }
-
-   /**
-   * Celkem lokální [persistentní položka]
-   * @return localTAmount
-  **/
-  @ApiModelProperty(example = "null", value = "Celkem lokální [persistentní položka]")
-  public Double getLocalTAmount() {
-    return localTAmount;
-  }
-
-  public Compensationrow docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Compensationrow tamount(Double tamount) {
+    this.tamount = tamount;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * celkem [persistentní položka]
+   * @return tamount
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "celkem [persistentní položka]")
+  public Double getTamount() {
+    return tamount;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setTamount(Double tamount) {
+    this.tamount = tamount;
   }
 
-  public Compensationrow pAmount(Double pAmount) {
-    this.pAmount = pAmount;
+  public Compensationrow localtamount(Double localtamount) {
+    this.localtamount = localtamount;
     return this;
   }
 
    /**
-   * Platba [persistentní položka]
-   * @return pAmount
+   * celkem lokální [persistentní položka]
+   * @return localtamount
   **/
-  @ApiModelProperty(example = "null", value = "Platba [persistentní položka]")
-  public Double getPAmount() {
-    return pAmount;
+  @ApiModelProperty(example = "null", value = "celkem lokální [persistentní položka]")
+  public Double getLocaltamount() {
+    return localtamount;
   }
 
-  public void setPAmount(Double pAmount) {
-    this.pAmount = pAmount;
+  public void setLocaltamount(Double localtamount) {
+    this.localtamount = localtamount;
   }
 
-  public Compensationrow pDocumentType(String pDocumentType) {
-    this.pDocumentType = pDocumentType;
+  public Compensationrow docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Typ plac.dokl. [persistentní položka]
-   * @return pDocumentType
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Typ plac.dokl. [persistentní položka]")
-  public String getPDocumentType() {
-    return pDocumentType;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setPDocumentType(String pDocumentType) {
-    this.pDocumentType = pDocumentType;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Compensationrow pDocumentID(String pDocumentID) {
-    this.pDocumentID = pDocumentID;
+  public Compensationrow pamount(Double pamount) {
+    this.pamount = pamount;
     return this;
   }
 
    /**
-   * Plac.doklad; ID objektu Dokument [persistentní položka]
-   * @return pDocumentID
+   * platba [persistentní položka]
+   * @return pamount
   **/
-  @ApiModelProperty(example = "null", value = "Plac.doklad; ID objektu Dokument [persistentní položka]")
-  public String getPDocumentID() {
-    return pDocumentID;
+  @ApiModelProperty(example = "null", value = "platba [persistentní položka]")
+  public Double getPamount() {
+    return pamount;
   }
 
-  public void setPDocumentID(String pDocumentID) {
-    this.pDocumentID = pDocumentID;
+  public void setPamount(Double pamount) {
+    this.pamount = pamount;
+  }
+
+  public Compensationrow pdocumenttype(String pdocumenttype) {
+    this.pdocumenttype = pdocumenttype;
+    return this;
+  }
+
+   /**
+   * typ plac.dokl. [persistentní položka]
+   * @return pdocumenttype
+  **/
+  @ApiModelProperty(example = "null", value = "typ plac.dokl. [persistentní položka]")
+  public String getPdocumenttype() {
+    return pdocumenttype;
+  }
+
+  public void setPdocumenttype(String pdocumenttype) {
+    this.pdocumenttype = pdocumenttype;
+  }
+
+  public Compensationrow pdocumentId(String pdocumentId) {
+    this.pdocumentId = pdocumentId;
+    return this;
+  }
+
+   /**
+   * plac.doklad; id objektu dokument [persistentní položka]
+   * @return pdocumentId
+  **/
+  @ApiModelProperty(example = "null", value = "plac.doklad; id objektu dokument [persistentní položka]")
+  public String getPdocumentId() {
+    return pdocumentId;
+  }
+
+  public void setPdocumentId(String pdocumentId) {
+    this.pdocumentId = pdocumentId;
   }
 
   public Compensationrow coef(Integer coef) {
@@ -478,10 +541,10 @@ public class Compensationrow   {
   }
 
    /**
-   * Koeficient [persistentní položka]
+   * koeficient [persistentní položka]
    * @return coef
   **/
-  @ApiModelProperty(example = "null", value = "Koeficient [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "koeficient [persistentní položka]")
   public Integer getCoef() {
     return coef;
   }
@@ -490,130 +553,148 @@ public class Compensationrow   {
     this.coef = coef;
   }
 
-  public Compensationrow localCoef(Integer localCoef) {
-    this.localCoef = localCoef;
+  public Compensationrow localcoef(Integer localcoef) {
+    this.localcoef = localcoef;
     return this;
   }
 
    /**
-   * Lokální koeficient [persistentní položka]
-   * @return localCoef
+   * lokální koeficient [persistentní položka]
+   * @return localcoef
   **/
-  @ApiModelProperty(example = "null", value = "Lokální koeficient [persistentní položka]")
-  public Integer getLocalCoef() {
-    return localCoef;
+  @ApiModelProperty(example = "null", value = "lokální koeficient [persistentní položka]")
+  public Integer getLocalcoef() {
+    return localcoef;
   }
 
-  public void setLocalCoef(Integer localCoef) {
-    this.localCoef = localCoef;
+  public void setLocalcoef(Integer localcoef) {
+    this.localcoef = localcoef;
   }
 
-  public Compensationrow zoneID(String zoneID) {
-    this.zoneID = zoneID;
+  public Compensationrow zoneId(String zoneId) {
+    this.zoneId = zoneId;
     return this;
   }
 
    /**
-   * Zóna; ID objektu Měna [persistentní položka]
-   * @return zoneID
+   * zóna; id objektu měna [persistentní položka]
+   * @return zoneId
   **/
-  @ApiModelProperty(example = "null", value = "Zóna; ID objektu Měna [persistentní položka]")
-  public String getZoneID() {
-    return zoneID;
+  @ApiModelProperty(example = "null", value = "zóna; id objektu měna [persistentní položka]")
+  public String getZoneId() {
+    return zoneId;
   }
 
-  public void setZoneID(String zoneID) {
-    this.zoneID = zoneID;
+  public void setZoneId(String zoneId) {
+    this.zoneId = zoneId;
   }
 
-  public Compensationrow localZoneID(String localZoneID) {
-    this.localZoneID = localZoneID;
+  public Compensationrow localzoneId(String localzoneId) {
+    this.localzoneId = localzoneId;
     return this;
   }
 
    /**
-   * Lokální zóna; ID objektu Měna [persistentní položka]
-   * @return localZoneID
+   * lokální zóna; id objektu měna [persistentní položka]
+   * @return localzoneId
   **/
-  @ApiModelProperty(example = "null", value = "Lokální zóna; ID objektu Měna [persistentní položka]")
-  public String getLocalZoneID() {
-    return localZoneID;
+  @ApiModelProperty(example = "null", value = "lokální zóna; id objektu měna [persistentní položka]")
+  public String getLocalzoneId() {
+    return localzoneId;
   }
 
-  public void setLocalZoneID(String localZoneID) {
-    this.localZoneID = localZoneID;
+  public void setLocalzoneId(String localzoneId) {
+    this.localzoneId = localzoneId;
   }
 
-   /**
-   * Ref.měna; ID objektu Měna
-   * @return refCurrencyID
-  **/
-  @ApiModelProperty(example = "null", value = "Ref.měna; ID objektu Měna")
-  public String getRefCurrencyID() {
-    return refCurrencyID;
-  }
-
-   /**
-   * Lok.ref.měna; ID objektu Měna
-   * @return localRefCurrencyID
-  **/
-  @ApiModelProperty(example = "null", value = "Lok.ref.měna; ID objektu Měna")
-  public String getLocalRefCurrencyID() {
-    return localRefCurrencyID;
-  }
-
-  public Compensationrow accPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public Compensationrow refcurrencyId(String refcurrencyId) {
+    this.refcurrencyId = refcurrencyId;
     return this;
   }
 
    /**
-   * Předkontace; ID objektu Účetní předkontace [persistentní položka]
-   * @return accPresetDefID
+   * ref.měna; id objektu měna
+   * @return refcurrencyId
   **/
-  @ApiModelProperty(example = "null", value = "Předkontace; ID objektu Účetní předkontace [persistentní položka]")
-  public String getAccPresetDefID() {
-    return accPresetDefID;
+  @ApiModelProperty(example = "null", value = "ref.měna; id objektu měna")
+  public String getRefcurrencyId() {
+    return refcurrencyId;
   }
 
-  public void setAccPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public void setRefcurrencyId(String refcurrencyId) {
+    this.refcurrencyId = refcurrencyId;
   }
 
-  public Compensationrow accDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public Compensationrow localrefcurrencyId(String localrefcurrencyId) {
+    this.localrefcurrencyId = localrefcurrencyId;
     return this;
   }
 
    /**
-   * Datum účt. [persistentní položka]
-   * @return accDateDATE
+   * lok.ref.měna; id objektu měna
+   * @return localrefcurrencyId
   **/
-  @ApiModelProperty(example = "null", value = "Datum účt. [persistentní položka]")
-  public DateTime getAccDateDATE() {
-    return accDateDATE;
+  @ApiModelProperty(example = "null", value = "lok.ref.měna; id objektu měna")
+  public String getLocalrefcurrencyId() {
+    return localrefcurrencyId;
   }
 
-  public void setAccDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public void setLocalrefcurrencyId(String localrefcurrencyId) {
+    this.localrefcurrencyId = localrefcurrencyId;
   }
 
-  public Compensationrow pDisKind(Integer pDisKind) {
-    this.pDisKind = pDisKind;
+  public Compensationrow accpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
     return this;
   }
 
    /**
-   * Rozdělení [persistentní položka]
-   * @return pDisKind
+   * předkontace; id objektu Účetní předkontace [persistentní položka]
+   * @return accpresetdefId
   **/
-  @ApiModelProperty(example = "null", value = "Rozdělení [persistentní položka]")
-  public Integer getPDisKind() {
-    return pDisKind;
+  @ApiModelProperty(example = "null", value = "předkontace; id objektu Účetní předkontace [persistentní položka]")
+  public String getAccpresetdefId() {
+    return accpresetdefId;
   }
 
-  public void setPDisKind(Integer pDisKind) {
-    this.pDisKind = pDisKind;
+  public void setAccpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
+  }
+
+  public Compensationrow accdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
+    return this;
+  }
+
+   /**
+   * datum účt. [persistentní položka]
+   * @return accdatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum účt. [persistentní položka]")
+  public DateTime getAccdatedate() {
+    return accdatedate;
+  }
+
+  public void setAccdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
+  }
+
+  public Compensationrow pdiskind(Integer pdiskind) {
+    this.pdiskind = pdiskind;
+    return this;
+  }
+
+   /**
+   * rozdělení [persistentní položka]
+   * @return pdiskind
+  **/
+  @ApiModelProperty(example = "null", value = "rozdělení [persistentní položka]")
+  public Integer getPdiskind() {
+    return pdiskind;
+  }
+
+  public void setPdiskind(Integer pdiskind) {
+    this.pdiskind = pdiskind;
   }
 
   public Compensationrow text(String text) {
@@ -622,10 +703,10 @@ public class Compensationrow   {
   }
 
    /**
-   * Text [persistentní položka]
+   * text [persistentní položka]
    * @return text
   **/
-  @ApiModelProperty(example = "null", value = "Text [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "text [persistentní položka]")
   public String getText() {
     return text;
   }
@@ -634,40 +715,40 @@ public class Compensationrow   {
     this.text = text;
   }
 
-  public Compensationrow busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Compensationrow busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Compensationrow correctionRow(Boolean correctionRow) {
-    this.correctionRow = correctionRow;
+  public Compensationrow correctionrow(Boolean correctionrow) {
+    this.correctionrow = correctionrow;
     return this;
   }
 
    /**
-   * Korekční řádek [persistentní položka]
-   * @return correctionRow
+   * korekční řádek [persistentní položka]
+   * @return correctionrow
   **/
-  @ApiModelProperty(example = "null", value = "Korekční řádek [persistentní položka]")
-  public Boolean getCorrectionRow() {
-    return correctionRow;
+  @ApiModelProperty(example = "null", value = "korekční řádek [persistentní položka]")
+  public Boolean getCorrectionrow() {
+    return correctionrow;
   }
 
-  public void setCorrectionRow(Boolean correctionRow) {
-    this.correctionRow = correctionRow;
+  public void setCorrectionrow(Boolean correctionrow) {
+    this.correctionrow = correctionrow;
   }
 
 
@@ -680,45 +761,45 @@ public class Compensationrow   {
       return false;
     }
     Compensationrow compensationrow = (Compensationrow) o;
-    return Objects.equals(this.displayName, compensationrow.displayName) &&
-        Objects.equals(this.ID, compensationrow.ID) &&
-        Objects.equals(this.classID, compensationrow.classID) &&
-        Objects.equals(this.objVersion, compensationrow.objVersion) &&
-        Objects.equals(this.parentID, compensationrow.parentID) &&
-        Objects.equals(this.posIndex, compensationrow.posIndex) &&
-        Objects.equals(this.divisionID, compensationrow.divisionID) &&
-        Objects.equals(this.busOrderID, compensationrow.busOrderID) &&
-        Objects.equals(this.busTransactionID, compensationrow.busTransactionID) &&
-        Objects.equals(this.firmID, compensationrow.firmID) &&
-        Objects.equals(this.currencyID, compensationrow.currencyID) &&
-        Objects.equals(this.currRate, compensationrow.currRate) &&
-        Objects.equals(this.refCurrRate, compensationrow.refCurrRate) &&
+    return Objects.equals(this.displayname, compensationrow.displayname) &&
+        Objects.equals(this.id, compensationrow.id) &&
+        Objects.equals(this.classid, compensationrow.classid) &&
+        Objects.equals(this.objversion, compensationrow.objversion) &&
+        Objects.equals(this.parentId, compensationrow.parentId) &&
+        Objects.equals(this.posindex, compensationrow.posindex) &&
+        Objects.equals(this.divisionId, compensationrow.divisionId) &&
+        Objects.equals(this.busorderId, compensationrow.busorderId) &&
+        Objects.equals(this.bustransactionId, compensationrow.bustransactionId) &&
+        Objects.equals(this.firmId, compensationrow.firmId) &&
+        Objects.equals(this.currencyId, compensationrow.currencyId) &&
+        Objects.equals(this.currrate, compensationrow.currrate) &&
+        Objects.equals(this.refcurrrate, compensationrow.refcurrrate) &&
         Objects.equals(this.credit, compensationrow.credit) &&
-        Objects.equals(this.varSymbol, compensationrow.varSymbol) &&
+        Objects.equals(this.varsymbol, compensationrow.varsymbol) &&
         Objects.equals(this.amount, compensationrow.amount) &&
-        Objects.equals(this.tAmount, compensationrow.tAmount) &&
-        Objects.equals(this.localTAmount, compensationrow.localTAmount) &&
-        Objects.equals(this.docDateDATE, compensationrow.docDateDATE) &&
-        Objects.equals(this.pAmount, compensationrow.pAmount) &&
-        Objects.equals(this.pDocumentType, compensationrow.pDocumentType) &&
-        Objects.equals(this.pDocumentID, compensationrow.pDocumentID) &&
+        Objects.equals(this.tamount, compensationrow.tamount) &&
+        Objects.equals(this.localtamount, compensationrow.localtamount) &&
+        Objects.equals(this.docdatedate, compensationrow.docdatedate) &&
+        Objects.equals(this.pamount, compensationrow.pamount) &&
+        Objects.equals(this.pdocumenttype, compensationrow.pdocumenttype) &&
+        Objects.equals(this.pdocumentId, compensationrow.pdocumentId) &&
         Objects.equals(this.coef, compensationrow.coef) &&
-        Objects.equals(this.localCoef, compensationrow.localCoef) &&
-        Objects.equals(this.zoneID, compensationrow.zoneID) &&
-        Objects.equals(this.localZoneID, compensationrow.localZoneID) &&
-        Objects.equals(this.refCurrencyID, compensationrow.refCurrencyID) &&
-        Objects.equals(this.localRefCurrencyID, compensationrow.localRefCurrencyID) &&
-        Objects.equals(this.accPresetDefID, compensationrow.accPresetDefID) &&
-        Objects.equals(this.accDateDATE, compensationrow.accDateDATE) &&
-        Objects.equals(this.pDisKind, compensationrow.pDisKind) &&
+        Objects.equals(this.localcoef, compensationrow.localcoef) &&
+        Objects.equals(this.zoneId, compensationrow.zoneId) &&
+        Objects.equals(this.localzoneId, compensationrow.localzoneId) &&
+        Objects.equals(this.refcurrencyId, compensationrow.refcurrencyId) &&
+        Objects.equals(this.localrefcurrencyId, compensationrow.localrefcurrencyId) &&
+        Objects.equals(this.accpresetdefId, compensationrow.accpresetdefId) &&
+        Objects.equals(this.accdatedate, compensationrow.accdatedate) &&
+        Objects.equals(this.pdiskind, compensationrow.pdiskind) &&
         Objects.equals(this.text, compensationrow.text) &&
-        Objects.equals(this.busProjectID, compensationrow.busProjectID) &&
-        Objects.equals(this.correctionRow, compensationrow.correctionRow);
+        Objects.equals(this.busprojectId, compensationrow.busprojectId) &&
+        Objects.equals(this.correctionrow, compensationrow.correctionrow);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, divisionID, busOrderID, busTransactionID, firmID, currencyID, currRate, refCurrRate, credit, varSymbol, amount, tAmount, localTAmount, docDateDATE, pAmount, pDocumentType, pDocumentID, coef, localCoef, zoneID, localZoneID, refCurrencyID, localRefCurrencyID, accPresetDefID, accDateDATE, pDisKind, text, busProjectID, correctionRow);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, divisionId, busorderId, bustransactionId, firmId, currencyId, currrate, refcurrrate, credit, varsymbol, amount, tamount, localtamount, docdatedate, pamount, pdocumenttype, pdocumentId, coef, localcoef, zoneId, localzoneId, refcurrencyId, localrefcurrencyId, accpresetdefId, accdatedate, pdiskind, text, busprojectId, correctionrow);
   }
 
   @Override
@@ -726,40 +807,40 @@ public class Compensationrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Compensationrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    currRate: ").append(toIndentedString(currRate)).append("\n");
-    sb.append("    refCurrRate: ").append(toIndentedString(refCurrRate)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    currrate: ").append(toIndentedString(currrate)).append("\n");
+    sb.append("    refcurrrate: ").append(toIndentedString(refcurrrate)).append("\n");
     sb.append("    credit: ").append(toIndentedString(credit)).append("\n");
-    sb.append("    varSymbol: ").append(toIndentedString(varSymbol)).append("\n");
+    sb.append("    varsymbol: ").append(toIndentedString(varsymbol)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    tAmount: ").append(toIndentedString(tAmount)).append("\n");
-    sb.append("    localTAmount: ").append(toIndentedString(localTAmount)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    pAmount: ").append(toIndentedString(pAmount)).append("\n");
-    sb.append("    pDocumentType: ").append(toIndentedString(pDocumentType)).append("\n");
-    sb.append("    pDocumentID: ").append(toIndentedString(pDocumentID)).append("\n");
+    sb.append("    tamount: ").append(toIndentedString(tamount)).append("\n");
+    sb.append("    localtamount: ").append(toIndentedString(localtamount)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    pamount: ").append(toIndentedString(pamount)).append("\n");
+    sb.append("    pdocumenttype: ").append(toIndentedString(pdocumenttype)).append("\n");
+    sb.append("    pdocumentId: ").append(toIndentedString(pdocumentId)).append("\n");
     sb.append("    coef: ").append(toIndentedString(coef)).append("\n");
-    sb.append("    localCoef: ").append(toIndentedString(localCoef)).append("\n");
-    sb.append("    zoneID: ").append(toIndentedString(zoneID)).append("\n");
-    sb.append("    localZoneID: ").append(toIndentedString(localZoneID)).append("\n");
-    sb.append("    refCurrencyID: ").append(toIndentedString(refCurrencyID)).append("\n");
-    sb.append("    localRefCurrencyID: ").append(toIndentedString(localRefCurrencyID)).append("\n");
-    sb.append("    accPresetDefID: ").append(toIndentedString(accPresetDefID)).append("\n");
-    sb.append("    accDateDATE: ").append(toIndentedString(accDateDATE)).append("\n");
-    sb.append("    pDisKind: ").append(toIndentedString(pDisKind)).append("\n");
+    sb.append("    localcoef: ").append(toIndentedString(localcoef)).append("\n");
+    sb.append("    zoneId: ").append(toIndentedString(zoneId)).append("\n");
+    sb.append("    localzoneId: ").append(toIndentedString(localzoneId)).append("\n");
+    sb.append("    refcurrencyId: ").append(toIndentedString(refcurrencyId)).append("\n");
+    sb.append("    localrefcurrencyId: ").append(toIndentedString(localrefcurrencyId)).append("\n");
+    sb.append("    accpresetdefId: ").append(toIndentedString(accpresetdefId)).append("\n");
+    sb.append("    accdatedate: ").append(toIndentedString(accdatedate)).append("\n");
+    sb.append("    pdiskind: ").append(toIndentedString(pdiskind)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    correctionRow: ").append(toIndentedString(correctionRow)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    correctionrow: ").append(toIndentedString(correctionrow)).append("\n");
     sb.append("}");
     return sb.toString();
   }

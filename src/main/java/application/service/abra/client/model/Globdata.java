@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,1613 +37,1649 @@ import java.util.Objects;
 /**
  * Globdata
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Globdata   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Country_ID")
-  private String countryID = null;
+  @SerializedName("country_id")
+  private String countryId = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("PriceList_ID")
-  private String priceListID = null;
+  @SerializedName("pricelist_id")
+  private String pricelistId = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("PaymentType_ID")
-  private String paymentTypeID = null;
+  @SerializedName("paymenttype_id")
+  private String paymenttypeId = null;
 
-  @SerializedName("BankAccount_ID")
-  private String bankAccountID = null;
+  @SerializedName("bankaccount_id")
+  private String bankaccountId = null;
 
-  @SerializedName("MainNACECode_ID")
-  private String mainNACECodeID = null;
+  @SerializedName("mainnacecode_id")
+  private String mainnacecodeId = null;
 
-  @SerializedName("VATPayor")
-  private Boolean vATPayor = null;
+  @SerializedName("vatpayor")
+  private Boolean vatpayor = null;
 
-  @SerializedName("DueTerm")
-  private Integer dueTerm = null;
+  @SerializedName("dueterm")
+  private Integer dueterm = null;
 
-  @SerializedName("VATRounding")
-  private Integer vATRounding = null;
+  @SerializedName("vatrounding")
+  private Integer vatrounding = null;
 
-  @SerializedName("TotalRounding")
-  private Integer totalRounding = null;
+  @SerializedName("totalrounding")
+  private Integer totalrounding = null;
 
-  @SerializedName("TotalCashRounding")
-  private Integer totalCashRounding = null;
+  @SerializedName("totalcashrounding")
+  private Integer totalcashrounding = null;
 
-  @SerializedName("CompanyName")
-  private String companyName = null;
+  @SerializedName("companyname")
+  private String companyname = null;
 
-  @SerializedName("LegalForm")
-  private String legalForm = null;
+  @SerializedName("legalform")
+  private String legalform = null;
 
-  @SerializedName("SubjectOfEnterprise")
-  private String subjectOfEnterprise = null;
+  @SerializedName("subjectofenterprise")
+  private String subjectofenterprise = null;
 
-  @SerializedName("OrgIdentNumber")
-  private String orgIdentNumber = null;
+  @SerializedName("orgidentnumber")
+  private String orgidentnumber = null;
 
-  @SerializedName("VATIdentNumber")
-  private String vATIdentNumber = null;
+  @SerializedName("vatidentnumber")
+  private String vatidentnumber = null;
 
-  @SerializedName("EORIIdentNumber")
-  private String eORIIdentNumber = null;
+  @SerializedName("eoriidentnumber")
+  private String eoriidentnumber = null;
 
-  @SerializedName("FormulaCodeFirm")
-  private String formulaCodeFirm = null;
+  @SerializedName("formulacodefirm")
+  private String formulacodefirm = null;
 
-  @SerializedName("FormulaCodeStoreCard")
-  private String formulaCodeStoreCard = null;
+  @SerializedName("formulacodestorecard")
+  private String formulacodestorecard = null;
 
-  @SerializedName("AdrKeysDefinitionsBlob")
-  private byte[] adrKeysDefinitionsBlob = null;
+  @SerializedName("adrkeysdefinitionsblob")
+  private byte[] adrkeysdefinitionsblob = null;
 
-  @SerializedName("IsRegistered")
-  private Boolean isRegistered = null;
+  @SerializedName("isregistered")
+  private Boolean isregistered = null;
 
-  @SerializedName("RegisterFileRef")
-  private String registerFileRef = null;
+  @SerializedName("registerfileref")
+  private String registerfileref = null;
 
-  @SerializedName("RegisterKeptAt")
-  private String registerKeptAt = null;
+  @SerializedName("registerkeptat")
+  private String registerkeptat = null;
 
-  @SerializedName("RegisterDate$DATE")
-  private DateTime registerDateDATE = null;
+  @SerializedName("registerdate$date")
+  private DateTime registerdatedate = null;
 
-  @SerializedName("DocIssueLimit")
-  private Integer docIssueLimit = null;
+  @SerializedName("docissuelimit")
+  private Integer docissuelimit = null;
 
-  @SerializedName("ReservationTerm")
-  private Integer reservationTerm = null;
+  @SerializedName("reservationterm")
+  private Integer reservationterm = null;
 
-  @SerializedName("WWWAddress")
-  private String wWWAddress = null;
+  @SerializedName("wwwaddress")
+  private String wwwaddress = null;
 
-  @SerializedName("VATAllowance")
-  private Double vATAllowance = null;
+  @SerializedName("vatallowance")
+  private Double vatallowance = null;
 
-  @SerializedName("PenaltyPercent")
-  private Double penaltyPercent = null;
+  @SerializedName("penaltypercent")
+  private Double penaltypercent = null;
 
-  @SerializedName("DebitAfterDueDateAmount")
-  private Integer debitAfterDueDateAmount = null;
+  @SerializedName("debitafterduedateamount")
+  private Integer debitafterduedateamount = null;
 
-  @SerializedName("FormulaCodeBusOrder")
-  private String formulaCodeBusOrder = null;
+  @SerializedName("formulacodebusorder")
+  private String formulacodebusorder = null;
 
-  @SerializedName("FormulaCodeBusTransaction")
-  private String formulaCodeBusTransaction = null;
+  @SerializedName("formulacodebustransaction")
+  private String formulacodebustransaction = null;
 
-  @SerializedName("IntrastatInputStatistic_ID")
-  private String intrastatInputStatisticID = null;
+  @SerializedName("intrastatinputstatistic_id")
+  private String intrastatinputstatisticId = null;
 
-  @SerializedName("IntrastatOutputStatistic_ID")
-  private String intrastatOutputStatisticID = null;
+  @SerializedName("intrastatoutputstatistic_id")
+  private String intrastatoutputstatisticId = null;
 
-  @SerializedName("IntrastatRegion_ID")
-  private String intrastatRegionID = null;
+  @SerializedName("intrastatregion_id")
+  private String intrastatregionId = null;
 
-  @SerializedName("OrganisationType")
-  private Integer organisationType = null;
+  @SerializedName("organisationtype")
+  private Integer organisationtype = null;
 
-  @SerializedName("District_ID")
-  private String districtID = null;
+  @SerializedName("district_id")
+  private String districtId = null;
 
-  @SerializedName("AfterDueTerm")
-  private Integer afterDueTerm = null;
+  @SerializedName("afterdueterm")
+  private Integer afterdueterm = null;
 
-  @SerializedName("RowIndexInterval")
-  private Integer rowIndexInterval = null;
+  @SerializedName("rowindexinterval")
+  private Integer rowindexinterval = null;
 
-  @SerializedName("SmallArticlesAmount")
-  private Double smallArticlesAmount = null;
+  @SerializedName("smallarticlesamount")
+  private Double smallarticlesamount = null;
 
-  @SerializedName("SmallArticles_ID")
-  private String smallArticlesID = null;
+  @SerializedName("smallarticles_id")
+  private String smallarticlesId = null;
 
-  @SerializedName("SmallArticlesExtraType_ID")
-  private String smallArticlesExtraTypeID = null;
+  @SerializedName("smallarticlesextratype_id")
+  private String smallarticlesextratypeId = null;
 
-  @SerializedName("SmallArticlesCurrency_ID")
-  private String smallArticlesCurrencyID = null;
+  @SerializedName("smallarticlescurrency_id")
+  private String smallarticlescurrencyId = null;
 
-  @SerializedName("FormulaCodeBusProject")
-  private String formulaCodeBusProject = null;
+  @SerializedName("formulacodebusproject")
+  private String formulacodebusproject = null;
 
-  @SerializedName("GlobParams")
-  private byte[] globParams = null;
+  @SerializedName("globparams")
+  private byte[] globparams = null;
 
-  @SerializedName("DeliveryTerm")
-  private Integer deliveryTerm = null;
+  @SerializedName("deliveryterm")
+  private Integer deliveryterm = null;
 
-  @SerializedName("ValidTillTerm")
-  private Integer validTillTerm = null;
+  @SerializedName("validtillterm")
+  private Integer validtillterm = null;
 
-  @SerializedName("UnitNumber")
-  private String unitNumber = null;
+  @SerializedName("unitnumber")
+  private String unitnumber = null;
 
-  @SerializedName("LOGO")
-  private byte[] LOGO = null;
+  @SerializedName("logo")
+  private byte[] logo = null;
 
-  @SerializedName("TAXIdentNumber")
-  private String tAXIdentNumber = null;
+  @SerializedName("taxidentnumber")
+  private String taxidentnumber = null;
 
-  @SerializedName("VATRegs")
-  private List<Globdatavatreg> vATRegs = new ArrayList<Globdatavatreg>();
+  @SerializedName("vatregs")
+  private List<Globdatavatreg> vatregs = new ArrayList<Globdatavatreg>();
 
-  @SerializedName("FirstVATIdentDateOfChange")
-  private DateTime firstVATIdentDateOfChange = null;
+  @SerializedName("firstvatidentdateofchange")
+  private DateTime firstvatidentdateofchange = null;
 
-  @SerializedName("WSKernelInitPackage")
-  private String wSKernelInitPackage = null;
+  @SerializedName("wskernelinitpackage")
+  private String wskernelinitpackage = null;
 
-  @SerializedName("WSKernelInitLibrary")
-  private String wSKernelInitLibrary = null;
+  @SerializedName("wskernelinitlibrary")
+  private String wskernelinitlibrary = null;
 
-  @SerializedName("WSKernelInitFunction")
-  private String wSKernelInitFunction = null;
+  @SerializedName("wskernelinitfunction")
+  private String wskernelinitfunction = null;
 
-  @SerializedName("FirmNamePrefillByPersonExpr")
-  private String firmNamePrefillByPersonExpr = null;
+  @SerializedName("firmnameprefillbypersonexpr")
+  private String firmnameprefillbypersonexpr = null;
 
-  @SerializedName("FinancialBureau")
-  private String financialBureau = null;
+  @SerializedName("financialbureau")
+  private String financialbureau = null;
 
-  @SerializedName("FinancialBureauCode")
-  private String financialBureauCode = null;
+  @SerializedName("financialbureaucode")
+  private String financialbureaucode = null;
 
-  @SerializedName("RegionalOffice")
-  private String regionalOffice = null;
+  @SerializedName("regionaloffice")
+  private String regionaloffice = null;
 
-  @SerializedName("RegionalOfficeCode")
-  private String regionalOfficeCode = null;
+  @SerializedName("regionalofficecode")
+  private String regionalofficecode = null;
 
-  @SerializedName("CompanyLegalEntity")
-  private Integer companyLegalEntity = null;
+  @SerializedName("companylegalentity")
+  private Integer companylegalentity = null;
 
-  @SerializedName("NPForename")
-  private String nPForename = null;
+  @SerializedName("npforename")
+  private String npforename = null;
 
-  @SerializedName("NPSurname")
-  private String nPSurname = null;
+  @SerializedName("npsurname")
+  private String npsurname = null;
 
-  @SerializedName("NPTitle")
-  private String nPTitle = null;
+  @SerializedName("nptitle")
+  private String nptitle = null;
 
-  @SerializedName("NPSuffix")
-  private String nPSuffix = null;
+  @SerializedName("npsuffix")
+  private String npsuffix = null;
 
-  @SerializedName("NPBirthNumber")
-  private String nPBirthNumber = null;
+  @SerializedName("npbirthnumber")
+  private String npbirthnumber = null;
 
-  @SerializedName("NPResidencePermitNumber")
-  private String nPResidencePermitNumber = null;
+  @SerializedName("npresidencepermitnumber")
+  private String npresidencepermitnumber = null;
 
-  @SerializedName("NPAddress_ID")
-  private Globdata nPAddressID = null;
+  @SerializedName("npaddress_id")
+  private Globdata npaddressId = null;
 
-  @SerializedName("NPAddressIsSameAsSiteAddress")
-  private Boolean nPAddressIsSameAsSiteAddress = null;
+  @SerializedName("npaddressissameassiteaddress")
+  private Boolean npaddressissameassiteaddress = null;
 
-  @SerializedName("CompanyLegalEntityCode")
-  private String companyLegalEntityCode = null;
+  @SerializedName("companylegalentitycode")
+  private String companylegalentitycode = null;
 
-  @SerializedName("CompanyLegalEntityText")
-  private String companyLegalEntityText = null;
+  @SerializedName("companylegalentitytext")
+  private String companylegalentitytext = null;
 
-  @SerializedName("DailyLimitCashPayments")
-  private Double dailyLimitCashPayments = null;
+  @SerializedName("dailylimitcashpayments")
+  private Double dailylimitcashpayments = null;
 
-  @SerializedName("EETUrl")
-  private String eETUrl = null;
+  @SerializedName("eeturl")
+  private String eeturl = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Globdata countryID(String countryID) {
-    this.countryID = countryID;
+  public Globdata displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Vlastní země; ID objektu Země [persistentní položka]
-   * @return countryID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní země; ID objektu Země [persistentní položka]")
-  public String getCountryID() {
-    return countryID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setCountryID(String countryID) {
-    this.countryID = countryID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Globdata currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Globdata id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Vlastní měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Globdata priceListID(String priceListID) {
-    this.priceListID = priceListID;
+  public Globdata classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Ceník; ID objektu Ceník [persistentní položka]
-   * @return priceListID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Ceník; ID objektu Ceník [persistentní položka]")
-  public String getPriceListID() {
-    return priceListID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPriceListID(String priceListID) {
-    this.priceListID = priceListID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Globdata firmID(String firmID) {
-    this.firmID = firmID;
+  public Globdata objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Globdata paymentTypeID(String paymentTypeID) {
-    this.paymentTypeID = paymentTypeID;
+  public Globdata countryId(String countryId) {
+    this.countryId = countryId;
     return this;
   }
 
    /**
-   * Způsob úhrady; ID objektu Způsob úhrady [persistentní položka]
-   * @return paymentTypeID
+   * vlastní země; id objektu země [persistentní položka]
+   * @return countryId
   **/
-  @ApiModelProperty(example = "null", value = "Způsob úhrady; ID objektu Způsob úhrady [persistentní položka]")
-  public String getPaymentTypeID() {
-    return paymentTypeID;
+  @ApiModelProperty(example = "null", value = "vlastní země; id objektu země [persistentní položka]")
+  public String getCountryId() {
+    return countryId;
   }
 
-  public void setPaymentTypeID(String paymentTypeID) {
-    this.paymentTypeID = paymentTypeID;
+  public void setCountryId(String countryId) {
+    this.countryId = countryId;
   }
 
-  public Globdata bankAccountID(String bankAccountID) {
-    this.bankAccountID = bankAccountID;
+  public Globdata currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Bank. účet; ID objektu Bankovní účet [persistentní položka]
-   * @return bankAccountID
+   * vlastní měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Bank. účet; ID objektu Bankovní účet [persistentní položka]")
-  public String getBankAccountID() {
-    return bankAccountID;
+  @ApiModelProperty(example = "null", value = "vlastní měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setBankAccountID(String bankAccountID) {
-    this.bankAccountID = bankAccountID;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
-  public Globdata mainNACECodeID(String mainNACECodeID) {
-    this.mainNACECodeID = mainNACECodeID;
+  public Globdata pricelistId(String pricelistId) {
+    this.pricelistId = pricelistId;
     return this;
   }
 
    /**
-   * Kód NACE; ID objektu NACE kód [persistentní položka]
-   * @return mainNACECodeID
+   * ceník; id objektu ceník [persistentní položka]
+   * @return pricelistId
   **/
-  @ApiModelProperty(example = "null", value = "Kód NACE; ID objektu NACE kód [persistentní položka]")
-  public String getMainNACECodeID() {
-    return mainNACECodeID;
+  @ApiModelProperty(example = "null", value = "ceník; id objektu ceník [persistentní položka]")
+  public String getPricelistId() {
+    return pricelistId;
   }
 
-  public void setMainNACECodeID(String mainNACECodeID) {
-    this.mainNACECodeID = mainNACECodeID;
+  public void setPricelistId(String pricelistId) {
+    this.pricelistId = pricelistId;
   }
 
-  public Globdata vATPayor(Boolean vATPayor) {
-    this.vATPayor = vATPayor;
+  public Globdata firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Plátce DPH [persistentní položka]
-   * @return vATPayor
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Plátce DPH [persistentní položka]")
-  public Boolean getVATPayor() {
-    return vATPayor;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setVATPayor(Boolean vATPayor) {
-    this.vATPayor = vATPayor;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Globdata dueTerm(Integer dueTerm) {
-    this.dueTerm = dueTerm;
+  public Globdata paymenttypeId(String paymenttypeId) {
+    this.paymenttypeId = paymenttypeId;
     return this;
   }
 
    /**
-   * Délka splatnosti [persistentní položka]
-   * @return dueTerm
+   * způsob úhrady; id objektu způsob úhrady [persistentní položka]
+   * @return paymenttypeId
   **/
-  @ApiModelProperty(example = "null", value = "Délka splatnosti [persistentní položka]")
-  public Integer getDueTerm() {
-    return dueTerm;
+  @ApiModelProperty(example = "null", value = "způsob úhrady; id objektu způsob úhrady [persistentní položka]")
+  public String getPaymenttypeId() {
+    return paymenttypeId;
   }
 
-  public void setDueTerm(Integer dueTerm) {
-    this.dueTerm = dueTerm;
+  public void setPaymenttypeId(String paymenttypeId) {
+    this.paymenttypeId = paymenttypeId;
   }
 
-  public Globdata vATRounding(Integer vATRounding) {
-    this.vATRounding = vATRounding;
+  public Globdata bankaccountId(String bankaccountId) {
+    this.bankaccountId = bankaccountId;
     return this;
   }
 
    /**
-   * Zaokrouhlení pro DPH
-   * @return vATRounding
+   * bank. účet; id objektu bankovní účet [persistentní položka]
+   * @return bankaccountId
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlení pro DPH")
-  public Integer getVATRounding() {
-    return vATRounding;
+  @ApiModelProperty(example = "null", value = "bank. účet; id objektu bankovní účet [persistentní položka]")
+  public String getBankaccountId() {
+    return bankaccountId;
   }
 
-  public void setVATRounding(Integer vATRounding) {
-    this.vATRounding = vATRounding;
+  public void setBankaccountId(String bankaccountId) {
+    this.bankaccountId = bankaccountId;
   }
 
-  public Globdata totalRounding(Integer totalRounding) {
-    this.totalRounding = totalRounding;
+  public Globdata mainnacecodeId(String mainnacecodeId) {
+    this.mainnacecodeId = mainnacecodeId;
     return this;
   }
 
    /**
-   * Zaok.celk.částky na bezhotov.výst.dokl.
-   * @return totalRounding
+   * kód nace; id objektu nace kód [persistentní položka]
+   * @return mainnacecodeId
   **/
-  @ApiModelProperty(example = "null", value = "Zaok.celk.částky na bezhotov.výst.dokl.")
-  public Integer getTotalRounding() {
-    return totalRounding;
+  @ApiModelProperty(example = "null", value = "kód nace; id objektu nace kód [persistentní položka]")
+  public String getMainnacecodeId() {
+    return mainnacecodeId;
   }
 
-  public void setTotalRounding(Integer totalRounding) {
-    this.totalRounding = totalRounding;
+  public void setMainnacecodeId(String mainnacecodeId) {
+    this.mainnacecodeId = mainnacecodeId;
   }
 
-  public Globdata totalCashRounding(Integer totalCashRounding) {
-    this.totalCashRounding = totalCashRounding;
+  public Globdata vatpayor(Boolean vatpayor) {
+    this.vatpayor = vatpayor;
     return this;
   }
 
    /**
-   * Zaok.celk.částky na hotov.výst.dokl.
-   * @return totalCashRounding
+   * plátce dph [persistentní položka]
+   * @return vatpayor
   **/
-  @ApiModelProperty(example = "null", value = "Zaok.celk.částky na hotov.výst.dokl.")
-  public Integer getTotalCashRounding() {
-    return totalCashRounding;
+  @ApiModelProperty(example = "null", value = "plátce dph [persistentní položka]")
+  public Boolean getVatpayor() {
+    return vatpayor;
   }
 
-  public void setTotalCashRounding(Integer totalCashRounding) {
-    this.totalCashRounding = totalCashRounding;
+  public void setVatpayor(Boolean vatpayor) {
+    this.vatpayor = vatpayor;
   }
 
-  public Globdata companyName(String companyName) {
-    this.companyName = companyName;
+  public Globdata dueterm(Integer dueterm) {
+    this.dueterm = dueterm;
     return this;
   }
 
    /**
-   * Lokální název firmy [persistentní položka]
-   * @return companyName
+   * délka splatnosti [persistentní položka]
+   * @return dueterm
   **/
-  @ApiModelProperty(example = "null", value = "Lokální název firmy [persistentní položka]")
-  public String getCompanyName() {
-    return companyName;
+  @ApiModelProperty(example = "null", value = "délka splatnosti [persistentní položka]")
+  public Integer getDueterm() {
+    return dueterm;
   }
 
-  public void setCompanyName(String companyName) {
-    this.companyName = companyName;
+  public void setDueterm(Integer dueterm) {
+    this.dueterm = dueterm;
   }
 
-  public Globdata legalForm(String legalForm) {
-    this.legalForm = legalForm;
+  public Globdata vatrounding(Integer vatrounding) {
+    this.vatrounding = vatrounding;
     return this;
   }
 
    /**
-   * Právní forma [persistentní položka]
-   * @return legalForm
+   * zaokrouhlení pro dph
+   * @return vatrounding
   **/
-  @ApiModelProperty(example = "null", value = "Právní forma [persistentní položka]")
-  public String getLegalForm() {
-    return legalForm;
+  @ApiModelProperty(example = "null", value = "zaokrouhlení pro dph")
+  public Integer getVatrounding() {
+    return vatrounding;
   }
 
-  public void setLegalForm(String legalForm) {
-    this.legalForm = legalForm;
+  public void setVatrounding(Integer vatrounding) {
+    this.vatrounding = vatrounding;
   }
 
-  public Globdata subjectOfEnterprise(String subjectOfEnterprise) {
-    this.subjectOfEnterprise = subjectOfEnterprise;
+  public Globdata totalrounding(Integer totalrounding) {
+    this.totalrounding = totalrounding;
     return this;
   }
 
    /**
-   * Hlavní předmět podnikání [persistentní položka]
-   * @return subjectOfEnterprise
+   * zaok.celk.částky na bezhotov.výst.dokl.
+   * @return totalrounding
   **/
-  @ApiModelProperty(example = "null", value = "Hlavní předmět podnikání [persistentní položka]")
-  public String getSubjectOfEnterprise() {
-    return subjectOfEnterprise;
+  @ApiModelProperty(example = "null", value = "zaok.celk.částky na bezhotov.výst.dokl.")
+  public Integer getTotalrounding() {
+    return totalrounding;
   }
 
-  public void setSubjectOfEnterprise(String subjectOfEnterprise) {
-    this.subjectOfEnterprise = subjectOfEnterprise;
+  public void setTotalrounding(Integer totalrounding) {
+    this.totalrounding = totalrounding;
   }
 
-  public Globdata orgIdentNumber(String orgIdentNumber) {
-    this.orgIdentNumber = orgIdentNumber;
+  public Globdata totalcashrounding(Integer totalcashrounding) {
+    this.totalcashrounding = totalcashrounding;
     return this;
   }
 
    /**
-   * IČO [persistentní položka]
-   * @return orgIdentNumber
+   * zaok.celk.částky na hotov.výst.dokl.
+   * @return totalcashrounding
   **/
-  @ApiModelProperty(example = "null", value = "IČO [persistentní položka]")
-  public String getOrgIdentNumber() {
-    return orgIdentNumber;
+  @ApiModelProperty(example = "null", value = "zaok.celk.částky na hotov.výst.dokl.")
+  public Integer getTotalcashrounding() {
+    return totalcashrounding;
   }
 
-  public void setOrgIdentNumber(String orgIdentNumber) {
-    this.orgIdentNumber = orgIdentNumber;
+  public void setTotalcashrounding(Integer totalcashrounding) {
+    this.totalcashrounding = totalcashrounding;
   }
 
-  public Globdata vATIdentNumber(String vATIdentNumber) {
-    this.vATIdentNumber = vATIdentNumber;
+  public Globdata companyname(String companyname) {
+    this.companyname = companyname;
     return this;
   }
 
    /**
-   * DIČ [persistentní položka]
-   * @return vATIdentNumber
+   * lokální název firmy [persistentní položka]
+   * @return companyname
   **/
-  @ApiModelProperty(example = "null", value = "DIČ [persistentní položka]")
-  public String getVATIdentNumber() {
-    return vATIdentNumber;
+  @ApiModelProperty(example = "null", value = "lokální název firmy [persistentní položka]")
+  public String getCompanyname() {
+    return companyname;
   }
 
-  public void setVATIdentNumber(String vATIdentNumber) {
-    this.vATIdentNumber = vATIdentNumber;
+  public void setCompanyname(String companyname) {
+    this.companyname = companyname;
   }
 
-  public Globdata eORIIdentNumber(String eORIIdentNumber) {
-    this.eORIIdentNumber = eORIIdentNumber;
+  public Globdata legalform(String legalform) {
+    this.legalform = legalform;
     return this;
   }
 
    /**
-   * Číslo EORI [persistentní položka]
-   * @return eORIIdentNumber
+   * právní forma [persistentní položka]
+   * @return legalform
   **/
-  @ApiModelProperty(example = "null", value = "Číslo EORI [persistentní položka]")
-  public String getEORIIdentNumber() {
-    return eORIIdentNumber;
+  @ApiModelProperty(example = "null", value = "právní forma [persistentní položka]")
+  public String getLegalform() {
+    return legalform;
   }
 
-  public void setEORIIdentNumber(String eORIIdentNumber) {
-    this.eORIIdentNumber = eORIIdentNumber;
+  public void setLegalform(String legalform) {
+    this.legalform = legalform;
   }
 
-  public Globdata formulaCodeFirm(String formulaCodeFirm) {
-    this.formulaCodeFirm = formulaCodeFirm;
+  public Globdata subjectofenterprise(String subjectofenterprise) {
+    this.subjectofenterprise = subjectofenterprise;
     return this;
   }
 
    /**
-   * Předpis gen.kódu firmy [persistentní položka]
-   * @return formulaCodeFirm
+   * hlavní předmět podnikání [persistentní položka]
+   * @return subjectofenterprise
   **/
-  @ApiModelProperty(example = "null", value = "Předpis gen.kódu firmy [persistentní položka]")
-  public String getFormulaCodeFirm() {
-    return formulaCodeFirm;
+  @ApiModelProperty(example = "null", value = "hlavní předmět podnikání [persistentní položka]")
+  public String getSubjectofenterprise() {
+    return subjectofenterprise;
   }
 
-  public void setFormulaCodeFirm(String formulaCodeFirm) {
-    this.formulaCodeFirm = formulaCodeFirm;
+  public void setSubjectofenterprise(String subjectofenterprise) {
+    this.subjectofenterprise = subjectofenterprise;
   }
 
-  public Globdata formulaCodeStoreCard(String formulaCodeStoreCard) {
-    this.formulaCodeStoreCard = formulaCodeStoreCard;
+  public Globdata orgidentnumber(String orgidentnumber) {
+    this.orgidentnumber = orgidentnumber;
     return this;
   }
 
    /**
-   * Předpis gen.kódu skl.karty [persistentní položka]
-   * @return formulaCodeStoreCard
+   * iČo [persistentní položka]
+   * @return orgidentnumber
   **/
-  @ApiModelProperty(example = "null", value = "Předpis gen.kódu skl.karty [persistentní položka]")
-  public String getFormulaCodeStoreCard() {
-    return formulaCodeStoreCard;
+  @ApiModelProperty(example = "null", value = "iČo [persistentní položka]")
+  public String getOrgidentnumber() {
+    return orgidentnumber;
   }
 
-  public void setFormulaCodeStoreCard(String formulaCodeStoreCard) {
-    this.formulaCodeStoreCard = formulaCodeStoreCard;
+  public void setOrgidentnumber(String orgidentnumber) {
+    this.orgidentnumber = orgidentnumber;
   }
 
-  public Globdata adrKeysDefinitionsBlob(byte[] adrKeysDefinitionsBlob) {
-    this.adrKeysDefinitionsBlob = adrKeysDefinitionsBlob;
+  public Globdata vatidentnumber(String vatidentnumber) {
+    this.vatidentnumber = vatidentnumber;
     return this;
   }
 
    /**
-   * Definice klíčů v adresáři [persistentní položka]
-   * @return adrKeysDefinitionsBlob
+   * diČ [persistentní položka]
+   * @return vatidentnumber
   **/
-  @ApiModelProperty(example = "null", value = "Definice klíčů v adresáři [persistentní položka]")
-  public byte[] getAdrKeysDefinitionsBlob() {
-    return adrKeysDefinitionsBlob;
+  @ApiModelProperty(example = "null", value = "diČ [persistentní položka]")
+  public String getVatidentnumber() {
+    return vatidentnumber;
   }
 
-  public void setAdrKeysDefinitionsBlob(byte[] adrKeysDefinitionsBlob) {
-    this.adrKeysDefinitionsBlob = adrKeysDefinitionsBlob;
+  public void setVatidentnumber(String vatidentnumber) {
+    this.vatidentnumber = vatidentnumber;
   }
 
-  public Globdata isRegistered(Boolean isRegistered) {
-    this.isRegistered = isRegistered;
+  public Globdata eoriidentnumber(String eoriidentnumber) {
+    this.eoriidentnumber = eoriidentnumber;
     return this;
   }
 
    /**
-   * Registrace [persistentní položka]
-   * @return isRegistered
+   * Číslo eori [persistentní položka]
+   * @return eoriidentnumber
   **/
-  @ApiModelProperty(example = "null", value = "Registrace [persistentní položka]")
-  public Boolean getIsRegistered() {
-    return isRegistered;
+  @ApiModelProperty(example = "null", value = "Číslo eori [persistentní položka]")
+  public String getEoriidentnumber() {
+    return eoriidentnumber;
   }
 
-  public void setIsRegistered(Boolean isRegistered) {
-    this.isRegistered = isRegistered;
+  public void setEoriidentnumber(String eoriidentnumber) {
+    this.eoriidentnumber = eoriidentnumber;
   }
 
-  public Globdata registerFileRef(String registerFileRef) {
-    this.registerFileRef = registerFileRef;
+  public Globdata formulacodefirm(String formulacodefirm) {
+    this.formulacodefirm = formulacodefirm;
     return this;
   }
 
    /**
-   * Spis.zn.registrace [persistentní položka]
-   * @return registerFileRef
+   * předpis gen.kódu firmy [persistentní položka]
+   * @return formulacodefirm
   **/
-  @ApiModelProperty(example = "null", value = "Spis.zn.registrace [persistentní položka]")
-  public String getRegisterFileRef() {
-    return registerFileRef;
+  @ApiModelProperty(example = "null", value = "předpis gen.kódu firmy [persistentní položka]")
+  public String getFormulacodefirm() {
+    return formulacodefirm;
   }
 
-  public void setRegisterFileRef(String registerFileRef) {
-    this.registerFileRef = registerFileRef;
+  public void setFormulacodefirm(String formulacodefirm) {
+    this.formulacodefirm = formulacodefirm;
   }
 
-  public Globdata registerKeptAt(String registerKeptAt) {
-    this.registerKeptAt = registerKeptAt;
+  public Globdata formulacodestorecard(String formulacodestorecard) {
+    this.formulacodestorecard = formulacodestorecard;
     return this;
   }
 
    /**
-   * Registrace vedená u [persistentní položka]
-   * @return registerKeptAt
+   * předpis gen.kódu skl.karty [persistentní položka]
+   * @return formulacodestorecard
   **/
-  @ApiModelProperty(example = "null", value = "Registrace vedená u [persistentní položka]")
-  public String getRegisterKeptAt() {
-    return registerKeptAt;
+  @ApiModelProperty(example = "null", value = "předpis gen.kódu skl.karty [persistentní položka]")
+  public String getFormulacodestorecard() {
+    return formulacodestorecard;
   }
 
-  public void setRegisterKeptAt(String registerKeptAt) {
-    this.registerKeptAt = registerKeptAt;
+  public void setFormulacodestorecard(String formulacodestorecard) {
+    this.formulacodestorecard = formulacodestorecard;
   }
 
-  public Globdata registerDateDATE(DateTime registerDateDATE) {
-    this.registerDateDATE = registerDateDATE;
+  public Globdata adrkeysdefinitionsblob(byte[] adrkeysdefinitionsblob) {
+    this.adrkeysdefinitionsblob = adrkeysdefinitionsblob;
     return this;
   }
 
    /**
-   * Datum zápisu [persistentní položka]
-   * @return registerDateDATE
+   * definice klíčů v adresáři [persistentní položka]
+   * @return adrkeysdefinitionsblob
   **/
-  @ApiModelProperty(example = "null", value = "Datum zápisu [persistentní položka]")
-  public DateTime getRegisterDateDATE() {
-    return registerDateDATE;
+  @ApiModelProperty(example = "null", value = "definice klíčů v adresáři [persistentní položka]")
+  public byte[] getAdrkeysdefinitionsblob() {
+    return adrkeysdefinitionsblob;
   }
 
-  public void setRegisterDateDATE(DateTime registerDateDATE) {
-    this.registerDateDATE = registerDateDATE;
+  public void setAdrkeysdefinitionsblob(byte[] adrkeysdefinitionsblob) {
+    this.adrkeysdefinitionsblob = adrkeysdefinitionsblob;
   }
 
-  public Globdata docIssueLimit(Integer docIssueLimit) {
-    this.docIssueLimit = docIssueLimit;
+  public Globdata isregistered(Boolean isregistered) {
+    this.isregistered = isregistered;
     return this;
   }
 
    /**
-   * Limit pro doklady [persistentní položka]
-   * @return docIssueLimit
+   * registrace [persistentní položka]
+   * @return isregistered
   **/
-  @ApiModelProperty(example = "null", value = "Limit pro doklady [persistentní položka]")
-  public Integer getDocIssueLimit() {
-    return docIssueLimit;
+  @ApiModelProperty(example = "null", value = "registrace [persistentní položka]")
+  public Boolean getIsregistered() {
+    return isregistered;
   }
 
-  public void setDocIssueLimit(Integer docIssueLimit) {
-    this.docIssueLimit = docIssueLimit;
+  public void setIsregistered(Boolean isregistered) {
+    this.isregistered = isregistered;
   }
 
-  public Globdata reservationTerm(Integer reservationTerm) {
-    this.reservationTerm = reservationTerm;
+  public Globdata registerfileref(String registerfileref) {
+    this.registerfileref = registerfileref;
     return this;
   }
 
    /**
-   * Délka rezervace [persistentní položka]
-   * @return reservationTerm
+   * spis.zn.registrace [persistentní položka]
+   * @return registerfileref
   **/
-  @ApiModelProperty(example = "null", value = "Délka rezervace [persistentní položka]")
-  public Integer getReservationTerm() {
-    return reservationTerm;
+  @ApiModelProperty(example = "null", value = "spis.zn.registrace [persistentní položka]")
+  public String getRegisterfileref() {
+    return registerfileref;
   }
 
-  public void setReservationTerm(Integer reservationTerm) {
-    this.reservationTerm = reservationTerm;
+  public void setRegisterfileref(String registerfileref) {
+    this.registerfileref = registerfileref;
   }
 
-  public Globdata wWWAddress(String wWWAddress) {
-    this.wWWAddress = wWWAddress;
+  public Globdata registerkeptat(String registerkeptat) {
+    this.registerkeptat = registerkeptat;
     return this;
   }
 
    /**
-   * WWW adresa [persistentní položka]
-   * @return wWWAddress
+   * registrace vedená u [persistentní položka]
+   * @return registerkeptat
   **/
-  @ApiModelProperty(example = "null", value = "WWW adresa [persistentní položka]")
-  public String getWWWAddress() {
-    return wWWAddress;
+  @ApiModelProperty(example = "null", value = "registrace vedená u [persistentní položka]")
+  public String getRegisterkeptat() {
+    return registerkeptat;
   }
 
-  public void setWWWAddress(String wWWAddress) {
-    this.wWWAddress = wWWAddress;
+  public void setRegisterkeptat(String registerkeptat) {
+    this.registerkeptat = registerkeptat;
   }
 
-  public Globdata vATAllowance(Double vATAllowance) {
-    this.vATAllowance = vATAllowance;
+  public Globdata registerdatedate(DateTime registerdatedate) {
+    this.registerdatedate = registerdatedate;
     return this;
   }
 
    /**
-   * DPH tolerance [persistentní položka]
-   * @return vATAllowance
+   * datum zápisu [persistentní položka]
+   * @return registerdatedate
   **/
-  @ApiModelProperty(example = "null", value = "DPH tolerance [persistentní položka]")
-  public Double getVATAllowance() {
-    return vATAllowance;
+  @ApiModelProperty(example = "null", value = "datum zápisu [persistentní položka]")
+  public DateTime getRegisterdatedate() {
+    return registerdatedate;
   }
 
-  public void setVATAllowance(Double vATAllowance) {
-    this.vATAllowance = vATAllowance;
+  public void setRegisterdatedate(DateTime registerdatedate) {
+    this.registerdatedate = registerdatedate;
   }
 
-  public Globdata penaltyPercent(Double penaltyPercent) {
-    this.penaltyPercent = penaltyPercent;
+  public Globdata docissuelimit(Integer docissuelimit) {
+    this.docissuelimit = docissuelimit;
+    return this;
+  }
+
+   /**
+   * limit pro doklady [persistentní položka]
+   * @return docissuelimit
+  **/
+  @ApiModelProperty(example = "null", value = "limit pro doklady [persistentní položka]")
+  public Integer getDocissuelimit() {
+    return docissuelimit;
+  }
+
+  public void setDocissuelimit(Integer docissuelimit) {
+    this.docissuelimit = docissuelimit;
+  }
+
+  public Globdata reservationterm(Integer reservationterm) {
+    this.reservationterm = reservationterm;
+    return this;
+  }
+
+   /**
+   * délka rezervace [persistentní položka]
+   * @return reservationterm
+  **/
+  @ApiModelProperty(example = "null", value = "délka rezervace [persistentní položka]")
+  public Integer getReservationterm() {
+    return reservationterm;
+  }
+
+  public void setReservationterm(Integer reservationterm) {
+    this.reservationterm = reservationterm;
+  }
+
+  public Globdata wwwaddress(String wwwaddress) {
+    this.wwwaddress = wwwaddress;
+    return this;
+  }
+
+   /**
+   * www adresa [persistentní položka]
+   * @return wwwaddress
+  **/
+  @ApiModelProperty(example = "null", value = "www adresa [persistentní položka]")
+  public String getWwwaddress() {
+    return wwwaddress;
+  }
+
+  public void setWwwaddress(String wwwaddress) {
+    this.wwwaddress = wwwaddress;
+  }
+
+  public Globdata vatallowance(Double vatallowance) {
+    this.vatallowance = vatallowance;
+    return this;
+  }
+
+   /**
+   * dph tolerance [persistentní položka]
+   * @return vatallowance
+  **/
+  @ApiModelProperty(example = "null", value = "dph tolerance [persistentní položka]")
+  public Double getVatallowance() {
+    return vatallowance;
+  }
+
+  public void setVatallowance(Double vatallowance) {
+    this.vatallowance = vatallowance;
+  }
+
+  public Globdata penaltypercent(Double penaltypercent) {
+    this.penaltypercent = penaltypercent;
     return this;
   }
 
    /**
    * Úrok z prodlení [%] [persistentní položka]
-   * @return penaltyPercent
+   * @return penaltypercent
   **/
   @ApiModelProperty(example = "null", value = "Úrok z prodlení [%] [persistentní položka]")
-  public Double getPenaltyPercent() {
-    return penaltyPercent;
+  public Double getPenaltypercent() {
+    return penaltypercent;
   }
 
-  public void setPenaltyPercent(Double penaltyPercent) {
-    this.penaltyPercent = penaltyPercent;
+  public void setPenaltypercent(Double penaltypercent) {
+    this.penaltypercent = penaltypercent;
   }
 
-  public Globdata debitAfterDueDateAmount(Integer debitAfterDueDateAmount) {
-    this.debitAfterDueDateAmount = debitAfterDueDateAmount;
+  public Globdata debitafterduedateamount(Integer debitafterduedateamount) {
+    this.debitafterduedateamount = debitafterduedateamount;
     return this;
   }
 
    /**
-   * Toler.vystavení po splat.(částka) [persistentní položka]
-   * @return debitAfterDueDateAmount
+   * toler.vystavení po splat.(částka) [persistentní položka]
+   * @return debitafterduedateamount
   **/
-  @ApiModelProperty(example = "null", value = "Toler.vystavení po splat.(částka) [persistentní položka]")
-  public Integer getDebitAfterDueDateAmount() {
-    return debitAfterDueDateAmount;
+  @ApiModelProperty(example = "null", value = "toler.vystavení po splat.(částka) [persistentní položka]")
+  public Integer getDebitafterduedateamount() {
+    return debitafterduedateamount;
   }
 
-  public void setDebitAfterDueDateAmount(Integer debitAfterDueDateAmount) {
-    this.debitAfterDueDateAmount = debitAfterDueDateAmount;
+  public void setDebitafterduedateamount(Integer debitafterduedateamount) {
+    this.debitafterduedateamount = debitafterduedateamount;
   }
 
-  public Globdata formulaCodeBusOrder(String formulaCodeBusOrder) {
-    this.formulaCodeBusOrder = formulaCodeBusOrder;
+  public Globdata formulacodebusorder(String formulacodebusorder) {
+    this.formulacodebusorder = formulacodebusorder;
     return this;
   }
 
    /**
-   * Předpis gen.kódu zakázky [persistentní položka]
-   * @return formulaCodeBusOrder
+   * předpis gen.kódu zakázky [persistentní položka]
+   * @return formulacodebusorder
   **/
-  @ApiModelProperty(example = "null", value = "Předpis gen.kódu zakázky [persistentní položka]")
-  public String getFormulaCodeBusOrder() {
-    return formulaCodeBusOrder;
+  @ApiModelProperty(example = "null", value = "předpis gen.kódu zakázky [persistentní položka]")
+  public String getFormulacodebusorder() {
+    return formulacodebusorder;
   }
 
-  public void setFormulaCodeBusOrder(String formulaCodeBusOrder) {
-    this.formulaCodeBusOrder = formulaCodeBusOrder;
+  public void setFormulacodebusorder(String formulacodebusorder) {
+    this.formulacodebusorder = formulacodebusorder;
   }
 
-  public Globdata formulaCodeBusTransaction(String formulaCodeBusTransaction) {
-    this.formulaCodeBusTransaction = formulaCodeBusTransaction;
+  public Globdata formulacodebustransaction(String formulacodebustransaction) {
+    this.formulacodebustransaction = formulacodebustransaction;
     return this;
   }
 
    /**
-   * Předpis gen.kódu o.případu [persistentní položka]
-   * @return formulaCodeBusTransaction
+   * předpis gen.kódu o.případu [persistentní položka]
+   * @return formulacodebustransaction
   **/
-  @ApiModelProperty(example = "null", value = "Předpis gen.kódu o.případu [persistentní položka]")
-  public String getFormulaCodeBusTransaction() {
-    return formulaCodeBusTransaction;
+  @ApiModelProperty(example = "null", value = "předpis gen.kódu o.případu [persistentní položka]")
+  public String getFormulacodebustransaction() {
+    return formulacodebustransaction;
   }
 
-  public void setFormulaCodeBusTransaction(String formulaCodeBusTransaction) {
-    this.formulaCodeBusTransaction = formulaCodeBusTransaction;
+  public void setFormulacodebustransaction(String formulacodebustransaction) {
+    this.formulacodebustransaction = formulacodebustransaction;
   }
 
-  public Globdata intrastatInputStatisticID(String intrastatInputStatisticID) {
-    this.intrastatInputStatisticID = intrastatInputStatisticID;
+  public Globdata intrastatinputstatisticId(String intrastatinputstatisticId) {
+    this.intrastatinputstatisticId = intrastatinputstatisticId;
     return this;
   }
 
    /**
-   * Stat.hodnota na vstupu; ID objektu Definice statistické hodnoty na vstupu [persistentní položka]
-   * @return intrastatInputStatisticID
+   * stat.hodnota na vstupu; id objektu definice statistické hodnoty na vstupu [persistentní položka]
+   * @return intrastatinputstatisticId
   **/
-  @ApiModelProperty(example = "null", value = "Stat.hodnota na vstupu; ID objektu Definice statistické hodnoty na vstupu [persistentní položka]")
-  public String getIntrastatInputStatisticID() {
-    return intrastatInputStatisticID;
+  @ApiModelProperty(example = "null", value = "stat.hodnota na vstupu; id objektu definice statistické hodnoty na vstupu [persistentní položka]")
+  public String getIntrastatinputstatisticId() {
+    return intrastatinputstatisticId;
   }
 
-  public void setIntrastatInputStatisticID(String intrastatInputStatisticID) {
-    this.intrastatInputStatisticID = intrastatInputStatisticID;
+  public void setIntrastatinputstatisticId(String intrastatinputstatisticId) {
+    this.intrastatinputstatisticId = intrastatinputstatisticId;
   }
 
-  public Globdata intrastatOutputStatisticID(String intrastatOutputStatisticID) {
-    this.intrastatOutputStatisticID = intrastatOutputStatisticID;
+  public Globdata intrastatoutputstatisticId(String intrastatoutputstatisticId) {
+    this.intrastatoutputstatisticId = intrastatoutputstatisticId;
     return this;
   }
 
    /**
-   * Stat.hodnota na výstupu; ID objektu Definice statistické hodnoty na výstupu [persistentní položka]
-   * @return intrastatOutputStatisticID
+   * stat.hodnota na výstupu; id objektu definice statistické hodnoty na výstupu [persistentní položka]
+   * @return intrastatoutputstatisticId
   **/
-  @ApiModelProperty(example = "null", value = "Stat.hodnota na výstupu; ID objektu Definice statistické hodnoty na výstupu [persistentní položka]")
-  public String getIntrastatOutputStatisticID() {
-    return intrastatOutputStatisticID;
+  @ApiModelProperty(example = "null", value = "stat.hodnota na výstupu; id objektu definice statistické hodnoty na výstupu [persistentní položka]")
+  public String getIntrastatoutputstatisticId() {
+    return intrastatoutputstatisticId;
   }
 
-  public void setIntrastatOutputStatisticID(String intrastatOutputStatisticID) {
-    this.intrastatOutputStatisticID = intrastatOutputStatisticID;
+  public void setIntrastatoutputstatisticId(String intrastatoutputstatisticId) {
+    this.intrastatoutputstatisticId = intrastatoutputstatisticId;
   }
 
-  public Globdata intrastatRegionID(String intrastatRegionID) {
-    this.intrastatRegionID = intrastatRegionID;
+  public Globdata intrastatregionId(String intrastatregionId) {
+    this.intrastatregionId = intrastatregionId;
     return this;
   }
 
    /**
-   * Kraj původu; ID objektu Kraj [persistentní položka]
-   * @return intrastatRegionID
+   * kraj původu; id objektu kraj [persistentní položka]
+   * @return intrastatregionId
   **/
-  @ApiModelProperty(example = "null", value = "Kraj původu; ID objektu Kraj [persistentní položka]")
-  public String getIntrastatRegionID() {
-    return intrastatRegionID;
+  @ApiModelProperty(example = "null", value = "kraj původu; id objektu kraj [persistentní položka]")
+  public String getIntrastatregionId() {
+    return intrastatregionId;
   }
 
-  public void setIntrastatRegionID(String intrastatRegionID) {
-    this.intrastatRegionID = intrastatRegionID;
+  public void setIntrastatregionId(String intrastatregionId) {
+    this.intrastatregionId = intrastatregionId;
   }
 
-  public Globdata organisationType(Integer organisationType) {
-    this.organisationType = organisationType;
+  public Globdata organisationtype(Integer organisationtype) {
+    this.organisationtype = organisationtype;
     return this;
   }
 
    /**
-   * Typ organizace [persistentní položka]
-   * @return organisationType
+   * typ organizace [persistentní položka]
+   * @return organisationtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ organizace [persistentní položka]")
-  public Integer getOrganisationType() {
-    return organisationType;
+  @ApiModelProperty(example = "null", value = "typ organizace [persistentní položka]")
+  public Integer getOrganisationtype() {
+    return organisationtype;
   }
 
-  public void setOrganisationType(Integer organisationType) {
-    this.organisationType = organisationType;
+  public void setOrganisationtype(Integer organisationtype) {
+    this.organisationtype = organisationtype;
   }
 
-  public Globdata districtID(String districtID) {
-    this.districtID = districtID;
+  public Globdata districtId(String districtId) {
+    this.districtId = districtId;
     return this;
   }
 
    /**
-   * Okres (NUTS4); ID objektu Okres [persistentní položka]
-   * @return districtID
+   * okres (nuts4); id objektu okres [persistentní položka]
+   * @return districtId
   **/
-  @ApiModelProperty(example = "null", value = "Okres (NUTS4); ID objektu Okres [persistentní položka]")
-  public String getDistrictID() {
-    return districtID;
+  @ApiModelProperty(example = "null", value = "okres (nuts4); id objektu okres [persistentní položka]")
+  public String getDistrictId() {
+    return districtId;
   }
 
-  public void setDistrictID(String districtID) {
-    this.districtID = districtID;
+  public void setDistrictId(String districtId) {
+    this.districtId = districtId;
   }
 
-  public Globdata afterDueTerm(Integer afterDueTerm) {
-    this.afterDueTerm = afterDueTerm;
+  public Globdata afterdueterm(Integer afterdueterm) {
+    this.afterdueterm = afterdueterm;
     return this;
   }
 
    /**
-   * Toler.vystavení po splat.(dny) [persistentní položka]
-   * @return afterDueTerm
+   * toler.vystavení po splat.(dny) [persistentní položka]
+   * @return afterdueterm
   **/
-  @ApiModelProperty(example = "null", value = "Toler.vystavení po splat.(dny) [persistentní položka]")
-  public Integer getAfterDueTerm() {
-    return afterDueTerm;
+  @ApiModelProperty(example = "null", value = "toler.vystavení po splat.(dny) [persistentní položka]")
+  public Integer getAfterdueterm() {
+    return afterdueterm;
   }
 
-  public void setAfterDueTerm(Integer afterDueTerm) {
-    this.afterDueTerm = afterDueTerm;
+  public void setAfterdueterm(Integer afterdueterm) {
+    this.afterdueterm = afterdueterm;
   }
 
-  public Globdata rowIndexInterval(Integer rowIndexInterval) {
-    this.rowIndexInterval = rowIndexInterval;
+  public Globdata rowindexinterval(Integer rowindexinterval) {
+    this.rowindexinterval = rowindexinterval;
     return this;
   }
 
    /**
-   * Interval číslování řádků [persistentní položka]
-   * @return rowIndexInterval
+   * interval číslování řádků [persistentní položka]
+   * @return rowindexinterval
   **/
-  @ApiModelProperty(example = "null", value = "Interval číslování řádků [persistentní položka]")
-  public Integer getRowIndexInterval() {
-    return rowIndexInterval;
+  @ApiModelProperty(example = "null", value = "interval číslování řádků [persistentní položka]")
+  public Integer getRowindexinterval() {
+    return rowindexinterval;
   }
 
-  public void setRowIndexInterval(Integer rowIndexInterval) {
-    this.rowIndexInterval = rowIndexInterval;
+  public void setRowindexinterval(Integer rowindexinterval) {
+    this.rowindexinterval = rowindexinterval;
   }
 
-  public Globdata smallArticlesAmount(Double smallArticlesAmount) {
-    this.smallArticlesAmount = smallArticlesAmount;
+  public Globdata smallarticlesamount(Double smallarticlesamount) {
+    this.smallarticlesamount = smallarticlesamount;
     return this;
   }
 
    /**
    * Částka pro malé zásilky [persistentní položka]
-   * @return smallArticlesAmount
+   * @return smallarticlesamount
   **/
   @ApiModelProperty(example = "null", value = "Částka pro malé zásilky [persistentní položka]")
-  public Double getSmallArticlesAmount() {
-    return smallArticlesAmount;
+  public Double getSmallarticlesamount() {
+    return smallarticlesamount;
   }
 
-  public void setSmallArticlesAmount(Double smallArticlesAmount) {
-    this.smallArticlesAmount = smallArticlesAmount;
+  public void setSmallarticlesamount(Double smallarticlesamount) {
+    this.smallarticlesamount = smallarticlesamount;
   }
 
-  public Globdata smallArticlesID(String smallArticlesID) {
-    this.smallArticlesID = smallArticlesID;
+  public Globdata smallarticlesId(String smallarticlesId) {
+    this.smallarticlesId = smallarticlesId;
     return this;
   }
 
    /**
-   * Nomenklatura pro malé zásilky; ID objektu Kombinovaná nomenklatura [persistentní položka]
-   * @return smallArticlesID
+   * nomenklatura pro malé zásilky; id objektu kombinovaná nomenklatura [persistentní položka]
+   * @return smallarticlesId
   **/
-  @ApiModelProperty(example = "null", value = "Nomenklatura pro malé zásilky; ID objektu Kombinovaná nomenklatura [persistentní položka]")
-  public String getSmallArticlesID() {
-    return smallArticlesID;
+  @ApiModelProperty(example = "null", value = "nomenklatura pro malé zásilky; id objektu kombinovaná nomenklatura [persistentní položka]")
+  public String getSmallarticlesId() {
+    return smallarticlesId;
   }
 
-  public void setSmallArticlesID(String smallArticlesID) {
-    this.smallArticlesID = smallArticlesID;
+  public void setSmallarticlesId(String smallarticlesId) {
+    this.smallarticlesId = smallarticlesId;
   }
 
-  public Globdata smallArticlesExtraTypeID(String smallArticlesExtraTypeID) {
-    this.smallArticlesExtraTypeID = smallArticlesExtraTypeID;
+  public Globdata smallarticlesextratypeId(String smallarticlesextratypeId) {
+    this.smallarticlesextratypeId = smallarticlesextratypeId;
     return this;
   }
 
    /**
-   * Zvláštní pohyb pro malé zásilky; ID objektu Zvláštní pohyb [persistentní položka]
-   * @return smallArticlesExtraTypeID
+   * zvláštní pohyb pro malé zásilky; id objektu zvláštní pohyb [persistentní položka]
+   * @return smallarticlesextratypeId
   **/
-  @ApiModelProperty(example = "null", value = "Zvláštní pohyb pro malé zásilky; ID objektu Zvláštní pohyb [persistentní položka]")
-  public String getSmallArticlesExtraTypeID() {
-    return smallArticlesExtraTypeID;
+  @ApiModelProperty(example = "null", value = "zvláštní pohyb pro malé zásilky; id objektu zvláštní pohyb [persistentní položka]")
+  public String getSmallarticlesextratypeId() {
+    return smallarticlesextratypeId;
   }
 
-  public void setSmallArticlesExtraTypeID(String smallArticlesExtraTypeID) {
-    this.smallArticlesExtraTypeID = smallArticlesExtraTypeID;
+  public void setSmallarticlesextratypeId(String smallarticlesextratypeId) {
+    this.smallarticlesextratypeId = smallarticlesextratypeId;
   }
 
-  public Globdata smallArticlesCurrencyID(String smallArticlesCurrencyID) {
-    this.smallArticlesCurrencyID = smallArticlesCurrencyID;
+  public Globdata smallarticlescurrencyId(String smallarticlescurrencyId) {
+    this.smallarticlescurrencyId = smallarticlescurrencyId;
     return this;
   }
 
    /**
-   * Měna částky pro malé zásilky; ID objektu Měna [persistentní položka]
-   * @return smallArticlesCurrencyID
+   * měna částky pro malé zásilky; id objektu měna [persistentní položka]
+   * @return smallarticlescurrencyId
   **/
-  @ApiModelProperty(example = "null", value = "Měna částky pro malé zásilky; ID objektu Měna [persistentní položka]")
-  public String getSmallArticlesCurrencyID() {
-    return smallArticlesCurrencyID;
+  @ApiModelProperty(example = "null", value = "měna částky pro malé zásilky; id objektu měna [persistentní položka]")
+  public String getSmallarticlescurrencyId() {
+    return smallarticlescurrencyId;
   }
 
-  public void setSmallArticlesCurrencyID(String smallArticlesCurrencyID) {
-    this.smallArticlesCurrencyID = smallArticlesCurrencyID;
+  public void setSmallarticlescurrencyId(String smallarticlescurrencyId) {
+    this.smallarticlescurrencyId = smallarticlescurrencyId;
   }
 
-  public Globdata formulaCodeBusProject(String formulaCodeBusProject) {
-    this.formulaCodeBusProject = formulaCodeBusProject;
+  public Globdata formulacodebusproject(String formulacodebusproject) {
+    this.formulacodebusproject = formulacodebusproject;
     return this;
   }
 
    /**
-   * Předpis gen.kódu projektu [persistentní položka]
-   * @return formulaCodeBusProject
+   * předpis gen.kódu projektu [persistentní položka]
+   * @return formulacodebusproject
   **/
-  @ApiModelProperty(example = "null", value = "Předpis gen.kódu projektu [persistentní položka]")
-  public String getFormulaCodeBusProject() {
-    return formulaCodeBusProject;
+  @ApiModelProperty(example = "null", value = "předpis gen.kódu projektu [persistentní položka]")
+  public String getFormulacodebusproject() {
+    return formulacodebusproject;
   }
 
-  public void setFormulaCodeBusProject(String formulaCodeBusProject) {
-    this.formulaCodeBusProject = formulaCodeBusProject;
+  public void setFormulacodebusproject(String formulacodebusproject) {
+    this.formulacodebusproject = formulacodebusproject;
   }
 
-  public Globdata globParams(byte[] globParams) {
-    this.globParams = globParams;
+  public Globdata globparams(byte[] globparams) {
+    this.globparams = globparams;
     return this;
   }
 
    /**
-   * Globální parametry [persistentní položka]
-   * @return globParams
+   * globální parametry [persistentní položka]
+   * @return globparams
   **/
-  @ApiModelProperty(example = "null", value = "Globální parametry [persistentní položka]")
-  public byte[] getGlobParams() {
-    return globParams;
+  @ApiModelProperty(example = "null", value = "globální parametry [persistentní položka]")
+  public byte[] getGlobparams() {
+    return globparams;
   }
 
-  public void setGlobParams(byte[] globParams) {
-    this.globParams = globParams;
+  public void setGlobparams(byte[] globparams) {
+    this.globparams = globparams;
   }
 
-  public Globdata deliveryTerm(Integer deliveryTerm) {
-    this.deliveryTerm = deliveryTerm;
+  public Globdata deliveryterm(Integer deliveryterm) {
+    this.deliveryterm = deliveryterm;
     return this;
   }
 
    /**
-   * Délka dodání [persistentní položka]
-   * @return deliveryTerm
+   * délka dodání [persistentní položka]
+   * @return deliveryterm
   **/
-  @ApiModelProperty(example = "null", value = "Délka dodání [persistentní položka]")
-  public Integer getDeliveryTerm() {
-    return deliveryTerm;
+  @ApiModelProperty(example = "null", value = "délka dodání [persistentní položka]")
+  public Integer getDeliveryterm() {
+    return deliveryterm;
   }
 
-  public void setDeliveryTerm(Integer deliveryTerm) {
-    this.deliveryTerm = deliveryTerm;
+  public void setDeliveryterm(Integer deliveryterm) {
+    this.deliveryterm = deliveryterm;
   }
 
-  public Globdata validTillTerm(Integer validTillTerm) {
-    this.validTillTerm = validTillTerm;
+  public Globdata validtillterm(Integer validtillterm) {
+    this.validtillterm = validtillterm;
     return this;
   }
 
    /**
-   * Délka platnosti nabídky [persistentní položka]
-   * @return validTillTerm
+   * délka platnosti nabídky [persistentní položka]
+   * @return validtillterm
   **/
-  @ApiModelProperty(example = "null", value = "Délka platnosti nabídky [persistentní položka]")
-  public Integer getValidTillTerm() {
-    return validTillTerm;
+  @ApiModelProperty(example = "null", value = "délka platnosti nabídky [persistentní položka]")
+  public Integer getValidtillterm() {
+    return validtillterm;
   }
 
-  public void setValidTillTerm(Integer validTillTerm) {
-    this.validTillTerm = validTillTerm;
+  public void setValidtillterm(Integer validtillterm) {
+    this.validtillterm = validtillterm;
   }
 
-  public Globdata unitNumber(String unitNumber) {
-    this.unitNumber = unitNumber;
+  public Globdata unitnumber(String unitnumber) {
+    this.unitnumber = unitnumber;
     return this;
   }
 
    /**
-   * PČJ [persistentní položka]
-   * @return unitNumber
+   * pČj [persistentní položka]
+   * @return unitnumber
   **/
-  @ApiModelProperty(example = "null", value = "PČJ [persistentní položka]")
-  public String getUnitNumber() {
-    return unitNumber;
+  @ApiModelProperty(example = "null", value = "pČj [persistentní položka]")
+  public String getUnitnumber() {
+    return unitnumber;
   }
 
-  public void setUnitNumber(String unitNumber) {
-    this.unitNumber = unitNumber;
+  public void setUnitnumber(String unitnumber) {
+    this.unitnumber = unitnumber;
   }
 
-  public Globdata LOGO(byte[] LOGO) {
-    this.LOGO = LOGO;
+  public Globdata logo(byte[] logo) {
+    this.logo = logo;
     return this;
   }
 
    /**
-   * Logo [persistentní položka]
-   * @return LOGO
+   * logo [persistentní položka]
+   * @return logo
   **/
-  @ApiModelProperty(example = "null", value = "Logo [persistentní položka]")
-  public byte[] getLOGO() {
-    return LOGO;
+  @ApiModelProperty(example = "null", value = "logo [persistentní položka]")
+  public byte[] getLogo() {
+    return logo;
   }
 
-  public void setLOGO(byte[] LOGO) {
-    this.LOGO = LOGO;
+  public void setLogo(byte[] logo) {
+    this.logo = logo;
   }
 
-  public Globdata tAXIdentNumber(String tAXIdentNumber) {
-    this.tAXIdentNumber = tAXIdentNumber;
+  public Globdata taxidentnumber(String taxidentnumber) {
+    this.taxidentnumber = taxidentnumber;
     return this;
   }
 
    /**
-   * IČD [persistentní položka]
-   * @return tAXIdentNumber
+   * iČd [persistentní položka]
+   * @return taxidentnumber
   **/
-  @ApiModelProperty(example = "null", value = "IČD [persistentní položka]")
-  public String getTAXIdentNumber() {
-    return tAXIdentNumber;
+  @ApiModelProperty(example = "null", value = "iČd [persistentní položka]")
+  public String getTaxidentnumber() {
+    return taxidentnumber;
   }
 
-  public void setTAXIdentNumber(String tAXIdentNumber) {
-    this.tAXIdentNumber = tAXIdentNumber;
+  public void setTaxidentnumber(String taxidentnumber) {
+    this.taxidentnumber = taxidentnumber;
   }
 
-  public Globdata vATRegs(List<Globdatavatreg> vATRegs) {
-    this.vATRegs = vATRegs;
+  public Globdata vatregs(List<Globdatavatreg> vatregs) {
+    this.vatregs = vatregs;
     return this;
   }
 
-  public Globdata addVATRegsItem(Globdatavatreg vATRegsItem) {
-    this.vATRegs.add(vATRegsItem);
-    return this;
-  }
-
-   /**
-   * DPH registrace; kolekce BO DPH registrace vlastní firmy [nepersistentní položka]
-   * @return vATRegs
-  **/
-  @ApiModelProperty(example = "null", value = "DPH registrace; kolekce BO DPH registrace vlastní firmy [nepersistentní položka]")
-  public List<Globdatavatreg> getVATRegs() {
-    return vATRegs;
-  }
-
-  public void setVATRegs(List<Globdatavatreg> vATRegs) {
-    this.vATRegs = vATRegs;
-  }
-
-  public Globdata firstVATIdentDateOfChange(DateTime firstVATIdentDateOfChange) {
-    this.firstVATIdentDateOfChange = firstVATIdentDateOfChange;
+  public Globdata addVatregsItem(Globdatavatreg vatregsItem) {
+    this.vatregs.add(vatregsItem);
     return this;
   }
 
    /**
-   * Datum registrace
-   * @return firstVATIdentDateOfChange
+   * dph registrace; kolekce bo dph registrace vlastní firmy [nepersistentní položka]
+   * @return vatregs
   **/
-  @ApiModelProperty(example = "null", value = "Datum registrace")
-  public DateTime getFirstVATIdentDateOfChange() {
-    return firstVATIdentDateOfChange;
+  @ApiModelProperty(example = "null", value = "dph registrace; kolekce bo dph registrace vlastní firmy [nepersistentní položka]")
+  public List<Globdatavatreg> getVatregs() {
+    return vatregs;
   }
 
-  public void setFirstVATIdentDateOfChange(DateTime firstVATIdentDateOfChange) {
-    this.firstVATIdentDateOfChange = firstVATIdentDateOfChange;
+  public void setVatregs(List<Globdatavatreg> vatregs) {
+    this.vatregs = vatregs;
   }
 
-  public Globdata wSKernelInitPackage(String wSKernelInitPackage) {
-    this.wSKernelInitPackage = wSKernelInitPackage;
+  public Globdata firstvatidentdateofchange(DateTime firstvatidentdateofchange) {
+    this.firstvatidentdateofchange = firstvatidentdateofchange;
     return this;
   }
 
    /**
-   * Inicializační balíček kernelu [persistentní položka]
-   * @return wSKernelInitPackage
+   * datum registrace
+   * @return firstvatidentdateofchange
   **/
-  @ApiModelProperty(example = "null", value = "Inicializační balíček kernelu [persistentní položka]")
-  public String getWSKernelInitPackage() {
-    return wSKernelInitPackage;
+  @ApiModelProperty(example = "null", value = "datum registrace")
+  public DateTime getFirstvatidentdateofchange() {
+    return firstvatidentdateofchange;
   }
 
-  public void setWSKernelInitPackage(String wSKernelInitPackage) {
-    this.wSKernelInitPackage = wSKernelInitPackage;
+  public void setFirstvatidentdateofchange(DateTime firstvatidentdateofchange) {
+    this.firstvatidentdateofchange = firstvatidentdateofchange;
   }
 
-  public Globdata wSKernelInitLibrary(String wSKernelInitLibrary) {
-    this.wSKernelInitLibrary = wSKernelInitLibrary;
+  public Globdata wskernelinitpackage(String wskernelinitpackage) {
+    this.wskernelinitpackage = wskernelinitpackage;
     return this;
   }
 
    /**
-   * Inicializační knihovna kernelu [persistentní položka]
-   * @return wSKernelInitLibrary
+   * inicializační balíček kernelu [persistentní položka]
+   * @return wskernelinitpackage
   **/
-  @ApiModelProperty(example = "null", value = "Inicializační knihovna kernelu [persistentní položka]")
-  public String getWSKernelInitLibrary() {
-    return wSKernelInitLibrary;
+  @ApiModelProperty(example = "null", value = "inicializační balíček kernelu [persistentní položka]")
+  public String getWskernelinitpackage() {
+    return wskernelinitpackage;
   }
 
-  public void setWSKernelInitLibrary(String wSKernelInitLibrary) {
-    this.wSKernelInitLibrary = wSKernelInitLibrary;
+  public void setWskernelinitpackage(String wskernelinitpackage) {
+    this.wskernelinitpackage = wskernelinitpackage;
   }
 
-  public Globdata wSKernelInitFunction(String wSKernelInitFunction) {
-    this.wSKernelInitFunction = wSKernelInitFunction;
+  public Globdata wskernelinitlibrary(String wskernelinitlibrary) {
+    this.wskernelinitlibrary = wskernelinitlibrary;
     return this;
   }
 
    /**
-   * Inicializační funkce kernelu [persistentní položka]
-   * @return wSKernelInitFunction
+   * inicializační knihovna kernelu [persistentní položka]
+   * @return wskernelinitlibrary
   **/
-  @ApiModelProperty(example = "null", value = "Inicializační funkce kernelu [persistentní položka]")
-  public String getWSKernelInitFunction() {
-    return wSKernelInitFunction;
+  @ApiModelProperty(example = "null", value = "inicializační knihovna kernelu [persistentní položka]")
+  public String getWskernelinitlibrary() {
+    return wskernelinitlibrary;
   }
 
-  public void setWSKernelInitFunction(String wSKernelInitFunction) {
-    this.wSKernelInitFunction = wSKernelInitFunction;
+  public void setWskernelinitlibrary(String wskernelinitlibrary) {
+    this.wskernelinitlibrary = wskernelinitlibrary;
   }
 
-  public Globdata firmNamePrefillByPersonExpr(String firmNamePrefillByPersonExpr) {
-    this.firmNamePrefillByPersonExpr = firmNamePrefillByPersonExpr;
+  public Globdata wskernelinitfunction(String wskernelinitfunction) {
+    this.wskernelinitfunction = wskernelinitfunction;
     return this;
   }
 
    /**
-   * Výraz pro předvyplnění názvu firmy [persistentní položka]
-   * @return firmNamePrefillByPersonExpr
+   * inicializační funkce kernelu [persistentní položka]
+   * @return wskernelinitfunction
   **/
-  @ApiModelProperty(example = "null", value = "Výraz pro předvyplnění názvu firmy [persistentní položka]")
-  public String getFirmNamePrefillByPersonExpr() {
-    return firmNamePrefillByPersonExpr;
+  @ApiModelProperty(example = "null", value = "inicializační funkce kernelu [persistentní položka]")
+  public String getWskernelinitfunction() {
+    return wskernelinitfunction;
   }
 
-  public void setFirmNamePrefillByPersonExpr(String firmNamePrefillByPersonExpr) {
-    this.firmNamePrefillByPersonExpr = firmNamePrefillByPersonExpr;
+  public void setWskernelinitfunction(String wskernelinitfunction) {
+    this.wskernelinitfunction = wskernelinitfunction;
   }
 
-  public Globdata financialBureau(String financialBureau) {
-    this.financialBureau = financialBureau;
+  public Globdata firmnameprefillbypersonexpr(String firmnameprefillbypersonexpr) {
+    this.firmnameprefillbypersonexpr = firmnameprefillbypersonexpr;
     return this;
   }
 
    /**
-   * Finanční úřad v,ve,pro [persistentní položka]
-   * @return financialBureau
+   * výraz pro předvyplnění názvu firmy [persistentní položka]
+   * @return firmnameprefillbypersonexpr
   **/
-  @ApiModelProperty(example = "null", value = "Finanční úřad v,ve,pro [persistentní položka]")
-  public String getFinancialBureau() {
-    return financialBureau;
+  @ApiModelProperty(example = "null", value = "výraz pro předvyplnění názvu firmy [persistentní položka]")
+  public String getFirmnameprefillbypersonexpr() {
+    return firmnameprefillbypersonexpr;
   }
 
-  public void setFinancialBureau(String financialBureau) {
-    this.financialBureau = financialBureau;
+  public void setFirmnameprefillbypersonexpr(String firmnameprefillbypersonexpr) {
+    this.firmnameprefillbypersonexpr = firmnameprefillbypersonexpr;
   }
 
-  public Globdata financialBureauCode(String financialBureauCode) {
-    this.financialBureauCode = financialBureauCode;
+  public Globdata financialbureau(String financialbureau) {
+    this.financialbureau = financialbureau;
+    return this;
+  }
+
+   /**
+   * finanční úřad v,ve,pro [persistentní položka]
+   * @return financialbureau
+  **/
+  @ApiModelProperty(example = "null", value = "finanční úřad v,ve,pro [persistentní položka]")
+  public String getFinancialbureau() {
+    return financialbureau;
+  }
+
+  public void setFinancialbureau(String financialbureau) {
+    this.financialbureau = financialbureau;
+  }
+
+  public Globdata financialbureaucode(String financialbureaucode) {
+    this.financialbureaucode = financialbureaucode;
     return this;
   }
 
    /**
    * Číslo místně přísl. fin. úřadu [persistentní položka]
-   * @return financialBureauCode
+   * @return financialbureaucode
   **/
   @ApiModelProperty(example = "null", value = "Číslo místně přísl. fin. úřadu [persistentní položka]")
-  public String getFinancialBureauCode() {
-    return financialBureauCode;
+  public String getFinancialbureaucode() {
+    return financialbureaucode;
   }
 
-  public void setFinancialBureauCode(String financialBureauCode) {
-    this.financialBureauCode = financialBureauCode;
+  public void setFinancialbureaucode(String financialbureaucode) {
+    this.financialbureaucode = financialbureaucode;
   }
 
-  public Globdata regionalOffice(String regionalOffice) {
-    this.regionalOffice = regionalOffice;
+  public Globdata regionaloffice(String regionaloffice) {
+    this.regionaloffice = regionaloffice;
     return this;
   }
 
    /**
    * Územní pracoviště v,ve,pro [persistentní položka]
-   * @return regionalOffice
+   * @return regionaloffice
   **/
   @ApiModelProperty(example = "null", value = "Územní pracoviště v,ve,pro [persistentní položka]")
-  public String getRegionalOffice() {
-    return regionalOffice;
+  public String getRegionaloffice() {
+    return regionaloffice;
   }
 
-  public void setRegionalOffice(String regionalOffice) {
-    this.regionalOffice = regionalOffice;
+  public void setRegionaloffice(String regionaloffice) {
+    this.regionaloffice = regionaloffice;
   }
 
-  public Globdata regionalOfficeCode(String regionalOfficeCode) {
-    this.regionalOfficeCode = regionalOfficeCode;
+  public Globdata regionalofficecode(String regionalofficecode) {
+    this.regionalofficecode = regionalofficecode;
     return this;
   }
 
    /**
    * Číslo územního pracoviště [persistentní položka]
-   * @return regionalOfficeCode
+   * @return regionalofficecode
   **/
   @ApiModelProperty(example = "null", value = "Číslo územního pracoviště [persistentní položka]")
-  public String getRegionalOfficeCode() {
-    return regionalOfficeCode;
+  public String getRegionalofficecode() {
+    return regionalofficecode;
   }
 
-  public void setRegionalOfficeCode(String regionalOfficeCode) {
-    this.regionalOfficeCode = regionalOfficeCode;
+  public void setRegionalofficecode(String regionalofficecode) {
+    this.regionalofficecode = regionalofficecode;
   }
 
-  public Globdata companyLegalEntity(Integer companyLegalEntity) {
-    this.companyLegalEntity = companyLegalEntity;
+  public Globdata companylegalentity(Integer companylegalentity) {
+    this.companylegalentity = companylegalentity;
     return this;
   }
 
    /**
-   * Právní forma [persistentní položka]
-   * @return companyLegalEntity
+   * právní forma [persistentní položka]
+   * @return companylegalentity
   **/
-  @ApiModelProperty(example = "null", value = "Právní forma [persistentní položka]")
-  public Integer getCompanyLegalEntity() {
-    return companyLegalEntity;
+  @ApiModelProperty(example = "null", value = "právní forma [persistentní položka]")
+  public Integer getCompanylegalentity() {
+    return companylegalentity;
   }
 
-  public void setCompanyLegalEntity(Integer companyLegalEntity) {
-    this.companyLegalEntity = companyLegalEntity;
+  public void setCompanylegalentity(Integer companylegalentity) {
+    this.companylegalentity = companylegalentity;
   }
 
-  public Globdata nPForename(String nPForename) {
-    this.nPForename = nPForename;
+  public Globdata npforename(String npforename) {
+    this.npforename = npforename;
     return this;
   }
 
    /**
-   * FO - jméno [persistentní položka]
-   * @return nPForename
+   * fo - jméno [persistentní položka]
+   * @return npforename
   **/
-  @ApiModelProperty(example = "null", value = "FO - jméno [persistentní položka]")
-  public String getNPForename() {
-    return nPForename;
+  @ApiModelProperty(example = "null", value = "fo - jméno [persistentní položka]")
+  public String getNpforename() {
+    return npforename;
   }
 
-  public void setNPForename(String nPForename) {
-    this.nPForename = nPForename;
+  public void setNpforename(String npforename) {
+    this.npforename = npforename;
   }
 
-  public Globdata nPSurname(String nPSurname) {
-    this.nPSurname = nPSurname;
+  public Globdata npsurname(String npsurname) {
+    this.npsurname = npsurname;
     return this;
   }
 
    /**
-   * FO - příjmení [persistentní položka]
-   * @return nPSurname
+   * fo - příjmení [persistentní položka]
+   * @return npsurname
   **/
-  @ApiModelProperty(example = "null", value = "FO - příjmení [persistentní položka]")
-  public String getNPSurname() {
-    return nPSurname;
+  @ApiModelProperty(example = "null", value = "fo - příjmení [persistentní položka]")
+  public String getNpsurname() {
+    return npsurname;
   }
 
-  public void setNPSurname(String nPSurname) {
-    this.nPSurname = nPSurname;
+  public void setNpsurname(String npsurname) {
+    this.npsurname = npsurname;
   }
 
-  public Globdata nPTitle(String nPTitle) {
-    this.nPTitle = nPTitle;
+  public Globdata nptitle(String nptitle) {
+    this.nptitle = nptitle;
     return this;
   }
 
    /**
-   * FO - titul před jménem [persistentní položka]
-   * @return nPTitle
+   * fo - titul před jménem [persistentní položka]
+   * @return nptitle
   **/
-  @ApiModelProperty(example = "null", value = "FO - titul před jménem [persistentní položka]")
-  public String getNPTitle() {
-    return nPTitle;
+  @ApiModelProperty(example = "null", value = "fo - titul před jménem [persistentní položka]")
+  public String getNptitle() {
+    return nptitle;
   }
 
-  public void setNPTitle(String nPTitle) {
-    this.nPTitle = nPTitle;
+  public void setNptitle(String nptitle) {
+    this.nptitle = nptitle;
   }
 
-  public Globdata nPSuffix(String nPSuffix) {
-    this.nPSuffix = nPSuffix;
+  public Globdata npsuffix(String npsuffix) {
+    this.npsuffix = npsuffix;
     return this;
   }
 
    /**
-   * FO - titul za jménem [persistentní položka]
-   * @return nPSuffix
+   * fo - titul za jménem [persistentní položka]
+   * @return npsuffix
   **/
-  @ApiModelProperty(example = "null", value = "FO - titul za jménem [persistentní položka]")
-  public String getNPSuffix() {
-    return nPSuffix;
+  @ApiModelProperty(example = "null", value = "fo - titul za jménem [persistentní položka]")
+  public String getNpsuffix() {
+    return npsuffix;
   }
 
-  public void setNPSuffix(String nPSuffix) {
-    this.nPSuffix = nPSuffix;
+  public void setNpsuffix(String npsuffix) {
+    this.npsuffix = npsuffix;
   }
 
-  public Globdata nPBirthNumber(String nPBirthNumber) {
-    this.nPBirthNumber = nPBirthNumber;
+  public Globdata npbirthnumber(String npbirthnumber) {
+    this.npbirthnumber = npbirthnumber;
     return this;
   }
 
    /**
-   * FO - rodné číslo [persistentní položka]
-   * @return nPBirthNumber
+   * fo - rodné číslo [persistentní položka]
+   * @return npbirthnumber
   **/
-  @ApiModelProperty(example = "null", value = "FO - rodné číslo [persistentní položka]")
-  public String getNPBirthNumber() {
-    return nPBirthNumber;
+  @ApiModelProperty(example = "null", value = "fo - rodné číslo [persistentní položka]")
+  public String getNpbirthnumber() {
+    return npbirthnumber;
   }
 
-  public void setNPBirthNumber(String nPBirthNumber) {
-    this.nPBirthNumber = nPBirthNumber;
+  public void setNpbirthnumber(String npbirthnumber) {
+    this.npbirthnumber = npbirthnumber;
   }
 
-  public Globdata nPResidencePermitNumber(String nPResidencePermitNumber) {
-    this.nPResidencePermitNumber = nPResidencePermitNumber;
+  public Globdata npresidencepermitnumber(String npresidencepermitnumber) {
+    this.npresidencepermitnumber = npresidencepermitnumber;
     return this;
   }
 
    /**
    * Číslo povolení k pobytu [persistentní položka]
-   * @return nPResidencePermitNumber
+   * @return npresidencepermitnumber
   **/
   @ApiModelProperty(example = "null", value = "Číslo povolení k pobytu [persistentní položka]")
-  public String getNPResidencePermitNumber() {
-    return nPResidencePermitNumber;
+  public String getNpresidencepermitnumber() {
+    return npresidencepermitnumber;
   }
 
-  public void setNPResidencePermitNumber(String nPResidencePermitNumber) {
-    this.nPResidencePermitNumber = nPResidencePermitNumber;
+  public void setNpresidencepermitnumber(String npresidencepermitnumber) {
+    this.npresidencepermitnumber = npresidencepermitnumber;
   }
 
-  public Globdata nPAddressID(Globdata nPAddressID) {
-    this.nPAddressID = nPAddressID;
+  public Globdata npaddressId(Globdata npaddressId) {
+    this.npaddressId = npaddressId;
     return this;
   }
 
    /**
-   * Get nPAddressID
-   * @return nPAddressID
+   * Get npaddressId
+   * @return npaddressId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Globdata getNPAddressID() {
-    return nPAddressID;
+  public Globdata getNpaddressId() {
+    return npaddressId;
   }
 
-  public void setNPAddressID(Globdata nPAddressID) {
-    this.nPAddressID = nPAddressID;
+  public void setNpaddressId(Globdata npaddressId) {
+    this.npaddressId = npaddressId;
   }
 
-  public Globdata nPAddressIsSameAsSiteAddress(Boolean nPAddressIsSameAsSiteAddress) {
-    this.nPAddressIsSameAsSiteAddress = nPAddressIsSameAsSiteAddress;
+  public Globdata npaddressissameassiteaddress(Boolean npaddressissameassiteaddress) {
+    this.npaddressissameassiteaddress = npaddressissameassiteaddress;
     return this;
   }
 
    /**
-   * Adresa FO je stejná jako vlastní adresa [persistentní položka]
-   * @return nPAddressIsSameAsSiteAddress
+   * adresa fo je stejná jako vlastní adresa [persistentní položka]
+   * @return npaddressissameassiteaddress
   **/
-  @ApiModelProperty(example = "null", value = "Adresa FO je stejná jako vlastní adresa [persistentní položka]")
-  public Boolean getNPAddressIsSameAsSiteAddress() {
-    return nPAddressIsSameAsSiteAddress;
+  @ApiModelProperty(example = "null", value = "adresa fo je stejná jako vlastní adresa [persistentní položka]")
+  public Boolean getNpaddressissameassiteaddress() {
+    return npaddressissameassiteaddress;
   }
 
-  public void setNPAddressIsSameAsSiteAddress(Boolean nPAddressIsSameAsSiteAddress) {
-    this.nPAddressIsSameAsSiteAddress = nPAddressIsSameAsSiteAddress;
+  public void setNpaddressissameassiteaddress(Boolean npaddressissameassiteaddress) {
+    this.npaddressissameassiteaddress = npaddressissameassiteaddress;
   }
 
-  public Globdata companyLegalEntityCode(String companyLegalEntityCode) {
-    this.companyLegalEntityCode = companyLegalEntityCode;
+  public Globdata companylegalentitycode(String companylegalentitycode) {
+    this.companylegalentitycode = companylegalentitycode;
     return this;
   }
 
    /**
-   * Právní forma - kód
-   * @return companyLegalEntityCode
+   * právní forma - kód
+   * @return companylegalentitycode
   **/
-  @ApiModelProperty(example = "null", value = "Právní forma - kód")
-  public String getCompanyLegalEntityCode() {
-    return companyLegalEntityCode;
+  @ApiModelProperty(example = "null", value = "právní forma - kód")
+  public String getCompanylegalentitycode() {
+    return companylegalentitycode;
   }
 
-  public void setCompanyLegalEntityCode(String companyLegalEntityCode) {
-    this.companyLegalEntityCode = companyLegalEntityCode;
+  public void setCompanylegalentitycode(String companylegalentitycode) {
+    this.companylegalentitycode = companylegalentitycode;
   }
 
-  public Globdata companyLegalEntityText(String companyLegalEntityText) {
-    this.companyLegalEntityText = companyLegalEntityText;
+  public Globdata companylegalentitytext(String companylegalentitytext) {
+    this.companylegalentitytext = companylegalentitytext;
     return this;
   }
 
    /**
-   * Právní forma - text
-   * @return companyLegalEntityText
+   * právní forma - text
+   * @return companylegalentitytext
   **/
-  @ApiModelProperty(example = "null", value = "Právní forma - text")
-  public String getCompanyLegalEntityText() {
-    return companyLegalEntityText;
+  @ApiModelProperty(example = "null", value = "právní forma - text")
+  public String getCompanylegalentitytext() {
+    return companylegalentitytext;
   }
 
-  public void setCompanyLegalEntityText(String companyLegalEntityText) {
-    this.companyLegalEntityText = companyLegalEntityText;
+  public void setCompanylegalentitytext(String companylegalentitytext) {
+    this.companylegalentitytext = companylegalentitytext;
   }
 
-  public Globdata dailyLimitCashPayments(Double dailyLimitCashPayments) {
-    this.dailyLimitCashPayments = dailyLimitCashPayments;
+  public Globdata dailylimitcashpayments(Double dailylimitcashpayments) {
+    this.dailylimitcashpayments = dailylimitcashpayments;
     return this;
   }
 
    /**
-   * Denní limit platby v hotovosti [persistentní položka]
-   * @return dailyLimitCashPayments
+   * denní limit platby v hotovosti [persistentní položka]
+   * @return dailylimitcashpayments
   **/
-  @ApiModelProperty(example = "null", value = "Denní limit platby v hotovosti [persistentní položka]")
-  public Double getDailyLimitCashPayments() {
-    return dailyLimitCashPayments;
+  @ApiModelProperty(example = "null", value = "denní limit platby v hotovosti [persistentní položka]")
+  public Double getDailylimitcashpayments() {
+    return dailylimitcashpayments;
   }
 
-  public void setDailyLimitCashPayments(Double dailyLimitCashPayments) {
-    this.dailyLimitCashPayments = dailyLimitCashPayments;
+  public void setDailylimitcashpayments(Double dailylimitcashpayments) {
+    this.dailylimitcashpayments = dailylimitcashpayments;
   }
 
-  public Globdata eETUrl(String eETUrl) {
-    this.eETUrl = eETUrl;
+  public Globdata eeturl(String eeturl) {
+    this.eeturl = eeturl;
     return this;
   }
 
    /**
-   * URL pro EET [persistentní položka]
-   * @return eETUrl
+   * url pro eet [persistentní položka]
+   * @return eeturl
   **/
-  @ApiModelProperty(example = "null", value = "URL pro EET [persistentní položka]")
-  public String getEETUrl() {
-    return eETUrl;
+  @ApiModelProperty(example = "null", value = "url pro eet [persistentní položka]")
+  public String getEeturl() {
+    return eeturl;
   }
 
-  public void setEETUrl(String eETUrl) {
-    this.eETUrl = eETUrl;
+  public void setEeturl(String eeturl) {
+    this.eeturl = eeturl;
   }
 
 
@@ -1656,89 +1692,89 @@ public class Globdata   {
       return false;
     }
     Globdata globdata = (Globdata) o;
-    return Objects.equals(this.displayName, globdata.displayName) &&
-        Objects.equals(this.ID, globdata.ID) &&
-        Objects.equals(this.classID, globdata.classID) &&
-        Objects.equals(this.objVersion, globdata.objVersion) &&
-        Objects.equals(this.countryID, globdata.countryID) &&
-        Objects.equals(this.currencyID, globdata.currencyID) &&
-        Objects.equals(this.priceListID, globdata.priceListID) &&
-        Objects.equals(this.firmID, globdata.firmID) &&
-        Objects.equals(this.paymentTypeID, globdata.paymentTypeID) &&
-        Objects.equals(this.bankAccountID, globdata.bankAccountID) &&
-        Objects.equals(this.mainNACECodeID, globdata.mainNACECodeID) &&
-        Objects.equals(this.vATPayor, globdata.vATPayor) &&
-        Objects.equals(this.dueTerm, globdata.dueTerm) &&
-        Objects.equals(this.vATRounding, globdata.vATRounding) &&
-        Objects.equals(this.totalRounding, globdata.totalRounding) &&
-        Objects.equals(this.totalCashRounding, globdata.totalCashRounding) &&
-        Objects.equals(this.companyName, globdata.companyName) &&
-        Objects.equals(this.legalForm, globdata.legalForm) &&
-        Objects.equals(this.subjectOfEnterprise, globdata.subjectOfEnterprise) &&
-        Objects.equals(this.orgIdentNumber, globdata.orgIdentNumber) &&
-        Objects.equals(this.vATIdentNumber, globdata.vATIdentNumber) &&
-        Objects.equals(this.eORIIdentNumber, globdata.eORIIdentNumber) &&
-        Objects.equals(this.formulaCodeFirm, globdata.formulaCodeFirm) &&
-        Objects.equals(this.formulaCodeStoreCard, globdata.formulaCodeStoreCard) &&
-        Objects.equals(this.adrKeysDefinitionsBlob, globdata.adrKeysDefinitionsBlob) &&
-        Objects.equals(this.isRegistered, globdata.isRegistered) &&
-        Objects.equals(this.registerFileRef, globdata.registerFileRef) &&
-        Objects.equals(this.registerKeptAt, globdata.registerKeptAt) &&
-        Objects.equals(this.registerDateDATE, globdata.registerDateDATE) &&
-        Objects.equals(this.docIssueLimit, globdata.docIssueLimit) &&
-        Objects.equals(this.reservationTerm, globdata.reservationTerm) &&
-        Objects.equals(this.wWWAddress, globdata.wWWAddress) &&
-        Objects.equals(this.vATAllowance, globdata.vATAllowance) &&
-        Objects.equals(this.penaltyPercent, globdata.penaltyPercent) &&
-        Objects.equals(this.debitAfterDueDateAmount, globdata.debitAfterDueDateAmount) &&
-        Objects.equals(this.formulaCodeBusOrder, globdata.formulaCodeBusOrder) &&
-        Objects.equals(this.formulaCodeBusTransaction, globdata.formulaCodeBusTransaction) &&
-        Objects.equals(this.intrastatInputStatisticID, globdata.intrastatInputStatisticID) &&
-        Objects.equals(this.intrastatOutputStatisticID, globdata.intrastatOutputStatisticID) &&
-        Objects.equals(this.intrastatRegionID, globdata.intrastatRegionID) &&
-        Objects.equals(this.organisationType, globdata.organisationType) &&
-        Objects.equals(this.districtID, globdata.districtID) &&
-        Objects.equals(this.afterDueTerm, globdata.afterDueTerm) &&
-        Objects.equals(this.rowIndexInterval, globdata.rowIndexInterval) &&
-        Objects.equals(this.smallArticlesAmount, globdata.smallArticlesAmount) &&
-        Objects.equals(this.smallArticlesID, globdata.smallArticlesID) &&
-        Objects.equals(this.smallArticlesExtraTypeID, globdata.smallArticlesExtraTypeID) &&
-        Objects.equals(this.smallArticlesCurrencyID, globdata.smallArticlesCurrencyID) &&
-        Objects.equals(this.formulaCodeBusProject, globdata.formulaCodeBusProject) &&
-        Objects.equals(this.globParams, globdata.globParams) &&
-        Objects.equals(this.deliveryTerm, globdata.deliveryTerm) &&
-        Objects.equals(this.validTillTerm, globdata.validTillTerm) &&
-        Objects.equals(this.unitNumber, globdata.unitNumber) &&
-        Objects.equals(this.LOGO, globdata.LOGO) &&
-        Objects.equals(this.tAXIdentNumber, globdata.tAXIdentNumber) &&
-        Objects.equals(this.vATRegs, globdata.vATRegs) &&
-        Objects.equals(this.firstVATIdentDateOfChange, globdata.firstVATIdentDateOfChange) &&
-        Objects.equals(this.wSKernelInitPackage, globdata.wSKernelInitPackage) &&
-        Objects.equals(this.wSKernelInitLibrary, globdata.wSKernelInitLibrary) &&
-        Objects.equals(this.wSKernelInitFunction, globdata.wSKernelInitFunction) &&
-        Objects.equals(this.firmNamePrefillByPersonExpr, globdata.firmNamePrefillByPersonExpr) &&
-        Objects.equals(this.financialBureau, globdata.financialBureau) &&
-        Objects.equals(this.financialBureauCode, globdata.financialBureauCode) &&
-        Objects.equals(this.regionalOffice, globdata.regionalOffice) &&
-        Objects.equals(this.regionalOfficeCode, globdata.regionalOfficeCode) &&
-        Objects.equals(this.companyLegalEntity, globdata.companyLegalEntity) &&
-        Objects.equals(this.nPForename, globdata.nPForename) &&
-        Objects.equals(this.nPSurname, globdata.nPSurname) &&
-        Objects.equals(this.nPTitle, globdata.nPTitle) &&
-        Objects.equals(this.nPSuffix, globdata.nPSuffix) &&
-        Objects.equals(this.nPBirthNumber, globdata.nPBirthNumber) &&
-        Objects.equals(this.nPResidencePermitNumber, globdata.nPResidencePermitNumber) &&
-        Objects.equals(this.nPAddressID, globdata.nPAddressID) &&
-        Objects.equals(this.nPAddressIsSameAsSiteAddress, globdata.nPAddressIsSameAsSiteAddress) &&
-        Objects.equals(this.companyLegalEntityCode, globdata.companyLegalEntityCode) &&
-        Objects.equals(this.companyLegalEntityText, globdata.companyLegalEntityText) &&
-        Objects.equals(this.dailyLimitCashPayments, globdata.dailyLimitCashPayments) &&
-        Objects.equals(this.eETUrl, globdata.eETUrl);
+    return Objects.equals(this.displayname, globdata.displayname) &&
+        Objects.equals(this.id, globdata.id) &&
+        Objects.equals(this.classid, globdata.classid) &&
+        Objects.equals(this.objversion, globdata.objversion) &&
+        Objects.equals(this.countryId, globdata.countryId) &&
+        Objects.equals(this.currencyId, globdata.currencyId) &&
+        Objects.equals(this.pricelistId, globdata.pricelistId) &&
+        Objects.equals(this.firmId, globdata.firmId) &&
+        Objects.equals(this.paymenttypeId, globdata.paymenttypeId) &&
+        Objects.equals(this.bankaccountId, globdata.bankaccountId) &&
+        Objects.equals(this.mainnacecodeId, globdata.mainnacecodeId) &&
+        Objects.equals(this.vatpayor, globdata.vatpayor) &&
+        Objects.equals(this.dueterm, globdata.dueterm) &&
+        Objects.equals(this.vatrounding, globdata.vatrounding) &&
+        Objects.equals(this.totalrounding, globdata.totalrounding) &&
+        Objects.equals(this.totalcashrounding, globdata.totalcashrounding) &&
+        Objects.equals(this.companyname, globdata.companyname) &&
+        Objects.equals(this.legalform, globdata.legalform) &&
+        Objects.equals(this.subjectofenterprise, globdata.subjectofenterprise) &&
+        Objects.equals(this.orgidentnumber, globdata.orgidentnumber) &&
+        Objects.equals(this.vatidentnumber, globdata.vatidentnumber) &&
+        Objects.equals(this.eoriidentnumber, globdata.eoriidentnumber) &&
+        Objects.equals(this.formulacodefirm, globdata.formulacodefirm) &&
+        Objects.equals(this.formulacodestorecard, globdata.formulacodestorecard) &&
+        Objects.equals(this.adrkeysdefinitionsblob, globdata.adrkeysdefinitionsblob) &&
+        Objects.equals(this.isregistered, globdata.isregistered) &&
+        Objects.equals(this.registerfileref, globdata.registerfileref) &&
+        Objects.equals(this.registerkeptat, globdata.registerkeptat) &&
+        Objects.equals(this.registerdatedate, globdata.registerdatedate) &&
+        Objects.equals(this.docissuelimit, globdata.docissuelimit) &&
+        Objects.equals(this.reservationterm, globdata.reservationterm) &&
+        Objects.equals(this.wwwaddress, globdata.wwwaddress) &&
+        Objects.equals(this.vatallowance, globdata.vatallowance) &&
+        Objects.equals(this.penaltypercent, globdata.penaltypercent) &&
+        Objects.equals(this.debitafterduedateamount, globdata.debitafterduedateamount) &&
+        Objects.equals(this.formulacodebusorder, globdata.formulacodebusorder) &&
+        Objects.equals(this.formulacodebustransaction, globdata.formulacodebustransaction) &&
+        Objects.equals(this.intrastatinputstatisticId, globdata.intrastatinputstatisticId) &&
+        Objects.equals(this.intrastatoutputstatisticId, globdata.intrastatoutputstatisticId) &&
+        Objects.equals(this.intrastatregionId, globdata.intrastatregionId) &&
+        Objects.equals(this.organisationtype, globdata.organisationtype) &&
+        Objects.equals(this.districtId, globdata.districtId) &&
+        Objects.equals(this.afterdueterm, globdata.afterdueterm) &&
+        Objects.equals(this.rowindexinterval, globdata.rowindexinterval) &&
+        Objects.equals(this.smallarticlesamount, globdata.smallarticlesamount) &&
+        Objects.equals(this.smallarticlesId, globdata.smallarticlesId) &&
+        Objects.equals(this.smallarticlesextratypeId, globdata.smallarticlesextratypeId) &&
+        Objects.equals(this.smallarticlescurrencyId, globdata.smallarticlescurrencyId) &&
+        Objects.equals(this.formulacodebusproject, globdata.formulacodebusproject) &&
+        Objects.equals(this.globparams, globdata.globparams) &&
+        Objects.equals(this.deliveryterm, globdata.deliveryterm) &&
+        Objects.equals(this.validtillterm, globdata.validtillterm) &&
+        Objects.equals(this.unitnumber, globdata.unitnumber) &&
+        Objects.equals(this.logo, globdata.logo) &&
+        Objects.equals(this.taxidentnumber, globdata.taxidentnumber) &&
+        Objects.equals(this.vatregs, globdata.vatregs) &&
+        Objects.equals(this.firstvatidentdateofchange, globdata.firstvatidentdateofchange) &&
+        Objects.equals(this.wskernelinitpackage, globdata.wskernelinitpackage) &&
+        Objects.equals(this.wskernelinitlibrary, globdata.wskernelinitlibrary) &&
+        Objects.equals(this.wskernelinitfunction, globdata.wskernelinitfunction) &&
+        Objects.equals(this.firmnameprefillbypersonexpr, globdata.firmnameprefillbypersonexpr) &&
+        Objects.equals(this.financialbureau, globdata.financialbureau) &&
+        Objects.equals(this.financialbureaucode, globdata.financialbureaucode) &&
+        Objects.equals(this.regionaloffice, globdata.regionaloffice) &&
+        Objects.equals(this.regionalofficecode, globdata.regionalofficecode) &&
+        Objects.equals(this.companylegalentity, globdata.companylegalentity) &&
+        Objects.equals(this.npforename, globdata.npforename) &&
+        Objects.equals(this.npsurname, globdata.npsurname) &&
+        Objects.equals(this.nptitle, globdata.nptitle) &&
+        Objects.equals(this.npsuffix, globdata.npsuffix) &&
+        Objects.equals(this.npbirthnumber, globdata.npbirthnumber) &&
+        Objects.equals(this.npresidencepermitnumber, globdata.npresidencepermitnumber) &&
+        Objects.equals(this.npaddressId, globdata.npaddressId) &&
+        Objects.equals(this.npaddressissameassiteaddress, globdata.npaddressissameassiteaddress) &&
+        Objects.equals(this.companylegalentitycode, globdata.companylegalentitycode) &&
+        Objects.equals(this.companylegalentitytext, globdata.companylegalentitytext) &&
+        Objects.equals(this.dailylimitcashpayments, globdata.dailylimitcashpayments) &&
+        Objects.equals(this.eeturl, globdata.eeturl);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, countryID, currencyID, priceListID, firmID, paymentTypeID, bankAccountID, mainNACECodeID, vATPayor, dueTerm, vATRounding, totalRounding, totalCashRounding, companyName, legalForm, subjectOfEnterprise, orgIdentNumber, vATIdentNumber, eORIIdentNumber, formulaCodeFirm, formulaCodeStoreCard, adrKeysDefinitionsBlob, isRegistered, registerFileRef, registerKeptAt, registerDateDATE, docIssueLimit, reservationTerm, wWWAddress, vATAllowance, penaltyPercent, debitAfterDueDateAmount, formulaCodeBusOrder, formulaCodeBusTransaction, intrastatInputStatisticID, intrastatOutputStatisticID, intrastatRegionID, organisationType, districtID, afterDueTerm, rowIndexInterval, smallArticlesAmount, smallArticlesID, smallArticlesExtraTypeID, smallArticlesCurrencyID, formulaCodeBusProject, globParams, deliveryTerm, validTillTerm, unitNumber, LOGO, tAXIdentNumber, vATRegs, firstVATIdentDateOfChange, wSKernelInitPackage, wSKernelInitLibrary, wSKernelInitFunction, firmNamePrefillByPersonExpr, financialBureau, financialBureauCode, regionalOffice, regionalOfficeCode, companyLegalEntity, nPForename, nPSurname, nPTitle, nPSuffix, nPBirthNumber, nPResidencePermitNumber, nPAddressID, nPAddressIsSameAsSiteAddress, companyLegalEntityCode, companyLegalEntityText, dailyLimitCashPayments, eETUrl);
+    return Objects.hash(displayname, id, classid, objversion, countryId, currencyId, pricelistId, firmId, paymenttypeId, bankaccountId, mainnacecodeId, vatpayor, dueterm, vatrounding, totalrounding, totalcashrounding, companyname, legalform, subjectofenterprise, orgidentnumber, vatidentnumber, eoriidentnumber, formulacodefirm, formulacodestorecard, adrkeysdefinitionsblob, isregistered, registerfileref, registerkeptat, registerdatedate, docissuelimit, reservationterm, wwwaddress, vatallowance, penaltypercent, debitafterduedateamount, formulacodebusorder, formulacodebustransaction, intrastatinputstatisticId, intrastatoutputstatisticId, intrastatregionId, organisationtype, districtId, afterdueterm, rowindexinterval, smallarticlesamount, smallarticlesId, smallarticlesextratypeId, smallarticlescurrencyId, formulacodebusproject, globparams, deliveryterm, validtillterm, unitnumber, logo, taxidentnumber, vatregs, firstvatidentdateofchange, wskernelinitpackage, wskernelinitlibrary, wskernelinitfunction, firmnameprefillbypersonexpr, financialbureau, financialbureaucode, regionaloffice, regionalofficecode, companylegalentity, npforename, npsurname, nptitle, npsuffix, npbirthnumber, npresidencepermitnumber, npaddressId, npaddressissameassiteaddress, companylegalentitycode, companylegalentitytext, dailylimitcashpayments, eeturl);
   }
 
   @Override
@@ -1746,84 +1782,84 @@ public class Globdata   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Globdata {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    countryID: ").append(toIndentedString(countryID)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    priceListID: ").append(toIndentedString(priceListID)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    paymentTypeID: ").append(toIndentedString(paymentTypeID)).append("\n");
-    sb.append("    bankAccountID: ").append(toIndentedString(bankAccountID)).append("\n");
-    sb.append("    mainNACECodeID: ").append(toIndentedString(mainNACECodeID)).append("\n");
-    sb.append("    vATPayor: ").append(toIndentedString(vATPayor)).append("\n");
-    sb.append("    dueTerm: ").append(toIndentedString(dueTerm)).append("\n");
-    sb.append("    vATRounding: ").append(toIndentedString(vATRounding)).append("\n");
-    sb.append("    totalRounding: ").append(toIndentedString(totalRounding)).append("\n");
-    sb.append("    totalCashRounding: ").append(toIndentedString(totalCashRounding)).append("\n");
-    sb.append("    companyName: ").append(toIndentedString(companyName)).append("\n");
-    sb.append("    legalForm: ").append(toIndentedString(legalForm)).append("\n");
-    sb.append("    subjectOfEnterprise: ").append(toIndentedString(subjectOfEnterprise)).append("\n");
-    sb.append("    orgIdentNumber: ").append(toIndentedString(orgIdentNumber)).append("\n");
-    sb.append("    vATIdentNumber: ").append(toIndentedString(vATIdentNumber)).append("\n");
-    sb.append("    eORIIdentNumber: ").append(toIndentedString(eORIIdentNumber)).append("\n");
-    sb.append("    formulaCodeFirm: ").append(toIndentedString(formulaCodeFirm)).append("\n");
-    sb.append("    formulaCodeStoreCard: ").append(toIndentedString(formulaCodeStoreCard)).append("\n");
-    sb.append("    adrKeysDefinitionsBlob: ").append(toIndentedString(adrKeysDefinitionsBlob)).append("\n");
-    sb.append("    isRegistered: ").append(toIndentedString(isRegistered)).append("\n");
-    sb.append("    registerFileRef: ").append(toIndentedString(registerFileRef)).append("\n");
-    sb.append("    registerKeptAt: ").append(toIndentedString(registerKeptAt)).append("\n");
-    sb.append("    registerDateDATE: ").append(toIndentedString(registerDateDATE)).append("\n");
-    sb.append("    docIssueLimit: ").append(toIndentedString(docIssueLimit)).append("\n");
-    sb.append("    reservationTerm: ").append(toIndentedString(reservationTerm)).append("\n");
-    sb.append("    wWWAddress: ").append(toIndentedString(wWWAddress)).append("\n");
-    sb.append("    vATAllowance: ").append(toIndentedString(vATAllowance)).append("\n");
-    sb.append("    penaltyPercent: ").append(toIndentedString(penaltyPercent)).append("\n");
-    sb.append("    debitAfterDueDateAmount: ").append(toIndentedString(debitAfterDueDateAmount)).append("\n");
-    sb.append("    formulaCodeBusOrder: ").append(toIndentedString(formulaCodeBusOrder)).append("\n");
-    sb.append("    formulaCodeBusTransaction: ").append(toIndentedString(formulaCodeBusTransaction)).append("\n");
-    sb.append("    intrastatInputStatisticID: ").append(toIndentedString(intrastatInputStatisticID)).append("\n");
-    sb.append("    intrastatOutputStatisticID: ").append(toIndentedString(intrastatOutputStatisticID)).append("\n");
-    sb.append("    intrastatRegionID: ").append(toIndentedString(intrastatRegionID)).append("\n");
-    sb.append("    organisationType: ").append(toIndentedString(organisationType)).append("\n");
-    sb.append("    districtID: ").append(toIndentedString(districtID)).append("\n");
-    sb.append("    afterDueTerm: ").append(toIndentedString(afterDueTerm)).append("\n");
-    sb.append("    rowIndexInterval: ").append(toIndentedString(rowIndexInterval)).append("\n");
-    sb.append("    smallArticlesAmount: ").append(toIndentedString(smallArticlesAmount)).append("\n");
-    sb.append("    smallArticlesID: ").append(toIndentedString(smallArticlesID)).append("\n");
-    sb.append("    smallArticlesExtraTypeID: ").append(toIndentedString(smallArticlesExtraTypeID)).append("\n");
-    sb.append("    smallArticlesCurrencyID: ").append(toIndentedString(smallArticlesCurrencyID)).append("\n");
-    sb.append("    formulaCodeBusProject: ").append(toIndentedString(formulaCodeBusProject)).append("\n");
-    sb.append("    globParams: ").append(toIndentedString(globParams)).append("\n");
-    sb.append("    deliveryTerm: ").append(toIndentedString(deliveryTerm)).append("\n");
-    sb.append("    validTillTerm: ").append(toIndentedString(validTillTerm)).append("\n");
-    sb.append("    unitNumber: ").append(toIndentedString(unitNumber)).append("\n");
-    sb.append("    LOGO: ").append(toIndentedString(LOGO)).append("\n");
-    sb.append("    tAXIdentNumber: ").append(toIndentedString(tAXIdentNumber)).append("\n");
-    sb.append("    vATRegs: ").append(toIndentedString(vATRegs)).append("\n");
-    sb.append("    firstVATIdentDateOfChange: ").append(toIndentedString(firstVATIdentDateOfChange)).append("\n");
-    sb.append("    wSKernelInitPackage: ").append(toIndentedString(wSKernelInitPackage)).append("\n");
-    sb.append("    wSKernelInitLibrary: ").append(toIndentedString(wSKernelInitLibrary)).append("\n");
-    sb.append("    wSKernelInitFunction: ").append(toIndentedString(wSKernelInitFunction)).append("\n");
-    sb.append("    firmNamePrefillByPersonExpr: ").append(toIndentedString(firmNamePrefillByPersonExpr)).append("\n");
-    sb.append("    financialBureau: ").append(toIndentedString(financialBureau)).append("\n");
-    sb.append("    financialBureauCode: ").append(toIndentedString(financialBureauCode)).append("\n");
-    sb.append("    regionalOffice: ").append(toIndentedString(regionalOffice)).append("\n");
-    sb.append("    regionalOfficeCode: ").append(toIndentedString(regionalOfficeCode)).append("\n");
-    sb.append("    companyLegalEntity: ").append(toIndentedString(companyLegalEntity)).append("\n");
-    sb.append("    nPForename: ").append(toIndentedString(nPForename)).append("\n");
-    sb.append("    nPSurname: ").append(toIndentedString(nPSurname)).append("\n");
-    sb.append("    nPTitle: ").append(toIndentedString(nPTitle)).append("\n");
-    sb.append("    nPSuffix: ").append(toIndentedString(nPSuffix)).append("\n");
-    sb.append("    nPBirthNumber: ").append(toIndentedString(nPBirthNumber)).append("\n");
-    sb.append("    nPResidencePermitNumber: ").append(toIndentedString(nPResidencePermitNumber)).append("\n");
-    sb.append("    nPAddressID: ").append(toIndentedString(nPAddressID)).append("\n");
-    sb.append("    nPAddressIsSameAsSiteAddress: ").append(toIndentedString(nPAddressIsSameAsSiteAddress)).append("\n");
-    sb.append("    companyLegalEntityCode: ").append(toIndentedString(companyLegalEntityCode)).append("\n");
-    sb.append("    companyLegalEntityText: ").append(toIndentedString(companyLegalEntityText)).append("\n");
-    sb.append("    dailyLimitCashPayments: ").append(toIndentedString(dailyLimitCashPayments)).append("\n");
-    sb.append("    eETUrl: ").append(toIndentedString(eETUrl)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    countryId: ").append(toIndentedString(countryId)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    pricelistId: ").append(toIndentedString(pricelistId)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    paymenttypeId: ").append(toIndentedString(paymenttypeId)).append("\n");
+    sb.append("    bankaccountId: ").append(toIndentedString(bankaccountId)).append("\n");
+    sb.append("    mainnacecodeId: ").append(toIndentedString(mainnacecodeId)).append("\n");
+    sb.append("    vatpayor: ").append(toIndentedString(vatpayor)).append("\n");
+    sb.append("    dueterm: ").append(toIndentedString(dueterm)).append("\n");
+    sb.append("    vatrounding: ").append(toIndentedString(vatrounding)).append("\n");
+    sb.append("    totalrounding: ").append(toIndentedString(totalrounding)).append("\n");
+    sb.append("    totalcashrounding: ").append(toIndentedString(totalcashrounding)).append("\n");
+    sb.append("    companyname: ").append(toIndentedString(companyname)).append("\n");
+    sb.append("    legalform: ").append(toIndentedString(legalform)).append("\n");
+    sb.append("    subjectofenterprise: ").append(toIndentedString(subjectofenterprise)).append("\n");
+    sb.append("    orgidentnumber: ").append(toIndentedString(orgidentnumber)).append("\n");
+    sb.append("    vatidentnumber: ").append(toIndentedString(vatidentnumber)).append("\n");
+    sb.append("    eoriidentnumber: ").append(toIndentedString(eoriidentnumber)).append("\n");
+    sb.append("    formulacodefirm: ").append(toIndentedString(formulacodefirm)).append("\n");
+    sb.append("    formulacodestorecard: ").append(toIndentedString(formulacodestorecard)).append("\n");
+    sb.append("    adrkeysdefinitionsblob: ").append(toIndentedString(adrkeysdefinitionsblob)).append("\n");
+    sb.append("    isregistered: ").append(toIndentedString(isregistered)).append("\n");
+    sb.append("    registerfileref: ").append(toIndentedString(registerfileref)).append("\n");
+    sb.append("    registerkeptat: ").append(toIndentedString(registerkeptat)).append("\n");
+    sb.append("    registerdatedate: ").append(toIndentedString(registerdatedate)).append("\n");
+    sb.append("    docissuelimit: ").append(toIndentedString(docissuelimit)).append("\n");
+    sb.append("    reservationterm: ").append(toIndentedString(reservationterm)).append("\n");
+    sb.append("    wwwaddress: ").append(toIndentedString(wwwaddress)).append("\n");
+    sb.append("    vatallowance: ").append(toIndentedString(vatallowance)).append("\n");
+    sb.append("    penaltypercent: ").append(toIndentedString(penaltypercent)).append("\n");
+    sb.append("    debitafterduedateamount: ").append(toIndentedString(debitafterduedateamount)).append("\n");
+    sb.append("    formulacodebusorder: ").append(toIndentedString(formulacodebusorder)).append("\n");
+    sb.append("    formulacodebustransaction: ").append(toIndentedString(formulacodebustransaction)).append("\n");
+    sb.append("    intrastatinputstatisticId: ").append(toIndentedString(intrastatinputstatisticId)).append("\n");
+    sb.append("    intrastatoutputstatisticId: ").append(toIndentedString(intrastatoutputstatisticId)).append("\n");
+    sb.append("    intrastatregionId: ").append(toIndentedString(intrastatregionId)).append("\n");
+    sb.append("    organisationtype: ").append(toIndentedString(organisationtype)).append("\n");
+    sb.append("    districtId: ").append(toIndentedString(districtId)).append("\n");
+    sb.append("    afterdueterm: ").append(toIndentedString(afterdueterm)).append("\n");
+    sb.append("    rowindexinterval: ").append(toIndentedString(rowindexinterval)).append("\n");
+    sb.append("    smallarticlesamount: ").append(toIndentedString(smallarticlesamount)).append("\n");
+    sb.append("    smallarticlesId: ").append(toIndentedString(smallarticlesId)).append("\n");
+    sb.append("    smallarticlesextratypeId: ").append(toIndentedString(smallarticlesextratypeId)).append("\n");
+    sb.append("    smallarticlescurrencyId: ").append(toIndentedString(smallarticlescurrencyId)).append("\n");
+    sb.append("    formulacodebusproject: ").append(toIndentedString(formulacodebusproject)).append("\n");
+    sb.append("    globparams: ").append(toIndentedString(globparams)).append("\n");
+    sb.append("    deliveryterm: ").append(toIndentedString(deliveryterm)).append("\n");
+    sb.append("    validtillterm: ").append(toIndentedString(validtillterm)).append("\n");
+    sb.append("    unitnumber: ").append(toIndentedString(unitnumber)).append("\n");
+    sb.append("    logo: ").append(toIndentedString(logo)).append("\n");
+    sb.append("    taxidentnumber: ").append(toIndentedString(taxidentnumber)).append("\n");
+    sb.append("    vatregs: ").append(toIndentedString(vatregs)).append("\n");
+    sb.append("    firstvatidentdateofchange: ").append(toIndentedString(firstvatidentdateofchange)).append("\n");
+    sb.append("    wskernelinitpackage: ").append(toIndentedString(wskernelinitpackage)).append("\n");
+    sb.append("    wskernelinitlibrary: ").append(toIndentedString(wskernelinitlibrary)).append("\n");
+    sb.append("    wskernelinitfunction: ").append(toIndentedString(wskernelinitfunction)).append("\n");
+    sb.append("    firmnameprefillbypersonexpr: ").append(toIndentedString(firmnameprefillbypersonexpr)).append("\n");
+    sb.append("    financialbureau: ").append(toIndentedString(financialbureau)).append("\n");
+    sb.append("    financialbureaucode: ").append(toIndentedString(financialbureaucode)).append("\n");
+    sb.append("    regionaloffice: ").append(toIndentedString(regionaloffice)).append("\n");
+    sb.append("    regionalofficecode: ").append(toIndentedString(regionalofficecode)).append("\n");
+    sb.append("    companylegalentity: ").append(toIndentedString(companylegalentity)).append("\n");
+    sb.append("    npforename: ").append(toIndentedString(npforename)).append("\n");
+    sb.append("    npsurname: ").append(toIndentedString(npsurname)).append("\n");
+    sb.append("    nptitle: ").append(toIndentedString(nptitle)).append("\n");
+    sb.append("    npsuffix: ").append(toIndentedString(npsuffix)).append("\n");
+    sb.append("    npbirthnumber: ").append(toIndentedString(npbirthnumber)).append("\n");
+    sb.append("    npresidencepermitnumber: ").append(toIndentedString(npresidencepermitnumber)).append("\n");
+    sb.append("    npaddressId: ").append(toIndentedString(npaddressId)).append("\n");
+    sb.append("    npaddressissameassiteaddress: ").append(toIndentedString(npaddressissameassiteaddress)).append("\n");
+    sb.append("    companylegalentitycode: ").append(toIndentedString(companylegalentitycode)).append("\n");
+    sb.append("    companylegalentitytext: ").append(toIndentedString(companylegalentitytext)).append("\n");
+    sb.append("    dailylimitcashpayments: ").append(toIndentedString(dailylimitcashpayments)).append("\n");
+    sb.append("    eeturl: ").append(toIndentedString(eeturl)).append("\n");
     sb.append("}");
     return sb.toString();
   }

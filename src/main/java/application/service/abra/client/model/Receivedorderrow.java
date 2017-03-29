@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,318 +35,395 @@ import java.util.Objects;
 /**
  * Receivedorderrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Receivedorderrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Revided_ID")
-  private String revidedID = null;
+  @SerializedName("revided_id")
+  private String revidedId = null;
 
-  @SerializedName("RevisionDescription")
-  private String revisionDescription = null;
+  @SerializedName("revisiondescription")
+  private String revisiondescription = null;
 
-  @SerializedName("RevisionDate$DATE")
-  private DateTime revisionDateDATE = null;
+  @SerializedName("revisiondate$date")
+  private DateTime revisiondatedate = null;
 
-  @SerializedName("RevisionAuthor_ID")
-  private String revisionAuthorID = null;
+  @SerializedName("revisionauthor_id")
+  private String revisionauthorId = null;
 
-  @SerializedName("Revision")
+  @SerializedName("revision")
   private Integer revision = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("TAmount")
-  private Double tAmount = null;
+  @SerializedName("tamount")
+  private Double tamount = null;
 
-  @SerializedName("LocalTAmount")
-  private Double localTAmount = null;
+  @SerializedName("localtamount")
+  private Double localtamount = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("TAmountWithoutVAT")
-  private Double tAmountWithoutVAT = null;
+  @SerializedName("tamountwithoutvat")
+  private Double tamountwithoutvat = null;
 
-  @SerializedName("VATRate_ID")
-  private String vATRateID = null;
+  @SerializedName("vatrate_id")
+  private String vatrateId = null;
 
-  @SerializedName("VATRate")
-  private Double vATRate = null;
+  @SerializedName("vatrate")
+  private Double vatrate = null;
 
-  @SerializedName("LocalTAmountWithoutVAT")
-  private Double localTAmountWithoutVAT = null;
+  @SerializedName("localtamountwithoutvat")
+  private Double localtamountwithoutvat = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("VATMode")
-  private Integer vATMode = null;
+  @SerializedName("vatmode")
+  private Integer vatmode = null;
 
-  @SerializedName("RowType")
-  private Integer rowType = null;
+  @SerializedName("rowtype")
+  private Integer rowtype = null;
 
-  @SerializedName("Text")
+  @SerializedName("text")
   private String text = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("RowDiscount")
-  private Double rowDiscount = null;
+  @SerializedName("rowdiscount")
+  private Double rowdiscount = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("UnitQuantity")
-  private Double unitQuantity = null;
+  @SerializedName("unitquantity")
+  private Double unitquantity = null;
 
-  @SerializedName("UnitPrice")
-  private Double unitPrice = null;
+  @SerializedName("unitprice")
+  private Double unitprice = null;
 
-  @SerializedName("TotalPrice")
-  private Double totalPrice = null;
+  @SerializedName("totalprice")
+  private Double totalprice = null;
 
-  @SerializedName("TotalPercentualDiscount")
-  private Double totalPercentualDiscount = null;
+  @SerializedName("totalpercentualdiscount")
+  private Double totalpercentualdiscount = null;
 
-  @SerializedName("TotalDiscountFactor")
-  private Double totalDiscountFactor = null;
+  @SerializedName("totaldiscountfactor")
+  private Double totaldiscountfactor = null;
 
-  @SerializedName("Weight")
+  @SerializedName("weight")
   private Double weight = null;
 
-  @SerializedName("Capacity")
+  @SerializedName("capacity")
   private Double capacity = null;
 
-  @SerializedName("WeightUnit")
-  private Integer weightUnit = null;
+  @SerializedName("weightunit")
+  private Integer weightunit = null;
 
-  @SerializedName("CapacityUnit")
-  private Integer capacityUnit = null;
+  @SerializedName("capacityunit")
+  private Integer capacityunit = null;
 
-  @SerializedName("DiscountsExcluded")
-  private Boolean discountsExcluded = null;
+  @SerializedName("discountsexcluded")
+  private Boolean discountsexcluded = null;
 
-  @SerializedName("DealerDiscountExcluded")
-  private Boolean dealerDiscountExcluded = null;
+  @SerializedName("dealerdiscountexcluded")
+  private Boolean dealerdiscountexcluded = null;
 
-  @SerializedName("IndividualDiscountExcluded")
-  private Boolean individualDiscountExcluded = null;
+  @SerializedName("individualdiscountexcluded")
+  private Boolean individualdiscountexcluded = null;
 
-  @SerializedName("FinancialDiscountExcluded")
-  private Boolean financialDiscountExcluded = null;
+  @SerializedName("financialdiscountexcluded")
+  private Boolean financialdiscountexcluded = null;
 
-  @SerializedName("QuantityDiscountExcluded")
-  private Boolean quantityDiscountExcluded = null;
+  @SerializedName("quantitydiscountexcluded")
+  private Boolean quantitydiscountexcluded = null;
 
-  @SerializedName("DocumentDiscountExcluded")
-  private Boolean documentDiscountExcluded = null;
+  @SerializedName("documentdiscountexcluded")
+  private Boolean documentdiscountexcluded = null;
 
-  @SerializedName("IsAnyDiscount")
-  private Boolean isAnyDiscount = null;
+  @SerializedName("isanydiscount")
+  private Boolean isanydiscount = null;
 
-  @SerializedName("DealerDiscount")
-  private Double dealerDiscount = null;
+  @SerializedName("dealerdiscount")
+  private Double dealerdiscount = null;
 
-  @SerializedName("QuantityDiscount")
-  private Double quantityDiscount = null;
+  @SerializedName("quantitydiscount")
+  private Double quantitydiscount = null;
 
-  @SerializedName("IntrastatRegion_ID")
-  private String intrastatRegionID = null;
+  @SerializedName("intrastatregion_id")
+  private String intrastatregionId = null;
 
-  @SerializedName("ToIntrastat")
-  private Boolean toIntrastat = null;
+  @SerializedName("tointrastat")
+  private Boolean tointrastat = null;
 
-  @SerializedName("ToESL")
-  private Boolean toESL = null;
+  @SerializedName("toesl")
+  private Boolean toesl = null;
 
-  @SerializedName("ESLStatus")
-  private Integer eSLStatus = null;
+  @SerializedName("eslstatus")
+  private Integer eslstatus = null;
 
-  @SerializedName("StatisticAmount")
-  private Double statisticAmount = null;
+  @SerializedName("statisticamount")
+  private Double statisticamount = null;
 
-  @SerializedName("IntrastatOutputStatistic_ID")
-  private String intrastatOutputStatisticID = null;
+  @SerializedName("intrastatoutputstatistic_id")
+  private String intrastatoutputstatisticId = null;
 
-  @SerializedName("ESLIndicator_ID")
-  private String eSLIndicatorID = null;
+  @SerializedName("eslindicator_id")
+  private String eslindicatorId = null;
 
-  @SerializedName("MOSSService_ID")
-  private String mOSSServiceID = null;
+  @SerializedName("mossservice_id")
+  private String mossserviceId = null;
 
-  @SerializedName("DRCArticle_ID")
-  private String dRCArticleID = null;
+  @SerializedName("drcarticle_id")
+  private String drcarticleId = null;
 
-  @SerializedName("DRCQuantity")
-  private Double dRCQuantity = null;
+  @SerializedName("drcquantity")
+  private Double drcquantity = null;
 
-  @SerializedName("DRCQUnit")
-  private String dRCQUnit = null;
+  @SerializedName("drcqunit")
+  private String drcqunit = null;
 
-  @SerializedName("Price_ID")
-  private String priceID = null;
+  @SerializedName("price_id")
+  private String priceId = null;
 
-  @SerializedName("Reservation_ID")
-  private Receivedorderrow reservationID = null;
+  @SerializedName("reservation_id")
+  private Receivedorderrow reservationId = null;
 
-  @SerializedName("DeliveredQuantity")
-  private Double deliveredQuantity = null;
+  @SerializedName("deliveredquantity")
+  private Double deliveredquantity = null;
 
-  @SerializedName("RowMargin")
-  private Double rowMargin = null;
+  @SerializedName("rowmargin")
+  private Double rowmargin = null;
 
-  @SerializedName("RowStorePrice")
-  private Double rowStorePrice = null;
+  @SerializedName("rowstoreprice")
+  private Double rowstoreprice = null;
 
-  @SerializedName("DeliveryDate$DATE")
-  private DateTime deliveryDateDATE = null;
+  @SerializedName("deliverydate$date")
+  private DateTime deliverydatedate = null;
 
-  @SerializedName("ProvideRow_ID")
-  private String provideRowID = null;
+  @SerializedName("providerow_id")
+  private String providerowId = null;
 
-  @SerializedName("Provide_ID")
-  private String provideID = null;
+  @SerializedName("provide_id")
+  private String provideId = null;
 
-  @SerializedName("DeliveredQuantityStr")
-  private String deliveredQuantityStr = null;
+  @SerializedName("deliveredquantitystr")
+  private String deliveredquantitystr = null;
 
-  @SerializedName("ProvideRowDisplayName")
-  private String provideRowDisplayName = null;
+  @SerializedName("providerowdisplayname")
+  private String providerowdisplayname = null;
 
-  @SerializedName("IntrastatStatus")
-  private Integer intrastatStatus = null;
+  @SerializedName("intrastatstatus")
+  private Integer intrastatstatus = null;
 
-  @SerializedName("IntrastatAmount")
-  private Double intrastatAmount = null;
+  @SerializedName("intrastatamount")
+  private Double intrastatamount = null;
 
-  @SerializedName("LocalIntrastatAmount")
-  private Double localIntrastatAmount = null;
+  @SerializedName("localintrastatamount")
+  private Double localintrastatamount = null;
 
-  @SerializedName("DeliveryTerm")
-  private Integer deliveryTerm = null;
+  @SerializedName("deliveryterm")
+  private Integer deliveryterm = null;
 
-  @SerializedName("IncomeType_ID")
-  private String incomeTypeID = null;
+  @SerializedName("incometype_id")
+  private String incometypeId = null;
 
-  @SerializedName("SplitIntrastat")
-  private Boolean splitIntrastat = null;
+  @SerializedName("splitintrastat")
+  private Boolean splitintrastat = null;
 
-  @SerializedName("DemandStatus")
-  private Integer demandStatus = null;
+  @SerializedName("demandstatus")
+  private Integer demandstatus = null;
 
-  @SerializedName("StoredQuantity")
-  private Double storedQuantity = null;
+  @SerializedName("storedquantity")
+  private Double storedquantity = null;
 
-  @SerializedName("StoredUnitQuantity")
-  private Double storedUnitQuantity = null;
+  @SerializedName("storedunitquantity")
+  private Double storedunitquantity = null;
 
-  @SerializedName("DeliveredUnitQuantity")
-  private Double deliveredUnitQuantity = null;
+  @SerializedName("deliveredunitquantity")
+  private Double deliveredunitquantity = null;
 
-  @SerializedName("ExternalNumber")
-  private String externalNumber = null;
+  @SerializedName("externalnumber")
+  private String externalnumber = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Receivedorderrow displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Receivedorderrow id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Receivedorderrow classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Receivedorderrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * ID revidovaného objektu; ID objektu Objednávka přijatá - řádek
-   * @return revidedID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "ID revidovaného objektu; ID objektu Objednávka přijatá - řádek")
-  public String getRevidedID() {
-    return revidedID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Receivedorderrow revidedId(String revidedId) {
+    this.revidedId = revidedId;
+    return this;
   }
 
    /**
-   * Popis revize
-   * @return revisionDescription
+   * id revidovaného objektu; id objektu objednávka přijatá - řádek
+   * @return revidedId
   **/
-  @ApiModelProperty(example = "null", value = "Popis revize")
-  public String getRevisionDescription() {
-    return revisionDescription;
+  @ApiModelProperty(example = "null", value = "id revidovaného objektu; id objektu objednávka přijatá - řádek")
+  public String getRevidedId() {
+    return revidedId;
+  }
+
+  public void setRevidedId(String revidedId) {
+    this.revidedId = revidedId;
+  }
+
+  public Receivedorderrow revisiondescription(String revisiondescription) {
+    this.revisiondescription = revisiondescription;
+    return this;
   }
 
    /**
-   * Datum revize
-   * @return revisionDateDATE
+   * popis revize
+   * @return revisiondescription
   **/
-  @ApiModelProperty(example = "null", value = "Datum revize")
-  public DateTime getRevisionDateDATE() {
-    return revisionDateDATE;
+  @ApiModelProperty(example = "null", value = "popis revize")
+  public String getRevisiondescription() {
+    return revisiondescription;
+  }
+
+  public void setRevisiondescription(String revisiondescription) {
+    this.revisiondescription = revisiondescription;
+  }
+
+  public Receivedorderrow revisiondatedate(DateTime revisiondatedate) {
+    this.revisiondatedate = revisiondatedate;
+    return this;
   }
 
    /**
-   * Autor revize; ID objektu Uživatel
-   * @return revisionAuthorID
+   * datum revize
+   * @return revisiondatedate
   **/
-  @ApiModelProperty(example = "null", value = "Autor revize; ID objektu Uživatel")
-  public String getRevisionAuthorID() {
-    return revisionAuthorID;
+  @ApiModelProperty(example = "null", value = "datum revize")
+  public DateTime getRevisiondatedate() {
+    return revisiondatedate;
+  }
+
+  public void setRevisiondatedate(DateTime revisiondatedate) {
+    this.revisiondatedate = revisiondatedate;
+  }
+
+  public Receivedorderrow revisionauthorId(String revisionauthorId) {
+    this.revisionauthorId = revisionauthorId;
+    return this;
+  }
+
+   /**
+   * autor revize; id objektu uživatel
+   * @return revisionauthorId
+  **/
+  @ApiModelProperty(example = "null", value = "autor revize; id objektu uživatel")
+  public String getRevisionauthorId() {
+    return revisionauthorId;
+  }
+
+  public void setRevisionauthorId(String revisionauthorId) {
+    this.revisionauthorId = revisionauthorId;
+  }
+
+  public Receivedorderrow revision(Integer revision) {
+    this.revision = revision;
+    return this;
   }
 
    /**
@@ -358,238 +435,260 @@ public class Receivedorderrow   {
     return revision;
   }
 
-   /**
-   * Vlastník; ID objektu Objednávka přijatá [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Objednávka přijatá [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  public void setRevision(Integer revision) {
+    this.revision = revision;
   }
 
-  public Receivedorderrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Receivedorderrow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * vlastník; id objektu objednávka přijatá [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu objednávka přijatá [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Receivedorderrow tAmount(Double tAmount) {
-    this.tAmount = tAmount;
+  public Receivedorderrow posindex(Integer posindex) {
+    this.posindex = posindex;
     return this;
   }
 
    /**
-   * Celkem [persistentní položka]
-   * @return tAmount
+   * pořadí [persistentní položka]
+   * @return posindex
   **/
-  @ApiModelProperty(example = "null", value = "Celkem [persistentní položka]")
-  public Double getTAmount() {
-    return tAmount;
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
   }
 
-  public void setTAmount(Double tAmount) {
-    this.tAmount = tAmount;
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
-  public Receivedorderrow localTAmount(Double localTAmount) {
-    this.localTAmount = localTAmount;
+  public Receivedorderrow tamount(Double tamount) {
+    this.tamount = tamount;
     return this;
   }
 
    /**
-   * Celkem lokálně [persistentní položka]
-   * @return localTAmount
+   * celkem [persistentní položka]
+   * @return tamount
   **/
-  @ApiModelProperty(example = "null", value = "Celkem lokálně [persistentní položka]")
-  public Double getLocalTAmount() {
-    return localTAmount;
+  @ApiModelProperty(example = "null", value = "celkem [persistentní položka]")
+  public Double getTamount() {
+    return tamount;
   }
 
-  public void setLocalTAmount(Double localTAmount) {
-    this.localTAmount = localTAmount;
+  public void setTamount(Double tamount) {
+    this.tamount = tamount;
   }
 
-  public Receivedorderrow divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Receivedorderrow localtamount(Double localtamount) {
+    this.localtamount = localtamount;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * celkem lokálně [persistentní položka]
+   * @return localtamount
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "celkem lokálně [persistentní položka]")
+  public Double getLocaltamount() {
+    return localtamount;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setLocaltamount(Double localtamount) {
+    this.localtamount = localtamount;
   }
 
-  public Receivedorderrow busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Receivedorderrow divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Receivedorderrow busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Receivedorderrow busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * O.případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "O.případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Receivedorderrow tAmountWithoutVAT(Double tAmountWithoutVAT) {
-    this.tAmountWithoutVAT = tAmountWithoutVAT;
+  public Receivedorderrow bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Bez daně [persistentní položka]
-   * @return tAmountWithoutVAT
+   * o.případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Bez daně [persistentní položka]")
-  public Double getTAmountWithoutVAT() {
-    return tAmountWithoutVAT;
+  @ApiModelProperty(example = "null", value = "o.případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setTAmountWithoutVAT(Double tAmountWithoutVAT) {
-    this.tAmountWithoutVAT = tAmountWithoutVAT;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Receivedorderrow vATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public Receivedorderrow tamountwithoutvat(Double tamountwithoutvat) {
+    this.tamountwithoutvat = tamountwithoutvat;
     return this;
   }
 
    /**
-   * %DPH; ID objektu DPH sazba [persistentní položka]
-   * @return vATRateID
+   * bez daně [persistentní položka]
+   * @return tamountwithoutvat
   **/
-  @ApiModelProperty(example = "null", value = "%DPH; ID objektu DPH sazba [persistentní položka]")
-  public String getVATRateID() {
-    return vATRateID;
+  @ApiModelProperty(example = "null", value = "bez daně [persistentní položka]")
+  public Double getTamountwithoutvat() {
+    return tamountwithoutvat;
   }
 
-  public void setVATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public void setTamountwithoutvat(Double tamountwithoutvat) {
+    this.tamountwithoutvat = tamountwithoutvat;
   }
 
-   /**
-   * DPH sazba [persistentní položka]
-   * @return vATRate
-  **/
-  @ApiModelProperty(example = "null", value = "DPH sazba [persistentní položka]")
-  public Double getVATRate() {
-    return vATRate;
-  }
-
-  public Receivedorderrow localTAmountWithoutVAT(Double localTAmountWithoutVAT) {
-    this.localTAmountWithoutVAT = localTAmountWithoutVAT;
+  public Receivedorderrow vatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
     return this;
   }
 
    /**
-   * Bez daně lokálně [persistentní položka]
-   * @return localTAmountWithoutVAT
+   * %dph; id objektu dph sazba [persistentní položka]
+   * @return vatrateId
   **/
-  @ApiModelProperty(example = "null", value = "Bez daně lokálně [persistentní položka]")
-  public Double getLocalTAmountWithoutVAT() {
-    return localTAmountWithoutVAT;
+  @ApiModelProperty(example = "null", value = "%dph; id objektu dph sazba [persistentní položka]")
+  public String getVatrateId() {
+    return vatrateId;
   }
 
-  public void setLocalTAmountWithoutVAT(Double localTAmountWithoutVAT) {
-    this.localTAmountWithoutVAT = localTAmountWithoutVAT;
+  public void setVatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
   }
 
-  public Receivedorderrow busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Receivedorderrow vatrate(Double vatrate) {
+    this.vatrate = vatrate;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * dph sazba [persistentní položka]
+   * @return vatrate
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "dph sazba [persistentní položka]")
+  public Double getVatrate() {
+    return vatrate;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setVatrate(Double vatrate) {
+    this.vatrate = vatrate;
   }
 
-  public Receivedorderrow vATMode(Integer vATMode) {
-    this.vATMode = vATMode;
+  public Receivedorderrow localtamountwithoutvat(Double localtamountwithoutvat) {
+    this.localtamountwithoutvat = localtamountwithoutvat;
     return this;
   }
 
    /**
-   * Režim DPH [persistentní položka]
-   * @return vATMode
+   * bez daně lokálně [persistentní položka]
+   * @return localtamountwithoutvat
   **/
-  @ApiModelProperty(example = "null", value = "Režim DPH [persistentní položka]")
-  public Integer getVATMode() {
-    return vATMode;
+  @ApiModelProperty(example = "null", value = "bez daně lokálně [persistentní položka]")
+  public Double getLocaltamountwithoutvat() {
+    return localtamountwithoutvat;
   }
 
-  public void setVATMode(Integer vATMode) {
-    this.vATMode = vATMode;
+  public void setLocaltamountwithoutvat(Double localtamountwithoutvat) {
+    this.localtamountwithoutvat = localtamountwithoutvat;
   }
 
-  public Receivedorderrow rowType(Integer rowType) {
-    this.rowType = rowType;
+  public Receivedorderrow busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Typ řádku [persistentní položka]
-   * @return rowType
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Typ řádku [persistentní položka]")
-  public Integer getRowType() {
-    return rowType;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setRowType(Integer rowType) {
-    this.rowType = rowType;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
+  }
+
+  public Receivedorderrow vatmode(Integer vatmode) {
+    this.vatmode = vatmode;
+    return this;
+  }
+
+   /**
+   * režim dph [persistentní položka]
+   * @return vatmode
+  **/
+  @ApiModelProperty(example = "null", value = "režim dph [persistentní položka]")
+  public Integer getVatmode() {
+    return vatmode;
+  }
+
+  public void setVatmode(Integer vatmode) {
+    this.vatmode = vatmode;
+  }
+
+  public Receivedorderrow rowtype(Integer rowtype) {
+    this.rowtype = rowtype;
+    return this;
+  }
+
+   /**
+   * typ řádku [persistentní položka]
+   * @return rowtype
+  **/
+  @ApiModelProperty(example = "null", value = "typ řádku [persistentní položka]")
+  public Integer getRowtype() {
+    return rowtype;
+  }
+
+  public void setRowtype(Integer rowtype) {
+    this.rowtype = rowtype;
   }
 
   public Receivedorderrow text(String text) {
@@ -598,10 +697,10 @@ public class Receivedorderrow   {
   }
 
    /**
-   * Text [persistentní položka]
+   * text [persistentní položka]
    * @return text
   **/
-  @ApiModelProperty(example = "null", value = "Text [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "text [persistentní položka]")
   public String getText() {
     return text;
   }
@@ -610,58 +709,58 @@ public class Receivedorderrow   {
     this.text = text;
   }
 
-  public Receivedorderrow storeID(String storeID) {
-    this.storeID = storeID;
+  public Receivedorderrow storeId(String storeId) {
+    this.storeId = storeId;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
-  public Receivedorderrow storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Receivedorderrow storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * skladová karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
   }
 
-  public Receivedorderrow rowDiscount(Double rowDiscount) {
-    this.rowDiscount = rowDiscount;
+  public Receivedorderrow rowdiscount(Double rowdiscount) {
+    this.rowdiscount = rowdiscount;
     return this;
   }
 
    /**
    * Řád.sleva [persistentní položka]
-   * @return rowDiscount
+   * @return rowdiscount
   **/
   @ApiModelProperty(example = "null", value = "Řád.sleva [persistentní položka]")
-  public Double getRowDiscount() {
-    return rowDiscount;
+  public Double getRowdiscount() {
+    return rowdiscount;
   }
 
-  public void setRowDiscount(Double rowDiscount) {
-    this.rowDiscount = rowDiscount;
+  public void setRowdiscount(Double rowdiscount) {
+    this.rowdiscount = rowdiscount;
   }
 
   public Receivedorderrow quantity(Double quantity) {
@@ -670,10 +769,10 @@ public class Receivedorderrow   {
   }
 
    /**
-   * Počet v ev.jedn. [persistentní položka]
+   * počet v ev.jedn. [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet v ev.jedn. [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "počet v ev.jedn. [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -682,130 +781,130 @@ public class Receivedorderrow   {
     this.quantity = quantity;
   }
 
-  public Receivedorderrow qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Receivedorderrow qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
   }
 
-  public Receivedorderrow unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Receivedorderrow unitrate(Double unitrate) {
+    this.unitrate = unitrate;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return unitRate
+   * vztah [persistentní položka]
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
-  public Receivedorderrow unitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public Receivedorderrow unitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
     return this;
   }
 
    /**
-   * Počet
-   * @return unitQuantity
+   * počet
+   * @return unitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet")
-  public Double getUnitQuantity() {
-    return unitQuantity;
+  @ApiModelProperty(example = "null", value = "počet")
+  public Double getUnitquantity() {
+    return unitquantity;
   }
 
-  public void setUnitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public void setUnitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
   }
 
-  public Receivedorderrow unitPrice(Double unitPrice) {
-    this.unitPrice = unitPrice;
+  public Receivedorderrow unitprice(Double unitprice) {
+    this.unitprice = unitprice;
     return this;
   }
 
    /**
-   * J.cena [persistentní položka]
-   * @return unitPrice
+   * j.cena [persistentní položka]
+   * @return unitprice
   **/
-  @ApiModelProperty(example = "null", value = "J.cena [persistentní položka]")
-  public Double getUnitPrice() {
-    return unitPrice;
+  @ApiModelProperty(example = "null", value = "j.cena [persistentní položka]")
+  public Double getUnitprice() {
+    return unitprice;
   }
 
-  public void setUnitPrice(Double unitPrice) {
-    this.unitPrice = unitPrice;
+  public void setUnitprice(Double unitprice) {
+    this.unitprice = unitprice;
   }
 
-  public Receivedorderrow totalPrice(Double totalPrice) {
-    this.totalPrice = totalPrice;
+  public Receivedorderrow totalprice(Double totalprice) {
+    this.totalprice = totalprice;
     return this;
   }
 
    /**
-   * C.cena [persistentní položka]
-   * @return totalPrice
+   * c.cena [persistentní položka]
+   * @return totalprice
   **/
-  @ApiModelProperty(example = "null", value = "C.cena [persistentní položka]")
-  public Double getTotalPrice() {
-    return totalPrice;
+  @ApiModelProperty(example = "null", value = "c.cena [persistentní položka]")
+  public Double getTotalprice() {
+    return totalprice;
   }
 
-  public void setTotalPrice(Double totalPrice) {
-    this.totalPrice = totalPrice;
+  public void setTotalprice(Double totalprice) {
+    this.totalprice = totalprice;
   }
 
-  public Receivedorderrow totalPercentualDiscount(Double totalPercentualDiscount) {
-    this.totalPercentualDiscount = totalPercentualDiscount;
+  public Receivedorderrow totalpercentualdiscount(Double totalpercentualdiscount) {
+    this.totalpercentualdiscount = totalpercentualdiscount;
     return this;
   }
 
    /**
-   * Celk.sleva v %
-   * @return totalPercentualDiscount
+   * celk.sleva v %
+   * @return totalpercentualdiscount
   **/
-  @ApiModelProperty(example = "null", value = "Celk.sleva v %")
-  public Double getTotalPercentualDiscount() {
-    return totalPercentualDiscount;
+  @ApiModelProperty(example = "null", value = "celk.sleva v %")
+  public Double getTotalpercentualdiscount() {
+    return totalpercentualdiscount;
   }
 
-  public void setTotalPercentualDiscount(Double totalPercentualDiscount) {
-    this.totalPercentualDiscount = totalPercentualDiscount;
+  public void setTotalpercentualdiscount(Double totalpercentualdiscount) {
+    this.totalpercentualdiscount = totalpercentualdiscount;
   }
 
-  public Receivedorderrow totalDiscountFactor(Double totalDiscountFactor) {
-    this.totalDiscountFactor = totalDiscountFactor;
+  public Receivedorderrow totaldiscountfactor(Double totaldiscountfactor) {
+    this.totaldiscountfactor = totaldiscountfactor;
     return this;
   }
 
    /**
-   * Celk.slev.faktor
-   * @return totalDiscountFactor
+   * celk.slev.faktor
+   * @return totaldiscountfactor
   **/
-  @ApiModelProperty(example = "null", value = "Celk.slev.faktor")
-  public Double getTotalDiscountFactor() {
-    return totalDiscountFactor;
+  @ApiModelProperty(example = "null", value = "celk.slev.faktor")
+  public Double getTotaldiscountfactor() {
+    return totaldiscountfactor;
   }
 
-  public void setTotalDiscountFactor(Double totalDiscountFactor) {
-    this.totalDiscountFactor = totalDiscountFactor;
+  public void setTotaldiscountfactor(Double totaldiscountfactor) {
+    this.totaldiscountfactor = totaldiscountfactor;
   }
 
   public Receivedorderrow weight(Double weight) {
@@ -814,10 +913,10 @@ public class Receivedorderrow   {
   }
 
    /**
-   * Celk.hmot.
+   * celk.hmot.
    * @return weight
   **/
-  @ApiModelProperty(example = "null", value = "Celk.hmot.")
+  @ApiModelProperty(example = "null", value = "celk.hmot.")
   public Double getWeight() {
     return weight;
   }
@@ -832,10 +931,10 @@ public class Receivedorderrow   {
   }
 
    /**
-   * Celk.obj.
+   * celk.obj.
    * @return capacity
   **/
-  @ApiModelProperty(example = "null", value = "Celk.obj.")
+  @ApiModelProperty(example = "null", value = "celk.obj.")
   public Double getCapacity() {
     return capacity;
   }
@@ -844,706 +943,778 @@ public class Receivedorderrow   {
     this.capacity = capacity;
   }
 
-  public Receivedorderrow weightUnit(Integer weightUnit) {
-    this.weightUnit = weightUnit;
+  public Receivedorderrow weightunit(Integer weightunit) {
+    this.weightunit = weightunit;
     return this;
   }
 
    /**
-   * Jedn.celk.hm.
-   * @return weightUnit
+   * jedn.celk.hm.
+   * @return weightunit
   **/
-  @ApiModelProperty(example = "null", value = "Jedn.celk.hm.")
-  public Integer getWeightUnit() {
-    return weightUnit;
+  @ApiModelProperty(example = "null", value = "jedn.celk.hm.")
+  public Integer getWeightunit() {
+    return weightunit;
   }
 
-  public void setWeightUnit(Integer weightUnit) {
-    this.weightUnit = weightUnit;
+  public void setWeightunit(Integer weightunit) {
+    this.weightunit = weightunit;
   }
 
-  public Receivedorderrow capacityUnit(Integer capacityUnit) {
-    this.capacityUnit = capacityUnit;
+  public Receivedorderrow capacityunit(Integer capacityunit) {
+    this.capacityunit = capacityunit;
     return this;
   }
 
    /**
-   * Jedn.celk.obj.
-   * @return capacityUnit
+   * jedn.celk.obj.
+   * @return capacityunit
   **/
-  @ApiModelProperty(example = "null", value = "Jedn.celk.obj.")
-  public Integer getCapacityUnit() {
-    return capacityUnit;
+  @ApiModelProperty(example = "null", value = "jedn.celk.obj.")
+  public Integer getCapacityunit() {
+    return capacityunit;
   }
 
-  public void setCapacityUnit(Integer capacityUnit) {
-    this.capacityUnit = capacityUnit;
+  public void setCapacityunit(Integer capacityunit) {
+    this.capacityunit = capacityunit;
   }
 
-  public Receivedorderrow discountsExcluded(Boolean discountsExcluded) {
-    this.discountsExcluded = discountsExcluded;
+  public Receivedorderrow discountsexcluded(Boolean discountsexcluded) {
+    this.discountsexcluded = discountsexcluded;
     return this;
   }
 
    /**
-   * Vyloučeno ze slev [persistentní položka]
-   * @return discountsExcluded
+   * vyloučeno ze slev [persistentní položka]
+   * @return discountsexcluded
   **/
-  @ApiModelProperty(example = "null", value = "Vyloučeno ze slev [persistentní položka]")
-  public Boolean getDiscountsExcluded() {
-    return discountsExcluded;
+  @ApiModelProperty(example = "null", value = "vyloučeno ze slev [persistentní položka]")
+  public Boolean getDiscountsexcluded() {
+    return discountsexcluded;
   }
 
-  public void setDiscountsExcluded(Boolean discountsExcluded) {
-    this.discountsExcluded = discountsExcluded;
+  public void setDiscountsexcluded(Boolean discountsexcluded) {
+    this.discountsexcluded = discountsexcluded;
   }
 
-  public Receivedorderrow dealerDiscountExcluded(Boolean dealerDiscountExcluded) {
-    this.dealerDiscountExcluded = dealerDiscountExcluded;
+  public Receivedorderrow dealerdiscountexcluded(Boolean dealerdiscountexcluded) {
+    this.dealerdiscountexcluded = dealerdiscountexcluded;
     return this;
   }
 
    /**
-   * Vyloučeno z dealerských slev [persistentní položka]
-   * @return dealerDiscountExcluded
+   * vyloučeno z dealerských slev [persistentní položka]
+   * @return dealerdiscountexcluded
   **/
-  @ApiModelProperty(example = "null", value = "Vyloučeno z dealerských slev [persistentní položka]")
-  public Boolean getDealerDiscountExcluded() {
-    return dealerDiscountExcluded;
+  @ApiModelProperty(example = "null", value = "vyloučeno z dealerských slev [persistentní položka]")
+  public Boolean getDealerdiscountexcluded() {
+    return dealerdiscountexcluded;
   }
 
-  public void setDealerDiscountExcluded(Boolean dealerDiscountExcluded) {
-    this.dealerDiscountExcluded = dealerDiscountExcluded;
+  public void setDealerdiscountexcluded(Boolean dealerdiscountexcluded) {
+    this.dealerdiscountexcluded = dealerdiscountexcluded;
   }
 
-  public Receivedorderrow individualDiscountExcluded(Boolean individualDiscountExcluded) {
-    this.individualDiscountExcluded = individualDiscountExcluded;
+  public Receivedorderrow individualdiscountexcluded(Boolean individualdiscountexcluded) {
+    this.individualdiscountexcluded = individualdiscountexcluded;
     return this;
   }
 
    /**
-   * Vyloučeno z individuálních slev [persistentní položka]
-   * @return individualDiscountExcluded
+   * vyloučeno z individuálních slev [persistentní položka]
+   * @return individualdiscountexcluded
   **/
-  @ApiModelProperty(example = "null", value = "Vyloučeno z individuálních slev [persistentní položka]")
-  public Boolean getIndividualDiscountExcluded() {
-    return individualDiscountExcluded;
+  @ApiModelProperty(example = "null", value = "vyloučeno z individuálních slev [persistentní položka]")
+  public Boolean getIndividualdiscountexcluded() {
+    return individualdiscountexcluded;
   }
 
-  public void setIndividualDiscountExcluded(Boolean individualDiscountExcluded) {
-    this.individualDiscountExcluded = individualDiscountExcluded;
+  public void setIndividualdiscountexcluded(Boolean individualdiscountexcluded) {
+    this.individualdiscountexcluded = individualdiscountexcluded;
   }
 
-  public Receivedorderrow financialDiscountExcluded(Boolean financialDiscountExcluded) {
-    this.financialDiscountExcluded = financialDiscountExcluded;
+  public Receivedorderrow financialdiscountexcluded(Boolean financialdiscountexcluded) {
+    this.financialdiscountexcluded = financialdiscountexcluded;
     return this;
   }
 
    /**
-   * Vyloučeno z finančních slev [persistentní položka]
-   * @return financialDiscountExcluded
+   * vyloučeno z finančních slev [persistentní položka]
+   * @return financialdiscountexcluded
   **/
-  @ApiModelProperty(example = "null", value = "Vyloučeno z finančních slev [persistentní položka]")
-  public Boolean getFinancialDiscountExcluded() {
-    return financialDiscountExcluded;
+  @ApiModelProperty(example = "null", value = "vyloučeno z finančních slev [persistentní položka]")
+  public Boolean getFinancialdiscountexcluded() {
+    return financialdiscountexcluded;
   }
 
-  public void setFinancialDiscountExcluded(Boolean financialDiscountExcluded) {
-    this.financialDiscountExcluded = financialDiscountExcluded;
+  public void setFinancialdiscountexcluded(Boolean financialdiscountexcluded) {
+    this.financialdiscountexcluded = financialdiscountexcluded;
   }
 
-  public Receivedorderrow quantityDiscountExcluded(Boolean quantityDiscountExcluded) {
-    this.quantityDiscountExcluded = quantityDiscountExcluded;
+  public Receivedorderrow quantitydiscountexcluded(Boolean quantitydiscountexcluded) {
+    this.quantitydiscountexcluded = quantitydiscountexcluded;
     return this;
   }
 
    /**
-   * Vyloučeno z množstevních slev [persistentní položka]
-   * @return quantityDiscountExcluded
+   * vyloučeno z množstevních slev [persistentní položka]
+   * @return quantitydiscountexcluded
   **/
-  @ApiModelProperty(example = "null", value = "Vyloučeno z množstevních slev [persistentní položka]")
-  public Boolean getQuantityDiscountExcluded() {
-    return quantityDiscountExcluded;
+  @ApiModelProperty(example = "null", value = "vyloučeno z množstevních slev [persistentní položka]")
+  public Boolean getQuantitydiscountexcluded() {
+    return quantitydiscountexcluded;
   }
 
-  public void setQuantityDiscountExcluded(Boolean quantityDiscountExcluded) {
-    this.quantityDiscountExcluded = quantityDiscountExcluded;
+  public void setQuantitydiscountexcluded(Boolean quantitydiscountexcluded) {
+    this.quantitydiscountexcluded = quantitydiscountexcluded;
   }
 
-  public Receivedorderrow documentDiscountExcluded(Boolean documentDiscountExcluded) {
-    this.documentDiscountExcluded = documentDiscountExcluded;
+  public Receivedorderrow documentdiscountexcluded(Boolean documentdiscountexcluded) {
+    this.documentdiscountexcluded = documentdiscountexcluded;
     return this;
   }
 
    /**
-   * Vyloučeno z dodatečné slevy [persistentní položka]
-   * @return documentDiscountExcluded
+   * vyloučeno z dodatečné slevy [persistentní položka]
+   * @return documentdiscountexcluded
   **/
-  @ApiModelProperty(example = "null", value = "Vyloučeno z dodatečné slevy [persistentní položka]")
-  public Boolean getDocumentDiscountExcluded() {
-    return documentDiscountExcluded;
+  @ApiModelProperty(example = "null", value = "vyloučeno z dodatečné slevy [persistentní položka]")
+  public Boolean getDocumentdiscountexcluded() {
+    return documentdiscountexcluded;
   }
 
-  public void setDocumentDiscountExcluded(Boolean documentDiscountExcluded) {
-    this.documentDiscountExcluded = documentDiscountExcluded;
+  public void setDocumentdiscountexcluded(Boolean documentdiscountexcluded) {
+    this.documentdiscountexcluded = documentdiscountexcluded;
   }
 
-   /**
-   * Na řádku je sleva
-   * @return isAnyDiscount
-  **/
-  @ApiModelProperty(example = "null", value = "Na řádku je sleva")
-  public Boolean getIsAnyDiscount() {
-    return isAnyDiscount;
-  }
-
-  public Receivedorderrow dealerDiscount(Double dealerDiscount) {
-    this.dealerDiscount = dealerDiscount;
+  public Receivedorderrow isanydiscount(Boolean isanydiscount) {
+    this.isanydiscount = isanydiscount;
     return this;
   }
 
    /**
-   * Deal.sleva [persistentní položka]
-   * @return dealerDiscount
+   * na řádku je sleva
+   * @return isanydiscount
   **/
-  @ApiModelProperty(example = "null", value = "Deal.sleva [persistentní položka]")
-  public Double getDealerDiscount() {
-    return dealerDiscount;
+  @ApiModelProperty(example = "null", value = "na řádku je sleva")
+  public Boolean getIsanydiscount() {
+    return isanydiscount;
   }
 
-  public void setDealerDiscount(Double dealerDiscount) {
-    this.dealerDiscount = dealerDiscount;
+  public void setIsanydiscount(Boolean isanydiscount) {
+    this.isanydiscount = isanydiscount;
   }
 
-  public Receivedorderrow quantityDiscount(Double quantityDiscount) {
-    this.quantityDiscount = quantityDiscount;
+  public Receivedorderrow dealerdiscount(Double dealerdiscount) {
+    this.dealerdiscount = dealerdiscount;
     return this;
   }
 
    /**
-   * Kus.sleva [persistentní položka]
-   * @return quantityDiscount
+   * deal.sleva [persistentní položka]
+   * @return dealerdiscount
   **/
-  @ApiModelProperty(example = "null", value = "Kus.sleva [persistentní položka]")
-  public Double getQuantityDiscount() {
-    return quantityDiscount;
+  @ApiModelProperty(example = "null", value = "deal.sleva [persistentní položka]")
+  public Double getDealerdiscount() {
+    return dealerdiscount;
   }
 
-  public void setQuantityDiscount(Double quantityDiscount) {
-    this.quantityDiscount = quantityDiscount;
+  public void setDealerdiscount(Double dealerdiscount) {
+    this.dealerdiscount = dealerdiscount;
   }
 
-  public Receivedorderrow intrastatRegionID(String intrastatRegionID) {
-    this.intrastatRegionID = intrastatRegionID;
+  public Receivedorderrow quantitydiscount(Double quantitydiscount) {
+    this.quantitydiscount = quantitydiscount;
     return this;
   }
 
    /**
-   * Kraj původu; ID objektu Kraj [persistentní položka]
-   * @return intrastatRegionID
+   * kus.sleva [persistentní položka]
+   * @return quantitydiscount
   **/
-  @ApiModelProperty(example = "null", value = "Kraj původu; ID objektu Kraj [persistentní položka]")
-  public String getIntrastatRegionID() {
-    return intrastatRegionID;
+  @ApiModelProperty(example = "null", value = "kus.sleva [persistentní položka]")
+  public Double getQuantitydiscount() {
+    return quantitydiscount;
   }
 
-  public void setIntrastatRegionID(String intrastatRegionID) {
-    this.intrastatRegionID = intrastatRegionID;
+  public void setQuantitydiscount(Double quantitydiscount) {
+    this.quantitydiscount = quantitydiscount;
   }
 
-  public Receivedorderrow toIntrastat(Boolean toIntrastat) {
-    this.toIntrastat = toIntrastat;
+  public Receivedorderrow intrastatregionId(String intrastatregionId) {
+    this.intrastatregionId = intrastatregionId;
     return this;
   }
 
    /**
-   * Do Intrastat [persistentní položka]
-   * @return toIntrastat
+   * kraj původu; id objektu kraj [persistentní položka]
+   * @return intrastatregionId
   **/
-  @ApiModelProperty(example = "null", value = "Do Intrastat [persistentní položka]")
-  public Boolean getToIntrastat() {
-    return toIntrastat;
+  @ApiModelProperty(example = "null", value = "kraj původu; id objektu kraj [persistentní položka]")
+  public String getIntrastatregionId() {
+    return intrastatregionId;
   }
 
-  public void setToIntrastat(Boolean toIntrastat) {
-    this.toIntrastat = toIntrastat;
+  public void setIntrastatregionId(String intrastatregionId) {
+    this.intrastatregionId = intrastatregionId;
   }
 
-  public Receivedorderrow toESL(Boolean toESL) {
-    this.toESL = toESL;
+  public Receivedorderrow tointrastat(Boolean tointrastat) {
+    this.tointrastat = tointrastat;
     return this;
   }
 
    /**
-   * Do ESL [persistentní položka]
-   * @return toESL
+   * do intrastat [persistentní položka]
+   * @return tointrastat
   **/
-  @ApiModelProperty(example = "null", value = "Do ESL [persistentní položka]")
-  public Boolean getToESL() {
-    return toESL;
+  @ApiModelProperty(example = "null", value = "do intrastat [persistentní položka]")
+  public Boolean getTointrastat() {
+    return tointrastat;
   }
 
-  public void setToESL(Boolean toESL) {
-    this.toESL = toESL;
+  public void setTointrastat(Boolean tointrastat) {
+    this.tointrastat = tointrastat;
   }
 
-   /**
-   * Do ESL
-   * @return eSLStatus
-  **/
-  @ApiModelProperty(example = "null", value = "Do ESL")
-  public Integer getESLStatus() {
-    return eSLStatus;
-  }
-
-  public Receivedorderrow statisticAmount(Double statisticAmount) {
-    this.statisticAmount = statisticAmount;
+  public Receivedorderrow toesl(Boolean toesl) {
+    this.toesl = toesl;
     return this;
   }
 
    /**
-   * Stat.hodnota [persistentní položka]
-   * @return statisticAmount
+   * do esl [persistentní položka]
+   * @return toesl
   **/
-  @ApiModelProperty(example = "null", value = "Stat.hodnota [persistentní položka]")
-  public Double getStatisticAmount() {
-    return statisticAmount;
+  @ApiModelProperty(example = "null", value = "do esl [persistentní položka]")
+  public Boolean getToesl() {
+    return toesl;
   }
 
-  public void setStatisticAmount(Double statisticAmount) {
-    this.statisticAmount = statisticAmount;
+  public void setToesl(Boolean toesl) {
+    this.toesl = toesl;
   }
 
-  public Receivedorderrow intrastatOutputStatisticID(String intrastatOutputStatisticID) {
-    this.intrastatOutputStatisticID = intrastatOutputStatisticID;
+  public Receivedorderrow eslstatus(Integer eslstatus) {
+    this.eslstatus = eslstatus;
     return this;
   }
 
    /**
-   * Def.stat.hodnoty na výst.; ID objektu Definice statistické hodnoty na výstupu [persistentní položka]
-   * @return intrastatOutputStatisticID
+   * do esl
+   * @return eslstatus
   **/
-  @ApiModelProperty(example = "null", value = "Def.stat.hodnoty na výst.; ID objektu Definice statistické hodnoty na výstupu [persistentní položka]")
-  public String getIntrastatOutputStatisticID() {
-    return intrastatOutputStatisticID;
+  @ApiModelProperty(example = "null", value = "do esl")
+  public Integer getEslstatus() {
+    return eslstatus;
   }
 
-  public void setIntrastatOutputStatisticID(String intrastatOutputStatisticID) {
-    this.intrastatOutputStatisticID = intrastatOutputStatisticID;
+  public void setEslstatus(Integer eslstatus) {
+    this.eslstatus = eslstatus;
   }
 
-  public Receivedorderrow eSLIndicatorID(String eSLIndicatorID) {
-    this.eSLIndicatorID = eSLIndicatorID;
+  public Receivedorderrow statisticamount(Double statisticamount) {
+    this.statisticamount = statisticamount;
     return this;
   }
 
    /**
-   * Rozlišení typu plnění(ESL); ID objektu Rozlišení typu plnění(ESL) [persistentní položka]
-   * @return eSLIndicatorID
+   * stat.hodnota [persistentní položka]
+   * @return statisticamount
   **/
-  @ApiModelProperty(example = "null", value = "Rozlišení typu plnění(ESL); ID objektu Rozlišení typu plnění(ESL) [persistentní položka]")
-  public String getESLIndicatorID() {
-    return eSLIndicatorID;
+  @ApiModelProperty(example = "null", value = "stat.hodnota [persistentní položka]")
+  public Double getStatisticamount() {
+    return statisticamount;
   }
 
-  public void setESLIndicatorID(String eSLIndicatorID) {
-    this.eSLIndicatorID = eSLIndicatorID;
+  public void setStatisticamount(Double statisticamount) {
+    this.statisticamount = statisticamount;
   }
 
-  public Receivedorderrow mOSSServiceID(String mOSSServiceID) {
-    this.mOSSServiceID = mOSSServiceID;
+  public Receivedorderrow intrastatoutputstatisticId(String intrastatoutputstatisticId) {
+    this.intrastatoutputstatisticId = intrastatoutputstatisticId;
     return this;
   }
 
    /**
-   * Druh poskytnuté služby MOSS; ID objektu Druhy poskytovaných služeb MOSS [persistentní položka]
-   * @return mOSSServiceID
+   * def.stat.hodnoty na výst.; id objektu definice statistické hodnoty na výstupu [persistentní položka]
+   * @return intrastatoutputstatisticId
   **/
-  @ApiModelProperty(example = "null", value = "Druh poskytnuté služby MOSS; ID objektu Druhy poskytovaných služeb MOSS [persistentní položka]")
-  public String getMOSSServiceID() {
-    return mOSSServiceID;
+  @ApiModelProperty(example = "null", value = "def.stat.hodnoty na výst.; id objektu definice statistické hodnoty na výstupu [persistentní položka]")
+  public String getIntrastatoutputstatisticId() {
+    return intrastatoutputstatisticId;
   }
 
-  public void setMOSSServiceID(String mOSSServiceID) {
-    this.mOSSServiceID = mOSSServiceID;
+  public void setIntrastatoutputstatisticId(String intrastatoutputstatisticId) {
+    this.intrastatoutputstatisticId = intrastatoutputstatisticId;
   }
 
-  public Receivedorderrow dRCArticleID(String dRCArticleID) {
-    this.dRCArticleID = dRCArticleID;
+  public Receivedorderrow eslindicatorId(String eslindicatorId) {
+    this.eslindicatorId = eslindicatorId;
     return this;
   }
 
    /**
-   * Typ plnění; ID objektu Kód typu plnění [persistentní položka]
-   * @return dRCArticleID
+   * rozlišení typu plnění(esl); id objektu rozlišení typu plnění(esl) [persistentní položka]
+   * @return eslindicatorId
   **/
-  @ApiModelProperty(example = "null", value = "Typ plnění; ID objektu Kód typu plnění [persistentní položka]")
-  public String getDRCArticleID() {
-    return dRCArticleID;
+  @ApiModelProperty(example = "null", value = "rozlišení typu plnění(esl); id objektu rozlišení typu plnění(esl) [persistentní položka]")
+  public String getEslindicatorId() {
+    return eslindicatorId;
   }
 
-  public void setDRCArticleID(String dRCArticleID) {
-    this.dRCArticleID = dRCArticleID;
+  public void setEslindicatorId(String eslindicatorId) {
+    this.eslindicatorId = eslindicatorId;
   }
 
-  public Receivedorderrow dRCQuantity(Double dRCQuantity) {
-    this.dRCQuantity = dRCQuantity;
+  public Receivedorderrow mossserviceId(String mossserviceId) {
+    this.mossserviceId = mossserviceId;
     return this;
   }
 
    /**
-   * Vykazované množství [persistentní položka]
-   * @return dRCQuantity
+   * druh poskytnuté služby moss; id objektu druhy poskytovaných služeb moss [persistentní položka]
+   * @return mossserviceId
   **/
-  @ApiModelProperty(example = "null", value = "Vykazované množství [persistentní položka]")
-  public Double getDRCQuantity() {
-    return dRCQuantity;
+  @ApiModelProperty(example = "null", value = "druh poskytnuté služby moss; id objektu druhy poskytovaných služeb moss [persistentní položka]")
+  public String getMossserviceId() {
+    return mossserviceId;
   }
 
-  public void setDRCQuantity(Double dRCQuantity) {
-    this.dRCQuantity = dRCQuantity;
+  public void setMossserviceId(String mossserviceId) {
+    this.mossserviceId = mossserviceId;
   }
 
-  public Receivedorderrow dRCQUnit(String dRCQUnit) {
-    this.dRCQUnit = dRCQUnit;
+  public Receivedorderrow drcarticleId(String drcarticleId) {
+    this.drcarticleId = drcarticleId;
     return this;
   }
 
    /**
-   * Vykazovaná jednotka [persistentní položka]
-   * @return dRCQUnit
+   * typ plnění; id objektu kód typu plnění [persistentní položka]
+   * @return drcarticleId
   **/
-  @ApiModelProperty(example = "null", value = "Vykazovaná jednotka [persistentní položka]")
-  public String getDRCQUnit() {
-    return dRCQUnit;
+  @ApiModelProperty(example = "null", value = "typ plnění; id objektu kód typu plnění [persistentní položka]")
+  public String getDrcarticleId() {
+    return drcarticleId;
   }
 
-  public void setDRCQUnit(String dRCQUnit) {
-    this.dRCQUnit = dRCQUnit;
+  public void setDrcarticleId(String drcarticleId) {
+    this.drcarticleId = drcarticleId;
   }
 
-  public Receivedorderrow priceID(String priceID) {
-    this.priceID = priceID;
+  public Receivedorderrow drcquantity(Double drcquantity) {
+    this.drcquantity = drcquantity;
     return this;
   }
 
    /**
-   * Definice ceny; ID objektu Definice ceny [persistentní položka]
-   * @return priceID
+   * vykazované množství [persistentní položka]
+   * @return drcquantity
   **/
-  @ApiModelProperty(example = "null", value = "Definice ceny; ID objektu Definice ceny [persistentní položka]")
-  public String getPriceID() {
-    return priceID;
+  @ApiModelProperty(example = "null", value = "vykazované množství [persistentní položka]")
+  public Double getDrcquantity() {
+    return drcquantity;
   }
 
-  public void setPriceID(String priceID) {
-    this.priceID = priceID;
+  public void setDrcquantity(Double drcquantity) {
+    this.drcquantity = drcquantity;
   }
 
-  public Receivedorderrow reservationID(Receivedorderrow reservationID) {
-    this.reservationID = reservationID;
+  public Receivedorderrow drcqunit(String drcqunit) {
+    this.drcqunit = drcqunit;
     return this;
   }
 
    /**
-   * Get reservationID
-   * @return reservationID
+   * vykazovaná jednotka [persistentní položka]
+   * @return drcqunit
+  **/
+  @ApiModelProperty(example = "null", value = "vykazovaná jednotka [persistentní položka]")
+  public String getDrcqunit() {
+    return drcqunit;
+  }
+
+  public void setDrcqunit(String drcqunit) {
+    this.drcqunit = drcqunit;
+  }
+
+  public Receivedorderrow priceId(String priceId) {
+    this.priceId = priceId;
+    return this;
+  }
+
+   /**
+   * definice ceny; id objektu definice ceny [persistentní položka]
+   * @return priceId
+  **/
+  @ApiModelProperty(example = "null", value = "definice ceny; id objektu definice ceny [persistentní položka]")
+  public String getPriceId() {
+    return priceId;
+  }
+
+  public void setPriceId(String priceId) {
+    this.priceId = priceId;
+  }
+
+  public Receivedorderrow reservationId(Receivedorderrow reservationId) {
+    this.reservationId = reservationId;
+    return this;
+  }
+
+   /**
+   * Get reservationId
+   * @return reservationId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Receivedorderrow getReservationID() {
-    return reservationID;
+  public Receivedorderrow getReservationId() {
+    return reservationId;
   }
 
-  public void setReservationID(Receivedorderrow reservationID) {
-    this.reservationID = reservationID;
+  public void setReservationId(Receivedorderrow reservationId) {
+    this.reservationId = reservationId;
   }
 
-  public Receivedorderrow deliveredQuantity(Double deliveredQuantity) {
-    this.deliveredQuantity = deliveredQuantity;
+  public Receivedorderrow deliveredquantity(Double deliveredquantity) {
+    this.deliveredquantity = deliveredquantity;
     return this;
   }
 
    /**
-   * Dodáno [persistentní položka]
-   * @return deliveredQuantity
+   * dodáno [persistentní položka]
+   * @return deliveredquantity
   **/
-  @ApiModelProperty(example = "null", value = "Dodáno [persistentní položka]")
-  public Double getDeliveredQuantity() {
-    return deliveredQuantity;
+  @ApiModelProperty(example = "null", value = "dodáno [persistentní položka]")
+  public Double getDeliveredquantity() {
+    return deliveredquantity;
   }
 
-  public void setDeliveredQuantity(Double deliveredQuantity) {
-    this.deliveredQuantity = deliveredQuantity;
+  public void setDeliveredquantity(Double deliveredquantity) {
+    this.deliveredquantity = deliveredquantity;
   }
 
-   /**
-   * Marže na řádku
-   * @return rowMargin
-  **/
-  @ApiModelProperty(example = "null", value = "Marže na řádku")
-  public Double getRowMargin() {
-    return rowMargin;
-  }
-
-   /**
-   * Skl.cena na řádku
-   * @return rowStorePrice
-  **/
-  @ApiModelProperty(example = "null", value = "Skl.cena na řádku")
-  public Double getRowStorePrice() {
-    return rowStorePrice;
-  }
-
-  public Receivedorderrow deliveryDateDATE(DateTime deliveryDateDATE) {
-    this.deliveryDateDATE = deliveryDateDATE;
+  public Receivedorderrow rowmargin(Double rowmargin) {
+    this.rowmargin = rowmargin;
     return this;
   }
 
    /**
-   * Datum dod. [persistentní položka]
-   * @return deliveryDateDATE
+   * marže na řádku
+   * @return rowmargin
   **/
-  @ApiModelProperty(example = "null", value = "Datum dod. [persistentní položka]")
-  public DateTime getDeliveryDateDATE() {
-    return deliveryDateDATE;
+  @ApiModelProperty(example = "null", value = "marže na řádku")
+  public Double getRowmargin() {
+    return rowmargin;
   }
 
-  public void setDeliveryDateDATE(DateTime deliveryDateDATE) {
-    this.deliveryDateDATE = deliveryDateDATE;
+  public void setRowmargin(Double rowmargin) {
+    this.rowmargin = rowmargin;
   }
 
-   /**
-   * Zdrojový řádek [persistentní položka]
-   * @return provideRowID
-  **/
-  @ApiModelProperty(example = "null", value = "Zdrojový řádek [persistentní položka]")
-  public String getProvideRowID() {
-    return provideRowID;
+  public Receivedorderrow rowstoreprice(Double rowstoreprice) {
+    this.rowstoreprice = rowstoreprice;
+    return this;
   }
 
    /**
-   * OID zdrojového dokladu [persistentní položka]
-   * @return provideID
+   * skl.cena na řádku
+   * @return rowstoreprice
   **/
-  @ApiModelProperty(example = "null", value = "OID zdrojového dokladu [persistentní položka]")
-  public String getProvideID() {
-    return provideID;
+  @ApiModelProperty(example = "null", value = "skl.cena na řádku")
+  public Double getRowstoreprice() {
+    return rowstoreprice;
+  }
+
+  public void setRowstoreprice(Double rowstoreprice) {
+    this.rowstoreprice = rowstoreprice;
+  }
+
+  public Receivedorderrow deliverydatedate(DateTime deliverydatedate) {
+    this.deliverydatedate = deliverydatedate;
+    return this;
   }
 
    /**
-   * Dodáno (popis)
-   * @return deliveredQuantityStr
+   * datum dod. [persistentní položka]
+   * @return deliverydatedate
   **/
-  @ApiModelProperty(example = "null", value = "Dodáno (popis)")
-  public String getDeliveredQuantityStr() {
-    return deliveredQuantityStr;
+  @ApiModelProperty(example = "null", value = "datum dod. [persistentní položka]")
+  public DateTime getDeliverydatedate() {
+    return deliverydatedate;
+  }
+
+  public void setDeliverydatedate(DateTime deliverydatedate) {
+    this.deliverydatedate = deliverydatedate;
+  }
+
+  public Receivedorderrow providerowId(String providerowId) {
+    this.providerowId = providerowId;
+    return this;
+  }
+
+   /**
+   * zdrojový řádek [persistentní položka]
+   * @return providerowId
+  **/
+  @ApiModelProperty(example = "null", value = "zdrojový řádek [persistentní položka]")
+  public String getProviderowId() {
+    return providerowId;
+  }
+
+  public void setProviderowId(String providerowId) {
+    this.providerowId = providerowId;
+  }
+
+  public Receivedorderrow provideId(String provideId) {
+    this.provideId = provideId;
+    return this;
+  }
+
+   /**
+   * oid zdrojového dokladu [persistentní položka]
+   * @return provideId
+  **/
+  @ApiModelProperty(example = "null", value = "oid zdrojového dokladu [persistentní položka]")
+  public String getProvideId() {
+    return provideId;
+  }
+
+  public void setProvideId(String provideId) {
+    this.provideId = provideId;
+  }
+
+  public Receivedorderrow deliveredquantitystr(String deliveredquantitystr) {
+    this.deliveredquantitystr = deliveredquantitystr;
+    return this;
+  }
+
+   /**
+   * dodáno (popis)
+   * @return deliveredquantitystr
+  **/
+  @ApiModelProperty(example = "null", value = "dodáno (popis)")
+  public String getDeliveredquantitystr() {
+    return deliveredquantitystr;
+  }
+
+  public void setDeliveredquantitystr(String deliveredquantitystr) {
+    this.deliveredquantitystr = deliveredquantitystr;
+  }
+
+  public Receivedorderrow providerowdisplayname(String providerowdisplayname) {
+    this.providerowdisplayname = providerowdisplayname;
+    return this;
   }
 
    /**
    * Čerpáno z
-   * @return provideRowDisplayName
+   * @return providerowdisplayname
   **/
   @ApiModelProperty(example = "null", value = "Čerpáno z")
-  public String getProvideRowDisplayName() {
-    return provideRowDisplayName;
+  public String getProviderowdisplayname() {
+    return providerowdisplayname;
   }
 
-  public Receivedorderrow intrastatStatus(Integer intrastatStatus) {
-    this.intrastatStatus = intrastatStatus;
+  public void setProviderowdisplayname(String providerowdisplayname) {
+    this.providerowdisplayname = providerowdisplayname;
+  }
+
+  public Receivedorderrow intrastatstatus(Integer intrastatstatus) {
+    this.intrastatstatus = intrastatstatus;
     return this;
   }
 
    /**
-   * Intrastat
-   * @return intrastatStatus
+   * intrastat
+   * @return intrastatstatus
   **/
-  @ApiModelProperty(example = "null", value = "Intrastat")
-  public Integer getIntrastatStatus() {
-    return intrastatStatus;
+  @ApiModelProperty(example = "null", value = "intrastat")
+  public Integer getIntrastatstatus() {
+    return intrastatstatus;
   }
 
-  public void setIntrastatStatus(Integer intrastatStatus) {
-    this.intrastatStatus = intrastatStatus;
+  public void setIntrastatstatus(Integer intrastatstatus) {
+    this.intrastatstatus = intrastatstatus;
   }
 
-  public Receivedorderrow intrastatAmount(Double intrastatAmount) {
-    this.intrastatAmount = intrastatAmount;
+  public Receivedorderrow intrastatamount(Double intrastatamount) {
+    this.intrastatamount = intrastatamount;
     return this;
   }
 
    /**
-   * Částka pro Intrastat
-   * @return intrastatAmount
+   * Částka pro intrastat
+   * @return intrastatamount
   **/
-  @ApiModelProperty(example = "null", value = "Částka pro Intrastat")
-  public Double getIntrastatAmount() {
-    return intrastatAmount;
+  @ApiModelProperty(example = "null", value = "Částka pro intrastat")
+  public Double getIntrastatamount() {
+    return intrastatamount;
   }
 
-  public void setIntrastatAmount(Double intrastatAmount) {
-    this.intrastatAmount = intrastatAmount;
+  public void setIntrastatamount(Double intrastatamount) {
+    this.intrastatamount = intrastatamount;
   }
 
-  public Receivedorderrow localIntrastatAmount(Double localIntrastatAmount) {
-    this.localIntrastatAmount = localIntrastatAmount;
+  public Receivedorderrow localintrastatamount(Double localintrastatamount) {
+    this.localintrastatamount = localintrastatamount;
     return this;
   }
 
    /**
-   * Lokální částka pro Intrastat
-   * @return localIntrastatAmount
+   * lokální částka pro intrastat
+   * @return localintrastatamount
   **/
-  @ApiModelProperty(example = "null", value = "Lokální částka pro Intrastat")
-  public Double getLocalIntrastatAmount() {
-    return localIntrastatAmount;
+  @ApiModelProperty(example = "null", value = "lokální částka pro intrastat")
+  public Double getLocalintrastatamount() {
+    return localintrastatamount;
   }
 
-  public void setLocalIntrastatAmount(Double localIntrastatAmount) {
-    this.localIntrastatAmount = localIntrastatAmount;
+  public void setLocalintrastatamount(Double localintrastatamount) {
+    this.localintrastatamount = localintrastatamount;
   }
 
-  public Receivedorderrow deliveryTerm(Integer deliveryTerm) {
-    this.deliveryTerm = deliveryTerm;
+  public Receivedorderrow deliveryterm(Integer deliveryterm) {
+    this.deliveryterm = deliveryterm;
     return this;
   }
 
    /**
-   * Délka dodání
-   * @return deliveryTerm
+   * délka dodání
+   * @return deliveryterm
   **/
-  @ApiModelProperty(example = "null", value = "Délka dodání")
-  public Integer getDeliveryTerm() {
-    return deliveryTerm;
+  @ApiModelProperty(example = "null", value = "délka dodání")
+  public Integer getDeliveryterm() {
+    return deliveryterm;
   }
 
-  public void setDeliveryTerm(Integer deliveryTerm) {
-    this.deliveryTerm = deliveryTerm;
+  public void setDeliveryterm(Integer deliveryterm) {
+    this.deliveryterm = deliveryterm;
   }
 
-  public Receivedorderrow incomeTypeID(String incomeTypeID) {
-    this.incomeTypeID = incomeTypeID;
+  public Receivedorderrow incometypeId(String incometypeId) {
+    this.incometypeId = incometypeId;
     return this;
   }
 
    /**
-   * Typ příjmu; ID objektu Typ příjmu [persistentní položka]
-   * @return incomeTypeID
+   * typ příjmu; id objektu typ příjmu [persistentní položka]
+   * @return incometypeId
   **/
-  @ApiModelProperty(example = "null", value = "Typ příjmu; ID objektu Typ příjmu [persistentní položka]")
-  public String getIncomeTypeID() {
-    return incomeTypeID;
+  @ApiModelProperty(example = "null", value = "typ příjmu; id objektu typ příjmu [persistentní položka]")
+  public String getIncometypeId() {
+    return incometypeId;
   }
 
-  public void setIncomeTypeID(String incomeTypeID) {
-    this.incomeTypeID = incomeTypeID;
+  public void setIncometypeId(String incometypeId) {
+    this.incometypeId = incometypeId;
   }
 
-  public Receivedorderrow splitIntrastat(Boolean splitIntrastat) {
-    this.splitIntrastat = splitIntrastat;
+  public Receivedorderrow splitintrastat(Boolean splitintrastat) {
+    this.splitintrastat = splitintrastat;
     return this;
   }
 
    /**
-   * Rozpočítat jako dopravu [persistentní položka]
-   * @return splitIntrastat
+   * rozpočítat jako dopravu [persistentní položka]
+   * @return splitintrastat
   **/
-  @ApiModelProperty(example = "null", value = "Rozpočítat jako dopravu [persistentní položka]")
-  public Boolean getSplitIntrastat() {
-    return splitIntrastat;
+  @ApiModelProperty(example = "null", value = "rozpočítat jako dopravu [persistentní položka]")
+  public Boolean getSplitintrastat() {
+    return splitintrastat;
   }
 
-  public void setSplitIntrastat(Boolean splitIntrastat) {
-    this.splitIntrastat = splitIntrastat;
+  public void setSplitintrastat(Boolean splitintrastat) {
+    this.splitintrastat = splitintrastat;
   }
 
-  public Receivedorderrow demandStatus(Integer demandStatus) {
-    this.demandStatus = demandStatus;
+  public Receivedorderrow demandstatus(Integer demandstatus) {
+    this.demandstatus = demandstatus;
     return this;
   }
 
    /**
-   * Stav poptávky [persistentní položka]
-   * @return demandStatus
+   * stav poptávky [persistentní položka]
+   * @return demandstatus
   **/
-  @ApiModelProperty(example = "null", value = "Stav poptávky [persistentní položka]")
-  public Integer getDemandStatus() {
-    return demandStatus;
+  @ApiModelProperty(example = "null", value = "stav poptávky [persistentní položka]")
+  public Integer getDemandstatus() {
+    return demandstatus;
   }
 
-  public void setDemandStatus(Integer demandStatus) {
-    this.demandStatus = demandStatus;
+  public void setDemandstatus(Integer demandstatus) {
+    this.demandstatus = demandstatus;
   }
 
-  public Receivedorderrow storedQuantity(Double storedQuantity) {
-    this.storedQuantity = storedQuantity;
+  public Receivedorderrow storedquantity(Double storedquantity) {
+    this.storedquantity = storedquantity;
     return this;
   }
 
    /**
-   * Stav skladu v ev.jedn.
-   * @return storedQuantity
+   * stav skladu v ev.jedn.
+   * @return storedquantity
   **/
-  @ApiModelProperty(example = "null", value = "Stav skladu v ev.jedn.")
-  public Double getStoredQuantity() {
-    return storedQuantity;
+  @ApiModelProperty(example = "null", value = "stav skladu v ev.jedn.")
+  public Double getStoredquantity() {
+    return storedquantity;
   }
 
-  public void setStoredQuantity(Double storedQuantity) {
-    this.storedQuantity = storedQuantity;
+  public void setStoredquantity(Double storedquantity) {
+    this.storedquantity = storedquantity;
   }
 
-  public Receivedorderrow storedUnitQuantity(Double storedUnitQuantity) {
-    this.storedUnitQuantity = storedUnitQuantity;
+  public Receivedorderrow storedunitquantity(Double storedunitquantity) {
+    this.storedunitquantity = storedunitquantity;
     return this;
   }
 
    /**
-   * Stav skladu
-   * @return storedUnitQuantity
+   * stav skladu
+   * @return storedunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Stav skladu")
-  public Double getStoredUnitQuantity() {
-    return storedUnitQuantity;
+  @ApiModelProperty(example = "null", value = "stav skladu")
+  public Double getStoredunitquantity() {
+    return storedunitquantity;
   }
 
-  public void setStoredUnitQuantity(Double storedUnitQuantity) {
-    this.storedUnitQuantity = storedUnitQuantity;
+  public void setStoredunitquantity(Double storedunitquantity) {
+    this.storedunitquantity = storedunitquantity;
   }
 
-  public Receivedorderrow deliveredUnitQuantity(Double deliveredUnitQuantity) {
-    this.deliveredUnitQuantity = deliveredUnitQuantity;
+  public Receivedorderrow deliveredunitquantity(Double deliveredunitquantity) {
+    this.deliveredunitquantity = deliveredunitquantity;
     return this;
   }
 
    /**
-   * Dodáno jed.
-   * @return deliveredUnitQuantity
+   * dodáno jed.
+   * @return deliveredunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Dodáno jed.")
-  public Double getDeliveredUnitQuantity() {
-    return deliveredUnitQuantity;
+  @ApiModelProperty(example = "null", value = "dodáno jed.")
+  public Double getDeliveredunitquantity() {
+    return deliveredunitquantity;
   }
 
-  public void setDeliveredUnitQuantity(Double deliveredUnitQuantity) {
-    this.deliveredUnitQuantity = deliveredUnitQuantity;
+  public void setDeliveredunitquantity(Double deliveredunitquantity) {
+    this.deliveredunitquantity = deliveredunitquantity;
   }
 
-  public Receivedorderrow externalNumber(String externalNumber) {
-    this.externalNumber = externalNumber;
+  public Receivedorderrow externalnumber(String externalnumber) {
+    this.externalnumber = externalnumber;
     return this;
   }
 
    /**
-   * Externí číslo [persistentní položka]
-   * @return externalNumber
+   * externí číslo [persistentní položka]
+   * @return externalnumber
   **/
-  @ApiModelProperty(example = "null", value = "Externí číslo [persistentní položka]")
-  public String getExternalNumber() {
-    return externalNumber;
+  @ApiModelProperty(example = "null", value = "externí číslo [persistentní položka]")
+  public String getExternalnumber() {
+    return externalnumber;
   }
 
-  public void setExternalNumber(String externalNumber) {
-    this.externalNumber = externalNumber;
+  public void setExternalnumber(String externalnumber) {
+    this.externalnumber = externalnumber;
   }
 
 
@@ -1556,91 +1727,91 @@ public class Receivedorderrow   {
       return false;
     }
     Receivedorderrow receivedorderrow = (Receivedorderrow) o;
-    return Objects.equals(this.displayName, receivedorderrow.displayName) &&
-        Objects.equals(this.ID, receivedorderrow.ID) &&
-        Objects.equals(this.classID, receivedorderrow.classID) &&
-        Objects.equals(this.objVersion, receivedorderrow.objVersion) &&
-        Objects.equals(this.revidedID, receivedorderrow.revidedID) &&
-        Objects.equals(this.revisionDescription, receivedorderrow.revisionDescription) &&
-        Objects.equals(this.revisionDateDATE, receivedorderrow.revisionDateDATE) &&
-        Objects.equals(this.revisionAuthorID, receivedorderrow.revisionAuthorID) &&
+    return Objects.equals(this.displayname, receivedorderrow.displayname) &&
+        Objects.equals(this.id, receivedorderrow.id) &&
+        Objects.equals(this.classid, receivedorderrow.classid) &&
+        Objects.equals(this.objversion, receivedorderrow.objversion) &&
+        Objects.equals(this.revidedId, receivedorderrow.revidedId) &&
+        Objects.equals(this.revisiondescription, receivedorderrow.revisiondescription) &&
+        Objects.equals(this.revisiondatedate, receivedorderrow.revisiondatedate) &&
+        Objects.equals(this.revisionauthorId, receivedorderrow.revisionauthorId) &&
         Objects.equals(this.revision, receivedorderrow.revision) &&
-        Objects.equals(this.parentID, receivedorderrow.parentID) &&
-        Objects.equals(this.posIndex, receivedorderrow.posIndex) &&
-        Objects.equals(this.tAmount, receivedorderrow.tAmount) &&
-        Objects.equals(this.localTAmount, receivedorderrow.localTAmount) &&
-        Objects.equals(this.divisionID, receivedorderrow.divisionID) &&
-        Objects.equals(this.busOrderID, receivedorderrow.busOrderID) &&
-        Objects.equals(this.busTransactionID, receivedorderrow.busTransactionID) &&
-        Objects.equals(this.tAmountWithoutVAT, receivedorderrow.tAmountWithoutVAT) &&
-        Objects.equals(this.vATRateID, receivedorderrow.vATRateID) &&
-        Objects.equals(this.vATRate, receivedorderrow.vATRate) &&
-        Objects.equals(this.localTAmountWithoutVAT, receivedorderrow.localTAmountWithoutVAT) &&
-        Objects.equals(this.busProjectID, receivedorderrow.busProjectID) &&
-        Objects.equals(this.vATMode, receivedorderrow.vATMode) &&
-        Objects.equals(this.rowType, receivedorderrow.rowType) &&
+        Objects.equals(this.parentId, receivedorderrow.parentId) &&
+        Objects.equals(this.posindex, receivedorderrow.posindex) &&
+        Objects.equals(this.tamount, receivedorderrow.tamount) &&
+        Objects.equals(this.localtamount, receivedorderrow.localtamount) &&
+        Objects.equals(this.divisionId, receivedorderrow.divisionId) &&
+        Objects.equals(this.busorderId, receivedorderrow.busorderId) &&
+        Objects.equals(this.bustransactionId, receivedorderrow.bustransactionId) &&
+        Objects.equals(this.tamountwithoutvat, receivedorderrow.tamountwithoutvat) &&
+        Objects.equals(this.vatrateId, receivedorderrow.vatrateId) &&
+        Objects.equals(this.vatrate, receivedorderrow.vatrate) &&
+        Objects.equals(this.localtamountwithoutvat, receivedorderrow.localtamountwithoutvat) &&
+        Objects.equals(this.busprojectId, receivedorderrow.busprojectId) &&
+        Objects.equals(this.vatmode, receivedorderrow.vatmode) &&
+        Objects.equals(this.rowtype, receivedorderrow.rowtype) &&
         Objects.equals(this.text, receivedorderrow.text) &&
-        Objects.equals(this.storeID, receivedorderrow.storeID) &&
-        Objects.equals(this.storeCardID, receivedorderrow.storeCardID) &&
-        Objects.equals(this.rowDiscount, receivedorderrow.rowDiscount) &&
+        Objects.equals(this.storeId, receivedorderrow.storeId) &&
+        Objects.equals(this.storecardId, receivedorderrow.storecardId) &&
+        Objects.equals(this.rowdiscount, receivedorderrow.rowdiscount) &&
         Objects.equals(this.quantity, receivedorderrow.quantity) &&
-        Objects.equals(this.qUnit, receivedorderrow.qUnit) &&
-        Objects.equals(this.unitRate, receivedorderrow.unitRate) &&
-        Objects.equals(this.unitQuantity, receivedorderrow.unitQuantity) &&
-        Objects.equals(this.unitPrice, receivedorderrow.unitPrice) &&
-        Objects.equals(this.totalPrice, receivedorderrow.totalPrice) &&
-        Objects.equals(this.totalPercentualDiscount, receivedorderrow.totalPercentualDiscount) &&
-        Objects.equals(this.totalDiscountFactor, receivedorderrow.totalDiscountFactor) &&
+        Objects.equals(this.qunit, receivedorderrow.qunit) &&
+        Objects.equals(this.unitrate, receivedorderrow.unitrate) &&
+        Objects.equals(this.unitquantity, receivedorderrow.unitquantity) &&
+        Objects.equals(this.unitprice, receivedorderrow.unitprice) &&
+        Objects.equals(this.totalprice, receivedorderrow.totalprice) &&
+        Objects.equals(this.totalpercentualdiscount, receivedorderrow.totalpercentualdiscount) &&
+        Objects.equals(this.totaldiscountfactor, receivedorderrow.totaldiscountfactor) &&
         Objects.equals(this.weight, receivedorderrow.weight) &&
         Objects.equals(this.capacity, receivedorderrow.capacity) &&
-        Objects.equals(this.weightUnit, receivedorderrow.weightUnit) &&
-        Objects.equals(this.capacityUnit, receivedorderrow.capacityUnit) &&
-        Objects.equals(this.discountsExcluded, receivedorderrow.discountsExcluded) &&
-        Objects.equals(this.dealerDiscountExcluded, receivedorderrow.dealerDiscountExcluded) &&
-        Objects.equals(this.individualDiscountExcluded, receivedorderrow.individualDiscountExcluded) &&
-        Objects.equals(this.financialDiscountExcluded, receivedorderrow.financialDiscountExcluded) &&
-        Objects.equals(this.quantityDiscountExcluded, receivedorderrow.quantityDiscountExcluded) &&
-        Objects.equals(this.documentDiscountExcluded, receivedorderrow.documentDiscountExcluded) &&
-        Objects.equals(this.isAnyDiscount, receivedorderrow.isAnyDiscount) &&
-        Objects.equals(this.dealerDiscount, receivedorderrow.dealerDiscount) &&
-        Objects.equals(this.quantityDiscount, receivedorderrow.quantityDiscount) &&
-        Objects.equals(this.intrastatRegionID, receivedorderrow.intrastatRegionID) &&
-        Objects.equals(this.toIntrastat, receivedorderrow.toIntrastat) &&
-        Objects.equals(this.toESL, receivedorderrow.toESL) &&
-        Objects.equals(this.eSLStatus, receivedorderrow.eSLStatus) &&
-        Objects.equals(this.statisticAmount, receivedorderrow.statisticAmount) &&
-        Objects.equals(this.intrastatOutputStatisticID, receivedorderrow.intrastatOutputStatisticID) &&
-        Objects.equals(this.eSLIndicatorID, receivedorderrow.eSLIndicatorID) &&
-        Objects.equals(this.mOSSServiceID, receivedorderrow.mOSSServiceID) &&
-        Objects.equals(this.dRCArticleID, receivedorderrow.dRCArticleID) &&
-        Objects.equals(this.dRCQuantity, receivedorderrow.dRCQuantity) &&
-        Objects.equals(this.dRCQUnit, receivedorderrow.dRCQUnit) &&
-        Objects.equals(this.priceID, receivedorderrow.priceID) &&
-        Objects.equals(this.reservationID, receivedorderrow.reservationID) &&
-        Objects.equals(this.deliveredQuantity, receivedorderrow.deliveredQuantity) &&
-        Objects.equals(this.rowMargin, receivedorderrow.rowMargin) &&
-        Objects.equals(this.rowStorePrice, receivedorderrow.rowStorePrice) &&
-        Objects.equals(this.deliveryDateDATE, receivedorderrow.deliveryDateDATE) &&
-        Objects.equals(this.provideRowID, receivedorderrow.provideRowID) &&
-        Objects.equals(this.provideID, receivedorderrow.provideID) &&
-        Objects.equals(this.deliveredQuantityStr, receivedorderrow.deliveredQuantityStr) &&
-        Objects.equals(this.provideRowDisplayName, receivedorderrow.provideRowDisplayName) &&
-        Objects.equals(this.intrastatStatus, receivedorderrow.intrastatStatus) &&
-        Objects.equals(this.intrastatAmount, receivedorderrow.intrastatAmount) &&
-        Objects.equals(this.localIntrastatAmount, receivedorderrow.localIntrastatAmount) &&
-        Objects.equals(this.deliveryTerm, receivedorderrow.deliveryTerm) &&
-        Objects.equals(this.incomeTypeID, receivedorderrow.incomeTypeID) &&
-        Objects.equals(this.splitIntrastat, receivedorderrow.splitIntrastat) &&
-        Objects.equals(this.demandStatus, receivedorderrow.demandStatus) &&
-        Objects.equals(this.storedQuantity, receivedorderrow.storedQuantity) &&
-        Objects.equals(this.storedUnitQuantity, receivedorderrow.storedUnitQuantity) &&
-        Objects.equals(this.deliveredUnitQuantity, receivedorderrow.deliveredUnitQuantity) &&
-        Objects.equals(this.externalNumber, receivedorderrow.externalNumber);
+        Objects.equals(this.weightunit, receivedorderrow.weightunit) &&
+        Objects.equals(this.capacityunit, receivedorderrow.capacityunit) &&
+        Objects.equals(this.discountsexcluded, receivedorderrow.discountsexcluded) &&
+        Objects.equals(this.dealerdiscountexcluded, receivedorderrow.dealerdiscountexcluded) &&
+        Objects.equals(this.individualdiscountexcluded, receivedorderrow.individualdiscountexcluded) &&
+        Objects.equals(this.financialdiscountexcluded, receivedorderrow.financialdiscountexcluded) &&
+        Objects.equals(this.quantitydiscountexcluded, receivedorderrow.quantitydiscountexcluded) &&
+        Objects.equals(this.documentdiscountexcluded, receivedorderrow.documentdiscountexcluded) &&
+        Objects.equals(this.isanydiscount, receivedorderrow.isanydiscount) &&
+        Objects.equals(this.dealerdiscount, receivedorderrow.dealerdiscount) &&
+        Objects.equals(this.quantitydiscount, receivedorderrow.quantitydiscount) &&
+        Objects.equals(this.intrastatregionId, receivedorderrow.intrastatregionId) &&
+        Objects.equals(this.tointrastat, receivedorderrow.tointrastat) &&
+        Objects.equals(this.toesl, receivedorderrow.toesl) &&
+        Objects.equals(this.eslstatus, receivedorderrow.eslstatus) &&
+        Objects.equals(this.statisticamount, receivedorderrow.statisticamount) &&
+        Objects.equals(this.intrastatoutputstatisticId, receivedorderrow.intrastatoutputstatisticId) &&
+        Objects.equals(this.eslindicatorId, receivedorderrow.eslindicatorId) &&
+        Objects.equals(this.mossserviceId, receivedorderrow.mossserviceId) &&
+        Objects.equals(this.drcarticleId, receivedorderrow.drcarticleId) &&
+        Objects.equals(this.drcquantity, receivedorderrow.drcquantity) &&
+        Objects.equals(this.drcqunit, receivedorderrow.drcqunit) &&
+        Objects.equals(this.priceId, receivedorderrow.priceId) &&
+        Objects.equals(this.reservationId, receivedorderrow.reservationId) &&
+        Objects.equals(this.deliveredquantity, receivedorderrow.deliveredquantity) &&
+        Objects.equals(this.rowmargin, receivedorderrow.rowmargin) &&
+        Objects.equals(this.rowstoreprice, receivedorderrow.rowstoreprice) &&
+        Objects.equals(this.deliverydatedate, receivedorderrow.deliverydatedate) &&
+        Objects.equals(this.providerowId, receivedorderrow.providerowId) &&
+        Objects.equals(this.provideId, receivedorderrow.provideId) &&
+        Objects.equals(this.deliveredquantitystr, receivedorderrow.deliveredquantitystr) &&
+        Objects.equals(this.providerowdisplayname, receivedorderrow.providerowdisplayname) &&
+        Objects.equals(this.intrastatstatus, receivedorderrow.intrastatstatus) &&
+        Objects.equals(this.intrastatamount, receivedorderrow.intrastatamount) &&
+        Objects.equals(this.localintrastatamount, receivedorderrow.localintrastatamount) &&
+        Objects.equals(this.deliveryterm, receivedorderrow.deliveryterm) &&
+        Objects.equals(this.incometypeId, receivedorderrow.incometypeId) &&
+        Objects.equals(this.splitintrastat, receivedorderrow.splitintrastat) &&
+        Objects.equals(this.demandstatus, receivedorderrow.demandstatus) &&
+        Objects.equals(this.storedquantity, receivedorderrow.storedquantity) &&
+        Objects.equals(this.storedunitquantity, receivedorderrow.storedunitquantity) &&
+        Objects.equals(this.deliveredunitquantity, receivedorderrow.deliveredunitquantity) &&
+        Objects.equals(this.externalnumber, receivedorderrow.externalnumber);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, revidedID, revisionDescription, revisionDateDATE, revisionAuthorID, revision, parentID, posIndex, tAmount, localTAmount, divisionID, busOrderID, busTransactionID, tAmountWithoutVAT, vATRateID, vATRate, localTAmountWithoutVAT, busProjectID, vATMode, rowType, text, storeID, storeCardID, rowDiscount, quantity, qUnit, unitRate, unitQuantity, unitPrice, totalPrice, totalPercentualDiscount, totalDiscountFactor, weight, capacity, weightUnit, capacityUnit, discountsExcluded, dealerDiscountExcluded, individualDiscountExcluded, financialDiscountExcluded, quantityDiscountExcluded, documentDiscountExcluded, isAnyDiscount, dealerDiscount, quantityDiscount, intrastatRegionID, toIntrastat, toESL, eSLStatus, statisticAmount, intrastatOutputStatisticID, eSLIndicatorID, mOSSServiceID, dRCArticleID, dRCQuantity, dRCQUnit, priceID, reservationID, deliveredQuantity, rowMargin, rowStorePrice, deliveryDateDATE, provideRowID, provideID, deliveredQuantityStr, provideRowDisplayName, intrastatStatus, intrastatAmount, localIntrastatAmount, deliveryTerm, incomeTypeID, splitIntrastat, demandStatus, storedQuantity, storedUnitQuantity, deliveredUnitQuantity, externalNumber);
+    return Objects.hash(displayname, id, classid, objversion, revidedId, revisiondescription, revisiondatedate, revisionauthorId, revision, parentId, posindex, tamount, localtamount, divisionId, busorderId, bustransactionId, tamountwithoutvat, vatrateId, vatrate, localtamountwithoutvat, busprojectId, vatmode, rowtype, text, storeId, storecardId, rowdiscount, quantity, qunit, unitrate, unitquantity, unitprice, totalprice, totalpercentualdiscount, totaldiscountfactor, weight, capacity, weightunit, capacityunit, discountsexcluded, dealerdiscountexcluded, individualdiscountexcluded, financialdiscountexcluded, quantitydiscountexcluded, documentdiscountexcluded, isanydiscount, dealerdiscount, quantitydiscount, intrastatregionId, tointrastat, toesl, eslstatus, statisticamount, intrastatoutputstatisticId, eslindicatorId, mossserviceId, drcarticleId, drcquantity, drcqunit, priceId, reservationId, deliveredquantity, rowmargin, rowstoreprice, deliverydatedate, providerowId, provideId, deliveredquantitystr, providerowdisplayname, intrastatstatus, intrastatamount, localintrastatamount, deliveryterm, incometypeId, splitintrastat, demandstatus, storedquantity, storedunitquantity, deliveredunitquantity, externalnumber);
   }
 
   @Override
@@ -1648,86 +1819,86 @@ public class Receivedorderrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Receivedorderrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    revidedID: ").append(toIndentedString(revidedID)).append("\n");
-    sb.append("    revisionDescription: ").append(toIndentedString(revisionDescription)).append("\n");
-    sb.append("    revisionDateDATE: ").append(toIndentedString(revisionDateDATE)).append("\n");
-    sb.append("    revisionAuthorID: ").append(toIndentedString(revisionAuthorID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    revidedId: ").append(toIndentedString(revidedId)).append("\n");
+    sb.append("    revisiondescription: ").append(toIndentedString(revisiondescription)).append("\n");
+    sb.append("    revisiondatedate: ").append(toIndentedString(revisiondatedate)).append("\n");
+    sb.append("    revisionauthorId: ").append(toIndentedString(revisionauthorId)).append("\n");
     sb.append("    revision: ").append(toIndentedString(revision)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    tAmount: ").append(toIndentedString(tAmount)).append("\n");
-    sb.append("    localTAmount: ").append(toIndentedString(localTAmount)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    tAmountWithoutVAT: ").append(toIndentedString(tAmountWithoutVAT)).append("\n");
-    sb.append("    vATRateID: ").append(toIndentedString(vATRateID)).append("\n");
-    sb.append("    vATRate: ").append(toIndentedString(vATRate)).append("\n");
-    sb.append("    localTAmountWithoutVAT: ").append(toIndentedString(localTAmountWithoutVAT)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    vATMode: ").append(toIndentedString(vATMode)).append("\n");
-    sb.append("    rowType: ").append(toIndentedString(rowType)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    tamount: ").append(toIndentedString(tamount)).append("\n");
+    sb.append("    localtamount: ").append(toIndentedString(localtamount)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    tamountwithoutvat: ").append(toIndentedString(tamountwithoutvat)).append("\n");
+    sb.append("    vatrateId: ").append(toIndentedString(vatrateId)).append("\n");
+    sb.append("    vatrate: ").append(toIndentedString(vatrate)).append("\n");
+    sb.append("    localtamountwithoutvat: ").append(toIndentedString(localtamountwithoutvat)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    vatmode: ").append(toIndentedString(vatmode)).append("\n");
+    sb.append("    rowtype: ").append(toIndentedString(rowtype)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    rowDiscount: ").append(toIndentedString(rowDiscount)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    rowdiscount: ").append(toIndentedString(rowdiscount)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    unitQuantity: ").append(toIndentedString(unitQuantity)).append("\n");
-    sb.append("    unitPrice: ").append(toIndentedString(unitPrice)).append("\n");
-    sb.append("    totalPrice: ").append(toIndentedString(totalPrice)).append("\n");
-    sb.append("    totalPercentualDiscount: ").append(toIndentedString(totalPercentualDiscount)).append("\n");
-    sb.append("    totalDiscountFactor: ").append(toIndentedString(totalDiscountFactor)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    unitquantity: ").append(toIndentedString(unitquantity)).append("\n");
+    sb.append("    unitprice: ").append(toIndentedString(unitprice)).append("\n");
+    sb.append("    totalprice: ").append(toIndentedString(totalprice)).append("\n");
+    sb.append("    totalpercentualdiscount: ").append(toIndentedString(totalpercentualdiscount)).append("\n");
+    sb.append("    totaldiscountfactor: ").append(toIndentedString(totaldiscountfactor)).append("\n");
     sb.append("    weight: ").append(toIndentedString(weight)).append("\n");
     sb.append("    capacity: ").append(toIndentedString(capacity)).append("\n");
-    sb.append("    weightUnit: ").append(toIndentedString(weightUnit)).append("\n");
-    sb.append("    capacityUnit: ").append(toIndentedString(capacityUnit)).append("\n");
-    sb.append("    discountsExcluded: ").append(toIndentedString(discountsExcluded)).append("\n");
-    sb.append("    dealerDiscountExcluded: ").append(toIndentedString(dealerDiscountExcluded)).append("\n");
-    sb.append("    individualDiscountExcluded: ").append(toIndentedString(individualDiscountExcluded)).append("\n");
-    sb.append("    financialDiscountExcluded: ").append(toIndentedString(financialDiscountExcluded)).append("\n");
-    sb.append("    quantityDiscountExcluded: ").append(toIndentedString(quantityDiscountExcluded)).append("\n");
-    sb.append("    documentDiscountExcluded: ").append(toIndentedString(documentDiscountExcluded)).append("\n");
-    sb.append("    isAnyDiscount: ").append(toIndentedString(isAnyDiscount)).append("\n");
-    sb.append("    dealerDiscount: ").append(toIndentedString(dealerDiscount)).append("\n");
-    sb.append("    quantityDiscount: ").append(toIndentedString(quantityDiscount)).append("\n");
-    sb.append("    intrastatRegionID: ").append(toIndentedString(intrastatRegionID)).append("\n");
-    sb.append("    toIntrastat: ").append(toIndentedString(toIntrastat)).append("\n");
-    sb.append("    toESL: ").append(toIndentedString(toESL)).append("\n");
-    sb.append("    eSLStatus: ").append(toIndentedString(eSLStatus)).append("\n");
-    sb.append("    statisticAmount: ").append(toIndentedString(statisticAmount)).append("\n");
-    sb.append("    intrastatOutputStatisticID: ").append(toIndentedString(intrastatOutputStatisticID)).append("\n");
-    sb.append("    eSLIndicatorID: ").append(toIndentedString(eSLIndicatorID)).append("\n");
-    sb.append("    mOSSServiceID: ").append(toIndentedString(mOSSServiceID)).append("\n");
-    sb.append("    dRCArticleID: ").append(toIndentedString(dRCArticleID)).append("\n");
-    sb.append("    dRCQuantity: ").append(toIndentedString(dRCQuantity)).append("\n");
-    sb.append("    dRCQUnit: ").append(toIndentedString(dRCQUnit)).append("\n");
-    sb.append("    priceID: ").append(toIndentedString(priceID)).append("\n");
-    sb.append("    reservationID: ").append(toIndentedString(reservationID)).append("\n");
-    sb.append("    deliveredQuantity: ").append(toIndentedString(deliveredQuantity)).append("\n");
-    sb.append("    rowMargin: ").append(toIndentedString(rowMargin)).append("\n");
-    sb.append("    rowStorePrice: ").append(toIndentedString(rowStorePrice)).append("\n");
-    sb.append("    deliveryDateDATE: ").append(toIndentedString(deliveryDateDATE)).append("\n");
-    sb.append("    provideRowID: ").append(toIndentedString(provideRowID)).append("\n");
-    sb.append("    provideID: ").append(toIndentedString(provideID)).append("\n");
-    sb.append("    deliveredQuantityStr: ").append(toIndentedString(deliveredQuantityStr)).append("\n");
-    sb.append("    provideRowDisplayName: ").append(toIndentedString(provideRowDisplayName)).append("\n");
-    sb.append("    intrastatStatus: ").append(toIndentedString(intrastatStatus)).append("\n");
-    sb.append("    intrastatAmount: ").append(toIndentedString(intrastatAmount)).append("\n");
-    sb.append("    localIntrastatAmount: ").append(toIndentedString(localIntrastatAmount)).append("\n");
-    sb.append("    deliveryTerm: ").append(toIndentedString(deliveryTerm)).append("\n");
-    sb.append("    incomeTypeID: ").append(toIndentedString(incomeTypeID)).append("\n");
-    sb.append("    splitIntrastat: ").append(toIndentedString(splitIntrastat)).append("\n");
-    sb.append("    demandStatus: ").append(toIndentedString(demandStatus)).append("\n");
-    sb.append("    storedQuantity: ").append(toIndentedString(storedQuantity)).append("\n");
-    sb.append("    storedUnitQuantity: ").append(toIndentedString(storedUnitQuantity)).append("\n");
-    sb.append("    deliveredUnitQuantity: ").append(toIndentedString(deliveredUnitQuantity)).append("\n");
-    sb.append("    externalNumber: ").append(toIndentedString(externalNumber)).append("\n");
+    sb.append("    weightunit: ").append(toIndentedString(weightunit)).append("\n");
+    sb.append("    capacityunit: ").append(toIndentedString(capacityunit)).append("\n");
+    sb.append("    discountsexcluded: ").append(toIndentedString(discountsexcluded)).append("\n");
+    sb.append("    dealerdiscountexcluded: ").append(toIndentedString(dealerdiscountexcluded)).append("\n");
+    sb.append("    individualdiscountexcluded: ").append(toIndentedString(individualdiscountexcluded)).append("\n");
+    sb.append("    financialdiscountexcluded: ").append(toIndentedString(financialdiscountexcluded)).append("\n");
+    sb.append("    quantitydiscountexcluded: ").append(toIndentedString(quantitydiscountexcluded)).append("\n");
+    sb.append("    documentdiscountexcluded: ").append(toIndentedString(documentdiscountexcluded)).append("\n");
+    sb.append("    isanydiscount: ").append(toIndentedString(isanydiscount)).append("\n");
+    sb.append("    dealerdiscount: ").append(toIndentedString(dealerdiscount)).append("\n");
+    sb.append("    quantitydiscount: ").append(toIndentedString(quantitydiscount)).append("\n");
+    sb.append("    intrastatregionId: ").append(toIndentedString(intrastatregionId)).append("\n");
+    sb.append("    tointrastat: ").append(toIndentedString(tointrastat)).append("\n");
+    sb.append("    toesl: ").append(toIndentedString(toesl)).append("\n");
+    sb.append("    eslstatus: ").append(toIndentedString(eslstatus)).append("\n");
+    sb.append("    statisticamount: ").append(toIndentedString(statisticamount)).append("\n");
+    sb.append("    intrastatoutputstatisticId: ").append(toIndentedString(intrastatoutputstatisticId)).append("\n");
+    sb.append("    eslindicatorId: ").append(toIndentedString(eslindicatorId)).append("\n");
+    sb.append("    mossserviceId: ").append(toIndentedString(mossserviceId)).append("\n");
+    sb.append("    drcarticleId: ").append(toIndentedString(drcarticleId)).append("\n");
+    sb.append("    drcquantity: ").append(toIndentedString(drcquantity)).append("\n");
+    sb.append("    drcqunit: ").append(toIndentedString(drcqunit)).append("\n");
+    sb.append("    priceId: ").append(toIndentedString(priceId)).append("\n");
+    sb.append("    reservationId: ").append(toIndentedString(reservationId)).append("\n");
+    sb.append("    deliveredquantity: ").append(toIndentedString(deliveredquantity)).append("\n");
+    sb.append("    rowmargin: ").append(toIndentedString(rowmargin)).append("\n");
+    sb.append("    rowstoreprice: ").append(toIndentedString(rowstoreprice)).append("\n");
+    sb.append("    deliverydatedate: ").append(toIndentedString(deliverydatedate)).append("\n");
+    sb.append("    providerowId: ").append(toIndentedString(providerowId)).append("\n");
+    sb.append("    provideId: ").append(toIndentedString(provideId)).append("\n");
+    sb.append("    deliveredquantitystr: ").append(toIndentedString(deliveredquantitystr)).append("\n");
+    sb.append("    providerowdisplayname: ").append(toIndentedString(providerowdisplayname)).append("\n");
+    sb.append("    intrastatstatus: ").append(toIndentedString(intrastatstatus)).append("\n");
+    sb.append("    intrastatamount: ").append(toIndentedString(intrastatamount)).append("\n");
+    sb.append("    localintrastatamount: ").append(toIndentedString(localintrastatamount)).append("\n");
+    sb.append("    deliveryterm: ").append(toIndentedString(deliveryterm)).append("\n");
+    sb.append("    incometypeId: ").append(toIndentedString(incometypeId)).append("\n");
+    sb.append("    splitintrastat: ").append(toIndentedString(splitintrastat)).append("\n");
+    sb.append("    demandstatus: ").append(toIndentedString(demandstatus)).append("\n");
+    sb.append("    storedquantity: ").append(toIndentedString(storedquantity)).append("\n");
+    sb.append("    storedunitquantity: ").append(toIndentedString(storedunitquantity)).append("\n");
+    sb.append("    deliveredunitquantity: ").append(toIndentedString(deliveredunitquantity)).append("\n");
+    sb.append("    externalnumber: ").append(toIndentedString(externalnumber)).append("\n");
     sb.append("}");
     return sb.toString();
   }

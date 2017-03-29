@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,102 +37,138 @@ import java.util.Objects;
 /**
  * Mlbroute
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Mlbroute   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Mlbrouterow> rows = new ArrayList<Mlbrouterow>();
 
-  @SerializedName("ThroughPlaces")
-  private String throughPlaces = null;
+  @SerializedName("throughplaces")
+  private String throughplaces = null;
 
-  @SerializedName("DistanceCounted")
-  private Double distanceCounted = null;
+  @SerializedName("distancecounted")
+  private Double distancecounted = null;
 
-  @SerializedName("StartPlace_ID")
-  private String startPlaceID = null;
+  @SerializedName("startplace_id")
+  private String startplaceId = null;
 
-  @SerializedName("EndPlace_ID")
-  private String endPlaceID = null;
+  @SerializedName("endplace_id")
+  private String endplaceId = null;
 
-  @SerializedName("AndBack")
-  private Boolean andBack = null;
+  @SerializedName("andback")
+  private Boolean andback = null;
 
-  @SerializedName("Distance")
+  @SerializedName("distance")
   private Double distance = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("FirmOffice_ID")
-  private String firmOfficeID = null;
+  @SerializedName("firmoffice_id")
+  private String firmofficeId = null;
 
-  @SerializedName("Purpose_ID")
-  private String purposeID = null;
+  @SerializedName("purpose_id")
+  private String purposeId = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("DistanceDelta")
-  private Double distanceDelta = null;
+  @SerializedName("distancedelta")
+  private Double distancedelta = null;
 
-  @SerializedName("Duration$DATE")
-  private DateTime durationDATE = null;
+  @SerializedName("duration$date")
+  private DateTime durationdate = null;
 
-  @SerializedName("WaitingTimeMin$DATE")
-  private DateTime waitingTimeMinDATE = null;
+  @SerializedName("waitingtimemin$date")
+  private DateTime waitingtimemindate = null;
 
-  @SerializedName("WaitingTimeMax$DATE")
-  private DateTime waitingTimeMaxDATE = null;
+  @SerializedName("waitingtimemax$date")
+  private DateTime waitingtimemaxdate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Mlbroute displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Mlbroute id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Mlbroute classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Mlbroute objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Mlbroute rows(List<Mlbrouterow> rows) {
@@ -146,10 +182,10 @@ public class Mlbroute   {
   }
 
    /**
-   * Řádky; kolekce BO Průjezdná místa [nepersistentní položka]
+   * Řádky; kolekce bo průjezdná místa [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Průjezdná místa [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo průjezdná místa [nepersistentní položka]")
   public List<Mlbrouterow> getRows() {
     return rows;
   }
@@ -158,94 +194,94 @@ public class Mlbroute   {
     this.rows = rows;
   }
 
-  public Mlbroute throughPlaces(String throughPlaces) {
-    this.throughPlaces = throughPlaces;
+  public Mlbroute throughplaces(String throughplaces) {
+    this.throughplaces = throughplaces;
     return this;
   }
 
    /**
-   * Průjezdná místa
-   * @return throughPlaces
+   * průjezdná místa
+   * @return throughplaces
   **/
-  @ApiModelProperty(example = "null", value = "Průjezdná místa")
-  public String getThroughPlaces() {
-    return throughPlaces;
+  @ApiModelProperty(example = "null", value = "průjezdná místa")
+  public String getThroughplaces() {
+    return throughplaces;
   }
 
-  public void setThroughPlaces(String throughPlaces) {
-    this.throughPlaces = throughPlaces;
+  public void setThroughplaces(String throughplaces) {
+    this.throughplaces = throughplaces;
   }
 
-  public Mlbroute distanceCounted(Double distanceCounted) {
-    this.distanceCounted = distanceCounted;
+  public Mlbroute distancecounted(Double distancecounted) {
+    this.distancecounted = distancecounted;
     return this;
   }
 
    /**
-   * Spočtená vzdálenost
-   * @return distanceCounted
+   * spočtená vzdálenost
+   * @return distancecounted
   **/
-  @ApiModelProperty(example = "null", value = "Spočtená vzdálenost")
-  public Double getDistanceCounted() {
-    return distanceCounted;
+  @ApiModelProperty(example = "null", value = "spočtená vzdálenost")
+  public Double getDistancecounted() {
+    return distancecounted;
   }
 
-  public void setDistanceCounted(Double distanceCounted) {
-    this.distanceCounted = distanceCounted;
+  public void setDistancecounted(Double distancecounted) {
+    this.distancecounted = distancecounted;
   }
 
-  public Mlbroute startPlaceID(String startPlaceID) {
-    this.startPlaceID = startPlaceID;
+  public Mlbroute startplaceId(String startplaceId) {
+    this.startplaceId = startplaceId;
     return this;
   }
 
    /**
-   * Výchozí místo; ID objektu Místa [persistentní položka]
-   * @return startPlaceID
+   * výchozí místo; id objektu místa [persistentní položka]
+   * @return startplaceId
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí místo; ID objektu Místa [persistentní položka]")
-  public String getStartPlaceID() {
-    return startPlaceID;
+  @ApiModelProperty(example = "null", value = "výchozí místo; id objektu místa [persistentní položka]")
+  public String getStartplaceId() {
+    return startplaceId;
   }
 
-  public void setStartPlaceID(String startPlaceID) {
-    this.startPlaceID = startPlaceID;
+  public void setStartplaceId(String startplaceId) {
+    this.startplaceId = startplaceId;
   }
 
-  public Mlbroute endPlaceID(String endPlaceID) {
-    this.endPlaceID = endPlaceID;
+  public Mlbroute endplaceId(String endplaceId) {
+    this.endplaceId = endplaceId;
     return this;
   }
 
    /**
-   * Cílové místo; ID objektu Místa [persistentní položka]
-   * @return endPlaceID
+   * cílové místo; id objektu místa [persistentní položka]
+   * @return endplaceId
   **/
-  @ApiModelProperty(example = "null", value = "Cílové místo; ID objektu Místa [persistentní položka]")
-  public String getEndPlaceID() {
-    return endPlaceID;
+  @ApiModelProperty(example = "null", value = "cílové místo; id objektu místa [persistentní položka]")
+  public String getEndplaceId() {
+    return endplaceId;
   }
 
-  public void setEndPlaceID(String endPlaceID) {
-    this.endPlaceID = endPlaceID;
+  public void setEndplaceId(String endplaceId) {
+    this.endplaceId = endplaceId;
   }
 
-  public Mlbroute andBack(Boolean andBack) {
-    this.andBack = andBack;
+  public Mlbroute andback(Boolean andback) {
+    this.andback = andback;
     return this;
   }
 
    /**
-   * Zpět [persistentní položka]
-   * @return andBack
+   * zpět [persistentní položka]
+   * @return andback
   **/
-  @ApiModelProperty(example = "null", value = "Zpět [persistentní položka]")
-  public Boolean getAndBack() {
-    return andBack;
+  @ApiModelProperty(example = "null", value = "zpět [persistentní položka]")
+  public Boolean getAndback() {
+    return andback;
   }
 
-  public void setAndBack(Boolean andBack) {
-    this.andBack = andBack;
+  public void setAndback(Boolean andback) {
+    this.andback = andback;
   }
 
   public Mlbroute distance(Double distance) {
@@ -254,10 +290,10 @@ public class Mlbroute   {
   }
 
    /**
-   * Vzdálenost [persistentní položka]
+   * vzdálenost [persistentní položka]
    * @return distance
   **/
-  @ApiModelProperty(example = "null", value = "Vzdálenost [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "vzdálenost [persistentní položka]")
   public Double getDistance() {
     return distance;
   }
@@ -266,58 +302,58 @@ public class Mlbroute   {
     this.distance = distance;
   }
 
-  public Mlbroute firmID(String firmID) {
-    this.firmID = firmID;
+  public Mlbroute firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Mlbroute firmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public Mlbroute firmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
     return this;
   }
 
    /**
-   * Provozovna; ID objektu Provozovna [persistentní položka]
-   * @return firmOfficeID
+   * provozovna; id objektu provozovna [persistentní položka]
+   * @return firmofficeId
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna; ID objektu Provozovna [persistentní položka]")
-  public String getFirmOfficeID() {
-    return firmOfficeID;
+  @ApiModelProperty(example = "null", value = "provozovna; id objektu provozovna [persistentní položka]")
+  public String getFirmofficeId() {
+    return firmofficeId;
   }
 
-  public void setFirmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public void setFirmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
   }
 
-  public Mlbroute purposeID(String purposeID) {
-    this.purposeID = purposeID;
+  public Mlbroute purposeId(String purposeId) {
+    this.purposeId = purposeId;
     return this;
   }
 
    /**
-   * Účel jízdy; ID objektu Účel jízdy [persistentní položka]
-   * @return purposeID
+   * Účel jízdy; id objektu Účel jízdy [persistentní položka]
+   * @return purposeId
   **/
-  @ApiModelProperty(example = "null", value = "Účel jízdy; ID objektu Účel jízdy [persistentní položka]")
-  public String getPurposeID() {
-    return purposeID;
+  @ApiModelProperty(example = "null", value = "Účel jízdy; id objektu Účel jízdy [persistentní položka]")
+  public String getPurposeId() {
+    return purposeId;
   }
 
-  public void setPurposeID(String purposeID) {
-    this.purposeID = purposeID;
+  public void setPurposeId(String purposeId) {
+    this.purposeId = purposeId;
   }
 
   public Mlbroute hidden(Boolean hidden) {
@@ -326,10 +362,10 @@ public class Mlbroute   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -338,94 +374,94 @@ public class Mlbroute   {
     this.hidden = hidden;
   }
 
-  public Mlbroute distanceDelta(Double distanceDelta) {
-    this.distanceDelta = distanceDelta;
+  public Mlbroute distancedelta(Double distancedelta) {
+    this.distancedelta = distancedelta;
     return this;
   }
 
    /**
-   * Odchylka [persistentní položka]
-   * @return distanceDelta
+   * odchylka [persistentní položka]
+   * @return distancedelta
   **/
-  @ApiModelProperty(example = "null", value = "Odchylka [persistentní položka]")
-  public Double getDistanceDelta() {
-    return distanceDelta;
+  @ApiModelProperty(example = "null", value = "odchylka [persistentní položka]")
+  public Double getDistancedelta() {
+    return distancedelta;
   }
 
-  public void setDistanceDelta(Double distanceDelta) {
-    this.distanceDelta = distanceDelta;
+  public void setDistancedelta(Double distancedelta) {
+    this.distancedelta = distancedelta;
   }
 
-  public Mlbroute durationDATE(DateTime durationDATE) {
-    this.durationDATE = durationDATE;
+  public Mlbroute durationdate(DateTime durationdate) {
+    this.durationdate = durationdate;
     return this;
   }
 
    /**
-   * Doba jízdy [persistentní položka]
-   * @return durationDATE
+   * doba jízdy [persistentní položka]
+   * @return durationdate
   **/
-  @ApiModelProperty(example = "null", value = "Doba jízdy [persistentní položka]")
-  public DateTime getDurationDATE() {
-    return durationDATE;
+  @ApiModelProperty(example = "null", value = "doba jízdy [persistentní položka]")
+  public DateTime getDurationdate() {
+    return durationdate;
   }
 
-  public void setDurationDATE(DateTime durationDATE) {
-    this.durationDATE = durationDATE;
+  public void setDurationdate(DateTime durationdate) {
+    this.durationdate = durationdate;
   }
 
-  public Mlbroute waitingTimeMinDATE(DateTime waitingTimeMinDATE) {
-    this.waitingTimeMinDATE = waitingTimeMinDATE;
+  public Mlbroute waitingtimemindate(DateTime waitingtimemindate) {
+    this.waitingtimemindate = waitingtimemindate;
     return this;
   }
 
    /**
-   * Doba čekání min [persistentní položka]
-   * @return waitingTimeMinDATE
+   * doba čekání min [persistentní položka]
+   * @return waitingtimemindate
   **/
-  @ApiModelProperty(example = "null", value = "Doba čekání min [persistentní položka]")
-  public DateTime getWaitingTimeMinDATE() {
-    return waitingTimeMinDATE;
+  @ApiModelProperty(example = "null", value = "doba čekání min [persistentní položka]")
+  public DateTime getWaitingtimemindate() {
+    return waitingtimemindate;
   }
 
-  public void setWaitingTimeMinDATE(DateTime waitingTimeMinDATE) {
-    this.waitingTimeMinDATE = waitingTimeMinDATE;
+  public void setWaitingtimemindate(DateTime waitingtimemindate) {
+    this.waitingtimemindate = waitingtimemindate;
   }
 
-  public Mlbroute waitingTimeMaxDATE(DateTime waitingTimeMaxDATE) {
-    this.waitingTimeMaxDATE = waitingTimeMaxDATE;
+  public Mlbroute waitingtimemaxdate(DateTime waitingtimemaxdate) {
+    this.waitingtimemaxdate = waitingtimemaxdate;
     return this;
   }
 
    /**
-   * Doba čekání max [persistentní položka]
-   * @return waitingTimeMaxDATE
+   * doba čekání max [persistentní položka]
+   * @return waitingtimemaxdate
   **/
-  @ApiModelProperty(example = "null", value = "Doba čekání max [persistentní položka]")
-  public DateTime getWaitingTimeMaxDATE() {
-    return waitingTimeMaxDATE;
+  @ApiModelProperty(example = "null", value = "doba čekání max [persistentní položka]")
+  public DateTime getWaitingtimemaxdate() {
+    return waitingtimemaxdate;
   }
 
-  public void setWaitingTimeMaxDATE(DateTime waitingTimeMaxDATE) {
-    this.waitingTimeMaxDATE = waitingTimeMaxDATE;
+  public void setWaitingtimemaxdate(DateTime waitingtimemaxdate) {
+    this.waitingtimemaxdate = waitingtimemaxdate;
   }
 
-  public Mlbroute createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Mlbroute createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Uživatel; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * uživatel; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Uživatel; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "uživatel; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
 
@@ -438,31 +474,31 @@ public class Mlbroute   {
       return false;
     }
     Mlbroute mlbroute = (Mlbroute) o;
-    return Objects.equals(this.displayName, mlbroute.displayName) &&
-        Objects.equals(this.ID, mlbroute.ID) &&
-        Objects.equals(this.classID, mlbroute.classID) &&
-        Objects.equals(this.objVersion, mlbroute.objVersion) &&
+    return Objects.equals(this.displayname, mlbroute.displayname) &&
+        Objects.equals(this.id, mlbroute.id) &&
+        Objects.equals(this.classid, mlbroute.classid) &&
+        Objects.equals(this.objversion, mlbroute.objversion) &&
         Objects.equals(this.rows, mlbroute.rows) &&
-        Objects.equals(this.throughPlaces, mlbroute.throughPlaces) &&
-        Objects.equals(this.distanceCounted, mlbroute.distanceCounted) &&
-        Objects.equals(this.startPlaceID, mlbroute.startPlaceID) &&
-        Objects.equals(this.endPlaceID, mlbroute.endPlaceID) &&
-        Objects.equals(this.andBack, mlbroute.andBack) &&
+        Objects.equals(this.throughplaces, mlbroute.throughplaces) &&
+        Objects.equals(this.distancecounted, mlbroute.distancecounted) &&
+        Objects.equals(this.startplaceId, mlbroute.startplaceId) &&
+        Objects.equals(this.endplaceId, mlbroute.endplaceId) &&
+        Objects.equals(this.andback, mlbroute.andback) &&
         Objects.equals(this.distance, mlbroute.distance) &&
-        Objects.equals(this.firmID, mlbroute.firmID) &&
-        Objects.equals(this.firmOfficeID, mlbroute.firmOfficeID) &&
-        Objects.equals(this.purposeID, mlbroute.purposeID) &&
+        Objects.equals(this.firmId, mlbroute.firmId) &&
+        Objects.equals(this.firmofficeId, mlbroute.firmofficeId) &&
+        Objects.equals(this.purposeId, mlbroute.purposeId) &&
         Objects.equals(this.hidden, mlbroute.hidden) &&
-        Objects.equals(this.distanceDelta, mlbroute.distanceDelta) &&
-        Objects.equals(this.durationDATE, mlbroute.durationDATE) &&
-        Objects.equals(this.waitingTimeMinDATE, mlbroute.waitingTimeMinDATE) &&
-        Objects.equals(this.waitingTimeMaxDATE, mlbroute.waitingTimeMaxDATE) &&
-        Objects.equals(this.createdByID, mlbroute.createdByID);
+        Objects.equals(this.distancedelta, mlbroute.distancedelta) &&
+        Objects.equals(this.durationdate, mlbroute.durationdate) &&
+        Objects.equals(this.waitingtimemindate, mlbroute.waitingtimemindate) &&
+        Objects.equals(this.waitingtimemaxdate, mlbroute.waitingtimemaxdate) &&
+        Objects.equals(this.createdbyId, mlbroute.createdbyId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, throughPlaces, distanceCounted, startPlaceID, endPlaceID, andBack, distance, firmID, firmOfficeID, purposeID, hidden, distanceDelta, durationDATE, waitingTimeMinDATE, waitingTimeMaxDATE, createdByID);
+    return Objects.hash(displayname, id, classid, objversion, rows, throughplaces, distancecounted, startplaceId, endplaceId, andback, distance, firmId, firmofficeId, purposeId, hidden, distancedelta, durationdate, waitingtimemindate, waitingtimemaxdate, createdbyId);
   }
 
   @Override
@@ -470,26 +506,26 @@ public class Mlbroute   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Mlbroute {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    throughPlaces: ").append(toIndentedString(throughPlaces)).append("\n");
-    sb.append("    distanceCounted: ").append(toIndentedString(distanceCounted)).append("\n");
-    sb.append("    startPlaceID: ").append(toIndentedString(startPlaceID)).append("\n");
-    sb.append("    endPlaceID: ").append(toIndentedString(endPlaceID)).append("\n");
-    sb.append("    andBack: ").append(toIndentedString(andBack)).append("\n");
+    sb.append("    throughplaces: ").append(toIndentedString(throughplaces)).append("\n");
+    sb.append("    distancecounted: ").append(toIndentedString(distancecounted)).append("\n");
+    sb.append("    startplaceId: ").append(toIndentedString(startplaceId)).append("\n");
+    sb.append("    endplaceId: ").append(toIndentedString(endplaceId)).append("\n");
+    sb.append("    andback: ").append(toIndentedString(andback)).append("\n");
     sb.append("    distance: ").append(toIndentedString(distance)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    firmOfficeID: ").append(toIndentedString(firmOfficeID)).append("\n");
-    sb.append("    purposeID: ").append(toIndentedString(purposeID)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    firmofficeId: ").append(toIndentedString(firmofficeId)).append("\n");
+    sb.append("    purposeId: ").append(toIndentedString(purposeId)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    distanceDelta: ").append(toIndentedString(distanceDelta)).append("\n");
-    sb.append("    durationDATE: ").append(toIndentedString(durationDATE)).append("\n");
-    sb.append("    waitingTimeMinDATE: ").append(toIndentedString(waitingTimeMinDATE)).append("\n");
-    sb.append("    waitingTimeMaxDATE: ").append(toIndentedString(waitingTimeMaxDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
+    sb.append("    distancedelta: ").append(toIndentedString(distancedelta)).append("\n");
+    sb.append("    durationdate: ").append(toIndentedString(durationdate)).append("\n");
+    sb.append("    waitingtimemindate: ").append(toIndentedString(waitingtimemindate)).append("\n");
+    sb.append("    waitingtimemaxdate: ").append(toIndentedString(waitingtimemaxdate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

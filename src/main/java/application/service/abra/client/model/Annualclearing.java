@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,192 +37,228 @@ import java.util.Objects;
 /**
  * Annualclearing
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Annualclearing   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Annualclearingrow> rows = new ArrayList<Annualclearingrow>();
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("Employee_ID")
-  private String employeeID = null;
+  @SerializedName("employee_id")
+  private String employeeId = null;
 
-  @SerializedName("YearOfClearing")
-  private Integer yearOfClearing = null;
+  @SerializedName("yearofclearing")
+  private Integer yearofclearing = null;
 
-  @SerializedName("TotalCountOffs")
-  private Double totalCountOffs = null;
+  @SerializedName("totalcountoffs")
+  private Double totalcountoffs = null;
 
-  @SerializedName("TotalBases")
-  private Double totalBases = null;
+  @SerializedName("totalbases")
+  private Double totalbases = null;
 
-  @SerializedName("CalculatedTax")
-  private Double calculatedTax = null;
+  @SerializedName("calculatedtax")
+  private Double calculatedtax = null;
 
-  @SerializedName("PaidTax")
-  private Double paidTax = null;
+  @SerializedName("paidtax")
+  private Double paidtax = null;
 
-  @SerializedName("TotalTaxBonus")
-  private Double totalTaxBonus = null;
+  @SerializedName("totaltaxbonus")
+  private Double totaltaxbonus = null;
 
-  @SerializedName("TotalTaxAdvantage")
-  private Double totalTaxAdvantage = null;
+  @SerializedName("totaltaxadvantage")
+  private Double totaltaxadvantage = null;
 
-  @SerializedName("Transferred_ID")
-  private String transferredID = null;
+  @SerializedName("transferred_id")
+  private String transferredId = null;
 
-  @SerializedName("TaxBaseRounding")
-  private Integer taxBaseRounding = null;
+  @SerializedName("taxbaserounding")
+  private Integer taxbaserounding = null;
 
-  @SerializedName("TaxRounding")
-  private Integer taxRounding = null;
+  @SerializedName("taxrounding")
+  private Integer taxrounding = null;
 
-  @SerializedName("Dirty")
+  @SerializedName("dirty")
   private Boolean dirty = null;
 
-  @SerializedName("DateOfClosing$DATE")
-  private DateTime dateOfClosingDATE = null;
+  @SerializedName("dateofclosing$date")
+  private DateTime dateofclosingdate = null;
 
-  @SerializedName("TotalTaxDiscount")
-  private Double totalTaxDiscount = null;
+  @SerializedName("totaltaxdiscount")
+  private Double totaltaxdiscount = null;
 
-  @SerializedName("IgnoreMinimum")
-  private Boolean ignoreMinimum = null;
+  @SerializedName("ignoreminimum")
+  private Boolean ignoreminimum = null;
 
-  @SerializedName("TransferredAsText")
-  private String transferredAsText = null;
+  @SerializedName("transferredastext")
+  private String transferredastext = null;
 
-  @SerializedName("DecreasedTaxBase")
-  private Double decreasedTaxBase = null;
+  @SerializedName("decreasedtaxbase")
+  private Double decreasedtaxbase = null;
 
-  @SerializedName("Overpaid")
+  @SerializedName("overpaid")
   private Double overpaid = null;
 
-  @SerializedName("Arrears")
+  @SerializedName("arrears")
   private Double arrears = null;
 
-  @SerializedName("TaxBonusOverPaid")
-  private Double taxBonusOverPaid = null;
+  @SerializedName("taxbonusoverpaid")
+  private Double taxbonusoverpaid = null;
 
-  @SerializedName("CalculatedTaxBonus")
-  private Double calculatedTaxBonus = null;
+  @SerializedName("calculatedtaxbonus")
+  private Double calculatedtaxbonus = null;
 
-  @SerializedName("AnnualClearing")
-  private Double annualClearing = null;
+  @SerializedName("annualclearing")
+  private Double annualclearing = null;
 
-  @SerializedName("YearTaxBonus")
-  private Double yearTaxBonus = null;
+  @SerializedName("yeartaxbonus")
+  private Double yeartaxbonus = null;
 
-  @SerializedName("PersonalNumber")
-  private String personalNumber = null;
+  @SerializedName("personalnumber")
+  private String personalnumber = null;
 
-  @SerializedName("NumPersonalNumber")
-  private Integer numPersonalNumber = null;
+  @SerializedName("numpersonalnumber")
+  private Integer numpersonalnumber = null;
 
-  @SerializedName("TotalIncome")
-  private Double totalIncome = null;
+  @SerializedName("totalincome")
+  private Double totalincome = null;
 
-  @SerializedName("TotalInsurance")
-  private Double totalInsurance = null;
+  @SerializedName("totalinsurance")
+  private Double totalinsurance = null;
 
-  @SerializedName("EmployeePremium")
-  private Double employeePremium = null;
+  @SerializedName("employeepremium")
+  private Double employeepremium = null;
 
-  @SerializedName("EmplPremTableWR")
-  private String emplPremTableWR = null;
+  @SerializedName("emplpremtablewr")
+  private String emplpremtablewr = null;
 
-  @SerializedName("EmplPremTableAgreement")
-  private String emplPremTableAgreement = null;
+  @SerializedName("emplpremtableagreement")
+  private String emplpremtableagreement = null;
 
-  @SerializedName("EmplPremCalc")
-  private Boolean emplPremCalc = null;
+  @SerializedName("emplpremcalc")
+  private Boolean emplpremcalc = null;
 
-  @SerializedName("EmployeePremiumCorrection")
-  private Double employeePremiumCorrection = null;
+  @SerializedName("employeepremiumcorrection")
+  private Double employeepremiumcorrection = null;
 
-  @SerializedName("HealthInsurance")
-  private Double healthInsurance = null;
+  @SerializedName("healthinsurance")
+  private Double healthinsurance = null;
 
-  @SerializedName("SocialInsurance")
-  private Double socialInsurance = null;
+  @SerializedName("socialinsurance")
+  private Double socialinsurance = null;
 
-  @SerializedName("IsComputed")
-  private Boolean isComputed = null;
+  @SerializedName("iscomputed")
+  private Boolean iscomputed = null;
 
-  @SerializedName("TaxBonusRefund")
-  private Double taxBonusRefund = null;
+  @SerializedName("taxbonusrefund")
+  private Double taxbonusrefund = null;
 
-  @SerializedName("OAPensSavingBaseCut")
-  private Double oAPensSavingBaseCut = null;
+  @SerializedName("oapenssavingbasecut")
+  private Double oapenssavingbasecut = null;
+
+  public Annualclearing displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Annualclearing id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Annualclearing classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Annualclearing objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Annualclearing rows(List<Annualclearingrow> rows) {
@@ -236,10 +272,10 @@ public class Annualclearing   {
   }
 
    /**
-   * Řádky; kolekce BO Řádek ročního zúčtování [nepersistentní položka]
+   * Řádky; kolekce bo Řádek ročního zúčtování [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Řádek ročního zúčtování [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo Řádek ročního zúčtování [nepersistentní položka]")
   public List<Annualclearingrow> getRows() {
     return rows;
   }
@@ -248,346 +284,346 @@ public class Annualclearing   {
     this.rows = rows;
   }
 
-  public Annualclearing docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Annualclearing docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Annualclearing periodID(String periodID) {
-    this.periodID = periodID;
+  public Annualclearing periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Annualclearing ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Annualclearing ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Annualclearing docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Annualclearing docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Annualclearing createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Annualclearing createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Annualclearing correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Annualclearing correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Annualclearing newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Annualclearing newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Annualclearing newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Annualclearing newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Annualclearing employeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public Annualclearing employeeId(String employeeId) {
+    this.employeeId = employeeId;
     return this;
   }
 
    /**
-   * Zaměstnanec; ID objektu Zaměstnanec [persistentní položka]
-   * @return employeeID
+   * zaměstnanec; id objektu zaměstnanec [persistentní položka]
+   * @return employeeId
   **/
-  @ApiModelProperty(example = "null", value = "Zaměstnanec; ID objektu Zaměstnanec [persistentní položka]")
-  public String getEmployeeID() {
-    return employeeID;
+  @ApiModelProperty(example = "null", value = "zaměstnanec; id objektu zaměstnanec [persistentní položka]")
+  public String getEmployeeId() {
+    return employeeId;
   }
 
-  public void setEmployeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public void setEmployeeId(String employeeId) {
+    this.employeeId = employeeId;
   }
 
-  public Annualclearing yearOfClearing(Integer yearOfClearing) {
-    this.yearOfClearing = yearOfClearing;
+  public Annualclearing yearofclearing(Integer yearofclearing) {
+    this.yearofclearing = yearofclearing;
     return this;
   }
 
    /**
-   * Rok zúčtování [persistentní položka]
-   * @return yearOfClearing
+   * rok zúčtování [persistentní položka]
+   * @return yearofclearing
   **/
-  @ApiModelProperty(example = "null", value = "Rok zúčtování [persistentní položka]")
-  public Integer getYearOfClearing() {
-    return yearOfClearing;
+  @ApiModelProperty(example = "null", value = "rok zúčtování [persistentní položka]")
+  public Integer getYearofclearing() {
+    return yearofclearing;
   }
 
-  public void setYearOfClearing(Integer yearOfClearing) {
-    this.yearOfClearing = yearOfClearing;
+  public void setYearofclearing(Integer yearofclearing) {
+    this.yearofclearing = yearofclearing;
   }
 
-  public Annualclearing totalCountOffs(Double totalCountOffs) {
-    this.totalCountOffs = totalCountOffs;
+  public Annualclearing totalcountoffs(Double totalcountoffs) {
+    this.totalcountoffs = totalcountoffs;
     return this;
   }
 
    /**
-   * Celkem odpočty [persistentní položka]
-   * @return totalCountOffs
+   * celkem odpočty [persistentní položka]
+   * @return totalcountoffs
   **/
-  @ApiModelProperty(example = "null", value = "Celkem odpočty [persistentní položka]")
-  public Double getTotalCountOffs() {
-    return totalCountOffs;
+  @ApiModelProperty(example = "null", value = "celkem odpočty [persistentní položka]")
+  public Double getTotalcountoffs() {
+    return totalcountoffs;
   }
 
-  public void setTotalCountOffs(Double totalCountOffs) {
-    this.totalCountOffs = totalCountOffs;
+  public void setTotalcountoffs(Double totalcountoffs) {
+    this.totalcountoffs = totalcountoffs;
   }
 
-  public Annualclearing totalBases(Double totalBases) {
-    this.totalBases = totalBases;
+  public Annualclearing totalbases(Double totalbases) {
+    this.totalbases = totalbases;
     return this;
   }
 
    /**
-   * Celkem základ [persistentní položka]
-   * @return totalBases
+   * celkem základ [persistentní položka]
+   * @return totalbases
   **/
-  @ApiModelProperty(example = "null", value = "Celkem základ [persistentní položka]")
-  public Double getTotalBases() {
-    return totalBases;
+  @ApiModelProperty(example = "null", value = "celkem základ [persistentní položka]")
+  public Double getTotalbases() {
+    return totalbases;
   }
 
-  public void setTotalBases(Double totalBases) {
-    this.totalBases = totalBases;
+  public void setTotalbases(Double totalbases) {
+    this.totalbases = totalbases;
   }
 
-  public Annualclearing calculatedTax(Double calculatedTax) {
-    this.calculatedTax = calculatedTax;
+  public Annualclearing calculatedtax(Double calculatedtax) {
+    this.calculatedtax = calculatedtax;
     return this;
   }
 
    /**
-   * Vypočtená daň před slevou [persistentní položka]
-   * @return calculatedTax
+   * vypočtená daň před slevou [persistentní položka]
+   * @return calculatedtax
   **/
-  @ApiModelProperty(example = "null", value = "Vypočtená daň před slevou [persistentní položka]")
-  public Double getCalculatedTax() {
-    return calculatedTax;
+  @ApiModelProperty(example = "null", value = "vypočtená daň před slevou [persistentní položka]")
+  public Double getCalculatedtax() {
+    return calculatedtax;
   }
 
-  public void setCalculatedTax(Double calculatedTax) {
-    this.calculatedTax = calculatedTax;
+  public void setCalculatedtax(Double calculatedtax) {
+    this.calculatedtax = calculatedtax;
   }
 
-  public Annualclearing paidTax(Double paidTax) {
-    this.paidTax = paidTax;
+  public Annualclearing paidtax(Double paidtax) {
+    this.paidtax = paidtax;
     return this;
   }
 
    /**
-   * Zaplacené zálohy [persistentní položka]
-   * @return paidTax
+   * zaplacené zálohy [persistentní položka]
+   * @return paidtax
   **/
-  @ApiModelProperty(example = "null", value = "Zaplacené zálohy [persistentní položka]")
-  public Double getPaidTax() {
-    return paidTax;
+  @ApiModelProperty(example = "null", value = "zaplacené zálohy [persistentní položka]")
+  public Double getPaidtax() {
+    return paidtax;
   }
 
-  public void setPaidTax(Double paidTax) {
-    this.paidTax = paidTax;
+  public void setPaidtax(Double paidtax) {
+    this.paidtax = paidtax;
   }
 
-  public Annualclearing totalTaxBonus(Double totalTaxBonus) {
-    this.totalTaxBonus = totalTaxBonus;
+  public Annualclearing totaltaxbonus(Double totaltaxbonus) {
+    this.totaltaxbonus = totaltaxbonus;
     return this;
   }
 
    /**
-   * Vyplacený daňový bonus [persistentní položka]
-   * @return totalTaxBonus
+   * vyplacený daňový bonus [persistentní položka]
+   * @return totaltaxbonus
   **/
-  @ApiModelProperty(example = "null", value = "Vyplacený daňový bonus [persistentní položka]")
-  public Double getTotalTaxBonus() {
-    return totalTaxBonus;
+  @ApiModelProperty(example = "null", value = "vyplacený daňový bonus [persistentní položka]")
+  public Double getTotaltaxbonus() {
+    return totaltaxbonus;
   }
 
-  public void setTotalTaxBonus(Double totalTaxBonus) {
-    this.totalTaxBonus = totalTaxBonus;
+  public void setTotaltaxbonus(Double totaltaxbonus) {
+    this.totaltaxbonus = totaltaxbonus;
   }
 
-  public Annualclearing totalTaxAdvantage(Double totalTaxAdvantage) {
-    this.totalTaxAdvantage = totalTaxAdvantage;
+  public Annualclearing totaltaxadvantage(Double totaltaxadvantage) {
+    this.totaltaxadvantage = totaltaxadvantage;
     return this;
   }
 
    /**
-   * Daňové zvýhodnění [persistentní položka]
-   * @return totalTaxAdvantage
+   * daňové zvýhodnění [persistentní položka]
+   * @return totaltaxadvantage
   **/
-  @ApiModelProperty(example = "null", value = "Daňové zvýhodnění [persistentní položka]")
-  public Double getTotalTaxAdvantage() {
-    return totalTaxAdvantage;
+  @ApiModelProperty(example = "null", value = "daňové zvýhodnění [persistentní položka]")
+  public Double getTotaltaxadvantage() {
+    return totaltaxadvantage;
   }
 
-  public void setTotalTaxAdvantage(Double totalTaxAdvantage) {
-    this.totalTaxAdvantage = totalTaxAdvantage;
+  public void setTotaltaxadvantage(Double totaltaxadvantage) {
+    this.totaltaxadvantage = totaltaxadvantage;
   }
 
-  public Annualclearing transferredID(String transferredID) {
-    this.transferredID = transferredID;
+  public Annualclearing transferredId(String transferredId) {
+    this.transferredId = transferredId;
     return this;
   }
 
    /**
-   * Přeneseno do ML; ID objektu Mzdový list souhrnný [persistentní položka]
-   * @return transferredID
+   * přeneseno do ml; id objektu mzdový list souhrnný [persistentní položka]
+   * @return transferredId
   **/
-  @ApiModelProperty(example = "null", value = "Přeneseno do ML; ID objektu Mzdový list souhrnný [persistentní položka]")
-  public String getTransferredID() {
-    return transferredID;
+  @ApiModelProperty(example = "null", value = "přeneseno do ml; id objektu mzdový list souhrnný [persistentní položka]")
+  public String getTransferredId() {
+    return transferredId;
   }
 
-  public void setTransferredID(String transferredID) {
-    this.transferredID = transferredID;
+  public void setTransferredId(String transferredId) {
+    this.transferredId = transferredId;
   }
 
-  public Annualclearing taxBaseRounding(Integer taxBaseRounding) {
-    this.taxBaseRounding = taxBaseRounding;
+  public Annualclearing taxbaserounding(Integer taxbaserounding) {
+    this.taxbaserounding = taxbaserounding;
     return this;
   }
 
    /**
-   * Zaok.základu [persistentní položka]
-   * @return taxBaseRounding
+   * zaok.základu [persistentní položka]
+   * @return taxbaserounding
   **/
-  @ApiModelProperty(example = "null", value = "Zaok.základu [persistentní položka]")
-  public Integer getTaxBaseRounding() {
-    return taxBaseRounding;
+  @ApiModelProperty(example = "null", value = "zaok.základu [persistentní položka]")
+  public Integer getTaxbaserounding() {
+    return taxbaserounding;
   }
 
-  public void setTaxBaseRounding(Integer taxBaseRounding) {
-    this.taxBaseRounding = taxBaseRounding;
+  public void setTaxbaserounding(Integer taxbaserounding) {
+    this.taxbaserounding = taxbaserounding;
   }
 
-  public Annualclearing taxRounding(Integer taxRounding) {
-    this.taxRounding = taxRounding;
+  public Annualclearing taxrounding(Integer taxrounding) {
+    this.taxrounding = taxrounding;
     return this;
   }
 
    /**
-   * Zaok.daně [persistentní položka]
-   * @return taxRounding
+   * zaok.daně [persistentní položka]
+   * @return taxrounding
   **/
-  @ApiModelProperty(example = "null", value = "Zaok.daně [persistentní položka]")
-  public Integer getTaxRounding() {
-    return taxRounding;
+  @ApiModelProperty(example = "null", value = "zaok.daně [persistentní položka]")
+  public Integer getTaxrounding() {
+    return taxrounding;
   }
 
-  public void setTaxRounding(Integer taxRounding) {
-    this.taxRounding = taxRounding;
+  public void setTaxrounding(Integer taxrounding) {
+    this.taxrounding = taxrounding;
   }
 
   public Annualclearing dirty(Boolean dirty) {
@@ -596,10 +632,10 @@ public class Annualclearing   {
   }
 
    /**
-   * Cizí doklad [persistentní položka]
+   * cizí doklad [persistentní položka]
    * @return dirty
   **/
-  @ApiModelProperty(example = "null", value = "Cizí doklad [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "cizí doklad [persistentní položka]")
   public Boolean getDirty() {
     return dirty;
   }
@@ -608,94 +644,94 @@ public class Annualclearing   {
     this.dirty = dirty;
   }
 
-  public Annualclearing dateOfClosingDATE(DateTime dateOfClosingDATE) {
-    this.dateOfClosingDATE = dateOfClosingDATE;
+  public Annualclearing dateofclosingdate(DateTime dateofclosingdate) {
+    this.dateofclosingdate = dateofclosingdate;
     return this;
   }
 
    /**
-   * Datum uzavření [persistentní položka]
-   * @return dateOfClosingDATE
+   * datum uzavření [persistentní položka]
+   * @return dateofclosingdate
   **/
-  @ApiModelProperty(example = "null", value = "Datum uzavření [persistentní položka]")
-  public DateTime getDateOfClosingDATE() {
-    return dateOfClosingDATE;
+  @ApiModelProperty(example = "null", value = "datum uzavření [persistentní položka]")
+  public DateTime getDateofclosingdate() {
+    return dateofclosingdate;
   }
 
-  public void setDateOfClosingDATE(DateTime dateOfClosingDATE) {
-    this.dateOfClosingDATE = dateOfClosingDATE;
+  public void setDateofclosingdate(DateTime dateofclosingdate) {
+    this.dateofclosingdate = dateofclosingdate;
   }
 
-  public Annualclearing totalTaxDiscount(Double totalTaxDiscount) {
-    this.totalTaxDiscount = totalTaxDiscount;
+  public Annualclearing totaltaxdiscount(Double totaltaxdiscount) {
+    this.totaltaxdiscount = totaltaxdiscount;
     return this;
   }
 
    /**
-   * Sleva na dani [persistentní položka]
-   * @return totalTaxDiscount
+   * sleva na dani [persistentní položka]
+   * @return totaltaxdiscount
   **/
-  @ApiModelProperty(example = "null", value = "Sleva na dani [persistentní položka]")
-  public Double getTotalTaxDiscount() {
-    return totalTaxDiscount;
+  @ApiModelProperty(example = "null", value = "sleva na dani [persistentní položka]")
+  public Double getTotaltaxdiscount() {
+    return totaltaxdiscount;
   }
 
-  public void setTotalTaxDiscount(Double totalTaxDiscount) {
-    this.totalTaxDiscount = totalTaxDiscount;
+  public void setTotaltaxdiscount(Double totaltaxdiscount) {
+    this.totaltaxdiscount = totaltaxdiscount;
   }
 
-  public Annualclearing ignoreMinimum(Boolean ignoreMinimum) {
-    this.ignoreMinimum = ignoreMinimum;
+  public Annualclearing ignoreminimum(Boolean ignoreminimum) {
+    this.ignoreminimum = ignoreminimum;
     return this;
   }
 
    /**
-   * Ignoruj minimum [persistentní položka]
-   * @return ignoreMinimum
+   * ignoruj minimum [persistentní položka]
+   * @return ignoreminimum
   **/
-  @ApiModelProperty(example = "null", value = "Ignoruj minimum [persistentní položka]")
-  public Boolean getIgnoreMinimum() {
-    return ignoreMinimum;
+  @ApiModelProperty(example = "null", value = "ignoruj minimum [persistentní položka]")
+  public Boolean getIgnoreminimum() {
+    return ignoreminimum;
   }
 
-  public void setIgnoreMinimum(Boolean ignoreMinimum) {
-    this.ignoreMinimum = ignoreMinimum;
+  public void setIgnoreminimum(Boolean ignoreminimum) {
+    this.ignoreminimum = ignoreminimum;
   }
 
-  public Annualclearing transferredAsText(String transferredAsText) {
-    this.transferredAsText = transferredAsText;
+  public Annualclearing transferredastext(String transferredastext) {
+    this.transferredastext = transferredastext;
     return this;
   }
 
    /**
-   * Přeneseno do ML
-   * @return transferredAsText
+   * přeneseno do ml
+   * @return transferredastext
   **/
-  @ApiModelProperty(example = "null", value = "Přeneseno do ML")
-  public String getTransferredAsText() {
-    return transferredAsText;
+  @ApiModelProperty(example = "null", value = "přeneseno do ml")
+  public String getTransferredastext() {
+    return transferredastext;
   }
 
-  public void setTransferredAsText(String transferredAsText) {
-    this.transferredAsText = transferredAsText;
+  public void setTransferredastext(String transferredastext) {
+    this.transferredastext = transferredastext;
   }
 
-  public Annualclearing decreasedTaxBase(Double decreasedTaxBase) {
-    this.decreasedTaxBase = decreasedTaxBase;
+  public Annualclearing decreasedtaxbase(Double decreasedtaxbase) {
+    this.decreasedtaxbase = decreasedtaxbase;
     return this;
   }
 
    /**
-   * Snížený základ
-   * @return decreasedTaxBase
+   * snížený základ
+   * @return decreasedtaxbase
   **/
-  @ApiModelProperty(example = "null", value = "Snížený základ")
-  public Double getDecreasedTaxBase() {
-    return decreasedTaxBase;
+  @ApiModelProperty(example = "null", value = "snížený základ")
+  public Double getDecreasedtaxbase() {
+    return decreasedtaxbase;
   }
 
-  public void setDecreasedTaxBase(Double decreasedTaxBase) {
-    this.decreasedTaxBase = decreasedTaxBase;
+  public void setDecreasedtaxbase(Double decreasedtaxbase) {
+    this.decreasedtaxbase = decreasedtaxbase;
   }
 
   public Annualclearing overpaid(Double overpaid) {
@@ -704,10 +740,10 @@ public class Annualclearing   {
   }
 
    /**
-   * Přeplatek
+   * přeplatek
    * @return overpaid
   **/
-  @ApiModelProperty(example = "null", value = "Přeplatek")
+  @ApiModelProperty(example = "null", value = "přeplatek")
   public Double getOverpaid() {
     return overpaid;
   }
@@ -722,10 +758,10 @@ public class Annualclearing   {
   }
 
    /**
-   * Nedoplatek
+   * nedoplatek
    * @return arrears
   **/
-  @ApiModelProperty(example = "null", value = "Nedoplatek")
+  @ApiModelProperty(example = "null", value = "nedoplatek")
   public Double getArrears() {
     return arrears;
   }
@@ -734,229 +770,328 @@ public class Annualclearing   {
     this.arrears = arrears;
   }
 
-   /**
-   * Přeplatek daň. bonusu
-   * @return taxBonusOverPaid
-  **/
-  @ApiModelProperty(example = "null", value = "Přeplatek daň. bonusu")
-  public Double getTaxBonusOverPaid() {
-    return taxBonusOverPaid;
-  }
-
-   /**
-   * Spočtený daň. bonus
-   * @return calculatedTaxBonus
-  **/
-  @ApiModelProperty(example = "null", value = "Spočtený daň. bonus")
-  public Double getCalculatedTaxBonus() {
-    return calculatedTaxBonus;
-  }
-
-   /**
-   * Přeplatek na dani
-   * @return annualClearing
-  **/
-  @ApiModelProperty(example = "null", value = "Přeplatek na dani")
-  public Double getAnnualClearing() {
-    return annualClearing;
-  }
-
-   /**
-   * Rozdíl na daň. bonusu
-   * @return yearTaxBonus
-  **/
-  @ApiModelProperty(example = "null", value = "Rozdíl na daň. bonusu")
-  public Double getYearTaxBonus() {
-    return yearTaxBonus;
-  }
-
-   /**
-   * Os. číslo
-   * @return personalNumber
-  **/
-  @ApiModelProperty(example = "null", value = "Os. číslo")
-  public String getPersonalNumber() {
-    return personalNumber;
-  }
-
-   /**
-   * Os.číslo numericky
-   * @return numPersonalNumber
-  **/
-  @ApiModelProperty(example = "null", value = "Os.číslo numericky")
-  public Integer getNumPersonalNumber() {
-    return numPersonalNumber;
-  }
-
-   /**
-   * Celk.příjem
-   * @return totalIncome
-  **/
-  @ApiModelProperty(example = "null", value = "Celk.příjem")
-  public Double getTotalIncome() {
-    return totalIncome;
-  }
-
-   /**
-   * Celk.pojistné
-   * @return totalInsurance
-  **/
-  @ApiModelProperty(example = "null", value = "Celk.pojistné")
-  public Double getTotalInsurance() {
-    return totalInsurance;
-  }
-
-   /**
-   * Zaměstnanecká prémie
-   * @return employeePremium
-  **/
-  @ApiModelProperty(example = "null", value = "Zaměstnanecká prémie")
-  public Double getEmployeePremium() {
-    return employeePremium;
-  }
-
-  public Annualclearing emplPremTableWR(String emplPremTableWR) {
-    this.emplPremTableWR = emplPremTableWR;
+  public Annualclearing taxbonusoverpaid(Double taxbonusoverpaid) {
+    this.taxbonusoverpaid = taxbonusoverpaid;
     return this;
   }
 
    /**
-   * Měsíce pr.poměrů [persistentní položka]
-   * @return emplPremTableWR
+   * přeplatek daň. bonusu
+   * @return taxbonusoverpaid
   **/
-  @ApiModelProperty(example = "null", value = "Měsíce pr.poměrů [persistentní položka]")
-  public String getEmplPremTableWR() {
-    return emplPremTableWR;
+  @ApiModelProperty(example = "null", value = "přeplatek daň. bonusu")
+  public Double getTaxbonusoverpaid() {
+    return taxbonusoverpaid;
   }
 
-  public void setEmplPremTableWR(String emplPremTableWR) {
-    this.emplPremTableWR = emplPremTableWR;
+  public void setTaxbonusoverpaid(Double taxbonusoverpaid) {
+    this.taxbonusoverpaid = taxbonusoverpaid;
   }
 
-  public Annualclearing emplPremTableAgreement(String emplPremTableAgreement) {
-    this.emplPremTableAgreement = emplPremTableAgreement;
+  public Annualclearing calculatedtaxbonus(Double calculatedtaxbonus) {
+    this.calculatedtaxbonus = calculatedtaxbonus;
     return this;
   }
 
    /**
-   * Měsíce dohod [persistentní položka]
-   * @return emplPremTableAgreement
+   * spočtený daň. bonus
+   * @return calculatedtaxbonus
   **/
-  @ApiModelProperty(example = "null", value = "Měsíce dohod [persistentní položka]")
-  public String getEmplPremTableAgreement() {
-    return emplPremTableAgreement;
+  @ApiModelProperty(example = "null", value = "spočtený daň. bonus")
+  public Double getCalculatedtaxbonus() {
+    return calculatedtaxbonus;
   }
 
-  public void setEmplPremTableAgreement(String emplPremTableAgreement) {
-    this.emplPremTableAgreement = emplPremTableAgreement;
+  public void setCalculatedtaxbonus(Double calculatedtaxbonus) {
+    this.calculatedtaxbonus = calculatedtaxbonus;
   }
 
-  public Annualclearing emplPremCalc(Boolean emplPremCalc) {
-    this.emplPremCalc = emplPremCalc;
+  public Annualclearing annualclearing(Double annualclearing) {
+    this.annualclearing = annualclearing;
     return this;
   }
 
    /**
-   * Počítat zam.prémii [persistentní položka]
-   * @return emplPremCalc
+   * přeplatek na dani
+   * @return annualclearing
   **/
-  @ApiModelProperty(example = "null", value = "Počítat zam.prémii [persistentní položka]")
-  public Boolean getEmplPremCalc() {
-    return emplPremCalc;
+  @ApiModelProperty(example = "null", value = "přeplatek na dani")
+  public Double getAnnualclearing() {
+    return annualclearing;
   }
 
-  public void setEmplPremCalc(Boolean emplPremCalc) {
-    this.emplPremCalc = emplPremCalc;
+  public void setAnnualclearing(Double annualclearing) {
+    this.annualclearing = annualclearing;
   }
 
-  public Annualclearing employeePremiumCorrection(Double employeePremiumCorrection) {
-    this.employeePremiumCorrection = employeePremiumCorrection;
+  public Annualclearing yeartaxbonus(Double yeartaxbonus) {
+    this.yeartaxbonus = yeartaxbonus;
     return this;
   }
 
    /**
-   * Zam.prémie - korekce [persistentní položka]
-   * @return employeePremiumCorrection
+   * rozdíl na daň. bonusu
+   * @return yeartaxbonus
   **/
-  @ApiModelProperty(example = "null", value = "Zam.prémie - korekce [persistentní položka]")
-  public Double getEmployeePremiumCorrection() {
-    return employeePremiumCorrection;
+  @ApiModelProperty(example = "null", value = "rozdíl na daň. bonusu")
+  public Double getYeartaxbonus() {
+    return yeartaxbonus;
   }
 
-  public void setEmployeePremiumCorrection(Double employeePremiumCorrection) {
-    this.employeePremiumCorrection = employeePremiumCorrection;
+  public void setYeartaxbonus(Double yeartaxbonus) {
+    this.yeartaxbonus = yeartaxbonus;
   }
 
-   /**
-   * Zdravotní poj.
-   * @return healthInsurance
-  **/
-  @ApiModelProperty(example = "null", value = "Zdravotní poj.")
-  public Double getHealthInsurance() {
-    return healthInsurance;
-  }
-
-   /**
-   * Sociální poj.
-   * @return socialInsurance
-  **/
-  @ApiModelProperty(example = "null", value = "Sociální poj.")
-  public Double getSocialInsurance() {
-    return socialInsurance;
-  }
-
-  public Annualclearing isComputed(Boolean isComputed) {
-    this.isComputed = isComputed;
+  public Annualclearing personalnumber(String personalnumber) {
+    this.personalnumber = personalnumber;
     return this;
   }
 
    /**
-   * Spočteno [persistentní položka]
-   * @return isComputed
+   * os. číslo
+   * @return personalnumber
   **/
-  @ApiModelProperty(example = "null", value = "Spočteno [persistentní položka]")
-  public Boolean getIsComputed() {
-    return isComputed;
+  @ApiModelProperty(example = "null", value = "os. číslo")
+  public String getPersonalnumber() {
+    return personalnumber;
   }
 
-  public void setIsComputed(Boolean isComputed) {
-    this.isComputed = isComputed;
+  public void setPersonalnumber(String personalnumber) {
+    this.personalnumber = personalnumber;
   }
 
-  public Annualclearing taxBonusRefund(Double taxBonusRefund) {
-    this.taxBonusRefund = taxBonusRefund;
+  public Annualclearing numpersonalnumber(Integer numpersonalnumber) {
+    this.numpersonalnumber = numpersonalnumber;
     return this;
   }
 
    /**
-   * Vrácení neopr.vypl. bonusu [persistentní položka]
-   * @return taxBonusRefund
+   * os.číslo numericky
+   * @return numpersonalnumber
   **/
-  @ApiModelProperty(example = "null", value = "Vrácení neopr.vypl. bonusu [persistentní položka]")
-  public Double getTaxBonusRefund() {
-    return taxBonusRefund;
+  @ApiModelProperty(example = "null", value = "os.číslo numericky")
+  public Integer getNumpersonalnumber() {
+    return numpersonalnumber;
   }
 
-  public void setTaxBonusRefund(Double taxBonusRefund) {
-    this.taxBonusRefund = taxBonusRefund;
+  public void setNumpersonalnumber(Integer numpersonalnumber) {
+    this.numpersonalnumber = numpersonalnumber;
   }
 
-  public Annualclearing oAPensSavingBaseCut(Double oAPensSavingBaseCut) {
-    this.oAPensSavingBaseCut = oAPensSavingBaseCut;
+  public Annualclearing totalincome(Double totalincome) {
+    this.totalincome = totalincome;
     return this;
   }
 
    /**
-   * SDS uplatněné do základu daně [persistentní položka]
-   * @return oAPensSavingBaseCut
+   * celk.příjem
+   * @return totalincome
   **/
-  @ApiModelProperty(example = "null", value = "SDS uplatněné do základu daně [persistentní položka]")
-  public Double getOAPensSavingBaseCut() {
-    return oAPensSavingBaseCut;
+  @ApiModelProperty(example = "null", value = "celk.příjem")
+  public Double getTotalincome() {
+    return totalincome;
   }
 
-  public void setOAPensSavingBaseCut(Double oAPensSavingBaseCut) {
-    this.oAPensSavingBaseCut = oAPensSavingBaseCut;
+  public void setTotalincome(Double totalincome) {
+    this.totalincome = totalincome;
+  }
+
+  public Annualclearing totalinsurance(Double totalinsurance) {
+    this.totalinsurance = totalinsurance;
+    return this;
+  }
+
+   /**
+   * celk.pojistné
+   * @return totalinsurance
+  **/
+  @ApiModelProperty(example = "null", value = "celk.pojistné")
+  public Double getTotalinsurance() {
+    return totalinsurance;
+  }
+
+  public void setTotalinsurance(Double totalinsurance) {
+    this.totalinsurance = totalinsurance;
+  }
+
+  public Annualclearing employeepremium(Double employeepremium) {
+    this.employeepremium = employeepremium;
+    return this;
+  }
+
+   /**
+   * zaměstnanecká prémie
+   * @return employeepremium
+  **/
+  @ApiModelProperty(example = "null", value = "zaměstnanecká prémie")
+  public Double getEmployeepremium() {
+    return employeepremium;
+  }
+
+  public void setEmployeepremium(Double employeepremium) {
+    this.employeepremium = employeepremium;
+  }
+
+  public Annualclearing emplpremtablewr(String emplpremtablewr) {
+    this.emplpremtablewr = emplpremtablewr;
+    return this;
+  }
+
+   /**
+   * měsíce pr.poměrů [persistentní položka]
+   * @return emplpremtablewr
+  **/
+  @ApiModelProperty(example = "null", value = "měsíce pr.poměrů [persistentní položka]")
+  public String getEmplpremtablewr() {
+    return emplpremtablewr;
+  }
+
+  public void setEmplpremtablewr(String emplpremtablewr) {
+    this.emplpremtablewr = emplpremtablewr;
+  }
+
+  public Annualclearing emplpremtableagreement(String emplpremtableagreement) {
+    this.emplpremtableagreement = emplpremtableagreement;
+    return this;
+  }
+
+   /**
+   * měsíce dohod [persistentní položka]
+   * @return emplpremtableagreement
+  **/
+  @ApiModelProperty(example = "null", value = "měsíce dohod [persistentní položka]")
+  public String getEmplpremtableagreement() {
+    return emplpremtableagreement;
+  }
+
+  public void setEmplpremtableagreement(String emplpremtableagreement) {
+    this.emplpremtableagreement = emplpremtableagreement;
+  }
+
+  public Annualclearing emplpremcalc(Boolean emplpremcalc) {
+    this.emplpremcalc = emplpremcalc;
+    return this;
+  }
+
+   /**
+   * počítat zam.prémii [persistentní položka]
+   * @return emplpremcalc
+  **/
+  @ApiModelProperty(example = "null", value = "počítat zam.prémii [persistentní položka]")
+  public Boolean getEmplpremcalc() {
+    return emplpremcalc;
+  }
+
+  public void setEmplpremcalc(Boolean emplpremcalc) {
+    this.emplpremcalc = emplpremcalc;
+  }
+
+  public Annualclearing employeepremiumcorrection(Double employeepremiumcorrection) {
+    this.employeepremiumcorrection = employeepremiumcorrection;
+    return this;
+  }
+
+   /**
+   * zam.prémie - korekce [persistentní položka]
+   * @return employeepremiumcorrection
+  **/
+  @ApiModelProperty(example = "null", value = "zam.prémie - korekce [persistentní položka]")
+  public Double getEmployeepremiumcorrection() {
+    return employeepremiumcorrection;
+  }
+
+  public void setEmployeepremiumcorrection(Double employeepremiumcorrection) {
+    this.employeepremiumcorrection = employeepremiumcorrection;
+  }
+
+  public Annualclearing healthinsurance(Double healthinsurance) {
+    this.healthinsurance = healthinsurance;
+    return this;
+  }
+
+   /**
+   * zdravotní poj.
+   * @return healthinsurance
+  **/
+  @ApiModelProperty(example = "null", value = "zdravotní poj.")
+  public Double getHealthinsurance() {
+    return healthinsurance;
+  }
+
+  public void setHealthinsurance(Double healthinsurance) {
+    this.healthinsurance = healthinsurance;
+  }
+
+  public Annualclearing socialinsurance(Double socialinsurance) {
+    this.socialinsurance = socialinsurance;
+    return this;
+  }
+
+   /**
+   * sociální poj.
+   * @return socialinsurance
+  **/
+  @ApiModelProperty(example = "null", value = "sociální poj.")
+  public Double getSocialinsurance() {
+    return socialinsurance;
+  }
+
+  public void setSocialinsurance(Double socialinsurance) {
+    this.socialinsurance = socialinsurance;
+  }
+
+  public Annualclearing iscomputed(Boolean iscomputed) {
+    this.iscomputed = iscomputed;
+    return this;
+  }
+
+   /**
+   * spočteno [persistentní položka]
+   * @return iscomputed
+  **/
+  @ApiModelProperty(example = "null", value = "spočteno [persistentní položka]")
+  public Boolean getIscomputed() {
+    return iscomputed;
+  }
+
+  public void setIscomputed(Boolean iscomputed) {
+    this.iscomputed = iscomputed;
+  }
+
+  public Annualclearing taxbonusrefund(Double taxbonusrefund) {
+    this.taxbonusrefund = taxbonusrefund;
+    return this;
+  }
+
+   /**
+   * vrácení neopr.vypl. bonusu [persistentní položka]
+   * @return taxbonusrefund
+  **/
+  @ApiModelProperty(example = "null", value = "vrácení neopr.vypl. bonusu [persistentní položka]")
+  public Double getTaxbonusrefund() {
+    return taxbonusrefund;
+  }
+
+  public void setTaxbonusrefund(Double taxbonusrefund) {
+    this.taxbonusrefund = taxbonusrefund;
+  }
+
+  public Annualclearing oapenssavingbasecut(Double oapenssavingbasecut) {
+    this.oapenssavingbasecut = oapenssavingbasecut;
+    return this;
+  }
+
+   /**
+   * sds uplatněné do základu daně [persistentní položka]
+   * @return oapenssavingbasecut
+  **/
+  @ApiModelProperty(example = "null", value = "sds uplatněné do základu daně [persistentní položka]")
+  public Double getOapenssavingbasecut() {
+    return oapenssavingbasecut;
+  }
+
+  public void setOapenssavingbasecut(Double oapenssavingbasecut) {
+    this.oapenssavingbasecut = oapenssavingbasecut;
   }
 
 
@@ -969,61 +1104,61 @@ public class Annualclearing   {
       return false;
     }
     Annualclearing annualclearing = (Annualclearing) o;
-    return Objects.equals(this.displayName, annualclearing.displayName) &&
-        Objects.equals(this.ID, annualclearing.ID) &&
-        Objects.equals(this.classID, annualclearing.classID) &&
-        Objects.equals(this.objVersion, annualclearing.objVersion) &&
+    return Objects.equals(this.displayname, annualclearing.displayname) &&
+        Objects.equals(this.id, annualclearing.id) &&
+        Objects.equals(this.classid, annualclearing.classid) &&
+        Objects.equals(this.objversion, annualclearing.objversion) &&
         Objects.equals(this.rows, annualclearing.rows) &&
-        Objects.equals(this.docQueueID, annualclearing.docQueueID) &&
-        Objects.equals(this.periodID, annualclearing.periodID) &&
-        Objects.equals(this.ordNumber, annualclearing.ordNumber) &&
-        Objects.equals(this.docDateDATE, annualclearing.docDateDATE) &&
-        Objects.equals(this.createdByID, annualclearing.createdByID) &&
-        Objects.equals(this.correctedByID, annualclearing.correctedByID) &&
-        Objects.equals(this.newRelatedType, annualclearing.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, annualclearing.newRelatedDocumentID) &&
-        Objects.equals(this.employeeID, annualclearing.employeeID) &&
-        Objects.equals(this.yearOfClearing, annualclearing.yearOfClearing) &&
-        Objects.equals(this.totalCountOffs, annualclearing.totalCountOffs) &&
-        Objects.equals(this.totalBases, annualclearing.totalBases) &&
-        Objects.equals(this.calculatedTax, annualclearing.calculatedTax) &&
-        Objects.equals(this.paidTax, annualclearing.paidTax) &&
-        Objects.equals(this.totalTaxBonus, annualclearing.totalTaxBonus) &&
-        Objects.equals(this.totalTaxAdvantage, annualclearing.totalTaxAdvantage) &&
-        Objects.equals(this.transferredID, annualclearing.transferredID) &&
-        Objects.equals(this.taxBaseRounding, annualclearing.taxBaseRounding) &&
-        Objects.equals(this.taxRounding, annualclearing.taxRounding) &&
+        Objects.equals(this.docqueueId, annualclearing.docqueueId) &&
+        Objects.equals(this.periodId, annualclearing.periodId) &&
+        Objects.equals(this.ordnumber, annualclearing.ordnumber) &&
+        Objects.equals(this.docdatedate, annualclearing.docdatedate) &&
+        Objects.equals(this.createdbyId, annualclearing.createdbyId) &&
+        Objects.equals(this.correctedbyId, annualclearing.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, annualclearing.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, annualclearing.newrelateddocumentId) &&
+        Objects.equals(this.employeeId, annualclearing.employeeId) &&
+        Objects.equals(this.yearofclearing, annualclearing.yearofclearing) &&
+        Objects.equals(this.totalcountoffs, annualclearing.totalcountoffs) &&
+        Objects.equals(this.totalbases, annualclearing.totalbases) &&
+        Objects.equals(this.calculatedtax, annualclearing.calculatedtax) &&
+        Objects.equals(this.paidtax, annualclearing.paidtax) &&
+        Objects.equals(this.totaltaxbonus, annualclearing.totaltaxbonus) &&
+        Objects.equals(this.totaltaxadvantage, annualclearing.totaltaxadvantage) &&
+        Objects.equals(this.transferredId, annualclearing.transferredId) &&
+        Objects.equals(this.taxbaserounding, annualclearing.taxbaserounding) &&
+        Objects.equals(this.taxrounding, annualclearing.taxrounding) &&
         Objects.equals(this.dirty, annualclearing.dirty) &&
-        Objects.equals(this.dateOfClosingDATE, annualclearing.dateOfClosingDATE) &&
-        Objects.equals(this.totalTaxDiscount, annualclearing.totalTaxDiscount) &&
-        Objects.equals(this.ignoreMinimum, annualclearing.ignoreMinimum) &&
-        Objects.equals(this.transferredAsText, annualclearing.transferredAsText) &&
-        Objects.equals(this.decreasedTaxBase, annualclearing.decreasedTaxBase) &&
+        Objects.equals(this.dateofclosingdate, annualclearing.dateofclosingdate) &&
+        Objects.equals(this.totaltaxdiscount, annualclearing.totaltaxdiscount) &&
+        Objects.equals(this.ignoreminimum, annualclearing.ignoreminimum) &&
+        Objects.equals(this.transferredastext, annualclearing.transferredastext) &&
+        Objects.equals(this.decreasedtaxbase, annualclearing.decreasedtaxbase) &&
         Objects.equals(this.overpaid, annualclearing.overpaid) &&
         Objects.equals(this.arrears, annualclearing.arrears) &&
-        Objects.equals(this.taxBonusOverPaid, annualclearing.taxBonusOverPaid) &&
-        Objects.equals(this.calculatedTaxBonus, annualclearing.calculatedTaxBonus) &&
-        Objects.equals(this.annualClearing, annualclearing.annualClearing) &&
-        Objects.equals(this.yearTaxBonus, annualclearing.yearTaxBonus) &&
-        Objects.equals(this.personalNumber, annualclearing.personalNumber) &&
-        Objects.equals(this.numPersonalNumber, annualclearing.numPersonalNumber) &&
-        Objects.equals(this.totalIncome, annualclearing.totalIncome) &&
-        Objects.equals(this.totalInsurance, annualclearing.totalInsurance) &&
-        Objects.equals(this.employeePremium, annualclearing.employeePremium) &&
-        Objects.equals(this.emplPremTableWR, annualclearing.emplPremTableWR) &&
-        Objects.equals(this.emplPremTableAgreement, annualclearing.emplPremTableAgreement) &&
-        Objects.equals(this.emplPremCalc, annualclearing.emplPremCalc) &&
-        Objects.equals(this.employeePremiumCorrection, annualclearing.employeePremiumCorrection) &&
-        Objects.equals(this.healthInsurance, annualclearing.healthInsurance) &&
-        Objects.equals(this.socialInsurance, annualclearing.socialInsurance) &&
-        Objects.equals(this.isComputed, annualclearing.isComputed) &&
-        Objects.equals(this.taxBonusRefund, annualclearing.taxBonusRefund) &&
-        Objects.equals(this.oAPensSavingBaseCut, annualclearing.oAPensSavingBaseCut);
+        Objects.equals(this.taxbonusoverpaid, annualclearing.taxbonusoverpaid) &&
+        Objects.equals(this.calculatedtaxbonus, annualclearing.calculatedtaxbonus) &&
+        Objects.equals(this.annualclearing, annualclearing.annualclearing) &&
+        Objects.equals(this.yeartaxbonus, annualclearing.yeartaxbonus) &&
+        Objects.equals(this.personalnumber, annualclearing.personalnumber) &&
+        Objects.equals(this.numpersonalnumber, annualclearing.numpersonalnumber) &&
+        Objects.equals(this.totalincome, annualclearing.totalincome) &&
+        Objects.equals(this.totalinsurance, annualclearing.totalinsurance) &&
+        Objects.equals(this.employeepremium, annualclearing.employeepremium) &&
+        Objects.equals(this.emplpremtablewr, annualclearing.emplpremtablewr) &&
+        Objects.equals(this.emplpremtableagreement, annualclearing.emplpremtableagreement) &&
+        Objects.equals(this.emplpremcalc, annualclearing.emplpremcalc) &&
+        Objects.equals(this.employeepremiumcorrection, annualclearing.employeepremiumcorrection) &&
+        Objects.equals(this.healthinsurance, annualclearing.healthinsurance) &&
+        Objects.equals(this.socialinsurance, annualclearing.socialinsurance) &&
+        Objects.equals(this.iscomputed, annualclearing.iscomputed) &&
+        Objects.equals(this.taxbonusrefund, annualclearing.taxbonusrefund) &&
+        Objects.equals(this.oapenssavingbasecut, annualclearing.oapenssavingbasecut);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, employeeID, yearOfClearing, totalCountOffs, totalBases, calculatedTax, paidTax, totalTaxBonus, totalTaxAdvantage, transferredID, taxBaseRounding, taxRounding, dirty, dateOfClosingDATE, totalTaxDiscount, ignoreMinimum, transferredAsText, decreasedTaxBase, overpaid, arrears, taxBonusOverPaid, calculatedTaxBonus, annualClearing, yearTaxBonus, personalNumber, numPersonalNumber, totalIncome, totalInsurance, employeePremium, emplPremTableWR, emplPremTableAgreement, emplPremCalc, employeePremiumCorrection, healthInsurance, socialInsurance, isComputed, taxBonusRefund, oAPensSavingBaseCut);
+    return Objects.hash(displayname, id, classid, objversion, rows, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, employeeId, yearofclearing, totalcountoffs, totalbases, calculatedtax, paidtax, totaltaxbonus, totaltaxadvantage, transferredId, taxbaserounding, taxrounding, dirty, dateofclosingdate, totaltaxdiscount, ignoreminimum, transferredastext, decreasedtaxbase, overpaid, arrears, taxbonusoverpaid, calculatedtaxbonus, annualclearing, yeartaxbonus, personalnumber, numpersonalnumber, totalincome, totalinsurance, employeepremium, emplpremtablewr, emplpremtableagreement, emplpremcalc, employeepremiumcorrection, healthinsurance, socialinsurance, iscomputed, taxbonusrefund, oapenssavingbasecut);
   }
 
   @Override
@@ -1031,56 +1166,56 @@ public class Annualclearing   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Annualclearing {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    employeeID: ").append(toIndentedString(employeeID)).append("\n");
-    sb.append("    yearOfClearing: ").append(toIndentedString(yearOfClearing)).append("\n");
-    sb.append("    totalCountOffs: ").append(toIndentedString(totalCountOffs)).append("\n");
-    sb.append("    totalBases: ").append(toIndentedString(totalBases)).append("\n");
-    sb.append("    calculatedTax: ").append(toIndentedString(calculatedTax)).append("\n");
-    sb.append("    paidTax: ").append(toIndentedString(paidTax)).append("\n");
-    sb.append("    totalTaxBonus: ").append(toIndentedString(totalTaxBonus)).append("\n");
-    sb.append("    totalTaxAdvantage: ").append(toIndentedString(totalTaxAdvantage)).append("\n");
-    sb.append("    transferredID: ").append(toIndentedString(transferredID)).append("\n");
-    sb.append("    taxBaseRounding: ").append(toIndentedString(taxBaseRounding)).append("\n");
-    sb.append("    taxRounding: ").append(toIndentedString(taxRounding)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    employeeId: ").append(toIndentedString(employeeId)).append("\n");
+    sb.append("    yearofclearing: ").append(toIndentedString(yearofclearing)).append("\n");
+    sb.append("    totalcountoffs: ").append(toIndentedString(totalcountoffs)).append("\n");
+    sb.append("    totalbases: ").append(toIndentedString(totalbases)).append("\n");
+    sb.append("    calculatedtax: ").append(toIndentedString(calculatedtax)).append("\n");
+    sb.append("    paidtax: ").append(toIndentedString(paidtax)).append("\n");
+    sb.append("    totaltaxbonus: ").append(toIndentedString(totaltaxbonus)).append("\n");
+    sb.append("    totaltaxadvantage: ").append(toIndentedString(totaltaxadvantage)).append("\n");
+    sb.append("    transferredId: ").append(toIndentedString(transferredId)).append("\n");
+    sb.append("    taxbaserounding: ").append(toIndentedString(taxbaserounding)).append("\n");
+    sb.append("    taxrounding: ").append(toIndentedString(taxrounding)).append("\n");
     sb.append("    dirty: ").append(toIndentedString(dirty)).append("\n");
-    sb.append("    dateOfClosingDATE: ").append(toIndentedString(dateOfClosingDATE)).append("\n");
-    sb.append("    totalTaxDiscount: ").append(toIndentedString(totalTaxDiscount)).append("\n");
-    sb.append("    ignoreMinimum: ").append(toIndentedString(ignoreMinimum)).append("\n");
-    sb.append("    transferredAsText: ").append(toIndentedString(transferredAsText)).append("\n");
-    sb.append("    decreasedTaxBase: ").append(toIndentedString(decreasedTaxBase)).append("\n");
+    sb.append("    dateofclosingdate: ").append(toIndentedString(dateofclosingdate)).append("\n");
+    sb.append("    totaltaxdiscount: ").append(toIndentedString(totaltaxdiscount)).append("\n");
+    sb.append("    ignoreminimum: ").append(toIndentedString(ignoreminimum)).append("\n");
+    sb.append("    transferredastext: ").append(toIndentedString(transferredastext)).append("\n");
+    sb.append("    decreasedtaxbase: ").append(toIndentedString(decreasedtaxbase)).append("\n");
     sb.append("    overpaid: ").append(toIndentedString(overpaid)).append("\n");
     sb.append("    arrears: ").append(toIndentedString(arrears)).append("\n");
-    sb.append("    taxBonusOverPaid: ").append(toIndentedString(taxBonusOverPaid)).append("\n");
-    sb.append("    calculatedTaxBonus: ").append(toIndentedString(calculatedTaxBonus)).append("\n");
-    sb.append("    annualClearing: ").append(toIndentedString(annualClearing)).append("\n");
-    sb.append("    yearTaxBonus: ").append(toIndentedString(yearTaxBonus)).append("\n");
-    sb.append("    personalNumber: ").append(toIndentedString(personalNumber)).append("\n");
-    sb.append("    numPersonalNumber: ").append(toIndentedString(numPersonalNumber)).append("\n");
-    sb.append("    totalIncome: ").append(toIndentedString(totalIncome)).append("\n");
-    sb.append("    totalInsurance: ").append(toIndentedString(totalInsurance)).append("\n");
-    sb.append("    employeePremium: ").append(toIndentedString(employeePremium)).append("\n");
-    sb.append("    emplPremTableWR: ").append(toIndentedString(emplPremTableWR)).append("\n");
-    sb.append("    emplPremTableAgreement: ").append(toIndentedString(emplPremTableAgreement)).append("\n");
-    sb.append("    emplPremCalc: ").append(toIndentedString(emplPremCalc)).append("\n");
-    sb.append("    employeePremiumCorrection: ").append(toIndentedString(employeePremiumCorrection)).append("\n");
-    sb.append("    healthInsurance: ").append(toIndentedString(healthInsurance)).append("\n");
-    sb.append("    socialInsurance: ").append(toIndentedString(socialInsurance)).append("\n");
-    sb.append("    isComputed: ").append(toIndentedString(isComputed)).append("\n");
-    sb.append("    taxBonusRefund: ").append(toIndentedString(taxBonusRefund)).append("\n");
-    sb.append("    oAPensSavingBaseCut: ").append(toIndentedString(oAPensSavingBaseCut)).append("\n");
+    sb.append("    taxbonusoverpaid: ").append(toIndentedString(taxbonusoverpaid)).append("\n");
+    sb.append("    calculatedtaxbonus: ").append(toIndentedString(calculatedtaxbonus)).append("\n");
+    sb.append("    annualclearing: ").append(toIndentedString(annualclearing)).append("\n");
+    sb.append("    yeartaxbonus: ").append(toIndentedString(yeartaxbonus)).append("\n");
+    sb.append("    personalnumber: ").append(toIndentedString(personalnumber)).append("\n");
+    sb.append("    numpersonalnumber: ").append(toIndentedString(numpersonalnumber)).append("\n");
+    sb.append("    totalincome: ").append(toIndentedString(totalincome)).append("\n");
+    sb.append("    totalinsurance: ").append(toIndentedString(totalinsurance)).append("\n");
+    sb.append("    employeepremium: ").append(toIndentedString(employeepremium)).append("\n");
+    sb.append("    emplpremtablewr: ").append(toIndentedString(emplpremtablewr)).append("\n");
+    sb.append("    emplpremtableagreement: ").append(toIndentedString(emplpremtableagreement)).append("\n");
+    sb.append("    emplpremcalc: ").append(toIndentedString(emplpremcalc)).append("\n");
+    sb.append("    employeepremiumcorrection: ").append(toIndentedString(employeepremiumcorrection)).append("\n");
+    sb.append("    healthinsurance: ").append(toIndentedString(healthinsurance)).append("\n");
+    sb.append("    socialinsurance: ").append(toIndentedString(socialinsurance)).append("\n");
+    sb.append("    iscomputed: ").append(toIndentedString(iscomputed)).append("\n");
+    sb.append("    taxbonusrefund: ").append(toIndentedString(taxbonusrefund)).append("\n");
+    sb.append("    oapenssavingbasecut: ").append(toIndentedString(oapenssavingbasecut)).append("\n");
     sb.append("}");
     return sb.toString();
   }

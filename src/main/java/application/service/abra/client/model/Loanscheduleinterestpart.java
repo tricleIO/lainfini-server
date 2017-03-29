@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,108 +34,153 @@ import java.util.Objects;
 /**
  * Loanscheduleinterestpart
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Loanscheduleinterestpart   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("InterestDoc_ID")
-  private String interestDocID = null;
+  @SerializedName("interestdoc_id")
+  private String interestdocId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Řádek splátkového kalendáře [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Řádek splátkového kalendáře [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Loanscheduleinterestpart periodID(String periodID) {
-    this.periodID = periodID;
+  public Loanscheduleinterestpart displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Loanscheduleinterestpart interestDocID(String interestDocID) {
-    this.interestDocID = interestDocID;
+  public Loanscheduleinterestpart id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Zaúčtování př.úroků; ID objektu Interní doklad [persistentní položka]
-   * @return interestDocID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Zaúčtování př.úroků; ID objektu Interní doklad [persistentní položka]")
-  public String getInterestDocID() {
-    return interestDocID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setInterestDocID(String interestDocID) {
-    this.interestDocID = interestDocID;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Loanscheduleinterestpart classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Loanscheduleinterestpart objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Loanscheduleinterestpart parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu Řádek splátkového kalendáře [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu Řádek splátkového kalendáře [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Loanscheduleinterestpart periodId(String periodId) {
+    this.periodId = periodId;
+    return this;
+  }
+
+   /**
+   * období; id objektu období [persistentní položka]
+   * @return periodId
+  **/
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
+  }
+
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
+  }
+
+  public Loanscheduleinterestpart interestdocId(String interestdocId) {
+    this.interestdocId = interestdocId;
+    return this;
+  }
+
+   /**
+   * zaúčtování př.úroků; id objektu interní doklad [persistentní položka]
+   * @return interestdocId
+  **/
+  @ApiModelProperty(example = "null", value = "zaúčtování př.úroků; id objektu interní doklad [persistentní položka]")
+  public String getInterestdocId() {
+    return interestdocId;
+  }
+
+  public void setInterestdocId(String interestdocId) {
+    this.interestdocId = interestdocId;
   }
 
 
@@ -148,18 +193,18 @@ public class Loanscheduleinterestpart   {
       return false;
     }
     Loanscheduleinterestpart loanscheduleinterestpart = (Loanscheduleinterestpart) o;
-    return Objects.equals(this.displayName, loanscheduleinterestpart.displayName) &&
-        Objects.equals(this.ID, loanscheduleinterestpart.ID) &&
-        Objects.equals(this.classID, loanscheduleinterestpart.classID) &&
-        Objects.equals(this.objVersion, loanscheduleinterestpart.objVersion) &&
-        Objects.equals(this.parentID, loanscheduleinterestpart.parentID) &&
-        Objects.equals(this.periodID, loanscheduleinterestpart.periodID) &&
-        Objects.equals(this.interestDocID, loanscheduleinterestpart.interestDocID);
+    return Objects.equals(this.displayname, loanscheduleinterestpart.displayname) &&
+        Objects.equals(this.id, loanscheduleinterestpart.id) &&
+        Objects.equals(this.classid, loanscheduleinterestpart.classid) &&
+        Objects.equals(this.objversion, loanscheduleinterestpart.objversion) &&
+        Objects.equals(this.parentId, loanscheduleinterestpart.parentId) &&
+        Objects.equals(this.periodId, loanscheduleinterestpart.periodId) &&
+        Objects.equals(this.interestdocId, loanscheduleinterestpart.interestdocId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, periodID, interestDocID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, periodId, interestdocId);
   }
 
   @Override
@@ -167,13 +212,13 @@ public class Loanscheduleinterestpart   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Loanscheduleinterestpart {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    interestDocID: ").append(toIndentedString(interestDocID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    interestdocId: ").append(toIndentedString(interestdocId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,90 +34,126 @@ import java.util.Objects;
 /**
  * Definedb2bimport
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Definedb2bimport   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DriverName")
-  private String driverName = null;
+  @SerializedName("drivername")
+  private String drivername = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("DriverGUID")
-  private String driverGUID = null;
+  @SerializedName("driverguid")
+  private String driverguid = null;
 
-  @SerializedName("CLSID")
-  private String CLSID = null;
+  @SerializedName("clsid")
+  private String clsid = null;
 
-  @SerializedName("DriverParams")
-  private byte[] driverParams = null;
+  @SerializedName("driverparams")
+  private byte[] driverparams = null;
 
-  @SerializedName("CLSIDName")
-  private String cLSIDName = null;
+  @SerializedName("clsidname")
+  private String clsidname = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Definedb2bimport driverName(String driverName) {
-    this.driverName = driverName;
+  public Definedb2bimport displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Název ovladače [persistentní položka]
-   * @return driverName
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Název ovladače [persistentní položka]")
-  public String getDriverName() {
-    return driverName;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDriverName(String driverName) {
-    this.driverName = driverName;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Definedb2bimport id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Definedb2bimport classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Definedb2bimport objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Definedb2bimport drivername(String drivername) {
+    this.drivername = drivername;
+    return this;
+  }
+
+   /**
+   * název ovladače [persistentní položka]
+   * @return drivername
+  **/
+  @ApiModelProperty(example = "null", value = "název ovladače [persistentní položka]")
+  public String getDrivername() {
+    return drivername;
+  }
+
+  public void setDrivername(String drivername) {
+    this.drivername = drivername;
   }
 
   public Definedb2bimport description(String description) {
@@ -126,10 +162,10 @@ public class Definedb2bimport   {
   }
 
    /**
-   * Popis importu [persistentní položka]
+   * popis importu [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis importu [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis importu [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -138,76 +174,76 @@ public class Definedb2bimport   {
     this.description = description;
   }
 
-  public Definedb2bimport driverGUID(String driverGUID) {
-    this.driverGUID = driverGUID;
+  public Definedb2bimport driverguid(String driverguid) {
+    this.driverguid = driverguid;
     return this;
   }
 
    /**
-   * ID ovladače [persistentní položka]
-   * @return driverGUID
+   * id ovladače [persistentní položka]
+   * @return driverguid
   **/
-  @ApiModelProperty(example = "null", value = "ID ovladače [persistentní položka]")
-  public String getDriverGUID() {
-    return driverGUID;
+  @ApiModelProperty(example = "null", value = "id ovladače [persistentní položka]")
+  public String getDriverguid() {
+    return driverguid;
   }
 
-  public void setDriverGUID(String driverGUID) {
-    this.driverGUID = driverGUID;
+  public void setDriverguid(String driverguid) {
+    this.driverguid = driverguid;
   }
 
-  public Definedb2bimport CLSID(String CLSID) {
-    this.CLSID = CLSID;
+  public Definedb2bimport clsid(String clsid) {
+    this.clsid = clsid;
     return this;
   }
 
    /**
-   * Třída [persistentní položka]
-   * @return CLSID
+   * třída [persistentní položka]
+   * @return clsid
   **/
-  @ApiModelProperty(example = "null", value = "Třída [persistentní položka]")
-  public String getCLSID() {
-    return CLSID;
+  @ApiModelProperty(example = "null", value = "třída [persistentní položka]")
+  public String getClsid() {
+    return clsid;
   }
 
-  public void setCLSID(String CLSID) {
-    this.CLSID = CLSID;
+  public void setClsid(String clsid) {
+    this.clsid = clsid;
   }
 
-  public Definedb2bimport driverParams(byte[] driverParams) {
-    this.driverParams = driverParams;
+  public Definedb2bimport driverparams(byte[] driverparams) {
+    this.driverparams = driverparams;
     return this;
   }
 
    /**
-   * Parametry [persistentní položka]
-   * @return driverParams
+   * parametry [persistentní položka]
+   * @return driverparams
   **/
-  @ApiModelProperty(example = "null", value = "Parametry [persistentní položka]")
-  public byte[] getDriverParams() {
-    return driverParams;
+  @ApiModelProperty(example = "null", value = "parametry [persistentní položka]")
+  public byte[] getDriverparams() {
+    return driverparams;
   }
 
-  public void setDriverParams(byte[] driverParams) {
-    this.driverParams = driverParams;
+  public void setDriverparams(byte[] driverparams) {
+    this.driverparams = driverparams;
   }
 
-  public Definedb2bimport cLSIDName(String cLSIDName) {
-    this.cLSIDName = cLSIDName;
+  public Definedb2bimport clsidname(String clsidname) {
+    this.clsidname = clsidname;
     return this;
   }
 
    /**
-   * Název třídy [persistentní položka]
-   * @return cLSIDName
+   * název třídy [persistentní položka]
+   * @return clsidname
   **/
-  @ApiModelProperty(example = "null", value = "Název třídy [persistentní položka]")
-  public String getCLSIDName() {
-    return cLSIDName;
+  @ApiModelProperty(example = "null", value = "název třídy [persistentní položka]")
+  public String getClsidname() {
+    return clsidname;
   }
 
-  public void setCLSIDName(String cLSIDName) {
-    this.cLSIDName = cLSIDName;
+  public void setClsidname(String clsidname) {
+    this.clsidname = clsidname;
   }
 
 
@@ -220,21 +256,21 @@ public class Definedb2bimport   {
       return false;
     }
     Definedb2bimport definedb2bimport = (Definedb2bimport) o;
-    return Objects.equals(this.displayName, definedb2bimport.displayName) &&
-        Objects.equals(this.ID, definedb2bimport.ID) &&
-        Objects.equals(this.classID, definedb2bimport.classID) &&
-        Objects.equals(this.objVersion, definedb2bimport.objVersion) &&
-        Objects.equals(this.driverName, definedb2bimport.driverName) &&
+    return Objects.equals(this.displayname, definedb2bimport.displayname) &&
+        Objects.equals(this.id, definedb2bimport.id) &&
+        Objects.equals(this.classid, definedb2bimport.classid) &&
+        Objects.equals(this.objversion, definedb2bimport.objversion) &&
+        Objects.equals(this.drivername, definedb2bimport.drivername) &&
         Objects.equals(this.description, definedb2bimport.description) &&
-        Objects.equals(this.driverGUID, definedb2bimport.driverGUID) &&
-        Objects.equals(this.CLSID, definedb2bimport.CLSID) &&
-        Objects.equals(this.driverParams, definedb2bimport.driverParams) &&
-        Objects.equals(this.cLSIDName, definedb2bimport.cLSIDName);
+        Objects.equals(this.driverguid, definedb2bimport.driverguid) &&
+        Objects.equals(this.clsid, definedb2bimport.clsid) &&
+        Objects.equals(this.driverparams, definedb2bimport.driverparams) &&
+        Objects.equals(this.clsidname, definedb2bimport.clsidname);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, driverName, description, driverGUID, CLSID, driverParams, cLSIDName);
+    return Objects.hash(displayname, id, classid, objversion, drivername, description, driverguid, clsid, driverparams, clsidname);
   }
 
   @Override
@@ -242,16 +278,16 @@ public class Definedb2bimport   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Definedb2bimport {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    driverName: ").append(toIndentedString(driverName)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    drivername: ").append(toIndentedString(drivername)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    driverGUID: ").append(toIndentedString(driverGUID)).append("\n");
-    sb.append("    CLSID: ").append(toIndentedString(CLSID)).append("\n");
-    sb.append("    driverParams: ").append(toIndentedString(driverParams)).append("\n");
-    sb.append("    cLSIDName: ").append(toIndentedString(cLSIDName)).append("\n");
+    sb.append("    driverguid: ").append(toIndentedString(driverguid)).append("\n");
+    sb.append("    clsid: ").append(toIndentedString(clsid)).append("\n");
+    sb.append("    driverparams: ").append(toIndentedString(driverparams)).append("\n");
+    sb.append("    clsidname: ").append(toIndentedString(clsidname)).append("\n");
     sb.append("}");
     return sb.toString();
   }

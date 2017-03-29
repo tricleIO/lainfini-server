@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,486 +35,540 @@ import java.util.Objects;
 /**
  * Userfielddef2
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Userfielddef2   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("FieldName")
-  private String fieldName = null;
+  @SerializedName("fieldname")
+  private String fieldname = null;
 
-  @SerializedName("FieldCode")
-  private Integer fieldCode = null;
+  @SerializedName("fieldcode")
+  private Integer fieldcode = null;
 
-  @SerializedName("FieldKind")
-  private Integer fieldKind = null;
+  @SerializedName("fieldkind")
+  private Integer fieldkind = null;
 
-  @SerializedName("FieldDataType")
-  private Integer fieldDataType = null;
+  @SerializedName("fielddatatype")
+  private Integer fielddatatype = null;
 
-  @SerializedName("FieldSize")
-  private Integer fieldSize = null;
+  @SerializedName("fieldsize")
+  private Integer fieldsize = null;
 
-  @SerializedName("FieldPrecision")
-  private Integer fieldPrecision = null;
+  @SerializedName("fieldprecision")
+  private Integer fieldprecision = null;
 
-  @SerializedName("FieldDisplayLabel")
-  private String fieldDisplayLabel = null;
+  @SerializedName("fielddisplaylabel")
+  private String fielddisplaylabel = null;
 
-  @SerializedName("FieldDisplayHint")
-  private String fieldDisplayHint = null;
+  @SerializedName("fielddisplayhint")
+  private String fielddisplayhint = null;
 
-  @SerializedName("FieldDisplayWidth")
-  private Integer fieldDisplayWidth = null;
+  @SerializedName("fielddisplaywidth")
+  private Integer fielddisplaywidth = null;
 
-  @SerializedName("FieldRollCLSID")
-  private String fieldRollCLSID = null;
+  @SerializedName("fieldrollclsid")
+  private String fieldrollclsid = null;
 
-  @SerializedName("FieldCLSID")
-  private String fieldCLSID = null;
+  @SerializedName("fieldclsid")
+  private String fieldclsid = null;
 
-  @SerializedName("FieldDisplayFormat")
-  private String fieldDisplayFormat = null;
+  @SerializedName("fielddisplayformat")
+  private String fielddisplayformat = null;
 
-  @SerializedName("FieldAlignment")
-  private Integer fieldAlignment = null;
+  @SerializedName("fieldalignment")
+  private Integer fieldalignment = null;
 
-  @SerializedName("EditMethod")
-  private Integer editMethod = null;
+  @SerializedName("editmethod")
+  private Integer editmethod = null;
 
-  @SerializedName("Enumeration")
+  @SerializedName("enumeration")
   private String enumeration = null;
 
-  @SerializedName("IsReadOnly")
-  private Boolean isReadOnly = null;
+  @SerializedName("isreadonly")
+  private Boolean isreadonly = null;
 
-  @SerializedName("HasHistory")
-  private Boolean hasHistory = null;
+  @SerializedName("hashistory")
+  private Boolean hashistory = null;
 
-  @SerializedName("DefaultValue")
-  private String defaultValue = null;
+  @SerializedName("defaultvalue")
+  private String defaultvalue = null;
 
-  @SerializedName("Flags")
+  @SerializedName("flags")
   private String flags = null;
 
-  @SerializedName("FieldDataTypeText")
-  private String fieldDataTypeText = null;
+  @SerializedName("fielddatatypetext")
+  private String fielddatatypetext = null;
 
-  @SerializedName("EditMethodText")
-  private String editMethodText = null;
+  @SerializedName("editmethodtext")
+  private String editmethodtext = null;
 
-  @SerializedName("UseInDynSQL")
-  private Boolean useInDynSQL = null;
+  @SerializedName("useindynsql")
+  private Boolean useindynsql = null;
 
-  @SerializedName("ForcedField")
-  private Boolean forcedField = null;
+  @SerializedName("forcedfield")
+  private Boolean forcedfield = null;
 
-  @SerializedName("Replicatable")
+  @SerializedName("replicatable")
   private Boolean replicatable = null;
 
-  @SerializedName("Importable")
+  @SerializedName("importable")
   private Boolean importable = null;
 
-  @SerializedName("TextField")
-  private String textField = null;
+  @SerializedName("textfield")
+  private String textfield = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-  @SerializedName("ExtraField")
-  private Boolean extraField = null;
+  @SerializedName("extrafield")
+  private Boolean extrafield = null;
 
-  @SerializedName("FieldPrefix")
-  private String fieldPrefix = null;
+  @SerializedName("fieldprefix")
+  private String fieldprefix = null;
 
-  @SerializedName("FieldSuffix")
-  private String fieldSuffix = null;
+  @SerializedName("fieldsuffix")
+  private String fieldsuffix = null;
 
-  @SerializedName("IsSortable")
-  private Boolean isSortable = null;
+  @SerializedName("issortable")
+  private Boolean issortable = null;
 
-  @SerializedName("DefaultValueInteger")
-  private Integer defaultValueInteger = null;
+  @SerializedName("defaultvalueinteger")
+  private Integer defaultvalueinteger = null;
 
-  @SerializedName("DefaultValueFloat")
-  private Double defaultValueFloat = null;
+  @SerializedName("defaultvaluefloat")
+  private Double defaultvaluefloat = null;
 
-  @SerializedName("DefaultValueDateTime")
-  private DateTime defaultValueDateTime = null;
+  @SerializedName("defaultvaluedatetime")
+  private DateTime defaultvaluedatetime = null;
 
-  @SerializedName("DefaultValueBoolean")
-  private Boolean defaultValueBoolean = null;
+  @SerializedName("defaultvalueboolean")
+  private Boolean defaultvalueboolean = null;
 
-  @SerializedName("SortableRollFields")
-  private String sortableRollFields = null;
+  @SerializedName("sortablerollfields")
+  private String sortablerollfields = null;
 
-  @SerializedName("MinValue")
-  private String minValue = null;
+  @SerializedName("minvalue")
+  private String minvalue = null;
 
-  @SerializedName("MaxValue")
-  private String maxValue = null;
+  @SerializedName("maxvalue")
+  private String maxvalue = null;
 
-  @SerializedName("MaxValueInteger")
-  private Integer maxValueInteger = null;
+  @SerializedName("maxvalueinteger")
+  private Integer maxvalueinteger = null;
 
-  @SerializedName("MinValueInteger")
-  private Integer minValueInteger = null;
+  @SerializedName("minvalueinteger")
+  private Integer minvalueinteger = null;
 
-  @SerializedName("MaxValueFloat")
-  private Double maxValueFloat = null;
+  @SerializedName("maxvaluefloat")
+  private Double maxvaluefloat = null;
 
-  @SerializedName("MinValueFloat")
-  private Double minValueFloat = null;
+  @SerializedName("minvaluefloat")
+  private Double minvaluefloat = null;
 
-  @SerializedName("IsIndexed")
-  private Boolean isIndexed = null;
+  @SerializedName("isindexed")
+  private Boolean isindexed = null;
 
-  @SerializedName("HasForeignKey")
-  private Boolean hasForeignKey = null;
+  @SerializedName("hasforeignkey")
+  private Boolean hasforeignkey = null;
 
-  @SerializedName("IndexName")
-  private String indexName = null;
+  @SerializedName("indexname")
+  private String indexname = null;
 
-  @SerializedName("CurrencySourcePath")
-  private String currencySourcePath = null;
+  @SerializedName("currencysourcepath")
+  private String currencysourcepath = null;
 
-  @SerializedName("FirstValue")
-  private Integer firstValue = null;
+  @SerializedName("firstvalue")
+  private Integer firstvalue = null;
 
-  @SerializedName("ShowTime")
-  private Boolean showTime = null;
+  @SerializedName("showtime")
+  private Boolean showtime = null;
 
-  @SerializedName("IsMultiChangeable")
-  private Boolean isMultiChangeable = null;
+  @SerializedName("ismultichangeable")
+  private Boolean ismultichangeable = null;
 
-  @SerializedName("IsCaseSensitive")
-  private Boolean isCaseSensitive = null;
+  @SerializedName("iscasesensitive")
+  private Boolean iscasesensitive = null;
 
-  @SerializedName("FieldDBType")
-  private Integer fieldDBType = null;
+  @SerializedName("fielddbtype")
+  private Integer fielddbtype = null;
 
-  @SerializedName("FieldDBTypeText")
-  private String fieldDBTypeText = null;
+  @SerializedName("fielddbtypetext")
+  private String fielddbtypetext = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Sada definovatelných položek [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Sada definovatelných položek [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Userfielddef2 posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Userfielddef2 displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Userfielddef2 fieldName(String fieldName) {
-    this.fieldName = fieldName;
+  public Userfielddef2 id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Název položky [persistentní položka]
-   * @return fieldName
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Název položky [persistentní položka]")
-  public String getFieldName() {
-    return fieldName;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setFieldName(String fieldName) {
-    this.fieldName = fieldName;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Userfielddef2 fieldCode(Integer fieldCode) {
-    this.fieldCode = fieldCode;
+  public Userfielddef2 classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Kód [persistentní položka]
-   * @return fieldCode
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
-  public Integer getFieldCode() {
-    return fieldCode;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setFieldCode(Integer fieldCode) {
-    this.fieldCode = fieldCode;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Userfielddef2 fieldKind(Integer fieldKind) {
-    this.fieldKind = fieldKind;
+  public Userfielddef2 objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Typ čísla [persistentní položka]
-   * @return fieldKind
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Typ čísla [persistentní položka]")
-  public Integer getFieldKind() {
-    return fieldKind;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setFieldKind(Integer fieldKind) {
-    this.fieldKind = fieldKind;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Userfielddef2 fieldDataType(Integer fieldDataType) {
-    this.fieldDataType = fieldDataType;
+  public Userfielddef2 parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Datový typ [persistentní položka]
-   * @return fieldDataType
+   * vlastník; id objektu sada definovatelných položek [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Datový typ [persistentní položka]")
-  public Integer getFieldDataType() {
-    return fieldDataType;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu sada definovatelných položek [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setFieldDataType(Integer fieldDataType) {
-    this.fieldDataType = fieldDataType;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Userfielddef2 fieldSize(Integer fieldSize) {
-    this.fieldSize = fieldSize;
+  public Userfielddef2 posindex(Integer posindex) {
+    this.posindex = posindex;
     return this;
   }
 
    /**
-   * Velikost [persistentní položka]
-   * @return fieldSize
+   * pořadí [persistentní položka]
+   * @return posindex
   **/
-  @ApiModelProperty(example = "null", value = "Velikost [persistentní položka]")
-  public Integer getFieldSize() {
-    return fieldSize;
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
   }
 
-  public void setFieldSize(Integer fieldSize) {
-    this.fieldSize = fieldSize;
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
-  public Userfielddef2 fieldPrecision(Integer fieldPrecision) {
-    this.fieldPrecision = fieldPrecision;
+  public Userfielddef2 fieldname(String fieldname) {
+    this.fieldname = fieldname;
     return this;
   }
 
    /**
-   * Desetiny [persistentní položka]
-   * @return fieldPrecision
+   * název položky [persistentní položka]
+   * @return fieldname
   **/
-  @ApiModelProperty(example = "null", value = "Desetiny [persistentní položka]")
-  public Integer getFieldPrecision() {
-    return fieldPrecision;
+  @ApiModelProperty(example = "null", value = "název položky [persistentní položka]")
+  public String getFieldname() {
+    return fieldname;
   }
 
-  public void setFieldPrecision(Integer fieldPrecision) {
-    this.fieldPrecision = fieldPrecision;
+  public void setFieldname(String fieldname) {
+    this.fieldname = fieldname;
   }
 
-  public Userfielddef2 fieldDisplayLabel(String fieldDisplayLabel) {
-    this.fieldDisplayLabel = fieldDisplayLabel;
+  public Userfielddef2 fieldcode(Integer fieldcode) {
+    this.fieldcode = fieldcode;
     return this;
   }
 
    /**
-   * Popis položky [persistentní položka]
-   * @return fieldDisplayLabel
+   * kód [persistentní položka]
+   * @return fieldcode
   **/
-  @ApiModelProperty(example = "null", value = "Popis položky [persistentní položka]")
-  public String getFieldDisplayLabel() {
-    return fieldDisplayLabel;
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
+  public Integer getFieldcode() {
+    return fieldcode;
   }
 
-  public void setFieldDisplayLabel(String fieldDisplayLabel) {
-    this.fieldDisplayLabel = fieldDisplayLabel;
+  public void setFieldcode(Integer fieldcode) {
+    this.fieldcode = fieldcode;
   }
 
-  public Userfielddef2 fieldDisplayHint(String fieldDisplayHint) {
-    this.fieldDisplayHint = fieldDisplayHint;
+  public Userfielddef2 fieldkind(Integer fieldkind) {
+    this.fieldkind = fieldkind;
     return this;
   }
 
    /**
-   * Popiska položky [persistentní položka]
-   * @return fieldDisplayHint
+   * typ čísla [persistentní položka]
+   * @return fieldkind
   **/
-  @ApiModelProperty(example = "null", value = "Popiska položky [persistentní položka]")
-  public String getFieldDisplayHint() {
-    return fieldDisplayHint;
+  @ApiModelProperty(example = "null", value = "typ čísla [persistentní položka]")
+  public Integer getFieldkind() {
+    return fieldkind;
   }
 
-  public void setFieldDisplayHint(String fieldDisplayHint) {
-    this.fieldDisplayHint = fieldDisplayHint;
+  public void setFieldkind(Integer fieldkind) {
+    this.fieldkind = fieldkind;
   }
 
-  public Userfielddef2 fieldDisplayWidth(Integer fieldDisplayWidth) {
-    this.fieldDisplayWidth = fieldDisplayWidth;
+  public Userfielddef2 fielddatatype(Integer fielddatatype) {
+    this.fielddatatype = fielddatatype;
     return this;
   }
 
    /**
-   * Zobrazovací velikost [persistentní položka]
-   * @return fieldDisplayWidth
+   * datový typ [persistentní položka]
+   * @return fielddatatype
   **/
-  @ApiModelProperty(example = "null", value = "Zobrazovací velikost [persistentní položka]")
-  public Integer getFieldDisplayWidth() {
-    return fieldDisplayWidth;
+  @ApiModelProperty(example = "null", value = "datový typ [persistentní položka]")
+  public Integer getFielddatatype() {
+    return fielddatatype;
   }
 
-  public void setFieldDisplayWidth(Integer fieldDisplayWidth) {
-    this.fieldDisplayWidth = fieldDisplayWidth;
+  public void setFielddatatype(Integer fielddatatype) {
+    this.fielddatatype = fielddatatype;
   }
 
-  public Userfielddef2 fieldRollCLSID(String fieldRollCLSID) {
-    this.fieldRollCLSID = fieldRollCLSID;
+  public Userfielddef2 fieldsize(Integer fieldsize) {
+    this.fieldsize = fieldsize;
+    return this;
+  }
+
+   /**
+   * velikost [persistentní položka]
+   * @return fieldsize
+  **/
+  @ApiModelProperty(example = "null", value = "velikost [persistentní položka]")
+  public Integer getFieldsize() {
+    return fieldsize;
+  }
+
+  public void setFieldsize(Integer fieldsize) {
+    this.fieldsize = fieldsize;
+  }
+
+  public Userfielddef2 fieldprecision(Integer fieldprecision) {
+    this.fieldprecision = fieldprecision;
+    return this;
+  }
+
+   /**
+   * desetiny [persistentní položka]
+   * @return fieldprecision
+  **/
+  @ApiModelProperty(example = "null", value = "desetiny [persistentní položka]")
+  public Integer getFieldprecision() {
+    return fieldprecision;
+  }
+
+  public void setFieldprecision(Integer fieldprecision) {
+    this.fieldprecision = fieldprecision;
+  }
+
+  public Userfielddef2 fielddisplaylabel(String fielddisplaylabel) {
+    this.fielddisplaylabel = fielddisplaylabel;
+    return this;
+  }
+
+   /**
+   * popis položky [persistentní položka]
+   * @return fielddisplaylabel
+  **/
+  @ApiModelProperty(example = "null", value = "popis položky [persistentní položka]")
+  public String getFielddisplaylabel() {
+    return fielddisplaylabel;
+  }
+
+  public void setFielddisplaylabel(String fielddisplaylabel) {
+    this.fielddisplaylabel = fielddisplaylabel;
+  }
+
+  public Userfielddef2 fielddisplayhint(String fielddisplayhint) {
+    this.fielddisplayhint = fielddisplayhint;
+    return this;
+  }
+
+   /**
+   * popiska položky [persistentní položka]
+   * @return fielddisplayhint
+  **/
+  @ApiModelProperty(example = "null", value = "popiska položky [persistentní položka]")
+  public String getFielddisplayhint() {
+    return fielddisplayhint;
+  }
+
+  public void setFielddisplayhint(String fielddisplayhint) {
+    this.fielddisplayhint = fielddisplayhint;
+  }
+
+  public Userfielddef2 fielddisplaywidth(Integer fielddisplaywidth) {
+    this.fielddisplaywidth = fielddisplaywidth;
+    return this;
+  }
+
+   /**
+   * zobrazovací velikost [persistentní položka]
+   * @return fielddisplaywidth
+  **/
+  @ApiModelProperty(example = "null", value = "zobrazovací velikost [persistentní položka]")
+  public Integer getFielddisplaywidth() {
+    return fielddisplaywidth;
+  }
+
+  public void setFielddisplaywidth(Integer fielddisplaywidth) {
+    this.fielddisplaywidth = fielddisplaywidth;
+  }
+
+  public Userfielddef2 fieldrollclsid(String fieldrollclsid) {
+    this.fieldrollclsid = fieldrollclsid;
     return this;
   }
 
    /**
    * Číselník [persistentní položka]
-   * @return fieldRollCLSID
+   * @return fieldrollclsid
   **/
   @ApiModelProperty(example = "null", value = "Číselník [persistentní položka]")
-  public String getFieldRollCLSID() {
-    return fieldRollCLSID;
+  public String getFieldrollclsid() {
+    return fieldrollclsid;
   }
 
-  public void setFieldRollCLSID(String fieldRollCLSID) {
-    this.fieldRollCLSID = fieldRollCLSID;
+  public void setFieldrollclsid(String fieldrollclsid) {
+    this.fieldrollclsid = fieldrollclsid;
   }
 
-   /**
-   * Třída objektu [persistentní položka]
-   * @return fieldCLSID
-  **/
-  @ApiModelProperty(example = "null", value = "Třída objektu [persistentní položka]")
-  public String getFieldCLSID() {
-    return fieldCLSID;
-  }
-
-  public Userfielddef2 fieldDisplayFormat(String fieldDisplayFormat) {
-    this.fieldDisplayFormat = fieldDisplayFormat;
+  public Userfielddef2 fieldclsid(String fieldclsid) {
+    this.fieldclsid = fieldclsid;
     return this;
   }
 
    /**
-   * Formát [persistentní položka]
-   * @return fieldDisplayFormat
+   * třída objektu [persistentní položka]
+   * @return fieldclsid
   **/
-  @ApiModelProperty(example = "null", value = "Formát [persistentní položka]")
-  public String getFieldDisplayFormat() {
-    return fieldDisplayFormat;
+  @ApiModelProperty(example = "null", value = "třída objektu [persistentní položka]")
+  public String getFieldclsid() {
+    return fieldclsid;
   }
 
-  public void setFieldDisplayFormat(String fieldDisplayFormat) {
-    this.fieldDisplayFormat = fieldDisplayFormat;
+  public void setFieldclsid(String fieldclsid) {
+    this.fieldclsid = fieldclsid;
   }
 
-  public Userfielddef2 fieldAlignment(Integer fieldAlignment) {
-    this.fieldAlignment = fieldAlignment;
+  public Userfielddef2 fielddisplayformat(String fielddisplayformat) {
+    this.fielddisplayformat = fielddisplayformat;
     return this;
   }
 
    /**
-   * Zarovnání [persistentní položka]
-   * @return fieldAlignment
+   * formát [persistentní položka]
+   * @return fielddisplayformat
   **/
-  @ApiModelProperty(example = "null", value = "Zarovnání [persistentní položka]")
-  public Integer getFieldAlignment() {
-    return fieldAlignment;
+  @ApiModelProperty(example = "null", value = "formát [persistentní položka]")
+  public String getFielddisplayformat() {
+    return fielddisplayformat;
   }
 
-  public void setFieldAlignment(Integer fieldAlignment) {
-    this.fieldAlignment = fieldAlignment;
+  public void setFielddisplayformat(String fielddisplayformat) {
+    this.fielddisplayformat = fielddisplayformat;
   }
 
-  public Userfielddef2 editMethod(Integer editMethod) {
-    this.editMethod = editMethod;
+  public Userfielddef2 fieldalignment(Integer fieldalignment) {
+    this.fieldalignment = fieldalignment;
     return this;
   }
 
    /**
-   * Editace [persistentní položka]
-   * @return editMethod
+   * zarovnání [persistentní položka]
+   * @return fieldalignment
   **/
-  @ApiModelProperty(example = "null", value = "Editace [persistentní položka]")
-  public Integer getEditMethod() {
-    return editMethod;
+  @ApiModelProperty(example = "null", value = "zarovnání [persistentní položka]")
+  public Integer getFieldalignment() {
+    return fieldalignment;
   }
 
-  public void setEditMethod(Integer editMethod) {
-    this.editMethod = editMethod;
+  public void setFieldalignment(Integer fieldalignment) {
+    this.fieldalignment = fieldalignment;
+  }
+
+  public Userfielddef2 editmethod(Integer editmethod) {
+    this.editmethod = editmethod;
+    return this;
+  }
+
+   /**
+   * editace [persistentní položka]
+   * @return editmethod
+  **/
+  @ApiModelProperty(example = "null", value = "editace [persistentní položka]")
+  public Integer getEditmethod() {
+    return editmethod;
+  }
+
+  public void setEditmethod(Integer editmethod) {
+    this.editmethod = editmethod;
   }
 
   public Userfielddef2 enumeration(String enumeration) {
@@ -523,10 +577,10 @@ public class Userfielddef2   {
   }
 
    /**
-   * Výčet [persistentní položka]
+   * výčet [persistentní položka]
    * @return enumeration
   **/
-  @ApiModelProperty(example = "null", value = "Výčet [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "výčet [persistentní položka]")
   public String getEnumeration() {
     return enumeration;
   }
@@ -535,58 +589,58 @@ public class Userfielddef2   {
     this.enumeration = enumeration;
   }
 
-  public Userfielddef2 isReadOnly(Boolean isReadOnly) {
-    this.isReadOnly = isReadOnly;
+  public Userfielddef2 isreadonly(Boolean isreadonly) {
+    this.isreadonly = isreadonly;
     return this;
   }
 
    /**
-   * Jen ke čtení [persistentní položka]
-   * @return isReadOnly
+   * jen ke čtení [persistentní položka]
+   * @return isreadonly
   **/
-  @ApiModelProperty(example = "null", value = "Jen ke čtení [persistentní položka]")
-  public Boolean getIsReadOnly() {
-    return isReadOnly;
+  @ApiModelProperty(example = "null", value = "jen ke čtení [persistentní položka]")
+  public Boolean getIsreadonly() {
+    return isreadonly;
   }
 
-  public void setIsReadOnly(Boolean isReadOnly) {
-    this.isReadOnly = isReadOnly;
+  public void setIsreadonly(Boolean isreadonly) {
+    this.isreadonly = isreadonly;
   }
 
-  public Userfielddef2 hasHistory(Boolean hasHistory) {
-    this.hasHistory = hasHistory;
+  public Userfielddef2 hashistory(Boolean hashistory) {
+    this.hashistory = hashistory;
     return this;
   }
 
    /**
-   * Historie [persistentní položka]
-   * @return hasHistory
+   * historie [persistentní položka]
+   * @return hashistory
   **/
-  @ApiModelProperty(example = "null", value = "Historie [persistentní položka]")
-  public Boolean getHasHistory() {
-    return hasHistory;
+  @ApiModelProperty(example = "null", value = "historie [persistentní položka]")
+  public Boolean getHashistory() {
+    return hashistory;
   }
 
-  public void setHasHistory(Boolean hasHistory) {
-    this.hasHistory = hasHistory;
+  public void setHashistory(Boolean hashistory) {
+    this.hashistory = hashistory;
   }
 
-  public Userfielddef2 defaultValue(String defaultValue) {
-    this.defaultValue = defaultValue;
+  public Userfielddef2 defaultvalue(String defaultvalue) {
+    this.defaultvalue = defaultvalue;
     return this;
   }
 
    /**
-   * Výchozí hodnota [persistentní položka]
-   * @return defaultValue
+   * výchozí hodnota [persistentní položka]
+   * @return defaultvalue
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí hodnota [persistentní položka]")
-  public String getDefaultValue() {
-    return defaultValue;
+  @ApiModelProperty(example = "null", value = "výchozí hodnota [persistentní položka]")
+  public String getDefaultvalue() {
+    return defaultvalue;
   }
 
-  public void setDefaultValue(String defaultValue) {
-    this.defaultValue = defaultValue;
+  public void setDefaultvalue(String defaultvalue) {
+    this.defaultvalue = defaultvalue;
   }
 
   public Userfielddef2 flags(String flags) {
@@ -595,10 +649,10 @@ public class Userfielddef2   {
   }
 
    /**
-   * Příznaky [persistentní položka]
+   * příznaky [persistentní položka]
    * @return flags
   **/
-  @ApiModelProperty(example = "null", value = "Příznaky [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "příznaky [persistentní položka]")
   public String getFlags() {
     return flags;
   }
@@ -607,76 +661,76 @@ public class Userfielddef2   {
     this.flags = flags;
   }
 
-  public Userfielddef2 fieldDataTypeText(String fieldDataTypeText) {
-    this.fieldDataTypeText = fieldDataTypeText;
+  public Userfielddef2 fielddatatypetext(String fielddatatypetext) {
+    this.fielddatatypetext = fielddatatypetext;
     return this;
   }
 
    /**
-   * Datový typ
-   * @return fieldDataTypeText
+   * datový typ
+   * @return fielddatatypetext
   **/
-  @ApiModelProperty(example = "null", value = "Datový typ")
-  public String getFieldDataTypeText() {
-    return fieldDataTypeText;
+  @ApiModelProperty(example = "null", value = "datový typ")
+  public String getFielddatatypetext() {
+    return fielddatatypetext;
   }
 
-  public void setFieldDataTypeText(String fieldDataTypeText) {
-    this.fieldDataTypeText = fieldDataTypeText;
+  public void setFielddatatypetext(String fielddatatypetext) {
+    this.fielddatatypetext = fielddatatypetext;
   }
 
-  public Userfielddef2 editMethodText(String editMethodText) {
-    this.editMethodText = editMethodText;
+  public Userfielddef2 editmethodtext(String editmethodtext) {
+    this.editmethodtext = editmethodtext;
     return this;
   }
 
    /**
-   * Editace
-   * @return editMethodText
+   * editace
+   * @return editmethodtext
   **/
-  @ApiModelProperty(example = "null", value = "Editace")
-  public String getEditMethodText() {
-    return editMethodText;
+  @ApiModelProperty(example = "null", value = "editace")
+  public String getEditmethodtext() {
+    return editmethodtext;
   }
 
-  public void setEditMethodText(String editMethodText) {
-    this.editMethodText = editMethodText;
+  public void setEditmethodtext(String editmethodtext) {
+    this.editmethodtext = editmethodtext;
   }
 
-  public Userfielddef2 useInDynSQL(Boolean useInDynSQL) {
-    this.useInDynSQL = useInDynSQL;
+  public Userfielddef2 useindynsql(Boolean useindynsql) {
+    this.useindynsql = useindynsql;
     return this;
   }
 
    /**
-   * Výběry [persistentní položka]
-   * @return useInDynSQL
+   * výběry [persistentní položka]
+   * @return useindynsql
   **/
-  @ApiModelProperty(example = "null", value = "Výběry [persistentní položka]")
-  public Boolean getUseInDynSQL() {
-    return useInDynSQL;
+  @ApiModelProperty(example = "null", value = "výběry [persistentní položka]")
+  public Boolean getUseindynsql() {
+    return useindynsql;
   }
 
-  public void setUseInDynSQL(Boolean useInDynSQL) {
-    this.useInDynSQL = useInDynSQL;
+  public void setUseindynsql(Boolean useindynsql) {
+    this.useindynsql = useindynsql;
   }
 
-  public Userfielddef2 forcedField(Boolean forcedField) {
-    this.forcedField = forcedField;
+  public Userfielddef2 forcedfield(Boolean forcedfield) {
+    this.forcedfield = forcedfield;
     return this;
   }
 
    /**
-   * Povinná [persistentní položka]
-   * @return forcedField
+   * povinná [persistentní položka]
+   * @return forcedfield
   **/
-  @ApiModelProperty(example = "null", value = "Povinná [persistentní položka]")
-  public Boolean getForcedField() {
-    return forcedField;
+  @ApiModelProperty(example = "null", value = "povinná [persistentní položka]")
+  public Boolean getForcedfield() {
+    return forcedfield;
   }
 
-  public void setForcedField(Boolean forcedField) {
-    this.forcedField = forcedField;
+  public void setForcedfield(Boolean forcedfield) {
+    this.forcedfield = forcedfield;
   }
 
   public Userfielddef2 replicatable(Boolean replicatable) {
@@ -685,10 +739,10 @@ public class Userfielddef2   {
   }
 
    /**
-   * Přenos [persistentní položka]
+   * přenos [persistentní položka]
    * @return replicatable
   **/
-  @ApiModelProperty(example = "null", value = "Přenos [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "přenos [persistentní položka]")
   public Boolean getReplicatable() {
     return replicatable;
   }
@@ -703,10 +757,10 @@ public class Userfielddef2   {
   }
 
    /**
-   * Přenos při importech [persistentní položka]
+   * přenos při importech [persistentní položka]
    * @return importable
   **/
-  @ApiModelProperty(example = "null", value = "Přenos při importech [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "přenos při importech [persistentní položka]")
   public Boolean getImportable() {
     return importable;
   }
@@ -715,22 +769,22 @@ public class Userfielddef2   {
     this.importable = importable;
   }
 
-  public Userfielddef2 textField(String textField) {
-    this.textField = textField;
+  public Userfielddef2 textfield(String textfield) {
+    this.textfield = textfield;
     return this;
   }
 
    /**
-   * Textová položka [persistentní položka]
-   * @return textField
+   * textová položka [persistentní položka]
+   * @return textfield
   **/
-  @ApiModelProperty(example = "null", value = "Textová položka [persistentní položka]")
-  public String getTextField() {
-    return textField;
+  @ApiModelProperty(example = "null", value = "textová položka [persistentní položka]")
+  public String getTextfield() {
+    return textfield;
   }
 
-  public void setTextField(String textField) {
-    this.textField = textField;
+  public void setTextfield(String textfield) {
+    this.textfield = textfield;
   }
 
   public Userfielddef2 system(Boolean system) {
@@ -739,10 +793,10 @@ public class Userfielddef2   {
   }
 
    /**
-   * Systémová [persistentní položka]
+   * systémová [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Systémová [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "systémová [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -751,454 +805,454 @@ public class Userfielddef2   {
     this.system = system;
   }
 
-  public Userfielddef2 extraField(Boolean extraField) {
-    this.extraField = extraField;
+  public Userfielddef2 extrafield(Boolean extrafield) {
+    this.extrafield = extrafield;
     return this;
   }
 
    /**
-   * Extra položka [persistentní položka]
-   * @return extraField
+   * extra položka [persistentní položka]
+   * @return extrafield
   **/
-  @ApiModelProperty(example = "null", value = "Extra položka [persistentní položka]")
-  public Boolean getExtraField() {
-    return extraField;
+  @ApiModelProperty(example = "null", value = "extra položka [persistentní položka]")
+  public Boolean getExtrafield() {
+    return extrafield;
   }
 
-  public void setExtraField(Boolean extraField) {
-    this.extraField = extraField;
+  public void setExtrafield(Boolean extrafield) {
+    this.extrafield = extrafield;
   }
 
-  public Userfielddef2 fieldPrefix(String fieldPrefix) {
-    this.fieldPrefix = fieldPrefix;
+  public Userfielddef2 fieldprefix(String fieldprefix) {
+    this.fieldprefix = fieldprefix;
     return this;
   }
 
    /**
-   * Prefix položky
-   * @return fieldPrefix
+   * prefix položky
+   * @return fieldprefix
   **/
-  @ApiModelProperty(example = "null", value = "Prefix položky")
-  public String getFieldPrefix() {
-    return fieldPrefix;
+  @ApiModelProperty(example = "null", value = "prefix položky")
+  public String getFieldprefix() {
+    return fieldprefix;
   }
 
-  public void setFieldPrefix(String fieldPrefix) {
-    this.fieldPrefix = fieldPrefix;
+  public void setFieldprefix(String fieldprefix) {
+    this.fieldprefix = fieldprefix;
   }
 
-  public Userfielddef2 fieldSuffix(String fieldSuffix) {
-    this.fieldSuffix = fieldSuffix;
+  public Userfielddef2 fieldsuffix(String fieldsuffix) {
+    this.fieldsuffix = fieldsuffix;
     return this;
   }
 
    /**
-   * Suffix položky
-   * @return fieldSuffix
+   * suffix položky
+   * @return fieldsuffix
   **/
-  @ApiModelProperty(example = "null", value = "Suffix položky")
-  public String getFieldSuffix() {
-    return fieldSuffix;
+  @ApiModelProperty(example = "null", value = "suffix položky")
+  public String getFieldsuffix() {
+    return fieldsuffix;
   }
 
-  public void setFieldSuffix(String fieldSuffix) {
-    this.fieldSuffix = fieldSuffix;
+  public void setFieldsuffix(String fieldsuffix) {
+    this.fieldsuffix = fieldsuffix;
   }
 
-  public Userfielddef2 isSortable(Boolean isSortable) {
-    this.isSortable = isSortable;
+  public Userfielddef2 issortable(Boolean issortable) {
+    this.issortable = issortable;
     return this;
   }
 
    /**
-   * Tříditelná [persistentní položka]
-   * @return isSortable
+   * tříditelná [persistentní položka]
+   * @return issortable
   **/
-  @ApiModelProperty(example = "null", value = "Tříditelná [persistentní položka]")
-  public Boolean getIsSortable() {
-    return isSortable;
+  @ApiModelProperty(example = "null", value = "tříditelná [persistentní položka]")
+  public Boolean getIssortable() {
+    return issortable;
   }
 
-  public void setIsSortable(Boolean isSortable) {
-    this.isSortable = isSortable;
+  public void setIssortable(Boolean issortable) {
+    this.issortable = issortable;
   }
 
-  public Userfielddef2 defaultValueInteger(Integer defaultValueInteger) {
-    this.defaultValueInteger = defaultValueInteger;
+  public Userfielddef2 defaultvalueinteger(Integer defaultvalueinteger) {
+    this.defaultvalueinteger = defaultvalueinteger;
     return this;
   }
 
    /**
-   * Výchozí hodnota
-   * @return defaultValueInteger
+   * výchozí hodnota
+   * @return defaultvalueinteger
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí hodnota")
-  public Integer getDefaultValueInteger() {
-    return defaultValueInteger;
+  @ApiModelProperty(example = "null", value = "výchozí hodnota")
+  public Integer getDefaultvalueinteger() {
+    return defaultvalueinteger;
   }
 
-  public void setDefaultValueInteger(Integer defaultValueInteger) {
-    this.defaultValueInteger = defaultValueInteger;
+  public void setDefaultvalueinteger(Integer defaultvalueinteger) {
+    this.defaultvalueinteger = defaultvalueinteger;
   }
 
-  public Userfielddef2 defaultValueFloat(Double defaultValueFloat) {
-    this.defaultValueFloat = defaultValueFloat;
+  public Userfielddef2 defaultvaluefloat(Double defaultvaluefloat) {
+    this.defaultvaluefloat = defaultvaluefloat;
     return this;
   }
 
    /**
-   * Výchozí hodnota
-   * @return defaultValueFloat
+   * výchozí hodnota
+   * @return defaultvaluefloat
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí hodnota")
-  public Double getDefaultValueFloat() {
-    return defaultValueFloat;
+  @ApiModelProperty(example = "null", value = "výchozí hodnota")
+  public Double getDefaultvaluefloat() {
+    return defaultvaluefloat;
   }
 
-  public void setDefaultValueFloat(Double defaultValueFloat) {
-    this.defaultValueFloat = defaultValueFloat;
+  public void setDefaultvaluefloat(Double defaultvaluefloat) {
+    this.defaultvaluefloat = defaultvaluefloat;
   }
 
-  public Userfielddef2 defaultValueDateTime(DateTime defaultValueDateTime) {
-    this.defaultValueDateTime = defaultValueDateTime;
+  public Userfielddef2 defaultvaluedatetime(DateTime defaultvaluedatetime) {
+    this.defaultvaluedatetime = defaultvaluedatetime;
     return this;
   }
 
    /**
-   * Výchozí hodnota
-   * @return defaultValueDateTime
+   * výchozí hodnota
+   * @return defaultvaluedatetime
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí hodnota")
-  public DateTime getDefaultValueDateTime() {
-    return defaultValueDateTime;
+  @ApiModelProperty(example = "null", value = "výchozí hodnota")
+  public DateTime getDefaultvaluedatetime() {
+    return defaultvaluedatetime;
   }
 
-  public void setDefaultValueDateTime(DateTime defaultValueDateTime) {
-    this.defaultValueDateTime = defaultValueDateTime;
+  public void setDefaultvaluedatetime(DateTime defaultvaluedatetime) {
+    this.defaultvaluedatetime = defaultvaluedatetime;
   }
 
-  public Userfielddef2 defaultValueBoolean(Boolean defaultValueBoolean) {
-    this.defaultValueBoolean = defaultValueBoolean;
+  public Userfielddef2 defaultvalueboolean(Boolean defaultvalueboolean) {
+    this.defaultvalueboolean = defaultvalueboolean;
     return this;
   }
 
    /**
-   * Výchozí hodnota
-   * @return defaultValueBoolean
+   * výchozí hodnota
+   * @return defaultvalueboolean
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí hodnota")
-  public Boolean getDefaultValueBoolean() {
-    return defaultValueBoolean;
+  @ApiModelProperty(example = "null", value = "výchozí hodnota")
+  public Boolean getDefaultvalueboolean() {
+    return defaultvalueboolean;
   }
 
-  public void setDefaultValueBoolean(Boolean defaultValueBoolean) {
-    this.defaultValueBoolean = defaultValueBoolean;
+  public void setDefaultvalueboolean(Boolean defaultvalueboolean) {
+    this.defaultvalueboolean = defaultvalueboolean;
   }
 
-  public Userfielddef2 sortableRollFields(String sortableRollFields) {
-    this.sortableRollFields = sortableRollFields;
+  public Userfielddef2 sortablerollfields(String sortablerollfields) {
+    this.sortablerollfields = sortablerollfields;
     return this;
   }
 
    /**
-   * Tříditelné položky číselníku [persistentní položka]
-   * @return sortableRollFields
+   * tříditelné položky číselníku [persistentní položka]
+   * @return sortablerollfields
   **/
-  @ApiModelProperty(example = "null", value = "Tříditelné položky číselníku [persistentní položka]")
-  public String getSortableRollFields() {
-    return sortableRollFields;
+  @ApiModelProperty(example = "null", value = "tříditelné položky číselníku [persistentní položka]")
+  public String getSortablerollfields() {
+    return sortablerollfields;
   }
 
-  public void setSortableRollFields(String sortableRollFields) {
-    this.sortableRollFields = sortableRollFields;
+  public void setSortablerollfields(String sortablerollfields) {
+    this.sortablerollfields = sortablerollfields;
   }
 
-  public Userfielddef2 minValue(String minValue) {
-    this.minValue = minValue;
+  public Userfielddef2 minvalue(String minvalue) {
+    this.minvalue = minvalue;
     return this;
   }
 
    /**
-   * Minimální hodnota [persistentní položka]
-   * @return minValue
+   * minimální hodnota [persistentní položka]
+   * @return minvalue
   **/
-  @ApiModelProperty(example = "null", value = "Minimální hodnota [persistentní položka]")
-  public String getMinValue() {
-    return minValue;
+  @ApiModelProperty(example = "null", value = "minimální hodnota [persistentní položka]")
+  public String getMinvalue() {
+    return minvalue;
   }
 
-  public void setMinValue(String minValue) {
-    this.minValue = minValue;
+  public void setMinvalue(String minvalue) {
+    this.minvalue = minvalue;
   }
 
-  public Userfielddef2 maxValue(String maxValue) {
-    this.maxValue = maxValue;
+  public Userfielddef2 maxvalue(String maxvalue) {
+    this.maxvalue = maxvalue;
     return this;
   }
 
    /**
-   * Maximální hodnota [persistentní položka]
-   * @return maxValue
+   * maximální hodnota [persistentní položka]
+   * @return maxvalue
   **/
-  @ApiModelProperty(example = "null", value = "Maximální hodnota [persistentní položka]")
-  public String getMaxValue() {
-    return maxValue;
+  @ApiModelProperty(example = "null", value = "maximální hodnota [persistentní položka]")
+  public String getMaxvalue() {
+    return maxvalue;
   }
 
-  public void setMaxValue(String maxValue) {
-    this.maxValue = maxValue;
+  public void setMaxvalue(String maxvalue) {
+    this.maxvalue = maxvalue;
   }
 
-  public Userfielddef2 maxValueInteger(Integer maxValueInteger) {
-    this.maxValueInteger = maxValueInteger;
+  public Userfielddef2 maxvalueinteger(Integer maxvalueinteger) {
+    this.maxvalueinteger = maxvalueinteger;
     return this;
   }
 
    /**
-   * Maximální hodnota
-   * @return maxValueInteger
+   * maximální hodnota
+   * @return maxvalueinteger
   **/
-  @ApiModelProperty(example = "null", value = "Maximální hodnota")
-  public Integer getMaxValueInteger() {
-    return maxValueInteger;
+  @ApiModelProperty(example = "null", value = "maximální hodnota")
+  public Integer getMaxvalueinteger() {
+    return maxvalueinteger;
   }
 
-  public void setMaxValueInteger(Integer maxValueInteger) {
-    this.maxValueInteger = maxValueInteger;
+  public void setMaxvalueinteger(Integer maxvalueinteger) {
+    this.maxvalueinteger = maxvalueinteger;
   }
 
-  public Userfielddef2 minValueInteger(Integer minValueInteger) {
-    this.minValueInteger = minValueInteger;
+  public Userfielddef2 minvalueinteger(Integer minvalueinteger) {
+    this.minvalueinteger = minvalueinteger;
     return this;
   }
 
    /**
-   * Minimální hodnota
-   * @return minValueInteger
+   * minimální hodnota
+   * @return minvalueinteger
   **/
-  @ApiModelProperty(example = "null", value = "Minimální hodnota")
-  public Integer getMinValueInteger() {
-    return minValueInteger;
+  @ApiModelProperty(example = "null", value = "minimální hodnota")
+  public Integer getMinvalueinteger() {
+    return minvalueinteger;
   }
 
-  public void setMinValueInteger(Integer minValueInteger) {
-    this.minValueInteger = minValueInteger;
+  public void setMinvalueinteger(Integer minvalueinteger) {
+    this.minvalueinteger = minvalueinteger;
   }
 
-  public Userfielddef2 maxValueFloat(Double maxValueFloat) {
-    this.maxValueFloat = maxValueFloat;
+  public Userfielddef2 maxvaluefloat(Double maxvaluefloat) {
+    this.maxvaluefloat = maxvaluefloat;
     return this;
   }
 
    /**
-   * Maximální hodnota
-   * @return maxValueFloat
+   * maximální hodnota
+   * @return maxvaluefloat
   **/
-  @ApiModelProperty(example = "null", value = "Maximální hodnota")
-  public Double getMaxValueFloat() {
-    return maxValueFloat;
+  @ApiModelProperty(example = "null", value = "maximální hodnota")
+  public Double getMaxvaluefloat() {
+    return maxvaluefloat;
   }
 
-  public void setMaxValueFloat(Double maxValueFloat) {
-    this.maxValueFloat = maxValueFloat;
+  public void setMaxvaluefloat(Double maxvaluefloat) {
+    this.maxvaluefloat = maxvaluefloat;
   }
 
-  public Userfielddef2 minValueFloat(Double minValueFloat) {
-    this.minValueFloat = minValueFloat;
+  public Userfielddef2 minvaluefloat(Double minvaluefloat) {
+    this.minvaluefloat = minvaluefloat;
     return this;
   }
 
    /**
-   * Minimální hodnota
-   * @return minValueFloat
+   * minimální hodnota
+   * @return minvaluefloat
   **/
-  @ApiModelProperty(example = "null", value = "Minimální hodnota")
-  public Double getMinValueFloat() {
-    return minValueFloat;
+  @ApiModelProperty(example = "null", value = "minimální hodnota")
+  public Double getMinvaluefloat() {
+    return minvaluefloat;
   }
 
-  public void setMinValueFloat(Double minValueFloat) {
-    this.minValueFloat = minValueFloat;
+  public void setMinvaluefloat(Double minvaluefloat) {
+    this.minvaluefloat = minvaluefloat;
   }
 
-  public Userfielddef2 isIndexed(Boolean isIndexed) {
-    this.isIndexed = isIndexed;
+  public Userfielddef2 isindexed(Boolean isindexed) {
+    this.isindexed = isindexed;
     return this;
   }
 
    /**
-   * Indexováno [persistentní položka]
-   * @return isIndexed
+   * indexováno [persistentní položka]
+   * @return isindexed
   **/
-  @ApiModelProperty(example = "null", value = "Indexováno [persistentní položka]")
-  public Boolean getIsIndexed() {
-    return isIndexed;
+  @ApiModelProperty(example = "null", value = "indexováno [persistentní položka]")
+  public Boolean getIsindexed() {
+    return isindexed;
   }
 
-  public void setIsIndexed(Boolean isIndexed) {
-    this.isIndexed = isIndexed;
+  public void setIsindexed(Boolean isindexed) {
+    this.isindexed = isindexed;
   }
 
-  public Userfielddef2 hasForeignKey(Boolean hasForeignKey) {
-    this.hasForeignKey = hasForeignKey;
+  public Userfielddef2 hasforeignkey(Boolean hasforeignkey) {
+    this.hasforeignkey = hasforeignkey;
     return this;
   }
 
    /**
-   * Cizí klíč [persistentní položka]
-   * @return hasForeignKey
+   * cizí klíč [persistentní položka]
+   * @return hasforeignkey
   **/
-  @ApiModelProperty(example = "null", value = "Cizí klíč [persistentní položka]")
-  public Boolean getHasForeignKey() {
-    return hasForeignKey;
+  @ApiModelProperty(example = "null", value = "cizí klíč [persistentní položka]")
+  public Boolean getHasforeignkey() {
+    return hasforeignkey;
   }
 
-  public void setHasForeignKey(Boolean hasForeignKey) {
-    this.hasForeignKey = hasForeignKey;
+  public void setHasforeignkey(Boolean hasforeignkey) {
+    this.hasforeignkey = hasforeignkey;
   }
 
-  public Userfielddef2 indexName(String indexName) {
-    this.indexName = indexName;
+  public Userfielddef2 indexname(String indexname) {
+    this.indexname = indexname;
     return this;
   }
 
    /**
-   * Název indexu [persistentní položka]
-   * @return indexName
+   * název indexu [persistentní položka]
+   * @return indexname
   **/
-  @ApiModelProperty(example = "null", value = "Název indexu [persistentní položka]")
-  public String getIndexName() {
-    return indexName;
+  @ApiModelProperty(example = "null", value = "název indexu [persistentní položka]")
+  public String getIndexname() {
+    return indexname;
   }
 
-  public void setIndexName(String indexName) {
-    this.indexName = indexName;
+  public void setIndexname(String indexname) {
+    this.indexname = indexname;
   }
 
-  public Userfielddef2 currencySourcePath(String currencySourcePath) {
-    this.currencySourcePath = currencySourcePath;
+  public Userfielddef2 currencysourcepath(String currencysourcepath) {
+    this.currencysourcepath = currencysourcepath;
     return this;
   }
 
    /**
-   * Zdroj měny [persistentní položka]
-   * @return currencySourcePath
+   * zdroj měny [persistentní položka]
+   * @return currencysourcepath
   **/
-  @ApiModelProperty(example = "null", value = "Zdroj měny [persistentní položka]")
-  public String getCurrencySourcePath() {
-    return currencySourcePath;
+  @ApiModelProperty(example = "null", value = "zdroj měny [persistentní položka]")
+  public String getCurrencysourcepath() {
+    return currencysourcepath;
   }
 
-  public void setCurrencySourcePath(String currencySourcePath) {
-    this.currencySourcePath = currencySourcePath;
+  public void setCurrencysourcepath(String currencysourcepath) {
+    this.currencysourcepath = currencysourcepath;
   }
 
-  public Userfielddef2 firstValue(Integer firstValue) {
-    this.firstValue = firstValue;
+  public Userfielddef2 firstvalue(Integer firstvalue) {
+    this.firstvalue = firstvalue;
     return this;
   }
 
    /**
-   * Počítat od [persistentní položka]
-   * @return firstValue
+   * počítat od [persistentní položka]
+   * @return firstvalue
   **/
-  @ApiModelProperty(example = "null", value = "Počítat od [persistentní položka]")
-  public Integer getFirstValue() {
-    return firstValue;
+  @ApiModelProperty(example = "null", value = "počítat od [persistentní položka]")
+  public Integer getFirstvalue() {
+    return firstvalue;
   }
 
-  public void setFirstValue(Integer firstValue) {
-    this.firstValue = firstValue;
+  public void setFirstvalue(Integer firstvalue) {
+    this.firstvalue = firstvalue;
   }
 
-  public Userfielddef2 showTime(Boolean showTime) {
-    this.showTime = showTime;
+  public Userfielddef2 showtime(Boolean showtime) {
+    this.showtime = showtime;
     return this;
   }
 
    /**
-   * Zobrazovat čas [persistentní položka]
-   * @return showTime
+   * zobrazovat čas [persistentní položka]
+   * @return showtime
   **/
-  @ApiModelProperty(example = "null", value = "Zobrazovat čas [persistentní položka]")
-  public Boolean getShowTime() {
-    return showTime;
+  @ApiModelProperty(example = "null", value = "zobrazovat čas [persistentní položka]")
+  public Boolean getShowtime() {
+    return showtime;
   }
 
-  public void setShowTime(Boolean showTime) {
-    this.showTime = showTime;
+  public void setShowtime(Boolean showtime) {
+    this.showtime = showtime;
   }
 
-  public Userfielddef2 isMultiChangeable(Boolean isMultiChangeable) {
-    this.isMultiChangeable = isMultiChangeable;
+  public Userfielddef2 ismultichangeable(Boolean ismultichangeable) {
+    this.ismultichangeable = ismultichangeable;
     return this;
   }
 
    /**
-   * Povolit hromadnou změnu [persistentní položka]
-   * @return isMultiChangeable
+   * povolit hromadnou změnu [persistentní položka]
+   * @return ismultichangeable
   **/
-  @ApiModelProperty(example = "null", value = "Povolit hromadnou změnu [persistentní položka]")
-  public Boolean getIsMultiChangeable() {
-    return isMultiChangeable;
+  @ApiModelProperty(example = "null", value = "povolit hromadnou změnu [persistentní položka]")
+  public Boolean getIsmultichangeable() {
+    return ismultichangeable;
   }
 
-  public void setIsMultiChangeable(Boolean isMultiChangeable) {
-    this.isMultiChangeable = isMultiChangeable;
+  public void setIsmultichangeable(Boolean ismultichangeable) {
+    this.ismultichangeable = ismultichangeable;
   }
 
-  public Userfielddef2 isCaseSensitive(Boolean isCaseSensitive) {
-    this.isCaseSensitive = isCaseSensitive;
+  public Userfielddef2 iscasesensitive(Boolean iscasesensitive) {
+    this.iscasesensitive = iscasesensitive;
     return this;
   }
 
    /**
-   * Rozlišovat velikost písmen [persistentní položka]
-   * @return isCaseSensitive
+   * rozlišovat velikost písmen [persistentní položka]
+   * @return iscasesensitive
   **/
-  @ApiModelProperty(example = "null", value = "Rozlišovat velikost písmen [persistentní položka]")
-  public Boolean getIsCaseSensitive() {
-    return isCaseSensitive;
+  @ApiModelProperty(example = "null", value = "rozlišovat velikost písmen [persistentní položka]")
+  public Boolean getIscasesensitive() {
+    return iscasesensitive;
   }
 
-  public void setIsCaseSensitive(Boolean isCaseSensitive) {
-    this.isCaseSensitive = isCaseSensitive;
+  public void setIscasesensitive(Boolean iscasesensitive) {
+    this.iscasesensitive = iscasesensitive;
   }
 
-  public Userfielddef2 fieldDBType(Integer fieldDBType) {
-    this.fieldDBType = fieldDBType;
+  public Userfielddef2 fielddbtype(Integer fielddbtype) {
+    this.fielddbtype = fielddbtype;
     return this;
   }
 
    /**
-   * Databázový typ [persistentní položka]
-   * @return fieldDBType
+   * databázový typ [persistentní položka]
+   * @return fielddbtype
   **/
-  @ApiModelProperty(example = "null", value = "Databázový typ [persistentní položka]")
-  public Integer getFieldDBType() {
-    return fieldDBType;
+  @ApiModelProperty(example = "null", value = "databázový typ [persistentní položka]")
+  public Integer getFielddbtype() {
+    return fielddbtype;
   }
 
-  public void setFieldDBType(Integer fieldDBType) {
-    this.fieldDBType = fieldDBType;
+  public void setFielddbtype(Integer fielddbtype) {
+    this.fielddbtype = fielddbtype;
   }
 
-  public Userfielddef2 fieldDBTypeText(String fieldDBTypeText) {
-    this.fieldDBTypeText = fieldDBTypeText;
+  public Userfielddef2 fielddbtypetext(String fielddbtypetext) {
+    this.fielddbtypetext = fielddbtypetext;
     return this;
   }
 
    /**
-   * Databázový typ
-   * @return fieldDBTypeText
+   * databázový typ
+   * @return fielddbtypetext
   **/
-  @ApiModelProperty(example = "null", value = "Databázový typ")
-  public String getFieldDBTypeText() {
-    return fieldDBTypeText;
+  @ApiModelProperty(example = "null", value = "databázový typ")
+  public String getFielddbtypetext() {
+    return fielddbtypetext;
   }
 
-  public void setFieldDBTypeText(String fieldDBTypeText) {
-    this.fieldDBTypeText = fieldDBTypeText;
+  public void setFielddbtypetext(String fielddbtypetext) {
+    this.fielddbtypetext = fielddbtypetext;
   }
 
 
@@ -1211,69 +1265,69 @@ public class Userfielddef2   {
       return false;
     }
     Userfielddef2 userfielddef2 = (Userfielddef2) o;
-    return Objects.equals(this.displayName, userfielddef2.displayName) &&
-        Objects.equals(this.ID, userfielddef2.ID) &&
-        Objects.equals(this.classID, userfielddef2.classID) &&
-        Objects.equals(this.objVersion, userfielddef2.objVersion) &&
-        Objects.equals(this.parentID, userfielddef2.parentID) &&
-        Objects.equals(this.posIndex, userfielddef2.posIndex) &&
-        Objects.equals(this.fieldName, userfielddef2.fieldName) &&
-        Objects.equals(this.fieldCode, userfielddef2.fieldCode) &&
-        Objects.equals(this.fieldKind, userfielddef2.fieldKind) &&
-        Objects.equals(this.fieldDataType, userfielddef2.fieldDataType) &&
-        Objects.equals(this.fieldSize, userfielddef2.fieldSize) &&
-        Objects.equals(this.fieldPrecision, userfielddef2.fieldPrecision) &&
-        Objects.equals(this.fieldDisplayLabel, userfielddef2.fieldDisplayLabel) &&
-        Objects.equals(this.fieldDisplayHint, userfielddef2.fieldDisplayHint) &&
-        Objects.equals(this.fieldDisplayWidth, userfielddef2.fieldDisplayWidth) &&
-        Objects.equals(this.fieldRollCLSID, userfielddef2.fieldRollCLSID) &&
-        Objects.equals(this.fieldCLSID, userfielddef2.fieldCLSID) &&
-        Objects.equals(this.fieldDisplayFormat, userfielddef2.fieldDisplayFormat) &&
-        Objects.equals(this.fieldAlignment, userfielddef2.fieldAlignment) &&
-        Objects.equals(this.editMethod, userfielddef2.editMethod) &&
+    return Objects.equals(this.displayname, userfielddef2.displayname) &&
+        Objects.equals(this.id, userfielddef2.id) &&
+        Objects.equals(this.classid, userfielddef2.classid) &&
+        Objects.equals(this.objversion, userfielddef2.objversion) &&
+        Objects.equals(this.parentId, userfielddef2.parentId) &&
+        Objects.equals(this.posindex, userfielddef2.posindex) &&
+        Objects.equals(this.fieldname, userfielddef2.fieldname) &&
+        Objects.equals(this.fieldcode, userfielddef2.fieldcode) &&
+        Objects.equals(this.fieldkind, userfielddef2.fieldkind) &&
+        Objects.equals(this.fielddatatype, userfielddef2.fielddatatype) &&
+        Objects.equals(this.fieldsize, userfielddef2.fieldsize) &&
+        Objects.equals(this.fieldprecision, userfielddef2.fieldprecision) &&
+        Objects.equals(this.fielddisplaylabel, userfielddef2.fielddisplaylabel) &&
+        Objects.equals(this.fielddisplayhint, userfielddef2.fielddisplayhint) &&
+        Objects.equals(this.fielddisplaywidth, userfielddef2.fielddisplaywidth) &&
+        Objects.equals(this.fieldrollclsid, userfielddef2.fieldrollclsid) &&
+        Objects.equals(this.fieldclsid, userfielddef2.fieldclsid) &&
+        Objects.equals(this.fielddisplayformat, userfielddef2.fielddisplayformat) &&
+        Objects.equals(this.fieldalignment, userfielddef2.fieldalignment) &&
+        Objects.equals(this.editmethod, userfielddef2.editmethod) &&
         Objects.equals(this.enumeration, userfielddef2.enumeration) &&
-        Objects.equals(this.isReadOnly, userfielddef2.isReadOnly) &&
-        Objects.equals(this.hasHistory, userfielddef2.hasHistory) &&
-        Objects.equals(this.defaultValue, userfielddef2.defaultValue) &&
+        Objects.equals(this.isreadonly, userfielddef2.isreadonly) &&
+        Objects.equals(this.hashistory, userfielddef2.hashistory) &&
+        Objects.equals(this.defaultvalue, userfielddef2.defaultvalue) &&
         Objects.equals(this.flags, userfielddef2.flags) &&
-        Objects.equals(this.fieldDataTypeText, userfielddef2.fieldDataTypeText) &&
-        Objects.equals(this.editMethodText, userfielddef2.editMethodText) &&
-        Objects.equals(this.useInDynSQL, userfielddef2.useInDynSQL) &&
-        Objects.equals(this.forcedField, userfielddef2.forcedField) &&
+        Objects.equals(this.fielddatatypetext, userfielddef2.fielddatatypetext) &&
+        Objects.equals(this.editmethodtext, userfielddef2.editmethodtext) &&
+        Objects.equals(this.useindynsql, userfielddef2.useindynsql) &&
+        Objects.equals(this.forcedfield, userfielddef2.forcedfield) &&
         Objects.equals(this.replicatable, userfielddef2.replicatable) &&
         Objects.equals(this.importable, userfielddef2.importable) &&
-        Objects.equals(this.textField, userfielddef2.textField) &&
+        Objects.equals(this.textfield, userfielddef2.textfield) &&
         Objects.equals(this.system, userfielddef2.system) &&
-        Objects.equals(this.extraField, userfielddef2.extraField) &&
-        Objects.equals(this.fieldPrefix, userfielddef2.fieldPrefix) &&
-        Objects.equals(this.fieldSuffix, userfielddef2.fieldSuffix) &&
-        Objects.equals(this.isSortable, userfielddef2.isSortable) &&
-        Objects.equals(this.defaultValueInteger, userfielddef2.defaultValueInteger) &&
-        Objects.equals(this.defaultValueFloat, userfielddef2.defaultValueFloat) &&
-        Objects.equals(this.defaultValueDateTime, userfielddef2.defaultValueDateTime) &&
-        Objects.equals(this.defaultValueBoolean, userfielddef2.defaultValueBoolean) &&
-        Objects.equals(this.sortableRollFields, userfielddef2.sortableRollFields) &&
-        Objects.equals(this.minValue, userfielddef2.minValue) &&
-        Objects.equals(this.maxValue, userfielddef2.maxValue) &&
-        Objects.equals(this.maxValueInteger, userfielddef2.maxValueInteger) &&
-        Objects.equals(this.minValueInteger, userfielddef2.minValueInteger) &&
-        Objects.equals(this.maxValueFloat, userfielddef2.maxValueFloat) &&
-        Objects.equals(this.minValueFloat, userfielddef2.minValueFloat) &&
-        Objects.equals(this.isIndexed, userfielddef2.isIndexed) &&
-        Objects.equals(this.hasForeignKey, userfielddef2.hasForeignKey) &&
-        Objects.equals(this.indexName, userfielddef2.indexName) &&
-        Objects.equals(this.currencySourcePath, userfielddef2.currencySourcePath) &&
-        Objects.equals(this.firstValue, userfielddef2.firstValue) &&
-        Objects.equals(this.showTime, userfielddef2.showTime) &&
-        Objects.equals(this.isMultiChangeable, userfielddef2.isMultiChangeable) &&
-        Objects.equals(this.isCaseSensitive, userfielddef2.isCaseSensitive) &&
-        Objects.equals(this.fieldDBType, userfielddef2.fieldDBType) &&
-        Objects.equals(this.fieldDBTypeText, userfielddef2.fieldDBTypeText);
+        Objects.equals(this.extrafield, userfielddef2.extrafield) &&
+        Objects.equals(this.fieldprefix, userfielddef2.fieldprefix) &&
+        Objects.equals(this.fieldsuffix, userfielddef2.fieldsuffix) &&
+        Objects.equals(this.issortable, userfielddef2.issortable) &&
+        Objects.equals(this.defaultvalueinteger, userfielddef2.defaultvalueinteger) &&
+        Objects.equals(this.defaultvaluefloat, userfielddef2.defaultvaluefloat) &&
+        Objects.equals(this.defaultvaluedatetime, userfielddef2.defaultvaluedatetime) &&
+        Objects.equals(this.defaultvalueboolean, userfielddef2.defaultvalueboolean) &&
+        Objects.equals(this.sortablerollfields, userfielddef2.sortablerollfields) &&
+        Objects.equals(this.minvalue, userfielddef2.minvalue) &&
+        Objects.equals(this.maxvalue, userfielddef2.maxvalue) &&
+        Objects.equals(this.maxvalueinteger, userfielddef2.maxvalueinteger) &&
+        Objects.equals(this.minvalueinteger, userfielddef2.minvalueinteger) &&
+        Objects.equals(this.maxvaluefloat, userfielddef2.maxvaluefloat) &&
+        Objects.equals(this.minvaluefloat, userfielddef2.minvaluefloat) &&
+        Objects.equals(this.isindexed, userfielddef2.isindexed) &&
+        Objects.equals(this.hasforeignkey, userfielddef2.hasforeignkey) &&
+        Objects.equals(this.indexname, userfielddef2.indexname) &&
+        Objects.equals(this.currencysourcepath, userfielddef2.currencysourcepath) &&
+        Objects.equals(this.firstvalue, userfielddef2.firstvalue) &&
+        Objects.equals(this.showtime, userfielddef2.showtime) &&
+        Objects.equals(this.ismultichangeable, userfielddef2.ismultichangeable) &&
+        Objects.equals(this.iscasesensitive, userfielddef2.iscasesensitive) &&
+        Objects.equals(this.fielddbtype, userfielddef2.fielddbtype) &&
+        Objects.equals(this.fielddbtypetext, userfielddef2.fielddbtypetext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, fieldName, fieldCode, fieldKind, fieldDataType, fieldSize, fieldPrecision, fieldDisplayLabel, fieldDisplayHint, fieldDisplayWidth, fieldRollCLSID, fieldCLSID, fieldDisplayFormat, fieldAlignment, editMethod, enumeration, isReadOnly, hasHistory, defaultValue, flags, fieldDataTypeText, editMethodText, useInDynSQL, forcedField, replicatable, importable, textField, system, extraField, fieldPrefix, fieldSuffix, isSortable, defaultValueInteger, defaultValueFloat, defaultValueDateTime, defaultValueBoolean, sortableRollFields, minValue, maxValue, maxValueInteger, minValueInteger, maxValueFloat, minValueFloat, isIndexed, hasForeignKey, indexName, currencySourcePath, firstValue, showTime, isMultiChangeable, isCaseSensitive, fieldDBType, fieldDBTypeText);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, fieldname, fieldcode, fieldkind, fielddatatype, fieldsize, fieldprecision, fielddisplaylabel, fielddisplayhint, fielddisplaywidth, fieldrollclsid, fieldclsid, fielddisplayformat, fieldalignment, editmethod, enumeration, isreadonly, hashistory, defaultvalue, flags, fielddatatypetext, editmethodtext, useindynsql, forcedfield, replicatable, importable, textfield, system, extrafield, fieldprefix, fieldsuffix, issortable, defaultvalueinteger, defaultvaluefloat, defaultvaluedatetime, defaultvalueboolean, sortablerollfields, minvalue, maxvalue, maxvalueinteger, minvalueinteger, maxvaluefloat, minvaluefloat, isindexed, hasforeignkey, indexname, currencysourcepath, firstvalue, showtime, ismultichangeable, iscasesensitive, fielddbtype, fielddbtypetext);
   }
 
   @Override
@@ -1281,64 +1335,64 @@ public class Userfielddef2   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Userfielddef2 {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    fieldName: ").append(toIndentedString(fieldName)).append("\n");
-    sb.append("    fieldCode: ").append(toIndentedString(fieldCode)).append("\n");
-    sb.append("    fieldKind: ").append(toIndentedString(fieldKind)).append("\n");
-    sb.append("    fieldDataType: ").append(toIndentedString(fieldDataType)).append("\n");
-    sb.append("    fieldSize: ").append(toIndentedString(fieldSize)).append("\n");
-    sb.append("    fieldPrecision: ").append(toIndentedString(fieldPrecision)).append("\n");
-    sb.append("    fieldDisplayLabel: ").append(toIndentedString(fieldDisplayLabel)).append("\n");
-    sb.append("    fieldDisplayHint: ").append(toIndentedString(fieldDisplayHint)).append("\n");
-    sb.append("    fieldDisplayWidth: ").append(toIndentedString(fieldDisplayWidth)).append("\n");
-    sb.append("    fieldRollCLSID: ").append(toIndentedString(fieldRollCLSID)).append("\n");
-    sb.append("    fieldCLSID: ").append(toIndentedString(fieldCLSID)).append("\n");
-    sb.append("    fieldDisplayFormat: ").append(toIndentedString(fieldDisplayFormat)).append("\n");
-    sb.append("    fieldAlignment: ").append(toIndentedString(fieldAlignment)).append("\n");
-    sb.append("    editMethod: ").append(toIndentedString(editMethod)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    fieldname: ").append(toIndentedString(fieldname)).append("\n");
+    sb.append("    fieldcode: ").append(toIndentedString(fieldcode)).append("\n");
+    sb.append("    fieldkind: ").append(toIndentedString(fieldkind)).append("\n");
+    sb.append("    fielddatatype: ").append(toIndentedString(fielddatatype)).append("\n");
+    sb.append("    fieldsize: ").append(toIndentedString(fieldsize)).append("\n");
+    sb.append("    fieldprecision: ").append(toIndentedString(fieldprecision)).append("\n");
+    sb.append("    fielddisplaylabel: ").append(toIndentedString(fielddisplaylabel)).append("\n");
+    sb.append("    fielddisplayhint: ").append(toIndentedString(fielddisplayhint)).append("\n");
+    sb.append("    fielddisplaywidth: ").append(toIndentedString(fielddisplaywidth)).append("\n");
+    sb.append("    fieldrollclsid: ").append(toIndentedString(fieldrollclsid)).append("\n");
+    sb.append("    fieldclsid: ").append(toIndentedString(fieldclsid)).append("\n");
+    sb.append("    fielddisplayformat: ").append(toIndentedString(fielddisplayformat)).append("\n");
+    sb.append("    fieldalignment: ").append(toIndentedString(fieldalignment)).append("\n");
+    sb.append("    editmethod: ").append(toIndentedString(editmethod)).append("\n");
     sb.append("    enumeration: ").append(toIndentedString(enumeration)).append("\n");
-    sb.append("    isReadOnly: ").append(toIndentedString(isReadOnly)).append("\n");
-    sb.append("    hasHistory: ").append(toIndentedString(hasHistory)).append("\n");
-    sb.append("    defaultValue: ").append(toIndentedString(defaultValue)).append("\n");
+    sb.append("    isreadonly: ").append(toIndentedString(isreadonly)).append("\n");
+    sb.append("    hashistory: ").append(toIndentedString(hashistory)).append("\n");
+    sb.append("    defaultvalue: ").append(toIndentedString(defaultvalue)).append("\n");
     sb.append("    flags: ").append(toIndentedString(flags)).append("\n");
-    sb.append("    fieldDataTypeText: ").append(toIndentedString(fieldDataTypeText)).append("\n");
-    sb.append("    editMethodText: ").append(toIndentedString(editMethodText)).append("\n");
-    sb.append("    useInDynSQL: ").append(toIndentedString(useInDynSQL)).append("\n");
-    sb.append("    forcedField: ").append(toIndentedString(forcedField)).append("\n");
+    sb.append("    fielddatatypetext: ").append(toIndentedString(fielddatatypetext)).append("\n");
+    sb.append("    editmethodtext: ").append(toIndentedString(editmethodtext)).append("\n");
+    sb.append("    useindynsql: ").append(toIndentedString(useindynsql)).append("\n");
+    sb.append("    forcedfield: ").append(toIndentedString(forcedfield)).append("\n");
     sb.append("    replicatable: ").append(toIndentedString(replicatable)).append("\n");
     sb.append("    importable: ").append(toIndentedString(importable)).append("\n");
-    sb.append("    textField: ").append(toIndentedString(textField)).append("\n");
+    sb.append("    textfield: ").append(toIndentedString(textfield)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
-    sb.append("    extraField: ").append(toIndentedString(extraField)).append("\n");
-    sb.append("    fieldPrefix: ").append(toIndentedString(fieldPrefix)).append("\n");
-    sb.append("    fieldSuffix: ").append(toIndentedString(fieldSuffix)).append("\n");
-    sb.append("    isSortable: ").append(toIndentedString(isSortable)).append("\n");
-    sb.append("    defaultValueInteger: ").append(toIndentedString(defaultValueInteger)).append("\n");
-    sb.append("    defaultValueFloat: ").append(toIndentedString(defaultValueFloat)).append("\n");
-    sb.append("    defaultValueDateTime: ").append(toIndentedString(defaultValueDateTime)).append("\n");
-    sb.append("    defaultValueBoolean: ").append(toIndentedString(defaultValueBoolean)).append("\n");
-    sb.append("    sortableRollFields: ").append(toIndentedString(sortableRollFields)).append("\n");
-    sb.append("    minValue: ").append(toIndentedString(minValue)).append("\n");
-    sb.append("    maxValue: ").append(toIndentedString(maxValue)).append("\n");
-    sb.append("    maxValueInteger: ").append(toIndentedString(maxValueInteger)).append("\n");
-    sb.append("    minValueInteger: ").append(toIndentedString(minValueInteger)).append("\n");
-    sb.append("    maxValueFloat: ").append(toIndentedString(maxValueFloat)).append("\n");
-    sb.append("    minValueFloat: ").append(toIndentedString(minValueFloat)).append("\n");
-    sb.append("    isIndexed: ").append(toIndentedString(isIndexed)).append("\n");
-    sb.append("    hasForeignKey: ").append(toIndentedString(hasForeignKey)).append("\n");
-    sb.append("    indexName: ").append(toIndentedString(indexName)).append("\n");
-    sb.append("    currencySourcePath: ").append(toIndentedString(currencySourcePath)).append("\n");
-    sb.append("    firstValue: ").append(toIndentedString(firstValue)).append("\n");
-    sb.append("    showTime: ").append(toIndentedString(showTime)).append("\n");
-    sb.append("    isMultiChangeable: ").append(toIndentedString(isMultiChangeable)).append("\n");
-    sb.append("    isCaseSensitive: ").append(toIndentedString(isCaseSensitive)).append("\n");
-    sb.append("    fieldDBType: ").append(toIndentedString(fieldDBType)).append("\n");
-    sb.append("    fieldDBTypeText: ").append(toIndentedString(fieldDBTypeText)).append("\n");
+    sb.append("    extrafield: ").append(toIndentedString(extrafield)).append("\n");
+    sb.append("    fieldprefix: ").append(toIndentedString(fieldprefix)).append("\n");
+    sb.append("    fieldsuffix: ").append(toIndentedString(fieldsuffix)).append("\n");
+    sb.append("    issortable: ").append(toIndentedString(issortable)).append("\n");
+    sb.append("    defaultvalueinteger: ").append(toIndentedString(defaultvalueinteger)).append("\n");
+    sb.append("    defaultvaluefloat: ").append(toIndentedString(defaultvaluefloat)).append("\n");
+    sb.append("    defaultvaluedatetime: ").append(toIndentedString(defaultvaluedatetime)).append("\n");
+    sb.append("    defaultvalueboolean: ").append(toIndentedString(defaultvalueboolean)).append("\n");
+    sb.append("    sortablerollfields: ").append(toIndentedString(sortablerollfields)).append("\n");
+    sb.append("    minvalue: ").append(toIndentedString(minvalue)).append("\n");
+    sb.append("    maxvalue: ").append(toIndentedString(maxvalue)).append("\n");
+    sb.append("    maxvalueinteger: ").append(toIndentedString(maxvalueinteger)).append("\n");
+    sb.append("    minvalueinteger: ").append(toIndentedString(minvalueinteger)).append("\n");
+    sb.append("    maxvaluefloat: ").append(toIndentedString(maxvaluefloat)).append("\n");
+    sb.append("    minvaluefloat: ").append(toIndentedString(minvaluefloat)).append("\n");
+    sb.append("    isindexed: ").append(toIndentedString(isindexed)).append("\n");
+    sb.append("    hasforeignkey: ").append(toIndentedString(hasforeignkey)).append("\n");
+    sb.append("    indexname: ").append(toIndentedString(indexname)).append("\n");
+    sb.append("    currencysourcepath: ").append(toIndentedString(currencysourcepath)).append("\n");
+    sb.append("    firstvalue: ").append(toIndentedString(firstvalue)).append("\n");
+    sb.append("    showtime: ").append(toIndentedString(showtime)).append("\n");
+    sb.append("    ismultichangeable: ").append(toIndentedString(ismultichangeable)).append("\n");
+    sb.append("    iscasesensitive: ").append(toIndentedString(iscasesensitive)).append("\n");
+    sb.append("    fielddbtype: ").append(toIndentedString(fielddbtype)).append("\n");
+    sb.append("    fielddbtypetext: ").append(toIndentedString(fielddbtypetext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

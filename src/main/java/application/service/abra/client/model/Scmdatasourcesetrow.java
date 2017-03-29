@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,114 +34,159 @@ import java.util.Objects;
 /**
  * Scmdatasourcesetrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Scmdatasourcesetrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("DataSource_ID")
-  private String dataSourceID = null;
+  @SerializedName("datasource_id")
+  private String datasourceId = null;
 
-  @SerializedName("Conditions")
+  @SerializedName("conditions")
   private byte[] conditions = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Sada datových zdrojů [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Sada datových zdrojů [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Scmdatasourcesetrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Scmdatasourcesetrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Scmdatasourcesetrow dataSourceID(String dataSourceID) {
-    this.dataSourceID = dataSourceID;
+  public Scmdatasourcesetrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Datový zdroj; ID objektu Datový zdroj [persistentní položka]
-   * @return dataSourceID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Datový zdroj; ID objektu Datový zdroj [persistentní položka]")
-  public String getDataSourceID() {
-    return dataSourceID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDataSourceID(String dataSourceID) {
-    this.dataSourceID = dataSourceID;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Scmdatasourcesetrow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Scmdatasourcesetrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Scmdatasourcesetrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu sada datových zdrojů [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu sada datových zdrojů [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Scmdatasourcesetrow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Scmdatasourcesetrow datasourceId(String datasourceId) {
+    this.datasourceId = datasourceId;
+    return this;
+  }
+
+   /**
+   * datový zdroj; id objektu datový zdroj [persistentní položka]
+   * @return datasourceId
+  **/
+  @ApiModelProperty(example = "null", value = "datový zdroj; id objektu datový zdroj [persistentní položka]")
+  public String getDatasourceId() {
+    return datasourceId;
+  }
+
+  public void setDatasourceId(String datasourceId) {
+    this.datasourceId = datasourceId;
   }
 
   public Scmdatasourcesetrow conditions(byte[] conditions) {
@@ -150,10 +195,10 @@ public class Scmdatasourcesetrow   {
   }
 
    /**
-   * Podmínky [persistentní položka]
+   * podmínky [persistentní položka]
    * @return conditions
   **/
-  @ApiModelProperty(example = "null", value = "Podmínky [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "podmínky [persistentní položka]")
   public byte[] getConditions() {
     return conditions;
   }
@@ -162,13 +207,22 @@ public class Scmdatasourcesetrow   {
     this.conditions = conditions;
   }
 
+  public Scmdatasourcesetrow system(Boolean system) {
+    this.system = system;
+    return this;
+  }
+
    /**
-   * Systémový [persistentní položka]
+   * systémový [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Systémový [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "systémový [persistentní položka]")
   public Boolean getSystem() {
     return system;
+  }
+
+  public void setSystem(Boolean system) {
+    this.system = system;
   }
 
 
@@ -181,20 +235,20 @@ public class Scmdatasourcesetrow   {
       return false;
     }
     Scmdatasourcesetrow scmdatasourcesetrow = (Scmdatasourcesetrow) o;
-    return Objects.equals(this.displayName, scmdatasourcesetrow.displayName) &&
-        Objects.equals(this.ID, scmdatasourcesetrow.ID) &&
-        Objects.equals(this.classID, scmdatasourcesetrow.classID) &&
-        Objects.equals(this.objVersion, scmdatasourcesetrow.objVersion) &&
-        Objects.equals(this.parentID, scmdatasourcesetrow.parentID) &&
-        Objects.equals(this.posIndex, scmdatasourcesetrow.posIndex) &&
-        Objects.equals(this.dataSourceID, scmdatasourcesetrow.dataSourceID) &&
+    return Objects.equals(this.displayname, scmdatasourcesetrow.displayname) &&
+        Objects.equals(this.id, scmdatasourcesetrow.id) &&
+        Objects.equals(this.classid, scmdatasourcesetrow.classid) &&
+        Objects.equals(this.objversion, scmdatasourcesetrow.objversion) &&
+        Objects.equals(this.parentId, scmdatasourcesetrow.parentId) &&
+        Objects.equals(this.posindex, scmdatasourcesetrow.posindex) &&
+        Objects.equals(this.datasourceId, scmdatasourcesetrow.datasourceId) &&
         Objects.equals(this.conditions, scmdatasourcesetrow.conditions) &&
         Objects.equals(this.system, scmdatasourcesetrow.system);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, dataSourceID, conditions, system);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, datasourceId, conditions, system);
   }
 
   @Override
@@ -202,13 +256,13 @@ public class Scmdatasourcesetrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Scmdatasourcesetrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    dataSourceID: ").append(toIndentedString(dataSourceID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    datasourceId: ").append(toIndentedString(datasourceId)).append("\n");
     sb.append("    conditions: ").append(toIndentedString(conditions)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
     sb.append("}");

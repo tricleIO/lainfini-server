@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,81 +36,117 @@ import java.util.Objects;
 /**
  * Bustransactioninvoicing
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Bustransactioninvoicing   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Bustransactioninvoicingrow> rows = new ArrayList<Bustransactioninvoicingrow>();
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("StoreUnit_ID")
-  private String storeUnitID = null;
+  @SerializedName("storeunit_id")
+  private String storeunitId = null;
 
-  @SerializedName("QuantityToInvoice")
-  private Double quantityToInvoice = null;
+  @SerializedName("quantitytoinvoice")
+  private Double quantitytoinvoice = null;
 
-  @SerializedName("AmountToInvoice")
-  private Double amountToInvoice = null;
+  @SerializedName("amounttoinvoice")
+  private Double amounttoinvoice = null;
 
-  @SerializedName("QuantityCorrection")
-  private Double quantityCorrection = null;
+  @SerializedName("quantitycorrection")
+  private Double quantitycorrection = null;
 
-  @SerializedName("AmountCorrection")
-  private Double amountCorrection = null;
+  @SerializedName("amountcorrection")
+  private Double amountcorrection = null;
 
-  @SerializedName("BusObject_ID")
-  private String busObjectID = null;
+  @SerializedName("busobject_id")
+  private String busobjectId = null;
 
-  @SerializedName("Source_ID")
-  private String sourceID = null;
+  @SerializedName("source_id")
+  private String sourceId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Bustransactioninvoicing displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Bustransactioninvoicing id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Bustransactioninvoicing classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Bustransactioninvoicing objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Bustransactioninvoicing rows(List<Bustransactioninvoicingrow> rows) {
@@ -124,10 +160,10 @@ public class Bustransactioninvoicing   {
   }
 
    /**
-   * Řádky; kolekce BO Obchodní případ - řádek vyúčtování fakturace [nepersistentní položka]
+   * Řádky; kolekce bo obchodní případ - řádek vyúčtování fakturace [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Obchodní případ - řádek vyúčtování fakturace [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo obchodní případ - řádek vyúčtování fakturace [nepersistentní položka]")
   public List<Bustransactioninvoicingrow> getRows() {
     return rows;
   }
@@ -136,148 +172,148 @@ public class Bustransactioninvoicing   {
     this.rows = rows;
   }
 
-  public Bustransactioninvoicing storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Bustransactioninvoicing storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * skladová karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
   }
 
-  public Bustransactioninvoicing storeUnitID(String storeUnitID) {
-    this.storeUnitID = storeUnitID;
+  public Bustransactioninvoicing storeunitId(String storeunitId) {
+    this.storeunitId = storeunitId;
     return this;
   }
 
    /**
-   * Jed.; ID objektu Jednotka skladové karty [persistentní položka]
-   * @return storeUnitID
+   * jed.; id objektu jednotka skladové karty [persistentní položka]
+   * @return storeunitId
   **/
-  @ApiModelProperty(example = "null", value = "Jed.; ID objektu Jednotka skladové karty [persistentní položka]")
-  public String getStoreUnitID() {
-    return storeUnitID;
+  @ApiModelProperty(example = "null", value = "jed.; id objektu jednotka skladové karty [persistentní položka]")
+  public String getStoreunitId() {
+    return storeunitId;
   }
 
-  public void setStoreUnitID(String storeUnitID) {
-    this.storeUnitID = storeUnitID;
+  public void setStoreunitId(String storeunitId) {
+    this.storeunitId = storeunitId;
   }
 
-  public Bustransactioninvoicing quantityToInvoice(Double quantityToInvoice) {
-    this.quantityToInvoice = quantityToInvoice;
+  public Bustransactioninvoicing quantitytoinvoice(Double quantitytoinvoice) {
+    this.quantitytoinvoice = quantitytoinvoice;
     return this;
   }
 
    /**
-   * Množství k fak. [persistentní položka]
-   * @return quantityToInvoice
+   * množství k fak. [persistentní položka]
+   * @return quantitytoinvoice
   **/
-  @ApiModelProperty(example = "null", value = "Množství k fak. [persistentní položka]")
-  public Double getQuantityToInvoice() {
-    return quantityToInvoice;
+  @ApiModelProperty(example = "null", value = "množství k fak. [persistentní položka]")
+  public Double getQuantitytoinvoice() {
+    return quantitytoinvoice;
   }
 
-  public void setQuantityToInvoice(Double quantityToInvoice) {
-    this.quantityToInvoice = quantityToInvoice;
+  public void setQuantitytoinvoice(Double quantitytoinvoice) {
+    this.quantitytoinvoice = quantitytoinvoice;
   }
 
-  public Bustransactioninvoicing amountToInvoice(Double amountToInvoice) {
-    this.amountToInvoice = amountToInvoice;
+  public Bustransactioninvoicing amounttoinvoice(Double amounttoinvoice) {
+    this.amounttoinvoice = amounttoinvoice;
     return this;
   }
 
    /**
    * Částka k fak. [persistentní položka]
-   * @return amountToInvoice
+   * @return amounttoinvoice
   **/
   @ApiModelProperty(example = "null", value = "Částka k fak. [persistentní položka]")
-  public Double getAmountToInvoice() {
-    return amountToInvoice;
+  public Double getAmounttoinvoice() {
+    return amounttoinvoice;
   }
 
-  public void setAmountToInvoice(Double amountToInvoice) {
-    this.amountToInvoice = amountToInvoice;
+  public void setAmounttoinvoice(Double amounttoinvoice) {
+    this.amounttoinvoice = amounttoinvoice;
   }
 
-  public Bustransactioninvoicing quantityCorrection(Double quantityCorrection) {
-    this.quantityCorrection = quantityCorrection;
+  public Bustransactioninvoicing quantitycorrection(Double quantitycorrection) {
+    this.quantitycorrection = quantitycorrection;
     return this;
   }
 
    /**
-   * Množství-korekce [persistentní položka]
-   * @return quantityCorrection
+   * množství-korekce [persistentní položka]
+   * @return quantitycorrection
   **/
-  @ApiModelProperty(example = "null", value = "Množství-korekce [persistentní položka]")
-  public Double getQuantityCorrection() {
-    return quantityCorrection;
+  @ApiModelProperty(example = "null", value = "množství-korekce [persistentní položka]")
+  public Double getQuantitycorrection() {
+    return quantitycorrection;
   }
 
-  public void setQuantityCorrection(Double quantityCorrection) {
-    this.quantityCorrection = quantityCorrection;
+  public void setQuantitycorrection(Double quantitycorrection) {
+    this.quantitycorrection = quantitycorrection;
   }
 
-  public Bustransactioninvoicing amountCorrection(Double amountCorrection) {
-    this.amountCorrection = amountCorrection;
+  public Bustransactioninvoicing amountcorrection(Double amountcorrection) {
+    this.amountcorrection = amountcorrection;
     return this;
   }
 
    /**
    * Částka-korekce [persistentní položka]
-   * @return amountCorrection
+   * @return amountcorrection
   **/
   @ApiModelProperty(example = "null", value = "Částka-korekce [persistentní položka]")
-  public Double getAmountCorrection() {
-    return amountCorrection;
+  public Double getAmountcorrection() {
+    return amountcorrection;
   }
 
-  public void setAmountCorrection(Double amountCorrection) {
-    this.amountCorrection = amountCorrection;
+  public void setAmountcorrection(Double amountcorrection) {
+    this.amountcorrection = amountcorrection;
   }
 
-  public Bustransactioninvoicing busObjectID(String busObjectID) {
-    this.busObjectID = busObjectID;
+  public Bustransactioninvoicing busobjectId(String busobjectId) {
+    this.busobjectId = busobjectId;
     return this;
   }
 
    /**
-   * Obchodní případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busObjectID
+   * obchodní případ; id objektu obchodní případ [persistentní položka]
+   * @return busobjectId
   **/
-  @ApiModelProperty(example = "null", value = "Obchodní případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusObjectID() {
-    return busObjectID;
+  @ApiModelProperty(example = "null", value = "obchodní případ; id objektu obchodní případ [persistentní položka]")
+  public String getBusobjectId() {
+    return busobjectId;
   }
 
-  public void setBusObjectID(String busObjectID) {
-    this.busObjectID = busObjectID;
+  public void setBusobjectId(String busobjectId) {
+    this.busobjectId = busobjectId;
   }
 
-  public Bustransactioninvoicing sourceID(String sourceID) {
-    this.sourceID = sourceID;
+  public Bustransactioninvoicing sourceId(String sourceId) {
+    this.sourceId = sourceId;
     return this;
   }
 
    /**
-   * Zdroj; ID objektu Obchodní případ - zdroj [persistentní položka]
-   * @return sourceID
+   * zdroj; id objektu obchodní případ - zdroj [persistentní položka]
+   * @return sourceId
   **/
-  @ApiModelProperty(example = "null", value = "Zdroj; ID objektu Obchodní případ - zdroj [persistentní položka]")
-  public String getSourceID() {
-    return sourceID;
+  @ApiModelProperty(example = "null", value = "zdroj; id objektu obchodní případ - zdroj [persistentní položka]")
+  public String getSourceId() {
+    return sourceId;
   }
 
-  public void setSourceID(String sourceID) {
-    this.sourceID = sourceID;
+  public void setSourceId(String sourceId) {
+    this.sourceId = sourceId;
   }
 
 
@@ -290,24 +326,24 @@ public class Bustransactioninvoicing   {
       return false;
     }
     Bustransactioninvoicing bustransactioninvoicing = (Bustransactioninvoicing) o;
-    return Objects.equals(this.displayName, bustransactioninvoicing.displayName) &&
-        Objects.equals(this.ID, bustransactioninvoicing.ID) &&
-        Objects.equals(this.classID, bustransactioninvoicing.classID) &&
-        Objects.equals(this.objVersion, bustransactioninvoicing.objVersion) &&
+    return Objects.equals(this.displayname, bustransactioninvoicing.displayname) &&
+        Objects.equals(this.id, bustransactioninvoicing.id) &&
+        Objects.equals(this.classid, bustransactioninvoicing.classid) &&
+        Objects.equals(this.objversion, bustransactioninvoicing.objversion) &&
         Objects.equals(this.rows, bustransactioninvoicing.rows) &&
-        Objects.equals(this.storeCardID, bustransactioninvoicing.storeCardID) &&
-        Objects.equals(this.storeUnitID, bustransactioninvoicing.storeUnitID) &&
-        Objects.equals(this.quantityToInvoice, bustransactioninvoicing.quantityToInvoice) &&
-        Objects.equals(this.amountToInvoice, bustransactioninvoicing.amountToInvoice) &&
-        Objects.equals(this.quantityCorrection, bustransactioninvoicing.quantityCorrection) &&
-        Objects.equals(this.amountCorrection, bustransactioninvoicing.amountCorrection) &&
-        Objects.equals(this.busObjectID, bustransactioninvoicing.busObjectID) &&
-        Objects.equals(this.sourceID, bustransactioninvoicing.sourceID);
+        Objects.equals(this.storecardId, bustransactioninvoicing.storecardId) &&
+        Objects.equals(this.storeunitId, bustransactioninvoicing.storeunitId) &&
+        Objects.equals(this.quantitytoinvoice, bustransactioninvoicing.quantitytoinvoice) &&
+        Objects.equals(this.amounttoinvoice, bustransactioninvoicing.amounttoinvoice) &&
+        Objects.equals(this.quantitycorrection, bustransactioninvoicing.quantitycorrection) &&
+        Objects.equals(this.amountcorrection, bustransactioninvoicing.amountcorrection) &&
+        Objects.equals(this.busobjectId, bustransactioninvoicing.busobjectId) &&
+        Objects.equals(this.sourceId, bustransactioninvoicing.sourceId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, storeCardID, storeUnitID, quantityToInvoice, amountToInvoice, quantityCorrection, amountCorrection, busObjectID, sourceID);
+    return Objects.hash(displayname, id, classid, objversion, rows, storecardId, storeunitId, quantitytoinvoice, amounttoinvoice, quantitycorrection, amountcorrection, busobjectId, sourceId);
   }
 
   @Override
@@ -315,19 +351,19 @@ public class Bustransactioninvoicing   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Bustransactioninvoicing {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    storeUnitID: ").append(toIndentedString(storeUnitID)).append("\n");
-    sb.append("    quantityToInvoice: ").append(toIndentedString(quantityToInvoice)).append("\n");
-    sb.append("    amountToInvoice: ").append(toIndentedString(amountToInvoice)).append("\n");
-    sb.append("    quantityCorrection: ").append(toIndentedString(quantityCorrection)).append("\n");
-    sb.append("    amountCorrection: ").append(toIndentedString(amountCorrection)).append("\n");
-    sb.append("    busObjectID: ").append(toIndentedString(busObjectID)).append("\n");
-    sb.append("    sourceID: ").append(toIndentedString(sourceID)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    storeunitId: ").append(toIndentedString(storeunitId)).append("\n");
+    sb.append("    quantitytoinvoice: ").append(toIndentedString(quantitytoinvoice)).append("\n");
+    sb.append("    amounttoinvoice: ").append(toIndentedString(amounttoinvoice)).append("\n");
+    sb.append("    quantitycorrection: ").append(toIndentedString(quantitycorrection)).append("\n");
+    sb.append("    amountcorrection: ").append(toIndentedString(amountcorrection)).append("\n");
+    sb.append("    busobjectId: ").append(toIndentedString(busobjectId)).append("\n");
+    sb.append("    sourceId: ").append(toIndentedString(sourceId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

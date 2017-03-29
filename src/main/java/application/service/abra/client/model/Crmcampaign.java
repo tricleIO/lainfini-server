@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,129 +37,165 @@ import java.util.Objects;
 /**
  * Crmcampaign
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Crmcampaign   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Crmcampaignaudience> rows = new ArrayList<Crmcampaignaudience>();
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("CampaignName")
-  private String campaignName = null;
+  @SerializedName("campaignname")
+  private String campaignname = null;
 
-  @SerializedName("CampaignType_ID")
-  private String campaignTypeID = null;
+  @SerializedName("campaigntype_id")
+  private String campaigntypeId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("CampaignState")
-  private Integer campaignState = null;
+  @SerializedName("campaignstate")
+  private Integer campaignstate = null;
 
-  @SerializedName("Budget")
+  @SerializedName("budget")
   private Double budget = null;
 
-  @SerializedName("RealExpenses")
-  private Double realExpenses = null;
+  @SerializedName("realexpenses")
+  private Double realexpenses = null;
 
-  @SerializedName("ScheduledStartDate$DATE")
-  private DateTime scheduledStartDateDATE = null;
+  @SerializedName("scheduledstartdate$date")
+  private DateTime scheduledstartdatedate = null;
 
-  @SerializedName("ScheduledEndDate$DATE")
-  private DateTime scheduledEndDateDATE = null;
+  @SerializedName("scheduledenddate$date")
+  private DateTime scheduledenddatedate = null;
 
-  @SerializedName("RealStartDate$DATE")
-  private DateTime realStartDateDATE = null;
+  @SerializedName("realstartdate$date")
+  private DateTime realstartdatedate = null;
 
-  @SerializedName("RealEndDate$DATE")
-  private DateTime realEndDateDATE = null;
+  @SerializedName("realenddate$date")
+  private DateTime realenddatedate = null;
 
-  @SerializedName("CampaignErrors")
-  private String campaignErrors = null;
+  @SerializedName("campaignerrors")
+  private String campaignerrors = null;
 
-  @SerializedName("CampaignCheckState")
-  private Integer campaignCheckState = null;
+  @SerializedName("campaigncheckstate")
+  private Integer campaigncheckstate = null;
 
-  @SerializedName("CampaignCheckStateText")
-  private String campaignCheckStateText = null;
+  @SerializedName("campaigncheckstatetext")
+  private String campaigncheckstatetext = null;
+
+  public Crmcampaign displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Crmcampaign id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Crmcampaign classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Crmcampaign objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Crmcampaign rows(List<Crmcampaignaudience> rows) {
@@ -173,10 +209,10 @@ public class Crmcampaign   {
   }
 
    /**
-   * Adresáti kampaní; kolekce BO Adresát kampaně [nepersistentní položka]
+   * adresáti kampaní; kolekce bo adresát kampaně [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Adresáti kampaní; kolekce BO Adresát kampaně [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "adresáti kampaní; kolekce bo adresát kampaně [nepersistentní položka]")
   public List<Crmcampaignaudience> getRows() {
     return rows;
   }
@@ -185,274 +221,274 @@ public class Crmcampaign   {
     this.rows = rows;
   }
 
-  public Crmcampaign docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Crmcampaign docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Crmcampaign periodID(String periodID) {
-    this.periodID = periodID;
+  public Crmcampaign periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Crmcampaign ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Crmcampaign ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Crmcampaign docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Crmcampaign docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Crmcampaign createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Crmcampaign createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Crmcampaign correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Crmcampaign correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Crmcampaign newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Crmcampaign newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Crmcampaign newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Crmcampaign newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Crmcampaign campaignName(String campaignName) {
-    this.campaignName = campaignName;
+  public Crmcampaign campaignname(String campaignname) {
+    this.campaignname = campaignname;
     return this;
   }
 
    /**
-   * Název kampaně [persistentní položka]
-   * @return campaignName
+   * název kampaně [persistentní položka]
+   * @return campaignname
   **/
-  @ApiModelProperty(example = "null", value = "Název kampaně [persistentní položka]")
-  public String getCampaignName() {
-    return campaignName;
+  @ApiModelProperty(example = "null", value = "název kampaně [persistentní položka]")
+  public String getCampaignname() {
+    return campaignname;
   }
 
-  public void setCampaignName(String campaignName) {
-    this.campaignName = campaignName;
+  public void setCampaignname(String campaignname) {
+    this.campaignname = campaignname;
   }
 
-  public Crmcampaign campaignTypeID(String campaignTypeID) {
-    this.campaignTypeID = campaignTypeID;
+  public Crmcampaign campaigntypeId(String campaigntypeId) {
+    this.campaigntypeId = campaigntypeId;
     return this;
   }
 
    /**
-   * Typ kampaně; ID objektu Typ kampaně [persistentní položka]
-   * @return campaignTypeID
+   * typ kampaně; id objektu typ kampaně [persistentní položka]
+   * @return campaigntypeId
   **/
-  @ApiModelProperty(example = "null", value = "Typ kampaně; ID objektu Typ kampaně [persistentní položka]")
-  public String getCampaignTypeID() {
-    return campaignTypeID;
+  @ApiModelProperty(example = "null", value = "typ kampaně; id objektu typ kampaně [persistentní položka]")
+  public String getCampaigntypeId() {
+    return campaigntypeId;
   }
 
-  public void setCampaignTypeID(String campaignTypeID) {
-    this.campaignTypeID = campaignTypeID;
+  public void setCampaigntypeId(String campaigntypeId) {
+    this.campaigntypeId = campaigntypeId;
   }
 
-  public Crmcampaign divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Crmcampaign divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Crmcampaign busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Crmcampaign busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Crmcampaign busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Crmcampaign bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obch. případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obch. případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obch. případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obch. případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Crmcampaign busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Crmcampaign busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Crmcampaign campaignState(Integer campaignState) {
-    this.campaignState = campaignState;
+  public Crmcampaign campaignstate(Integer campaignstate) {
+    this.campaignstate = campaignstate;
     return this;
   }
 
    /**
-   * Stav [persistentní položka]
-   * @return campaignState
+   * stav [persistentní položka]
+   * @return campaignstate
   **/
-  @ApiModelProperty(example = "null", value = "Stav [persistentní položka]")
-  public Integer getCampaignState() {
-    return campaignState;
+  @ApiModelProperty(example = "null", value = "stav [persistentní položka]")
+  public Integer getCampaignstate() {
+    return campaignstate;
   }
 
-  public void setCampaignState(Integer campaignState) {
-    this.campaignState = campaignState;
+  public void setCampaignstate(Integer campaignstate) {
+    this.campaignstate = campaignstate;
   }
 
   public Crmcampaign budget(Double budget) {
@@ -461,10 +497,10 @@ public class Crmcampaign   {
   }
 
    /**
-   * Rozpočet [persistentní položka]
+   * rozpočet [persistentní položka]
    * @return budget
   **/
-  @ApiModelProperty(example = "null", value = "Rozpočet [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "rozpočet [persistentní položka]")
   public Double getBudget() {
     return budget;
   }
@@ -473,148 +509,148 @@ public class Crmcampaign   {
     this.budget = budget;
   }
 
-  public Crmcampaign realExpenses(Double realExpenses) {
-    this.realExpenses = realExpenses;
+  public Crmcampaign realexpenses(Double realexpenses) {
+    this.realexpenses = realexpenses;
     return this;
   }
 
    /**
-   * Skutečné výdaje [persistentní položka]
-   * @return realExpenses
+   * skutečné výdaje [persistentní položka]
+   * @return realexpenses
   **/
-  @ApiModelProperty(example = "null", value = "Skutečné výdaje [persistentní položka]")
-  public Double getRealExpenses() {
-    return realExpenses;
+  @ApiModelProperty(example = "null", value = "skutečné výdaje [persistentní položka]")
+  public Double getRealexpenses() {
+    return realexpenses;
   }
 
-  public void setRealExpenses(Double realExpenses) {
-    this.realExpenses = realExpenses;
+  public void setRealexpenses(Double realexpenses) {
+    this.realexpenses = realexpenses;
   }
 
-  public Crmcampaign scheduledStartDateDATE(DateTime scheduledStartDateDATE) {
-    this.scheduledStartDateDATE = scheduledStartDateDATE;
+  public Crmcampaign scheduledstartdatedate(DateTime scheduledstartdatedate) {
+    this.scheduledstartdatedate = scheduledstartdatedate;
     return this;
   }
 
    /**
-   * Plánovaný čas zahájení [persistentní položka]
-   * @return scheduledStartDateDATE
+   * plánovaný čas zahájení [persistentní položka]
+   * @return scheduledstartdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Plánovaný čas zahájení [persistentní položka]")
-  public DateTime getScheduledStartDateDATE() {
-    return scheduledStartDateDATE;
+  @ApiModelProperty(example = "null", value = "plánovaný čas zahájení [persistentní položka]")
+  public DateTime getScheduledstartdatedate() {
+    return scheduledstartdatedate;
   }
 
-  public void setScheduledStartDateDATE(DateTime scheduledStartDateDATE) {
-    this.scheduledStartDateDATE = scheduledStartDateDATE;
+  public void setScheduledstartdatedate(DateTime scheduledstartdatedate) {
+    this.scheduledstartdatedate = scheduledstartdatedate;
   }
 
-  public Crmcampaign scheduledEndDateDATE(DateTime scheduledEndDateDATE) {
-    this.scheduledEndDateDATE = scheduledEndDateDATE;
+  public Crmcampaign scheduledenddatedate(DateTime scheduledenddatedate) {
+    this.scheduledenddatedate = scheduledenddatedate;
     return this;
   }
 
    /**
-   * Plánovaný čas dokončení [persistentní položka]
-   * @return scheduledEndDateDATE
+   * plánovaný čas dokončení [persistentní položka]
+   * @return scheduledenddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Plánovaný čas dokončení [persistentní položka]")
-  public DateTime getScheduledEndDateDATE() {
-    return scheduledEndDateDATE;
+  @ApiModelProperty(example = "null", value = "plánovaný čas dokončení [persistentní položka]")
+  public DateTime getScheduledenddatedate() {
+    return scheduledenddatedate;
   }
 
-  public void setScheduledEndDateDATE(DateTime scheduledEndDateDATE) {
-    this.scheduledEndDateDATE = scheduledEndDateDATE;
+  public void setScheduledenddatedate(DateTime scheduledenddatedate) {
+    this.scheduledenddatedate = scheduledenddatedate;
   }
 
-  public Crmcampaign realStartDateDATE(DateTime realStartDateDATE) {
-    this.realStartDateDATE = realStartDateDATE;
+  public Crmcampaign realstartdatedate(DateTime realstartdatedate) {
+    this.realstartdatedate = realstartdatedate;
     return this;
   }
 
    /**
-   * Skutečný čas zahájení [persistentní položka]
-   * @return realStartDateDATE
+   * skutečný čas zahájení [persistentní položka]
+   * @return realstartdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Skutečný čas zahájení [persistentní položka]")
-  public DateTime getRealStartDateDATE() {
-    return realStartDateDATE;
+  @ApiModelProperty(example = "null", value = "skutečný čas zahájení [persistentní položka]")
+  public DateTime getRealstartdatedate() {
+    return realstartdatedate;
   }
 
-  public void setRealStartDateDATE(DateTime realStartDateDATE) {
-    this.realStartDateDATE = realStartDateDATE;
+  public void setRealstartdatedate(DateTime realstartdatedate) {
+    this.realstartdatedate = realstartdatedate;
   }
 
-  public Crmcampaign realEndDateDATE(DateTime realEndDateDATE) {
-    this.realEndDateDATE = realEndDateDATE;
+  public Crmcampaign realenddatedate(DateTime realenddatedate) {
+    this.realenddatedate = realenddatedate;
     return this;
   }
 
    /**
-   * Skutečný čas dokončení [persistentní položka]
-   * @return realEndDateDATE
+   * skutečný čas dokončení [persistentní položka]
+   * @return realenddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Skutečný čas dokončení [persistentní položka]")
-  public DateTime getRealEndDateDATE() {
-    return realEndDateDATE;
+  @ApiModelProperty(example = "null", value = "skutečný čas dokončení [persistentní položka]")
+  public DateTime getRealenddatedate() {
+    return realenddatedate;
   }
 
-  public void setRealEndDateDATE(DateTime realEndDateDATE) {
-    this.realEndDateDATE = realEndDateDATE;
+  public void setRealenddatedate(DateTime realenddatedate) {
+    this.realenddatedate = realenddatedate;
   }
 
-  public Crmcampaign campaignErrors(String campaignErrors) {
-    this.campaignErrors = campaignErrors;
+  public Crmcampaign campaignerrors(String campaignerrors) {
+    this.campaignerrors = campaignerrors;
     return this;
   }
 
    /**
-   * Chyby [persistentní položka]
-   * @return campaignErrors
+   * chyby [persistentní položka]
+   * @return campaignerrors
   **/
-  @ApiModelProperty(example = "null", value = "Chyby [persistentní položka]")
-  public String getCampaignErrors() {
-    return campaignErrors;
+  @ApiModelProperty(example = "null", value = "chyby [persistentní položka]")
+  public String getCampaignerrors() {
+    return campaignerrors;
   }
 
-  public void setCampaignErrors(String campaignErrors) {
-    this.campaignErrors = campaignErrors;
+  public void setCampaignerrors(String campaignerrors) {
+    this.campaignerrors = campaignerrors;
   }
 
-  public Crmcampaign campaignCheckState(Integer campaignCheckState) {
-    this.campaignCheckState = campaignCheckState;
+  public Crmcampaign campaigncheckstate(Integer campaigncheckstate) {
+    this.campaigncheckstate = campaigncheckstate;
     return this;
   }
 
    /**
-   * Stav kontroly [persistentní položka]
-   * @return campaignCheckState
+   * stav kontroly [persistentní položka]
+   * @return campaigncheckstate
   **/
-  @ApiModelProperty(example = "null", value = "Stav kontroly [persistentní položka]")
-  public Integer getCampaignCheckState() {
-    return campaignCheckState;
+  @ApiModelProperty(example = "null", value = "stav kontroly [persistentní položka]")
+  public Integer getCampaigncheckstate() {
+    return campaigncheckstate;
   }
 
-  public void setCampaignCheckState(Integer campaignCheckState) {
-    this.campaignCheckState = campaignCheckState;
+  public void setCampaigncheckstate(Integer campaigncheckstate) {
+    this.campaigncheckstate = campaigncheckstate;
   }
 
-  public Crmcampaign campaignCheckStateText(String campaignCheckStateText) {
-    this.campaignCheckStateText = campaignCheckStateText;
+  public Crmcampaign campaigncheckstatetext(String campaigncheckstatetext) {
+    this.campaigncheckstatetext = campaigncheckstatetext;
     return this;
   }
 
    /**
-   * Stav kontroly
-   * @return campaignCheckStateText
+   * stav kontroly
+   * @return campaigncheckstatetext
   **/
-  @ApiModelProperty(example = "null", value = "Stav kontroly")
-  public String getCampaignCheckStateText() {
-    return campaignCheckStateText;
+  @ApiModelProperty(example = "null", value = "stav kontroly")
+  public String getCampaigncheckstatetext() {
+    return campaigncheckstatetext;
   }
 
-  public void setCampaignCheckStateText(String campaignCheckStateText) {
-    this.campaignCheckStateText = campaignCheckStateText;
+  public void setCampaigncheckstatetext(String campaigncheckstatetext) {
+    this.campaigncheckstatetext = campaigncheckstatetext;
   }
 
 
@@ -627,40 +663,40 @@ public class Crmcampaign   {
       return false;
     }
     Crmcampaign crmcampaign = (Crmcampaign) o;
-    return Objects.equals(this.displayName, crmcampaign.displayName) &&
-        Objects.equals(this.ID, crmcampaign.ID) &&
-        Objects.equals(this.classID, crmcampaign.classID) &&
-        Objects.equals(this.objVersion, crmcampaign.objVersion) &&
+    return Objects.equals(this.displayname, crmcampaign.displayname) &&
+        Objects.equals(this.id, crmcampaign.id) &&
+        Objects.equals(this.classid, crmcampaign.classid) &&
+        Objects.equals(this.objversion, crmcampaign.objversion) &&
         Objects.equals(this.rows, crmcampaign.rows) &&
-        Objects.equals(this.docQueueID, crmcampaign.docQueueID) &&
-        Objects.equals(this.periodID, crmcampaign.periodID) &&
-        Objects.equals(this.ordNumber, crmcampaign.ordNumber) &&
-        Objects.equals(this.docDateDATE, crmcampaign.docDateDATE) &&
-        Objects.equals(this.createdByID, crmcampaign.createdByID) &&
-        Objects.equals(this.correctedByID, crmcampaign.correctedByID) &&
-        Objects.equals(this.newRelatedType, crmcampaign.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, crmcampaign.newRelatedDocumentID) &&
-        Objects.equals(this.campaignName, crmcampaign.campaignName) &&
-        Objects.equals(this.campaignTypeID, crmcampaign.campaignTypeID) &&
-        Objects.equals(this.divisionID, crmcampaign.divisionID) &&
-        Objects.equals(this.busOrderID, crmcampaign.busOrderID) &&
-        Objects.equals(this.busTransactionID, crmcampaign.busTransactionID) &&
-        Objects.equals(this.busProjectID, crmcampaign.busProjectID) &&
-        Objects.equals(this.campaignState, crmcampaign.campaignState) &&
+        Objects.equals(this.docqueueId, crmcampaign.docqueueId) &&
+        Objects.equals(this.periodId, crmcampaign.periodId) &&
+        Objects.equals(this.ordnumber, crmcampaign.ordnumber) &&
+        Objects.equals(this.docdatedate, crmcampaign.docdatedate) &&
+        Objects.equals(this.createdbyId, crmcampaign.createdbyId) &&
+        Objects.equals(this.correctedbyId, crmcampaign.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, crmcampaign.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, crmcampaign.newrelateddocumentId) &&
+        Objects.equals(this.campaignname, crmcampaign.campaignname) &&
+        Objects.equals(this.campaigntypeId, crmcampaign.campaigntypeId) &&
+        Objects.equals(this.divisionId, crmcampaign.divisionId) &&
+        Objects.equals(this.busorderId, crmcampaign.busorderId) &&
+        Objects.equals(this.bustransactionId, crmcampaign.bustransactionId) &&
+        Objects.equals(this.busprojectId, crmcampaign.busprojectId) &&
+        Objects.equals(this.campaignstate, crmcampaign.campaignstate) &&
         Objects.equals(this.budget, crmcampaign.budget) &&
-        Objects.equals(this.realExpenses, crmcampaign.realExpenses) &&
-        Objects.equals(this.scheduledStartDateDATE, crmcampaign.scheduledStartDateDATE) &&
-        Objects.equals(this.scheduledEndDateDATE, crmcampaign.scheduledEndDateDATE) &&
-        Objects.equals(this.realStartDateDATE, crmcampaign.realStartDateDATE) &&
-        Objects.equals(this.realEndDateDATE, crmcampaign.realEndDateDATE) &&
-        Objects.equals(this.campaignErrors, crmcampaign.campaignErrors) &&
-        Objects.equals(this.campaignCheckState, crmcampaign.campaignCheckState) &&
-        Objects.equals(this.campaignCheckStateText, crmcampaign.campaignCheckStateText);
+        Objects.equals(this.realexpenses, crmcampaign.realexpenses) &&
+        Objects.equals(this.scheduledstartdatedate, crmcampaign.scheduledstartdatedate) &&
+        Objects.equals(this.scheduledenddatedate, crmcampaign.scheduledenddatedate) &&
+        Objects.equals(this.realstartdatedate, crmcampaign.realstartdatedate) &&
+        Objects.equals(this.realenddatedate, crmcampaign.realenddatedate) &&
+        Objects.equals(this.campaignerrors, crmcampaign.campaignerrors) &&
+        Objects.equals(this.campaigncheckstate, crmcampaign.campaigncheckstate) &&
+        Objects.equals(this.campaigncheckstatetext, crmcampaign.campaigncheckstatetext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, campaignName, campaignTypeID, divisionID, busOrderID, busTransactionID, busProjectID, campaignState, budget, realExpenses, scheduledStartDateDATE, scheduledEndDateDATE, realStartDateDATE, realEndDateDATE, campaignErrors, campaignCheckState, campaignCheckStateText);
+    return Objects.hash(displayname, id, classid, objversion, rows, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, campaignname, campaigntypeId, divisionId, busorderId, bustransactionId, busprojectId, campaignstate, budget, realexpenses, scheduledstartdatedate, scheduledenddatedate, realstartdatedate, realenddatedate, campaignerrors, campaigncheckstate, campaigncheckstatetext);
   }
 
   @Override
@@ -668,35 +704,35 @@ public class Crmcampaign   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Crmcampaign {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    campaignName: ").append(toIndentedString(campaignName)).append("\n");
-    sb.append("    campaignTypeID: ").append(toIndentedString(campaignTypeID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    campaignState: ").append(toIndentedString(campaignState)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    campaignname: ").append(toIndentedString(campaignname)).append("\n");
+    sb.append("    campaigntypeId: ").append(toIndentedString(campaigntypeId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    campaignstate: ").append(toIndentedString(campaignstate)).append("\n");
     sb.append("    budget: ").append(toIndentedString(budget)).append("\n");
-    sb.append("    realExpenses: ").append(toIndentedString(realExpenses)).append("\n");
-    sb.append("    scheduledStartDateDATE: ").append(toIndentedString(scheduledStartDateDATE)).append("\n");
-    sb.append("    scheduledEndDateDATE: ").append(toIndentedString(scheduledEndDateDATE)).append("\n");
-    sb.append("    realStartDateDATE: ").append(toIndentedString(realStartDateDATE)).append("\n");
-    sb.append("    realEndDateDATE: ").append(toIndentedString(realEndDateDATE)).append("\n");
-    sb.append("    campaignErrors: ").append(toIndentedString(campaignErrors)).append("\n");
-    sb.append("    campaignCheckState: ").append(toIndentedString(campaignCheckState)).append("\n");
-    sb.append("    campaignCheckStateText: ").append(toIndentedString(campaignCheckStateText)).append("\n");
+    sb.append("    realexpenses: ").append(toIndentedString(realexpenses)).append("\n");
+    sb.append("    scheduledstartdatedate: ").append(toIndentedString(scheduledstartdatedate)).append("\n");
+    sb.append("    scheduledenddatedate: ").append(toIndentedString(scheduledenddatedate)).append("\n");
+    sb.append("    realstartdatedate: ").append(toIndentedString(realstartdatedate)).append("\n");
+    sb.append("    realenddatedate: ").append(toIndentedString(realenddatedate)).append("\n");
+    sb.append("    campaignerrors: ").append(toIndentedString(campaignerrors)).append("\n");
+    sb.append("    campaigncheckstate: ").append(toIndentedString(campaigncheckstate)).append("\n");
+    sb.append("    campaigncheckstatetext: ").append(toIndentedString(campaigncheckstatetext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

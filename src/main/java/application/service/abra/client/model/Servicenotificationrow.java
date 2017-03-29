@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,108 +34,153 @@ import java.util.Objects;
 /**
  * Servicenotificationrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Servicenotificationrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("EmailAddress")
-  private String emailAddress = null;
+  @SerializedName("emailaddress")
+  private String emailaddress = null;
 
-  @SerializedName("ServiceNotificationText_ID")
-  private String serviceNotificationTextID = null;
+  @SerializedName("servicenotificationtext_id")
+  private String servicenotificationtextId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Notifikace stavu serv.listu [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Notifikace stavu serv.listu [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Servicenotificationrow emailAddress(String emailAddress) {
-    this.emailAddress = emailAddress;
+  public Servicenotificationrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * E-mailová adresa [persistentní položka]
-   * @return emailAddress
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "E-mailová adresa [persistentní položka]")
-  public String getEmailAddress() {
-    return emailAddress;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setEmailAddress(String emailAddress) {
-    this.emailAddress = emailAddress;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Servicenotificationrow serviceNotificationTextID(String serviceNotificationTextID) {
-    this.serviceNotificationTextID = serviceNotificationTextID;
+  public Servicenotificationrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Text notifikace; ID objektu Text notifikace stavu serv.listu [persistentní položka]
-   * @return serviceNotificationTextID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Text notifikace; ID objektu Text notifikace stavu serv.listu [persistentní položka]")
-  public String getServiceNotificationTextID() {
-    return serviceNotificationTextID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setServiceNotificationTextID(String serviceNotificationTextID) {
-    this.serviceNotificationTextID = serviceNotificationTextID;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Servicenotificationrow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Servicenotificationrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Servicenotificationrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu notifikace stavu serv.listu [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu notifikace stavu serv.listu [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Servicenotificationrow emailaddress(String emailaddress) {
+    this.emailaddress = emailaddress;
+    return this;
+  }
+
+   /**
+   * e-mailová adresa [persistentní položka]
+   * @return emailaddress
+  **/
+  @ApiModelProperty(example = "null", value = "e-mailová adresa [persistentní položka]")
+  public String getEmailaddress() {
+    return emailaddress;
+  }
+
+  public void setEmailaddress(String emailaddress) {
+    this.emailaddress = emailaddress;
+  }
+
+  public Servicenotificationrow servicenotificationtextId(String servicenotificationtextId) {
+    this.servicenotificationtextId = servicenotificationtextId;
+    return this;
+  }
+
+   /**
+   * text notifikace; id objektu text notifikace stavu serv.listu [persistentní položka]
+   * @return servicenotificationtextId
+  **/
+  @ApiModelProperty(example = "null", value = "text notifikace; id objektu text notifikace stavu serv.listu [persistentní položka]")
+  public String getServicenotificationtextId() {
+    return servicenotificationtextId;
+  }
+
+  public void setServicenotificationtextId(String servicenotificationtextId) {
+    this.servicenotificationtextId = servicenotificationtextId;
   }
 
 
@@ -148,18 +193,18 @@ public class Servicenotificationrow   {
       return false;
     }
     Servicenotificationrow servicenotificationrow = (Servicenotificationrow) o;
-    return Objects.equals(this.displayName, servicenotificationrow.displayName) &&
-        Objects.equals(this.ID, servicenotificationrow.ID) &&
-        Objects.equals(this.classID, servicenotificationrow.classID) &&
-        Objects.equals(this.objVersion, servicenotificationrow.objVersion) &&
-        Objects.equals(this.parentID, servicenotificationrow.parentID) &&
-        Objects.equals(this.emailAddress, servicenotificationrow.emailAddress) &&
-        Objects.equals(this.serviceNotificationTextID, servicenotificationrow.serviceNotificationTextID);
+    return Objects.equals(this.displayname, servicenotificationrow.displayname) &&
+        Objects.equals(this.id, servicenotificationrow.id) &&
+        Objects.equals(this.classid, servicenotificationrow.classid) &&
+        Objects.equals(this.objversion, servicenotificationrow.objversion) &&
+        Objects.equals(this.parentId, servicenotificationrow.parentId) &&
+        Objects.equals(this.emailaddress, servicenotificationrow.emailaddress) &&
+        Objects.equals(this.servicenotificationtextId, servicenotificationrow.servicenotificationtextId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, emailAddress, serviceNotificationTextID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, emailaddress, servicenotificationtextId);
   }
 
   @Override
@@ -167,13 +212,13 @@ public class Servicenotificationrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Servicenotificationrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    emailAddress: ").append(toIndentedString(emailAddress)).append("\n");
-    sb.append("    serviceNotificationTextID: ").append(toIndentedString(serviceNotificationTextID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    emailaddress: ").append(toIndentedString(emailaddress)).append("\n");
+    sb.append("    servicenotificationtextId: ").append(toIndentedString(servicenotificationtextId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

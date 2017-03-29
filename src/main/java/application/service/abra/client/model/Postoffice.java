@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,72 +34,108 @@ import java.util.Objects;
 /**
  * Postoffice
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Postoffice   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("PostCode")
-  private String postCode = null;
+  @SerializedName("postcode")
+  private String postcode = null;
 
-  @SerializedName("PostName")
-  private String postName = null;
+  @SerializedName("postname")
+  private String postname = null;
 
-  @SerializedName("RegionCode")
-  private String regionCode = null;
+  @SerializedName("regioncode")
+  private String regioncode = null;
 
-  @SerializedName("RegionName")
-  private String regionName = null;
+  @SerializedName("regionname")
+  private String regionname = null;
 
-  @SerializedName("District_ID")
-  private String districtID = null;
+  @SerializedName("district_id")
+  private String districtId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Postoffice displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Postoffice id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Postoffice classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Postoffice objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Postoffice hidden(Boolean hidden) {
@@ -108,10 +144,10 @@ public class Postoffice   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -120,94 +156,94 @@ public class Postoffice   {
     this.hidden = hidden;
   }
 
-  public Postoffice postCode(String postCode) {
-    this.postCode = postCode;
+  public Postoffice postcode(String postcode) {
+    this.postcode = postcode;
     return this;
   }
 
    /**
-   * PSČ [persistentní položka]
-   * @return postCode
+   * psČ [persistentní položka]
+   * @return postcode
   **/
-  @ApiModelProperty(example = "null", value = "PSČ [persistentní položka]")
-  public String getPostCode() {
-    return postCode;
+  @ApiModelProperty(example = "null", value = "psČ [persistentní položka]")
+  public String getPostcode() {
+    return postcode;
   }
 
-  public void setPostCode(String postCode) {
-    this.postCode = postCode;
+  public void setPostcode(String postcode) {
+    this.postcode = postcode;
   }
 
-  public Postoffice postName(String postName) {
-    this.postName = postName;
+  public Postoffice postname(String postname) {
+    this.postname = postname;
     return this;
   }
 
    /**
-   * Název pošty [persistentní položka]
-   * @return postName
+   * název pošty [persistentní položka]
+   * @return postname
   **/
-  @ApiModelProperty(example = "null", value = "Název pošty [persistentní položka]")
-  public String getPostName() {
-    return postName;
+  @ApiModelProperty(example = "null", value = "název pošty [persistentní položka]")
+  public String getPostname() {
+    return postname;
   }
 
-  public void setPostName(String postName) {
-    this.postName = postName;
+  public void setPostname(String postname) {
+    this.postname = postname;
   }
 
-  public Postoffice regionCode(String regionCode) {
-    this.regionCode = regionCode;
+  public Postoffice regioncode(String regioncode) {
+    this.regioncode = regioncode;
     return this;
   }
 
    /**
-   * Okres [persistentní položka]
-   * @return regionCode
+   * okres [persistentní položka]
+   * @return regioncode
   **/
-  @ApiModelProperty(example = "null", value = "Okres [persistentní položka]")
-  public String getRegionCode() {
-    return regionCode;
+  @ApiModelProperty(example = "null", value = "okres [persistentní položka]")
+  public String getRegioncode() {
+    return regioncode;
   }
 
-  public void setRegionCode(String regionCode) {
-    this.regionCode = regionCode;
+  public void setRegioncode(String regioncode) {
+    this.regioncode = regioncode;
   }
 
-  public Postoffice regionName(String regionName) {
-    this.regionName = regionName;
+  public Postoffice regionname(String regionname) {
+    this.regionname = regionname;
     return this;
   }
 
    /**
-   * Název okresu [persistentní položka]
-   * @return regionName
+   * název okresu [persistentní položka]
+   * @return regionname
   **/
-  @ApiModelProperty(example = "null", value = "Název okresu [persistentní položka]")
-  public String getRegionName() {
-    return regionName;
+  @ApiModelProperty(example = "null", value = "název okresu [persistentní položka]")
+  public String getRegionname() {
+    return regionname;
   }
 
-  public void setRegionName(String regionName) {
-    this.regionName = regionName;
+  public void setRegionname(String regionname) {
+    this.regionname = regionname;
   }
 
-  public Postoffice districtID(String districtID) {
-    this.districtID = districtID;
+  public Postoffice districtId(String districtId) {
+    this.districtId = districtId;
     return this;
   }
 
    /**
-   * Okres; ID objektu Okres [persistentní položka]
-   * @return districtID
+   * okres; id objektu okres [persistentní položka]
+   * @return districtId
   **/
-  @ApiModelProperty(example = "null", value = "Okres; ID objektu Okres [persistentní položka]")
-  public String getDistrictID() {
-    return districtID;
+  @ApiModelProperty(example = "null", value = "okres; id objektu okres [persistentní položka]")
+  public String getDistrictId() {
+    return districtId;
   }
 
-  public void setDistrictID(String districtID) {
-    this.districtID = districtID;
+  public void setDistrictId(String districtId) {
+    this.districtId = districtId;
   }
 
 
@@ -220,21 +256,21 @@ public class Postoffice   {
       return false;
     }
     Postoffice postoffice = (Postoffice) o;
-    return Objects.equals(this.displayName, postoffice.displayName) &&
-        Objects.equals(this.ID, postoffice.ID) &&
-        Objects.equals(this.classID, postoffice.classID) &&
-        Objects.equals(this.objVersion, postoffice.objVersion) &&
+    return Objects.equals(this.displayname, postoffice.displayname) &&
+        Objects.equals(this.id, postoffice.id) &&
+        Objects.equals(this.classid, postoffice.classid) &&
+        Objects.equals(this.objversion, postoffice.objversion) &&
         Objects.equals(this.hidden, postoffice.hidden) &&
-        Objects.equals(this.postCode, postoffice.postCode) &&
-        Objects.equals(this.postName, postoffice.postName) &&
-        Objects.equals(this.regionCode, postoffice.regionCode) &&
-        Objects.equals(this.regionName, postoffice.regionName) &&
-        Objects.equals(this.districtID, postoffice.districtID);
+        Objects.equals(this.postcode, postoffice.postcode) &&
+        Objects.equals(this.postname, postoffice.postname) &&
+        Objects.equals(this.regioncode, postoffice.regioncode) &&
+        Objects.equals(this.regionname, postoffice.regionname) &&
+        Objects.equals(this.districtId, postoffice.districtId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, postCode, postName, regionCode, regionName, districtID);
+    return Objects.hash(displayname, id, classid, objversion, hidden, postcode, postname, regioncode, regionname, districtId);
   }
 
   @Override
@@ -242,16 +278,16 @@ public class Postoffice   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Postoffice {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    postCode: ").append(toIndentedString(postCode)).append("\n");
-    sb.append("    postName: ").append(toIndentedString(postName)).append("\n");
-    sb.append("    regionCode: ").append(toIndentedString(regionCode)).append("\n");
-    sb.append("    regionName: ").append(toIndentedString(regionName)).append("\n");
-    sb.append("    districtID: ").append(toIndentedString(districtID)).append("\n");
+    sb.append("    postcode: ").append(toIndentedString(postcode)).append("\n");
+    sb.append("    postname: ").append(toIndentedString(postname)).append("\n");
+    sb.append("    regioncode: ").append(toIndentedString(regioncode)).append("\n");
+    sb.append("    regionname: ").append(toIndentedString(regionname)).append("\n");
+    sb.append("    districtId: ").append(toIndentedString(districtId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

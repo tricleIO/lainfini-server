@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,114 +34,195 @@ import java.util.Objects;
 /**
  * Posshiftstore
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posshiftstore   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("Discount")
+  @SerializedName("discount")
   private Double discount = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Posshiftstore displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Posshiftstore id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Posshiftstore classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Posshiftstore objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Směna [persistentní položka]
-   * @return parentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Směna [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Posshiftstore parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
   }
 
    /**
-   * Tržba [persistentní položka]
+   * vlastník; id objektu směna [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu směna [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Posshiftstore amount(Double amount) {
+    this.amount = amount;
+    return this;
+  }
+
+   /**
+   * tržba [persistentní položka]
    * @return amount
   **/
-  @ApiModelProperty(example = "null", value = "Tržba [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "tržba [persistentní položka]")
   public Double getAmount() {
     return amount;
   }
 
+  public void setAmount(Double amount) {
+    this.amount = amount;
+  }
+
+  public Posshiftstore quantity(Double quantity) {
+    this.quantity = quantity;
+    return this;
+  }
+
    /**
-   * Množství [persistentní položka]
+   * množství [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "množství [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
 
+  public void setQuantity(Double quantity) {
+    this.quantity = quantity;
+  }
+
+  public Posshiftstore discount(Double discount) {
+    this.discount = discount;
+    return this;
+  }
+
    /**
-   * Slevy [persistentní položka]
+   * slevy [persistentní položka]
    * @return discount
   **/
-  @ApiModelProperty(example = "null", value = "Slevy [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "slevy [persistentní položka]")
   public Double getDiscount() {
     return discount;
   }
 
+  public void setDiscount(Double discount) {
+    this.discount = discount;
+  }
+
+  public Posshiftstore storeId(String storeId) {
+    this.storeId = storeId;
+    return this;
+  }
+
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
+  }
+
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
 
@@ -154,20 +235,20 @@ public class Posshiftstore   {
       return false;
     }
     Posshiftstore posshiftstore = (Posshiftstore) o;
-    return Objects.equals(this.displayName, posshiftstore.displayName) &&
-        Objects.equals(this.ID, posshiftstore.ID) &&
-        Objects.equals(this.classID, posshiftstore.classID) &&
-        Objects.equals(this.objVersion, posshiftstore.objVersion) &&
-        Objects.equals(this.parentID, posshiftstore.parentID) &&
+    return Objects.equals(this.displayname, posshiftstore.displayname) &&
+        Objects.equals(this.id, posshiftstore.id) &&
+        Objects.equals(this.classid, posshiftstore.classid) &&
+        Objects.equals(this.objversion, posshiftstore.objversion) &&
+        Objects.equals(this.parentId, posshiftstore.parentId) &&
         Objects.equals(this.amount, posshiftstore.amount) &&
         Objects.equals(this.quantity, posshiftstore.quantity) &&
         Objects.equals(this.discount, posshiftstore.discount) &&
-        Objects.equals(this.storeID, posshiftstore.storeID);
+        Objects.equals(this.storeId, posshiftstore.storeId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, amount, quantity, discount, storeID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, amount, quantity, discount, storeId);
   }
 
   @Override
@@ -175,15 +256,15 @@ public class Posshiftstore   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posshiftstore {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
     sb.append("    discount: ").append(toIndentedString(discount)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

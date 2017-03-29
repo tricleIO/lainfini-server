@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,111 +34,147 @@ import java.util.Objects;
 /**
  * Storecardcategory
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Storecardcategory   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ToAccountReceiptCard")
-  private Boolean toAccountReceiptCard = null;
+  @SerializedName("toaccountreceiptcard")
+  private Boolean toaccountreceiptcard = null;
 
-  @SerializedName("ToAccountBillOfDelivery")
-  private Boolean toAccountBillOfDelivery = null;
+  @SerializedName("toaccountbillofdelivery")
+  private Boolean toaccountbillofdelivery = null;
 
-  @SerializedName("ToAccountInventory")
-  private Boolean toAccountInventory = null;
+  @SerializedName("toaccountinventory")
+  private Boolean toaccountinventory = null;
 
-  @SerializedName("ToAccountTransfer")
-  private Boolean toAccountTransfer = null;
+  @SerializedName("toaccounttransfer")
+  private Boolean toaccounttransfer = null;
 
-  @SerializedName("AnalyticalAccount")
-  private String analyticalAccount = null;
+  @SerializedName("analyticalaccount")
+  private String analyticalaccount = null;
 
-  @SerializedName("ToIntrastat")
-  private Boolean toIntrastat = null;
+  @SerializedName("tointrastat")
+  private Boolean tointrastat = null;
 
-  @SerializedName("ToESL")
-  private Boolean toESL = null;
+  @SerializedName("toesl")
+  private Boolean toesl = null;
 
-  @SerializedName("IntrastatTransport")
-  private Boolean intrastatTransport = null;
+  @SerializedName("intrastattransport")
+  private Boolean intrastattransport = null;
 
-  @SerializedName("CostPriceSourceType")
-  private Integer costPriceSourceType = null;
+  @SerializedName("costpricesourcetype")
+  private Integer costpricesourcetype = null;
 
-  @SerializedName("PLMPrRequestDocQueue_ID")
-  private String pLMPrRequestDocQueueID = null;
+  @SerializedName("plmprrequestdocqueue_id")
+  private String plmprrequestdocqueueId = null;
 
-  @SerializedName("PLMPrRequestDocQueue_ID2")
-  private String pLMPrRequestDocQueueID2 = null;
+  @SerializedName("plmprrequestdocqueue_id2")
+  private String plmprrequestdocqueueId2 = null;
 
-  @SerializedName("SplitIntrastat")
-  private Boolean splitIntrastat = null;
+  @SerializedName("splitintrastat")
+  private Boolean splitintrastat = null;
 
-  @SerializedName("IntrastatStatus")
-  private Integer intrastatStatus = null;
+  @SerializedName("intrastatstatus")
+  private Integer intrastatstatus = null;
 
-  @SerializedName("IntrastatTransportStatus")
-  private Integer intrastatTransportStatus = null;
+  @SerializedName("intrastattransportstatus")
+  private Integer intrastattransportstatus = null;
 
-  @SerializedName("ESLIndicator_ID")
-  private String eSLIndicatorID = null;
+  @SerializedName("eslindicator_id")
+  private String eslindicatorId = null;
 
-  @SerializedName("ROIgnoreCreateRes")
-  private Boolean rOIgnoreCreateRes = null;
+  @SerializedName("roignorecreateres")
+  private Boolean roignorecreateres = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Storecardcategory displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Storecardcategory id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Storecardcategory classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Storecardcategory objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Storecardcategory hidden(Boolean hidden) {
@@ -147,10 +183,10 @@ public class Storecardcategory   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -165,10 +201,10 @@ public class Storecardcategory   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -183,10 +219,10 @@ public class Storecardcategory   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -195,292 +231,292 @@ public class Storecardcategory   {
     this.name = name;
   }
 
-  public Storecardcategory toAccountReceiptCard(Boolean toAccountReceiptCard) {
-    this.toAccountReceiptCard = toAccountReceiptCard;
+  public Storecardcategory toaccountreceiptcard(Boolean toaccountreceiptcard) {
+    this.toaccountreceiptcard = toaccountreceiptcard;
     return this;
   }
 
    /**
    * Účtovat příjmy [persistentní položka]
-   * @return toAccountReceiptCard
+   * @return toaccountreceiptcard
   **/
   @ApiModelProperty(example = "null", value = "Účtovat příjmy [persistentní položka]")
-  public Boolean getToAccountReceiptCard() {
-    return toAccountReceiptCard;
+  public Boolean getToaccountreceiptcard() {
+    return toaccountreceiptcard;
   }
 
-  public void setToAccountReceiptCard(Boolean toAccountReceiptCard) {
-    this.toAccountReceiptCard = toAccountReceiptCard;
+  public void setToaccountreceiptcard(Boolean toaccountreceiptcard) {
+    this.toaccountreceiptcard = toaccountreceiptcard;
   }
 
-  public Storecardcategory toAccountBillOfDelivery(Boolean toAccountBillOfDelivery) {
-    this.toAccountBillOfDelivery = toAccountBillOfDelivery;
+  public Storecardcategory toaccountbillofdelivery(Boolean toaccountbillofdelivery) {
+    this.toaccountbillofdelivery = toaccountbillofdelivery;
     return this;
   }
 
    /**
    * Účtovat výdeje [persistentní položka]
-   * @return toAccountBillOfDelivery
+   * @return toaccountbillofdelivery
   **/
   @ApiModelProperty(example = "null", value = "Účtovat výdeje [persistentní položka]")
-  public Boolean getToAccountBillOfDelivery() {
-    return toAccountBillOfDelivery;
+  public Boolean getToaccountbillofdelivery() {
+    return toaccountbillofdelivery;
   }
 
-  public void setToAccountBillOfDelivery(Boolean toAccountBillOfDelivery) {
-    this.toAccountBillOfDelivery = toAccountBillOfDelivery;
+  public void setToaccountbillofdelivery(Boolean toaccountbillofdelivery) {
+    this.toaccountbillofdelivery = toaccountbillofdelivery;
   }
 
-  public Storecardcategory toAccountInventory(Boolean toAccountInventory) {
-    this.toAccountInventory = toAccountInventory;
+  public Storecardcategory toaccountinventory(Boolean toaccountinventory) {
+    this.toaccountinventory = toaccountinventory;
     return this;
   }
 
    /**
    * Účtovat inventury [persistentní položka]
-   * @return toAccountInventory
+   * @return toaccountinventory
   **/
   @ApiModelProperty(example = "null", value = "Účtovat inventury [persistentní položka]")
-  public Boolean getToAccountInventory() {
-    return toAccountInventory;
+  public Boolean getToaccountinventory() {
+    return toaccountinventory;
   }
 
-  public void setToAccountInventory(Boolean toAccountInventory) {
-    this.toAccountInventory = toAccountInventory;
+  public void setToaccountinventory(Boolean toaccountinventory) {
+    this.toaccountinventory = toaccountinventory;
   }
 
-  public Storecardcategory toAccountTransfer(Boolean toAccountTransfer) {
-    this.toAccountTransfer = toAccountTransfer;
+  public Storecardcategory toaccounttransfer(Boolean toaccounttransfer) {
+    this.toaccounttransfer = toaccounttransfer;
     return this;
   }
 
    /**
    * Účtovat převody [persistentní položka]
-   * @return toAccountTransfer
+   * @return toaccounttransfer
   **/
   @ApiModelProperty(example = "null", value = "Účtovat převody [persistentní položka]")
-  public Boolean getToAccountTransfer() {
-    return toAccountTransfer;
+  public Boolean getToaccounttransfer() {
+    return toaccounttransfer;
   }
 
-  public void setToAccountTransfer(Boolean toAccountTransfer) {
-    this.toAccountTransfer = toAccountTransfer;
+  public void setToaccounttransfer(Boolean toaccounttransfer) {
+    this.toaccounttransfer = toaccounttransfer;
   }
 
-  public Storecardcategory analyticalAccount(String analyticalAccount) {
-    this.analyticalAccount = analyticalAccount;
+  public Storecardcategory analyticalaccount(String analyticalaccount) {
+    this.analyticalaccount = analyticalaccount;
     return this;
   }
 
    /**
-   * Analytika [persistentní položka]
-   * @return analyticalAccount
+   * analytika [persistentní položka]
+   * @return analyticalaccount
   **/
-  @ApiModelProperty(example = "null", value = "Analytika [persistentní položka]")
-  public String getAnalyticalAccount() {
-    return analyticalAccount;
+  @ApiModelProperty(example = "null", value = "analytika [persistentní položka]")
+  public String getAnalyticalaccount() {
+    return analyticalaccount;
   }
 
-  public void setAnalyticalAccount(String analyticalAccount) {
-    this.analyticalAccount = analyticalAccount;
+  public void setAnalyticalaccount(String analyticalaccount) {
+    this.analyticalaccount = analyticalaccount;
   }
 
-  public Storecardcategory toIntrastat(Boolean toIntrastat) {
-    this.toIntrastat = toIntrastat;
+  public Storecardcategory tointrastat(Boolean tointrastat) {
+    this.tointrastat = tointrastat;
     return this;
   }
 
    /**
-   * Do INTRASTAT [persistentní položka]
-   * @return toIntrastat
+   * do intrastat [persistentní položka]
+   * @return tointrastat
   **/
-  @ApiModelProperty(example = "null", value = "Do INTRASTAT [persistentní položka]")
-  public Boolean getToIntrastat() {
-    return toIntrastat;
+  @ApiModelProperty(example = "null", value = "do intrastat [persistentní položka]")
+  public Boolean getTointrastat() {
+    return tointrastat;
   }
 
-  public void setToIntrastat(Boolean toIntrastat) {
-    this.toIntrastat = toIntrastat;
+  public void setTointrastat(Boolean tointrastat) {
+    this.tointrastat = tointrastat;
   }
 
-  public Storecardcategory toESL(Boolean toESL) {
-    this.toESL = toESL;
+  public Storecardcategory toesl(Boolean toesl) {
+    this.toesl = toesl;
     return this;
   }
 
    /**
-   * Do ESL [persistentní položka]
-   * @return toESL
+   * do esl [persistentní položka]
+   * @return toesl
   **/
-  @ApiModelProperty(example = "null", value = "Do ESL [persistentní položka]")
-  public Boolean getToESL() {
-    return toESL;
+  @ApiModelProperty(example = "null", value = "do esl [persistentní položka]")
+  public Boolean getToesl() {
+    return toesl;
   }
 
-  public void setToESL(Boolean toESL) {
-    this.toESL = toESL;
+  public void setToesl(Boolean toesl) {
+    this.toesl = toesl;
   }
 
-  public Storecardcategory intrastatTransport(Boolean intrastatTransport) {
-    this.intrastatTransport = intrastatTransport;
+  public Storecardcategory intrastattransport(Boolean intrastattransport) {
+    this.intrastattransport = intrastattransport;
     return this;
   }
 
    /**
-   * Doprava do Intrastatu [persistentní položka]
-   * @return intrastatTransport
+   * doprava do intrastatu [persistentní položka]
+   * @return intrastattransport
   **/
-  @ApiModelProperty(example = "null", value = "Doprava do Intrastatu [persistentní položka]")
-  public Boolean getIntrastatTransport() {
-    return intrastatTransport;
+  @ApiModelProperty(example = "null", value = "doprava do intrastatu [persistentní položka]")
+  public Boolean getIntrastattransport() {
+    return intrastattransport;
   }
 
-  public void setIntrastatTransport(Boolean intrastatTransport) {
-    this.intrastatTransport = intrastatTransport;
+  public void setIntrastattransport(Boolean intrastattransport) {
+    this.intrastattransport = intrastattransport;
   }
 
-  public Storecardcategory costPriceSourceType(Integer costPriceSourceType) {
-    this.costPriceSourceType = costPriceSourceType;
+  public Storecardcategory costpricesourcetype(Integer costpricesourcetype) {
+    this.costpricesourcetype = costpricesourcetype;
     return this;
   }
 
    /**
-   * Výchozí zdroj nákladové ceny [persistentní položka]
-   * @return costPriceSourceType
+   * výchozí zdroj nákladové ceny [persistentní položka]
+   * @return costpricesourcetype
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí zdroj nákladové ceny [persistentní položka]")
-  public Integer getCostPriceSourceType() {
-    return costPriceSourceType;
+  @ApiModelProperty(example = "null", value = "výchozí zdroj nákladové ceny [persistentní položka]")
+  public Integer getCostpricesourcetype() {
+    return costpricesourcetype;
   }
 
-  public void setCostPriceSourceType(Integer costPriceSourceType) {
-    this.costPriceSourceType = costPriceSourceType;
+  public void setCostpricesourcetype(Integer costpricesourcetype) {
+    this.costpricesourcetype = costpricesourcetype;
   }
 
-  public Storecardcategory pLMPrRequestDocQueueID(String pLMPrRequestDocQueueID) {
-    this.pLMPrRequestDocQueueID = pLMPrRequestDocQueueID;
+  public Storecardcategory plmprrequestdocqueueId(String plmprrequestdocqueueId) {
+    this.plmprrequestdocqueueId = plmprrequestdocqueueId;
     return this;
   }
 
    /**
-   * Řada dokladů Požadavky na výrobu použitá při tvorbě nabídky vydané; ID objektu Řada dokladů [persistentní položka]
-   * @return pLMPrRequestDocQueueID
+   * Řada dokladů požadavky na výrobu použitá při tvorbě nabídky vydané; id objektu Řada dokladů [persistentní položka]
+   * @return plmprrequestdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů Požadavky na výrobu použitá při tvorbě nabídky vydané; ID objektu Řada dokladů [persistentní položka]")
-  public String getPLMPrRequestDocQueueID() {
-    return pLMPrRequestDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada dokladů požadavky na výrobu použitá při tvorbě nabídky vydané; id objektu Řada dokladů [persistentní položka]")
+  public String getPlmprrequestdocqueueId() {
+    return plmprrequestdocqueueId;
   }
 
-  public void setPLMPrRequestDocQueueID(String pLMPrRequestDocQueueID) {
-    this.pLMPrRequestDocQueueID = pLMPrRequestDocQueueID;
+  public void setPlmprrequestdocqueueId(String plmprrequestdocqueueId) {
+    this.plmprrequestdocqueueId = plmprrequestdocqueueId;
   }
 
-  public Storecardcategory pLMPrRequestDocQueueID2(String pLMPrRequestDocQueueID2) {
-    this.pLMPrRequestDocQueueID2 = pLMPrRequestDocQueueID2;
+  public Storecardcategory plmprrequestdocqueueId2(String plmprrequestdocqueueId2) {
+    this.plmprrequestdocqueueId2 = plmprrequestdocqueueId2;
     return this;
   }
 
    /**
-   * Řada dokladů Požadavky na výrobu použitá při tvorbě objednávky přijaté; ID objektu Řada dokladů [persistentní položka]
-   * @return pLMPrRequestDocQueueID2
+   * Řada dokladů požadavky na výrobu použitá při tvorbě objednávky přijaté; id objektu Řada dokladů [persistentní položka]
+   * @return plmprrequestdocqueueId2
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů Požadavky na výrobu použitá při tvorbě objednávky přijaté; ID objektu Řada dokladů [persistentní položka]")
-  public String getPLMPrRequestDocQueueID2() {
-    return pLMPrRequestDocQueueID2;
+  @ApiModelProperty(example = "null", value = "Řada dokladů požadavky na výrobu použitá při tvorbě objednávky přijaté; id objektu Řada dokladů [persistentní položka]")
+  public String getPlmprrequestdocqueueId2() {
+    return plmprrequestdocqueueId2;
   }
 
-  public void setPLMPrRequestDocQueueID2(String pLMPrRequestDocQueueID2) {
-    this.pLMPrRequestDocQueueID2 = pLMPrRequestDocQueueID2;
+  public void setPlmprrequestdocqueueId2(String plmprrequestdocqueueId2) {
+    this.plmprrequestdocqueueId2 = plmprrequestdocqueueId2;
   }
 
-  public Storecardcategory splitIntrastat(Boolean splitIntrastat) {
-    this.splitIntrastat = splitIntrastat;
+  public Storecardcategory splitintrastat(Boolean splitintrastat) {
+    this.splitintrastat = splitintrastat;
     return this;
   }
 
    /**
-   * Rozpočítávat částku INTRASTAT do ost. položek [persistentní položka]
-   * @return splitIntrastat
+   * rozpočítávat částku intrastat do ost. položek [persistentní položka]
+   * @return splitintrastat
   **/
-  @ApiModelProperty(example = "null", value = "Rozpočítávat částku INTRASTAT do ost. položek [persistentní položka]")
-  public Boolean getSplitIntrastat() {
-    return splitIntrastat;
+  @ApiModelProperty(example = "null", value = "rozpočítávat částku intrastat do ost. položek [persistentní položka]")
+  public Boolean getSplitintrastat() {
+    return splitintrastat;
   }
 
-  public void setSplitIntrastat(Boolean splitIntrastat) {
-    this.splitIntrastat = splitIntrastat;
+  public void setSplitintrastat(Boolean splitintrastat) {
+    this.splitintrastat = splitintrastat;
   }
 
-  public Storecardcategory intrastatStatus(Integer intrastatStatus) {
-    this.intrastatStatus = intrastatStatus;
-    return this;
-  }
-
-   /**
-   * 
-   * @return intrastatStatus
-  **/
-  @ApiModelProperty(example = "null", value = "")
-  public Integer getIntrastatStatus() {
-    return intrastatStatus;
-  }
-
-  public void setIntrastatStatus(Integer intrastatStatus) {
-    this.intrastatStatus = intrastatStatus;
-  }
-
-  public Storecardcategory intrastatTransportStatus(Integer intrastatTransportStatus) {
-    this.intrastatTransportStatus = intrastatTransportStatus;
+  public Storecardcategory intrastatstatus(Integer intrastatstatus) {
+    this.intrastatstatus = intrastatstatus;
     return this;
   }
 
    /**
    * 
-   * @return intrastatTransportStatus
+   * @return intrastatstatus
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Integer getIntrastatTransportStatus() {
-    return intrastatTransportStatus;
+  public Integer getIntrastatstatus() {
+    return intrastatstatus;
   }
 
-  public void setIntrastatTransportStatus(Integer intrastatTransportStatus) {
-    this.intrastatTransportStatus = intrastatTransportStatus;
+  public void setIntrastatstatus(Integer intrastatstatus) {
+    this.intrastatstatus = intrastatstatus;
   }
 
-  public Storecardcategory eSLIndicatorID(String eSLIndicatorID) {
-    this.eSLIndicatorID = eSLIndicatorID;
+  public Storecardcategory intrastattransportstatus(Integer intrastattransportstatus) {
+    this.intrastattransportstatus = intrastattransportstatus;
     return this;
   }
 
    /**
-   * Rozlišení typu plnění(ESL); ID objektu Rozlišení typu plnění(ESL) [persistentní položka]
-   * @return eSLIndicatorID
+   * 
+   * @return intrastattransportstatus
   **/
-  @ApiModelProperty(example = "null", value = "Rozlišení typu plnění(ESL); ID objektu Rozlišení typu plnění(ESL) [persistentní položka]")
-  public String getESLIndicatorID() {
-    return eSLIndicatorID;
+  @ApiModelProperty(example = "null", value = "")
+  public Integer getIntrastattransportstatus() {
+    return intrastattransportstatus;
   }
 
-  public void setESLIndicatorID(String eSLIndicatorID) {
-    this.eSLIndicatorID = eSLIndicatorID;
+  public void setIntrastattransportstatus(Integer intrastattransportstatus) {
+    this.intrastattransportstatus = intrastattransportstatus;
   }
 
-  public Storecardcategory rOIgnoreCreateRes(Boolean rOIgnoreCreateRes) {
-    this.rOIgnoreCreateRes = rOIgnoreCreateRes;
+  public Storecardcategory eslindicatorId(String eslindicatorId) {
+    this.eslindicatorId = eslindicatorId;
     return this;
   }
 
    /**
-   * Ignorovat automatické vytváření rezervací [persistentní položka]
-   * @return rOIgnoreCreateRes
+   * rozlišení typu plnění(esl); id objektu rozlišení typu plnění(esl) [persistentní položka]
+   * @return eslindicatorId
   **/
-  @ApiModelProperty(example = "null", value = "Ignorovat automatické vytváření rezervací [persistentní položka]")
-  public Boolean getROIgnoreCreateRes() {
-    return rOIgnoreCreateRes;
+  @ApiModelProperty(example = "null", value = "rozlišení typu plnění(esl); id objektu rozlišení typu plnění(esl) [persistentní položka]")
+  public String getEslindicatorId() {
+    return eslindicatorId;
   }
 
-  public void setROIgnoreCreateRes(Boolean rOIgnoreCreateRes) {
-    this.rOIgnoreCreateRes = rOIgnoreCreateRes;
+  public void setEslindicatorId(String eslindicatorId) {
+    this.eslindicatorId = eslindicatorId;
+  }
+
+  public Storecardcategory roignorecreateres(Boolean roignorecreateres) {
+    this.roignorecreateres = roignorecreateres;
+    return this;
+  }
+
+   /**
+   * ignorovat automatické vytváření rezervací [persistentní položka]
+   * @return roignorecreateres
+  **/
+  @ApiModelProperty(example = "null", value = "ignorovat automatické vytváření rezervací [persistentní položka]")
+  public Boolean getRoignorecreateres() {
+    return roignorecreateres;
+  }
+
+  public void setRoignorecreateres(Boolean roignorecreateres) {
+    this.roignorecreateres = roignorecreateres;
   }
 
 
@@ -493,34 +529,34 @@ public class Storecardcategory   {
       return false;
     }
     Storecardcategory storecardcategory = (Storecardcategory) o;
-    return Objects.equals(this.displayName, storecardcategory.displayName) &&
-        Objects.equals(this.ID, storecardcategory.ID) &&
-        Objects.equals(this.classID, storecardcategory.classID) &&
-        Objects.equals(this.objVersion, storecardcategory.objVersion) &&
+    return Objects.equals(this.displayname, storecardcategory.displayname) &&
+        Objects.equals(this.id, storecardcategory.id) &&
+        Objects.equals(this.classid, storecardcategory.classid) &&
+        Objects.equals(this.objversion, storecardcategory.objversion) &&
         Objects.equals(this.hidden, storecardcategory.hidden) &&
         Objects.equals(this.code, storecardcategory.code) &&
         Objects.equals(this.name, storecardcategory.name) &&
-        Objects.equals(this.toAccountReceiptCard, storecardcategory.toAccountReceiptCard) &&
-        Objects.equals(this.toAccountBillOfDelivery, storecardcategory.toAccountBillOfDelivery) &&
-        Objects.equals(this.toAccountInventory, storecardcategory.toAccountInventory) &&
-        Objects.equals(this.toAccountTransfer, storecardcategory.toAccountTransfer) &&
-        Objects.equals(this.analyticalAccount, storecardcategory.analyticalAccount) &&
-        Objects.equals(this.toIntrastat, storecardcategory.toIntrastat) &&
-        Objects.equals(this.toESL, storecardcategory.toESL) &&
-        Objects.equals(this.intrastatTransport, storecardcategory.intrastatTransport) &&
-        Objects.equals(this.costPriceSourceType, storecardcategory.costPriceSourceType) &&
-        Objects.equals(this.pLMPrRequestDocQueueID, storecardcategory.pLMPrRequestDocQueueID) &&
-        Objects.equals(this.pLMPrRequestDocQueueID2, storecardcategory.pLMPrRequestDocQueueID2) &&
-        Objects.equals(this.splitIntrastat, storecardcategory.splitIntrastat) &&
-        Objects.equals(this.intrastatStatus, storecardcategory.intrastatStatus) &&
-        Objects.equals(this.intrastatTransportStatus, storecardcategory.intrastatTransportStatus) &&
-        Objects.equals(this.eSLIndicatorID, storecardcategory.eSLIndicatorID) &&
-        Objects.equals(this.rOIgnoreCreateRes, storecardcategory.rOIgnoreCreateRes);
+        Objects.equals(this.toaccountreceiptcard, storecardcategory.toaccountreceiptcard) &&
+        Objects.equals(this.toaccountbillofdelivery, storecardcategory.toaccountbillofdelivery) &&
+        Objects.equals(this.toaccountinventory, storecardcategory.toaccountinventory) &&
+        Objects.equals(this.toaccounttransfer, storecardcategory.toaccounttransfer) &&
+        Objects.equals(this.analyticalaccount, storecardcategory.analyticalaccount) &&
+        Objects.equals(this.tointrastat, storecardcategory.tointrastat) &&
+        Objects.equals(this.toesl, storecardcategory.toesl) &&
+        Objects.equals(this.intrastattransport, storecardcategory.intrastattransport) &&
+        Objects.equals(this.costpricesourcetype, storecardcategory.costpricesourcetype) &&
+        Objects.equals(this.plmprrequestdocqueueId, storecardcategory.plmprrequestdocqueueId) &&
+        Objects.equals(this.plmprrequestdocqueueId2, storecardcategory.plmprrequestdocqueueId2) &&
+        Objects.equals(this.splitintrastat, storecardcategory.splitintrastat) &&
+        Objects.equals(this.intrastatstatus, storecardcategory.intrastatstatus) &&
+        Objects.equals(this.intrastattransportstatus, storecardcategory.intrastattransportstatus) &&
+        Objects.equals(this.eslindicatorId, storecardcategory.eslindicatorId) &&
+        Objects.equals(this.roignorecreateres, storecardcategory.roignorecreateres);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, toAccountReceiptCard, toAccountBillOfDelivery, toAccountInventory, toAccountTransfer, analyticalAccount, toIntrastat, toESL, intrastatTransport, costPriceSourceType, pLMPrRequestDocQueueID, pLMPrRequestDocQueueID2, splitIntrastat, intrastatStatus, intrastatTransportStatus, eSLIndicatorID, rOIgnoreCreateRes);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, toaccountreceiptcard, toaccountbillofdelivery, toaccountinventory, toaccounttransfer, analyticalaccount, tointrastat, toesl, intrastattransport, costpricesourcetype, plmprrequestdocqueueId, plmprrequestdocqueueId2, splitintrastat, intrastatstatus, intrastattransportstatus, eslindicatorId, roignorecreateres);
   }
 
   @Override
@@ -528,29 +564,29 @@ public class Storecardcategory   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Storecardcategory {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    toAccountReceiptCard: ").append(toIndentedString(toAccountReceiptCard)).append("\n");
-    sb.append("    toAccountBillOfDelivery: ").append(toIndentedString(toAccountBillOfDelivery)).append("\n");
-    sb.append("    toAccountInventory: ").append(toIndentedString(toAccountInventory)).append("\n");
-    sb.append("    toAccountTransfer: ").append(toIndentedString(toAccountTransfer)).append("\n");
-    sb.append("    analyticalAccount: ").append(toIndentedString(analyticalAccount)).append("\n");
-    sb.append("    toIntrastat: ").append(toIndentedString(toIntrastat)).append("\n");
-    sb.append("    toESL: ").append(toIndentedString(toESL)).append("\n");
-    sb.append("    intrastatTransport: ").append(toIndentedString(intrastatTransport)).append("\n");
-    sb.append("    costPriceSourceType: ").append(toIndentedString(costPriceSourceType)).append("\n");
-    sb.append("    pLMPrRequestDocQueueID: ").append(toIndentedString(pLMPrRequestDocQueueID)).append("\n");
-    sb.append("    pLMPrRequestDocQueueID2: ").append(toIndentedString(pLMPrRequestDocQueueID2)).append("\n");
-    sb.append("    splitIntrastat: ").append(toIndentedString(splitIntrastat)).append("\n");
-    sb.append("    intrastatStatus: ").append(toIndentedString(intrastatStatus)).append("\n");
-    sb.append("    intrastatTransportStatus: ").append(toIndentedString(intrastatTransportStatus)).append("\n");
-    sb.append("    eSLIndicatorID: ").append(toIndentedString(eSLIndicatorID)).append("\n");
-    sb.append("    rOIgnoreCreateRes: ").append(toIndentedString(rOIgnoreCreateRes)).append("\n");
+    sb.append("    toaccountreceiptcard: ").append(toIndentedString(toaccountreceiptcard)).append("\n");
+    sb.append("    toaccountbillofdelivery: ").append(toIndentedString(toaccountbillofdelivery)).append("\n");
+    sb.append("    toaccountinventory: ").append(toIndentedString(toaccountinventory)).append("\n");
+    sb.append("    toaccounttransfer: ").append(toIndentedString(toaccounttransfer)).append("\n");
+    sb.append("    analyticalaccount: ").append(toIndentedString(analyticalaccount)).append("\n");
+    sb.append("    tointrastat: ").append(toIndentedString(tointrastat)).append("\n");
+    sb.append("    toesl: ").append(toIndentedString(toesl)).append("\n");
+    sb.append("    intrastattransport: ").append(toIndentedString(intrastattransport)).append("\n");
+    sb.append("    costpricesourcetype: ").append(toIndentedString(costpricesourcetype)).append("\n");
+    sb.append("    plmprrequestdocqueueId: ").append(toIndentedString(plmprrequestdocqueueId)).append("\n");
+    sb.append("    plmprrequestdocqueueId2: ").append(toIndentedString(plmprrequestdocqueueId2)).append("\n");
+    sb.append("    splitintrastat: ").append(toIndentedString(splitintrastat)).append("\n");
+    sb.append("    intrastatstatus: ").append(toIndentedString(intrastatstatus)).append("\n");
+    sb.append("    intrastattransportstatus: ").append(toIndentedString(intrastattransportstatus)).append("\n");
+    sb.append("    eslindicatorId: ").append(toIndentedString(eslindicatorId)).append("\n");
+    sb.append("    roignorecreateres: ").append(toIndentedString(roignorecreateres)).append("\n");
     sb.append("}");
     return sb.toString();
   }

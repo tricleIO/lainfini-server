@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,162 +34,207 @@ import java.util.Objects;
 /**
  * Logstoreaddresscodedefrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Logstoreaddresscodedefrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("SegmentName")
-  private String segmentName = null;
+  @SerializedName("segmentname")
+  private String segmentname = null;
 
-  @SerializedName("SegmentType")
-  private Integer segmentType = null;
+  @SerializedName("segmenttype")
+  private Integer segmenttype = null;
 
-  @SerializedName("SegmentLength")
-  private Integer segmentLength = null;
+  @SerializedName("segmentlength")
+  private Integer segmentlength = null;
 
-  @SerializedName("Separator")
+  @SerializedName("separator")
   private String separator = null;
 
-  @SerializedName("SegmentLowBound")
-  private String segmentLowBound = null;
+  @SerializedName("segmentlowbound")
+  private String segmentlowbound = null;
 
-  @SerializedName("SegmentHighBound")
-  private String segmentHighBound = null;
+  @SerializedName("segmenthighbound")
+  private String segmenthighbound = null;
 
-  @SerializedName("SegmentTypeDesc")
-  private String segmentTypeDesc = null;
+  @SerializedName("segmenttypedesc")
+  private String segmenttypedesc = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Definice adres skladových pozic [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Definice adres skladových pozic [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Logstoreaddresscodedefrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Logstoreaddresscodedefrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Logstoreaddresscodedefrow segmentName(String segmentName) {
-    this.segmentName = segmentName;
+  public Logstoreaddresscodedefrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Název segmentu [persistentní položka]
-   * @return segmentName
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Název segmentu [persistentní položka]")
-  public String getSegmentName() {
-    return segmentName;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setSegmentName(String segmentName) {
-    this.segmentName = segmentName;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Logstoreaddresscodedefrow segmentType(Integer segmentType) {
-    this.segmentType = segmentType;
+  public Logstoreaddresscodedefrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Typ segmentu [persistentní položka]
-   * @return segmentType
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Typ segmentu [persistentní položka]")
-  public Integer getSegmentType() {
-    return segmentType;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setSegmentType(Integer segmentType) {
-    this.segmentType = segmentType;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Logstoreaddresscodedefrow segmentLength(Integer segmentLength) {
-    this.segmentLength = segmentLength;
+  public Logstoreaddresscodedefrow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Délka segmentu [persistentní položka]
-   * @return segmentLength
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Délka segmentu [persistentní položka]")
-  public Integer getSegmentLength() {
-    return segmentLength;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setSegmentLength(Integer segmentLength) {
-    this.segmentLength = segmentLength;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Logstoreaddresscodedefrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu definice adres skladových pozic [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu definice adres skladových pozic [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Logstoreaddresscodedefrow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Logstoreaddresscodedefrow segmentname(String segmentname) {
+    this.segmentname = segmentname;
+    return this;
+  }
+
+   /**
+   * název segmentu [persistentní položka]
+   * @return segmentname
+  **/
+  @ApiModelProperty(example = "null", value = "název segmentu [persistentní položka]")
+  public String getSegmentname() {
+    return segmentname;
+  }
+
+  public void setSegmentname(String segmentname) {
+    this.segmentname = segmentname;
+  }
+
+  public Logstoreaddresscodedefrow segmenttype(Integer segmenttype) {
+    this.segmenttype = segmenttype;
+    return this;
+  }
+
+   /**
+   * typ segmentu [persistentní položka]
+   * @return segmenttype
+  **/
+  @ApiModelProperty(example = "null", value = "typ segmentu [persistentní položka]")
+  public Integer getSegmenttype() {
+    return segmenttype;
+  }
+
+  public void setSegmenttype(Integer segmenttype) {
+    this.segmenttype = segmenttype;
+  }
+
+  public Logstoreaddresscodedefrow segmentlength(Integer segmentlength) {
+    this.segmentlength = segmentlength;
+    return this;
+  }
+
+   /**
+   * délka segmentu [persistentní položka]
+   * @return segmentlength
+  **/
+  @ApiModelProperty(example = "null", value = "délka segmentu [persistentní položka]")
+  public Integer getSegmentlength() {
+    return segmentlength;
+  }
+
+  public void setSegmentlength(Integer segmentlength) {
+    this.segmentlength = segmentlength;
   }
 
   public Logstoreaddresscodedefrow separator(String separator) {
@@ -198,10 +243,10 @@ public class Logstoreaddresscodedefrow   {
   }
 
    /**
-   * Oddělovač [persistentní položka]
+   * oddělovač [persistentní položka]
    * @return separator
   **/
-  @ApiModelProperty(example = "null", value = "Oddělovač [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "oddělovač [persistentní položka]")
   public String getSeparator() {
     return separator;
   }
@@ -210,49 +255,58 @@ public class Logstoreaddresscodedefrow   {
     this.separator = separator;
   }
 
-  public Logstoreaddresscodedefrow segmentLowBound(String segmentLowBound) {
-    this.segmentLowBound = segmentLowBound;
+  public Logstoreaddresscodedefrow segmentlowbound(String segmentlowbound) {
+    this.segmentlowbound = segmentlowbound;
     return this;
   }
 
    /**
-   * Spodní omezení
-   * @return segmentLowBound
+   * spodní omezení
+   * @return segmentlowbound
   **/
-  @ApiModelProperty(example = "null", value = "Spodní omezení")
-  public String getSegmentLowBound() {
-    return segmentLowBound;
+  @ApiModelProperty(example = "null", value = "spodní omezení")
+  public String getSegmentlowbound() {
+    return segmentlowbound;
   }
 
-  public void setSegmentLowBound(String segmentLowBound) {
-    this.segmentLowBound = segmentLowBound;
+  public void setSegmentlowbound(String segmentlowbound) {
+    this.segmentlowbound = segmentlowbound;
   }
 
-  public Logstoreaddresscodedefrow segmentHighBound(String segmentHighBound) {
-    this.segmentHighBound = segmentHighBound;
+  public Logstoreaddresscodedefrow segmenthighbound(String segmenthighbound) {
+    this.segmenthighbound = segmenthighbound;
     return this;
   }
 
    /**
-   * Horní omezení
-   * @return segmentHighBound
+   * horní omezení
+   * @return segmenthighbound
   **/
-  @ApiModelProperty(example = "null", value = "Horní omezení")
-  public String getSegmentHighBound() {
-    return segmentHighBound;
+  @ApiModelProperty(example = "null", value = "horní omezení")
+  public String getSegmenthighbound() {
+    return segmenthighbound;
   }
 
-  public void setSegmentHighBound(String segmentHighBound) {
-    this.segmentHighBound = segmentHighBound;
+  public void setSegmenthighbound(String segmenthighbound) {
+    this.segmenthighbound = segmenthighbound;
+  }
+
+  public Logstoreaddresscodedefrow segmenttypedesc(String segmenttypedesc) {
+    this.segmenttypedesc = segmenttypedesc;
+    return this;
   }
 
    /**
-   * Typ segmentu - popis
-   * @return segmentTypeDesc
+   * typ segmentu - popis
+   * @return segmenttypedesc
   **/
-  @ApiModelProperty(example = "null", value = "Typ segmentu - popis")
-  public String getSegmentTypeDesc() {
-    return segmentTypeDesc;
+  @ApiModelProperty(example = "null", value = "typ segmentu - popis")
+  public String getSegmenttypedesc() {
+    return segmenttypedesc;
+  }
+
+  public void setSegmenttypedesc(String segmenttypedesc) {
+    this.segmenttypedesc = segmenttypedesc;
   }
 
 
@@ -265,24 +319,24 @@ public class Logstoreaddresscodedefrow   {
       return false;
     }
     Logstoreaddresscodedefrow logstoreaddresscodedefrow = (Logstoreaddresscodedefrow) o;
-    return Objects.equals(this.displayName, logstoreaddresscodedefrow.displayName) &&
-        Objects.equals(this.ID, logstoreaddresscodedefrow.ID) &&
-        Objects.equals(this.classID, logstoreaddresscodedefrow.classID) &&
-        Objects.equals(this.objVersion, logstoreaddresscodedefrow.objVersion) &&
-        Objects.equals(this.parentID, logstoreaddresscodedefrow.parentID) &&
-        Objects.equals(this.posIndex, logstoreaddresscodedefrow.posIndex) &&
-        Objects.equals(this.segmentName, logstoreaddresscodedefrow.segmentName) &&
-        Objects.equals(this.segmentType, logstoreaddresscodedefrow.segmentType) &&
-        Objects.equals(this.segmentLength, logstoreaddresscodedefrow.segmentLength) &&
+    return Objects.equals(this.displayname, logstoreaddresscodedefrow.displayname) &&
+        Objects.equals(this.id, logstoreaddresscodedefrow.id) &&
+        Objects.equals(this.classid, logstoreaddresscodedefrow.classid) &&
+        Objects.equals(this.objversion, logstoreaddresscodedefrow.objversion) &&
+        Objects.equals(this.parentId, logstoreaddresscodedefrow.parentId) &&
+        Objects.equals(this.posindex, logstoreaddresscodedefrow.posindex) &&
+        Objects.equals(this.segmentname, logstoreaddresscodedefrow.segmentname) &&
+        Objects.equals(this.segmenttype, logstoreaddresscodedefrow.segmenttype) &&
+        Objects.equals(this.segmentlength, logstoreaddresscodedefrow.segmentlength) &&
         Objects.equals(this.separator, logstoreaddresscodedefrow.separator) &&
-        Objects.equals(this.segmentLowBound, logstoreaddresscodedefrow.segmentLowBound) &&
-        Objects.equals(this.segmentHighBound, logstoreaddresscodedefrow.segmentHighBound) &&
-        Objects.equals(this.segmentTypeDesc, logstoreaddresscodedefrow.segmentTypeDesc);
+        Objects.equals(this.segmentlowbound, logstoreaddresscodedefrow.segmentlowbound) &&
+        Objects.equals(this.segmenthighbound, logstoreaddresscodedefrow.segmenthighbound) &&
+        Objects.equals(this.segmenttypedesc, logstoreaddresscodedefrow.segmenttypedesc);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, segmentName, segmentType, segmentLength, separator, segmentLowBound, segmentHighBound, segmentTypeDesc);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, segmentname, segmenttype, segmentlength, separator, segmentlowbound, segmenthighbound, segmenttypedesc);
   }
 
   @Override
@@ -290,19 +344,19 @@ public class Logstoreaddresscodedefrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Logstoreaddresscodedefrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    segmentName: ").append(toIndentedString(segmentName)).append("\n");
-    sb.append("    segmentType: ").append(toIndentedString(segmentType)).append("\n");
-    sb.append("    segmentLength: ").append(toIndentedString(segmentLength)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    segmentname: ").append(toIndentedString(segmentname)).append("\n");
+    sb.append("    segmenttype: ").append(toIndentedString(segmenttype)).append("\n");
+    sb.append("    segmentlength: ").append(toIndentedString(segmentlength)).append("\n");
     sb.append("    separator: ").append(toIndentedString(separator)).append("\n");
-    sb.append("    segmentLowBound: ").append(toIndentedString(segmentLowBound)).append("\n");
-    sb.append("    segmentHighBound: ").append(toIndentedString(segmentHighBound)).append("\n");
-    sb.append("    segmentTypeDesc: ").append(toIndentedString(segmentTypeDesc)).append("\n");
+    sb.append("    segmentlowbound: ").append(toIndentedString(segmentlowbound)).append("\n");
+    sb.append("    segmenthighbound: ").append(toIndentedString(segmenthighbound)).append("\n");
+    sb.append("    segmenttypedesc: ").append(toIndentedString(segmenttypedesc)).append("\n");
     sb.append("}");
     return sb.toString();
   }

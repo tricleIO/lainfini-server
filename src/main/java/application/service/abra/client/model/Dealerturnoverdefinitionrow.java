@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,108 +34,153 @@ import java.util.Objects;
 /**
  * Dealerturnoverdefinitionrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Dealerturnoverdefinitionrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("AmountLimit")
-  private Double amountLimit = null;
+  @SerializedName("amountlimit")
+  private Double amountlimit = null;
 
-  @SerializedName("DealerCategory_ID")
-  private String dealerCategoryID = null;
+  @SerializedName("dealercategory_id")
+  private String dealercategoryId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Tabulka obratů dealerských skupin [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Tabulka obratů dealerských skupin [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Dealerturnoverdefinitionrow amountLimit(Double amountLimit) {
-    this.amountLimit = amountLimit;
+  public Dealerturnoverdefinitionrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Min.částka [persistentní položka]
-   * @return amountLimit
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Min.částka [persistentní položka]")
-  public Double getAmountLimit() {
-    return amountLimit;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setAmountLimit(Double amountLimit) {
-    this.amountLimit = amountLimit;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Dealerturnoverdefinitionrow dealerCategoryID(String dealerCategoryID) {
-    this.dealerCategoryID = dealerCategoryID;
+  public Dealerturnoverdefinitionrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Deal.třída; ID objektu Dealerská třída [persistentní položka]
-   * @return dealerCategoryID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Deal.třída; ID objektu Dealerská třída [persistentní položka]")
-  public String getDealerCategoryID() {
-    return dealerCategoryID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDealerCategoryID(String dealerCategoryID) {
-    this.dealerCategoryID = dealerCategoryID;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Dealerturnoverdefinitionrow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Dealerturnoverdefinitionrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Dealerturnoverdefinitionrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu tabulka obratů dealerských skupin [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu tabulka obratů dealerských skupin [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Dealerturnoverdefinitionrow amountlimit(Double amountlimit) {
+    this.amountlimit = amountlimit;
+    return this;
+  }
+
+   /**
+   * min.částka [persistentní položka]
+   * @return amountlimit
+  **/
+  @ApiModelProperty(example = "null", value = "min.částka [persistentní položka]")
+  public Double getAmountlimit() {
+    return amountlimit;
+  }
+
+  public void setAmountlimit(Double amountlimit) {
+    this.amountlimit = amountlimit;
+  }
+
+  public Dealerturnoverdefinitionrow dealercategoryId(String dealercategoryId) {
+    this.dealercategoryId = dealercategoryId;
+    return this;
+  }
+
+   /**
+   * deal.třída; id objektu dealerská třída [persistentní položka]
+   * @return dealercategoryId
+  **/
+  @ApiModelProperty(example = "null", value = "deal.třída; id objektu dealerská třída [persistentní položka]")
+  public String getDealercategoryId() {
+    return dealercategoryId;
+  }
+
+  public void setDealercategoryId(String dealercategoryId) {
+    this.dealercategoryId = dealercategoryId;
   }
 
 
@@ -148,18 +193,18 @@ public class Dealerturnoverdefinitionrow   {
       return false;
     }
     Dealerturnoverdefinitionrow dealerturnoverdefinitionrow = (Dealerturnoverdefinitionrow) o;
-    return Objects.equals(this.displayName, dealerturnoverdefinitionrow.displayName) &&
-        Objects.equals(this.ID, dealerturnoverdefinitionrow.ID) &&
-        Objects.equals(this.classID, dealerturnoverdefinitionrow.classID) &&
-        Objects.equals(this.objVersion, dealerturnoverdefinitionrow.objVersion) &&
-        Objects.equals(this.parentID, dealerturnoverdefinitionrow.parentID) &&
-        Objects.equals(this.amountLimit, dealerturnoverdefinitionrow.amountLimit) &&
-        Objects.equals(this.dealerCategoryID, dealerturnoverdefinitionrow.dealerCategoryID);
+    return Objects.equals(this.displayname, dealerturnoverdefinitionrow.displayname) &&
+        Objects.equals(this.id, dealerturnoverdefinitionrow.id) &&
+        Objects.equals(this.classid, dealerturnoverdefinitionrow.classid) &&
+        Objects.equals(this.objversion, dealerturnoverdefinitionrow.objversion) &&
+        Objects.equals(this.parentId, dealerturnoverdefinitionrow.parentId) &&
+        Objects.equals(this.amountlimit, dealerturnoverdefinitionrow.amountlimit) &&
+        Objects.equals(this.dealercategoryId, dealerturnoverdefinitionrow.dealercategoryId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, amountLimit, dealerCategoryID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, amountlimit, dealercategoryId);
   }
 
   @Override
@@ -167,13 +212,13 @@ public class Dealerturnoverdefinitionrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Dealerturnoverdefinitionrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    amountLimit: ").append(toIndentedString(amountLimit)).append("\n");
-    sb.append("    dealerCategoryID: ").append(toIndentedString(dealerCategoryID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    amountlimit: ").append(toIndentedString(amountlimit)).append("\n");
+    sb.append("    dealercategoryId: ").append(toIndentedString(dealercategoryId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,111 +35,147 @@ import java.util.Objects;
 /**
  * Maininvprotocolposition
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Maininvprotocolposition   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("StorePosition_ID")
-  private String storePositionID = null;
+  @SerializedName("storeposition_id")
+  private String storepositionId = null;
 
-  @SerializedName("Completed")
+  @SerializedName("completed")
   private Boolean completed = null;
 
-  @SerializedName("Closed")
+  @SerializedName("closed")
   private Boolean closed = null;
 
-  @SerializedName("OrderFlow")
-  private Integer orderFlow = null;
+  @SerializedName("orderflow")
+  private Integer orderflow = null;
 
-  @SerializedName("InventoryBegin$DATE")
-  private DateTime inventoryBeginDATE = null;
+  @SerializedName("inventorybegin$date")
+  private DateTime inventorybegindate = null;
 
-  @SerializedName("ReadyToClose")
-  private Boolean readyToClose = null;
+  @SerializedName("readytoclose")
+  private Boolean readytoclose = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Maininvprotocolposition parentID(String parentID) {
-    this.parentID = parentID;
+  public Maininvprotocolposition displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Hlavní inventární protokol; ID objektu Hlavní inventární protokol [persistentní položka]
-   * @return parentID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Hlavní inventární protokol; ID objektu Hlavní inventární protokol [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setParentID(String parentID) {
-    this.parentID = parentID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Maininvprotocolposition storePositionID(String storePositionID) {
-    this.storePositionID = storePositionID;
+  public Maininvprotocolposition id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Skladová pozice; ID objektu Skladová pozice [persistentní položka]
-   * @return storePositionID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Skladová pozice; ID objektu Skladová pozice [persistentní položka]")
-  public String getStorePositionID() {
-    return storePositionID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setStorePositionID(String storePositionID) {
-    this.storePositionID = storePositionID;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Maininvprotocolposition classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Maininvprotocolposition objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Maininvprotocolposition parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * hlavní inventární protokol; id objektu hlavní inventární protokol [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "hlavní inventární protokol; id objektu hlavní inventární protokol [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Maininvprotocolposition storepositionId(String storepositionId) {
+    this.storepositionId = storepositionId;
+    return this;
+  }
+
+   /**
+   * skladová pozice; id objektu skladová pozice [persistentní položka]
+   * @return storepositionId
+  **/
+  @ApiModelProperty(example = "null", value = "skladová pozice; id objektu skladová pozice [persistentní položka]")
+  public String getStorepositionId() {
+    return storepositionId;
+  }
+
+  public void setStorepositionId(String storepositionId) {
+    this.storepositionId = storepositionId;
   }
 
   public Maininvprotocolposition completed(Boolean completed) {
@@ -148,10 +184,10 @@ public class Maininvprotocolposition   {
   }
 
    /**
-   * Kompletní [persistentní položka]
+   * kompletní [persistentní položka]
    * @return completed
   **/
-  @ApiModelProperty(example = "null", value = "Kompletní [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kompletní [persistentní položka]")
   public Boolean getCompleted() {
     return completed;
   }
@@ -166,10 +202,10 @@ public class Maininvprotocolposition   {
   }
 
    /**
-   * Uzavřena [persistentní položka]
+   * uzavřena [persistentní položka]
    * @return closed
   **/
-  @ApiModelProperty(example = "null", value = "Uzavřena [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "uzavřena [persistentní položka]")
   public Boolean getClosed() {
     return closed;
   }
@@ -178,58 +214,58 @@ public class Maininvprotocolposition   {
     this.closed = closed;
   }
 
-  public Maininvprotocolposition orderFlow(Integer orderFlow) {
-    this.orderFlow = orderFlow;
+  public Maininvprotocolposition orderflow(Integer orderflow) {
+    this.orderflow = orderflow;
     return this;
   }
 
    /**
-   * OrderFlow [persistentní položka]
-   * @return orderFlow
+   * orderflow [persistentní položka]
+   * @return orderflow
   **/
-  @ApiModelProperty(example = "null", value = "OrderFlow [persistentní položka]")
-  public Integer getOrderFlow() {
-    return orderFlow;
+  @ApiModelProperty(example = "null", value = "orderflow [persistentní položka]")
+  public Integer getOrderflow() {
+    return orderflow;
   }
 
-  public void setOrderFlow(Integer orderFlow) {
-    this.orderFlow = orderFlow;
+  public void setOrderflow(Integer orderflow) {
+    this.orderflow = orderflow;
   }
 
-  public Maininvprotocolposition inventoryBeginDATE(DateTime inventoryBeginDATE) {
-    this.inventoryBeginDATE = inventoryBeginDATE;
+  public Maininvprotocolposition inventorybegindate(DateTime inventorybegindate) {
+    this.inventorybegindate = inventorybegindate;
     return this;
   }
 
    /**
-   * Vložení do inventury [persistentní položka]
-   * @return inventoryBeginDATE
+   * vložení do inventury [persistentní položka]
+   * @return inventorybegindate
   **/
-  @ApiModelProperty(example = "null", value = "Vložení do inventury [persistentní položka]")
-  public DateTime getInventoryBeginDATE() {
-    return inventoryBeginDATE;
+  @ApiModelProperty(example = "null", value = "vložení do inventury [persistentní položka]")
+  public DateTime getInventorybegindate() {
+    return inventorybegindate;
   }
 
-  public void setInventoryBeginDATE(DateTime inventoryBeginDATE) {
-    this.inventoryBeginDATE = inventoryBeginDATE;
+  public void setInventorybegindate(DateTime inventorybegindate) {
+    this.inventorybegindate = inventorybegindate;
   }
 
-  public Maininvprotocolposition readyToClose(Boolean readyToClose) {
-    this.readyToClose = readyToClose;
+  public Maininvprotocolposition readytoclose(Boolean readytoclose) {
+    this.readytoclose = readytoclose;
     return this;
   }
 
    /**
-   * K uzavření
-   * @return readyToClose
+   * k uzavření
+   * @return readytoclose
   **/
-  @ApiModelProperty(example = "null", value = "K uzavření")
-  public Boolean getReadyToClose() {
-    return readyToClose;
+  @ApiModelProperty(example = "null", value = "k uzavření")
+  public Boolean getReadytoclose() {
+    return readytoclose;
   }
 
-  public void setReadyToClose(Boolean readyToClose) {
-    this.readyToClose = readyToClose;
+  public void setReadytoclose(Boolean readytoclose) {
+    this.readytoclose = readytoclose;
   }
 
 
@@ -242,22 +278,22 @@ public class Maininvprotocolposition   {
       return false;
     }
     Maininvprotocolposition maininvprotocolposition = (Maininvprotocolposition) o;
-    return Objects.equals(this.displayName, maininvprotocolposition.displayName) &&
-        Objects.equals(this.ID, maininvprotocolposition.ID) &&
-        Objects.equals(this.classID, maininvprotocolposition.classID) &&
-        Objects.equals(this.objVersion, maininvprotocolposition.objVersion) &&
-        Objects.equals(this.parentID, maininvprotocolposition.parentID) &&
-        Objects.equals(this.storePositionID, maininvprotocolposition.storePositionID) &&
+    return Objects.equals(this.displayname, maininvprotocolposition.displayname) &&
+        Objects.equals(this.id, maininvprotocolposition.id) &&
+        Objects.equals(this.classid, maininvprotocolposition.classid) &&
+        Objects.equals(this.objversion, maininvprotocolposition.objversion) &&
+        Objects.equals(this.parentId, maininvprotocolposition.parentId) &&
+        Objects.equals(this.storepositionId, maininvprotocolposition.storepositionId) &&
         Objects.equals(this.completed, maininvprotocolposition.completed) &&
         Objects.equals(this.closed, maininvprotocolposition.closed) &&
-        Objects.equals(this.orderFlow, maininvprotocolposition.orderFlow) &&
-        Objects.equals(this.inventoryBeginDATE, maininvprotocolposition.inventoryBeginDATE) &&
-        Objects.equals(this.readyToClose, maininvprotocolposition.readyToClose);
+        Objects.equals(this.orderflow, maininvprotocolposition.orderflow) &&
+        Objects.equals(this.inventorybegindate, maininvprotocolposition.inventorybegindate) &&
+        Objects.equals(this.readytoclose, maininvprotocolposition.readytoclose);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, storePositionID, completed, closed, orderFlow, inventoryBeginDATE, readyToClose);
+    return Objects.hash(displayname, id, classid, objversion, parentId, storepositionId, completed, closed, orderflow, inventorybegindate, readytoclose);
   }
 
   @Override
@@ -265,17 +301,17 @@ public class Maininvprotocolposition   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Maininvprotocolposition {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    storePositionID: ").append(toIndentedString(storePositionID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    storepositionId: ").append(toIndentedString(storepositionId)).append("\n");
     sb.append("    completed: ").append(toIndentedString(completed)).append("\n");
     sb.append("    closed: ").append(toIndentedString(closed)).append("\n");
-    sb.append("    orderFlow: ").append(toIndentedString(orderFlow)).append("\n");
-    sb.append("    inventoryBeginDATE: ").append(toIndentedString(inventoryBeginDATE)).append("\n");
-    sb.append("    readyToClose: ").append(toIndentedString(readyToClose)).append("\n");
+    sb.append("    orderflow: ").append(toIndentedString(orderflow)).append("\n");
+    sb.append("    inventorybegindate: ").append(toIndentedString(inventorybegindate)).append("\n");
+    sb.append("    readytoclose: ").append(toIndentedString(readytoclose)).append("\n");
     sb.append("}");
     return sb.toString();
   }

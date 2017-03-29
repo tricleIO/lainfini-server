@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,96 +34,132 @@ import java.util.Objects;
 /**
  * Retirementreportuserdefrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Retirementreportuserdefrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("ReportDefRow_ID")
-  private String reportDefRowID = null;
+  @SerializedName("reportdefrow_id")
+  private String reportdefrowId = null;
 
-  @SerializedName("UserExpression")
-  private String userExpression = null;
+  @SerializedName("userexpression")
+  private String userexpression = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Retirementreportuserdefrow reportDefRowID(String reportDefRowID) {
-    this.reportDefRowID = reportDefRowID;
+  public Retirementreportuserdefrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Řádek definice ELDP; ID objektu Řádek definice ELDP [persistentní položka]
-   * @return reportDefRowID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Řádek definice ELDP; ID objektu Řádek definice ELDP [persistentní položka]")
-  public String getReportDefRowID() {
-    return reportDefRowID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setReportDefRowID(String reportDefRowID) {
-    this.reportDefRowID = reportDefRowID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Retirementreportuserdefrow userExpression(String userExpression) {
-    this.userExpression = userExpression;
+  public Retirementreportuserdefrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Uživatelský výraz [persistentní položka]
-   * @return userExpression
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Uživatelský výraz [persistentní položka]")
-  public String getUserExpression() {
-    return userExpression;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setUserExpression(String userExpression) {
-    this.userExpression = userExpression;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Retirementreportuserdefrow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Retirementreportuserdefrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Retirementreportuserdefrow reportdefrowId(String reportdefrowId) {
+    this.reportdefrowId = reportdefrowId;
+    return this;
+  }
+
+   /**
+   * Řádek definice eldp; id objektu Řádek definice eldp [persistentní položka]
+   * @return reportdefrowId
+  **/
+  @ApiModelProperty(example = "null", value = "Řádek definice eldp; id objektu Řádek definice eldp [persistentní položka]")
+  public String getReportdefrowId() {
+    return reportdefrowId;
+  }
+
+  public void setReportdefrowId(String reportdefrowId) {
+    this.reportdefrowId = reportdefrowId;
+  }
+
+  public Retirementreportuserdefrow userexpression(String userexpression) {
+    this.userexpression = userexpression;
+    return this;
+  }
+
+   /**
+   * uživatelský výraz [persistentní položka]
+   * @return userexpression
+  **/
+  @ApiModelProperty(example = "null", value = "uživatelský výraz [persistentní položka]")
+  public String getUserexpression() {
+    return userexpression;
+  }
+
+  public void setUserexpression(String userexpression) {
+    this.userexpression = userexpression;
   }
 
 
@@ -136,17 +172,17 @@ public class Retirementreportuserdefrow   {
       return false;
     }
     Retirementreportuserdefrow retirementreportuserdefrow = (Retirementreportuserdefrow) o;
-    return Objects.equals(this.displayName, retirementreportuserdefrow.displayName) &&
-        Objects.equals(this.ID, retirementreportuserdefrow.ID) &&
-        Objects.equals(this.classID, retirementreportuserdefrow.classID) &&
-        Objects.equals(this.objVersion, retirementreportuserdefrow.objVersion) &&
-        Objects.equals(this.reportDefRowID, retirementreportuserdefrow.reportDefRowID) &&
-        Objects.equals(this.userExpression, retirementreportuserdefrow.userExpression);
+    return Objects.equals(this.displayname, retirementreportuserdefrow.displayname) &&
+        Objects.equals(this.id, retirementreportuserdefrow.id) &&
+        Objects.equals(this.classid, retirementreportuserdefrow.classid) &&
+        Objects.equals(this.objversion, retirementreportuserdefrow.objversion) &&
+        Objects.equals(this.reportdefrowId, retirementreportuserdefrow.reportdefrowId) &&
+        Objects.equals(this.userexpression, retirementreportuserdefrow.userexpression);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, reportDefRowID, userExpression);
+    return Objects.hash(displayname, id, classid, objversion, reportdefrowId, userexpression);
   }
 
   @Override
@@ -154,12 +190,12 @@ public class Retirementreportuserdefrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Retirementreportuserdefrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    reportDefRowID: ").append(toIndentedString(reportDefRowID)).append("\n");
-    sb.append("    userExpression: ").append(toIndentedString(userExpression)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    reportdefrowId: ").append(toIndentedString(reportdefrowId)).append("\n");
+    sb.append("    userexpression: ").append(toIndentedString(userexpression)).append("\n");
     sb.append("}");
     return sb.toString();
   }

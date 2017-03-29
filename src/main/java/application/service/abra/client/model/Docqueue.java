@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,123 +36,159 @@ import java.util.Objects;
 /**
  * Docqueue
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Docqueue   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("LastNumbers")
-  private List<Docqueueperiod> lastNumbers = new ArrayList<Docqueueperiod>();
+  @SerializedName("lastnumbers")
+  private List<Docqueueperiod> lastnumbers = new ArrayList<Docqueueperiod>();
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("DocumentType")
-  private String documentType = null;
+  @SerializedName("documenttype")
+  private String documenttype = null;
 
-  @SerializedName("ToAccount")
-  private Boolean toAccount = null;
+  @SerializedName("toaccount")
+  private Boolean toaccount = null;
 
-  @SerializedName("SummaryAccounted")
-  private Boolean summaryAccounted = null;
+  @SerializedName("summaryaccounted")
+  private Boolean summaryaccounted = null;
 
-  @SerializedName("ForceAccounting")
-  private Boolean forceAccounting = null;
+  @SerializedName("forceaccounting")
+  private Boolean forceaccounting = null;
 
-  @SerializedName("SingleAccDocQueue_ID")
-  private Docqueue singleAccDocQueueID = null;
+  @SerializedName("singleaccdocqueue_id")
+  private Docqueue singleaccdocqueueId = null;
 
-  @SerializedName("SummaryAccDocQueue_ID")
-  private Docqueue summaryAccDocQueueID = null;
+  @SerializedName("summaryaccdocqueue_id")
+  private Docqueue summaryaccdocqueueId = null;
 
-  @SerializedName("PrefixVar")
-  private Integer prefixVar = null;
+  @SerializedName("prefixvar")
+  private Integer prefixvar = null;
 
-  @SerializedName("FirstOpenPeriod_ID")
-  private String firstOpenPeriodID = null;
+  @SerializedName("firstopenperiod_id")
+  private String firstopenperiodId = null;
 
-  @SerializedName("LastOpenPeriod_ID")
-  private String lastOpenPeriodID = null;
+  @SerializedName("lastopenperiod_id")
+  private String lastopenperiodId = null;
 
-  @SerializedName("Account_ID")
-  private String accountID = null;
+  @SerializedName("account_id")
+  private String accountId = null;
 
-  @SerializedName("OutOfUse")
-  private Boolean outOfUse = null;
+  @SerializedName("outofuse")
+  private Boolean outofuse = null;
 
-  @SerializedName("ExpenseType_ID")
-  private String expenseTypeID = null;
+  @SerializedName("expensetype_id")
+  private String expensetypeId = null;
 
-  @SerializedName("IncomeType_ID")
-  private String incomeTypeID = null;
+  @SerializedName("incometype_id")
+  private String incometypeId = null;
 
-  @SerializedName("EditExtNumOnRows")
-  private Boolean editExtNumOnRows = null;
+  @SerializedName("editextnumonrows")
+  private Boolean editextnumonrows = null;
 
-  @SerializedName("CreateReservations")
-  private Boolean createReservations = null;
+  @SerializedName("createreservations")
+  private Boolean createreservations = null;
 
-  @SerializedName("PrefillCurrencyFromFirm")
-  private Boolean prefillCurrencyFromFirm = null;
+  @SerializedName("prefillcurrencyfromfirm")
+  private Boolean prefillcurrencyfromfirm = null;
 
-  @SerializedName("EETEstablishment_ID")
-  private String eETEstablishmentID = null;
+  @SerializedName("eetestablishment_id")
+  private String eetestablishmentId = null;
 
-  @SerializedName("OtherDocElectronicPayment")
-  private Boolean otherDocElectronicPayment = null;
+  @SerializedName("otherdocelectronicpayment")
+  private Boolean otherdocelectronicpayment = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Docqueue displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Docqueue id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Docqueue classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Docqueue objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Docqueue hidden(Boolean hidden) {
@@ -161,10 +197,10 @@ public class Docqueue   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -179,10 +215,10 @@ public class Docqueue   {
   }
 
    /**
-   * Zkratka [persistentní položka]
+   * zkratka [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Zkratka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "zkratka [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -197,10 +233,10 @@ public class Docqueue   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -209,27 +245,27 @@ public class Docqueue   {
     this.name = name;
   }
 
-  public Docqueue lastNumbers(List<Docqueueperiod> lastNumbers) {
-    this.lastNumbers = lastNumbers;
+  public Docqueue lastnumbers(List<Docqueueperiod> lastnumbers) {
+    this.lastnumbers = lastnumbers;
     return this;
   }
 
-  public Docqueue addLastNumbersItem(Docqueueperiod lastNumbersItem) {
-    this.lastNumbers.add(lastNumbersItem);
+  public Docqueue addLastnumbersItem(Docqueueperiod lastnumbersItem) {
+    this.lastnumbers.add(lastnumbersItem);
     return this;
   }
 
    /**
-   * Čísla; kolekce BO Řada dokladů - období [nepersistentní položka]
-   * @return lastNumbers
+   * Čísla; kolekce bo Řada dokladů - období [nepersistentní položka]
+   * @return lastnumbers
   **/
-  @ApiModelProperty(example = "null", value = "Čísla; kolekce BO Řada dokladů - období [nepersistentní položka]")
-  public List<Docqueueperiod> getLastNumbers() {
-    return lastNumbers;
+  @ApiModelProperty(example = "null", value = "Čísla; kolekce bo Řada dokladů - období [nepersistentní položka]")
+  public List<Docqueueperiod> getLastnumbers() {
+    return lastnumbers;
   }
 
-  public void setLastNumbers(List<Docqueueperiod> lastNumbers) {
-    this.lastNumbers = lastNumbers;
+  public void setLastnumbers(List<Docqueueperiod> lastnumbers) {
+    this.lastnumbers = lastnumbers;
   }
 
   public Docqueue note(String note) {
@@ -238,10 +274,10 @@ public class Docqueue   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -250,319 +286,328 @@ public class Docqueue   {
     this.note = note;
   }
 
-  public Docqueue documentType(String documentType) {
-    this.documentType = documentType;
+  public Docqueue documenttype(String documenttype) {
+    this.documenttype = documenttype;
     return this;
   }
 
    /**
-   * Typ dokladu [persistentní položka]
-   * @return documentType
+   * typ dokladu [persistentní položka]
+   * @return documenttype
   **/
-  @ApiModelProperty(example = "null", value = "Typ dokladu [persistentní položka]")
-  public String getDocumentType() {
-    return documentType;
+  @ApiModelProperty(example = "null", value = "typ dokladu [persistentní položka]")
+  public String getDocumenttype() {
+    return documenttype;
   }
 
-  public void setDocumentType(String documentType) {
-    this.documentType = documentType;
+  public void setDocumenttype(String documenttype) {
+    this.documenttype = documenttype;
   }
 
-  public Docqueue toAccount(Boolean toAccount) {
-    this.toAccount = toAccount;
+  public Docqueue toaccount(Boolean toaccount) {
+    this.toaccount = toaccount;
     return this;
   }
 
    /**
    * Účtovat [persistentní položka]
-   * @return toAccount
+   * @return toaccount
   **/
   @ApiModelProperty(example = "null", value = "Účtovat [persistentní položka]")
-  public Boolean getToAccount() {
-    return toAccount;
+  public Boolean getToaccount() {
+    return toaccount;
   }
 
-  public void setToAccount(Boolean toAccount) {
-    this.toAccount = toAccount;
+  public void setToaccount(Boolean toaccount) {
+    this.toaccount = toaccount;
   }
 
-  public Docqueue summaryAccounted(Boolean summaryAccounted) {
-    this.summaryAccounted = summaryAccounted;
+  public Docqueue summaryaccounted(Boolean summaryaccounted) {
+    this.summaryaccounted = summaryaccounted;
     return this;
   }
 
    /**
-   * Souhrnně [persistentní položka]
-   * @return summaryAccounted
+   * souhrnně [persistentní položka]
+   * @return summaryaccounted
   **/
-  @ApiModelProperty(example = "null", value = "Souhrnně [persistentní položka]")
-  public Boolean getSummaryAccounted() {
-    return summaryAccounted;
+  @ApiModelProperty(example = "null", value = "souhrnně [persistentní položka]")
+  public Boolean getSummaryaccounted() {
+    return summaryaccounted;
   }
 
-  public void setSummaryAccounted(Boolean summaryAccounted) {
-    this.summaryAccounted = summaryAccounted;
+  public void setSummaryaccounted(Boolean summaryaccounted) {
+    this.summaryaccounted = summaryaccounted;
   }
 
-  public Docqueue forceAccounting(Boolean forceAccounting) {
-    this.forceAccounting = forceAccounting;
+  public Docqueue forceaccounting(Boolean forceaccounting) {
+    this.forceaccounting = forceaccounting;
     return this;
   }
 
    /**
-   * Přeúčtovat vždy [persistentní položka]
-   * @return forceAccounting
+   * přeúčtovat vždy [persistentní položka]
+   * @return forceaccounting
   **/
-  @ApiModelProperty(example = "null", value = "Přeúčtovat vždy [persistentní položka]")
-  public Boolean getForceAccounting() {
-    return forceAccounting;
+  @ApiModelProperty(example = "null", value = "přeúčtovat vždy [persistentní položka]")
+  public Boolean getForceaccounting() {
+    return forceaccounting;
   }
 
-  public void setForceAccounting(Boolean forceAccounting) {
-    this.forceAccounting = forceAccounting;
+  public void setForceaccounting(Boolean forceaccounting) {
+    this.forceaccounting = forceaccounting;
   }
 
-  public Docqueue singleAccDocQueueID(Docqueue singleAccDocQueueID) {
-    this.singleAccDocQueueID = singleAccDocQueueID;
+  public Docqueue singleaccdocqueueId(Docqueue singleaccdocqueueId) {
+    this.singleaccdocqueueId = singleaccdocqueueId;
     return this;
   }
 
    /**
-   * Get singleAccDocQueueID
-   * @return singleAccDocQueueID
+   * Get singleaccdocqueueId
+   * @return singleaccdocqueueId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Docqueue getSingleAccDocQueueID() {
-    return singleAccDocQueueID;
+  public Docqueue getSingleaccdocqueueId() {
+    return singleaccdocqueueId;
   }
 
-  public void setSingleAccDocQueueID(Docqueue singleAccDocQueueID) {
-    this.singleAccDocQueueID = singleAccDocQueueID;
+  public void setSingleaccdocqueueId(Docqueue singleaccdocqueueId) {
+    this.singleaccdocqueueId = singleaccdocqueueId;
   }
 
-  public Docqueue summaryAccDocQueueID(Docqueue summaryAccDocQueueID) {
-    this.summaryAccDocQueueID = summaryAccDocQueueID;
+  public Docqueue summaryaccdocqueueId(Docqueue summaryaccdocqueueId) {
+    this.summaryaccdocqueueId = summaryaccdocqueueId;
     return this;
   }
 
    /**
-   * Get summaryAccDocQueueID
-   * @return summaryAccDocQueueID
+   * Get summaryaccdocqueueId
+   * @return summaryaccdocqueueId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Docqueue getSummaryAccDocQueueID() {
-    return summaryAccDocQueueID;
+  public Docqueue getSummaryaccdocqueueId() {
+    return summaryaccdocqueueId;
   }
 
-  public void setSummaryAccDocQueueID(Docqueue summaryAccDocQueueID) {
-    this.summaryAccDocQueueID = summaryAccDocQueueID;
+  public void setSummaryaccdocqueueId(Docqueue summaryaccdocqueueId) {
+    this.summaryaccdocqueueId = summaryaccdocqueueId;
   }
 
-  public Docqueue prefixVar(Integer prefixVar) {
-    this.prefixVar = prefixVar;
+  public Docqueue prefixvar(Integer prefixvar) {
+    this.prefixvar = prefixvar;
     return this;
   }
 
    /**
-   * Prefix řady [persistentní položka]
-   * @return prefixVar
+   * prefix řady [persistentní položka]
+   * @return prefixvar
   **/
-  @ApiModelProperty(example = "null", value = "Prefix řady [persistentní položka]")
-  public Integer getPrefixVar() {
-    return prefixVar;
+  @ApiModelProperty(example = "null", value = "prefix řady [persistentní položka]")
+  public Integer getPrefixvar() {
+    return prefixvar;
   }
 
-  public void setPrefixVar(Integer prefixVar) {
-    this.prefixVar = prefixVar;
+  public void setPrefixvar(Integer prefixvar) {
+    this.prefixvar = prefixvar;
   }
 
-  public Docqueue firstOpenPeriodID(String firstOpenPeriodID) {
-    this.firstOpenPeriodID = firstOpenPeriodID;
+  public Docqueue firstopenperiodId(String firstopenperiodId) {
+    this.firstopenperiodId = firstopenperiodId;
     return this;
   }
 
    /**
-   * První otevřené období; ID objektu Období [persistentní položka]
-   * @return firstOpenPeriodID
+   * první otevřené období; id objektu období [persistentní položka]
+   * @return firstopenperiodId
   **/
-  @ApiModelProperty(example = "null", value = "První otevřené období; ID objektu Období [persistentní položka]")
-  public String getFirstOpenPeriodID() {
-    return firstOpenPeriodID;
+  @ApiModelProperty(example = "null", value = "první otevřené období; id objektu období [persistentní položka]")
+  public String getFirstopenperiodId() {
+    return firstopenperiodId;
   }
 
-  public void setFirstOpenPeriodID(String firstOpenPeriodID) {
-    this.firstOpenPeriodID = firstOpenPeriodID;
+  public void setFirstopenperiodId(String firstopenperiodId) {
+    this.firstopenperiodId = firstopenperiodId;
   }
 
-   /**
-   * Poslední otevřené období; ID objektu Období [persistentní položka]
-   * @return lastOpenPeriodID
-  **/
-  @ApiModelProperty(example = "null", value = "Poslední otevřené období; ID objektu Období [persistentní položka]")
-  public String getLastOpenPeriodID() {
-    return lastOpenPeriodID;
-  }
-
-  public Docqueue accountID(String accountID) {
-    this.accountID = accountID;
+  public Docqueue lastopenperiodId(String lastopenperiodId) {
+    this.lastopenperiodId = lastopenperiodId;
     return this;
   }
 
    /**
-   * Účet; ID objektu Účet účetního rozvrhu [persistentní položka]
-   * @return accountID
+   * poslední otevřené období; id objektu období [persistentní položka]
+   * @return lastopenperiodId
   **/
-  @ApiModelProperty(example = "null", value = "Účet; ID objektu Účet účetního rozvrhu [persistentní položka]")
-  public String getAccountID() {
-    return accountID;
+  @ApiModelProperty(example = "null", value = "poslední otevřené období; id objektu období [persistentní položka]")
+  public String getLastopenperiodId() {
+    return lastopenperiodId;
   }
 
-  public void setAccountID(String accountID) {
-    this.accountID = accountID;
+  public void setLastopenperiodId(String lastopenperiodId) {
+    this.lastopenperiodId = lastopenperiodId;
   }
 
-  public Docqueue outOfUse(Boolean outOfUse) {
-    this.outOfUse = outOfUse;
+  public Docqueue accountId(String accountId) {
+    this.accountId = accountId;
     return this;
   }
 
    /**
-   * Nepoužívaná řada [persistentní položka]
-   * @return outOfUse
+   * Účet; id objektu Účet účetního rozvrhu [persistentní položka]
+   * @return accountId
   **/
-  @ApiModelProperty(example = "null", value = "Nepoužívaná řada [persistentní položka]")
-  public Boolean getOutOfUse() {
-    return outOfUse;
+  @ApiModelProperty(example = "null", value = "Účet; id objektu Účet účetního rozvrhu [persistentní položka]")
+  public String getAccountId() {
+    return accountId;
   }
 
-  public void setOutOfUse(Boolean outOfUse) {
-    this.outOfUse = outOfUse;
+  public void setAccountId(String accountId) {
+    this.accountId = accountId;
   }
 
-  public Docqueue expenseTypeID(String expenseTypeID) {
-    this.expenseTypeID = expenseTypeID;
+  public Docqueue outofuse(Boolean outofuse) {
+    this.outofuse = outofuse;
     return this;
   }
 
    /**
-   * Typ výdaje; ID objektu Typ výdaje [persistentní položka]
-   * @return expenseTypeID
+   * nepoužívaná řada [persistentní položka]
+   * @return outofuse
   **/
-  @ApiModelProperty(example = "null", value = "Typ výdaje; ID objektu Typ výdaje [persistentní položka]")
-  public String getExpenseTypeID() {
-    return expenseTypeID;
+  @ApiModelProperty(example = "null", value = "nepoužívaná řada [persistentní položka]")
+  public Boolean getOutofuse() {
+    return outofuse;
   }
 
-  public void setExpenseTypeID(String expenseTypeID) {
-    this.expenseTypeID = expenseTypeID;
+  public void setOutofuse(Boolean outofuse) {
+    this.outofuse = outofuse;
   }
 
-  public Docqueue incomeTypeID(String incomeTypeID) {
-    this.incomeTypeID = incomeTypeID;
+  public Docqueue expensetypeId(String expensetypeId) {
+    this.expensetypeId = expensetypeId;
     return this;
   }
 
    /**
-   * Typ příjmu; ID objektu Typ příjmu [persistentní položka]
-   * @return incomeTypeID
+   * typ výdaje; id objektu typ výdaje [persistentní položka]
+   * @return expensetypeId
   **/
-  @ApiModelProperty(example = "null", value = "Typ příjmu; ID objektu Typ příjmu [persistentní položka]")
-  public String getIncomeTypeID() {
-    return incomeTypeID;
+  @ApiModelProperty(example = "null", value = "typ výdaje; id objektu typ výdaje [persistentní položka]")
+  public String getExpensetypeId() {
+    return expensetypeId;
   }
 
-  public void setIncomeTypeID(String incomeTypeID) {
-    this.incomeTypeID = incomeTypeID;
+  public void setExpensetypeId(String expensetypeId) {
+    this.expensetypeId = expensetypeId;
   }
 
-  public Docqueue editExtNumOnRows(Boolean editExtNumOnRows) {
-    this.editExtNumOnRows = editExtNumOnRows;
+  public Docqueue incometypeId(String incometypeId) {
+    this.incometypeId = incometypeId;
     return this;
   }
 
    /**
-   * Zadávat externí číslo na řádcích [persistentní položka]
-   * @return editExtNumOnRows
+   * typ příjmu; id objektu typ příjmu [persistentní položka]
+   * @return incometypeId
   **/
-  @ApiModelProperty(example = "null", value = "Zadávat externí číslo na řádcích [persistentní položka]")
-  public Boolean getEditExtNumOnRows() {
-    return editExtNumOnRows;
+  @ApiModelProperty(example = "null", value = "typ příjmu; id objektu typ příjmu [persistentní položka]")
+  public String getIncometypeId() {
+    return incometypeId;
   }
 
-  public void setEditExtNumOnRows(Boolean editExtNumOnRows) {
-    this.editExtNumOnRows = editExtNumOnRows;
+  public void setIncometypeId(String incometypeId) {
+    this.incometypeId = incometypeId;
   }
 
-  public Docqueue createReservations(Boolean createReservations) {
-    this.createReservations = createReservations;
+  public Docqueue editextnumonrows(Boolean editextnumonrows) {
+    this.editextnumonrows = editextnumonrows;
     return this;
   }
 
    /**
-   * Vytvořit rezervace [persistentní položka]
-   * @return createReservations
+   * zadávat externí číslo na řádcích [persistentní položka]
+   * @return editextnumonrows
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořit rezervace [persistentní položka]")
-  public Boolean getCreateReservations() {
-    return createReservations;
+  @ApiModelProperty(example = "null", value = "zadávat externí číslo na řádcích [persistentní položka]")
+  public Boolean getEditextnumonrows() {
+    return editextnumonrows;
   }
 
-  public void setCreateReservations(Boolean createReservations) {
-    this.createReservations = createReservations;
+  public void setEditextnumonrows(Boolean editextnumonrows) {
+    this.editextnumonrows = editextnumonrows;
   }
 
-  public Docqueue prefillCurrencyFromFirm(Boolean prefillCurrencyFromFirm) {
-    this.prefillCurrencyFromFirm = prefillCurrencyFromFirm;
+  public Docqueue createreservations(Boolean createreservations) {
+    this.createreservations = createreservations;
     return this;
   }
 
    /**
-   * Předvyplnit měnu dle firmy [persistentní položka]
-   * @return prefillCurrencyFromFirm
+   * vytvořit rezervace [persistentní položka]
+   * @return createreservations
   **/
-  @ApiModelProperty(example = "null", value = "Předvyplnit měnu dle firmy [persistentní položka]")
-  public Boolean getPrefillCurrencyFromFirm() {
-    return prefillCurrencyFromFirm;
+  @ApiModelProperty(example = "null", value = "vytvořit rezervace [persistentní položka]")
+  public Boolean getCreatereservations() {
+    return createreservations;
   }
 
-  public void setPrefillCurrencyFromFirm(Boolean prefillCurrencyFromFirm) {
-    this.prefillCurrencyFromFirm = prefillCurrencyFromFirm;
+  public void setCreatereservations(Boolean createreservations) {
+    this.createreservations = createreservations;
   }
 
-  public Docqueue eETEstablishmentID(String eETEstablishmentID) {
-    this.eETEstablishmentID = eETEstablishmentID;
+  public Docqueue prefillcurrencyfromfirm(Boolean prefillcurrencyfromfirm) {
+    this.prefillcurrencyfromfirm = prefillcurrencyfromfirm;
     return this;
   }
 
    /**
-   * Provozovna EET; ID objektu Provozovna EET [persistentní položka]
-   * @return eETEstablishmentID
+   * předvyplnit měnu dle firmy [persistentní položka]
+   * @return prefillcurrencyfromfirm
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna EET; ID objektu Provozovna EET [persistentní položka]")
-  public String getEETEstablishmentID() {
-    return eETEstablishmentID;
+  @ApiModelProperty(example = "null", value = "předvyplnit měnu dle firmy [persistentní položka]")
+  public Boolean getPrefillcurrencyfromfirm() {
+    return prefillcurrencyfromfirm;
   }
 
-  public void setEETEstablishmentID(String eETEstablishmentID) {
-    this.eETEstablishmentID = eETEstablishmentID;
+  public void setPrefillcurrencyfromfirm(Boolean prefillcurrencyfromfirm) {
+    this.prefillcurrencyfromfirm = prefillcurrencyfromfirm;
   }
 
-  public Docqueue otherDocElectronicPayment(Boolean otherDocElectronicPayment) {
-    this.otherDocElectronicPayment = otherDocElectronicPayment;
+  public Docqueue eetestablishmentId(String eetestablishmentId) {
+    this.eetestablishmentId = eetestablishmentId;
     return this;
   }
 
    /**
-   * Pro evidenci elektronické platby [persistentní položka]
-   * @return otherDocElectronicPayment
+   * provozovna eet; id objektu provozovna eet [persistentní položka]
+   * @return eetestablishmentId
   **/
-  @ApiModelProperty(example = "null", value = "Pro evidenci elektronické platby [persistentní položka]")
-  public Boolean getOtherDocElectronicPayment() {
-    return otherDocElectronicPayment;
+  @ApiModelProperty(example = "null", value = "provozovna eet; id objektu provozovna eet [persistentní položka]")
+  public String getEetestablishmentId() {
+    return eetestablishmentId;
   }
 
-  public void setOtherDocElectronicPayment(Boolean otherDocElectronicPayment) {
-    this.otherDocElectronicPayment = otherDocElectronicPayment;
+  public void setEetestablishmentId(String eetestablishmentId) {
+    this.eetestablishmentId = eetestablishmentId;
+  }
+
+  public Docqueue otherdocelectronicpayment(Boolean otherdocelectronicpayment) {
+    this.otherdocelectronicpayment = otherdocelectronicpayment;
+    return this;
+  }
+
+   /**
+   * pro evidenci elektronické platby [persistentní položka]
+   * @return otherdocelectronicpayment
+  **/
+  @ApiModelProperty(example = "null", value = "pro evidenci elektronické platby [persistentní položka]")
+  public Boolean getOtherdocelectronicpayment() {
+    return otherdocelectronicpayment;
+  }
+
+  public void setOtherdocelectronicpayment(Boolean otherdocelectronicpayment) {
+    this.otherdocelectronicpayment = otherdocelectronicpayment;
   }
 
 
@@ -575,38 +620,38 @@ public class Docqueue   {
       return false;
     }
     Docqueue docqueue = (Docqueue) o;
-    return Objects.equals(this.displayName, docqueue.displayName) &&
-        Objects.equals(this.ID, docqueue.ID) &&
-        Objects.equals(this.classID, docqueue.classID) &&
-        Objects.equals(this.objVersion, docqueue.objVersion) &&
+    return Objects.equals(this.displayname, docqueue.displayname) &&
+        Objects.equals(this.id, docqueue.id) &&
+        Objects.equals(this.classid, docqueue.classid) &&
+        Objects.equals(this.objversion, docqueue.objversion) &&
         Objects.equals(this.hidden, docqueue.hidden) &&
         Objects.equals(this.code, docqueue.code) &&
         Objects.equals(this.name, docqueue.name) &&
-        Objects.equals(this.lastNumbers, docqueue.lastNumbers) &&
+        Objects.equals(this.lastnumbers, docqueue.lastnumbers) &&
         Objects.equals(this.note, docqueue.note) &&
-        Objects.equals(this.documentType, docqueue.documentType) &&
-        Objects.equals(this.toAccount, docqueue.toAccount) &&
-        Objects.equals(this.summaryAccounted, docqueue.summaryAccounted) &&
-        Objects.equals(this.forceAccounting, docqueue.forceAccounting) &&
-        Objects.equals(this.singleAccDocQueueID, docqueue.singleAccDocQueueID) &&
-        Objects.equals(this.summaryAccDocQueueID, docqueue.summaryAccDocQueueID) &&
-        Objects.equals(this.prefixVar, docqueue.prefixVar) &&
-        Objects.equals(this.firstOpenPeriodID, docqueue.firstOpenPeriodID) &&
-        Objects.equals(this.lastOpenPeriodID, docqueue.lastOpenPeriodID) &&
-        Objects.equals(this.accountID, docqueue.accountID) &&
-        Objects.equals(this.outOfUse, docqueue.outOfUse) &&
-        Objects.equals(this.expenseTypeID, docqueue.expenseTypeID) &&
-        Objects.equals(this.incomeTypeID, docqueue.incomeTypeID) &&
-        Objects.equals(this.editExtNumOnRows, docqueue.editExtNumOnRows) &&
-        Objects.equals(this.createReservations, docqueue.createReservations) &&
-        Objects.equals(this.prefillCurrencyFromFirm, docqueue.prefillCurrencyFromFirm) &&
-        Objects.equals(this.eETEstablishmentID, docqueue.eETEstablishmentID) &&
-        Objects.equals(this.otherDocElectronicPayment, docqueue.otherDocElectronicPayment);
+        Objects.equals(this.documenttype, docqueue.documenttype) &&
+        Objects.equals(this.toaccount, docqueue.toaccount) &&
+        Objects.equals(this.summaryaccounted, docqueue.summaryaccounted) &&
+        Objects.equals(this.forceaccounting, docqueue.forceaccounting) &&
+        Objects.equals(this.singleaccdocqueueId, docqueue.singleaccdocqueueId) &&
+        Objects.equals(this.summaryaccdocqueueId, docqueue.summaryaccdocqueueId) &&
+        Objects.equals(this.prefixvar, docqueue.prefixvar) &&
+        Objects.equals(this.firstopenperiodId, docqueue.firstopenperiodId) &&
+        Objects.equals(this.lastopenperiodId, docqueue.lastopenperiodId) &&
+        Objects.equals(this.accountId, docqueue.accountId) &&
+        Objects.equals(this.outofuse, docqueue.outofuse) &&
+        Objects.equals(this.expensetypeId, docqueue.expensetypeId) &&
+        Objects.equals(this.incometypeId, docqueue.incometypeId) &&
+        Objects.equals(this.editextnumonrows, docqueue.editextnumonrows) &&
+        Objects.equals(this.createreservations, docqueue.createreservations) &&
+        Objects.equals(this.prefillcurrencyfromfirm, docqueue.prefillcurrencyfromfirm) &&
+        Objects.equals(this.eetestablishmentId, docqueue.eetestablishmentId) &&
+        Objects.equals(this.otherdocelectronicpayment, docqueue.otherdocelectronicpayment);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, lastNumbers, note, documentType, toAccount, summaryAccounted, forceAccounting, singleAccDocQueueID, summaryAccDocQueueID, prefixVar, firstOpenPeriodID, lastOpenPeriodID, accountID, outOfUse, expenseTypeID, incomeTypeID, editExtNumOnRows, createReservations, prefillCurrencyFromFirm, eETEstablishmentID, otherDocElectronicPayment);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, lastnumbers, note, documenttype, toaccount, summaryaccounted, forceaccounting, singleaccdocqueueId, summaryaccdocqueueId, prefixvar, firstopenperiodId, lastopenperiodId, accountId, outofuse, expensetypeId, incometypeId, editextnumonrows, createreservations, prefillcurrencyfromfirm, eetestablishmentId, otherdocelectronicpayment);
   }
 
   @Override
@@ -614,33 +659,33 @@ public class Docqueue   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Docqueue {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    lastNumbers: ").append(toIndentedString(lastNumbers)).append("\n");
+    sb.append("    lastnumbers: ").append(toIndentedString(lastnumbers)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
-    sb.append("    documentType: ").append(toIndentedString(documentType)).append("\n");
-    sb.append("    toAccount: ").append(toIndentedString(toAccount)).append("\n");
-    sb.append("    summaryAccounted: ").append(toIndentedString(summaryAccounted)).append("\n");
-    sb.append("    forceAccounting: ").append(toIndentedString(forceAccounting)).append("\n");
-    sb.append("    singleAccDocQueueID: ").append(toIndentedString(singleAccDocQueueID)).append("\n");
-    sb.append("    summaryAccDocQueueID: ").append(toIndentedString(summaryAccDocQueueID)).append("\n");
-    sb.append("    prefixVar: ").append(toIndentedString(prefixVar)).append("\n");
-    sb.append("    firstOpenPeriodID: ").append(toIndentedString(firstOpenPeriodID)).append("\n");
-    sb.append("    lastOpenPeriodID: ").append(toIndentedString(lastOpenPeriodID)).append("\n");
-    sb.append("    accountID: ").append(toIndentedString(accountID)).append("\n");
-    sb.append("    outOfUse: ").append(toIndentedString(outOfUse)).append("\n");
-    sb.append("    expenseTypeID: ").append(toIndentedString(expenseTypeID)).append("\n");
-    sb.append("    incomeTypeID: ").append(toIndentedString(incomeTypeID)).append("\n");
-    sb.append("    editExtNumOnRows: ").append(toIndentedString(editExtNumOnRows)).append("\n");
-    sb.append("    createReservations: ").append(toIndentedString(createReservations)).append("\n");
-    sb.append("    prefillCurrencyFromFirm: ").append(toIndentedString(prefillCurrencyFromFirm)).append("\n");
-    sb.append("    eETEstablishmentID: ").append(toIndentedString(eETEstablishmentID)).append("\n");
-    sb.append("    otherDocElectronicPayment: ").append(toIndentedString(otherDocElectronicPayment)).append("\n");
+    sb.append("    documenttype: ").append(toIndentedString(documenttype)).append("\n");
+    sb.append("    toaccount: ").append(toIndentedString(toaccount)).append("\n");
+    sb.append("    summaryaccounted: ").append(toIndentedString(summaryaccounted)).append("\n");
+    sb.append("    forceaccounting: ").append(toIndentedString(forceaccounting)).append("\n");
+    sb.append("    singleaccdocqueueId: ").append(toIndentedString(singleaccdocqueueId)).append("\n");
+    sb.append("    summaryaccdocqueueId: ").append(toIndentedString(summaryaccdocqueueId)).append("\n");
+    sb.append("    prefixvar: ").append(toIndentedString(prefixvar)).append("\n");
+    sb.append("    firstopenperiodId: ").append(toIndentedString(firstopenperiodId)).append("\n");
+    sb.append("    lastopenperiodId: ").append(toIndentedString(lastopenperiodId)).append("\n");
+    sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
+    sb.append("    outofuse: ").append(toIndentedString(outofuse)).append("\n");
+    sb.append("    expensetypeId: ").append(toIndentedString(expensetypeId)).append("\n");
+    sb.append("    incometypeId: ").append(toIndentedString(incometypeId)).append("\n");
+    sb.append("    editextnumonrows: ").append(toIndentedString(editextnumonrows)).append("\n");
+    sb.append("    createreservations: ").append(toIndentedString(createreservations)).append("\n");
+    sb.append("    prefillcurrencyfromfirm: ").append(toIndentedString(prefillcurrencyfromfirm)).append("\n");
+    sb.append("    eetestablishmentId: ").append(toIndentedString(eetestablishmentId)).append("\n");
+    sb.append("    otherdocelectronicpayment: ").append(toIndentedString(otherdocelectronicpayment)).append("\n");
     sb.append("}");
     return sb.toString();
   }

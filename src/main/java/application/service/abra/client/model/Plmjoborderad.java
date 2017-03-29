@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,150 +34,195 @@ import java.util.Objects;
 /**
  * Plmjoborderad
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmjoborderad   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("AdditionalCosts_ID")
-  private String additionalCostsID = null;
+  @SerializedName("additionalcosts_id")
+  private String additionalcostsId = null;
 
-  @SerializedName("PriceAmount")
-  private Double priceAmount = null;
+  @SerializedName("priceamount")
+  private Double priceamount = null;
 
-  @SerializedName("ConsumableAmount")
-  private Double consumableAmount = null;
+  @SerializedName("consumableamount")
+  private Double consumableamount = null;
 
-  @SerializedName("MaterialExpense")
-  private Double materialExpense = null;
+  @SerializedName("materialexpense")
+  private Double materialexpense = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Výrobní příkaz [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Výrobní příkaz [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Plmjoborderad additionalCostsID(String additionalCostsID) {
-    this.additionalCostsID = additionalCostsID;
+  public Plmjoborderad displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Vedlejší pořizovací náklady; ID objektu Příjemka - Vedlejší pořizovací náklady [persistentní položka]
-   * @return additionalCostsID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vedlejší pořizovací náklady; ID objektu Příjemka - Vedlejší pořizovací náklady [persistentní položka]")
-  public String getAdditionalCostsID() {
-    return additionalCostsID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setAdditionalCostsID(String additionalCostsID) {
-    this.additionalCostsID = additionalCostsID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Plmjoborderad priceAmount(Double priceAmount) {
-    this.priceAmount = priceAmount;
+  public Plmjoborderad id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Pevná cena [persistentní položka]
-   * @return priceAmount
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Pevná cena [persistentní položka]")
-  public Double getPriceAmount() {
-    return priceAmount;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setPriceAmount(Double priceAmount) {
-    this.priceAmount = priceAmount;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Plmjoborderad consumableAmount(Double consumableAmount) {
-    this.consumableAmount = consumableAmount;
+  public Plmjoborderad classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Spotřební materiál [persistentní položka]
-   * @return consumableAmount
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Spotřební materiál [persistentní položka]")
-  public Double getConsumableAmount() {
-    return consumableAmount;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setConsumableAmount(Double consumableAmount) {
-    this.consumableAmount = consumableAmount;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Plmjoborderad materialExpense(Double materialExpense) {
-    this.materialExpense = materialExpense;
+  public Plmjoborderad objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Materiálová režie [persistentní položka]
-   * @return materialExpense
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Materiálová režie [persistentní položka]")
-  public Double getMaterialExpense() {
-    return materialExpense;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setMaterialExpense(Double materialExpense) {
-    this.materialExpense = materialExpense;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Plmjoborderad parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu výrobní příkaz [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu výrobní příkaz [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Plmjoborderad additionalcostsId(String additionalcostsId) {
+    this.additionalcostsId = additionalcostsId;
+    return this;
+  }
+
+   /**
+   * vedlejší pořizovací náklady; id objektu příjemka - vedlejší pořizovací náklady [persistentní položka]
+   * @return additionalcostsId
+  **/
+  @ApiModelProperty(example = "null", value = "vedlejší pořizovací náklady; id objektu příjemka - vedlejší pořizovací náklady [persistentní položka]")
+  public String getAdditionalcostsId() {
+    return additionalcostsId;
+  }
+
+  public void setAdditionalcostsId(String additionalcostsId) {
+    this.additionalcostsId = additionalcostsId;
+  }
+
+  public Plmjoborderad priceamount(Double priceamount) {
+    this.priceamount = priceamount;
+    return this;
+  }
+
+   /**
+   * pevná cena [persistentní položka]
+   * @return priceamount
+  **/
+  @ApiModelProperty(example = "null", value = "pevná cena [persistentní položka]")
+  public Double getPriceamount() {
+    return priceamount;
+  }
+
+  public void setPriceamount(Double priceamount) {
+    this.priceamount = priceamount;
+  }
+
+  public Plmjoborderad consumableamount(Double consumableamount) {
+    this.consumableamount = consumableamount;
+    return this;
+  }
+
+   /**
+   * spotřební materiál [persistentní položka]
+   * @return consumableamount
+  **/
+  @ApiModelProperty(example = "null", value = "spotřební materiál [persistentní položka]")
+  public Double getConsumableamount() {
+    return consumableamount;
+  }
+
+  public void setConsumableamount(Double consumableamount) {
+    this.consumableamount = consumableamount;
+  }
+
+  public Plmjoborderad materialexpense(Double materialexpense) {
+    this.materialexpense = materialexpense;
+    return this;
+  }
+
+   /**
+   * materiálová režie [persistentní položka]
+   * @return materialexpense
+  **/
+  @ApiModelProperty(example = "null", value = "materiálová režie [persistentní položka]")
+  public Double getMaterialexpense() {
+    return materialexpense;
+  }
+
+  public void setMaterialexpense(Double materialexpense) {
+    this.materialexpense = materialexpense;
   }
 
 
@@ -190,20 +235,20 @@ public class Plmjoborderad   {
       return false;
     }
     Plmjoborderad plmjoborderad = (Plmjoborderad) o;
-    return Objects.equals(this.displayName, plmjoborderad.displayName) &&
-        Objects.equals(this.ID, plmjoborderad.ID) &&
-        Objects.equals(this.classID, plmjoborderad.classID) &&
-        Objects.equals(this.objVersion, plmjoborderad.objVersion) &&
-        Objects.equals(this.parentID, plmjoborderad.parentID) &&
-        Objects.equals(this.additionalCostsID, plmjoborderad.additionalCostsID) &&
-        Objects.equals(this.priceAmount, plmjoborderad.priceAmount) &&
-        Objects.equals(this.consumableAmount, plmjoborderad.consumableAmount) &&
-        Objects.equals(this.materialExpense, plmjoborderad.materialExpense);
+    return Objects.equals(this.displayname, plmjoborderad.displayname) &&
+        Objects.equals(this.id, plmjoborderad.id) &&
+        Objects.equals(this.classid, plmjoborderad.classid) &&
+        Objects.equals(this.objversion, plmjoborderad.objversion) &&
+        Objects.equals(this.parentId, plmjoborderad.parentId) &&
+        Objects.equals(this.additionalcostsId, plmjoborderad.additionalcostsId) &&
+        Objects.equals(this.priceamount, plmjoborderad.priceamount) &&
+        Objects.equals(this.consumableamount, plmjoborderad.consumableamount) &&
+        Objects.equals(this.materialexpense, plmjoborderad.materialexpense);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, additionalCostsID, priceAmount, consumableAmount, materialExpense);
+    return Objects.hash(displayname, id, classid, objversion, parentId, additionalcostsId, priceamount, consumableamount, materialexpense);
   }
 
   @Override
@@ -211,15 +256,15 @@ public class Plmjoborderad   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmjoborderad {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    additionalCostsID: ").append(toIndentedString(additionalCostsID)).append("\n");
-    sb.append("    priceAmount: ").append(toIndentedString(priceAmount)).append("\n");
-    sb.append("    consumableAmount: ").append(toIndentedString(consumableAmount)).append("\n");
-    sb.append("    materialExpense: ").append(toIndentedString(materialExpense)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    additionalcostsId: ").append(toIndentedString(additionalcostsId)).append("\n");
+    sb.append("    priceamount: ").append(toIndentedString(priceamount)).append("\n");
+    sb.append("    consumableamount: ").append(toIndentedString(consumableamount)).append("\n");
+    sb.append("    materialexpense: ").append(toIndentedString(materialexpense)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,129 +37,165 @@ import java.util.Objects;
 /**
  * Shifttype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Shifttype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ShiftGenCode")
-  private String shiftGenCode = null;
+  @SerializedName("shiftgencode")
+  private String shiftgencode = null;
 
-  @SerializedName("WeekDays")
-  private String weekDays = null;
+  @SerializedName("weekdays")
+  private String weekdays = null;
 
-  @SerializedName("ShiftBaseType")
-  private Integer shiftBaseType = null;
+  @SerializedName("shiftbasetype")
+  private Integer shiftbasetype = null;
 
-  @SerializedName("InHolidays")
-  private Boolean inHolidays = null;
+  @SerializedName("inholidays")
+  private Boolean inholidays = null;
 
-  @SerializedName("InitialHour")
-  private Double initialHour = null;
+  @SerializedName("initialhour")
+  private Double initialhour = null;
 
-  @SerializedName("InitialHour$DATE")
-  private DateTime initialHourDATE = null;
+  @SerializedName("initialhour$date")
+  private DateTime initialhourdate = null;
 
-  @SerializedName("HoursShift")
-  private Double hoursShift = null;
+  @SerializedName("hoursshift")
+  private Double hoursshift = null;
 
-  @SerializedName("HoursCount")
-  private Double hoursCount = null;
+  @SerializedName("hourscount")
+  private Double hourscount = null;
 
-  @SerializedName("HoursNight")
-  private Double hoursNight = null;
+  @SerializedName("hoursnight")
+  private Double hoursnight = null;
 
-  @SerializedName("HoursEnvir")
-  private Double hoursEnvir = null;
+  @SerializedName("hoursenvir")
+  private Double hoursenvir = null;
 
-  @SerializedName("HoursPausesTotal")
-  private Double hoursPausesTotal = null;
+  @SerializedName("hourspausestotal")
+  private Double hourspausestotal = null;
 
-  @SerializedName("WeekDayMo")
-  private Boolean weekDayMo = null;
+  @SerializedName("weekdaymo")
+  private Boolean weekdaymo = null;
 
-  @SerializedName("WeekDayTu")
-  private Boolean weekDayTu = null;
+  @SerializedName("weekdaytu")
+  private Boolean weekdaytu = null;
 
-  @SerializedName("WeekDayWe")
-  private Boolean weekDayWe = null;
+  @SerializedName("weekdaywe")
+  private Boolean weekdaywe = null;
 
-  @SerializedName("WeekDayTh")
-  private Boolean weekDayTh = null;
+  @SerializedName("weekdayth")
+  private Boolean weekdayth = null;
 
-  @SerializedName("WeekDayFr")
-  private Boolean weekDayFr = null;
+  @SerializedName("weekdayfr")
+  private Boolean weekdayfr = null;
 
-  @SerializedName("WeekDaySa")
-  private Boolean weekDaySa = null;
+  @SerializedName("weekdaysa")
+  private Boolean weekdaysa = null;
 
-  @SerializedName("WeekDaySu")
-  private Boolean weekDaySu = null;
+  @SerializedName("weekdaysu")
+  private Boolean weekdaysu = null;
 
-  @SerializedName("ShiftBaseTypeText")
-  private String shiftBaseTypeText = null;
+  @SerializedName("shiftbasetypetext")
+  private String shiftbasetypetext = null;
 
-  @SerializedName("CalendarColor")
-  private Integer calendarColor = null;
+  @SerializedName("calendarcolor")
+  private Integer calendarcolor = null;
 
-  @SerializedName("CRPGroup")
-  private String cRPGroup = null;
+  @SerializedName("crpgroup")
+  private String crpgroup = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Pauses")
+  @SerializedName("pauses")
   private List<Shifttypepause> pauses = new ArrayList<Shifttypepause>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Shifttype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Shifttype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Shifttype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Shifttype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Shifttype code(String code) {
@@ -168,10 +204,10 @@ public class Shifttype   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -186,10 +222,10 @@ public class Shifttype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -198,382 +234,382 @@ public class Shifttype   {
     this.name = name;
   }
 
-  public Shifttype shiftGenCode(String shiftGenCode) {
-    this.shiftGenCode = shiftGenCode;
+  public Shifttype shiftgencode(String shiftgencode) {
+    this.shiftgencode = shiftgencode;
     return this;
   }
 
    /**
-   * Kód [persistentní položka]
-   * @return shiftGenCode
+   * kód [persistentní položka]
+   * @return shiftgencode
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
-  public String getShiftGenCode() {
-    return shiftGenCode;
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
+  public String getShiftgencode() {
+    return shiftgencode;
   }
 
-  public void setShiftGenCode(String shiftGenCode) {
-    this.shiftGenCode = shiftGenCode;
+  public void setShiftgencode(String shiftgencode) {
+    this.shiftgencode = shiftgencode;
   }
 
-  public Shifttype weekDays(String weekDays) {
-    this.weekDays = weekDays;
+  public Shifttype weekdays(String weekdays) {
+    this.weekdays = weekdays;
     return this;
   }
 
    /**
-   * Dny v týdnu [persistentní položka]
-   * @return weekDays
+   * dny v týdnu [persistentní položka]
+   * @return weekdays
   **/
-  @ApiModelProperty(example = "null", value = "Dny v týdnu [persistentní položka]")
-  public String getWeekDays() {
-    return weekDays;
+  @ApiModelProperty(example = "null", value = "dny v týdnu [persistentní položka]")
+  public String getWeekdays() {
+    return weekdays;
   }
 
-  public void setWeekDays(String weekDays) {
-    this.weekDays = weekDays;
+  public void setWeekdays(String weekdays) {
+    this.weekdays = weekdays;
   }
 
-  public Shifttype shiftBaseType(Integer shiftBaseType) {
-    this.shiftBaseType = shiftBaseType;
+  public Shifttype shiftbasetype(Integer shiftbasetype) {
+    this.shiftbasetype = shiftbasetype;
     return this;
   }
 
    /**
-   * Základní typ [persistentní položka]
-   * @return shiftBaseType
+   * základní typ [persistentní položka]
+   * @return shiftbasetype
   **/
-  @ApiModelProperty(example = "null", value = "Základní typ [persistentní položka]")
-  public Integer getShiftBaseType() {
-    return shiftBaseType;
+  @ApiModelProperty(example = "null", value = "základní typ [persistentní položka]")
+  public Integer getShiftbasetype() {
+    return shiftbasetype;
   }
 
-  public void setShiftBaseType(Integer shiftBaseType) {
-    this.shiftBaseType = shiftBaseType;
+  public void setShiftbasetype(Integer shiftbasetype) {
+    this.shiftbasetype = shiftbasetype;
   }
 
-  public Shifttype inHolidays(Boolean inHolidays) {
-    this.inHolidays = inHolidays;
+  public Shifttype inholidays(Boolean inholidays) {
+    this.inholidays = inholidays;
     return this;
   }
 
    /**
-   * Ve svátek [persistentní položka]
-   * @return inHolidays
+   * ve svátek [persistentní položka]
+   * @return inholidays
   **/
-  @ApiModelProperty(example = "null", value = "Ve svátek [persistentní položka]")
-  public Boolean getInHolidays() {
-    return inHolidays;
+  @ApiModelProperty(example = "null", value = "ve svátek [persistentní položka]")
+  public Boolean getInholidays() {
+    return inholidays;
   }
 
-  public void setInHolidays(Boolean inHolidays) {
-    this.inHolidays = inHolidays;
+  public void setInholidays(Boolean inholidays) {
+    this.inholidays = inholidays;
   }
 
-  public Shifttype initialHour(Double initialHour) {
-    this.initialHour = initialHour;
+  public Shifttype initialhour(Double initialhour) {
+    this.initialhour = initialhour;
     return this;
   }
 
    /**
-   * Hodina od [persistentní položka]
-   * @return initialHour
+   * hodina od [persistentní položka]
+   * @return initialhour
   **/
-  @ApiModelProperty(example = "null", value = "Hodina od [persistentní položka]")
-  public Double getInitialHour() {
-    return initialHour;
+  @ApiModelProperty(example = "null", value = "hodina od [persistentní položka]")
+  public Double getInitialhour() {
+    return initialhour;
   }
 
-  public void setInitialHour(Double initialHour) {
-    this.initialHour = initialHour;
+  public void setInitialhour(Double initialhour) {
+    this.initialhour = initialhour;
   }
 
-  public Shifttype initialHourDATE(DateTime initialHourDATE) {
-    this.initialHourDATE = initialHourDATE;
+  public Shifttype initialhourdate(DateTime initialhourdate) {
+    this.initialhourdate = initialhourdate;
     return this;
   }
 
    /**
-   * Hodina od (ve std. formátu času)
-   * @return initialHourDATE
+   * hodina od (ve std. formátu času)
+   * @return initialhourdate
   **/
-  @ApiModelProperty(example = "null", value = "Hodina od (ve std. formátu času)")
-  public DateTime getInitialHourDATE() {
-    return initialHourDATE;
+  @ApiModelProperty(example = "null", value = "hodina od (ve std. formátu času)")
+  public DateTime getInitialhourdate() {
+    return initialhourdate;
   }
 
-  public void setInitialHourDATE(DateTime initialHourDATE) {
-    this.initialHourDATE = initialHourDATE;
+  public void setInitialhourdate(DateTime initialhourdate) {
+    this.initialhourdate = initialhourdate;
   }
 
-  public Shifttype hoursShift(Double hoursShift) {
-    this.hoursShift = hoursShift;
+  public Shifttype hoursshift(Double hoursshift) {
+    this.hoursshift = hoursshift;
     return this;
   }
 
    /**
-   * Délka [persistentní položka]
-   * @return hoursShift
+   * délka [persistentní položka]
+   * @return hoursshift
   **/
-  @ApiModelProperty(example = "null", value = "Délka [persistentní položka]")
-  public Double getHoursShift() {
-    return hoursShift;
+  @ApiModelProperty(example = "null", value = "délka [persistentní položka]")
+  public Double getHoursshift() {
+    return hoursshift;
   }
 
-  public void setHoursShift(Double hoursShift) {
-    this.hoursShift = hoursShift;
+  public void setHoursshift(Double hoursshift) {
+    this.hoursshift = hoursshift;
   }
 
-  public Shifttype hoursCount(Double hoursCount) {
-    this.hoursCount = hoursCount;
+  public Shifttype hourscount(Double hourscount) {
+    this.hourscount = hourscount;
     return this;
   }
 
    /**
-   * Hodiny [persistentní položka]
-   * @return hoursCount
+   * hodiny [persistentní položka]
+   * @return hourscount
   **/
-  @ApiModelProperty(example = "null", value = "Hodiny [persistentní položka]")
-  public Double getHoursCount() {
-    return hoursCount;
+  @ApiModelProperty(example = "null", value = "hodiny [persistentní položka]")
+  public Double getHourscount() {
+    return hourscount;
   }
 
-  public void setHoursCount(Double hoursCount) {
-    this.hoursCount = hoursCount;
+  public void setHourscount(Double hourscount) {
+    this.hourscount = hourscount;
   }
 
-  public Shifttype hoursNight(Double hoursNight) {
-    this.hoursNight = hoursNight;
+  public Shifttype hoursnight(Double hoursnight) {
+    this.hoursnight = hoursnight;
     return this;
   }
 
    /**
-   * V noci [persistentní položka]
-   * @return hoursNight
+   * v noci [persistentní položka]
+   * @return hoursnight
   **/
-  @ApiModelProperty(example = "null", value = "V noci [persistentní položka]")
-  public Double getHoursNight() {
-    return hoursNight;
+  @ApiModelProperty(example = "null", value = "v noci [persistentní položka]")
+  public Double getHoursnight() {
+    return hoursnight;
   }
 
-  public void setHoursNight(Double hoursNight) {
-    this.hoursNight = hoursNight;
+  public void setHoursnight(Double hoursnight) {
+    this.hoursnight = hoursnight;
   }
 
-  public Shifttype hoursEnvir(Double hoursEnvir) {
-    this.hoursEnvir = hoursEnvir;
+  public Shifttype hoursenvir(Double hoursenvir) {
+    this.hoursenvir = hoursenvir;
     return this;
   }
 
    /**
-   * V prostředí [persistentní položka]
-   * @return hoursEnvir
+   * v prostředí [persistentní položka]
+   * @return hoursenvir
   **/
-  @ApiModelProperty(example = "null", value = "V prostředí [persistentní položka]")
-  public Double getHoursEnvir() {
-    return hoursEnvir;
+  @ApiModelProperty(example = "null", value = "v prostředí [persistentní položka]")
+  public Double getHoursenvir() {
+    return hoursenvir;
   }
 
-  public void setHoursEnvir(Double hoursEnvir) {
-    this.hoursEnvir = hoursEnvir;
+  public void setHoursenvir(Double hoursenvir) {
+    this.hoursenvir = hoursenvir;
   }
 
-  public Shifttype hoursPausesTotal(Double hoursPausesTotal) {
-    this.hoursPausesTotal = hoursPausesTotal;
+  public Shifttype hourspausestotal(Double hourspausestotal) {
+    this.hourspausestotal = hourspausestotal;
     return this;
   }
 
    /**
-   * Přestávky celkem
-   * @return hoursPausesTotal
+   * přestávky celkem
+   * @return hourspausestotal
   **/
-  @ApiModelProperty(example = "null", value = "Přestávky celkem")
-  public Double getHoursPausesTotal() {
-    return hoursPausesTotal;
+  @ApiModelProperty(example = "null", value = "přestávky celkem")
+  public Double getHourspausestotal() {
+    return hourspausestotal;
   }
 
-  public void setHoursPausesTotal(Double hoursPausesTotal) {
-    this.hoursPausesTotal = hoursPausesTotal;
+  public void setHourspausestotal(Double hourspausestotal) {
+    this.hourspausestotal = hourspausestotal;
   }
 
-  public Shifttype weekDayMo(Boolean weekDayMo) {
-    this.weekDayMo = weekDayMo;
+  public Shifttype weekdaymo(Boolean weekdaymo) {
+    this.weekdaymo = weekdaymo;
     return this;
   }
 
    /**
    * po
-   * @return weekDayMo
+   * @return weekdaymo
   **/
   @ApiModelProperty(example = "null", value = "po")
-  public Boolean getWeekDayMo() {
-    return weekDayMo;
+  public Boolean getWeekdaymo() {
+    return weekdaymo;
   }
 
-  public void setWeekDayMo(Boolean weekDayMo) {
-    this.weekDayMo = weekDayMo;
+  public void setWeekdaymo(Boolean weekdaymo) {
+    this.weekdaymo = weekdaymo;
   }
 
-  public Shifttype weekDayTu(Boolean weekDayTu) {
-    this.weekDayTu = weekDayTu;
+  public Shifttype weekdaytu(Boolean weekdaytu) {
+    this.weekdaytu = weekdaytu;
     return this;
   }
 
    /**
    * út
-   * @return weekDayTu
+   * @return weekdaytu
   **/
   @ApiModelProperty(example = "null", value = "út")
-  public Boolean getWeekDayTu() {
-    return weekDayTu;
+  public Boolean getWeekdaytu() {
+    return weekdaytu;
   }
 
-  public void setWeekDayTu(Boolean weekDayTu) {
-    this.weekDayTu = weekDayTu;
+  public void setWeekdaytu(Boolean weekdaytu) {
+    this.weekdaytu = weekdaytu;
   }
 
-  public Shifttype weekDayWe(Boolean weekDayWe) {
-    this.weekDayWe = weekDayWe;
+  public Shifttype weekdaywe(Boolean weekdaywe) {
+    this.weekdaywe = weekdaywe;
     return this;
   }
 
    /**
    * st
-   * @return weekDayWe
+   * @return weekdaywe
   **/
   @ApiModelProperty(example = "null", value = "st")
-  public Boolean getWeekDayWe() {
-    return weekDayWe;
+  public Boolean getWeekdaywe() {
+    return weekdaywe;
   }
 
-  public void setWeekDayWe(Boolean weekDayWe) {
-    this.weekDayWe = weekDayWe;
+  public void setWeekdaywe(Boolean weekdaywe) {
+    this.weekdaywe = weekdaywe;
   }
 
-  public Shifttype weekDayTh(Boolean weekDayTh) {
-    this.weekDayTh = weekDayTh;
+  public Shifttype weekdayth(Boolean weekdayth) {
+    this.weekdayth = weekdayth;
     return this;
   }
 
    /**
    * čt
-   * @return weekDayTh
+   * @return weekdayth
   **/
   @ApiModelProperty(example = "null", value = "čt")
-  public Boolean getWeekDayTh() {
-    return weekDayTh;
+  public Boolean getWeekdayth() {
+    return weekdayth;
   }
 
-  public void setWeekDayTh(Boolean weekDayTh) {
-    this.weekDayTh = weekDayTh;
+  public void setWeekdayth(Boolean weekdayth) {
+    this.weekdayth = weekdayth;
   }
 
-  public Shifttype weekDayFr(Boolean weekDayFr) {
-    this.weekDayFr = weekDayFr;
+  public Shifttype weekdayfr(Boolean weekdayfr) {
+    this.weekdayfr = weekdayfr;
     return this;
   }
 
    /**
    * pá
-   * @return weekDayFr
+   * @return weekdayfr
   **/
   @ApiModelProperty(example = "null", value = "pá")
-  public Boolean getWeekDayFr() {
-    return weekDayFr;
+  public Boolean getWeekdayfr() {
+    return weekdayfr;
   }
 
-  public void setWeekDayFr(Boolean weekDayFr) {
-    this.weekDayFr = weekDayFr;
+  public void setWeekdayfr(Boolean weekdayfr) {
+    this.weekdayfr = weekdayfr;
   }
 
-  public Shifttype weekDaySa(Boolean weekDaySa) {
-    this.weekDaySa = weekDaySa;
+  public Shifttype weekdaysa(Boolean weekdaysa) {
+    this.weekdaysa = weekdaysa;
     return this;
   }
 
    /**
    * so
-   * @return weekDaySa
+   * @return weekdaysa
   **/
   @ApiModelProperty(example = "null", value = "so")
-  public Boolean getWeekDaySa() {
-    return weekDaySa;
+  public Boolean getWeekdaysa() {
+    return weekdaysa;
   }
 
-  public void setWeekDaySa(Boolean weekDaySa) {
-    this.weekDaySa = weekDaySa;
+  public void setWeekdaysa(Boolean weekdaysa) {
+    this.weekdaysa = weekdaysa;
   }
 
-  public Shifttype weekDaySu(Boolean weekDaySu) {
-    this.weekDaySu = weekDaySu;
+  public Shifttype weekdaysu(Boolean weekdaysu) {
+    this.weekdaysu = weekdaysu;
     return this;
   }
 
    /**
    * ne
-   * @return weekDaySu
+   * @return weekdaysu
   **/
   @ApiModelProperty(example = "null", value = "ne")
-  public Boolean getWeekDaySu() {
-    return weekDaySu;
+  public Boolean getWeekdaysu() {
+    return weekdaysu;
   }
 
-  public void setWeekDaySu(Boolean weekDaySu) {
-    this.weekDaySu = weekDaySu;
+  public void setWeekdaysu(Boolean weekdaysu) {
+    this.weekdaysu = weekdaysu;
   }
 
-  public Shifttype shiftBaseTypeText(String shiftBaseTypeText) {
-    this.shiftBaseTypeText = shiftBaseTypeText;
+  public Shifttype shiftbasetypetext(String shiftbasetypetext) {
+    this.shiftbasetypetext = shiftbasetypetext;
     return this;
   }
 
    /**
-   * Základní typ
-   * @return shiftBaseTypeText
+   * základní typ
+   * @return shiftbasetypetext
   **/
-  @ApiModelProperty(example = "null", value = "Základní typ")
-  public String getShiftBaseTypeText() {
-    return shiftBaseTypeText;
+  @ApiModelProperty(example = "null", value = "základní typ")
+  public String getShiftbasetypetext() {
+    return shiftbasetypetext;
   }
 
-  public void setShiftBaseTypeText(String shiftBaseTypeText) {
-    this.shiftBaseTypeText = shiftBaseTypeText;
+  public void setShiftbasetypetext(String shiftbasetypetext) {
+    this.shiftbasetypetext = shiftbasetypetext;
   }
 
-  public Shifttype calendarColor(Integer calendarColor) {
-    this.calendarColor = calendarColor;
+  public Shifttype calendarcolor(Integer calendarcolor) {
+    this.calendarcolor = calendarcolor;
     return this;
   }
 
    /**
-   * Barva [persistentní položka]
-   * @return calendarColor
+   * barva [persistentní položka]
+   * @return calendarcolor
   **/
-  @ApiModelProperty(example = "null", value = "Barva [persistentní položka]")
-  public Integer getCalendarColor() {
-    return calendarColor;
+  @ApiModelProperty(example = "null", value = "barva [persistentní položka]")
+  public Integer getCalendarcolor() {
+    return calendarcolor;
   }
 
-  public void setCalendarColor(Integer calendarColor) {
-    this.calendarColor = calendarColor;
+  public void setCalendarcolor(Integer calendarcolor) {
+    this.calendarcolor = calendarcolor;
   }
 
-  public Shifttype cRPGroup(String cRPGroup) {
-    this.cRPGroup = cRPGroup;
+  public Shifttype crpgroup(String crpgroup) {
+    this.crpgroup = crpgroup;
     return this;
   }
 
    /**
-   * Skupina [persistentní položka]
-   * @return cRPGroup
+   * skupina [persistentní položka]
+   * @return crpgroup
   **/
-  @ApiModelProperty(example = "null", value = "Skupina [persistentní položka]")
-  public String getCRPGroup() {
-    return cRPGroup;
+  @ApiModelProperty(example = "null", value = "skupina [persistentní položka]")
+  public String getCrpgroup() {
+    return crpgroup;
   }
 
-  public void setCRPGroup(String cRPGroup) {
-    this.cRPGroup = cRPGroup;
+  public void setCrpgroup(String crpgroup) {
+    this.crpgroup = crpgroup;
   }
 
   public Shifttype hidden(Boolean hidden) {
@@ -582,10 +618,10 @@ public class Shifttype   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -605,10 +641,10 @@ public class Shifttype   {
   }
 
    /**
-   * Přestávky; kolekce BO Přestávka v druhu pracovní směny [nepersistentní položka]
+   * přestávky; kolekce bo přestávka v druhu pracovní směny [nepersistentní položka]
    * @return pauses
   **/
-  @ApiModelProperty(example = "null", value = "Přestávky; kolekce BO Přestávka v druhu pracovní směny [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "přestávky; kolekce bo přestávka v druhu pracovní směny [nepersistentní položka]")
   public List<Shifttypepause> getPauses() {
     return pauses;
   }
@@ -627,40 +663,40 @@ public class Shifttype   {
       return false;
     }
     Shifttype shifttype = (Shifttype) o;
-    return Objects.equals(this.displayName, shifttype.displayName) &&
-        Objects.equals(this.ID, shifttype.ID) &&
-        Objects.equals(this.classID, shifttype.classID) &&
-        Objects.equals(this.objVersion, shifttype.objVersion) &&
+    return Objects.equals(this.displayname, shifttype.displayname) &&
+        Objects.equals(this.id, shifttype.id) &&
+        Objects.equals(this.classid, shifttype.classid) &&
+        Objects.equals(this.objversion, shifttype.objversion) &&
         Objects.equals(this.code, shifttype.code) &&
         Objects.equals(this.name, shifttype.name) &&
-        Objects.equals(this.shiftGenCode, shifttype.shiftGenCode) &&
-        Objects.equals(this.weekDays, shifttype.weekDays) &&
-        Objects.equals(this.shiftBaseType, shifttype.shiftBaseType) &&
-        Objects.equals(this.inHolidays, shifttype.inHolidays) &&
-        Objects.equals(this.initialHour, shifttype.initialHour) &&
-        Objects.equals(this.initialHourDATE, shifttype.initialHourDATE) &&
-        Objects.equals(this.hoursShift, shifttype.hoursShift) &&
-        Objects.equals(this.hoursCount, shifttype.hoursCount) &&
-        Objects.equals(this.hoursNight, shifttype.hoursNight) &&
-        Objects.equals(this.hoursEnvir, shifttype.hoursEnvir) &&
-        Objects.equals(this.hoursPausesTotal, shifttype.hoursPausesTotal) &&
-        Objects.equals(this.weekDayMo, shifttype.weekDayMo) &&
-        Objects.equals(this.weekDayTu, shifttype.weekDayTu) &&
-        Objects.equals(this.weekDayWe, shifttype.weekDayWe) &&
-        Objects.equals(this.weekDayTh, shifttype.weekDayTh) &&
-        Objects.equals(this.weekDayFr, shifttype.weekDayFr) &&
-        Objects.equals(this.weekDaySa, shifttype.weekDaySa) &&
-        Objects.equals(this.weekDaySu, shifttype.weekDaySu) &&
-        Objects.equals(this.shiftBaseTypeText, shifttype.shiftBaseTypeText) &&
-        Objects.equals(this.calendarColor, shifttype.calendarColor) &&
-        Objects.equals(this.cRPGroup, shifttype.cRPGroup) &&
+        Objects.equals(this.shiftgencode, shifttype.shiftgencode) &&
+        Objects.equals(this.weekdays, shifttype.weekdays) &&
+        Objects.equals(this.shiftbasetype, shifttype.shiftbasetype) &&
+        Objects.equals(this.inholidays, shifttype.inholidays) &&
+        Objects.equals(this.initialhour, shifttype.initialhour) &&
+        Objects.equals(this.initialhourdate, shifttype.initialhourdate) &&
+        Objects.equals(this.hoursshift, shifttype.hoursshift) &&
+        Objects.equals(this.hourscount, shifttype.hourscount) &&
+        Objects.equals(this.hoursnight, shifttype.hoursnight) &&
+        Objects.equals(this.hoursenvir, shifttype.hoursenvir) &&
+        Objects.equals(this.hourspausestotal, shifttype.hourspausestotal) &&
+        Objects.equals(this.weekdaymo, shifttype.weekdaymo) &&
+        Objects.equals(this.weekdaytu, shifttype.weekdaytu) &&
+        Objects.equals(this.weekdaywe, shifttype.weekdaywe) &&
+        Objects.equals(this.weekdayth, shifttype.weekdayth) &&
+        Objects.equals(this.weekdayfr, shifttype.weekdayfr) &&
+        Objects.equals(this.weekdaysa, shifttype.weekdaysa) &&
+        Objects.equals(this.weekdaysu, shifttype.weekdaysu) &&
+        Objects.equals(this.shiftbasetypetext, shifttype.shiftbasetypetext) &&
+        Objects.equals(this.calendarcolor, shifttype.calendarcolor) &&
+        Objects.equals(this.crpgroup, shifttype.crpgroup) &&
         Objects.equals(this.hidden, shifttype.hidden) &&
         Objects.equals(this.pauses, shifttype.pauses);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, code, name, shiftGenCode, weekDays, shiftBaseType, inHolidays, initialHour, initialHourDATE, hoursShift, hoursCount, hoursNight, hoursEnvir, hoursPausesTotal, weekDayMo, weekDayTu, weekDayWe, weekDayTh, weekDayFr, weekDaySa, weekDaySu, shiftBaseTypeText, calendarColor, cRPGroup, hidden, pauses);
+    return Objects.hash(displayname, id, classid, objversion, code, name, shiftgencode, weekdays, shiftbasetype, inholidays, initialhour, initialhourdate, hoursshift, hourscount, hoursnight, hoursenvir, hourspausestotal, weekdaymo, weekdaytu, weekdaywe, weekdayth, weekdayfr, weekdaysa, weekdaysu, shiftbasetypetext, calendarcolor, crpgroup, hidden, pauses);
   }
 
   @Override
@@ -668,33 +704,33 @@ public class Shifttype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Shifttype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    shiftGenCode: ").append(toIndentedString(shiftGenCode)).append("\n");
-    sb.append("    weekDays: ").append(toIndentedString(weekDays)).append("\n");
-    sb.append("    shiftBaseType: ").append(toIndentedString(shiftBaseType)).append("\n");
-    sb.append("    inHolidays: ").append(toIndentedString(inHolidays)).append("\n");
-    sb.append("    initialHour: ").append(toIndentedString(initialHour)).append("\n");
-    sb.append("    initialHourDATE: ").append(toIndentedString(initialHourDATE)).append("\n");
-    sb.append("    hoursShift: ").append(toIndentedString(hoursShift)).append("\n");
-    sb.append("    hoursCount: ").append(toIndentedString(hoursCount)).append("\n");
-    sb.append("    hoursNight: ").append(toIndentedString(hoursNight)).append("\n");
-    sb.append("    hoursEnvir: ").append(toIndentedString(hoursEnvir)).append("\n");
-    sb.append("    hoursPausesTotal: ").append(toIndentedString(hoursPausesTotal)).append("\n");
-    sb.append("    weekDayMo: ").append(toIndentedString(weekDayMo)).append("\n");
-    sb.append("    weekDayTu: ").append(toIndentedString(weekDayTu)).append("\n");
-    sb.append("    weekDayWe: ").append(toIndentedString(weekDayWe)).append("\n");
-    sb.append("    weekDayTh: ").append(toIndentedString(weekDayTh)).append("\n");
-    sb.append("    weekDayFr: ").append(toIndentedString(weekDayFr)).append("\n");
-    sb.append("    weekDaySa: ").append(toIndentedString(weekDaySa)).append("\n");
-    sb.append("    weekDaySu: ").append(toIndentedString(weekDaySu)).append("\n");
-    sb.append("    shiftBaseTypeText: ").append(toIndentedString(shiftBaseTypeText)).append("\n");
-    sb.append("    calendarColor: ").append(toIndentedString(calendarColor)).append("\n");
-    sb.append("    cRPGroup: ").append(toIndentedString(cRPGroup)).append("\n");
+    sb.append("    shiftgencode: ").append(toIndentedString(shiftgencode)).append("\n");
+    sb.append("    weekdays: ").append(toIndentedString(weekdays)).append("\n");
+    sb.append("    shiftbasetype: ").append(toIndentedString(shiftbasetype)).append("\n");
+    sb.append("    inholidays: ").append(toIndentedString(inholidays)).append("\n");
+    sb.append("    initialhour: ").append(toIndentedString(initialhour)).append("\n");
+    sb.append("    initialhourdate: ").append(toIndentedString(initialhourdate)).append("\n");
+    sb.append("    hoursshift: ").append(toIndentedString(hoursshift)).append("\n");
+    sb.append("    hourscount: ").append(toIndentedString(hourscount)).append("\n");
+    sb.append("    hoursnight: ").append(toIndentedString(hoursnight)).append("\n");
+    sb.append("    hoursenvir: ").append(toIndentedString(hoursenvir)).append("\n");
+    sb.append("    hourspausestotal: ").append(toIndentedString(hourspausestotal)).append("\n");
+    sb.append("    weekdaymo: ").append(toIndentedString(weekdaymo)).append("\n");
+    sb.append("    weekdaytu: ").append(toIndentedString(weekdaytu)).append("\n");
+    sb.append("    weekdaywe: ").append(toIndentedString(weekdaywe)).append("\n");
+    sb.append("    weekdayth: ").append(toIndentedString(weekdayth)).append("\n");
+    sb.append("    weekdayfr: ").append(toIndentedString(weekdayfr)).append("\n");
+    sb.append("    weekdaysa: ").append(toIndentedString(weekdaysa)).append("\n");
+    sb.append("    weekdaysu: ").append(toIndentedString(weekdaysu)).append("\n");
+    sb.append("    shiftbasetypetext: ").append(toIndentedString(shiftbasetypetext)).append("\n");
+    sb.append("    calendarcolor: ").append(toIndentedString(calendarcolor)).append("\n");
+    sb.append("    crpgroup: ").append(toIndentedString(crpgroup)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    pauses: ").append(toIndentedString(pauses)).append("\n");
     sb.append("}");

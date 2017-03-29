@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,69 +34,105 @@ import java.util.Objects;
 /**
  * Namedmask
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Namedmask   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Mask")
+  @SerializedName("mask")
   private String mask = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("MaskType")
-  private Integer maskType = null;
+  @SerializedName("masktype")
+  private Integer masktype = null;
 
-  @SerializedName("IsBasicMask")
-  private Boolean isBasicMask = null;
+  @SerializedName("isbasicmask")
+  private Boolean isbasicmask = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Namedmask displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Namedmask id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Namedmask classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Namedmask objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Namedmask name(String name) {
@@ -105,10 +141,10 @@ public class Namedmask   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -123,10 +159,10 @@ public class Namedmask   {
   }
 
    /**
-   * Maska [persistentní položka]
+   * maska [persistentní položka]
    * @return mask
   **/
-  @ApiModelProperty(example = "null", value = "Maska [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "maska [persistentní položka]")
   public String getMask() {
     return mask;
   }
@@ -141,10 +177,10 @@ public class Namedmask   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -153,40 +189,40 @@ public class Namedmask   {
     this.description = description;
   }
 
-  public Namedmask maskType(Integer maskType) {
-    this.maskType = maskType;
+  public Namedmask masktype(Integer masktype) {
+    this.masktype = masktype;
     return this;
   }
 
    /**
-   * Typ masky [persistentní položka]
-   * @return maskType
+   * typ masky [persistentní položka]
+   * @return masktype
   **/
-  @ApiModelProperty(example = "null", value = "Typ masky [persistentní položka]")
-  public Integer getMaskType() {
-    return maskType;
+  @ApiModelProperty(example = "null", value = "typ masky [persistentní položka]")
+  public Integer getMasktype() {
+    return masktype;
   }
 
-  public void setMaskType(Integer maskType) {
-    this.maskType = maskType;
+  public void setMasktype(Integer masktype) {
+    this.masktype = masktype;
   }
 
-  public Namedmask isBasicMask(Boolean isBasicMask) {
-    this.isBasicMask = isBasicMask;
+  public Namedmask isbasicmask(Boolean isbasicmask) {
+    this.isbasicmask = isbasicmask;
     return this;
   }
 
    /**
-   * Základní [persistentní položka]
-   * @return isBasicMask
+   * základní [persistentní položka]
+   * @return isbasicmask
   **/
-  @ApiModelProperty(example = "null", value = "Základní [persistentní položka]")
-  public Boolean getIsBasicMask() {
-    return isBasicMask;
+  @ApiModelProperty(example = "null", value = "základní [persistentní položka]")
+  public Boolean getIsbasicmask() {
+    return isbasicmask;
   }
 
-  public void setIsBasicMask(Boolean isBasicMask) {
-    this.isBasicMask = isBasicMask;
+  public void setIsbasicmask(Boolean isbasicmask) {
+    this.isbasicmask = isbasicmask;
   }
 
 
@@ -199,20 +235,20 @@ public class Namedmask   {
       return false;
     }
     Namedmask namedmask = (Namedmask) o;
-    return Objects.equals(this.displayName, namedmask.displayName) &&
-        Objects.equals(this.ID, namedmask.ID) &&
-        Objects.equals(this.classID, namedmask.classID) &&
-        Objects.equals(this.objVersion, namedmask.objVersion) &&
+    return Objects.equals(this.displayname, namedmask.displayname) &&
+        Objects.equals(this.id, namedmask.id) &&
+        Objects.equals(this.classid, namedmask.classid) &&
+        Objects.equals(this.objversion, namedmask.objversion) &&
         Objects.equals(this.name, namedmask.name) &&
         Objects.equals(this.mask, namedmask.mask) &&
         Objects.equals(this.description, namedmask.description) &&
-        Objects.equals(this.maskType, namedmask.maskType) &&
-        Objects.equals(this.isBasicMask, namedmask.isBasicMask);
+        Objects.equals(this.masktype, namedmask.masktype) &&
+        Objects.equals(this.isbasicmask, namedmask.isbasicmask);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, name, mask, description, maskType, isBasicMask);
+    return Objects.hash(displayname, id, classid, objversion, name, mask, description, masktype, isbasicmask);
   }
 
   @Override
@@ -220,15 +256,15 @@ public class Namedmask   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Namedmask {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    mask: ").append(toIndentedString(mask)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    maskType: ").append(toIndentedString(maskType)).append("\n");
-    sb.append("    isBasicMask: ").append(toIndentedString(isBasicMask)).append("\n");
+    sb.append("    masktype: ").append(toIndentedString(masktype)).append("\n");
+    sb.append("    isbasicmask: ").append(toIndentedString(isbasicmask)).append("\n");
     sb.append("}");
     return sb.toString();
   }

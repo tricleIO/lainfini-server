@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,108 +35,144 @@ import java.util.Objects;
 /**
  * Countofftype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Countofftype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("CountOffKind")
-  private Integer countOffKind = null;
+  @SerializedName("countoffkind")
+  private Integer countoffkind = null;
 
-  @SerializedName("FixedYearly")
-  private Boolean fixedYearly = null;
+  @SerializedName("fixedyearly")
+  private Boolean fixedyearly = null;
 
-  @SerializedName("FixedMonthly")
-  private Boolean fixedMonthly = null;
+  @SerializedName("fixedmonthly")
+  private Boolean fixedmonthly = null;
 
-  @SerializedName("FreeYearly")
-  private Boolean freeYearly = null;
+  @SerializedName("freeyearly")
+  private Boolean freeyearly = null;
 
-  @SerializedName("FreeMonthly")
-  private Boolean freeMonthly = null;
+  @SerializedName("freemonthly")
+  private Boolean freemonthly = null;
 
-  @SerializedName("YearlyAmount_ID")
-  private String yearlyAmountID = null;
+  @SerializedName("yearlyamount_id")
+  private String yearlyamountId = null;
 
-  @SerializedName("MonAmIsTwelfth")
-  private Boolean monAmIsTwelfth = null;
+  @SerializedName("monamistwelfth")
+  private Boolean monamistwelfth = null;
 
-  @SerializedName("MonthlyAmount_ID")
-  private String monthlyAmountID = null;
+  @SerializedName("monthlyamount_id")
+  private String monthlyamountId = null;
 
-  @SerializedName("Cancellate")
+  @SerializedName("cancellate")
   private Boolean cancellate = null;
 
-  @SerializedName("TaxAdvantage")
-  private Boolean taxAdvantage = null;
+  @SerializedName("taxadvantage")
+  private Boolean taxadvantage = null;
 
-  @SerializedName("ValidFrom$DATE")
-  private DateTime validFromDATE = null;
+  @SerializedName("validfrom$date")
+  private DateTime validfromdate = null;
 
-  @SerializedName("ValidTo$DATE")
-  private DateTime validToDATE = null;
+  @SerializedName("validto$date")
+  private DateTime validtodate = null;
 
-  @SerializedName("CountOffKindText")
-  private String countOffKindText = null;
+  @SerializedName("countoffkindtext")
+  private String countoffkindtext = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Countofftype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Countofftype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Countofftype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Countofftype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Countofftype hidden(Boolean hidden) {
@@ -145,10 +181,10 @@ public class Countofftype   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -163,10 +199,10 @@ public class Countofftype   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -181,10 +217,10 @@ public class Countofftype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -193,184 +229,184 @@ public class Countofftype   {
     this.name = name;
   }
 
-  public Countofftype createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Countofftype createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Countofftype correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Countofftype correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Countofftype countOffKind(Integer countOffKind) {
-    this.countOffKind = countOffKind;
+  public Countofftype countoffkind(Integer countoffkind) {
+    this.countoffkind = countoffkind;
     return this;
   }
 
    /**
-   * Základní typ [persistentní položka]
-   * @return countOffKind
+   * základní typ [persistentní položka]
+   * @return countoffkind
   **/
-  @ApiModelProperty(example = "null", value = "Základní typ [persistentní položka]")
-  public Integer getCountOffKind() {
-    return countOffKind;
+  @ApiModelProperty(example = "null", value = "základní typ [persistentní položka]")
+  public Integer getCountoffkind() {
+    return countoffkind;
   }
 
-  public void setCountOffKind(Integer countOffKind) {
-    this.countOffKind = countOffKind;
+  public void setCountoffkind(Integer countoffkind) {
+    this.countoffkind = countoffkind;
   }
 
-  public Countofftype fixedYearly(Boolean fixedYearly) {
-    this.fixedYearly = fixedYearly;
+  public Countofftype fixedyearly(Boolean fixedyearly) {
+    this.fixedyearly = fixedyearly;
     return this;
   }
 
    /**
-   * Fix/rok [persistentní položka]
-   * @return fixedYearly
+   * fix/rok [persistentní položka]
+   * @return fixedyearly
   **/
-  @ApiModelProperty(example = "null", value = "Fix/rok [persistentní položka]")
-  public Boolean getFixedYearly() {
-    return fixedYearly;
+  @ApiModelProperty(example = "null", value = "fix/rok [persistentní položka]")
+  public Boolean getFixedyearly() {
+    return fixedyearly;
   }
 
-  public void setFixedYearly(Boolean fixedYearly) {
-    this.fixedYearly = fixedYearly;
+  public void setFixedyearly(Boolean fixedyearly) {
+    this.fixedyearly = fixedyearly;
   }
 
-  public Countofftype fixedMonthly(Boolean fixedMonthly) {
-    this.fixedMonthly = fixedMonthly;
+  public Countofftype fixedmonthly(Boolean fixedmonthly) {
+    this.fixedmonthly = fixedmonthly;
     return this;
   }
 
    /**
-   * Fix/měsíc [persistentní položka]
-   * @return fixedMonthly
+   * fix/měsíc [persistentní položka]
+   * @return fixedmonthly
   **/
-  @ApiModelProperty(example = "null", value = "Fix/měsíc [persistentní položka]")
-  public Boolean getFixedMonthly() {
-    return fixedMonthly;
+  @ApiModelProperty(example = "null", value = "fix/měsíc [persistentní položka]")
+  public Boolean getFixedmonthly() {
+    return fixedmonthly;
   }
 
-  public void setFixedMonthly(Boolean fixedMonthly) {
-    this.fixedMonthly = fixedMonthly;
+  public void setFixedmonthly(Boolean fixedmonthly) {
+    this.fixedmonthly = fixedmonthly;
   }
 
-  public Countofftype freeYearly(Boolean freeYearly) {
-    this.freeYearly = freeYearly;
+  public Countofftype freeyearly(Boolean freeyearly) {
+    this.freeyearly = freeyearly;
     return this;
   }
 
    /**
-   * Rok [persistentní položka]
-   * @return freeYearly
+   * rok [persistentní položka]
+   * @return freeyearly
   **/
-  @ApiModelProperty(example = "null", value = "Rok [persistentní položka]")
-  public Boolean getFreeYearly() {
-    return freeYearly;
+  @ApiModelProperty(example = "null", value = "rok [persistentní položka]")
+  public Boolean getFreeyearly() {
+    return freeyearly;
   }
 
-  public void setFreeYearly(Boolean freeYearly) {
-    this.freeYearly = freeYearly;
+  public void setFreeyearly(Boolean freeyearly) {
+    this.freeyearly = freeyearly;
   }
 
-  public Countofftype freeMonthly(Boolean freeMonthly) {
-    this.freeMonthly = freeMonthly;
+  public Countofftype freemonthly(Boolean freemonthly) {
+    this.freemonthly = freemonthly;
     return this;
   }
 
    /**
-   * Měsíc [persistentní položka]
-   * @return freeMonthly
+   * měsíc [persistentní položka]
+   * @return freemonthly
   **/
-  @ApiModelProperty(example = "null", value = "Měsíc [persistentní položka]")
-  public Boolean getFreeMonthly() {
-    return freeMonthly;
+  @ApiModelProperty(example = "null", value = "měsíc [persistentní položka]")
+  public Boolean getFreemonthly() {
+    return freemonthly;
   }
 
-  public void setFreeMonthly(Boolean freeMonthly) {
-    this.freeMonthly = freeMonthly;
+  public void setFreemonthly(Boolean freemonthly) {
+    this.freemonthly = freemonthly;
   }
 
-  public Countofftype yearlyAmountID(String yearlyAmountID) {
-    this.yearlyAmountID = yearlyAmountID;
+  public Countofftype yearlyamountId(String yearlyamountId) {
+    this.yearlyamountId = yearlyamountId;
     return this;
   }
 
    /**
-   * Částka za rok; ID objektu Globální proměnná [persistentní položka]
-   * @return yearlyAmountID
+   * Částka za rok; id objektu globální proměnná [persistentní položka]
+   * @return yearlyamountId
   **/
-  @ApiModelProperty(example = "null", value = "Částka za rok; ID objektu Globální proměnná [persistentní položka]")
-  public String getYearlyAmountID() {
-    return yearlyAmountID;
+  @ApiModelProperty(example = "null", value = "Částka za rok; id objektu globální proměnná [persistentní položka]")
+  public String getYearlyamountId() {
+    return yearlyamountId;
   }
 
-  public void setYearlyAmountID(String yearlyAmountID) {
-    this.yearlyAmountID = yearlyAmountID;
+  public void setYearlyamountId(String yearlyamountId) {
+    this.yearlyamountId = yearlyamountId;
   }
 
-  public Countofftype monAmIsTwelfth(Boolean monAmIsTwelfth) {
-    this.monAmIsTwelfth = monAmIsTwelfth;
+  public Countofftype monamistwelfth(Boolean monamistwelfth) {
+    this.monamistwelfth = monamistwelfth;
     return this;
   }
 
    /**
    * x1/12 [persistentní položka]
-   * @return monAmIsTwelfth
+   * @return monamistwelfth
   **/
   @ApiModelProperty(example = "null", value = "x1/12 [persistentní položka]")
-  public Boolean getMonAmIsTwelfth() {
-    return monAmIsTwelfth;
+  public Boolean getMonamistwelfth() {
+    return monamistwelfth;
   }
 
-  public void setMonAmIsTwelfth(Boolean monAmIsTwelfth) {
-    this.monAmIsTwelfth = monAmIsTwelfth;
+  public void setMonamistwelfth(Boolean monamistwelfth) {
+    this.monamistwelfth = monamistwelfth;
   }
 
-  public Countofftype monthlyAmountID(String monthlyAmountID) {
-    this.monthlyAmountID = monthlyAmountID;
+  public Countofftype monthlyamountId(String monthlyamountId) {
+    this.monthlyamountId = monthlyamountId;
     return this;
   }
 
    /**
-   * Částka za měsíc; ID objektu Globální proměnná [persistentní položka]
-   * @return monthlyAmountID
+   * Částka za měsíc; id objektu globální proměnná [persistentní položka]
+   * @return monthlyamountId
   **/
-  @ApiModelProperty(example = "null", value = "Částka za měsíc; ID objektu Globální proměnná [persistentní položka]")
-  public String getMonthlyAmountID() {
-    return monthlyAmountID;
+  @ApiModelProperty(example = "null", value = "Částka za měsíc; id objektu globální proměnná [persistentní položka]")
+  public String getMonthlyamountId() {
+    return monthlyamountId;
   }
 
-  public void setMonthlyAmountID(String monthlyAmountID) {
-    this.monthlyAmountID = monthlyAmountID;
+  public void setMonthlyamountId(String monthlyamountId) {
+    this.monthlyamountId = monthlyamountId;
   }
 
   public Countofftype cancellate(Boolean cancellate) {
@@ -379,10 +415,10 @@ public class Countofftype   {
   }
 
    /**
-   * Krátit? [persistentní položka]
+   * krátit? [persistentní položka]
    * @return cancellate
   **/
-  @ApiModelProperty(example = "null", value = "Krátit? [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "krátit? [persistentní položka]")
   public Boolean getCancellate() {
     return cancellate;
   }
@@ -391,76 +427,76 @@ public class Countofftype   {
     this.cancellate = cancellate;
   }
 
-  public Countofftype taxAdvantage(Boolean taxAdvantage) {
-    this.taxAdvantage = taxAdvantage;
+  public Countofftype taxadvantage(Boolean taxadvantage) {
+    this.taxadvantage = taxadvantage;
     return this;
   }
 
    /**
-   * Daňová sleva [persistentní položka]
-   * @return taxAdvantage
+   * daňová sleva [persistentní položka]
+   * @return taxadvantage
   **/
-  @ApiModelProperty(example = "null", value = "Daňová sleva [persistentní položka]")
-  public Boolean getTaxAdvantage() {
-    return taxAdvantage;
+  @ApiModelProperty(example = "null", value = "daňová sleva [persistentní položka]")
+  public Boolean getTaxadvantage() {
+    return taxadvantage;
   }
 
-  public void setTaxAdvantage(Boolean taxAdvantage) {
-    this.taxAdvantage = taxAdvantage;
+  public void setTaxadvantage(Boolean taxadvantage) {
+    this.taxadvantage = taxadvantage;
   }
 
-  public Countofftype validFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public Countofftype validfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
     return this;
   }
 
    /**
-   * Platnost od [persistentní položka]
-   * @return validFromDATE
+   * platnost od [persistentní položka]
+   * @return validfromdate
   **/
-  @ApiModelProperty(example = "null", value = "Platnost od [persistentní položka]")
-  public DateTime getValidFromDATE() {
-    return validFromDATE;
+  @ApiModelProperty(example = "null", value = "platnost od [persistentní položka]")
+  public DateTime getValidfromdate() {
+    return validfromdate;
   }
 
-  public void setValidFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public void setValidfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
   }
 
-  public Countofftype validToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public Countofftype validtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
     return this;
   }
 
    /**
-   * Platnost do [persistentní položka]
-   * @return validToDATE
+   * platnost do [persistentní položka]
+   * @return validtodate
   **/
-  @ApiModelProperty(example = "null", value = "Platnost do [persistentní položka]")
-  public DateTime getValidToDATE() {
-    return validToDATE;
+  @ApiModelProperty(example = "null", value = "platnost do [persistentní položka]")
+  public DateTime getValidtodate() {
+    return validtodate;
   }
 
-  public void setValidToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public void setValidtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
   }
 
-  public Countofftype countOffKindText(String countOffKindText) {
-    this.countOffKindText = countOffKindText;
+  public Countofftype countoffkindtext(String countoffkindtext) {
+    this.countoffkindtext = countoffkindtext;
     return this;
   }
 
    /**
-   * Základní typ
-   * @return countOffKindText
+   * základní typ
+   * @return countoffkindtext
   **/
-  @ApiModelProperty(example = "null", value = "Základní typ")
-  public String getCountOffKindText() {
-    return countOffKindText;
+  @ApiModelProperty(example = "null", value = "základní typ")
+  public String getCountoffkindtext() {
+    return countoffkindtext;
   }
 
-  public void setCountOffKindText(String countOffKindText) {
-    this.countOffKindText = countOffKindText;
+  public void setCountoffkindtext(String countoffkindtext) {
+    this.countoffkindtext = countoffkindtext;
   }
 
 
@@ -473,33 +509,33 @@ public class Countofftype   {
       return false;
     }
     Countofftype countofftype = (Countofftype) o;
-    return Objects.equals(this.displayName, countofftype.displayName) &&
-        Objects.equals(this.ID, countofftype.ID) &&
-        Objects.equals(this.classID, countofftype.classID) &&
-        Objects.equals(this.objVersion, countofftype.objVersion) &&
+    return Objects.equals(this.displayname, countofftype.displayname) &&
+        Objects.equals(this.id, countofftype.id) &&
+        Objects.equals(this.classid, countofftype.classid) &&
+        Objects.equals(this.objversion, countofftype.objversion) &&
         Objects.equals(this.hidden, countofftype.hidden) &&
         Objects.equals(this.code, countofftype.code) &&
         Objects.equals(this.name, countofftype.name) &&
-        Objects.equals(this.createdByID, countofftype.createdByID) &&
-        Objects.equals(this.correctedByID, countofftype.correctedByID) &&
-        Objects.equals(this.countOffKind, countofftype.countOffKind) &&
-        Objects.equals(this.fixedYearly, countofftype.fixedYearly) &&
-        Objects.equals(this.fixedMonthly, countofftype.fixedMonthly) &&
-        Objects.equals(this.freeYearly, countofftype.freeYearly) &&
-        Objects.equals(this.freeMonthly, countofftype.freeMonthly) &&
-        Objects.equals(this.yearlyAmountID, countofftype.yearlyAmountID) &&
-        Objects.equals(this.monAmIsTwelfth, countofftype.monAmIsTwelfth) &&
-        Objects.equals(this.monthlyAmountID, countofftype.monthlyAmountID) &&
+        Objects.equals(this.createdbyId, countofftype.createdbyId) &&
+        Objects.equals(this.correctedbyId, countofftype.correctedbyId) &&
+        Objects.equals(this.countoffkind, countofftype.countoffkind) &&
+        Objects.equals(this.fixedyearly, countofftype.fixedyearly) &&
+        Objects.equals(this.fixedmonthly, countofftype.fixedmonthly) &&
+        Objects.equals(this.freeyearly, countofftype.freeyearly) &&
+        Objects.equals(this.freemonthly, countofftype.freemonthly) &&
+        Objects.equals(this.yearlyamountId, countofftype.yearlyamountId) &&
+        Objects.equals(this.monamistwelfth, countofftype.monamistwelfth) &&
+        Objects.equals(this.monthlyamountId, countofftype.monthlyamountId) &&
         Objects.equals(this.cancellate, countofftype.cancellate) &&
-        Objects.equals(this.taxAdvantage, countofftype.taxAdvantage) &&
-        Objects.equals(this.validFromDATE, countofftype.validFromDATE) &&
-        Objects.equals(this.validToDATE, countofftype.validToDATE) &&
-        Objects.equals(this.countOffKindText, countofftype.countOffKindText);
+        Objects.equals(this.taxadvantage, countofftype.taxadvantage) &&
+        Objects.equals(this.validfromdate, countofftype.validfromdate) &&
+        Objects.equals(this.validtodate, countofftype.validtodate) &&
+        Objects.equals(this.countoffkindtext, countofftype.countoffkindtext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, createdByID, correctedByID, countOffKind, fixedYearly, fixedMonthly, freeYearly, freeMonthly, yearlyAmountID, monAmIsTwelfth, monthlyAmountID, cancellate, taxAdvantage, validFromDATE, validToDATE, countOffKindText);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, createdbyId, correctedbyId, countoffkind, fixedyearly, fixedmonthly, freeyearly, freemonthly, yearlyamountId, monamistwelfth, monthlyamountId, cancellate, taxadvantage, validfromdate, validtodate, countoffkindtext);
   }
 
   @Override
@@ -507,28 +543,28 @@ public class Countofftype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Countofftype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    countOffKind: ").append(toIndentedString(countOffKind)).append("\n");
-    sb.append("    fixedYearly: ").append(toIndentedString(fixedYearly)).append("\n");
-    sb.append("    fixedMonthly: ").append(toIndentedString(fixedMonthly)).append("\n");
-    sb.append("    freeYearly: ").append(toIndentedString(freeYearly)).append("\n");
-    sb.append("    freeMonthly: ").append(toIndentedString(freeMonthly)).append("\n");
-    sb.append("    yearlyAmountID: ").append(toIndentedString(yearlyAmountID)).append("\n");
-    sb.append("    monAmIsTwelfth: ").append(toIndentedString(monAmIsTwelfth)).append("\n");
-    sb.append("    monthlyAmountID: ").append(toIndentedString(monthlyAmountID)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    countoffkind: ").append(toIndentedString(countoffkind)).append("\n");
+    sb.append("    fixedyearly: ").append(toIndentedString(fixedyearly)).append("\n");
+    sb.append("    fixedmonthly: ").append(toIndentedString(fixedmonthly)).append("\n");
+    sb.append("    freeyearly: ").append(toIndentedString(freeyearly)).append("\n");
+    sb.append("    freemonthly: ").append(toIndentedString(freemonthly)).append("\n");
+    sb.append("    yearlyamountId: ").append(toIndentedString(yearlyamountId)).append("\n");
+    sb.append("    monamistwelfth: ").append(toIndentedString(monamistwelfth)).append("\n");
+    sb.append("    monthlyamountId: ").append(toIndentedString(monthlyamountId)).append("\n");
     sb.append("    cancellate: ").append(toIndentedString(cancellate)).append("\n");
-    sb.append("    taxAdvantage: ").append(toIndentedString(taxAdvantage)).append("\n");
-    sb.append("    validFromDATE: ").append(toIndentedString(validFromDATE)).append("\n");
-    sb.append("    validToDATE: ").append(toIndentedString(validToDATE)).append("\n");
-    sb.append("    countOffKindText: ").append(toIndentedString(countOffKindText)).append("\n");
+    sb.append("    taxadvantage: ").append(toIndentedString(taxadvantage)).append("\n");
+    sb.append("    validfromdate: ").append(toIndentedString(validfromdate)).append("\n");
+    sb.append("    validtodate: ").append(toIndentedString(validtodate)).append("\n");
+    sb.append("    countoffkindtext: ").append(toIndentedString(countoffkindtext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

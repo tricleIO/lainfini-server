@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,108 +34,153 @@ import java.util.Objects;
 /**
  * Storedocumentevaluations
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Storedocumentevaluations   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("EvaluationCriterion_ID")
-  private String evaluationCriterionID = null;
+  @SerializedName("evaluationcriterion_id")
+  private String evaluationcriterionId = null;
 
-  @SerializedName("EvaluationScore")
-  private Integer evaluationScore = null;
+  @SerializedName("evaluationscore")
+  private Integer evaluationscore = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Příjemka [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Příjemka [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Storedocumentevaluations evaluationCriterionID(String evaluationCriterionID) {
-    this.evaluationCriterionID = evaluationCriterionID;
+  public Storedocumentevaluations displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Hodnotící kritérium; ID objektu Hodnotící kritérium [persistentní položka]
-   * @return evaluationCriterionID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Hodnotící kritérium; ID objektu Hodnotící kritérium [persistentní položka]")
-  public String getEvaluationCriterionID() {
-    return evaluationCriterionID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setEvaluationCriterionID(String evaluationCriterionID) {
-    this.evaluationCriterionID = evaluationCriterionID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Storedocumentevaluations evaluationScore(Integer evaluationScore) {
-    this.evaluationScore = evaluationScore;
+  public Storedocumentevaluations id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Počet bodů [persistentní položka]
-   * @return evaluationScore
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Počet bodů [persistentní položka]")
-  public Integer getEvaluationScore() {
-    return evaluationScore;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setEvaluationScore(Integer evaluationScore) {
-    this.evaluationScore = evaluationScore;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Storedocumentevaluations classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Storedocumentevaluations objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Storedocumentevaluations parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu příjemka [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu příjemka [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Storedocumentevaluations evaluationcriterionId(String evaluationcriterionId) {
+    this.evaluationcriterionId = evaluationcriterionId;
+    return this;
+  }
+
+   /**
+   * hodnotící kritérium; id objektu hodnotící kritérium [persistentní položka]
+   * @return evaluationcriterionId
+  **/
+  @ApiModelProperty(example = "null", value = "hodnotící kritérium; id objektu hodnotící kritérium [persistentní položka]")
+  public String getEvaluationcriterionId() {
+    return evaluationcriterionId;
+  }
+
+  public void setEvaluationcriterionId(String evaluationcriterionId) {
+    this.evaluationcriterionId = evaluationcriterionId;
+  }
+
+  public Storedocumentevaluations evaluationscore(Integer evaluationscore) {
+    this.evaluationscore = evaluationscore;
+    return this;
+  }
+
+   /**
+   * počet bodů [persistentní položka]
+   * @return evaluationscore
+  **/
+  @ApiModelProperty(example = "null", value = "počet bodů [persistentní položka]")
+  public Integer getEvaluationscore() {
+    return evaluationscore;
+  }
+
+  public void setEvaluationscore(Integer evaluationscore) {
+    this.evaluationscore = evaluationscore;
   }
 
 
@@ -148,18 +193,18 @@ public class Storedocumentevaluations   {
       return false;
     }
     Storedocumentevaluations storedocumentevaluations = (Storedocumentevaluations) o;
-    return Objects.equals(this.displayName, storedocumentevaluations.displayName) &&
-        Objects.equals(this.ID, storedocumentevaluations.ID) &&
-        Objects.equals(this.classID, storedocumentevaluations.classID) &&
-        Objects.equals(this.objVersion, storedocumentevaluations.objVersion) &&
-        Objects.equals(this.parentID, storedocumentevaluations.parentID) &&
-        Objects.equals(this.evaluationCriterionID, storedocumentevaluations.evaluationCriterionID) &&
-        Objects.equals(this.evaluationScore, storedocumentevaluations.evaluationScore);
+    return Objects.equals(this.displayname, storedocumentevaluations.displayname) &&
+        Objects.equals(this.id, storedocumentevaluations.id) &&
+        Objects.equals(this.classid, storedocumentevaluations.classid) &&
+        Objects.equals(this.objversion, storedocumentevaluations.objversion) &&
+        Objects.equals(this.parentId, storedocumentevaluations.parentId) &&
+        Objects.equals(this.evaluationcriterionId, storedocumentevaluations.evaluationcriterionId) &&
+        Objects.equals(this.evaluationscore, storedocumentevaluations.evaluationscore);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, evaluationCriterionID, evaluationScore);
+    return Objects.hash(displayname, id, classid, objversion, parentId, evaluationcriterionId, evaluationscore);
   }
 
   @Override
@@ -167,13 +212,13 @@ public class Storedocumentevaluations   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Storedocumentevaluations {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    evaluationCriterionID: ").append(toIndentedString(evaluationCriterionID)).append("\n");
-    sb.append("    evaluationScore: ").append(toIndentedString(evaluationScore)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    evaluationcriterionId: ").append(toIndentedString(evaluationcriterionId)).append("\n");
+    sb.append("    evaluationscore: ").append(toIndentedString(evaluationscore)).append("\n");
     sb.append("}");
     return sb.toString();
   }

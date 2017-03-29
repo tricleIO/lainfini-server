@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,189 +35,225 @@ import java.util.Objects;
 /**
  * Mlbexpense
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Mlbexpense   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("MLBJourney_ID")
-  private String mLBJourneyID = null;
+  @SerializedName("mlbjourney_id")
+  private String mlbjourneyId = null;
 
-  @SerializedName("TRMCar_ID")
-  private String tRMCarID = null;
+  @SerializedName("trmcar_id")
+  private String trmcarId = null;
 
-  @SerializedName("ExpenseDate$DATE")
-  private DateTime expenseDateDATE = null;
+  @SerializedName("expensedate$date")
+  private DateTime expensedatedate = null;
 
-  @SerializedName("ExpenseType")
-  private Integer expenseType = null;
+  @SerializedName("expensetype")
+  private Integer expensetype = null;
 
-  @SerializedName("MLBPlace_ID")
-  private String mLBPlaceID = null;
+  @SerializedName("mlbplace_id")
+  private String mlbplaceId = null;
 
-  @SerializedName("Text")
+  @SerializedName("text")
   private String text = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("FuelQuantity")
-  private Double fuelQuantity = null;
+  @SerializedName("fuelquantity")
+  private Double fuelquantity = null;
 
-  @SerializedName("TachoFuel")
-  private Double tachoFuel = null;
+  @SerializedName("tachofuel")
+  private Double tachofuel = null;
 
-  @SerializedName("PaymentType")
-  private Integer paymentType = null;
+  @SerializedName("paymenttype")
+  private Integer paymenttype = null;
 
-  @SerializedName("BalanceIt")
-  private Boolean balanceIt = null;
+  @SerializedName("balanceit")
+  private Boolean balanceit = null;
 
-  @SerializedName("VATRate_ID")
-  private String vATRateID = null;
+  @SerializedName("vatrate_id")
+  private String vatrateId = null;
 
-  @SerializedName("ImportKey")
-  private String importKey = null;
+  @SerializedName("importkey")
+  private String importkey = null;
 
-  @SerializedName("UnitPrice")
-  private Double unitPrice = null;
+  @SerializedName("unitprice")
+  private Double unitprice = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Mlbexpense mLBJourneyID(String mLBJourneyID) {
-    this.mLBJourneyID = mLBJourneyID;
+  public Mlbexpense displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Jízda; ID objektu Jízda [persistentní položka]
-   * @return mLBJourneyID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Jízda; ID objektu Jízda [persistentní položka]")
-  public String getMLBJourneyID() {
-    return mLBJourneyID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setMLBJourneyID(String mLBJourneyID) {
-    this.mLBJourneyID = mLBJourneyID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Mlbexpense tRMCarID(String tRMCarID) {
-    this.tRMCarID = tRMCarID;
+  public Mlbexpense id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Vozidlo; ID objektu Vozidlo [persistentní položka]
-   * @return tRMCarID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vozidlo; ID objektu Vozidlo [persistentní položka]")
-  public String getTRMCarID() {
-    return tRMCarID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setTRMCarID(String tRMCarID) {
-    this.tRMCarID = tRMCarID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Mlbexpense expenseDateDATE(DateTime expenseDateDATE) {
-    this.expenseDateDATE = expenseDateDATE;
+  public Mlbexpense classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Datum výdaje [persistentní položka]
-   * @return expenseDateDATE
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Datum výdaje [persistentní položka]")
-  public DateTime getExpenseDateDATE() {
-    return expenseDateDATE;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setExpenseDateDATE(DateTime expenseDateDATE) {
-    this.expenseDateDATE = expenseDateDATE;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Mlbexpense expenseType(Integer expenseType) {
-    this.expenseType = expenseType;
+  public Mlbexpense objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Typ výdaje [persistentní položka]
-   * @return expenseType
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Typ výdaje [persistentní položka]")
-  public Integer getExpenseType() {
-    return expenseType;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setExpenseType(Integer expenseType) {
-    this.expenseType = expenseType;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Mlbexpense mLBPlaceID(String mLBPlaceID) {
-    this.mLBPlaceID = mLBPlaceID;
+  public Mlbexpense mlbjourneyId(String mlbjourneyId) {
+    this.mlbjourneyId = mlbjourneyId;
     return this;
   }
 
    /**
-   * Místo; ID objektu Místa [persistentní položka]
-   * @return mLBPlaceID
+   * jízda; id objektu jízda [persistentní položka]
+   * @return mlbjourneyId
   **/
-  @ApiModelProperty(example = "null", value = "Místo; ID objektu Místa [persistentní položka]")
-  public String getMLBPlaceID() {
-    return mLBPlaceID;
+  @ApiModelProperty(example = "null", value = "jízda; id objektu jízda [persistentní položka]")
+  public String getMlbjourneyId() {
+    return mlbjourneyId;
   }
 
-  public void setMLBPlaceID(String mLBPlaceID) {
-    this.mLBPlaceID = mLBPlaceID;
+  public void setMlbjourneyId(String mlbjourneyId) {
+    this.mlbjourneyId = mlbjourneyId;
+  }
+
+  public Mlbexpense trmcarId(String trmcarId) {
+    this.trmcarId = trmcarId;
+    return this;
+  }
+
+   /**
+   * vozidlo; id objektu vozidlo [persistentní položka]
+   * @return trmcarId
+  **/
+  @ApiModelProperty(example = "null", value = "vozidlo; id objektu vozidlo [persistentní položka]")
+  public String getTrmcarId() {
+    return trmcarId;
+  }
+
+  public void setTrmcarId(String trmcarId) {
+    this.trmcarId = trmcarId;
+  }
+
+  public Mlbexpense expensedatedate(DateTime expensedatedate) {
+    this.expensedatedate = expensedatedate;
+    return this;
+  }
+
+   /**
+   * datum výdaje [persistentní položka]
+   * @return expensedatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum výdaje [persistentní položka]")
+  public DateTime getExpensedatedate() {
+    return expensedatedate;
+  }
+
+  public void setExpensedatedate(DateTime expensedatedate) {
+    this.expensedatedate = expensedatedate;
+  }
+
+  public Mlbexpense expensetype(Integer expensetype) {
+    this.expensetype = expensetype;
+    return this;
+  }
+
+   /**
+   * typ výdaje [persistentní položka]
+   * @return expensetype
+  **/
+  @ApiModelProperty(example = "null", value = "typ výdaje [persistentní položka]")
+  public Integer getExpensetype() {
+    return expensetype;
+  }
+
+  public void setExpensetype(Integer expensetype) {
+    this.expensetype = expensetype;
+  }
+
+  public Mlbexpense mlbplaceId(String mlbplaceId) {
+    this.mlbplaceId = mlbplaceId;
+    return this;
+  }
+
+   /**
+   * místo; id objektu místa [persistentní položka]
+   * @return mlbplaceId
+  **/
+  @ApiModelProperty(example = "null", value = "místo; id objektu místa [persistentní položka]")
+  public String getMlbplaceId() {
+    return mlbplaceId;
+  }
+
+  public void setMlbplaceId(String mlbplaceId) {
+    this.mlbplaceId = mlbplaceId;
   }
 
   public Mlbexpense text(String text) {
@@ -226,10 +262,10 @@ public class Mlbexpense   {
   }
 
    /**
-   * Text [persistentní položka]
+   * text [persistentní položka]
    * @return text
   **/
-  @ApiModelProperty(example = "null", value = "Text [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "text [persistentní položka]")
   public String getText() {
     return text;
   }
@@ -238,22 +274,22 @@ public class Mlbexpense   {
     this.text = text;
   }
 
-  public Mlbexpense currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Mlbexpense currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
   public Mlbexpense amount(Double amount) {
@@ -274,130 +310,130 @@ public class Mlbexpense   {
     this.amount = amount;
   }
 
-  public Mlbexpense fuelQuantity(Double fuelQuantity) {
-    this.fuelQuantity = fuelQuantity;
+  public Mlbexpense fuelquantity(Double fuelquantity) {
+    this.fuelquantity = fuelquantity;
     return this;
   }
 
    /**
-   * Množství [persistentní položka]
-   * @return fuelQuantity
+   * množství [persistentní položka]
+   * @return fuelquantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství [persistentní položka]")
-  public Double getFuelQuantity() {
-    return fuelQuantity;
+  @ApiModelProperty(example = "null", value = "množství [persistentní položka]")
+  public Double getFuelquantity() {
+    return fuelquantity;
   }
 
-  public void setFuelQuantity(Double fuelQuantity) {
-    this.fuelQuantity = fuelQuantity;
+  public void setFuelquantity(Double fuelquantity) {
+    this.fuelquantity = fuelquantity;
   }
 
-  public Mlbexpense tachoFuel(Double tachoFuel) {
-    this.tachoFuel = tachoFuel;
+  public Mlbexpense tachofuel(Double tachofuel) {
+    this.tachofuel = tachofuel;
     return this;
   }
 
    /**
-   * Stav tachometru [persistentní položka]
-   * @return tachoFuel
+   * stav tachometru [persistentní položka]
+   * @return tachofuel
   **/
-  @ApiModelProperty(example = "null", value = "Stav tachometru [persistentní položka]")
-  public Double getTachoFuel() {
-    return tachoFuel;
+  @ApiModelProperty(example = "null", value = "stav tachometru [persistentní položka]")
+  public Double getTachofuel() {
+    return tachofuel;
   }
 
-  public void setTachoFuel(Double tachoFuel) {
-    this.tachoFuel = tachoFuel;
+  public void setTachofuel(Double tachofuel) {
+    this.tachofuel = tachofuel;
   }
 
-  public Mlbexpense paymentType(Integer paymentType) {
-    this.paymentType = paymentType;
+  public Mlbexpense paymenttype(Integer paymenttype) {
+    this.paymenttype = paymenttype;
     return this;
   }
 
    /**
-   * Typ platby [persistentní položka]
-   * @return paymentType
+   * typ platby [persistentní položka]
+   * @return paymenttype
   **/
-  @ApiModelProperty(example = "null", value = "Typ platby [persistentní položka]")
-  public Integer getPaymentType() {
-    return paymentType;
+  @ApiModelProperty(example = "null", value = "typ platby [persistentní položka]")
+  public Integer getPaymenttype() {
+    return paymenttype;
   }
 
-  public void setPaymentType(Integer paymentType) {
-    this.paymentType = paymentType;
+  public void setPaymenttype(Integer paymenttype) {
+    this.paymenttype = paymenttype;
   }
 
-  public Mlbexpense balanceIt(Boolean balanceIt) {
-    this.balanceIt = balanceIt;
+  public Mlbexpense balanceit(Boolean balanceit) {
+    this.balanceit = balanceit;
     return this;
   }
 
    /**
-   * Vyúčtovat [persistentní položka]
-   * @return balanceIt
+   * vyúčtovat [persistentní položka]
+   * @return balanceit
   **/
-  @ApiModelProperty(example = "null", value = "Vyúčtovat [persistentní položka]")
-  public Boolean getBalanceIt() {
-    return balanceIt;
+  @ApiModelProperty(example = "null", value = "vyúčtovat [persistentní položka]")
+  public Boolean getBalanceit() {
+    return balanceit;
   }
 
-  public void setBalanceIt(Boolean balanceIt) {
-    this.balanceIt = balanceIt;
+  public void setBalanceit(Boolean balanceit) {
+    this.balanceit = balanceit;
   }
 
-  public Mlbexpense vATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public Mlbexpense vatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
     return this;
   }
 
    /**
-   * Sazba DPH; ID objektu DPH sazba [persistentní položka]
-   * @return vATRateID
+   * sazba dph; id objektu dph sazba [persistentní položka]
+   * @return vatrateId
   **/
-  @ApiModelProperty(example = "null", value = "Sazba DPH; ID objektu DPH sazba [persistentní položka]")
-  public String getVATRateID() {
-    return vATRateID;
+  @ApiModelProperty(example = "null", value = "sazba dph; id objektu dph sazba [persistentní položka]")
+  public String getVatrateId() {
+    return vatrateId;
   }
 
-  public void setVATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public void setVatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
   }
 
-  public Mlbexpense importKey(String importKey) {
-    this.importKey = importKey;
+  public Mlbexpense importkey(String importkey) {
+    this.importkey = importkey;
     return this;
   }
 
    /**
-   * Identifikace importu [persistentní položka]
-   * @return importKey
+   * identifikace importu [persistentní položka]
+   * @return importkey
   **/
-  @ApiModelProperty(example = "null", value = "Identifikace importu [persistentní položka]")
-  public String getImportKey() {
-    return importKey;
+  @ApiModelProperty(example = "null", value = "identifikace importu [persistentní položka]")
+  public String getImportkey() {
+    return importkey;
   }
 
-  public void setImportKey(String importKey) {
-    this.importKey = importKey;
+  public void setImportkey(String importkey) {
+    this.importkey = importkey;
   }
 
-  public Mlbexpense unitPrice(Double unitPrice) {
-    this.unitPrice = unitPrice;
+  public Mlbexpense unitprice(Double unitprice) {
+    this.unitprice = unitprice;
     return this;
   }
 
    /**
-   * Jednotková cena
-   * @return unitPrice
+   * jednotková cena
+   * @return unitprice
   **/
-  @ApiModelProperty(example = "null", value = "Jednotková cena")
-  public Double getUnitPrice() {
-    return unitPrice;
+  @ApiModelProperty(example = "null", value = "jednotková cena")
+  public Double getUnitprice() {
+    return unitprice;
   }
 
-  public void setUnitPrice(Double unitPrice) {
-    this.unitPrice = unitPrice;
+  public void setUnitprice(Double unitprice) {
+    this.unitprice = unitprice;
   }
 
 
@@ -410,30 +446,30 @@ public class Mlbexpense   {
       return false;
     }
     Mlbexpense mlbexpense = (Mlbexpense) o;
-    return Objects.equals(this.displayName, mlbexpense.displayName) &&
-        Objects.equals(this.ID, mlbexpense.ID) &&
-        Objects.equals(this.classID, mlbexpense.classID) &&
-        Objects.equals(this.objVersion, mlbexpense.objVersion) &&
-        Objects.equals(this.mLBJourneyID, mlbexpense.mLBJourneyID) &&
-        Objects.equals(this.tRMCarID, mlbexpense.tRMCarID) &&
-        Objects.equals(this.expenseDateDATE, mlbexpense.expenseDateDATE) &&
-        Objects.equals(this.expenseType, mlbexpense.expenseType) &&
-        Objects.equals(this.mLBPlaceID, mlbexpense.mLBPlaceID) &&
+    return Objects.equals(this.displayname, mlbexpense.displayname) &&
+        Objects.equals(this.id, mlbexpense.id) &&
+        Objects.equals(this.classid, mlbexpense.classid) &&
+        Objects.equals(this.objversion, mlbexpense.objversion) &&
+        Objects.equals(this.mlbjourneyId, mlbexpense.mlbjourneyId) &&
+        Objects.equals(this.trmcarId, mlbexpense.trmcarId) &&
+        Objects.equals(this.expensedatedate, mlbexpense.expensedatedate) &&
+        Objects.equals(this.expensetype, mlbexpense.expensetype) &&
+        Objects.equals(this.mlbplaceId, mlbexpense.mlbplaceId) &&
         Objects.equals(this.text, mlbexpense.text) &&
-        Objects.equals(this.currencyID, mlbexpense.currencyID) &&
+        Objects.equals(this.currencyId, mlbexpense.currencyId) &&
         Objects.equals(this.amount, mlbexpense.amount) &&
-        Objects.equals(this.fuelQuantity, mlbexpense.fuelQuantity) &&
-        Objects.equals(this.tachoFuel, mlbexpense.tachoFuel) &&
-        Objects.equals(this.paymentType, mlbexpense.paymentType) &&
-        Objects.equals(this.balanceIt, mlbexpense.balanceIt) &&
-        Objects.equals(this.vATRateID, mlbexpense.vATRateID) &&
-        Objects.equals(this.importKey, mlbexpense.importKey) &&
-        Objects.equals(this.unitPrice, mlbexpense.unitPrice);
+        Objects.equals(this.fuelquantity, mlbexpense.fuelquantity) &&
+        Objects.equals(this.tachofuel, mlbexpense.tachofuel) &&
+        Objects.equals(this.paymenttype, mlbexpense.paymenttype) &&
+        Objects.equals(this.balanceit, mlbexpense.balanceit) &&
+        Objects.equals(this.vatrateId, mlbexpense.vatrateId) &&
+        Objects.equals(this.importkey, mlbexpense.importkey) &&
+        Objects.equals(this.unitprice, mlbexpense.unitprice);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, mLBJourneyID, tRMCarID, expenseDateDATE, expenseType, mLBPlaceID, text, currencyID, amount, fuelQuantity, tachoFuel, paymentType, balanceIt, vATRateID, importKey, unitPrice);
+    return Objects.hash(displayname, id, classid, objversion, mlbjourneyId, trmcarId, expensedatedate, expensetype, mlbplaceId, text, currencyId, amount, fuelquantity, tachofuel, paymenttype, balanceit, vatrateId, importkey, unitprice);
   }
 
   @Override
@@ -441,25 +477,25 @@ public class Mlbexpense   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Mlbexpense {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    mLBJourneyID: ").append(toIndentedString(mLBJourneyID)).append("\n");
-    sb.append("    tRMCarID: ").append(toIndentedString(tRMCarID)).append("\n");
-    sb.append("    expenseDateDATE: ").append(toIndentedString(expenseDateDATE)).append("\n");
-    sb.append("    expenseType: ").append(toIndentedString(expenseType)).append("\n");
-    sb.append("    mLBPlaceID: ").append(toIndentedString(mLBPlaceID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    mlbjourneyId: ").append(toIndentedString(mlbjourneyId)).append("\n");
+    sb.append("    trmcarId: ").append(toIndentedString(trmcarId)).append("\n");
+    sb.append("    expensedatedate: ").append(toIndentedString(expensedatedate)).append("\n");
+    sb.append("    expensetype: ").append(toIndentedString(expensetype)).append("\n");
+    sb.append("    mlbplaceId: ").append(toIndentedString(mlbplaceId)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    fuelQuantity: ").append(toIndentedString(fuelQuantity)).append("\n");
-    sb.append("    tachoFuel: ").append(toIndentedString(tachoFuel)).append("\n");
-    sb.append("    paymentType: ").append(toIndentedString(paymentType)).append("\n");
-    sb.append("    balanceIt: ").append(toIndentedString(balanceIt)).append("\n");
-    sb.append("    vATRateID: ").append(toIndentedString(vATRateID)).append("\n");
-    sb.append("    importKey: ").append(toIndentedString(importKey)).append("\n");
-    sb.append("    unitPrice: ").append(toIndentedString(unitPrice)).append("\n");
+    sb.append("    fuelquantity: ").append(toIndentedString(fuelquantity)).append("\n");
+    sb.append("    tachofuel: ").append(toIndentedString(tachofuel)).append("\n");
+    sb.append("    paymenttype: ").append(toIndentedString(paymenttype)).append("\n");
+    sb.append("    balanceit: ").append(toIndentedString(balanceit)).append("\n");
+    sb.append("    vatrateId: ").append(toIndentedString(vatrateId)).append("\n");
+    sb.append("    importkey: ").append(toIndentedString(importkey)).append("\n");
+    sb.append("    unitprice: ").append(toIndentedString(unitprice)).append("\n");
     sb.append("}");
     return sb.toString();
   }

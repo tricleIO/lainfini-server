@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,198 +37,234 @@ import java.util.Objects;
 /**
  * Sickbenefit
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Sickbenefit   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Sickbenefitrow> rows = new ArrayList<Sickbenefitrow>();
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("WorkingRelation_ID")
-  private String workingRelationID = null;
+  @SerializedName("workingrelation_id")
+  private String workingrelationId = null;
 
-  @SerializedName("DateFrom$DATE")
-  private DateTime dateFromDATE = null;
+  @SerializedName("datefrom$date")
+  private DateTime datefromdate = null;
 
-  @SerializedName("DateTo$DATE")
-  private DateTime dateToDATE = null;
+  @SerializedName("dateto$date")
+  private DateTime datetodate = null;
 
-  @SerializedName("FirstDay")
-  private Double firstDay = null;
+  @SerializedName("firstday")
+  private Double firstday = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("SickBenefitType_ID")
-  private String sickBenefitTypeID = null;
+  @SerializedName("sickbenefittype_id")
+  private String sickbenefittypeId = null;
 
-  @SerializedName("Average")
+  @SerializedName("average")
   private Double average = null;
 
-  @SerializedName("BaseSickType")
-  private Integer baseSickType = null;
+  @SerializedName("basesicktype")
+  private Integer basesicktype = null;
 
-  @SerializedName("OneCase")
-  private Boolean oneCase = null;
+  @SerializedName("onecase")
+  private Boolean onecase = null;
 
-  @SerializedName("IsAbsent")
-  private Boolean isAbsent = null;
+  @SerializedName("isabsent")
+  private Boolean isabsent = null;
 
-  @SerializedName("MaxDayCount")
-  private Double maxDayCount = null;
+  @SerializedName("maxdaycount")
+  private Double maxdaycount = null;
 
-  @SerializedName("TotalDayCount")
-  private Double totalDayCount = null;
+  @SerializedName("totaldaycount")
+  private Double totaldaycount = null;
 
-  @SerializedName("AverageText")
-  private String averageText = null;
+  @SerializedName("averagetext")
+  private String averagetext = null;
 
-  @SerializedName("Dirty")
+  @SerializedName("dirty")
   private Boolean dirty = null;
 
-  @SerializedName("DayBaseRounding")
-  private Integer dayBaseRounding = null;
+  @SerializedName("daybaserounding")
+  private Integer daybaserounding = null;
 
-  @SerializedName("SickBenefitRounding")
-  private Integer sickBenefitRounding = null;
+  @SerializedName("sickbenefitrounding")
+  private Integer sickbenefitrounding = null;
 
-  @SerializedName("AverageReduction")
-  private Boolean averageReduction = null;
+  @SerializedName("averagereduction")
+  private Boolean averagereduction = null;
 
-  @SerializedName("NoExcludedDays")
-  private Boolean noExcludedDays = null;
+  @SerializedName("noexcludeddays")
+  private Boolean noexcludeddays = null;
 
-  @SerializedName("CreatedInClosedPeriod")
-  private Boolean createdInClosedPeriod = null;
+  @SerializedName("createdinclosedperiod")
+  private Boolean createdinclosedperiod = null;
 
-  @SerializedName("ShortenedInClosedPeriod")
-  private Boolean shortenedInClosedPeriod = null;
+  @SerializedName("shortenedinclosedperiod")
+  private Boolean shortenedinclosedperiod = null;
 
-  @SerializedName("IsUnpaid")
-  private Boolean isUnpaid = null;
+  @SerializedName("isunpaid")
+  private Boolean isunpaid = null;
 
-  @SerializedName("LastShiftDate$DATE")
-  private DateTime lastShiftDateDATE = null;
+  @SerializedName("lastshiftdate$date")
+  private DateTime lastshiftdatedate = null;
 
-  @SerializedName("PayWorkingDays")
-  private Boolean payWorkingDays = null;
+  @SerializedName("payworkingdays")
+  private Boolean payworkingdays = null;
 
-  @SerializedName("LastDay")
-  private Double lastDay = null;
+  @SerializedName("lastday")
+  private Double lastday = null;
 
-  @SerializedName("MaxExcludedDays")
-  private Double maxExcludedDays = null;
+  @SerializedName("maxexcludeddays")
+  private Double maxexcludeddays = null;
 
-  @SerializedName("WorkingInjury_ID")
-  private String workingInjuryID = null;
+  @SerializedName("workinginjury_id")
+  private String workinginjuryId = null;
 
-  @SerializedName("DecisionNumber")
-  private String decisionNumber = null;
+  @SerializedName("decisionnumber")
+  private String decisionnumber = null;
 
-  @SerializedName("Employee_ID")
-  private String employeeID = null;
+  @SerializedName("employee_id")
+  private String employeeId = null;
 
-  @SerializedName("PERS_LastName")
-  private String pERSLastName = null;
+  @SerializedName("pers_lastname")
+  private String persLastname = null;
 
-  @SerializedName("PERS_PersonalNumber")
-  private String pERSPersonalNumber = null;
+  @SerializedName("pers_personalnumber")
+  private String persPersonalnumber = null;
 
-  @SerializedName("BaseSickTypeText")
-  private String baseSickTypeText = null;
+  @SerializedName("basesicktypetext")
+  private String basesicktypetext = null;
 
-  @SerializedName("CalendarDaysCount")
-  private Double calendarDaysCount = null;
+  @SerializedName("calendardayscount")
+  private Double calendardayscount = null;
 
-  @SerializedName("PrevSickBenefit_ID")
-  private String prevSickBenefitID = null;
+  @SerializedName("prevsickbenefit_id")
+  private String prevsickbenefitId = null;
 
-  @SerializedName("ContinuingSickBenefit")
-  private Boolean continuingSickBenefit = null;
+  @SerializedName("continuingsickbenefit")
+  private Boolean continuingsickbenefit = null;
 
-  @SerializedName("DayBase1")
-  private Double dayBase1 = null;
+  @SerializedName("daybase1")
+  private Double daybase1 = null;
 
-  @SerializedName("DayBase2")
-  private Double dayBase2 = null;
+  @SerializedName("daybase2")
+  private Double daybase2 = null;
 
-  @SerializedName("HourBase")
-  private Double hourBase = null;
+  @SerializedName("hourbase")
+  private Double hourbase = null;
 
-  @SerializedName("FirstDateFrom")
-  private Double firstDateFrom = null;
+  @SerializedName("firstdatefrom")
+  private Double firstdatefrom = null;
 
-  @SerializedName("FullDisplayName")
-  private String fullDisplayName = null;
+  @SerializedName("fulldisplayname")
+  private String fulldisplayname = null;
+
+  public Sickbenefit displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Sickbenefit id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Sickbenefit classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Sickbenefit objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Sickbenefit rows(List<Sickbenefitrow> rows) {
@@ -242,10 +278,10 @@ public class Sickbenefit   {
   }
 
    /**
-   * Řádky; kolekce BO Řádek ND [nepersistentní položka]
+   * Řádky; kolekce bo Řádek nd [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Řádek ND [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo Řádek nd [nepersistentní položka]")
   public List<Sickbenefitrow> getRows() {
     return rows;
   }
@@ -254,220 +290,220 @@ public class Sickbenefit   {
     this.rows = rows;
   }
 
-  public Sickbenefit docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Sickbenefit docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Sickbenefit periodID(String periodID) {
-    this.periodID = periodID;
+  public Sickbenefit periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Sickbenefit ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Sickbenefit ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Sickbenefit docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Sickbenefit docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Sickbenefit createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Sickbenefit createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Sickbenefit correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Sickbenefit correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Sickbenefit newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Sickbenefit newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Sickbenefit newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Sickbenefit newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Sickbenefit workingRelationID(String workingRelationID) {
-    this.workingRelationID = workingRelationID;
+  public Sickbenefit workingrelationId(String workingrelationId) {
+    this.workingrelationId = workingrelationId;
     return this;
   }
 
    /**
-   * Pracovní poměr; ID objektu Pracovní poměr [persistentní položka]
-   * @return workingRelationID
+   * pracovní poměr; id objektu pracovní poměr [persistentní položka]
+   * @return workingrelationId
   **/
-  @ApiModelProperty(example = "null", value = "Pracovní poměr; ID objektu Pracovní poměr [persistentní položka]")
-  public String getWorkingRelationID() {
-    return workingRelationID;
+  @ApiModelProperty(example = "null", value = "pracovní poměr; id objektu pracovní poměr [persistentní položka]")
+  public String getWorkingrelationId() {
+    return workingrelationId;
   }
 
-  public void setWorkingRelationID(String workingRelationID) {
-    this.workingRelationID = workingRelationID;
+  public void setWorkingrelationId(String workingrelationId) {
+    this.workingrelationId = workingrelationId;
   }
 
-  public Sickbenefit dateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public Sickbenefit datefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
     return this;
   }
 
    /**
-   * Dávka od [persistentní položka]
-   * @return dateFromDATE
+   * dávka od [persistentní položka]
+   * @return datefromdate
   **/
-  @ApiModelProperty(example = "null", value = "Dávka od [persistentní položka]")
-  public DateTime getDateFromDATE() {
-    return dateFromDATE;
+  @ApiModelProperty(example = "null", value = "dávka od [persistentní položka]")
+  public DateTime getDatefromdate() {
+    return datefromdate;
   }
 
-  public void setDateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public void setDatefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
   }
 
-  public Sickbenefit dateToDATE(DateTime dateToDATE) {
-    this.dateToDATE = dateToDATE;
+  public Sickbenefit datetodate(DateTime datetodate) {
+    this.datetodate = datetodate;
     return this;
   }
 
    /**
-   * Dávka do [persistentní položka]
-   * @return dateToDATE
+   * dávka do [persistentní položka]
+   * @return datetodate
   **/
-  @ApiModelProperty(example = "null", value = "Dávka do [persistentní položka]")
-  public DateTime getDateToDATE() {
-    return dateToDATE;
+  @ApiModelProperty(example = "null", value = "dávka do [persistentní položka]")
+  public DateTime getDatetodate() {
+    return datetodate;
   }
 
-  public void setDateToDATE(DateTime dateToDATE) {
-    this.dateToDATE = dateToDATE;
+  public void setDatetodate(DateTime datetodate) {
+    this.datetodate = datetodate;
   }
 
-  public Sickbenefit firstDay(Double firstDay) {
-    this.firstDay = firstDay;
+  public Sickbenefit firstday(Double firstday) {
+    this.firstday = firstday;
     return this;
   }
 
    /**
    * 1.den [persistentní položka]
-   * @return firstDay
+   * @return firstday
   **/
   @ApiModelProperty(example = "null", value = "1.den [persistentní položka]")
-  public Double getFirstDay() {
-    return firstDay;
+  public Double getFirstday() {
+    return firstday;
   }
 
-  public void setFirstDay(Double firstDay) {
-    this.firstDay = firstDay;
+  public void setFirstday(Double firstday) {
+    this.firstday = firstday;
   }
 
   public Sickbenefit description(String description) {
@@ -476,10 +512,10 @@ public class Sickbenefit   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -488,22 +524,22 @@ public class Sickbenefit   {
     this.description = description;
   }
 
-  public Sickbenefit sickBenefitTypeID(String sickBenefitTypeID) {
-    this.sickBenefitTypeID = sickBenefitTypeID;
+  public Sickbenefit sickbenefittypeId(String sickbenefittypeId) {
+    this.sickbenefittypeId = sickbenefittypeId;
     return this;
   }
 
    /**
-   * Druh ND; ID objektu Druh nemocenské dávky [persistentní položka]
-   * @return sickBenefitTypeID
+   * druh nd; id objektu druh nemocenské dávky [persistentní položka]
+   * @return sickbenefittypeId
   **/
-  @ApiModelProperty(example = "null", value = "Druh ND; ID objektu Druh nemocenské dávky [persistentní položka]")
-  public String getSickBenefitTypeID() {
-    return sickBenefitTypeID;
+  @ApiModelProperty(example = "null", value = "druh nd; id objektu druh nemocenské dávky [persistentní položka]")
+  public String getSickbenefittypeId() {
+    return sickbenefittypeId;
   }
 
-  public void setSickBenefitTypeID(String sickBenefitTypeID) {
-    this.sickBenefitTypeID = sickBenefitTypeID;
+  public void setSickbenefittypeId(String sickbenefittypeId) {
+    this.sickbenefittypeId = sickbenefittypeId;
   }
 
   public Sickbenefit average(Double average) {
@@ -512,10 +548,10 @@ public class Sickbenefit   {
   }
 
    /**
-   * Průměr [persistentní položka]
+   * průměr [persistentní položka]
    * @return average
   **/
-  @ApiModelProperty(example = "null", value = "Průměr [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "průměr [persistentní položka]")
   public Double getAverage() {
     return average;
   }
@@ -524,112 +560,112 @@ public class Sickbenefit   {
     this.average = average;
   }
 
-  public Sickbenefit baseSickType(Integer baseSickType) {
-    this.baseSickType = baseSickType;
+  public Sickbenefit basesicktype(Integer basesicktype) {
+    this.basesicktype = basesicktype;
     return this;
   }
 
    /**
-   * Základní typ [persistentní položka]
-   * @return baseSickType
+   * základní typ [persistentní položka]
+   * @return basesicktype
   **/
-  @ApiModelProperty(example = "null", value = "Základní typ [persistentní položka]")
-  public Integer getBaseSickType() {
-    return baseSickType;
+  @ApiModelProperty(example = "null", value = "základní typ [persistentní položka]")
+  public Integer getBasesicktype() {
+    return basesicktype;
   }
 
-  public void setBaseSickType(Integer baseSickType) {
-    this.baseSickType = baseSickType;
+  public void setBasesicktype(Integer basesicktype) {
+    this.basesicktype = basesicktype;
   }
 
-  public Sickbenefit oneCase(Boolean oneCase) {
-    this.oneCase = oneCase;
+  public Sickbenefit onecase(Boolean onecase) {
+    this.onecase = onecase;
     return this;
   }
 
    /**
-   * Jednorázově [persistentní položka]
-   * @return oneCase
+   * jednorázově [persistentní položka]
+   * @return onecase
   **/
-  @ApiModelProperty(example = "null", value = "Jednorázově [persistentní položka]")
-  public Boolean getOneCase() {
-    return oneCase;
+  @ApiModelProperty(example = "null", value = "jednorázově [persistentní položka]")
+  public Boolean getOnecase() {
+    return onecase;
   }
 
-  public void setOneCase(Boolean oneCase) {
-    this.oneCase = oneCase;
+  public void setOnecase(Boolean onecase) {
+    this.onecase = onecase;
   }
 
-  public Sickbenefit isAbsent(Boolean isAbsent) {
-    this.isAbsent = isAbsent;
+  public Sickbenefit isabsent(Boolean isabsent) {
+    this.isabsent = isabsent;
     return this;
   }
 
    /**
-   * Nepřítomnost [persistentní položka]
-   * @return isAbsent
+   * nepřítomnost [persistentní položka]
+   * @return isabsent
   **/
-  @ApiModelProperty(example = "null", value = "Nepřítomnost [persistentní položka]")
-  public Boolean getIsAbsent() {
-    return isAbsent;
+  @ApiModelProperty(example = "null", value = "nepřítomnost [persistentní položka]")
+  public Boolean getIsabsent() {
+    return isabsent;
   }
 
-  public void setIsAbsent(Boolean isAbsent) {
-    this.isAbsent = isAbsent;
+  public void setIsabsent(Boolean isabsent) {
+    this.isabsent = isabsent;
   }
 
-  public Sickbenefit maxDayCount(Double maxDayCount) {
-    this.maxDayCount = maxDayCount;
+  public Sickbenefit maxdaycount(Double maxdaycount) {
+    this.maxdaycount = maxdaycount;
     return this;
   }
 
    /**
-   * Max. dní [persistentní položka]
-   * @return maxDayCount
+   * max. dní [persistentní položka]
+   * @return maxdaycount
   **/
-  @ApiModelProperty(example = "null", value = "Max. dní [persistentní položka]")
-  public Double getMaxDayCount() {
-    return maxDayCount;
+  @ApiModelProperty(example = "null", value = "max. dní [persistentní položka]")
+  public Double getMaxdaycount() {
+    return maxdaycount;
   }
 
-  public void setMaxDayCount(Double maxDayCount) {
-    this.maxDayCount = maxDayCount;
+  public void setMaxdaycount(Double maxdaycount) {
+    this.maxdaycount = maxdaycount;
   }
 
-  public Sickbenefit totalDayCount(Double totalDayCount) {
-    this.totalDayCount = totalDayCount;
+  public Sickbenefit totaldaycount(Double totaldaycount) {
+    this.totaldaycount = totaldaycount;
     return this;
   }
 
    /**
-   * Celkem dní [persistentní položka]
-   * @return totalDayCount
+   * celkem dní [persistentní položka]
+   * @return totaldaycount
   **/
-  @ApiModelProperty(example = "null", value = "Celkem dní [persistentní položka]")
-  public Double getTotalDayCount() {
-    return totalDayCount;
+  @ApiModelProperty(example = "null", value = "celkem dní [persistentní položka]")
+  public Double getTotaldaycount() {
+    return totaldaycount;
   }
 
-  public void setTotalDayCount(Double totalDayCount) {
-    this.totalDayCount = totalDayCount;
+  public void setTotaldaycount(Double totaldaycount) {
+    this.totaldaycount = totaldaycount;
   }
 
-  public Sickbenefit averageText(String averageText) {
-    this.averageText = averageText;
+  public Sickbenefit averagetext(String averagetext) {
+    this.averagetext = averagetext;
     return this;
   }
 
    /**
-   * Popis průměru [persistentní položka]
-   * @return averageText
+   * popis průměru [persistentní položka]
+   * @return averagetext
   **/
-  @ApiModelProperty(example = "null", value = "Popis průměru [persistentní položka]")
-  public String getAverageText() {
-    return averageText;
+  @ApiModelProperty(example = "null", value = "popis průměru [persistentní položka]")
+  public String getAveragetext() {
+    return averagetext;
   }
 
-  public void setAverageText(String averageText) {
-    this.averageText = averageText;
+  public void setAveragetext(String averagetext) {
+    this.averagetext = averagetext;
   }
 
   public Sickbenefit dirty(Boolean dirty) {
@@ -638,10 +674,10 @@ public class Sickbenefit   {
   }
 
    /**
-   * Nepočítaný objekt [persistentní položka]
+   * nepočítaný objekt [persistentní položka]
    * @return dirty
   **/
-  @ApiModelProperty(example = "null", value = "Nepočítaný objekt [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "nepočítaný objekt [persistentní položka]")
   public Boolean getDirty() {
     return dirty;
   }
@@ -650,373 +686,454 @@ public class Sickbenefit   {
     this.dirty = dirty;
   }
 
-  public Sickbenefit dayBaseRounding(Integer dayBaseRounding) {
-    this.dayBaseRounding = dayBaseRounding;
+  public Sickbenefit daybaserounding(Integer daybaserounding) {
+    this.daybaserounding = daybaserounding;
     return this;
   }
 
    /**
-   * Zaokr. den. vym. zákl. [persistentní položka]
-   * @return dayBaseRounding
+   * zaokr. den. vym. zákl. [persistentní položka]
+   * @return daybaserounding
   **/
-  @ApiModelProperty(example = "null", value = "Zaokr. den. vym. zákl. [persistentní položka]")
-  public Integer getDayBaseRounding() {
-    return dayBaseRounding;
+  @ApiModelProperty(example = "null", value = "zaokr. den. vym. zákl. [persistentní položka]")
+  public Integer getDaybaserounding() {
+    return daybaserounding;
   }
 
-  public void setDayBaseRounding(Integer dayBaseRounding) {
-    this.dayBaseRounding = dayBaseRounding;
+  public void setDaybaserounding(Integer daybaserounding) {
+    this.daybaserounding = daybaserounding;
   }
 
-  public Sickbenefit sickBenefitRounding(Integer sickBenefitRounding) {
-    this.sickBenefitRounding = sickBenefitRounding;
+  public Sickbenefit sickbenefitrounding(Integer sickbenefitrounding) {
+    this.sickbenefitrounding = sickbenefitrounding;
     return this;
   }
 
    /**
-   * Zaokr. nem. dávky [persistentní položka]
-   * @return sickBenefitRounding
+   * zaokr. nem. dávky [persistentní položka]
+   * @return sickbenefitrounding
   **/
-  @ApiModelProperty(example = "null", value = "Zaokr. nem. dávky [persistentní položka]")
-  public Integer getSickBenefitRounding() {
-    return sickBenefitRounding;
+  @ApiModelProperty(example = "null", value = "zaokr. nem. dávky [persistentní položka]")
+  public Integer getSickbenefitrounding() {
+    return sickbenefitrounding;
   }
 
-  public void setSickBenefitRounding(Integer sickBenefitRounding) {
-    this.sickBenefitRounding = sickBenefitRounding;
+  public void setSickbenefitrounding(Integer sickbenefitrounding) {
+    this.sickbenefitrounding = sickbenefitrounding;
   }
 
-  public Sickbenefit averageReduction(Boolean averageReduction) {
-    this.averageReduction = averageReduction;
+  public Sickbenefit averagereduction(Boolean averagereduction) {
+    this.averagereduction = averagereduction;
     return this;
   }
 
    /**
-   * Redukce DVZ [persistentní položka]
-   * @return averageReduction
+   * redukce dvz [persistentní položka]
+   * @return averagereduction
   **/
-  @ApiModelProperty(example = "null", value = "Redukce DVZ [persistentní položka]")
-  public Boolean getAverageReduction() {
-    return averageReduction;
+  @ApiModelProperty(example = "null", value = "redukce dvz [persistentní položka]")
+  public Boolean getAveragereduction() {
+    return averagereduction;
   }
 
-  public void setAverageReduction(Boolean averageReduction) {
-    this.averageReduction = averageReduction;
+  public void setAveragereduction(Boolean averagereduction) {
+    this.averagereduction = averagereduction;
   }
 
-  public Sickbenefit noExcludedDays(Boolean noExcludedDays) {
-    this.noExcludedDays = noExcludedDays;
+  public Sickbenefit noexcludeddays(Boolean noexcludeddays) {
+    this.noexcludeddays = noexcludeddays;
     return this;
   }
 
    /**
-   * Není vyl.doba [persistentní položka]
-   * @return noExcludedDays
+   * není vyl.doba [persistentní položka]
+   * @return noexcludeddays
   **/
-  @ApiModelProperty(example = "null", value = "Není vyl.doba [persistentní položka]")
-  public Boolean getNoExcludedDays() {
-    return noExcludedDays;
+  @ApiModelProperty(example = "null", value = "není vyl.doba [persistentní položka]")
+  public Boolean getNoexcludeddays() {
+    return noexcludeddays;
   }
 
-  public void setNoExcludedDays(Boolean noExcludedDays) {
-    this.noExcludedDays = noExcludedDays;
+  public void setNoexcludeddays(Boolean noexcludeddays) {
+    this.noexcludeddays = noexcludeddays;
   }
 
-  public Sickbenefit createdInClosedPeriod(Boolean createdInClosedPeriod) {
-    this.createdInClosedPeriod = createdInClosedPeriod;
+  public Sickbenefit createdinclosedperiod(Boolean createdinclosedperiod) {
+    this.createdinclosedperiod = createdinclosedperiod;
     return this;
   }
 
    /**
-   * Vytvořeno v uzavřeném období [persistentní položka]
-   * @return createdInClosedPeriod
+   * vytvořeno v uzavřeném období [persistentní položka]
+   * @return createdinclosedperiod
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořeno v uzavřeném období [persistentní položka]")
-  public Boolean getCreatedInClosedPeriod() {
-    return createdInClosedPeriod;
+  @ApiModelProperty(example = "null", value = "vytvořeno v uzavřeném období [persistentní položka]")
+  public Boolean getCreatedinclosedperiod() {
+    return createdinclosedperiod;
   }
 
-  public void setCreatedInClosedPeriod(Boolean createdInClosedPeriod) {
-    this.createdInClosedPeriod = createdInClosedPeriod;
+  public void setCreatedinclosedperiod(Boolean createdinclosedperiod) {
+    this.createdinclosedperiod = createdinclosedperiod;
   }
 
-  public Sickbenefit shortenedInClosedPeriod(Boolean shortenedInClosedPeriod) {
-    this.shortenedInClosedPeriod = shortenedInClosedPeriod;
+  public Sickbenefit shortenedinclosedperiod(Boolean shortenedinclosedperiod) {
+    this.shortenedinclosedperiod = shortenedinclosedperiod;
     return this;
   }
 
    /**
-   * Ukončeno v uzavřeném období [persistentní položka]
-   * @return shortenedInClosedPeriod
+   * ukončeno v uzavřeném období [persistentní položka]
+   * @return shortenedinclosedperiod
   **/
-  @ApiModelProperty(example = "null", value = "Ukončeno v uzavřeném období [persistentní položka]")
-  public Boolean getShortenedInClosedPeriod() {
-    return shortenedInClosedPeriod;
+  @ApiModelProperty(example = "null", value = "ukončeno v uzavřeném období [persistentní položka]")
+  public Boolean getShortenedinclosedperiod() {
+    return shortenedinclosedperiod;
   }
 
-  public void setShortenedInClosedPeriod(Boolean shortenedInClosedPeriod) {
-    this.shortenedInClosedPeriod = shortenedInClosedPeriod;
+  public void setShortenedinclosedperiod(Boolean shortenedinclosedperiod) {
+    this.shortenedinclosedperiod = shortenedinclosedperiod;
   }
 
-  public Sickbenefit isUnpaid(Boolean isUnpaid) {
-    this.isUnpaid = isUnpaid;
+  public Sickbenefit isunpaid(Boolean isunpaid) {
+    this.isunpaid = isunpaid;
     return this;
   }
 
    /**
-   * Neproplácí se [persistentní položka]
-   * @return isUnpaid
+   * neproplácí se [persistentní položka]
+   * @return isunpaid
   **/
-  @ApiModelProperty(example = "null", value = "Neproplácí se [persistentní položka]")
-  public Boolean getIsUnpaid() {
-    return isUnpaid;
+  @ApiModelProperty(example = "null", value = "neproplácí se [persistentní položka]")
+  public Boolean getIsunpaid() {
+    return isunpaid;
   }
 
-  public void setIsUnpaid(Boolean isUnpaid) {
-    this.isUnpaid = isUnpaid;
+  public void setIsunpaid(Boolean isunpaid) {
+    this.isunpaid = isunpaid;
   }
 
-  public Sickbenefit lastShiftDateDATE(DateTime lastShiftDateDATE) {
-    this.lastShiftDateDATE = lastShiftDateDATE;
+  public Sickbenefit lastshiftdatedate(DateTime lastshiftdatedate) {
+    this.lastshiftdatedate = lastshiftdatedate;
     return this;
   }
 
    /**
-   * Posl. prac. den zam. [persistentní položka]
-   * @return lastShiftDateDATE
+   * posl. prac. den zam. [persistentní položka]
+   * @return lastshiftdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Posl. prac. den zam. [persistentní položka]")
-  public DateTime getLastShiftDateDATE() {
-    return lastShiftDateDATE;
+  @ApiModelProperty(example = "null", value = "posl. prac. den zam. [persistentní položka]")
+  public DateTime getLastshiftdatedate() {
+    return lastshiftdatedate;
   }
 
-  public void setLastShiftDateDATE(DateTime lastShiftDateDATE) {
-    this.lastShiftDateDATE = lastShiftDateDATE;
+  public void setLastshiftdatedate(DateTime lastshiftdatedate) {
+    this.lastshiftdatedate = lastshiftdatedate;
   }
 
-  public Sickbenefit payWorkingDays(Boolean payWorkingDays) {
-    this.payWorkingDays = payWorkingDays;
+  public Sickbenefit payworkingdays(Boolean payworkingdays) {
+    this.payworkingdays = payworkingdays;
     return this;
   }
 
    /**
-   * Proplácet pracovní dny [persistentní položka]
-   * @return payWorkingDays
+   * proplácet pracovní dny [persistentní položka]
+   * @return payworkingdays
   **/
-  @ApiModelProperty(example = "null", value = "Proplácet pracovní dny [persistentní položka]")
-  public Boolean getPayWorkingDays() {
-    return payWorkingDays;
+  @ApiModelProperty(example = "null", value = "proplácet pracovní dny [persistentní položka]")
+  public Boolean getPayworkingdays() {
+    return payworkingdays;
   }
 
-  public void setPayWorkingDays(Boolean payWorkingDays) {
-    this.payWorkingDays = payWorkingDays;
+  public void setPayworkingdays(Boolean payworkingdays) {
+    this.payworkingdays = payworkingdays;
   }
 
-  public Sickbenefit lastDay(Double lastDay) {
-    this.lastDay = lastDay;
+  public Sickbenefit lastday(Double lastday) {
+    this.lastday = lastday;
     return this;
   }
 
    /**
-   * Posl.den [persistentní položka]
-   * @return lastDay
+   * posl.den [persistentní položka]
+   * @return lastday
   **/
-  @ApiModelProperty(example = "null", value = "Posl.den [persistentní položka]")
-  public Double getLastDay() {
-    return lastDay;
+  @ApiModelProperty(example = "null", value = "posl.den [persistentní položka]")
+  public Double getLastday() {
+    return lastday;
   }
 
-  public void setLastDay(Double lastDay) {
-    this.lastDay = lastDay;
+  public void setLastday(Double lastday) {
+    this.lastday = lastday;
   }
 
-  public Sickbenefit maxExcludedDays(Double maxExcludedDays) {
-    this.maxExcludedDays = maxExcludedDays;
+  public Sickbenefit maxexcludeddays(Double maxexcludeddays) {
+    this.maxexcludeddays = maxexcludeddays;
     return this;
   }
 
    /**
-   * Max. počet. vyl. dní [persistentní položka]
-   * @return maxExcludedDays
+   * max. počet. vyl. dní [persistentní položka]
+   * @return maxexcludeddays
   **/
-  @ApiModelProperty(example = "null", value = "Max. počet. vyl. dní [persistentní položka]")
-  public Double getMaxExcludedDays() {
-    return maxExcludedDays;
+  @ApiModelProperty(example = "null", value = "max. počet. vyl. dní [persistentní položka]")
+  public Double getMaxexcludeddays() {
+    return maxexcludeddays;
   }
 
-  public void setMaxExcludedDays(Double maxExcludedDays) {
-    this.maxExcludedDays = maxExcludedDays;
+  public void setMaxexcludeddays(Double maxexcludeddays) {
+    this.maxexcludeddays = maxexcludeddays;
   }
 
-  public Sickbenefit workingInjuryID(String workingInjuryID) {
-    this.workingInjuryID = workingInjuryID;
+  public Sickbenefit workinginjuryId(String workinginjuryId) {
+    this.workinginjuryId = workinginjuryId;
     return this;
   }
 
    /**
-   * Pracovní úraz; ID objektu Pracovní úraz [persistentní položka]
-   * @return workingInjuryID
+   * pracovní úraz; id objektu pracovní úraz [persistentní položka]
+   * @return workinginjuryId
   **/
-  @ApiModelProperty(example = "null", value = "Pracovní úraz; ID objektu Pracovní úraz [persistentní položka]")
-  public String getWorkingInjuryID() {
-    return workingInjuryID;
+  @ApiModelProperty(example = "null", value = "pracovní úraz; id objektu pracovní úraz [persistentní položka]")
+  public String getWorkinginjuryId() {
+    return workinginjuryId;
   }
 
-  public void setWorkingInjuryID(String workingInjuryID) {
-    this.workingInjuryID = workingInjuryID;
+  public void setWorkinginjuryId(String workinginjuryId) {
+    this.workinginjuryId = workinginjuryId;
   }
 
-  public Sickbenefit decisionNumber(String decisionNumber) {
-    this.decisionNumber = decisionNumber;
+  public Sickbenefit decisionnumber(String decisionnumber) {
+    this.decisionnumber = decisionnumber;
     return this;
   }
 
    /**
    * Číslo potvrzení [persistentní položka]
-   * @return decisionNumber
+   * @return decisionnumber
   **/
   @ApiModelProperty(example = "null", value = "Číslo potvrzení [persistentní položka]")
-  public String getDecisionNumber() {
-    return decisionNumber;
+  public String getDecisionnumber() {
+    return decisionnumber;
   }
 
-  public void setDecisionNumber(String decisionNumber) {
-    this.decisionNumber = decisionNumber;
+  public void setDecisionnumber(String decisionnumber) {
+    this.decisionnumber = decisionnumber;
   }
 
-  public Sickbenefit employeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public Sickbenefit employeeId(String employeeId) {
+    this.employeeId = employeeId;
     return this;
   }
 
    /**
-   * Zaměstnanec; ID objektu Zaměstnanec
-   * @return employeeID
+   * zaměstnanec; id objektu zaměstnanec
+   * @return employeeId
   **/
-  @ApiModelProperty(example = "null", value = "Zaměstnanec; ID objektu Zaměstnanec")
-  public String getEmployeeID() {
-    return employeeID;
+  @ApiModelProperty(example = "null", value = "zaměstnanec; id objektu zaměstnanec")
+  public String getEmployeeId() {
+    return employeeId;
   }
 
-  public void setEmployeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public void setEmployeeId(String employeeId) {
+    this.employeeId = employeeId;
   }
 
-   /**
-   * Příjmení
-   * @return pERSLastName
-  **/
-  @ApiModelProperty(example = "null", value = "Příjmení")
-  public String getPERSLastName() {
-    return pERSLastName;
-  }
-
-   /**
-   * Os.číslo
-   * @return pERSPersonalNumber
-  **/
-  @ApiModelProperty(example = "null", value = "Os.číslo")
-  public String getPERSPersonalNumber() {
-    return pERSPersonalNumber;
-  }
-
-   /**
-   * Základní typ
-   * @return baseSickTypeText
-  **/
-  @ApiModelProperty(example = "null", value = "Základní typ")
-  public String getBaseSickTypeText() {
-    return baseSickTypeText;
-  }
-
-   /**
-   * Kalendářní dny
-   * @return calendarDaysCount
-  **/
-  @ApiModelProperty(example = "null", value = "Kalendářní dny")
-  public Double getCalendarDaysCount() {
-    return calendarDaysCount;
-  }
-
-  public Sickbenefit prevSickBenefitID(String prevSickBenefitID) {
-    this.prevSickBenefitID = prevSickBenefitID;
+  public Sickbenefit persLastname(String persLastname) {
+    this.persLastname = persLastname;
     return this;
   }
 
    /**
-   * Předchozí ND; ID objektu Nemocenská dávka [persistentní položka]
-   * @return prevSickBenefitID
+   * příjmení
+   * @return persLastname
   **/
-  @ApiModelProperty(example = "null", value = "Předchozí ND; ID objektu Nemocenská dávka [persistentní položka]")
-  public String getPrevSickBenefitID() {
-    return prevSickBenefitID;
+  @ApiModelProperty(example = "null", value = "příjmení")
+  public String getPersLastname() {
+    return persLastname;
   }
 
-  public void setPrevSickBenefitID(String prevSickBenefitID) {
-    this.prevSickBenefitID = prevSickBenefitID;
+  public void setPersLastname(String persLastname) {
+    this.persLastname = persLastname;
   }
 
-  public Sickbenefit continuingSickBenefit(Boolean continuingSickBenefit) {
-    this.continuingSickBenefit = continuingSickBenefit;
+  public Sickbenefit persPersonalnumber(String persPersonalnumber) {
+    this.persPersonalnumber = persPersonalnumber;
     return this;
   }
 
    /**
-   * Pokračující ND [persistentní položka]
-   * @return continuingSickBenefit
+   * os.číslo
+   * @return persPersonalnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pokračující ND [persistentní položka]")
-  public Boolean getContinuingSickBenefit() {
-    return continuingSickBenefit;
+  @ApiModelProperty(example = "null", value = "os.číslo")
+  public String getPersPersonalnumber() {
+    return persPersonalnumber;
   }
 
-  public void setContinuingSickBenefit(Boolean continuingSickBenefit) {
-    this.continuingSickBenefit = continuingSickBenefit;
+  public void setPersPersonalnumber(String persPersonalnumber) {
+    this.persPersonalnumber = persPersonalnumber;
   }
 
-   /**
-   * DVZ1
-   * @return dayBase1
-  **/
-  @ApiModelProperty(example = "null", value = "DVZ1")
-  public Double getDayBase1() {
-    return dayBase1;
+  public Sickbenefit basesicktypetext(String basesicktypetext) {
+    this.basesicktypetext = basesicktypetext;
+    return this;
   }
 
    /**
-   * DVZ2
-   * @return dayBase2
+   * základní typ
+   * @return basesicktypetext
   **/
-  @ApiModelProperty(example = "null", value = "DVZ2")
-  public Double getDayBase2() {
-    return dayBase2;
+  @ApiModelProperty(example = "null", value = "základní typ")
+  public String getBasesicktypetext() {
+    return basesicktypetext;
+  }
+
+  public void setBasesicktypetext(String basesicktypetext) {
+    this.basesicktypetext = basesicktypetext;
+  }
+
+  public Sickbenefit calendardayscount(Double calendardayscount) {
+    this.calendardayscount = calendardayscount;
+    return this;
   }
 
    /**
-   * RPV
-   * @return hourBase
+   * kalendářní dny
+   * @return calendardayscount
   **/
-  @ApiModelProperty(example = "null", value = "RPV")
-  public Double getHourBase() {
-    return hourBase;
+  @ApiModelProperty(example = "null", value = "kalendářní dny")
+  public Double getCalendardayscount() {
+    return calendardayscount;
+  }
+
+  public void setCalendardayscount(Double calendardayscount) {
+    this.calendardayscount = calendardayscount;
+  }
+
+  public Sickbenefit prevsickbenefitId(String prevsickbenefitId) {
+    this.prevsickbenefitId = prevsickbenefitId;
+    return this;
   }
 
    /**
-   * Datum od - pokračující ND
-   * @return firstDateFrom
+   * předchozí nd; id objektu nemocenská dávka [persistentní položka]
+   * @return prevsickbenefitId
   **/
-  @ApiModelProperty(example = "null", value = "Datum od - pokračující ND")
-  public Double getFirstDateFrom() {
-    return firstDateFrom;
+  @ApiModelProperty(example = "null", value = "předchozí nd; id objektu nemocenská dávka [persistentní položka]")
+  public String getPrevsickbenefitId() {
+    return prevsickbenefitId;
+  }
+
+  public void setPrevsickbenefitId(String prevsickbenefitId) {
+    this.prevsickbenefitId = prevsickbenefitId;
+  }
+
+  public Sickbenefit continuingsickbenefit(Boolean continuingsickbenefit) {
+    this.continuingsickbenefit = continuingsickbenefit;
+    return this;
   }
 
    /**
-   * Plné jméno
-   * @return fullDisplayName
+   * pokračující nd [persistentní položka]
+   * @return continuingsickbenefit
   **/
-  @ApiModelProperty(example = "null", value = "Plné jméno")
-  public String getFullDisplayName() {
-    return fullDisplayName;
+  @ApiModelProperty(example = "null", value = "pokračující nd [persistentní položka]")
+  public Boolean getContinuingsickbenefit() {
+    return continuingsickbenefit;
+  }
+
+  public void setContinuingsickbenefit(Boolean continuingsickbenefit) {
+    this.continuingsickbenefit = continuingsickbenefit;
+  }
+
+  public Sickbenefit daybase1(Double daybase1) {
+    this.daybase1 = daybase1;
+    return this;
+  }
+
+   /**
+   * dvz1
+   * @return daybase1
+  **/
+  @ApiModelProperty(example = "null", value = "dvz1")
+  public Double getDaybase1() {
+    return daybase1;
+  }
+
+  public void setDaybase1(Double daybase1) {
+    this.daybase1 = daybase1;
+  }
+
+  public Sickbenefit daybase2(Double daybase2) {
+    this.daybase2 = daybase2;
+    return this;
+  }
+
+   /**
+   * dvz2
+   * @return daybase2
+  **/
+  @ApiModelProperty(example = "null", value = "dvz2")
+  public Double getDaybase2() {
+    return daybase2;
+  }
+
+  public void setDaybase2(Double daybase2) {
+    this.daybase2 = daybase2;
+  }
+
+  public Sickbenefit hourbase(Double hourbase) {
+    this.hourbase = hourbase;
+    return this;
+  }
+
+   /**
+   * rpv
+   * @return hourbase
+  **/
+  @ApiModelProperty(example = "null", value = "rpv")
+  public Double getHourbase() {
+    return hourbase;
+  }
+
+  public void setHourbase(Double hourbase) {
+    this.hourbase = hourbase;
+  }
+
+  public Sickbenefit firstdatefrom(Double firstdatefrom) {
+    this.firstdatefrom = firstdatefrom;
+    return this;
+  }
+
+   /**
+   * datum od - pokračující nd
+   * @return firstdatefrom
+  **/
+  @ApiModelProperty(example = "null", value = "datum od - pokračující nd")
+  public Double getFirstdatefrom() {
+    return firstdatefrom;
+  }
+
+  public void setFirstdatefrom(Double firstdatefrom) {
+    this.firstdatefrom = firstdatefrom;
+  }
+
+  public Sickbenefit fulldisplayname(String fulldisplayname) {
+    this.fulldisplayname = fulldisplayname;
+    return this;
+  }
+
+   /**
+   * plné jméno
+   * @return fulldisplayname
+  **/
+  @ApiModelProperty(example = "null", value = "plné jméno")
+  public String getFulldisplayname() {
+    return fulldisplayname;
+  }
+
+  public void setFulldisplayname(String fulldisplayname) {
+    this.fulldisplayname = fulldisplayname;
   }
 
 
@@ -1029,63 +1146,63 @@ public class Sickbenefit   {
       return false;
     }
     Sickbenefit sickbenefit = (Sickbenefit) o;
-    return Objects.equals(this.displayName, sickbenefit.displayName) &&
-        Objects.equals(this.ID, sickbenefit.ID) &&
-        Objects.equals(this.classID, sickbenefit.classID) &&
-        Objects.equals(this.objVersion, sickbenefit.objVersion) &&
+    return Objects.equals(this.displayname, sickbenefit.displayname) &&
+        Objects.equals(this.id, sickbenefit.id) &&
+        Objects.equals(this.classid, sickbenefit.classid) &&
+        Objects.equals(this.objversion, sickbenefit.objversion) &&
         Objects.equals(this.rows, sickbenefit.rows) &&
-        Objects.equals(this.docQueueID, sickbenefit.docQueueID) &&
-        Objects.equals(this.periodID, sickbenefit.periodID) &&
-        Objects.equals(this.ordNumber, sickbenefit.ordNumber) &&
-        Objects.equals(this.docDateDATE, sickbenefit.docDateDATE) &&
-        Objects.equals(this.createdByID, sickbenefit.createdByID) &&
-        Objects.equals(this.correctedByID, sickbenefit.correctedByID) &&
-        Objects.equals(this.newRelatedType, sickbenefit.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, sickbenefit.newRelatedDocumentID) &&
-        Objects.equals(this.workingRelationID, sickbenefit.workingRelationID) &&
-        Objects.equals(this.dateFromDATE, sickbenefit.dateFromDATE) &&
-        Objects.equals(this.dateToDATE, sickbenefit.dateToDATE) &&
-        Objects.equals(this.firstDay, sickbenefit.firstDay) &&
+        Objects.equals(this.docqueueId, sickbenefit.docqueueId) &&
+        Objects.equals(this.periodId, sickbenefit.periodId) &&
+        Objects.equals(this.ordnumber, sickbenefit.ordnumber) &&
+        Objects.equals(this.docdatedate, sickbenefit.docdatedate) &&
+        Objects.equals(this.createdbyId, sickbenefit.createdbyId) &&
+        Objects.equals(this.correctedbyId, sickbenefit.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, sickbenefit.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, sickbenefit.newrelateddocumentId) &&
+        Objects.equals(this.workingrelationId, sickbenefit.workingrelationId) &&
+        Objects.equals(this.datefromdate, sickbenefit.datefromdate) &&
+        Objects.equals(this.datetodate, sickbenefit.datetodate) &&
+        Objects.equals(this.firstday, sickbenefit.firstday) &&
         Objects.equals(this.description, sickbenefit.description) &&
-        Objects.equals(this.sickBenefitTypeID, sickbenefit.sickBenefitTypeID) &&
+        Objects.equals(this.sickbenefittypeId, sickbenefit.sickbenefittypeId) &&
         Objects.equals(this.average, sickbenefit.average) &&
-        Objects.equals(this.baseSickType, sickbenefit.baseSickType) &&
-        Objects.equals(this.oneCase, sickbenefit.oneCase) &&
-        Objects.equals(this.isAbsent, sickbenefit.isAbsent) &&
-        Objects.equals(this.maxDayCount, sickbenefit.maxDayCount) &&
-        Objects.equals(this.totalDayCount, sickbenefit.totalDayCount) &&
-        Objects.equals(this.averageText, sickbenefit.averageText) &&
+        Objects.equals(this.basesicktype, sickbenefit.basesicktype) &&
+        Objects.equals(this.onecase, sickbenefit.onecase) &&
+        Objects.equals(this.isabsent, sickbenefit.isabsent) &&
+        Objects.equals(this.maxdaycount, sickbenefit.maxdaycount) &&
+        Objects.equals(this.totaldaycount, sickbenefit.totaldaycount) &&
+        Objects.equals(this.averagetext, sickbenefit.averagetext) &&
         Objects.equals(this.dirty, sickbenefit.dirty) &&
-        Objects.equals(this.dayBaseRounding, sickbenefit.dayBaseRounding) &&
-        Objects.equals(this.sickBenefitRounding, sickbenefit.sickBenefitRounding) &&
-        Objects.equals(this.averageReduction, sickbenefit.averageReduction) &&
-        Objects.equals(this.noExcludedDays, sickbenefit.noExcludedDays) &&
-        Objects.equals(this.createdInClosedPeriod, sickbenefit.createdInClosedPeriod) &&
-        Objects.equals(this.shortenedInClosedPeriod, sickbenefit.shortenedInClosedPeriod) &&
-        Objects.equals(this.isUnpaid, sickbenefit.isUnpaid) &&
-        Objects.equals(this.lastShiftDateDATE, sickbenefit.lastShiftDateDATE) &&
-        Objects.equals(this.payWorkingDays, sickbenefit.payWorkingDays) &&
-        Objects.equals(this.lastDay, sickbenefit.lastDay) &&
-        Objects.equals(this.maxExcludedDays, sickbenefit.maxExcludedDays) &&
-        Objects.equals(this.workingInjuryID, sickbenefit.workingInjuryID) &&
-        Objects.equals(this.decisionNumber, sickbenefit.decisionNumber) &&
-        Objects.equals(this.employeeID, sickbenefit.employeeID) &&
-        Objects.equals(this.pERSLastName, sickbenefit.pERSLastName) &&
-        Objects.equals(this.pERSPersonalNumber, sickbenefit.pERSPersonalNumber) &&
-        Objects.equals(this.baseSickTypeText, sickbenefit.baseSickTypeText) &&
-        Objects.equals(this.calendarDaysCount, sickbenefit.calendarDaysCount) &&
-        Objects.equals(this.prevSickBenefitID, sickbenefit.prevSickBenefitID) &&
-        Objects.equals(this.continuingSickBenefit, sickbenefit.continuingSickBenefit) &&
-        Objects.equals(this.dayBase1, sickbenefit.dayBase1) &&
-        Objects.equals(this.dayBase2, sickbenefit.dayBase2) &&
-        Objects.equals(this.hourBase, sickbenefit.hourBase) &&
-        Objects.equals(this.firstDateFrom, sickbenefit.firstDateFrom) &&
-        Objects.equals(this.fullDisplayName, sickbenefit.fullDisplayName);
+        Objects.equals(this.daybaserounding, sickbenefit.daybaserounding) &&
+        Objects.equals(this.sickbenefitrounding, sickbenefit.sickbenefitrounding) &&
+        Objects.equals(this.averagereduction, sickbenefit.averagereduction) &&
+        Objects.equals(this.noexcludeddays, sickbenefit.noexcludeddays) &&
+        Objects.equals(this.createdinclosedperiod, sickbenefit.createdinclosedperiod) &&
+        Objects.equals(this.shortenedinclosedperiod, sickbenefit.shortenedinclosedperiod) &&
+        Objects.equals(this.isunpaid, sickbenefit.isunpaid) &&
+        Objects.equals(this.lastshiftdatedate, sickbenefit.lastshiftdatedate) &&
+        Objects.equals(this.payworkingdays, sickbenefit.payworkingdays) &&
+        Objects.equals(this.lastday, sickbenefit.lastday) &&
+        Objects.equals(this.maxexcludeddays, sickbenefit.maxexcludeddays) &&
+        Objects.equals(this.workinginjuryId, sickbenefit.workinginjuryId) &&
+        Objects.equals(this.decisionnumber, sickbenefit.decisionnumber) &&
+        Objects.equals(this.employeeId, sickbenefit.employeeId) &&
+        Objects.equals(this.persLastname, sickbenefit.persLastname) &&
+        Objects.equals(this.persPersonalnumber, sickbenefit.persPersonalnumber) &&
+        Objects.equals(this.basesicktypetext, sickbenefit.basesicktypetext) &&
+        Objects.equals(this.calendardayscount, sickbenefit.calendardayscount) &&
+        Objects.equals(this.prevsickbenefitId, sickbenefit.prevsickbenefitId) &&
+        Objects.equals(this.continuingsickbenefit, sickbenefit.continuingsickbenefit) &&
+        Objects.equals(this.daybase1, sickbenefit.daybase1) &&
+        Objects.equals(this.daybase2, sickbenefit.daybase2) &&
+        Objects.equals(this.hourbase, sickbenefit.hourbase) &&
+        Objects.equals(this.firstdatefrom, sickbenefit.firstdatefrom) &&
+        Objects.equals(this.fulldisplayname, sickbenefit.fulldisplayname);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, workingRelationID, dateFromDATE, dateToDATE, firstDay, description, sickBenefitTypeID, average, baseSickType, oneCase, isAbsent, maxDayCount, totalDayCount, averageText, dirty, dayBaseRounding, sickBenefitRounding, averageReduction, noExcludedDays, createdInClosedPeriod, shortenedInClosedPeriod, isUnpaid, lastShiftDateDATE, payWorkingDays, lastDay, maxExcludedDays, workingInjuryID, decisionNumber, employeeID, pERSLastName, pERSPersonalNumber, baseSickTypeText, calendarDaysCount, prevSickBenefitID, continuingSickBenefit, dayBase1, dayBase2, hourBase, firstDateFrom, fullDisplayName);
+    return Objects.hash(displayname, id, classid, objversion, rows, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, workingrelationId, datefromdate, datetodate, firstday, description, sickbenefittypeId, average, basesicktype, onecase, isabsent, maxdaycount, totaldaycount, averagetext, dirty, daybaserounding, sickbenefitrounding, averagereduction, noexcludeddays, createdinclosedperiod, shortenedinclosedperiod, isunpaid, lastshiftdatedate, payworkingdays, lastday, maxexcludeddays, workinginjuryId, decisionnumber, employeeId, persLastname, persPersonalnumber, basesicktypetext, calendardayscount, prevsickbenefitId, continuingsickbenefit, daybase1, daybase2, hourbase, firstdatefrom, fulldisplayname);
   }
 
   @Override
@@ -1093,58 +1210,58 @@ public class Sickbenefit   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Sickbenefit {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    workingRelationID: ").append(toIndentedString(workingRelationID)).append("\n");
-    sb.append("    dateFromDATE: ").append(toIndentedString(dateFromDATE)).append("\n");
-    sb.append("    dateToDATE: ").append(toIndentedString(dateToDATE)).append("\n");
-    sb.append("    firstDay: ").append(toIndentedString(firstDay)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    workingrelationId: ").append(toIndentedString(workingrelationId)).append("\n");
+    sb.append("    datefromdate: ").append(toIndentedString(datefromdate)).append("\n");
+    sb.append("    datetodate: ").append(toIndentedString(datetodate)).append("\n");
+    sb.append("    firstday: ").append(toIndentedString(firstday)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    sickBenefitTypeID: ").append(toIndentedString(sickBenefitTypeID)).append("\n");
+    sb.append("    sickbenefittypeId: ").append(toIndentedString(sickbenefittypeId)).append("\n");
     sb.append("    average: ").append(toIndentedString(average)).append("\n");
-    sb.append("    baseSickType: ").append(toIndentedString(baseSickType)).append("\n");
-    sb.append("    oneCase: ").append(toIndentedString(oneCase)).append("\n");
-    sb.append("    isAbsent: ").append(toIndentedString(isAbsent)).append("\n");
-    sb.append("    maxDayCount: ").append(toIndentedString(maxDayCount)).append("\n");
-    sb.append("    totalDayCount: ").append(toIndentedString(totalDayCount)).append("\n");
-    sb.append("    averageText: ").append(toIndentedString(averageText)).append("\n");
+    sb.append("    basesicktype: ").append(toIndentedString(basesicktype)).append("\n");
+    sb.append("    onecase: ").append(toIndentedString(onecase)).append("\n");
+    sb.append("    isabsent: ").append(toIndentedString(isabsent)).append("\n");
+    sb.append("    maxdaycount: ").append(toIndentedString(maxdaycount)).append("\n");
+    sb.append("    totaldaycount: ").append(toIndentedString(totaldaycount)).append("\n");
+    sb.append("    averagetext: ").append(toIndentedString(averagetext)).append("\n");
     sb.append("    dirty: ").append(toIndentedString(dirty)).append("\n");
-    sb.append("    dayBaseRounding: ").append(toIndentedString(dayBaseRounding)).append("\n");
-    sb.append("    sickBenefitRounding: ").append(toIndentedString(sickBenefitRounding)).append("\n");
-    sb.append("    averageReduction: ").append(toIndentedString(averageReduction)).append("\n");
-    sb.append("    noExcludedDays: ").append(toIndentedString(noExcludedDays)).append("\n");
-    sb.append("    createdInClosedPeriod: ").append(toIndentedString(createdInClosedPeriod)).append("\n");
-    sb.append("    shortenedInClosedPeriod: ").append(toIndentedString(shortenedInClosedPeriod)).append("\n");
-    sb.append("    isUnpaid: ").append(toIndentedString(isUnpaid)).append("\n");
-    sb.append("    lastShiftDateDATE: ").append(toIndentedString(lastShiftDateDATE)).append("\n");
-    sb.append("    payWorkingDays: ").append(toIndentedString(payWorkingDays)).append("\n");
-    sb.append("    lastDay: ").append(toIndentedString(lastDay)).append("\n");
-    sb.append("    maxExcludedDays: ").append(toIndentedString(maxExcludedDays)).append("\n");
-    sb.append("    workingInjuryID: ").append(toIndentedString(workingInjuryID)).append("\n");
-    sb.append("    decisionNumber: ").append(toIndentedString(decisionNumber)).append("\n");
-    sb.append("    employeeID: ").append(toIndentedString(employeeID)).append("\n");
-    sb.append("    pERSLastName: ").append(toIndentedString(pERSLastName)).append("\n");
-    sb.append("    pERSPersonalNumber: ").append(toIndentedString(pERSPersonalNumber)).append("\n");
-    sb.append("    baseSickTypeText: ").append(toIndentedString(baseSickTypeText)).append("\n");
-    sb.append("    calendarDaysCount: ").append(toIndentedString(calendarDaysCount)).append("\n");
-    sb.append("    prevSickBenefitID: ").append(toIndentedString(prevSickBenefitID)).append("\n");
-    sb.append("    continuingSickBenefit: ").append(toIndentedString(continuingSickBenefit)).append("\n");
-    sb.append("    dayBase1: ").append(toIndentedString(dayBase1)).append("\n");
-    sb.append("    dayBase2: ").append(toIndentedString(dayBase2)).append("\n");
-    sb.append("    hourBase: ").append(toIndentedString(hourBase)).append("\n");
-    sb.append("    firstDateFrom: ").append(toIndentedString(firstDateFrom)).append("\n");
-    sb.append("    fullDisplayName: ").append(toIndentedString(fullDisplayName)).append("\n");
+    sb.append("    daybaserounding: ").append(toIndentedString(daybaserounding)).append("\n");
+    sb.append("    sickbenefitrounding: ").append(toIndentedString(sickbenefitrounding)).append("\n");
+    sb.append("    averagereduction: ").append(toIndentedString(averagereduction)).append("\n");
+    sb.append("    noexcludeddays: ").append(toIndentedString(noexcludeddays)).append("\n");
+    sb.append("    createdinclosedperiod: ").append(toIndentedString(createdinclosedperiod)).append("\n");
+    sb.append("    shortenedinclosedperiod: ").append(toIndentedString(shortenedinclosedperiod)).append("\n");
+    sb.append("    isunpaid: ").append(toIndentedString(isunpaid)).append("\n");
+    sb.append("    lastshiftdatedate: ").append(toIndentedString(lastshiftdatedate)).append("\n");
+    sb.append("    payworkingdays: ").append(toIndentedString(payworkingdays)).append("\n");
+    sb.append("    lastday: ").append(toIndentedString(lastday)).append("\n");
+    sb.append("    maxexcludeddays: ").append(toIndentedString(maxexcludeddays)).append("\n");
+    sb.append("    workinginjuryId: ").append(toIndentedString(workinginjuryId)).append("\n");
+    sb.append("    decisionnumber: ").append(toIndentedString(decisionnumber)).append("\n");
+    sb.append("    employeeId: ").append(toIndentedString(employeeId)).append("\n");
+    sb.append("    persLastname: ").append(toIndentedString(persLastname)).append("\n");
+    sb.append("    persPersonalnumber: ").append(toIndentedString(persPersonalnumber)).append("\n");
+    sb.append("    basesicktypetext: ").append(toIndentedString(basesicktypetext)).append("\n");
+    sb.append("    calendardayscount: ").append(toIndentedString(calendardayscount)).append("\n");
+    sb.append("    prevsickbenefitId: ").append(toIndentedString(prevsickbenefitId)).append("\n");
+    sb.append("    continuingsickbenefit: ").append(toIndentedString(continuingsickbenefit)).append("\n");
+    sb.append("    daybase1: ").append(toIndentedString(daybase1)).append("\n");
+    sb.append("    daybase2: ").append(toIndentedString(daybase2)).append("\n");
+    sb.append("    hourbase: ").append(toIndentedString(hourbase)).append("\n");
+    sb.append("    firstdatefrom: ").append(toIndentedString(firstdatefrom)).append("\n");
+    sb.append("    fulldisplayname: ").append(toIndentedString(fulldisplayname)).append("\n");
     sb.append("}");
     return sb.toString();
   }

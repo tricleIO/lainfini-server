@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,177 +34,222 @@ import java.util.Objects;
 /**
  * Msgrecipient
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Msgrecipient   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("RecipientType")
-  private Integer recipientType = null;
+  @SerializedName("recipienttype")
+  private Integer recipienttype = null;
 
-  @SerializedName("SecurityUser_ID")
-  private String securityUserID = null;
+  @SerializedName("securityuser_id")
+  private String securityuserId = null;
 
-  @SerializedName("SecurityRole_ID")
-  private String securityRoleID = null;
+  @SerializedName("securityrole_id")
+  private String securityroleId = null;
 
-  @SerializedName("SecurityGroup_ID")
-  private String securityGroupID = null;
+  @SerializedName("securitygroup_id")
+  private String securitygroupId = null;
 
-  @SerializedName("Email")
+  @SerializedName("email")
   private String email = null;
 
-  @SerializedName("EmailAccount_ID")
-  private String emailAccountID = null;
+  @SerializedName("emailaccount_id")
+  private String emailaccountId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Hlavičkový objekt [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Hlavičkový objekt [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Msgrecipient posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Msgrecipient displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Msgrecipient recipientType(Integer recipientType) {
-    this.recipientType = recipientType;
+  public Msgrecipient id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return recipientType
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getRecipientType() {
-    return recipientType;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setRecipientType(Integer recipientType) {
-    this.recipientType = recipientType;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Msgrecipient securityUserID(String securityUserID) {
-    this.securityUserID = securityUserID;
+  public Msgrecipient classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Uživatel; ID objektu Uživatel [persistentní položka]
-   * @return securityUserID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Uživatel; ID objektu Uživatel [persistentní položka]")
-  public String getSecurityUserID() {
-    return securityUserID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setSecurityUserID(String securityUserID) {
-    this.securityUserID = securityUserID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Msgrecipient securityRoleID(String securityRoleID) {
-    this.securityRoleID = securityRoleID;
+  public Msgrecipient objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Role; ID objektu Role [persistentní položka]
-   * @return securityRoleID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Role; ID objektu Role [persistentní položka]")
-  public String getSecurityRoleID() {
-    return securityRoleID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setSecurityRoleID(String securityRoleID) {
-    this.securityRoleID = securityRoleID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Msgrecipient securityGroupID(String securityGroupID) {
-    this.securityGroupID = securityGroupID;
+  public Msgrecipient parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Skupina rolí; ID objektu Skupina rolí [persistentní položka]
-   * @return securityGroupID
+   * vlastník; id objektu hlavičkový objekt [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Skupina rolí; ID objektu Skupina rolí [persistentní položka]")
-  public String getSecurityGroupID() {
-    return securityGroupID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu hlavičkový objekt [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setSecurityGroupID(String securityGroupID) {
-    this.securityGroupID = securityGroupID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Msgrecipient posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Msgrecipient recipienttype(Integer recipienttype) {
+    this.recipienttype = recipienttype;
+    return this;
+  }
+
+   /**
+   * typ [persistentní položka]
+   * @return recipienttype
+  **/
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getRecipienttype() {
+    return recipienttype;
+  }
+
+  public void setRecipienttype(Integer recipienttype) {
+    this.recipienttype = recipienttype;
+  }
+
+  public Msgrecipient securityuserId(String securityuserId) {
+    this.securityuserId = securityuserId;
+    return this;
+  }
+
+   /**
+   * uživatel; id objektu uživatel [persistentní položka]
+   * @return securityuserId
+  **/
+  @ApiModelProperty(example = "null", value = "uživatel; id objektu uživatel [persistentní položka]")
+  public String getSecurityuserId() {
+    return securityuserId;
+  }
+
+  public void setSecurityuserId(String securityuserId) {
+    this.securityuserId = securityuserId;
+  }
+
+  public Msgrecipient securityroleId(String securityroleId) {
+    this.securityroleId = securityroleId;
+    return this;
+  }
+
+   /**
+   * role; id objektu role [persistentní položka]
+   * @return securityroleId
+  **/
+  @ApiModelProperty(example = "null", value = "role; id objektu role [persistentní položka]")
+  public String getSecurityroleId() {
+    return securityroleId;
+  }
+
+  public void setSecurityroleId(String securityroleId) {
+    this.securityroleId = securityroleId;
+  }
+
+  public Msgrecipient securitygroupId(String securitygroupId) {
+    this.securitygroupId = securitygroupId;
+    return this;
+  }
+
+   /**
+   * skupina rolí; id objektu skupina rolí [persistentní položka]
+   * @return securitygroupId
+  **/
+  @ApiModelProperty(example = "null", value = "skupina rolí; id objektu skupina rolí [persistentní položka]")
+  public String getSecuritygroupId() {
+    return securitygroupId;
+  }
+
+  public void setSecuritygroupId(String securitygroupId) {
+    this.securitygroupId = securitygroupId;
   }
 
   public Msgrecipient email(String email) {
@@ -213,10 +258,10 @@ public class Msgrecipient   {
   }
 
    /**
-   * Adresát(i) [persistentní položka]
+   * adresát(i) [persistentní položka]
    * @return email
   **/
-  @ApiModelProperty(example = "null", value = "Adresát(i) [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "adresát(i) [persistentní položka]")
   public String getEmail() {
     return email;
   }
@@ -225,22 +270,22 @@ public class Msgrecipient   {
     this.email = email;
   }
 
-  public Msgrecipient emailAccountID(String emailAccountID) {
-    this.emailAccountID = emailAccountID;
+  public Msgrecipient emailaccountId(String emailaccountId) {
+    this.emailaccountId = emailaccountId;
     return this;
   }
 
    /**
-   * Vlastní e-mail. účet; ID objektu E-mailový účet [persistentní položka]
-   * @return emailAccountID
+   * vlastní e-mail. účet; id objektu e-mailový účet [persistentní položka]
+   * @return emailaccountId
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní e-mail. účet; ID objektu E-mailový účet [persistentní položka]")
-  public String getEmailAccountID() {
-    return emailAccountID;
+  @ApiModelProperty(example = "null", value = "vlastní e-mail. účet; id objektu e-mailový účet [persistentní položka]")
+  public String getEmailaccountId() {
+    return emailaccountId;
   }
 
-  public void setEmailAccountID(String emailAccountID) {
-    this.emailAccountID = emailAccountID;
+  public void setEmailaccountId(String emailaccountId) {
+    this.emailaccountId = emailaccountId;
   }
 
 
@@ -253,23 +298,23 @@ public class Msgrecipient   {
       return false;
     }
     Msgrecipient msgrecipient = (Msgrecipient) o;
-    return Objects.equals(this.displayName, msgrecipient.displayName) &&
-        Objects.equals(this.ID, msgrecipient.ID) &&
-        Objects.equals(this.classID, msgrecipient.classID) &&
-        Objects.equals(this.objVersion, msgrecipient.objVersion) &&
-        Objects.equals(this.parentID, msgrecipient.parentID) &&
-        Objects.equals(this.posIndex, msgrecipient.posIndex) &&
-        Objects.equals(this.recipientType, msgrecipient.recipientType) &&
-        Objects.equals(this.securityUserID, msgrecipient.securityUserID) &&
-        Objects.equals(this.securityRoleID, msgrecipient.securityRoleID) &&
-        Objects.equals(this.securityGroupID, msgrecipient.securityGroupID) &&
+    return Objects.equals(this.displayname, msgrecipient.displayname) &&
+        Objects.equals(this.id, msgrecipient.id) &&
+        Objects.equals(this.classid, msgrecipient.classid) &&
+        Objects.equals(this.objversion, msgrecipient.objversion) &&
+        Objects.equals(this.parentId, msgrecipient.parentId) &&
+        Objects.equals(this.posindex, msgrecipient.posindex) &&
+        Objects.equals(this.recipienttype, msgrecipient.recipienttype) &&
+        Objects.equals(this.securityuserId, msgrecipient.securityuserId) &&
+        Objects.equals(this.securityroleId, msgrecipient.securityroleId) &&
+        Objects.equals(this.securitygroupId, msgrecipient.securitygroupId) &&
         Objects.equals(this.email, msgrecipient.email) &&
-        Objects.equals(this.emailAccountID, msgrecipient.emailAccountID);
+        Objects.equals(this.emailaccountId, msgrecipient.emailaccountId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, recipientType, securityUserID, securityRoleID, securityGroupID, email, emailAccountID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, recipienttype, securityuserId, securityroleId, securitygroupId, email, emailaccountId);
   }
 
   @Override
@@ -277,18 +322,18 @@ public class Msgrecipient   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Msgrecipient {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    recipientType: ").append(toIndentedString(recipientType)).append("\n");
-    sb.append("    securityUserID: ").append(toIndentedString(securityUserID)).append("\n");
-    sb.append("    securityRoleID: ").append(toIndentedString(securityRoleID)).append("\n");
-    sb.append("    securityGroupID: ").append(toIndentedString(securityGroupID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    recipienttype: ").append(toIndentedString(recipienttype)).append("\n");
+    sb.append("    securityuserId: ").append(toIndentedString(securityuserId)).append("\n");
+    sb.append("    securityroleId: ").append(toIndentedString(securityroleId)).append("\n");
+    sb.append("    securitygroupId: ").append(toIndentedString(securitygroupId)).append("\n");
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
-    sb.append("    emailAccountID: ").append(toIndentedString(emailAccountID)).append("\n");
+    sb.append("    emailaccountId: ").append(toIndentedString(emailaccountId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

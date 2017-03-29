@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,81 +37,126 @@ import java.util.Objects;
 /**
  * Installsetversion
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Installsetversion   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Version")
+  @SerializedName("version")
   private Integer version = null;
 
-  @SerializedName("VersionAuthor")
-  private String versionAuthor = null;
+  @SerializedName("versionauthor")
+  private String versionauthor = null;
 
-  @SerializedName("VersionDate$DATE")
-  private DateTime versionDateDATE = null;
+  @SerializedName("versiondate$date")
+  private DateTime versiondatedate = null;
 
-  @SerializedName("VersionDescription")
-  private String versionDescription = null;
+  @SerializedName("versiondescription")
+  private String versiondescription = null;
 
-  @SerializedName("VersionItems")
-  private List<Installsetversion> versionItems = new ArrayList<Installsetversion>();
+  @SerializedName("versionitems")
+  private List<Installsetversion> versionitems = new ArrayList<Installsetversion>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Installsetversion displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Installsetversion id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Installsetversion classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Installsetversion objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Instalační sada [persistentní položka]
-   * @return parentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Instalační sada [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Installsetversion parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu instalační sada [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu instalační sada [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
   public Installsetversion version(Integer version) {
@@ -132,81 +177,81 @@ public class Installsetversion   {
     this.version = version;
   }
 
-  public Installsetversion versionAuthor(String versionAuthor) {
-    this.versionAuthor = versionAuthor;
+  public Installsetversion versionauthor(String versionauthor) {
+    this.versionauthor = versionauthor;
     return this;
   }
 
    /**
-   * Autor verze [persistentní položka]
-   * @return versionAuthor
+   * autor verze [persistentní položka]
+   * @return versionauthor
   **/
-  @ApiModelProperty(example = "null", value = "Autor verze [persistentní položka]")
-  public String getVersionAuthor() {
-    return versionAuthor;
+  @ApiModelProperty(example = "null", value = "autor verze [persistentní položka]")
+  public String getVersionauthor() {
+    return versionauthor;
   }
 
-  public void setVersionAuthor(String versionAuthor) {
-    this.versionAuthor = versionAuthor;
+  public void setVersionauthor(String versionauthor) {
+    this.versionauthor = versionauthor;
   }
 
-  public Installsetversion versionDateDATE(DateTime versionDateDATE) {
-    this.versionDateDATE = versionDateDATE;
+  public Installsetversion versiondatedate(DateTime versiondatedate) {
+    this.versiondatedate = versiondatedate;
     return this;
   }
 
    /**
-   * Datum verze [persistentní položka]
-   * @return versionDateDATE
+   * datum verze [persistentní položka]
+   * @return versiondatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum verze [persistentní položka]")
-  public DateTime getVersionDateDATE() {
-    return versionDateDATE;
+  @ApiModelProperty(example = "null", value = "datum verze [persistentní položka]")
+  public DateTime getVersiondatedate() {
+    return versiondatedate;
   }
 
-  public void setVersionDateDATE(DateTime versionDateDATE) {
-    this.versionDateDATE = versionDateDATE;
+  public void setVersiondatedate(DateTime versiondatedate) {
+    this.versiondatedate = versiondatedate;
   }
 
-  public Installsetversion versionDescription(String versionDescription) {
-    this.versionDescription = versionDescription;
+  public Installsetversion versiondescription(String versiondescription) {
+    this.versiondescription = versiondescription;
     return this;
   }
 
    /**
-   * Popis [persistentní položka]
-   * @return versionDescription
+   * popis [persistentní položka]
+   * @return versiondescription
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
-  public String getVersionDescription() {
-    return versionDescription;
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
+  public String getVersiondescription() {
+    return versiondescription;
   }
 
-  public void setVersionDescription(String versionDescription) {
-    this.versionDescription = versionDescription;
+  public void setVersiondescription(String versiondescription) {
+    this.versiondescription = versiondescription;
   }
 
-  public Installsetversion versionItems(List<Installsetversion> versionItems) {
-    this.versionItems = versionItems;
+  public Installsetversion versionitems(List<Installsetversion> versionitems) {
+    this.versionitems = versionitems;
     return this;
   }
 
-  public Installsetversion addVersionItemsItem(Installsetversion versionItemsItem) {
-    this.versionItems.add(versionItemsItem);
+  public Installsetversion addVersionitemsItem(Installsetversion versionitemsItem) {
+    this.versionitems.add(versionitemsItem);
     return this;
   }
 
    /**
-   * Položka instalační sady ve verzi; kolekce BO Verze instalační sady [nepersistentní položka]
-   * @return versionItems
+   * položka instalační sady ve verzi; kolekce bo verze instalační sady [nepersistentní položka]
+   * @return versionitems
   **/
-  @ApiModelProperty(example = "null", value = "Položka instalační sady ve verzi; kolekce BO Verze instalační sady [nepersistentní položka]")
-  public List<Installsetversion> getVersionItems() {
-    return versionItems;
+  @ApiModelProperty(example = "null", value = "položka instalační sady ve verzi; kolekce bo verze instalační sady [nepersistentní položka]")
+  public List<Installsetversion> getVersionitems() {
+    return versionitems;
   }
 
-  public void setVersionItems(List<Installsetversion> versionItems) {
-    this.versionItems = versionItems;
+  public void setVersionitems(List<Installsetversion> versionitems) {
+    this.versionitems = versionitems;
   }
 
 
@@ -219,21 +264,21 @@ public class Installsetversion   {
       return false;
     }
     Installsetversion installsetversion = (Installsetversion) o;
-    return Objects.equals(this.displayName, installsetversion.displayName) &&
-        Objects.equals(this.ID, installsetversion.ID) &&
-        Objects.equals(this.classID, installsetversion.classID) &&
-        Objects.equals(this.objVersion, installsetversion.objVersion) &&
-        Objects.equals(this.parentID, installsetversion.parentID) &&
+    return Objects.equals(this.displayname, installsetversion.displayname) &&
+        Objects.equals(this.id, installsetversion.id) &&
+        Objects.equals(this.classid, installsetversion.classid) &&
+        Objects.equals(this.objversion, installsetversion.objversion) &&
+        Objects.equals(this.parentId, installsetversion.parentId) &&
         Objects.equals(this.version, installsetversion.version) &&
-        Objects.equals(this.versionAuthor, installsetversion.versionAuthor) &&
-        Objects.equals(this.versionDateDATE, installsetversion.versionDateDATE) &&
-        Objects.equals(this.versionDescription, installsetversion.versionDescription) &&
-        Objects.equals(this.versionItems, installsetversion.versionItems);
+        Objects.equals(this.versionauthor, installsetversion.versionauthor) &&
+        Objects.equals(this.versiondatedate, installsetversion.versiondatedate) &&
+        Objects.equals(this.versiondescription, installsetversion.versiondescription) &&
+        Objects.equals(this.versionitems, installsetversion.versionitems);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, version, versionAuthor, versionDateDATE, versionDescription, versionItems);
+    return Objects.hash(displayname, id, classid, objversion, parentId, version, versionauthor, versiondatedate, versiondescription, versionitems);
   }
 
   @Override
@@ -241,16 +286,16 @@ public class Installsetversion   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Installsetversion {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
     sb.append("    version: ").append(toIndentedString(version)).append("\n");
-    sb.append("    versionAuthor: ").append(toIndentedString(versionAuthor)).append("\n");
-    sb.append("    versionDateDATE: ").append(toIndentedString(versionDateDATE)).append("\n");
-    sb.append("    versionDescription: ").append(toIndentedString(versionDescription)).append("\n");
-    sb.append("    versionItems: ").append(toIndentedString(versionItems)).append("\n");
+    sb.append("    versionauthor: ").append(toIndentedString(versionauthor)).append("\n");
+    sb.append("    versiondatedate: ").append(toIndentedString(versiondatedate)).append("\n");
+    sb.append("    versiondescription: ").append(toIndentedString(versiondescription)).append("\n");
+    sb.append("    versionitems: ").append(toIndentedString(versionitems)).append("\n");
     sb.append("}");
     return sb.toString();
   }

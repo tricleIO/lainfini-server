@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,297 +35,342 @@ import java.util.Objects;
 /**
  * Assetleasingpayment
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Assetleasingpayment   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PaymentDate$DATE")
-  private DateTime paymentDateDATE = null;
+  @SerializedName("paymentdate$date")
+  private DateTime paymentdatedate = null;
 
-  @SerializedName("ToPayTotalAmount")
-  private Double toPayTotalAmount = null;
+  @SerializedName("topaytotalamount")
+  private Double topaytotalamount = null;
 
-  @SerializedName("ToPayVAT")
-  private Double toPayVAT = null;
+  @SerializedName("topayvat")
+  private Double topayvat = null;
 
-  @SerializedName("IsGenerated")
-  private Boolean isGenerated = null;
+  @SerializedName("isgenerated")
+  private Boolean isgenerated = null;
 
-  @SerializedName("ToPayDoc_Type")
-  private String toPayDocType = null;
+  @SerializedName("topaydoc_type")
+  private String topaydocType = null;
 
-  @SerializedName("ToPayDoc_ID")
-  private String toPayDocID = null;
+  @SerializedName("topaydoc_id")
+  private String topaydocId = null;
 
-  @SerializedName("HireAmount")
-  private Double hireAmount = null;
+  @SerializedName("hireamount")
+  private Double hireamount = null;
 
-  @SerializedName("HireInsuaranceAmount")
-  private Double hireInsuaranceAmount = null;
+  @SerializedName("hireinsuaranceamount")
+  private Double hireinsuaranceamount = null;
 
-  @SerializedName("HireAmountVAT")
-  private Double hireAmountVAT = null;
+  @SerializedName("hireamountvat")
+  private Double hireamountvat = null;
 
-  @SerializedName("HireDoc_ID")
-  private String hireDocID = null;
+  @SerializedName("hiredoc_id")
+  private String hiredocId = null;
 
-  @SerializedName("PaymentOrder_ID")
-  private String paymentOrderID = null;
+  @SerializedName("paymentorder_id")
+  private String paymentorderId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Hlavičkový objekt [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Hlavičkový objekt [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Assetleasingpayment paymentDateDATE(DateTime paymentDateDATE) {
-    this.paymentDateDATE = paymentDateDATE;
+  public Assetleasingpayment displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Splatno [persistentní položka]
-   * @return paymentDateDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Splatno [persistentní položka]")
-  public DateTime getPaymentDateDATE() {
-    return paymentDateDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPaymentDateDATE(DateTime paymentDateDATE) {
-    this.paymentDateDATE = paymentDateDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Assetleasingpayment toPayTotalAmount(Double toPayTotalAmount) {
-    this.toPayTotalAmount = toPayTotalAmount;
+  public Assetleasingpayment id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Assetleasingpayment classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Assetleasingpayment objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Assetleasingpayment parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu hlavičkový objekt [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu hlavičkový objekt [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Assetleasingpayment paymentdatedate(DateTime paymentdatedate) {
+    this.paymentdatedate = paymentdatedate;
+    return this;
+  }
+
+   /**
+   * splatno [persistentní položka]
+   * @return paymentdatedate
+  **/
+  @ApiModelProperty(example = "null", value = "splatno [persistentní položka]")
+  public DateTime getPaymentdatedate() {
+    return paymentdatedate;
+  }
+
+  public void setPaymentdatedate(DateTime paymentdatedate) {
+    this.paymentdatedate = paymentdatedate;
+  }
+
+  public Assetleasingpayment topaytotalamount(Double topaytotalamount) {
+    this.topaytotalamount = topaytotalamount;
     return this;
   }
 
    /**
    * Částka k úhradě [persistentní položka]
-   * @return toPayTotalAmount
+   * @return topaytotalamount
   **/
   @ApiModelProperty(example = "null", value = "Částka k úhradě [persistentní položka]")
-  public Double getToPayTotalAmount() {
-    return toPayTotalAmount;
+  public Double getTopaytotalamount() {
+    return topaytotalamount;
   }
 
-  public void setToPayTotalAmount(Double toPayTotalAmount) {
-    this.toPayTotalAmount = toPayTotalAmount;
+  public void setTopaytotalamount(Double topaytotalamount) {
+    this.topaytotalamount = topaytotalamount;
   }
 
-  public Assetleasingpayment toPayVAT(Double toPayVAT) {
-    this.toPayVAT = toPayVAT;
+  public Assetleasingpayment topayvat(Double topayvat) {
+    this.topayvat = topayvat;
     return this;
   }
 
    /**
-   * DPH k úhradě [persistentní položka]
-   * @return toPayVAT
+   * dph k úhradě [persistentní položka]
+   * @return topayvat
   **/
-  @ApiModelProperty(example = "null", value = "DPH k úhradě [persistentní položka]")
-  public Double getToPayVAT() {
-    return toPayVAT;
+  @ApiModelProperty(example = "null", value = "dph k úhradě [persistentní položka]")
+  public Double getTopayvat() {
+    return topayvat;
   }
 
-  public void setToPayVAT(Double toPayVAT) {
-    this.toPayVAT = toPayVAT;
+  public void setTopayvat(Double topayvat) {
+    this.topayvat = topayvat;
   }
 
-  public Assetleasingpayment isGenerated(Boolean isGenerated) {
-    this.isGenerated = isGenerated;
+  public Assetleasingpayment isgenerated(Boolean isgenerated) {
+    this.isgenerated = isgenerated;
     return this;
   }
 
    /**
-   * Předpis platby námi generovaný [persistentní položka]
-   * @return isGenerated
+   * předpis platby námi generovaný [persistentní položka]
+   * @return isgenerated
   **/
-  @ApiModelProperty(example = "null", value = "Předpis platby námi generovaný [persistentní položka]")
-  public Boolean getIsGenerated() {
-    return isGenerated;
+  @ApiModelProperty(example = "null", value = "předpis platby námi generovaný [persistentní položka]")
+  public Boolean getIsgenerated() {
+    return isgenerated;
   }
 
-  public void setIsGenerated(Boolean isGenerated) {
-    this.isGenerated = isGenerated;
+  public void setIsgenerated(Boolean isgenerated) {
+    this.isgenerated = isgenerated;
   }
 
-  public Assetleasingpayment toPayDocType(String toPayDocType) {
-    this.toPayDocType = toPayDocType;
+  public Assetleasingpayment topaydocType(String topaydocType) {
+    this.topaydocType = topaydocType;
     return this;
   }
 
    /**
-   * Druh dokladu předpisu leasingové splátky [persistentní položka]
-   * @return toPayDocType
+   * druh dokladu předpisu leasingové splátky [persistentní položka]
+   * @return topaydocType
   **/
-  @ApiModelProperty(example = "null", value = "Druh dokladu předpisu leasingové splátky [persistentní položka]")
-  public String getToPayDocType() {
-    return toPayDocType;
+  @ApiModelProperty(example = "null", value = "druh dokladu předpisu leasingové splátky [persistentní položka]")
+  public String getTopaydocType() {
+    return topaydocType;
   }
 
-  public void setToPayDocType(String toPayDocType) {
-    this.toPayDocType = toPayDocType;
+  public void setTopaydocType(String topaydocType) {
+    this.topaydocType = topaydocType;
   }
 
-  public Assetleasingpayment toPayDocID(String toPayDocID) {
-    this.toPayDocID = toPayDocID;
+  public Assetleasingpayment topaydocId(String topaydocId) {
+    this.topaydocId = topaydocId;
     return this;
   }
 
    /**
-   * Odkaz na doklad, který je předpisem leasingové splátky.; ID objektu Dokument [persistentní položka]
-   * @return toPayDocID
+   * odkaz na doklad, který je předpisem leasingové splátky.; id objektu dokument [persistentní položka]
+   * @return topaydocId
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na doklad, který je předpisem leasingové splátky.; ID objektu Dokument [persistentní položka]")
-  public String getToPayDocID() {
-    return toPayDocID;
+  @ApiModelProperty(example = "null", value = "odkaz na doklad, který je předpisem leasingové splátky.; id objektu dokument [persistentní položka]")
+  public String getTopaydocId() {
+    return topaydocId;
   }
 
-  public void setToPayDocID(String toPayDocID) {
-    this.toPayDocID = toPayDocID;
+  public void setTopaydocId(String topaydocId) {
+    this.topaydocId = topaydocId;
   }
 
-  public Assetleasingpayment hireAmount(Double hireAmount) {
-    this.hireAmount = hireAmount;
+  public Assetleasingpayment hireamount(Double hireamount) {
+    this.hireamount = hireamount;
     return this;
   }
 
    /**
-   * Nájemné bez daně [persistentní položka]
-   * @return hireAmount
+   * nájemné bez daně [persistentní položka]
+   * @return hireamount
   **/
-  @ApiModelProperty(example = "null", value = "Nájemné bez daně [persistentní položka]")
-  public Double getHireAmount() {
-    return hireAmount;
+  @ApiModelProperty(example = "null", value = "nájemné bez daně [persistentní položka]")
+  public Double getHireamount() {
+    return hireamount;
   }
 
-  public void setHireAmount(Double hireAmount) {
-    this.hireAmount = hireAmount;
+  public void setHireamount(Double hireamount) {
+    this.hireamount = hireamount;
   }
 
-  public Assetleasingpayment hireInsuaranceAmount(Double hireInsuaranceAmount) {
-    this.hireInsuaranceAmount = hireInsuaranceAmount;
+  public Assetleasingpayment hireinsuaranceamount(Double hireinsuaranceamount) {
+    this.hireinsuaranceamount = hireinsuaranceamount;
     return this;
   }
 
    /**
-   * Pojištění [persistentní položka]
-   * @return hireInsuaranceAmount
+   * pojištění [persistentní položka]
+   * @return hireinsuaranceamount
   **/
-  @ApiModelProperty(example = "null", value = "Pojištění [persistentní položka]")
-  public Double getHireInsuaranceAmount() {
-    return hireInsuaranceAmount;
+  @ApiModelProperty(example = "null", value = "pojištění [persistentní položka]")
+  public Double getHireinsuaranceamount() {
+    return hireinsuaranceamount;
   }
 
-  public void setHireInsuaranceAmount(Double hireInsuaranceAmount) {
-    this.hireInsuaranceAmount = hireInsuaranceAmount;
+  public void setHireinsuaranceamount(Double hireinsuaranceamount) {
+    this.hireinsuaranceamount = hireinsuaranceamount;
   }
 
-  public Assetleasingpayment hireAmountVAT(Double hireAmountVAT) {
-    this.hireAmountVAT = hireAmountVAT;
+  public Assetleasingpayment hireamountvat(Double hireamountvat) {
+    this.hireamountvat = hireamountvat;
     return this;
   }
 
    /**
-   * Nájemné DPH [persistentní položka]
-   * @return hireAmountVAT
+   * nájemné dph [persistentní položka]
+   * @return hireamountvat
   **/
-  @ApiModelProperty(example = "null", value = "Nájemné DPH [persistentní položka]")
-  public Double getHireAmountVAT() {
-    return hireAmountVAT;
+  @ApiModelProperty(example = "null", value = "nájemné dph [persistentní položka]")
+  public Double getHireamountvat() {
+    return hireamountvat;
   }
 
-  public void setHireAmountVAT(Double hireAmountVAT) {
-    this.hireAmountVAT = hireAmountVAT;
+  public void setHireamountvat(Double hireamountvat) {
+    this.hireamountvat = hireamountvat;
   }
 
-  public Assetleasingpayment hireDocID(String hireDocID) {
-    this.hireDocID = hireDocID;
+  public Assetleasingpayment hiredocId(String hiredocId) {
+    this.hiredocId = hiredocId;
     return this;
   }
 
    /**
-   * Odkaz na vygenerovaný interní doklad na nájemné; ID objektu Ostatní výdaj [persistentní položka]
-   * @return hireDocID
+   * odkaz na vygenerovaný interní doklad na nájemné; id objektu ostatní výdaj [persistentní položka]
+   * @return hiredocId
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na vygenerovaný interní doklad na nájemné; ID objektu Ostatní výdaj [persistentní položka]")
-  public String getHireDocID() {
-    return hireDocID;
+  @ApiModelProperty(example = "null", value = "odkaz na vygenerovaný interní doklad na nájemné; id objektu ostatní výdaj [persistentní položka]")
+  public String getHiredocId() {
+    return hiredocId;
   }
 
-  public void setHireDocID(String hireDocID) {
-    this.hireDocID = hireDocID;
+  public void setHiredocId(String hiredocId) {
+    this.hiredocId = hiredocId;
   }
 
-  public Assetleasingpayment paymentOrderID(String paymentOrderID) {
-    this.paymentOrderID = paymentOrderID;
+  public Assetleasingpayment paymentorderId(String paymentorderId) {
+    this.paymentorderId = paymentorderId;
     return this;
   }
 
    /**
-   * Odkaz na vygenerovanou žádost o platební příkaz; ID objektu Platební příkaz [persistentní položka]
-   * @return paymentOrderID
+   * odkaz na vygenerovanou žádost o platební příkaz; id objektu platební příkaz [persistentní položka]
+   * @return paymentorderId
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na vygenerovanou žádost o platební příkaz; ID objektu Platební příkaz [persistentní položka]")
-  public String getPaymentOrderID() {
-    return paymentOrderID;
+  @ApiModelProperty(example = "null", value = "odkaz na vygenerovanou žádost o platební příkaz; id objektu platební příkaz [persistentní položka]")
+  public String getPaymentorderId() {
+    return paymentorderId;
   }
 
-  public void setPaymentOrderID(String paymentOrderID) {
-    this.paymentOrderID = paymentOrderID;
+  public void setPaymentorderId(String paymentorderId) {
+    this.paymentorderId = paymentorderId;
   }
 
 
@@ -338,27 +383,27 @@ public class Assetleasingpayment   {
       return false;
     }
     Assetleasingpayment assetleasingpayment = (Assetleasingpayment) o;
-    return Objects.equals(this.displayName, assetleasingpayment.displayName) &&
-        Objects.equals(this.ID, assetleasingpayment.ID) &&
-        Objects.equals(this.classID, assetleasingpayment.classID) &&
-        Objects.equals(this.objVersion, assetleasingpayment.objVersion) &&
-        Objects.equals(this.parentID, assetleasingpayment.parentID) &&
-        Objects.equals(this.paymentDateDATE, assetleasingpayment.paymentDateDATE) &&
-        Objects.equals(this.toPayTotalAmount, assetleasingpayment.toPayTotalAmount) &&
-        Objects.equals(this.toPayVAT, assetleasingpayment.toPayVAT) &&
-        Objects.equals(this.isGenerated, assetleasingpayment.isGenerated) &&
-        Objects.equals(this.toPayDocType, assetleasingpayment.toPayDocType) &&
-        Objects.equals(this.toPayDocID, assetleasingpayment.toPayDocID) &&
-        Objects.equals(this.hireAmount, assetleasingpayment.hireAmount) &&
-        Objects.equals(this.hireInsuaranceAmount, assetleasingpayment.hireInsuaranceAmount) &&
-        Objects.equals(this.hireAmountVAT, assetleasingpayment.hireAmountVAT) &&
-        Objects.equals(this.hireDocID, assetleasingpayment.hireDocID) &&
-        Objects.equals(this.paymentOrderID, assetleasingpayment.paymentOrderID);
+    return Objects.equals(this.displayname, assetleasingpayment.displayname) &&
+        Objects.equals(this.id, assetleasingpayment.id) &&
+        Objects.equals(this.classid, assetleasingpayment.classid) &&
+        Objects.equals(this.objversion, assetleasingpayment.objversion) &&
+        Objects.equals(this.parentId, assetleasingpayment.parentId) &&
+        Objects.equals(this.paymentdatedate, assetleasingpayment.paymentdatedate) &&
+        Objects.equals(this.topaytotalamount, assetleasingpayment.topaytotalamount) &&
+        Objects.equals(this.topayvat, assetleasingpayment.topayvat) &&
+        Objects.equals(this.isgenerated, assetleasingpayment.isgenerated) &&
+        Objects.equals(this.topaydocType, assetleasingpayment.topaydocType) &&
+        Objects.equals(this.topaydocId, assetleasingpayment.topaydocId) &&
+        Objects.equals(this.hireamount, assetleasingpayment.hireamount) &&
+        Objects.equals(this.hireinsuaranceamount, assetleasingpayment.hireinsuaranceamount) &&
+        Objects.equals(this.hireamountvat, assetleasingpayment.hireamountvat) &&
+        Objects.equals(this.hiredocId, assetleasingpayment.hiredocId) &&
+        Objects.equals(this.paymentorderId, assetleasingpayment.paymentorderId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, paymentDateDATE, toPayTotalAmount, toPayVAT, isGenerated, toPayDocType, toPayDocID, hireAmount, hireInsuaranceAmount, hireAmountVAT, hireDocID, paymentOrderID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, paymentdatedate, topaytotalamount, topayvat, isgenerated, topaydocType, topaydocId, hireamount, hireinsuaranceamount, hireamountvat, hiredocId, paymentorderId);
   }
 
   @Override
@@ -366,22 +411,22 @@ public class Assetleasingpayment   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Assetleasingpayment {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    paymentDateDATE: ").append(toIndentedString(paymentDateDATE)).append("\n");
-    sb.append("    toPayTotalAmount: ").append(toIndentedString(toPayTotalAmount)).append("\n");
-    sb.append("    toPayVAT: ").append(toIndentedString(toPayVAT)).append("\n");
-    sb.append("    isGenerated: ").append(toIndentedString(isGenerated)).append("\n");
-    sb.append("    toPayDocType: ").append(toIndentedString(toPayDocType)).append("\n");
-    sb.append("    toPayDocID: ").append(toIndentedString(toPayDocID)).append("\n");
-    sb.append("    hireAmount: ").append(toIndentedString(hireAmount)).append("\n");
-    sb.append("    hireInsuaranceAmount: ").append(toIndentedString(hireInsuaranceAmount)).append("\n");
-    sb.append("    hireAmountVAT: ").append(toIndentedString(hireAmountVAT)).append("\n");
-    sb.append("    hireDocID: ").append(toIndentedString(hireDocID)).append("\n");
-    sb.append("    paymentOrderID: ").append(toIndentedString(paymentOrderID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    paymentdatedate: ").append(toIndentedString(paymentdatedate)).append("\n");
+    sb.append("    topaytotalamount: ").append(toIndentedString(topaytotalamount)).append("\n");
+    sb.append("    topayvat: ").append(toIndentedString(topayvat)).append("\n");
+    sb.append("    isgenerated: ").append(toIndentedString(isgenerated)).append("\n");
+    sb.append("    topaydocType: ").append(toIndentedString(topaydocType)).append("\n");
+    sb.append("    topaydocId: ").append(toIndentedString(topaydocId)).append("\n");
+    sb.append("    hireamount: ").append(toIndentedString(hireamount)).append("\n");
+    sb.append("    hireinsuaranceamount: ").append(toIndentedString(hireinsuaranceamount)).append("\n");
+    sb.append("    hireamountvat: ").append(toIndentedString(hireamountvat)).append("\n");
+    sb.append("    hiredocId: ").append(toIndentedString(hiredocId)).append("\n");
+    sb.append("    paymentorderId: ").append(toIndentedString(paymentorderId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

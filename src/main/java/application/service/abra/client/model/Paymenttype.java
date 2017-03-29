@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,93 +34,129 @@ import java.util.Objects;
 /**
  * Paymenttype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Paymenttype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("PaymentKind")
-  private Integer paymentKind = null;
+  @SerializedName("paymentkind")
+  private Integer paymentkind = null;
 
-  @SerializedName("CommentTitle")
-  private String commentTitle = null;
+  @SerializedName("commenttitle")
+  private String commenttitle = null;
 
-  @SerializedName("CommentRequired")
-  private Boolean commentRequired = null;
+  @SerializedName("commentrequired")
+  private Boolean commentrequired = null;
 
-  @SerializedName("AuthCodeRequired")
-  private Boolean authCodeRequired = null;
+  @SerializedName("authcoderequired")
+  private Boolean authcoderequired = null;
 
-  @SerializedName("SummarizeDisabled")
-  private Boolean summarizeDisabled = null;
+  @SerializedName("summarizedisabled")
+  private Boolean summarizedisabled = null;
 
-  @SerializedName("PrintComment")
-  private Boolean printComment = null;
+  @SerializedName("printcomment")
+  private Boolean printcomment = null;
 
-  @SerializedName("MaximumGiveBackAmount")
-  private Double maximumGiveBackAmount = null;
+  @SerializedName("maximumgivebackamount")
+  private Double maximumgivebackamount = null;
 
-  @SerializedName("AnalyticalAccount")
-  private String analyticalAccount = null;
+  @SerializedName("analyticalaccount")
+  private String analyticalaccount = null;
 
-  @SerializedName("MaximumPaymentAmount")
-  private Double maximumPaymentAmount = null;
+  @SerializedName("maximumpaymentamount")
+  private Double maximumpaymentamount = null;
 
-  @SerializedName("EET")
-  private Boolean EET = null;
+  @SerializedName("eet")
+  private Boolean eet = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Paymenttype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Paymenttype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Paymenttype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Paymenttype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Paymenttype hidden(Boolean hidden) {
@@ -129,10 +165,10 @@ public class Paymenttype   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -147,10 +183,10 @@ public class Paymenttype   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -165,10 +201,10 @@ public class Paymenttype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -177,184 +213,184 @@ public class Paymenttype   {
     this.name = name;
   }
 
-  public Paymenttype paymentKind(Integer paymentKind) {
-    this.paymentKind = paymentKind;
+  public Paymenttype paymentkind(Integer paymentkind) {
+    this.paymentkind = paymentkind;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return paymentKind
+   * typ [persistentní položka]
+   * @return paymentkind
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getPaymentKind() {
-    return paymentKind;
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getPaymentkind() {
+    return paymentkind;
   }
 
-  public void setPaymentKind(Integer paymentKind) {
-    this.paymentKind = paymentKind;
+  public void setPaymentkind(Integer paymentkind) {
+    this.paymentkind = paymentkind;
   }
 
-  public Paymenttype commentTitle(String commentTitle) {
-    this.commentTitle = commentTitle;
+  public Paymenttype commenttitle(String commenttitle) {
+    this.commenttitle = commenttitle;
     return this;
   }
 
    /**
-   * Nadpis komentáře [persistentní položka]
-   * @return commentTitle
+   * nadpis komentáře [persistentní položka]
+   * @return commenttitle
   **/
-  @ApiModelProperty(example = "null", value = "Nadpis komentáře [persistentní položka]")
-  public String getCommentTitle() {
-    return commentTitle;
+  @ApiModelProperty(example = "null", value = "nadpis komentáře [persistentní položka]")
+  public String getCommenttitle() {
+    return commenttitle;
   }
 
-  public void setCommentTitle(String commentTitle) {
-    this.commentTitle = commentTitle;
+  public void setCommenttitle(String commenttitle) {
+    this.commenttitle = commenttitle;
   }
 
-  public Paymenttype commentRequired(Boolean commentRequired) {
-    this.commentRequired = commentRequired;
+  public Paymenttype commentrequired(Boolean commentrequired) {
+    this.commentrequired = commentrequired;
     return this;
   }
 
    /**
-   * Vyžadovat komentář [persistentní položka]
-   * @return commentRequired
+   * vyžadovat komentář [persistentní položka]
+   * @return commentrequired
   **/
-  @ApiModelProperty(example = "null", value = "Vyžadovat komentář [persistentní položka]")
-  public Boolean getCommentRequired() {
-    return commentRequired;
+  @ApiModelProperty(example = "null", value = "vyžadovat komentář [persistentní položka]")
+  public Boolean getCommentrequired() {
+    return commentrequired;
   }
 
-  public void setCommentRequired(Boolean commentRequired) {
-    this.commentRequired = commentRequired;
+  public void setCommentrequired(Boolean commentrequired) {
+    this.commentrequired = commentrequired;
   }
 
-  public Paymenttype authCodeRequired(Boolean authCodeRequired) {
-    this.authCodeRequired = authCodeRequired;
+  public Paymenttype authcoderequired(Boolean authcoderequired) {
+    this.authcoderequired = authcoderequired;
     return this;
   }
 
    /**
-   * Vyžadovat autorizační kód [persistentní položka]
-   * @return authCodeRequired
+   * vyžadovat autorizační kód [persistentní položka]
+   * @return authcoderequired
   **/
-  @ApiModelProperty(example = "null", value = "Vyžadovat autorizační kód [persistentní položka]")
-  public Boolean getAuthCodeRequired() {
-    return authCodeRequired;
+  @ApiModelProperty(example = "null", value = "vyžadovat autorizační kód [persistentní položka]")
+  public Boolean getAuthcoderequired() {
+    return authcoderequired;
   }
 
-  public void setAuthCodeRequired(Boolean authCodeRequired) {
-    this.authCodeRequired = authCodeRequired;
+  public void setAuthcoderequired(Boolean authcoderequired) {
+    this.authcoderequired = authcoderequired;
   }
 
-  public Paymenttype summarizeDisabled(Boolean summarizeDisabled) {
-    this.summarizeDisabled = summarizeDisabled;
+  public Paymenttype summarizedisabled(Boolean summarizedisabled) {
+    this.summarizedisabled = summarizedisabled;
     return this;
   }
 
    /**
-   * Nesčítat [persistentní položka]
-   * @return summarizeDisabled
+   * nesčítat [persistentní položka]
+   * @return summarizedisabled
   **/
-  @ApiModelProperty(example = "null", value = "Nesčítat [persistentní položka]")
-  public Boolean getSummarizeDisabled() {
-    return summarizeDisabled;
+  @ApiModelProperty(example = "null", value = "nesčítat [persistentní položka]")
+  public Boolean getSummarizedisabled() {
+    return summarizedisabled;
   }
 
-  public void setSummarizeDisabled(Boolean summarizeDisabled) {
-    this.summarizeDisabled = summarizeDisabled;
+  public void setSummarizedisabled(Boolean summarizedisabled) {
+    this.summarizedisabled = summarizedisabled;
   }
 
-  public Paymenttype printComment(Boolean printComment) {
-    this.printComment = printComment;
+  public Paymenttype printcomment(Boolean printcomment) {
+    this.printcomment = printcomment;
     return this;
   }
 
    /**
-   * Tisknout popis [persistentní položka]
-   * @return printComment
+   * tisknout popis [persistentní položka]
+   * @return printcomment
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout popis [persistentní položka]")
-  public Boolean getPrintComment() {
-    return printComment;
+  @ApiModelProperty(example = "null", value = "tisknout popis [persistentní položka]")
+  public Boolean getPrintcomment() {
+    return printcomment;
   }
 
-  public void setPrintComment(Boolean printComment) {
-    this.printComment = printComment;
+  public void setPrintcomment(Boolean printcomment) {
+    this.printcomment = printcomment;
   }
 
-  public Paymenttype maximumGiveBackAmount(Double maximumGiveBackAmount) {
-    this.maximumGiveBackAmount = maximumGiveBackAmount;
+  public Paymenttype maximumgivebackamount(Double maximumgivebackamount) {
+    this.maximumgivebackamount = maximumgivebackamount;
     return this;
   }
 
    /**
-   * Max.vracená částka [persistentní položka]
-   * @return maximumGiveBackAmount
+   * max.vracená částka [persistentní položka]
+   * @return maximumgivebackamount
   **/
-  @ApiModelProperty(example = "null", value = "Max.vracená částka [persistentní položka]")
-  public Double getMaximumGiveBackAmount() {
-    return maximumGiveBackAmount;
+  @ApiModelProperty(example = "null", value = "max.vracená částka [persistentní položka]")
+  public Double getMaximumgivebackamount() {
+    return maximumgivebackamount;
   }
 
-  public void setMaximumGiveBackAmount(Double maximumGiveBackAmount) {
-    this.maximumGiveBackAmount = maximumGiveBackAmount;
+  public void setMaximumgivebackamount(Double maximumgivebackamount) {
+    this.maximumgivebackamount = maximumgivebackamount;
   }
 
-  public Paymenttype analyticalAccount(String analyticalAccount) {
-    this.analyticalAccount = analyticalAccount;
+  public Paymenttype analyticalaccount(String analyticalaccount) {
+    this.analyticalaccount = analyticalaccount;
     return this;
   }
 
    /**
-   * Analytika [persistentní položka]
-   * @return analyticalAccount
+   * analytika [persistentní položka]
+   * @return analyticalaccount
   **/
-  @ApiModelProperty(example = "null", value = "Analytika [persistentní položka]")
-  public String getAnalyticalAccount() {
-    return analyticalAccount;
+  @ApiModelProperty(example = "null", value = "analytika [persistentní položka]")
+  public String getAnalyticalaccount() {
+    return analyticalaccount;
   }
 
-  public void setAnalyticalAccount(String analyticalAccount) {
-    this.analyticalAccount = analyticalAccount;
+  public void setAnalyticalaccount(String analyticalaccount) {
+    this.analyticalaccount = analyticalaccount;
   }
 
-  public Paymenttype maximumPaymentAmount(Double maximumPaymentAmount) {
-    this.maximumPaymentAmount = maximumPaymentAmount;
+  public Paymenttype maximumpaymentamount(Double maximumpaymentamount) {
+    this.maximumpaymentamount = maximumpaymentamount;
     return this;
   }
 
    /**
-   * Maximální částka platby [persistentní položka]
-   * @return maximumPaymentAmount
+   * maximální částka platby [persistentní položka]
+   * @return maximumpaymentamount
   **/
-  @ApiModelProperty(example = "null", value = "Maximální částka platby [persistentní položka]")
-  public Double getMaximumPaymentAmount() {
-    return maximumPaymentAmount;
+  @ApiModelProperty(example = "null", value = "maximální částka platby [persistentní položka]")
+  public Double getMaximumpaymentamount() {
+    return maximumpaymentamount;
   }
 
-  public void setMaximumPaymentAmount(Double maximumPaymentAmount) {
-    this.maximumPaymentAmount = maximumPaymentAmount;
+  public void setMaximumpaymentamount(Double maximumpaymentamount) {
+    this.maximumpaymentamount = maximumpaymentamount;
   }
 
-  public Paymenttype EET(Boolean EET) {
-    this.EET = EET;
+  public Paymenttype eet(Boolean eet) {
+    this.eet = eet;
     return this;
   }
 
    /**
-   * EET [persistentní položka]
-   * @return EET
+   * eet [persistentní položka]
+   * @return eet
   **/
-  @ApiModelProperty(example = "null", value = "EET [persistentní položka]")
-  public Boolean getEET() {
-    return EET;
+  @ApiModelProperty(example = "null", value = "eet [persistentní položka]")
+  public Boolean getEet() {
+    return eet;
   }
 
-  public void setEET(Boolean EET) {
-    this.EET = EET;
+  public void setEet(Boolean eet) {
+    this.eet = eet;
   }
 
 
@@ -367,28 +403,28 @@ public class Paymenttype   {
       return false;
     }
     Paymenttype paymenttype = (Paymenttype) o;
-    return Objects.equals(this.displayName, paymenttype.displayName) &&
-        Objects.equals(this.ID, paymenttype.ID) &&
-        Objects.equals(this.classID, paymenttype.classID) &&
-        Objects.equals(this.objVersion, paymenttype.objVersion) &&
+    return Objects.equals(this.displayname, paymenttype.displayname) &&
+        Objects.equals(this.id, paymenttype.id) &&
+        Objects.equals(this.classid, paymenttype.classid) &&
+        Objects.equals(this.objversion, paymenttype.objversion) &&
         Objects.equals(this.hidden, paymenttype.hidden) &&
         Objects.equals(this.code, paymenttype.code) &&
         Objects.equals(this.name, paymenttype.name) &&
-        Objects.equals(this.paymentKind, paymenttype.paymentKind) &&
-        Objects.equals(this.commentTitle, paymenttype.commentTitle) &&
-        Objects.equals(this.commentRequired, paymenttype.commentRequired) &&
-        Objects.equals(this.authCodeRequired, paymenttype.authCodeRequired) &&
-        Objects.equals(this.summarizeDisabled, paymenttype.summarizeDisabled) &&
-        Objects.equals(this.printComment, paymenttype.printComment) &&
-        Objects.equals(this.maximumGiveBackAmount, paymenttype.maximumGiveBackAmount) &&
-        Objects.equals(this.analyticalAccount, paymenttype.analyticalAccount) &&
-        Objects.equals(this.maximumPaymentAmount, paymenttype.maximumPaymentAmount) &&
-        Objects.equals(this.EET, paymenttype.EET);
+        Objects.equals(this.paymentkind, paymenttype.paymentkind) &&
+        Objects.equals(this.commenttitle, paymenttype.commenttitle) &&
+        Objects.equals(this.commentrequired, paymenttype.commentrequired) &&
+        Objects.equals(this.authcoderequired, paymenttype.authcoderequired) &&
+        Objects.equals(this.summarizedisabled, paymenttype.summarizedisabled) &&
+        Objects.equals(this.printcomment, paymenttype.printcomment) &&
+        Objects.equals(this.maximumgivebackamount, paymenttype.maximumgivebackamount) &&
+        Objects.equals(this.analyticalaccount, paymenttype.analyticalaccount) &&
+        Objects.equals(this.maximumpaymentamount, paymenttype.maximumpaymentamount) &&
+        Objects.equals(this.eet, paymenttype.eet);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, paymentKind, commentTitle, commentRequired, authCodeRequired, summarizeDisabled, printComment, maximumGiveBackAmount, analyticalAccount, maximumPaymentAmount, EET);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, paymentkind, commenttitle, commentrequired, authcoderequired, summarizedisabled, printcomment, maximumgivebackamount, analyticalaccount, maximumpaymentamount, eet);
   }
 
   @Override
@@ -396,23 +432,23 @@ public class Paymenttype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Paymenttype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    paymentKind: ").append(toIndentedString(paymentKind)).append("\n");
-    sb.append("    commentTitle: ").append(toIndentedString(commentTitle)).append("\n");
-    sb.append("    commentRequired: ").append(toIndentedString(commentRequired)).append("\n");
-    sb.append("    authCodeRequired: ").append(toIndentedString(authCodeRequired)).append("\n");
-    sb.append("    summarizeDisabled: ").append(toIndentedString(summarizeDisabled)).append("\n");
-    sb.append("    printComment: ").append(toIndentedString(printComment)).append("\n");
-    sb.append("    maximumGiveBackAmount: ").append(toIndentedString(maximumGiveBackAmount)).append("\n");
-    sb.append("    analyticalAccount: ").append(toIndentedString(analyticalAccount)).append("\n");
-    sb.append("    maximumPaymentAmount: ").append(toIndentedString(maximumPaymentAmount)).append("\n");
-    sb.append("    EET: ").append(toIndentedString(EET)).append("\n");
+    sb.append("    paymentkind: ").append(toIndentedString(paymentkind)).append("\n");
+    sb.append("    commenttitle: ").append(toIndentedString(commenttitle)).append("\n");
+    sb.append("    commentrequired: ").append(toIndentedString(commentrequired)).append("\n");
+    sb.append("    authcoderequired: ").append(toIndentedString(authcoderequired)).append("\n");
+    sb.append("    summarizedisabled: ").append(toIndentedString(summarizedisabled)).append("\n");
+    sb.append("    printcomment: ").append(toIndentedString(printcomment)).append("\n");
+    sb.append("    maximumgivebackamount: ").append(toIndentedString(maximumgivebackamount)).append("\n");
+    sb.append("    analyticalaccount: ").append(toIndentedString(analyticalaccount)).append("\n");
+    sb.append("    maximumpaymentamount: ").append(toIndentedString(maximumpaymentamount)).append("\n");
+    sb.append("    eet: ").append(toIndentedString(eet)).append("\n");
     sb.append("}");
     return sb.toString();
   }

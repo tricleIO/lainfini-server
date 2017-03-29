@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,75 +34,111 @@ import java.util.Objects;
 /**
  * Ccphonedevice
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Ccphonedevice   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("PhoneNumber")
-  private String phoneNumber = null;
+  @SerializedName("phonenumber")
+  private String phonenumber = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("DriverCLSID")
-  private String driverCLSID = null;
+  @SerializedName("driverclsid")
+  private String driverclsid = null;
 
-  @SerializedName("DriverCLSIDText")
-  private String driverCLSIDText = null;
+  @SerializedName("driverclsidtext")
+  private String driverclsidtext = null;
 
-  @SerializedName("DriverParams")
-  private byte[] driverParams = null;
+  @SerializedName("driverparams")
+  private byte[] driverparams = null;
 
-  @SerializedName("Watch")
+  @SerializedName("watch")
   private Boolean watch = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Ccphonedevice displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Ccphonedevice id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Ccphonedevice classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Ccphonedevice objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Ccphonedevice hidden(Boolean hidden) {
@@ -111,10 +147,10 @@ public class Ccphonedevice   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -123,22 +159,22 @@ public class Ccphonedevice   {
     this.hidden = hidden;
   }
 
-  public Ccphonedevice phoneNumber(String phoneNumber) {
-    this.phoneNumber = phoneNumber;
+  public Ccphonedevice phonenumber(String phonenumber) {
+    this.phonenumber = phonenumber;
     return this;
   }
 
    /**
-   * Telefonní číslo [persistentní položka]
-   * @return phoneNumber
+   * telefonní číslo [persistentní položka]
+   * @return phonenumber
   **/
-  @ApiModelProperty(example = "null", value = "Telefonní číslo [persistentní položka]")
-  public String getPhoneNumber() {
-    return phoneNumber;
+  @ApiModelProperty(example = "null", value = "telefonní číslo [persistentní položka]")
+  public String getPhonenumber() {
+    return phonenumber;
   }
 
-  public void setPhoneNumber(String phoneNumber) {
-    this.phoneNumber = phoneNumber;
+  public void setPhonenumber(String phonenumber) {
+    this.phonenumber = phonenumber;
   }
 
   public Ccphonedevice name(String name) {
@@ -147,10 +183,10 @@ public class Ccphonedevice   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -159,58 +195,58 @@ public class Ccphonedevice   {
     this.name = name;
   }
 
-  public Ccphonedevice driverCLSID(String driverCLSID) {
-    this.driverCLSID = driverCLSID;
+  public Ccphonedevice driverclsid(String driverclsid) {
+    this.driverclsid = driverclsid;
     return this;
   }
 
    /**
-   * ID Ovladače [persistentní položka]
-   * @return driverCLSID
+   * id ovladače [persistentní položka]
+   * @return driverclsid
   **/
-  @ApiModelProperty(example = "null", value = "ID Ovladače [persistentní položka]")
-  public String getDriverCLSID() {
-    return driverCLSID;
+  @ApiModelProperty(example = "null", value = "id ovladače [persistentní položka]")
+  public String getDriverclsid() {
+    return driverclsid;
   }
 
-  public void setDriverCLSID(String driverCLSID) {
-    this.driverCLSID = driverCLSID;
+  public void setDriverclsid(String driverclsid) {
+    this.driverclsid = driverclsid;
   }
 
-  public Ccphonedevice driverCLSIDText(String driverCLSIDText) {
-    this.driverCLSIDText = driverCLSIDText;
+  public Ccphonedevice driverclsidtext(String driverclsidtext) {
+    this.driverclsidtext = driverclsidtext;
     return this;
   }
 
    /**
-   * Ovladač
-   * @return driverCLSIDText
+   * ovladač
+   * @return driverclsidtext
   **/
-  @ApiModelProperty(example = "null", value = "Ovladač")
-  public String getDriverCLSIDText() {
-    return driverCLSIDText;
+  @ApiModelProperty(example = "null", value = "ovladač")
+  public String getDriverclsidtext() {
+    return driverclsidtext;
   }
 
-  public void setDriverCLSIDText(String driverCLSIDText) {
-    this.driverCLSIDText = driverCLSIDText;
+  public void setDriverclsidtext(String driverclsidtext) {
+    this.driverclsidtext = driverclsidtext;
   }
 
-  public Ccphonedevice driverParams(byte[] driverParams) {
-    this.driverParams = driverParams;
+  public Ccphonedevice driverparams(byte[] driverparams) {
+    this.driverparams = driverparams;
     return this;
   }
 
    /**
-   * Parametry ovladače [persistentní položka]
-   * @return driverParams
+   * parametry ovladače [persistentní položka]
+   * @return driverparams
   **/
-  @ApiModelProperty(example = "null", value = "Parametry ovladače [persistentní položka]")
-  public byte[] getDriverParams() {
-    return driverParams;
+  @ApiModelProperty(example = "null", value = "parametry ovladače [persistentní položka]")
+  public byte[] getDriverparams() {
+    return driverparams;
   }
 
-  public void setDriverParams(byte[] driverParams) {
-    this.driverParams = driverParams;
+  public void setDriverparams(byte[] driverparams) {
+    this.driverparams = driverparams;
   }
 
   public Ccphonedevice watch(Boolean watch) {
@@ -219,10 +255,10 @@ public class Ccphonedevice   {
   }
 
    /**
-   * Sledování za účelem statistiky [persistentní položka]
+   * sledování za účelem statistiky [persistentní položka]
    * @return watch
   **/
-  @ApiModelProperty(example = "null", value = "Sledování za účelem statistiky [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "sledování za účelem statistiky [persistentní položka]")
   public Boolean getWatch() {
     return watch;
   }
@@ -241,22 +277,22 @@ public class Ccphonedevice   {
       return false;
     }
     Ccphonedevice ccphonedevice = (Ccphonedevice) o;
-    return Objects.equals(this.displayName, ccphonedevice.displayName) &&
-        Objects.equals(this.ID, ccphonedevice.ID) &&
-        Objects.equals(this.classID, ccphonedevice.classID) &&
-        Objects.equals(this.objVersion, ccphonedevice.objVersion) &&
+    return Objects.equals(this.displayname, ccphonedevice.displayname) &&
+        Objects.equals(this.id, ccphonedevice.id) &&
+        Objects.equals(this.classid, ccphonedevice.classid) &&
+        Objects.equals(this.objversion, ccphonedevice.objversion) &&
         Objects.equals(this.hidden, ccphonedevice.hidden) &&
-        Objects.equals(this.phoneNumber, ccphonedevice.phoneNumber) &&
+        Objects.equals(this.phonenumber, ccphonedevice.phonenumber) &&
         Objects.equals(this.name, ccphonedevice.name) &&
-        Objects.equals(this.driverCLSID, ccphonedevice.driverCLSID) &&
-        Objects.equals(this.driverCLSIDText, ccphonedevice.driverCLSIDText) &&
-        Objects.equals(this.driverParams, ccphonedevice.driverParams) &&
+        Objects.equals(this.driverclsid, ccphonedevice.driverclsid) &&
+        Objects.equals(this.driverclsidtext, ccphonedevice.driverclsidtext) &&
+        Objects.equals(this.driverparams, ccphonedevice.driverparams) &&
         Objects.equals(this.watch, ccphonedevice.watch);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, phoneNumber, name, driverCLSID, driverCLSIDText, driverParams, watch);
+    return Objects.hash(displayname, id, classid, objversion, hidden, phonenumber, name, driverclsid, driverclsidtext, driverparams, watch);
   }
 
   @Override
@@ -264,16 +300,16 @@ public class Ccphonedevice   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Ccphonedevice {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    phoneNumber: ").append(toIndentedString(phoneNumber)).append("\n");
+    sb.append("    phonenumber: ").append(toIndentedString(phonenumber)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    driverCLSID: ").append(toIndentedString(driverCLSID)).append("\n");
-    sb.append("    driverCLSIDText: ").append(toIndentedString(driverCLSIDText)).append("\n");
-    sb.append("    driverParams: ").append(toIndentedString(driverParams)).append("\n");
+    sb.append("    driverclsid: ").append(toIndentedString(driverclsid)).append("\n");
+    sb.append("    driverclsidtext: ").append(toIndentedString(driverclsidtext)).append("\n");
+    sb.append("    driverparams: ").append(toIndentedString(driverparams)).append("\n");
     sb.append("    watch: ").append(toIndentedString(watch)).append("\n");
     sb.append("}");
     return sb.toString();

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,177 +34,222 @@ import java.util.Objects;
 /**
  * Spmnormmaterials
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Spmnormmaterials   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("UnitQuantity")
-  private Double unitQuantity = null;
+  @SerializedName("unitquantity")
+  private Double unitquantity = null;
 
-  @SerializedName("Weight")
+  @SerializedName("weight")
   private Double weight = null;
 
-  @SerializedName("UnitWeight")
-  private Double unitWeight = null;
+  @SerializedName("unitweight")
+  private Double unitweight = null;
 
-  @SerializedName("WeightUnit")
-  private Integer weightUnit = null;
+  @SerializedName("weightunit")
+  private Integer weightunit = null;
 
-  @SerializedName("WeightInGrams")
-  private Double weightInGrams = null;
+  @SerializedName("weightingrams")
+  private Double weightingrams = null;
 
-  @SerializedName("WastePercentage")
-  private Double wastePercentage = null;
+  @SerializedName("wastepercentage")
+  private Double wastepercentage = null;
 
-  @SerializedName("Replaceable")
+  @SerializedName("replaceable")
   private Integer replaceable = null;
 
-  @SerializedName("Decomposition")
+  @SerializedName("decomposition")
   private Boolean decomposition = null;
 
-  @SerializedName("UseOperatingStore")
-  private Boolean useOperatingStore = null;
+  @SerializedName("useoperatingstore")
+  private Boolean useoperatingstore = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("CalculatedPrice")
-  private Double calculatedPrice = null;
+  @SerializedName("calculatedprice")
+  private Double calculatedprice = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("TransferQUnit")
-  private String transferQUnit = null;
+  @SerializedName("transferqunit")
+  private String transferqunit = null;
 
-  @SerializedName("TransferUnitRate")
-  private Double transferUnitRate = null;
+  @SerializedName("transferunitrate")
+  private Double transferunitrate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Norma kompletace [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Norma kompletace [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Spmnormmaterials posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Spmnormmaterials displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Spmnormmaterials storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Spmnormmaterials id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Spmnormmaterials storeID(String storeID) {
-    this.storeID = storeID;
+  public Spmnormmaterials classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Spmnormmaterials objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Spmnormmaterials parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu norma kompletace [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu norma kompletace [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Spmnormmaterials posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Spmnormmaterials storecardId(String storecardId) {
+    this.storecardId = storecardId;
+    return this;
+  }
+
+   /**
+   * skladová karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
+  **/
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
+  }
+
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
+  }
+
+  public Spmnormmaterials storeId(String storeId) {
+    this.storeId = storeId;
+    return this;
+  }
+
+   /**
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
+  **/
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
+  }
+
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
   public Spmnormmaterials quantity(Double quantity) {
@@ -213,10 +258,10 @@ public class Spmnormmaterials   {
   }
 
    /**
-   * Počet v jedn.se vzt.1 [persistentní položka]
+   * počet v jedn.se vzt.1 [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet v jedn.se vzt.1 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "počet v jedn.se vzt.1 [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -225,22 +270,22 @@ public class Spmnormmaterials   {
     this.quantity = quantity;
   }
 
-  public Spmnormmaterials unitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public Spmnormmaterials unitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
     return this;
   }
 
    /**
-   * Počet
-   * @return unitQuantity
+   * počet
+   * @return unitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet")
-  public Double getUnitQuantity() {
-    return unitQuantity;
+  @ApiModelProperty(example = "null", value = "počet")
+  public Double getUnitquantity() {
+    return unitquantity;
   }
 
-  public void setUnitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public void setUnitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
   }
 
   public Spmnormmaterials weight(Double weight) {
@@ -249,10 +294,10 @@ public class Spmnormmaterials   {
   }
 
    /**
-   * Hmotnost
+   * hmotnost
    * @return weight
   **/
-  @ApiModelProperty(example = "null", value = "Hmotnost")
+  @ApiModelProperty(example = "null", value = "hmotnost")
   public Double getWeight() {
     return weight;
   }
@@ -261,76 +306,76 @@ public class Spmnormmaterials   {
     this.weight = weight;
   }
 
-  public Spmnormmaterials unitWeight(Double unitWeight) {
-    this.unitWeight = unitWeight;
+  public Spmnormmaterials unitweight(Double unitweight) {
+    this.unitweight = unitweight;
     return this;
   }
 
    /**
-   * Hmotnost jednotky
-   * @return unitWeight
+   * hmotnost jednotky
+   * @return unitweight
   **/
-  @ApiModelProperty(example = "null", value = "Hmotnost jednotky")
-  public Double getUnitWeight() {
-    return unitWeight;
+  @ApiModelProperty(example = "null", value = "hmotnost jednotky")
+  public Double getUnitweight() {
+    return unitweight;
   }
 
-  public void setUnitWeight(Double unitWeight) {
-    this.unitWeight = unitWeight;
+  public void setUnitweight(Double unitweight) {
+    this.unitweight = unitweight;
   }
 
-  public Spmnormmaterials weightUnit(Integer weightUnit) {
-    this.weightUnit = weightUnit;
+  public Spmnormmaterials weightunit(Integer weightunit) {
+    this.weightunit = weightunit;
     return this;
   }
 
    /**
-   * Hmotnostní jednotka
-   * @return weightUnit
+   * hmotnostní jednotka
+   * @return weightunit
   **/
-  @ApiModelProperty(example = "null", value = "Hmotnostní jednotka")
-  public Integer getWeightUnit() {
-    return weightUnit;
+  @ApiModelProperty(example = "null", value = "hmotnostní jednotka")
+  public Integer getWeightunit() {
+    return weightunit;
   }
 
-  public void setWeightUnit(Integer weightUnit) {
-    this.weightUnit = weightUnit;
+  public void setWeightunit(Integer weightunit) {
+    this.weightunit = weightunit;
   }
 
-  public Spmnormmaterials weightInGrams(Double weightInGrams) {
-    this.weightInGrams = weightInGrams;
+  public Spmnormmaterials weightingrams(Double weightingrams) {
+    this.weightingrams = weightingrams;
     return this;
   }
 
    /**
-   * Hmotnost v gramech
-   * @return weightInGrams
+   * hmotnost v gramech
+   * @return weightingrams
   **/
-  @ApiModelProperty(example = "null", value = "Hmotnost v gramech")
-  public Double getWeightInGrams() {
-    return weightInGrams;
+  @ApiModelProperty(example = "null", value = "hmotnost v gramech")
+  public Double getWeightingrams() {
+    return weightingrams;
   }
 
-  public void setWeightInGrams(Double weightInGrams) {
-    this.weightInGrams = weightInGrams;
+  public void setWeightingrams(Double weightingrams) {
+    this.weightingrams = weightingrams;
   }
 
-  public Spmnormmaterials wastePercentage(Double wastePercentage) {
-    this.wastePercentage = wastePercentage;
+  public Spmnormmaterials wastepercentage(Double wastepercentage) {
+    this.wastepercentage = wastepercentage;
     return this;
   }
 
    /**
-   * Ztráty [persistentní položka]
-   * @return wastePercentage
+   * ztráty [persistentní položka]
+   * @return wastepercentage
   **/
-  @ApiModelProperty(example = "null", value = "Ztráty [persistentní položka]")
-  public Double getWastePercentage() {
-    return wastePercentage;
+  @ApiModelProperty(example = "null", value = "ztráty [persistentní položka]")
+  public Double getWastepercentage() {
+    return wastepercentage;
   }
 
-  public void setWastePercentage(Double wastePercentage) {
-    this.wastePercentage = wastePercentage;
+  public void setWastepercentage(Double wastepercentage) {
+    this.wastepercentage = wastepercentage;
   }
 
   public Spmnormmaterials replaceable(Integer replaceable) {
@@ -339,10 +384,10 @@ public class Spmnormmaterials   {
   }
 
    /**
-   * Nahrazování [persistentní položka]
+   * nahrazování [persistentní položka]
    * @return replaceable
   **/
-  @ApiModelProperty(example = "null", value = "Nahrazování [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "nahrazování [persistentní položka]")
   public Integer getReplaceable() {
     return replaceable;
   }
@@ -357,10 +402,10 @@ public class Spmnormmaterials   {
   }
 
    /**
-   * Rozpad [persistentní položka]
+   * rozpad [persistentní položka]
    * @return decomposition
   **/
-  @ApiModelProperty(example = "null", value = "Rozpad [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "rozpad [persistentní položka]")
   public Boolean getDecomposition() {
     return decomposition;
   }
@@ -369,76 +414,76 @@ public class Spmnormmaterials   {
     this.decomposition = decomposition;
   }
 
-  public Spmnormmaterials useOperatingStore(Boolean useOperatingStore) {
-    this.useOperatingStore = useOperatingStore;
+  public Spmnormmaterials useoperatingstore(Boolean useoperatingstore) {
+    this.useoperatingstore = useoperatingstore;
     return this;
   }
 
    /**
-   * Z provozního skladu [persistentní položka]
-   * @return useOperatingStore
+   * z provozního skladu [persistentní položka]
+   * @return useoperatingstore
   **/
-  @ApiModelProperty(example = "null", value = "Z provozního skladu [persistentní položka]")
-  public Boolean getUseOperatingStore() {
-    return useOperatingStore;
+  @ApiModelProperty(example = "null", value = "z provozního skladu [persistentní položka]")
+  public Boolean getUseoperatingstore() {
+    return useoperatingstore;
   }
 
-  public void setUseOperatingStore(Boolean useOperatingStore) {
-    this.useOperatingStore = useOperatingStore;
+  public void setUseoperatingstore(Boolean useoperatingstore) {
+    this.useoperatingstore = useoperatingstore;
   }
 
-  public Spmnormmaterials qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Spmnormmaterials qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
   }
 
-  public Spmnormmaterials unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Spmnormmaterials unitrate(Double unitrate) {
+    this.unitrate = unitrate;
     return this;
   }
 
    /**
-   * Vztah
-   * @return unitRate
+   * vztah
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "vztah")
+  public Double getUnitrate() {
+    return unitrate;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
-  public Spmnormmaterials calculatedPrice(Double calculatedPrice) {
-    this.calculatedPrice = calculatedPrice;
+  public Spmnormmaterials calculatedprice(Double calculatedprice) {
+    this.calculatedprice = calculatedprice;
     return this;
   }
 
    /**
-   * Cena [persistentní položka]
-   * @return calculatedPrice
+   * cena [persistentní položka]
+   * @return calculatedprice
   **/
-  @ApiModelProperty(example = "null", value = "Cena [persistentní položka]")
-  public Double getCalculatedPrice() {
-    return calculatedPrice;
+  @ApiModelProperty(example = "null", value = "cena [persistentní položka]")
+  public Double getCalculatedprice() {
+    return calculatedprice;
   }
 
-  public void setCalculatedPrice(Double calculatedPrice) {
-    this.calculatedPrice = calculatedPrice;
+  public void setCalculatedprice(Double calculatedprice) {
+    this.calculatedprice = calculatedprice;
   }
 
   public Spmnormmaterials description(String description) {
@@ -447,10 +492,10 @@ public class Spmnormmaterials   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -459,40 +504,40 @@ public class Spmnormmaterials   {
     this.description = description;
   }
 
-  public Spmnormmaterials transferQUnit(String transferQUnit) {
-    this.transferQUnit = transferQUnit;
+  public Spmnormmaterials transferqunit(String transferqunit) {
+    this.transferqunit = transferqunit;
     return this;
   }
 
    /**
-   * Jednotka pro převod [persistentní položka]
-   * @return transferQUnit
+   * jednotka pro převod [persistentní položka]
+   * @return transferqunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka pro převod [persistentní položka]")
-  public String getTransferQUnit() {
-    return transferQUnit;
+  @ApiModelProperty(example = "null", value = "jednotka pro převod [persistentní položka]")
+  public String getTransferqunit() {
+    return transferqunit;
   }
 
-  public void setTransferQUnit(String transferQUnit) {
-    this.transferQUnit = transferQUnit;
+  public void setTransferqunit(String transferqunit) {
+    this.transferqunit = transferqunit;
   }
 
-  public Spmnormmaterials transferUnitRate(Double transferUnitRate) {
-    this.transferUnitRate = transferUnitRate;
+  public Spmnormmaterials transferunitrate(Double transferunitrate) {
+    this.transferunitrate = transferunitrate;
     return this;
   }
 
    /**
-   * Vztah přev.j.
-   * @return transferUnitRate
+   * vztah přev.j.
+   * @return transferunitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah přev.j.")
-  public Double getTransferUnitRate() {
-    return transferUnitRate;
+  @ApiModelProperty(example = "null", value = "vztah přev.j.")
+  public Double getTransferunitrate() {
+    return transferunitrate;
   }
 
-  public void setTransferUnitRate(Double transferUnitRate) {
-    this.transferUnitRate = transferUnitRate;
+  public void setTransferunitrate(Double transferunitrate) {
+    this.transferunitrate = transferunitrate;
   }
 
 
@@ -505,35 +550,35 @@ public class Spmnormmaterials   {
       return false;
     }
     Spmnormmaterials spmnormmaterials = (Spmnormmaterials) o;
-    return Objects.equals(this.displayName, spmnormmaterials.displayName) &&
-        Objects.equals(this.ID, spmnormmaterials.ID) &&
-        Objects.equals(this.classID, spmnormmaterials.classID) &&
-        Objects.equals(this.objVersion, spmnormmaterials.objVersion) &&
-        Objects.equals(this.parentID, spmnormmaterials.parentID) &&
-        Objects.equals(this.posIndex, spmnormmaterials.posIndex) &&
-        Objects.equals(this.storeCardID, spmnormmaterials.storeCardID) &&
-        Objects.equals(this.storeID, spmnormmaterials.storeID) &&
+    return Objects.equals(this.displayname, spmnormmaterials.displayname) &&
+        Objects.equals(this.id, spmnormmaterials.id) &&
+        Objects.equals(this.classid, spmnormmaterials.classid) &&
+        Objects.equals(this.objversion, spmnormmaterials.objversion) &&
+        Objects.equals(this.parentId, spmnormmaterials.parentId) &&
+        Objects.equals(this.posindex, spmnormmaterials.posindex) &&
+        Objects.equals(this.storecardId, spmnormmaterials.storecardId) &&
+        Objects.equals(this.storeId, spmnormmaterials.storeId) &&
         Objects.equals(this.quantity, spmnormmaterials.quantity) &&
-        Objects.equals(this.unitQuantity, spmnormmaterials.unitQuantity) &&
+        Objects.equals(this.unitquantity, spmnormmaterials.unitquantity) &&
         Objects.equals(this.weight, spmnormmaterials.weight) &&
-        Objects.equals(this.unitWeight, spmnormmaterials.unitWeight) &&
-        Objects.equals(this.weightUnit, spmnormmaterials.weightUnit) &&
-        Objects.equals(this.weightInGrams, spmnormmaterials.weightInGrams) &&
-        Objects.equals(this.wastePercentage, spmnormmaterials.wastePercentage) &&
+        Objects.equals(this.unitweight, spmnormmaterials.unitweight) &&
+        Objects.equals(this.weightunit, spmnormmaterials.weightunit) &&
+        Objects.equals(this.weightingrams, spmnormmaterials.weightingrams) &&
+        Objects.equals(this.wastepercentage, spmnormmaterials.wastepercentage) &&
         Objects.equals(this.replaceable, spmnormmaterials.replaceable) &&
         Objects.equals(this.decomposition, spmnormmaterials.decomposition) &&
-        Objects.equals(this.useOperatingStore, spmnormmaterials.useOperatingStore) &&
-        Objects.equals(this.qUnit, spmnormmaterials.qUnit) &&
-        Objects.equals(this.unitRate, spmnormmaterials.unitRate) &&
-        Objects.equals(this.calculatedPrice, spmnormmaterials.calculatedPrice) &&
+        Objects.equals(this.useoperatingstore, spmnormmaterials.useoperatingstore) &&
+        Objects.equals(this.qunit, spmnormmaterials.qunit) &&
+        Objects.equals(this.unitrate, spmnormmaterials.unitrate) &&
+        Objects.equals(this.calculatedprice, spmnormmaterials.calculatedprice) &&
         Objects.equals(this.description, spmnormmaterials.description) &&
-        Objects.equals(this.transferQUnit, spmnormmaterials.transferQUnit) &&
-        Objects.equals(this.transferUnitRate, spmnormmaterials.transferUnitRate);
+        Objects.equals(this.transferqunit, spmnormmaterials.transferqunit) &&
+        Objects.equals(this.transferunitrate, spmnormmaterials.transferunitrate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, storeCardID, storeID, quantity, unitQuantity, weight, unitWeight, weightUnit, weightInGrams, wastePercentage, replaceable, decomposition, useOperatingStore, qUnit, unitRate, calculatedPrice, description, transferQUnit, transferUnitRate);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, storecardId, storeId, quantity, unitquantity, weight, unitweight, weightunit, weightingrams, wastepercentage, replaceable, decomposition, useoperatingstore, qunit, unitrate, calculatedprice, description, transferqunit, transferunitrate);
   }
 
   @Override
@@ -541,30 +586,30 @@ public class Spmnormmaterials   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Spmnormmaterials {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    unitQuantity: ").append(toIndentedString(unitQuantity)).append("\n");
+    sb.append("    unitquantity: ").append(toIndentedString(unitquantity)).append("\n");
     sb.append("    weight: ").append(toIndentedString(weight)).append("\n");
-    sb.append("    unitWeight: ").append(toIndentedString(unitWeight)).append("\n");
-    sb.append("    weightUnit: ").append(toIndentedString(weightUnit)).append("\n");
-    sb.append("    weightInGrams: ").append(toIndentedString(weightInGrams)).append("\n");
-    sb.append("    wastePercentage: ").append(toIndentedString(wastePercentage)).append("\n");
+    sb.append("    unitweight: ").append(toIndentedString(unitweight)).append("\n");
+    sb.append("    weightunit: ").append(toIndentedString(weightunit)).append("\n");
+    sb.append("    weightingrams: ").append(toIndentedString(weightingrams)).append("\n");
+    sb.append("    wastepercentage: ").append(toIndentedString(wastepercentage)).append("\n");
     sb.append("    replaceable: ").append(toIndentedString(replaceable)).append("\n");
     sb.append("    decomposition: ").append(toIndentedString(decomposition)).append("\n");
-    sb.append("    useOperatingStore: ").append(toIndentedString(useOperatingStore)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    calculatedPrice: ").append(toIndentedString(calculatedPrice)).append("\n");
+    sb.append("    useoperatingstore: ").append(toIndentedString(useoperatingstore)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    calculatedprice: ").append(toIndentedString(calculatedprice)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    transferQUnit: ").append(toIndentedString(transferQUnit)).append("\n");
-    sb.append("    transferUnitRate: ").append(toIndentedString(transferUnitRate)).append("\n");
+    sb.append("    transferqunit: ").append(toIndentedString(transferqunit)).append("\n");
+    sb.append("    transferunitrate: ").append(toIndentedString(transferunitrate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,105 +34,150 @@ import java.util.Objects;
 /**
  * Evaluationcriteriondatasource
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Evaluationcriteriondatasource   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("DSQLID")
-  private String DSQLID = null;
+  @SerializedName("dsqlid")
+  private String dsqlid = null;
 
-  @SerializedName("DSQLName")
-  private String dSQLName = null;
+  @SerializedName("dsqlname")
+  private String dsqlname = null;
 
-  @SerializedName("DSQLValues")
-  private byte[] dSQLValues = null;
+  @SerializedName("dsqlvalues")
+  private byte[] dsqlvalues = null;
 
-  @SerializedName("DSQLAggregateFunction")
-  private Integer dSQLAggregateFunction = null;
+  @SerializedName("dsqlaggregatefunction")
+  private Integer dsqlaggregatefunction = null;
 
-  @SerializedName("DSQLFieldName")
-  private String dSQLFieldName = null;
+  @SerializedName("dsqlfieldname")
+  private String dsqlfieldname = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Hlavičkový objekt [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Hlavičkový objekt [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Evaluationcriteriondatasource posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Evaluationcriteriondatasource displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Evaluationcriteriondatasource id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Evaluationcriteriondatasource classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Evaluationcriteriondatasource objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Evaluationcriteriondatasource parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu hlavičkový objekt [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu hlavičkový objekt [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Evaluationcriteriondatasource posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
   public Evaluationcriteriondatasource name(String name) {
@@ -141,10 +186,10 @@ public class Evaluationcriteriondatasource   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -153,94 +198,94 @@ public class Evaluationcriteriondatasource   {
     this.name = name;
   }
 
-  public Evaluationcriteriondatasource DSQLID(String DSQLID) {
-    this.DSQLID = DSQLID;
+  public Evaluationcriteriondatasource dsqlid(String dsqlid) {
+    this.dsqlid = dsqlid;
     return this;
   }
 
    /**
-   * Identifikace DynSQL příkazu [persistentní položka]
-   * @return DSQLID
+   * identifikace dynsql příkazu [persistentní položka]
+   * @return dsqlid
   **/
-  @ApiModelProperty(example = "null", value = "Identifikace DynSQL příkazu [persistentní položka]")
-  public String getDSQLID() {
-    return DSQLID;
+  @ApiModelProperty(example = "null", value = "identifikace dynsql příkazu [persistentní položka]")
+  public String getDsqlid() {
+    return dsqlid;
   }
 
-  public void setDSQLID(String DSQLID) {
-    this.DSQLID = DSQLID;
+  public void setDsqlid(String dsqlid) {
+    this.dsqlid = dsqlid;
   }
 
-  public Evaluationcriteriondatasource dSQLName(String dSQLName) {
-    this.dSQLName = dSQLName;
+  public Evaluationcriteriondatasource dsqlname(String dsqlname) {
+    this.dsqlname = dsqlname;
     return this;
   }
 
    /**
-   * Název DynSQL příkazu [persistentní položka]
-   * @return dSQLName
+   * název dynsql příkazu [persistentní položka]
+   * @return dsqlname
   **/
-  @ApiModelProperty(example = "null", value = "Název DynSQL příkazu [persistentní položka]")
-  public String getDSQLName() {
-    return dSQLName;
+  @ApiModelProperty(example = "null", value = "název dynsql příkazu [persistentní položka]")
+  public String getDsqlname() {
+    return dsqlname;
   }
 
-  public void setDSQLName(String dSQLName) {
-    this.dSQLName = dSQLName;
+  public void setDsqlname(String dsqlname) {
+    this.dsqlname = dsqlname;
   }
 
-  public Evaluationcriteriondatasource dSQLValues(byte[] dSQLValues) {
-    this.dSQLValues = dSQLValues;
+  public Evaluationcriteriondatasource dsqlvalues(byte[] dsqlvalues) {
+    this.dsqlvalues = dsqlvalues;
     return this;
   }
 
    /**
-   * Definice omezení [persistentní položka]
-   * @return dSQLValues
+   * definice omezení [persistentní položka]
+   * @return dsqlvalues
   **/
-  @ApiModelProperty(example = "null", value = "Definice omezení [persistentní položka]")
-  public byte[] getDSQLValues() {
-    return dSQLValues;
+  @ApiModelProperty(example = "null", value = "definice omezení [persistentní položka]")
+  public byte[] getDsqlvalues() {
+    return dsqlvalues;
   }
 
-  public void setDSQLValues(byte[] dSQLValues) {
-    this.dSQLValues = dSQLValues;
+  public void setDsqlvalues(byte[] dsqlvalues) {
+    this.dsqlvalues = dsqlvalues;
   }
 
-  public Evaluationcriteriondatasource dSQLAggregateFunction(Integer dSQLAggregateFunction) {
-    this.dSQLAggregateFunction = dSQLAggregateFunction;
+  public Evaluationcriteriondatasource dsqlaggregatefunction(Integer dsqlaggregatefunction) {
+    this.dsqlaggregatefunction = dsqlaggregatefunction;
     return this;
   }
 
    /**
-   * Agregační funkce aplikováná na položku v DynSQL. [persistentní položka]
-   * @return dSQLAggregateFunction
+   * agregační funkce aplikováná na položku v dynsql. [persistentní položka]
+   * @return dsqlaggregatefunction
   **/
-  @ApiModelProperty(example = "null", value = "Agregační funkce aplikováná na položku v DynSQL. [persistentní položka]")
-  public Integer getDSQLAggregateFunction() {
-    return dSQLAggregateFunction;
+  @ApiModelProperty(example = "null", value = "agregační funkce aplikováná na položku v dynsql. [persistentní položka]")
+  public Integer getDsqlaggregatefunction() {
+    return dsqlaggregatefunction;
   }
 
-  public void setDSQLAggregateFunction(Integer dSQLAggregateFunction) {
-    this.dSQLAggregateFunction = dSQLAggregateFunction;
+  public void setDsqlaggregatefunction(Integer dsqlaggregatefunction) {
+    this.dsqlaggregatefunction = dsqlaggregatefunction;
   }
 
-  public Evaluationcriteriondatasource dSQLFieldName(String dSQLFieldName) {
-    this.dSQLFieldName = dSQLFieldName;
+  public Evaluationcriteriondatasource dsqlfieldname(String dsqlfieldname) {
+    this.dsqlfieldname = dsqlfieldname;
     return this;
   }
 
    /**
-   * Název položky z dat DynSQL příkazu [persistentní položka]
-   * @return dSQLFieldName
+   * název položky z dat dynsql příkazu [persistentní položka]
+   * @return dsqlfieldname
   **/
-  @ApiModelProperty(example = "null", value = "Název položky z dat DynSQL příkazu [persistentní položka]")
-  public String getDSQLFieldName() {
-    return dSQLFieldName;
+  @ApiModelProperty(example = "null", value = "název položky z dat dynsql příkazu [persistentní položka]")
+  public String getDsqlfieldname() {
+    return dsqlfieldname;
   }
 
-  public void setDSQLFieldName(String dSQLFieldName) {
-    this.dSQLFieldName = dSQLFieldName;
+  public void setDsqlfieldname(String dsqlfieldname) {
+    this.dsqlfieldname = dsqlfieldname;
   }
 
 
@@ -253,23 +298,23 @@ public class Evaluationcriteriondatasource   {
       return false;
     }
     Evaluationcriteriondatasource evaluationcriteriondatasource = (Evaluationcriteriondatasource) o;
-    return Objects.equals(this.displayName, evaluationcriteriondatasource.displayName) &&
-        Objects.equals(this.ID, evaluationcriteriondatasource.ID) &&
-        Objects.equals(this.classID, evaluationcriteriondatasource.classID) &&
-        Objects.equals(this.objVersion, evaluationcriteriondatasource.objVersion) &&
-        Objects.equals(this.parentID, evaluationcriteriondatasource.parentID) &&
-        Objects.equals(this.posIndex, evaluationcriteriondatasource.posIndex) &&
+    return Objects.equals(this.displayname, evaluationcriteriondatasource.displayname) &&
+        Objects.equals(this.id, evaluationcriteriondatasource.id) &&
+        Objects.equals(this.classid, evaluationcriteriondatasource.classid) &&
+        Objects.equals(this.objversion, evaluationcriteriondatasource.objversion) &&
+        Objects.equals(this.parentId, evaluationcriteriondatasource.parentId) &&
+        Objects.equals(this.posindex, evaluationcriteriondatasource.posindex) &&
         Objects.equals(this.name, evaluationcriteriondatasource.name) &&
-        Objects.equals(this.DSQLID, evaluationcriteriondatasource.DSQLID) &&
-        Objects.equals(this.dSQLName, evaluationcriteriondatasource.dSQLName) &&
-        Objects.equals(this.dSQLValues, evaluationcriteriondatasource.dSQLValues) &&
-        Objects.equals(this.dSQLAggregateFunction, evaluationcriteriondatasource.dSQLAggregateFunction) &&
-        Objects.equals(this.dSQLFieldName, evaluationcriteriondatasource.dSQLFieldName);
+        Objects.equals(this.dsqlid, evaluationcriteriondatasource.dsqlid) &&
+        Objects.equals(this.dsqlname, evaluationcriteriondatasource.dsqlname) &&
+        Objects.equals(this.dsqlvalues, evaluationcriteriondatasource.dsqlvalues) &&
+        Objects.equals(this.dsqlaggregatefunction, evaluationcriteriondatasource.dsqlaggregatefunction) &&
+        Objects.equals(this.dsqlfieldname, evaluationcriteriondatasource.dsqlfieldname);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, name, DSQLID, dSQLName, dSQLValues, dSQLAggregateFunction, dSQLFieldName);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, name, dsqlid, dsqlname, dsqlvalues, dsqlaggregatefunction, dsqlfieldname);
   }
 
   @Override
@@ -277,18 +322,18 @@ public class Evaluationcriteriondatasource   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Evaluationcriteriondatasource {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    DSQLID: ").append(toIndentedString(DSQLID)).append("\n");
-    sb.append("    dSQLName: ").append(toIndentedString(dSQLName)).append("\n");
-    sb.append("    dSQLValues: ").append(toIndentedString(dSQLValues)).append("\n");
-    sb.append("    dSQLAggregateFunction: ").append(toIndentedString(dSQLAggregateFunction)).append("\n");
-    sb.append("    dSQLFieldName: ").append(toIndentedString(dSQLFieldName)).append("\n");
+    sb.append("    dsqlid: ").append(toIndentedString(dsqlid)).append("\n");
+    sb.append("    dsqlname: ").append(toIndentedString(dsqlname)).append("\n");
+    sb.append("    dsqlvalues: ").append(toIndentedString(dsqlvalues)).append("\n");
+    sb.append("    dsqlaggregatefunction: ").append(toIndentedString(dsqlaggregatefunction)).append("\n");
+    sb.append("    dsqlfieldname: ").append(toIndentedString(dsqlfieldname)).append("\n");
     sb.append("}");
     return sb.toString();
   }

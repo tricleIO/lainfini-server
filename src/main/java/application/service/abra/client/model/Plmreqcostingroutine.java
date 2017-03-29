@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,201 +34,246 @@ import java.util.Objects;
 /**
  * Plmreqcostingroutine
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmreqcostingroutine   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("WorkPlace_ID")
-  private String workPlaceID = null;
+  @SerializedName("workplace_id")
+  private String workplaceId = null;
 
-  @SerializedName("Phase_ID")
-  private String phaseID = null;
+  @SerializedName("phase_id")
+  private String phaseId = null;
 
-  @SerializedName("PartTime")
-  private Double partTime = null;
+  @SerializedName("parttime")
+  private Double parttime = null;
 
-  @SerializedName("SetupTime")
-  private Double setupTime = null;
+  @SerializedName("setuptime")
+  private Double setuptime = null;
 
-  @SerializedName("Title")
+  @SerializedName("title")
   private String title = null;
 
-  @SerializedName("Cooperation")
+  @SerializedName("cooperation")
   private Boolean cooperation = null;
 
-  @SerializedName("SalaryClass_ID")
-  private String salaryClassID = null;
+  @SerializedName("salaryclass_id")
+  private String salaryclassId = null;
 
-  @SerializedName("TotalTime")
-  private Double totalTime = null;
+  @SerializedName("totaltime")
+  private Double totaltime = null;
 
-  @SerializedName("Salary")
+  @SerializedName("salary")
   private Double salary = null;
 
-  @SerializedName("OverheadCosts")
-  private Double overheadCosts = null;
+  @SerializedName("overheadcosts")
+  private Double overheadcosts = null;
 
-  @SerializedName("GeneralExpense")
-  private Double generalExpense = null;
+  @SerializedName("generalexpense")
+  private Double generalexpense = null;
 
-  @SerializedName("TotalOverheads")
-  private Double totalOverheads = null;
+  @SerializedName("totaloverheads")
+  private Double totaloverheads = null;
 
-  @SerializedName("TAC")
-  private Double TAC = null;
+  @SerializedName("tac")
+  private Double tac = null;
 
-  @SerializedName("TBC")
-  private Double TBC = null;
+  @SerializedName("tbc")
+  private Double tbc = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Požadavek na výrobu - kalkulace vyráběná položka [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Požadavek na výrobu - kalkulace vyráběná položka [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Plmreqcostingroutine posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Plmreqcostingroutine displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Plmreqcostingroutine workPlaceID(String workPlaceID) {
-    this.workPlaceID = workPlaceID;
+  public Plmreqcostingroutine id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Pracoviště; ID objektu Pracoviště a stroj [persistentní položka]
-   * @return workPlaceID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Pracoviště; ID objektu Pracoviště a stroj [persistentní položka]")
-  public String getWorkPlaceID() {
-    return workPlaceID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setWorkPlaceID(String workPlaceID) {
-    this.workPlaceID = workPlaceID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Plmreqcostingroutine phaseID(String phaseID) {
-    this.phaseID = phaseID;
+  public Plmreqcostingroutine classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Etapa; ID objektu Etapa [persistentní položka]
-   * @return phaseID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Etapa; ID objektu Etapa [persistentní položka]")
-  public String getPhaseID() {
-    return phaseID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPhaseID(String phaseID) {
-    this.phaseID = phaseID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Plmreqcostingroutine partTime(Double partTime) {
-    this.partTime = partTime;
+  public Plmreqcostingroutine objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Kusový čas v minutách
-   * @return partTime
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Kusový čas v minutách")
-  public Double getPartTime() {
-    return partTime;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setPartTime(Double partTime) {
-    this.partTime = partTime;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Plmreqcostingroutine setupTime(Double setupTime) {
-    this.setupTime = setupTime;
+  public Plmreqcostingroutine parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Dávkový čas v minutách
-   * @return setupTime
+   * vlastník; id objektu požadavek na výrobu - kalkulace vyráběná položka [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Dávkový čas v minutách")
-  public Double getSetupTime() {
-    return setupTime;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu požadavek na výrobu - kalkulace vyráběná položka [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setSetupTime(Double setupTime) {
-    this.setupTime = setupTime;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Plmreqcostingroutine posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Plmreqcostingroutine workplaceId(String workplaceId) {
+    this.workplaceId = workplaceId;
+    return this;
+  }
+
+   /**
+   * pracoviště; id objektu pracoviště a stroj [persistentní položka]
+   * @return workplaceId
+  **/
+  @ApiModelProperty(example = "null", value = "pracoviště; id objektu pracoviště a stroj [persistentní položka]")
+  public String getWorkplaceId() {
+    return workplaceId;
+  }
+
+  public void setWorkplaceId(String workplaceId) {
+    this.workplaceId = workplaceId;
+  }
+
+  public Plmreqcostingroutine phaseId(String phaseId) {
+    this.phaseId = phaseId;
+    return this;
+  }
+
+   /**
+   * etapa; id objektu etapa [persistentní položka]
+   * @return phaseId
+  **/
+  @ApiModelProperty(example = "null", value = "etapa; id objektu etapa [persistentní položka]")
+  public String getPhaseId() {
+    return phaseId;
+  }
+
+  public void setPhaseId(String phaseId) {
+    this.phaseId = phaseId;
+  }
+
+  public Plmreqcostingroutine parttime(Double parttime) {
+    this.parttime = parttime;
+    return this;
+  }
+
+   /**
+   * kusový čas v minutách
+   * @return parttime
+  **/
+  @ApiModelProperty(example = "null", value = "kusový čas v minutách")
+  public Double getParttime() {
+    return parttime;
+  }
+
+  public void setParttime(Double parttime) {
+    this.parttime = parttime;
+  }
+
+  public Plmreqcostingroutine setuptime(Double setuptime) {
+    this.setuptime = setuptime;
+    return this;
+  }
+
+   /**
+   * dávkový čas v minutách
+   * @return setuptime
+  **/
+  @ApiModelProperty(example = "null", value = "dávkový čas v minutách")
+  public Double getSetuptime() {
+    return setuptime;
+  }
+
+  public void setSetuptime(Double setuptime) {
+    this.setuptime = setuptime;
   }
 
   public Plmreqcostingroutine title(String title) {
@@ -237,10 +282,10 @@ public class Plmreqcostingroutine   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return title
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getTitle() {
     return title;
   }
@@ -255,10 +300,10 @@ public class Plmreqcostingroutine   {
   }
 
    /**
-   * Kooperace [persistentní položka]
+   * kooperace [persistentní položka]
    * @return cooperation
   **/
-  @ApiModelProperty(example = "null", value = "Kooperace [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kooperace [persistentní položka]")
   public Boolean getCooperation() {
     return cooperation;
   }
@@ -267,40 +312,40 @@ public class Plmreqcostingroutine   {
     this.cooperation = cooperation;
   }
 
-  public Plmreqcostingroutine salaryClassID(String salaryClassID) {
-    this.salaryClassID = salaryClassID;
+  public Plmreqcostingroutine salaryclassId(String salaryclassId) {
+    this.salaryclassId = salaryclassId;
     return this;
   }
 
    /**
-   * Tarifní třída; ID objektu Tarifní třída [persistentní položka]
-   * @return salaryClassID
+   * tarifní třída; id objektu tarifní třída [persistentní položka]
+   * @return salaryclassId
   **/
-  @ApiModelProperty(example = "null", value = "Tarifní třída; ID objektu Tarifní třída [persistentní položka]")
-  public String getSalaryClassID() {
-    return salaryClassID;
+  @ApiModelProperty(example = "null", value = "tarifní třída; id objektu tarifní třída [persistentní položka]")
+  public String getSalaryclassId() {
+    return salaryclassId;
   }
 
-  public void setSalaryClassID(String salaryClassID) {
-    this.salaryClassID = salaryClassID;
+  public void setSalaryclassId(String salaryclassId) {
+    this.salaryclassId = salaryclassId;
   }
 
-  public Plmreqcostingroutine totalTime(Double totalTime) {
-    this.totalTime = totalTime;
+  public Plmreqcostingroutine totaltime(Double totaltime) {
+    this.totaltime = totaltime;
     return this;
   }
 
    /**
-   * Celkový čas v sekundách [persistentní položka]
-   * @return totalTime
+   * celkový čas v sekundách [persistentní položka]
+   * @return totaltime
   **/
-  @ApiModelProperty(example = "null", value = "Celkový čas v sekundách [persistentní položka]")
-  public Double getTotalTime() {
-    return totalTime;
+  @ApiModelProperty(example = "null", value = "celkový čas v sekundách [persistentní položka]")
+  public Double getTotaltime() {
+    return totaltime;
   }
 
-  public void setTotalTime(Double totalTime) {
-    this.totalTime = totalTime;
+  public void setTotaltime(Double totaltime) {
+    this.totaltime = totaltime;
   }
 
   public Plmreqcostingroutine salary(Double salary) {
@@ -309,10 +354,10 @@ public class Plmreqcostingroutine   {
   }
 
    /**
-   * Mzda [persistentní položka]
+   * mzda [persistentní položka]
    * @return salary
   **/
-  @ApiModelProperty(example = "null", value = "Mzda [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "mzda [persistentní položka]")
   public Double getSalary() {
     return salary;
   }
@@ -321,94 +366,94 @@ public class Plmreqcostingroutine   {
     this.salary = salary;
   }
 
-  public Plmreqcostingroutine overheadCosts(Double overheadCosts) {
-    this.overheadCosts = overheadCosts;
+  public Plmreqcostingroutine overheadcosts(Double overheadcosts) {
+    this.overheadcosts = overheadcosts;
     return this;
   }
 
    /**
-   * Výrobní režie [persistentní položka]
-   * @return overheadCosts
+   * výrobní režie [persistentní položka]
+   * @return overheadcosts
   **/
-  @ApiModelProperty(example = "null", value = "Výrobní režie [persistentní položka]")
-  public Double getOverheadCosts() {
-    return overheadCosts;
+  @ApiModelProperty(example = "null", value = "výrobní režie [persistentní položka]")
+  public Double getOverheadcosts() {
+    return overheadcosts;
   }
 
-  public void setOverheadCosts(Double overheadCosts) {
-    this.overheadCosts = overheadCosts;
+  public void setOverheadcosts(Double overheadcosts) {
+    this.overheadcosts = overheadcosts;
   }
 
-  public Plmreqcostingroutine generalExpense(Double generalExpense) {
-    this.generalExpense = generalExpense;
+  public Plmreqcostingroutine generalexpense(Double generalexpense) {
+    this.generalexpense = generalexpense;
     return this;
   }
 
    /**
-   * Správní režie [persistentní položka]
-   * @return generalExpense
+   * správní režie [persistentní položka]
+   * @return generalexpense
   **/
-  @ApiModelProperty(example = "null", value = "Správní režie [persistentní položka]")
-  public Double getGeneralExpense() {
-    return generalExpense;
+  @ApiModelProperty(example = "null", value = "správní režie [persistentní položka]")
+  public Double getGeneralexpense() {
+    return generalexpense;
   }
 
-  public void setGeneralExpense(Double generalExpense) {
-    this.generalExpense = generalExpense;
+  public void setGeneralexpense(Double generalexpense) {
+    this.generalexpense = generalexpense;
   }
 
-  public Plmreqcostingroutine totalOverheads(Double totalOverheads) {
-    this.totalOverheads = totalOverheads;
+  public Plmreqcostingroutine totaloverheads(Double totaloverheads) {
+    this.totaloverheads = totaloverheads;
     return this;
   }
 
    /**
-   * Režie celkem
-   * @return totalOverheads
+   * režie celkem
+   * @return totaloverheads
   **/
-  @ApiModelProperty(example = "null", value = "Režie celkem")
-  public Double getTotalOverheads() {
-    return totalOverheads;
+  @ApiModelProperty(example = "null", value = "režie celkem")
+  public Double getTotaloverheads() {
+    return totaloverheads;
   }
 
-  public void setTotalOverheads(Double totalOverheads) {
-    this.totalOverheads = totalOverheads;
+  public void setTotaloverheads(Double totaloverheads) {
+    this.totaloverheads = totaloverheads;
   }
 
-  public Plmreqcostingroutine TAC(Double TAC) {
-    this.TAC = TAC;
+  public Plmreqcostingroutine tac(Double tac) {
+    this.tac = tac;
     return this;
   }
 
    /**
-   * Dávkový čas v sekundách [persistentní položka]
-   * @return TAC
+   * dávkový čas v sekundách [persistentní položka]
+   * @return tac
   **/
-  @ApiModelProperty(example = "null", value = "Dávkový čas v sekundách [persistentní položka]")
-  public Double getTAC() {
-    return TAC;
+  @ApiModelProperty(example = "null", value = "dávkový čas v sekundách [persistentní položka]")
+  public Double getTac() {
+    return tac;
   }
 
-  public void setTAC(Double TAC) {
-    this.TAC = TAC;
+  public void setTac(Double tac) {
+    this.tac = tac;
   }
 
-  public Plmreqcostingroutine TBC(Double TBC) {
-    this.TBC = TBC;
+  public Plmreqcostingroutine tbc(Double tbc) {
+    this.tbc = tbc;
     return this;
   }
 
    /**
-   * Kusový čas v sekundách [persistentní položka]
-   * @return TBC
+   * kusový čas v sekundách [persistentní položka]
+   * @return tbc
   **/
-  @ApiModelProperty(example = "null", value = "Kusový čas v sekundách [persistentní položka]")
-  public Double getTBC() {
-    return TBC;
+  @ApiModelProperty(example = "null", value = "kusový čas v sekundách [persistentní položka]")
+  public Double getTbc() {
+    return tbc;
   }
 
-  public void setTBC(Double TBC) {
-    this.TBC = TBC;
+  public void setTbc(Double tbc) {
+    this.tbc = tbc;
   }
 
 
@@ -421,31 +466,31 @@ public class Plmreqcostingroutine   {
       return false;
     }
     Plmreqcostingroutine plmreqcostingroutine = (Plmreqcostingroutine) o;
-    return Objects.equals(this.displayName, plmreqcostingroutine.displayName) &&
-        Objects.equals(this.ID, plmreqcostingroutine.ID) &&
-        Objects.equals(this.classID, plmreqcostingroutine.classID) &&
-        Objects.equals(this.objVersion, plmreqcostingroutine.objVersion) &&
-        Objects.equals(this.parentID, plmreqcostingroutine.parentID) &&
-        Objects.equals(this.posIndex, plmreqcostingroutine.posIndex) &&
-        Objects.equals(this.workPlaceID, plmreqcostingroutine.workPlaceID) &&
-        Objects.equals(this.phaseID, plmreqcostingroutine.phaseID) &&
-        Objects.equals(this.partTime, plmreqcostingroutine.partTime) &&
-        Objects.equals(this.setupTime, plmreqcostingroutine.setupTime) &&
+    return Objects.equals(this.displayname, plmreqcostingroutine.displayname) &&
+        Objects.equals(this.id, plmreqcostingroutine.id) &&
+        Objects.equals(this.classid, plmreqcostingroutine.classid) &&
+        Objects.equals(this.objversion, plmreqcostingroutine.objversion) &&
+        Objects.equals(this.parentId, plmreqcostingroutine.parentId) &&
+        Objects.equals(this.posindex, plmreqcostingroutine.posindex) &&
+        Objects.equals(this.workplaceId, plmreqcostingroutine.workplaceId) &&
+        Objects.equals(this.phaseId, plmreqcostingroutine.phaseId) &&
+        Objects.equals(this.parttime, plmreqcostingroutine.parttime) &&
+        Objects.equals(this.setuptime, plmreqcostingroutine.setuptime) &&
         Objects.equals(this.title, plmreqcostingroutine.title) &&
         Objects.equals(this.cooperation, plmreqcostingroutine.cooperation) &&
-        Objects.equals(this.salaryClassID, plmreqcostingroutine.salaryClassID) &&
-        Objects.equals(this.totalTime, plmreqcostingroutine.totalTime) &&
+        Objects.equals(this.salaryclassId, plmreqcostingroutine.salaryclassId) &&
+        Objects.equals(this.totaltime, plmreqcostingroutine.totaltime) &&
         Objects.equals(this.salary, plmreqcostingroutine.salary) &&
-        Objects.equals(this.overheadCosts, plmreqcostingroutine.overheadCosts) &&
-        Objects.equals(this.generalExpense, plmreqcostingroutine.generalExpense) &&
-        Objects.equals(this.totalOverheads, plmreqcostingroutine.totalOverheads) &&
-        Objects.equals(this.TAC, plmreqcostingroutine.TAC) &&
-        Objects.equals(this.TBC, plmreqcostingroutine.TBC);
+        Objects.equals(this.overheadcosts, plmreqcostingroutine.overheadcosts) &&
+        Objects.equals(this.generalexpense, plmreqcostingroutine.generalexpense) &&
+        Objects.equals(this.totaloverheads, plmreqcostingroutine.totaloverheads) &&
+        Objects.equals(this.tac, plmreqcostingroutine.tac) &&
+        Objects.equals(this.tbc, plmreqcostingroutine.tbc);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, workPlaceID, phaseID, partTime, setupTime, title, cooperation, salaryClassID, totalTime, salary, overheadCosts, generalExpense, totalOverheads, TAC, TBC);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, workplaceId, phaseId, parttime, setuptime, title, cooperation, salaryclassId, totaltime, salary, overheadcosts, generalexpense, totaloverheads, tac, tbc);
   }
 
   @Override
@@ -453,26 +498,26 @@ public class Plmreqcostingroutine   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmreqcostingroutine {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    workPlaceID: ").append(toIndentedString(workPlaceID)).append("\n");
-    sb.append("    phaseID: ").append(toIndentedString(phaseID)).append("\n");
-    sb.append("    partTime: ").append(toIndentedString(partTime)).append("\n");
-    sb.append("    setupTime: ").append(toIndentedString(setupTime)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    workplaceId: ").append(toIndentedString(workplaceId)).append("\n");
+    sb.append("    phaseId: ").append(toIndentedString(phaseId)).append("\n");
+    sb.append("    parttime: ").append(toIndentedString(parttime)).append("\n");
+    sb.append("    setuptime: ").append(toIndentedString(setuptime)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    cooperation: ").append(toIndentedString(cooperation)).append("\n");
-    sb.append("    salaryClassID: ").append(toIndentedString(salaryClassID)).append("\n");
-    sb.append("    totalTime: ").append(toIndentedString(totalTime)).append("\n");
+    sb.append("    salaryclassId: ").append(toIndentedString(salaryclassId)).append("\n");
+    sb.append("    totaltime: ").append(toIndentedString(totaltime)).append("\n");
     sb.append("    salary: ").append(toIndentedString(salary)).append("\n");
-    sb.append("    overheadCosts: ").append(toIndentedString(overheadCosts)).append("\n");
-    sb.append("    generalExpense: ").append(toIndentedString(generalExpense)).append("\n");
-    sb.append("    totalOverheads: ").append(toIndentedString(totalOverheads)).append("\n");
-    sb.append("    TAC: ").append(toIndentedString(TAC)).append("\n");
-    sb.append("    TBC: ").append(toIndentedString(TBC)).append("\n");
+    sb.append("    overheadcosts: ").append(toIndentedString(overheadcosts)).append("\n");
+    sb.append("    generalexpense: ").append(toIndentedString(generalexpense)).append("\n");
+    sb.append("    totaloverheads: ").append(toIndentedString(totaloverheads)).append("\n");
+    sb.append("    tac: ").append(toIndentedString(tac)).append("\n");
+    sb.append("    tbc: ").append(toIndentedString(tbc)).append("\n");
     sb.append("}");
     return sb.toString();
   }

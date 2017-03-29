@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,237 +35,273 @@ import java.util.Objects;
 /**
  * Dockdefinition
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Dockdefinition   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Employee_ID")
-  private String employeeID = null;
+  @SerializedName("employee_id")
+  private String employeeId = null;
 
-  @SerializedName("DockType_ID")
-  private String dockTypeID = null;
+  @SerializedName("docktype_id")
+  private String docktypeId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("ValidFrom$DATE")
-  private DateTime validFromDATE = null;
+  @SerializedName("validfrom$date")
+  private DateTime validfromdate = null;
 
-  @SerializedName("ValidTo$DATE")
-  private DateTime validToDATE = null;
+  @SerializedName("validto$date")
+  private DateTime validtodate = null;
 
-  @SerializedName("TotalDock")
-  private Double totalDock = null;
+  @SerializedName("totaldock")
+  private Double totaldock = null;
 
-  @SerializedName("DockCount")
-  private Integer dockCount = null;
+  @SerializedName("dockcount")
+  private Integer dockcount = null;
 
-  @SerializedName("BaseType")
-  private Integer baseType = null;
+  @SerializedName("basetype")
+  private Integer basetype = null;
 
-  @SerializedName("Periodicity")
+  @SerializedName("periodicity")
   private Integer periodicity = null;
 
-  @SerializedName("Internal")
+  @SerializedName("internal")
   private Boolean internal = null;
 
-  @SerializedName("DebtCorrect")
-  private Boolean debtCorrect = null;
+  @SerializedName("debtcorrect")
+  private Boolean debtcorrect = null;
 
-  @SerializedName("OfMinimum")
-  private Boolean ofMinimum = null;
+  @SerializedName("ofminimum")
+  private Boolean ofminimum = null;
 
-  @SerializedName("Partial")
+  @SerializedName("partial")
   private Boolean partial = null;
 
-  @SerializedName("Priority")
+  @SerializedName("priority")
   private Integer priority = null;
 
-  @SerializedName("PrintGroup")
-  private String printGroup = null;
+  @SerializedName("printgroup")
+  private String printgroup = null;
 
-  @SerializedName("Destination")
+  @SerializedName("destination")
   private String destination = null;
 
-  @SerializedName("Source_ID")
-  private String sourceID = null;
+  @SerializedName("source_id")
+  private String sourceId = null;
 
-  @SerializedName("VarSymbol")
-  private String varSymbol = null;
+  @SerializedName("varsymbol")
+  private String varsymbol = null;
 
-  @SerializedName("SpecSymbol")
-  private String specSymbol = null;
+  @SerializedName("specsymbol")
+  private String specsymbol = null;
 
-  @SerializedName("ConstSymbol_ID")
-  private String constSymbolID = null;
+  @SerializedName("constsymbol_id")
+  private String constsymbolId = null;
 
-  @SerializedName("Required")
+  @SerializedName("required")
   private Double required = null;
 
-  @SerializedName("IsPercent")
-  private Boolean isPercent = null;
+  @SerializedName("ispercent")
+  private Boolean ispercent = null;
 
-  @SerializedName("PercentOfCode")
-  private Integer percentOfCode = null;
+  @SerializedName("percentofcode")
+  private Integer percentofcode = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("CLSIDForPercent")
-  private String cLSIDForPercent = null;
+  @SerializedName("clsidforpercent")
+  private String clsidforpercent = null;
 
-  @SerializedName("DueDateNrDays")
-  private Integer dueDateNrDays = null;
+  @SerializedName("duedatenrdays")
+  private Integer duedatenrdays = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("Flag")
+  @SerializedName("flag")
   private String flag = null;
 
-  @SerializedName("Per_PersonalNumber")
-  private String perPersonalNumber = null;
+  @SerializedName("per_personalnumber")
+  private String perPersonalnumber = null;
 
-  @SerializedName("SWIFTCode")
-  private String sWIFTCode = null;
+  @SerializedName("swiftcode")
+  private String swiftcode = null;
 
-  @SerializedName("ExecAuthority")
-  private String execAuthority = null;
+  @SerializedName("execauthority")
+  private String execauthority = null;
 
-  @SerializedName("ExecRefNumber")
-  private String execRefNumber = null;
+  @SerializedName("execrefnumber")
+  private String execrefnumber = null;
 
-  @SerializedName("ExecRecipient")
-  private String execRecipient = null;
+  @SerializedName("execrecipient")
+  private String execrecipient = null;
 
-  @SerializedName("Per_NumPersonalNumber")
-  private Integer perNumPersonalNumber = null;
+  @SerializedName("per_numpersonalnumber")
+  private Integer perNumpersonalnumber = null;
 
-  @SerializedName("UseExpressionForVS")
-  private Boolean useExpressionForVS = null;
+  @SerializedName("useexpressionforvs")
+  private Boolean useexpressionforvs = null;
 
-  @SerializedName("UseExpressionForSS")
-  private Boolean useExpressionForSS = null;
+  @SerializedName("useexpressionforss")
+  private Boolean useexpressionforss = null;
 
-  @SerializedName("ExpressionForVS")
-  private String expressionForVS = null;
+  @SerializedName("expressionforvs")
+  private String expressionforvs = null;
 
-  @SerializedName("ExpressionForSS")
-  private String expressionForSS = null;
+  @SerializedName("expressionforss")
+  private String expressionforss = null;
 
-  @SerializedName("AgreementDock")
-  private Boolean agreementDock = null;
+  @SerializedName("agreementdock")
+  private Boolean agreementdock = null;
 
-  @SerializedName("DockFromAgreements")
-  private Boolean dockFromAgreements = null;
+  @SerializedName("dockfromagreements")
+  private Boolean dockfromagreements = null;
 
-  @SerializedName("TargetBankCountry_ID")
-  private String targetBankCountryID = null;
+  @SerializedName("targetbankcountry_id")
+  private String targetbankcountryId = null;
 
-  @SerializedName("BaseType_Text")
-  private String baseTypeText = null;
+  @SerializedName("basetype_text")
+  private String basetypeText = null;
 
-  @SerializedName("PercentOfName")
-  private String percentOfName = null;
+  @SerializedName("percentofname")
+  private String percentofname = null;
 
-  @SerializedName("PercentOfLabel")
-  private String percentOfLabel = null;
+  @SerializedName("percentoflabel")
+  private String percentoflabel = null;
 
-  @SerializedName("EmployeeName")
-  private String employeeName = null;
+  @SerializedName("employeename")
+  private String employeename = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Dockdefinition employeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public Dockdefinition displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Zaměstnanec; ID objektu Zaměstnanec [persistentní položka]
-   * @return employeeID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Zaměstnanec; ID objektu Zaměstnanec [persistentní položka]")
-  public String getEmployeeID() {
-    return employeeID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setEmployeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Dockdefinition dockTypeID(String dockTypeID) {
-    this.dockTypeID = dockTypeID;
+  public Dockdefinition id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Druh srážky; ID objektu Druh srážky [persistentní položka]
-   * @return dockTypeID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Druh srážky; ID objektu Druh srážky [persistentní položka]")
-  public String getDockTypeID() {
-    return dockTypeID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDockTypeID(String dockTypeID) {
-    this.dockTypeID = dockTypeID;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Dockdefinition classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Dockdefinition objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Dockdefinition employeeId(String employeeId) {
+    this.employeeId = employeeId;
+    return this;
+  }
+
+   /**
+   * zaměstnanec; id objektu zaměstnanec [persistentní položka]
+   * @return employeeId
+  **/
+  @ApiModelProperty(example = "null", value = "zaměstnanec; id objektu zaměstnanec [persistentní položka]")
+  public String getEmployeeId() {
+    return employeeId;
+  }
+
+  public void setEmployeeId(String employeeId) {
+    this.employeeId = employeeId;
+  }
+
+  public Dockdefinition docktypeId(String docktypeId) {
+    this.docktypeId = docktypeId;
+    return this;
+  }
+
+   /**
+   * druh srážky; id objektu druh srážky [persistentní položka]
+   * @return docktypeId
+  **/
+  @ApiModelProperty(example = "null", value = "druh srážky; id objektu druh srážky [persistentní položka]")
+  public String getDocktypeId() {
+    return docktypeId;
+  }
+
+  public void setDocktypeId(String docktypeId) {
+    this.docktypeId = docktypeId;
   }
 
   public Dockdefinition description(String description) {
@@ -274,10 +310,10 @@ public class Dockdefinition   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -286,94 +322,94 @@ public class Dockdefinition   {
     this.description = description;
   }
 
-  public Dockdefinition validFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public Dockdefinition validfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
     return this;
   }
 
    /**
-   * Platí od [persistentní položka]
-   * @return validFromDATE
+   * platí od [persistentní položka]
+   * @return validfromdate
   **/
-  @ApiModelProperty(example = "null", value = "Platí od [persistentní položka]")
-  public DateTime getValidFromDATE() {
-    return validFromDATE;
+  @ApiModelProperty(example = "null", value = "platí od [persistentní položka]")
+  public DateTime getValidfromdate() {
+    return validfromdate;
   }
 
-  public void setValidFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public void setValidfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
   }
 
-  public Dockdefinition validToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public Dockdefinition validtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
     return this;
   }
 
    /**
-   * Platí do [persistentní položka]
-   * @return validToDATE
+   * platí do [persistentní položka]
+   * @return validtodate
   **/
-  @ApiModelProperty(example = "null", value = "Platí do [persistentní položka]")
-  public DateTime getValidToDATE() {
-    return validToDATE;
+  @ApiModelProperty(example = "null", value = "platí do [persistentní položka]")
+  public DateTime getValidtodate() {
+    return validtodate;
   }
 
-  public void setValidToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public void setValidtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
   }
 
-  public Dockdefinition totalDock(Double totalDock) {
-    this.totalDock = totalDock;
+  public Dockdefinition totaldock(Double totaldock) {
+    this.totaldock = totaldock;
     return this;
   }
 
    /**
-   * Celková částka [persistentní položka]
-   * @return totalDock
+   * celková částka [persistentní položka]
+   * @return totaldock
   **/
-  @ApiModelProperty(example = "null", value = "Celková částka [persistentní položka]")
-  public Double getTotalDock() {
-    return totalDock;
+  @ApiModelProperty(example = "null", value = "celková částka [persistentní položka]")
+  public Double getTotaldock() {
+    return totaldock;
   }
 
-  public void setTotalDock(Double totalDock) {
-    this.totalDock = totalDock;
+  public void setTotaldock(Double totaldock) {
+    this.totaldock = totaldock;
   }
 
-  public Dockdefinition dockCount(Integer dockCount) {
-    this.dockCount = dockCount;
+  public Dockdefinition dockcount(Integer dockcount) {
+    this.dockcount = dockcount;
     return this;
   }
 
    /**
-   * Počet splátek [persistentní položka]
-   * @return dockCount
+   * počet splátek [persistentní položka]
+   * @return dockcount
   **/
-  @ApiModelProperty(example = "null", value = "Počet splátek [persistentní položka]")
-  public Integer getDockCount() {
-    return dockCount;
+  @ApiModelProperty(example = "null", value = "počet splátek [persistentní položka]")
+  public Integer getDockcount() {
+    return dockcount;
   }
 
-  public void setDockCount(Integer dockCount) {
-    this.dockCount = dockCount;
+  public void setDockcount(Integer dockcount) {
+    this.dockcount = dockcount;
   }
 
-  public Dockdefinition baseType(Integer baseType) {
-    this.baseType = baseType;
+  public Dockdefinition basetype(Integer basetype) {
+    this.basetype = basetype;
     return this;
   }
 
    /**
-   * Zákl.typ [persistentní položka]
-   * @return baseType
+   * zákl.typ [persistentní položka]
+   * @return basetype
   **/
-  @ApiModelProperty(example = "null", value = "Zákl.typ [persistentní položka]")
-  public Integer getBaseType() {
-    return baseType;
+  @ApiModelProperty(example = "null", value = "zákl.typ [persistentní položka]")
+  public Integer getBasetype() {
+    return basetype;
   }
 
-  public void setBaseType(Integer baseType) {
-    this.baseType = baseType;
+  public void setBasetype(Integer basetype) {
+    this.basetype = basetype;
   }
 
   public Dockdefinition periodicity(Integer periodicity) {
@@ -382,10 +418,10 @@ public class Dockdefinition   {
   }
 
    /**
-   * Periodicita [persistentní položka]
+   * periodicita [persistentní položka]
    * @return periodicity
   **/
-  @ApiModelProperty(example = "null", value = "Periodicita [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "periodicita [persistentní položka]")
   public Integer getPeriodicity() {
     return periodicity;
   }
@@ -400,10 +436,10 @@ public class Dockdefinition   {
   }
 
    /**
-   * Interní [persistentní položka]
+   * interní [persistentní položka]
    * @return internal
   **/
-  @ApiModelProperty(example = "null", value = "Interní [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "interní [persistentní položka]")
   public Boolean getInternal() {
     return internal;
   }
@@ -412,40 +448,40 @@ public class Dockdefinition   {
     this.internal = internal;
   }
 
-  public Dockdefinition debtCorrect(Boolean debtCorrect) {
-    this.debtCorrect = debtCorrect;
+  public Dockdefinition debtcorrect(Boolean debtcorrect) {
+    this.debtcorrect = debtcorrect;
     return this;
   }
 
    /**
-   * Vyr.dlužnou částku [persistentní položka]
-   * @return debtCorrect
+   * vyr.dlužnou částku [persistentní položka]
+   * @return debtcorrect
   **/
-  @ApiModelProperty(example = "null", value = "Vyr.dlužnou částku [persistentní položka]")
-  public Boolean getDebtCorrect() {
-    return debtCorrect;
+  @ApiModelProperty(example = "null", value = "vyr.dlužnou částku [persistentní položka]")
+  public Boolean getDebtcorrect() {
+    return debtcorrect;
   }
 
-  public void setDebtCorrect(Boolean debtCorrect) {
-    this.debtCorrect = debtCorrect;
+  public void setDebtcorrect(Boolean debtcorrect) {
+    this.debtcorrect = debtcorrect;
   }
 
-  public Dockdefinition ofMinimum(Boolean ofMinimum) {
-    this.ofMinimum = ofMinimum;
+  public Dockdefinition ofminimum(Boolean ofminimum) {
+    this.ofminimum = ofminimum;
     return this;
   }
 
    /**
-   * Porovnávat s minimem [persistentní položka]
-   * @return ofMinimum
+   * porovnávat s minimem [persistentní položka]
+   * @return ofminimum
   **/
-  @ApiModelProperty(example = "null", value = "Porovnávat s minimem [persistentní položka]")
-  public Boolean getOfMinimum() {
-    return ofMinimum;
+  @ApiModelProperty(example = "null", value = "porovnávat s minimem [persistentní položka]")
+  public Boolean getOfminimum() {
+    return ofminimum;
   }
 
-  public void setOfMinimum(Boolean ofMinimum) {
-    this.ofMinimum = ofMinimum;
+  public void setOfminimum(Boolean ofminimum) {
+    this.ofminimum = ofminimum;
   }
 
   public Dockdefinition partial(Boolean partial) {
@@ -472,10 +508,10 @@ public class Dockdefinition   {
   }
 
    /**
-   * Priorita [persistentní položka]
+   * priorita [persistentní položka]
    * @return priority
   **/
-  @ApiModelProperty(example = "null", value = "Priorita [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "priorita [persistentní položka]")
   public Integer getPriority() {
     return priority;
   }
@@ -484,22 +520,22 @@ public class Dockdefinition   {
     this.priority = priority;
   }
 
-  public Dockdefinition printGroup(String printGroup) {
-    this.printGroup = printGroup;
+  public Dockdefinition printgroup(String printgroup) {
+    this.printgroup = printgroup;
     return this;
   }
 
    /**
-   * Tisk.skup. [persistentní položka]
-   * @return printGroup
+   * tisk.skup. [persistentní položka]
+   * @return printgroup
   **/
-  @ApiModelProperty(example = "null", value = "Tisk.skup. [persistentní položka]")
-  public String getPrintGroup() {
-    return printGroup;
+  @ApiModelProperty(example = "null", value = "tisk.skup. [persistentní položka]")
+  public String getPrintgroup() {
+    return printgroup;
   }
 
-  public void setPrintGroup(String printGroup) {
-    this.printGroup = printGroup;
+  public void setPrintgroup(String printgroup) {
+    this.printgroup = printgroup;
   }
 
   public Dockdefinition destination(String destination) {
@@ -508,10 +544,10 @@ public class Dockdefinition   {
   }
 
    /**
-   * Cílový účet [persistentní položka]
+   * cílový účet [persistentní položka]
    * @return destination
   **/
-  @ApiModelProperty(example = "null", value = "Cílový účet [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "cílový účet [persistentní položka]")
   public String getDestination() {
     return destination;
   }
@@ -520,76 +556,76 @@ public class Dockdefinition   {
     this.destination = destination;
   }
 
-  public Dockdefinition sourceID(String sourceID) {
-    this.sourceID = sourceID;
+  public Dockdefinition sourceId(String sourceId) {
+    this.sourceId = sourceId;
     return this;
   }
 
    /**
-   * Zdrojový účet; ID objektu Bankovní účet [persistentní položka]
-   * @return sourceID
+   * zdrojový účet; id objektu bankovní účet [persistentní položka]
+   * @return sourceId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojový účet; ID objektu Bankovní účet [persistentní položka]")
-  public String getSourceID() {
-    return sourceID;
+  @ApiModelProperty(example = "null", value = "zdrojový účet; id objektu bankovní účet [persistentní položka]")
+  public String getSourceId() {
+    return sourceId;
   }
 
-  public void setSourceID(String sourceID) {
-    this.sourceID = sourceID;
+  public void setSourceId(String sourceId) {
+    this.sourceId = sourceId;
   }
 
-  public Dockdefinition varSymbol(String varSymbol) {
-    this.varSymbol = varSymbol;
+  public Dockdefinition varsymbol(String varsymbol) {
+    this.varsymbol = varsymbol;
     return this;
   }
 
    /**
-   * Var.symbol [persistentní položka]
-   * @return varSymbol
+   * var.symbol [persistentní položka]
+   * @return varsymbol
   **/
-  @ApiModelProperty(example = "null", value = "Var.symbol [persistentní položka]")
-  public String getVarSymbol() {
-    return varSymbol;
+  @ApiModelProperty(example = "null", value = "var.symbol [persistentní položka]")
+  public String getVarsymbol() {
+    return varsymbol;
   }
 
-  public void setVarSymbol(String varSymbol) {
-    this.varSymbol = varSymbol;
+  public void setVarsymbol(String varsymbol) {
+    this.varsymbol = varsymbol;
   }
 
-  public Dockdefinition specSymbol(String specSymbol) {
-    this.specSymbol = specSymbol;
+  public Dockdefinition specsymbol(String specsymbol) {
+    this.specsymbol = specsymbol;
     return this;
   }
 
    /**
-   * Spec.symbol [persistentní položka]
-   * @return specSymbol
+   * spec.symbol [persistentní položka]
+   * @return specsymbol
   **/
-  @ApiModelProperty(example = "null", value = "Spec.symbol [persistentní položka]")
-  public String getSpecSymbol() {
-    return specSymbol;
+  @ApiModelProperty(example = "null", value = "spec.symbol [persistentní položka]")
+  public String getSpecsymbol() {
+    return specsymbol;
   }
 
-  public void setSpecSymbol(String specSymbol) {
-    this.specSymbol = specSymbol;
+  public void setSpecsymbol(String specsymbol) {
+    this.specsymbol = specsymbol;
   }
 
-  public Dockdefinition constSymbolID(String constSymbolID) {
-    this.constSymbolID = constSymbolID;
+  public Dockdefinition constsymbolId(String constsymbolId) {
+    this.constsymbolId = constsymbolId;
     return this;
   }
 
    /**
-   * Konst.symbol; ID objektu Konstantní symbol [persistentní položka]
-   * @return constSymbolID
+   * konst.symbol; id objektu konstantní symbol [persistentní položka]
+   * @return constsymbolId
   **/
-  @ApiModelProperty(example = "null", value = "Konst.symbol; ID objektu Konstantní symbol [persistentní položka]")
-  public String getConstSymbolID() {
-    return constSymbolID;
+  @ApiModelProperty(example = "null", value = "konst.symbol; id objektu konstantní symbol [persistentní položka]")
+  public String getConstsymbolId() {
+    return constsymbolId;
   }
 
-  public void setConstSymbolID(String constSymbolID) {
-    this.constSymbolID = constSymbolID;
+  public void setConstsymbolId(String constsymbolId) {
+    this.constsymbolId = constsymbolId;
   }
 
   public Dockdefinition required(Double required) {
@@ -598,10 +634,10 @@ public class Dockdefinition   {
   }
 
    /**
-   * Předepsáno [persistentní položka]
+   * předepsáno [persistentní položka]
    * @return required
   **/
-  @ApiModelProperty(example = "null", value = "Předepsáno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "předepsáno [persistentní položka]")
   public Double getRequired() {
     return required;
   }
@@ -610,166 +646,166 @@ public class Dockdefinition   {
     this.required = required;
   }
 
-  public Dockdefinition isPercent(Boolean isPercent) {
-    this.isPercent = isPercent;
+  public Dockdefinition ispercent(Boolean ispercent) {
+    this.ispercent = ispercent;
     return this;
   }
 
    /**
-   * Procentem [persistentní položka]
-   * @return isPercent
+   * procentem [persistentní položka]
+   * @return ispercent
   **/
-  @ApiModelProperty(example = "null", value = "Procentem [persistentní položka]")
-  public Boolean getIsPercent() {
-    return isPercent;
+  @ApiModelProperty(example = "null", value = "procentem [persistentní položka]")
+  public Boolean getIspercent() {
+    return ispercent;
   }
 
-  public void setIsPercent(Boolean isPercent) {
-    this.isPercent = isPercent;
+  public void setIspercent(Boolean ispercent) {
+    this.ispercent = ispercent;
   }
 
-  public Dockdefinition percentOfCode(Integer percentOfCode) {
-    this.percentOfCode = percentOfCode;
+  public Dockdefinition percentofcode(Integer percentofcode) {
+    this.percentofcode = percentofcode;
     return this;
   }
 
    /**
-   * Z položky ML [persistentní položka]
-   * @return percentOfCode
+   * z položky ml [persistentní položka]
+   * @return percentofcode
   **/
-  @ApiModelProperty(example = "null", value = "Z položky ML [persistentní položka]")
-  public Integer getPercentOfCode() {
-    return percentOfCode;
+  @ApiModelProperty(example = "null", value = "z položky ml [persistentní položka]")
+  public Integer getPercentofcode() {
+    return percentofcode;
   }
 
-  public void setPercentOfCode(Integer percentOfCode) {
-    this.percentOfCode = percentOfCode;
+  public void setPercentofcode(Integer percentofcode) {
+    this.percentofcode = percentofcode;
   }
 
-  public Dockdefinition createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Dockdefinition createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Dockdefinition correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Dockdefinition correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Dockdefinition cLSIDForPercent(String cLSIDForPercent) {
-    this.cLSIDForPercent = cLSIDForPercent;
+  public Dockdefinition clsidforpercent(String clsidforpercent) {
+    this.clsidforpercent = clsidforpercent;
     return this;
   }
 
    /**
-   * Třída objektu [persistentní položka]
-   * @return cLSIDForPercent
+   * třída objektu [persistentní položka]
+   * @return clsidforpercent
   **/
-  @ApiModelProperty(example = "null", value = "Třída objektu [persistentní položka]")
-  public String getCLSIDForPercent() {
-    return cLSIDForPercent;
+  @ApiModelProperty(example = "null", value = "třída objektu [persistentní položka]")
+  public String getClsidforpercent() {
+    return clsidforpercent;
   }
 
-  public void setCLSIDForPercent(String cLSIDForPercent) {
-    this.cLSIDForPercent = cLSIDForPercent;
+  public void setClsidforpercent(String clsidforpercent) {
+    this.clsidforpercent = clsidforpercent;
   }
 
-  public Dockdefinition dueDateNrDays(Integer dueDateNrDays) {
-    this.dueDateNrDays = dueDateNrDays;
+  public Dockdefinition duedatenrdays(Integer duedatenrdays) {
+    this.duedatenrdays = duedatenrdays;
     return this;
   }
 
    /**
-   * Dny splatnosti po výplatě [persistentní položka]
-   * @return dueDateNrDays
+   * dny splatnosti po výplatě [persistentní položka]
+   * @return duedatenrdays
   **/
-  @ApiModelProperty(example = "null", value = "Dny splatnosti po výplatě [persistentní položka]")
-  public Integer getDueDateNrDays() {
-    return dueDateNrDays;
+  @ApiModelProperty(example = "null", value = "dny splatnosti po výplatě [persistentní položka]")
+  public Integer getDuedatenrdays() {
+    return duedatenrdays;
   }
 
-  public void setDueDateNrDays(Integer dueDateNrDays) {
-    this.dueDateNrDays = dueDateNrDays;
+  public void setDuedatenrdays(Integer duedatenrdays) {
+    this.duedatenrdays = duedatenrdays;
   }
 
-  public Dockdefinition divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Dockdefinition divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Dockdefinition busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Dockdefinition busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Dockdefinition busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Dockdefinition bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obch. případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obch. případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obch. případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obch. případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
   public Dockdefinition flag(String flag) {
@@ -778,10 +814,10 @@ public class Dockdefinition   {
   }
 
    /**
-   * Rozl. řetězec [persistentní položka]
+   * rozl. řetězec [persistentní položka]
    * @return flag
   **/
-  @ApiModelProperty(example = "null", value = "Rozl. řetězec [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "rozl. řetězec [persistentní položka]")
   public String getFlag() {
     return flag;
   }
@@ -790,292 +826,328 @@ public class Dockdefinition   {
     this.flag = flag;
   }
 
-   /**
-   * Os.číslo
-   * @return perPersonalNumber
-  **/
-  @ApiModelProperty(example = "null", value = "Os.číslo")
-  public String getPerPersonalNumber() {
-    return perPersonalNumber;
-  }
-
-  public Dockdefinition sWIFTCode(String sWIFTCode) {
-    this.sWIFTCode = sWIFTCode;
+  public Dockdefinition perPersonalnumber(String perPersonalnumber) {
+    this.perPersonalnumber = perPersonalnumber;
     return this;
   }
 
    /**
-   * SWIFT kód [persistentní položka]
-   * @return sWIFTCode
+   * os.číslo
+   * @return perPersonalnumber
   **/
-  @ApiModelProperty(example = "null", value = "SWIFT kód [persistentní položka]")
-  public String getSWIFTCode() {
-    return sWIFTCode;
+  @ApiModelProperty(example = "null", value = "os.číslo")
+  public String getPerPersonalnumber() {
+    return perPersonalnumber;
   }
 
-  public void setSWIFTCode(String sWIFTCode) {
-    this.sWIFTCode = sWIFTCode;
+  public void setPerPersonalnumber(String perPersonalnumber) {
+    this.perPersonalnumber = perPersonalnumber;
   }
 
-  public Dockdefinition execAuthority(String execAuthority) {
-    this.execAuthority = execAuthority;
+  public Dockdefinition swiftcode(String swiftcode) {
+    this.swiftcode = swiftcode;
     return this;
   }
 
    /**
-   * Exekuci nařídil [persistentní položka]
-   * @return execAuthority
+   * swift kód [persistentní položka]
+   * @return swiftcode
   **/
-  @ApiModelProperty(example = "null", value = "Exekuci nařídil [persistentní položka]")
-  public String getExecAuthority() {
-    return execAuthority;
+  @ApiModelProperty(example = "null", value = "swift kód [persistentní položka]")
+  public String getSwiftcode() {
+    return swiftcode;
   }
 
-  public void setExecAuthority(String execAuthority) {
-    this.execAuthority = execAuthority;
+  public void setSwiftcode(String swiftcode) {
+    this.swiftcode = swiftcode;
   }
 
-  public Dockdefinition execRefNumber(String execRefNumber) {
-    this.execRefNumber = execRefNumber;
+  public Dockdefinition execauthority(String execauthority) {
+    this.execauthority = execauthority;
+    return this;
+  }
+
+   /**
+   * exekuci nařídil [persistentní položka]
+   * @return execauthority
+  **/
+  @ApiModelProperty(example = "null", value = "exekuci nařídil [persistentní položka]")
+  public String getExecauthority() {
+    return execauthority;
+  }
+
+  public void setExecauthority(String execauthority) {
+    this.execauthority = execauthority;
+  }
+
+  public Dockdefinition execrefnumber(String execrefnumber) {
+    this.execrefnumber = execrefnumber;
     return this;
   }
 
    /**
    * Číslo jednací [persistentní položka]
-   * @return execRefNumber
+   * @return execrefnumber
   **/
   @ApiModelProperty(example = "null", value = "Číslo jednací [persistentní položka]")
-  public String getExecRefNumber() {
-    return execRefNumber;
+  public String getExecrefnumber() {
+    return execrefnumber;
   }
 
-  public void setExecRefNumber(String execRefNumber) {
-    this.execRefNumber = execRefNumber;
+  public void setExecrefnumber(String execrefnumber) {
+    this.execrefnumber = execrefnumber;
   }
 
-  public Dockdefinition execRecipient(String execRecipient) {
-    this.execRecipient = execRecipient;
+  public Dockdefinition execrecipient(String execrecipient) {
+    this.execrecipient = execrecipient;
     return this;
   }
 
    /**
-   * Oprávněný [persistentní položka]
-   * @return execRecipient
+   * oprávněný [persistentní položka]
+   * @return execrecipient
   **/
-  @ApiModelProperty(example = "null", value = "Oprávněný [persistentní položka]")
-  public String getExecRecipient() {
-    return execRecipient;
+  @ApiModelProperty(example = "null", value = "oprávněný [persistentní položka]")
+  public String getExecrecipient() {
+    return execrecipient;
   }
 
-  public void setExecRecipient(String execRecipient) {
-    this.execRecipient = execRecipient;
+  public void setExecrecipient(String execrecipient) {
+    this.execrecipient = execrecipient;
   }
 
-   /**
-   * Os.číslo numericky
-   * @return perNumPersonalNumber
-  **/
-  @ApiModelProperty(example = "null", value = "Os.číslo numericky")
-  public Integer getPerNumPersonalNumber() {
-    return perNumPersonalNumber;
-  }
-
-  public Dockdefinition useExpressionForVS(Boolean useExpressionForVS) {
-    this.useExpressionForVS = useExpressionForVS;
+  public Dockdefinition perNumpersonalnumber(Integer perNumpersonalnumber) {
+    this.perNumpersonalnumber = perNumpersonalnumber;
     return this;
   }
 
    /**
-   * VS výrazem [persistentní položka]
-   * @return useExpressionForVS
+   * os.číslo numericky
+   * @return perNumpersonalnumber
   **/
-  @ApiModelProperty(example = "null", value = "VS výrazem [persistentní položka]")
-  public Boolean getUseExpressionForVS() {
-    return useExpressionForVS;
+  @ApiModelProperty(example = "null", value = "os.číslo numericky")
+  public Integer getPerNumpersonalnumber() {
+    return perNumpersonalnumber;
   }
 
-  public void setUseExpressionForVS(Boolean useExpressionForVS) {
-    this.useExpressionForVS = useExpressionForVS;
+  public void setPerNumpersonalnumber(Integer perNumpersonalnumber) {
+    this.perNumpersonalnumber = perNumpersonalnumber;
   }
 
-  public Dockdefinition useExpressionForSS(Boolean useExpressionForSS) {
-    this.useExpressionForSS = useExpressionForSS;
+  public Dockdefinition useexpressionforvs(Boolean useexpressionforvs) {
+    this.useexpressionforvs = useexpressionforvs;
     return this;
   }
 
    /**
-   * SS výrazem [persistentní položka]
-   * @return useExpressionForSS
+   * vs výrazem [persistentní položka]
+   * @return useexpressionforvs
   **/
-  @ApiModelProperty(example = "null", value = "SS výrazem [persistentní položka]")
-  public Boolean getUseExpressionForSS() {
-    return useExpressionForSS;
+  @ApiModelProperty(example = "null", value = "vs výrazem [persistentní položka]")
+  public Boolean getUseexpressionforvs() {
+    return useexpressionforvs;
   }
 
-  public void setUseExpressionForSS(Boolean useExpressionForSS) {
-    this.useExpressionForSS = useExpressionForSS;
+  public void setUseexpressionforvs(Boolean useexpressionforvs) {
+    this.useexpressionforvs = useexpressionforvs;
   }
 
-  public Dockdefinition expressionForVS(String expressionForVS) {
-    this.expressionForVS = expressionForVS;
+  public Dockdefinition useexpressionforss(Boolean useexpressionforss) {
+    this.useexpressionforss = useexpressionforss;
     return this;
   }
 
    /**
-   * Výraz pro VS [persistentní položka]
-   * @return expressionForVS
+   * ss výrazem [persistentní položka]
+   * @return useexpressionforss
   **/
-  @ApiModelProperty(example = "null", value = "Výraz pro VS [persistentní položka]")
-  public String getExpressionForVS() {
-    return expressionForVS;
+  @ApiModelProperty(example = "null", value = "ss výrazem [persistentní položka]")
+  public Boolean getUseexpressionforss() {
+    return useexpressionforss;
   }
 
-  public void setExpressionForVS(String expressionForVS) {
-    this.expressionForVS = expressionForVS;
+  public void setUseexpressionforss(Boolean useexpressionforss) {
+    this.useexpressionforss = useexpressionforss;
   }
 
-  public Dockdefinition expressionForSS(String expressionForSS) {
-    this.expressionForSS = expressionForSS;
+  public Dockdefinition expressionforvs(String expressionforvs) {
+    this.expressionforvs = expressionforvs;
     return this;
   }
 
    /**
-   * Výraz pro SS [persistentní položka]
-   * @return expressionForSS
+   * výraz pro vs [persistentní položka]
+   * @return expressionforvs
   **/
-  @ApiModelProperty(example = "null", value = "Výraz pro SS [persistentní položka]")
-  public String getExpressionForSS() {
-    return expressionForSS;
+  @ApiModelProperty(example = "null", value = "výraz pro vs [persistentní položka]")
+  public String getExpressionforvs() {
+    return expressionforvs;
   }
 
-  public void setExpressionForSS(String expressionForSS) {
-    this.expressionForSS = expressionForSS;
+  public void setExpressionforvs(String expressionforvs) {
+    this.expressionforvs = expressionforvs;
   }
 
-  public Dockdefinition agreementDock(Boolean agreementDock) {
-    this.agreementDock = agreementDock;
+  public Dockdefinition expressionforss(String expressionforss) {
+    this.expressionforss = expressionforss;
     return this;
   }
 
    /**
-   * Srážka dohodou [persistentní položka]
-   * @return agreementDock
+   * výraz pro ss [persistentní položka]
+   * @return expressionforss
   **/
-  @ApiModelProperty(example = "null", value = "Srážka dohodou [persistentní položka]")
-  public Boolean getAgreementDock() {
-    return agreementDock;
+  @ApiModelProperty(example = "null", value = "výraz pro ss [persistentní položka]")
+  public String getExpressionforss() {
+    return expressionforss;
   }
 
-  public void setAgreementDock(Boolean agreementDock) {
-    this.agreementDock = agreementDock;
+  public void setExpressionforss(String expressionforss) {
+    this.expressionforss = expressionforss;
   }
 
-  public Dockdefinition dockFromAgreements(Boolean dockFromAgreements) {
-    this.dockFromAgreements = dockFromAgreements;
+  public Dockdefinition agreementdock(Boolean agreementdock) {
+    this.agreementdock = agreementdock;
     return this;
   }
 
    /**
-   * Srážet i z dohod [persistentní položka]
-   * @return dockFromAgreements
+   * srážka dohodou [persistentní položka]
+   * @return agreementdock
   **/
-  @ApiModelProperty(example = "null", value = "Srážet i z dohod [persistentní položka]")
-  public Boolean getDockFromAgreements() {
-    return dockFromAgreements;
+  @ApiModelProperty(example = "null", value = "srážka dohodou [persistentní položka]")
+  public Boolean getAgreementdock() {
+    return agreementdock;
   }
 
-  public void setDockFromAgreements(Boolean dockFromAgreements) {
-    this.dockFromAgreements = dockFromAgreements;
+  public void setAgreementdock(Boolean agreementdock) {
+    this.agreementdock = agreementdock;
   }
 
-  public Dockdefinition targetBankCountryID(String targetBankCountryID) {
-    this.targetBankCountryID = targetBankCountryID;
+  public Dockdefinition dockfromagreements(Boolean dockfromagreements) {
+    this.dockfromagreements = dockfromagreements;
     return this;
   }
 
    /**
-   * Země banky; ID objektu Země [persistentní položka]
-   * @return targetBankCountryID
+   * srážet i z dohod [persistentní položka]
+   * @return dockfromagreements
   **/
-  @ApiModelProperty(example = "null", value = "Země banky; ID objektu Země [persistentní položka]")
-  public String getTargetBankCountryID() {
-    return targetBankCountryID;
+  @ApiModelProperty(example = "null", value = "srážet i z dohod [persistentní položka]")
+  public Boolean getDockfromagreements() {
+    return dockfromagreements;
   }
 
-  public void setTargetBankCountryID(String targetBankCountryID) {
-    this.targetBankCountryID = targetBankCountryID;
+  public void setDockfromagreements(Boolean dockfromagreements) {
+    this.dockfromagreements = dockfromagreements;
   }
 
-   /**
-   * Zákl.typ
-   * @return baseTypeText
-  **/
-  @ApiModelProperty(example = "null", value = "Zákl.typ")
-  public String getBaseTypeText() {
-    return baseTypeText;
-  }
-
-  public Dockdefinition percentOfName(String percentOfName) {
-    this.percentOfName = percentOfName;
+  public Dockdefinition targetbankcountryId(String targetbankcountryId) {
+    this.targetbankcountryId = targetbankcountryId;
     return this;
   }
 
    /**
-   * Z položky - jméno
-   * @return percentOfName
+   * země banky; id objektu země [persistentní položka]
+   * @return targetbankcountryId
   **/
-  @ApiModelProperty(example = "null", value = "Z položky - jméno")
-  public String getPercentOfName() {
-    return percentOfName;
+  @ApiModelProperty(example = "null", value = "země banky; id objektu země [persistentní položka]")
+  public String getTargetbankcountryId() {
+    return targetbankcountryId;
   }
 
-  public void setPercentOfName(String percentOfName) {
-    this.percentOfName = percentOfName;
+  public void setTargetbankcountryId(String targetbankcountryId) {
+    this.targetbankcountryId = targetbankcountryId;
   }
 
-  public Dockdefinition percentOfLabel(String percentOfLabel) {
-    this.percentOfLabel = percentOfLabel;
+  public Dockdefinition basetypeText(String basetypeText) {
+    this.basetypeText = basetypeText;
     return this;
   }
 
    /**
-   * Z položky - popis
-   * @return percentOfLabel
+   * zákl.typ
+   * @return basetypeText
   **/
-  @ApiModelProperty(example = "null", value = "Z položky - popis")
-  public String getPercentOfLabel() {
-    return percentOfLabel;
+  @ApiModelProperty(example = "null", value = "zákl.typ")
+  public String getBasetypeText() {
+    return basetypeText;
   }
 
-  public void setPercentOfLabel(String percentOfLabel) {
-    this.percentOfLabel = percentOfLabel;
+  public void setBasetypeText(String basetypeText) {
+    this.basetypeText = basetypeText;
   }
 
-   /**
-   * Příjmení a jméno
-   * @return employeeName
-  **/
-  @ApiModelProperty(example = "null", value = "Příjmení a jméno")
-  public String getEmployeeName() {
-    return employeeName;
-  }
-
-  public Dockdefinition busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Dockdefinition percentofname(String percentofname) {
+    this.percentofname = percentofname;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * z položky - jméno
+   * @return percentofname
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "z položky - jméno")
+  public String getPercentofname() {
+    return percentofname;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setPercentofname(String percentofname) {
+    this.percentofname = percentofname;
+  }
+
+  public Dockdefinition percentoflabel(String percentoflabel) {
+    this.percentoflabel = percentoflabel;
+    return this;
+  }
+
+   /**
+   * z položky - popis
+   * @return percentoflabel
+  **/
+  @ApiModelProperty(example = "null", value = "z položky - popis")
+  public String getPercentoflabel() {
+    return percentoflabel;
+  }
+
+  public void setPercentoflabel(String percentoflabel) {
+    this.percentoflabel = percentoflabel;
+  }
+
+  public Dockdefinition employeename(String employeename) {
+    this.employeename = employeename;
+    return this;
+  }
+
+   /**
+   * příjmení a jméno
+   * @return employeename
+  **/
+  @ApiModelProperty(example = "null", value = "příjmení a jméno")
+  public String getEmployeename() {
+    return employeename;
+  }
+
+  public void setEmployeename(String employeename) {
+    this.employeename = employeename;
+  }
+
+  public Dockdefinition busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
+    return this;
+  }
+
+   /**
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
+  **/
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
+  }
+
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
 
@@ -1088,64 +1160,64 @@ public class Dockdefinition   {
       return false;
     }
     Dockdefinition dockdefinition = (Dockdefinition) o;
-    return Objects.equals(this.displayName, dockdefinition.displayName) &&
-        Objects.equals(this.ID, dockdefinition.ID) &&
-        Objects.equals(this.classID, dockdefinition.classID) &&
-        Objects.equals(this.objVersion, dockdefinition.objVersion) &&
-        Objects.equals(this.employeeID, dockdefinition.employeeID) &&
-        Objects.equals(this.dockTypeID, dockdefinition.dockTypeID) &&
+    return Objects.equals(this.displayname, dockdefinition.displayname) &&
+        Objects.equals(this.id, dockdefinition.id) &&
+        Objects.equals(this.classid, dockdefinition.classid) &&
+        Objects.equals(this.objversion, dockdefinition.objversion) &&
+        Objects.equals(this.employeeId, dockdefinition.employeeId) &&
+        Objects.equals(this.docktypeId, dockdefinition.docktypeId) &&
         Objects.equals(this.description, dockdefinition.description) &&
-        Objects.equals(this.validFromDATE, dockdefinition.validFromDATE) &&
-        Objects.equals(this.validToDATE, dockdefinition.validToDATE) &&
-        Objects.equals(this.totalDock, dockdefinition.totalDock) &&
-        Objects.equals(this.dockCount, dockdefinition.dockCount) &&
-        Objects.equals(this.baseType, dockdefinition.baseType) &&
+        Objects.equals(this.validfromdate, dockdefinition.validfromdate) &&
+        Objects.equals(this.validtodate, dockdefinition.validtodate) &&
+        Objects.equals(this.totaldock, dockdefinition.totaldock) &&
+        Objects.equals(this.dockcount, dockdefinition.dockcount) &&
+        Objects.equals(this.basetype, dockdefinition.basetype) &&
         Objects.equals(this.periodicity, dockdefinition.periodicity) &&
         Objects.equals(this.internal, dockdefinition.internal) &&
-        Objects.equals(this.debtCorrect, dockdefinition.debtCorrect) &&
-        Objects.equals(this.ofMinimum, dockdefinition.ofMinimum) &&
+        Objects.equals(this.debtcorrect, dockdefinition.debtcorrect) &&
+        Objects.equals(this.ofminimum, dockdefinition.ofminimum) &&
         Objects.equals(this.partial, dockdefinition.partial) &&
         Objects.equals(this.priority, dockdefinition.priority) &&
-        Objects.equals(this.printGroup, dockdefinition.printGroup) &&
+        Objects.equals(this.printgroup, dockdefinition.printgroup) &&
         Objects.equals(this.destination, dockdefinition.destination) &&
-        Objects.equals(this.sourceID, dockdefinition.sourceID) &&
-        Objects.equals(this.varSymbol, dockdefinition.varSymbol) &&
-        Objects.equals(this.specSymbol, dockdefinition.specSymbol) &&
-        Objects.equals(this.constSymbolID, dockdefinition.constSymbolID) &&
+        Objects.equals(this.sourceId, dockdefinition.sourceId) &&
+        Objects.equals(this.varsymbol, dockdefinition.varsymbol) &&
+        Objects.equals(this.specsymbol, dockdefinition.specsymbol) &&
+        Objects.equals(this.constsymbolId, dockdefinition.constsymbolId) &&
         Objects.equals(this.required, dockdefinition.required) &&
-        Objects.equals(this.isPercent, dockdefinition.isPercent) &&
-        Objects.equals(this.percentOfCode, dockdefinition.percentOfCode) &&
-        Objects.equals(this.createdByID, dockdefinition.createdByID) &&
-        Objects.equals(this.correctedByID, dockdefinition.correctedByID) &&
-        Objects.equals(this.cLSIDForPercent, dockdefinition.cLSIDForPercent) &&
-        Objects.equals(this.dueDateNrDays, dockdefinition.dueDateNrDays) &&
-        Objects.equals(this.divisionID, dockdefinition.divisionID) &&
-        Objects.equals(this.busOrderID, dockdefinition.busOrderID) &&
-        Objects.equals(this.busTransactionID, dockdefinition.busTransactionID) &&
+        Objects.equals(this.ispercent, dockdefinition.ispercent) &&
+        Objects.equals(this.percentofcode, dockdefinition.percentofcode) &&
+        Objects.equals(this.createdbyId, dockdefinition.createdbyId) &&
+        Objects.equals(this.correctedbyId, dockdefinition.correctedbyId) &&
+        Objects.equals(this.clsidforpercent, dockdefinition.clsidforpercent) &&
+        Objects.equals(this.duedatenrdays, dockdefinition.duedatenrdays) &&
+        Objects.equals(this.divisionId, dockdefinition.divisionId) &&
+        Objects.equals(this.busorderId, dockdefinition.busorderId) &&
+        Objects.equals(this.bustransactionId, dockdefinition.bustransactionId) &&
         Objects.equals(this.flag, dockdefinition.flag) &&
-        Objects.equals(this.perPersonalNumber, dockdefinition.perPersonalNumber) &&
-        Objects.equals(this.sWIFTCode, dockdefinition.sWIFTCode) &&
-        Objects.equals(this.execAuthority, dockdefinition.execAuthority) &&
-        Objects.equals(this.execRefNumber, dockdefinition.execRefNumber) &&
-        Objects.equals(this.execRecipient, dockdefinition.execRecipient) &&
-        Objects.equals(this.perNumPersonalNumber, dockdefinition.perNumPersonalNumber) &&
-        Objects.equals(this.useExpressionForVS, dockdefinition.useExpressionForVS) &&
-        Objects.equals(this.useExpressionForSS, dockdefinition.useExpressionForSS) &&
-        Objects.equals(this.expressionForVS, dockdefinition.expressionForVS) &&
-        Objects.equals(this.expressionForSS, dockdefinition.expressionForSS) &&
-        Objects.equals(this.agreementDock, dockdefinition.agreementDock) &&
-        Objects.equals(this.dockFromAgreements, dockdefinition.dockFromAgreements) &&
-        Objects.equals(this.targetBankCountryID, dockdefinition.targetBankCountryID) &&
-        Objects.equals(this.baseTypeText, dockdefinition.baseTypeText) &&
-        Objects.equals(this.percentOfName, dockdefinition.percentOfName) &&
-        Objects.equals(this.percentOfLabel, dockdefinition.percentOfLabel) &&
-        Objects.equals(this.employeeName, dockdefinition.employeeName) &&
-        Objects.equals(this.busProjectID, dockdefinition.busProjectID);
+        Objects.equals(this.perPersonalnumber, dockdefinition.perPersonalnumber) &&
+        Objects.equals(this.swiftcode, dockdefinition.swiftcode) &&
+        Objects.equals(this.execauthority, dockdefinition.execauthority) &&
+        Objects.equals(this.execrefnumber, dockdefinition.execrefnumber) &&
+        Objects.equals(this.execrecipient, dockdefinition.execrecipient) &&
+        Objects.equals(this.perNumpersonalnumber, dockdefinition.perNumpersonalnumber) &&
+        Objects.equals(this.useexpressionforvs, dockdefinition.useexpressionforvs) &&
+        Objects.equals(this.useexpressionforss, dockdefinition.useexpressionforss) &&
+        Objects.equals(this.expressionforvs, dockdefinition.expressionforvs) &&
+        Objects.equals(this.expressionforss, dockdefinition.expressionforss) &&
+        Objects.equals(this.agreementdock, dockdefinition.agreementdock) &&
+        Objects.equals(this.dockfromagreements, dockdefinition.dockfromagreements) &&
+        Objects.equals(this.targetbankcountryId, dockdefinition.targetbankcountryId) &&
+        Objects.equals(this.basetypeText, dockdefinition.basetypeText) &&
+        Objects.equals(this.percentofname, dockdefinition.percentofname) &&
+        Objects.equals(this.percentoflabel, dockdefinition.percentoflabel) &&
+        Objects.equals(this.employeename, dockdefinition.employeename) &&
+        Objects.equals(this.busprojectId, dockdefinition.busprojectId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, employeeID, dockTypeID, description, validFromDATE, validToDATE, totalDock, dockCount, baseType, periodicity, internal, debtCorrect, ofMinimum, partial, priority, printGroup, destination, sourceID, varSymbol, specSymbol, constSymbolID, required, isPercent, percentOfCode, createdByID, correctedByID, cLSIDForPercent, dueDateNrDays, divisionID, busOrderID, busTransactionID, flag, perPersonalNumber, sWIFTCode, execAuthority, execRefNumber, execRecipient, perNumPersonalNumber, useExpressionForVS, useExpressionForSS, expressionForVS, expressionForSS, agreementDock, dockFromAgreements, targetBankCountryID, baseTypeText, percentOfName, percentOfLabel, employeeName, busProjectID);
+    return Objects.hash(displayname, id, classid, objversion, employeeId, docktypeId, description, validfromdate, validtodate, totaldock, dockcount, basetype, periodicity, internal, debtcorrect, ofminimum, partial, priority, printgroup, destination, sourceId, varsymbol, specsymbol, constsymbolId, required, ispercent, percentofcode, createdbyId, correctedbyId, clsidforpercent, duedatenrdays, divisionId, busorderId, bustransactionId, flag, perPersonalnumber, swiftcode, execauthority, execrefnumber, execrecipient, perNumpersonalnumber, useexpressionforvs, useexpressionforss, expressionforvs, expressionforss, agreementdock, dockfromagreements, targetbankcountryId, basetypeText, percentofname, percentoflabel, employeename, busprojectId);
   }
 
   @Override
@@ -1153,59 +1225,59 @@ public class Dockdefinition   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Dockdefinition {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    employeeID: ").append(toIndentedString(employeeID)).append("\n");
-    sb.append("    dockTypeID: ").append(toIndentedString(dockTypeID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    employeeId: ").append(toIndentedString(employeeId)).append("\n");
+    sb.append("    docktypeId: ").append(toIndentedString(docktypeId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    validFromDATE: ").append(toIndentedString(validFromDATE)).append("\n");
-    sb.append("    validToDATE: ").append(toIndentedString(validToDATE)).append("\n");
-    sb.append("    totalDock: ").append(toIndentedString(totalDock)).append("\n");
-    sb.append("    dockCount: ").append(toIndentedString(dockCount)).append("\n");
-    sb.append("    baseType: ").append(toIndentedString(baseType)).append("\n");
+    sb.append("    validfromdate: ").append(toIndentedString(validfromdate)).append("\n");
+    sb.append("    validtodate: ").append(toIndentedString(validtodate)).append("\n");
+    sb.append("    totaldock: ").append(toIndentedString(totaldock)).append("\n");
+    sb.append("    dockcount: ").append(toIndentedString(dockcount)).append("\n");
+    sb.append("    basetype: ").append(toIndentedString(basetype)).append("\n");
     sb.append("    periodicity: ").append(toIndentedString(periodicity)).append("\n");
     sb.append("    internal: ").append(toIndentedString(internal)).append("\n");
-    sb.append("    debtCorrect: ").append(toIndentedString(debtCorrect)).append("\n");
-    sb.append("    ofMinimum: ").append(toIndentedString(ofMinimum)).append("\n");
+    sb.append("    debtcorrect: ").append(toIndentedString(debtcorrect)).append("\n");
+    sb.append("    ofminimum: ").append(toIndentedString(ofminimum)).append("\n");
     sb.append("    partial: ").append(toIndentedString(partial)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
-    sb.append("    printGroup: ").append(toIndentedString(printGroup)).append("\n");
+    sb.append("    printgroup: ").append(toIndentedString(printgroup)).append("\n");
     sb.append("    destination: ").append(toIndentedString(destination)).append("\n");
-    sb.append("    sourceID: ").append(toIndentedString(sourceID)).append("\n");
-    sb.append("    varSymbol: ").append(toIndentedString(varSymbol)).append("\n");
-    sb.append("    specSymbol: ").append(toIndentedString(specSymbol)).append("\n");
-    sb.append("    constSymbolID: ").append(toIndentedString(constSymbolID)).append("\n");
+    sb.append("    sourceId: ").append(toIndentedString(sourceId)).append("\n");
+    sb.append("    varsymbol: ").append(toIndentedString(varsymbol)).append("\n");
+    sb.append("    specsymbol: ").append(toIndentedString(specsymbol)).append("\n");
+    sb.append("    constsymbolId: ").append(toIndentedString(constsymbolId)).append("\n");
     sb.append("    required: ").append(toIndentedString(required)).append("\n");
-    sb.append("    isPercent: ").append(toIndentedString(isPercent)).append("\n");
-    sb.append("    percentOfCode: ").append(toIndentedString(percentOfCode)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    cLSIDForPercent: ").append(toIndentedString(cLSIDForPercent)).append("\n");
-    sb.append("    dueDateNrDays: ").append(toIndentedString(dueDateNrDays)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
+    sb.append("    ispercent: ").append(toIndentedString(ispercent)).append("\n");
+    sb.append("    percentofcode: ").append(toIndentedString(percentofcode)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    clsidforpercent: ").append(toIndentedString(clsidforpercent)).append("\n");
+    sb.append("    duedatenrdays: ").append(toIndentedString(duedatenrdays)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
     sb.append("    flag: ").append(toIndentedString(flag)).append("\n");
-    sb.append("    perPersonalNumber: ").append(toIndentedString(perPersonalNumber)).append("\n");
-    sb.append("    sWIFTCode: ").append(toIndentedString(sWIFTCode)).append("\n");
-    sb.append("    execAuthority: ").append(toIndentedString(execAuthority)).append("\n");
-    sb.append("    execRefNumber: ").append(toIndentedString(execRefNumber)).append("\n");
-    sb.append("    execRecipient: ").append(toIndentedString(execRecipient)).append("\n");
-    sb.append("    perNumPersonalNumber: ").append(toIndentedString(perNumPersonalNumber)).append("\n");
-    sb.append("    useExpressionForVS: ").append(toIndentedString(useExpressionForVS)).append("\n");
-    sb.append("    useExpressionForSS: ").append(toIndentedString(useExpressionForSS)).append("\n");
-    sb.append("    expressionForVS: ").append(toIndentedString(expressionForVS)).append("\n");
-    sb.append("    expressionForSS: ").append(toIndentedString(expressionForSS)).append("\n");
-    sb.append("    agreementDock: ").append(toIndentedString(agreementDock)).append("\n");
-    sb.append("    dockFromAgreements: ").append(toIndentedString(dockFromAgreements)).append("\n");
-    sb.append("    targetBankCountryID: ").append(toIndentedString(targetBankCountryID)).append("\n");
-    sb.append("    baseTypeText: ").append(toIndentedString(baseTypeText)).append("\n");
-    sb.append("    percentOfName: ").append(toIndentedString(percentOfName)).append("\n");
-    sb.append("    percentOfLabel: ").append(toIndentedString(percentOfLabel)).append("\n");
-    sb.append("    employeeName: ").append(toIndentedString(employeeName)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
+    sb.append("    perPersonalnumber: ").append(toIndentedString(perPersonalnumber)).append("\n");
+    sb.append("    swiftcode: ").append(toIndentedString(swiftcode)).append("\n");
+    sb.append("    execauthority: ").append(toIndentedString(execauthority)).append("\n");
+    sb.append("    execrefnumber: ").append(toIndentedString(execrefnumber)).append("\n");
+    sb.append("    execrecipient: ").append(toIndentedString(execrecipient)).append("\n");
+    sb.append("    perNumpersonalnumber: ").append(toIndentedString(perNumpersonalnumber)).append("\n");
+    sb.append("    useexpressionforvs: ").append(toIndentedString(useexpressionforvs)).append("\n");
+    sb.append("    useexpressionforss: ").append(toIndentedString(useexpressionforss)).append("\n");
+    sb.append("    expressionforvs: ").append(toIndentedString(expressionforvs)).append("\n");
+    sb.append("    expressionforss: ").append(toIndentedString(expressionforss)).append("\n");
+    sb.append("    agreementdock: ").append(toIndentedString(agreementdock)).append("\n");
+    sb.append("    dockfromagreements: ").append(toIndentedString(dockfromagreements)).append("\n");
+    sb.append("    targetbankcountryId: ").append(toIndentedString(targetbankcountryId)).append("\n");
+    sb.append("    basetypeText: ").append(toIndentedString(basetypeText)).append("\n");
+    sb.append("    percentofname: ").append(toIndentedString(percentofname)).append("\n");
+    sb.append("    percentoflabel: ").append(toIndentedString(percentoflabel)).append("\n");
+    sb.append("    employeename: ").append(toIndentedString(employeename)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

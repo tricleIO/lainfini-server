@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,162 +37,207 @@ import java.util.Objects;
 /**
  * Crmcampaignaudience
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Crmcampaignaudience   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("FirmOffice_ID")
-  private String firmOfficeID = null;
+  @SerializedName("firmoffice_id")
+  private String firmofficeId = null;
 
-  @SerializedName("Person_ID")
-  private String personID = null;
+  @SerializedName("person_id")
+  private String personId = null;
 
-  @SerializedName("Email")
+  @SerializedName("email")
   private String email = null;
 
-  @SerializedName("TargetAddressType")
-  private Integer targetAddressType = null;
+  @SerializedName("targetaddresstype")
+  private Integer targetaddresstype = null;
 
-  @SerializedName("PersonSpecification")
-  private String personSpecification = null;
+  @SerializedName("personspecification")
+  private String personspecification = null;
 
-  @SerializedName("AudienceState")
-  private Integer audienceState = null;
+  @SerializedName("audiencestate")
+  private Integer audiencestate = null;
 
-  @SerializedName("Address_ID")
-  private String addressID = null;
+  @SerializedName("address_id")
+  private String addressId = null;
 
-  @SerializedName("ContactTime$DATE")
-  private DateTime contactTimeDATE = null;
+  @SerializedName("contacttime$date")
+  private DateTime contacttimedate = null;
 
-  @SerializedName("CampaignVariableInstances")
-  private List<Crmcampaignvariableinstance> campaignVariableInstances = new ArrayList<Crmcampaignvariableinstance>();
+  @SerializedName("campaignvariableinstances")
+  private List<Crmcampaignvariableinstance> campaignvariableinstances = new ArrayList<Crmcampaignvariableinstance>();
 
-  @SerializedName("CampaignFeedBack_ID")
-  private String campaignFeedBackID = null;
+  @SerializedName("campaignfeedback_id")
+  private String campaignfeedbackId = null;
 
-  @SerializedName("Document_ID")
-  private String documentID = null;
+  @SerializedName("document_id")
+  private String documentId = null;
 
-  @SerializedName("DocumentType")
-  private String documentType = null;
+  @SerializedName("documenttype")
+  private String documenttype = null;
 
-  @SerializedName("EmailSentSendStateStr")
-  private String emailSentSendStateStr = null;
+  @SerializedName("emailsentsendstatestr")
+  private String emailsentsendstatestr = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Kampaň [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Kampaň [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Crmcampaignaudience firmID(String firmID) {
-    this.firmID = firmID;
+  public Crmcampaignaudience displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Crmcampaignaudience firmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public Crmcampaignaudience id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Provozovna; ID objektu Provozovna [persistentní položka]
-   * @return firmOfficeID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna; ID objektu Provozovna [persistentní položka]")
-  public String getFirmOfficeID() {
-    return firmOfficeID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setFirmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Crmcampaignaudience personID(String personID) {
-    this.personID = personID;
+  public Crmcampaignaudience classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Osoba; ID objektu Osoba [persistentní položka]
-   * @return personID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Osoba; ID objektu Osoba [persistentní položka]")
-  public String getPersonID() {
-    return personID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPersonID(String personID) {
-    this.personID = personID;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Crmcampaignaudience objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Crmcampaignaudience parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu kampaň [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu kampaň [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Crmcampaignaudience firmId(String firmId) {
+    this.firmId = firmId;
+    return this;
+  }
+
+   /**
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
+  **/
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
+  }
+
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
+  }
+
+  public Crmcampaignaudience firmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
+    return this;
+  }
+
+   /**
+   * provozovna; id objektu provozovna [persistentní položka]
+   * @return firmofficeId
+  **/
+  @ApiModelProperty(example = "null", value = "provozovna; id objektu provozovna [persistentní položka]")
+  public String getFirmofficeId() {
+    return firmofficeId;
+  }
+
+  public void setFirmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
+  }
+
+  public Crmcampaignaudience personId(String personId) {
+    this.personId = personId;
+    return this;
+  }
+
+   /**
+   * osoba; id objektu osoba [persistentní položka]
+   * @return personId
+  **/
+  @ApiModelProperty(example = "null", value = "osoba; id objektu osoba [persistentní položka]")
+  public String getPersonId() {
+    return personId;
+  }
+
+  public void setPersonId(String personId) {
+    this.personId = personId;
   }
 
   public Crmcampaignaudience email(String email) {
@@ -201,10 +246,10 @@ public class Crmcampaignaudience   {
   }
 
    /**
-   * E-mail [persistentní položka]
+   * e-mail [persistentní položka]
    * @return email
   **/
-  @ApiModelProperty(example = "null", value = "E-mail [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "e-mail [persistentní položka]")
   public String getEmail() {
     return email;
   }
@@ -213,189 +258,189 @@ public class Crmcampaignaudience   {
     this.email = email;
   }
 
-  public Crmcampaignaudience targetAddressType(Integer targetAddressType) {
-    this.targetAddressType = targetAddressType;
+  public Crmcampaignaudience targetaddresstype(Integer targetaddresstype) {
+    this.targetaddresstype = targetaddresstype;
     return this;
   }
 
    /**
-   * Typ adresy [persistentní položka]
-   * @return targetAddressType
+   * typ adresy [persistentní položka]
+   * @return targetaddresstype
   **/
-  @ApiModelProperty(example = "null", value = "Typ adresy [persistentní položka]")
-  public Integer getTargetAddressType() {
-    return targetAddressType;
+  @ApiModelProperty(example = "null", value = "typ adresy [persistentní položka]")
+  public Integer getTargetaddresstype() {
+    return targetaddresstype;
   }
 
-  public void setTargetAddressType(Integer targetAddressType) {
-    this.targetAddressType = targetAddressType;
+  public void setTargetaddresstype(Integer targetaddresstype) {
+    this.targetaddresstype = targetaddresstype;
   }
 
-  public Crmcampaignaudience personSpecification(String personSpecification) {
-    this.personSpecification = personSpecification;
+  public Crmcampaignaudience personspecification(String personspecification) {
+    this.personspecification = personspecification;
     return this;
   }
 
    /**
-   * Specifikace osoby [persistentní položka]
-   * @return personSpecification
+   * specifikace osoby [persistentní položka]
+   * @return personspecification
   **/
-  @ApiModelProperty(example = "null", value = "Specifikace osoby [persistentní položka]")
-  public String getPersonSpecification() {
-    return personSpecification;
+  @ApiModelProperty(example = "null", value = "specifikace osoby [persistentní položka]")
+  public String getPersonspecification() {
+    return personspecification;
   }
 
-  public void setPersonSpecification(String personSpecification) {
-    this.personSpecification = personSpecification;
+  public void setPersonspecification(String personspecification) {
+    this.personspecification = personspecification;
   }
 
-  public Crmcampaignaudience audienceState(Integer audienceState) {
-    this.audienceState = audienceState;
+  public Crmcampaignaudience audiencestate(Integer audiencestate) {
+    this.audiencestate = audiencestate;
     return this;
   }
 
    /**
-   * Stav [persistentní položka]
-   * @return audienceState
+   * stav [persistentní položka]
+   * @return audiencestate
   **/
-  @ApiModelProperty(example = "null", value = "Stav [persistentní položka]")
-  public Integer getAudienceState() {
-    return audienceState;
+  @ApiModelProperty(example = "null", value = "stav [persistentní položka]")
+  public Integer getAudiencestate() {
+    return audiencestate;
   }
 
-  public void setAudienceState(Integer audienceState) {
-    this.audienceState = audienceState;
+  public void setAudiencestate(Integer audiencestate) {
+    this.audiencestate = audiencestate;
   }
 
-  public Crmcampaignaudience addressID(String addressID) {
-    this.addressID = addressID;
+  public Crmcampaignaudience addressId(String addressId) {
+    this.addressId = addressId;
     return this;
   }
 
    /**
-   * Adresa; ID objektu Adresa
-   * @return addressID
+   * adresa; id objektu adresa
+   * @return addressId
   **/
-  @ApiModelProperty(example = "null", value = "Adresa; ID objektu Adresa")
-  public String getAddressID() {
-    return addressID;
+  @ApiModelProperty(example = "null", value = "adresa; id objektu adresa")
+  public String getAddressId() {
+    return addressId;
   }
 
-  public void setAddressID(String addressID) {
-    this.addressID = addressID;
+  public void setAddressId(String addressId) {
+    this.addressId = addressId;
   }
 
-  public Crmcampaignaudience contactTimeDATE(DateTime contactTimeDATE) {
-    this.contactTimeDATE = contactTimeDATE;
+  public Crmcampaignaudience contacttimedate(DateTime contacttimedate) {
+    this.contacttimedate = contacttimedate;
     return this;
   }
 
    /**
-   * Termín kontaktu [persistentní položka]
-   * @return contactTimeDATE
+   * termín kontaktu [persistentní položka]
+   * @return contacttimedate
   **/
-  @ApiModelProperty(example = "null", value = "Termín kontaktu [persistentní položka]")
-  public DateTime getContactTimeDATE() {
-    return contactTimeDATE;
+  @ApiModelProperty(example = "null", value = "termín kontaktu [persistentní položka]")
+  public DateTime getContacttimedate() {
+    return contacttimedate;
   }
 
-  public void setContactTimeDATE(DateTime contactTimeDATE) {
-    this.contactTimeDATE = contactTimeDATE;
+  public void setContacttimedate(DateTime contacttimedate) {
+    this.contacttimedate = contacttimedate;
   }
 
-  public Crmcampaignaudience campaignVariableInstances(List<Crmcampaignvariableinstance> campaignVariableInstances) {
-    this.campaignVariableInstances = campaignVariableInstances;
+  public Crmcampaignaudience campaignvariableinstances(List<Crmcampaignvariableinstance> campaignvariableinstances) {
+    this.campaignvariableinstances = campaignvariableinstances;
     return this;
   }
 
-  public Crmcampaignaudience addCampaignVariableInstancesItem(Crmcampaignvariableinstance campaignVariableInstancesItem) {
-    this.campaignVariableInstances.add(campaignVariableInstancesItem);
-    return this;
-  }
-
-   /**
-   * Hodnoty proměnných; kolekce BO Hodnota proměnné kampaně [nepersistentní položka]
-   * @return campaignVariableInstances
-  **/
-  @ApiModelProperty(example = "null", value = "Hodnoty proměnných; kolekce BO Hodnota proměnné kampaně [nepersistentní položka]")
-  public List<Crmcampaignvariableinstance> getCampaignVariableInstances() {
-    return campaignVariableInstances;
-  }
-
-  public void setCampaignVariableInstances(List<Crmcampaignvariableinstance> campaignVariableInstances) {
-    this.campaignVariableInstances = campaignVariableInstances;
-  }
-
-  public Crmcampaignaudience campaignFeedBackID(String campaignFeedBackID) {
-    this.campaignFeedBackID = campaignFeedBackID;
+  public Crmcampaignaudience addCampaignvariableinstancesItem(Crmcampaignvariableinstance campaignvariableinstancesItem) {
+    this.campaignvariableinstances.add(campaignvariableinstancesItem);
     return this;
   }
 
    /**
-   * Zpětná vazba; ID objektu Zpětná vazba kampaně [persistentní položka]
-   * @return campaignFeedBackID
+   * hodnoty proměnných; kolekce bo hodnota proměnné kampaně [nepersistentní položka]
+   * @return campaignvariableinstances
   **/
-  @ApiModelProperty(example = "null", value = "Zpětná vazba; ID objektu Zpětná vazba kampaně [persistentní položka]")
-  public String getCampaignFeedBackID() {
-    return campaignFeedBackID;
+  @ApiModelProperty(example = "null", value = "hodnoty proměnných; kolekce bo hodnota proměnné kampaně [nepersistentní položka]")
+  public List<Crmcampaignvariableinstance> getCampaignvariableinstances() {
+    return campaignvariableinstances;
   }
 
-  public void setCampaignFeedBackID(String campaignFeedBackID) {
-    this.campaignFeedBackID = campaignFeedBackID;
+  public void setCampaignvariableinstances(List<Crmcampaignvariableinstance> campaignvariableinstances) {
+    this.campaignvariableinstances = campaignvariableinstances;
   }
 
-  public Crmcampaignaudience documentID(String documentID) {
-    this.documentID = documentID;
+  public Crmcampaignaudience campaignfeedbackId(String campaignfeedbackId) {
+    this.campaignfeedbackId = campaignfeedbackId;
     return this;
   }
 
    /**
-   * Založený doklad; ID objektu Dokument [persistentní položka]
-   * @return documentID
+   * zpětná vazba; id objektu zpětná vazba kampaně [persistentní položka]
+   * @return campaignfeedbackId
   **/
-  @ApiModelProperty(example = "null", value = "Založený doklad; ID objektu Dokument [persistentní položka]")
-  public String getDocumentID() {
-    return documentID;
+  @ApiModelProperty(example = "null", value = "zpětná vazba; id objektu zpětná vazba kampaně [persistentní položka]")
+  public String getCampaignfeedbackId() {
+    return campaignfeedbackId;
   }
 
-  public void setDocumentID(String documentID) {
-    this.documentID = documentID;
+  public void setCampaignfeedbackId(String campaignfeedbackId) {
+    this.campaignfeedbackId = campaignfeedbackId;
   }
 
-  public Crmcampaignaudience documentType(String documentType) {
-    this.documentType = documentType;
+  public Crmcampaignaudience documentId(String documentId) {
+    this.documentId = documentId;
     return this;
   }
 
    /**
-   * Typ založeného dokladu [persistentní položka]
-   * @return documentType
+   * založený doklad; id objektu dokument [persistentní položka]
+   * @return documentId
   **/
-  @ApiModelProperty(example = "null", value = "Typ založeného dokladu [persistentní položka]")
-  public String getDocumentType() {
-    return documentType;
+  @ApiModelProperty(example = "null", value = "založený doklad; id objektu dokument [persistentní položka]")
+  public String getDocumentId() {
+    return documentId;
   }
 
-  public void setDocumentType(String documentType) {
-    this.documentType = documentType;
+  public void setDocumentId(String documentId) {
+    this.documentId = documentId;
   }
 
-  public Crmcampaignaudience emailSentSendStateStr(String emailSentSendStateStr) {
-    this.emailSentSendStateStr = emailSentSendStateStr;
+  public Crmcampaignaudience documenttype(String documenttype) {
+    this.documenttype = documenttype;
     return this;
   }
 
    /**
-   * Stav odeslané pošty
-   * @return emailSentSendStateStr
+   * typ založeného dokladu [persistentní položka]
+   * @return documenttype
   **/
-  @ApiModelProperty(example = "null", value = "Stav odeslané pošty")
-  public String getEmailSentSendStateStr() {
-    return emailSentSendStateStr;
+  @ApiModelProperty(example = "null", value = "typ založeného dokladu [persistentní položka]")
+  public String getDocumenttype() {
+    return documenttype;
   }
 
-  public void setEmailSentSendStateStr(String emailSentSendStateStr) {
-    this.emailSentSendStateStr = emailSentSendStateStr;
+  public void setDocumenttype(String documenttype) {
+    this.documenttype = documenttype;
+  }
+
+  public Crmcampaignaudience emailsentsendstatestr(String emailsentsendstatestr) {
+    this.emailsentsendstatestr = emailsentsendstatestr;
+    return this;
+  }
+
+   /**
+   * stav odeslané pošty
+   * @return emailsentsendstatestr
+  **/
+  @ApiModelProperty(example = "null", value = "stav odeslané pošty")
+  public String getEmailsentsendstatestr() {
+    return emailsentsendstatestr;
+  }
+
+  public void setEmailsentsendstatestr(String emailsentsendstatestr) {
+    this.emailsentsendstatestr = emailsentsendstatestr;
   }
 
 
@@ -408,30 +453,30 @@ public class Crmcampaignaudience   {
       return false;
     }
     Crmcampaignaudience crmcampaignaudience = (Crmcampaignaudience) o;
-    return Objects.equals(this.displayName, crmcampaignaudience.displayName) &&
-        Objects.equals(this.ID, crmcampaignaudience.ID) &&
-        Objects.equals(this.classID, crmcampaignaudience.classID) &&
-        Objects.equals(this.objVersion, crmcampaignaudience.objVersion) &&
-        Objects.equals(this.parentID, crmcampaignaudience.parentID) &&
-        Objects.equals(this.firmID, crmcampaignaudience.firmID) &&
-        Objects.equals(this.firmOfficeID, crmcampaignaudience.firmOfficeID) &&
-        Objects.equals(this.personID, crmcampaignaudience.personID) &&
+    return Objects.equals(this.displayname, crmcampaignaudience.displayname) &&
+        Objects.equals(this.id, crmcampaignaudience.id) &&
+        Objects.equals(this.classid, crmcampaignaudience.classid) &&
+        Objects.equals(this.objversion, crmcampaignaudience.objversion) &&
+        Objects.equals(this.parentId, crmcampaignaudience.parentId) &&
+        Objects.equals(this.firmId, crmcampaignaudience.firmId) &&
+        Objects.equals(this.firmofficeId, crmcampaignaudience.firmofficeId) &&
+        Objects.equals(this.personId, crmcampaignaudience.personId) &&
         Objects.equals(this.email, crmcampaignaudience.email) &&
-        Objects.equals(this.targetAddressType, crmcampaignaudience.targetAddressType) &&
-        Objects.equals(this.personSpecification, crmcampaignaudience.personSpecification) &&
-        Objects.equals(this.audienceState, crmcampaignaudience.audienceState) &&
-        Objects.equals(this.addressID, crmcampaignaudience.addressID) &&
-        Objects.equals(this.contactTimeDATE, crmcampaignaudience.contactTimeDATE) &&
-        Objects.equals(this.campaignVariableInstances, crmcampaignaudience.campaignVariableInstances) &&
-        Objects.equals(this.campaignFeedBackID, crmcampaignaudience.campaignFeedBackID) &&
-        Objects.equals(this.documentID, crmcampaignaudience.documentID) &&
-        Objects.equals(this.documentType, crmcampaignaudience.documentType) &&
-        Objects.equals(this.emailSentSendStateStr, crmcampaignaudience.emailSentSendStateStr);
+        Objects.equals(this.targetaddresstype, crmcampaignaudience.targetaddresstype) &&
+        Objects.equals(this.personspecification, crmcampaignaudience.personspecification) &&
+        Objects.equals(this.audiencestate, crmcampaignaudience.audiencestate) &&
+        Objects.equals(this.addressId, crmcampaignaudience.addressId) &&
+        Objects.equals(this.contacttimedate, crmcampaignaudience.contacttimedate) &&
+        Objects.equals(this.campaignvariableinstances, crmcampaignaudience.campaignvariableinstances) &&
+        Objects.equals(this.campaignfeedbackId, crmcampaignaudience.campaignfeedbackId) &&
+        Objects.equals(this.documentId, crmcampaignaudience.documentId) &&
+        Objects.equals(this.documenttype, crmcampaignaudience.documenttype) &&
+        Objects.equals(this.emailsentsendstatestr, crmcampaignaudience.emailsentsendstatestr);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, firmID, firmOfficeID, personID, email, targetAddressType, personSpecification, audienceState, addressID, contactTimeDATE, campaignVariableInstances, campaignFeedBackID, documentID, documentType, emailSentSendStateStr);
+    return Objects.hash(displayname, id, classid, objversion, parentId, firmId, firmofficeId, personId, email, targetaddresstype, personspecification, audiencestate, addressId, contacttimedate, campaignvariableinstances, campaignfeedbackId, documentId, documenttype, emailsentsendstatestr);
   }
 
   @Override
@@ -439,25 +484,25 @@ public class Crmcampaignaudience   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Crmcampaignaudience {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    firmOfficeID: ").append(toIndentedString(firmOfficeID)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    firmofficeId: ").append(toIndentedString(firmofficeId)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
-    sb.append("    targetAddressType: ").append(toIndentedString(targetAddressType)).append("\n");
-    sb.append("    personSpecification: ").append(toIndentedString(personSpecification)).append("\n");
-    sb.append("    audienceState: ").append(toIndentedString(audienceState)).append("\n");
-    sb.append("    addressID: ").append(toIndentedString(addressID)).append("\n");
-    sb.append("    contactTimeDATE: ").append(toIndentedString(contactTimeDATE)).append("\n");
-    sb.append("    campaignVariableInstances: ").append(toIndentedString(campaignVariableInstances)).append("\n");
-    sb.append("    campaignFeedBackID: ").append(toIndentedString(campaignFeedBackID)).append("\n");
-    sb.append("    documentID: ").append(toIndentedString(documentID)).append("\n");
-    sb.append("    documentType: ").append(toIndentedString(documentType)).append("\n");
-    sb.append("    emailSentSendStateStr: ").append(toIndentedString(emailSentSendStateStr)).append("\n");
+    sb.append("    targetaddresstype: ").append(toIndentedString(targetaddresstype)).append("\n");
+    sb.append("    personspecification: ").append(toIndentedString(personspecification)).append("\n");
+    sb.append("    audiencestate: ").append(toIndentedString(audiencestate)).append("\n");
+    sb.append("    addressId: ").append(toIndentedString(addressId)).append("\n");
+    sb.append("    contacttimedate: ").append(toIndentedString(contacttimedate)).append("\n");
+    sb.append("    campaignvariableinstances: ").append(toIndentedString(campaignvariableinstances)).append("\n");
+    sb.append("    campaignfeedbackId: ").append(toIndentedString(campaignfeedbackId)).append("\n");
+    sb.append("    documentId: ").append(toIndentedString(documentId)).append("\n");
+    sb.append("    documenttype: ").append(toIndentedString(documenttype)).append("\n");
+    sb.append("    emailsentsendstatestr: ").append(toIndentedString(emailsentsendstatestr)).append("\n");
     sb.append("}");
     return sb.toString();
   }

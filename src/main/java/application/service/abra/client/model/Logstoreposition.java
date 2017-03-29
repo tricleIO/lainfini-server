@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,144 +37,180 @@ import java.util.Objects;
 /**
  * Logstoreposition
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Logstoreposition   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Logstorecontent> rows = new ArrayList<Logstorecontent>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("BarCode")
-  private String barCode = null;
+  @SerializedName("barcode")
+  private String barcode = null;
 
-  @SerializedName("Width")
+  @SerializedName("width")
   private Double width = null;
 
-  @SerializedName("Height")
+  @SerializedName("height")
   private Double height = null;
 
-  @SerializedName("Depth")
+  @SerializedName("depth")
   private Double depth = null;
 
-  @SerializedName("MaxWeight")
-  private Double maxWeight = null;
+  @SerializedName("maxweight")
+  private Double maxweight = null;
 
-  @SerializedName("SizeUnit")
-  private Integer sizeUnit = null;
+  @SerializedName("sizeunit")
+  private Integer sizeunit = null;
 
-  @SerializedName("Frozen")
+  @SerializedName("frozen")
   private Boolean frozen = null;
 
-  @SerializedName("Accessibility")
+  @SerializedName("accessibility")
   private Integer accessibility = null;
 
-  @SerializedName("PositionType")
-  private Integer positionType = null;
+  @SerializedName("positiontype")
+  private Integer positiontype = null;
 
-  @SerializedName("UsedWeight")
-  private Double usedWeight = null;
+  @SerializedName("usedweight")
+  private Double usedweight = null;
 
-  @SerializedName("UsedSpace")
-  private Double usedSpace = null;
+  @SerializedName("usedspace")
+  private Double usedspace = null;
 
-  @SerializedName("BasicFreeWeight")
-  private Double basicFreeWeight = null;
+  @SerializedName("basicfreeweight")
+  private Double basicfreeweight = null;
 
-  @SerializedName("BasicFreeSpace")
-  private Double basicFreeSpace = null;
+  @SerializedName("basicfreespace")
+  private Double basicfreespace = null;
 
-  @SerializedName("ReservedForDocType")
-  private String reservedForDocType = null;
+  @SerializedName("reservedfordoctype")
+  private String reservedfordoctype = null;
 
-  @SerializedName("ReservedForDoc_ID")
-  private String reservedForDocID = null;
+  @SerializedName("reservedfordoc_id")
+  private String reservedfordocId = null;
 
-  @SerializedName("LogStorePositionDemands")
-  private List<Logstorepositiondemand> logStorePositionDemands = new ArrayList<Logstorepositiondemand>();
+  @SerializedName("logstorepositiondemands")
+  private List<Logstorepositiondemand> logstorepositiondemands = new ArrayList<Logstorepositiondemand>();
 
-  @SerializedName("MaxSpace")
-  private Double maxSpace = null;
+  @SerializedName("maxspace")
+  private Double maxspace = null;
 
-  @SerializedName("SizeUnitDesc")
-  private String sizeUnitDesc = null;
+  @SerializedName("sizeunitdesc")
+  private String sizeunitdesc = null;
 
-  @SerializedName("CapacityUnitDesc")
-  private String capacityUnitDesc = null;
+  @SerializedName("capacityunitdesc")
+  private String capacityunitdesc = null;
 
-  @SerializedName("PositionTypeDesc")
-  private String positionTypeDesc = null;
+  @SerializedName("positiontypedesc")
+  private String positiontypedesc = null;
 
-  @SerializedName("InventoryStatus")
-  private Integer inventoryStatus = null;
+  @SerializedName("inventorystatus")
+  private Integer inventorystatus = null;
 
-  @SerializedName("LastInventory$DATE")
-  private DateTime lastInventoryDATE = null;
+  @SerializedName("lastinventory$date")
+  private DateTime lastinventorydate = null;
 
-  @SerializedName("DateOfEndInventory$DATE")
-  private DateTime dateOfEndInventoryDATE = null;
+  @SerializedName("dateofendinventory$date")
+  private DateTime dateofendinventorydate = null;
 
-  @SerializedName("BasicUsedWeight")
-  private Double basicUsedWeight = null;
+  @SerializedName("basicusedweight")
+  private Double basicusedweight = null;
 
-  @SerializedName("BasicUsedSpace")
-  private Double basicUsedSpace = null;
+  @SerializedName("basicusedspace")
+  private Double basicusedspace = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Logstoreposition displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Logstoreposition id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Logstoreposition classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Logstoreposition objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Logstoreposition rows(List<Logstorecontent> rows) {
@@ -188,10 +224,10 @@ public class Logstoreposition   {
   }
 
    /**
-   * Řádky; kolekce BO Obsah skladových pozic [nepersistentní položka]
+   * Řádky; kolekce bo obsah skladových pozic [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Obsah skladových pozic [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo obsah skladových pozic [nepersistentní položka]")
   public List<Logstorecontent> getRows() {
     return rows;
   }
@@ -206,10 +242,10 @@ public class Logstoreposition   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -218,22 +254,22 @@ public class Logstoreposition   {
     this.hidden = hidden;
   }
 
-  public Logstoreposition storeID(String storeID) {
-    this.storeID = storeID;
+  public Logstoreposition storeId(String storeId) {
+    this.storeId = storeId;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
   public Logstoreposition code(String code) {
@@ -242,10 +278,10 @@ public class Logstoreposition   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -260,10 +296,10 @@ public class Logstoreposition   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -272,22 +308,22 @@ public class Logstoreposition   {
     this.name = name;
   }
 
-  public Logstoreposition barCode(String barCode) {
-    this.barCode = barCode;
+  public Logstoreposition barcode(String barcode) {
+    this.barcode = barcode;
     return this;
   }
 
    /**
    * Čárový kód [persistentní položka]
-   * @return barCode
+   * @return barcode
   **/
   @ApiModelProperty(example = "null", value = "Čárový kód [persistentní položka]")
-  public String getBarCode() {
-    return barCode;
+  public String getBarcode() {
+    return barcode;
   }
 
-  public void setBarCode(String barCode) {
-    this.barCode = barCode;
+  public void setBarcode(String barcode) {
+    this.barcode = barcode;
   }
 
   public Logstoreposition width(Double width) {
@@ -314,10 +350,10 @@ public class Logstoreposition   {
   }
 
    /**
-   * Výška [persistentní položka]
+   * výška [persistentní položka]
    * @return height
   **/
-  @ApiModelProperty(example = "null", value = "Výška [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "výška [persistentní položka]")
   public Double getHeight() {
     return height;
   }
@@ -332,10 +368,10 @@ public class Logstoreposition   {
   }
 
    /**
-   * Hloubka [persistentní položka]
+   * hloubka [persistentní položka]
    * @return depth
   **/
-  @ApiModelProperty(example = "null", value = "Hloubka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "hloubka [persistentní položka]")
   public Double getDepth() {
     return depth;
   }
@@ -344,40 +380,40 @@ public class Logstoreposition   {
     this.depth = depth;
   }
 
-  public Logstoreposition maxWeight(Double maxWeight) {
-    this.maxWeight = maxWeight;
+  public Logstoreposition maxweight(Double maxweight) {
+    this.maxweight = maxweight;
     return this;
   }
 
    /**
-   * Nosnost [persistentní položka]
-   * @return maxWeight
+   * nosnost [persistentní položka]
+   * @return maxweight
   **/
-  @ApiModelProperty(example = "null", value = "Nosnost [persistentní položka]")
-  public Double getMaxWeight() {
-    return maxWeight;
+  @ApiModelProperty(example = "null", value = "nosnost [persistentní položka]")
+  public Double getMaxweight() {
+    return maxweight;
   }
 
-  public void setMaxWeight(Double maxWeight) {
-    this.maxWeight = maxWeight;
+  public void setMaxweight(Double maxweight) {
+    this.maxweight = maxweight;
   }
 
-  public Logstoreposition sizeUnit(Integer sizeUnit) {
-    this.sizeUnit = sizeUnit;
+  public Logstoreposition sizeunit(Integer sizeunit) {
+    this.sizeunit = sizeunit;
     return this;
   }
 
    /**
-   * Jednotka rozměrů [persistentní položka]
-   * @return sizeUnit
+   * jednotka rozměrů [persistentní položka]
+   * @return sizeunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka rozměrů [persistentní položka]")
-  public Integer getSizeUnit() {
-    return sizeUnit;
+  @ApiModelProperty(example = "null", value = "jednotka rozměrů [persistentní položka]")
+  public Integer getSizeunit() {
+    return sizeunit;
   }
 
-  public void setSizeUnit(Integer sizeUnit) {
-    this.sizeUnit = sizeUnit;
+  public void setSizeunit(Integer sizeunit) {
+    this.sizeunit = sizeunit;
   }
 
   public Logstoreposition frozen(Boolean frozen) {
@@ -386,10 +422,10 @@ public class Logstoreposition   {
   }
 
    /**
-   * Mimo provoz [persistentní položka]
+   * mimo provoz [persistentní položka]
    * @return frozen
   **/
-  @ApiModelProperty(example = "null", value = "Mimo provoz [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "mimo provoz [persistentní položka]")
   public Boolean getFrozen() {
     return frozen;
   }
@@ -404,10 +440,10 @@ public class Logstoreposition   {
   }
 
    /**
-   * Dostupnost [persistentní položka]
+   * dostupnost [persistentní položka]
    * @return accessibility
   **/
-  @ApiModelProperty(example = "null", value = "Dostupnost [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "dostupnost [persistentní položka]")
   public Integer getAccessibility() {
     return accessibility;
   }
@@ -416,252 +452,315 @@ public class Logstoreposition   {
     this.accessibility = accessibility;
   }
 
-  public Logstoreposition positionType(Integer positionType) {
-    this.positionType = positionType;
+  public Logstoreposition positiontype(Integer positiontype) {
+    this.positiontype = positiontype;
     return this;
   }
 
    /**
-   * Typ pozice [persistentní položka]
-   * @return positionType
+   * typ pozice [persistentní položka]
+   * @return positiontype
   **/
-  @ApiModelProperty(example = "null", value = "Typ pozice [persistentní položka]")
-  public Integer getPositionType() {
-    return positionType;
+  @ApiModelProperty(example = "null", value = "typ pozice [persistentní položka]")
+  public Integer getPositiontype() {
+    return positiontype;
   }
 
-  public void setPositionType(Integer positionType) {
-    this.positionType = positionType;
+  public void setPositiontype(Integer positiontype) {
+    this.positiontype = positiontype;
   }
 
-   /**
-   * Hmotnost obsahu
-   * @return usedWeight
-  **/
-  @ApiModelProperty(example = "null", value = "Hmotnost obsahu")
-  public Double getUsedWeight() {
-    return usedWeight;
-  }
-
-   /**
-   * Objem obsahu
-   * @return usedSpace
-  **/
-  @ApiModelProperty(example = "null", value = "Objem obsahu")
-  public Double getUsedSpace() {
-    return usedSpace;
-  }
-
-   /**
-   * Volná nosnost [persistentní položka]
-   * @return basicFreeWeight
-  **/
-  @ApiModelProperty(example = "null", value = "Volná nosnost [persistentní položka]")
-  public Double getBasicFreeWeight() {
-    return basicFreeWeight;
-  }
-
-   /**
-   * Volný objem [persistentní položka]
-   * @return basicFreeSpace
-  **/
-  @ApiModelProperty(example = "null", value = "Volný objem [persistentní položka]")
-  public Double getBasicFreeSpace() {
-    return basicFreeSpace;
-  }
-
-  public Logstoreposition reservedForDocType(String reservedForDocType) {
-    this.reservedForDocType = reservedForDocType;
+  public Logstoreposition usedweight(Double usedweight) {
+    this.usedweight = usedweight;
     return this;
   }
 
    /**
-   * Typ vychystávaného dokladu [persistentní položka]
-   * @return reservedForDocType
+   * hmotnost obsahu
+   * @return usedweight
   **/
-  @ApiModelProperty(example = "null", value = "Typ vychystávaného dokladu [persistentní položka]")
-  public String getReservedForDocType() {
-    return reservedForDocType;
+  @ApiModelProperty(example = "null", value = "hmotnost obsahu")
+  public Double getUsedweight() {
+    return usedweight;
   }
 
-  public void setReservedForDocType(String reservedForDocType) {
-    this.reservedForDocType = reservedForDocType;
+  public void setUsedweight(Double usedweight) {
+    this.usedweight = usedweight;
   }
 
-  public Logstoreposition reservedForDocID(String reservedForDocID) {
-    this.reservedForDocID = reservedForDocID;
+  public Logstoreposition usedspace(Double usedspace) {
+    this.usedspace = usedspace;
     return this;
   }
 
    /**
-   * Vazba na vychystávaný doklad; ID objektu Dokument [persistentní položka]
-   * @return reservedForDocID
+   * objem obsahu
+   * @return usedspace
   **/
-  @ApiModelProperty(example = "null", value = "Vazba na vychystávaný doklad; ID objektu Dokument [persistentní položka]")
-  public String getReservedForDocID() {
-    return reservedForDocID;
+  @ApiModelProperty(example = "null", value = "objem obsahu")
+  public Double getUsedspace() {
+    return usedspace;
   }
 
-  public void setReservedForDocID(String reservedForDocID) {
-    this.reservedForDocID = reservedForDocID;
+  public void setUsedspace(Double usedspace) {
+    this.usedspace = usedspace;
   }
 
-  public Logstoreposition logStorePositionDemands(List<Logstorepositiondemand> logStorePositionDemands) {
-    this.logStorePositionDemands = logStorePositionDemands;
-    return this;
-  }
-
-  public Logstoreposition addLogStorePositionDemandsItem(Logstorepositiondemand logStorePositionDemandsItem) {
-    this.logStorePositionDemands.add(logStorePositionDemandsItem);
+  public Logstoreposition basicfreeweight(Double basicfreeweight) {
+    this.basicfreeweight = basicfreeweight;
     return this;
   }
 
    /**
-   * Přednostní naskladnění; kolekce BO Přednostní naskladnění [nepersistentní položka]
-   * @return logStorePositionDemands
+   * volná nosnost [persistentní položka]
+   * @return basicfreeweight
   **/
-  @ApiModelProperty(example = "null", value = "Přednostní naskladnění; kolekce BO Přednostní naskladnění [nepersistentní položka]")
-  public List<Logstorepositiondemand> getLogStorePositionDemands() {
-    return logStorePositionDemands;
+  @ApiModelProperty(example = "null", value = "volná nosnost [persistentní položka]")
+  public Double getBasicfreeweight() {
+    return basicfreeweight;
   }
 
-  public void setLogStorePositionDemands(List<Logstorepositiondemand> logStorePositionDemands) {
-    this.logStorePositionDemands = logStorePositionDemands;
+  public void setBasicfreeweight(Double basicfreeweight) {
+    this.basicfreeweight = basicfreeweight;
   }
 
-   /**
-   * Prostor
-   * @return maxSpace
-  **/
-  @ApiModelProperty(example = "null", value = "Prostor")
-  public Double getMaxSpace() {
-    return maxSpace;
-  }
-
-  public Logstoreposition sizeUnitDesc(String sizeUnitDesc) {
-    this.sizeUnitDesc = sizeUnitDesc;
+  public Logstoreposition basicfreespace(Double basicfreespace) {
+    this.basicfreespace = basicfreespace;
     return this;
   }
 
    /**
-   * Jednotka rozměrů - označení
-   * @return sizeUnitDesc
+   * volný objem [persistentní položka]
+   * @return basicfreespace
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka rozměrů - označení")
-  public String getSizeUnitDesc() {
-    return sizeUnitDesc;
+  @ApiModelProperty(example = "null", value = "volný objem [persistentní položka]")
+  public Double getBasicfreespace() {
+    return basicfreespace;
   }
 
-  public void setSizeUnitDesc(String sizeUnitDesc) {
-    this.sizeUnitDesc = sizeUnitDesc;
+  public void setBasicfreespace(Double basicfreespace) {
+    this.basicfreespace = basicfreespace;
   }
 
-  public Logstoreposition capacityUnitDesc(String capacityUnitDesc) {
-    this.capacityUnitDesc = capacityUnitDesc;
+  public Logstoreposition reservedfordoctype(String reservedfordoctype) {
+    this.reservedfordoctype = reservedfordoctype;
     return this;
   }
 
    /**
-   * Jednotka objemu - označení
-   * @return capacityUnitDesc
+   * typ vychystávaného dokladu [persistentní položka]
+   * @return reservedfordoctype
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka objemu - označení")
-  public String getCapacityUnitDesc() {
-    return capacityUnitDesc;
+  @ApiModelProperty(example = "null", value = "typ vychystávaného dokladu [persistentní položka]")
+  public String getReservedfordoctype() {
+    return reservedfordoctype;
   }
 
-  public void setCapacityUnitDesc(String capacityUnitDesc) {
-    this.capacityUnitDesc = capacityUnitDesc;
+  public void setReservedfordoctype(String reservedfordoctype) {
+    this.reservedfordoctype = reservedfordoctype;
   }
 
-  public Logstoreposition positionTypeDesc(String positionTypeDesc) {
-    this.positionTypeDesc = positionTypeDesc;
+  public Logstoreposition reservedfordocId(String reservedfordocId) {
+    this.reservedfordocId = reservedfordocId;
     return this;
   }
 
    /**
-   * Typ pozice - popis
-   * @return positionTypeDesc
+   * vazba na vychystávaný doklad; id objektu dokument [persistentní položka]
+   * @return reservedfordocId
   **/
-  @ApiModelProperty(example = "null", value = "Typ pozice - popis")
-  public String getPositionTypeDesc() {
-    return positionTypeDesc;
+  @ApiModelProperty(example = "null", value = "vazba na vychystávaný doklad; id objektu dokument [persistentní položka]")
+  public String getReservedfordocId() {
+    return reservedfordocId;
   }
 
-  public void setPositionTypeDesc(String positionTypeDesc) {
-    this.positionTypeDesc = positionTypeDesc;
+  public void setReservedfordocId(String reservedfordocId) {
+    this.reservedfordocId = reservedfordocId;
   }
 
-  public Logstoreposition inventoryStatus(Integer inventoryStatus) {
-    this.inventoryStatus = inventoryStatus;
+  public Logstoreposition logstorepositiondemands(List<Logstorepositiondemand> logstorepositiondemands) {
+    this.logstorepositiondemands = logstorepositiondemands;
+    return this;
+  }
+
+  public Logstoreposition addLogstorepositiondemandsItem(Logstorepositiondemand logstorepositiondemandsItem) {
+    this.logstorepositiondemands.add(logstorepositiondemandsItem);
     return this;
   }
 
    /**
-   * Blokace inventurou [persistentní položka]
-   * @return inventoryStatus
+   * přednostní naskladnění; kolekce bo přednostní naskladnění [nepersistentní položka]
+   * @return logstorepositiondemands
   **/
-  @ApiModelProperty(example = "null", value = "Blokace inventurou [persistentní položka]")
-  public Integer getInventoryStatus() {
-    return inventoryStatus;
+  @ApiModelProperty(example = "null", value = "přednostní naskladnění; kolekce bo přednostní naskladnění [nepersistentní položka]")
+  public List<Logstorepositiondemand> getLogstorepositiondemands() {
+    return logstorepositiondemands;
   }
 
-  public void setInventoryStatus(Integer inventoryStatus) {
-    this.inventoryStatus = inventoryStatus;
+  public void setLogstorepositiondemands(List<Logstorepositiondemand> logstorepositiondemands) {
+    this.logstorepositiondemands = logstorepositiondemands;
   }
 
-  public Logstoreposition lastInventoryDATE(DateTime lastInventoryDATE) {
-    this.lastInventoryDATE = lastInventoryDATE;
+  public Logstoreposition maxspace(Double maxspace) {
+    this.maxspace = maxspace;
     return this;
   }
 
    /**
-   * Poslední inventarizace [persistentní položka]
-   * @return lastInventoryDATE
+   * prostor
+   * @return maxspace
   **/
-  @ApiModelProperty(example = "null", value = "Poslední inventarizace [persistentní položka]")
-  public DateTime getLastInventoryDATE() {
-    return lastInventoryDATE;
+  @ApiModelProperty(example = "null", value = "prostor")
+  public Double getMaxspace() {
+    return maxspace;
   }
 
-  public void setLastInventoryDATE(DateTime lastInventoryDATE) {
-    this.lastInventoryDATE = lastInventoryDATE;
+  public void setMaxspace(Double maxspace) {
+    this.maxspace = maxspace;
   }
 
-  public Logstoreposition dateOfEndInventoryDATE(DateTime dateOfEndInventoryDATE) {
-    this.dateOfEndInventoryDATE = dateOfEndInventoryDATE;
+  public Logstoreposition sizeunitdesc(String sizeunitdesc) {
+    this.sizeunitdesc = sizeunitdesc;
     return this;
   }
 
    /**
-   * Konec inventury [persistentní položka]
-   * @return dateOfEndInventoryDATE
+   * jednotka rozměrů - označení
+   * @return sizeunitdesc
   **/
-  @ApiModelProperty(example = "null", value = "Konec inventury [persistentní položka]")
-  public DateTime getDateOfEndInventoryDATE() {
-    return dateOfEndInventoryDATE;
+  @ApiModelProperty(example = "null", value = "jednotka rozměrů - označení")
+  public String getSizeunitdesc() {
+    return sizeunitdesc;
   }
 
-  public void setDateOfEndInventoryDATE(DateTime dateOfEndInventoryDATE) {
-    this.dateOfEndInventoryDATE = dateOfEndInventoryDATE;
+  public void setSizeunitdesc(String sizeunitdesc) {
+    this.sizeunitdesc = sizeunitdesc;
   }
 
-   /**
-   * Použitá nosnost [persistentní položka]
-   * @return basicUsedWeight
-  **/
-  @ApiModelProperty(example = "null", value = "Použitá nosnost [persistentní položka]")
-  public Double getBasicUsedWeight() {
-    return basicUsedWeight;
+  public Logstoreposition capacityunitdesc(String capacityunitdesc) {
+    this.capacityunitdesc = capacityunitdesc;
+    return this;
   }
 
    /**
-   * Použitý objem [persistentní položka]
-   * @return basicUsedSpace
+   * jednotka objemu - označení
+   * @return capacityunitdesc
   **/
-  @ApiModelProperty(example = "null", value = "Použitý objem [persistentní položka]")
-  public Double getBasicUsedSpace() {
-    return basicUsedSpace;
+  @ApiModelProperty(example = "null", value = "jednotka objemu - označení")
+  public String getCapacityunitdesc() {
+    return capacityunitdesc;
+  }
+
+  public void setCapacityunitdesc(String capacityunitdesc) {
+    this.capacityunitdesc = capacityunitdesc;
+  }
+
+  public Logstoreposition positiontypedesc(String positiontypedesc) {
+    this.positiontypedesc = positiontypedesc;
+    return this;
+  }
+
+   /**
+   * typ pozice - popis
+   * @return positiontypedesc
+  **/
+  @ApiModelProperty(example = "null", value = "typ pozice - popis")
+  public String getPositiontypedesc() {
+    return positiontypedesc;
+  }
+
+  public void setPositiontypedesc(String positiontypedesc) {
+    this.positiontypedesc = positiontypedesc;
+  }
+
+  public Logstoreposition inventorystatus(Integer inventorystatus) {
+    this.inventorystatus = inventorystatus;
+    return this;
+  }
+
+   /**
+   * blokace inventurou [persistentní položka]
+   * @return inventorystatus
+  **/
+  @ApiModelProperty(example = "null", value = "blokace inventurou [persistentní položka]")
+  public Integer getInventorystatus() {
+    return inventorystatus;
+  }
+
+  public void setInventorystatus(Integer inventorystatus) {
+    this.inventorystatus = inventorystatus;
+  }
+
+  public Logstoreposition lastinventorydate(DateTime lastinventorydate) {
+    this.lastinventorydate = lastinventorydate;
+    return this;
+  }
+
+   /**
+   * poslední inventarizace [persistentní položka]
+   * @return lastinventorydate
+  **/
+  @ApiModelProperty(example = "null", value = "poslední inventarizace [persistentní položka]")
+  public DateTime getLastinventorydate() {
+    return lastinventorydate;
+  }
+
+  public void setLastinventorydate(DateTime lastinventorydate) {
+    this.lastinventorydate = lastinventorydate;
+  }
+
+  public Logstoreposition dateofendinventorydate(DateTime dateofendinventorydate) {
+    this.dateofendinventorydate = dateofendinventorydate;
+    return this;
+  }
+
+   /**
+   * konec inventury [persistentní položka]
+   * @return dateofendinventorydate
+  **/
+  @ApiModelProperty(example = "null", value = "konec inventury [persistentní položka]")
+  public DateTime getDateofendinventorydate() {
+    return dateofendinventorydate;
+  }
+
+  public void setDateofendinventorydate(DateTime dateofendinventorydate) {
+    this.dateofendinventorydate = dateofendinventorydate;
+  }
+
+  public Logstoreposition basicusedweight(Double basicusedweight) {
+    this.basicusedweight = basicusedweight;
+    return this;
+  }
+
+   /**
+   * použitá nosnost [persistentní položka]
+   * @return basicusedweight
+  **/
+  @ApiModelProperty(example = "null", value = "použitá nosnost [persistentní položka]")
+  public Double getBasicusedweight() {
+    return basicusedweight;
+  }
+
+  public void setBasicusedweight(Double basicusedweight) {
+    this.basicusedweight = basicusedweight;
+  }
+
+  public Logstoreposition basicusedspace(Double basicusedspace) {
+    this.basicusedspace = basicusedspace;
+    return this;
+  }
+
+   /**
+   * použitý objem [persistentní položka]
+   * @return basicusedspace
+  **/
+  @ApiModelProperty(example = "null", value = "použitý objem [persistentní položka]")
+  public Double getBasicusedspace() {
+    return basicusedspace;
+  }
+
+  public void setBasicusedspace(Double basicusedspace) {
+    this.basicusedspace = basicusedspace;
   }
 
 
@@ -674,45 +773,45 @@ public class Logstoreposition   {
       return false;
     }
     Logstoreposition logstoreposition = (Logstoreposition) o;
-    return Objects.equals(this.displayName, logstoreposition.displayName) &&
-        Objects.equals(this.ID, logstoreposition.ID) &&
-        Objects.equals(this.classID, logstoreposition.classID) &&
-        Objects.equals(this.objVersion, logstoreposition.objVersion) &&
+    return Objects.equals(this.displayname, logstoreposition.displayname) &&
+        Objects.equals(this.id, logstoreposition.id) &&
+        Objects.equals(this.classid, logstoreposition.classid) &&
+        Objects.equals(this.objversion, logstoreposition.objversion) &&
         Objects.equals(this.rows, logstoreposition.rows) &&
         Objects.equals(this.hidden, logstoreposition.hidden) &&
-        Objects.equals(this.storeID, logstoreposition.storeID) &&
+        Objects.equals(this.storeId, logstoreposition.storeId) &&
         Objects.equals(this.code, logstoreposition.code) &&
         Objects.equals(this.name, logstoreposition.name) &&
-        Objects.equals(this.barCode, logstoreposition.barCode) &&
+        Objects.equals(this.barcode, logstoreposition.barcode) &&
         Objects.equals(this.width, logstoreposition.width) &&
         Objects.equals(this.height, logstoreposition.height) &&
         Objects.equals(this.depth, logstoreposition.depth) &&
-        Objects.equals(this.maxWeight, logstoreposition.maxWeight) &&
-        Objects.equals(this.sizeUnit, logstoreposition.sizeUnit) &&
+        Objects.equals(this.maxweight, logstoreposition.maxweight) &&
+        Objects.equals(this.sizeunit, logstoreposition.sizeunit) &&
         Objects.equals(this.frozen, logstoreposition.frozen) &&
         Objects.equals(this.accessibility, logstoreposition.accessibility) &&
-        Objects.equals(this.positionType, logstoreposition.positionType) &&
-        Objects.equals(this.usedWeight, logstoreposition.usedWeight) &&
-        Objects.equals(this.usedSpace, logstoreposition.usedSpace) &&
-        Objects.equals(this.basicFreeWeight, logstoreposition.basicFreeWeight) &&
-        Objects.equals(this.basicFreeSpace, logstoreposition.basicFreeSpace) &&
-        Objects.equals(this.reservedForDocType, logstoreposition.reservedForDocType) &&
-        Objects.equals(this.reservedForDocID, logstoreposition.reservedForDocID) &&
-        Objects.equals(this.logStorePositionDemands, logstoreposition.logStorePositionDemands) &&
-        Objects.equals(this.maxSpace, logstoreposition.maxSpace) &&
-        Objects.equals(this.sizeUnitDesc, logstoreposition.sizeUnitDesc) &&
-        Objects.equals(this.capacityUnitDesc, logstoreposition.capacityUnitDesc) &&
-        Objects.equals(this.positionTypeDesc, logstoreposition.positionTypeDesc) &&
-        Objects.equals(this.inventoryStatus, logstoreposition.inventoryStatus) &&
-        Objects.equals(this.lastInventoryDATE, logstoreposition.lastInventoryDATE) &&
-        Objects.equals(this.dateOfEndInventoryDATE, logstoreposition.dateOfEndInventoryDATE) &&
-        Objects.equals(this.basicUsedWeight, logstoreposition.basicUsedWeight) &&
-        Objects.equals(this.basicUsedSpace, logstoreposition.basicUsedSpace);
+        Objects.equals(this.positiontype, logstoreposition.positiontype) &&
+        Objects.equals(this.usedweight, logstoreposition.usedweight) &&
+        Objects.equals(this.usedspace, logstoreposition.usedspace) &&
+        Objects.equals(this.basicfreeweight, logstoreposition.basicfreeweight) &&
+        Objects.equals(this.basicfreespace, logstoreposition.basicfreespace) &&
+        Objects.equals(this.reservedfordoctype, logstoreposition.reservedfordoctype) &&
+        Objects.equals(this.reservedfordocId, logstoreposition.reservedfordocId) &&
+        Objects.equals(this.logstorepositiondemands, logstoreposition.logstorepositiondemands) &&
+        Objects.equals(this.maxspace, logstoreposition.maxspace) &&
+        Objects.equals(this.sizeunitdesc, logstoreposition.sizeunitdesc) &&
+        Objects.equals(this.capacityunitdesc, logstoreposition.capacityunitdesc) &&
+        Objects.equals(this.positiontypedesc, logstoreposition.positiontypedesc) &&
+        Objects.equals(this.inventorystatus, logstoreposition.inventorystatus) &&
+        Objects.equals(this.lastinventorydate, logstoreposition.lastinventorydate) &&
+        Objects.equals(this.dateofendinventorydate, logstoreposition.dateofendinventorydate) &&
+        Objects.equals(this.basicusedweight, logstoreposition.basicusedweight) &&
+        Objects.equals(this.basicusedspace, logstoreposition.basicusedspace);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, storeID, code, name, barCode, width, height, depth, maxWeight, sizeUnit, frozen, accessibility, positionType, usedWeight, usedSpace, basicFreeWeight, basicFreeSpace, reservedForDocType, reservedForDocID, logStorePositionDemands, maxSpace, sizeUnitDesc, capacityUnitDesc, positionTypeDesc, inventoryStatus, lastInventoryDATE, dateOfEndInventoryDATE, basicUsedWeight, basicUsedSpace);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, storeId, code, name, barcode, width, height, depth, maxweight, sizeunit, frozen, accessibility, positiontype, usedweight, usedspace, basicfreeweight, basicfreespace, reservedfordoctype, reservedfordocId, logstorepositiondemands, maxspace, sizeunitdesc, capacityunitdesc, positiontypedesc, inventorystatus, lastinventorydate, dateofendinventorydate, basicusedweight, basicusedspace);
   }
 
   @Override
@@ -720,40 +819,40 @@ public class Logstoreposition   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Logstoreposition {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    barCode: ").append(toIndentedString(barCode)).append("\n");
+    sb.append("    barcode: ").append(toIndentedString(barcode)).append("\n");
     sb.append("    width: ").append(toIndentedString(width)).append("\n");
     sb.append("    height: ").append(toIndentedString(height)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
-    sb.append("    maxWeight: ").append(toIndentedString(maxWeight)).append("\n");
-    sb.append("    sizeUnit: ").append(toIndentedString(sizeUnit)).append("\n");
+    sb.append("    maxweight: ").append(toIndentedString(maxweight)).append("\n");
+    sb.append("    sizeunit: ").append(toIndentedString(sizeunit)).append("\n");
     sb.append("    frozen: ").append(toIndentedString(frozen)).append("\n");
     sb.append("    accessibility: ").append(toIndentedString(accessibility)).append("\n");
-    sb.append("    positionType: ").append(toIndentedString(positionType)).append("\n");
-    sb.append("    usedWeight: ").append(toIndentedString(usedWeight)).append("\n");
-    sb.append("    usedSpace: ").append(toIndentedString(usedSpace)).append("\n");
-    sb.append("    basicFreeWeight: ").append(toIndentedString(basicFreeWeight)).append("\n");
-    sb.append("    basicFreeSpace: ").append(toIndentedString(basicFreeSpace)).append("\n");
-    sb.append("    reservedForDocType: ").append(toIndentedString(reservedForDocType)).append("\n");
-    sb.append("    reservedForDocID: ").append(toIndentedString(reservedForDocID)).append("\n");
-    sb.append("    logStorePositionDemands: ").append(toIndentedString(logStorePositionDemands)).append("\n");
-    sb.append("    maxSpace: ").append(toIndentedString(maxSpace)).append("\n");
-    sb.append("    sizeUnitDesc: ").append(toIndentedString(sizeUnitDesc)).append("\n");
-    sb.append("    capacityUnitDesc: ").append(toIndentedString(capacityUnitDesc)).append("\n");
-    sb.append("    positionTypeDesc: ").append(toIndentedString(positionTypeDesc)).append("\n");
-    sb.append("    inventoryStatus: ").append(toIndentedString(inventoryStatus)).append("\n");
-    sb.append("    lastInventoryDATE: ").append(toIndentedString(lastInventoryDATE)).append("\n");
-    sb.append("    dateOfEndInventoryDATE: ").append(toIndentedString(dateOfEndInventoryDATE)).append("\n");
-    sb.append("    basicUsedWeight: ").append(toIndentedString(basicUsedWeight)).append("\n");
-    sb.append("    basicUsedSpace: ").append(toIndentedString(basicUsedSpace)).append("\n");
+    sb.append("    positiontype: ").append(toIndentedString(positiontype)).append("\n");
+    sb.append("    usedweight: ").append(toIndentedString(usedweight)).append("\n");
+    sb.append("    usedspace: ").append(toIndentedString(usedspace)).append("\n");
+    sb.append("    basicfreeweight: ").append(toIndentedString(basicfreeweight)).append("\n");
+    sb.append("    basicfreespace: ").append(toIndentedString(basicfreespace)).append("\n");
+    sb.append("    reservedfordoctype: ").append(toIndentedString(reservedfordoctype)).append("\n");
+    sb.append("    reservedfordocId: ").append(toIndentedString(reservedfordocId)).append("\n");
+    sb.append("    logstorepositiondemands: ").append(toIndentedString(logstorepositiondemands)).append("\n");
+    sb.append("    maxspace: ").append(toIndentedString(maxspace)).append("\n");
+    sb.append("    sizeunitdesc: ").append(toIndentedString(sizeunitdesc)).append("\n");
+    sb.append("    capacityunitdesc: ").append(toIndentedString(capacityunitdesc)).append("\n");
+    sb.append("    positiontypedesc: ").append(toIndentedString(positiontypedesc)).append("\n");
+    sb.append("    inventorystatus: ").append(toIndentedString(inventorystatus)).append("\n");
+    sb.append("    lastinventorydate: ").append(toIndentedString(lastinventorydate)).append("\n");
+    sb.append("    dateofendinventorydate: ").append(toIndentedString(dateofendinventorydate)).append("\n");
+    sb.append("    basicusedweight: ").append(toIndentedString(basicusedweight)).append("\n");
+    sb.append("    basicusedspace: ").append(toIndentedString(basicusedspace)).append("\n");
     sb.append("}");
     return sb.toString();
   }

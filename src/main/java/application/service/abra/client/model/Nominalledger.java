@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,201 +34,237 @@ import java.util.Objects;
 /**
  * Nominalledger
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Nominalledger   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Account_ID")
-  private String accountID = null;
+  @SerializedName("account_id")
+  private String accountId = null;
 
-  @SerializedName("CreditAmount")
-  private Double creditAmount = null;
+  @SerializedName("creditamount")
+  private Double creditamount = null;
 
-  @SerializedName("DebitAmount")
-  private Double debitAmount = null;
+  @SerializedName("debitamount")
+  private Double debitamount = null;
 
-  @SerializedName("FinalAmount")
-  private Double finalAmount = null;
+  @SerializedName("finalamount")
+  private Double finalamount = null;
 
-  @SerializedName("BeginningCreditAmount")
-  private Double beginningCreditAmount = null;
+  @SerializedName("beginningcreditamount")
+  private Double beginningcreditamount = null;
 
-  @SerializedName("BeginningDebitAmount")
-  private Double beginningDebitAmount = null;
+  @SerializedName("beginningdebitamount")
+  private Double beginningdebitamount = null;
 
-  @SerializedName("BeginAmount")
-  private Double beginAmount = null;
+  @SerializedName("beginamount")
+  private Double beginamount = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Nominalledger accountID(String accountID) {
-    this.accountID = accountID;
+  public Nominalledger displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Účet; ID objektu Účet účetního rozvrhu
-   * @return accountID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Účet; ID objektu Účet účetního rozvrhu")
-  public String getAccountID() {
-    return accountID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setAccountID(String accountID) {
-    this.accountID = accountID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Nominalledger creditAmount(Double creditAmount) {
-    this.creditAmount = creditAmount;
+  public Nominalledger id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Dal
-   * @return creditAmount
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Dal")
-  public Double getCreditAmount() {
-    return creditAmount;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setCreditAmount(Double creditAmount) {
-    this.creditAmount = creditAmount;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Nominalledger debitAmount(Double debitAmount) {
-    this.debitAmount = debitAmount;
+  public Nominalledger classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Má dáti
-   * @return debitAmount
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Má dáti")
-  public Double getDebitAmount() {
-    return debitAmount;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setDebitAmount(Double debitAmount) {
-    this.debitAmount = debitAmount;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Nominalledger finalAmount(Double finalAmount) {
-    this.finalAmount = finalAmount;
+  public Nominalledger objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Konečný stav
-   * @return finalAmount
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Konečný stav")
-  public Double getFinalAmount() {
-    return finalAmount;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setFinalAmount(Double finalAmount) {
-    this.finalAmount = finalAmount;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Nominalledger beginningCreditAmount(Double beginningCreditAmount) {
-    this.beginningCreditAmount = beginningCreditAmount;
+  public Nominalledger accountId(String accountId) {
+    this.accountId = accountId;
     return this;
   }
 
    /**
-   * Počátek Dal
-   * @return beginningCreditAmount
+   * Účet; id objektu Účet účetního rozvrhu
+   * @return accountId
   **/
-  @ApiModelProperty(example = "null", value = "Počátek Dal")
-  public Double getBeginningCreditAmount() {
-    return beginningCreditAmount;
+  @ApiModelProperty(example = "null", value = "Účet; id objektu Účet účetního rozvrhu")
+  public String getAccountId() {
+    return accountId;
   }
 
-  public void setBeginningCreditAmount(Double beginningCreditAmount) {
-    this.beginningCreditAmount = beginningCreditAmount;
+  public void setAccountId(String accountId) {
+    this.accountId = accountId;
   }
 
-  public Nominalledger beginningDebitAmount(Double beginningDebitAmount) {
-    this.beginningDebitAmount = beginningDebitAmount;
+  public Nominalledger creditamount(Double creditamount) {
+    this.creditamount = creditamount;
     return this;
   }
 
    /**
-   * Počátek Má dáti
-   * @return beginningDebitAmount
+   * dal
+   * @return creditamount
   **/
-  @ApiModelProperty(example = "null", value = "Počátek Má dáti")
-  public Double getBeginningDebitAmount() {
-    return beginningDebitAmount;
+  @ApiModelProperty(example = "null", value = "dal")
+  public Double getCreditamount() {
+    return creditamount;
   }
 
-  public void setBeginningDebitAmount(Double beginningDebitAmount) {
-    this.beginningDebitAmount = beginningDebitAmount;
+  public void setCreditamount(Double creditamount) {
+    this.creditamount = creditamount;
   }
 
-  public Nominalledger beginAmount(Double beginAmount) {
-    this.beginAmount = beginAmount;
+  public Nominalledger debitamount(Double debitamount) {
+    this.debitamount = debitamount;
     return this;
   }
 
    /**
-   * Počáteční stav
-   * @return beginAmount
+   * má dáti
+   * @return debitamount
   **/
-  @ApiModelProperty(example = "null", value = "Počáteční stav")
-  public Double getBeginAmount() {
-    return beginAmount;
+  @ApiModelProperty(example = "null", value = "má dáti")
+  public Double getDebitamount() {
+    return debitamount;
   }
 
-  public void setBeginAmount(Double beginAmount) {
-    this.beginAmount = beginAmount;
+  public void setDebitamount(Double debitamount) {
+    this.debitamount = debitamount;
+  }
+
+  public Nominalledger finalamount(Double finalamount) {
+    this.finalamount = finalamount;
+    return this;
+  }
+
+   /**
+   * konečný stav
+   * @return finalamount
+  **/
+  @ApiModelProperty(example = "null", value = "konečný stav")
+  public Double getFinalamount() {
+    return finalamount;
+  }
+
+  public void setFinalamount(Double finalamount) {
+    this.finalamount = finalamount;
+  }
+
+  public Nominalledger beginningcreditamount(Double beginningcreditamount) {
+    this.beginningcreditamount = beginningcreditamount;
+    return this;
+  }
+
+   /**
+   * počátek dal
+   * @return beginningcreditamount
+  **/
+  @ApiModelProperty(example = "null", value = "počátek dal")
+  public Double getBeginningcreditamount() {
+    return beginningcreditamount;
+  }
+
+  public void setBeginningcreditamount(Double beginningcreditamount) {
+    this.beginningcreditamount = beginningcreditamount;
+  }
+
+  public Nominalledger beginningdebitamount(Double beginningdebitamount) {
+    this.beginningdebitamount = beginningdebitamount;
+    return this;
+  }
+
+   /**
+   * počátek má dáti
+   * @return beginningdebitamount
+  **/
+  @ApiModelProperty(example = "null", value = "počátek má dáti")
+  public Double getBeginningdebitamount() {
+    return beginningdebitamount;
+  }
+
+  public void setBeginningdebitamount(Double beginningdebitamount) {
+    this.beginningdebitamount = beginningdebitamount;
+  }
+
+  public Nominalledger beginamount(Double beginamount) {
+    this.beginamount = beginamount;
+    return this;
+  }
+
+   /**
+   * počáteční stav
+   * @return beginamount
+  **/
+  @ApiModelProperty(example = "null", value = "počáteční stav")
+  public Double getBeginamount() {
+    return beginamount;
+  }
+
+  public void setBeginamount(Double beginamount) {
+    this.beginamount = beginamount;
   }
 
 
@@ -241,22 +277,22 @@ public class Nominalledger   {
       return false;
     }
     Nominalledger nominalledger = (Nominalledger) o;
-    return Objects.equals(this.displayName, nominalledger.displayName) &&
-        Objects.equals(this.ID, nominalledger.ID) &&
-        Objects.equals(this.classID, nominalledger.classID) &&
-        Objects.equals(this.objVersion, nominalledger.objVersion) &&
-        Objects.equals(this.accountID, nominalledger.accountID) &&
-        Objects.equals(this.creditAmount, nominalledger.creditAmount) &&
-        Objects.equals(this.debitAmount, nominalledger.debitAmount) &&
-        Objects.equals(this.finalAmount, nominalledger.finalAmount) &&
-        Objects.equals(this.beginningCreditAmount, nominalledger.beginningCreditAmount) &&
-        Objects.equals(this.beginningDebitAmount, nominalledger.beginningDebitAmount) &&
-        Objects.equals(this.beginAmount, nominalledger.beginAmount);
+    return Objects.equals(this.displayname, nominalledger.displayname) &&
+        Objects.equals(this.id, nominalledger.id) &&
+        Objects.equals(this.classid, nominalledger.classid) &&
+        Objects.equals(this.objversion, nominalledger.objversion) &&
+        Objects.equals(this.accountId, nominalledger.accountId) &&
+        Objects.equals(this.creditamount, nominalledger.creditamount) &&
+        Objects.equals(this.debitamount, nominalledger.debitamount) &&
+        Objects.equals(this.finalamount, nominalledger.finalamount) &&
+        Objects.equals(this.beginningcreditamount, nominalledger.beginningcreditamount) &&
+        Objects.equals(this.beginningdebitamount, nominalledger.beginningdebitamount) &&
+        Objects.equals(this.beginamount, nominalledger.beginamount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, accountID, creditAmount, debitAmount, finalAmount, beginningCreditAmount, beginningDebitAmount, beginAmount);
+    return Objects.hash(displayname, id, classid, objversion, accountId, creditamount, debitamount, finalamount, beginningcreditamount, beginningdebitamount, beginamount);
   }
 
   @Override
@@ -264,17 +300,17 @@ public class Nominalledger   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Nominalledger {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    accountID: ").append(toIndentedString(accountID)).append("\n");
-    sb.append("    creditAmount: ").append(toIndentedString(creditAmount)).append("\n");
-    sb.append("    debitAmount: ").append(toIndentedString(debitAmount)).append("\n");
-    sb.append("    finalAmount: ").append(toIndentedString(finalAmount)).append("\n");
-    sb.append("    beginningCreditAmount: ").append(toIndentedString(beginningCreditAmount)).append("\n");
-    sb.append("    beginningDebitAmount: ").append(toIndentedString(beginningDebitAmount)).append("\n");
-    sb.append("    beginAmount: ").append(toIndentedString(beginAmount)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
+    sb.append("    creditamount: ").append(toIndentedString(creditamount)).append("\n");
+    sb.append("    debitamount: ").append(toIndentedString(debitamount)).append("\n");
+    sb.append("    finalamount: ").append(toIndentedString(finalamount)).append("\n");
+    sb.append("    beginningcreditamount: ").append(toIndentedString(beginningcreditamount)).append("\n");
+    sb.append("    beginningdebitamount: ").append(toIndentedString(beginningdebitamount)).append("\n");
+    sb.append("    beginamount: ").append(toIndentedString(beginamount)).append("\n");
     sb.append("}");
     return sb.toString();
   }

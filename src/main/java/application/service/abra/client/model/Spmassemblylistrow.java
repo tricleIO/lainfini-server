@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,339 +34,384 @@ import java.util.Objects;
 /**
  * Spmassemblylistrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Spmassemblylistrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("RowType")
-  private Integer rowType = null;
+  @SerializedName("rowtype")
+  private Integer rowtype = null;
 
-  @SerializedName("NodeLevel")
-  private Integer nodeLevel = null;
+  @SerializedName("nodelevel")
+  private Integer nodelevel = null;
 
-  @SerializedName("NodeType")
-  private Integer nodeType = null;
+  @SerializedName("nodetype")
+  private Integer nodetype = null;
 
-  @SerializedName("PosKey")
-  private String posKey = null;
+  @SerializedName("poskey")
+  private String poskey = null;
 
-  @SerializedName("Master_ID")
-  private String masterID = null;
+  @SerializedName("master_id")
+  private String masterId = null;
 
-  @SerializedName("Decomposition")
+  @SerializedName("decomposition")
   private Boolean decomposition = null;
 
-  @SerializedName("UseOperatingStore")
-  private Boolean useOperatingStore = null;
+  @SerializedName("useoperatingstore")
+  private Boolean useoperatingstore = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("Store_IDForRow")
-  private String storeIDForRow = null;
+  @SerializedName("store_idforrow")
+  private String storeIdforrow = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("UnitQuantity")
-  private Double unitQuantity = null;
+  @SerializedName("unitquantity")
+  private Double unitquantity = null;
 
-  @SerializedName("UnitQuantityForProduct")
-  private Double unitQuantityForProduct = null;
+  @SerializedName("unitquantityforproduct")
+  private Double unitquantityforproduct = null;
 
-  @SerializedName("PriceForProduct")
-  private Double priceForProduct = null;
+  @SerializedName("priceforproduct")
+  private Double priceforproduct = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("InsufficientMaterialQuantity")
-  private Double insufficientMaterialQuantity = null;
+  @SerializedName("insufficientmaterialquantity")
+  private Double insufficientmaterialquantity = null;
 
-  @SerializedName("InsufficientMatUnitQuantity")
-  private Double insufficientMatUnitQuantity = null;
+  @SerializedName("insufficientmatunitquantity")
+  private Double insufficientmatunitquantity = null;
 
-  @SerializedName("InsufficientMaterialQUnit")
-  private String insufficientMaterialQUnit = null;
+  @SerializedName("insufficientmaterialqunit")
+  private String insufficientmaterialqunit = null;
 
-  @SerializedName("InsufficientMaterialUnitRate")
-  private Double insufficientMaterialUnitRate = null;
+  @SerializedName("insufficientmaterialunitrate")
+  private Double insufficientmaterialunitrate = null;
 
-  @SerializedName("Price")
+  @SerializedName("price")
   private Double price = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("OriginalStoreCard_ID")
-  private String originalStoreCardID = null;
+  @SerializedName("originalstorecard_id")
+  private String originalstorecardId = null;
 
-  @SerializedName("ProductionTask_ID")
-  private String productionTaskID = null;
+  @SerializedName("productiontask_id")
+  private String productiontaskId = null;
 
-  @SerializedName("ProductionTaskRow_ID")
-  private String productionTaskRowID = null;
+  @SerializedName("productiontaskrow_id")
+  private String productiontaskrowId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("MaterialDistributionRow_ID")
-  private String materialDistributionRowID = null;
+  @SerializedName("materialdistributionrow_id")
+  private String materialdistributionrowId = null;
 
-  @SerializedName("ProductReceptionRow_ID")
-  private String productReceptionRowID = null;
+  @SerializedName("productreceptionrow_id")
+  private String productreceptionrowId = null;
 
-  @SerializedName("OriginalQuantity")
-  private Double originalQuantity = null;
+  @SerializedName("originalquantity")
+  private Double originalquantity = null;
 
-  @SerializedName("OriginalUnitQuantity")
-  private Double originalUnitQuantity = null;
+  @SerializedName("originalunitquantity")
+  private Double originalunitquantity = null;
 
-  @SerializedName("OriginalQUnit")
-  private String originalQUnit = null;
+  @SerializedName("originalqunit")
+  private String originalqunit = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("OriginalUnitRate")
-  private Double originalUnitRate = null;
+  @SerializedName("originalunitrate")
+  private Double originalunitrate = null;
 
-  @SerializedName("OriginalPrice")
-  private Double originalPrice = null;
+  @SerializedName("originalprice")
+  private Double originalprice = null;
 
-  @SerializedName("Replaceable")
+  @SerializedName("replaceable")
   private Integer replaceable = null;
 
-  @SerializedName("Calculated")
+  @SerializedName("calculated")
   private Boolean calculated = null;
 
-  @SerializedName("TransferQUnit")
-  private String transferQUnit = null;
+  @SerializedName("transferqunit")
+  private String transferqunit = null;
 
-  @SerializedName("TransferUnitRate")
-  private Double transferUnitRate = null;
+  @SerializedName("transferunitrate")
+  private Double transferunitrate = null;
 
-  @SerializedName("TransferQuantity")
-  private Double transferQuantity = null;
+  @SerializedName("transferquantity")
+  private Double transferquantity = null;
 
-  @SerializedName("MaterialQUnit")
-  private String materialQUnit = null;
+  @SerializedName("materialqunit")
+  private String materialqunit = null;
 
-  @SerializedName("OperatingQUnit")
-  private String operatingQUnit = null;
+  @SerializedName("operatingqunit")
+  private String operatingqunit = null;
 
-  @SerializedName("MaterialUnitQuantity")
-  private Double materialUnitQuantity = null;
+  @SerializedName("materialunitquantity")
+  private Double materialunitquantity = null;
 
-  @SerializedName("OperatingUnitQuantity")
-  private Double operatingUnitQuantity = null;
+  @SerializedName("operatingunitquantity")
+  private Double operatingunitquantity = null;
 
-  @SerializedName("DemandStatus")
-  private Integer demandStatus = null;
+  @SerializedName("demandstatus")
+  private Integer demandstatus = null;
 
-  @SerializedName("UnitWeight")
-  private Double unitWeight = null;
+  @SerializedName("unitweight")
+  private Double unitweight = null;
 
-  @SerializedName("UnitWeightInGrams")
-  private Double unitWeightInGrams = null;
+  @SerializedName("unitweightingrams")
+  private Double unitweightingrams = null;
 
-  @SerializedName("UnitWeightUnit")
-  private Integer unitWeightUnit = null;
+  @SerializedName("unitweightunit")
+  private Integer unitweightunit = null;
 
-  @SerializedName("Weight")
+  @SerializedName("weight")
   private Double weight = null;
 
-  @SerializedName("NormSourceQuantity")
-  private Double normSourceQuantity = null;
+  @SerializedName("normsourcequantity")
+  private Double normsourcequantity = null;
 
-  @SerializedName("NormDestQuantity")
-  private Double normDestQuantity = null;
+  @SerializedName("normdestquantity")
+  private Double normdestquantity = null;
 
-  @SerializedName("QuantityProduced")
-  private Double quantityProduced = null;
+  @SerializedName("quantityproduced")
+  private Double quantityproduced = null;
 
-  @SerializedName("UnitQuantityProduced")
-  private Double unitQuantityProduced = null;
+  @SerializedName("unitquantityproduced")
+  private Double unitquantityproduced = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Kompletační list [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Kompletační list [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Spmassemblylistrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Spmassemblylistrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Spmassemblylistrow rowType(Integer rowType) {
-    this.rowType = rowType;
+  public Spmassemblylistrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return rowType
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getRowType() {
-    return rowType;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setRowType(Integer rowType) {
-    this.rowType = rowType;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Spmassemblylistrow nodeLevel(Integer nodeLevel) {
-    this.nodeLevel = nodeLevel;
+  public Spmassemblylistrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Hloubka vnoření
-   * @return nodeLevel
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Hloubka vnoření")
-  public Integer getNodeLevel() {
-    return nodeLevel;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setNodeLevel(Integer nodeLevel) {
-    this.nodeLevel = nodeLevel;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Spmassemblylistrow nodeType(Integer nodeType) {
-    this.nodeType = nodeType;
+  public Spmassemblylistrow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Typ uzlu stromu
-   * @return nodeType
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Typ uzlu stromu")
-  public Integer getNodeType() {
-    return nodeType;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setNodeType(Integer nodeType) {
-    this.nodeType = nodeType;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Spmassemblylistrow posKey(String posKey) {
-    this.posKey = posKey;
+  public Spmassemblylistrow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Pozice [persistentní položka]
-   * @return posKey
+   * vlastník; id objektu kompletační list [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Pozice [persistentní položka]")
-  public String getPosKey() {
-    return posKey;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu kompletační list [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setPosKey(String posKey) {
-    this.posKey = posKey;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Spmassemblylistrow masterID(String masterID) {
-    this.masterID = masterID;
+  public Spmassemblylistrow posindex(Integer posindex) {
+    this.posindex = posindex;
     return this;
   }
 
    /**
-   * Nadřízený; ID objektu Kompletační list - řádek [persistentní položka]
-   * @return masterID
+   * pořadí [persistentní položka]
+   * @return posindex
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízený; ID objektu Kompletační list - řádek [persistentní položka]")
-  public String getMasterID() {
-    return masterID;
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
   }
 
-  public void setMasterID(String masterID) {
-    this.masterID = masterID;
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Spmassemblylistrow rowtype(Integer rowtype) {
+    this.rowtype = rowtype;
+    return this;
+  }
+
+   /**
+   * typ [persistentní položka]
+   * @return rowtype
+  **/
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getRowtype() {
+    return rowtype;
+  }
+
+  public void setRowtype(Integer rowtype) {
+    this.rowtype = rowtype;
+  }
+
+  public Spmassemblylistrow nodelevel(Integer nodelevel) {
+    this.nodelevel = nodelevel;
+    return this;
+  }
+
+   /**
+   * hloubka vnoření
+   * @return nodelevel
+  **/
+  @ApiModelProperty(example = "null", value = "hloubka vnoření")
+  public Integer getNodelevel() {
+    return nodelevel;
+  }
+
+  public void setNodelevel(Integer nodelevel) {
+    this.nodelevel = nodelevel;
+  }
+
+  public Spmassemblylistrow nodetype(Integer nodetype) {
+    this.nodetype = nodetype;
+    return this;
+  }
+
+   /**
+   * typ uzlu stromu
+   * @return nodetype
+  **/
+  @ApiModelProperty(example = "null", value = "typ uzlu stromu")
+  public Integer getNodetype() {
+    return nodetype;
+  }
+
+  public void setNodetype(Integer nodetype) {
+    this.nodetype = nodetype;
+  }
+
+  public Spmassemblylistrow poskey(String poskey) {
+    this.poskey = poskey;
+    return this;
+  }
+
+   /**
+   * pozice [persistentní položka]
+   * @return poskey
+  **/
+  @ApiModelProperty(example = "null", value = "pozice [persistentní položka]")
+  public String getPoskey() {
+    return poskey;
+  }
+
+  public void setPoskey(String poskey) {
+    this.poskey = poskey;
+  }
+
+  public Spmassemblylistrow masterId(String masterId) {
+    this.masterId = masterId;
+    return this;
+  }
+
+   /**
+   * nadřízený; id objektu kompletační list - řádek [persistentní položka]
+   * @return masterId
+  **/
+  @ApiModelProperty(example = "null", value = "nadřízený; id objektu kompletační list - řádek [persistentní položka]")
+  public String getMasterId() {
+    return masterId;
+  }
+
+  public void setMasterId(String masterId) {
+    this.masterId = masterId;
   }
 
   public Spmassemblylistrow decomposition(Boolean decomposition) {
@@ -375,10 +420,10 @@ public class Spmassemblylistrow   {
   }
 
    /**
-   * Rozebratelná [persistentní položka]
+   * rozebratelná [persistentní položka]
    * @return decomposition
   **/
-  @ApiModelProperty(example = "null", value = "Rozebratelná [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "rozebratelná [persistentní položka]")
   public Boolean getDecomposition() {
     return decomposition;
   }
@@ -387,76 +432,76 @@ public class Spmassemblylistrow   {
     this.decomposition = decomposition;
   }
 
-  public Spmassemblylistrow useOperatingStore(Boolean useOperatingStore) {
-    this.useOperatingStore = useOperatingStore;
+  public Spmassemblylistrow useoperatingstore(Boolean useoperatingstore) {
+    this.useoperatingstore = useoperatingstore;
     return this;
   }
 
    /**
-   * Provozní sklad [persistentní položka]
-   * @return useOperatingStore
+   * provozní sklad [persistentní položka]
+   * @return useoperatingstore
   **/
-  @ApiModelProperty(example = "null", value = "Provozní sklad [persistentní položka]")
-  public Boolean getUseOperatingStore() {
-    return useOperatingStore;
+  @ApiModelProperty(example = "null", value = "provozní sklad [persistentní položka]")
+  public Boolean getUseoperatingstore() {
+    return useoperatingstore;
   }
 
-  public void setUseOperatingStore(Boolean useOperatingStore) {
-    this.useOperatingStore = useOperatingStore;
+  public void setUseoperatingstore(Boolean useoperatingstore) {
+    this.useoperatingstore = useoperatingstore;
   }
 
-  public Spmassemblylistrow storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Spmassemblylistrow storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * skladová karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
   }
 
-  public Spmassemblylistrow storeID(String storeID) {
-    this.storeID = storeID;
+  public Spmassemblylistrow storeId(String storeId) {
+    this.storeId = storeId;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
-  public Spmassemblylistrow storeIDForRow(String storeIDForRow) {
-    this.storeIDForRow = storeIDForRow;
+  public Spmassemblylistrow storeIdforrow(String storeIdforrow) {
+    this.storeIdforrow = storeIdforrow;
     return this;
   }
 
    /**
-   * Sklad výrobků/materiálu; ID objektu Sklad
-   * @return storeIDForRow
+   * sklad výrobků/materiálu; id objektu sklad
+   * @return storeIdforrow
   **/
-  @ApiModelProperty(example = "null", value = "Sklad výrobků/materiálu; ID objektu Sklad")
-  public String getStoreIDForRow() {
-    return storeIDForRow;
+  @ApiModelProperty(example = "null", value = "sklad výrobků/materiálu; id objektu sklad")
+  public String getStoreIdforrow() {
+    return storeIdforrow;
   }
 
-  public void setStoreIDForRow(String storeIDForRow) {
-    this.storeIDForRow = storeIDForRow;
+  public void setStoreIdforrow(String storeIdforrow) {
+    this.storeIdforrow = storeIdforrow;
   }
 
   public Spmassemblylistrow quantity(Double quantity) {
@@ -465,10 +510,10 @@ public class Spmassemblylistrow   {
   }
 
    /**
-   * Počet [persistentní položka]
+   * počet [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "počet [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -477,175 +522,184 @@ public class Spmassemblylistrow   {
     this.quantity = quantity;
   }
 
-  public Spmassemblylistrow unitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public Spmassemblylistrow unitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
     return this;
   }
 
    /**
-   * Počet jednotek
-   * @return unitQuantity
+   * počet jednotek
+   * @return unitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet jednotek")
-  public Double getUnitQuantity() {
-    return unitQuantity;
+  @ApiModelProperty(example = "null", value = "počet jednotek")
+  public Double getUnitquantity() {
+    return unitquantity;
   }
 
-  public void setUnitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public void setUnitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
   }
 
-  public Spmassemblylistrow unitQuantityForProduct(Double unitQuantityForProduct) {
-    this.unitQuantityForProduct = unitQuantityForProduct;
+  public Spmassemblylistrow unitquantityforproduct(Double unitquantityforproduct) {
+    this.unitquantityforproduct = unitquantityforproduct;
     return this;
   }
 
    /**
-   * Počet na jednotku
-   * @return unitQuantityForProduct
+   * počet na jednotku
+   * @return unitquantityforproduct
   **/
-  @ApiModelProperty(example = "null", value = "Počet na jednotku")
-  public Double getUnitQuantityForProduct() {
-    return unitQuantityForProduct;
+  @ApiModelProperty(example = "null", value = "počet na jednotku")
+  public Double getUnitquantityforproduct() {
+    return unitquantityforproduct;
   }
 
-  public void setUnitQuantityForProduct(Double unitQuantityForProduct) {
-    this.unitQuantityForProduct = unitQuantityForProduct;
+  public void setUnitquantityforproduct(Double unitquantityforproduct) {
+    this.unitquantityforproduct = unitquantityforproduct;
   }
 
-  public Spmassemblylistrow priceForProduct(Double priceForProduct) {
-    this.priceForProduct = priceForProduct;
+  public Spmassemblylistrow priceforproduct(Double priceforproduct) {
+    this.priceforproduct = priceforproduct;
     return this;
   }
 
    /**
-   * Cena na jednotku
-   * @return priceForProduct
+   * cena na jednotku
+   * @return priceforproduct
   **/
-  @ApiModelProperty(example = "null", value = "Cena na jednotku")
-  public Double getPriceForProduct() {
-    return priceForProduct;
+  @ApiModelProperty(example = "null", value = "cena na jednotku")
+  public Double getPriceforproduct() {
+    return priceforproduct;
   }
 
-  public void setPriceForProduct(Double priceForProduct) {
-    this.priceForProduct = priceForProduct;
+  public void setPriceforproduct(Double priceforproduct) {
+    this.priceforproduct = priceforproduct;
   }
 
-  public Spmassemblylistrow qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Spmassemblylistrow qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
   }
 
-  public Spmassemblylistrow unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Spmassemblylistrow unitrate(Double unitrate) {
+    this.unitrate = unitrate;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return unitRate
+   * vztah [persistentní položka]
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
-  public Spmassemblylistrow insufficientMaterialQuantity(Double insufficientMaterialQuantity) {
-    this.insufficientMaterialQuantity = insufficientMaterialQuantity;
+  public Spmassemblylistrow insufficientmaterialquantity(Double insufficientmaterialquantity) {
+    this.insufficientmaterialquantity = insufficientmaterialquantity;
     return this;
   }
 
    /**
-   * Množství čerpané do mínusu [persistentní položka]
-   * @return insufficientMaterialQuantity
+   * množství čerpané do mínusu [persistentní položka]
+   * @return insufficientmaterialquantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství čerpané do mínusu [persistentní položka]")
-  public Double getInsufficientMaterialQuantity() {
-    return insufficientMaterialQuantity;
+  @ApiModelProperty(example = "null", value = "množství čerpané do mínusu [persistentní položka]")
+  public Double getInsufficientmaterialquantity() {
+    return insufficientmaterialquantity;
   }
 
-  public void setInsufficientMaterialQuantity(Double insufficientMaterialQuantity) {
-    this.insufficientMaterialQuantity = insufficientMaterialQuantity;
+  public void setInsufficientmaterialquantity(Double insufficientmaterialquantity) {
+    this.insufficientmaterialquantity = insufficientmaterialquantity;
   }
 
-  public Spmassemblylistrow insufficientMatUnitQuantity(Double insufficientMatUnitQuantity) {
-    this.insufficientMatUnitQuantity = insufficientMatUnitQuantity;
+  public Spmassemblylistrow insufficientmatunitquantity(Double insufficientmatunitquantity) {
+    this.insufficientmatunitquantity = insufficientmatunitquantity;
     return this;
   }
 
    /**
-   * Množství v jednotkách čerpané do mínusu
-   * @return insufficientMatUnitQuantity
+   * množství v jednotkách čerpané do mínusu
+   * @return insufficientmatunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství v jednotkách čerpané do mínusu")
-  public Double getInsufficientMatUnitQuantity() {
-    return insufficientMatUnitQuantity;
+  @ApiModelProperty(example = "null", value = "množství v jednotkách čerpané do mínusu")
+  public Double getInsufficientmatunitquantity() {
+    return insufficientmatunitquantity;
   }
 
-  public void setInsufficientMatUnitQuantity(Double insufficientMatUnitQuantity) {
-    this.insufficientMatUnitQuantity = insufficientMatUnitQuantity;
+  public void setInsufficientmatunitquantity(Double insufficientmatunitquantity) {
+    this.insufficientmatunitquantity = insufficientmatunitquantity;
   }
 
-  public Spmassemblylistrow insufficientMaterialQUnit(String insufficientMaterialQUnit) {
-    this.insufficientMaterialQUnit = insufficientMaterialQUnit;
+  public Spmassemblylistrow insufficientmaterialqunit(String insufficientmaterialqunit) {
+    this.insufficientmaterialqunit = insufficientmaterialqunit;
     return this;
   }
 
    /**
-   * Jednotka množství čerpaného do mínusu [persistentní položka]
-   * @return insufficientMaterialQUnit
+   * jednotka množství čerpaného do mínusu [persistentní položka]
+   * @return insufficientmaterialqunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka množství čerpaného do mínusu [persistentní položka]")
-  public String getInsufficientMaterialQUnit() {
-    return insufficientMaterialQUnit;
+  @ApiModelProperty(example = "null", value = "jednotka množství čerpaného do mínusu [persistentní položka]")
+  public String getInsufficientmaterialqunit() {
+    return insufficientmaterialqunit;
   }
 
-  public void setInsufficientMaterialQUnit(String insufficientMaterialQUnit) {
-    this.insufficientMaterialQUnit = insufficientMaterialQUnit;
+  public void setInsufficientmaterialqunit(String insufficientmaterialqunit) {
+    this.insufficientmaterialqunit = insufficientmaterialqunit;
   }
 
-  public Spmassemblylistrow insufficientMaterialUnitRate(Double insufficientMaterialUnitRate) {
-    this.insufficientMaterialUnitRate = insufficientMaterialUnitRate;
+  public Spmassemblylistrow insufficientmaterialunitrate(Double insufficientmaterialunitrate) {
+    this.insufficientmaterialunitrate = insufficientmaterialunitrate;
     return this;
   }
 
    /**
-   * Vztah množství čerpaného do mínusu [persistentní položka]
-   * @return insufficientMaterialUnitRate
+   * vztah množství čerpaného do mínusu [persistentní položka]
+   * @return insufficientmaterialunitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah množství čerpaného do mínusu [persistentní položka]")
-  public Double getInsufficientMaterialUnitRate() {
-    return insufficientMaterialUnitRate;
+  @ApiModelProperty(example = "null", value = "vztah množství čerpaného do mínusu [persistentní položka]")
+  public Double getInsufficientmaterialunitrate() {
+    return insufficientmaterialunitrate;
   }
 
-  public void setInsufficientMaterialUnitRate(Double insufficientMaterialUnitRate) {
-    this.insufficientMaterialUnitRate = insufficientMaterialUnitRate;
+  public void setInsufficientmaterialunitrate(Double insufficientmaterialunitrate) {
+    this.insufficientmaterialunitrate = insufficientmaterialunitrate;
+  }
+
+  public Spmassemblylistrow price(Double price) {
+    this.price = price;
+    return this;
   }
 
    /**
-   * Cena [persistentní položka]
+   * cena [persistentní položka]
    * @return price
   **/
-  @ApiModelProperty(example = "null", value = "Cena [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "cena [persistentní položka]")
   public Double getPrice() {
     return price;
+  }
+
+  public void setPrice(Double price) {
+    this.price = price;
   }
 
   public Spmassemblylistrow amount(Double amount) {
@@ -654,10 +708,10 @@ public class Spmassemblylistrow   {
   }
 
    /**
-   * Cena
+   * cena
    * @return amount
   **/
-  @ApiModelProperty(example = "null", value = "Cena")
+  @ApiModelProperty(example = "null", value = "cena")
   public Double getAmount() {
     return amount;
   }
@@ -666,202 +720,202 @@ public class Spmassemblylistrow   {
     this.amount = amount;
   }
 
-  public Spmassemblylistrow originalStoreCardID(String originalStoreCardID) {
-    this.originalStoreCardID = originalStoreCardID;
+  public Spmassemblylistrow originalstorecardId(String originalstorecardId) {
+    this.originalstorecardId = originalstorecardId;
     return this;
   }
 
    /**
-   * Původní karta; ID objektu Skladová karta [persistentní položka]
-   * @return originalStoreCardID
+   * původní karta; id objektu skladová karta [persistentní položka]
+   * @return originalstorecardId
   **/
-  @ApiModelProperty(example = "null", value = "Původní karta; ID objektu Skladová karta [persistentní položka]")
-  public String getOriginalStoreCardID() {
-    return originalStoreCardID;
+  @ApiModelProperty(example = "null", value = "původní karta; id objektu skladová karta [persistentní položka]")
+  public String getOriginalstorecardId() {
+    return originalstorecardId;
   }
 
-  public void setOriginalStoreCardID(String originalStoreCardID) {
-    this.originalStoreCardID = originalStoreCardID;
+  public void setOriginalstorecardId(String originalstorecardId) {
+    this.originalstorecardId = originalstorecardId;
   }
 
-  public Spmassemblylistrow productionTaskID(String productionTaskID) {
-    this.productionTaskID = productionTaskID;
+  public Spmassemblylistrow productiontaskId(String productiontaskId) {
+    this.productiontaskId = productiontaskId;
     return this;
   }
 
    /**
-   * Výrobní úloha; ID objektu Výrobní úloha [persistentní položka]
-   * @return productionTaskID
+   * výrobní úloha; id objektu výrobní úloha [persistentní položka]
+   * @return productiontaskId
   **/
-  @ApiModelProperty(example = "null", value = "Výrobní úloha; ID objektu Výrobní úloha [persistentní položka]")
-  public String getProductionTaskID() {
-    return productionTaskID;
+  @ApiModelProperty(example = "null", value = "výrobní úloha; id objektu výrobní úloha [persistentní položka]")
+  public String getProductiontaskId() {
+    return productiontaskId;
   }
 
-  public void setProductionTaskID(String productionTaskID) {
-    this.productionTaskID = productionTaskID;
+  public void setProductiontaskId(String productiontaskId) {
+    this.productiontaskId = productiontaskId;
   }
 
-  public Spmassemblylistrow productionTaskRowID(String productionTaskRowID) {
-    this.productionTaskRowID = productionTaskRowID;
+  public Spmassemblylistrow productiontaskrowId(String productiontaskrowId) {
+    this.productiontaskrowId = productiontaskrowId;
     return this;
   }
 
    /**
-   * Řádek výr.úlohy; ID objektu Výrobní úloha - řádek [persistentní položka]
-   * @return productionTaskRowID
+   * Řádek výr.úlohy; id objektu výrobní úloha - řádek [persistentní položka]
+   * @return productiontaskrowId
   **/
-  @ApiModelProperty(example = "null", value = "Řádek výr.úlohy; ID objektu Výrobní úloha - řádek [persistentní položka]")
-  public String getProductionTaskRowID() {
-    return productionTaskRowID;
+  @ApiModelProperty(example = "null", value = "Řádek výr.úlohy; id objektu výrobní úloha - řádek [persistentní položka]")
+  public String getProductiontaskrowId() {
+    return productiontaskrowId;
   }
 
-  public void setProductionTaskRowID(String productionTaskRowID) {
-    this.productionTaskRowID = productionTaskRowID;
+  public void setProductiontaskrowId(String productiontaskrowId) {
+    this.productiontaskrowId = productiontaskrowId;
   }
 
-  public Spmassemblylistrow busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Spmassemblylistrow busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Spmassemblylistrow busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Spmassemblylistrow bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obch.případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obch.případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obch.případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obch.případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Spmassemblylistrow busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Spmassemblylistrow busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Spmassemblylistrow materialDistributionRowID(String materialDistributionRowID) {
-    this.materialDistributionRowID = materialDistributionRowID;
+  public Spmassemblylistrow materialdistributionrowId(String materialdistributionrowId) {
+    this.materialdistributionrowId = materialdistributionrowId;
     return this;
   }
 
    /**
-   * Výdej materiálu; ID objektu Výdej materiálu do výroby - řádek [persistentní položka]
-   * @return materialDistributionRowID
+   * výdej materiálu; id objektu výdej materiálu do výroby - řádek [persistentní položka]
+   * @return materialdistributionrowId
   **/
-  @ApiModelProperty(example = "null", value = "Výdej materiálu; ID objektu Výdej materiálu do výroby - řádek [persistentní položka]")
-  public String getMaterialDistributionRowID() {
-    return materialDistributionRowID;
+  @ApiModelProperty(example = "null", value = "výdej materiálu; id objektu výdej materiálu do výroby - řádek [persistentní položka]")
+  public String getMaterialdistributionrowId() {
+    return materialdistributionrowId;
   }
 
-  public void setMaterialDistributionRowID(String materialDistributionRowID) {
-    this.materialDistributionRowID = materialDistributionRowID;
+  public void setMaterialdistributionrowId(String materialdistributionrowId) {
+    this.materialdistributionrowId = materialdistributionrowId;
   }
 
-  public Spmassemblylistrow productReceptionRowID(String productReceptionRowID) {
-    this.productReceptionRowID = productReceptionRowID;
+  public Spmassemblylistrow productreceptionrowId(String productreceptionrowId) {
+    this.productreceptionrowId = productreceptionrowId;
     return this;
   }
 
    /**
-   * Příjem výrobku; ID objektu Příjem hotových výrobků - řádek [persistentní položka]
-   * @return productReceptionRowID
+   * příjem výrobku; id objektu příjem hotových výrobků - řádek [persistentní položka]
+   * @return productreceptionrowId
   **/
-  @ApiModelProperty(example = "null", value = "Příjem výrobku; ID objektu Příjem hotových výrobků - řádek [persistentní položka]")
-  public String getProductReceptionRowID() {
-    return productReceptionRowID;
+  @ApiModelProperty(example = "null", value = "příjem výrobku; id objektu příjem hotových výrobků - řádek [persistentní položka]")
+  public String getProductreceptionrowId() {
+    return productreceptionrowId;
   }
 
-  public void setProductReceptionRowID(String productReceptionRowID) {
-    this.productReceptionRowID = productReceptionRowID;
+  public void setProductreceptionrowId(String productreceptionrowId) {
+    this.productreceptionrowId = productreceptionrowId;
   }
 
-  public Spmassemblylistrow originalQuantity(Double originalQuantity) {
-    this.originalQuantity = originalQuantity;
+  public Spmassemblylistrow originalquantity(Double originalquantity) {
+    this.originalquantity = originalquantity;
     return this;
   }
 
    /**
-   * Původní počet [persistentní položka]
-   * @return originalQuantity
+   * původní počet [persistentní položka]
+   * @return originalquantity
   **/
-  @ApiModelProperty(example = "null", value = "Původní počet [persistentní položka]")
-  public Double getOriginalQuantity() {
-    return originalQuantity;
+  @ApiModelProperty(example = "null", value = "původní počet [persistentní položka]")
+  public Double getOriginalquantity() {
+    return originalquantity;
   }
 
-  public void setOriginalQuantity(Double originalQuantity) {
-    this.originalQuantity = originalQuantity;
+  public void setOriginalquantity(Double originalquantity) {
+    this.originalquantity = originalquantity;
   }
 
-  public Spmassemblylistrow originalUnitQuantity(Double originalUnitQuantity) {
-    this.originalUnitQuantity = originalUnitQuantity;
+  public Spmassemblylistrow originalunitquantity(Double originalunitquantity) {
+    this.originalunitquantity = originalunitquantity;
     return this;
   }
 
    /**
-   * Původní počet jednotek
-   * @return originalUnitQuantity
+   * původní počet jednotek
+   * @return originalunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Původní počet jednotek")
-  public Double getOriginalUnitQuantity() {
-    return originalUnitQuantity;
+  @ApiModelProperty(example = "null", value = "původní počet jednotek")
+  public Double getOriginalunitquantity() {
+    return originalunitquantity;
   }
 
-  public void setOriginalUnitQuantity(Double originalUnitQuantity) {
-    this.originalUnitQuantity = originalUnitQuantity;
+  public void setOriginalunitquantity(Double originalunitquantity) {
+    this.originalunitquantity = originalunitquantity;
   }
 
-  public Spmassemblylistrow originalQUnit(String originalQUnit) {
-    this.originalQUnit = originalQUnit;
+  public Spmassemblylistrow originalqunit(String originalqunit) {
+    this.originalqunit = originalqunit;
     return this;
   }
 
    /**
-   * Původní jednotka [persistentní položka]
-   * @return originalQUnit
+   * původní jednotka [persistentní položka]
+   * @return originalqunit
   **/
-  @ApiModelProperty(example = "null", value = "Původní jednotka [persistentní položka]")
-  public String getOriginalQUnit() {
-    return originalQUnit;
+  @ApiModelProperty(example = "null", value = "původní jednotka [persistentní položka]")
+  public String getOriginalqunit() {
+    return originalqunit;
   }
 
-  public void setOriginalQUnit(String originalQUnit) {
-    this.originalQUnit = originalQUnit;
+  public void setOriginalqunit(String originalqunit) {
+    this.originalqunit = originalqunit;
   }
 
   public Spmassemblylistrow description(String description) {
@@ -870,10 +924,10 @@ public class Spmassemblylistrow   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -882,31 +936,40 @@ public class Spmassemblylistrow   {
     this.description = description;
   }
 
-  public Spmassemblylistrow originalUnitRate(Double originalUnitRate) {
-    this.originalUnitRate = originalUnitRate;
+  public Spmassemblylistrow originalunitrate(Double originalunitrate) {
+    this.originalunitrate = originalunitrate;
     return this;
   }
 
    /**
-   * Původní vztah [persistentní položka]
-   * @return originalUnitRate
+   * původní vztah [persistentní položka]
+   * @return originalunitrate
   **/
-  @ApiModelProperty(example = "null", value = "Původní vztah [persistentní položka]")
-  public Double getOriginalUnitRate() {
-    return originalUnitRate;
+  @ApiModelProperty(example = "null", value = "původní vztah [persistentní položka]")
+  public Double getOriginalunitrate() {
+    return originalunitrate;
   }
 
-  public void setOriginalUnitRate(Double originalUnitRate) {
-    this.originalUnitRate = originalUnitRate;
+  public void setOriginalunitrate(Double originalunitrate) {
+    this.originalunitrate = originalunitrate;
+  }
+
+  public Spmassemblylistrow originalprice(Double originalprice) {
+    this.originalprice = originalprice;
+    return this;
   }
 
    /**
-   * Původní cena [persistentní položka]
-   * @return originalPrice
+   * původní cena [persistentní položka]
+   * @return originalprice
   **/
-  @ApiModelProperty(example = "null", value = "Původní cena [persistentní položka]")
-  public Double getOriginalPrice() {
-    return originalPrice;
+  @ApiModelProperty(example = "null", value = "původní cena [persistentní položka]")
+  public Double getOriginalprice() {
+    return originalprice;
+  }
+
+  public void setOriginalprice(Double originalprice) {
+    this.originalprice = originalprice;
   }
 
   public Spmassemblylistrow replaceable(Integer replaceable) {
@@ -915,10 +978,10 @@ public class Spmassemblylistrow   {
   }
 
    /**
-   * Nahraditelné [persistentní položka]
+   * nahraditelné [persistentní položka]
    * @return replaceable
   **/
-  @ApiModelProperty(example = "null", value = "Nahraditelné [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "nahraditelné [persistentní položka]")
   public Integer getReplaceable() {
     return replaceable;
   }
@@ -933,10 +996,10 @@ public class Spmassemblylistrow   {
   }
 
    /**
-   * Vypočtený [persistentní položka]
+   * vypočtený [persistentní položka]
    * @return calculated
   **/
-  @ApiModelProperty(example = "null", value = "Vypočtený [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "vypočtený [persistentní položka]")
   public Boolean getCalculated() {
     return calculated;
   }
@@ -945,202 +1008,202 @@ public class Spmassemblylistrow   {
     this.calculated = calculated;
   }
 
-  public Spmassemblylistrow transferQUnit(String transferQUnit) {
-    this.transferQUnit = transferQUnit;
+  public Spmassemblylistrow transferqunit(String transferqunit) {
+    this.transferqunit = transferqunit;
     return this;
   }
 
    /**
-   * Jednotka pro převod [persistentní položka]
-   * @return transferQUnit
+   * jednotka pro převod [persistentní položka]
+   * @return transferqunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka pro převod [persistentní položka]")
-  public String getTransferQUnit() {
-    return transferQUnit;
+  @ApiModelProperty(example = "null", value = "jednotka pro převod [persistentní položka]")
+  public String getTransferqunit() {
+    return transferqunit;
   }
 
-  public void setTransferQUnit(String transferQUnit) {
-    this.transferQUnit = transferQUnit;
+  public void setTransferqunit(String transferqunit) {
+    this.transferqunit = transferqunit;
   }
 
-  public Spmassemblylistrow transferUnitRate(Double transferUnitRate) {
-    this.transferUnitRate = transferUnitRate;
+  public Spmassemblylistrow transferunitrate(Double transferunitrate) {
+    this.transferunitrate = transferunitrate;
     return this;
   }
 
    /**
-   * Vztah přev.j. [persistentní položka]
-   * @return transferUnitRate
+   * vztah přev.j. [persistentní položka]
+   * @return transferunitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah přev.j. [persistentní položka]")
-  public Double getTransferUnitRate() {
-    return transferUnitRate;
+  @ApiModelProperty(example = "null", value = "vztah přev.j. [persistentní položka]")
+  public Double getTransferunitrate() {
+    return transferunitrate;
   }
 
-  public void setTransferUnitRate(Double transferUnitRate) {
-    this.transferUnitRate = transferUnitRate;
+  public void setTransferunitrate(Double transferunitrate) {
+    this.transferunitrate = transferunitrate;
   }
 
-  public Spmassemblylistrow transferQuantity(Double transferQuantity) {
-    this.transferQuantity = transferQuantity;
+  public Spmassemblylistrow transferquantity(Double transferquantity) {
+    this.transferquantity = transferquantity;
     return this;
   }
 
    /**
-   * Počet přev.j.
-   * @return transferQuantity
+   * počet přev.j.
+   * @return transferquantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet přev.j.")
-  public Double getTransferQuantity() {
-    return transferQuantity;
+  @ApiModelProperty(example = "null", value = "počet přev.j.")
+  public Double getTransferquantity() {
+    return transferquantity;
   }
 
-  public void setTransferQuantity(Double transferQuantity) {
-    this.transferQuantity = transferQuantity;
+  public void setTransferquantity(Double transferquantity) {
+    this.transferquantity = transferquantity;
   }
 
-  public Spmassemblylistrow materialQUnit(String materialQUnit) {
-    this.materialQUnit = materialQUnit;
+  public Spmassemblylistrow materialqunit(String materialqunit) {
+    this.materialqunit = materialqunit;
     return this;
   }
 
    /**
-   * Jednotka pro skl.mat.
-   * @return materialQUnit
+   * jednotka pro skl.mat.
+   * @return materialqunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka pro skl.mat.")
-  public String getMaterialQUnit() {
-    return materialQUnit;
+  @ApiModelProperty(example = "null", value = "jednotka pro skl.mat.")
+  public String getMaterialqunit() {
+    return materialqunit;
   }
 
-  public void setMaterialQUnit(String materialQUnit) {
-    this.materialQUnit = materialQUnit;
+  public void setMaterialqunit(String materialqunit) {
+    this.materialqunit = materialqunit;
   }
 
-  public Spmassemblylistrow operatingQUnit(String operatingQUnit) {
-    this.operatingQUnit = operatingQUnit;
+  public Spmassemblylistrow operatingqunit(String operatingqunit) {
+    this.operatingqunit = operatingqunit;
     return this;
   }
 
    /**
-   * Jedn.pro výd.
-   * @return operatingQUnit
+   * jedn.pro výd.
+   * @return operatingqunit
   **/
-  @ApiModelProperty(example = "null", value = "Jedn.pro výd.")
-  public String getOperatingQUnit() {
-    return operatingQUnit;
+  @ApiModelProperty(example = "null", value = "jedn.pro výd.")
+  public String getOperatingqunit() {
+    return operatingqunit;
   }
 
-  public void setOperatingQUnit(String operatingQUnit) {
-    this.operatingQUnit = operatingQUnit;
+  public void setOperatingqunit(String operatingqunit) {
+    this.operatingqunit = operatingqunit;
   }
 
-  public Spmassemblylistrow materialUnitQuantity(Double materialUnitQuantity) {
-    this.materialUnitQuantity = materialUnitQuantity;
+  public Spmassemblylistrow materialunitquantity(Double materialunitquantity) {
+    this.materialunitquantity = materialunitquantity;
     return this;
   }
 
    /**
-   * Vydat ze skladu
-   * @return materialUnitQuantity
+   * vydat ze skladu
+   * @return materialunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Vydat ze skladu")
-  public Double getMaterialUnitQuantity() {
-    return materialUnitQuantity;
+  @ApiModelProperty(example = "null", value = "vydat ze skladu")
+  public Double getMaterialunitquantity() {
+    return materialunitquantity;
   }
 
-  public void setMaterialUnitQuantity(Double materialUnitQuantity) {
-    this.materialUnitQuantity = materialUnitQuantity;
+  public void setMaterialunitquantity(Double materialunitquantity) {
+    this.materialunitquantity = materialunitquantity;
   }
 
-  public Spmassemblylistrow operatingUnitQuantity(Double operatingUnitQuantity) {
-    this.operatingUnitQuantity = operatingUnitQuantity;
+  public Spmassemblylistrow operatingunitquantity(Double operatingunitquantity) {
+    this.operatingunitquantity = operatingunitquantity;
     return this;
   }
 
    /**
-   * Vydat z prov. skladu
-   * @return operatingUnitQuantity
+   * vydat z prov. skladu
+   * @return operatingunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Vydat z prov. skladu")
-  public Double getOperatingUnitQuantity() {
-    return operatingUnitQuantity;
+  @ApiModelProperty(example = "null", value = "vydat z prov. skladu")
+  public Double getOperatingunitquantity() {
+    return operatingunitquantity;
   }
 
-  public void setOperatingUnitQuantity(Double operatingUnitQuantity) {
-    this.operatingUnitQuantity = operatingUnitQuantity;
+  public void setOperatingunitquantity(Double operatingunitquantity) {
+    this.operatingunitquantity = operatingunitquantity;
   }
 
-  public Spmassemblylistrow demandStatus(Integer demandStatus) {
-    this.demandStatus = demandStatus;
+  public Spmassemblylistrow demandstatus(Integer demandstatus) {
+    this.demandstatus = demandstatus;
     return this;
   }
 
    /**
-   * Stav poptávky [persistentní položka]
-   * @return demandStatus
+   * stav poptávky [persistentní položka]
+   * @return demandstatus
   **/
-  @ApiModelProperty(example = "null", value = "Stav poptávky [persistentní položka]")
-  public Integer getDemandStatus() {
-    return demandStatus;
+  @ApiModelProperty(example = "null", value = "stav poptávky [persistentní položka]")
+  public Integer getDemandstatus() {
+    return demandstatus;
   }
 
-  public void setDemandStatus(Integer demandStatus) {
-    this.demandStatus = demandStatus;
+  public void setDemandstatus(Integer demandstatus) {
+    this.demandstatus = demandstatus;
   }
 
-  public Spmassemblylistrow unitWeight(Double unitWeight) {
-    this.unitWeight = unitWeight;
+  public Spmassemblylistrow unitweight(Double unitweight) {
+    this.unitweight = unitweight;
     return this;
   }
 
    /**
-   * Hmotnost jednotky
-   * @return unitWeight
+   * hmotnost jednotky
+   * @return unitweight
   **/
-  @ApiModelProperty(example = "null", value = "Hmotnost jednotky")
-  public Double getUnitWeight() {
-    return unitWeight;
+  @ApiModelProperty(example = "null", value = "hmotnost jednotky")
+  public Double getUnitweight() {
+    return unitweight;
   }
 
-  public void setUnitWeight(Double unitWeight) {
-    this.unitWeight = unitWeight;
+  public void setUnitweight(Double unitweight) {
+    this.unitweight = unitweight;
   }
 
-  public Spmassemblylistrow unitWeightInGrams(Double unitWeightInGrams) {
-    this.unitWeightInGrams = unitWeightInGrams;
+  public Spmassemblylistrow unitweightingrams(Double unitweightingrams) {
+    this.unitweightingrams = unitweightingrams;
     return this;
   }
 
    /**
-   * Hmotnost jednotky v gr.
-   * @return unitWeightInGrams
+   * hmotnost jednotky v gr.
+   * @return unitweightingrams
   **/
-  @ApiModelProperty(example = "null", value = "Hmotnost jednotky v gr.")
-  public Double getUnitWeightInGrams() {
-    return unitWeightInGrams;
+  @ApiModelProperty(example = "null", value = "hmotnost jednotky v gr.")
+  public Double getUnitweightingrams() {
+    return unitweightingrams;
   }
 
-  public void setUnitWeightInGrams(Double unitWeightInGrams) {
-    this.unitWeightInGrams = unitWeightInGrams;
+  public void setUnitweightingrams(Double unitweightingrams) {
+    this.unitweightingrams = unitweightingrams;
   }
 
-  public Spmassemblylistrow unitWeightUnit(Integer unitWeightUnit) {
-    this.unitWeightUnit = unitWeightUnit;
+  public Spmassemblylistrow unitweightunit(Integer unitweightunit) {
+    this.unitweightunit = unitweightunit;
     return this;
   }
 
    /**
-   * Hmotnostní jednotka
-   * @return unitWeightUnit
+   * hmotnostní jednotka
+   * @return unitweightunit
   **/
-  @ApiModelProperty(example = "null", value = "Hmotnostní jednotka")
-  public Integer getUnitWeightUnit() {
-    return unitWeightUnit;
+  @ApiModelProperty(example = "null", value = "hmotnostní jednotka")
+  public Integer getUnitweightunit() {
+    return unitweightunit;
   }
 
-  public void setUnitWeightUnit(Integer unitWeightUnit) {
-    this.unitWeightUnit = unitWeightUnit;
+  public void setUnitweightunit(Integer unitweightunit) {
+    this.unitweightunit = unitweightunit;
   }
 
   public Spmassemblylistrow weight(Double weight) {
@@ -1149,10 +1212,10 @@ public class Spmassemblylistrow   {
   }
 
    /**
-   * Hmotnost
+   * hmotnost
    * @return weight
   **/
-  @ApiModelProperty(example = "null", value = "Hmotnost")
+  @ApiModelProperty(example = "null", value = "hmotnost")
   public Double getWeight() {
     return weight;
   }
@@ -1161,76 +1224,76 @@ public class Spmassemblylistrow   {
     this.weight = weight;
   }
 
-  public Spmassemblylistrow normSourceQuantity(Double normSourceQuantity) {
-    this.normSourceQuantity = normSourceQuantity;
+  public Spmassemblylistrow normsourcequantity(Double normsourcequantity) {
+    this.normsourcequantity = normsourcequantity;
     return this;
   }
 
    /**
-   * Zdrojové množství z normy [persistentní položka]
-   * @return normSourceQuantity
+   * zdrojové množství z normy [persistentní položka]
+   * @return normsourcequantity
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojové množství z normy [persistentní položka]")
-  public Double getNormSourceQuantity() {
-    return normSourceQuantity;
+  @ApiModelProperty(example = "null", value = "zdrojové množství z normy [persistentní položka]")
+  public Double getNormsourcequantity() {
+    return normsourcequantity;
   }
 
-  public void setNormSourceQuantity(Double normSourceQuantity) {
-    this.normSourceQuantity = normSourceQuantity;
+  public void setNormsourcequantity(Double normsourcequantity) {
+    this.normsourcequantity = normsourcequantity;
   }
 
-  public Spmassemblylistrow normDestQuantity(Double normDestQuantity) {
-    this.normDestQuantity = normDestQuantity;
+  public Spmassemblylistrow normdestquantity(Double normdestquantity) {
+    this.normdestquantity = normdestquantity;
     return this;
   }
 
    /**
-   * Cílové množství z normy [persistentní položka]
-   * @return normDestQuantity
+   * cílové množství z normy [persistentní položka]
+   * @return normdestquantity
   **/
-  @ApiModelProperty(example = "null", value = "Cílové množství z normy [persistentní položka]")
-  public Double getNormDestQuantity() {
-    return normDestQuantity;
+  @ApiModelProperty(example = "null", value = "cílové množství z normy [persistentní položka]")
+  public Double getNormdestquantity() {
+    return normdestquantity;
   }
 
-  public void setNormDestQuantity(Double normDestQuantity) {
-    this.normDestQuantity = normDestQuantity;
+  public void setNormdestquantity(Double normdestquantity) {
+    this.normdestquantity = normdestquantity;
   }
 
-  public Spmassemblylistrow quantityProduced(Double quantityProduced) {
-    this.quantityProduced = quantityProduced;
+  public Spmassemblylistrow quantityproduced(Double quantityproduced) {
+    this.quantityproduced = quantityproduced;
     return this;
   }
 
    /**
-   * Skutečně vyrobeno v ev.jedn. [persistentní položka]
-   * @return quantityProduced
+   * skutečně vyrobeno v ev.jedn. [persistentní položka]
+   * @return quantityproduced
   **/
-  @ApiModelProperty(example = "null", value = "Skutečně vyrobeno v ev.jedn. [persistentní položka]")
-  public Double getQuantityProduced() {
-    return quantityProduced;
+  @ApiModelProperty(example = "null", value = "skutečně vyrobeno v ev.jedn. [persistentní položka]")
+  public Double getQuantityproduced() {
+    return quantityproduced;
   }
 
-  public void setQuantityProduced(Double quantityProduced) {
-    this.quantityProduced = quantityProduced;
+  public void setQuantityproduced(Double quantityproduced) {
+    this.quantityproduced = quantityproduced;
   }
 
-  public Spmassemblylistrow unitQuantityProduced(Double unitQuantityProduced) {
-    this.unitQuantityProduced = unitQuantityProduced;
+  public Spmassemblylistrow unitquantityproduced(Double unitquantityproduced) {
+    this.unitquantityproduced = unitquantityproduced;
     return this;
   }
 
    /**
-   * Skutečně vyrobeno
-   * @return unitQuantityProduced
+   * skutečně vyrobeno
+   * @return unitquantityproduced
   **/
-  @ApiModelProperty(example = "null", value = "Skutečně vyrobeno")
-  public Double getUnitQuantityProduced() {
-    return unitQuantityProduced;
+  @ApiModelProperty(example = "null", value = "skutečně vyrobeno")
+  public Double getUnitquantityproduced() {
+    return unitquantityproduced;
   }
 
-  public void setUnitQuantityProduced(Double unitQuantityProduced) {
-    this.unitQuantityProduced = unitQuantityProduced;
+  public void setUnitquantityproduced(Double unitquantityproduced) {
+    this.unitquantityproduced = unitquantityproduced;
   }
 
 
@@ -1243,71 +1306,71 @@ public class Spmassemblylistrow   {
       return false;
     }
     Spmassemblylistrow spmassemblylistrow = (Spmassemblylistrow) o;
-    return Objects.equals(this.displayName, spmassemblylistrow.displayName) &&
-        Objects.equals(this.ID, spmassemblylistrow.ID) &&
-        Objects.equals(this.classID, spmassemblylistrow.classID) &&
-        Objects.equals(this.objVersion, spmassemblylistrow.objVersion) &&
-        Objects.equals(this.parentID, spmassemblylistrow.parentID) &&
-        Objects.equals(this.posIndex, spmassemblylistrow.posIndex) &&
-        Objects.equals(this.rowType, spmassemblylistrow.rowType) &&
-        Objects.equals(this.nodeLevel, spmassemblylistrow.nodeLevel) &&
-        Objects.equals(this.nodeType, spmassemblylistrow.nodeType) &&
-        Objects.equals(this.posKey, spmassemblylistrow.posKey) &&
-        Objects.equals(this.masterID, spmassemblylistrow.masterID) &&
+    return Objects.equals(this.displayname, spmassemblylistrow.displayname) &&
+        Objects.equals(this.id, spmassemblylistrow.id) &&
+        Objects.equals(this.classid, spmassemblylistrow.classid) &&
+        Objects.equals(this.objversion, spmassemblylistrow.objversion) &&
+        Objects.equals(this.parentId, spmassemblylistrow.parentId) &&
+        Objects.equals(this.posindex, spmassemblylistrow.posindex) &&
+        Objects.equals(this.rowtype, spmassemblylistrow.rowtype) &&
+        Objects.equals(this.nodelevel, spmassemblylistrow.nodelevel) &&
+        Objects.equals(this.nodetype, spmassemblylistrow.nodetype) &&
+        Objects.equals(this.poskey, spmassemblylistrow.poskey) &&
+        Objects.equals(this.masterId, spmassemblylistrow.masterId) &&
         Objects.equals(this.decomposition, spmassemblylistrow.decomposition) &&
-        Objects.equals(this.useOperatingStore, spmassemblylistrow.useOperatingStore) &&
-        Objects.equals(this.storeCardID, spmassemblylistrow.storeCardID) &&
-        Objects.equals(this.storeID, spmassemblylistrow.storeID) &&
-        Objects.equals(this.storeIDForRow, spmassemblylistrow.storeIDForRow) &&
+        Objects.equals(this.useoperatingstore, spmassemblylistrow.useoperatingstore) &&
+        Objects.equals(this.storecardId, spmassemblylistrow.storecardId) &&
+        Objects.equals(this.storeId, spmassemblylistrow.storeId) &&
+        Objects.equals(this.storeIdforrow, spmassemblylistrow.storeIdforrow) &&
         Objects.equals(this.quantity, spmassemblylistrow.quantity) &&
-        Objects.equals(this.unitQuantity, spmassemblylistrow.unitQuantity) &&
-        Objects.equals(this.unitQuantityForProduct, spmassemblylistrow.unitQuantityForProduct) &&
-        Objects.equals(this.priceForProduct, spmassemblylistrow.priceForProduct) &&
-        Objects.equals(this.qUnit, spmassemblylistrow.qUnit) &&
-        Objects.equals(this.unitRate, spmassemblylistrow.unitRate) &&
-        Objects.equals(this.insufficientMaterialQuantity, spmassemblylistrow.insufficientMaterialQuantity) &&
-        Objects.equals(this.insufficientMatUnitQuantity, spmassemblylistrow.insufficientMatUnitQuantity) &&
-        Objects.equals(this.insufficientMaterialQUnit, spmassemblylistrow.insufficientMaterialQUnit) &&
-        Objects.equals(this.insufficientMaterialUnitRate, spmassemblylistrow.insufficientMaterialUnitRate) &&
+        Objects.equals(this.unitquantity, spmassemblylistrow.unitquantity) &&
+        Objects.equals(this.unitquantityforproduct, spmassemblylistrow.unitquantityforproduct) &&
+        Objects.equals(this.priceforproduct, spmassemblylistrow.priceforproduct) &&
+        Objects.equals(this.qunit, spmassemblylistrow.qunit) &&
+        Objects.equals(this.unitrate, spmassemblylistrow.unitrate) &&
+        Objects.equals(this.insufficientmaterialquantity, spmassemblylistrow.insufficientmaterialquantity) &&
+        Objects.equals(this.insufficientmatunitquantity, spmassemblylistrow.insufficientmatunitquantity) &&
+        Objects.equals(this.insufficientmaterialqunit, spmassemblylistrow.insufficientmaterialqunit) &&
+        Objects.equals(this.insufficientmaterialunitrate, spmassemblylistrow.insufficientmaterialunitrate) &&
         Objects.equals(this.price, spmassemblylistrow.price) &&
         Objects.equals(this.amount, spmassemblylistrow.amount) &&
-        Objects.equals(this.originalStoreCardID, spmassemblylistrow.originalStoreCardID) &&
-        Objects.equals(this.productionTaskID, spmassemblylistrow.productionTaskID) &&
-        Objects.equals(this.productionTaskRowID, spmassemblylistrow.productionTaskRowID) &&
-        Objects.equals(this.busOrderID, spmassemblylistrow.busOrderID) &&
-        Objects.equals(this.busTransactionID, spmassemblylistrow.busTransactionID) &&
-        Objects.equals(this.busProjectID, spmassemblylistrow.busProjectID) &&
-        Objects.equals(this.materialDistributionRowID, spmassemblylistrow.materialDistributionRowID) &&
-        Objects.equals(this.productReceptionRowID, spmassemblylistrow.productReceptionRowID) &&
-        Objects.equals(this.originalQuantity, spmassemblylistrow.originalQuantity) &&
-        Objects.equals(this.originalUnitQuantity, spmassemblylistrow.originalUnitQuantity) &&
-        Objects.equals(this.originalQUnit, spmassemblylistrow.originalQUnit) &&
+        Objects.equals(this.originalstorecardId, spmassemblylistrow.originalstorecardId) &&
+        Objects.equals(this.productiontaskId, spmassemblylistrow.productiontaskId) &&
+        Objects.equals(this.productiontaskrowId, spmassemblylistrow.productiontaskrowId) &&
+        Objects.equals(this.busorderId, spmassemblylistrow.busorderId) &&
+        Objects.equals(this.bustransactionId, spmassemblylistrow.bustransactionId) &&
+        Objects.equals(this.busprojectId, spmassemblylistrow.busprojectId) &&
+        Objects.equals(this.materialdistributionrowId, spmassemblylistrow.materialdistributionrowId) &&
+        Objects.equals(this.productreceptionrowId, spmassemblylistrow.productreceptionrowId) &&
+        Objects.equals(this.originalquantity, spmassemblylistrow.originalquantity) &&
+        Objects.equals(this.originalunitquantity, spmassemblylistrow.originalunitquantity) &&
+        Objects.equals(this.originalqunit, spmassemblylistrow.originalqunit) &&
         Objects.equals(this.description, spmassemblylistrow.description) &&
-        Objects.equals(this.originalUnitRate, spmassemblylistrow.originalUnitRate) &&
-        Objects.equals(this.originalPrice, spmassemblylistrow.originalPrice) &&
+        Objects.equals(this.originalunitrate, spmassemblylistrow.originalunitrate) &&
+        Objects.equals(this.originalprice, spmassemblylistrow.originalprice) &&
         Objects.equals(this.replaceable, spmassemblylistrow.replaceable) &&
         Objects.equals(this.calculated, spmassemblylistrow.calculated) &&
-        Objects.equals(this.transferQUnit, spmassemblylistrow.transferQUnit) &&
-        Objects.equals(this.transferUnitRate, spmassemblylistrow.transferUnitRate) &&
-        Objects.equals(this.transferQuantity, spmassemblylistrow.transferQuantity) &&
-        Objects.equals(this.materialQUnit, spmassemblylistrow.materialQUnit) &&
-        Objects.equals(this.operatingQUnit, spmassemblylistrow.operatingQUnit) &&
-        Objects.equals(this.materialUnitQuantity, spmassemblylistrow.materialUnitQuantity) &&
-        Objects.equals(this.operatingUnitQuantity, spmassemblylistrow.operatingUnitQuantity) &&
-        Objects.equals(this.demandStatus, spmassemblylistrow.demandStatus) &&
-        Objects.equals(this.unitWeight, spmassemblylistrow.unitWeight) &&
-        Objects.equals(this.unitWeightInGrams, spmassemblylistrow.unitWeightInGrams) &&
-        Objects.equals(this.unitWeightUnit, spmassemblylistrow.unitWeightUnit) &&
+        Objects.equals(this.transferqunit, spmassemblylistrow.transferqunit) &&
+        Objects.equals(this.transferunitrate, spmassemblylistrow.transferunitrate) &&
+        Objects.equals(this.transferquantity, spmassemblylistrow.transferquantity) &&
+        Objects.equals(this.materialqunit, spmassemblylistrow.materialqunit) &&
+        Objects.equals(this.operatingqunit, spmassemblylistrow.operatingqunit) &&
+        Objects.equals(this.materialunitquantity, spmassemblylistrow.materialunitquantity) &&
+        Objects.equals(this.operatingunitquantity, spmassemblylistrow.operatingunitquantity) &&
+        Objects.equals(this.demandstatus, spmassemblylistrow.demandstatus) &&
+        Objects.equals(this.unitweight, spmassemblylistrow.unitweight) &&
+        Objects.equals(this.unitweightingrams, spmassemblylistrow.unitweightingrams) &&
+        Objects.equals(this.unitweightunit, spmassemblylistrow.unitweightunit) &&
         Objects.equals(this.weight, spmassemblylistrow.weight) &&
-        Objects.equals(this.normSourceQuantity, spmassemblylistrow.normSourceQuantity) &&
-        Objects.equals(this.normDestQuantity, spmassemblylistrow.normDestQuantity) &&
-        Objects.equals(this.quantityProduced, spmassemblylistrow.quantityProduced) &&
-        Objects.equals(this.unitQuantityProduced, spmassemblylistrow.unitQuantityProduced);
+        Objects.equals(this.normsourcequantity, spmassemblylistrow.normsourcequantity) &&
+        Objects.equals(this.normdestquantity, spmassemblylistrow.normdestquantity) &&
+        Objects.equals(this.quantityproduced, spmassemblylistrow.quantityproduced) &&
+        Objects.equals(this.unitquantityproduced, spmassemblylistrow.unitquantityproduced);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, rowType, nodeLevel, nodeType, posKey, masterID, decomposition, useOperatingStore, storeCardID, storeID, storeIDForRow, quantity, unitQuantity, unitQuantityForProduct, priceForProduct, qUnit, unitRate, insufficientMaterialQuantity, insufficientMatUnitQuantity, insufficientMaterialQUnit, insufficientMaterialUnitRate, price, amount, originalStoreCardID, productionTaskID, productionTaskRowID, busOrderID, busTransactionID, busProjectID, materialDistributionRowID, productReceptionRowID, originalQuantity, originalUnitQuantity, originalQUnit, description, originalUnitRate, originalPrice, replaceable, calculated, transferQUnit, transferUnitRate, transferQuantity, materialQUnit, operatingQUnit, materialUnitQuantity, operatingUnitQuantity, demandStatus, unitWeight, unitWeightInGrams, unitWeightUnit, weight, normSourceQuantity, normDestQuantity, quantityProduced, unitQuantityProduced);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, rowtype, nodelevel, nodetype, poskey, masterId, decomposition, useoperatingstore, storecardId, storeId, storeIdforrow, quantity, unitquantity, unitquantityforproduct, priceforproduct, qunit, unitrate, insufficientmaterialquantity, insufficientmatunitquantity, insufficientmaterialqunit, insufficientmaterialunitrate, price, amount, originalstorecardId, productiontaskId, productiontaskrowId, busorderId, bustransactionId, busprojectId, materialdistributionrowId, productreceptionrowId, originalquantity, originalunitquantity, originalqunit, description, originalunitrate, originalprice, replaceable, calculated, transferqunit, transferunitrate, transferquantity, materialqunit, operatingqunit, materialunitquantity, operatingunitquantity, demandstatus, unitweight, unitweightingrams, unitweightunit, weight, normsourcequantity, normdestquantity, quantityproduced, unitquantityproduced);
   }
 
   @Override
@@ -1315,66 +1378,66 @@ public class Spmassemblylistrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Spmassemblylistrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    rowType: ").append(toIndentedString(rowType)).append("\n");
-    sb.append("    nodeLevel: ").append(toIndentedString(nodeLevel)).append("\n");
-    sb.append("    nodeType: ").append(toIndentedString(nodeType)).append("\n");
-    sb.append("    posKey: ").append(toIndentedString(posKey)).append("\n");
-    sb.append("    masterID: ").append(toIndentedString(masterID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    rowtype: ").append(toIndentedString(rowtype)).append("\n");
+    sb.append("    nodelevel: ").append(toIndentedString(nodelevel)).append("\n");
+    sb.append("    nodetype: ").append(toIndentedString(nodetype)).append("\n");
+    sb.append("    poskey: ").append(toIndentedString(poskey)).append("\n");
+    sb.append("    masterId: ").append(toIndentedString(masterId)).append("\n");
     sb.append("    decomposition: ").append(toIndentedString(decomposition)).append("\n");
-    sb.append("    useOperatingStore: ").append(toIndentedString(useOperatingStore)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    storeIDForRow: ").append(toIndentedString(storeIDForRow)).append("\n");
+    sb.append("    useoperatingstore: ").append(toIndentedString(useoperatingstore)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    storeIdforrow: ").append(toIndentedString(storeIdforrow)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    unitQuantity: ").append(toIndentedString(unitQuantity)).append("\n");
-    sb.append("    unitQuantityForProduct: ").append(toIndentedString(unitQuantityForProduct)).append("\n");
-    sb.append("    priceForProduct: ").append(toIndentedString(priceForProduct)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    insufficientMaterialQuantity: ").append(toIndentedString(insufficientMaterialQuantity)).append("\n");
-    sb.append("    insufficientMatUnitQuantity: ").append(toIndentedString(insufficientMatUnitQuantity)).append("\n");
-    sb.append("    insufficientMaterialQUnit: ").append(toIndentedString(insufficientMaterialQUnit)).append("\n");
-    sb.append("    insufficientMaterialUnitRate: ").append(toIndentedString(insufficientMaterialUnitRate)).append("\n");
+    sb.append("    unitquantity: ").append(toIndentedString(unitquantity)).append("\n");
+    sb.append("    unitquantityforproduct: ").append(toIndentedString(unitquantityforproduct)).append("\n");
+    sb.append("    priceforproduct: ").append(toIndentedString(priceforproduct)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    insufficientmaterialquantity: ").append(toIndentedString(insufficientmaterialquantity)).append("\n");
+    sb.append("    insufficientmatunitquantity: ").append(toIndentedString(insufficientmatunitquantity)).append("\n");
+    sb.append("    insufficientmaterialqunit: ").append(toIndentedString(insufficientmaterialqunit)).append("\n");
+    sb.append("    insufficientmaterialunitrate: ").append(toIndentedString(insufficientmaterialunitrate)).append("\n");
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    originalStoreCardID: ").append(toIndentedString(originalStoreCardID)).append("\n");
-    sb.append("    productionTaskID: ").append(toIndentedString(productionTaskID)).append("\n");
-    sb.append("    productionTaskRowID: ").append(toIndentedString(productionTaskRowID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    materialDistributionRowID: ").append(toIndentedString(materialDistributionRowID)).append("\n");
-    sb.append("    productReceptionRowID: ").append(toIndentedString(productReceptionRowID)).append("\n");
-    sb.append("    originalQuantity: ").append(toIndentedString(originalQuantity)).append("\n");
-    sb.append("    originalUnitQuantity: ").append(toIndentedString(originalUnitQuantity)).append("\n");
-    sb.append("    originalQUnit: ").append(toIndentedString(originalQUnit)).append("\n");
+    sb.append("    originalstorecardId: ").append(toIndentedString(originalstorecardId)).append("\n");
+    sb.append("    productiontaskId: ").append(toIndentedString(productiontaskId)).append("\n");
+    sb.append("    productiontaskrowId: ").append(toIndentedString(productiontaskrowId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    materialdistributionrowId: ").append(toIndentedString(materialdistributionrowId)).append("\n");
+    sb.append("    productreceptionrowId: ").append(toIndentedString(productreceptionrowId)).append("\n");
+    sb.append("    originalquantity: ").append(toIndentedString(originalquantity)).append("\n");
+    sb.append("    originalunitquantity: ").append(toIndentedString(originalunitquantity)).append("\n");
+    sb.append("    originalqunit: ").append(toIndentedString(originalqunit)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    originalUnitRate: ").append(toIndentedString(originalUnitRate)).append("\n");
-    sb.append("    originalPrice: ").append(toIndentedString(originalPrice)).append("\n");
+    sb.append("    originalunitrate: ").append(toIndentedString(originalunitrate)).append("\n");
+    sb.append("    originalprice: ").append(toIndentedString(originalprice)).append("\n");
     sb.append("    replaceable: ").append(toIndentedString(replaceable)).append("\n");
     sb.append("    calculated: ").append(toIndentedString(calculated)).append("\n");
-    sb.append("    transferQUnit: ").append(toIndentedString(transferQUnit)).append("\n");
-    sb.append("    transferUnitRate: ").append(toIndentedString(transferUnitRate)).append("\n");
-    sb.append("    transferQuantity: ").append(toIndentedString(transferQuantity)).append("\n");
-    sb.append("    materialQUnit: ").append(toIndentedString(materialQUnit)).append("\n");
-    sb.append("    operatingQUnit: ").append(toIndentedString(operatingQUnit)).append("\n");
-    sb.append("    materialUnitQuantity: ").append(toIndentedString(materialUnitQuantity)).append("\n");
-    sb.append("    operatingUnitQuantity: ").append(toIndentedString(operatingUnitQuantity)).append("\n");
-    sb.append("    demandStatus: ").append(toIndentedString(demandStatus)).append("\n");
-    sb.append("    unitWeight: ").append(toIndentedString(unitWeight)).append("\n");
-    sb.append("    unitWeightInGrams: ").append(toIndentedString(unitWeightInGrams)).append("\n");
-    sb.append("    unitWeightUnit: ").append(toIndentedString(unitWeightUnit)).append("\n");
+    sb.append("    transferqunit: ").append(toIndentedString(transferqunit)).append("\n");
+    sb.append("    transferunitrate: ").append(toIndentedString(transferunitrate)).append("\n");
+    sb.append("    transferquantity: ").append(toIndentedString(transferquantity)).append("\n");
+    sb.append("    materialqunit: ").append(toIndentedString(materialqunit)).append("\n");
+    sb.append("    operatingqunit: ").append(toIndentedString(operatingqunit)).append("\n");
+    sb.append("    materialunitquantity: ").append(toIndentedString(materialunitquantity)).append("\n");
+    sb.append("    operatingunitquantity: ").append(toIndentedString(operatingunitquantity)).append("\n");
+    sb.append("    demandstatus: ").append(toIndentedString(demandstatus)).append("\n");
+    sb.append("    unitweight: ").append(toIndentedString(unitweight)).append("\n");
+    sb.append("    unitweightingrams: ").append(toIndentedString(unitweightingrams)).append("\n");
+    sb.append("    unitweightunit: ").append(toIndentedString(unitweightunit)).append("\n");
     sb.append("    weight: ").append(toIndentedString(weight)).append("\n");
-    sb.append("    normSourceQuantity: ").append(toIndentedString(normSourceQuantity)).append("\n");
-    sb.append("    normDestQuantity: ").append(toIndentedString(normDestQuantity)).append("\n");
-    sb.append("    quantityProduced: ").append(toIndentedString(quantityProduced)).append("\n");
-    sb.append("    unitQuantityProduced: ").append(toIndentedString(unitQuantityProduced)).append("\n");
+    sb.append("    normsourcequantity: ").append(toIndentedString(normsourcequantity)).append("\n");
+    sb.append("    normdestquantity: ").append(toIndentedString(normdestquantity)).append("\n");
+    sb.append("    quantityproduced: ").append(toIndentedString(quantityproduced)).append("\n");
+    sb.append("    unitquantityproduced: ").append(toIndentedString(unitquantityproduced)).append("\n");
     sb.append("}");
     return sb.toString();
   }

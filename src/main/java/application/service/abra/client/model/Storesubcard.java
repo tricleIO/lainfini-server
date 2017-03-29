@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,240 +35,276 @@ import java.util.Objects;
 /**
  * Storesubcard
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Storesubcard   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("Location_ID")
-  private String locationID = null;
+  @SerializedName("location_id")
+  private String locationId = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("PurchasePrice")
-  private Double purchasePrice = null;
+  @SerializedName("purchaseprice")
+  private Double purchaseprice = null;
 
-  @SerializedName("AdditionalPurchasePrice")
-  private Double additionalPurchasePrice = null;
+  @SerializedName("additionalpurchaseprice")
+  private Double additionalpurchaseprice = null;
 
-  @SerializedName("PurchaseCurrency_ID")
-  private String purchaseCurrencyID = null;
+  @SerializedName("purchasecurrency_id")
+  private String purchasecurrencyId = null;
 
-  @SerializedName("PurchaseCurrRate")
-  private Double purchaseCurrRate = null;
+  @SerializedName("purchasecurrrate")
+  private Double purchasecurrrate = null;
 
-  @SerializedName("PurchaseRefCurrRate")
-  private Double purchaseRefCurrRate = null;
+  @SerializedName("purchaserefcurrrate")
+  private Double purchaserefcurrrate = null;
 
-  @SerializedName("PurchaseCoef")
-  private Integer purchaseCoef = null;
+  @SerializedName("purchasecoef")
+  private Integer purchasecoef = null;
 
-  @SerializedName("LocalPurchaseCoef")
-  private Integer localPurchaseCoef = null;
+  @SerializedName("localpurchasecoef")
+  private Integer localpurchasecoef = null;
 
-  @SerializedName("PurchaseZone_ID")
-  private String purchaseZoneID = null;
+  @SerializedName("purchasezone_id")
+  private String purchasezoneId = null;
 
-  @SerializedName("LocalPurchaseZone_ID")
-  private String localPurchaseZoneID = null;
+  @SerializedName("localpurchasezone_id")
+  private String localpurchasezoneId = null;
 
-  @SerializedName("PurchaseFirm_ID")
-  private String purchaseFirmID = null;
+  @SerializedName("purchasefirm_id")
+  private String purchasefirmId = null;
 
-  @SerializedName("TransportationPercentage")
-  private Double transportationPercentage = null;
+  @SerializedName("transportationpercentage")
+  private Double transportationpercentage = null;
 
-  @SerializedName("OtherCostPercentage")
-  private Double otherCostPercentage = null;
+  @SerializedName("othercostpercentage")
+  private Double othercostpercentage = null;
 
-  @SerializedName("PurchaseDate$DATE")
-  private DateTime purchaseDateDATE = null;
+  @SerializedName("purchasedate$date")
+  private DateTime purchasedatedate = null;
 
-  @SerializedName("InvQuantity")
-  private Double invQuantity = null;
+  @SerializedName("invquantity")
+  private Double invquantity = null;
 
-  @SerializedName("InvQUnitRate")
-  private Double invQUnitRate = null;
+  @SerializedName("invqunitrate")
+  private Double invqunitrate = null;
 
-  @SerializedName("InvQUnitCode")
-  private String invQUnitCode = null;
+  @SerializedName("invqunitcode")
+  private String invqunitcode = null;
 
-  @SerializedName("InvChange")
-  private Boolean invChange = null;
+  @SerializedName("invchange")
+  private Boolean invchange = null;
 
-  @SerializedName("LowLimitQuantity")
-  private Double lowLimitQuantity = null;
+  @SerializedName("lowlimitquantity")
+  private Double lowlimitquantity = null;
 
-  @SerializedName("HighLimitQuantity")
-  private Double highLimitQuantity = null;
+  @SerializedName("highlimitquantity")
+  private Double highlimitquantity = null;
 
-  @SerializedName("UnitLowLimitQuantity")
-  private Double unitLowLimitQuantity = null;
+  @SerializedName("unitlowlimitquantity")
+  private Double unitlowlimitquantity = null;
 
-  @SerializedName("UnitHighLimitQuantity")
-  private Double unitHighLimitQuantity = null;
+  @SerializedName("unithighlimitquantity")
+  private Double unithighlimitquantity = null;
 
-  @SerializedName("MainUnitCode")
-  private String mainUnitCode = null;
+  @SerializedName("mainunitcode")
+  private String mainunitcode = null;
 
-  @SerializedName("MainUnitQuantity")
-  private Double mainUnitQuantity = null;
+  @SerializedName("mainunitquantity")
+  private Double mainunitquantity = null;
 
-  @SerializedName("MainUnitPurchasePrice")
-  private Double mainUnitPurchasePrice = null;
+  @SerializedName("mainunitpurchaseprice")
+  private Double mainunitpurchaseprice = null;
 
-  @SerializedName("MainUnitAdditionalPurchasePrice")
-  private Double mainUnitAdditionalPurchasePrice = null;
+  @SerializedName("mainunitadditionalpurchaseprice")
+  private Double mainunitadditionalpurchaseprice = null;
 
-  @SerializedName("PurchaseRefCurrency_ID")
-  private String purchaseRefCurrencyID = null;
+  @SerializedName("purchaserefcurrency_id")
+  private String purchaserefcurrencyId = null;
 
-  @SerializedName("LocalPurchaseRefCurrency_ID")
-  private String localPurchaseRefCurrencyID = null;
+  @SerializedName("localpurchaserefcurrency_id")
+  private String localpurchaserefcurrencyId = null;
 
-  @SerializedName("CanValidateOutOfStock")
-  private Boolean canValidateOutOfStock = null;
+  @SerializedName("canvalidateoutofstock")
+  private Boolean canvalidateoutofstock = null;
 
-  @SerializedName("IntrastatInputStatistic_ID")
-  private String intrastatInputStatisticID = null;
+  @SerializedName("intrastatinputstatistic_id")
+  private String intrastatinputstatisticId = null;
 
-  @SerializedName("IntrastatOutputStatistic_ID")
-  private String intrastatOutputStatisticID = null;
+  @SerializedName("intrastatoutputstatistic_id")
+  private String intrastatoutputstatisticId = null;
 
-  @SerializedName("ReceivedOrderedQuantity")
-  private Double receivedOrderedQuantity = null;
+  @SerializedName("receivedorderedquantity")
+  private Double receivedorderedquantity = null;
 
-  @SerializedName("ReceivedOrderedUnitQuantity")
-  private Double receivedOrderedUnitQuantity = null;
+  @SerializedName("receivedorderedunitquantity")
+  private Double receivedorderedunitquantity = null;
 
-  @SerializedName("IssuedOrderedQuantity")
-  private Double issuedOrderedQuantity = null;
+  @SerializedName("issuedorderedquantity")
+  private Double issuedorderedquantity = null;
 
-  @SerializedName("IssuedOrderedUnitQuantity")
-  private Double issuedOrderedUnitQuantity = null;
+  @SerializedName("issuedorderedunitquantity")
+  private Double issuedorderedunitquantity = null;
 
-  @SerializedName("InventoryStatus")
-  private Integer inventoryStatus = null;
+  @SerializedName("inventorystatus")
+  private Integer inventorystatus = null;
 
-  @SerializedName("LastInventory$DATE")
-  private DateTime lastInventoryDATE = null;
+  @SerializedName("lastinventory$date")
+  private DateTime lastinventorydate = null;
 
-  @SerializedName("DateOfEndInventory$DATE")
-  private DateTime dateOfEndInventoryDATE = null;
+  @SerializedName("dateofendinventory$date")
+  private DateTime dateofendinventorydate = null;
 
-  @SerializedName("AverageStorePrice")
-  private Double averageStorePrice = null;
+  @SerializedName("averagestoreprice")
+  private Double averagestoreprice = null;
 
-  @SerializedName("AverageStorePriceDate$DATE")
-  private DateTime averageStorePriceDateDATE = null;
+  @SerializedName("averagestorepricedate$date")
+  private DateTime averagestorepricedatedate = null;
 
-  @SerializedName("MainUnitAverageStorePrice")
-  private Double mainUnitAverageStorePrice = null;
+  @SerializedName("mainunitaveragestoreprice")
+  private Double mainunitaveragestoreprice = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Storesubcard storeID(String storeID) {
-    this.storeID = storeID;
+  public Storesubcard displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Storesubcard storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Storesubcard id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Hl. karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Hl. karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Storesubcard locationID(String locationID) {
-    this.locationID = locationID;
+  public Storesubcard classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Místo; ID objektu Skladové místo [persistentní položka]
-   * @return locationID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Místo; ID objektu Skladové místo [persistentní položka]")
-  public String getLocationID() {
-    return locationID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setLocationID(String locationID) {
-    this.locationID = locationID;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Storesubcard objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Storesubcard storeId(String storeId) {
+    this.storeId = storeId;
+    return this;
+  }
+
+   /**
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
+  **/
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
+  }
+
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
+  }
+
+  public Storesubcard storecardId(String storecardId) {
+    this.storecardId = storecardId;
+    return this;
+  }
+
+   /**
+   * hl. karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
+  **/
+  @ApiModelProperty(example = "null", value = "hl. karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
+  }
+
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
+  }
+
+  public Storesubcard locationId(String locationId) {
+    this.locationId = locationId;
+    return this;
+  }
+
+   /**
+   * místo; id objektu skladové místo [persistentní položka]
+   * @return locationId
+  **/
+  @ApiModelProperty(example = "null", value = "místo; id objektu skladové místo [persistentní položka]")
+  public String getLocationId() {
+    return locationId;
+  }
+
+  public void setLocationId(String locationId) {
+    this.locationId = locationId;
   }
 
   public Storesubcard quantity(Double quantity) {
@@ -277,10 +313,10 @@ public class Storesubcard   {
   }
 
    /**
-   * Množství [persistentní položka]
+   * množství [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "množství [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -289,688 +325,724 @@ public class Storesubcard   {
     this.quantity = quantity;
   }
 
-  public Storesubcard purchasePrice(Double purchasePrice) {
-    this.purchasePrice = purchasePrice;
+  public Storesubcard purchaseprice(Double purchaseprice) {
+    this.purchaseprice = purchaseprice;
     return this;
   }
 
    /**
-   * Nákup.cena [persistentní položka]
-   * @return purchasePrice
+   * nákup.cena [persistentní položka]
+   * @return purchaseprice
   **/
-  @ApiModelProperty(example = "null", value = "Nákup.cena [persistentní položka]")
-  public Double getPurchasePrice() {
-    return purchasePrice;
+  @ApiModelProperty(example = "null", value = "nákup.cena [persistentní položka]")
+  public Double getPurchaseprice() {
+    return purchaseprice;
   }
 
-  public void setPurchasePrice(Double purchasePrice) {
-    this.purchasePrice = purchasePrice;
+  public void setPurchaseprice(Double purchaseprice) {
+    this.purchaseprice = purchaseprice;
   }
 
-  public Storesubcard additionalPurchasePrice(Double additionalPurchasePrice) {
-    this.additionalPurchasePrice = additionalPurchasePrice;
+  public Storesubcard additionalpurchaseprice(Double additionalpurchaseprice) {
+    this.additionalpurchaseprice = additionalpurchaseprice;
     return this;
   }
 
    /**
-   * Dopl.nákup.cena [persistentní položka]
-   * @return additionalPurchasePrice
+   * dopl.nákup.cena [persistentní položka]
+   * @return additionalpurchaseprice
   **/
-  @ApiModelProperty(example = "null", value = "Dopl.nákup.cena [persistentní položka]")
-  public Double getAdditionalPurchasePrice() {
-    return additionalPurchasePrice;
+  @ApiModelProperty(example = "null", value = "dopl.nákup.cena [persistentní položka]")
+  public Double getAdditionalpurchaseprice() {
+    return additionalpurchaseprice;
   }
 
-  public void setAdditionalPurchasePrice(Double additionalPurchasePrice) {
-    this.additionalPurchasePrice = additionalPurchasePrice;
+  public void setAdditionalpurchaseprice(Double additionalpurchaseprice) {
+    this.additionalpurchaseprice = additionalpurchaseprice;
   }
 
-  public Storesubcard purchaseCurrencyID(String purchaseCurrencyID) {
-    this.purchaseCurrencyID = purchaseCurrencyID;
+  public Storesubcard purchasecurrencyId(String purchasecurrencyId) {
+    this.purchasecurrencyId = purchasecurrencyId;
     return this;
   }
 
    /**
-   * Nákup.měna; ID objektu Měna [persistentní položka]
-   * @return purchaseCurrencyID
+   * nákup.měna; id objektu měna [persistentní položka]
+   * @return purchasecurrencyId
   **/
-  @ApiModelProperty(example = "null", value = "Nákup.měna; ID objektu Měna [persistentní položka]")
-  public String getPurchaseCurrencyID() {
-    return purchaseCurrencyID;
+  @ApiModelProperty(example = "null", value = "nákup.měna; id objektu měna [persistentní položka]")
+  public String getPurchasecurrencyId() {
+    return purchasecurrencyId;
   }
 
-  public void setPurchaseCurrencyID(String purchaseCurrencyID) {
-    this.purchaseCurrencyID = purchaseCurrencyID;
+  public void setPurchasecurrencyId(String purchasecurrencyId) {
+    this.purchasecurrencyId = purchasecurrencyId;
   }
 
-  public Storesubcard purchaseCurrRate(Double purchaseCurrRate) {
-    this.purchaseCurrRate = purchaseCurrRate;
+  public Storesubcard purchasecurrrate(Double purchasecurrrate) {
+    this.purchasecurrrate = purchasecurrrate;
     return this;
   }
 
    /**
-   * Nákup.kurz [persistentní položka]
-   * @return purchaseCurrRate
+   * nákup.kurz [persistentní položka]
+   * @return purchasecurrrate
   **/
-  @ApiModelProperty(example = "null", value = "Nákup.kurz [persistentní položka]")
-  public Double getPurchaseCurrRate() {
-    return purchaseCurrRate;
+  @ApiModelProperty(example = "null", value = "nákup.kurz [persistentní položka]")
+  public Double getPurchasecurrrate() {
+    return purchasecurrrate;
   }
 
-  public void setPurchaseCurrRate(Double purchaseCurrRate) {
-    this.purchaseCurrRate = purchaseCurrRate;
+  public void setPurchasecurrrate(Double purchasecurrrate) {
+    this.purchasecurrrate = purchasecurrrate;
   }
 
-  public Storesubcard purchaseRefCurrRate(Double purchaseRefCurrRate) {
-    this.purchaseRefCurrRate = purchaseRefCurrRate;
+  public Storesubcard purchaserefcurrrate(Double purchaserefcurrrate) {
+    this.purchaserefcurrrate = purchaserefcurrrate;
     return this;
   }
 
    /**
-   * Nákup.vzt.kurz [persistentní položka]
-   * @return purchaseRefCurrRate
+   * nákup.vzt.kurz [persistentní položka]
+   * @return purchaserefcurrrate
   **/
-  @ApiModelProperty(example = "null", value = "Nákup.vzt.kurz [persistentní položka]")
-  public Double getPurchaseRefCurrRate() {
-    return purchaseRefCurrRate;
+  @ApiModelProperty(example = "null", value = "nákup.vzt.kurz [persistentní položka]")
+  public Double getPurchaserefcurrrate() {
+    return purchaserefcurrrate;
   }
 
-  public void setPurchaseRefCurrRate(Double purchaseRefCurrRate) {
-    this.purchaseRefCurrRate = purchaseRefCurrRate;
+  public void setPurchaserefcurrrate(Double purchaserefcurrrate) {
+    this.purchaserefcurrrate = purchaserefcurrrate;
   }
 
-  public Storesubcard purchaseCoef(Integer purchaseCoef) {
-    this.purchaseCoef = purchaseCoef;
+  public Storesubcard purchasecoef(Integer purchasecoef) {
+    this.purchasecoef = purchasecoef;
     return this;
   }
 
    /**
-   * Koeficient [persistentní položka]
-   * @return purchaseCoef
+   * koeficient [persistentní položka]
+   * @return purchasecoef
   **/
-  @ApiModelProperty(example = "null", value = "Koeficient [persistentní položka]")
-  public Integer getPurchaseCoef() {
-    return purchaseCoef;
+  @ApiModelProperty(example = "null", value = "koeficient [persistentní položka]")
+  public Integer getPurchasecoef() {
+    return purchasecoef;
   }
 
-  public void setPurchaseCoef(Integer purchaseCoef) {
-    this.purchaseCoef = purchaseCoef;
+  public void setPurchasecoef(Integer purchasecoef) {
+    this.purchasecoef = purchasecoef;
   }
 
-  public Storesubcard localPurchaseCoef(Integer localPurchaseCoef) {
-    this.localPurchaseCoef = localPurchaseCoef;
+  public Storesubcard localpurchasecoef(Integer localpurchasecoef) {
+    this.localpurchasecoef = localpurchasecoef;
     return this;
   }
 
    /**
-   * Lokální koeficient [persistentní položka]
-   * @return localPurchaseCoef
+   * lokální koeficient [persistentní položka]
+   * @return localpurchasecoef
   **/
-  @ApiModelProperty(example = "null", value = "Lokální koeficient [persistentní položka]")
-  public Integer getLocalPurchaseCoef() {
-    return localPurchaseCoef;
+  @ApiModelProperty(example = "null", value = "lokální koeficient [persistentní položka]")
+  public Integer getLocalpurchasecoef() {
+    return localpurchasecoef;
   }
 
-  public void setLocalPurchaseCoef(Integer localPurchaseCoef) {
-    this.localPurchaseCoef = localPurchaseCoef;
+  public void setLocalpurchasecoef(Integer localpurchasecoef) {
+    this.localpurchasecoef = localpurchasecoef;
   }
 
-  public Storesubcard purchaseZoneID(String purchaseZoneID) {
-    this.purchaseZoneID = purchaseZoneID;
+  public Storesubcard purchasezoneId(String purchasezoneId) {
+    this.purchasezoneId = purchasezoneId;
     return this;
   }
 
    /**
-   * Zóna; ID objektu Měna [persistentní položka]
-   * @return purchaseZoneID
+   * zóna; id objektu měna [persistentní položka]
+   * @return purchasezoneId
   **/
-  @ApiModelProperty(example = "null", value = "Zóna; ID objektu Měna [persistentní položka]")
-  public String getPurchaseZoneID() {
-    return purchaseZoneID;
+  @ApiModelProperty(example = "null", value = "zóna; id objektu měna [persistentní položka]")
+  public String getPurchasezoneId() {
+    return purchasezoneId;
   }
 
-  public void setPurchaseZoneID(String purchaseZoneID) {
-    this.purchaseZoneID = purchaseZoneID;
+  public void setPurchasezoneId(String purchasezoneId) {
+    this.purchasezoneId = purchasezoneId;
   }
 
-  public Storesubcard localPurchaseZoneID(String localPurchaseZoneID) {
-    this.localPurchaseZoneID = localPurchaseZoneID;
+  public Storesubcard localpurchasezoneId(String localpurchasezoneId) {
+    this.localpurchasezoneId = localpurchasezoneId;
     return this;
   }
 
    /**
-   * Lokální zóna; ID objektu Měna [persistentní položka]
-   * @return localPurchaseZoneID
+   * lokální zóna; id objektu měna [persistentní položka]
+   * @return localpurchasezoneId
   **/
-  @ApiModelProperty(example = "null", value = "Lokální zóna; ID objektu Měna [persistentní položka]")
-  public String getLocalPurchaseZoneID() {
-    return localPurchaseZoneID;
+  @ApiModelProperty(example = "null", value = "lokální zóna; id objektu měna [persistentní položka]")
+  public String getLocalpurchasezoneId() {
+    return localpurchasezoneId;
   }
 
-  public void setLocalPurchaseZoneID(String localPurchaseZoneID) {
-    this.localPurchaseZoneID = localPurchaseZoneID;
+  public void setLocalpurchasezoneId(String localpurchasezoneId) {
+    this.localpurchasezoneId = localpurchasezoneId;
   }
 
-  public Storesubcard purchaseFirmID(String purchaseFirmID) {
-    this.purchaseFirmID = purchaseFirmID;
+  public Storesubcard purchasefirmId(String purchasefirmId) {
+    this.purchasefirmId = purchasefirmId;
     return this;
   }
 
    /**
-   * Dodavatel; ID objektu Firma [persistentní položka]
-   * @return purchaseFirmID
+   * dodavatel; id objektu firma [persistentní položka]
+   * @return purchasefirmId
   **/
-  @ApiModelProperty(example = "null", value = "Dodavatel; ID objektu Firma [persistentní položka]")
-  public String getPurchaseFirmID() {
-    return purchaseFirmID;
+  @ApiModelProperty(example = "null", value = "dodavatel; id objektu firma [persistentní položka]")
+  public String getPurchasefirmId() {
+    return purchasefirmId;
   }
 
-  public void setPurchaseFirmID(String purchaseFirmID) {
-    this.purchaseFirmID = purchaseFirmID;
+  public void setPurchasefirmId(String purchasefirmId) {
+    this.purchasefirmId = purchasefirmId;
   }
 
-  public Storesubcard transportationPercentage(Double transportationPercentage) {
-    this.transportationPercentage = transportationPercentage;
+  public Storesubcard transportationpercentage(Double transportationpercentage) {
+    this.transportationpercentage = transportationpercentage;
     return this;
   }
 
    /**
-   * Proc.dopravy [persistentní položka]
-   * @return transportationPercentage
+   * proc.dopravy [persistentní položka]
+   * @return transportationpercentage
   **/
-  @ApiModelProperty(example = "null", value = "Proc.dopravy [persistentní položka]")
-  public Double getTransportationPercentage() {
-    return transportationPercentage;
+  @ApiModelProperty(example = "null", value = "proc.dopravy [persistentní položka]")
+  public Double getTransportationpercentage() {
+    return transportationpercentage;
   }
 
-  public void setTransportationPercentage(Double transportationPercentage) {
-    this.transportationPercentage = transportationPercentage;
+  public void setTransportationpercentage(Double transportationpercentage) {
+    this.transportationpercentage = transportationpercentage;
   }
 
-  public Storesubcard otherCostPercentage(Double otherCostPercentage) {
-    this.otherCostPercentage = otherCostPercentage;
+  public Storesubcard othercostpercentage(Double othercostpercentage) {
+    this.othercostpercentage = othercostpercentage;
     return this;
   }
 
    /**
-   * Proc.ost.nákladů [persistentní položka]
-   * @return otherCostPercentage
+   * proc.ost.nákladů [persistentní položka]
+   * @return othercostpercentage
   **/
-  @ApiModelProperty(example = "null", value = "Proc.ost.nákladů [persistentní položka]")
-  public Double getOtherCostPercentage() {
-    return otherCostPercentage;
+  @ApiModelProperty(example = "null", value = "proc.ost.nákladů [persistentní položka]")
+  public Double getOthercostpercentage() {
+    return othercostpercentage;
   }
 
-  public void setOtherCostPercentage(Double otherCostPercentage) {
-    this.otherCostPercentage = otherCostPercentage;
+  public void setOthercostpercentage(Double othercostpercentage) {
+    this.othercostpercentage = othercostpercentage;
   }
 
-  public Storesubcard purchaseDateDATE(DateTime purchaseDateDATE) {
-    this.purchaseDateDATE = purchaseDateDATE;
+  public Storesubcard purchasedatedate(DateTime purchasedatedate) {
+    this.purchasedatedate = purchasedatedate;
     return this;
   }
 
    /**
-   * Datum nák. [persistentní položka]
-   * @return purchaseDateDATE
+   * datum nák. [persistentní položka]
+   * @return purchasedatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum nák. [persistentní položka]")
-  public DateTime getPurchaseDateDATE() {
-    return purchaseDateDATE;
+  @ApiModelProperty(example = "null", value = "datum nák. [persistentní položka]")
+  public DateTime getPurchasedatedate() {
+    return purchasedatedate;
   }
 
-  public void setPurchaseDateDATE(DateTime purchaseDateDATE) {
-    this.purchaseDateDATE = purchaseDateDATE;
+  public void setPurchasedatedate(DateTime purchasedatedate) {
+    this.purchasedatedate = purchasedatedate;
   }
 
-  public Storesubcard invQuantity(Double invQuantity) {
-    this.invQuantity = invQuantity;
+  public Storesubcard invquantity(Double invquantity) {
+    this.invquantity = invquantity;
     return this;
   }
 
    /**
-   * Skutečné množství (inv.) [persistentní položka]
-   * @return invQuantity
+   * skutečné množství (inv.) [persistentní položka]
+   * @return invquantity
   **/
-  @ApiModelProperty(example = "null", value = "Skutečné množství (inv.) [persistentní položka]")
-  public Double getInvQuantity() {
-    return invQuantity;
+  @ApiModelProperty(example = "null", value = "skutečné množství (inv.) [persistentní položka]")
+  public Double getInvquantity() {
+    return invquantity;
   }
 
-  public void setInvQuantity(Double invQuantity) {
-    this.invQuantity = invQuantity;
+  public void setInvquantity(Double invquantity) {
+    this.invquantity = invquantity;
   }
 
-  public Storesubcard invQUnitRate(Double invQUnitRate) {
-    this.invQUnitRate = invQUnitRate;
+  public Storesubcard invqunitrate(Double invqunitrate) {
+    this.invqunitrate = invqunitrate;
     return this;
   }
 
    /**
-   * Vztah jednotek (inv.) [persistentní položka]
-   * @return invQUnitRate
+   * vztah jednotek (inv.) [persistentní položka]
+   * @return invqunitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah jednotek (inv.) [persistentní položka]")
-  public Double getInvQUnitRate() {
-    return invQUnitRate;
+  @ApiModelProperty(example = "null", value = "vztah jednotek (inv.) [persistentní položka]")
+  public Double getInvqunitrate() {
+    return invqunitrate;
   }
 
-  public void setInvQUnitRate(Double invQUnitRate) {
-    this.invQUnitRate = invQUnitRate;
+  public void setInvqunitrate(Double invqunitrate) {
+    this.invqunitrate = invqunitrate;
   }
 
-  public Storesubcard invQUnitCode(String invQUnitCode) {
-    this.invQUnitCode = invQUnitCode;
+  public Storesubcard invqunitcode(String invqunitcode) {
+    this.invqunitcode = invqunitcode;
     return this;
   }
 
    /**
-   * Jednotka (inv.) [persistentní položka]
-   * @return invQUnitCode
+   * jednotka (inv.) [persistentní položka]
+   * @return invqunitcode
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka (inv.) [persistentní položka]")
-  public String getInvQUnitCode() {
-    return invQUnitCode;
+  @ApiModelProperty(example = "null", value = "jednotka (inv.) [persistentní položka]")
+  public String getInvqunitcode() {
+    return invqunitcode;
   }
 
-  public void setInvQUnitCode(String invQUnitCode) {
-    this.invQUnitCode = invQUnitCode;
+  public void setInvqunitcode(String invqunitcode) {
+    this.invqunitcode = invqunitcode;
   }
 
-  public Storesubcard invChange(Boolean invChange) {
-    this.invChange = invChange;
+  public Storesubcard invchange(Boolean invchange) {
+    this.invchange = invchange;
     return this;
   }
 
    /**
-   * Inventární změna [persistentní položka]
-   * @return invChange
+   * inventární změna [persistentní položka]
+   * @return invchange
   **/
-  @ApiModelProperty(example = "null", value = "Inventární změna [persistentní položka]")
-  public Boolean getInvChange() {
-    return invChange;
+  @ApiModelProperty(example = "null", value = "inventární změna [persistentní položka]")
+  public Boolean getInvchange() {
+    return invchange;
   }
 
-  public void setInvChange(Boolean invChange) {
-    this.invChange = invChange;
+  public void setInvchange(Boolean invchange) {
+    this.invchange = invchange;
   }
 
-  public Storesubcard lowLimitQuantity(Double lowLimitQuantity) {
-    this.lowLimitQuantity = lowLimitQuantity;
+  public Storesubcard lowlimitquantity(Double lowlimitquantity) {
+    this.lowlimitquantity = lowlimitquantity;
     return this;
   }
 
    /**
-   * Spodní limit [persistentní položka]
-   * @return lowLimitQuantity
+   * spodní limit [persistentní položka]
+   * @return lowlimitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Spodní limit [persistentní položka]")
-  public Double getLowLimitQuantity() {
-    return lowLimitQuantity;
+  @ApiModelProperty(example = "null", value = "spodní limit [persistentní položka]")
+  public Double getLowlimitquantity() {
+    return lowlimitquantity;
   }
 
-  public void setLowLimitQuantity(Double lowLimitQuantity) {
-    this.lowLimitQuantity = lowLimitQuantity;
+  public void setLowlimitquantity(Double lowlimitquantity) {
+    this.lowlimitquantity = lowlimitquantity;
   }
 
-  public Storesubcard highLimitQuantity(Double highLimitQuantity) {
-    this.highLimitQuantity = highLimitQuantity;
+  public Storesubcard highlimitquantity(Double highlimitquantity) {
+    this.highlimitquantity = highlimitquantity;
     return this;
   }
 
    /**
-   * Horní limit [persistentní položka]
-   * @return highLimitQuantity
+   * horní limit [persistentní položka]
+   * @return highlimitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Horní limit [persistentní položka]")
-  public Double getHighLimitQuantity() {
-    return highLimitQuantity;
+  @ApiModelProperty(example = "null", value = "horní limit [persistentní položka]")
+  public Double getHighlimitquantity() {
+    return highlimitquantity;
   }
 
-  public void setHighLimitQuantity(Double highLimitQuantity) {
-    this.highLimitQuantity = highLimitQuantity;
+  public void setHighlimitquantity(Double highlimitquantity) {
+    this.highlimitquantity = highlimitquantity;
   }
 
-  public Storesubcard unitLowLimitQuantity(Double unitLowLimitQuantity) {
-    this.unitLowLimitQuantity = unitLowLimitQuantity;
+  public Storesubcard unitlowlimitquantity(Double unitlowlimitquantity) {
+    this.unitlowlimitquantity = unitlowlimitquantity;
     return this;
   }
 
    /**
-   * Spodní limit
-   * @return unitLowLimitQuantity
+   * spodní limit
+   * @return unitlowlimitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Spodní limit")
-  public Double getUnitLowLimitQuantity() {
-    return unitLowLimitQuantity;
+  @ApiModelProperty(example = "null", value = "spodní limit")
+  public Double getUnitlowlimitquantity() {
+    return unitlowlimitquantity;
   }
 
-  public void setUnitLowLimitQuantity(Double unitLowLimitQuantity) {
-    this.unitLowLimitQuantity = unitLowLimitQuantity;
+  public void setUnitlowlimitquantity(Double unitlowlimitquantity) {
+    this.unitlowlimitquantity = unitlowlimitquantity;
   }
 
-  public Storesubcard unitHighLimitQuantity(Double unitHighLimitQuantity) {
-    this.unitHighLimitQuantity = unitHighLimitQuantity;
+  public Storesubcard unithighlimitquantity(Double unithighlimitquantity) {
+    this.unithighlimitquantity = unithighlimitquantity;
     return this;
   }
 
    /**
-   * Horní limit
-   * @return unitHighLimitQuantity
+   * horní limit
+   * @return unithighlimitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Horní limit")
-  public Double getUnitHighLimitQuantity() {
-    return unitHighLimitQuantity;
+  @ApiModelProperty(example = "null", value = "horní limit")
+  public Double getUnithighlimitquantity() {
+    return unithighlimitquantity;
   }
 
-  public void setUnitHighLimitQuantity(Double unitHighLimitQuantity) {
-    this.unitHighLimitQuantity = unitHighLimitQuantity;
+  public void setUnithighlimitquantity(Double unithighlimitquantity) {
+    this.unithighlimitquantity = unithighlimitquantity;
   }
 
-   /**
-   * Hlavní jednotka
-   * @return mainUnitCode
-  **/
-  @ApiModelProperty(example = "null", value = "Hlavní jednotka")
-  public String getMainUnitCode() {
-    return mainUnitCode;
-  }
-
-   /**
-   * Množství v hl. jednotce
-   * @return mainUnitQuantity
-  **/
-  @ApiModelProperty(example = "null", value = "Množství v hl. jednotce")
-  public Double getMainUnitQuantity() {
-    return mainUnitQuantity;
-  }
-
-  public Storesubcard mainUnitPurchasePrice(Double mainUnitPurchasePrice) {
-    this.mainUnitPurchasePrice = mainUnitPurchasePrice;
+  public Storesubcard mainunitcode(String mainunitcode) {
+    this.mainunitcode = mainunitcode;
     return this;
   }
 
    /**
-   * Nákup.cena k hl. jednotce
-   * @return mainUnitPurchasePrice
+   * hlavní jednotka
+   * @return mainunitcode
   **/
-  @ApiModelProperty(example = "null", value = "Nákup.cena k hl. jednotce")
-  public Double getMainUnitPurchasePrice() {
-    return mainUnitPurchasePrice;
+  @ApiModelProperty(example = "null", value = "hlavní jednotka")
+  public String getMainunitcode() {
+    return mainunitcode;
   }
 
-  public void setMainUnitPurchasePrice(Double mainUnitPurchasePrice) {
-    this.mainUnitPurchasePrice = mainUnitPurchasePrice;
+  public void setMainunitcode(String mainunitcode) {
+    this.mainunitcode = mainunitcode;
   }
 
-  public Storesubcard mainUnitAdditionalPurchasePrice(Double mainUnitAdditionalPurchasePrice) {
-    this.mainUnitAdditionalPurchasePrice = mainUnitAdditionalPurchasePrice;
+  public Storesubcard mainunitquantity(Double mainunitquantity) {
+    this.mainunitquantity = mainunitquantity;
     return this;
   }
 
    /**
-   * Dopl.nákup.cena k hl. jednotce
-   * @return mainUnitAdditionalPurchasePrice
+   * množství v hl. jednotce
+   * @return mainunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Dopl.nákup.cena k hl. jednotce")
-  public Double getMainUnitAdditionalPurchasePrice() {
-    return mainUnitAdditionalPurchasePrice;
+  @ApiModelProperty(example = "null", value = "množství v hl. jednotce")
+  public Double getMainunitquantity() {
+    return mainunitquantity;
   }
 
-  public void setMainUnitAdditionalPurchasePrice(Double mainUnitAdditionalPurchasePrice) {
-    this.mainUnitAdditionalPurchasePrice = mainUnitAdditionalPurchasePrice;
+  public void setMainunitquantity(Double mainunitquantity) {
+    this.mainunitquantity = mainunitquantity;
+  }
+
+  public Storesubcard mainunitpurchaseprice(Double mainunitpurchaseprice) {
+    this.mainunitpurchaseprice = mainunitpurchaseprice;
+    return this;
   }
 
    /**
-   * Ref.měna nák.měny; ID objektu Měna
-   * @return purchaseRefCurrencyID
+   * nákup.cena k hl. jednotce
+   * @return mainunitpurchaseprice
   **/
-  @ApiModelProperty(example = "null", value = "Ref.měna nák.měny; ID objektu Měna")
-  public String getPurchaseRefCurrencyID() {
-    return purchaseRefCurrencyID;
+  @ApiModelProperty(example = "null", value = "nákup.cena k hl. jednotce")
+  public Double getMainunitpurchaseprice() {
+    return mainunitpurchaseprice;
+  }
+
+  public void setMainunitpurchaseprice(Double mainunitpurchaseprice) {
+    this.mainunitpurchaseprice = mainunitpurchaseprice;
+  }
+
+  public Storesubcard mainunitadditionalpurchaseprice(Double mainunitadditionalpurchaseprice) {
+    this.mainunitadditionalpurchaseprice = mainunitadditionalpurchaseprice;
+    return this;
   }
 
    /**
-   * Lok.ref.měna nák.měny; ID objektu Měna
-   * @return localPurchaseRefCurrencyID
+   * dopl.nákup.cena k hl. jednotce
+   * @return mainunitadditionalpurchaseprice
   **/
-  @ApiModelProperty(example = "null", value = "Lok.ref.měna nák.měny; ID objektu Měna")
-  public String getLocalPurchaseRefCurrencyID() {
-    return localPurchaseRefCurrencyID;
+  @ApiModelProperty(example = "null", value = "dopl.nákup.cena k hl. jednotce")
+  public Double getMainunitadditionalpurchaseprice() {
+    return mainunitadditionalpurchaseprice;
   }
 
-  public Storesubcard canValidateOutOfStock(Boolean canValidateOutOfStock) {
-    this.canValidateOutOfStock = canValidateOutOfStock;
+  public void setMainunitadditionalpurchaseprice(Double mainunitadditionalpurchaseprice) {
+    this.mainunitadditionalpurchaseprice = mainunitadditionalpurchaseprice;
+  }
+
+  public Storesubcard purchaserefcurrencyId(String purchaserefcurrencyId) {
+    this.purchaserefcurrencyId = purchaserefcurrencyId;
+    return this;
+  }
+
+   /**
+   * ref.měna nák.měny; id objektu měna
+   * @return purchaserefcurrencyId
+  **/
+  @ApiModelProperty(example = "null", value = "ref.měna nák.měny; id objektu měna")
+  public String getPurchaserefcurrencyId() {
+    return purchaserefcurrencyId;
+  }
+
+  public void setPurchaserefcurrencyId(String purchaserefcurrencyId) {
+    this.purchaserefcurrencyId = purchaserefcurrencyId;
+  }
+
+  public Storesubcard localpurchaserefcurrencyId(String localpurchaserefcurrencyId) {
+    this.localpurchaserefcurrencyId = localpurchaserefcurrencyId;
+    return this;
+  }
+
+   /**
+   * lok.ref.měna nák.měny; id objektu měna
+   * @return localpurchaserefcurrencyId
+  **/
+  @ApiModelProperty(example = "null", value = "lok.ref.měna nák.měny; id objektu měna")
+  public String getLocalpurchaserefcurrencyId() {
+    return localpurchaserefcurrencyId;
+  }
+
+  public void setLocalpurchaserefcurrencyId(String localpurchaserefcurrencyId) {
+    this.localpurchaserefcurrencyId = localpurchaserefcurrencyId;
+  }
+
+  public Storesubcard canvalidateoutofstock(Boolean canvalidateoutofstock) {
+    this.canvalidateoutofstock = canvalidateoutofstock;
     return this;
   }
 
    /**
    * Čerpání karty
-   * @return canValidateOutOfStock
+   * @return canvalidateoutofstock
   **/
   @ApiModelProperty(example = "null", value = "Čerpání karty")
-  public Boolean getCanValidateOutOfStock() {
-    return canValidateOutOfStock;
+  public Boolean getCanvalidateoutofstock() {
+    return canvalidateoutofstock;
   }
 
-  public void setCanValidateOutOfStock(Boolean canValidateOutOfStock) {
-    this.canValidateOutOfStock = canValidateOutOfStock;
+  public void setCanvalidateoutofstock(Boolean canvalidateoutofstock) {
+    this.canvalidateoutofstock = canvalidateoutofstock;
   }
 
-  public Storesubcard intrastatInputStatisticID(String intrastatInputStatisticID) {
-    this.intrastatInputStatisticID = intrastatInputStatisticID;
+  public Storesubcard intrastatinputstatisticId(String intrastatinputstatisticId) {
+    this.intrastatinputstatisticId = intrastatinputstatisticId;
     return this;
   }
 
    /**
-   * Stat.hodnota na vstupu; ID objektu Definice statistické hodnoty na vstupu [persistentní položka]
-   * @return intrastatInputStatisticID
+   * stat.hodnota na vstupu; id objektu definice statistické hodnoty na vstupu [persistentní položka]
+   * @return intrastatinputstatisticId
   **/
-  @ApiModelProperty(example = "null", value = "Stat.hodnota na vstupu; ID objektu Definice statistické hodnoty na vstupu [persistentní položka]")
-  public String getIntrastatInputStatisticID() {
-    return intrastatInputStatisticID;
+  @ApiModelProperty(example = "null", value = "stat.hodnota na vstupu; id objektu definice statistické hodnoty na vstupu [persistentní položka]")
+  public String getIntrastatinputstatisticId() {
+    return intrastatinputstatisticId;
   }
 
-  public void setIntrastatInputStatisticID(String intrastatInputStatisticID) {
-    this.intrastatInputStatisticID = intrastatInputStatisticID;
+  public void setIntrastatinputstatisticId(String intrastatinputstatisticId) {
+    this.intrastatinputstatisticId = intrastatinputstatisticId;
   }
 
-  public Storesubcard intrastatOutputStatisticID(String intrastatOutputStatisticID) {
-    this.intrastatOutputStatisticID = intrastatOutputStatisticID;
+  public Storesubcard intrastatoutputstatisticId(String intrastatoutputstatisticId) {
+    this.intrastatoutputstatisticId = intrastatoutputstatisticId;
     return this;
   }
 
    /**
-   * Stat.hodnota na výstupu; ID objektu Definice statistické hodnoty na výstupu [persistentní položka]
-   * @return intrastatOutputStatisticID
+   * stat.hodnota na výstupu; id objektu definice statistické hodnoty na výstupu [persistentní položka]
+   * @return intrastatoutputstatisticId
   **/
-  @ApiModelProperty(example = "null", value = "Stat.hodnota na výstupu; ID objektu Definice statistické hodnoty na výstupu [persistentní položka]")
-  public String getIntrastatOutputStatisticID() {
-    return intrastatOutputStatisticID;
+  @ApiModelProperty(example = "null", value = "stat.hodnota na výstupu; id objektu definice statistické hodnoty na výstupu [persistentní položka]")
+  public String getIntrastatoutputstatisticId() {
+    return intrastatoutputstatisticId;
   }
 
-  public void setIntrastatOutputStatisticID(String intrastatOutputStatisticID) {
-    this.intrastatOutputStatisticID = intrastatOutputStatisticID;
+  public void setIntrastatoutputstatisticId(String intrastatoutputstatisticId) {
+    this.intrastatoutputstatisticId = intrastatoutputstatisticId;
   }
 
-  public Storesubcard receivedOrderedQuantity(Double receivedOrderedQuantity) {
-    this.receivedOrderedQuantity = receivedOrderedQuantity;
+  public Storesubcard receivedorderedquantity(Double receivedorderedquantity) {
+    this.receivedorderedquantity = receivedorderedquantity;
     return this;
   }
 
    /**
-   * Obj. přijaté v ev.jedn.(potvrzené)
-   * @return receivedOrderedQuantity
+   * obj. přijaté v ev.jedn.(potvrzené)
+   * @return receivedorderedquantity
   **/
-  @ApiModelProperty(example = "null", value = "Obj. přijaté v ev.jedn.(potvrzené)")
-  public Double getReceivedOrderedQuantity() {
-    return receivedOrderedQuantity;
+  @ApiModelProperty(example = "null", value = "obj. přijaté v ev.jedn.(potvrzené)")
+  public Double getReceivedorderedquantity() {
+    return receivedorderedquantity;
   }
 
-  public void setReceivedOrderedQuantity(Double receivedOrderedQuantity) {
-    this.receivedOrderedQuantity = receivedOrderedQuantity;
+  public void setReceivedorderedquantity(Double receivedorderedquantity) {
+    this.receivedorderedquantity = receivedorderedquantity;
   }
 
-  public Storesubcard receivedOrderedUnitQuantity(Double receivedOrderedUnitQuantity) {
-    this.receivedOrderedUnitQuantity = receivedOrderedUnitQuantity;
+  public Storesubcard receivedorderedunitquantity(Double receivedorderedunitquantity) {
+    this.receivedorderedunitquantity = receivedorderedunitquantity;
     return this;
   }
 
    /**
-   * Obj. přijaté (potvrzené)
-   * @return receivedOrderedUnitQuantity
+   * obj. přijaté (potvrzené)
+   * @return receivedorderedunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Obj. přijaté (potvrzené)")
-  public Double getReceivedOrderedUnitQuantity() {
-    return receivedOrderedUnitQuantity;
+  @ApiModelProperty(example = "null", value = "obj. přijaté (potvrzené)")
+  public Double getReceivedorderedunitquantity() {
+    return receivedorderedunitquantity;
   }
 
-  public void setReceivedOrderedUnitQuantity(Double receivedOrderedUnitQuantity) {
-    this.receivedOrderedUnitQuantity = receivedOrderedUnitQuantity;
+  public void setReceivedorderedunitquantity(Double receivedorderedunitquantity) {
+    this.receivedorderedunitquantity = receivedorderedunitquantity;
   }
 
-  public Storesubcard issuedOrderedQuantity(Double issuedOrderedQuantity) {
-    this.issuedOrderedQuantity = issuedOrderedQuantity;
+  public Storesubcard issuedorderedquantity(Double issuedorderedquantity) {
+    this.issuedorderedquantity = issuedorderedquantity;
     return this;
   }
 
    /**
-   * Obj. vydané v ev.jedn.(potvrzené)
-   * @return issuedOrderedQuantity
+   * obj. vydané v ev.jedn.(potvrzené)
+   * @return issuedorderedquantity
   **/
-  @ApiModelProperty(example = "null", value = "Obj. vydané v ev.jedn.(potvrzené)")
-  public Double getIssuedOrderedQuantity() {
-    return issuedOrderedQuantity;
+  @ApiModelProperty(example = "null", value = "obj. vydané v ev.jedn.(potvrzené)")
+  public Double getIssuedorderedquantity() {
+    return issuedorderedquantity;
   }
 
-  public void setIssuedOrderedQuantity(Double issuedOrderedQuantity) {
-    this.issuedOrderedQuantity = issuedOrderedQuantity;
+  public void setIssuedorderedquantity(Double issuedorderedquantity) {
+    this.issuedorderedquantity = issuedorderedquantity;
   }
 
-  public Storesubcard issuedOrderedUnitQuantity(Double issuedOrderedUnitQuantity) {
-    this.issuedOrderedUnitQuantity = issuedOrderedUnitQuantity;
+  public Storesubcard issuedorderedunitquantity(Double issuedorderedunitquantity) {
+    this.issuedorderedunitquantity = issuedorderedunitquantity;
     return this;
   }
 
    /**
-   * Obj. vydané (potvrzené)
-   * @return issuedOrderedUnitQuantity
+   * obj. vydané (potvrzené)
+   * @return issuedorderedunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Obj. vydané (potvrzené)")
-  public Double getIssuedOrderedUnitQuantity() {
-    return issuedOrderedUnitQuantity;
+  @ApiModelProperty(example = "null", value = "obj. vydané (potvrzené)")
+  public Double getIssuedorderedunitquantity() {
+    return issuedorderedunitquantity;
   }
 
-  public void setIssuedOrderedUnitQuantity(Double issuedOrderedUnitQuantity) {
-    this.issuedOrderedUnitQuantity = issuedOrderedUnitQuantity;
+  public void setIssuedorderedunitquantity(Double issuedorderedunitquantity) {
+    this.issuedorderedunitquantity = issuedorderedunitquantity;
   }
 
-  public Storesubcard inventoryStatus(Integer inventoryStatus) {
-    this.inventoryStatus = inventoryStatus;
+  public Storesubcard inventorystatus(Integer inventorystatus) {
+    this.inventorystatus = inventorystatus;
     return this;
   }
 
    /**
-   * Blokace inventurou [persistentní položka]
-   * @return inventoryStatus
+   * blokace inventurou [persistentní položka]
+   * @return inventorystatus
   **/
-  @ApiModelProperty(example = "null", value = "Blokace inventurou [persistentní položka]")
-  public Integer getInventoryStatus() {
-    return inventoryStatus;
+  @ApiModelProperty(example = "null", value = "blokace inventurou [persistentní položka]")
+  public Integer getInventorystatus() {
+    return inventorystatus;
   }
 
-  public void setInventoryStatus(Integer inventoryStatus) {
-    this.inventoryStatus = inventoryStatus;
+  public void setInventorystatus(Integer inventorystatus) {
+    this.inventorystatus = inventorystatus;
   }
 
-  public Storesubcard lastInventoryDATE(DateTime lastInventoryDATE) {
-    this.lastInventoryDATE = lastInventoryDATE;
+  public Storesubcard lastinventorydate(DateTime lastinventorydate) {
+    this.lastinventorydate = lastinventorydate;
     return this;
   }
 
    /**
-   * Poslední inventarizace [persistentní položka]
-   * @return lastInventoryDATE
+   * poslední inventarizace [persistentní položka]
+   * @return lastinventorydate
   **/
-  @ApiModelProperty(example = "null", value = "Poslední inventarizace [persistentní položka]")
-  public DateTime getLastInventoryDATE() {
-    return lastInventoryDATE;
+  @ApiModelProperty(example = "null", value = "poslední inventarizace [persistentní položka]")
+  public DateTime getLastinventorydate() {
+    return lastinventorydate;
   }
 
-  public void setLastInventoryDATE(DateTime lastInventoryDATE) {
-    this.lastInventoryDATE = lastInventoryDATE;
+  public void setLastinventorydate(DateTime lastinventorydate) {
+    this.lastinventorydate = lastinventorydate;
   }
 
-  public Storesubcard dateOfEndInventoryDATE(DateTime dateOfEndInventoryDATE) {
-    this.dateOfEndInventoryDATE = dateOfEndInventoryDATE;
+  public Storesubcard dateofendinventorydate(DateTime dateofendinventorydate) {
+    this.dateofendinventorydate = dateofendinventorydate;
     return this;
   }
 
    /**
-   * Konec inventury [persistentní položka]
-   * @return dateOfEndInventoryDATE
+   * konec inventury [persistentní položka]
+   * @return dateofendinventorydate
   **/
-  @ApiModelProperty(example = "null", value = "Konec inventury [persistentní položka]")
-  public DateTime getDateOfEndInventoryDATE() {
-    return dateOfEndInventoryDATE;
+  @ApiModelProperty(example = "null", value = "konec inventury [persistentní položka]")
+  public DateTime getDateofendinventorydate() {
+    return dateofendinventorydate;
   }
 
-  public void setDateOfEndInventoryDATE(DateTime dateOfEndInventoryDATE) {
-    this.dateOfEndInventoryDATE = dateOfEndInventoryDATE;
+  public void setDateofendinventorydate(DateTime dateofendinventorydate) {
+    this.dateofendinventorydate = dateofendinventorydate;
   }
 
-  public Storesubcard averageStorePrice(Double averageStorePrice) {
-    this.averageStorePrice = averageStorePrice;
+  public Storesubcard averagestoreprice(Double averagestoreprice) {
+    this.averagestoreprice = averagestoreprice;
     return this;
   }
 
    /**
-   * Průměrná skladová cena z ocenění [persistentní položka]
-   * @return averageStorePrice
+   * průměrná skladová cena z ocenění [persistentní položka]
+   * @return averagestoreprice
   **/
-  @ApiModelProperty(example = "null", value = "Průměrná skladová cena z ocenění [persistentní položka]")
-  public Double getAverageStorePrice() {
-    return averageStorePrice;
+  @ApiModelProperty(example = "null", value = "průměrná skladová cena z ocenění [persistentní položka]")
+  public Double getAveragestoreprice() {
+    return averagestoreprice;
   }
 
-  public void setAverageStorePrice(Double averageStorePrice) {
-    this.averageStorePrice = averageStorePrice;
+  public void setAveragestoreprice(Double averagestoreprice) {
+    this.averagestoreprice = averagestoreprice;
   }
 
-  public Storesubcard averageStorePriceDateDATE(DateTime averageStorePriceDateDATE) {
-    this.averageStorePriceDateDATE = averageStorePriceDateDATE;
+  public Storesubcard averagestorepricedatedate(DateTime averagestorepricedatedate) {
+    this.averagestorepricedatedate = averagestorepricedatedate;
     return this;
   }
 
    /**
-   * Datum posledního ocenění [persistentní položka]
-   * @return averageStorePriceDateDATE
+   * datum posledního ocenění [persistentní položka]
+   * @return averagestorepricedatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum posledního ocenění [persistentní položka]")
-  public DateTime getAverageStorePriceDateDATE() {
-    return averageStorePriceDateDATE;
+  @ApiModelProperty(example = "null", value = "datum posledního ocenění [persistentní položka]")
+  public DateTime getAveragestorepricedatedate() {
+    return averagestorepricedatedate;
   }
 
-  public void setAverageStorePriceDateDATE(DateTime averageStorePriceDateDATE) {
-    this.averageStorePriceDateDATE = averageStorePriceDateDATE;
+  public void setAveragestorepricedatedate(DateTime averagestorepricedatedate) {
+    this.averagestorepricedatedate = averagestorepricedatedate;
   }
 
-  public Storesubcard mainUnitAverageStorePrice(Double mainUnitAverageStorePrice) {
-    this.mainUnitAverageStorePrice = mainUnitAverageStorePrice;
+  public Storesubcard mainunitaveragestoreprice(Double mainunitaveragestoreprice) {
+    this.mainunitaveragestoreprice = mainunitaveragestoreprice;
     return this;
   }
 
    /**
-   * Průměrná skl. cena k hl. jednotce
-   * @return mainUnitAverageStorePrice
+   * průměrná skl. cena k hl. jednotce
+   * @return mainunitaveragestoreprice
   **/
-  @ApiModelProperty(example = "null", value = "Průměrná skl. cena k hl. jednotce")
-  public Double getMainUnitAverageStorePrice() {
-    return mainUnitAverageStorePrice;
+  @ApiModelProperty(example = "null", value = "průměrná skl. cena k hl. jednotce")
+  public Double getMainunitaveragestoreprice() {
+    return mainunitaveragestoreprice;
   }
 
-  public void setMainUnitAverageStorePrice(Double mainUnitAverageStorePrice) {
-    this.mainUnitAverageStorePrice = mainUnitAverageStorePrice;
+  public void setMainunitaveragestoreprice(Double mainunitaveragestoreprice) {
+    this.mainunitaveragestoreprice = mainunitaveragestoreprice;
   }
 
 
@@ -983,59 +1055,59 @@ public class Storesubcard   {
       return false;
     }
     Storesubcard storesubcard = (Storesubcard) o;
-    return Objects.equals(this.displayName, storesubcard.displayName) &&
-        Objects.equals(this.ID, storesubcard.ID) &&
-        Objects.equals(this.classID, storesubcard.classID) &&
-        Objects.equals(this.objVersion, storesubcard.objVersion) &&
-        Objects.equals(this.storeID, storesubcard.storeID) &&
-        Objects.equals(this.storeCardID, storesubcard.storeCardID) &&
-        Objects.equals(this.locationID, storesubcard.locationID) &&
+    return Objects.equals(this.displayname, storesubcard.displayname) &&
+        Objects.equals(this.id, storesubcard.id) &&
+        Objects.equals(this.classid, storesubcard.classid) &&
+        Objects.equals(this.objversion, storesubcard.objversion) &&
+        Objects.equals(this.storeId, storesubcard.storeId) &&
+        Objects.equals(this.storecardId, storesubcard.storecardId) &&
+        Objects.equals(this.locationId, storesubcard.locationId) &&
         Objects.equals(this.quantity, storesubcard.quantity) &&
-        Objects.equals(this.purchasePrice, storesubcard.purchasePrice) &&
-        Objects.equals(this.additionalPurchasePrice, storesubcard.additionalPurchasePrice) &&
-        Objects.equals(this.purchaseCurrencyID, storesubcard.purchaseCurrencyID) &&
-        Objects.equals(this.purchaseCurrRate, storesubcard.purchaseCurrRate) &&
-        Objects.equals(this.purchaseRefCurrRate, storesubcard.purchaseRefCurrRate) &&
-        Objects.equals(this.purchaseCoef, storesubcard.purchaseCoef) &&
-        Objects.equals(this.localPurchaseCoef, storesubcard.localPurchaseCoef) &&
-        Objects.equals(this.purchaseZoneID, storesubcard.purchaseZoneID) &&
-        Objects.equals(this.localPurchaseZoneID, storesubcard.localPurchaseZoneID) &&
-        Objects.equals(this.purchaseFirmID, storesubcard.purchaseFirmID) &&
-        Objects.equals(this.transportationPercentage, storesubcard.transportationPercentage) &&
-        Objects.equals(this.otherCostPercentage, storesubcard.otherCostPercentage) &&
-        Objects.equals(this.purchaseDateDATE, storesubcard.purchaseDateDATE) &&
-        Objects.equals(this.invQuantity, storesubcard.invQuantity) &&
-        Objects.equals(this.invQUnitRate, storesubcard.invQUnitRate) &&
-        Objects.equals(this.invQUnitCode, storesubcard.invQUnitCode) &&
-        Objects.equals(this.invChange, storesubcard.invChange) &&
-        Objects.equals(this.lowLimitQuantity, storesubcard.lowLimitQuantity) &&
-        Objects.equals(this.highLimitQuantity, storesubcard.highLimitQuantity) &&
-        Objects.equals(this.unitLowLimitQuantity, storesubcard.unitLowLimitQuantity) &&
-        Objects.equals(this.unitHighLimitQuantity, storesubcard.unitHighLimitQuantity) &&
-        Objects.equals(this.mainUnitCode, storesubcard.mainUnitCode) &&
-        Objects.equals(this.mainUnitQuantity, storesubcard.mainUnitQuantity) &&
-        Objects.equals(this.mainUnitPurchasePrice, storesubcard.mainUnitPurchasePrice) &&
-        Objects.equals(this.mainUnitAdditionalPurchasePrice, storesubcard.mainUnitAdditionalPurchasePrice) &&
-        Objects.equals(this.purchaseRefCurrencyID, storesubcard.purchaseRefCurrencyID) &&
-        Objects.equals(this.localPurchaseRefCurrencyID, storesubcard.localPurchaseRefCurrencyID) &&
-        Objects.equals(this.canValidateOutOfStock, storesubcard.canValidateOutOfStock) &&
-        Objects.equals(this.intrastatInputStatisticID, storesubcard.intrastatInputStatisticID) &&
-        Objects.equals(this.intrastatOutputStatisticID, storesubcard.intrastatOutputStatisticID) &&
-        Objects.equals(this.receivedOrderedQuantity, storesubcard.receivedOrderedQuantity) &&
-        Objects.equals(this.receivedOrderedUnitQuantity, storesubcard.receivedOrderedUnitQuantity) &&
-        Objects.equals(this.issuedOrderedQuantity, storesubcard.issuedOrderedQuantity) &&
-        Objects.equals(this.issuedOrderedUnitQuantity, storesubcard.issuedOrderedUnitQuantity) &&
-        Objects.equals(this.inventoryStatus, storesubcard.inventoryStatus) &&
-        Objects.equals(this.lastInventoryDATE, storesubcard.lastInventoryDATE) &&
-        Objects.equals(this.dateOfEndInventoryDATE, storesubcard.dateOfEndInventoryDATE) &&
-        Objects.equals(this.averageStorePrice, storesubcard.averageStorePrice) &&
-        Objects.equals(this.averageStorePriceDateDATE, storesubcard.averageStorePriceDateDATE) &&
-        Objects.equals(this.mainUnitAverageStorePrice, storesubcard.mainUnitAverageStorePrice);
+        Objects.equals(this.purchaseprice, storesubcard.purchaseprice) &&
+        Objects.equals(this.additionalpurchaseprice, storesubcard.additionalpurchaseprice) &&
+        Objects.equals(this.purchasecurrencyId, storesubcard.purchasecurrencyId) &&
+        Objects.equals(this.purchasecurrrate, storesubcard.purchasecurrrate) &&
+        Objects.equals(this.purchaserefcurrrate, storesubcard.purchaserefcurrrate) &&
+        Objects.equals(this.purchasecoef, storesubcard.purchasecoef) &&
+        Objects.equals(this.localpurchasecoef, storesubcard.localpurchasecoef) &&
+        Objects.equals(this.purchasezoneId, storesubcard.purchasezoneId) &&
+        Objects.equals(this.localpurchasezoneId, storesubcard.localpurchasezoneId) &&
+        Objects.equals(this.purchasefirmId, storesubcard.purchasefirmId) &&
+        Objects.equals(this.transportationpercentage, storesubcard.transportationpercentage) &&
+        Objects.equals(this.othercostpercentage, storesubcard.othercostpercentage) &&
+        Objects.equals(this.purchasedatedate, storesubcard.purchasedatedate) &&
+        Objects.equals(this.invquantity, storesubcard.invquantity) &&
+        Objects.equals(this.invqunitrate, storesubcard.invqunitrate) &&
+        Objects.equals(this.invqunitcode, storesubcard.invqunitcode) &&
+        Objects.equals(this.invchange, storesubcard.invchange) &&
+        Objects.equals(this.lowlimitquantity, storesubcard.lowlimitquantity) &&
+        Objects.equals(this.highlimitquantity, storesubcard.highlimitquantity) &&
+        Objects.equals(this.unitlowlimitquantity, storesubcard.unitlowlimitquantity) &&
+        Objects.equals(this.unithighlimitquantity, storesubcard.unithighlimitquantity) &&
+        Objects.equals(this.mainunitcode, storesubcard.mainunitcode) &&
+        Objects.equals(this.mainunitquantity, storesubcard.mainunitquantity) &&
+        Objects.equals(this.mainunitpurchaseprice, storesubcard.mainunitpurchaseprice) &&
+        Objects.equals(this.mainunitadditionalpurchaseprice, storesubcard.mainunitadditionalpurchaseprice) &&
+        Objects.equals(this.purchaserefcurrencyId, storesubcard.purchaserefcurrencyId) &&
+        Objects.equals(this.localpurchaserefcurrencyId, storesubcard.localpurchaserefcurrencyId) &&
+        Objects.equals(this.canvalidateoutofstock, storesubcard.canvalidateoutofstock) &&
+        Objects.equals(this.intrastatinputstatisticId, storesubcard.intrastatinputstatisticId) &&
+        Objects.equals(this.intrastatoutputstatisticId, storesubcard.intrastatoutputstatisticId) &&
+        Objects.equals(this.receivedorderedquantity, storesubcard.receivedorderedquantity) &&
+        Objects.equals(this.receivedorderedunitquantity, storesubcard.receivedorderedunitquantity) &&
+        Objects.equals(this.issuedorderedquantity, storesubcard.issuedorderedquantity) &&
+        Objects.equals(this.issuedorderedunitquantity, storesubcard.issuedorderedunitquantity) &&
+        Objects.equals(this.inventorystatus, storesubcard.inventorystatus) &&
+        Objects.equals(this.lastinventorydate, storesubcard.lastinventorydate) &&
+        Objects.equals(this.dateofendinventorydate, storesubcard.dateofendinventorydate) &&
+        Objects.equals(this.averagestoreprice, storesubcard.averagestoreprice) &&
+        Objects.equals(this.averagestorepricedatedate, storesubcard.averagestorepricedatedate) &&
+        Objects.equals(this.mainunitaveragestoreprice, storesubcard.mainunitaveragestoreprice);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, storeID, storeCardID, locationID, quantity, purchasePrice, additionalPurchasePrice, purchaseCurrencyID, purchaseCurrRate, purchaseRefCurrRate, purchaseCoef, localPurchaseCoef, purchaseZoneID, localPurchaseZoneID, purchaseFirmID, transportationPercentage, otherCostPercentage, purchaseDateDATE, invQuantity, invQUnitRate, invQUnitCode, invChange, lowLimitQuantity, highLimitQuantity, unitLowLimitQuantity, unitHighLimitQuantity, mainUnitCode, mainUnitQuantity, mainUnitPurchasePrice, mainUnitAdditionalPurchasePrice, purchaseRefCurrencyID, localPurchaseRefCurrencyID, canValidateOutOfStock, intrastatInputStatisticID, intrastatOutputStatisticID, receivedOrderedQuantity, receivedOrderedUnitQuantity, issuedOrderedQuantity, issuedOrderedUnitQuantity, inventoryStatus, lastInventoryDATE, dateOfEndInventoryDATE, averageStorePrice, averageStorePriceDateDATE, mainUnitAverageStorePrice);
+    return Objects.hash(displayname, id, classid, objversion, storeId, storecardId, locationId, quantity, purchaseprice, additionalpurchaseprice, purchasecurrencyId, purchasecurrrate, purchaserefcurrrate, purchasecoef, localpurchasecoef, purchasezoneId, localpurchasezoneId, purchasefirmId, transportationpercentage, othercostpercentage, purchasedatedate, invquantity, invqunitrate, invqunitcode, invchange, lowlimitquantity, highlimitquantity, unitlowlimitquantity, unithighlimitquantity, mainunitcode, mainunitquantity, mainunitpurchaseprice, mainunitadditionalpurchaseprice, purchaserefcurrencyId, localpurchaserefcurrencyId, canvalidateoutofstock, intrastatinputstatisticId, intrastatoutputstatisticId, receivedorderedquantity, receivedorderedunitquantity, issuedorderedquantity, issuedorderedunitquantity, inventorystatus, lastinventorydate, dateofendinventorydate, averagestoreprice, averagestorepricedatedate, mainunitaveragestoreprice);
   }
 
   @Override
@@ -1043,54 +1115,54 @@ public class Storesubcard   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Storesubcard {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    locationID: ").append(toIndentedString(locationID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    locationId: ").append(toIndentedString(locationId)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    purchasePrice: ").append(toIndentedString(purchasePrice)).append("\n");
-    sb.append("    additionalPurchasePrice: ").append(toIndentedString(additionalPurchasePrice)).append("\n");
-    sb.append("    purchaseCurrencyID: ").append(toIndentedString(purchaseCurrencyID)).append("\n");
-    sb.append("    purchaseCurrRate: ").append(toIndentedString(purchaseCurrRate)).append("\n");
-    sb.append("    purchaseRefCurrRate: ").append(toIndentedString(purchaseRefCurrRate)).append("\n");
-    sb.append("    purchaseCoef: ").append(toIndentedString(purchaseCoef)).append("\n");
-    sb.append("    localPurchaseCoef: ").append(toIndentedString(localPurchaseCoef)).append("\n");
-    sb.append("    purchaseZoneID: ").append(toIndentedString(purchaseZoneID)).append("\n");
-    sb.append("    localPurchaseZoneID: ").append(toIndentedString(localPurchaseZoneID)).append("\n");
-    sb.append("    purchaseFirmID: ").append(toIndentedString(purchaseFirmID)).append("\n");
-    sb.append("    transportationPercentage: ").append(toIndentedString(transportationPercentage)).append("\n");
-    sb.append("    otherCostPercentage: ").append(toIndentedString(otherCostPercentage)).append("\n");
-    sb.append("    purchaseDateDATE: ").append(toIndentedString(purchaseDateDATE)).append("\n");
-    sb.append("    invQuantity: ").append(toIndentedString(invQuantity)).append("\n");
-    sb.append("    invQUnitRate: ").append(toIndentedString(invQUnitRate)).append("\n");
-    sb.append("    invQUnitCode: ").append(toIndentedString(invQUnitCode)).append("\n");
-    sb.append("    invChange: ").append(toIndentedString(invChange)).append("\n");
-    sb.append("    lowLimitQuantity: ").append(toIndentedString(lowLimitQuantity)).append("\n");
-    sb.append("    highLimitQuantity: ").append(toIndentedString(highLimitQuantity)).append("\n");
-    sb.append("    unitLowLimitQuantity: ").append(toIndentedString(unitLowLimitQuantity)).append("\n");
-    sb.append("    unitHighLimitQuantity: ").append(toIndentedString(unitHighLimitQuantity)).append("\n");
-    sb.append("    mainUnitCode: ").append(toIndentedString(mainUnitCode)).append("\n");
-    sb.append("    mainUnitQuantity: ").append(toIndentedString(mainUnitQuantity)).append("\n");
-    sb.append("    mainUnitPurchasePrice: ").append(toIndentedString(mainUnitPurchasePrice)).append("\n");
-    sb.append("    mainUnitAdditionalPurchasePrice: ").append(toIndentedString(mainUnitAdditionalPurchasePrice)).append("\n");
-    sb.append("    purchaseRefCurrencyID: ").append(toIndentedString(purchaseRefCurrencyID)).append("\n");
-    sb.append("    localPurchaseRefCurrencyID: ").append(toIndentedString(localPurchaseRefCurrencyID)).append("\n");
-    sb.append("    canValidateOutOfStock: ").append(toIndentedString(canValidateOutOfStock)).append("\n");
-    sb.append("    intrastatInputStatisticID: ").append(toIndentedString(intrastatInputStatisticID)).append("\n");
-    sb.append("    intrastatOutputStatisticID: ").append(toIndentedString(intrastatOutputStatisticID)).append("\n");
-    sb.append("    receivedOrderedQuantity: ").append(toIndentedString(receivedOrderedQuantity)).append("\n");
-    sb.append("    receivedOrderedUnitQuantity: ").append(toIndentedString(receivedOrderedUnitQuantity)).append("\n");
-    sb.append("    issuedOrderedQuantity: ").append(toIndentedString(issuedOrderedQuantity)).append("\n");
-    sb.append("    issuedOrderedUnitQuantity: ").append(toIndentedString(issuedOrderedUnitQuantity)).append("\n");
-    sb.append("    inventoryStatus: ").append(toIndentedString(inventoryStatus)).append("\n");
-    sb.append("    lastInventoryDATE: ").append(toIndentedString(lastInventoryDATE)).append("\n");
-    sb.append("    dateOfEndInventoryDATE: ").append(toIndentedString(dateOfEndInventoryDATE)).append("\n");
-    sb.append("    averageStorePrice: ").append(toIndentedString(averageStorePrice)).append("\n");
-    sb.append("    averageStorePriceDateDATE: ").append(toIndentedString(averageStorePriceDateDATE)).append("\n");
-    sb.append("    mainUnitAverageStorePrice: ").append(toIndentedString(mainUnitAverageStorePrice)).append("\n");
+    sb.append("    purchaseprice: ").append(toIndentedString(purchaseprice)).append("\n");
+    sb.append("    additionalpurchaseprice: ").append(toIndentedString(additionalpurchaseprice)).append("\n");
+    sb.append("    purchasecurrencyId: ").append(toIndentedString(purchasecurrencyId)).append("\n");
+    sb.append("    purchasecurrrate: ").append(toIndentedString(purchasecurrrate)).append("\n");
+    sb.append("    purchaserefcurrrate: ").append(toIndentedString(purchaserefcurrrate)).append("\n");
+    sb.append("    purchasecoef: ").append(toIndentedString(purchasecoef)).append("\n");
+    sb.append("    localpurchasecoef: ").append(toIndentedString(localpurchasecoef)).append("\n");
+    sb.append("    purchasezoneId: ").append(toIndentedString(purchasezoneId)).append("\n");
+    sb.append("    localpurchasezoneId: ").append(toIndentedString(localpurchasezoneId)).append("\n");
+    sb.append("    purchasefirmId: ").append(toIndentedString(purchasefirmId)).append("\n");
+    sb.append("    transportationpercentage: ").append(toIndentedString(transportationpercentage)).append("\n");
+    sb.append("    othercostpercentage: ").append(toIndentedString(othercostpercentage)).append("\n");
+    sb.append("    purchasedatedate: ").append(toIndentedString(purchasedatedate)).append("\n");
+    sb.append("    invquantity: ").append(toIndentedString(invquantity)).append("\n");
+    sb.append("    invqunitrate: ").append(toIndentedString(invqunitrate)).append("\n");
+    sb.append("    invqunitcode: ").append(toIndentedString(invqunitcode)).append("\n");
+    sb.append("    invchange: ").append(toIndentedString(invchange)).append("\n");
+    sb.append("    lowlimitquantity: ").append(toIndentedString(lowlimitquantity)).append("\n");
+    sb.append("    highlimitquantity: ").append(toIndentedString(highlimitquantity)).append("\n");
+    sb.append("    unitlowlimitquantity: ").append(toIndentedString(unitlowlimitquantity)).append("\n");
+    sb.append("    unithighlimitquantity: ").append(toIndentedString(unithighlimitquantity)).append("\n");
+    sb.append("    mainunitcode: ").append(toIndentedString(mainunitcode)).append("\n");
+    sb.append("    mainunitquantity: ").append(toIndentedString(mainunitquantity)).append("\n");
+    sb.append("    mainunitpurchaseprice: ").append(toIndentedString(mainunitpurchaseprice)).append("\n");
+    sb.append("    mainunitadditionalpurchaseprice: ").append(toIndentedString(mainunitadditionalpurchaseprice)).append("\n");
+    sb.append("    purchaserefcurrencyId: ").append(toIndentedString(purchaserefcurrencyId)).append("\n");
+    sb.append("    localpurchaserefcurrencyId: ").append(toIndentedString(localpurchaserefcurrencyId)).append("\n");
+    sb.append("    canvalidateoutofstock: ").append(toIndentedString(canvalidateoutofstock)).append("\n");
+    sb.append("    intrastatinputstatisticId: ").append(toIndentedString(intrastatinputstatisticId)).append("\n");
+    sb.append("    intrastatoutputstatisticId: ").append(toIndentedString(intrastatoutputstatisticId)).append("\n");
+    sb.append("    receivedorderedquantity: ").append(toIndentedString(receivedorderedquantity)).append("\n");
+    sb.append("    receivedorderedunitquantity: ").append(toIndentedString(receivedorderedunitquantity)).append("\n");
+    sb.append("    issuedorderedquantity: ").append(toIndentedString(issuedorderedquantity)).append("\n");
+    sb.append("    issuedorderedunitquantity: ").append(toIndentedString(issuedorderedunitquantity)).append("\n");
+    sb.append("    inventorystatus: ").append(toIndentedString(inventorystatus)).append("\n");
+    sb.append("    lastinventorydate: ").append(toIndentedString(lastinventorydate)).append("\n");
+    sb.append("    dateofendinventorydate: ").append(toIndentedString(dateofendinventorydate)).append("\n");
+    sb.append("    averagestoreprice: ").append(toIndentedString(averagestoreprice)).append("\n");
+    sb.append("    averagestorepricedatedate: ").append(toIndentedString(averagestorepricedatedate)).append("\n");
+    sb.append("    mainunitaveragestoreprice: ").append(toIndentedString(mainunitaveragestoreprice)).append("\n");
     sb.append("}");
     return sb.toString();
   }

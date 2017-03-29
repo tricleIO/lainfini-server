@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,78 +36,114 @@ import java.util.Objects;
 /**
  * Employpattern
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Employpattern   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("CalcPriority")
-  private Integer calcPriority = null;
+  @SerializedName("calcpriority")
+  private Integer calcpriority = null;
 
-  @SerializedName("FieldCLSID")
-  private String fieldCLSID = null;
+  @SerializedName("fieldclsid")
+  private String fieldclsid = null;
 
-  @SerializedName("ChartCLSID")
-  private String chartCLSID = null;
+  @SerializedName("chartclsid")
+  private String chartclsid = null;
 
-  @SerializedName("Fields")
+  @SerializedName("fields")
   private List<Employpatternfield> fields = new ArrayList<Employpatternfield>();
 
-  @SerializedName("Charts")
+  @SerializedName("charts")
   private List<Employpatternchart> charts = new ArrayList<Employpatternchart>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Employpattern displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Employpattern id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Employpattern classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Employpattern objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Employpattern hidden(Boolean hidden) {
@@ -116,10 +152,10 @@ public class Employpattern   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -134,10 +170,10 @@ public class Employpattern   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -152,10 +188,10 @@ public class Employpattern   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -164,58 +200,58 @@ public class Employpattern   {
     this.name = name;
   }
 
-  public Employpattern calcPriority(Integer calcPriority) {
-    this.calcPriority = calcPriority;
+  public Employpattern calcpriority(Integer calcpriority) {
+    this.calcpriority = calcpriority;
     return this;
   }
 
    /**
-   * Priorita [persistentní položka]
-   * @return calcPriority
+   * priorita [persistentní položka]
+   * @return calcpriority
   **/
-  @ApiModelProperty(example = "null", value = "Priorita [persistentní položka]")
-  public Integer getCalcPriority() {
-    return calcPriority;
+  @ApiModelProperty(example = "null", value = "priorita [persistentní položka]")
+  public Integer getCalcpriority() {
+    return calcpriority;
   }
 
-  public void setCalcPriority(Integer calcPriority) {
-    this.calcPriority = calcPriority;
+  public void setCalcpriority(Integer calcpriority) {
+    this.calcpriority = calcpriority;
   }
 
-  public Employpattern fieldCLSID(String fieldCLSID) {
-    this.fieldCLSID = fieldCLSID;
+  public Employpattern fieldclsid(String fieldclsid) {
+    this.fieldclsid = fieldclsid;
     return this;
   }
 
    /**
-   * Třída hodnot
-   * @return fieldCLSID
+   * třída hodnot
+   * @return fieldclsid
   **/
-  @ApiModelProperty(example = "null", value = "Třída hodnot")
-  public String getFieldCLSID() {
-    return fieldCLSID;
+  @ApiModelProperty(example = "null", value = "třída hodnot")
+  public String getFieldclsid() {
+    return fieldclsid;
   }
 
-  public void setFieldCLSID(String fieldCLSID) {
-    this.fieldCLSID = fieldCLSID;
+  public void setFieldclsid(String fieldclsid) {
+    this.fieldclsid = fieldclsid;
   }
 
-  public Employpattern chartCLSID(String chartCLSID) {
-    this.chartCLSID = chartCLSID;
+  public Employpattern chartclsid(String chartclsid) {
+    this.chartclsid = chartclsid;
     return this;
   }
 
    /**
-   * Třída schémat
-   * @return chartCLSID
+   * třída schémat
+   * @return chartclsid
   **/
-  @ApiModelProperty(example = "null", value = "Třída schémat")
-  public String getChartCLSID() {
-    return chartCLSID;
+  @ApiModelProperty(example = "null", value = "třída schémat")
+  public String getChartclsid() {
+    return chartclsid;
   }
 
-  public void setChartCLSID(String chartCLSID) {
-    this.chartCLSID = chartCLSID;
+  public void setChartclsid(String chartclsid) {
+    this.chartclsid = chartclsid;
   }
 
   public Employpattern fields(List<Employpatternfield> fields) {
@@ -229,10 +265,10 @@ public class Employpattern   {
   }
 
    /**
-   * Hodnoty; kolekce BO Výchozí hodnota [nepersistentní položka]
+   * hodnoty; kolekce bo výchozí hodnota [nepersistentní položka]
    * @return fields
   **/
-  @ApiModelProperty(example = "null", value = "Hodnoty; kolekce BO Výchozí hodnota [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "hodnoty; kolekce bo výchozí hodnota [nepersistentní položka]")
   public List<Employpatternfield> getFields() {
     return fields;
   }
@@ -252,10 +288,10 @@ public class Employpattern   {
   }
 
    /**
-   * Schémata; kolekce BO Výpočtové schéma pracovního poměru [nepersistentní položka]
+   * schémata; kolekce bo výpočtové schéma pracovního poměru [nepersistentní položka]
    * @return charts
   **/
-  @ApiModelProperty(example = "null", value = "Schémata; kolekce BO Výpočtové schéma pracovního poměru [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "schémata; kolekce bo výpočtové schéma pracovního poměru [nepersistentní položka]")
   public List<Employpatternchart> getCharts() {
     return charts;
   }
@@ -274,23 +310,23 @@ public class Employpattern   {
       return false;
     }
     Employpattern employpattern = (Employpattern) o;
-    return Objects.equals(this.displayName, employpattern.displayName) &&
-        Objects.equals(this.ID, employpattern.ID) &&
-        Objects.equals(this.classID, employpattern.classID) &&
-        Objects.equals(this.objVersion, employpattern.objVersion) &&
+    return Objects.equals(this.displayname, employpattern.displayname) &&
+        Objects.equals(this.id, employpattern.id) &&
+        Objects.equals(this.classid, employpattern.classid) &&
+        Objects.equals(this.objversion, employpattern.objversion) &&
         Objects.equals(this.hidden, employpattern.hidden) &&
         Objects.equals(this.code, employpattern.code) &&
         Objects.equals(this.name, employpattern.name) &&
-        Objects.equals(this.calcPriority, employpattern.calcPriority) &&
-        Objects.equals(this.fieldCLSID, employpattern.fieldCLSID) &&
-        Objects.equals(this.chartCLSID, employpattern.chartCLSID) &&
+        Objects.equals(this.calcpriority, employpattern.calcpriority) &&
+        Objects.equals(this.fieldclsid, employpattern.fieldclsid) &&
+        Objects.equals(this.chartclsid, employpattern.chartclsid) &&
         Objects.equals(this.fields, employpattern.fields) &&
         Objects.equals(this.charts, employpattern.charts);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, calcPriority, fieldCLSID, chartCLSID, fields, charts);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, calcpriority, fieldclsid, chartclsid, fields, charts);
   }
 
   @Override
@@ -298,16 +334,16 @@ public class Employpattern   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Employpattern {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    calcPriority: ").append(toIndentedString(calcPriority)).append("\n");
-    sb.append("    fieldCLSID: ").append(toIndentedString(fieldCLSID)).append("\n");
-    sb.append("    chartCLSID: ").append(toIndentedString(chartCLSID)).append("\n");
+    sb.append("    calcpriority: ").append(toIndentedString(calcpriority)).append("\n");
+    sb.append("    fieldclsid: ").append(toIndentedString(fieldclsid)).append("\n");
+    sb.append("    chartclsid: ").append(toIndentedString(chartclsid)).append("\n");
     sb.append("    fields: ").append(toIndentedString(fields)).append("\n");
     sb.append("    charts: ").append(toIndentedString(charts)).append("\n");
     sb.append("}");

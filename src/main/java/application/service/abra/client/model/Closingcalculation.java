@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,78 +36,114 @@ import java.util.Objects;
 /**
  * Closingcalculation
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Closingcalculation   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Notpositionedrowbusinessobject> rows = new ArrayList<Notpositionedrowbusinessobject>();
 
-  @SerializedName("CalcCharts")
-  private List<Calcclosingchartlist> calcCharts = new ArrayList<Calcclosingchartlist>();
+  @SerializedName("calccharts")
+  private List<Calcclosingchartlist> calccharts = new ArrayList<Calcclosingchartlist>();
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("WagePeriod_ID")
-  private String wagePeriodID = null;
+  @SerializedName("wageperiod_id")
+  private String wageperiodId = null;
 
-  @SerializedName("Employee_ID")
-  private String employeeID = null;
+  @SerializedName("employee_id")
+  private String employeeId = null;
 
-  @SerializedName("WorkingRelation_ID")
-  private String workingRelationID = null;
+  @SerializedName("workingrelation_id")
+  private String workingrelationId = null;
 
-  @SerializedName("Dock_ID")
-  private String dockID = null;
+  @SerializedName("dock_id")
+  private String dockId = null;
 
-  @SerializedName("SupressWList")
-  private Integer supressWList = null;
+  @SerializedName("supresswlist")
+  private Integer supresswlist = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Closingcalculation displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Closingcalculation id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Closingcalculation classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Closingcalculation objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Closingcalculation rows(List<Notpositionedrowbusinessobject> rows) {
@@ -121,10 +157,10 @@ public class Closingcalculation   {
   }
 
    /**
-   * Řádky; kolekce BO Řádek bez pořadí [nepersistentní položka]
+   * Řádky; kolekce bo Řádek bez pořadí [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Řádek bez pořadí [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo Řádek bez pořadí [nepersistentní položka]")
   public List<Notpositionedrowbusinessobject> getRows() {
     return rows;
   }
@@ -133,27 +169,27 @@ public class Closingcalculation   {
     this.rows = rows;
   }
 
-  public Closingcalculation calcCharts(List<Calcclosingchartlist> calcCharts) {
-    this.calcCharts = calcCharts;
+  public Closingcalculation calccharts(List<Calcclosingchartlist> calccharts) {
+    this.calccharts = calccharts;
     return this;
   }
 
-  public Closingcalculation addCalcChartsItem(Calcclosingchartlist calcChartsItem) {
-    this.calcCharts.add(calcChartsItem);
+  public Closingcalculation addCalcchartsItem(Calcclosingchartlist calcchartsItem) {
+    this.calccharts.add(calcchartsItem);
     return this;
   }
 
    /**
-   * Výpočtová schémata; kolekce BO Schéma pro výpočet uzávěrky [nepersistentní položka]
-   * @return calcCharts
+   * výpočtová schémata; kolekce bo schéma pro výpočet uzávěrky [nepersistentní položka]
+   * @return calccharts
   **/
-  @ApiModelProperty(example = "null", value = "Výpočtová schémata; kolekce BO Schéma pro výpočet uzávěrky [nepersistentní položka]")
-  public List<Calcclosingchartlist> getCalcCharts() {
-    return calcCharts;
+  @ApiModelProperty(example = "null", value = "výpočtová schémata; kolekce bo schéma pro výpočet uzávěrky [nepersistentní položka]")
+  public List<Calcclosingchartlist> getCalccharts() {
+    return calccharts;
   }
 
-  public void setCalcCharts(List<Calcclosingchartlist> calcCharts) {
-    this.calcCharts = calcCharts;
+  public void setCalccharts(List<Calcclosingchartlist> calccharts) {
+    this.calccharts = calccharts;
   }
 
   public Closingcalculation amount(Double amount) {
@@ -174,94 +210,94 @@ public class Closingcalculation   {
     this.amount = amount;
   }
 
-  public Closingcalculation wagePeriodID(String wagePeriodID) {
-    this.wagePeriodID = wagePeriodID;
+  public Closingcalculation wageperiodId(String wageperiodId) {
+    this.wageperiodId = wageperiodId;
     return this;
   }
 
    /**
-   * Mzdové období; ID objektu Mzdové období
-   * @return wagePeriodID
+   * mzdové období; id objektu mzdové období
+   * @return wageperiodId
   **/
-  @ApiModelProperty(example = "null", value = "Mzdové období; ID objektu Mzdové období")
-  public String getWagePeriodID() {
-    return wagePeriodID;
+  @ApiModelProperty(example = "null", value = "mzdové období; id objektu mzdové období")
+  public String getWageperiodId() {
+    return wageperiodId;
   }
 
-  public void setWagePeriodID(String wagePeriodID) {
-    this.wagePeriodID = wagePeriodID;
+  public void setWageperiodId(String wageperiodId) {
+    this.wageperiodId = wageperiodId;
   }
 
-  public Closingcalculation employeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public Closingcalculation employeeId(String employeeId) {
+    this.employeeId = employeeId;
     return this;
   }
 
    /**
-   * Zaměstnanec; ID objektu Zaměstnanec
-   * @return employeeID
+   * zaměstnanec; id objektu zaměstnanec
+   * @return employeeId
   **/
-  @ApiModelProperty(example = "null", value = "Zaměstnanec; ID objektu Zaměstnanec")
-  public String getEmployeeID() {
-    return employeeID;
+  @ApiModelProperty(example = "null", value = "zaměstnanec; id objektu zaměstnanec")
+  public String getEmployeeId() {
+    return employeeId;
   }
 
-  public void setEmployeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public void setEmployeeId(String employeeId) {
+    this.employeeId = employeeId;
   }
 
-  public Closingcalculation workingRelationID(String workingRelationID) {
-    this.workingRelationID = workingRelationID;
+  public Closingcalculation workingrelationId(String workingrelationId) {
+    this.workingrelationId = workingrelationId;
     return this;
   }
 
    /**
-   * Pracovní poměr; ID objektu Pracovní poměr
-   * @return workingRelationID
+   * pracovní poměr; id objektu pracovní poměr
+   * @return workingrelationId
   **/
-  @ApiModelProperty(example = "null", value = "Pracovní poměr; ID objektu Pracovní poměr")
-  public String getWorkingRelationID() {
-    return workingRelationID;
+  @ApiModelProperty(example = "null", value = "pracovní poměr; id objektu pracovní poměr")
+  public String getWorkingrelationId() {
+    return workingrelationId;
   }
 
-  public void setWorkingRelationID(String workingRelationID) {
-    this.workingRelationID = workingRelationID;
+  public void setWorkingrelationId(String workingrelationId) {
+    this.workingrelationId = workingrelationId;
   }
 
-  public Closingcalculation dockID(String dockID) {
-    this.dockID = dockID;
+  public Closingcalculation dockId(String dockId) {
+    this.dockId = dockId;
     return this;
   }
 
    /**
-   * Srážka; ID objektu Srážka [persistentní položka]
-   * @return dockID
+   * srážka; id objektu srážka [persistentní položka]
+   * @return dockId
   **/
-  @ApiModelProperty(example = "null", value = "Srážka; ID objektu Srážka [persistentní položka]")
-  public String getDockID() {
-    return dockID;
+  @ApiModelProperty(example = "null", value = "srážka; id objektu srážka [persistentní položka]")
+  public String getDockId() {
+    return dockId;
   }
 
-  public void setDockID(String dockID) {
-    this.dockID = dockID;
+  public void setDockId(String dockId) {
+    this.dockId = dockId;
   }
 
-  public Closingcalculation supressWList(Integer supressWList) {
-    this.supressWList = supressWList;
+  public Closingcalculation supresswlist(Integer supresswlist) {
+    this.supresswlist = supresswlist;
     return this;
   }
 
    /**
-   * Zpracovávaný objekt
-   * @return supressWList
+   * zpracovávaný objekt
+   * @return supresswlist
   **/
-  @ApiModelProperty(example = "null", value = "Zpracovávaný objekt")
-  public Integer getSupressWList() {
-    return supressWList;
+  @ApiModelProperty(example = "null", value = "zpracovávaný objekt")
+  public Integer getSupresswlist() {
+    return supresswlist;
   }
 
-  public void setSupressWList(Integer supressWList) {
-    this.supressWList = supressWList;
+  public void setSupresswlist(Integer supresswlist) {
+    this.supresswlist = supresswlist;
   }
 
 
@@ -274,23 +310,23 @@ public class Closingcalculation   {
       return false;
     }
     Closingcalculation closingcalculation = (Closingcalculation) o;
-    return Objects.equals(this.displayName, closingcalculation.displayName) &&
-        Objects.equals(this.ID, closingcalculation.ID) &&
-        Objects.equals(this.classID, closingcalculation.classID) &&
-        Objects.equals(this.objVersion, closingcalculation.objVersion) &&
+    return Objects.equals(this.displayname, closingcalculation.displayname) &&
+        Objects.equals(this.id, closingcalculation.id) &&
+        Objects.equals(this.classid, closingcalculation.classid) &&
+        Objects.equals(this.objversion, closingcalculation.objversion) &&
         Objects.equals(this.rows, closingcalculation.rows) &&
-        Objects.equals(this.calcCharts, closingcalculation.calcCharts) &&
+        Objects.equals(this.calccharts, closingcalculation.calccharts) &&
         Objects.equals(this.amount, closingcalculation.amount) &&
-        Objects.equals(this.wagePeriodID, closingcalculation.wagePeriodID) &&
-        Objects.equals(this.employeeID, closingcalculation.employeeID) &&
-        Objects.equals(this.workingRelationID, closingcalculation.workingRelationID) &&
-        Objects.equals(this.dockID, closingcalculation.dockID) &&
-        Objects.equals(this.supressWList, closingcalculation.supressWList);
+        Objects.equals(this.wageperiodId, closingcalculation.wageperiodId) &&
+        Objects.equals(this.employeeId, closingcalculation.employeeId) &&
+        Objects.equals(this.workingrelationId, closingcalculation.workingrelationId) &&
+        Objects.equals(this.dockId, closingcalculation.dockId) &&
+        Objects.equals(this.supresswlist, closingcalculation.supresswlist);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, calcCharts, amount, wagePeriodID, employeeID, workingRelationID, dockID, supressWList);
+    return Objects.hash(displayname, id, classid, objversion, rows, calccharts, amount, wageperiodId, employeeId, workingrelationId, dockId, supresswlist);
   }
 
   @Override
@@ -298,18 +334,18 @@ public class Closingcalculation   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Closingcalculation {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    calcCharts: ").append(toIndentedString(calcCharts)).append("\n");
+    sb.append("    calccharts: ").append(toIndentedString(calccharts)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    wagePeriodID: ").append(toIndentedString(wagePeriodID)).append("\n");
-    sb.append("    employeeID: ").append(toIndentedString(employeeID)).append("\n");
-    sb.append("    workingRelationID: ").append(toIndentedString(workingRelationID)).append("\n");
-    sb.append("    dockID: ").append(toIndentedString(dockID)).append("\n");
-    sb.append("    supressWList: ").append(toIndentedString(supressWList)).append("\n");
+    sb.append("    wageperiodId: ").append(toIndentedString(wageperiodId)).append("\n");
+    sb.append("    employeeId: ").append(toIndentedString(employeeId)).append("\n");
+    sb.append("    workingrelationId: ").append(toIndentedString(workingrelationId)).append("\n");
+    sb.append("    dockId: ").append(toIndentedString(dockId)).append("\n");
+    sb.append("    supresswlist: ").append(toIndentedString(supresswlist)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,75 +34,111 @@ import java.util.Objects;
 /**
  * Scmprovidefunction
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Scmprovidefunction   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("ScriptPackage_ID")
-  private String scriptPackageID = null;
+  @SerializedName("scriptpackage_id")
+  private String scriptpackageId = null;
 
-  @SerializedName("ScriptLibrary")
-  private String scriptLibrary = null;
+  @SerializedName("scriptlibrary")
+  private String scriptlibrary = null;
 
-  @SerializedName("ScriptFunction")
-  private String scriptFunction = null;
+  @SerializedName("scriptfunction")
+  private String scriptfunction = null;
 
-  @SerializedName("ScriptPackageName")
-  private String scriptPackageName = null;
+  @SerializedName("scriptpackagename")
+  private String scriptpackagename = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Scmprovidefunction displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Scmprovidefunction id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Scmprovidefunction classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Scmprovidefunction objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Scmprovidefunction hidden(Boolean hidden) {
@@ -111,10 +147,10 @@ public class Scmprovidefunction   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -129,10 +165,10 @@ public class Scmprovidefunction   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -147,10 +183,10 @@ public class Scmprovidefunction   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -159,67 +195,76 @@ public class Scmprovidefunction   {
     this.description = description;
   }
 
-  public Scmprovidefunction scriptPackageID(String scriptPackageID) {
-    this.scriptPackageID = scriptPackageID;
+  public Scmprovidefunction scriptpackageId(String scriptpackageId) {
+    this.scriptpackageId = scriptpackageId;
     return this;
   }
 
    /**
-   * Balíček skriptů [persistentní položka]
-   * @return scriptPackageID
+   * balíček skriptů [persistentní položka]
+   * @return scriptpackageId
   **/
-  @ApiModelProperty(example = "null", value = "Balíček skriptů [persistentní položka]")
-  public String getScriptPackageID() {
-    return scriptPackageID;
+  @ApiModelProperty(example = "null", value = "balíček skriptů [persistentní položka]")
+  public String getScriptpackageId() {
+    return scriptpackageId;
   }
 
-  public void setScriptPackageID(String scriptPackageID) {
-    this.scriptPackageID = scriptPackageID;
+  public void setScriptpackageId(String scriptpackageId) {
+    this.scriptpackageId = scriptpackageId;
   }
 
-  public Scmprovidefunction scriptLibrary(String scriptLibrary) {
-    this.scriptLibrary = scriptLibrary;
+  public Scmprovidefunction scriptlibrary(String scriptlibrary) {
+    this.scriptlibrary = scriptlibrary;
     return this;
   }
 
    /**
-   * Knihovna skriptů [persistentní položka]
-   * @return scriptLibrary
+   * knihovna skriptů [persistentní položka]
+   * @return scriptlibrary
   **/
-  @ApiModelProperty(example = "null", value = "Knihovna skriptů [persistentní položka]")
-  public String getScriptLibrary() {
-    return scriptLibrary;
+  @ApiModelProperty(example = "null", value = "knihovna skriptů [persistentní položka]")
+  public String getScriptlibrary() {
+    return scriptlibrary;
   }
 
-  public void setScriptLibrary(String scriptLibrary) {
-    this.scriptLibrary = scriptLibrary;
+  public void setScriptlibrary(String scriptlibrary) {
+    this.scriptlibrary = scriptlibrary;
   }
 
-  public Scmprovidefunction scriptFunction(String scriptFunction) {
-    this.scriptFunction = scriptFunction;
+  public Scmprovidefunction scriptfunction(String scriptfunction) {
+    this.scriptfunction = scriptfunction;
     return this;
   }
 
    /**
-   * Funkce [persistentní položka]
-   * @return scriptFunction
+   * funkce [persistentní položka]
+   * @return scriptfunction
   **/
-  @ApiModelProperty(example = "null", value = "Funkce [persistentní položka]")
-  public String getScriptFunction() {
-    return scriptFunction;
+  @ApiModelProperty(example = "null", value = "funkce [persistentní položka]")
+  public String getScriptfunction() {
+    return scriptfunction;
   }
 
-  public void setScriptFunction(String scriptFunction) {
-    this.scriptFunction = scriptFunction;
+  public void setScriptfunction(String scriptfunction) {
+    this.scriptfunction = scriptfunction;
+  }
+
+  public Scmprovidefunction scriptpackagename(String scriptpackagename) {
+    this.scriptpackagename = scriptpackagename;
+    return this;
   }
 
    /**
-   * Název balíčku skriptů
-   * @return scriptPackageName
+   * název balíčku skriptů
+   * @return scriptpackagename
   **/
-  @ApiModelProperty(example = "null", value = "Název balíčku skriptů")
-  public String getScriptPackageName() {
-    return scriptPackageName;
+  @ApiModelProperty(example = "null", value = "název balíčku skriptů")
+  public String getScriptpackagename() {
+    return scriptpackagename;
+  }
+
+  public void setScriptpackagename(String scriptpackagename) {
+    this.scriptpackagename = scriptpackagename;
   }
 
 
@@ -232,22 +277,22 @@ public class Scmprovidefunction   {
       return false;
     }
     Scmprovidefunction scmprovidefunction = (Scmprovidefunction) o;
-    return Objects.equals(this.displayName, scmprovidefunction.displayName) &&
-        Objects.equals(this.ID, scmprovidefunction.ID) &&
-        Objects.equals(this.classID, scmprovidefunction.classID) &&
-        Objects.equals(this.objVersion, scmprovidefunction.objVersion) &&
+    return Objects.equals(this.displayname, scmprovidefunction.displayname) &&
+        Objects.equals(this.id, scmprovidefunction.id) &&
+        Objects.equals(this.classid, scmprovidefunction.classid) &&
+        Objects.equals(this.objversion, scmprovidefunction.objversion) &&
         Objects.equals(this.hidden, scmprovidefunction.hidden) &&
         Objects.equals(this.name, scmprovidefunction.name) &&
         Objects.equals(this.description, scmprovidefunction.description) &&
-        Objects.equals(this.scriptPackageID, scmprovidefunction.scriptPackageID) &&
-        Objects.equals(this.scriptLibrary, scmprovidefunction.scriptLibrary) &&
-        Objects.equals(this.scriptFunction, scmprovidefunction.scriptFunction) &&
-        Objects.equals(this.scriptPackageName, scmprovidefunction.scriptPackageName);
+        Objects.equals(this.scriptpackageId, scmprovidefunction.scriptpackageId) &&
+        Objects.equals(this.scriptlibrary, scmprovidefunction.scriptlibrary) &&
+        Objects.equals(this.scriptfunction, scmprovidefunction.scriptfunction) &&
+        Objects.equals(this.scriptpackagename, scmprovidefunction.scriptpackagename);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, name, description, scriptPackageID, scriptLibrary, scriptFunction, scriptPackageName);
+    return Objects.hash(displayname, id, classid, objversion, hidden, name, description, scriptpackageId, scriptlibrary, scriptfunction, scriptpackagename);
   }
 
   @Override
@@ -255,17 +300,17 @@ public class Scmprovidefunction   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Scmprovidefunction {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    scriptPackageID: ").append(toIndentedString(scriptPackageID)).append("\n");
-    sb.append("    scriptLibrary: ").append(toIndentedString(scriptLibrary)).append("\n");
-    sb.append("    scriptFunction: ").append(toIndentedString(scriptFunction)).append("\n");
-    sb.append("    scriptPackageName: ").append(toIndentedString(scriptPackageName)).append("\n");
+    sb.append("    scriptpackageId: ").append(toIndentedString(scriptpackageId)).append("\n");
+    sb.append("    scriptlibrary: ").append(toIndentedString(scriptlibrary)).append("\n");
+    sb.append("    scriptfunction: ").append(toIndentedString(scriptfunction)).append("\n");
+    sb.append("    scriptpackagename: ").append(toIndentedString(scriptpackagename)).append("\n");
     sb.append("}");
     return sb.toString();
   }

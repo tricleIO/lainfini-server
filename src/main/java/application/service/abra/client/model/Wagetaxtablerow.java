@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,132 +34,177 @@ import java.util.Objects;
 /**
  * Wagetaxtablerow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wagetaxtablerow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("WageBase")
-  private Double wageBase = null;
+  @SerializedName("wagebase")
+  private Double wagebase = null;
 
-  @SerializedName("TaxBase")
-  private Double taxBase = null;
+  @SerializedName("taxbase")
+  private Double taxbase = null;
 
-  @SerializedName("PerCentOverBase")
-  private Double perCentOverBase = null;
+  @SerializedName("percentoverbase")
+  private Double percentoverbase = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Daňová tabulka [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Daňová tabulka [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Wagetaxtablerow wageBase(Double wageBase) {
-    this.wageBase = wageBase;
+  public Wagetaxtablerow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Dolní mez [persistentní položka]
-   * @return wageBase
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Dolní mez [persistentní položka]")
-  public Double getWageBase() {
-    return wageBase;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setWageBase(Double wageBase) {
-    this.wageBase = wageBase;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Wagetaxtablerow taxBase(Double taxBase) {
-    this.taxBase = taxBase;
+  public Wagetaxtablerow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Daň [persistentní položka]
-   * @return taxBase
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Daň [persistentní položka]")
-  public Double getTaxBase() {
-    return taxBase;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setTaxBase(Double taxBase) {
-    this.taxBase = taxBase;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Wagetaxtablerow perCentOverBase(Double perCentOverBase) {
-    this.perCentOverBase = perCentOverBase;
+  public Wagetaxtablerow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Procento [persistentní položka]
-   * @return perCentOverBase
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Procento [persistentní položka]")
-  public Double getPerCentOverBase() {
-    return perCentOverBase;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPerCentOverBase(Double perCentOverBase) {
-    this.perCentOverBase = perCentOverBase;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wagetaxtablerow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Wagetaxtablerow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu daňová tabulka [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu daňová tabulka [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Wagetaxtablerow wagebase(Double wagebase) {
+    this.wagebase = wagebase;
+    return this;
+  }
+
+   /**
+   * dolní mez [persistentní položka]
+   * @return wagebase
+  **/
+  @ApiModelProperty(example = "null", value = "dolní mez [persistentní položka]")
+  public Double getWagebase() {
+    return wagebase;
+  }
+
+  public void setWagebase(Double wagebase) {
+    this.wagebase = wagebase;
+  }
+
+  public Wagetaxtablerow taxbase(Double taxbase) {
+    this.taxbase = taxbase;
+    return this;
+  }
+
+   /**
+   * daň [persistentní položka]
+   * @return taxbase
+  **/
+  @ApiModelProperty(example = "null", value = "daň [persistentní položka]")
+  public Double getTaxbase() {
+    return taxbase;
+  }
+
+  public void setTaxbase(Double taxbase) {
+    this.taxbase = taxbase;
+  }
+
+  public Wagetaxtablerow percentoverbase(Double percentoverbase) {
+    this.percentoverbase = percentoverbase;
+    return this;
+  }
+
+   /**
+   * procento [persistentní položka]
+   * @return percentoverbase
+  **/
+  @ApiModelProperty(example = "null", value = "procento [persistentní položka]")
+  public Double getPercentoverbase() {
+    return percentoverbase;
+  }
+
+  public void setPercentoverbase(Double percentoverbase) {
+    this.percentoverbase = percentoverbase;
   }
 
   public Wagetaxtablerow system(Boolean system) {
@@ -168,10 +213,10 @@ public class Wagetaxtablerow   {
   }
 
    /**
-   * Systémová [persistentní položka]
+   * systémová [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Systémová [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "systémová [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -190,20 +235,20 @@ public class Wagetaxtablerow   {
       return false;
     }
     Wagetaxtablerow wagetaxtablerow = (Wagetaxtablerow) o;
-    return Objects.equals(this.displayName, wagetaxtablerow.displayName) &&
-        Objects.equals(this.ID, wagetaxtablerow.ID) &&
-        Objects.equals(this.classID, wagetaxtablerow.classID) &&
-        Objects.equals(this.objVersion, wagetaxtablerow.objVersion) &&
-        Objects.equals(this.parentID, wagetaxtablerow.parentID) &&
-        Objects.equals(this.wageBase, wagetaxtablerow.wageBase) &&
-        Objects.equals(this.taxBase, wagetaxtablerow.taxBase) &&
-        Objects.equals(this.perCentOverBase, wagetaxtablerow.perCentOverBase) &&
+    return Objects.equals(this.displayname, wagetaxtablerow.displayname) &&
+        Objects.equals(this.id, wagetaxtablerow.id) &&
+        Objects.equals(this.classid, wagetaxtablerow.classid) &&
+        Objects.equals(this.objversion, wagetaxtablerow.objversion) &&
+        Objects.equals(this.parentId, wagetaxtablerow.parentId) &&
+        Objects.equals(this.wagebase, wagetaxtablerow.wagebase) &&
+        Objects.equals(this.taxbase, wagetaxtablerow.taxbase) &&
+        Objects.equals(this.percentoverbase, wagetaxtablerow.percentoverbase) &&
         Objects.equals(this.system, wagetaxtablerow.system);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, wageBase, taxBase, perCentOverBase, system);
+    return Objects.hash(displayname, id, classid, objversion, parentId, wagebase, taxbase, percentoverbase, system);
   }
 
   @Override
@@ -211,14 +256,14 @@ public class Wagetaxtablerow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wagetaxtablerow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    wageBase: ").append(toIndentedString(wageBase)).append("\n");
-    sb.append("    taxBase: ").append(toIndentedString(taxBase)).append("\n");
-    sb.append("    perCentOverBase: ").append(toIndentedString(perCentOverBase)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    wagebase: ").append(toIndentedString(wagebase)).append("\n");
+    sb.append("    taxbase: ").append(toIndentedString(taxbase)).append("\n");
+    sb.append("    percentoverbase: ").append(toIndentedString(percentoverbase)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
     sb.append("}");
     return sb.toString();

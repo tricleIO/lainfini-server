@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,108 +36,144 @@ import java.util.Objects;
 /**
  * Vatrate
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Vatrate   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Vatraterow> rows = new ArrayList<Vatraterow>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Tariff")
+  @SerializedName("tariff")
   private Double tariff = null;
 
-  @SerializedName("VATRateType")
-  private Integer vATRateType = null;
+  @SerializedName("vatratetype")
+  private Integer vatratetype = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("Country_ID")
-  private String countryID = null;
+  @SerializedName("country_id")
+  private String countryId = null;
 
-  @SerializedName("Account_ID")
-  private String accountID = null;
+  @SerializedName("account_id")
+  private String accountId = null;
 
-  @SerializedName("IncomeDomesticDefVATIndex_ID")
-  private String incomeDomesticDefVATIndexID = null;
+  @SerializedName("incomedomesticdefvatindex_id")
+  private String incomedomesticdefvatindexId = null;
 
-  @SerializedName("IncomeForeignDefVATIndex_ID")
-  private String incomeForeignDefVATIndexID = null;
+  @SerializedName("incomeforeigndefvatindex_id")
+  private String incomeforeigndefvatindexId = null;
 
-  @SerializedName("OutcomeDomesticDefVATIndex_ID")
-  private String outcomeDomesticDefVATIndexID = null;
+  @SerializedName("outcomedomesticdefvatindex_id")
+  private String outcomedomesticdefvatindexId = null;
 
-  @SerializedName("OutcomeForeignDefVATIndex_ID")
-  private String outcomeForeignDefVATIndexID = null;
+  @SerializedName("outcomeforeigndefvatindex_id")
+  private String outcomeforeigndefvatindexId = null;
 
-  @SerializedName("IncomeForeignEUDefVATIndex_ID")
-  private String incomeForeignEUDefVATIndexID = null;
+  @SerializedName("incomeforeigneudefvatindex_id")
+  private String incomeforeigneudefvatindexId = null;
 
-  @SerializedName("OutcomeForeignEUDefVATIndex_ID")
-  private String outcomeForeignEUDefVATIndexID = null;
+  @SerializedName("outcomeforeigneudefvatindex_id")
+  private String outcomeforeigneudefvatindexId = null;
 
-  @SerializedName("IncomeDomesticRCVATIndex_ID")
-  private String incomeDomesticRCVATIndexID = null;
+  @SerializedName("incomedomesticrcvatindex_id")
+  private String incomedomesticrcvatindexId = null;
 
-  @SerializedName("OutcomeDomesticRCVATIndex_ID")
-  private String outcomeDomesticRCVATIndexID = null;
+  @SerializedName("outcomedomesticrcvatindex_id")
+  private String outcomedomesticrcvatindexId = null;
 
-  @SerializedName("OutcomeDomesticRCXVATIndex_ID")
-  private String outcomeDomesticRCXVATIndexID = null;
+  @SerializedName("outcomedomesticrcxvatindex_id")
+  private String outcomedomesticrcxvatindexId = null;
 
-  @SerializedName("OutcomeForeignRCVATIndex_ID")
-  private String outcomeForeignRCVATIndexID = null;
+  @SerializedName("outcomeforeignrcvatindex_id")
+  private String outcomeforeignrcvatindexId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Vatrate displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Vatrate id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Vatrate classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Vatrate objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Vatrate rows(List<Vatraterow> rows) {
@@ -151,10 +187,10 @@ public class Vatrate   {
   }
 
    /**
-   * Řádky; kolekce BO Platnost DPH sazby [nepersistentní položka]
+   * Řádky; kolekce bo platnost dph sazby [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Platnost DPH sazby [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo platnost dph sazby [nepersistentní položka]")
   public List<Vatraterow> getRows() {
     return rows;
   }
@@ -169,10 +205,10 @@ public class Vatrate   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -187,10 +223,10 @@ public class Vatrate   {
   }
 
    /**
-   * Sazba DPH [persistentní položka]
+   * sazba dph [persistentní položka]
    * @return tariff
   **/
-  @ApiModelProperty(example = "null", value = "Sazba DPH [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "sazba dph [persistentní položka]")
   public Double getTariff() {
     return tariff;
   }
@@ -199,22 +235,22 @@ public class Vatrate   {
     this.tariff = tariff;
   }
 
-  public Vatrate vATRateType(Integer vATRateType) {
-    this.vATRateType = vATRateType;
+  public Vatrate vatratetype(Integer vatratetype) {
+    this.vatratetype = vatratetype;
     return this;
   }
 
    /**
-   * Typ sazby [persistentní položka]
-   * @return vATRateType
+   * typ sazby [persistentní položka]
+   * @return vatratetype
   **/
-  @ApiModelProperty(example = "null", value = "Typ sazby [persistentní položka]")
-  public Integer getVATRateType() {
-    return vATRateType;
+  @ApiModelProperty(example = "null", value = "typ sazby [persistentní položka]")
+  public Integer getVatratetype() {
+    return vatratetype;
   }
 
-  public void setVATRateType(Integer vATRateType) {
-    this.vATRateType = vATRateType;
+  public void setVatratetype(Integer vatratetype) {
+    this.vatratetype = vatratetype;
   }
 
   public Vatrate name(String name) {
@@ -223,10 +259,10 @@ public class Vatrate   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -241,10 +277,10 @@ public class Vatrate   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -253,220 +289,220 @@ public class Vatrate   {
     this.description = description;
   }
 
-  public Vatrate countryID(String countryID) {
-    this.countryID = countryID;
+  public Vatrate countryId(String countryId) {
+    this.countryId = countryId;
     return this;
   }
 
    /**
-   * Země; ID objektu Země [persistentní položka]
-   * @return countryID
+   * země; id objektu země [persistentní položka]
+   * @return countryId
   **/
-  @ApiModelProperty(example = "null", value = "Země; ID objektu Země [persistentní položka]")
-  public String getCountryID() {
-    return countryID;
+  @ApiModelProperty(example = "null", value = "země; id objektu země [persistentní položka]")
+  public String getCountryId() {
+    return countryId;
   }
 
-  public void setCountryID(String countryID) {
-    this.countryID = countryID;
+  public void setCountryId(String countryId) {
+    this.countryId = countryId;
   }
 
-  public Vatrate accountID(String accountID) {
-    this.accountID = accountID;
+  public Vatrate accountId(String accountId) {
+    this.accountId = accountId;
     return this;
   }
 
    /**
-   * Účet; ID objektu Účet účetního rozvrhu [persistentní položka]
-   * @return accountID
+   * Účet; id objektu Účet účetního rozvrhu [persistentní položka]
+   * @return accountId
   **/
-  @ApiModelProperty(example = "null", value = "Účet; ID objektu Účet účetního rozvrhu [persistentní položka]")
-  public String getAccountID() {
-    return accountID;
+  @ApiModelProperty(example = "null", value = "Účet; id objektu Účet účetního rozvrhu [persistentní položka]")
+  public String getAccountId() {
+    return accountId;
   }
 
-  public void setAccountID(String accountID) {
-    this.accountID = accountID;
+  public void setAccountId(String accountId) {
+    this.accountId = accountId;
   }
 
-  public Vatrate incomeDomesticDefVATIndexID(String incomeDomesticDefVATIndexID) {
-    this.incomeDomesticDefVATIndexID = incomeDomesticDefVATIndexID;
+  public Vatrate incomedomesticdefvatindexId(String incomedomesticdefvatindexId) {
+    this.incomedomesticdefvatindexId = incomedomesticdefvatindexId;
     return this;
   }
 
    /**
-   * Tuzemský DPH index na výstupu; ID objektu DPH index [persistentní položka]
-   * @return incomeDomesticDefVATIndexID
+   * tuzemský dph index na výstupu; id objektu dph index [persistentní položka]
+   * @return incomedomesticdefvatindexId
   **/
-  @ApiModelProperty(example = "null", value = "Tuzemský DPH index na výstupu; ID objektu DPH index [persistentní položka]")
-  public String getIncomeDomesticDefVATIndexID() {
-    return incomeDomesticDefVATIndexID;
+  @ApiModelProperty(example = "null", value = "tuzemský dph index na výstupu; id objektu dph index [persistentní položka]")
+  public String getIncomedomesticdefvatindexId() {
+    return incomedomesticdefvatindexId;
   }
 
-  public void setIncomeDomesticDefVATIndexID(String incomeDomesticDefVATIndexID) {
-    this.incomeDomesticDefVATIndexID = incomeDomesticDefVATIndexID;
+  public void setIncomedomesticdefvatindexId(String incomedomesticdefvatindexId) {
+    this.incomedomesticdefvatindexId = incomedomesticdefvatindexId;
   }
 
-  public Vatrate incomeForeignDefVATIndexID(String incomeForeignDefVATIndexID) {
-    this.incomeForeignDefVATIndexID = incomeForeignDefVATIndexID;
+  public Vatrate incomeforeigndefvatindexId(String incomeforeigndefvatindexId) {
+    this.incomeforeigndefvatindexId = incomeforeigndefvatindexId;
     return this;
   }
 
    /**
-   * Zahraniční DPH index na výstupu; ID objektu DPH index [persistentní položka]
-   * @return incomeForeignDefVATIndexID
+   * zahraniční dph index na výstupu; id objektu dph index [persistentní položka]
+   * @return incomeforeigndefvatindexId
   **/
-  @ApiModelProperty(example = "null", value = "Zahraniční DPH index na výstupu; ID objektu DPH index [persistentní položka]")
-  public String getIncomeForeignDefVATIndexID() {
-    return incomeForeignDefVATIndexID;
+  @ApiModelProperty(example = "null", value = "zahraniční dph index na výstupu; id objektu dph index [persistentní položka]")
+  public String getIncomeforeigndefvatindexId() {
+    return incomeforeigndefvatindexId;
   }
 
-  public void setIncomeForeignDefVATIndexID(String incomeForeignDefVATIndexID) {
-    this.incomeForeignDefVATIndexID = incomeForeignDefVATIndexID;
+  public void setIncomeforeigndefvatindexId(String incomeforeigndefvatindexId) {
+    this.incomeforeigndefvatindexId = incomeforeigndefvatindexId;
   }
 
-  public Vatrate outcomeDomesticDefVATIndexID(String outcomeDomesticDefVATIndexID) {
-    this.outcomeDomesticDefVATIndexID = outcomeDomesticDefVATIndexID;
+  public Vatrate outcomedomesticdefvatindexId(String outcomedomesticdefvatindexId) {
+    this.outcomedomesticdefvatindexId = outcomedomesticdefvatindexId;
     return this;
   }
 
    /**
-   * Tuzemský DPH index na vstupu; ID objektu DPH index [persistentní položka]
-   * @return outcomeDomesticDefVATIndexID
+   * tuzemský dph index na vstupu; id objektu dph index [persistentní položka]
+   * @return outcomedomesticdefvatindexId
   **/
-  @ApiModelProperty(example = "null", value = "Tuzemský DPH index na vstupu; ID objektu DPH index [persistentní položka]")
-  public String getOutcomeDomesticDefVATIndexID() {
-    return outcomeDomesticDefVATIndexID;
+  @ApiModelProperty(example = "null", value = "tuzemský dph index na vstupu; id objektu dph index [persistentní položka]")
+  public String getOutcomedomesticdefvatindexId() {
+    return outcomedomesticdefvatindexId;
   }
 
-  public void setOutcomeDomesticDefVATIndexID(String outcomeDomesticDefVATIndexID) {
-    this.outcomeDomesticDefVATIndexID = outcomeDomesticDefVATIndexID;
+  public void setOutcomedomesticdefvatindexId(String outcomedomesticdefvatindexId) {
+    this.outcomedomesticdefvatindexId = outcomedomesticdefvatindexId;
   }
 
-  public Vatrate outcomeForeignDefVATIndexID(String outcomeForeignDefVATIndexID) {
-    this.outcomeForeignDefVATIndexID = outcomeForeignDefVATIndexID;
+  public Vatrate outcomeforeigndefvatindexId(String outcomeforeigndefvatindexId) {
+    this.outcomeforeigndefvatindexId = outcomeforeigndefvatindexId;
     return this;
   }
 
    /**
-   * Zahraniční DPH index na vstupu; ID objektu DPH index [persistentní položka]
-   * @return outcomeForeignDefVATIndexID
+   * zahraniční dph index na vstupu; id objektu dph index [persistentní položka]
+   * @return outcomeforeigndefvatindexId
   **/
-  @ApiModelProperty(example = "null", value = "Zahraniční DPH index na vstupu; ID objektu DPH index [persistentní položka]")
-  public String getOutcomeForeignDefVATIndexID() {
-    return outcomeForeignDefVATIndexID;
+  @ApiModelProperty(example = "null", value = "zahraniční dph index na vstupu; id objektu dph index [persistentní položka]")
+  public String getOutcomeforeigndefvatindexId() {
+    return outcomeforeigndefvatindexId;
   }
 
-  public void setOutcomeForeignDefVATIndexID(String outcomeForeignDefVATIndexID) {
-    this.outcomeForeignDefVATIndexID = outcomeForeignDefVATIndexID;
+  public void setOutcomeforeigndefvatindexId(String outcomeforeigndefvatindexId) {
+    this.outcomeforeigndefvatindexId = outcomeforeigndefvatindexId;
   }
 
-  public Vatrate incomeForeignEUDefVATIndexID(String incomeForeignEUDefVATIndexID) {
-    this.incomeForeignEUDefVATIndexID = incomeForeignEUDefVATIndexID;
+  public Vatrate incomeforeigneudefvatindexId(String incomeforeigneudefvatindexId) {
+    this.incomeforeigneudefvatindexId = incomeforeigneudefvatindexId;
     return this;
   }
 
    /**
-   * Zahraniční DPH index do EU na výstupu; ID objektu DPH index [persistentní položka]
-   * @return incomeForeignEUDefVATIndexID
+   * zahraniční dph index do eu na výstupu; id objektu dph index [persistentní položka]
+   * @return incomeforeigneudefvatindexId
   **/
-  @ApiModelProperty(example = "null", value = "Zahraniční DPH index do EU na výstupu; ID objektu DPH index [persistentní položka]")
-  public String getIncomeForeignEUDefVATIndexID() {
-    return incomeForeignEUDefVATIndexID;
+  @ApiModelProperty(example = "null", value = "zahraniční dph index do eu na výstupu; id objektu dph index [persistentní položka]")
+  public String getIncomeforeigneudefvatindexId() {
+    return incomeforeigneudefvatindexId;
   }
 
-  public void setIncomeForeignEUDefVATIndexID(String incomeForeignEUDefVATIndexID) {
-    this.incomeForeignEUDefVATIndexID = incomeForeignEUDefVATIndexID;
+  public void setIncomeforeigneudefvatindexId(String incomeforeigneudefvatindexId) {
+    this.incomeforeigneudefvatindexId = incomeforeigneudefvatindexId;
   }
 
-  public Vatrate outcomeForeignEUDefVATIndexID(String outcomeForeignEUDefVATIndexID) {
-    this.outcomeForeignEUDefVATIndexID = outcomeForeignEUDefVATIndexID;
+  public Vatrate outcomeforeigneudefvatindexId(String outcomeforeigneudefvatindexId) {
+    this.outcomeforeigneudefvatindexId = outcomeforeigneudefvatindexId;
     return this;
   }
 
    /**
-   * Zahraniční DPH index do EU na vstupu; ID objektu DPH index [persistentní položka]
-   * @return outcomeForeignEUDefVATIndexID
+   * zahraniční dph index do eu na vstupu; id objektu dph index [persistentní položka]
+   * @return outcomeforeigneudefvatindexId
   **/
-  @ApiModelProperty(example = "null", value = "Zahraniční DPH index do EU na vstupu; ID objektu DPH index [persistentní položka]")
-  public String getOutcomeForeignEUDefVATIndexID() {
-    return outcomeForeignEUDefVATIndexID;
+  @ApiModelProperty(example = "null", value = "zahraniční dph index do eu na vstupu; id objektu dph index [persistentní položka]")
+  public String getOutcomeforeigneudefvatindexId() {
+    return outcomeforeigneudefvatindexId;
   }
 
-  public void setOutcomeForeignEUDefVATIndexID(String outcomeForeignEUDefVATIndexID) {
-    this.outcomeForeignEUDefVATIndexID = outcomeForeignEUDefVATIndexID;
+  public void setOutcomeforeigneudefvatindexId(String outcomeforeigneudefvatindexId) {
+    this.outcomeforeigneudefvatindexId = outcomeforeigneudefvatindexId;
   }
 
-  public Vatrate incomeDomesticRCVATIndexID(String incomeDomesticRCVATIndexID) {
-    this.incomeDomesticRCVATIndexID = incomeDomesticRCVATIndexID;
+  public Vatrate incomedomesticrcvatindexId(String incomedomesticrcvatindexId) {
+    this.incomedomesticrcvatindexId = incomedomesticrcvatindexId;
     return this;
   }
 
    /**
-   * Tuzemský DPH index pro RC na výstupu; ID objektu DPH index [persistentní položka]
-   * @return incomeDomesticRCVATIndexID
+   * tuzemský dph index pro rc na výstupu; id objektu dph index [persistentní položka]
+   * @return incomedomesticrcvatindexId
   **/
-  @ApiModelProperty(example = "null", value = "Tuzemský DPH index pro RC na výstupu; ID objektu DPH index [persistentní položka]")
-  public String getIncomeDomesticRCVATIndexID() {
-    return incomeDomesticRCVATIndexID;
+  @ApiModelProperty(example = "null", value = "tuzemský dph index pro rc na výstupu; id objektu dph index [persistentní položka]")
+  public String getIncomedomesticrcvatindexId() {
+    return incomedomesticrcvatindexId;
   }
 
-  public void setIncomeDomesticRCVATIndexID(String incomeDomesticRCVATIndexID) {
-    this.incomeDomesticRCVATIndexID = incomeDomesticRCVATIndexID;
+  public void setIncomedomesticrcvatindexId(String incomedomesticrcvatindexId) {
+    this.incomedomesticrcvatindexId = incomedomesticrcvatindexId;
   }
 
-  public Vatrate outcomeDomesticRCVATIndexID(String outcomeDomesticRCVATIndexID) {
-    this.outcomeDomesticRCVATIndexID = outcomeDomesticRCVATIndexID;
+  public Vatrate outcomedomesticrcvatindexId(String outcomedomesticrcvatindexId) {
+    this.outcomedomesticrcvatindexId = outcomedomesticrcvatindexId;
     return this;
   }
 
    /**
-   * Tuzemský DPH index pro RC na vstupu; ID objektu DPH index [persistentní položka]
-   * @return outcomeDomesticRCVATIndexID
+   * tuzemský dph index pro rc na vstupu; id objektu dph index [persistentní položka]
+   * @return outcomedomesticrcvatindexId
   **/
-  @ApiModelProperty(example = "null", value = "Tuzemský DPH index pro RC na vstupu; ID objektu DPH index [persistentní položka]")
-  public String getOutcomeDomesticRCVATIndexID() {
-    return outcomeDomesticRCVATIndexID;
+  @ApiModelProperty(example = "null", value = "tuzemský dph index pro rc na vstupu; id objektu dph index [persistentní položka]")
+  public String getOutcomedomesticrcvatindexId() {
+    return outcomedomesticrcvatindexId;
   }
 
-  public void setOutcomeDomesticRCVATIndexID(String outcomeDomesticRCVATIndexID) {
-    this.outcomeDomesticRCVATIndexID = outcomeDomesticRCVATIndexID;
+  public void setOutcomedomesticrcvatindexId(String outcomedomesticrcvatindexId) {
+    this.outcomedomesticrcvatindexId = outcomedomesticrcvatindexId;
   }
 
-  public Vatrate outcomeDomesticRCXVATIndexID(String outcomeDomesticRCXVATIndexID) {
-    this.outcomeDomesticRCXVATIndexID = outcomeDomesticRCXVATIndexID;
+  public Vatrate outcomedomesticrcxvatindexId(String outcomedomesticrcxvatindexId) {
+    this.outcomedomesticrcxvatindexId = outcomedomesticrcxvatindexId;
     return this;
   }
 
    /**
-   * Tuzemský DPH index pro RC na vstupu (mimo evidenci DPH); ID objektu DPH index [persistentní položka]
-   * @return outcomeDomesticRCXVATIndexID
+   * tuzemský dph index pro rc na vstupu (mimo evidenci dph); id objektu dph index [persistentní položka]
+   * @return outcomedomesticrcxvatindexId
   **/
-  @ApiModelProperty(example = "null", value = "Tuzemský DPH index pro RC na vstupu (mimo evidenci DPH); ID objektu DPH index [persistentní položka]")
-  public String getOutcomeDomesticRCXVATIndexID() {
-    return outcomeDomesticRCXVATIndexID;
+  @ApiModelProperty(example = "null", value = "tuzemský dph index pro rc na vstupu (mimo evidenci dph); id objektu dph index [persistentní položka]")
+  public String getOutcomedomesticrcxvatindexId() {
+    return outcomedomesticrcxvatindexId;
   }
 
-  public void setOutcomeDomesticRCXVATIndexID(String outcomeDomesticRCXVATIndexID) {
-    this.outcomeDomesticRCXVATIndexID = outcomeDomesticRCXVATIndexID;
+  public void setOutcomedomesticrcxvatindexId(String outcomedomesticrcxvatindexId) {
+    this.outcomedomesticrcxvatindexId = outcomedomesticrcxvatindexId;
   }
 
-  public Vatrate outcomeForeignRCVATIndexID(String outcomeForeignRCVATIndexID) {
-    this.outcomeForeignRCVATIndexID = outcomeForeignRCVATIndexID;
+  public Vatrate outcomeforeignrcvatindexId(String outcomeforeignrcvatindexId) {
+    this.outcomeforeignrcvatindexId = outcomeforeignrcvatindexId;
     return this;
   }
 
    /**
-   * Zahraniční DPH index pro RC mimo EU na vstupu; ID objektu DPH index [persistentní položka]
-   * @return outcomeForeignRCVATIndexID
+   * zahraniční dph index pro rc mimo eu na vstupu; id objektu dph index [persistentní položka]
+   * @return outcomeforeignrcvatindexId
   **/
-  @ApiModelProperty(example = "null", value = "Zahraniční DPH index pro RC mimo EU na vstupu; ID objektu DPH index [persistentní položka]")
-  public String getOutcomeForeignRCVATIndexID() {
-    return outcomeForeignRCVATIndexID;
+  @ApiModelProperty(example = "null", value = "zahraniční dph index pro rc mimo eu na vstupu; id objektu dph index [persistentní položka]")
+  public String getOutcomeforeignrcvatindexId() {
+    return outcomeforeignrcvatindexId;
   }
 
-  public void setOutcomeForeignRCVATIndexID(String outcomeForeignRCVATIndexID) {
-    this.outcomeForeignRCVATIndexID = outcomeForeignRCVATIndexID;
+  public void setOutcomeforeignrcvatindexId(String outcomeforeignrcvatindexId) {
+    this.outcomeforeignrcvatindexId = outcomeforeignrcvatindexId;
   }
 
 
@@ -479,33 +515,33 @@ public class Vatrate   {
       return false;
     }
     Vatrate vatrate = (Vatrate) o;
-    return Objects.equals(this.displayName, vatrate.displayName) &&
-        Objects.equals(this.ID, vatrate.ID) &&
-        Objects.equals(this.classID, vatrate.classID) &&
-        Objects.equals(this.objVersion, vatrate.objVersion) &&
+    return Objects.equals(this.displayname, vatrate.displayname) &&
+        Objects.equals(this.id, vatrate.id) &&
+        Objects.equals(this.classid, vatrate.classid) &&
+        Objects.equals(this.objversion, vatrate.objversion) &&
         Objects.equals(this.rows, vatrate.rows) &&
         Objects.equals(this.hidden, vatrate.hidden) &&
         Objects.equals(this.tariff, vatrate.tariff) &&
-        Objects.equals(this.vATRateType, vatrate.vATRateType) &&
+        Objects.equals(this.vatratetype, vatrate.vatratetype) &&
         Objects.equals(this.name, vatrate.name) &&
         Objects.equals(this.description, vatrate.description) &&
-        Objects.equals(this.countryID, vatrate.countryID) &&
-        Objects.equals(this.accountID, vatrate.accountID) &&
-        Objects.equals(this.incomeDomesticDefVATIndexID, vatrate.incomeDomesticDefVATIndexID) &&
-        Objects.equals(this.incomeForeignDefVATIndexID, vatrate.incomeForeignDefVATIndexID) &&
-        Objects.equals(this.outcomeDomesticDefVATIndexID, vatrate.outcomeDomesticDefVATIndexID) &&
-        Objects.equals(this.outcomeForeignDefVATIndexID, vatrate.outcomeForeignDefVATIndexID) &&
-        Objects.equals(this.incomeForeignEUDefVATIndexID, vatrate.incomeForeignEUDefVATIndexID) &&
-        Objects.equals(this.outcomeForeignEUDefVATIndexID, vatrate.outcomeForeignEUDefVATIndexID) &&
-        Objects.equals(this.incomeDomesticRCVATIndexID, vatrate.incomeDomesticRCVATIndexID) &&
-        Objects.equals(this.outcomeDomesticRCVATIndexID, vatrate.outcomeDomesticRCVATIndexID) &&
-        Objects.equals(this.outcomeDomesticRCXVATIndexID, vatrate.outcomeDomesticRCXVATIndexID) &&
-        Objects.equals(this.outcomeForeignRCVATIndexID, vatrate.outcomeForeignRCVATIndexID);
+        Objects.equals(this.countryId, vatrate.countryId) &&
+        Objects.equals(this.accountId, vatrate.accountId) &&
+        Objects.equals(this.incomedomesticdefvatindexId, vatrate.incomedomesticdefvatindexId) &&
+        Objects.equals(this.incomeforeigndefvatindexId, vatrate.incomeforeigndefvatindexId) &&
+        Objects.equals(this.outcomedomesticdefvatindexId, vatrate.outcomedomesticdefvatindexId) &&
+        Objects.equals(this.outcomeforeigndefvatindexId, vatrate.outcomeforeigndefvatindexId) &&
+        Objects.equals(this.incomeforeigneudefvatindexId, vatrate.incomeforeigneudefvatindexId) &&
+        Objects.equals(this.outcomeforeigneudefvatindexId, vatrate.outcomeforeigneudefvatindexId) &&
+        Objects.equals(this.incomedomesticrcvatindexId, vatrate.incomedomesticrcvatindexId) &&
+        Objects.equals(this.outcomedomesticrcvatindexId, vatrate.outcomedomesticrcvatindexId) &&
+        Objects.equals(this.outcomedomesticrcxvatindexId, vatrate.outcomedomesticrcxvatindexId) &&
+        Objects.equals(this.outcomeforeignrcvatindexId, vatrate.outcomeforeignrcvatindexId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, tariff, vATRateType, name, description, countryID, accountID, incomeDomesticDefVATIndexID, incomeForeignDefVATIndexID, outcomeDomesticDefVATIndexID, outcomeForeignDefVATIndexID, incomeForeignEUDefVATIndexID, outcomeForeignEUDefVATIndexID, incomeDomesticRCVATIndexID, outcomeDomesticRCVATIndexID, outcomeDomesticRCXVATIndexID, outcomeForeignRCVATIndexID);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, tariff, vatratetype, name, description, countryId, accountId, incomedomesticdefvatindexId, incomeforeigndefvatindexId, outcomedomesticdefvatindexId, outcomeforeigndefvatindexId, incomeforeigneudefvatindexId, outcomeforeigneudefvatindexId, incomedomesticrcvatindexId, outcomedomesticrcvatindexId, outcomedomesticrcxvatindexId, outcomeforeignrcvatindexId);
   }
 
   @Override
@@ -513,28 +549,28 @@ public class Vatrate   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Vatrate {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    tariff: ").append(toIndentedString(tariff)).append("\n");
-    sb.append("    vATRateType: ").append(toIndentedString(vATRateType)).append("\n");
+    sb.append("    vatratetype: ").append(toIndentedString(vatratetype)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    countryID: ").append(toIndentedString(countryID)).append("\n");
-    sb.append("    accountID: ").append(toIndentedString(accountID)).append("\n");
-    sb.append("    incomeDomesticDefVATIndexID: ").append(toIndentedString(incomeDomesticDefVATIndexID)).append("\n");
-    sb.append("    incomeForeignDefVATIndexID: ").append(toIndentedString(incomeForeignDefVATIndexID)).append("\n");
-    sb.append("    outcomeDomesticDefVATIndexID: ").append(toIndentedString(outcomeDomesticDefVATIndexID)).append("\n");
-    sb.append("    outcomeForeignDefVATIndexID: ").append(toIndentedString(outcomeForeignDefVATIndexID)).append("\n");
-    sb.append("    incomeForeignEUDefVATIndexID: ").append(toIndentedString(incomeForeignEUDefVATIndexID)).append("\n");
-    sb.append("    outcomeForeignEUDefVATIndexID: ").append(toIndentedString(outcomeForeignEUDefVATIndexID)).append("\n");
-    sb.append("    incomeDomesticRCVATIndexID: ").append(toIndentedString(incomeDomesticRCVATIndexID)).append("\n");
-    sb.append("    outcomeDomesticRCVATIndexID: ").append(toIndentedString(outcomeDomesticRCVATIndexID)).append("\n");
-    sb.append("    outcomeDomesticRCXVATIndexID: ").append(toIndentedString(outcomeDomesticRCXVATIndexID)).append("\n");
-    sb.append("    outcomeForeignRCVATIndexID: ").append(toIndentedString(outcomeForeignRCVATIndexID)).append("\n");
+    sb.append("    countryId: ").append(toIndentedString(countryId)).append("\n");
+    sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
+    sb.append("    incomedomesticdefvatindexId: ").append(toIndentedString(incomedomesticdefvatindexId)).append("\n");
+    sb.append("    incomeforeigndefvatindexId: ").append(toIndentedString(incomeforeigndefvatindexId)).append("\n");
+    sb.append("    outcomedomesticdefvatindexId: ").append(toIndentedString(outcomedomesticdefvatindexId)).append("\n");
+    sb.append("    outcomeforeigndefvatindexId: ").append(toIndentedString(outcomeforeigndefvatindexId)).append("\n");
+    sb.append("    incomeforeigneudefvatindexId: ").append(toIndentedString(incomeforeigneudefvatindexId)).append("\n");
+    sb.append("    outcomeforeigneudefvatindexId: ").append(toIndentedString(outcomeforeigneudefvatindexId)).append("\n");
+    sb.append("    incomedomesticrcvatindexId: ").append(toIndentedString(incomedomesticrcvatindexId)).append("\n");
+    sb.append("    outcomedomesticrcvatindexId: ").append(toIndentedString(outcomedomesticrcvatindexId)).append("\n");
+    sb.append("    outcomedomesticrcxvatindexId: ").append(toIndentedString(outcomedomesticrcxvatindexId)).append("\n");
+    sb.append("    outcomeforeignrcvatindexId: ").append(toIndentedString(outcomeforeignrcvatindexId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

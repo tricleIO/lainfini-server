@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,129 +35,174 @@ import java.util.Objects;
 /**
  * Installsetsrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Installsetsrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("ISClassID")
-  private String iSClassID = null;
+  @SerializedName("isclassid")
+  private String isclassid = null;
 
-  @SerializedName("Identifier")
+  @SerializedName("identifier")
   private String identifier = null;
 
-  @SerializedName("Category")
+  @SerializedName("category")
   private String category = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("DataInstalled")
-  private byte[] dataInstalled = null;
+  @SerializedName("datainstalled")
+  private byte[] datainstalled = null;
 
-  @SerializedName("DataImported")
-  private byte[] dataImported = null;
+  @SerializedName("dataimported")
+  private byte[] dataimported = null;
 
-  @SerializedName("InstalledDataVersion")
-  private Integer installedDataVersion = null;
+  @SerializedName("installeddataversion")
+  private Integer installeddataversion = null;
 
-  @SerializedName("InstalationDate$DATE")
-  private DateTime instalationDateDATE = null;
+  @SerializedName("instalationdate$date")
+  private DateTime instalationdatedate = null;
 
-  @SerializedName("RedundantFromVersion")
-  private Integer redundantFromVersion = null;
+  @SerializedName("redundantfromversion")
+  private Integer redundantfromversion = null;
 
-  @SerializedName("Exportable")
+  @SerializedName("exportable")
   private Boolean exportable = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Typ")
+  @SerializedName("typ")
   private String typ = null;
 
-  @SerializedName("KindName")
-  private String kindName = null;
+  @SerializedName("kindname")
+  private String kindname = null;
 
-  @SerializedName("DeleteAndUninstall")
-  private Boolean deleteAndUninstall = null;
+  @SerializedName("deleteanduninstall")
+  private Boolean deleteanduninstall = null;
 
-  @SerializedName("IsInstalled")
-  private Boolean isInstalled = null;
+  @SerializedName("isinstalled")
+  private Boolean isinstalled = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Instalační sada [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Instalační sada [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Installsetsrow iSClassID(String iSClassID) {
-    this.iSClassID = iSClassID;
+  public Installsetsrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Třída instalační položky [persistentní položka]
-   * @return iSClassID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Třída instalační položky [persistentní položka]")
-  public String getISClassID() {
-    return iSClassID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setISClassID(String iSClassID) {
-    this.iSClassID = iSClassID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Installsetsrow id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Installsetsrow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Installsetsrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Installsetsrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu instalační sada [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu instalační sada [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Installsetsrow isclassid(String isclassid) {
+    this.isclassid = isclassid;
+    return this;
+  }
+
+   /**
+   * třída instalační položky [persistentní položka]
+   * @return isclassid
+  **/
+  @ApiModelProperty(example = "null", value = "třída instalační položky [persistentní položka]")
+  public String getIsclassid() {
+    return isclassid;
+  }
+
+  public void setIsclassid(String isclassid) {
+    this.isclassid = isclassid;
   }
 
   public Installsetsrow identifier(String identifier) {
@@ -166,10 +211,10 @@ public class Installsetsrow   {
   }
 
    /**
-   * Identifikátor [persistentní položka]
+   * identifikátor [persistentní položka]
    * @return identifier
   **/
-  @ApiModelProperty(example = "null", value = "Identifikátor [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "identifikátor [persistentní položka]")
   public String getIdentifier() {
     return identifier;
   }
@@ -184,10 +229,10 @@ public class Installsetsrow   {
   }
 
    /**
-   * Kategorie položky instalační sady [persistentní položka]
+   * kategorie položky instalační sady [persistentní položka]
    * @return category
   **/
-  @ApiModelProperty(example = "null", value = "Kategorie položky instalační sady [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kategorie položky instalační sady [persistentní položka]")
   public String getCategory() {
     return category;
   }
@@ -202,10 +247,10 @@ public class Installsetsrow   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -214,94 +259,94 @@ public class Installsetsrow   {
     this.note = note;
   }
 
-  public Installsetsrow dataInstalled(byte[] dataInstalled) {
-    this.dataInstalled = dataInstalled;
+  public Installsetsrow datainstalled(byte[] datainstalled) {
+    this.datainstalled = datainstalled;
     return this;
   }
 
    /**
-   * Data položky [persistentní položka]
-   * @return dataInstalled
+   * data položky [persistentní položka]
+   * @return datainstalled
   **/
-  @ApiModelProperty(example = "null", value = "Data položky [persistentní položka]")
-  public byte[] getDataInstalled() {
-    return dataInstalled;
+  @ApiModelProperty(example = "null", value = "data položky [persistentní položka]")
+  public byte[] getDatainstalled() {
+    return datainstalled;
   }
 
-  public void setDataInstalled(byte[] dataInstalled) {
-    this.dataInstalled = dataInstalled;
+  public void setDatainstalled(byte[] datainstalled) {
+    this.datainstalled = datainstalled;
   }
 
-  public Installsetsrow dataImported(byte[] dataImported) {
-    this.dataImported = dataImported;
+  public Installsetsrow dataimported(byte[] dataimported) {
+    this.dataimported = dataimported;
     return this;
   }
 
    /**
-   * Data importovaná z jiné verze sady [persistentní položka]
-   * @return dataImported
+   * data importovaná z jiné verze sady [persistentní položka]
+   * @return dataimported
   **/
-  @ApiModelProperty(example = "null", value = "Data importovaná z jiné verze sady [persistentní položka]")
-  public byte[] getDataImported() {
-    return dataImported;
+  @ApiModelProperty(example = "null", value = "data importovaná z jiné verze sady [persistentní položka]")
+  public byte[] getDataimported() {
+    return dataimported;
   }
 
-  public void setDataImported(byte[] dataImported) {
-    this.dataImported = dataImported;
+  public void setDataimported(byte[] dataimported) {
+    this.dataimported = dataimported;
   }
 
-  public Installsetsrow installedDataVersion(Integer installedDataVersion) {
-    this.installedDataVersion = installedDataVersion;
+  public Installsetsrow installeddataversion(Integer installeddataversion) {
+    this.installeddataversion = installeddataversion;
     return this;
   }
 
    /**
    * Číslo instalované verze [persistentní položka]
-   * @return installedDataVersion
+   * @return installeddataversion
   **/
   @ApiModelProperty(example = "null", value = "Číslo instalované verze [persistentní položka]")
-  public Integer getInstalledDataVersion() {
-    return installedDataVersion;
+  public Integer getInstalleddataversion() {
+    return installeddataversion;
   }
 
-  public void setInstalledDataVersion(Integer installedDataVersion) {
-    this.installedDataVersion = installedDataVersion;
+  public void setInstalleddataversion(Integer installeddataversion) {
+    this.installeddataversion = installeddataversion;
   }
 
-  public Installsetsrow instalationDateDATE(DateTime instalationDateDATE) {
-    this.instalationDateDATE = instalationDateDATE;
+  public Installsetsrow instalationdatedate(DateTime instalationdatedate) {
+    this.instalationdatedate = instalationdatedate;
     return this;
   }
 
    /**
-   * Datum instalace [persistentní položka]
-   * @return instalationDateDATE
+   * datum instalace [persistentní položka]
+   * @return instalationdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum instalace [persistentní položka]")
-  public DateTime getInstalationDateDATE() {
-    return instalationDateDATE;
+  @ApiModelProperty(example = "null", value = "datum instalace [persistentní položka]")
+  public DateTime getInstalationdatedate() {
+    return instalationdatedate;
   }
 
-  public void setInstalationDateDATE(DateTime instalationDateDATE) {
-    this.instalationDateDATE = instalationDateDATE;
+  public void setInstalationdatedate(DateTime instalationdatedate) {
+    this.instalationdatedate = instalationdatedate;
   }
 
-  public Installsetsrow redundantFromVersion(Integer redundantFromVersion) {
-    this.redundantFromVersion = redundantFromVersion;
+  public Installsetsrow redundantfromversion(Integer redundantfromversion) {
+    this.redundantfromversion = redundantfromversion;
     return this;
   }
 
    /**
-   * Datum odstranění [persistentní položka]
-   * @return redundantFromVersion
+   * datum odstranění [persistentní položka]
+   * @return redundantfromversion
   **/
-  @ApiModelProperty(example = "null", value = "Datum odstranění [persistentní položka]")
-  public Integer getRedundantFromVersion() {
-    return redundantFromVersion;
+  @ApiModelProperty(example = "null", value = "datum odstranění [persistentní položka]")
+  public Integer getRedundantfromversion() {
+    return redundantfromversion;
   }
 
-  public void setRedundantFromVersion(Integer redundantFromVersion) {
-    this.redundantFromVersion = redundantFromVersion;
+  public void setRedundantfromversion(Integer redundantfromversion) {
+    this.redundantfromversion = redundantfromversion;
   }
 
   public Installsetsrow exportable(Boolean exportable) {
@@ -310,10 +355,10 @@ public class Installsetsrow   {
   }
 
    /**
-   * Exportovatelná položka [persistentní položka]
+   * exportovatelná položka [persistentní položka]
    * @return exportable
   **/
-  @ApiModelProperty(example = "null", value = "Exportovatelná položka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "exportovatelná položka [persistentní položka]")
   public Boolean getExportable() {
     return exportable;
   }
@@ -328,10 +373,10 @@ public class Installsetsrow   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -346,10 +391,10 @@ public class Installsetsrow   {
   }
 
    /**
-   * Typ
+   * typ
    * @return typ
   **/
-  @ApiModelProperty(example = "null", value = "Typ")
+  @ApiModelProperty(example = "null", value = "typ")
   public String getTyp() {
     return typ;
   }
@@ -358,58 +403,58 @@ public class Installsetsrow   {
     this.typ = typ;
   }
 
-  public Installsetsrow kindName(String kindName) {
-    this.kindName = kindName;
+  public Installsetsrow kindname(String kindname) {
+    this.kindname = kindname;
     return this;
   }
 
    /**
-   * Zařazení [persistentní položka]
-   * @return kindName
+   * zařazení [persistentní položka]
+   * @return kindname
   **/
-  @ApiModelProperty(example = "null", value = "Zařazení [persistentní položka]")
-  public String getKindName() {
-    return kindName;
+  @ApiModelProperty(example = "null", value = "zařazení [persistentní položka]")
+  public String getKindname() {
+    return kindname;
   }
 
-  public void setKindName(String kindName) {
-    this.kindName = kindName;
+  public void setKindname(String kindname) {
+    this.kindname = kindname;
   }
 
-  public Installsetsrow deleteAndUninstall(Boolean deleteAndUninstall) {
-    this.deleteAndUninstall = deleteAndUninstall;
+  public Installsetsrow deleteanduninstall(Boolean deleteanduninstall) {
+    this.deleteanduninstall = deleteanduninstall;
     return this;
   }
 
    /**
    * Řádek může být odebrán ze sady
-   * @return deleteAndUninstall
+   * @return deleteanduninstall
   **/
   @ApiModelProperty(example = "null", value = "Řádek může být odebrán ze sady")
-  public Boolean getDeleteAndUninstall() {
-    return deleteAndUninstall;
+  public Boolean getDeleteanduninstall() {
+    return deleteanduninstall;
   }
 
-  public void setDeleteAndUninstall(Boolean deleteAndUninstall) {
-    this.deleteAndUninstall = deleteAndUninstall;
+  public void setDeleteanduninstall(Boolean deleteanduninstall) {
+    this.deleteanduninstall = deleteanduninstall;
   }
 
-  public Installsetsrow isInstalled(Boolean isInstalled) {
-    this.isInstalled = isInstalled;
+  public Installsetsrow isinstalled(Boolean isinstalled) {
+    this.isinstalled = isinstalled;
     return this;
   }
 
    /**
-   * Instalováno
-   * @return isInstalled
+   * instalováno
+   * @return isinstalled
   **/
-  @ApiModelProperty(example = "null", value = "Instalováno")
-  public Boolean getIsInstalled() {
-    return isInstalled;
+  @ApiModelProperty(example = "null", value = "instalováno")
+  public Boolean getIsinstalled() {
+    return isinstalled;
   }
 
-  public void setIsInstalled(Boolean isInstalled) {
-    this.isInstalled = isInstalled;
+  public void setIsinstalled(Boolean isinstalled) {
+    this.isinstalled = isinstalled;
   }
 
 
@@ -422,31 +467,31 @@ public class Installsetsrow   {
       return false;
     }
     Installsetsrow installsetsrow = (Installsetsrow) o;
-    return Objects.equals(this.displayName, installsetsrow.displayName) &&
-        Objects.equals(this.ID, installsetsrow.ID) &&
-        Objects.equals(this.classID, installsetsrow.classID) &&
-        Objects.equals(this.objVersion, installsetsrow.objVersion) &&
-        Objects.equals(this.parentID, installsetsrow.parentID) &&
-        Objects.equals(this.iSClassID, installsetsrow.iSClassID) &&
+    return Objects.equals(this.displayname, installsetsrow.displayname) &&
+        Objects.equals(this.id, installsetsrow.id) &&
+        Objects.equals(this.classid, installsetsrow.classid) &&
+        Objects.equals(this.objversion, installsetsrow.objversion) &&
+        Objects.equals(this.parentId, installsetsrow.parentId) &&
+        Objects.equals(this.isclassid, installsetsrow.isclassid) &&
         Objects.equals(this.identifier, installsetsrow.identifier) &&
         Objects.equals(this.category, installsetsrow.category) &&
         Objects.equals(this.note, installsetsrow.note) &&
-        Objects.equals(this.dataInstalled, installsetsrow.dataInstalled) &&
-        Objects.equals(this.dataImported, installsetsrow.dataImported) &&
-        Objects.equals(this.installedDataVersion, installsetsrow.installedDataVersion) &&
-        Objects.equals(this.instalationDateDATE, installsetsrow.instalationDateDATE) &&
-        Objects.equals(this.redundantFromVersion, installsetsrow.redundantFromVersion) &&
+        Objects.equals(this.datainstalled, installsetsrow.datainstalled) &&
+        Objects.equals(this.dataimported, installsetsrow.dataimported) &&
+        Objects.equals(this.installeddataversion, installsetsrow.installeddataversion) &&
+        Objects.equals(this.instalationdatedate, installsetsrow.instalationdatedate) &&
+        Objects.equals(this.redundantfromversion, installsetsrow.redundantfromversion) &&
         Objects.equals(this.exportable, installsetsrow.exportable) &&
         Objects.equals(this.name, installsetsrow.name) &&
         Objects.equals(this.typ, installsetsrow.typ) &&
-        Objects.equals(this.kindName, installsetsrow.kindName) &&
-        Objects.equals(this.deleteAndUninstall, installsetsrow.deleteAndUninstall) &&
-        Objects.equals(this.isInstalled, installsetsrow.isInstalled);
+        Objects.equals(this.kindname, installsetsrow.kindname) &&
+        Objects.equals(this.deleteanduninstall, installsetsrow.deleteanduninstall) &&
+        Objects.equals(this.isinstalled, installsetsrow.isinstalled);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, iSClassID, identifier, category, note, dataInstalled, dataImported, installedDataVersion, instalationDateDATE, redundantFromVersion, exportable, name, typ, kindName, deleteAndUninstall, isInstalled);
+    return Objects.hash(displayname, id, classid, objversion, parentId, isclassid, identifier, category, note, datainstalled, dataimported, installeddataversion, instalationdatedate, redundantfromversion, exportable, name, typ, kindname, deleteanduninstall, isinstalled);
   }
 
   @Override
@@ -454,26 +499,26 @@ public class Installsetsrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Installsetsrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    iSClassID: ").append(toIndentedString(iSClassID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    isclassid: ").append(toIndentedString(isclassid)).append("\n");
     sb.append("    identifier: ").append(toIndentedString(identifier)).append("\n");
     sb.append("    category: ").append(toIndentedString(category)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
-    sb.append("    dataInstalled: ").append(toIndentedString(dataInstalled)).append("\n");
-    sb.append("    dataImported: ").append(toIndentedString(dataImported)).append("\n");
-    sb.append("    installedDataVersion: ").append(toIndentedString(installedDataVersion)).append("\n");
-    sb.append("    instalationDateDATE: ").append(toIndentedString(instalationDateDATE)).append("\n");
-    sb.append("    redundantFromVersion: ").append(toIndentedString(redundantFromVersion)).append("\n");
+    sb.append("    datainstalled: ").append(toIndentedString(datainstalled)).append("\n");
+    sb.append("    dataimported: ").append(toIndentedString(dataimported)).append("\n");
+    sb.append("    installeddataversion: ").append(toIndentedString(installeddataversion)).append("\n");
+    sb.append("    instalationdatedate: ").append(toIndentedString(instalationdatedate)).append("\n");
+    sb.append("    redundantfromversion: ").append(toIndentedString(redundantfromversion)).append("\n");
     sb.append("    exportable: ").append(toIndentedString(exportable)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    typ: ").append(toIndentedString(typ)).append("\n");
-    sb.append("    kindName: ").append(toIndentedString(kindName)).append("\n");
-    sb.append("    deleteAndUninstall: ").append(toIndentedString(deleteAndUninstall)).append("\n");
-    sb.append("    isInstalled: ").append(toIndentedString(isInstalled)).append("\n");
+    sb.append("    kindname: ").append(toIndentedString(kindname)).append("\n");
+    sb.append("    deleteanduninstall: ").append(toIndentedString(deleteanduninstall)).append("\n");
+    sb.append("    isinstalled: ").append(toIndentedString(isinstalled)).append("\n");
     sb.append("}");
     return sb.toString();
   }

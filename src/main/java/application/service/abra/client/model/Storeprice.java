@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,164 +36,200 @@ import java.util.Objects;
 /**
  * Storeprice
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Storeprice   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("PriceRows")
-  private List<Storepricerow> priceRows = new ArrayList<Storepricerow>();
+  @SerializedName("pricerows")
+  private List<Storepricerow> pricerows = new ArrayList<Storepricerow>();
 
-  @SerializedName("PriceList_ID")
-  private String priceListID = null;
+  @SerializedName("pricelist_id")
+  private String pricelistId = null;
 
-  @SerializedName("PriceListValidity_ID")
-  private String priceListValidityID = null;
+  @SerializedName("pricelistvalidity_id")
+  private String pricelistvalidityId = null;
 
-  @SerializedName("DeletedFromPriceList")
-  private Boolean deletedFromPriceList = null;
+  @SerializedName("deletedfrompricelist")
+  private Boolean deletedfrompricelist = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Storeprice storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Storeprice displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Skl. karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Skl. karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Storeprice priceRows(List<Storepricerow> priceRows) {
-    this.priceRows = priceRows;
-    return this;
-  }
-
-  public Storeprice addPriceRowsItem(Storepricerow priceRowsItem) {
-    this.priceRows.add(priceRowsItem);
+  public Storeprice id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Definice cen; kolekce BO Ceníková cena [nepersistentní položka]
-   * @return priceRows
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Definice cen; kolekce BO Ceníková cena [nepersistentní položka]")
-  public List<Storepricerow> getPriceRows() {
-    return priceRows;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setPriceRows(List<Storepricerow> priceRows) {
-    this.priceRows = priceRows;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Storeprice priceListID(String priceListID) {
-    this.priceListID = priceListID;
+  public Storeprice classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Ceník; ID objektu Ceník [persistentní položka]
-   * @return priceListID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Ceník; ID objektu Ceník [persistentní položka]")
-  public String getPriceListID() {
-    return priceListID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPriceListID(String priceListID) {
-    this.priceListID = priceListID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Storeprice priceListValidityID(String priceListValidityID) {
-    this.priceListValidityID = priceListValidityID;
+  public Storeprice objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Datum platnosti; ID objektu Datové platnosti ceníku [persistentní položka]
-   * @return priceListValidityID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Datum platnosti; ID objektu Datové platnosti ceníku [persistentní položka]")
-  public String getPriceListValidityID() {
-    return priceListValidityID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setPriceListValidityID(String priceListValidityID) {
-    this.priceListValidityID = priceListValidityID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Storeprice deletedFromPriceList(Boolean deletedFromPriceList) {
-    this.deletedFromPriceList = deletedFromPriceList;
+  public Storeprice storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Položka odstraněna [persistentní položka]
-   * @return deletedFromPriceList
+   * skl. karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Položka odstraněna [persistentní položka]")
-  public Boolean getDeletedFromPriceList() {
-    return deletedFromPriceList;
+  @ApiModelProperty(example = "null", value = "skl. karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setDeletedFromPriceList(Boolean deletedFromPriceList) {
-    this.deletedFromPriceList = deletedFromPriceList;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
+  }
+
+  public Storeprice pricerows(List<Storepricerow> pricerows) {
+    this.pricerows = pricerows;
+    return this;
+  }
+
+  public Storeprice addPricerowsItem(Storepricerow pricerowsItem) {
+    this.pricerows.add(pricerowsItem);
+    return this;
+  }
+
+   /**
+   * definice cen; kolekce bo ceníková cena [nepersistentní položka]
+   * @return pricerows
+  **/
+  @ApiModelProperty(example = "null", value = "definice cen; kolekce bo ceníková cena [nepersistentní položka]")
+  public List<Storepricerow> getPricerows() {
+    return pricerows;
+  }
+
+  public void setPricerows(List<Storepricerow> pricerows) {
+    this.pricerows = pricerows;
+  }
+
+  public Storeprice pricelistId(String pricelistId) {
+    this.pricelistId = pricelistId;
+    return this;
+  }
+
+   /**
+   * ceník; id objektu ceník [persistentní položka]
+   * @return pricelistId
+  **/
+  @ApiModelProperty(example = "null", value = "ceník; id objektu ceník [persistentní položka]")
+  public String getPricelistId() {
+    return pricelistId;
+  }
+
+  public void setPricelistId(String pricelistId) {
+    this.pricelistId = pricelistId;
+  }
+
+  public Storeprice pricelistvalidityId(String pricelistvalidityId) {
+    this.pricelistvalidityId = pricelistvalidityId;
+    return this;
+  }
+
+   /**
+   * datum platnosti; id objektu datové platnosti ceníku [persistentní položka]
+   * @return pricelistvalidityId
+  **/
+  @ApiModelProperty(example = "null", value = "datum platnosti; id objektu datové platnosti ceníku [persistentní položka]")
+  public String getPricelistvalidityId() {
+    return pricelistvalidityId;
+  }
+
+  public void setPricelistvalidityId(String pricelistvalidityId) {
+    this.pricelistvalidityId = pricelistvalidityId;
+  }
+
+  public Storeprice deletedfrompricelist(Boolean deletedfrompricelist) {
+    this.deletedfrompricelist = deletedfrompricelist;
+    return this;
+  }
+
+   /**
+   * položka odstraněna [persistentní položka]
+   * @return deletedfrompricelist
+  **/
+  @ApiModelProperty(example = "null", value = "položka odstraněna [persistentní položka]")
+  public Boolean getDeletedfrompricelist() {
+    return deletedfrompricelist;
+  }
+
+  public void setDeletedfrompricelist(Boolean deletedfrompricelist) {
+    this.deletedfrompricelist = deletedfrompricelist;
   }
 
 
@@ -206,20 +242,20 @@ public class Storeprice   {
       return false;
     }
     Storeprice storeprice = (Storeprice) o;
-    return Objects.equals(this.displayName, storeprice.displayName) &&
-        Objects.equals(this.ID, storeprice.ID) &&
-        Objects.equals(this.classID, storeprice.classID) &&
-        Objects.equals(this.objVersion, storeprice.objVersion) &&
-        Objects.equals(this.storeCardID, storeprice.storeCardID) &&
-        Objects.equals(this.priceRows, storeprice.priceRows) &&
-        Objects.equals(this.priceListID, storeprice.priceListID) &&
-        Objects.equals(this.priceListValidityID, storeprice.priceListValidityID) &&
-        Objects.equals(this.deletedFromPriceList, storeprice.deletedFromPriceList);
+    return Objects.equals(this.displayname, storeprice.displayname) &&
+        Objects.equals(this.id, storeprice.id) &&
+        Objects.equals(this.classid, storeprice.classid) &&
+        Objects.equals(this.objversion, storeprice.objversion) &&
+        Objects.equals(this.storecardId, storeprice.storecardId) &&
+        Objects.equals(this.pricerows, storeprice.pricerows) &&
+        Objects.equals(this.pricelistId, storeprice.pricelistId) &&
+        Objects.equals(this.pricelistvalidityId, storeprice.pricelistvalidityId) &&
+        Objects.equals(this.deletedfrompricelist, storeprice.deletedfrompricelist);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, storeCardID, priceRows, priceListID, priceListValidityID, deletedFromPriceList);
+    return Objects.hash(displayname, id, classid, objversion, storecardId, pricerows, pricelistId, pricelistvalidityId, deletedfrompricelist);
   }
 
   @Override
@@ -227,15 +263,15 @@ public class Storeprice   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Storeprice {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    priceRows: ").append(toIndentedString(priceRows)).append("\n");
-    sb.append("    priceListID: ").append(toIndentedString(priceListID)).append("\n");
-    sb.append("    priceListValidityID: ").append(toIndentedString(priceListValidityID)).append("\n");
-    sb.append("    deletedFromPriceList: ").append(toIndentedString(deletedFromPriceList)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    pricerows: ").append(toIndentedString(pricerows)).append("\n");
+    sb.append("    pricelistId: ").append(toIndentedString(pricelistId)).append("\n");
+    sb.append("    pricelistvalidityId: ").append(toIndentedString(pricelistvalidityId)).append("\n");
+    sb.append("    deletedfrompricelist: ").append(toIndentedString(deletedfrompricelist)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,369 +35,405 @@ import java.util.Objects;
 /**
  * Bankaccountexchangedifference
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Bankaccountexchangedifference   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("AccPresetDef_ID")
-  private String accPresetDefID = null;
+  @SerializedName("accpresetdef_id")
+  private String accpresetdefId = null;
 
-  @SerializedName("AccDate$DATE")
-  private DateTime accDateDATE = null;
+  @SerializedName("accdate$date")
+  private DateTime accdatedate = null;
 
-  @SerializedName("AccDocQueue_ID")
-  private String accDocQueueID = null;
+  @SerializedName("accdocqueue_id")
+  private String accdocqueueId = null;
 
-  @SerializedName("AccountingType")
-  private Integer accountingType = null;
+  @SerializedName("accountingtype")
+  private Integer accountingtype = null;
 
-  @SerializedName("IsAccounted")
-  private Boolean isAccounted = null;
+  @SerializedName("isaccounted")
+  private Boolean isaccounted = null;
 
-  @SerializedName("Dirty")
+  @SerializedName("dirty")
   private Boolean dirty = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("Profit")
+  @SerializedName("profit")
   private Boolean profit = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("Country_ID")
-  private String countryID = null;
+  @SerializedName("country_id")
+  private String countryId = null;
 
-  @SerializedName("RefCurrency_ID")
-  private String refCurrencyID = null;
+  @SerializedName("refcurrency_id")
+  private String refcurrencyId = null;
 
-  @SerializedName("LocalRefCurrency_ID")
-  private String localRefCurrencyID = null;
+  @SerializedName("localrefcurrency_id")
+  private String localrefcurrencyId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("BankAccount_ID")
-  private String bankAccountID = null;
+  @SerializedName("bankaccount_id")
+  private String bankaccountId = null;
 
-  @SerializedName("CurrRate")
-  private Double currRate = null;
+  @SerializedName("currrate")
+  private Double currrate = null;
 
-  @SerializedName("RefCurrRate")
-  private Double refCurrRate = null;
+  @SerializedName("refcurrrate")
+  private Double refcurrrate = null;
+
+  public Bankaccountexchangedifference displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
   }
 
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Bankaccountexchangedifference docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Bankaccountexchangedifference id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Bankaccountexchangedifference periodID(String periodID) {
-    this.periodID = periodID;
+  public Bankaccountexchangedifference classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Bankaccountexchangedifference ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Bankaccountexchangedifference objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Bankaccountexchangedifference docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Bankaccountexchangedifference docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Bankaccountexchangedifference createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Bankaccountexchangedifference periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Bankaccountexchangedifference correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Bankaccountexchangedifference ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Bankaccountexchangedifference newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Bankaccountexchangedifference docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Bankaccountexchangedifference newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Bankaccountexchangedifference createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Bankaccountexchangedifference accPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public Bankaccountexchangedifference correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Předkontace; ID objektu Účetní předkontace [persistentní položka]
-   * @return accPresetDefID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Předkontace; ID objektu Účetní předkontace [persistentní položka]")
-  public String getAccPresetDefID() {
-    return accPresetDefID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setAccPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Bankaccountexchangedifference accDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public Bankaccountexchangedifference newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Datum účt. [persistentní položka]
-   * @return accDateDATE
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Datum účt. [persistentní položka]")
-  public DateTime getAccDateDATE() {
-    return accDateDATE;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setAccDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Bankaccountexchangedifference accDocQueueID(String accDocQueueID) {
-    this.accDocQueueID = accDocQueueID;
+  public Bankaccountexchangedifference newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * Účetní řada; ID objektu Účetní řada dokladů [persistentní položka]
-   * @return accDocQueueID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "Účetní řada; ID objektu Účetní řada dokladů [persistentní položka]")
-  public String getAccDocQueueID() {
-    return accDocQueueID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setAccDocQueueID(String accDocQueueID) {
-    this.accDocQueueID = accDocQueueID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Bankaccountexchangedifference accountingType(Integer accountingType) {
-    this.accountingType = accountingType;
+  public Bankaccountexchangedifference accpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
     return this;
   }
 
    /**
-   * Jak účtovat
-   * @return accountingType
+   * předkontace; id objektu Účetní předkontace [persistentní položka]
+   * @return accpresetdefId
   **/
-  @ApiModelProperty(example = "null", value = "Jak účtovat")
-  public Integer getAccountingType() {
-    return accountingType;
+  @ApiModelProperty(example = "null", value = "předkontace; id objektu Účetní předkontace [persistentní položka]")
+  public String getAccpresetdefId() {
+    return accpresetdefId;
   }
 
-  public void setAccountingType(Integer accountingType) {
-    this.accountingType = accountingType;
+  public void setAccpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
   }
 
-  public Bankaccountexchangedifference isAccounted(Boolean isAccounted) {
-    this.isAccounted = isAccounted;
+  public Bankaccountexchangedifference accdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
+    return this;
+  }
+
+   /**
+   * datum účt. [persistentní položka]
+   * @return accdatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum účt. [persistentní položka]")
+  public DateTime getAccdatedate() {
+    return accdatedate;
+  }
+
+  public void setAccdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
+  }
+
+  public Bankaccountexchangedifference accdocqueueId(String accdocqueueId) {
+    this.accdocqueueId = accdocqueueId;
+    return this;
+  }
+
+   /**
+   * Účetní řada; id objektu Účetní řada dokladů [persistentní položka]
+   * @return accdocqueueId
+  **/
+  @ApiModelProperty(example = "null", value = "Účetní řada; id objektu Účetní řada dokladů [persistentní položka]")
+  public String getAccdocqueueId() {
+    return accdocqueueId;
+  }
+
+  public void setAccdocqueueId(String accdocqueueId) {
+    this.accdocqueueId = accdocqueueId;
+  }
+
+  public Bankaccountexchangedifference accountingtype(Integer accountingtype) {
+    this.accountingtype = accountingtype;
+    return this;
+  }
+
+   /**
+   * jak účtovat
+   * @return accountingtype
+  **/
+  @ApiModelProperty(example = "null", value = "jak účtovat")
+  public Integer getAccountingtype() {
+    return accountingtype;
+  }
+
+  public void setAccountingtype(Integer accountingtype) {
+    this.accountingtype = accountingtype;
+  }
+
+  public Bankaccountexchangedifference isaccounted(Boolean isaccounted) {
+    this.isaccounted = isaccounted;
     return this;
   }
 
    /**
    * Účtováno
-   * @return isAccounted
+   * @return isaccounted
   **/
   @ApiModelProperty(example = "null", value = "Účtováno")
-  public Boolean getIsAccounted() {
-    return isAccounted;
+  public Boolean getIsaccounted() {
+    return isaccounted;
   }
 
-  public void setIsAccounted(Boolean isAccounted) {
-    this.isAccounted = isAccounted;
+  public void setIsaccounted(Boolean isaccounted) {
+    this.isaccounted = isaccounted;
   }
 
   public Bankaccountexchangedifference dirty(Boolean dirty) {
@@ -406,10 +442,10 @@ public class Bankaccountexchangedifference   {
   }
 
    /**
-   * Zakázané přepočítání
+   * zakázané přepočítání
    * @return dirty
   **/
-  @ApiModelProperty(example = "null", value = "Zakázané přepočítání")
+  @ApiModelProperty(example = "null", value = "zakázané přepočítání")
   public Boolean getDirty() {
     return dirty;
   }
@@ -436,58 +472,58 @@ public class Bankaccountexchangedifference   {
     this.amount = amount;
   }
 
-  public Bankaccountexchangedifference divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Bankaccountexchangedifference divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Bankaccountexchangedifference busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Bankaccountexchangedifference busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Bankaccountexchangedifference busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Bankaccountexchangedifference bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * O.případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * o.případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "O.případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "o.případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
   public Bankaccountexchangedifference profit(Boolean profit) {
@@ -496,10 +532,10 @@ public class Bankaccountexchangedifference   {
   }
 
    /**
-   * Je zisk [persistentní položka]
+   * je zisk [persistentní položka]
    * @return profit
   **/
-  @ApiModelProperty(example = "null", value = "Je zisk [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "je zisk [persistentní položka]")
   public Boolean getProfit() {
     return profit;
   }
@@ -508,112 +544,148 @@ public class Bankaccountexchangedifference   {
     this.profit = profit;
   }
 
-   /**
-   * Měna; ID objektu Měna
-   * @return currencyID
-  **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna")
-  public String getCurrencyID() {
-    return currencyID;
-  }
-
-   /**
-   * Země; ID objektu Země
-   * @return countryID
-  **/
-  @ApiModelProperty(example = "null", value = "Země; ID objektu Země")
-  public String getCountryID() {
-    return countryID;
-  }
-
-   /**
-   * Ref.měna; ID objektu Měna
-   * @return refCurrencyID
-  **/
-  @ApiModelProperty(example = "null", value = "Ref.měna; ID objektu Měna")
-  public String getRefCurrencyID() {
-    return refCurrencyID;
-  }
-
-   /**
-   * Lok.ref.měna; ID objektu Měna
-   * @return localRefCurrencyID
-  **/
-  @ApiModelProperty(example = "null", value = "Lok.ref.měna; ID objektu Měna")
-  public String getLocalRefCurrencyID() {
-    return localRefCurrencyID;
-  }
-
-  public Bankaccountexchangedifference busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Bankaccountexchangedifference currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * měna; id objektu měna
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
-  public Bankaccountexchangedifference bankAccountID(String bankAccountID) {
-    this.bankAccountID = bankAccountID;
+  public Bankaccountexchangedifference countryId(String countryId) {
+    this.countryId = countryId;
     return this;
   }
 
    /**
-   * Bankovní účet; ID objektu Bankovní účet [persistentní položka]
-   * @return bankAccountID
+   * země; id objektu země
+   * @return countryId
   **/
-  @ApiModelProperty(example = "null", value = "Bankovní účet; ID objektu Bankovní účet [persistentní položka]")
-  public String getBankAccountID() {
-    return bankAccountID;
+  @ApiModelProperty(example = "null", value = "země; id objektu země")
+  public String getCountryId() {
+    return countryId;
   }
 
-  public void setBankAccountID(String bankAccountID) {
-    this.bankAccountID = bankAccountID;
+  public void setCountryId(String countryId) {
+    this.countryId = countryId;
   }
 
-  public Bankaccountexchangedifference currRate(Double currRate) {
-    this.currRate = currRate;
+  public Bankaccountexchangedifference refcurrencyId(String refcurrencyId) {
+    this.refcurrencyId = refcurrencyId;
     return this;
   }
 
    /**
-   * Kurz [persistentní položka]
-   * @return currRate
+   * ref.měna; id objektu měna
+   * @return refcurrencyId
   **/
-  @ApiModelProperty(example = "null", value = "Kurz [persistentní položka]")
-  public Double getCurrRate() {
-    return currRate;
+  @ApiModelProperty(example = "null", value = "ref.měna; id objektu měna")
+  public String getRefcurrencyId() {
+    return refcurrencyId;
   }
 
-  public void setCurrRate(Double currRate) {
-    this.currRate = currRate;
+  public void setRefcurrencyId(String refcurrencyId) {
+    this.refcurrencyId = refcurrencyId;
   }
 
-  public Bankaccountexchangedifference refCurrRate(Double refCurrRate) {
-    this.refCurrRate = refCurrRate;
+  public Bankaccountexchangedifference localrefcurrencyId(String localrefcurrencyId) {
+    this.localrefcurrencyId = localrefcurrencyId;
     return this;
   }
 
    /**
-   * Vztažný kurz [persistentní položka]
-   * @return refCurrRate
+   * lok.ref.měna; id objektu měna
+   * @return localrefcurrencyId
   **/
-  @ApiModelProperty(example = "null", value = "Vztažný kurz [persistentní položka]")
-  public Double getRefCurrRate() {
-    return refCurrRate;
+  @ApiModelProperty(example = "null", value = "lok.ref.měna; id objektu měna")
+  public String getLocalrefcurrencyId() {
+    return localrefcurrencyId;
   }
 
-  public void setRefCurrRate(Double refCurrRate) {
-    this.refCurrRate = refCurrRate;
+  public void setLocalrefcurrencyId(String localrefcurrencyId) {
+    this.localrefcurrencyId = localrefcurrencyId;
+  }
+
+  public Bankaccountexchangedifference busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
+    return this;
+  }
+
+   /**
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
+  **/
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
+  }
+
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
+  }
+
+  public Bankaccountexchangedifference bankaccountId(String bankaccountId) {
+    this.bankaccountId = bankaccountId;
+    return this;
+  }
+
+   /**
+   * bankovní účet; id objektu bankovní účet [persistentní položka]
+   * @return bankaccountId
+  **/
+  @ApiModelProperty(example = "null", value = "bankovní účet; id objektu bankovní účet [persistentní položka]")
+  public String getBankaccountId() {
+    return bankaccountId;
+  }
+
+  public void setBankaccountId(String bankaccountId) {
+    this.bankaccountId = bankaccountId;
+  }
+
+  public Bankaccountexchangedifference currrate(Double currrate) {
+    this.currrate = currrate;
+    return this;
+  }
+
+   /**
+   * kurz [persistentní položka]
+   * @return currrate
+  **/
+  @ApiModelProperty(example = "null", value = "kurz [persistentní položka]")
+  public Double getCurrrate() {
+    return currrate;
+  }
+
+  public void setCurrrate(Double currrate) {
+    this.currrate = currrate;
+  }
+
+  public Bankaccountexchangedifference refcurrrate(Double refcurrrate) {
+    this.refcurrrate = refcurrrate;
+    return this;
+  }
+
+   /**
+   * vztažný kurz [persistentní položka]
+   * @return refcurrrate
+  **/
+  @ApiModelProperty(example = "null", value = "vztažný kurz [persistentní položka]")
+  public Double getRefcurrrate() {
+    return refcurrrate;
+  }
+
+  public void setRefcurrrate(Double refcurrrate) {
+    this.refcurrrate = refcurrrate;
   }
 
 
@@ -626,42 +698,42 @@ public class Bankaccountexchangedifference   {
       return false;
     }
     Bankaccountexchangedifference bankaccountexchangedifference = (Bankaccountexchangedifference) o;
-    return Objects.equals(this.displayName, bankaccountexchangedifference.displayName) &&
-        Objects.equals(this.ID, bankaccountexchangedifference.ID) &&
-        Objects.equals(this.classID, bankaccountexchangedifference.classID) &&
-        Objects.equals(this.objVersion, bankaccountexchangedifference.objVersion) &&
-        Objects.equals(this.docQueueID, bankaccountexchangedifference.docQueueID) &&
-        Objects.equals(this.periodID, bankaccountexchangedifference.periodID) &&
-        Objects.equals(this.ordNumber, bankaccountexchangedifference.ordNumber) &&
-        Objects.equals(this.docDateDATE, bankaccountexchangedifference.docDateDATE) &&
-        Objects.equals(this.createdByID, bankaccountexchangedifference.createdByID) &&
-        Objects.equals(this.correctedByID, bankaccountexchangedifference.correctedByID) &&
-        Objects.equals(this.newRelatedType, bankaccountexchangedifference.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, bankaccountexchangedifference.newRelatedDocumentID) &&
-        Objects.equals(this.accPresetDefID, bankaccountexchangedifference.accPresetDefID) &&
-        Objects.equals(this.accDateDATE, bankaccountexchangedifference.accDateDATE) &&
-        Objects.equals(this.accDocQueueID, bankaccountexchangedifference.accDocQueueID) &&
-        Objects.equals(this.accountingType, bankaccountexchangedifference.accountingType) &&
-        Objects.equals(this.isAccounted, bankaccountexchangedifference.isAccounted) &&
+    return Objects.equals(this.displayname, bankaccountexchangedifference.displayname) &&
+        Objects.equals(this.id, bankaccountexchangedifference.id) &&
+        Objects.equals(this.classid, bankaccountexchangedifference.classid) &&
+        Objects.equals(this.objversion, bankaccountexchangedifference.objversion) &&
+        Objects.equals(this.docqueueId, bankaccountexchangedifference.docqueueId) &&
+        Objects.equals(this.periodId, bankaccountexchangedifference.periodId) &&
+        Objects.equals(this.ordnumber, bankaccountexchangedifference.ordnumber) &&
+        Objects.equals(this.docdatedate, bankaccountexchangedifference.docdatedate) &&
+        Objects.equals(this.createdbyId, bankaccountexchangedifference.createdbyId) &&
+        Objects.equals(this.correctedbyId, bankaccountexchangedifference.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, bankaccountexchangedifference.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, bankaccountexchangedifference.newrelateddocumentId) &&
+        Objects.equals(this.accpresetdefId, bankaccountexchangedifference.accpresetdefId) &&
+        Objects.equals(this.accdatedate, bankaccountexchangedifference.accdatedate) &&
+        Objects.equals(this.accdocqueueId, bankaccountexchangedifference.accdocqueueId) &&
+        Objects.equals(this.accountingtype, bankaccountexchangedifference.accountingtype) &&
+        Objects.equals(this.isaccounted, bankaccountexchangedifference.isaccounted) &&
         Objects.equals(this.dirty, bankaccountexchangedifference.dirty) &&
         Objects.equals(this.amount, bankaccountexchangedifference.amount) &&
-        Objects.equals(this.divisionID, bankaccountexchangedifference.divisionID) &&
-        Objects.equals(this.busOrderID, bankaccountexchangedifference.busOrderID) &&
-        Objects.equals(this.busTransactionID, bankaccountexchangedifference.busTransactionID) &&
+        Objects.equals(this.divisionId, bankaccountexchangedifference.divisionId) &&
+        Objects.equals(this.busorderId, bankaccountexchangedifference.busorderId) &&
+        Objects.equals(this.bustransactionId, bankaccountexchangedifference.bustransactionId) &&
         Objects.equals(this.profit, bankaccountexchangedifference.profit) &&
-        Objects.equals(this.currencyID, bankaccountexchangedifference.currencyID) &&
-        Objects.equals(this.countryID, bankaccountexchangedifference.countryID) &&
-        Objects.equals(this.refCurrencyID, bankaccountexchangedifference.refCurrencyID) &&
-        Objects.equals(this.localRefCurrencyID, bankaccountexchangedifference.localRefCurrencyID) &&
-        Objects.equals(this.busProjectID, bankaccountexchangedifference.busProjectID) &&
-        Objects.equals(this.bankAccountID, bankaccountexchangedifference.bankAccountID) &&
-        Objects.equals(this.currRate, bankaccountexchangedifference.currRate) &&
-        Objects.equals(this.refCurrRate, bankaccountexchangedifference.refCurrRate);
+        Objects.equals(this.currencyId, bankaccountexchangedifference.currencyId) &&
+        Objects.equals(this.countryId, bankaccountexchangedifference.countryId) &&
+        Objects.equals(this.refcurrencyId, bankaccountexchangedifference.refcurrencyId) &&
+        Objects.equals(this.localrefcurrencyId, bankaccountexchangedifference.localrefcurrencyId) &&
+        Objects.equals(this.busprojectId, bankaccountexchangedifference.busprojectId) &&
+        Objects.equals(this.bankaccountId, bankaccountexchangedifference.bankaccountId) &&
+        Objects.equals(this.currrate, bankaccountexchangedifference.currrate) &&
+        Objects.equals(this.refcurrrate, bankaccountexchangedifference.refcurrrate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, accPresetDefID, accDateDATE, accDocQueueID, accountingType, isAccounted, dirty, amount, divisionID, busOrderID, busTransactionID, profit, currencyID, countryID, refCurrencyID, localRefCurrencyID, busProjectID, bankAccountID, currRate, refCurrRate);
+    return Objects.hash(displayname, id, classid, objversion, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, accpresetdefId, accdatedate, accdocqueueId, accountingtype, isaccounted, dirty, amount, divisionId, busorderId, bustransactionId, profit, currencyId, countryId, refcurrencyId, localrefcurrencyId, busprojectId, bankaccountId, currrate, refcurrrate);
   }
 
   @Override
@@ -669,37 +741,37 @@ public class Bankaccountexchangedifference   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Bankaccountexchangedifference {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    accPresetDefID: ").append(toIndentedString(accPresetDefID)).append("\n");
-    sb.append("    accDateDATE: ").append(toIndentedString(accDateDATE)).append("\n");
-    sb.append("    accDocQueueID: ").append(toIndentedString(accDocQueueID)).append("\n");
-    sb.append("    accountingType: ").append(toIndentedString(accountingType)).append("\n");
-    sb.append("    isAccounted: ").append(toIndentedString(isAccounted)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    accpresetdefId: ").append(toIndentedString(accpresetdefId)).append("\n");
+    sb.append("    accdatedate: ").append(toIndentedString(accdatedate)).append("\n");
+    sb.append("    accdocqueueId: ").append(toIndentedString(accdocqueueId)).append("\n");
+    sb.append("    accountingtype: ").append(toIndentedString(accountingtype)).append("\n");
+    sb.append("    isaccounted: ").append(toIndentedString(isaccounted)).append("\n");
     sb.append("    dirty: ").append(toIndentedString(dirty)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
     sb.append("    profit: ").append(toIndentedString(profit)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    countryID: ").append(toIndentedString(countryID)).append("\n");
-    sb.append("    refCurrencyID: ").append(toIndentedString(refCurrencyID)).append("\n");
-    sb.append("    localRefCurrencyID: ").append(toIndentedString(localRefCurrencyID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    bankAccountID: ").append(toIndentedString(bankAccountID)).append("\n");
-    sb.append("    currRate: ").append(toIndentedString(currRate)).append("\n");
-    sb.append("    refCurrRate: ").append(toIndentedString(refCurrRate)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    countryId: ").append(toIndentedString(countryId)).append("\n");
+    sb.append("    refcurrencyId: ").append(toIndentedString(refcurrencyId)).append("\n");
+    sb.append("    localrefcurrencyId: ").append(toIndentedString(localrefcurrencyId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    bankaccountId: ").append(toIndentedString(bankaccountId)).append("\n");
+    sb.append("    currrate: ").append(toIndentedString(currrate)).append("\n");
+    sb.append("    refcurrrate: ").append(toIndentedString(refcurrrate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

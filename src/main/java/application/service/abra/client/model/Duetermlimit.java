@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,60 +34,96 @@ import java.util.Objects;
 /**
  * Duetermlimit
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Duetermlimit   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("DueTermLimit")
-  private Integer dueTermLimit = null;
+  @SerializedName("duetermlimit")
+  private Integer duetermlimit = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Duetermlimit displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Duetermlimit id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Duetermlimit classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Duetermlimit objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Duetermlimit description(String description) {
@@ -96,10 +132,10 @@ public class Duetermlimit   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -108,22 +144,22 @@ public class Duetermlimit   {
     this.description = description;
   }
 
-  public Duetermlimit dueTermLimit(Integer dueTermLimit) {
-    this.dueTermLimit = dueTermLimit;
+  public Duetermlimit duetermlimit(Integer duetermlimit) {
+    this.duetermlimit = duetermlimit;
     return this;
   }
 
    /**
-   * Dolní limit [persistentní položka]
-   * @return dueTermLimit
+   * dolní limit [persistentní položka]
+   * @return duetermlimit
   **/
-  @ApiModelProperty(example = "null", value = "Dolní limit [persistentní položka]")
-  public Integer getDueTermLimit() {
-    return dueTermLimit;
+  @ApiModelProperty(example = "null", value = "dolní limit [persistentní položka]")
+  public Integer getDuetermlimit() {
+    return duetermlimit;
   }
 
-  public void setDueTermLimit(Integer dueTermLimit) {
-    this.dueTermLimit = dueTermLimit;
+  public void setDuetermlimit(Integer duetermlimit) {
+    this.duetermlimit = duetermlimit;
   }
 
 
@@ -136,17 +172,17 @@ public class Duetermlimit   {
       return false;
     }
     Duetermlimit duetermlimit = (Duetermlimit) o;
-    return Objects.equals(this.displayName, duetermlimit.displayName) &&
-        Objects.equals(this.ID, duetermlimit.ID) &&
-        Objects.equals(this.classID, duetermlimit.classID) &&
-        Objects.equals(this.objVersion, duetermlimit.objVersion) &&
+    return Objects.equals(this.displayname, duetermlimit.displayname) &&
+        Objects.equals(this.id, duetermlimit.id) &&
+        Objects.equals(this.classid, duetermlimit.classid) &&
+        Objects.equals(this.objversion, duetermlimit.objversion) &&
         Objects.equals(this.description, duetermlimit.description) &&
-        Objects.equals(this.dueTermLimit, duetermlimit.dueTermLimit);
+        Objects.equals(this.duetermlimit, duetermlimit.duetermlimit);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, description, dueTermLimit);
+    return Objects.hash(displayname, id, classid, objversion, description, duetermlimit);
   }
 
   @Override
@@ -154,12 +190,12 @@ public class Duetermlimit   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Duetermlimit {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    dueTermLimit: ").append(toIndentedString(dueTermLimit)).append("\n");
+    sb.append("    duetermlimit: ").append(toIndentedString(duetermlimit)).append("\n");
     sb.append("}");
     return sb.toString();
   }

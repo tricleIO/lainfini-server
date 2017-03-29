@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,351 +35,387 @@ import java.util.Objects;
 /**
  * Cccallhistoryitem
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Cccallhistoryitem   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("PhoneArea")
-  private String phoneArea = null;
+  @SerializedName("phonearea")
+  private String phonearea = null;
 
-  @SerializedName("PhoneNumber")
-  private String phoneNumber = null;
+  @SerializedName("phonenumber")
+  private String phonenumber = null;
 
-  @SerializedName("ResultType")
-  private Integer resultType = null;
+  @SerializedName("resulttype")
+  private Integer resulttype = null;
 
-  @SerializedName("Result_ID")
-  private String resultID = null;
+  @SerializedName("result_id")
+  private String resultId = null;
 
-  @SerializedName("AlertedAt$DATE")
-  private DateTime alertedAtDATE = null;
+  @SerializedName("alertedat$date")
+  private DateTime alertedatdate = null;
 
-  @SerializedName("ConnectedAt$DATE")
-  private DateTime connectedAtDATE = null;
+  @SerializedName("connectedat$date")
+  private DateTime connectedatdate = null;
 
-  @SerializedName("FinishedAt$DATE")
-  private DateTime finishedAtDATE = null;
+  @SerializedName("finishedat$date")
+  private DateTime finishedatdate = null;
 
-  @SerializedName("ResultDisplayName")
-  private String resultDisplayName = null;
+  @SerializedName("resultdisplayname")
+  private String resultdisplayname = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("PhoneDevice_ID")
-  private String phoneDeviceID = null;
+  @SerializedName("phonedevice_id")
+  private String phonedeviceId = null;
 
-  @SerializedName("AlertedTime")
-  private Integer alertedTime = null;
+  @SerializedName("alertedtime")
+  private Integer alertedtime = null;
 
-  @SerializedName("ConnectedTime")
-  private Integer connectedTime = null;
+  @SerializedName("connectedtime")
+  private Integer connectedtime = null;
 
-  @SerializedName("TotalTime")
-  private Integer totalTime = null;
+  @SerializedName("totaltime")
+  private Integer totaltime = null;
 
-  @SerializedName("CompoundResult")
-  private String compoundResult = null;
+  @SerializedName("compoundresult")
+  private String compoundresult = null;
 
-  @SerializedName("Direction")
+  @SerializedName("direction")
   private Integer direction = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Cccallhistoryitem phoneArea(String phoneArea) {
-    this.phoneArea = phoneArea;
+  public Cccallhistoryitem displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Předčíslí [persistentní položka]
-   * @return phoneArea
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Předčíslí [persistentní položka]")
-  public String getPhoneArea() {
-    return phoneArea;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPhoneArea(String phoneArea) {
-    this.phoneArea = phoneArea;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Cccallhistoryitem phoneNumber(String phoneNumber) {
-    this.phoneNumber = phoneNumber;
+  public Cccallhistoryitem id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Telefonní číslo [persistentní položka]
-   * @return phoneNumber
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Telefonní číslo [persistentní položka]")
-  public String getPhoneNumber() {
-    return phoneNumber;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setPhoneNumber(String phoneNumber) {
-    this.phoneNumber = phoneNumber;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Cccallhistoryitem resultType(Integer resultType) {
-    this.resultType = resultType;
+  public Cccallhistoryitem classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Typ výsledku [persistentní položka]
-   * @return resultType
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Typ výsledku [persistentní položka]")
-  public Integer getResultType() {
-    return resultType;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setResultType(Integer resultType) {
-    this.resultType = resultType;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Cccallhistoryitem resultID(String resultID) {
-    this.resultID = resultID;
+  public Cccallhistoryitem objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * ID výsledku [persistentní položka]
-   * @return resultID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "ID výsledku [persistentní položka]")
-  public String getResultID() {
-    return resultID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setResultID(String resultID) {
-    this.resultID = resultID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Cccallhistoryitem alertedAtDATE(DateTime alertedAtDATE) {
-    this.alertedAtDATE = alertedAtDATE;
+  public Cccallhistoryitem phonearea(String phonearea) {
+    this.phonearea = phonearea;
+    return this;
+  }
+
+   /**
+   * předčíslí [persistentní položka]
+   * @return phonearea
+  **/
+  @ApiModelProperty(example = "null", value = "předčíslí [persistentní položka]")
+  public String getPhonearea() {
+    return phonearea;
+  }
+
+  public void setPhonearea(String phonearea) {
+    this.phonearea = phonearea;
+  }
+
+  public Cccallhistoryitem phonenumber(String phonenumber) {
+    this.phonenumber = phonenumber;
+    return this;
+  }
+
+   /**
+   * telefonní číslo [persistentní položka]
+   * @return phonenumber
+  **/
+  @ApiModelProperty(example = "null", value = "telefonní číslo [persistentní položka]")
+  public String getPhonenumber() {
+    return phonenumber;
+  }
+
+  public void setPhonenumber(String phonenumber) {
+    this.phonenumber = phonenumber;
+  }
+
+  public Cccallhistoryitem resulttype(Integer resulttype) {
+    this.resulttype = resulttype;
+    return this;
+  }
+
+   /**
+   * typ výsledku [persistentní položka]
+   * @return resulttype
+  **/
+  @ApiModelProperty(example = "null", value = "typ výsledku [persistentní položka]")
+  public Integer getResulttype() {
+    return resulttype;
+  }
+
+  public void setResulttype(Integer resulttype) {
+    this.resulttype = resulttype;
+  }
+
+  public Cccallhistoryitem resultId(String resultId) {
+    this.resultId = resultId;
+    return this;
+  }
+
+   /**
+   * id výsledku [persistentní položka]
+   * @return resultId
+  **/
+  @ApiModelProperty(example = "null", value = "id výsledku [persistentní položka]")
+  public String getResultId() {
+    return resultId;
+  }
+
+  public void setResultId(String resultId) {
+    this.resultId = resultId;
+  }
+
+  public Cccallhistoryitem alertedatdate(DateTime alertedatdate) {
+    this.alertedatdate = alertedatdate;
     return this;
   }
 
    /**
    * Čas vyzvánění [persistentní položka]
-   * @return alertedAtDATE
+   * @return alertedatdate
   **/
   @ApiModelProperty(example = "null", value = "Čas vyzvánění [persistentní položka]")
-  public DateTime getAlertedAtDATE() {
-    return alertedAtDATE;
+  public DateTime getAlertedatdate() {
+    return alertedatdate;
   }
 
-  public void setAlertedAtDATE(DateTime alertedAtDATE) {
-    this.alertedAtDATE = alertedAtDATE;
+  public void setAlertedatdate(DateTime alertedatdate) {
+    this.alertedatdate = alertedatdate;
   }
 
-  public Cccallhistoryitem connectedAtDATE(DateTime connectedAtDATE) {
-    this.connectedAtDATE = connectedAtDATE;
+  public Cccallhistoryitem connectedatdate(DateTime connectedatdate) {
+    this.connectedatdate = connectedatdate;
     return this;
   }
 
    /**
    * Čas spojení [persistentní položka]
-   * @return connectedAtDATE
+   * @return connectedatdate
   **/
   @ApiModelProperty(example = "null", value = "Čas spojení [persistentní položka]")
-  public DateTime getConnectedAtDATE() {
-    return connectedAtDATE;
+  public DateTime getConnectedatdate() {
+    return connectedatdate;
   }
 
-  public void setConnectedAtDATE(DateTime connectedAtDATE) {
-    this.connectedAtDATE = connectedAtDATE;
+  public void setConnectedatdate(DateTime connectedatdate) {
+    this.connectedatdate = connectedatdate;
   }
 
-  public Cccallhistoryitem finishedAtDATE(DateTime finishedAtDATE) {
-    this.finishedAtDATE = finishedAtDATE;
+  public Cccallhistoryitem finishedatdate(DateTime finishedatdate) {
+    this.finishedatdate = finishedatdate;
     return this;
   }
 
    /**
    * Čas ukončení [persistentní položka]
-   * @return finishedAtDATE
+   * @return finishedatdate
   **/
   @ApiModelProperty(example = "null", value = "Čas ukončení [persistentní položka]")
-  public DateTime getFinishedAtDATE() {
-    return finishedAtDATE;
+  public DateTime getFinishedatdate() {
+    return finishedatdate;
   }
 
-  public void setFinishedAtDATE(DateTime finishedAtDATE) {
-    this.finishedAtDATE = finishedAtDATE;
+  public void setFinishedatdate(DateTime finishedatdate) {
+    this.finishedatdate = finishedatdate;
   }
 
-  public Cccallhistoryitem resultDisplayName(String resultDisplayName) {
-    this.resultDisplayName = resultDisplayName;
+  public Cccallhistoryitem resultdisplayname(String resultdisplayname) {
+    this.resultdisplayname = resultdisplayname;
     return this;
   }
 
    /**
-   * Výsledek [persistentní položka]
-   * @return resultDisplayName
+   * výsledek [persistentní položka]
+   * @return resultdisplayname
   **/
-  @ApiModelProperty(example = "null", value = "Výsledek [persistentní položka]")
-  public String getResultDisplayName() {
-    return resultDisplayName;
+  @ApiModelProperty(example = "null", value = "výsledek [persistentní položka]")
+  public String getResultdisplayname() {
+    return resultdisplayname;
   }
 
-  public void setResultDisplayName(String resultDisplayName) {
-    this.resultDisplayName = resultDisplayName;
+  public void setResultdisplayname(String resultdisplayname) {
+    this.resultdisplayname = resultdisplayname;
   }
 
-  public Cccallhistoryitem createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Cccallhistoryitem createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Cccallhistoryitem phoneDeviceID(String phoneDeviceID) {
-    this.phoneDeviceID = phoneDeviceID;
+  public Cccallhistoryitem phonedeviceId(String phonedeviceId) {
+    this.phonedeviceId = phonedeviceId;
     return this;
   }
 
    /**
-   * Telefonní přístroj; ID objektu Telefonní přístroj [persistentní položka]
-   * @return phoneDeviceID
+   * telefonní přístroj; id objektu telefonní přístroj [persistentní položka]
+   * @return phonedeviceId
   **/
-  @ApiModelProperty(example = "null", value = "Telefonní přístroj; ID objektu Telefonní přístroj [persistentní položka]")
-  public String getPhoneDeviceID() {
-    return phoneDeviceID;
+  @ApiModelProperty(example = "null", value = "telefonní přístroj; id objektu telefonní přístroj [persistentní položka]")
+  public String getPhonedeviceId() {
+    return phonedeviceId;
   }
 
-  public void setPhoneDeviceID(String phoneDeviceID) {
-    this.phoneDeviceID = phoneDeviceID;
+  public void setPhonedeviceId(String phonedeviceId) {
+    this.phonedeviceId = phonedeviceId;
   }
 
-  public Cccallhistoryitem alertedTime(Integer alertedTime) {
-    this.alertedTime = alertedTime;
+  public Cccallhistoryitem alertedtime(Integer alertedtime) {
+    this.alertedtime = alertedtime;
     return this;
   }
 
    /**
-   * Délka vyzvánění
-   * @return alertedTime
+   * délka vyzvánění
+   * @return alertedtime
   **/
-  @ApiModelProperty(example = "null", value = "Délka vyzvánění")
-  public Integer getAlertedTime() {
-    return alertedTime;
+  @ApiModelProperty(example = "null", value = "délka vyzvánění")
+  public Integer getAlertedtime() {
+    return alertedtime;
   }
 
-  public void setAlertedTime(Integer alertedTime) {
-    this.alertedTime = alertedTime;
+  public void setAlertedtime(Integer alertedtime) {
+    this.alertedtime = alertedtime;
   }
 
-  public Cccallhistoryitem connectedTime(Integer connectedTime) {
-    this.connectedTime = connectedTime;
+  public Cccallhistoryitem connectedtime(Integer connectedtime) {
+    this.connectedtime = connectedtime;
     return this;
   }
 
    /**
-   * Délka spojení
-   * @return connectedTime
+   * délka spojení
+   * @return connectedtime
   **/
-  @ApiModelProperty(example = "null", value = "Délka spojení")
-  public Integer getConnectedTime() {
-    return connectedTime;
+  @ApiModelProperty(example = "null", value = "délka spojení")
+  public Integer getConnectedtime() {
+    return connectedtime;
   }
 
-  public void setConnectedTime(Integer connectedTime) {
-    this.connectedTime = connectedTime;
+  public void setConnectedtime(Integer connectedtime) {
+    this.connectedtime = connectedtime;
   }
 
-  public Cccallhistoryitem totalTime(Integer totalTime) {
-    this.totalTime = totalTime;
+  public Cccallhistoryitem totaltime(Integer totaltime) {
+    this.totaltime = totaltime;
     return this;
   }
 
    /**
-   * Celková délka
-   * @return totalTime
+   * celková délka
+   * @return totaltime
   **/
-  @ApiModelProperty(example = "null", value = "Celková délka")
-  public Integer getTotalTime() {
-    return totalTime;
+  @ApiModelProperty(example = "null", value = "celková délka")
+  public Integer getTotaltime() {
+    return totaltime;
   }
 
-  public void setTotalTime(Integer totalTime) {
-    this.totalTime = totalTime;
+  public void setTotaltime(Integer totaltime) {
+    this.totaltime = totaltime;
   }
 
-  public Cccallhistoryitem compoundResult(String compoundResult) {
-    this.compoundResult = compoundResult;
+  public Cccallhistoryitem compoundresult(String compoundresult) {
+    this.compoundresult = compoundresult;
     return this;
   }
 
    /**
-   * Volající
-   * @return compoundResult
+   * volající
+   * @return compoundresult
   **/
-  @ApiModelProperty(example = "null", value = "Volající")
-  public String getCompoundResult() {
-    return compoundResult;
+  @ApiModelProperty(example = "null", value = "volající")
+  public String getCompoundresult() {
+    return compoundresult;
   }
 
-  public void setCompoundResult(String compoundResult) {
-    this.compoundResult = compoundResult;
+  public void setCompoundresult(String compoundresult) {
+    this.compoundresult = compoundresult;
   }
 
   public Cccallhistoryitem direction(Integer direction) {
@@ -388,10 +424,10 @@ public class Cccallhistoryitem   {
   }
 
    /**
-   * Příchozí / odchozí hovor [persistentní položka]
+   * příchozí / odchozí hovor [persistentní položka]
    * @return direction
   **/
-  @ApiModelProperty(example = "null", value = "Příchozí / odchozí hovor [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "příchozí / odchozí hovor [persistentní položka]")
   public Integer getDirection() {
     return direction;
   }
@@ -410,30 +446,30 @@ public class Cccallhistoryitem   {
       return false;
     }
     Cccallhistoryitem cccallhistoryitem = (Cccallhistoryitem) o;
-    return Objects.equals(this.displayName, cccallhistoryitem.displayName) &&
-        Objects.equals(this.ID, cccallhistoryitem.ID) &&
-        Objects.equals(this.classID, cccallhistoryitem.classID) &&
-        Objects.equals(this.objVersion, cccallhistoryitem.objVersion) &&
-        Objects.equals(this.phoneArea, cccallhistoryitem.phoneArea) &&
-        Objects.equals(this.phoneNumber, cccallhistoryitem.phoneNumber) &&
-        Objects.equals(this.resultType, cccallhistoryitem.resultType) &&
-        Objects.equals(this.resultID, cccallhistoryitem.resultID) &&
-        Objects.equals(this.alertedAtDATE, cccallhistoryitem.alertedAtDATE) &&
-        Objects.equals(this.connectedAtDATE, cccallhistoryitem.connectedAtDATE) &&
-        Objects.equals(this.finishedAtDATE, cccallhistoryitem.finishedAtDATE) &&
-        Objects.equals(this.resultDisplayName, cccallhistoryitem.resultDisplayName) &&
-        Objects.equals(this.createdByID, cccallhistoryitem.createdByID) &&
-        Objects.equals(this.phoneDeviceID, cccallhistoryitem.phoneDeviceID) &&
-        Objects.equals(this.alertedTime, cccallhistoryitem.alertedTime) &&
-        Objects.equals(this.connectedTime, cccallhistoryitem.connectedTime) &&
-        Objects.equals(this.totalTime, cccallhistoryitem.totalTime) &&
-        Objects.equals(this.compoundResult, cccallhistoryitem.compoundResult) &&
+    return Objects.equals(this.displayname, cccallhistoryitem.displayname) &&
+        Objects.equals(this.id, cccallhistoryitem.id) &&
+        Objects.equals(this.classid, cccallhistoryitem.classid) &&
+        Objects.equals(this.objversion, cccallhistoryitem.objversion) &&
+        Objects.equals(this.phonearea, cccallhistoryitem.phonearea) &&
+        Objects.equals(this.phonenumber, cccallhistoryitem.phonenumber) &&
+        Objects.equals(this.resulttype, cccallhistoryitem.resulttype) &&
+        Objects.equals(this.resultId, cccallhistoryitem.resultId) &&
+        Objects.equals(this.alertedatdate, cccallhistoryitem.alertedatdate) &&
+        Objects.equals(this.connectedatdate, cccallhistoryitem.connectedatdate) &&
+        Objects.equals(this.finishedatdate, cccallhistoryitem.finishedatdate) &&
+        Objects.equals(this.resultdisplayname, cccallhistoryitem.resultdisplayname) &&
+        Objects.equals(this.createdbyId, cccallhistoryitem.createdbyId) &&
+        Objects.equals(this.phonedeviceId, cccallhistoryitem.phonedeviceId) &&
+        Objects.equals(this.alertedtime, cccallhistoryitem.alertedtime) &&
+        Objects.equals(this.connectedtime, cccallhistoryitem.connectedtime) &&
+        Objects.equals(this.totaltime, cccallhistoryitem.totaltime) &&
+        Objects.equals(this.compoundresult, cccallhistoryitem.compoundresult) &&
         Objects.equals(this.direction, cccallhistoryitem.direction);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, phoneArea, phoneNumber, resultType, resultID, alertedAtDATE, connectedAtDATE, finishedAtDATE, resultDisplayName, createdByID, phoneDeviceID, alertedTime, connectedTime, totalTime, compoundResult, direction);
+    return Objects.hash(displayname, id, classid, objversion, phonearea, phonenumber, resulttype, resultId, alertedatdate, connectedatdate, finishedatdate, resultdisplayname, createdbyId, phonedeviceId, alertedtime, connectedtime, totaltime, compoundresult, direction);
   }
 
   @Override
@@ -441,24 +477,24 @@ public class Cccallhistoryitem   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Cccallhistoryitem {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    phoneArea: ").append(toIndentedString(phoneArea)).append("\n");
-    sb.append("    phoneNumber: ").append(toIndentedString(phoneNumber)).append("\n");
-    sb.append("    resultType: ").append(toIndentedString(resultType)).append("\n");
-    sb.append("    resultID: ").append(toIndentedString(resultID)).append("\n");
-    sb.append("    alertedAtDATE: ").append(toIndentedString(alertedAtDATE)).append("\n");
-    sb.append("    connectedAtDATE: ").append(toIndentedString(connectedAtDATE)).append("\n");
-    sb.append("    finishedAtDATE: ").append(toIndentedString(finishedAtDATE)).append("\n");
-    sb.append("    resultDisplayName: ").append(toIndentedString(resultDisplayName)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    phoneDeviceID: ").append(toIndentedString(phoneDeviceID)).append("\n");
-    sb.append("    alertedTime: ").append(toIndentedString(alertedTime)).append("\n");
-    sb.append("    connectedTime: ").append(toIndentedString(connectedTime)).append("\n");
-    sb.append("    totalTime: ").append(toIndentedString(totalTime)).append("\n");
-    sb.append("    compoundResult: ").append(toIndentedString(compoundResult)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    phonearea: ").append(toIndentedString(phonearea)).append("\n");
+    sb.append("    phonenumber: ").append(toIndentedString(phonenumber)).append("\n");
+    sb.append("    resulttype: ").append(toIndentedString(resulttype)).append("\n");
+    sb.append("    resultId: ").append(toIndentedString(resultId)).append("\n");
+    sb.append("    alertedatdate: ").append(toIndentedString(alertedatdate)).append("\n");
+    sb.append("    connectedatdate: ").append(toIndentedString(connectedatdate)).append("\n");
+    sb.append("    finishedatdate: ").append(toIndentedString(finishedatdate)).append("\n");
+    sb.append("    resultdisplayname: ").append(toIndentedString(resultdisplayname)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    phonedeviceId: ").append(toIndentedString(phonedeviceId)).append("\n");
+    sb.append("    alertedtime: ").append(toIndentedString(alertedtime)).append("\n");
+    sb.append("    connectedtime: ").append(toIndentedString(connectedtime)).append("\n");
+    sb.append("    totaltime: ").append(toIndentedString(totaltime)).append("\n");
+    sb.append("    compoundresult: ").append(toIndentedString(compoundresult)).append("\n");
     sb.append("    direction: ").append(toIndentedString(direction)).append("\n");
     sb.append("}");
     return sb.toString();

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,324 +37,369 @@ import java.util.Objects;
 /**
  * Shiftcalendarrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Shiftcalendarrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("ShiftDate$DATE")
-  private DateTime shiftDateDATE = null;
+  @SerializedName("shiftdate$date")
+  private DateTime shiftdatedate = null;
 
-  @SerializedName("ShiftGenCode")
-  private String shiftGenCode = null;
+  @SerializedName("shiftgencode")
+  private String shiftgencode = null;
 
-  @SerializedName("ShiftBaseType")
-  private Integer shiftBaseType = null;
+  @SerializedName("shiftbasetype")
+  private Integer shiftbasetype = null;
 
-  @SerializedName("InitialHour")
-  private Double initialHour = null;
+  @SerializedName("initialhour")
+  private Double initialhour = null;
 
-  @SerializedName("HoursShift")
-  private Double hoursShift = null;
+  @SerializedName("hoursshift")
+  private Double hoursshift = null;
 
-  @SerializedName("HoursCount")
-  private Double hoursCount = null;
+  @SerializedName("hourscount")
+  private Double hourscount = null;
 
-  @SerializedName("HoursNight")
-  private Double hoursNight = null;
+  @SerializedName("hoursnight")
+  private Double hoursnight = null;
 
-  @SerializedName("HoursEnvir")
-  private Double hoursEnvir = null;
+  @SerializedName("hoursenvir")
+  private Double hoursenvir = null;
 
-  @SerializedName("HoursHoliday")
-  private Double hoursHoliday = null;
+  @SerializedName("hoursholiday")
+  private Double hoursholiday = null;
 
-  @SerializedName("HoursPausesTotal")
-  private Double hoursPausesTotal = null;
+  @SerializedName("hourspausestotal")
+  private Double hourspausestotal = null;
 
-  @SerializedName("ShiftBaseTypeText")
-  private String shiftBaseTypeText = null;
+  @SerializedName("shiftbasetypetext")
+  private String shiftbasetypetext = null;
 
-  @SerializedName("OriginDate")
-  private DateTime originDate = null;
+  @SerializedName("origindate")
+  private DateTime origindate = null;
 
-  @SerializedName("Pauses")
+  @SerializedName("pauses")
   private List<Shiftcalendarpause> pauses = new ArrayList<Shiftcalendarpause>();
 
-  @SerializedName("InitialHourStr")
-  private String initialHourStr = null;
+  @SerializedName("initialhourstr")
+  private String initialhourstr = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Pracovní kalendář [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Pracovní kalendář [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Shiftcalendarrow shiftDateDATE(DateTime shiftDateDATE) {
-    this.shiftDateDATE = shiftDateDATE;
+  public Shiftcalendarrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum [persistentní položka]
-   * @return shiftDateDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum [persistentní položka]")
-  public DateTime getShiftDateDATE() {
-    return shiftDateDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setShiftDateDATE(DateTime shiftDateDATE) {
-    this.shiftDateDATE = shiftDateDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Shiftcalendarrow shiftGenCode(String shiftGenCode) {
-    this.shiftGenCode = shiftGenCode;
+  public Shiftcalendarrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Kód [persistentní položka]
-   * @return shiftGenCode
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
-  public String getShiftGenCode() {
-    return shiftGenCode;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setShiftGenCode(String shiftGenCode) {
-    this.shiftGenCode = shiftGenCode;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Shiftcalendarrow shiftBaseType(Integer shiftBaseType) {
-    this.shiftBaseType = shiftBaseType;
+  public Shiftcalendarrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return shiftBaseType
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getShiftBaseType() {
-    return shiftBaseType;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setShiftBaseType(Integer shiftBaseType) {
-    this.shiftBaseType = shiftBaseType;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Shiftcalendarrow initialHour(Double initialHour) {
-    this.initialHour = initialHour;
+  public Shiftcalendarrow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Hodina od [persistentní položka]
-   * @return initialHour
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Hodina od [persistentní položka]")
-  public Double getInitialHour() {
-    return initialHour;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setInitialHour(Double initialHour) {
-    this.initialHour = initialHour;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Shiftcalendarrow hoursShift(Double hoursShift) {
-    this.hoursShift = hoursShift;
+  public Shiftcalendarrow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Délka [persistentní položka]
-   * @return hoursShift
+   * vlastník; id objektu pracovní kalendář [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Délka [persistentní položka]")
-  public Double getHoursShift() {
-    return hoursShift;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu pracovní kalendář [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setHoursShift(Double hoursShift) {
-    this.hoursShift = hoursShift;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Shiftcalendarrow hoursCount(Double hoursCount) {
-    this.hoursCount = hoursCount;
+  public Shiftcalendarrow shiftdatedate(DateTime shiftdatedate) {
+    this.shiftdatedate = shiftdatedate;
     return this;
   }
 
    /**
-   * Hodiny [persistentní položka]
-   * @return hoursCount
+   * datum [persistentní položka]
+   * @return shiftdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Hodiny [persistentní položka]")
-  public Double getHoursCount() {
-    return hoursCount;
+  @ApiModelProperty(example = "null", value = "datum [persistentní položka]")
+  public DateTime getShiftdatedate() {
+    return shiftdatedate;
   }
 
-  public void setHoursCount(Double hoursCount) {
-    this.hoursCount = hoursCount;
+  public void setShiftdatedate(DateTime shiftdatedate) {
+    this.shiftdatedate = shiftdatedate;
   }
 
-  public Shiftcalendarrow hoursNight(Double hoursNight) {
-    this.hoursNight = hoursNight;
+  public Shiftcalendarrow shiftgencode(String shiftgencode) {
+    this.shiftgencode = shiftgencode;
     return this;
   }
 
    /**
-   * V noci [persistentní položka]
-   * @return hoursNight
+   * kód [persistentní položka]
+   * @return shiftgencode
   **/
-  @ApiModelProperty(example = "null", value = "V noci [persistentní položka]")
-  public Double getHoursNight() {
-    return hoursNight;
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
+  public String getShiftgencode() {
+    return shiftgencode;
   }
 
-  public void setHoursNight(Double hoursNight) {
-    this.hoursNight = hoursNight;
+  public void setShiftgencode(String shiftgencode) {
+    this.shiftgencode = shiftgencode;
   }
 
-  public Shiftcalendarrow hoursEnvir(Double hoursEnvir) {
-    this.hoursEnvir = hoursEnvir;
+  public Shiftcalendarrow shiftbasetype(Integer shiftbasetype) {
+    this.shiftbasetype = shiftbasetype;
     return this;
   }
 
    /**
-   * V prostředí [persistentní položka]
-   * @return hoursEnvir
+   * typ [persistentní položka]
+   * @return shiftbasetype
   **/
-  @ApiModelProperty(example = "null", value = "V prostředí [persistentní položka]")
-  public Double getHoursEnvir() {
-    return hoursEnvir;
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getShiftbasetype() {
+    return shiftbasetype;
   }
 
-  public void setHoursEnvir(Double hoursEnvir) {
-    this.hoursEnvir = hoursEnvir;
+  public void setShiftbasetype(Integer shiftbasetype) {
+    this.shiftbasetype = shiftbasetype;
   }
 
-  public Shiftcalendarrow hoursHoliday(Double hoursHoliday) {
-    this.hoursHoliday = hoursHoliday;
+  public Shiftcalendarrow initialhour(Double initialhour) {
+    this.initialhour = initialhour;
     return this;
   }
 
    /**
-   * Svátek [persistentní položka]
-   * @return hoursHoliday
+   * hodina od [persistentní položka]
+   * @return initialhour
   **/
-  @ApiModelProperty(example = "null", value = "Svátek [persistentní položka]")
-  public Double getHoursHoliday() {
-    return hoursHoliday;
+  @ApiModelProperty(example = "null", value = "hodina od [persistentní položka]")
+  public Double getInitialhour() {
+    return initialhour;
   }
 
-  public void setHoursHoliday(Double hoursHoliday) {
-    this.hoursHoliday = hoursHoliday;
+  public void setInitialhour(Double initialhour) {
+    this.initialhour = initialhour;
   }
 
-  public Shiftcalendarrow hoursPausesTotal(Double hoursPausesTotal) {
-    this.hoursPausesTotal = hoursPausesTotal;
+  public Shiftcalendarrow hoursshift(Double hoursshift) {
+    this.hoursshift = hoursshift;
     return this;
   }
 
    /**
-   * Přestávky celkem
-   * @return hoursPausesTotal
+   * délka [persistentní položka]
+   * @return hoursshift
   **/
-  @ApiModelProperty(example = "null", value = "Přestávky celkem")
-  public Double getHoursPausesTotal() {
-    return hoursPausesTotal;
+  @ApiModelProperty(example = "null", value = "délka [persistentní položka]")
+  public Double getHoursshift() {
+    return hoursshift;
   }
 
-  public void setHoursPausesTotal(Double hoursPausesTotal) {
-    this.hoursPausesTotal = hoursPausesTotal;
+  public void setHoursshift(Double hoursshift) {
+    this.hoursshift = hoursshift;
   }
 
-  public Shiftcalendarrow shiftBaseTypeText(String shiftBaseTypeText) {
-    this.shiftBaseTypeText = shiftBaseTypeText;
+  public Shiftcalendarrow hourscount(Double hourscount) {
+    this.hourscount = hourscount;
     return this;
   }
 
    /**
-   * Základní typ
-   * @return shiftBaseTypeText
+   * hodiny [persistentní položka]
+   * @return hourscount
   **/
-  @ApiModelProperty(example = "null", value = "Základní typ")
-  public String getShiftBaseTypeText() {
-    return shiftBaseTypeText;
+  @ApiModelProperty(example = "null", value = "hodiny [persistentní položka]")
+  public Double getHourscount() {
+    return hourscount;
   }
 
-  public void setShiftBaseTypeText(String shiftBaseTypeText) {
-    this.shiftBaseTypeText = shiftBaseTypeText;
+  public void setHourscount(Double hourscount) {
+    this.hourscount = hourscount;
   }
 
-  public Shiftcalendarrow originDate(DateTime originDate) {
-    this.originDate = originDate;
+  public Shiftcalendarrow hoursnight(Double hoursnight) {
+    this.hoursnight = hoursnight;
     return this;
   }
 
    /**
-   * Datum
-   * @return originDate
+   * v noci [persistentní položka]
+   * @return hoursnight
   **/
-  @ApiModelProperty(example = "null", value = "Datum")
-  public DateTime getOriginDate() {
-    return originDate;
+  @ApiModelProperty(example = "null", value = "v noci [persistentní položka]")
+  public Double getHoursnight() {
+    return hoursnight;
   }
 
-  public void setOriginDate(DateTime originDate) {
-    this.originDate = originDate;
+  public void setHoursnight(Double hoursnight) {
+    this.hoursnight = hoursnight;
+  }
+
+  public Shiftcalendarrow hoursenvir(Double hoursenvir) {
+    this.hoursenvir = hoursenvir;
+    return this;
+  }
+
+   /**
+   * v prostředí [persistentní položka]
+   * @return hoursenvir
+  **/
+  @ApiModelProperty(example = "null", value = "v prostředí [persistentní položka]")
+  public Double getHoursenvir() {
+    return hoursenvir;
+  }
+
+  public void setHoursenvir(Double hoursenvir) {
+    this.hoursenvir = hoursenvir;
+  }
+
+  public Shiftcalendarrow hoursholiday(Double hoursholiday) {
+    this.hoursholiday = hoursholiday;
+    return this;
+  }
+
+   /**
+   * svátek [persistentní položka]
+   * @return hoursholiday
+  **/
+  @ApiModelProperty(example = "null", value = "svátek [persistentní položka]")
+  public Double getHoursholiday() {
+    return hoursholiday;
+  }
+
+  public void setHoursholiday(Double hoursholiday) {
+    this.hoursholiday = hoursholiday;
+  }
+
+  public Shiftcalendarrow hourspausestotal(Double hourspausestotal) {
+    this.hourspausestotal = hourspausestotal;
+    return this;
+  }
+
+   /**
+   * přestávky celkem
+   * @return hourspausestotal
+  **/
+  @ApiModelProperty(example = "null", value = "přestávky celkem")
+  public Double getHourspausestotal() {
+    return hourspausestotal;
+  }
+
+  public void setHourspausestotal(Double hourspausestotal) {
+    this.hourspausestotal = hourspausestotal;
+  }
+
+  public Shiftcalendarrow shiftbasetypetext(String shiftbasetypetext) {
+    this.shiftbasetypetext = shiftbasetypetext;
+    return this;
+  }
+
+   /**
+   * základní typ
+   * @return shiftbasetypetext
+  **/
+  @ApiModelProperty(example = "null", value = "základní typ")
+  public String getShiftbasetypetext() {
+    return shiftbasetypetext;
+  }
+
+  public void setShiftbasetypetext(String shiftbasetypetext) {
+    this.shiftbasetypetext = shiftbasetypetext;
+  }
+
+  public Shiftcalendarrow origindate(DateTime origindate) {
+    this.origindate = origindate;
+    return this;
+  }
+
+   /**
+   * datum
+   * @return origindate
+  **/
+  @ApiModelProperty(example = "null", value = "datum")
+  public DateTime getOrigindate() {
+    return origindate;
+  }
+
+  public void setOrigindate(DateTime origindate) {
+    this.origindate = origindate;
   }
 
   public Shiftcalendarrow pauses(List<Shiftcalendarpause> pauses) {
@@ -368,10 +413,10 @@ public class Shiftcalendarrow   {
   }
 
    /**
-   * Přestávky; kolekce BO Přestávka v plánované směně [nepersistentní položka]
+   * přestávky; kolekce bo přestávka v plánované směně [nepersistentní položka]
    * @return pauses
   **/
-  @ApiModelProperty(example = "null", value = "Přestávky; kolekce BO Přestávka v plánované směně [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "přestávky; kolekce bo přestávka v plánované směně [nepersistentní položka]")
   public List<Shiftcalendarpause> getPauses() {
     return pauses;
   }
@@ -380,22 +425,22 @@ public class Shiftcalendarrow   {
     this.pauses = pauses;
   }
 
-  public Shiftcalendarrow initialHourStr(String initialHourStr) {
-    this.initialHourStr = initialHourStr;
+  public Shiftcalendarrow initialhourstr(String initialhourstr) {
+    this.initialhourstr = initialhourstr;
     return this;
   }
 
    /**
-   * Hodina od
-   * @return initialHourStr
+   * hodina od
+   * @return initialhourstr
   **/
-  @ApiModelProperty(example = "null", value = "Hodina od")
-  public String getInitialHourStr() {
-    return initialHourStr;
+  @ApiModelProperty(example = "null", value = "hodina od")
+  public String getInitialhourstr() {
+    return initialhourstr;
   }
 
-  public void setInitialHourStr(String initialHourStr) {
-    this.initialHourStr = initialHourStr;
+  public void setInitialhourstr(String initialhourstr) {
+    this.initialhourstr = initialhourstr;
   }
 
 
@@ -408,30 +453,30 @@ public class Shiftcalendarrow   {
       return false;
     }
     Shiftcalendarrow shiftcalendarrow = (Shiftcalendarrow) o;
-    return Objects.equals(this.displayName, shiftcalendarrow.displayName) &&
-        Objects.equals(this.ID, shiftcalendarrow.ID) &&
-        Objects.equals(this.classID, shiftcalendarrow.classID) &&
-        Objects.equals(this.objVersion, shiftcalendarrow.objVersion) &&
-        Objects.equals(this.parentID, shiftcalendarrow.parentID) &&
-        Objects.equals(this.shiftDateDATE, shiftcalendarrow.shiftDateDATE) &&
-        Objects.equals(this.shiftGenCode, shiftcalendarrow.shiftGenCode) &&
-        Objects.equals(this.shiftBaseType, shiftcalendarrow.shiftBaseType) &&
-        Objects.equals(this.initialHour, shiftcalendarrow.initialHour) &&
-        Objects.equals(this.hoursShift, shiftcalendarrow.hoursShift) &&
-        Objects.equals(this.hoursCount, shiftcalendarrow.hoursCount) &&
-        Objects.equals(this.hoursNight, shiftcalendarrow.hoursNight) &&
-        Objects.equals(this.hoursEnvir, shiftcalendarrow.hoursEnvir) &&
-        Objects.equals(this.hoursHoliday, shiftcalendarrow.hoursHoliday) &&
-        Objects.equals(this.hoursPausesTotal, shiftcalendarrow.hoursPausesTotal) &&
-        Objects.equals(this.shiftBaseTypeText, shiftcalendarrow.shiftBaseTypeText) &&
-        Objects.equals(this.originDate, shiftcalendarrow.originDate) &&
+    return Objects.equals(this.displayname, shiftcalendarrow.displayname) &&
+        Objects.equals(this.id, shiftcalendarrow.id) &&
+        Objects.equals(this.classid, shiftcalendarrow.classid) &&
+        Objects.equals(this.objversion, shiftcalendarrow.objversion) &&
+        Objects.equals(this.parentId, shiftcalendarrow.parentId) &&
+        Objects.equals(this.shiftdatedate, shiftcalendarrow.shiftdatedate) &&
+        Objects.equals(this.shiftgencode, shiftcalendarrow.shiftgencode) &&
+        Objects.equals(this.shiftbasetype, shiftcalendarrow.shiftbasetype) &&
+        Objects.equals(this.initialhour, shiftcalendarrow.initialhour) &&
+        Objects.equals(this.hoursshift, shiftcalendarrow.hoursshift) &&
+        Objects.equals(this.hourscount, shiftcalendarrow.hourscount) &&
+        Objects.equals(this.hoursnight, shiftcalendarrow.hoursnight) &&
+        Objects.equals(this.hoursenvir, shiftcalendarrow.hoursenvir) &&
+        Objects.equals(this.hoursholiday, shiftcalendarrow.hoursholiday) &&
+        Objects.equals(this.hourspausestotal, shiftcalendarrow.hourspausestotal) &&
+        Objects.equals(this.shiftbasetypetext, shiftcalendarrow.shiftbasetypetext) &&
+        Objects.equals(this.origindate, shiftcalendarrow.origindate) &&
         Objects.equals(this.pauses, shiftcalendarrow.pauses) &&
-        Objects.equals(this.initialHourStr, shiftcalendarrow.initialHourStr);
+        Objects.equals(this.initialhourstr, shiftcalendarrow.initialhourstr);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, shiftDateDATE, shiftGenCode, shiftBaseType, initialHour, hoursShift, hoursCount, hoursNight, hoursEnvir, hoursHoliday, hoursPausesTotal, shiftBaseTypeText, originDate, pauses, initialHourStr);
+    return Objects.hash(displayname, id, classid, objversion, parentId, shiftdatedate, shiftgencode, shiftbasetype, initialhour, hoursshift, hourscount, hoursnight, hoursenvir, hoursholiday, hourspausestotal, shiftbasetypetext, origindate, pauses, initialhourstr);
   }
 
   @Override
@@ -439,25 +484,25 @@ public class Shiftcalendarrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Shiftcalendarrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    shiftDateDATE: ").append(toIndentedString(shiftDateDATE)).append("\n");
-    sb.append("    shiftGenCode: ").append(toIndentedString(shiftGenCode)).append("\n");
-    sb.append("    shiftBaseType: ").append(toIndentedString(shiftBaseType)).append("\n");
-    sb.append("    initialHour: ").append(toIndentedString(initialHour)).append("\n");
-    sb.append("    hoursShift: ").append(toIndentedString(hoursShift)).append("\n");
-    sb.append("    hoursCount: ").append(toIndentedString(hoursCount)).append("\n");
-    sb.append("    hoursNight: ").append(toIndentedString(hoursNight)).append("\n");
-    sb.append("    hoursEnvir: ").append(toIndentedString(hoursEnvir)).append("\n");
-    sb.append("    hoursHoliday: ").append(toIndentedString(hoursHoliday)).append("\n");
-    sb.append("    hoursPausesTotal: ").append(toIndentedString(hoursPausesTotal)).append("\n");
-    sb.append("    shiftBaseTypeText: ").append(toIndentedString(shiftBaseTypeText)).append("\n");
-    sb.append("    originDate: ").append(toIndentedString(originDate)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    shiftdatedate: ").append(toIndentedString(shiftdatedate)).append("\n");
+    sb.append("    shiftgencode: ").append(toIndentedString(shiftgencode)).append("\n");
+    sb.append("    shiftbasetype: ").append(toIndentedString(shiftbasetype)).append("\n");
+    sb.append("    initialhour: ").append(toIndentedString(initialhour)).append("\n");
+    sb.append("    hoursshift: ").append(toIndentedString(hoursshift)).append("\n");
+    sb.append("    hourscount: ").append(toIndentedString(hourscount)).append("\n");
+    sb.append("    hoursnight: ").append(toIndentedString(hoursnight)).append("\n");
+    sb.append("    hoursenvir: ").append(toIndentedString(hoursenvir)).append("\n");
+    sb.append("    hoursholiday: ").append(toIndentedString(hoursholiday)).append("\n");
+    sb.append("    hourspausestotal: ").append(toIndentedString(hourspausestotal)).append("\n");
+    sb.append("    shiftbasetypetext: ").append(toIndentedString(shiftbasetypetext)).append("\n");
+    sb.append("    origindate: ").append(toIndentedString(origindate)).append("\n");
     sb.append("    pauses: ").append(toIndentedString(pauses)).append("\n");
-    sb.append("    initialHourStr: ").append(toIndentedString(initialHourStr)).append("\n");
+    sb.append("    initialhourstr: ").append(toIndentedString(initialhourstr)).append("\n");
     sb.append("}");
     return sb.toString();
   }

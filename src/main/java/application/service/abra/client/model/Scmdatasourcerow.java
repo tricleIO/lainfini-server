@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,114 +34,159 @@ import java.util.Objects;
 /**
  * Scmdatasourcerow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Scmdatasourcerow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Caption")
+  @SerializedName("caption")
   private String caption = null;
 
-  @SerializedName("Kind")
+  @SerializedName("kind")
   private Integer kind = null;
 
-  @SerializedName("DataType")
-  private Integer dataType = null;
+  @SerializedName("datatype")
+  private Integer datatype = null;
 
-  @SerializedName("RollCLSID")
-  private String rollCLSID = null;
+  @SerializedName("rollclsid")
+  private String rollclsid = null;
 
-  @SerializedName("RollTextField")
-  private String rollTextField = null;
+  @SerializedName("rolltextfield")
+  private String rolltextfield = null;
 
-  @SerializedName("RollMask")
-  private Integer rollMask = null;
+  @SerializedName("rollmask")
+  private Integer rollmask = null;
 
-  @SerializedName("RollParams")
-  private String rollParams = null;
+  @SerializedName("rollparams")
+  private String rollparams = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Datový zdroj [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Datový zdroj [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Scmdatasourcerow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Scmdatasourcerow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Scmdatasourcerow id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Scmdatasourcerow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Scmdatasourcerow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Scmdatasourcerow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu datový zdroj [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu datový zdroj [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Scmdatasourcerow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
   public Scmdatasourcerow name(String name) {
@@ -150,10 +195,10 @@ public class Scmdatasourcerow   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -168,10 +213,10 @@ public class Scmdatasourcerow   {
   }
 
    /**
-   * Popisek [persistentní položka]
+   * popisek [persistentní položka]
    * @return caption
   **/
-  @ApiModelProperty(example = "null", value = "Popisek [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popisek [persistentní položka]")
   public String getCaption() {
     return caption;
   }
@@ -186,10 +231,10 @@ public class Scmdatasourcerow   {
   }
 
    /**
-   * Typ sloupce [persistentní položka]
+   * typ sloupce [persistentní položka]
    * @return kind
   **/
-  @ApiModelProperty(example = "null", value = "Typ sloupce [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "typ sloupce [persistentní položka]")
   public Integer getKind() {
     return kind;
   }
@@ -198,103 +243,112 @@ public class Scmdatasourcerow   {
     this.kind = kind;
   }
 
-  public Scmdatasourcerow dataType(Integer dataType) {
-    this.dataType = dataType;
+  public Scmdatasourcerow datatype(Integer datatype) {
+    this.datatype = datatype;
     return this;
   }
 
    /**
-   * Datový typ [persistentní položka]
-   * @return dataType
+   * datový typ [persistentní položka]
+   * @return datatype
   **/
-  @ApiModelProperty(example = "null", value = "Datový typ [persistentní položka]")
-  public Integer getDataType() {
-    return dataType;
+  @ApiModelProperty(example = "null", value = "datový typ [persistentní položka]")
+  public Integer getDatatype() {
+    return datatype;
   }
 
-  public void setDataType(Integer dataType) {
-    this.dataType = dataType;
+  public void setDatatype(Integer datatype) {
+    this.datatype = datatype;
   }
 
-  public Scmdatasourcerow rollCLSID(String rollCLSID) {
-    this.rollCLSID = rollCLSID;
+  public Scmdatasourcerow rollclsid(String rollclsid) {
+    this.rollclsid = rollclsid;
     return this;
   }
 
    /**
    * Číselník [persistentní položka]
-   * @return rollCLSID
+   * @return rollclsid
   **/
   @ApiModelProperty(example = "null", value = "Číselník [persistentní položka]")
-  public String getRollCLSID() {
-    return rollCLSID;
+  public String getRollclsid() {
+    return rollclsid;
   }
 
-  public void setRollCLSID(String rollCLSID) {
-    this.rollCLSID = rollCLSID;
+  public void setRollclsid(String rollclsid) {
+    this.rollclsid = rollclsid;
   }
 
-  public Scmdatasourcerow rollTextField(String rollTextField) {
-    this.rollTextField = rollTextField;
+  public Scmdatasourcerow rolltextfield(String rolltextfield) {
+    this.rolltextfield = rolltextfield;
     return this;
   }
 
    /**
-   * Sloupec číselníku [persistentní položka]
-   * @return rollTextField
+   * sloupec číselníku [persistentní položka]
+   * @return rolltextfield
   **/
-  @ApiModelProperty(example = "null", value = "Sloupec číselníku [persistentní položka]")
-  public String getRollTextField() {
-    return rollTextField;
+  @ApiModelProperty(example = "null", value = "sloupec číselníku [persistentní položka]")
+  public String getRolltextfield() {
+    return rolltextfield;
   }
 
-  public void setRollTextField(String rollTextField) {
-    this.rollTextField = rollTextField;
+  public void setRolltextfield(String rolltextfield) {
+    this.rolltextfield = rolltextfield;
   }
 
-  public Scmdatasourcerow rollMask(Integer rollMask) {
-    this.rollMask = rollMask;
+  public Scmdatasourcerow rollmask(Integer rollmask) {
+    this.rollmask = rollmask;
     return this;
   }
 
    /**
-   * Bezpečnostní maska [persistentní položka]
-   * @return rollMask
+   * bezpečnostní maska [persistentní položka]
+   * @return rollmask
   **/
-  @ApiModelProperty(example = "null", value = "Bezpečnostní maska [persistentní položka]")
-  public Integer getRollMask() {
-    return rollMask;
+  @ApiModelProperty(example = "null", value = "bezpečnostní maska [persistentní položka]")
+  public Integer getRollmask() {
+    return rollmask;
   }
 
-  public void setRollMask(Integer rollMask) {
-    this.rollMask = rollMask;
+  public void setRollmask(Integer rollmask) {
+    this.rollmask = rollmask;
   }
 
-  public Scmdatasourcerow rollParams(String rollParams) {
-    this.rollParams = rollParams;
+  public Scmdatasourcerow rollparams(String rollparams) {
+    this.rollparams = rollparams;
     return this;
   }
 
    /**
-   * Parametry číselníku [persistentní položka]
-   * @return rollParams
+   * parametry číselníku [persistentní položka]
+   * @return rollparams
   **/
-  @ApiModelProperty(example = "null", value = "Parametry číselníku [persistentní položka]")
-  public String getRollParams() {
-    return rollParams;
+  @ApiModelProperty(example = "null", value = "parametry číselníku [persistentní položka]")
+  public String getRollparams() {
+    return rollparams;
   }
 
-  public void setRollParams(String rollParams) {
-    this.rollParams = rollParams;
+  public void setRollparams(String rollparams) {
+    this.rollparams = rollparams;
+  }
+
+  public Scmdatasourcerow system(Boolean system) {
+    this.system = system;
+    return this;
   }
 
    /**
-   * Systémový [persistentní položka]
+   * systémový [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Systémový [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "systémový [persistentní položka]")
   public Boolean getSystem() {
     return system;
+  }
+
+  public void setSystem(Boolean system) {
+    this.system = system;
   }
 
 
@@ -307,26 +361,26 @@ public class Scmdatasourcerow   {
       return false;
     }
     Scmdatasourcerow scmdatasourcerow = (Scmdatasourcerow) o;
-    return Objects.equals(this.displayName, scmdatasourcerow.displayName) &&
-        Objects.equals(this.ID, scmdatasourcerow.ID) &&
-        Objects.equals(this.classID, scmdatasourcerow.classID) &&
-        Objects.equals(this.objVersion, scmdatasourcerow.objVersion) &&
-        Objects.equals(this.parentID, scmdatasourcerow.parentID) &&
-        Objects.equals(this.posIndex, scmdatasourcerow.posIndex) &&
+    return Objects.equals(this.displayname, scmdatasourcerow.displayname) &&
+        Objects.equals(this.id, scmdatasourcerow.id) &&
+        Objects.equals(this.classid, scmdatasourcerow.classid) &&
+        Objects.equals(this.objversion, scmdatasourcerow.objversion) &&
+        Objects.equals(this.parentId, scmdatasourcerow.parentId) &&
+        Objects.equals(this.posindex, scmdatasourcerow.posindex) &&
         Objects.equals(this.name, scmdatasourcerow.name) &&
         Objects.equals(this.caption, scmdatasourcerow.caption) &&
         Objects.equals(this.kind, scmdatasourcerow.kind) &&
-        Objects.equals(this.dataType, scmdatasourcerow.dataType) &&
-        Objects.equals(this.rollCLSID, scmdatasourcerow.rollCLSID) &&
-        Objects.equals(this.rollTextField, scmdatasourcerow.rollTextField) &&
-        Objects.equals(this.rollMask, scmdatasourcerow.rollMask) &&
-        Objects.equals(this.rollParams, scmdatasourcerow.rollParams) &&
+        Objects.equals(this.datatype, scmdatasourcerow.datatype) &&
+        Objects.equals(this.rollclsid, scmdatasourcerow.rollclsid) &&
+        Objects.equals(this.rolltextfield, scmdatasourcerow.rolltextfield) &&
+        Objects.equals(this.rollmask, scmdatasourcerow.rollmask) &&
+        Objects.equals(this.rollparams, scmdatasourcerow.rollparams) &&
         Objects.equals(this.system, scmdatasourcerow.system);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, name, caption, kind, dataType, rollCLSID, rollTextField, rollMask, rollParams, system);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, name, caption, kind, datatype, rollclsid, rolltextfield, rollmask, rollparams, system);
   }
 
   @Override
@@ -334,20 +388,20 @@ public class Scmdatasourcerow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Scmdatasourcerow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    caption: ").append(toIndentedString(caption)).append("\n");
     sb.append("    kind: ").append(toIndentedString(kind)).append("\n");
-    sb.append("    dataType: ").append(toIndentedString(dataType)).append("\n");
-    sb.append("    rollCLSID: ").append(toIndentedString(rollCLSID)).append("\n");
-    sb.append("    rollTextField: ").append(toIndentedString(rollTextField)).append("\n");
-    sb.append("    rollMask: ").append(toIndentedString(rollMask)).append("\n");
-    sb.append("    rollParams: ").append(toIndentedString(rollParams)).append("\n");
+    sb.append("    datatype: ").append(toIndentedString(datatype)).append("\n");
+    sb.append("    rollclsid: ").append(toIndentedString(rollclsid)).append("\n");
+    sb.append("    rolltextfield: ").append(toIndentedString(rolltextfield)).append("\n");
+    sb.append("    rollmask: ").append(toIndentedString(rollmask)).append("\n");
+    sb.append("    rollparams: ").append(toIndentedString(rollparams)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
     sb.append("}");
     return sb.toString();

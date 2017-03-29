@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,69 +34,105 @@ import java.util.Objects;
 /**
  * Employeecountcategory
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Employeecountcategory   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Minimum")
+  @SerializedName("minimum")
   private Integer minimum = null;
 
-  @SerializedName("Maximum")
+  @SerializedName("maximum")
   private Integer maximum = null;
 
-  @SerializedName("MeanValue")
-  private Integer meanValue = null;
+  @SerializedName("meanvalue")
+  private Integer meanvalue = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Employeecountcategory displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Employeecountcategory id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Employeecountcategory classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Employeecountcategory objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Employeecountcategory code(String code) {
@@ -105,10 +141,10 @@ public class Employeecountcategory   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -123,10 +159,10 @@ public class Employeecountcategory   {
   }
 
    /**
-   * Název kategorie [persistentní položka]
+   * název kategorie [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název kategorie [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název kategorie [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -141,10 +177,10 @@ public class Employeecountcategory   {
   }
 
    /**
-   * Minimální počet [persistentní položka]
+   * minimální počet [persistentní položka]
    * @return minimum
   **/
-  @ApiModelProperty(example = "null", value = "Minimální počet [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "minimální počet [persistentní položka]")
   public Integer getMinimum() {
     return minimum;
   }
@@ -159,10 +195,10 @@ public class Employeecountcategory   {
   }
 
    /**
-   * Maximální počet [persistentní položka]
+   * maximální počet [persistentní položka]
    * @return maximum
   **/
-  @ApiModelProperty(example = "null", value = "Maximální počet [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "maximální počet [persistentní položka]")
   public Integer getMaximum() {
     return maximum;
   }
@@ -171,22 +207,22 @@ public class Employeecountcategory   {
     this.maximum = maximum;
   }
 
-  public Employeecountcategory meanValue(Integer meanValue) {
-    this.meanValue = meanValue;
+  public Employeecountcategory meanvalue(Integer meanvalue) {
+    this.meanvalue = meanvalue;
     return this;
   }
 
    /**
-   * Střední hodnota [persistentní položka]
-   * @return meanValue
+   * střední hodnota [persistentní položka]
+   * @return meanvalue
   **/
-  @ApiModelProperty(example = "null", value = "Střední hodnota [persistentní položka]")
-  public Integer getMeanValue() {
-    return meanValue;
+  @ApiModelProperty(example = "null", value = "střední hodnota [persistentní položka]")
+  public Integer getMeanvalue() {
+    return meanvalue;
   }
 
-  public void setMeanValue(Integer meanValue) {
-    this.meanValue = meanValue;
+  public void setMeanvalue(Integer meanvalue) {
+    this.meanvalue = meanvalue;
   }
 
 
@@ -199,20 +235,20 @@ public class Employeecountcategory   {
       return false;
     }
     Employeecountcategory employeecountcategory = (Employeecountcategory) o;
-    return Objects.equals(this.displayName, employeecountcategory.displayName) &&
-        Objects.equals(this.ID, employeecountcategory.ID) &&
-        Objects.equals(this.classID, employeecountcategory.classID) &&
-        Objects.equals(this.objVersion, employeecountcategory.objVersion) &&
+    return Objects.equals(this.displayname, employeecountcategory.displayname) &&
+        Objects.equals(this.id, employeecountcategory.id) &&
+        Objects.equals(this.classid, employeecountcategory.classid) &&
+        Objects.equals(this.objversion, employeecountcategory.objversion) &&
         Objects.equals(this.code, employeecountcategory.code) &&
         Objects.equals(this.name, employeecountcategory.name) &&
         Objects.equals(this.minimum, employeecountcategory.minimum) &&
         Objects.equals(this.maximum, employeecountcategory.maximum) &&
-        Objects.equals(this.meanValue, employeecountcategory.meanValue);
+        Objects.equals(this.meanvalue, employeecountcategory.meanvalue);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, code, name, minimum, maximum, meanValue);
+    return Objects.hash(displayname, id, classid, objversion, code, name, minimum, maximum, meanvalue);
   }
 
   @Override
@@ -220,15 +256,15 @@ public class Employeecountcategory   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Employeecountcategory {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    minimum: ").append(toIndentedString(minimum)).append("\n");
     sb.append("    maximum: ").append(toIndentedString(maximum)).append("\n");
-    sb.append("    meanValue: ").append(toIndentedString(meanValue)).append("\n");
+    sb.append("    meanvalue: ").append(toIndentedString(meanvalue)).append("\n");
     sb.append("}");
     return sb.toString();
   }

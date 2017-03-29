@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,207 +37,252 @@ import java.util.Objects;
 /**
  * Insuranceperiod
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Insuranceperiod   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("InsuranceBaseType")
-  private Integer insuranceBaseType = null;
+  @SerializedName("insurancebasetype")
+  private Integer insurancebasetype = null;
 
-  @SerializedName("PeriodBegin$DATE")
-  private DateTime periodBeginDATE = null;
+  @SerializedName("periodbegin$date")
+  private DateTime periodbegindate = null;
 
-  @SerializedName("PeriodEnd$DATE")
-  private DateTime periodEndDATE = null;
+  @SerializedName("periodend$date")
+  private DateTime periodenddate = null;
 
-  @SerializedName("InsuranceCode")
-  private String insuranceCode = null;
+  @SerializedName("insurancecode")
+  private String insurancecode = null;
 
-  @SerializedName("InsurancePeriodType")
-  private Integer insurancePeriodType = null;
+  @SerializedName("insuranceperiodtype")
+  private Integer insuranceperiodtype = null;
 
-  @SerializedName("InsurancePeriodTypeAsText")
-  private String insurancePeriodTypeAsText = null;
+  @SerializedName("insuranceperiodtypeastext")
+  private String insuranceperiodtypeastext = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("InsuranceBase")
-  private Double insuranceBase = null;
+  @SerializedName("insurancebase")
+  private Double insurancebase = null;
 
-  @SerializedName("ExcludedDaysInsBase")
-  private Double excludedDaysInsBase = null;
+  @SerializedName("excludeddaysinsbase")
+  private Double excludeddaysinsbase = null;
 
-  @SerializedName("ExcludedDays")
-  private Integer excludedDays = null;
+  @SerializedName("excludeddays")
+  private Integer excludeddays = null;
 
-  @SerializedName("InsuranceDetails")
-  private List<Insuranceperioddetail> insuranceDetails = new ArrayList<Insuranceperioddetail>();
+  @SerializedName("insurancedetails")
+  private List<Insuranceperioddetail> insurancedetails = new ArrayList<Insuranceperioddetail>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Hlavičkový objekt [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Hlavičkový objekt [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Insuranceperiod insuranceBaseType(Integer insuranceBaseType) {
-    this.insuranceBaseType = insuranceBaseType;
+  public Insuranceperiod displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Typ pojištění [persistentní položka]
-   * @return insuranceBaseType
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Typ pojištění [persistentní položka]")
-  public Integer getInsuranceBaseType() {
-    return insuranceBaseType;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setInsuranceBaseType(Integer insuranceBaseType) {
-    this.insuranceBaseType = insuranceBaseType;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Insuranceperiod periodBeginDATE(DateTime periodBeginDATE) {
-    this.periodBeginDATE = periodBeginDATE;
+  public Insuranceperiod id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Začátek [persistentní položka]
-   * @return periodBeginDATE
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Začátek [persistentní položka]")
-  public DateTime getPeriodBeginDATE() {
-    return periodBeginDATE;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setPeriodBeginDATE(DateTime periodBeginDATE) {
-    this.periodBeginDATE = periodBeginDATE;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Insuranceperiod periodEndDATE(DateTime periodEndDATE) {
-    this.periodEndDATE = periodEndDATE;
+  public Insuranceperiod classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Konec [persistentní položka]
-   * @return periodEndDATE
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Konec [persistentní položka]")
-  public DateTime getPeriodEndDATE() {
-    return periodEndDATE;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPeriodEndDATE(DateTime periodEndDATE) {
-    this.periodEndDATE = periodEndDATE;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Insuranceperiod insuranceCode(String insuranceCode) {
-    this.insuranceCode = insuranceCode;
+  public Insuranceperiod objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Kód pojištění [persistentní položka]
-   * @return insuranceCode
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Kód pojištění [persistentní položka]")
-  public String getInsuranceCode() {
-    return insuranceCode;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setInsuranceCode(String insuranceCode) {
-    this.insuranceCode = insuranceCode;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Insuranceperiod insurancePeriodType(Integer insurancePeriodType) {
-    this.insurancePeriodType = insurancePeriodType;
+  public Insuranceperiod parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Typ doby [persistentní položka]
-   * @return insurancePeriodType
+   * vlastník; id objektu hlavičkový objekt [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Typ doby [persistentní položka]")
-  public Integer getInsurancePeriodType() {
-    return insurancePeriodType;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu hlavičkový objekt [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setInsurancePeriodType(Integer insurancePeriodType) {
-    this.insurancePeriodType = insurancePeriodType;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Insuranceperiod insurancePeriodTypeAsText(String insurancePeriodTypeAsText) {
-    this.insurancePeriodTypeAsText = insurancePeriodTypeAsText;
+  public Insuranceperiod insurancebasetype(Integer insurancebasetype) {
+    this.insurancebasetype = insurancebasetype;
     return this;
   }
 
    /**
-   * Typ doby
-   * @return insurancePeriodTypeAsText
+   * typ pojištění [persistentní položka]
+   * @return insurancebasetype
   **/
-  @ApiModelProperty(example = "null", value = "Typ doby")
-  public String getInsurancePeriodTypeAsText() {
-    return insurancePeriodTypeAsText;
+  @ApiModelProperty(example = "null", value = "typ pojištění [persistentní položka]")
+  public Integer getInsurancebasetype() {
+    return insurancebasetype;
   }
 
-  public void setInsurancePeriodTypeAsText(String insurancePeriodTypeAsText) {
-    this.insurancePeriodTypeAsText = insurancePeriodTypeAsText;
+  public void setInsurancebasetype(Integer insurancebasetype) {
+    this.insurancebasetype = insurancebasetype;
+  }
+
+  public Insuranceperiod periodbegindate(DateTime periodbegindate) {
+    this.periodbegindate = periodbegindate;
+    return this;
+  }
+
+   /**
+   * začátek [persistentní položka]
+   * @return periodbegindate
+  **/
+  @ApiModelProperty(example = "null", value = "začátek [persistentní položka]")
+  public DateTime getPeriodbegindate() {
+    return periodbegindate;
+  }
+
+  public void setPeriodbegindate(DateTime periodbegindate) {
+    this.periodbegindate = periodbegindate;
+  }
+
+  public Insuranceperiod periodenddate(DateTime periodenddate) {
+    this.periodenddate = periodenddate;
+    return this;
+  }
+
+   /**
+   * konec [persistentní položka]
+   * @return periodenddate
+  **/
+  @ApiModelProperty(example = "null", value = "konec [persistentní položka]")
+  public DateTime getPeriodenddate() {
+    return periodenddate;
+  }
+
+  public void setPeriodenddate(DateTime periodenddate) {
+    this.periodenddate = periodenddate;
+  }
+
+  public Insuranceperiod insurancecode(String insurancecode) {
+    this.insurancecode = insurancecode;
+    return this;
+  }
+
+   /**
+   * kód pojištění [persistentní položka]
+   * @return insurancecode
+  **/
+  @ApiModelProperty(example = "null", value = "kód pojištění [persistentní položka]")
+  public String getInsurancecode() {
+    return insurancecode;
+  }
+
+  public void setInsurancecode(String insurancecode) {
+    this.insurancecode = insurancecode;
+  }
+
+  public Insuranceperiod insuranceperiodtype(Integer insuranceperiodtype) {
+    this.insuranceperiodtype = insuranceperiodtype;
+    return this;
+  }
+
+   /**
+   * typ doby [persistentní položka]
+   * @return insuranceperiodtype
+  **/
+  @ApiModelProperty(example = "null", value = "typ doby [persistentní položka]")
+  public Integer getInsuranceperiodtype() {
+    return insuranceperiodtype;
+  }
+
+  public void setInsuranceperiodtype(Integer insuranceperiodtype) {
+    this.insuranceperiodtype = insuranceperiodtype;
+  }
+
+  public Insuranceperiod insuranceperiodtypeastext(String insuranceperiodtypeastext) {
+    this.insuranceperiodtypeastext = insuranceperiodtypeastext;
+    return this;
+  }
+
+   /**
+   * typ doby
+   * @return insuranceperiodtypeastext
+  **/
+  @ApiModelProperty(example = "null", value = "typ doby")
+  public String getInsuranceperiodtypeastext() {
+    return insuranceperiodtypeastext;
+  }
+
+  public void setInsuranceperiodtypeastext(String insuranceperiodtypeastext) {
+    this.insuranceperiodtypeastext = insuranceperiodtypeastext;
   }
 
   public Insuranceperiod note(String note) {
@@ -246,10 +291,10 @@ public class Insuranceperiod   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -258,81 +303,81 @@ public class Insuranceperiod   {
     this.note = note;
   }
 
-  public Insuranceperiod insuranceBase(Double insuranceBase) {
-    this.insuranceBase = insuranceBase;
+  public Insuranceperiod insurancebase(Double insurancebase) {
+    this.insurancebase = insurancebase;
     return this;
   }
 
    /**
-   * Vym.základ
-   * @return insuranceBase
+   * vym.základ
+   * @return insurancebase
   **/
-  @ApiModelProperty(example = "null", value = "Vym.základ")
-  public Double getInsuranceBase() {
-    return insuranceBase;
+  @ApiModelProperty(example = "null", value = "vym.základ")
+  public Double getInsurancebase() {
+    return insurancebase;
   }
 
-  public void setInsuranceBase(Double insuranceBase) {
-    this.insuranceBase = insuranceBase;
+  public void setInsurancebase(Double insurancebase) {
+    this.insurancebase = insurancebase;
   }
 
-  public Insuranceperiod excludedDaysInsBase(Double excludedDaysInsBase) {
-    this.excludedDaysInsBase = excludedDaysInsBase;
+  public Insuranceperiod excludeddaysinsbase(Double excludeddaysinsbase) {
+    this.excludeddaysinsbase = excludeddaysinsbase;
     return this;
   }
 
    /**
-   * Vym.z.při vyl.d.
-   * @return excludedDaysInsBase
+   * vym.z.při vyl.d.
+   * @return excludeddaysinsbase
   **/
-  @ApiModelProperty(example = "null", value = "Vym.z.při vyl.d.")
-  public Double getExcludedDaysInsBase() {
-    return excludedDaysInsBase;
+  @ApiModelProperty(example = "null", value = "vym.z.při vyl.d.")
+  public Double getExcludeddaysinsbase() {
+    return excludeddaysinsbase;
   }
 
-  public void setExcludedDaysInsBase(Double excludedDaysInsBase) {
-    this.excludedDaysInsBase = excludedDaysInsBase;
+  public void setExcludeddaysinsbase(Double excludeddaysinsbase) {
+    this.excludeddaysinsbase = excludeddaysinsbase;
   }
 
-  public Insuranceperiod excludedDays(Integer excludedDays) {
-    this.excludedDays = excludedDays;
+  public Insuranceperiod excludeddays(Integer excludeddays) {
+    this.excludeddays = excludeddays;
     return this;
   }
 
    /**
-   * Vyl.doba
-   * @return excludedDays
+   * vyl.doba
+   * @return excludeddays
   **/
-  @ApiModelProperty(example = "null", value = "Vyl.doba")
-  public Integer getExcludedDays() {
-    return excludedDays;
+  @ApiModelProperty(example = "null", value = "vyl.doba")
+  public Integer getExcludeddays() {
+    return excludeddays;
   }
 
-  public void setExcludedDays(Integer excludedDays) {
-    this.excludedDays = excludedDays;
+  public void setExcludeddays(Integer excludeddays) {
+    this.excludeddays = excludeddays;
   }
 
-  public Insuranceperiod insuranceDetails(List<Insuranceperioddetail> insuranceDetails) {
-    this.insuranceDetails = insuranceDetails;
+  public Insuranceperiod insurancedetails(List<Insuranceperioddetail> insurancedetails) {
+    this.insurancedetails = insurancedetails;
     return this;
   }
 
-  public Insuranceperiod addInsuranceDetailsItem(Insuranceperioddetail insuranceDetailsItem) {
-    this.insuranceDetails.add(insuranceDetailsItem);
+  public Insuranceperiod addInsurancedetailsItem(Insuranceperioddetail insurancedetailsItem) {
+    this.insurancedetails.add(insurancedetailsItem);
     return this;
   }
 
    /**
-   * Detail průběhu pojištění; kolekce BO Detail období pojištění [nepersistentní položka]
-   * @return insuranceDetails
+   * detail průběhu pojištění; kolekce bo detail období pojištění [nepersistentní položka]
+   * @return insurancedetails
   **/
-  @ApiModelProperty(example = "null", value = "Detail průběhu pojištění; kolekce BO Detail období pojištění [nepersistentní položka]")
-  public List<Insuranceperioddetail> getInsuranceDetails() {
-    return insuranceDetails;
+  @ApiModelProperty(example = "null", value = "detail průběhu pojištění; kolekce bo detail období pojištění [nepersistentní položka]")
+  public List<Insuranceperioddetail> getInsurancedetails() {
+    return insurancedetails;
   }
 
-  public void setInsuranceDetails(List<Insuranceperioddetail> insuranceDetails) {
-    this.insuranceDetails = insuranceDetails;
+  public void setInsurancedetails(List<Insuranceperioddetail> insurancedetails) {
+    this.insurancedetails = insurancedetails;
   }
 
 
@@ -345,27 +390,27 @@ public class Insuranceperiod   {
       return false;
     }
     Insuranceperiod insuranceperiod = (Insuranceperiod) o;
-    return Objects.equals(this.displayName, insuranceperiod.displayName) &&
-        Objects.equals(this.ID, insuranceperiod.ID) &&
-        Objects.equals(this.classID, insuranceperiod.classID) &&
-        Objects.equals(this.objVersion, insuranceperiod.objVersion) &&
-        Objects.equals(this.parentID, insuranceperiod.parentID) &&
-        Objects.equals(this.insuranceBaseType, insuranceperiod.insuranceBaseType) &&
-        Objects.equals(this.periodBeginDATE, insuranceperiod.periodBeginDATE) &&
-        Objects.equals(this.periodEndDATE, insuranceperiod.periodEndDATE) &&
-        Objects.equals(this.insuranceCode, insuranceperiod.insuranceCode) &&
-        Objects.equals(this.insurancePeriodType, insuranceperiod.insurancePeriodType) &&
-        Objects.equals(this.insurancePeriodTypeAsText, insuranceperiod.insurancePeriodTypeAsText) &&
+    return Objects.equals(this.displayname, insuranceperiod.displayname) &&
+        Objects.equals(this.id, insuranceperiod.id) &&
+        Objects.equals(this.classid, insuranceperiod.classid) &&
+        Objects.equals(this.objversion, insuranceperiod.objversion) &&
+        Objects.equals(this.parentId, insuranceperiod.parentId) &&
+        Objects.equals(this.insurancebasetype, insuranceperiod.insurancebasetype) &&
+        Objects.equals(this.periodbegindate, insuranceperiod.periodbegindate) &&
+        Objects.equals(this.periodenddate, insuranceperiod.periodenddate) &&
+        Objects.equals(this.insurancecode, insuranceperiod.insurancecode) &&
+        Objects.equals(this.insuranceperiodtype, insuranceperiod.insuranceperiodtype) &&
+        Objects.equals(this.insuranceperiodtypeastext, insuranceperiod.insuranceperiodtypeastext) &&
         Objects.equals(this.note, insuranceperiod.note) &&
-        Objects.equals(this.insuranceBase, insuranceperiod.insuranceBase) &&
-        Objects.equals(this.excludedDaysInsBase, insuranceperiod.excludedDaysInsBase) &&
-        Objects.equals(this.excludedDays, insuranceperiod.excludedDays) &&
-        Objects.equals(this.insuranceDetails, insuranceperiod.insuranceDetails);
+        Objects.equals(this.insurancebase, insuranceperiod.insurancebase) &&
+        Objects.equals(this.excludeddaysinsbase, insuranceperiod.excludeddaysinsbase) &&
+        Objects.equals(this.excludeddays, insuranceperiod.excludeddays) &&
+        Objects.equals(this.insurancedetails, insuranceperiod.insurancedetails);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, insuranceBaseType, periodBeginDATE, periodEndDATE, insuranceCode, insurancePeriodType, insurancePeriodTypeAsText, note, insuranceBase, excludedDaysInsBase, excludedDays, insuranceDetails);
+    return Objects.hash(displayname, id, classid, objversion, parentId, insurancebasetype, periodbegindate, periodenddate, insurancecode, insuranceperiodtype, insuranceperiodtypeastext, note, insurancebase, excludeddaysinsbase, excludeddays, insurancedetails);
   }
 
   @Override
@@ -373,22 +418,22 @@ public class Insuranceperiod   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Insuranceperiod {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    insuranceBaseType: ").append(toIndentedString(insuranceBaseType)).append("\n");
-    sb.append("    periodBeginDATE: ").append(toIndentedString(periodBeginDATE)).append("\n");
-    sb.append("    periodEndDATE: ").append(toIndentedString(periodEndDATE)).append("\n");
-    sb.append("    insuranceCode: ").append(toIndentedString(insuranceCode)).append("\n");
-    sb.append("    insurancePeriodType: ").append(toIndentedString(insurancePeriodType)).append("\n");
-    sb.append("    insurancePeriodTypeAsText: ").append(toIndentedString(insurancePeriodTypeAsText)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    insurancebasetype: ").append(toIndentedString(insurancebasetype)).append("\n");
+    sb.append("    periodbegindate: ").append(toIndentedString(periodbegindate)).append("\n");
+    sb.append("    periodenddate: ").append(toIndentedString(periodenddate)).append("\n");
+    sb.append("    insurancecode: ").append(toIndentedString(insurancecode)).append("\n");
+    sb.append("    insuranceperiodtype: ").append(toIndentedString(insuranceperiodtype)).append("\n");
+    sb.append("    insuranceperiodtypeastext: ").append(toIndentedString(insuranceperiodtypeastext)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
-    sb.append("    insuranceBase: ").append(toIndentedString(insuranceBase)).append("\n");
-    sb.append("    excludedDaysInsBase: ").append(toIndentedString(excludedDaysInsBase)).append("\n");
-    sb.append("    excludedDays: ").append(toIndentedString(excludedDays)).append("\n");
-    sb.append("    insuranceDetails: ").append(toIndentedString(insuranceDetails)).append("\n");
+    sb.append("    insurancebase: ").append(toIndentedString(insurancebase)).append("\n");
+    sb.append("    excludeddaysinsbase: ").append(toIndentedString(excludeddaysinsbase)).append("\n");
+    sb.append("    excludeddays: ").append(toIndentedString(excludeddays)).append("\n");
+    sb.append("    insurancedetails: ").append(toIndentedString(insurancedetails)).append("\n");
     sb.append("}");
     return sb.toString();
   }

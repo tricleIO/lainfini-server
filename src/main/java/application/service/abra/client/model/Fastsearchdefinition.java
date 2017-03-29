@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,120 +37,156 @@ import java.util.Objects;
 /**
  * Fastsearchdefinition
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Fastsearchdefinition   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("BOCLSID")
-  private String BOCLSID = null;
+  @SerializedName("boclsid")
+  private String boclsid = null;
 
-  @SerializedName("TableName")
-  private String tableName = null;
+  @SerializedName("tablename")
+  private String tablename = null;
 
-  @SerializedName("Indexes")
+  @SerializedName("indexes")
   private List<Fastsearchdefinitionindex> indexes = new ArrayList<Fastsearchdefinitionindex>();
 
-  @SerializedName("DBTableName")
-  private String dBTableName = null;
+  @SerializedName("dbtablename")
+  private String dbtablename = null;
 
-  @SerializedName("BOName")
-  private String bOName = null;
+  @SerializedName("boname")
+  private String boname = null;
 
-  @SerializedName("SiteName")
-  private String siteName = null;
+  @SerializedName("sitename")
+  private String sitename = null;
 
-  @SerializedName("CreatedAt$DATE")
-  private DateTime createdAtDATE = null;
+  @SerializedName("createdat$date")
+  private DateTime createdatdate = null;
 
-  @SerializedName("CorrectedAt$DATE")
-  private DateTime correctedAtDATE = null;
+  @SerializedName("correctedat$date")
+  private DateTime correctedatdate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Fastsearchdefinition BOCLSID(String BOCLSID) {
-    this.BOCLSID = BOCLSID;
+  public Fastsearchdefinition displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Třída [persistentní položka]
-   * @return BOCLSID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Třída [persistentní položka]")
-  public String getBOCLSID() {
-    return BOCLSID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setBOCLSID(String BOCLSID) {
-    this.BOCLSID = BOCLSID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Fastsearchdefinition tableName(String tableName) {
-    this.tableName = tableName;
+  public Fastsearchdefinition id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Tabulka [persistentní položka]
-   * @return tableName
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Tabulka [persistentní položka]")
-  public String getTableName() {
-    return tableName;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setTableName(String tableName) {
-    this.tableName = tableName;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Fastsearchdefinition classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Fastsearchdefinition objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Fastsearchdefinition boclsid(String boclsid) {
+    this.boclsid = boclsid;
+    return this;
+  }
+
+   /**
+   * třída [persistentní položka]
+   * @return boclsid
+  **/
+  @ApiModelProperty(example = "null", value = "třída [persistentní položka]")
+  public String getBoclsid() {
+    return boclsid;
+  }
+
+  public void setBoclsid(String boclsid) {
+    this.boclsid = boclsid;
+  }
+
+  public Fastsearchdefinition tablename(String tablename) {
+    this.tablename = tablename;
+    return this;
+  }
+
+   /**
+   * tabulka [persistentní položka]
+   * @return tablename
+  **/
+  @ApiModelProperty(example = "null", value = "tabulka [persistentní položka]")
+  public String getTablename() {
+    return tablename;
+  }
+
+  public void setTablename(String tablename) {
+    this.tablename = tablename;
   }
 
   public Fastsearchdefinition indexes(List<Fastsearchdefinitionindex> indexes) {
@@ -164,10 +200,10 @@ public class Fastsearchdefinition   {
   }
 
    /**
-   * Indexy; kolekce BO Fulltextové hledání - definice položky [nepersistentní položka]
+   * indexy; kolekce bo fulltextové hledání - definice položky [nepersistentní položka]
    * @return indexes
   **/
-  @ApiModelProperty(example = "null", value = "Indexy; kolekce BO Fulltextové hledání - definice položky [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "indexy; kolekce bo fulltextové hledání - definice položky [nepersistentní položka]")
   public List<Fastsearchdefinitionindex> getIndexes() {
     return indexes;
   }
@@ -176,130 +212,130 @@ public class Fastsearchdefinition   {
     this.indexes = indexes;
   }
 
-  public Fastsearchdefinition dBTableName(String dBTableName) {
-    this.dBTableName = dBTableName;
+  public Fastsearchdefinition dbtablename(String dbtablename) {
+    this.dbtablename = dbtablename;
     return this;
   }
 
    /**
-   * Db. tabulka
-   * @return dBTableName
+   * db. tabulka
+   * @return dbtablename
   **/
-  @ApiModelProperty(example = "null", value = "Db. tabulka")
-  public String getDBTableName() {
-    return dBTableName;
+  @ApiModelProperty(example = "null", value = "db. tabulka")
+  public String getDbtablename() {
+    return dbtablename;
   }
 
-  public void setDBTableName(String dBTableName) {
-    this.dBTableName = dBTableName;
+  public void setDbtablename(String dbtablename) {
+    this.dbtablename = dbtablename;
   }
 
-  public Fastsearchdefinition bOName(String bOName) {
-    this.bOName = bOName;
+  public Fastsearchdefinition boname(String boname) {
+    this.boname = boname;
     return this;
   }
 
    /**
-   * Název třídy
-   * @return bOName
+   * název třídy
+   * @return boname
   **/
-  @ApiModelProperty(example = "null", value = "Název třídy")
-  public String getBOName() {
-    return bOName;
+  @ApiModelProperty(example = "null", value = "název třídy")
+  public String getBoname() {
+    return boname;
   }
 
-  public void setBOName(String bOName) {
-    this.bOName = bOName;
+  public void setBoname(String boname) {
+    this.boname = boname;
   }
 
-  public Fastsearchdefinition siteName(String siteName) {
-    this.siteName = siteName;
+  public Fastsearchdefinition sitename(String sitename) {
+    this.sitename = sitename;
     return this;
   }
 
    /**
-   * Název agendy
-   * @return siteName
+   * název agendy
+   * @return sitename
   **/
-  @ApiModelProperty(example = "null", value = "Název agendy")
-  public String getSiteName() {
-    return siteName;
+  @ApiModelProperty(example = "null", value = "název agendy")
+  public String getSitename() {
+    return sitename;
   }
 
-  public void setSiteName(String siteName) {
-    this.siteName = siteName;
+  public void setSitename(String sitename) {
+    this.sitename = sitename;
   }
 
-  public Fastsearchdefinition createdAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public Fastsearchdefinition createdatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
     return this;
   }
 
    /**
-   * Vytvořeno [persistentní položka]
-   * @return createdAtDATE
+   * vytvořeno [persistentní položka]
+   * @return createdatdate
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořeno [persistentní položka]")
-  public DateTime getCreatedAtDATE() {
-    return createdAtDATE;
+  @ApiModelProperty(example = "null", value = "vytvořeno [persistentní položka]")
+  public DateTime getCreatedatdate() {
+    return createdatdate;
   }
 
-  public void setCreatedAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public void setCreatedatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
   }
 
-  public Fastsearchdefinition correctedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public Fastsearchdefinition correctedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
     return this;
   }
 
    /**
-   * Opraveno [persistentní položka]
-   * @return correctedAtDATE
+   * opraveno [persistentní položka]
+   * @return correctedatdate
   **/
-  @ApiModelProperty(example = "null", value = "Opraveno [persistentní položka]")
-  public DateTime getCorrectedAtDATE() {
-    return correctedAtDATE;
+  @ApiModelProperty(example = "null", value = "opraveno [persistentní položka]")
+  public DateTime getCorrectedatdate() {
+    return correctedatdate;
   }
 
-  public void setCorrectedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public void setCorrectedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
   }
 
-  public Fastsearchdefinition createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Fastsearchdefinition createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Fastsearchdefinition correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Fastsearchdefinition correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
 
@@ -312,25 +348,25 @@ public class Fastsearchdefinition   {
       return false;
     }
     Fastsearchdefinition fastsearchdefinition = (Fastsearchdefinition) o;
-    return Objects.equals(this.displayName, fastsearchdefinition.displayName) &&
-        Objects.equals(this.ID, fastsearchdefinition.ID) &&
-        Objects.equals(this.classID, fastsearchdefinition.classID) &&
-        Objects.equals(this.objVersion, fastsearchdefinition.objVersion) &&
-        Objects.equals(this.BOCLSID, fastsearchdefinition.BOCLSID) &&
-        Objects.equals(this.tableName, fastsearchdefinition.tableName) &&
+    return Objects.equals(this.displayname, fastsearchdefinition.displayname) &&
+        Objects.equals(this.id, fastsearchdefinition.id) &&
+        Objects.equals(this.classid, fastsearchdefinition.classid) &&
+        Objects.equals(this.objversion, fastsearchdefinition.objversion) &&
+        Objects.equals(this.boclsid, fastsearchdefinition.boclsid) &&
+        Objects.equals(this.tablename, fastsearchdefinition.tablename) &&
         Objects.equals(this.indexes, fastsearchdefinition.indexes) &&
-        Objects.equals(this.dBTableName, fastsearchdefinition.dBTableName) &&
-        Objects.equals(this.bOName, fastsearchdefinition.bOName) &&
-        Objects.equals(this.siteName, fastsearchdefinition.siteName) &&
-        Objects.equals(this.createdAtDATE, fastsearchdefinition.createdAtDATE) &&
-        Objects.equals(this.correctedAtDATE, fastsearchdefinition.correctedAtDATE) &&
-        Objects.equals(this.createdByID, fastsearchdefinition.createdByID) &&
-        Objects.equals(this.correctedByID, fastsearchdefinition.correctedByID);
+        Objects.equals(this.dbtablename, fastsearchdefinition.dbtablename) &&
+        Objects.equals(this.boname, fastsearchdefinition.boname) &&
+        Objects.equals(this.sitename, fastsearchdefinition.sitename) &&
+        Objects.equals(this.createdatdate, fastsearchdefinition.createdatdate) &&
+        Objects.equals(this.correctedatdate, fastsearchdefinition.correctedatdate) &&
+        Objects.equals(this.createdbyId, fastsearchdefinition.createdbyId) &&
+        Objects.equals(this.correctedbyId, fastsearchdefinition.correctedbyId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, BOCLSID, tableName, indexes, dBTableName, bOName, siteName, createdAtDATE, correctedAtDATE, createdByID, correctedByID);
+    return Objects.hash(displayname, id, classid, objversion, boclsid, tablename, indexes, dbtablename, boname, sitename, createdatdate, correctedatdate, createdbyId, correctedbyId);
   }
 
   @Override
@@ -338,20 +374,20 @@ public class Fastsearchdefinition   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Fastsearchdefinition {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    BOCLSID: ").append(toIndentedString(BOCLSID)).append("\n");
-    sb.append("    tableName: ").append(toIndentedString(tableName)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    boclsid: ").append(toIndentedString(boclsid)).append("\n");
+    sb.append("    tablename: ").append(toIndentedString(tablename)).append("\n");
     sb.append("    indexes: ").append(toIndentedString(indexes)).append("\n");
-    sb.append("    dBTableName: ").append(toIndentedString(dBTableName)).append("\n");
-    sb.append("    bOName: ").append(toIndentedString(bOName)).append("\n");
-    sb.append("    siteName: ").append(toIndentedString(siteName)).append("\n");
-    sb.append("    createdAtDATE: ").append(toIndentedString(createdAtDATE)).append("\n");
-    sb.append("    correctedAtDATE: ").append(toIndentedString(correctedAtDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
+    sb.append("    dbtablename: ").append(toIndentedString(dbtablename)).append("\n");
+    sb.append("    boname: ").append(toIndentedString(boname)).append("\n");
+    sb.append("    sitename: ").append(toIndentedString(sitename)).append("\n");
+    sb.append("    createdatdate: ").append(toIndentedString(createdatdate)).append("\n");
+    sb.append("    correctedatdate: ").append(toIndentedString(correctedatdate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

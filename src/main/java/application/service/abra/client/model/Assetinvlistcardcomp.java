@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,114 +34,159 @@ import java.util.Objects;
 /**
  * Assetinvlistcardcomp
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Assetinvlistcardcomp   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Component_ID")
-  private String componentID = null;
+  @SerializedName("component_id")
+  private String componentId = null;
 
-  @SerializedName("InventorySubNr")
-  private String inventorySubNr = null;
+  @SerializedName("inventorysubnr")
+  private String inventorysubnr = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("EAN")
-  private String EAN = null;
+  @SerializedName("ean")
+  private String ean = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Karta majetku - seznam inventury [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Karta majetku - seznam inventury [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Assetinvlistcardcomp componentID(String componentID) {
-    this.componentID = componentID;
+  public Assetinvlistcardcomp displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Odkaz na prvek; ID objektu Prvek karty majetku [persistentní položka]
-   * @return componentID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na prvek; ID objektu Prvek karty majetku [persistentní položka]")
-  public String getComponentID() {
-    return componentID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setComponentID(String componentID) {
-    this.componentID = componentID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Assetinvlistcardcomp inventorySubNr(String inventorySubNr) {
-    this.inventorySubNr = inventorySubNr;
+  public Assetinvlistcardcomp id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * InventorySubNr [persistentní položka]
-   * @return inventorySubNr
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "InventorySubNr [persistentní položka]")
-  public String getInventorySubNr() {
-    return inventorySubNr;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setInventorySubNr(String inventorySubNr) {
-    this.inventorySubNr = inventorySubNr;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Assetinvlistcardcomp classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Assetinvlistcardcomp objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Assetinvlistcardcomp parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu karta majetku - seznam inventury [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu karta majetku - seznam inventury [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Assetinvlistcardcomp componentId(String componentId) {
+    this.componentId = componentId;
+    return this;
+  }
+
+   /**
+   * odkaz na prvek; id objektu prvek karty majetku [persistentní položka]
+   * @return componentId
+  **/
+  @ApiModelProperty(example = "null", value = "odkaz na prvek; id objektu prvek karty majetku [persistentní položka]")
+  public String getComponentId() {
+    return componentId;
+  }
+
+  public void setComponentId(String componentId) {
+    this.componentId = componentId;
+  }
+
+  public Assetinvlistcardcomp inventorysubnr(String inventorysubnr) {
+    this.inventorysubnr = inventorysubnr;
+    return this;
+  }
+
+   /**
+   * inventorysubnr [persistentní položka]
+   * @return inventorysubnr
+  **/
+  @ApiModelProperty(example = "null", value = "inventorysubnr [persistentní položka]")
+  public String getInventorysubnr() {
+    return inventorysubnr;
+  }
+
+  public void setInventorysubnr(String inventorysubnr) {
+    this.inventorysubnr = inventorysubnr;
   }
 
   public Assetinvlistcardcomp name(String name) {
@@ -150,10 +195,10 @@ public class Assetinvlistcardcomp   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -162,22 +207,22 @@ public class Assetinvlistcardcomp   {
     this.name = name;
   }
 
-  public Assetinvlistcardcomp EAN(String EAN) {
-    this.EAN = EAN;
+  public Assetinvlistcardcomp ean(String ean) {
+    this.ean = ean;
     return this;
   }
 
    /**
-   * EAN [persistentní položka]
-   * @return EAN
+   * ean [persistentní položka]
+   * @return ean
   **/
-  @ApiModelProperty(example = "null", value = "EAN [persistentní položka]")
-  public String getEAN() {
-    return EAN;
+  @ApiModelProperty(example = "null", value = "ean [persistentní položka]")
+  public String getEan() {
+    return ean;
   }
 
-  public void setEAN(String EAN) {
-    this.EAN = EAN;
+  public void setEan(String ean) {
+    this.ean = ean;
   }
 
 
@@ -190,20 +235,20 @@ public class Assetinvlistcardcomp   {
       return false;
     }
     Assetinvlistcardcomp assetinvlistcardcomp = (Assetinvlistcardcomp) o;
-    return Objects.equals(this.displayName, assetinvlistcardcomp.displayName) &&
-        Objects.equals(this.ID, assetinvlistcardcomp.ID) &&
-        Objects.equals(this.classID, assetinvlistcardcomp.classID) &&
-        Objects.equals(this.objVersion, assetinvlistcardcomp.objVersion) &&
-        Objects.equals(this.parentID, assetinvlistcardcomp.parentID) &&
-        Objects.equals(this.componentID, assetinvlistcardcomp.componentID) &&
-        Objects.equals(this.inventorySubNr, assetinvlistcardcomp.inventorySubNr) &&
+    return Objects.equals(this.displayname, assetinvlistcardcomp.displayname) &&
+        Objects.equals(this.id, assetinvlistcardcomp.id) &&
+        Objects.equals(this.classid, assetinvlistcardcomp.classid) &&
+        Objects.equals(this.objversion, assetinvlistcardcomp.objversion) &&
+        Objects.equals(this.parentId, assetinvlistcardcomp.parentId) &&
+        Objects.equals(this.componentId, assetinvlistcardcomp.componentId) &&
+        Objects.equals(this.inventorysubnr, assetinvlistcardcomp.inventorysubnr) &&
         Objects.equals(this.name, assetinvlistcardcomp.name) &&
-        Objects.equals(this.EAN, assetinvlistcardcomp.EAN);
+        Objects.equals(this.ean, assetinvlistcardcomp.ean);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, componentID, inventorySubNr, name, EAN);
+    return Objects.hash(displayname, id, classid, objversion, parentId, componentId, inventorysubnr, name, ean);
   }
 
   @Override
@@ -211,15 +256,15 @@ public class Assetinvlistcardcomp   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Assetinvlistcardcomp {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    componentID: ").append(toIndentedString(componentID)).append("\n");
-    sb.append("    inventorySubNr: ").append(toIndentedString(inventorySubNr)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    componentId: ").append(toIndentedString(componentId)).append("\n");
+    sb.append("    inventorysubnr: ").append(toIndentedString(inventorysubnr)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    EAN: ").append(toIndentedString(EAN)).append("\n");
+    sb.append("    ean: ").append(toIndentedString(ean)).append("\n");
     sb.append("}");
     return sb.toString();
   }

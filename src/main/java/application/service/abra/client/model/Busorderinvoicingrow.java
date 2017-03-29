@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,177 +35,222 @@ import java.util.Objects;
 /**
  * Busorderinvoicingrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Busorderinvoicingrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("DocType")
-  private String docType = null;
+  @SerializedName("doctype")
+  private String doctype = null;
 
-  @SerializedName("Document_ID")
-  private String documentID = null;
+  @SerializedName("document_id")
+  private String documentId = null;
 
-  @SerializedName("Row_ID")
-  private String rowID = null;
+  @SerializedName("row_id")
+  private String rowId = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("DocDispName")
-  private String docDispName = null;
+  @SerializedName("docdispname")
+  private String docdispname = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Zakázky - vyúčtování fakturace [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Zakázky - vyúčtování fakturace [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Busorderinvoicingrow docType(String docType) {
-    this.docType = docType;
+  public Busorderinvoicingrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return docType
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public String getDocType() {
-    return docType;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDocType(String docType) {
-    this.docType = docType;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Busorderinvoicingrow documentID(String documentID) {
-    this.documentID = documentID;
+  public Busorderinvoicingrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Doklad; ID objektu Výstupní doklad [persistentní položka]
-   * @return documentID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Doklad; ID objektu Výstupní doklad [persistentní položka]")
-  public String getDocumentID() {
-    return documentID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDocumentID(String documentID) {
-    this.documentID = documentID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Busorderinvoicingrow rowID(String rowID) {
-    this.rowID = rowID;
+  public Busorderinvoicingrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Řádek; ID objektu Řádek výstupního dokladu [persistentní položka]
-   * @return rowID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Řádek; ID objektu Řádek výstupního dokladu [persistentní položka]")
-  public String getRowID() {
-    return rowID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setRowID(String rowID) {
-    this.rowID = rowID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Busorderinvoicingrow docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Busorderinvoicingrow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Datum [persistentní položka]
-   * @return docDateDATE
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Datum [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Busorderinvoicingrow docDispName(String docDispName) {
-    this.docDispName = docDispName;
+  public Busorderinvoicingrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu zakázky - vyúčtování fakturace [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu zakázky - vyúčtování fakturace [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Busorderinvoicingrow doctype(String doctype) {
+    this.doctype = doctype;
+    return this;
+  }
+
+   /**
+   * typ [persistentní položka]
+   * @return doctype
+  **/
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public String getDoctype() {
+    return doctype;
+  }
+
+  public void setDoctype(String doctype) {
+    this.doctype = doctype;
+  }
+
+  public Busorderinvoicingrow documentId(String documentId) {
+    this.documentId = documentId;
+    return this;
+  }
+
+   /**
+   * doklad; id objektu výstupní doklad [persistentní položka]
+   * @return documentId
+  **/
+  @ApiModelProperty(example = "null", value = "doklad; id objektu výstupní doklad [persistentní položka]")
+  public String getDocumentId() {
+    return documentId;
+  }
+
+  public void setDocumentId(String documentId) {
+    this.documentId = documentId;
+  }
+
+  public Busorderinvoicingrow rowId(String rowId) {
+    this.rowId = rowId;
+    return this;
+  }
+
+   /**
+   * Řádek; id objektu Řádek výstupního dokladu [persistentní položka]
+   * @return rowId
+  **/
+  @ApiModelProperty(example = "null", value = "Řádek; id objektu Řádek výstupního dokladu [persistentní položka]")
+  public String getRowId() {
+    return rowId;
+  }
+
+  public void setRowId(String rowId) {
+    this.rowId = rowId;
+  }
+
+  public Busorderinvoicingrow docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
+    return this;
+  }
+
+   /**
+   * datum [persistentní položka]
+   * @return docdatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
+  }
+
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
+  }
+
+  public Busorderinvoicingrow docdispname(String docdispname) {
+    this.docdispname = docdispname;
     return this;
   }
 
    /**
    * Číslo dokladu [persistentní položka]
-   * @return docDispName
+   * @return docdispname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dokladu [persistentní položka]")
-  public String getDocDispName() {
-    return docDispName;
+  public String getDocdispname() {
+    return docdispname;
   }
 
-  public void setDocDispName(String docDispName) {
-    this.docDispName = docDispName;
+  public void setDocdispname(String docdispname) {
+    this.docdispname = docdispname;
   }
 
   public Busorderinvoicingrow quantity(Double quantity) {
@@ -214,10 +259,10 @@ public class Busorderinvoicingrow   {
   }
 
    /**
-   * Množství [persistentní položka]
+   * množství [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "množství [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -254,23 +299,23 @@ public class Busorderinvoicingrow   {
       return false;
     }
     Busorderinvoicingrow busorderinvoicingrow = (Busorderinvoicingrow) o;
-    return Objects.equals(this.displayName, busorderinvoicingrow.displayName) &&
-        Objects.equals(this.ID, busorderinvoicingrow.ID) &&
-        Objects.equals(this.classID, busorderinvoicingrow.classID) &&
-        Objects.equals(this.objVersion, busorderinvoicingrow.objVersion) &&
-        Objects.equals(this.parentID, busorderinvoicingrow.parentID) &&
-        Objects.equals(this.docType, busorderinvoicingrow.docType) &&
-        Objects.equals(this.documentID, busorderinvoicingrow.documentID) &&
-        Objects.equals(this.rowID, busorderinvoicingrow.rowID) &&
-        Objects.equals(this.docDateDATE, busorderinvoicingrow.docDateDATE) &&
-        Objects.equals(this.docDispName, busorderinvoicingrow.docDispName) &&
+    return Objects.equals(this.displayname, busorderinvoicingrow.displayname) &&
+        Objects.equals(this.id, busorderinvoicingrow.id) &&
+        Objects.equals(this.classid, busorderinvoicingrow.classid) &&
+        Objects.equals(this.objversion, busorderinvoicingrow.objversion) &&
+        Objects.equals(this.parentId, busorderinvoicingrow.parentId) &&
+        Objects.equals(this.doctype, busorderinvoicingrow.doctype) &&
+        Objects.equals(this.documentId, busorderinvoicingrow.documentId) &&
+        Objects.equals(this.rowId, busorderinvoicingrow.rowId) &&
+        Objects.equals(this.docdatedate, busorderinvoicingrow.docdatedate) &&
+        Objects.equals(this.docdispname, busorderinvoicingrow.docdispname) &&
         Objects.equals(this.quantity, busorderinvoicingrow.quantity) &&
         Objects.equals(this.amount, busorderinvoicingrow.amount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, docType, documentID, rowID, docDateDATE, docDispName, quantity, amount);
+    return Objects.hash(displayname, id, classid, objversion, parentId, doctype, documentId, rowId, docdatedate, docdispname, quantity, amount);
   }
 
   @Override
@@ -278,16 +323,16 @@ public class Busorderinvoicingrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Busorderinvoicingrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    docType: ").append(toIndentedString(docType)).append("\n");
-    sb.append("    documentID: ").append(toIndentedString(documentID)).append("\n");
-    sb.append("    rowID: ").append(toIndentedString(rowID)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    docDispName: ").append(toIndentedString(docDispName)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    doctype: ").append(toIndentedString(doctype)).append("\n");
+    sb.append("    documentId: ").append(toIndentedString(documentId)).append("\n");
+    sb.append("    rowId: ").append(toIndentedString(rowId)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    docdispname: ").append(toIndentedString(docdispname)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
     sb.append("}");

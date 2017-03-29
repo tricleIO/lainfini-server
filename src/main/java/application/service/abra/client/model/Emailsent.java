@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,330 +37,366 @@ import java.util.Objects;
 /**
  * Emailsent
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Emailsent   {
-  @SerializedName("EmailAccount_ID")
-  private String emailAccountID = null;
+  @SerializedName("emailaccount_id")
+  private String emailaccountId = null;
 
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("Subject")
+  @SerializedName("subject")
   private String subject = null;
 
-  @SerializedName("Body")
+  @SerializedName("body")
   private String body = null;
 
-  @SerializedName("MsgID")
-  private String msgID = null;
+  @SerializedName("msgid")
+  private String msgid = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("FirmOffice_ID")
-  private String firmOfficeID = null;
+  @SerializedName("firmoffice_id")
+  private String firmofficeId = null;
 
-  @SerializedName("Person_ID")
-  private String personID = null;
+  @SerializedName("person_id")
+  private String personId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("SolverUser_ID")
-  private String solverUserID = null;
+  @SerializedName("solveruser_id")
+  private String solveruserId = null;
 
-  @SerializedName("SolverRole_ID")
-  private String solverRoleID = null;
+  @SerializedName("solverrole_id")
+  private String solverroleId = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("SentDate$DATE")
-  private DateTime sentDateDATE = null;
+  @SerializedName("sentdate$date")
+  private DateTime sentdatedate = null;
 
-  @SerializedName("ReceivedDate$DATE")
-  private DateTime receivedDateDATE = null;
+  @SerializedName("receiveddate$date")
+  private DateTime receiveddatedate = null;
 
-  @SerializedName("SentState")
-  private Integer sentState = null;
+  @SerializedName("sentstate")
+  private Integer sentstate = null;
 
-  @SerializedName("SentStateStr")
-  private String sentStateStr = null;
+  @SerializedName("sentstatestr")
+  private String sentstatestr = null;
 
-  @SerializedName("BodySavedAs")
-  private Integer bodySavedAs = null;
+  @SerializedName("bodysavedas")
+  private Integer bodysavedas = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("Recipients")
+  @SerializedName("recipients")
   private List<Emailsentrecipient> recipients = new ArrayList<Emailsentrecipient>();
 
-  @SerializedName("Attachments")
+  @SerializedName("attachments")
   private List<Emailsentattachment> attachments = new ArrayList<Emailsentattachment>();
 
-  @SerializedName("RecipientsInOneLine")
-  private String recipientsInOneLine = null;
+  @SerializedName("recipientsinoneline")
+  private String recipientsinoneline = null;
 
-  @SerializedName("AddSentIdent")
-  private Boolean addSentIdent = null;
+  @SerializedName("addsentident")
+  private Boolean addsentident = null;
 
-  @SerializedName("InlineTempFolder")
-  private String inlineTempFolder = null;
+  @SerializedName("inlinetempfolder")
+  private String inlinetempfolder = null;
 
-  @SerializedName("CountOfAttachments")
-  private Integer countOfAttachments = null;
+  @SerializedName("countofattachments")
+  private Integer countofattachments = null;
 
-  @SerializedName("HasCRMActivity")
-  private Boolean hasCRMActivity = null;
+  @SerializedName("hascrmactivity")
+  private Boolean hascrmactivity = null;
 
-  @SerializedName("EmailAccountTypeName")
-  private String emailAccountTypeName = null;
+  @SerializedName("emailaccounttypename")
+  private String emailaccounttypename = null;
 
-  @SerializedName("DataBoxMessSent_ID")
-  private Emailsent dataBoxMessSentID = null;
+  @SerializedName("databoxmesssent_id")
+  private Emailsent databoxmesssentId = null;
 
-  @SerializedName("ErrorStatus")
-  private String errorStatus = null;
+  @SerializedName("errorstatus")
+  private String errorstatus = null;
 
-  @SerializedName("ErrorStatusMessage")
-  private String errorStatusMessage = null;
+  @SerializedName("errorstatusmessage")
+  private String errorstatusmessage = null;
 
-  public Emailsent emailAccountID(String emailAccountID) {
-    this.emailAccountID = emailAccountID;
+  public Emailsent emailaccountId(String emailaccountId) {
+    this.emailaccountId = emailaccountId;
     return this;
   }
 
    /**
-   * Vlastní e-mail. účet; ID objektu E-mailový účet [persistentní položka]
-   * @return emailAccountID
+   * vlastní e-mail. účet; id objektu e-mailový účet [persistentní položka]
+   * @return emailaccountId
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní e-mail. účet; ID objektu E-mailový účet [persistentní položka]")
-  public String getEmailAccountID() {
-    return emailAccountID;
+  @ApiModelProperty(example = "null", value = "vlastní e-mail. účet; id objektu e-mailový účet [persistentní položka]")
+  public String getEmailaccountId() {
+    return emailaccountId;
   }
 
-  public void setEmailAccountID(String emailAccountID) {
-    this.emailAccountID = emailAccountID;
+  public void setEmailaccountId(String emailaccountId) {
+    this.emailaccountId = emailaccountId;
+  }
+
+  public Emailsent displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
   }
 
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Emailsent docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Emailsent id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Emailsent periodID(String periodID) {
-    this.periodID = periodID;
+  public Emailsent classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Emailsent ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Emailsent objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Emailsent docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Emailsent docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Emailsent createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Emailsent periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Emailsent correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Emailsent ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Emailsent newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Emailsent docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Emailsent newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Emailsent createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Emailsent correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+    return this;
+  }
+
+   /**
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
+  }
+
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+  }
+
+  public Emailsent newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
+    return this;
+  }
+
+   /**
+   * typ relace
+   * @return newrelatedtype
+  **/
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
+  }
+
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
+  }
+
+  public Emailsent newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
+    return this;
+  }
+
+   /**
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
+  **/
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
+  }
+
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
   public Emailsent subject(String subject) {
@@ -369,10 +405,10 @@ public class Emailsent   {
   }
 
    /**
-   * Předmět [persistentní položka]
+   * předmět [persistentní položka]
    * @return subject
   **/
-  @ApiModelProperty(example = "null", value = "Předmět [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "předmět [persistentní položka]")
   public String getSubject() {
     return subject;
   }
@@ -387,10 +423,10 @@ public class Emailsent   {
   }
 
    /**
-   * Obsah [persistentní položka]
+   * obsah [persistentní položka]
    * @return body
   **/
-  @ApiModelProperty(example = "null", value = "Obsah [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "obsah [persistentní položka]")
   public String getBody() {
     return body;
   }
@@ -399,166 +435,166 @@ public class Emailsent   {
     this.body = body;
   }
 
-  public Emailsent msgID(String msgID) {
-    this.msgID = msgID;
+  public Emailsent msgid(String msgid) {
+    this.msgid = msgid;
     return this;
   }
 
    /**
-   * Interní ID [persistentní položka]
-   * @return msgID
+   * interní id [persistentní položka]
+   * @return msgid
   **/
-  @ApiModelProperty(example = "null", value = "Interní ID [persistentní položka]")
-  public String getMsgID() {
-    return msgID;
+  @ApiModelProperty(example = "null", value = "interní id [persistentní položka]")
+  public String getMsgid() {
+    return msgid;
   }
 
-  public void setMsgID(String msgID) {
-    this.msgID = msgID;
+  public void setMsgid(String msgid) {
+    this.msgid = msgid;
   }
 
-  public Emailsent firmID(String firmID) {
-    this.firmID = firmID;
+  public Emailsent firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Emailsent firmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public Emailsent firmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
     return this;
   }
 
    /**
-   * Provozovna; ID objektu Provozovna [persistentní položka]
-   * @return firmOfficeID
+   * provozovna; id objektu provozovna [persistentní položka]
+   * @return firmofficeId
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna; ID objektu Provozovna [persistentní položka]")
-  public String getFirmOfficeID() {
-    return firmOfficeID;
+  @ApiModelProperty(example = "null", value = "provozovna; id objektu provozovna [persistentní položka]")
+  public String getFirmofficeId() {
+    return firmofficeId;
   }
 
-  public void setFirmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public void setFirmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
   }
 
-  public Emailsent personID(String personID) {
-    this.personID = personID;
+  public Emailsent personId(String personId) {
+    this.personId = personId;
     return this;
   }
 
    /**
-   * Osoba; ID objektu Osoba [persistentní položka]
-   * @return personID
+   * osoba; id objektu osoba [persistentní položka]
+   * @return personId
   **/
-  @ApiModelProperty(example = "null", value = "Osoba; ID objektu Osoba [persistentní položka]")
-  public String getPersonID() {
-    return personID;
+  @ApiModelProperty(example = "null", value = "osoba; id objektu osoba [persistentní položka]")
+  public String getPersonId() {
+    return personId;
   }
 
-  public void setPersonID(String personID) {
-    this.personID = personID;
+  public void setPersonId(String personId) {
+    this.personId = personId;
   }
 
-  public Emailsent divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Emailsent divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Emailsent busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Emailsent busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Emailsent busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Emailsent bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obch. případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obch. případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obch. případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obch. případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Emailsent solverUserID(String solverUserID) {
-    this.solverUserID = solverUserID;
+  public Emailsent solveruserId(String solveruserId) {
+    this.solveruserId = solveruserId;
     return this;
   }
 
    /**
-   * Řešitel; ID objektu Uživatel [persistentní položka]
-   * @return solverUserID
+   * Řešitel; id objektu uživatel [persistentní položka]
+   * @return solveruserId
   **/
-  @ApiModelProperty(example = "null", value = "Řešitel; ID objektu Uživatel [persistentní položka]")
-  public String getSolverUserID() {
-    return solverUserID;
+  @ApiModelProperty(example = "null", value = "Řešitel; id objektu uživatel [persistentní položka]")
+  public String getSolveruserId() {
+    return solveruserId;
   }
 
-  public void setSolverUserID(String solverUserID) {
-    this.solverUserID = solverUserID;
+  public void setSolveruserId(String solveruserId) {
+    this.solveruserId = solveruserId;
   }
 
-  public Emailsent solverRoleID(String solverRoleID) {
-    this.solverRoleID = solverRoleID;
+  public Emailsent solverroleId(String solverroleId) {
+    this.solverroleId = solverroleId;
     return this;
   }
 
    /**
-   * Role řešitele; ID objektu Role [persistentní položka]
-   * @return solverRoleID
+   * role řešitele; id objektu role [persistentní položka]
+   * @return solverroleId
   **/
-  @ApiModelProperty(example = "null", value = "Role řešitele; ID objektu Role [persistentní položka]")
-  public String getSolverRoleID() {
-    return solverRoleID;
+  @ApiModelProperty(example = "null", value = "role řešitele; id objektu role [persistentní položka]")
+  public String getSolverroleId() {
+    return solverroleId;
   }
 
-  public void setSolverRoleID(String solverRoleID) {
-    this.solverRoleID = solverRoleID;
+  public void setSolverroleId(String solverroleId) {
+    this.solverroleId = solverroleId;
   }
 
   public Emailsent note(String note) {
@@ -567,10 +603,10 @@ public class Emailsent   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -579,103 +615,112 @@ public class Emailsent   {
     this.note = note;
   }
 
-  public Emailsent sentDateDATE(DateTime sentDateDATE) {
-    this.sentDateDATE = sentDateDATE;
+  public Emailsent sentdatedate(DateTime sentdatedate) {
+    this.sentdatedate = sentdatedate;
     return this;
   }
 
    /**
-   * Datum odeslání [persistentní položka]
-   * @return sentDateDATE
+   * datum odeslání [persistentní položka]
+   * @return sentdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum odeslání [persistentní položka]")
-  public DateTime getSentDateDATE() {
-    return sentDateDATE;
+  @ApiModelProperty(example = "null", value = "datum odeslání [persistentní položka]")
+  public DateTime getSentdatedate() {
+    return sentdatedate;
   }
 
-  public void setSentDateDATE(DateTime sentDateDATE) {
-    this.sentDateDATE = sentDateDATE;
+  public void setSentdatedate(DateTime sentdatedate) {
+    this.sentdatedate = sentdatedate;
   }
 
-  public Emailsent receivedDateDATE(DateTime receivedDateDATE) {
-    this.receivedDateDATE = receivedDateDATE;
+  public Emailsent receiveddatedate(DateTime receiveddatedate) {
+    this.receiveddatedate = receiveddatedate;
     return this;
   }
 
    /**
-   * Datum doručení [persistentní položka]
-   * @return receivedDateDATE
+   * datum doručení [persistentní položka]
+   * @return receiveddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum doručení [persistentní položka]")
-  public DateTime getReceivedDateDATE() {
-    return receivedDateDATE;
+  @ApiModelProperty(example = "null", value = "datum doručení [persistentní položka]")
+  public DateTime getReceiveddatedate() {
+    return receiveddatedate;
   }
 
-  public void setReceivedDateDATE(DateTime receivedDateDATE) {
-    this.receivedDateDATE = receivedDateDATE;
+  public void setReceiveddatedate(DateTime receiveddatedate) {
+    this.receiveddatedate = receiveddatedate;
   }
 
-  public Emailsent sentState(Integer sentState) {
-    this.sentState = sentState;
+  public Emailsent sentstate(Integer sentstate) {
+    this.sentstate = sentstate;
     return this;
   }
 
    /**
-   * Stav [persistentní položka]
-   * @return sentState
+   * stav [persistentní položka]
+   * @return sentstate
   **/
-  @ApiModelProperty(example = "null", value = "Stav [persistentní položka]")
-  public Integer getSentState() {
-    return sentState;
+  @ApiModelProperty(example = "null", value = "stav [persistentní položka]")
+  public Integer getSentstate() {
+    return sentstate;
   }
 
-  public void setSentState(Integer sentState) {
-    this.sentState = sentState;
+  public void setSentstate(Integer sentstate) {
+    this.sentstate = sentstate;
   }
 
-   /**
-   * Stav (textově)
-   * @return sentStateStr
-  **/
-  @ApiModelProperty(example = "null", value = "Stav (textově)")
-  public String getSentStateStr() {
-    return sentStateStr;
-  }
-
-  public Emailsent bodySavedAs(Integer bodySavedAs) {
-    this.bodySavedAs = bodySavedAs;
+  public Emailsent sentstatestr(String sentstatestr) {
+    this.sentstatestr = sentstatestr;
     return this;
   }
 
    /**
-   * Obsah zprávy uložit jako [persistentní položka]
-   * @return bodySavedAs
+   * stav (textově)
+   * @return sentstatestr
   **/
-  @ApiModelProperty(example = "null", value = "Obsah zprávy uložit jako [persistentní položka]")
-  public Integer getBodySavedAs() {
-    return bodySavedAs;
+  @ApiModelProperty(example = "null", value = "stav (textově)")
+  public String getSentstatestr() {
+    return sentstatestr;
   }
 
-  public void setBodySavedAs(Integer bodySavedAs) {
-    this.bodySavedAs = bodySavedAs;
+  public void setSentstatestr(String sentstatestr) {
+    this.sentstatestr = sentstatestr;
   }
 
-  public Emailsent busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Emailsent bodysavedas(Integer bodysavedas) {
+    this.bodysavedas = bodysavedas;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * obsah zprávy uložit jako [persistentní položka]
+   * @return bodysavedas
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "obsah zprávy uložit jako [persistentní položka]")
+  public Integer getBodysavedas() {
+    return bodysavedas;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBodysavedas(Integer bodysavedas) {
+    this.bodysavedas = bodysavedas;
+  }
+
+  public Emailsent busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
+    return this;
+  }
+
+   /**
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
+  **/
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
+  }
+
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
   public Emailsent recipients(List<Emailsentrecipient> recipients) {
@@ -689,10 +734,10 @@ public class Emailsent   {
   }
 
    /**
-   * Adresáti; kolekce BO Adresát [nepersistentní položka]
+   * adresáti; kolekce bo adresát [nepersistentní položka]
    * @return recipients
   **/
-  @ApiModelProperty(example = "null", value = "Adresáti; kolekce BO Adresát [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "adresáti; kolekce bo adresát [nepersistentní položka]")
   public List<Emailsentrecipient> getRecipients() {
     return recipients;
   }
@@ -712,10 +757,10 @@ public class Emailsent   {
   }
 
    /**
-   * Přílohy; kolekce BO Odesílaná příloha [nepersistentní položka]
+   * přílohy; kolekce bo odesílaná příloha [nepersistentní položka]
    * @return attachments
   **/
-  @ApiModelProperty(example = "null", value = "Přílohy; kolekce BO Odesílaná příloha [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "přílohy; kolekce bo odesílaná příloha [nepersistentní položka]")
   public List<Emailsentattachment> getAttachments() {
     return attachments;
   }
@@ -724,157 +769,166 @@ public class Emailsent   {
     this.attachments = attachments;
   }
 
-  public Emailsent recipientsInOneLine(String recipientsInOneLine) {
-    this.recipientsInOneLine = recipientsInOneLine;
+  public Emailsent recipientsinoneline(String recipientsinoneline) {
+    this.recipientsinoneline = recipientsinoneline;
     return this;
   }
 
    /**
-   * Souhrn adresátů
-   * @return recipientsInOneLine
+   * souhrn adresátů
+   * @return recipientsinoneline
   **/
-  @ApiModelProperty(example = "null", value = "Souhrn adresátů")
-  public String getRecipientsInOneLine() {
-    return recipientsInOneLine;
+  @ApiModelProperty(example = "null", value = "souhrn adresátů")
+  public String getRecipientsinoneline() {
+    return recipientsinoneline;
   }
 
-  public void setRecipientsInOneLine(String recipientsInOneLine) {
-    this.recipientsInOneLine = recipientsInOneLine;
+  public void setRecipientsinoneline(String recipientsinoneline) {
+    this.recipientsinoneline = recipientsinoneline;
   }
 
-  public Emailsent addSentIdent(Boolean addSentIdent) {
-    this.addSentIdent = addSentIdent;
+  public Emailsent addsentident(Boolean addsentident) {
+    this.addsentident = addsentident;
     return this;
   }
 
    /**
-   * Přidat identifikaci [persistentní položka]
-   * @return addSentIdent
+   * přidat identifikaci [persistentní položka]
+   * @return addsentident
   **/
-  @ApiModelProperty(example = "null", value = "Přidat identifikaci [persistentní položka]")
-  public Boolean getAddSentIdent() {
-    return addSentIdent;
+  @ApiModelProperty(example = "null", value = "přidat identifikaci [persistentní položka]")
+  public Boolean getAddsentident() {
+    return addsentident;
   }
 
-  public void setAddSentIdent(Boolean addSentIdent) {
-    this.addSentIdent = addSentIdent;
+  public void setAddsentident(Boolean addsentident) {
+    this.addsentident = addsentident;
   }
 
-  public Emailsent inlineTempFolder(String inlineTempFolder) {
-    this.inlineTempFolder = inlineTempFolder;
+  public Emailsent inlinetempfolder(String inlinetempfolder) {
+    this.inlinetempfolder = inlinetempfolder;
     return this;
   }
 
    /**
-   * Složka pro dočasné uložení obrázků z e-mailu
-   * @return inlineTempFolder
+   * složka pro dočasné uložení obrázků z e-mailu
+   * @return inlinetempfolder
   **/
-  @ApiModelProperty(example = "null", value = "Složka pro dočasné uložení obrázků z e-mailu")
-  public String getInlineTempFolder() {
-    return inlineTempFolder;
+  @ApiModelProperty(example = "null", value = "složka pro dočasné uložení obrázků z e-mailu")
+  public String getInlinetempfolder() {
+    return inlinetempfolder;
   }
 
-  public void setInlineTempFolder(String inlineTempFolder) {
-    this.inlineTempFolder = inlineTempFolder;
+  public void setInlinetempfolder(String inlinetempfolder) {
+    this.inlinetempfolder = inlinetempfolder;
   }
 
-  public Emailsent countOfAttachments(Integer countOfAttachments) {
-    this.countOfAttachments = countOfAttachments;
+  public Emailsent countofattachments(Integer countofattachments) {
+    this.countofattachments = countofattachments;
     return this;
   }
 
    /**
-   * Počet příloh
-   * @return countOfAttachments
+   * počet příloh
+   * @return countofattachments
   **/
-  @ApiModelProperty(example = "null", value = "Počet příloh")
-  public Integer getCountOfAttachments() {
-    return countOfAttachments;
+  @ApiModelProperty(example = "null", value = "počet příloh")
+  public Integer getCountofattachments() {
+    return countofattachments;
   }
 
-  public void setCountOfAttachments(Integer countOfAttachments) {
-    this.countOfAttachments = countOfAttachments;
+  public void setCountofattachments(Integer countofattachments) {
+    this.countofattachments = countofattachments;
   }
 
-  public Emailsent hasCRMActivity(Boolean hasCRMActivity) {
-    this.hasCRMActivity = hasCRMActivity;
+  public Emailsent hascrmactivity(Boolean hascrmactivity) {
+    this.hascrmactivity = hascrmactivity;
     return this;
   }
 
    /**
-   * Aktivity
-   * @return hasCRMActivity
+   * aktivity
+   * @return hascrmactivity
   **/
-  @ApiModelProperty(example = "null", value = "Aktivity")
-  public Boolean getHasCRMActivity() {
-    return hasCRMActivity;
+  @ApiModelProperty(example = "null", value = "aktivity")
+  public Boolean getHascrmactivity() {
+    return hascrmactivity;
   }
 
-  public void setHasCRMActivity(Boolean hasCRMActivity) {
-    this.hasCRMActivity = hasCRMActivity;
+  public void setHascrmactivity(Boolean hascrmactivity) {
+    this.hascrmactivity = hascrmactivity;
   }
 
-   /**
-   * Typ účtu
-   * @return emailAccountTypeName
-  **/
-  @ApiModelProperty(example = "null", value = "Typ účtu")
-  public String getEmailAccountTypeName() {
-    return emailAccountTypeName;
-  }
-
-  public Emailsent dataBoxMessSentID(Emailsent dataBoxMessSentID) {
-    this.dataBoxMessSentID = dataBoxMessSentID;
+  public Emailsent emailaccounttypename(String emailaccounttypename) {
+    this.emailaccounttypename = emailaccounttypename;
     return this;
   }
 
    /**
-   * Get dataBoxMessSentID
-   * @return dataBoxMessSentID
+   * typ účtu
+   * @return emailaccounttypename
+  **/
+  @ApiModelProperty(example = "null", value = "typ účtu")
+  public String getEmailaccounttypename() {
+    return emailaccounttypename;
+  }
+
+  public void setEmailaccounttypename(String emailaccounttypename) {
+    this.emailaccounttypename = emailaccounttypename;
+  }
+
+  public Emailsent databoxmesssentId(Emailsent databoxmesssentId) {
+    this.databoxmesssentId = databoxmesssentId;
+    return this;
+  }
+
+   /**
+   * Get databoxmesssentId
+   * @return databoxmesssentId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Emailsent getDataBoxMessSentID() {
-    return dataBoxMessSentID;
+  public Emailsent getDataboxmesssentId() {
+    return databoxmesssentId;
   }
 
-  public void setDataBoxMessSentID(Emailsent dataBoxMessSentID) {
-    this.dataBoxMessSentID = dataBoxMessSentID;
+  public void setDataboxmesssentId(Emailsent databoxmesssentId) {
+    this.databoxmesssentId = databoxmesssentId;
   }
 
-  public Emailsent errorStatus(String errorStatus) {
-    this.errorStatus = errorStatus;
+  public Emailsent errorstatus(String errorstatus) {
+    this.errorstatus = errorstatus;
     return this;
   }
 
    /**
-   * Kód chyby [persistentní položka]
-   * @return errorStatus
+   * kód chyby [persistentní položka]
+   * @return errorstatus
   **/
-  @ApiModelProperty(example = "null", value = "Kód chyby [persistentní položka]")
-  public String getErrorStatus() {
-    return errorStatus;
+  @ApiModelProperty(example = "null", value = "kód chyby [persistentní položka]")
+  public String getErrorstatus() {
+    return errorstatus;
   }
 
-  public void setErrorStatus(String errorStatus) {
-    this.errorStatus = errorStatus;
+  public void setErrorstatus(String errorstatus) {
+    this.errorstatus = errorstatus;
   }
 
-  public Emailsent errorStatusMessage(String errorStatusMessage) {
-    this.errorStatusMessage = errorStatusMessage;
+  public Emailsent errorstatusmessage(String errorstatusmessage) {
+    this.errorstatusmessage = errorstatusmessage;
     return this;
   }
 
    /**
-   * Textový popis chyby [persistentní položka]
-   * @return errorStatusMessage
+   * textový popis chyby [persistentní položka]
+   * @return errorstatusmessage
   **/
-  @ApiModelProperty(example = "null", value = "Textový popis chyby [persistentní položka]")
-  public String getErrorStatusMessage() {
-    return errorStatusMessage;
+  @ApiModelProperty(example = "null", value = "textový popis chyby [persistentní položka]")
+  public String getErrorstatusmessage() {
+    return errorstatusmessage;
   }
 
-  public void setErrorStatusMessage(String errorStatusMessage) {
-    this.errorStatusMessage = errorStatusMessage;
+  public void setErrorstatusmessage(String errorstatusmessage) {
+    this.errorstatusmessage = errorstatusmessage;
   }
 
 
@@ -887,53 +941,53 @@ public class Emailsent   {
       return false;
     }
     Emailsent emailsent = (Emailsent) o;
-    return Objects.equals(this.emailAccountID, emailsent.emailAccountID) &&
-        Objects.equals(this.displayName, emailsent.displayName) &&
-        Objects.equals(this.ID, emailsent.ID) &&
-        Objects.equals(this.classID, emailsent.classID) &&
-        Objects.equals(this.objVersion, emailsent.objVersion) &&
-        Objects.equals(this.docQueueID, emailsent.docQueueID) &&
-        Objects.equals(this.periodID, emailsent.periodID) &&
-        Objects.equals(this.ordNumber, emailsent.ordNumber) &&
-        Objects.equals(this.docDateDATE, emailsent.docDateDATE) &&
-        Objects.equals(this.createdByID, emailsent.createdByID) &&
-        Objects.equals(this.correctedByID, emailsent.correctedByID) &&
-        Objects.equals(this.newRelatedType, emailsent.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, emailsent.newRelatedDocumentID) &&
+    return Objects.equals(this.emailaccountId, emailsent.emailaccountId) &&
+        Objects.equals(this.displayname, emailsent.displayname) &&
+        Objects.equals(this.id, emailsent.id) &&
+        Objects.equals(this.classid, emailsent.classid) &&
+        Objects.equals(this.objversion, emailsent.objversion) &&
+        Objects.equals(this.docqueueId, emailsent.docqueueId) &&
+        Objects.equals(this.periodId, emailsent.periodId) &&
+        Objects.equals(this.ordnumber, emailsent.ordnumber) &&
+        Objects.equals(this.docdatedate, emailsent.docdatedate) &&
+        Objects.equals(this.createdbyId, emailsent.createdbyId) &&
+        Objects.equals(this.correctedbyId, emailsent.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, emailsent.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, emailsent.newrelateddocumentId) &&
         Objects.equals(this.subject, emailsent.subject) &&
         Objects.equals(this.body, emailsent.body) &&
-        Objects.equals(this.msgID, emailsent.msgID) &&
-        Objects.equals(this.firmID, emailsent.firmID) &&
-        Objects.equals(this.firmOfficeID, emailsent.firmOfficeID) &&
-        Objects.equals(this.personID, emailsent.personID) &&
-        Objects.equals(this.divisionID, emailsent.divisionID) &&
-        Objects.equals(this.busOrderID, emailsent.busOrderID) &&
-        Objects.equals(this.busTransactionID, emailsent.busTransactionID) &&
-        Objects.equals(this.solverUserID, emailsent.solverUserID) &&
-        Objects.equals(this.solverRoleID, emailsent.solverRoleID) &&
+        Objects.equals(this.msgid, emailsent.msgid) &&
+        Objects.equals(this.firmId, emailsent.firmId) &&
+        Objects.equals(this.firmofficeId, emailsent.firmofficeId) &&
+        Objects.equals(this.personId, emailsent.personId) &&
+        Objects.equals(this.divisionId, emailsent.divisionId) &&
+        Objects.equals(this.busorderId, emailsent.busorderId) &&
+        Objects.equals(this.bustransactionId, emailsent.bustransactionId) &&
+        Objects.equals(this.solveruserId, emailsent.solveruserId) &&
+        Objects.equals(this.solverroleId, emailsent.solverroleId) &&
         Objects.equals(this.note, emailsent.note) &&
-        Objects.equals(this.sentDateDATE, emailsent.sentDateDATE) &&
-        Objects.equals(this.receivedDateDATE, emailsent.receivedDateDATE) &&
-        Objects.equals(this.sentState, emailsent.sentState) &&
-        Objects.equals(this.sentStateStr, emailsent.sentStateStr) &&
-        Objects.equals(this.bodySavedAs, emailsent.bodySavedAs) &&
-        Objects.equals(this.busProjectID, emailsent.busProjectID) &&
+        Objects.equals(this.sentdatedate, emailsent.sentdatedate) &&
+        Objects.equals(this.receiveddatedate, emailsent.receiveddatedate) &&
+        Objects.equals(this.sentstate, emailsent.sentstate) &&
+        Objects.equals(this.sentstatestr, emailsent.sentstatestr) &&
+        Objects.equals(this.bodysavedas, emailsent.bodysavedas) &&
+        Objects.equals(this.busprojectId, emailsent.busprojectId) &&
         Objects.equals(this.recipients, emailsent.recipients) &&
         Objects.equals(this.attachments, emailsent.attachments) &&
-        Objects.equals(this.recipientsInOneLine, emailsent.recipientsInOneLine) &&
-        Objects.equals(this.addSentIdent, emailsent.addSentIdent) &&
-        Objects.equals(this.inlineTempFolder, emailsent.inlineTempFolder) &&
-        Objects.equals(this.countOfAttachments, emailsent.countOfAttachments) &&
-        Objects.equals(this.hasCRMActivity, emailsent.hasCRMActivity) &&
-        Objects.equals(this.emailAccountTypeName, emailsent.emailAccountTypeName) &&
-        Objects.equals(this.dataBoxMessSentID, emailsent.dataBoxMessSentID) &&
-        Objects.equals(this.errorStatus, emailsent.errorStatus) &&
-        Objects.equals(this.errorStatusMessage, emailsent.errorStatusMessage);
+        Objects.equals(this.recipientsinoneline, emailsent.recipientsinoneline) &&
+        Objects.equals(this.addsentident, emailsent.addsentident) &&
+        Objects.equals(this.inlinetempfolder, emailsent.inlinetempfolder) &&
+        Objects.equals(this.countofattachments, emailsent.countofattachments) &&
+        Objects.equals(this.hascrmactivity, emailsent.hascrmactivity) &&
+        Objects.equals(this.emailaccounttypename, emailsent.emailaccounttypename) &&
+        Objects.equals(this.databoxmesssentId, emailsent.databoxmesssentId) &&
+        Objects.equals(this.errorstatus, emailsent.errorstatus) &&
+        Objects.equals(this.errorstatusmessage, emailsent.errorstatusmessage);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(emailAccountID, displayName, ID, classID, objVersion, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, subject, body, msgID, firmID, firmOfficeID, personID, divisionID, busOrderID, busTransactionID, solverUserID, solverRoleID, note, sentDateDATE, receivedDateDATE, sentState, sentStateStr, bodySavedAs, busProjectID, recipients, attachments, recipientsInOneLine, addSentIdent, inlineTempFolder, countOfAttachments, hasCRMActivity, emailAccountTypeName, dataBoxMessSentID, errorStatus, errorStatusMessage);
+    return Objects.hash(emailaccountId, displayname, id, classid, objversion, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, subject, body, msgid, firmId, firmofficeId, personId, divisionId, busorderId, bustransactionId, solveruserId, solverroleId, note, sentdatedate, receiveddatedate, sentstate, sentstatestr, bodysavedas, busprojectId, recipients, attachments, recipientsinoneline, addsentident, inlinetempfolder, countofattachments, hascrmactivity, emailaccounttypename, databoxmesssentId, errorstatus, errorstatusmessage);
   }
 
   @Override
@@ -941,48 +995,48 @@ public class Emailsent   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Emailsent {\n");
     
-    sb.append("    emailAccountID: ").append(toIndentedString(emailAccountID)).append("\n");
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
+    sb.append("    emailaccountId: ").append(toIndentedString(emailaccountId)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
     sb.append("    subject: ").append(toIndentedString(subject)).append("\n");
     sb.append("    body: ").append(toIndentedString(body)).append("\n");
-    sb.append("    msgID: ").append(toIndentedString(msgID)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    firmOfficeID: ").append(toIndentedString(firmOfficeID)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    solverUserID: ").append(toIndentedString(solverUserID)).append("\n");
-    sb.append("    solverRoleID: ").append(toIndentedString(solverRoleID)).append("\n");
+    sb.append("    msgid: ").append(toIndentedString(msgid)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    firmofficeId: ").append(toIndentedString(firmofficeId)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    solveruserId: ").append(toIndentedString(solveruserId)).append("\n");
+    sb.append("    solverroleId: ").append(toIndentedString(solverroleId)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
-    sb.append("    sentDateDATE: ").append(toIndentedString(sentDateDATE)).append("\n");
-    sb.append("    receivedDateDATE: ").append(toIndentedString(receivedDateDATE)).append("\n");
-    sb.append("    sentState: ").append(toIndentedString(sentState)).append("\n");
-    sb.append("    sentStateStr: ").append(toIndentedString(sentStateStr)).append("\n");
-    sb.append("    bodySavedAs: ").append(toIndentedString(bodySavedAs)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
+    sb.append("    sentdatedate: ").append(toIndentedString(sentdatedate)).append("\n");
+    sb.append("    receiveddatedate: ").append(toIndentedString(receiveddatedate)).append("\n");
+    sb.append("    sentstate: ").append(toIndentedString(sentstate)).append("\n");
+    sb.append("    sentstatestr: ").append(toIndentedString(sentstatestr)).append("\n");
+    sb.append("    bodysavedas: ").append(toIndentedString(bodysavedas)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
     sb.append("    recipients: ").append(toIndentedString(recipients)).append("\n");
     sb.append("    attachments: ").append(toIndentedString(attachments)).append("\n");
-    sb.append("    recipientsInOneLine: ").append(toIndentedString(recipientsInOneLine)).append("\n");
-    sb.append("    addSentIdent: ").append(toIndentedString(addSentIdent)).append("\n");
-    sb.append("    inlineTempFolder: ").append(toIndentedString(inlineTempFolder)).append("\n");
-    sb.append("    countOfAttachments: ").append(toIndentedString(countOfAttachments)).append("\n");
-    sb.append("    hasCRMActivity: ").append(toIndentedString(hasCRMActivity)).append("\n");
-    sb.append("    emailAccountTypeName: ").append(toIndentedString(emailAccountTypeName)).append("\n");
-    sb.append("    dataBoxMessSentID: ").append(toIndentedString(dataBoxMessSentID)).append("\n");
-    sb.append("    errorStatus: ").append(toIndentedString(errorStatus)).append("\n");
-    sb.append("    errorStatusMessage: ").append(toIndentedString(errorStatusMessage)).append("\n");
+    sb.append("    recipientsinoneline: ").append(toIndentedString(recipientsinoneline)).append("\n");
+    sb.append("    addsentident: ").append(toIndentedString(addsentident)).append("\n");
+    sb.append("    inlinetempfolder: ").append(toIndentedString(inlinetempfolder)).append("\n");
+    sb.append("    countofattachments: ").append(toIndentedString(countofattachments)).append("\n");
+    sb.append("    hascrmactivity: ").append(toIndentedString(hascrmactivity)).append("\n");
+    sb.append("    emailaccounttypename: ").append(toIndentedString(emailaccounttypename)).append("\n");
+    sb.append("    databoxmesssentId: ").append(toIndentedString(databoxmesssentId)).append("\n");
+    sb.append("    errorstatus: ").append(toIndentedString(errorstatus)).append("\n");
+    sb.append("    errorstatusmessage: ").append(toIndentedString(errorstatusmessage)).append("\n");
     sb.append("}");
     return sb.toString();
   }

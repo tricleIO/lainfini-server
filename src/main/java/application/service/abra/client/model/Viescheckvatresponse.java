@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,453 +35,489 @@ import java.util.Objects;
 /**
  * Viescheckvatresponse
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Viescheckvatresponse   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("VATIdentNumber")
-  private String vATIdentNumber = null;
+  @SerializedName("vatidentnumber")
+  private String vatidentnumber = null;
 
-  @SerializedName("VATIdentNumberStatus")
-  private Integer vATIdentNumberStatus = null;
+  @SerializedName("vatidentnumberstatus")
+  private Integer vatidentnumberstatus = null;
 
-  @SerializedName("VATIdentNumberStatusAsText")
-  private String vATIdentNumberStatusAsText = null;
+  @SerializedName("vatidentnumberstatusastext")
+  private String vatidentnumberstatusastext = null;
 
-  @SerializedName("RequestDate$DATE")
-  private DateTime requestDateDATE = null;
+  @SerializedName("requestdate$date")
+  private DateTime requestdatedate = null;
 
-  @SerializedName("ResponseDateTime$DATE")
-  private DateTime responseDateTimeDATE = null;
+  @SerializedName("responsedatetime$date")
+  private DateTime responsedatetimedate = null;
 
-  @SerializedName("RequestIdentifier")
-  private String requestIdentifier = null;
+  @SerializedName("requestidentifier")
+  private String requestidentifier = null;
 
-  @SerializedName("TraderName")
-  private String traderName = null;
+  @SerializedName("tradername")
+  private String tradername = null;
 
-  @SerializedName("TraderCompanyType")
-  private String traderCompanyType = null;
+  @SerializedName("tradercompanytype")
+  private String tradercompanytype = null;
 
-  @SerializedName("TraderAddress")
-  private String traderAddress = null;
+  @SerializedName("traderaddress")
+  private String traderaddress = null;
 
-  @SerializedName("TraderStreet")
-  private String traderStreet = null;
+  @SerializedName("traderstreet")
+  private String traderstreet = null;
 
-  @SerializedName("TraderPostcode")
-  private String traderPostcode = null;
+  @SerializedName("traderpostcode")
+  private String traderpostcode = null;
 
-  @SerializedName("TraderCity")
-  private String traderCity = null;
+  @SerializedName("tradercity")
+  private String tradercity = null;
 
-  @SerializedName("TraderNameMatch")
-  private Integer traderNameMatch = null;
+  @SerializedName("tradernamematch")
+  private Integer tradernamematch = null;
 
-  @SerializedName("TraderCompanyTypeMatch")
-  private Integer traderCompanyTypeMatch = null;
+  @SerializedName("tradercompanytypematch")
+  private Integer tradercompanytypematch = null;
 
-  @SerializedName("TraderStreetMatch")
-  private Integer traderStreetMatch = null;
+  @SerializedName("traderstreetmatch")
+  private Integer traderstreetmatch = null;
 
-  @SerializedName("TraderPostcodeMatch")
-  private Integer traderPostcodeMatch = null;
+  @SerializedName("traderpostcodematch")
+  private Integer traderpostcodematch = null;
 
-  @SerializedName("TraderCityMatch")
-  private Integer traderCityMatch = null;
+  @SerializedName("tradercitymatch")
+  private Integer tradercitymatch = null;
 
-  @SerializedName("CheckMessage")
-  private String checkMessage = null;
+  @SerializedName("checkmessage")
+  private String checkmessage = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Viescheckvatresponse firmID(String firmID) {
-    this.firmID = firmID;
+  public Viescheckvatresponse displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Viescheckvatresponse vATIdentNumber(String vATIdentNumber) {
-    this.vATIdentNumber = vATIdentNumber;
+  public Viescheckvatresponse id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * DIČ [persistentní položka]
-   * @return vATIdentNumber
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "DIČ [persistentní položka]")
-  public String getVATIdentNumber() {
-    return vATIdentNumber;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setVATIdentNumber(String vATIdentNumber) {
-    this.vATIdentNumber = vATIdentNumber;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Viescheckvatresponse vATIdentNumberStatus(Integer vATIdentNumberStatus) {
-    this.vATIdentNumberStatus = vATIdentNumberStatus;
+  public Viescheckvatresponse classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Stav DIČ [persistentní položka]
-   * @return vATIdentNumberStatus
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Stav DIČ [persistentní položka]")
-  public Integer getVATIdentNumberStatus() {
-    return vATIdentNumberStatus;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setVATIdentNumberStatus(Integer vATIdentNumberStatus) {
-    this.vATIdentNumberStatus = vATIdentNumberStatus;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Viescheckvatresponse vATIdentNumberStatusAsText(String vATIdentNumberStatusAsText) {
-    this.vATIdentNumberStatusAsText = vATIdentNumberStatusAsText;
+  public Viescheckvatresponse objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Stav DIČ - text
-   * @return vATIdentNumberStatusAsText
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Stav DIČ - text")
-  public String getVATIdentNumberStatusAsText() {
-    return vATIdentNumberStatusAsText;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setVATIdentNumberStatusAsText(String vATIdentNumberStatusAsText) {
-    this.vATIdentNumberStatusAsText = vATIdentNumberStatusAsText;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Viescheckvatresponse requestDateDATE(DateTime requestDateDATE) {
-    this.requestDateDATE = requestDateDATE;
+  public Viescheckvatresponse firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Datum požadavku na ověření [persistentní položka]
-   * @return requestDateDATE
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Datum požadavku na ověření [persistentní položka]")
-  public DateTime getRequestDateDATE() {
-    return requestDateDATE;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setRequestDateDATE(DateTime requestDateDATE) {
-    this.requestDateDATE = requestDateDATE;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Viescheckvatresponse responseDateTimeDATE(DateTime responseDateTimeDATE) {
-    this.responseDateTimeDATE = responseDateTimeDATE;
+  public Viescheckvatresponse vatidentnumber(String vatidentnumber) {
+    this.vatidentnumber = vatidentnumber;
     return this;
   }
 
    /**
-   * Datum a čas odpovědi [persistentní položka]
-   * @return responseDateTimeDATE
+   * diČ [persistentní položka]
+   * @return vatidentnumber
   **/
-  @ApiModelProperty(example = "null", value = "Datum a čas odpovědi [persistentní položka]")
-  public DateTime getResponseDateTimeDATE() {
-    return responseDateTimeDATE;
+  @ApiModelProperty(example = "null", value = "diČ [persistentní položka]")
+  public String getVatidentnumber() {
+    return vatidentnumber;
   }
 
-  public void setResponseDateTimeDATE(DateTime responseDateTimeDATE) {
-    this.responseDateTimeDATE = responseDateTimeDATE;
+  public void setVatidentnumber(String vatidentnumber) {
+    this.vatidentnumber = vatidentnumber;
   }
 
-  public Viescheckvatresponse requestIdentifier(String requestIdentifier) {
-    this.requestIdentifier = requestIdentifier;
+  public Viescheckvatresponse vatidentnumberstatus(Integer vatidentnumberstatus) {
+    this.vatidentnumberstatus = vatidentnumberstatus;
     return this;
   }
 
    /**
-   * Identifikátor požadavku na ověření DIČ [persistentní položka]
-   * @return requestIdentifier
+   * stav diČ [persistentní položka]
+   * @return vatidentnumberstatus
   **/
-  @ApiModelProperty(example = "null", value = "Identifikátor požadavku na ověření DIČ [persistentní položka]")
-  public String getRequestIdentifier() {
-    return requestIdentifier;
+  @ApiModelProperty(example = "null", value = "stav diČ [persistentní položka]")
+  public Integer getVatidentnumberstatus() {
+    return vatidentnumberstatus;
   }
 
-  public void setRequestIdentifier(String requestIdentifier) {
-    this.requestIdentifier = requestIdentifier;
+  public void setVatidentnumberstatus(Integer vatidentnumberstatus) {
+    this.vatidentnumberstatus = vatidentnumberstatus;
   }
 
-  public Viescheckvatresponse traderName(String traderName) {
-    this.traderName = traderName;
+  public Viescheckvatresponse vatidentnumberstatusastext(String vatidentnumberstatusastext) {
+    this.vatidentnumberstatusastext = vatidentnumberstatusastext;
     return this;
   }
 
    /**
-   * Název subjektu v systému VIES [persistentní položka]
-   * @return traderName
+   * stav diČ - text
+   * @return vatidentnumberstatusastext
   **/
-  @ApiModelProperty(example = "null", value = "Název subjektu v systému VIES [persistentní položka]")
-  public String getTraderName() {
-    return traderName;
+  @ApiModelProperty(example = "null", value = "stav diČ - text")
+  public String getVatidentnumberstatusastext() {
+    return vatidentnumberstatusastext;
   }
 
-  public void setTraderName(String traderName) {
-    this.traderName = traderName;
+  public void setVatidentnumberstatusastext(String vatidentnumberstatusastext) {
+    this.vatidentnumberstatusastext = vatidentnumberstatusastext;
   }
 
-  public Viescheckvatresponse traderCompanyType(String traderCompanyType) {
-    this.traderCompanyType = traderCompanyType;
+  public Viescheckvatresponse requestdatedate(DateTime requestdatedate) {
+    this.requestdatedate = requestdatedate;
     return this;
   }
 
    /**
-   * Typ subjektu [persistentní položka]
-   * @return traderCompanyType
+   * datum požadavku na ověření [persistentní položka]
+   * @return requestdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Typ subjektu [persistentní položka]")
-  public String getTraderCompanyType() {
-    return traderCompanyType;
+  @ApiModelProperty(example = "null", value = "datum požadavku na ověření [persistentní položka]")
+  public DateTime getRequestdatedate() {
+    return requestdatedate;
   }
 
-  public void setTraderCompanyType(String traderCompanyType) {
-    this.traderCompanyType = traderCompanyType;
+  public void setRequestdatedate(DateTime requestdatedate) {
+    this.requestdatedate = requestdatedate;
   }
 
-  public Viescheckvatresponse traderAddress(String traderAddress) {
-    this.traderAddress = traderAddress;
+  public Viescheckvatresponse responsedatetimedate(DateTime responsedatetimedate) {
+    this.responsedatetimedate = responsedatetimedate;
     return this;
   }
 
    /**
-   * Kompletní adresa subjektu v systému VIES [persistentní položka]
-   * @return traderAddress
+   * datum a čas odpovědi [persistentní položka]
+   * @return responsedatetimedate
   **/
-  @ApiModelProperty(example = "null", value = "Kompletní adresa subjektu v systému VIES [persistentní položka]")
-  public String getTraderAddress() {
-    return traderAddress;
+  @ApiModelProperty(example = "null", value = "datum a čas odpovědi [persistentní položka]")
+  public DateTime getResponsedatetimedate() {
+    return responsedatetimedate;
   }
 
-  public void setTraderAddress(String traderAddress) {
-    this.traderAddress = traderAddress;
+  public void setResponsedatetimedate(DateTime responsedatetimedate) {
+    this.responsedatetimedate = responsedatetimedate;
   }
 
-  public Viescheckvatresponse traderStreet(String traderStreet) {
-    this.traderStreet = traderStreet;
+  public Viescheckvatresponse requestidentifier(String requestidentifier) {
+    this.requestidentifier = requestidentifier;
     return this;
   }
 
    /**
-   * Ulice subjektu [persistentní položka]
-   * @return traderStreet
+   * identifikátor požadavku na ověření diČ [persistentní položka]
+   * @return requestidentifier
   **/
-  @ApiModelProperty(example = "null", value = "Ulice subjektu [persistentní položka]")
-  public String getTraderStreet() {
-    return traderStreet;
+  @ApiModelProperty(example = "null", value = "identifikátor požadavku na ověření diČ [persistentní položka]")
+  public String getRequestidentifier() {
+    return requestidentifier;
   }
 
-  public void setTraderStreet(String traderStreet) {
-    this.traderStreet = traderStreet;
+  public void setRequestidentifier(String requestidentifier) {
+    this.requestidentifier = requestidentifier;
   }
 
-  public Viescheckvatresponse traderPostcode(String traderPostcode) {
-    this.traderPostcode = traderPostcode;
+  public Viescheckvatresponse tradername(String tradername) {
+    this.tradername = tradername;
     return this;
   }
 
    /**
-   * PSČ subjektu [persistentní položka]
-   * @return traderPostcode
+   * název subjektu v systému vies [persistentní položka]
+   * @return tradername
   **/
-  @ApiModelProperty(example = "null", value = "PSČ subjektu [persistentní položka]")
-  public String getTraderPostcode() {
-    return traderPostcode;
+  @ApiModelProperty(example = "null", value = "název subjektu v systému vies [persistentní položka]")
+  public String getTradername() {
+    return tradername;
   }
 
-  public void setTraderPostcode(String traderPostcode) {
-    this.traderPostcode = traderPostcode;
+  public void setTradername(String tradername) {
+    this.tradername = tradername;
   }
 
-  public Viescheckvatresponse traderCity(String traderCity) {
-    this.traderCity = traderCity;
+  public Viescheckvatresponse tradercompanytype(String tradercompanytype) {
+    this.tradercompanytype = tradercompanytype;
     return this;
   }
 
    /**
-   * Město subjektu [persistentní položka]
-   * @return traderCity
+   * typ subjektu [persistentní položka]
+   * @return tradercompanytype
   **/
-  @ApiModelProperty(example = "null", value = "Město subjektu [persistentní položka]")
-  public String getTraderCity() {
-    return traderCity;
+  @ApiModelProperty(example = "null", value = "typ subjektu [persistentní položka]")
+  public String getTradercompanytype() {
+    return tradercompanytype;
   }
 
-  public void setTraderCity(String traderCity) {
-    this.traderCity = traderCity;
+  public void setTradercompanytype(String tradercompanytype) {
+    this.tradercompanytype = tradercompanytype;
   }
 
-  public Viescheckvatresponse traderNameMatch(Integer traderNameMatch) {
-    this.traderNameMatch = traderNameMatch;
+  public Viescheckvatresponse traderaddress(String traderaddress) {
+    this.traderaddress = traderaddress;
     return this;
   }
 
    /**
-   * Shoda názvu subjektu [persistentní položka]
-   * @return traderNameMatch
+   * kompletní adresa subjektu v systému vies [persistentní položka]
+   * @return traderaddress
   **/
-  @ApiModelProperty(example = "null", value = "Shoda názvu subjektu [persistentní položka]")
-  public Integer getTraderNameMatch() {
-    return traderNameMatch;
+  @ApiModelProperty(example = "null", value = "kompletní adresa subjektu v systému vies [persistentní položka]")
+  public String getTraderaddress() {
+    return traderaddress;
   }
 
-  public void setTraderNameMatch(Integer traderNameMatch) {
-    this.traderNameMatch = traderNameMatch;
+  public void setTraderaddress(String traderaddress) {
+    this.traderaddress = traderaddress;
   }
 
-  public Viescheckvatresponse traderCompanyTypeMatch(Integer traderCompanyTypeMatch) {
-    this.traderCompanyTypeMatch = traderCompanyTypeMatch;
+  public Viescheckvatresponse traderstreet(String traderstreet) {
+    this.traderstreet = traderstreet;
     return this;
   }
 
    /**
-   * Shoda typu subjektu [persistentní položka]
-   * @return traderCompanyTypeMatch
+   * ulice subjektu [persistentní položka]
+   * @return traderstreet
   **/
-  @ApiModelProperty(example = "null", value = "Shoda typu subjektu [persistentní položka]")
-  public Integer getTraderCompanyTypeMatch() {
-    return traderCompanyTypeMatch;
+  @ApiModelProperty(example = "null", value = "ulice subjektu [persistentní položka]")
+  public String getTraderstreet() {
+    return traderstreet;
   }
 
-  public void setTraderCompanyTypeMatch(Integer traderCompanyTypeMatch) {
-    this.traderCompanyTypeMatch = traderCompanyTypeMatch;
+  public void setTraderstreet(String traderstreet) {
+    this.traderstreet = traderstreet;
   }
 
-  public Viescheckvatresponse traderStreetMatch(Integer traderStreetMatch) {
-    this.traderStreetMatch = traderStreetMatch;
+  public Viescheckvatresponse traderpostcode(String traderpostcode) {
+    this.traderpostcode = traderpostcode;
     return this;
   }
 
    /**
-   * Shoda ulice subjektu [persistentní položka]
-   * @return traderStreetMatch
+   * psČ subjektu [persistentní položka]
+   * @return traderpostcode
   **/
-  @ApiModelProperty(example = "null", value = "Shoda ulice subjektu [persistentní položka]")
-  public Integer getTraderStreetMatch() {
-    return traderStreetMatch;
+  @ApiModelProperty(example = "null", value = "psČ subjektu [persistentní položka]")
+  public String getTraderpostcode() {
+    return traderpostcode;
   }
 
-  public void setTraderStreetMatch(Integer traderStreetMatch) {
-    this.traderStreetMatch = traderStreetMatch;
+  public void setTraderpostcode(String traderpostcode) {
+    this.traderpostcode = traderpostcode;
   }
 
-  public Viescheckvatresponse traderPostcodeMatch(Integer traderPostcodeMatch) {
-    this.traderPostcodeMatch = traderPostcodeMatch;
+  public Viescheckvatresponse tradercity(String tradercity) {
+    this.tradercity = tradercity;
     return this;
   }
 
    /**
-   * Shoda PSČ subjektu [persistentní položka]
-   * @return traderPostcodeMatch
+   * město subjektu [persistentní položka]
+   * @return tradercity
   **/
-  @ApiModelProperty(example = "null", value = "Shoda PSČ subjektu [persistentní položka]")
-  public Integer getTraderPostcodeMatch() {
-    return traderPostcodeMatch;
+  @ApiModelProperty(example = "null", value = "město subjektu [persistentní položka]")
+  public String getTradercity() {
+    return tradercity;
   }
 
-  public void setTraderPostcodeMatch(Integer traderPostcodeMatch) {
-    this.traderPostcodeMatch = traderPostcodeMatch;
+  public void setTradercity(String tradercity) {
+    this.tradercity = tradercity;
   }
 
-  public Viescheckvatresponse traderCityMatch(Integer traderCityMatch) {
-    this.traderCityMatch = traderCityMatch;
+  public Viescheckvatresponse tradernamematch(Integer tradernamematch) {
+    this.tradernamematch = tradernamematch;
     return this;
   }
 
    /**
-   * Shoda města subjektu [persistentní položka]
-   * @return traderCityMatch
+   * shoda názvu subjektu [persistentní položka]
+   * @return tradernamematch
   **/
-  @ApiModelProperty(example = "null", value = "Shoda města subjektu [persistentní položka]")
-  public Integer getTraderCityMatch() {
-    return traderCityMatch;
+  @ApiModelProperty(example = "null", value = "shoda názvu subjektu [persistentní položka]")
+  public Integer getTradernamematch() {
+    return tradernamematch;
   }
 
-  public void setTraderCityMatch(Integer traderCityMatch) {
-    this.traderCityMatch = traderCityMatch;
+  public void setTradernamematch(Integer tradernamematch) {
+    this.tradernamematch = tradernamematch;
   }
 
-  public Viescheckvatresponse checkMessage(String checkMessage) {
-    this.checkMessage = checkMessage;
+  public Viescheckvatresponse tradercompanytypematch(Integer tradercompanytypematch) {
+    this.tradercompanytypematch = tradercompanytypematch;
     return this;
   }
 
    /**
-   * Zpráva z provedeného ověření [persistentní položka]
-   * @return checkMessage
+   * shoda typu subjektu [persistentní položka]
+   * @return tradercompanytypematch
   **/
-  @ApiModelProperty(example = "null", value = "Zpráva z provedeného ověření [persistentní položka]")
-  public String getCheckMessage() {
-    return checkMessage;
+  @ApiModelProperty(example = "null", value = "shoda typu subjektu [persistentní položka]")
+  public Integer getTradercompanytypematch() {
+    return tradercompanytypematch;
   }
 
-  public void setCheckMessage(String checkMessage) {
-    this.checkMessage = checkMessage;
+  public void setTradercompanytypematch(Integer tradercompanytypematch) {
+    this.tradercompanytypematch = tradercompanytypematch;
+  }
+
+  public Viescheckvatresponse traderstreetmatch(Integer traderstreetmatch) {
+    this.traderstreetmatch = traderstreetmatch;
+    return this;
+  }
+
+   /**
+   * shoda ulice subjektu [persistentní položka]
+   * @return traderstreetmatch
+  **/
+  @ApiModelProperty(example = "null", value = "shoda ulice subjektu [persistentní položka]")
+  public Integer getTraderstreetmatch() {
+    return traderstreetmatch;
+  }
+
+  public void setTraderstreetmatch(Integer traderstreetmatch) {
+    this.traderstreetmatch = traderstreetmatch;
+  }
+
+  public Viescheckvatresponse traderpostcodematch(Integer traderpostcodematch) {
+    this.traderpostcodematch = traderpostcodematch;
+    return this;
+  }
+
+   /**
+   * shoda psČ subjektu [persistentní položka]
+   * @return traderpostcodematch
+  **/
+  @ApiModelProperty(example = "null", value = "shoda psČ subjektu [persistentní položka]")
+  public Integer getTraderpostcodematch() {
+    return traderpostcodematch;
+  }
+
+  public void setTraderpostcodematch(Integer traderpostcodematch) {
+    this.traderpostcodematch = traderpostcodematch;
+  }
+
+  public Viescheckvatresponse tradercitymatch(Integer tradercitymatch) {
+    this.tradercitymatch = tradercitymatch;
+    return this;
+  }
+
+   /**
+   * shoda města subjektu [persistentní položka]
+   * @return tradercitymatch
+  **/
+  @ApiModelProperty(example = "null", value = "shoda města subjektu [persistentní položka]")
+  public Integer getTradercitymatch() {
+    return tradercitymatch;
+  }
+
+  public void setTradercitymatch(Integer tradercitymatch) {
+    this.tradercitymatch = tradercitymatch;
+  }
+
+  public Viescheckvatresponse checkmessage(String checkmessage) {
+    this.checkmessage = checkmessage;
+    return this;
+  }
+
+   /**
+   * zpráva z provedeného ověření [persistentní položka]
+   * @return checkmessage
+  **/
+  @ApiModelProperty(example = "null", value = "zpráva z provedeného ověření [persistentní položka]")
+  public String getCheckmessage() {
+    return checkmessage;
+  }
+
+  public void setCheckmessage(String checkmessage) {
+    this.checkmessage = checkmessage;
   }
 
 
@@ -494,34 +530,34 @@ public class Viescheckvatresponse   {
       return false;
     }
     Viescheckvatresponse viescheckvatresponse = (Viescheckvatresponse) o;
-    return Objects.equals(this.displayName, viescheckvatresponse.displayName) &&
-        Objects.equals(this.ID, viescheckvatresponse.ID) &&
-        Objects.equals(this.classID, viescheckvatresponse.classID) &&
-        Objects.equals(this.objVersion, viescheckvatresponse.objVersion) &&
-        Objects.equals(this.firmID, viescheckvatresponse.firmID) &&
-        Objects.equals(this.vATIdentNumber, viescheckvatresponse.vATIdentNumber) &&
-        Objects.equals(this.vATIdentNumberStatus, viescheckvatresponse.vATIdentNumberStatus) &&
-        Objects.equals(this.vATIdentNumberStatusAsText, viescheckvatresponse.vATIdentNumberStatusAsText) &&
-        Objects.equals(this.requestDateDATE, viescheckvatresponse.requestDateDATE) &&
-        Objects.equals(this.responseDateTimeDATE, viescheckvatresponse.responseDateTimeDATE) &&
-        Objects.equals(this.requestIdentifier, viescheckvatresponse.requestIdentifier) &&
-        Objects.equals(this.traderName, viescheckvatresponse.traderName) &&
-        Objects.equals(this.traderCompanyType, viescheckvatresponse.traderCompanyType) &&
-        Objects.equals(this.traderAddress, viescheckvatresponse.traderAddress) &&
-        Objects.equals(this.traderStreet, viescheckvatresponse.traderStreet) &&
-        Objects.equals(this.traderPostcode, viescheckvatresponse.traderPostcode) &&
-        Objects.equals(this.traderCity, viescheckvatresponse.traderCity) &&
-        Objects.equals(this.traderNameMatch, viescheckvatresponse.traderNameMatch) &&
-        Objects.equals(this.traderCompanyTypeMatch, viescheckvatresponse.traderCompanyTypeMatch) &&
-        Objects.equals(this.traderStreetMatch, viescheckvatresponse.traderStreetMatch) &&
-        Objects.equals(this.traderPostcodeMatch, viescheckvatresponse.traderPostcodeMatch) &&
-        Objects.equals(this.traderCityMatch, viescheckvatresponse.traderCityMatch) &&
-        Objects.equals(this.checkMessage, viescheckvatresponse.checkMessage);
+    return Objects.equals(this.displayname, viescheckvatresponse.displayname) &&
+        Objects.equals(this.id, viescheckvatresponse.id) &&
+        Objects.equals(this.classid, viescheckvatresponse.classid) &&
+        Objects.equals(this.objversion, viescheckvatresponse.objversion) &&
+        Objects.equals(this.firmId, viescheckvatresponse.firmId) &&
+        Objects.equals(this.vatidentnumber, viescheckvatresponse.vatidentnumber) &&
+        Objects.equals(this.vatidentnumberstatus, viescheckvatresponse.vatidentnumberstatus) &&
+        Objects.equals(this.vatidentnumberstatusastext, viescheckvatresponse.vatidentnumberstatusastext) &&
+        Objects.equals(this.requestdatedate, viescheckvatresponse.requestdatedate) &&
+        Objects.equals(this.responsedatetimedate, viescheckvatresponse.responsedatetimedate) &&
+        Objects.equals(this.requestidentifier, viescheckvatresponse.requestidentifier) &&
+        Objects.equals(this.tradername, viescheckvatresponse.tradername) &&
+        Objects.equals(this.tradercompanytype, viescheckvatresponse.tradercompanytype) &&
+        Objects.equals(this.traderaddress, viescheckvatresponse.traderaddress) &&
+        Objects.equals(this.traderstreet, viescheckvatresponse.traderstreet) &&
+        Objects.equals(this.traderpostcode, viescheckvatresponse.traderpostcode) &&
+        Objects.equals(this.tradercity, viescheckvatresponse.tradercity) &&
+        Objects.equals(this.tradernamematch, viescheckvatresponse.tradernamematch) &&
+        Objects.equals(this.tradercompanytypematch, viescheckvatresponse.tradercompanytypematch) &&
+        Objects.equals(this.traderstreetmatch, viescheckvatresponse.traderstreetmatch) &&
+        Objects.equals(this.traderpostcodematch, viescheckvatresponse.traderpostcodematch) &&
+        Objects.equals(this.tradercitymatch, viescheckvatresponse.tradercitymatch) &&
+        Objects.equals(this.checkmessage, viescheckvatresponse.checkmessage);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, firmID, vATIdentNumber, vATIdentNumberStatus, vATIdentNumberStatusAsText, requestDateDATE, responseDateTimeDATE, requestIdentifier, traderName, traderCompanyType, traderAddress, traderStreet, traderPostcode, traderCity, traderNameMatch, traderCompanyTypeMatch, traderStreetMatch, traderPostcodeMatch, traderCityMatch, checkMessage);
+    return Objects.hash(displayname, id, classid, objversion, firmId, vatidentnumber, vatidentnumberstatus, vatidentnumberstatusastext, requestdatedate, responsedatetimedate, requestidentifier, tradername, tradercompanytype, traderaddress, traderstreet, traderpostcode, tradercity, tradernamematch, tradercompanytypematch, traderstreetmatch, traderpostcodematch, tradercitymatch, checkmessage);
   }
 
   @Override
@@ -529,29 +565,29 @@ public class Viescheckvatresponse   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Viescheckvatresponse {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    vATIdentNumber: ").append(toIndentedString(vATIdentNumber)).append("\n");
-    sb.append("    vATIdentNumberStatus: ").append(toIndentedString(vATIdentNumberStatus)).append("\n");
-    sb.append("    vATIdentNumberStatusAsText: ").append(toIndentedString(vATIdentNumberStatusAsText)).append("\n");
-    sb.append("    requestDateDATE: ").append(toIndentedString(requestDateDATE)).append("\n");
-    sb.append("    responseDateTimeDATE: ").append(toIndentedString(responseDateTimeDATE)).append("\n");
-    sb.append("    requestIdentifier: ").append(toIndentedString(requestIdentifier)).append("\n");
-    sb.append("    traderName: ").append(toIndentedString(traderName)).append("\n");
-    sb.append("    traderCompanyType: ").append(toIndentedString(traderCompanyType)).append("\n");
-    sb.append("    traderAddress: ").append(toIndentedString(traderAddress)).append("\n");
-    sb.append("    traderStreet: ").append(toIndentedString(traderStreet)).append("\n");
-    sb.append("    traderPostcode: ").append(toIndentedString(traderPostcode)).append("\n");
-    sb.append("    traderCity: ").append(toIndentedString(traderCity)).append("\n");
-    sb.append("    traderNameMatch: ").append(toIndentedString(traderNameMatch)).append("\n");
-    sb.append("    traderCompanyTypeMatch: ").append(toIndentedString(traderCompanyTypeMatch)).append("\n");
-    sb.append("    traderStreetMatch: ").append(toIndentedString(traderStreetMatch)).append("\n");
-    sb.append("    traderPostcodeMatch: ").append(toIndentedString(traderPostcodeMatch)).append("\n");
-    sb.append("    traderCityMatch: ").append(toIndentedString(traderCityMatch)).append("\n");
-    sb.append("    checkMessage: ").append(toIndentedString(checkMessage)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    vatidentnumber: ").append(toIndentedString(vatidentnumber)).append("\n");
+    sb.append("    vatidentnumberstatus: ").append(toIndentedString(vatidentnumberstatus)).append("\n");
+    sb.append("    vatidentnumberstatusastext: ").append(toIndentedString(vatidentnumberstatusastext)).append("\n");
+    sb.append("    requestdatedate: ").append(toIndentedString(requestdatedate)).append("\n");
+    sb.append("    responsedatetimedate: ").append(toIndentedString(responsedatetimedate)).append("\n");
+    sb.append("    requestidentifier: ").append(toIndentedString(requestidentifier)).append("\n");
+    sb.append("    tradername: ").append(toIndentedString(tradername)).append("\n");
+    sb.append("    tradercompanytype: ").append(toIndentedString(tradercompanytype)).append("\n");
+    sb.append("    traderaddress: ").append(toIndentedString(traderaddress)).append("\n");
+    sb.append("    traderstreet: ").append(toIndentedString(traderstreet)).append("\n");
+    sb.append("    traderpostcode: ").append(toIndentedString(traderpostcode)).append("\n");
+    sb.append("    tradercity: ").append(toIndentedString(tradercity)).append("\n");
+    sb.append("    tradernamematch: ").append(toIndentedString(tradernamematch)).append("\n");
+    sb.append("    tradercompanytypematch: ").append(toIndentedString(tradercompanytypematch)).append("\n");
+    sb.append("    traderstreetmatch: ").append(toIndentedString(traderstreetmatch)).append("\n");
+    sb.append("    traderpostcodematch: ").append(toIndentedString(traderpostcodematch)).append("\n");
+    sb.append("    tradercitymatch: ").append(toIndentedString(tradercitymatch)).append("\n");
+    sb.append("    checkmessage: ").append(toIndentedString(checkmessage)).append("\n");
     sb.append("}");
     return sb.toString();
   }

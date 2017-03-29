@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,117 +34,162 @@ import java.util.Objects;
 /**
  * Plmbalancedepreciation
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmbalancedepreciation   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("CLSID")
-  private String CLSID = null;
+  @SerializedName("clsid")
+  private String clsid = null;
 
-  @SerializedName("Obj_ID")
-  private String objID = null;
+  @SerializedName("obj_id")
+  private String objId = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("CLSIDText")
-  private String cLSIDText = null;
+  @SerializedName("clsidtext")
+  private String clsidtext = null;
 
-  @SerializedName("ObjectName")
-  private String objectName = null;
+  @SerializedName("objectname")
+  private String objectname = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Vyrovnání nedokončené výroby [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Vyrovnání nedokončené výroby [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Plmbalancedepreciation CLSID(String CLSID) {
-    this.CLSID = CLSID;
+  public Plmbalancedepreciation displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Třída objektu [persistentní položka]
-   * @return CLSID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Třída objektu [persistentní položka]")
-  public String getCLSID() {
-    return CLSID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setCLSID(String CLSID) {
-    this.CLSID = CLSID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Plmbalancedepreciation objID(String objID) {
-    this.objID = objID;
+  public Plmbalancedepreciation id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * ID objektu [persistentní položka]
-   * @return objID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID objektu [persistentní položka]")
-  public String getObjID() {
-    return objID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setObjID(String objID) {
-    this.objID = objID;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmbalancedepreciation classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmbalancedepreciation objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Plmbalancedepreciation parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu vyrovnání nedokončené výroby [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu vyrovnání nedokončené výroby [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Plmbalancedepreciation clsid(String clsid) {
+    this.clsid = clsid;
+    return this;
+  }
+
+   /**
+   * třída objektu [persistentní položka]
+   * @return clsid
+  **/
+  @ApiModelProperty(example = "null", value = "třída objektu [persistentní položka]")
+  public String getClsid() {
+    return clsid;
+  }
+
+  public void setClsid(String clsid) {
+    this.clsid = clsid;
+  }
+
+  public Plmbalancedepreciation objId(String objId) {
+    this.objId = objId;
+    return this;
+  }
+
+   /**
+   * id objektu [persistentní položka]
+   * @return objId
+  **/
+  @ApiModelProperty(example = "null", value = "id objektu [persistentní položka]")
+  public String getObjId() {
+    return objId;
+  }
+
+  public void setObjId(String objId) {
+    this.objId = objId;
   }
 
   public Plmbalancedepreciation amount(Double amount) {
@@ -165,22 +210,40 @@ public class Plmbalancedepreciation   {
     this.amount = amount;
   }
 
-   /**
-   * Název třídy objektu
-   * @return cLSIDText
-  **/
-  @ApiModelProperty(example = "null", value = "Název třídy objektu")
-  public String getCLSIDText() {
-    return cLSIDText;
+  public Plmbalancedepreciation clsidtext(String clsidtext) {
+    this.clsidtext = clsidtext;
+    return this;
   }
 
    /**
-   * Název objektu
-   * @return objectName
+   * název třídy objektu
+   * @return clsidtext
   **/
-  @ApiModelProperty(example = "null", value = "Název objektu")
-  public String getObjectName() {
-    return objectName;
+  @ApiModelProperty(example = "null", value = "název třídy objektu")
+  public String getClsidtext() {
+    return clsidtext;
+  }
+
+  public void setClsidtext(String clsidtext) {
+    this.clsidtext = clsidtext;
+  }
+
+  public Plmbalancedepreciation objectname(String objectname) {
+    this.objectname = objectname;
+    return this;
+  }
+
+   /**
+   * název objektu
+   * @return objectname
+  **/
+  @ApiModelProperty(example = "null", value = "název objektu")
+  public String getObjectname() {
+    return objectname;
+  }
+
+  public void setObjectname(String objectname) {
+    this.objectname = objectname;
   }
 
 
@@ -193,21 +256,21 @@ public class Plmbalancedepreciation   {
       return false;
     }
     Plmbalancedepreciation plmbalancedepreciation = (Plmbalancedepreciation) o;
-    return Objects.equals(this.displayName, plmbalancedepreciation.displayName) &&
-        Objects.equals(this.ID, plmbalancedepreciation.ID) &&
-        Objects.equals(this.classID, plmbalancedepreciation.classID) &&
-        Objects.equals(this.objVersion, plmbalancedepreciation.objVersion) &&
-        Objects.equals(this.parentID, plmbalancedepreciation.parentID) &&
-        Objects.equals(this.CLSID, plmbalancedepreciation.CLSID) &&
-        Objects.equals(this.objID, plmbalancedepreciation.objID) &&
+    return Objects.equals(this.displayname, plmbalancedepreciation.displayname) &&
+        Objects.equals(this.id, plmbalancedepreciation.id) &&
+        Objects.equals(this.classid, plmbalancedepreciation.classid) &&
+        Objects.equals(this.objversion, plmbalancedepreciation.objversion) &&
+        Objects.equals(this.parentId, plmbalancedepreciation.parentId) &&
+        Objects.equals(this.clsid, plmbalancedepreciation.clsid) &&
+        Objects.equals(this.objId, plmbalancedepreciation.objId) &&
         Objects.equals(this.amount, plmbalancedepreciation.amount) &&
-        Objects.equals(this.cLSIDText, plmbalancedepreciation.cLSIDText) &&
-        Objects.equals(this.objectName, plmbalancedepreciation.objectName);
+        Objects.equals(this.clsidtext, plmbalancedepreciation.clsidtext) &&
+        Objects.equals(this.objectname, plmbalancedepreciation.objectname);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, CLSID, objID, amount, cLSIDText, objectName);
+    return Objects.hash(displayname, id, classid, objversion, parentId, clsid, objId, amount, clsidtext, objectname);
   }
 
   @Override
@@ -215,16 +278,16 @@ public class Plmbalancedepreciation   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmbalancedepreciation {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    CLSID: ").append(toIndentedString(CLSID)).append("\n");
-    sb.append("    objID: ").append(toIndentedString(objID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    clsid: ").append(toIndentedString(clsid)).append("\n");
+    sb.append("    objId: ").append(toIndentedString(objId)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    cLSIDText: ").append(toIndentedString(cLSIDText)).append("\n");
-    sb.append("    objectName: ").append(toIndentedString(objectName)).append("\n");
+    sb.append("    clsidtext: ").append(toIndentedString(clsidtext)).append("\n");
+    sb.append("    objectname: ").append(toIndentedString(objectname)).append("\n");
     sb.append("}");
     return sb.toString();
   }

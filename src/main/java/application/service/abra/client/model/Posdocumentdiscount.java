@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,177 +34,222 @@ import java.util.Objects;
 /**
  * Posdocumentdiscount
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posdocumentdiscount   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("DiscountKind")
-  private Integer discountKind = null;
+  @SerializedName("discountkind")
+  private Integer discountkind = null;
 
-  @SerializedName("DealerDiscount")
-  private Double dealerDiscount = null;
+  @SerializedName("dealerdiscount")
+  private Double dealerdiscount = null;
 
-  @SerializedName("FinancialDocumentDiscount")
-  private Double financialDocumentDiscount = null;
+  @SerializedName("financialdocumentdiscount")
+  private Double financialdocumentdiscount = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("DiscountPercent")
-  private Double discountPercent = null;
+  @SerializedName("discountpercent")
+  private Double discountpercent = null;
 
-  @SerializedName("Finacial")
+  @SerializedName("finacial")
   private Double finacial = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("FullRow")
-  private Boolean fullRow = null;
+  @SerializedName("fullrow")
+  private Boolean fullrow = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("TAmount")
-  private Double tAmount = null;
+  @SerializedName("tamount")
+  private Double tamount = null;
 
-  @SerializedName("LocalAmount")
-  private Double localAmount = null;
+  @SerializedName("localamount")
+  private Double localamount = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("Row_ID")
-  private String rowID = null;
+  @SerializedName("row_id")
+  private String rowId = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("InsertedQuantity")
-  private Double insertedQuantity = null;
+  @SerializedName("insertedquantity")
+  private Double insertedquantity = null;
 
-  @SerializedName("Automatic")
+  @SerializedName("automatic")
   private Boolean automatic = null;
 
-  @SerializedName("Coupon")
+  @SerializedName("coupon")
   private Boolean coupon = null;
 
-  @SerializedName("Printed")
+  @SerializedName("printed")
   private Boolean printed = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Účtenka [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Účtenka [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Posdocumentdiscount discountKind(Integer discountKind) {
-    this.discountKind = discountKind;
+  public Posdocumentdiscount displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return discountKind
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getDiscountKind() {
-    return discountKind;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDiscountKind(Integer discountKind) {
-    this.discountKind = discountKind;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Posdocumentdiscount dealerDiscount(Double dealerDiscount) {
-    this.dealerDiscount = dealerDiscount;
+  public Posdocumentdiscount id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Dealerská [persistentní položka]
-   * @return dealerDiscount
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Dealerská [persistentní položka]")
-  public Double getDealerDiscount() {
-    return dealerDiscount;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDealerDiscount(Double dealerDiscount) {
-    this.dealerDiscount = dealerDiscount;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Posdocumentdiscount financialDocumentDiscount(Double financialDocumentDiscount) {
-    this.financialDocumentDiscount = financialDocumentDiscount;
+  public Posdocumentdiscount classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Finanční na doklad [persistentní položka]
-   * @return financialDocumentDiscount
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Finanční na doklad [persistentní položka]")
-  public Double getFinancialDocumentDiscount() {
-    return financialDocumentDiscount;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setFinancialDocumentDiscount(Double financialDocumentDiscount) {
-    this.financialDocumentDiscount = financialDocumentDiscount;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Posdocumentdiscount objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Posdocumentdiscount parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu Účtenka [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu Účtenka [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Posdocumentdiscount discountkind(Integer discountkind) {
+    this.discountkind = discountkind;
+    return this;
+  }
+
+   /**
+   * typ [persistentní položka]
+   * @return discountkind
+  **/
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getDiscountkind() {
+    return discountkind;
+  }
+
+  public void setDiscountkind(Integer discountkind) {
+    this.discountkind = discountkind;
+  }
+
+  public Posdocumentdiscount dealerdiscount(Double dealerdiscount) {
+    this.dealerdiscount = dealerdiscount;
+    return this;
+  }
+
+   /**
+   * dealerská [persistentní položka]
+   * @return dealerdiscount
+  **/
+  @ApiModelProperty(example = "null", value = "dealerská [persistentní položka]")
+  public Double getDealerdiscount() {
+    return dealerdiscount;
+  }
+
+  public void setDealerdiscount(Double dealerdiscount) {
+    this.dealerdiscount = dealerdiscount;
+  }
+
+  public Posdocumentdiscount financialdocumentdiscount(Double financialdocumentdiscount) {
+    this.financialdocumentdiscount = financialdocumentdiscount;
+    return this;
+  }
+
+   /**
+   * finanční na doklad [persistentní položka]
+   * @return financialdocumentdiscount
+  **/
+  @ApiModelProperty(example = "null", value = "finanční na doklad [persistentní položka]")
+  public Double getFinancialdocumentdiscount() {
+    return financialdocumentdiscount;
+  }
+
+  public void setFinancialdocumentdiscount(Double financialdocumentdiscount) {
+    this.financialdocumentdiscount = financialdocumentdiscount;
   }
 
   public Posdocumentdiscount name(String name) {
@@ -213,10 +258,10 @@ public class Posdocumentdiscount   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -231,10 +276,10 @@ public class Posdocumentdiscount   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -243,22 +288,22 @@ public class Posdocumentdiscount   {
     this.code = code;
   }
 
-  public Posdocumentdiscount discountPercent(Double discountPercent) {
-    this.discountPercent = discountPercent;
+  public Posdocumentdiscount discountpercent(Double discountpercent) {
+    this.discountpercent = discountpercent;
     return this;
   }
 
    /**
-   * Procentní [persistentní položka]
-   * @return discountPercent
+   * procentní [persistentní položka]
+   * @return discountpercent
   **/
-  @ApiModelProperty(example = "null", value = "Procentní [persistentní položka]")
-  public Double getDiscountPercent() {
-    return discountPercent;
+  @ApiModelProperty(example = "null", value = "procentní [persistentní položka]")
+  public Double getDiscountpercent() {
+    return discountpercent;
   }
 
-  public void setDiscountPercent(Double discountPercent) {
-    this.discountPercent = discountPercent;
+  public void setDiscountpercent(Double discountpercent) {
+    this.discountpercent = discountpercent;
   }
 
   public Posdocumentdiscount finacial(Double finacial) {
@@ -267,10 +312,10 @@ public class Posdocumentdiscount   {
   }
 
    /**
-   * Finanční [persistentní položka]
+   * finanční [persistentní položka]
    * @return finacial
   **/
-  @ApiModelProperty(example = "null", value = "Finanční [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "finanční [persistentní položka]")
   public Double getFinacial() {
     return finacial;
   }
@@ -279,40 +324,40 @@ public class Posdocumentdiscount   {
     this.finacial = finacial;
   }
 
-  public Posdocumentdiscount currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Posdocumentdiscount currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
-  public Posdocumentdiscount fullRow(Boolean fullRow) {
-    this.fullRow = fullRow;
+  public Posdocumentdiscount fullrow(Boolean fullrow) {
+    this.fullrow = fullrow;
     return this;
   }
 
    /**
-   * Celý řádek [persistentní položka]
-   * @return fullRow
+   * celý řádek [persistentní položka]
+   * @return fullrow
   **/
-  @ApiModelProperty(example = "null", value = "Celý řádek [persistentní položka]")
-  public Boolean getFullRow() {
-    return fullRow;
+  @ApiModelProperty(example = "null", value = "celý řádek [persistentní položka]")
+  public Boolean getFullrow() {
+    return fullrow;
   }
 
-  public void setFullRow(Boolean fullRow) {
-    this.fullRow = fullRow;
+  public void setFullrow(Boolean fullrow) {
+    this.fullrow = fullrow;
   }
 
   public Posdocumentdiscount quantity(Double quantity) {
@@ -321,10 +366,10 @@ public class Posdocumentdiscount   {
   }
 
    /**
-   * Množství [persistentní položka]
+   * množství [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "množství [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -333,40 +378,40 @@ public class Posdocumentdiscount   {
     this.quantity = quantity;
   }
 
-  public Posdocumentdiscount tAmount(Double tAmount) {
-    this.tAmount = tAmount;
+  public Posdocumentdiscount tamount(Double tamount) {
+    this.tamount = tamount;
     return this;
   }
 
    /**
-   * Cena [persistentní položka]
-   * @return tAmount
+   * cena [persistentní položka]
+   * @return tamount
   **/
-  @ApiModelProperty(example = "null", value = "Cena [persistentní položka]")
-  public Double getTAmount() {
-    return tAmount;
+  @ApiModelProperty(example = "null", value = "cena [persistentní položka]")
+  public Double getTamount() {
+    return tamount;
   }
 
-  public void setTAmount(Double tAmount) {
-    this.tAmount = tAmount;
+  public void setTamount(Double tamount) {
+    this.tamount = tamount;
   }
 
-  public Posdocumentdiscount localAmount(Double localAmount) {
-    this.localAmount = localAmount;
+  public Posdocumentdiscount localamount(Double localamount) {
+    this.localamount = localamount;
     return this;
   }
 
    /**
-   * Lok.cena [persistentní položka]
-   * @return localAmount
+   * lok.cena [persistentní položka]
+   * @return localamount
   **/
-  @ApiModelProperty(example = "null", value = "Lok.cena [persistentní položka]")
-  public Double getLocalAmount() {
-    return localAmount;
+  @ApiModelProperty(example = "null", value = "lok.cena [persistentní položka]")
+  public Double getLocalamount() {
+    return localamount;
   }
 
-  public void setLocalAmount(Double localAmount) {
-    this.localAmount = localAmount;
+  public void setLocalamount(Double localamount) {
+    this.localamount = localamount;
   }
 
   public Posdocumentdiscount description(String description) {
@@ -375,10 +420,10 @@ public class Posdocumentdiscount   {
   }
 
    /**
-   * Text [persistentní položka]
+   * text [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Text [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "text [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -387,58 +432,58 @@ public class Posdocumentdiscount   {
     this.description = description;
   }
 
-  public Posdocumentdiscount rowID(String rowID) {
-    this.rowID = rowID;
+  public Posdocumentdiscount rowId(String rowId) {
+    this.rowId = rowId;
     return this;
   }
 
    /**
-   * Řádek; ID objektu Účtenka - řádek [persistentní položka]
-   * @return rowID
+   * Řádek; id objektu Účtenka - řádek [persistentní položka]
+   * @return rowId
   **/
-  @ApiModelProperty(example = "null", value = "Řádek; ID objektu Účtenka - řádek [persistentní položka]")
-  public String getRowID() {
-    return rowID;
+  @ApiModelProperty(example = "null", value = "Řádek; id objektu Účtenka - řádek [persistentní položka]")
+  public String getRowId() {
+    return rowId;
   }
 
-  public void setRowID(String rowID) {
-    this.rowID = rowID;
+  public void setRowId(String rowId) {
+    this.rowId = rowId;
   }
 
-  public Posdocumentdiscount storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Posdocumentdiscount storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
   }
 
-  public Posdocumentdiscount insertedQuantity(Double insertedQuantity) {
-    this.insertedQuantity = insertedQuantity;
+  public Posdocumentdiscount insertedquantity(Double insertedquantity) {
+    this.insertedquantity = insertedquantity;
     return this;
   }
 
    /**
-   * Přijato [persistentní položka]
-   * @return insertedQuantity
+   * přijato [persistentní položka]
+   * @return insertedquantity
   **/
-  @ApiModelProperty(example = "null", value = "Přijato [persistentní položka]")
-  public Double getInsertedQuantity() {
-    return insertedQuantity;
+  @ApiModelProperty(example = "null", value = "přijato [persistentní položka]")
+  public Double getInsertedquantity() {
+    return insertedquantity;
   }
 
-  public void setInsertedQuantity(Double insertedQuantity) {
-    this.insertedQuantity = insertedQuantity;
+  public void setInsertedquantity(Double insertedquantity) {
+    this.insertedquantity = insertedquantity;
   }
 
   public Posdocumentdiscount automatic(Boolean automatic) {
@@ -447,10 +492,10 @@ public class Posdocumentdiscount   {
   }
 
    /**
-   * Automatická [persistentní položka]
+   * automatická [persistentní položka]
    * @return automatic
   **/
-  @ApiModelProperty(example = "null", value = "Automatická [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "automatická [persistentní položka]")
   public Boolean getAutomatic() {
     return automatic;
   }
@@ -465,10 +510,10 @@ public class Posdocumentdiscount   {
   }
 
    /**
-   * Kupónová [persistentní položka]
+   * kupónová [persistentní položka]
    * @return coupon
   **/
-  @ApiModelProperty(example = "null", value = "Kupónová [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kupónová [persistentní položka]")
   public Boolean getCoupon() {
     return coupon;
   }
@@ -483,10 +528,10 @@ public class Posdocumentdiscount   {
   }
 
    /**
-   * Vytištěná
+   * vytištěná
    * @return printed
   **/
-  @ApiModelProperty(example = "null", value = "Vytištěná")
+  @ApiModelProperty(example = "null", value = "vytištěná")
   public Boolean getPrinted() {
     return printed;
   }
@@ -505,27 +550,27 @@ public class Posdocumentdiscount   {
       return false;
     }
     Posdocumentdiscount posdocumentdiscount = (Posdocumentdiscount) o;
-    return Objects.equals(this.displayName, posdocumentdiscount.displayName) &&
-        Objects.equals(this.ID, posdocumentdiscount.ID) &&
-        Objects.equals(this.classID, posdocumentdiscount.classID) &&
-        Objects.equals(this.objVersion, posdocumentdiscount.objVersion) &&
-        Objects.equals(this.parentID, posdocumentdiscount.parentID) &&
-        Objects.equals(this.discountKind, posdocumentdiscount.discountKind) &&
-        Objects.equals(this.dealerDiscount, posdocumentdiscount.dealerDiscount) &&
-        Objects.equals(this.financialDocumentDiscount, posdocumentdiscount.financialDocumentDiscount) &&
+    return Objects.equals(this.displayname, posdocumentdiscount.displayname) &&
+        Objects.equals(this.id, posdocumentdiscount.id) &&
+        Objects.equals(this.classid, posdocumentdiscount.classid) &&
+        Objects.equals(this.objversion, posdocumentdiscount.objversion) &&
+        Objects.equals(this.parentId, posdocumentdiscount.parentId) &&
+        Objects.equals(this.discountkind, posdocumentdiscount.discountkind) &&
+        Objects.equals(this.dealerdiscount, posdocumentdiscount.dealerdiscount) &&
+        Objects.equals(this.financialdocumentdiscount, posdocumentdiscount.financialdocumentdiscount) &&
         Objects.equals(this.name, posdocumentdiscount.name) &&
         Objects.equals(this.code, posdocumentdiscount.code) &&
-        Objects.equals(this.discountPercent, posdocumentdiscount.discountPercent) &&
+        Objects.equals(this.discountpercent, posdocumentdiscount.discountpercent) &&
         Objects.equals(this.finacial, posdocumentdiscount.finacial) &&
-        Objects.equals(this.currencyID, posdocumentdiscount.currencyID) &&
-        Objects.equals(this.fullRow, posdocumentdiscount.fullRow) &&
+        Objects.equals(this.currencyId, posdocumentdiscount.currencyId) &&
+        Objects.equals(this.fullrow, posdocumentdiscount.fullrow) &&
         Objects.equals(this.quantity, posdocumentdiscount.quantity) &&
-        Objects.equals(this.tAmount, posdocumentdiscount.tAmount) &&
-        Objects.equals(this.localAmount, posdocumentdiscount.localAmount) &&
+        Objects.equals(this.tamount, posdocumentdiscount.tamount) &&
+        Objects.equals(this.localamount, posdocumentdiscount.localamount) &&
         Objects.equals(this.description, posdocumentdiscount.description) &&
-        Objects.equals(this.rowID, posdocumentdiscount.rowID) &&
-        Objects.equals(this.storeCardID, posdocumentdiscount.storeCardID) &&
-        Objects.equals(this.insertedQuantity, posdocumentdiscount.insertedQuantity) &&
+        Objects.equals(this.rowId, posdocumentdiscount.rowId) &&
+        Objects.equals(this.storecardId, posdocumentdiscount.storecardId) &&
+        Objects.equals(this.insertedquantity, posdocumentdiscount.insertedquantity) &&
         Objects.equals(this.automatic, posdocumentdiscount.automatic) &&
         Objects.equals(this.coupon, posdocumentdiscount.coupon) &&
         Objects.equals(this.printed, posdocumentdiscount.printed);
@@ -533,7 +578,7 @@ public class Posdocumentdiscount   {
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, discountKind, dealerDiscount, financialDocumentDiscount, name, code, discountPercent, finacial, currencyID, fullRow, quantity, tAmount, localAmount, description, rowID, storeCardID, insertedQuantity, automatic, coupon, printed);
+    return Objects.hash(displayname, id, classid, objversion, parentId, discountkind, dealerdiscount, financialdocumentdiscount, name, code, discountpercent, finacial, currencyId, fullrow, quantity, tamount, localamount, description, rowId, storecardId, insertedquantity, automatic, coupon, printed);
   }
 
   @Override
@@ -541,27 +586,27 @@ public class Posdocumentdiscount   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posdocumentdiscount {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    discountKind: ").append(toIndentedString(discountKind)).append("\n");
-    sb.append("    dealerDiscount: ").append(toIndentedString(dealerDiscount)).append("\n");
-    sb.append("    financialDocumentDiscount: ").append(toIndentedString(financialDocumentDiscount)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    discountkind: ").append(toIndentedString(discountkind)).append("\n");
+    sb.append("    dealerdiscount: ").append(toIndentedString(dealerdiscount)).append("\n");
+    sb.append("    financialdocumentdiscount: ").append(toIndentedString(financialdocumentdiscount)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
-    sb.append("    discountPercent: ").append(toIndentedString(discountPercent)).append("\n");
+    sb.append("    discountpercent: ").append(toIndentedString(discountpercent)).append("\n");
     sb.append("    finacial: ").append(toIndentedString(finacial)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    fullRow: ").append(toIndentedString(fullRow)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    fullrow: ").append(toIndentedString(fullrow)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    tAmount: ").append(toIndentedString(tAmount)).append("\n");
-    sb.append("    localAmount: ").append(toIndentedString(localAmount)).append("\n");
+    sb.append("    tamount: ").append(toIndentedString(tamount)).append("\n");
+    sb.append("    localamount: ").append(toIndentedString(localamount)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    rowID: ").append(toIndentedString(rowID)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    insertedQuantity: ").append(toIndentedString(insertedQuantity)).append("\n");
+    sb.append("    rowId: ").append(toIndentedString(rowId)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    insertedquantity: ").append(toIndentedString(insertedquantity)).append("\n");
     sb.append("    automatic: ").append(toIndentedString(automatic)).append("\n");
     sb.append("    coupon: ").append(toIndentedString(coupon)).append("\n");
     sb.append("    printed: ").append(toIndentedString(printed)).append("\n");

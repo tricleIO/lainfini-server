@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,222 +34,258 @@ import java.util.Objects;
 /**
  * Accountbeginning
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Accountbeginning   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DebitAmount")
-  private Double debitAmount = null;
+  @SerializedName("debitamount")
+  private Double debitamount = null;
 
-  @SerializedName("CreditAmount")
-  private Double creditAmount = null;
+  @SerializedName("creditamount")
+  private Double creditamount = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("Account_ID")
-  private String accountID = null;
+  @SerializedName("account_id")
+  private String accountId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Accountbeginning debitAmount(Double debitAmount) {
-    this.debitAmount = debitAmount;
+  public Accountbeginning displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Částka MD [persistentní položka]
-   * @return debitAmount
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Částka MD [persistentní položka]")
-  public Double getDebitAmount() {
-    return debitAmount;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDebitAmount(Double debitAmount) {
-    this.debitAmount = debitAmount;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Accountbeginning creditAmount(Double creditAmount) {
-    this.creditAmount = creditAmount;
+  public Accountbeginning id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Částka D [persistentní položka]
-   * @return creditAmount
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Částka D [persistentní položka]")
-  public Double getCreditAmount() {
-    return creditAmount;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setCreditAmount(Double creditAmount) {
-    this.creditAmount = creditAmount;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Accountbeginning periodID(String periodID) {
-    this.periodID = periodID;
+  public Accountbeginning classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Accountbeginning divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Accountbeginning objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Accountbeginning accountID(String accountID) {
-    this.accountID = accountID;
+  public Accountbeginning debitamount(Double debitamount) {
+    this.debitamount = debitamount;
     return this;
   }
 
    /**
-   * Účet; ID objektu Účet účetního rozvrhu [persistentní položka]
-   * @return accountID
+   * Částka md [persistentní položka]
+   * @return debitamount
   **/
-  @ApiModelProperty(example = "null", value = "Účet; ID objektu Účet účetního rozvrhu [persistentní položka]")
-  public String getAccountID() {
-    return accountID;
+  @ApiModelProperty(example = "null", value = "Částka md [persistentní položka]")
+  public Double getDebitamount() {
+    return debitamount;
   }
 
-  public void setAccountID(String accountID) {
-    this.accountID = accountID;
+  public void setDebitamount(Double debitamount) {
+    this.debitamount = debitamount;
   }
 
-  public Accountbeginning busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Accountbeginning creditamount(Double creditamount) {
+    this.creditamount = creditamount;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * Částka d [persistentní položka]
+   * @return creditamount
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "Částka d [persistentní položka]")
+  public Double getCreditamount() {
+    return creditamount;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setCreditamount(Double creditamount) {
+    this.creditamount = creditamount;
   }
 
-  public Accountbeginning busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Accountbeginning periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Obch. případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Obch. případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Accountbeginning busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Accountbeginning divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
+  }
+
+  public Accountbeginning accountId(String accountId) {
+    this.accountId = accountId;
+    return this;
+  }
+
+   /**
+   * Účet; id objektu Účet účetního rozvrhu [persistentní položka]
+   * @return accountId
+  **/
+  @ApiModelProperty(example = "null", value = "Účet; id objektu Účet účetního rozvrhu [persistentní položka]")
+  public String getAccountId() {
+    return accountId;
+  }
+
+  public void setAccountId(String accountId) {
+    this.accountId = accountId;
+  }
+
+  public Accountbeginning busorderId(String busorderId) {
+    this.busorderId = busorderId;
+    return this;
+  }
+
+   /**
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
+  **/
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
+  }
+
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
+  }
+
+  public Accountbeginning bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
+    return this;
+  }
+
+   /**
+   * obch. případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
+  **/
+  @ApiModelProperty(example = "null", value = "obch. případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
+  }
+
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
+  }
+
+  public Accountbeginning busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
+    return this;
+  }
+
+   /**
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
+  **/
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
+  }
+
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
 
@@ -262,23 +298,23 @@ public class Accountbeginning   {
       return false;
     }
     Accountbeginning accountbeginning = (Accountbeginning) o;
-    return Objects.equals(this.displayName, accountbeginning.displayName) &&
-        Objects.equals(this.ID, accountbeginning.ID) &&
-        Objects.equals(this.classID, accountbeginning.classID) &&
-        Objects.equals(this.objVersion, accountbeginning.objVersion) &&
-        Objects.equals(this.debitAmount, accountbeginning.debitAmount) &&
-        Objects.equals(this.creditAmount, accountbeginning.creditAmount) &&
-        Objects.equals(this.periodID, accountbeginning.periodID) &&
-        Objects.equals(this.divisionID, accountbeginning.divisionID) &&
-        Objects.equals(this.accountID, accountbeginning.accountID) &&
-        Objects.equals(this.busOrderID, accountbeginning.busOrderID) &&
-        Objects.equals(this.busTransactionID, accountbeginning.busTransactionID) &&
-        Objects.equals(this.busProjectID, accountbeginning.busProjectID);
+    return Objects.equals(this.displayname, accountbeginning.displayname) &&
+        Objects.equals(this.id, accountbeginning.id) &&
+        Objects.equals(this.classid, accountbeginning.classid) &&
+        Objects.equals(this.objversion, accountbeginning.objversion) &&
+        Objects.equals(this.debitamount, accountbeginning.debitamount) &&
+        Objects.equals(this.creditamount, accountbeginning.creditamount) &&
+        Objects.equals(this.periodId, accountbeginning.periodId) &&
+        Objects.equals(this.divisionId, accountbeginning.divisionId) &&
+        Objects.equals(this.accountId, accountbeginning.accountId) &&
+        Objects.equals(this.busorderId, accountbeginning.busorderId) &&
+        Objects.equals(this.bustransactionId, accountbeginning.bustransactionId) &&
+        Objects.equals(this.busprojectId, accountbeginning.busprojectId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, debitAmount, creditAmount, periodID, divisionID, accountID, busOrderID, busTransactionID, busProjectID);
+    return Objects.hash(displayname, id, classid, objversion, debitamount, creditamount, periodId, divisionId, accountId, busorderId, bustransactionId, busprojectId);
   }
 
   @Override
@@ -286,18 +322,18 @@ public class Accountbeginning   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Accountbeginning {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    debitAmount: ").append(toIndentedString(debitAmount)).append("\n");
-    sb.append("    creditAmount: ").append(toIndentedString(creditAmount)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    accountID: ").append(toIndentedString(accountID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    debitamount: ").append(toIndentedString(debitamount)).append("\n");
+    sb.append("    creditamount: ").append(toIndentedString(creditamount)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

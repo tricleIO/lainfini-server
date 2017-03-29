@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,300 +37,336 @@ import java.util.Objects;
 /**
  * Vatclosing
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Vatclosing   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Vatclosingdataitem> rows = new ArrayList<Vatclosingdataitem>();
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("ClosingPeriodType")
-  private Integer closingPeriodType = null;
+  @SerializedName("closingperiodtype")
+  private Integer closingperiodtype = null;
 
-  @SerializedName("DateFrom$DATE")
-  private DateTime dateFromDATE = null;
+  @SerializedName("datefrom$date")
+  private DateTime datefromdate = null;
 
-  @SerializedName("DateTo$DATE")
-  private DateTime dateToDATE = null;
+  @SerializedName("dateto$date")
+  private DateTime datetodate = null;
 
-  @SerializedName("ClosingDate$DATE")
-  private DateTime closingDateDATE = null;
+  @SerializedName("closingdate$date")
+  private DateTime closingdatedate = null;
 
-  @SerializedName("SentDate$DATE")
-  private DateTime sentDateDATE = null;
+  @SerializedName("sentdate$date")
+  private DateTime sentdatedate = null;
 
-  @SerializedName("VATDefinition_ID")
-  private String vATDefinitionID = null;
+  @SerializedName("vatdefinition_id")
+  private String vatdefinitionId = null;
 
-  @SerializedName("ClosingType")
-  private Integer closingType = null;
+  @SerializedName("closingtype")
+  private Integer closingtype = null;
 
-  @SerializedName("PreviousClosing_ID")
-  private String previousClosingID = null;
+  @SerializedName("previousclosing_id")
+  private String previousclosingId = null;
 
-  @SerializedName("WithVATCheckReport")
-  private Boolean withVATCheckReport = null;
+  @SerializedName("withvatcheckreport")
+  private Boolean withvatcheckreport = null;
 
-  @SerializedName("WithVATReturn")
-  private Boolean withVATReturn = null;
+  @SerializedName("withvatreturn")
+  private Boolean withvatreturn = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("ClosingParams")
-  private byte[] closingParams = null;
+  @SerializedName("closingparams")
+  private byte[] closingparams = null;
 
-  @SerializedName("VATCheckReportRows")
-  private List<Vatclosingcheckreportrow> vATCheckReportRows = new ArrayList<Vatclosingcheckreportrow>();
+  @SerializedName("vatcheckreportrows")
+  private List<Vatclosingcheckreportrow> vatcheckreportrows = new ArrayList<Vatclosingcheckreportrow>();
 
-  @SerializedName("Country_ID")
-  private String countryID = null;
+  @SerializedName("country_id")
+  private String countryId = null;
 
-  @SerializedName("ClosingPeriodTypeAsText")
-  private String closingPeriodTypeAsText = null;
+  @SerializedName("closingperiodtypeastext")
+  private String closingperiodtypeastext = null;
 
-  @SerializedName("ClosingTypeAsText")
-  private String closingTypeAsText = null;
+  @SerializedName("closingtypeastext")
+  private String closingtypeastext = null;
 
-  @SerializedName("VATCoefficient1")
-  private Double vATCoefficient1 = null;
+  @SerializedName("vatcoefficient1")
+  private Double vatcoefficient1 = null;
 
-  @SerializedName("VATCoefficient2")
-  private Double vATCoefficient2 = null;
+  @SerializedName("vatcoefficient2")
+  private Double vatcoefficient2 = null;
 
-  @SerializedName("VATCoefficient3")
-  private Double vATCoefficient3 = null;
+  @SerializedName("vatcoefficient3")
+  private Double vatcoefficient3 = null;
 
-  @SerializedName("MOSSRows")
-  private List<Vatclosingmossrow> mOSSRows = new ArrayList<Vatclosingmossrow>();
+  @SerializedName("mossrows")
+  private List<Vatclosingmossrow> mossrows = new ArrayList<Vatclosingmossrow>();
 
-  @SerializedName("S_SFullFillConditions79")
-  private Boolean sSFullFillConditions79 = null;
+  @SerializedName("s_sfullfillconditions79")
+  private Boolean sSfullfillconditions79 = null;
 
-  @SerializedName("S_SAdviserPhone")
-  private String sSAdviserPhone = null;
+  @SerializedName("s_sadviserphone")
+  private String sSadviserphone = null;
 
-  @SerializedName("S_SAdviserPhonePre")
-  private String sSAdviserPhonePre = null;
+  @SerializedName("s_sadviserphonepre")
+  private String sSadviserphonepre = null;
 
-  @SerializedName("S_SAdviserName")
-  private String sSAdviserName = null;
+  @SerializedName("s_sadvisername")
+  private String sSadvisername = null;
 
-  @SerializedName("S_SFaxNumber")
-  private String sSFaxNumber = null;
+  @SerializedName("s_sfaxnumber")
+  private String sSfaxnumber = null;
 
-  @SerializedName("S_SFaxNumberPre")
-  private String sSFaxNumberPre = null;
+  @SerializedName("s_sfaxnumberpre")
+  private String sSfaxnumberpre = null;
 
-  @SerializedName("S_SPhoneNumber")
-  private String sSPhoneNumber = null;
+  @SerializedName("s_sphonenumber")
+  private String sSphonenumber = null;
 
-  @SerializedName("S_SPhoneNumberPre")
-  private String sSPhoneNumberPre = null;
+  @SerializedName("s_sphonenumberpre")
+  private String sSphonenumberpre = null;
 
-  @SerializedName("S_SDateOfAdditional")
-  private DateTime sSDateOfAdditional = null;
+  @SerializedName("s_sdateofadditional")
+  private DateTime sSdateofadditional = null;
 
-  @SerializedName("S_SVATPayorType")
-  private Integer sSVATPayorType = null;
+  @SerializedName("s_svatpayortype")
+  private Integer sSvatpayortype = null;
 
-  @SerializedName("S_SNoTax")
-  private Boolean sSNoTax = null;
+  @SerializedName("s_snotax")
+  private Boolean sSnotax = null;
 
-  @SerializedName("S_SFinancialBureau")
-  private String sSFinancialBureau = null;
+  @SerializedName("s_sfinancialbureau")
+  private String sSfinancialbureau = null;
 
-  @SerializedName("S_SFirmEmail")
-  private String sSFirmEmail = null;
+  @SerializedName("s_sfirmemail")
+  private String sSfirmemail = null;
 
-  @SerializedName("S_SFirmPhone")
-  private String sSFirmPhone = null;
+  @SerializedName("s_sfirmphone")
+  private String sSfirmphone = null;
 
-  @SerializedName("S_FinancialBureau")
-  private String sFinancialBureau = null;
+  @SerializedName("s_financialbureau")
+  private String sFinancialbureau = null;
 
-  @SerializedName("S_NACECode")
-  private String sNACECode = null;
+  @SerializedName("s_nacecode")
+  private String sNacecode = null;
 
-  @SerializedName("S_ReasonOfAdditive")
-  private String sReasonOfAdditive = null;
+  @SerializedName("s_reasonofadditive")
+  private String sReasonofadditive = null;
 
-  @SerializedName("S_FOSurnameA")
-  private String sFOSurnameA = null;
+  @SerializedName("s_fosurnamea")
+  private String sFosurnamea = null;
 
-  @SerializedName("S_AuthPerson_FirstName")
-  private String sAuthPersonFirstName = null;
+  @SerializedName("s_authperson_firstname")
+  private String sAuthpersonFirstname = null;
 
-  @SerializedName("S_FinancialBureauCode")
-  private String sFinancialBureauCode = null;
+  @SerializedName("s_financialbureaucode")
+  private String sFinancialbureaucode = null;
 
-  @SerializedName("S_NumOfAttachments")
-  private Integer sNumOfAttachments = null;
+  @SerializedName("s_numofattachments")
+  private Integer sNumofattachments = null;
 
-  @SerializedName("S_VATPayorType")
-  private Integer sVATPayorType = null;
+  @SerializedName("s_vatpayortype")
+  private Integer sVatpayortype = null;
 
-  @SerializedName("S_FOFirstNameA")
-  private String sFOFirstNameA = null;
+  @SerializedName("s_fofirstnamea")
+  private String sFofirstnamea = null;
 
-  @SerializedName("S_AuthPerson_Surname")
-  private String sAuthPersonSurname = null;
+  @SerializedName("s_authperson_surname")
+  private String sAuthpersonSurname = null;
 
-  @SerializedName("S_AdviserCode")
-  private Integer sAdviserCode = null;
+  @SerializedName("s_advisercode")
+  private Integer sAdvisercode = null;
 
-  @SerializedName("S_RegionalOffice")
-  private String sRegionalOffice = null;
+  @SerializedName("s_regionaloffice")
+  private String sRegionaloffice = null;
 
-  @SerializedName("S_NumOfSheets")
-  private Integer sNumOfSheets = null;
+  @SerializedName("s_numofsheets")
+  private Integer sNumofsheets = null;
 
-  @SerializedName("S_NoItemsForCSection")
-  private Boolean sNoItemsForCSection = null;
+  @SerializedName("s_noitemsforcsection")
+  private Boolean sNoitemsforcsection = null;
 
-  @SerializedName("S_FOTitleA")
-  private String sFOTitleA = null;
+  @SerializedName("s_fotitlea")
+  private String sFotitlea = null;
 
-  @SerializedName("S_AssemblyPerson")
-  private String sAssemblyPerson = null;
+  @SerializedName("s_assemblyperson")
+  private String sAssemblyperson = null;
 
-  @SerializedName("S_AdviserType")
-  private Integer sAdviserType = null;
+  @SerializedName("s_advisertype")
+  private Integer sAdvisertype = null;
 
-  @SerializedName("S_AuthPerson_Status")
-  private String sAuthPersonStatus = null;
+  @SerializedName("s_authperson_status")
+  private String sAuthpersonStatus = null;
 
-  @SerializedName("S_RegionalOfficeCode")
-  private String sRegionalOfficeCode = null;
+  @SerializedName("s_regionalofficecode")
+  private String sRegionalofficecode = null;
 
-  @SerializedName("S_NextYearTaxPeriodCode")
-  private Integer sNextYearTaxPeriodCode = null;
+  @SerializedName("s_nextyeartaxperiodcode")
+  private Integer sNextyeartaxperiodcode = null;
 
-  @SerializedName("S_IdentNumber")
-  private String sIdentNumber = null;
+  @SerializedName("s_identnumber")
+  private String sIdentnumber = null;
 
-  @SerializedName("S_AssemblyTelephone")
-  private String sAssemblyTelephone = null;
+  @SerializedName("s_assemblytelephone")
+  private String sAssemblytelephone = null;
 
-  @SerializedName("S_AdviserFirstName")
-  private String sAdviserFirstName = null;
+  @SerializedName("s_adviserfirstname")
+  private String sAdviserfirstname = null;
 
-  @SerializedName("S_CompanyType")
-  private Integer sCompanyType = null;
+  @SerializedName("s_companytype")
+  private Integer sCompanytype = null;
 
-  @SerializedName("S_InsolventPeriod")
-  private Boolean sInsolventPeriod = null;
+  @SerializedName("s_insolventperiod")
+  private Boolean sInsolventperiod = null;
 
-  @SerializedName("S_AdviserSurname")
-  private String sAdviserSurname = null;
+  @SerializedName("s_advisersurname")
+  private String sAdvisersurname = null;
 
-  @SerializedName("S_InsolventPeriodFrom")
-  private DateTime sInsolventPeriodFrom = null;
+  @SerializedName("s_insolventperiodfrom")
+  private DateTime sInsolventperiodfrom = null;
 
-  @SerializedName("S_AdviserTitle")
-  private String sAdviserTitle = null;
+  @SerializedName("s_advisertitle")
+  private String sAdvisertitle = null;
 
-  @SerializedName("S_InsolventPeriodTo")
-  private DateTime sInsolventPeriodTo = null;
+  @SerializedName("s_insolventperiodto")
+  private DateTime sInsolventperiodto = null;
 
-  @SerializedName("S_AdviserBirthDate")
-  private DateTime sAdviserBirthDate = null;
+  @SerializedName("s_adviserbirthdate")
+  private DateTime sAdviserbirthdate = null;
 
-  @SerializedName("S_AdviserEvNum")
-  private String sAdviserEvNum = null;
+  @SerializedName("s_adviserevnum")
+  private String sAdviserevnum = null;
 
-  @SerializedName("S_AdviserIC")
-  private String sAdviserIC = null;
+  @SerializedName("s_adviseric")
+  private String sAdviseric = null;
 
-  @SerializedName("S_AssemblyEmail")
-  private String sAssemblyEmail = null;
+  @SerializedName("s_assemblyemail")
+  private String sAssemblyemail = null;
 
-  @SerializedName("S_AssemblyDate")
-  private DateTime sAssemblyDate = null;
+  @SerializedName("s_assemblydate")
+  private DateTime sAssemblydate = null;
 
-  @SerializedName("S_DateOfAdditive")
-  private DateTime sDateOfAdditive = null;
+  @SerializedName("s_dateofadditive")
+  private DateTime sDateofadditive = null;
 
-  @SerializedName("S_NoTax")
-  private Boolean sNoTax = null;
+  @SerializedName("s_notax")
+  private Boolean sNotax = null;
 
-  @SerializedName("S_IBAN")
-  private String S_IBAN = null;
+  @SerializedName("s_iban")
+  private String sIban = null;
 
-  @SerializedName("S_BIC")
-  private String S_BIC = null;
+  @SerializedName("s_bic")
+  private String sBic = null;
 
-  @SerializedName("S_MOSSRefNumber")
-  private String sMOSSRefNumber = null;
+  @SerializedName("s_mossrefnumber")
+  private String sMossrefnumber = null;
 
-  @SerializedName("S_MOSSAccountName")
-  private String sMOSSAccountName = null;
+  @SerializedName("s_mossaccountname")
+  private String sMossaccountname = null;
 
-  @SerializedName("S_KHDPH_AppealRefNumber")
-  private String sKHDPHAppealRefNumber = null;
+  @SerializedName("s_khdph_appealrefnumber")
+  private String sKhdphAppealrefnumber = null;
 
-  @SerializedName("S_KHDPH_AppealReply")
-  private Integer sKHDPHAppealReply = null;
+  @SerializedName("s_khdph_appealreply")
+  private Integer sKhdphAppealreply = null;
 
-  @SerializedName("S_KHDPH_CorrectionDate")
-  private DateTime sKHDPHCorrectionDate = null;
+  @SerializedName("s_khdph_correctiondate")
+  private DateTime sKhdphCorrectiondate = null;
 
-  @SerializedName("S_KHDPH_Type")
-  private Integer sKHDPHType = null;
+  @SerializedName("s_khdph_type")
+  private Integer sKhdphType = null;
 
-  @SerializedName("S_DataBoxID")
-  private String sDataBoxID = null;
+  @SerializedName("s_databoxid")
+  private String sDataboxid = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Vatclosing displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Vatclosing id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Vatclosing classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Vatclosing objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Vatclosing rows(List<Vatclosingdataitem> rows) {
@@ -344,10 +380,10 @@ public class Vatclosing   {
   }
 
    /**
-   * Řádky; kolekce BO Řádek DPH přiznání [nepersistentní položka]
+   * Řádky; kolekce bo Řádek dph přiznání [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Řádek DPH přiznání [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo Řádek dph přiznání [nepersistentní položka]")
   public List<Vatclosingdataitem> getRows() {
     return rows;
   }
@@ -362,10 +398,10 @@ public class Vatclosing   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -374,1454 +410,1454 @@ public class Vatclosing   {
     this.description = description;
   }
 
-  public Vatclosing closingPeriodType(Integer closingPeriodType) {
-    this.closingPeriodType = closingPeriodType;
+  public Vatclosing closingperiodtype(Integer closingperiodtype) {
+    this.closingperiodtype = closingperiodtype;
     return this;
   }
 
    /**
-   * Zdaňovací období [persistentní položka]
-   * @return closingPeriodType
+   * zdaňovací období [persistentní položka]
+   * @return closingperiodtype
   **/
-  @ApiModelProperty(example = "null", value = "Zdaňovací období [persistentní položka]")
-  public Integer getClosingPeriodType() {
-    return closingPeriodType;
+  @ApiModelProperty(example = "null", value = "zdaňovací období [persistentní položka]")
+  public Integer getClosingperiodtype() {
+    return closingperiodtype;
   }
 
-  public void setClosingPeriodType(Integer closingPeriodType) {
-    this.closingPeriodType = closingPeriodType;
+  public void setClosingperiodtype(Integer closingperiodtype) {
+    this.closingperiodtype = closingperiodtype;
   }
 
-  public Vatclosing dateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public Vatclosing datefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
     return this;
   }
 
    /**
-   * Datum od [persistentní položka]
-   * @return dateFromDATE
+   * datum od [persistentní položka]
+   * @return datefromdate
   **/
-  @ApiModelProperty(example = "null", value = "Datum od [persistentní položka]")
-  public DateTime getDateFromDATE() {
-    return dateFromDATE;
+  @ApiModelProperty(example = "null", value = "datum od [persistentní položka]")
+  public DateTime getDatefromdate() {
+    return datefromdate;
   }
 
-  public void setDateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public void setDatefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
   }
 
-  public Vatclosing dateToDATE(DateTime dateToDATE) {
-    this.dateToDATE = dateToDATE;
+  public Vatclosing datetodate(DateTime datetodate) {
+    this.datetodate = datetodate;
     return this;
   }
 
    /**
-   * Datum do [persistentní položka]
-   * @return dateToDATE
+   * datum do [persistentní položka]
+   * @return datetodate
   **/
-  @ApiModelProperty(example = "null", value = "Datum do [persistentní položka]")
-  public DateTime getDateToDATE() {
-    return dateToDATE;
+  @ApiModelProperty(example = "null", value = "datum do [persistentní položka]")
+  public DateTime getDatetodate() {
+    return datetodate;
   }
 
-  public void setDateToDATE(DateTime dateToDATE) {
-    this.dateToDATE = dateToDATE;
+  public void setDatetodate(DateTime datetodate) {
+    this.datetodate = datetodate;
   }
 
-  public Vatclosing closingDateDATE(DateTime closingDateDATE) {
-    this.closingDateDATE = closingDateDATE;
+  public Vatclosing closingdatedate(DateTime closingdatedate) {
+    this.closingdatedate = closingdatedate;
     return this;
   }
 
    /**
-   * Datum uzavření [persistentní položka]
-   * @return closingDateDATE
+   * datum uzavření [persistentní položka]
+   * @return closingdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum uzavření [persistentní položka]")
-  public DateTime getClosingDateDATE() {
-    return closingDateDATE;
+  @ApiModelProperty(example = "null", value = "datum uzavření [persistentní položka]")
+  public DateTime getClosingdatedate() {
+    return closingdatedate;
   }
 
-  public void setClosingDateDATE(DateTime closingDateDATE) {
-    this.closingDateDATE = closingDateDATE;
+  public void setClosingdatedate(DateTime closingdatedate) {
+    this.closingdatedate = closingdatedate;
   }
 
-  public Vatclosing sentDateDATE(DateTime sentDateDATE) {
-    this.sentDateDATE = sentDateDATE;
+  public Vatclosing sentdatedate(DateTime sentdatedate) {
+    this.sentdatedate = sentdatedate;
     return this;
   }
 
    /**
-   * Datum odeslání [persistentní položka]
-   * @return sentDateDATE
+   * datum odeslání [persistentní položka]
+   * @return sentdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum odeslání [persistentní položka]")
-  public DateTime getSentDateDATE() {
-    return sentDateDATE;
+  @ApiModelProperty(example = "null", value = "datum odeslání [persistentní položka]")
+  public DateTime getSentdatedate() {
+    return sentdatedate;
   }
 
-  public void setSentDateDATE(DateTime sentDateDATE) {
-    this.sentDateDATE = sentDateDATE;
+  public void setSentdatedate(DateTime sentdatedate) {
+    this.sentdatedate = sentdatedate;
   }
 
-  public Vatclosing vATDefinitionID(String vATDefinitionID) {
-    this.vATDefinitionID = vATDefinitionID;
+  public Vatclosing vatdefinitionId(String vatdefinitionId) {
+    this.vatdefinitionId = vatdefinitionId;
     return this;
   }
 
    /**
-   * Definice přiznání; ID objektu Definice pro DPH přiznání [persistentní položka]
-   * @return vATDefinitionID
+   * definice přiznání; id objektu definice pro dph přiznání [persistentní položka]
+   * @return vatdefinitionId
   **/
-  @ApiModelProperty(example = "null", value = "Definice přiznání; ID objektu Definice pro DPH přiznání [persistentní položka]")
-  public String getVATDefinitionID() {
-    return vATDefinitionID;
+  @ApiModelProperty(example = "null", value = "definice přiznání; id objektu definice pro dph přiznání [persistentní položka]")
+  public String getVatdefinitionId() {
+    return vatdefinitionId;
   }
 
-  public void setVATDefinitionID(String vATDefinitionID) {
-    this.vATDefinitionID = vATDefinitionID;
+  public void setVatdefinitionId(String vatdefinitionId) {
+    this.vatdefinitionId = vatdefinitionId;
   }
 
-  public Vatclosing closingType(Integer closingType) {
-    this.closingType = closingType;
+  public Vatclosing closingtype(Integer closingtype) {
+    this.closingtype = closingtype;
     return this;
   }
 
    /**
-   * Typ uzavření [persistentní položka]
-   * @return closingType
+   * typ uzavření [persistentní položka]
+   * @return closingtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ uzavření [persistentní položka]")
-  public Integer getClosingType() {
-    return closingType;
+  @ApiModelProperty(example = "null", value = "typ uzavření [persistentní položka]")
+  public Integer getClosingtype() {
+    return closingtype;
   }
 
-  public void setClosingType(Integer closingType) {
-    this.closingType = closingType;
+  public void setClosingtype(Integer closingtype) {
+    this.closingtype = closingtype;
   }
 
-  public Vatclosing previousClosingID(String previousClosingID) {
-    this.previousClosingID = previousClosingID;
+  public Vatclosing previousclosingId(String previousclosingId) {
+    this.previousclosingId = previousclosingId;
     return this;
   }
 
    /**
-   * Předchozí uzávěrka; ID objektu Uzávěrka DPH [persistentní položka]
-   * @return previousClosingID
+   * předchozí uzávěrka; id objektu uzávěrka dph [persistentní položka]
+   * @return previousclosingId
   **/
-  @ApiModelProperty(example = "null", value = "Předchozí uzávěrka; ID objektu Uzávěrka DPH [persistentní položka]")
-  public String getPreviousClosingID() {
-    return previousClosingID;
+  @ApiModelProperty(example = "null", value = "předchozí uzávěrka; id objektu uzávěrka dph [persistentní položka]")
+  public String getPreviousclosingId() {
+    return previousclosingId;
   }
 
-  public void setPreviousClosingID(String previousClosingID) {
-    this.previousClosingID = previousClosingID;
+  public void setPreviousclosingId(String previousclosingId) {
+    this.previousclosingId = previousclosingId;
   }
 
-  public Vatclosing withVATCheckReport(Boolean withVATCheckReport) {
-    this.withVATCheckReport = withVATCheckReport;
+  public Vatclosing withvatcheckreport(Boolean withvatcheckreport) {
+    this.withvatcheckreport = withvatcheckreport;
     return this;
   }
 
    /**
-   * Data KV/KH DPH [persistentní položka]
-   * @return withVATCheckReport
+   * data kv/kh dph [persistentní položka]
+   * @return withvatcheckreport
   **/
-  @ApiModelProperty(example = "null", value = "Data KV/KH DPH [persistentní položka]")
-  public Boolean getWithVATCheckReport() {
-    return withVATCheckReport;
+  @ApiModelProperty(example = "null", value = "data kv/kh dph [persistentní položka]")
+  public Boolean getWithvatcheckreport() {
+    return withvatcheckreport;
   }
 
-  public void setWithVATCheckReport(Boolean withVATCheckReport) {
-    this.withVATCheckReport = withVATCheckReport;
+  public void setWithvatcheckreport(Boolean withvatcheckreport) {
+    this.withvatcheckreport = withvatcheckreport;
   }
 
-  public Vatclosing withVATReturn(Boolean withVATReturn) {
-    this.withVATReturn = withVATReturn;
+  public Vatclosing withvatreturn(Boolean withvatreturn) {
+    this.withvatreturn = withvatreturn;
     return this;
   }
 
    /**
-   * DPH přiznání [persistentní položka]
-   * @return withVATReturn
+   * dph přiznání [persistentní položka]
+   * @return withvatreturn
   **/
-  @ApiModelProperty(example = "null", value = "DPH přiznání [persistentní položka]")
-  public Boolean getWithVATReturn() {
-    return withVATReturn;
+  @ApiModelProperty(example = "null", value = "dph přiznání [persistentní položka]")
+  public Boolean getWithvatreturn() {
+    return withvatreturn;
   }
 
-  public void setWithVATReturn(Boolean withVATReturn) {
-    this.withVATReturn = withVATReturn;
+  public void setWithvatreturn(Boolean withvatreturn) {
+    this.withvatreturn = withvatreturn;
   }
 
-  public Vatclosing createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Vatclosing createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Vatclosing correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Vatclosing correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Vatclosing closingParams(byte[] closingParams) {
-    this.closingParams = closingParams;
+  public Vatclosing closingparams(byte[] closingparams) {
+    this.closingparams = closingparams;
     return this;
   }
 
    /**
-   * Parametry [persistentní položka]
-   * @return closingParams
+   * parametry [persistentní položka]
+   * @return closingparams
   **/
-  @ApiModelProperty(example = "null", value = "Parametry [persistentní položka]")
-  public byte[] getClosingParams() {
-    return closingParams;
+  @ApiModelProperty(example = "null", value = "parametry [persistentní položka]")
+  public byte[] getClosingparams() {
+    return closingparams;
   }
 
-  public void setClosingParams(byte[] closingParams) {
-    this.closingParams = closingParams;
+  public void setClosingparams(byte[] closingparams) {
+    this.closingparams = closingparams;
   }
 
-  public Vatclosing vATCheckReportRows(List<Vatclosingcheckreportrow> vATCheckReportRows) {
-    this.vATCheckReportRows = vATCheckReportRows;
+  public Vatclosing vatcheckreportrows(List<Vatclosingcheckreportrow> vatcheckreportrows) {
+    this.vatcheckreportrows = vatcheckreportrows;
     return this;
   }
 
-  public Vatclosing addVATCheckReportRowsItem(Vatclosingcheckreportrow vATCheckReportRowsItem) {
-    this.vATCheckReportRows.add(vATCheckReportRowsItem);
+  public Vatclosing addVatcheckreportrowsItem(Vatclosingcheckreportrow vatcheckreportrowsItem) {
+    this.vatcheckreportrows.add(vatcheckreportrowsItem);
     return this;
   }
 
    /**
-   * KV/KH DPH; kolekce BO Řádek KV/KH DPH [nepersistentní položka]
-   * @return vATCheckReportRows
+   * kv/kh dph; kolekce bo Řádek kv/kh dph [nepersistentní položka]
+   * @return vatcheckreportrows
   **/
-  @ApiModelProperty(example = "null", value = "KV/KH DPH; kolekce BO Řádek KV/KH DPH [nepersistentní položka]")
-  public List<Vatclosingcheckreportrow> getVATCheckReportRows() {
-    return vATCheckReportRows;
+  @ApiModelProperty(example = "null", value = "kv/kh dph; kolekce bo Řádek kv/kh dph [nepersistentní položka]")
+  public List<Vatclosingcheckreportrow> getVatcheckreportrows() {
+    return vatcheckreportrows;
   }
 
-  public void setVATCheckReportRows(List<Vatclosingcheckreportrow> vATCheckReportRows) {
-    this.vATCheckReportRows = vATCheckReportRows;
+  public void setVatcheckreportrows(List<Vatclosingcheckreportrow> vatcheckreportrows) {
+    this.vatcheckreportrows = vatcheckreportrows;
   }
 
-  public Vatclosing countryID(String countryID) {
-    this.countryID = countryID;
+  public Vatclosing countryId(String countryId) {
+    this.countryId = countryId;
     return this;
   }
 
    /**
-   * Země; ID objektu Země
-   * @return countryID
+   * země; id objektu země
+   * @return countryId
   **/
-  @ApiModelProperty(example = "null", value = "Země; ID objektu Země")
-  public String getCountryID() {
-    return countryID;
+  @ApiModelProperty(example = "null", value = "země; id objektu země")
+  public String getCountryId() {
+    return countryId;
   }
 
-  public void setCountryID(String countryID) {
-    this.countryID = countryID;
+  public void setCountryId(String countryId) {
+    this.countryId = countryId;
   }
 
-  public Vatclosing closingPeriodTypeAsText(String closingPeriodTypeAsText) {
-    this.closingPeriodTypeAsText = closingPeriodTypeAsText;
+  public Vatclosing closingperiodtypeastext(String closingperiodtypeastext) {
+    this.closingperiodtypeastext = closingperiodtypeastext;
     return this;
   }
 
    /**
-   * Zdaňovací období
-   * @return closingPeriodTypeAsText
+   * zdaňovací období
+   * @return closingperiodtypeastext
   **/
-  @ApiModelProperty(example = "null", value = "Zdaňovací období")
-  public String getClosingPeriodTypeAsText() {
-    return closingPeriodTypeAsText;
+  @ApiModelProperty(example = "null", value = "zdaňovací období")
+  public String getClosingperiodtypeastext() {
+    return closingperiodtypeastext;
   }
 
-  public void setClosingPeriodTypeAsText(String closingPeriodTypeAsText) {
-    this.closingPeriodTypeAsText = closingPeriodTypeAsText;
+  public void setClosingperiodtypeastext(String closingperiodtypeastext) {
+    this.closingperiodtypeastext = closingperiodtypeastext;
   }
 
-  public Vatclosing closingTypeAsText(String closingTypeAsText) {
-    this.closingTypeAsText = closingTypeAsText;
+  public Vatclosing closingtypeastext(String closingtypeastext) {
+    this.closingtypeastext = closingtypeastext;
     return this;
   }
 
    /**
-   * Typ uzavření
-   * @return closingTypeAsText
+   * typ uzavření
+   * @return closingtypeastext
   **/
-  @ApiModelProperty(example = "null", value = "Typ uzavření")
-  public String getClosingTypeAsText() {
-    return closingTypeAsText;
+  @ApiModelProperty(example = "null", value = "typ uzavření")
+  public String getClosingtypeastext() {
+    return closingtypeastext;
   }
 
-  public void setClosingTypeAsText(String closingTypeAsText) {
-    this.closingTypeAsText = closingTypeAsText;
+  public void setClosingtypeastext(String closingtypeastext) {
+    this.closingtypeastext = closingtypeastext;
   }
 
-  public Vatclosing vATCoefficient1(Double vATCoefficient1) {
-    this.vATCoefficient1 = vATCoefficient1;
+  public Vatclosing vatcoefficient1(Double vatcoefficient1) {
+    this.vatcoefficient1 = vatcoefficient1;
     return this;
   }
 
    /**
-   * Poměrný koeficient
-   * @return vATCoefficient1
+   * poměrný koeficient
+   * @return vatcoefficient1
   **/
-  @ApiModelProperty(example = "null", value = "Poměrný koeficient")
-  public Double getVATCoefficient1() {
-    return vATCoefficient1;
+  @ApiModelProperty(example = "null", value = "poměrný koeficient")
+  public Double getVatcoefficient1() {
+    return vatcoefficient1;
   }
 
-  public void setVATCoefficient1(Double vATCoefficient1) {
-    this.vATCoefficient1 = vATCoefficient1;
+  public void setVatcoefficient1(Double vatcoefficient1) {
+    this.vatcoefficient1 = vatcoefficient1;
   }
 
-  public Vatclosing vATCoefficient2(Double vATCoefficient2) {
-    this.vATCoefficient2 = vATCoefficient2;
+  public Vatclosing vatcoefficient2(Double vatcoefficient2) {
+    this.vatcoefficient2 = vatcoefficient2;
     return this;
   }
 
    /**
-   * Vypořádací koeficient
-   * @return vATCoefficient2
+   * vypořádací koeficient
+   * @return vatcoefficient2
   **/
-  @ApiModelProperty(example = "null", value = "Vypořádací koeficient")
-  public Double getVATCoefficient2() {
-    return vATCoefficient2;
+  @ApiModelProperty(example = "null", value = "vypořádací koeficient")
+  public Double getVatcoefficient2() {
+    return vatcoefficient2;
   }
 
-  public void setVATCoefficient2(Double vATCoefficient2) {
-    this.vATCoefficient2 = vATCoefficient2;
+  public void setVatcoefficient2(Double vatcoefficient2) {
+    this.vatcoefficient2 = vatcoefficient2;
   }
 
-  public Vatclosing vATCoefficient3(Double vATCoefficient3) {
-    this.vATCoefficient3 = vATCoefficient3;
+  public Vatclosing vatcoefficient3(Double vatcoefficient3) {
+    this.vatcoefficient3 = vatcoefficient3;
     return this;
   }
 
    /**
-   * Zálohový koeficient
-   * @return vATCoefficient3
+   * zálohový koeficient
+   * @return vatcoefficient3
   **/
-  @ApiModelProperty(example = "null", value = "Zálohový koeficient")
-  public Double getVATCoefficient3() {
-    return vATCoefficient3;
+  @ApiModelProperty(example = "null", value = "zálohový koeficient")
+  public Double getVatcoefficient3() {
+    return vatcoefficient3;
   }
 
-  public void setVATCoefficient3(Double vATCoefficient3) {
-    this.vATCoefficient3 = vATCoefficient3;
+  public void setVatcoefficient3(Double vatcoefficient3) {
+    this.vatcoefficient3 = vatcoefficient3;
   }
 
-  public Vatclosing mOSSRows(List<Vatclosingmossrow> mOSSRows) {
-    this.mOSSRows = mOSSRows;
+  public Vatclosing mossrows(List<Vatclosingmossrow> mossrows) {
+    this.mossrows = mossrows;
     return this;
   }
 
-  public Vatclosing addMOSSRowsItem(Vatclosingmossrow mOSSRowsItem) {
-    this.mOSSRows.add(mOSSRowsItem);
-    return this;
-  }
-
-   /**
-   * MOSS; kolekce BO Řádek MOSS DPH přiznání [nepersistentní položka]
-   * @return mOSSRows
-  **/
-  @ApiModelProperty(example = "null", value = "MOSS; kolekce BO Řádek MOSS DPH přiznání [nepersistentní položka]")
-  public List<Vatclosingmossrow> getMOSSRows() {
-    return mOSSRows;
-  }
-
-  public void setMOSSRows(List<Vatclosingmossrow> mOSSRows) {
-    this.mOSSRows = mOSSRows;
-  }
-
-  public Vatclosing sSFullFillConditions79(Boolean sSFullFillConditions79) {
-    this.sSFullFillConditions79 = sSFullFillConditions79;
+  public Vatclosing addMossrowsItem(Vatclosingmossrow mossrowsItem) {
+    this.mossrows.add(mossrowsItem);
     return this;
   }
 
    /**
-   * Splnenie podmienok podľa § 79 [persistentní položka]
-   * @return sSFullFillConditions79
+   * moss; kolekce bo Řádek moss dph přiznání [nepersistentní položka]
+   * @return mossrows
   **/
-  @ApiModelProperty(example = "null", value = "Splnenie podmienok podľa § 79 [persistentní položka]")
-  public Boolean getSSFullFillConditions79() {
-    return sSFullFillConditions79;
+  @ApiModelProperty(example = "null", value = "moss; kolekce bo Řádek moss dph přiznání [nepersistentní položka]")
+  public List<Vatclosingmossrow> getMossrows() {
+    return mossrows;
   }
 
-  public void setSSFullFillConditions79(Boolean sSFullFillConditions79) {
-    this.sSFullFillConditions79 = sSFullFillConditions79;
+  public void setMossrows(List<Vatclosingmossrow> mossrows) {
+    this.mossrows = mossrows;
   }
 
-  public Vatclosing sSAdviserPhone(String sSAdviserPhone) {
-    this.sSAdviserPhone = sSAdviserPhone;
+  public Vatclosing sSfullfillconditions79(Boolean sSfullfillconditions79) {
+    this.sSfullfillconditions79 = sSfullfillconditions79;
     return this;
   }
 
    /**
-   * Telefón osoby [persistentní položka]
-   * @return sSAdviserPhone
+   * splnenie podmienok podľa § 79 [persistentní položka]
+   * @return sSfullfillconditions79
   **/
-  @ApiModelProperty(example = "null", value = "Telefón osoby [persistentní položka]")
-  public String getSSAdviserPhone() {
-    return sSAdviserPhone;
+  @ApiModelProperty(example = "null", value = "splnenie podmienok podľa § 79 [persistentní položka]")
+  public Boolean getSSfullfillconditions79() {
+    return sSfullfillconditions79;
   }
 
-  public void setSSAdviserPhone(String sSAdviserPhone) {
-    this.sSAdviserPhone = sSAdviserPhone;
+  public void setSSfullfillconditions79(Boolean sSfullfillconditions79) {
+    this.sSfullfillconditions79 = sSfullfillconditions79;
   }
 
-  public Vatclosing sSAdviserPhonePre(String sSAdviserPhonePre) {
-    this.sSAdviserPhonePre = sSAdviserPhonePre;
+  public Vatclosing sSadviserphone(String sSadviserphone) {
+    this.sSadviserphone = sSadviserphone;
     return this;
   }
 
    /**
-   * Telefón osoby - predčislie [persistentní položka]
-   * @return sSAdviserPhonePre
+   * telefón osoby [persistentní položka]
+   * @return sSadviserphone
   **/
-  @ApiModelProperty(example = "null", value = "Telefón osoby - predčislie [persistentní položka]")
-  public String getSSAdviserPhonePre() {
-    return sSAdviserPhonePre;
+  @ApiModelProperty(example = "null", value = "telefón osoby [persistentní položka]")
+  public String getSSadviserphone() {
+    return sSadviserphone;
   }
 
-  public void setSSAdviserPhonePre(String sSAdviserPhonePre) {
-    this.sSAdviserPhonePre = sSAdviserPhonePre;
+  public void setSSadviserphone(String sSadviserphone) {
+    this.sSadviserphone = sSadviserphone;
   }
 
-  public Vatclosing sSAdviserName(String sSAdviserName) {
-    this.sSAdviserName = sSAdviserName;
+  public Vatclosing sSadviserphonepre(String sSadviserphonepre) {
+    this.sSadviserphonepre = sSadviserphonepre;
     return this;
   }
 
    /**
-   * Meno oprávnenej osoby [persistentní položka]
-   * @return sSAdviserName
+   * telefón osoby - predčislie [persistentní položka]
+   * @return sSadviserphonepre
   **/
-  @ApiModelProperty(example = "null", value = "Meno oprávnenej osoby [persistentní položka]")
-  public String getSSAdviserName() {
-    return sSAdviserName;
+  @ApiModelProperty(example = "null", value = "telefón osoby - predčislie [persistentní položka]")
+  public String getSSadviserphonepre() {
+    return sSadviserphonepre;
   }
 
-  public void setSSAdviserName(String sSAdviserName) {
-    this.sSAdviserName = sSAdviserName;
+  public void setSSadviserphonepre(String sSadviserphonepre) {
+    this.sSadviserphonepre = sSadviserphonepre;
   }
 
-  public Vatclosing sSFaxNumber(String sSFaxNumber) {
-    this.sSFaxNumber = sSFaxNumber;
+  public Vatclosing sSadvisername(String sSadvisername) {
+    this.sSadvisername = sSadvisername;
+    return this;
+  }
+
+   /**
+   * meno oprávnenej osoby [persistentní položka]
+   * @return sSadvisername
+  **/
+  @ApiModelProperty(example = "null", value = "meno oprávnenej osoby [persistentní položka]")
+  public String getSSadvisername() {
+    return sSadvisername;
+  }
+
+  public void setSSadvisername(String sSadvisername) {
+    this.sSadvisername = sSadvisername;
+  }
+
+  public Vatclosing sSfaxnumber(String sSfaxnumber) {
+    this.sSfaxnumber = sSfaxnumber;
     return this;
   }
 
    /**
    * Číslo faxu [persistentní položka]
-   * @return sSFaxNumber
+   * @return sSfaxnumber
   **/
   @ApiModelProperty(example = "null", value = "Číslo faxu [persistentní položka]")
-  public String getSSFaxNumber() {
-    return sSFaxNumber;
+  public String getSSfaxnumber() {
+    return sSfaxnumber;
   }
 
-  public void setSSFaxNumber(String sSFaxNumber) {
-    this.sSFaxNumber = sSFaxNumber;
+  public void setSSfaxnumber(String sSfaxnumber) {
+    this.sSfaxnumber = sSfaxnumber;
   }
 
-  public Vatclosing sSFaxNumberPre(String sSFaxNumberPre) {
-    this.sSFaxNumberPre = sSFaxNumberPre;
+  public Vatclosing sSfaxnumberpre(String sSfaxnumberpre) {
+    this.sSfaxnumberpre = sSfaxnumberpre;
     return this;
   }
 
    /**
    * Číslo faxu - predčíslie [persistentní položka]
-   * @return sSFaxNumberPre
+   * @return sSfaxnumberpre
   **/
   @ApiModelProperty(example = "null", value = "Číslo faxu - predčíslie [persistentní položka]")
-  public String getSSFaxNumberPre() {
-    return sSFaxNumberPre;
+  public String getSSfaxnumberpre() {
+    return sSfaxnumberpre;
   }
 
-  public void setSSFaxNumberPre(String sSFaxNumberPre) {
-    this.sSFaxNumberPre = sSFaxNumberPre;
+  public void setSSfaxnumberpre(String sSfaxnumberpre) {
+    this.sSfaxnumberpre = sSfaxnumberpre;
   }
 
-  public Vatclosing sSPhoneNumber(String sSPhoneNumber) {
-    this.sSPhoneNumber = sSPhoneNumber;
+  public Vatclosing sSphonenumber(String sSphonenumber) {
+    this.sSphonenumber = sSphonenumber;
     return this;
   }
 
    /**
    * Číslo telefónu [persistentní položka]
-   * @return sSPhoneNumber
+   * @return sSphonenumber
   **/
   @ApiModelProperty(example = "null", value = "Číslo telefónu [persistentní položka]")
-  public String getSSPhoneNumber() {
-    return sSPhoneNumber;
+  public String getSSphonenumber() {
+    return sSphonenumber;
   }
 
-  public void setSSPhoneNumber(String sSPhoneNumber) {
-    this.sSPhoneNumber = sSPhoneNumber;
+  public void setSSphonenumber(String sSphonenumber) {
+    this.sSphonenumber = sSphonenumber;
   }
 
-  public Vatclosing sSPhoneNumberPre(String sSPhoneNumberPre) {
-    this.sSPhoneNumberPre = sSPhoneNumberPre;
+  public Vatclosing sSphonenumberpre(String sSphonenumberpre) {
+    this.sSphonenumberpre = sSphonenumberpre;
     return this;
   }
 
    /**
    * Číslo telefónu - predčíslie [persistentní položka]
-   * @return sSPhoneNumberPre
+   * @return sSphonenumberpre
   **/
   @ApiModelProperty(example = "null", value = "Číslo telefónu - predčíslie [persistentní položka]")
-  public String getSSPhoneNumberPre() {
-    return sSPhoneNumberPre;
+  public String getSSphonenumberpre() {
+    return sSphonenumberpre;
   }
 
-  public void setSSPhoneNumberPre(String sSPhoneNumberPre) {
-    this.sSPhoneNumberPre = sSPhoneNumberPre;
+  public void setSSphonenumberpre(String sSphonenumberpre) {
+    this.sSphonenumberpre = sSphonenumberpre;
   }
 
-  public Vatclosing sSDateOfAdditional(DateTime sSDateOfAdditional) {
-    this.sSDateOfAdditional = sSDateOfAdditional;
+  public Vatclosing sSdateofadditional(DateTime sSdateofadditional) {
+    this.sSdateofadditional = sSdateofadditional;
     return this;
   }
 
    /**
-   * Dátum zistenia [persistentní položka]
-   * @return sSDateOfAdditional
+   * dátum zistenia [persistentní položka]
+   * @return sSdateofadditional
   **/
-  @ApiModelProperty(example = "null", value = "Dátum zistenia [persistentní položka]")
-  public DateTime getSSDateOfAdditional() {
-    return sSDateOfAdditional;
+  @ApiModelProperty(example = "null", value = "dátum zistenia [persistentní položka]")
+  public DateTime getSSdateofadditional() {
+    return sSdateofadditional;
   }
 
-  public void setSSDateOfAdditional(DateTime sSDateOfAdditional) {
-    this.sSDateOfAdditional = sSDateOfAdditional;
+  public void setSSdateofadditional(DateTime sSdateofadditional) {
+    this.sSdateofadditional = sSdateofadditional;
   }
 
-  public Vatclosing sSVATPayorType(Integer sSVATPayorType) {
-    this.sSVATPayorType = sSVATPayorType;
+  public Vatclosing sSvatpayortype(Integer sSvatpayortype) {
+    this.sSvatpayortype = sSvatpayortype;
     return this;
   }
 
    /**
-   * Typ plátca [persistentní položka]
-   * @return sSVATPayorType
+   * typ plátca [persistentní položka]
+   * @return sSvatpayortype
   **/
-  @ApiModelProperty(example = "null", value = "Typ plátca [persistentní položka]")
-  public Integer getSSVATPayorType() {
-    return sSVATPayorType;
+  @ApiModelProperty(example = "null", value = "typ plátca [persistentní položka]")
+  public Integer getSSvatpayortype() {
+    return sSvatpayortype;
   }
 
-  public void setSSVATPayorType(Integer sSVATPayorType) {
-    this.sSVATPayorType = sSVATPayorType;
+  public void setSSvatpayortype(Integer sSvatpayortype) {
+    this.sSvatpayortype = sSvatpayortype;
   }
 
-  public Vatclosing sSNoTax(Boolean sSNoTax) {
-    this.sSNoTax = sSNoTax;
+  public Vatclosing sSnotax(Boolean sSnotax) {
+    this.sSnotax = sSnotax;
     return this;
   }
 
    /**
-   * Nevznikla daňová povinnosť [persistentní položka]
-   * @return sSNoTax
+   * nevznikla daňová povinnosť [persistentní položka]
+   * @return sSnotax
   **/
-  @ApiModelProperty(example = "null", value = "Nevznikla daňová povinnosť [persistentní položka]")
-  public Boolean getSSNoTax() {
-    return sSNoTax;
+  @ApiModelProperty(example = "null", value = "nevznikla daňová povinnosť [persistentní položka]")
+  public Boolean getSSnotax() {
+    return sSnotax;
   }
 
-  public void setSSNoTax(Boolean sSNoTax) {
-    this.sSNoTax = sSNoTax;
+  public void setSSnotax(Boolean sSnotax) {
+    this.sSnotax = sSnotax;
   }
 
-  public Vatclosing sSFinancialBureau(String sSFinancialBureau) {
-    this.sSFinancialBureau = sSFinancialBureau;
+  public Vatclosing sSfinancialbureau(String sSfinancialbureau) {
+    this.sSfinancialbureau = sSfinancialbureau;
     return this;
   }
 
    /**
-   * Daňový úrad [persistentní položka]
-   * @return sSFinancialBureau
+   * daňový úrad [persistentní položka]
+   * @return sSfinancialbureau
   **/
-  @ApiModelProperty(example = "null", value = "Daňový úrad [persistentní položka]")
-  public String getSSFinancialBureau() {
-    return sSFinancialBureau;
+  @ApiModelProperty(example = "null", value = "daňový úrad [persistentní položka]")
+  public String getSSfinancialbureau() {
+    return sSfinancialbureau;
   }
 
-  public void setSSFinancialBureau(String sSFinancialBureau) {
-    this.sSFinancialBureau = sSFinancialBureau;
+  public void setSSfinancialbureau(String sSfinancialbureau) {
+    this.sSfinancialbureau = sSfinancialbureau;
   }
 
-  public Vatclosing sSFirmEmail(String sSFirmEmail) {
-    this.sSFirmEmail = sSFirmEmail;
+  public Vatclosing sSfirmemail(String sSfirmemail) {
+    this.sSfirmemail = sSfirmemail;
     return this;
   }
 
    /**
-   * Email [persistentní položka]
-   * @return sSFirmEmail
+   * email [persistentní položka]
+   * @return sSfirmemail
   **/
-  @ApiModelProperty(example = "null", value = "Email [persistentní položka]")
-  public String getSSFirmEmail() {
-    return sSFirmEmail;
+  @ApiModelProperty(example = "null", value = "email [persistentní položka]")
+  public String getSSfirmemail() {
+    return sSfirmemail;
   }
 
-  public void setSSFirmEmail(String sSFirmEmail) {
-    this.sSFirmEmail = sSFirmEmail;
+  public void setSSfirmemail(String sSfirmemail) {
+    this.sSfirmemail = sSfirmemail;
   }
 
-  public Vatclosing sSFirmPhone(String sSFirmPhone) {
-    this.sSFirmPhone = sSFirmPhone;
+  public Vatclosing sSfirmphone(String sSfirmphone) {
+    this.sSfirmphone = sSfirmphone;
     return this;
   }
 
    /**
-   * Telefón [persistentní položka]
-   * @return sSFirmPhone
+   * telefón [persistentní položka]
+   * @return sSfirmphone
   **/
-  @ApiModelProperty(example = "null", value = "Telefón [persistentní položka]")
-  public String getSSFirmPhone() {
-    return sSFirmPhone;
+  @ApiModelProperty(example = "null", value = "telefón [persistentní položka]")
+  public String getSSfirmphone() {
+    return sSfirmphone;
   }
 
-  public void setSSFirmPhone(String sSFirmPhone) {
-    this.sSFirmPhone = sSFirmPhone;
+  public void setSSfirmphone(String sSfirmphone) {
+    this.sSfirmphone = sSfirmphone;
   }
 
-  public Vatclosing sFinancialBureau(String sFinancialBureau) {
-    this.sFinancialBureau = sFinancialBureau;
+  public Vatclosing sFinancialbureau(String sFinancialbureau) {
+    this.sFinancialbureau = sFinancialbureau;
     return this;
   }
 
    /**
-   * Fin.úřadu v, ve, pro [persistentní položka]
-   * @return sFinancialBureau
+   * fin.úřadu v, ve, pro [persistentní položka]
+   * @return sFinancialbureau
   **/
-  @ApiModelProperty(example = "null", value = "Fin.úřadu v, ve, pro [persistentní položka]")
-  public String getSFinancialBureau() {
-    return sFinancialBureau;
+  @ApiModelProperty(example = "null", value = "fin.úřadu v, ve, pro [persistentní položka]")
+  public String getSFinancialbureau() {
+    return sFinancialbureau;
   }
 
-  public void setSFinancialBureau(String sFinancialBureau) {
-    this.sFinancialBureau = sFinancialBureau;
+  public void setSFinancialbureau(String sFinancialbureau) {
+    this.sFinancialbureau = sFinancialbureau;
   }
 
-  public Vatclosing sNACECode(String sNACECode) {
-    this.sNACECode = sNACECode;
+  public Vatclosing sNacecode(String sNacecode) {
+    this.sNacecode = sNacecode;
     return this;
   }
 
    /**
-   * Číslo převaž. činnosti (NACE); ID objektu NACE kód [persistentní položka]
-   * @return sNACECode
+   * Číslo převaž. činnosti (nace); id objektu nace kód [persistentní položka]
+   * @return sNacecode
   **/
-  @ApiModelProperty(example = "null", value = "Číslo převaž. činnosti (NACE); ID objektu NACE kód [persistentní položka]")
-  public String getSNACECode() {
-    return sNACECode;
+  @ApiModelProperty(example = "null", value = "Číslo převaž. činnosti (nace); id objektu nace kód [persistentní položka]")
+  public String getSNacecode() {
+    return sNacecode;
   }
 
-  public void setSNACECode(String sNACECode) {
-    this.sNACECode = sNACECode;
+  public void setSNacecode(String sNacecode) {
+    this.sNacecode = sNacecode;
   }
 
-  public Vatclosing sReasonOfAdditive(String sReasonOfAdditive) {
-    this.sReasonOfAdditive = sReasonOfAdditive;
+  public Vatclosing sReasonofadditive(String sReasonofadditive) {
+    this.sReasonofadditive = sReasonofadditive;
     return this;
   }
 
    /**
-   * Důvod dodatečného přiznání [persistentní položka]
-   * @return sReasonOfAdditive
+   * důvod dodatečného přiznání [persistentní položka]
+   * @return sReasonofadditive
   **/
-  @ApiModelProperty(example = "null", value = "Důvod dodatečného přiznání [persistentní položka]")
-  public String getSReasonOfAdditive() {
-    return sReasonOfAdditive;
+  @ApiModelProperty(example = "null", value = "důvod dodatečného přiznání [persistentní položka]")
+  public String getSReasonofadditive() {
+    return sReasonofadditive;
   }
 
-  public void setSReasonOfAdditive(String sReasonOfAdditive) {
-    this.sReasonOfAdditive = sReasonOfAdditive;
+  public void setSReasonofadditive(String sReasonofadditive) {
+    this.sReasonofadditive = sReasonofadditive;
   }
 
-  public Vatclosing sFOSurnameA(String sFOSurnameA) {
-    this.sFOSurnameA = sFOSurnameA;
+  public Vatclosing sFosurnamea(String sFosurnamea) {
+    this.sFosurnamea = sFosurnamea;
     return this;
   }
 
    /**
-   * Fyzická osoba - příjmení [persistentní položka]
-   * @return sFOSurnameA
+   * fyzická osoba - příjmení [persistentní položka]
+   * @return sFosurnamea
   **/
-  @ApiModelProperty(example = "null", value = "Fyzická osoba - příjmení [persistentní položka]")
-  public String getSFOSurnameA() {
-    return sFOSurnameA;
+  @ApiModelProperty(example = "null", value = "fyzická osoba - příjmení [persistentní položka]")
+  public String getSFosurnamea() {
+    return sFosurnamea;
   }
 
-  public void setSFOSurnameA(String sFOSurnameA) {
-    this.sFOSurnameA = sFOSurnameA;
+  public void setSFosurnamea(String sFosurnamea) {
+    this.sFosurnamea = sFosurnamea;
   }
 
-  public Vatclosing sAuthPersonFirstName(String sAuthPersonFirstName) {
-    this.sAuthPersonFirstName = sAuthPersonFirstName;
+  public Vatclosing sAuthpersonFirstname(String sAuthpersonFirstname) {
+    this.sAuthpersonFirstname = sAuthpersonFirstname;
     return this;
   }
 
    /**
-   * Jméno(-a) FO opráv. k podp. [persistentní položka]
-   * @return sAuthPersonFirstName
+   * jméno(-a) fo opráv. k podp. [persistentní položka]
+   * @return sAuthpersonFirstname
   **/
-  @ApiModelProperty(example = "null", value = "Jméno(-a) FO opráv. k podp. [persistentní položka]")
-  public String getSAuthPersonFirstName() {
-    return sAuthPersonFirstName;
+  @ApiModelProperty(example = "null", value = "jméno(-a) fo opráv. k podp. [persistentní položka]")
+  public String getSAuthpersonFirstname() {
+    return sAuthpersonFirstname;
   }
 
-  public void setSAuthPersonFirstName(String sAuthPersonFirstName) {
-    this.sAuthPersonFirstName = sAuthPersonFirstName;
+  public void setSAuthpersonFirstname(String sAuthpersonFirstname) {
+    this.sAuthpersonFirstname = sAuthpersonFirstname;
   }
 
-  public Vatclosing sFinancialBureauCode(String sFinancialBureauCode) {
-    this.sFinancialBureauCode = sFinancialBureauCode;
+  public Vatclosing sFinancialbureaucode(String sFinancialbureaucode) {
+    this.sFinancialbureaucode = sFinancialbureaucode;
     return this;
   }
 
    /**
    * Číslo místně přísl. fin.úřadu [persistentní položka]
-   * @return sFinancialBureauCode
+   * @return sFinancialbureaucode
   **/
   @ApiModelProperty(example = "null", value = "Číslo místně přísl. fin.úřadu [persistentní položka]")
-  public String getSFinancialBureauCode() {
-    return sFinancialBureauCode;
+  public String getSFinancialbureaucode() {
+    return sFinancialbureaucode;
   }
 
-  public void setSFinancialBureauCode(String sFinancialBureauCode) {
-    this.sFinancialBureauCode = sFinancialBureauCode;
+  public void setSFinancialbureaucode(String sFinancialbureaucode) {
+    this.sFinancialbureaucode = sFinancialbureaucode;
   }
 
-  public Vatclosing sNumOfAttachments(Integer sNumOfAttachments) {
-    this.sNumOfAttachments = sNumOfAttachments;
+  public Vatclosing sNumofattachments(Integer sNumofattachments) {
+    this.sNumofattachments = sNumofattachments;
     return this;
   }
 
    /**
-   * Počet příloh [persistentní položka]
-   * @return sNumOfAttachments
+   * počet příloh [persistentní položka]
+   * @return sNumofattachments
   **/
-  @ApiModelProperty(example = "null", value = "Počet příloh [persistentní položka]")
-  public Integer getSNumOfAttachments() {
-    return sNumOfAttachments;
+  @ApiModelProperty(example = "null", value = "počet příloh [persistentní položka]")
+  public Integer getSNumofattachments() {
+    return sNumofattachments;
   }
 
-  public void setSNumOfAttachments(Integer sNumOfAttachments) {
-    this.sNumOfAttachments = sNumOfAttachments;
+  public void setSNumofattachments(Integer sNumofattachments) {
+    this.sNumofattachments = sNumofattachments;
   }
 
-  public Vatclosing sVATPayorType(Integer sVATPayorType) {
-    this.sVATPayorType = sVATPayorType;
+  public Vatclosing sVatpayortype(Integer sVatpayortype) {
+    this.sVatpayortype = sVatpayortype;
     return this;
   }
 
    /**
-   * Typ plátce [persistentní položka]
-   * @return sVATPayorType
+   * typ plátce [persistentní položka]
+   * @return sVatpayortype
   **/
-  @ApiModelProperty(example = "null", value = "Typ plátce [persistentní položka]")
-  public Integer getSVATPayorType() {
-    return sVATPayorType;
+  @ApiModelProperty(example = "null", value = "typ plátce [persistentní položka]")
+  public Integer getSVatpayortype() {
+    return sVatpayortype;
   }
 
-  public void setSVATPayorType(Integer sVATPayorType) {
-    this.sVATPayorType = sVATPayorType;
+  public void setSVatpayortype(Integer sVatpayortype) {
+    this.sVatpayortype = sVatpayortype;
   }
 
-  public Vatclosing sFOFirstNameA(String sFOFirstNameA) {
-    this.sFOFirstNameA = sFOFirstNameA;
+  public Vatclosing sFofirstnamea(String sFofirstnamea) {
+    this.sFofirstnamea = sFofirstnamea;
     return this;
   }
 
    /**
-   * Fyzická osoba - jméno [persistentní položka]
-   * @return sFOFirstNameA
+   * fyzická osoba - jméno [persistentní položka]
+   * @return sFofirstnamea
   **/
-  @ApiModelProperty(example = "null", value = "Fyzická osoba - jméno [persistentní položka]")
-  public String getSFOFirstNameA() {
-    return sFOFirstNameA;
+  @ApiModelProperty(example = "null", value = "fyzická osoba - jméno [persistentní položka]")
+  public String getSFofirstnamea() {
+    return sFofirstnamea;
   }
 
-  public void setSFOFirstNameA(String sFOFirstNameA) {
-    this.sFOFirstNameA = sFOFirstNameA;
+  public void setSFofirstnamea(String sFofirstnamea) {
+    this.sFofirstnamea = sFofirstnamea;
   }
 
-  public Vatclosing sAuthPersonSurname(String sAuthPersonSurname) {
-    this.sAuthPersonSurname = sAuthPersonSurname;
+  public Vatclosing sAuthpersonSurname(String sAuthpersonSurname) {
+    this.sAuthpersonSurname = sAuthpersonSurname;
     return this;
   }
 
    /**
-   * Příjmení FO opráv. k podp. [persistentní položka]
-   * @return sAuthPersonSurname
+   * příjmení fo opráv. k podp. [persistentní položka]
+   * @return sAuthpersonSurname
   **/
-  @ApiModelProperty(example = "null", value = "Příjmení FO opráv. k podp. [persistentní položka]")
-  public String getSAuthPersonSurname() {
-    return sAuthPersonSurname;
+  @ApiModelProperty(example = "null", value = "příjmení fo opráv. k podp. [persistentní položka]")
+  public String getSAuthpersonSurname() {
+    return sAuthpersonSurname;
   }
 
-  public void setSAuthPersonSurname(String sAuthPersonSurname) {
-    this.sAuthPersonSurname = sAuthPersonSurname;
+  public void setSAuthpersonSurname(String sAuthpersonSurname) {
+    this.sAuthpersonSurname = sAuthpersonSurname;
   }
 
-  public Vatclosing sAdviserCode(Integer sAdviserCode) {
-    this.sAdviserCode = sAdviserCode;
+  public Vatclosing sAdvisercode(Integer sAdvisercode) {
+    this.sAdvisercode = sAdvisercode;
     return this;
   }
 
    /**
-   * Volba typu zástupce [persistentní položka]
-   * @return sAdviserCode
+   * volba typu zástupce [persistentní položka]
+   * @return sAdvisercode
   **/
-  @ApiModelProperty(example = "null", value = "Volba typu zástupce [persistentní položka]")
-  public Integer getSAdviserCode() {
-    return sAdviserCode;
+  @ApiModelProperty(example = "null", value = "volba typu zástupce [persistentní položka]")
+  public Integer getSAdvisercode() {
+    return sAdvisercode;
   }
 
-  public void setSAdviserCode(Integer sAdviserCode) {
-    this.sAdviserCode = sAdviserCode;
+  public void setSAdvisercode(Integer sAdvisercode) {
+    this.sAdvisercode = sAdvisercode;
   }
 
-  public Vatclosing sRegionalOffice(String sRegionalOffice) {
-    this.sRegionalOffice = sRegionalOffice;
+  public Vatclosing sRegionaloffice(String sRegionaloffice) {
+    this.sRegionaloffice = sRegionaloffice;
     return this;
   }
 
    /**
    * Územní pracoviště v, ve, pro [persistentní položka]
-   * @return sRegionalOffice
+   * @return sRegionaloffice
   **/
   @ApiModelProperty(example = "null", value = "Územní pracoviště v, ve, pro [persistentní položka]")
-  public String getSRegionalOffice() {
-    return sRegionalOffice;
+  public String getSRegionaloffice() {
+    return sRegionaloffice;
   }
 
-  public void setSRegionalOffice(String sRegionalOffice) {
-    this.sRegionalOffice = sRegionalOffice;
+  public void setSRegionaloffice(String sRegionaloffice) {
+    this.sRegionaloffice = sRegionaloffice;
   }
 
-  public Vatclosing sNumOfSheets(Integer sNumOfSheets) {
-    this.sNumOfSheets = sNumOfSheets;
+  public Vatclosing sNumofsheets(Integer sNumofsheets) {
+    this.sNumofsheets = sNumofsheets;
     return this;
   }
 
    /**
-   * Počet listů [persistentní položka]
-   * @return sNumOfSheets
+   * počet listů [persistentní položka]
+   * @return sNumofsheets
   **/
-  @ApiModelProperty(example = "null", value = "Počet listů [persistentní položka]")
-  public Integer getSNumOfSheets() {
-    return sNumOfSheets;
+  @ApiModelProperty(example = "null", value = "počet listů [persistentní položka]")
+  public Integer getSNumofsheets() {
+    return sNumofsheets;
   }
 
-  public void setSNumOfSheets(Integer sNumOfSheets) {
-    this.sNumOfSheets = sNumOfSheets;
+  public void setSNumofsheets(Integer sNumofsheets) {
+    this.sNumofsheets = sNumofsheets;
   }
 
-  public Vatclosing sNoItemsForCSection(Boolean sNoItemsForCSection) {
-    this.sNoItemsForCSection = sNoItemsForCSection;
+  public Vatclosing sNoitemsforcsection(Boolean sNoitemsforcsection) {
+    this.sNoitemsforcsection = sNoitemsforcsection;
     return this;
   }
 
    /**
-   * Pro C. ODDÍL neexist.údaje [persistentní položka]
-   * @return sNoItemsForCSection
+   * pro c. oddÍl neexist.údaje [persistentní položka]
+   * @return sNoitemsforcsection
   **/
-  @ApiModelProperty(example = "null", value = "Pro C. ODDÍL neexist.údaje [persistentní položka]")
-  public Boolean getSNoItemsForCSection() {
-    return sNoItemsForCSection;
+  @ApiModelProperty(example = "null", value = "pro c. oddÍl neexist.údaje [persistentní položka]")
+  public Boolean getSNoitemsforcsection() {
+    return sNoitemsforcsection;
   }
 
-  public void setSNoItemsForCSection(Boolean sNoItemsForCSection) {
-    this.sNoItemsForCSection = sNoItemsForCSection;
+  public void setSNoitemsforcsection(Boolean sNoitemsforcsection) {
+    this.sNoitemsforcsection = sNoitemsforcsection;
   }
 
-  public Vatclosing sFOTitleA(String sFOTitleA) {
-    this.sFOTitleA = sFOTitleA;
+  public Vatclosing sFotitlea(String sFotitlea) {
+    this.sFotitlea = sFotitlea;
     return this;
   }
 
    /**
-   * Fyzická osoba - titul [persistentní položka]
-   * @return sFOTitleA
+   * fyzická osoba - titul [persistentní položka]
+   * @return sFotitlea
   **/
-  @ApiModelProperty(example = "null", value = "Fyzická osoba - titul [persistentní položka]")
-  public String getSFOTitleA() {
-    return sFOTitleA;
+  @ApiModelProperty(example = "null", value = "fyzická osoba - titul [persistentní položka]")
+  public String getSFotitlea() {
+    return sFotitlea;
   }
 
-  public void setSFOTitleA(String sFOTitleA) {
-    this.sFOTitleA = sFOTitleA;
+  public void setSFotitlea(String sFotitlea) {
+    this.sFotitlea = sFotitlea;
   }
 
-  public Vatclosing sAssemblyPerson(String sAssemblyPerson) {
-    this.sAssemblyPerson = sAssemblyPerson;
+  public Vatclosing sAssemblyperson(String sAssemblyperson) {
+    this.sAssemblyperson = sAssemblyperson;
     return this;
   }
 
    /**
-   * Přiznání sestavil [persistentní položka]
-   * @return sAssemblyPerson
+   * přiznání sestavil [persistentní položka]
+   * @return sAssemblyperson
   **/
-  @ApiModelProperty(example = "null", value = "Přiznání sestavil [persistentní položka]")
-  public String getSAssemblyPerson() {
-    return sAssemblyPerson;
+  @ApiModelProperty(example = "null", value = "přiznání sestavil [persistentní položka]")
+  public String getSAssemblyperson() {
+    return sAssemblyperson;
   }
 
-  public void setSAssemblyPerson(String sAssemblyPerson) {
-    this.sAssemblyPerson = sAssemblyPerson;
+  public void setSAssemblyperson(String sAssemblyperson) {
+    this.sAssemblyperson = sAssemblyperson;
   }
 
-  public Vatclosing sAdviserType(Integer sAdviserType) {
-    this.sAdviserType = sAdviserType;
+  public Vatclosing sAdvisertype(Integer sAdvisertype) {
+    this.sAdvisertype = sAdvisertype;
     return this;
   }
 
    /**
-   * Typ zástupce [persistentní položka]
-   * @return sAdviserType
+   * typ zástupce [persistentní položka]
+   * @return sAdvisertype
   **/
-  @ApiModelProperty(example = "null", value = "Typ zástupce [persistentní položka]")
-  public Integer getSAdviserType() {
-    return sAdviserType;
+  @ApiModelProperty(example = "null", value = "typ zástupce [persistentní položka]")
+  public Integer getSAdvisertype() {
+    return sAdvisertype;
   }
 
-  public void setSAdviserType(Integer sAdviserType) {
-    this.sAdviserType = sAdviserType;
+  public void setSAdvisertype(Integer sAdvisertype) {
+    this.sAdvisertype = sAdvisertype;
   }
 
-  public Vatclosing sAuthPersonStatus(String sAuthPersonStatus) {
-    this.sAuthPersonStatus = sAuthPersonStatus;
+  public Vatclosing sAuthpersonStatus(String sAuthpersonStatus) {
+    this.sAuthpersonStatus = sAuthpersonStatus;
     return this;
   }
 
    /**
-   * Vztah k práv. osobě [persistentní položka]
-   * @return sAuthPersonStatus
+   * vztah k práv. osobě [persistentní položka]
+   * @return sAuthpersonStatus
   **/
-  @ApiModelProperty(example = "null", value = "Vztah k práv. osobě [persistentní položka]")
-  public String getSAuthPersonStatus() {
-    return sAuthPersonStatus;
+  @ApiModelProperty(example = "null", value = "vztah k práv. osobě [persistentní položka]")
+  public String getSAuthpersonStatus() {
+    return sAuthpersonStatus;
   }
 
-  public void setSAuthPersonStatus(String sAuthPersonStatus) {
-    this.sAuthPersonStatus = sAuthPersonStatus;
+  public void setSAuthpersonStatus(String sAuthpersonStatus) {
+    this.sAuthpersonStatus = sAuthpersonStatus;
   }
 
-  public Vatclosing sRegionalOfficeCode(String sRegionalOfficeCode) {
-    this.sRegionalOfficeCode = sRegionalOfficeCode;
+  public Vatclosing sRegionalofficecode(String sRegionalofficecode) {
+    this.sRegionalofficecode = sRegionalofficecode;
     return this;
   }
 
    /**
    * Číslo územního pracoviště [persistentní položka]
-   * @return sRegionalOfficeCode
+   * @return sRegionalofficecode
   **/
   @ApiModelProperty(example = "null", value = "Číslo územního pracoviště [persistentní položka]")
-  public String getSRegionalOfficeCode() {
-    return sRegionalOfficeCode;
+  public String getSRegionalofficecode() {
+    return sRegionalofficecode;
   }
 
-  public void setSRegionalOfficeCode(String sRegionalOfficeCode) {
-    this.sRegionalOfficeCode = sRegionalOfficeCode;
+  public void setSRegionalofficecode(String sRegionalofficecode) {
+    this.sRegionalofficecode = sRegionalofficecode;
   }
 
-  public Vatclosing sNextYearTaxPeriodCode(Integer sNextYearTaxPeriodCode) {
-    this.sNextYearTaxPeriodCode = sNextYearTaxPeriodCode;
+  public Vatclosing sNextyeartaxperiodcode(Integer sNextyeartaxperiodcode) {
+    this.sNextyeartaxperiodcode = sNextyeartaxperiodcode;
     return this;
   }
 
    /**
-   * Kód zdaň.období násl. roku [persistentní položka]
-   * @return sNextYearTaxPeriodCode
+   * kód zdaň.období násl. roku [persistentní položka]
+   * @return sNextyeartaxperiodcode
   **/
-  @ApiModelProperty(example = "null", value = "Kód zdaň.období násl. roku [persistentní položka]")
-  public Integer getSNextYearTaxPeriodCode() {
-    return sNextYearTaxPeriodCode;
+  @ApiModelProperty(example = "null", value = "kód zdaň.období násl. roku [persistentní položka]")
+  public Integer getSNextyeartaxperiodcode() {
+    return sNextyeartaxperiodcode;
   }
 
-  public void setSNextYearTaxPeriodCode(Integer sNextYearTaxPeriodCode) {
-    this.sNextYearTaxPeriodCode = sNextYearTaxPeriodCode;
+  public void setSNextyeartaxperiodcode(Integer sNextyeartaxperiodcode) {
+    this.sNextyeartaxperiodcode = sNextyeartaxperiodcode;
   }
 
-  public Vatclosing sIdentNumber(String sIdentNumber) {
-    this.sIdentNumber = sIdentNumber;
+  public Vatclosing sIdentnumber(String sIdentnumber) {
+    this.sIdentnumber = sIdentnumber;
     return this;
   }
 
    /**
-   * Rodné číslo [persistentní položka]
-   * @return sIdentNumber
+   * rodné číslo [persistentní položka]
+   * @return sIdentnumber
   **/
-  @ApiModelProperty(example = "null", value = "Rodné číslo [persistentní položka]")
-  public String getSIdentNumber() {
-    return sIdentNumber;
+  @ApiModelProperty(example = "null", value = "rodné číslo [persistentní položka]")
+  public String getSIdentnumber() {
+    return sIdentnumber;
   }
 
-  public void setSIdentNumber(String sIdentNumber) {
-    this.sIdentNumber = sIdentNumber;
+  public void setSIdentnumber(String sIdentnumber) {
+    this.sIdentnumber = sIdentnumber;
   }
 
-  public Vatclosing sAssemblyTelephone(String sAssemblyTelephone) {
-    this.sAssemblyTelephone = sAssemblyTelephone;
+  public Vatclosing sAssemblytelephone(String sAssemblytelephone) {
+    this.sAssemblytelephone = sAssemblytelephone;
     return this;
   }
 
    /**
-   * Telefon [persistentní položka]
-   * @return sAssemblyTelephone
+   * telefon [persistentní položka]
+   * @return sAssemblytelephone
   **/
-  @ApiModelProperty(example = "null", value = "Telefon [persistentní položka]")
-  public String getSAssemblyTelephone() {
-    return sAssemblyTelephone;
+  @ApiModelProperty(example = "null", value = "telefon [persistentní položka]")
+  public String getSAssemblytelephone() {
+    return sAssemblytelephone;
   }
 
-  public void setSAssemblyTelephone(String sAssemblyTelephone) {
-    this.sAssemblyTelephone = sAssemblyTelephone;
+  public void setSAssemblytelephone(String sAssemblytelephone) {
+    this.sAssemblytelephone = sAssemblytelephone;
   }
 
-  public Vatclosing sAdviserFirstName(String sAdviserFirstName) {
-    this.sAdviserFirstName = sAdviserFirstName;
+  public Vatclosing sAdviserfirstname(String sAdviserfirstname) {
+    this.sAdviserfirstname = sAdviserfirstname;
     return this;
   }
 
    /**
-   * Jméno zástupce [persistentní položka]
-   * @return sAdviserFirstName
+   * jméno zástupce [persistentní položka]
+   * @return sAdviserfirstname
   **/
-  @ApiModelProperty(example = "null", value = "Jméno zástupce [persistentní položka]")
-  public String getSAdviserFirstName() {
-    return sAdviserFirstName;
+  @ApiModelProperty(example = "null", value = "jméno zástupce [persistentní položka]")
+  public String getSAdviserfirstname() {
+    return sAdviserfirstname;
   }
 
-  public void setSAdviserFirstName(String sAdviserFirstName) {
-    this.sAdviserFirstName = sAdviserFirstName;
+  public void setSAdviserfirstname(String sAdviserfirstname) {
+    this.sAdviserfirstname = sAdviserfirstname;
   }
 
-  public Vatclosing sCompanyType(Integer sCompanyType) {
-    this.sCompanyType = sCompanyType;
+  public Vatclosing sCompanytype(Integer sCompanytype) {
+    this.sCompanytype = sCompanytype;
     return this;
   }
 
    /**
-   * Právní forma [persistentní položka]
-   * @return sCompanyType
+   * právní forma [persistentní položka]
+   * @return sCompanytype
   **/
-  @ApiModelProperty(example = "null", value = "Právní forma [persistentní položka]")
-  public Integer getSCompanyType() {
-    return sCompanyType;
+  @ApiModelProperty(example = "null", value = "právní forma [persistentní položka]")
+  public Integer getSCompanytype() {
+    return sCompanytype;
   }
 
-  public void setSCompanyType(Integer sCompanyType) {
-    this.sCompanyType = sCompanyType;
+  public void setSCompanytype(Integer sCompanytype) {
+    this.sCompanytype = sCompanytype;
   }
 
-  public Vatclosing sInsolventPeriod(Boolean sInsolventPeriod) {
-    this.sInsolventPeriod = sInsolventPeriod;
+  public Vatclosing sInsolventperiod(Boolean sInsolventperiod) {
+    this.sInsolventperiod = sInsolventperiod;
     return this;
   }
 
    /**
-   * Zaháj./ukonč. insolvent.řízení [persistentní položka]
-   * @return sInsolventPeriod
+   * zaháj./ukonč. insolvent.řízení [persistentní položka]
+   * @return sInsolventperiod
   **/
-  @ApiModelProperty(example = "null", value = "Zaháj./ukonč. insolvent.řízení [persistentní položka]")
-  public Boolean getSInsolventPeriod() {
-    return sInsolventPeriod;
+  @ApiModelProperty(example = "null", value = "zaháj./ukonč. insolvent.řízení [persistentní položka]")
+  public Boolean getSInsolventperiod() {
+    return sInsolventperiod;
   }
 
-  public void setSInsolventPeriod(Boolean sInsolventPeriod) {
-    this.sInsolventPeriod = sInsolventPeriod;
+  public void setSInsolventperiod(Boolean sInsolventperiod) {
+    this.sInsolventperiod = sInsolventperiod;
   }
 
-  public Vatclosing sAdviserSurname(String sAdviserSurname) {
-    this.sAdviserSurname = sAdviserSurname;
+  public Vatclosing sAdvisersurname(String sAdvisersurname) {
+    this.sAdvisersurname = sAdvisersurname;
     return this;
   }
 
    /**
-   * Příjmení zástupce [persistentní položka]
-   * @return sAdviserSurname
+   * příjmení zástupce [persistentní položka]
+   * @return sAdvisersurname
   **/
-  @ApiModelProperty(example = "null", value = "Příjmení zástupce [persistentní položka]")
-  public String getSAdviserSurname() {
-    return sAdviserSurname;
+  @ApiModelProperty(example = "null", value = "příjmení zástupce [persistentní položka]")
+  public String getSAdvisersurname() {
+    return sAdvisersurname;
   }
 
-  public void setSAdviserSurname(String sAdviserSurname) {
-    this.sAdviserSurname = sAdviserSurname;
+  public void setSAdvisersurname(String sAdvisersurname) {
+    this.sAdvisersurname = sAdvisersurname;
   }
 
-  public Vatclosing sInsolventPeriodFrom(DateTime sInsolventPeriodFrom) {
-    this.sInsolventPeriodFrom = sInsolventPeriodFrom;
+  public Vatclosing sInsolventperiodfrom(DateTime sInsolventperiodfrom) {
+    this.sInsolventperiodfrom = sInsolventperiodfrom;
     return this;
   }
 
    /**
-   * Datum zahájení ins.řízení [persistentní položka]
-   * @return sInsolventPeriodFrom
+   * datum zahájení ins.řízení [persistentní položka]
+   * @return sInsolventperiodfrom
   **/
-  @ApiModelProperty(example = "null", value = "Datum zahájení ins.řízení [persistentní položka]")
-  public DateTime getSInsolventPeriodFrom() {
-    return sInsolventPeriodFrom;
+  @ApiModelProperty(example = "null", value = "datum zahájení ins.řízení [persistentní položka]")
+  public DateTime getSInsolventperiodfrom() {
+    return sInsolventperiodfrom;
   }
 
-  public void setSInsolventPeriodFrom(DateTime sInsolventPeriodFrom) {
-    this.sInsolventPeriodFrom = sInsolventPeriodFrom;
+  public void setSInsolventperiodfrom(DateTime sInsolventperiodfrom) {
+    this.sInsolventperiodfrom = sInsolventperiodfrom;
   }
 
-  public Vatclosing sAdviserTitle(String sAdviserTitle) {
-    this.sAdviserTitle = sAdviserTitle;
+  public Vatclosing sAdvisertitle(String sAdvisertitle) {
+    this.sAdvisertitle = sAdvisertitle;
     return this;
   }
 
    /**
-   * Název právnické osoby [persistentní položka]
-   * @return sAdviserTitle
+   * název právnické osoby [persistentní položka]
+   * @return sAdvisertitle
   **/
-  @ApiModelProperty(example = "null", value = "Název právnické osoby [persistentní položka]")
-  public String getSAdviserTitle() {
-    return sAdviserTitle;
+  @ApiModelProperty(example = "null", value = "název právnické osoby [persistentní položka]")
+  public String getSAdvisertitle() {
+    return sAdvisertitle;
   }
 
-  public void setSAdviserTitle(String sAdviserTitle) {
-    this.sAdviserTitle = sAdviserTitle;
+  public void setSAdvisertitle(String sAdvisertitle) {
+    this.sAdvisertitle = sAdvisertitle;
   }
 
-  public Vatclosing sInsolventPeriodTo(DateTime sInsolventPeriodTo) {
-    this.sInsolventPeriodTo = sInsolventPeriodTo;
+  public Vatclosing sInsolventperiodto(DateTime sInsolventperiodto) {
+    this.sInsolventperiodto = sInsolventperiodto;
     return this;
   }
 
    /**
-   * Datum ukonč. ins. řízení [persistentní položka]
-   * @return sInsolventPeriodTo
+   * datum ukonč. ins. řízení [persistentní položka]
+   * @return sInsolventperiodto
   **/
-  @ApiModelProperty(example = "null", value = "Datum ukonč. ins. řízení [persistentní položka]")
-  public DateTime getSInsolventPeriodTo() {
-    return sInsolventPeriodTo;
+  @ApiModelProperty(example = "null", value = "datum ukonč. ins. řízení [persistentní položka]")
+  public DateTime getSInsolventperiodto() {
+    return sInsolventperiodto;
   }
 
-  public void setSInsolventPeriodTo(DateTime sInsolventPeriodTo) {
-    this.sInsolventPeriodTo = sInsolventPeriodTo;
+  public void setSInsolventperiodto(DateTime sInsolventperiodto) {
+    this.sInsolventperiodto = sInsolventperiodto;
   }
 
-  public Vatclosing sAdviserBirthDate(DateTime sAdviserBirthDate) {
-    this.sAdviserBirthDate = sAdviserBirthDate;
+  public Vatclosing sAdviserbirthdate(DateTime sAdviserbirthdate) {
+    this.sAdviserbirthdate = sAdviserbirthdate;
     return this;
   }
 
    /**
-   * Datum narození zástupce [persistentní položka]
-   * @return sAdviserBirthDate
+   * datum narození zástupce [persistentní položka]
+   * @return sAdviserbirthdate
   **/
-  @ApiModelProperty(example = "null", value = "Datum narození zástupce [persistentní položka]")
-  public DateTime getSAdviserBirthDate() {
-    return sAdviserBirthDate;
+  @ApiModelProperty(example = "null", value = "datum narození zástupce [persistentní položka]")
+  public DateTime getSAdviserbirthdate() {
+    return sAdviserbirthdate;
   }
 
-  public void setSAdviserBirthDate(DateTime sAdviserBirthDate) {
-    this.sAdviserBirthDate = sAdviserBirthDate;
+  public void setSAdviserbirthdate(DateTime sAdviserbirthdate) {
+    this.sAdviserbirthdate = sAdviserbirthdate;
   }
 
-  public Vatclosing sAdviserEvNum(String sAdviserEvNum) {
-    this.sAdviserEvNum = sAdviserEvNum;
+  public Vatclosing sAdviserevnum(String sAdviserevnum) {
+    this.sAdviserevnum = sAdviserevnum;
     return this;
   }
 
    /**
-   * Evid.číslo osvědčení daň. por. [persistentní položka]
-   * @return sAdviserEvNum
+   * evid.číslo osvědčení daň. por. [persistentní položka]
+   * @return sAdviserevnum
   **/
-  @ApiModelProperty(example = "null", value = "Evid.číslo osvědčení daň. por. [persistentní položka]")
-  public String getSAdviserEvNum() {
-    return sAdviserEvNum;
+  @ApiModelProperty(example = "null", value = "evid.číslo osvědčení daň. por. [persistentní položka]")
+  public String getSAdviserevnum() {
+    return sAdviserevnum;
   }
 
-  public void setSAdviserEvNum(String sAdviserEvNum) {
-    this.sAdviserEvNum = sAdviserEvNum;
+  public void setSAdviserevnum(String sAdviserevnum) {
+    this.sAdviserevnum = sAdviserevnum;
   }
 
-  public Vatclosing sAdviserIC(String sAdviserIC) {
-    this.sAdviserIC = sAdviserIC;
+  public Vatclosing sAdviseric(String sAdviseric) {
+    this.sAdviseric = sAdviseric;
     return this;
   }
 
    /**
-   * IČ právnické osoby [persistentní položka]
-   * @return sAdviserIC
+   * iČ právnické osoby [persistentní položka]
+   * @return sAdviseric
   **/
-  @ApiModelProperty(example = "null", value = "IČ právnické osoby [persistentní položka]")
-  public String getSAdviserIC() {
-    return sAdviserIC;
+  @ApiModelProperty(example = "null", value = "iČ právnické osoby [persistentní položka]")
+  public String getSAdviseric() {
+    return sAdviseric;
   }
 
-  public void setSAdviserIC(String sAdviserIC) {
-    this.sAdviserIC = sAdviserIC;
+  public void setSAdviseric(String sAdviseric) {
+    this.sAdviseric = sAdviseric;
   }
 
-  public Vatclosing sAssemblyEmail(String sAssemblyEmail) {
-    this.sAssemblyEmail = sAssemblyEmail;
+  public Vatclosing sAssemblyemail(String sAssemblyemail) {
+    this.sAssemblyemail = sAssemblyemail;
     return this;
   }
 
    /**
-   * Email [persistentní položka]
-   * @return sAssemblyEmail
+   * email [persistentní položka]
+   * @return sAssemblyemail
   **/
-  @ApiModelProperty(example = "null", value = "Email [persistentní položka]")
-  public String getSAssemblyEmail() {
-    return sAssemblyEmail;
+  @ApiModelProperty(example = "null", value = "email [persistentní položka]")
+  public String getSAssemblyemail() {
+    return sAssemblyemail;
   }
 
-  public void setSAssemblyEmail(String sAssemblyEmail) {
-    this.sAssemblyEmail = sAssemblyEmail;
+  public void setSAssemblyemail(String sAssemblyemail) {
+    this.sAssemblyemail = sAssemblyemail;
   }
 
-  public Vatclosing sAssemblyDate(DateTime sAssemblyDate) {
-    this.sAssemblyDate = sAssemblyDate;
+  public Vatclosing sAssemblydate(DateTime sAssemblydate) {
+    this.sAssemblydate = sAssemblydate;
     return this;
   }
 
    /**
-   * Datum přiznání [persistentní položka]
-   * @return sAssemblyDate
+   * datum přiznání [persistentní položka]
+   * @return sAssemblydate
   **/
-  @ApiModelProperty(example = "null", value = "Datum přiznání [persistentní položka]")
-  public DateTime getSAssemblyDate() {
-    return sAssemblyDate;
+  @ApiModelProperty(example = "null", value = "datum přiznání [persistentní položka]")
+  public DateTime getSAssemblydate() {
+    return sAssemblydate;
   }
 
-  public void setSAssemblyDate(DateTime sAssemblyDate) {
-    this.sAssemblyDate = sAssemblyDate;
+  public void setSAssemblydate(DateTime sAssemblydate) {
+    this.sAssemblydate = sAssemblydate;
   }
 
-  public Vatclosing sDateOfAdditive(DateTime sDateOfAdditive) {
-    this.sDateOfAdditive = sDateOfAdditive;
+  public Vatclosing sDateofadditive(DateTime sDateofadditive) {
+    this.sDateofadditive = sDateofadditive;
     return this;
   }
 
    /**
-   * Důvody pro DDP zjištěny dne [persistentní položka]
-   * @return sDateOfAdditive
+   * důvody pro ddp zjištěny dne [persistentní položka]
+   * @return sDateofadditive
   **/
-  @ApiModelProperty(example = "null", value = "Důvody pro DDP zjištěny dne [persistentní položka]")
-  public DateTime getSDateOfAdditive() {
-    return sDateOfAdditive;
+  @ApiModelProperty(example = "null", value = "důvody pro ddp zjištěny dne [persistentní položka]")
+  public DateTime getSDateofadditive() {
+    return sDateofadditive;
   }
 
-  public void setSDateOfAdditive(DateTime sDateOfAdditive) {
-    this.sDateOfAdditive = sDateOfAdditive;
+  public void setSDateofadditive(DateTime sDateofadditive) {
+    this.sDateofadditive = sDateofadditive;
   }
 
-  public Vatclosing sNoTax(Boolean sNoTax) {
-    this.sNoTax = sNoTax;
+  public Vatclosing sNotax(Boolean sNotax) {
+    this.sNotax = sNotax;
     return this;
   }
 
    /**
-   * Nevznikla daňová povinnost [persistentní položka]
-   * @return sNoTax
+   * nevznikla daňová povinnost [persistentní položka]
+   * @return sNotax
   **/
-  @ApiModelProperty(example = "null", value = "Nevznikla daňová povinnost [persistentní položka]")
-  public Boolean getSNoTax() {
-    return sNoTax;
+  @ApiModelProperty(example = "null", value = "nevznikla daňová povinnost [persistentní položka]")
+  public Boolean getSNotax() {
+    return sNotax;
   }
 
-  public void setSNoTax(Boolean sNoTax) {
-    this.sNoTax = sNoTax;
+  public void setSNotax(Boolean sNotax) {
+    this.sNotax = sNotax;
   }
 
-  public Vatclosing S_IBAN(String S_IBAN) {
-    this.S_IBAN = S_IBAN;
+  public Vatclosing sIban(String sIban) {
+    this.sIban = sIban;
     return this;
   }
 
    /**
-   * IBAN [persistentní položka]
-   * @return S_IBAN
+   * iban [persistentní položka]
+   * @return sIban
   **/
-  @ApiModelProperty(example = "null", value = "IBAN [persistentní položka]")
-  public String getSIBAN() {
-    return S_IBAN;
+  @ApiModelProperty(example = "null", value = "iban [persistentní položka]")
+  public String getSIban() {
+    return sIban;
   }
 
-  public void setSIBAN(String S_IBAN) {
-    this.S_IBAN = S_IBAN;
+  public void setSIban(String sIban) {
+    this.sIban = sIban;
   }
 
-  public Vatclosing S_BIC(String S_BIC) {
-    this.S_BIC = S_BIC;
+  public Vatclosing sBic(String sBic) {
+    this.sBic = sBic;
     return this;
   }
 
    /**
-   * BIC [persistentní položka]
-   * @return S_BIC
+   * bic [persistentní položka]
+   * @return sBic
   **/
-  @ApiModelProperty(example = "null", value = "BIC [persistentní položka]")
-  public String getSBIC() {
-    return S_BIC;
+  @ApiModelProperty(example = "null", value = "bic [persistentní položka]")
+  public String getSBic() {
+    return sBic;
   }
 
-  public void setSBIC(String S_BIC) {
-    this.S_BIC = S_BIC;
+  public void setSBic(String sBic) {
+    this.sBic = sBic;
   }
 
-  public Vatclosing sMOSSRefNumber(String sMOSSRefNumber) {
-    this.sMOSSRefNumber = sMOSSRefNumber;
+  public Vatclosing sMossrefnumber(String sMossrefnumber) {
+    this.sMossrefnumber = sMossrefnumber;
     return this;
   }
 
    /**
-   * Referenční číslo přiznání [persistentní položka]
-   * @return sMOSSRefNumber
+   * referenční číslo přiznání [persistentní položka]
+   * @return sMossrefnumber
   **/
-  @ApiModelProperty(example = "null", value = "Referenční číslo přiznání [persistentní položka]")
-  public String getSMOSSRefNumber() {
-    return sMOSSRefNumber;
+  @ApiModelProperty(example = "null", value = "referenční číslo přiznání [persistentní položka]")
+  public String getSMossrefnumber() {
+    return sMossrefnumber;
   }
 
-  public void setSMOSSRefNumber(String sMOSSRefNumber) {
-    this.sMOSSRefNumber = sMOSSRefNumber;
+  public void setSMossrefnumber(String sMossrefnumber) {
+    this.sMossrefnumber = sMossrefnumber;
   }
 
-  public Vatclosing sMOSSAccountName(String sMOSSAccountName) {
-    this.sMOSSAccountName = sMOSSAccountName;
+  public Vatclosing sMossaccountname(String sMossaccountname) {
+    this.sMossaccountname = sMossaccountname;
     return this;
   }
 
    /**
-   * Jméno majitele bankovního účtu [persistentní položka]
-   * @return sMOSSAccountName
+   * jméno majitele bankovního účtu [persistentní položka]
+   * @return sMossaccountname
   **/
-  @ApiModelProperty(example = "null", value = "Jméno majitele bankovního účtu [persistentní položka]")
-  public String getSMOSSAccountName() {
-    return sMOSSAccountName;
+  @ApiModelProperty(example = "null", value = "jméno majitele bankovního účtu [persistentní položka]")
+  public String getSMossaccountname() {
+    return sMossaccountname;
   }
 
-  public void setSMOSSAccountName(String sMOSSAccountName) {
-    this.sMOSSAccountName = sMOSSAccountName;
+  public void setSMossaccountname(String sMossaccountname) {
+    this.sMossaccountname = sMossaccountname;
   }
 
-  public Vatclosing sKHDPHAppealRefNumber(String sKHDPHAppealRefNumber) {
-    this.sKHDPHAppealRefNumber = sKHDPHAppealRefNumber;
+  public Vatclosing sKhdphAppealrefnumber(String sKhdphAppealrefnumber) {
+    this.sKhdphAppealrefnumber = sKhdphAppealrefnumber;
     return this;
   }
 
    /**
    * Číslo jednací výzvy: [persistentní položka]
-   * @return sKHDPHAppealRefNumber
+   * @return sKhdphAppealrefnumber
   **/
   @ApiModelProperty(example = "null", value = "Číslo jednací výzvy: [persistentní položka]")
-  public String getSKHDPHAppealRefNumber() {
-    return sKHDPHAppealRefNumber;
+  public String getSKhdphAppealrefnumber() {
+    return sKhdphAppealrefnumber;
   }
 
-  public void setSKHDPHAppealRefNumber(String sKHDPHAppealRefNumber) {
-    this.sKHDPHAppealRefNumber = sKHDPHAppealRefNumber;
+  public void setSKhdphAppealrefnumber(String sKhdphAppealrefnumber) {
+    this.sKhdphAppealrefnumber = sKhdphAppealrefnumber;
   }
 
-  public Vatclosing sKHDPHAppealReply(Integer sKHDPHAppealReply) {
-    this.sKHDPHAppealReply = sKHDPHAppealReply;
+  public Vatclosing sKhdphAppealreply(Integer sKhdphAppealreply) {
+    this.sKhdphAppealreply = sKhdphAppealreply;
     return this;
   }
 
    /**
-   * Rychlá odpověď na výzvu: [persistentní položka]
-   * @return sKHDPHAppealReply
+   * rychlá odpověď na výzvu: [persistentní položka]
+   * @return sKhdphAppealreply
   **/
-  @ApiModelProperty(example = "null", value = "Rychlá odpověď na výzvu: [persistentní položka]")
-  public Integer getSKHDPHAppealReply() {
-    return sKHDPHAppealReply;
+  @ApiModelProperty(example = "null", value = "rychlá odpověď na výzvu: [persistentní položka]")
+  public Integer getSKhdphAppealreply() {
+    return sKhdphAppealreply;
   }
 
-  public void setSKHDPHAppealReply(Integer sKHDPHAppealReply) {
-    this.sKHDPHAppealReply = sKHDPHAppealReply;
+  public void setSKhdphAppealreply(Integer sKhdphAppealreply) {
+    this.sKhdphAppealreply = sKhdphAppealreply;
   }
 
-  public Vatclosing sKHDPHCorrectionDate(DateTime sKHDPHCorrectionDate) {
-    this.sKHDPHCorrectionDate = sKHDPHCorrectionDate;
+  public Vatclosing sKhdphCorrectiondate(DateTime sKhdphCorrectiondate) {
+    this.sKhdphCorrectiondate = sKhdphCorrectiondate;
     return this;
   }
 
    /**
-   * Následné hlášení k datu: [persistentní položka]
-   * @return sKHDPHCorrectionDate
+   * následné hlášení k datu: [persistentní položka]
+   * @return sKhdphCorrectiondate
   **/
-  @ApiModelProperty(example = "null", value = "Následné hlášení k datu: [persistentní položka]")
-  public DateTime getSKHDPHCorrectionDate() {
-    return sKHDPHCorrectionDate;
+  @ApiModelProperty(example = "null", value = "následné hlášení k datu: [persistentní položka]")
+  public DateTime getSKhdphCorrectiondate() {
+    return sKhdphCorrectiondate;
   }
 
-  public void setSKHDPHCorrectionDate(DateTime sKHDPHCorrectionDate) {
-    this.sKHDPHCorrectionDate = sKHDPHCorrectionDate;
+  public void setSKhdphCorrectiondate(DateTime sKhdphCorrectiondate) {
+    this.sKhdphCorrectiondate = sKhdphCorrectiondate;
   }
 
-  public Vatclosing sKHDPHType(Integer sKHDPHType) {
-    this.sKHDPHType = sKHDPHType;
+  public Vatclosing sKhdphType(Integer sKhdphType) {
+    this.sKhdphType = sKhdphType;
     return this;
   }
 
    /**
-   * Druh kontrolního hlášení: [persistentní položka]
-   * @return sKHDPHType
+   * druh kontrolního hlášení: [persistentní položka]
+   * @return sKhdphType
   **/
-  @ApiModelProperty(example = "null", value = "Druh kontrolního hlášení: [persistentní položka]")
-  public Integer getSKHDPHType() {
-    return sKHDPHType;
+  @ApiModelProperty(example = "null", value = "druh kontrolního hlášení: [persistentní položka]")
+  public Integer getSKhdphType() {
+    return sKhdphType;
   }
 
-  public void setSKHDPHType(Integer sKHDPHType) {
-    this.sKHDPHType = sKHDPHType;
+  public void setSKhdphType(Integer sKhdphType) {
+    this.sKhdphType = sKhdphType;
   }
 
-  public Vatclosing sDataBoxID(String sDataBoxID) {
-    this.sDataBoxID = sDataBoxID;
+  public Vatclosing sDataboxid(String sDataboxid) {
+    this.sDataboxid = sDataboxid;
     return this;
   }
 
    /**
-   * Identifikátor datové schránky [persistentní položka]
-   * @return sDataBoxID
+   * identifikátor datové schránky [persistentní položka]
+   * @return sDataboxid
   **/
-  @ApiModelProperty(example = "null", value = "Identifikátor datové schránky [persistentní položka]")
-  public String getSDataBoxID() {
-    return sDataBoxID;
+  @ApiModelProperty(example = "null", value = "identifikátor datové schránky [persistentní položka]")
+  public String getSDataboxid() {
+    return sDataboxid;
   }
 
-  public void setSDataBoxID(String sDataBoxID) {
-    this.sDataBoxID = sDataBoxID;
+  public void setSDataboxid(String sDataboxid) {
+    this.sDataboxid = sDataboxid;
   }
 
 
@@ -1834,97 +1870,97 @@ public class Vatclosing   {
       return false;
     }
     Vatclosing vatclosing = (Vatclosing) o;
-    return Objects.equals(this.displayName, vatclosing.displayName) &&
-        Objects.equals(this.ID, vatclosing.ID) &&
-        Objects.equals(this.classID, vatclosing.classID) &&
-        Objects.equals(this.objVersion, vatclosing.objVersion) &&
+    return Objects.equals(this.displayname, vatclosing.displayname) &&
+        Objects.equals(this.id, vatclosing.id) &&
+        Objects.equals(this.classid, vatclosing.classid) &&
+        Objects.equals(this.objversion, vatclosing.objversion) &&
         Objects.equals(this.rows, vatclosing.rows) &&
         Objects.equals(this.description, vatclosing.description) &&
-        Objects.equals(this.closingPeriodType, vatclosing.closingPeriodType) &&
-        Objects.equals(this.dateFromDATE, vatclosing.dateFromDATE) &&
-        Objects.equals(this.dateToDATE, vatclosing.dateToDATE) &&
-        Objects.equals(this.closingDateDATE, vatclosing.closingDateDATE) &&
-        Objects.equals(this.sentDateDATE, vatclosing.sentDateDATE) &&
-        Objects.equals(this.vATDefinitionID, vatclosing.vATDefinitionID) &&
-        Objects.equals(this.closingType, vatclosing.closingType) &&
-        Objects.equals(this.previousClosingID, vatclosing.previousClosingID) &&
-        Objects.equals(this.withVATCheckReport, vatclosing.withVATCheckReport) &&
-        Objects.equals(this.withVATReturn, vatclosing.withVATReturn) &&
-        Objects.equals(this.createdByID, vatclosing.createdByID) &&
-        Objects.equals(this.correctedByID, vatclosing.correctedByID) &&
-        Objects.equals(this.closingParams, vatclosing.closingParams) &&
-        Objects.equals(this.vATCheckReportRows, vatclosing.vATCheckReportRows) &&
-        Objects.equals(this.countryID, vatclosing.countryID) &&
-        Objects.equals(this.closingPeriodTypeAsText, vatclosing.closingPeriodTypeAsText) &&
-        Objects.equals(this.closingTypeAsText, vatclosing.closingTypeAsText) &&
-        Objects.equals(this.vATCoefficient1, vatclosing.vATCoefficient1) &&
-        Objects.equals(this.vATCoefficient2, vatclosing.vATCoefficient2) &&
-        Objects.equals(this.vATCoefficient3, vatclosing.vATCoefficient3) &&
-        Objects.equals(this.mOSSRows, vatclosing.mOSSRows) &&
-        Objects.equals(this.sSFullFillConditions79, vatclosing.sSFullFillConditions79) &&
-        Objects.equals(this.sSAdviserPhone, vatclosing.sSAdviserPhone) &&
-        Objects.equals(this.sSAdviserPhonePre, vatclosing.sSAdviserPhonePre) &&
-        Objects.equals(this.sSAdviserName, vatclosing.sSAdviserName) &&
-        Objects.equals(this.sSFaxNumber, vatclosing.sSFaxNumber) &&
-        Objects.equals(this.sSFaxNumberPre, vatclosing.sSFaxNumberPre) &&
-        Objects.equals(this.sSPhoneNumber, vatclosing.sSPhoneNumber) &&
-        Objects.equals(this.sSPhoneNumberPre, vatclosing.sSPhoneNumberPre) &&
-        Objects.equals(this.sSDateOfAdditional, vatclosing.sSDateOfAdditional) &&
-        Objects.equals(this.sSVATPayorType, vatclosing.sSVATPayorType) &&
-        Objects.equals(this.sSNoTax, vatclosing.sSNoTax) &&
-        Objects.equals(this.sSFinancialBureau, vatclosing.sSFinancialBureau) &&
-        Objects.equals(this.sSFirmEmail, vatclosing.sSFirmEmail) &&
-        Objects.equals(this.sSFirmPhone, vatclosing.sSFirmPhone) &&
-        Objects.equals(this.sFinancialBureau, vatclosing.sFinancialBureau) &&
-        Objects.equals(this.sNACECode, vatclosing.sNACECode) &&
-        Objects.equals(this.sReasonOfAdditive, vatclosing.sReasonOfAdditive) &&
-        Objects.equals(this.sFOSurnameA, vatclosing.sFOSurnameA) &&
-        Objects.equals(this.sAuthPersonFirstName, vatclosing.sAuthPersonFirstName) &&
-        Objects.equals(this.sFinancialBureauCode, vatclosing.sFinancialBureauCode) &&
-        Objects.equals(this.sNumOfAttachments, vatclosing.sNumOfAttachments) &&
-        Objects.equals(this.sVATPayorType, vatclosing.sVATPayorType) &&
-        Objects.equals(this.sFOFirstNameA, vatclosing.sFOFirstNameA) &&
-        Objects.equals(this.sAuthPersonSurname, vatclosing.sAuthPersonSurname) &&
-        Objects.equals(this.sAdviserCode, vatclosing.sAdviserCode) &&
-        Objects.equals(this.sRegionalOffice, vatclosing.sRegionalOffice) &&
-        Objects.equals(this.sNumOfSheets, vatclosing.sNumOfSheets) &&
-        Objects.equals(this.sNoItemsForCSection, vatclosing.sNoItemsForCSection) &&
-        Objects.equals(this.sFOTitleA, vatclosing.sFOTitleA) &&
-        Objects.equals(this.sAssemblyPerson, vatclosing.sAssemblyPerson) &&
-        Objects.equals(this.sAdviserType, vatclosing.sAdviserType) &&
-        Objects.equals(this.sAuthPersonStatus, vatclosing.sAuthPersonStatus) &&
-        Objects.equals(this.sRegionalOfficeCode, vatclosing.sRegionalOfficeCode) &&
-        Objects.equals(this.sNextYearTaxPeriodCode, vatclosing.sNextYearTaxPeriodCode) &&
-        Objects.equals(this.sIdentNumber, vatclosing.sIdentNumber) &&
-        Objects.equals(this.sAssemblyTelephone, vatclosing.sAssemblyTelephone) &&
-        Objects.equals(this.sAdviserFirstName, vatclosing.sAdviserFirstName) &&
-        Objects.equals(this.sCompanyType, vatclosing.sCompanyType) &&
-        Objects.equals(this.sInsolventPeriod, vatclosing.sInsolventPeriod) &&
-        Objects.equals(this.sAdviserSurname, vatclosing.sAdviserSurname) &&
-        Objects.equals(this.sInsolventPeriodFrom, vatclosing.sInsolventPeriodFrom) &&
-        Objects.equals(this.sAdviserTitle, vatclosing.sAdviserTitle) &&
-        Objects.equals(this.sInsolventPeriodTo, vatclosing.sInsolventPeriodTo) &&
-        Objects.equals(this.sAdviserBirthDate, vatclosing.sAdviserBirthDate) &&
-        Objects.equals(this.sAdviserEvNum, vatclosing.sAdviserEvNum) &&
-        Objects.equals(this.sAdviserIC, vatclosing.sAdviserIC) &&
-        Objects.equals(this.sAssemblyEmail, vatclosing.sAssemblyEmail) &&
-        Objects.equals(this.sAssemblyDate, vatclosing.sAssemblyDate) &&
-        Objects.equals(this.sDateOfAdditive, vatclosing.sDateOfAdditive) &&
-        Objects.equals(this.sNoTax, vatclosing.sNoTax) &&
-        Objects.equals(this.S_IBAN, vatclosing.S_IBAN) &&
-        Objects.equals(this.S_BIC, vatclosing.S_BIC) &&
-        Objects.equals(this.sMOSSRefNumber, vatclosing.sMOSSRefNumber) &&
-        Objects.equals(this.sMOSSAccountName, vatclosing.sMOSSAccountName) &&
-        Objects.equals(this.sKHDPHAppealRefNumber, vatclosing.sKHDPHAppealRefNumber) &&
-        Objects.equals(this.sKHDPHAppealReply, vatclosing.sKHDPHAppealReply) &&
-        Objects.equals(this.sKHDPHCorrectionDate, vatclosing.sKHDPHCorrectionDate) &&
-        Objects.equals(this.sKHDPHType, vatclosing.sKHDPHType) &&
-        Objects.equals(this.sDataBoxID, vatclosing.sDataBoxID);
+        Objects.equals(this.closingperiodtype, vatclosing.closingperiodtype) &&
+        Objects.equals(this.datefromdate, vatclosing.datefromdate) &&
+        Objects.equals(this.datetodate, vatclosing.datetodate) &&
+        Objects.equals(this.closingdatedate, vatclosing.closingdatedate) &&
+        Objects.equals(this.sentdatedate, vatclosing.sentdatedate) &&
+        Objects.equals(this.vatdefinitionId, vatclosing.vatdefinitionId) &&
+        Objects.equals(this.closingtype, vatclosing.closingtype) &&
+        Objects.equals(this.previousclosingId, vatclosing.previousclosingId) &&
+        Objects.equals(this.withvatcheckreport, vatclosing.withvatcheckreport) &&
+        Objects.equals(this.withvatreturn, vatclosing.withvatreturn) &&
+        Objects.equals(this.createdbyId, vatclosing.createdbyId) &&
+        Objects.equals(this.correctedbyId, vatclosing.correctedbyId) &&
+        Objects.equals(this.closingparams, vatclosing.closingparams) &&
+        Objects.equals(this.vatcheckreportrows, vatclosing.vatcheckreportrows) &&
+        Objects.equals(this.countryId, vatclosing.countryId) &&
+        Objects.equals(this.closingperiodtypeastext, vatclosing.closingperiodtypeastext) &&
+        Objects.equals(this.closingtypeastext, vatclosing.closingtypeastext) &&
+        Objects.equals(this.vatcoefficient1, vatclosing.vatcoefficient1) &&
+        Objects.equals(this.vatcoefficient2, vatclosing.vatcoefficient2) &&
+        Objects.equals(this.vatcoefficient3, vatclosing.vatcoefficient3) &&
+        Objects.equals(this.mossrows, vatclosing.mossrows) &&
+        Objects.equals(this.sSfullfillconditions79, vatclosing.sSfullfillconditions79) &&
+        Objects.equals(this.sSadviserphone, vatclosing.sSadviserphone) &&
+        Objects.equals(this.sSadviserphonepre, vatclosing.sSadviserphonepre) &&
+        Objects.equals(this.sSadvisername, vatclosing.sSadvisername) &&
+        Objects.equals(this.sSfaxnumber, vatclosing.sSfaxnumber) &&
+        Objects.equals(this.sSfaxnumberpre, vatclosing.sSfaxnumberpre) &&
+        Objects.equals(this.sSphonenumber, vatclosing.sSphonenumber) &&
+        Objects.equals(this.sSphonenumberpre, vatclosing.sSphonenumberpre) &&
+        Objects.equals(this.sSdateofadditional, vatclosing.sSdateofadditional) &&
+        Objects.equals(this.sSvatpayortype, vatclosing.sSvatpayortype) &&
+        Objects.equals(this.sSnotax, vatclosing.sSnotax) &&
+        Objects.equals(this.sSfinancialbureau, vatclosing.sSfinancialbureau) &&
+        Objects.equals(this.sSfirmemail, vatclosing.sSfirmemail) &&
+        Objects.equals(this.sSfirmphone, vatclosing.sSfirmphone) &&
+        Objects.equals(this.sFinancialbureau, vatclosing.sFinancialbureau) &&
+        Objects.equals(this.sNacecode, vatclosing.sNacecode) &&
+        Objects.equals(this.sReasonofadditive, vatclosing.sReasonofadditive) &&
+        Objects.equals(this.sFosurnamea, vatclosing.sFosurnamea) &&
+        Objects.equals(this.sAuthpersonFirstname, vatclosing.sAuthpersonFirstname) &&
+        Objects.equals(this.sFinancialbureaucode, vatclosing.sFinancialbureaucode) &&
+        Objects.equals(this.sNumofattachments, vatclosing.sNumofattachments) &&
+        Objects.equals(this.sVatpayortype, vatclosing.sVatpayortype) &&
+        Objects.equals(this.sFofirstnamea, vatclosing.sFofirstnamea) &&
+        Objects.equals(this.sAuthpersonSurname, vatclosing.sAuthpersonSurname) &&
+        Objects.equals(this.sAdvisercode, vatclosing.sAdvisercode) &&
+        Objects.equals(this.sRegionaloffice, vatclosing.sRegionaloffice) &&
+        Objects.equals(this.sNumofsheets, vatclosing.sNumofsheets) &&
+        Objects.equals(this.sNoitemsforcsection, vatclosing.sNoitemsforcsection) &&
+        Objects.equals(this.sFotitlea, vatclosing.sFotitlea) &&
+        Objects.equals(this.sAssemblyperson, vatclosing.sAssemblyperson) &&
+        Objects.equals(this.sAdvisertype, vatclosing.sAdvisertype) &&
+        Objects.equals(this.sAuthpersonStatus, vatclosing.sAuthpersonStatus) &&
+        Objects.equals(this.sRegionalofficecode, vatclosing.sRegionalofficecode) &&
+        Objects.equals(this.sNextyeartaxperiodcode, vatclosing.sNextyeartaxperiodcode) &&
+        Objects.equals(this.sIdentnumber, vatclosing.sIdentnumber) &&
+        Objects.equals(this.sAssemblytelephone, vatclosing.sAssemblytelephone) &&
+        Objects.equals(this.sAdviserfirstname, vatclosing.sAdviserfirstname) &&
+        Objects.equals(this.sCompanytype, vatclosing.sCompanytype) &&
+        Objects.equals(this.sInsolventperiod, vatclosing.sInsolventperiod) &&
+        Objects.equals(this.sAdvisersurname, vatclosing.sAdvisersurname) &&
+        Objects.equals(this.sInsolventperiodfrom, vatclosing.sInsolventperiodfrom) &&
+        Objects.equals(this.sAdvisertitle, vatclosing.sAdvisertitle) &&
+        Objects.equals(this.sInsolventperiodto, vatclosing.sInsolventperiodto) &&
+        Objects.equals(this.sAdviserbirthdate, vatclosing.sAdviserbirthdate) &&
+        Objects.equals(this.sAdviserevnum, vatclosing.sAdviserevnum) &&
+        Objects.equals(this.sAdviseric, vatclosing.sAdviseric) &&
+        Objects.equals(this.sAssemblyemail, vatclosing.sAssemblyemail) &&
+        Objects.equals(this.sAssemblydate, vatclosing.sAssemblydate) &&
+        Objects.equals(this.sDateofadditive, vatclosing.sDateofadditive) &&
+        Objects.equals(this.sNotax, vatclosing.sNotax) &&
+        Objects.equals(this.sIban, vatclosing.sIban) &&
+        Objects.equals(this.sBic, vatclosing.sBic) &&
+        Objects.equals(this.sMossrefnumber, vatclosing.sMossrefnumber) &&
+        Objects.equals(this.sMossaccountname, vatclosing.sMossaccountname) &&
+        Objects.equals(this.sKhdphAppealrefnumber, vatclosing.sKhdphAppealrefnumber) &&
+        Objects.equals(this.sKhdphAppealreply, vatclosing.sKhdphAppealreply) &&
+        Objects.equals(this.sKhdphCorrectiondate, vatclosing.sKhdphCorrectiondate) &&
+        Objects.equals(this.sKhdphType, vatclosing.sKhdphType) &&
+        Objects.equals(this.sDataboxid, vatclosing.sDataboxid);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, description, closingPeriodType, dateFromDATE, dateToDATE, closingDateDATE, sentDateDATE, vATDefinitionID, closingType, previousClosingID, withVATCheckReport, withVATReturn, createdByID, correctedByID, closingParams, vATCheckReportRows, countryID, closingPeriodTypeAsText, closingTypeAsText, vATCoefficient1, vATCoefficient2, vATCoefficient3, mOSSRows, sSFullFillConditions79, sSAdviserPhone, sSAdviserPhonePre, sSAdviserName, sSFaxNumber, sSFaxNumberPre, sSPhoneNumber, sSPhoneNumberPre, sSDateOfAdditional, sSVATPayorType, sSNoTax, sSFinancialBureau, sSFirmEmail, sSFirmPhone, sFinancialBureau, sNACECode, sReasonOfAdditive, sFOSurnameA, sAuthPersonFirstName, sFinancialBureauCode, sNumOfAttachments, sVATPayorType, sFOFirstNameA, sAuthPersonSurname, sAdviserCode, sRegionalOffice, sNumOfSheets, sNoItemsForCSection, sFOTitleA, sAssemblyPerson, sAdviserType, sAuthPersonStatus, sRegionalOfficeCode, sNextYearTaxPeriodCode, sIdentNumber, sAssemblyTelephone, sAdviserFirstName, sCompanyType, sInsolventPeriod, sAdviserSurname, sInsolventPeriodFrom, sAdviserTitle, sInsolventPeriodTo, sAdviserBirthDate, sAdviserEvNum, sAdviserIC, sAssemblyEmail, sAssemblyDate, sDateOfAdditive, sNoTax, S_IBAN, S_BIC, sMOSSRefNumber, sMOSSAccountName, sKHDPHAppealRefNumber, sKHDPHAppealReply, sKHDPHCorrectionDate, sKHDPHType, sDataBoxID);
+    return Objects.hash(displayname, id, classid, objversion, rows, description, closingperiodtype, datefromdate, datetodate, closingdatedate, sentdatedate, vatdefinitionId, closingtype, previousclosingId, withvatcheckreport, withvatreturn, createdbyId, correctedbyId, closingparams, vatcheckreportrows, countryId, closingperiodtypeastext, closingtypeastext, vatcoefficient1, vatcoefficient2, vatcoefficient3, mossrows, sSfullfillconditions79, sSadviserphone, sSadviserphonepre, sSadvisername, sSfaxnumber, sSfaxnumberpre, sSphonenumber, sSphonenumberpre, sSdateofadditional, sSvatpayortype, sSnotax, sSfinancialbureau, sSfirmemail, sSfirmphone, sFinancialbureau, sNacecode, sReasonofadditive, sFosurnamea, sAuthpersonFirstname, sFinancialbureaucode, sNumofattachments, sVatpayortype, sFofirstnamea, sAuthpersonSurname, sAdvisercode, sRegionaloffice, sNumofsheets, sNoitemsforcsection, sFotitlea, sAssemblyperson, sAdvisertype, sAuthpersonStatus, sRegionalofficecode, sNextyeartaxperiodcode, sIdentnumber, sAssemblytelephone, sAdviserfirstname, sCompanytype, sInsolventperiod, sAdvisersurname, sInsolventperiodfrom, sAdvisertitle, sInsolventperiodto, sAdviserbirthdate, sAdviserevnum, sAdviseric, sAssemblyemail, sAssemblydate, sDateofadditive, sNotax, sIban, sBic, sMossrefnumber, sMossaccountname, sKhdphAppealrefnumber, sKhdphAppealreply, sKhdphCorrectiondate, sKhdphType, sDataboxid);
   }
 
   @Override
@@ -1932,92 +1968,92 @@ public class Vatclosing   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Vatclosing {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    closingPeriodType: ").append(toIndentedString(closingPeriodType)).append("\n");
-    sb.append("    dateFromDATE: ").append(toIndentedString(dateFromDATE)).append("\n");
-    sb.append("    dateToDATE: ").append(toIndentedString(dateToDATE)).append("\n");
-    sb.append("    closingDateDATE: ").append(toIndentedString(closingDateDATE)).append("\n");
-    sb.append("    sentDateDATE: ").append(toIndentedString(sentDateDATE)).append("\n");
-    sb.append("    vATDefinitionID: ").append(toIndentedString(vATDefinitionID)).append("\n");
-    sb.append("    closingType: ").append(toIndentedString(closingType)).append("\n");
-    sb.append("    previousClosingID: ").append(toIndentedString(previousClosingID)).append("\n");
-    sb.append("    withVATCheckReport: ").append(toIndentedString(withVATCheckReport)).append("\n");
-    sb.append("    withVATReturn: ").append(toIndentedString(withVATReturn)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    closingParams: ").append(toIndentedString(closingParams)).append("\n");
-    sb.append("    vATCheckReportRows: ").append(toIndentedString(vATCheckReportRows)).append("\n");
-    sb.append("    countryID: ").append(toIndentedString(countryID)).append("\n");
-    sb.append("    closingPeriodTypeAsText: ").append(toIndentedString(closingPeriodTypeAsText)).append("\n");
-    sb.append("    closingTypeAsText: ").append(toIndentedString(closingTypeAsText)).append("\n");
-    sb.append("    vATCoefficient1: ").append(toIndentedString(vATCoefficient1)).append("\n");
-    sb.append("    vATCoefficient2: ").append(toIndentedString(vATCoefficient2)).append("\n");
-    sb.append("    vATCoefficient3: ").append(toIndentedString(vATCoefficient3)).append("\n");
-    sb.append("    mOSSRows: ").append(toIndentedString(mOSSRows)).append("\n");
-    sb.append("    sSFullFillConditions79: ").append(toIndentedString(sSFullFillConditions79)).append("\n");
-    sb.append("    sSAdviserPhone: ").append(toIndentedString(sSAdviserPhone)).append("\n");
-    sb.append("    sSAdviserPhonePre: ").append(toIndentedString(sSAdviserPhonePre)).append("\n");
-    sb.append("    sSAdviserName: ").append(toIndentedString(sSAdviserName)).append("\n");
-    sb.append("    sSFaxNumber: ").append(toIndentedString(sSFaxNumber)).append("\n");
-    sb.append("    sSFaxNumberPre: ").append(toIndentedString(sSFaxNumberPre)).append("\n");
-    sb.append("    sSPhoneNumber: ").append(toIndentedString(sSPhoneNumber)).append("\n");
-    sb.append("    sSPhoneNumberPre: ").append(toIndentedString(sSPhoneNumberPre)).append("\n");
-    sb.append("    sSDateOfAdditional: ").append(toIndentedString(sSDateOfAdditional)).append("\n");
-    sb.append("    sSVATPayorType: ").append(toIndentedString(sSVATPayorType)).append("\n");
-    sb.append("    sSNoTax: ").append(toIndentedString(sSNoTax)).append("\n");
-    sb.append("    sSFinancialBureau: ").append(toIndentedString(sSFinancialBureau)).append("\n");
-    sb.append("    sSFirmEmail: ").append(toIndentedString(sSFirmEmail)).append("\n");
-    sb.append("    sSFirmPhone: ").append(toIndentedString(sSFirmPhone)).append("\n");
-    sb.append("    sFinancialBureau: ").append(toIndentedString(sFinancialBureau)).append("\n");
-    sb.append("    sNACECode: ").append(toIndentedString(sNACECode)).append("\n");
-    sb.append("    sReasonOfAdditive: ").append(toIndentedString(sReasonOfAdditive)).append("\n");
-    sb.append("    sFOSurnameA: ").append(toIndentedString(sFOSurnameA)).append("\n");
-    sb.append("    sAuthPersonFirstName: ").append(toIndentedString(sAuthPersonFirstName)).append("\n");
-    sb.append("    sFinancialBureauCode: ").append(toIndentedString(sFinancialBureauCode)).append("\n");
-    sb.append("    sNumOfAttachments: ").append(toIndentedString(sNumOfAttachments)).append("\n");
-    sb.append("    sVATPayorType: ").append(toIndentedString(sVATPayorType)).append("\n");
-    sb.append("    sFOFirstNameA: ").append(toIndentedString(sFOFirstNameA)).append("\n");
-    sb.append("    sAuthPersonSurname: ").append(toIndentedString(sAuthPersonSurname)).append("\n");
-    sb.append("    sAdviserCode: ").append(toIndentedString(sAdviserCode)).append("\n");
-    sb.append("    sRegionalOffice: ").append(toIndentedString(sRegionalOffice)).append("\n");
-    sb.append("    sNumOfSheets: ").append(toIndentedString(sNumOfSheets)).append("\n");
-    sb.append("    sNoItemsForCSection: ").append(toIndentedString(sNoItemsForCSection)).append("\n");
-    sb.append("    sFOTitleA: ").append(toIndentedString(sFOTitleA)).append("\n");
-    sb.append("    sAssemblyPerson: ").append(toIndentedString(sAssemblyPerson)).append("\n");
-    sb.append("    sAdviserType: ").append(toIndentedString(sAdviserType)).append("\n");
-    sb.append("    sAuthPersonStatus: ").append(toIndentedString(sAuthPersonStatus)).append("\n");
-    sb.append("    sRegionalOfficeCode: ").append(toIndentedString(sRegionalOfficeCode)).append("\n");
-    sb.append("    sNextYearTaxPeriodCode: ").append(toIndentedString(sNextYearTaxPeriodCode)).append("\n");
-    sb.append("    sIdentNumber: ").append(toIndentedString(sIdentNumber)).append("\n");
-    sb.append("    sAssemblyTelephone: ").append(toIndentedString(sAssemblyTelephone)).append("\n");
-    sb.append("    sAdviserFirstName: ").append(toIndentedString(sAdviserFirstName)).append("\n");
-    sb.append("    sCompanyType: ").append(toIndentedString(sCompanyType)).append("\n");
-    sb.append("    sInsolventPeriod: ").append(toIndentedString(sInsolventPeriod)).append("\n");
-    sb.append("    sAdviserSurname: ").append(toIndentedString(sAdviserSurname)).append("\n");
-    sb.append("    sInsolventPeriodFrom: ").append(toIndentedString(sInsolventPeriodFrom)).append("\n");
-    sb.append("    sAdviserTitle: ").append(toIndentedString(sAdviserTitle)).append("\n");
-    sb.append("    sInsolventPeriodTo: ").append(toIndentedString(sInsolventPeriodTo)).append("\n");
-    sb.append("    sAdviserBirthDate: ").append(toIndentedString(sAdviserBirthDate)).append("\n");
-    sb.append("    sAdviserEvNum: ").append(toIndentedString(sAdviserEvNum)).append("\n");
-    sb.append("    sAdviserIC: ").append(toIndentedString(sAdviserIC)).append("\n");
-    sb.append("    sAssemblyEmail: ").append(toIndentedString(sAssemblyEmail)).append("\n");
-    sb.append("    sAssemblyDate: ").append(toIndentedString(sAssemblyDate)).append("\n");
-    sb.append("    sDateOfAdditive: ").append(toIndentedString(sDateOfAdditive)).append("\n");
-    sb.append("    sNoTax: ").append(toIndentedString(sNoTax)).append("\n");
-    sb.append("    S_IBAN: ").append(toIndentedString(S_IBAN)).append("\n");
-    sb.append("    S_BIC: ").append(toIndentedString(S_BIC)).append("\n");
-    sb.append("    sMOSSRefNumber: ").append(toIndentedString(sMOSSRefNumber)).append("\n");
-    sb.append("    sMOSSAccountName: ").append(toIndentedString(sMOSSAccountName)).append("\n");
-    sb.append("    sKHDPHAppealRefNumber: ").append(toIndentedString(sKHDPHAppealRefNumber)).append("\n");
-    sb.append("    sKHDPHAppealReply: ").append(toIndentedString(sKHDPHAppealReply)).append("\n");
-    sb.append("    sKHDPHCorrectionDate: ").append(toIndentedString(sKHDPHCorrectionDate)).append("\n");
-    sb.append("    sKHDPHType: ").append(toIndentedString(sKHDPHType)).append("\n");
-    sb.append("    sDataBoxID: ").append(toIndentedString(sDataBoxID)).append("\n");
+    sb.append("    closingperiodtype: ").append(toIndentedString(closingperiodtype)).append("\n");
+    sb.append("    datefromdate: ").append(toIndentedString(datefromdate)).append("\n");
+    sb.append("    datetodate: ").append(toIndentedString(datetodate)).append("\n");
+    sb.append("    closingdatedate: ").append(toIndentedString(closingdatedate)).append("\n");
+    sb.append("    sentdatedate: ").append(toIndentedString(sentdatedate)).append("\n");
+    sb.append("    vatdefinitionId: ").append(toIndentedString(vatdefinitionId)).append("\n");
+    sb.append("    closingtype: ").append(toIndentedString(closingtype)).append("\n");
+    sb.append("    previousclosingId: ").append(toIndentedString(previousclosingId)).append("\n");
+    sb.append("    withvatcheckreport: ").append(toIndentedString(withvatcheckreport)).append("\n");
+    sb.append("    withvatreturn: ").append(toIndentedString(withvatreturn)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    closingparams: ").append(toIndentedString(closingparams)).append("\n");
+    sb.append("    vatcheckreportrows: ").append(toIndentedString(vatcheckreportrows)).append("\n");
+    sb.append("    countryId: ").append(toIndentedString(countryId)).append("\n");
+    sb.append("    closingperiodtypeastext: ").append(toIndentedString(closingperiodtypeastext)).append("\n");
+    sb.append("    closingtypeastext: ").append(toIndentedString(closingtypeastext)).append("\n");
+    sb.append("    vatcoefficient1: ").append(toIndentedString(vatcoefficient1)).append("\n");
+    sb.append("    vatcoefficient2: ").append(toIndentedString(vatcoefficient2)).append("\n");
+    sb.append("    vatcoefficient3: ").append(toIndentedString(vatcoefficient3)).append("\n");
+    sb.append("    mossrows: ").append(toIndentedString(mossrows)).append("\n");
+    sb.append("    sSfullfillconditions79: ").append(toIndentedString(sSfullfillconditions79)).append("\n");
+    sb.append("    sSadviserphone: ").append(toIndentedString(sSadviserphone)).append("\n");
+    sb.append("    sSadviserphonepre: ").append(toIndentedString(sSadviserphonepre)).append("\n");
+    sb.append("    sSadvisername: ").append(toIndentedString(sSadvisername)).append("\n");
+    sb.append("    sSfaxnumber: ").append(toIndentedString(sSfaxnumber)).append("\n");
+    sb.append("    sSfaxnumberpre: ").append(toIndentedString(sSfaxnumberpre)).append("\n");
+    sb.append("    sSphonenumber: ").append(toIndentedString(sSphonenumber)).append("\n");
+    sb.append("    sSphonenumberpre: ").append(toIndentedString(sSphonenumberpre)).append("\n");
+    sb.append("    sSdateofadditional: ").append(toIndentedString(sSdateofadditional)).append("\n");
+    sb.append("    sSvatpayortype: ").append(toIndentedString(sSvatpayortype)).append("\n");
+    sb.append("    sSnotax: ").append(toIndentedString(sSnotax)).append("\n");
+    sb.append("    sSfinancialbureau: ").append(toIndentedString(sSfinancialbureau)).append("\n");
+    sb.append("    sSfirmemail: ").append(toIndentedString(sSfirmemail)).append("\n");
+    sb.append("    sSfirmphone: ").append(toIndentedString(sSfirmphone)).append("\n");
+    sb.append("    sFinancialbureau: ").append(toIndentedString(sFinancialbureau)).append("\n");
+    sb.append("    sNacecode: ").append(toIndentedString(sNacecode)).append("\n");
+    sb.append("    sReasonofadditive: ").append(toIndentedString(sReasonofadditive)).append("\n");
+    sb.append("    sFosurnamea: ").append(toIndentedString(sFosurnamea)).append("\n");
+    sb.append("    sAuthpersonFirstname: ").append(toIndentedString(sAuthpersonFirstname)).append("\n");
+    sb.append("    sFinancialbureaucode: ").append(toIndentedString(sFinancialbureaucode)).append("\n");
+    sb.append("    sNumofattachments: ").append(toIndentedString(sNumofattachments)).append("\n");
+    sb.append("    sVatpayortype: ").append(toIndentedString(sVatpayortype)).append("\n");
+    sb.append("    sFofirstnamea: ").append(toIndentedString(sFofirstnamea)).append("\n");
+    sb.append("    sAuthpersonSurname: ").append(toIndentedString(sAuthpersonSurname)).append("\n");
+    sb.append("    sAdvisercode: ").append(toIndentedString(sAdvisercode)).append("\n");
+    sb.append("    sRegionaloffice: ").append(toIndentedString(sRegionaloffice)).append("\n");
+    sb.append("    sNumofsheets: ").append(toIndentedString(sNumofsheets)).append("\n");
+    sb.append("    sNoitemsforcsection: ").append(toIndentedString(sNoitemsforcsection)).append("\n");
+    sb.append("    sFotitlea: ").append(toIndentedString(sFotitlea)).append("\n");
+    sb.append("    sAssemblyperson: ").append(toIndentedString(sAssemblyperson)).append("\n");
+    sb.append("    sAdvisertype: ").append(toIndentedString(sAdvisertype)).append("\n");
+    sb.append("    sAuthpersonStatus: ").append(toIndentedString(sAuthpersonStatus)).append("\n");
+    sb.append("    sRegionalofficecode: ").append(toIndentedString(sRegionalofficecode)).append("\n");
+    sb.append("    sNextyeartaxperiodcode: ").append(toIndentedString(sNextyeartaxperiodcode)).append("\n");
+    sb.append("    sIdentnumber: ").append(toIndentedString(sIdentnumber)).append("\n");
+    sb.append("    sAssemblytelephone: ").append(toIndentedString(sAssemblytelephone)).append("\n");
+    sb.append("    sAdviserfirstname: ").append(toIndentedString(sAdviserfirstname)).append("\n");
+    sb.append("    sCompanytype: ").append(toIndentedString(sCompanytype)).append("\n");
+    sb.append("    sInsolventperiod: ").append(toIndentedString(sInsolventperiod)).append("\n");
+    sb.append("    sAdvisersurname: ").append(toIndentedString(sAdvisersurname)).append("\n");
+    sb.append("    sInsolventperiodfrom: ").append(toIndentedString(sInsolventperiodfrom)).append("\n");
+    sb.append("    sAdvisertitle: ").append(toIndentedString(sAdvisertitle)).append("\n");
+    sb.append("    sInsolventperiodto: ").append(toIndentedString(sInsolventperiodto)).append("\n");
+    sb.append("    sAdviserbirthdate: ").append(toIndentedString(sAdviserbirthdate)).append("\n");
+    sb.append("    sAdviserevnum: ").append(toIndentedString(sAdviserevnum)).append("\n");
+    sb.append("    sAdviseric: ").append(toIndentedString(sAdviseric)).append("\n");
+    sb.append("    sAssemblyemail: ").append(toIndentedString(sAssemblyemail)).append("\n");
+    sb.append("    sAssemblydate: ").append(toIndentedString(sAssemblydate)).append("\n");
+    sb.append("    sDateofadditive: ").append(toIndentedString(sDateofadditive)).append("\n");
+    sb.append("    sNotax: ").append(toIndentedString(sNotax)).append("\n");
+    sb.append("    sIban: ").append(toIndentedString(sIban)).append("\n");
+    sb.append("    sBic: ").append(toIndentedString(sBic)).append("\n");
+    sb.append("    sMossrefnumber: ").append(toIndentedString(sMossrefnumber)).append("\n");
+    sb.append("    sMossaccountname: ").append(toIndentedString(sMossaccountname)).append("\n");
+    sb.append("    sKhdphAppealrefnumber: ").append(toIndentedString(sKhdphAppealrefnumber)).append("\n");
+    sb.append("    sKhdphAppealreply: ").append(toIndentedString(sKhdphAppealreply)).append("\n");
+    sb.append("    sKhdphCorrectiondate: ").append(toIndentedString(sKhdphCorrectiondate)).append("\n");
+    sb.append("    sKhdphType: ").append(toIndentedString(sKhdphType)).append("\n");
+    sb.append("    sDataboxid: ").append(toIndentedString(sDataboxid)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,120 +37,156 @@ import java.util.Objects;
 /**
  * Posshift
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posshift   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Posshiftrow> rows = new ArrayList<Posshiftrow>();
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("Shop_ID")
-  private String shopID = null;
+  @SerializedName("shop_id")
+  private String shopId = null;
 
-  @SerializedName("ClosedBy_ID")
-  private String closedByID = null;
+  @SerializedName("closedby_id")
+  private String closedbyId = null;
 
-  @SerializedName("ShiftCalendarRow_ID")
-  private String shiftCalendarRowID = null;
+  @SerializedName("shiftcalendarrow_id")
+  private String shiftcalendarrowId = null;
 
-  @SerializedName("CreatedDate$DATE")
-  private DateTime createdDateDATE = null;
+  @SerializedName("createddate$date")
+  private DateTime createddatedate = null;
 
-  @SerializedName("ClosedDate$DATE")
-  private DateTime closedDateDATE = null;
+  @SerializedName("closeddate$date")
+  private DateTime closeddatedate = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("Discount")
+  @SerializedName("discount")
   private Double discount = null;
 
-  @SerializedName("CountOfBills")
-  private Integer countOfBills = null;
+  @SerializedName("countofbills")
+  private Integer countofbills = null;
 
-  @SerializedName("VATRates")
-  private List<Posshiftvatrate> vATRates = new ArrayList<Posshiftvatrate>();
+  @SerializedName("vatrates")
+  private List<Posshiftvatrate> vatrates = new ArrayList<Posshiftvatrate>();
 
-  @SerializedName("Firms")
+  @SerializedName("firms")
   private List<Posshiftfirm> firms = new ArrayList<Posshiftfirm>();
 
-  @SerializedName("StoreCards")
-  private List<Posshiftstorecard> storeCards = new ArrayList<Posshiftstorecard>();
+  @SerializedName("storecards")
+  private List<Posshiftstorecard> storecards = new ArrayList<Posshiftstorecard>();
 
-  @SerializedName("Stores")
+  @SerializedName("stores")
   private List<Posshiftstorecard> stores = new ArrayList<Posshiftstorecard>();
 
-  @SerializedName("Users")
+  @SerializedName("users")
   private List<Posshiftuser> users = new ArrayList<Posshiftuser>();
 
-  @SerializedName("Payments")
+  @SerializedName("payments")
   private List<Posshiftpayment> payments = new ArrayList<Posshiftpayment>();
+
+  public Posshift displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Posshift id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Posshift classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Posshift objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Posshift rows(List<Posshiftrow> rows) {
@@ -164,10 +200,10 @@ public class Posshift   {
   }
 
    /**
-   * Řádky; kolekce BO Směna - prodej za skupiny zboží [nepersistentní položka]
+   * Řádky; kolekce bo směna - prodej za skupiny zboží [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Směna - prodej za skupiny zboží [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo směna - prodej za skupiny zboží [nepersistentní položka]")
   public List<Posshiftrow> getRows() {
     return rows;
   }
@@ -176,220 +212,220 @@ public class Posshift   {
     this.rows = rows;
   }
 
-  public Posshift docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Posshift docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Posshift periodID(String periodID) {
-    this.periodID = periodID;
+  public Posshift periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Posshift ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Posshift ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Posshift docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Posshift docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Posshift createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Posshift createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Posshift newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Posshift newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Posshift newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Posshift newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Posshift shopID(String shopID) {
-    this.shopID = shopID;
+  public Posshift shopId(String shopId) {
+    this.shopId = shopId;
     return this;
   }
 
    /**
-   * Provoz; ID objektu Nastavení provozu [persistentní položka]
-   * @return shopID
+   * provoz; id objektu nastavení provozu [persistentní položka]
+   * @return shopId
   **/
-  @ApiModelProperty(example = "null", value = "Provoz; ID objektu Nastavení provozu [persistentní položka]")
-  public String getShopID() {
-    return shopID;
+  @ApiModelProperty(example = "null", value = "provoz; id objektu nastavení provozu [persistentní položka]")
+  public String getShopId() {
+    return shopId;
   }
 
-  public void setShopID(String shopID) {
-    this.shopID = shopID;
+  public void setShopId(String shopId) {
+    this.shopId = shopId;
   }
 
-  public Posshift closedByID(String closedByID) {
-    this.closedByID = closedByID;
+  public Posshift closedbyId(String closedbyId) {
+    this.closedbyId = closedbyId;
     return this;
   }
 
    /**
-   * Směnu ukončil; ID objektu Uživatel [persistentní položka]
-   * @return closedByID
+   * směnu ukončil; id objektu uživatel [persistentní položka]
+   * @return closedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Směnu ukončil; ID objektu Uživatel [persistentní položka]")
-  public String getClosedByID() {
-    return closedByID;
+  @ApiModelProperty(example = "null", value = "směnu ukončil; id objektu uživatel [persistentní položka]")
+  public String getClosedbyId() {
+    return closedbyId;
   }
 
-  public void setClosedByID(String closedByID) {
-    this.closedByID = closedByID;
+  public void setClosedbyId(String closedbyId) {
+    this.closedbyId = closedbyId;
   }
 
-  public Posshift shiftCalendarRowID(String shiftCalendarRowID) {
-    this.shiftCalendarRowID = shiftCalendarRowID;
+  public Posshift shiftcalendarrowId(String shiftcalendarrowId) {
+    this.shiftcalendarrowId = shiftcalendarrowId;
     return this;
   }
 
    /**
-   * Směna; ID objektu Plánovaná směna [persistentní položka]
-   * @return shiftCalendarRowID
+   * směna; id objektu plánovaná směna [persistentní položka]
+   * @return shiftcalendarrowId
   **/
-  @ApiModelProperty(example = "null", value = "Směna; ID objektu Plánovaná směna [persistentní položka]")
-  public String getShiftCalendarRowID() {
-    return shiftCalendarRowID;
+  @ApiModelProperty(example = "null", value = "směna; id objektu plánovaná směna [persistentní položka]")
+  public String getShiftcalendarrowId() {
+    return shiftcalendarrowId;
   }
 
-  public void setShiftCalendarRowID(String shiftCalendarRowID) {
-    this.shiftCalendarRowID = shiftCalendarRowID;
+  public void setShiftcalendarrowId(String shiftcalendarrowId) {
+    this.shiftcalendarrowId = shiftcalendarrowId;
   }
 
-  public Posshift createdDateDATE(DateTime createdDateDATE) {
-    this.createdDateDATE = createdDateDATE;
+  public Posshift createddatedate(DateTime createddatedate) {
+    this.createddatedate = createddatedate;
     return this;
   }
 
    /**
-   * Zahájeno [persistentní položka]
-   * @return createdDateDATE
+   * zahájeno [persistentní položka]
+   * @return createddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Zahájeno [persistentní položka]")
-  public DateTime getCreatedDateDATE() {
-    return createdDateDATE;
+  @ApiModelProperty(example = "null", value = "zahájeno [persistentní položka]")
+  public DateTime getCreateddatedate() {
+    return createddatedate;
   }
 
-  public void setCreatedDateDATE(DateTime createdDateDATE) {
-    this.createdDateDATE = createdDateDATE;
+  public void setCreateddatedate(DateTime createddatedate) {
+    this.createddatedate = createddatedate;
   }
 
-  public Posshift closedDateDATE(DateTime closedDateDATE) {
-    this.closedDateDATE = closedDateDATE;
+  public Posshift closeddatedate(DateTime closeddatedate) {
+    this.closeddatedate = closeddatedate;
     return this;
   }
 
    /**
-   * Ukončeno [persistentní položka]
-   * @return closedDateDATE
+   * ukončeno [persistentní položka]
+   * @return closeddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Ukončeno [persistentní položka]")
-  public DateTime getClosedDateDATE() {
-    return closedDateDATE;
+  @ApiModelProperty(example = "null", value = "ukončeno [persistentní položka]")
+  public DateTime getCloseddatedate() {
+    return closeddatedate;
   }
 
-  public void setClosedDateDATE(DateTime closedDateDATE) {
-    this.closedDateDATE = closedDateDATE;
+  public void setCloseddatedate(DateTime closeddatedate) {
+    this.closeddatedate = closeddatedate;
   }
 
   public Posshift amount(Double amount) {
@@ -398,10 +434,10 @@ public class Posshift   {
   }
 
    /**
-   * Tržba [persistentní položka]
+   * tržba [persistentní položka]
    * @return amount
   **/
-  @ApiModelProperty(example = "null", value = "Tržba [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "tržba [persistentní položka]")
   public Double getAmount() {
     return amount;
   }
@@ -416,10 +452,10 @@ public class Posshift   {
   }
 
    /**
-   * Slevy
+   * slevy
    * @return discount
   **/
-  @ApiModelProperty(example = "null", value = "Slevy")
+  @ApiModelProperty(example = "null", value = "slevy")
   public Double getDiscount() {
     return discount;
   }
@@ -428,45 +464,45 @@ public class Posshift   {
     this.discount = discount;
   }
 
-  public Posshift countOfBills(Integer countOfBills) {
-    this.countOfBills = countOfBills;
+  public Posshift countofbills(Integer countofbills) {
+    this.countofbills = countofbills;
     return this;
   }
 
    /**
-   * Počet účtenek [persistentní položka]
-   * @return countOfBills
+   * počet účtenek [persistentní položka]
+   * @return countofbills
   **/
-  @ApiModelProperty(example = "null", value = "Počet účtenek [persistentní položka]")
-  public Integer getCountOfBills() {
-    return countOfBills;
+  @ApiModelProperty(example = "null", value = "počet účtenek [persistentní položka]")
+  public Integer getCountofbills() {
+    return countofbills;
   }
 
-  public void setCountOfBills(Integer countOfBills) {
-    this.countOfBills = countOfBills;
+  public void setCountofbills(Integer countofbills) {
+    this.countofbills = countofbills;
   }
 
-  public Posshift vATRates(List<Posshiftvatrate> vATRates) {
-    this.vATRates = vATRates;
+  public Posshift vatrates(List<Posshiftvatrate> vatrates) {
+    this.vatrates = vatrates;
     return this;
   }
 
-  public Posshift addVATRatesItem(Posshiftvatrate vATRatesItem) {
-    this.vATRates.add(vATRatesItem);
+  public Posshift addVatratesItem(Posshiftvatrate vatratesItem) {
+    this.vatrates.add(vatratesItem);
     return this;
   }
 
    /**
-   * Sazby DPH; kolekce BO Směna - prodej v sazbě DPH [nepersistentní položka]
-   * @return vATRates
+   * sazby dph; kolekce bo směna - prodej v sazbě dph [nepersistentní položka]
+   * @return vatrates
   **/
-  @ApiModelProperty(example = "null", value = "Sazby DPH; kolekce BO Směna - prodej v sazbě DPH [nepersistentní položka]")
-  public List<Posshiftvatrate> getVATRates() {
-    return vATRates;
+  @ApiModelProperty(example = "null", value = "sazby dph; kolekce bo směna - prodej v sazbě dph [nepersistentní položka]")
+  public List<Posshiftvatrate> getVatrates() {
+    return vatrates;
   }
 
-  public void setVATRates(List<Posshiftvatrate> vATRates) {
-    this.vATRates = vATRates;
+  public void setVatrates(List<Posshiftvatrate> vatrates) {
+    this.vatrates = vatrates;
   }
 
   public Posshift firms(List<Posshiftfirm> firms) {
@@ -480,10 +516,10 @@ public class Posshift   {
   }
 
    /**
-   * Firmy; kolekce BO Směna - prodej za firmy [nepersistentní položka]
+   * firmy; kolekce bo směna - prodej za firmy [nepersistentní položka]
    * @return firms
   **/
-  @ApiModelProperty(example = "null", value = "Firmy; kolekce BO Směna - prodej za firmy [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "firmy; kolekce bo směna - prodej za firmy [nepersistentní položka]")
   public List<Posshiftfirm> getFirms() {
     return firms;
   }
@@ -492,27 +528,27 @@ public class Posshift   {
     this.firms = firms;
   }
 
-  public Posshift storeCards(List<Posshiftstorecard> storeCards) {
-    this.storeCards = storeCards;
+  public Posshift storecards(List<Posshiftstorecard> storecards) {
+    this.storecards = storecards;
     return this;
   }
 
-  public Posshift addStoreCardsItem(Posshiftstorecard storeCardsItem) {
-    this.storeCards.add(storeCardsItem);
+  public Posshift addStorecardsItem(Posshiftstorecard storecardsItem) {
+    this.storecards.add(storecardsItem);
     return this;
   }
 
    /**
-   * Skladové karty; kolekce BO Směna - prodej za zboží [nepersistentní položka]
-   * @return storeCards
+   * skladové karty; kolekce bo směna - prodej za zboží [nepersistentní položka]
+   * @return storecards
   **/
-  @ApiModelProperty(example = "null", value = "Skladové karty; kolekce BO Směna - prodej za zboží [nepersistentní položka]")
-  public List<Posshiftstorecard> getStoreCards() {
-    return storeCards;
+  @ApiModelProperty(example = "null", value = "skladové karty; kolekce bo směna - prodej za zboží [nepersistentní položka]")
+  public List<Posshiftstorecard> getStorecards() {
+    return storecards;
   }
 
-  public void setStoreCards(List<Posshiftstorecard> storeCards) {
-    this.storeCards = storeCards;
+  public void setStorecards(List<Posshiftstorecard> storecards) {
+    this.storecards = storecards;
   }
 
   public Posshift stores(List<Posshiftstorecard> stores) {
@@ -526,10 +562,10 @@ public class Posshift   {
   }
 
    /**
-   * Sklady; kolekce BO Směna - prodej za zboží [nepersistentní položka]
+   * sklady; kolekce bo směna - prodej za zboží [nepersistentní položka]
    * @return stores
   **/
-  @ApiModelProperty(example = "null", value = "Sklady; kolekce BO Směna - prodej za zboží [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "sklady; kolekce bo směna - prodej za zboží [nepersistentní položka]")
   public List<Posshiftstorecard> getStores() {
     return stores;
   }
@@ -549,10 +585,10 @@ public class Posshift   {
   }
 
    /**
-   * Uživatelé; kolekce BO Směna - prodej za obsluhujícího [nepersistentní položka]
+   * uživatelé; kolekce bo směna - prodej za obsluhujícího [nepersistentní položka]
    * @return users
   **/
-  @ApiModelProperty(example = "null", value = "Uživatelé; kolekce BO Směna - prodej za obsluhujícího [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "uživatelé; kolekce bo směna - prodej za obsluhujícího [nepersistentní položka]")
   public List<Posshiftuser> getUsers() {
     return users;
   }
@@ -572,10 +608,10 @@ public class Posshift   {
   }
 
    /**
-   * Způsoby úhrady; kolekce BO Směna - prodej za způsoby úhrady [nepersistentní položka]
+   * způsoby úhrady; kolekce bo směna - prodej za způsoby úhrady [nepersistentní položka]
    * @return payments
   **/
-  @ApiModelProperty(example = "null", value = "Způsoby úhrady; kolekce BO Směna - prodej za způsoby úhrady [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "způsoby úhrady; kolekce bo směna - prodej za způsoby úhrady [nepersistentní položka]")
   public List<Posshiftpayment> getPayments() {
     return payments;
   }
@@ -594,29 +630,29 @@ public class Posshift   {
       return false;
     }
     Posshift posshift = (Posshift) o;
-    return Objects.equals(this.displayName, posshift.displayName) &&
-        Objects.equals(this.ID, posshift.ID) &&
-        Objects.equals(this.classID, posshift.classID) &&
-        Objects.equals(this.objVersion, posshift.objVersion) &&
+    return Objects.equals(this.displayname, posshift.displayname) &&
+        Objects.equals(this.id, posshift.id) &&
+        Objects.equals(this.classid, posshift.classid) &&
+        Objects.equals(this.objversion, posshift.objversion) &&
         Objects.equals(this.rows, posshift.rows) &&
-        Objects.equals(this.docQueueID, posshift.docQueueID) &&
-        Objects.equals(this.periodID, posshift.periodID) &&
-        Objects.equals(this.ordNumber, posshift.ordNumber) &&
-        Objects.equals(this.docDateDATE, posshift.docDateDATE) &&
-        Objects.equals(this.createdByID, posshift.createdByID) &&
-        Objects.equals(this.newRelatedType, posshift.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, posshift.newRelatedDocumentID) &&
-        Objects.equals(this.shopID, posshift.shopID) &&
-        Objects.equals(this.closedByID, posshift.closedByID) &&
-        Objects.equals(this.shiftCalendarRowID, posshift.shiftCalendarRowID) &&
-        Objects.equals(this.createdDateDATE, posshift.createdDateDATE) &&
-        Objects.equals(this.closedDateDATE, posshift.closedDateDATE) &&
+        Objects.equals(this.docqueueId, posshift.docqueueId) &&
+        Objects.equals(this.periodId, posshift.periodId) &&
+        Objects.equals(this.ordnumber, posshift.ordnumber) &&
+        Objects.equals(this.docdatedate, posshift.docdatedate) &&
+        Objects.equals(this.createdbyId, posshift.createdbyId) &&
+        Objects.equals(this.newrelatedtype, posshift.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, posshift.newrelateddocumentId) &&
+        Objects.equals(this.shopId, posshift.shopId) &&
+        Objects.equals(this.closedbyId, posshift.closedbyId) &&
+        Objects.equals(this.shiftcalendarrowId, posshift.shiftcalendarrowId) &&
+        Objects.equals(this.createddatedate, posshift.createddatedate) &&
+        Objects.equals(this.closeddatedate, posshift.closeddatedate) &&
         Objects.equals(this.amount, posshift.amount) &&
         Objects.equals(this.discount, posshift.discount) &&
-        Objects.equals(this.countOfBills, posshift.countOfBills) &&
-        Objects.equals(this.vATRates, posshift.vATRates) &&
+        Objects.equals(this.countofbills, posshift.countofbills) &&
+        Objects.equals(this.vatrates, posshift.vatrates) &&
         Objects.equals(this.firms, posshift.firms) &&
-        Objects.equals(this.storeCards, posshift.storeCards) &&
+        Objects.equals(this.storecards, posshift.storecards) &&
         Objects.equals(this.stores, posshift.stores) &&
         Objects.equals(this.users, posshift.users) &&
         Objects.equals(this.payments, posshift.payments);
@@ -624,7 +660,7 @@ public class Posshift   {
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, docQueueID, periodID, ordNumber, docDateDATE, createdByID, newRelatedType, newRelatedDocumentID, shopID, closedByID, shiftCalendarRowID, createdDateDATE, closedDateDATE, amount, discount, countOfBills, vATRates, firms, storeCards, stores, users, payments);
+    return Objects.hash(displayname, id, classid, objversion, rows, docqueueId, periodId, ordnumber, docdatedate, createdbyId, newrelatedtype, newrelateddocumentId, shopId, closedbyId, shiftcalendarrowId, createddatedate, closeddatedate, amount, discount, countofbills, vatrates, firms, storecards, stores, users, payments);
   }
 
   @Override
@@ -632,29 +668,29 @@ public class Posshift   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posshift {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    shopID: ").append(toIndentedString(shopID)).append("\n");
-    sb.append("    closedByID: ").append(toIndentedString(closedByID)).append("\n");
-    sb.append("    shiftCalendarRowID: ").append(toIndentedString(shiftCalendarRowID)).append("\n");
-    sb.append("    createdDateDATE: ").append(toIndentedString(createdDateDATE)).append("\n");
-    sb.append("    closedDateDATE: ").append(toIndentedString(closedDateDATE)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    shopId: ").append(toIndentedString(shopId)).append("\n");
+    sb.append("    closedbyId: ").append(toIndentedString(closedbyId)).append("\n");
+    sb.append("    shiftcalendarrowId: ").append(toIndentedString(shiftcalendarrowId)).append("\n");
+    sb.append("    createddatedate: ").append(toIndentedString(createddatedate)).append("\n");
+    sb.append("    closeddatedate: ").append(toIndentedString(closeddatedate)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
     sb.append("    discount: ").append(toIndentedString(discount)).append("\n");
-    sb.append("    countOfBills: ").append(toIndentedString(countOfBills)).append("\n");
-    sb.append("    vATRates: ").append(toIndentedString(vATRates)).append("\n");
+    sb.append("    countofbills: ").append(toIndentedString(countofbills)).append("\n");
+    sb.append("    vatrates: ").append(toIndentedString(vatrates)).append("\n");
     sb.append("    firms: ").append(toIndentedString(firms)).append("\n");
-    sb.append("    storeCards: ").append(toIndentedString(storeCards)).append("\n");
+    sb.append("    storecards: ").append(toIndentedString(storecards)).append("\n");
     sb.append("    stores: ").append(toIndentedString(stores)).append("\n");
     sb.append("    users: ").append(toIndentedString(users)).append("\n");
     sb.append("    payments: ").append(toIndentedString(payments)).append("\n");

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,66 +34,102 @@ import java.util.Objects;
 /**
  * Mlbdistance
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Mlbdistance   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Place1_ID")
-  private String place1ID = null;
+  @SerializedName("place1_id")
+  private String place1Id = null;
 
-  @SerializedName("Place2_ID")
-  private String place2ID = null;
+  @SerializedName("place2_id")
+  private String place2Id = null;
 
-  @SerializedName("Distance")
+  @SerializedName("distance")
   private Double distance = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Mlbdistance displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Mlbdistance id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Mlbdistance classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Mlbdistance objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Mlbdistance hidden(Boolean hidden) {
@@ -102,10 +138,10 @@ public class Mlbdistance   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -114,40 +150,40 @@ public class Mlbdistance   {
     this.hidden = hidden;
   }
 
-  public Mlbdistance place1ID(String place1ID) {
-    this.place1ID = place1ID;
+  public Mlbdistance place1Id(String place1Id) {
+    this.place1Id = place1Id;
     return this;
   }
 
    /**
-   * Odkud; ID objektu Místa [persistentní položka]
-   * @return place1ID
+   * odkud; id objektu místa [persistentní položka]
+   * @return place1Id
   **/
-  @ApiModelProperty(example = "null", value = "Odkud; ID objektu Místa [persistentní položka]")
-  public String getPlace1ID() {
-    return place1ID;
+  @ApiModelProperty(example = "null", value = "odkud; id objektu místa [persistentní položka]")
+  public String getPlace1Id() {
+    return place1Id;
   }
 
-  public void setPlace1ID(String place1ID) {
-    this.place1ID = place1ID;
+  public void setPlace1Id(String place1Id) {
+    this.place1Id = place1Id;
   }
 
-  public Mlbdistance place2ID(String place2ID) {
-    this.place2ID = place2ID;
+  public Mlbdistance place2Id(String place2Id) {
+    this.place2Id = place2Id;
     return this;
   }
 
    /**
-   * Kam; ID objektu Místa [persistentní položka]
-   * @return place2ID
+   * kam; id objektu místa [persistentní položka]
+   * @return place2Id
   **/
-  @ApiModelProperty(example = "null", value = "Kam; ID objektu Místa [persistentní položka]")
-  public String getPlace2ID() {
-    return place2ID;
+  @ApiModelProperty(example = "null", value = "kam; id objektu místa [persistentní položka]")
+  public String getPlace2Id() {
+    return place2Id;
   }
 
-  public void setPlace2ID(String place2ID) {
-    this.place2ID = place2ID;
+  public void setPlace2Id(String place2Id) {
+    this.place2Id = place2Id;
   }
 
   public Mlbdistance distance(Double distance) {
@@ -156,10 +192,10 @@ public class Mlbdistance   {
   }
 
    /**
-   * Vzdálenost [persistentní položka]
+   * vzdálenost [persistentní položka]
    * @return distance
   **/
-  @ApiModelProperty(example = "null", value = "Vzdálenost [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "vzdálenost [persistentní položka]")
   public Double getDistance() {
     return distance;
   }
@@ -178,19 +214,19 @@ public class Mlbdistance   {
       return false;
     }
     Mlbdistance mlbdistance = (Mlbdistance) o;
-    return Objects.equals(this.displayName, mlbdistance.displayName) &&
-        Objects.equals(this.ID, mlbdistance.ID) &&
-        Objects.equals(this.classID, mlbdistance.classID) &&
-        Objects.equals(this.objVersion, mlbdistance.objVersion) &&
+    return Objects.equals(this.displayname, mlbdistance.displayname) &&
+        Objects.equals(this.id, mlbdistance.id) &&
+        Objects.equals(this.classid, mlbdistance.classid) &&
+        Objects.equals(this.objversion, mlbdistance.objversion) &&
         Objects.equals(this.hidden, mlbdistance.hidden) &&
-        Objects.equals(this.place1ID, mlbdistance.place1ID) &&
-        Objects.equals(this.place2ID, mlbdistance.place2ID) &&
+        Objects.equals(this.place1Id, mlbdistance.place1Id) &&
+        Objects.equals(this.place2Id, mlbdistance.place2Id) &&
         Objects.equals(this.distance, mlbdistance.distance);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, place1ID, place2ID, distance);
+    return Objects.hash(displayname, id, classid, objversion, hidden, place1Id, place2Id, distance);
   }
 
   @Override
@@ -198,13 +234,13 @@ public class Mlbdistance   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Mlbdistance {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    place1ID: ").append(toIndentedString(place1ID)).append("\n");
-    sb.append("    place2ID: ").append(toIndentedString(place2ID)).append("\n");
+    sb.append("    place1Id: ").append(toIndentedString(place1Id)).append("\n");
+    sb.append("    place2Id: ").append(toIndentedString(place2Id)).append("\n");
     sb.append("    distance: ").append(toIndentedString(distance)).append("\n");
     sb.append("}");
     return sb.toString();

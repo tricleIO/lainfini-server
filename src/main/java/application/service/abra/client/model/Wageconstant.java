@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,96 +36,132 @@ import java.util.Objects;
 /**
  * Wageconstant
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wageconstant   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Wageconstantvalue> rows = new ArrayList<Wageconstantvalue>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-  @SerializedName("FieldDataType")
-  private Integer fieldDataType = null;
+  @SerializedName("fielddatatype")
+  private Integer fielddatatype = null;
 
-  @SerializedName("EditMethod")
-  private Integer editMethod = null;
+  @SerializedName("editmethod")
+  private Integer editmethod = null;
 
-  @SerializedName("Enumeration")
+  @SerializedName("enumeration")
   private String enumeration = null;
 
-  @SerializedName("FieldDataTypeText")
-  private String fieldDataTypeText = null;
+  @SerializedName("fielddatatypetext")
+  private String fielddatatypetext = null;
 
-  @SerializedName("CodeWithPrefix")
-  private String codeWithPrefix = null;
+  @SerializedName("codewithprefix")
+  private String codewithprefix = null;
 
-  @SerializedName("Prefix")
+  @SerializedName("prefix")
   private String prefix = null;
 
-  @SerializedName("AllowChangeHistory")
-  private Boolean allowChangeHistory = null;
+  @SerializedName("allowchangehistory")
+  private Boolean allowchangehistory = null;
 
-  @SerializedName("ForWizard")
-  private Boolean forWizard = null;
+  @SerializedName("forwizard")
+  private Boolean forwizard = null;
 
-  @SerializedName("IsLocalAmount")
-  private Boolean isLocalAmount = null;
+  @SerializedName("islocalamount")
+  private Boolean islocalamount = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Wageconstant displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wageconstant id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wageconstant classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wageconstant objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Wageconstant rows(List<Wageconstantvalue> rows) {
@@ -139,10 +175,10 @@ public class Wageconstant   {
   }
 
    /**
-   * Hodnoty; kolekce BO Hodnota globální proměnné [nepersistentní položka]
+   * hodnoty; kolekce bo hodnota globální proměnné [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Hodnoty; kolekce BO Hodnota globální proměnné [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "hodnoty; kolekce bo hodnota globální proměnné [nepersistentní položka]")
   public List<Wageconstantvalue> getRows() {
     return rows;
   }
@@ -157,10 +193,10 @@ public class Wageconstant   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -175,10 +211,10 @@ public class Wageconstant   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -193,10 +229,10 @@ public class Wageconstant   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -211,10 +247,10 @@ public class Wageconstant   {
   }
 
    /**
-   * Orig. [persistentní položka]
+   * orig. [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Orig. [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "orig. [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -223,40 +259,40 @@ public class Wageconstant   {
     this.system = system;
   }
 
-  public Wageconstant fieldDataType(Integer fieldDataType) {
-    this.fieldDataType = fieldDataType;
+  public Wageconstant fielddatatype(Integer fielddatatype) {
+    this.fielddatatype = fielddatatype;
     return this;
   }
 
    /**
-   * Datový typ [persistentní položka]
-   * @return fieldDataType
+   * datový typ [persistentní položka]
+   * @return fielddatatype
   **/
-  @ApiModelProperty(example = "null", value = "Datový typ [persistentní položka]")
-  public Integer getFieldDataType() {
-    return fieldDataType;
+  @ApiModelProperty(example = "null", value = "datový typ [persistentní položka]")
+  public Integer getFielddatatype() {
+    return fielddatatype;
   }
 
-  public void setFieldDataType(Integer fieldDataType) {
-    this.fieldDataType = fieldDataType;
+  public void setFielddatatype(Integer fielddatatype) {
+    this.fielddatatype = fielddatatype;
   }
 
-  public Wageconstant editMethod(Integer editMethod) {
-    this.editMethod = editMethod;
+  public Wageconstant editmethod(Integer editmethod) {
+    this.editmethod = editmethod;
     return this;
   }
 
    /**
-   * Editace [persistentní položka]
-   * @return editMethod
+   * editace [persistentní položka]
+   * @return editmethod
   **/
-  @ApiModelProperty(example = "null", value = "Editace [persistentní položka]")
-  public Integer getEditMethod() {
-    return editMethod;
+  @ApiModelProperty(example = "null", value = "editace [persistentní položka]")
+  public Integer getEditmethod() {
+    return editmethod;
   }
 
-  public void setEditMethod(Integer editMethod) {
-    this.editMethod = editMethod;
+  public void setEditmethod(Integer editmethod) {
+    this.editmethod = editmethod;
   }
 
   public Wageconstant enumeration(String enumeration) {
@@ -265,10 +301,10 @@ public class Wageconstant   {
   }
 
    /**
-   * Výčet [persistentní položka]
+   * výčet [persistentní položka]
    * @return enumeration
   **/
-  @ApiModelProperty(example = "null", value = "Výčet [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "výčet [persistentní položka]")
   public String getEnumeration() {
     return enumeration;
   }
@@ -277,40 +313,40 @@ public class Wageconstant   {
     this.enumeration = enumeration;
   }
 
-  public Wageconstant fieldDataTypeText(String fieldDataTypeText) {
-    this.fieldDataTypeText = fieldDataTypeText;
+  public Wageconstant fielddatatypetext(String fielddatatypetext) {
+    this.fielddatatypetext = fielddatatypetext;
     return this;
   }
 
    /**
-   * Datový typ
-   * @return fieldDataTypeText
+   * datový typ
+   * @return fielddatatypetext
   **/
-  @ApiModelProperty(example = "null", value = "Datový typ")
-  public String getFieldDataTypeText() {
-    return fieldDataTypeText;
+  @ApiModelProperty(example = "null", value = "datový typ")
+  public String getFielddatatypetext() {
+    return fielddatatypetext;
   }
 
-  public void setFieldDataTypeText(String fieldDataTypeText) {
-    this.fieldDataTypeText = fieldDataTypeText;
+  public void setFielddatatypetext(String fielddatatypetext) {
+    this.fielddatatypetext = fielddatatypetext;
   }
 
-  public Wageconstant codeWithPrefix(String codeWithPrefix) {
-    this.codeWithPrefix = codeWithPrefix;
+  public Wageconstant codewithprefix(String codewithprefix) {
+    this.codewithprefix = codewithprefix;
     return this;
   }
 
    /**
-   * Prefix, kód
-   * @return codeWithPrefix
+   * prefix, kód
+   * @return codewithprefix
   **/
-  @ApiModelProperty(example = "null", value = "Prefix, kód")
-  public String getCodeWithPrefix() {
-    return codeWithPrefix;
+  @ApiModelProperty(example = "null", value = "prefix, kód")
+  public String getCodewithprefix() {
+    return codewithprefix;
   }
 
-  public void setCodeWithPrefix(String codeWithPrefix) {
-    this.codeWithPrefix = codeWithPrefix;
+  public void setCodewithprefix(String codewithprefix) {
+    this.codewithprefix = codewithprefix;
   }
 
   public Wageconstant prefix(String prefix) {
@@ -319,10 +355,10 @@ public class Wageconstant   {
   }
 
    /**
-   * Prefix
+   * prefix
    * @return prefix
   **/
-  @ApiModelProperty(example = "null", value = "Prefix")
+  @ApiModelProperty(example = "null", value = "prefix")
   public String getPrefix() {
     return prefix;
   }
@@ -331,58 +367,58 @@ public class Wageconstant   {
     this.prefix = prefix;
   }
 
-  public Wageconstant allowChangeHistory(Boolean allowChangeHistory) {
-    this.allowChangeHistory = allowChangeHistory;
+  public Wageconstant allowchangehistory(Boolean allowchangehistory) {
+    this.allowchangehistory = allowchangehistory;
     return this;
   }
 
    /**
-   * Lze měnit historii [persistentní položka]
-   * @return allowChangeHistory
+   * lze měnit historii [persistentní položka]
+   * @return allowchangehistory
   **/
-  @ApiModelProperty(example = "null", value = "Lze měnit historii [persistentní položka]")
-  public Boolean getAllowChangeHistory() {
-    return allowChangeHistory;
+  @ApiModelProperty(example = "null", value = "lze měnit historii [persistentní položka]")
+  public Boolean getAllowchangehistory() {
+    return allowchangehistory;
   }
 
-  public void setAllowChangeHistory(Boolean allowChangeHistory) {
-    this.allowChangeHistory = allowChangeHistory;
+  public void setAllowchangehistory(Boolean allowchangehistory) {
+    this.allowchangehistory = allowchangehistory;
   }
 
-  public Wageconstant forWizard(Boolean forWizard) {
-    this.forWizard = forWizard;
+  public Wageconstant forwizard(Boolean forwizard) {
+    this.forwizard = forwizard;
     return this;
   }
 
    /**
-   * Nabízet v průvodci [persistentní položka]
-   * @return forWizard
+   * nabízet v průvodci [persistentní položka]
+   * @return forwizard
   **/
-  @ApiModelProperty(example = "null", value = "Nabízet v průvodci [persistentní položka]")
-  public Boolean getForWizard() {
-    return forWizard;
+  @ApiModelProperty(example = "null", value = "nabízet v průvodci [persistentní položka]")
+  public Boolean getForwizard() {
+    return forwizard;
   }
 
-  public void setForWizard(Boolean forWizard) {
-    this.forWizard = forWizard;
+  public void setForwizard(Boolean forwizard) {
+    this.forwizard = forwizard;
   }
 
-  public Wageconstant isLocalAmount(Boolean isLocalAmount) {
-    this.isLocalAmount = isLocalAmount;
+  public Wageconstant islocalamount(Boolean islocalamount) {
+    this.islocalamount = islocalamount;
     return this;
   }
 
    /**
-   * Je v lokální měně [persistentní položka]
-   * @return isLocalAmount
+   * je v lokální měně [persistentní položka]
+   * @return islocalamount
   **/
-  @ApiModelProperty(example = "null", value = "Je v lokální měně [persistentní položka]")
-  public Boolean getIsLocalAmount() {
-    return isLocalAmount;
+  @ApiModelProperty(example = "null", value = "je v lokální měně [persistentní položka]")
+  public Boolean getIslocalamount() {
+    return islocalamount;
   }
 
-  public void setIsLocalAmount(Boolean isLocalAmount) {
-    this.isLocalAmount = isLocalAmount;
+  public void setIslocalamount(Boolean islocalamount) {
+    this.islocalamount = islocalamount;
   }
 
 
@@ -395,29 +431,29 @@ public class Wageconstant   {
       return false;
     }
     Wageconstant wageconstant = (Wageconstant) o;
-    return Objects.equals(this.displayName, wageconstant.displayName) &&
-        Objects.equals(this.ID, wageconstant.ID) &&
-        Objects.equals(this.classID, wageconstant.classID) &&
-        Objects.equals(this.objVersion, wageconstant.objVersion) &&
+    return Objects.equals(this.displayname, wageconstant.displayname) &&
+        Objects.equals(this.id, wageconstant.id) &&
+        Objects.equals(this.classid, wageconstant.classid) &&
+        Objects.equals(this.objversion, wageconstant.objversion) &&
         Objects.equals(this.rows, wageconstant.rows) &&
         Objects.equals(this.hidden, wageconstant.hidden) &&
         Objects.equals(this.code, wageconstant.code) &&
         Objects.equals(this.name, wageconstant.name) &&
         Objects.equals(this.system, wageconstant.system) &&
-        Objects.equals(this.fieldDataType, wageconstant.fieldDataType) &&
-        Objects.equals(this.editMethod, wageconstant.editMethod) &&
+        Objects.equals(this.fielddatatype, wageconstant.fielddatatype) &&
+        Objects.equals(this.editmethod, wageconstant.editmethod) &&
         Objects.equals(this.enumeration, wageconstant.enumeration) &&
-        Objects.equals(this.fieldDataTypeText, wageconstant.fieldDataTypeText) &&
-        Objects.equals(this.codeWithPrefix, wageconstant.codeWithPrefix) &&
+        Objects.equals(this.fielddatatypetext, wageconstant.fielddatatypetext) &&
+        Objects.equals(this.codewithprefix, wageconstant.codewithprefix) &&
         Objects.equals(this.prefix, wageconstant.prefix) &&
-        Objects.equals(this.allowChangeHistory, wageconstant.allowChangeHistory) &&
-        Objects.equals(this.forWizard, wageconstant.forWizard) &&
-        Objects.equals(this.isLocalAmount, wageconstant.isLocalAmount);
+        Objects.equals(this.allowchangehistory, wageconstant.allowchangehistory) &&
+        Objects.equals(this.forwizard, wageconstant.forwizard) &&
+        Objects.equals(this.islocalamount, wageconstant.islocalamount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, code, name, system, fieldDataType, editMethod, enumeration, fieldDataTypeText, codeWithPrefix, prefix, allowChangeHistory, forWizard, isLocalAmount);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, code, name, system, fielddatatype, editmethod, enumeration, fielddatatypetext, codewithprefix, prefix, allowchangehistory, forwizard, islocalamount);
   }
 
   @Override
@@ -425,24 +461,24 @@ public class Wageconstant   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wageconstant {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
-    sb.append("    fieldDataType: ").append(toIndentedString(fieldDataType)).append("\n");
-    sb.append("    editMethod: ").append(toIndentedString(editMethod)).append("\n");
+    sb.append("    fielddatatype: ").append(toIndentedString(fielddatatype)).append("\n");
+    sb.append("    editmethod: ").append(toIndentedString(editmethod)).append("\n");
     sb.append("    enumeration: ").append(toIndentedString(enumeration)).append("\n");
-    sb.append("    fieldDataTypeText: ").append(toIndentedString(fieldDataTypeText)).append("\n");
-    sb.append("    codeWithPrefix: ").append(toIndentedString(codeWithPrefix)).append("\n");
+    sb.append("    fielddatatypetext: ").append(toIndentedString(fielddatatypetext)).append("\n");
+    sb.append("    codewithprefix: ").append(toIndentedString(codewithprefix)).append("\n");
     sb.append("    prefix: ").append(toIndentedString(prefix)).append("\n");
-    sb.append("    allowChangeHistory: ").append(toIndentedString(allowChangeHistory)).append("\n");
-    sb.append("    forWizard: ").append(toIndentedString(forWizard)).append("\n");
-    sb.append("    isLocalAmount: ").append(toIndentedString(isLocalAmount)).append("\n");
+    sb.append("    allowchangehistory: ").append(toIndentedString(allowchangehistory)).append("\n");
+    sb.append("    forwizard: ").append(toIndentedString(forwizard)).append("\n");
+    sb.append("    islocalamount: ").append(toIndentedString(islocalamount)).append("\n");
     sb.append("}");
     return sb.toString();
   }

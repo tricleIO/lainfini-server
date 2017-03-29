@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,81 +36,117 @@ import java.util.Objects;
 /**
  * Scmdatasource
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Scmdatasource   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Scmdatasourcerow> rows = new ArrayList<Scmdatasourcerow>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Kind")
+  @SerializedName("kind")
   private Integer kind = null;
 
-  @SerializedName("DocumentType")
-  private String documentType = null;
+  @SerializedName("documenttype")
+  private String documenttype = null;
 
-  @SerializedName("SQLQuery")
-  private String sQLQuery = null;
+  @SerializedName("sqlquery")
+  private String sqlquery = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Scmdatasource displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Scmdatasource id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Scmdatasource classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Scmdatasource objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Scmdatasource rows(List<Scmdatasourcerow> rows) {
@@ -124,10 +160,10 @@ public class Scmdatasource   {
   }
 
    /**
-   * Řádky; kolekce BO Řádek datového zdroje [nepersistentní položka]
+   * Řádky; kolekce bo Řádek datového zdroje [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Řádek datového zdroje [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo Řádek datového zdroje [nepersistentní položka]")
   public List<Scmdatasourcerow> getRows() {
     return rows;
   }
@@ -142,10 +178,10 @@ public class Scmdatasource   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -160,10 +196,10 @@ public class Scmdatasource   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -178,10 +214,10 @@ public class Scmdatasource   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -196,10 +232,10 @@ public class Scmdatasource   {
   }
 
    /**
-   * Druh [persistentní položka]
+   * druh [persistentní položka]
    * @return kind
   **/
-  @ApiModelProperty(example = "null", value = "Druh [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "druh [persistentní položka]")
   public Integer getKind() {
     return kind;
   }
@@ -208,40 +244,40 @@ public class Scmdatasource   {
     this.kind = kind;
   }
 
-  public Scmdatasource documentType(String documentType) {
-    this.documentType = documentType;
+  public Scmdatasource documenttype(String documenttype) {
+    this.documenttype = documenttype;
     return this;
   }
 
    /**
-   * Typ dokumentu [persistentní položka]
-   * @return documentType
+   * typ dokumentu [persistentní položka]
+   * @return documenttype
   **/
-  @ApiModelProperty(example = "null", value = "Typ dokumentu [persistentní položka]")
-  public String getDocumentType() {
-    return documentType;
+  @ApiModelProperty(example = "null", value = "typ dokumentu [persistentní položka]")
+  public String getDocumenttype() {
+    return documenttype;
   }
 
-  public void setDocumentType(String documentType) {
-    this.documentType = documentType;
+  public void setDocumenttype(String documenttype) {
+    this.documenttype = documenttype;
   }
 
-  public Scmdatasource sQLQuery(String sQLQuery) {
-    this.sQLQuery = sQLQuery;
+  public Scmdatasource sqlquery(String sqlquery) {
+    this.sqlquery = sqlquery;
     return this;
   }
 
    /**
-   * SQL dotaz [persistentní položka]
-   * @return sQLQuery
+   * sql dotaz [persistentní položka]
+   * @return sqlquery
   **/
-  @ApiModelProperty(example = "null", value = "SQL dotaz [persistentní položka]")
-  public String getSQLQuery() {
-    return sQLQuery;
+  @ApiModelProperty(example = "null", value = "sql dotaz [persistentní položka]")
+  public String getSqlquery() {
+    return sqlquery;
   }
 
-  public void setSQLQuery(String sQLQuery) {
-    this.sQLQuery = sQLQuery;
+  public void setSqlquery(String sqlquery) {
+    this.sqlquery = sqlquery;
   }
 
   public Scmdatasource system(Boolean system) {
@@ -250,10 +286,10 @@ public class Scmdatasource   {
   }
 
    /**
-   * Systémový [persistentní položka]
+   * systémový [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Systémový [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "systémový [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -268,10 +304,10 @@ public class Scmdatasource   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -290,24 +326,24 @@ public class Scmdatasource   {
       return false;
     }
     Scmdatasource scmdatasource = (Scmdatasource) o;
-    return Objects.equals(this.displayName, scmdatasource.displayName) &&
-        Objects.equals(this.ID, scmdatasource.ID) &&
-        Objects.equals(this.classID, scmdatasource.classID) &&
-        Objects.equals(this.objVersion, scmdatasource.objVersion) &&
+    return Objects.equals(this.displayname, scmdatasource.displayname) &&
+        Objects.equals(this.id, scmdatasource.id) &&
+        Objects.equals(this.classid, scmdatasource.classid) &&
+        Objects.equals(this.objversion, scmdatasource.objversion) &&
         Objects.equals(this.rows, scmdatasource.rows) &&
         Objects.equals(this.hidden, scmdatasource.hidden) &&
         Objects.equals(this.code, scmdatasource.code) &&
         Objects.equals(this.name, scmdatasource.name) &&
         Objects.equals(this.kind, scmdatasource.kind) &&
-        Objects.equals(this.documentType, scmdatasource.documentType) &&
-        Objects.equals(this.sQLQuery, scmdatasource.sQLQuery) &&
+        Objects.equals(this.documenttype, scmdatasource.documenttype) &&
+        Objects.equals(this.sqlquery, scmdatasource.sqlquery) &&
         Objects.equals(this.system, scmdatasource.system) &&
         Objects.equals(this.note, scmdatasource.note);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, code, name, kind, documentType, sQLQuery, system, note);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, code, name, kind, documenttype, sqlquery, system, note);
   }
 
   @Override
@@ -315,17 +351,17 @@ public class Scmdatasource   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Scmdatasource {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    kind: ").append(toIndentedString(kind)).append("\n");
-    sb.append("    documentType: ").append(toIndentedString(documentType)).append("\n");
-    sb.append("    sQLQuery: ").append(toIndentedString(sQLQuery)).append("\n");
+    sb.append("    documenttype: ").append(toIndentedString(documenttype)).append("\n");
+    sb.append("    sqlquery: ").append(toIndentedString(sqlquery)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
     sb.append("}");

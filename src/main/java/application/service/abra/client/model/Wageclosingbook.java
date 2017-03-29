@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,315 +37,351 @@ import java.util.Objects;
 /**
  * Wageclosingbook
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wageclosingbook   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("AccDate$DATE")
-  private DateTime accDateDATE = null;
+  @SerializedName("accdate$date")
+  private DateTime accdatedate = null;
 
-  @SerializedName("AccDocQueue_ID")
-  private String accDocQueueID = null;
+  @SerializedName("accdocqueue_id")
+  private String accdocqueueId = null;
 
-  @SerializedName("AccountingType")
-  private Integer accountingType = null;
+  @SerializedName("accountingtype")
+  private Integer accountingtype = null;
 
-  @SerializedName("IsAccounted")
-  private Boolean isAccounted = null;
+  @SerializedName("isaccounted")
+  private Boolean isaccounted = null;
 
-  @SerializedName("Dirty")
+  @SerializedName("dirty")
   private Boolean dirty = null;
 
-  @SerializedName("WagePeriod_ID")
-  private String wagePeriodID = null;
+  @SerializedName("wageperiod_id")
+  private String wageperiodId = null;
 
-  @SerializedName("UsedDefs")
-  private List<Wageclosingbookuseddef> usedDefs = new ArrayList<Wageclosingbookuseddef>();
+  @SerializedName("useddefs")
+  private List<Wageclosingbookuseddef> useddefs = new ArrayList<Wageclosingbookuseddef>();
+
+  public Wageclosingbook displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
   }
 
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Wageclosingbook docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Wageclosingbook id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Wageclosingbook periodID(String periodID) {
-    this.periodID = periodID;
+  public Wageclosingbook classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Wageclosingbook ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Wageclosingbook objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Wageclosingbook docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Wageclosingbook docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Wageclosingbook createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Wageclosingbook periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Wageclosingbook correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Wageclosingbook ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Wageclosingbook newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Wageclosingbook docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Wageclosingbook newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Wageclosingbook createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Wageclosingbook accDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public Wageclosingbook correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Datum účt. [persistentní položka]
-   * @return accDateDATE
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Datum účt. [persistentní položka]")
-  public DateTime getAccDateDATE() {
-    return accDateDATE;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setAccDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Wageclosingbook accDocQueueID(String accDocQueueID) {
-    this.accDocQueueID = accDocQueueID;
+  public Wageclosingbook newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Účetní řada; ID objektu Účetní řada dokladů [persistentní položka]
-   * @return accDocQueueID
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Účetní řada; ID objektu Účetní řada dokladů [persistentní položka]")
-  public String getAccDocQueueID() {
-    return accDocQueueID;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setAccDocQueueID(String accDocQueueID) {
-    this.accDocQueueID = accDocQueueID;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Wageclosingbook accountingType(Integer accountingType) {
-    this.accountingType = accountingType;
+  public Wageclosingbook newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * Jak účtovat
-   * @return accountingType
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "Jak účtovat")
-  public Integer getAccountingType() {
-    return accountingType;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setAccountingType(Integer accountingType) {
-    this.accountingType = accountingType;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Wageclosingbook isAccounted(Boolean isAccounted) {
-    this.isAccounted = isAccounted;
+  public Wageclosingbook accdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
+    return this;
+  }
+
+   /**
+   * datum účt. [persistentní položka]
+   * @return accdatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum účt. [persistentní položka]")
+  public DateTime getAccdatedate() {
+    return accdatedate;
+  }
+
+  public void setAccdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
+  }
+
+  public Wageclosingbook accdocqueueId(String accdocqueueId) {
+    this.accdocqueueId = accdocqueueId;
+    return this;
+  }
+
+   /**
+   * Účetní řada; id objektu Účetní řada dokladů [persistentní položka]
+   * @return accdocqueueId
+  **/
+  @ApiModelProperty(example = "null", value = "Účetní řada; id objektu Účetní řada dokladů [persistentní položka]")
+  public String getAccdocqueueId() {
+    return accdocqueueId;
+  }
+
+  public void setAccdocqueueId(String accdocqueueId) {
+    this.accdocqueueId = accdocqueueId;
+  }
+
+  public Wageclosingbook accountingtype(Integer accountingtype) {
+    this.accountingtype = accountingtype;
+    return this;
+  }
+
+   /**
+   * jak účtovat
+   * @return accountingtype
+  **/
+  @ApiModelProperty(example = "null", value = "jak účtovat")
+  public Integer getAccountingtype() {
+    return accountingtype;
+  }
+
+  public void setAccountingtype(Integer accountingtype) {
+    this.accountingtype = accountingtype;
+  }
+
+  public Wageclosingbook isaccounted(Boolean isaccounted) {
+    this.isaccounted = isaccounted;
     return this;
   }
 
    /**
    * Účtováno
-   * @return isAccounted
+   * @return isaccounted
   **/
   @ApiModelProperty(example = "null", value = "Účtováno")
-  public Boolean getIsAccounted() {
-    return isAccounted;
+  public Boolean getIsaccounted() {
+    return isaccounted;
   }
 
-  public void setIsAccounted(Boolean isAccounted) {
-    this.isAccounted = isAccounted;
+  public void setIsaccounted(Boolean isaccounted) {
+    this.isaccounted = isaccounted;
   }
 
   public Wageclosingbook dirty(Boolean dirty) {
@@ -354,10 +390,10 @@ public class Wageclosingbook   {
   }
 
    /**
-   * Zakázané přepočítání
+   * zakázané přepočítání
    * @return dirty
   **/
-  @ApiModelProperty(example = "null", value = "Zakázané přepočítání")
+  @ApiModelProperty(example = "null", value = "zakázané přepočítání")
   public Boolean getDirty() {
     return dirty;
   }
@@ -366,45 +402,45 @@ public class Wageclosingbook   {
     this.dirty = dirty;
   }
 
-  public Wageclosingbook wagePeriodID(String wagePeriodID) {
-    this.wagePeriodID = wagePeriodID;
+  public Wageclosingbook wageperiodId(String wageperiodId) {
+    this.wageperiodId = wageperiodId;
     return this;
   }
 
    /**
-   * Mzdové období; ID objektu Mzdové období [persistentní položka]
-   * @return wagePeriodID
+   * mzdové období; id objektu mzdové období [persistentní položka]
+   * @return wageperiodId
   **/
-  @ApiModelProperty(example = "null", value = "Mzdové období; ID objektu Mzdové období [persistentní položka]")
-  public String getWagePeriodID() {
-    return wagePeriodID;
+  @ApiModelProperty(example = "null", value = "mzdové období; id objektu mzdové období [persistentní položka]")
+  public String getWageperiodId() {
+    return wageperiodId;
   }
 
-  public void setWagePeriodID(String wagePeriodID) {
-    this.wagePeriodID = wagePeriodID;
+  public void setWageperiodId(String wageperiodId) {
+    this.wageperiodId = wageperiodId;
   }
 
-  public Wageclosingbook usedDefs(List<Wageclosingbookuseddef> usedDefs) {
-    this.usedDefs = usedDefs;
+  public Wageclosingbook useddefs(List<Wageclosingbookuseddef> useddefs) {
+    this.useddefs = useddefs;
     return this;
   }
 
-  public Wageclosingbook addUsedDefsItem(Wageclosingbookuseddef usedDefsItem) {
-    this.usedDefs.add(usedDefsItem);
+  public Wageclosingbook addUseddefsItem(Wageclosingbookuseddef useddefsItem) {
+    this.useddefs.add(useddefsItem);
     return this;
   }
 
    /**
-   * Použitá definice; kolekce BO Definice použitá při uzávěrce [nepersistentní položka]
-   * @return usedDefs
+   * použitá definice; kolekce bo definice použitá při uzávěrce [nepersistentní položka]
+   * @return useddefs
   **/
-  @ApiModelProperty(example = "null", value = "Použitá definice; kolekce BO Definice použitá při uzávěrce [nepersistentní položka]")
-  public List<Wageclosingbookuseddef> getUsedDefs() {
-    return usedDefs;
+  @ApiModelProperty(example = "null", value = "použitá definice; kolekce bo definice použitá při uzávěrce [nepersistentní položka]")
+  public List<Wageclosingbookuseddef> getUseddefs() {
+    return useddefs;
   }
 
-  public void setUsedDefs(List<Wageclosingbookuseddef> usedDefs) {
-    this.usedDefs = usedDefs;
+  public void setUseddefs(List<Wageclosingbookuseddef> useddefs) {
+    this.useddefs = useddefs;
   }
 
 
@@ -417,30 +453,30 @@ public class Wageclosingbook   {
       return false;
     }
     Wageclosingbook wageclosingbook = (Wageclosingbook) o;
-    return Objects.equals(this.displayName, wageclosingbook.displayName) &&
-        Objects.equals(this.ID, wageclosingbook.ID) &&
-        Objects.equals(this.classID, wageclosingbook.classID) &&
-        Objects.equals(this.objVersion, wageclosingbook.objVersion) &&
-        Objects.equals(this.docQueueID, wageclosingbook.docQueueID) &&
-        Objects.equals(this.periodID, wageclosingbook.periodID) &&
-        Objects.equals(this.ordNumber, wageclosingbook.ordNumber) &&
-        Objects.equals(this.docDateDATE, wageclosingbook.docDateDATE) &&
-        Objects.equals(this.createdByID, wageclosingbook.createdByID) &&
-        Objects.equals(this.correctedByID, wageclosingbook.correctedByID) &&
-        Objects.equals(this.newRelatedType, wageclosingbook.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, wageclosingbook.newRelatedDocumentID) &&
-        Objects.equals(this.accDateDATE, wageclosingbook.accDateDATE) &&
-        Objects.equals(this.accDocQueueID, wageclosingbook.accDocQueueID) &&
-        Objects.equals(this.accountingType, wageclosingbook.accountingType) &&
-        Objects.equals(this.isAccounted, wageclosingbook.isAccounted) &&
+    return Objects.equals(this.displayname, wageclosingbook.displayname) &&
+        Objects.equals(this.id, wageclosingbook.id) &&
+        Objects.equals(this.classid, wageclosingbook.classid) &&
+        Objects.equals(this.objversion, wageclosingbook.objversion) &&
+        Objects.equals(this.docqueueId, wageclosingbook.docqueueId) &&
+        Objects.equals(this.periodId, wageclosingbook.periodId) &&
+        Objects.equals(this.ordnumber, wageclosingbook.ordnumber) &&
+        Objects.equals(this.docdatedate, wageclosingbook.docdatedate) &&
+        Objects.equals(this.createdbyId, wageclosingbook.createdbyId) &&
+        Objects.equals(this.correctedbyId, wageclosingbook.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, wageclosingbook.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, wageclosingbook.newrelateddocumentId) &&
+        Objects.equals(this.accdatedate, wageclosingbook.accdatedate) &&
+        Objects.equals(this.accdocqueueId, wageclosingbook.accdocqueueId) &&
+        Objects.equals(this.accountingtype, wageclosingbook.accountingtype) &&
+        Objects.equals(this.isaccounted, wageclosingbook.isaccounted) &&
         Objects.equals(this.dirty, wageclosingbook.dirty) &&
-        Objects.equals(this.wagePeriodID, wageclosingbook.wagePeriodID) &&
-        Objects.equals(this.usedDefs, wageclosingbook.usedDefs);
+        Objects.equals(this.wageperiodId, wageclosingbook.wageperiodId) &&
+        Objects.equals(this.useddefs, wageclosingbook.useddefs);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, accDateDATE, accDocQueueID, accountingType, isAccounted, dirty, wagePeriodID, usedDefs);
+    return Objects.hash(displayname, id, classid, objversion, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, accdatedate, accdocqueueId, accountingtype, isaccounted, dirty, wageperiodId, useddefs);
   }
 
   @Override
@@ -448,25 +484,25 @@ public class Wageclosingbook   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wageclosingbook {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    accDateDATE: ").append(toIndentedString(accDateDATE)).append("\n");
-    sb.append("    accDocQueueID: ").append(toIndentedString(accDocQueueID)).append("\n");
-    sb.append("    accountingType: ").append(toIndentedString(accountingType)).append("\n");
-    sb.append("    isAccounted: ").append(toIndentedString(isAccounted)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    accdatedate: ").append(toIndentedString(accdatedate)).append("\n");
+    sb.append("    accdocqueueId: ").append(toIndentedString(accdocqueueId)).append("\n");
+    sb.append("    accountingtype: ").append(toIndentedString(accountingtype)).append("\n");
+    sb.append("    isaccounted: ").append(toIndentedString(isaccounted)).append("\n");
     sb.append("    dirty: ").append(toIndentedString(dirty)).append("\n");
-    sb.append("    wagePeriodID: ").append(toIndentedString(wagePeriodID)).append("\n");
-    sb.append("    usedDefs: ").append(toIndentedString(usedDefs)).append("\n");
+    sb.append("    wageperiodId: ").append(toIndentedString(wageperiodId)).append("\n");
+    sb.append("    useddefs: ").append(toIndentedString(useddefs)).append("\n");
     sb.append("}");
     return sb.toString();
   }

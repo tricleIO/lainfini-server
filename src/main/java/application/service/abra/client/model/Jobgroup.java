@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,96 +35,132 @@ import java.util.Objects;
 /**
  * Jobgroup
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Jobgroup   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("DateOfChange")
-  private DateTime dateOfChange = null;
+  @SerializedName("dateofchange")
+  private DateTime dateofchange = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("HourClaim")
-  private Double hourClaim = null;
+  @SerializedName("hourclaim")
+  private Double hourclaim = null;
 
-  @SerializedName("MonthClaim")
-  private Double monthClaim = null;
+  @SerializedName("monthclaim")
+  private Double monthclaim = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-  @SerializedName("HourClaim2")
-  private Double hourClaim2 = null;
+  @SerializedName("hourclaim2")
+  private Double hourclaim2 = null;
 
-  @SerializedName("MonthClaim2")
-  private Double monthClaim2 = null;
+  @SerializedName("monthclaim2")
+  private Double monthclaim2 = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-  public Jobgroup dateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public Jobgroup displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum změny
-   * @return dateOfChange
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum změny")
-  public DateTime getDateOfChange() {
-    return dateOfChange;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  public Jobgroup id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Jobgroup dateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+    return this;
+  }
+
+   /**
+   * datum změny
+   * @return dateofchange
+  **/
+  @ApiModelProperty(example = "null", value = "datum změny")
+  public DateTime getDateofchange() {
+    return dateofchange;
+  }
+
+  public void setDateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+  }
+
+  public Jobgroup classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Jobgroup objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Jobgroup code(String code) {
@@ -133,10 +169,10 @@ public class Jobgroup   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -151,10 +187,10 @@ public class Jobgroup   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -163,40 +199,40 @@ public class Jobgroup   {
     this.name = name;
   }
 
-  public Jobgroup hourClaim(Double hourClaim) {
-    this.hourClaim = hourClaim;
+  public Jobgroup hourclaim(Double hourclaim) {
+    this.hourclaim = hourclaim;
     return this;
   }
 
    /**
-   * Nárok pro hodinovou mzdu [persistentní položka]
-   * @return hourClaim
+   * nárok pro hodinovou mzdu [persistentní položka]
+   * @return hourclaim
   **/
-  @ApiModelProperty(example = "null", value = "Nárok pro hodinovou mzdu [persistentní položka]")
-  public Double getHourClaim() {
-    return hourClaim;
+  @ApiModelProperty(example = "null", value = "nárok pro hodinovou mzdu [persistentní položka]")
+  public Double getHourclaim() {
+    return hourclaim;
   }
 
-  public void setHourClaim(Double hourClaim) {
-    this.hourClaim = hourClaim;
+  public void setHourclaim(Double hourclaim) {
+    this.hourclaim = hourclaim;
   }
 
-  public Jobgroup monthClaim(Double monthClaim) {
-    this.monthClaim = monthClaim;
+  public Jobgroup monthclaim(Double monthclaim) {
+    this.monthclaim = monthclaim;
     return this;
   }
 
    /**
-   * Nárok pro měsíční mzdu [persistentní položka]
-   * @return monthClaim
+   * nárok pro měsíční mzdu [persistentní položka]
+   * @return monthclaim
   **/
-  @ApiModelProperty(example = "null", value = "Nárok pro měsíční mzdu [persistentní položka]")
-  public Double getMonthClaim() {
-    return monthClaim;
+  @ApiModelProperty(example = "null", value = "nárok pro měsíční mzdu [persistentní položka]")
+  public Double getMonthclaim() {
+    return monthclaim;
   }
 
-  public void setMonthClaim(Double monthClaim) {
-    this.monthClaim = monthClaim;
+  public void setMonthclaim(Double monthclaim) {
+    this.monthclaim = monthclaim;
   }
 
   public Jobgroup system(Boolean system) {
@@ -205,10 +241,10 @@ public class Jobgroup   {
   }
 
    /**
-   * Syst. [persistentní položka]
+   * syst. [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Syst. [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "syst. [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -217,40 +253,40 @@ public class Jobgroup   {
     this.system = system;
   }
 
-  public Jobgroup hourClaim2(Double hourClaim2) {
-    this.hourClaim2 = hourClaim2;
+  public Jobgroup hourclaim2(Double hourclaim2) {
+    this.hourclaim2 = hourclaim2;
     return this;
   }
 
    /**
-   * Nárok pro hodinovou mzdu - inv. důchod [persistentní položka]
-   * @return hourClaim2
+   * nárok pro hodinovou mzdu - inv. důchod [persistentní položka]
+   * @return hourclaim2
   **/
-  @ApiModelProperty(example = "null", value = "Nárok pro hodinovou mzdu - inv. důchod [persistentní položka]")
-  public Double getHourClaim2() {
-    return hourClaim2;
+  @ApiModelProperty(example = "null", value = "nárok pro hodinovou mzdu - inv. důchod [persistentní položka]")
+  public Double getHourclaim2() {
+    return hourclaim2;
   }
 
-  public void setHourClaim2(Double hourClaim2) {
-    this.hourClaim2 = hourClaim2;
+  public void setHourclaim2(Double hourclaim2) {
+    this.hourclaim2 = hourclaim2;
   }
 
-  public Jobgroup monthClaim2(Double monthClaim2) {
-    this.monthClaim2 = monthClaim2;
+  public Jobgroup monthclaim2(Double monthclaim2) {
+    this.monthclaim2 = monthclaim2;
     return this;
   }
 
    /**
-   * Nárok pro měsíční mzdu - inv. důchod [persistentní položka]
-   * @return monthClaim2
+   * nárok pro měsíční mzdu - inv. důchod [persistentní položka]
+   * @return monthclaim2
   **/
-  @ApiModelProperty(example = "null", value = "Nárok pro měsíční mzdu - inv. důchod [persistentní položka]")
-  public Double getMonthClaim2() {
-    return monthClaim2;
+  @ApiModelProperty(example = "null", value = "nárok pro měsíční mzdu - inv. důchod [persistentní položka]")
+  public Double getMonthclaim2() {
+    return monthclaim2;
   }
 
-  public void setMonthClaim2(Double monthClaim2) {
-    this.monthClaim2 = monthClaim2;
+  public void setMonthclaim2(Double monthclaim2) {
+    this.monthclaim2 = monthclaim2;
   }
 
 
@@ -263,23 +299,23 @@ public class Jobgroup   {
       return false;
     }
     Jobgroup jobgroup = (Jobgroup) o;
-    return Objects.equals(this.displayName, jobgroup.displayName) &&
-        Objects.equals(this.ID, jobgroup.ID) &&
-        Objects.equals(this.dateOfChange, jobgroup.dateOfChange) &&
-        Objects.equals(this.classID, jobgroup.classID) &&
-        Objects.equals(this.objVersion, jobgroup.objVersion) &&
+    return Objects.equals(this.displayname, jobgroup.displayname) &&
+        Objects.equals(this.id, jobgroup.id) &&
+        Objects.equals(this.dateofchange, jobgroup.dateofchange) &&
+        Objects.equals(this.classid, jobgroup.classid) &&
+        Objects.equals(this.objversion, jobgroup.objversion) &&
         Objects.equals(this.code, jobgroup.code) &&
         Objects.equals(this.name, jobgroup.name) &&
-        Objects.equals(this.hourClaim, jobgroup.hourClaim) &&
-        Objects.equals(this.monthClaim, jobgroup.monthClaim) &&
+        Objects.equals(this.hourclaim, jobgroup.hourclaim) &&
+        Objects.equals(this.monthclaim, jobgroup.monthclaim) &&
         Objects.equals(this.system, jobgroup.system) &&
-        Objects.equals(this.hourClaim2, jobgroup.hourClaim2) &&
-        Objects.equals(this.monthClaim2, jobgroup.monthClaim2);
+        Objects.equals(this.hourclaim2, jobgroup.hourclaim2) &&
+        Objects.equals(this.monthclaim2, jobgroup.monthclaim2);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, dateOfChange, classID, objVersion, code, name, hourClaim, monthClaim, system, hourClaim2, monthClaim2);
+    return Objects.hash(displayname, id, dateofchange, classid, objversion, code, name, hourclaim, monthclaim, system, hourclaim2, monthclaim2);
   }
 
   @Override
@@ -287,18 +323,18 @@ public class Jobgroup   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Jobgroup {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    dateOfChange: ").append(toIndentedString(dateOfChange)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    dateofchange: ").append(toIndentedString(dateofchange)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    hourClaim: ").append(toIndentedString(hourClaim)).append("\n");
-    sb.append("    monthClaim: ").append(toIndentedString(monthClaim)).append("\n");
+    sb.append("    hourclaim: ").append(toIndentedString(hourclaim)).append("\n");
+    sb.append("    monthclaim: ").append(toIndentedString(monthclaim)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
-    sb.append("    hourClaim2: ").append(toIndentedString(hourClaim2)).append("\n");
-    sb.append("    monthClaim2: ").append(toIndentedString(monthClaim2)).append("\n");
+    sb.append("    hourclaim2: ").append(toIndentedString(hourclaim2)).append("\n");
+    sb.append("    monthclaim2: ").append(toIndentedString(monthclaim2)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,84 +34,120 @@ import java.util.Objects;
 /**
  * Emailsmtpaccount
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Emailsmtpaccount   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("AccountName")
-  private String accountName = null;
+  @SerializedName("accountname")
+  private String accountname = null;
 
-  @SerializedName("Server")
+  @SerializedName("server")
   private String server = null;
 
-  @SerializedName("Port")
+  @SerializedName("port")
   private Integer port = null;
 
-  @SerializedName("Login")
+  @SerializedName("login")
   private String login = null;
 
-  @SerializedName("SecPassword")
-  private String secPassword = null;
+  @SerializedName("secpassword")
+  private String secpassword = null;
 
-  @SerializedName("Password")
+  @SerializedName("password")
   private String password = null;
 
-  @SerializedName("ConnectionSecurity")
-  private Integer connectionSecurity = null;
+  @SerializedName("connectionsecurity")
+  private Integer connectionsecurity = null;
 
-  @SerializedName("CheckUserRcptLimit")
-  private Integer checkUserRcptLimit = null;
+  @SerializedName("checkuserrcptlimit")
+  private Integer checkuserrcptlimit = null;
 
-  @SerializedName("PauseBetweenSessions")
-  private Integer pauseBetweenSessions = null;
+  @SerializedName("pausebetweensessions")
+  private Integer pausebetweensessions = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Emailsmtpaccount displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Emailsmtpaccount id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Emailsmtpaccount classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Emailsmtpaccount objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Emailsmtpaccount hidden(Boolean hidden) {
@@ -120,10 +156,10 @@ public class Emailsmtpaccount   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -132,22 +168,22 @@ public class Emailsmtpaccount   {
     this.hidden = hidden;
   }
 
-  public Emailsmtpaccount accountName(String accountName) {
-    this.accountName = accountName;
+  public Emailsmtpaccount accountname(String accountname) {
+    this.accountname = accountname;
     return this;
   }
 
    /**
-   * Název účtu [persistentní položka]
-   * @return accountName
+   * název účtu [persistentní položka]
+   * @return accountname
   **/
-  @ApiModelProperty(example = "null", value = "Název účtu [persistentní položka]")
-  public String getAccountName() {
-    return accountName;
+  @ApiModelProperty(example = "null", value = "název účtu [persistentní položka]")
+  public String getAccountname() {
+    return accountname;
   }
 
-  public void setAccountName(String accountName) {
-    this.accountName = accountName;
+  public void setAccountname(String accountname) {
+    this.accountname = accountname;
   }
 
   public Emailsmtpaccount server(String server) {
@@ -156,10 +192,10 @@ public class Emailsmtpaccount   {
   }
 
    /**
-   * SMTP server [persistentní položka]
+   * smtp server [persistentní položka]
    * @return server
   **/
-  @ApiModelProperty(example = "null", value = "SMTP server [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "smtp server [persistentní položka]")
   public String getServer() {
     return server;
   }
@@ -174,10 +210,10 @@ public class Emailsmtpaccount   {
   }
 
    /**
-   * Port [persistentní položka]
+   * port [persistentní položka]
    * @return port
   **/
-  @ApiModelProperty(example = "null", value = "Port [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "port [persistentní položka]")
   public Integer getPort() {
     return port;
   }
@@ -192,10 +228,10 @@ public class Emailsmtpaccount   {
   }
 
    /**
-   * Přihlašovací jméno [persistentní položka]
+   * přihlašovací jméno [persistentní položka]
    * @return login
   **/
-  @ApiModelProperty(example = "null", value = "Přihlašovací jméno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "přihlašovací jméno [persistentní položka]")
   public String getLogin() {
     return login;
   }
@@ -204,85 +240,94 @@ public class Emailsmtpaccount   {
     this.login = login;
   }
 
-  public Emailsmtpaccount secPassword(String secPassword) {
-    this.secPassword = secPassword;
+  public Emailsmtpaccount secpassword(String secpassword) {
+    this.secpassword = secpassword;
     return this;
   }
 
    /**
-   * Zakódované heslo [persistentní položka]
-   * @return secPassword
+   * zakódované heslo [persistentní položka]
+   * @return secpassword
   **/
-  @ApiModelProperty(example = "null", value = "Zakódované heslo [persistentní položka]")
-  public String getSecPassword() {
-    return secPassword;
+  @ApiModelProperty(example = "null", value = "zakódované heslo [persistentní položka]")
+  public String getSecpassword() {
+    return secpassword;
   }
 
-  public void setSecPassword(String secPassword) {
-    this.secPassword = secPassword;
+  public void setSecpassword(String secpassword) {
+    this.secpassword = secpassword;
+  }
+
+  public Emailsmtpaccount password(String password) {
+    this.password = password;
+    return this;
   }
 
    /**
-   * Heslo
+   * heslo
    * @return password
   **/
-  @ApiModelProperty(example = "null", value = "Heslo")
+  @ApiModelProperty(example = "null", value = "heslo")
   public String getPassword() {
     return password;
   }
 
-  public Emailsmtpaccount connectionSecurity(Integer connectionSecurity) {
-    this.connectionSecurity = connectionSecurity;
+  public void setPassword(String password) {
+    this.password = password;
+  }
+
+  public Emailsmtpaccount connectionsecurity(Integer connectionsecurity) {
+    this.connectionsecurity = connectionsecurity;
     return this;
   }
 
    /**
-   * Zabezpečení [persistentní položka]
-   * @return connectionSecurity
+   * zabezpečení [persistentní položka]
+   * @return connectionsecurity
   **/
-  @ApiModelProperty(example = "null", value = "Zabezpečení [persistentní položka]")
-  public Integer getConnectionSecurity() {
-    return connectionSecurity;
+  @ApiModelProperty(example = "null", value = "zabezpečení [persistentní položka]")
+  public Integer getConnectionsecurity() {
+    return connectionsecurity;
   }
 
-  public void setConnectionSecurity(Integer connectionSecurity) {
-    this.connectionSecurity = connectionSecurity;
+  public void setConnectionsecurity(Integer connectionsecurity) {
+    this.connectionsecurity = connectionsecurity;
   }
 
-  public Emailsmtpaccount checkUserRcptLimit(Integer checkUserRcptLimit) {
-    this.checkUserRcptLimit = checkUserRcptLimit;
+  public Emailsmtpaccount checkuserrcptlimit(Integer checkuserrcptlimit) {
+    this.checkuserrcptlimit = checkuserrcptlimit;
     return this;
   }
 
    /**
-   * Max.počet adresátů v relaci [persistentní položka]
-   * @return checkUserRcptLimit
+   * max.počet adresátů v relaci [persistentní položka]
+   * @return checkuserrcptlimit
   **/
-  @ApiModelProperty(example = "null", value = "Max.počet adresátů v relaci [persistentní položka]")
-  public Integer getCheckUserRcptLimit() {
-    return checkUserRcptLimit;
+  @ApiModelProperty(example = "null", value = "max.počet adresátů v relaci [persistentní položka]")
+  public Integer getCheckuserrcptlimit() {
+    return checkuserrcptlimit;
   }
 
-  public void setCheckUserRcptLimit(Integer checkUserRcptLimit) {
-    this.checkUserRcptLimit = checkUserRcptLimit;
+  public void setCheckuserrcptlimit(Integer checkuserrcptlimit) {
+    this.checkuserrcptlimit = checkuserrcptlimit;
   }
 
-  public Emailsmtpaccount pauseBetweenSessions(Integer pauseBetweenSessions) {
-    this.pauseBetweenSessions = pauseBetweenSessions;
+  public Emailsmtpaccount pausebetweensessions(Integer pausebetweensessions) {
+    this.pausebetweensessions = pausebetweensessions;
     return this;
   }
 
    /**
    * Časová prodleva mezi relacemi [persistentní položka]
-   * @return pauseBetweenSessions
+   * @return pausebetweensessions
   **/
   @ApiModelProperty(example = "null", value = "Časová prodleva mezi relacemi [persistentní položka]")
-  public Integer getPauseBetweenSessions() {
-    return pauseBetweenSessions;
+  public Integer getPausebetweensessions() {
+    return pausebetweensessions;
   }
 
-  public void setPauseBetweenSessions(Integer pauseBetweenSessions) {
-    this.pauseBetweenSessions = pauseBetweenSessions;
+  public void setPausebetweensessions(Integer pausebetweensessions) {
+    this.pausebetweensessions = pausebetweensessions;
   }
 
 
@@ -295,25 +340,25 @@ public class Emailsmtpaccount   {
       return false;
     }
     Emailsmtpaccount emailsmtpaccount = (Emailsmtpaccount) o;
-    return Objects.equals(this.displayName, emailsmtpaccount.displayName) &&
-        Objects.equals(this.ID, emailsmtpaccount.ID) &&
-        Objects.equals(this.classID, emailsmtpaccount.classID) &&
-        Objects.equals(this.objVersion, emailsmtpaccount.objVersion) &&
+    return Objects.equals(this.displayname, emailsmtpaccount.displayname) &&
+        Objects.equals(this.id, emailsmtpaccount.id) &&
+        Objects.equals(this.classid, emailsmtpaccount.classid) &&
+        Objects.equals(this.objversion, emailsmtpaccount.objversion) &&
         Objects.equals(this.hidden, emailsmtpaccount.hidden) &&
-        Objects.equals(this.accountName, emailsmtpaccount.accountName) &&
+        Objects.equals(this.accountname, emailsmtpaccount.accountname) &&
         Objects.equals(this.server, emailsmtpaccount.server) &&
         Objects.equals(this.port, emailsmtpaccount.port) &&
         Objects.equals(this.login, emailsmtpaccount.login) &&
-        Objects.equals(this.secPassword, emailsmtpaccount.secPassword) &&
+        Objects.equals(this.secpassword, emailsmtpaccount.secpassword) &&
         Objects.equals(this.password, emailsmtpaccount.password) &&
-        Objects.equals(this.connectionSecurity, emailsmtpaccount.connectionSecurity) &&
-        Objects.equals(this.checkUserRcptLimit, emailsmtpaccount.checkUserRcptLimit) &&
-        Objects.equals(this.pauseBetweenSessions, emailsmtpaccount.pauseBetweenSessions);
+        Objects.equals(this.connectionsecurity, emailsmtpaccount.connectionsecurity) &&
+        Objects.equals(this.checkuserrcptlimit, emailsmtpaccount.checkuserrcptlimit) &&
+        Objects.equals(this.pausebetweensessions, emailsmtpaccount.pausebetweensessions);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, accountName, server, port, login, secPassword, password, connectionSecurity, checkUserRcptLimit, pauseBetweenSessions);
+    return Objects.hash(displayname, id, classid, objversion, hidden, accountname, server, port, login, secpassword, password, connectionsecurity, checkuserrcptlimit, pausebetweensessions);
   }
 
   @Override
@@ -321,20 +366,20 @@ public class Emailsmtpaccount   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Emailsmtpaccount {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    accountName: ").append(toIndentedString(accountName)).append("\n");
+    sb.append("    accountname: ").append(toIndentedString(accountname)).append("\n");
     sb.append("    server: ").append(toIndentedString(server)).append("\n");
     sb.append("    port: ").append(toIndentedString(port)).append("\n");
     sb.append("    login: ").append(toIndentedString(login)).append("\n");
-    sb.append("    secPassword: ").append(toIndentedString(secPassword)).append("\n");
+    sb.append("    secpassword: ").append(toIndentedString(secpassword)).append("\n");
     sb.append("    password: ").append(toIndentedString(password)).append("\n");
-    sb.append("    connectionSecurity: ").append(toIndentedString(connectionSecurity)).append("\n");
-    sb.append("    checkUserRcptLimit: ").append(toIndentedString(checkUserRcptLimit)).append("\n");
-    sb.append("    pauseBetweenSessions: ").append(toIndentedString(pauseBetweenSessions)).append("\n");
+    sb.append("    connectionsecurity: ").append(toIndentedString(connectionsecurity)).append("\n");
+    sb.append("    checkuserrcptlimit: ").append(toIndentedString(checkuserrcptlimit)).append("\n");
+    sb.append("    pausebetweensessions: ").append(toIndentedString(pausebetweensessions)).append("\n");
     sb.append("}");
     return sb.toString();
   }

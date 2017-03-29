@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,266 +37,347 @@ import java.util.Objects;
 /**
  * Intrastatreportdeclaration
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Intrastatreportdeclaration   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("DeclarationID")
-  private String declarationID = null;
+  @SerializedName("declarationid")
+  private String declarationid = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("ReferencePeriod")
-  private String referencePeriod = null;
+  @SerializedName("referenceperiod")
+  private String referenceperiod = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("FlowCode")
-  private Integer flowCode = null;
+  @SerializedName("flowcode")
+  private Integer flowcode = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("ItemsCount")
-  private Integer itemsCount = null;
+  @SerializedName("itemscount")
+  private Integer itemscount = null;
 
-  @SerializedName("DeletingItemsCount")
-  private Integer deletingItemsCount = null;
+  @SerializedName("deletingitemscount")
+  private Integer deletingitemscount = null;
 
-  @SerializedName("FlowCode_Text")
-  private String flowCodeText = null;
+  @SerializedName("flowcode_text")
+  private String flowcodeText = null;
 
-  @SerializedName("IsNegative")
-  private Boolean isNegative = null;
+  @SerializedName("isnegative")
+  private Boolean isnegative = null;
 
-  @SerializedName("IntrastatReportItems")
-  private List<Annualclearingcountoff> intrastatReportItems = new ArrayList<Annualclearingcountoff>();
+  @SerializedName("intrastatreportitems")
+  private List<Annualclearingcountoff> intrastatreportitems = new ArrayList<Annualclearingcountoff>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Intrastatreportdeclaration displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Intrastatreportdeclaration id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Intrastatreportdeclaration classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Intrastatreportdeclaration objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Podání INTRASTAT [persistentní položka]
-   * @return parentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Podání INTRASTAT [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public Intrastatreportdeclaration declarationID(String declarationID) {
-    this.declarationID = declarationID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Intrastatreportdeclaration parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu podání intrastat [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu podání intrastat [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Intrastatreportdeclaration declarationid(String declarationid) {
+    this.declarationid = declarationid;
     return this;
   }
 
    /**
    * Číslo pobočky [persistentní položka]
-   * @return declarationID
+   * @return declarationid
   **/
   @ApiModelProperty(example = "null", value = "Číslo pobočky [persistentní položka]")
-  public String getDeclarationID() {
-    return declarationID;
+  public String getDeclarationid() {
+    return declarationid;
   }
 
-  public void setDeclarationID(String declarationID) {
-    this.declarationID = declarationID;
+  public void setDeclarationid(String declarationid) {
+    this.declarationid = declarationid;
   }
 
-  public Intrastatreportdeclaration divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Intrastatreportdeclaration divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Intrastatreportdeclaration referencePeriod(String referencePeriod) {
-    this.referencePeriod = referencePeriod;
+  public Intrastatreportdeclaration referenceperiod(String referenceperiod) {
+    this.referenceperiod = referenceperiod;
     return this;
   }
 
    /**
-   * Vykazované období [persistentní položka]
-   * @return referencePeriod
+   * vykazované období [persistentní položka]
+   * @return referenceperiod
   **/
-  @ApiModelProperty(example = "null", value = "Vykazované období [persistentní položka]")
-  public String getReferencePeriod() {
-    return referencePeriod;
+  @ApiModelProperty(example = "null", value = "vykazované období [persistentní položka]")
+  public String getReferenceperiod() {
+    return referenceperiod;
   }
 
-  public void setReferencePeriod(String referencePeriod) {
-    this.referencePeriod = referencePeriod;
+  public void setReferenceperiod(String referenceperiod) {
+    this.referenceperiod = referenceperiod;
   }
 
-  public Intrastatreportdeclaration docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Intrastatreportdeclaration docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum a čas vygenerování [persistentní položka]
-   * @return docDateDATE
+   * datum a čas vygenerování [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum a čas vygenerování [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum a čas vygenerování [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Intrastatreportdeclaration flowCode(Integer flowCode) {
-    this.flowCode = flowCode;
+  public Intrastatreportdeclaration flowcode(Integer flowcode) {
+    this.flowcode = flowcode;
     return this;
   }
 
    /**
-   * Směr transakce [persistentní položka]
-   * @return flowCode
+   * směr transakce [persistentní položka]
+   * @return flowcode
   **/
-  @ApiModelProperty(example = "null", value = "Směr transakce [persistentní položka]")
-  public Integer getFlowCode() {
-    return flowCode;
+  @ApiModelProperty(example = "null", value = "směr transakce [persistentní položka]")
+  public Integer getFlowcode() {
+    return flowcode;
   }
 
-  public void setFlowCode(Integer flowCode) {
-    this.flowCode = flowCode;
+  public void setFlowcode(Integer flowcode) {
+    this.flowcode = flowcode;
   }
 
-  public Intrastatreportdeclaration currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Intrastatreportdeclaration currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
-   /**
-   * Počet položek
-   * @return itemsCount
-  **/
-  @ApiModelProperty(example = "null", value = "Počet položek")
-  public Integer getItemsCount() {
-    return itemsCount;
-  }
-
-   /**
-   * Počet mazacích položek
-   * @return deletingItemsCount
-  **/
-  @ApiModelProperty(example = "null", value = "Počet mazacích položek")
-  public Integer getDeletingItemsCount() {
-    return deletingItemsCount;
-  }
-
-   /**
-   * Směr transakce - text
-   * @return flowCodeText
-  **/
-  @ApiModelProperty(example = "null", value = "Směr transakce - text")
-  public String getFlowCodeText() {
-    return flowCodeText;
-  }
-
-   /**
-   * Negativní
-   * @return isNegative
-  **/
-  @ApiModelProperty(example = "null", value = "Negativní")
-  public Boolean getIsNegative() {
-    return isNegative;
-  }
-
-  public Intrastatreportdeclaration intrastatReportItems(List<Annualclearingcountoff> intrastatReportItems) {
-    this.intrastatReportItems = intrastatReportItems;
-    return this;
-  }
-
-  public Intrastatreportdeclaration addIntrastatReportItemsItem(Annualclearingcountoff intrastatReportItemsItem) {
-    this.intrastatReportItems.add(intrastatReportItemsItem);
+  public Intrastatreportdeclaration itemscount(Integer itemscount) {
+    this.itemscount = itemscount;
     return this;
   }
 
    /**
-   * Položky deklarace; kolekce BO Odpočet k roč.zúčtování [nepersistentní položka]
-   * @return intrastatReportItems
+   * počet položek
+   * @return itemscount
   **/
-  @ApiModelProperty(example = "null", value = "Položky deklarace; kolekce BO Odpočet k roč.zúčtování [nepersistentní položka]")
-  public List<Annualclearingcountoff> getIntrastatReportItems() {
-    return intrastatReportItems;
+  @ApiModelProperty(example = "null", value = "počet položek")
+  public Integer getItemscount() {
+    return itemscount;
   }
 
-  public void setIntrastatReportItems(List<Annualclearingcountoff> intrastatReportItems) {
-    this.intrastatReportItems = intrastatReportItems;
+  public void setItemscount(Integer itemscount) {
+    this.itemscount = itemscount;
+  }
+
+  public Intrastatreportdeclaration deletingitemscount(Integer deletingitemscount) {
+    this.deletingitemscount = deletingitemscount;
+    return this;
+  }
+
+   /**
+   * počet mazacích položek
+   * @return deletingitemscount
+  **/
+  @ApiModelProperty(example = "null", value = "počet mazacích položek")
+  public Integer getDeletingitemscount() {
+    return deletingitemscount;
+  }
+
+  public void setDeletingitemscount(Integer deletingitemscount) {
+    this.deletingitemscount = deletingitemscount;
+  }
+
+  public Intrastatreportdeclaration flowcodeText(String flowcodeText) {
+    this.flowcodeText = flowcodeText;
+    return this;
+  }
+
+   /**
+   * směr transakce - text
+   * @return flowcodeText
+  **/
+  @ApiModelProperty(example = "null", value = "směr transakce - text")
+  public String getFlowcodeText() {
+    return flowcodeText;
+  }
+
+  public void setFlowcodeText(String flowcodeText) {
+    this.flowcodeText = flowcodeText;
+  }
+
+  public Intrastatreportdeclaration isnegative(Boolean isnegative) {
+    this.isnegative = isnegative;
+    return this;
+  }
+
+   /**
+   * negativní
+   * @return isnegative
+  **/
+  @ApiModelProperty(example = "null", value = "negativní")
+  public Boolean getIsnegative() {
+    return isnegative;
+  }
+
+  public void setIsnegative(Boolean isnegative) {
+    this.isnegative = isnegative;
+  }
+
+  public Intrastatreportdeclaration intrastatreportitems(List<Annualclearingcountoff> intrastatreportitems) {
+    this.intrastatreportitems = intrastatreportitems;
+    return this;
+  }
+
+  public Intrastatreportdeclaration addIntrastatreportitemsItem(Annualclearingcountoff intrastatreportitemsItem) {
+    this.intrastatreportitems.add(intrastatreportitemsItem);
+    return this;
+  }
+
+   /**
+   * položky deklarace; kolekce bo odpočet k roč.zúčtování [nepersistentní položka]
+   * @return intrastatreportitems
+  **/
+  @ApiModelProperty(example = "null", value = "položky deklarace; kolekce bo odpočet k roč.zúčtování [nepersistentní položka]")
+  public List<Annualclearingcountoff> getIntrastatreportitems() {
+    return intrastatreportitems;
+  }
+
+  public void setIntrastatreportitems(List<Annualclearingcountoff> intrastatreportitems) {
+    this.intrastatreportitems = intrastatreportitems;
   }
 
 
@@ -309,27 +390,27 @@ public class Intrastatreportdeclaration   {
       return false;
     }
     Intrastatreportdeclaration intrastatreportdeclaration = (Intrastatreportdeclaration) o;
-    return Objects.equals(this.displayName, intrastatreportdeclaration.displayName) &&
-        Objects.equals(this.ID, intrastatreportdeclaration.ID) &&
-        Objects.equals(this.classID, intrastatreportdeclaration.classID) &&
-        Objects.equals(this.objVersion, intrastatreportdeclaration.objVersion) &&
-        Objects.equals(this.parentID, intrastatreportdeclaration.parentID) &&
-        Objects.equals(this.declarationID, intrastatreportdeclaration.declarationID) &&
-        Objects.equals(this.divisionID, intrastatreportdeclaration.divisionID) &&
-        Objects.equals(this.referencePeriod, intrastatreportdeclaration.referencePeriod) &&
-        Objects.equals(this.docDateDATE, intrastatreportdeclaration.docDateDATE) &&
-        Objects.equals(this.flowCode, intrastatreportdeclaration.flowCode) &&
-        Objects.equals(this.currencyID, intrastatreportdeclaration.currencyID) &&
-        Objects.equals(this.itemsCount, intrastatreportdeclaration.itemsCount) &&
-        Objects.equals(this.deletingItemsCount, intrastatreportdeclaration.deletingItemsCount) &&
-        Objects.equals(this.flowCodeText, intrastatreportdeclaration.flowCodeText) &&
-        Objects.equals(this.isNegative, intrastatreportdeclaration.isNegative) &&
-        Objects.equals(this.intrastatReportItems, intrastatreportdeclaration.intrastatReportItems);
+    return Objects.equals(this.displayname, intrastatreportdeclaration.displayname) &&
+        Objects.equals(this.id, intrastatreportdeclaration.id) &&
+        Objects.equals(this.classid, intrastatreportdeclaration.classid) &&
+        Objects.equals(this.objversion, intrastatreportdeclaration.objversion) &&
+        Objects.equals(this.parentId, intrastatreportdeclaration.parentId) &&
+        Objects.equals(this.declarationid, intrastatreportdeclaration.declarationid) &&
+        Objects.equals(this.divisionId, intrastatreportdeclaration.divisionId) &&
+        Objects.equals(this.referenceperiod, intrastatreportdeclaration.referenceperiod) &&
+        Objects.equals(this.docdatedate, intrastatreportdeclaration.docdatedate) &&
+        Objects.equals(this.flowcode, intrastatreportdeclaration.flowcode) &&
+        Objects.equals(this.currencyId, intrastatreportdeclaration.currencyId) &&
+        Objects.equals(this.itemscount, intrastatreportdeclaration.itemscount) &&
+        Objects.equals(this.deletingitemscount, intrastatreportdeclaration.deletingitemscount) &&
+        Objects.equals(this.flowcodeText, intrastatreportdeclaration.flowcodeText) &&
+        Objects.equals(this.isnegative, intrastatreportdeclaration.isnegative) &&
+        Objects.equals(this.intrastatreportitems, intrastatreportdeclaration.intrastatreportitems);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, declarationID, divisionID, referencePeriod, docDateDATE, flowCode, currencyID, itemsCount, deletingItemsCount, flowCodeText, isNegative, intrastatReportItems);
+    return Objects.hash(displayname, id, classid, objversion, parentId, declarationid, divisionId, referenceperiod, docdatedate, flowcode, currencyId, itemscount, deletingitemscount, flowcodeText, isnegative, intrastatreportitems);
   }
 
   @Override
@@ -337,22 +418,22 @@ public class Intrastatreportdeclaration   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Intrastatreportdeclaration {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    declarationID: ").append(toIndentedString(declarationID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    referencePeriod: ").append(toIndentedString(referencePeriod)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    flowCode: ").append(toIndentedString(flowCode)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    itemsCount: ").append(toIndentedString(itemsCount)).append("\n");
-    sb.append("    deletingItemsCount: ").append(toIndentedString(deletingItemsCount)).append("\n");
-    sb.append("    flowCodeText: ").append(toIndentedString(flowCodeText)).append("\n");
-    sb.append("    isNegative: ").append(toIndentedString(isNegative)).append("\n");
-    sb.append("    intrastatReportItems: ").append(toIndentedString(intrastatReportItems)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    declarationid: ").append(toIndentedString(declarationid)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    referenceperiod: ").append(toIndentedString(referenceperiod)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    flowcode: ").append(toIndentedString(flowcode)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    itemscount: ").append(toIndentedString(itemscount)).append("\n");
+    sb.append("    deletingitemscount: ").append(toIndentedString(deletingitemscount)).append("\n");
+    sb.append("    flowcodeText: ").append(toIndentedString(flowcodeText)).append("\n");
+    sb.append("    isnegative: ").append(toIndentedString(isnegative)).append("\n");
+    sb.append("    intrastatreportitems: ").append(toIndentedString(intrastatreportitems)).append("\n");
     sb.append("}");
     return sb.toString();
   }

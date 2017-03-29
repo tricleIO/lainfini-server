@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,84 +34,120 @@ import java.util.Objects;
 /**
  * Wageoperationtype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wageoperationtype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("OperationUnit")
-  private String operationUnit = null;
+  @SerializedName("operationunit")
+  private String operationunit = null;
 
-  @SerializedName("ChargeExpression")
-  private String chargeExpression = null;
+  @SerializedName("chargeexpression")
+  private String chargeexpression = null;
 
-  @SerializedName("ExternIdentification")
-  private String externIdentification = null;
+  @SerializedName("externidentification")
+  private String externidentification = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("HowUseInClosing")
-  private Integer howUseInClosing = null;
+  @SerializedName("howuseinclosing")
+  private Integer howuseinclosing = null;
 
-  @SerializedName("ClosingExpression")
-  private String closingExpression = null;
+  @SerializedName("closingexpression")
+  private String closingexpression = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Wageoperationtype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wageoperationtype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wageoperationtype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wageoperationtype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Wageoperationtype hidden(Boolean hidden) {
@@ -120,10 +156,10 @@ public class Wageoperationtype   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -138,10 +174,10 @@ public class Wageoperationtype   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -156,10 +192,10 @@ public class Wageoperationtype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -168,130 +204,130 @@ public class Wageoperationtype   {
     this.name = name;
   }
 
-  public Wageoperationtype operationUnit(String operationUnit) {
-    this.operationUnit = operationUnit;
+  public Wageoperationtype operationunit(String operationunit) {
+    this.operationunit = operationunit;
     return this;
   }
 
    /**
-   * Jedn. [persistentní položka]
-   * @return operationUnit
+   * jedn. [persistentní položka]
+   * @return operationunit
   **/
-  @ApiModelProperty(example = "null", value = "Jedn. [persistentní položka]")
-  public String getOperationUnit() {
-    return operationUnit;
+  @ApiModelProperty(example = "null", value = "jedn. [persistentní položka]")
+  public String getOperationunit() {
+    return operationunit;
   }
 
-  public void setOperationUnit(String operationUnit) {
-    this.operationUnit = operationUnit;
+  public void setOperationunit(String operationunit) {
+    this.operationunit = operationunit;
   }
 
-  public Wageoperationtype chargeExpression(String chargeExpression) {
-    this.chargeExpression = chargeExpression;
+  public Wageoperationtype chargeexpression(String chargeexpression) {
+    this.chargeexpression = chargeexpression;
     return this;
   }
 
    /**
-   * Výraz [persistentní položka]
-   * @return chargeExpression
+   * výraz [persistentní položka]
+   * @return chargeexpression
   **/
-  @ApiModelProperty(example = "null", value = "Výraz [persistentní položka]")
-  public String getChargeExpression() {
-    return chargeExpression;
+  @ApiModelProperty(example = "null", value = "výraz [persistentní položka]")
+  public String getChargeexpression() {
+    return chargeexpression;
   }
 
-  public void setChargeExpression(String chargeExpression) {
-    this.chargeExpression = chargeExpression;
+  public void setChargeexpression(String chargeexpression) {
+    this.chargeexpression = chargeexpression;
   }
 
-  public Wageoperationtype externIdentification(String externIdentification) {
-    this.externIdentification = externIdentification;
+  public Wageoperationtype externidentification(String externidentification) {
+    this.externidentification = externidentification;
     return this;
   }
 
    /**
-   * Ext. ID [persistentní položka]
-   * @return externIdentification
+   * ext. id [persistentní položka]
+   * @return externidentification
   **/
-  @ApiModelProperty(example = "null", value = "Ext. ID [persistentní položka]")
-  public String getExternIdentification() {
-    return externIdentification;
+  @ApiModelProperty(example = "null", value = "ext. id [persistentní položka]")
+  public String getExternidentification() {
+    return externidentification;
   }
 
-  public void setExternIdentification(String externIdentification) {
-    this.externIdentification = externIdentification;
+  public void setExternidentification(String externidentification) {
+    this.externidentification = externidentification;
   }
 
-  public Wageoperationtype createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Wageoperationtype createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Wageoperationtype correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Wageoperationtype correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Wageoperationtype howUseInClosing(Integer howUseInClosing) {
-    this.howUseInClosing = howUseInClosing;
+  public Wageoperationtype howuseinclosing(Integer howuseinclosing) {
+    this.howuseinclosing = howuseinclosing;
     return this;
   }
 
    /**
-   * Ocenění uzávěrky [persistentní položka]
-   * @return howUseInClosing
+   * ocenění uzávěrky [persistentní položka]
+   * @return howuseinclosing
   **/
-  @ApiModelProperty(example = "null", value = "Ocenění uzávěrky [persistentní položka]")
-  public Integer getHowUseInClosing() {
-    return howUseInClosing;
+  @ApiModelProperty(example = "null", value = "ocenění uzávěrky [persistentní položka]")
+  public Integer getHowuseinclosing() {
+    return howuseinclosing;
   }
 
-  public void setHowUseInClosing(Integer howUseInClosing) {
-    this.howUseInClosing = howUseInClosing;
+  public void setHowuseinclosing(Integer howuseinclosing) {
+    this.howuseinclosing = howuseinclosing;
   }
 
-  public Wageoperationtype closingExpression(String closingExpression) {
-    this.closingExpression = closingExpression;
+  public Wageoperationtype closingexpression(String closingexpression) {
+    this.closingexpression = closingexpression;
     return this;
   }
 
    /**
-   * Výraz pro uzávěrku [persistentní položka]
-   * @return closingExpression
+   * výraz pro uzávěrku [persistentní položka]
+   * @return closingexpression
   **/
-  @ApiModelProperty(example = "null", value = "Výraz pro uzávěrku [persistentní položka]")
-  public String getClosingExpression() {
-    return closingExpression;
+  @ApiModelProperty(example = "null", value = "výraz pro uzávěrku [persistentní položka]")
+  public String getClosingexpression() {
+    return closingexpression;
   }
 
-  public void setClosingExpression(String closingExpression) {
-    this.closingExpression = closingExpression;
+  public void setClosingexpression(String closingexpression) {
+    this.closingexpression = closingexpression;
   }
 
 
@@ -304,25 +340,25 @@ public class Wageoperationtype   {
       return false;
     }
     Wageoperationtype wageoperationtype = (Wageoperationtype) o;
-    return Objects.equals(this.displayName, wageoperationtype.displayName) &&
-        Objects.equals(this.ID, wageoperationtype.ID) &&
-        Objects.equals(this.classID, wageoperationtype.classID) &&
-        Objects.equals(this.objVersion, wageoperationtype.objVersion) &&
+    return Objects.equals(this.displayname, wageoperationtype.displayname) &&
+        Objects.equals(this.id, wageoperationtype.id) &&
+        Objects.equals(this.classid, wageoperationtype.classid) &&
+        Objects.equals(this.objversion, wageoperationtype.objversion) &&
         Objects.equals(this.hidden, wageoperationtype.hidden) &&
         Objects.equals(this.code, wageoperationtype.code) &&
         Objects.equals(this.name, wageoperationtype.name) &&
-        Objects.equals(this.operationUnit, wageoperationtype.operationUnit) &&
-        Objects.equals(this.chargeExpression, wageoperationtype.chargeExpression) &&
-        Objects.equals(this.externIdentification, wageoperationtype.externIdentification) &&
-        Objects.equals(this.createdByID, wageoperationtype.createdByID) &&
-        Objects.equals(this.correctedByID, wageoperationtype.correctedByID) &&
-        Objects.equals(this.howUseInClosing, wageoperationtype.howUseInClosing) &&
-        Objects.equals(this.closingExpression, wageoperationtype.closingExpression);
+        Objects.equals(this.operationunit, wageoperationtype.operationunit) &&
+        Objects.equals(this.chargeexpression, wageoperationtype.chargeexpression) &&
+        Objects.equals(this.externidentification, wageoperationtype.externidentification) &&
+        Objects.equals(this.createdbyId, wageoperationtype.createdbyId) &&
+        Objects.equals(this.correctedbyId, wageoperationtype.correctedbyId) &&
+        Objects.equals(this.howuseinclosing, wageoperationtype.howuseinclosing) &&
+        Objects.equals(this.closingexpression, wageoperationtype.closingexpression);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, operationUnit, chargeExpression, externIdentification, createdByID, correctedByID, howUseInClosing, closingExpression);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, operationunit, chargeexpression, externidentification, createdbyId, correctedbyId, howuseinclosing, closingexpression);
   }
 
   @Override
@@ -330,20 +366,20 @@ public class Wageoperationtype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wageoperationtype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    operationUnit: ").append(toIndentedString(operationUnit)).append("\n");
-    sb.append("    chargeExpression: ").append(toIndentedString(chargeExpression)).append("\n");
-    sb.append("    externIdentification: ").append(toIndentedString(externIdentification)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    howUseInClosing: ").append(toIndentedString(howUseInClosing)).append("\n");
-    sb.append("    closingExpression: ").append(toIndentedString(closingExpression)).append("\n");
+    sb.append("    operationunit: ").append(toIndentedString(operationunit)).append("\n");
+    sb.append("    chargeexpression: ").append(toIndentedString(chargeexpression)).append("\n");
+    sb.append("    externidentification: ").append(toIndentedString(externidentification)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    howuseinclosing: ").append(toIndentedString(howuseinclosing)).append("\n");
+    sb.append("    closingexpression: ").append(toIndentedString(closingexpression)).append("\n");
     sb.append("}");
     return sb.toString();
   }

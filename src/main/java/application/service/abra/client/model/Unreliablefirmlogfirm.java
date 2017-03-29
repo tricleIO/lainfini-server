@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,81 +37,117 @@ import java.util.Objects;
 /**
  * Unreliablefirmlogfirm
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Unreliablefirmlogfirm   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Unreliablefirmlogfirmbankaccount> rows = new ArrayList<Unreliablefirmlogfirmbankaccount>();
 
-  @SerializedName("LogDate$DATE")
-  private DateTime logDateDATE = null;
+  @SerializedName("logdate$date")
+  private DateTime logdatedate = null;
 
-  @SerializedName("LogHeader_ID")
-  private String logHeaderID = null;
+  @SerializedName("logheader_id")
+  private String logheaderId = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("VATIdentNumber")
-  private String vATIdentNumber = null;
+  @SerializedName("vatidentnumber")
+  private String vatidentnumber = null;
 
-  @SerializedName("StatusCode")
-  private Integer statusCode = null;
+  @SerializedName("statuscode")
+  private Integer statuscode = null;
 
-  @SerializedName("StatusFromDate$DATE")
-  private DateTime statusFromDateDATE = null;
+  @SerializedName("statusfromdate$date")
+  private DateTime statusfromdatedate = null;
 
-  @SerializedName("FinancialBureauCode")
-  private String financialBureauCode = null;
+  @SerializedName("financialbureaucode")
+  private String financialbureaucode = null;
 
-  @SerializedName("StatusCodeAsText")
-  private String statusCodeAsText = null;
+  @SerializedName("statuscodeastext")
+  private String statuscodeastext = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Unreliablefirmlogfirm displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Unreliablefirmlogfirm id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Unreliablefirmlogfirm classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Unreliablefirmlogfirm objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Unreliablefirmlogfirm rows(List<Unreliablefirmlogfirmbankaccount> rows) {
@@ -125,10 +161,10 @@ public class Unreliablefirmlogfirm   {
   }
 
    /**
-   * Řádky; kolekce BO Kontrola nespolehlivosti plátců DPH - Bankovní účet [nepersistentní položka]
+   * Řádky; kolekce bo kontrola nespolehlivosti plátců dph - bankovní účet [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Kontrola nespolehlivosti plátců DPH - Bankovní účet [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo kontrola nespolehlivosti plátců dph - bankovní účet [nepersistentní položka]")
   public List<Unreliablefirmlogfirmbankaccount> getRows() {
     return rows;
   }
@@ -137,148 +173,148 @@ public class Unreliablefirmlogfirm   {
     this.rows = rows;
   }
 
-  public Unreliablefirmlogfirm logDateDATE(DateTime logDateDATE) {
-    this.logDateDATE = logDateDATE;
+  public Unreliablefirmlogfirm logdatedate(DateTime logdatedate) {
+    this.logdatedate = logdatedate;
     return this;
   }
 
    /**
-   * Datum a čas kontroly [persistentní položka]
-   * @return logDateDATE
+   * datum a čas kontroly [persistentní položka]
+   * @return logdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum a čas kontroly [persistentní položka]")
-  public DateTime getLogDateDATE() {
-    return logDateDATE;
+  @ApiModelProperty(example = "null", value = "datum a čas kontroly [persistentní položka]")
+  public DateTime getLogdatedate() {
+    return logdatedate;
   }
 
-  public void setLogDateDATE(DateTime logDateDATE) {
-    this.logDateDATE = logDateDATE;
+  public void setLogdatedate(DateTime logdatedate) {
+    this.logdatedate = logdatedate;
   }
 
-  public Unreliablefirmlogfirm logHeaderID(String logHeaderID) {
-    this.logHeaderID = logHeaderID;
+  public Unreliablefirmlogfirm logheaderId(String logheaderId) {
+    this.logheaderId = logheaderId;
     return this;
   }
 
    /**
-   * Vazba na komunikační protokol; ID objektu Kontrola nespolehlivosti plátců DPH - Protokol [persistentní položka]
-   * @return logHeaderID
+   * vazba na komunikační protokol; id objektu kontrola nespolehlivosti plátců dph - protokol [persistentní položka]
+   * @return logheaderId
   **/
-  @ApiModelProperty(example = "null", value = "Vazba na komunikační protokol; ID objektu Kontrola nespolehlivosti plátců DPH - Protokol [persistentní položka]")
-  public String getLogHeaderID() {
-    return logHeaderID;
+  @ApiModelProperty(example = "null", value = "vazba na komunikační protokol; id objektu kontrola nespolehlivosti plátců dph - protokol [persistentní položka]")
+  public String getLogheaderId() {
+    return logheaderId;
   }
 
-  public void setLogHeaderID(String logHeaderID) {
-    this.logHeaderID = logHeaderID;
+  public void setLogheaderId(String logheaderId) {
+    this.logheaderId = logheaderId;
   }
 
-  public Unreliablefirmlogfirm firmID(String firmID) {
-    this.firmID = firmID;
+  public Unreliablefirmlogfirm firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Unreliablefirmlogfirm vATIdentNumber(String vATIdentNumber) {
-    this.vATIdentNumber = vATIdentNumber;
+  public Unreliablefirmlogfirm vatidentnumber(String vatidentnumber) {
+    this.vatidentnumber = vatidentnumber;
     return this;
   }
 
    /**
-   * DIČ [persistentní položka]
-   * @return vATIdentNumber
+   * diČ [persistentní položka]
+   * @return vatidentnumber
   **/
-  @ApiModelProperty(example = "null", value = "DIČ [persistentní položka]")
-  public String getVATIdentNumber() {
-    return vATIdentNumber;
+  @ApiModelProperty(example = "null", value = "diČ [persistentní položka]")
+  public String getVatidentnumber() {
+    return vatidentnumber;
   }
 
-  public void setVATIdentNumber(String vATIdentNumber) {
-    this.vATIdentNumber = vATIdentNumber;
+  public void setVatidentnumber(String vatidentnumber) {
+    this.vatidentnumber = vatidentnumber;
   }
 
-  public Unreliablefirmlogfirm statusCode(Integer statusCode) {
-    this.statusCode = statusCode;
+  public Unreliablefirmlogfirm statuscode(Integer statuscode) {
+    this.statuscode = statuscode;
     return this;
   }
 
    /**
-   * Kód výsledku kontroly [persistentní položka]
-   * @return statusCode
+   * kód výsledku kontroly [persistentní položka]
+   * @return statuscode
   **/
-  @ApiModelProperty(example = "null", value = "Kód výsledku kontroly [persistentní položka]")
-  public Integer getStatusCode() {
-    return statusCode;
+  @ApiModelProperty(example = "null", value = "kód výsledku kontroly [persistentní položka]")
+  public Integer getStatuscode() {
+    return statuscode;
   }
 
-  public void setStatusCode(Integer statusCode) {
-    this.statusCode = statusCode;
+  public void setStatuscode(Integer statuscode) {
+    this.statuscode = statuscode;
   }
 
-  public Unreliablefirmlogfirm statusFromDateDATE(DateTime statusFromDateDATE) {
-    this.statusFromDateDATE = statusFromDateDATE;
+  public Unreliablefirmlogfirm statusfromdatedate(DateTime statusfromdatedate) {
+    this.statusfromdatedate = statusfromdatedate;
     return this;
   }
 
    /**
-   * Datum, odkdy platí stav [persistentní položka]
-   * @return statusFromDateDATE
+   * datum, odkdy platí stav [persistentní položka]
+   * @return statusfromdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum, odkdy platí stav [persistentní položka]")
-  public DateTime getStatusFromDateDATE() {
-    return statusFromDateDATE;
+  @ApiModelProperty(example = "null", value = "datum, odkdy platí stav [persistentní položka]")
+  public DateTime getStatusfromdatedate() {
+    return statusfromdatedate;
   }
 
-  public void setStatusFromDateDATE(DateTime statusFromDateDATE) {
-    this.statusFromDateDATE = statusFromDateDATE;
+  public void setStatusfromdatedate(DateTime statusfromdatedate) {
+    this.statusfromdatedate = statusfromdatedate;
   }
 
-  public Unreliablefirmlogfirm financialBureauCode(String financialBureauCode) {
-    this.financialBureauCode = financialBureauCode;
+  public Unreliablefirmlogfirm financialbureaucode(String financialbureaucode) {
+    this.financialbureaucode = financialbureaucode;
     return this;
   }
 
    /**
-   * Číslo Finančního úřadu [persistentní položka]
-   * @return financialBureauCode
+   * Číslo finančního úřadu [persistentní položka]
+   * @return financialbureaucode
   **/
-  @ApiModelProperty(example = "null", value = "Číslo Finančního úřadu [persistentní položka]")
-  public String getFinancialBureauCode() {
-    return financialBureauCode;
+  @ApiModelProperty(example = "null", value = "Číslo finančního úřadu [persistentní položka]")
+  public String getFinancialbureaucode() {
+    return financialbureaucode;
   }
 
-  public void setFinancialBureauCode(String financialBureauCode) {
-    this.financialBureauCode = financialBureauCode;
+  public void setFinancialbureaucode(String financialbureaucode) {
+    this.financialbureaucode = financialbureaucode;
   }
 
-  public Unreliablefirmlogfirm statusCodeAsText(String statusCodeAsText) {
-    this.statusCodeAsText = statusCodeAsText;
+  public Unreliablefirmlogfirm statuscodeastext(String statuscodeastext) {
+    this.statuscodeastext = statuscodeastext;
     return this;
   }
 
    /**
-   * Kód výsledku kontroly-text
-   * @return statusCodeAsText
+   * kód výsledku kontroly-text
+   * @return statuscodeastext
   **/
-  @ApiModelProperty(example = "null", value = "Kód výsledku kontroly-text")
-  public String getStatusCodeAsText() {
-    return statusCodeAsText;
+  @ApiModelProperty(example = "null", value = "kód výsledku kontroly-text")
+  public String getStatuscodeastext() {
+    return statuscodeastext;
   }
 
-  public void setStatusCodeAsText(String statusCodeAsText) {
-    this.statusCodeAsText = statusCodeAsText;
+  public void setStatuscodeastext(String statuscodeastext) {
+    this.statuscodeastext = statuscodeastext;
   }
 
 
@@ -291,24 +327,24 @@ public class Unreliablefirmlogfirm   {
       return false;
     }
     Unreliablefirmlogfirm unreliablefirmlogfirm = (Unreliablefirmlogfirm) o;
-    return Objects.equals(this.displayName, unreliablefirmlogfirm.displayName) &&
-        Objects.equals(this.ID, unreliablefirmlogfirm.ID) &&
-        Objects.equals(this.classID, unreliablefirmlogfirm.classID) &&
-        Objects.equals(this.objVersion, unreliablefirmlogfirm.objVersion) &&
+    return Objects.equals(this.displayname, unreliablefirmlogfirm.displayname) &&
+        Objects.equals(this.id, unreliablefirmlogfirm.id) &&
+        Objects.equals(this.classid, unreliablefirmlogfirm.classid) &&
+        Objects.equals(this.objversion, unreliablefirmlogfirm.objversion) &&
         Objects.equals(this.rows, unreliablefirmlogfirm.rows) &&
-        Objects.equals(this.logDateDATE, unreliablefirmlogfirm.logDateDATE) &&
-        Objects.equals(this.logHeaderID, unreliablefirmlogfirm.logHeaderID) &&
-        Objects.equals(this.firmID, unreliablefirmlogfirm.firmID) &&
-        Objects.equals(this.vATIdentNumber, unreliablefirmlogfirm.vATIdentNumber) &&
-        Objects.equals(this.statusCode, unreliablefirmlogfirm.statusCode) &&
-        Objects.equals(this.statusFromDateDATE, unreliablefirmlogfirm.statusFromDateDATE) &&
-        Objects.equals(this.financialBureauCode, unreliablefirmlogfirm.financialBureauCode) &&
-        Objects.equals(this.statusCodeAsText, unreliablefirmlogfirm.statusCodeAsText);
+        Objects.equals(this.logdatedate, unreliablefirmlogfirm.logdatedate) &&
+        Objects.equals(this.logheaderId, unreliablefirmlogfirm.logheaderId) &&
+        Objects.equals(this.firmId, unreliablefirmlogfirm.firmId) &&
+        Objects.equals(this.vatidentnumber, unreliablefirmlogfirm.vatidentnumber) &&
+        Objects.equals(this.statuscode, unreliablefirmlogfirm.statuscode) &&
+        Objects.equals(this.statusfromdatedate, unreliablefirmlogfirm.statusfromdatedate) &&
+        Objects.equals(this.financialbureaucode, unreliablefirmlogfirm.financialbureaucode) &&
+        Objects.equals(this.statuscodeastext, unreliablefirmlogfirm.statuscodeastext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, logDateDATE, logHeaderID, firmID, vATIdentNumber, statusCode, statusFromDateDATE, financialBureauCode, statusCodeAsText);
+    return Objects.hash(displayname, id, classid, objversion, rows, logdatedate, logheaderId, firmId, vatidentnumber, statuscode, statusfromdatedate, financialbureaucode, statuscodeastext);
   }
 
   @Override
@@ -316,19 +352,19 @@ public class Unreliablefirmlogfirm   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Unreliablefirmlogfirm {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    logDateDATE: ").append(toIndentedString(logDateDATE)).append("\n");
-    sb.append("    logHeaderID: ").append(toIndentedString(logHeaderID)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    vATIdentNumber: ").append(toIndentedString(vATIdentNumber)).append("\n");
-    sb.append("    statusCode: ").append(toIndentedString(statusCode)).append("\n");
-    sb.append("    statusFromDateDATE: ").append(toIndentedString(statusFromDateDATE)).append("\n");
-    sb.append("    financialBureauCode: ").append(toIndentedString(financialBureauCode)).append("\n");
-    sb.append("    statusCodeAsText: ").append(toIndentedString(statusCodeAsText)).append("\n");
+    sb.append("    logdatedate: ").append(toIndentedString(logdatedate)).append("\n");
+    sb.append("    logheaderId: ").append(toIndentedString(logheaderId)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    vatidentnumber: ").append(toIndentedString(vatidentnumber)).append("\n");
+    sb.append("    statuscode: ").append(toIndentedString(statuscode)).append("\n");
+    sb.append("    statusfromdatedate: ").append(toIndentedString(statusfromdatedate)).append("\n");
+    sb.append("    financialbureaucode: ").append(toIndentedString(financialbureaucode)).append("\n");
+    sb.append("    statuscodeastext: ").append(toIndentedString(statuscodeastext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

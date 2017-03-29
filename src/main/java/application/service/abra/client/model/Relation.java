@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,138 +34,174 @@ import java.util.Objects;
 /**
  * Relation
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Relation   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("REL_DEF")
-  private Integer REL_DEF = null;
+  @SerializedName("rel_def")
+  private Integer relDef = null;
 
-  @SerializedName("LEFTSIDE_ID")
-  private String LEFTSIDE_ID = null;
+  @SerializedName("leftside_id")
+  private String leftsideId = null;
 
-  @SerializedName("RIGHTSIDE_ID")
-  private String RIGHTSIDE_ID = null;
+  @SerializedName("rightside_id")
+  private String rightsideId = null;
 
-  @SerializedName("NUMVALUE")
-  private Double NUMVALUE = null;
+  @SerializedName("numvalue")
+  private Double numvalue = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Relation REL_DEF(Integer REL_DEF) {
-    this.REL_DEF = REL_DEF;
+  public Relation displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * ID Relační definice [persistentní položka]
-   * @return REL_DEF
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "ID Relační definice [persistentní položka]")
-  public Integer getRELDEF() {
-    return REL_DEF;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setRELDEF(Integer REL_DEF) {
-    this.REL_DEF = REL_DEF;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Relation LEFTSIDE_ID(String LEFTSIDE_ID) {
-    this.LEFTSIDE_ID = LEFTSIDE_ID;
+  public Relation id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Levá strana [persistentní položka]
-   * @return LEFTSIDE_ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Levá strana [persistentní položka]")
-  public String getLEFTSIDEID() {
-    return LEFTSIDE_ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setLEFTSIDEID(String LEFTSIDE_ID) {
-    this.LEFTSIDE_ID = LEFTSIDE_ID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Relation RIGHTSIDE_ID(String RIGHTSIDE_ID) {
-    this.RIGHTSIDE_ID = RIGHTSIDE_ID;
+  public Relation classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Pravá strana [persistentní položka]
-   * @return RIGHTSIDE_ID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Pravá strana [persistentní položka]")
-  public String getRIGHTSIDEID() {
-    return RIGHTSIDE_ID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setRIGHTSIDEID(String RIGHTSIDE_ID) {
-    this.RIGHTSIDE_ID = RIGHTSIDE_ID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Relation NUMVALUE(Double NUMVALUE) {
-    this.NUMVALUE = NUMVALUE;
+  public Relation objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Hodnota vazby [persistentní položka]
-   * @return NUMVALUE
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Hodnota vazby [persistentní položka]")
-  public Double getNUMVALUE() {
-    return NUMVALUE;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setNUMVALUE(Double NUMVALUE) {
-    this.NUMVALUE = NUMVALUE;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Relation relDef(Integer relDef) {
+    this.relDef = relDef;
+    return this;
+  }
+
+   /**
+   * id relační definice [persistentní položka]
+   * @return relDef
+  **/
+  @ApiModelProperty(example = "null", value = "id relační definice [persistentní položka]")
+  public Integer getRelDef() {
+    return relDef;
+  }
+
+  public void setRelDef(Integer relDef) {
+    this.relDef = relDef;
+  }
+
+  public Relation leftsideId(String leftsideId) {
+    this.leftsideId = leftsideId;
+    return this;
+  }
+
+   /**
+   * levá strana [persistentní položka]
+   * @return leftsideId
+  **/
+  @ApiModelProperty(example = "null", value = "levá strana [persistentní položka]")
+  public String getLeftsideId() {
+    return leftsideId;
+  }
+
+  public void setLeftsideId(String leftsideId) {
+    this.leftsideId = leftsideId;
+  }
+
+  public Relation rightsideId(String rightsideId) {
+    this.rightsideId = rightsideId;
+    return this;
+  }
+
+   /**
+   * pravá strana [persistentní položka]
+   * @return rightsideId
+  **/
+  @ApiModelProperty(example = "null", value = "pravá strana [persistentní položka]")
+  public String getRightsideId() {
+    return rightsideId;
+  }
+
+  public void setRightsideId(String rightsideId) {
+    this.rightsideId = rightsideId;
+  }
+
+  public Relation numvalue(Double numvalue) {
+    this.numvalue = numvalue;
+    return this;
+  }
+
+   /**
+   * hodnota vazby [persistentní položka]
+   * @return numvalue
+  **/
+  @ApiModelProperty(example = "null", value = "hodnota vazby [persistentní položka]")
+  public Double getNumvalue() {
+    return numvalue;
+  }
+
+  public void setNumvalue(Double numvalue) {
+    this.numvalue = numvalue;
   }
 
 
@@ -178,19 +214,19 @@ public class Relation   {
       return false;
     }
     Relation relation = (Relation) o;
-    return Objects.equals(this.displayName, relation.displayName) &&
-        Objects.equals(this.ID, relation.ID) &&
-        Objects.equals(this.classID, relation.classID) &&
-        Objects.equals(this.objVersion, relation.objVersion) &&
-        Objects.equals(this.REL_DEF, relation.REL_DEF) &&
-        Objects.equals(this.LEFTSIDE_ID, relation.LEFTSIDE_ID) &&
-        Objects.equals(this.RIGHTSIDE_ID, relation.RIGHTSIDE_ID) &&
-        Objects.equals(this.NUMVALUE, relation.NUMVALUE);
+    return Objects.equals(this.displayname, relation.displayname) &&
+        Objects.equals(this.id, relation.id) &&
+        Objects.equals(this.classid, relation.classid) &&
+        Objects.equals(this.objversion, relation.objversion) &&
+        Objects.equals(this.relDef, relation.relDef) &&
+        Objects.equals(this.leftsideId, relation.leftsideId) &&
+        Objects.equals(this.rightsideId, relation.rightsideId) &&
+        Objects.equals(this.numvalue, relation.numvalue);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, REL_DEF, LEFTSIDE_ID, RIGHTSIDE_ID, NUMVALUE);
+    return Objects.hash(displayname, id, classid, objversion, relDef, leftsideId, rightsideId, numvalue);
   }
 
   @Override
@@ -198,14 +234,14 @@ public class Relation   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Relation {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    REL_DEF: ").append(toIndentedString(REL_DEF)).append("\n");
-    sb.append("    LEFTSIDE_ID: ").append(toIndentedString(LEFTSIDE_ID)).append("\n");
-    sb.append("    RIGHTSIDE_ID: ").append(toIndentedString(RIGHTSIDE_ID)).append("\n");
-    sb.append("    NUMVALUE: ").append(toIndentedString(NUMVALUE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    relDef: ").append(toIndentedString(relDef)).append("\n");
+    sb.append("    leftsideId: ").append(toIndentedString(leftsideId)).append("\n");
+    sb.append("    rightsideId: ").append(toIndentedString(rightsideId)).append("\n");
+    sb.append("    numvalue: ").append(toIndentedString(numvalue)).append("\n");
     sb.append("}");
     return sb.toString();
   }

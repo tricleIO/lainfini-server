@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,163 +36,199 @@ import java.util.Objects;
 /**
  * Plmjooutputitem
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmjooutputitem   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("PLMJobOrdersRoutines")
-  private List<Plmjobordersroutine> pLMJobOrdersRoutines = new ArrayList<Plmjobordersroutine>();
+  @SerializedName("plmjobordersroutines")
+  private List<Plmjobordersroutine> plmjobordersroutines = new ArrayList<Plmjobordersroutine>();
 
-  @SerializedName("PLMJobOrdersSN")
-  private List<Plmjoborderssn> pLMJobOrdersSN = new ArrayList<Plmjoborderssn>();
+  @SerializedName("plmjoborderssn")
+  private List<Plmjoborderssn> plmjoborderssn = new ArrayList<Plmjoborderssn>();
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("RoutineType_ID")
-  private String routineTypeID = null;
+  @SerializedName("routinetype_id")
+  private String routinetypeId = null;
 
-  @SerializedName("UnitQuantity")
-  private Double unitQuantity = null;
+  @SerializedName("unitquantity")
+  private Double unitquantity = null;
 
-  @SerializedName("FinishedQuantity")
-  private Double finishedQuantity = null;
+  @SerializedName("finishedquantity")
+  private Double finishedquantity = null;
 
-  @SerializedName("FinishedUnitQuantity")
-  private Double finishedUnitQuantity = null;
+  @SerializedName("finishedunitquantity")
+  private Double finishedunitquantity = null;
 
-  @SerializedName("PLQuantity")
-  private Double pLQuantity = null;
+  @SerializedName("plquantity")
+  private Double plquantity = null;
 
-  @SerializedName("PLQUnit")
-  private String pLQUnit = null;
+  @SerializedName("plqunit")
+  private String plqunit = null;
 
-  @SerializedName("PLUnitRate")
-  private Double pLUnitRate = null;
+  @SerializedName("plunitrate")
+  private Double plunitrate = null;
 
-  @SerializedName("RoutineQuantity")
-  private Double routineQuantity = null;
+  @SerializedName("routinequantity")
+  private Double routinequantity = null;
 
-  @SerializedName("RoutineQUnit")
-  private String routineQUnit = null;
+  @SerializedName("routinequnit")
+  private String routinequnit = null;
 
-  @SerializedName("RoutineUnitRate")
-  private Double routineUnitRate = null;
+  @SerializedName("routineunitrate")
+  private Double routineunitrate = null;
 
-  @SerializedName("PLUnitQuantity")
-  private Double pLUnitQuantity = null;
+  @SerializedName("plunitquantity")
+  private Double plunitquantity = null;
 
-  @SerializedName("RoutineUnitQuantity")
-  private Double routineUnitQuantity = null;
+  @SerializedName("routineunitquantity")
+  private Double routineunitquantity = null;
 
-  @SerializedName("RoutineStoreCard_ID")
-  private String routineStoreCardID = null;
+  @SerializedName("routinestorecard_id")
+  private String routinestorecardId = null;
 
-  @SerializedName("RoutineNote")
-  private String routineNote = null;
+  @SerializedName("routinenote")
+  private String routinenote = null;
 
-  @SerializedName("PLNote")
-  private String pLNote = null;
+  @SerializedName("plnote")
+  private String plnote = null;
 
-  @SerializedName("Owner_ID")
-  private String ownerID = null;
+  @SerializedName("owner_id")
+  private String ownerId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Plmjooutputitem pLMJobOrdersRoutines(List<Plmjobordersroutine> pLMJobOrdersRoutines) {
-    this.pLMJobOrdersRoutines = pLMJobOrdersRoutines;
-    return this;
-  }
-
-  public Plmjooutputitem addPLMJobOrdersRoutinesItem(Plmjobordersroutine pLMJobOrdersRoutinesItem) {
-    this.pLMJobOrdersRoutines.add(pLMJobOrdersRoutinesItem);
+  public Plmjooutputitem displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Postupy; kolekce BO VP - technologický postup [nepersistentní položka]
-   * @return pLMJobOrdersRoutines
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Postupy; kolekce BO VP - technologický postup [nepersistentní položka]")
-  public List<Plmjobordersroutine> getPLMJobOrdersRoutines() {
-    return pLMJobOrdersRoutines;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPLMJobOrdersRoutines(List<Plmjobordersroutine> pLMJobOrdersRoutines) {
-    this.pLMJobOrdersRoutines = pLMJobOrdersRoutines;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Plmjooutputitem pLMJobOrdersSN(List<Plmjoborderssn> pLMJobOrdersSN) {
-    this.pLMJobOrdersSN = pLMJobOrdersSN;
-    return this;
-  }
-
-  public Plmjooutputitem addPLMJobOrdersSNItem(Plmjoborderssn pLMJobOrdersSNItem) {
-    this.pLMJobOrdersSN.add(pLMJobOrdersSNItem);
+  public Plmjooutputitem id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Sériová čísla; kolekce BO VP - sériové číslo [nepersistentní položka]
-   * @return pLMJobOrdersSN
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Sériová čísla; kolekce BO VP - sériové číslo [nepersistentní položka]")
-  public List<Plmjoborderssn> getPLMJobOrdersSN() {
-    return pLMJobOrdersSN;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setPLMJobOrdersSN(List<Plmjoborderssn> pLMJobOrdersSN) {
-    this.pLMJobOrdersSN = pLMJobOrdersSN;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmjooutputitem classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmjooutputitem objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Plmjooutputitem plmjobordersroutines(List<Plmjobordersroutine> plmjobordersroutines) {
+    this.plmjobordersroutines = plmjobordersroutines;
+    return this;
+  }
+
+  public Plmjooutputitem addPlmjobordersroutinesItem(Plmjobordersroutine plmjobordersroutinesItem) {
+    this.plmjobordersroutines.add(plmjobordersroutinesItem);
+    return this;
+  }
+
+   /**
+   * postupy; kolekce bo vp - technologický postup [nepersistentní položka]
+   * @return plmjobordersroutines
+  **/
+  @ApiModelProperty(example = "null", value = "postupy; kolekce bo vp - technologický postup [nepersistentní položka]")
+  public List<Plmjobordersroutine> getPlmjobordersroutines() {
+    return plmjobordersroutines;
+  }
+
+  public void setPlmjobordersroutines(List<Plmjobordersroutine> plmjobordersroutines) {
+    this.plmjobordersroutines = plmjobordersroutines;
+  }
+
+  public Plmjooutputitem plmjoborderssn(List<Plmjoborderssn> plmjoborderssn) {
+    this.plmjoborderssn = plmjoborderssn;
+    return this;
+  }
+
+  public Plmjooutputitem addPlmjoborderssnItem(Plmjoborderssn plmjoborderssnItem) {
+    this.plmjoborderssn.add(plmjoborderssnItem);
+    return this;
+  }
+
+   /**
+   * sériová čísla; kolekce bo vp - sériové číslo [nepersistentní položka]
+   * @return plmjoborderssn
+  **/
+  @ApiModelProperty(example = "null", value = "sériová čísla; kolekce bo vp - sériové číslo [nepersistentní položka]")
+  public List<Plmjoborderssn> getPlmjoborderssn() {
+    return plmjoborderssn;
+  }
+
+  public void setPlmjoborderssn(List<Plmjoborderssn> plmjoborderssn) {
+    this.plmjoborderssn = plmjoborderssn;
   }
 
   public Plmjooutputitem quantity(Double quantity) {
@@ -201,10 +237,10 @@ public class Plmjooutputitem   {
   }
 
    /**
-   * Množství v ev. jednotkách [persistentní položka]
+   * množství v ev. jednotkách [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství v ev. jednotkách [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "množství v ev. jednotkách [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -213,319 +249,328 @@ public class Plmjooutputitem   {
     this.quantity = quantity;
   }
 
-  public Plmjooutputitem qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Plmjooutputitem qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
   }
 
-  public Plmjooutputitem unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Plmjooutputitem unitrate(Double unitrate) {
+    this.unitrate = unitrate;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return unitRate
+   * vztah [persistentní položka]
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
-  public Plmjooutputitem routineTypeID(String routineTypeID) {
-    this.routineTypeID = routineTypeID;
+  public Plmjooutputitem routinetypeId(String routinetypeId) {
+    this.routinetypeId = routinetypeId;
     return this;
   }
 
    /**
-   * Typ; ID objektu Typ technologického postupu [persistentní položka]
-   * @return routineTypeID
+   * typ; id objektu typ technologického postupu [persistentní položka]
+   * @return routinetypeId
   **/
-  @ApiModelProperty(example = "null", value = "Typ; ID objektu Typ technologického postupu [persistentní položka]")
-  public String getRoutineTypeID() {
-    return routineTypeID;
+  @ApiModelProperty(example = "null", value = "typ; id objektu typ technologického postupu [persistentní položka]")
+  public String getRoutinetypeId() {
+    return routinetypeId;
   }
 
-  public void setRoutineTypeID(String routineTypeID) {
-    this.routineTypeID = routineTypeID;
+  public void setRoutinetypeId(String routinetypeId) {
+    this.routinetypeId = routinetypeId;
   }
 
-  public Plmjooutputitem unitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public Plmjooutputitem unitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
     return this;
   }
 
    /**
-   * Množství
-   * @return unitQuantity
+   * množství
+   * @return unitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství")
-  public Double getUnitQuantity() {
-    return unitQuantity;
+  @ApiModelProperty(example = "null", value = "množství")
+  public Double getUnitquantity() {
+    return unitquantity;
   }
 
-  public void setUnitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public void setUnitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
   }
 
-  public Plmjooutputitem finishedQuantity(Double finishedQuantity) {
-    this.finishedQuantity = finishedQuantity;
+  public Plmjooutputitem finishedquantity(Double finishedquantity) {
+    this.finishedquantity = finishedquantity;
     return this;
   }
 
    /**
-   * Vyrobené množství v ev.jedn.
-   * @return finishedQuantity
+   * vyrobené množství v ev.jedn.
+   * @return finishedquantity
   **/
-  @ApiModelProperty(example = "null", value = "Vyrobené množství v ev.jedn.")
-  public Double getFinishedQuantity() {
-    return finishedQuantity;
+  @ApiModelProperty(example = "null", value = "vyrobené množství v ev.jedn.")
+  public Double getFinishedquantity() {
+    return finishedquantity;
   }
 
-  public void setFinishedQuantity(Double finishedQuantity) {
-    this.finishedQuantity = finishedQuantity;
+  public void setFinishedquantity(Double finishedquantity) {
+    this.finishedquantity = finishedquantity;
   }
 
-  public Plmjooutputitem finishedUnitQuantity(Double finishedUnitQuantity) {
-    this.finishedUnitQuantity = finishedUnitQuantity;
+  public Plmjooutputitem finishedunitquantity(Double finishedunitquantity) {
+    this.finishedunitquantity = finishedunitquantity;
     return this;
   }
 
    /**
-   * Vyrobené množství
-   * @return finishedUnitQuantity
+   * vyrobené množství
+   * @return finishedunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Vyrobené množství")
-  public Double getFinishedUnitQuantity() {
-    return finishedUnitQuantity;
+  @ApiModelProperty(example = "null", value = "vyrobené množství")
+  public Double getFinishedunitquantity() {
+    return finishedunitquantity;
   }
 
-  public void setFinishedUnitQuantity(Double finishedUnitQuantity) {
-    this.finishedUnitQuantity = finishedUnitQuantity;
+  public void setFinishedunitquantity(Double finishedunitquantity) {
+    this.finishedunitquantity = finishedunitquantity;
   }
 
-  public Plmjooutputitem pLQuantity(Double pLQuantity) {
-    this.pLQuantity = pLQuantity;
+  public Plmjooutputitem plquantity(Double plquantity) {
+    this.plquantity = plquantity;
     return this;
   }
 
    /**
-   * Množství [persistentní položka]
-   * @return pLQuantity
+   * množství [persistentní položka]
+   * @return plquantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství [persistentní položka]")
-  public Double getPLQuantity() {
-    return pLQuantity;
+  @ApiModelProperty(example = "null", value = "množství [persistentní položka]")
+  public Double getPlquantity() {
+    return plquantity;
   }
 
-  public void setPLQuantity(Double pLQuantity) {
-    this.pLQuantity = pLQuantity;
+  public void setPlquantity(Double plquantity) {
+    this.plquantity = plquantity;
   }
 
-  public Plmjooutputitem pLQUnit(String pLQUnit) {
-    this.pLQUnit = pLQUnit;
+  public Plmjooutputitem plqunit(String plqunit) {
+    this.plqunit = plqunit;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return pLQUnit
+   * jednotka [persistentní položka]
+   * @return plqunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getPLQUnit() {
-    return pLQUnit;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getPlqunit() {
+    return plqunit;
   }
 
-  public void setPLQUnit(String pLQUnit) {
-    this.pLQUnit = pLQUnit;
+  public void setPlqunit(String plqunit) {
+    this.plqunit = plqunit;
   }
 
-  public Plmjooutputitem pLUnitRate(Double pLUnitRate) {
-    this.pLUnitRate = pLUnitRate;
+  public Plmjooutputitem plunitrate(Double plunitrate) {
+    this.plunitrate = plunitrate;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return pLUnitRate
+   * vztah [persistentní položka]
+   * @return plunitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getPLUnitRate() {
-    return pLUnitRate;
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getPlunitrate() {
+    return plunitrate;
   }
 
-  public void setPLUnitRate(Double pLUnitRate) {
-    this.pLUnitRate = pLUnitRate;
+  public void setPlunitrate(Double plunitrate) {
+    this.plunitrate = plunitrate;
   }
 
-  public Plmjooutputitem routineQuantity(Double routineQuantity) {
-    this.routineQuantity = routineQuantity;
+  public Plmjooutputitem routinequantity(Double routinequantity) {
+    this.routinequantity = routinequantity;
     return this;
   }
 
    /**
-   * Množství [persistentní položka]
-   * @return routineQuantity
+   * množství [persistentní položka]
+   * @return routinequantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství [persistentní položka]")
-  public Double getRoutineQuantity() {
-    return routineQuantity;
+  @ApiModelProperty(example = "null", value = "množství [persistentní položka]")
+  public Double getRoutinequantity() {
+    return routinequantity;
   }
 
-  public void setRoutineQuantity(Double routineQuantity) {
-    this.routineQuantity = routineQuantity;
+  public void setRoutinequantity(Double routinequantity) {
+    this.routinequantity = routinequantity;
   }
 
-  public Plmjooutputitem routineQUnit(String routineQUnit) {
-    this.routineQUnit = routineQUnit;
+  public Plmjooutputitem routinequnit(String routinequnit) {
+    this.routinequnit = routinequnit;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return routineQUnit
+   * jednotka [persistentní položka]
+   * @return routinequnit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getRoutineQUnit() {
-    return routineQUnit;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getRoutinequnit() {
+    return routinequnit;
   }
 
-  public void setRoutineQUnit(String routineQUnit) {
-    this.routineQUnit = routineQUnit;
+  public void setRoutinequnit(String routinequnit) {
+    this.routinequnit = routinequnit;
   }
 
-  public Plmjooutputitem routineUnitRate(Double routineUnitRate) {
-    this.routineUnitRate = routineUnitRate;
+  public Plmjooutputitem routineunitrate(Double routineunitrate) {
+    this.routineunitrate = routineunitrate;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return routineUnitRate
+   * vztah [persistentní položka]
+   * @return routineunitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getRoutineUnitRate() {
-    return routineUnitRate;
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getRoutineunitrate() {
+    return routineunitrate;
   }
 
-  public void setRoutineUnitRate(Double routineUnitRate) {
-    this.routineUnitRate = routineUnitRate;
+  public void setRoutineunitrate(Double routineunitrate) {
+    this.routineunitrate = routineunitrate;
   }
 
-  public Plmjooutputitem pLUnitQuantity(Double pLUnitQuantity) {
-    this.pLUnitQuantity = pLUnitQuantity;
+  public Plmjooutputitem plunitquantity(Double plunitquantity) {
+    this.plunitquantity = plunitquantity;
     return this;
   }
 
    /**
-   * Množství
-   * @return pLUnitQuantity
+   * množství
+   * @return plunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství")
-  public Double getPLUnitQuantity() {
-    return pLUnitQuantity;
+  @ApiModelProperty(example = "null", value = "množství")
+  public Double getPlunitquantity() {
+    return plunitquantity;
   }
 
-  public void setPLUnitQuantity(Double pLUnitQuantity) {
-    this.pLUnitQuantity = pLUnitQuantity;
+  public void setPlunitquantity(Double plunitquantity) {
+    this.plunitquantity = plunitquantity;
   }
 
-  public Plmjooutputitem routineUnitQuantity(Double routineUnitQuantity) {
-    this.routineUnitQuantity = routineUnitQuantity;
+  public Plmjooutputitem routineunitquantity(Double routineunitquantity) {
+    this.routineunitquantity = routineunitquantity;
     return this;
   }
 
    /**
-   * Množství
-   * @return routineUnitQuantity
+   * množství
+   * @return routineunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství")
-  public Double getRoutineUnitQuantity() {
-    return routineUnitQuantity;
+  @ApiModelProperty(example = "null", value = "množství")
+  public Double getRoutineunitquantity() {
+    return routineunitquantity;
   }
 
-  public void setRoutineUnitQuantity(Double routineUnitQuantity) {
-    this.routineUnitQuantity = routineUnitQuantity;
+  public void setRoutineunitquantity(Double routineunitquantity) {
+    this.routineunitquantity = routineunitquantity;
   }
 
-  public Plmjooutputitem routineStoreCardID(String routineStoreCardID) {
-    this.routineStoreCardID = routineStoreCardID;
+  public Plmjooutputitem routinestorecardId(String routinestorecardId) {
+    this.routinestorecardId = routinestorecardId;
     return this;
   }
 
    /**
-   * Skladová karta TP; ID objektu Skladová karta [persistentní položka]
-   * @return routineStoreCardID
+   * skladová karta tp; id objektu skladová karta [persistentní položka]
+   * @return routinestorecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta TP; ID objektu Skladová karta [persistentní položka]")
-  public String getRoutineStoreCardID() {
-    return routineStoreCardID;
+  @ApiModelProperty(example = "null", value = "skladová karta tp; id objektu skladová karta [persistentní položka]")
+  public String getRoutinestorecardId() {
+    return routinestorecardId;
   }
 
-  public void setRoutineStoreCardID(String routineStoreCardID) {
-    this.routineStoreCardID = routineStoreCardID;
+  public void setRoutinestorecardId(String routinestorecardId) {
+    this.routinestorecardId = routinestorecardId;
   }
 
-  public Plmjooutputitem routineNote(String routineNote) {
-    this.routineNote = routineNote;
+  public Plmjooutputitem routinenote(String routinenote) {
+    this.routinenote = routinenote;
     return this;
   }
 
    /**
-   * Poznámka z TP [persistentní položka]
-   * @return routineNote
+   * poznámka z tp [persistentní položka]
+   * @return routinenote
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka z TP [persistentní položka]")
-  public String getRoutineNote() {
-    return routineNote;
+  @ApiModelProperty(example = "null", value = "poznámka z tp [persistentní položka]")
+  public String getRoutinenote() {
+    return routinenote;
   }
 
-  public void setRoutineNote(String routineNote) {
-    this.routineNote = routineNote;
+  public void setRoutinenote(String routinenote) {
+    this.routinenote = routinenote;
   }
 
-  public Plmjooutputitem pLNote(String pLNote) {
-    this.pLNote = pLNote;
+  public Plmjooutputitem plnote(String plnote) {
+    this.plnote = plnote;
     return this;
   }
 
    /**
-   * Poznámka z PL [persistentní položka]
-   * @return pLNote
+   * poznámka z pl [persistentní položka]
+   * @return plnote
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka z PL [persistentní položka]")
-  public String getPLNote() {
-    return pLNote;
+  @ApiModelProperty(example = "null", value = "poznámka z pl [persistentní položka]")
+  public String getPlnote() {
+    return plnote;
   }
 
-  public void setPLNote(String pLNote) {
-    this.pLNote = pLNote;
+  public void setPlnote(String plnote) {
+    this.plnote = plnote;
+  }
+
+  public Plmjooutputitem ownerId(String ownerId) {
+    this.ownerId = ownerId;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Uzel stromu výrobního příkazu [persistentní položka]
-   * @return ownerID
+   * vlastník; id objektu uzel stromu výrobního příkazu [persistentní položka]
+   * @return ownerId
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Uzel stromu výrobního příkazu [persistentní položka]")
-  public String getOwnerID() {
-    return ownerID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu uzel stromu výrobního příkazu [persistentní položka]")
+  public String getOwnerId() {
+    return ownerId;
+  }
+
+  public void setOwnerId(String ownerId) {
+    this.ownerId = ownerId;
   }
 
 
@@ -538,36 +583,36 @@ public class Plmjooutputitem   {
       return false;
     }
     Plmjooutputitem plmjooutputitem = (Plmjooutputitem) o;
-    return Objects.equals(this.displayName, plmjooutputitem.displayName) &&
-        Objects.equals(this.ID, plmjooutputitem.ID) &&
-        Objects.equals(this.classID, plmjooutputitem.classID) &&
-        Objects.equals(this.objVersion, plmjooutputitem.objVersion) &&
-        Objects.equals(this.pLMJobOrdersRoutines, plmjooutputitem.pLMJobOrdersRoutines) &&
-        Objects.equals(this.pLMJobOrdersSN, plmjooutputitem.pLMJobOrdersSN) &&
+    return Objects.equals(this.displayname, plmjooutputitem.displayname) &&
+        Objects.equals(this.id, plmjooutputitem.id) &&
+        Objects.equals(this.classid, plmjooutputitem.classid) &&
+        Objects.equals(this.objversion, plmjooutputitem.objversion) &&
+        Objects.equals(this.plmjobordersroutines, plmjooutputitem.plmjobordersroutines) &&
+        Objects.equals(this.plmjoborderssn, plmjooutputitem.plmjoborderssn) &&
         Objects.equals(this.quantity, plmjooutputitem.quantity) &&
-        Objects.equals(this.qUnit, plmjooutputitem.qUnit) &&
-        Objects.equals(this.unitRate, plmjooutputitem.unitRate) &&
-        Objects.equals(this.routineTypeID, plmjooutputitem.routineTypeID) &&
-        Objects.equals(this.unitQuantity, plmjooutputitem.unitQuantity) &&
-        Objects.equals(this.finishedQuantity, plmjooutputitem.finishedQuantity) &&
-        Objects.equals(this.finishedUnitQuantity, plmjooutputitem.finishedUnitQuantity) &&
-        Objects.equals(this.pLQuantity, plmjooutputitem.pLQuantity) &&
-        Objects.equals(this.pLQUnit, plmjooutputitem.pLQUnit) &&
-        Objects.equals(this.pLUnitRate, plmjooutputitem.pLUnitRate) &&
-        Objects.equals(this.routineQuantity, plmjooutputitem.routineQuantity) &&
-        Objects.equals(this.routineQUnit, plmjooutputitem.routineQUnit) &&
-        Objects.equals(this.routineUnitRate, plmjooutputitem.routineUnitRate) &&
-        Objects.equals(this.pLUnitQuantity, plmjooutputitem.pLUnitQuantity) &&
-        Objects.equals(this.routineUnitQuantity, plmjooutputitem.routineUnitQuantity) &&
-        Objects.equals(this.routineStoreCardID, plmjooutputitem.routineStoreCardID) &&
-        Objects.equals(this.routineNote, plmjooutputitem.routineNote) &&
-        Objects.equals(this.pLNote, plmjooutputitem.pLNote) &&
-        Objects.equals(this.ownerID, plmjooutputitem.ownerID);
+        Objects.equals(this.qunit, plmjooutputitem.qunit) &&
+        Objects.equals(this.unitrate, plmjooutputitem.unitrate) &&
+        Objects.equals(this.routinetypeId, plmjooutputitem.routinetypeId) &&
+        Objects.equals(this.unitquantity, plmjooutputitem.unitquantity) &&
+        Objects.equals(this.finishedquantity, plmjooutputitem.finishedquantity) &&
+        Objects.equals(this.finishedunitquantity, plmjooutputitem.finishedunitquantity) &&
+        Objects.equals(this.plquantity, plmjooutputitem.plquantity) &&
+        Objects.equals(this.plqunit, plmjooutputitem.plqunit) &&
+        Objects.equals(this.plunitrate, plmjooutputitem.plunitrate) &&
+        Objects.equals(this.routinequantity, plmjooutputitem.routinequantity) &&
+        Objects.equals(this.routinequnit, plmjooutputitem.routinequnit) &&
+        Objects.equals(this.routineunitrate, plmjooutputitem.routineunitrate) &&
+        Objects.equals(this.plunitquantity, plmjooutputitem.plunitquantity) &&
+        Objects.equals(this.routineunitquantity, plmjooutputitem.routineunitquantity) &&
+        Objects.equals(this.routinestorecardId, plmjooutputitem.routinestorecardId) &&
+        Objects.equals(this.routinenote, plmjooutputitem.routinenote) &&
+        Objects.equals(this.plnote, plmjooutputitem.plnote) &&
+        Objects.equals(this.ownerId, plmjooutputitem.ownerId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, pLMJobOrdersRoutines, pLMJobOrdersSN, quantity, qUnit, unitRate, routineTypeID, unitQuantity, finishedQuantity, finishedUnitQuantity, pLQuantity, pLQUnit, pLUnitRate, routineQuantity, routineQUnit, routineUnitRate, pLUnitQuantity, routineUnitQuantity, routineStoreCardID, routineNote, pLNote, ownerID);
+    return Objects.hash(displayname, id, classid, objversion, plmjobordersroutines, plmjoborderssn, quantity, qunit, unitrate, routinetypeId, unitquantity, finishedquantity, finishedunitquantity, plquantity, plqunit, plunitrate, routinequantity, routinequnit, routineunitrate, plunitquantity, routineunitquantity, routinestorecardId, routinenote, plnote, ownerId);
   }
 
   @Override
@@ -575,31 +620,31 @@ public class Plmjooutputitem   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmjooutputitem {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    pLMJobOrdersRoutines: ").append(toIndentedString(pLMJobOrdersRoutines)).append("\n");
-    sb.append("    pLMJobOrdersSN: ").append(toIndentedString(pLMJobOrdersSN)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    plmjobordersroutines: ").append(toIndentedString(plmjobordersroutines)).append("\n");
+    sb.append("    plmjoborderssn: ").append(toIndentedString(plmjoborderssn)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    routineTypeID: ").append(toIndentedString(routineTypeID)).append("\n");
-    sb.append("    unitQuantity: ").append(toIndentedString(unitQuantity)).append("\n");
-    sb.append("    finishedQuantity: ").append(toIndentedString(finishedQuantity)).append("\n");
-    sb.append("    finishedUnitQuantity: ").append(toIndentedString(finishedUnitQuantity)).append("\n");
-    sb.append("    pLQuantity: ").append(toIndentedString(pLQuantity)).append("\n");
-    sb.append("    pLQUnit: ").append(toIndentedString(pLQUnit)).append("\n");
-    sb.append("    pLUnitRate: ").append(toIndentedString(pLUnitRate)).append("\n");
-    sb.append("    routineQuantity: ").append(toIndentedString(routineQuantity)).append("\n");
-    sb.append("    routineQUnit: ").append(toIndentedString(routineQUnit)).append("\n");
-    sb.append("    routineUnitRate: ").append(toIndentedString(routineUnitRate)).append("\n");
-    sb.append("    pLUnitQuantity: ").append(toIndentedString(pLUnitQuantity)).append("\n");
-    sb.append("    routineUnitQuantity: ").append(toIndentedString(routineUnitQuantity)).append("\n");
-    sb.append("    routineStoreCardID: ").append(toIndentedString(routineStoreCardID)).append("\n");
-    sb.append("    routineNote: ").append(toIndentedString(routineNote)).append("\n");
-    sb.append("    pLNote: ").append(toIndentedString(pLNote)).append("\n");
-    sb.append("    ownerID: ").append(toIndentedString(ownerID)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    routinetypeId: ").append(toIndentedString(routinetypeId)).append("\n");
+    sb.append("    unitquantity: ").append(toIndentedString(unitquantity)).append("\n");
+    sb.append("    finishedquantity: ").append(toIndentedString(finishedquantity)).append("\n");
+    sb.append("    finishedunitquantity: ").append(toIndentedString(finishedunitquantity)).append("\n");
+    sb.append("    plquantity: ").append(toIndentedString(plquantity)).append("\n");
+    sb.append("    plqunit: ").append(toIndentedString(plqunit)).append("\n");
+    sb.append("    plunitrate: ").append(toIndentedString(plunitrate)).append("\n");
+    sb.append("    routinequantity: ").append(toIndentedString(routinequantity)).append("\n");
+    sb.append("    routinequnit: ").append(toIndentedString(routinequnit)).append("\n");
+    sb.append("    routineunitrate: ").append(toIndentedString(routineunitrate)).append("\n");
+    sb.append("    plunitquantity: ").append(toIndentedString(plunitquantity)).append("\n");
+    sb.append("    routineunitquantity: ").append(toIndentedString(routineunitquantity)).append("\n");
+    sb.append("    routinestorecardId: ").append(toIndentedString(routinestorecardId)).append("\n");
+    sb.append("    routinenote: ").append(toIndentedString(routinenote)).append("\n");
+    sb.append("    plnote: ").append(toIndentedString(plnote)).append("\n");
+    sb.append("    ownerId: ").append(toIndentedString(ownerId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,78 +34,123 @@ import java.util.Objects;
 /**
  * Logstoresettingsrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Logstoresettingsrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Kind")
+  @SerializedName("kind")
   private Integer kind = null;
 
-  @SerializedName("StrategyID")
-  private String strategyID = null;
+  @SerializedName("strategyid")
+  private String strategyid = null;
 
-  @SerializedName("IsAccessibilityFilter")
-  private Boolean isAccessibilityFilter = null;
+  @SerializedName("isaccessibilityfilter")
+  private Boolean isaccessibilityfilter = null;
 
-  @SerializedName("AccessibilityLimit")
-  private Integer accessibilityLimit = null;
+  @SerializedName("accessibilitylimit")
+  private Integer accessibilitylimit = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Logstoresettingsrow displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Logstoresettingsrow id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Logstoresettingsrow classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Logstoresettingsrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Nastavení Polohovaných skladů [persistentní položka]
-   * @return parentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Nastavení Polohovaných skladů [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Logstoresettingsrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu nastavení polohovaných skladů [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu nastavení polohovaných skladů [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
   public Logstoresettingsrow kind(Integer kind) {
@@ -114,10 +159,10 @@ public class Logstoresettingsrow   {
   }
 
    /**
-   * Druh [persistentní položka]
+   * druh [persistentní položka]
    * @return kind
   **/
-  @ApiModelProperty(example = "null", value = "Druh [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "druh [persistentní položka]")
   public Integer getKind() {
     return kind;
   }
@@ -126,58 +171,58 @@ public class Logstoresettingsrow   {
     this.kind = kind;
   }
 
-  public Logstoresettingsrow strategyID(String strategyID) {
-    this.strategyID = strategyID;
+  public Logstoresettingsrow strategyid(String strategyid) {
+    this.strategyid = strategyid;
     return this;
   }
 
    /**
-   * Strategie [persistentní položka]
-   * @return strategyID
+   * strategie [persistentní položka]
+   * @return strategyid
   **/
-  @ApiModelProperty(example = "null", value = "Strategie [persistentní položka]")
-  public String getStrategyID() {
-    return strategyID;
+  @ApiModelProperty(example = "null", value = "strategie [persistentní položka]")
+  public String getStrategyid() {
+    return strategyid;
   }
 
-  public void setStrategyID(String strategyID) {
-    this.strategyID = strategyID;
+  public void setStrategyid(String strategyid) {
+    this.strategyid = strategyid;
   }
 
-  public Logstoresettingsrow isAccessibilityFilter(Boolean isAccessibilityFilter) {
-    this.isAccessibilityFilter = isAccessibilityFilter;
+  public Logstoresettingsrow isaccessibilityfilter(Boolean isaccessibilityfilter) {
+    this.isaccessibilityfilter = isaccessibilityfilter;
     return this;
   }
 
    /**
-   * Je zapnut filtr na dostupnost [persistentní položka]
-   * @return isAccessibilityFilter
+   * je zapnut filtr na dostupnost [persistentní položka]
+   * @return isaccessibilityfilter
   **/
-  @ApiModelProperty(example = "null", value = "Je zapnut filtr na dostupnost [persistentní položka]")
-  public Boolean getIsAccessibilityFilter() {
-    return isAccessibilityFilter;
+  @ApiModelProperty(example = "null", value = "je zapnut filtr na dostupnost [persistentní položka]")
+  public Boolean getIsaccessibilityfilter() {
+    return isaccessibilityfilter;
   }
 
-  public void setIsAccessibilityFilter(Boolean isAccessibilityFilter) {
-    this.isAccessibilityFilter = isAccessibilityFilter;
+  public void setIsaccessibilityfilter(Boolean isaccessibilityfilter) {
+    this.isaccessibilityfilter = isaccessibilityfilter;
   }
 
-  public Logstoresettingsrow accessibilityLimit(Integer accessibilityLimit) {
-    this.accessibilityLimit = accessibilityLimit;
+  public Logstoresettingsrow accessibilitylimit(Integer accessibilitylimit) {
+    this.accessibilitylimit = accessibilitylimit;
     return this;
   }
 
    /**
-   * Hranice dostupnosti [persistentní položka]
-   * @return accessibilityLimit
+   * hranice dostupnosti [persistentní položka]
+   * @return accessibilitylimit
   **/
-  @ApiModelProperty(example = "null", value = "Hranice dostupnosti [persistentní položka]")
-  public Integer getAccessibilityLimit() {
-    return accessibilityLimit;
+  @ApiModelProperty(example = "null", value = "hranice dostupnosti [persistentní položka]")
+  public Integer getAccessibilitylimit() {
+    return accessibilitylimit;
   }
 
-  public void setAccessibilityLimit(Integer accessibilityLimit) {
-    this.accessibilityLimit = accessibilityLimit;
+  public void setAccessibilitylimit(Integer accessibilitylimit) {
+    this.accessibilitylimit = accessibilitylimit;
   }
 
 
@@ -190,20 +235,20 @@ public class Logstoresettingsrow   {
       return false;
     }
     Logstoresettingsrow logstoresettingsrow = (Logstoresettingsrow) o;
-    return Objects.equals(this.displayName, logstoresettingsrow.displayName) &&
-        Objects.equals(this.ID, logstoresettingsrow.ID) &&
-        Objects.equals(this.classID, logstoresettingsrow.classID) &&
-        Objects.equals(this.objVersion, logstoresettingsrow.objVersion) &&
-        Objects.equals(this.parentID, logstoresettingsrow.parentID) &&
+    return Objects.equals(this.displayname, logstoresettingsrow.displayname) &&
+        Objects.equals(this.id, logstoresettingsrow.id) &&
+        Objects.equals(this.classid, logstoresettingsrow.classid) &&
+        Objects.equals(this.objversion, logstoresettingsrow.objversion) &&
+        Objects.equals(this.parentId, logstoresettingsrow.parentId) &&
         Objects.equals(this.kind, logstoresettingsrow.kind) &&
-        Objects.equals(this.strategyID, logstoresettingsrow.strategyID) &&
-        Objects.equals(this.isAccessibilityFilter, logstoresettingsrow.isAccessibilityFilter) &&
-        Objects.equals(this.accessibilityLimit, logstoresettingsrow.accessibilityLimit);
+        Objects.equals(this.strategyid, logstoresettingsrow.strategyid) &&
+        Objects.equals(this.isaccessibilityfilter, logstoresettingsrow.isaccessibilityfilter) &&
+        Objects.equals(this.accessibilitylimit, logstoresettingsrow.accessibilitylimit);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, kind, strategyID, isAccessibilityFilter, accessibilityLimit);
+    return Objects.hash(displayname, id, classid, objversion, parentId, kind, strategyid, isaccessibilityfilter, accessibilitylimit);
   }
 
   @Override
@@ -211,15 +256,15 @@ public class Logstoresettingsrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Logstoresettingsrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
     sb.append("    kind: ").append(toIndentedString(kind)).append("\n");
-    sb.append("    strategyID: ").append(toIndentedString(strategyID)).append("\n");
-    sb.append("    isAccessibilityFilter: ").append(toIndentedString(isAccessibilityFilter)).append("\n");
-    sb.append("    accessibilityLimit: ").append(toIndentedString(accessibilityLimit)).append("\n");
+    sb.append("    strategyid: ").append(toIndentedString(strategyid)).append("\n");
+    sb.append("    isaccessibilityfilter: ").append(toIndentedString(isaccessibilityfilter)).append("\n");
+    sb.append("    accessibilitylimit: ").append(toIndentedString(accessibilitylimit)).append("\n");
     sb.append("}");
     return sb.toString();
   }

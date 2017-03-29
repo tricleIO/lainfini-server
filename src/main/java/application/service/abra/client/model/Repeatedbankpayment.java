@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,309 +35,345 @@ import java.util.Objects;
 /**
  * Repeatedbankpayment
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Repeatedbankpayment   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("RepetitionCount")
-  private Integer repetitionCount = null;
+  @SerializedName("repetitioncount")
+  private Integer repetitioncount = null;
 
-  @SerializedName("RepetitionKind")
-  private Integer repetitionKind = null;
+  @SerializedName("repetitionkind")
+  private Integer repetitionkind = null;
 
-  @SerializedName("RepeatToDate$DATE")
-  private DateTime repeatToDateDATE = null;
+  @SerializedName("repeattodate$date")
+  private DateTime repeattodatedate = null;
 
-  @SerializedName("LastGenDate$DATE")
-  private DateTime lastGenDateDATE = null;
+  @SerializedName("lastgendate$date")
+  private DateTime lastgendatedate = null;
 
-  @SerializedName("RepetitionPeriod")
-  private Integer repetitionPeriod = null;
+  @SerializedName("repetitionperiod")
+  private Integer repetitionperiod = null;
 
-  @SerializedName("RepetitionDay")
-  private Integer repetitionDay = null;
+  @SerializedName("repetitionday")
+  private Integer repetitionday = null;
 
-  @SerializedName("RepetitionMonth")
-  private Integer repetitionMonth = null;
+  @SerializedName("repetitionmonth")
+  private Integer repetitionmonth = null;
 
-  @SerializedName("WeekendCorrection")
-  private Integer weekendCorrection = null;
+  @SerializedName("weekendcorrection")
+  private Integer weekendcorrection = null;
 
-  @SerializedName("RepetitionDaysInWeek")
-  private String repetitionDaysInWeek = null;
+  @SerializedName("repetitiondaysinweek")
+  private String repetitiondaysinweek = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("Country_ID")
-  private String countryID = null;
+  @SerializedName("country_id")
+  private String countryId = null;
 
-  @SerializedName("ForeignIssue")
-  private Integer foreignIssue = null;
+  @SerializedName("foreignissue")
+  private Integer foreignissue = null;
 
-  @SerializedName("Urgent")
+  @SerializedName("urgent")
   private Integer urgent = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("TargetBankAccount")
-  private String targetBankAccount = null;
+  @SerializedName("targetbankaccount")
+  private String targetbankaccount = null;
 
-  @SerializedName("TargetBankName")
-  private String targetBankName = null;
+  @SerializedName("targetbankname")
+  private String targetbankname = null;
 
-  @SerializedName("VarSymbol")
-  private String varSymbol = null;
+  @SerializedName("varsymbol")
+  private String varsymbol = null;
 
-  @SerializedName("ConstSymbol_ID")
-  private String constSymbolID = null;
+  @SerializedName("constsymbol_id")
+  private String constsymbolId = null;
 
-  @SerializedName("SpecSymbol")
-  private String specSymbol = null;
+  @SerializedName("specsymbol")
+  private String specsymbol = null;
 
-  @SerializedName("SwiftCode")
-  private String swiftCode = null;
+  @SerializedName("swiftcode")
+  private String swiftcode = null;
 
-  @SerializedName("BankAccount_ID")
-  private String bankAccountID = null;
+  @SerializedName("bankaccount_id")
+  private String bankaccountId = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("IsActive")
-  private Boolean isActive = null;
+  @SerializedName("isactive")
+  private Boolean isactive = null;
 
-  @SerializedName("TargetBankStreet")
-  private String targetBankStreet = null;
+  @SerializedName("targetbankstreet")
+  private String targetbankstreet = null;
 
-  @SerializedName("TargetBankCity")
-  private String targetBankCity = null;
+  @SerializedName("targetbankcity")
+  private String targetbankcity = null;
 
-  @SerializedName("TargetBankPostCode")
-  private String targetBankPostCode = null;
+  @SerializedName("targetbankpostcode")
+  private String targetbankpostcode = null;
 
-  @SerializedName("TargetBankCountry")
-  private String targetBankCountry = null;
+  @SerializedName("targetbankcountry")
+  private String targetbankcountry = null;
 
-  @SerializedName("TargetBankCountry_ID")
-  private String targetBankCountryID = null;
+  @SerializedName("targetbankcountry_id")
+  private String targetbankcountryId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Repeatedbankpayment repetitionCount(Integer repetitionCount) {
-    this.repetitionCount = repetitionCount;
+  public Repeatedbankpayment displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Opakování [persistentní položka]
-   * @return repetitionCount
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Opakování [persistentní položka]")
-  public Integer getRepetitionCount() {
-    return repetitionCount;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setRepetitionCount(Integer repetitionCount) {
-    this.repetitionCount = repetitionCount;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Repeatedbankpayment repetitionKind(Integer repetitionKind) {
-    this.repetitionKind = repetitionKind;
+  public Repeatedbankpayment id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Způsob opakování [persistentní položka]
-   * @return repetitionKind
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Způsob opakování [persistentní položka]")
-  public Integer getRepetitionKind() {
-    return repetitionKind;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setRepetitionKind(Integer repetitionKind) {
-    this.repetitionKind = repetitionKind;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Repeatedbankpayment repeatToDateDATE(DateTime repeatToDateDATE) {
-    this.repeatToDateDATE = repeatToDateDATE;
+  public Repeatedbankpayment classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Do data [persistentní položka]
-   * @return repeatToDateDATE
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Do data [persistentní položka]")
-  public DateTime getRepeatToDateDATE() {
-    return repeatToDateDATE;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setRepeatToDateDATE(DateTime repeatToDateDATE) {
-    this.repeatToDateDATE = repeatToDateDATE;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Repeatedbankpayment lastGenDateDATE(DateTime lastGenDateDATE) {
-    this.lastGenDateDATE = lastGenDateDATE;
+  public Repeatedbankpayment objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Generováno [persistentní položka]
-   * @return lastGenDateDATE
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Generováno [persistentní položka]")
-  public DateTime getLastGenDateDATE() {
-    return lastGenDateDATE;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setLastGenDateDATE(DateTime lastGenDateDATE) {
-    this.lastGenDateDATE = lastGenDateDATE;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Repeatedbankpayment repetitionPeriod(Integer repetitionPeriod) {
-    this.repetitionPeriod = repetitionPeriod;
+  public Repeatedbankpayment repetitioncount(Integer repetitioncount) {
+    this.repetitioncount = repetitioncount;
     return this;
   }
 
    /**
-   * Jak často [persistentní položka]
-   * @return repetitionPeriod
+   * opakování [persistentní položka]
+   * @return repetitioncount
   **/
-  @ApiModelProperty(example = "null", value = "Jak často [persistentní položka]")
-  public Integer getRepetitionPeriod() {
-    return repetitionPeriod;
+  @ApiModelProperty(example = "null", value = "opakování [persistentní položka]")
+  public Integer getRepetitioncount() {
+    return repetitioncount;
   }
 
-  public void setRepetitionPeriod(Integer repetitionPeriod) {
-    this.repetitionPeriod = repetitionPeriod;
+  public void setRepetitioncount(Integer repetitioncount) {
+    this.repetitioncount = repetitioncount;
   }
 
-  public Repeatedbankpayment repetitionDay(Integer repetitionDay) {
-    this.repetitionDay = repetitionDay;
+  public Repeatedbankpayment repetitionkind(Integer repetitionkind) {
+    this.repetitionkind = repetitionkind;
     return this;
   }
 
    /**
-   * Den [persistentní položka]
-   * @return repetitionDay
+   * způsob opakování [persistentní položka]
+   * @return repetitionkind
   **/
-  @ApiModelProperty(example = "null", value = "Den [persistentní položka]")
-  public Integer getRepetitionDay() {
-    return repetitionDay;
+  @ApiModelProperty(example = "null", value = "způsob opakování [persistentní položka]")
+  public Integer getRepetitionkind() {
+    return repetitionkind;
   }
 
-  public void setRepetitionDay(Integer repetitionDay) {
-    this.repetitionDay = repetitionDay;
+  public void setRepetitionkind(Integer repetitionkind) {
+    this.repetitionkind = repetitionkind;
   }
 
-  public Repeatedbankpayment repetitionMonth(Integer repetitionMonth) {
-    this.repetitionMonth = repetitionMonth;
+  public Repeatedbankpayment repeattodatedate(DateTime repeattodatedate) {
+    this.repeattodatedate = repeattodatedate;
     return this;
   }
 
    /**
-   * Měsíc [persistentní položka]
-   * @return repetitionMonth
+   * do data [persistentní položka]
+   * @return repeattodatedate
   **/
-  @ApiModelProperty(example = "null", value = "Měsíc [persistentní položka]")
-  public Integer getRepetitionMonth() {
-    return repetitionMonth;
+  @ApiModelProperty(example = "null", value = "do data [persistentní položka]")
+  public DateTime getRepeattodatedate() {
+    return repeattodatedate;
   }
 
-  public void setRepetitionMonth(Integer repetitionMonth) {
-    this.repetitionMonth = repetitionMonth;
+  public void setRepeattodatedate(DateTime repeattodatedate) {
+    this.repeattodatedate = repeattodatedate;
   }
 
-  public Repeatedbankpayment weekendCorrection(Integer weekendCorrection) {
-    this.weekendCorrection = weekendCorrection;
+  public Repeatedbankpayment lastgendatedate(DateTime lastgendatedate) {
+    this.lastgendatedate = lastgendatedate;
     return this;
   }
 
    /**
-   * Korekce [persistentní položka]
-   * @return weekendCorrection
+   * generováno [persistentní položka]
+   * @return lastgendatedate
   **/
-  @ApiModelProperty(example = "null", value = "Korekce [persistentní položka]")
-  public Integer getWeekendCorrection() {
-    return weekendCorrection;
+  @ApiModelProperty(example = "null", value = "generováno [persistentní položka]")
+  public DateTime getLastgendatedate() {
+    return lastgendatedate;
   }
 
-  public void setWeekendCorrection(Integer weekendCorrection) {
-    this.weekendCorrection = weekendCorrection;
+  public void setLastgendatedate(DateTime lastgendatedate) {
+    this.lastgendatedate = lastgendatedate;
   }
 
-  public Repeatedbankpayment repetitionDaysInWeek(String repetitionDaysInWeek) {
-    this.repetitionDaysInWeek = repetitionDaysInWeek;
+  public Repeatedbankpayment repetitionperiod(Integer repetitionperiod) {
+    this.repetitionperiod = repetitionperiod;
     return this;
   }
 
    /**
-   * Dny v týdnu [persistentní položka]
-   * @return repetitionDaysInWeek
+   * jak často [persistentní položka]
+   * @return repetitionperiod
   **/
-  @ApiModelProperty(example = "null", value = "Dny v týdnu [persistentní položka]")
-  public String getRepetitionDaysInWeek() {
-    return repetitionDaysInWeek;
+  @ApiModelProperty(example = "null", value = "jak často [persistentní položka]")
+  public Integer getRepetitionperiod() {
+    return repetitionperiod;
   }
 
-  public void setRepetitionDaysInWeek(String repetitionDaysInWeek) {
-    this.repetitionDaysInWeek = repetitionDaysInWeek;
+  public void setRepetitionperiod(Integer repetitionperiod) {
+    this.repetitionperiod = repetitionperiod;
+  }
+
+  public Repeatedbankpayment repetitionday(Integer repetitionday) {
+    this.repetitionday = repetitionday;
+    return this;
+  }
+
+   /**
+   * den [persistentní položka]
+   * @return repetitionday
+  **/
+  @ApiModelProperty(example = "null", value = "den [persistentní položka]")
+  public Integer getRepetitionday() {
+    return repetitionday;
+  }
+
+  public void setRepetitionday(Integer repetitionday) {
+    this.repetitionday = repetitionday;
+  }
+
+  public Repeatedbankpayment repetitionmonth(Integer repetitionmonth) {
+    this.repetitionmonth = repetitionmonth;
+    return this;
+  }
+
+   /**
+   * měsíc [persistentní položka]
+   * @return repetitionmonth
+  **/
+  @ApiModelProperty(example = "null", value = "měsíc [persistentní položka]")
+  public Integer getRepetitionmonth() {
+    return repetitionmonth;
+  }
+
+  public void setRepetitionmonth(Integer repetitionmonth) {
+    this.repetitionmonth = repetitionmonth;
+  }
+
+  public Repeatedbankpayment weekendcorrection(Integer weekendcorrection) {
+    this.weekendcorrection = weekendcorrection;
+    return this;
+  }
+
+   /**
+   * korekce [persistentní položka]
+   * @return weekendcorrection
+  **/
+  @ApiModelProperty(example = "null", value = "korekce [persistentní položka]")
+  public Integer getWeekendcorrection() {
+    return weekendcorrection;
+  }
+
+  public void setWeekendcorrection(Integer weekendcorrection) {
+    this.weekendcorrection = weekendcorrection;
+  }
+
+  public Repeatedbankpayment repetitiondaysinweek(String repetitiondaysinweek) {
+    this.repetitiondaysinweek = repetitiondaysinweek;
+    return this;
+  }
+
+   /**
+   * dny v týdnu [persistentní položka]
+   * @return repetitiondaysinweek
+  **/
+  @ApiModelProperty(example = "null", value = "dny v týdnu [persistentní položka]")
+  public String getRepetitiondaysinweek() {
+    return repetitiondaysinweek;
+  }
+
+  public void setRepetitiondaysinweek(String repetitiondaysinweek) {
+    this.repetitiondaysinweek = repetitiondaysinweek;
   }
 
   public Repeatedbankpayment description(String description) {
@@ -346,10 +382,10 @@ public class Repeatedbankpayment   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -376,58 +412,58 @@ public class Repeatedbankpayment   {
     this.amount = amount;
   }
 
-  public Repeatedbankpayment currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Repeatedbankpayment currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
-  public Repeatedbankpayment countryID(String countryID) {
-    this.countryID = countryID;
+  public Repeatedbankpayment countryId(String countryId) {
+    this.countryId = countryId;
     return this;
   }
 
    /**
-   * Země; ID objektu Země [persistentní položka]
-   * @return countryID
+   * země; id objektu země [persistentní položka]
+   * @return countryId
   **/
-  @ApiModelProperty(example = "null", value = "Země; ID objektu Země [persistentní položka]")
-  public String getCountryID() {
-    return countryID;
+  @ApiModelProperty(example = "null", value = "země; id objektu země [persistentní položka]")
+  public String getCountryId() {
+    return countryId;
   }
 
-  public void setCountryID(String countryID) {
-    this.countryID = countryID;
+  public void setCountryId(String countryId) {
+    this.countryId = countryId;
   }
 
-  public Repeatedbankpayment foreignIssue(Integer foreignIssue) {
-    this.foreignIssue = foreignIssue;
+  public Repeatedbankpayment foreignissue(Integer foreignissue) {
+    this.foreignissue = foreignissue;
     return this;
   }
 
    /**
-   * Způsob úhrady dod.popl [persistentní položka]
-   * @return foreignIssue
+   * způsob úhrady dod.popl [persistentní položka]
+   * @return foreignissue
   **/
-  @ApiModelProperty(example = "null", value = "Způsob úhrady dod.popl [persistentní položka]")
-  public Integer getForeignIssue() {
-    return foreignIssue;
+  @ApiModelProperty(example = "null", value = "způsob úhrady dod.popl [persistentní položka]")
+  public Integer getForeignissue() {
+    return foreignissue;
   }
 
-  public void setForeignIssue(Integer foreignIssue) {
-    this.foreignIssue = foreignIssue;
+  public void setForeignissue(Integer foreignissue) {
+    this.foreignissue = foreignissue;
   }
 
   public Repeatedbankpayment urgent(Integer urgent) {
@@ -436,10 +472,10 @@ public class Repeatedbankpayment   {
   }
 
    /**
-   * Urgence [persistentní položka]
+   * urgence [persistentní položka]
    * @return urgent
   **/
-  @ApiModelProperty(example = "null", value = "Urgence [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "urgence [persistentní položka]")
   public Integer getUrgent() {
     return urgent;
   }
@@ -448,283 +484,292 @@ public class Repeatedbankpayment   {
     this.urgent = urgent;
   }
 
-  public Repeatedbankpayment firmID(String firmID) {
-    this.firmID = firmID;
+  public Repeatedbankpayment firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Repeatedbankpayment targetBankAccount(String targetBankAccount) {
-    this.targetBankAccount = targetBankAccount;
+  public Repeatedbankpayment targetbankaccount(String targetbankaccount) {
+    this.targetbankaccount = targetbankaccount;
     return this;
   }
 
    /**
-   * Bankovní účet [persistentní položka]
-   * @return targetBankAccount
+   * bankovní účet [persistentní položka]
+   * @return targetbankaccount
   **/
-  @ApiModelProperty(example = "null", value = "Bankovní účet [persistentní položka]")
-  public String getTargetBankAccount() {
-    return targetBankAccount;
+  @ApiModelProperty(example = "null", value = "bankovní účet [persistentní položka]")
+  public String getTargetbankaccount() {
+    return targetbankaccount;
   }
 
-  public void setTargetBankAccount(String targetBankAccount) {
-    this.targetBankAccount = targetBankAccount;
+  public void setTargetbankaccount(String targetbankaccount) {
+    this.targetbankaccount = targetbankaccount;
   }
 
-  public Repeatedbankpayment targetBankName(String targetBankName) {
-    this.targetBankName = targetBankName;
+  public Repeatedbankpayment targetbankname(String targetbankname) {
+    this.targetbankname = targetbankname;
     return this;
   }
 
    /**
-   * Název banky [persistentní položka]
-   * @return targetBankName
+   * název banky [persistentní položka]
+   * @return targetbankname
   **/
-  @ApiModelProperty(example = "null", value = "Název banky [persistentní položka]")
-  public String getTargetBankName() {
-    return targetBankName;
+  @ApiModelProperty(example = "null", value = "název banky [persistentní položka]")
+  public String getTargetbankname() {
+    return targetbankname;
   }
 
-  public void setTargetBankName(String targetBankName) {
-    this.targetBankName = targetBankName;
+  public void setTargetbankname(String targetbankname) {
+    this.targetbankname = targetbankname;
   }
 
-  public Repeatedbankpayment varSymbol(String varSymbol) {
-    this.varSymbol = varSymbol;
+  public Repeatedbankpayment varsymbol(String varsymbol) {
+    this.varsymbol = varsymbol;
     return this;
   }
 
    /**
-   * Var. symbol [persistentní položka]
-   * @return varSymbol
+   * var. symbol [persistentní položka]
+   * @return varsymbol
   **/
-  @ApiModelProperty(example = "null", value = "Var. symbol [persistentní položka]")
-  public String getVarSymbol() {
-    return varSymbol;
+  @ApiModelProperty(example = "null", value = "var. symbol [persistentní položka]")
+  public String getVarsymbol() {
+    return varsymbol;
   }
 
-  public void setVarSymbol(String varSymbol) {
-    this.varSymbol = varSymbol;
+  public void setVarsymbol(String varsymbol) {
+    this.varsymbol = varsymbol;
   }
 
-  public Repeatedbankpayment constSymbolID(String constSymbolID) {
-    this.constSymbolID = constSymbolID;
+  public Repeatedbankpayment constsymbolId(String constsymbolId) {
+    this.constsymbolId = constsymbolId;
     return this;
   }
 
    /**
-   * Konst. symbol; ID objektu Konstantní symbol [persistentní položka]
-   * @return constSymbolID
+   * konst. symbol; id objektu konstantní symbol [persistentní položka]
+   * @return constsymbolId
   **/
-  @ApiModelProperty(example = "null", value = "Konst. symbol; ID objektu Konstantní symbol [persistentní položka]")
-  public String getConstSymbolID() {
-    return constSymbolID;
+  @ApiModelProperty(example = "null", value = "konst. symbol; id objektu konstantní symbol [persistentní položka]")
+  public String getConstsymbolId() {
+    return constsymbolId;
   }
 
-  public void setConstSymbolID(String constSymbolID) {
-    this.constSymbolID = constSymbolID;
+  public void setConstsymbolId(String constsymbolId) {
+    this.constsymbolId = constsymbolId;
   }
 
-  public Repeatedbankpayment specSymbol(String specSymbol) {
-    this.specSymbol = specSymbol;
+  public Repeatedbankpayment specsymbol(String specsymbol) {
+    this.specsymbol = specsymbol;
     return this;
   }
 
    /**
-   * Spec. symbol [persistentní položka]
-   * @return specSymbol
+   * spec. symbol [persistentní položka]
+   * @return specsymbol
   **/
-  @ApiModelProperty(example = "null", value = "Spec. symbol [persistentní položka]")
-  public String getSpecSymbol() {
-    return specSymbol;
+  @ApiModelProperty(example = "null", value = "spec. symbol [persistentní položka]")
+  public String getSpecsymbol() {
+    return specsymbol;
   }
 
-  public void setSpecSymbol(String specSymbol) {
-    this.specSymbol = specSymbol;
+  public void setSpecsymbol(String specsymbol) {
+    this.specsymbol = specsymbol;
   }
 
-  public Repeatedbankpayment swiftCode(String swiftCode) {
-    this.swiftCode = swiftCode;
+  public Repeatedbankpayment swiftcode(String swiftcode) {
+    this.swiftcode = swiftcode;
     return this;
   }
 
    /**
-   * SWIFT [persistentní položka]
-   * @return swiftCode
+   * swift [persistentní položka]
+   * @return swiftcode
   **/
-  @ApiModelProperty(example = "null", value = "SWIFT [persistentní položka]")
-  public String getSwiftCode() {
-    return swiftCode;
+  @ApiModelProperty(example = "null", value = "swift [persistentní položka]")
+  public String getSwiftcode() {
+    return swiftcode;
   }
 
-  public void setSwiftCode(String swiftCode) {
-    this.swiftCode = swiftCode;
+  public void setSwiftcode(String swiftcode) {
+    this.swiftcode = swiftcode;
   }
 
-  public Repeatedbankpayment bankAccountID(String bankAccountID) {
-    this.bankAccountID = bankAccountID;
+  public Repeatedbankpayment bankaccountId(String bankaccountId) {
+    this.bankaccountId = bankaccountId;
     return this;
   }
 
    /**
-   * Vlastní účet; ID objektu Bankovní účet [persistentní položka]
-   * @return bankAccountID
+   * vlastní účet; id objektu bankovní účet [persistentní položka]
+   * @return bankaccountId
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní účet; ID objektu Bankovní účet [persistentní položka]")
-  public String getBankAccountID() {
-    return bankAccountID;
+  @ApiModelProperty(example = "null", value = "vlastní účet; id objektu bankovní účet [persistentní položka]")
+  public String getBankaccountId() {
+    return bankaccountId;
   }
 
-  public void setBankAccountID(String bankAccountID) {
-    this.bankAccountID = bankAccountID;
+  public void setBankaccountId(String bankaccountId) {
+    this.bankaccountId = bankaccountId;
   }
 
-  public Repeatedbankpayment createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Repeatedbankpayment createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Repeatedbankpayment correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Repeatedbankpayment correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-   /**
-   * Aktivní
-   * @return isActive
-  **/
-  @ApiModelProperty(example = "null", value = "Aktivní")
-  public Boolean getIsActive() {
-    return isActive;
-  }
-
-  public Repeatedbankpayment targetBankStreet(String targetBankStreet) {
-    this.targetBankStreet = targetBankStreet;
+  public Repeatedbankpayment isactive(Boolean isactive) {
+    this.isactive = isactive;
     return this;
   }
 
    /**
-   * Ulice adresy cílové banky [persistentní položka]
-   * @return targetBankStreet
+   * aktivní
+   * @return isactive
   **/
-  @ApiModelProperty(example = "null", value = "Ulice adresy cílové banky [persistentní položka]")
-  public String getTargetBankStreet() {
-    return targetBankStreet;
+  @ApiModelProperty(example = "null", value = "aktivní")
+  public Boolean getIsactive() {
+    return isactive;
   }
 
-  public void setTargetBankStreet(String targetBankStreet) {
-    this.targetBankStreet = targetBankStreet;
+  public void setIsactive(Boolean isactive) {
+    this.isactive = isactive;
   }
 
-  public Repeatedbankpayment targetBankCity(String targetBankCity) {
-    this.targetBankCity = targetBankCity;
+  public Repeatedbankpayment targetbankstreet(String targetbankstreet) {
+    this.targetbankstreet = targetbankstreet;
     return this;
   }
 
    /**
-   * Město adresy cílové banky [persistentní položka]
-   * @return targetBankCity
+   * ulice adresy cílové banky [persistentní položka]
+   * @return targetbankstreet
   **/
-  @ApiModelProperty(example = "null", value = "Město adresy cílové banky [persistentní položka]")
-  public String getTargetBankCity() {
-    return targetBankCity;
+  @ApiModelProperty(example = "null", value = "ulice adresy cílové banky [persistentní položka]")
+  public String getTargetbankstreet() {
+    return targetbankstreet;
   }
 
-  public void setTargetBankCity(String targetBankCity) {
-    this.targetBankCity = targetBankCity;
+  public void setTargetbankstreet(String targetbankstreet) {
+    this.targetbankstreet = targetbankstreet;
   }
 
-  public Repeatedbankpayment targetBankPostCode(String targetBankPostCode) {
-    this.targetBankPostCode = targetBankPostCode;
+  public Repeatedbankpayment targetbankcity(String targetbankcity) {
+    this.targetbankcity = targetbankcity;
     return this;
   }
 
    /**
-   * PSČ/ZIP adresy cílové banky [persistentní položka]
-   * @return targetBankPostCode
+   * město adresy cílové banky [persistentní položka]
+   * @return targetbankcity
   **/
-  @ApiModelProperty(example = "null", value = "PSČ/ZIP adresy cílové banky [persistentní položka]")
-  public String getTargetBankPostCode() {
-    return targetBankPostCode;
+  @ApiModelProperty(example = "null", value = "město adresy cílové banky [persistentní položka]")
+  public String getTargetbankcity() {
+    return targetbankcity;
   }
 
-  public void setTargetBankPostCode(String targetBankPostCode) {
-    this.targetBankPostCode = targetBankPostCode;
+  public void setTargetbankcity(String targetbankcity) {
+    this.targetbankcity = targetbankcity;
   }
 
-  public Repeatedbankpayment targetBankCountry(String targetBankCountry) {
-    this.targetBankCountry = targetBankCountry;
+  public Repeatedbankpayment targetbankpostcode(String targetbankpostcode) {
+    this.targetbankpostcode = targetbankpostcode;
     return this;
   }
 
    /**
-   * Země adresy cílové banky [persistentní položka]
-   * @return targetBankCountry
+   * psČ/zip adresy cílové banky [persistentní položka]
+   * @return targetbankpostcode
   **/
-  @ApiModelProperty(example = "null", value = "Země adresy cílové banky [persistentní položka]")
-  public String getTargetBankCountry() {
-    return targetBankCountry;
+  @ApiModelProperty(example = "null", value = "psČ/zip adresy cílové banky [persistentní položka]")
+  public String getTargetbankpostcode() {
+    return targetbankpostcode;
   }
 
-  public void setTargetBankCountry(String targetBankCountry) {
-    this.targetBankCountry = targetBankCountry;
+  public void setTargetbankpostcode(String targetbankpostcode) {
+    this.targetbankpostcode = targetbankpostcode;
   }
 
-  public Repeatedbankpayment targetBankCountryID(String targetBankCountryID) {
-    this.targetBankCountryID = targetBankCountryID;
+  public Repeatedbankpayment targetbankcountry(String targetbankcountry) {
+    this.targetbankcountry = targetbankcountry;
     return this;
   }
 
    /**
-   * Země cílové banky; ID objektu Země [persistentní položka]
-   * @return targetBankCountryID
+   * země adresy cílové banky [persistentní položka]
+   * @return targetbankcountry
   **/
-  @ApiModelProperty(example = "null", value = "Země cílové banky; ID objektu Země [persistentní položka]")
-  public String getTargetBankCountryID() {
-    return targetBankCountryID;
+  @ApiModelProperty(example = "null", value = "země adresy cílové banky [persistentní položka]")
+  public String getTargetbankcountry() {
+    return targetbankcountry;
   }
 
-  public void setTargetBankCountryID(String targetBankCountryID) {
-    this.targetBankCountryID = targetBankCountryID;
+  public void setTargetbankcountry(String targetbankcountry) {
+    this.targetbankcountry = targetbankcountry;
+  }
+
+  public Repeatedbankpayment targetbankcountryId(String targetbankcountryId) {
+    this.targetbankcountryId = targetbankcountryId;
+    return this;
+  }
+
+   /**
+   * země cílové banky; id objektu země [persistentní položka]
+   * @return targetbankcountryId
+  **/
+  @ApiModelProperty(example = "null", value = "země cílové banky; id objektu země [persistentní položka]")
+  public String getTargetbankcountryId() {
+    return targetbankcountryId;
+  }
+
+  public void setTargetbankcountryId(String targetbankcountryId) {
+    this.targetbankcountryId = targetbankcountryId;
   }
 
 
@@ -737,46 +782,46 @@ public class Repeatedbankpayment   {
       return false;
     }
     Repeatedbankpayment repeatedbankpayment = (Repeatedbankpayment) o;
-    return Objects.equals(this.displayName, repeatedbankpayment.displayName) &&
-        Objects.equals(this.ID, repeatedbankpayment.ID) &&
-        Objects.equals(this.classID, repeatedbankpayment.classID) &&
-        Objects.equals(this.objVersion, repeatedbankpayment.objVersion) &&
-        Objects.equals(this.repetitionCount, repeatedbankpayment.repetitionCount) &&
-        Objects.equals(this.repetitionKind, repeatedbankpayment.repetitionKind) &&
-        Objects.equals(this.repeatToDateDATE, repeatedbankpayment.repeatToDateDATE) &&
-        Objects.equals(this.lastGenDateDATE, repeatedbankpayment.lastGenDateDATE) &&
-        Objects.equals(this.repetitionPeriod, repeatedbankpayment.repetitionPeriod) &&
-        Objects.equals(this.repetitionDay, repeatedbankpayment.repetitionDay) &&
-        Objects.equals(this.repetitionMonth, repeatedbankpayment.repetitionMonth) &&
-        Objects.equals(this.weekendCorrection, repeatedbankpayment.weekendCorrection) &&
-        Objects.equals(this.repetitionDaysInWeek, repeatedbankpayment.repetitionDaysInWeek) &&
+    return Objects.equals(this.displayname, repeatedbankpayment.displayname) &&
+        Objects.equals(this.id, repeatedbankpayment.id) &&
+        Objects.equals(this.classid, repeatedbankpayment.classid) &&
+        Objects.equals(this.objversion, repeatedbankpayment.objversion) &&
+        Objects.equals(this.repetitioncount, repeatedbankpayment.repetitioncount) &&
+        Objects.equals(this.repetitionkind, repeatedbankpayment.repetitionkind) &&
+        Objects.equals(this.repeattodatedate, repeatedbankpayment.repeattodatedate) &&
+        Objects.equals(this.lastgendatedate, repeatedbankpayment.lastgendatedate) &&
+        Objects.equals(this.repetitionperiod, repeatedbankpayment.repetitionperiod) &&
+        Objects.equals(this.repetitionday, repeatedbankpayment.repetitionday) &&
+        Objects.equals(this.repetitionmonth, repeatedbankpayment.repetitionmonth) &&
+        Objects.equals(this.weekendcorrection, repeatedbankpayment.weekendcorrection) &&
+        Objects.equals(this.repetitiondaysinweek, repeatedbankpayment.repetitiondaysinweek) &&
         Objects.equals(this.description, repeatedbankpayment.description) &&
         Objects.equals(this.amount, repeatedbankpayment.amount) &&
-        Objects.equals(this.currencyID, repeatedbankpayment.currencyID) &&
-        Objects.equals(this.countryID, repeatedbankpayment.countryID) &&
-        Objects.equals(this.foreignIssue, repeatedbankpayment.foreignIssue) &&
+        Objects.equals(this.currencyId, repeatedbankpayment.currencyId) &&
+        Objects.equals(this.countryId, repeatedbankpayment.countryId) &&
+        Objects.equals(this.foreignissue, repeatedbankpayment.foreignissue) &&
         Objects.equals(this.urgent, repeatedbankpayment.urgent) &&
-        Objects.equals(this.firmID, repeatedbankpayment.firmID) &&
-        Objects.equals(this.targetBankAccount, repeatedbankpayment.targetBankAccount) &&
-        Objects.equals(this.targetBankName, repeatedbankpayment.targetBankName) &&
-        Objects.equals(this.varSymbol, repeatedbankpayment.varSymbol) &&
-        Objects.equals(this.constSymbolID, repeatedbankpayment.constSymbolID) &&
-        Objects.equals(this.specSymbol, repeatedbankpayment.specSymbol) &&
-        Objects.equals(this.swiftCode, repeatedbankpayment.swiftCode) &&
-        Objects.equals(this.bankAccountID, repeatedbankpayment.bankAccountID) &&
-        Objects.equals(this.createdByID, repeatedbankpayment.createdByID) &&
-        Objects.equals(this.correctedByID, repeatedbankpayment.correctedByID) &&
-        Objects.equals(this.isActive, repeatedbankpayment.isActive) &&
-        Objects.equals(this.targetBankStreet, repeatedbankpayment.targetBankStreet) &&
-        Objects.equals(this.targetBankCity, repeatedbankpayment.targetBankCity) &&
-        Objects.equals(this.targetBankPostCode, repeatedbankpayment.targetBankPostCode) &&
-        Objects.equals(this.targetBankCountry, repeatedbankpayment.targetBankCountry) &&
-        Objects.equals(this.targetBankCountryID, repeatedbankpayment.targetBankCountryID);
+        Objects.equals(this.firmId, repeatedbankpayment.firmId) &&
+        Objects.equals(this.targetbankaccount, repeatedbankpayment.targetbankaccount) &&
+        Objects.equals(this.targetbankname, repeatedbankpayment.targetbankname) &&
+        Objects.equals(this.varsymbol, repeatedbankpayment.varsymbol) &&
+        Objects.equals(this.constsymbolId, repeatedbankpayment.constsymbolId) &&
+        Objects.equals(this.specsymbol, repeatedbankpayment.specsymbol) &&
+        Objects.equals(this.swiftcode, repeatedbankpayment.swiftcode) &&
+        Objects.equals(this.bankaccountId, repeatedbankpayment.bankaccountId) &&
+        Objects.equals(this.createdbyId, repeatedbankpayment.createdbyId) &&
+        Objects.equals(this.correctedbyId, repeatedbankpayment.correctedbyId) &&
+        Objects.equals(this.isactive, repeatedbankpayment.isactive) &&
+        Objects.equals(this.targetbankstreet, repeatedbankpayment.targetbankstreet) &&
+        Objects.equals(this.targetbankcity, repeatedbankpayment.targetbankcity) &&
+        Objects.equals(this.targetbankpostcode, repeatedbankpayment.targetbankpostcode) &&
+        Objects.equals(this.targetbankcountry, repeatedbankpayment.targetbankcountry) &&
+        Objects.equals(this.targetbankcountryId, repeatedbankpayment.targetbankcountryId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, repetitionCount, repetitionKind, repeatToDateDATE, lastGenDateDATE, repetitionPeriod, repetitionDay, repetitionMonth, weekendCorrection, repetitionDaysInWeek, description, amount, currencyID, countryID, foreignIssue, urgent, firmID, targetBankAccount, targetBankName, varSymbol, constSymbolID, specSymbol, swiftCode, bankAccountID, createdByID, correctedByID, isActive, targetBankStreet, targetBankCity, targetBankPostCode, targetBankCountry, targetBankCountryID);
+    return Objects.hash(displayname, id, classid, objversion, repetitioncount, repetitionkind, repeattodatedate, lastgendatedate, repetitionperiod, repetitionday, repetitionmonth, weekendcorrection, repetitiondaysinweek, description, amount, currencyId, countryId, foreignissue, urgent, firmId, targetbankaccount, targetbankname, varsymbol, constsymbolId, specsymbol, swiftcode, bankaccountId, createdbyId, correctedbyId, isactive, targetbankstreet, targetbankcity, targetbankpostcode, targetbankcountry, targetbankcountryId);
   }
 
   @Override
@@ -784,41 +829,41 @@ public class Repeatedbankpayment   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Repeatedbankpayment {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    repetitionCount: ").append(toIndentedString(repetitionCount)).append("\n");
-    sb.append("    repetitionKind: ").append(toIndentedString(repetitionKind)).append("\n");
-    sb.append("    repeatToDateDATE: ").append(toIndentedString(repeatToDateDATE)).append("\n");
-    sb.append("    lastGenDateDATE: ").append(toIndentedString(lastGenDateDATE)).append("\n");
-    sb.append("    repetitionPeriod: ").append(toIndentedString(repetitionPeriod)).append("\n");
-    sb.append("    repetitionDay: ").append(toIndentedString(repetitionDay)).append("\n");
-    sb.append("    repetitionMonth: ").append(toIndentedString(repetitionMonth)).append("\n");
-    sb.append("    weekendCorrection: ").append(toIndentedString(weekendCorrection)).append("\n");
-    sb.append("    repetitionDaysInWeek: ").append(toIndentedString(repetitionDaysInWeek)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    repetitioncount: ").append(toIndentedString(repetitioncount)).append("\n");
+    sb.append("    repetitionkind: ").append(toIndentedString(repetitionkind)).append("\n");
+    sb.append("    repeattodatedate: ").append(toIndentedString(repeattodatedate)).append("\n");
+    sb.append("    lastgendatedate: ").append(toIndentedString(lastgendatedate)).append("\n");
+    sb.append("    repetitionperiod: ").append(toIndentedString(repetitionperiod)).append("\n");
+    sb.append("    repetitionday: ").append(toIndentedString(repetitionday)).append("\n");
+    sb.append("    repetitionmonth: ").append(toIndentedString(repetitionmonth)).append("\n");
+    sb.append("    weekendcorrection: ").append(toIndentedString(weekendcorrection)).append("\n");
+    sb.append("    repetitiondaysinweek: ").append(toIndentedString(repetitiondaysinweek)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    countryID: ").append(toIndentedString(countryID)).append("\n");
-    sb.append("    foreignIssue: ").append(toIndentedString(foreignIssue)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    countryId: ").append(toIndentedString(countryId)).append("\n");
+    sb.append("    foreignissue: ").append(toIndentedString(foreignissue)).append("\n");
     sb.append("    urgent: ").append(toIndentedString(urgent)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    targetBankAccount: ").append(toIndentedString(targetBankAccount)).append("\n");
-    sb.append("    targetBankName: ").append(toIndentedString(targetBankName)).append("\n");
-    sb.append("    varSymbol: ").append(toIndentedString(varSymbol)).append("\n");
-    sb.append("    constSymbolID: ").append(toIndentedString(constSymbolID)).append("\n");
-    sb.append("    specSymbol: ").append(toIndentedString(specSymbol)).append("\n");
-    sb.append("    swiftCode: ").append(toIndentedString(swiftCode)).append("\n");
-    sb.append("    bankAccountID: ").append(toIndentedString(bankAccountID)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    isActive: ").append(toIndentedString(isActive)).append("\n");
-    sb.append("    targetBankStreet: ").append(toIndentedString(targetBankStreet)).append("\n");
-    sb.append("    targetBankCity: ").append(toIndentedString(targetBankCity)).append("\n");
-    sb.append("    targetBankPostCode: ").append(toIndentedString(targetBankPostCode)).append("\n");
-    sb.append("    targetBankCountry: ").append(toIndentedString(targetBankCountry)).append("\n");
-    sb.append("    targetBankCountryID: ").append(toIndentedString(targetBankCountryID)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    targetbankaccount: ").append(toIndentedString(targetbankaccount)).append("\n");
+    sb.append("    targetbankname: ").append(toIndentedString(targetbankname)).append("\n");
+    sb.append("    varsymbol: ").append(toIndentedString(varsymbol)).append("\n");
+    sb.append("    constsymbolId: ").append(toIndentedString(constsymbolId)).append("\n");
+    sb.append("    specsymbol: ").append(toIndentedString(specsymbol)).append("\n");
+    sb.append("    swiftcode: ").append(toIndentedString(swiftcode)).append("\n");
+    sb.append("    bankaccountId: ").append(toIndentedString(bankaccountId)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    isactive: ").append(toIndentedString(isactive)).append("\n");
+    sb.append("    targetbankstreet: ").append(toIndentedString(targetbankstreet)).append("\n");
+    sb.append("    targetbankcity: ").append(toIndentedString(targetbankcity)).append("\n");
+    sb.append("    targetbankpostcode: ").append(toIndentedString(targetbankpostcode)).append("\n");
+    sb.append("    targetbankcountry: ").append(toIndentedString(targetbankcountry)).append("\n");
+    sb.append("    targetbankcountryId: ").append(toIndentedString(targetbankcountryId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

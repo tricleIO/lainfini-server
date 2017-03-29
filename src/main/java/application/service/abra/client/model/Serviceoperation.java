@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,81 +36,117 @@ import java.util.Objects;
 /**
  * Serviceoperation
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Serviceoperation   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ServiceType_ID")
-  private String serviceTypeID = null;
+  @SerializedName("servicetype_id")
+  private String servicetypeId = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Serviceoperationrow> rows = new ArrayList<Serviceoperationrow>();
 
-  @SerializedName("TotalAmountWithoutVAT")
-  private Double totalAmountWithoutVAT = null;
+  @SerializedName("totalamountwithoutvat")
+  private Double totalamountwithoutvat = null;
 
-  @SerializedName("TotalAmountWithVAT")
-  private Double totalAmountWithVAT = null;
+  @SerializedName("totalamountwithvat")
+  private Double totalamountwithvat = null;
 
-  @SerializedName("WorkOperationTime")
-  private Double workOperationTime = null;
+  @SerializedName("workoperationtime")
+  private Double workoperationtime = null;
 
-  @SerializedName("ReturnedAmountsForModel")
-  private String returnedAmountsForModel = null;
+  @SerializedName("returnedamountsformodel")
+  private String returnedamountsformodel = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Serviceoperation displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Serviceoperation id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Serviceoperation classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Serviceoperation objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Serviceoperation hidden(Boolean hidden) {
@@ -119,10 +155,10 @@ public class Serviceoperation   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -137,10 +173,10 @@ public class Serviceoperation   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -155,10 +191,10 @@ public class Serviceoperation   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -167,22 +203,22 @@ public class Serviceoperation   {
     this.name = name;
   }
 
-  public Serviceoperation serviceTypeID(String serviceTypeID) {
-    this.serviceTypeID = serviceTypeID;
+  public Serviceoperation servicetypeId(String servicetypeId) {
+    this.servicetypeId = servicetypeId;
     return this;
   }
 
    /**
-   * Servisní typ; ID objektu Typ servisního případu [persistentní položka]
-   * @return serviceTypeID
+   * servisní typ; id objektu typ servisního případu [persistentní položka]
+   * @return servicetypeId
   **/
-  @ApiModelProperty(example = "null", value = "Servisní typ; ID objektu Typ servisního případu [persistentní položka]")
-  public String getServiceTypeID() {
-    return serviceTypeID;
+  @ApiModelProperty(example = "null", value = "servisní typ; id objektu typ servisního případu [persistentní položka]")
+  public String getServicetypeId() {
+    return servicetypeId;
   }
 
-  public void setServiceTypeID(String serviceTypeID) {
-    this.serviceTypeID = serviceTypeID;
+  public void setServicetypeId(String servicetypeId) {
+    this.servicetypeId = servicetypeId;
   }
 
   public Serviceoperation rows(List<Serviceoperationrow> rows) {
@@ -196,10 +232,10 @@ public class Serviceoperation   {
   }
 
    /**
-   * Položky servisní operace; kolekce BO Řádek servisní operace [nepersistentní položka]
+   * položky servisní operace; kolekce bo Řádek servisní operace [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Položky servisní operace; kolekce BO Řádek servisní operace [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "položky servisní operace; kolekce bo Řádek servisní operace [nepersistentní položka]")
   public List<Serviceoperationrow> getRows() {
     return rows;
   }
@@ -208,76 +244,76 @@ public class Serviceoperation   {
     this.rows = rows;
   }
 
-  public Serviceoperation totalAmountWithoutVAT(Double totalAmountWithoutVAT) {
-    this.totalAmountWithoutVAT = totalAmountWithoutVAT;
+  public Serviceoperation totalamountwithoutvat(Double totalamountwithoutvat) {
+    this.totalamountwithoutvat = totalamountwithoutvat;
     return this;
   }
 
    /**
-   * Celkem bez DPH
-   * @return totalAmountWithoutVAT
+   * celkem bez dph
+   * @return totalamountwithoutvat
   **/
-  @ApiModelProperty(example = "null", value = "Celkem bez DPH")
-  public Double getTotalAmountWithoutVAT() {
-    return totalAmountWithoutVAT;
+  @ApiModelProperty(example = "null", value = "celkem bez dph")
+  public Double getTotalamountwithoutvat() {
+    return totalamountwithoutvat;
   }
 
-  public void setTotalAmountWithoutVAT(Double totalAmountWithoutVAT) {
-    this.totalAmountWithoutVAT = totalAmountWithoutVAT;
+  public void setTotalamountwithoutvat(Double totalamountwithoutvat) {
+    this.totalamountwithoutvat = totalamountwithoutvat;
   }
 
-  public Serviceoperation totalAmountWithVAT(Double totalAmountWithVAT) {
-    this.totalAmountWithVAT = totalAmountWithVAT;
+  public Serviceoperation totalamountwithvat(Double totalamountwithvat) {
+    this.totalamountwithvat = totalamountwithvat;
     return this;
   }
 
    /**
-   * Celkem s DPH
-   * @return totalAmountWithVAT
+   * celkem s dph
+   * @return totalamountwithvat
   **/
-  @ApiModelProperty(example = "null", value = "Celkem s DPH")
-  public Double getTotalAmountWithVAT() {
-    return totalAmountWithVAT;
+  @ApiModelProperty(example = "null", value = "celkem s dph")
+  public Double getTotalamountwithvat() {
+    return totalamountwithvat;
   }
 
-  public void setTotalAmountWithVAT(Double totalAmountWithVAT) {
-    this.totalAmountWithVAT = totalAmountWithVAT;
+  public void setTotalamountwithvat(Double totalamountwithvat) {
+    this.totalamountwithvat = totalamountwithvat;
   }
 
-  public Serviceoperation workOperationTime(Double workOperationTime) {
-    this.workOperationTime = workOperationTime;
+  public Serviceoperation workoperationtime(Double workoperationtime) {
+    this.workoperationtime = workoperationtime;
     return this;
   }
 
    /**
-   * Celkový prac.čas
-   * @return workOperationTime
+   * celkový prac.čas
+   * @return workoperationtime
   **/
-  @ApiModelProperty(example = "null", value = "Celkový prac.čas")
-  public Double getWorkOperationTime() {
-    return workOperationTime;
+  @ApiModelProperty(example = "null", value = "celkový prac.čas")
+  public Double getWorkoperationtime() {
+    return workoperationtime;
   }
 
-  public void setWorkOperationTime(Double workOperationTime) {
-    this.workOperationTime = workOperationTime;
+  public void setWorkoperationtime(Double workoperationtime) {
+    this.workoperationtime = workoperationtime;
   }
 
-  public Serviceoperation returnedAmountsForModel(String returnedAmountsForModel) {
-    this.returnedAmountsForModel = returnedAmountsForModel;
+  public Serviceoperation returnedamountsformodel(String returnedamountsformodel) {
+    this.returnedamountsformodel = returnedamountsformodel;
     return this;
   }
 
    /**
    * Řízení výběru modelu pro zobrazení varianty
-   * @return returnedAmountsForModel
+   * @return returnedamountsformodel
   **/
   @ApiModelProperty(example = "null", value = "Řízení výběru modelu pro zobrazení varianty")
-  public String getReturnedAmountsForModel() {
-    return returnedAmountsForModel;
+  public String getReturnedamountsformodel() {
+    return returnedamountsformodel;
   }
 
-  public void setReturnedAmountsForModel(String returnedAmountsForModel) {
-    this.returnedAmountsForModel = returnedAmountsForModel;
+  public void setReturnedamountsformodel(String returnedamountsformodel) {
+    this.returnedamountsformodel = returnedamountsformodel;
   }
 
 
@@ -290,24 +326,24 @@ public class Serviceoperation   {
       return false;
     }
     Serviceoperation serviceoperation = (Serviceoperation) o;
-    return Objects.equals(this.displayName, serviceoperation.displayName) &&
-        Objects.equals(this.ID, serviceoperation.ID) &&
-        Objects.equals(this.classID, serviceoperation.classID) &&
-        Objects.equals(this.objVersion, serviceoperation.objVersion) &&
+    return Objects.equals(this.displayname, serviceoperation.displayname) &&
+        Objects.equals(this.id, serviceoperation.id) &&
+        Objects.equals(this.classid, serviceoperation.classid) &&
+        Objects.equals(this.objversion, serviceoperation.objversion) &&
         Objects.equals(this.hidden, serviceoperation.hidden) &&
         Objects.equals(this.code, serviceoperation.code) &&
         Objects.equals(this.name, serviceoperation.name) &&
-        Objects.equals(this.serviceTypeID, serviceoperation.serviceTypeID) &&
+        Objects.equals(this.servicetypeId, serviceoperation.servicetypeId) &&
         Objects.equals(this.rows, serviceoperation.rows) &&
-        Objects.equals(this.totalAmountWithoutVAT, serviceoperation.totalAmountWithoutVAT) &&
-        Objects.equals(this.totalAmountWithVAT, serviceoperation.totalAmountWithVAT) &&
-        Objects.equals(this.workOperationTime, serviceoperation.workOperationTime) &&
-        Objects.equals(this.returnedAmountsForModel, serviceoperation.returnedAmountsForModel);
+        Objects.equals(this.totalamountwithoutvat, serviceoperation.totalamountwithoutvat) &&
+        Objects.equals(this.totalamountwithvat, serviceoperation.totalamountwithvat) &&
+        Objects.equals(this.workoperationtime, serviceoperation.workoperationtime) &&
+        Objects.equals(this.returnedamountsformodel, serviceoperation.returnedamountsformodel);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, serviceTypeID, rows, totalAmountWithoutVAT, totalAmountWithVAT, workOperationTime, returnedAmountsForModel);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, servicetypeId, rows, totalamountwithoutvat, totalamountwithvat, workoperationtime, returnedamountsformodel);
   }
 
   @Override
@@ -315,19 +351,19 @@ public class Serviceoperation   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Serviceoperation {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    serviceTypeID: ").append(toIndentedString(serviceTypeID)).append("\n");
+    sb.append("    servicetypeId: ").append(toIndentedString(servicetypeId)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    totalAmountWithoutVAT: ").append(toIndentedString(totalAmountWithoutVAT)).append("\n");
-    sb.append("    totalAmountWithVAT: ").append(toIndentedString(totalAmountWithVAT)).append("\n");
-    sb.append("    workOperationTime: ").append(toIndentedString(workOperationTime)).append("\n");
-    sb.append("    returnedAmountsForModel: ").append(toIndentedString(returnedAmountsForModel)).append("\n");
+    sb.append("    totalamountwithoutvat: ").append(toIndentedString(totalamountwithoutvat)).append("\n");
+    sb.append("    totalamountwithvat: ").append(toIndentedString(totalamountwithvat)).append("\n");
+    sb.append("    workoperationtime: ").append(toIndentedString(workoperationtime)).append("\n");
+    sb.append("    returnedamountsformodel: ").append(toIndentedString(returnedamountsformodel)).append("\n");
     sb.append("}");
     return sb.toString();
   }

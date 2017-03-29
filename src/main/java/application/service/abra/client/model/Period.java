@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,75 +35,111 @@ import java.util.Objects;
 /**
  * Period
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Period   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("DateFrom$DATE")
-  private DateTime dateFromDATE = null;
+  @SerializedName("datefrom$date")
+  private DateTime datefromdate = null;
 
-  @SerializedName("DateTo$DATE")
-  private DateTime dateToDATE = null;
+  @SerializedName("dateto$date")
+  private DateTime datetodate = null;
 
-  @SerializedName("Closing")
+  @SerializedName("closing")
   private Boolean closing = null;
 
-  @SerializedName("Beginnings")
+  @SerializedName("beginnings")
   private Boolean beginnings = null;
 
-  @SerializedName("SequenceNumber")
-  private Integer sequenceNumber = null;
+  @SerializedName("sequencenumber")
+  private Integer sequencenumber = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Period displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Period id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Period classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Period objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Period code(String code) {
@@ -112,10 +148,10 @@ public class Period   {
   }
 
    /**
-   * Zkratka [persistentní položka]
+   * zkratka [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Zkratka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "zkratka [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -130,10 +166,10 @@ public class Period   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -142,40 +178,40 @@ public class Period   {
     this.name = name;
   }
 
-  public Period dateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public Period datefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
     return this;
   }
 
    /**
-   * Od [persistentní položka]
-   * @return dateFromDATE
+   * od [persistentní položka]
+   * @return datefromdate
   **/
-  @ApiModelProperty(example = "null", value = "Od [persistentní položka]")
-  public DateTime getDateFromDATE() {
-    return dateFromDATE;
+  @ApiModelProperty(example = "null", value = "od [persistentní položka]")
+  public DateTime getDatefromdate() {
+    return datefromdate;
   }
 
-  public void setDateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public void setDatefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
   }
 
-  public Period dateToDATE(DateTime dateToDATE) {
-    this.dateToDATE = dateToDATE;
+  public Period datetodate(DateTime datetodate) {
+    this.datetodate = datetodate;
     return this;
   }
 
    /**
-   * Do [persistentní položka]
-   * @return dateToDATE
+   * do [persistentní položka]
+   * @return datetodate
   **/
-  @ApiModelProperty(example = "null", value = "Do [persistentní položka]")
-  public DateTime getDateToDATE() {
-    return dateToDATE;
+  @ApiModelProperty(example = "null", value = "do [persistentní položka]")
+  public DateTime getDatetodate() {
+    return datetodate;
   }
 
-  public void setDateToDATE(DateTime dateToDATE) {
-    this.dateToDATE = dateToDATE;
+  public void setDatetodate(DateTime datetodate) {
+    this.datetodate = datetodate;
   }
 
   public Period closing(Boolean closing) {
@@ -184,10 +220,10 @@ public class Period   {
   }
 
    /**
-   * Závěrka [persistentní položka]
+   * závěrka [persistentní položka]
    * @return closing
   **/
-  @ApiModelProperty(example = "null", value = "Závěrka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "závěrka [persistentní položka]")
   public Boolean getClosing() {
     return closing;
   }
@@ -202,10 +238,10 @@ public class Period   {
   }
 
    /**
-   * Počátky [persistentní položka]
+   * počátky [persistentní položka]
    * @return beginnings
   **/
-  @ApiModelProperty(example = "null", value = "Počátky [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "počátky [persistentní položka]")
   public Boolean getBeginnings() {
     return beginnings;
   }
@@ -214,22 +250,22 @@ public class Period   {
     this.beginnings = beginnings;
   }
 
-  public Period sequenceNumber(Integer sequenceNumber) {
-    this.sequenceNumber = sequenceNumber;
+  public Period sequencenumber(Integer sequencenumber) {
+    this.sequencenumber = sequencenumber;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return sequenceNumber
+   * pořadí [persistentní položka]
+   * @return sequencenumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getSequenceNumber() {
-    return sequenceNumber;
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getSequencenumber() {
+    return sequencenumber;
   }
 
-  public void setSequenceNumber(Integer sequenceNumber) {
-    this.sequenceNumber = sequenceNumber;
+  public void setSequencenumber(Integer sequencenumber) {
+    this.sequencenumber = sequencenumber;
   }
 
 
@@ -242,22 +278,22 @@ public class Period   {
       return false;
     }
     Period period = (Period) o;
-    return Objects.equals(this.displayName, period.displayName) &&
-        Objects.equals(this.ID, period.ID) &&
-        Objects.equals(this.classID, period.classID) &&
-        Objects.equals(this.objVersion, period.objVersion) &&
+    return Objects.equals(this.displayname, period.displayname) &&
+        Objects.equals(this.id, period.id) &&
+        Objects.equals(this.classid, period.classid) &&
+        Objects.equals(this.objversion, period.objversion) &&
         Objects.equals(this.code, period.code) &&
         Objects.equals(this.name, period.name) &&
-        Objects.equals(this.dateFromDATE, period.dateFromDATE) &&
-        Objects.equals(this.dateToDATE, period.dateToDATE) &&
+        Objects.equals(this.datefromdate, period.datefromdate) &&
+        Objects.equals(this.datetodate, period.datetodate) &&
         Objects.equals(this.closing, period.closing) &&
         Objects.equals(this.beginnings, period.beginnings) &&
-        Objects.equals(this.sequenceNumber, period.sequenceNumber);
+        Objects.equals(this.sequencenumber, period.sequencenumber);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, code, name, dateFromDATE, dateToDATE, closing, beginnings, sequenceNumber);
+    return Objects.hash(displayname, id, classid, objversion, code, name, datefromdate, datetodate, closing, beginnings, sequencenumber);
   }
 
   @Override
@@ -265,17 +301,17 @@ public class Period   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Period {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    dateFromDATE: ").append(toIndentedString(dateFromDATE)).append("\n");
-    sb.append("    dateToDATE: ").append(toIndentedString(dateToDATE)).append("\n");
+    sb.append("    datefromdate: ").append(toIndentedString(datefromdate)).append("\n");
+    sb.append("    datetodate: ").append(toIndentedString(datetodate)).append("\n");
     sb.append("    closing: ").append(toIndentedString(closing)).append("\n");
     sb.append("    beginnings: ").append(toIndentedString(beginnings)).append("\n");
-    sb.append("    sequenceNumber: ").append(toIndentedString(sequenceNumber)).append("\n");
+    sb.append("    sequencenumber: ").append(toIndentedString(sequencenumber)).append("\n");
     sb.append("}");
     return sb.toString();
   }

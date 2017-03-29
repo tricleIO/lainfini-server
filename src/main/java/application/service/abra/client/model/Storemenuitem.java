@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,72 +34,108 @@ import java.util.Objects;
 /**
  * Storemenuitem
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Storemenuitem   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("DisplayParent")
-  private String displayParent = null;
+  @SerializedName("displayparent")
+  private String displayparent = null;
 
-  @SerializedName("Text")
+  @SerializedName("text")
   private String text = null;
 
-  @SerializedName("FULLPATH")
-  private String FULLPATH = null;
+  @SerializedName("fullpath")
+  private String fullpath = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Storemenuitem displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Storemenuitem id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Storemenuitem classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Storemenuitem objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Storemenuitem hidden(Boolean hidden) {
@@ -108,10 +144,10 @@ public class Storemenuitem   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -120,49 +156,58 @@ public class Storemenuitem   {
     this.hidden = hidden;
   }
 
-  public Storemenuitem posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Storemenuitem posindex(Integer posindex) {
+    this.posindex = posindex;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * pořadí [persistentní položka]
+   * @return posindex
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
-  public Storemenuitem parentID(String parentID) {
-    this.parentID = parentID;
+  public Storemenuitem parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Nadřízený; ID objektu Skladové menu [persistentní položka]
-   * @return parentID
+   * nadřízený; id objektu skladové menu [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízený; ID objektu Skladové menu [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "nadřízený; id objektu skladové menu [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setParentID(String parentID) {
-    this.parentID = parentID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Storemenuitem displayparent(String displayparent) {
+    this.displayparent = displayparent;
+    return this;
   }
 
    /**
-   * Nadřízený(zobr.)
-   * @return displayParent
+   * nadřízený(zobr.)
+   * @return displayparent
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízený(zobr.)")
-  public String getDisplayParent() {
-    return displayParent;
+  @ApiModelProperty(example = "null", value = "nadřízený(zobr.)")
+  public String getDisplayparent() {
+    return displayparent;
+  }
+
+  public void setDisplayparent(String displayparent) {
+    this.displayparent = displayparent;
   }
 
   public Storemenuitem text(String text) {
@@ -171,10 +216,10 @@ public class Storemenuitem   {
   }
 
    /**
-   * Text [persistentní položka]
+   * text [persistentní položka]
    * @return text
   **/
-  @ApiModelProperty(example = "null", value = "Text [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "text [persistentní položka]")
   public String getText() {
     return text;
   }
@@ -183,22 +228,22 @@ public class Storemenuitem   {
     this.text = text;
   }
 
-  public Storemenuitem FULLPATH(String FULLPATH) {
-    this.FULLPATH = FULLPATH;
+  public Storemenuitem fullpath(String fullpath) {
+    this.fullpath = fullpath;
     return this;
   }
 
    /**
-   * Cesta
-   * @return FULLPATH
+   * cesta
+   * @return fullpath
   **/
-  @ApiModelProperty(example = "null", value = "Cesta")
-  public String getFULLPATH() {
-    return FULLPATH;
+  @ApiModelProperty(example = "null", value = "cesta")
+  public String getFullpath() {
+    return fullpath;
   }
 
-  public void setFULLPATH(String FULLPATH) {
-    this.FULLPATH = FULLPATH;
+  public void setFullpath(String fullpath) {
+    this.fullpath = fullpath;
   }
 
 
@@ -211,21 +256,21 @@ public class Storemenuitem   {
       return false;
     }
     Storemenuitem storemenuitem = (Storemenuitem) o;
-    return Objects.equals(this.displayName, storemenuitem.displayName) &&
-        Objects.equals(this.ID, storemenuitem.ID) &&
-        Objects.equals(this.classID, storemenuitem.classID) &&
-        Objects.equals(this.objVersion, storemenuitem.objVersion) &&
+    return Objects.equals(this.displayname, storemenuitem.displayname) &&
+        Objects.equals(this.id, storemenuitem.id) &&
+        Objects.equals(this.classid, storemenuitem.classid) &&
+        Objects.equals(this.objversion, storemenuitem.objversion) &&
         Objects.equals(this.hidden, storemenuitem.hidden) &&
-        Objects.equals(this.posIndex, storemenuitem.posIndex) &&
-        Objects.equals(this.parentID, storemenuitem.parentID) &&
-        Objects.equals(this.displayParent, storemenuitem.displayParent) &&
+        Objects.equals(this.posindex, storemenuitem.posindex) &&
+        Objects.equals(this.parentId, storemenuitem.parentId) &&
+        Objects.equals(this.displayparent, storemenuitem.displayparent) &&
         Objects.equals(this.text, storemenuitem.text) &&
-        Objects.equals(this.FULLPATH, storemenuitem.FULLPATH);
+        Objects.equals(this.fullpath, storemenuitem.fullpath);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, posIndex, parentID, displayParent, text, FULLPATH);
+    return Objects.hash(displayname, id, classid, objversion, hidden, posindex, parentId, displayparent, text, fullpath);
   }
 
   @Override
@@ -233,16 +278,16 @@ public class Storemenuitem   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Storemenuitem {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    displayParent: ").append(toIndentedString(displayParent)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    displayparent: ").append(toIndentedString(displayparent)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
-    sb.append("    FULLPATH: ").append(toIndentedString(FULLPATH)).append("\n");
+    sb.append("    fullpath: ").append(toIndentedString(fullpath)).append("\n");
     sb.append("}");
     return sb.toString();
   }

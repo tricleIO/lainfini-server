@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,84 +34,120 @@ import java.util.Objects;
 /**
  * Report
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Report   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Title")
+  @SerializedName("title")
   private String title = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-  @SerializedName("DataSource")
-  private String dataSource = null;
+  @SerializedName("datasource")
+  private String datasource = null;
 
-  @SerializedName("ReportID")
-  private String reportID = null;
+  @SerializedName("reportid")
+  private String reportid = null;
 
-  @SerializedName("Data")
+  @SerializedName("data")
   private byte[] data = null;
 
-  @SerializedName("IsForm")
-  private Boolean isForm = null;
+  @SerializedName("isform")
+  private Boolean isform = null;
 
-  @SerializedName("Owner_ID")
-  private String ownerID = null;
+  @SerializedName("owner_id")
+  private String ownerId = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("Hash")
+  @SerializedName("hash")
   private String hash = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Report displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Report id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Report classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Report objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Report title(String title) {
@@ -120,10 +156,10 @@ public class Report   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return title
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getTitle() {
     return title;
   }
@@ -138,10 +174,10 @@ public class Report   {
   }
 
    /**
-   * Systémová [persistentní položka]
+   * systémová [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Systémová [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "systémová [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -150,40 +186,40 @@ public class Report   {
     this.system = system;
   }
 
-  public Report dataSource(String dataSource) {
-    this.dataSource = dataSource;
+  public Report datasource(String datasource) {
+    this.datasource = datasource;
     return this;
   }
 
    /**
-   * Datový zdroj [persistentní položka]
-   * @return dataSource
+   * datový zdroj [persistentní položka]
+   * @return datasource
   **/
-  @ApiModelProperty(example = "null", value = "Datový zdroj [persistentní položka]")
-  public String getDataSource() {
-    return dataSource;
+  @ApiModelProperty(example = "null", value = "datový zdroj [persistentní položka]")
+  public String getDatasource() {
+    return datasource;
   }
 
-  public void setDataSource(String dataSource) {
-    this.dataSource = dataSource;
+  public void setDatasource(String datasource) {
+    this.datasource = datasource;
   }
 
-  public Report reportID(String reportID) {
-    this.reportID = reportID;
+  public Report reportid(String reportid) {
+    this.reportid = reportid;
     return this;
   }
 
    /**
-   * GUID sestavy [persistentní položka]
-   * @return reportID
+   * guid sestavy [persistentní položka]
+   * @return reportid
   **/
-  @ApiModelProperty(example = "null", value = "GUID sestavy [persistentní položka]")
-  public String getReportID() {
-    return reportID;
+  @ApiModelProperty(example = "null", value = "guid sestavy [persistentní položka]")
+  public String getReportid() {
+    return reportid;
   }
 
-  public void setReportID(String reportID) {
-    this.reportID = reportID;
+  public void setReportid(String reportid) {
+    this.reportid = reportid;
   }
 
   public Report data(byte[] data) {
@@ -192,10 +228,10 @@ public class Report   {
   }
 
    /**
-   * Data sestavy [persistentní položka]
+   * data sestavy [persistentní položka]
    * @return data
   **/
-  @ApiModelProperty(example = "null", value = "Data sestavy [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "data sestavy [persistentní položka]")
   public byte[] getData() {
     return data;
   }
@@ -204,76 +240,76 @@ public class Report   {
     this.data = data;
   }
 
-  public Report isForm(Boolean isForm) {
-    this.isForm = isForm;
+  public Report isform(Boolean isform) {
+    this.isform = isform;
     return this;
   }
 
    /**
-   * Je formulář [persistentní položka]
-   * @return isForm
+   * je formulář [persistentní položka]
+   * @return isform
   **/
-  @ApiModelProperty(example = "null", value = "Je formulář [persistentní položka]")
-  public Boolean getIsForm() {
-    return isForm;
+  @ApiModelProperty(example = "null", value = "je formulář [persistentní položka]")
+  public Boolean getIsform() {
+    return isform;
   }
 
-  public void setIsForm(Boolean isForm) {
-    this.isForm = isForm;
+  public void setIsform(Boolean isform) {
+    this.isform = isform;
   }
 
-  public Report ownerID(String ownerID) {
-    this.ownerID = ownerID;
+  public Report ownerId(String ownerId) {
+    this.ownerId = ownerId;
     return this;
   }
 
    /**
-   * Vlastník; ID objektu Uživatel [persistentní položka]
-   * @return ownerID
+   * vlastník; id objektu uživatel [persistentní položka]
+   * @return ownerId
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Uživatel [persistentní položka]")
-  public String getOwnerID() {
-    return ownerID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu uživatel [persistentní položka]")
+  public String getOwnerId() {
+    return ownerId;
   }
 
-  public void setOwnerID(String ownerID) {
-    this.ownerID = ownerID;
+  public void setOwnerId(String ownerId) {
+    this.ownerId = ownerId;
   }
 
-  public Report createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Report createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Report correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Report correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
   public Report hash(String hash) {
@@ -282,10 +318,10 @@ public class Report   {
   }
 
    /**
-   * Hash [persistentní položka]
+   * hash [persistentní položka]
    * @return hash
   **/
-  @ApiModelProperty(example = "null", value = "Hash [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "hash [persistentní položka]")
   public String getHash() {
     return hash;
   }
@@ -304,25 +340,25 @@ public class Report   {
       return false;
     }
     Report report = (Report) o;
-    return Objects.equals(this.displayName, report.displayName) &&
-        Objects.equals(this.ID, report.ID) &&
-        Objects.equals(this.classID, report.classID) &&
-        Objects.equals(this.objVersion, report.objVersion) &&
+    return Objects.equals(this.displayname, report.displayname) &&
+        Objects.equals(this.id, report.id) &&
+        Objects.equals(this.classid, report.classid) &&
+        Objects.equals(this.objversion, report.objversion) &&
         Objects.equals(this.title, report.title) &&
         Objects.equals(this.system, report.system) &&
-        Objects.equals(this.dataSource, report.dataSource) &&
-        Objects.equals(this.reportID, report.reportID) &&
+        Objects.equals(this.datasource, report.datasource) &&
+        Objects.equals(this.reportid, report.reportid) &&
         Objects.equals(this.data, report.data) &&
-        Objects.equals(this.isForm, report.isForm) &&
-        Objects.equals(this.ownerID, report.ownerID) &&
-        Objects.equals(this.createdByID, report.createdByID) &&
-        Objects.equals(this.correctedByID, report.correctedByID) &&
+        Objects.equals(this.isform, report.isform) &&
+        Objects.equals(this.ownerId, report.ownerId) &&
+        Objects.equals(this.createdbyId, report.createdbyId) &&
+        Objects.equals(this.correctedbyId, report.correctedbyId) &&
         Objects.equals(this.hash, report.hash);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, title, system, dataSource, reportID, data, isForm, ownerID, createdByID, correctedByID, hash);
+    return Objects.hash(displayname, id, classid, objversion, title, system, datasource, reportid, data, isform, ownerId, createdbyId, correctedbyId, hash);
   }
 
   @Override
@@ -330,19 +366,19 @@ public class Report   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Report {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
-    sb.append("    dataSource: ").append(toIndentedString(dataSource)).append("\n");
-    sb.append("    reportID: ").append(toIndentedString(reportID)).append("\n");
+    sb.append("    datasource: ").append(toIndentedString(datasource)).append("\n");
+    sb.append("    reportid: ").append(toIndentedString(reportid)).append("\n");
     sb.append("    data: ").append(toIndentedString(data)).append("\n");
-    sb.append("    isForm: ").append(toIndentedString(isForm)).append("\n");
-    sb.append("    ownerID: ").append(toIndentedString(ownerID)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
+    sb.append("    isform: ").append(toIndentedString(isform)).append("\n");
+    sb.append("    ownerId: ").append(toIndentedString(ownerId)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
     sb.append("    hash: ").append(toIndentedString(hash)).append("\n");
     sb.append("}");
     return sb.toString();

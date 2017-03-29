@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,165 +37,201 @@ import java.util.Objects;
 /**
  * Gpmassemblylist
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Gpmassemblylist   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Gpmassemblylistrow> rows = new ArrayList<Gpmassemblylistrow>();
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("OperatingStore_ID")
-  private String operatingStoreID = null;
+  @SerializedName("operatingstore_id")
+  private String operatingstoreId = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("Status")
+  @SerializedName("status")
   private Integer status = null;
 
-  @SerializedName("PriceStatus")
-  private Integer priceStatus = null;
+  @SerializedName("pricestatus")
+  private Integer pricestatus = null;
 
-  @SerializedName("FinallyPrice")
-  private Double finallyPrice = null;
+  @SerializedName("finallyprice")
+  private Double finallyprice = null;
 
-  @SerializedName("CorrectedDate$DATE")
-  private DateTime correctedDateDATE = null;
+  @SerializedName("correcteddate$date")
+  private DateTime correcteddatedate = null;
 
-  @SerializedName("Price")
+  @SerializedName("price")
   private Double price = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("OriginalPrice")
-  private Double originalPrice = null;
+  @SerializedName("originalprice")
+  private Double originalprice = null;
 
-  @SerializedName("PlanedDate$DATE")
-  private DateTime planedDateDATE = null;
+  @SerializedName("planeddate$date")
+  private DateTime planeddatedate = null;
 
-  @SerializedName("CompletedBy_ID")
-  private String completedByID = null;
+  @SerializedName("completedby_id")
+  private String completedbyId = null;
 
-  @SerializedName("CompletedDate$DATE")
-  private DateTime completedDateDATE = null;
+  @SerializedName("completeddate$date")
+  private DateTime completeddatedate = null;
 
-  @SerializedName("MaterialDistributionDate$DATE")
-  private DateTime materialDistributionDateDATE = null;
+  @SerializedName("materialdistributiondate$date")
+  private DateTime materialdistributiondatedate = null;
 
-  @SerializedName("Calculated")
+  @SerializedName("calculated")
   private Boolean calculated = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("SDFirm_ID")
-  private String sDFirmID = null;
+  @SerializedName("sdfirm_id")
+  private String sdfirmId = null;
 
-  @SerializedName("MaterialInsufficiency")
-  private Integer materialInsufficiency = null;
+  @SerializedName("materialinsufficiency")
+  private Integer materialinsufficiency = null;
 
-  @SerializedName("MaterialDistribution_ID")
-  private String materialDistributionID = null;
+  @SerializedName("materialdistribution_id")
+  private String materialdistributionId = null;
 
-  @SerializedName("ProductReception_ID")
-  private String productReceptionID = null;
+  @SerializedName("productreception_id")
+  private String productreceptionId = null;
 
-  @SerializedName("IncomingTransfer_ID")
-  private String incomingTransferID = null;
+  @SerializedName("incomingtransfer_id")
+  private String incomingtransferId = null;
 
-  @SerializedName("OutgoingTransfer_ID")
-  private String outgoingTransferID = null;
+  @SerializedName("outgoingtransfer_id")
+  private String outgoingtransferId = null;
 
-  @SerializedName("Warnings")
+  @SerializedName("warnings")
   private String warnings = null;
 
-  @SerializedName("RefreshALCopyByNorms")
-  private Boolean refreshALCopyByNorms = null;
+  @SerializedName("refreshalcopybynorms")
+  private Boolean refreshalcopybynorms = null;
+
+  public Gpmassemblylist displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Gpmassemblylist id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Gpmassemblylist classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Gpmassemblylist objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Gpmassemblylist rows(List<Gpmassemblylistrow> rows) {
@@ -209,10 +245,10 @@ public class Gpmassemblylist   {
   }
 
    /**
-   * Řádky; kolekce BO Výrobní list - řádek [nepersistentní položka]
+   * Řádky; kolekce bo výrobní list - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Výrobní list - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo výrobní list - řádek [nepersistentní položka]")
   public List<Gpmassemblylistrow> getRows() {
     return rows;
   }
@@ -221,148 +257,148 @@ public class Gpmassemblylist   {
     this.rows = rows;
   }
 
-  public Gpmassemblylist docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Gpmassemblylist docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Gpmassemblylist periodID(String periodID) {
-    this.periodID = periodID;
+  public Gpmassemblylist periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Gpmassemblylist ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Gpmassemblylist ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Gpmassemblylist docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Gpmassemblylist docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Gpmassemblylist createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Gpmassemblylist createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Gpmassemblylist correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Gpmassemblylist correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Gpmassemblylist newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Gpmassemblylist newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Gpmassemblylist newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Gpmassemblylist newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
   public Gpmassemblylist description(String description) {
@@ -371,10 +407,10 @@ public class Gpmassemblylist   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -383,58 +419,58 @@ public class Gpmassemblylist   {
     this.description = description;
   }
 
-  public Gpmassemblylist storeID(String storeID) {
-    this.storeID = storeID;
+  public Gpmassemblylist storeId(String storeId) {
+    this.storeId = storeId;
     return this;
   }
 
    /**
-   * Sklad surovin; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * sklad surovin; id objektu sklad [persistentní položka]
+   * @return storeId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad surovin; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "sklad surovin; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
-  public Gpmassemblylist operatingStoreID(String operatingStoreID) {
-    this.operatingStoreID = operatingStoreID;
+  public Gpmassemblylist operatingstoreId(String operatingstoreId) {
+    this.operatingstoreId = operatingstoreId;
     return this;
   }
 
    /**
-   * Provozní sklad; ID objektu Sklad [persistentní položka]
-   * @return operatingStoreID
+   * provozní sklad; id objektu sklad [persistentní položka]
+   * @return operatingstoreId
   **/
-  @ApiModelProperty(example = "null", value = "Provozní sklad; ID objektu Sklad [persistentní položka]")
-  public String getOperatingStoreID() {
-    return operatingStoreID;
+  @ApiModelProperty(example = "null", value = "provozní sklad; id objektu sklad [persistentní položka]")
+  public String getOperatingstoreId() {
+    return operatingstoreId;
   }
 
-  public void setOperatingStoreID(String operatingStoreID) {
-    this.operatingStoreID = operatingStoreID;
+  public void setOperatingstoreId(String operatingstoreId) {
+    this.operatingstoreId = operatingstoreId;
   }
 
-  public Gpmassemblylist currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Gpmassemblylist currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
   public Gpmassemblylist status(Integer status) {
@@ -443,10 +479,10 @@ public class Gpmassemblylist   {
   }
 
    /**
-   * Stav [persistentní položka]
+   * stav [persistentní položka]
    * @return status
   **/
-  @ApiModelProperty(example = "null", value = "Stav [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "stav [persistentní položka]")
   public Integer getStatus() {
     return status;
   }
@@ -455,67 +491,76 @@ public class Gpmassemblylist   {
     this.status = status;
   }
 
-  public Gpmassemblylist priceStatus(Integer priceStatus) {
-    this.priceStatus = priceStatus;
+  public Gpmassemblylist pricestatus(Integer pricestatus) {
+    this.pricestatus = pricestatus;
     return this;
   }
 
    /**
-   * Stav ceny
-   * @return priceStatus
+   * stav ceny
+   * @return pricestatus
   **/
-  @ApiModelProperty(example = "null", value = "Stav ceny")
-  public Integer getPriceStatus() {
-    return priceStatus;
+  @ApiModelProperty(example = "null", value = "stav ceny")
+  public Integer getPricestatus() {
+    return pricestatus;
   }
 
-  public void setPriceStatus(Integer priceStatus) {
-    this.priceStatus = priceStatus;
+  public void setPricestatus(Integer pricestatus) {
+    this.pricestatus = pricestatus;
   }
 
-  public Gpmassemblylist finallyPrice(Double finallyPrice) {
-    this.finallyPrice = finallyPrice;
+  public Gpmassemblylist finallyprice(Double finallyprice) {
+    this.finallyprice = finallyprice;
     return this;
   }
 
    /**
-   * Konečná cena
-   * @return finallyPrice
+   * konečná cena
+   * @return finallyprice
   **/
-  @ApiModelProperty(example = "null", value = "Konečná cena")
-  public Double getFinallyPrice() {
-    return finallyPrice;
+  @ApiModelProperty(example = "null", value = "konečná cena")
+  public Double getFinallyprice() {
+    return finallyprice;
   }
 
-  public void setFinallyPrice(Double finallyPrice) {
-    this.finallyPrice = finallyPrice;
+  public void setFinallyprice(Double finallyprice) {
+    this.finallyprice = finallyprice;
   }
 
-  public Gpmassemblylist correctedDateDATE(DateTime correctedDateDATE) {
-    this.correctedDateDATE = correctedDateDATE;
+  public Gpmassemblylist correcteddatedate(DateTime correcteddatedate) {
+    this.correcteddatedate = correcteddatedate;
     return this;
   }
 
    /**
-   * Změněn [persistentní položka]
-   * @return correctedDateDATE
+   * změněn [persistentní položka]
+   * @return correcteddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Změněn [persistentní položka]")
-  public DateTime getCorrectedDateDATE() {
-    return correctedDateDATE;
+  @ApiModelProperty(example = "null", value = "změněn [persistentní položka]")
+  public DateTime getCorrecteddatedate() {
+    return correcteddatedate;
   }
 
-  public void setCorrectedDateDATE(DateTime correctedDateDATE) {
-    this.correctedDateDATE = correctedDateDATE;
+  public void setCorrecteddatedate(DateTime correcteddatedate) {
+    this.correcteddatedate = correcteddatedate;
+  }
+
+  public Gpmassemblylist price(Double price) {
+    this.price = price;
+    return this;
   }
 
    /**
-   * Cena [persistentní položka]
+   * cena [persistentní položka]
    * @return price
   **/
-  @ApiModelProperty(example = "null", value = "Cena [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "cena [persistentní položka]")
   public Double getPrice() {
     return price;
+  }
+
+  public void setPrice(Double price) {
+    this.price = price;
   }
 
   public Gpmassemblylist amount(Double amount) {
@@ -524,10 +569,10 @@ public class Gpmassemblylist   {
   }
 
    /**
-   * Cena
+   * cena
    * @return amount
   **/
-  @ApiModelProperty(example = "null", value = "Cena")
+  @ApiModelProperty(example = "null", value = "cena")
   public Double getAmount() {
     return amount;
   }
@@ -536,85 +581,94 @@ public class Gpmassemblylist   {
     this.amount = amount;
   }
 
-   /**
-   * Cena z norem [persistentní položka]
-   * @return originalPrice
-  **/
-  @ApiModelProperty(example = "null", value = "Cena z norem [persistentní položka]")
-  public Double getOriginalPrice() {
-    return originalPrice;
-  }
-
-  public Gpmassemblylist planedDateDATE(DateTime planedDateDATE) {
-    this.planedDateDATE = planedDateDATE;
+  public Gpmassemblylist originalprice(Double originalprice) {
+    this.originalprice = originalprice;
     return this;
   }
 
    /**
-   * Dat.plán.dok. [persistentní položka]
-   * @return planedDateDATE
+   * cena z norem [persistentní položka]
+   * @return originalprice
   **/
-  @ApiModelProperty(example = "null", value = "Dat.plán.dok. [persistentní položka]")
-  public DateTime getPlanedDateDATE() {
-    return planedDateDATE;
+  @ApiModelProperty(example = "null", value = "cena z norem [persistentní položka]")
+  public Double getOriginalprice() {
+    return originalprice;
   }
 
-  public void setPlanedDateDATE(DateTime planedDateDATE) {
-    this.planedDateDATE = planedDateDATE;
+  public void setOriginalprice(Double originalprice) {
+    this.originalprice = originalprice;
   }
 
-  public Gpmassemblylist completedByID(String completedByID) {
-    this.completedByID = completedByID;
+  public Gpmassemblylist planeddatedate(DateTime planeddatedate) {
+    this.planeddatedate = planeddatedate;
     return this;
   }
 
    /**
-   * Dokončil; ID objektu Uživatel [persistentní položka]
-   * @return completedByID
+   * dat.plán.dok. [persistentní položka]
+   * @return planeddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Dokončil; ID objektu Uživatel [persistentní položka]")
-  public String getCompletedByID() {
-    return completedByID;
+  @ApiModelProperty(example = "null", value = "dat.plán.dok. [persistentní položka]")
+  public DateTime getPlaneddatedate() {
+    return planeddatedate;
   }
 
-  public void setCompletedByID(String completedByID) {
-    this.completedByID = completedByID;
+  public void setPlaneddatedate(DateTime planeddatedate) {
+    this.planeddatedate = planeddatedate;
   }
 
-  public Gpmassemblylist completedDateDATE(DateTime completedDateDATE) {
-    this.completedDateDATE = completedDateDATE;
+  public Gpmassemblylist completedbyId(String completedbyId) {
+    this.completedbyId = completedbyId;
     return this;
   }
 
    /**
-   * Dat.dokončení [persistentní položka]
-   * @return completedDateDATE
+   * dokončil; id objektu uživatel [persistentní položka]
+   * @return completedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Dat.dokončení [persistentní položka]")
-  public DateTime getCompletedDateDATE() {
-    return completedDateDATE;
+  @ApiModelProperty(example = "null", value = "dokončil; id objektu uživatel [persistentní položka]")
+  public String getCompletedbyId() {
+    return completedbyId;
   }
 
-  public void setCompletedDateDATE(DateTime completedDateDATE) {
-    this.completedDateDATE = completedDateDATE;
+  public void setCompletedbyId(String completedbyId) {
+    this.completedbyId = completedbyId;
   }
 
-  public Gpmassemblylist materialDistributionDateDATE(DateTime materialDistributionDateDATE) {
-    this.materialDistributionDateDATE = materialDistributionDateDATE;
+  public Gpmassemblylist completeddatedate(DateTime completeddatedate) {
+    this.completeddatedate = completeddatedate;
     return this;
   }
 
    /**
-   * Dat.výd.sur. [persistentní položka]
-   * @return materialDistributionDateDATE
+   * dat.dokončení [persistentní položka]
+   * @return completeddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Dat.výd.sur. [persistentní položka]")
-  public DateTime getMaterialDistributionDateDATE() {
-    return materialDistributionDateDATE;
+  @ApiModelProperty(example = "null", value = "dat.dokončení [persistentní položka]")
+  public DateTime getCompleteddatedate() {
+    return completeddatedate;
   }
 
-  public void setMaterialDistributionDateDATE(DateTime materialDistributionDateDATE) {
-    this.materialDistributionDateDATE = materialDistributionDateDATE;
+  public void setCompleteddatedate(DateTime completeddatedate) {
+    this.completeddatedate = completeddatedate;
+  }
+
+  public Gpmassemblylist materialdistributiondatedate(DateTime materialdistributiondatedate) {
+    this.materialdistributiondatedate = materialdistributiondatedate;
+    return this;
+  }
+
+   /**
+   * dat.výd.sur. [persistentní položka]
+   * @return materialdistributiondatedate
+  **/
+  @ApiModelProperty(example = "null", value = "dat.výd.sur. [persistentní položka]")
+  public DateTime getMaterialdistributiondatedate() {
+    return materialdistributiondatedate;
+  }
+
+  public void setMaterialdistributiondatedate(DateTime materialdistributiondatedate) {
+    this.materialdistributiondatedate = materialdistributiondatedate;
   }
 
   public Gpmassemblylist calculated(Boolean calculated) {
@@ -623,10 +677,10 @@ public class Gpmassemblylist   {
   }
 
    /**
-   * Calculated
+   * calculated
    * @return calculated
   **/
-  @ApiModelProperty(example = "null", value = "Calculated")
+  @ApiModelProperty(example = "null", value = "calculated")
   public Boolean getCalculated() {
     return calculated;
   }
@@ -635,184 +689,184 @@ public class Gpmassemblylist   {
     this.calculated = calculated;
   }
 
-  public Gpmassemblylist busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Gpmassemblylist busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Gpmassemblylist busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Gpmassemblylist bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obch.případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obch.případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obch.případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obch.případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Gpmassemblylist busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Gpmassemblylist busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Gpmassemblylist divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Gpmassemblylist divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Gpmassemblylist sDFirmID(String sDFirmID) {
-    this.sDFirmID = sDFirmID;
+  public Gpmassemblylist sdfirmId(String sdfirmId) {
+    this.sdfirmId = sdfirmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return sDFirmID
+   * firma; id objektu firma [persistentní položka]
+   * @return sdfirmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getSDFirmID() {
-    return sDFirmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getSdfirmId() {
+    return sdfirmId;
   }
 
-  public void setSDFirmID(String sDFirmID) {
-    this.sDFirmID = sDFirmID;
+  public void setSdfirmId(String sdfirmId) {
+    this.sdfirmId = sdfirmId;
   }
 
-  public Gpmassemblylist materialInsufficiency(Integer materialInsufficiency) {
-    this.materialInsufficiency = materialInsufficiency;
+  public Gpmassemblylist materialinsufficiency(Integer materialinsufficiency) {
+    this.materialinsufficiency = materialinsufficiency;
     return this;
   }
 
    /**
-   * Příznak čerpání materiálu do mínusu [persistentní položka]
-   * @return materialInsufficiency
+   * příznak čerpání materiálu do mínusu [persistentní položka]
+   * @return materialinsufficiency
   **/
-  @ApiModelProperty(example = "null", value = "Příznak čerpání materiálu do mínusu [persistentní položka]")
-  public Integer getMaterialInsufficiency() {
-    return materialInsufficiency;
+  @ApiModelProperty(example = "null", value = "příznak čerpání materiálu do mínusu [persistentní položka]")
+  public Integer getMaterialinsufficiency() {
+    return materialinsufficiency;
   }
 
-  public void setMaterialInsufficiency(Integer materialInsufficiency) {
-    this.materialInsufficiency = materialInsufficiency;
+  public void setMaterialinsufficiency(Integer materialinsufficiency) {
+    this.materialinsufficiency = materialinsufficiency;
   }
 
-  public Gpmassemblylist materialDistributionID(String materialDistributionID) {
-    this.materialDistributionID = materialDistributionID;
+  public Gpmassemblylist materialdistributionId(String materialdistributionId) {
+    this.materialdistributionId = materialdistributionId;
     return this;
   }
 
    /**
-   * Výdej surovin; ID objektu Skladový doklad [persistentní položka]
-   * @return materialDistributionID
+   * výdej surovin; id objektu skladový doklad [persistentní položka]
+   * @return materialdistributionId
   **/
-  @ApiModelProperty(example = "null", value = "Výdej surovin; ID objektu Skladový doklad [persistentní položka]")
-  public String getMaterialDistributionID() {
-    return materialDistributionID;
+  @ApiModelProperty(example = "null", value = "výdej surovin; id objektu skladový doklad [persistentní položka]")
+  public String getMaterialdistributionId() {
+    return materialdistributionId;
   }
 
-  public void setMaterialDistributionID(String materialDistributionID) {
-    this.materialDistributionID = materialDistributionID;
+  public void setMaterialdistributionId(String materialdistributionId) {
+    this.materialdistributionId = materialdistributionId;
   }
 
-  public Gpmassemblylist productReceptionID(String productReceptionID) {
-    this.productReceptionID = productReceptionID;
+  public Gpmassemblylist productreceptionId(String productreceptionId) {
+    this.productreceptionId = productreceptionId;
     return this;
   }
 
    /**
-   * Příjem výrobků; ID objektu Skladový doklad [persistentní položka]
-   * @return productReceptionID
+   * příjem výrobků; id objektu skladový doklad [persistentní položka]
+   * @return productreceptionId
   **/
-  @ApiModelProperty(example = "null", value = "Příjem výrobků; ID objektu Skladový doklad [persistentní položka]")
-  public String getProductReceptionID() {
-    return productReceptionID;
+  @ApiModelProperty(example = "null", value = "příjem výrobků; id objektu skladový doklad [persistentní položka]")
+  public String getProductreceptionId() {
+    return productreceptionId;
   }
 
-  public void setProductReceptionID(String productReceptionID) {
-    this.productReceptionID = productReceptionID;
+  public void setProductreceptionId(String productreceptionId) {
+    this.productreceptionId = productreceptionId;
   }
 
-  public Gpmassemblylist incomingTransferID(String incomingTransferID) {
-    this.incomingTransferID = incomingTransferID;
+  public Gpmassemblylist incomingtransferId(String incomingtransferId) {
+    this.incomingtransferId = incomingtransferId;
     return this;
   }
 
    /**
-   * Převodka výdej; ID objektu Skladový doklad [persistentní položka]
-   * @return incomingTransferID
+   * převodka výdej; id objektu skladový doklad [persistentní položka]
+   * @return incomingtransferId
   **/
-  @ApiModelProperty(example = "null", value = "Převodka výdej; ID objektu Skladový doklad [persistentní položka]")
-  public String getIncomingTransferID() {
-    return incomingTransferID;
+  @ApiModelProperty(example = "null", value = "převodka výdej; id objektu skladový doklad [persistentní položka]")
+  public String getIncomingtransferId() {
+    return incomingtransferId;
   }
 
-  public void setIncomingTransferID(String incomingTransferID) {
-    this.incomingTransferID = incomingTransferID;
+  public void setIncomingtransferId(String incomingtransferId) {
+    this.incomingtransferId = incomingtransferId;
   }
 
-  public Gpmassemblylist outgoingTransferID(String outgoingTransferID) {
-    this.outgoingTransferID = outgoingTransferID;
+  public Gpmassemblylist outgoingtransferId(String outgoingtransferId) {
+    this.outgoingtransferId = outgoingtransferId;
     return this;
   }
 
    /**
-   * Převodka příjem; ID objektu Skladový doklad [persistentní položka]
-   * @return outgoingTransferID
+   * převodka příjem; id objektu skladový doklad [persistentní položka]
+   * @return outgoingtransferId
   **/
-  @ApiModelProperty(example = "null", value = "Převodka příjem; ID objektu Skladový doklad [persistentní položka]")
-  public String getOutgoingTransferID() {
-    return outgoingTransferID;
+  @ApiModelProperty(example = "null", value = "převodka příjem; id objektu skladový doklad [persistentní položka]")
+  public String getOutgoingtransferId() {
+    return outgoingtransferId;
   }
 
-  public void setOutgoingTransferID(String outgoingTransferID) {
-    this.outgoingTransferID = outgoingTransferID;
+  public void setOutgoingtransferId(String outgoingtransferId) {
+    this.outgoingtransferId = outgoingtransferId;
   }
 
   public Gpmassemblylist warnings(String warnings) {
@@ -821,10 +875,10 @@ public class Gpmassemblylist   {
   }
 
    /**
-   * Varování
+   * varování
    * @return warnings
   **/
-  @ApiModelProperty(example = "null", value = "Varování")
+  @ApiModelProperty(example = "null", value = "varování")
   public String getWarnings() {
     return warnings;
   }
@@ -833,22 +887,22 @@ public class Gpmassemblylist   {
     this.warnings = warnings;
   }
 
-  public Gpmassemblylist refreshALCopyByNorms(Boolean refreshALCopyByNorms) {
-    this.refreshALCopyByNorms = refreshALCopyByNorms;
+  public Gpmassemblylist refreshalcopybynorms(Boolean refreshalcopybynorms) {
+    this.refreshalcopybynorms = refreshalcopybynorms;
     return this;
   }
 
    /**
-   * Aktualizovat podle norem
-   * @return refreshALCopyByNorms
+   * aktualizovat podle norem
+   * @return refreshalcopybynorms
   **/
-  @ApiModelProperty(example = "null", value = "Aktualizovat podle norem")
-  public Boolean getRefreshALCopyByNorms() {
-    return refreshALCopyByNorms;
+  @ApiModelProperty(example = "null", value = "aktualizovat podle norem")
+  public Boolean getRefreshalcopybynorms() {
+    return refreshalcopybynorms;
   }
 
-  public void setRefreshALCopyByNorms(Boolean refreshALCopyByNorms) {
-    this.refreshALCopyByNorms = refreshALCopyByNorms;
+  public void setRefreshalcopybynorms(Boolean refreshalcopybynorms) {
+    this.refreshalcopybynorms = refreshalcopybynorms;
   }
 
 
@@ -861,52 +915,52 @@ public class Gpmassemblylist   {
       return false;
     }
     Gpmassemblylist gpmassemblylist = (Gpmassemblylist) o;
-    return Objects.equals(this.displayName, gpmassemblylist.displayName) &&
-        Objects.equals(this.ID, gpmassemblylist.ID) &&
-        Objects.equals(this.classID, gpmassemblylist.classID) &&
-        Objects.equals(this.objVersion, gpmassemblylist.objVersion) &&
+    return Objects.equals(this.displayname, gpmassemblylist.displayname) &&
+        Objects.equals(this.id, gpmassemblylist.id) &&
+        Objects.equals(this.classid, gpmassemblylist.classid) &&
+        Objects.equals(this.objversion, gpmassemblylist.objversion) &&
         Objects.equals(this.rows, gpmassemblylist.rows) &&
-        Objects.equals(this.docQueueID, gpmassemblylist.docQueueID) &&
-        Objects.equals(this.periodID, gpmassemblylist.periodID) &&
-        Objects.equals(this.ordNumber, gpmassemblylist.ordNumber) &&
-        Objects.equals(this.docDateDATE, gpmassemblylist.docDateDATE) &&
-        Objects.equals(this.createdByID, gpmassemblylist.createdByID) &&
-        Objects.equals(this.correctedByID, gpmassemblylist.correctedByID) &&
-        Objects.equals(this.newRelatedType, gpmassemblylist.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, gpmassemblylist.newRelatedDocumentID) &&
+        Objects.equals(this.docqueueId, gpmassemblylist.docqueueId) &&
+        Objects.equals(this.periodId, gpmassemblylist.periodId) &&
+        Objects.equals(this.ordnumber, gpmassemblylist.ordnumber) &&
+        Objects.equals(this.docdatedate, gpmassemblylist.docdatedate) &&
+        Objects.equals(this.createdbyId, gpmassemblylist.createdbyId) &&
+        Objects.equals(this.correctedbyId, gpmassemblylist.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, gpmassemblylist.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, gpmassemblylist.newrelateddocumentId) &&
         Objects.equals(this.description, gpmassemblylist.description) &&
-        Objects.equals(this.storeID, gpmassemblylist.storeID) &&
-        Objects.equals(this.operatingStoreID, gpmassemblylist.operatingStoreID) &&
-        Objects.equals(this.currencyID, gpmassemblylist.currencyID) &&
+        Objects.equals(this.storeId, gpmassemblylist.storeId) &&
+        Objects.equals(this.operatingstoreId, gpmassemblylist.operatingstoreId) &&
+        Objects.equals(this.currencyId, gpmassemblylist.currencyId) &&
         Objects.equals(this.status, gpmassemblylist.status) &&
-        Objects.equals(this.priceStatus, gpmassemblylist.priceStatus) &&
-        Objects.equals(this.finallyPrice, gpmassemblylist.finallyPrice) &&
-        Objects.equals(this.correctedDateDATE, gpmassemblylist.correctedDateDATE) &&
+        Objects.equals(this.pricestatus, gpmassemblylist.pricestatus) &&
+        Objects.equals(this.finallyprice, gpmassemblylist.finallyprice) &&
+        Objects.equals(this.correcteddatedate, gpmassemblylist.correcteddatedate) &&
         Objects.equals(this.price, gpmassemblylist.price) &&
         Objects.equals(this.amount, gpmassemblylist.amount) &&
-        Objects.equals(this.originalPrice, gpmassemblylist.originalPrice) &&
-        Objects.equals(this.planedDateDATE, gpmassemblylist.planedDateDATE) &&
-        Objects.equals(this.completedByID, gpmassemblylist.completedByID) &&
-        Objects.equals(this.completedDateDATE, gpmassemblylist.completedDateDATE) &&
-        Objects.equals(this.materialDistributionDateDATE, gpmassemblylist.materialDistributionDateDATE) &&
+        Objects.equals(this.originalprice, gpmassemblylist.originalprice) &&
+        Objects.equals(this.planeddatedate, gpmassemblylist.planeddatedate) &&
+        Objects.equals(this.completedbyId, gpmassemblylist.completedbyId) &&
+        Objects.equals(this.completeddatedate, gpmassemblylist.completeddatedate) &&
+        Objects.equals(this.materialdistributiondatedate, gpmassemblylist.materialdistributiondatedate) &&
         Objects.equals(this.calculated, gpmassemblylist.calculated) &&
-        Objects.equals(this.busOrderID, gpmassemblylist.busOrderID) &&
-        Objects.equals(this.busTransactionID, gpmassemblylist.busTransactionID) &&
-        Objects.equals(this.busProjectID, gpmassemblylist.busProjectID) &&
-        Objects.equals(this.divisionID, gpmassemblylist.divisionID) &&
-        Objects.equals(this.sDFirmID, gpmassemblylist.sDFirmID) &&
-        Objects.equals(this.materialInsufficiency, gpmassemblylist.materialInsufficiency) &&
-        Objects.equals(this.materialDistributionID, gpmassemblylist.materialDistributionID) &&
-        Objects.equals(this.productReceptionID, gpmassemblylist.productReceptionID) &&
-        Objects.equals(this.incomingTransferID, gpmassemblylist.incomingTransferID) &&
-        Objects.equals(this.outgoingTransferID, gpmassemblylist.outgoingTransferID) &&
+        Objects.equals(this.busorderId, gpmassemblylist.busorderId) &&
+        Objects.equals(this.bustransactionId, gpmassemblylist.bustransactionId) &&
+        Objects.equals(this.busprojectId, gpmassemblylist.busprojectId) &&
+        Objects.equals(this.divisionId, gpmassemblylist.divisionId) &&
+        Objects.equals(this.sdfirmId, gpmassemblylist.sdfirmId) &&
+        Objects.equals(this.materialinsufficiency, gpmassemblylist.materialinsufficiency) &&
+        Objects.equals(this.materialdistributionId, gpmassemblylist.materialdistributionId) &&
+        Objects.equals(this.productreceptionId, gpmassemblylist.productreceptionId) &&
+        Objects.equals(this.incomingtransferId, gpmassemblylist.incomingtransferId) &&
+        Objects.equals(this.outgoingtransferId, gpmassemblylist.outgoingtransferId) &&
         Objects.equals(this.warnings, gpmassemblylist.warnings) &&
-        Objects.equals(this.refreshALCopyByNorms, gpmassemblylist.refreshALCopyByNorms);
+        Objects.equals(this.refreshalcopybynorms, gpmassemblylist.refreshalcopybynorms);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, description, storeID, operatingStoreID, currencyID, status, priceStatus, finallyPrice, correctedDateDATE, price, amount, originalPrice, planedDateDATE, completedByID, completedDateDATE, materialDistributionDateDATE, calculated, busOrderID, busTransactionID, busProjectID, divisionID, sDFirmID, materialInsufficiency, materialDistributionID, productReceptionID, incomingTransferID, outgoingTransferID, warnings, refreshALCopyByNorms);
+    return Objects.hash(displayname, id, classid, objversion, rows, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, description, storeId, operatingstoreId, currencyId, status, pricestatus, finallyprice, correcteddatedate, price, amount, originalprice, planeddatedate, completedbyId, completeddatedate, materialdistributiondatedate, calculated, busorderId, bustransactionId, busprojectId, divisionId, sdfirmId, materialinsufficiency, materialdistributionId, productreceptionId, incomingtransferId, outgoingtransferId, warnings, refreshalcopybynorms);
   }
 
   @Override
@@ -914,47 +968,47 @@ public class Gpmassemblylist   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Gpmassemblylist {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    operatingStoreID: ").append(toIndentedString(operatingStoreID)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    operatingstoreId: ").append(toIndentedString(operatingstoreId)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
-    sb.append("    priceStatus: ").append(toIndentedString(priceStatus)).append("\n");
-    sb.append("    finallyPrice: ").append(toIndentedString(finallyPrice)).append("\n");
-    sb.append("    correctedDateDATE: ").append(toIndentedString(correctedDateDATE)).append("\n");
+    sb.append("    pricestatus: ").append(toIndentedString(pricestatus)).append("\n");
+    sb.append("    finallyprice: ").append(toIndentedString(finallyprice)).append("\n");
+    sb.append("    correcteddatedate: ").append(toIndentedString(correcteddatedate)).append("\n");
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    originalPrice: ").append(toIndentedString(originalPrice)).append("\n");
-    sb.append("    planedDateDATE: ").append(toIndentedString(planedDateDATE)).append("\n");
-    sb.append("    completedByID: ").append(toIndentedString(completedByID)).append("\n");
-    sb.append("    completedDateDATE: ").append(toIndentedString(completedDateDATE)).append("\n");
-    sb.append("    materialDistributionDateDATE: ").append(toIndentedString(materialDistributionDateDATE)).append("\n");
+    sb.append("    originalprice: ").append(toIndentedString(originalprice)).append("\n");
+    sb.append("    planeddatedate: ").append(toIndentedString(planeddatedate)).append("\n");
+    sb.append("    completedbyId: ").append(toIndentedString(completedbyId)).append("\n");
+    sb.append("    completeddatedate: ").append(toIndentedString(completeddatedate)).append("\n");
+    sb.append("    materialdistributiondatedate: ").append(toIndentedString(materialdistributiondatedate)).append("\n");
     sb.append("    calculated: ").append(toIndentedString(calculated)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    sDFirmID: ").append(toIndentedString(sDFirmID)).append("\n");
-    sb.append("    materialInsufficiency: ").append(toIndentedString(materialInsufficiency)).append("\n");
-    sb.append("    materialDistributionID: ").append(toIndentedString(materialDistributionID)).append("\n");
-    sb.append("    productReceptionID: ").append(toIndentedString(productReceptionID)).append("\n");
-    sb.append("    incomingTransferID: ").append(toIndentedString(incomingTransferID)).append("\n");
-    sb.append("    outgoingTransferID: ").append(toIndentedString(outgoingTransferID)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    sdfirmId: ").append(toIndentedString(sdfirmId)).append("\n");
+    sb.append("    materialinsufficiency: ").append(toIndentedString(materialinsufficiency)).append("\n");
+    sb.append("    materialdistributionId: ").append(toIndentedString(materialdistributionId)).append("\n");
+    sb.append("    productreceptionId: ").append(toIndentedString(productreceptionId)).append("\n");
+    sb.append("    incomingtransferId: ").append(toIndentedString(incomingtransferId)).append("\n");
+    sb.append("    outgoingtransferId: ").append(toIndentedString(outgoingtransferId)).append("\n");
     sb.append("    warnings: ").append(toIndentedString(warnings)).append("\n");
-    sb.append("    refreshALCopyByNorms: ").append(toIndentedString(refreshALCopyByNorms)).append("\n");
+    sb.append("    refreshalcopybynorms: ").append(toIndentedString(refreshalcopybynorms)).append("\n");
     sb.append("}");
     return sb.toString();
   }

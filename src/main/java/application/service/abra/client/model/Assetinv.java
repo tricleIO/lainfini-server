@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,117 +37,153 @@ import java.util.Objects;
 /**
  * Assetinv
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Assetinv   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Assetinvlist> rows = new ArrayList<Assetinvlist>();
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("Committee_ID")
-  private String committeeID = null;
+  @SerializedName("committee_id")
+  private String committeeId = null;
 
-  @SerializedName("InventoryState")
-  private Integer inventoryState = null;
+  @SerializedName("inventorystate")
+  private Integer inventorystate = null;
 
-  @SerializedName("InventoryType")
-  private Integer inventoryType = null;
+  @SerializedName("inventorytype")
+  private Integer inventorytype = null;
 
-  @SerializedName("RestrictionKind")
-  private Integer restrictionKind = null;
+  @SerializedName("restrictionkind")
+  private Integer restrictionkind = null;
 
-  @SerializedName("StartDate$DATE")
-  private DateTime startDateDATE = null;
+  @SerializedName("startdate$date")
+  private DateTime startdatedate = null;
 
-  @SerializedName("EndDate$DATE")
-  private DateTime endDateDATE = null;
+  @SerializedName("enddate$date")
+  private DateTime enddatedate = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("InventoryTypeAsText")
-  private String inventoryTypeAsText = null;
+  @SerializedName("inventorytypeastext")
+  private String inventorytypeastext = null;
 
-  @SerializedName("InventoryStateAsText")
-  private String inventoryStateAsText = null;
+  @SerializedName("inventorystateastext")
+  private String inventorystateastext = null;
 
-  @SerializedName("RestrictionKindAsText")
-  private String restrictionKindAsText = null;
+  @SerializedName("restrictionkindastext")
+  private String restrictionkindastext = null;
 
-  @SerializedName("CreatedAt$DATE")
-  private DateTime createdAtDATE = null;
+  @SerializedName("createdat$date")
+  private DateTime createdatdate = null;
 
-  @SerializedName("CorrectedAt$DATE")
-  private DateTime correctedAtDATE = null;
+  @SerializedName("correctedat$date")
+  private DateTime correctedatdate = null;
+
+  public Assetinv displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Assetinv id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Assetinv classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Assetinv objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Assetinv rows(List<Assetinvlist> rows) {
@@ -161,10 +197,10 @@ public class Assetinv   {
   }
 
    /**
-   * Řádky; kolekce BO Inventarizační seznam majetku [nepersistentní položka]
+   * Řádky; kolekce bo inventarizační seznam majetku [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Inventarizační seznam majetku [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo inventarizační seznam majetku [nepersistentní položka]")
   public List<Assetinvlist> getRows() {
     return rows;
   }
@@ -173,256 +209,256 @@ public class Assetinv   {
     this.rows = rows;
   }
 
-  public Assetinv docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Assetinv docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Assetinv periodID(String periodID) {
-    this.periodID = periodID;
+  public Assetinv periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Assetinv ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Assetinv ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Assetinv docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Assetinv docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Assetinv createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Assetinv createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Assetinv correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Assetinv correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Assetinv newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Assetinv newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Assetinv newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Assetinv newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Assetinv committeeID(String committeeID) {
-    this.committeeID = committeeID;
+  public Assetinv committeeId(String committeeId) {
+    this.committeeId = committeeId;
     return this;
   }
 
    /**
-   * Ústřední inventarizační komise; ID objektu Inventarizační komise [persistentní položka]
-   * @return committeeID
+   * Ústřední inventarizační komise; id objektu inventarizační komise [persistentní položka]
+   * @return committeeId
   **/
-  @ApiModelProperty(example = "null", value = "Ústřední inventarizační komise; ID objektu Inventarizační komise [persistentní položka]")
-  public String getCommitteeID() {
-    return committeeID;
+  @ApiModelProperty(example = "null", value = "Ústřední inventarizační komise; id objektu inventarizační komise [persistentní položka]")
+  public String getCommitteeId() {
+    return committeeId;
   }
 
-  public void setCommitteeID(String committeeID) {
-    this.committeeID = committeeID;
+  public void setCommitteeId(String committeeId) {
+    this.committeeId = committeeId;
   }
 
-  public Assetinv inventoryState(Integer inventoryState) {
-    this.inventoryState = inventoryState;
+  public Assetinv inventorystate(Integer inventorystate) {
+    this.inventorystate = inventorystate;
     return this;
   }
 
    /**
-   * Stav inventury [persistentní položka]
-   * @return inventoryState
+   * stav inventury [persistentní položka]
+   * @return inventorystate
   **/
-  @ApiModelProperty(example = "null", value = "Stav inventury [persistentní položka]")
-  public Integer getInventoryState() {
-    return inventoryState;
+  @ApiModelProperty(example = "null", value = "stav inventury [persistentní položka]")
+  public Integer getInventorystate() {
+    return inventorystate;
   }
 
-  public void setInventoryState(Integer inventoryState) {
-    this.inventoryState = inventoryState;
+  public void setInventorystate(Integer inventorystate) {
+    this.inventorystate = inventorystate;
   }
 
-  public Assetinv inventoryType(Integer inventoryType) {
-    this.inventoryType = inventoryType;
+  public Assetinv inventorytype(Integer inventorytype) {
+    this.inventorytype = inventorytype;
     return this;
   }
 
    /**
-   * Typ inventury [persistentní položka]
-   * @return inventoryType
+   * typ inventury [persistentní položka]
+   * @return inventorytype
   **/
-  @ApiModelProperty(example = "null", value = "Typ inventury [persistentní položka]")
-  public Integer getInventoryType() {
-    return inventoryType;
+  @ApiModelProperty(example = "null", value = "typ inventury [persistentní položka]")
+  public Integer getInventorytype() {
+    return inventorytype;
   }
 
-  public void setInventoryType(Integer inventoryType) {
-    this.inventoryType = inventoryType;
+  public void setInventorytype(Integer inventorytype) {
+    this.inventorytype = inventorytype;
   }
 
-  public Assetinv restrictionKind(Integer restrictionKind) {
-    this.restrictionKind = restrictionKind;
+  public Assetinv restrictionkind(Integer restrictionkind) {
+    this.restrictionkind = restrictionkind;
     return this;
   }
 
    /**
-   * Podmínka výběru majetku [persistentní položka]
-   * @return restrictionKind
+   * podmínka výběru majetku [persistentní položka]
+   * @return restrictionkind
   **/
-  @ApiModelProperty(example = "null", value = "Podmínka výběru majetku [persistentní položka]")
-  public Integer getRestrictionKind() {
-    return restrictionKind;
+  @ApiModelProperty(example = "null", value = "podmínka výběru majetku [persistentní položka]")
+  public Integer getRestrictionkind() {
+    return restrictionkind;
   }
 
-  public void setRestrictionKind(Integer restrictionKind) {
-    this.restrictionKind = restrictionKind;
+  public void setRestrictionkind(Integer restrictionkind) {
+    this.restrictionkind = restrictionkind;
   }
 
-  public Assetinv startDateDATE(DateTime startDateDATE) {
-    this.startDateDATE = startDateDATE;
+  public Assetinv startdatedate(DateTime startdatedate) {
+    this.startdatedate = startdatedate;
     return this;
   }
 
    /**
-   * Datum zahájení [persistentní položka]
-   * @return startDateDATE
+   * datum zahájení [persistentní položka]
+   * @return startdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum zahájení [persistentní položka]")
-  public DateTime getStartDateDATE() {
-    return startDateDATE;
+  @ApiModelProperty(example = "null", value = "datum zahájení [persistentní položka]")
+  public DateTime getStartdatedate() {
+    return startdatedate;
   }
 
-  public void setStartDateDATE(DateTime startDateDATE) {
-    this.startDateDATE = startDateDATE;
+  public void setStartdatedate(DateTime startdatedate) {
+    this.startdatedate = startdatedate;
   }
 
-  public Assetinv endDateDATE(DateTime endDateDATE) {
-    this.endDateDATE = endDateDATE;
+  public Assetinv enddatedate(DateTime enddatedate) {
+    this.enddatedate = enddatedate;
     return this;
   }
 
    /**
-   * Datum ukončení [persistentní položka]
-   * @return endDateDATE
+   * datum ukončení [persistentní položka]
+   * @return enddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum ukončení [persistentní položka]")
-  public DateTime getEndDateDATE() {
-    return endDateDATE;
+  @ApiModelProperty(example = "null", value = "datum ukončení [persistentní položka]")
+  public DateTime getEnddatedate() {
+    return enddatedate;
   }
 
-  public void setEndDateDATE(DateTime endDateDATE) {
-    this.endDateDATE = endDateDATE;
+  public void setEnddatedate(DateTime enddatedate) {
+    this.enddatedate = enddatedate;
   }
 
   public Assetinv description(String description) {
@@ -431,10 +467,10 @@ public class Assetinv   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -443,94 +479,94 @@ public class Assetinv   {
     this.description = description;
   }
 
-  public Assetinv inventoryTypeAsText(String inventoryTypeAsText) {
-    this.inventoryTypeAsText = inventoryTypeAsText;
+  public Assetinv inventorytypeastext(String inventorytypeastext) {
+    this.inventorytypeastext = inventorytypeastext;
     return this;
   }
 
    /**
-   * Typ inventury
-   * @return inventoryTypeAsText
+   * typ inventury
+   * @return inventorytypeastext
   **/
-  @ApiModelProperty(example = "null", value = "Typ inventury")
-  public String getInventoryTypeAsText() {
-    return inventoryTypeAsText;
+  @ApiModelProperty(example = "null", value = "typ inventury")
+  public String getInventorytypeastext() {
+    return inventorytypeastext;
   }
 
-  public void setInventoryTypeAsText(String inventoryTypeAsText) {
-    this.inventoryTypeAsText = inventoryTypeAsText;
+  public void setInventorytypeastext(String inventorytypeastext) {
+    this.inventorytypeastext = inventorytypeastext;
   }
 
-  public Assetinv inventoryStateAsText(String inventoryStateAsText) {
-    this.inventoryStateAsText = inventoryStateAsText;
+  public Assetinv inventorystateastext(String inventorystateastext) {
+    this.inventorystateastext = inventorystateastext;
     return this;
   }
 
    /**
-   * Stav inventury
-   * @return inventoryStateAsText
+   * stav inventury
+   * @return inventorystateastext
   **/
-  @ApiModelProperty(example = "null", value = "Stav inventury")
-  public String getInventoryStateAsText() {
-    return inventoryStateAsText;
+  @ApiModelProperty(example = "null", value = "stav inventury")
+  public String getInventorystateastext() {
+    return inventorystateastext;
   }
 
-  public void setInventoryStateAsText(String inventoryStateAsText) {
-    this.inventoryStateAsText = inventoryStateAsText;
+  public void setInventorystateastext(String inventorystateastext) {
+    this.inventorystateastext = inventorystateastext;
   }
 
-  public Assetinv restrictionKindAsText(String restrictionKindAsText) {
-    this.restrictionKindAsText = restrictionKindAsText;
+  public Assetinv restrictionkindastext(String restrictionkindastext) {
+    this.restrictionkindastext = restrictionkindastext;
     return this;
   }
 
    /**
-   * Podmínka výběru majetku
-   * @return restrictionKindAsText
+   * podmínka výběru majetku
+   * @return restrictionkindastext
   **/
-  @ApiModelProperty(example = "null", value = "Podmínka výběru majetku")
-  public String getRestrictionKindAsText() {
-    return restrictionKindAsText;
+  @ApiModelProperty(example = "null", value = "podmínka výběru majetku")
+  public String getRestrictionkindastext() {
+    return restrictionkindastext;
   }
 
-  public void setRestrictionKindAsText(String restrictionKindAsText) {
-    this.restrictionKindAsText = restrictionKindAsText;
+  public void setRestrictionkindastext(String restrictionkindastext) {
+    this.restrictionkindastext = restrictionkindastext;
   }
 
-  public Assetinv createdAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public Assetinv createdatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
     return this;
   }
 
    /**
-   * Vytvořeno [persistentní položka]
-   * @return createdAtDATE
+   * vytvořeno [persistentní položka]
+   * @return createdatdate
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořeno [persistentní položka]")
-  public DateTime getCreatedAtDATE() {
-    return createdAtDATE;
+  @ApiModelProperty(example = "null", value = "vytvořeno [persistentní položka]")
+  public DateTime getCreatedatdate() {
+    return createdatdate;
   }
 
-  public void setCreatedAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public void setCreatedatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
   }
 
-  public Assetinv correctedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public Assetinv correctedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
     return this;
   }
 
    /**
-   * Opraveno [persistentní položka]
-   * @return correctedAtDATE
+   * opraveno [persistentní položka]
+   * @return correctedatdate
   **/
-  @ApiModelProperty(example = "null", value = "Opraveno [persistentní položka]")
-  public DateTime getCorrectedAtDATE() {
-    return correctedAtDATE;
+  @ApiModelProperty(example = "null", value = "opraveno [persistentní položka]")
+  public DateTime getCorrectedatdate() {
+    return correctedatdate;
   }
 
-  public void setCorrectedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public void setCorrectedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
   }
 
 
@@ -543,36 +579,36 @@ public class Assetinv   {
       return false;
     }
     Assetinv assetinv = (Assetinv) o;
-    return Objects.equals(this.displayName, assetinv.displayName) &&
-        Objects.equals(this.ID, assetinv.ID) &&
-        Objects.equals(this.classID, assetinv.classID) &&
-        Objects.equals(this.objVersion, assetinv.objVersion) &&
+    return Objects.equals(this.displayname, assetinv.displayname) &&
+        Objects.equals(this.id, assetinv.id) &&
+        Objects.equals(this.classid, assetinv.classid) &&
+        Objects.equals(this.objversion, assetinv.objversion) &&
         Objects.equals(this.rows, assetinv.rows) &&
-        Objects.equals(this.docQueueID, assetinv.docQueueID) &&
-        Objects.equals(this.periodID, assetinv.periodID) &&
-        Objects.equals(this.ordNumber, assetinv.ordNumber) &&
-        Objects.equals(this.docDateDATE, assetinv.docDateDATE) &&
-        Objects.equals(this.createdByID, assetinv.createdByID) &&
-        Objects.equals(this.correctedByID, assetinv.correctedByID) &&
-        Objects.equals(this.newRelatedType, assetinv.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, assetinv.newRelatedDocumentID) &&
-        Objects.equals(this.committeeID, assetinv.committeeID) &&
-        Objects.equals(this.inventoryState, assetinv.inventoryState) &&
-        Objects.equals(this.inventoryType, assetinv.inventoryType) &&
-        Objects.equals(this.restrictionKind, assetinv.restrictionKind) &&
-        Objects.equals(this.startDateDATE, assetinv.startDateDATE) &&
-        Objects.equals(this.endDateDATE, assetinv.endDateDATE) &&
+        Objects.equals(this.docqueueId, assetinv.docqueueId) &&
+        Objects.equals(this.periodId, assetinv.periodId) &&
+        Objects.equals(this.ordnumber, assetinv.ordnumber) &&
+        Objects.equals(this.docdatedate, assetinv.docdatedate) &&
+        Objects.equals(this.createdbyId, assetinv.createdbyId) &&
+        Objects.equals(this.correctedbyId, assetinv.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, assetinv.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, assetinv.newrelateddocumentId) &&
+        Objects.equals(this.committeeId, assetinv.committeeId) &&
+        Objects.equals(this.inventorystate, assetinv.inventorystate) &&
+        Objects.equals(this.inventorytype, assetinv.inventorytype) &&
+        Objects.equals(this.restrictionkind, assetinv.restrictionkind) &&
+        Objects.equals(this.startdatedate, assetinv.startdatedate) &&
+        Objects.equals(this.enddatedate, assetinv.enddatedate) &&
         Objects.equals(this.description, assetinv.description) &&
-        Objects.equals(this.inventoryTypeAsText, assetinv.inventoryTypeAsText) &&
-        Objects.equals(this.inventoryStateAsText, assetinv.inventoryStateAsText) &&
-        Objects.equals(this.restrictionKindAsText, assetinv.restrictionKindAsText) &&
-        Objects.equals(this.createdAtDATE, assetinv.createdAtDATE) &&
-        Objects.equals(this.correctedAtDATE, assetinv.correctedAtDATE);
+        Objects.equals(this.inventorytypeastext, assetinv.inventorytypeastext) &&
+        Objects.equals(this.inventorystateastext, assetinv.inventorystateastext) &&
+        Objects.equals(this.restrictionkindastext, assetinv.restrictionkindastext) &&
+        Objects.equals(this.createdatdate, assetinv.createdatdate) &&
+        Objects.equals(this.correctedatdate, assetinv.correctedatdate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, committeeID, inventoryState, inventoryType, restrictionKind, startDateDATE, endDateDATE, description, inventoryTypeAsText, inventoryStateAsText, restrictionKindAsText, createdAtDATE, correctedAtDATE);
+    return Objects.hash(displayname, id, classid, objversion, rows, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, committeeId, inventorystate, inventorytype, restrictionkind, startdatedate, enddatedate, description, inventorytypeastext, inventorystateastext, restrictionkindastext, createdatdate, correctedatdate);
   }
 
   @Override
@@ -580,31 +616,31 @@ public class Assetinv   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Assetinv {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    committeeID: ").append(toIndentedString(committeeID)).append("\n");
-    sb.append("    inventoryState: ").append(toIndentedString(inventoryState)).append("\n");
-    sb.append("    inventoryType: ").append(toIndentedString(inventoryType)).append("\n");
-    sb.append("    restrictionKind: ").append(toIndentedString(restrictionKind)).append("\n");
-    sb.append("    startDateDATE: ").append(toIndentedString(startDateDATE)).append("\n");
-    sb.append("    endDateDATE: ").append(toIndentedString(endDateDATE)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    committeeId: ").append(toIndentedString(committeeId)).append("\n");
+    sb.append("    inventorystate: ").append(toIndentedString(inventorystate)).append("\n");
+    sb.append("    inventorytype: ").append(toIndentedString(inventorytype)).append("\n");
+    sb.append("    restrictionkind: ").append(toIndentedString(restrictionkind)).append("\n");
+    sb.append("    startdatedate: ").append(toIndentedString(startdatedate)).append("\n");
+    sb.append("    enddatedate: ").append(toIndentedString(enddatedate)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    inventoryTypeAsText: ").append(toIndentedString(inventoryTypeAsText)).append("\n");
-    sb.append("    inventoryStateAsText: ").append(toIndentedString(inventoryStateAsText)).append("\n");
-    sb.append("    restrictionKindAsText: ").append(toIndentedString(restrictionKindAsText)).append("\n");
-    sb.append("    createdAtDATE: ").append(toIndentedString(createdAtDATE)).append("\n");
-    sb.append("    correctedAtDATE: ").append(toIndentedString(correctedAtDATE)).append("\n");
+    sb.append("    inventorytypeastext: ").append(toIndentedString(inventorytypeastext)).append("\n");
+    sb.append("    inventorystateastext: ").append(toIndentedString(inventorystateastext)).append("\n");
+    sb.append("    restrictionkindastext: ").append(toIndentedString(restrictionkindastext)).append("\n");
+    sb.append("    createdatdate: ").append(toIndentedString(createdatdate)).append("\n");
+    sb.append("    correctedatdate: ").append(toIndentedString(correctedatdate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

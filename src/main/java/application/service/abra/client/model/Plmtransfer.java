@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,72 +37,108 @@ import java.util.Objects;
 /**
  * Plmtransfer
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmtransfer   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Plmtransfersrow> rows = new ArrayList<Plmtransfersrow>();
 
-  @SerializedName("TransferDate$DATE")
-  private DateTime transferDateDATE = null;
+  @SerializedName("transferdate$date")
+  private DateTime transferdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("WagePeriod_ID")
-  private String wagePeriodID = null;
+  @SerializedName("wageperiod_id")
+  private String wageperiodId = null;
 
-  @SerializedName("WageOperationImport_ID")
-  private String wageOperationImportID = null;
+  @SerializedName("wageoperationimport_id")
+  private String wageoperationimportId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Plmtransfer displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Plmtransfer id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmtransfer classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmtransfer objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Plmtransfer rows(List<Plmtransfersrow> rows) {
@@ -116,10 +152,10 @@ public class Plmtransfer   {
   }
 
    /**
-   * Řádky; kolekce BO Řádek přenosu pracovních lístků do mezd [nepersistentní položka]
+   * Řádky; kolekce bo Řádek přenosu pracovních lístků do mezd [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Řádek přenosu pracovních lístků do mezd [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo Řádek přenosu pracovních lístků do mezd [nepersistentní položka]")
   public List<Plmtransfersrow> getRows() {
     return rows;
   }
@@ -128,40 +164,40 @@ public class Plmtransfer   {
     this.rows = rows;
   }
 
-  public Plmtransfer transferDateDATE(DateTime transferDateDATE) {
-    this.transferDateDATE = transferDateDATE;
+  public Plmtransfer transferdatedate(DateTime transferdatedate) {
+    this.transferdatedate = transferdatedate;
     return this;
   }
 
    /**
-   * Datum přenosu [persistentní položka]
-   * @return transferDateDATE
+   * datum přenosu [persistentní položka]
+   * @return transferdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum přenosu [persistentní položka]")
-  public DateTime getTransferDateDATE() {
-    return transferDateDATE;
+  @ApiModelProperty(example = "null", value = "datum přenosu [persistentní položka]")
+  public DateTime getTransferdatedate() {
+    return transferdatedate;
   }
 
-  public void setTransferDateDATE(DateTime transferDateDATE) {
-    this.transferDateDATE = transferDateDATE;
+  public void setTransferdatedate(DateTime transferdatedate) {
+    this.transferdatedate = transferdatedate;
   }
 
-  public Plmtransfer createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Plmtransfer createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Přenos vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * přenos vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Přenos vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "přenos vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
   public Plmtransfer description(String description) {
@@ -170,10 +206,10 @@ public class Plmtransfer   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -182,40 +218,40 @@ public class Plmtransfer   {
     this.description = description;
   }
 
-  public Plmtransfer wagePeriodID(String wagePeriodID) {
-    this.wagePeriodID = wagePeriodID;
+  public Plmtransfer wageperiodId(String wageperiodId) {
+    this.wageperiodId = wageperiodId;
     return this;
   }
 
    /**
-   * Mzdové období; ID objektu Mzdové období [persistentní položka]
-   * @return wagePeriodID
+   * mzdové období; id objektu mzdové období [persistentní položka]
+   * @return wageperiodId
   **/
-  @ApiModelProperty(example = "null", value = "Mzdové období; ID objektu Mzdové období [persistentní položka]")
-  public String getWagePeriodID() {
-    return wagePeriodID;
+  @ApiModelProperty(example = "null", value = "mzdové období; id objektu mzdové období [persistentní položka]")
+  public String getWageperiodId() {
+    return wageperiodId;
   }
 
-  public void setWagePeriodID(String wagePeriodID) {
-    this.wagePeriodID = wagePeriodID;
+  public void setWageperiodId(String wageperiodId) {
+    this.wageperiodId = wageperiodId;
   }
 
-  public Plmtransfer wageOperationImportID(String wageOperationImportID) {
-    this.wageOperationImportID = wageOperationImportID;
+  public Plmtransfer wageoperationimportId(String wageoperationimportId) {
+    this.wageoperationimportId = wageoperationimportId;
     return this;
   }
 
    /**
-   * Import do výkonů; ID objektu Import do výkonů [persistentní položka]
-   * @return wageOperationImportID
+   * import do výkonů; id objektu import do výkonů [persistentní položka]
+   * @return wageoperationimportId
   **/
-  @ApiModelProperty(example = "null", value = "Import do výkonů; ID objektu Import do výkonů [persistentní položka]")
-  public String getWageOperationImportID() {
-    return wageOperationImportID;
+  @ApiModelProperty(example = "null", value = "import do výkonů; id objektu import do výkonů [persistentní položka]")
+  public String getWageoperationimportId() {
+    return wageoperationimportId;
   }
 
-  public void setWageOperationImportID(String wageOperationImportID) {
-    this.wageOperationImportID = wageOperationImportID;
+  public void setWageoperationimportId(String wageoperationimportId) {
+    this.wageoperationimportId = wageoperationimportId;
   }
 
 
@@ -228,21 +264,21 @@ public class Plmtransfer   {
       return false;
     }
     Plmtransfer plmtransfer = (Plmtransfer) o;
-    return Objects.equals(this.displayName, plmtransfer.displayName) &&
-        Objects.equals(this.ID, plmtransfer.ID) &&
-        Objects.equals(this.classID, plmtransfer.classID) &&
-        Objects.equals(this.objVersion, plmtransfer.objVersion) &&
+    return Objects.equals(this.displayname, plmtransfer.displayname) &&
+        Objects.equals(this.id, plmtransfer.id) &&
+        Objects.equals(this.classid, plmtransfer.classid) &&
+        Objects.equals(this.objversion, plmtransfer.objversion) &&
         Objects.equals(this.rows, plmtransfer.rows) &&
-        Objects.equals(this.transferDateDATE, plmtransfer.transferDateDATE) &&
-        Objects.equals(this.createdByID, plmtransfer.createdByID) &&
+        Objects.equals(this.transferdatedate, plmtransfer.transferdatedate) &&
+        Objects.equals(this.createdbyId, plmtransfer.createdbyId) &&
         Objects.equals(this.description, plmtransfer.description) &&
-        Objects.equals(this.wagePeriodID, plmtransfer.wagePeriodID) &&
-        Objects.equals(this.wageOperationImportID, plmtransfer.wageOperationImportID);
+        Objects.equals(this.wageperiodId, plmtransfer.wageperiodId) &&
+        Objects.equals(this.wageoperationimportId, plmtransfer.wageoperationimportId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, transferDateDATE, createdByID, description, wagePeriodID, wageOperationImportID);
+    return Objects.hash(displayname, id, classid, objversion, rows, transferdatedate, createdbyId, description, wageperiodId, wageoperationimportId);
   }
 
   @Override
@@ -250,16 +286,16 @@ public class Plmtransfer   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmtransfer {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    transferDateDATE: ").append(toIndentedString(transferDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
+    sb.append("    transferdatedate: ").append(toIndentedString(transferdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    wagePeriodID: ").append(toIndentedString(wagePeriodID)).append("\n");
-    sb.append("    wageOperationImportID: ").append(toIndentedString(wageOperationImportID)).append("\n");
+    sb.append("    wageperiodId: ").append(toIndentedString(wageperiodId)).append("\n");
+    sb.append("    wageoperationimportId: ").append(toIndentedString(wageoperationimportId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

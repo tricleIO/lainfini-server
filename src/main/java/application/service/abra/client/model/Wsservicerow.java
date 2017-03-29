@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,129 +34,174 @@ import java.util.Objects;
 /**
  * Wsservicerow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wsservicerow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Operation_ID")
-  private String operationID = null;
+  @SerializedName("operation_id")
+  private String operationId = null;
 
-  @SerializedName("Operation_SCRDescription")
-  private String operationSCRDescription = null;
+  @SerializedName("operation_scrdescription")
+  private String operationScrdescription = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Webová služba [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Webová služba [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Wsservicerow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Wsservicerow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Wsservicerow operationID(String operationID) {
-    this.operationID = operationID;
+  public Wsservicerow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Operace; ID objektu Operace pro webovou službu [persistentní položka]
-   * @return operationID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Operace; ID objektu Operace pro webovou službu [persistentní položka]")
-  public String getOperationID() {
-    return operationID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setOperationID(String operationID) {
-    this.operationID = operationID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Wsservicerow operationSCRDescription(String operationSCRDescription) {
-    this.operationSCRDescription = operationSCRDescription;
+  public Wsservicerow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Operace - skript
-   * @return operationSCRDescription
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Operace - skript")
-  public String getOperationSCRDescription() {
-    return operationSCRDescription;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setOperationSCRDescription(String operationSCRDescription) {
-    this.operationSCRDescription = operationSCRDescription;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wsservicerow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Wsservicerow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu webová služba [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu webová služba [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Wsservicerow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Wsservicerow operationId(String operationId) {
+    this.operationId = operationId;
+    return this;
+  }
+
+   /**
+   * operace; id objektu operace pro webovou službu [persistentní položka]
+   * @return operationId
+  **/
+  @ApiModelProperty(example = "null", value = "operace; id objektu operace pro webovou službu [persistentní položka]")
+  public String getOperationId() {
+    return operationId;
+  }
+
+  public void setOperationId(String operationId) {
+    this.operationId = operationId;
+  }
+
+  public Wsservicerow operationScrdescription(String operationScrdescription) {
+    this.operationScrdescription = operationScrdescription;
+    return this;
+  }
+
+   /**
+   * operace - skript
+   * @return operationScrdescription
+  **/
+  @ApiModelProperty(example = "null", value = "operace - skript")
+  public String getOperationScrdescription() {
+    return operationScrdescription;
+  }
+
+  public void setOperationScrdescription(String operationScrdescription) {
+    this.operationScrdescription = operationScrdescription;
   }
 
 
@@ -169,19 +214,19 @@ public class Wsservicerow   {
       return false;
     }
     Wsservicerow wsservicerow = (Wsservicerow) o;
-    return Objects.equals(this.displayName, wsservicerow.displayName) &&
-        Objects.equals(this.ID, wsservicerow.ID) &&
-        Objects.equals(this.classID, wsservicerow.classID) &&
-        Objects.equals(this.objVersion, wsservicerow.objVersion) &&
-        Objects.equals(this.parentID, wsservicerow.parentID) &&
-        Objects.equals(this.posIndex, wsservicerow.posIndex) &&
-        Objects.equals(this.operationID, wsservicerow.operationID) &&
-        Objects.equals(this.operationSCRDescription, wsservicerow.operationSCRDescription);
+    return Objects.equals(this.displayname, wsservicerow.displayname) &&
+        Objects.equals(this.id, wsservicerow.id) &&
+        Objects.equals(this.classid, wsservicerow.classid) &&
+        Objects.equals(this.objversion, wsservicerow.objversion) &&
+        Objects.equals(this.parentId, wsservicerow.parentId) &&
+        Objects.equals(this.posindex, wsservicerow.posindex) &&
+        Objects.equals(this.operationId, wsservicerow.operationId) &&
+        Objects.equals(this.operationScrdescription, wsservicerow.operationScrdescription);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, operationID, operationSCRDescription);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, operationId, operationScrdescription);
   }
 
   @Override
@@ -189,14 +234,14 @@ public class Wsservicerow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wsservicerow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    operationID: ").append(toIndentedString(operationID)).append("\n");
-    sb.append("    operationSCRDescription: ").append(toIndentedString(operationSCRDescription)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    operationId: ").append(toIndentedString(operationId)).append("\n");
+    sb.append("    operationScrdescription: ").append(toIndentedString(operationScrdescription)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,183 +35,219 @@ import java.util.Objects;
 /**
  * Dualcurrencysetting
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Dualcurrencysetting   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DateFrom$DATE")
-  private DateTime dateFromDATE = null;
+  @SerializedName("datefrom$date")
+  private DateTime datefromdate = null;
 
-  @SerializedName("DisplayDual")
-  private Boolean displayDual = null;
+  @SerializedName("displaydual")
+  private Boolean displaydual = null;
 
-  @SerializedName("LocalCurrency_ID")
-  private String localCurrencyID = null;
+  @SerializedName("localcurrency_id")
+  private String localcurrencyId = null;
 
-  @SerializedName("DualCurrency_ID")
-  private String dualCurrencyID = null;
+  @SerializedName("dualcurrency_id")
+  private String dualcurrencyId = null;
 
-  @SerializedName("CurrRate")
-  private Double currRate = null;
+  @SerializedName("currrate")
+  private Double currrate = null;
 
-  @SerializedName("RefCurrRate")
-  private Double refCurrRate = null;
+  @SerializedName("refcurrrate")
+  private Double refcurrrate = null;
 
-  @SerializedName("Rounding")
+  @SerializedName("rounding")
   private Integer rounding = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Dualcurrencysetting dateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public Dualcurrencysetting displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Platný od [persistentní položka]
-   * @return dateFromDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Platný od [persistentní položka]")
-  public DateTime getDateFromDATE() {
-    return dateFromDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Dualcurrencysetting displayDual(Boolean displayDual) {
-    this.displayDual = displayDual;
+  public Dualcurrencysetting id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Zobrazovat duálně [persistentní položka]
-   * @return displayDual
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Zobrazovat duálně [persistentní položka]")
-  public Boolean getDisplayDual() {
-    return displayDual;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDisplayDual(Boolean displayDual) {
-    this.displayDual = displayDual;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Dualcurrencysetting localCurrencyID(String localCurrencyID) {
-    this.localCurrencyID = localCurrencyID;
+  public Dualcurrencysetting classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Lokální měna; ID objektu Měna [persistentní položka]
-   * @return localCurrencyID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Lokální měna; ID objektu Měna [persistentní položka]")
-  public String getLocalCurrencyID() {
-    return localCurrencyID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setLocalCurrencyID(String localCurrencyID) {
-    this.localCurrencyID = localCurrencyID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Dualcurrencysetting dualCurrencyID(String dualCurrencyID) {
-    this.dualCurrencyID = dualCurrencyID;
+  public Dualcurrencysetting objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Duální měna; ID objektu Měna [persistentní položka]
-   * @return dualCurrencyID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Duální měna; ID objektu Měna [persistentní položka]")
-  public String getDualCurrencyID() {
-    return dualCurrencyID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setDualCurrencyID(String dualCurrencyID) {
-    this.dualCurrencyID = dualCurrencyID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Dualcurrencysetting currRate(Double currRate) {
-    this.currRate = currRate;
+  public Dualcurrencysetting datefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
     return this;
   }
 
    /**
-   * Fixní kurz [persistentní položka]
-   * @return currRate
+   * platný od [persistentní položka]
+   * @return datefromdate
   **/
-  @ApiModelProperty(example = "null", value = "Fixní kurz [persistentní položka]")
-  public Double getCurrRate() {
-    return currRate;
+  @ApiModelProperty(example = "null", value = "platný od [persistentní položka]")
+  public DateTime getDatefromdate() {
+    return datefromdate;
   }
 
-  public void setCurrRate(Double currRate) {
-    this.currRate = currRate;
+  public void setDatefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
   }
 
-  public Dualcurrencysetting refCurrRate(Double refCurrRate) {
-    this.refCurrRate = refCurrRate;
+  public Dualcurrencysetting displaydual(Boolean displaydual) {
+    this.displaydual = displaydual;
     return this;
   }
 
    /**
-   * Vztažný kurz [persistentní položka]
-   * @return refCurrRate
+   * zobrazovat duálně [persistentní položka]
+   * @return displaydual
   **/
-  @ApiModelProperty(example = "null", value = "Vztažný kurz [persistentní položka]")
-  public Double getRefCurrRate() {
-    return refCurrRate;
+  @ApiModelProperty(example = "null", value = "zobrazovat duálně [persistentní položka]")
+  public Boolean getDisplaydual() {
+    return displaydual;
   }
 
-  public void setRefCurrRate(Double refCurrRate) {
-    this.refCurrRate = refCurrRate;
+  public void setDisplaydual(Boolean displaydual) {
+    this.displaydual = displaydual;
+  }
+
+  public Dualcurrencysetting localcurrencyId(String localcurrencyId) {
+    this.localcurrencyId = localcurrencyId;
+    return this;
+  }
+
+   /**
+   * lokální měna; id objektu měna [persistentní položka]
+   * @return localcurrencyId
+  **/
+  @ApiModelProperty(example = "null", value = "lokální měna; id objektu měna [persistentní položka]")
+  public String getLocalcurrencyId() {
+    return localcurrencyId;
+  }
+
+  public void setLocalcurrencyId(String localcurrencyId) {
+    this.localcurrencyId = localcurrencyId;
+  }
+
+  public Dualcurrencysetting dualcurrencyId(String dualcurrencyId) {
+    this.dualcurrencyId = dualcurrencyId;
+    return this;
+  }
+
+   /**
+   * duální měna; id objektu měna [persistentní položka]
+   * @return dualcurrencyId
+  **/
+  @ApiModelProperty(example = "null", value = "duální měna; id objektu měna [persistentní položka]")
+  public String getDualcurrencyId() {
+    return dualcurrencyId;
+  }
+
+  public void setDualcurrencyId(String dualcurrencyId) {
+    this.dualcurrencyId = dualcurrencyId;
+  }
+
+  public Dualcurrencysetting currrate(Double currrate) {
+    this.currrate = currrate;
+    return this;
+  }
+
+   /**
+   * fixní kurz [persistentní položka]
+   * @return currrate
+  **/
+  @ApiModelProperty(example = "null", value = "fixní kurz [persistentní položka]")
+  public Double getCurrrate() {
+    return currrate;
+  }
+
+  public void setCurrrate(Double currrate) {
+    this.currrate = currrate;
+  }
+
+  public Dualcurrencysetting refcurrrate(Double refcurrrate) {
+    this.refcurrrate = refcurrrate;
+    return this;
+  }
+
+   /**
+   * vztažný kurz [persistentní položka]
+   * @return refcurrrate
+  **/
+  @ApiModelProperty(example = "null", value = "vztažný kurz [persistentní položka]")
+  public Double getRefcurrrate() {
+    return refcurrrate;
+  }
+
+  public void setRefcurrrate(Double refcurrrate) {
+    this.refcurrrate = refcurrrate;
   }
 
   public Dualcurrencysetting rounding(Integer rounding) {
@@ -220,10 +256,10 @@ public class Dualcurrencysetting   {
   }
 
    /**
-   * Zaokrouhlení [persistentní položka]
+   * zaokrouhlení [persistentní položka]
    * @return rounding
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlení [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "zaokrouhlení [persistentní položka]")
   public Integer getRounding() {
     return rounding;
   }
@@ -242,22 +278,22 @@ public class Dualcurrencysetting   {
       return false;
     }
     Dualcurrencysetting dualcurrencysetting = (Dualcurrencysetting) o;
-    return Objects.equals(this.displayName, dualcurrencysetting.displayName) &&
-        Objects.equals(this.ID, dualcurrencysetting.ID) &&
-        Objects.equals(this.classID, dualcurrencysetting.classID) &&
-        Objects.equals(this.objVersion, dualcurrencysetting.objVersion) &&
-        Objects.equals(this.dateFromDATE, dualcurrencysetting.dateFromDATE) &&
-        Objects.equals(this.displayDual, dualcurrencysetting.displayDual) &&
-        Objects.equals(this.localCurrencyID, dualcurrencysetting.localCurrencyID) &&
-        Objects.equals(this.dualCurrencyID, dualcurrencysetting.dualCurrencyID) &&
-        Objects.equals(this.currRate, dualcurrencysetting.currRate) &&
-        Objects.equals(this.refCurrRate, dualcurrencysetting.refCurrRate) &&
+    return Objects.equals(this.displayname, dualcurrencysetting.displayname) &&
+        Objects.equals(this.id, dualcurrencysetting.id) &&
+        Objects.equals(this.classid, dualcurrencysetting.classid) &&
+        Objects.equals(this.objversion, dualcurrencysetting.objversion) &&
+        Objects.equals(this.datefromdate, dualcurrencysetting.datefromdate) &&
+        Objects.equals(this.displaydual, dualcurrencysetting.displaydual) &&
+        Objects.equals(this.localcurrencyId, dualcurrencysetting.localcurrencyId) &&
+        Objects.equals(this.dualcurrencyId, dualcurrencysetting.dualcurrencyId) &&
+        Objects.equals(this.currrate, dualcurrencysetting.currrate) &&
+        Objects.equals(this.refcurrrate, dualcurrencysetting.refcurrrate) &&
         Objects.equals(this.rounding, dualcurrencysetting.rounding);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, dateFromDATE, displayDual, localCurrencyID, dualCurrencyID, currRate, refCurrRate, rounding);
+    return Objects.hash(displayname, id, classid, objversion, datefromdate, displaydual, localcurrencyId, dualcurrencyId, currrate, refcurrrate, rounding);
   }
 
   @Override
@@ -265,16 +301,16 @@ public class Dualcurrencysetting   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Dualcurrencysetting {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    dateFromDATE: ").append(toIndentedString(dateFromDATE)).append("\n");
-    sb.append("    displayDual: ").append(toIndentedString(displayDual)).append("\n");
-    sb.append("    localCurrencyID: ").append(toIndentedString(localCurrencyID)).append("\n");
-    sb.append("    dualCurrencyID: ").append(toIndentedString(dualCurrencyID)).append("\n");
-    sb.append("    currRate: ").append(toIndentedString(currRate)).append("\n");
-    sb.append("    refCurrRate: ").append(toIndentedString(refCurrRate)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    datefromdate: ").append(toIndentedString(datefromdate)).append("\n");
+    sb.append("    displaydual: ").append(toIndentedString(displaydual)).append("\n");
+    sb.append("    localcurrencyId: ").append(toIndentedString(localcurrencyId)).append("\n");
+    sb.append("    dualcurrencyId: ").append(toIndentedString(dualcurrencyId)).append("\n");
+    sb.append("    currrate: ").append(toIndentedString(currrate)).append("\n");
+    sb.append("    refcurrrate: ").append(toIndentedString(refcurrrate)).append("\n");
     sb.append("    rounding: ").append(toIndentedString(rounding)).append("\n");
     sb.append("}");
     return sb.toString();

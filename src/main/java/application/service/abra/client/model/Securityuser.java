@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,96 +34,132 @@ import java.util.Objects;
 /**
  * Securityuser
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Securityuser   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ShortName")
-  private String shortName = null;
+  @SerializedName("shortname")
+  private String shortname = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Comment")
+  @SerializedName("comment")
   private String comment = null;
 
-  @SerializedName("Address_ID")
-  private Securityuser addressID = null;
+  @SerializedName("address_id")
+  private Securityuser addressId = null;
 
-  @SerializedName("LoginName")
-  private String loginName = null;
+  @SerializedName("loginname")
+  private String loginname = null;
 
-  @SerializedName("Locked")
+  @SerializedName("locked")
   private Boolean locked = null;
 
-  @SerializedName("SecPassword")
-  private String secPassword = null;
+  @SerializedName("secpassword")
+  private String secpassword = null;
 
-  @SerializedName("IsActive")
-  private Boolean isActive = null;
+  @SerializedName("isactive")
+  private Boolean isactive = null;
 
-  @SerializedName("LogonPassword")
-  private String logonPassword = null;
+  @SerializedName("logonpassword")
+  private String logonpassword = null;
 
-  @SerializedName("PortalLoginName")
-  private String portalLoginName = null;
+  @SerializedName("portalloginname")
+  private String portalloginname = null;
 
-  @SerializedName("PortalSecPassword")
-  private String portalSecPassword = null;
+  @SerializedName("portalsecpassword")
+  private String portalsecpassword = null;
 
-  @SerializedName("OfferToLogin")
-  private Boolean offerToLogin = null;
+  @SerializedName("offertologin")
+  private Boolean offertologin = null;
 
-  @SerializedName("WebAPIAccess")
-  private Boolean webAPIAccess = null;
+  @SerializedName("webapiaccess")
+  private Boolean webapiaccess = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Securityuser displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Securityuser id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Securityuser classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Securityuser objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Securityuser name(String name) {
@@ -132,10 +168,10 @@ public class Securityuser   {
   }
 
    /**
-   * Jméno [persistentní položka]
+   * jméno [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Jméno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "jméno [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -144,22 +180,22 @@ public class Securityuser   {
     this.name = name;
   }
 
-  public Securityuser shortName(String shortName) {
-    this.shortName = shortName;
+  public Securityuser shortname(String shortname) {
+    this.shortname = shortname;
     return this;
   }
 
    /**
-   * Zkratka [persistentní položka]
-   * @return shortName
+   * zkratka [persistentní položka]
+   * @return shortname
   **/
-  @ApiModelProperty(example = "null", value = "Zkratka [persistentní položka]")
-  public String getShortName() {
-    return shortName;
+  @ApiModelProperty(example = "null", value = "zkratka [persistentní položka]")
+  public String getShortname() {
+    return shortname;
   }
 
-  public void setShortName(String shortName) {
-    this.shortName = shortName;
+  public void setShortname(String shortname) {
+    this.shortname = shortname;
   }
 
   public Securityuser note(String note) {
@@ -168,10 +204,10 @@ public class Securityuser   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -186,10 +222,10 @@ public class Securityuser   {
   }
 
    /**
-   * Poznámka
+   * poznámka
    * @return comment
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka")
+  @ApiModelProperty(example = "null", value = "poznámka")
   public String getComment() {
     return comment;
   }
@@ -198,40 +234,40 @@ public class Securityuser   {
     this.comment = comment;
   }
 
-  public Securityuser addressID(Securityuser addressID) {
-    this.addressID = addressID;
+  public Securityuser addressId(Securityuser addressId) {
+    this.addressId = addressId;
     return this;
   }
 
    /**
-   * Get addressID
-   * @return addressID
+   * Get addressId
+   * @return addressId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Securityuser getAddressID() {
-    return addressID;
+  public Securityuser getAddressId() {
+    return addressId;
   }
 
-  public void setAddressID(Securityuser addressID) {
-    this.addressID = addressID;
+  public void setAddressId(Securityuser addressId) {
+    this.addressId = addressId;
   }
 
-  public Securityuser loginName(String loginName) {
-    this.loginName = loginName;
+  public Securityuser loginname(String loginname) {
+    this.loginname = loginname;
     return this;
   }
 
    /**
-   * Přihlašovací jméno [persistentní položka]
-   * @return loginName
+   * přihlašovací jméno [persistentní položka]
+   * @return loginname
   **/
-  @ApiModelProperty(example = "null", value = "Přihlašovací jméno [persistentní položka]")
-  public String getLoginName() {
-    return loginName;
+  @ApiModelProperty(example = "null", value = "přihlašovací jméno [persistentní položka]")
+  public String getLoginname() {
+    return loginname;
   }
 
-  public void setLoginName(String loginName) {
-    this.loginName = loginName;
+  public void setLoginname(String loginname) {
+    this.loginname = loginname;
   }
 
   public Securityuser locked(Boolean locked) {
@@ -240,10 +276,10 @@ public class Securityuser   {
   }
 
    /**
-   * Uzamčen [persistentní položka]
+   * uzamčen [persistentní položka]
    * @return locked
   **/
-  @ApiModelProperty(example = "null", value = "Uzamčen [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "uzamčen [persistentní položka]")
   public Boolean getLocked() {
     return locked;
   }
@@ -252,130 +288,130 @@ public class Securityuser   {
     this.locked = locked;
   }
 
-  public Securityuser secPassword(String secPassword) {
-    this.secPassword = secPassword;
+  public Securityuser secpassword(String secpassword) {
+    this.secpassword = secpassword;
     return this;
   }
 
    /**
-   * Heslo [persistentní položka]
-   * @return secPassword
+   * heslo [persistentní položka]
+   * @return secpassword
   **/
-  @ApiModelProperty(example = "null", value = "Heslo [persistentní položka]")
-  public String getSecPassword() {
-    return secPassword;
+  @ApiModelProperty(example = "null", value = "heslo [persistentní položka]")
+  public String getSecpassword() {
+    return secpassword;
   }
 
-  public void setSecPassword(String secPassword) {
-    this.secPassword = secPassword;
+  public void setSecpassword(String secpassword) {
+    this.secpassword = secpassword;
   }
 
-  public Securityuser isActive(Boolean isActive) {
-    this.isActive = isActive;
+  public Securityuser isactive(Boolean isactive) {
+    this.isactive = isactive;
     return this;
   }
 
    /**
-   * Aktivní
-   * @return isActive
+   * aktivní
+   * @return isactive
   **/
-  @ApiModelProperty(example = "null", value = "Aktivní")
-  public Boolean getIsActive() {
-    return isActive;
+  @ApiModelProperty(example = "null", value = "aktivní")
+  public Boolean getIsactive() {
+    return isactive;
   }
 
-  public void setIsActive(Boolean isActive) {
-    this.isActive = isActive;
+  public void setIsactive(Boolean isactive) {
+    this.isactive = isactive;
   }
 
-  public Securityuser logonPassword(String logonPassword) {
-    this.logonPassword = logonPassword;
+  public Securityuser logonpassword(String logonpassword) {
+    this.logonpassword = logonpassword;
     return this;
   }
 
    /**
-   * Heslo
-   * @return logonPassword
+   * heslo
+   * @return logonpassword
   **/
-  @ApiModelProperty(example = "null", value = "Heslo")
-  public String getLogonPassword() {
-    return logonPassword;
+  @ApiModelProperty(example = "null", value = "heslo")
+  public String getLogonpassword() {
+    return logonpassword;
   }
 
-  public void setLogonPassword(String logonPassword) {
-    this.logonPassword = logonPassword;
+  public void setLogonpassword(String logonpassword) {
+    this.logonpassword = logonpassword;
   }
 
-  public Securityuser portalLoginName(String portalLoginName) {
-    this.portalLoginName = portalLoginName;
+  public Securityuser portalloginname(String portalloginname) {
+    this.portalloginname = portalloginname;
     return this;
   }
 
    /**
-   * Přihlašovací jméno  [persistentní položka]
-   * @return portalLoginName
+   * přihlašovací jméno  [persistentní položka]
+   * @return portalloginname
   **/
-  @ApiModelProperty(example = "null", value = "Přihlašovací jméno  [persistentní položka]")
-  public String getPortalLoginName() {
-    return portalLoginName;
+  @ApiModelProperty(example = "null", value = "přihlašovací jméno  [persistentní položka]")
+  public String getPortalloginname() {
+    return portalloginname;
   }
 
-  public void setPortalLoginName(String portalLoginName) {
-    this.portalLoginName = portalLoginName;
+  public void setPortalloginname(String portalloginname) {
+    this.portalloginname = portalloginname;
   }
 
-  public Securityuser portalSecPassword(String portalSecPassword) {
-    this.portalSecPassword = portalSecPassword;
+  public Securityuser portalsecpassword(String portalsecpassword) {
+    this.portalsecpassword = portalsecpassword;
     return this;
   }
 
    /**
-   * Heslo [persistentní položka]
-   * @return portalSecPassword
+   * heslo [persistentní položka]
+   * @return portalsecpassword
   **/
-  @ApiModelProperty(example = "null", value = "Heslo [persistentní položka]")
-  public String getPortalSecPassword() {
-    return portalSecPassword;
+  @ApiModelProperty(example = "null", value = "heslo [persistentní položka]")
+  public String getPortalsecpassword() {
+    return portalsecpassword;
   }
 
-  public void setPortalSecPassword(String portalSecPassword) {
-    this.portalSecPassword = portalSecPassword;
+  public void setPortalsecpassword(String portalsecpassword) {
+    this.portalsecpassword = portalsecpassword;
   }
 
-  public Securityuser offerToLogin(Boolean offerToLogin) {
-    this.offerToLogin = offerToLogin;
+  public Securityuser offertologin(Boolean offertologin) {
+    this.offertologin = offertologin;
     return this;
   }
 
    /**
-   * Nabízet v přihlašovacím okně [persistentní položka]
-   * @return offerToLogin
+   * nabízet v přihlašovacím okně [persistentní položka]
+   * @return offertologin
   **/
-  @ApiModelProperty(example = "null", value = "Nabízet v přihlašovacím okně [persistentní položka]")
-  public Boolean getOfferToLogin() {
-    return offerToLogin;
+  @ApiModelProperty(example = "null", value = "nabízet v přihlašovacím okně [persistentní položka]")
+  public Boolean getOffertologin() {
+    return offertologin;
   }
 
-  public void setOfferToLogin(Boolean offerToLogin) {
-    this.offerToLogin = offerToLogin;
+  public void setOffertologin(Boolean offertologin) {
+    this.offertologin = offertologin;
   }
 
-  public Securityuser webAPIAccess(Boolean webAPIAccess) {
-    this.webAPIAccess = webAPIAccess;
+  public Securityuser webapiaccess(Boolean webapiaccess) {
+    this.webapiaccess = webapiaccess;
     return this;
   }
 
    /**
-   * Přihlášení nevizuálního uživatele API [persistentní položka]
-   * @return webAPIAccess
+   * přihlášení nevizuálního uživatele api [persistentní položka]
+   * @return webapiaccess
   **/
-  @ApiModelProperty(example = "null", value = "Přihlášení nevizuálního uživatele API [persistentní položka]")
-  public Boolean getWebAPIAccess() {
-    return webAPIAccess;
+  @ApiModelProperty(example = "null", value = "přihlášení nevizuálního uživatele api [persistentní položka]")
+  public Boolean getWebapiaccess() {
+    return webapiaccess;
   }
 
-  public void setWebAPIAccess(Boolean webAPIAccess) {
-    this.webAPIAccess = webAPIAccess;
+  public void setWebapiaccess(Boolean webapiaccess) {
+    this.webapiaccess = webapiaccess;
   }
 
 
@@ -388,29 +424,29 @@ public class Securityuser   {
       return false;
     }
     Securityuser securityuser = (Securityuser) o;
-    return Objects.equals(this.displayName, securityuser.displayName) &&
-        Objects.equals(this.ID, securityuser.ID) &&
-        Objects.equals(this.classID, securityuser.classID) &&
-        Objects.equals(this.objVersion, securityuser.objVersion) &&
+    return Objects.equals(this.displayname, securityuser.displayname) &&
+        Objects.equals(this.id, securityuser.id) &&
+        Objects.equals(this.classid, securityuser.classid) &&
+        Objects.equals(this.objversion, securityuser.objversion) &&
         Objects.equals(this.name, securityuser.name) &&
-        Objects.equals(this.shortName, securityuser.shortName) &&
+        Objects.equals(this.shortname, securityuser.shortname) &&
         Objects.equals(this.note, securityuser.note) &&
         Objects.equals(this.comment, securityuser.comment) &&
-        Objects.equals(this.addressID, securityuser.addressID) &&
-        Objects.equals(this.loginName, securityuser.loginName) &&
+        Objects.equals(this.addressId, securityuser.addressId) &&
+        Objects.equals(this.loginname, securityuser.loginname) &&
         Objects.equals(this.locked, securityuser.locked) &&
-        Objects.equals(this.secPassword, securityuser.secPassword) &&
-        Objects.equals(this.isActive, securityuser.isActive) &&
-        Objects.equals(this.logonPassword, securityuser.logonPassword) &&
-        Objects.equals(this.portalLoginName, securityuser.portalLoginName) &&
-        Objects.equals(this.portalSecPassword, securityuser.portalSecPassword) &&
-        Objects.equals(this.offerToLogin, securityuser.offerToLogin) &&
-        Objects.equals(this.webAPIAccess, securityuser.webAPIAccess);
+        Objects.equals(this.secpassword, securityuser.secpassword) &&
+        Objects.equals(this.isactive, securityuser.isactive) &&
+        Objects.equals(this.logonpassword, securityuser.logonpassword) &&
+        Objects.equals(this.portalloginname, securityuser.portalloginname) &&
+        Objects.equals(this.portalsecpassword, securityuser.portalsecpassword) &&
+        Objects.equals(this.offertologin, securityuser.offertologin) &&
+        Objects.equals(this.webapiaccess, securityuser.webapiaccess);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, name, shortName, note, comment, addressID, loginName, locked, secPassword, isActive, logonPassword, portalLoginName, portalSecPassword, offerToLogin, webAPIAccess);
+    return Objects.hash(displayname, id, classid, objversion, name, shortname, note, comment, addressId, loginname, locked, secpassword, isactive, logonpassword, portalloginname, portalsecpassword, offertologin, webapiaccess);
   }
 
   @Override
@@ -418,24 +454,24 @@ public class Securityuser   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Securityuser {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    shortName: ").append(toIndentedString(shortName)).append("\n");
+    sb.append("    shortname: ").append(toIndentedString(shortname)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
     sb.append("    comment: ").append(toIndentedString(comment)).append("\n");
-    sb.append("    addressID: ").append(toIndentedString(addressID)).append("\n");
-    sb.append("    loginName: ").append(toIndentedString(loginName)).append("\n");
+    sb.append("    addressId: ").append(toIndentedString(addressId)).append("\n");
+    sb.append("    loginname: ").append(toIndentedString(loginname)).append("\n");
     sb.append("    locked: ").append(toIndentedString(locked)).append("\n");
-    sb.append("    secPassword: ").append(toIndentedString(secPassword)).append("\n");
-    sb.append("    isActive: ").append(toIndentedString(isActive)).append("\n");
-    sb.append("    logonPassword: ").append(toIndentedString(logonPassword)).append("\n");
-    sb.append("    portalLoginName: ").append(toIndentedString(portalLoginName)).append("\n");
-    sb.append("    portalSecPassword: ").append(toIndentedString(portalSecPassword)).append("\n");
-    sb.append("    offerToLogin: ").append(toIndentedString(offerToLogin)).append("\n");
-    sb.append("    webAPIAccess: ").append(toIndentedString(webAPIAccess)).append("\n");
+    sb.append("    secpassword: ").append(toIndentedString(secpassword)).append("\n");
+    sb.append("    isactive: ").append(toIndentedString(isactive)).append("\n");
+    sb.append("    logonpassword: ").append(toIndentedString(logonpassword)).append("\n");
+    sb.append("    portalloginname: ").append(toIndentedString(portalloginname)).append("\n");
+    sb.append("    portalsecpassword: ").append(toIndentedString(portalsecpassword)).append("\n");
+    sb.append("    offertologin: ").append(toIndentedString(offertologin)).append("\n");
+    sb.append("    webapiaccess: ").append(toIndentedString(webapiaccess)).append("\n");
     sb.append("}");
     return sb.toString();
   }

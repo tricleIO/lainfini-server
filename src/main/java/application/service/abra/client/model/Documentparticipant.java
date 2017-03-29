@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,117 +35,194 @@ import java.util.Objects;
 /**
  * Documentparticipant
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Documentparticipant   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Revided_ID")
-  private String revidedID = null;
+  @SerializedName("revided_id")
+  private String revidedId = null;
 
-  @SerializedName("RevisionDescription")
-  private String revisionDescription = null;
+  @SerializedName("revisiondescription")
+  private String revisiondescription = null;
 
-  @SerializedName("RevisionDate$DATE")
-  private DateTime revisionDateDATE = null;
+  @SerializedName("revisiondate$date")
+  private DateTime revisiondatedate = null;
 
-  @SerializedName("RevisionAuthor_ID")
-  private String revisionAuthorID = null;
+  @SerializedName("revisionauthor_id")
+  private String revisionauthorId = null;
 
-  @SerializedName("Revision")
+  @SerializedName("revision")
   private Integer revision = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("SecurityRole_ID")
-  private String securityRoleID = null;
+  @SerializedName("securityrole_id")
+  private String securityroleId = null;
 
-  @SerializedName("SecurityUser_ID")
-  private String securityUserID = null;
+  @SerializedName("securityuser_id")
+  private String securityuserId = null;
 
-  @SerializedName("DocumentCompetence")
-  private Integer documentCompetence = null;
+  @SerializedName("documentcompetence")
+  private Integer documentcompetence = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Documentparticipant displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Documentparticipant id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Documentparticipant classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Documentparticipant objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * ID revidovaného objektu; ID objektu Účastník dokumentu
-   * @return revidedID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "ID revidovaného objektu; ID objektu Účastník dokumentu")
-  public String getRevidedID() {
-    return revidedID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Documentparticipant revidedId(String revidedId) {
+    this.revidedId = revidedId;
+    return this;
   }
 
    /**
-   * Popis revize
-   * @return revisionDescription
+   * id revidovaného objektu; id objektu Účastník dokumentu
+   * @return revidedId
   **/
-  @ApiModelProperty(example = "null", value = "Popis revize")
-  public String getRevisionDescription() {
-    return revisionDescription;
+  @ApiModelProperty(example = "null", value = "id revidovaného objektu; id objektu Účastník dokumentu")
+  public String getRevidedId() {
+    return revidedId;
+  }
+
+  public void setRevidedId(String revidedId) {
+    this.revidedId = revidedId;
+  }
+
+  public Documentparticipant revisiondescription(String revisiondescription) {
+    this.revisiondescription = revisiondescription;
+    return this;
   }
 
    /**
-   * Datum revize
-   * @return revisionDateDATE
+   * popis revize
+   * @return revisiondescription
   **/
-  @ApiModelProperty(example = "null", value = "Datum revize")
-  public DateTime getRevisionDateDATE() {
-    return revisionDateDATE;
+  @ApiModelProperty(example = "null", value = "popis revize")
+  public String getRevisiondescription() {
+    return revisiondescription;
+  }
+
+  public void setRevisiondescription(String revisiondescription) {
+    this.revisiondescription = revisiondescription;
+  }
+
+  public Documentparticipant revisiondatedate(DateTime revisiondatedate) {
+    this.revisiondatedate = revisiondatedate;
+    return this;
   }
 
    /**
-   * Autor revize; ID objektu Uživatel
-   * @return revisionAuthorID
+   * datum revize
+   * @return revisiondatedate
   **/
-  @ApiModelProperty(example = "null", value = "Autor revize; ID objektu Uživatel")
-  public String getRevisionAuthorID() {
-    return revisionAuthorID;
+  @ApiModelProperty(example = "null", value = "datum revize")
+  public DateTime getRevisiondatedate() {
+    return revisiondatedate;
+  }
+
+  public void setRevisiondatedate(DateTime revisiondatedate) {
+    this.revisiondatedate = revisiondatedate;
+  }
+
+  public Documentparticipant revisionauthorId(String revisionauthorId) {
+    this.revisionauthorId = revisionauthorId;
+    return this;
+  }
+
+   /**
+   * autor revize; id objektu uživatel
+   * @return revisionauthorId
+  **/
+  @ApiModelProperty(example = "null", value = "autor revize; id objektu uživatel")
+  public String getRevisionauthorId() {
+    return revisionauthorId;
+  }
+
+  public void setRevisionauthorId(String revisionauthorId) {
+    this.revisionauthorId = revisionauthorId;
+  }
+
+  public Documentparticipant revision(Integer revision) {
+    this.revision = revision;
+    return this;
   }
 
    /**
@@ -157,67 +234,80 @@ public class Documentparticipant   {
     return revision;
   }
 
-   /**
-   * Vlastník; ID objektu Dokument [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Dokument [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  public void setRevision(Integer revision) {
+    this.revision = revision;
   }
 
-  public Documentparticipant securityRoleID(String securityRoleID) {
-    this.securityRoleID = securityRoleID;
+  public Documentparticipant parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Role; ID objektu Role [persistentní položka]
-   * @return securityRoleID
+   * vlastník; id objektu dokument [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Role; ID objektu Role [persistentní položka]")
-  public String getSecurityRoleID() {
-    return securityRoleID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu dokument [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setSecurityRoleID(String securityRoleID) {
-    this.securityRoleID = securityRoleID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Documentparticipant securityUserID(String securityUserID) {
-    this.securityUserID = securityUserID;
+  public Documentparticipant securityroleId(String securityroleId) {
+    this.securityroleId = securityroleId;
     return this;
   }
 
    /**
-   * Uživatel; ID objektu Uživatel [persistentní položka]
-   * @return securityUserID
+   * role; id objektu role [persistentní položka]
+   * @return securityroleId
   **/
-  @ApiModelProperty(example = "null", value = "Uživatel; ID objektu Uživatel [persistentní položka]")
-  public String getSecurityUserID() {
-    return securityUserID;
+  @ApiModelProperty(example = "null", value = "role; id objektu role [persistentní položka]")
+  public String getSecurityroleId() {
+    return securityroleId;
   }
 
-  public void setSecurityUserID(String securityUserID) {
-    this.securityUserID = securityUserID;
+  public void setSecurityroleId(String securityroleId) {
+    this.securityroleId = securityroleId;
   }
 
-  public Documentparticipant documentCompetence(Integer documentCompetence) {
-    this.documentCompetence = documentCompetence;
+  public Documentparticipant securityuserId(String securityuserId) {
+    this.securityuserId = securityuserId;
     return this;
   }
 
    /**
-   * Oprávnění [persistentní položka]
-   * @return documentCompetence
+   * uživatel; id objektu uživatel [persistentní položka]
+   * @return securityuserId
   **/
-  @ApiModelProperty(example = "null", value = "Oprávnění [persistentní položka]")
-  public Integer getDocumentCompetence() {
-    return documentCompetence;
+  @ApiModelProperty(example = "null", value = "uživatel; id objektu uživatel [persistentní položka]")
+  public String getSecurityuserId() {
+    return securityuserId;
   }
 
-  public void setDocumentCompetence(Integer documentCompetence) {
-    this.documentCompetence = documentCompetence;
+  public void setSecurityuserId(String securityuserId) {
+    this.securityuserId = securityuserId;
+  }
+
+  public Documentparticipant documentcompetence(Integer documentcompetence) {
+    this.documentcompetence = documentcompetence;
+    return this;
+  }
+
+   /**
+   * oprávnění [persistentní položka]
+   * @return documentcompetence
+  **/
+  @ApiModelProperty(example = "null", value = "oprávnění [persistentní položka]")
+  public Integer getDocumentcompetence() {
+    return documentcompetence;
+  }
+
+  public void setDocumentcompetence(Integer documentcompetence) {
+    this.documentcompetence = documentcompetence;
   }
 
 
@@ -230,24 +320,24 @@ public class Documentparticipant   {
       return false;
     }
     Documentparticipant documentparticipant = (Documentparticipant) o;
-    return Objects.equals(this.displayName, documentparticipant.displayName) &&
-        Objects.equals(this.ID, documentparticipant.ID) &&
-        Objects.equals(this.classID, documentparticipant.classID) &&
-        Objects.equals(this.objVersion, documentparticipant.objVersion) &&
-        Objects.equals(this.revidedID, documentparticipant.revidedID) &&
-        Objects.equals(this.revisionDescription, documentparticipant.revisionDescription) &&
-        Objects.equals(this.revisionDateDATE, documentparticipant.revisionDateDATE) &&
-        Objects.equals(this.revisionAuthorID, documentparticipant.revisionAuthorID) &&
+    return Objects.equals(this.displayname, documentparticipant.displayname) &&
+        Objects.equals(this.id, documentparticipant.id) &&
+        Objects.equals(this.classid, documentparticipant.classid) &&
+        Objects.equals(this.objversion, documentparticipant.objversion) &&
+        Objects.equals(this.revidedId, documentparticipant.revidedId) &&
+        Objects.equals(this.revisiondescription, documentparticipant.revisiondescription) &&
+        Objects.equals(this.revisiondatedate, documentparticipant.revisiondatedate) &&
+        Objects.equals(this.revisionauthorId, documentparticipant.revisionauthorId) &&
         Objects.equals(this.revision, documentparticipant.revision) &&
-        Objects.equals(this.parentID, documentparticipant.parentID) &&
-        Objects.equals(this.securityRoleID, documentparticipant.securityRoleID) &&
-        Objects.equals(this.securityUserID, documentparticipant.securityUserID) &&
-        Objects.equals(this.documentCompetence, documentparticipant.documentCompetence);
+        Objects.equals(this.parentId, documentparticipant.parentId) &&
+        Objects.equals(this.securityroleId, documentparticipant.securityroleId) &&
+        Objects.equals(this.securityuserId, documentparticipant.securityuserId) &&
+        Objects.equals(this.documentcompetence, documentparticipant.documentcompetence);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, revidedID, revisionDescription, revisionDateDATE, revisionAuthorID, revision, parentID, securityRoleID, securityUserID, documentCompetence);
+    return Objects.hash(displayname, id, classid, objversion, revidedId, revisiondescription, revisiondatedate, revisionauthorId, revision, parentId, securityroleId, securityuserId, documentcompetence);
   }
 
   @Override
@@ -255,19 +345,19 @@ public class Documentparticipant   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Documentparticipant {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    revidedID: ").append(toIndentedString(revidedID)).append("\n");
-    sb.append("    revisionDescription: ").append(toIndentedString(revisionDescription)).append("\n");
-    sb.append("    revisionDateDATE: ").append(toIndentedString(revisionDateDATE)).append("\n");
-    sb.append("    revisionAuthorID: ").append(toIndentedString(revisionAuthorID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    revidedId: ").append(toIndentedString(revidedId)).append("\n");
+    sb.append("    revisiondescription: ").append(toIndentedString(revisiondescription)).append("\n");
+    sb.append("    revisiondatedate: ").append(toIndentedString(revisiondatedate)).append("\n");
+    sb.append("    revisionauthorId: ").append(toIndentedString(revisionauthorId)).append("\n");
     sb.append("    revision: ").append(toIndentedString(revision)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    securityRoleID: ").append(toIndentedString(securityRoleID)).append("\n");
-    sb.append("    securityUserID: ").append(toIndentedString(securityUserID)).append("\n");
-    sb.append("    documentCompetence: ").append(toIndentedString(documentCompetence)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    securityroleId: ").append(toIndentedString(securityroleId)).append("\n");
+    sb.append("    securityuserId: ").append(toIndentedString(securityuserId)).append("\n");
+    sb.append("    documentcompetence: ").append(toIndentedString(documentcompetence)).append("\n");
     sb.append("}");
     return sb.toString();
   }

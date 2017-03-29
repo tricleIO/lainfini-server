@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,78 +34,114 @@ import java.util.Objects;
 /**
  * Rollobjectgroup
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Rollobjectgroup   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("User_ID")
-  private String userID = null;
+  @SerializedName("user_id")
+  private String userId = null;
 
-  @SerializedName("Roll_CLSID")
-  private String rollCLSID = null;
+  @SerializedName("roll_clsid")
+  private String rollClsid = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Color")
+  @SerializedName("color")
   private Integer color = null;
 
-  @SerializedName("DSQLValues")
-  private byte[] dSQLValues = null;
+  @SerializedName("dsqlvalues")
+  private byte[] dsqlvalues = null;
 
-  @SerializedName("DSQLValuesDisplayText")
-  private String dSQLValuesDisplayText = null;
+  @SerializedName("dsqlvaluesdisplaytext")
+  private String dsqlvaluesdisplaytext = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Rollobjectgroup displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Rollobjectgroup id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Rollobjectgroup classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Rollobjectgroup objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Rollobjectgroup hidden(Boolean hidden) {
@@ -114,10 +150,10 @@ public class Rollobjectgroup   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -126,40 +162,40 @@ public class Rollobjectgroup   {
     this.hidden = hidden;
   }
 
-  public Rollobjectgroup userID(String userID) {
-    this.userID = userID;
+  public Rollobjectgroup userId(String userId) {
+    this.userId = userId;
     return this;
   }
 
    /**
-   * Uživatel; ID objektu Uživatel [persistentní položka]
-   * @return userID
+   * uživatel; id objektu uživatel [persistentní položka]
+   * @return userId
   **/
-  @ApiModelProperty(example = "null", value = "Uživatel; ID objektu Uživatel [persistentní položka]")
-  public String getUserID() {
-    return userID;
+  @ApiModelProperty(example = "null", value = "uživatel; id objektu uživatel [persistentní položka]")
+  public String getUserId() {
+    return userId;
   }
 
-  public void setUserID(String userID) {
-    this.userID = userID;
+  public void setUserId(String userId) {
+    this.userId = userId;
   }
 
-  public Rollobjectgroup rollCLSID(String rollCLSID) {
-    this.rollCLSID = rollCLSID;
+  public Rollobjectgroup rollClsid(String rollClsid) {
+    this.rollClsid = rollClsid;
     return this;
   }
 
    /**
-   * Třída objektu číselníku [persistentní položka]
-   * @return rollCLSID
+   * třída objektu číselníku [persistentní položka]
+   * @return rollClsid
   **/
-  @ApiModelProperty(example = "null", value = "Třída objektu číselníku [persistentní položka]")
-  public String getRollCLSID() {
-    return rollCLSID;
+  @ApiModelProperty(example = "null", value = "třída objektu číselníku [persistentní položka]")
+  public String getRollClsid() {
+    return rollClsid;
   }
 
-  public void setRollCLSID(String rollCLSID) {
-    this.rollCLSID = rollCLSID;
+  public void setRollClsid(String rollClsid) {
+    this.rollClsid = rollClsid;
   }
 
   public Rollobjectgroup code(String code) {
@@ -168,10 +204,10 @@ public class Rollobjectgroup   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -186,10 +222,10 @@ public class Rollobjectgroup   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -204,10 +240,10 @@ public class Rollobjectgroup   {
   }
 
    /**
-   * Barva [persistentní položka]
+   * barva [persistentní položka]
    * @return color
   **/
-  @ApiModelProperty(example = "null", value = "Barva [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "barva [persistentní položka]")
   public Integer getColor() {
     return color;
   }
@@ -216,40 +252,40 @@ public class Rollobjectgroup   {
     this.color = color;
   }
 
-  public Rollobjectgroup dSQLValues(byte[] dSQLValues) {
-    this.dSQLValues = dSQLValues;
+  public Rollobjectgroup dsqlvalues(byte[] dsqlvalues) {
+    this.dsqlvalues = dsqlvalues;
     return this;
   }
 
    /**
-   * Podmínky [persistentní položka]
-   * @return dSQLValues
+   * podmínky [persistentní položka]
+   * @return dsqlvalues
   **/
-  @ApiModelProperty(example = "null", value = "Podmínky [persistentní položka]")
-  public byte[] getDSQLValues() {
-    return dSQLValues;
+  @ApiModelProperty(example = "null", value = "podmínky [persistentní položka]")
+  public byte[] getDsqlvalues() {
+    return dsqlvalues;
   }
 
-  public void setDSQLValues(byte[] dSQLValues) {
-    this.dSQLValues = dSQLValues;
+  public void setDsqlvalues(byte[] dsqlvalues) {
+    this.dsqlvalues = dsqlvalues;
   }
 
-  public Rollobjectgroup dSQLValuesDisplayText(String dSQLValuesDisplayText) {
-    this.dSQLValuesDisplayText = dSQLValuesDisplayText;
+  public Rollobjectgroup dsqlvaluesdisplaytext(String dsqlvaluesdisplaytext) {
+    this.dsqlvaluesdisplaytext = dsqlvaluesdisplaytext;
     return this;
   }
 
    /**
-   * Obsah podmínek [persistentní položka]
-   * @return dSQLValuesDisplayText
+   * obsah podmínek [persistentní položka]
+   * @return dsqlvaluesdisplaytext
   **/
-  @ApiModelProperty(example = "null", value = "Obsah podmínek [persistentní položka]")
-  public String getDSQLValuesDisplayText() {
-    return dSQLValuesDisplayText;
+  @ApiModelProperty(example = "null", value = "obsah podmínek [persistentní položka]")
+  public String getDsqlvaluesdisplaytext() {
+    return dsqlvaluesdisplaytext;
   }
 
-  public void setDSQLValuesDisplayText(String dSQLValuesDisplayText) {
-    this.dSQLValuesDisplayText = dSQLValuesDisplayText;
+  public void setDsqlvaluesdisplaytext(String dsqlvaluesdisplaytext) {
+    this.dsqlvaluesdisplaytext = dsqlvaluesdisplaytext;
   }
 
 
@@ -262,23 +298,23 @@ public class Rollobjectgroup   {
       return false;
     }
     Rollobjectgroup rollobjectgroup = (Rollobjectgroup) o;
-    return Objects.equals(this.displayName, rollobjectgroup.displayName) &&
-        Objects.equals(this.ID, rollobjectgroup.ID) &&
-        Objects.equals(this.classID, rollobjectgroup.classID) &&
-        Objects.equals(this.objVersion, rollobjectgroup.objVersion) &&
+    return Objects.equals(this.displayname, rollobjectgroup.displayname) &&
+        Objects.equals(this.id, rollobjectgroup.id) &&
+        Objects.equals(this.classid, rollobjectgroup.classid) &&
+        Objects.equals(this.objversion, rollobjectgroup.objversion) &&
         Objects.equals(this.hidden, rollobjectgroup.hidden) &&
-        Objects.equals(this.userID, rollobjectgroup.userID) &&
-        Objects.equals(this.rollCLSID, rollobjectgroup.rollCLSID) &&
+        Objects.equals(this.userId, rollobjectgroup.userId) &&
+        Objects.equals(this.rollClsid, rollobjectgroup.rollClsid) &&
         Objects.equals(this.code, rollobjectgroup.code) &&
         Objects.equals(this.name, rollobjectgroup.name) &&
         Objects.equals(this.color, rollobjectgroup.color) &&
-        Objects.equals(this.dSQLValues, rollobjectgroup.dSQLValues) &&
-        Objects.equals(this.dSQLValuesDisplayText, rollobjectgroup.dSQLValuesDisplayText);
+        Objects.equals(this.dsqlvalues, rollobjectgroup.dsqlvalues) &&
+        Objects.equals(this.dsqlvaluesdisplaytext, rollobjectgroup.dsqlvaluesdisplaytext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, userID, rollCLSID, code, name, color, dSQLValues, dSQLValuesDisplayText);
+    return Objects.hash(displayname, id, classid, objversion, hidden, userId, rollClsid, code, name, color, dsqlvalues, dsqlvaluesdisplaytext);
   }
 
   @Override
@@ -286,18 +322,18 @@ public class Rollobjectgroup   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Rollobjectgroup {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    userID: ").append(toIndentedString(userID)).append("\n");
-    sb.append("    rollCLSID: ").append(toIndentedString(rollCLSID)).append("\n");
+    sb.append("    userId: ").append(toIndentedString(userId)).append("\n");
+    sb.append("    rollClsid: ").append(toIndentedString(rollClsid)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    color: ").append(toIndentedString(color)).append("\n");
-    sb.append("    dSQLValues: ").append(toIndentedString(dSQLValues)).append("\n");
-    sb.append("    dSQLValuesDisplayText: ").append(toIndentedString(dSQLValuesDisplayText)).append("\n");
+    sb.append("    dsqlvalues: ").append(toIndentedString(dsqlvalues)).append("\n");
+    sb.append("    dsqlvaluesdisplaytext: ").append(toIndentedString(dsqlvaluesdisplaytext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

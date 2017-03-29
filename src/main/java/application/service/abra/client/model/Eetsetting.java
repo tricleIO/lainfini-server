@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,75 +36,111 @@ import java.util.Objects;
 /**
  * Eetsetting
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Eetsetting   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("LimitResponseTime")
-  private Integer limitResponseTime = null;
+  @SerializedName("limitresponsetime")
+  private Integer limitresponsetime = null;
 
-  @SerializedName("TurnoverModes")
-  private List<Eetsettingturnovermode> turnoverModes = new ArrayList<Eetsettingturnovermode>();
+  @SerializedName("turnovermodes")
+  private List<Eetsettingturnovermode> turnovermodes = new ArrayList<Eetsettingturnovermode>();
 
-  @SerializedName("SendingModes")
-  private List<Eetsettingsendingmode> sendingModes = new ArrayList<Eetsettingsendingmode>();
+  @SerializedName("sendingmodes")
+  private List<Eetsettingsendingmode> sendingmodes = new ArrayList<Eetsettingsendingmode>();
 
-  @SerializedName("SignCertificates")
-  private List<Eetsettingsendingmode> signCertificates = new ArrayList<Eetsettingsendingmode>();
+  @SerializedName("signcertificates")
+  private List<Eetsettingsendingmode> signcertificates = new ArrayList<Eetsettingsendingmode>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Eetsetting displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Eetsetting id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Eetsetting classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Eetsetting objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Eetsetting hidden(Boolean hidden) {
@@ -113,10 +149,10 @@ public class Eetsetting   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -131,10 +167,10 @@ public class Eetsetting   {
   }
 
    /**
-   * Code [persistentní položka]
+   * code [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Code [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "code [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -149,10 +185,10 @@ public class Eetsetting   {
   }
 
    /**
-   * Name [persistentní položka]
+   * name [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Name [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "name [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -161,91 +197,91 @@ public class Eetsetting   {
     this.name = name;
   }
 
-  public Eetsetting limitResponseTime(Integer limitResponseTime) {
-    this.limitResponseTime = limitResponseTime;
+  public Eetsetting limitresponsetime(Integer limitresponsetime) {
+    this.limitresponsetime = limitresponsetime;
     return this;
   }
 
    /**
-   * Mezní doba odezvy [persistentní položka]
-   * @return limitResponseTime
+   * mezní doba odezvy [persistentní položka]
+   * @return limitresponsetime
   **/
-  @ApiModelProperty(example = "null", value = "Mezní doba odezvy [persistentní položka]")
-  public Integer getLimitResponseTime() {
-    return limitResponseTime;
+  @ApiModelProperty(example = "null", value = "mezní doba odezvy [persistentní položka]")
+  public Integer getLimitresponsetime() {
+    return limitresponsetime;
   }
 
-  public void setLimitResponseTime(Integer limitResponseTime) {
-    this.limitResponseTime = limitResponseTime;
+  public void setLimitresponsetime(Integer limitresponsetime) {
+    this.limitresponsetime = limitresponsetime;
   }
 
-  public Eetsetting turnoverModes(List<Eetsettingturnovermode> turnoverModes) {
-    this.turnoverModes = turnoverModes;
+  public Eetsetting turnovermodes(List<Eetsettingturnovermode> turnovermodes) {
+    this.turnovermodes = turnovermodes;
     return this;
   }
 
-  public Eetsetting addTurnoverModesItem(Eetsettingturnovermode turnoverModesItem) {
-    this.turnoverModes.add(turnoverModesItem);
+  public Eetsetting addTurnovermodesItem(Eetsettingturnovermode turnovermodesItem) {
+    this.turnovermodes.add(turnovermodesItem);
     return this;
   }
 
    /**
-   * Režimy evidence tržby; kolekce BO Nastavení EET - řádek režimu evidence tržby [nepersistentní položka]
-   * @return turnoverModes
+   * režimy evidence tržby; kolekce bo nastavení eet - řádek režimu evidence tržby [nepersistentní položka]
+   * @return turnovermodes
   **/
-  @ApiModelProperty(example = "null", value = "Režimy evidence tržby; kolekce BO Nastavení EET - řádek režimu evidence tržby [nepersistentní položka]")
-  public List<Eetsettingturnovermode> getTurnoverModes() {
-    return turnoverModes;
+  @ApiModelProperty(example = "null", value = "režimy evidence tržby; kolekce bo nastavení eet - řádek režimu evidence tržby [nepersistentní položka]")
+  public List<Eetsettingturnovermode> getTurnovermodes() {
+    return turnovermodes;
   }
 
-  public void setTurnoverModes(List<Eetsettingturnovermode> turnoverModes) {
-    this.turnoverModes = turnoverModes;
+  public void setTurnovermodes(List<Eetsettingturnovermode> turnovermodes) {
+    this.turnovermodes = turnovermodes;
   }
 
-  public Eetsetting sendingModes(List<Eetsettingsendingmode> sendingModes) {
-    this.sendingModes = sendingModes;
+  public Eetsetting sendingmodes(List<Eetsettingsendingmode> sendingmodes) {
+    this.sendingmodes = sendingmodes;
     return this;
   }
 
-  public Eetsetting addSendingModesItem(Eetsettingsendingmode sendingModesItem) {
-    this.sendingModes.add(sendingModesItem);
+  public Eetsetting addSendingmodesItem(Eetsettingsendingmode sendingmodesItem) {
+    this.sendingmodes.add(sendingmodesItem);
     return this;
   }
 
    /**
-   * Módy odesílaní datových zpráv; kolekce BO Nastavení EET - řádek módu odesílaní datových zpráv [nepersistentní položka]
-   * @return sendingModes
+   * módy odesílaní datových zpráv; kolekce bo nastavení eet - řádek módu odesílaní datových zpráv [nepersistentní položka]
+   * @return sendingmodes
   **/
-  @ApiModelProperty(example = "null", value = "Módy odesílaní datových zpráv; kolekce BO Nastavení EET - řádek módu odesílaní datových zpráv [nepersistentní položka]")
-  public List<Eetsettingsendingmode> getSendingModes() {
-    return sendingModes;
+  @ApiModelProperty(example = "null", value = "módy odesílaní datových zpráv; kolekce bo nastavení eet - řádek módu odesílaní datových zpráv [nepersistentní položka]")
+  public List<Eetsettingsendingmode> getSendingmodes() {
+    return sendingmodes;
   }
 
-  public void setSendingModes(List<Eetsettingsendingmode> sendingModes) {
-    this.sendingModes = sendingModes;
+  public void setSendingmodes(List<Eetsettingsendingmode> sendingmodes) {
+    this.sendingmodes = sendingmodes;
   }
 
-  public Eetsetting signCertificates(List<Eetsettingsendingmode> signCertificates) {
-    this.signCertificates = signCertificates;
+  public Eetsetting signcertificates(List<Eetsettingsendingmode> signcertificates) {
+    this.signcertificates = signcertificates;
     return this;
   }
 
-  public Eetsetting addSignCertificatesItem(Eetsettingsendingmode signCertificatesItem) {
-    this.signCertificates.add(signCertificatesItem);
+  public Eetsetting addSigncertificatesItem(Eetsettingsendingmode signcertificatesItem) {
+    this.signcertificates.add(signcertificatesItem);
     return this;
   }
 
    /**
-   * Podpisové certifikáty; kolekce BO Nastavení EET - řádek módu odesílaní datových zpráv [nepersistentní položka]
-   * @return signCertificates
+   * podpisové certifikáty; kolekce bo nastavení eet - řádek módu odesílaní datových zpráv [nepersistentní položka]
+   * @return signcertificates
   **/
-  @ApiModelProperty(example = "null", value = "Podpisové certifikáty; kolekce BO Nastavení EET - řádek módu odesílaní datových zpráv [nepersistentní položka]")
-  public List<Eetsettingsendingmode> getSignCertificates() {
-    return signCertificates;
+  @ApiModelProperty(example = "null", value = "podpisové certifikáty; kolekce bo nastavení eet - řádek módu odesílaní datových zpráv [nepersistentní položka]")
+  public List<Eetsettingsendingmode> getSigncertificates() {
+    return signcertificates;
   }
 
-  public void setSignCertificates(List<Eetsettingsendingmode> signCertificates) {
-    this.signCertificates = signCertificates;
+  public void setSigncertificates(List<Eetsettingsendingmode> signcertificates) {
+    this.signcertificates = signcertificates;
   }
 
 
@@ -258,22 +294,22 @@ public class Eetsetting   {
       return false;
     }
     Eetsetting eetsetting = (Eetsetting) o;
-    return Objects.equals(this.displayName, eetsetting.displayName) &&
-        Objects.equals(this.ID, eetsetting.ID) &&
-        Objects.equals(this.classID, eetsetting.classID) &&
-        Objects.equals(this.objVersion, eetsetting.objVersion) &&
+    return Objects.equals(this.displayname, eetsetting.displayname) &&
+        Objects.equals(this.id, eetsetting.id) &&
+        Objects.equals(this.classid, eetsetting.classid) &&
+        Objects.equals(this.objversion, eetsetting.objversion) &&
         Objects.equals(this.hidden, eetsetting.hidden) &&
         Objects.equals(this.code, eetsetting.code) &&
         Objects.equals(this.name, eetsetting.name) &&
-        Objects.equals(this.limitResponseTime, eetsetting.limitResponseTime) &&
-        Objects.equals(this.turnoverModes, eetsetting.turnoverModes) &&
-        Objects.equals(this.sendingModes, eetsetting.sendingModes) &&
-        Objects.equals(this.signCertificates, eetsetting.signCertificates);
+        Objects.equals(this.limitresponsetime, eetsetting.limitresponsetime) &&
+        Objects.equals(this.turnovermodes, eetsetting.turnovermodes) &&
+        Objects.equals(this.sendingmodes, eetsetting.sendingmodes) &&
+        Objects.equals(this.signcertificates, eetsetting.signcertificates);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, limitResponseTime, turnoverModes, sendingModes, signCertificates);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, limitresponsetime, turnovermodes, sendingmodes, signcertificates);
   }
 
   @Override
@@ -281,17 +317,17 @@ public class Eetsetting   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Eetsetting {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    limitResponseTime: ").append(toIndentedString(limitResponseTime)).append("\n");
-    sb.append("    turnoverModes: ").append(toIndentedString(turnoverModes)).append("\n");
-    sb.append("    sendingModes: ").append(toIndentedString(sendingModes)).append("\n");
-    sb.append("    signCertificates: ").append(toIndentedString(signCertificates)).append("\n");
+    sb.append("    limitresponsetime: ").append(toIndentedString(limitresponsetime)).append("\n");
+    sb.append("    turnovermodes: ").append(toIndentedString(turnovermodes)).append("\n");
+    sb.append("    sendingmodes: ").append(toIndentedString(sendingmodes)).append("\n");
+    sb.append("    signcertificates: ").append(toIndentedString(signcertificates)).append("\n");
     sb.append("}");
     return sb.toString();
   }

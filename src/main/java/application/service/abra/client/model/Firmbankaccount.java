@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,117 +35,162 @@ import java.util.Objects;
 /**
  * Firmbankaccount
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Firmbankaccount   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("BankAccount")
-  private String bankAccount = null;
+  @SerializedName("bankaccount")
+  private String bankaccount = null;
 
-  @SerializedName("SpecSymbol")
-  private String specSymbol = null;
+  @SerializedName("specsymbol")
+  private String specsymbol = null;
 
-  @SerializedName("Address_ID")
-  private Firmbankaccount addressID = null;
+  @SerializedName("address_id")
+  private Firmbankaccount addressId = null;
 
-  @SerializedName("SwiftCode")
-  private String swiftCode = null;
+  @SerializedName("swiftcode")
+  private String swiftcode = null;
 
-  @SerializedName("BankCountry_ID")
-  private String bankCountryID = null;
+  @SerializedName("bankcountry_id")
+  private String bankcountryId = null;
 
-  @SerializedName("PublishedStatus")
-  private Integer publishedStatus = null;
+  @SerializedName("publishedstatus")
+  private Integer publishedstatus = null;
 
-  @SerializedName("PublishedStatusAsText")
-  private String publishedStatusAsText = null;
+  @SerializedName("publishedstatusastext")
+  private String publishedstatusastext = null;
 
-  @SerializedName("PublishedDate$DATE")
-  private DateTime publishedDateDATE = null;
+  @SerializedName("publisheddate$date")
+  private DateTime publisheddatedate = null;
 
-  @SerializedName("PublishedEndDate$DATE")
-  private DateTime publishedEndDateDATE = null;
+  @SerializedName("publishedenddate$date")
+  private DateTime publishedenddatedate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Firma [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Firma [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Firmbankaccount posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Firmbankaccount displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Firmbankaccount id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Firmbankaccount classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Firmbankaccount objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Firmbankaccount parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu firma [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu firma [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Firmbankaccount posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
   public Firmbankaccount name(String name) {
@@ -154,10 +199,10 @@ public class Firmbankaccount   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -166,130 +211,166 @@ public class Firmbankaccount   {
     this.name = name;
   }
 
-  public Firmbankaccount bankAccount(String bankAccount) {
-    this.bankAccount = bankAccount;
+  public Firmbankaccount bankaccount(String bankaccount) {
+    this.bankaccount = bankaccount;
     return this;
   }
 
    /**
    * Účet [persistentní položka]
-   * @return bankAccount
+   * @return bankaccount
   **/
   @ApiModelProperty(example = "null", value = "Účet [persistentní položka]")
-  public String getBankAccount() {
-    return bankAccount;
+  public String getBankaccount() {
+    return bankaccount;
   }
 
-  public void setBankAccount(String bankAccount) {
-    this.bankAccount = bankAccount;
+  public void setBankaccount(String bankaccount) {
+    this.bankaccount = bankaccount;
   }
 
-  public Firmbankaccount specSymbol(String specSymbol) {
-    this.specSymbol = specSymbol;
+  public Firmbankaccount specsymbol(String specsymbol) {
+    this.specsymbol = specsymbol;
     return this;
   }
 
    /**
-   * Specifický symbol [persistentní položka]
-   * @return specSymbol
+   * specifický symbol [persistentní položka]
+   * @return specsymbol
   **/
-  @ApiModelProperty(example = "null", value = "Specifický symbol [persistentní položka]")
-  public String getSpecSymbol() {
-    return specSymbol;
+  @ApiModelProperty(example = "null", value = "specifický symbol [persistentní položka]")
+  public String getSpecsymbol() {
+    return specsymbol;
   }
 
-  public void setSpecSymbol(String specSymbol) {
-    this.specSymbol = specSymbol;
+  public void setSpecsymbol(String specsymbol) {
+    this.specsymbol = specsymbol;
   }
 
-  public Firmbankaccount addressID(Firmbankaccount addressID) {
-    this.addressID = addressID;
+  public Firmbankaccount addressId(Firmbankaccount addressId) {
+    this.addressId = addressId;
     return this;
   }
 
    /**
-   * Get addressID
-   * @return addressID
+   * Get addressId
+   * @return addressId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Firmbankaccount getAddressID() {
-    return addressID;
+  public Firmbankaccount getAddressId() {
+    return addressId;
   }
 
-  public void setAddressID(Firmbankaccount addressID) {
-    this.addressID = addressID;
+  public void setAddressId(Firmbankaccount addressId) {
+    this.addressId = addressId;
   }
 
-  public Firmbankaccount swiftCode(String swiftCode) {
-    this.swiftCode = swiftCode;
+  public Firmbankaccount swiftcode(String swiftcode) {
+    this.swiftcode = swiftcode;
     return this;
   }
 
    /**
-   * SWIFT [persistentní položka]
-   * @return swiftCode
+   * swift [persistentní položka]
+   * @return swiftcode
   **/
-  @ApiModelProperty(example = "null", value = "SWIFT [persistentní položka]")
-  public String getSwiftCode() {
-    return swiftCode;
+  @ApiModelProperty(example = "null", value = "swift [persistentní položka]")
+  public String getSwiftcode() {
+    return swiftcode;
   }
 
-  public void setSwiftCode(String swiftCode) {
-    this.swiftCode = swiftCode;
+  public void setSwiftcode(String swiftcode) {
+    this.swiftcode = swiftcode;
   }
 
-  public Firmbankaccount bankCountryID(String bankCountryID) {
-    this.bankCountryID = bankCountryID;
+  public Firmbankaccount bankcountryId(String bankcountryId) {
+    this.bankcountryId = bankcountryId;
     return this;
   }
 
    /**
-   * Země banky; ID objektu Země [persistentní položka]
-   * @return bankCountryID
+   * země banky; id objektu země [persistentní položka]
+   * @return bankcountryId
   **/
-  @ApiModelProperty(example = "null", value = "Země banky; ID objektu Země [persistentní položka]")
-  public String getBankCountryID() {
-    return bankCountryID;
+  @ApiModelProperty(example = "null", value = "země banky; id objektu země [persistentní položka]")
+  public String getBankcountryId() {
+    return bankcountryId;
   }
 
-  public void setBankCountryID(String bankCountryID) {
-    this.bankCountryID = bankCountryID;
+  public void setBankcountryId(String bankcountryId) {
+    this.bankcountryId = bankcountryId;
   }
 
-   /**
-   * Status účtu
-   * @return publishedStatus
-  **/
-  @ApiModelProperty(example = "null", value = "Status účtu")
-  public Integer getPublishedStatus() {
-    return publishedStatus;
+  public Firmbankaccount publishedstatus(Integer publishedstatus) {
+    this.publishedstatus = publishedstatus;
+    return this;
   }
 
    /**
-   * Status účtu - text
-   * @return publishedStatusAsText
+   * status účtu
+   * @return publishedstatus
   **/
-  @ApiModelProperty(example = "null", value = "Status účtu - text")
-  public String getPublishedStatusAsText() {
-    return publishedStatusAsText;
+  @ApiModelProperty(example = "null", value = "status účtu")
+  public Integer getPublishedstatus() {
+    return publishedstatus;
+  }
+
+  public void setPublishedstatus(Integer publishedstatus) {
+    this.publishedstatus = publishedstatus;
+  }
+
+  public Firmbankaccount publishedstatusastext(String publishedstatusastext) {
+    this.publishedstatusastext = publishedstatusastext;
+    return this;
   }
 
    /**
-   * Datum zveřejnění
-   * @return publishedDateDATE
+   * status účtu - text
+   * @return publishedstatusastext
   **/
-  @ApiModelProperty(example = "null", value = "Datum zveřejnění")
-  public DateTime getPublishedDateDATE() {
-    return publishedDateDATE;
+  @ApiModelProperty(example = "null", value = "status účtu - text")
+  public String getPublishedstatusastext() {
+    return publishedstatusastext;
+  }
+
+  public void setPublishedstatusastext(String publishedstatusastext) {
+    this.publishedstatusastext = publishedstatusastext;
+  }
+
+  public Firmbankaccount publisheddatedate(DateTime publisheddatedate) {
+    this.publisheddatedate = publisheddatedate;
+    return this;
   }
 
    /**
-   * Datum konce zveřejnění
-   * @return publishedEndDateDATE
+   * datum zveřejnění
+   * @return publisheddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum konce zveřejnění")
-  public DateTime getPublishedEndDateDATE() {
-    return publishedEndDateDATE;
+  @ApiModelProperty(example = "null", value = "datum zveřejnění")
+  public DateTime getPublisheddatedate() {
+    return publisheddatedate;
+  }
+
+  public void setPublisheddatedate(DateTime publisheddatedate) {
+    this.publisheddatedate = publisheddatedate;
+  }
+
+  public Firmbankaccount publishedenddatedate(DateTime publishedenddatedate) {
+    this.publishedenddatedate = publishedenddatedate;
+    return this;
+  }
+
+   /**
+   * datum konce zveřejnění
+   * @return publishedenddatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum konce zveřejnění")
+  public DateTime getPublishedenddatedate() {
+    return publishedenddatedate;
+  }
+
+  public void setPublishedenddatedate(DateTime publishedenddatedate) {
+    this.publishedenddatedate = publishedenddatedate;
   }
 
 
@@ -302,27 +383,27 @@ public class Firmbankaccount   {
       return false;
     }
     Firmbankaccount firmbankaccount = (Firmbankaccount) o;
-    return Objects.equals(this.displayName, firmbankaccount.displayName) &&
-        Objects.equals(this.ID, firmbankaccount.ID) &&
-        Objects.equals(this.classID, firmbankaccount.classID) &&
-        Objects.equals(this.objVersion, firmbankaccount.objVersion) &&
-        Objects.equals(this.parentID, firmbankaccount.parentID) &&
-        Objects.equals(this.posIndex, firmbankaccount.posIndex) &&
+    return Objects.equals(this.displayname, firmbankaccount.displayname) &&
+        Objects.equals(this.id, firmbankaccount.id) &&
+        Objects.equals(this.classid, firmbankaccount.classid) &&
+        Objects.equals(this.objversion, firmbankaccount.objversion) &&
+        Objects.equals(this.parentId, firmbankaccount.parentId) &&
+        Objects.equals(this.posindex, firmbankaccount.posindex) &&
         Objects.equals(this.name, firmbankaccount.name) &&
-        Objects.equals(this.bankAccount, firmbankaccount.bankAccount) &&
-        Objects.equals(this.specSymbol, firmbankaccount.specSymbol) &&
-        Objects.equals(this.addressID, firmbankaccount.addressID) &&
-        Objects.equals(this.swiftCode, firmbankaccount.swiftCode) &&
-        Objects.equals(this.bankCountryID, firmbankaccount.bankCountryID) &&
-        Objects.equals(this.publishedStatus, firmbankaccount.publishedStatus) &&
-        Objects.equals(this.publishedStatusAsText, firmbankaccount.publishedStatusAsText) &&
-        Objects.equals(this.publishedDateDATE, firmbankaccount.publishedDateDATE) &&
-        Objects.equals(this.publishedEndDateDATE, firmbankaccount.publishedEndDateDATE);
+        Objects.equals(this.bankaccount, firmbankaccount.bankaccount) &&
+        Objects.equals(this.specsymbol, firmbankaccount.specsymbol) &&
+        Objects.equals(this.addressId, firmbankaccount.addressId) &&
+        Objects.equals(this.swiftcode, firmbankaccount.swiftcode) &&
+        Objects.equals(this.bankcountryId, firmbankaccount.bankcountryId) &&
+        Objects.equals(this.publishedstatus, firmbankaccount.publishedstatus) &&
+        Objects.equals(this.publishedstatusastext, firmbankaccount.publishedstatusastext) &&
+        Objects.equals(this.publisheddatedate, firmbankaccount.publisheddatedate) &&
+        Objects.equals(this.publishedenddatedate, firmbankaccount.publishedenddatedate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, name, bankAccount, specSymbol, addressID, swiftCode, bankCountryID, publishedStatus, publishedStatusAsText, publishedDateDATE, publishedEndDateDATE);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, name, bankaccount, specsymbol, addressId, swiftcode, bankcountryId, publishedstatus, publishedstatusastext, publisheddatedate, publishedenddatedate);
   }
 
   @Override
@@ -330,22 +411,22 @@ public class Firmbankaccount   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Firmbankaccount {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    bankAccount: ").append(toIndentedString(bankAccount)).append("\n");
-    sb.append("    specSymbol: ").append(toIndentedString(specSymbol)).append("\n");
-    sb.append("    addressID: ").append(toIndentedString(addressID)).append("\n");
-    sb.append("    swiftCode: ").append(toIndentedString(swiftCode)).append("\n");
-    sb.append("    bankCountryID: ").append(toIndentedString(bankCountryID)).append("\n");
-    sb.append("    publishedStatus: ").append(toIndentedString(publishedStatus)).append("\n");
-    sb.append("    publishedStatusAsText: ").append(toIndentedString(publishedStatusAsText)).append("\n");
-    sb.append("    publishedDateDATE: ").append(toIndentedString(publishedDateDATE)).append("\n");
-    sb.append("    publishedEndDateDATE: ").append(toIndentedString(publishedEndDateDATE)).append("\n");
+    sb.append("    bankaccount: ").append(toIndentedString(bankaccount)).append("\n");
+    sb.append("    specsymbol: ").append(toIndentedString(specsymbol)).append("\n");
+    sb.append("    addressId: ").append(toIndentedString(addressId)).append("\n");
+    sb.append("    swiftcode: ").append(toIndentedString(swiftcode)).append("\n");
+    sb.append("    bankcountryId: ").append(toIndentedString(bankcountryId)).append("\n");
+    sb.append("    publishedstatus: ").append(toIndentedString(publishedstatus)).append("\n");
+    sb.append("    publishedstatusastext: ").append(toIndentedString(publishedstatusastext)).append("\n");
+    sb.append("    publisheddatedate: ").append(toIndentedString(publisheddatedate)).append("\n");
+    sb.append("    publishedenddatedate: ").append(toIndentedString(publishedenddatedate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

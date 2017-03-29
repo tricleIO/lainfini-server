@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,282 +34,327 @@ import java.util.Objects;
 /**
  * Databoxmesssent
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Databoxmesssent   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DmType")
-  private Integer dmType = null;
+  @SerializedName("dmtype")
+  private Integer dmtype = null;
 
-  @SerializedName("DmTypeText")
-  private String dmTypeText = null;
+  @SerializedName("dmtypetext")
+  private String dmtypetext = null;
 
-  @SerializedName("IDSender")
-  private String iDSender = null;
+  @SerializedName("idsender")
+  private String idsender = null;
 
-  @SerializedName("Owner_ID")
-  private String ownerID = null;
+  @SerializedName("owner_id")
+  private String ownerId = null;
 
-  @SerializedName("SenderAddress")
-  private String senderAddress = null;
+  @SerializedName("senderaddress")
+  private String senderaddress = null;
 
-  @SerializedName("SenderType")
-  private Integer senderType = null;
+  @SerializedName("sendertype")
+  private Integer sendertype = null;
 
-  @SerializedName("SenderTypeText")
-  private String senderTypeText = null;
+  @SerializedName("sendertypetext")
+  private String sendertypetext = null;
 
-  @SerializedName("Recipient")
+  @SerializedName("recipient")
   private String recipient = null;
 
-  @SerializedName("RecipientAddress")
-  private String recipientAddress = null;
+  @SerializedName("recipientaddress")
+  private String recipientaddress = null;
 
-  @SerializedName("AmbiguousRecipient")
-  private Boolean ambiguousRecipient = null;
+  @SerializedName("ambiguousrecipient")
+  private Boolean ambiguousrecipient = null;
 
-  @SerializedName("SenderOrgUnit")
-  private String senderOrgUnit = null;
+  @SerializedName("senderorgunit")
+  private String senderorgunit = null;
 
-  @SerializedName("SenderOrgUnitNum")
-  private Integer senderOrgUnitNum = null;
+  @SerializedName("senderorgunitnum")
+  private Integer senderorgunitnum = null;
 
-  @SerializedName("RecipientOrgUnit")
-  private String recipientOrgUnit = null;
+  @SerializedName("recipientorgunit")
+  private String recipientorgunit = null;
 
-  @SerializedName("RecipientOrgUnitNum")
-  private Integer recipientOrgUnitNum = null;
+  @SerializedName("recipientorgunitnum")
+  private Integer recipientorgunitnum = null;
 
-  @SerializedName("ToHands")
-  private String toHands = null;
+  @SerializedName("tohands")
+  private String tohands = null;
 
-  @SerializedName("RecipientRefNumber")
-  private String recipientRefNumber = null;
+  @SerializedName("recipientrefnumber")
+  private String recipientrefnumber = null;
 
-  @SerializedName("SenderRefNumber")
-  private String senderRefNumber = null;
+  @SerializedName("senderrefnumber")
+  private String senderrefnumber = null;
 
-  @SerializedName("RecipientIdent")
-  private String recipientIdent = null;
+  @SerializedName("recipientident")
+  private String recipientident = null;
 
-  @SerializedName("SenderIdent")
-  private String senderIdent = null;
+  @SerializedName("senderident")
+  private String senderident = null;
 
-  @SerializedName("LegalTitleLaw")
-  private Integer legalTitleLaw = null;
+  @SerializedName("legaltitlelaw")
+  private Integer legaltitlelaw = null;
 
-  @SerializedName("LegalTitleYear")
-  private Integer legalTitleYear = null;
+  @SerializedName("legaltitleyear")
+  private Integer legaltitleyear = null;
 
-  @SerializedName("LegalTitleSect")
-  private String legalTitleSect = null;
+  @SerializedName("legaltitlesect")
+  private String legaltitlesect = null;
 
-  @SerializedName("LegalTitlePar")
-  private String legalTitlePar = null;
+  @SerializedName("legaltitlepar")
+  private String legaltitlepar = null;
 
-  @SerializedName("LegalTitlePoint")
-  private String legalTitlePoint = null;
+  @SerializedName("legaltitlepoint")
+  private String legaltitlepoint = null;
 
-  @SerializedName("PersonalDelivery")
-  private Boolean personalDelivery = null;
+  @SerializedName("personaldelivery")
+  private Boolean personaldelivery = null;
 
-  @SerializedName("RestrictionDeliveryFiction")
-  private Boolean restrictionDeliveryFiction = null;
+  @SerializedName("restrictiondeliveryfiction")
+  private Boolean restrictiondeliveryfiction = null;
 
-  @SerializedName("MessageStatus")
-  private Integer messageStatus = null;
+  @SerializedName("messagestatus")
+  private Integer messagestatus = null;
 
-  @SerializedName("MessageStatusText")
-  private String messageStatusText = null;
+  @SerializedName("messagestatustext")
+  private String messagestatustext = null;
 
-  @SerializedName("SignedDeliveryInfo_ID")
-  private Databoxmesssent signedDeliveryInfoID = null;
+  @SerializedName("signeddeliveryinfo_id")
+  private Databoxmesssent signeddeliveryinfoId = null;
 
-  @SerializedName("SignedMessage_ID")
-  private Databoxmesssent signedMessageID = null;
+  @SerializedName("signedmessage_id")
+  private Databoxmesssent signedmessageId = null;
 
-  @SerializedName("SignedDeliveryInfoLoaded")
-  private Boolean signedDeliveryInfoLoaded = null;
+  @SerializedName("signeddeliveryinfoloaded")
+  private Boolean signeddeliveryinfoloaded = null;
 
-  @SerializedName("SignedMessageLoaded")
-  private Boolean signedMessageLoaded = null;
+  @SerializedName("signedmessageloaded")
+  private Boolean signedmessageloaded = null;
 
-  @SerializedName("QTimestamp")
-  private byte[] qTimestamp = null;
+  @SerializedName("qtimestamp")
+  private byte[] qtimestamp = null;
 
-  @SerializedName("Sender")
+  @SerializedName("sender")
   private String sender = null;
 
-  @SerializedName("IDRecipient")
-  private String iDRecipient = null;
+  @SerializedName("idrecipient")
+  private String idrecipient = null;
 
-  @SerializedName("PublishOwnID")
-  private Boolean publishOwnID = null;
+  @SerializedName("publishownid")
+  private Boolean publishownid = null;
 
-  @SerializedName("OVM")
-  private Boolean OVM = null;
+  @SerializedName("ovm")
+  private Boolean ovm = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Databoxmesssent dmType(Integer dmType) {
-    this.dmType = dmType;
+  public Databoxmesssent displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Typ datové zprávy [persistentní položka]
-   * @return dmType
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Typ datové zprávy [persistentní položka]")
-  public Integer getDmType() {
-    return dmType;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDmType(Integer dmType) {
-    this.dmType = dmType;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * Název typu datové zprávy
-   * @return dmTypeText
-  **/
-  @ApiModelProperty(example = "null", value = "Název typu datové zprávy")
-  public String getDmTypeText() {
-    return dmTypeText;
-  }
-
-  public Databoxmesssent iDSender(String iDSender) {
-    this.iDSender = iDSender;
+  public Databoxmesssent id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * ID datové schránky odesílatele [persistentní položka]
-   * @return iDSender
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID datové schránky odesílatele [persistentní položka]")
-  public String getIDSender() {
-    return iDSender;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setIDSender(String iDSender) {
-    this.iDSender = iDSender;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Databoxmesssent ownerID(String ownerID) {
-    this.ownerID = ownerID;
+  public Databoxmesssent classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Identifikace vlastníka datové zprávy [persistentní položka]
-   * @return ownerID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Identifikace vlastníka datové zprávy [persistentní položka]")
-  public String getOwnerID() {
-    return ownerID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setOwnerID(String ownerID) {
-    this.ownerID = ownerID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Databoxmesssent senderAddress(String senderAddress) {
-    this.senderAddress = senderAddress;
+  public Databoxmesssent objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Poštovní adresa odesílatele [persistentní položka]
-   * @return senderAddress
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Poštovní adresa odesílatele [persistentní položka]")
-  public String getSenderAddress() {
-    return senderAddress;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setSenderAddress(String senderAddress) {
-    this.senderAddress = senderAddress;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Databoxmesssent senderType(Integer senderType) {
-    this.senderType = senderType;
+  public Databoxmesssent dmtype(Integer dmtype) {
+    this.dmtype = dmtype;
     return this;
   }
 
    /**
-   * Typ schránky odesílatele [persistentní položka]
-   * @return senderType
+   * typ datové zprávy [persistentní položka]
+   * @return dmtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ schránky odesílatele [persistentní položka]")
-  public Integer getSenderType() {
-    return senderType;
+  @ApiModelProperty(example = "null", value = "typ datové zprávy [persistentní položka]")
+  public Integer getDmtype() {
+    return dmtype;
   }
 
-  public void setSenderType(Integer senderType) {
-    this.senderType = senderType;
+  public void setDmtype(Integer dmtype) {
+    this.dmtype = dmtype;
   }
 
-  public Databoxmesssent senderTypeText(String senderTypeText) {
-    this.senderTypeText = senderTypeText;
+  public Databoxmesssent dmtypetext(String dmtypetext) {
+    this.dmtypetext = dmtypetext;
     return this;
   }
 
    /**
-   * Typ schránky odesílatele textově
-   * @return senderTypeText
+   * název typu datové zprávy
+   * @return dmtypetext
   **/
-  @ApiModelProperty(example = "null", value = "Typ schránky odesílatele textově")
-  public String getSenderTypeText() {
-    return senderTypeText;
+  @ApiModelProperty(example = "null", value = "název typu datové zprávy")
+  public String getDmtypetext() {
+    return dmtypetext;
   }
 
-  public void setSenderTypeText(String senderTypeText) {
-    this.senderTypeText = senderTypeText;
+  public void setDmtypetext(String dmtypetext) {
+    this.dmtypetext = dmtypetext;
+  }
+
+  public Databoxmesssent idsender(String idsender) {
+    this.idsender = idsender;
+    return this;
+  }
+
+   /**
+   * id datové schránky odesílatele [persistentní položka]
+   * @return idsender
+  **/
+  @ApiModelProperty(example = "null", value = "id datové schránky odesílatele [persistentní položka]")
+  public String getIdsender() {
+    return idsender;
+  }
+
+  public void setIdsender(String idsender) {
+    this.idsender = idsender;
+  }
+
+  public Databoxmesssent ownerId(String ownerId) {
+    this.ownerId = ownerId;
+    return this;
+  }
+
+   /**
+   * identifikace vlastníka datové zprávy [persistentní položka]
+   * @return ownerId
+  **/
+  @ApiModelProperty(example = "null", value = "identifikace vlastníka datové zprávy [persistentní položka]")
+  public String getOwnerId() {
+    return ownerId;
+  }
+
+  public void setOwnerId(String ownerId) {
+    this.ownerId = ownerId;
+  }
+
+  public Databoxmesssent senderaddress(String senderaddress) {
+    this.senderaddress = senderaddress;
+    return this;
+  }
+
+   /**
+   * poštovní adresa odesílatele [persistentní položka]
+   * @return senderaddress
+  **/
+  @ApiModelProperty(example = "null", value = "poštovní adresa odesílatele [persistentní položka]")
+  public String getSenderaddress() {
+    return senderaddress;
+  }
+
+  public void setSenderaddress(String senderaddress) {
+    this.senderaddress = senderaddress;
+  }
+
+  public Databoxmesssent sendertype(Integer sendertype) {
+    this.sendertype = sendertype;
+    return this;
+  }
+
+   /**
+   * typ schránky odesílatele [persistentní položka]
+   * @return sendertype
+  **/
+  @ApiModelProperty(example = "null", value = "typ schránky odesílatele [persistentní položka]")
+  public Integer getSendertype() {
+    return sendertype;
+  }
+
+  public void setSendertype(Integer sendertype) {
+    this.sendertype = sendertype;
+  }
+
+  public Databoxmesssent sendertypetext(String sendertypetext) {
+    this.sendertypetext = sendertypetext;
+    return this;
+  }
+
+   /**
+   * typ schránky odesílatele textově
+   * @return sendertypetext
+  **/
+  @ApiModelProperty(example = "null", value = "typ schránky odesílatele textově")
+  public String getSendertypetext() {
+    return sendertypetext;
+  }
+
+  public void setSendertypetext(String sendertypetext) {
+    this.sendertypetext = sendertypetext;
   }
 
   public Databoxmesssent recipient(String recipient) {
@@ -318,10 +363,10 @@ public class Databoxmesssent   {
   }
 
    /**
-   * Příjemce slovně [persistentní položka]
+   * příjemce slovně [persistentní položka]
    * @return recipient
   **/
-  @ApiModelProperty(example = "null", value = "Příjemce slovně [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "příjemce slovně [persistentní položka]")
   public String getRecipient() {
     return recipient;
   }
@@ -330,454 +375,454 @@ public class Databoxmesssent   {
     this.recipient = recipient;
   }
 
-  public Databoxmesssent recipientAddress(String recipientAddress) {
-    this.recipientAddress = recipientAddress;
+  public Databoxmesssent recipientaddress(String recipientaddress) {
+    this.recipientaddress = recipientaddress;
     return this;
   }
 
    /**
-   * Poštovní adresa příjemce [persistentní položka]
-   * @return recipientAddress
+   * poštovní adresa příjemce [persistentní položka]
+   * @return recipientaddress
   **/
-  @ApiModelProperty(example = "null", value = "Poštovní adresa příjemce [persistentní položka]")
-  public String getRecipientAddress() {
-    return recipientAddress;
+  @ApiModelProperty(example = "null", value = "poštovní adresa příjemce [persistentní položka]")
+  public String getRecipientaddress() {
+    return recipientaddress;
   }
 
-  public void setRecipientAddress(String recipientAddress) {
-    this.recipientAddress = recipientAddress;
+  public void setRecipientaddress(String recipientaddress) {
+    this.recipientaddress = recipientaddress;
   }
 
-  public Databoxmesssent ambiguousRecipient(Boolean ambiguousRecipient) {
-    this.ambiguousRecipient = ambiguousRecipient;
+  public Databoxmesssent ambiguousrecipient(Boolean ambiguousrecipient) {
+    this.ambiguousrecipient = ambiguousrecipient;
     return this;
   }
 
    /**
-   * Adresát je ne-OVM povýšený na OVM [persistentní položka]
-   * @return ambiguousRecipient
+   * adresát je ne-ovm povýšený na ovm [persistentní položka]
+   * @return ambiguousrecipient
   **/
-  @ApiModelProperty(example = "null", value = "Adresát je ne-OVM povýšený na OVM [persistentní položka]")
-  public Boolean getAmbiguousRecipient() {
-    return ambiguousRecipient;
+  @ApiModelProperty(example = "null", value = "adresát je ne-ovm povýšený na ovm [persistentní položka]")
+  public Boolean getAmbiguousrecipient() {
+    return ambiguousrecipient;
   }
 
-  public void setAmbiguousRecipient(Boolean ambiguousRecipient) {
-    this.ambiguousRecipient = ambiguousRecipient;
+  public void setAmbiguousrecipient(Boolean ambiguousrecipient) {
+    this.ambiguousrecipient = ambiguousrecipient;
   }
 
-  public Databoxmesssent senderOrgUnit(String senderOrgUnit) {
-    this.senderOrgUnit = senderOrgUnit;
+  public Databoxmesssent senderorgunit(String senderorgunit) {
+    this.senderorgunit = senderorgunit;
     return this;
   }
 
    /**
-   * Organizační jednotka odesílatele [persistentní položka]
-   * @return senderOrgUnit
+   * organizační jednotka odesílatele [persistentní položka]
+   * @return senderorgunit
   **/
-  @ApiModelProperty(example = "null", value = "Organizační jednotka odesílatele [persistentní položka]")
-  public String getSenderOrgUnit() {
-    return senderOrgUnit;
+  @ApiModelProperty(example = "null", value = "organizační jednotka odesílatele [persistentní položka]")
+  public String getSenderorgunit() {
+    return senderorgunit;
   }
 
-  public void setSenderOrgUnit(String senderOrgUnit) {
-    this.senderOrgUnit = senderOrgUnit;
+  public void setSenderorgunit(String senderorgunit) {
+    this.senderorgunit = senderorgunit;
   }
 
-  public Databoxmesssent senderOrgUnitNum(Integer senderOrgUnitNum) {
-    this.senderOrgUnitNum = senderOrgUnitNum;
+  public Databoxmesssent senderorgunitnum(Integer senderorgunitnum) {
+    this.senderorgunitnum = senderorgunitnum;
     return this;
   }
 
    /**
-   * Organizační jednotka odesílatele hodnotou [persistentní položka]
-   * @return senderOrgUnitNum
+   * organizační jednotka odesílatele hodnotou [persistentní položka]
+   * @return senderorgunitnum
   **/
-  @ApiModelProperty(example = "null", value = "Organizační jednotka odesílatele hodnotou [persistentní položka]")
-  public Integer getSenderOrgUnitNum() {
-    return senderOrgUnitNum;
+  @ApiModelProperty(example = "null", value = "organizační jednotka odesílatele hodnotou [persistentní položka]")
+  public Integer getSenderorgunitnum() {
+    return senderorgunitnum;
   }
 
-  public void setSenderOrgUnitNum(Integer senderOrgUnitNum) {
-    this.senderOrgUnitNum = senderOrgUnitNum;
+  public void setSenderorgunitnum(Integer senderorgunitnum) {
+    this.senderorgunitnum = senderorgunitnum;
   }
 
-  public Databoxmesssent recipientOrgUnit(String recipientOrgUnit) {
-    this.recipientOrgUnit = recipientOrgUnit;
+  public Databoxmesssent recipientorgunit(String recipientorgunit) {
+    this.recipientorgunit = recipientorgunit;
     return this;
   }
 
    /**
-   * Organizační jednotka příjemce [persistentní položka]
-   * @return recipientOrgUnit
+   * organizační jednotka příjemce [persistentní položka]
+   * @return recipientorgunit
   **/
-  @ApiModelProperty(example = "null", value = "Organizační jednotka příjemce [persistentní položka]")
-  public String getRecipientOrgUnit() {
-    return recipientOrgUnit;
+  @ApiModelProperty(example = "null", value = "organizační jednotka příjemce [persistentní položka]")
+  public String getRecipientorgunit() {
+    return recipientorgunit;
   }
 
-  public void setRecipientOrgUnit(String recipientOrgUnit) {
-    this.recipientOrgUnit = recipientOrgUnit;
+  public void setRecipientorgunit(String recipientorgunit) {
+    this.recipientorgunit = recipientorgunit;
   }
 
-  public Databoxmesssent recipientOrgUnitNum(Integer recipientOrgUnitNum) {
-    this.recipientOrgUnitNum = recipientOrgUnitNum;
+  public Databoxmesssent recipientorgunitnum(Integer recipientorgunitnum) {
+    this.recipientorgunitnum = recipientorgunitnum;
     return this;
   }
 
    /**
-   * Organizační jednotka příjemce hodnotou [persistentní položka]
-   * @return recipientOrgUnitNum
+   * organizační jednotka příjemce hodnotou [persistentní položka]
+   * @return recipientorgunitnum
   **/
-  @ApiModelProperty(example = "null", value = "Organizační jednotka příjemce hodnotou [persistentní položka]")
-  public Integer getRecipientOrgUnitNum() {
-    return recipientOrgUnitNum;
+  @ApiModelProperty(example = "null", value = "organizační jednotka příjemce hodnotou [persistentní položka]")
+  public Integer getRecipientorgunitnum() {
+    return recipientorgunitnum;
   }
 
-  public void setRecipientOrgUnitNum(Integer recipientOrgUnitNum) {
-    this.recipientOrgUnitNum = recipientOrgUnitNum;
+  public void setRecipientorgunitnum(Integer recipientorgunitnum) {
+    this.recipientorgunitnum = recipientorgunitnum;
   }
 
-  public Databoxmesssent toHands(String toHands) {
-    this.toHands = toHands;
+  public Databoxmesssent tohands(String tohands) {
+    this.tohands = tohands;
     return this;
   }
 
    /**
-   * K rukám [persistentní položka]
-   * @return toHands
+   * k rukám [persistentní položka]
+   * @return tohands
   **/
-  @ApiModelProperty(example = "null", value = "K rukám [persistentní položka]")
-  public String getToHands() {
-    return toHands;
+  @ApiModelProperty(example = "null", value = "k rukám [persistentní položka]")
+  public String getTohands() {
+    return tohands;
   }
 
-  public void setToHands(String toHands) {
-    this.toHands = toHands;
+  public void setTohands(String tohands) {
+    this.tohands = tohands;
   }
 
-  public Databoxmesssent recipientRefNumber(String recipientRefNumber) {
-    this.recipientRefNumber = recipientRefNumber;
+  public Databoxmesssent recipientrefnumber(String recipientrefnumber) {
+    this.recipientrefnumber = recipientrefnumber;
     return this;
   }
 
    /**
    * Číslo jednací za strany příjemce [persistentní položka]
-   * @return recipientRefNumber
+   * @return recipientrefnumber
   **/
   @ApiModelProperty(example = "null", value = "Číslo jednací za strany příjemce [persistentní položka]")
-  public String getRecipientRefNumber() {
-    return recipientRefNumber;
+  public String getRecipientrefnumber() {
+    return recipientrefnumber;
   }
 
-  public void setRecipientRefNumber(String recipientRefNumber) {
-    this.recipientRefNumber = recipientRefNumber;
+  public void setRecipientrefnumber(String recipientrefnumber) {
+    this.recipientrefnumber = recipientrefnumber;
   }
 
-  public Databoxmesssent senderRefNumber(String senderRefNumber) {
-    this.senderRefNumber = senderRefNumber;
+  public Databoxmesssent senderrefnumber(String senderrefnumber) {
+    this.senderrefnumber = senderrefnumber;
     return this;
   }
 
    /**
    * Číslo jednací za strany odesílatele [persistentní položka]
-   * @return senderRefNumber
+   * @return senderrefnumber
   **/
   @ApiModelProperty(example = "null", value = "Číslo jednací za strany odesílatele [persistentní položka]")
-  public String getSenderRefNumber() {
-    return senderRefNumber;
+  public String getSenderrefnumber() {
+    return senderrefnumber;
   }
 
-  public void setSenderRefNumber(String senderRefNumber) {
-    this.senderRefNumber = senderRefNumber;
+  public void setSenderrefnumber(String senderrefnumber) {
+    this.senderrefnumber = senderrefnumber;
   }
 
-  public Databoxmesssent recipientIdent(String recipientIdent) {
-    this.recipientIdent = recipientIdent;
+  public Databoxmesssent recipientident(String recipientident) {
+    this.recipientident = recipientident;
     return this;
   }
 
    /**
-   * Spisová značka ze strany příjemce [persistentní položka]
-   * @return recipientIdent
+   * spisová značka ze strany příjemce [persistentní položka]
+   * @return recipientident
   **/
-  @ApiModelProperty(example = "null", value = "Spisová značka ze strany příjemce [persistentní položka]")
-  public String getRecipientIdent() {
-    return recipientIdent;
+  @ApiModelProperty(example = "null", value = "spisová značka ze strany příjemce [persistentní položka]")
+  public String getRecipientident() {
+    return recipientident;
   }
 
-  public void setRecipientIdent(String recipientIdent) {
-    this.recipientIdent = recipientIdent;
+  public void setRecipientident(String recipientident) {
+    this.recipientident = recipientident;
   }
 
-  public Databoxmesssent senderIdent(String senderIdent) {
-    this.senderIdent = senderIdent;
+  public Databoxmesssent senderident(String senderident) {
+    this.senderident = senderident;
     return this;
   }
 
    /**
-   * Spisová značka a strany odesílatele [persistentní položka]
-   * @return senderIdent
+   * spisová značka a strany odesílatele [persistentní položka]
+   * @return senderident
   **/
-  @ApiModelProperty(example = "null", value = "Spisová značka a strany odesílatele [persistentní položka]")
-  public String getSenderIdent() {
-    return senderIdent;
+  @ApiModelProperty(example = "null", value = "spisová značka a strany odesílatele [persistentní položka]")
+  public String getSenderident() {
+    return senderident;
   }
 
-  public void setSenderIdent(String senderIdent) {
-    this.senderIdent = senderIdent;
+  public void setSenderident(String senderident) {
+    this.senderident = senderident;
   }
 
-  public Databoxmesssent legalTitleLaw(Integer legalTitleLaw) {
-    this.legalTitleLaw = legalTitleLaw;
+  public Databoxmesssent legaltitlelaw(Integer legaltitlelaw) {
+    this.legaltitlelaw = legaltitlelaw;
     return this;
   }
 
    /**
-   * Zmocnění - číslo zákona [persistentní položka]
-   * @return legalTitleLaw
+   * zmocnění - číslo zákona [persistentní položka]
+   * @return legaltitlelaw
   **/
-  @ApiModelProperty(example = "null", value = "Zmocnění - číslo zákona [persistentní položka]")
-  public Integer getLegalTitleLaw() {
-    return legalTitleLaw;
+  @ApiModelProperty(example = "null", value = "zmocnění - číslo zákona [persistentní položka]")
+  public Integer getLegaltitlelaw() {
+    return legaltitlelaw;
   }
 
-  public void setLegalTitleLaw(Integer legalTitleLaw) {
-    this.legalTitleLaw = legalTitleLaw;
+  public void setLegaltitlelaw(Integer legaltitlelaw) {
+    this.legaltitlelaw = legaltitlelaw;
   }
 
-  public Databoxmesssent legalTitleYear(Integer legalTitleYear) {
-    this.legalTitleYear = legalTitleYear;
+  public Databoxmesssent legaltitleyear(Integer legaltitleyear) {
+    this.legaltitleyear = legaltitleyear;
     return this;
   }
 
    /**
-   * Zmocnění - rok vydání zákona [persistentní položka]
-   * @return legalTitleYear
+   * zmocnění - rok vydání zákona [persistentní položka]
+   * @return legaltitleyear
   **/
-  @ApiModelProperty(example = "null", value = "Zmocnění - rok vydání zákona [persistentní položka]")
-  public Integer getLegalTitleYear() {
-    return legalTitleYear;
+  @ApiModelProperty(example = "null", value = "zmocnění - rok vydání zákona [persistentní položka]")
+  public Integer getLegaltitleyear() {
+    return legaltitleyear;
   }
 
-  public void setLegalTitleYear(Integer legalTitleYear) {
-    this.legalTitleYear = legalTitleYear;
+  public void setLegaltitleyear(Integer legaltitleyear) {
+    this.legaltitleyear = legaltitleyear;
   }
 
-  public Databoxmesssent legalTitleSect(String legalTitleSect) {
-    this.legalTitleSect = legalTitleSect;
+  public Databoxmesssent legaltitlesect(String legaltitlesect) {
+    this.legaltitlesect = legaltitlesect;
     return this;
   }
 
    /**
-   * Zmocnění - paragraf v zákoně [persistentní položka]
-   * @return legalTitleSect
+   * zmocnění - paragraf v zákoně [persistentní položka]
+   * @return legaltitlesect
   **/
-  @ApiModelProperty(example = "null", value = "Zmocnění - paragraf v zákoně [persistentní položka]")
-  public String getLegalTitleSect() {
-    return legalTitleSect;
+  @ApiModelProperty(example = "null", value = "zmocnění - paragraf v zákoně [persistentní položka]")
+  public String getLegaltitlesect() {
+    return legaltitlesect;
   }
 
-  public void setLegalTitleSect(String legalTitleSect) {
-    this.legalTitleSect = legalTitleSect;
+  public void setLegaltitlesect(String legaltitlesect) {
+    this.legaltitlesect = legaltitlesect;
   }
 
-  public Databoxmesssent legalTitlePar(String legalTitlePar) {
-    this.legalTitlePar = legalTitlePar;
+  public Databoxmesssent legaltitlepar(String legaltitlepar) {
+    this.legaltitlepar = legaltitlepar;
     return this;
   }
 
    /**
-   * Zmocnění - odstavec v paragrafu [persistentní položka]
-   * @return legalTitlePar
+   * zmocnění - odstavec v paragrafu [persistentní položka]
+   * @return legaltitlepar
   **/
-  @ApiModelProperty(example = "null", value = "Zmocnění - odstavec v paragrafu [persistentní položka]")
-  public String getLegalTitlePar() {
-    return legalTitlePar;
+  @ApiModelProperty(example = "null", value = "zmocnění - odstavec v paragrafu [persistentní položka]")
+  public String getLegaltitlepar() {
+    return legaltitlepar;
   }
 
-  public void setLegalTitlePar(String legalTitlePar) {
-    this.legalTitlePar = legalTitlePar;
+  public void setLegaltitlepar(String legaltitlepar) {
+    this.legaltitlepar = legaltitlepar;
   }
 
-  public Databoxmesssent legalTitlePoint(String legalTitlePoint) {
-    this.legalTitlePoint = legalTitlePoint;
+  public Databoxmesssent legaltitlepoint(String legaltitlepoint) {
+    this.legaltitlepoint = legaltitlepoint;
     return this;
   }
 
    /**
-   * Zmocnění - písmeno v odstavci [persistentní položka]
-   * @return legalTitlePoint
+   * zmocnění - písmeno v odstavci [persistentní položka]
+   * @return legaltitlepoint
   **/
-  @ApiModelProperty(example = "null", value = "Zmocnění - písmeno v odstavci [persistentní položka]")
-  public String getLegalTitlePoint() {
-    return legalTitlePoint;
+  @ApiModelProperty(example = "null", value = "zmocnění - písmeno v odstavci [persistentní položka]")
+  public String getLegaltitlepoint() {
+    return legaltitlepoint;
   }
 
-  public void setLegalTitlePoint(String legalTitlePoint) {
-    this.legalTitlePoint = legalTitlePoint;
+  public void setLegaltitlepoint(String legaltitlepoint) {
+    this.legaltitlepoint = legaltitlepoint;
   }
 
-  public Databoxmesssent personalDelivery(Boolean personalDelivery) {
-    this.personalDelivery = personalDelivery;
+  public Databoxmesssent personaldelivery(Boolean personaldelivery) {
+    this.personaldelivery = personaldelivery;
     return this;
   }
 
    /**
-   * Příznak do vlastních rukou [persistentní položka]
-   * @return personalDelivery
+   * příznak do vlastních rukou [persistentní položka]
+   * @return personaldelivery
   **/
-  @ApiModelProperty(example = "null", value = "Příznak do vlastních rukou [persistentní položka]")
-  public Boolean getPersonalDelivery() {
-    return personalDelivery;
+  @ApiModelProperty(example = "null", value = "příznak do vlastních rukou [persistentní položka]")
+  public Boolean getPersonaldelivery() {
+    return personaldelivery;
   }
 
-  public void setPersonalDelivery(Boolean personalDelivery) {
-    this.personalDelivery = personalDelivery;
+  public void setPersonaldelivery(Boolean personaldelivery) {
+    this.personaldelivery = personaldelivery;
   }
 
-  public Databoxmesssent restrictionDeliveryFiction(Boolean restrictionDeliveryFiction) {
-    this.restrictionDeliveryFiction = restrictionDeliveryFiction;
+  public Databoxmesssent restrictiondeliveryfiction(Boolean restrictiondeliveryfiction) {
+    this.restrictiondeliveryfiction = restrictiondeliveryfiction;
     return this;
   }
 
    /**
-   * Zákaz doručení fikcí [persistentní položka]
-   * @return restrictionDeliveryFiction
+   * zákaz doručení fikcí [persistentní položka]
+   * @return restrictiondeliveryfiction
   **/
-  @ApiModelProperty(example = "null", value = "Zákaz doručení fikcí [persistentní položka]")
-  public Boolean getRestrictionDeliveryFiction() {
-    return restrictionDeliveryFiction;
+  @ApiModelProperty(example = "null", value = "zákaz doručení fikcí [persistentní položka]")
+  public Boolean getRestrictiondeliveryfiction() {
+    return restrictiondeliveryfiction;
   }
 
-  public void setRestrictionDeliveryFiction(Boolean restrictionDeliveryFiction) {
-    this.restrictionDeliveryFiction = restrictionDeliveryFiction;
+  public void setRestrictiondeliveryfiction(Boolean restrictiondeliveryfiction) {
+    this.restrictiondeliveryfiction = restrictiondeliveryfiction;
   }
 
-  public Databoxmesssent messageStatus(Integer messageStatus) {
-    this.messageStatus = messageStatus;
+  public Databoxmesssent messagestatus(Integer messagestatus) {
+    this.messagestatus = messagestatus;
     return this;
   }
 
    /**
-   * Stav datové zprávy [persistentní položka]
-   * @return messageStatus
+   * stav datové zprávy [persistentní položka]
+   * @return messagestatus
   **/
-  @ApiModelProperty(example = "null", value = "Stav datové zprávy [persistentní položka]")
-  public Integer getMessageStatus() {
-    return messageStatus;
+  @ApiModelProperty(example = "null", value = "stav datové zprávy [persistentní položka]")
+  public Integer getMessagestatus() {
+    return messagestatus;
   }
 
-  public void setMessageStatus(Integer messageStatus) {
-    this.messageStatus = messageStatus;
+  public void setMessagestatus(Integer messagestatus) {
+    this.messagestatus = messagestatus;
   }
 
-  public Databoxmesssent messageStatusText(String messageStatusText) {
-    this.messageStatusText = messageStatusText;
+  public Databoxmesssent messagestatustext(String messagestatustext) {
+    this.messagestatustext = messagestatustext;
     return this;
   }
 
    /**
-   * Stav datové zprávy textově
-   * @return messageStatusText
+   * stav datové zprávy textově
+   * @return messagestatustext
   **/
-  @ApiModelProperty(example = "null", value = "Stav datové zprávy textově")
-  public String getMessageStatusText() {
-    return messageStatusText;
+  @ApiModelProperty(example = "null", value = "stav datové zprávy textově")
+  public String getMessagestatustext() {
+    return messagestatustext;
   }
 
-  public void setMessageStatusText(String messageStatusText) {
-    this.messageStatusText = messageStatusText;
+  public void setMessagestatustext(String messagestatustext) {
+    this.messagestatustext = messagestatustext;
   }
 
-  public Databoxmesssent signedDeliveryInfoID(Databoxmesssent signedDeliveryInfoID) {
-    this.signedDeliveryInfoID = signedDeliveryInfoID;
+  public Databoxmesssent signeddeliveryinfoId(Databoxmesssent signeddeliveryinfoId) {
+    this.signeddeliveryinfoId = signeddeliveryinfoId;
     return this;
   }
 
    /**
-   * Get signedDeliveryInfoID
-   * @return signedDeliveryInfoID
-  **/
-  @ApiModelProperty(example = "null", value = "")
-  public Databoxmesssent getSignedDeliveryInfoID() {
-    return signedDeliveryInfoID;
-  }
-
-  public void setSignedDeliveryInfoID(Databoxmesssent signedDeliveryInfoID) {
-    this.signedDeliveryInfoID = signedDeliveryInfoID;
-  }
-
-  public Databoxmesssent signedMessageID(Databoxmesssent signedMessageID) {
-    this.signedMessageID = signedMessageID;
-    return this;
-  }
-
-   /**
-   * Get signedMessageID
-   * @return signedMessageID
+   * Get signeddeliveryinfoId
+   * @return signeddeliveryinfoId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Databoxmesssent getSignedMessageID() {
-    return signedMessageID;
+  public Databoxmesssent getSigneddeliveryinfoId() {
+    return signeddeliveryinfoId;
   }
 
-  public void setSignedMessageID(Databoxmesssent signedMessageID) {
-    this.signedMessageID = signedMessageID;
+  public void setSigneddeliveryinfoId(Databoxmesssent signeddeliveryinfoId) {
+    this.signeddeliveryinfoId = signeddeliveryinfoId;
   }
 
-  public Databoxmesssent signedDeliveryInfoLoaded(Boolean signedDeliveryInfoLoaded) {
-    this.signedDeliveryInfoLoaded = signedDeliveryInfoLoaded;
+  public Databoxmesssent signedmessageId(Databoxmesssent signedmessageId) {
+    this.signedmessageId = signedmessageId;
     return this;
   }
 
    /**
-   * Obsah doručenky stažen
-   * @return signedDeliveryInfoLoaded
+   * Get signedmessageId
+   * @return signedmessageId
   **/
-  @ApiModelProperty(example = "null", value = "Obsah doručenky stažen")
-  public Boolean getSignedDeliveryInfoLoaded() {
-    return signedDeliveryInfoLoaded;
+  @ApiModelProperty(example = "null", value = "")
+  public Databoxmesssent getSignedmessageId() {
+    return signedmessageId;
   }
 
-  public void setSignedDeliveryInfoLoaded(Boolean signedDeliveryInfoLoaded) {
-    this.signedDeliveryInfoLoaded = signedDeliveryInfoLoaded;
+  public void setSignedmessageId(Databoxmesssent signedmessageId) {
+    this.signedmessageId = signedmessageId;
   }
 
-  public Databoxmesssent signedMessageLoaded(Boolean signedMessageLoaded) {
-    this.signedMessageLoaded = signedMessageLoaded;
+  public Databoxmesssent signeddeliveryinfoloaded(Boolean signeddeliveryinfoloaded) {
+    this.signeddeliveryinfoloaded = signeddeliveryinfoloaded;
     return this;
   }
 
    /**
-   * Obsah zprávy stažen
-   * @return signedMessageLoaded
+   * obsah doručenky stažen
+   * @return signeddeliveryinfoloaded
   **/
-  @ApiModelProperty(example = "null", value = "Obsah zprávy stažen")
-  public Boolean getSignedMessageLoaded() {
-    return signedMessageLoaded;
+  @ApiModelProperty(example = "null", value = "obsah doručenky stažen")
+  public Boolean getSigneddeliveryinfoloaded() {
+    return signeddeliveryinfoloaded;
   }
 
-  public void setSignedMessageLoaded(Boolean signedMessageLoaded) {
-    this.signedMessageLoaded = signedMessageLoaded;
+  public void setSigneddeliveryinfoloaded(Boolean signeddeliveryinfoloaded) {
+    this.signeddeliveryinfoloaded = signeddeliveryinfoloaded;
   }
 
-  public Databoxmesssent qTimestamp(byte[] qTimestamp) {
-    this.qTimestamp = qTimestamp;
+  public Databoxmesssent signedmessageloaded(Boolean signedmessageloaded) {
+    this.signedmessageloaded = signedmessageloaded;
     return this;
   }
 
    /**
-   * Kvalifikované časové razítko [persistentní položka]
-   * @return qTimestamp
+   * obsah zprávy stažen
+   * @return signedmessageloaded
   **/
-  @ApiModelProperty(example = "null", value = "Kvalifikované časové razítko [persistentní položka]")
-  public byte[] getQTimestamp() {
-    return qTimestamp;
+  @ApiModelProperty(example = "null", value = "obsah zprávy stažen")
+  public Boolean getSignedmessageloaded() {
+    return signedmessageloaded;
   }
 
-  public void setQTimestamp(byte[] qTimestamp) {
-    this.qTimestamp = qTimestamp;
+  public void setSignedmessageloaded(Boolean signedmessageloaded) {
+    this.signedmessageloaded = signedmessageloaded;
+  }
+
+  public Databoxmesssent qtimestamp(byte[] qtimestamp) {
+    this.qtimestamp = qtimestamp;
+    return this;
+  }
+
+   /**
+   * kvalifikované časové razítko [persistentní položka]
+   * @return qtimestamp
+  **/
+  @ApiModelProperty(example = "null", value = "kvalifikované časové razítko [persistentní položka]")
+  public byte[] getQtimestamp() {
+    return qtimestamp;
+  }
+
+  public void setQtimestamp(byte[] qtimestamp) {
+    this.qtimestamp = qtimestamp;
   }
 
   public Databoxmesssent sender(String sender) {
@@ -786,10 +831,10 @@ public class Databoxmesssent   {
   }
 
    /**
-   * Název odesílatele [persistentní položka]
+   * název odesílatele [persistentní položka]
    * @return sender
   **/
-  @ApiModelProperty(example = "null", value = "Název odesílatele [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název odesílatele [persistentní položka]")
   public String getSender() {
     return sender;
   }
@@ -798,49 +843,58 @@ public class Databoxmesssent   {
     this.sender = sender;
   }
 
-   /**
-   * ID datové schránky příjemce
-   * @return iDRecipient
-  **/
-  @ApiModelProperty(example = "null", value = "ID datové schránky příjemce")
-  public String getIDRecipient() {
-    return iDRecipient;
-  }
-
-  public Databoxmesssent publishOwnID(Boolean publishOwnID) {
-    this.publishOwnID = publishOwnID;
+  public Databoxmesssent idrecipient(String idrecipient) {
+    this.idrecipient = idrecipient;
     return this;
   }
 
    /**
-   * Přidat identifikaci odesílatele [persistentní položka]
-   * @return publishOwnID
+   * id datové schránky příjemce
+   * @return idrecipient
   **/
-  @ApiModelProperty(example = "null", value = "Přidat identifikaci odesílatele [persistentní položka]")
-  public Boolean getPublishOwnID() {
-    return publishOwnID;
+  @ApiModelProperty(example = "null", value = "id datové schránky příjemce")
+  public String getIdrecipient() {
+    return idrecipient;
   }
 
-  public void setPublishOwnID(Boolean publishOwnID) {
-    this.publishOwnID = publishOwnID;
+  public void setIdrecipient(String idrecipient) {
+    this.idrecipient = idrecipient;
   }
 
-  public Databoxmesssent OVM(Boolean OVM) {
-    this.OVM = OVM;
+  public Databoxmesssent publishownid(Boolean publishownid) {
+    this.publishownid = publishownid;
     return this;
   }
 
    /**
-   * Odeslat jako OVM [persistentní položka]
-   * @return OVM
+   * přidat identifikaci odesílatele [persistentní položka]
+   * @return publishownid
   **/
-  @ApiModelProperty(example = "null", value = "Odeslat jako OVM [persistentní položka]")
-  public Boolean getOVM() {
-    return OVM;
+  @ApiModelProperty(example = "null", value = "přidat identifikaci odesílatele [persistentní položka]")
+  public Boolean getPublishownid() {
+    return publishownid;
   }
 
-  public void setOVM(Boolean OVM) {
-    this.OVM = OVM;
+  public void setPublishownid(Boolean publishownid) {
+    this.publishownid = publishownid;
+  }
+
+  public Databoxmesssent ovm(Boolean ovm) {
+    this.ovm = ovm;
+    return this;
+  }
+
+   /**
+   * odeslat jako ovm [persistentní položka]
+   * @return ovm
+  **/
+  @ApiModelProperty(example = "null", value = "odeslat jako ovm [persistentní položka]")
+  public Boolean getOvm() {
+    return ovm;
+  }
+
+  public void setOvm(Boolean ovm) {
+    this.ovm = ovm;
   }
 
 
@@ -853,52 +907,52 @@ public class Databoxmesssent   {
       return false;
     }
     Databoxmesssent databoxmesssent = (Databoxmesssent) o;
-    return Objects.equals(this.displayName, databoxmesssent.displayName) &&
-        Objects.equals(this.ID, databoxmesssent.ID) &&
-        Objects.equals(this.classID, databoxmesssent.classID) &&
-        Objects.equals(this.objVersion, databoxmesssent.objVersion) &&
-        Objects.equals(this.dmType, databoxmesssent.dmType) &&
-        Objects.equals(this.dmTypeText, databoxmesssent.dmTypeText) &&
-        Objects.equals(this.iDSender, databoxmesssent.iDSender) &&
-        Objects.equals(this.ownerID, databoxmesssent.ownerID) &&
-        Objects.equals(this.senderAddress, databoxmesssent.senderAddress) &&
-        Objects.equals(this.senderType, databoxmesssent.senderType) &&
-        Objects.equals(this.senderTypeText, databoxmesssent.senderTypeText) &&
+    return Objects.equals(this.displayname, databoxmesssent.displayname) &&
+        Objects.equals(this.id, databoxmesssent.id) &&
+        Objects.equals(this.classid, databoxmesssent.classid) &&
+        Objects.equals(this.objversion, databoxmesssent.objversion) &&
+        Objects.equals(this.dmtype, databoxmesssent.dmtype) &&
+        Objects.equals(this.dmtypetext, databoxmesssent.dmtypetext) &&
+        Objects.equals(this.idsender, databoxmesssent.idsender) &&
+        Objects.equals(this.ownerId, databoxmesssent.ownerId) &&
+        Objects.equals(this.senderaddress, databoxmesssent.senderaddress) &&
+        Objects.equals(this.sendertype, databoxmesssent.sendertype) &&
+        Objects.equals(this.sendertypetext, databoxmesssent.sendertypetext) &&
         Objects.equals(this.recipient, databoxmesssent.recipient) &&
-        Objects.equals(this.recipientAddress, databoxmesssent.recipientAddress) &&
-        Objects.equals(this.ambiguousRecipient, databoxmesssent.ambiguousRecipient) &&
-        Objects.equals(this.senderOrgUnit, databoxmesssent.senderOrgUnit) &&
-        Objects.equals(this.senderOrgUnitNum, databoxmesssent.senderOrgUnitNum) &&
-        Objects.equals(this.recipientOrgUnit, databoxmesssent.recipientOrgUnit) &&
-        Objects.equals(this.recipientOrgUnitNum, databoxmesssent.recipientOrgUnitNum) &&
-        Objects.equals(this.toHands, databoxmesssent.toHands) &&
-        Objects.equals(this.recipientRefNumber, databoxmesssent.recipientRefNumber) &&
-        Objects.equals(this.senderRefNumber, databoxmesssent.senderRefNumber) &&
-        Objects.equals(this.recipientIdent, databoxmesssent.recipientIdent) &&
-        Objects.equals(this.senderIdent, databoxmesssent.senderIdent) &&
-        Objects.equals(this.legalTitleLaw, databoxmesssent.legalTitleLaw) &&
-        Objects.equals(this.legalTitleYear, databoxmesssent.legalTitleYear) &&
-        Objects.equals(this.legalTitleSect, databoxmesssent.legalTitleSect) &&
-        Objects.equals(this.legalTitlePar, databoxmesssent.legalTitlePar) &&
-        Objects.equals(this.legalTitlePoint, databoxmesssent.legalTitlePoint) &&
-        Objects.equals(this.personalDelivery, databoxmesssent.personalDelivery) &&
-        Objects.equals(this.restrictionDeliveryFiction, databoxmesssent.restrictionDeliveryFiction) &&
-        Objects.equals(this.messageStatus, databoxmesssent.messageStatus) &&
-        Objects.equals(this.messageStatusText, databoxmesssent.messageStatusText) &&
-        Objects.equals(this.signedDeliveryInfoID, databoxmesssent.signedDeliveryInfoID) &&
-        Objects.equals(this.signedMessageID, databoxmesssent.signedMessageID) &&
-        Objects.equals(this.signedDeliveryInfoLoaded, databoxmesssent.signedDeliveryInfoLoaded) &&
-        Objects.equals(this.signedMessageLoaded, databoxmesssent.signedMessageLoaded) &&
-        Objects.equals(this.qTimestamp, databoxmesssent.qTimestamp) &&
+        Objects.equals(this.recipientaddress, databoxmesssent.recipientaddress) &&
+        Objects.equals(this.ambiguousrecipient, databoxmesssent.ambiguousrecipient) &&
+        Objects.equals(this.senderorgunit, databoxmesssent.senderorgunit) &&
+        Objects.equals(this.senderorgunitnum, databoxmesssent.senderorgunitnum) &&
+        Objects.equals(this.recipientorgunit, databoxmesssent.recipientorgunit) &&
+        Objects.equals(this.recipientorgunitnum, databoxmesssent.recipientorgunitnum) &&
+        Objects.equals(this.tohands, databoxmesssent.tohands) &&
+        Objects.equals(this.recipientrefnumber, databoxmesssent.recipientrefnumber) &&
+        Objects.equals(this.senderrefnumber, databoxmesssent.senderrefnumber) &&
+        Objects.equals(this.recipientident, databoxmesssent.recipientident) &&
+        Objects.equals(this.senderident, databoxmesssent.senderident) &&
+        Objects.equals(this.legaltitlelaw, databoxmesssent.legaltitlelaw) &&
+        Objects.equals(this.legaltitleyear, databoxmesssent.legaltitleyear) &&
+        Objects.equals(this.legaltitlesect, databoxmesssent.legaltitlesect) &&
+        Objects.equals(this.legaltitlepar, databoxmesssent.legaltitlepar) &&
+        Objects.equals(this.legaltitlepoint, databoxmesssent.legaltitlepoint) &&
+        Objects.equals(this.personaldelivery, databoxmesssent.personaldelivery) &&
+        Objects.equals(this.restrictiondeliveryfiction, databoxmesssent.restrictiondeliveryfiction) &&
+        Objects.equals(this.messagestatus, databoxmesssent.messagestatus) &&
+        Objects.equals(this.messagestatustext, databoxmesssent.messagestatustext) &&
+        Objects.equals(this.signeddeliveryinfoId, databoxmesssent.signeddeliveryinfoId) &&
+        Objects.equals(this.signedmessageId, databoxmesssent.signedmessageId) &&
+        Objects.equals(this.signeddeliveryinfoloaded, databoxmesssent.signeddeliveryinfoloaded) &&
+        Objects.equals(this.signedmessageloaded, databoxmesssent.signedmessageloaded) &&
+        Objects.equals(this.qtimestamp, databoxmesssent.qtimestamp) &&
         Objects.equals(this.sender, databoxmesssent.sender) &&
-        Objects.equals(this.iDRecipient, databoxmesssent.iDRecipient) &&
-        Objects.equals(this.publishOwnID, databoxmesssent.publishOwnID) &&
-        Objects.equals(this.OVM, databoxmesssent.OVM);
+        Objects.equals(this.idrecipient, databoxmesssent.idrecipient) &&
+        Objects.equals(this.publishownid, databoxmesssent.publishownid) &&
+        Objects.equals(this.ovm, databoxmesssent.ovm);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, dmType, dmTypeText, iDSender, ownerID, senderAddress, senderType, senderTypeText, recipient, recipientAddress, ambiguousRecipient, senderOrgUnit, senderOrgUnitNum, recipientOrgUnit, recipientOrgUnitNum, toHands, recipientRefNumber, senderRefNumber, recipientIdent, senderIdent, legalTitleLaw, legalTitleYear, legalTitleSect, legalTitlePar, legalTitlePoint, personalDelivery, restrictionDeliveryFiction, messageStatus, messageStatusText, signedDeliveryInfoID, signedMessageID, signedDeliveryInfoLoaded, signedMessageLoaded, qTimestamp, sender, iDRecipient, publishOwnID, OVM);
+    return Objects.hash(displayname, id, classid, objversion, dmtype, dmtypetext, idsender, ownerId, senderaddress, sendertype, sendertypetext, recipient, recipientaddress, ambiguousrecipient, senderorgunit, senderorgunitnum, recipientorgunit, recipientorgunitnum, tohands, recipientrefnumber, senderrefnumber, recipientident, senderident, legaltitlelaw, legaltitleyear, legaltitlesect, legaltitlepar, legaltitlepoint, personaldelivery, restrictiondeliveryfiction, messagestatus, messagestatustext, signeddeliveryinfoId, signedmessageId, signeddeliveryinfoloaded, signedmessageloaded, qtimestamp, sender, idrecipient, publishownid, ovm);
   }
 
   @Override
@@ -906,47 +960,47 @@ public class Databoxmesssent   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Databoxmesssent {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    dmType: ").append(toIndentedString(dmType)).append("\n");
-    sb.append("    dmTypeText: ").append(toIndentedString(dmTypeText)).append("\n");
-    sb.append("    iDSender: ").append(toIndentedString(iDSender)).append("\n");
-    sb.append("    ownerID: ").append(toIndentedString(ownerID)).append("\n");
-    sb.append("    senderAddress: ").append(toIndentedString(senderAddress)).append("\n");
-    sb.append("    senderType: ").append(toIndentedString(senderType)).append("\n");
-    sb.append("    senderTypeText: ").append(toIndentedString(senderTypeText)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    dmtype: ").append(toIndentedString(dmtype)).append("\n");
+    sb.append("    dmtypetext: ").append(toIndentedString(dmtypetext)).append("\n");
+    sb.append("    idsender: ").append(toIndentedString(idsender)).append("\n");
+    sb.append("    ownerId: ").append(toIndentedString(ownerId)).append("\n");
+    sb.append("    senderaddress: ").append(toIndentedString(senderaddress)).append("\n");
+    sb.append("    sendertype: ").append(toIndentedString(sendertype)).append("\n");
+    sb.append("    sendertypetext: ").append(toIndentedString(sendertypetext)).append("\n");
     sb.append("    recipient: ").append(toIndentedString(recipient)).append("\n");
-    sb.append("    recipientAddress: ").append(toIndentedString(recipientAddress)).append("\n");
-    sb.append("    ambiguousRecipient: ").append(toIndentedString(ambiguousRecipient)).append("\n");
-    sb.append("    senderOrgUnit: ").append(toIndentedString(senderOrgUnit)).append("\n");
-    sb.append("    senderOrgUnitNum: ").append(toIndentedString(senderOrgUnitNum)).append("\n");
-    sb.append("    recipientOrgUnit: ").append(toIndentedString(recipientOrgUnit)).append("\n");
-    sb.append("    recipientOrgUnitNum: ").append(toIndentedString(recipientOrgUnitNum)).append("\n");
-    sb.append("    toHands: ").append(toIndentedString(toHands)).append("\n");
-    sb.append("    recipientRefNumber: ").append(toIndentedString(recipientRefNumber)).append("\n");
-    sb.append("    senderRefNumber: ").append(toIndentedString(senderRefNumber)).append("\n");
-    sb.append("    recipientIdent: ").append(toIndentedString(recipientIdent)).append("\n");
-    sb.append("    senderIdent: ").append(toIndentedString(senderIdent)).append("\n");
-    sb.append("    legalTitleLaw: ").append(toIndentedString(legalTitleLaw)).append("\n");
-    sb.append("    legalTitleYear: ").append(toIndentedString(legalTitleYear)).append("\n");
-    sb.append("    legalTitleSect: ").append(toIndentedString(legalTitleSect)).append("\n");
-    sb.append("    legalTitlePar: ").append(toIndentedString(legalTitlePar)).append("\n");
-    sb.append("    legalTitlePoint: ").append(toIndentedString(legalTitlePoint)).append("\n");
-    sb.append("    personalDelivery: ").append(toIndentedString(personalDelivery)).append("\n");
-    sb.append("    restrictionDeliveryFiction: ").append(toIndentedString(restrictionDeliveryFiction)).append("\n");
-    sb.append("    messageStatus: ").append(toIndentedString(messageStatus)).append("\n");
-    sb.append("    messageStatusText: ").append(toIndentedString(messageStatusText)).append("\n");
-    sb.append("    signedDeliveryInfoID: ").append(toIndentedString(signedDeliveryInfoID)).append("\n");
-    sb.append("    signedMessageID: ").append(toIndentedString(signedMessageID)).append("\n");
-    sb.append("    signedDeliveryInfoLoaded: ").append(toIndentedString(signedDeliveryInfoLoaded)).append("\n");
-    sb.append("    signedMessageLoaded: ").append(toIndentedString(signedMessageLoaded)).append("\n");
-    sb.append("    qTimestamp: ").append(toIndentedString(qTimestamp)).append("\n");
+    sb.append("    recipientaddress: ").append(toIndentedString(recipientaddress)).append("\n");
+    sb.append("    ambiguousrecipient: ").append(toIndentedString(ambiguousrecipient)).append("\n");
+    sb.append("    senderorgunit: ").append(toIndentedString(senderorgunit)).append("\n");
+    sb.append("    senderorgunitnum: ").append(toIndentedString(senderorgunitnum)).append("\n");
+    sb.append("    recipientorgunit: ").append(toIndentedString(recipientorgunit)).append("\n");
+    sb.append("    recipientorgunitnum: ").append(toIndentedString(recipientorgunitnum)).append("\n");
+    sb.append("    tohands: ").append(toIndentedString(tohands)).append("\n");
+    sb.append("    recipientrefnumber: ").append(toIndentedString(recipientrefnumber)).append("\n");
+    sb.append("    senderrefnumber: ").append(toIndentedString(senderrefnumber)).append("\n");
+    sb.append("    recipientident: ").append(toIndentedString(recipientident)).append("\n");
+    sb.append("    senderident: ").append(toIndentedString(senderident)).append("\n");
+    sb.append("    legaltitlelaw: ").append(toIndentedString(legaltitlelaw)).append("\n");
+    sb.append("    legaltitleyear: ").append(toIndentedString(legaltitleyear)).append("\n");
+    sb.append("    legaltitlesect: ").append(toIndentedString(legaltitlesect)).append("\n");
+    sb.append("    legaltitlepar: ").append(toIndentedString(legaltitlepar)).append("\n");
+    sb.append("    legaltitlepoint: ").append(toIndentedString(legaltitlepoint)).append("\n");
+    sb.append("    personaldelivery: ").append(toIndentedString(personaldelivery)).append("\n");
+    sb.append("    restrictiondeliveryfiction: ").append(toIndentedString(restrictiondeliveryfiction)).append("\n");
+    sb.append("    messagestatus: ").append(toIndentedString(messagestatus)).append("\n");
+    sb.append("    messagestatustext: ").append(toIndentedString(messagestatustext)).append("\n");
+    sb.append("    signeddeliveryinfoId: ").append(toIndentedString(signeddeliveryinfoId)).append("\n");
+    sb.append("    signedmessageId: ").append(toIndentedString(signedmessageId)).append("\n");
+    sb.append("    signeddeliveryinfoloaded: ").append(toIndentedString(signeddeliveryinfoloaded)).append("\n");
+    sb.append("    signedmessageloaded: ").append(toIndentedString(signedmessageloaded)).append("\n");
+    sb.append("    qtimestamp: ").append(toIndentedString(qtimestamp)).append("\n");
     sb.append("    sender: ").append(toIndentedString(sender)).append("\n");
-    sb.append("    iDRecipient: ").append(toIndentedString(iDRecipient)).append("\n");
-    sb.append("    publishOwnID: ").append(toIndentedString(publishOwnID)).append("\n");
-    sb.append("    OVM: ").append(toIndentedString(OVM)).append("\n");
+    sb.append("    idrecipient: ").append(toIndentedString(idrecipient)).append("\n");
+    sb.append("    publishownid: ").append(toIndentedString(publishownid)).append("\n");
+    sb.append("    ovm: ").append(toIndentedString(ovm)).append("\n");
     sb.append("}");
     return sb.toString();
   }

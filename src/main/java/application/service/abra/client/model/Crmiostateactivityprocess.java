@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,96 +34,132 @@ import java.util.Objects;
 /**
  * Crmiostateactivityprocess
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Crmiostateactivityprocess   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("IOStateToType_ID")
-  private String iOStateToTypeID = null;
+  @SerializedName("iostatetotype_id")
+  private String iostatetotypeId = null;
 
-  @SerializedName("ActivityProcess_ID")
-  private String activityProcessID = null;
+  @SerializedName("activityprocess_id")
+  private String activityprocessId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Crmiostateactivityprocess iOStateToTypeID(String iOStateToTypeID) {
-    this.iOStateToTypeID = iOStateToTypeID;
+  public Crmiostateactivityprocess displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Stav nabídky; ID objektu Typ nabídky - možný stav [persistentní položka]
-   * @return iOStateToTypeID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Stav nabídky; ID objektu Typ nabídky - možný stav [persistentní položka]")
-  public String getIOStateToTypeID() {
-    return iOStateToTypeID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setIOStateToTypeID(String iOStateToTypeID) {
-    this.iOStateToTypeID = iOStateToTypeID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Crmiostateactivityprocess activityProcessID(String activityProcessID) {
-    this.activityProcessID = activityProcessID;
+  public Crmiostateactivityprocess id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Proces; ID objektu Proces aktivit [persistentní položka]
-   * @return activityProcessID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Proces; ID objektu Proces aktivit [persistentní položka]")
-  public String getActivityProcessID() {
-    return activityProcessID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setActivityProcessID(String activityProcessID) {
-    this.activityProcessID = activityProcessID;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Crmiostateactivityprocess classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Crmiostateactivityprocess objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Crmiostateactivityprocess iostatetotypeId(String iostatetotypeId) {
+    this.iostatetotypeId = iostatetotypeId;
+    return this;
+  }
+
+   /**
+   * stav nabídky; id objektu typ nabídky - možný stav [persistentní položka]
+   * @return iostatetotypeId
+  **/
+  @ApiModelProperty(example = "null", value = "stav nabídky; id objektu typ nabídky - možný stav [persistentní položka]")
+  public String getIostatetotypeId() {
+    return iostatetotypeId;
+  }
+
+  public void setIostatetotypeId(String iostatetotypeId) {
+    this.iostatetotypeId = iostatetotypeId;
+  }
+
+  public Crmiostateactivityprocess activityprocessId(String activityprocessId) {
+    this.activityprocessId = activityprocessId;
+    return this;
+  }
+
+   /**
+   * proces; id objektu proces aktivit [persistentní položka]
+   * @return activityprocessId
+  **/
+  @ApiModelProperty(example = "null", value = "proces; id objektu proces aktivit [persistentní položka]")
+  public String getActivityprocessId() {
+    return activityprocessId;
+  }
+
+  public void setActivityprocessId(String activityprocessId) {
+    this.activityprocessId = activityprocessId;
   }
 
 
@@ -136,17 +172,17 @@ public class Crmiostateactivityprocess   {
       return false;
     }
     Crmiostateactivityprocess crmiostateactivityprocess = (Crmiostateactivityprocess) o;
-    return Objects.equals(this.displayName, crmiostateactivityprocess.displayName) &&
-        Objects.equals(this.ID, crmiostateactivityprocess.ID) &&
-        Objects.equals(this.classID, crmiostateactivityprocess.classID) &&
-        Objects.equals(this.objVersion, crmiostateactivityprocess.objVersion) &&
-        Objects.equals(this.iOStateToTypeID, crmiostateactivityprocess.iOStateToTypeID) &&
-        Objects.equals(this.activityProcessID, crmiostateactivityprocess.activityProcessID);
+    return Objects.equals(this.displayname, crmiostateactivityprocess.displayname) &&
+        Objects.equals(this.id, crmiostateactivityprocess.id) &&
+        Objects.equals(this.classid, crmiostateactivityprocess.classid) &&
+        Objects.equals(this.objversion, crmiostateactivityprocess.objversion) &&
+        Objects.equals(this.iostatetotypeId, crmiostateactivityprocess.iostatetotypeId) &&
+        Objects.equals(this.activityprocessId, crmiostateactivityprocess.activityprocessId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, iOStateToTypeID, activityProcessID);
+    return Objects.hash(displayname, id, classid, objversion, iostatetotypeId, activityprocessId);
   }
 
   @Override
@@ -154,12 +190,12 @@ public class Crmiostateactivityprocess   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Crmiostateactivityprocess {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    iOStateToTypeID: ").append(toIndentedString(iOStateToTypeID)).append("\n");
-    sb.append("    activityProcessID: ").append(toIndentedString(activityProcessID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    iostatetotypeId: ").append(toIndentedString(iostatetotypeId)).append("\n");
+    sb.append("    activityprocessId: ").append(toIndentedString(activityprocessId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

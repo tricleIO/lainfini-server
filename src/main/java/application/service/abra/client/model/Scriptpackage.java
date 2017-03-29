@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,93 +36,129 @@ import java.util.Objects;
 /**
  * Scriptpackage
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Scriptpackage   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Scriptpackagerow> rows = new ArrayList<Scriptpackagerow>();
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("Compiled")
+  @SerializedName("compiled")
   private Boolean compiled = null;
 
-  @SerializedName("UsageState")
-  private Integer usageState = null;
+  @SerializedName("usagestate")
+  private Integer usagestate = null;
 
-  @SerializedName("RunOrder")
-  private Integer runOrder = null;
+  @SerializedName("runorder")
+  private Integer runorder = null;
 
-  @SerializedName("WithoutSources")
-  private Boolean withoutSources = null;
+  @SerializedName("withoutsources")
+  private Boolean withoutsources = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("HashPassword")
-  private String hashPassword = null;
+  @SerializedName("hashpassword")
+  private String hashpassword = null;
 
-  @SerializedName("CryptForExport")
-  private Boolean cryptForExport = null;
+  @SerializedName("cryptforexport")
+  private Boolean cryptforexport = null;
 
-  @SerializedName("CompileOnSave")
-  private Boolean compileOnSave = null;
+  @SerializedName("compileonsave")
+  private Boolean compileonsave = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Scriptpackage displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Scriptpackage id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Scriptpackage classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Scriptpackage objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Scriptpackage rows(List<Scriptpackagerow> rows) {
@@ -136,10 +172,10 @@ public class Scriptpackage   {
   }
 
    /**
-   * Řádky; kolekce BO Skript [nepersistentní položka]
+   * Řádky; kolekce bo skript [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Skript [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo skript [nepersistentní položka]")
   public List<Scriptpackagerow> getRows() {
     return rows;
   }
@@ -154,10 +190,10 @@ public class Scriptpackage   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -172,10 +208,10 @@ public class Scriptpackage   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -190,10 +226,10 @@ public class Scriptpackage   {
   }
 
    /**
-   * Zkompilováno [persistentní položka]
+   * zkompilováno [persistentní položka]
    * @return compiled
   **/
-  @ApiModelProperty(example = "null", value = "Zkompilováno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "zkompilováno [persistentní položka]")
   public Boolean getCompiled() {
     return compiled;
   }
@@ -202,94 +238,94 @@ public class Scriptpackage   {
     this.compiled = compiled;
   }
 
-  public Scriptpackage usageState(Integer usageState) {
-    this.usageState = usageState;
+  public Scriptpackage usagestate(Integer usagestate) {
+    this.usagestate = usagestate;
     return this;
   }
 
    /**
-   * Stav [persistentní položka]
-   * @return usageState
+   * stav [persistentní položka]
+   * @return usagestate
   **/
-  @ApiModelProperty(example = "null", value = "Stav [persistentní položka]")
-  public Integer getUsageState() {
-    return usageState;
+  @ApiModelProperty(example = "null", value = "stav [persistentní položka]")
+  public Integer getUsagestate() {
+    return usagestate;
   }
 
-  public void setUsageState(Integer usageState) {
-    this.usageState = usageState;
+  public void setUsagestate(Integer usagestate) {
+    this.usagestate = usagestate;
   }
 
-  public Scriptpackage runOrder(Integer runOrder) {
-    this.runOrder = runOrder;
+  public Scriptpackage runorder(Integer runorder) {
+    this.runorder = runorder;
     return this;
   }
 
    /**
-   * Pořadí spouštění [persistentní položka]
-   * @return runOrder
+   * pořadí spouštění [persistentní položka]
+   * @return runorder
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí spouštění [persistentní položka]")
-  public Integer getRunOrder() {
-    return runOrder;
+  @ApiModelProperty(example = "null", value = "pořadí spouštění [persistentní položka]")
+  public Integer getRunorder() {
+    return runorder;
   }
 
-  public void setRunOrder(Integer runOrder) {
-    this.runOrder = runOrder;
+  public void setRunorder(Integer runorder) {
+    this.runorder = runorder;
   }
 
-  public Scriptpackage withoutSources(Boolean withoutSources) {
-    this.withoutSources = withoutSources;
+  public Scriptpackage withoutsources(Boolean withoutsources) {
+    this.withoutsources = withoutsources;
     return this;
   }
 
    /**
-   * Bez zdr.kódu
-   * @return withoutSources
+   * bez zdr.kódu
+   * @return withoutsources
   **/
-  @ApiModelProperty(example = "null", value = "Bez zdr.kódu")
-  public Boolean getWithoutSources() {
-    return withoutSources;
+  @ApiModelProperty(example = "null", value = "bez zdr.kódu")
+  public Boolean getWithoutsources() {
+    return withoutsources;
   }
 
-  public void setWithoutSources(Boolean withoutSources) {
-    this.withoutSources = withoutSources;
+  public void setWithoutsources(Boolean withoutsources) {
+    this.withoutsources = withoutsources;
   }
 
-  public Scriptpackage createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Scriptpackage createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Scriptpackage correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Scriptpackage correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
   public Scriptpackage note(String note) {
@@ -298,10 +334,10 @@ public class Scriptpackage   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -310,58 +346,58 @@ public class Scriptpackage   {
     this.note = note;
   }
 
-  public Scriptpackage hashPassword(String hashPassword) {
-    this.hashPassword = hashPassword;
+  public Scriptpackage hashpassword(String hashpassword) {
+    this.hashpassword = hashpassword;
     return this;
   }
 
    /**
-   * Heslo [persistentní položka]
-   * @return hashPassword
+   * heslo [persistentní položka]
+   * @return hashpassword
   **/
-  @ApiModelProperty(example = "null", value = "Heslo [persistentní položka]")
-  public String getHashPassword() {
-    return hashPassword;
+  @ApiModelProperty(example = "null", value = "heslo [persistentní položka]")
+  public String getHashpassword() {
+    return hashpassword;
   }
 
-  public void setHashPassword(String hashPassword) {
-    this.hashPassword = hashPassword;
+  public void setHashpassword(String hashpassword) {
+    this.hashpassword = hashpassword;
   }
 
-  public Scriptpackage cryptForExport(Boolean cryptForExport) {
-    this.cryptForExport = cryptForExport;
+  public Scriptpackage cryptforexport(Boolean cryptforexport) {
+    this.cryptforexport = cryptforexport;
     return this;
   }
 
    /**
-   * Zakódovat při exportu [persistentní položka]
-   * @return cryptForExport
+   * zakódovat při exportu [persistentní položka]
+   * @return cryptforexport
   **/
-  @ApiModelProperty(example = "null", value = "Zakódovat při exportu [persistentní položka]")
-  public Boolean getCryptForExport() {
-    return cryptForExport;
+  @ApiModelProperty(example = "null", value = "zakódovat při exportu [persistentní položka]")
+  public Boolean getCryptforexport() {
+    return cryptforexport;
   }
 
-  public void setCryptForExport(Boolean cryptForExport) {
-    this.cryptForExport = cryptForExport;
+  public void setCryptforexport(Boolean cryptforexport) {
+    this.cryptforexport = cryptforexport;
   }
 
-  public Scriptpackage compileOnSave(Boolean compileOnSave) {
-    this.compileOnSave = compileOnSave;
+  public Scriptpackage compileonsave(Boolean compileonsave) {
+    this.compileonsave = compileonsave;
     return this;
   }
 
    /**
-   * Zkompilovat při uložení
-   * @return compileOnSave
+   * zkompilovat při uložení
+   * @return compileonsave
   **/
-  @ApiModelProperty(example = "null", value = "Zkompilovat při uložení")
-  public Boolean getCompileOnSave() {
-    return compileOnSave;
+  @ApiModelProperty(example = "null", value = "zkompilovat při uložení")
+  public Boolean getCompileonsave() {
+    return compileonsave;
   }
 
-  public void setCompileOnSave(Boolean compileOnSave) {
-    this.compileOnSave = compileOnSave;
+  public void setCompileonsave(Boolean compileonsave) {
+    this.compileonsave = compileonsave;
   }
 
 
@@ -374,28 +410,28 @@ public class Scriptpackage   {
       return false;
     }
     Scriptpackage scriptpackage = (Scriptpackage) o;
-    return Objects.equals(this.displayName, scriptpackage.displayName) &&
-        Objects.equals(this.ID, scriptpackage.ID) &&
-        Objects.equals(this.classID, scriptpackage.classID) &&
-        Objects.equals(this.objVersion, scriptpackage.objVersion) &&
+    return Objects.equals(this.displayname, scriptpackage.displayname) &&
+        Objects.equals(this.id, scriptpackage.id) &&
+        Objects.equals(this.classid, scriptpackage.classid) &&
+        Objects.equals(this.objversion, scriptpackage.objversion) &&
         Objects.equals(this.rows, scriptpackage.rows) &&
         Objects.equals(this.name, scriptpackage.name) &&
         Objects.equals(this.description, scriptpackage.description) &&
         Objects.equals(this.compiled, scriptpackage.compiled) &&
-        Objects.equals(this.usageState, scriptpackage.usageState) &&
-        Objects.equals(this.runOrder, scriptpackage.runOrder) &&
-        Objects.equals(this.withoutSources, scriptpackage.withoutSources) &&
-        Objects.equals(this.createdByID, scriptpackage.createdByID) &&
-        Objects.equals(this.correctedByID, scriptpackage.correctedByID) &&
+        Objects.equals(this.usagestate, scriptpackage.usagestate) &&
+        Objects.equals(this.runorder, scriptpackage.runorder) &&
+        Objects.equals(this.withoutsources, scriptpackage.withoutsources) &&
+        Objects.equals(this.createdbyId, scriptpackage.createdbyId) &&
+        Objects.equals(this.correctedbyId, scriptpackage.correctedbyId) &&
         Objects.equals(this.note, scriptpackage.note) &&
-        Objects.equals(this.hashPassword, scriptpackage.hashPassword) &&
-        Objects.equals(this.cryptForExport, scriptpackage.cryptForExport) &&
-        Objects.equals(this.compileOnSave, scriptpackage.compileOnSave);
+        Objects.equals(this.hashpassword, scriptpackage.hashpassword) &&
+        Objects.equals(this.cryptforexport, scriptpackage.cryptforexport) &&
+        Objects.equals(this.compileonsave, scriptpackage.compileonsave);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, name, description, compiled, usageState, runOrder, withoutSources, createdByID, correctedByID, note, hashPassword, cryptForExport, compileOnSave);
+    return Objects.hash(displayname, id, classid, objversion, rows, name, description, compiled, usagestate, runorder, withoutsources, createdbyId, correctedbyId, note, hashpassword, cryptforexport, compileonsave);
   }
 
   @Override
@@ -403,23 +439,23 @@ public class Scriptpackage   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Scriptpackage {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    compiled: ").append(toIndentedString(compiled)).append("\n");
-    sb.append("    usageState: ").append(toIndentedString(usageState)).append("\n");
-    sb.append("    runOrder: ").append(toIndentedString(runOrder)).append("\n");
-    sb.append("    withoutSources: ").append(toIndentedString(withoutSources)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
+    sb.append("    usagestate: ").append(toIndentedString(usagestate)).append("\n");
+    sb.append("    runorder: ").append(toIndentedString(runorder)).append("\n");
+    sb.append("    withoutsources: ").append(toIndentedString(withoutsources)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
-    sb.append("    hashPassword: ").append(toIndentedString(hashPassword)).append("\n");
-    sb.append("    cryptForExport: ").append(toIndentedString(cryptForExport)).append("\n");
-    sb.append("    compileOnSave: ").append(toIndentedString(compileOnSave)).append("\n");
+    sb.append("    hashpassword: ").append(toIndentedString(hashpassword)).append("\n");
+    sb.append("    cryptforexport: ").append(toIndentedString(cryptforexport)).append("\n");
+    sb.append("    compileonsave: ").append(toIndentedString(compileonsave)).append("\n");
     sb.append("}");
     return sb.toString();
   }

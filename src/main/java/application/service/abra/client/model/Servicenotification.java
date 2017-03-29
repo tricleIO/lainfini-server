@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,81 +36,117 @@ import java.util.Objects;
 /**
  * Servicenotification
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Servicenotification   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("ServicedObject_ID")
-  private String servicedObjectID = null;
+  @SerializedName("servicedobject_id")
+  private String servicedobjectId = null;
 
-  @SerializedName("FromServiceDocState_ID")
-  private String fromServiceDocStateID = null;
+  @SerializedName("fromservicedocstate_id")
+  private String fromservicedocstateId = null;
 
-  @SerializedName("ToServiceDocState_ID")
-  private String toServiceDocStateID = null;
+  @SerializedName("toservicedocstate_id")
+  private String toservicedocstateId = null;
 
-  @SerializedName("IsActive")
-  private Boolean isActive = null;
+  @SerializedName("isactive")
+  private Boolean isactive = null;
 
-  @SerializedName("ConfirmationRequired")
-  private Boolean confirmationRequired = null;
+  @SerializedName("confirmationrequired")
+  private Boolean confirmationrequired = null;
 
-  @SerializedName("SendImmediately")
-  private Boolean sendImmediately = null;
+  @SerializedName("sendimmediately")
+  private Boolean sendimmediately = null;
 
-  @SerializedName("EmailAccount_ID")
-  private String emailAccountID = null;
+  @SerializedName("emailaccount_id")
+  private String emailaccountId = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Servicenotificationrow> rows = new ArrayList<Servicenotificationrow>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Servicenotification displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Servicenotification id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Servicenotification classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Servicenotification objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Servicenotification hidden(Boolean hidden) {
@@ -119,10 +155,10 @@ public class Servicenotification   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -131,130 +167,130 @@ public class Servicenotification   {
     this.hidden = hidden;
   }
 
-  public Servicenotification servicedObjectID(String servicedObjectID) {
-    this.servicedObjectID = servicedObjectID;
+  public Servicenotification servicedobjectId(String servicedobjectId) {
+    this.servicedobjectId = servicedobjectId;
     return this;
   }
 
    /**
-   * Servisovaný předmět; ID objektu Servisovaný předmět [persistentní položka]
-   * @return servicedObjectID
+   * servisovaný předmět; id objektu servisovaný předmět [persistentní položka]
+   * @return servicedobjectId
   **/
-  @ApiModelProperty(example = "null", value = "Servisovaný předmět; ID objektu Servisovaný předmět [persistentní položka]")
-  public String getServicedObjectID() {
-    return servicedObjectID;
+  @ApiModelProperty(example = "null", value = "servisovaný předmět; id objektu servisovaný předmět [persistentní položka]")
+  public String getServicedobjectId() {
+    return servicedobjectId;
   }
 
-  public void setServicedObjectID(String servicedObjectID) {
-    this.servicedObjectID = servicedObjectID;
+  public void setServicedobjectId(String servicedobjectId) {
+    this.servicedobjectId = servicedobjectId;
   }
 
-  public Servicenotification fromServiceDocStateID(String fromServiceDocStateID) {
-    this.fromServiceDocStateID = fromServiceDocStateID;
+  public Servicenotification fromservicedocstateId(String fromservicedocstateId) {
+    this.fromservicedocstateId = fromservicedocstateId;
     return this;
   }
 
    /**
-   * Výchozí stav serv.listu; ID objektu Stav servisního listu [persistentní položka]
-   * @return fromServiceDocStateID
+   * výchozí stav serv.listu; id objektu stav servisního listu [persistentní položka]
+   * @return fromservicedocstateId
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí stav serv.listu; ID objektu Stav servisního listu [persistentní položka]")
-  public String getFromServiceDocStateID() {
-    return fromServiceDocStateID;
+  @ApiModelProperty(example = "null", value = "výchozí stav serv.listu; id objektu stav servisního listu [persistentní položka]")
+  public String getFromservicedocstateId() {
+    return fromservicedocstateId;
   }
 
-  public void setFromServiceDocStateID(String fromServiceDocStateID) {
-    this.fromServiceDocStateID = fromServiceDocStateID;
+  public void setFromservicedocstateId(String fromservicedocstateId) {
+    this.fromservicedocstateId = fromservicedocstateId;
   }
 
-  public Servicenotification toServiceDocStateID(String toServiceDocStateID) {
-    this.toServiceDocStateID = toServiceDocStateID;
+  public Servicenotification toservicedocstateId(String toservicedocstateId) {
+    this.toservicedocstateId = toservicedocstateId;
     return this;
   }
 
    /**
-   * Aktuální stav serv.listu; ID objektu Stav servisního listu [persistentní položka]
-   * @return toServiceDocStateID
+   * aktuální stav serv.listu; id objektu stav servisního listu [persistentní položka]
+   * @return toservicedocstateId
   **/
-  @ApiModelProperty(example = "null", value = "Aktuální stav serv.listu; ID objektu Stav servisního listu [persistentní položka]")
-  public String getToServiceDocStateID() {
-    return toServiceDocStateID;
+  @ApiModelProperty(example = "null", value = "aktuální stav serv.listu; id objektu stav servisního listu [persistentní položka]")
+  public String getToservicedocstateId() {
+    return toservicedocstateId;
   }
 
-  public void setToServiceDocStateID(String toServiceDocStateID) {
-    this.toServiceDocStateID = toServiceDocStateID;
+  public void setToservicedocstateId(String toservicedocstateId) {
+    this.toservicedocstateId = toservicedocstateId;
   }
 
-  public Servicenotification isActive(Boolean isActive) {
-    this.isActive = isActive;
+  public Servicenotification isactive(Boolean isactive) {
+    this.isactive = isactive;
     return this;
   }
 
    /**
-   * Aktivní [persistentní položka]
-   * @return isActive
+   * aktivní [persistentní položka]
+   * @return isactive
   **/
-  @ApiModelProperty(example = "null", value = "Aktivní [persistentní položka]")
-  public Boolean getIsActive() {
-    return isActive;
+  @ApiModelProperty(example = "null", value = "aktivní [persistentní položka]")
+  public Boolean getIsactive() {
+    return isactive;
   }
 
-  public void setIsActive(Boolean isActive) {
-    this.isActive = isActive;
+  public void setIsactive(Boolean isactive) {
+    this.isactive = isactive;
   }
 
-  public Servicenotification confirmationRequired(Boolean confirmationRequired) {
-    this.confirmationRequired = confirmationRequired;
+  public Servicenotification confirmationrequired(Boolean confirmationrequired) {
+    this.confirmationrequired = confirmationrequired;
     return this;
   }
 
    /**
-   * Potvrdit [persistentní položka]
-   * @return confirmationRequired
+   * potvrdit [persistentní položka]
+   * @return confirmationrequired
   **/
-  @ApiModelProperty(example = "null", value = "Potvrdit [persistentní položka]")
-  public Boolean getConfirmationRequired() {
-    return confirmationRequired;
+  @ApiModelProperty(example = "null", value = "potvrdit [persistentní položka]")
+  public Boolean getConfirmationrequired() {
+    return confirmationrequired;
   }
 
-  public void setConfirmationRequired(Boolean confirmationRequired) {
-    this.confirmationRequired = confirmationRequired;
+  public void setConfirmationrequired(Boolean confirmationrequired) {
+    this.confirmationrequired = confirmationrequired;
   }
 
-  public Servicenotification sendImmediately(Boolean sendImmediately) {
-    this.sendImmediately = sendImmediately;
+  public Servicenotification sendimmediately(Boolean sendimmediately) {
+    this.sendimmediately = sendimmediately;
     return this;
   }
 
    /**
-   * Odeslat ihned [persistentní položka]
-   * @return sendImmediately
+   * odeslat ihned [persistentní položka]
+   * @return sendimmediately
   **/
-  @ApiModelProperty(example = "null", value = "Odeslat ihned [persistentní položka]")
-  public Boolean getSendImmediately() {
-    return sendImmediately;
+  @ApiModelProperty(example = "null", value = "odeslat ihned [persistentní položka]")
+  public Boolean getSendimmediately() {
+    return sendimmediately;
   }
 
-  public void setSendImmediately(Boolean sendImmediately) {
-    this.sendImmediately = sendImmediately;
+  public void setSendimmediately(Boolean sendimmediately) {
+    this.sendimmediately = sendimmediately;
   }
 
-  public Servicenotification emailAccountID(String emailAccountID) {
-    this.emailAccountID = emailAccountID;
+  public Servicenotification emailaccountId(String emailaccountId) {
+    this.emailaccountId = emailaccountId;
     return this;
   }
 
    /**
-   * E-mailový účet; ID objektu E-mailový účet [persistentní položka]
-   * @return emailAccountID
+   * e-mailový účet; id objektu e-mailový účet [persistentní položka]
+   * @return emailaccountId
   **/
-  @ApiModelProperty(example = "null", value = "E-mailový účet; ID objektu E-mailový účet [persistentní položka]")
-  public String getEmailAccountID() {
-    return emailAccountID;
+  @ApiModelProperty(example = "null", value = "e-mailový účet; id objektu e-mailový účet [persistentní položka]")
+  public String getEmailaccountId() {
+    return emailaccountId;
   }
 
-  public void setEmailAccountID(String emailAccountID) {
-    this.emailAccountID = emailAccountID;
+  public void setEmailaccountId(String emailaccountId) {
+    this.emailaccountId = emailaccountId;
   }
 
   public Servicenotification rows(List<Servicenotificationrow> rows) {
@@ -268,10 +304,10 @@ public class Servicenotification   {
   }
 
    /**
-   * Řádek notifikace; kolekce BO Řádek notifikace stavu serv.listu [nepersistentní položka]
+   * Řádek notifikace; kolekce bo Řádek notifikace stavu serv.listu [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádek notifikace; kolekce BO Řádek notifikace stavu serv.listu [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádek notifikace; kolekce bo Řádek notifikace stavu serv.listu [nepersistentní položka]")
   public List<Servicenotificationrow> getRows() {
     return rows;
   }
@@ -290,24 +326,24 @@ public class Servicenotification   {
       return false;
     }
     Servicenotification servicenotification = (Servicenotification) o;
-    return Objects.equals(this.displayName, servicenotification.displayName) &&
-        Objects.equals(this.ID, servicenotification.ID) &&
-        Objects.equals(this.classID, servicenotification.classID) &&
-        Objects.equals(this.objVersion, servicenotification.objVersion) &&
+    return Objects.equals(this.displayname, servicenotification.displayname) &&
+        Objects.equals(this.id, servicenotification.id) &&
+        Objects.equals(this.classid, servicenotification.classid) &&
+        Objects.equals(this.objversion, servicenotification.objversion) &&
         Objects.equals(this.hidden, servicenotification.hidden) &&
-        Objects.equals(this.servicedObjectID, servicenotification.servicedObjectID) &&
-        Objects.equals(this.fromServiceDocStateID, servicenotification.fromServiceDocStateID) &&
-        Objects.equals(this.toServiceDocStateID, servicenotification.toServiceDocStateID) &&
-        Objects.equals(this.isActive, servicenotification.isActive) &&
-        Objects.equals(this.confirmationRequired, servicenotification.confirmationRequired) &&
-        Objects.equals(this.sendImmediately, servicenotification.sendImmediately) &&
-        Objects.equals(this.emailAccountID, servicenotification.emailAccountID) &&
+        Objects.equals(this.servicedobjectId, servicenotification.servicedobjectId) &&
+        Objects.equals(this.fromservicedocstateId, servicenotification.fromservicedocstateId) &&
+        Objects.equals(this.toservicedocstateId, servicenotification.toservicedocstateId) &&
+        Objects.equals(this.isactive, servicenotification.isactive) &&
+        Objects.equals(this.confirmationrequired, servicenotification.confirmationrequired) &&
+        Objects.equals(this.sendimmediately, servicenotification.sendimmediately) &&
+        Objects.equals(this.emailaccountId, servicenotification.emailaccountId) &&
         Objects.equals(this.rows, servicenotification.rows);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, servicedObjectID, fromServiceDocStateID, toServiceDocStateID, isActive, confirmationRequired, sendImmediately, emailAccountID, rows);
+    return Objects.hash(displayname, id, classid, objversion, hidden, servicedobjectId, fromservicedocstateId, toservicedocstateId, isactive, confirmationrequired, sendimmediately, emailaccountId, rows);
   }
 
   @Override
@@ -315,18 +351,18 @@ public class Servicenotification   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Servicenotification {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    servicedObjectID: ").append(toIndentedString(servicedObjectID)).append("\n");
-    sb.append("    fromServiceDocStateID: ").append(toIndentedString(fromServiceDocStateID)).append("\n");
-    sb.append("    toServiceDocStateID: ").append(toIndentedString(toServiceDocStateID)).append("\n");
-    sb.append("    isActive: ").append(toIndentedString(isActive)).append("\n");
-    sb.append("    confirmationRequired: ").append(toIndentedString(confirmationRequired)).append("\n");
-    sb.append("    sendImmediately: ").append(toIndentedString(sendImmediately)).append("\n");
-    sb.append("    emailAccountID: ").append(toIndentedString(emailAccountID)).append("\n");
+    sb.append("    servicedobjectId: ").append(toIndentedString(servicedobjectId)).append("\n");
+    sb.append("    fromservicedocstateId: ").append(toIndentedString(fromservicedocstateId)).append("\n");
+    sb.append("    toservicedocstateId: ").append(toIndentedString(toservicedocstateId)).append("\n");
+    sb.append("    isactive: ").append(toIndentedString(isactive)).append("\n");
+    sb.append("    confirmationrequired: ").append(toIndentedString(confirmationrequired)).append("\n");
+    sb.append("    sendimmediately: ").append(toIndentedString(sendimmediately)).append("\n");
+    sb.append("    emailaccountId: ").append(toIndentedString(emailaccountId)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("}");
     return sb.toString();

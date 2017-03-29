@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,147 +35,183 @@ import java.util.Objects;
 /**
  * Storepricesrequest
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Storepricesrequest   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("PriceList_ID")
-  private String priceListID = null;
+  @SerializedName("pricelist_id")
+  private String pricelistId = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("Price_ID")
-  private String priceID = null;
+  @SerializedName("price_id")
+  private String priceId = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CreatedDate$DATE")
-  private DateTime createdDateDATE = null;
+  @SerializedName("createddate$date")
+  private DateTime createddatedate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Storepricesrequest priceListID(String priceListID) {
-    this.priceListID = priceListID;
+  public Storepricesrequest displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Ceník; ID objektu Ceník [persistentní položka]
-   * @return priceListID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Ceník; ID objektu Ceník [persistentní položka]")
-  public String getPriceListID() {
-    return priceListID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPriceListID(String priceListID) {
-    this.priceListID = priceListID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Storepricesrequest storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Storepricesrequest id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Skl. karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Skl. karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Storepricesrequest qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Storepricesrequest classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Storepricesrequest priceID(String priceID) {
-    this.priceID = priceID;
+  public Storepricesrequest objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Typ ceny; ID objektu Definice ceny [persistentní položka]
-   * @return priceID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Typ ceny; ID objektu Definice ceny [persistentní položka]")
-  public String getPriceID() {
-    return priceID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setPriceID(String priceID) {
-    this.priceID = priceID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Storepricesrequest pricelistId(String pricelistId) {
+    this.pricelistId = pricelistId;
+    return this;
+  }
+
+   /**
+   * ceník; id objektu ceník [persistentní položka]
+   * @return pricelistId
+  **/
+  @ApiModelProperty(example = "null", value = "ceník; id objektu ceník [persistentní položka]")
+  public String getPricelistId() {
+    return pricelistId;
+  }
+
+  public void setPricelistId(String pricelistId) {
+    this.pricelistId = pricelistId;
+  }
+
+  public Storepricesrequest storecardId(String storecardId) {
+    this.storecardId = storecardId;
+    return this;
+  }
+
+   /**
+   * skl. karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
+  **/
+  @ApiModelProperty(example = "null", value = "skl. karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
+  }
+
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
+  }
+
+  public Storepricesrequest qunit(String qunit) {
+    this.qunit = qunit;
+    return this;
+  }
+
+   /**
+   * jednotka [persistentní položka]
+   * @return qunit
+  **/
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
+  }
+
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
+  }
+
+  public Storepricesrequest priceId(String priceId) {
+    this.priceId = priceId;
+    return this;
+  }
+
+   /**
+   * typ ceny; id objektu definice ceny [persistentní položka]
+   * @return priceId
+  **/
+  @ApiModelProperty(example = "null", value = "typ ceny; id objektu definice ceny [persistentní položka]")
+  public String getPriceId() {
+    return priceId;
+  }
+
+  public void setPriceId(String priceId) {
+    this.priceId = priceId;
   }
 
   public Storepricesrequest amount(Double amount) {
@@ -184,10 +220,10 @@ public class Storepricesrequest   {
   }
 
    /**
-   * Cena [persistentní položka]
+   * cena [persistentní položka]
    * @return amount
   **/
-  @ApiModelProperty(example = "null", value = "Cena [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "cena [persistentní položka]")
   public Double getAmount() {
     return amount;
   }
@@ -196,40 +232,40 @@ public class Storepricesrequest   {
     this.amount = amount;
   }
 
-  public Storepricesrequest createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Storepricesrequest createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Storepricesrequest createdDateDATE(DateTime createdDateDATE) {
-    this.createdDateDATE = createdDateDATE;
+  public Storepricesrequest createddatedate(DateTime createddatedate) {
+    this.createddatedate = createddatedate;
     return this;
   }
 
    /**
-   * Vytvořeno [persistentní položka]
-   * @return createdDateDATE
+   * vytvořeno [persistentní položka]
+   * @return createddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořeno [persistentní položka]")
-  public DateTime getCreatedDateDATE() {
-    return createdDateDATE;
+  @ApiModelProperty(example = "null", value = "vytvořeno [persistentní položka]")
+  public DateTime getCreateddatedate() {
+    return createddatedate;
   }
 
-  public void setCreatedDateDATE(DateTime createdDateDATE) {
-    this.createdDateDATE = createdDateDATE;
+  public void setCreateddatedate(DateTime createddatedate) {
+    this.createddatedate = createddatedate;
   }
 
 
@@ -242,22 +278,22 @@ public class Storepricesrequest   {
       return false;
     }
     Storepricesrequest storepricesrequest = (Storepricesrequest) o;
-    return Objects.equals(this.displayName, storepricesrequest.displayName) &&
-        Objects.equals(this.ID, storepricesrequest.ID) &&
-        Objects.equals(this.classID, storepricesrequest.classID) &&
-        Objects.equals(this.objVersion, storepricesrequest.objVersion) &&
-        Objects.equals(this.priceListID, storepricesrequest.priceListID) &&
-        Objects.equals(this.storeCardID, storepricesrequest.storeCardID) &&
-        Objects.equals(this.qUnit, storepricesrequest.qUnit) &&
-        Objects.equals(this.priceID, storepricesrequest.priceID) &&
+    return Objects.equals(this.displayname, storepricesrequest.displayname) &&
+        Objects.equals(this.id, storepricesrequest.id) &&
+        Objects.equals(this.classid, storepricesrequest.classid) &&
+        Objects.equals(this.objversion, storepricesrequest.objversion) &&
+        Objects.equals(this.pricelistId, storepricesrequest.pricelistId) &&
+        Objects.equals(this.storecardId, storepricesrequest.storecardId) &&
+        Objects.equals(this.qunit, storepricesrequest.qunit) &&
+        Objects.equals(this.priceId, storepricesrequest.priceId) &&
         Objects.equals(this.amount, storepricesrequest.amount) &&
-        Objects.equals(this.createdByID, storepricesrequest.createdByID) &&
-        Objects.equals(this.createdDateDATE, storepricesrequest.createdDateDATE);
+        Objects.equals(this.createdbyId, storepricesrequest.createdbyId) &&
+        Objects.equals(this.createddatedate, storepricesrequest.createddatedate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, priceListID, storeCardID, qUnit, priceID, amount, createdByID, createdDateDATE);
+    return Objects.hash(displayname, id, classid, objversion, pricelistId, storecardId, qunit, priceId, amount, createdbyId, createddatedate);
   }
 
   @Override
@@ -265,17 +301,17 @@ public class Storepricesrequest   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Storepricesrequest {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    priceListID: ").append(toIndentedString(priceListID)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    priceID: ").append(toIndentedString(priceID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    pricelistId: ").append(toIndentedString(pricelistId)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    priceId: ").append(toIndentedString(priceId)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    createdDateDATE: ").append(toIndentedString(createdDateDATE)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    createddatedate: ").append(toIndentedString(createddatedate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

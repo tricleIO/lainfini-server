@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,99 +36,135 @@ import java.util.Objects;
 /**
  * Execcalcchart
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Execcalcchart   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Execcalcexpression> rows = new ArrayList<Execcalcexpression>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-  @SerializedName("CLSID")
-  private String CLSID = null;
+  @SerializedName("clsid")
+  private String clsid = null;
 
-  @SerializedName("Specification")
+  @SerializedName("specification")
   private Integer specification = null;
 
-  @SerializedName("CLSIDName")
-  private String cLSIDName = null;
+  @SerializedName("clsidname")
+  private String clsidname = null;
 
-  @SerializedName("CalcFieldsSpecialBehaviour")
-  private Boolean calcFieldsSpecialBehaviour = null;
+  @SerializedName("calcfieldsspecialbehaviour")
+  private Boolean calcfieldsspecialbehaviour = null;
 
-  @SerializedName("UserCalcFieldsSpecialBehaviour")
-  private Integer userCalcFieldsSpecialBehaviour = null;
+  @SerializedName("usercalcfieldsspecialbehaviour")
+  private Integer usercalcfieldsspecialbehaviour = null;
 
-  @SerializedName("SourceChart_ID")
-  private String sourceChartID = null;
+  @SerializedName("sourcechart_id")
+  private String sourcechartId = null;
 
-  @SerializedName("Copied")
+  @SerializedName("copied")
   private Boolean copied = null;
 
-  @SerializedName("Scripts")
+  @SerializedName("scripts")
   private List<Execcalcchartscript> scripts = new ArrayList<Execcalcchartscript>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Execcalcchart displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Execcalcchart id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Execcalcchart classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Execcalcchart objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Execcalcchart rows(List<Execcalcexpression> rows) {
@@ -142,10 +178,10 @@ public class Execcalcchart   {
   }
 
    /**
-   * Položky; kolekce BO Výpočtový vzorec při výpočtu [nepersistentní položka]
+   * položky; kolekce bo výpočtový vzorec při výpočtu [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Položky; kolekce BO Výpočtový vzorec při výpočtu [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "položky; kolekce bo výpočtový vzorec při výpočtu [nepersistentní položka]")
   public List<Execcalcexpression> getRows() {
     return rows;
   }
@@ -160,10 +196,10 @@ public class Execcalcchart   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -172,40 +208,40 @@ public class Execcalcchart   {
     this.hidden = hidden;
   }
 
-  public Execcalcchart createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Execcalcchart createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Execcalcchart correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Execcalcchart correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
   public Execcalcchart code(String code) {
@@ -214,10 +250,10 @@ public class Execcalcchart   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -232,10 +268,10 @@ public class Execcalcchart   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -250,10 +286,10 @@ public class Execcalcchart   {
   }
 
    /**
-   * Syst. [persistentní položka]
+   * syst. [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Syst. [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "syst. [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -262,22 +298,22 @@ public class Execcalcchart   {
     this.system = system;
   }
 
-  public Execcalcchart CLSID(String CLSID) {
-    this.CLSID = CLSID;
+  public Execcalcchart clsid(String clsid) {
+    this.clsid = clsid;
     return this;
   }
 
    /**
-   * Třída objektu [persistentní položka]
-   * @return CLSID
+   * třída objektu [persistentní položka]
+   * @return clsid
   **/
-  @ApiModelProperty(example = "null", value = "Třída objektu [persistentní položka]")
-  public String getCLSID() {
-    return CLSID;
+  @ApiModelProperty(example = "null", value = "třída objektu [persistentní položka]")
+  public String getClsid() {
+    return clsid;
   }
 
-  public void setCLSID(String CLSID) {
-    this.CLSID = CLSID;
+  public void setClsid(String clsid) {
+    this.clsid = clsid;
   }
 
   public Execcalcchart specification(Integer specification) {
@@ -286,10 +322,10 @@ public class Execcalcchart   {
   }
 
    /**
-   * Specifikace [persistentní položka]
+   * specifikace [persistentní položka]
    * @return specification
   **/
-  @ApiModelProperty(example = "null", value = "Specifikace [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "specifikace [persistentní položka]")
   public Integer getSpecification() {
     return specification;
   }
@@ -298,76 +334,76 @@ public class Execcalcchart   {
     this.specification = specification;
   }
 
-  public Execcalcchart cLSIDName(String cLSIDName) {
-    this.cLSIDName = cLSIDName;
+  public Execcalcchart clsidname(String clsidname) {
+    this.clsidname = clsidname;
     return this;
   }
 
    /**
-   * Třída
-   * @return cLSIDName
+   * třída
+   * @return clsidname
   **/
-  @ApiModelProperty(example = "null", value = "Třída")
-  public String getCLSIDName() {
-    return cLSIDName;
+  @ApiModelProperty(example = "null", value = "třída")
+  public String getClsidname() {
+    return clsidname;
   }
 
-  public void setCLSIDName(String cLSIDName) {
-    this.cLSIDName = cLSIDName;
+  public void setClsidname(String clsidname) {
+    this.clsidname = clsidname;
   }
 
-  public Execcalcchart calcFieldsSpecialBehaviour(Boolean calcFieldsSpecialBehaviour) {
-    this.calcFieldsSpecialBehaviour = calcFieldsSpecialBehaviour;
+  public Execcalcchart calcfieldsspecialbehaviour(Boolean calcfieldsspecialbehaviour) {
+    this.calcfieldsspecialbehaviour = calcfieldsspecialbehaviour;
     return this;
   }
 
    /**
-   * Způsob součtování [persistentní položka]
-   * @return calcFieldsSpecialBehaviour
+   * způsob součtování [persistentní položka]
+   * @return calcfieldsspecialbehaviour
   **/
-  @ApiModelProperty(example = "null", value = "Způsob součtování [persistentní položka]")
-  public Boolean getCalcFieldsSpecialBehaviour() {
-    return calcFieldsSpecialBehaviour;
+  @ApiModelProperty(example = "null", value = "způsob součtování [persistentní položka]")
+  public Boolean getCalcfieldsspecialbehaviour() {
+    return calcfieldsspecialbehaviour;
   }
 
-  public void setCalcFieldsSpecialBehaviour(Boolean calcFieldsSpecialBehaviour) {
-    this.calcFieldsSpecialBehaviour = calcFieldsSpecialBehaviour;
+  public void setCalcfieldsspecialbehaviour(Boolean calcfieldsspecialbehaviour) {
+    this.calcfieldsspecialbehaviour = calcfieldsspecialbehaviour;
   }
 
-  public Execcalcchart userCalcFieldsSpecialBehaviour(Integer userCalcFieldsSpecialBehaviour) {
-    this.userCalcFieldsSpecialBehaviour = userCalcFieldsSpecialBehaviour;
+  public Execcalcchart usercalcfieldsspecialbehaviour(Integer usercalcfieldsspecialbehaviour) {
+    this.usercalcfieldsspecialbehaviour = usercalcfieldsspecialbehaviour;
     return this;
   }
 
    /**
-   * Způsob součtování - uživ. část
-   * @return userCalcFieldsSpecialBehaviour
+   * způsob součtování - uživ. část
+   * @return usercalcfieldsspecialbehaviour
   **/
-  @ApiModelProperty(example = "null", value = "Způsob součtování - uživ. část")
-  public Integer getUserCalcFieldsSpecialBehaviour() {
-    return userCalcFieldsSpecialBehaviour;
+  @ApiModelProperty(example = "null", value = "způsob součtování - uživ. část")
+  public Integer getUsercalcfieldsspecialbehaviour() {
+    return usercalcfieldsspecialbehaviour;
   }
 
-  public void setUserCalcFieldsSpecialBehaviour(Integer userCalcFieldsSpecialBehaviour) {
-    this.userCalcFieldsSpecialBehaviour = userCalcFieldsSpecialBehaviour;
+  public void setUsercalcfieldsspecialbehaviour(Integer usercalcfieldsspecialbehaviour) {
+    this.usercalcfieldsspecialbehaviour = usercalcfieldsspecialbehaviour;
   }
 
-  public Execcalcchart sourceChartID(String sourceChartID) {
-    this.sourceChartID = sourceChartID;
+  public Execcalcchart sourcechartId(String sourcechartId) {
+    this.sourcechartId = sourcechartId;
     return this;
   }
 
    /**
-   * Zdrojový vzorec; ID objektu Výpočtové schéma [persistentní položka]
-   * @return sourceChartID
+   * zdrojový vzorec; id objektu výpočtové schéma [persistentní položka]
+   * @return sourcechartId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojový vzorec; ID objektu Výpočtové schéma [persistentní položka]")
-  public String getSourceChartID() {
-    return sourceChartID;
+  @ApiModelProperty(example = "null", value = "zdrojový vzorec; id objektu výpočtové schéma [persistentní položka]")
+  public String getSourcechartId() {
+    return sourcechartId;
   }
 
-  public void setSourceChartID(String sourceChartID) {
-    this.sourceChartID = sourceChartID;
+  public void setSourcechartId(String sourcechartId) {
+    this.sourcechartId = sourcechartId;
   }
 
   public Execcalcchart copied(Boolean copied) {
@@ -376,10 +412,10 @@ public class Execcalcchart   {
   }
 
    /**
-   * Kopie [persistentní položka]
+   * kopie [persistentní položka]
    * @return copied
   **/
-  @ApiModelProperty(example = "null", value = "Kopie [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kopie [persistentní položka]")
   public Boolean getCopied() {
     return copied;
   }
@@ -399,10 +435,10 @@ public class Execcalcchart   {
   }
 
    /**
-   * Skripty; kolekce BO Skripty výpočtového vzorce při výpočtu [nepersistentní položka]
+   * skripty; kolekce bo skripty výpočtového vzorce při výpočtu [nepersistentní položka]
    * @return scripts
   **/
-  @ApiModelProperty(example = "null", value = "Skripty; kolekce BO Skripty výpočtového vzorce při výpočtu [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "skripty; kolekce bo skripty výpočtového vzorce při výpočtu [nepersistentní položka]")
   public List<Execcalcchartscript> getScripts() {
     return scripts;
   }
@@ -421,30 +457,30 @@ public class Execcalcchart   {
       return false;
     }
     Execcalcchart execcalcchart = (Execcalcchart) o;
-    return Objects.equals(this.displayName, execcalcchart.displayName) &&
-        Objects.equals(this.ID, execcalcchart.ID) &&
-        Objects.equals(this.classID, execcalcchart.classID) &&
-        Objects.equals(this.objVersion, execcalcchart.objVersion) &&
+    return Objects.equals(this.displayname, execcalcchart.displayname) &&
+        Objects.equals(this.id, execcalcchart.id) &&
+        Objects.equals(this.classid, execcalcchart.classid) &&
+        Objects.equals(this.objversion, execcalcchart.objversion) &&
         Objects.equals(this.rows, execcalcchart.rows) &&
         Objects.equals(this.hidden, execcalcchart.hidden) &&
-        Objects.equals(this.createdByID, execcalcchart.createdByID) &&
-        Objects.equals(this.correctedByID, execcalcchart.correctedByID) &&
+        Objects.equals(this.createdbyId, execcalcchart.createdbyId) &&
+        Objects.equals(this.correctedbyId, execcalcchart.correctedbyId) &&
         Objects.equals(this.code, execcalcchart.code) &&
         Objects.equals(this.name, execcalcchart.name) &&
         Objects.equals(this.system, execcalcchart.system) &&
-        Objects.equals(this.CLSID, execcalcchart.CLSID) &&
+        Objects.equals(this.clsid, execcalcchart.clsid) &&
         Objects.equals(this.specification, execcalcchart.specification) &&
-        Objects.equals(this.cLSIDName, execcalcchart.cLSIDName) &&
-        Objects.equals(this.calcFieldsSpecialBehaviour, execcalcchart.calcFieldsSpecialBehaviour) &&
-        Objects.equals(this.userCalcFieldsSpecialBehaviour, execcalcchart.userCalcFieldsSpecialBehaviour) &&
-        Objects.equals(this.sourceChartID, execcalcchart.sourceChartID) &&
+        Objects.equals(this.clsidname, execcalcchart.clsidname) &&
+        Objects.equals(this.calcfieldsspecialbehaviour, execcalcchart.calcfieldsspecialbehaviour) &&
+        Objects.equals(this.usercalcfieldsspecialbehaviour, execcalcchart.usercalcfieldsspecialbehaviour) &&
+        Objects.equals(this.sourcechartId, execcalcchart.sourcechartId) &&
         Objects.equals(this.copied, execcalcchart.copied) &&
         Objects.equals(this.scripts, execcalcchart.scripts);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, createdByID, correctedByID, code, name, system, CLSID, specification, cLSIDName, calcFieldsSpecialBehaviour, userCalcFieldsSpecialBehaviour, sourceChartID, copied, scripts);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, createdbyId, correctedbyId, code, name, system, clsid, specification, clsidname, calcfieldsspecialbehaviour, usercalcfieldsspecialbehaviour, sourcechartId, copied, scripts);
   }
 
   @Override
@@ -452,23 +488,23 @@ public class Execcalcchart   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Execcalcchart {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
-    sb.append("    CLSID: ").append(toIndentedString(CLSID)).append("\n");
+    sb.append("    clsid: ").append(toIndentedString(clsid)).append("\n");
     sb.append("    specification: ").append(toIndentedString(specification)).append("\n");
-    sb.append("    cLSIDName: ").append(toIndentedString(cLSIDName)).append("\n");
-    sb.append("    calcFieldsSpecialBehaviour: ").append(toIndentedString(calcFieldsSpecialBehaviour)).append("\n");
-    sb.append("    userCalcFieldsSpecialBehaviour: ").append(toIndentedString(userCalcFieldsSpecialBehaviour)).append("\n");
-    sb.append("    sourceChartID: ").append(toIndentedString(sourceChartID)).append("\n");
+    sb.append("    clsidname: ").append(toIndentedString(clsidname)).append("\n");
+    sb.append("    calcfieldsspecialbehaviour: ").append(toIndentedString(calcfieldsspecialbehaviour)).append("\n");
+    sb.append("    usercalcfieldsspecialbehaviour: ").append(toIndentedString(usercalcfieldsspecialbehaviour)).append("\n");
+    sb.append("    sourcechartId: ").append(toIndentedString(sourcechartId)).append("\n");
     sb.append("    copied: ").append(toIndentedString(copied)).append("\n");
     sb.append("    scripts: ").append(toIndentedString(scripts)).append("\n");
     sb.append("}");

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,108 +34,153 @@ import java.util.Objects;
 /**
  * Wagenoticeemployee
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wagenoticeemployee   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Employee_ID")
-  private String employeeID = null;
+  @SerializedName("employee_id")
+  private String employeeId = null;
 
-  @SerializedName("EmployeeName")
-  private String employeeName = null;
+  @SerializedName("employeename")
+  private String employeename = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Hlavičkový objekt [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Hlavičkový objekt [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Wagenoticeemployee employeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public Wagenoticeemployee displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Zaměstnanec; ID objektu Zaměstnanec [persistentní položka]
-   * @return employeeID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Zaměstnanec; ID objektu Zaměstnanec [persistentní položka]")
-  public String getEmployeeID() {
-    return employeeID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setEmployeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Wagenoticeemployee employeeName(String employeeName) {
-    this.employeeName = employeeName;
+  public Wagenoticeemployee id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Příjmení a jméno
-   * @return employeeName
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Příjmení a jméno")
-  public String getEmployeeName() {
-    return employeeName;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setEmployeeName(String employeeName) {
-    this.employeeName = employeeName;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wagenoticeemployee classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wagenoticeemployee objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Wagenoticeemployee parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu hlavičkový objekt [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu hlavičkový objekt [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Wagenoticeemployee employeeId(String employeeId) {
+    this.employeeId = employeeId;
+    return this;
+  }
+
+   /**
+   * zaměstnanec; id objektu zaměstnanec [persistentní položka]
+   * @return employeeId
+  **/
+  @ApiModelProperty(example = "null", value = "zaměstnanec; id objektu zaměstnanec [persistentní položka]")
+  public String getEmployeeId() {
+    return employeeId;
+  }
+
+  public void setEmployeeId(String employeeId) {
+    this.employeeId = employeeId;
+  }
+
+  public Wagenoticeemployee employeename(String employeename) {
+    this.employeename = employeename;
+    return this;
+  }
+
+   /**
+   * příjmení a jméno
+   * @return employeename
+  **/
+  @ApiModelProperty(example = "null", value = "příjmení a jméno")
+  public String getEmployeename() {
+    return employeename;
+  }
+
+  public void setEmployeename(String employeename) {
+    this.employeename = employeename;
   }
 
 
@@ -148,18 +193,18 @@ public class Wagenoticeemployee   {
       return false;
     }
     Wagenoticeemployee wagenoticeemployee = (Wagenoticeemployee) o;
-    return Objects.equals(this.displayName, wagenoticeemployee.displayName) &&
-        Objects.equals(this.ID, wagenoticeemployee.ID) &&
-        Objects.equals(this.classID, wagenoticeemployee.classID) &&
-        Objects.equals(this.objVersion, wagenoticeemployee.objVersion) &&
-        Objects.equals(this.parentID, wagenoticeemployee.parentID) &&
-        Objects.equals(this.employeeID, wagenoticeemployee.employeeID) &&
-        Objects.equals(this.employeeName, wagenoticeemployee.employeeName);
+    return Objects.equals(this.displayname, wagenoticeemployee.displayname) &&
+        Objects.equals(this.id, wagenoticeemployee.id) &&
+        Objects.equals(this.classid, wagenoticeemployee.classid) &&
+        Objects.equals(this.objversion, wagenoticeemployee.objversion) &&
+        Objects.equals(this.parentId, wagenoticeemployee.parentId) &&
+        Objects.equals(this.employeeId, wagenoticeemployee.employeeId) &&
+        Objects.equals(this.employeename, wagenoticeemployee.employeename);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, employeeID, employeeName);
+    return Objects.hash(displayname, id, classid, objversion, parentId, employeeId, employeename);
   }
 
   @Override
@@ -167,13 +212,13 @@ public class Wagenoticeemployee   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wagenoticeemployee {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    employeeID: ").append(toIndentedString(employeeID)).append("\n");
-    sb.append("    employeeName: ").append(toIndentedString(employeeName)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    employeeId: ").append(toIndentedString(employeeId)).append("\n");
+    sb.append("    employeename: ").append(toIndentedString(employeename)).append("\n");
     sb.append("}");
     return sb.toString();
   }

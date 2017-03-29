@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,213 +34,258 @@ import java.util.Objects;
 /**
  * Pricelistrounding
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Pricelistrounding   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("AmountTo")
-  private Double amountTo = null;
+  @SerializedName("amountto")
+  private Double amountto = null;
 
-  @SerializedName("PriceRounding")
-  private Integer priceRounding = null;
+  @SerializedName("pricerounding")
+  private Integer pricerounding = null;
 
-  @SerializedName("ConstantToAdd")
-  private Double constantToAdd = null;
+  @SerializedName("constanttoadd")
+  private Double constanttoadd = null;
 
-  @SerializedName("RoundingType")
-  private Integer roundingType = null;
+  @SerializedName("roundingtype")
+  private Integer roundingtype = null;
 
-  @SerializedName("RoundingBase")
-  private Double roundingBase = null;
+  @SerializedName("roundingbase")
+  private Double roundingbase = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Ceník [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Ceník [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Pricelistrounding posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Pricelistrounding displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Pricelistrounding currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Pricelistrounding id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Pricelistrounding amountTo(Double amountTo) {
-    this.amountTo = amountTo;
+  public Pricelistrounding classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Hraniční částka [persistentní položka]
-   * @return amountTo
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Hraniční částka [persistentní položka]")
-  public Double getAmountTo() {
-    return amountTo;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setAmountTo(Double amountTo) {
-    this.amountTo = amountTo;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Pricelistrounding priceRounding(Integer priceRounding) {
-    this.priceRounding = priceRounding;
+  public Pricelistrounding objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Zp. zaokrouhlení [persistentní položka]
-   * @return priceRounding
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Zp. zaokrouhlení [persistentní položka]")
-  public Integer getPriceRounding() {
-    return priceRounding;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setPriceRounding(Integer priceRounding) {
-    this.priceRounding = priceRounding;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Pricelistrounding constantToAdd(Double constantToAdd) {
-    this.constantToAdd = constantToAdd;
+  public Pricelistrounding parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Konstanta k přičtení [persistentní položka]
-   * @return constantToAdd
+   * vlastník; id objektu ceník [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Konstanta k přičtení [persistentní položka]")
-  public Double getConstantToAdd() {
-    return constantToAdd;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu ceník [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setConstantToAdd(Double constantToAdd) {
-    this.constantToAdd = constantToAdd;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Pricelistrounding roundingType(Integer roundingType) {
-    this.roundingType = roundingType;
+  public Pricelistrounding posindex(Integer posindex) {
+    this.posindex = posindex;
     return this;
   }
 
    /**
-   * Typ zaokrouhlení
-   * @return roundingType
+   * pořadí [persistentní položka]
+   * @return posindex
   **/
-  @ApiModelProperty(example = "null", value = "Typ zaokrouhlení")
-  public Integer getRoundingType() {
-    return roundingType;
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
   }
 
-  public void setRoundingType(Integer roundingType) {
-    this.roundingType = roundingType;
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
-  public Pricelistrounding roundingBase(Double roundingBase) {
-    this.roundingBase = roundingBase;
+  public Pricelistrounding currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Zaokrouhlit na
-   * @return roundingBase
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlit na")
-  public Double getRoundingBase() {
-    return roundingBase;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setRoundingBase(Double roundingBase) {
-    this.roundingBase = roundingBase;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
+  }
+
+  public Pricelistrounding amountto(Double amountto) {
+    this.amountto = amountto;
+    return this;
+  }
+
+   /**
+   * hraniční částka [persistentní položka]
+   * @return amountto
+  **/
+  @ApiModelProperty(example = "null", value = "hraniční částka [persistentní položka]")
+  public Double getAmountto() {
+    return amountto;
+  }
+
+  public void setAmountto(Double amountto) {
+    this.amountto = amountto;
+  }
+
+  public Pricelistrounding pricerounding(Integer pricerounding) {
+    this.pricerounding = pricerounding;
+    return this;
+  }
+
+   /**
+   * zp. zaokrouhlení [persistentní položka]
+   * @return pricerounding
+  **/
+  @ApiModelProperty(example = "null", value = "zp. zaokrouhlení [persistentní položka]")
+  public Integer getPricerounding() {
+    return pricerounding;
+  }
+
+  public void setPricerounding(Integer pricerounding) {
+    this.pricerounding = pricerounding;
+  }
+
+  public Pricelistrounding constanttoadd(Double constanttoadd) {
+    this.constanttoadd = constanttoadd;
+    return this;
+  }
+
+   /**
+   * konstanta k přičtení [persistentní položka]
+   * @return constanttoadd
+  **/
+  @ApiModelProperty(example = "null", value = "konstanta k přičtení [persistentní položka]")
+  public Double getConstanttoadd() {
+    return constanttoadd;
+  }
+
+  public void setConstanttoadd(Double constanttoadd) {
+    this.constanttoadd = constanttoadd;
+  }
+
+  public Pricelistrounding roundingtype(Integer roundingtype) {
+    this.roundingtype = roundingtype;
+    return this;
+  }
+
+   /**
+   * typ zaokrouhlení
+   * @return roundingtype
+  **/
+  @ApiModelProperty(example = "null", value = "typ zaokrouhlení")
+  public Integer getRoundingtype() {
+    return roundingtype;
+  }
+
+  public void setRoundingtype(Integer roundingtype) {
+    this.roundingtype = roundingtype;
+  }
+
+  public Pricelistrounding roundingbase(Double roundingbase) {
+    this.roundingbase = roundingbase;
+    return this;
+  }
+
+   /**
+   * zaokrouhlit na
+   * @return roundingbase
+  **/
+  @ApiModelProperty(example = "null", value = "zaokrouhlit na")
+  public Double getRoundingbase() {
+    return roundingbase;
+  }
+
+  public void setRoundingbase(Double roundingbase) {
+    this.roundingbase = roundingbase;
   }
 
 
@@ -253,23 +298,23 @@ public class Pricelistrounding   {
       return false;
     }
     Pricelistrounding pricelistrounding = (Pricelistrounding) o;
-    return Objects.equals(this.displayName, pricelistrounding.displayName) &&
-        Objects.equals(this.ID, pricelistrounding.ID) &&
-        Objects.equals(this.classID, pricelistrounding.classID) &&
-        Objects.equals(this.objVersion, pricelistrounding.objVersion) &&
-        Objects.equals(this.parentID, pricelistrounding.parentID) &&
-        Objects.equals(this.posIndex, pricelistrounding.posIndex) &&
-        Objects.equals(this.currencyID, pricelistrounding.currencyID) &&
-        Objects.equals(this.amountTo, pricelistrounding.amountTo) &&
-        Objects.equals(this.priceRounding, pricelistrounding.priceRounding) &&
-        Objects.equals(this.constantToAdd, pricelistrounding.constantToAdd) &&
-        Objects.equals(this.roundingType, pricelistrounding.roundingType) &&
-        Objects.equals(this.roundingBase, pricelistrounding.roundingBase);
+    return Objects.equals(this.displayname, pricelistrounding.displayname) &&
+        Objects.equals(this.id, pricelistrounding.id) &&
+        Objects.equals(this.classid, pricelistrounding.classid) &&
+        Objects.equals(this.objversion, pricelistrounding.objversion) &&
+        Objects.equals(this.parentId, pricelistrounding.parentId) &&
+        Objects.equals(this.posindex, pricelistrounding.posindex) &&
+        Objects.equals(this.currencyId, pricelistrounding.currencyId) &&
+        Objects.equals(this.amountto, pricelistrounding.amountto) &&
+        Objects.equals(this.pricerounding, pricelistrounding.pricerounding) &&
+        Objects.equals(this.constanttoadd, pricelistrounding.constanttoadd) &&
+        Objects.equals(this.roundingtype, pricelistrounding.roundingtype) &&
+        Objects.equals(this.roundingbase, pricelistrounding.roundingbase);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, currencyID, amountTo, priceRounding, constantToAdd, roundingType, roundingBase);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, currencyId, amountto, pricerounding, constanttoadd, roundingtype, roundingbase);
   }
 
   @Override
@@ -277,18 +322,18 @@ public class Pricelistrounding   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Pricelistrounding {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    amountTo: ").append(toIndentedString(amountTo)).append("\n");
-    sb.append("    priceRounding: ").append(toIndentedString(priceRounding)).append("\n");
-    sb.append("    constantToAdd: ").append(toIndentedString(constantToAdd)).append("\n");
-    sb.append("    roundingType: ").append(toIndentedString(roundingType)).append("\n");
-    sb.append("    roundingBase: ").append(toIndentedString(roundingBase)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    amountto: ").append(toIndentedString(amountto)).append("\n");
+    sb.append("    pricerounding: ").append(toIndentedString(pricerounding)).append("\n");
+    sb.append("    constanttoadd: ").append(toIndentedString(constanttoadd)).append("\n");
+    sb.append("    roundingtype: ").append(toIndentedString(roundingtype)).append("\n");
+    sb.append("    roundingbase: ").append(toIndentedString(roundingbase)).append("\n");
     sb.append("}");
     return sb.toString();
   }

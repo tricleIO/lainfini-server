@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,129 +34,174 @@ import java.util.Objects;
 /**
  * Loanscheduleprincipalpaydoc
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Loanscheduleprincipalpaydoc   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PrincipalPayDoc_ID")
-  private String principalPayDocID = null;
+  @SerializedName("principalpaydoc_id")
+  private String principalpaydocId = null;
 
-  @SerializedName("PmtDocument_ID")
-  private String pmtDocumentID = null;
+  @SerializedName("pmtdocument_id")
+  private String pmtdocumentId = null;
 
-  @SerializedName("PmtDocumentType")
-  private String pmtDocumentType = null;
+  @SerializedName("pmtdocumenttype")
+  private String pmtdocumenttype = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Řádek splátkového kalendáře [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Řádek splátkového kalendáře [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Loanscheduleprincipalpaydoc principalPayDocID(String principalPayDocID) {
-    this.principalPayDocID = principalPayDocID;
+  public Loanscheduleprincipalpaydoc displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Platba jistiny; ID objektu Ostatní příjem [persistentní položka]
-   * @return principalPayDocID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Platba jistiny; ID objektu Ostatní příjem [persistentní položka]")
-  public String getPrincipalPayDocID() {
-    return principalPayDocID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPrincipalPayDocID(String principalPayDocID) {
-    this.principalPayDocID = principalPayDocID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Loanscheduleprincipalpaydoc pmtDocumentID(String pmtDocumentID) {
-    this.pmtDocumentID = pmtDocumentID;
+  public Loanscheduleprincipalpaydoc id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Platící doklad; ID objektu Dokument [persistentní položka]
-   * @return pmtDocumentID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Platící doklad; ID objektu Dokument [persistentní položka]")
-  public String getPmtDocumentID() {
-    return pmtDocumentID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setPmtDocumentID(String pmtDocumentID) {
-    this.pmtDocumentID = pmtDocumentID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Loanscheduleprincipalpaydoc pmtDocumentType(String pmtDocumentType) {
-    this.pmtDocumentType = pmtDocumentType;
+  public Loanscheduleprincipalpaydoc classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Typ platícího dokladu [persistentní položka]
-   * @return pmtDocumentType
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Typ platícího dokladu [persistentní položka]")
-  public String getPmtDocumentType() {
-    return pmtDocumentType;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPmtDocumentType(String pmtDocumentType) {
-    this.pmtDocumentType = pmtDocumentType;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Loanscheduleprincipalpaydoc objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Loanscheduleprincipalpaydoc parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu Řádek splátkového kalendáře [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu Řádek splátkového kalendáře [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Loanscheduleprincipalpaydoc principalpaydocId(String principalpaydocId) {
+    this.principalpaydocId = principalpaydocId;
+    return this;
+  }
+
+   /**
+   * platba jistiny; id objektu ostatní příjem [persistentní položka]
+   * @return principalpaydocId
+  **/
+  @ApiModelProperty(example = "null", value = "platba jistiny; id objektu ostatní příjem [persistentní položka]")
+  public String getPrincipalpaydocId() {
+    return principalpaydocId;
+  }
+
+  public void setPrincipalpaydocId(String principalpaydocId) {
+    this.principalpaydocId = principalpaydocId;
+  }
+
+  public Loanscheduleprincipalpaydoc pmtdocumentId(String pmtdocumentId) {
+    this.pmtdocumentId = pmtdocumentId;
+    return this;
+  }
+
+   /**
+   * platící doklad; id objektu dokument [persistentní položka]
+   * @return pmtdocumentId
+  **/
+  @ApiModelProperty(example = "null", value = "platící doklad; id objektu dokument [persistentní položka]")
+  public String getPmtdocumentId() {
+    return pmtdocumentId;
+  }
+
+  public void setPmtdocumentId(String pmtdocumentId) {
+    this.pmtdocumentId = pmtdocumentId;
+  }
+
+  public Loanscheduleprincipalpaydoc pmtdocumenttype(String pmtdocumenttype) {
+    this.pmtdocumenttype = pmtdocumenttype;
+    return this;
+  }
+
+   /**
+   * typ platícího dokladu [persistentní položka]
+   * @return pmtdocumenttype
+  **/
+  @ApiModelProperty(example = "null", value = "typ platícího dokladu [persistentní položka]")
+  public String getPmtdocumenttype() {
+    return pmtdocumenttype;
+  }
+
+  public void setPmtdocumenttype(String pmtdocumenttype) {
+    this.pmtdocumenttype = pmtdocumenttype;
   }
 
 
@@ -169,19 +214,19 @@ public class Loanscheduleprincipalpaydoc   {
       return false;
     }
     Loanscheduleprincipalpaydoc loanscheduleprincipalpaydoc = (Loanscheduleprincipalpaydoc) o;
-    return Objects.equals(this.displayName, loanscheduleprincipalpaydoc.displayName) &&
-        Objects.equals(this.ID, loanscheduleprincipalpaydoc.ID) &&
-        Objects.equals(this.classID, loanscheduleprincipalpaydoc.classID) &&
-        Objects.equals(this.objVersion, loanscheduleprincipalpaydoc.objVersion) &&
-        Objects.equals(this.parentID, loanscheduleprincipalpaydoc.parentID) &&
-        Objects.equals(this.principalPayDocID, loanscheduleprincipalpaydoc.principalPayDocID) &&
-        Objects.equals(this.pmtDocumentID, loanscheduleprincipalpaydoc.pmtDocumentID) &&
-        Objects.equals(this.pmtDocumentType, loanscheduleprincipalpaydoc.pmtDocumentType);
+    return Objects.equals(this.displayname, loanscheduleprincipalpaydoc.displayname) &&
+        Objects.equals(this.id, loanscheduleprincipalpaydoc.id) &&
+        Objects.equals(this.classid, loanscheduleprincipalpaydoc.classid) &&
+        Objects.equals(this.objversion, loanscheduleprincipalpaydoc.objversion) &&
+        Objects.equals(this.parentId, loanscheduleprincipalpaydoc.parentId) &&
+        Objects.equals(this.principalpaydocId, loanscheduleprincipalpaydoc.principalpaydocId) &&
+        Objects.equals(this.pmtdocumentId, loanscheduleprincipalpaydoc.pmtdocumentId) &&
+        Objects.equals(this.pmtdocumenttype, loanscheduleprincipalpaydoc.pmtdocumenttype);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, principalPayDocID, pmtDocumentID, pmtDocumentType);
+    return Objects.hash(displayname, id, classid, objversion, parentId, principalpaydocId, pmtdocumentId, pmtdocumenttype);
   }
 
   @Override
@@ -189,14 +234,14 @@ public class Loanscheduleprincipalpaydoc   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Loanscheduleprincipalpaydoc {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    principalPayDocID: ").append(toIndentedString(principalPayDocID)).append("\n");
-    sb.append("    pmtDocumentID: ").append(toIndentedString(pmtDocumentID)).append("\n");
-    sb.append("    pmtDocumentType: ").append(toIndentedString(pmtDocumentType)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    principalpaydocId: ").append(toIndentedString(principalpaydocId)).append("\n");
+    sb.append("    pmtdocumentId: ").append(toIndentedString(pmtdocumentId)).append("\n");
+    sb.append("    pmtdocumenttype: ").append(toIndentedString(pmtdocumenttype)).append("\n");
     sb.append("}");
     return sb.toString();
   }

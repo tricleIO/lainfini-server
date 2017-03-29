@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,246 +36,282 @@ import java.util.Objects;
 /**
  * Documentcategory
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Documentcategory   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusOrderUsage")
-  private Integer busOrderUsage = null;
+  @SerializedName("busorderusage")
+  private Integer busorderusage = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("BusProjectUsage")
-  private Integer busProjectUsage = null;
+  @SerializedName("busprojectusage")
+  private Integer busprojectusage = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusTransactionUsage")
-  private Integer busTransactionUsage = null;
+  @SerializedName("bustransactionusage")
+  private Integer bustransactionusage = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("CompressContent")
-  private Boolean compressContent = null;
+  @SerializedName("compresscontent")
+  private Boolean compresscontent = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("DivisionUsage")
-  private Integer divisionUsage = null;
+  @SerializedName("divisionusage")
+  private Integer divisionusage = null;
 
-  @SerializedName("DriverID")
-  private String driverID = null;
+  @SerializedName("driverid")
+  private String driverid = null;
 
-  @SerializedName("DriverParams")
-  private byte[] driverParams = null;
+  @SerializedName("driverparams")
+  private byte[] driverparams = null;
 
-  @SerializedName("FileNameMask")
-  private String fileNameMask = null;
+  @SerializedName("filenamemask")
+  private String filenamemask = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("MaxSize")
-  private Integer maxSize = null;
+  @SerializedName("maxsize")
+  private Integer maxsize = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ProcessingType")
-  private Integer processingType = null;
+  @SerializedName("processingtype")
+  private Integer processingtype = null;
 
-  @SerializedName("ProcessingTypeName")
-  private String processingTypeName = null;
+  @SerializedName("processingtypename")
+  private String processingtypename = null;
 
-  @SerializedName("Purpose")
+  @SerializedName("purpose")
   private Integer purpose = null;
 
-  @SerializedName("PurposeName")
-  private String purposeName = null;
+  @SerializedName("purposename")
+  private String purposename = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("MaskIsRegEx")
-  private Boolean maskIsRegEx = null;
+  @SerializedName("maskisregex")
+  private Boolean maskisregex = null;
 
-  @SerializedName("Participants")
+  @SerializedName("participants")
   private List<Defaultdocumentparticipant> participants = new ArrayList<Defaultdocumentparticipant>();
 
-  @SerializedName("DocQueues")
-  private List<Documentdocqueue> docQueues = new ArrayList<Documentdocqueue>();
+  @SerializedName("docqueues")
+  private List<Documentdocqueue> docqueues = new ArrayList<Documentdocqueue>();
 
-  @SerializedName("DefaultCompetence")
-  private Integer defaultCompetence = null;
+  @SerializedName("defaultcompetence")
+  private Integer defaultcompetence = null;
 
-  @SerializedName("AddAsParticipant")
-  private Boolean addAsParticipant = null;
+  @SerializedName("addasparticipant")
+  private Boolean addasparticipant = null;
 
-  @SerializedName("LockingMode")
-  private Integer lockingMode = null;
+  @SerializedName("lockingmode")
+  private Integer lockingmode = null;
 
-  @SerializedName("LockingModeStr")
-  private String lockingModeStr = null;
+  @SerializedName("lockingmodestr")
+  private String lockingmodestr = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Documentcategory busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Documentcategory displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Documentcategory busOrderUsage(Integer busOrderUsage) {
-    this.busOrderUsage = busOrderUsage;
+  public Documentcategory id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Způsob použití zakázky [persistentní položka]
-   * @return busOrderUsage
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Způsob použití zakázky [persistentní položka]")
-  public Integer getBusOrderUsage() {
-    return busOrderUsage;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setBusOrderUsage(Integer busOrderUsage) {
-    this.busOrderUsage = busOrderUsage;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Documentcategory busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Documentcategory classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Documentcategory busProjectUsage(Integer busProjectUsage) {
-    this.busProjectUsage = busProjectUsage;
+  public Documentcategory objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Způsob použití projektu [persistentní položka]
-   * @return busProjectUsage
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Způsob použití projektu [persistentní položka]")
-  public Integer getBusProjectUsage() {
-    return busProjectUsage;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setBusProjectUsage(Integer busProjectUsage) {
-    this.busProjectUsage = busProjectUsage;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Documentcategory busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Documentcategory busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Obch. případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Obch. případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Documentcategory busTransactionUsage(Integer busTransactionUsage) {
-    this.busTransactionUsage = busTransactionUsage;
+  public Documentcategory busorderusage(Integer busorderusage) {
+    this.busorderusage = busorderusage;
     return this;
   }
 
    /**
-   * Způsob použití obch. případu [persistentní položka]
-   * @return busTransactionUsage
+   * způsob použití zakázky [persistentní položka]
+   * @return busorderusage
   **/
-  @ApiModelProperty(example = "null", value = "Způsob použití obch. případu [persistentní položka]")
-  public Integer getBusTransactionUsage() {
-    return busTransactionUsage;
+  @ApiModelProperty(example = "null", value = "způsob použití zakázky [persistentní položka]")
+  public Integer getBusorderusage() {
+    return busorderusage;
   }
 
-  public void setBusTransactionUsage(Integer busTransactionUsage) {
-    this.busTransactionUsage = busTransactionUsage;
+  public void setBusorderusage(Integer busorderusage) {
+    this.busorderusage = busorderusage;
+  }
+
+  public Documentcategory busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
+    return this;
+  }
+
+   /**
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
+  **/
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
+  }
+
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
+  }
+
+  public Documentcategory busprojectusage(Integer busprojectusage) {
+    this.busprojectusage = busprojectusage;
+    return this;
+  }
+
+   /**
+   * způsob použití projektu [persistentní položka]
+   * @return busprojectusage
+  **/
+  @ApiModelProperty(example = "null", value = "způsob použití projektu [persistentní položka]")
+  public Integer getBusprojectusage() {
+    return busprojectusage;
+  }
+
+  public void setBusprojectusage(Integer busprojectusage) {
+    this.busprojectusage = busprojectusage;
+  }
+
+  public Documentcategory bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
+    return this;
+  }
+
+   /**
+   * obch. případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
+  **/
+  @ApiModelProperty(example = "null", value = "obch. případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
+  }
+
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
+  }
+
+  public Documentcategory bustransactionusage(Integer bustransactionusage) {
+    this.bustransactionusage = bustransactionusage;
+    return this;
+  }
+
+   /**
+   * způsob použití obch. případu [persistentní položka]
+   * @return bustransactionusage
+  **/
+  @ApiModelProperty(example = "null", value = "způsob použití obch. případu [persistentní položka]")
+  public Integer getBustransactionusage() {
+    return bustransactionusage;
+  }
+
+  public void setBustransactionusage(Integer bustransactionusage) {
+    this.bustransactionusage = bustransactionusage;
   }
 
   public Documentcategory code(String code) {
@@ -284,10 +320,10 @@ public class Documentcategory   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -296,148 +332,148 @@ public class Documentcategory   {
     this.code = code;
   }
 
-  public Documentcategory compressContent(Boolean compressContent) {
-    this.compressContent = compressContent;
+  public Documentcategory compresscontent(Boolean compresscontent) {
+    this.compresscontent = compresscontent;
     return this;
   }
 
    /**
-   * Komprimovat [persistentní položka]
-   * @return compressContent
+   * komprimovat [persistentní položka]
+   * @return compresscontent
   **/
-  @ApiModelProperty(example = "null", value = "Komprimovat [persistentní položka]")
-  public Boolean getCompressContent() {
-    return compressContent;
+  @ApiModelProperty(example = "null", value = "komprimovat [persistentní položka]")
+  public Boolean getCompresscontent() {
+    return compresscontent;
   }
 
-  public void setCompressContent(Boolean compressContent) {
-    this.compressContent = compressContent;
+  public void setCompresscontent(Boolean compresscontent) {
+    this.compresscontent = compresscontent;
   }
 
-  public Documentcategory divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Documentcategory divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Documentcategory divisionUsage(Integer divisionUsage) {
-    this.divisionUsage = divisionUsage;
+  public Documentcategory divisionusage(Integer divisionusage) {
+    this.divisionusage = divisionusage;
     return this;
   }
 
    /**
-   * Způsob použití střediska [persistentní položka]
-   * @return divisionUsage
+   * způsob použití střediska [persistentní položka]
+   * @return divisionusage
   **/
-  @ApiModelProperty(example = "null", value = "Způsob použití střediska [persistentní položka]")
-  public Integer getDivisionUsage() {
-    return divisionUsage;
+  @ApiModelProperty(example = "null", value = "způsob použití střediska [persistentní položka]")
+  public Integer getDivisionusage() {
+    return divisionusage;
   }
 
-  public void setDivisionUsage(Integer divisionUsage) {
-    this.divisionUsage = divisionUsage;
+  public void setDivisionusage(Integer divisionusage) {
+    this.divisionusage = divisionusage;
   }
 
-  public Documentcategory driverID(String driverID) {
-    this.driverID = driverID;
+  public Documentcategory driverid(String driverid) {
+    this.driverid = driverid;
     return this;
   }
 
    /**
-   * ID ovladače [persistentní položka]
-   * @return driverID
+   * id ovladače [persistentní položka]
+   * @return driverid
   **/
-  @ApiModelProperty(example = "null", value = "ID ovladače [persistentní položka]")
-  public String getDriverID() {
-    return driverID;
+  @ApiModelProperty(example = "null", value = "id ovladače [persistentní položka]")
+  public String getDriverid() {
+    return driverid;
   }
 
-  public void setDriverID(String driverID) {
-    this.driverID = driverID;
+  public void setDriverid(String driverid) {
+    this.driverid = driverid;
   }
 
-  public Documentcategory driverParams(byte[] driverParams) {
-    this.driverParams = driverParams;
+  public Documentcategory driverparams(byte[] driverparams) {
+    this.driverparams = driverparams;
     return this;
   }
 
    /**
-   * Parametry ovladače [persistentní položka]
-   * @return driverParams
+   * parametry ovladače [persistentní položka]
+   * @return driverparams
   **/
-  @ApiModelProperty(example = "null", value = "Parametry ovladače [persistentní položka]")
-  public byte[] getDriverParams() {
-    return driverParams;
+  @ApiModelProperty(example = "null", value = "parametry ovladače [persistentní položka]")
+  public byte[] getDriverparams() {
+    return driverparams;
   }
 
-  public void setDriverParams(byte[] driverParams) {
-    this.driverParams = driverParams;
+  public void setDriverparams(byte[] driverparams) {
+    this.driverparams = driverparams;
   }
 
-  public Documentcategory fileNameMask(String fileNameMask) {
-    this.fileNameMask = fileNameMask;
+  public Documentcategory filenamemask(String filenamemask) {
+    this.filenamemask = filenamemask;
     return this;
   }
 
    /**
-   * Maska souboru [persistentní položka]
-   * @return fileNameMask
+   * maska souboru [persistentní položka]
+   * @return filenamemask
   **/
-  @ApiModelProperty(example = "null", value = "Maska souboru [persistentní položka]")
-  public String getFileNameMask() {
-    return fileNameMask;
+  @ApiModelProperty(example = "null", value = "maska souboru [persistentní položka]")
+  public String getFilenamemask() {
+    return filenamemask;
   }
 
-  public void setFileNameMask(String fileNameMask) {
-    this.fileNameMask = fileNameMask;
+  public void setFilenamemask(String filenamemask) {
+    this.filenamemask = filenamemask;
   }
 
-  public Documentcategory firmID(String firmID) {
-    this.firmID = firmID;
+  public Documentcategory firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Documentcategory maxSize(Integer maxSize) {
-    this.maxSize = maxSize;
+  public Documentcategory maxsize(Integer maxsize) {
+    this.maxsize = maxsize;
     return this;
   }
 
    /**
-   * Max. velikost souborů [persistentní položka]
-   * @return maxSize
+   * max. velikost souborů [persistentní položka]
+   * @return maxsize
   **/
-  @ApiModelProperty(example = "null", value = "Max. velikost souborů [persistentní položka]")
-  public Integer getMaxSize() {
-    return maxSize;
+  @ApiModelProperty(example = "null", value = "max. velikost souborů [persistentní položka]")
+  public Integer getMaxsize() {
+    return maxsize;
   }
 
-  public void setMaxSize(Integer maxSize) {
-    this.maxSize = maxSize;
+  public void setMaxsize(Integer maxsize) {
+    this.maxsize = maxsize;
   }
 
   public Documentcategory name(String name) {
@@ -446,10 +482,10 @@ public class Documentcategory   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -458,40 +494,40 @@ public class Documentcategory   {
     this.name = name;
   }
 
-  public Documentcategory processingType(Integer processingType) {
-    this.processingType = processingType;
+  public Documentcategory processingtype(Integer processingtype) {
+    this.processingtype = processingtype;
     return this;
   }
 
    /**
-   * Způsob zpracování [persistentní položka]
-   * @return processingType
+   * způsob zpracování [persistentní položka]
+   * @return processingtype
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zpracování [persistentní položka]")
-  public Integer getProcessingType() {
-    return processingType;
+  @ApiModelProperty(example = "null", value = "způsob zpracování [persistentní položka]")
+  public Integer getProcessingtype() {
+    return processingtype;
   }
 
-  public void setProcessingType(Integer processingType) {
-    this.processingType = processingType;
+  public void setProcessingtype(Integer processingtype) {
+    this.processingtype = processingtype;
   }
 
-  public Documentcategory processingTypeName(String processingTypeName) {
-    this.processingTypeName = processingTypeName;
+  public Documentcategory processingtypename(String processingtypename) {
+    this.processingtypename = processingtypename;
     return this;
   }
 
    /**
-   * Způsob zpracování (název)
-   * @return processingTypeName
+   * způsob zpracování (název)
+   * @return processingtypename
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zpracování (název)")
-  public String getProcessingTypeName() {
-    return processingTypeName;
+  @ApiModelProperty(example = "null", value = "způsob zpracování (název)")
+  public String getProcessingtypename() {
+    return processingtypename;
   }
 
-  public void setProcessingTypeName(String processingTypeName) {
-    this.processingTypeName = processingTypeName;
+  public void setProcessingtypename(String processingtypename) {
+    this.processingtypename = processingtypename;
   }
 
   public Documentcategory purpose(Integer purpose) {
@@ -512,22 +548,22 @@ public class Documentcategory   {
     this.purpose = purpose;
   }
 
-  public Documentcategory purposeName(String purposeName) {
-    this.purposeName = purposeName;
+  public Documentcategory purposename(String purposename) {
+    this.purposename = purposename;
     return this;
   }
 
    /**
    * Účel dokladu
-   * @return purposeName
+   * @return purposename
   **/
   @ApiModelProperty(example = "null", value = "Účel dokladu")
-  public String getPurposeName() {
-    return purposeName;
+  public String getPurposename() {
+    return purposename;
   }
 
-  public void setPurposeName(String purposeName) {
-    this.purposeName = purposeName;
+  public void setPurposename(String purposename) {
+    this.purposename = purposename;
   }
 
   public Documentcategory hidden(Boolean hidden) {
@@ -536,10 +572,10 @@ public class Documentcategory   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -548,22 +584,22 @@ public class Documentcategory   {
     this.hidden = hidden;
   }
 
-  public Documentcategory maskIsRegEx(Boolean maskIsRegEx) {
-    this.maskIsRegEx = maskIsRegEx;
+  public Documentcategory maskisregex(Boolean maskisregex) {
+    this.maskisregex = maskisregex;
     return this;
   }
 
    /**
-   * Regulární výraz [persistentní položka]
-   * @return maskIsRegEx
+   * regulární výraz [persistentní položka]
+   * @return maskisregex
   **/
-  @ApiModelProperty(example = "null", value = "Regulární výraz [persistentní položka]")
-  public Boolean getMaskIsRegEx() {
-    return maskIsRegEx;
+  @ApiModelProperty(example = "null", value = "regulární výraz [persistentní položka]")
+  public Boolean getMaskisregex() {
+    return maskisregex;
   }
 
-  public void setMaskIsRegEx(Boolean maskIsRegEx) {
-    this.maskIsRegEx = maskIsRegEx;
+  public void setMaskisregex(Boolean maskisregex) {
+    this.maskisregex = maskisregex;
   }
 
   public Documentcategory participants(List<Defaultdocumentparticipant> participants) {
@@ -577,10 +613,10 @@ public class Documentcategory   {
   }
 
    /**
-   * Účastníci; kolekce BO Výchozí účastník dokumentu [nepersistentní položka]
+   * Účastníci; kolekce bo výchozí účastník dokumentu [nepersistentní položka]
    * @return participants
   **/
-  @ApiModelProperty(example = "null", value = "Účastníci; kolekce BO Výchozí účastník dokumentu [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Účastníci; kolekce bo výchozí účastník dokumentu [nepersistentní položka]")
   public List<Defaultdocumentparticipant> getParticipants() {
     return participants;
   }
@@ -589,90 +625,99 @@ public class Documentcategory   {
     this.participants = participants;
   }
 
-  public Documentcategory docQueues(List<Documentdocqueue> docQueues) {
-    this.docQueues = docQueues;
+  public Documentcategory docqueues(List<Documentdocqueue> docqueues) {
+    this.docqueues = docqueues;
     return this;
   }
 
-  public Documentcategory addDocQueuesItem(Documentdocqueue docQueuesItem) {
-    this.docQueues.add(docQueuesItem);
-    return this;
-  }
-
-   /**
-   * Řady dokladů; kolekce BO Řada dokladů pro dokumenty [nepersistentní položka]
-   * @return docQueues
-  **/
-  @ApiModelProperty(example = "null", value = "Řady dokladů; kolekce BO Řada dokladů pro dokumenty [nepersistentní položka]")
-  public List<Documentdocqueue> getDocQueues() {
-    return docQueues;
-  }
-
-  public void setDocQueues(List<Documentdocqueue> docQueues) {
-    this.docQueues = docQueues;
-  }
-
-  public Documentcategory defaultCompetence(Integer defaultCompetence) {
-    this.defaultCompetence = defaultCompetence;
+  public Documentcategory addDocqueuesItem(Documentdocqueue docqueuesItem) {
+    this.docqueues.add(docqueuesItem);
     return this;
   }
 
    /**
-   * Výchozí oprávnění [persistentní položka]
-   * @return defaultCompetence
+   * Řady dokladů; kolekce bo Řada dokladů pro dokumenty [nepersistentní položka]
+   * @return docqueues
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí oprávnění [persistentní položka]")
-  public Integer getDefaultCompetence() {
-    return defaultCompetence;
+  @ApiModelProperty(example = "null", value = "Řady dokladů; kolekce bo Řada dokladů pro dokumenty [nepersistentní položka]")
+  public List<Documentdocqueue> getDocqueues() {
+    return docqueues;
   }
 
-  public void setDefaultCompetence(Integer defaultCompetence) {
-    this.defaultCompetence = defaultCompetence;
+  public void setDocqueues(List<Documentdocqueue> docqueues) {
+    this.docqueues = docqueues;
   }
 
-  public Documentcategory addAsParticipant(Boolean addAsParticipant) {
-    this.addAsParticipant = addAsParticipant;
+  public Documentcategory defaultcompetence(Integer defaultcompetence) {
+    this.defaultcompetence = defaultcompetence;
     return this;
   }
 
    /**
-   * Automaticky přidat mezi účastníky [persistentní položka]
-   * @return addAsParticipant
+   * výchozí oprávnění [persistentní položka]
+   * @return defaultcompetence
   **/
-  @ApiModelProperty(example = "null", value = "Automaticky přidat mezi účastníky [persistentní položka]")
-  public Boolean getAddAsParticipant() {
-    return addAsParticipant;
+  @ApiModelProperty(example = "null", value = "výchozí oprávnění [persistentní položka]")
+  public Integer getDefaultcompetence() {
+    return defaultcompetence;
   }
 
-  public void setAddAsParticipant(Boolean addAsParticipant) {
-    this.addAsParticipant = addAsParticipant;
+  public void setDefaultcompetence(Integer defaultcompetence) {
+    this.defaultcompetence = defaultcompetence;
   }
 
-  public Documentcategory lockingMode(Integer lockingMode) {
-    this.lockingMode = lockingMode;
+  public Documentcategory addasparticipant(Boolean addasparticipant) {
+    this.addasparticipant = addasparticipant;
     return this;
   }
 
    /**
-   * Způsob zamykání dokumentů [persistentní položka]
-   * @return lockingMode
+   * automaticky přidat mezi účastníky [persistentní položka]
+   * @return addasparticipant
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zamykání dokumentů [persistentní položka]")
-  public Integer getLockingMode() {
-    return lockingMode;
+  @ApiModelProperty(example = "null", value = "automaticky přidat mezi účastníky [persistentní položka]")
+  public Boolean getAddasparticipant() {
+    return addasparticipant;
   }
 
-  public void setLockingMode(Integer lockingMode) {
-    this.lockingMode = lockingMode;
+  public void setAddasparticipant(Boolean addasparticipant) {
+    this.addasparticipant = addasparticipant;
+  }
+
+  public Documentcategory lockingmode(Integer lockingmode) {
+    this.lockingmode = lockingmode;
+    return this;
   }
 
    /**
-   * Způsob zamykání dokumentů
-   * @return lockingModeStr
+   * způsob zamykání dokumentů [persistentní položka]
+   * @return lockingmode
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zamykání dokumentů")
-  public String getLockingModeStr() {
-    return lockingModeStr;
+  @ApiModelProperty(example = "null", value = "způsob zamykání dokumentů [persistentní položka]")
+  public Integer getLockingmode() {
+    return lockingmode;
+  }
+
+  public void setLockingmode(Integer lockingmode) {
+    this.lockingmode = lockingmode;
+  }
+
+  public Documentcategory lockingmodestr(String lockingmodestr) {
+    this.lockingmodestr = lockingmodestr;
+    return this;
+  }
+
+   /**
+   * způsob zamykání dokumentů
+   * @return lockingmodestr
+  **/
+  @ApiModelProperty(example = "null", value = "způsob zamykání dokumentů")
+  public String getLockingmodestr() {
+    return lockingmodestr;
+  }
+
+  public void setLockingmodestr(String lockingmodestr) {
+    this.lockingmodestr = lockingmodestr;
   }
 
 
@@ -685,43 +730,43 @@ public class Documentcategory   {
       return false;
     }
     Documentcategory documentcategory = (Documentcategory) o;
-    return Objects.equals(this.displayName, documentcategory.displayName) &&
-        Objects.equals(this.ID, documentcategory.ID) &&
-        Objects.equals(this.classID, documentcategory.classID) &&
-        Objects.equals(this.objVersion, documentcategory.objVersion) &&
-        Objects.equals(this.busOrderID, documentcategory.busOrderID) &&
-        Objects.equals(this.busOrderUsage, documentcategory.busOrderUsage) &&
-        Objects.equals(this.busProjectID, documentcategory.busProjectID) &&
-        Objects.equals(this.busProjectUsage, documentcategory.busProjectUsage) &&
-        Objects.equals(this.busTransactionID, documentcategory.busTransactionID) &&
-        Objects.equals(this.busTransactionUsage, documentcategory.busTransactionUsage) &&
+    return Objects.equals(this.displayname, documentcategory.displayname) &&
+        Objects.equals(this.id, documentcategory.id) &&
+        Objects.equals(this.classid, documentcategory.classid) &&
+        Objects.equals(this.objversion, documentcategory.objversion) &&
+        Objects.equals(this.busorderId, documentcategory.busorderId) &&
+        Objects.equals(this.busorderusage, documentcategory.busorderusage) &&
+        Objects.equals(this.busprojectId, documentcategory.busprojectId) &&
+        Objects.equals(this.busprojectusage, documentcategory.busprojectusage) &&
+        Objects.equals(this.bustransactionId, documentcategory.bustransactionId) &&
+        Objects.equals(this.bustransactionusage, documentcategory.bustransactionusage) &&
         Objects.equals(this.code, documentcategory.code) &&
-        Objects.equals(this.compressContent, documentcategory.compressContent) &&
-        Objects.equals(this.divisionID, documentcategory.divisionID) &&
-        Objects.equals(this.divisionUsage, documentcategory.divisionUsage) &&
-        Objects.equals(this.driverID, documentcategory.driverID) &&
-        Objects.equals(this.driverParams, documentcategory.driverParams) &&
-        Objects.equals(this.fileNameMask, documentcategory.fileNameMask) &&
-        Objects.equals(this.firmID, documentcategory.firmID) &&
-        Objects.equals(this.maxSize, documentcategory.maxSize) &&
+        Objects.equals(this.compresscontent, documentcategory.compresscontent) &&
+        Objects.equals(this.divisionId, documentcategory.divisionId) &&
+        Objects.equals(this.divisionusage, documentcategory.divisionusage) &&
+        Objects.equals(this.driverid, documentcategory.driverid) &&
+        Objects.equals(this.driverparams, documentcategory.driverparams) &&
+        Objects.equals(this.filenamemask, documentcategory.filenamemask) &&
+        Objects.equals(this.firmId, documentcategory.firmId) &&
+        Objects.equals(this.maxsize, documentcategory.maxsize) &&
         Objects.equals(this.name, documentcategory.name) &&
-        Objects.equals(this.processingType, documentcategory.processingType) &&
-        Objects.equals(this.processingTypeName, documentcategory.processingTypeName) &&
+        Objects.equals(this.processingtype, documentcategory.processingtype) &&
+        Objects.equals(this.processingtypename, documentcategory.processingtypename) &&
         Objects.equals(this.purpose, documentcategory.purpose) &&
-        Objects.equals(this.purposeName, documentcategory.purposeName) &&
+        Objects.equals(this.purposename, documentcategory.purposename) &&
         Objects.equals(this.hidden, documentcategory.hidden) &&
-        Objects.equals(this.maskIsRegEx, documentcategory.maskIsRegEx) &&
+        Objects.equals(this.maskisregex, documentcategory.maskisregex) &&
         Objects.equals(this.participants, documentcategory.participants) &&
-        Objects.equals(this.docQueues, documentcategory.docQueues) &&
-        Objects.equals(this.defaultCompetence, documentcategory.defaultCompetence) &&
-        Objects.equals(this.addAsParticipant, documentcategory.addAsParticipant) &&
-        Objects.equals(this.lockingMode, documentcategory.lockingMode) &&
-        Objects.equals(this.lockingModeStr, documentcategory.lockingModeStr);
+        Objects.equals(this.docqueues, documentcategory.docqueues) &&
+        Objects.equals(this.defaultcompetence, documentcategory.defaultcompetence) &&
+        Objects.equals(this.addasparticipant, documentcategory.addasparticipant) &&
+        Objects.equals(this.lockingmode, documentcategory.lockingmode) &&
+        Objects.equals(this.lockingmodestr, documentcategory.lockingmodestr);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, busOrderID, busOrderUsage, busProjectID, busProjectUsage, busTransactionID, busTransactionUsage, code, compressContent, divisionID, divisionUsage, driverID, driverParams, fileNameMask, firmID, maxSize, name, processingType, processingTypeName, purpose, purposeName, hidden, maskIsRegEx, participants, docQueues, defaultCompetence, addAsParticipant, lockingMode, lockingModeStr);
+    return Objects.hash(displayname, id, classid, objversion, busorderId, busorderusage, busprojectId, busprojectusage, bustransactionId, bustransactionusage, code, compresscontent, divisionId, divisionusage, driverid, driverparams, filenamemask, firmId, maxsize, name, processingtype, processingtypename, purpose, purposename, hidden, maskisregex, participants, docqueues, defaultcompetence, addasparticipant, lockingmode, lockingmodestr);
   }
 
   @Override
@@ -729,38 +774,38 @@ public class Documentcategory   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Documentcategory {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busOrderUsage: ").append(toIndentedString(busOrderUsage)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    busProjectUsage: ").append(toIndentedString(busProjectUsage)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busTransactionUsage: ").append(toIndentedString(busTransactionUsage)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    busorderusage: ").append(toIndentedString(busorderusage)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    busprojectusage: ").append(toIndentedString(busprojectusage)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    bustransactionusage: ").append(toIndentedString(bustransactionusage)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
-    sb.append("    compressContent: ").append(toIndentedString(compressContent)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    divisionUsage: ").append(toIndentedString(divisionUsage)).append("\n");
-    sb.append("    driverID: ").append(toIndentedString(driverID)).append("\n");
-    sb.append("    driverParams: ").append(toIndentedString(driverParams)).append("\n");
-    sb.append("    fileNameMask: ").append(toIndentedString(fileNameMask)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    maxSize: ").append(toIndentedString(maxSize)).append("\n");
+    sb.append("    compresscontent: ").append(toIndentedString(compresscontent)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    divisionusage: ").append(toIndentedString(divisionusage)).append("\n");
+    sb.append("    driverid: ").append(toIndentedString(driverid)).append("\n");
+    sb.append("    driverparams: ").append(toIndentedString(driverparams)).append("\n");
+    sb.append("    filenamemask: ").append(toIndentedString(filenamemask)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    maxsize: ").append(toIndentedString(maxsize)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    processingType: ").append(toIndentedString(processingType)).append("\n");
-    sb.append("    processingTypeName: ").append(toIndentedString(processingTypeName)).append("\n");
+    sb.append("    processingtype: ").append(toIndentedString(processingtype)).append("\n");
+    sb.append("    processingtypename: ").append(toIndentedString(processingtypename)).append("\n");
     sb.append("    purpose: ").append(toIndentedString(purpose)).append("\n");
-    sb.append("    purposeName: ").append(toIndentedString(purposeName)).append("\n");
+    sb.append("    purposename: ").append(toIndentedString(purposename)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    maskIsRegEx: ").append(toIndentedString(maskIsRegEx)).append("\n");
+    sb.append("    maskisregex: ").append(toIndentedString(maskisregex)).append("\n");
     sb.append("    participants: ").append(toIndentedString(participants)).append("\n");
-    sb.append("    docQueues: ").append(toIndentedString(docQueues)).append("\n");
-    sb.append("    defaultCompetence: ").append(toIndentedString(defaultCompetence)).append("\n");
-    sb.append("    addAsParticipant: ").append(toIndentedString(addAsParticipant)).append("\n");
-    sb.append("    lockingMode: ").append(toIndentedString(lockingMode)).append("\n");
-    sb.append("    lockingModeStr: ").append(toIndentedString(lockingModeStr)).append("\n");
+    sb.append("    docqueues: ").append(toIndentedString(docqueues)).append("\n");
+    sb.append("    defaultcompetence: ").append(toIndentedString(defaultcompetence)).append("\n");
+    sb.append("    addasparticipant: ").append(toIndentedString(addasparticipant)).append("\n");
+    sb.append("    lockingmode: ").append(toIndentedString(lockingmode)).append("\n");
+    sb.append("    lockingmodestr: ").append(toIndentedString(lockingmodestr)).append("\n");
     sb.append("}");
     return sb.toString();
   }

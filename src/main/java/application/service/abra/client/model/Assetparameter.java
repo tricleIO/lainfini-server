@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,411 +35,447 @@ import java.util.Objects;
 /**
  * Assetparameter
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Assetparameter   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("TangibleAssetPriceLimit")
-  private Double tangibleAssetPriceLimit = null;
+  @SerializedName("tangibleassetpricelimit")
+  private Double tangibleassetpricelimit = null;
 
-  @SerializedName("IntangibleAssetPriceLimit")
-  private Double intangibleAssetPriceLimit = null;
+  @SerializedName("intangibleassetpricelimit")
+  private Double intangibleassetpricelimit = null;
 
-  @SerializedName("OverValuationPriceLimit")
-  private Double overValuationPriceLimit = null;
+  @SerializedName("overvaluationpricelimit")
+  private Double overvaluationpricelimit = null;
 
-  @SerializedName("TaxDepreciationRounding")
-  private Integer taxDepreciationRounding = null;
+  @SerializedName("taxdepreciationrounding")
+  private Integer taxdepreciationrounding = null;
 
-  @SerializedName("AccDepreciationRounding")
-  private Integer accDepreciationRounding = null;
+  @SerializedName("accdepreciationrounding")
+  private Integer accdepreciationrounding = null;
 
-  @SerializedName("DiscardTaxDepreciationRate")
-  private Double discardTaxDepreciationRate = null;
+  @SerializedName("discardtaxdepreciationrate")
+  private Double discardtaxdepreciationrate = null;
 
-  @SerializedName("AccDepreciationBeginning")
-  private Integer accDepreciationBeginning = null;
+  @SerializedName("accdepreciationbeginning")
+  private Integer accdepreciationbeginning = null;
 
-  @SerializedName("PercentsInShortPeriod")
-  private Double percentsInShortPeriod = null;
+  @SerializedName("percentsinshortperiod")
+  private Double percentsinshortperiod = null;
 
-  @SerializedName("FormulaInventoryNrAssetCard")
-  private String formulaInventoryNrAssetCard = null;
+  @SerializedName("formulainventorynrassetcard")
+  private String formulainventorynrassetcard = null;
 
-  @SerializedName("FormulaInvNrSmallAssetCard")
-  private String formulaInvNrSmallAssetCard = null;
+  @SerializedName("formulainvnrsmallassetcard")
+  private String formulainvnrsmallassetcard = null;
 
-  @SerializedName("ResponsibleIsObligatory")
-  private Boolean responsibleIsObligatory = null;
+  @SerializedName("responsibleisobligatory")
+  private Boolean responsibleisobligatory = null;
 
-  @SerializedName("CountShrinkedPeriod")
-  private Integer countShrinkedPeriod = null;
+  @SerializedName("countshrinkedperiod")
+  private Integer countshrinkedperiod = null;
 
-  @SerializedName("AlwaysAccountSummary")
-  private Boolean alwaysAccountSummary = null;
+  @SerializedName("alwaysaccountsummary")
+  private Boolean alwaysaccountsummary = null;
 
-  @SerializedName("FirstYearDeprecIncrease$DATE")
-  private DateTime firstYearDeprecIncreaseDATE = null;
+  @SerializedName("firstyeardeprecincrease$date")
+  private DateTime firstyeardeprecincreasedate = null;
 
-  @SerializedName("KeepDegressDeprecLength")
-  private Boolean keepDegressDeprecLength = null;
+  @SerializedName("keepdegressdepreclength")
+  private Boolean keepdegressdepreclength = null;
 
-  @SerializedName("RestAccValueRate")
-  private Double restAccValueRate = null;
+  @SerializedName("restaccvaluerate")
+  private Double restaccvaluerate = null;
 
-  @SerializedName("BookingType")
-  private Integer bookingType = null;
+  @SerializedName("bookingtype")
+  private Integer bookingtype = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Assetparameter tangibleAssetPriceLimit(Double tangibleAssetPriceLimit) {
-    this.tangibleAssetPriceLimit = tangibleAssetPriceLimit;
+  public Assetparameter displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Limit pořizovací ceny [persistentní položka]
-   * @return tangibleAssetPriceLimit
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Limit pořizovací ceny [persistentní položka]")
-  public Double getTangibleAssetPriceLimit() {
-    return tangibleAssetPriceLimit;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setTangibleAssetPriceLimit(Double tangibleAssetPriceLimit) {
-    this.tangibleAssetPriceLimit = tangibleAssetPriceLimit;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Assetparameter intangibleAssetPriceLimit(Double intangibleAssetPriceLimit) {
-    this.intangibleAssetPriceLimit = intangibleAssetPriceLimit;
+  public Assetparameter id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Limit pořizovací ceny [persistentní položka]
-   * @return intangibleAssetPriceLimit
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Limit pořizovací ceny [persistentní položka]")
-  public Double getIntangibleAssetPriceLimit() {
-    return intangibleAssetPriceLimit;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setIntangibleAssetPriceLimit(Double intangibleAssetPriceLimit) {
-    this.intangibleAssetPriceLimit = intangibleAssetPriceLimit;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Assetparameter overValuationPriceLimit(Double overValuationPriceLimit) {
-    this.overValuationPriceLimit = overValuationPriceLimit;
+  public Assetparameter classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Cenový limit pro technické zh. [persistentní položka]
-   * @return overValuationPriceLimit
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Cenový limit pro technické zh. [persistentní položka]")
-  public Double getOverValuationPriceLimit() {
-    return overValuationPriceLimit;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setOverValuationPriceLimit(Double overValuationPriceLimit) {
-    this.overValuationPriceLimit = overValuationPriceLimit;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Assetparameter taxDepreciationRounding(Integer taxDepreciationRounding) {
-    this.taxDepreciationRounding = taxDepreciationRounding;
+  public Assetparameter objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Zaokrouhlování daňových odpisů [persistentní položka]
-   * @return taxDepreciationRounding
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlování daňových odpisů [persistentní položka]")
-  public Integer getTaxDepreciationRounding() {
-    return taxDepreciationRounding;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setTaxDepreciationRounding(Integer taxDepreciationRounding) {
-    this.taxDepreciationRounding = taxDepreciationRounding;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Assetparameter accDepreciationRounding(Integer accDepreciationRounding) {
-    this.accDepreciationRounding = accDepreciationRounding;
+  public Assetparameter tangibleassetpricelimit(Double tangibleassetpricelimit) {
+    this.tangibleassetpricelimit = tangibleassetpricelimit;
     return this;
   }
 
    /**
-   * Zaokrouhlování účetních odpisů [persistentní položka]
-   * @return accDepreciationRounding
+   * limit pořizovací ceny [persistentní položka]
+   * @return tangibleassetpricelimit
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlování účetních odpisů [persistentní položka]")
-  public Integer getAccDepreciationRounding() {
-    return accDepreciationRounding;
+  @ApiModelProperty(example = "null", value = "limit pořizovací ceny [persistentní položka]")
+  public Double getTangibleassetpricelimit() {
+    return tangibleassetpricelimit;
   }
 
-  public void setAccDepreciationRounding(Integer accDepreciationRounding) {
-    this.accDepreciationRounding = accDepreciationRounding;
+  public void setTangibleassetpricelimit(Double tangibleassetpricelimit) {
+    this.tangibleassetpricelimit = tangibleassetpricelimit;
   }
 
-  public Assetparameter discardTaxDepreciationRate(Double discardTaxDepreciationRate) {
-    this.discardTaxDepreciationRate = discardTaxDepreciationRate;
+  public Assetparameter intangibleassetpricelimit(Double intangibleassetpricelimit) {
+    this.intangibleassetpricelimit = intangibleassetpricelimit;
     return this;
   }
 
    /**
-   * Procento daň.odpisu v r.vyřaz. [persistentní položka]
-   * @return discardTaxDepreciationRate
+   * limit pořizovací ceny [persistentní položka]
+   * @return intangibleassetpricelimit
   **/
-  @ApiModelProperty(example = "null", value = "Procento daň.odpisu v r.vyřaz. [persistentní položka]")
-  public Double getDiscardTaxDepreciationRate() {
-    return discardTaxDepreciationRate;
+  @ApiModelProperty(example = "null", value = "limit pořizovací ceny [persistentní položka]")
+  public Double getIntangibleassetpricelimit() {
+    return intangibleassetpricelimit;
   }
 
-  public void setDiscardTaxDepreciationRate(Double discardTaxDepreciationRate) {
-    this.discardTaxDepreciationRate = discardTaxDepreciationRate;
+  public void setIntangibleassetpricelimit(Double intangibleassetpricelimit) {
+    this.intangibleassetpricelimit = intangibleassetpricelimit;
   }
 
-  public Assetparameter accDepreciationBeginning(Integer accDepreciationBeginning) {
-    this.accDepreciationBeginning = accDepreciationBeginning;
+  public Assetparameter overvaluationpricelimit(Double overvaluationpricelimit) {
+    this.overvaluationpricelimit = overvaluationpricelimit;
+    return this;
+  }
+
+   /**
+   * cenový limit pro technické zh. [persistentní položka]
+   * @return overvaluationpricelimit
+  **/
+  @ApiModelProperty(example = "null", value = "cenový limit pro technické zh. [persistentní položka]")
+  public Double getOvervaluationpricelimit() {
+    return overvaluationpricelimit;
+  }
+
+  public void setOvervaluationpricelimit(Double overvaluationpricelimit) {
+    this.overvaluationpricelimit = overvaluationpricelimit;
+  }
+
+  public Assetparameter taxdepreciationrounding(Integer taxdepreciationrounding) {
+    this.taxdepreciationrounding = taxdepreciationrounding;
+    return this;
+  }
+
+   /**
+   * zaokrouhlování daňových odpisů [persistentní položka]
+   * @return taxdepreciationrounding
+  **/
+  @ApiModelProperty(example = "null", value = "zaokrouhlování daňových odpisů [persistentní položka]")
+  public Integer getTaxdepreciationrounding() {
+    return taxdepreciationrounding;
+  }
+
+  public void setTaxdepreciationrounding(Integer taxdepreciationrounding) {
+    this.taxdepreciationrounding = taxdepreciationrounding;
+  }
+
+  public Assetparameter accdepreciationrounding(Integer accdepreciationrounding) {
+    this.accdepreciationrounding = accdepreciationrounding;
+    return this;
+  }
+
+   /**
+   * zaokrouhlování účetních odpisů [persistentní položka]
+   * @return accdepreciationrounding
+  **/
+  @ApiModelProperty(example = "null", value = "zaokrouhlování účetních odpisů [persistentní položka]")
+  public Integer getAccdepreciationrounding() {
+    return accdepreciationrounding;
+  }
+
+  public void setAccdepreciationrounding(Integer accdepreciationrounding) {
+    this.accdepreciationrounding = accdepreciationrounding;
+  }
+
+  public Assetparameter discardtaxdepreciationrate(Double discardtaxdepreciationrate) {
+    this.discardtaxdepreciationrate = discardtaxdepreciationrate;
+    return this;
+  }
+
+   /**
+   * procento daň.odpisu v r.vyřaz. [persistentní položka]
+   * @return discardtaxdepreciationrate
+  **/
+  @ApiModelProperty(example = "null", value = "procento daň.odpisu v r.vyřaz. [persistentní položka]")
+  public Double getDiscardtaxdepreciationrate() {
+    return discardtaxdepreciationrate;
+  }
+
+  public void setDiscardtaxdepreciationrate(Double discardtaxdepreciationrate) {
+    this.discardtaxdepreciationrate = discardtaxdepreciationrate;
+  }
+
+  public Assetparameter accdepreciationbeginning(Integer accdepreciationbeginning) {
+    this.accdepreciationbeginning = accdepreciationbeginning;
     return this;
   }
 
    /**
    * Účetní odpisy uplatnit [persistentní položka]
-   * @return accDepreciationBeginning
+   * @return accdepreciationbeginning
   **/
   @ApiModelProperty(example = "null", value = "Účetní odpisy uplatnit [persistentní položka]")
-  public Integer getAccDepreciationBeginning() {
-    return accDepreciationBeginning;
+  public Integer getAccdepreciationbeginning() {
+    return accdepreciationbeginning;
   }
 
-  public void setAccDepreciationBeginning(Integer accDepreciationBeginning) {
-    this.accDepreciationBeginning = accDepreciationBeginning;
+  public void setAccdepreciationbeginning(Integer accdepreciationbeginning) {
+    this.accdepreciationbeginning = accdepreciationbeginning;
   }
 
-  public Assetparameter percentsInShortPeriod(Double percentsInShortPeriod) {
-    this.percentsInShortPeriod = percentsInShortPeriod;
+  public Assetparameter percentsinshortperiod(Double percentsinshortperiod) {
+    this.percentsinshortperiod = percentsinshortperiod;
     return this;
   }
 
    /**
-   * Procento roč.odpisu ve zkr.ob. [persistentní položka]
-   * @return percentsInShortPeriod
+   * procento roč.odpisu ve zkr.ob. [persistentní položka]
+   * @return percentsinshortperiod
   **/
-  @ApiModelProperty(example = "null", value = "Procento roč.odpisu ve zkr.ob. [persistentní položka]")
-  public Double getPercentsInShortPeriod() {
-    return percentsInShortPeriod;
+  @ApiModelProperty(example = "null", value = "procento roč.odpisu ve zkr.ob. [persistentní položka]")
+  public Double getPercentsinshortperiod() {
+    return percentsinshortperiod;
   }
 
-  public void setPercentsInShortPeriod(Double percentsInShortPeriod) {
-    this.percentsInShortPeriod = percentsInShortPeriod;
+  public void setPercentsinshortperiod(Double percentsinshortperiod) {
+    this.percentsinshortperiod = percentsinshortperiod;
   }
 
-  public Assetparameter formulaInventoryNrAssetCard(String formulaInventoryNrAssetCard) {
-    this.formulaInventoryNrAssetCard = formulaInventoryNrAssetCard;
+  public Assetparameter formulainventorynrassetcard(String formulainventorynrassetcard) {
+    this.formulainventorynrassetcard = formulainventorynrassetcard;
     return this;
   }
 
    /**
-   * Struktura inventárního čísla karet DM [persistentní položka]
-   * @return formulaInventoryNrAssetCard
+   * struktura inventárního čísla karet dm [persistentní položka]
+   * @return formulainventorynrassetcard
   **/
-  @ApiModelProperty(example = "null", value = "Struktura inventárního čísla karet DM [persistentní položka]")
-  public String getFormulaInventoryNrAssetCard() {
-    return formulaInventoryNrAssetCard;
+  @ApiModelProperty(example = "null", value = "struktura inventárního čísla karet dm [persistentní položka]")
+  public String getFormulainventorynrassetcard() {
+    return formulainventorynrassetcard;
   }
 
-  public void setFormulaInventoryNrAssetCard(String formulaInventoryNrAssetCard) {
-    this.formulaInventoryNrAssetCard = formulaInventoryNrAssetCard;
+  public void setFormulainventorynrassetcard(String formulainventorynrassetcard) {
+    this.formulainventorynrassetcard = formulainventorynrassetcard;
   }
 
-  public Assetparameter formulaInvNrSmallAssetCard(String formulaInvNrSmallAssetCard) {
-    this.formulaInvNrSmallAssetCard = formulaInvNrSmallAssetCard;
+  public Assetparameter formulainvnrsmallassetcard(String formulainvnrsmallassetcard) {
+    this.formulainvnrsmallassetcard = formulainvnrsmallassetcard;
     return this;
   }
 
    /**
-   * Struktura inventárního čísla karet DrM [persistentní položka]
-   * @return formulaInvNrSmallAssetCard
+   * struktura inventárního čísla karet drm [persistentní položka]
+   * @return formulainvnrsmallassetcard
   **/
-  @ApiModelProperty(example = "null", value = "Struktura inventárního čísla karet DrM [persistentní položka]")
-  public String getFormulaInvNrSmallAssetCard() {
-    return formulaInvNrSmallAssetCard;
+  @ApiModelProperty(example = "null", value = "struktura inventárního čísla karet drm [persistentní položka]")
+  public String getFormulainvnrsmallassetcard() {
+    return formulainvnrsmallassetcard;
   }
 
-  public void setFormulaInvNrSmallAssetCard(String formulaInvNrSmallAssetCard) {
-    this.formulaInvNrSmallAssetCard = formulaInvNrSmallAssetCard;
+  public void setFormulainvnrsmallassetcard(String formulainvnrsmallassetcard) {
+    this.formulainvnrsmallassetcard = formulainvnrsmallassetcard;
   }
 
-  public Assetparameter responsibleIsObligatory(Boolean responsibleIsObligatory) {
-    this.responsibleIsObligatory = responsibleIsObligatory;
+  public Assetparameter responsibleisobligatory(Boolean responsibleisobligatory) {
+    this.responsibleisobligatory = responsibleisobligatory;
     return this;
   }
 
    /**
-   * Povinná zodp.osoba [persistentní položka]
-   * @return responsibleIsObligatory
+   * povinná zodp.osoba [persistentní položka]
+   * @return responsibleisobligatory
   **/
-  @ApiModelProperty(example = "null", value = "Povinná zodp.osoba [persistentní položka]")
-  public Boolean getResponsibleIsObligatory() {
-    return responsibleIsObligatory;
+  @ApiModelProperty(example = "null", value = "povinná zodp.osoba [persistentní položka]")
+  public Boolean getResponsibleisobligatory() {
+    return responsibleisobligatory;
   }
 
-  public void setResponsibleIsObligatory(Boolean responsibleIsObligatory) {
-    this.responsibleIsObligatory = responsibleIsObligatory;
+  public void setResponsibleisobligatory(Boolean responsibleisobligatory) {
+    this.responsibleisobligatory = responsibleisobligatory;
   }
 
-  public Assetparameter countShrinkedPeriod(Integer countShrinkedPeriod) {
-    this.countShrinkedPeriod = countShrinkedPeriod;
+  public Assetparameter countshrinkedperiod(Integer countshrinkedperiod) {
+    this.countshrinkedperiod = countshrinkedperiod;
     return this;
   }
 
    /**
-   * Počítej zkrác.období [persistentní položka]
-   * @return countShrinkedPeriod
+   * počítej zkrác.období [persistentní položka]
+   * @return countshrinkedperiod
   **/
-  @ApiModelProperty(example = "null", value = "Počítej zkrác.období [persistentní položka]")
-  public Integer getCountShrinkedPeriod() {
-    return countShrinkedPeriod;
+  @ApiModelProperty(example = "null", value = "počítej zkrác.období [persistentní položka]")
+  public Integer getCountshrinkedperiod() {
+    return countshrinkedperiod;
   }
 
-  public void setCountShrinkedPeriod(Integer countShrinkedPeriod) {
-    this.countShrinkedPeriod = countShrinkedPeriod;
+  public void setCountshrinkedperiod(Integer countshrinkedperiod) {
+    this.countshrinkedperiod = countshrinkedperiod;
   }
 
-  public Assetparameter alwaysAccountSummary(Boolean alwaysAccountSummary) {
-    this.alwaysAccountSummary = alwaysAccountSummary;
+  public Assetparameter alwaysaccountsummary(Boolean alwaysaccountsummary) {
+    this.alwaysaccountsummary = alwaysaccountsummary;
     return this;
   }
 
    /**
-   * Vždy účtuj o.souhr. [persistentní položka]
-   * @return alwaysAccountSummary
+   * vždy účtuj o.souhr. [persistentní položka]
+   * @return alwaysaccountsummary
   **/
-  @ApiModelProperty(example = "null", value = "Vždy účtuj o.souhr. [persistentní položka]")
-  public Boolean getAlwaysAccountSummary() {
-    return alwaysAccountSummary;
+  @ApiModelProperty(example = "null", value = "vždy účtuj o.souhr. [persistentní položka]")
+  public Boolean getAlwaysaccountsummary() {
+    return alwaysaccountsummary;
   }
 
-  public void setAlwaysAccountSummary(Boolean alwaysAccountSummary) {
-    this.alwaysAccountSummary = alwaysAccountSummary;
+  public void setAlwaysaccountsummary(Boolean alwaysaccountsummary) {
+    this.alwaysaccountsummary = alwaysaccountsummary;
   }
 
-  public Assetparameter firstYearDeprecIncreaseDATE(DateTime firstYearDeprecIncreaseDATE) {
-    this.firstYearDeprecIncreaseDATE = firstYearDeprecIncreaseDATE;
+  public Assetparameter firstyeardeprecincreasedate(DateTime firstyeardeprecincreasedate) {
+    this.firstyeardeprecincreasedate = firstyeardeprecincreasedate;
     return this;
   }
 
    /**
-   * Datum změny alg. [persistentní položka]
-   * @return firstYearDeprecIncreaseDATE
+   * datum změny alg. [persistentní položka]
+   * @return firstyeardeprecincreasedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum změny alg. [persistentní položka]")
-  public DateTime getFirstYearDeprecIncreaseDATE() {
-    return firstYearDeprecIncreaseDATE;
+  @ApiModelProperty(example = "null", value = "datum změny alg. [persistentní položka]")
+  public DateTime getFirstyeardeprecincreasedate() {
+    return firstyeardeprecincreasedate;
   }
 
-  public void setFirstYearDeprecIncreaseDATE(DateTime firstYearDeprecIncreaseDATE) {
-    this.firstYearDeprecIncreaseDATE = firstYearDeprecIncreaseDATE;
+  public void setFirstyeardeprecincreasedate(DateTime firstyeardeprecincreasedate) {
+    this.firstyeardeprecincreasedate = firstyeardeprecincreasedate;
   }
 
-  public Assetparameter keepDegressDeprecLength(Boolean keepDegressDeprecLength) {
-    this.keepDegressDeprecLength = keepDegressDeprecLength;
+  public Assetparameter keepdegressdepreclength(Boolean keepdegressdepreclength) {
+    this.keepdegressdepreclength = keepdegressdepreclength;
     return this;
   }
 
    /**
-   * Zachovat délku daň.odpisů po zvýšení ceny [persistentní položka]
-   * @return keepDegressDeprecLength
+   * zachovat délku daň.odpisů po zvýšení ceny [persistentní položka]
+   * @return keepdegressdepreclength
   **/
-  @ApiModelProperty(example = "null", value = "Zachovat délku daň.odpisů po zvýšení ceny [persistentní položka]")
-  public Boolean getKeepDegressDeprecLength() {
-    return keepDegressDeprecLength;
+  @ApiModelProperty(example = "null", value = "zachovat délku daň.odpisů po zvýšení ceny [persistentní položka]")
+  public Boolean getKeepdegressdepreclength() {
+    return keepdegressdepreclength;
   }
 
-  public void setKeepDegressDeprecLength(Boolean keepDegressDeprecLength) {
-    this.keepDegressDeprecLength = keepDegressDeprecLength;
+  public void setKeepdegressdepreclength(Boolean keepdegressdepreclength) {
+    this.keepdegressdepreclength = keepdegressdepreclength;
   }
 
-  public Assetparameter restAccValueRate(Double restAccValueRate) {
-    this.restAccValueRate = restAccValueRate;
+  public Assetparameter restaccvaluerate(Double restaccvaluerate) {
+    this.restaccvaluerate = restaccvaluerate;
     return this;
   }
 
    /**
-   * Zbytková úč. hodnota majetku [persistentní položka]
-   * @return restAccValueRate
+   * zbytková úč. hodnota majetku [persistentní položka]
+   * @return restaccvaluerate
   **/
-  @ApiModelProperty(example = "null", value = "Zbytková úč. hodnota majetku [persistentní položka]")
-  public Double getRestAccValueRate() {
-    return restAccValueRate;
+  @ApiModelProperty(example = "null", value = "zbytková úč. hodnota majetku [persistentní položka]")
+  public Double getRestaccvaluerate() {
+    return restaccvaluerate;
   }
 
-  public void setRestAccValueRate(Double restAccValueRate) {
-    this.restAccValueRate = restAccValueRate;
+  public void setRestaccvaluerate(Double restaccvaluerate) {
+    this.restaccvaluerate = restaccvaluerate;
   }
 
-  public Assetparameter bookingType(Integer bookingType) {
-    this.bookingType = bookingType;
+  public Assetparameter bookingtype(Integer bookingtype) {
+    this.bookingtype = bookingtype;
     return this;
   }
 
    /**
-   * Způsob účtování [persistentní položka]
-   * @return bookingType
+   * způsob účtování [persistentní položka]
+   * @return bookingtype
   **/
-  @ApiModelProperty(example = "null", value = "Způsob účtování [persistentní položka]")
-  public Integer getBookingType() {
-    return bookingType;
+  @ApiModelProperty(example = "null", value = "způsob účtování [persistentní položka]")
+  public Integer getBookingtype() {
+    return bookingtype;
   }
 
-  public void setBookingType(Integer bookingType) {
-    this.bookingType = bookingType;
+  public void setBookingtype(Integer bookingtype) {
+    this.bookingtype = bookingtype;
   }
 
 
@@ -452,32 +488,32 @@ public class Assetparameter   {
       return false;
     }
     Assetparameter assetparameter = (Assetparameter) o;
-    return Objects.equals(this.displayName, assetparameter.displayName) &&
-        Objects.equals(this.ID, assetparameter.ID) &&
-        Objects.equals(this.classID, assetparameter.classID) &&
-        Objects.equals(this.objVersion, assetparameter.objVersion) &&
-        Objects.equals(this.tangibleAssetPriceLimit, assetparameter.tangibleAssetPriceLimit) &&
-        Objects.equals(this.intangibleAssetPriceLimit, assetparameter.intangibleAssetPriceLimit) &&
-        Objects.equals(this.overValuationPriceLimit, assetparameter.overValuationPriceLimit) &&
-        Objects.equals(this.taxDepreciationRounding, assetparameter.taxDepreciationRounding) &&
-        Objects.equals(this.accDepreciationRounding, assetparameter.accDepreciationRounding) &&
-        Objects.equals(this.discardTaxDepreciationRate, assetparameter.discardTaxDepreciationRate) &&
-        Objects.equals(this.accDepreciationBeginning, assetparameter.accDepreciationBeginning) &&
-        Objects.equals(this.percentsInShortPeriod, assetparameter.percentsInShortPeriod) &&
-        Objects.equals(this.formulaInventoryNrAssetCard, assetparameter.formulaInventoryNrAssetCard) &&
-        Objects.equals(this.formulaInvNrSmallAssetCard, assetparameter.formulaInvNrSmallAssetCard) &&
-        Objects.equals(this.responsibleIsObligatory, assetparameter.responsibleIsObligatory) &&
-        Objects.equals(this.countShrinkedPeriod, assetparameter.countShrinkedPeriod) &&
-        Objects.equals(this.alwaysAccountSummary, assetparameter.alwaysAccountSummary) &&
-        Objects.equals(this.firstYearDeprecIncreaseDATE, assetparameter.firstYearDeprecIncreaseDATE) &&
-        Objects.equals(this.keepDegressDeprecLength, assetparameter.keepDegressDeprecLength) &&
-        Objects.equals(this.restAccValueRate, assetparameter.restAccValueRate) &&
-        Objects.equals(this.bookingType, assetparameter.bookingType);
+    return Objects.equals(this.displayname, assetparameter.displayname) &&
+        Objects.equals(this.id, assetparameter.id) &&
+        Objects.equals(this.classid, assetparameter.classid) &&
+        Objects.equals(this.objversion, assetparameter.objversion) &&
+        Objects.equals(this.tangibleassetpricelimit, assetparameter.tangibleassetpricelimit) &&
+        Objects.equals(this.intangibleassetpricelimit, assetparameter.intangibleassetpricelimit) &&
+        Objects.equals(this.overvaluationpricelimit, assetparameter.overvaluationpricelimit) &&
+        Objects.equals(this.taxdepreciationrounding, assetparameter.taxdepreciationrounding) &&
+        Objects.equals(this.accdepreciationrounding, assetparameter.accdepreciationrounding) &&
+        Objects.equals(this.discardtaxdepreciationrate, assetparameter.discardtaxdepreciationrate) &&
+        Objects.equals(this.accdepreciationbeginning, assetparameter.accdepreciationbeginning) &&
+        Objects.equals(this.percentsinshortperiod, assetparameter.percentsinshortperiod) &&
+        Objects.equals(this.formulainventorynrassetcard, assetparameter.formulainventorynrassetcard) &&
+        Objects.equals(this.formulainvnrsmallassetcard, assetparameter.formulainvnrsmallassetcard) &&
+        Objects.equals(this.responsibleisobligatory, assetparameter.responsibleisobligatory) &&
+        Objects.equals(this.countshrinkedperiod, assetparameter.countshrinkedperiod) &&
+        Objects.equals(this.alwaysaccountsummary, assetparameter.alwaysaccountsummary) &&
+        Objects.equals(this.firstyeardeprecincreasedate, assetparameter.firstyeardeprecincreasedate) &&
+        Objects.equals(this.keepdegressdepreclength, assetparameter.keepdegressdepreclength) &&
+        Objects.equals(this.restaccvaluerate, assetparameter.restaccvaluerate) &&
+        Objects.equals(this.bookingtype, assetparameter.bookingtype);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, tangibleAssetPriceLimit, intangibleAssetPriceLimit, overValuationPriceLimit, taxDepreciationRounding, accDepreciationRounding, discardTaxDepreciationRate, accDepreciationBeginning, percentsInShortPeriod, formulaInventoryNrAssetCard, formulaInvNrSmallAssetCard, responsibleIsObligatory, countShrinkedPeriod, alwaysAccountSummary, firstYearDeprecIncreaseDATE, keepDegressDeprecLength, restAccValueRate, bookingType);
+    return Objects.hash(displayname, id, classid, objversion, tangibleassetpricelimit, intangibleassetpricelimit, overvaluationpricelimit, taxdepreciationrounding, accdepreciationrounding, discardtaxdepreciationrate, accdepreciationbeginning, percentsinshortperiod, formulainventorynrassetcard, formulainvnrsmallassetcard, responsibleisobligatory, countshrinkedperiod, alwaysaccountsummary, firstyeardeprecincreasedate, keepdegressdepreclength, restaccvaluerate, bookingtype);
   }
 
   @Override
@@ -485,27 +521,27 @@ public class Assetparameter   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Assetparameter {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    tangibleAssetPriceLimit: ").append(toIndentedString(tangibleAssetPriceLimit)).append("\n");
-    sb.append("    intangibleAssetPriceLimit: ").append(toIndentedString(intangibleAssetPriceLimit)).append("\n");
-    sb.append("    overValuationPriceLimit: ").append(toIndentedString(overValuationPriceLimit)).append("\n");
-    sb.append("    taxDepreciationRounding: ").append(toIndentedString(taxDepreciationRounding)).append("\n");
-    sb.append("    accDepreciationRounding: ").append(toIndentedString(accDepreciationRounding)).append("\n");
-    sb.append("    discardTaxDepreciationRate: ").append(toIndentedString(discardTaxDepreciationRate)).append("\n");
-    sb.append("    accDepreciationBeginning: ").append(toIndentedString(accDepreciationBeginning)).append("\n");
-    sb.append("    percentsInShortPeriod: ").append(toIndentedString(percentsInShortPeriod)).append("\n");
-    sb.append("    formulaInventoryNrAssetCard: ").append(toIndentedString(formulaInventoryNrAssetCard)).append("\n");
-    sb.append("    formulaInvNrSmallAssetCard: ").append(toIndentedString(formulaInvNrSmallAssetCard)).append("\n");
-    sb.append("    responsibleIsObligatory: ").append(toIndentedString(responsibleIsObligatory)).append("\n");
-    sb.append("    countShrinkedPeriod: ").append(toIndentedString(countShrinkedPeriod)).append("\n");
-    sb.append("    alwaysAccountSummary: ").append(toIndentedString(alwaysAccountSummary)).append("\n");
-    sb.append("    firstYearDeprecIncreaseDATE: ").append(toIndentedString(firstYearDeprecIncreaseDATE)).append("\n");
-    sb.append("    keepDegressDeprecLength: ").append(toIndentedString(keepDegressDeprecLength)).append("\n");
-    sb.append("    restAccValueRate: ").append(toIndentedString(restAccValueRate)).append("\n");
-    sb.append("    bookingType: ").append(toIndentedString(bookingType)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    tangibleassetpricelimit: ").append(toIndentedString(tangibleassetpricelimit)).append("\n");
+    sb.append("    intangibleassetpricelimit: ").append(toIndentedString(intangibleassetpricelimit)).append("\n");
+    sb.append("    overvaluationpricelimit: ").append(toIndentedString(overvaluationpricelimit)).append("\n");
+    sb.append("    taxdepreciationrounding: ").append(toIndentedString(taxdepreciationrounding)).append("\n");
+    sb.append("    accdepreciationrounding: ").append(toIndentedString(accdepreciationrounding)).append("\n");
+    sb.append("    discardtaxdepreciationrate: ").append(toIndentedString(discardtaxdepreciationrate)).append("\n");
+    sb.append("    accdepreciationbeginning: ").append(toIndentedString(accdepreciationbeginning)).append("\n");
+    sb.append("    percentsinshortperiod: ").append(toIndentedString(percentsinshortperiod)).append("\n");
+    sb.append("    formulainventorynrassetcard: ").append(toIndentedString(formulainventorynrassetcard)).append("\n");
+    sb.append("    formulainvnrsmallassetcard: ").append(toIndentedString(formulainvnrsmallassetcard)).append("\n");
+    sb.append("    responsibleisobligatory: ").append(toIndentedString(responsibleisobligatory)).append("\n");
+    sb.append("    countshrinkedperiod: ").append(toIndentedString(countshrinkedperiod)).append("\n");
+    sb.append("    alwaysaccountsummary: ").append(toIndentedString(alwaysaccountsummary)).append("\n");
+    sb.append("    firstyeardeprecincreasedate: ").append(toIndentedString(firstyeardeprecincreasedate)).append("\n");
+    sb.append("    keepdegressdepreclength: ").append(toIndentedString(keepdegressdepreclength)).append("\n");
+    sb.append("    restaccvaluerate: ").append(toIndentedString(restaccvaluerate)).append("\n");
+    sb.append("    bookingtype: ").append(toIndentedString(bookingtype)).append("\n");
     sb.append("}");
     return sb.toString();
   }

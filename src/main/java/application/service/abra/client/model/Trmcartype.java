@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,141 +34,177 @@ import java.util.Objects;
 /**
  * Trmcartype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Trmcartype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Category")
+  @SerializedName("category")
   private Integer category = null;
 
-  @SerializedName("SeviceWeight")
-  private Double seviceWeight = null;
+  @SerializedName("seviceweight")
+  private Double seviceweight = null;
 
-  @SerializedName("TotalWeight")
-  private Double totalWeight = null;
+  @SerializedName("totalweight")
+  private Double totalweight = null;
 
-  @SerializedName("CargoWeight")
-  private Double cargoWeight = null;
+  @SerializedName("cargoweight")
+  private Double cargoweight = null;
 
-  @SerializedName("WeightOnAxle")
-  private Double weightOnAxle = null;
+  @SerializedName("weightonaxle")
+  private Double weightonaxle = null;
 
-  @SerializedName("FuelNormSummer")
-  private Double fuelNormSummer = null;
+  @SerializedName("fuelnormsummer")
+  private Double fuelnormsummer = null;
 
-  @SerializedName("FuelNormWinter")
-  private Double fuelNormWinter = null;
+  @SerializedName("fuelnormwinter")
+  private Double fuelnormwinter = null;
 
-  @SerializedName("FuelNormInter")
-  private Double fuelNormInter = null;
+  @SerializedName("fuelnorminter")
+  private Double fuelnorminter = null;
 
-  @SerializedName("FuelNormCollS")
-  private Double fuelNormCollS = null;
+  @SerializedName("fuelnormcolls")
+  private Double fuelnormcolls = null;
 
-  @SerializedName("FuelNormCollW")
-  private Double fuelNormCollW = null;
+  @SerializedName("fuelnormcollw")
+  private Double fuelnormcollw = null;
 
-  @SerializedName("FuelNormCollInter")
-  private Double fuelNormCollInter = null;
+  @SerializedName("fuelnormcollinter")
+  private Double fuelnormcollinter = null;
 
-  @SerializedName("FuelNormManip")
-  private Double fuelNormManip = null;
+  @SerializedName("fuelnormmanip")
+  private Double fuelnormmanip = null;
 
-  @SerializedName("PassTotal")
-  private Integer passTotal = null;
+  @SerializedName("passtotal")
+  private Integer passtotal = null;
 
-  @SerializedName("PassSitting")
-  private Integer passSitting = null;
+  @SerializedName("passsitting")
+  private Integer passsitting = null;
 
-  @SerializedName("TRMFuelType_ID")
-  private String tRMFuelTypeID = null;
+  @SerializedName("trmfueltype_id")
+  private String trmfueltypeId = null;
 
-  @SerializedName("AxleCount")
-  private Integer axleCount = null;
+  @SerializedName("axlecount")
+  private Integer axlecount = null;
 
-  @SerializedName("TyreCount")
-  private Integer tyreCount = null;
+  @SerializedName("tyrecount")
+  private Integer tyrecount = null;
 
-  @SerializedName("VehicleLength")
-  private Integer vehicleLength = null;
+  @SerializedName("vehiclelength")
+  private Integer vehiclelength = null;
 
-  @SerializedName("VehicleWidth")
-  private Integer vehicleWidth = null;
+  @SerializedName("vehiclewidth")
+  private Integer vehiclewidth = null;
 
-  @SerializedName("VehicleHeight")
-  private Integer vehicleHeight = null;
+  @SerializedName("vehicleheight")
+  private Integer vehicleheight = null;
 
-  @SerializedName("CylinderCapacity")
-  private Integer cylinderCapacity = null;
+  @SerializedName("cylindercapacity")
+  private Integer cylindercapacity = null;
 
-  @SerializedName("CargoVolume")
-  private Double cargoVolume = null;
+  @SerializedName("cargovolume")
+  private Double cargovolume = null;
 
-  @SerializedName("RoadTaxRate")
-  private Double roadTaxRate = null;
+  @SerializedName("roadtaxrate")
+  private Double roadtaxrate = null;
 
-  @SerializedName("TRMPublicTransTariff_ID")
-  private String tRMPublicTransTariffID = null;
+  @SerializedName("trmpublictranstariff_id")
+  private String trmpublictranstariffId = null;
 
-  @SerializedName("TankCapacity")
-  private Double tankCapacity = null;
+  @SerializedName("tankcapacity")
+  private Double tankcapacity = null;
 
-  @SerializedName("CategoryAsText")
-  private String categoryAsText = null;
+  @SerializedName("categoryastext")
+  private String categoryastext = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Trmcartype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Trmcartype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Trmcartype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Trmcartype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Trmcartype hidden(Boolean hidden) {
@@ -177,10 +213,10 @@ public class Trmcartype   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -195,10 +231,10 @@ public class Trmcartype   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -213,10 +249,10 @@ public class Trmcartype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -231,10 +267,10 @@ public class Trmcartype   {
   }
 
    /**
-   * Skupina typů [persistentní položka]
+   * skupina typů [persistentní položka]
    * @return category
   **/
-  @ApiModelProperty(example = "null", value = "Skupina typů [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skupina typů [persistentní položka]")
   public Integer getCategory() {
     return category;
   }
@@ -243,454 +279,454 @@ public class Trmcartype   {
     this.category = category;
   }
 
-  public Trmcartype seviceWeight(Double seviceWeight) {
-    this.seviceWeight = seviceWeight;
+  public Trmcartype seviceweight(Double seviceweight) {
+    this.seviceweight = seviceweight;
     return this;
   }
 
    /**
-   * Pohotovostní hmotnost [persistentní položka]
-   * @return seviceWeight
+   * pohotovostní hmotnost [persistentní položka]
+   * @return seviceweight
   **/
-  @ApiModelProperty(example = "null", value = "Pohotovostní hmotnost [persistentní položka]")
-  public Double getSeviceWeight() {
-    return seviceWeight;
+  @ApiModelProperty(example = "null", value = "pohotovostní hmotnost [persistentní položka]")
+  public Double getSeviceweight() {
+    return seviceweight;
   }
 
-  public void setSeviceWeight(Double seviceWeight) {
-    this.seviceWeight = seviceWeight;
+  public void setSeviceweight(Double seviceweight) {
+    this.seviceweight = seviceweight;
   }
 
-  public Trmcartype totalWeight(Double totalWeight) {
-    this.totalWeight = totalWeight;
+  public Trmcartype totalweight(Double totalweight) {
+    this.totalweight = totalweight;
     return this;
   }
 
    /**
-   * Celková hmotnost [persistentní položka]
-   * @return totalWeight
+   * celková hmotnost [persistentní položka]
+   * @return totalweight
   **/
-  @ApiModelProperty(example = "null", value = "Celková hmotnost [persistentní položka]")
-  public Double getTotalWeight() {
-    return totalWeight;
+  @ApiModelProperty(example = "null", value = "celková hmotnost [persistentní položka]")
+  public Double getTotalweight() {
+    return totalweight;
   }
 
-  public void setTotalWeight(Double totalWeight) {
-    this.totalWeight = totalWeight;
+  public void setTotalweight(Double totalweight) {
+    this.totalweight = totalweight;
   }
 
-  public Trmcartype cargoWeight(Double cargoWeight) {
-    this.cargoWeight = cargoWeight;
+  public Trmcartype cargoweight(Double cargoweight) {
+    this.cargoweight = cargoweight;
     return this;
   }
 
    /**
-   * Užitková hmotnost [persistentní položka]
-   * @return cargoWeight
+   * užitková hmotnost [persistentní položka]
+   * @return cargoweight
   **/
-  @ApiModelProperty(example = "null", value = "Užitková hmotnost [persistentní položka]")
-  public Double getCargoWeight() {
-    return cargoWeight;
+  @ApiModelProperty(example = "null", value = "užitková hmotnost [persistentní položka]")
+  public Double getCargoweight() {
+    return cargoweight;
   }
 
-  public void setCargoWeight(Double cargoWeight) {
-    this.cargoWeight = cargoWeight;
+  public void setCargoweight(Double cargoweight) {
+    this.cargoweight = cargoweight;
   }
 
-  public Trmcartype weightOnAxle(Double weightOnAxle) {
-    this.weightOnAxle = weightOnAxle;
+  public Trmcartype weightonaxle(Double weightonaxle) {
+    this.weightonaxle = weightonaxle;
     return this;
   }
 
    /**
-   * Max. hmotnost na nápravu [persistentní položka]
-   * @return weightOnAxle
+   * max. hmotnost na nápravu [persistentní položka]
+   * @return weightonaxle
   **/
-  @ApiModelProperty(example = "null", value = "Max. hmotnost na nápravu [persistentní položka]")
-  public Double getWeightOnAxle() {
-    return weightOnAxle;
+  @ApiModelProperty(example = "null", value = "max. hmotnost na nápravu [persistentní položka]")
+  public Double getWeightonaxle() {
+    return weightonaxle;
   }
 
-  public void setWeightOnAxle(Double weightOnAxle) {
-    this.weightOnAxle = weightOnAxle;
+  public void setWeightonaxle(Double weightonaxle) {
+    this.weightonaxle = weightonaxle;
   }
 
-  public Trmcartype fuelNormSummer(Double fuelNormSummer) {
-    this.fuelNormSummer = fuelNormSummer;
+  public Trmcartype fuelnormsummer(Double fuelnormsummer) {
+    this.fuelnormsummer = fuelnormsummer;
     return this;
   }
 
    /**
-   * Letní norma [persistentní položka]
-   * @return fuelNormSummer
+   * letní norma [persistentní položka]
+   * @return fuelnormsummer
   **/
-  @ApiModelProperty(example = "null", value = "Letní norma [persistentní položka]")
-  public Double getFuelNormSummer() {
-    return fuelNormSummer;
+  @ApiModelProperty(example = "null", value = "letní norma [persistentní položka]")
+  public Double getFuelnormsummer() {
+    return fuelnormsummer;
   }
 
-  public void setFuelNormSummer(Double fuelNormSummer) {
-    this.fuelNormSummer = fuelNormSummer;
+  public void setFuelnormsummer(Double fuelnormsummer) {
+    this.fuelnormsummer = fuelnormsummer;
   }
 
-  public Trmcartype fuelNormWinter(Double fuelNormWinter) {
-    this.fuelNormWinter = fuelNormWinter;
+  public Trmcartype fuelnormwinter(Double fuelnormwinter) {
+    this.fuelnormwinter = fuelnormwinter;
     return this;
   }
 
    /**
-   * Zimní norma [persistentní položka]
-   * @return fuelNormWinter
+   * zimní norma [persistentní položka]
+   * @return fuelnormwinter
   **/
-  @ApiModelProperty(example = "null", value = "Zimní norma [persistentní položka]")
-  public Double getFuelNormWinter() {
-    return fuelNormWinter;
+  @ApiModelProperty(example = "null", value = "zimní norma [persistentní položka]")
+  public Double getFuelnormwinter() {
+    return fuelnormwinter;
   }
 
-  public void setFuelNormWinter(Double fuelNormWinter) {
-    this.fuelNormWinter = fuelNormWinter;
+  public void setFuelnormwinter(Double fuelnormwinter) {
+    this.fuelnormwinter = fuelnormwinter;
   }
 
-  public Trmcartype fuelNormInter(Double fuelNormInter) {
-    this.fuelNormInter = fuelNormInter;
+  public Trmcartype fuelnorminter(Double fuelnorminter) {
+    this.fuelnorminter = fuelnorminter;
     return this;
   }
 
    /**
-   * Střední norma [persistentní položka]
-   * @return fuelNormInter
+   * střední norma [persistentní položka]
+   * @return fuelnorminter
   **/
-  @ApiModelProperty(example = "null", value = "Střední norma [persistentní položka]")
-  public Double getFuelNormInter() {
-    return fuelNormInter;
+  @ApiModelProperty(example = "null", value = "střední norma [persistentní položka]")
+  public Double getFuelnorminter() {
+    return fuelnorminter;
   }
 
-  public void setFuelNormInter(Double fuelNormInter) {
-    this.fuelNormInter = fuelNormInter;
+  public void setFuelnorminter(Double fuelnorminter) {
+    this.fuelnorminter = fuelnorminter;
   }
 
-  public Trmcartype fuelNormCollS(Double fuelNormCollS) {
-    this.fuelNormCollS = fuelNormCollS;
+  public Trmcartype fuelnormcolls(Double fuelnormcolls) {
+    this.fuelnormcolls = fuelnormcolls;
     return this;
   }
 
    /**
-   * Letní norma souprav [persistentní položka]
-   * @return fuelNormCollS
+   * letní norma souprav [persistentní položka]
+   * @return fuelnormcolls
   **/
-  @ApiModelProperty(example = "null", value = "Letní norma souprav [persistentní položka]")
-  public Double getFuelNormCollS() {
-    return fuelNormCollS;
+  @ApiModelProperty(example = "null", value = "letní norma souprav [persistentní položka]")
+  public Double getFuelnormcolls() {
+    return fuelnormcolls;
   }
 
-  public void setFuelNormCollS(Double fuelNormCollS) {
-    this.fuelNormCollS = fuelNormCollS;
+  public void setFuelnormcolls(Double fuelnormcolls) {
+    this.fuelnormcolls = fuelnormcolls;
   }
 
-  public Trmcartype fuelNormCollW(Double fuelNormCollW) {
-    this.fuelNormCollW = fuelNormCollW;
+  public Trmcartype fuelnormcollw(Double fuelnormcollw) {
+    this.fuelnormcollw = fuelnormcollw;
     return this;
   }
 
    /**
-   * Zimní norma souprav [persistentní položka]
-   * @return fuelNormCollW
+   * zimní norma souprav [persistentní položka]
+   * @return fuelnormcollw
   **/
-  @ApiModelProperty(example = "null", value = "Zimní norma souprav [persistentní položka]")
-  public Double getFuelNormCollW() {
-    return fuelNormCollW;
+  @ApiModelProperty(example = "null", value = "zimní norma souprav [persistentní položka]")
+  public Double getFuelnormcollw() {
+    return fuelnormcollw;
   }
 
-  public void setFuelNormCollW(Double fuelNormCollW) {
-    this.fuelNormCollW = fuelNormCollW;
+  public void setFuelnormcollw(Double fuelnormcollw) {
+    this.fuelnormcollw = fuelnormcollw;
   }
 
-  public Trmcartype fuelNormCollInter(Double fuelNormCollInter) {
-    this.fuelNormCollInter = fuelNormCollInter;
+  public Trmcartype fuelnormcollinter(Double fuelnormcollinter) {
+    this.fuelnormcollinter = fuelnormcollinter;
     return this;
   }
 
    /**
-   * Střední norma souprav [persistentní položka]
-   * @return fuelNormCollInter
+   * střední norma souprav [persistentní položka]
+   * @return fuelnormcollinter
   **/
-  @ApiModelProperty(example = "null", value = "Střední norma souprav [persistentní položka]")
-  public Double getFuelNormCollInter() {
-    return fuelNormCollInter;
+  @ApiModelProperty(example = "null", value = "střední norma souprav [persistentní položka]")
+  public Double getFuelnormcollinter() {
+    return fuelnormcollinter;
   }
 
-  public void setFuelNormCollInter(Double fuelNormCollInter) {
-    this.fuelNormCollInter = fuelNormCollInter;
+  public void setFuelnormcollinter(Double fuelnormcollinter) {
+    this.fuelnormcollinter = fuelnormcollinter;
   }
 
-  public Trmcartype fuelNormManip(Double fuelNormManip) {
-    this.fuelNormManip = fuelNormManip;
+  public Trmcartype fuelnormmanip(Double fuelnormmanip) {
+    this.fuelnormmanip = fuelnormmanip;
     return this;
   }
 
    /**
-   * Manipulační norma [persistentní položka]
-   * @return fuelNormManip
+   * manipulační norma [persistentní položka]
+   * @return fuelnormmanip
   **/
-  @ApiModelProperty(example = "null", value = "Manipulační norma [persistentní položka]")
-  public Double getFuelNormManip() {
-    return fuelNormManip;
+  @ApiModelProperty(example = "null", value = "manipulační norma [persistentní položka]")
+  public Double getFuelnormmanip() {
+    return fuelnormmanip;
   }
 
-  public void setFuelNormManip(Double fuelNormManip) {
-    this.fuelNormManip = fuelNormManip;
+  public void setFuelnormmanip(Double fuelnormmanip) {
+    this.fuelnormmanip = fuelnormmanip;
   }
 
-  public Trmcartype passTotal(Integer passTotal) {
-    this.passTotal = passTotal;
+  public Trmcartype passtotal(Integer passtotal) {
+    this.passtotal = passtotal;
     return this;
   }
 
    /**
-   * Počet míst [persistentní položka]
-   * @return passTotal
+   * počet míst [persistentní položka]
+   * @return passtotal
   **/
-  @ApiModelProperty(example = "null", value = "Počet míst [persistentní položka]")
-  public Integer getPassTotal() {
-    return passTotal;
+  @ApiModelProperty(example = "null", value = "počet míst [persistentní položka]")
+  public Integer getPasstotal() {
+    return passtotal;
   }
 
-  public void setPassTotal(Integer passTotal) {
-    this.passTotal = passTotal;
+  public void setPasstotal(Integer passtotal) {
+    this.passtotal = passtotal;
   }
 
-  public Trmcartype passSitting(Integer passSitting) {
-    this.passSitting = passSitting;
+  public Trmcartype passsitting(Integer passsitting) {
+    this.passsitting = passsitting;
     return this;
   }
 
    /**
-   * Počet míst k sezení [persistentní položka]
-   * @return passSitting
+   * počet míst k sezení [persistentní položka]
+   * @return passsitting
   **/
-  @ApiModelProperty(example = "null", value = "Počet míst k sezení [persistentní položka]")
-  public Integer getPassSitting() {
-    return passSitting;
+  @ApiModelProperty(example = "null", value = "počet míst k sezení [persistentní položka]")
+  public Integer getPasssitting() {
+    return passsitting;
   }
 
-  public void setPassSitting(Integer passSitting) {
-    this.passSitting = passSitting;
+  public void setPasssitting(Integer passsitting) {
+    this.passsitting = passsitting;
   }
 
-  public Trmcartype tRMFuelTypeID(String tRMFuelTypeID) {
-    this.tRMFuelTypeID = tRMFuelTypeID;
+  public Trmcartype trmfueltypeId(String trmfueltypeId) {
+    this.trmfueltypeId = trmfueltypeId;
     return this;
   }
 
    /**
-   * Druh pohonu; ID objektu Druh PHM [persistentní položka]
-   * @return tRMFuelTypeID
+   * druh pohonu; id objektu druh phm [persistentní položka]
+   * @return trmfueltypeId
   **/
-  @ApiModelProperty(example = "null", value = "Druh pohonu; ID objektu Druh PHM [persistentní položka]")
-  public String getTRMFuelTypeID() {
-    return tRMFuelTypeID;
+  @ApiModelProperty(example = "null", value = "druh pohonu; id objektu druh phm [persistentní položka]")
+  public String getTrmfueltypeId() {
+    return trmfueltypeId;
   }
 
-  public void setTRMFuelTypeID(String tRMFuelTypeID) {
-    this.tRMFuelTypeID = tRMFuelTypeID;
+  public void setTrmfueltypeId(String trmfueltypeId) {
+    this.trmfueltypeId = trmfueltypeId;
   }
 
-  public Trmcartype axleCount(Integer axleCount) {
-    this.axleCount = axleCount;
+  public Trmcartype axlecount(Integer axlecount) {
+    this.axlecount = axlecount;
     return this;
   }
 
    /**
-   * Počet náprav [persistentní položka]
-   * @return axleCount
+   * počet náprav [persistentní položka]
+   * @return axlecount
   **/
-  @ApiModelProperty(example = "null", value = "Počet náprav [persistentní položka]")
-  public Integer getAxleCount() {
-    return axleCount;
+  @ApiModelProperty(example = "null", value = "počet náprav [persistentní položka]")
+  public Integer getAxlecount() {
+    return axlecount;
   }
 
-  public void setAxleCount(Integer axleCount) {
-    this.axleCount = axleCount;
+  public void setAxlecount(Integer axlecount) {
+    this.axlecount = axlecount;
   }
 
-  public Trmcartype tyreCount(Integer tyreCount) {
-    this.tyreCount = tyreCount;
+  public Trmcartype tyrecount(Integer tyrecount) {
+    this.tyrecount = tyrecount;
     return this;
   }
 
    /**
-   * Počet pneu [persistentní položka]
-   * @return tyreCount
+   * počet pneu [persistentní položka]
+   * @return tyrecount
   **/
-  @ApiModelProperty(example = "null", value = "Počet pneu [persistentní položka]")
-  public Integer getTyreCount() {
-    return tyreCount;
+  @ApiModelProperty(example = "null", value = "počet pneu [persistentní položka]")
+  public Integer getTyrecount() {
+    return tyrecount;
   }
 
-  public void setTyreCount(Integer tyreCount) {
-    this.tyreCount = tyreCount;
+  public void setTyrecount(Integer tyrecount) {
+    this.tyrecount = tyrecount;
   }
 
-  public Trmcartype vehicleLength(Integer vehicleLength) {
-    this.vehicleLength = vehicleLength;
+  public Trmcartype vehiclelength(Integer vehiclelength) {
+    this.vehiclelength = vehiclelength;
     return this;
   }
 
    /**
-   * Délka vozidla [persistentní položka]
-   * @return vehicleLength
+   * délka vozidla [persistentní položka]
+   * @return vehiclelength
   **/
-  @ApiModelProperty(example = "null", value = "Délka vozidla [persistentní položka]")
-  public Integer getVehicleLength() {
-    return vehicleLength;
+  @ApiModelProperty(example = "null", value = "délka vozidla [persistentní položka]")
+  public Integer getVehiclelength() {
+    return vehiclelength;
   }
 
-  public void setVehicleLength(Integer vehicleLength) {
-    this.vehicleLength = vehicleLength;
+  public void setVehiclelength(Integer vehiclelength) {
+    this.vehiclelength = vehiclelength;
   }
 
-  public Trmcartype vehicleWidth(Integer vehicleWidth) {
-    this.vehicleWidth = vehicleWidth;
+  public Trmcartype vehiclewidth(Integer vehiclewidth) {
+    this.vehiclewidth = vehiclewidth;
     return this;
   }
 
    /**
    * Šířka vozidla [persistentní položka]
-   * @return vehicleWidth
+   * @return vehiclewidth
   **/
   @ApiModelProperty(example = "null", value = "Šířka vozidla [persistentní položka]")
-  public Integer getVehicleWidth() {
-    return vehicleWidth;
+  public Integer getVehiclewidth() {
+    return vehiclewidth;
   }
 
-  public void setVehicleWidth(Integer vehicleWidth) {
-    this.vehicleWidth = vehicleWidth;
+  public void setVehiclewidth(Integer vehiclewidth) {
+    this.vehiclewidth = vehiclewidth;
   }
 
-  public Trmcartype vehicleHeight(Integer vehicleHeight) {
-    this.vehicleHeight = vehicleHeight;
+  public Trmcartype vehicleheight(Integer vehicleheight) {
+    this.vehicleheight = vehicleheight;
     return this;
   }
 
    /**
-   * Výška vozidla [persistentní položka]
-   * @return vehicleHeight
+   * výška vozidla [persistentní položka]
+   * @return vehicleheight
   **/
-  @ApiModelProperty(example = "null", value = "Výška vozidla [persistentní položka]")
-  public Integer getVehicleHeight() {
-    return vehicleHeight;
+  @ApiModelProperty(example = "null", value = "výška vozidla [persistentní položka]")
+  public Integer getVehicleheight() {
+    return vehicleheight;
   }
 
-  public void setVehicleHeight(Integer vehicleHeight) {
-    this.vehicleHeight = vehicleHeight;
+  public void setVehicleheight(Integer vehicleheight) {
+    this.vehicleheight = vehicleheight;
   }
 
-  public Trmcartype cylinderCapacity(Integer cylinderCapacity) {
-    this.cylinderCapacity = cylinderCapacity;
+  public Trmcartype cylindercapacity(Integer cylindercapacity) {
+    this.cylindercapacity = cylindercapacity;
     return this;
   }
 
    /**
-   * Obsah válců [persistentní položka]
-   * @return cylinderCapacity
+   * obsah válců [persistentní položka]
+   * @return cylindercapacity
   **/
-  @ApiModelProperty(example = "null", value = "Obsah válců [persistentní položka]")
-  public Integer getCylinderCapacity() {
-    return cylinderCapacity;
+  @ApiModelProperty(example = "null", value = "obsah válců [persistentní položka]")
+  public Integer getCylindercapacity() {
+    return cylindercapacity;
   }
 
-  public void setCylinderCapacity(Integer cylinderCapacity) {
-    this.cylinderCapacity = cylinderCapacity;
+  public void setCylindercapacity(Integer cylindercapacity) {
+    this.cylindercapacity = cylindercapacity;
   }
 
-  public Trmcartype cargoVolume(Double cargoVolume) {
-    this.cargoVolume = cargoVolume;
+  public Trmcartype cargovolume(Double cargovolume) {
+    this.cargovolume = cargovolume;
     return this;
   }
 
    /**
-   * Ložný prostor [persistentní položka]
-   * @return cargoVolume
+   * ložný prostor [persistentní položka]
+   * @return cargovolume
   **/
-  @ApiModelProperty(example = "null", value = "Ložný prostor [persistentní položka]")
-  public Double getCargoVolume() {
-    return cargoVolume;
+  @ApiModelProperty(example = "null", value = "ložný prostor [persistentní položka]")
+  public Double getCargovolume() {
+    return cargovolume;
   }
 
-  public void setCargoVolume(Double cargoVolume) {
-    this.cargoVolume = cargoVolume;
+  public void setCargovolume(Double cargovolume) {
+    this.cargovolume = cargovolume;
   }
 
-  public Trmcartype roadTaxRate(Double roadTaxRate) {
-    this.roadTaxRate = roadTaxRate;
+  public Trmcartype roadtaxrate(Double roadtaxrate) {
+    this.roadtaxrate = roadtaxrate;
     return this;
   }
 
    /**
-   * Silniční daň [persistentní položka]
-   * @return roadTaxRate
+   * silniční daň [persistentní položka]
+   * @return roadtaxrate
   **/
-  @ApiModelProperty(example = "null", value = "Silniční daň [persistentní položka]")
-  public Double getRoadTaxRate() {
-    return roadTaxRate;
+  @ApiModelProperty(example = "null", value = "silniční daň [persistentní položka]")
+  public Double getRoadtaxrate() {
+    return roadtaxrate;
   }
 
-  public void setRoadTaxRate(Double roadTaxRate) {
-    this.roadTaxRate = roadTaxRate;
+  public void setRoadtaxrate(Double roadtaxrate) {
+    this.roadtaxrate = roadtaxrate;
   }
 
-  public Trmcartype tRMPublicTransTariffID(String tRMPublicTransTariffID) {
-    this.tRMPublicTransTariffID = tRMPublicTransTariffID;
+  public Trmcartype trmpublictranstariffId(String trmpublictranstariffId) {
+    this.trmpublictranstariffId = trmpublictranstariffId;
     return this;
   }
 
    /**
-   * Tarifní systém; ID objektu Tarif OD [persistentní položka]
-   * @return tRMPublicTransTariffID
+   * tarifní systém; id objektu tarif od [persistentní položka]
+   * @return trmpublictranstariffId
   **/
-  @ApiModelProperty(example = "null", value = "Tarifní systém; ID objektu Tarif OD [persistentní položka]")
-  public String getTRMPublicTransTariffID() {
-    return tRMPublicTransTariffID;
+  @ApiModelProperty(example = "null", value = "tarifní systém; id objektu tarif od [persistentní položka]")
+  public String getTrmpublictranstariffId() {
+    return trmpublictranstariffId;
   }
 
-  public void setTRMPublicTransTariffID(String tRMPublicTransTariffID) {
-    this.tRMPublicTransTariffID = tRMPublicTransTariffID;
+  public void setTrmpublictranstariffId(String trmpublictranstariffId) {
+    this.trmpublictranstariffId = trmpublictranstariffId;
   }
 
-  public Trmcartype tankCapacity(Double tankCapacity) {
-    this.tankCapacity = tankCapacity;
+  public Trmcartype tankcapacity(Double tankcapacity) {
+    this.tankcapacity = tankcapacity;
     return this;
   }
 
    /**
-   * Objem nádrže [persistentní položka]
-   * @return tankCapacity
+   * objem nádrže [persistentní položka]
+   * @return tankcapacity
   **/
-  @ApiModelProperty(example = "null", value = "Objem nádrže [persistentní položka]")
-  public Double getTankCapacity() {
-    return tankCapacity;
+  @ApiModelProperty(example = "null", value = "objem nádrže [persistentní položka]")
+  public Double getTankcapacity() {
+    return tankcapacity;
   }
 
-  public void setTankCapacity(Double tankCapacity) {
-    this.tankCapacity = tankCapacity;
+  public void setTankcapacity(Double tankcapacity) {
+    this.tankcapacity = tankcapacity;
   }
 
-  public Trmcartype categoryAsText(String categoryAsText) {
-    this.categoryAsText = categoryAsText;
+  public Trmcartype categoryastext(String categoryastext) {
+    this.categoryastext = categoryastext;
     return this;
   }
 
    /**
-   * Skupina typů
-   * @return categoryAsText
+   * skupina typů
+   * @return categoryastext
   **/
-  @ApiModelProperty(example = "null", value = "Skupina typů")
-  public String getCategoryAsText() {
-    return categoryAsText;
+  @ApiModelProperty(example = "null", value = "skupina typů")
+  public String getCategoryastext() {
+    return categoryastext;
   }
 
-  public void setCategoryAsText(String categoryAsText) {
-    this.categoryAsText = categoryAsText;
+  public void setCategoryastext(String categoryastext) {
+    this.categoryastext = categoryastext;
   }
 
 
@@ -703,44 +739,44 @@ public class Trmcartype   {
       return false;
     }
     Trmcartype trmcartype = (Trmcartype) o;
-    return Objects.equals(this.displayName, trmcartype.displayName) &&
-        Objects.equals(this.ID, trmcartype.ID) &&
-        Objects.equals(this.classID, trmcartype.classID) &&
-        Objects.equals(this.objVersion, trmcartype.objVersion) &&
+    return Objects.equals(this.displayname, trmcartype.displayname) &&
+        Objects.equals(this.id, trmcartype.id) &&
+        Objects.equals(this.classid, trmcartype.classid) &&
+        Objects.equals(this.objversion, trmcartype.objversion) &&
         Objects.equals(this.hidden, trmcartype.hidden) &&
         Objects.equals(this.code, trmcartype.code) &&
         Objects.equals(this.name, trmcartype.name) &&
         Objects.equals(this.category, trmcartype.category) &&
-        Objects.equals(this.seviceWeight, trmcartype.seviceWeight) &&
-        Objects.equals(this.totalWeight, trmcartype.totalWeight) &&
-        Objects.equals(this.cargoWeight, trmcartype.cargoWeight) &&
-        Objects.equals(this.weightOnAxle, trmcartype.weightOnAxle) &&
-        Objects.equals(this.fuelNormSummer, trmcartype.fuelNormSummer) &&
-        Objects.equals(this.fuelNormWinter, trmcartype.fuelNormWinter) &&
-        Objects.equals(this.fuelNormInter, trmcartype.fuelNormInter) &&
-        Objects.equals(this.fuelNormCollS, trmcartype.fuelNormCollS) &&
-        Objects.equals(this.fuelNormCollW, trmcartype.fuelNormCollW) &&
-        Objects.equals(this.fuelNormCollInter, trmcartype.fuelNormCollInter) &&
-        Objects.equals(this.fuelNormManip, trmcartype.fuelNormManip) &&
-        Objects.equals(this.passTotal, trmcartype.passTotal) &&
-        Objects.equals(this.passSitting, trmcartype.passSitting) &&
-        Objects.equals(this.tRMFuelTypeID, trmcartype.tRMFuelTypeID) &&
-        Objects.equals(this.axleCount, trmcartype.axleCount) &&
-        Objects.equals(this.tyreCount, trmcartype.tyreCount) &&
-        Objects.equals(this.vehicleLength, trmcartype.vehicleLength) &&
-        Objects.equals(this.vehicleWidth, trmcartype.vehicleWidth) &&
-        Objects.equals(this.vehicleHeight, trmcartype.vehicleHeight) &&
-        Objects.equals(this.cylinderCapacity, trmcartype.cylinderCapacity) &&
-        Objects.equals(this.cargoVolume, trmcartype.cargoVolume) &&
-        Objects.equals(this.roadTaxRate, trmcartype.roadTaxRate) &&
-        Objects.equals(this.tRMPublicTransTariffID, trmcartype.tRMPublicTransTariffID) &&
-        Objects.equals(this.tankCapacity, trmcartype.tankCapacity) &&
-        Objects.equals(this.categoryAsText, trmcartype.categoryAsText);
+        Objects.equals(this.seviceweight, trmcartype.seviceweight) &&
+        Objects.equals(this.totalweight, trmcartype.totalweight) &&
+        Objects.equals(this.cargoweight, trmcartype.cargoweight) &&
+        Objects.equals(this.weightonaxle, trmcartype.weightonaxle) &&
+        Objects.equals(this.fuelnormsummer, trmcartype.fuelnormsummer) &&
+        Objects.equals(this.fuelnormwinter, trmcartype.fuelnormwinter) &&
+        Objects.equals(this.fuelnorminter, trmcartype.fuelnorminter) &&
+        Objects.equals(this.fuelnormcolls, trmcartype.fuelnormcolls) &&
+        Objects.equals(this.fuelnormcollw, trmcartype.fuelnormcollw) &&
+        Objects.equals(this.fuelnormcollinter, trmcartype.fuelnormcollinter) &&
+        Objects.equals(this.fuelnormmanip, trmcartype.fuelnormmanip) &&
+        Objects.equals(this.passtotal, trmcartype.passtotal) &&
+        Objects.equals(this.passsitting, trmcartype.passsitting) &&
+        Objects.equals(this.trmfueltypeId, trmcartype.trmfueltypeId) &&
+        Objects.equals(this.axlecount, trmcartype.axlecount) &&
+        Objects.equals(this.tyrecount, trmcartype.tyrecount) &&
+        Objects.equals(this.vehiclelength, trmcartype.vehiclelength) &&
+        Objects.equals(this.vehiclewidth, trmcartype.vehiclewidth) &&
+        Objects.equals(this.vehicleheight, trmcartype.vehicleheight) &&
+        Objects.equals(this.cylindercapacity, trmcartype.cylindercapacity) &&
+        Objects.equals(this.cargovolume, trmcartype.cargovolume) &&
+        Objects.equals(this.roadtaxrate, trmcartype.roadtaxrate) &&
+        Objects.equals(this.trmpublictranstariffId, trmcartype.trmpublictranstariffId) &&
+        Objects.equals(this.tankcapacity, trmcartype.tankcapacity) &&
+        Objects.equals(this.categoryastext, trmcartype.categoryastext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, category, seviceWeight, totalWeight, cargoWeight, weightOnAxle, fuelNormSummer, fuelNormWinter, fuelNormInter, fuelNormCollS, fuelNormCollW, fuelNormCollInter, fuelNormManip, passTotal, passSitting, tRMFuelTypeID, axleCount, tyreCount, vehicleLength, vehicleWidth, vehicleHeight, cylinderCapacity, cargoVolume, roadTaxRate, tRMPublicTransTariffID, tankCapacity, categoryAsText);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, category, seviceweight, totalweight, cargoweight, weightonaxle, fuelnormsummer, fuelnormwinter, fuelnorminter, fuelnormcolls, fuelnormcollw, fuelnormcollinter, fuelnormmanip, passtotal, passsitting, trmfueltypeId, axlecount, tyrecount, vehiclelength, vehiclewidth, vehicleheight, cylindercapacity, cargovolume, roadtaxrate, trmpublictranstariffId, tankcapacity, categoryastext);
   }
 
   @Override
@@ -748,39 +784,39 @@ public class Trmcartype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Trmcartype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    category: ").append(toIndentedString(category)).append("\n");
-    sb.append("    seviceWeight: ").append(toIndentedString(seviceWeight)).append("\n");
-    sb.append("    totalWeight: ").append(toIndentedString(totalWeight)).append("\n");
-    sb.append("    cargoWeight: ").append(toIndentedString(cargoWeight)).append("\n");
-    sb.append("    weightOnAxle: ").append(toIndentedString(weightOnAxle)).append("\n");
-    sb.append("    fuelNormSummer: ").append(toIndentedString(fuelNormSummer)).append("\n");
-    sb.append("    fuelNormWinter: ").append(toIndentedString(fuelNormWinter)).append("\n");
-    sb.append("    fuelNormInter: ").append(toIndentedString(fuelNormInter)).append("\n");
-    sb.append("    fuelNormCollS: ").append(toIndentedString(fuelNormCollS)).append("\n");
-    sb.append("    fuelNormCollW: ").append(toIndentedString(fuelNormCollW)).append("\n");
-    sb.append("    fuelNormCollInter: ").append(toIndentedString(fuelNormCollInter)).append("\n");
-    sb.append("    fuelNormManip: ").append(toIndentedString(fuelNormManip)).append("\n");
-    sb.append("    passTotal: ").append(toIndentedString(passTotal)).append("\n");
-    sb.append("    passSitting: ").append(toIndentedString(passSitting)).append("\n");
-    sb.append("    tRMFuelTypeID: ").append(toIndentedString(tRMFuelTypeID)).append("\n");
-    sb.append("    axleCount: ").append(toIndentedString(axleCount)).append("\n");
-    sb.append("    tyreCount: ").append(toIndentedString(tyreCount)).append("\n");
-    sb.append("    vehicleLength: ").append(toIndentedString(vehicleLength)).append("\n");
-    sb.append("    vehicleWidth: ").append(toIndentedString(vehicleWidth)).append("\n");
-    sb.append("    vehicleHeight: ").append(toIndentedString(vehicleHeight)).append("\n");
-    sb.append("    cylinderCapacity: ").append(toIndentedString(cylinderCapacity)).append("\n");
-    sb.append("    cargoVolume: ").append(toIndentedString(cargoVolume)).append("\n");
-    sb.append("    roadTaxRate: ").append(toIndentedString(roadTaxRate)).append("\n");
-    sb.append("    tRMPublicTransTariffID: ").append(toIndentedString(tRMPublicTransTariffID)).append("\n");
-    sb.append("    tankCapacity: ").append(toIndentedString(tankCapacity)).append("\n");
-    sb.append("    categoryAsText: ").append(toIndentedString(categoryAsText)).append("\n");
+    sb.append("    seviceweight: ").append(toIndentedString(seviceweight)).append("\n");
+    sb.append("    totalweight: ").append(toIndentedString(totalweight)).append("\n");
+    sb.append("    cargoweight: ").append(toIndentedString(cargoweight)).append("\n");
+    sb.append("    weightonaxle: ").append(toIndentedString(weightonaxle)).append("\n");
+    sb.append("    fuelnormsummer: ").append(toIndentedString(fuelnormsummer)).append("\n");
+    sb.append("    fuelnormwinter: ").append(toIndentedString(fuelnormwinter)).append("\n");
+    sb.append("    fuelnorminter: ").append(toIndentedString(fuelnorminter)).append("\n");
+    sb.append("    fuelnormcolls: ").append(toIndentedString(fuelnormcolls)).append("\n");
+    sb.append("    fuelnormcollw: ").append(toIndentedString(fuelnormcollw)).append("\n");
+    sb.append("    fuelnormcollinter: ").append(toIndentedString(fuelnormcollinter)).append("\n");
+    sb.append("    fuelnormmanip: ").append(toIndentedString(fuelnormmanip)).append("\n");
+    sb.append("    passtotal: ").append(toIndentedString(passtotal)).append("\n");
+    sb.append("    passsitting: ").append(toIndentedString(passsitting)).append("\n");
+    sb.append("    trmfueltypeId: ").append(toIndentedString(trmfueltypeId)).append("\n");
+    sb.append("    axlecount: ").append(toIndentedString(axlecount)).append("\n");
+    sb.append("    tyrecount: ").append(toIndentedString(tyrecount)).append("\n");
+    sb.append("    vehiclelength: ").append(toIndentedString(vehiclelength)).append("\n");
+    sb.append("    vehiclewidth: ").append(toIndentedString(vehiclewidth)).append("\n");
+    sb.append("    vehicleheight: ").append(toIndentedString(vehicleheight)).append("\n");
+    sb.append("    cylindercapacity: ").append(toIndentedString(cylindercapacity)).append("\n");
+    sb.append("    cargovolume: ").append(toIndentedString(cargovolume)).append("\n");
+    sb.append("    roadtaxrate: ").append(toIndentedString(roadtaxrate)).append("\n");
+    sb.append("    trmpublictranstariffId: ").append(toIndentedString(trmpublictranstariffId)).append("\n");
+    sb.append("    tankcapacity: ").append(toIndentedString(tankcapacity)).append("\n");
+    sb.append("    categoryastext: ").append(toIndentedString(categoryastext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,135 +34,180 @@ import java.util.Objects;
 /**
  * Smallassetcard2
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Smallassetcard2   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("InventoryNr")
-  private String inventoryNr = null;
+  @SerializedName("inventorynr")
+  private String inventorynr = null;
 
-  @SerializedName("Responsible_ID")
-  private String responsibleID = null;
+  @SerializedName("responsible_id")
+  private String responsibleId = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Integer quantity = null;
 
-  @SerializedName("EAN")
-  private String EAN = null;
+  @SerializedName("ean")
+  private String ean = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Karta drobného majetku [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Karta drobného majetku [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Smallassetcard2 posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Smallassetcard2 displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Smallassetcard2 inventoryNr(String inventoryNr) {
-    this.inventoryNr = inventoryNr;
+  public Smallassetcard2 id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Inventární číslo [persistentní položka]
-   * @return inventoryNr
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Inventární číslo [persistentní položka]")
-  public String getInventoryNr() {
-    return inventoryNr;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setInventoryNr(String inventoryNr) {
-    this.inventoryNr = inventoryNr;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Smallassetcard2 responsibleID(String responsibleID) {
-    this.responsibleID = responsibleID;
+  public Smallassetcard2 classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Odpovědná osoba; ID objektu Odpovědná osoba [persistentní položka]
-   * @return responsibleID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Odpovědná osoba; ID objektu Odpovědná osoba [persistentní položka]")
-  public String getResponsibleID() {
-    return responsibleID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setResponsibleID(String responsibleID) {
-    this.responsibleID = responsibleID;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Smallassetcard2 objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Smallassetcard2 parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu karta drobného majetku [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu karta drobného majetku [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Smallassetcard2 posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Smallassetcard2 inventorynr(String inventorynr) {
+    this.inventorynr = inventorynr;
+    return this;
+  }
+
+   /**
+   * inventární číslo [persistentní položka]
+   * @return inventorynr
+  **/
+  @ApiModelProperty(example = "null", value = "inventární číslo [persistentní položka]")
+  public String getInventorynr() {
+    return inventorynr;
+  }
+
+  public void setInventorynr(String inventorynr) {
+    this.inventorynr = inventorynr;
+  }
+
+  public Smallassetcard2 responsibleId(String responsibleId) {
+    this.responsibleId = responsibleId;
+    return this;
+  }
+
+   /**
+   * odpovědná osoba; id objektu odpovědná osoba [persistentní položka]
+   * @return responsibleId
+  **/
+  @ApiModelProperty(example = "null", value = "odpovědná osoba; id objektu odpovědná osoba [persistentní položka]")
+  public String getResponsibleId() {
+    return responsibleId;
+  }
+
+  public void setResponsibleId(String responsibleId) {
+    this.responsibleId = responsibleId;
   }
 
   public Smallassetcard2 quantity(Integer quantity) {
@@ -171,10 +216,10 @@ public class Smallassetcard2   {
   }
 
    /**
-   * Počet [persistentní položka]
+   * počet [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "počet [persistentní položka]")
   public Integer getQuantity() {
     return quantity;
   }
@@ -183,22 +228,22 @@ public class Smallassetcard2   {
     this.quantity = quantity;
   }
 
-  public Smallassetcard2 EAN(String EAN) {
-    this.EAN = EAN;
+  public Smallassetcard2 ean(String ean) {
+    this.ean = ean;
     return this;
   }
 
    /**
-   * EAN [persistentní položka]
-   * @return EAN
+   * ean [persistentní položka]
+   * @return ean
   **/
-  @ApiModelProperty(example = "null", value = "EAN [persistentní položka]")
-  public String getEAN() {
-    return EAN;
+  @ApiModelProperty(example = "null", value = "ean [persistentní položka]")
+  public String getEan() {
+    return ean;
   }
 
-  public void setEAN(String EAN) {
-    this.EAN = EAN;
+  public void setEan(String ean) {
+    this.ean = ean;
   }
 
 
@@ -211,21 +256,21 @@ public class Smallassetcard2   {
       return false;
     }
     Smallassetcard2 smallassetcard2 = (Smallassetcard2) o;
-    return Objects.equals(this.displayName, smallassetcard2.displayName) &&
-        Objects.equals(this.ID, smallassetcard2.ID) &&
-        Objects.equals(this.classID, smallassetcard2.classID) &&
-        Objects.equals(this.objVersion, smallassetcard2.objVersion) &&
-        Objects.equals(this.parentID, smallassetcard2.parentID) &&
-        Objects.equals(this.posIndex, smallassetcard2.posIndex) &&
-        Objects.equals(this.inventoryNr, smallassetcard2.inventoryNr) &&
-        Objects.equals(this.responsibleID, smallassetcard2.responsibleID) &&
+    return Objects.equals(this.displayname, smallassetcard2.displayname) &&
+        Objects.equals(this.id, smallassetcard2.id) &&
+        Objects.equals(this.classid, smallassetcard2.classid) &&
+        Objects.equals(this.objversion, smallassetcard2.objversion) &&
+        Objects.equals(this.parentId, smallassetcard2.parentId) &&
+        Objects.equals(this.posindex, smallassetcard2.posindex) &&
+        Objects.equals(this.inventorynr, smallassetcard2.inventorynr) &&
+        Objects.equals(this.responsibleId, smallassetcard2.responsibleId) &&
         Objects.equals(this.quantity, smallassetcard2.quantity) &&
-        Objects.equals(this.EAN, smallassetcard2.EAN);
+        Objects.equals(this.ean, smallassetcard2.ean);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, inventoryNr, responsibleID, quantity, EAN);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, inventorynr, responsibleId, quantity, ean);
   }
 
   @Override
@@ -233,16 +278,16 @@ public class Smallassetcard2   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Smallassetcard2 {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    inventoryNr: ").append(toIndentedString(inventoryNr)).append("\n");
-    sb.append("    responsibleID: ").append(toIndentedString(responsibleID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    inventorynr: ").append(toIndentedString(inventorynr)).append("\n");
+    sb.append("    responsibleId: ").append(toIndentedString(responsibleId)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    EAN: ").append(toIndentedString(EAN)).append("\n");
+    sb.append("    ean: ").append(toIndentedString(ean)).append("\n");
     sb.append("}");
     return sb.toString();
   }

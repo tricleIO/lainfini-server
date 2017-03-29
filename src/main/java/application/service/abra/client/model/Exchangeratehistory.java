@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,138 +35,174 @@ import java.util.Objects;
 /**
  * Exchangeratehistory
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Exchangeratehistory   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Date$DATE")
-  private DateTime dateDATE = null;
+  @SerializedName("date$date")
+  private DateTime datedate = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("CurrRate")
-  private Double currRate = null;
+  @SerializedName("currrate")
+  private Double currrate = null;
 
-  @SerializedName("RefCurrRate")
-  private Double refCurrRate = null;
+  @SerializedName("refcurrrate")
+  private Double refcurrrate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Exchangeratehistory dateDATE(DateTime dateDATE) {
-    this.dateDATE = dateDATE;
+  public Exchangeratehistory displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum [persistentní položka]
-   * @return dateDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum [persistentní položka]")
-  public DateTime getDateDATE() {
-    return dateDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateDATE(DateTime dateDATE) {
-    this.dateDATE = dateDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Exchangeratehistory parentID(String parentID) {
-    this.parentID = parentID;
+  public Exchangeratehistory id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * ID lístku [persistentní položka]
-   * @return parentID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID lístku [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setParentID(String parentID) {
-    this.parentID = parentID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Exchangeratehistory currRate(Double currRate) {
-    this.currRate = currRate;
+  public Exchangeratehistory classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Kurz [persistentní položka]
-   * @return currRate
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Kurz [persistentní položka]")
-  public Double getCurrRate() {
-    return currRate;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setCurrRate(Double currRate) {
-    this.currRate = currRate;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Exchangeratehistory refCurrRate(Double refCurrRate) {
-    this.refCurrRate = refCurrRate;
+  public Exchangeratehistory objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Kurz vztažný [persistentní položka]
-   * @return refCurrRate
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Kurz vztažný [persistentní položka]")
-  public Double getRefCurrRate() {
-    return refCurrRate;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setRefCurrRate(Double refCurrRate) {
-    this.refCurrRate = refCurrRate;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Exchangeratehistory datedate(DateTime datedate) {
+    this.datedate = datedate;
+    return this;
+  }
+
+   /**
+   * datum [persistentní položka]
+   * @return datedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum [persistentní položka]")
+  public DateTime getDatedate() {
+    return datedate;
+  }
+
+  public void setDatedate(DateTime datedate) {
+    this.datedate = datedate;
+  }
+
+  public Exchangeratehistory parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * id lístku [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "id lístku [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Exchangeratehistory currrate(Double currrate) {
+    this.currrate = currrate;
+    return this;
+  }
+
+   /**
+   * kurz [persistentní položka]
+   * @return currrate
+  **/
+  @ApiModelProperty(example = "null", value = "kurz [persistentní položka]")
+  public Double getCurrrate() {
+    return currrate;
+  }
+
+  public void setCurrrate(Double currrate) {
+    this.currrate = currrate;
+  }
+
+  public Exchangeratehistory refcurrrate(Double refcurrrate) {
+    this.refcurrrate = refcurrrate;
+    return this;
+  }
+
+   /**
+   * kurz vztažný [persistentní položka]
+   * @return refcurrrate
+  **/
+  @ApiModelProperty(example = "null", value = "kurz vztažný [persistentní položka]")
+  public Double getRefcurrrate() {
+    return refcurrrate;
+  }
+
+  public void setRefcurrrate(Double refcurrrate) {
+    this.refcurrrate = refcurrrate;
   }
 
 
@@ -179,19 +215,19 @@ public class Exchangeratehistory   {
       return false;
     }
     Exchangeratehistory exchangeratehistory = (Exchangeratehistory) o;
-    return Objects.equals(this.displayName, exchangeratehistory.displayName) &&
-        Objects.equals(this.ID, exchangeratehistory.ID) &&
-        Objects.equals(this.classID, exchangeratehistory.classID) &&
-        Objects.equals(this.objVersion, exchangeratehistory.objVersion) &&
-        Objects.equals(this.dateDATE, exchangeratehistory.dateDATE) &&
-        Objects.equals(this.parentID, exchangeratehistory.parentID) &&
-        Objects.equals(this.currRate, exchangeratehistory.currRate) &&
-        Objects.equals(this.refCurrRate, exchangeratehistory.refCurrRate);
+    return Objects.equals(this.displayname, exchangeratehistory.displayname) &&
+        Objects.equals(this.id, exchangeratehistory.id) &&
+        Objects.equals(this.classid, exchangeratehistory.classid) &&
+        Objects.equals(this.objversion, exchangeratehistory.objversion) &&
+        Objects.equals(this.datedate, exchangeratehistory.datedate) &&
+        Objects.equals(this.parentId, exchangeratehistory.parentId) &&
+        Objects.equals(this.currrate, exchangeratehistory.currrate) &&
+        Objects.equals(this.refcurrrate, exchangeratehistory.refcurrrate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, dateDATE, parentID, currRate, refCurrRate);
+    return Objects.hash(displayname, id, classid, objversion, datedate, parentId, currrate, refcurrrate);
   }
 
   @Override
@@ -199,14 +235,14 @@ public class Exchangeratehistory   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Exchangeratehistory {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    dateDATE: ").append(toIndentedString(dateDATE)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    currRate: ").append(toIndentedString(currRate)).append("\n");
-    sb.append("    refCurrRate: ").append(toIndentedString(refCurrRate)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    datedate: ").append(toIndentedString(datedate)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    currrate: ").append(toIndentedString(currrate)).append("\n");
+    sb.append("    refcurrrate: ").append(toIndentedString(refcurrrate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

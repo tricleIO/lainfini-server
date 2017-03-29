@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,99 +35,144 @@ import java.util.Objects;
 /**
  * Eetsettingsigncertificate
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Eetsettingsigncertificate   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Repository")
+  @SerializedName("repository")
   private Integer repository = null;
 
-  @SerializedName("ValidFrom$DATE")
-  private DateTime validFromDATE = null;
+  @SerializedName("validfrom$date")
+  private DateTime validfromdate = null;
 
-  @SerializedName("ValidTo$DATE")
-  private DateTime validToDATE = null;
+  @SerializedName("validto$date")
+  private DateTime validtodate = null;
 
-  @SerializedName("CertificateHash")
-  private String certificateHash = null;
+  @SerializedName("certificatehash")
+  private String certificatehash = null;
 
-  @SerializedName("CertificateData")
-  private byte[] certificateData = null;
+  @SerializedName("certificatedata")
+  private byte[] certificatedata = null;
 
-  @SerializedName("CertificatePassword")
-  private String certificatePassword = null;
+  @SerializedName("certificatepassword")
+  private String certificatepassword = null;
 
-  @SerializedName("CertificateActive")
-  private Boolean certificateActive = null;
+  @SerializedName("certificateactive")
+  private Boolean certificateactive = null;
 
-  @SerializedName("CertificateSize")
-  private Integer certificateSize = null;
+  @SerializedName("certificatesize")
+  private Integer certificatesize = null;
 
-  @SerializedName("StoreName")
-  private String storeName = null;
+  @SerializedName("storename")
+  private String storename = null;
 
-  @SerializedName("SubjectName")
-  private String subjectName = null;
+  @SerializedName("subjectname")
+  private String subjectname = null;
 
-  @SerializedName("IssuerName")
-  private String issuerName = null;
+  @SerializedName("issuername")
+  private String issuername = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Eetsettingsigncertificate displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Eetsettingsigncertificate id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Eetsettingsigncertificate classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Eetsettingsigncertificate objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Hlavičkový objekt [persistentní položka]
-   * @return parentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Hlavičkový objekt [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Eetsettingsigncertificate parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu hlavičkový objekt [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu hlavičkový objekt [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
   public Eetsettingsigncertificate repository(Integer repository) {
@@ -148,184 +193,184 @@ public class Eetsettingsigncertificate   {
     this.repository = repository;
   }
 
-  public Eetsettingsigncertificate validFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public Eetsettingsigncertificate validfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
     return this;
   }
 
    /**
-   * Platný od [persistentní položka]
-   * @return validFromDATE
+   * platný od [persistentní položka]
+   * @return validfromdate
   **/
-  @ApiModelProperty(example = "null", value = "Platný od [persistentní položka]")
-  public DateTime getValidFromDATE() {
-    return validFromDATE;
+  @ApiModelProperty(example = "null", value = "platný od [persistentní položka]")
+  public DateTime getValidfromdate() {
+    return validfromdate;
   }
 
-  public void setValidFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public void setValidfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
   }
 
-  public Eetsettingsigncertificate validToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public Eetsettingsigncertificate validtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
     return this;
   }
 
    /**
-   * Platný do [persistentní položka]
-   * @return validToDATE
+   * platný do [persistentní položka]
+   * @return validtodate
   **/
-  @ApiModelProperty(example = "null", value = "Platný do [persistentní položka]")
-  public DateTime getValidToDATE() {
-    return validToDATE;
+  @ApiModelProperty(example = "null", value = "platný do [persistentní položka]")
+  public DateTime getValidtodate() {
+    return validtodate;
   }
 
-  public void setValidToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public void setValidtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
   }
 
-  public Eetsettingsigncertificate certificateHash(String certificateHash) {
-    this.certificateHash = certificateHash;
+  public Eetsettingsigncertificate certificatehash(String certificatehash) {
+    this.certificatehash = certificatehash;
     return this;
   }
 
    /**
-   * Hash certifikátu [persistentní položka]
-   * @return certificateHash
+   * hash certifikátu [persistentní položka]
+   * @return certificatehash
   **/
-  @ApiModelProperty(example = "null", value = "Hash certifikátu [persistentní položka]")
-  public String getCertificateHash() {
-    return certificateHash;
+  @ApiModelProperty(example = "null", value = "hash certifikátu [persistentní položka]")
+  public String getCertificatehash() {
+    return certificatehash;
   }
 
-  public void setCertificateHash(String certificateHash) {
-    this.certificateHash = certificateHash;
+  public void setCertificatehash(String certificatehash) {
+    this.certificatehash = certificatehash;
   }
 
-  public Eetsettingsigncertificate certificateData(byte[] certificateData) {
-    this.certificateData = certificateData;
+  public Eetsettingsigncertificate certificatedata(byte[] certificatedata) {
+    this.certificatedata = certificatedata;
     return this;
   }
 
    /**
-   * Data certifikátu [persistentní položka]
-   * @return certificateData
+   * data certifikátu [persistentní položka]
+   * @return certificatedata
   **/
-  @ApiModelProperty(example = "null", value = "Data certifikátu [persistentní položka]")
-  public byte[] getCertificateData() {
-    return certificateData;
+  @ApiModelProperty(example = "null", value = "data certifikátu [persistentní položka]")
+  public byte[] getCertificatedata() {
+    return certificatedata;
   }
 
-  public void setCertificateData(byte[] certificateData) {
-    this.certificateData = certificateData;
+  public void setCertificatedata(byte[] certificatedata) {
+    this.certificatedata = certificatedata;
   }
 
-  public Eetsettingsigncertificate certificatePassword(String certificatePassword) {
-    this.certificatePassword = certificatePassword;
+  public Eetsettingsigncertificate certificatepassword(String certificatepassword) {
+    this.certificatepassword = certificatepassword;
     return this;
   }
 
    /**
-   * Heslo certifikátu [persistentní položka]
-   * @return certificatePassword
+   * heslo certifikátu [persistentní položka]
+   * @return certificatepassword
   **/
-  @ApiModelProperty(example = "null", value = "Heslo certifikátu [persistentní položka]")
-  public String getCertificatePassword() {
-    return certificatePassword;
+  @ApiModelProperty(example = "null", value = "heslo certifikátu [persistentní položka]")
+  public String getCertificatepassword() {
+    return certificatepassword;
   }
 
-  public void setCertificatePassword(String certificatePassword) {
-    this.certificatePassword = certificatePassword;
+  public void setCertificatepassword(String certificatepassword) {
+    this.certificatepassword = certificatepassword;
   }
 
-  public Eetsettingsigncertificate certificateActive(Boolean certificateActive) {
-    this.certificateActive = certificateActive;
+  public Eetsettingsigncertificate certificateactive(Boolean certificateactive) {
+    this.certificateactive = certificateactive;
     return this;
   }
 
    /**
-   * Certifikát aktivní [persistentní položka]
-   * @return certificateActive
+   * certifikát aktivní [persistentní položka]
+   * @return certificateactive
   **/
-  @ApiModelProperty(example = "null", value = "Certifikát aktivní [persistentní položka]")
-  public Boolean getCertificateActive() {
-    return certificateActive;
+  @ApiModelProperty(example = "null", value = "certifikát aktivní [persistentní položka]")
+  public Boolean getCertificateactive() {
+    return certificateactive;
   }
 
-  public void setCertificateActive(Boolean certificateActive) {
-    this.certificateActive = certificateActive;
+  public void setCertificateactive(Boolean certificateactive) {
+    this.certificateactive = certificateactive;
   }
 
-  public Eetsettingsigncertificate certificateSize(Integer certificateSize) {
-    this.certificateSize = certificateSize;
+  public Eetsettingsigncertificate certificatesize(Integer certificatesize) {
+    this.certificatesize = certificatesize;
     return this;
   }
 
    /**
-   * Velikost certifikátu [persistentní položka]
-   * @return certificateSize
+   * velikost certifikátu [persistentní položka]
+   * @return certificatesize
   **/
-  @ApiModelProperty(example = "null", value = "Velikost certifikátu [persistentní položka]")
-  public Integer getCertificateSize() {
-    return certificateSize;
+  @ApiModelProperty(example = "null", value = "velikost certifikátu [persistentní položka]")
+  public Integer getCertificatesize() {
+    return certificatesize;
   }
 
-  public void setCertificateSize(Integer certificateSize) {
-    this.certificateSize = certificateSize;
+  public void setCertificatesize(Integer certificatesize) {
+    this.certificatesize = certificatesize;
   }
 
-  public Eetsettingsigncertificate storeName(String storeName) {
-    this.storeName = storeName;
+  public Eetsettingsigncertificate storename(String storename) {
+    this.storename = storename;
     return this;
   }
 
    /**
-   * Název úložiště [persistentní položka]
-   * @return storeName
+   * název úložiště [persistentní položka]
+   * @return storename
   **/
-  @ApiModelProperty(example = "null", value = "Název úložiště [persistentní položka]")
-  public String getStoreName() {
-    return storeName;
+  @ApiModelProperty(example = "null", value = "název úložiště [persistentní položka]")
+  public String getStorename() {
+    return storename;
   }
 
-  public void setStoreName(String storeName) {
-    this.storeName = storeName;
+  public void setStorename(String storename) {
+    this.storename = storename;
   }
 
-  public Eetsettingsigncertificate subjectName(String subjectName) {
-    this.subjectName = subjectName;
+  public Eetsettingsigncertificate subjectname(String subjectname) {
+    this.subjectname = subjectname;
     return this;
   }
 
    /**
-   * Vystaveno pro [persistentní položka]
-   * @return subjectName
+   * vystaveno pro [persistentní položka]
+   * @return subjectname
   **/
-  @ApiModelProperty(example = "null", value = "Vystaveno pro [persistentní položka]")
-  public String getSubjectName() {
-    return subjectName;
+  @ApiModelProperty(example = "null", value = "vystaveno pro [persistentní položka]")
+  public String getSubjectname() {
+    return subjectname;
   }
 
-  public void setSubjectName(String subjectName) {
-    this.subjectName = subjectName;
+  public void setSubjectname(String subjectname) {
+    this.subjectname = subjectname;
   }
 
-  public Eetsettingsigncertificate issuerName(String issuerName) {
-    this.issuerName = issuerName;
+  public Eetsettingsigncertificate issuername(String issuername) {
+    this.issuername = issuername;
     return this;
   }
 
    /**
-   * Vystavil [persistentní položka]
-   * @return issuerName
+   * vystavil [persistentní položka]
+   * @return issuername
   **/
-  @ApiModelProperty(example = "null", value = "Vystavil [persistentní položka]")
-  public String getIssuerName() {
-    return issuerName;
+  @ApiModelProperty(example = "null", value = "vystavil [persistentní položka]")
+  public String getIssuername() {
+    return issuername;
   }
 
-  public void setIssuerName(String issuerName) {
-    this.issuerName = issuerName;
+  public void setIssuername(String issuername) {
+    this.issuername = issuername;
   }
 
 
@@ -338,27 +383,27 @@ public class Eetsettingsigncertificate   {
       return false;
     }
     Eetsettingsigncertificate eetsettingsigncertificate = (Eetsettingsigncertificate) o;
-    return Objects.equals(this.displayName, eetsettingsigncertificate.displayName) &&
-        Objects.equals(this.ID, eetsettingsigncertificate.ID) &&
-        Objects.equals(this.classID, eetsettingsigncertificate.classID) &&
-        Objects.equals(this.objVersion, eetsettingsigncertificate.objVersion) &&
-        Objects.equals(this.parentID, eetsettingsigncertificate.parentID) &&
+    return Objects.equals(this.displayname, eetsettingsigncertificate.displayname) &&
+        Objects.equals(this.id, eetsettingsigncertificate.id) &&
+        Objects.equals(this.classid, eetsettingsigncertificate.classid) &&
+        Objects.equals(this.objversion, eetsettingsigncertificate.objversion) &&
+        Objects.equals(this.parentId, eetsettingsigncertificate.parentId) &&
         Objects.equals(this.repository, eetsettingsigncertificate.repository) &&
-        Objects.equals(this.validFromDATE, eetsettingsigncertificate.validFromDATE) &&
-        Objects.equals(this.validToDATE, eetsettingsigncertificate.validToDATE) &&
-        Objects.equals(this.certificateHash, eetsettingsigncertificate.certificateHash) &&
-        Objects.equals(this.certificateData, eetsettingsigncertificate.certificateData) &&
-        Objects.equals(this.certificatePassword, eetsettingsigncertificate.certificatePassword) &&
-        Objects.equals(this.certificateActive, eetsettingsigncertificate.certificateActive) &&
-        Objects.equals(this.certificateSize, eetsettingsigncertificate.certificateSize) &&
-        Objects.equals(this.storeName, eetsettingsigncertificate.storeName) &&
-        Objects.equals(this.subjectName, eetsettingsigncertificate.subjectName) &&
-        Objects.equals(this.issuerName, eetsettingsigncertificate.issuerName);
+        Objects.equals(this.validfromdate, eetsettingsigncertificate.validfromdate) &&
+        Objects.equals(this.validtodate, eetsettingsigncertificate.validtodate) &&
+        Objects.equals(this.certificatehash, eetsettingsigncertificate.certificatehash) &&
+        Objects.equals(this.certificatedata, eetsettingsigncertificate.certificatedata) &&
+        Objects.equals(this.certificatepassword, eetsettingsigncertificate.certificatepassword) &&
+        Objects.equals(this.certificateactive, eetsettingsigncertificate.certificateactive) &&
+        Objects.equals(this.certificatesize, eetsettingsigncertificate.certificatesize) &&
+        Objects.equals(this.storename, eetsettingsigncertificate.storename) &&
+        Objects.equals(this.subjectname, eetsettingsigncertificate.subjectname) &&
+        Objects.equals(this.issuername, eetsettingsigncertificate.issuername);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, repository, validFromDATE, validToDATE, certificateHash, certificateData, certificatePassword, certificateActive, certificateSize, storeName, subjectName, issuerName);
+    return Objects.hash(displayname, id, classid, objversion, parentId, repository, validfromdate, validtodate, certificatehash, certificatedata, certificatepassword, certificateactive, certificatesize, storename, subjectname, issuername);
   }
 
   @Override
@@ -366,22 +411,22 @@ public class Eetsettingsigncertificate   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Eetsettingsigncertificate {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
     sb.append("    repository: ").append(toIndentedString(repository)).append("\n");
-    sb.append("    validFromDATE: ").append(toIndentedString(validFromDATE)).append("\n");
-    sb.append("    validToDATE: ").append(toIndentedString(validToDATE)).append("\n");
-    sb.append("    certificateHash: ").append(toIndentedString(certificateHash)).append("\n");
-    sb.append("    certificateData: ").append(toIndentedString(certificateData)).append("\n");
-    sb.append("    certificatePassword: ").append(toIndentedString(certificatePassword)).append("\n");
-    sb.append("    certificateActive: ").append(toIndentedString(certificateActive)).append("\n");
-    sb.append("    certificateSize: ").append(toIndentedString(certificateSize)).append("\n");
-    sb.append("    storeName: ").append(toIndentedString(storeName)).append("\n");
-    sb.append("    subjectName: ").append(toIndentedString(subjectName)).append("\n");
-    sb.append("    issuerName: ").append(toIndentedString(issuerName)).append("\n");
+    sb.append("    validfromdate: ").append(toIndentedString(validfromdate)).append("\n");
+    sb.append("    validtodate: ").append(toIndentedString(validtodate)).append("\n");
+    sb.append("    certificatehash: ").append(toIndentedString(certificatehash)).append("\n");
+    sb.append("    certificatedata: ").append(toIndentedString(certificatedata)).append("\n");
+    sb.append("    certificatepassword: ").append(toIndentedString(certificatepassword)).append("\n");
+    sb.append("    certificateactive: ").append(toIndentedString(certificateactive)).append("\n");
+    sb.append("    certificatesize: ").append(toIndentedString(certificatesize)).append("\n");
+    sb.append("    storename: ").append(toIndentedString(storename)).append("\n");
+    sb.append("    subjectname: ").append(toIndentedString(subjectname)).append("\n");
+    sb.append("    issuername: ").append(toIndentedString(issuername)).append("\n");
     sb.append("}");
     return sb.toString();
   }

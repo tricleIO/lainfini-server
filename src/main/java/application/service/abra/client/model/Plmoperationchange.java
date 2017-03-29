@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,108 +34,153 @@ import java.util.Objects;
 /**
  * Plmoperationchange
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmoperationchange   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Transfer2_ID")
-  private String transfer2ID = null;
+  @SerializedName("transfer2_id")
+  private String transfer2Id = null;
 
-  @SerializedName("DeltaTotalTime")
-  private Double deltaTotalTime = null;
+  @SerializedName("deltatotaltime")
+  private Double deltatotaltime = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Plmoperationchange displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Plmoperationchange id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmoperationchange classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmoperationchange objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Pracovní lístek [persistentní položka]
-   * @return parentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Pracovní lístek [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public Plmoperationchange transfer2ID(String transfer2ID) {
-    this.transfer2ID = transfer2ID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Plmoperationchange parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu pracovní lístek [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu pracovní lístek [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Plmoperationchange transfer2Id(String transfer2Id) {
+    this.transfer2Id = transfer2Id;
     return this;
   }
 
    /**
    * Řádek přenosu do mezd [persistentní položka]
-   * @return transfer2ID
+   * @return transfer2Id
   **/
   @ApiModelProperty(example = "null", value = "Řádek přenosu do mezd [persistentní položka]")
-  public String getTransfer2ID() {
-    return transfer2ID;
+  public String getTransfer2Id() {
+    return transfer2Id;
   }
 
-  public void setTransfer2ID(String transfer2ID) {
-    this.transfer2ID = transfer2ID;
+  public void setTransfer2Id(String transfer2Id) {
+    this.transfer2Id = transfer2Id;
   }
 
-  public Plmoperationchange deltaTotalTime(Double deltaTotalTime) {
-    this.deltaTotalTime = deltaTotalTime;
+  public Plmoperationchange deltatotaltime(Double deltatotaltime) {
+    this.deltatotaltime = deltatotaltime;
     return this;
   }
 
    /**
-   * Změna doby trvání [persistentní položka]
-   * @return deltaTotalTime
+   * změna doby trvání [persistentní položka]
+   * @return deltatotaltime
   **/
-  @ApiModelProperty(example = "null", value = "Změna doby trvání [persistentní položka]")
-  public Double getDeltaTotalTime() {
-    return deltaTotalTime;
+  @ApiModelProperty(example = "null", value = "změna doby trvání [persistentní položka]")
+  public Double getDeltatotaltime() {
+    return deltatotaltime;
   }
 
-  public void setDeltaTotalTime(Double deltaTotalTime) {
-    this.deltaTotalTime = deltaTotalTime;
+  public void setDeltatotaltime(Double deltatotaltime) {
+    this.deltatotaltime = deltatotaltime;
   }
 
 
@@ -148,18 +193,18 @@ public class Plmoperationchange   {
       return false;
     }
     Plmoperationchange plmoperationchange = (Plmoperationchange) o;
-    return Objects.equals(this.displayName, plmoperationchange.displayName) &&
-        Objects.equals(this.ID, plmoperationchange.ID) &&
-        Objects.equals(this.classID, plmoperationchange.classID) &&
-        Objects.equals(this.objVersion, plmoperationchange.objVersion) &&
-        Objects.equals(this.parentID, plmoperationchange.parentID) &&
-        Objects.equals(this.transfer2ID, plmoperationchange.transfer2ID) &&
-        Objects.equals(this.deltaTotalTime, plmoperationchange.deltaTotalTime);
+    return Objects.equals(this.displayname, plmoperationchange.displayname) &&
+        Objects.equals(this.id, plmoperationchange.id) &&
+        Objects.equals(this.classid, plmoperationchange.classid) &&
+        Objects.equals(this.objversion, plmoperationchange.objversion) &&
+        Objects.equals(this.parentId, plmoperationchange.parentId) &&
+        Objects.equals(this.transfer2Id, plmoperationchange.transfer2Id) &&
+        Objects.equals(this.deltatotaltime, plmoperationchange.deltatotaltime);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, transfer2ID, deltaTotalTime);
+    return Objects.hash(displayname, id, classid, objversion, parentId, transfer2Id, deltatotaltime);
   }
 
   @Override
@@ -167,13 +212,13 @@ public class Plmoperationchange   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmoperationchange {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    transfer2ID: ").append(toIndentedString(transfer2ID)).append("\n");
-    sb.append("    deltaTotalTime: ").append(toIndentedString(deltaTotalTime)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    transfer2Id: ").append(toIndentedString(transfer2Id)).append("\n");
+    sb.append("    deltatotaltime: ").append(toIndentedString(deltatotaltime)).append("\n");
     sb.append("}");
     return sb.toString();
   }

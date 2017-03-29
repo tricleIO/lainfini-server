@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,156 +34,201 @@ import java.util.Objects;
 /**
  * Firmperson
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Firmperson   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("FirmOffice_ID")
-  private String firmOfficeID = null;
+  @SerializedName("firmoffice_id")
+  private String firmofficeId = null;
 
-  @SerializedName("Person_ID")
-  private String personID = null;
+  @SerializedName("person_id")
+  private String personId = null;
 
-  @SerializedName("CommonWorkPosition_ID")
-  private String commonWorkPositionID = null;
+  @SerializedName("commonworkposition_id")
+  private String commonworkpositionId = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Address_ID")
-  private Firmperson addressID = null;
+  @SerializedName("address_id")
+  private Firmperson addressId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Firma [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Firma [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Firmperson posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Firmperson displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Firmperson firmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public Firmperson id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Provozovna; ID objektu Provozovna [persistentní položka]
-   * @return firmOfficeID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna; ID objektu Provozovna [persistentní položka]")
-  public String getFirmOfficeID() {
-    return firmOfficeID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setFirmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Firmperson personID(String personID) {
-    this.personID = personID;
+  public Firmperson classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Osoba; ID objektu Osoba [persistentní položka]
-   * @return personID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Osoba; ID objektu Osoba [persistentní položka]")
-  public String getPersonID() {
-    return personID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPersonID(String personID) {
-    this.personID = personID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Firmperson commonWorkPositionID(String commonWorkPositionID) {
-    this.commonWorkPositionID = commonWorkPositionID;
+  public Firmperson objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Pozice ve firmě; ID objektu Obecné pracovní pozice [persistentní položka]
-   * @return commonWorkPositionID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Pozice ve firmě; ID objektu Obecné pracovní pozice [persistentní položka]")
-  public String getCommonWorkPositionID() {
-    return commonWorkPositionID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setCommonWorkPositionID(String commonWorkPositionID) {
-    this.commonWorkPositionID = commonWorkPositionID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Firmperson parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu firma [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu firma [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Firmperson posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Firmperson firmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
+    return this;
+  }
+
+   /**
+   * provozovna; id objektu provozovna [persistentní položka]
+   * @return firmofficeId
+  **/
+  @ApiModelProperty(example = "null", value = "provozovna; id objektu provozovna [persistentní položka]")
+  public String getFirmofficeId() {
+    return firmofficeId;
+  }
+
+  public void setFirmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
+  }
+
+  public Firmperson personId(String personId) {
+    this.personId = personId;
+    return this;
+  }
+
+   /**
+   * osoba; id objektu osoba [persistentní položka]
+   * @return personId
+  **/
+  @ApiModelProperty(example = "null", value = "osoba; id objektu osoba [persistentní položka]")
+  public String getPersonId() {
+    return personId;
+  }
+
+  public void setPersonId(String personId) {
+    this.personId = personId;
+  }
+
+  public Firmperson commonworkpositionId(String commonworkpositionId) {
+    this.commonworkpositionId = commonworkpositionId;
+    return this;
+  }
+
+   /**
+   * pozice ve firmě; id objektu obecné pracovní pozice [persistentní položka]
+   * @return commonworkpositionId
+  **/
+  @ApiModelProperty(example = "null", value = "pozice ve firmě; id objektu obecné pracovní pozice [persistentní položka]")
+  public String getCommonworkpositionId() {
+    return commonworkpositionId;
+  }
+
+  public void setCommonworkpositionId(String commonworkpositionId) {
+    this.commonworkpositionId = commonworkpositionId;
   }
 
   public Firmperson note(String note) {
@@ -192,10 +237,10 @@ public class Firmperson   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -204,22 +249,22 @@ public class Firmperson   {
     this.note = note;
   }
 
-  public Firmperson addressID(Firmperson addressID) {
-    this.addressID = addressID;
+  public Firmperson addressId(Firmperson addressId) {
+    this.addressId = addressId;
     return this;
   }
 
    /**
-   * Get addressID
-   * @return addressID
+   * Get addressId
+   * @return addressId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Firmperson getAddressID() {
-    return addressID;
+  public Firmperson getAddressId() {
+    return addressId;
   }
 
-  public void setAddressID(Firmperson addressID) {
-    this.addressID = addressID;
+  public void setAddressId(Firmperson addressId) {
+    this.addressId = addressId;
   }
 
 
@@ -232,22 +277,22 @@ public class Firmperson   {
       return false;
     }
     Firmperson firmperson = (Firmperson) o;
-    return Objects.equals(this.displayName, firmperson.displayName) &&
-        Objects.equals(this.ID, firmperson.ID) &&
-        Objects.equals(this.classID, firmperson.classID) &&
-        Objects.equals(this.objVersion, firmperson.objVersion) &&
-        Objects.equals(this.parentID, firmperson.parentID) &&
-        Objects.equals(this.posIndex, firmperson.posIndex) &&
-        Objects.equals(this.firmOfficeID, firmperson.firmOfficeID) &&
-        Objects.equals(this.personID, firmperson.personID) &&
-        Objects.equals(this.commonWorkPositionID, firmperson.commonWorkPositionID) &&
+    return Objects.equals(this.displayname, firmperson.displayname) &&
+        Objects.equals(this.id, firmperson.id) &&
+        Objects.equals(this.classid, firmperson.classid) &&
+        Objects.equals(this.objversion, firmperson.objversion) &&
+        Objects.equals(this.parentId, firmperson.parentId) &&
+        Objects.equals(this.posindex, firmperson.posindex) &&
+        Objects.equals(this.firmofficeId, firmperson.firmofficeId) &&
+        Objects.equals(this.personId, firmperson.personId) &&
+        Objects.equals(this.commonworkpositionId, firmperson.commonworkpositionId) &&
         Objects.equals(this.note, firmperson.note) &&
-        Objects.equals(this.addressID, firmperson.addressID);
+        Objects.equals(this.addressId, firmperson.addressId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, firmOfficeID, personID, commonWorkPositionID, note, addressID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, firmofficeId, personId, commonworkpositionId, note, addressId);
   }
 
   @Override
@@ -255,17 +300,17 @@ public class Firmperson   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Firmperson {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    firmOfficeID: ").append(toIndentedString(firmOfficeID)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
-    sb.append("    commonWorkPositionID: ").append(toIndentedString(commonWorkPositionID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    firmofficeId: ").append(toIndentedString(firmofficeId)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
+    sb.append("    commonworkpositionId: ").append(toIndentedString(commonworkpositionId)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
-    sb.append("    addressID: ").append(toIndentedString(addressID)).append("\n");
+    sb.append("    addressId: ").append(toIndentedString(addressId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

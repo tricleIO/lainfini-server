@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,147 +37,183 @@ import java.util.Objects;
 /**
  * Posmirror
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posmirror   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Posmirrorrow> rows = new ArrayList<Posmirrorrow>();
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("CreatedDate$DATE")
-  private DateTime createdDateDATE = null;
+  @SerializedName("createddate$date")
+  private DateTime createddatedate = null;
 
-  @SerializedName("ClosedDate$DATE")
-  private DateTime closedDateDATE = null;
+  @SerializedName("closeddate$date")
+  private DateTime closeddatedate = null;
 
-  @SerializedName("AuthorizedBy_ID")
-  private String authorizedByID = null;
+  @SerializedName("authorizedby_id")
+  private String authorizedbyId = null;
 
-  @SerializedName("ClosedBy_ID")
-  private String closedByID = null;
+  @SerializedName("closedby_id")
+  private String closedbyId = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("ShortFallAmount")
-  private Double shortFallAmount = null;
+  @SerializedName("shortfallamount")
+  private Double shortfallamount = null;
 
-  @SerializedName("ShortFallAmountRounding")
-  private Double shortFallAmountRounding = null;
+  @SerializedName("shortfallamountrounding")
+  private Double shortfallamountrounding = null;
 
-  @SerializedName("Status")
+  @SerializedName("status")
   private Integer status = null;
 
-  @SerializedName("ShortFall_ID")
-  private String shortFallID = null;
+  @SerializedName("shortfall_id")
+  private String shortfallId = null;
 
-  @SerializedName("XShortFall_ID")
-  private String xShortFallID = null;
+  @SerializedName("xshortfall_id")
+  private String xshortfallId = null;
 
-  @SerializedName("Overplus_ID")
-  private String overplusID = null;
+  @SerializedName("overplus_id")
+  private String overplusId = null;
 
-  @SerializedName("XOverplus_ID")
-  private String xOverplusID = null;
+  @SerializedName("xoverplus_id")
+  private String xoverplusId = null;
 
-  @SerializedName("POSCashReceived_ID")
-  private String pOSCashReceivedID = null;
+  @SerializedName("poscashreceived_id")
+  private String poscashreceivedId = null;
 
-  @SerializedName("POSCashPaid_ID")
-  private String pOSCashPaidID = null;
+  @SerializedName("poscashpaid_id")
+  private String poscashpaidId = null;
 
-  @SerializedName("POSDocument_ID")
-  private String pOSDocumentID = null;
+  @SerializedName("posdocument_id")
+  private String posdocumentId = null;
 
-  @SerializedName("XPOSDocument_ID")
-  private String xPOSDocumentID = null;
+  @SerializedName("xposdocument_id")
+  private String xposdocumentId = null;
 
-  @SerializedName("OriginalMirror_ID")
-  private String originalMirrorID = null;
+  @SerializedName("originalmirror_id")
+  private String originalmirrorId = null;
 
-  @SerializedName("VirtualPOS_ID")
-  private String virtualPOSID = null;
+  @SerializedName("virtualpos_id")
+  private String virtualposId = null;
 
-  @SerializedName("Shop_ID")
-  private String shopID = null;
+  @SerializedName("shop_id")
+  private String shopId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
+
+  public Posmirror displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Posmirror id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Posmirror classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Posmirror objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Posmirror rows(List<Posmirrorrow> rows) {
@@ -191,10 +227,10 @@ public class Posmirror   {
   }
 
    /**
-   * Řádky; kolekce BO Zrcadlo - řádek [nepersistentní položka]
+   * Řádky; kolekce bo zrcadlo - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Zrcadlo - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo zrcadlo - řádek [nepersistentní položka]")
   public List<Posmirrorrow> getRows() {
     return rows;
   }
@@ -203,256 +239,256 @@ public class Posmirror   {
     this.rows = rows;
   }
 
-  public Posmirror docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Posmirror docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Posmirror periodID(String periodID) {
-    this.periodID = periodID;
+  public Posmirror periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Posmirror ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Posmirror ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Posmirror docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Posmirror docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Posmirror createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Posmirror createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Posmirror newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Posmirror newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Posmirror newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Posmirror newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Posmirror createdDateDATE(DateTime createdDateDATE) {
-    this.createdDateDATE = createdDateDATE;
+  public Posmirror createddatedate(DateTime createddatedate) {
+    this.createddatedate = createddatedate;
     return this;
   }
 
    /**
-   * Datum a čas vytvoření zrcadla [persistentní položka]
-   * @return createdDateDATE
+   * datum a čas vytvoření zrcadla [persistentní položka]
+   * @return createddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum a čas vytvoření zrcadla [persistentní položka]")
-  public DateTime getCreatedDateDATE() {
-    return createdDateDATE;
+  @ApiModelProperty(example = "null", value = "datum a čas vytvoření zrcadla [persistentní položka]")
+  public DateTime getCreateddatedate() {
+    return createddatedate;
   }
 
-  public void setCreatedDateDATE(DateTime createdDateDATE) {
-    this.createdDateDATE = createdDateDATE;
+  public void setCreateddatedate(DateTime createddatedate) {
+    this.createddatedate = createddatedate;
   }
 
-  public Posmirror closedDateDATE(DateTime closedDateDATE) {
-    this.closedDateDATE = closedDateDATE;
+  public Posmirror closeddatedate(DateTime closeddatedate) {
+    this.closeddatedate = closeddatedate;
     return this;
   }
 
    /**
-   * Datum a čas uzavření zrcadla [persistentní položka]
-   * @return closedDateDATE
+   * datum a čas uzavření zrcadla [persistentní položka]
+   * @return closeddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum a čas uzavření zrcadla [persistentní položka]")
-  public DateTime getClosedDateDATE() {
-    return closedDateDATE;
+  @ApiModelProperty(example = "null", value = "datum a čas uzavření zrcadla [persistentní položka]")
+  public DateTime getCloseddatedate() {
+    return closeddatedate;
   }
 
-  public void setClosedDateDATE(DateTime closedDateDATE) {
-    this.closedDateDATE = closedDateDATE;
+  public void setCloseddatedate(DateTime closeddatedate) {
+    this.closeddatedate = closeddatedate;
   }
 
-  public Posmirror authorizedByID(String authorizedByID) {
-    this.authorizedByID = authorizedByID;
+  public Posmirror authorizedbyId(String authorizedbyId) {
+    this.authorizedbyId = authorizedbyId;
     return this;
   }
 
    /**
-   * Obsluhující, který autorizoval změny u manka; ID objektu Uživatel [persistentní položka]
-   * @return authorizedByID
+   * obsluhující, který autorizoval změny u manka; id objektu uživatel [persistentní položka]
+   * @return authorizedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Obsluhující, který autorizoval změny u manka; ID objektu Uživatel [persistentní položka]")
-  public String getAuthorizedByID() {
-    return authorizedByID;
+  @ApiModelProperty(example = "null", value = "obsluhující, který autorizoval změny u manka; id objektu uživatel [persistentní položka]")
+  public String getAuthorizedbyId() {
+    return authorizedbyId;
   }
 
-  public void setAuthorizedByID(String authorizedByID) {
-    this.authorizedByID = authorizedByID;
+  public void setAuthorizedbyId(String authorizedbyId) {
+    this.authorizedbyId = authorizedbyId;
   }
 
-  public Posmirror closedByID(String closedByID) {
-    this.closedByID = closedByID;
+  public Posmirror closedbyId(String closedbyId) {
+    this.closedbyId = closedbyId;
     return this;
   }
 
    /**
-   * Obsluhující, který zrcadlo uzavřel (vypořádal); ID objektu Uživatel [persistentní položka]
-   * @return closedByID
+   * obsluhující, který zrcadlo uzavřel (vypořádal); id objektu uživatel [persistentní položka]
+   * @return closedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Obsluhující, který zrcadlo uzavřel (vypořádal); ID objektu Uživatel [persistentní položka]")
-  public String getClosedByID() {
-    return closedByID;
+  @ApiModelProperty(example = "null", value = "obsluhující, který zrcadlo uzavřel (vypořádal); id objektu uživatel [persistentní položka]")
+  public String getClosedbyId() {
+    return closedbyId;
   }
 
-  public void setClosedByID(String closedByID) {
-    this.closedByID = closedByID;
+  public void setClosedbyId(String closedbyId) {
+    this.closedbyId = closedbyId;
   }
 
-  public Posmirror storeID(String storeID) {
-    this.storeID = storeID;
+  public Posmirror storeId(String storeId) {
+    this.storeId = storeId;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
-  public Posmirror shortFallAmount(Double shortFallAmount) {
-    this.shortFallAmount = shortFallAmount;
+  public Posmirror shortfallamount(Double shortfallamount) {
+    this.shortfallamount = shortfallamount;
     return this;
   }
 
    /**
-   * Manko v prodejních cenách vč. DPH [persistentní položka]
-   * @return shortFallAmount
+   * manko v prodejních cenách vč. dph [persistentní položka]
+   * @return shortfallamount
   **/
-  @ApiModelProperty(example = "null", value = "Manko v prodejních cenách vč. DPH [persistentní položka]")
-  public Double getShortFallAmount() {
-    return shortFallAmount;
+  @ApiModelProperty(example = "null", value = "manko v prodejních cenách vč. dph [persistentní položka]")
+  public Double getShortfallamount() {
+    return shortfallamount;
   }
 
-  public void setShortFallAmount(Double shortFallAmount) {
-    this.shortFallAmount = shortFallAmount;
+  public void setShortfallamount(Double shortfallamount) {
+    this.shortfallamount = shortfallamount;
   }
 
-  public Posmirror shortFallAmountRounding(Double shortFallAmountRounding) {
-    this.shortFallAmountRounding = shortFallAmountRounding;
+  public Posmirror shortfallamountrounding(Double shortfallamountrounding) {
+    this.shortfallamountrounding = shortfallamountrounding;
     return this;
   }
 
    /**
-   * Haléřové vyrovnání manka [persistentní položka]
-   * @return shortFallAmountRounding
+   * haléřové vyrovnání manka [persistentní položka]
+   * @return shortfallamountrounding
   **/
-  @ApiModelProperty(example = "null", value = "Haléřové vyrovnání manka [persistentní položka]")
-  public Double getShortFallAmountRounding() {
-    return shortFallAmountRounding;
+  @ApiModelProperty(example = "null", value = "haléřové vyrovnání manka [persistentní položka]")
+  public Double getShortfallamountrounding() {
+    return shortfallamountrounding;
   }
 
-  public void setShortFallAmountRounding(Double shortFallAmountRounding) {
-    this.shortFallAmountRounding = shortFallAmountRounding;
+  public void setShortfallamountrounding(Double shortfallamountrounding) {
+    this.shortfallamountrounding = shortfallamountrounding;
   }
 
   public Posmirror status(Integer status) {
@@ -461,10 +497,10 @@ public class Posmirror   {
   }
 
    /**
-   * Stav zrcadla [persistentní položka]
+   * stav zrcadla [persistentní položka]
    * @return status
   **/
-  @ApiModelProperty(example = "null", value = "Stav zrcadla [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "stav zrcadla [persistentní položka]")
   public Integer getStatus() {
     return status;
   }
@@ -473,274 +509,274 @@ public class Posmirror   {
     this.status = status;
   }
 
-  public Posmirror shortFallID(String shortFallID) {
-    this.shortFallID = shortFallID;
+  public Posmirror shortfallId(String shortfallId) {
+    this.shortfallId = shortfallId;
     return this;
   }
 
    /**
-   * Doklad o inventárním manku; ID objektu Inventární manko [persistentní položka]
-   * @return shortFallID
+   * doklad o inventárním manku; id objektu inventární manko [persistentní položka]
+   * @return shortfallId
   **/
-  @ApiModelProperty(example = "null", value = "Doklad o inventárním manku; ID objektu Inventární manko [persistentní položka]")
-  public String getShortFallID() {
-    return shortFallID;
+  @ApiModelProperty(example = "null", value = "doklad o inventárním manku; id objektu inventární manko [persistentní položka]")
+  public String getShortfallId() {
+    return shortfallId;
   }
 
-  public void setShortFallID(String shortFallID) {
-    this.shortFallID = shortFallID;
+  public void setShortfallId(String shortfallId) {
+    this.shortfallId = shortfallId;
   }
 
-  public Posmirror xShortFallID(String xShortFallID) {
-    this.xShortFallID = xShortFallID;
+  public Posmirror xshortfallId(String xshortfallId) {
+    this.xshortfallId = xshortfallId;
     return this;
   }
 
    /**
-   * Storno přebytku z původního zrcadla; ID objektu Inventární manko [persistentní položka]
-   * @return xShortFallID
+   * storno přebytku z původního zrcadla; id objektu inventární manko [persistentní položka]
+   * @return xshortfallId
   **/
-  @ApiModelProperty(example = "null", value = "Storno přebytku z původního zrcadla; ID objektu Inventární manko [persistentní položka]")
-  public String getXShortFallID() {
-    return xShortFallID;
+  @ApiModelProperty(example = "null", value = "storno přebytku z původního zrcadla; id objektu inventární manko [persistentní položka]")
+  public String getXshortfallId() {
+    return xshortfallId;
   }
 
-  public void setXShortFallID(String xShortFallID) {
-    this.xShortFallID = xShortFallID;
+  public void setXshortfallId(String xshortfallId) {
+    this.xshortfallId = xshortfallId;
   }
 
-  public Posmirror overplusID(String overplusID) {
-    this.overplusID = overplusID;
+  public Posmirror overplusId(String overplusId) {
+    this.overplusId = overplusId;
     return this;
   }
 
    /**
-   * Doklad o inventárním přebytku; ID objektu Inventární přebytek [persistentní položka]
-   * @return overplusID
+   * doklad o inventárním přebytku; id objektu inventární přebytek [persistentní položka]
+   * @return overplusId
   **/
-  @ApiModelProperty(example = "null", value = "Doklad o inventárním přebytku; ID objektu Inventární přebytek [persistentní položka]")
-  public String getOverplusID() {
-    return overplusID;
+  @ApiModelProperty(example = "null", value = "doklad o inventárním přebytku; id objektu inventární přebytek [persistentní položka]")
+  public String getOverplusId() {
+    return overplusId;
   }
 
-  public void setOverplusID(String overplusID) {
-    this.overplusID = overplusID;
+  public void setOverplusId(String overplusId) {
+    this.overplusId = overplusId;
   }
 
-  public Posmirror xOverplusID(String xOverplusID) {
-    this.xOverplusID = xOverplusID;
+  public Posmirror xoverplusId(String xoverplusId) {
+    this.xoverplusId = xoverplusId;
     return this;
   }
 
    /**
-   * Storno manka z původního zrcadla; ID objektu Inventární přebytek [persistentní položka]
-   * @return xOverplusID
+   * storno manka z původního zrcadla; id objektu inventární přebytek [persistentní položka]
+   * @return xoverplusId
   **/
-  @ApiModelProperty(example = "null", value = "Storno manka z původního zrcadla; ID objektu Inventární přebytek [persistentní položka]")
-  public String getXOverplusID() {
-    return xOverplusID;
+  @ApiModelProperty(example = "null", value = "storno manka z původního zrcadla; id objektu inventární přebytek [persistentní položka]")
+  public String getXoverplusId() {
+    return xoverplusId;
   }
 
-  public void setXOverplusID(String xOverplusID) {
-    this.xOverplusID = xOverplusID;
+  public void setXoverplusId(String xoverplusId) {
+    this.xoverplusId = xoverplusId;
   }
 
-  public Posmirror pOSCashReceivedID(String pOSCashReceivedID) {
-    this.pOSCashReceivedID = pOSCashReceivedID;
+  public Posmirror poscashreceivedId(String poscashreceivedId) {
+    this.poscashreceivedId = poscashreceivedId;
     return this;
   }
 
    /**
-   * Doklad PPP k manku ze zrcadla; ID objektu Vklad do pokladního místa [persistentní položka]
-   * @return pOSCashReceivedID
+   * doklad ppp k manku ze zrcadla; id objektu vklad do pokladního místa [persistentní položka]
+   * @return poscashreceivedId
   **/
-  @ApiModelProperty(example = "null", value = "Doklad PPP k manku ze zrcadla; ID objektu Vklad do pokladního místa [persistentní položka]")
-  public String getPOSCashReceivedID() {
-    return pOSCashReceivedID;
+  @ApiModelProperty(example = "null", value = "doklad ppp k manku ze zrcadla; id objektu vklad do pokladního místa [persistentní položka]")
+  public String getPoscashreceivedId() {
+    return poscashreceivedId;
   }
 
-  public void setPOSCashReceivedID(String pOSCashReceivedID) {
-    this.pOSCashReceivedID = pOSCashReceivedID;
+  public void setPoscashreceivedId(String poscashreceivedId) {
+    this.poscashreceivedId = poscashreceivedId;
   }
 
-  public Posmirror pOSCashPaidID(String pOSCashPaidID) {
-    this.pOSCashPaidID = pOSCashPaidID;
+  public Posmirror poscashpaidId(String poscashpaidId) {
+    this.poscashpaidId = poscashpaidId;
     return this;
   }
 
    /**
-   * Doklad VPP k opravě manka ze zrcadla; ID objektu Výdej z pokladního místa [persistentní položka]
-   * @return pOSCashPaidID
+   * doklad vpp k opravě manka ze zrcadla; id objektu výdej z pokladního místa [persistentní položka]
+   * @return poscashpaidId
   **/
-  @ApiModelProperty(example = "null", value = "Doklad VPP k opravě manka ze zrcadla; ID objektu Výdej z pokladního místa [persistentní položka]")
-  public String getPOSCashPaidID() {
-    return pOSCashPaidID;
+  @ApiModelProperty(example = "null", value = "doklad vpp k opravě manka ze zrcadla; id objektu výdej z pokladního místa [persistentní položka]")
+  public String getPoscashpaidId() {
+    return poscashpaidId;
   }
 
-  public void setPOSCashPaidID(String pOSCashPaidID) {
-    this.pOSCashPaidID = pOSCashPaidID;
+  public void setPoscashpaidId(String poscashpaidId) {
+    this.poscashpaidId = poscashpaidId;
   }
 
-  public Posmirror pOSDocumentID(String pOSDocumentID) {
-    this.pOSDocumentID = pOSDocumentID;
+  public Posmirror posdocumentId(String posdocumentId) {
+    this.posdocumentId = posdocumentId;
     return this;
   }
 
    /**
-   * Účtenka manka ze zrcadla; ID objektu Účtenka
-   * @return pOSDocumentID
+   * Účtenka manka ze zrcadla; id objektu Účtenka
+   * @return posdocumentId
   **/
-  @ApiModelProperty(example = "null", value = "Účtenka manka ze zrcadla; ID objektu Účtenka")
-  public String getPOSDocumentID() {
-    return pOSDocumentID;
+  @ApiModelProperty(example = "null", value = "Účtenka manka ze zrcadla; id objektu Účtenka")
+  public String getPosdocumentId() {
+    return posdocumentId;
   }
 
-  public void setPOSDocumentID(String pOSDocumentID) {
-    this.pOSDocumentID = pOSDocumentID;
+  public void setPosdocumentId(String posdocumentId) {
+    this.posdocumentId = posdocumentId;
   }
 
-  public Posmirror xPOSDocumentID(String xPOSDocumentID) {
-    this.xPOSDocumentID = xPOSDocumentID;
+  public Posmirror xposdocumentId(String xposdocumentId) {
+    this.xposdocumentId = xposdocumentId;
     return this;
   }
 
    /**
-   * Storno účtenky z předchozího zrcadla; ID objektu Účtenka
-   * @return xPOSDocumentID
+   * storno účtenky z předchozího zrcadla; id objektu Účtenka
+   * @return xposdocumentId
   **/
-  @ApiModelProperty(example = "null", value = "Storno účtenky z předchozího zrcadla; ID objektu Účtenka")
-  public String getXPOSDocumentID() {
-    return xPOSDocumentID;
+  @ApiModelProperty(example = "null", value = "storno účtenky z předchozího zrcadla; id objektu Účtenka")
+  public String getXposdocumentId() {
+    return xposdocumentId;
   }
 
-  public void setXPOSDocumentID(String xPOSDocumentID) {
-    this.xPOSDocumentID = xPOSDocumentID;
+  public void setXposdocumentId(String xposdocumentId) {
+    this.xposdocumentId = xposdocumentId;
   }
 
-  public Posmirror originalMirrorID(String originalMirrorID) {
-    this.originalMirrorID = originalMirrorID;
+  public Posmirror originalmirrorId(String originalmirrorId) {
+    this.originalmirrorId = originalmirrorId;
     return this;
   }
 
    /**
-   * Opravené zrcadlo; ID objektu Zrcadlo [persistentní položka]
-   * @return originalMirrorID
+   * opravené zrcadlo; id objektu zrcadlo [persistentní položka]
+   * @return originalmirrorId
   **/
-  @ApiModelProperty(example = "null", value = "Opravené zrcadlo; ID objektu Zrcadlo [persistentní položka]")
-  public String getOriginalMirrorID() {
-    return originalMirrorID;
+  @ApiModelProperty(example = "null", value = "opravené zrcadlo; id objektu zrcadlo [persistentní položka]")
+  public String getOriginalmirrorId() {
+    return originalmirrorId;
   }
 
-  public void setOriginalMirrorID(String originalMirrorID) {
-    this.originalMirrorID = originalMirrorID;
+  public void setOriginalmirrorId(String originalmirrorId) {
+    this.originalmirrorId = originalmirrorId;
   }
 
-  public Posmirror virtualPOSID(String virtualPOSID) {
-    this.virtualPOSID = virtualPOSID;
+  public Posmirror virtualposId(String virtualposId) {
+    this.virtualposId = virtualposId;
     return this;
   }
 
    /**
-   * Pokladní místo; ID objektu Pokladní místo [persistentní položka]
-   * @return virtualPOSID
+   * pokladní místo; id objektu pokladní místo [persistentní položka]
+   * @return virtualposId
   **/
-  @ApiModelProperty(example = "null", value = "Pokladní místo; ID objektu Pokladní místo [persistentní položka]")
-  public String getVirtualPOSID() {
-    return virtualPOSID;
+  @ApiModelProperty(example = "null", value = "pokladní místo; id objektu pokladní místo [persistentní položka]")
+  public String getVirtualposId() {
+    return virtualposId;
   }
 
-  public void setVirtualPOSID(String virtualPOSID) {
-    this.virtualPOSID = virtualPOSID;
+  public void setVirtualposId(String virtualposId) {
+    this.virtualposId = virtualposId;
   }
 
-  public Posmirror shopID(String shopID) {
-    this.shopID = shopID;
+  public Posmirror shopId(String shopId) {
+    this.shopId = shopId;
     return this;
   }
 
    /**
-   * Provoz; ID objektu Nastavení provozu [persistentní položka]
-   * @return shopID
+   * provoz; id objektu nastavení provozu [persistentní položka]
+   * @return shopId
   **/
-  @ApiModelProperty(example = "null", value = "Provoz; ID objektu Nastavení provozu [persistentní položka]")
-  public String getShopID() {
-    return shopID;
+  @ApiModelProperty(example = "null", value = "provoz; id objektu nastavení provozu [persistentní položka]")
+  public String getShopId() {
+    return shopId;
   }
 
-  public void setShopID(String shopID) {
-    this.shopID = shopID;
+  public void setShopId(String shopId) {
+    this.shopId = shopId;
   }
 
-  public Posmirror divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Posmirror divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Posmirror busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Posmirror busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Posmirror busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Posmirror bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obchodní případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obchodní případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obchodní případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obchodní případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Posmirror busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Posmirror busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
 
@@ -753,46 +789,46 @@ public class Posmirror   {
       return false;
     }
     Posmirror posmirror = (Posmirror) o;
-    return Objects.equals(this.displayName, posmirror.displayName) &&
-        Objects.equals(this.ID, posmirror.ID) &&
-        Objects.equals(this.classID, posmirror.classID) &&
-        Objects.equals(this.objVersion, posmirror.objVersion) &&
+    return Objects.equals(this.displayname, posmirror.displayname) &&
+        Objects.equals(this.id, posmirror.id) &&
+        Objects.equals(this.classid, posmirror.classid) &&
+        Objects.equals(this.objversion, posmirror.objversion) &&
         Objects.equals(this.rows, posmirror.rows) &&
-        Objects.equals(this.docQueueID, posmirror.docQueueID) &&
-        Objects.equals(this.periodID, posmirror.periodID) &&
-        Objects.equals(this.ordNumber, posmirror.ordNumber) &&
-        Objects.equals(this.docDateDATE, posmirror.docDateDATE) &&
-        Objects.equals(this.createdByID, posmirror.createdByID) &&
-        Objects.equals(this.newRelatedType, posmirror.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, posmirror.newRelatedDocumentID) &&
-        Objects.equals(this.createdDateDATE, posmirror.createdDateDATE) &&
-        Objects.equals(this.closedDateDATE, posmirror.closedDateDATE) &&
-        Objects.equals(this.authorizedByID, posmirror.authorizedByID) &&
-        Objects.equals(this.closedByID, posmirror.closedByID) &&
-        Objects.equals(this.storeID, posmirror.storeID) &&
-        Objects.equals(this.shortFallAmount, posmirror.shortFallAmount) &&
-        Objects.equals(this.shortFallAmountRounding, posmirror.shortFallAmountRounding) &&
+        Objects.equals(this.docqueueId, posmirror.docqueueId) &&
+        Objects.equals(this.periodId, posmirror.periodId) &&
+        Objects.equals(this.ordnumber, posmirror.ordnumber) &&
+        Objects.equals(this.docdatedate, posmirror.docdatedate) &&
+        Objects.equals(this.createdbyId, posmirror.createdbyId) &&
+        Objects.equals(this.newrelatedtype, posmirror.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, posmirror.newrelateddocumentId) &&
+        Objects.equals(this.createddatedate, posmirror.createddatedate) &&
+        Objects.equals(this.closeddatedate, posmirror.closeddatedate) &&
+        Objects.equals(this.authorizedbyId, posmirror.authorizedbyId) &&
+        Objects.equals(this.closedbyId, posmirror.closedbyId) &&
+        Objects.equals(this.storeId, posmirror.storeId) &&
+        Objects.equals(this.shortfallamount, posmirror.shortfallamount) &&
+        Objects.equals(this.shortfallamountrounding, posmirror.shortfallamountrounding) &&
         Objects.equals(this.status, posmirror.status) &&
-        Objects.equals(this.shortFallID, posmirror.shortFallID) &&
-        Objects.equals(this.xShortFallID, posmirror.xShortFallID) &&
-        Objects.equals(this.overplusID, posmirror.overplusID) &&
-        Objects.equals(this.xOverplusID, posmirror.xOverplusID) &&
-        Objects.equals(this.pOSCashReceivedID, posmirror.pOSCashReceivedID) &&
-        Objects.equals(this.pOSCashPaidID, posmirror.pOSCashPaidID) &&
-        Objects.equals(this.pOSDocumentID, posmirror.pOSDocumentID) &&
-        Objects.equals(this.xPOSDocumentID, posmirror.xPOSDocumentID) &&
-        Objects.equals(this.originalMirrorID, posmirror.originalMirrorID) &&
-        Objects.equals(this.virtualPOSID, posmirror.virtualPOSID) &&
-        Objects.equals(this.shopID, posmirror.shopID) &&
-        Objects.equals(this.divisionID, posmirror.divisionID) &&
-        Objects.equals(this.busOrderID, posmirror.busOrderID) &&
-        Objects.equals(this.busTransactionID, posmirror.busTransactionID) &&
-        Objects.equals(this.busProjectID, posmirror.busProjectID);
+        Objects.equals(this.shortfallId, posmirror.shortfallId) &&
+        Objects.equals(this.xshortfallId, posmirror.xshortfallId) &&
+        Objects.equals(this.overplusId, posmirror.overplusId) &&
+        Objects.equals(this.xoverplusId, posmirror.xoverplusId) &&
+        Objects.equals(this.poscashreceivedId, posmirror.poscashreceivedId) &&
+        Objects.equals(this.poscashpaidId, posmirror.poscashpaidId) &&
+        Objects.equals(this.posdocumentId, posmirror.posdocumentId) &&
+        Objects.equals(this.xposdocumentId, posmirror.xposdocumentId) &&
+        Objects.equals(this.originalmirrorId, posmirror.originalmirrorId) &&
+        Objects.equals(this.virtualposId, posmirror.virtualposId) &&
+        Objects.equals(this.shopId, posmirror.shopId) &&
+        Objects.equals(this.divisionId, posmirror.divisionId) &&
+        Objects.equals(this.busorderId, posmirror.busorderId) &&
+        Objects.equals(this.bustransactionId, posmirror.bustransactionId) &&
+        Objects.equals(this.busprojectId, posmirror.busprojectId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, docQueueID, periodID, ordNumber, docDateDATE, createdByID, newRelatedType, newRelatedDocumentID, createdDateDATE, closedDateDATE, authorizedByID, closedByID, storeID, shortFallAmount, shortFallAmountRounding, status, shortFallID, xShortFallID, overplusID, xOverplusID, pOSCashReceivedID, pOSCashPaidID, pOSDocumentID, xPOSDocumentID, originalMirrorID, virtualPOSID, shopID, divisionID, busOrderID, busTransactionID, busProjectID);
+    return Objects.hash(displayname, id, classid, objversion, rows, docqueueId, periodId, ordnumber, docdatedate, createdbyId, newrelatedtype, newrelateddocumentId, createddatedate, closeddatedate, authorizedbyId, closedbyId, storeId, shortfallamount, shortfallamountrounding, status, shortfallId, xshortfallId, overplusId, xoverplusId, poscashreceivedId, poscashpaidId, posdocumentId, xposdocumentId, originalmirrorId, virtualposId, shopId, divisionId, busorderId, bustransactionId, busprojectId);
   }
 
   @Override
@@ -800,41 +836,41 @@ public class Posmirror   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posmirror {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    createdDateDATE: ").append(toIndentedString(createdDateDATE)).append("\n");
-    sb.append("    closedDateDATE: ").append(toIndentedString(closedDateDATE)).append("\n");
-    sb.append("    authorizedByID: ").append(toIndentedString(authorizedByID)).append("\n");
-    sb.append("    closedByID: ").append(toIndentedString(closedByID)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    shortFallAmount: ").append(toIndentedString(shortFallAmount)).append("\n");
-    sb.append("    shortFallAmountRounding: ").append(toIndentedString(shortFallAmountRounding)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    createddatedate: ").append(toIndentedString(createddatedate)).append("\n");
+    sb.append("    closeddatedate: ").append(toIndentedString(closeddatedate)).append("\n");
+    sb.append("    authorizedbyId: ").append(toIndentedString(authorizedbyId)).append("\n");
+    sb.append("    closedbyId: ").append(toIndentedString(closedbyId)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    shortfallamount: ").append(toIndentedString(shortfallamount)).append("\n");
+    sb.append("    shortfallamountrounding: ").append(toIndentedString(shortfallamountrounding)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
-    sb.append("    shortFallID: ").append(toIndentedString(shortFallID)).append("\n");
-    sb.append("    xShortFallID: ").append(toIndentedString(xShortFallID)).append("\n");
-    sb.append("    overplusID: ").append(toIndentedString(overplusID)).append("\n");
-    sb.append("    xOverplusID: ").append(toIndentedString(xOverplusID)).append("\n");
-    sb.append("    pOSCashReceivedID: ").append(toIndentedString(pOSCashReceivedID)).append("\n");
-    sb.append("    pOSCashPaidID: ").append(toIndentedString(pOSCashPaidID)).append("\n");
-    sb.append("    pOSDocumentID: ").append(toIndentedString(pOSDocumentID)).append("\n");
-    sb.append("    xPOSDocumentID: ").append(toIndentedString(xPOSDocumentID)).append("\n");
-    sb.append("    originalMirrorID: ").append(toIndentedString(originalMirrorID)).append("\n");
-    sb.append("    virtualPOSID: ").append(toIndentedString(virtualPOSID)).append("\n");
-    sb.append("    shopID: ").append(toIndentedString(shopID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
+    sb.append("    shortfallId: ").append(toIndentedString(shortfallId)).append("\n");
+    sb.append("    xshortfallId: ").append(toIndentedString(xshortfallId)).append("\n");
+    sb.append("    overplusId: ").append(toIndentedString(overplusId)).append("\n");
+    sb.append("    xoverplusId: ").append(toIndentedString(xoverplusId)).append("\n");
+    sb.append("    poscashreceivedId: ").append(toIndentedString(poscashreceivedId)).append("\n");
+    sb.append("    poscashpaidId: ").append(toIndentedString(poscashpaidId)).append("\n");
+    sb.append("    posdocumentId: ").append(toIndentedString(posdocumentId)).append("\n");
+    sb.append("    xposdocumentId: ").append(toIndentedString(xposdocumentId)).append("\n");
+    sb.append("    originalmirrorId: ").append(toIndentedString(originalmirrorId)).append("\n");
+    sb.append("    virtualposId: ").append(toIndentedString(virtualposId)).append("\n");
+    sb.append("    shopId: ").append(toIndentedString(shopId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

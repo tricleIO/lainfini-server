@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,183 +35,219 @@ import java.util.Objects;
 /**
  * Wageperiod
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wageperiod   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DateFrom$DATE")
-  private DateTime dateFromDATE = null;
+  @SerializedName("datefrom$date")
+  private DateTime datefromdate = null;
 
-  @SerializedName("DateTo$DATE")
-  private DateTime dateToDATE = null;
+  @SerializedName("dateto$date")
+  private DateTime datetodate = null;
 
-  @SerializedName("WPeriodYear")
-  private Integer wPeriodYear = null;
+  @SerializedName("wperiodyear")
+  private Integer wperiodyear = null;
 
-  @SerializedName("WPeriodMonth")
-  private Integer wPeriodMonth = null;
+  @SerializedName("wperiodmonth")
+  private Integer wperiodmonth = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("WPeriodClosed")
-  private Boolean wPeriodClosed = null;
+  @SerializedName("wperiodclosed")
+  private Boolean wperiodclosed = null;
 
-  @SerializedName("WPeriodInitialized")
-  private Boolean wPeriodInitialized = null;
+  @SerializedName("wperiodinitialized")
+  private Boolean wperiodinitialized = null;
 
-  @SerializedName("Terminator")
+  @SerializedName("terminator")
   private Boolean terminator = null;
 
-  @SerializedName("FirstWPeriod")
-  private Boolean firstWPeriod = null;
+  @SerializedName("firstwperiod")
+  private Boolean firstwperiod = null;
 
-  @SerializedName("WPeriodIsActual")
-  private Boolean wPeriodIsActual = null;
+  @SerializedName("wperiodisactual")
+  private Boolean wperiodisactual = null;
 
-  @SerializedName("StateText")
-  private String stateText = null;
+  @SerializedName("statetext")
+  private String statetext = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Wageperiod dateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public Wageperiod displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Od [persistentní položka]
-   * @return dateFromDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Od [persistentní položka]")
-  public DateTime getDateFromDATE() {
-    return dateFromDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Wageperiod dateToDATE(DateTime dateToDATE) {
-    this.dateToDATE = dateToDATE;
+  public Wageperiod id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Do [persistentní položka]
-   * @return dateToDATE
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Do [persistentní položka]")
-  public DateTime getDateToDATE() {
-    return dateToDATE;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDateToDATE(DateTime dateToDATE) {
-    this.dateToDATE = dateToDATE;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Wageperiod wPeriodYear(Integer wPeriodYear) {
-    this.wPeriodYear = wPeriodYear;
+  public Wageperiod classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Rok
-   * @return wPeriodYear
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Rok")
-  public Integer getWPeriodYear() {
-    return wPeriodYear;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setWPeriodYear(Integer wPeriodYear) {
-    this.wPeriodYear = wPeriodYear;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Wageperiod wPeriodMonth(Integer wPeriodMonth) {
-    this.wPeriodMonth = wPeriodMonth;
+  public Wageperiod objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Měsíc
-   * @return wPeriodMonth
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Měsíc")
-  public Integer getWPeriodMonth() {
-    return wPeriodMonth;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setWPeriodMonth(Integer wPeriodMonth) {
-    this.wPeriodMonth = wPeriodMonth;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Wageperiod periodID(String periodID) {
-    this.periodID = periodID;
+  public Wageperiod datefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
     return this;
   }
 
    /**
-   * Fisk.období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * od [persistentní položka]
+   * @return datefromdate
   **/
-  @ApiModelProperty(example = "null", value = "Fisk.období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "od [persistentní položka]")
+  public DateTime getDatefromdate() {
+    return datefromdate;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setDatefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
+  }
+
+  public Wageperiod datetodate(DateTime datetodate) {
+    this.datetodate = datetodate;
+    return this;
+  }
+
+   /**
+   * do [persistentní položka]
+   * @return datetodate
+  **/
+  @ApiModelProperty(example = "null", value = "do [persistentní položka]")
+  public DateTime getDatetodate() {
+    return datetodate;
+  }
+
+  public void setDatetodate(DateTime datetodate) {
+    this.datetodate = datetodate;
+  }
+
+  public Wageperiod wperiodyear(Integer wperiodyear) {
+    this.wperiodyear = wperiodyear;
+    return this;
+  }
+
+   /**
+   * rok
+   * @return wperiodyear
+  **/
+  @ApiModelProperty(example = "null", value = "rok")
+  public Integer getWperiodyear() {
+    return wperiodyear;
+  }
+
+  public void setWperiodyear(Integer wperiodyear) {
+    this.wperiodyear = wperiodyear;
+  }
+
+  public Wageperiod wperiodmonth(Integer wperiodmonth) {
+    this.wperiodmonth = wperiodmonth;
+    return this;
+  }
+
+   /**
+   * měsíc
+   * @return wperiodmonth
+  **/
+  @ApiModelProperty(example = "null", value = "měsíc")
+  public Integer getWperiodmonth() {
+    return wperiodmonth;
+  }
+
+  public void setWperiodmonth(Integer wperiodmonth) {
+    this.wperiodmonth = wperiodmonth;
+  }
+
+  public Wageperiod periodId(String periodId) {
+    this.periodId = periodId;
+    return this;
+  }
+
+   /**
+   * fisk.období; id objektu období [persistentní položka]
+   * @return periodId
+  **/
+  @ApiModelProperty(example = "null", value = "fisk.období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
+  }
+
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
   public Wageperiod code(String code) {
@@ -220,10 +256,10 @@ public class Wageperiod   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -238,10 +274,10 @@ public class Wageperiod   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -250,40 +286,40 @@ public class Wageperiod   {
     this.name = name;
   }
 
-  public Wageperiod wPeriodClosed(Boolean wPeriodClosed) {
-    this.wPeriodClosed = wPeriodClosed;
+  public Wageperiod wperiodclosed(Boolean wperiodclosed) {
+    this.wperiodclosed = wperiodclosed;
     return this;
   }
 
    /**
-   * Uzav. [persistentní položka]
-   * @return wPeriodClosed
+   * uzav. [persistentní položka]
+   * @return wperiodclosed
   **/
-  @ApiModelProperty(example = "null", value = "Uzav. [persistentní položka]")
-  public Boolean getWPeriodClosed() {
-    return wPeriodClosed;
+  @ApiModelProperty(example = "null", value = "uzav. [persistentní položka]")
+  public Boolean getWperiodclosed() {
+    return wperiodclosed;
   }
 
-  public void setWPeriodClosed(Boolean wPeriodClosed) {
-    this.wPeriodClosed = wPeriodClosed;
+  public void setWperiodclosed(Boolean wperiodclosed) {
+    this.wperiodclosed = wperiodclosed;
   }
 
-  public Wageperiod wPeriodInitialized(Boolean wPeriodInitialized) {
-    this.wPeriodInitialized = wPeriodInitialized;
+  public Wageperiod wperiodinitialized(Boolean wperiodinitialized) {
+    this.wperiodinitialized = wperiodinitialized;
     return this;
   }
 
    /**
-   * Init. [persistentní položka]
-   * @return wPeriodInitialized
+   * init. [persistentní položka]
+   * @return wperiodinitialized
   **/
-  @ApiModelProperty(example = "null", value = "Init. [persistentní položka]")
-  public Boolean getWPeriodInitialized() {
-    return wPeriodInitialized;
+  @ApiModelProperty(example = "null", value = "init. [persistentní položka]")
+  public Boolean getWperiodinitialized() {
+    return wperiodinitialized;
   }
 
-  public void setWPeriodInitialized(Boolean wPeriodInitialized) {
-    this.wPeriodInitialized = wPeriodInitialized;
+  public void setWperiodinitialized(Boolean wperiodinitialized) {
+    this.wperiodinitialized = wperiodinitialized;
   }
 
   public Wageperiod terminator(Boolean terminator) {
@@ -292,10 +328,10 @@ public class Wageperiod   {
   }
 
    /**
-   * Term. [persistentní položka]
+   * term. [persistentní položka]
    * @return terminator
   **/
-  @ApiModelProperty(example = "null", value = "Term. [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "term. [persistentní položka]")
   public Boolean getTerminator() {
     return terminator;
   }
@@ -304,58 +340,58 @@ public class Wageperiod   {
     this.terminator = terminator;
   }
 
-  public Wageperiod firstWPeriod(Boolean firstWPeriod) {
-    this.firstWPeriod = firstWPeriod;
+  public Wageperiod firstwperiod(Boolean firstwperiod) {
+    this.firstwperiod = firstwperiod;
     return this;
   }
 
    /**
-   * První [persistentní položka]
-   * @return firstWPeriod
+   * první [persistentní položka]
+   * @return firstwperiod
   **/
-  @ApiModelProperty(example = "null", value = "První [persistentní položka]")
-  public Boolean getFirstWPeriod() {
-    return firstWPeriod;
+  @ApiModelProperty(example = "null", value = "první [persistentní položka]")
+  public Boolean getFirstwperiod() {
+    return firstwperiod;
   }
 
-  public void setFirstWPeriod(Boolean firstWPeriod) {
-    this.firstWPeriod = firstWPeriod;
+  public void setFirstwperiod(Boolean firstwperiod) {
+    this.firstwperiod = firstwperiod;
   }
 
-  public Wageperiod wPeriodIsActual(Boolean wPeriodIsActual) {
-    this.wPeriodIsActual = wPeriodIsActual;
+  public Wageperiod wperiodisactual(Boolean wperiodisactual) {
+    this.wperiodisactual = wperiodisactual;
     return this;
   }
 
    /**
-   * Aktivní
-   * @return wPeriodIsActual
+   * aktivní
+   * @return wperiodisactual
   **/
-  @ApiModelProperty(example = "null", value = "Aktivní")
-  public Boolean getWPeriodIsActual() {
-    return wPeriodIsActual;
+  @ApiModelProperty(example = "null", value = "aktivní")
+  public Boolean getWperiodisactual() {
+    return wperiodisactual;
   }
 
-  public void setWPeriodIsActual(Boolean wPeriodIsActual) {
-    this.wPeriodIsActual = wPeriodIsActual;
+  public void setWperiodisactual(Boolean wperiodisactual) {
+    this.wperiodisactual = wperiodisactual;
   }
 
-  public Wageperiod stateText(String stateText) {
-    this.stateText = stateText;
+  public Wageperiod statetext(String statetext) {
+    this.statetext = statetext;
     return this;
   }
 
    /**
-   * Stav
-   * @return stateText
+   * stav
+   * @return statetext
   **/
-  @ApiModelProperty(example = "null", value = "Stav")
-  public String getStateText() {
-    return stateText;
+  @ApiModelProperty(example = "null", value = "stav")
+  public String getStatetext() {
+    return statetext;
   }
 
-  public void setStateText(String stateText) {
-    this.stateText = stateText;
+  public void setStatetext(String statetext) {
+    this.statetext = statetext;
   }
 
 
@@ -368,28 +404,28 @@ public class Wageperiod   {
       return false;
     }
     Wageperiod wageperiod = (Wageperiod) o;
-    return Objects.equals(this.displayName, wageperiod.displayName) &&
-        Objects.equals(this.ID, wageperiod.ID) &&
-        Objects.equals(this.classID, wageperiod.classID) &&
-        Objects.equals(this.objVersion, wageperiod.objVersion) &&
-        Objects.equals(this.dateFromDATE, wageperiod.dateFromDATE) &&
-        Objects.equals(this.dateToDATE, wageperiod.dateToDATE) &&
-        Objects.equals(this.wPeriodYear, wageperiod.wPeriodYear) &&
-        Objects.equals(this.wPeriodMonth, wageperiod.wPeriodMonth) &&
-        Objects.equals(this.periodID, wageperiod.periodID) &&
+    return Objects.equals(this.displayname, wageperiod.displayname) &&
+        Objects.equals(this.id, wageperiod.id) &&
+        Objects.equals(this.classid, wageperiod.classid) &&
+        Objects.equals(this.objversion, wageperiod.objversion) &&
+        Objects.equals(this.datefromdate, wageperiod.datefromdate) &&
+        Objects.equals(this.datetodate, wageperiod.datetodate) &&
+        Objects.equals(this.wperiodyear, wageperiod.wperiodyear) &&
+        Objects.equals(this.wperiodmonth, wageperiod.wperiodmonth) &&
+        Objects.equals(this.periodId, wageperiod.periodId) &&
         Objects.equals(this.code, wageperiod.code) &&
         Objects.equals(this.name, wageperiod.name) &&
-        Objects.equals(this.wPeriodClosed, wageperiod.wPeriodClosed) &&
-        Objects.equals(this.wPeriodInitialized, wageperiod.wPeriodInitialized) &&
+        Objects.equals(this.wperiodclosed, wageperiod.wperiodclosed) &&
+        Objects.equals(this.wperiodinitialized, wageperiod.wperiodinitialized) &&
         Objects.equals(this.terminator, wageperiod.terminator) &&
-        Objects.equals(this.firstWPeriod, wageperiod.firstWPeriod) &&
-        Objects.equals(this.wPeriodIsActual, wageperiod.wPeriodIsActual) &&
-        Objects.equals(this.stateText, wageperiod.stateText);
+        Objects.equals(this.firstwperiod, wageperiod.firstwperiod) &&
+        Objects.equals(this.wperiodisactual, wageperiod.wperiodisactual) &&
+        Objects.equals(this.statetext, wageperiod.statetext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, dateFromDATE, dateToDATE, wPeriodYear, wPeriodMonth, periodID, code, name, wPeriodClosed, wPeriodInitialized, terminator, firstWPeriod, wPeriodIsActual, stateText);
+    return Objects.hash(displayname, id, classid, objversion, datefromdate, datetodate, wperiodyear, wperiodmonth, periodId, code, name, wperiodclosed, wperiodinitialized, terminator, firstwperiod, wperiodisactual, statetext);
   }
 
   @Override
@@ -397,23 +433,23 @@ public class Wageperiod   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wageperiod {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    dateFromDATE: ").append(toIndentedString(dateFromDATE)).append("\n");
-    sb.append("    dateToDATE: ").append(toIndentedString(dateToDATE)).append("\n");
-    sb.append("    wPeriodYear: ").append(toIndentedString(wPeriodYear)).append("\n");
-    sb.append("    wPeriodMonth: ").append(toIndentedString(wPeriodMonth)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    datefromdate: ").append(toIndentedString(datefromdate)).append("\n");
+    sb.append("    datetodate: ").append(toIndentedString(datetodate)).append("\n");
+    sb.append("    wperiodyear: ").append(toIndentedString(wperiodyear)).append("\n");
+    sb.append("    wperiodmonth: ").append(toIndentedString(wperiodmonth)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    wPeriodClosed: ").append(toIndentedString(wPeriodClosed)).append("\n");
-    sb.append("    wPeriodInitialized: ").append(toIndentedString(wPeriodInitialized)).append("\n");
+    sb.append("    wperiodclosed: ").append(toIndentedString(wperiodclosed)).append("\n");
+    sb.append("    wperiodinitialized: ").append(toIndentedString(wperiodinitialized)).append("\n");
     sb.append("    terminator: ").append(toIndentedString(terminator)).append("\n");
-    sb.append("    firstWPeriod: ").append(toIndentedString(firstWPeriod)).append("\n");
-    sb.append("    wPeriodIsActual: ").append(toIndentedString(wPeriodIsActual)).append("\n");
-    sb.append("    stateText: ").append(toIndentedString(stateText)).append("\n");
+    sb.append("    firstwperiod: ").append(toIndentedString(firstwperiod)).append("\n");
+    sb.append("    wperiodisactual: ").append(toIndentedString(wperiodisactual)).append("\n");
+    sb.append("    statetext: ").append(toIndentedString(statetext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,174 +34,237 @@ import java.util.Objects;
 /**
  * Employpatternfield
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Employpatternfield   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("CLSID")
-  private String CLSID = null;
+  @SerializedName("clsid")
+  private String clsid = null;
 
-  @SerializedName("FieldCode")
-  private Integer fieldCode = null;
+  @SerializedName("fieldcode")
+  private Integer fieldcode = null;
 
-  @SerializedName("InitialValue")
-  private String initialValue = null;
+  @SerializedName("initialvalue")
+  private String initialvalue = null;
 
-  @SerializedName("FieldName")
-  private String fieldName = null;
+  @SerializedName("fieldname")
+  private String fieldname = null;
 
-  @SerializedName("FieldLabel")
-  private String fieldLabel = null;
+  @SerializedName("fieldlabel")
+  private String fieldlabel = null;
 
-  @SerializedName("FieldDataType")
-  private Integer fieldDataType = null;
+  @SerializedName("fielddatatype")
+  private Integer fielddatatype = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Druh pracovního poměru [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Druh pracovního poměru [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Employpatternfield CLSID(String CLSID) {
-    this.CLSID = CLSID;
+  public Employpatternfield displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Třída [persistentní položka]
-   * @return CLSID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Třída [persistentní položka]")
-  public String getCLSID() {
-    return CLSID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setCLSID(String CLSID) {
-    this.CLSID = CLSID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Employpatternfield fieldCode(Integer fieldCode) {
-    this.fieldCode = fieldCode;
+  public Employpatternfield id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Položka [persistentní položka]
-   * @return fieldCode
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Položka [persistentní položka]")
-  public Integer getFieldCode() {
-    return fieldCode;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setFieldCode(Integer fieldCode) {
-    this.fieldCode = fieldCode;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Employpatternfield initialValue(String initialValue) {
-    this.initialValue = initialValue;
+  public Employpatternfield classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Výchozí hodnota [persistentní položka]
-   * @return initialValue
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí hodnota [persistentní položka]")
-  public String getInitialValue() {
-    return initialValue;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setInitialValue(String initialValue) {
-    this.initialValue = initialValue;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Employpatternfield fieldName(String fieldName) {
-    this.fieldName = fieldName;
+  public Employpatternfield objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Položka
-   * @return fieldName
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Položka")
-  public String getFieldName() {
-    return fieldName;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setFieldName(String fieldName) {
-    this.fieldName = fieldName;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-   /**
-   * Položka
-   * @return fieldLabel
-  **/
-  @ApiModelProperty(example = "null", value = "Položka")
-  public String getFieldLabel() {
-    return fieldLabel;
+  public Employpatternfield parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
   }
 
    /**
-   * Dat. typ
-   * @return fieldDataType
+   * vlastník; id objektu druh pracovního poměru [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Dat. typ")
-  public Integer getFieldDataType() {
-    return fieldDataType;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu druh pracovního poměru [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Employpatternfield clsid(String clsid) {
+    this.clsid = clsid;
+    return this;
+  }
+
+   /**
+   * třída [persistentní položka]
+   * @return clsid
+  **/
+  @ApiModelProperty(example = "null", value = "třída [persistentní položka]")
+  public String getClsid() {
+    return clsid;
+  }
+
+  public void setClsid(String clsid) {
+    this.clsid = clsid;
+  }
+
+  public Employpatternfield fieldcode(Integer fieldcode) {
+    this.fieldcode = fieldcode;
+    return this;
+  }
+
+   /**
+   * položka [persistentní položka]
+   * @return fieldcode
+  **/
+  @ApiModelProperty(example = "null", value = "položka [persistentní položka]")
+  public Integer getFieldcode() {
+    return fieldcode;
+  }
+
+  public void setFieldcode(Integer fieldcode) {
+    this.fieldcode = fieldcode;
+  }
+
+  public Employpatternfield initialvalue(String initialvalue) {
+    this.initialvalue = initialvalue;
+    return this;
+  }
+
+   /**
+   * výchozí hodnota [persistentní položka]
+   * @return initialvalue
+  **/
+  @ApiModelProperty(example = "null", value = "výchozí hodnota [persistentní položka]")
+  public String getInitialvalue() {
+    return initialvalue;
+  }
+
+  public void setInitialvalue(String initialvalue) {
+    this.initialvalue = initialvalue;
+  }
+
+  public Employpatternfield fieldname(String fieldname) {
+    this.fieldname = fieldname;
+    return this;
+  }
+
+   /**
+   * položka
+   * @return fieldname
+  **/
+  @ApiModelProperty(example = "null", value = "položka")
+  public String getFieldname() {
+    return fieldname;
+  }
+
+  public void setFieldname(String fieldname) {
+    this.fieldname = fieldname;
+  }
+
+  public Employpatternfield fieldlabel(String fieldlabel) {
+    this.fieldlabel = fieldlabel;
+    return this;
+  }
+
+   /**
+   * položka
+   * @return fieldlabel
+  **/
+  @ApiModelProperty(example = "null", value = "položka")
+  public String getFieldlabel() {
+    return fieldlabel;
+  }
+
+  public void setFieldlabel(String fieldlabel) {
+    this.fieldlabel = fieldlabel;
+  }
+
+  public Employpatternfield fielddatatype(Integer fielddatatype) {
+    this.fielddatatype = fielddatatype;
+    return this;
+  }
+
+   /**
+   * dat. typ
+   * @return fielddatatype
+  **/
+  @ApiModelProperty(example = "null", value = "dat. typ")
+  public Integer getFielddatatype() {
+    return fielddatatype;
+  }
+
+  public void setFielddatatype(Integer fielddatatype) {
+    this.fielddatatype = fielddatatype;
   }
 
 
@@ -214,22 +277,22 @@ public class Employpatternfield   {
       return false;
     }
     Employpatternfield employpatternfield = (Employpatternfield) o;
-    return Objects.equals(this.displayName, employpatternfield.displayName) &&
-        Objects.equals(this.ID, employpatternfield.ID) &&
-        Objects.equals(this.classID, employpatternfield.classID) &&
-        Objects.equals(this.objVersion, employpatternfield.objVersion) &&
-        Objects.equals(this.parentID, employpatternfield.parentID) &&
-        Objects.equals(this.CLSID, employpatternfield.CLSID) &&
-        Objects.equals(this.fieldCode, employpatternfield.fieldCode) &&
-        Objects.equals(this.initialValue, employpatternfield.initialValue) &&
-        Objects.equals(this.fieldName, employpatternfield.fieldName) &&
-        Objects.equals(this.fieldLabel, employpatternfield.fieldLabel) &&
-        Objects.equals(this.fieldDataType, employpatternfield.fieldDataType);
+    return Objects.equals(this.displayname, employpatternfield.displayname) &&
+        Objects.equals(this.id, employpatternfield.id) &&
+        Objects.equals(this.classid, employpatternfield.classid) &&
+        Objects.equals(this.objversion, employpatternfield.objversion) &&
+        Objects.equals(this.parentId, employpatternfield.parentId) &&
+        Objects.equals(this.clsid, employpatternfield.clsid) &&
+        Objects.equals(this.fieldcode, employpatternfield.fieldcode) &&
+        Objects.equals(this.initialvalue, employpatternfield.initialvalue) &&
+        Objects.equals(this.fieldname, employpatternfield.fieldname) &&
+        Objects.equals(this.fieldlabel, employpatternfield.fieldlabel) &&
+        Objects.equals(this.fielddatatype, employpatternfield.fielddatatype);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, CLSID, fieldCode, initialValue, fieldName, fieldLabel, fieldDataType);
+    return Objects.hash(displayname, id, classid, objversion, parentId, clsid, fieldcode, initialvalue, fieldname, fieldlabel, fielddatatype);
   }
 
   @Override
@@ -237,17 +300,17 @@ public class Employpatternfield   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Employpatternfield {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    CLSID: ").append(toIndentedString(CLSID)).append("\n");
-    sb.append("    fieldCode: ").append(toIndentedString(fieldCode)).append("\n");
-    sb.append("    initialValue: ").append(toIndentedString(initialValue)).append("\n");
-    sb.append("    fieldName: ").append(toIndentedString(fieldName)).append("\n");
-    sb.append("    fieldLabel: ").append(toIndentedString(fieldLabel)).append("\n");
-    sb.append("    fieldDataType: ").append(toIndentedString(fieldDataType)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    clsid: ").append(toIndentedString(clsid)).append("\n");
+    sb.append("    fieldcode: ").append(toIndentedString(fieldcode)).append("\n");
+    sb.append("    initialvalue: ").append(toIndentedString(initialvalue)).append("\n");
+    sb.append("    fieldname: ").append(toIndentedString(fieldname)).append("\n");
+    sb.append("    fieldlabel: ").append(toIndentedString(fieldlabel)).append("\n");
+    sb.append("    fielddatatype: ").append(toIndentedString(fielddatatype)).append("\n");
     sb.append("}");
     return sb.toString();
   }

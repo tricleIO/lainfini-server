@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,99 +37,135 @@ import java.util.Objects;
 /**
  * Restrictiondefinition
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Restrictiondefinition   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("UniqueID")
-  private String uniqueID = null;
+  @SerializedName("uniqueid")
+  private String uniqueid = null;
 
-  @SerializedName("Kind")
+  @SerializedName("kind")
   private Integer kind = null;
 
-  @SerializedName("ProgramPoint")
-  private String programPoint = null;
+  @SerializedName("programpoint")
+  private String programpoint = null;
 
-  @SerializedName("User_ID")
-  private String userID = null;
+  @SerializedName("user_id")
+  private String userId = null;
 
-  @SerializedName("DSQLValues")
-  private byte[] dSQLValues = null;
+  @SerializedName("dsqlvalues")
+  private byte[] dsqlvalues = null;
 
-  @SerializedName("ColDefName")
-  private String colDefName = null;
+  @SerializedName("coldefname")
+  private String coldefname = null;
 
-  @SerializedName("ColDefIsGlobal")
-  private Boolean colDefIsGlobal = null;
+  @SerializedName("coldefisglobal")
+  private Boolean coldefisglobal = null;
 
-  @SerializedName("VisibilityKind")
-  private Integer visibilityKind = null;
+  @SerializedName("visibilitykind")
+  private Integer visibilitykind = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("ConditionsProps")
-  private String conditionsProps = null;
+  @SerializedName("conditionsprops")
+  private String conditionsprops = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("LastChangeDate$DATE")
-  private DateTime lastChangeDateDATE = null;
+  @SerializedName("lastchangedate$date")
+  private DateTime lastchangedatedate = null;
 
-  @SerializedName("RestrictionSharings")
-  private List<Restrictionsharing> restrictionSharings = new ArrayList<Restrictionsharing>();
+  @SerializedName("restrictionsharings")
+  private List<Restrictionsharing> restrictionsharings = new ArrayList<Restrictionsharing>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Restrictiondefinition displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Restrictiondefinition id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Restrictiondefinition classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Restrictiondefinition objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Restrictiondefinition name(String name) {
@@ -138,10 +174,10 @@ public class Restrictiondefinition   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -150,22 +186,22 @@ public class Restrictiondefinition   {
     this.name = name;
   }
 
-  public Restrictiondefinition uniqueID(String uniqueID) {
-    this.uniqueID = uniqueID;
+  public Restrictiondefinition uniqueid(String uniqueid) {
+    this.uniqueid = uniqueid;
     return this;
   }
 
    /**
-   * Jednoznačná identifikace definice omezení [persistentní položka]
-   * @return uniqueID
+   * jednoznačná identifikace definice omezení [persistentní položka]
+   * @return uniqueid
   **/
-  @ApiModelProperty(example = "null", value = "Jednoznačná identifikace definice omezení [persistentní položka]")
-  public String getUniqueID() {
-    return uniqueID;
+  @ApiModelProperty(example = "null", value = "jednoznačná identifikace definice omezení [persistentní položka]")
+  public String getUniqueid() {
+    return uniqueid;
   }
 
-  public void setUniqueID(String uniqueID) {
-    this.uniqueID = uniqueID;
+  public void setUniqueid(String uniqueid) {
+    this.uniqueid = uniqueid;
   }
 
   public Restrictiondefinition kind(Integer kind) {
@@ -174,10 +210,10 @@ public class Restrictiondefinition   {
   }
 
    /**
-   * Druh [persistentní položka]
+   * druh [persistentní položka]
    * @return kind
   **/
-  @ApiModelProperty(example = "null", value = "Druh [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "druh [persistentní položka]")
   public Integer getKind() {
     return kind;
   }
@@ -186,112 +222,112 @@ public class Restrictiondefinition   {
     this.kind = kind;
   }
 
-  public Restrictiondefinition programPoint(String programPoint) {
-    this.programPoint = programPoint;
+  public Restrictiondefinition programpoint(String programpoint) {
+    this.programpoint = programpoint;
     return this;
   }
 
    /**
-   * Místo v programu (program point) [persistentní položka]
-   * @return programPoint
+   * místo v programu (program point) [persistentní položka]
+   * @return programpoint
   **/
-  @ApiModelProperty(example = "null", value = "Místo v programu (program point) [persistentní položka]")
-  public String getProgramPoint() {
-    return programPoint;
+  @ApiModelProperty(example = "null", value = "místo v programu (program point) [persistentní položka]")
+  public String getProgrampoint() {
+    return programpoint;
   }
 
-  public void setProgramPoint(String programPoint) {
-    this.programPoint = programPoint;
+  public void setProgrampoint(String programpoint) {
+    this.programpoint = programpoint;
   }
 
-  public Restrictiondefinition userID(String userID) {
-    this.userID = userID;
+  public Restrictiondefinition userId(String userId) {
+    this.userId = userId;
     return this;
   }
 
    /**
-   * Uživatel; ID objektu Uživatel [persistentní položka]
-   * @return userID
+   * uživatel; id objektu uživatel [persistentní položka]
+   * @return userId
   **/
-  @ApiModelProperty(example = "null", value = "Uživatel; ID objektu Uživatel [persistentní položka]")
-  public String getUserID() {
-    return userID;
+  @ApiModelProperty(example = "null", value = "uživatel; id objektu uživatel [persistentní položka]")
+  public String getUserId() {
+    return userId;
   }
 
-  public void setUserID(String userID) {
-    this.userID = userID;
+  public void setUserId(String userId) {
+    this.userId = userId;
   }
 
-  public Restrictiondefinition dSQLValues(byte[] dSQLValues) {
-    this.dSQLValues = dSQLValues;
+  public Restrictiondefinition dsqlvalues(byte[] dsqlvalues) {
+    this.dsqlvalues = dsqlvalues;
     return this;
   }
 
    /**
-   * Obsah definice omezení [persistentní položka]
-   * @return dSQLValues
+   * obsah definice omezení [persistentní položka]
+   * @return dsqlvalues
   **/
-  @ApiModelProperty(example = "null", value = "Obsah definice omezení [persistentní položka]")
-  public byte[] getDSQLValues() {
-    return dSQLValues;
+  @ApiModelProperty(example = "null", value = "obsah definice omezení [persistentní položka]")
+  public byte[] getDsqlvalues() {
+    return dsqlvalues;
   }
 
-  public void setDSQLValues(byte[] dSQLValues) {
-    this.dSQLValues = dSQLValues;
+  public void setDsqlvalues(byte[] dsqlvalues) {
+    this.dsqlvalues = dsqlvalues;
   }
 
-  public Restrictiondefinition colDefName(String colDefName) {
-    this.colDefName = colDefName;
+  public Restrictiondefinition coldefname(String coldefname) {
+    this.coldefname = coldefname;
     return this;
   }
 
    /**
-   * Název def.sloupců [persistentní položka]
-   * @return colDefName
+   * název def.sloupců [persistentní položka]
+   * @return coldefname
   **/
-  @ApiModelProperty(example = "null", value = "Název def.sloupců [persistentní položka]")
-  public String getColDefName() {
-    return colDefName;
+  @ApiModelProperty(example = "null", value = "název def.sloupců [persistentní položka]")
+  public String getColdefname() {
+    return coldefname;
   }
 
-  public void setColDefName(String colDefName) {
-    this.colDefName = colDefName;
+  public void setColdefname(String coldefname) {
+    this.coldefname = coldefname;
   }
 
-  public Restrictiondefinition colDefIsGlobal(Boolean colDefIsGlobal) {
-    this.colDefIsGlobal = colDefIsGlobal;
+  public Restrictiondefinition coldefisglobal(Boolean coldefisglobal) {
+    this.coldefisglobal = coldefisglobal;
     return this;
   }
 
    /**
-   * Def.sloupců je globální [persistentní položka]
-   * @return colDefIsGlobal
+   * def.sloupců je globální [persistentní položka]
+   * @return coldefisglobal
   **/
-  @ApiModelProperty(example = "null", value = "Def.sloupců je globální [persistentní položka]")
-  public Boolean getColDefIsGlobal() {
-    return colDefIsGlobal;
+  @ApiModelProperty(example = "null", value = "def.sloupců je globální [persistentní položka]")
+  public Boolean getColdefisglobal() {
+    return coldefisglobal;
   }
 
-  public void setColDefIsGlobal(Boolean colDefIsGlobal) {
-    this.colDefIsGlobal = colDefIsGlobal;
+  public void setColdefisglobal(Boolean coldefisglobal) {
+    this.coldefisglobal = coldefisglobal;
   }
 
-  public Restrictiondefinition visibilityKind(Integer visibilityKind) {
-    this.visibilityKind = visibilityKind;
+  public Restrictiondefinition visibilitykind(Integer visibilitykind) {
+    this.visibilitykind = visibilitykind;
     return this;
   }
 
    /**
-   * Viditelnost [persistentní položka]
-   * @return visibilityKind
+   * viditelnost [persistentní položka]
+   * @return visibilitykind
   **/
-  @ApiModelProperty(example = "null", value = "Viditelnost [persistentní položka]")
-  public Integer getVisibilityKind() {
-    return visibilityKind;
+  @ApiModelProperty(example = "null", value = "viditelnost [persistentní položka]")
+  public Integer getVisibilitykind() {
+    return visibilitykind;
   }
 
-  public void setVisibilityKind(Integer visibilityKind) {
-    this.visibilityKind = visibilityKind;
+  public void setVisibilitykind(Integer visibilitykind) {
+    this.visibilitykind = visibilitykind;
   }
 
   public Restrictiondefinition note(String note) {
@@ -300,10 +336,10 @@ public class Restrictiondefinition   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -312,99 +348,99 @@ public class Restrictiondefinition   {
     this.note = note;
   }
 
-  public Restrictiondefinition conditionsProps(String conditionsProps) {
-    this.conditionsProps = conditionsProps;
+  public Restrictiondefinition conditionsprops(String conditionsprops) {
+    this.conditionsprops = conditionsprops;
     return this;
   }
 
    /**
-   * Vlastnosti podmínek [persistentní položka]
-   * @return conditionsProps
+   * vlastnosti podmínek [persistentní položka]
+   * @return conditionsprops
   **/
-  @ApiModelProperty(example = "null", value = "Vlastnosti podmínek [persistentní položka]")
-  public String getConditionsProps() {
-    return conditionsProps;
+  @ApiModelProperty(example = "null", value = "vlastnosti podmínek [persistentní položka]")
+  public String getConditionsprops() {
+    return conditionsprops;
   }
 
-  public void setConditionsProps(String conditionsProps) {
-    this.conditionsProps = conditionsProps;
+  public void setConditionsprops(String conditionsprops) {
+    this.conditionsprops = conditionsprops;
   }
 
-  public Restrictiondefinition createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Restrictiondefinition createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Restrictiondefinition correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Restrictiondefinition correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Restrictiondefinition lastChangeDateDATE(DateTime lastChangeDateDATE) {
-    this.lastChangeDateDATE = lastChangeDateDATE;
+  public Restrictiondefinition lastchangedatedate(DateTime lastchangedatedate) {
+    this.lastchangedatedate = lastchangedatedate;
     return this;
   }
 
    /**
-   * Datum poslední změny [persistentní položka]
-   * @return lastChangeDateDATE
+   * datum poslední změny [persistentní položka]
+   * @return lastchangedatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum poslední změny [persistentní položka]")
-  public DateTime getLastChangeDateDATE() {
-    return lastChangeDateDATE;
+  @ApiModelProperty(example = "null", value = "datum poslední změny [persistentní položka]")
+  public DateTime getLastchangedatedate() {
+    return lastchangedatedate;
   }
 
-  public void setLastChangeDateDATE(DateTime lastChangeDateDATE) {
-    this.lastChangeDateDATE = lastChangeDateDATE;
+  public void setLastchangedatedate(DateTime lastchangedatedate) {
+    this.lastchangedatedate = lastchangedatedate;
   }
 
-  public Restrictiondefinition restrictionSharings(List<Restrictionsharing> restrictionSharings) {
-    this.restrictionSharings = restrictionSharings;
+  public Restrictiondefinition restrictionsharings(List<Restrictionsharing> restrictionsharings) {
+    this.restrictionsharings = restrictionsharings;
     return this;
   }
 
-  public Restrictiondefinition addRestrictionSharingsItem(Restrictionsharing restrictionSharingsItem) {
-    this.restrictionSharings.add(restrictionSharingsItem);
+  public Restrictiondefinition addRestrictionsharingsItem(Restrictionsharing restrictionsharingsItem) {
+    this.restrictionsharings.add(restrictionsharingsItem);
     return this;
   }
 
    /**
-   * Kolekce sdílení definice; kolekce BO Sdílení definic omezení [nepersistentní položka]
-   * @return restrictionSharings
+   * kolekce sdílení definice; kolekce bo sdílení definic omezení [nepersistentní položka]
+   * @return restrictionsharings
   **/
-  @ApiModelProperty(example = "null", value = "Kolekce sdílení definice; kolekce BO Sdílení definic omezení [nepersistentní položka]")
-  public List<Restrictionsharing> getRestrictionSharings() {
-    return restrictionSharings;
+  @ApiModelProperty(example = "null", value = "kolekce sdílení definice; kolekce bo sdílení definic omezení [nepersistentní položka]")
+  public List<Restrictionsharing> getRestrictionsharings() {
+    return restrictionsharings;
   }
 
-  public void setRestrictionSharings(List<Restrictionsharing> restrictionSharings) {
-    this.restrictionSharings = restrictionSharings;
+  public void setRestrictionsharings(List<Restrictionsharing> restrictionsharings) {
+    this.restrictionsharings = restrictionsharings;
   }
 
 
@@ -417,30 +453,30 @@ public class Restrictiondefinition   {
       return false;
     }
     Restrictiondefinition restrictiondefinition = (Restrictiondefinition) o;
-    return Objects.equals(this.displayName, restrictiondefinition.displayName) &&
-        Objects.equals(this.ID, restrictiondefinition.ID) &&
-        Objects.equals(this.classID, restrictiondefinition.classID) &&
-        Objects.equals(this.objVersion, restrictiondefinition.objVersion) &&
+    return Objects.equals(this.displayname, restrictiondefinition.displayname) &&
+        Objects.equals(this.id, restrictiondefinition.id) &&
+        Objects.equals(this.classid, restrictiondefinition.classid) &&
+        Objects.equals(this.objversion, restrictiondefinition.objversion) &&
         Objects.equals(this.name, restrictiondefinition.name) &&
-        Objects.equals(this.uniqueID, restrictiondefinition.uniqueID) &&
+        Objects.equals(this.uniqueid, restrictiondefinition.uniqueid) &&
         Objects.equals(this.kind, restrictiondefinition.kind) &&
-        Objects.equals(this.programPoint, restrictiondefinition.programPoint) &&
-        Objects.equals(this.userID, restrictiondefinition.userID) &&
-        Objects.equals(this.dSQLValues, restrictiondefinition.dSQLValues) &&
-        Objects.equals(this.colDefName, restrictiondefinition.colDefName) &&
-        Objects.equals(this.colDefIsGlobal, restrictiondefinition.colDefIsGlobal) &&
-        Objects.equals(this.visibilityKind, restrictiondefinition.visibilityKind) &&
+        Objects.equals(this.programpoint, restrictiondefinition.programpoint) &&
+        Objects.equals(this.userId, restrictiondefinition.userId) &&
+        Objects.equals(this.dsqlvalues, restrictiondefinition.dsqlvalues) &&
+        Objects.equals(this.coldefname, restrictiondefinition.coldefname) &&
+        Objects.equals(this.coldefisglobal, restrictiondefinition.coldefisglobal) &&
+        Objects.equals(this.visibilitykind, restrictiondefinition.visibilitykind) &&
         Objects.equals(this.note, restrictiondefinition.note) &&
-        Objects.equals(this.conditionsProps, restrictiondefinition.conditionsProps) &&
-        Objects.equals(this.createdByID, restrictiondefinition.createdByID) &&
-        Objects.equals(this.correctedByID, restrictiondefinition.correctedByID) &&
-        Objects.equals(this.lastChangeDateDATE, restrictiondefinition.lastChangeDateDATE) &&
-        Objects.equals(this.restrictionSharings, restrictiondefinition.restrictionSharings);
+        Objects.equals(this.conditionsprops, restrictiondefinition.conditionsprops) &&
+        Objects.equals(this.createdbyId, restrictiondefinition.createdbyId) &&
+        Objects.equals(this.correctedbyId, restrictiondefinition.correctedbyId) &&
+        Objects.equals(this.lastchangedatedate, restrictiondefinition.lastchangedatedate) &&
+        Objects.equals(this.restrictionsharings, restrictiondefinition.restrictionsharings);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, name, uniqueID, kind, programPoint, userID, dSQLValues, colDefName, colDefIsGlobal, visibilityKind, note, conditionsProps, createdByID, correctedByID, lastChangeDateDATE, restrictionSharings);
+    return Objects.hash(displayname, id, classid, objversion, name, uniqueid, kind, programpoint, userId, dsqlvalues, coldefname, coldefisglobal, visibilitykind, note, conditionsprops, createdbyId, correctedbyId, lastchangedatedate, restrictionsharings);
   }
 
   @Override
@@ -448,25 +484,25 @@ public class Restrictiondefinition   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Restrictiondefinition {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    uniqueID: ").append(toIndentedString(uniqueID)).append("\n");
+    sb.append("    uniqueid: ").append(toIndentedString(uniqueid)).append("\n");
     sb.append("    kind: ").append(toIndentedString(kind)).append("\n");
-    sb.append("    programPoint: ").append(toIndentedString(programPoint)).append("\n");
-    sb.append("    userID: ").append(toIndentedString(userID)).append("\n");
-    sb.append("    dSQLValues: ").append(toIndentedString(dSQLValues)).append("\n");
-    sb.append("    colDefName: ").append(toIndentedString(colDefName)).append("\n");
-    sb.append("    colDefIsGlobal: ").append(toIndentedString(colDefIsGlobal)).append("\n");
-    sb.append("    visibilityKind: ").append(toIndentedString(visibilityKind)).append("\n");
+    sb.append("    programpoint: ").append(toIndentedString(programpoint)).append("\n");
+    sb.append("    userId: ").append(toIndentedString(userId)).append("\n");
+    sb.append("    dsqlvalues: ").append(toIndentedString(dsqlvalues)).append("\n");
+    sb.append("    coldefname: ").append(toIndentedString(coldefname)).append("\n");
+    sb.append("    coldefisglobal: ").append(toIndentedString(coldefisglobal)).append("\n");
+    sb.append("    visibilitykind: ").append(toIndentedString(visibilitykind)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
-    sb.append("    conditionsProps: ").append(toIndentedString(conditionsProps)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    lastChangeDateDATE: ").append(toIndentedString(lastChangeDateDATE)).append("\n");
-    sb.append("    restrictionSharings: ").append(toIndentedString(restrictionSharings)).append("\n");
+    sb.append("    conditionsprops: ").append(toIndentedString(conditionsprops)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    lastchangedatedate: ").append(toIndentedString(lastchangedatedate)).append("\n");
+    sb.append("    restrictionsharings: ").append(toIndentedString(restrictionsharings)).append("\n");
     sb.append("}");
     return sb.toString();
   }

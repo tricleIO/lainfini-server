@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,354 +36,399 @@ import java.util.Objects;
 /**
  * Posreceiptrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posreceiptrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("PaymentType_ID")
-  private String paymentTypeID = null;
+  @SerializedName("paymenttype_id")
+  private String paymenttypeId = null;
 
-  @SerializedName("InitiativeAmount")
-  private Double initiativeAmount = null;
+  @SerializedName("initiativeamount")
+  private Double initiativeamount = null;
 
-  @SerializedName("AmountTenancy")
-  private Double amountTenancy = null;
+  @SerializedName("amounttenancy")
+  private Double amounttenancy = null;
 
-  @SerializedName("IssuedInvoice")
-  private Double issuedInvoice = null;
+  @SerializedName("issuedinvoice")
+  private Double issuedinvoice = null;
 
-  @SerializedName("IssuedDInvoice")
-  private Double issuedDInvoice = null;
+  @SerializedName("issueddinvoice")
+  private Double issueddinvoice = null;
 
-  @SerializedName("AmountDeposit")
-  private Double amountDeposit = null;
+  @SerializedName("amountdeposit")
+  private Double amountdeposit = null;
 
-  @SerializedName("AmountCollection")
-  private Double amountCollection = null;
+  @SerializedName("amountcollection")
+  private Double amountcollection = null;
 
-  @SerializedName("IssuedAdvance")
-  private Double issuedAdvance = null;
+  @SerializedName("issuedadvance")
+  private Double issuedadvance = null;
 
-  @SerializedName("FinalAmount")
-  private Double finalAmount = null;
+  @SerializedName("finalamount")
+  private Double finalamount = null;
 
-  @SerializedName("RealAmount")
-  private Double realAmount = null;
+  @SerializedName("realamount")
+  private Double realamount = null;
 
-  @SerializedName("AmountDifference")
-  private Double amountDifference = null;
+  @SerializedName("amountdifference")
+  private Double amountdifference = null;
 
-  @SerializedName("AmountLeft")
-  private Double amountLeft = null;
+  @SerializedName("amountleft")
+  private Double amountleft = null;
 
-  @SerializedName("Cheques")
+  @SerializedName("cheques")
   private List<Posreceiptcheque> cheques = new ArrayList<Posreceiptcheque>();
 
-  @SerializedName("Days")
+  @SerializedName("days")
   private List<Posreceiptday> days = new ArrayList<Posreceiptday>();
 
-  @SerializedName("AmountGived")
-  private Double amountGived = null;
+  @SerializedName("amountgived")
+  private Double amountgived = null;
 
-  @SerializedName("ActualAmount")
-  private Double actualAmount = null;
+  @SerializedName("actualamount")
+  private Double actualamount = null;
 
-  @SerializedName("RemainAmount")
-  private Double remainAmount = null;
+  @SerializedName("remainamount")
+  private Double remainamount = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Tržba [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Tržba [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Posreceiptrow currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Posreceiptrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Posreceiptrow paymentTypeID(String paymentTypeID) {
-    this.paymentTypeID = paymentTypeID;
+  public Posreceiptrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Typ úhrady; ID objektu Způsob úhrady [persistentní položka]
-   * @return paymentTypeID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Typ úhrady; ID objektu Způsob úhrady [persistentní položka]")
-  public String getPaymentTypeID() {
-    return paymentTypeID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setPaymentTypeID(String paymentTypeID) {
-    this.paymentTypeID = paymentTypeID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Posreceiptrow initiativeAmount(Double initiativeAmount) {
-    this.initiativeAmount = initiativeAmount;
+  public Posreceiptrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Počátek [persistentní položka]
-   * @return initiativeAmount
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Počátek [persistentní položka]")
-  public Double getInitiativeAmount() {
-    return initiativeAmount;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setInitiativeAmount(Double initiativeAmount) {
-    this.initiativeAmount = initiativeAmount;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Posreceiptrow amountTenancy(Double amountTenancy) {
-    this.amountTenancy = amountTenancy;
+  public Posreceiptrow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Tržba [persistentní položka]
-   * @return amountTenancy
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Tržba [persistentní položka]")
-  public Double getAmountTenancy() {
-    return amountTenancy;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setAmountTenancy(Double amountTenancy) {
-    this.amountTenancy = amountTenancy;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Posreceiptrow issuedInvoice(Double issuedInvoice) {
-    this.issuedInvoice = issuedInvoice;
+  public Posreceiptrow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Faktury [persistentní položka]
-   * @return issuedInvoice
+   * vlastník; id objektu tržba [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Faktury [persistentní položka]")
-  public Double getIssuedInvoice() {
-    return issuedInvoice;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu tržba [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setIssuedInvoice(Double issuedInvoice) {
-    this.issuedInvoice = issuedInvoice;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Posreceiptrow issuedDInvoice(Double issuedDInvoice) {
-    this.issuedDInvoice = issuedDInvoice;
+  public Posreceiptrow currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Zálohy [persistentní položka]
-   * @return issuedDInvoice
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Zálohy [persistentní položka]")
-  public Double getIssuedDInvoice() {
-    return issuedDInvoice;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setIssuedDInvoice(Double issuedDInvoice) {
-    this.issuedDInvoice = issuedDInvoice;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
-  public Posreceiptrow amountDeposit(Double amountDeposit) {
-    this.amountDeposit = amountDeposit;
+  public Posreceiptrow paymenttypeId(String paymenttypeId) {
+    this.paymenttypeId = paymenttypeId;
     return this;
   }
 
    /**
-   * Vloženo [persistentní položka]
-   * @return amountDeposit
+   * typ úhrady; id objektu způsob úhrady [persistentní položka]
+   * @return paymenttypeId
   **/
-  @ApiModelProperty(example = "null", value = "Vloženo [persistentní položka]")
-  public Double getAmountDeposit() {
-    return amountDeposit;
+  @ApiModelProperty(example = "null", value = "typ úhrady; id objektu způsob úhrady [persistentní položka]")
+  public String getPaymenttypeId() {
+    return paymenttypeId;
   }
 
-  public void setAmountDeposit(Double amountDeposit) {
-    this.amountDeposit = amountDeposit;
+  public void setPaymenttypeId(String paymenttypeId) {
+    this.paymenttypeId = paymenttypeId;
   }
 
-  public Posreceiptrow amountCollection(Double amountCollection) {
-    this.amountCollection = amountCollection;
+  public Posreceiptrow initiativeamount(Double initiativeamount) {
+    this.initiativeamount = initiativeamount;
     return this;
   }
 
    /**
-   * Vybráno [persistentní položka]
-   * @return amountCollection
+   * počátek [persistentní položka]
+   * @return initiativeamount
   **/
-  @ApiModelProperty(example = "null", value = "Vybráno [persistentní položka]")
-  public Double getAmountCollection() {
-    return amountCollection;
+  @ApiModelProperty(example = "null", value = "počátek [persistentní položka]")
+  public Double getInitiativeamount() {
+    return initiativeamount;
   }
 
-  public void setAmountCollection(Double amountCollection) {
-    this.amountCollection = amountCollection;
+  public void setInitiativeamount(Double initiativeamount) {
+    this.initiativeamount = initiativeamount;
   }
 
-  public Posreceiptrow issuedAdvance(Double issuedAdvance) {
-    this.issuedAdvance = issuedAdvance;
+  public Posreceiptrow amounttenancy(Double amounttenancy) {
+    this.amounttenancy = amounttenancy;
     return this;
   }
 
    /**
-   * Vydané zálohy [persistentní položka]
-   * @return issuedAdvance
+   * tržba [persistentní položka]
+   * @return amounttenancy
   **/
-  @ApiModelProperty(example = "null", value = "Vydané zálohy [persistentní položka]")
-  public Double getIssuedAdvance() {
-    return issuedAdvance;
+  @ApiModelProperty(example = "null", value = "tržba [persistentní položka]")
+  public Double getAmounttenancy() {
+    return amounttenancy;
   }
 
-  public void setIssuedAdvance(Double issuedAdvance) {
-    this.issuedAdvance = issuedAdvance;
+  public void setAmounttenancy(Double amounttenancy) {
+    this.amounttenancy = amounttenancy;
   }
 
-  public Posreceiptrow finalAmount(Double finalAmount) {
-    this.finalAmount = finalAmount;
+  public Posreceiptrow issuedinvoice(Double issuedinvoice) {
+    this.issuedinvoice = issuedinvoice;
     return this;
   }
 
    /**
-   * Stav při uzávěrce [persistentní položka]
-   * @return finalAmount
+   * faktury [persistentní položka]
+   * @return issuedinvoice
   **/
-  @ApiModelProperty(example = "null", value = "Stav při uzávěrce [persistentní položka]")
-  public Double getFinalAmount() {
-    return finalAmount;
+  @ApiModelProperty(example = "null", value = "faktury [persistentní položka]")
+  public Double getIssuedinvoice() {
+    return issuedinvoice;
   }
 
-  public void setFinalAmount(Double finalAmount) {
-    this.finalAmount = finalAmount;
+  public void setIssuedinvoice(Double issuedinvoice) {
+    this.issuedinvoice = issuedinvoice;
   }
 
-  public Posreceiptrow realAmount(Double realAmount) {
-    this.realAmount = realAmount;
+  public Posreceiptrow issueddinvoice(Double issueddinvoice) {
+    this.issueddinvoice = issueddinvoice;
     return this;
   }
 
    /**
-   * Zjištěno [persistentní položka]
-   * @return realAmount
+   * zálohy [persistentní položka]
+   * @return issueddinvoice
   **/
-  @ApiModelProperty(example = "null", value = "Zjištěno [persistentní položka]")
-  public Double getRealAmount() {
-    return realAmount;
+  @ApiModelProperty(example = "null", value = "zálohy [persistentní položka]")
+  public Double getIssueddinvoice() {
+    return issueddinvoice;
   }
 
-  public void setRealAmount(Double realAmount) {
-    this.realAmount = realAmount;
+  public void setIssueddinvoice(Double issueddinvoice) {
+    this.issueddinvoice = issueddinvoice;
   }
 
-  public Posreceiptrow amountDifference(Double amountDifference) {
-    this.amountDifference = amountDifference;
+  public Posreceiptrow amountdeposit(Double amountdeposit) {
+    this.amountdeposit = amountdeposit;
     return this;
   }
 
    /**
-   * Rozdíl [persistentní položka]
-   * @return amountDifference
+   * vloženo [persistentní položka]
+   * @return amountdeposit
   **/
-  @ApiModelProperty(example = "null", value = "Rozdíl [persistentní položka]")
-  public Double getAmountDifference() {
-    return amountDifference;
+  @ApiModelProperty(example = "null", value = "vloženo [persistentní položka]")
+  public Double getAmountdeposit() {
+    return amountdeposit;
   }
 
-  public void setAmountDifference(Double amountDifference) {
-    this.amountDifference = amountDifference;
+  public void setAmountdeposit(Double amountdeposit) {
+    this.amountdeposit = amountdeposit;
   }
 
-  public Posreceiptrow amountLeft(Double amountLeft) {
-    this.amountLeft = amountLeft;
+  public Posreceiptrow amountcollection(Double amountcollection) {
+    this.amountcollection = amountcollection;
     return this;
   }
 
    /**
-   * Ponecháno [persistentní položka]
-   * @return amountLeft
+   * vybráno [persistentní položka]
+   * @return amountcollection
   **/
-  @ApiModelProperty(example = "null", value = "Ponecháno [persistentní položka]")
-  public Double getAmountLeft() {
-    return amountLeft;
+  @ApiModelProperty(example = "null", value = "vybráno [persistentní položka]")
+  public Double getAmountcollection() {
+    return amountcollection;
   }
 
-  public void setAmountLeft(Double amountLeft) {
-    this.amountLeft = amountLeft;
+  public void setAmountcollection(Double amountcollection) {
+    this.amountcollection = amountcollection;
+  }
+
+  public Posreceiptrow issuedadvance(Double issuedadvance) {
+    this.issuedadvance = issuedadvance;
+    return this;
+  }
+
+   /**
+   * vydané zálohy [persistentní položka]
+   * @return issuedadvance
+  **/
+  @ApiModelProperty(example = "null", value = "vydané zálohy [persistentní položka]")
+  public Double getIssuedadvance() {
+    return issuedadvance;
+  }
+
+  public void setIssuedadvance(Double issuedadvance) {
+    this.issuedadvance = issuedadvance;
+  }
+
+  public Posreceiptrow finalamount(Double finalamount) {
+    this.finalamount = finalamount;
+    return this;
+  }
+
+   /**
+   * stav při uzávěrce [persistentní položka]
+   * @return finalamount
+  **/
+  @ApiModelProperty(example = "null", value = "stav při uzávěrce [persistentní položka]")
+  public Double getFinalamount() {
+    return finalamount;
+  }
+
+  public void setFinalamount(Double finalamount) {
+    this.finalamount = finalamount;
+  }
+
+  public Posreceiptrow realamount(Double realamount) {
+    this.realamount = realamount;
+    return this;
+  }
+
+   /**
+   * zjištěno [persistentní položka]
+   * @return realamount
+  **/
+  @ApiModelProperty(example = "null", value = "zjištěno [persistentní položka]")
+  public Double getRealamount() {
+    return realamount;
+  }
+
+  public void setRealamount(Double realamount) {
+    this.realamount = realamount;
+  }
+
+  public Posreceiptrow amountdifference(Double amountdifference) {
+    this.amountdifference = amountdifference;
+    return this;
+  }
+
+   /**
+   * rozdíl [persistentní položka]
+   * @return amountdifference
+  **/
+  @ApiModelProperty(example = "null", value = "rozdíl [persistentní položka]")
+  public Double getAmountdifference() {
+    return amountdifference;
+  }
+
+  public void setAmountdifference(Double amountdifference) {
+    this.amountdifference = amountdifference;
+  }
+
+  public Posreceiptrow amountleft(Double amountleft) {
+    this.amountleft = amountleft;
+    return this;
+  }
+
+   /**
+   * ponecháno [persistentní položka]
+   * @return amountleft
+  **/
+  @ApiModelProperty(example = "null", value = "ponecháno [persistentní položka]")
+  public Double getAmountleft() {
+    return amountleft;
+  }
+
+  public void setAmountleft(Double amountleft) {
+    this.amountleft = amountleft;
   }
 
   public Posreceiptrow cheques(List<Posreceiptcheque> cheques) {
@@ -397,10 +442,10 @@ public class Posreceiptrow   {
   }
 
    /**
-   * Šeky; kolekce BO Tržba - šek [nepersistentní položka]
+   * Šeky; kolekce bo tržba - šek [nepersistentní položka]
    * @return cheques
   **/
-  @ApiModelProperty(example = "null", value = "Šeky; kolekce BO Tržba - šek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Šeky; kolekce bo tržba - šek [nepersistentní položka]")
   public List<Posreceiptcheque> getCheques() {
     return cheques;
   }
@@ -420,10 +465,10 @@ public class Posreceiptrow   {
   }
 
    /**
-   * Datumy; kolekce BO Tržba - den [nepersistentní položka]
+   * datumy; kolekce bo tržba - den [nepersistentní položka]
    * @return days
   **/
-  @ApiModelProperty(example = "null", value = "Datumy; kolekce BO Tržba - den [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "datumy; kolekce bo tržba - den [nepersistentní položka]")
   public List<Posreceiptday> getDays() {
     return days;
   }
@@ -432,58 +477,58 @@ public class Posreceiptrow   {
     this.days = days;
   }
 
-  public Posreceiptrow amountGived(Double amountGived) {
-    this.amountGived = amountGived;
+  public Posreceiptrow amountgived(Double amountgived) {
+    this.amountgived = amountgived;
     return this;
   }
 
    /**
-   * Odvedeno [persistentní položka]
-   * @return amountGived
+   * odvedeno [persistentní položka]
+   * @return amountgived
   **/
-  @ApiModelProperty(example = "null", value = "Odvedeno [persistentní položka]")
-  public Double getAmountGived() {
-    return amountGived;
+  @ApiModelProperty(example = "null", value = "odvedeno [persistentní položka]")
+  public Double getAmountgived() {
+    return amountgived;
   }
 
-  public void setAmountGived(Double amountGived) {
-    this.amountGived = amountGived;
+  public void setAmountgived(Double amountgived) {
+    this.amountgived = amountgived;
   }
 
-  public Posreceiptrow actualAmount(Double actualAmount) {
-    this.actualAmount = actualAmount;
+  public Posreceiptrow actualamount(Double actualamount) {
+    this.actualamount = actualamount;
     return this;
   }
 
    /**
-   * Stav
-   * @return actualAmount
+   * stav
+   * @return actualamount
   **/
-  @ApiModelProperty(example = "null", value = "Stav")
-  public Double getActualAmount() {
-    return actualAmount;
+  @ApiModelProperty(example = "null", value = "stav")
+  public Double getActualamount() {
+    return actualamount;
   }
 
-  public void setActualAmount(Double actualAmount) {
-    this.actualAmount = actualAmount;
+  public void setActualamount(Double actualamount) {
+    this.actualamount = actualamount;
   }
 
-  public Posreceiptrow remainAmount(Double remainAmount) {
-    this.remainAmount = remainAmount;
+  public Posreceiptrow remainamount(Double remainamount) {
+    this.remainamount = remainamount;
     return this;
   }
 
    /**
-   * Zbývá
-   * @return remainAmount
+   * zbývá
+   * @return remainamount
   **/
-  @ApiModelProperty(example = "null", value = "Zbývá")
-  public Double getRemainAmount() {
-    return remainAmount;
+  @ApiModelProperty(example = "null", value = "zbývá")
+  public Double getRemainamount() {
+    return remainamount;
   }
 
-  public void setRemainAmount(Double remainAmount) {
-    this.remainAmount = remainAmount;
+  public void setRemainamount(Double remainamount) {
+    this.remainamount = remainamount;
   }
 
 
@@ -496,34 +541,34 @@ public class Posreceiptrow   {
       return false;
     }
     Posreceiptrow posreceiptrow = (Posreceiptrow) o;
-    return Objects.equals(this.displayName, posreceiptrow.displayName) &&
-        Objects.equals(this.ID, posreceiptrow.ID) &&
-        Objects.equals(this.classID, posreceiptrow.classID) &&
-        Objects.equals(this.objVersion, posreceiptrow.objVersion) &&
-        Objects.equals(this.parentID, posreceiptrow.parentID) &&
-        Objects.equals(this.currencyID, posreceiptrow.currencyID) &&
-        Objects.equals(this.paymentTypeID, posreceiptrow.paymentTypeID) &&
-        Objects.equals(this.initiativeAmount, posreceiptrow.initiativeAmount) &&
-        Objects.equals(this.amountTenancy, posreceiptrow.amountTenancy) &&
-        Objects.equals(this.issuedInvoice, posreceiptrow.issuedInvoice) &&
-        Objects.equals(this.issuedDInvoice, posreceiptrow.issuedDInvoice) &&
-        Objects.equals(this.amountDeposit, posreceiptrow.amountDeposit) &&
-        Objects.equals(this.amountCollection, posreceiptrow.amountCollection) &&
-        Objects.equals(this.issuedAdvance, posreceiptrow.issuedAdvance) &&
-        Objects.equals(this.finalAmount, posreceiptrow.finalAmount) &&
-        Objects.equals(this.realAmount, posreceiptrow.realAmount) &&
-        Objects.equals(this.amountDifference, posreceiptrow.amountDifference) &&
-        Objects.equals(this.amountLeft, posreceiptrow.amountLeft) &&
+    return Objects.equals(this.displayname, posreceiptrow.displayname) &&
+        Objects.equals(this.id, posreceiptrow.id) &&
+        Objects.equals(this.classid, posreceiptrow.classid) &&
+        Objects.equals(this.objversion, posreceiptrow.objversion) &&
+        Objects.equals(this.parentId, posreceiptrow.parentId) &&
+        Objects.equals(this.currencyId, posreceiptrow.currencyId) &&
+        Objects.equals(this.paymenttypeId, posreceiptrow.paymenttypeId) &&
+        Objects.equals(this.initiativeamount, posreceiptrow.initiativeamount) &&
+        Objects.equals(this.amounttenancy, posreceiptrow.amounttenancy) &&
+        Objects.equals(this.issuedinvoice, posreceiptrow.issuedinvoice) &&
+        Objects.equals(this.issueddinvoice, posreceiptrow.issueddinvoice) &&
+        Objects.equals(this.amountdeposit, posreceiptrow.amountdeposit) &&
+        Objects.equals(this.amountcollection, posreceiptrow.amountcollection) &&
+        Objects.equals(this.issuedadvance, posreceiptrow.issuedadvance) &&
+        Objects.equals(this.finalamount, posreceiptrow.finalamount) &&
+        Objects.equals(this.realamount, posreceiptrow.realamount) &&
+        Objects.equals(this.amountdifference, posreceiptrow.amountdifference) &&
+        Objects.equals(this.amountleft, posreceiptrow.amountleft) &&
         Objects.equals(this.cheques, posreceiptrow.cheques) &&
         Objects.equals(this.days, posreceiptrow.days) &&
-        Objects.equals(this.amountGived, posreceiptrow.amountGived) &&
-        Objects.equals(this.actualAmount, posreceiptrow.actualAmount) &&
-        Objects.equals(this.remainAmount, posreceiptrow.remainAmount);
+        Objects.equals(this.amountgived, posreceiptrow.amountgived) &&
+        Objects.equals(this.actualamount, posreceiptrow.actualamount) &&
+        Objects.equals(this.remainamount, posreceiptrow.remainamount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, currencyID, paymentTypeID, initiativeAmount, amountTenancy, issuedInvoice, issuedDInvoice, amountDeposit, amountCollection, issuedAdvance, finalAmount, realAmount, amountDifference, amountLeft, cheques, days, amountGived, actualAmount, remainAmount);
+    return Objects.hash(displayname, id, classid, objversion, parentId, currencyId, paymenttypeId, initiativeamount, amounttenancy, issuedinvoice, issueddinvoice, amountdeposit, amountcollection, issuedadvance, finalamount, realamount, amountdifference, amountleft, cheques, days, amountgived, actualamount, remainamount);
   }
 
   @Override
@@ -531,29 +576,29 @@ public class Posreceiptrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posreceiptrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    paymentTypeID: ").append(toIndentedString(paymentTypeID)).append("\n");
-    sb.append("    initiativeAmount: ").append(toIndentedString(initiativeAmount)).append("\n");
-    sb.append("    amountTenancy: ").append(toIndentedString(amountTenancy)).append("\n");
-    sb.append("    issuedInvoice: ").append(toIndentedString(issuedInvoice)).append("\n");
-    sb.append("    issuedDInvoice: ").append(toIndentedString(issuedDInvoice)).append("\n");
-    sb.append("    amountDeposit: ").append(toIndentedString(amountDeposit)).append("\n");
-    sb.append("    amountCollection: ").append(toIndentedString(amountCollection)).append("\n");
-    sb.append("    issuedAdvance: ").append(toIndentedString(issuedAdvance)).append("\n");
-    sb.append("    finalAmount: ").append(toIndentedString(finalAmount)).append("\n");
-    sb.append("    realAmount: ").append(toIndentedString(realAmount)).append("\n");
-    sb.append("    amountDifference: ").append(toIndentedString(amountDifference)).append("\n");
-    sb.append("    amountLeft: ").append(toIndentedString(amountLeft)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    paymenttypeId: ").append(toIndentedString(paymenttypeId)).append("\n");
+    sb.append("    initiativeamount: ").append(toIndentedString(initiativeamount)).append("\n");
+    sb.append("    amounttenancy: ").append(toIndentedString(amounttenancy)).append("\n");
+    sb.append("    issuedinvoice: ").append(toIndentedString(issuedinvoice)).append("\n");
+    sb.append("    issueddinvoice: ").append(toIndentedString(issueddinvoice)).append("\n");
+    sb.append("    amountdeposit: ").append(toIndentedString(amountdeposit)).append("\n");
+    sb.append("    amountcollection: ").append(toIndentedString(amountcollection)).append("\n");
+    sb.append("    issuedadvance: ").append(toIndentedString(issuedadvance)).append("\n");
+    sb.append("    finalamount: ").append(toIndentedString(finalamount)).append("\n");
+    sb.append("    realamount: ").append(toIndentedString(realamount)).append("\n");
+    sb.append("    amountdifference: ").append(toIndentedString(amountdifference)).append("\n");
+    sb.append("    amountleft: ").append(toIndentedString(amountleft)).append("\n");
     sb.append("    cheques: ").append(toIndentedString(cheques)).append("\n");
     sb.append("    days: ").append(toIndentedString(days)).append("\n");
-    sb.append("    amountGived: ").append(toIndentedString(amountGived)).append("\n");
-    sb.append("    actualAmount: ").append(toIndentedString(actualAmount)).append("\n");
-    sb.append("    remainAmount: ").append(toIndentedString(remainAmount)).append("\n");
+    sb.append("    amountgived: ").append(toIndentedString(amountgived)).append("\n");
+    sb.append("    actualamount: ").append(toIndentedString(actualamount)).append("\n");
+    sb.append("    remainamount: ").append(toIndentedString(remainamount)).append("\n");
     sb.append("}");
     return sb.toString();
   }

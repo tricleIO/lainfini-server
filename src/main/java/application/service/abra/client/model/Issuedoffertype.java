@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,84 +37,120 @@ import java.util.Objects;
 /**
  * Issuedoffertype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Issuedoffertype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Issuedofferstatetotype> rows = new ArrayList<Issuedofferstatetotype>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("DefaultDocQueue_ID")
-  private String defaultDocQueueID = null;
+  @SerializedName("defaultdocqueue_id")
+  private String defaultdocqueueId = null;
 
-  @SerializedName("DefaultRole_ID")
-  private String defaultRoleID = null;
+  @SerializedName("defaultrole_id")
+  private String defaultroleId = null;
 
-  @SerializedName("DefaultUser_ID")
-  private String defaultUserID = null;
+  @SerializedName("defaultuser_id")
+  private String defaultuserId = null;
 
-  @SerializedName("Roles")
+  @SerializedName("roles")
   private List<Issuedofferroletotype> roles = new ArrayList<Issuedofferroletotype>();
 
-  @SerializedName("TotalDuration")
-  private DateTime totalDuration = null;
+  @SerializedName("totalduration")
+  private DateTime totalduration = null;
 
-  @SerializedName("IsShorteningTerms")
-  private Boolean isShorteningTerms = null;
+  @SerializedName("isshorteningterms")
+  private Boolean isshorteningterms = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Issuedoffertype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Issuedoffertype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Issuedoffertype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Issuedoffertype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Issuedoffertype rows(List<Issuedofferstatetotype> rows) {
@@ -128,10 +164,10 @@ public class Issuedoffertype   {
   }
 
    /**
-   * Možné stavy; kolekce BO Typ nabídky - možný stav [nepersistentní položka]
+   * možné stavy; kolekce bo typ nabídky - možný stav [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Možné stavy; kolekce BO Typ nabídky - možný stav [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "možné stavy; kolekce bo typ nabídky - možný stav [nepersistentní položka]")
   public List<Issuedofferstatetotype> getRows() {
     return rows;
   }
@@ -146,10 +182,10 @@ public class Issuedoffertype   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -164,10 +200,10 @@ public class Issuedoffertype   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -182,10 +218,10 @@ public class Issuedoffertype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -194,58 +230,58 @@ public class Issuedoffertype   {
     this.name = name;
   }
 
-  public Issuedoffertype defaultDocQueueID(String defaultDocQueueID) {
-    this.defaultDocQueueID = defaultDocQueueID;
+  public Issuedoffertype defaultdocqueueId(String defaultdocqueueId) {
+    this.defaultdocqueueId = defaultdocqueueId;
     return this;
   }
 
    /**
-   * Výchozí řada dokladů; ID objektu Řada dokladů [persistentní položka]
-   * @return defaultDocQueueID
+   * výchozí řada dokladů; id objektu Řada dokladů [persistentní položka]
+   * @return defaultdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí řada dokladů; ID objektu Řada dokladů [persistentní položka]")
-  public String getDefaultDocQueueID() {
-    return defaultDocQueueID;
+  @ApiModelProperty(example = "null", value = "výchozí řada dokladů; id objektu Řada dokladů [persistentní položka]")
+  public String getDefaultdocqueueId() {
+    return defaultdocqueueId;
   }
 
-  public void setDefaultDocQueueID(String defaultDocQueueID) {
-    this.defaultDocQueueID = defaultDocQueueID;
+  public void setDefaultdocqueueId(String defaultdocqueueId) {
+    this.defaultdocqueueId = defaultdocqueueId;
   }
 
-  public Issuedoffertype defaultRoleID(String defaultRoleID) {
-    this.defaultRoleID = defaultRoleID;
+  public Issuedoffertype defaultroleId(String defaultroleId) {
+    this.defaultroleId = defaultroleId;
     return this;
   }
 
    /**
-   * Výchozí zodpovědná role řešitele; ID objektu Role [persistentní položka]
-   * @return defaultRoleID
+   * výchozí zodpovědná role řešitele; id objektu role [persistentní položka]
+   * @return defaultroleId
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí zodpovědná role řešitele; ID objektu Role [persistentní položka]")
-  public String getDefaultRoleID() {
-    return defaultRoleID;
+  @ApiModelProperty(example = "null", value = "výchozí zodpovědná role řešitele; id objektu role [persistentní položka]")
+  public String getDefaultroleId() {
+    return defaultroleId;
   }
 
-  public void setDefaultRoleID(String defaultRoleID) {
-    this.defaultRoleID = defaultRoleID;
+  public void setDefaultroleId(String defaultroleId) {
+    this.defaultroleId = defaultroleId;
   }
 
-  public Issuedoffertype defaultUserID(String defaultUserID) {
-    this.defaultUserID = defaultUserID;
+  public Issuedoffertype defaultuserId(String defaultuserId) {
+    this.defaultuserId = defaultuserId;
     return this;
   }
 
    /**
-   * Výchozí zodpovědný řešitel; ID objektu Uživatel [persistentní položka]
-   * @return defaultUserID
+   * výchozí zodpovědný řešitel; id objektu uživatel [persistentní položka]
+   * @return defaultuserId
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí zodpovědný řešitel; ID objektu Uživatel [persistentní položka]")
-  public String getDefaultUserID() {
-    return defaultUserID;
+  @ApiModelProperty(example = "null", value = "výchozí zodpovědný řešitel; id objektu uživatel [persistentní položka]")
+  public String getDefaultuserId() {
+    return defaultuserId;
   }
 
-  public void setDefaultUserID(String defaultUserID) {
-    this.defaultUserID = defaultUserID;
+  public void setDefaultuserId(String defaultuserId) {
+    this.defaultuserId = defaultuserId;
   }
 
   public Issuedoffertype roles(List<Issuedofferroletotype> roles) {
@@ -259,10 +295,10 @@ public class Issuedoffertype   {
   }
 
    /**
-   * Možné role řešitele nebo řešitelé; kolekce BO Typ nabídky - možná role řešitele nebo řešitel [nepersistentní položka]
+   * možné role řešitele nebo řešitelé; kolekce bo typ nabídky - možná role řešitele nebo řešitel [nepersistentní položka]
    * @return roles
   **/
-  @ApiModelProperty(example = "null", value = "Možné role řešitele nebo řešitelé; kolekce BO Typ nabídky - možná role řešitele nebo řešitel [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "možné role řešitele nebo řešitelé; kolekce bo typ nabídky - možná role řešitele nebo řešitel [nepersistentní položka]")
   public List<Issuedofferroletotype> getRoles() {
     return roles;
   }
@@ -271,31 +307,40 @@ public class Issuedoffertype   {
     this.roles = roles;
   }
 
-   /**
-   * Celková doba trvání
-   * @return totalDuration
-  **/
-  @ApiModelProperty(example = "null", value = "Celková doba trvání")
-  public DateTime getTotalDuration() {
-    return totalDuration;
-  }
-
-  public Issuedoffertype isShorteningTerms(Boolean isShorteningTerms) {
-    this.isShorteningTerms = isShorteningTerms;
+  public Issuedoffertype totalduration(DateTime totalduration) {
+    this.totalduration = totalduration;
     return this;
   }
 
    /**
-   * Posunout termíny v případě dřívějšího splnění [persistentní položka]
-   * @return isShorteningTerms
+   * celková doba trvání
+   * @return totalduration
   **/
-  @ApiModelProperty(example = "null", value = "Posunout termíny v případě dřívějšího splnění [persistentní položka]")
-  public Boolean getIsShorteningTerms() {
-    return isShorteningTerms;
+  @ApiModelProperty(example = "null", value = "celková doba trvání")
+  public DateTime getTotalduration() {
+    return totalduration;
   }
 
-  public void setIsShorteningTerms(Boolean isShorteningTerms) {
-    this.isShorteningTerms = isShorteningTerms;
+  public void setTotalduration(DateTime totalduration) {
+    this.totalduration = totalduration;
+  }
+
+  public Issuedoffertype isshorteningterms(Boolean isshorteningterms) {
+    this.isshorteningterms = isshorteningterms;
+    return this;
+  }
+
+   /**
+   * posunout termíny v případě dřívějšího splnění [persistentní položka]
+   * @return isshorteningterms
+  **/
+  @ApiModelProperty(example = "null", value = "posunout termíny v případě dřívějšího splnění [persistentní položka]")
+  public Boolean getIsshorteningterms() {
+    return isshorteningterms;
+  }
+
+  public void setIsshorteningterms(Boolean isshorteningterms) {
+    this.isshorteningterms = isshorteningterms;
   }
 
 
@@ -308,25 +353,25 @@ public class Issuedoffertype   {
       return false;
     }
     Issuedoffertype issuedoffertype = (Issuedoffertype) o;
-    return Objects.equals(this.displayName, issuedoffertype.displayName) &&
-        Objects.equals(this.ID, issuedoffertype.ID) &&
-        Objects.equals(this.classID, issuedoffertype.classID) &&
-        Objects.equals(this.objVersion, issuedoffertype.objVersion) &&
+    return Objects.equals(this.displayname, issuedoffertype.displayname) &&
+        Objects.equals(this.id, issuedoffertype.id) &&
+        Objects.equals(this.classid, issuedoffertype.classid) &&
+        Objects.equals(this.objversion, issuedoffertype.objversion) &&
         Objects.equals(this.rows, issuedoffertype.rows) &&
         Objects.equals(this.hidden, issuedoffertype.hidden) &&
         Objects.equals(this.code, issuedoffertype.code) &&
         Objects.equals(this.name, issuedoffertype.name) &&
-        Objects.equals(this.defaultDocQueueID, issuedoffertype.defaultDocQueueID) &&
-        Objects.equals(this.defaultRoleID, issuedoffertype.defaultRoleID) &&
-        Objects.equals(this.defaultUserID, issuedoffertype.defaultUserID) &&
+        Objects.equals(this.defaultdocqueueId, issuedoffertype.defaultdocqueueId) &&
+        Objects.equals(this.defaultroleId, issuedoffertype.defaultroleId) &&
+        Objects.equals(this.defaultuserId, issuedoffertype.defaultuserId) &&
         Objects.equals(this.roles, issuedoffertype.roles) &&
-        Objects.equals(this.totalDuration, issuedoffertype.totalDuration) &&
-        Objects.equals(this.isShorteningTerms, issuedoffertype.isShorteningTerms);
+        Objects.equals(this.totalduration, issuedoffertype.totalduration) &&
+        Objects.equals(this.isshorteningterms, issuedoffertype.isshorteningterms);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, code, name, defaultDocQueueID, defaultRoleID, defaultUserID, roles, totalDuration, isShorteningTerms);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, code, name, defaultdocqueueId, defaultroleId, defaultuserId, roles, totalduration, isshorteningterms);
   }
 
   @Override
@@ -334,20 +379,20 @@ public class Issuedoffertype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Issuedoffertype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    defaultDocQueueID: ").append(toIndentedString(defaultDocQueueID)).append("\n");
-    sb.append("    defaultRoleID: ").append(toIndentedString(defaultRoleID)).append("\n");
-    sb.append("    defaultUserID: ").append(toIndentedString(defaultUserID)).append("\n");
+    sb.append("    defaultdocqueueId: ").append(toIndentedString(defaultdocqueueId)).append("\n");
+    sb.append("    defaultroleId: ").append(toIndentedString(defaultroleId)).append("\n");
+    sb.append("    defaultuserId: ").append(toIndentedString(defaultuserId)).append("\n");
     sb.append("    roles: ").append(toIndentedString(roles)).append("\n");
-    sb.append("    totalDuration: ").append(toIndentedString(totalDuration)).append("\n");
-    sb.append("    isShorteningTerms: ").append(toIndentedString(isShorteningTerms)).append("\n");
+    sb.append("    totalduration: ").append(toIndentedString(totalduration)).append("\n");
+    sb.append("    isshorteningterms: ").append(toIndentedString(isshorteningterms)).append("\n");
     sb.append("}");
     return sb.toString();
   }

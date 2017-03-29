@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,150 +34,195 @@ import java.util.Objects;
 /**
  * Shiftcalendarpause
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Shiftcalendarpause   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("RelativeInitialHour")
-  private Double relativeInitialHour = null;
+  @SerializedName("relativeinitialhour")
+  private Double relativeinitialhour = null;
 
-  @SerializedName("InitialHour")
-  private Double initialHour = null;
+  @SerializedName("initialhour")
+  private Double initialhour = null;
 
-  @SerializedName("InitialHourStr")
-  private String initialHourStr = null;
+  @SerializedName("initialhourstr")
+  private String initialhourstr = null;
 
-  @SerializedName("HoursPause")
-  private Double hoursPause = null;
+  @SerializedName("hourspause")
+  private Double hourspause = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Plánovaná směna [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Plánovaná směna [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Shiftcalendarpause relativeInitialHour(Double relativeInitialHour) {
-    this.relativeInitialHour = relativeInitialHour;
+  public Shiftcalendarpause displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Počáteční hodina přestávky [persistentní položka]
-   * @return relativeInitialHour
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Počáteční hodina přestávky [persistentní položka]")
-  public Double getRelativeInitialHour() {
-    return relativeInitialHour;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setRelativeInitialHour(Double relativeInitialHour) {
-    this.relativeInitialHour = relativeInitialHour;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Shiftcalendarpause initialHour(Double initialHour) {
-    this.initialHour = initialHour;
+  public Shiftcalendarpause id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Hodina od
-   * @return initialHour
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Hodina od")
-  public Double getInitialHour() {
-    return initialHour;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setInitialHour(Double initialHour) {
-    this.initialHour = initialHour;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Shiftcalendarpause initialHourStr(String initialHourStr) {
-    this.initialHourStr = initialHourStr;
+  public Shiftcalendarpause classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Hodina od
-   * @return initialHourStr
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Hodina od")
-  public String getInitialHourStr() {
-    return initialHourStr;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setInitialHourStr(String initialHourStr) {
-    this.initialHourStr = initialHourStr;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Shiftcalendarpause hoursPause(Double hoursPause) {
-    this.hoursPause = hoursPause;
+  public Shiftcalendarpause objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Délka trvání přestávky (v hodinách) [persistentní položka]
-   * @return hoursPause
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Délka trvání přestávky (v hodinách) [persistentní položka]")
-  public Double getHoursPause() {
-    return hoursPause;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setHoursPause(Double hoursPause) {
-    this.hoursPause = hoursPause;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Shiftcalendarpause parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu plánovaná směna [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu plánovaná směna [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Shiftcalendarpause relativeinitialhour(Double relativeinitialhour) {
+    this.relativeinitialhour = relativeinitialhour;
+    return this;
+  }
+
+   /**
+   * počáteční hodina přestávky [persistentní položka]
+   * @return relativeinitialhour
+  **/
+  @ApiModelProperty(example = "null", value = "počáteční hodina přestávky [persistentní položka]")
+  public Double getRelativeinitialhour() {
+    return relativeinitialhour;
+  }
+
+  public void setRelativeinitialhour(Double relativeinitialhour) {
+    this.relativeinitialhour = relativeinitialhour;
+  }
+
+  public Shiftcalendarpause initialhour(Double initialhour) {
+    this.initialhour = initialhour;
+    return this;
+  }
+
+   /**
+   * hodina od
+   * @return initialhour
+  **/
+  @ApiModelProperty(example = "null", value = "hodina od")
+  public Double getInitialhour() {
+    return initialhour;
+  }
+
+  public void setInitialhour(Double initialhour) {
+    this.initialhour = initialhour;
+  }
+
+  public Shiftcalendarpause initialhourstr(String initialhourstr) {
+    this.initialhourstr = initialhourstr;
+    return this;
+  }
+
+   /**
+   * hodina od
+   * @return initialhourstr
+  **/
+  @ApiModelProperty(example = "null", value = "hodina od")
+  public String getInitialhourstr() {
+    return initialhourstr;
+  }
+
+  public void setInitialhourstr(String initialhourstr) {
+    this.initialhourstr = initialhourstr;
+  }
+
+  public Shiftcalendarpause hourspause(Double hourspause) {
+    this.hourspause = hourspause;
+    return this;
+  }
+
+   /**
+   * délka trvání přestávky (v hodinách) [persistentní položka]
+   * @return hourspause
+  **/
+  @ApiModelProperty(example = "null", value = "délka trvání přestávky (v hodinách) [persistentní položka]")
+  public Double getHourspause() {
+    return hourspause;
+  }
+
+  public void setHourspause(Double hourspause) {
+    this.hourspause = hourspause;
   }
 
 
@@ -190,20 +235,20 @@ public class Shiftcalendarpause   {
       return false;
     }
     Shiftcalendarpause shiftcalendarpause = (Shiftcalendarpause) o;
-    return Objects.equals(this.displayName, shiftcalendarpause.displayName) &&
-        Objects.equals(this.ID, shiftcalendarpause.ID) &&
-        Objects.equals(this.classID, shiftcalendarpause.classID) &&
-        Objects.equals(this.objVersion, shiftcalendarpause.objVersion) &&
-        Objects.equals(this.parentID, shiftcalendarpause.parentID) &&
-        Objects.equals(this.relativeInitialHour, shiftcalendarpause.relativeInitialHour) &&
-        Objects.equals(this.initialHour, shiftcalendarpause.initialHour) &&
-        Objects.equals(this.initialHourStr, shiftcalendarpause.initialHourStr) &&
-        Objects.equals(this.hoursPause, shiftcalendarpause.hoursPause);
+    return Objects.equals(this.displayname, shiftcalendarpause.displayname) &&
+        Objects.equals(this.id, shiftcalendarpause.id) &&
+        Objects.equals(this.classid, shiftcalendarpause.classid) &&
+        Objects.equals(this.objversion, shiftcalendarpause.objversion) &&
+        Objects.equals(this.parentId, shiftcalendarpause.parentId) &&
+        Objects.equals(this.relativeinitialhour, shiftcalendarpause.relativeinitialhour) &&
+        Objects.equals(this.initialhour, shiftcalendarpause.initialhour) &&
+        Objects.equals(this.initialhourstr, shiftcalendarpause.initialhourstr) &&
+        Objects.equals(this.hourspause, shiftcalendarpause.hourspause);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, relativeInitialHour, initialHour, initialHourStr, hoursPause);
+    return Objects.hash(displayname, id, classid, objversion, parentId, relativeinitialhour, initialhour, initialhourstr, hourspause);
   }
 
   @Override
@@ -211,15 +256,15 @@ public class Shiftcalendarpause   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Shiftcalendarpause {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    relativeInitialHour: ").append(toIndentedString(relativeInitialHour)).append("\n");
-    sb.append("    initialHour: ").append(toIndentedString(initialHour)).append("\n");
-    sb.append("    initialHourStr: ").append(toIndentedString(initialHourStr)).append("\n");
-    sb.append("    hoursPause: ").append(toIndentedString(hoursPause)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    relativeinitialhour: ").append(toIndentedString(relativeinitialhour)).append("\n");
+    sb.append("    initialhour: ").append(toIndentedString(initialhour)).append("\n");
+    sb.append("    initialhourstr: ").append(toIndentedString(initialhourstr)).append("\n");
+    sb.append("    hourspause: ").append(toIndentedString(hourspause)).append("\n");
     sb.append("}");
     return sb.toString();
   }

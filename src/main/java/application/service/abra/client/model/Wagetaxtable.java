@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,75 +37,111 @@ import java.util.Objects;
 /**
  * Wagetaxtable
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wagetaxtable   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Wagetaxtablerow> rows = new ArrayList<Wagetaxtablerow>();
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ValidFrom$DATE")
-  private DateTime validFromDATE = null;
+  @SerializedName("validfrom$date")
+  private DateTime validfromdate = null;
 
-  @SerializedName("TableType")
-  private Integer tableType = null;
+  @SerializedName("tabletype")
+  private Integer tabletype = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-  @SerializedName("TableType_AsText")
-  private String tableTypeAsText = null;
+  @SerializedName("tabletype_astext")
+  private String tabletypeAstext = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Wagetaxtable displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wagetaxtable id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wagetaxtable classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wagetaxtable objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Wagetaxtable rows(List<Wagetaxtablerow> rows) {
@@ -119,10 +155,10 @@ public class Wagetaxtable   {
   }
 
    /**
-   * Řádky; kolekce BO Daňová tabulka - řádek [nepersistentní položka]
+   * Řádky; kolekce bo daňová tabulka - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Daňová tabulka - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo daňová tabulka - řádek [nepersistentní položka]")
   public List<Wagetaxtablerow> getRows() {
     return rows;
   }
@@ -137,10 +173,10 @@ public class Wagetaxtable   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -155,10 +191,10 @@ public class Wagetaxtable   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -167,40 +203,40 @@ public class Wagetaxtable   {
     this.name = name;
   }
 
-  public Wagetaxtable validFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public Wagetaxtable validfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
     return this;
   }
 
    /**
-   * Platnost od [persistentní položka]
-   * @return validFromDATE
+   * platnost od [persistentní položka]
+   * @return validfromdate
   **/
-  @ApiModelProperty(example = "null", value = "Platnost od [persistentní položka]")
-  public DateTime getValidFromDATE() {
-    return validFromDATE;
+  @ApiModelProperty(example = "null", value = "platnost od [persistentní položka]")
+  public DateTime getValidfromdate() {
+    return validfromdate;
   }
 
-  public void setValidFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public void setValidfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
   }
 
-  public Wagetaxtable tableType(Integer tableType) {
-    this.tableType = tableType;
+  public Wagetaxtable tabletype(Integer tabletype) {
+    this.tabletype = tabletype;
     return this;
   }
 
    /**
-   * Typ tabulky [persistentní položka]
-   * @return tableType
+   * typ tabulky [persistentní položka]
+   * @return tabletype
   **/
-  @ApiModelProperty(example = "null", value = "Typ tabulky [persistentní položka]")
-  public Integer getTableType() {
-    return tableType;
+  @ApiModelProperty(example = "null", value = "typ tabulky [persistentní položka]")
+  public Integer getTabletype() {
+    return tabletype;
   }
 
-  public void setTableType(Integer tableType) {
-    this.tableType = tableType;
+  public void setTabletype(Integer tabletype) {
+    this.tabletype = tabletype;
   }
 
   public Wagetaxtable system(Boolean system) {
@@ -209,10 +245,10 @@ public class Wagetaxtable   {
   }
 
    /**
-   * Systémová [persistentní položka]
+   * systémová [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Systémová [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "systémová [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -221,22 +257,22 @@ public class Wagetaxtable   {
     this.system = system;
   }
 
-  public Wagetaxtable tableTypeAsText(String tableTypeAsText) {
-    this.tableTypeAsText = tableTypeAsText;
+  public Wagetaxtable tabletypeAstext(String tabletypeAstext) {
+    this.tabletypeAstext = tabletypeAstext;
     return this;
   }
 
    /**
-   * Typ tabulky - text
-   * @return tableTypeAsText
+   * typ tabulky - text
+   * @return tabletypeAstext
   **/
-  @ApiModelProperty(example = "null", value = "Typ tabulky - text")
-  public String getTableTypeAsText() {
-    return tableTypeAsText;
+  @ApiModelProperty(example = "null", value = "typ tabulky - text")
+  public String getTabletypeAstext() {
+    return tabletypeAstext;
   }
 
-  public void setTableTypeAsText(String tableTypeAsText) {
-    this.tableTypeAsText = tableTypeAsText;
+  public void setTabletypeAstext(String tabletypeAstext) {
+    this.tabletypeAstext = tabletypeAstext;
   }
 
 
@@ -249,22 +285,22 @@ public class Wagetaxtable   {
       return false;
     }
     Wagetaxtable wagetaxtable = (Wagetaxtable) o;
-    return Objects.equals(this.displayName, wagetaxtable.displayName) &&
-        Objects.equals(this.ID, wagetaxtable.ID) &&
-        Objects.equals(this.classID, wagetaxtable.classID) &&
-        Objects.equals(this.objVersion, wagetaxtable.objVersion) &&
+    return Objects.equals(this.displayname, wagetaxtable.displayname) &&
+        Objects.equals(this.id, wagetaxtable.id) &&
+        Objects.equals(this.classid, wagetaxtable.classid) &&
+        Objects.equals(this.objversion, wagetaxtable.objversion) &&
         Objects.equals(this.rows, wagetaxtable.rows) &&
         Objects.equals(this.code, wagetaxtable.code) &&
         Objects.equals(this.name, wagetaxtable.name) &&
-        Objects.equals(this.validFromDATE, wagetaxtable.validFromDATE) &&
-        Objects.equals(this.tableType, wagetaxtable.tableType) &&
+        Objects.equals(this.validfromdate, wagetaxtable.validfromdate) &&
+        Objects.equals(this.tabletype, wagetaxtable.tabletype) &&
         Objects.equals(this.system, wagetaxtable.system) &&
-        Objects.equals(this.tableTypeAsText, wagetaxtable.tableTypeAsText);
+        Objects.equals(this.tabletypeAstext, wagetaxtable.tabletypeAstext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, code, name, validFromDATE, tableType, system, tableTypeAsText);
+    return Objects.hash(displayname, id, classid, objversion, rows, code, name, validfromdate, tabletype, system, tabletypeAstext);
   }
 
   @Override
@@ -272,17 +308,17 @@ public class Wagetaxtable   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wagetaxtable {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    validFromDATE: ").append(toIndentedString(validFromDATE)).append("\n");
-    sb.append("    tableType: ").append(toIndentedString(tableType)).append("\n");
+    sb.append("    validfromdate: ").append(toIndentedString(validfromdate)).append("\n");
+    sb.append("    tabletype: ").append(toIndentedString(tabletype)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
-    sb.append("    tableTypeAsText: ").append(toIndentedString(tableTypeAsText)).append("\n");
+    sb.append("    tabletypeAstext: ").append(toIndentedString(tabletypeAstext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,150 +34,258 @@ import java.util.Objects;
 /**
  * Assetcardperiod
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Assetcardperiod   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("ValorisationAmount")
-  private Double valorisationAmount = null;
+  @SerializedName("valorisationamount")
+  private Double valorisationamount = null;
 
-  @SerializedName("IncreaseAmount")
-  private Double increaseAmount = null;
+  @SerializedName("increaseamount")
+  private Double increaseamount = null;
 
-  @SerializedName("ValueChangeAmount")
-  private Double valueChangeAmount = null;
+  @SerializedName("valuechangeamount")
+  private Double valuechangeamount = null;
 
-  @SerializedName("AccValorisationAmount")
-  private Double accValorisationAmount = null;
+  @SerializedName("accvalorisationamount")
+  private Double accvalorisationamount = null;
 
-  @SerializedName("AccIncreaseAmount")
-  private Double accIncreaseAmount = null;
+  @SerializedName("accincreaseamount")
+  private Double accincreaseamount = null;
 
-  @SerializedName("AccValueChangeAmount")
-  private Double accValueChangeAmount = null;
+  @SerializedName("accvaluechangeamount")
+  private Double accvaluechangeamount = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Assetcardperiod displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Assetcardperiod id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Assetcardperiod classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Assetcardperiod objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Hlavičkový objekt [persistentní položka]
-   * @return parentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Hlavičkový objekt [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Assetcardperiod parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * vlastník; id objektu hlavičkový objekt [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu hlavičkový objekt [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Assetcardperiod periodId(String periodId) {
+    this.periodId = periodId;
+    return this;
+  }
+
+   /**
+   * období; id objektu období [persistentní položka]
+   * @return periodId
+  **/
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
+  }
+
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
+  }
+
+  public Assetcardperiod valorisationamount(Double valorisationamount) {
+    this.valorisationamount = valorisationamount;
+    return this;
   }
 
    /**
    * Částka techn.zhodn. [persistentní položka]
-   * @return valorisationAmount
+   * @return valorisationamount
   **/
   @ApiModelProperty(example = "null", value = "Částka techn.zhodn. [persistentní položka]")
-  public Double getValorisationAmount() {
-    return valorisationAmount;
+  public Double getValorisationamount() {
+    return valorisationamount;
+  }
+
+  public void setValorisationamount(Double valorisationamount) {
+    this.valorisationamount = valorisationamount;
+  }
+
+  public Assetcardperiod increaseamount(Double increaseamount) {
+    this.increaseamount = increaseamount;
+    return this;
   }
 
    /**
    * Částka techn.zh. nepromítnutá [persistentní položka]
-   * @return increaseAmount
+   * @return increaseamount
   **/
   @ApiModelProperty(example = "null", value = "Částka techn.zh. nepromítnutá [persistentní položka]")
-  public Double getIncreaseAmount() {
-    return increaseAmount;
+  public Double getIncreaseamount() {
+    return increaseamount;
+  }
+
+  public void setIncreaseamount(Double increaseamount) {
+    this.increaseamount = increaseamount;
+  }
+
+  public Assetcardperiod valuechangeamount(Double valuechangeamount) {
+    this.valuechangeamount = valuechangeamount;
+    return this;
   }
 
    /**
    * Částka změny ceny [persistentní položka]
-   * @return valueChangeAmount
+   * @return valuechangeamount
   **/
   @ApiModelProperty(example = "null", value = "Částka změny ceny [persistentní položka]")
-  public Double getValueChangeAmount() {
-    return valueChangeAmount;
+  public Double getValuechangeamount() {
+    return valuechangeamount;
+  }
+
+  public void setValuechangeamount(Double valuechangeamount) {
+    this.valuechangeamount = valuechangeamount;
+  }
+
+  public Assetcardperiod accvalorisationamount(Double accvalorisationamount) {
+    this.accvalorisationamount = accvalorisationamount;
+    return this;
   }
 
    /**
    * Částka techn.zhodn. účetní [persistentní položka]
-   * @return accValorisationAmount
+   * @return accvalorisationamount
   **/
   @ApiModelProperty(example = "null", value = "Částka techn.zhodn. účetní [persistentní položka]")
-  public Double getAccValorisationAmount() {
-    return accValorisationAmount;
+  public Double getAccvalorisationamount() {
+    return accvalorisationamount;
+  }
+
+  public void setAccvalorisationamount(Double accvalorisationamount) {
+    this.accvalorisationamount = accvalorisationamount;
+  }
+
+  public Assetcardperiod accincreaseamount(Double accincreaseamount) {
+    this.accincreaseamount = accincreaseamount;
+    return this;
   }
 
    /**
    * Částka techn.zh. nepromítnutá účetní [persistentní položka]
-   * @return accIncreaseAmount
+   * @return accincreaseamount
   **/
   @ApiModelProperty(example = "null", value = "Částka techn.zh. nepromítnutá účetní [persistentní položka]")
-  public Double getAccIncreaseAmount() {
-    return accIncreaseAmount;
+  public Double getAccincreaseamount() {
+    return accincreaseamount;
+  }
+
+  public void setAccincreaseamount(Double accincreaseamount) {
+    this.accincreaseamount = accincreaseamount;
+  }
+
+  public Assetcardperiod accvaluechangeamount(Double accvaluechangeamount) {
+    this.accvaluechangeamount = accvaluechangeamount;
+    return this;
   }
 
    /**
    * Částka změny ceny účetní [persistentní položka]
-   * @return accValueChangeAmount
+   * @return accvaluechangeamount
   **/
   @ApiModelProperty(example = "null", value = "Částka změny ceny účetní [persistentní položka]")
-  public Double getAccValueChangeAmount() {
-    return accValueChangeAmount;
+  public Double getAccvaluechangeamount() {
+    return accvaluechangeamount;
+  }
+
+  public void setAccvaluechangeamount(Double accvaluechangeamount) {
+    this.accvaluechangeamount = accvaluechangeamount;
   }
 
 
@@ -190,23 +298,23 @@ public class Assetcardperiod   {
       return false;
     }
     Assetcardperiod assetcardperiod = (Assetcardperiod) o;
-    return Objects.equals(this.displayName, assetcardperiod.displayName) &&
-        Objects.equals(this.ID, assetcardperiod.ID) &&
-        Objects.equals(this.classID, assetcardperiod.classID) &&
-        Objects.equals(this.objVersion, assetcardperiod.objVersion) &&
-        Objects.equals(this.parentID, assetcardperiod.parentID) &&
-        Objects.equals(this.periodID, assetcardperiod.periodID) &&
-        Objects.equals(this.valorisationAmount, assetcardperiod.valorisationAmount) &&
-        Objects.equals(this.increaseAmount, assetcardperiod.increaseAmount) &&
-        Objects.equals(this.valueChangeAmount, assetcardperiod.valueChangeAmount) &&
-        Objects.equals(this.accValorisationAmount, assetcardperiod.accValorisationAmount) &&
-        Objects.equals(this.accIncreaseAmount, assetcardperiod.accIncreaseAmount) &&
-        Objects.equals(this.accValueChangeAmount, assetcardperiod.accValueChangeAmount);
+    return Objects.equals(this.displayname, assetcardperiod.displayname) &&
+        Objects.equals(this.id, assetcardperiod.id) &&
+        Objects.equals(this.classid, assetcardperiod.classid) &&
+        Objects.equals(this.objversion, assetcardperiod.objversion) &&
+        Objects.equals(this.parentId, assetcardperiod.parentId) &&
+        Objects.equals(this.periodId, assetcardperiod.periodId) &&
+        Objects.equals(this.valorisationamount, assetcardperiod.valorisationamount) &&
+        Objects.equals(this.increaseamount, assetcardperiod.increaseamount) &&
+        Objects.equals(this.valuechangeamount, assetcardperiod.valuechangeamount) &&
+        Objects.equals(this.accvalorisationamount, assetcardperiod.accvalorisationamount) &&
+        Objects.equals(this.accincreaseamount, assetcardperiod.accincreaseamount) &&
+        Objects.equals(this.accvaluechangeamount, assetcardperiod.accvaluechangeamount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, periodID, valorisationAmount, increaseAmount, valueChangeAmount, accValorisationAmount, accIncreaseAmount, accValueChangeAmount);
+    return Objects.hash(displayname, id, classid, objversion, parentId, periodId, valorisationamount, increaseamount, valuechangeamount, accvalorisationamount, accincreaseamount, accvaluechangeamount);
   }
 
   @Override
@@ -214,18 +322,18 @@ public class Assetcardperiod   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Assetcardperiod {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    valorisationAmount: ").append(toIndentedString(valorisationAmount)).append("\n");
-    sb.append("    increaseAmount: ").append(toIndentedString(increaseAmount)).append("\n");
-    sb.append("    valueChangeAmount: ").append(toIndentedString(valueChangeAmount)).append("\n");
-    sb.append("    accValorisationAmount: ").append(toIndentedString(accValorisationAmount)).append("\n");
-    sb.append("    accIncreaseAmount: ").append(toIndentedString(accIncreaseAmount)).append("\n");
-    sb.append("    accValueChangeAmount: ").append(toIndentedString(accValueChangeAmount)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    valorisationamount: ").append(toIndentedString(valorisationamount)).append("\n");
+    sb.append("    increaseamount: ").append(toIndentedString(increaseamount)).append("\n");
+    sb.append("    valuechangeamount: ").append(toIndentedString(valuechangeamount)).append("\n");
+    sb.append("    accvalorisationamount: ").append(toIndentedString(accvalorisationamount)).append("\n");
+    sb.append("    accincreaseamount: ").append(toIndentedString(accincreaseamount)).append("\n");
+    sb.append("    accvaluechangeamount: ").append(toIndentedString(accvaluechangeamount)).append("\n");
     sb.append("}");
     return sb.toString();
   }

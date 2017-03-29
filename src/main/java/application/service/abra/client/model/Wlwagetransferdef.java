@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,120 +34,156 @@ import java.util.Objects;
 /**
  * Wlwagetransferdef
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wlwagetransferdef   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("DefType")
-  private Integer defType = null;
+  @SerializedName("deftype")
+  private Integer deftype = null;
 
-  @SerializedName("EntryType_ID")
-  private String entryTypeID = null;
+  @SerializedName("entrytype_id")
+  private String entrytypeId = null;
 
-  @SerializedName("TransferType")
-  private Integer transferType = null;
+  @SerializedName("transfertype")
+  private Integer transfertype = null;
 
-  @SerializedName("AggregationType")
-  private Integer aggregationType = null;
+  @SerializedName("aggregationtype")
+  private Integer aggregationtype = null;
 
-  @SerializedName("FieldCode")
-  private Integer fieldCode = null;
+  @SerializedName("fieldcode")
+  private Integer fieldcode = null;
 
-  @SerializedName("CorrectionExpression")
-  private String correctionExpression = null;
+  @SerializedName("correctionexpression")
+  private String correctionexpression = null;
 
-  @SerializedName("WageOperTypeIDExpr")
-  private String wageOperTypeIDExpr = null;
+  @SerializedName("wageopertypeidexpr")
+  private String wageopertypeidexpr = null;
 
-  @SerializedName("AbsenceTypeIDExpr")
-  private String absenceTypeIDExpr = null;
+  @SerializedName("absencetypeidexpr")
+  private String absencetypeidexpr = null;
 
-  @SerializedName("SickBenefitTypeIDExpr")
-  private String sickBenefitTypeIDExpr = null;
+  @SerializedName("sickbenefittypeidexpr")
+  private String sickbenefittypeidexpr = null;
 
-  @SerializedName("ScriptPackage_ID")
-  private String scriptPackageID = null;
+  @SerializedName("scriptpackage_id")
+  private String scriptpackageId = null;
 
-  @SerializedName("ScriptLibrary")
-  private String scriptLibrary = null;
+  @SerializedName("scriptlibrary")
+  private String scriptlibrary = null;
 
-  @SerializedName("ScriptFunction")
-  private String scriptFunction = null;
+  @SerializedName("scriptfunction")
+  private String scriptfunction = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("DisabledForClosing")
-  private Boolean disabledForClosing = null;
+  @SerializedName("disabledforclosing")
+  private Boolean disabledforclosing = null;
 
-  @SerializedName("ClosingValueType")
-  private Integer closingValueType = null;
+  @SerializedName("closingvaluetype")
+  private Integer closingvaluetype = null;
 
-  @SerializedName("FieldCodeLabel")
-  private String fieldCodeLabel = null;
+  @SerializedName("fieldcodelabel")
+  private String fieldcodelabel = null;
 
-  @SerializedName("FieldCodeName")
-  private String fieldCodeName = null;
+  @SerializedName("fieldcodename")
+  private String fieldcodename = null;
 
-  @SerializedName("DefTypeAsText")
-  private String defTypeAsText = null;
+  @SerializedName("deftypeastext")
+  private String deftypeastext = null;
 
-  @SerializedName("AggregationTypeAsText")
-  private String aggregationTypeAsText = null;
+  @SerializedName("aggregationtypeastext")
+  private String aggregationtypeastext = null;
 
-  @SerializedName("TransferTypeAsText")
-  private String transferTypeAsText = null;
+  @SerializedName("transfertypeastext")
+  private String transfertypeastext = null;
 
-  @SerializedName("ScriptPackageName")
-  private String scriptPackageName = null;
+  @SerializedName("scriptpackagename")
+  private String scriptpackagename = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Wlwagetransferdef displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wlwagetransferdef id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wlwagetransferdef classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wlwagetransferdef objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Wlwagetransferdef description(String description) {
@@ -156,10 +192,10 @@ public class Wlwagetransferdef   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -168,373 +204,382 @@ public class Wlwagetransferdef   {
     this.description = description;
   }
 
-  public Wlwagetransferdef defType(Integer defType) {
-    this.defType = defType;
+  public Wlwagetransferdef deftype(Integer deftype) {
+    this.deftype = deftype;
     return this;
   }
 
    /**
-   * Typ záznamu [persistentní položka]
-   * @return defType
+   * typ záznamu [persistentní položka]
+   * @return deftype
   **/
-  @ApiModelProperty(example = "null", value = "Typ záznamu [persistentní položka]")
-  public Integer getDefType() {
-    return defType;
+  @ApiModelProperty(example = "null", value = "typ záznamu [persistentní položka]")
+  public Integer getDeftype() {
+    return deftype;
   }
 
-  public void setDefType(Integer defType) {
-    this.defType = defType;
+  public void setDeftype(Integer deftype) {
+    this.deftype = deftype;
   }
 
-  public Wlwagetransferdef entryTypeID(String entryTypeID) {
-    this.entryTypeID = entryTypeID;
+  public Wlwagetransferdef entrytypeId(String entrytypeId) {
+    this.entrytypeId = entrytypeId;
     return this;
   }
 
    /**
-   * Základní typ; ID objektu Docházka - Druh činnosti [persistentní položka]
-   * @return entryTypeID
+   * základní typ; id objektu docházka - druh činnosti [persistentní položka]
+   * @return entrytypeId
   **/
-  @ApiModelProperty(example = "null", value = "Základní typ; ID objektu Docházka - Druh činnosti [persistentní položka]")
-  public String getEntryTypeID() {
-    return entryTypeID;
+  @ApiModelProperty(example = "null", value = "základní typ; id objektu docházka - druh činnosti [persistentní položka]")
+  public String getEntrytypeId() {
+    return entrytypeId;
   }
 
-  public void setEntryTypeID(String entryTypeID) {
-    this.entryTypeID = entryTypeID;
+  public void setEntrytypeId(String entrytypeId) {
+    this.entrytypeId = entrytypeId;
   }
 
-  public Wlwagetransferdef transferType(Integer transferType) {
-    this.transferType = transferType;
+  public Wlwagetransferdef transfertype(Integer transfertype) {
+    this.transfertype = transfertype;
     return this;
   }
 
    /**
-   * Způsob přenosu [persistentní položka]
-   * @return transferType
+   * způsob přenosu [persistentní položka]
+   * @return transfertype
   **/
-  @ApiModelProperty(example = "null", value = "Způsob přenosu [persistentní položka]")
-  public Integer getTransferType() {
-    return transferType;
+  @ApiModelProperty(example = "null", value = "způsob přenosu [persistentní položka]")
+  public Integer getTransfertype() {
+    return transfertype;
   }
 
-  public void setTransferType(Integer transferType) {
-    this.transferType = transferType;
+  public void setTransfertype(Integer transfertype) {
+    this.transfertype = transfertype;
   }
 
-  public Wlwagetransferdef aggregationType(Integer aggregationType) {
-    this.aggregationType = aggregationType;
+  public Wlwagetransferdef aggregationtype(Integer aggregationtype) {
+    this.aggregationtype = aggregationtype;
     return this;
   }
 
    /**
-   * Způsob agregace [persistentní položka]
-   * @return aggregationType
+   * způsob agregace [persistentní položka]
+   * @return aggregationtype
   **/
-  @ApiModelProperty(example = "null", value = "Způsob agregace [persistentní položka]")
-  public Integer getAggregationType() {
-    return aggregationType;
+  @ApiModelProperty(example = "null", value = "způsob agregace [persistentní položka]")
+  public Integer getAggregationtype() {
+    return aggregationtype;
   }
 
-  public void setAggregationType(Integer aggregationType) {
-    this.aggregationType = aggregationType;
+  public void setAggregationtype(Integer aggregationtype) {
+    this.aggregationtype = aggregationtype;
   }
 
-  public Wlwagetransferdef fieldCode(Integer fieldCode) {
-    this.fieldCode = fieldCode;
+  public Wlwagetransferdef fieldcode(Integer fieldcode) {
+    this.fieldcode = fieldcode;
     return this;
   }
 
    /**
-   * FieldCode cílové položky [persistentní položka]
-   * @return fieldCode
+   * fieldcode cílové položky [persistentní položka]
+   * @return fieldcode
   **/
-  @ApiModelProperty(example = "null", value = "FieldCode cílové položky [persistentní položka]")
-  public Integer getFieldCode() {
-    return fieldCode;
+  @ApiModelProperty(example = "null", value = "fieldcode cílové položky [persistentní položka]")
+  public Integer getFieldcode() {
+    return fieldcode;
   }
 
-  public void setFieldCode(Integer fieldCode) {
-    this.fieldCode = fieldCode;
+  public void setFieldcode(Integer fieldcode) {
+    this.fieldcode = fieldcode;
   }
 
-  public Wlwagetransferdef correctionExpression(String correctionExpression) {
-    this.correctionExpression = correctionExpression;
+  public Wlwagetransferdef correctionexpression(String correctionexpression) {
+    this.correctionexpression = correctionexpression;
     return this;
   }
 
    /**
-   * Výraz korekce [persistentní položka]
-   * @return correctionExpression
+   * výraz korekce [persistentní položka]
+   * @return correctionexpression
   **/
-  @ApiModelProperty(example = "null", value = "Výraz korekce [persistentní položka]")
-  public String getCorrectionExpression() {
-    return correctionExpression;
+  @ApiModelProperty(example = "null", value = "výraz korekce [persistentní položka]")
+  public String getCorrectionexpression() {
+    return correctionexpression;
   }
 
-  public void setCorrectionExpression(String correctionExpression) {
-    this.correctionExpression = correctionExpression;
+  public void setCorrectionexpression(String correctionexpression) {
+    this.correctionexpression = correctionexpression;
   }
 
-  public Wlwagetransferdef wageOperTypeIDExpr(String wageOperTypeIDExpr) {
-    this.wageOperTypeIDExpr = wageOperTypeIDExpr;
+  public Wlwagetransferdef wageopertypeidexpr(String wageopertypeidexpr) {
+    this.wageopertypeidexpr = wageopertypeidexpr;
     return this;
   }
 
    /**
-   * Výraz pro zjištění ID z Druhu výkonu [persistentní položka]
-   * @return wageOperTypeIDExpr
+   * výraz pro zjištění id z druhu výkonu [persistentní položka]
+   * @return wageopertypeidexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz pro zjištění ID z Druhu výkonu [persistentní položka]")
-  public String getWageOperTypeIDExpr() {
-    return wageOperTypeIDExpr;
+  @ApiModelProperty(example = "null", value = "výraz pro zjištění id z druhu výkonu [persistentní položka]")
+  public String getWageopertypeidexpr() {
+    return wageopertypeidexpr;
   }
 
-  public void setWageOperTypeIDExpr(String wageOperTypeIDExpr) {
-    this.wageOperTypeIDExpr = wageOperTypeIDExpr;
+  public void setWageopertypeidexpr(String wageopertypeidexpr) {
+    this.wageopertypeidexpr = wageopertypeidexpr;
   }
 
-  public Wlwagetransferdef absenceTypeIDExpr(String absenceTypeIDExpr) {
-    this.absenceTypeIDExpr = absenceTypeIDExpr;
+  public Wlwagetransferdef absencetypeidexpr(String absencetypeidexpr) {
+    this.absencetypeidexpr = absencetypeidexpr;
     return this;
   }
 
    /**
-   * Výraz pro zjištění ID z Druhu srážek [persistentní položka]
-   * @return absenceTypeIDExpr
+   * výraz pro zjištění id z druhu srážek [persistentní položka]
+   * @return absencetypeidexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz pro zjištění ID z Druhu srážek [persistentní položka]")
-  public String getAbsenceTypeIDExpr() {
-    return absenceTypeIDExpr;
+  @ApiModelProperty(example = "null", value = "výraz pro zjištění id z druhu srážek [persistentní položka]")
+  public String getAbsencetypeidexpr() {
+    return absencetypeidexpr;
   }
 
-  public void setAbsenceTypeIDExpr(String absenceTypeIDExpr) {
-    this.absenceTypeIDExpr = absenceTypeIDExpr;
+  public void setAbsencetypeidexpr(String absencetypeidexpr) {
+    this.absencetypeidexpr = absencetypeidexpr;
   }
 
-  public Wlwagetransferdef sickBenefitTypeIDExpr(String sickBenefitTypeIDExpr) {
-    this.sickBenefitTypeIDExpr = sickBenefitTypeIDExpr;
+  public Wlwagetransferdef sickbenefittypeidexpr(String sickbenefittypeidexpr) {
+    this.sickbenefittypeidexpr = sickbenefittypeidexpr;
     return this;
   }
 
    /**
-   * Výraz pro zjištění ID z Druhu nem. dávky [persistentní položka]
-   * @return sickBenefitTypeIDExpr
+   * výraz pro zjištění id z druhu nem. dávky [persistentní položka]
+   * @return sickbenefittypeidexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz pro zjištění ID z Druhu nem. dávky [persistentní položka]")
-  public String getSickBenefitTypeIDExpr() {
-    return sickBenefitTypeIDExpr;
+  @ApiModelProperty(example = "null", value = "výraz pro zjištění id z druhu nem. dávky [persistentní položka]")
+  public String getSickbenefittypeidexpr() {
+    return sickbenefittypeidexpr;
   }
 
-  public void setSickBenefitTypeIDExpr(String sickBenefitTypeIDExpr) {
-    this.sickBenefitTypeIDExpr = sickBenefitTypeIDExpr;
+  public void setSickbenefittypeidexpr(String sickbenefittypeidexpr) {
+    this.sickbenefittypeidexpr = sickbenefittypeidexpr;
   }
 
-  public Wlwagetransferdef scriptPackageID(String scriptPackageID) {
-    this.scriptPackageID = scriptPackageID;
+  public Wlwagetransferdef scriptpackageId(String scriptpackageId) {
+    this.scriptpackageId = scriptpackageId;
     return this;
   }
 
    /**
-   * Balíček skriptů [persistentní položka]
-   * @return scriptPackageID
+   * balíček skriptů [persistentní položka]
+   * @return scriptpackageId
   **/
-  @ApiModelProperty(example = "null", value = "Balíček skriptů [persistentní položka]")
-  public String getScriptPackageID() {
-    return scriptPackageID;
+  @ApiModelProperty(example = "null", value = "balíček skriptů [persistentní položka]")
+  public String getScriptpackageId() {
+    return scriptpackageId;
   }
 
-  public void setScriptPackageID(String scriptPackageID) {
-    this.scriptPackageID = scriptPackageID;
+  public void setScriptpackageId(String scriptpackageId) {
+    this.scriptpackageId = scriptpackageId;
   }
 
-  public Wlwagetransferdef scriptLibrary(String scriptLibrary) {
-    this.scriptLibrary = scriptLibrary;
+  public Wlwagetransferdef scriptlibrary(String scriptlibrary) {
+    this.scriptlibrary = scriptlibrary;
     return this;
   }
 
    /**
-   * Knihovna skriptů [persistentní položka]
-   * @return scriptLibrary
+   * knihovna skriptů [persistentní položka]
+   * @return scriptlibrary
   **/
-  @ApiModelProperty(example = "null", value = "Knihovna skriptů [persistentní položka]")
-  public String getScriptLibrary() {
-    return scriptLibrary;
+  @ApiModelProperty(example = "null", value = "knihovna skriptů [persistentní položka]")
+  public String getScriptlibrary() {
+    return scriptlibrary;
   }
 
-  public void setScriptLibrary(String scriptLibrary) {
-    this.scriptLibrary = scriptLibrary;
+  public void setScriptlibrary(String scriptlibrary) {
+    this.scriptlibrary = scriptlibrary;
   }
 
-  public Wlwagetransferdef scriptFunction(String scriptFunction) {
-    this.scriptFunction = scriptFunction;
+  public Wlwagetransferdef scriptfunction(String scriptfunction) {
+    this.scriptfunction = scriptfunction;
     return this;
   }
 
    /**
-   * Funkce [persistentní položka]
-   * @return scriptFunction
+   * funkce [persistentní položka]
+   * @return scriptfunction
   **/
-  @ApiModelProperty(example = "null", value = "Funkce [persistentní položka]")
-  public String getScriptFunction() {
-    return scriptFunction;
+  @ApiModelProperty(example = "null", value = "funkce [persistentní položka]")
+  public String getScriptfunction() {
+    return scriptfunction;
   }
 
-  public void setScriptFunction(String scriptFunction) {
-    this.scriptFunction = scriptFunction;
+  public void setScriptfunction(String scriptfunction) {
+    this.scriptfunction = scriptfunction;
   }
 
-  public Wlwagetransferdef docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Wlwagetransferdef docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Řada dokladů; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * Řada dokladů; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "Řada dokladů; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Wlwagetransferdef disabledForClosing(Boolean disabledForClosing) {
-    this.disabledForClosing = disabledForClosing;
+  public Wlwagetransferdef disabledforclosing(Boolean disabledforclosing) {
+    this.disabledforclosing = disabledforclosing;
     return this;
   }
 
    /**
-   * Neaktivní [persistentní položka]
-   * @return disabledForClosing
+   * neaktivní [persistentní položka]
+   * @return disabledforclosing
   **/
-  @ApiModelProperty(example = "null", value = "Neaktivní [persistentní položka]")
-  public Boolean getDisabledForClosing() {
-    return disabledForClosing;
+  @ApiModelProperty(example = "null", value = "neaktivní [persistentní položka]")
+  public Boolean getDisabledforclosing() {
+    return disabledforclosing;
   }
 
-  public void setDisabledForClosing(Boolean disabledForClosing) {
-    this.disabledForClosing = disabledForClosing;
+  public void setDisabledforclosing(Boolean disabledforclosing) {
+    this.disabledforclosing = disabledforclosing;
   }
 
-  public Wlwagetransferdef closingValueType(Integer closingValueType) {
-    this.closingValueType = closingValueType;
+  public Wlwagetransferdef closingvaluetype(Integer closingvaluetype) {
+    this.closingvaluetype = closingvaluetype;
     return this;
   }
 
    /**
-   * Typ počítané položky [persistentní položka]
-   * @return closingValueType
+   * typ počítané položky [persistentní položka]
+   * @return closingvaluetype
   **/
-  @ApiModelProperty(example = "null", value = "Typ počítané položky [persistentní položka]")
-  public Integer getClosingValueType() {
-    return closingValueType;
+  @ApiModelProperty(example = "null", value = "typ počítané položky [persistentní položka]")
+  public Integer getClosingvaluetype() {
+    return closingvaluetype;
   }
 
-  public void setClosingValueType(Integer closingValueType) {
-    this.closingValueType = closingValueType;
+  public void setClosingvaluetype(Integer closingvaluetype) {
+    this.closingvaluetype = closingvaluetype;
   }
 
-  public Wlwagetransferdef fieldCodeLabel(String fieldCodeLabel) {
-    this.fieldCodeLabel = fieldCodeLabel;
+  public Wlwagetransferdef fieldcodelabel(String fieldcodelabel) {
+    this.fieldcodelabel = fieldcodelabel;
     return this;
   }
 
    /**
-   * FieldCode cílové položky
-   * @return fieldCodeLabel
+   * fieldcode cílové položky
+   * @return fieldcodelabel
   **/
-  @ApiModelProperty(example = "null", value = "FieldCode cílové položky")
-  public String getFieldCodeLabel() {
-    return fieldCodeLabel;
+  @ApiModelProperty(example = "null", value = "fieldcode cílové položky")
+  public String getFieldcodelabel() {
+    return fieldcodelabel;
   }
 
-  public void setFieldCodeLabel(String fieldCodeLabel) {
-    this.fieldCodeLabel = fieldCodeLabel;
+  public void setFieldcodelabel(String fieldcodelabel) {
+    this.fieldcodelabel = fieldcodelabel;
   }
 
-  public Wlwagetransferdef fieldCodeName(String fieldCodeName) {
-    this.fieldCodeName = fieldCodeName;
+  public Wlwagetransferdef fieldcodename(String fieldcodename) {
+    this.fieldcodename = fieldcodename;
     return this;
   }
 
    /**
-   * FieldCode cílové položky
-   * @return fieldCodeName
+   * fieldcode cílové položky
+   * @return fieldcodename
   **/
-  @ApiModelProperty(example = "null", value = "FieldCode cílové položky")
-  public String getFieldCodeName() {
-    return fieldCodeName;
+  @ApiModelProperty(example = "null", value = "fieldcode cílové položky")
+  public String getFieldcodename() {
+    return fieldcodename;
   }
 
-  public void setFieldCodeName(String fieldCodeName) {
-    this.fieldCodeName = fieldCodeName;
+  public void setFieldcodename(String fieldcodename) {
+    this.fieldcodename = fieldcodename;
   }
 
-  public Wlwagetransferdef defTypeAsText(String defTypeAsText) {
-    this.defTypeAsText = defTypeAsText;
+  public Wlwagetransferdef deftypeastext(String deftypeastext) {
+    this.deftypeastext = deftypeastext;
     return this;
   }
 
    /**
-   * Typ záznamu
-   * @return defTypeAsText
+   * typ záznamu
+   * @return deftypeastext
   **/
-  @ApiModelProperty(example = "null", value = "Typ záznamu")
-  public String getDefTypeAsText() {
-    return defTypeAsText;
+  @ApiModelProperty(example = "null", value = "typ záznamu")
+  public String getDeftypeastext() {
+    return deftypeastext;
   }
 
-  public void setDefTypeAsText(String defTypeAsText) {
-    this.defTypeAsText = defTypeAsText;
+  public void setDeftypeastext(String deftypeastext) {
+    this.deftypeastext = deftypeastext;
   }
 
-  public Wlwagetransferdef aggregationTypeAsText(String aggregationTypeAsText) {
-    this.aggregationTypeAsText = aggregationTypeAsText;
+  public Wlwagetransferdef aggregationtypeastext(String aggregationtypeastext) {
+    this.aggregationtypeastext = aggregationtypeastext;
     return this;
   }
 
    /**
-   * Způsob agregace
-   * @return aggregationTypeAsText
+   * způsob agregace
+   * @return aggregationtypeastext
   **/
-  @ApiModelProperty(example = "null", value = "Způsob agregace")
-  public String getAggregationTypeAsText() {
-    return aggregationTypeAsText;
+  @ApiModelProperty(example = "null", value = "způsob agregace")
+  public String getAggregationtypeastext() {
+    return aggregationtypeastext;
   }
 
-  public void setAggregationTypeAsText(String aggregationTypeAsText) {
-    this.aggregationTypeAsText = aggregationTypeAsText;
+  public void setAggregationtypeastext(String aggregationtypeastext) {
+    this.aggregationtypeastext = aggregationtypeastext;
   }
 
-  public Wlwagetransferdef transferTypeAsText(String transferTypeAsText) {
-    this.transferTypeAsText = transferTypeAsText;
+  public Wlwagetransferdef transfertypeastext(String transfertypeastext) {
+    this.transfertypeastext = transfertypeastext;
     return this;
   }
 
    /**
-   * Způsob přenosu
-   * @return transferTypeAsText
+   * způsob přenosu
+   * @return transfertypeastext
   **/
-  @ApiModelProperty(example = "null", value = "Způsob přenosu")
-  public String getTransferTypeAsText() {
-    return transferTypeAsText;
+  @ApiModelProperty(example = "null", value = "způsob přenosu")
+  public String getTransfertypeastext() {
+    return transfertypeastext;
   }
 
-  public void setTransferTypeAsText(String transferTypeAsText) {
-    this.transferTypeAsText = transferTypeAsText;
+  public void setTransfertypeastext(String transfertypeastext) {
+    this.transfertypeastext = transfertypeastext;
+  }
+
+  public Wlwagetransferdef scriptpackagename(String scriptpackagename) {
+    this.scriptpackagename = scriptpackagename;
+    return this;
   }
 
    /**
-   * Název balíčku skriptů
-   * @return scriptPackageName
+   * název balíčku skriptů
+   * @return scriptpackagename
   **/
-  @ApiModelProperty(example = "null", value = "Název balíčku skriptů")
-  public String getScriptPackageName() {
-    return scriptPackageName;
+  @ApiModelProperty(example = "null", value = "název balíčku skriptů")
+  public String getScriptpackagename() {
+    return scriptpackagename;
+  }
+
+  public void setScriptpackagename(String scriptpackagename) {
+    this.scriptpackagename = scriptpackagename;
   }
 
 
@@ -547,37 +592,37 @@ public class Wlwagetransferdef   {
       return false;
     }
     Wlwagetransferdef wlwagetransferdef = (Wlwagetransferdef) o;
-    return Objects.equals(this.displayName, wlwagetransferdef.displayName) &&
-        Objects.equals(this.ID, wlwagetransferdef.ID) &&
-        Objects.equals(this.classID, wlwagetransferdef.classID) &&
-        Objects.equals(this.objVersion, wlwagetransferdef.objVersion) &&
+    return Objects.equals(this.displayname, wlwagetransferdef.displayname) &&
+        Objects.equals(this.id, wlwagetransferdef.id) &&
+        Objects.equals(this.classid, wlwagetransferdef.classid) &&
+        Objects.equals(this.objversion, wlwagetransferdef.objversion) &&
         Objects.equals(this.description, wlwagetransferdef.description) &&
-        Objects.equals(this.defType, wlwagetransferdef.defType) &&
-        Objects.equals(this.entryTypeID, wlwagetransferdef.entryTypeID) &&
-        Objects.equals(this.transferType, wlwagetransferdef.transferType) &&
-        Objects.equals(this.aggregationType, wlwagetransferdef.aggregationType) &&
-        Objects.equals(this.fieldCode, wlwagetransferdef.fieldCode) &&
-        Objects.equals(this.correctionExpression, wlwagetransferdef.correctionExpression) &&
-        Objects.equals(this.wageOperTypeIDExpr, wlwagetransferdef.wageOperTypeIDExpr) &&
-        Objects.equals(this.absenceTypeIDExpr, wlwagetransferdef.absenceTypeIDExpr) &&
-        Objects.equals(this.sickBenefitTypeIDExpr, wlwagetransferdef.sickBenefitTypeIDExpr) &&
-        Objects.equals(this.scriptPackageID, wlwagetransferdef.scriptPackageID) &&
-        Objects.equals(this.scriptLibrary, wlwagetransferdef.scriptLibrary) &&
-        Objects.equals(this.scriptFunction, wlwagetransferdef.scriptFunction) &&
-        Objects.equals(this.docQueueID, wlwagetransferdef.docQueueID) &&
-        Objects.equals(this.disabledForClosing, wlwagetransferdef.disabledForClosing) &&
-        Objects.equals(this.closingValueType, wlwagetransferdef.closingValueType) &&
-        Objects.equals(this.fieldCodeLabel, wlwagetransferdef.fieldCodeLabel) &&
-        Objects.equals(this.fieldCodeName, wlwagetransferdef.fieldCodeName) &&
-        Objects.equals(this.defTypeAsText, wlwagetransferdef.defTypeAsText) &&
-        Objects.equals(this.aggregationTypeAsText, wlwagetransferdef.aggregationTypeAsText) &&
-        Objects.equals(this.transferTypeAsText, wlwagetransferdef.transferTypeAsText) &&
-        Objects.equals(this.scriptPackageName, wlwagetransferdef.scriptPackageName);
+        Objects.equals(this.deftype, wlwagetransferdef.deftype) &&
+        Objects.equals(this.entrytypeId, wlwagetransferdef.entrytypeId) &&
+        Objects.equals(this.transfertype, wlwagetransferdef.transfertype) &&
+        Objects.equals(this.aggregationtype, wlwagetransferdef.aggregationtype) &&
+        Objects.equals(this.fieldcode, wlwagetransferdef.fieldcode) &&
+        Objects.equals(this.correctionexpression, wlwagetransferdef.correctionexpression) &&
+        Objects.equals(this.wageopertypeidexpr, wlwagetransferdef.wageopertypeidexpr) &&
+        Objects.equals(this.absencetypeidexpr, wlwagetransferdef.absencetypeidexpr) &&
+        Objects.equals(this.sickbenefittypeidexpr, wlwagetransferdef.sickbenefittypeidexpr) &&
+        Objects.equals(this.scriptpackageId, wlwagetransferdef.scriptpackageId) &&
+        Objects.equals(this.scriptlibrary, wlwagetransferdef.scriptlibrary) &&
+        Objects.equals(this.scriptfunction, wlwagetransferdef.scriptfunction) &&
+        Objects.equals(this.docqueueId, wlwagetransferdef.docqueueId) &&
+        Objects.equals(this.disabledforclosing, wlwagetransferdef.disabledforclosing) &&
+        Objects.equals(this.closingvaluetype, wlwagetransferdef.closingvaluetype) &&
+        Objects.equals(this.fieldcodelabel, wlwagetransferdef.fieldcodelabel) &&
+        Objects.equals(this.fieldcodename, wlwagetransferdef.fieldcodename) &&
+        Objects.equals(this.deftypeastext, wlwagetransferdef.deftypeastext) &&
+        Objects.equals(this.aggregationtypeastext, wlwagetransferdef.aggregationtypeastext) &&
+        Objects.equals(this.transfertypeastext, wlwagetransferdef.transfertypeastext) &&
+        Objects.equals(this.scriptpackagename, wlwagetransferdef.scriptpackagename);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, description, defType, entryTypeID, transferType, aggregationType, fieldCode, correctionExpression, wageOperTypeIDExpr, absenceTypeIDExpr, sickBenefitTypeIDExpr, scriptPackageID, scriptLibrary, scriptFunction, docQueueID, disabledForClosing, closingValueType, fieldCodeLabel, fieldCodeName, defTypeAsText, aggregationTypeAsText, transferTypeAsText, scriptPackageName);
+    return Objects.hash(displayname, id, classid, objversion, description, deftype, entrytypeId, transfertype, aggregationtype, fieldcode, correctionexpression, wageopertypeidexpr, absencetypeidexpr, sickbenefittypeidexpr, scriptpackageId, scriptlibrary, scriptfunction, docqueueId, disabledforclosing, closingvaluetype, fieldcodelabel, fieldcodename, deftypeastext, aggregationtypeastext, transfertypeastext, scriptpackagename);
   }
 
   @Override
@@ -585,32 +630,32 @@ public class Wlwagetransferdef   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wlwagetransferdef {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    defType: ").append(toIndentedString(defType)).append("\n");
-    sb.append("    entryTypeID: ").append(toIndentedString(entryTypeID)).append("\n");
-    sb.append("    transferType: ").append(toIndentedString(transferType)).append("\n");
-    sb.append("    aggregationType: ").append(toIndentedString(aggregationType)).append("\n");
-    sb.append("    fieldCode: ").append(toIndentedString(fieldCode)).append("\n");
-    sb.append("    correctionExpression: ").append(toIndentedString(correctionExpression)).append("\n");
-    sb.append("    wageOperTypeIDExpr: ").append(toIndentedString(wageOperTypeIDExpr)).append("\n");
-    sb.append("    absenceTypeIDExpr: ").append(toIndentedString(absenceTypeIDExpr)).append("\n");
-    sb.append("    sickBenefitTypeIDExpr: ").append(toIndentedString(sickBenefitTypeIDExpr)).append("\n");
-    sb.append("    scriptPackageID: ").append(toIndentedString(scriptPackageID)).append("\n");
-    sb.append("    scriptLibrary: ").append(toIndentedString(scriptLibrary)).append("\n");
-    sb.append("    scriptFunction: ").append(toIndentedString(scriptFunction)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    disabledForClosing: ").append(toIndentedString(disabledForClosing)).append("\n");
-    sb.append("    closingValueType: ").append(toIndentedString(closingValueType)).append("\n");
-    sb.append("    fieldCodeLabel: ").append(toIndentedString(fieldCodeLabel)).append("\n");
-    sb.append("    fieldCodeName: ").append(toIndentedString(fieldCodeName)).append("\n");
-    sb.append("    defTypeAsText: ").append(toIndentedString(defTypeAsText)).append("\n");
-    sb.append("    aggregationTypeAsText: ").append(toIndentedString(aggregationTypeAsText)).append("\n");
-    sb.append("    transferTypeAsText: ").append(toIndentedString(transferTypeAsText)).append("\n");
-    sb.append("    scriptPackageName: ").append(toIndentedString(scriptPackageName)).append("\n");
+    sb.append("    deftype: ").append(toIndentedString(deftype)).append("\n");
+    sb.append("    entrytypeId: ").append(toIndentedString(entrytypeId)).append("\n");
+    sb.append("    transfertype: ").append(toIndentedString(transfertype)).append("\n");
+    sb.append("    aggregationtype: ").append(toIndentedString(aggregationtype)).append("\n");
+    sb.append("    fieldcode: ").append(toIndentedString(fieldcode)).append("\n");
+    sb.append("    correctionexpression: ").append(toIndentedString(correctionexpression)).append("\n");
+    sb.append("    wageopertypeidexpr: ").append(toIndentedString(wageopertypeidexpr)).append("\n");
+    sb.append("    absencetypeidexpr: ").append(toIndentedString(absencetypeidexpr)).append("\n");
+    sb.append("    sickbenefittypeidexpr: ").append(toIndentedString(sickbenefittypeidexpr)).append("\n");
+    sb.append("    scriptpackageId: ").append(toIndentedString(scriptpackageId)).append("\n");
+    sb.append("    scriptlibrary: ").append(toIndentedString(scriptlibrary)).append("\n");
+    sb.append("    scriptfunction: ").append(toIndentedString(scriptfunction)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    disabledforclosing: ").append(toIndentedString(disabledforclosing)).append("\n");
+    sb.append("    closingvaluetype: ").append(toIndentedString(closingvaluetype)).append("\n");
+    sb.append("    fieldcodelabel: ").append(toIndentedString(fieldcodelabel)).append("\n");
+    sb.append("    fieldcodename: ").append(toIndentedString(fieldcodename)).append("\n");
+    sb.append("    deftypeastext: ").append(toIndentedString(deftypeastext)).append("\n");
+    sb.append("    aggregationtypeastext: ").append(toIndentedString(aggregationtypeastext)).append("\n");
+    sb.append("    transfertypeastext: ").append(toIndentedString(transfertypeastext)).append("\n");
+    sb.append("    scriptpackagename: ").append(toIndentedString(scriptpackagename)).append("\n");
     sb.append("}");
     return sb.toString();
   }

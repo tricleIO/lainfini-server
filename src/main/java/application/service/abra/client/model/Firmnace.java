@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,150 +35,195 @@ import java.util.Objects;
 /**
  * Firmnace
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Firmnace   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Nace_ID")
-  private String naceID = null;
+  @SerializedName("nace_id")
+  private String naceId = null;
 
-  @SerializedName("NACEUpdateMode")
-  private Integer nACEUpdateMode = null;
+  @SerializedName("naceupdatemode")
+  private Integer naceupdatemode = null;
 
-  @SerializedName("ChangeDate$DATE")
-  private DateTime changeDateDATE = null;
+  @SerializedName("changedate$date")
+  private DateTime changedatedate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Firma [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Firma [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Firmnace posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Firmnace displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Firmnace naceID(String naceID) {
-    this.naceID = naceID;
+  public Firmnace id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * NACE kód; ID objektu NACE kód [persistentní položka]
-   * @return naceID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "NACE kód; ID objektu NACE kód [persistentní položka]")
-  public String getNaceID() {
-    return naceID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setNaceID(String naceID) {
-    this.naceID = naceID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Firmnace nACEUpdateMode(Integer nACEUpdateMode) {
-    this.nACEUpdateMode = nACEUpdateMode;
+  public Firmnace classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Způsob akt. [persistentní položka]
-   * @return nACEUpdateMode
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Způsob akt. [persistentní položka]")
-  public Integer getNACEUpdateMode() {
-    return nACEUpdateMode;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setNACEUpdateMode(Integer nACEUpdateMode) {
-    this.nACEUpdateMode = nACEUpdateMode;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Firmnace changeDateDATE(DateTime changeDateDATE) {
-    this.changeDateDATE = changeDateDATE;
+  public Firmnace objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Datum akt. [persistentní položka]
-   * @return changeDateDATE
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Datum akt. [persistentní položka]")
-  public DateTime getChangeDateDATE() {
-    return changeDateDATE;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setChangeDateDATE(DateTime changeDateDATE) {
-    this.changeDateDATE = changeDateDATE;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Firmnace parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu firma [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu firma [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Firmnace posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Firmnace naceId(String naceId) {
+    this.naceId = naceId;
+    return this;
+  }
+
+   /**
+   * nace kód; id objektu nace kód [persistentní položka]
+   * @return naceId
+  **/
+  @ApiModelProperty(example = "null", value = "nace kód; id objektu nace kód [persistentní položka]")
+  public String getNaceId() {
+    return naceId;
+  }
+
+  public void setNaceId(String naceId) {
+    this.naceId = naceId;
+  }
+
+  public Firmnace naceupdatemode(Integer naceupdatemode) {
+    this.naceupdatemode = naceupdatemode;
+    return this;
+  }
+
+   /**
+   * způsob akt. [persistentní položka]
+   * @return naceupdatemode
+  **/
+  @ApiModelProperty(example = "null", value = "způsob akt. [persistentní položka]")
+  public Integer getNaceupdatemode() {
+    return naceupdatemode;
+  }
+
+  public void setNaceupdatemode(Integer naceupdatemode) {
+    this.naceupdatemode = naceupdatemode;
+  }
+
+  public Firmnace changedatedate(DateTime changedatedate) {
+    this.changedatedate = changedatedate;
+    return this;
+  }
+
+   /**
+   * datum akt. [persistentní položka]
+   * @return changedatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum akt. [persistentní položka]")
+  public DateTime getChangedatedate() {
+    return changedatedate;
+  }
+
+  public void setChangedatedate(DateTime changedatedate) {
+    this.changedatedate = changedatedate;
   }
 
 
@@ -191,20 +236,20 @@ public class Firmnace   {
       return false;
     }
     Firmnace firmnace = (Firmnace) o;
-    return Objects.equals(this.displayName, firmnace.displayName) &&
-        Objects.equals(this.ID, firmnace.ID) &&
-        Objects.equals(this.classID, firmnace.classID) &&
-        Objects.equals(this.objVersion, firmnace.objVersion) &&
-        Objects.equals(this.parentID, firmnace.parentID) &&
-        Objects.equals(this.posIndex, firmnace.posIndex) &&
-        Objects.equals(this.naceID, firmnace.naceID) &&
-        Objects.equals(this.nACEUpdateMode, firmnace.nACEUpdateMode) &&
-        Objects.equals(this.changeDateDATE, firmnace.changeDateDATE);
+    return Objects.equals(this.displayname, firmnace.displayname) &&
+        Objects.equals(this.id, firmnace.id) &&
+        Objects.equals(this.classid, firmnace.classid) &&
+        Objects.equals(this.objversion, firmnace.objversion) &&
+        Objects.equals(this.parentId, firmnace.parentId) &&
+        Objects.equals(this.posindex, firmnace.posindex) &&
+        Objects.equals(this.naceId, firmnace.naceId) &&
+        Objects.equals(this.naceupdatemode, firmnace.naceupdatemode) &&
+        Objects.equals(this.changedatedate, firmnace.changedatedate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, naceID, nACEUpdateMode, changeDateDATE);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, naceId, naceupdatemode, changedatedate);
   }
 
   @Override
@@ -212,15 +257,15 @@ public class Firmnace   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Firmnace {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    naceID: ").append(toIndentedString(naceID)).append("\n");
-    sb.append("    nACEUpdateMode: ").append(toIndentedString(nACEUpdateMode)).append("\n");
-    sb.append("    changeDateDATE: ").append(toIndentedString(changeDateDATE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    naceId: ").append(toIndentedString(naceId)).append("\n");
+    sb.append("    naceupdatemode: ").append(toIndentedString(naceupdatemode)).append("\n");
+    sb.append("    changedatedate: ").append(toIndentedString(changedatedate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,75 +35,111 @@ import java.util.Objects;
 /**
  * Devfutureversion
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Devfutureversion   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Product_ID")
-  private String productID = null;
+  @SerializedName("product_id")
+  private String productId = null;
 
-  @SerializedName("Date$DATE")
-  private DateTime dateDATE = null;
+  @SerializedName("date$date")
+  private DateTime datedate = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Priority")
+  @SerializedName("priority")
   private Integer priority = null;
 
-  @SerializedName("Generated")
+  @SerializedName("generated")
   private Boolean generated = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Devfutureversion displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Devfutureversion id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Devfutureversion classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Devfutureversion objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Devfutureversion hidden(Boolean hidden) {
@@ -112,10 +148,10 @@ public class Devfutureversion   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -130,10 +166,10 @@ public class Devfutureversion   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -142,40 +178,40 @@ public class Devfutureversion   {
     this.code = code;
   }
 
-  public Devfutureversion productID(String productID) {
-    this.productID = productID;
+  public Devfutureversion productId(String productId) {
+    this.productId = productId;
     return this;
   }
 
    /**
-   * Produkt; ID objektu Vývojový produkt [persistentní položka]
-   * @return productID
+   * produkt; id objektu vývojový produkt [persistentní položka]
+   * @return productId
   **/
-  @ApiModelProperty(example = "null", value = "Produkt; ID objektu Vývojový produkt [persistentní položka]")
-  public String getProductID() {
-    return productID;
+  @ApiModelProperty(example = "null", value = "produkt; id objektu vývojový produkt [persistentní položka]")
+  public String getProductId() {
+    return productId;
   }
 
-  public void setProductID(String productID) {
-    this.productID = productID;
+  public void setProductId(String productId) {
+    this.productId = productId;
   }
 
-  public Devfutureversion dateDATE(DateTime dateDATE) {
-    this.dateDATE = dateDATE;
+  public Devfutureversion datedate(DateTime datedate) {
+    this.datedate = datedate;
     return this;
   }
 
    /**
-   * Datum [persistentní položka]
-   * @return dateDATE
+   * datum [persistentní položka]
+   * @return datedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum [persistentní položka]")
-  public DateTime getDateDATE() {
-    return dateDATE;
+  @ApiModelProperty(example = "null", value = "datum [persistentní položka]")
+  public DateTime getDatedate() {
+    return datedate;
   }
 
-  public void setDateDATE(DateTime dateDATE) {
-    this.dateDATE = dateDATE;
+  public void setDatedate(DateTime datedate) {
+    this.datedate = datedate;
   }
 
   public Devfutureversion note(String note) {
@@ -184,10 +220,10 @@ public class Devfutureversion   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -202,10 +238,10 @@ public class Devfutureversion   {
   }
 
    /**
-   * Priorita [persistentní položka]
+   * priorita [persistentní položka]
    * @return priority
   **/
-  @ApiModelProperty(example = "null", value = "Priorita [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "priorita [persistentní položka]")
   public Integer getPriority() {
     return priority;
   }
@@ -220,10 +256,10 @@ public class Devfutureversion   {
   }
 
    /**
-   * Generováno [persistentní položka]
+   * generováno [persistentní položka]
    * @return generated
   **/
-  @ApiModelProperty(example = "null", value = "Generováno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "generováno [persistentní položka]")
   public Boolean getGenerated() {
     return generated;
   }
@@ -242,14 +278,14 @@ public class Devfutureversion   {
       return false;
     }
     Devfutureversion devfutureversion = (Devfutureversion) o;
-    return Objects.equals(this.displayName, devfutureversion.displayName) &&
-        Objects.equals(this.ID, devfutureversion.ID) &&
-        Objects.equals(this.classID, devfutureversion.classID) &&
-        Objects.equals(this.objVersion, devfutureversion.objVersion) &&
+    return Objects.equals(this.displayname, devfutureversion.displayname) &&
+        Objects.equals(this.id, devfutureversion.id) &&
+        Objects.equals(this.classid, devfutureversion.classid) &&
+        Objects.equals(this.objversion, devfutureversion.objversion) &&
         Objects.equals(this.hidden, devfutureversion.hidden) &&
         Objects.equals(this.code, devfutureversion.code) &&
-        Objects.equals(this.productID, devfutureversion.productID) &&
-        Objects.equals(this.dateDATE, devfutureversion.dateDATE) &&
+        Objects.equals(this.productId, devfutureversion.productId) &&
+        Objects.equals(this.datedate, devfutureversion.datedate) &&
         Objects.equals(this.note, devfutureversion.note) &&
         Objects.equals(this.priority, devfutureversion.priority) &&
         Objects.equals(this.generated, devfutureversion.generated);
@@ -257,7 +293,7 @@ public class Devfutureversion   {
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, productID, dateDATE, note, priority, generated);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, productId, datedate, note, priority, generated);
   }
 
   @Override
@@ -265,14 +301,14 @@ public class Devfutureversion   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Devfutureversion {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
-    sb.append("    productID: ").append(toIndentedString(productID)).append("\n");
-    sb.append("    dateDATE: ").append(toIndentedString(dateDATE)).append("\n");
+    sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
+    sb.append("    datedate: ").append(toIndentedString(datedate)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
     sb.append("    generated: ").append(toIndentedString(generated)).append("\n");

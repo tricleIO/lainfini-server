@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,63 +34,99 @@ import java.util.Objects;
 /**
  * Sitedata
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Sitedata   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Site")
+  @SerializedName("site")
   private String site = null;
 
-  @SerializedName("Address_ID")
-  private Sitedata addressID = null;
+  @SerializedName("address_id")
+  private Sitedata addressId = null;
 
-  @SerializedName("GeneratedOIDInfix")
-  private String generatedOIDInfix = null;
+  @SerializedName("generatedoidinfix")
+  private String generatedoidinfix = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Sitedata displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Sitedata id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Sitedata classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Sitedata objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Sitedata site(String site) {
@@ -99,10 +135,10 @@ public class Sitedata   {
   }
 
    /**
-   * Dat.hnízdo [persistentní položka]
+   * dat.hnízdo [persistentní položka]
    * @return site
   **/
-  @ApiModelProperty(example = "null", value = "Dat.hnízdo [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "dat.hnízdo [persistentní položka]")
   public String getSite() {
     return site;
   }
@@ -111,40 +147,40 @@ public class Sitedata   {
     this.site = site;
   }
 
-  public Sitedata addressID(Sitedata addressID) {
-    this.addressID = addressID;
+  public Sitedata addressId(Sitedata addressId) {
+    this.addressId = addressId;
     return this;
   }
 
    /**
-   * Get addressID
-   * @return addressID
+   * Get addressId
+   * @return addressId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Sitedata getAddressID() {
-    return addressID;
+  public Sitedata getAddressId() {
+    return addressId;
   }
 
-  public void setAddressID(Sitedata addressID) {
-    this.addressID = addressID;
+  public void setAddressId(Sitedata addressId) {
+    this.addressId = addressId;
   }
 
-  public Sitedata generatedOIDInfix(String generatedOIDInfix) {
-    this.generatedOIDInfix = generatedOIDInfix;
+  public Sitedata generatedoidinfix(String generatedoidinfix) {
+    this.generatedoidinfix = generatedoidinfix;
     return this;
   }
 
    /**
-   * OID infix [persistentní položka]
-   * @return generatedOIDInfix
+   * oid infix [persistentní položka]
+   * @return generatedoidinfix
   **/
-  @ApiModelProperty(example = "null", value = "OID infix [persistentní položka]")
-  public String getGeneratedOIDInfix() {
-    return generatedOIDInfix;
+  @ApiModelProperty(example = "null", value = "oid infix [persistentní položka]")
+  public String getGeneratedoidinfix() {
+    return generatedoidinfix;
   }
 
-  public void setGeneratedOIDInfix(String generatedOIDInfix) {
-    this.generatedOIDInfix = generatedOIDInfix;
+  public void setGeneratedoidinfix(String generatedoidinfix) {
+    this.generatedoidinfix = generatedoidinfix;
   }
 
 
@@ -157,18 +193,18 @@ public class Sitedata   {
       return false;
     }
     Sitedata sitedata = (Sitedata) o;
-    return Objects.equals(this.displayName, sitedata.displayName) &&
-        Objects.equals(this.ID, sitedata.ID) &&
-        Objects.equals(this.classID, sitedata.classID) &&
-        Objects.equals(this.objVersion, sitedata.objVersion) &&
+    return Objects.equals(this.displayname, sitedata.displayname) &&
+        Objects.equals(this.id, sitedata.id) &&
+        Objects.equals(this.classid, sitedata.classid) &&
+        Objects.equals(this.objversion, sitedata.objversion) &&
         Objects.equals(this.site, sitedata.site) &&
-        Objects.equals(this.addressID, sitedata.addressID) &&
-        Objects.equals(this.generatedOIDInfix, sitedata.generatedOIDInfix);
+        Objects.equals(this.addressId, sitedata.addressId) &&
+        Objects.equals(this.generatedoidinfix, sitedata.generatedoidinfix);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, site, addressID, generatedOIDInfix);
+    return Objects.hash(displayname, id, classid, objversion, site, addressId, generatedoidinfix);
   }
 
   @Override
@@ -176,13 +212,13 @@ public class Sitedata   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Sitedata {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    site: ").append(toIndentedString(site)).append("\n");
-    sb.append("    addressID: ").append(toIndentedString(addressID)).append("\n");
-    sb.append("    generatedOIDInfix: ").append(toIndentedString(generatedOIDInfix)).append("\n");
+    sb.append("    addressId: ").append(toIndentedString(addressId)).append("\n");
+    sb.append("    generatedoidinfix: ").append(toIndentedString(generatedoidinfix)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,108 +34,153 @@ import java.util.Objects;
 /**
  * Possummareddocumentstoredocument
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Possummareddocumentstoredocument   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Document_ID")
-  private String documentID = null;
+  @SerializedName("document_id")
+  private String documentId = null;
 
-  @SerializedName("DocumentType")
-  private String documentType = null;
+  @SerializedName("documenttype")
+  private String documenttype = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Souhrnný pokladní doklad [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Souhrnný pokladní doklad [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Possummareddocumentstoredocument documentID(String documentID) {
-    this.documentID = documentID;
+  public Possummareddocumentstoredocument displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Skladový doklad; ID objektu Skladový doklad [persistentní položka]
-   * @return documentID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Skladový doklad; ID objektu Skladový doklad [persistentní položka]")
-  public String getDocumentID() {
-    return documentID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDocumentID(String documentID) {
-    this.documentID = documentID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Possummareddocumentstoredocument documentType(String documentType) {
-    this.documentType = documentType;
+  public Possummareddocumentstoredocument id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Typ dokladu [persistentní položka]
-   * @return documentType
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Typ dokladu [persistentní položka]")
-  public String getDocumentType() {
-    return documentType;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDocumentType(String documentType) {
-    this.documentType = documentType;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Possummareddocumentstoredocument classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Possummareddocumentstoredocument objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Possummareddocumentstoredocument parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu souhrnný pokladní doklad [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu souhrnný pokladní doklad [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Possummareddocumentstoredocument documentId(String documentId) {
+    this.documentId = documentId;
+    return this;
+  }
+
+   /**
+   * skladový doklad; id objektu skladový doklad [persistentní položka]
+   * @return documentId
+  **/
+  @ApiModelProperty(example = "null", value = "skladový doklad; id objektu skladový doklad [persistentní položka]")
+  public String getDocumentId() {
+    return documentId;
+  }
+
+  public void setDocumentId(String documentId) {
+    this.documentId = documentId;
+  }
+
+  public Possummareddocumentstoredocument documenttype(String documenttype) {
+    this.documenttype = documenttype;
+    return this;
+  }
+
+   /**
+   * typ dokladu [persistentní položka]
+   * @return documenttype
+  **/
+  @ApiModelProperty(example = "null", value = "typ dokladu [persistentní položka]")
+  public String getDocumenttype() {
+    return documenttype;
+  }
+
+  public void setDocumenttype(String documenttype) {
+    this.documenttype = documenttype;
   }
 
 
@@ -148,18 +193,18 @@ public class Possummareddocumentstoredocument   {
       return false;
     }
     Possummareddocumentstoredocument possummareddocumentstoredocument = (Possummareddocumentstoredocument) o;
-    return Objects.equals(this.displayName, possummareddocumentstoredocument.displayName) &&
-        Objects.equals(this.ID, possummareddocumentstoredocument.ID) &&
-        Objects.equals(this.classID, possummareddocumentstoredocument.classID) &&
-        Objects.equals(this.objVersion, possummareddocumentstoredocument.objVersion) &&
-        Objects.equals(this.parentID, possummareddocumentstoredocument.parentID) &&
-        Objects.equals(this.documentID, possummareddocumentstoredocument.documentID) &&
-        Objects.equals(this.documentType, possummareddocumentstoredocument.documentType);
+    return Objects.equals(this.displayname, possummareddocumentstoredocument.displayname) &&
+        Objects.equals(this.id, possummareddocumentstoredocument.id) &&
+        Objects.equals(this.classid, possummareddocumentstoredocument.classid) &&
+        Objects.equals(this.objversion, possummareddocumentstoredocument.objversion) &&
+        Objects.equals(this.parentId, possummareddocumentstoredocument.parentId) &&
+        Objects.equals(this.documentId, possummareddocumentstoredocument.documentId) &&
+        Objects.equals(this.documenttype, possummareddocumentstoredocument.documenttype);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, documentID, documentType);
+    return Objects.hash(displayname, id, classid, objversion, parentId, documentId, documenttype);
   }
 
   @Override
@@ -167,13 +212,13 @@ public class Possummareddocumentstoredocument   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Possummareddocumentstoredocument {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    documentID: ").append(toIndentedString(documentID)).append("\n");
-    sb.append("    documentType: ").append(toIndentedString(documentType)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    documentId: ").append(toIndentedString(documentId)).append("\n");
+    sb.append("    documenttype: ").append(toIndentedString(documenttype)).append("\n");
     sb.append("}");
     return sb.toString();
   }

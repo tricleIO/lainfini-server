@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,117 +35,162 @@ import java.util.Objects;
 /**
  * Securityroleexcludedtime
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Securityroleexcludedtime   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("DateFrom$DATE")
-  private DateTime dateFromDATE = null;
+  @SerializedName("datefrom$date")
+  private DateTime datefromdate = null;
 
-  @SerializedName("DateTo$DATE")
-  private DateTime dateToDATE = null;
+  @SerializedName("dateto$date")
+  private DateTime datetodate = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("TimeFromAsString")
-  private String timeFromAsString = null;
+  @SerializedName("timefromasstring")
+  private String timefromasstring = null;
 
-  @SerializedName("TimeToAsString")
-  private String timeToAsString = null;
+  @SerializedName("timetoasstring")
+  private String timetoasstring = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Role [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Role [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Securityroleexcludedtime dateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public Securityroleexcludedtime displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Začátek [persistentní položka]
-   * @return dateFromDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Začátek [persistentní položka]")
-  public DateTime getDateFromDATE() {
-    return dateFromDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Securityroleexcludedtime dateToDATE(DateTime dateToDATE) {
-    this.dateToDATE = dateToDATE;
+  public Securityroleexcludedtime id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Konec [persistentní položka]
-   * @return dateToDATE
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Konec [persistentní položka]")
-  public DateTime getDateToDATE() {
-    return dateToDATE;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDateToDATE(DateTime dateToDATE) {
-    this.dateToDATE = dateToDATE;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Securityroleexcludedtime classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Securityroleexcludedtime objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Securityroleexcludedtime parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu role [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu role [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Securityroleexcludedtime datefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
+    return this;
+  }
+
+   /**
+   * začátek [persistentní položka]
+   * @return datefromdate
+  **/
+  @ApiModelProperty(example = "null", value = "začátek [persistentní položka]")
+  public DateTime getDatefromdate() {
+    return datefromdate;
+  }
+
+  public void setDatefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
+  }
+
+  public Securityroleexcludedtime datetodate(DateTime datetodate) {
+    this.datetodate = datetodate;
+    return this;
+  }
+
+   /**
+   * konec [persistentní položka]
+   * @return datetodate
+  **/
+  @ApiModelProperty(example = "null", value = "konec [persistentní položka]")
+  public DateTime getDatetodate() {
+    return datetodate;
+  }
+
+  public void setDatetodate(DateTime datetodate) {
+    this.datetodate = datetodate;
   }
 
   public Securityroleexcludedtime description(String description) {
@@ -154,10 +199,10 @@ public class Securityroleexcludedtime   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -166,40 +211,40 @@ public class Securityroleexcludedtime   {
     this.description = description;
   }
 
-  public Securityroleexcludedtime timeFromAsString(String timeFromAsString) {
-    this.timeFromAsString = timeFromAsString;
+  public Securityroleexcludedtime timefromasstring(String timefromasstring) {
+    this.timefromasstring = timefromasstring;
     return this;
   }
 
    /**
-   * Hodina od
-   * @return timeFromAsString
+   * hodina od
+   * @return timefromasstring
   **/
-  @ApiModelProperty(example = "null", value = "Hodina od")
-  public String getTimeFromAsString() {
-    return timeFromAsString;
+  @ApiModelProperty(example = "null", value = "hodina od")
+  public String getTimefromasstring() {
+    return timefromasstring;
   }
 
-  public void setTimeFromAsString(String timeFromAsString) {
-    this.timeFromAsString = timeFromAsString;
+  public void setTimefromasstring(String timefromasstring) {
+    this.timefromasstring = timefromasstring;
   }
 
-  public Securityroleexcludedtime timeToAsString(String timeToAsString) {
-    this.timeToAsString = timeToAsString;
+  public Securityroleexcludedtime timetoasstring(String timetoasstring) {
+    this.timetoasstring = timetoasstring;
     return this;
   }
 
    /**
-   * Hodina do
-   * @return timeToAsString
+   * hodina do
+   * @return timetoasstring
   **/
-  @ApiModelProperty(example = "null", value = "Hodina do")
-  public String getTimeToAsString() {
-    return timeToAsString;
+  @ApiModelProperty(example = "null", value = "hodina do")
+  public String getTimetoasstring() {
+    return timetoasstring;
   }
 
-  public void setTimeToAsString(String timeToAsString) {
-    this.timeToAsString = timeToAsString;
+  public void setTimetoasstring(String timetoasstring) {
+    this.timetoasstring = timetoasstring;
   }
 
 
@@ -212,21 +257,21 @@ public class Securityroleexcludedtime   {
       return false;
     }
     Securityroleexcludedtime securityroleexcludedtime = (Securityroleexcludedtime) o;
-    return Objects.equals(this.displayName, securityroleexcludedtime.displayName) &&
-        Objects.equals(this.ID, securityroleexcludedtime.ID) &&
-        Objects.equals(this.classID, securityroleexcludedtime.classID) &&
-        Objects.equals(this.objVersion, securityroleexcludedtime.objVersion) &&
-        Objects.equals(this.parentID, securityroleexcludedtime.parentID) &&
-        Objects.equals(this.dateFromDATE, securityroleexcludedtime.dateFromDATE) &&
-        Objects.equals(this.dateToDATE, securityroleexcludedtime.dateToDATE) &&
+    return Objects.equals(this.displayname, securityroleexcludedtime.displayname) &&
+        Objects.equals(this.id, securityroleexcludedtime.id) &&
+        Objects.equals(this.classid, securityroleexcludedtime.classid) &&
+        Objects.equals(this.objversion, securityroleexcludedtime.objversion) &&
+        Objects.equals(this.parentId, securityroleexcludedtime.parentId) &&
+        Objects.equals(this.datefromdate, securityroleexcludedtime.datefromdate) &&
+        Objects.equals(this.datetodate, securityroleexcludedtime.datetodate) &&
         Objects.equals(this.description, securityroleexcludedtime.description) &&
-        Objects.equals(this.timeFromAsString, securityroleexcludedtime.timeFromAsString) &&
-        Objects.equals(this.timeToAsString, securityroleexcludedtime.timeToAsString);
+        Objects.equals(this.timefromasstring, securityroleexcludedtime.timefromasstring) &&
+        Objects.equals(this.timetoasstring, securityroleexcludedtime.timetoasstring);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, dateFromDATE, dateToDATE, description, timeFromAsString, timeToAsString);
+    return Objects.hash(displayname, id, classid, objversion, parentId, datefromdate, datetodate, description, timefromasstring, timetoasstring);
   }
 
   @Override
@@ -234,16 +279,16 @@ public class Securityroleexcludedtime   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Securityroleexcludedtime {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    dateFromDATE: ").append(toIndentedString(dateFromDATE)).append("\n");
-    sb.append("    dateToDATE: ").append(toIndentedString(dateToDATE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    datefromdate: ").append(toIndentedString(datefromdate)).append("\n");
+    sb.append("    datetodate: ").append(toIndentedString(datetodate)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    timeFromAsString: ").append(toIndentedString(timeFromAsString)).append("\n");
-    sb.append("    timeToAsString: ").append(toIndentedString(timeToAsString)).append("\n");
+    sb.append("    timefromasstring: ").append(toIndentedString(timefromasstring)).append("\n");
+    sb.append("    timetoasstring: ").append(toIndentedString(timetoasstring)).append("\n");
     sb.append("}");
     return sb.toString();
   }

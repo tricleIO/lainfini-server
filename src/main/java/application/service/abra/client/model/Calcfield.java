@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,186 +35,222 @@ import java.util.Objects;
 /**
  * Calcfield
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Calcfield   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("CalcChart_ID")
-  private String calcChartID = null;
+  @SerializedName("calcchart_id")
+  private String calcchartId = null;
 
-  @SerializedName("CalcFieldCode")
-  private Integer calcFieldCode = null;
+  @SerializedName("calcfieldcode")
+  private Integer calcfieldcode = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-  @SerializedName("ValidFrom$DATE")
-  private DateTime validFromDATE = null;
+  @SerializedName("validfrom$date")
+  private DateTime validfromdate = null;
 
-  @SerializedName("Supress")
+  @SerializedName("supress")
   private Boolean supress = null;
 
-  @SerializedName("FieldCode")
-  private Integer fieldCode = null;
+  @SerializedName("fieldcode")
+  private Integer fieldcode = null;
 
-  @SerializedName("CLSID")
-  private String CLSID = null;
+  @SerializedName("clsid")
+  private String clsid = null;
 
-  @SerializedName("Condition")
+  @SerializedName("condition")
   private String condition = null;
 
-  @SerializedName("Correction")
+  @SerializedName("correction")
   private String correction = null;
 
-  @SerializedName("UserCondition")
-  private String userCondition = null;
+  @SerializedName("usercondition")
+  private String usercondition = null;
 
-  @SerializedName("UserCorrection")
-  private String userCorrection = null;
+  @SerializedName("usercorrection")
+  private String usercorrection = null;
 
-  @SerializedName("SupressExpression")
-  private Integer supressExpression = null;
+  @SerializedName("supressexpression")
+  private Integer supressexpression = null;
 
-  @SerializedName("FieldName")
-  private String fieldName = null;
+  @SerializedName("fieldname")
+  private String fieldname = null;
 
-  @SerializedName("FieldLabel")
-  private String fieldLabel = null;
+  @SerializedName("fieldlabel")
+  private String fieldlabel = null;
 
-  @SerializedName("SupressExpressionText")
-  private String supressExpressionText = null;
+  @SerializedName("supressexpressiontext")
+  private String supressexpressiontext = null;
 
-  @SerializedName("CalcFieldName")
-  private String calcFieldName = null;
+  @SerializedName("calcfieldname")
+  private String calcfieldname = null;
 
-  @SerializedName("CalcFieldLabel")
-  private String calcFieldLabel = null;
+  @SerializedName("calcfieldlabel")
+  private String calcfieldlabel = null;
 
-  @SerializedName("CLSIDName")
-  private String cLSIDName = null;
+  @SerializedName("clsidname")
+  private String clsidname = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Calcfield createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Calcfield displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Calcfield correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Calcfield id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Calcfield calcChartID(String calcChartID) {
-    this.calcChartID = calcChartID;
+  public Calcfield classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Výpočtové schéma; ID objektu Výpočtové schéma [persistentní položka]
-   * @return calcChartID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Výpočtové schéma; ID objektu Výpočtové schéma [persistentní položka]")
-  public String getCalcChartID() {
-    return calcChartID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setCalcChartID(String calcChartID) {
-    this.calcChartID = calcChartID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Calcfield calcFieldCode(Integer calcFieldCode) {
-    this.calcFieldCode = calcFieldCode;
+  public Calcfield objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Součet [persistentní položka]
-   * @return calcFieldCode
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Součet [persistentní položka]")
-  public Integer getCalcFieldCode() {
-    return calcFieldCode;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setCalcFieldCode(Integer calcFieldCode) {
-    this.calcFieldCode = calcFieldCode;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Calcfield createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+    return this;
+  }
+
+   /**
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
+  }
+
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Calcfield correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+    return this;
+  }
+
+   /**
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
+  }
+
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+  }
+
+  public Calcfield calcchartId(String calcchartId) {
+    this.calcchartId = calcchartId;
+    return this;
+  }
+
+   /**
+   * výpočtové schéma; id objektu výpočtové schéma [persistentní položka]
+   * @return calcchartId
+  **/
+  @ApiModelProperty(example = "null", value = "výpočtové schéma; id objektu výpočtové schéma [persistentní položka]")
+  public String getCalcchartId() {
+    return calcchartId;
+  }
+
+  public void setCalcchartId(String calcchartId) {
+    this.calcchartId = calcchartId;
+  }
+
+  public Calcfield calcfieldcode(Integer calcfieldcode) {
+    this.calcfieldcode = calcfieldcode;
+    return this;
+  }
+
+   /**
+   * součet [persistentní položka]
+   * @return calcfieldcode
+  **/
+  @ApiModelProperty(example = "null", value = "součet [persistentní položka]")
+  public Integer getCalcfieldcode() {
+    return calcfieldcode;
+  }
+
+  public void setCalcfieldcode(Integer calcfieldcode) {
+    this.calcfieldcode = calcfieldcode;
   }
 
   public Calcfield system(Boolean system) {
@@ -223,10 +259,10 @@ public class Calcfield   {
   }
 
    /**
-   * Syst. [persistentní položka]
+   * syst. [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Syst. [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "syst. [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -235,22 +271,22 @@ public class Calcfield   {
     this.system = system;
   }
 
-  public Calcfield validFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public Calcfield validfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
     return this;
   }
 
    /**
-   * Platí od [persistentní položka]
-   * @return validFromDATE
+   * platí od [persistentní položka]
+   * @return validfromdate
   **/
-  @ApiModelProperty(example = "null", value = "Platí od [persistentní položka]")
-  public DateTime getValidFromDATE() {
-    return validFromDATE;
+  @ApiModelProperty(example = "null", value = "platí od [persistentní položka]")
+  public DateTime getValidfromdate() {
+    return validfromdate;
   }
 
-  public void setValidFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public void setValidfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
   }
 
   public Calcfield supress(Boolean supress) {
@@ -259,10 +295,10 @@ public class Calcfield   {
   }
 
    /**
-   * Potlačit [persistentní položka]
+   * potlačit [persistentní položka]
    * @return supress
   **/
-  @ApiModelProperty(example = "null", value = "Potlačit [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "potlačit [persistentní položka]")
   public Boolean getSupress() {
     return supress;
   }
@@ -271,40 +307,40 @@ public class Calcfield   {
     this.supress = supress;
   }
 
-  public Calcfield fieldCode(Integer fieldCode) {
-    this.fieldCode = fieldCode;
+  public Calcfield fieldcode(Integer fieldcode) {
+    this.fieldcode = fieldcode;
     return this;
   }
 
    /**
-   * Sčítanec [persistentní položka]
-   * @return fieldCode
+   * sčítanec [persistentní položka]
+   * @return fieldcode
   **/
-  @ApiModelProperty(example = "null", value = "Sčítanec [persistentní položka]")
-  public Integer getFieldCode() {
-    return fieldCode;
+  @ApiModelProperty(example = "null", value = "sčítanec [persistentní položka]")
+  public Integer getFieldcode() {
+    return fieldcode;
   }
 
-  public void setFieldCode(Integer fieldCode) {
-    this.fieldCode = fieldCode;
+  public void setFieldcode(Integer fieldcode) {
+    this.fieldcode = fieldcode;
   }
 
-  public Calcfield CLSID(String CLSID) {
-    this.CLSID = CLSID;
+  public Calcfield clsid(String clsid) {
+    this.clsid = clsid;
     return this;
   }
 
    /**
-   * Třída sčítance [persistentní položka]
-   * @return CLSID
+   * třída sčítance [persistentní položka]
+   * @return clsid
   **/
-  @ApiModelProperty(example = "null", value = "Třída sčítance [persistentní položka]")
-  public String getCLSID() {
-    return CLSID;
+  @ApiModelProperty(example = "null", value = "třída sčítance [persistentní položka]")
+  public String getClsid() {
+    return clsid;
   }
 
-  public void setCLSID(String CLSID) {
-    this.CLSID = CLSID;
+  public void setClsid(String clsid) {
+    this.clsid = clsid;
   }
 
   public Calcfield condition(String condition) {
@@ -313,10 +349,10 @@ public class Calcfield   {
   }
 
    /**
-   * Podmínka [persistentní položka]
+   * podmínka [persistentní položka]
    * @return condition
   **/
-  @ApiModelProperty(example = "null", value = "Podmínka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "podmínka [persistentní položka]")
   public String getCondition() {
     return condition;
   }
@@ -331,10 +367,10 @@ public class Calcfield   {
   }
 
    /**
-   * Korekce [persistentní položka]
+   * korekce [persistentní položka]
    * @return correction
   **/
-  @ApiModelProperty(example = "null", value = "Korekce [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "korekce [persistentní položka]")
   public String getCorrection() {
     return correction;
   }
@@ -343,166 +379,166 @@ public class Calcfield   {
     this.correction = correction;
   }
 
-  public Calcfield userCondition(String userCondition) {
-    this.userCondition = userCondition;
+  public Calcfield usercondition(String usercondition) {
+    this.usercondition = usercondition;
     return this;
   }
 
    /**
-   * Uživ. podmínka
-   * @return userCondition
+   * uživ. podmínka
+   * @return usercondition
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. podmínka")
-  public String getUserCondition() {
-    return userCondition;
+  @ApiModelProperty(example = "null", value = "uživ. podmínka")
+  public String getUsercondition() {
+    return usercondition;
   }
 
-  public void setUserCondition(String userCondition) {
-    this.userCondition = userCondition;
+  public void setUsercondition(String usercondition) {
+    this.usercondition = usercondition;
   }
 
-  public Calcfield userCorrection(String userCorrection) {
-    this.userCorrection = userCorrection;
+  public Calcfield usercorrection(String usercorrection) {
+    this.usercorrection = usercorrection;
     return this;
   }
 
    /**
-   * Uživ. korekce
-   * @return userCorrection
+   * uživ. korekce
+   * @return usercorrection
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. korekce")
-  public String getUserCorrection() {
-    return userCorrection;
+  @ApiModelProperty(example = "null", value = "uživ. korekce")
+  public String getUsercorrection() {
+    return usercorrection;
   }
 
-  public void setUserCorrection(String userCorrection) {
-    this.userCorrection = userCorrection;
+  public void setUsercorrection(String usercorrection) {
+    this.usercorrection = usercorrection;
   }
 
-  public Calcfield supressExpression(Integer supressExpression) {
-    this.supressExpression = supressExpression;
+  public Calcfield supressexpression(Integer supressexpression) {
+    this.supressexpression = supressexpression;
     return this;
   }
 
    /**
-   * Použít výraz
-   * @return supressExpression
+   * použít výraz
+   * @return supressexpression
   **/
-  @ApiModelProperty(example = "null", value = "Použít výraz")
-  public Integer getSupressExpression() {
-    return supressExpression;
+  @ApiModelProperty(example = "null", value = "použít výraz")
+  public Integer getSupressexpression() {
+    return supressexpression;
   }
 
-  public void setSupressExpression(Integer supressExpression) {
-    this.supressExpression = supressExpression;
+  public void setSupressexpression(Integer supressexpression) {
+    this.supressexpression = supressexpression;
   }
 
-  public Calcfield fieldName(String fieldName) {
-    this.fieldName = fieldName;
+  public Calcfield fieldname(String fieldname) {
+    this.fieldname = fieldname;
     return this;
   }
 
    /**
-   * Název položky-sčítanec
-   * @return fieldName
+   * název položky-sčítanec
+   * @return fieldname
   **/
-  @ApiModelProperty(example = "null", value = "Název položky-sčítanec")
-  public String getFieldName() {
-    return fieldName;
+  @ApiModelProperty(example = "null", value = "název položky-sčítanec")
+  public String getFieldname() {
+    return fieldname;
   }
 
-  public void setFieldName(String fieldName) {
-    this.fieldName = fieldName;
+  public void setFieldname(String fieldname) {
+    this.fieldname = fieldname;
   }
 
-  public Calcfield fieldLabel(String fieldLabel) {
-    this.fieldLabel = fieldLabel;
+  public Calcfield fieldlabel(String fieldlabel) {
+    this.fieldlabel = fieldlabel;
     return this;
   }
 
    /**
-   * Popis položky-sčítanec
-   * @return fieldLabel
+   * popis položky-sčítanec
+   * @return fieldlabel
   **/
-  @ApiModelProperty(example = "null", value = "Popis položky-sčítanec")
-  public String getFieldLabel() {
-    return fieldLabel;
+  @ApiModelProperty(example = "null", value = "popis položky-sčítanec")
+  public String getFieldlabel() {
+    return fieldlabel;
   }
 
-  public void setFieldLabel(String fieldLabel) {
-    this.fieldLabel = fieldLabel;
+  public void setFieldlabel(String fieldlabel) {
+    this.fieldlabel = fieldlabel;
   }
 
-  public Calcfield supressExpressionText(String supressExpressionText) {
-    this.supressExpressionText = supressExpressionText;
+  public Calcfield supressexpressiontext(String supressexpressiontext) {
+    this.supressexpressiontext = supressexpressiontext;
     return this;
   }
 
    /**
-   * Použít výraz
-   * @return supressExpressionText
+   * použít výraz
+   * @return supressexpressiontext
   **/
-  @ApiModelProperty(example = "null", value = "Použít výraz")
-  public String getSupressExpressionText() {
-    return supressExpressionText;
+  @ApiModelProperty(example = "null", value = "použít výraz")
+  public String getSupressexpressiontext() {
+    return supressexpressiontext;
   }
 
-  public void setSupressExpressionText(String supressExpressionText) {
-    this.supressExpressionText = supressExpressionText;
+  public void setSupressexpressiontext(String supressexpressiontext) {
+    this.supressexpressiontext = supressexpressiontext;
   }
 
-  public Calcfield calcFieldName(String calcFieldName) {
-    this.calcFieldName = calcFieldName;
+  public Calcfield calcfieldname(String calcfieldname) {
+    this.calcfieldname = calcfieldname;
     return this;
   }
 
    /**
-   * Název položky-součet
-   * @return calcFieldName
+   * název položky-součet
+   * @return calcfieldname
   **/
-  @ApiModelProperty(example = "null", value = "Název položky-součet")
-  public String getCalcFieldName() {
-    return calcFieldName;
+  @ApiModelProperty(example = "null", value = "název položky-součet")
+  public String getCalcfieldname() {
+    return calcfieldname;
   }
 
-  public void setCalcFieldName(String calcFieldName) {
-    this.calcFieldName = calcFieldName;
+  public void setCalcfieldname(String calcfieldname) {
+    this.calcfieldname = calcfieldname;
   }
 
-  public Calcfield calcFieldLabel(String calcFieldLabel) {
-    this.calcFieldLabel = calcFieldLabel;
+  public Calcfield calcfieldlabel(String calcfieldlabel) {
+    this.calcfieldlabel = calcfieldlabel;
     return this;
   }
 
    /**
-   * Popis položky-součet
-   * @return calcFieldLabel
+   * popis položky-součet
+   * @return calcfieldlabel
   **/
-  @ApiModelProperty(example = "null", value = "Popis položky-součet")
-  public String getCalcFieldLabel() {
-    return calcFieldLabel;
+  @ApiModelProperty(example = "null", value = "popis položky-součet")
+  public String getCalcfieldlabel() {
+    return calcfieldlabel;
   }
 
-  public void setCalcFieldLabel(String calcFieldLabel) {
-    this.calcFieldLabel = calcFieldLabel;
+  public void setCalcfieldlabel(String calcfieldlabel) {
+    this.calcfieldlabel = calcfieldlabel;
   }
 
-  public Calcfield cLSIDName(String cLSIDName) {
-    this.cLSIDName = cLSIDName;
+  public Calcfield clsidname(String clsidname) {
+    this.clsidname = clsidname;
     return this;
   }
 
    /**
-   * Třída sčítance
-   * @return cLSIDName
+   * třída sčítance
+   * @return clsidname
   **/
-  @ApiModelProperty(example = "null", value = "Třída sčítance")
-  public String getCLSIDName() {
-    return cLSIDName;
+  @ApiModelProperty(example = "null", value = "třída sčítance")
+  public String getClsidname() {
+    return clsidname;
   }
 
-  public void setCLSIDName(String cLSIDName) {
-    this.cLSIDName = cLSIDName;
+  public void setClsidname(String clsidname) {
+    this.clsidname = clsidname;
   }
 
 
@@ -515,35 +551,35 @@ public class Calcfield   {
       return false;
     }
     Calcfield calcfield = (Calcfield) o;
-    return Objects.equals(this.displayName, calcfield.displayName) &&
-        Objects.equals(this.ID, calcfield.ID) &&
-        Objects.equals(this.classID, calcfield.classID) &&
-        Objects.equals(this.objVersion, calcfield.objVersion) &&
-        Objects.equals(this.createdByID, calcfield.createdByID) &&
-        Objects.equals(this.correctedByID, calcfield.correctedByID) &&
-        Objects.equals(this.calcChartID, calcfield.calcChartID) &&
-        Objects.equals(this.calcFieldCode, calcfield.calcFieldCode) &&
+    return Objects.equals(this.displayname, calcfield.displayname) &&
+        Objects.equals(this.id, calcfield.id) &&
+        Objects.equals(this.classid, calcfield.classid) &&
+        Objects.equals(this.objversion, calcfield.objversion) &&
+        Objects.equals(this.createdbyId, calcfield.createdbyId) &&
+        Objects.equals(this.correctedbyId, calcfield.correctedbyId) &&
+        Objects.equals(this.calcchartId, calcfield.calcchartId) &&
+        Objects.equals(this.calcfieldcode, calcfield.calcfieldcode) &&
         Objects.equals(this.system, calcfield.system) &&
-        Objects.equals(this.validFromDATE, calcfield.validFromDATE) &&
+        Objects.equals(this.validfromdate, calcfield.validfromdate) &&
         Objects.equals(this.supress, calcfield.supress) &&
-        Objects.equals(this.fieldCode, calcfield.fieldCode) &&
-        Objects.equals(this.CLSID, calcfield.CLSID) &&
+        Objects.equals(this.fieldcode, calcfield.fieldcode) &&
+        Objects.equals(this.clsid, calcfield.clsid) &&
         Objects.equals(this.condition, calcfield.condition) &&
         Objects.equals(this.correction, calcfield.correction) &&
-        Objects.equals(this.userCondition, calcfield.userCondition) &&
-        Objects.equals(this.userCorrection, calcfield.userCorrection) &&
-        Objects.equals(this.supressExpression, calcfield.supressExpression) &&
-        Objects.equals(this.fieldName, calcfield.fieldName) &&
-        Objects.equals(this.fieldLabel, calcfield.fieldLabel) &&
-        Objects.equals(this.supressExpressionText, calcfield.supressExpressionText) &&
-        Objects.equals(this.calcFieldName, calcfield.calcFieldName) &&
-        Objects.equals(this.calcFieldLabel, calcfield.calcFieldLabel) &&
-        Objects.equals(this.cLSIDName, calcfield.cLSIDName);
+        Objects.equals(this.usercondition, calcfield.usercondition) &&
+        Objects.equals(this.usercorrection, calcfield.usercorrection) &&
+        Objects.equals(this.supressexpression, calcfield.supressexpression) &&
+        Objects.equals(this.fieldname, calcfield.fieldname) &&
+        Objects.equals(this.fieldlabel, calcfield.fieldlabel) &&
+        Objects.equals(this.supressexpressiontext, calcfield.supressexpressiontext) &&
+        Objects.equals(this.calcfieldname, calcfield.calcfieldname) &&
+        Objects.equals(this.calcfieldlabel, calcfield.calcfieldlabel) &&
+        Objects.equals(this.clsidname, calcfield.clsidname);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, createdByID, correctedByID, calcChartID, calcFieldCode, system, validFromDATE, supress, fieldCode, CLSID, condition, correction, userCondition, userCorrection, supressExpression, fieldName, fieldLabel, supressExpressionText, calcFieldName, calcFieldLabel, cLSIDName);
+    return Objects.hash(displayname, id, classid, objversion, createdbyId, correctedbyId, calcchartId, calcfieldcode, system, validfromdate, supress, fieldcode, clsid, condition, correction, usercondition, usercorrection, supressexpression, fieldname, fieldlabel, supressexpressiontext, calcfieldname, calcfieldlabel, clsidname);
   }
 
   @Override
@@ -551,30 +587,30 @@ public class Calcfield   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Calcfield {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    calcChartID: ").append(toIndentedString(calcChartID)).append("\n");
-    sb.append("    calcFieldCode: ").append(toIndentedString(calcFieldCode)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    calcchartId: ").append(toIndentedString(calcchartId)).append("\n");
+    sb.append("    calcfieldcode: ").append(toIndentedString(calcfieldcode)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
-    sb.append("    validFromDATE: ").append(toIndentedString(validFromDATE)).append("\n");
+    sb.append("    validfromdate: ").append(toIndentedString(validfromdate)).append("\n");
     sb.append("    supress: ").append(toIndentedString(supress)).append("\n");
-    sb.append("    fieldCode: ").append(toIndentedString(fieldCode)).append("\n");
-    sb.append("    CLSID: ").append(toIndentedString(CLSID)).append("\n");
+    sb.append("    fieldcode: ").append(toIndentedString(fieldcode)).append("\n");
+    sb.append("    clsid: ").append(toIndentedString(clsid)).append("\n");
     sb.append("    condition: ").append(toIndentedString(condition)).append("\n");
     sb.append("    correction: ").append(toIndentedString(correction)).append("\n");
-    sb.append("    userCondition: ").append(toIndentedString(userCondition)).append("\n");
-    sb.append("    userCorrection: ").append(toIndentedString(userCorrection)).append("\n");
-    sb.append("    supressExpression: ").append(toIndentedString(supressExpression)).append("\n");
-    sb.append("    fieldName: ").append(toIndentedString(fieldName)).append("\n");
-    sb.append("    fieldLabel: ").append(toIndentedString(fieldLabel)).append("\n");
-    sb.append("    supressExpressionText: ").append(toIndentedString(supressExpressionText)).append("\n");
-    sb.append("    calcFieldName: ").append(toIndentedString(calcFieldName)).append("\n");
-    sb.append("    calcFieldLabel: ").append(toIndentedString(calcFieldLabel)).append("\n");
-    sb.append("    cLSIDName: ").append(toIndentedString(cLSIDName)).append("\n");
+    sb.append("    usercondition: ").append(toIndentedString(usercondition)).append("\n");
+    sb.append("    usercorrection: ").append(toIndentedString(usercorrection)).append("\n");
+    sb.append("    supressexpression: ").append(toIndentedString(supressexpression)).append("\n");
+    sb.append("    fieldname: ").append(toIndentedString(fieldname)).append("\n");
+    sb.append("    fieldlabel: ").append(toIndentedString(fieldlabel)).append("\n");
+    sb.append("    supressexpressiontext: ").append(toIndentedString(supressexpressiontext)).append("\n");
+    sb.append("    calcfieldname: ").append(toIndentedString(calcfieldname)).append("\n");
+    sb.append("    calcfieldlabel: ").append(toIndentedString(calcfieldlabel)).append("\n");
+    sb.append("    clsidname: ").append(toIndentedString(clsidname)).append("\n");
     sb.append("}");
     return sb.toString();
   }

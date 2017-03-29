@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,291 +37,327 @@ import java.util.Objects;
 /**
  * Workingrelation
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Workingrelation   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("DateOfChange")
-  private DateTime dateOfChange = null;
+  @SerializedName("dateofchange")
+  private DateTime dateofchange = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("Employee_ID")
-  private String employeeID = null;
+  @SerializedName("employee_id")
+  private String employeeId = null;
 
-  @SerializedName("EmployPattern_ID")
-  private String employPatternID = null;
+  @SerializedName("employpattern_id")
+  private String employpatternId = null;
 
-  @SerializedName("DateOfBegin$DATE")
-  private DateTime dateOfBeginDATE = null;
+  @SerializedName("dateofbegin$date")
+  private DateTime dateofbegindate = null;
 
-  @SerializedName("RealDateOfBegin$DATE")
-  private DateTime realDateOfBeginDATE = null;
+  @SerializedName("realdateofbegin$date")
+  private DateTime realdateofbegindate = null;
 
-  @SerializedName("TypeOfBegin_ID")
-  private String typeOfBeginID = null;
+  @SerializedName("typeofbegin_id")
+  private String typeofbeginId = null;
 
-  @SerializedName("TrialPeriod")
-  private Integer trialPeriod = null;
+  @SerializedName("trialperiod")
+  private Integer trialperiod = null;
 
-  @SerializedName("TrialPeriodDays")
-  private Integer trialPeriodDays = null;
+  @SerializedName("trialperioddays")
+  private Integer trialperioddays = null;
 
-  @SerializedName("DateOfEnd$DATE")
-  private DateTime dateOfEndDATE = null;
+  @SerializedName("dateofend$date")
+  private DateTime dateofenddate = null;
 
-  @SerializedName("TypeOfEnd_ID")
-  private String typeOfEndID = null;
+  @SerializedName("typeofend_id")
+  private String typeofendId = null;
 
-  @SerializedName("ReasonOfEnd")
-  private String reasonOfEnd = null;
+  @SerializedName("reasonofend")
+  private String reasonofend = null;
 
-  @SerializedName("NaturalWage")
-  private List<Naturalwage> naturalWage = new ArrayList<Naturalwage>();
+  @SerializedName("naturalwage")
+  private List<Naturalwage> naturalwage = new ArrayList<Naturalwage>();
 
-  @SerializedName("SocInsurancePeriods")
-  private List<Insuranceperiod> socInsurancePeriods = new ArrayList<Insuranceperiod>();
+  @SerializedName("socinsuranceperiods")
+  private List<Insuranceperiod> socinsuranceperiods = new ArrayList<Insuranceperiod>();
 
-  @SerializedName("HealthInsurancePeriods")
-  private List<Insuranceperiod> healthInsurancePeriods = new ArrayList<Insuranceperiod>();
+  @SerializedName("healthinsuranceperiods")
+  private List<Insuranceperiod> healthinsuranceperiods = new ArrayList<Insuranceperiod>();
 
-  @SerializedName("JobPosition_ID")
-  private String jobPositionID = null;
+  @SerializedName("jobposition_id")
+  private String jobpositionId = null;
 
-  @SerializedName("JobClasification_ID")
-  private String jobClasificationID = null;
+  @SerializedName("jobclasification_id")
+  private String jobclasificationId = null;
 
-  @SerializedName("Manager")
+  @SerializedName("manager")
   private Boolean manager = null;
 
-  @SerializedName("RetInsOnly")
-  private Boolean retInsOnly = null;
+  @SerializedName("retinsonly")
+  private Boolean retinsonly = null;
 
-  @SerializedName("PartTimeJob")
-  private Boolean partTimeJob = null;
+  @SerializedName("parttimejob")
+  private Boolean parttimejob = null;
 
-  @SerializedName("WorkingPlaceRise")
-  private Integer workingPlaceRise = null;
+  @SerializedName("workingplacerise")
+  private Integer workingplacerise = null;
 
-  @SerializedName("WorkingPlaceExpiry")
-  private Integer workingPlaceExpiry = null;
+  @SerializedName("workingplaceexpiry")
+  private Integer workingplaceexpiry = null;
 
-  @SerializedName("WorkingPlaceRiseCode")
-  private Integer workingPlaceRiseCode = null;
+  @SerializedName("workingplacerisecode")
+  private Integer workingplacerisecode = null;
 
-  @SerializedName("WorkingPlaceExpiryCode")
-  private Integer workingPlaceExpiryCode = null;
+  @SerializedName("workingplaceexpirycode")
+  private Integer workingplaceexpirycode = null;
 
-  @SerializedName("PersonalNumber")
-  private String personalNumber = null;
+  @SerializedName("personalnumber")
+  private String personalnumber = null;
 
-  @SerializedName("NumPersonalNumber")
-  private Integer numPersonalNumber = null;
+  @SerializedName("numpersonalnumber")
+  private Integer numpersonalnumber = null;
 
-  @SerializedName("EmployeeName")
-  private String employeeName = null;
+  @SerializedName("employeename")
+  private String employeename = null;
 
-  @SerializedName("PatternCode")
-  private String patternCode = null;
+  @SerializedName("patterncode")
+  private String patterncode = null;
 
-  @SerializedName("PatternName")
-  private String patternName = null;
+  @SerializedName("patternname")
+  private String patternname = null;
 
-  @SerializedName("ShortName")
-  private String shortName = null;
+  @SerializedName("shortname")
+  private String shortname = null;
 
-  @SerializedName("RecordedStatus")
-  private Boolean recordedStatus = null;
+  @SerializedName("recordedstatus")
+  private Boolean recordedstatus = null;
 
-  @SerializedName("CalcWage")
-  private Boolean calcWage = null;
+  @SerializedName("calcwage")
+  private Boolean calcwage = null;
 
-  @SerializedName("CalcInsurance")
-  private Boolean calcInsurance = null;
+  @SerializedName("calcinsurance")
+  private Boolean calcinsurance = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("Category")
+  @SerializedName("category")
   private Integer category = null;
 
-  @SerializedName("WorkPosition_ID")
-  private String workPositionID = null;
+  @SerializedName("workposition_id")
+  private String workpositionId = null;
 
-  @SerializedName("Superior_ID")
-  private String superiorID = null;
+  @SerializedName("superior_id")
+  private String superiorId = null;
 
-  @SerializedName("TypeOfWage")
-  private Integer typeOfWage = null;
+  @SerializedName("typeofwage")
+  private Integer typeofwage = null;
 
-  @SerializedName("WageAmount")
-  private Double wageAmount = null;
+  @SerializedName("wageamount")
+  private Double wageamount = null;
 
-  @SerializedName("AlertCompensation")
-  private Double alertCompensation = null;
+  @SerializedName("alertcompensation")
+  private Double alertcompensation = null;
 
-  @SerializedName("ShiftCalendar_ID")
-  private String shiftCalendarID = null;
+  @SerializedName("shiftcalendar_id")
+  private String shiftcalendarId = null;
 
-  @SerializedName("CalcWorkingHours")
-  private Boolean calcWorkingHours = null;
+  @SerializedName("calcworkinghours")
+  private Boolean calcworkinghours = null;
 
-  @SerializedName("CalcOverTime")
-  private Boolean calcOverTime = null;
+  @SerializedName("calcovertime")
+  private Boolean calcovertime = null;
 
-  @SerializedName("CalcMinimalWage")
-  private Boolean calcMinimalWage = null;
+  @SerializedName("calcminimalwage")
+  private Boolean calcminimalwage = null;
 
-  @SerializedName("NoticeDate$DATE")
-  private DateTime noticeDateDATE = null;
+  @SerializedName("noticedate$date")
+  private DateTime noticedatedate = null;
 
-  @SerializedName("NoticePeriod")
-  private Integer noticePeriod = null;
+  @SerializedName("noticeperiod")
+  private Integer noticeperiod = null;
 
-  @SerializedName("WorkingTime")
-  private String workingTime = null;
+  @SerializedName("workingtime")
+  private String workingtime = null;
 
-  @SerializedName("WorkingDestination")
-  private String workingDestination = null;
+  @SerializedName("workingdestination")
+  private String workingdestination = null;
 
-  @SerializedName("WorkingPlace")
-  private String workingPlace = null;
+  @SerializedName("workingplace")
+  private String workingplace = null;
 
-  @SerializedName("TypeOfPeriod")
-  private Integer typeOfPeriod = null;
+  @SerializedName("typeofperiod")
+  private Integer typeofperiod = null;
 
-  @SerializedName("TypeOfActivity")
-  private Integer typeOfActivity = null;
+  @SerializedName("typeofactivity")
+  private Integer typeofactivity = null;
 
-  @SerializedName("ExternIdentification")
-  private String externIdentification = null;
+  @SerializedName("externidentification")
+  private String externidentification = null;
 
-  @SerializedName("CalDaysOfAbsences")
-  private Boolean calDaysOfAbsences = null;
+  @SerializedName("caldaysofabsences")
+  private Boolean caldaysofabsences = null;
 
-  @SerializedName("HazardousWork")
-  private Boolean hazardousWork = null;
+  @SerializedName("hazardouswork")
+  private Boolean hazardouswork = null;
 
-  @SerializedName("TypeOfPeriod_Text")
-  private String typeOfPeriodText = null;
+  @SerializedName("typeofperiod_text")
+  private String typeofperiodText = null;
 
-  @SerializedName("TypeOfActivity_Text")
-  private String typeOfActivityText = null;
+  @SerializedName("typeofactivity_text")
+  private String typeofactivityText = null;
 
-  @SerializedName("IndividualWeekDuty")
-  private Double individualWeekDuty = null;
+  @SerializedName("individualweekduty")
+  private Double individualweekduty = null;
 
-  @SerializedName("RetReportCode_ID")
-  private String retReportCodeID = null;
+  @SerializedName("retreportcode_id")
+  private String retreportcodeId = null;
 
-  @SerializedName("FeastMode")
-  private Integer feastMode = null;
+  @SerializedName("feastmode")
+  private Integer feastmode = null;
 
-  @SerializedName("WageClaim")
-  private Double wageClaim = null;
+  @SerializedName("wageclaim")
+  private Double wageclaim = null;
 
-  @SerializedName("JobGroup_ID")
-  private String jobGroupID = null;
+  @SerializedName("jobgroup_id")
+  private String jobgroupId = null;
 
-  @SerializedName("DateOfChangeEdit")
-  private DateTime dateOfChangeEdit = null;
+  @SerializedName("dateofchangeedit")
+  private DateTime dateofchangeedit = null;
 
-  @SerializedName("JobClasificationISCO_ID")
-  private String jobClasificationISCOID = null;
+  @SerializedName("jobclasificationisco_id")
+  private String jobclasificationiscoId = null;
 
-  @SerializedName("IrregularIncome")
-  private Boolean irregularIncome = null;
+  @SerializedName("irregularincome")
+  private Boolean irregularincome = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("BrigadierNotPayPensIns")
-  private Boolean brigadierNotPayPensIns = null;
+  @SerializedName("brigadiernotpaypensins")
+  private Boolean brigadiernotpaypensins = null;
 
-  @SerializedName("LongUnemployed")
-  private Boolean longUnemployed = null;
+  @SerializedName("longunemployed")
+  private Boolean longunemployed = null;
 
-  @SerializedName("FromLowDevDistrict")
-  private Boolean fromLowDevDistrict = null;
+  @SerializedName("fromlowdevdistrict")
+  private Boolean fromlowdevdistrict = null;
 
-  @SerializedName("ApplyHICountOff")
-  private Boolean applyHICountOff = null;
+  @SerializedName("applyhicountoff")
+  private Boolean applyhicountoff = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-  public Workingrelation dateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public Workingrelation displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum změny
-   * @return dateOfChange
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum změny")
-  public DateTime getDateOfChange() {
-    return dateOfChange;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  public Workingrelation id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Workingrelation dateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+    return this;
+  }
+
+   /**
+   * datum změny
+   * @return dateofchange
+  **/
+  @ApiModelProperty(example = "null", value = "datum změny")
+  public DateTime getDateofchange() {
+    return dateofchange;
+  }
+
+  public void setDateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+  }
+
+  public Workingrelation classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Workingrelation objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Workingrelation hidden(Boolean hidden) {
@@ -330,10 +366,10 @@ public class Workingrelation   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -342,325 +378,325 @@ public class Workingrelation   {
     this.hidden = hidden;
   }
 
-  public Workingrelation createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Workingrelation createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Workingrelation correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Workingrelation correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Workingrelation employeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public Workingrelation employeeId(String employeeId) {
+    this.employeeId = employeeId;
     return this;
   }
 
    /**
-   * Zaměstnanec; ID objektu Zaměstnanec [persistentní položka]
-   * @return employeeID
+   * zaměstnanec; id objektu zaměstnanec [persistentní položka]
+   * @return employeeId
   **/
-  @ApiModelProperty(example = "null", value = "Zaměstnanec; ID objektu Zaměstnanec [persistentní položka]")
-  public String getEmployeeID() {
-    return employeeID;
+  @ApiModelProperty(example = "null", value = "zaměstnanec; id objektu zaměstnanec [persistentní položka]")
+  public String getEmployeeId() {
+    return employeeId;
   }
 
-  public void setEmployeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public void setEmployeeId(String employeeId) {
+    this.employeeId = employeeId;
   }
 
-  public Workingrelation employPatternID(String employPatternID) {
-    this.employPatternID = employPatternID;
+  public Workingrelation employpatternId(String employpatternId) {
+    this.employpatternId = employpatternId;
     return this;
   }
 
    /**
-   * Druh pracovního poměru; ID objektu Druh pracovního poměru [persistentní položka]
-   * @return employPatternID
+   * druh pracovního poměru; id objektu druh pracovního poměru [persistentní položka]
+   * @return employpatternId
   **/
-  @ApiModelProperty(example = "null", value = "Druh pracovního poměru; ID objektu Druh pracovního poměru [persistentní položka]")
-  public String getEmployPatternID() {
-    return employPatternID;
+  @ApiModelProperty(example = "null", value = "druh pracovního poměru; id objektu druh pracovního poměru [persistentní položka]")
+  public String getEmploypatternId() {
+    return employpatternId;
   }
 
-  public void setEmployPatternID(String employPatternID) {
-    this.employPatternID = employPatternID;
+  public void setEmploypatternId(String employpatternId) {
+    this.employpatternId = employpatternId;
   }
 
-  public Workingrelation dateOfBeginDATE(DateTime dateOfBeginDATE) {
-    this.dateOfBeginDATE = dateOfBeginDATE;
+  public Workingrelation dateofbegindate(DateTime dateofbegindate) {
+    this.dateofbegindate = dateofbegindate;
     return this;
   }
 
    /**
-   * Nástup [persistentní položka]
-   * @return dateOfBeginDATE
+   * nástup [persistentní položka]
+   * @return dateofbegindate
   **/
-  @ApiModelProperty(example = "null", value = "Nástup [persistentní položka]")
-  public DateTime getDateOfBeginDATE() {
-    return dateOfBeginDATE;
+  @ApiModelProperty(example = "null", value = "nástup [persistentní položka]")
+  public DateTime getDateofbegindate() {
+    return dateofbegindate;
   }
 
-  public void setDateOfBeginDATE(DateTime dateOfBeginDATE) {
-    this.dateOfBeginDATE = dateOfBeginDATE;
+  public void setDateofbegindate(DateTime dateofbegindate) {
+    this.dateofbegindate = dateofbegindate;
   }
 
-  public Workingrelation realDateOfBeginDATE(DateTime realDateOfBeginDATE) {
-    this.realDateOfBeginDATE = realDateOfBeginDATE;
+  public Workingrelation realdateofbegindate(DateTime realdateofbegindate) {
+    this.realdateofbegindate = realdateofbegindate;
     return this;
   }
 
    /**
-   * Skutečný nástup [persistentní položka]
-   * @return realDateOfBeginDATE
+   * skutečný nástup [persistentní položka]
+   * @return realdateofbegindate
   **/
-  @ApiModelProperty(example = "null", value = "Skutečný nástup [persistentní položka]")
-  public DateTime getRealDateOfBeginDATE() {
-    return realDateOfBeginDATE;
+  @ApiModelProperty(example = "null", value = "skutečný nástup [persistentní položka]")
+  public DateTime getRealdateofbegindate() {
+    return realdateofbegindate;
   }
 
-  public void setRealDateOfBeginDATE(DateTime realDateOfBeginDATE) {
-    this.realDateOfBeginDATE = realDateOfBeginDATE;
+  public void setRealdateofbegindate(DateTime realdateofbegindate) {
+    this.realdateofbegindate = realdateofbegindate;
   }
 
-  public Workingrelation typeOfBeginID(String typeOfBeginID) {
-    this.typeOfBeginID = typeOfBeginID;
+  public Workingrelation typeofbeginId(String typeofbeginId) {
+    this.typeofbeginId = typeofbeginId;
     return this;
   }
 
    /**
-   * Způsob vzniku; ID objektu Způsob začátku pracovního poměru [persistentní položka]
-   * @return typeOfBeginID
+   * způsob vzniku; id objektu způsob začátku pracovního poměru [persistentní položka]
+   * @return typeofbeginId
   **/
-  @ApiModelProperty(example = "null", value = "Způsob vzniku; ID objektu Způsob začátku pracovního poměru [persistentní položka]")
-  public String getTypeOfBeginID() {
-    return typeOfBeginID;
+  @ApiModelProperty(example = "null", value = "způsob vzniku; id objektu způsob začátku pracovního poměru [persistentní položka]")
+  public String getTypeofbeginId() {
+    return typeofbeginId;
   }
 
-  public void setTypeOfBeginID(String typeOfBeginID) {
-    this.typeOfBeginID = typeOfBeginID;
+  public void setTypeofbeginId(String typeofbeginId) {
+    this.typeofbeginId = typeofbeginId;
   }
 
-  public Workingrelation trialPeriod(Integer trialPeriod) {
-    this.trialPeriod = trialPeriod;
+  public Workingrelation trialperiod(Integer trialperiod) {
+    this.trialperiod = trialperiod;
     return this;
   }
 
    /**
-   * Zkušební doba - měsíce [persistentní položka]
-   * @return trialPeriod
+   * zkušební doba - měsíce [persistentní položka]
+   * @return trialperiod
   **/
-  @ApiModelProperty(example = "null", value = "Zkušební doba - měsíce [persistentní položka]")
-  public Integer getTrialPeriod() {
-    return trialPeriod;
+  @ApiModelProperty(example = "null", value = "zkušební doba - měsíce [persistentní položka]")
+  public Integer getTrialperiod() {
+    return trialperiod;
   }
 
-  public void setTrialPeriod(Integer trialPeriod) {
-    this.trialPeriod = trialPeriod;
+  public void setTrialperiod(Integer trialperiod) {
+    this.trialperiod = trialperiod;
   }
 
-  public Workingrelation trialPeriodDays(Integer trialPeriodDays) {
-    this.trialPeriodDays = trialPeriodDays;
+  public Workingrelation trialperioddays(Integer trialperioddays) {
+    this.trialperioddays = trialperioddays;
     return this;
   }
 
    /**
-   * Zkušební doba - dny [persistentní položka]
-   * @return trialPeriodDays
+   * zkušební doba - dny [persistentní položka]
+   * @return trialperioddays
   **/
-  @ApiModelProperty(example = "null", value = "Zkušební doba - dny [persistentní položka]")
-  public Integer getTrialPeriodDays() {
-    return trialPeriodDays;
+  @ApiModelProperty(example = "null", value = "zkušební doba - dny [persistentní položka]")
+  public Integer getTrialperioddays() {
+    return trialperioddays;
   }
 
-  public void setTrialPeriodDays(Integer trialPeriodDays) {
-    this.trialPeriodDays = trialPeriodDays;
+  public void setTrialperioddays(Integer trialperioddays) {
+    this.trialperioddays = trialperioddays;
   }
 
-  public Workingrelation dateOfEndDATE(DateTime dateOfEndDATE) {
-    this.dateOfEndDATE = dateOfEndDATE;
+  public Workingrelation dateofenddate(DateTime dateofenddate) {
+    this.dateofenddate = dateofenddate;
     return this;
   }
 
    /**
-   * Výstup [persistentní položka]
-   * @return dateOfEndDATE
+   * výstup [persistentní položka]
+   * @return dateofenddate
   **/
-  @ApiModelProperty(example = "null", value = "Výstup [persistentní položka]")
-  public DateTime getDateOfEndDATE() {
-    return dateOfEndDATE;
+  @ApiModelProperty(example = "null", value = "výstup [persistentní položka]")
+  public DateTime getDateofenddate() {
+    return dateofenddate;
   }
 
-  public void setDateOfEndDATE(DateTime dateOfEndDATE) {
-    this.dateOfEndDATE = dateOfEndDATE;
+  public void setDateofenddate(DateTime dateofenddate) {
+    this.dateofenddate = dateofenddate;
   }
 
-  public Workingrelation typeOfEndID(String typeOfEndID) {
-    this.typeOfEndID = typeOfEndID;
+  public Workingrelation typeofendId(String typeofendId) {
+    this.typeofendId = typeofendId;
     return this;
   }
 
    /**
-   * Způsob ukončení; ID objektu Způsob ukončení pracovního poměru [persistentní položka]
-   * @return typeOfEndID
+   * způsob ukončení; id objektu způsob ukončení pracovního poměru [persistentní položka]
+   * @return typeofendId
   **/
-  @ApiModelProperty(example = "null", value = "Způsob ukončení; ID objektu Způsob ukončení pracovního poměru [persistentní položka]")
-  public String getTypeOfEndID() {
-    return typeOfEndID;
+  @ApiModelProperty(example = "null", value = "způsob ukončení; id objektu způsob ukončení pracovního poměru [persistentní položka]")
+  public String getTypeofendId() {
+    return typeofendId;
   }
 
-  public void setTypeOfEndID(String typeOfEndID) {
-    this.typeOfEndID = typeOfEndID;
+  public void setTypeofendId(String typeofendId) {
+    this.typeofendId = typeofendId;
   }
 
-  public Workingrelation reasonOfEnd(String reasonOfEnd) {
-    this.reasonOfEnd = reasonOfEnd;
+  public Workingrelation reasonofend(String reasonofend) {
+    this.reasonofend = reasonofend;
     return this;
   }
 
    /**
-   * Důvod ukončení [persistentní položka]
-   * @return reasonOfEnd
+   * důvod ukončení [persistentní položka]
+   * @return reasonofend
   **/
-  @ApiModelProperty(example = "null", value = "Důvod ukončení [persistentní položka]")
-  public String getReasonOfEnd() {
-    return reasonOfEnd;
+  @ApiModelProperty(example = "null", value = "důvod ukončení [persistentní položka]")
+  public String getReasonofend() {
+    return reasonofend;
   }
 
-  public void setReasonOfEnd(String reasonOfEnd) {
-    this.reasonOfEnd = reasonOfEnd;
+  public void setReasonofend(String reasonofend) {
+    this.reasonofend = reasonofend;
   }
 
-  public Workingrelation naturalWage(List<Naturalwage> naturalWage) {
-    this.naturalWage = naturalWage;
+  public Workingrelation naturalwage(List<Naturalwage> naturalwage) {
+    this.naturalwage = naturalwage;
     return this;
   }
 
-  public Workingrelation addNaturalWageItem(Naturalwage naturalWageItem) {
-    this.naturalWage.add(naturalWageItem);
+  public Workingrelation addNaturalwageItem(Naturalwage naturalwageItem) {
+    this.naturalwage.add(naturalwageItem);
     return this;
   }
 
    /**
-   * Naturální příjem; kolekce BO Naturální příjem [nepersistentní položka]
-   * @return naturalWage
+   * naturální příjem; kolekce bo naturální příjem [nepersistentní položka]
+   * @return naturalwage
   **/
-  @ApiModelProperty(example = "null", value = "Naturální příjem; kolekce BO Naturální příjem [nepersistentní položka]")
-  public List<Naturalwage> getNaturalWage() {
-    return naturalWage;
+  @ApiModelProperty(example = "null", value = "naturální příjem; kolekce bo naturální příjem [nepersistentní položka]")
+  public List<Naturalwage> getNaturalwage() {
+    return naturalwage;
   }
 
-  public void setNaturalWage(List<Naturalwage> naturalWage) {
-    this.naturalWage = naturalWage;
+  public void setNaturalwage(List<Naturalwage> naturalwage) {
+    this.naturalwage = naturalwage;
   }
 
-  public Workingrelation socInsurancePeriods(List<Insuranceperiod> socInsurancePeriods) {
-    this.socInsurancePeriods = socInsurancePeriods;
+  public Workingrelation socinsuranceperiods(List<Insuranceperiod> socinsuranceperiods) {
+    this.socinsuranceperiods = socinsuranceperiods;
     return this;
   }
 
-  public Workingrelation addSocInsurancePeriodsItem(Insuranceperiod socInsurancePeriodsItem) {
-    this.socInsurancePeriods.add(socInsurancePeriodsItem);
+  public Workingrelation addSocinsuranceperiodsItem(Insuranceperiod socinsuranceperiodsItem) {
+    this.socinsuranceperiods.add(socinsuranceperiodsItem);
     return this;
   }
 
    /**
-   * Průběh soc.pojištění; kolekce BO Období pojištění [nepersistentní položka]
-   * @return socInsurancePeriods
+   * průběh soc.pojištění; kolekce bo období pojištění [nepersistentní položka]
+   * @return socinsuranceperiods
   **/
-  @ApiModelProperty(example = "null", value = "Průběh soc.pojištění; kolekce BO Období pojištění [nepersistentní položka]")
-  public List<Insuranceperiod> getSocInsurancePeriods() {
-    return socInsurancePeriods;
+  @ApiModelProperty(example = "null", value = "průběh soc.pojištění; kolekce bo období pojištění [nepersistentní položka]")
+  public List<Insuranceperiod> getSocinsuranceperiods() {
+    return socinsuranceperiods;
   }
 
-  public void setSocInsurancePeriods(List<Insuranceperiod> socInsurancePeriods) {
-    this.socInsurancePeriods = socInsurancePeriods;
+  public void setSocinsuranceperiods(List<Insuranceperiod> socinsuranceperiods) {
+    this.socinsuranceperiods = socinsuranceperiods;
   }
 
-  public Workingrelation healthInsurancePeriods(List<Insuranceperiod> healthInsurancePeriods) {
-    this.healthInsurancePeriods = healthInsurancePeriods;
+  public Workingrelation healthinsuranceperiods(List<Insuranceperiod> healthinsuranceperiods) {
+    this.healthinsuranceperiods = healthinsuranceperiods;
     return this;
   }
 
-  public Workingrelation addHealthInsurancePeriodsItem(Insuranceperiod healthInsurancePeriodsItem) {
-    this.healthInsurancePeriods.add(healthInsurancePeriodsItem);
-    return this;
-  }
-
-   /**
-   * Průběh zdrav.pojištění; kolekce BO Období pojištění [nepersistentní položka]
-   * @return healthInsurancePeriods
-  **/
-  @ApiModelProperty(example = "null", value = "Průběh zdrav.pojištění; kolekce BO Období pojištění [nepersistentní položka]")
-  public List<Insuranceperiod> getHealthInsurancePeriods() {
-    return healthInsurancePeriods;
-  }
-
-  public void setHealthInsurancePeriods(List<Insuranceperiod> healthInsurancePeriods) {
-    this.healthInsurancePeriods = healthInsurancePeriods;
-  }
-
-  public Workingrelation jobPositionID(String jobPositionID) {
-    this.jobPositionID = jobPositionID;
+  public Workingrelation addHealthinsuranceperiodsItem(Insuranceperiod healthinsuranceperiodsItem) {
+    this.healthinsuranceperiods.add(healthinsuranceperiodsItem);
     return this;
   }
 
    /**
-   * Postavení v zam.; ID objektu Postavení v zaměstnání [persistentní položka]
-   * @return jobPositionID
+   * průběh zdrav.pojištění; kolekce bo období pojištění [nepersistentní položka]
+   * @return healthinsuranceperiods
   **/
-  @ApiModelProperty(example = "null", value = "Postavení v zam.; ID objektu Postavení v zaměstnání [persistentní položka]")
-  public String getJobPositionID() {
-    return jobPositionID;
+  @ApiModelProperty(example = "null", value = "průběh zdrav.pojištění; kolekce bo období pojištění [nepersistentní položka]")
+  public List<Insuranceperiod> getHealthinsuranceperiods() {
+    return healthinsuranceperiods;
   }
 
-  public void setJobPositionID(String jobPositionID) {
-    this.jobPositionID = jobPositionID;
+  public void setHealthinsuranceperiods(List<Insuranceperiod> healthinsuranceperiods) {
+    this.healthinsuranceperiods = healthinsuranceperiods;
   }
 
-  public Workingrelation jobClasificationID(String jobClasificationID) {
-    this.jobClasificationID = jobClasificationID;
+  public Workingrelation jobpositionId(String jobpositionId) {
+    this.jobpositionId = jobpositionId;
     return this;
   }
 
    /**
-   * Klasifikace zam.; ID objektu Klasifikace zaměstnání [persistentní položka]
-   * @return jobClasificationID
+   * postavení v zam.; id objektu postavení v zaměstnání [persistentní položka]
+   * @return jobpositionId
   **/
-  @ApiModelProperty(example = "null", value = "Klasifikace zam.; ID objektu Klasifikace zaměstnání [persistentní položka]")
-  public String getJobClasificationID() {
-    return jobClasificationID;
+  @ApiModelProperty(example = "null", value = "postavení v zam.; id objektu postavení v zaměstnání [persistentní položka]")
+  public String getJobpositionId() {
+    return jobpositionId;
   }
 
-  public void setJobClasificationID(String jobClasificationID) {
-    this.jobClasificationID = jobClasificationID;
+  public void setJobpositionId(String jobpositionId) {
+    this.jobpositionId = jobpositionId;
+  }
+
+  public Workingrelation jobclasificationId(String jobclasificationId) {
+    this.jobclasificationId = jobclasificationId;
+    return this;
+  }
+
+   /**
+   * klasifikace zam.; id objektu klasifikace zaměstnání [persistentní položka]
+   * @return jobclasificationId
+  **/
+  @ApiModelProperty(example = "null", value = "klasifikace zam.; id objektu klasifikace zaměstnání [persistentní položka]")
+  public String getJobclasificationId() {
+    return jobclasificationId;
+  }
+
+  public void setJobclasificationId(String jobclasificationId) {
+    this.jobclasificationId = jobclasificationId;
   }
 
   public Workingrelation manager(Boolean manager) {
@@ -669,10 +705,10 @@ public class Workingrelation   {
   }
 
    /**
-   * Ved. prac. [persistentní položka]
+   * ved. prac. [persistentní položka]
    * @return manager
   **/
-  @ApiModelProperty(example = "null", value = "Ved. prac. [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "ved. prac. [persistentní položka]")
   public Boolean getManager() {
     return manager;
   }
@@ -681,301 +717,328 @@ public class Workingrelation   {
     this.manager = manager;
   }
 
-  public Workingrelation retInsOnly(Boolean retInsOnly) {
-    this.retInsOnly = retInsOnly;
+  public Workingrelation retinsonly(Boolean retinsonly) {
+    this.retinsonly = retinsonly;
     return this;
   }
 
    /**
-   * Platí jen DP [persistentní položka]
-   * @return retInsOnly
+   * platí jen dp [persistentní položka]
+   * @return retinsonly
   **/
-  @ApiModelProperty(example = "null", value = "Platí jen DP [persistentní položka]")
-  public Boolean getRetInsOnly() {
-    return retInsOnly;
+  @ApiModelProperty(example = "null", value = "platí jen dp [persistentní položka]")
+  public Boolean getRetinsonly() {
+    return retinsonly;
   }
 
-  public void setRetInsOnly(Boolean retInsOnly) {
-    this.retInsOnly = retInsOnly;
+  public void setRetinsonly(Boolean retinsonly) {
+    this.retinsonly = retinsonly;
   }
 
-  public Workingrelation partTimeJob(Boolean partTimeJob) {
-    this.partTimeJob = partTimeJob;
+  public Workingrelation parttimejob(Boolean parttimejob) {
+    this.parttimejob = parttimejob;
     return this;
   }
 
    /**
-   * Zaměstnání malého rozsahu [persistentní položka]
-   * @return partTimeJob
+   * zaměstnání malého rozsahu [persistentní položka]
+   * @return parttimejob
   **/
-  @ApiModelProperty(example = "null", value = "Zaměstnání malého rozsahu [persistentní položka]")
-  public Boolean getPartTimeJob() {
-    return partTimeJob;
+  @ApiModelProperty(example = "null", value = "zaměstnání malého rozsahu [persistentní položka]")
+  public Boolean getParttimejob() {
+    return parttimejob;
   }
 
-  public void setPartTimeJob(Boolean partTimeJob) {
-    this.partTimeJob = partTimeJob;
+  public void setParttimejob(Boolean parttimejob) {
+    this.parttimejob = parttimejob;
   }
 
-  public Workingrelation workingPlaceRise(Integer workingPlaceRise) {
-    this.workingPlaceRise = workingPlaceRise;
+  public Workingrelation workingplacerise(Integer workingplacerise) {
+    this.workingplacerise = workingplacerise;
     return this;
   }
 
    /**
-   * Kód vzniku pracovního místa [persistentní položka]
-   * @return workingPlaceRise
+   * kód vzniku pracovního místa [persistentní položka]
+   * @return workingplacerise
   **/
-  @ApiModelProperty(example = "null", value = "Kód vzniku pracovního místa [persistentní položka]")
-  public Integer getWorkingPlaceRise() {
-    return workingPlaceRise;
+  @ApiModelProperty(example = "null", value = "kód vzniku pracovního místa [persistentní položka]")
+  public Integer getWorkingplacerise() {
+    return workingplacerise;
   }
 
-  public void setWorkingPlaceRise(Integer workingPlaceRise) {
-    this.workingPlaceRise = workingPlaceRise;
+  public void setWorkingplacerise(Integer workingplacerise) {
+    this.workingplacerise = workingplacerise;
   }
 
-  public Workingrelation workingPlaceExpiry(Integer workingPlaceExpiry) {
-    this.workingPlaceExpiry = workingPlaceExpiry;
+  public Workingrelation workingplaceexpiry(Integer workingplaceexpiry) {
+    this.workingplaceexpiry = workingplaceexpiry;
     return this;
   }
 
    /**
-   * Kód zániku pracovního místa [persistentní položka]
-   * @return workingPlaceExpiry
+   * kód zániku pracovního místa [persistentní položka]
+   * @return workingplaceexpiry
   **/
-  @ApiModelProperty(example = "null", value = "Kód zániku pracovního místa [persistentní položka]")
-  public Integer getWorkingPlaceExpiry() {
-    return workingPlaceExpiry;
+  @ApiModelProperty(example = "null", value = "kód zániku pracovního místa [persistentní položka]")
+  public Integer getWorkingplaceexpiry() {
+    return workingplaceexpiry;
   }
 
-  public void setWorkingPlaceExpiry(Integer workingPlaceExpiry) {
-    this.workingPlaceExpiry = workingPlaceExpiry;
+  public void setWorkingplaceexpiry(Integer workingplaceexpiry) {
+    this.workingplaceexpiry = workingplaceexpiry;
   }
 
-   /**
-   * Kód vzniku pracovního místa
-   * @return workingPlaceRiseCode
-  **/
-  @ApiModelProperty(example = "null", value = "Kód vzniku pracovního místa")
-  public Integer getWorkingPlaceRiseCode() {
-    return workingPlaceRiseCode;
-  }
-
-   /**
-   * Kód zániku pracovního místa
-   * @return workingPlaceExpiryCode
-  **/
-  @ApiModelProperty(example = "null", value = "Kód zániku pracovního místa")
-  public Integer getWorkingPlaceExpiryCode() {
-    return workingPlaceExpiryCode;
-  }
-
-  public Workingrelation personalNumber(String personalNumber) {
-    this.personalNumber = personalNumber;
+  public Workingrelation workingplacerisecode(Integer workingplacerisecode) {
+    this.workingplacerisecode = workingplacerisecode;
     return this;
   }
 
    /**
-   * Os. číslo
-   * @return personalNumber
+   * kód vzniku pracovního místa
+   * @return workingplacerisecode
   **/
-  @ApiModelProperty(example = "null", value = "Os. číslo")
-  public String getPersonalNumber() {
-    return personalNumber;
+  @ApiModelProperty(example = "null", value = "kód vzniku pracovního místa")
+  public Integer getWorkingplacerisecode() {
+    return workingplacerisecode;
   }
 
-  public void setPersonalNumber(String personalNumber) {
-    this.personalNumber = personalNumber;
+  public void setWorkingplacerisecode(Integer workingplacerisecode) {
+    this.workingplacerisecode = workingplacerisecode;
   }
 
-   /**
-   * Os. číslo numericky
-   * @return numPersonalNumber
-  **/
-  @ApiModelProperty(example = "null", value = "Os. číslo numericky")
-  public Integer getNumPersonalNumber() {
-    return numPersonalNumber;
-  }
-
-  public Workingrelation employeeName(String employeeName) {
-    this.employeeName = employeeName;
+  public Workingrelation workingplaceexpirycode(Integer workingplaceexpirycode) {
+    this.workingplaceexpirycode = workingplaceexpirycode;
     return this;
   }
 
    /**
-   * Příjmení a jméno
-   * @return employeeName
+   * kód zániku pracovního místa
+   * @return workingplaceexpirycode
   **/
-  @ApiModelProperty(example = "null", value = "Příjmení a jméno")
-  public String getEmployeeName() {
-    return employeeName;
+  @ApiModelProperty(example = "null", value = "kód zániku pracovního místa")
+  public Integer getWorkingplaceexpirycode() {
+    return workingplaceexpirycode;
   }
 
-  public void setEmployeeName(String employeeName) {
-    this.employeeName = employeeName;
+  public void setWorkingplaceexpirycode(Integer workingplaceexpirycode) {
+    this.workingplaceexpirycode = workingplaceexpirycode;
   }
 
-  public Workingrelation patternCode(String patternCode) {
-    this.patternCode = patternCode;
+  public Workingrelation personalnumber(String personalnumber) {
+    this.personalnumber = personalnumber;
     return this;
   }
 
    /**
-   * Kód PP
-   * @return patternCode
+   * os. číslo
+   * @return personalnumber
   **/
-  @ApiModelProperty(example = "null", value = "Kód PP")
-  public String getPatternCode() {
-    return patternCode;
+  @ApiModelProperty(example = "null", value = "os. číslo")
+  public String getPersonalnumber() {
+    return personalnumber;
   }
 
-  public void setPatternCode(String patternCode) {
-    this.patternCode = patternCode;
+  public void setPersonalnumber(String personalnumber) {
+    this.personalnumber = personalnumber;
   }
 
-  public Workingrelation patternName(String patternName) {
-    this.patternName = patternName;
+  public Workingrelation numpersonalnumber(Integer numpersonalnumber) {
+    this.numpersonalnumber = numpersonalnumber;
     return this;
   }
 
    /**
-   * Název PP
-   * @return patternName
+   * os. číslo numericky
+   * @return numpersonalnumber
   **/
-  @ApiModelProperty(example = "null", value = "Název PP")
-  public String getPatternName() {
-    return patternName;
+  @ApiModelProperty(example = "null", value = "os. číslo numericky")
+  public Integer getNumpersonalnumber() {
+    return numpersonalnumber;
   }
 
-  public void setPatternName(String patternName) {
-    this.patternName = patternName;
+  public void setNumpersonalnumber(Integer numpersonalnumber) {
+    this.numpersonalnumber = numpersonalnumber;
   }
 
-  public Workingrelation shortName(String shortName) {
-    this.shortName = shortName;
+  public Workingrelation employeename(String employeename) {
+    this.employeename = employeename;
     return this;
   }
 
    /**
-   * Krátký název
-   * @return shortName
+   * příjmení a jméno
+   * @return employeename
   **/
-  @ApiModelProperty(example = "null", value = "Krátký název")
-  public String getShortName() {
-    return shortName;
+  @ApiModelProperty(example = "null", value = "příjmení a jméno")
+  public String getEmployeename() {
+    return employeename;
   }
 
-  public void setShortName(String shortName) {
-    this.shortName = shortName;
+  public void setEmployeename(String employeename) {
+    this.employeename = employeename;
   }
 
-  public Workingrelation recordedStatus(Boolean recordedStatus) {
-    this.recordedStatus = recordedStatus;
+  public Workingrelation patterncode(String patterncode) {
+    this.patterncode = patterncode;
     return this;
   }
 
    /**
-   * Ev. stav [persistentní položka]
-   * @return recordedStatus
+   * kód pp
+   * @return patterncode
   **/
-  @ApiModelProperty(example = "null", value = "Ev. stav [persistentní položka]")
-  public Boolean getRecordedStatus() {
-    return recordedStatus;
+  @ApiModelProperty(example = "null", value = "kód pp")
+  public String getPatterncode() {
+    return patterncode;
   }
 
-  public void setRecordedStatus(Boolean recordedStatus) {
-    this.recordedStatus = recordedStatus;
+  public void setPatterncode(String patterncode) {
+    this.patterncode = patterncode;
   }
 
-  public Workingrelation calcWage(Boolean calcWage) {
-    this.calcWage = calcWage;
+  public Workingrelation patternname(String patternname) {
+    this.patternname = patternname;
     return this;
   }
 
    /**
-   * Mzda [persistentní položka]
-   * @return calcWage
+   * název pp
+   * @return patternname
   **/
-  @ApiModelProperty(example = "null", value = "Mzda [persistentní položka]")
-  public Boolean getCalcWage() {
-    return calcWage;
+  @ApiModelProperty(example = "null", value = "název pp")
+  public String getPatternname() {
+    return patternname;
   }
 
-  public void setCalcWage(Boolean calcWage) {
-    this.calcWage = calcWage;
+  public void setPatternname(String patternname) {
+    this.patternname = patternname;
   }
 
-  public Workingrelation calcInsurance(Boolean calcInsurance) {
-    this.calcInsurance = calcInsurance;
+  public Workingrelation shortname(String shortname) {
+    this.shortname = shortname;
     return this;
   }
 
    /**
-   * Pojištění [persistentní položka]
-   * @return calcInsurance
+   * krátký název
+   * @return shortname
   **/
-  @ApiModelProperty(example = "null", value = "Pojištění [persistentní položka]")
-  public Boolean getCalcInsurance() {
-    return calcInsurance;
+  @ApiModelProperty(example = "null", value = "krátký název")
+  public String getShortname() {
+    return shortname;
   }
 
-  public void setCalcInsurance(Boolean calcInsurance) {
-    this.calcInsurance = calcInsurance;
+  public void setShortname(String shortname) {
+    this.shortname = shortname;
   }
 
-  public Workingrelation divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Workingrelation recordedstatus(Boolean recordedstatus) {
+    this.recordedstatus = recordedstatus;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * ev. stav [persistentní položka]
+   * @return recordedstatus
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "ev. stav [persistentní položka]")
+  public Boolean getRecordedstatus() {
+    return recordedstatus;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setRecordedstatus(Boolean recordedstatus) {
+    this.recordedstatus = recordedstatus;
   }
 
-  public Workingrelation busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Workingrelation calcwage(Boolean calcwage) {
+    this.calcwage = calcwage;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * mzda [persistentní položka]
+   * @return calcwage
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "mzda [persistentní položka]")
+  public Boolean getCalcwage() {
+    return calcwage;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setCalcwage(Boolean calcwage) {
+    this.calcwage = calcwage;
   }
 
-  public Workingrelation busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Workingrelation calcinsurance(Boolean calcinsurance) {
+    this.calcinsurance = calcinsurance;
     return this;
   }
 
    /**
-   * Obch. případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * pojištění [persistentní položka]
+   * @return calcinsurance
   **/
-  @ApiModelProperty(example = "null", value = "Obch. případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "pojištění [persistentní položka]")
+  public Boolean getCalcinsurance() {
+    return calcinsurance;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setCalcinsurance(Boolean calcinsurance) {
+    this.calcinsurance = calcinsurance;
+  }
+
+  public Workingrelation divisionId(String divisionId) {
+    this.divisionId = divisionId;
+    return this;
+  }
+
+   /**
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
+  **/
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
+  }
+
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
+  }
+
+  public Workingrelation busorderId(String busorderId) {
+    this.busorderId = busorderId;
+    return this;
+  }
+
+   /**
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
+  **/
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
+  }
+
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
+  }
+
+  public Workingrelation bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
+    return this;
+  }
+
+   /**
+   * obch. případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
+  **/
+  @ApiModelProperty(example = "null", value = "obch. případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
+  }
+
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
   public Workingrelation category(Integer category) {
@@ -984,10 +1047,10 @@ public class Workingrelation   {
   }
 
    /**
-   * Kategorie [persistentní položka]
+   * kategorie [persistentní položka]
    * @return category
   **/
-  @ApiModelProperty(example = "null", value = "Kategorie [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kategorie [persistentní položka]")
   public Integer getCategory() {
     return category;
   }
@@ -996,589 +1059,616 @@ public class Workingrelation   {
     this.category = category;
   }
 
-  public Workingrelation workPositionID(String workPositionID) {
-    this.workPositionID = workPositionID;
+  public Workingrelation workpositionId(String workpositionId) {
+    this.workpositionId = workpositionId;
     return this;
   }
 
    /**
-   * Prac. zařazení; ID objektu Pracovní zařazení [persistentní položka]
-   * @return workPositionID
+   * prac. zařazení; id objektu pracovní zařazení [persistentní položka]
+   * @return workpositionId
   **/
-  @ApiModelProperty(example = "null", value = "Prac. zařazení; ID objektu Pracovní zařazení [persistentní položka]")
-  public String getWorkPositionID() {
-    return workPositionID;
+  @ApiModelProperty(example = "null", value = "prac. zařazení; id objektu pracovní zařazení [persistentní položka]")
+  public String getWorkpositionId() {
+    return workpositionId;
   }
 
-  public void setWorkPositionID(String workPositionID) {
-    this.workPositionID = workPositionID;
+  public void setWorkpositionId(String workpositionId) {
+    this.workpositionId = workpositionId;
   }
 
-  public Workingrelation superiorID(String superiorID) {
-    this.superiorID = superiorID;
+  public Workingrelation superiorId(String superiorId) {
+    this.superiorId = superiorId;
     return this;
   }
 
    /**
-   * Nadřízený; ID objektu Pracovní poměr [persistentní položka]
-   * @return superiorID
+   * nadřízený; id objektu pracovní poměr [persistentní položka]
+   * @return superiorId
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízený; ID objektu Pracovní poměr [persistentní položka]")
-  public String getSuperiorID() {
-    return superiorID;
+  @ApiModelProperty(example = "null", value = "nadřízený; id objektu pracovní poměr [persistentní položka]")
+  public String getSuperiorId() {
+    return superiorId;
   }
 
-  public void setSuperiorID(String superiorID) {
-    this.superiorID = superiorID;
+  public void setSuperiorId(String superiorId) {
+    this.superiorId = superiorId;
   }
 
-  public Workingrelation typeOfWage(Integer typeOfWage) {
-    this.typeOfWage = typeOfWage;
+  public Workingrelation typeofwage(Integer typeofwage) {
+    this.typeofwage = typeofwage;
     return this;
   }
 
    /**
-   * Druh mzdy [persistentní položka]
-   * @return typeOfWage
+   * druh mzdy [persistentní položka]
+   * @return typeofwage
   **/
-  @ApiModelProperty(example = "null", value = "Druh mzdy [persistentní položka]")
-  public Integer getTypeOfWage() {
-    return typeOfWage;
+  @ApiModelProperty(example = "null", value = "druh mzdy [persistentní položka]")
+  public Integer getTypeofwage() {
+    return typeofwage;
   }
 
-  public void setTypeOfWage(Integer typeOfWage) {
-    this.typeOfWage = typeOfWage;
+  public void setTypeofwage(Integer typeofwage) {
+    this.typeofwage = typeofwage;
   }
 
-  public Workingrelation wageAmount(Double wageAmount) {
-    this.wageAmount = wageAmount;
+  public Workingrelation wageamount(Double wageamount) {
+    this.wageamount = wageamount;
     return this;
   }
 
    /**
-   * Mzda - částka [persistentní položka]
-   * @return wageAmount
+   * mzda - částka [persistentní položka]
+   * @return wageamount
   **/
-  @ApiModelProperty(example = "null", value = "Mzda - částka [persistentní položka]")
-  public Double getWageAmount() {
-    return wageAmount;
+  @ApiModelProperty(example = "null", value = "mzda - částka [persistentní položka]")
+  public Double getWageamount() {
+    return wageamount;
   }
 
-  public void setWageAmount(Double wageAmount) {
-    this.wageAmount = wageAmount;
+  public void setWageamount(Double wageamount) {
+    this.wageamount = wageamount;
   }
 
-  public Workingrelation alertCompensation(Double alertCompensation) {
-    this.alertCompensation = alertCompensation;
+  public Workingrelation alertcompensation(Double alertcompensation) {
+    this.alertcompensation = alertcompensation;
     return this;
   }
 
    /**
-   * Pohotovost [persistentní položka]
-   * @return alertCompensation
+   * pohotovost [persistentní položka]
+   * @return alertcompensation
   **/
-  @ApiModelProperty(example = "null", value = "Pohotovost [persistentní položka]")
-  public Double getAlertCompensation() {
-    return alertCompensation;
+  @ApiModelProperty(example = "null", value = "pohotovost [persistentní položka]")
+  public Double getAlertcompensation() {
+    return alertcompensation;
   }
 
-  public void setAlertCompensation(Double alertCompensation) {
-    this.alertCompensation = alertCompensation;
+  public void setAlertcompensation(Double alertcompensation) {
+    this.alertcompensation = alertcompensation;
   }
 
-  public Workingrelation shiftCalendarID(String shiftCalendarID) {
-    this.shiftCalendarID = shiftCalendarID;
+  public Workingrelation shiftcalendarId(String shiftcalendarId) {
+    this.shiftcalendarId = shiftcalendarId;
     return this;
   }
 
    /**
-   * Kalendář; ID objektu Pracovní kalendář [persistentní položka]
-   * @return shiftCalendarID
+   * kalendář; id objektu pracovní kalendář [persistentní položka]
+   * @return shiftcalendarId
   **/
-  @ApiModelProperty(example = "null", value = "Kalendář; ID objektu Pracovní kalendář [persistentní položka]")
-  public String getShiftCalendarID() {
-    return shiftCalendarID;
+  @ApiModelProperty(example = "null", value = "kalendář; id objektu pracovní kalendář [persistentní položka]")
+  public String getShiftcalendarId() {
+    return shiftcalendarId;
   }
 
-  public void setShiftCalendarID(String shiftCalendarID) {
-    this.shiftCalendarID = shiftCalendarID;
+  public void setShiftcalendarId(String shiftcalendarId) {
+    this.shiftcalendarId = shiftcalendarId;
   }
 
-  public Workingrelation calcWorkingHours(Boolean calcWorkingHours) {
-    this.calcWorkingHours = calcWorkingHours;
+  public Workingrelation calcworkinghours(Boolean calcworkinghours) {
+    this.calcworkinghours = calcworkinghours;
     return this;
   }
 
    /**
-   * Přenášet odpr.hod. z kalendáře [persistentní položka]
-   * @return calcWorkingHours
+   * přenášet odpr.hod. z kalendáře [persistentní položka]
+   * @return calcworkinghours
   **/
-  @ApiModelProperty(example = "null", value = "Přenášet odpr.hod. z kalendáře [persistentní položka]")
-  public Boolean getCalcWorkingHours() {
-    return calcWorkingHours;
+  @ApiModelProperty(example = "null", value = "přenášet odpr.hod. z kalendáře [persistentní položka]")
+  public Boolean getCalcworkinghours() {
+    return calcworkinghours;
   }
 
-  public void setCalcWorkingHours(Boolean calcWorkingHours) {
-    this.calcWorkingHours = calcWorkingHours;
+  public void setCalcworkinghours(Boolean calcworkinghours) {
+    this.calcworkinghours = calcworkinghours;
   }
 
-  public Workingrelation calcOverTime(Boolean calcOverTime) {
-    this.calcOverTime = calcOverTime;
+  public Workingrelation calcovertime(Boolean calcovertime) {
+    this.calcovertime = calcovertime;
     return this;
   }
 
    /**
-   * Přesčas [persistentní položka]
-   * @return calcOverTime
+   * přesčas [persistentní položka]
+   * @return calcovertime
   **/
-  @ApiModelProperty(example = "null", value = "Přesčas [persistentní položka]")
-  public Boolean getCalcOverTime() {
-    return calcOverTime;
+  @ApiModelProperty(example = "null", value = "přesčas [persistentní položka]")
+  public Boolean getCalcovertime() {
+    return calcovertime;
   }
 
-  public void setCalcOverTime(Boolean calcOverTime) {
-    this.calcOverTime = calcOverTime;
+  public void setCalcovertime(Boolean calcovertime) {
+    this.calcovertime = calcovertime;
   }
 
-  public Workingrelation calcMinimalWage(Boolean calcMinimalWage) {
-    this.calcMinimalWage = calcMinimalWage;
+  public Workingrelation calcminimalwage(Boolean calcminimalwage) {
+    this.calcminimalwage = calcminimalwage;
     return this;
   }
 
    /**
-   * Min. mzda [persistentní položka]
-   * @return calcMinimalWage
+   * min. mzda [persistentní položka]
+   * @return calcminimalwage
   **/
-  @ApiModelProperty(example = "null", value = "Min. mzda [persistentní položka]")
-  public Boolean getCalcMinimalWage() {
-    return calcMinimalWage;
+  @ApiModelProperty(example = "null", value = "min. mzda [persistentní položka]")
+  public Boolean getCalcminimalwage() {
+    return calcminimalwage;
   }
 
-  public void setCalcMinimalWage(Boolean calcMinimalWage) {
-    this.calcMinimalWage = calcMinimalWage;
+  public void setCalcminimalwage(Boolean calcminimalwage) {
+    this.calcminimalwage = calcminimalwage;
   }
 
-  public Workingrelation noticeDateDATE(DateTime noticeDateDATE) {
-    this.noticeDateDATE = noticeDateDATE;
+  public Workingrelation noticedatedate(DateTime noticedatedate) {
+    this.noticedatedate = noticedatedate;
     return this;
   }
 
    /**
-   * Výpověď [persistentní položka]
-   * @return noticeDateDATE
+   * výpověď [persistentní položka]
+   * @return noticedatedate
   **/
-  @ApiModelProperty(example = "null", value = "Výpověď [persistentní položka]")
-  public DateTime getNoticeDateDATE() {
-    return noticeDateDATE;
+  @ApiModelProperty(example = "null", value = "výpověď [persistentní položka]")
+  public DateTime getNoticedatedate() {
+    return noticedatedate;
   }
 
-  public void setNoticeDateDATE(DateTime noticeDateDATE) {
-    this.noticeDateDATE = noticeDateDATE;
+  public void setNoticedatedate(DateTime noticedatedate) {
+    this.noticedatedate = noticedatedate;
   }
 
-  public Workingrelation noticePeriod(Integer noticePeriod) {
-    this.noticePeriod = noticePeriod;
+  public Workingrelation noticeperiod(Integer noticeperiod) {
+    this.noticeperiod = noticeperiod;
     return this;
   }
 
    /**
-   * Výp. lhůta [persistentní položka]
-   * @return noticePeriod
+   * výp. lhůta [persistentní položka]
+   * @return noticeperiod
   **/
-  @ApiModelProperty(example = "null", value = "Výp. lhůta [persistentní položka]")
-  public Integer getNoticePeriod() {
-    return noticePeriod;
+  @ApiModelProperty(example = "null", value = "výp. lhůta [persistentní položka]")
+  public Integer getNoticeperiod() {
+    return noticeperiod;
   }
 
-  public void setNoticePeriod(Integer noticePeriod) {
-    this.noticePeriod = noticePeriod;
+  public void setNoticeperiod(Integer noticeperiod) {
+    this.noticeperiod = noticeperiod;
   }
 
-  public Workingrelation workingTime(String workingTime) {
-    this.workingTime = workingTime;
+  public Workingrelation workingtime(String workingtime) {
+    this.workingtime = workingtime;
     return this;
   }
 
    /**
-   * Pracovní doba [persistentní položka]
-   * @return workingTime
+   * pracovní doba [persistentní položka]
+   * @return workingtime
   **/
-  @ApiModelProperty(example = "null", value = "Pracovní doba [persistentní položka]")
-  public String getWorkingTime() {
-    return workingTime;
+  @ApiModelProperty(example = "null", value = "pracovní doba [persistentní položka]")
+  public String getWorkingtime() {
+    return workingtime;
   }
 
-  public void setWorkingTime(String workingTime) {
-    this.workingTime = workingTime;
+  public void setWorkingtime(String workingtime) {
+    this.workingtime = workingtime;
   }
 
-  public Workingrelation workingDestination(String workingDestination) {
-    this.workingDestination = workingDestination;
+  public Workingrelation workingdestination(String workingdestination) {
+    this.workingdestination = workingdestination;
     return this;
   }
 
    /**
-   * Místo výkonu práce [persistentní položka]
-   * @return workingDestination
+   * místo výkonu práce [persistentní položka]
+   * @return workingdestination
   **/
-  @ApiModelProperty(example = "null", value = "Místo výkonu práce [persistentní položka]")
-  public String getWorkingDestination() {
-    return workingDestination;
+  @ApiModelProperty(example = "null", value = "místo výkonu práce [persistentní položka]")
+  public String getWorkingdestination() {
+    return workingdestination;
   }
 
-  public void setWorkingDestination(String workingDestination) {
-    this.workingDestination = workingDestination;
+  public void setWorkingdestination(String workingdestination) {
+    this.workingdestination = workingdestination;
   }
 
-  public Workingrelation workingPlace(String workingPlace) {
-    this.workingPlace = workingPlace;
+  public Workingrelation workingplace(String workingplace) {
+    this.workingplace = workingplace;
     return this;
   }
 
    /**
-   * Pracoviště [persistentní položka]
-   * @return workingPlace
+   * pracoviště [persistentní položka]
+   * @return workingplace
   **/
-  @ApiModelProperty(example = "null", value = "Pracoviště [persistentní položka]")
-  public String getWorkingPlace() {
-    return workingPlace;
+  @ApiModelProperty(example = "null", value = "pracoviště [persistentní položka]")
+  public String getWorkingplace() {
+    return workingplace;
   }
 
-  public void setWorkingPlace(String workingPlace) {
-    this.workingPlace = workingPlace;
+  public void setWorkingplace(String workingplace) {
+    this.workingplace = workingplace;
   }
 
-  public Workingrelation typeOfPeriod(Integer typeOfPeriod) {
-    this.typeOfPeriod = typeOfPeriod;
+  public Workingrelation typeofperiod(Integer typeofperiod) {
+    this.typeofperiod = typeofperiod;
     return this;
   }
 
    /**
-   * Na dobu [persistentní položka]
-   * @return typeOfPeriod
+   * na dobu [persistentní položka]
+   * @return typeofperiod
   **/
-  @ApiModelProperty(example = "null", value = "Na dobu [persistentní položka]")
-  public Integer getTypeOfPeriod() {
-    return typeOfPeriod;
+  @ApiModelProperty(example = "null", value = "na dobu [persistentní položka]")
+  public Integer getTypeofperiod() {
+    return typeofperiod;
   }
 
-  public void setTypeOfPeriod(Integer typeOfPeriod) {
-    this.typeOfPeriod = typeOfPeriod;
+  public void setTypeofperiod(Integer typeofperiod) {
+    this.typeofperiod = typeofperiod;
   }
 
-  public Workingrelation typeOfActivity(Integer typeOfActivity) {
-    this.typeOfActivity = typeOfActivity;
+  public Workingrelation typeofactivity(Integer typeofactivity) {
+    this.typeofactivity = typeofactivity;
     return this;
   }
 
    /**
-   * Druh činnosti [persistentní položka]
-   * @return typeOfActivity
+   * druh činnosti [persistentní položka]
+   * @return typeofactivity
   **/
-  @ApiModelProperty(example = "null", value = "Druh činnosti [persistentní položka]")
-  public Integer getTypeOfActivity() {
-    return typeOfActivity;
+  @ApiModelProperty(example = "null", value = "druh činnosti [persistentní položka]")
+  public Integer getTypeofactivity() {
+    return typeofactivity;
   }
 
-  public void setTypeOfActivity(Integer typeOfActivity) {
-    this.typeOfActivity = typeOfActivity;
+  public void setTypeofactivity(Integer typeofactivity) {
+    this.typeofactivity = typeofactivity;
   }
 
-  public Workingrelation externIdentification(String externIdentification) {
-    this.externIdentification = externIdentification;
+  public Workingrelation externidentification(String externidentification) {
+    this.externidentification = externidentification;
     return this;
   }
 
    /**
-   * Externí identifikace [persistentní položka]
-   * @return externIdentification
+   * externí identifikace [persistentní položka]
+   * @return externidentification
   **/
-  @ApiModelProperty(example = "null", value = "Externí identifikace [persistentní položka]")
-  public String getExternIdentification() {
-    return externIdentification;
+  @ApiModelProperty(example = "null", value = "externí identifikace [persistentní položka]")
+  public String getExternidentification() {
+    return externidentification;
   }
 
-  public void setExternIdentification(String externIdentification) {
-    this.externIdentification = externIdentification;
+  public void setExternidentification(String externidentification) {
+    this.externidentification = externidentification;
   }
 
-  public Workingrelation calDaysOfAbsences(Boolean calDaysOfAbsences) {
-    this.calDaysOfAbsences = calDaysOfAbsences;
+  public Workingrelation caldaysofabsences(Boolean caldaysofabsences) {
+    this.caldaysofabsences = caldaysofabsences;
     return this;
   }
 
    /**
-   * Kal. dny nepř. [persistentní položka]
-   * @return calDaysOfAbsences
+   * kal. dny nepř. [persistentní položka]
+   * @return caldaysofabsences
   **/
-  @ApiModelProperty(example = "null", value = "Kal. dny nepř. [persistentní položka]")
-  public Boolean getCalDaysOfAbsences() {
-    return calDaysOfAbsences;
+  @ApiModelProperty(example = "null", value = "kal. dny nepř. [persistentní položka]")
+  public Boolean getCaldaysofabsences() {
+    return caldaysofabsences;
   }
 
-  public void setCalDaysOfAbsences(Boolean calDaysOfAbsences) {
-    this.calDaysOfAbsences = calDaysOfAbsences;
+  public void setCaldaysofabsences(Boolean caldaysofabsences) {
+    this.caldaysofabsences = caldaysofabsences;
   }
 
-  public Workingrelation hazardousWork(Boolean hazardousWork) {
-    this.hazardousWork = hazardousWork;
+  public Workingrelation hazardouswork(Boolean hazardouswork) {
+    this.hazardouswork = hazardouswork;
     return this;
   }
 
    /**
-   * Riziková práce [persistentní položka]
-   * @return hazardousWork
+   * riziková práce [persistentní položka]
+   * @return hazardouswork
   **/
-  @ApiModelProperty(example = "null", value = "Riziková práce [persistentní položka]")
-  public Boolean getHazardousWork() {
-    return hazardousWork;
+  @ApiModelProperty(example = "null", value = "riziková práce [persistentní položka]")
+  public Boolean getHazardouswork() {
+    return hazardouswork;
   }
 
-  public void setHazardousWork(Boolean hazardousWork) {
-    this.hazardousWork = hazardousWork;
+  public void setHazardouswork(Boolean hazardouswork) {
+    this.hazardouswork = hazardouswork;
   }
 
-   /**
-   * Na dobu
-   * @return typeOfPeriodText
-  **/
-  @ApiModelProperty(example = "null", value = "Na dobu")
-  public String getTypeOfPeriodText() {
-    return typeOfPeriodText;
-  }
-
-   /**
-   * Druh činnosti
-   * @return typeOfActivityText
-  **/
-  @ApiModelProperty(example = "null", value = "Druh činnosti")
-  public String getTypeOfActivityText() {
-    return typeOfActivityText;
-  }
-
-  public Workingrelation individualWeekDuty(Double individualWeekDuty) {
-    this.individualWeekDuty = individualWeekDuty;
+  public Workingrelation typeofperiodText(String typeofperiodText) {
+    this.typeofperiodText = typeofperiodText;
     return this;
   }
 
    /**
-   * Stanovená týdenní pracovní doba: [persistentní položka]
-   * @return individualWeekDuty
+   * na dobu
+   * @return typeofperiodText
   **/
-  @ApiModelProperty(example = "null", value = "Stanovená týdenní pracovní doba: [persistentní položka]")
-  public Double getIndividualWeekDuty() {
-    return individualWeekDuty;
+  @ApiModelProperty(example = "null", value = "na dobu")
+  public String getTypeofperiodText() {
+    return typeofperiodText;
   }
 
-  public void setIndividualWeekDuty(Double individualWeekDuty) {
-    this.individualWeekDuty = individualWeekDuty;
+  public void setTypeofperiodText(String typeofperiodText) {
+    this.typeofperiodText = typeofperiodText;
   }
 
-  public Workingrelation retReportCodeID(String retReportCodeID) {
-    this.retReportCodeID = retReportCodeID;
+  public Workingrelation typeofactivityText(String typeofactivityText) {
+    this.typeofactivityText = typeofactivityText;
     return this;
   }
 
    /**
-   * Kód PP pro ČSSZ; ID objektu Kód PP pro ČSSZ [persistentní položka]
-   * @return retReportCodeID
+   * druh činnosti
+   * @return typeofactivityText
   **/
-  @ApiModelProperty(example = "null", value = "Kód PP pro ČSSZ; ID objektu Kód PP pro ČSSZ [persistentní položka]")
-  public String getRetReportCodeID() {
-    return retReportCodeID;
+  @ApiModelProperty(example = "null", value = "druh činnosti")
+  public String getTypeofactivityText() {
+    return typeofactivityText;
   }
 
-  public void setRetReportCodeID(String retReportCodeID) {
-    this.retReportCodeID = retReportCodeID;
+  public void setTypeofactivityText(String typeofactivityText) {
+    this.typeofactivityText = typeofactivityText;
   }
 
-  public Workingrelation feastMode(Integer feastMode) {
-    this.feastMode = feastMode;
+  public Workingrelation individualweekduty(Double individualweekduty) {
+    this.individualweekduty = individualweekduty;
     return this;
   }
 
    /**
-   * Způsob výp. nahr. svát. při měs. mzdě [persistentní položka]
-   * @return feastMode
+   * stanovená týdenní pracovní doba: [persistentní položka]
+   * @return individualweekduty
   **/
-  @ApiModelProperty(example = "null", value = "Způsob výp. nahr. svát. při měs. mzdě [persistentní položka]")
-  public Integer getFeastMode() {
-    return feastMode;
+  @ApiModelProperty(example = "null", value = "stanovená týdenní pracovní doba: [persistentní položka]")
+  public Double getIndividualweekduty() {
+    return individualweekduty;
   }
 
-  public void setFeastMode(Integer feastMode) {
-    this.feastMode = feastMode;
+  public void setIndividualweekduty(Double individualweekduty) {
+    this.individualweekduty = individualweekduty;
   }
 
-  public Workingrelation wageClaim(Double wageClaim) {
-    this.wageClaim = wageClaim;
+  public Workingrelation retreportcodeId(String retreportcodeId) {
+    this.retreportcodeId = retreportcodeId;
     return this;
   }
 
    /**
-   * Koef. úrovně zaručené mzdy: [persistentní položka]
-   * @return wageClaim
+   * kód pp pro Čssz; id objektu kód pp pro Čssz [persistentní položka]
+   * @return retreportcodeId
   **/
-  @ApiModelProperty(example = "null", value = "Koef. úrovně zaručené mzdy: [persistentní položka]")
-  public Double getWageClaim() {
-    return wageClaim;
+  @ApiModelProperty(example = "null", value = "kód pp pro Čssz; id objektu kód pp pro Čssz [persistentní položka]")
+  public String getRetreportcodeId() {
+    return retreportcodeId;
   }
 
-  public void setWageClaim(Double wageClaim) {
-    this.wageClaim = wageClaim;
+  public void setRetreportcodeId(String retreportcodeId) {
+    this.retreportcodeId = retreportcodeId;
   }
 
-  public Workingrelation jobGroupID(String jobGroupID) {
-    this.jobGroupID = jobGroupID;
+  public Workingrelation feastmode(Integer feastmode) {
+    this.feastmode = feastmode;
     return this;
   }
 
    /**
-   * Skupina prací; ID objektu Skupiny prací [persistentní položka]
-   * @return jobGroupID
+   * způsob výp. nahr. svát. při měs. mzdě [persistentní položka]
+   * @return feastmode
   **/
-  @ApiModelProperty(example = "null", value = "Skupina prací; ID objektu Skupiny prací [persistentní položka]")
-  public String getJobGroupID() {
-    return jobGroupID;
+  @ApiModelProperty(example = "null", value = "způsob výp. nahr. svát. při měs. mzdě [persistentní položka]")
+  public Integer getFeastmode() {
+    return feastmode;
   }
 
-  public void setJobGroupID(String jobGroupID) {
-    this.jobGroupID = jobGroupID;
+  public void setFeastmode(Integer feastmode) {
+    this.feastmode = feastmode;
   }
 
-   /**
-   * Datum změny [persistentní položka]
-   * @return dateOfChangeEdit
-  **/
-  @ApiModelProperty(example = "null", value = "Datum změny [persistentní položka]")
-  public DateTime getDateOfChangeEdit() {
-    return dateOfChangeEdit;
-  }
-
-  public Workingrelation jobClasificationISCOID(String jobClasificationISCOID) {
-    this.jobClasificationISCOID = jobClasificationISCOID;
+  public Workingrelation wageclaim(Double wageclaim) {
+    this.wageclaim = wageclaim;
     return this;
   }
 
    /**
-   * Klasifikace zam.ISCO; ID objektu Klasifikace zaměstnání ISCO [persistentní položka]
-   * @return jobClasificationISCOID
+   * koef. úrovně zaručené mzdy: [persistentní položka]
+   * @return wageclaim
   **/
-  @ApiModelProperty(example = "null", value = "Klasifikace zam.ISCO; ID objektu Klasifikace zaměstnání ISCO [persistentní položka]")
-  public String getJobClasificationISCOID() {
-    return jobClasificationISCOID;
+  @ApiModelProperty(example = "null", value = "koef. úrovně zaručené mzdy: [persistentní položka]")
+  public Double getWageclaim() {
+    return wageclaim;
   }
 
-  public void setJobClasificationISCOID(String jobClasificationISCOID) {
-    this.jobClasificationISCOID = jobClasificationISCOID;
+  public void setWageclaim(Double wageclaim) {
+    this.wageclaim = wageclaim;
   }
 
-  public Workingrelation irregularIncome(Boolean irregularIncome) {
-    this.irregularIncome = irregularIncome;
+  public Workingrelation jobgroupId(String jobgroupId) {
+    this.jobgroupId = jobgroupId;
     return this;
   }
 
    /**
-   * Nepravidelný příjem [persistentní položka]
-   * @return irregularIncome
+   * skupina prací; id objektu skupiny prací [persistentní položka]
+   * @return jobgroupId
   **/
-  @ApiModelProperty(example = "null", value = "Nepravidelný příjem [persistentní položka]")
-  public Boolean getIrregularIncome() {
-    return irregularIncome;
+  @ApiModelProperty(example = "null", value = "skupina prací; id objektu skupiny prací [persistentní položka]")
+  public String getJobgroupId() {
+    return jobgroupId;
   }
 
-  public void setIrregularIncome(Boolean irregularIncome) {
-    this.irregularIncome = irregularIncome;
+  public void setJobgroupId(String jobgroupId) {
+    this.jobgroupId = jobgroupId;
   }
 
-  public Workingrelation busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Workingrelation dateofchangeedit(DateTime dateofchangeedit) {
+    this.dateofchangeedit = dateofchangeedit;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * datum změny [persistentní položka]
+   * @return dateofchangeedit
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "datum změny [persistentní položka]")
+  public DateTime getDateofchangeedit() {
+    return dateofchangeedit;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setDateofchangeedit(DateTime dateofchangeedit) {
+    this.dateofchangeedit = dateofchangeedit;
   }
 
-  public Workingrelation brigadierNotPayPensIns(Boolean brigadierNotPayPensIns) {
-    this.brigadierNotPayPensIns = brigadierNotPayPensIns;
+  public Workingrelation jobclasificationiscoId(String jobclasificationiscoId) {
+    this.jobclasificationiscoId = jobclasificationiscoId;
     return this;
   }
 
    /**
-   * DoBPŠ bez účasti na DP [persistentní položka]
-   * @return brigadierNotPayPensIns
+   * klasifikace zam.isco; id objektu klasifikace zaměstnání isco [persistentní položka]
+   * @return jobclasificationiscoId
   **/
-  @ApiModelProperty(example = "null", value = "DoBPŠ bez účasti na DP [persistentní položka]")
-  public Boolean getBrigadierNotPayPensIns() {
-    return brigadierNotPayPensIns;
+  @ApiModelProperty(example = "null", value = "klasifikace zam.isco; id objektu klasifikace zaměstnání isco [persistentní položka]")
+  public String getJobclasificationiscoId() {
+    return jobclasificationiscoId;
   }
 
-  public void setBrigadierNotPayPensIns(Boolean brigadierNotPayPensIns) {
-    this.brigadierNotPayPensIns = brigadierNotPayPensIns;
+  public void setJobclasificationiscoId(String jobclasificationiscoId) {
+    this.jobclasificationiscoId = jobclasificationiscoId;
   }
 
-  public Workingrelation longUnemployed(Boolean longUnemployed) {
-    this.longUnemployed = longUnemployed;
+  public Workingrelation irregularincome(Boolean irregularincome) {
+    this.irregularincome = irregularincome;
     return this;
   }
 
    /**
-   * Dlouhodobě nezaměstnaný [persistentní položka]
-   * @return longUnemployed
+   * nepravidelný příjem [persistentní položka]
+   * @return irregularincome
   **/
-  @ApiModelProperty(example = "null", value = "Dlouhodobě nezaměstnaný [persistentní položka]")
-  public Boolean getLongUnemployed() {
-    return longUnemployed;
+  @ApiModelProperty(example = "null", value = "nepravidelný příjem [persistentní položka]")
+  public Boolean getIrregularincome() {
+    return irregularincome;
   }
 
-  public void setLongUnemployed(Boolean longUnemployed) {
-    this.longUnemployed = longUnemployed;
+  public void setIrregularincome(Boolean irregularincome) {
+    this.irregularincome = irregularincome;
   }
 
-  public Workingrelation fromLowDevDistrict(Boolean fromLowDevDistrict) {
-    this.fromLowDevDistrict = fromLowDevDistrict;
+  public Workingrelation busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Z NRO [persistentní položka]
-   * @return fromLowDevDistrict
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Z NRO [persistentní položka]")
-  public Boolean getFromLowDevDistrict() {
-    return fromLowDevDistrict;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setFromLowDevDistrict(Boolean fromLowDevDistrict) {
-    this.fromLowDevDistrict = fromLowDevDistrict;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Workingrelation applyHICountOff(Boolean applyHICountOff) {
-    this.applyHICountOff = applyHICountOff;
+  public Workingrelation brigadiernotpaypensins(Boolean brigadiernotpaypensins) {
+    this.brigadiernotpaypensins = brigadiernotpaypensins;
     return this;
   }
 
    /**
-   * Uplatnit OOP ZP [persistentní položka]
-   * @return applyHICountOff
+   * dobpŠ bez účasti na dp [persistentní položka]
+   * @return brigadiernotpaypensins
   **/
-  @ApiModelProperty(example = "null", value = "Uplatnit OOP ZP [persistentní položka]")
-  public Boolean getApplyHICountOff() {
-    return applyHICountOff;
+  @ApiModelProperty(example = "null", value = "dobpŠ bez účasti na dp [persistentní položka]")
+  public Boolean getBrigadiernotpaypensins() {
+    return brigadiernotpaypensins;
   }
 
-  public void setApplyHICountOff(Boolean applyHICountOff) {
-    this.applyHICountOff = applyHICountOff;
+  public void setBrigadiernotpaypensins(Boolean brigadiernotpaypensins) {
+    this.brigadiernotpaypensins = brigadiernotpaypensins;
+  }
+
+  public Workingrelation longunemployed(Boolean longunemployed) {
+    this.longunemployed = longunemployed;
+    return this;
+  }
+
+   /**
+   * dlouhodobě nezaměstnaný [persistentní položka]
+   * @return longunemployed
+  **/
+  @ApiModelProperty(example = "null", value = "dlouhodobě nezaměstnaný [persistentní položka]")
+  public Boolean getLongunemployed() {
+    return longunemployed;
+  }
+
+  public void setLongunemployed(Boolean longunemployed) {
+    this.longunemployed = longunemployed;
+  }
+
+  public Workingrelation fromlowdevdistrict(Boolean fromlowdevdistrict) {
+    this.fromlowdevdistrict = fromlowdevdistrict;
+    return this;
+  }
+
+   /**
+   * z nro [persistentní položka]
+   * @return fromlowdevdistrict
+  **/
+  @ApiModelProperty(example = "null", value = "z nro [persistentní položka]")
+  public Boolean getFromlowdevdistrict() {
+    return fromlowdevdistrict;
+  }
+
+  public void setFromlowdevdistrict(Boolean fromlowdevdistrict) {
+    this.fromlowdevdistrict = fromlowdevdistrict;
+  }
+
+  public Workingrelation applyhicountoff(Boolean applyhicountoff) {
+    this.applyhicountoff = applyhicountoff;
+    return this;
+  }
+
+   /**
+   * uplatnit oop zp [persistentní položka]
+   * @return applyhicountoff
+  **/
+  @ApiModelProperty(example = "null", value = "uplatnit oop zp [persistentní položka]")
+  public Boolean getApplyhicountoff() {
+    return applyhicountoff;
+  }
+
+  public void setApplyhicountoff(Boolean applyhicountoff) {
+    this.applyhicountoff = applyhicountoff;
   }
 
 
@@ -1591,88 +1681,88 @@ public class Workingrelation   {
       return false;
     }
     Workingrelation workingrelation = (Workingrelation) o;
-    return Objects.equals(this.displayName, workingrelation.displayName) &&
-        Objects.equals(this.ID, workingrelation.ID) &&
-        Objects.equals(this.dateOfChange, workingrelation.dateOfChange) &&
-        Objects.equals(this.classID, workingrelation.classID) &&
-        Objects.equals(this.objVersion, workingrelation.objVersion) &&
+    return Objects.equals(this.displayname, workingrelation.displayname) &&
+        Objects.equals(this.id, workingrelation.id) &&
+        Objects.equals(this.dateofchange, workingrelation.dateofchange) &&
+        Objects.equals(this.classid, workingrelation.classid) &&
+        Objects.equals(this.objversion, workingrelation.objversion) &&
         Objects.equals(this.hidden, workingrelation.hidden) &&
-        Objects.equals(this.createdByID, workingrelation.createdByID) &&
-        Objects.equals(this.correctedByID, workingrelation.correctedByID) &&
-        Objects.equals(this.employeeID, workingrelation.employeeID) &&
-        Objects.equals(this.employPatternID, workingrelation.employPatternID) &&
-        Objects.equals(this.dateOfBeginDATE, workingrelation.dateOfBeginDATE) &&
-        Objects.equals(this.realDateOfBeginDATE, workingrelation.realDateOfBeginDATE) &&
-        Objects.equals(this.typeOfBeginID, workingrelation.typeOfBeginID) &&
-        Objects.equals(this.trialPeriod, workingrelation.trialPeriod) &&
-        Objects.equals(this.trialPeriodDays, workingrelation.trialPeriodDays) &&
-        Objects.equals(this.dateOfEndDATE, workingrelation.dateOfEndDATE) &&
-        Objects.equals(this.typeOfEndID, workingrelation.typeOfEndID) &&
-        Objects.equals(this.reasonOfEnd, workingrelation.reasonOfEnd) &&
-        Objects.equals(this.naturalWage, workingrelation.naturalWage) &&
-        Objects.equals(this.socInsurancePeriods, workingrelation.socInsurancePeriods) &&
-        Objects.equals(this.healthInsurancePeriods, workingrelation.healthInsurancePeriods) &&
-        Objects.equals(this.jobPositionID, workingrelation.jobPositionID) &&
-        Objects.equals(this.jobClasificationID, workingrelation.jobClasificationID) &&
+        Objects.equals(this.createdbyId, workingrelation.createdbyId) &&
+        Objects.equals(this.correctedbyId, workingrelation.correctedbyId) &&
+        Objects.equals(this.employeeId, workingrelation.employeeId) &&
+        Objects.equals(this.employpatternId, workingrelation.employpatternId) &&
+        Objects.equals(this.dateofbegindate, workingrelation.dateofbegindate) &&
+        Objects.equals(this.realdateofbegindate, workingrelation.realdateofbegindate) &&
+        Objects.equals(this.typeofbeginId, workingrelation.typeofbeginId) &&
+        Objects.equals(this.trialperiod, workingrelation.trialperiod) &&
+        Objects.equals(this.trialperioddays, workingrelation.trialperioddays) &&
+        Objects.equals(this.dateofenddate, workingrelation.dateofenddate) &&
+        Objects.equals(this.typeofendId, workingrelation.typeofendId) &&
+        Objects.equals(this.reasonofend, workingrelation.reasonofend) &&
+        Objects.equals(this.naturalwage, workingrelation.naturalwage) &&
+        Objects.equals(this.socinsuranceperiods, workingrelation.socinsuranceperiods) &&
+        Objects.equals(this.healthinsuranceperiods, workingrelation.healthinsuranceperiods) &&
+        Objects.equals(this.jobpositionId, workingrelation.jobpositionId) &&
+        Objects.equals(this.jobclasificationId, workingrelation.jobclasificationId) &&
         Objects.equals(this.manager, workingrelation.manager) &&
-        Objects.equals(this.retInsOnly, workingrelation.retInsOnly) &&
-        Objects.equals(this.partTimeJob, workingrelation.partTimeJob) &&
-        Objects.equals(this.workingPlaceRise, workingrelation.workingPlaceRise) &&
-        Objects.equals(this.workingPlaceExpiry, workingrelation.workingPlaceExpiry) &&
-        Objects.equals(this.workingPlaceRiseCode, workingrelation.workingPlaceRiseCode) &&
-        Objects.equals(this.workingPlaceExpiryCode, workingrelation.workingPlaceExpiryCode) &&
-        Objects.equals(this.personalNumber, workingrelation.personalNumber) &&
-        Objects.equals(this.numPersonalNumber, workingrelation.numPersonalNumber) &&
-        Objects.equals(this.employeeName, workingrelation.employeeName) &&
-        Objects.equals(this.patternCode, workingrelation.patternCode) &&
-        Objects.equals(this.patternName, workingrelation.patternName) &&
-        Objects.equals(this.shortName, workingrelation.shortName) &&
-        Objects.equals(this.recordedStatus, workingrelation.recordedStatus) &&
-        Objects.equals(this.calcWage, workingrelation.calcWage) &&
-        Objects.equals(this.calcInsurance, workingrelation.calcInsurance) &&
-        Objects.equals(this.divisionID, workingrelation.divisionID) &&
-        Objects.equals(this.busOrderID, workingrelation.busOrderID) &&
-        Objects.equals(this.busTransactionID, workingrelation.busTransactionID) &&
+        Objects.equals(this.retinsonly, workingrelation.retinsonly) &&
+        Objects.equals(this.parttimejob, workingrelation.parttimejob) &&
+        Objects.equals(this.workingplacerise, workingrelation.workingplacerise) &&
+        Objects.equals(this.workingplaceexpiry, workingrelation.workingplaceexpiry) &&
+        Objects.equals(this.workingplacerisecode, workingrelation.workingplacerisecode) &&
+        Objects.equals(this.workingplaceexpirycode, workingrelation.workingplaceexpirycode) &&
+        Objects.equals(this.personalnumber, workingrelation.personalnumber) &&
+        Objects.equals(this.numpersonalnumber, workingrelation.numpersonalnumber) &&
+        Objects.equals(this.employeename, workingrelation.employeename) &&
+        Objects.equals(this.patterncode, workingrelation.patterncode) &&
+        Objects.equals(this.patternname, workingrelation.patternname) &&
+        Objects.equals(this.shortname, workingrelation.shortname) &&
+        Objects.equals(this.recordedstatus, workingrelation.recordedstatus) &&
+        Objects.equals(this.calcwage, workingrelation.calcwage) &&
+        Objects.equals(this.calcinsurance, workingrelation.calcinsurance) &&
+        Objects.equals(this.divisionId, workingrelation.divisionId) &&
+        Objects.equals(this.busorderId, workingrelation.busorderId) &&
+        Objects.equals(this.bustransactionId, workingrelation.bustransactionId) &&
         Objects.equals(this.category, workingrelation.category) &&
-        Objects.equals(this.workPositionID, workingrelation.workPositionID) &&
-        Objects.equals(this.superiorID, workingrelation.superiorID) &&
-        Objects.equals(this.typeOfWage, workingrelation.typeOfWage) &&
-        Objects.equals(this.wageAmount, workingrelation.wageAmount) &&
-        Objects.equals(this.alertCompensation, workingrelation.alertCompensation) &&
-        Objects.equals(this.shiftCalendarID, workingrelation.shiftCalendarID) &&
-        Objects.equals(this.calcWorkingHours, workingrelation.calcWorkingHours) &&
-        Objects.equals(this.calcOverTime, workingrelation.calcOverTime) &&
-        Objects.equals(this.calcMinimalWage, workingrelation.calcMinimalWage) &&
-        Objects.equals(this.noticeDateDATE, workingrelation.noticeDateDATE) &&
-        Objects.equals(this.noticePeriod, workingrelation.noticePeriod) &&
-        Objects.equals(this.workingTime, workingrelation.workingTime) &&
-        Objects.equals(this.workingDestination, workingrelation.workingDestination) &&
-        Objects.equals(this.workingPlace, workingrelation.workingPlace) &&
-        Objects.equals(this.typeOfPeriod, workingrelation.typeOfPeriod) &&
-        Objects.equals(this.typeOfActivity, workingrelation.typeOfActivity) &&
-        Objects.equals(this.externIdentification, workingrelation.externIdentification) &&
-        Objects.equals(this.calDaysOfAbsences, workingrelation.calDaysOfAbsences) &&
-        Objects.equals(this.hazardousWork, workingrelation.hazardousWork) &&
-        Objects.equals(this.typeOfPeriodText, workingrelation.typeOfPeriodText) &&
-        Objects.equals(this.typeOfActivityText, workingrelation.typeOfActivityText) &&
-        Objects.equals(this.individualWeekDuty, workingrelation.individualWeekDuty) &&
-        Objects.equals(this.retReportCodeID, workingrelation.retReportCodeID) &&
-        Objects.equals(this.feastMode, workingrelation.feastMode) &&
-        Objects.equals(this.wageClaim, workingrelation.wageClaim) &&
-        Objects.equals(this.jobGroupID, workingrelation.jobGroupID) &&
-        Objects.equals(this.dateOfChangeEdit, workingrelation.dateOfChangeEdit) &&
-        Objects.equals(this.jobClasificationISCOID, workingrelation.jobClasificationISCOID) &&
-        Objects.equals(this.irregularIncome, workingrelation.irregularIncome) &&
-        Objects.equals(this.busProjectID, workingrelation.busProjectID) &&
-        Objects.equals(this.brigadierNotPayPensIns, workingrelation.brigadierNotPayPensIns) &&
-        Objects.equals(this.longUnemployed, workingrelation.longUnemployed) &&
-        Objects.equals(this.fromLowDevDistrict, workingrelation.fromLowDevDistrict) &&
-        Objects.equals(this.applyHICountOff, workingrelation.applyHICountOff);
+        Objects.equals(this.workpositionId, workingrelation.workpositionId) &&
+        Objects.equals(this.superiorId, workingrelation.superiorId) &&
+        Objects.equals(this.typeofwage, workingrelation.typeofwage) &&
+        Objects.equals(this.wageamount, workingrelation.wageamount) &&
+        Objects.equals(this.alertcompensation, workingrelation.alertcompensation) &&
+        Objects.equals(this.shiftcalendarId, workingrelation.shiftcalendarId) &&
+        Objects.equals(this.calcworkinghours, workingrelation.calcworkinghours) &&
+        Objects.equals(this.calcovertime, workingrelation.calcovertime) &&
+        Objects.equals(this.calcminimalwage, workingrelation.calcminimalwage) &&
+        Objects.equals(this.noticedatedate, workingrelation.noticedatedate) &&
+        Objects.equals(this.noticeperiod, workingrelation.noticeperiod) &&
+        Objects.equals(this.workingtime, workingrelation.workingtime) &&
+        Objects.equals(this.workingdestination, workingrelation.workingdestination) &&
+        Objects.equals(this.workingplace, workingrelation.workingplace) &&
+        Objects.equals(this.typeofperiod, workingrelation.typeofperiod) &&
+        Objects.equals(this.typeofactivity, workingrelation.typeofactivity) &&
+        Objects.equals(this.externidentification, workingrelation.externidentification) &&
+        Objects.equals(this.caldaysofabsences, workingrelation.caldaysofabsences) &&
+        Objects.equals(this.hazardouswork, workingrelation.hazardouswork) &&
+        Objects.equals(this.typeofperiodText, workingrelation.typeofperiodText) &&
+        Objects.equals(this.typeofactivityText, workingrelation.typeofactivityText) &&
+        Objects.equals(this.individualweekduty, workingrelation.individualweekduty) &&
+        Objects.equals(this.retreportcodeId, workingrelation.retreportcodeId) &&
+        Objects.equals(this.feastmode, workingrelation.feastmode) &&
+        Objects.equals(this.wageclaim, workingrelation.wageclaim) &&
+        Objects.equals(this.jobgroupId, workingrelation.jobgroupId) &&
+        Objects.equals(this.dateofchangeedit, workingrelation.dateofchangeedit) &&
+        Objects.equals(this.jobclasificationiscoId, workingrelation.jobclasificationiscoId) &&
+        Objects.equals(this.irregularincome, workingrelation.irregularincome) &&
+        Objects.equals(this.busprojectId, workingrelation.busprojectId) &&
+        Objects.equals(this.brigadiernotpaypensins, workingrelation.brigadiernotpaypensins) &&
+        Objects.equals(this.longunemployed, workingrelation.longunemployed) &&
+        Objects.equals(this.fromlowdevdistrict, workingrelation.fromlowdevdistrict) &&
+        Objects.equals(this.applyhicountoff, workingrelation.applyhicountoff);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, dateOfChange, classID, objVersion, hidden, createdByID, correctedByID, employeeID, employPatternID, dateOfBeginDATE, realDateOfBeginDATE, typeOfBeginID, trialPeriod, trialPeriodDays, dateOfEndDATE, typeOfEndID, reasonOfEnd, naturalWage, socInsurancePeriods, healthInsurancePeriods, jobPositionID, jobClasificationID, manager, retInsOnly, partTimeJob, workingPlaceRise, workingPlaceExpiry, workingPlaceRiseCode, workingPlaceExpiryCode, personalNumber, numPersonalNumber, employeeName, patternCode, patternName, shortName, recordedStatus, calcWage, calcInsurance, divisionID, busOrderID, busTransactionID, category, workPositionID, superiorID, typeOfWage, wageAmount, alertCompensation, shiftCalendarID, calcWorkingHours, calcOverTime, calcMinimalWage, noticeDateDATE, noticePeriod, workingTime, workingDestination, workingPlace, typeOfPeriod, typeOfActivity, externIdentification, calDaysOfAbsences, hazardousWork, typeOfPeriodText, typeOfActivityText, individualWeekDuty, retReportCodeID, feastMode, wageClaim, jobGroupID, dateOfChangeEdit, jobClasificationISCOID, irregularIncome, busProjectID, brigadierNotPayPensIns, longUnemployed, fromLowDevDistrict, applyHICountOff);
+    return Objects.hash(displayname, id, dateofchange, classid, objversion, hidden, createdbyId, correctedbyId, employeeId, employpatternId, dateofbegindate, realdateofbegindate, typeofbeginId, trialperiod, trialperioddays, dateofenddate, typeofendId, reasonofend, naturalwage, socinsuranceperiods, healthinsuranceperiods, jobpositionId, jobclasificationId, manager, retinsonly, parttimejob, workingplacerise, workingplaceexpiry, workingplacerisecode, workingplaceexpirycode, personalnumber, numpersonalnumber, employeename, patterncode, patternname, shortname, recordedstatus, calcwage, calcinsurance, divisionId, busorderId, bustransactionId, category, workpositionId, superiorId, typeofwage, wageamount, alertcompensation, shiftcalendarId, calcworkinghours, calcovertime, calcminimalwage, noticedatedate, noticeperiod, workingtime, workingdestination, workingplace, typeofperiod, typeofactivity, externidentification, caldaysofabsences, hazardouswork, typeofperiodText, typeofactivityText, individualweekduty, retreportcodeId, feastmode, wageclaim, jobgroupId, dateofchangeedit, jobclasificationiscoId, irregularincome, busprojectId, brigadiernotpaypensins, longunemployed, fromlowdevdistrict, applyhicountoff);
   }
 
   @Override
@@ -1680,83 +1770,83 @@ public class Workingrelation   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Workingrelation {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    dateOfChange: ").append(toIndentedString(dateOfChange)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    dateofchange: ").append(toIndentedString(dateofchange)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    employeeID: ").append(toIndentedString(employeeID)).append("\n");
-    sb.append("    employPatternID: ").append(toIndentedString(employPatternID)).append("\n");
-    sb.append("    dateOfBeginDATE: ").append(toIndentedString(dateOfBeginDATE)).append("\n");
-    sb.append("    realDateOfBeginDATE: ").append(toIndentedString(realDateOfBeginDATE)).append("\n");
-    sb.append("    typeOfBeginID: ").append(toIndentedString(typeOfBeginID)).append("\n");
-    sb.append("    trialPeriod: ").append(toIndentedString(trialPeriod)).append("\n");
-    sb.append("    trialPeriodDays: ").append(toIndentedString(trialPeriodDays)).append("\n");
-    sb.append("    dateOfEndDATE: ").append(toIndentedString(dateOfEndDATE)).append("\n");
-    sb.append("    typeOfEndID: ").append(toIndentedString(typeOfEndID)).append("\n");
-    sb.append("    reasonOfEnd: ").append(toIndentedString(reasonOfEnd)).append("\n");
-    sb.append("    naturalWage: ").append(toIndentedString(naturalWage)).append("\n");
-    sb.append("    socInsurancePeriods: ").append(toIndentedString(socInsurancePeriods)).append("\n");
-    sb.append("    healthInsurancePeriods: ").append(toIndentedString(healthInsurancePeriods)).append("\n");
-    sb.append("    jobPositionID: ").append(toIndentedString(jobPositionID)).append("\n");
-    sb.append("    jobClasificationID: ").append(toIndentedString(jobClasificationID)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    employeeId: ").append(toIndentedString(employeeId)).append("\n");
+    sb.append("    employpatternId: ").append(toIndentedString(employpatternId)).append("\n");
+    sb.append("    dateofbegindate: ").append(toIndentedString(dateofbegindate)).append("\n");
+    sb.append("    realdateofbegindate: ").append(toIndentedString(realdateofbegindate)).append("\n");
+    sb.append("    typeofbeginId: ").append(toIndentedString(typeofbeginId)).append("\n");
+    sb.append("    trialperiod: ").append(toIndentedString(trialperiod)).append("\n");
+    sb.append("    trialperioddays: ").append(toIndentedString(trialperioddays)).append("\n");
+    sb.append("    dateofenddate: ").append(toIndentedString(dateofenddate)).append("\n");
+    sb.append("    typeofendId: ").append(toIndentedString(typeofendId)).append("\n");
+    sb.append("    reasonofend: ").append(toIndentedString(reasonofend)).append("\n");
+    sb.append("    naturalwage: ").append(toIndentedString(naturalwage)).append("\n");
+    sb.append("    socinsuranceperiods: ").append(toIndentedString(socinsuranceperiods)).append("\n");
+    sb.append("    healthinsuranceperiods: ").append(toIndentedString(healthinsuranceperiods)).append("\n");
+    sb.append("    jobpositionId: ").append(toIndentedString(jobpositionId)).append("\n");
+    sb.append("    jobclasificationId: ").append(toIndentedString(jobclasificationId)).append("\n");
     sb.append("    manager: ").append(toIndentedString(manager)).append("\n");
-    sb.append("    retInsOnly: ").append(toIndentedString(retInsOnly)).append("\n");
-    sb.append("    partTimeJob: ").append(toIndentedString(partTimeJob)).append("\n");
-    sb.append("    workingPlaceRise: ").append(toIndentedString(workingPlaceRise)).append("\n");
-    sb.append("    workingPlaceExpiry: ").append(toIndentedString(workingPlaceExpiry)).append("\n");
-    sb.append("    workingPlaceRiseCode: ").append(toIndentedString(workingPlaceRiseCode)).append("\n");
-    sb.append("    workingPlaceExpiryCode: ").append(toIndentedString(workingPlaceExpiryCode)).append("\n");
-    sb.append("    personalNumber: ").append(toIndentedString(personalNumber)).append("\n");
-    sb.append("    numPersonalNumber: ").append(toIndentedString(numPersonalNumber)).append("\n");
-    sb.append("    employeeName: ").append(toIndentedString(employeeName)).append("\n");
-    sb.append("    patternCode: ").append(toIndentedString(patternCode)).append("\n");
-    sb.append("    patternName: ").append(toIndentedString(patternName)).append("\n");
-    sb.append("    shortName: ").append(toIndentedString(shortName)).append("\n");
-    sb.append("    recordedStatus: ").append(toIndentedString(recordedStatus)).append("\n");
-    sb.append("    calcWage: ").append(toIndentedString(calcWage)).append("\n");
-    sb.append("    calcInsurance: ").append(toIndentedString(calcInsurance)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
+    sb.append("    retinsonly: ").append(toIndentedString(retinsonly)).append("\n");
+    sb.append("    parttimejob: ").append(toIndentedString(parttimejob)).append("\n");
+    sb.append("    workingplacerise: ").append(toIndentedString(workingplacerise)).append("\n");
+    sb.append("    workingplaceexpiry: ").append(toIndentedString(workingplaceexpiry)).append("\n");
+    sb.append("    workingplacerisecode: ").append(toIndentedString(workingplacerisecode)).append("\n");
+    sb.append("    workingplaceexpirycode: ").append(toIndentedString(workingplaceexpirycode)).append("\n");
+    sb.append("    personalnumber: ").append(toIndentedString(personalnumber)).append("\n");
+    sb.append("    numpersonalnumber: ").append(toIndentedString(numpersonalnumber)).append("\n");
+    sb.append("    employeename: ").append(toIndentedString(employeename)).append("\n");
+    sb.append("    patterncode: ").append(toIndentedString(patterncode)).append("\n");
+    sb.append("    patternname: ").append(toIndentedString(patternname)).append("\n");
+    sb.append("    shortname: ").append(toIndentedString(shortname)).append("\n");
+    sb.append("    recordedstatus: ").append(toIndentedString(recordedstatus)).append("\n");
+    sb.append("    calcwage: ").append(toIndentedString(calcwage)).append("\n");
+    sb.append("    calcinsurance: ").append(toIndentedString(calcinsurance)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
     sb.append("    category: ").append(toIndentedString(category)).append("\n");
-    sb.append("    workPositionID: ").append(toIndentedString(workPositionID)).append("\n");
-    sb.append("    superiorID: ").append(toIndentedString(superiorID)).append("\n");
-    sb.append("    typeOfWage: ").append(toIndentedString(typeOfWage)).append("\n");
-    sb.append("    wageAmount: ").append(toIndentedString(wageAmount)).append("\n");
-    sb.append("    alertCompensation: ").append(toIndentedString(alertCompensation)).append("\n");
-    sb.append("    shiftCalendarID: ").append(toIndentedString(shiftCalendarID)).append("\n");
-    sb.append("    calcWorkingHours: ").append(toIndentedString(calcWorkingHours)).append("\n");
-    sb.append("    calcOverTime: ").append(toIndentedString(calcOverTime)).append("\n");
-    sb.append("    calcMinimalWage: ").append(toIndentedString(calcMinimalWage)).append("\n");
-    sb.append("    noticeDateDATE: ").append(toIndentedString(noticeDateDATE)).append("\n");
-    sb.append("    noticePeriod: ").append(toIndentedString(noticePeriod)).append("\n");
-    sb.append("    workingTime: ").append(toIndentedString(workingTime)).append("\n");
-    sb.append("    workingDestination: ").append(toIndentedString(workingDestination)).append("\n");
-    sb.append("    workingPlace: ").append(toIndentedString(workingPlace)).append("\n");
-    sb.append("    typeOfPeriod: ").append(toIndentedString(typeOfPeriod)).append("\n");
-    sb.append("    typeOfActivity: ").append(toIndentedString(typeOfActivity)).append("\n");
-    sb.append("    externIdentification: ").append(toIndentedString(externIdentification)).append("\n");
-    sb.append("    calDaysOfAbsences: ").append(toIndentedString(calDaysOfAbsences)).append("\n");
-    sb.append("    hazardousWork: ").append(toIndentedString(hazardousWork)).append("\n");
-    sb.append("    typeOfPeriodText: ").append(toIndentedString(typeOfPeriodText)).append("\n");
-    sb.append("    typeOfActivityText: ").append(toIndentedString(typeOfActivityText)).append("\n");
-    sb.append("    individualWeekDuty: ").append(toIndentedString(individualWeekDuty)).append("\n");
-    sb.append("    retReportCodeID: ").append(toIndentedString(retReportCodeID)).append("\n");
-    sb.append("    feastMode: ").append(toIndentedString(feastMode)).append("\n");
-    sb.append("    wageClaim: ").append(toIndentedString(wageClaim)).append("\n");
-    sb.append("    jobGroupID: ").append(toIndentedString(jobGroupID)).append("\n");
-    sb.append("    dateOfChangeEdit: ").append(toIndentedString(dateOfChangeEdit)).append("\n");
-    sb.append("    jobClasificationISCOID: ").append(toIndentedString(jobClasificationISCOID)).append("\n");
-    sb.append("    irregularIncome: ").append(toIndentedString(irregularIncome)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    brigadierNotPayPensIns: ").append(toIndentedString(brigadierNotPayPensIns)).append("\n");
-    sb.append("    longUnemployed: ").append(toIndentedString(longUnemployed)).append("\n");
-    sb.append("    fromLowDevDistrict: ").append(toIndentedString(fromLowDevDistrict)).append("\n");
-    sb.append("    applyHICountOff: ").append(toIndentedString(applyHICountOff)).append("\n");
+    sb.append("    workpositionId: ").append(toIndentedString(workpositionId)).append("\n");
+    sb.append("    superiorId: ").append(toIndentedString(superiorId)).append("\n");
+    sb.append("    typeofwage: ").append(toIndentedString(typeofwage)).append("\n");
+    sb.append("    wageamount: ").append(toIndentedString(wageamount)).append("\n");
+    sb.append("    alertcompensation: ").append(toIndentedString(alertcompensation)).append("\n");
+    sb.append("    shiftcalendarId: ").append(toIndentedString(shiftcalendarId)).append("\n");
+    sb.append("    calcworkinghours: ").append(toIndentedString(calcworkinghours)).append("\n");
+    sb.append("    calcovertime: ").append(toIndentedString(calcovertime)).append("\n");
+    sb.append("    calcminimalwage: ").append(toIndentedString(calcminimalwage)).append("\n");
+    sb.append("    noticedatedate: ").append(toIndentedString(noticedatedate)).append("\n");
+    sb.append("    noticeperiod: ").append(toIndentedString(noticeperiod)).append("\n");
+    sb.append("    workingtime: ").append(toIndentedString(workingtime)).append("\n");
+    sb.append("    workingdestination: ").append(toIndentedString(workingdestination)).append("\n");
+    sb.append("    workingplace: ").append(toIndentedString(workingplace)).append("\n");
+    sb.append("    typeofperiod: ").append(toIndentedString(typeofperiod)).append("\n");
+    sb.append("    typeofactivity: ").append(toIndentedString(typeofactivity)).append("\n");
+    sb.append("    externidentification: ").append(toIndentedString(externidentification)).append("\n");
+    sb.append("    caldaysofabsences: ").append(toIndentedString(caldaysofabsences)).append("\n");
+    sb.append("    hazardouswork: ").append(toIndentedString(hazardouswork)).append("\n");
+    sb.append("    typeofperiodText: ").append(toIndentedString(typeofperiodText)).append("\n");
+    sb.append("    typeofactivityText: ").append(toIndentedString(typeofactivityText)).append("\n");
+    sb.append("    individualweekduty: ").append(toIndentedString(individualweekduty)).append("\n");
+    sb.append("    retreportcodeId: ").append(toIndentedString(retreportcodeId)).append("\n");
+    sb.append("    feastmode: ").append(toIndentedString(feastmode)).append("\n");
+    sb.append("    wageclaim: ").append(toIndentedString(wageclaim)).append("\n");
+    sb.append("    jobgroupId: ").append(toIndentedString(jobgroupId)).append("\n");
+    sb.append("    dateofchangeedit: ").append(toIndentedString(dateofchangeedit)).append("\n");
+    sb.append("    jobclasificationiscoId: ").append(toIndentedString(jobclasificationiscoId)).append("\n");
+    sb.append("    irregularincome: ").append(toIndentedString(irregularincome)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    brigadiernotpaypensins: ").append(toIndentedString(brigadiernotpaypensins)).append("\n");
+    sb.append("    longunemployed: ").append(toIndentedString(longunemployed)).append("\n");
+    sb.append("    fromlowdevdistrict: ").append(toIndentedString(fromlowdevdistrict)).append("\n");
+    sb.append("    applyhicountoff: ").append(toIndentedString(applyhicountoff)).append("\n");
     sb.append("}");
     return sb.toString();
   }

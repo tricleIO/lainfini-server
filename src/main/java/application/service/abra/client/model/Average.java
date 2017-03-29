@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,251 +37,287 @@ import java.util.Objects;
 /**
  * Average
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Average   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("CalcCharts")
-  private List<Averagechart> calcCharts = new ArrayList<Averagechart>();
+  @SerializedName("calccharts")
+  private List<Averagechart> calccharts = new ArrayList<Averagechart>();
 
-  @SerializedName("WorkingRelation_ID")
-  private String workingRelationID = null;
+  @SerializedName("workingrelation_id")
+  private String workingrelationId = null;
 
-  @SerializedName("Employee_ID")
-  private String employeeID = null;
+  @SerializedName("employee_id")
+  private String employeeId = null;
 
-  @SerializedName("AverageKind")
-  private Integer averageKind = null;
+  @SerializedName("averagekind")
+  private Integer averagekind = null;
 
-  @SerializedName("AverageOrigin")
-  private Integer averageOrigin = null;
+  @SerializedName("averageorigin")
+  private Integer averageorigin = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("CalcFrom$DATE")
-  private DateTime calcFromDATE = null;
+  @SerializedName("calcfrom$date")
+  private DateTime calcfromdate = null;
 
-  @SerializedName("CalcTo$DATE")
-  private DateTime calcToDATE = null;
+  @SerializedName("calcto$date")
+  private DateTime calctodate = null;
 
-  @SerializedName("ValidFrom$DATE")
-  private DateTime validFromDATE = null;
+  @SerializedName("validfrom$date")
+  private DateTime validfromdate = null;
 
-  @SerializedName("ValidTo$DATE")
-  private DateTime validToDATE = null;
+  @SerializedName("validto$date")
+  private DateTime validtodate = null;
 
-  @SerializedName("Numerator")
+  @SerializedName("numerator")
   private Double numerator = null;
 
-  @SerializedName("Denominator")
+  @SerializedName("denominator")
   private Double denominator = null;
 
-  @SerializedName("Average")
+  @SerializedName("average")
   private Double average = null;
 
-  @SerializedName("AverageKindAsText")
-  private String averageKindAsText = null;
+  @SerializedName("averagekindastext")
+  private String averagekindastext = null;
 
-  @SerializedName("AverageOriginAsText")
-  private String averageOriginAsText = null;
+  @SerializedName("averageoriginastext")
+  private String averageoriginastext = null;
 
-  @SerializedName("CalcChart_ID")
-  private String calcChartID = null;
+  @SerializedName("calcchart_id")
+  private String calcchartId = null;
 
-  @SerializedName("EmployeeName")
-  private String employeeName = null;
+  @SerializedName("employeename")
+  private String employeename = null;
 
-  @SerializedName("PERS_PersonalNumber")
-  private String pERSPersonalNumber = null;
+  @SerializedName("pers_personalnumber")
+  private String persPersonalnumber = null;
 
-  @SerializedName("DateFrom")
-  private DateTime dateFrom = null;
+  @SerializedName("datefrom")
+  private DateTime datefrom = null;
 
-  @SerializedName("DateTo")
-  private DateTime dateTo = null;
+  @SerializedName("dateto")
+  private DateTime dateto = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Average createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Average displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Average correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Average id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Average calcCharts(List<Averagechart> calcCharts) {
-    this.calcCharts = calcCharts;
-    return this;
-  }
-
-  public Average addCalcChartsItem(Averagechart calcChartsItem) {
-    this.calcCharts.add(calcChartsItem);
+  public Average classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Výpočtová schémata; kolekce BO Výp.vzorec průměru [nepersistentní položka]
-   * @return calcCharts
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Výpočtová schémata; kolekce BO Výp.vzorec průměru [nepersistentní položka]")
-  public List<Averagechart> getCalcCharts() {
-    return calcCharts;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setCalcCharts(List<Averagechart> calcCharts) {
-    this.calcCharts = calcCharts;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Average workingRelationID(String workingRelationID) {
-    this.workingRelationID = workingRelationID;
+  public Average objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Pracovní poměr; ID objektu Pracovní poměr [persistentní položka]
-   * @return workingRelationID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Pracovní poměr; ID objektu Pracovní poměr [persistentní položka]")
-  public String getWorkingRelationID() {
-    return workingRelationID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setWorkingRelationID(String workingRelationID) {
-    this.workingRelationID = workingRelationID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Average employeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public Average createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Zaměstnanec; ID objektu Zaměstnanec
-   * @return employeeID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Zaměstnanec; ID objektu Zaměstnanec")
-  public String getEmployeeID() {
-    return employeeID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setEmployeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Average averageKind(Integer averageKind) {
-    this.averageKind = averageKind;
+  public Average correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Typ průměru [persistentní položka]
-   * @return averageKind
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Typ průměru [persistentní položka]")
-  public Integer getAverageKind() {
-    return averageKind;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setAverageKind(Integer averageKind) {
-    this.averageKind = averageKind;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Average averageOrigin(Integer averageOrigin) {
-    this.averageOrigin = averageOrigin;
+  public Average calccharts(List<Averagechart> calccharts) {
+    this.calccharts = calccharts;
+    return this;
+  }
+
+  public Average addCalcchartsItem(Averagechart calcchartsItem) {
+    this.calccharts.add(calcchartsItem);
     return this;
   }
 
    /**
-   * Původ [persistentní položka]
-   * @return averageOrigin
+   * výpočtová schémata; kolekce bo výp.vzorec průměru [nepersistentní položka]
+   * @return calccharts
   **/
-  @ApiModelProperty(example = "null", value = "Původ [persistentní položka]")
-  public Integer getAverageOrigin() {
-    return averageOrigin;
+  @ApiModelProperty(example = "null", value = "výpočtová schémata; kolekce bo výp.vzorec průměru [nepersistentní položka]")
+  public List<Averagechart> getCalccharts() {
+    return calccharts;
   }
 
-  public void setAverageOrigin(Integer averageOrigin) {
-    this.averageOrigin = averageOrigin;
+  public void setCalccharts(List<Averagechart> calccharts) {
+    this.calccharts = calccharts;
+  }
+
+  public Average workingrelationId(String workingrelationId) {
+    this.workingrelationId = workingrelationId;
+    return this;
+  }
+
+   /**
+   * pracovní poměr; id objektu pracovní poměr [persistentní položka]
+   * @return workingrelationId
+  **/
+  @ApiModelProperty(example = "null", value = "pracovní poměr; id objektu pracovní poměr [persistentní položka]")
+  public String getWorkingrelationId() {
+    return workingrelationId;
+  }
+
+  public void setWorkingrelationId(String workingrelationId) {
+    this.workingrelationId = workingrelationId;
+  }
+
+  public Average employeeId(String employeeId) {
+    this.employeeId = employeeId;
+    return this;
+  }
+
+   /**
+   * zaměstnanec; id objektu zaměstnanec
+   * @return employeeId
+  **/
+  @ApiModelProperty(example = "null", value = "zaměstnanec; id objektu zaměstnanec")
+  public String getEmployeeId() {
+    return employeeId;
+  }
+
+  public void setEmployeeId(String employeeId) {
+    this.employeeId = employeeId;
+  }
+
+  public Average averagekind(Integer averagekind) {
+    this.averagekind = averagekind;
+    return this;
+  }
+
+   /**
+   * typ průměru [persistentní položka]
+   * @return averagekind
+  **/
+  @ApiModelProperty(example = "null", value = "typ průměru [persistentní položka]")
+  public Integer getAveragekind() {
+    return averagekind;
+  }
+
+  public void setAveragekind(Integer averagekind) {
+    this.averagekind = averagekind;
+  }
+
+  public Average averageorigin(Integer averageorigin) {
+    this.averageorigin = averageorigin;
+    return this;
+  }
+
+   /**
+   * původ [persistentní položka]
+   * @return averageorigin
+  **/
+  @ApiModelProperty(example = "null", value = "původ [persistentní položka]")
+  public Integer getAverageorigin() {
+    return averageorigin;
+  }
+
+  public void setAverageorigin(Integer averageorigin) {
+    this.averageorigin = averageorigin;
   }
 
   public Average description(String description) {
@@ -290,10 +326,10 @@ public class Average   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -302,76 +338,76 @@ public class Average   {
     this.description = description;
   }
 
-  public Average calcFromDATE(DateTime calcFromDATE) {
-    this.calcFromDATE = calcFromDATE;
+  public Average calcfromdate(DateTime calcfromdate) {
+    this.calcfromdate = calcfromdate;
     return this;
   }
 
    /**
-   * Spočten od [persistentní položka]
-   * @return calcFromDATE
+   * spočten od [persistentní položka]
+   * @return calcfromdate
   **/
-  @ApiModelProperty(example = "null", value = "Spočten od [persistentní položka]")
-  public DateTime getCalcFromDATE() {
-    return calcFromDATE;
+  @ApiModelProperty(example = "null", value = "spočten od [persistentní položka]")
+  public DateTime getCalcfromdate() {
+    return calcfromdate;
   }
 
-  public void setCalcFromDATE(DateTime calcFromDATE) {
-    this.calcFromDATE = calcFromDATE;
+  public void setCalcfromdate(DateTime calcfromdate) {
+    this.calcfromdate = calcfromdate;
   }
 
-  public Average calcToDATE(DateTime calcToDATE) {
-    this.calcToDATE = calcToDATE;
+  public Average calctodate(DateTime calctodate) {
+    this.calctodate = calctodate;
     return this;
   }
 
    /**
-   * Spočten do [persistentní položka]
-   * @return calcToDATE
+   * spočten do [persistentní položka]
+   * @return calctodate
   **/
-  @ApiModelProperty(example = "null", value = "Spočten do [persistentní položka]")
-  public DateTime getCalcToDATE() {
-    return calcToDATE;
+  @ApiModelProperty(example = "null", value = "spočten do [persistentní položka]")
+  public DateTime getCalctodate() {
+    return calctodate;
   }
 
-  public void setCalcToDATE(DateTime calcToDATE) {
-    this.calcToDATE = calcToDATE;
+  public void setCalctodate(DateTime calctodate) {
+    this.calctodate = calctodate;
   }
 
-  public Average validFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public Average validfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
     return this;
   }
 
    /**
-   * Platný od [persistentní položka]
-   * @return validFromDATE
+   * platný od [persistentní položka]
+   * @return validfromdate
   **/
-  @ApiModelProperty(example = "null", value = "Platný od [persistentní položka]")
-  public DateTime getValidFromDATE() {
-    return validFromDATE;
+  @ApiModelProperty(example = "null", value = "platný od [persistentní položka]")
+  public DateTime getValidfromdate() {
+    return validfromdate;
   }
 
-  public void setValidFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public void setValidfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
   }
 
-  public Average validToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public Average validtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
     return this;
   }
 
    /**
-   * Platný do [persistentní položka]
-   * @return validToDATE
+   * platný do [persistentní položka]
+   * @return validtodate
   **/
-  @ApiModelProperty(example = "null", value = "Platný do [persistentní položka]")
-  public DateTime getValidToDATE() {
-    return validToDATE;
+  @ApiModelProperty(example = "null", value = "platný do [persistentní položka]")
+  public DateTime getValidtodate() {
+    return validtodate;
   }
 
-  public void setValidToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public void setValidtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
   }
 
   public Average numerator(Double numerator) {
@@ -398,10 +434,10 @@ public class Average   {
   }
 
    /**
-   * Jmenovatel [persistentní položka]
+   * jmenovatel [persistentní položka]
    * @return denominator
   **/
-  @ApiModelProperty(example = "null", value = "Jmenovatel [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "jmenovatel [persistentní položka]")
   public Double getDenominator() {
     return denominator;
   }
@@ -416,10 +452,10 @@ public class Average   {
   }
 
    /**
-   * Průměr
+   * průměr
    * @return average
   **/
-  @ApiModelProperty(example = "null", value = "Průměr")
+  @ApiModelProperty(example = "null", value = "průměr")
   public Double getAverage() {
     return average;
   }
@@ -428,112 +464,130 @@ public class Average   {
     this.average = average;
   }
 
-  public Average averageKindAsText(String averageKindAsText) {
-    this.averageKindAsText = averageKindAsText;
+  public Average averagekindastext(String averagekindastext) {
+    this.averagekindastext = averagekindastext;
     return this;
   }
 
    /**
-   * Typ průměru
-   * @return averageKindAsText
+   * typ průměru
+   * @return averagekindastext
   **/
-  @ApiModelProperty(example = "null", value = "Typ průměru")
-  public String getAverageKindAsText() {
-    return averageKindAsText;
+  @ApiModelProperty(example = "null", value = "typ průměru")
+  public String getAveragekindastext() {
+    return averagekindastext;
   }
 
-  public void setAverageKindAsText(String averageKindAsText) {
-    this.averageKindAsText = averageKindAsText;
+  public void setAveragekindastext(String averagekindastext) {
+    this.averagekindastext = averagekindastext;
   }
 
-  public Average averageOriginAsText(String averageOriginAsText) {
-    this.averageOriginAsText = averageOriginAsText;
+  public Average averageoriginastext(String averageoriginastext) {
+    this.averageoriginastext = averageoriginastext;
     return this;
   }
 
    /**
-   * Původ průměru
-   * @return averageOriginAsText
+   * původ průměru
+   * @return averageoriginastext
   **/
-  @ApiModelProperty(example = "null", value = "Původ průměru")
-  public String getAverageOriginAsText() {
-    return averageOriginAsText;
+  @ApiModelProperty(example = "null", value = "původ průměru")
+  public String getAverageoriginastext() {
+    return averageoriginastext;
   }
 
-  public void setAverageOriginAsText(String averageOriginAsText) {
-    this.averageOriginAsText = averageOriginAsText;
+  public void setAverageoriginastext(String averageoriginastext) {
+    this.averageoriginastext = averageoriginastext;
   }
 
-  public Average calcChartID(String calcChartID) {
-    this.calcChartID = calcChartID;
+  public Average calcchartId(String calcchartId) {
+    this.calcchartId = calcchartId;
     return this;
   }
 
    /**
-   * Výp.schéma; ID objektu Výpočtové schéma
-   * @return calcChartID
+   * výp.schéma; id objektu výpočtové schéma
+   * @return calcchartId
   **/
-  @ApiModelProperty(example = "null", value = "Výp.schéma; ID objektu Výpočtové schéma")
-  public String getCalcChartID() {
-    return calcChartID;
+  @ApiModelProperty(example = "null", value = "výp.schéma; id objektu výpočtové schéma")
+  public String getCalcchartId() {
+    return calcchartId;
   }
 
-  public void setCalcChartID(String calcChartID) {
-    this.calcChartID = calcChartID;
+  public void setCalcchartId(String calcchartId) {
+    this.calcchartId = calcchartId;
   }
 
-   /**
-   * Příjmení a jméno
-   * @return employeeName
-  **/
-  @ApiModelProperty(example = "null", value = "Příjmení a jméno")
-  public String getEmployeeName() {
-    return employeeName;
-  }
-
-   /**
-   * Os. číslo
-   * @return pERSPersonalNumber
-  **/
-  @ApiModelProperty(example = "null", value = "Os. číslo")
-  public String getPERSPersonalNumber() {
-    return pERSPersonalNumber;
-  }
-
-  public Average dateFrom(DateTime dateFrom) {
-    this.dateFrom = dateFrom;
+  public Average employeename(String employeename) {
+    this.employeename = employeename;
     return this;
   }
 
    /**
-   * Data od
-   * @return dateFrom
+   * příjmení a jméno
+   * @return employeename
   **/
-  @ApiModelProperty(example = "null", value = "Data od")
-  public DateTime getDateFrom() {
-    return dateFrom;
+  @ApiModelProperty(example = "null", value = "příjmení a jméno")
+  public String getEmployeename() {
+    return employeename;
   }
 
-  public void setDateFrom(DateTime dateFrom) {
-    this.dateFrom = dateFrom;
+  public void setEmployeename(String employeename) {
+    this.employeename = employeename;
   }
 
-  public Average dateTo(DateTime dateTo) {
-    this.dateTo = dateTo;
+  public Average persPersonalnumber(String persPersonalnumber) {
+    this.persPersonalnumber = persPersonalnumber;
     return this;
   }
 
    /**
-   * Data do
-   * @return dateTo
+   * os. číslo
+   * @return persPersonalnumber
   **/
-  @ApiModelProperty(example = "null", value = "Data do")
-  public DateTime getDateTo() {
-    return dateTo;
+  @ApiModelProperty(example = "null", value = "os. číslo")
+  public String getPersPersonalnumber() {
+    return persPersonalnumber;
   }
 
-  public void setDateTo(DateTime dateTo) {
-    this.dateTo = dateTo;
+  public void setPersPersonalnumber(String persPersonalnumber) {
+    this.persPersonalnumber = persPersonalnumber;
+  }
+
+  public Average datefrom(DateTime datefrom) {
+    this.datefrom = datefrom;
+    return this;
+  }
+
+   /**
+   * data od
+   * @return datefrom
+  **/
+  @ApiModelProperty(example = "null", value = "data od")
+  public DateTime getDatefrom() {
+    return datefrom;
+  }
+
+  public void setDatefrom(DateTime datefrom) {
+    this.datefrom = datefrom;
+  }
+
+  public Average dateto(DateTime dateto) {
+    this.dateto = dateto;
+    return this;
+  }
+
+   /**
+   * data do
+   * @return dateto
+  **/
+  @ApiModelProperty(example = "null", value = "data do")
+  public DateTime getDateto() {
+    return dateto;
+  }
+
+  public void setDateto(DateTime dateto) {
+    this.dateto = dateto;
   }
 
 
@@ -546,37 +600,37 @@ public class Average   {
       return false;
     }
     Average average = (Average) o;
-    return Objects.equals(this.displayName, average.displayName) &&
-        Objects.equals(this.ID, average.ID) &&
-        Objects.equals(this.classID, average.classID) &&
-        Objects.equals(this.objVersion, average.objVersion) &&
-        Objects.equals(this.createdByID, average.createdByID) &&
-        Objects.equals(this.correctedByID, average.correctedByID) &&
-        Objects.equals(this.calcCharts, average.calcCharts) &&
-        Objects.equals(this.workingRelationID, average.workingRelationID) &&
-        Objects.equals(this.employeeID, average.employeeID) &&
-        Objects.equals(this.averageKind, average.averageKind) &&
-        Objects.equals(this.averageOrigin, average.averageOrigin) &&
+    return Objects.equals(this.displayname, average.displayname) &&
+        Objects.equals(this.id, average.id) &&
+        Objects.equals(this.classid, average.classid) &&
+        Objects.equals(this.objversion, average.objversion) &&
+        Objects.equals(this.createdbyId, average.createdbyId) &&
+        Objects.equals(this.correctedbyId, average.correctedbyId) &&
+        Objects.equals(this.calccharts, average.calccharts) &&
+        Objects.equals(this.workingrelationId, average.workingrelationId) &&
+        Objects.equals(this.employeeId, average.employeeId) &&
+        Objects.equals(this.averagekind, average.averagekind) &&
+        Objects.equals(this.averageorigin, average.averageorigin) &&
         Objects.equals(this.description, average.description) &&
-        Objects.equals(this.calcFromDATE, average.calcFromDATE) &&
-        Objects.equals(this.calcToDATE, average.calcToDATE) &&
-        Objects.equals(this.validFromDATE, average.validFromDATE) &&
-        Objects.equals(this.validToDATE, average.validToDATE) &&
+        Objects.equals(this.calcfromdate, average.calcfromdate) &&
+        Objects.equals(this.calctodate, average.calctodate) &&
+        Objects.equals(this.validfromdate, average.validfromdate) &&
+        Objects.equals(this.validtodate, average.validtodate) &&
         Objects.equals(this.numerator, average.numerator) &&
         Objects.equals(this.denominator, average.denominator) &&
         Objects.equals(this.average, average.average) &&
-        Objects.equals(this.averageKindAsText, average.averageKindAsText) &&
-        Objects.equals(this.averageOriginAsText, average.averageOriginAsText) &&
-        Objects.equals(this.calcChartID, average.calcChartID) &&
-        Objects.equals(this.employeeName, average.employeeName) &&
-        Objects.equals(this.pERSPersonalNumber, average.pERSPersonalNumber) &&
-        Objects.equals(this.dateFrom, average.dateFrom) &&
-        Objects.equals(this.dateTo, average.dateTo);
+        Objects.equals(this.averagekindastext, average.averagekindastext) &&
+        Objects.equals(this.averageoriginastext, average.averageoriginastext) &&
+        Objects.equals(this.calcchartId, average.calcchartId) &&
+        Objects.equals(this.employeename, average.employeename) &&
+        Objects.equals(this.persPersonalnumber, average.persPersonalnumber) &&
+        Objects.equals(this.datefrom, average.datefrom) &&
+        Objects.equals(this.dateto, average.dateto);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, createdByID, correctedByID, calcCharts, workingRelationID, employeeID, averageKind, averageOrigin, description, calcFromDATE, calcToDATE, validFromDATE, validToDATE, numerator, denominator, average, averageKindAsText, averageOriginAsText, calcChartID, employeeName, pERSPersonalNumber, dateFrom, dateTo);
+    return Objects.hash(displayname, id, classid, objversion, createdbyId, correctedbyId, calccharts, workingrelationId, employeeId, averagekind, averageorigin, description, calcfromdate, calctodate, validfromdate, validtodate, numerator, denominator, average, averagekindastext, averageoriginastext, calcchartId, employeename, persPersonalnumber, datefrom, dateto);
   }
 
   @Override
@@ -584,32 +638,32 @@ public class Average   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Average {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    calcCharts: ").append(toIndentedString(calcCharts)).append("\n");
-    sb.append("    workingRelationID: ").append(toIndentedString(workingRelationID)).append("\n");
-    sb.append("    employeeID: ").append(toIndentedString(employeeID)).append("\n");
-    sb.append("    averageKind: ").append(toIndentedString(averageKind)).append("\n");
-    sb.append("    averageOrigin: ").append(toIndentedString(averageOrigin)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    calccharts: ").append(toIndentedString(calccharts)).append("\n");
+    sb.append("    workingrelationId: ").append(toIndentedString(workingrelationId)).append("\n");
+    sb.append("    employeeId: ").append(toIndentedString(employeeId)).append("\n");
+    sb.append("    averagekind: ").append(toIndentedString(averagekind)).append("\n");
+    sb.append("    averageorigin: ").append(toIndentedString(averageorigin)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    calcFromDATE: ").append(toIndentedString(calcFromDATE)).append("\n");
-    sb.append("    calcToDATE: ").append(toIndentedString(calcToDATE)).append("\n");
-    sb.append("    validFromDATE: ").append(toIndentedString(validFromDATE)).append("\n");
-    sb.append("    validToDATE: ").append(toIndentedString(validToDATE)).append("\n");
+    sb.append("    calcfromdate: ").append(toIndentedString(calcfromdate)).append("\n");
+    sb.append("    calctodate: ").append(toIndentedString(calctodate)).append("\n");
+    sb.append("    validfromdate: ").append(toIndentedString(validfromdate)).append("\n");
+    sb.append("    validtodate: ").append(toIndentedString(validtodate)).append("\n");
     sb.append("    numerator: ").append(toIndentedString(numerator)).append("\n");
     sb.append("    denominator: ").append(toIndentedString(denominator)).append("\n");
     sb.append("    average: ").append(toIndentedString(average)).append("\n");
-    sb.append("    averageKindAsText: ").append(toIndentedString(averageKindAsText)).append("\n");
-    sb.append("    averageOriginAsText: ").append(toIndentedString(averageOriginAsText)).append("\n");
-    sb.append("    calcChartID: ").append(toIndentedString(calcChartID)).append("\n");
-    sb.append("    employeeName: ").append(toIndentedString(employeeName)).append("\n");
-    sb.append("    pERSPersonalNumber: ").append(toIndentedString(pERSPersonalNumber)).append("\n");
-    sb.append("    dateFrom: ").append(toIndentedString(dateFrom)).append("\n");
-    sb.append("    dateTo: ").append(toIndentedString(dateTo)).append("\n");
+    sb.append("    averagekindastext: ").append(toIndentedString(averagekindastext)).append("\n");
+    sb.append("    averageoriginastext: ").append(toIndentedString(averageoriginastext)).append("\n");
+    sb.append("    calcchartId: ").append(toIndentedString(calcchartId)).append("\n");
+    sb.append("    employeename: ").append(toIndentedString(employeename)).append("\n");
+    sb.append("    persPersonalnumber: ").append(toIndentedString(persPersonalnumber)).append("\n");
+    sb.append("    datefrom: ").append(toIndentedString(datefrom)).append("\n");
+    sb.append("    dateto: ").append(toIndentedString(dateto)).append("\n");
     sb.append("}");
     return sb.toString();
   }

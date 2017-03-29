@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,273 +35,309 @@ import java.util.Objects;
 /**
  * Eetturnover
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Eetturnover   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("MasterDocumentType")
-  private String masterDocumentType = null;
+  @SerializedName("masterdocumenttype")
+  private String masterdocumenttype = null;
 
-  @SerializedName("MasterDocument_ID")
-  private String masterDocumentID = null;
+  @SerializedName("masterdocument_id")
+  private String masterdocumentId = null;
 
-  @SerializedName("TurnoverDateTime$DATE")
-  private DateTime turnoverDateTimeDATE = null;
+  @SerializedName("turnoverdatetime$date")
+  private DateTime turnoverdatetimedate = null;
 
-  @SerializedName("TurnoverNumber")
-  private String turnoverNumber = null;
+  @SerializedName("turnovernumber")
+  private String turnovernumber = null;
 
-  @SerializedName("Dirty")
+  @SerializedName("dirty")
   private Boolean dirty = null;
 
-  @SerializedName("Establishment_ID")
-  private String establishmentID = null;
+  @SerializedName("establishment_id")
+  private String establishmentId = null;
 
-  @SerializedName("SendingAt$DATE")
-  private DateTime sendingAtDATE = null;
+  @SerializedName("sendingat$date")
+  private DateTime sendingatdate = null;
 
-  @SerializedName("FirstSending")
-  private Boolean firstSending = null;
+  @SerializedName("firstsending")
+  private Boolean firstsending = null;
 
-  @SerializedName("SendingMode")
-  private Integer sendingMode = null;
+  @SerializedName("sendingmode")
+  private Integer sendingmode = null;
 
-  @SerializedName("VATIdentNumber")
-  private String vATIdentNumber = null;
+  @SerializedName("vatidentnumber")
+  private String vatidentnumber = null;
 
-  @SerializedName("VATIdentNumberAuthorize")
-  private String vATIdentNumberAuthorize = null;
+  @SerializedName("vatidentnumberauthorize")
+  private String vatidentnumberauthorize = null;
 
-  @SerializedName("Establishment")
+  @SerializedName("establishment")
   private Integer establishment = null;
 
-  @SerializedName("CashDeviceCode")
-  private String cashDeviceCode = null;
+  @SerializedName("cashdevicecode")
+  private String cashdevicecode = null;
 
-  @SerializedName("ReceiptAt$DATE")
-  private DateTime receiptAtDATE = null;
+  @SerializedName("receiptat$date")
+  private DateTime receiptatdate = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("AmountOutOfVAT")
-  private Double amountOutOfVAT = null;
+  @SerializedName("amountoutofvat")
+  private Double amountoutofvat = null;
 
-  @SerializedName("AmountWithoutVATBasicRate")
-  private Double amountWithoutVATBasicRate = null;
+  @SerializedName("amountwithoutvatbasicrate")
+  private Double amountwithoutvatbasicrate = null;
 
-  @SerializedName("VATBasicRate")
-  private Double vATBasicRate = null;
+  @SerializedName("vatbasicrate")
+  private Double vatbasicrate = null;
 
-  @SerializedName("AmountWithoutVATReducedRate")
-  private Double amountWithoutVATReducedRate = null;
+  @SerializedName("amountwithoutvatreducedrate")
+  private Double amountwithoutvatreducedrate = null;
 
-  @SerializedName("VATReducedRate")
-  private Double vATReducedRate = null;
+  @SerializedName("vatreducedrate")
+  private Double vatreducedrate = null;
 
-  @SerializedName("AmountWithoutVATReduced2Rate")
-  private Double amountWithoutVATReduced2Rate = null;
+  @SerializedName("amountwithoutvatreduced2rate")
+  private Double amountwithoutvatreduced2rate = null;
 
-  @SerializedName("VATReduced2Rate")
-  private Double vATReduced2Rate = null;
+  @SerializedName("vatreduced2rate")
+  private Double vatreduced2rate = null;
 
-  @SerializedName("AmountTrevelService")
-  private Double amountTrevelService = null;
+  @SerializedName("amounttrevelservice")
+  private Double amounttrevelservice = null;
 
-  @SerializedName("AmountSecondhandBasicRate")
-  private Double amountSecondhandBasicRate = null;
+  @SerializedName("amountsecondhandbasicrate")
+  private Double amountsecondhandbasicrate = null;
 
-  @SerializedName("AmountSecondhandReducedRate")
-  private Double amountSecondhandReducedRate = null;
+  @SerializedName("amountsecondhandreducedrate")
+  private Double amountsecondhandreducedrate = null;
 
-  @SerializedName("AmountSecondhandReduced2Rate")
-  private Double amountSecondhandReduced2Rate = null;
+  @SerializedName("amountsecondhandreduced2rate")
+  private Double amountsecondhandreduced2rate = null;
 
-  @SerializedName("AmountForSubsequentDrawdown")
-  private Double amountForSubsequentDrawdown = null;
+  @SerializedName("amountforsubsequentdrawdown")
+  private Double amountforsubsequentdrawdown = null;
 
-  @SerializedName("AmountSubsequentDrawdown")
-  private Double amountSubsequentDrawdown = null;
+  @SerializedName("amountsubsequentdrawdown")
+  private Double amountsubsequentdrawdown = null;
 
-  @SerializedName("TurnoverMode")
-  private Integer turnoverMode = null;
+  @SerializedName("turnovermode")
+  private Integer turnovermode = null;
 
-  @SerializedName("PKP")
-  private String PKP = null;
+  @SerializedName("pkp")
+  private String pkp = null;
 
-  @SerializedName("BKP")
-  private String BKP = null;
+  @SerializedName("bkp")
+  private String bkp = null;
 
-  @SerializedName("FIK")
-  private String FIK = null;
+  @SerializedName("fik")
+  private String fik = null;
 
-  @SerializedName("TurnoverState")
-  private Integer turnoverState = null;
+  @SerializedName("turnoverstate")
+  private Integer turnoverstate = null;
 
-  @SerializedName("DataMessage")
-  private String dataMessage = null;
+  @SerializedName("datamessage")
+  private String datamessage = null;
 
-  @SerializedName("ResponseMessage")
-  private String responseMessage = null;
+  @SerializedName("responsemessage")
+  private String responsemessage = null;
 
-  @SerializedName("LoggingProcessing")
-  private String loggingProcessing = null;
+  @SerializedName("loggingprocessing")
+  private String loggingprocessing = null;
 
-  @SerializedName("VersionOfInterface")
-  private Integer versionOfInterface = null;
+  @SerializedName("versionofinterface")
+  private Integer versionofinterface = null;
 
-  @SerializedName("AmountOutOfVATIsSet")
-  private Boolean amountOutOfVATIsSet = null;
+  @SerializedName("amountoutofvatisset")
+  private Boolean amountoutofvatisset = null;
 
-  @SerializedName("AmountBasicRateIsSet")
-  private Boolean amountBasicRateIsSet = null;
+  @SerializedName("amountbasicrateisset")
+  private Boolean amountbasicrateisset = null;
 
-  @SerializedName("AmountReducedRateIsSet")
-  private Boolean amountReducedRateIsSet = null;
+  @SerializedName("amountreducedrateisset")
+  private Boolean amountreducedrateisset = null;
 
-  @SerializedName("AmountReduced2RateIsSet")
-  private Boolean amountReduced2RateIsSet = null;
+  @SerializedName("amountreduced2rateisset")
+  private Boolean amountreduced2rateisset = null;
 
-  @SerializedName("AmountTrevelServiceIsSet")
-  private Boolean amountTrevelServiceIsSet = null;
+  @SerializedName("amounttrevelserviceisset")
+  private Boolean amounttrevelserviceisset = null;
 
-  @SerializedName("AmountSecondhandBasRateIsSet")
-  private Boolean amountSecondhandBasRateIsSet = null;
+  @SerializedName("amountsecondhandbasrateisset")
+  private Boolean amountsecondhandbasrateisset = null;
 
-  @SerializedName("AmountSecondhandRedRateIsSet")
-  private Boolean amountSecondhandRedRateIsSet = null;
+  @SerializedName("amountsecondhandredrateisset")
+  private Boolean amountsecondhandredrateisset = null;
 
-  @SerializedName("AmountSecondhandRed2RateIsSet")
-  private Boolean amountSecondhandRed2RateIsSet = null;
+  @SerializedName("amountsecondhandred2rateisset")
+  private Boolean amountsecondhandred2rateisset = null;
 
-  @SerializedName("AmountForSubseqDrawIsSet")
-  private Boolean amountForSubseqDrawIsSet = null;
+  @SerializedName("amountforsubseqdrawisset")
+  private Boolean amountforsubseqdrawisset = null;
 
-  @SerializedName("AmountSubseqDrawIsSet")
-  private Boolean amountSubseqDrawIsSet = null;
+  @SerializedName("amountsubseqdrawisset")
+  private Boolean amountsubseqdrawisset = null;
 
-  @SerializedName("SupplementaryFIK")
-  private Boolean supplementaryFIK = null;
+  @SerializedName("supplementaryfik")
+  private Boolean supplementaryfik = null;
 
-  @SerializedName("SendingDuration")
-  private Double sendingDuration = null;
+  @SerializedName("sendingduration")
+  private Double sendingduration = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Eetturnover masterDocumentType(String masterDocumentType) {
-    this.masterDocumentType = masterDocumentType;
+  public Eetturnover displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Typ nadřízeného dokladu [persistentní položka]
-   * @return masterDocumentType
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Typ nadřízeného dokladu [persistentní položka]")
-  public String getMasterDocumentType() {
-    return masterDocumentType;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setMasterDocumentType(String masterDocumentType) {
-    this.masterDocumentType = masterDocumentType;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Eetturnover masterDocumentID(String masterDocumentID) {
-    this.masterDocumentID = masterDocumentID;
+  public Eetturnover id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Nadřízený doklad; ID objektu Dokument [persistentní položka]
-   * @return masterDocumentID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízený doklad; ID objektu Dokument [persistentní položka]")
-  public String getMasterDocumentID() {
-    return masterDocumentID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setMasterDocumentID(String masterDocumentID) {
-    this.masterDocumentID = masterDocumentID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Eetturnover turnoverDateTimeDATE(DateTime turnoverDateTimeDATE) {
-    this.turnoverDateTimeDATE = turnoverDateTimeDATE;
+  public Eetturnover classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Datum a čas přijetí tržby [persistentní položka]
-   * @return turnoverDateTimeDATE
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Datum a čas přijetí tržby [persistentní položka]")
-  public DateTime getTurnoverDateTimeDATE() {
-    return turnoverDateTimeDATE;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setTurnoverDateTimeDATE(DateTime turnoverDateTimeDATE) {
-    this.turnoverDateTimeDATE = turnoverDateTimeDATE;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Eetturnover turnoverNumber(String turnoverNumber) {
-    this.turnoverNumber = turnoverNumber;
+  public Eetturnover objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return turnoverNumber
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public String getTurnoverNumber() {
-    return turnoverNumber;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setTurnoverNumber(String turnoverNumber) {
-    this.turnoverNumber = turnoverNumber;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Eetturnover masterdocumenttype(String masterdocumenttype) {
+    this.masterdocumenttype = masterdocumenttype;
+    return this;
+  }
+
+   /**
+   * typ nadřízeného dokladu [persistentní položka]
+   * @return masterdocumenttype
+  **/
+  @ApiModelProperty(example = "null", value = "typ nadřízeného dokladu [persistentní položka]")
+  public String getMasterdocumenttype() {
+    return masterdocumenttype;
+  }
+
+  public void setMasterdocumenttype(String masterdocumenttype) {
+    this.masterdocumenttype = masterdocumenttype;
+  }
+
+  public Eetturnover masterdocumentId(String masterdocumentId) {
+    this.masterdocumentId = masterdocumentId;
+    return this;
+  }
+
+   /**
+   * nadřízený doklad; id objektu dokument [persistentní položka]
+   * @return masterdocumentId
+  **/
+  @ApiModelProperty(example = "null", value = "nadřízený doklad; id objektu dokument [persistentní položka]")
+  public String getMasterdocumentId() {
+    return masterdocumentId;
+  }
+
+  public void setMasterdocumentId(String masterdocumentId) {
+    this.masterdocumentId = masterdocumentId;
+  }
+
+  public Eetturnover turnoverdatetimedate(DateTime turnoverdatetimedate) {
+    this.turnoverdatetimedate = turnoverdatetimedate;
+    return this;
+  }
+
+   /**
+   * datum a čas přijetí tržby [persistentní položka]
+   * @return turnoverdatetimedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum a čas přijetí tržby [persistentní položka]")
+  public DateTime getTurnoverdatetimedate() {
+    return turnoverdatetimedate;
+  }
+
+  public void setTurnoverdatetimedate(DateTime turnoverdatetimedate) {
+    this.turnoverdatetimedate = turnoverdatetimedate;
+  }
+
+  public Eetturnover turnovernumber(String turnovernumber) {
+    this.turnovernumber = turnovernumber;
+    return this;
+  }
+
+   /**
+   * pořadové číslo [persistentní položka]
+   * @return turnovernumber
+  **/
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public String getTurnovernumber() {
+    return turnovernumber;
+  }
+
+  public void setTurnovernumber(String turnovernumber) {
+    this.turnovernumber = turnovernumber;
   }
 
   public Eetturnover dirty(Boolean dirty) {
@@ -310,10 +346,10 @@ public class Eetturnover   {
   }
 
    /**
-   * Zakázané přepočítání [persistentní položka]
+   * zakázané přepočítání [persistentní položka]
    * @return dirty
   **/
-  @ApiModelProperty(example = "null", value = "Zakázané přepočítání [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "zakázané přepočítání [persistentní položka]")
   public Boolean getDirty() {
     return dirty;
   }
@@ -322,112 +358,112 @@ public class Eetturnover   {
     this.dirty = dirty;
   }
 
-  public Eetturnover establishmentID(String establishmentID) {
-    this.establishmentID = establishmentID;
+  public Eetturnover establishmentId(String establishmentId) {
+    this.establishmentId = establishmentId;
     return this;
   }
 
    /**
-   * Provozovna; ID objektu Provozovna EET [persistentní položka]
-   * @return establishmentID
+   * provozovna; id objektu provozovna eet [persistentní položka]
+   * @return establishmentId
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna; ID objektu Provozovna EET [persistentní položka]")
-  public String getEstablishmentID() {
-    return establishmentID;
+  @ApiModelProperty(example = "null", value = "provozovna; id objektu provozovna eet [persistentní položka]")
+  public String getEstablishmentId() {
+    return establishmentId;
   }
 
-  public void setEstablishmentID(String establishmentID) {
-    this.establishmentID = establishmentID;
+  public void setEstablishmentId(String establishmentId) {
+    this.establishmentId = establishmentId;
   }
 
-  public Eetturnover sendingAtDATE(DateTime sendingAtDATE) {
-    this.sendingAtDATE = sendingAtDATE;
+  public Eetturnover sendingatdate(DateTime sendingatdate) {
+    this.sendingatdate = sendingatdate;
     return this;
   }
 
    /**
-   * Odesláno [persistentní položka]
-   * @return sendingAtDATE
+   * odesláno [persistentní položka]
+   * @return sendingatdate
   **/
-  @ApiModelProperty(example = "null", value = "Odesláno [persistentní položka]")
-  public DateTime getSendingAtDATE() {
-    return sendingAtDATE;
+  @ApiModelProperty(example = "null", value = "odesláno [persistentní položka]")
+  public DateTime getSendingatdate() {
+    return sendingatdate;
   }
 
-  public void setSendingAtDATE(DateTime sendingAtDATE) {
-    this.sendingAtDATE = sendingAtDATE;
+  public void setSendingatdate(DateTime sendingatdate) {
+    this.sendingatdate = sendingatdate;
   }
 
-  public Eetturnover firstSending(Boolean firstSending) {
-    this.firstSending = firstSending;
+  public Eetturnover firstsending(Boolean firstsending) {
+    this.firstsending = firstsending;
     return this;
   }
 
    /**
-   * První zaslání [persistentní položka]
-   * @return firstSending
+   * první zaslání [persistentní položka]
+   * @return firstsending
   **/
-  @ApiModelProperty(example = "null", value = "První zaslání [persistentní položka]")
-  public Boolean getFirstSending() {
-    return firstSending;
+  @ApiModelProperty(example = "null", value = "první zaslání [persistentní položka]")
+  public Boolean getFirstsending() {
+    return firstsending;
   }
 
-  public void setFirstSending(Boolean firstSending) {
-    this.firstSending = firstSending;
+  public void setFirstsending(Boolean firstsending) {
+    this.firstsending = firstsending;
   }
 
-  public Eetturnover sendingMode(Integer sendingMode) {
-    this.sendingMode = sendingMode;
+  public Eetturnover sendingmode(Integer sendingmode) {
+    this.sendingmode = sendingmode;
     return this;
   }
 
    /**
-   * Mód odesílání [persistentní položka]
-   * @return sendingMode
+   * mód odesílání [persistentní položka]
+   * @return sendingmode
   **/
-  @ApiModelProperty(example = "null", value = "Mód odesílání [persistentní položka]")
-  public Integer getSendingMode() {
-    return sendingMode;
+  @ApiModelProperty(example = "null", value = "mód odesílání [persistentní položka]")
+  public Integer getSendingmode() {
+    return sendingmode;
   }
 
-  public void setSendingMode(Integer sendingMode) {
-    this.sendingMode = sendingMode;
+  public void setSendingmode(Integer sendingmode) {
+    this.sendingmode = sendingmode;
   }
 
-  public Eetturnover vATIdentNumber(String vATIdentNumber) {
-    this.vATIdentNumber = vATIdentNumber;
+  public Eetturnover vatidentnumber(String vatidentnumber) {
+    this.vatidentnumber = vatidentnumber;
     return this;
   }
 
    /**
-   * DIČ [persistentní položka]
-   * @return vATIdentNumber
+   * diČ [persistentní položka]
+   * @return vatidentnumber
   **/
-  @ApiModelProperty(example = "null", value = "DIČ [persistentní položka]")
-  public String getVATIdentNumber() {
-    return vATIdentNumber;
+  @ApiModelProperty(example = "null", value = "diČ [persistentní položka]")
+  public String getVatidentnumber() {
+    return vatidentnumber;
   }
 
-  public void setVATIdentNumber(String vATIdentNumber) {
-    this.vATIdentNumber = vATIdentNumber;
+  public void setVatidentnumber(String vatidentnumber) {
+    this.vatidentnumber = vatidentnumber;
   }
 
-  public Eetturnover vATIdentNumberAuthorize(String vATIdentNumberAuthorize) {
-    this.vATIdentNumberAuthorize = vATIdentNumberAuthorize;
+  public Eetturnover vatidentnumberauthorize(String vatidentnumberauthorize) {
+    this.vatidentnumberauthorize = vatidentnumberauthorize;
     return this;
   }
 
    /**
-   * DIČ pověřujícího [persistentní položka]
-   * @return vATIdentNumberAuthorize
+   * diČ pověřujícího [persistentní položka]
+   * @return vatidentnumberauthorize
   **/
-  @ApiModelProperty(example = "null", value = "DIČ pověřujícího [persistentní položka]")
-  public String getVATIdentNumberAuthorize() {
-    return vATIdentNumberAuthorize;
+  @ApiModelProperty(example = "null", value = "diČ pověřujícího [persistentní položka]")
+  public String getVatidentnumberauthorize() {
+    return vatidentnumberauthorize;
   }
 
-  public void setVATIdentNumberAuthorize(String vATIdentNumberAuthorize) {
-    this.vATIdentNumberAuthorize = vATIdentNumberAuthorize;
+  public void setVatidentnumberauthorize(String vatidentnumberauthorize) {
+    this.vatidentnumberauthorize = vatidentnumberauthorize;
   }
 
   public Eetturnover establishment(Integer establishment) {
@@ -436,10 +472,10 @@ public class Eetturnover   {
   }
 
    /**
-   * Provozovna [persistentní položka]
+   * provozovna [persistentní položka]
    * @return establishment
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "provozovna [persistentní položka]")
   public Integer getEstablishment() {
     return establishment;
   }
@@ -448,40 +484,40 @@ public class Eetturnover   {
     this.establishment = establishment;
   }
 
-  public Eetturnover cashDeviceCode(String cashDeviceCode) {
-    this.cashDeviceCode = cashDeviceCode;
+  public Eetturnover cashdevicecode(String cashdevicecode) {
+    this.cashdevicecode = cashdevicecode;
     return this;
   }
 
    /**
-   * Pokladní zařízení - kód [persistentní položka]
-   * @return cashDeviceCode
+   * pokladní zařízení - kód [persistentní položka]
+   * @return cashdevicecode
   **/
-  @ApiModelProperty(example = "null", value = "Pokladní zařízení - kód [persistentní položka]")
-  public String getCashDeviceCode() {
-    return cashDeviceCode;
+  @ApiModelProperty(example = "null", value = "pokladní zařízení - kód [persistentní položka]")
+  public String getCashdevicecode() {
+    return cashdevicecode;
   }
 
-  public void setCashDeviceCode(String cashDeviceCode) {
-    this.cashDeviceCode = cashDeviceCode;
+  public void setCashdevicecode(String cashdevicecode) {
+    this.cashdevicecode = cashdevicecode;
   }
 
-  public Eetturnover receiptAtDATE(DateTime receiptAtDATE) {
-    this.receiptAtDATE = receiptAtDATE;
+  public Eetturnover receiptatdate(DateTime receiptatdate) {
+    this.receiptatdate = receiptatdate;
     return this;
   }
 
    /**
-   * Datum a čas zpracování odpovědi [persistentní položka]
-   * @return receiptAtDATE
+   * datum a čas zpracování odpovědi [persistentní položka]
+   * @return receiptatdate
   **/
-  @ApiModelProperty(example = "null", value = "Datum a čas zpracování odpovědi [persistentní položka]")
-  public DateTime getReceiptAtDATE() {
-    return receiptAtDATE;
+  @ApiModelProperty(example = "null", value = "datum a čas zpracování odpovědi [persistentní položka]")
+  public DateTime getReceiptatdate() {
+    return receiptatdate;
   }
 
-  public void setReceiptAtDATE(DateTime receiptAtDATE) {
-    this.receiptAtDATE = receiptAtDATE;
+  public void setReceiptatdate(DateTime receiptatdate) {
+    this.receiptatdate = receiptatdate;
   }
 
   public Eetturnover amount(Double amount) {
@@ -502,616 +538,616 @@ public class Eetturnover   {
     this.amount = amount;
   }
 
-  public Eetturnover amountOutOfVAT(Double amountOutOfVAT) {
-    this.amountOutOfVAT = amountOutOfVAT;
+  public Eetturnover amountoutofvat(Double amountoutofvat) {
+    this.amountoutofvat = amountoutofvat;
     return this;
   }
 
    /**
-   * Částka nepodláhající DPH [persistentní položka]
-   * @return amountOutOfVAT
+   * Částka nepodláhající dph [persistentní položka]
+   * @return amountoutofvat
   **/
-  @ApiModelProperty(example = "null", value = "Částka nepodláhající DPH [persistentní položka]")
-  public Double getAmountOutOfVAT() {
-    return amountOutOfVAT;
+  @ApiModelProperty(example = "null", value = "Částka nepodláhající dph [persistentní položka]")
+  public Double getAmountoutofvat() {
+    return amountoutofvat;
   }
 
-  public void setAmountOutOfVAT(Double amountOutOfVAT) {
-    this.amountOutOfVAT = amountOutOfVAT;
+  public void setAmountoutofvat(Double amountoutofvat) {
+    this.amountoutofvat = amountoutofvat;
   }
 
-  public Eetturnover amountWithoutVATBasicRate(Double amountWithoutVATBasicRate) {
-    this.amountWithoutVATBasicRate = amountWithoutVATBasicRate;
+  public Eetturnover amountwithoutvatbasicrate(Double amountwithoutvatbasicrate) {
+    this.amountwithoutvatbasicrate = amountwithoutvatbasicrate;
     return this;
   }
 
    /**
-   * Částka bez DPH - základní sazba [persistentní položka]
-   * @return amountWithoutVATBasicRate
+   * Částka bez dph - základní sazba [persistentní položka]
+   * @return amountwithoutvatbasicrate
   **/
-  @ApiModelProperty(example = "null", value = "Částka bez DPH - základní sazba [persistentní položka]")
-  public Double getAmountWithoutVATBasicRate() {
-    return amountWithoutVATBasicRate;
+  @ApiModelProperty(example = "null", value = "Částka bez dph - základní sazba [persistentní položka]")
+  public Double getAmountwithoutvatbasicrate() {
+    return amountwithoutvatbasicrate;
   }
 
-  public void setAmountWithoutVATBasicRate(Double amountWithoutVATBasicRate) {
-    this.amountWithoutVATBasicRate = amountWithoutVATBasicRate;
+  public void setAmountwithoutvatbasicrate(Double amountwithoutvatbasicrate) {
+    this.amountwithoutvatbasicrate = amountwithoutvatbasicrate;
   }
 
-  public Eetturnover vATBasicRate(Double vATBasicRate) {
-    this.vATBasicRate = vATBasicRate;
+  public Eetturnover vatbasicrate(Double vatbasicrate) {
+    this.vatbasicrate = vatbasicrate;
     return this;
   }
 
    /**
-   * DPH - základní sazba [persistentní položka]
-   * @return vATBasicRate
+   * dph - základní sazba [persistentní položka]
+   * @return vatbasicrate
   **/
-  @ApiModelProperty(example = "null", value = "DPH - základní sazba [persistentní položka]")
-  public Double getVATBasicRate() {
-    return vATBasicRate;
+  @ApiModelProperty(example = "null", value = "dph - základní sazba [persistentní položka]")
+  public Double getVatbasicrate() {
+    return vatbasicrate;
   }
 
-  public void setVATBasicRate(Double vATBasicRate) {
-    this.vATBasicRate = vATBasicRate;
+  public void setVatbasicrate(Double vatbasicrate) {
+    this.vatbasicrate = vatbasicrate;
   }
 
-  public Eetturnover amountWithoutVATReducedRate(Double amountWithoutVATReducedRate) {
-    this.amountWithoutVATReducedRate = amountWithoutVATReducedRate;
+  public Eetturnover amountwithoutvatreducedrate(Double amountwithoutvatreducedrate) {
+    this.amountwithoutvatreducedrate = amountwithoutvatreducedrate;
     return this;
   }
 
    /**
-   * Částka bez DPH - první snížená sazba [persistentní položka]
-   * @return amountWithoutVATReducedRate
+   * Částka bez dph - první snížená sazba [persistentní položka]
+   * @return amountwithoutvatreducedrate
   **/
-  @ApiModelProperty(example = "null", value = "Částka bez DPH - první snížená sazba [persistentní položka]")
-  public Double getAmountWithoutVATReducedRate() {
-    return amountWithoutVATReducedRate;
+  @ApiModelProperty(example = "null", value = "Částka bez dph - první snížená sazba [persistentní položka]")
+  public Double getAmountwithoutvatreducedrate() {
+    return amountwithoutvatreducedrate;
   }
 
-  public void setAmountWithoutVATReducedRate(Double amountWithoutVATReducedRate) {
-    this.amountWithoutVATReducedRate = amountWithoutVATReducedRate;
+  public void setAmountwithoutvatreducedrate(Double amountwithoutvatreducedrate) {
+    this.amountwithoutvatreducedrate = amountwithoutvatreducedrate;
   }
 
-  public Eetturnover vATReducedRate(Double vATReducedRate) {
-    this.vATReducedRate = vATReducedRate;
+  public Eetturnover vatreducedrate(Double vatreducedrate) {
+    this.vatreducedrate = vatreducedrate;
     return this;
   }
 
    /**
-   * DPH - první snížená sazba [persistentní položka]
-   * @return vATReducedRate
+   * dph - první snížená sazba [persistentní položka]
+   * @return vatreducedrate
   **/
-  @ApiModelProperty(example = "null", value = "DPH - první snížená sazba [persistentní položka]")
-  public Double getVATReducedRate() {
-    return vATReducedRate;
+  @ApiModelProperty(example = "null", value = "dph - první snížená sazba [persistentní položka]")
+  public Double getVatreducedrate() {
+    return vatreducedrate;
   }
 
-  public void setVATReducedRate(Double vATReducedRate) {
-    this.vATReducedRate = vATReducedRate;
+  public void setVatreducedrate(Double vatreducedrate) {
+    this.vatreducedrate = vatreducedrate;
   }
 
-  public Eetturnover amountWithoutVATReduced2Rate(Double amountWithoutVATReduced2Rate) {
-    this.amountWithoutVATReduced2Rate = amountWithoutVATReduced2Rate;
+  public Eetturnover amountwithoutvatreduced2rate(Double amountwithoutvatreduced2rate) {
+    this.amountwithoutvatreduced2rate = amountwithoutvatreduced2rate;
     return this;
   }
 
    /**
-   * Částka bez DPH - druhá snížená sazba [persistentní položka]
-   * @return amountWithoutVATReduced2Rate
+   * Částka bez dph - druhá snížená sazba [persistentní položka]
+   * @return amountwithoutvatreduced2rate
   **/
-  @ApiModelProperty(example = "null", value = "Částka bez DPH - druhá snížená sazba [persistentní položka]")
-  public Double getAmountWithoutVATReduced2Rate() {
-    return amountWithoutVATReduced2Rate;
+  @ApiModelProperty(example = "null", value = "Částka bez dph - druhá snížená sazba [persistentní položka]")
+  public Double getAmountwithoutvatreduced2rate() {
+    return amountwithoutvatreduced2rate;
   }
 
-  public void setAmountWithoutVATReduced2Rate(Double amountWithoutVATReduced2Rate) {
-    this.amountWithoutVATReduced2Rate = amountWithoutVATReduced2Rate;
+  public void setAmountwithoutvatreduced2rate(Double amountwithoutvatreduced2rate) {
+    this.amountwithoutvatreduced2rate = amountwithoutvatreduced2rate;
   }
 
-  public Eetturnover vATReduced2Rate(Double vATReduced2Rate) {
-    this.vATReduced2Rate = vATReduced2Rate;
+  public Eetturnover vatreduced2rate(Double vatreduced2rate) {
+    this.vatreduced2rate = vatreduced2rate;
     return this;
   }
 
    /**
-   * DPH - druhá snížená sazba [persistentní položka]
-   * @return vATReduced2Rate
+   * dph - druhá snížená sazba [persistentní položka]
+   * @return vatreduced2rate
   **/
-  @ApiModelProperty(example = "null", value = "DPH - druhá snížená sazba [persistentní položka]")
-  public Double getVATReduced2Rate() {
-    return vATReduced2Rate;
+  @ApiModelProperty(example = "null", value = "dph - druhá snížená sazba [persistentní položka]")
+  public Double getVatreduced2rate() {
+    return vatreduced2rate;
   }
 
-  public void setVATReduced2Rate(Double vATReduced2Rate) {
-    this.vATReduced2Rate = vATReduced2Rate;
+  public void setVatreduced2rate(Double vatreduced2rate) {
+    this.vatreduced2rate = vatreduced2rate;
   }
 
-  public Eetturnover amountTrevelService(Double amountTrevelService) {
-    this.amountTrevelService = amountTrevelService;
+  public Eetturnover amounttrevelservice(Double amounttrevelservice) {
+    this.amounttrevelservice = amounttrevelservice;
     return this;
   }
 
    /**
    * Částka cestovní služby [persistentní položka]
-   * @return amountTrevelService
+   * @return amounttrevelservice
   **/
   @ApiModelProperty(example = "null", value = "Částka cestovní služby [persistentní položka]")
-  public Double getAmountTrevelService() {
-    return amountTrevelService;
+  public Double getAmounttrevelservice() {
+    return amounttrevelservice;
   }
 
-  public void setAmountTrevelService(Double amountTrevelService) {
-    this.amountTrevelService = amountTrevelService;
+  public void setAmounttrevelservice(Double amounttrevelservice) {
+    this.amounttrevelservice = amounttrevelservice;
   }
 
-  public Eetturnover amountSecondhandBasicRate(Double amountSecondhandBasicRate) {
-    this.amountSecondhandBasicRate = amountSecondhandBasicRate;
+  public Eetturnover amountsecondhandbasicrate(Double amountsecondhandbasicrate) {
+    this.amountsecondhandbasicrate = amountsecondhandbasicrate;
     return this;
   }
 
    /**
    * Částka se základní sazbou pro použité zboží [persistentní položka]
-   * @return amountSecondhandBasicRate
+   * @return amountsecondhandbasicrate
   **/
   @ApiModelProperty(example = "null", value = "Částka se základní sazbou pro použité zboží [persistentní položka]")
-  public Double getAmountSecondhandBasicRate() {
-    return amountSecondhandBasicRate;
+  public Double getAmountsecondhandbasicrate() {
+    return amountsecondhandbasicrate;
   }
 
-  public void setAmountSecondhandBasicRate(Double amountSecondhandBasicRate) {
-    this.amountSecondhandBasicRate = amountSecondhandBasicRate;
+  public void setAmountsecondhandbasicrate(Double amountsecondhandbasicrate) {
+    this.amountsecondhandbasicrate = amountsecondhandbasicrate;
   }
 
-  public Eetturnover amountSecondhandReducedRate(Double amountSecondhandReducedRate) {
-    this.amountSecondhandReducedRate = amountSecondhandReducedRate;
+  public Eetturnover amountsecondhandreducedrate(Double amountsecondhandreducedrate) {
+    this.amountsecondhandreducedrate = amountsecondhandreducedrate;
     return this;
   }
 
    /**
    * Částka s první sníženou sazbou pro použité zboží [persistentní položka]
-   * @return amountSecondhandReducedRate
+   * @return amountsecondhandreducedrate
   **/
   @ApiModelProperty(example = "null", value = "Částka s první sníženou sazbou pro použité zboží [persistentní položka]")
-  public Double getAmountSecondhandReducedRate() {
-    return amountSecondhandReducedRate;
+  public Double getAmountsecondhandreducedrate() {
+    return amountsecondhandreducedrate;
   }
 
-  public void setAmountSecondhandReducedRate(Double amountSecondhandReducedRate) {
-    this.amountSecondhandReducedRate = amountSecondhandReducedRate;
+  public void setAmountsecondhandreducedrate(Double amountsecondhandreducedrate) {
+    this.amountsecondhandreducedrate = amountsecondhandreducedrate;
   }
 
-  public Eetturnover amountSecondhandReduced2Rate(Double amountSecondhandReduced2Rate) {
-    this.amountSecondhandReduced2Rate = amountSecondhandReduced2Rate;
+  public Eetturnover amountsecondhandreduced2rate(Double amountsecondhandreduced2rate) {
+    this.amountsecondhandreduced2rate = amountsecondhandreduced2rate;
     return this;
   }
 
    /**
    * Částka s druhou sníženou sazbou pro použité zboží [persistentní položka]
-   * @return amountSecondhandReduced2Rate
+   * @return amountsecondhandreduced2rate
   **/
   @ApiModelProperty(example = "null", value = "Částka s druhou sníženou sazbou pro použité zboží [persistentní položka]")
-  public Double getAmountSecondhandReduced2Rate() {
-    return amountSecondhandReduced2Rate;
+  public Double getAmountsecondhandreduced2rate() {
+    return amountsecondhandreduced2rate;
   }
 
-  public void setAmountSecondhandReduced2Rate(Double amountSecondhandReduced2Rate) {
-    this.amountSecondhandReduced2Rate = amountSecondhandReduced2Rate;
+  public void setAmountsecondhandreduced2rate(Double amountsecondhandreduced2rate) {
+    this.amountsecondhandreduced2rate = amountsecondhandreduced2rate;
   }
 
-  public Eetturnover amountForSubsequentDrawdown(Double amountForSubsequentDrawdown) {
-    this.amountForSubsequentDrawdown = amountForSubsequentDrawdown;
+  public Eetturnover amountforsubsequentdrawdown(Double amountforsubsequentdrawdown) {
+    this.amountforsubsequentdrawdown = amountforsubsequentdrawdown;
     return this;
   }
 
    /**
    * Částka určená k čerpání [persistentní položka]
-   * @return amountForSubsequentDrawdown
+   * @return amountforsubsequentdrawdown
   **/
   @ApiModelProperty(example = "null", value = "Částka určená k čerpání [persistentní položka]")
-  public Double getAmountForSubsequentDrawdown() {
-    return amountForSubsequentDrawdown;
+  public Double getAmountforsubsequentdrawdown() {
+    return amountforsubsequentdrawdown;
   }
 
-  public void setAmountForSubsequentDrawdown(Double amountForSubsequentDrawdown) {
-    this.amountForSubsequentDrawdown = amountForSubsequentDrawdown;
+  public void setAmountforsubsequentdrawdown(Double amountforsubsequentdrawdown) {
+    this.amountforsubsequentdrawdown = amountforsubsequentdrawdown;
   }
 
-  public Eetturnover amountSubsequentDrawdown(Double amountSubsequentDrawdown) {
-    this.amountSubsequentDrawdown = amountSubsequentDrawdown;
+  public Eetturnover amountsubsequentdrawdown(Double amountsubsequentdrawdown) {
+    this.amountsubsequentdrawdown = amountsubsequentdrawdown;
     return this;
   }
 
    /**
    * Částka následného čerpání [persistentní položka]
-   * @return amountSubsequentDrawdown
+   * @return amountsubsequentdrawdown
   **/
   @ApiModelProperty(example = "null", value = "Částka následného čerpání [persistentní položka]")
-  public Double getAmountSubsequentDrawdown() {
-    return amountSubsequentDrawdown;
+  public Double getAmountsubsequentdrawdown() {
+    return amountsubsequentdrawdown;
   }
 
-  public void setAmountSubsequentDrawdown(Double amountSubsequentDrawdown) {
-    this.amountSubsequentDrawdown = amountSubsequentDrawdown;
+  public void setAmountsubsequentdrawdown(Double amountsubsequentdrawdown) {
+    this.amountsubsequentdrawdown = amountsubsequentdrawdown;
   }
 
-  public Eetturnover turnoverMode(Integer turnoverMode) {
-    this.turnoverMode = turnoverMode;
+  public Eetturnover turnovermode(Integer turnovermode) {
+    this.turnovermode = turnovermode;
     return this;
   }
 
    /**
-   * Režim tržby [persistentní položka]
-   * @return turnoverMode
+   * režim tržby [persistentní položka]
+   * @return turnovermode
   **/
-  @ApiModelProperty(example = "null", value = "Režim tržby [persistentní položka]")
-  public Integer getTurnoverMode() {
-    return turnoverMode;
+  @ApiModelProperty(example = "null", value = "režim tržby [persistentní položka]")
+  public Integer getTurnovermode() {
+    return turnovermode;
   }
 
-  public void setTurnoverMode(Integer turnoverMode) {
-    this.turnoverMode = turnoverMode;
+  public void setTurnovermode(Integer turnovermode) {
+    this.turnovermode = turnovermode;
   }
 
-  public Eetturnover PKP(String PKP) {
-    this.PKP = PKP;
+  public Eetturnover pkp(String pkp) {
+    this.pkp = pkp;
     return this;
   }
 
    /**
-   * PKP [persistentní položka]
-   * @return PKP
+   * pkp [persistentní položka]
+   * @return pkp
   **/
-  @ApiModelProperty(example = "null", value = "PKP [persistentní položka]")
-  public String getPKP() {
-    return PKP;
+  @ApiModelProperty(example = "null", value = "pkp [persistentní položka]")
+  public String getPkp() {
+    return pkp;
   }
 
-  public void setPKP(String PKP) {
-    this.PKP = PKP;
+  public void setPkp(String pkp) {
+    this.pkp = pkp;
   }
 
-  public Eetturnover BKP(String BKP) {
-    this.BKP = BKP;
+  public Eetturnover bkp(String bkp) {
+    this.bkp = bkp;
     return this;
   }
 
    /**
-   * BKP [persistentní položka]
-   * @return BKP
+   * bkp [persistentní položka]
+   * @return bkp
   **/
-  @ApiModelProperty(example = "null", value = "BKP [persistentní položka]")
-  public String getBKP() {
-    return BKP;
+  @ApiModelProperty(example = "null", value = "bkp [persistentní položka]")
+  public String getBkp() {
+    return bkp;
   }
 
-  public void setBKP(String BKP) {
-    this.BKP = BKP;
+  public void setBkp(String bkp) {
+    this.bkp = bkp;
   }
 
-  public Eetturnover FIK(String FIK) {
-    this.FIK = FIK;
+  public Eetturnover fik(String fik) {
+    this.fik = fik;
     return this;
   }
 
    /**
-   * FIK [persistentní položka]
-   * @return FIK
+   * fik [persistentní položka]
+   * @return fik
   **/
-  @ApiModelProperty(example = "null", value = "FIK [persistentní položka]")
-  public String getFIK() {
-    return FIK;
+  @ApiModelProperty(example = "null", value = "fik [persistentní položka]")
+  public String getFik() {
+    return fik;
   }
 
-  public void setFIK(String FIK) {
-    this.FIK = FIK;
+  public void setFik(String fik) {
+    this.fik = fik;
   }
 
-  public Eetturnover turnoverState(Integer turnoverState) {
-    this.turnoverState = turnoverState;
+  public Eetturnover turnoverstate(Integer turnoverstate) {
+    this.turnoverstate = turnoverstate;
     return this;
   }
 
    /**
-   * Stav tržby [persistentní položka]
-   * @return turnoverState
+   * stav tržby [persistentní položka]
+   * @return turnoverstate
   **/
-  @ApiModelProperty(example = "null", value = "Stav tržby [persistentní položka]")
-  public Integer getTurnoverState() {
-    return turnoverState;
+  @ApiModelProperty(example = "null", value = "stav tržby [persistentní položka]")
+  public Integer getTurnoverstate() {
+    return turnoverstate;
   }
 
-  public void setTurnoverState(Integer turnoverState) {
-    this.turnoverState = turnoverState;
+  public void setTurnoverstate(Integer turnoverstate) {
+    this.turnoverstate = turnoverstate;
   }
 
-  public Eetturnover dataMessage(String dataMessage) {
-    this.dataMessage = dataMessage;
+  public Eetturnover datamessage(String datamessage) {
+    this.datamessage = datamessage;
     return this;
   }
 
    /**
-   * Datová zpráva [persistentní položka]
-   * @return dataMessage
+   * datová zpráva [persistentní položka]
+   * @return datamessage
   **/
-  @ApiModelProperty(example = "null", value = "Datová zpráva [persistentní položka]")
-  public String getDataMessage() {
-    return dataMessage;
+  @ApiModelProperty(example = "null", value = "datová zpráva [persistentní položka]")
+  public String getDatamessage() {
+    return datamessage;
   }
 
-  public void setDataMessage(String dataMessage) {
-    this.dataMessage = dataMessage;
+  public void setDatamessage(String datamessage) {
+    this.datamessage = datamessage;
   }
 
-  public Eetturnover responseMessage(String responseMessage) {
-    this.responseMessage = responseMessage;
+  public Eetturnover responsemessage(String responsemessage) {
+    this.responsemessage = responsemessage;
     return this;
   }
 
    /**
-   * Odpovědní zpráva [persistentní položka]
-   * @return responseMessage
+   * odpovědní zpráva [persistentní položka]
+   * @return responsemessage
   **/
-  @ApiModelProperty(example = "null", value = "Odpovědní zpráva [persistentní položka]")
-  public String getResponseMessage() {
-    return responseMessage;
+  @ApiModelProperty(example = "null", value = "odpovědní zpráva [persistentní položka]")
+  public String getResponsemessage() {
+    return responsemessage;
   }
 
-  public void setResponseMessage(String responseMessage) {
-    this.responseMessage = responseMessage;
+  public void setResponsemessage(String responsemessage) {
+    this.responsemessage = responsemessage;
   }
 
-  public Eetturnover loggingProcessing(String loggingProcessing) {
-    this.loggingProcessing = loggingProcessing;
+  public Eetturnover loggingprocessing(String loggingprocessing) {
+    this.loggingprocessing = loggingprocessing;
     return this;
   }
 
    /**
-   * Logování zpracování [persistentní položka]
-   * @return loggingProcessing
+   * logování zpracování [persistentní položka]
+   * @return loggingprocessing
   **/
-  @ApiModelProperty(example = "null", value = "Logování zpracování [persistentní položka]")
-  public String getLoggingProcessing() {
-    return loggingProcessing;
+  @ApiModelProperty(example = "null", value = "logování zpracování [persistentní položka]")
+  public String getLoggingprocessing() {
+    return loggingprocessing;
   }
 
-  public void setLoggingProcessing(String loggingProcessing) {
-    this.loggingProcessing = loggingProcessing;
+  public void setLoggingprocessing(String loggingprocessing) {
+    this.loggingprocessing = loggingprocessing;
   }
 
-  public Eetturnover versionOfInterface(Integer versionOfInterface) {
-    this.versionOfInterface = versionOfInterface;
+  public Eetturnover versionofinterface(Integer versionofinterface) {
+    this.versionofinterface = versionofinterface;
     return this;
   }
 
    /**
-   * Verze rozhraní [persistentní položka]
-   * @return versionOfInterface
+   * verze rozhraní [persistentní položka]
+   * @return versionofinterface
   **/
-  @ApiModelProperty(example = "null", value = "Verze rozhraní [persistentní položka]")
-  public Integer getVersionOfInterface() {
-    return versionOfInterface;
+  @ApiModelProperty(example = "null", value = "verze rozhraní [persistentní položka]")
+  public Integer getVersionofinterface() {
+    return versionofinterface;
   }
 
-  public void setVersionOfInterface(Integer versionOfInterface) {
-    this.versionOfInterface = versionOfInterface;
+  public void setVersionofinterface(Integer versionofinterface) {
+    this.versionofinterface = versionofinterface;
   }
 
-  public Eetturnover amountOutOfVATIsSet(Boolean amountOutOfVATIsSet) {
-    this.amountOutOfVATIsSet = amountOutOfVATIsSet;
+  public Eetturnover amountoutofvatisset(Boolean amountoutofvatisset) {
+    this.amountoutofvatisset = amountoutofvatisset;
     return this;
   }
 
    /**
-   * Plnění osvobozené od DPH [persistentní položka]
-   * @return amountOutOfVATIsSet
+   * plnění osvobozené od dph [persistentní položka]
+   * @return amountoutofvatisset
   **/
-  @ApiModelProperty(example = "null", value = "Plnění osvobozené od DPH [persistentní položka]")
-  public Boolean getAmountOutOfVATIsSet() {
-    return amountOutOfVATIsSet;
+  @ApiModelProperty(example = "null", value = "plnění osvobozené od dph [persistentní položka]")
+  public Boolean getAmountoutofvatisset() {
+    return amountoutofvatisset;
   }
 
-  public void setAmountOutOfVATIsSet(Boolean amountOutOfVATIsSet) {
-    this.amountOutOfVATIsSet = amountOutOfVATIsSet;
+  public void setAmountoutofvatisset(Boolean amountoutofvatisset) {
+    this.amountoutofvatisset = amountoutofvatisset;
   }
 
-  public Eetturnover amountBasicRateIsSet(Boolean amountBasicRateIsSet) {
-    this.amountBasicRateIsSet = amountBasicRateIsSet;
+  public Eetturnover amountbasicrateisset(Boolean amountbasicrateisset) {
+    this.amountbasicrateisset = amountbasicrateisset;
     return this;
   }
 
    /**
-   * Základní sazba DPH [persistentní položka]
-   * @return amountBasicRateIsSet
+   * základní sazba dph [persistentní položka]
+   * @return amountbasicrateisset
   **/
-  @ApiModelProperty(example = "null", value = "Základní sazba DPH [persistentní položka]")
-  public Boolean getAmountBasicRateIsSet() {
-    return amountBasicRateIsSet;
+  @ApiModelProperty(example = "null", value = "základní sazba dph [persistentní položka]")
+  public Boolean getAmountbasicrateisset() {
+    return amountbasicrateisset;
   }
 
-  public void setAmountBasicRateIsSet(Boolean amountBasicRateIsSet) {
-    this.amountBasicRateIsSet = amountBasicRateIsSet;
+  public void setAmountbasicrateisset(Boolean amountbasicrateisset) {
+    this.amountbasicrateisset = amountbasicrateisset;
   }
 
-  public Eetturnover amountReducedRateIsSet(Boolean amountReducedRateIsSet) {
-    this.amountReducedRateIsSet = amountReducedRateIsSet;
+  public Eetturnover amountreducedrateisset(Boolean amountreducedrateisset) {
+    this.amountreducedrateisset = amountreducedrateisset;
     return this;
   }
 
    /**
-   * Indikace nastavené hodnoty částky [persistentní položka]
-   * @return amountReducedRateIsSet
+   * indikace nastavené hodnoty částky [persistentní položka]
+   * @return amountreducedrateisset
   **/
-  @ApiModelProperty(example = "null", value = "Indikace nastavené hodnoty částky [persistentní položka]")
-  public Boolean getAmountReducedRateIsSet() {
-    return amountReducedRateIsSet;
+  @ApiModelProperty(example = "null", value = "indikace nastavené hodnoty částky [persistentní položka]")
+  public Boolean getAmountreducedrateisset() {
+    return amountreducedrateisset;
   }
 
-  public void setAmountReducedRateIsSet(Boolean amountReducedRateIsSet) {
-    this.amountReducedRateIsSet = amountReducedRateIsSet;
+  public void setAmountreducedrateisset(Boolean amountreducedrateisset) {
+    this.amountreducedrateisset = amountreducedrateisset;
   }
 
-  public Eetturnover amountReduced2RateIsSet(Boolean amountReduced2RateIsSet) {
-    this.amountReduced2RateIsSet = amountReduced2RateIsSet;
+  public Eetturnover amountreduced2rateisset(Boolean amountreduced2rateisset) {
+    this.amountreduced2rateisset = amountreduced2rateisset;
     return this;
   }
 
    /**
-   * Indikace nastavené hodnoty částky [persistentní položka]
-   * @return amountReduced2RateIsSet
+   * indikace nastavené hodnoty částky [persistentní položka]
+   * @return amountreduced2rateisset
   **/
-  @ApiModelProperty(example = "null", value = "Indikace nastavené hodnoty částky [persistentní položka]")
-  public Boolean getAmountReduced2RateIsSet() {
-    return amountReduced2RateIsSet;
+  @ApiModelProperty(example = "null", value = "indikace nastavené hodnoty částky [persistentní položka]")
+  public Boolean getAmountreduced2rateisset() {
+    return amountreduced2rateisset;
   }
 
-  public void setAmountReduced2RateIsSet(Boolean amountReduced2RateIsSet) {
-    this.amountReduced2RateIsSet = amountReduced2RateIsSet;
+  public void setAmountreduced2rateisset(Boolean amountreduced2rateisset) {
+    this.amountreduced2rateisset = amountreduced2rateisset;
   }
 
-  public Eetturnover amountTrevelServiceIsSet(Boolean amountTrevelServiceIsSet) {
-    this.amountTrevelServiceIsSet = amountTrevelServiceIsSet;
+  public Eetturnover amounttrevelserviceisset(Boolean amounttrevelserviceisset) {
+    this.amounttrevelserviceisset = amounttrevelserviceisset;
     return this;
   }
 
    /**
-   * Indikace nastavené hodnoty částky [persistentní položka]
-   * @return amountTrevelServiceIsSet
+   * indikace nastavené hodnoty částky [persistentní položka]
+   * @return amounttrevelserviceisset
   **/
-  @ApiModelProperty(example = "null", value = "Indikace nastavené hodnoty částky [persistentní položka]")
-  public Boolean getAmountTrevelServiceIsSet() {
-    return amountTrevelServiceIsSet;
+  @ApiModelProperty(example = "null", value = "indikace nastavené hodnoty částky [persistentní položka]")
+  public Boolean getAmounttrevelserviceisset() {
+    return amounttrevelserviceisset;
   }
 
-  public void setAmountTrevelServiceIsSet(Boolean amountTrevelServiceIsSet) {
-    this.amountTrevelServiceIsSet = amountTrevelServiceIsSet;
+  public void setAmounttrevelserviceisset(Boolean amounttrevelserviceisset) {
+    this.amounttrevelserviceisset = amounttrevelserviceisset;
   }
 
-  public Eetturnover amountSecondhandBasRateIsSet(Boolean amountSecondhandBasRateIsSet) {
-    this.amountSecondhandBasRateIsSet = amountSecondhandBasRateIsSet;
+  public Eetturnover amountsecondhandbasrateisset(Boolean amountsecondhandbasrateisset) {
+    this.amountsecondhandbasrateisset = amountsecondhandbasrateisset;
     return this;
   }
 
    /**
-   * Indikace nastavené hodnoty částky [persistentní položka]
-   * @return amountSecondhandBasRateIsSet
+   * indikace nastavené hodnoty částky [persistentní položka]
+   * @return amountsecondhandbasrateisset
   **/
-  @ApiModelProperty(example = "null", value = "Indikace nastavené hodnoty částky [persistentní položka]")
-  public Boolean getAmountSecondhandBasRateIsSet() {
-    return amountSecondhandBasRateIsSet;
+  @ApiModelProperty(example = "null", value = "indikace nastavené hodnoty částky [persistentní položka]")
+  public Boolean getAmountsecondhandbasrateisset() {
+    return amountsecondhandbasrateisset;
   }
 
-  public void setAmountSecondhandBasRateIsSet(Boolean amountSecondhandBasRateIsSet) {
-    this.amountSecondhandBasRateIsSet = amountSecondhandBasRateIsSet;
+  public void setAmountsecondhandbasrateisset(Boolean amountsecondhandbasrateisset) {
+    this.amountsecondhandbasrateisset = amountsecondhandbasrateisset;
   }
 
-  public Eetturnover amountSecondhandRedRateIsSet(Boolean amountSecondhandRedRateIsSet) {
-    this.amountSecondhandRedRateIsSet = amountSecondhandRedRateIsSet;
+  public Eetturnover amountsecondhandredrateisset(Boolean amountsecondhandredrateisset) {
+    this.amountsecondhandredrateisset = amountsecondhandredrateisset;
     return this;
   }
 
    /**
-   * Indikace nastavené hodnoty částky [persistentní položka]
-   * @return amountSecondhandRedRateIsSet
+   * indikace nastavené hodnoty částky [persistentní položka]
+   * @return amountsecondhandredrateisset
   **/
-  @ApiModelProperty(example = "null", value = "Indikace nastavené hodnoty částky [persistentní položka]")
-  public Boolean getAmountSecondhandRedRateIsSet() {
-    return amountSecondhandRedRateIsSet;
+  @ApiModelProperty(example = "null", value = "indikace nastavené hodnoty částky [persistentní položka]")
+  public Boolean getAmountsecondhandredrateisset() {
+    return amountsecondhandredrateisset;
   }
 
-  public void setAmountSecondhandRedRateIsSet(Boolean amountSecondhandRedRateIsSet) {
-    this.amountSecondhandRedRateIsSet = amountSecondhandRedRateIsSet;
+  public void setAmountsecondhandredrateisset(Boolean amountsecondhandredrateisset) {
+    this.amountsecondhandredrateisset = amountsecondhandredrateisset;
   }
 
-  public Eetturnover amountSecondhandRed2RateIsSet(Boolean amountSecondhandRed2RateIsSet) {
-    this.amountSecondhandRed2RateIsSet = amountSecondhandRed2RateIsSet;
+  public Eetturnover amountsecondhandred2rateisset(Boolean amountsecondhandred2rateisset) {
+    this.amountsecondhandred2rateisset = amountsecondhandred2rateisset;
     return this;
   }
 
    /**
-   * Indikace nastavené hodnoty částky [persistentní položka]
-   * @return amountSecondhandRed2RateIsSet
+   * indikace nastavené hodnoty částky [persistentní položka]
+   * @return amountsecondhandred2rateisset
   **/
-  @ApiModelProperty(example = "null", value = "Indikace nastavené hodnoty částky [persistentní položka]")
-  public Boolean getAmountSecondhandRed2RateIsSet() {
-    return amountSecondhandRed2RateIsSet;
+  @ApiModelProperty(example = "null", value = "indikace nastavené hodnoty částky [persistentní položka]")
+  public Boolean getAmountsecondhandred2rateisset() {
+    return amountsecondhandred2rateisset;
   }
 
-  public void setAmountSecondhandRed2RateIsSet(Boolean amountSecondhandRed2RateIsSet) {
-    this.amountSecondhandRed2RateIsSet = amountSecondhandRed2RateIsSet;
+  public void setAmountsecondhandred2rateisset(Boolean amountsecondhandred2rateisset) {
+    this.amountsecondhandred2rateisset = amountsecondhandred2rateisset;
   }
 
-  public Eetturnover amountForSubseqDrawIsSet(Boolean amountForSubseqDrawIsSet) {
-    this.amountForSubseqDrawIsSet = amountForSubseqDrawIsSet;
+  public Eetturnover amountforsubseqdrawisset(Boolean amountforsubseqdrawisset) {
+    this.amountforsubseqdrawisset = amountforsubseqdrawisset;
     return this;
   }
 
    /**
-   * Indikace nastavené hodnoty částky [persistentní položka]
-   * @return amountForSubseqDrawIsSet
+   * indikace nastavené hodnoty částky [persistentní položka]
+   * @return amountforsubseqdrawisset
   **/
-  @ApiModelProperty(example = "null", value = "Indikace nastavené hodnoty částky [persistentní položka]")
-  public Boolean getAmountForSubseqDrawIsSet() {
-    return amountForSubseqDrawIsSet;
+  @ApiModelProperty(example = "null", value = "indikace nastavené hodnoty částky [persistentní položka]")
+  public Boolean getAmountforsubseqdrawisset() {
+    return amountforsubseqdrawisset;
   }
 
-  public void setAmountForSubseqDrawIsSet(Boolean amountForSubseqDrawIsSet) {
-    this.amountForSubseqDrawIsSet = amountForSubseqDrawIsSet;
+  public void setAmountforsubseqdrawisset(Boolean amountforsubseqdrawisset) {
+    this.amountforsubseqdrawisset = amountforsubseqdrawisset;
   }
 
-  public Eetturnover amountSubseqDrawIsSet(Boolean amountSubseqDrawIsSet) {
-    this.amountSubseqDrawIsSet = amountSubseqDrawIsSet;
+  public Eetturnover amountsubseqdrawisset(Boolean amountsubseqdrawisset) {
+    this.amountsubseqdrawisset = amountsubseqdrawisset;
     return this;
   }
 
    /**
-   * Indikace nastavené hodnoty částky [persistentní položka]
-   * @return amountSubseqDrawIsSet
+   * indikace nastavené hodnoty částky [persistentní položka]
+   * @return amountsubseqdrawisset
   **/
-  @ApiModelProperty(example = "null", value = "Indikace nastavené hodnoty částky [persistentní položka]")
-  public Boolean getAmountSubseqDrawIsSet() {
-    return amountSubseqDrawIsSet;
+  @ApiModelProperty(example = "null", value = "indikace nastavené hodnoty částky [persistentní položka]")
+  public Boolean getAmountsubseqdrawisset() {
+    return amountsubseqdrawisset;
   }
 
-  public void setAmountSubseqDrawIsSet(Boolean amountSubseqDrawIsSet) {
-    this.amountSubseqDrawIsSet = amountSubseqDrawIsSet;
+  public void setAmountsubseqdrawisset(Boolean amountsubseqdrawisset) {
+    this.amountsubseqdrawisset = amountsubseqdrawisset;
   }
 
-  public Eetturnover supplementaryFIK(Boolean supplementaryFIK) {
-    this.supplementaryFIK = supplementaryFIK;
+  public Eetturnover supplementaryfik(Boolean supplementaryfik) {
+    this.supplementaryfik = supplementaryfik;
     return this;
   }
 
    /**
-   * FIK dodatečně [persistentní položka]
-   * @return supplementaryFIK
+   * fik dodatečně [persistentní položka]
+   * @return supplementaryfik
   **/
-  @ApiModelProperty(example = "null", value = "FIK dodatečně [persistentní položka]")
-  public Boolean getSupplementaryFIK() {
-    return supplementaryFIK;
+  @ApiModelProperty(example = "null", value = "fik dodatečně [persistentní položka]")
+  public Boolean getSupplementaryfik() {
+    return supplementaryfik;
   }
 
-  public void setSupplementaryFIK(Boolean supplementaryFIK) {
-    this.supplementaryFIK = supplementaryFIK;
+  public void setSupplementaryfik(Boolean supplementaryfik) {
+    this.supplementaryfik = supplementaryfik;
   }
 
-  public Eetturnover sendingDuration(Double sendingDuration) {
-    this.sendingDuration = sendingDuration;
+  public Eetturnover sendingduration(Double sendingduration) {
+    this.sendingduration = sendingduration;
     return this;
   }
 
    /**
    * Čas komunikace [persistentní položka]
-   * @return sendingDuration
+   * @return sendingduration
   **/
   @ApiModelProperty(example = "null", value = "Čas komunikace [persistentní položka]")
-  public Double getSendingDuration() {
-    return sendingDuration;
+  public Double getSendingduration() {
+    return sendingduration;
   }
 
-  public void setSendingDuration(Double sendingDuration) {
-    this.sendingDuration = sendingDuration;
+  public void setSendingduration(Double sendingduration) {
+    this.sendingduration = sendingduration;
   }
 
 
@@ -1124,64 +1160,64 @@ public class Eetturnover   {
       return false;
     }
     Eetturnover eetturnover = (Eetturnover) o;
-    return Objects.equals(this.displayName, eetturnover.displayName) &&
-        Objects.equals(this.ID, eetturnover.ID) &&
-        Objects.equals(this.classID, eetturnover.classID) &&
-        Objects.equals(this.objVersion, eetturnover.objVersion) &&
-        Objects.equals(this.masterDocumentType, eetturnover.masterDocumentType) &&
-        Objects.equals(this.masterDocumentID, eetturnover.masterDocumentID) &&
-        Objects.equals(this.turnoverDateTimeDATE, eetturnover.turnoverDateTimeDATE) &&
-        Objects.equals(this.turnoverNumber, eetturnover.turnoverNumber) &&
+    return Objects.equals(this.displayname, eetturnover.displayname) &&
+        Objects.equals(this.id, eetturnover.id) &&
+        Objects.equals(this.classid, eetturnover.classid) &&
+        Objects.equals(this.objversion, eetturnover.objversion) &&
+        Objects.equals(this.masterdocumenttype, eetturnover.masterdocumenttype) &&
+        Objects.equals(this.masterdocumentId, eetturnover.masterdocumentId) &&
+        Objects.equals(this.turnoverdatetimedate, eetturnover.turnoverdatetimedate) &&
+        Objects.equals(this.turnovernumber, eetturnover.turnovernumber) &&
         Objects.equals(this.dirty, eetturnover.dirty) &&
-        Objects.equals(this.establishmentID, eetturnover.establishmentID) &&
-        Objects.equals(this.sendingAtDATE, eetturnover.sendingAtDATE) &&
-        Objects.equals(this.firstSending, eetturnover.firstSending) &&
-        Objects.equals(this.sendingMode, eetturnover.sendingMode) &&
-        Objects.equals(this.vATIdentNumber, eetturnover.vATIdentNumber) &&
-        Objects.equals(this.vATIdentNumberAuthorize, eetturnover.vATIdentNumberAuthorize) &&
+        Objects.equals(this.establishmentId, eetturnover.establishmentId) &&
+        Objects.equals(this.sendingatdate, eetturnover.sendingatdate) &&
+        Objects.equals(this.firstsending, eetturnover.firstsending) &&
+        Objects.equals(this.sendingmode, eetturnover.sendingmode) &&
+        Objects.equals(this.vatidentnumber, eetturnover.vatidentnumber) &&
+        Objects.equals(this.vatidentnumberauthorize, eetturnover.vatidentnumberauthorize) &&
         Objects.equals(this.establishment, eetturnover.establishment) &&
-        Objects.equals(this.cashDeviceCode, eetturnover.cashDeviceCode) &&
-        Objects.equals(this.receiptAtDATE, eetturnover.receiptAtDATE) &&
+        Objects.equals(this.cashdevicecode, eetturnover.cashdevicecode) &&
+        Objects.equals(this.receiptatdate, eetturnover.receiptatdate) &&
         Objects.equals(this.amount, eetturnover.amount) &&
-        Objects.equals(this.amountOutOfVAT, eetturnover.amountOutOfVAT) &&
-        Objects.equals(this.amountWithoutVATBasicRate, eetturnover.amountWithoutVATBasicRate) &&
-        Objects.equals(this.vATBasicRate, eetturnover.vATBasicRate) &&
-        Objects.equals(this.amountWithoutVATReducedRate, eetturnover.amountWithoutVATReducedRate) &&
-        Objects.equals(this.vATReducedRate, eetturnover.vATReducedRate) &&
-        Objects.equals(this.amountWithoutVATReduced2Rate, eetturnover.amountWithoutVATReduced2Rate) &&
-        Objects.equals(this.vATReduced2Rate, eetturnover.vATReduced2Rate) &&
-        Objects.equals(this.amountTrevelService, eetturnover.amountTrevelService) &&
-        Objects.equals(this.amountSecondhandBasicRate, eetturnover.amountSecondhandBasicRate) &&
-        Objects.equals(this.amountSecondhandReducedRate, eetturnover.amountSecondhandReducedRate) &&
-        Objects.equals(this.amountSecondhandReduced2Rate, eetturnover.amountSecondhandReduced2Rate) &&
-        Objects.equals(this.amountForSubsequentDrawdown, eetturnover.amountForSubsequentDrawdown) &&
-        Objects.equals(this.amountSubsequentDrawdown, eetturnover.amountSubsequentDrawdown) &&
-        Objects.equals(this.turnoverMode, eetturnover.turnoverMode) &&
-        Objects.equals(this.PKP, eetturnover.PKP) &&
-        Objects.equals(this.BKP, eetturnover.BKP) &&
-        Objects.equals(this.FIK, eetturnover.FIK) &&
-        Objects.equals(this.turnoverState, eetturnover.turnoverState) &&
-        Objects.equals(this.dataMessage, eetturnover.dataMessage) &&
-        Objects.equals(this.responseMessage, eetturnover.responseMessage) &&
-        Objects.equals(this.loggingProcessing, eetturnover.loggingProcessing) &&
-        Objects.equals(this.versionOfInterface, eetturnover.versionOfInterface) &&
-        Objects.equals(this.amountOutOfVATIsSet, eetturnover.amountOutOfVATIsSet) &&
-        Objects.equals(this.amountBasicRateIsSet, eetturnover.amountBasicRateIsSet) &&
-        Objects.equals(this.amountReducedRateIsSet, eetturnover.amountReducedRateIsSet) &&
-        Objects.equals(this.amountReduced2RateIsSet, eetturnover.amountReduced2RateIsSet) &&
-        Objects.equals(this.amountTrevelServiceIsSet, eetturnover.amountTrevelServiceIsSet) &&
-        Objects.equals(this.amountSecondhandBasRateIsSet, eetturnover.amountSecondhandBasRateIsSet) &&
-        Objects.equals(this.amountSecondhandRedRateIsSet, eetturnover.amountSecondhandRedRateIsSet) &&
-        Objects.equals(this.amountSecondhandRed2RateIsSet, eetturnover.amountSecondhandRed2RateIsSet) &&
-        Objects.equals(this.amountForSubseqDrawIsSet, eetturnover.amountForSubseqDrawIsSet) &&
-        Objects.equals(this.amountSubseqDrawIsSet, eetturnover.amountSubseqDrawIsSet) &&
-        Objects.equals(this.supplementaryFIK, eetturnover.supplementaryFIK) &&
-        Objects.equals(this.sendingDuration, eetturnover.sendingDuration);
+        Objects.equals(this.amountoutofvat, eetturnover.amountoutofvat) &&
+        Objects.equals(this.amountwithoutvatbasicrate, eetturnover.amountwithoutvatbasicrate) &&
+        Objects.equals(this.vatbasicrate, eetturnover.vatbasicrate) &&
+        Objects.equals(this.amountwithoutvatreducedrate, eetturnover.amountwithoutvatreducedrate) &&
+        Objects.equals(this.vatreducedrate, eetturnover.vatreducedrate) &&
+        Objects.equals(this.amountwithoutvatreduced2rate, eetturnover.amountwithoutvatreduced2rate) &&
+        Objects.equals(this.vatreduced2rate, eetturnover.vatreduced2rate) &&
+        Objects.equals(this.amounttrevelservice, eetturnover.amounttrevelservice) &&
+        Objects.equals(this.amountsecondhandbasicrate, eetturnover.amountsecondhandbasicrate) &&
+        Objects.equals(this.amountsecondhandreducedrate, eetturnover.amountsecondhandreducedrate) &&
+        Objects.equals(this.amountsecondhandreduced2rate, eetturnover.amountsecondhandreduced2rate) &&
+        Objects.equals(this.amountforsubsequentdrawdown, eetturnover.amountforsubsequentdrawdown) &&
+        Objects.equals(this.amountsubsequentdrawdown, eetturnover.amountsubsequentdrawdown) &&
+        Objects.equals(this.turnovermode, eetturnover.turnovermode) &&
+        Objects.equals(this.pkp, eetturnover.pkp) &&
+        Objects.equals(this.bkp, eetturnover.bkp) &&
+        Objects.equals(this.fik, eetturnover.fik) &&
+        Objects.equals(this.turnoverstate, eetturnover.turnoverstate) &&
+        Objects.equals(this.datamessage, eetturnover.datamessage) &&
+        Objects.equals(this.responsemessage, eetturnover.responsemessage) &&
+        Objects.equals(this.loggingprocessing, eetturnover.loggingprocessing) &&
+        Objects.equals(this.versionofinterface, eetturnover.versionofinterface) &&
+        Objects.equals(this.amountoutofvatisset, eetturnover.amountoutofvatisset) &&
+        Objects.equals(this.amountbasicrateisset, eetturnover.amountbasicrateisset) &&
+        Objects.equals(this.amountreducedrateisset, eetturnover.amountreducedrateisset) &&
+        Objects.equals(this.amountreduced2rateisset, eetturnover.amountreduced2rateisset) &&
+        Objects.equals(this.amounttrevelserviceisset, eetturnover.amounttrevelserviceisset) &&
+        Objects.equals(this.amountsecondhandbasrateisset, eetturnover.amountsecondhandbasrateisset) &&
+        Objects.equals(this.amountsecondhandredrateisset, eetturnover.amountsecondhandredrateisset) &&
+        Objects.equals(this.amountsecondhandred2rateisset, eetturnover.amountsecondhandred2rateisset) &&
+        Objects.equals(this.amountforsubseqdrawisset, eetturnover.amountforsubseqdrawisset) &&
+        Objects.equals(this.amountsubseqdrawisset, eetturnover.amountsubseqdrawisset) &&
+        Objects.equals(this.supplementaryfik, eetturnover.supplementaryfik) &&
+        Objects.equals(this.sendingduration, eetturnover.sendingduration);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, masterDocumentType, masterDocumentID, turnoverDateTimeDATE, turnoverNumber, dirty, establishmentID, sendingAtDATE, firstSending, sendingMode, vATIdentNumber, vATIdentNumberAuthorize, establishment, cashDeviceCode, receiptAtDATE, amount, amountOutOfVAT, amountWithoutVATBasicRate, vATBasicRate, amountWithoutVATReducedRate, vATReducedRate, amountWithoutVATReduced2Rate, vATReduced2Rate, amountTrevelService, amountSecondhandBasicRate, amountSecondhandReducedRate, amountSecondhandReduced2Rate, amountForSubsequentDrawdown, amountSubsequentDrawdown, turnoverMode, PKP, BKP, FIK, turnoverState, dataMessage, responseMessage, loggingProcessing, versionOfInterface, amountOutOfVATIsSet, amountBasicRateIsSet, amountReducedRateIsSet, amountReduced2RateIsSet, amountTrevelServiceIsSet, amountSecondhandBasRateIsSet, amountSecondhandRedRateIsSet, amountSecondhandRed2RateIsSet, amountForSubseqDrawIsSet, amountSubseqDrawIsSet, supplementaryFIK, sendingDuration);
+    return Objects.hash(displayname, id, classid, objversion, masterdocumenttype, masterdocumentId, turnoverdatetimedate, turnovernumber, dirty, establishmentId, sendingatdate, firstsending, sendingmode, vatidentnumber, vatidentnumberauthorize, establishment, cashdevicecode, receiptatdate, amount, amountoutofvat, amountwithoutvatbasicrate, vatbasicrate, amountwithoutvatreducedrate, vatreducedrate, amountwithoutvatreduced2rate, vatreduced2rate, amounttrevelservice, amountsecondhandbasicrate, amountsecondhandreducedrate, amountsecondhandreduced2rate, amountforsubsequentdrawdown, amountsubsequentdrawdown, turnovermode, pkp, bkp, fik, turnoverstate, datamessage, responsemessage, loggingprocessing, versionofinterface, amountoutofvatisset, amountbasicrateisset, amountreducedrateisset, amountreduced2rateisset, amounttrevelserviceisset, amountsecondhandbasrateisset, amountsecondhandredrateisset, amountsecondhandred2rateisset, amountforsubseqdrawisset, amountsubseqdrawisset, supplementaryfik, sendingduration);
   }
 
   @Override
@@ -1189,59 +1225,59 @@ public class Eetturnover   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Eetturnover {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    masterDocumentType: ").append(toIndentedString(masterDocumentType)).append("\n");
-    sb.append("    masterDocumentID: ").append(toIndentedString(masterDocumentID)).append("\n");
-    sb.append("    turnoverDateTimeDATE: ").append(toIndentedString(turnoverDateTimeDATE)).append("\n");
-    sb.append("    turnoverNumber: ").append(toIndentedString(turnoverNumber)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    masterdocumenttype: ").append(toIndentedString(masterdocumenttype)).append("\n");
+    sb.append("    masterdocumentId: ").append(toIndentedString(masterdocumentId)).append("\n");
+    sb.append("    turnoverdatetimedate: ").append(toIndentedString(turnoverdatetimedate)).append("\n");
+    sb.append("    turnovernumber: ").append(toIndentedString(turnovernumber)).append("\n");
     sb.append("    dirty: ").append(toIndentedString(dirty)).append("\n");
-    sb.append("    establishmentID: ").append(toIndentedString(establishmentID)).append("\n");
-    sb.append("    sendingAtDATE: ").append(toIndentedString(sendingAtDATE)).append("\n");
-    sb.append("    firstSending: ").append(toIndentedString(firstSending)).append("\n");
-    sb.append("    sendingMode: ").append(toIndentedString(sendingMode)).append("\n");
-    sb.append("    vATIdentNumber: ").append(toIndentedString(vATIdentNumber)).append("\n");
-    sb.append("    vATIdentNumberAuthorize: ").append(toIndentedString(vATIdentNumberAuthorize)).append("\n");
+    sb.append("    establishmentId: ").append(toIndentedString(establishmentId)).append("\n");
+    sb.append("    sendingatdate: ").append(toIndentedString(sendingatdate)).append("\n");
+    sb.append("    firstsending: ").append(toIndentedString(firstsending)).append("\n");
+    sb.append("    sendingmode: ").append(toIndentedString(sendingmode)).append("\n");
+    sb.append("    vatidentnumber: ").append(toIndentedString(vatidentnumber)).append("\n");
+    sb.append("    vatidentnumberauthorize: ").append(toIndentedString(vatidentnumberauthorize)).append("\n");
     sb.append("    establishment: ").append(toIndentedString(establishment)).append("\n");
-    sb.append("    cashDeviceCode: ").append(toIndentedString(cashDeviceCode)).append("\n");
-    sb.append("    receiptAtDATE: ").append(toIndentedString(receiptAtDATE)).append("\n");
+    sb.append("    cashdevicecode: ").append(toIndentedString(cashdevicecode)).append("\n");
+    sb.append("    receiptatdate: ").append(toIndentedString(receiptatdate)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    amountOutOfVAT: ").append(toIndentedString(amountOutOfVAT)).append("\n");
-    sb.append("    amountWithoutVATBasicRate: ").append(toIndentedString(amountWithoutVATBasicRate)).append("\n");
-    sb.append("    vATBasicRate: ").append(toIndentedString(vATBasicRate)).append("\n");
-    sb.append("    amountWithoutVATReducedRate: ").append(toIndentedString(amountWithoutVATReducedRate)).append("\n");
-    sb.append("    vATReducedRate: ").append(toIndentedString(vATReducedRate)).append("\n");
-    sb.append("    amountWithoutVATReduced2Rate: ").append(toIndentedString(amountWithoutVATReduced2Rate)).append("\n");
-    sb.append("    vATReduced2Rate: ").append(toIndentedString(vATReduced2Rate)).append("\n");
-    sb.append("    amountTrevelService: ").append(toIndentedString(amountTrevelService)).append("\n");
-    sb.append("    amountSecondhandBasicRate: ").append(toIndentedString(amountSecondhandBasicRate)).append("\n");
-    sb.append("    amountSecondhandReducedRate: ").append(toIndentedString(amountSecondhandReducedRate)).append("\n");
-    sb.append("    amountSecondhandReduced2Rate: ").append(toIndentedString(amountSecondhandReduced2Rate)).append("\n");
-    sb.append("    amountForSubsequentDrawdown: ").append(toIndentedString(amountForSubsequentDrawdown)).append("\n");
-    sb.append("    amountSubsequentDrawdown: ").append(toIndentedString(amountSubsequentDrawdown)).append("\n");
-    sb.append("    turnoverMode: ").append(toIndentedString(turnoverMode)).append("\n");
-    sb.append("    PKP: ").append(toIndentedString(PKP)).append("\n");
-    sb.append("    BKP: ").append(toIndentedString(BKP)).append("\n");
-    sb.append("    FIK: ").append(toIndentedString(FIK)).append("\n");
-    sb.append("    turnoverState: ").append(toIndentedString(turnoverState)).append("\n");
-    sb.append("    dataMessage: ").append(toIndentedString(dataMessage)).append("\n");
-    sb.append("    responseMessage: ").append(toIndentedString(responseMessage)).append("\n");
-    sb.append("    loggingProcessing: ").append(toIndentedString(loggingProcessing)).append("\n");
-    sb.append("    versionOfInterface: ").append(toIndentedString(versionOfInterface)).append("\n");
-    sb.append("    amountOutOfVATIsSet: ").append(toIndentedString(amountOutOfVATIsSet)).append("\n");
-    sb.append("    amountBasicRateIsSet: ").append(toIndentedString(amountBasicRateIsSet)).append("\n");
-    sb.append("    amountReducedRateIsSet: ").append(toIndentedString(amountReducedRateIsSet)).append("\n");
-    sb.append("    amountReduced2RateIsSet: ").append(toIndentedString(amountReduced2RateIsSet)).append("\n");
-    sb.append("    amountTrevelServiceIsSet: ").append(toIndentedString(amountTrevelServiceIsSet)).append("\n");
-    sb.append("    amountSecondhandBasRateIsSet: ").append(toIndentedString(amountSecondhandBasRateIsSet)).append("\n");
-    sb.append("    amountSecondhandRedRateIsSet: ").append(toIndentedString(amountSecondhandRedRateIsSet)).append("\n");
-    sb.append("    amountSecondhandRed2RateIsSet: ").append(toIndentedString(amountSecondhandRed2RateIsSet)).append("\n");
-    sb.append("    amountForSubseqDrawIsSet: ").append(toIndentedString(amountForSubseqDrawIsSet)).append("\n");
-    sb.append("    amountSubseqDrawIsSet: ").append(toIndentedString(amountSubseqDrawIsSet)).append("\n");
-    sb.append("    supplementaryFIK: ").append(toIndentedString(supplementaryFIK)).append("\n");
-    sb.append("    sendingDuration: ").append(toIndentedString(sendingDuration)).append("\n");
+    sb.append("    amountoutofvat: ").append(toIndentedString(amountoutofvat)).append("\n");
+    sb.append("    amountwithoutvatbasicrate: ").append(toIndentedString(amountwithoutvatbasicrate)).append("\n");
+    sb.append("    vatbasicrate: ").append(toIndentedString(vatbasicrate)).append("\n");
+    sb.append("    amountwithoutvatreducedrate: ").append(toIndentedString(amountwithoutvatreducedrate)).append("\n");
+    sb.append("    vatreducedrate: ").append(toIndentedString(vatreducedrate)).append("\n");
+    sb.append("    amountwithoutvatreduced2rate: ").append(toIndentedString(amountwithoutvatreduced2rate)).append("\n");
+    sb.append("    vatreduced2rate: ").append(toIndentedString(vatreduced2rate)).append("\n");
+    sb.append("    amounttrevelservice: ").append(toIndentedString(amounttrevelservice)).append("\n");
+    sb.append("    amountsecondhandbasicrate: ").append(toIndentedString(amountsecondhandbasicrate)).append("\n");
+    sb.append("    amountsecondhandreducedrate: ").append(toIndentedString(amountsecondhandreducedrate)).append("\n");
+    sb.append("    amountsecondhandreduced2rate: ").append(toIndentedString(amountsecondhandreduced2rate)).append("\n");
+    sb.append("    amountforsubsequentdrawdown: ").append(toIndentedString(amountforsubsequentdrawdown)).append("\n");
+    sb.append("    amountsubsequentdrawdown: ").append(toIndentedString(amountsubsequentdrawdown)).append("\n");
+    sb.append("    turnovermode: ").append(toIndentedString(turnovermode)).append("\n");
+    sb.append("    pkp: ").append(toIndentedString(pkp)).append("\n");
+    sb.append("    bkp: ").append(toIndentedString(bkp)).append("\n");
+    sb.append("    fik: ").append(toIndentedString(fik)).append("\n");
+    sb.append("    turnoverstate: ").append(toIndentedString(turnoverstate)).append("\n");
+    sb.append("    datamessage: ").append(toIndentedString(datamessage)).append("\n");
+    sb.append("    responsemessage: ").append(toIndentedString(responsemessage)).append("\n");
+    sb.append("    loggingprocessing: ").append(toIndentedString(loggingprocessing)).append("\n");
+    sb.append("    versionofinterface: ").append(toIndentedString(versionofinterface)).append("\n");
+    sb.append("    amountoutofvatisset: ").append(toIndentedString(amountoutofvatisset)).append("\n");
+    sb.append("    amountbasicrateisset: ").append(toIndentedString(amountbasicrateisset)).append("\n");
+    sb.append("    amountreducedrateisset: ").append(toIndentedString(amountreducedrateisset)).append("\n");
+    sb.append("    amountreduced2rateisset: ").append(toIndentedString(amountreduced2rateisset)).append("\n");
+    sb.append("    amounttrevelserviceisset: ").append(toIndentedString(amounttrevelserviceisset)).append("\n");
+    sb.append("    amountsecondhandbasrateisset: ").append(toIndentedString(amountsecondhandbasrateisset)).append("\n");
+    sb.append("    amountsecondhandredrateisset: ").append(toIndentedString(amountsecondhandredrateisset)).append("\n");
+    sb.append("    amountsecondhandred2rateisset: ").append(toIndentedString(amountsecondhandred2rateisset)).append("\n");
+    sb.append("    amountforsubseqdrawisset: ").append(toIndentedString(amountforsubseqdrawisset)).append("\n");
+    sb.append("    amountsubseqdrawisset: ").append(toIndentedString(amountsubseqdrawisset)).append("\n");
+    sb.append("    supplementaryfik: ").append(toIndentedString(supplementaryfik)).append("\n");
+    sb.append("    sendingduration: ").append(toIndentedString(sendingduration)).append("\n");
     sb.append("}");
     return sb.toString();
   }

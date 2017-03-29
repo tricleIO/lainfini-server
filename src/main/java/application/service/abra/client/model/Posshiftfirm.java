@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,114 +34,195 @@ import java.util.Objects;
 /**
  * Posshiftfirm
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posshiftfirm   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("Discount")
+  @SerializedName("discount")
   private Double discount = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Posshiftfirm displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Posshiftfirm id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Posshiftfirm classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Posshiftfirm objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Směna [persistentní položka]
-   * @return parentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Směna [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Posshiftfirm parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
   }
 
    /**
-   * Tržba [persistentní položka]
+   * vlastník; id objektu směna [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu směna [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Posshiftfirm amount(Double amount) {
+    this.amount = amount;
+    return this;
+  }
+
+   /**
+   * tržba [persistentní položka]
    * @return amount
   **/
-  @ApiModelProperty(example = "null", value = "Tržba [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "tržba [persistentní položka]")
   public Double getAmount() {
     return amount;
   }
 
+  public void setAmount(Double amount) {
+    this.amount = amount;
+  }
+
+  public Posshiftfirm quantity(Double quantity) {
+    this.quantity = quantity;
+    return this;
+  }
+
    /**
-   * Množství [persistentní položka]
+   * množství [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "množství [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
 
+  public void setQuantity(Double quantity) {
+    this.quantity = quantity;
+  }
+
+  public Posshiftfirm discount(Double discount) {
+    this.discount = discount;
+    return this;
+  }
+
    /**
-   * Slevy [persistentní položka]
+   * slevy [persistentní položka]
    * @return discount
   **/
-  @ApiModelProperty(example = "null", value = "Slevy [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "slevy [persistentní položka]")
   public Double getDiscount() {
     return discount;
   }
 
+  public void setDiscount(Double discount) {
+    this.discount = discount;
+  }
+
+  public Posshiftfirm firmId(String firmId) {
+    this.firmId = firmId;
+    return this;
+  }
+
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
+  }
+
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
 
@@ -154,20 +235,20 @@ public class Posshiftfirm   {
       return false;
     }
     Posshiftfirm posshiftfirm = (Posshiftfirm) o;
-    return Objects.equals(this.displayName, posshiftfirm.displayName) &&
-        Objects.equals(this.ID, posshiftfirm.ID) &&
-        Objects.equals(this.classID, posshiftfirm.classID) &&
-        Objects.equals(this.objVersion, posshiftfirm.objVersion) &&
-        Objects.equals(this.parentID, posshiftfirm.parentID) &&
+    return Objects.equals(this.displayname, posshiftfirm.displayname) &&
+        Objects.equals(this.id, posshiftfirm.id) &&
+        Objects.equals(this.classid, posshiftfirm.classid) &&
+        Objects.equals(this.objversion, posshiftfirm.objversion) &&
+        Objects.equals(this.parentId, posshiftfirm.parentId) &&
         Objects.equals(this.amount, posshiftfirm.amount) &&
         Objects.equals(this.quantity, posshiftfirm.quantity) &&
         Objects.equals(this.discount, posshiftfirm.discount) &&
-        Objects.equals(this.firmID, posshiftfirm.firmID);
+        Objects.equals(this.firmId, posshiftfirm.firmId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, amount, quantity, discount, firmID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, amount, quantity, discount, firmId);
   }
 
   @Override
@@ -175,15 +256,15 @@ public class Posshiftfirm   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posshiftfirm {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
     sb.append("    discount: ").append(toIndentedString(discount)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

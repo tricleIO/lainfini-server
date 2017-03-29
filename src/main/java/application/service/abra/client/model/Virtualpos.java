@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,114 +37,150 @@ import java.util.Objects;
 /**
  * Virtualpos
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Virtualpos   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Virtualposcurrency> rows = new ArrayList<Virtualposcurrency>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("LockedBy_ID")
-  private String lockedByID = null;
+  @SerializedName("lockedby_id")
+  private String lockedbyId = null;
 
-  @SerializedName("CreatedDate$DATE")
-  private DateTime createdDateDATE = null;
+  @SerializedName("createddate$date")
+  private DateTime createddatedate = null;
 
-  @SerializedName("LockedDate$DATE")
-  private DateTime lockedDateDATE = null;
+  @SerializedName("lockeddate$date")
+  private DateTime lockeddatedate = null;
 
-  @SerializedName("Locked")
+  @SerializedName("locked")
   private Boolean locked = null;
 
-  @SerializedName("PrintVarSymbol")
-  private Boolean printVarSymbol = null;
+  @SerializedName("printvarsymbol")
+  private Boolean printvarsymbol = null;
 
-  @SerializedName("SplitCashPaidByPaymentCards")
-  private Boolean splitCashPaidByPaymentCards = null;
+  @SerializedName("splitcashpaidbypaymentcards")
+  private Boolean splitcashpaidbypaymentcards = null;
 
-  @SerializedName("DirectToCashDeskForced")
-  private Boolean directToCashDeskForced = null;
+  @SerializedName("directtocashdeskforced")
+  private Boolean directtocashdeskforced = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("ConstSymbol_ID")
-  private String constSymbolID = null;
+  @SerializedName("constsymbol_id")
+  private String constsymbolId = null;
 
-  @SerializedName("AnalyticalAccount")
-  private String analyticalAccount = null;
+  @SerializedName("analyticalaccount")
+  private String analyticalaccount = null;
 
-  @SerializedName("Curencies")
+  @SerializedName("curencies")
   private List<Virtualposcurrency> curencies = new ArrayList<Virtualposcurrency>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Virtualpos displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Virtualpos id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Virtualpos classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Virtualpos objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Virtualpos rows(List<Virtualposcurrency> rows) {
@@ -158,10 +194,10 @@ public class Virtualpos   {
   }
 
    /**
-   * Měny; kolekce BO Pokladní místo - povolená měna [nepersistentní položka]
+   * měny; kolekce bo pokladní místo - povolená měna [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Měny; kolekce BO Pokladní místo - povolená měna [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "měny; kolekce bo pokladní místo - povolená měna [nepersistentní položka]")
   public List<Virtualposcurrency> getRows() {
     return rows;
   }
@@ -176,10 +212,10 @@ public class Virtualpos   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -194,10 +230,10 @@ public class Virtualpos   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -206,76 +242,76 @@ public class Virtualpos   {
     this.name = name;
   }
 
-  public Virtualpos createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Virtualpos createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Virtualpos lockedByID(String lockedByID) {
-    this.lockedByID = lockedByID;
+  public Virtualpos lockedbyId(String lockedbyId) {
+    this.lockedbyId = lockedbyId;
     return this;
   }
 
    /**
-   * Uzamkl; ID objektu Uživatel [persistentní položka]
-   * @return lockedByID
+   * uzamkl; id objektu uživatel [persistentní položka]
+   * @return lockedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Uzamkl; ID objektu Uživatel [persistentní položka]")
-  public String getLockedByID() {
-    return lockedByID;
+  @ApiModelProperty(example = "null", value = "uzamkl; id objektu uživatel [persistentní položka]")
+  public String getLockedbyId() {
+    return lockedbyId;
   }
 
-  public void setLockedByID(String lockedByID) {
-    this.lockedByID = lockedByID;
+  public void setLockedbyId(String lockedbyId) {
+    this.lockedbyId = lockedbyId;
   }
 
-  public Virtualpos createdDateDATE(DateTime createdDateDATE) {
-    this.createdDateDATE = createdDateDATE;
+  public Virtualpos createddatedate(DateTime createddatedate) {
+    this.createddatedate = createddatedate;
     return this;
   }
 
    /**
-   * Vytvořeno [persistentní položka]
-   * @return createdDateDATE
+   * vytvořeno [persistentní položka]
+   * @return createddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořeno [persistentní položka]")
-  public DateTime getCreatedDateDATE() {
-    return createdDateDATE;
+  @ApiModelProperty(example = "null", value = "vytvořeno [persistentní položka]")
+  public DateTime getCreateddatedate() {
+    return createddatedate;
   }
 
-  public void setCreatedDateDATE(DateTime createdDateDATE) {
-    this.createdDateDATE = createdDateDATE;
+  public void setCreateddatedate(DateTime createddatedate) {
+    this.createddatedate = createddatedate;
   }
 
-  public Virtualpos lockedDateDATE(DateTime lockedDateDATE) {
-    this.lockedDateDATE = lockedDateDATE;
+  public Virtualpos lockeddatedate(DateTime lockeddatedate) {
+    this.lockeddatedate = lockeddatedate;
     return this;
   }
 
    /**
-   * Uzamčeno [persistentní položka]
-   * @return lockedDateDATE
+   * uzamčeno [persistentní položka]
+   * @return lockeddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Uzamčeno [persistentní položka]")
-  public DateTime getLockedDateDATE() {
-    return lockedDateDATE;
+  @ApiModelProperty(example = "null", value = "uzamčeno [persistentní položka]")
+  public DateTime getLockeddatedate() {
+    return lockeddatedate;
   }
 
-  public void setLockedDateDATE(DateTime lockedDateDATE) {
-    this.lockedDateDATE = lockedDateDATE;
+  public void setLockeddatedate(DateTime lockeddatedate) {
+    this.lockeddatedate = lockeddatedate;
   }
 
   public Virtualpos locked(Boolean locked) {
@@ -284,10 +320,10 @@ public class Virtualpos   {
   }
 
    /**
-   * Uzamčeno [persistentní položka]
+   * uzamčeno [persistentní položka]
    * @return locked
   **/
-  @ApiModelProperty(example = "null", value = "Uzamčeno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "uzamčeno [persistentní položka]")
   public Boolean getLocked() {
     return locked;
   }
@@ -296,202 +332,202 @@ public class Virtualpos   {
     this.locked = locked;
   }
 
-  public Virtualpos printVarSymbol(Boolean printVarSymbol) {
-    this.printVarSymbol = printVarSymbol;
+  public Virtualpos printvarsymbol(Boolean printvarsymbol) {
+    this.printvarsymbol = printvarsymbol;
     return this;
   }
 
    /**
-   * Tisknout var.sym. [persistentní položka]
-   * @return printVarSymbol
+   * tisknout var.sym. [persistentní položka]
+   * @return printvarsymbol
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout var.sym. [persistentní položka]")
-  public Boolean getPrintVarSymbol() {
-    return printVarSymbol;
+  @ApiModelProperty(example = "null", value = "tisknout var.sym. [persistentní položka]")
+  public Boolean getPrintvarsymbol() {
+    return printvarsymbol;
   }
 
-  public void setPrintVarSymbol(Boolean printVarSymbol) {
-    this.printVarSymbol = printVarSymbol;
+  public void setPrintvarsymbol(Boolean printvarsymbol) {
+    this.printvarsymbol = printvarsymbol;
   }
 
-  public Virtualpos splitCashPaidByPaymentCards(Boolean splitCashPaidByPaymentCards) {
-    this.splitCashPaidByPaymentCards = splitCashPaidByPaymentCards;
+  public Virtualpos splitcashpaidbypaymentcards(Boolean splitcashpaidbypaymentcards) {
+    this.splitcashpaidbypaymentcards = splitcashpaidbypaymentcards;
     return this;
   }
 
    /**
-   * Odvádět každou platbu kartou samostatně [persistentní položka]
-   * @return splitCashPaidByPaymentCards
+   * odvádět každou platbu kartou samostatně [persistentní položka]
+   * @return splitcashpaidbypaymentcards
   **/
-  @ApiModelProperty(example = "null", value = "Odvádět každou platbu kartou samostatně [persistentní položka]")
-  public Boolean getSplitCashPaidByPaymentCards() {
-    return splitCashPaidByPaymentCards;
+  @ApiModelProperty(example = "null", value = "odvádět každou platbu kartou samostatně [persistentní položka]")
+  public Boolean getSplitcashpaidbypaymentcards() {
+    return splitcashpaidbypaymentcards;
   }
 
-  public void setSplitCashPaidByPaymentCards(Boolean splitCashPaidByPaymentCards) {
-    this.splitCashPaidByPaymentCards = splitCashPaidByPaymentCards;
+  public void setSplitcashpaidbypaymentcards(Boolean splitcashpaidbypaymentcards) {
+    this.splitcashpaidbypaymentcards = splitcashpaidbypaymentcards;
   }
 
-  public Virtualpos directToCashDeskForced(Boolean directToCashDeskForced) {
-    this.directToCashDeskForced = directToCashDeskForced;
+  public Virtualpos directtocashdeskforced(Boolean directtocashdeskforced) {
+    this.directtocashdeskforced = directtocashdeskforced;
     return this;
   }
 
    /**
-   * Povinně odvádět tržby přímo do firemní pokladny [persistentní položka]
-   * @return directToCashDeskForced
+   * povinně odvádět tržby přímo do firemní pokladny [persistentní položka]
+   * @return directtocashdeskforced
   **/
-  @ApiModelProperty(example = "null", value = "Povinně odvádět tržby přímo do firemní pokladny [persistentní položka]")
-  public Boolean getDirectToCashDeskForced() {
-    return directToCashDeskForced;
+  @ApiModelProperty(example = "null", value = "povinně odvádět tržby přímo do firemní pokladny [persistentní položka]")
+  public Boolean getDirecttocashdeskforced() {
+    return directtocashdeskforced;
   }
 
-  public void setDirectToCashDeskForced(Boolean directToCashDeskForced) {
-    this.directToCashDeskForced = directToCashDeskForced;
+  public void setDirecttocashdeskforced(Boolean directtocashdeskforced) {
+    this.directtocashdeskforced = directtocashdeskforced;
   }
 
-  public Virtualpos docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Virtualpos docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Řada dokladů; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * Řada dokladů; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "Řada dokladů; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Virtualpos firmID(String firmID) {
-    this.firmID = firmID;
+  public Virtualpos firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma pro předvyplnění; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma pro předvyplnění; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma pro předvyplnění; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma pro předvyplnění; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Virtualpos divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Virtualpos divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Virtualpos busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Virtualpos busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Virtualpos busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Virtualpos bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obchodní případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obchodní případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obchodní případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obchodní případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Virtualpos busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Virtualpos busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Virtualpos constSymbolID(String constSymbolID) {
-    this.constSymbolID = constSymbolID;
+  public Virtualpos constsymbolId(String constsymbolId) {
+    this.constsymbolId = constsymbolId;
     return this;
   }
 
    /**
-   * Konst.symbol; ID objektu Konstantní symbol [persistentní položka]
-   * @return constSymbolID
+   * konst.symbol; id objektu konstantní symbol [persistentní položka]
+   * @return constsymbolId
   **/
-  @ApiModelProperty(example = "null", value = "Konst.symbol; ID objektu Konstantní symbol [persistentní položka]")
-  public String getConstSymbolID() {
-    return constSymbolID;
+  @ApiModelProperty(example = "null", value = "konst.symbol; id objektu konstantní symbol [persistentní položka]")
+  public String getConstsymbolId() {
+    return constsymbolId;
   }
 
-  public void setConstSymbolID(String constSymbolID) {
-    this.constSymbolID = constSymbolID;
+  public void setConstsymbolId(String constsymbolId) {
+    this.constsymbolId = constsymbolId;
   }
 
-  public Virtualpos analyticalAccount(String analyticalAccount) {
-    this.analyticalAccount = analyticalAccount;
+  public Virtualpos analyticalaccount(String analyticalaccount) {
+    this.analyticalaccount = analyticalaccount;
     return this;
   }
 
    /**
-   * Analytika [persistentní položka]
-   * @return analyticalAccount
+   * analytika [persistentní položka]
+   * @return analyticalaccount
   **/
-  @ApiModelProperty(example = "null", value = "Analytika [persistentní položka]")
-  public String getAnalyticalAccount() {
-    return analyticalAccount;
+  @ApiModelProperty(example = "null", value = "analytika [persistentní položka]")
+  public String getAnalyticalaccount() {
+    return analyticalaccount;
   }
 
-  public void setAnalyticalAccount(String analyticalAccount) {
-    this.analyticalAccount = analyticalAccount;
+  public void setAnalyticalaccount(String analyticalaccount) {
+    this.analyticalaccount = analyticalaccount;
   }
 
   public Virtualpos curencies(List<Virtualposcurrency> curencies) {
@@ -505,10 +541,10 @@ public class Virtualpos   {
   }
 
    /**
-   * Měny; kolekce BO Pokladní místo - povolená měna [nepersistentní položka]
+   * měny; kolekce bo pokladní místo - povolená měna [nepersistentní položka]
    * @return curencies
   **/
-  @ApiModelProperty(example = "null", value = "Měny; kolekce BO Pokladní místo - povolená měna [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "měny; kolekce bo pokladní místo - povolená měna [nepersistentní položka]")
   public List<Virtualposcurrency> getCurencies() {
     return curencies;
   }
@@ -527,35 +563,35 @@ public class Virtualpos   {
       return false;
     }
     Virtualpos virtualpos = (Virtualpos) o;
-    return Objects.equals(this.displayName, virtualpos.displayName) &&
-        Objects.equals(this.ID, virtualpos.ID) &&
-        Objects.equals(this.classID, virtualpos.classID) &&
-        Objects.equals(this.objVersion, virtualpos.objVersion) &&
+    return Objects.equals(this.displayname, virtualpos.displayname) &&
+        Objects.equals(this.id, virtualpos.id) &&
+        Objects.equals(this.classid, virtualpos.classid) &&
+        Objects.equals(this.objversion, virtualpos.objversion) &&
         Objects.equals(this.rows, virtualpos.rows) &&
         Objects.equals(this.hidden, virtualpos.hidden) &&
         Objects.equals(this.name, virtualpos.name) &&
-        Objects.equals(this.createdByID, virtualpos.createdByID) &&
-        Objects.equals(this.lockedByID, virtualpos.lockedByID) &&
-        Objects.equals(this.createdDateDATE, virtualpos.createdDateDATE) &&
-        Objects.equals(this.lockedDateDATE, virtualpos.lockedDateDATE) &&
+        Objects.equals(this.createdbyId, virtualpos.createdbyId) &&
+        Objects.equals(this.lockedbyId, virtualpos.lockedbyId) &&
+        Objects.equals(this.createddatedate, virtualpos.createddatedate) &&
+        Objects.equals(this.lockeddatedate, virtualpos.lockeddatedate) &&
         Objects.equals(this.locked, virtualpos.locked) &&
-        Objects.equals(this.printVarSymbol, virtualpos.printVarSymbol) &&
-        Objects.equals(this.splitCashPaidByPaymentCards, virtualpos.splitCashPaidByPaymentCards) &&
-        Objects.equals(this.directToCashDeskForced, virtualpos.directToCashDeskForced) &&
-        Objects.equals(this.docQueueID, virtualpos.docQueueID) &&
-        Objects.equals(this.firmID, virtualpos.firmID) &&
-        Objects.equals(this.divisionID, virtualpos.divisionID) &&
-        Objects.equals(this.busOrderID, virtualpos.busOrderID) &&
-        Objects.equals(this.busTransactionID, virtualpos.busTransactionID) &&
-        Objects.equals(this.busProjectID, virtualpos.busProjectID) &&
-        Objects.equals(this.constSymbolID, virtualpos.constSymbolID) &&
-        Objects.equals(this.analyticalAccount, virtualpos.analyticalAccount) &&
+        Objects.equals(this.printvarsymbol, virtualpos.printvarsymbol) &&
+        Objects.equals(this.splitcashpaidbypaymentcards, virtualpos.splitcashpaidbypaymentcards) &&
+        Objects.equals(this.directtocashdeskforced, virtualpos.directtocashdeskforced) &&
+        Objects.equals(this.docqueueId, virtualpos.docqueueId) &&
+        Objects.equals(this.firmId, virtualpos.firmId) &&
+        Objects.equals(this.divisionId, virtualpos.divisionId) &&
+        Objects.equals(this.busorderId, virtualpos.busorderId) &&
+        Objects.equals(this.bustransactionId, virtualpos.bustransactionId) &&
+        Objects.equals(this.busprojectId, virtualpos.busprojectId) &&
+        Objects.equals(this.constsymbolId, virtualpos.constsymbolId) &&
+        Objects.equals(this.analyticalaccount, virtualpos.analyticalaccount) &&
         Objects.equals(this.curencies, virtualpos.curencies);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, name, createdByID, lockedByID, createdDateDATE, lockedDateDATE, locked, printVarSymbol, splitCashPaidByPaymentCards, directToCashDeskForced, docQueueID, firmID, divisionID, busOrderID, busTransactionID, busProjectID, constSymbolID, analyticalAccount, curencies);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, name, createdbyId, lockedbyId, createddatedate, lockeddatedate, locked, printvarsymbol, splitcashpaidbypaymentcards, directtocashdeskforced, docqueueId, firmId, divisionId, busorderId, bustransactionId, busprojectId, constsymbolId, analyticalaccount, curencies);
   }
 
   @Override
@@ -563,29 +599,29 @@ public class Virtualpos   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Virtualpos {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    lockedByID: ").append(toIndentedString(lockedByID)).append("\n");
-    sb.append("    createdDateDATE: ").append(toIndentedString(createdDateDATE)).append("\n");
-    sb.append("    lockedDateDATE: ").append(toIndentedString(lockedDateDATE)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    lockedbyId: ").append(toIndentedString(lockedbyId)).append("\n");
+    sb.append("    createddatedate: ").append(toIndentedString(createddatedate)).append("\n");
+    sb.append("    lockeddatedate: ").append(toIndentedString(lockeddatedate)).append("\n");
     sb.append("    locked: ").append(toIndentedString(locked)).append("\n");
-    sb.append("    printVarSymbol: ").append(toIndentedString(printVarSymbol)).append("\n");
-    sb.append("    splitCashPaidByPaymentCards: ").append(toIndentedString(splitCashPaidByPaymentCards)).append("\n");
-    sb.append("    directToCashDeskForced: ").append(toIndentedString(directToCashDeskForced)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    constSymbolID: ").append(toIndentedString(constSymbolID)).append("\n");
-    sb.append("    analyticalAccount: ").append(toIndentedString(analyticalAccount)).append("\n");
+    sb.append("    printvarsymbol: ").append(toIndentedString(printvarsymbol)).append("\n");
+    sb.append("    splitcashpaidbypaymentcards: ").append(toIndentedString(splitcashpaidbypaymentcards)).append("\n");
+    sb.append("    directtocashdeskforced: ").append(toIndentedString(directtocashdeskforced)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    constsymbolId: ").append(toIndentedString(constsymbolId)).append("\n");
+    sb.append("    analyticalaccount: ").append(toIndentedString(analyticalaccount)).append("\n");
     sb.append("    curencies: ").append(toIndentedString(curencies)).append("\n");
     sb.append("}");
     return sb.toString();

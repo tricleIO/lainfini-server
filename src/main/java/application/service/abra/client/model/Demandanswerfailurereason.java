@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,63 +34,99 @@ import java.util.Objects;
 /**
  * Demandanswerfailurereason
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Demandanswerfailurereason   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Demandanswerfailurereason displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Demandanswerfailurereason id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Demandanswerfailurereason classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Demandanswerfailurereason objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Demandanswerfailurereason code(String code) {
@@ -99,10 +135,10 @@ public class Demandanswerfailurereason   {
   }
 
    /**
-   * Code [persistentní položka]
+   * code [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Code [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "code [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -117,10 +153,10 @@ public class Demandanswerfailurereason   {
   }
 
    /**
-   * Name [persistentní položka]
+   * name [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Name [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "name [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -135,10 +171,10 @@ public class Demandanswerfailurereason   {
   }
 
    /**
-   * Note [persistentní položka]
+   * note [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Note [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "note [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -157,10 +193,10 @@ public class Demandanswerfailurereason   {
       return false;
     }
     Demandanswerfailurereason demandanswerfailurereason = (Demandanswerfailurereason) o;
-    return Objects.equals(this.displayName, demandanswerfailurereason.displayName) &&
-        Objects.equals(this.ID, demandanswerfailurereason.ID) &&
-        Objects.equals(this.classID, demandanswerfailurereason.classID) &&
-        Objects.equals(this.objVersion, demandanswerfailurereason.objVersion) &&
+    return Objects.equals(this.displayname, demandanswerfailurereason.displayname) &&
+        Objects.equals(this.id, demandanswerfailurereason.id) &&
+        Objects.equals(this.classid, demandanswerfailurereason.classid) &&
+        Objects.equals(this.objversion, demandanswerfailurereason.objversion) &&
         Objects.equals(this.code, demandanswerfailurereason.code) &&
         Objects.equals(this.name, demandanswerfailurereason.name) &&
         Objects.equals(this.note, demandanswerfailurereason.note);
@@ -168,7 +204,7 @@ public class Demandanswerfailurereason   {
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, code, name, note);
+    return Objects.hash(displayname, id, classid, objversion, code, name, note);
   }
 
   @Override
@@ -176,10 +212,10 @@ public class Demandanswerfailurereason   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Demandanswerfailurereason {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");

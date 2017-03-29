@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,264 +35,300 @@ import java.util.Objects;
 /**
  * Busorderfreal
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Busorderfreal   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("BusObject_ID")
-  private String busObjectID = null;
+  @SerializedName("busobject_id")
+  private String busobjectId = null;
 
-  @SerializedName("EvaluationDate$DATE")
-  private DateTime evaluationDateDATE = null;
+  @SerializedName("evaluationdate$date")
+  private DateTime evaluationdatedate = null;
 
-  @SerializedName("RealCosts")
-  private Double realCosts = null;
+  @SerializedName("realcosts")
+  private Double realcosts = null;
 
-  @SerializedName("RealRevenues")
-  private Double realRevenues = null;
+  @SerializedName("realrevenues")
+  private Double realrevenues = null;
 
-  @SerializedName("RealCostsWithSubTree")
-  private Double realCostsWithSubTree = null;
+  @SerializedName("realcostswithsubtree")
+  private Double realcostswithsubtree = null;
 
-  @SerializedName("RealRevenuesWithSubTree")
-  private Double realRevenuesWithSubTree = null;
+  @SerializedName("realrevenueswithsubtree")
+  private Double realrevenueswithsubtree = null;
 
-  @SerializedName("RealCostsFromSources")
-  private Double realCostsFromSources = null;
+  @SerializedName("realcostsfromsources")
+  private Double realcostsfromsources = null;
 
-  @SerializedName("RealCostsFromSourcesWSubTree")
-  private Double realCostsFromSourcesWSubTree = null;
+  @SerializedName("realcostsfromsourceswsubtree")
+  private Double realcostsfromsourceswsubtree = null;
 
-  @SerializedName("CalculatedBy_ID")
-  private String calculatedByID = null;
+  @SerializedName("calculatedby_id")
+  private String calculatedbyId = null;
 
-  @SerializedName("CalculatedWhen$DATE")
-  private DateTime calculatedWhenDATE = null;
+  @SerializedName("calculatedwhen$date")
+  private DateTime calculatedwhendate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Busorderfreal busObjectID(String busObjectID) {
-    this.busObjectID = busObjectID;
+  public Busorderfreal displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Nadřízený objekt; ID objektu Zakázka [persistentní položka]
-   * @return busObjectID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízený objekt; ID objektu Zakázka [persistentní položka]")
-  public String getBusObjectID() {
-    return busObjectID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setBusObjectID(String busObjectID) {
-    this.busObjectID = busObjectID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Busorderfreal evaluationDateDATE(DateTime evaluationDateDATE) {
-    this.evaluationDateDATE = evaluationDateDATE;
+  public Busorderfreal id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Datum vyhodnocení [persistentní položka]
-   * @return evaluationDateDATE
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Datum vyhodnocení [persistentní položka]")
-  public DateTime getEvaluationDateDATE() {
-    return evaluationDateDATE;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setEvaluationDateDATE(DateTime evaluationDateDATE) {
-    this.evaluationDateDATE = evaluationDateDATE;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Busorderfreal realCosts(Double realCosts) {
-    this.realCosts = realCosts;
+  public Busorderfreal classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Reálné náklady [persistentní položka]
-   * @return realCosts
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Reálné náklady [persistentní položka]")
-  public Double getRealCosts() {
-    return realCosts;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setRealCosts(Double realCosts) {
-    this.realCosts = realCosts;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Busorderfreal realRevenues(Double realRevenues) {
-    this.realRevenues = realRevenues;
+  public Busorderfreal objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Reálné výnosy [persistentní položka]
-   * @return realRevenues
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Reálné výnosy [persistentní položka]")
-  public Double getRealRevenues() {
-    return realRevenues;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setRealRevenues(Double realRevenues) {
-    this.realRevenues = realRevenues;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Busorderfreal realCostsWithSubTree(Double realCostsWithSubTree) {
-    this.realCostsWithSubTree = realCostsWithSubTree;
+  public Busorderfreal busobjectId(String busobjectId) {
+    this.busobjectId = busobjectId;
     return this;
   }
 
    /**
-   * Reálné náklady vč.podřízených [persistentní položka]
-   * @return realCostsWithSubTree
+   * nadřízený objekt; id objektu zakázka [persistentní položka]
+   * @return busobjectId
   **/
-  @ApiModelProperty(example = "null", value = "Reálné náklady vč.podřízených [persistentní položka]")
-  public Double getRealCostsWithSubTree() {
-    return realCostsWithSubTree;
+  @ApiModelProperty(example = "null", value = "nadřízený objekt; id objektu zakázka [persistentní položka]")
+  public String getBusobjectId() {
+    return busobjectId;
   }
 
-  public void setRealCostsWithSubTree(Double realCostsWithSubTree) {
-    this.realCostsWithSubTree = realCostsWithSubTree;
+  public void setBusobjectId(String busobjectId) {
+    this.busobjectId = busobjectId;
   }
 
-  public Busorderfreal realRevenuesWithSubTree(Double realRevenuesWithSubTree) {
-    this.realRevenuesWithSubTree = realRevenuesWithSubTree;
+  public Busorderfreal evaluationdatedate(DateTime evaluationdatedate) {
+    this.evaluationdatedate = evaluationdatedate;
     return this;
   }
 
    /**
-   * Reálné výnosy vč.podřízených [persistentní položka]
-   * @return realRevenuesWithSubTree
+   * datum vyhodnocení [persistentní položka]
+   * @return evaluationdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Reálné výnosy vč.podřízených [persistentní položka]")
-  public Double getRealRevenuesWithSubTree() {
-    return realRevenuesWithSubTree;
+  @ApiModelProperty(example = "null", value = "datum vyhodnocení [persistentní položka]")
+  public DateTime getEvaluationdatedate() {
+    return evaluationdatedate;
   }
 
-  public void setRealRevenuesWithSubTree(Double realRevenuesWithSubTree) {
-    this.realRevenuesWithSubTree = realRevenuesWithSubTree;
+  public void setEvaluationdatedate(DateTime evaluationdatedate) {
+    this.evaluationdatedate = evaluationdatedate;
   }
 
-  public Busorderfreal realCostsFromSources(Double realCostsFromSources) {
-    this.realCostsFromSources = realCostsFromSources;
+  public Busorderfreal realcosts(Double realcosts) {
+    this.realcosts = realcosts;
     return this;
   }
 
    /**
-   * Reálné náklady zdrojů [persistentní položka]
-   * @return realCostsFromSources
+   * reálné náklady [persistentní položka]
+   * @return realcosts
   **/
-  @ApiModelProperty(example = "null", value = "Reálné náklady zdrojů [persistentní položka]")
-  public Double getRealCostsFromSources() {
-    return realCostsFromSources;
+  @ApiModelProperty(example = "null", value = "reálné náklady [persistentní položka]")
+  public Double getRealcosts() {
+    return realcosts;
   }
 
-  public void setRealCostsFromSources(Double realCostsFromSources) {
-    this.realCostsFromSources = realCostsFromSources;
+  public void setRealcosts(Double realcosts) {
+    this.realcosts = realcosts;
   }
 
-  public Busorderfreal realCostsFromSourcesWSubTree(Double realCostsFromSourcesWSubTree) {
-    this.realCostsFromSourcesWSubTree = realCostsFromSourcesWSubTree;
+  public Busorderfreal realrevenues(Double realrevenues) {
+    this.realrevenues = realrevenues;
     return this;
   }
 
    /**
-   * Reálné náklady zdrojů vč.podřízených [persistentní položka]
-   * @return realCostsFromSourcesWSubTree
+   * reálné výnosy [persistentní položka]
+   * @return realrevenues
   **/
-  @ApiModelProperty(example = "null", value = "Reálné náklady zdrojů vč.podřízených [persistentní položka]")
-  public Double getRealCostsFromSourcesWSubTree() {
-    return realCostsFromSourcesWSubTree;
+  @ApiModelProperty(example = "null", value = "reálné výnosy [persistentní položka]")
+  public Double getRealrevenues() {
+    return realrevenues;
   }
 
-  public void setRealCostsFromSourcesWSubTree(Double realCostsFromSourcesWSubTree) {
-    this.realCostsFromSourcesWSubTree = realCostsFromSourcesWSubTree;
+  public void setRealrevenues(Double realrevenues) {
+    this.realrevenues = realrevenues;
   }
 
-  public Busorderfreal calculatedByID(String calculatedByID) {
-    this.calculatedByID = calculatedByID;
+  public Busorderfreal realcostswithsubtree(Double realcostswithsubtree) {
+    this.realcostswithsubtree = realcostswithsubtree;
     return this;
   }
 
    /**
-   * Bilanci spočítal; ID objektu Uživatel [persistentní položka]
-   * @return calculatedByID
+   * reálné náklady vč.podřízených [persistentní položka]
+   * @return realcostswithsubtree
   **/
-  @ApiModelProperty(example = "null", value = "Bilanci spočítal; ID objektu Uživatel [persistentní položka]")
-  public String getCalculatedByID() {
-    return calculatedByID;
+  @ApiModelProperty(example = "null", value = "reálné náklady vč.podřízených [persistentní položka]")
+  public Double getRealcostswithsubtree() {
+    return realcostswithsubtree;
   }
 
-  public void setCalculatedByID(String calculatedByID) {
-    this.calculatedByID = calculatedByID;
+  public void setRealcostswithsubtree(Double realcostswithsubtree) {
+    this.realcostswithsubtree = realcostswithsubtree;
   }
 
-  public Busorderfreal calculatedWhenDATE(DateTime calculatedWhenDATE) {
-    this.calculatedWhenDATE = calculatedWhenDATE;
+  public Busorderfreal realrevenueswithsubtree(Double realrevenueswithsubtree) {
+    this.realrevenueswithsubtree = realrevenueswithsubtree;
     return this;
   }
 
    /**
-   * Datum posl.výpočtu [persistentní položka]
-   * @return calculatedWhenDATE
+   * reálné výnosy vč.podřízených [persistentní položka]
+   * @return realrevenueswithsubtree
   **/
-  @ApiModelProperty(example = "null", value = "Datum posl.výpočtu [persistentní položka]")
-  public DateTime getCalculatedWhenDATE() {
-    return calculatedWhenDATE;
+  @ApiModelProperty(example = "null", value = "reálné výnosy vč.podřízených [persistentní položka]")
+  public Double getRealrevenueswithsubtree() {
+    return realrevenueswithsubtree;
   }
 
-  public void setCalculatedWhenDATE(DateTime calculatedWhenDATE) {
-    this.calculatedWhenDATE = calculatedWhenDATE;
+  public void setRealrevenueswithsubtree(Double realrevenueswithsubtree) {
+    this.realrevenueswithsubtree = realrevenueswithsubtree;
+  }
+
+  public Busorderfreal realcostsfromsources(Double realcostsfromsources) {
+    this.realcostsfromsources = realcostsfromsources;
+    return this;
+  }
+
+   /**
+   * reálné náklady zdrojů [persistentní položka]
+   * @return realcostsfromsources
+  **/
+  @ApiModelProperty(example = "null", value = "reálné náklady zdrojů [persistentní položka]")
+  public Double getRealcostsfromsources() {
+    return realcostsfromsources;
+  }
+
+  public void setRealcostsfromsources(Double realcostsfromsources) {
+    this.realcostsfromsources = realcostsfromsources;
+  }
+
+  public Busorderfreal realcostsfromsourceswsubtree(Double realcostsfromsourceswsubtree) {
+    this.realcostsfromsourceswsubtree = realcostsfromsourceswsubtree;
+    return this;
+  }
+
+   /**
+   * reálné náklady zdrojů vč.podřízených [persistentní položka]
+   * @return realcostsfromsourceswsubtree
+  **/
+  @ApiModelProperty(example = "null", value = "reálné náklady zdrojů vč.podřízených [persistentní položka]")
+  public Double getRealcostsfromsourceswsubtree() {
+    return realcostsfromsourceswsubtree;
+  }
+
+  public void setRealcostsfromsourceswsubtree(Double realcostsfromsourceswsubtree) {
+    this.realcostsfromsourceswsubtree = realcostsfromsourceswsubtree;
+  }
+
+  public Busorderfreal calculatedbyId(String calculatedbyId) {
+    this.calculatedbyId = calculatedbyId;
+    return this;
+  }
+
+   /**
+   * bilanci spočítal; id objektu uživatel [persistentní položka]
+   * @return calculatedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "bilanci spočítal; id objektu uživatel [persistentní položka]")
+  public String getCalculatedbyId() {
+    return calculatedbyId;
+  }
+
+  public void setCalculatedbyId(String calculatedbyId) {
+    this.calculatedbyId = calculatedbyId;
+  }
+
+  public Busorderfreal calculatedwhendate(DateTime calculatedwhendate) {
+    this.calculatedwhendate = calculatedwhendate;
+    return this;
+  }
+
+   /**
+   * datum posl.výpočtu [persistentní položka]
+   * @return calculatedwhendate
+  **/
+  @ApiModelProperty(example = "null", value = "datum posl.výpočtu [persistentní položka]")
+  public DateTime getCalculatedwhendate() {
+    return calculatedwhendate;
+  }
+
+  public void setCalculatedwhendate(DateTime calculatedwhendate) {
+    this.calculatedwhendate = calculatedwhendate;
   }
 
 
@@ -305,25 +341,25 @@ public class Busorderfreal   {
       return false;
     }
     Busorderfreal busorderfreal = (Busorderfreal) o;
-    return Objects.equals(this.displayName, busorderfreal.displayName) &&
-        Objects.equals(this.ID, busorderfreal.ID) &&
-        Objects.equals(this.classID, busorderfreal.classID) &&
-        Objects.equals(this.objVersion, busorderfreal.objVersion) &&
-        Objects.equals(this.busObjectID, busorderfreal.busObjectID) &&
-        Objects.equals(this.evaluationDateDATE, busorderfreal.evaluationDateDATE) &&
-        Objects.equals(this.realCosts, busorderfreal.realCosts) &&
-        Objects.equals(this.realRevenues, busorderfreal.realRevenues) &&
-        Objects.equals(this.realCostsWithSubTree, busorderfreal.realCostsWithSubTree) &&
-        Objects.equals(this.realRevenuesWithSubTree, busorderfreal.realRevenuesWithSubTree) &&
-        Objects.equals(this.realCostsFromSources, busorderfreal.realCostsFromSources) &&
-        Objects.equals(this.realCostsFromSourcesWSubTree, busorderfreal.realCostsFromSourcesWSubTree) &&
-        Objects.equals(this.calculatedByID, busorderfreal.calculatedByID) &&
-        Objects.equals(this.calculatedWhenDATE, busorderfreal.calculatedWhenDATE);
+    return Objects.equals(this.displayname, busorderfreal.displayname) &&
+        Objects.equals(this.id, busorderfreal.id) &&
+        Objects.equals(this.classid, busorderfreal.classid) &&
+        Objects.equals(this.objversion, busorderfreal.objversion) &&
+        Objects.equals(this.busobjectId, busorderfreal.busobjectId) &&
+        Objects.equals(this.evaluationdatedate, busorderfreal.evaluationdatedate) &&
+        Objects.equals(this.realcosts, busorderfreal.realcosts) &&
+        Objects.equals(this.realrevenues, busorderfreal.realrevenues) &&
+        Objects.equals(this.realcostswithsubtree, busorderfreal.realcostswithsubtree) &&
+        Objects.equals(this.realrevenueswithsubtree, busorderfreal.realrevenueswithsubtree) &&
+        Objects.equals(this.realcostsfromsources, busorderfreal.realcostsfromsources) &&
+        Objects.equals(this.realcostsfromsourceswsubtree, busorderfreal.realcostsfromsourceswsubtree) &&
+        Objects.equals(this.calculatedbyId, busorderfreal.calculatedbyId) &&
+        Objects.equals(this.calculatedwhendate, busorderfreal.calculatedwhendate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, busObjectID, evaluationDateDATE, realCosts, realRevenues, realCostsWithSubTree, realRevenuesWithSubTree, realCostsFromSources, realCostsFromSourcesWSubTree, calculatedByID, calculatedWhenDATE);
+    return Objects.hash(displayname, id, classid, objversion, busobjectId, evaluationdatedate, realcosts, realrevenues, realcostswithsubtree, realrevenueswithsubtree, realcostsfromsources, realcostsfromsourceswsubtree, calculatedbyId, calculatedwhendate);
   }
 
   @Override
@@ -331,20 +367,20 @@ public class Busorderfreal   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Busorderfreal {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    busObjectID: ").append(toIndentedString(busObjectID)).append("\n");
-    sb.append("    evaluationDateDATE: ").append(toIndentedString(evaluationDateDATE)).append("\n");
-    sb.append("    realCosts: ").append(toIndentedString(realCosts)).append("\n");
-    sb.append("    realRevenues: ").append(toIndentedString(realRevenues)).append("\n");
-    sb.append("    realCostsWithSubTree: ").append(toIndentedString(realCostsWithSubTree)).append("\n");
-    sb.append("    realRevenuesWithSubTree: ").append(toIndentedString(realRevenuesWithSubTree)).append("\n");
-    sb.append("    realCostsFromSources: ").append(toIndentedString(realCostsFromSources)).append("\n");
-    sb.append("    realCostsFromSourcesWSubTree: ").append(toIndentedString(realCostsFromSourcesWSubTree)).append("\n");
-    sb.append("    calculatedByID: ").append(toIndentedString(calculatedByID)).append("\n");
-    sb.append("    calculatedWhenDATE: ").append(toIndentedString(calculatedWhenDATE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    busobjectId: ").append(toIndentedString(busobjectId)).append("\n");
+    sb.append("    evaluationdatedate: ").append(toIndentedString(evaluationdatedate)).append("\n");
+    sb.append("    realcosts: ").append(toIndentedString(realcosts)).append("\n");
+    sb.append("    realrevenues: ").append(toIndentedString(realrevenues)).append("\n");
+    sb.append("    realcostswithsubtree: ").append(toIndentedString(realcostswithsubtree)).append("\n");
+    sb.append("    realrevenueswithsubtree: ").append(toIndentedString(realrevenueswithsubtree)).append("\n");
+    sb.append("    realcostsfromsources: ").append(toIndentedString(realcostsfromsources)).append("\n");
+    sb.append("    realcostsfromsourceswsubtree: ").append(toIndentedString(realcostsfromsourceswsubtree)).append("\n");
+    sb.append("    calculatedbyId: ").append(toIndentedString(calculatedbyId)).append("\n");
+    sb.append("    calculatedwhendate: ").append(toIndentedString(calculatedwhendate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

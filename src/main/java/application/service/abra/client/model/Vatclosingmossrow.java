@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,318 +34,363 @@ import java.util.Objects;
 /**
  * Vatclosingmossrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Vatclosingmossrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("VATCountry_ID")
-  private String vATCountryID = null;
+  @SerializedName("vatcountry_id")
+  private String vatcountryId = null;
 
-  @SerializedName("Country_ID")
-  private String countryID = null;
+  @SerializedName("country_id")
+  private String countryId = null;
 
-  @SerializedName("VATRate_ID")
-  private String vATRateID = null;
+  @SerializedName("vatrate_id")
+  private String vatrateId = null;
 
-  @SerializedName("OldTaxableAmount")
-  private Double oldTaxableAmount = null;
+  @SerializedName("oldtaxableamount")
+  private Double oldtaxableamount = null;
 
-  @SerializedName("OldVATAmount")
-  private Double oldVATAmount = null;
+  @SerializedName("oldvatamount")
+  private Double oldvatamount = null;
 
-  @SerializedName("CalcTaxableAmount")
-  private Double calcTaxableAmount = null;
+  @SerializedName("calctaxableamount")
+  private Double calctaxableamount = null;
 
-  @SerializedName("CalcVATAmount")
-  private Double calcVATAmount = null;
+  @SerializedName("calcvatamount")
+  private Double calcvatamount = null;
 
-  @SerializedName("CorrTaxableAmount")
-  private Double corrTaxableAmount = null;
+  @SerializedName("corrtaxableamount")
+  private Double corrtaxableamount = null;
 
-  @SerializedName("CorrVATAmount")
-  private Double corrVATAmount = null;
+  @SerializedName("corrvatamount")
+  private Double corrvatamount = null;
 
-  @SerializedName("TaxableAmount")
-  private Double taxableAmount = null;
+  @SerializedName("taxableamount")
+  private Double taxableamount = null;
 
-  @SerializedName("VATAmount")
-  private Double vATAmount = null;
+  @SerializedName("vatamount")
+  private Double vatamount = null;
 
-  @SerializedName("VATIdentNumber")
-  private String vATIdentNumber = null;
+  @SerializedName("vatidentnumber")
+  private String vatidentnumber = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Uzávěrka DPH [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Uzávěrka DPH [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Vatclosingmossrow vATCountryID(String vATCountryID) {
-    this.vATCountryID = vATCountryID;
+  public Vatclosingmossrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Stát dodavatele; ID objektu Země [persistentní položka]
-   * @return vATCountryID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Stát dodavatele; ID objektu Země [persistentní položka]")
-  public String getVATCountryID() {
-    return vATCountryID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setVATCountryID(String vATCountryID) {
-    this.vATCountryID = vATCountryID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Vatclosingmossrow countryID(String countryID) {
-    this.countryID = countryID;
+  public Vatclosingmossrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Stát určení; ID objektu Země [persistentní položka]
-   * @return countryID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Stát určení; ID objektu Země [persistentní položka]")
-  public String getCountryID() {
-    return countryID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setCountryID(String countryID) {
-    this.countryID = countryID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Vatclosingmossrow vATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public Vatclosingmossrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * DPH sazba; ID objektu DPH sazba [persistentní položka]
-   * @return vATRateID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "DPH sazba; ID objektu DPH sazba [persistentní položka]")
-  public String getVATRateID() {
-    return vATRateID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setVATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Vatclosingmossrow oldTaxableAmount(Double oldTaxableAmount) {
-    this.oldTaxableAmount = oldTaxableAmount;
+  public Vatclosingmossrow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Původní základ [persistentní položka]
-   * @return oldTaxableAmount
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Původní základ [persistentní položka]")
-  public Double getOldTaxableAmount() {
-    return oldTaxableAmount;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setOldTaxableAmount(Double oldTaxableAmount) {
-    this.oldTaxableAmount = oldTaxableAmount;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Vatclosingmossrow oldVATAmount(Double oldVATAmount) {
-    this.oldVATAmount = oldVATAmount;
+  public Vatclosingmossrow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Původní daň [persistentní položka]
-   * @return oldVATAmount
+   * vlastník; id objektu uzávěrka dph [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Původní daň [persistentní položka]")
-  public Double getOldVATAmount() {
-    return oldVATAmount;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu uzávěrka dph [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setOldVATAmount(Double oldVATAmount) {
-    this.oldVATAmount = oldVATAmount;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Vatclosingmossrow calcTaxableAmount(Double calcTaxableAmount) {
-    this.calcTaxableAmount = calcTaxableAmount;
+  public Vatclosingmossrow vatcountryId(String vatcountryId) {
+    this.vatcountryId = vatcountryId;
     return this;
   }
 
    /**
-   * Vypočtený základ [persistentní položka]
-   * @return calcTaxableAmount
+   * stát dodavatele; id objektu země [persistentní položka]
+   * @return vatcountryId
   **/
-  @ApiModelProperty(example = "null", value = "Vypočtený základ [persistentní položka]")
-  public Double getCalcTaxableAmount() {
-    return calcTaxableAmount;
+  @ApiModelProperty(example = "null", value = "stát dodavatele; id objektu země [persistentní položka]")
+  public String getVatcountryId() {
+    return vatcountryId;
   }
 
-  public void setCalcTaxableAmount(Double calcTaxableAmount) {
-    this.calcTaxableAmount = calcTaxableAmount;
+  public void setVatcountryId(String vatcountryId) {
+    this.vatcountryId = vatcountryId;
   }
 
-  public Vatclosingmossrow calcVATAmount(Double calcVATAmount) {
-    this.calcVATAmount = calcVATAmount;
+  public Vatclosingmossrow countryId(String countryId) {
+    this.countryId = countryId;
     return this;
   }
 
    /**
-   * Vypočtená daň [persistentní položka]
-   * @return calcVATAmount
+   * stát určení; id objektu země [persistentní položka]
+   * @return countryId
   **/
-  @ApiModelProperty(example = "null", value = "Vypočtená daň [persistentní položka]")
-  public Double getCalcVATAmount() {
-    return calcVATAmount;
+  @ApiModelProperty(example = "null", value = "stát určení; id objektu země [persistentní položka]")
+  public String getCountryId() {
+    return countryId;
   }
 
-  public void setCalcVATAmount(Double calcVATAmount) {
-    this.calcVATAmount = calcVATAmount;
+  public void setCountryId(String countryId) {
+    this.countryId = countryId;
   }
 
-  public Vatclosingmossrow corrTaxableAmount(Double corrTaxableAmount) {
-    this.corrTaxableAmount = corrTaxableAmount;
+  public Vatclosingmossrow vatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
     return this;
   }
 
    /**
-   * Oprava základu [persistentní položka]
-   * @return corrTaxableAmount
+   * dph sazba; id objektu dph sazba [persistentní položka]
+   * @return vatrateId
   **/
-  @ApiModelProperty(example = "null", value = "Oprava základu [persistentní položka]")
-  public Double getCorrTaxableAmount() {
-    return corrTaxableAmount;
+  @ApiModelProperty(example = "null", value = "dph sazba; id objektu dph sazba [persistentní položka]")
+  public String getVatrateId() {
+    return vatrateId;
   }
 
-  public void setCorrTaxableAmount(Double corrTaxableAmount) {
-    this.corrTaxableAmount = corrTaxableAmount;
+  public void setVatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
   }
 
-  public Vatclosingmossrow corrVATAmount(Double corrVATAmount) {
-    this.corrVATAmount = corrVATAmount;
+  public Vatclosingmossrow oldtaxableamount(Double oldtaxableamount) {
+    this.oldtaxableamount = oldtaxableamount;
     return this;
   }
 
    /**
-   * Oprava daně [persistentní položka]
-   * @return corrVATAmount
+   * původní základ [persistentní položka]
+   * @return oldtaxableamount
   **/
-  @ApiModelProperty(example = "null", value = "Oprava daně [persistentní položka]")
-  public Double getCorrVATAmount() {
-    return corrVATAmount;
+  @ApiModelProperty(example = "null", value = "původní základ [persistentní položka]")
+  public Double getOldtaxableamount() {
+    return oldtaxableamount;
   }
 
-  public void setCorrVATAmount(Double corrVATAmount) {
-    this.corrVATAmount = corrVATAmount;
+  public void setOldtaxableamount(Double oldtaxableamount) {
+    this.oldtaxableamount = oldtaxableamount;
   }
 
-  public Vatclosingmossrow taxableAmount(Double taxableAmount) {
-    this.taxableAmount = taxableAmount;
+  public Vatclosingmossrow oldvatamount(Double oldvatamount) {
+    this.oldvatamount = oldvatamount;
     return this;
   }
 
    /**
-   * Základ [persistentní položka]
-   * @return taxableAmount
+   * původní daň [persistentní položka]
+   * @return oldvatamount
   **/
-  @ApiModelProperty(example = "null", value = "Základ [persistentní položka]")
-  public Double getTaxableAmount() {
-    return taxableAmount;
+  @ApiModelProperty(example = "null", value = "původní daň [persistentní položka]")
+  public Double getOldvatamount() {
+    return oldvatamount;
   }
 
-  public void setTaxableAmount(Double taxableAmount) {
-    this.taxableAmount = taxableAmount;
+  public void setOldvatamount(Double oldvatamount) {
+    this.oldvatamount = oldvatamount;
   }
 
-  public Vatclosingmossrow vATAmount(Double vATAmount) {
-    this.vATAmount = vATAmount;
+  public Vatclosingmossrow calctaxableamount(Double calctaxableamount) {
+    this.calctaxableamount = calctaxableamount;
     return this;
   }
 
    /**
-   * Daň [persistentní položka]
-   * @return vATAmount
+   * vypočtený základ [persistentní položka]
+   * @return calctaxableamount
   **/
-  @ApiModelProperty(example = "null", value = "Daň [persistentní položka]")
-  public Double getVATAmount() {
-    return vATAmount;
+  @ApiModelProperty(example = "null", value = "vypočtený základ [persistentní položka]")
+  public Double getCalctaxableamount() {
+    return calctaxableamount;
   }
 
-  public void setVATAmount(Double vATAmount) {
-    this.vATAmount = vATAmount;
+  public void setCalctaxableamount(Double calctaxableamount) {
+    this.calctaxableamount = calctaxableamount;
   }
 
-  public Vatclosingmossrow vATIdentNumber(String vATIdentNumber) {
-    this.vATIdentNumber = vATIdentNumber;
+  public Vatclosingmossrow calcvatamount(Double calcvatamount) {
+    this.calcvatamount = calcvatamount;
     return this;
   }
 
    /**
-   * Identifikátor DPH [persistentní položka]
-   * @return vATIdentNumber
+   * vypočtená daň [persistentní položka]
+   * @return calcvatamount
   **/
-  @ApiModelProperty(example = "null", value = "Identifikátor DPH [persistentní položka]")
-  public String getVATIdentNumber() {
-    return vATIdentNumber;
+  @ApiModelProperty(example = "null", value = "vypočtená daň [persistentní položka]")
+  public Double getCalcvatamount() {
+    return calcvatamount;
   }
 
-  public void setVATIdentNumber(String vATIdentNumber) {
-    this.vATIdentNumber = vATIdentNumber;
+  public void setCalcvatamount(Double calcvatamount) {
+    this.calcvatamount = calcvatamount;
+  }
+
+  public Vatclosingmossrow corrtaxableamount(Double corrtaxableamount) {
+    this.corrtaxableamount = corrtaxableamount;
+    return this;
+  }
+
+   /**
+   * oprava základu [persistentní položka]
+   * @return corrtaxableamount
+  **/
+  @ApiModelProperty(example = "null", value = "oprava základu [persistentní položka]")
+  public Double getCorrtaxableamount() {
+    return corrtaxableamount;
+  }
+
+  public void setCorrtaxableamount(Double corrtaxableamount) {
+    this.corrtaxableamount = corrtaxableamount;
+  }
+
+  public Vatclosingmossrow corrvatamount(Double corrvatamount) {
+    this.corrvatamount = corrvatamount;
+    return this;
+  }
+
+   /**
+   * oprava daně [persistentní položka]
+   * @return corrvatamount
+  **/
+  @ApiModelProperty(example = "null", value = "oprava daně [persistentní položka]")
+  public Double getCorrvatamount() {
+    return corrvatamount;
+  }
+
+  public void setCorrvatamount(Double corrvatamount) {
+    this.corrvatamount = corrvatamount;
+  }
+
+  public Vatclosingmossrow taxableamount(Double taxableamount) {
+    this.taxableamount = taxableamount;
+    return this;
+  }
+
+   /**
+   * základ [persistentní položka]
+   * @return taxableamount
+  **/
+  @ApiModelProperty(example = "null", value = "základ [persistentní položka]")
+  public Double getTaxableamount() {
+    return taxableamount;
+  }
+
+  public void setTaxableamount(Double taxableamount) {
+    this.taxableamount = taxableamount;
+  }
+
+  public Vatclosingmossrow vatamount(Double vatamount) {
+    this.vatamount = vatamount;
+    return this;
+  }
+
+   /**
+   * daň [persistentní položka]
+   * @return vatamount
+  **/
+  @ApiModelProperty(example = "null", value = "daň [persistentní položka]")
+  public Double getVatamount() {
+    return vatamount;
+  }
+
+  public void setVatamount(Double vatamount) {
+    this.vatamount = vatamount;
+  }
+
+  public Vatclosingmossrow vatidentnumber(String vatidentnumber) {
+    this.vatidentnumber = vatidentnumber;
+    return this;
+  }
+
+   /**
+   * identifikátor dph [persistentní položka]
+   * @return vatidentnumber
+  **/
+  @ApiModelProperty(example = "null", value = "identifikátor dph [persistentní položka]")
+  public String getVatidentnumber() {
+    return vatidentnumber;
+  }
+
+  public void setVatidentnumber(String vatidentnumber) {
+    this.vatidentnumber = vatidentnumber;
   }
 
 
@@ -358,28 +403,28 @@ public class Vatclosingmossrow   {
       return false;
     }
     Vatclosingmossrow vatclosingmossrow = (Vatclosingmossrow) o;
-    return Objects.equals(this.displayName, vatclosingmossrow.displayName) &&
-        Objects.equals(this.ID, vatclosingmossrow.ID) &&
-        Objects.equals(this.classID, vatclosingmossrow.classID) &&
-        Objects.equals(this.objVersion, vatclosingmossrow.objVersion) &&
-        Objects.equals(this.parentID, vatclosingmossrow.parentID) &&
-        Objects.equals(this.vATCountryID, vatclosingmossrow.vATCountryID) &&
-        Objects.equals(this.countryID, vatclosingmossrow.countryID) &&
-        Objects.equals(this.vATRateID, vatclosingmossrow.vATRateID) &&
-        Objects.equals(this.oldTaxableAmount, vatclosingmossrow.oldTaxableAmount) &&
-        Objects.equals(this.oldVATAmount, vatclosingmossrow.oldVATAmount) &&
-        Objects.equals(this.calcTaxableAmount, vatclosingmossrow.calcTaxableAmount) &&
-        Objects.equals(this.calcVATAmount, vatclosingmossrow.calcVATAmount) &&
-        Objects.equals(this.corrTaxableAmount, vatclosingmossrow.corrTaxableAmount) &&
-        Objects.equals(this.corrVATAmount, vatclosingmossrow.corrVATAmount) &&
-        Objects.equals(this.taxableAmount, vatclosingmossrow.taxableAmount) &&
-        Objects.equals(this.vATAmount, vatclosingmossrow.vATAmount) &&
-        Objects.equals(this.vATIdentNumber, vatclosingmossrow.vATIdentNumber);
+    return Objects.equals(this.displayname, vatclosingmossrow.displayname) &&
+        Objects.equals(this.id, vatclosingmossrow.id) &&
+        Objects.equals(this.classid, vatclosingmossrow.classid) &&
+        Objects.equals(this.objversion, vatclosingmossrow.objversion) &&
+        Objects.equals(this.parentId, vatclosingmossrow.parentId) &&
+        Objects.equals(this.vatcountryId, vatclosingmossrow.vatcountryId) &&
+        Objects.equals(this.countryId, vatclosingmossrow.countryId) &&
+        Objects.equals(this.vatrateId, vatclosingmossrow.vatrateId) &&
+        Objects.equals(this.oldtaxableamount, vatclosingmossrow.oldtaxableamount) &&
+        Objects.equals(this.oldvatamount, vatclosingmossrow.oldvatamount) &&
+        Objects.equals(this.calctaxableamount, vatclosingmossrow.calctaxableamount) &&
+        Objects.equals(this.calcvatamount, vatclosingmossrow.calcvatamount) &&
+        Objects.equals(this.corrtaxableamount, vatclosingmossrow.corrtaxableamount) &&
+        Objects.equals(this.corrvatamount, vatclosingmossrow.corrvatamount) &&
+        Objects.equals(this.taxableamount, vatclosingmossrow.taxableamount) &&
+        Objects.equals(this.vatamount, vatclosingmossrow.vatamount) &&
+        Objects.equals(this.vatidentnumber, vatclosingmossrow.vatidentnumber);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, vATCountryID, countryID, vATRateID, oldTaxableAmount, oldVATAmount, calcTaxableAmount, calcVATAmount, corrTaxableAmount, corrVATAmount, taxableAmount, vATAmount, vATIdentNumber);
+    return Objects.hash(displayname, id, classid, objversion, parentId, vatcountryId, countryId, vatrateId, oldtaxableamount, oldvatamount, calctaxableamount, calcvatamount, corrtaxableamount, corrvatamount, taxableamount, vatamount, vatidentnumber);
   }
 
   @Override
@@ -387,23 +432,23 @@ public class Vatclosingmossrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Vatclosingmossrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    vATCountryID: ").append(toIndentedString(vATCountryID)).append("\n");
-    sb.append("    countryID: ").append(toIndentedString(countryID)).append("\n");
-    sb.append("    vATRateID: ").append(toIndentedString(vATRateID)).append("\n");
-    sb.append("    oldTaxableAmount: ").append(toIndentedString(oldTaxableAmount)).append("\n");
-    sb.append("    oldVATAmount: ").append(toIndentedString(oldVATAmount)).append("\n");
-    sb.append("    calcTaxableAmount: ").append(toIndentedString(calcTaxableAmount)).append("\n");
-    sb.append("    calcVATAmount: ").append(toIndentedString(calcVATAmount)).append("\n");
-    sb.append("    corrTaxableAmount: ").append(toIndentedString(corrTaxableAmount)).append("\n");
-    sb.append("    corrVATAmount: ").append(toIndentedString(corrVATAmount)).append("\n");
-    sb.append("    taxableAmount: ").append(toIndentedString(taxableAmount)).append("\n");
-    sb.append("    vATAmount: ").append(toIndentedString(vATAmount)).append("\n");
-    sb.append("    vATIdentNumber: ").append(toIndentedString(vATIdentNumber)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    vatcountryId: ").append(toIndentedString(vatcountryId)).append("\n");
+    sb.append("    countryId: ").append(toIndentedString(countryId)).append("\n");
+    sb.append("    vatrateId: ").append(toIndentedString(vatrateId)).append("\n");
+    sb.append("    oldtaxableamount: ").append(toIndentedString(oldtaxableamount)).append("\n");
+    sb.append("    oldvatamount: ").append(toIndentedString(oldvatamount)).append("\n");
+    sb.append("    calctaxableamount: ").append(toIndentedString(calctaxableamount)).append("\n");
+    sb.append("    calcvatamount: ").append(toIndentedString(calcvatamount)).append("\n");
+    sb.append("    corrtaxableamount: ").append(toIndentedString(corrtaxableamount)).append("\n");
+    sb.append("    corrvatamount: ").append(toIndentedString(corrvatamount)).append("\n");
+    sb.append("    taxableamount: ").append(toIndentedString(taxableamount)).append("\n");
+    sb.append("    vatamount: ").append(toIndentedString(vatamount)).append("\n");
+    sb.append("    vatidentnumber: ").append(toIndentedString(vatidentnumber)).append("\n");
     sb.append("}");
     return sb.toString();
   }

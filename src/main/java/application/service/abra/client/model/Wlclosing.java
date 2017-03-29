@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,81 +37,117 @@ import java.util.Objects;
 /**
  * Wlclosing
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wlclosing   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Wlclosingrow> rows = new ArrayList<Wlclosingrow>();
 
-  @SerializedName("ClosedFrom$DATE")
-  private DateTime closedFromDATE = null;
+  @SerializedName("closedfrom$date")
+  private DateTime closedfromdate = null;
 
-  @SerializedName("ClosedTo$DATE")
-  private DateTime closedToDATE = null;
+  @SerializedName("closedto$date")
+  private DateTime closedtodate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("WagePeriod_ID")
-  private String wagePeriodID = null;
+  @SerializedName("wageperiod_id")
+  private String wageperiodId = null;
 
-  @SerializedName("WageOperationImport_ID")
-  private String wageOperationImportID = null;
+  @SerializedName("wageoperationimport_id")
+  private String wageoperationimportId = null;
 
-  @SerializedName("AbsenceImport_ID")
-  private String absenceImportID = null;
+  @SerializedName("absenceimport_id")
+  private String absenceimportId = null;
 
-  @SerializedName("SickBenefitImport_ID")
-  private String sickBenefitImportID = null;
+  @SerializedName("sickbenefitimport_id")
+  private String sickbenefitimportId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Wlclosing displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wlclosing id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wlclosing classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wlclosing objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Wlclosing rows(List<Wlclosingrow> rows) {
@@ -125,10 +161,10 @@ public class Wlclosing   {
   }
 
    /**
-   * Řádky; kolekce BO Docházka - řádek uzávěrky [nepersistentní položka]
+   * Řádky; kolekce bo docházka - řádek uzávěrky [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Docházka - řádek uzávěrky [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo docházka - řádek uzávěrky [nepersistentní položka]")
   public List<Wlclosingrow> getRows() {
     return rows;
   }
@@ -137,58 +173,58 @@ public class Wlclosing   {
     this.rows = rows;
   }
 
-  public Wlclosing closedFromDATE(DateTime closedFromDATE) {
-    this.closedFromDATE = closedFromDATE;
+  public Wlclosing closedfromdate(DateTime closedfromdate) {
+    this.closedfromdate = closedfromdate;
     return this;
   }
 
    /**
-   * Uzavřeno od [persistentní položka]
-   * @return closedFromDATE
+   * uzavřeno od [persistentní položka]
+   * @return closedfromdate
   **/
-  @ApiModelProperty(example = "null", value = "Uzavřeno od [persistentní položka]")
-  public DateTime getClosedFromDATE() {
-    return closedFromDATE;
+  @ApiModelProperty(example = "null", value = "uzavřeno od [persistentní položka]")
+  public DateTime getClosedfromdate() {
+    return closedfromdate;
   }
 
-  public void setClosedFromDATE(DateTime closedFromDATE) {
-    this.closedFromDATE = closedFromDATE;
+  public void setClosedfromdate(DateTime closedfromdate) {
+    this.closedfromdate = closedfromdate;
   }
 
-  public Wlclosing closedToDATE(DateTime closedToDATE) {
-    this.closedToDATE = closedToDATE;
+  public Wlclosing closedtodate(DateTime closedtodate) {
+    this.closedtodate = closedtodate;
     return this;
   }
 
    /**
-   * Uzavřeno do [persistentní položka]
-   * @return closedToDATE
+   * uzavřeno do [persistentní položka]
+   * @return closedtodate
   **/
-  @ApiModelProperty(example = "null", value = "Uzavřeno do [persistentní položka]")
-  public DateTime getClosedToDATE() {
-    return closedToDATE;
+  @ApiModelProperty(example = "null", value = "uzavřeno do [persistentní položka]")
+  public DateTime getClosedtodate() {
+    return closedtodate;
   }
 
-  public void setClosedToDATE(DateTime closedToDATE) {
-    this.closedToDATE = closedToDATE;
+  public void setClosedtodate(DateTime closedtodate) {
+    this.closedtodate = closedtodate;
   }
 
-  public Wlclosing createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Wlclosing createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
   public Wlclosing description(String description) {
@@ -197,10 +233,10 @@ public class Wlclosing   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -209,76 +245,76 @@ public class Wlclosing   {
     this.description = description;
   }
 
-  public Wlclosing wagePeriodID(String wagePeriodID) {
-    this.wagePeriodID = wagePeriodID;
+  public Wlclosing wageperiodId(String wageperiodId) {
+    this.wageperiodId = wageperiodId;
     return this;
   }
 
    /**
-   * Mzdové období; ID objektu Mzdové období [persistentní položka]
-   * @return wagePeriodID
+   * mzdové období; id objektu mzdové období [persistentní položka]
+   * @return wageperiodId
   **/
-  @ApiModelProperty(example = "null", value = "Mzdové období; ID objektu Mzdové období [persistentní položka]")
-  public String getWagePeriodID() {
-    return wagePeriodID;
+  @ApiModelProperty(example = "null", value = "mzdové období; id objektu mzdové období [persistentní položka]")
+  public String getWageperiodId() {
+    return wageperiodId;
   }
 
-  public void setWagePeriodID(String wagePeriodID) {
-    this.wagePeriodID = wagePeriodID;
+  public void setWageperiodId(String wageperiodId) {
+    this.wageperiodId = wageperiodId;
   }
 
-  public Wlclosing wageOperationImportID(String wageOperationImportID) {
-    this.wageOperationImportID = wageOperationImportID;
+  public Wlclosing wageoperationimportId(String wageoperationimportId) {
+    this.wageoperationimportId = wageoperationimportId;
     return this;
   }
 
    /**
-   * Import do výkonů; ID objektu Import do výkonů [persistentní položka]
-   * @return wageOperationImportID
+   * import do výkonů; id objektu import do výkonů [persistentní položka]
+   * @return wageoperationimportId
   **/
-  @ApiModelProperty(example = "null", value = "Import do výkonů; ID objektu Import do výkonů [persistentní položka]")
-  public String getWageOperationImportID() {
-    return wageOperationImportID;
+  @ApiModelProperty(example = "null", value = "import do výkonů; id objektu import do výkonů [persistentní položka]")
+  public String getWageoperationimportId() {
+    return wageoperationimportId;
   }
 
-  public void setWageOperationImportID(String wageOperationImportID) {
-    this.wageOperationImportID = wageOperationImportID;
+  public void setWageoperationimportId(String wageoperationimportId) {
+    this.wageoperationimportId = wageoperationimportId;
   }
 
-  public Wlclosing absenceImportID(String absenceImportID) {
-    this.absenceImportID = absenceImportID;
+  public Wlclosing absenceimportId(String absenceimportId) {
+    this.absenceimportId = absenceimportId;
     return this;
   }
 
    /**
-   * Import do nepřítomností; ID objektu Import do Nepřítomností [persistentní položka]
-   * @return absenceImportID
+   * import do nepřítomností; id objektu import do nepřítomností [persistentní položka]
+   * @return absenceimportId
   **/
-  @ApiModelProperty(example = "null", value = "Import do nepřítomností; ID objektu Import do Nepřítomností [persistentní položka]")
-  public String getAbsenceImportID() {
-    return absenceImportID;
+  @ApiModelProperty(example = "null", value = "import do nepřítomností; id objektu import do nepřítomností [persistentní položka]")
+  public String getAbsenceimportId() {
+    return absenceimportId;
   }
 
-  public void setAbsenceImportID(String absenceImportID) {
-    this.absenceImportID = absenceImportID;
+  public void setAbsenceimportId(String absenceimportId) {
+    this.absenceimportId = absenceimportId;
   }
 
-  public Wlclosing sickBenefitImportID(String sickBenefitImportID) {
-    this.sickBenefitImportID = sickBenefitImportID;
+  public Wlclosing sickbenefitimportId(String sickbenefitimportId) {
+    this.sickbenefitimportId = sickbenefitimportId;
     return this;
   }
 
    /**
-   * Import do nemocenských dávek; ID objektu Import do Nemocenských dávek [persistentní položka]
-   * @return sickBenefitImportID
+   * import do nemocenských dávek; id objektu import do nemocenských dávek [persistentní položka]
+   * @return sickbenefitimportId
   **/
-  @ApiModelProperty(example = "null", value = "Import do nemocenských dávek; ID objektu Import do Nemocenských dávek [persistentní položka]")
-  public String getSickBenefitImportID() {
-    return sickBenefitImportID;
+  @ApiModelProperty(example = "null", value = "import do nemocenských dávek; id objektu import do nemocenských dávek [persistentní položka]")
+  public String getSickbenefitimportId() {
+    return sickbenefitimportId;
   }
 
-  public void setSickBenefitImportID(String sickBenefitImportID) {
-    this.sickBenefitImportID = sickBenefitImportID;
+  public void setSickbenefitimportId(String sickbenefitimportId) {
+    this.sickbenefitimportId = sickbenefitimportId;
   }
 
 
@@ -291,24 +327,24 @@ public class Wlclosing   {
       return false;
     }
     Wlclosing wlclosing = (Wlclosing) o;
-    return Objects.equals(this.displayName, wlclosing.displayName) &&
-        Objects.equals(this.ID, wlclosing.ID) &&
-        Objects.equals(this.classID, wlclosing.classID) &&
-        Objects.equals(this.objVersion, wlclosing.objVersion) &&
+    return Objects.equals(this.displayname, wlclosing.displayname) &&
+        Objects.equals(this.id, wlclosing.id) &&
+        Objects.equals(this.classid, wlclosing.classid) &&
+        Objects.equals(this.objversion, wlclosing.objversion) &&
         Objects.equals(this.rows, wlclosing.rows) &&
-        Objects.equals(this.closedFromDATE, wlclosing.closedFromDATE) &&
-        Objects.equals(this.closedToDATE, wlclosing.closedToDATE) &&
-        Objects.equals(this.createdByID, wlclosing.createdByID) &&
+        Objects.equals(this.closedfromdate, wlclosing.closedfromdate) &&
+        Objects.equals(this.closedtodate, wlclosing.closedtodate) &&
+        Objects.equals(this.createdbyId, wlclosing.createdbyId) &&
         Objects.equals(this.description, wlclosing.description) &&
-        Objects.equals(this.wagePeriodID, wlclosing.wagePeriodID) &&
-        Objects.equals(this.wageOperationImportID, wlclosing.wageOperationImportID) &&
-        Objects.equals(this.absenceImportID, wlclosing.absenceImportID) &&
-        Objects.equals(this.sickBenefitImportID, wlclosing.sickBenefitImportID);
+        Objects.equals(this.wageperiodId, wlclosing.wageperiodId) &&
+        Objects.equals(this.wageoperationimportId, wlclosing.wageoperationimportId) &&
+        Objects.equals(this.absenceimportId, wlclosing.absenceimportId) &&
+        Objects.equals(this.sickbenefitimportId, wlclosing.sickbenefitimportId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, closedFromDATE, closedToDATE, createdByID, description, wagePeriodID, wageOperationImportID, absenceImportID, sickBenefitImportID);
+    return Objects.hash(displayname, id, classid, objversion, rows, closedfromdate, closedtodate, createdbyId, description, wageperiodId, wageoperationimportId, absenceimportId, sickbenefitimportId);
   }
 
   @Override
@@ -316,19 +352,19 @@ public class Wlclosing   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wlclosing {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    closedFromDATE: ").append(toIndentedString(closedFromDATE)).append("\n");
-    sb.append("    closedToDATE: ").append(toIndentedString(closedToDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
+    sb.append("    closedfromdate: ").append(toIndentedString(closedfromdate)).append("\n");
+    sb.append("    closedtodate: ").append(toIndentedString(closedtodate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    wagePeriodID: ").append(toIndentedString(wagePeriodID)).append("\n");
-    sb.append("    wageOperationImportID: ").append(toIndentedString(wageOperationImportID)).append("\n");
-    sb.append("    absenceImportID: ").append(toIndentedString(absenceImportID)).append("\n");
-    sb.append("    sickBenefitImportID: ").append(toIndentedString(sickBenefitImportID)).append("\n");
+    sb.append("    wageperiodId: ").append(toIndentedString(wageperiodId)).append("\n");
+    sb.append("    wageoperationimportId: ").append(toIndentedString(wageoperationimportId)).append("\n");
+    sb.append("    absenceimportId: ").append(toIndentedString(absenceimportId)).append("\n");
+    sb.append("    sickbenefitimportId: ").append(toIndentedString(sickbenefitimportId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

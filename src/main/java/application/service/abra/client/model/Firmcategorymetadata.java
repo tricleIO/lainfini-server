@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,297 +35,342 @@ import java.util.Objects;
 /**
  * Firmcategorymetadata
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Firmcategorymetadata   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("CategoryItem_ID")
-  private String categoryItemID = null;
+  @SerializedName("categoryitem_id")
+  private String categoryitemId = null;
 
-  @SerializedName("CategoryItemGroup_ID")
-  private String categoryItemGroupID = null;
+  @SerializedName("categoryitemgroup_id")
+  private String categoryitemgroupId = null;
 
-  @SerializedName("StringValue")
-  private String stringValue = null;
+  @SerializedName("stringvalue")
+  private String stringvalue = null;
 
-  @SerializedName("CategoryUpdateMode")
-  private Integer categoryUpdateMode = null;
+  @SerializedName("categoryupdatemode")
+  private Integer categoryupdatemode = null;
 
-  @SerializedName("ChangeDate$DATE")
-  private DateTime changeDateDATE = null;
+  @SerializedName("changedate$date")
+  private DateTime changedatedate = null;
 
-  @SerializedName("StringData")
-  private String stringData = null;
+  @SerializedName("stringdata")
+  private String stringdata = null;
 
-  @SerializedName("Related_IDData")
-  private String relatedIDData = null;
+  @SerializedName("related_iddata")
+  private String relatedIddata = null;
 
-  @SerializedName("IntegerData")
-  private Integer integerData = null;
+  @SerializedName("integerdata")
+  private Integer integerdata = null;
 
-  @SerializedName("DoubleData")
-  private Double doubleData = null;
+  @SerializedName("doubledata")
+  private Double doubledata = null;
 
-  @SerializedName("BooleanData")
-  private Boolean booleanData = null;
+  @SerializedName("booleandata")
+  private Boolean booleandata = null;
 
-  @SerializedName("DateData")
-  private DateTime dateData = null;
+  @SerializedName("datedata")
+  private DateTime datedata = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Firma [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Firma [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Firmcategorymetadata categoryItemID(String categoryItemID) {
-    this.categoryItemID = categoryItemID;
+  public Firmcategorymetadata displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Kategorizační údaj; ID objektu Kategorizační údaj [persistentní položka]
-   * @return categoryItemID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Kategorizační údaj; ID objektu Kategorizační údaj [persistentní položka]")
-  public String getCategoryItemID() {
-    return categoryItemID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setCategoryItemID(String categoryItemID) {
-    this.categoryItemID = categoryItemID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Firmcategorymetadata categoryItemGroupID(String categoryItemGroupID) {
-    this.categoryItemGroupID = categoryItemGroupID;
+  public Firmcategorymetadata id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Skupina kat. údajů; ID objektu Skupina kategorizačních údajů
-   * @return categoryItemGroupID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Skupina kat. údajů; ID objektu Skupina kategorizačních údajů")
-  public String getCategoryItemGroupID() {
-    return categoryItemGroupID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setCategoryItemGroupID(String categoryItemGroupID) {
-    this.categoryItemGroupID = categoryItemGroupID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Firmcategorymetadata stringValue(String stringValue) {
-    this.stringValue = stringValue;
+  public Firmcategorymetadata classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Hodnota [persistentní položka]
-   * @return stringValue
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Hodnota [persistentní položka]")
-  public String getStringValue() {
-    return stringValue;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setStringValue(String stringValue) {
-    this.stringValue = stringValue;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Firmcategorymetadata categoryUpdateMode(Integer categoryUpdateMode) {
-    this.categoryUpdateMode = categoryUpdateMode;
+  public Firmcategorymetadata objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Způsob akt. [persistentní položka]
-   * @return categoryUpdateMode
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Způsob akt. [persistentní položka]")
-  public Integer getCategoryUpdateMode() {
-    return categoryUpdateMode;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setCategoryUpdateMode(Integer categoryUpdateMode) {
-    this.categoryUpdateMode = categoryUpdateMode;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Firmcategorymetadata changeDateDATE(DateTime changeDateDATE) {
-    this.changeDateDATE = changeDateDATE;
+  public Firmcategorymetadata parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Datum akt. [persistentní položka]
-   * @return changeDateDATE
+   * vlastník; id objektu firma [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Datum akt. [persistentní položka]")
-  public DateTime getChangeDateDATE() {
-    return changeDateDATE;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu firma [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setChangeDateDATE(DateTime changeDateDATE) {
-    this.changeDateDATE = changeDateDATE;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Firmcategorymetadata stringData(String stringData) {
-    this.stringData = stringData;
+  public Firmcategorymetadata categoryitemId(String categoryitemId) {
+    this.categoryitemId = categoryitemId;
     return this;
   }
 
    /**
-   * Hodnota
-   * @return stringData
+   * kategorizační údaj; id objektu kategorizační údaj [persistentní položka]
+   * @return categoryitemId
   **/
-  @ApiModelProperty(example = "null", value = "Hodnota")
-  public String getStringData() {
-    return stringData;
+  @ApiModelProperty(example = "null", value = "kategorizační údaj; id objektu kategorizační údaj [persistentní položka]")
+  public String getCategoryitemId() {
+    return categoryitemId;
   }
 
-  public void setStringData(String stringData) {
-    this.stringData = stringData;
+  public void setCategoryitemId(String categoryitemId) {
+    this.categoryitemId = categoryitemId;
   }
 
-  public Firmcategorymetadata relatedIDData(String relatedIDData) {
-    this.relatedIDData = relatedIDData;
+  public Firmcategorymetadata categoryitemgroupId(String categoryitemgroupId) {
+    this.categoryitemgroupId = categoryitemgroupId;
     return this;
   }
 
    /**
-   * Hodnota
-   * @return relatedIDData
+   * skupina kat. údajů; id objektu skupina kategorizačních údajů
+   * @return categoryitemgroupId
   **/
-  @ApiModelProperty(example = "null", value = "Hodnota")
-  public String getRelatedIDData() {
-    return relatedIDData;
+  @ApiModelProperty(example = "null", value = "skupina kat. údajů; id objektu skupina kategorizačních údajů")
+  public String getCategoryitemgroupId() {
+    return categoryitemgroupId;
   }
 
-  public void setRelatedIDData(String relatedIDData) {
-    this.relatedIDData = relatedIDData;
+  public void setCategoryitemgroupId(String categoryitemgroupId) {
+    this.categoryitemgroupId = categoryitemgroupId;
   }
 
-  public Firmcategorymetadata integerData(Integer integerData) {
-    this.integerData = integerData;
+  public Firmcategorymetadata stringvalue(String stringvalue) {
+    this.stringvalue = stringvalue;
     return this;
   }
 
    /**
-   * Hodnota
-   * @return integerData
+   * hodnota [persistentní položka]
+   * @return stringvalue
   **/
-  @ApiModelProperty(example = "null", value = "Hodnota")
-  public Integer getIntegerData() {
-    return integerData;
+  @ApiModelProperty(example = "null", value = "hodnota [persistentní položka]")
+  public String getStringvalue() {
+    return stringvalue;
   }
 
-  public void setIntegerData(Integer integerData) {
-    this.integerData = integerData;
+  public void setStringvalue(String stringvalue) {
+    this.stringvalue = stringvalue;
   }
 
-  public Firmcategorymetadata doubleData(Double doubleData) {
-    this.doubleData = doubleData;
+  public Firmcategorymetadata categoryupdatemode(Integer categoryupdatemode) {
+    this.categoryupdatemode = categoryupdatemode;
     return this;
   }
 
    /**
-   * Hodnota
-   * @return doubleData
+   * způsob akt. [persistentní položka]
+   * @return categoryupdatemode
   **/
-  @ApiModelProperty(example = "null", value = "Hodnota")
-  public Double getDoubleData() {
-    return doubleData;
+  @ApiModelProperty(example = "null", value = "způsob akt. [persistentní položka]")
+  public Integer getCategoryupdatemode() {
+    return categoryupdatemode;
   }
 
-  public void setDoubleData(Double doubleData) {
-    this.doubleData = doubleData;
+  public void setCategoryupdatemode(Integer categoryupdatemode) {
+    this.categoryupdatemode = categoryupdatemode;
   }
 
-  public Firmcategorymetadata booleanData(Boolean booleanData) {
-    this.booleanData = booleanData;
+  public Firmcategorymetadata changedatedate(DateTime changedatedate) {
+    this.changedatedate = changedatedate;
     return this;
   }
 
    /**
-   * Hodnota
-   * @return booleanData
+   * datum akt. [persistentní položka]
+   * @return changedatedate
   **/
-  @ApiModelProperty(example = "null", value = "Hodnota")
-  public Boolean getBooleanData() {
-    return booleanData;
+  @ApiModelProperty(example = "null", value = "datum akt. [persistentní položka]")
+  public DateTime getChangedatedate() {
+    return changedatedate;
   }
 
-  public void setBooleanData(Boolean booleanData) {
-    this.booleanData = booleanData;
+  public void setChangedatedate(DateTime changedatedate) {
+    this.changedatedate = changedatedate;
   }
 
-  public Firmcategorymetadata dateData(DateTime dateData) {
-    this.dateData = dateData;
+  public Firmcategorymetadata stringdata(String stringdata) {
+    this.stringdata = stringdata;
     return this;
   }
 
    /**
-   * Hodnota
-   * @return dateData
+   * hodnota
+   * @return stringdata
   **/
-  @ApiModelProperty(example = "null", value = "Hodnota")
-  public DateTime getDateData() {
-    return dateData;
+  @ApiModelProperty(example = "null", value = "hodnota")
+  public String getStringdata() {
+    return stringdata;
   }
 
-  public void setDateData(DateTime dateData) {
-    this.dateData = dateData;
+  public void setStringdata(String stringdata) {
+    this.stringdata = stringdata;
+  }
+
+  public Firmcategorymetadata relatedIddata(String relatedIddata) {
+    this.relatedIddata = relatedIddata;
+    return this;
+  }
+
+   /**
+   * hodnota
+   * @return relatedIddata
+  **/
+  @ApiModelProperty(example = "null", value = "hodnota")
+  public String getRelatedIddata() {
+    return relatedIddata;
+  }
+
+  public void setRelatedIddata(String relatedIddata) {
+    this.relatedIddata = relatedIddata;
+  }
+
+  public Firmcategorymetadata integerdata(Integer integerdata) {
+    this.integerdata = integerdata;
+    return this;
+  }
+
+   /**
+   * hodnota
+   * @return integerdata
+  **/
+  @ApiModelProperty(example = "null", value = "hodnota")
+  public Integer getIntegerdata() {
+    return integerdata;
+  }
+
+  public void setIntegerdata(Integer integerdata) {
+    this.integerdata = integerdata;
+  }
+
+  public Firmcategorymetadata doubledata(Double doubledata) {
+    this.doubledata = doubledata;
+    return this;
+  }
+
+   /**
+   * hodnota
+   * @return doubledata
+  **/
+  @ApiModelProperty(example = "null", value = "hodnota")
+  public Double getDoubledata() {
+    return doubledata;
+  }
+
+  public void setDoubledata(Double doubledata) {
+    this.doubledata = doubledata;
+  }
+
+  public Firmcategorymetadata booleandata(Boolean booleandata) {
+    this.booleandata = booleandata;
+    return this;
+  }
+
+   /**
+   * hodnota
+   * @return booleandata
+  **/
+  @ApiModelProperty(example = "null", value = "hodnota")
+  public Boolean getBooleandata() {
+    return booleandata;
+  }
+
+  public void setBooleandata(Boolean booleandata) {
+    this.booleandata = booleandata;
+  }
+
+  public Firmcategorymetadata datedata(DateTime datedata) {
+    this.datedata = datedata;
+    return this;
+  }
+
+   /**
+   * hodnota
+   * @return datedata
+  **/
+  @ApiModelProperty(example = "null", value = "hodnota")
+  public DateTime getDatedata() {
+    return datedata;
+  }
+
+  public void setDatedata(DateTime datedata) {
+    this.datedata = datedata;
   }
 
 
@@ -338,27 +383,27 @@ public class Firmcategorymetadata   {
       return false;
     }
     Firmcategorymetadata firmcategorymetadata = (Firmcategorymetadata) o;
-    return Objects.equals(this.displayName, firmcategorymetadata.displayName) &&
-        Objects.equals(this.ID, firmcategorymetadata.ID) &&
-        Objects.equals(this.classID, firmcategorymetadata.classID) &&
-        Objects.equals(this.objVersion, firmcategorymetadata.objVersion) &&
-        Objects.equals(this.parentID, firmcategorymetadata.parentID) &&
-        Objects.equals(this.categoryItemID, firmcategorymetadata.categoryItemID) &&
-        Objects.equals(this.categoryItemGroupID, firmcategorymetadata.categoryItemGroupID) &&
-        Objects.equals(this.stringValue, firmcategorymetadata.stringValue) &&
-        Objects.equals(this.categoryUpdateMode, firmcategorymetadata.categoryUpdateMode) &&
-        Objects.equals(this.changeDateDATE, firmcategorymetadata.changeDateDATE) &&
-        Objects.equals(this.stringData, firmcategorymetadata.stringData) &&
-        Objects.equals(this.relatedIDData, firmcategorymetadata.relatedIDData) &&
-        Objects.equals(this.integerData, firmcategorymetadata.integerData) &&
-        Objects.equals(this.doubleData, firmcategorymetadata.doubleData) &&
-        Objects.equals(this.booleanData, firmcategorymetadata.booleanData) &&
-        Objects.equals(this.dateData, firmcategorymetadata.dateData);
+    return Objects.equals(this.displayname, firmcategorymetadata.displayname) &&
+        Objects.equals(this.id, firmcategorymetadata.id) &&
+        Objects.equals(this.classid, firmcategorymetadata.classid) &&
+        Objects.equals(this.objversion, firmcategorymetadata.objversion) &&
+        Objects.equals(this.parentId, firmcategorymetadata.parentId) &&
+        Objects.equals(this.categoryitemId, firmcategorymetadata.categoryitemId) &&
+        Objects.equals(this.categoryitemgroupId, firmcategorymetadata.categoryitemgroupId) &&
+        Objects.equals(this.stringvalue, firmcategorymetadata.stringvalue) &&
+        Objects.equals(this.categoryupdatemode, firmcategorymetadata.categoryupdatemode) &&
+        Objects.equals(this.changedatedate, firmcategorymetadata.changedatedate) &&
+        Objects.equals(this.stringdata, firmcategorymetadata.stringdata) &&
+        Objects.equals(this.relatedIddata, firmcategorymetadata.relatedIddata) &&
+        Objects.equals(this.integerdata, firmcategorymetadata.integerdata) &&
+        Objects.equals(this.doubledata, firmcategorymetadata.doubledata) &&
+        Objects.equals(this.booleandata, firmcategorymetadata.booleandata) &&
+        Objects.equals(this.datedata, firmcategorymetadata.datedata);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, categoryItemID, categoryItemGroupID, stringValue, categoryUpdateMode, changeDateDATE, stringData, relatedIDData, integerData, doubleData, booleanData, dateData);
+    return Objects.hash(displayname, id, classid, objversion, parentId, categoryitemId, categoryitemgroupId, stringvalue, categoryupdatemode, changedatedate, stringdata, relatedIddata, integerdata, doubledata, booleandata, datedata);
   }
 
   @Override
@@ -366,22 +411,22 @@ public class Firmcategorymetadata   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Firmcategorymetadata {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    categoryItemID: ").append(toIndentedString(categoryItemID)).append("\n");
-    sb.append("    categoryItemGroupID: ").append(toIndentedString(categoryItemGroupID)).append("\n");
-    sb.append("    stringValue: ").append(toIndentedString(stringValue)).append("\n");
-    sb.append("    categoryUpdateMode: ").append(toIndentedString(categoryUpdateMode)).append("\n");
-    sb.append("    changeDateDATE: ").append(toIndentedString(changeDateDATE)).append("\n");
-    sb.append("    stringData: ").append(toIndentedString(stringData)).append("\n");
-    sb.append("    relatedIDData: ").append(toIndentedString(relatedIDData)).append("\n");
-    sb.append("    integerData: ").append(toIndentedString(integerData)).append("\n");
-    sb.append("    doubleData: ").append(toIndentedString(doubleData)).append("\n");
-    sb.append("    booleanData: ").append(toIndentedString(booleanData)).append("\n");
-    sb.append("    dateData: ").append(toIndentedString(dateData)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    categoryitemId: ").append(toIndentedString(categoryitemId)).append("\n");
+    sb.append("    categoryitemgroupId: ").append(toIndentedString(categoryitemgroupId)).append("\n");
+    sb.append("    stringvalue: ").append(toIndentedString(stringvalue)).append("\n");
+    sb.append("    categoryupdatemode: ").append(toIndentedString(categoryupdatemode)).append("\n");
+    sb.append("    changedatedate: ").append(toIndentedString(changedatedate)).append("\n");
+    sb.append("    stringdata: ").append(toIndentedString(stringdata)).append("\n");
+    sb.append("    relatedIddata: ").append(toIndentedString(relatedIddata)).append("\n");
+    sb.append("    integerdata: ").append(toIndentedString(integerdata)).append("\n");
+    sb.append("    doubledata: ").append(toIndentedString(doubledata)).append("\n");
+    sb.append("    booleandata: ").append(toIndentedString(booleandata)).append("\n");
+    sb.append("    datedata: ").append(toIndentedString(datedata)).append("\n");
     sb.append("}");
     return sb.toString();
   }

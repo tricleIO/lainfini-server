@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,87 +34,123 @@ import java.util.Objects;
 /**
  * Assettype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Assettype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("DepreciationType")
-  private Integer depreciationType = null;
+  @SerializedName("depreciationtype")
+  private Integer depreciationtype = null;
 
-  @SerializedName("DepreciationTypeAsText")
-  private String depreciationTypeAsText = null;
+  @SerializedName("depreciationtypeastext")
+  private String depreciationtypeastext = null;
 
-  @SerializedName("AccPresetDefIN_ID")
-  private String accPresetDefINID = null;
+  @SerializedName("accpresetdefin_id")
+  private String accpresetdefinId = null;
 
-  @SerializedName("AccPresetDefDeprec_ID")
-  private String accPresetDefDeprecID = null;
+  @SerializedName("accpresetdefdeprec_id")
+  private String accpresetdefdeprecId = null;
 
-  @SerializedName("AccPresetDefOUT_ID")
-  private String accPresetDefOUTID = null;
+  @SerializedName("accpresetdefout_id")
+  private String accpresetdefoutId = null;
 
-  @SerializedName("AccPresetValueChange_ID")
-  private String accPresetValueChangeID = null;
+  @SerializedName("accpresetvaluechange_id")
+  private String accpresetvaluechangeId = null;
 
-  @SerializedName("TangibleType")
-  private Integer tangibleType = null;
+  @SerializedName("tangibletype")
+  private Integer tangibletype = null;
 
-  @SerializedName("TangibleTypeAsText")
-  private String tangibleTypeAsText = null;
+  @SerializedName("tangibletypeastext")
+  private String tangibletypeastext = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Assettype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Assettype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Assettype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Assettype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Assettype hidden(Boolean hidden) {
@@ -123,10 +159,10 @@ public class Assettype   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -141,10 +177,10 @@ public class Assettype   {
   }
 
    /**
-   * Kód druhu [persistentní položka]
+   * kód druhu [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód druhu [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód druhu [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -159,10 +195,10 @@ public class Assettype   {
   }
 
    /**
-   * Druh majetku [persistentní položka]
+   * druh majetku [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Druh majetku [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "druh majetku [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -171,148 +207,148 @@ public class Assettype   {
     this.name = name;
   }
 
-  public Assettype depreciationType(Integer depreciationType) {
-    this.depreciationType = depreciationType;
+  public Assettype depreciationtype(Integer depreciationtype) {
+    this.depreciationtype = depreciationtype;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return depreciationType
+   * typ [persistentní položka]
+   * @return depreciationtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getDepreciationType() {
-    return depreciationType;
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getDepreciationtype() {
+    return depreciationtype;
   }
 
-  public void setDepreciationType(Integer depreciationType) {
-    this.depreciationType = depreciationType;
+  public void setDepreciationtype(Integer depreciationtype) {
+    this.depreciationtype = depreciationtype;
   }
 
-  public Assettype depreciationTypeAsText(String depreciationTypeAsText) {
-    this.depreciationTypeAsText = depreciationTypeAsText;
+  public Assettype depreciationtypeastext(String depreciationtypeastext) {
+    this.depreciationtypeastext = depreciationtypeastext;
     return this;
   }
 
    /**
-   * Typ majetku
-   * @return depreciationTypeAsText
+   * typ majetku
+   * @return depreciationtypeastext
   **/
-  @ApiModelProperty(example = "null", value = "Typ majetku")
-  public String getDepreciationTypeAsText() {
-    return depreciationTypeAsText;
+  @ApiModelProperty(example = "null", value = "typ majetku")
+  public String getDepreciationtypeastext() {
+    return depreciationtypeastext;
   }
 
-  public void setDepreciationTypeAsText(String depreciationTypeAsText) {
-    this.depreciationTypeAsText = depreciationTypeAsText;
+  public void setDepreciationtypeastext(String depreciationtypeastext) {
+    this.depreciationtypeastext = depreciationtypeastext;
   }
 
-  public Assettype accPresetDefINID(String accPresetDefINID) {
-    this.accPresetDefINID = accPresetDefINID;
+  public Assettype accpresetdefinId(String accpresetdefinId) {
+    this.accpresetdefinId = accpresetdefinId;
     return this;
   }
 
    /**
-   * Předkontace pro zařazení maj.; ID objektu Účetní předkontace [persistentní položka]
-   * @return accPresetDefINID
+   * předkontace pro zařazení maj.; id objektu Účetní předkontace [persistentní položka]
+   * @return accpresetdefinId
   **/
-  @ApiModelProperty(example = "null", value = "Předkontace pro zařazení maj.; ID objektu Účetní předkontace [persistentní položka]")
-  public String getAccPresetDefINID() {
-    return accPresetDefINID;
+  @ApiModelProperty(example = "null", value = "předkontace pro zařazení maj.; id objektu Účetní předkontace [persistentní položka]")
+  public String getAccpresetdefinId() {
+    return accpresetdefinId;
   }
 
-  public void setAccPresetDefINID(String accPresetDefINID) {
-    this.accPresetDefINID = accPresetDefINID;
+  public void setAccpresetdefinId(String accpresetdefinId) {
+    this.accpresetdefinId = accpresetdefinId;
   }
 
-  public Assettype accPresetDefDeprecID(String accPresetDefDeprecID) {
-    this.accPresetDefDeprecID = accPresetDefDeprecID;
+  public Assettype accpresetdefdeprecId(String accpresetdefdeprecId) {
+    this.accpresetdefdeprecId = accpresetdefdeprecId;
     return this;
   }
 
    /**
-   * Předkontace pro odpisy; ID objektu Účetní předkontace [persistentní položka]
-   * @return accPresetDefDeprecID
+   * předkontace pro odpisy; id objektu Účetní předkontace [persistentní položka]
+   * @return accpresetdefdeprecId
   **/
-  @ApiModelProperty(example = "null", value = "Předkontace pro odpisy; ID objektu Účetní předkontace [persistentní položka]")
-  public String getAccPresetDefDeprecID() {
-    return accPresetDefDeprecID;
+  @ApiModelProperty(example = "null", value = "předkontace pro odpisy; id objektu Účetní předkontace [persistentní položka]")
+  public String getAccpresetdefdeprecId() {
+    return accpresetdefdeprecId;
   }
 
-  public void setAccPresetDefDeprecID(String accPresetDefDeprecID) {
-    this.accPresetDefDeprecID = accPresetDefDeprecID;
+  public void setAccpresetdefdeprecId(String accpresetdefdeprecId) {
+    this.accpresetdefdeprecId = accpresetdefdeprecId;
   }
 
-  public Assettype accPresetDefOUTID(String accPresetDefOUTID) {
-    this.accPresetDefOUTID = accPresetDefOUTID;
+  public Assettype accpresetdefoutId(String accpresetdefoutId) {
+    this.accpresetdefoutId = accpresetdefoutId;
     return this;
   }
 
    /**
-   * Předkontace pro vyřazení; ID objektu Účetní předkontace [persistentní položka]
-   * @return accPresetDefOUTID
+   * předkontace pro vyřazení; id objektu Účetní předkontace [persistentní položka]
+   * @return accpresetdefoutId
   **/
-  @ApiModelProperty(example = "null", value = "Předkontace pro vyřazení; ID objektu Účetní předkontace [persistentní položka]")
-  public String getAccPresetDefOUTID() {
-    return accPresetDefOUTID;
+  @ApiModelProperty(example = "null", value = "předkontace pro vyřazení; id objektu Účetní předkontace [persistentní položka]")
+  public String getAccpresetdefoutId() {
+    return accpresetdefoutId;
   }
 
-  public void setAccPresetDefOUTID(String accPresetDefOUTID) {
-    this.accPresetDefOUTID = accPresetDefOUTID;
+  public void setAccpresetdefoutId(String accpresetdefoutId) {
+    this.accpresetdefoutId = accpresetdefoutId;
   }
 
-  public Assettype accPresetValueChangeID(String accPresetValueChangeID) {
-    this.accPresetValueChangeID = accPresetValueChangeID;
+  public Assettype accpresetvaluechangeId(String accpresetvaluechangeId) {
+    this.accpresetvaluechangeId = accpresetvaluechangeId;
     return this;
   }
 
    /**
-   * Předkontace pro změnu ceny; ID objektu Účetní předkontace [persistentní položka]
-   * @return accPresetValueChangeID
+   * předkontace pro změnu ceny; id objektu Účetní předkontace [persistentní položka]
+   * @return accpresetvaluechangeId
   **/
-  @ApiModelProperty(example = "null", value = "Předkontace pro změnu ceny; ID objektu Účetní předkontace [persistentní položka]")
-  public String getAccPresetValueChangeID() {
-    return accPresetValueChangeID;
+  @ApiModelProperty(example = "null", value = "předkontace pro změnu ceny; id objektu Účetní předkontace [persistentní položka]")
+  public String getAccpresetvaluechangeId() {
+    return accpresetvaluechangeId;
   }
 
-  public void setAccPresetValueChangeID(String accPresetValueChangeID) {
-    this.accPresetValueChangeID = accPresetValueChangeID;
+  public void setAccpresetvaluechangeId(String accpresetvaluechangeId) {
+    this.accpresetvaluechangeId = accpresetvaluechangeId;
   }
 
-  public Assettype tangibleType(Integer tangibleType) {
-    this.tangibleType = tangibleType;
+  public Assettype tangibletype(Integer tangibletype) {
+    this.tangibletype = tangibletype;
     return this;
   }
 
    /**
-   * Typ-hmotný [persistentní položka]
-   * @return tangibleType
+   * typ-hmotný [persistentní položka]
+   * @return tangibletype
   **/
-  @ApiModelProperty(example = "null", value = "Typ-hmotný [persistentní položka]")
-  public Integer getTangibleType() {
-    return tangibleType;
+  @ApiModelProperty(example = "null", value = "typ-hmotný [persistentní položka]")
+  public Integer getTangibletype() {
+    return tangibletype;
   }
 
-  public void setTangibleType(Integer tangibleType) {
-    this.tangibleType = tangibleType;
+  public void setTangibletype(Integer tangibletype) {
+    this.tangibletype = tangibletype;
   }
 
-  public Assettype tangibleTypeAsText(String tangibleTypeAsText) {
-    this.tangibleTypeAsText = tangibleTypeAsText;
+  public Assettype tangibletypeastext(String tangibletypeastext) {
+    this.tangibletypeastext = tangibletypeastext;
     return this;
   }
 
    /**
-   * Typ-hmotný
-   * @return tangibleTypeAsText
+   * typ-hmotný
+   * @return tangibletypeastext
   **/
-  @ApiModelProperty(example = "null", value = "Typ-hmotný")
-  public String getTangibleTypeAsText() {
-    return tangibleTypeAsText;
+  @ApiModelProperty(example = "null", value = "typ-hmotný")
+  public String getTangibletypeastext() {
+    return tangibletypeastext;
   }
 
-  public void setTangibleTypeAsText(String tangibleTypeAsText) {
-    this.tangibleTypeAsText = tangibleTypeAsText;
+  public void setTangibletypeastext(String tangibletypeastext) {
+    this.tangibletypeastext = tangibletypeastext;
   }
 
 
@@ -325,26 +361,26 @@ public class Assettype   {
       return false;
     }
     Assettype assettype = (Assettype) o;
-    return Objects.equals(this.displayName, assettype.displayName) &&
-        Objects.equals(this.ID, assettype.ID) &&
-        Objects.equals(this.classID, assettype.classID) &&
-        Objects.equals(this.objVersion, assettype.objVersion) &&
+    return Objects.equals(this.displayname, assettype.displayname) &&
+        Objects.equals(this.id, assettype.id) &&
+        Objects.equals(this.classid, assettype.classid) &&
+        Objects.equals(this.objversion, assettype.objversion) &&
         Objects.equals(this.hidden, assettype.hidden) &&
         Objects.equals(this.code, assettype.code) &&
         Objects.equals(this.name, assettype.name) &&
-        Objects.equals(this.depreciationType, assettype.depreciationType) &&
-        Objects.equals(this.depreciationTypeAsText, assettype.depreciationTypeAsText) &&
-        Objects.equals(this.accPresetDefINID, assettype.accPresetDefINID) &&
-        Objects.equals(this.accPresetDefDeprecID, assettype.accPresetDefDeprecID) &&
-        Objects.equals(this.accPresetDefOUTID, assettype.accPresetDefOUTID) &&
-        Objects.equals(this.accPresetValueChangeID, assettype.accPresetValueChangeID) &&
-        Objects.equals(this.tangibleType, assettype.tangibleType) &&
-        Objects.equals(this.tangibleTypeAsText, assettype.tangibleTypeAsText);
+        Objects.equals(this.depreciationtype, assettype.depreciationtype) &&
+        Objects.equals(this.depreciationtypeastext, assettype.depreciationtypeastext) &&
+        Objects.equals(this.accpresetdefinId, assettype.accpresetdefinId) &&
+        Objects.equals(this.accpresetdefdeprecId, assettype.accpresetdefdeprecId) &&
+        Objects.equals(this.accpresetdefoutId, assettype.accpresetdefoutId) &&
+        Objects.equals(this.accpresetvaluechangeId, assettype.accpresetvaluechangeId) &&
+        Objects.equals(this.tangibletype, assettype.tangibletype) &&
+        Objects.equals(this.tangibletypeastext, assettype.tangibletypeastext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, depreciationType, depreciationTypeAsText, accPresetDefINID, accPresetDefDeprecID, accPresetDefOUTID, accPresetValueChangeID, tangibleType, tangibleTypeAsText);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, depreciationtype, depreciationtypeastext, accpresetdefinId, accpresetdefdeprecId, accpresetdefoutId, accpresetvaluechangeId, tangibletype, tangibletypeastext);
   }
 
   @Override
@@ -352,21 +388,21 @@ public class Assettype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Assettype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    depreciationType: ").append(toIndentedString(depreciationType)).append("\n");
-    sb.append("    depreciationTypeAsText: ").append(toIndentedString(depreciationTypeAsText)).append("\n");
-    sb.append("    accPresetDefINID: ").append(toIndentedString(accPresetDefINID)).append("\n");
-    sb.append("    accPresetDefDeprecID: ").append(toIndentedString(accPresetDefDeprecID)).append("\n");
-    sb.append("    accPresetDefOUTID: ").append(toIndentedString(accPresetDefOUTID)).append("\n");
-    sb.append("    accPresetValueChangeID: ").append(toIndentedString(accPresetValueChangeID)).append("\n");
-    sb.append("    tangibleType: ").append(toIndentedString(tangibleType)).append("\n");
-    sb.append("    tangibleTypeAsText: ").append(toIndentedString(tangibleTypeAsText)).append("\n");
+    sb.append("    depreciationtype: ").append(toIndentedString(depreciationtype)).append("\n");
+    sb.append("    depreciationtypeastext: ").append(toIndentedString(depreciationtypeastext)).append("\n");
+    sb.append("    accpresetdefinId: ").append(toIndentedString(accpresetdefinId)).append("\n");
+    sb.append("    accpresetdefdeprecId: ").append(toIndentedString(accpresetdefdeprecId)).append("\n");
+    sb.append("    accpresetdefoutId: ").append(toIndentedString(accpresetdefoutId)).append("\n");
+    sb.append("    accpresetvaluechangeId: ").append(toIndentedString(accpresetvaluechangeId)).append("\n");
+    sb.append("    tangibletype: ").append(toIndentedString(tangibletype)).append("\n");
+    sb.append("    tangibletypeastext: ").append(toIndentedString(tangibletypeastext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

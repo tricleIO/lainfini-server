@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,435 +37,471 @@ import java.util.Objects;
 /**
  * Employee
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Employee   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("DateOfChange")
-  private DateTime dateOfChange = null;
+  @SerializedName("dateofchange")
+  private DateTime dateofchange = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("CountOffDefinitions")
-  private List<Countoffdefinition> countOffDefinitions = new ArrayList<Countoffdefinition>();
+  @SerializedName("countoffdefinitions")
+  private List<Countoffdefinition> countoffdefinitions = new ArrayList<Countoffdefinition>();
 
-  @SerializedName("ConsignedAids")
-  private List<Consignedaid> consignedAids = new ArrayList<Consignedaid>();
+  @SerializedName("consignedaids")
+  private List<Consignedaid> consignedaids = new ArrayList<Consignedaid>();
 
-  @SerializedName("FamilyMembers")
-  private List<Familymember> familyMembers = new ArrayList<Familymember>();
+  @SerializedName("familymembers")
+  private List<Familymember> familymembers = new ArrayList<Familymember>();
 
-  @SerializedName("Person_ID")
-  private Employee personID = null;
+  @SerializedName("person_id")
+  private Employee personId = null;
 
-  @SerializedName("Sex")
+  @SerializedName("sex")
   private Integer sex = null;
 
-  @SerializedName("SexText")
-  private String sexText = null;
+  @SerializedName("sextext")
+  private String sextext = null;
 
-  @SerializedName("DateOfBirth$DATE")
-  private DateTime dateOfBirthDATE = null;
+  @SerializedName("dateofbirth$date")
+  private DateTime dateofbirthdate = null;
 
-  @SerializedName("BirthPlace")
-  private String birthPlace = null;
+  @SerializedName("birthplace")
+  private String birthplace = null;
 
-  @SerializedName("PersonalNumber")
-  private String personalNumber = null;
+  @SerializedName("personalnumber")
+  private String personalnumber = null;
 
-  @SerializedName("NumPersonalNumber")
-  private Integer numPersonalNumber = null;
+  @SerializedName("numpersonalnumber")
+  private Integer numpersonalnumber = null;
 
-  @SerializedName("FormerLastname")
-  private String formerLastname = null;
+  @SerializedName("formerlastname")
+  private String formerlastname = null;
 
-  @SerializedName("EmployPattern_ID")
-  private String employPatternID = null;
+  @SerializedName("employpattern_id")
+  private String employpatternId = null;
 
-  @SerializedName("Picture_ID")
-  private Employee pictureID = null;
+  @SerializedName("picture_id")
+  private Employee pictureId = null;
 
-  @SerializedName("DrivingLicenceNumber")
-  private String drivingLicenceNumber = null;
+  @SerializedName("drivinglicencenumber")
+  private String drivinglicencenumber = null;
 
-  @SerializedName("DrivingLicenceGroups")
-  private String drivingLicenceGroups = null;
+  @SerializedName("drivinglicencegroups")
+  private String drivinglicencegroups = null;
 
-  @SerializedName("TemporaryAddress_ID")
-  private Employee temporaryAddressID = null;
+  @SerializedName("temporaryaddress_id")
+  private Employee temporaryaddressId = null;
 
-  @SerializedName("Nationality_ID")
-  private String nationalityID = null;
+  @SerializedName("nationality_id")
+  private String nationalityId = null;
 
-  @SerializedName("MaritalStatus")
-  private Integer maritalStatus = null;
+  @SerializedName("maritalstatus")
+  private Integer maritalstatus = null;
 
-  @SerializedName("MaritalStatusText")
-  private String maritalStatusText = null;
+  @SerializedName("maritalstatustext")
+  private String maritalstatustext = null;
 
-  @SerializedName("InsuranceComp_ID")
-  private String insuranceCompID = null;
+  @SerializedName("insurancecomp_id")
+  private String insurancecompId = null;
 
-  @SerializedName("RetirementFrom")
-  private DateTime retirementFrom = null;
+  @SerializedName("retirementfrom")
+  private DateTime retirementfrom = null;
 
-  @SerializedName("TaxDeclaration")
-  private Boolean taxDeclaration = null;
+  @SerializedName("taxdeclaration")
+  private Boolean taxdeclaration = null;
 
-  @SerializedName("HIPaysGoverment")
-  private Boolean hIPaysGoverment = null;
+  @SerializedName("hipaysgoverment")
+  private Boolean hipaysgoverment = null;
 
-  @SerializedName("HICountMinimal")
-  private Boolean hICountMinimal = null;
+  @SerializedName("hicountminimal")
+  private Boolean hicountminimal = null;
 
-  @SerializedName("IsPartner")
-  private Boolean isPartner = null;
+  @SerializedName("ispartner")
+  private Boolean ispartner = null;
 
-  @SerializedName("MealTicket")
-  private Boolean mealTicket = null;
+  @SerializedName("mealticket")
+  private Boolean mealticket = null;
 
-  @SerializedName("DutyCar")
-  private Double dutyCar = null;
+  @SerializedName("dutycar")
+  private Double dutycar = null;
 
-  @SerializedName("RentOriginalIncome")
-  private Double rentOriginalIncome = null;
+  @SerializedName("rentoriginalincome")
+  private Double rentoriginalincome = null;
 
-  @SerializedName("RentActualIncome")
-  private Double rentActualIncome = null;
+  @SerializedName("rentactualincome")
+  private Double rentactualincome = null;
 
-  @SerializedName("ToAccount")
-  private Boolean toAccount = null;
+  @SerializedName("toaccount")
+  private Boolean toaccount = null;
 
-  @SerializedName("BankAccount")
-  private String bankAccount = null;
+  @SerializedName("bankaccount")
+  private String bankaccount = null;
 
-  @SerializedName("VarSymbol")
-  private String varSymbol = null;
+  @SerializedName("varsymbol")
+  private String varsymbol = null;
 
-  @SerializedName("ConstSymbol_ID")
-  private String constSymbolID = null;
+  @SerializedName("constsymbol_id")
+  private String constsymbolId = null;
 
-  @SerializedName("SpecSymbol")
-  private String specSymbol = null;
+  @SerializedName("specsymbol")
+  private String specsymbol = null;
 
-  @SerializedName("SwiftCode")
-  private String swiftCode = null;
+  @SerializedName("swiftcode")
+  private String swiftcode = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("CurrAmount")
-  private Double currAmount = null;
+  @SerializedName("curramount")
+  private Double curramount = null;
 
-  @SerializedName("CurrIsPercent")
-  private Boolean currIsPercent = null;
+  @SerializedName("currispercent")
+  private Boolean currispercent = null;
 
-  @SerializedName("CurrToAccount")
-  private Boolean currToAccount = null;
+  @SerializedName("currtoaccount")
+  private Boolean currtoaccount = null;
 
-  @SerializedName("CurrBankAccount")
-  private String currBankAccount = null;
+  @SerializedName("currbankaccount")
+  private String currbankaccount = null;
 
-  @SerializedName("CurrVarSymbol")
-  private String currVarSymbol = null;
+  @SerializedName("currvarsymbol")
+  private String currvarsymbol = null;
 
-  @SerializedName("TargetBankCountry_ID")
-  private String targetBankCountryID = null;
+  @SerializedName("targetbankcountry_id")
+  private String targetbankcountryId = null;
 
-  @SerializedName("CurrConstSymbol_ID")
-  private String currConstSymbolID = null;
+  @SerializedName("currconstsymbol_id")
+  private String currconstsymbolId = null;
 
-  @SerializedName("CurrSpecSymbol")
-  private String currSpecSymbol = null;
+  @SerializedName("currspecsymbol")
+  private String currspecsymbol = null;
 
-  @SerializedName("CurrBankName")
-  private String currBankName = null;
+  @SerializedName("currbankname")
+  private String currbankname = null;
 
-  @SerializedName("CurrSwiftCode")
-  private String currSwiftCode = null;
+  @SerializedName("currswiftcode")
+  private String currswiftcode = null;
 
-  @SerializedName("CurrForeignIssue")
-  private Integer currForeignIssue = null;
+  @SerializedName("currforeignissue")
+  private Integer currforeignissue = null;
 
-  @SerializedName("CurrUrgent")
-  private Integer currUrgent = null;
+  @SerializedName("currurgent")
+  private Integer currurgent = null;
 
-  @SerializedName("FedPersons")
-  private Integer fedPersons = null;
+  @SerializedName("fedpersons")
+  private Integer fedpersons = null;
 
-  @SerializedName("WorkAbility")
-  private Integer workAbility = null;
+  @SerializedName("workability")
+  private Integer workability = null;
 
-  @SerializedName("MaterialResponsibility")
-  private Boolean materialResponsibility = null;
+  @SerializedName("materialresponsibility")
+  private Boolean materialresponsibility = null;
 
-  @SerializedName("FirstAcces")
-  private DateTime firstAcces = null;
+  @SerializedName("firstacces")
+  private DateTime firstacces = null;
 
-  @SerializedName("CountedIllness")
-  private Double countedIllness = null;
+  @SerializedName("countedillness")
+  private Double countedillness = null;
 
-  @SerializedName("CountedExperience")
-  private Integer countedExperience = null;
+  @SerializedName("countedexperience")
+  private Integer countedexperience = null;
 
-  @SerializedName("CountedYears")
-  private Integer countedYears = null;
+  @SerializedName("countedyears")
+  private Integer countedyears = null;
 
-  @SerializedName("CountedDays")
-  private Double countedDays = null;
+  @SerializedName("counteddays")
+  private Double counteddays = null;
 
-  @SerializedName("EmployeeName")
-  private String employeeName = null;
+  @SerializedName("employeename")
+  private String employeename = null;
 
-  @SerializedName("PrefixPersonalNumber")
-  private String prefixPersonalNumber = null;
+  @SerializedName("prefixpersonalnumber")
+  private String prefixpersonalnumber = null;
 
-  @SerializedName("BodyPersonalNumber")
-  private String bodyPersonalNumber = null;
+  @SerializedName("bodypersonalnumber")
+  private String bodypersonalnumber = null;
 
-  @SerializedName("SuffixPersonalNumber")
-  private String suffixPersonalNumber = null;
+  @SerializedName("suffixpersonalnumber")
+  private String suffixpersonalnumber = null;
 
-  @SerializedName("EducationGrade_ID")
-  private String educationGradeID = null;
+  @SerializedName("educationgrade_id")
+  private String educationgradeId = null;
 
-  @SerializedName("EducationBranch_ID")
-  private String educationBranchID = null;
+  @SerializedName("educationbranch_id")
+  private String educationbranchId = null;
 
-  @SerializedName("RetirementAge")
-  private DateTime retirementAge = null;
+  @SerializedName("retirementage")
+  private DateTime retirementage = null;
 
-  @SerializedName("HasYoungChild")
-  private Boolean hasYoungChild = null;
+  @SerializedName("hasyoungchild")
+  private Boolean hasyoungchild = null;
 
-  @SerializedName("HabitationCosts")
-  private Double habitationCosts = null;
+  @SerializedName("habitationcosts")
+  private Double habitationcosts = null;
 
-  @SerializedName("FirstAccessToCompany")
-  private DateTime firstAccessToCompany = null;
+  @SerializedName("firstaccesstocompany")
+  private DateTime firstaccesstocompany = null;
 
-  @SerializedName("HIPaysGovernmentType_ID")
-  private String hIPaysGovernmentTypeID = null;
+  @SerializedName("hipaysgovernmenttype_id")
+  private String hipaysgovernmenttypeId = null;
 
-  @SerializedName("Pictures")
+  @SerializedName("pictures")
   private List<Employeepicture> pictures = new ArrayList<Employeepicture>();
 
-  @SerializedName("NotPaySocIns")
-  private Boolean notPaySocIns = null;
+  @SerializedName("notpaysocins")
+  private Boolean notpaysocins = null;
 
-  @SerializedName("NotPayHealthIns")
-  private Boolean notPayHealthIns = null;
+  @SerializedName("notpayhealthins")
+  private Boolean notpayhealthins = null;
 
-  @SerializedName("DockRegardedPension")
-  private Boolean dockRegardedPension = null;
+  @SerializedName("dockregardedpension")
+  private Boolean dockregardedpension = null;
 
-  @SerializedName("DockRegardedPenalty")
-  private Boolean dockRegardedPenalty = null;
+  @SerializedName("dockregardedpenalty")
+  private Boolean dockregardedpenalty = null;
 
-  @SerializedName("S_RF_AmountMin")
-  private Double sRFAmountMin = null;
+  @SerializedName("s_rf_amountmin")
+  private Double sRfAmountmin = null;
 
-  @SerializedName("S_RF_AmountMax")
-  private Double sRFAmountMax = null;
+  @SerializedName("s_rf_amountmax")
+  private Double sRfAmountmax = null;
 
-  @SerializedName("S_RF_PercentOfSIBase")
-  private Double sRFPercentOfSIBase = null;
+  @SerializedName("s_rf_percentofsibase")
+  private Double sRfPercentofsibase = null;
 
-  @SerializedName("S_RF_Account")
-  private String sRFAccount = null;
+  @SerializedName("s_rf_account")
+  private String sRfAccount = null;
 
-  @SerializedName("S_RF_VarSymbol")
-  private String sRFVarSymbol = null;
+  @SerializedName("s_rf_varsymbol")
+  private String sRfVarsymbol = null;
 
-  @SerializedName("S_RF_ConstSymbol_ID")
-  private String sRFConstSymbolID = null;
+  @SerializedName("s_rf_constsymbol_id")
+  private String sRfConstsymbolId = null;
 
-  @SerializedName("S_RF_SpecSymbol")
-  private String sRFSpecSymbol = null;
+  @SerializedName("s_rf_specsymbol")
+  private String sRfSpecsymbol = null;
 
-  @SerializedName("S_LI_Amount")
-  private Double sLIAmount = null;
+  @SerializedName("s_li_amount")
+  private Double sLiAmount = null;
 
-  @SerializedName("S_LI_Account")
-  private String sLIAccount = null;
+  @SerializedName("s_li_account")
+  private String sLiAccount = null;
 
-  @SerializedName("S_LI_VarSymbol")
-  private String sLIVarSymbol = null;
+  @SerializedName("s_li_varsymbol")
+  private String sLiVarsymbol = null;
 
-  @SerializedName("S_LI_ConstSymbol_ID")
-  private String sLIConstSymbolID = null;
+  @SerializedName("s_li_constsymbol_id")
+  private String sLiConstsymbolId = null;
 
-  @SerializedName("S_LI_SpecSymbol")
-  private String sLISpecSymbol = null;
+  @SerializedName("s_li_specsymbol")
+  private String sLiSpecsymbol = null;
 
-  @SerializedName("S_LI_Company")
-  private Boolean sLICompany = null;
+  @SerializedName("s_li_company")
+  private Boolean sLiCompany = null;
 
-  @SerializedName("S_Exposure")
+  @SerializedName("s_exposure")
   private Double sExposure = null;
 
-  @SerializedName("S_MealTicketFullPrice")
-  private Double sMealTicketFullPrice = null;
+  @SerializedName("s_mealticketfullprice")
+  private Double sMealticketfullprice = null;
 
-  @SerializedName("S_MealTicketLowPrice")
-  private Double sMealTicketLowPrice = null;
+  @SerializedName("s_mealticketlowprice")
+  private Double sMealticketlowprice = null;
 
-  @SerializedName("S_StrangeSocInsNr")
-  private String sStrangeSocInsNr = null;
+  @SerializedName("s_strangesocinsnr")
+  private String sStrangesocinsnr = null;
 
-  @SerializedName("S_StrangeSocInsKeeper")
-  private String sStrangeSocInsKeeper = null;
+  @SerializedName("s_strangesocinskeeper")
+  private String sStrangesocinskeeper = null;
 
-  @SerializedName("S_StrangeSocInsAddress")
-  private String sStrangeSocInsAddress = null;
+  @SerializedName("s_strangesocinsaddress")
+  private String sStrangesocinsaddress = null;
 
-  @SerializedName("S_TaxIdentNumber")
-  private String sTaxIdentNumber = null;
+  @SerializedName("s_taxidentnumber")
+  private String sTaxidentnumber = null;
 
-  @SerializedName("S_TaxNonResident")
-  private Boolean sTaxNonResident = null;
+  @SerializedName("s_taxnonresident")
+  private Boolean sTaxnonresident = null;
 
-  @SerializedName("S_RaisedChildren")
-  private Integer sRaisedChildren = null;
+  @SerializedName("s_raisedchildren")
+  private Integer sRaisedchildren = null;
 
-  @SerializedName("S_StrangeSocInsHouseNr")
-  private String sStrangeSocInsHouseNr = null;
+  @SerializedName("s_strangesocinshousenr")
+  private String sStrangesocinshousenr = null;
 
-  @SerializedName("S_StrangeSocInsPostCode")
-  private String sStrangeSocInsPostCode = null;
+  @SerializedName("s_strangesocinspostcode")
+  private String sStrangesocinspostcode = null;
 
-  @SerializedName("S_StrangeSocInsCountry")
-  private String sStrangeSocInsCountry = null;
+  @SerializedName("s_strangesocinscountry")
+  private String sStrangesocinscountry = null;
 
-  @SerializedName("S_StrangeSocInsCity")
-  private String sStrangeSocInsCity = null;
+  @SerializedName("s_strangesocinscity")
+  private String sStrangesocinscity = null;
 
-  @SerializedName("S_DisabilityPensionFrom")
-  private DateTime sDisabilityPensionFrom = null;
+  @SerializedName("s_disabilitypensionfrom")
+  private DateTime sDisabilitypensionfrom = null;
 
-  @SerializedName("S_ForeignRetirement")
-  private Boolean sForeignRetirement = null;
+  @SerializedName("s_foreignretirement")
+  private Boolean sForeignretirement = null;
 
-  @SerializedName("S_ForeignDisabilityPension")
-  private Boolean sForeignDisabilityPension = null;
+  @SerializedName("s_foreigndisabilitypension")
+  private Boolean sForeigndisabilitypension = null;
 
-  @SerializedName("S_IsDisabled")
-  private Boolean sIsDisabled = null;
+  @SerializedName("s_isdisabled")
+  private Boolean sIsdisabled = null;
 
-  @SerializedName("S_DisabilityPensionType")
-  private Integer sDisabilityPensionType = null;
+  @SerializedName("s_disabilitypensiontype")
+  private Integer sDisabilitypensiontype = null;
 
-  @SerializedName("S_WidowPension")
-  private Boolean sWidowPension = null;
+  @SerializedName("s_widowpension")
+  private Boolean sWidowpension = null;
 
-  @SerializedName("S_OrphanAnnuity")
-  private Boolean sOrphanAnnuity = null;
+  @SerializedName("s_orphanannuity")
+  private Boolean sOrphanannuity = null;
 
-  @SerializedName("S_Student")
+  @SerializedName("s_student")
   private Boolean sStudent = null;
 
-  @SerializedName("S_HINumber")
-  private String sHINumber = null;
+  @SerializedName("s_hinumber")
+  private String sHinumber = null;
 
-  @SerializedName("S_IndividualUndockable")
-  private Double sIndividualUndockable = null;
+  @SerializedName("s_individualundockable")
+  private Double sIndividualundockable = null;
 
-  @SerializedName("S_Insolvency")
+  @SerializedName("s_insolvency")
   private Boolean sInsolvency = null;
 
-  @SerializedName("S_IndividualUndockableUse")
-  private Boolean sIndividualUndockableUse = null;
+  @SerializedName("s_individualundockableuse")
+  private Boolean sIndividualundockableuse = null;
 
-  @SerializedName("S_CalcRetSavings")
-  private Boolean sCalcRetSavings = null;
+  @SerializedName("s_calcretsavings")
+  private Boolean sCalcretsavings = null;
 
-  @SerializedName("S_RSNumber")
-  private String sRSNumber = null;
+  @SerializedName("s_rsnumber")
+  private String sRsnumber = null;
 
-  @SerializedName("S_SocialInsNumber")
-  private String sSocialInsNumber = null;
+  @SerializedName("s_socialinsnumber")
+  private String sSocialinsnumber = null;
 
-  @SerializedName("S_LI_TaxablePart")
-  private Double sLITaxablePart = null;
+  @SerializedName("s_li_taxablepart")
+  private Double sLiTaxablepart = null;
 
-  @SerializedName("S_TaxResidencyCountry_ID")
-  private String sTaxResidencyCountryID = null;
+  @SerializedName("s_taxresidencycountry_id")
+  private String sTaxresidencycountryId = null;
 
-  @SerializedName("S_IdDocumentType")
-  private Integer sIdDocumentType = null;
+  @SerializedName("s_iddocumenttype")
+  private Integer sIddocumenttype = null;
 
-  @SerializedName("S_IdDocumentCountryCode")
-  private String sIdDocumentCountryCode = null;
+  @SerializedName("s_iddocumentcountrycode")
+  private String sIddocumentcountrycode = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-  public Employee dateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public Employee displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum změny
-   * @return dateOfChange
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum změny")
-  public DateTime getDateOfChange() {
-    return dateOfChange;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  public Employee id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Employee dateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+    return this;
+  }
+
+   /**
+   * datum změny
+   * @return dateofchange
+  **/
+  @ApiModelProperty(example = "null", value = "datum změny")
+  public DateTime getDateofchange() {
+    return dateofchange;
+  }
+
+  public void setDateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+  }
+
+  public Employee classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Employee objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Employee hidden(Boolean hidden) {
@@ -474,10 +510,10 @@ public class Employee   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -486,127 +522,127 @@ public class Employee   {
     this.hidden = hidden;
   }
 
-  public Employee createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Employee createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Employee correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Employee correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Employee countOffDefinitions(List<Countoffdefinition> countOffDefinitions) {
-    this.countOffDefinitions = countOffDefinitions;
+  public Employee countoffdefinitions(List<Countoffdefinition> countoffdefinitions) {
+    this.countoffdefinitions = countoffdefinitions;
     return this;
   }
 
-  public Employee addCountOffDefinitionsItem(Countoffdefinition countOffDefinitionsItem) {
-    this.countOffDefinitions.add(countOffDefinitionsItem);
+  public Employee addCountoffdefinitionsItem(Countoffdefinition countoffdefinitionsItem) {
+    this.countoffdefinitions.add(countoffdefinitionsItem);
     return this;
   }
 
    /**
-   * Odpočty/slevy; kolekce BO Odpočet/sleva [nepersistentní položka]
-   * @return countOffDefinitions
+   * odpočty/slevy; kolekce bo odpočet/sleva [nepersistentní položka]
+   * @return countoffdefinitions
   **/
-  @ApiModelProperty(example = "null", value = "Odpočty/slevy; kolekce BO Odpočet/sleva [nepersistentní položka]")
-  public List<Countoffdefinition> getCountOffDefinitions() {
-    return countOffDefinitions;
+  @ApiModelProperty(example = "null", value = "odpočty/slevy; kolekce bo odpočet/sleva [nepersistentní položka]")
+  public List<Countoffdefinition> getCountoffdefinitions() {
+    return countoffdefinitions;
   }
 
-  public void setCountOffDefinitions(List<Countoffdefinition> countOffDefinitions) {
-    this.countOffDefinitions = countOffDefinitions;
+  public void setCountoffdefinitions(List<Countoffdefinition> countoffdefinitions) {
+    this.countoffdefinitions = countoffdefinitions;
   }
 
-  public Employee consignedAids(List<Consignedaid> consignedAids) {
-    this.consignedAids = consignedAids;
+  public Employee consignedaids(List<Consignedaid> consignedaids) {
+    this.consignedaids = consignedaids;
     return this;
   }
 
-  public Employee addConsignedAidsItem(Consignedaid consignedAidsItem) {
-    this.consignedAids.add(consignedAidsItem);
+  public Employee addConsignedaidsItem(Consignedaid consignedaidsItem) {
+    this.consignedaids.add(consignedaidsItem);
     return this;
   }
 
    /**
-   * Svěřené pomůcky; kolekce BO Svěřená pomůcka [nepersistentní položka]
-   * @return consignedAids
+   * svěřené pomůcky; kolekce bo svěřená pomůcka [nepersistentní položka]
+   * @return consignedaids
   **/
-  @ApiModelProperty(example = "null", value = "Svěřené pomůcky; kolekce BO Svěřená pomůcka [nepersistentní položka]")
-  public List<Consignedaid> getConsignedAids() {
-    return consignedAids;
+  @ApiModelProperty(example = "null", value = "svěřené pomůcky; kolekce bo svěřená pomůcka [nepersistentní položka]")
+  public List<Consignedaid> getConsignedaids() {
+    return consignedaids;
   }
 
-  public void setConsignedAids(List<Consignedaid> consignedAids) {
-    this.consignedAids = consignedAids;
+  public void setConsignedaids(List<Consignedaid> consignedaids) {
+    this.consignedaids = consignedaids;
   }
 
-  public Employee familyMembers(List<Familymember> familyMembers) {
-    this.familyMembers = familyMembers;
+  public Employee familymembers(List<Familymember> familymembers) {
+    this.familymembers = familymembers;
     return this;
   }
 
-  public Employee addFamilyMembersItem(Familymember familyMembersItem) {
-    this.familyMembers.add(familyMembersItem);
+  public Employee addFamilymembersItem(Familymember familymembersItem) {
+    this.familymembers.add(familymembersItem);
     return this;
   }
 
    /**
-   * Rodinní příslušníci; kolekce BO Rodinný příslušník [nepersistentní položka]
-   * @return familyMembers
+   * rodinní příslušníci; kolekce bo rodinný příslušník [nepersistentní položka]
+   * @return familymembers
   **/
-  @ApiModelProperty(example = "null", value = "Rodinní příslušníci; kolekce BO Rodinný příslušník [nepersistentní položka]")
-  public List<Familymember> getFamilyMembers() {
-    return familyMembers;
+  @ApiModelProperty(example = "null", value = "rodinní příslušníci; kolekce bo rodinný příslušník [nepersistentní položka]")
+  public List<Familymember> getFamilymembers() {
+    return familymembers;
   }
 
-  public void setFamilyMembers(List<Familymember> familyMembers) {
-    this.familyMembers = familyMembers;
+  public void setFamilymembers(List<Familymember> familymembers) {
+    this.familymembers = familymembers;
   }
 
-  public Employee personID(Employee personID) {
-    this.personID = personID;
+  public Employee personId(Employee personId) {
+    this.personId = personId;
     return this;
   }
 
    /**
-   * Get personID
-   * @return personID
+   * Get personId
+   * @return personId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Employee getPersonID() {
-    return personID;
+  public Employee getPersonId() {
+    return personId;
   }
 
-  public void setPersonID(Employee personID) {
-    this.personID = personID;
+  public void setPersonId(Employee personId) {
+    this.personId = personId;
   }
 
   public Employee sex(Integer sex) {
@@ -615,10 +651,10 @@ public class Employee   {
   }
 
    /**
-   * Pohlaví [persistentní položka]
+   * pohlaví [persistentní položka]
    * @return sex
   **/
-  @ApiModelProperty(example = "null", value = "Pohlaví [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "pohlaví [persistentní položka]")
   public Integer getSex() {
     return sex;
   }
@@ -627,1111 +663,1120 @@ public class Employee   {
     this.sex = sex;
   }
 
-  public Employee sexText(String sexText) {
-    this.sexText = sexText;
+  public Employee sextext(String sextext) {
+    this.sextext = sextext;
     return this;
   }
 
    /**
-   * Pohlaví (text)
-   * @return sexText
+   * pohlaví (text)
+   * @return sextext
   **/
-  @ApiModelProperty(example = "null", value = "Pohlaví (text)")
-  public String getSexText() {
-    return sexText;
+  @ApiModelProperty(example = "null", value = "pohlaví (text)")
+  public String getSextext() {
+    return sextext;
   }
 
-  public void setSexText(String sexText) {
-    this.sexText = sexText;
+  public void setSextext(String sextext) {
+    this.sextext = sextext;
   }
 
-  public Employee dateOfBirthDATE(DateTime dateOfBirthDATE) {
-    this.dateOfBirthDATE = dateOfBirthDATE;
+  public Employee dateofbirthdate(DateTime dateofbirthdate) {
+    this.dateofbirthdate = dateofbirthdate;
     return this;
   }
 
    /**
-   * Dat. narození
-   * @return dateOfBirthDATE
+   * dat. narození
+   * @return dateofbirthdate
   **/
-  @ApiModelProperty(example = "null", value = "Dat. narození")
-  public DateTime getDateOfBirthDATE() {
-    return dateOfBirthDATE;
+  @ApiModelProperty(example = "null", value = "dat. narození")
+  public DateTime getDateofbirthdate() {
+    return dateofbirthdate;
   }
 
-  public void setDateOfBirthDATE(DateTime dateOfBirthDATE) {
-    this.dateOfBirthDATE = dateOfBirthDATE;
+  public void setDateofbirthdate(DateTime dateofbirthdate) {
+    this.dateofbirthdate = dateofbirthdate;
   }
 
-  public Employee birthPlace(String birthPlace) {
-    this.birthPlace = birthPlace;
+  public Employee birthplace(String birthplace) {
+    this.birthplace = birthplace;
     return this;
   }
 
    /**
-   * Místo nar. [persistentní položka]
-   * @return birthPlace
+   * místo nar. [persistentní položka]
+   * @return birthplace
   **/
-  @ApiModelProperty(example = "null", value = "Místo nar. [persistentní položka]")
-  public String getBirthPlace() {
-    return birthPlace;
+  @ApiModelProperty(example = "null", value = "místo nar. [persistentní položka]")
+  public String getBirthplace() {
+    return birthplace;
   }
 
-  public void setBirthPlace(String birthPlace) {
-    this.birthPlace = birthPlace;
+  public void setBirthplace(String birthplace) {
+    this.birthplace = birthplace;
   }
 
-  public Employee personalNumber(String personalNumber) {
-    this.personalNumber = personalNumber;
+  public Employee personalnumber(String personalnumber) {
+    this.personalnumber = personalnumber;
     return this;
   }
 
    /**
-   * Os. číslo
-   * @return personalNumber
+   * os. číslo
+   * @return personalnumber
   **/
-  @ApiModelProperty(example = "null", value = "Os. číslo")
-  public String getPersonalNumber() {
-    return personalNumber;
+  @ApiModelProperty(example = "null", value = "os. číslo")
+  public String getPersonalnumber() {
+    return personalnumber;
   }
 
-  public void setPersonalNumber(String personalNumber) {
-    this.personalNumber = personalNumber;
+  public void setPersonalnumber(String personalnumber) {
+    this.personalnumber = personalnumber;
   }
 
-   /**
-   * Os. číslo numericky
-   * @return numPersonalNumber
-  **/
-  @ApiModelProperty(example = "null", value = "Os. číslo numericky")
-  public Integer getNumPersonalNumber() {
-    return numPersonalNumber;
-  }
-
-  public Employee formerLastname(String formerLastname) {
-    this.formerLastname = formerLastname;
+  public Employee numpersonalnumber(Integer numpersonalnumber) {
+    this.numpersonalnumber = numpersonalnumber;
     return this;
   }
 
    /**
-   * Dřívější příjmení [persistentní položka]
-   * @return formerLastname
+   * os. číslo numericky
+   * @return numpersonalnumber
   **/
-  @ApiModelProperty(example = "null", value = "Dřívější příjmení [persistentní položka]")
-  public String getFormerLastname() {
-    return formerLastname;
+  @ApiModelProperty(example = "null", value = "os. číslo numericky")
+  public Integer getNumpersonalnumber() {
+    return numpersonalnumber;
   }
 
-  public void setFormerLastname(String formerLastname) {
-    this.formerLastname = formerLastname;
+  public void setNumpersonalnumber(Integer numpersonalnumber) {
+    this.numpersonalnumber = numpersonalnumber;
   }
 
-  public Employee employPatternID(String employPatternID) {
-    this.employPatternID = employPatternID;
+  public Employee formerlastname(String formerlastname) {
+    this.formerlastname = formerlastname;
     return this;
   }
 
    /**
-   * Vzor; ID objektu Druh pracovního poměru [persistentní položka]
-   * @return employPatternID
+   * dřívější příjmení [persistentní položka]
+   * @return formerlastname
   **/
-  @ApiModelProperty(example = "null", value = "Vzor; ID objektu Druh pracovního poměru [persistentní položka]")
-  public String getEmployPatternID() {
-    return employPatternID;
+  @ApiModelProperty(example = "null", value = "dřívější příjmení [persistentní položka]")
+  public String getFormerlastname() {
+    return formerlastname;
   }
 
-  public void setEmployPatternID(String employPatternID) {
-    this.employPatternID = employPatternID;
+  public void setFormerlastname(String formerlastname) {
+    this.formerlastname = formerlastname;
   }
 
-  public Employee pictureID(Employee pictureID) {
-    this.pictureID = pictureID;
+  public Employee employpatternId(String employpatternId) {
+    this.employpatternId = employpatternId;
     return this;
   }
 
    /**
-   * Get pictureID
-   * @return pictureID
+   * vzor; id objektu druh pracovního poměru [persistentní položka]
+   * @return employpatternId
+  **/
+  @ApiModelProperty(example = "null", value = "vzor; id objektu druh pracovního poměru [persistentní položka]")
+  public String getEmploypatternId() {
+    return employpatternId;
+  }
+
+  public void setEmploypatternId(String employpatternId) {
+    this.employpatternId = employpatternId;
+  }
+
+  public Employee pictureId(Employee pictureId) {
+    this.pictureId = pictureId;
+    return this;
+  }
+
+   /**
+   * Get pictureId
+   * @return pictureId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Employee getPictureID() {
-    return pictureID;
+  public Employee getPictureId() {
+    return pictureId;
   }
 
-  public void setPictureID(Employee pictureID) {
-    this.pictureID = pictureID;
+  public void setPictureId(Employee pictureId) {
+    this.pictureId = pictureId;
   }
 
-  public Employee drivingLicenceNumber(String drivingLicenceNumber) {
-    this.drivingLicenceNumber = drivingLicenceNumber;
+  public Employee drivinglicencenumber(String drivinglicencenumber) {
+    this.drivinglicencenumber = drivinglicencenumber;
     return this;
   }
 
    /**
-   * Číslo ŘP [persistentní položka]
-   * @return drivingLicenceNumber
+   * Číslo Řp [persistentní položka]
+   * @return drivinglicencenumber
   **/
-  @ApiModelProperty(example = "null", value = "Číslo ŘP [persistentní položka]")
-  public String getDrivingLicenceNumber() {
-    return drivingLicenceNumber;
+  @ApiModelProperty(example = "null", value = "Číslo Řp [persistentní položka]")
+  public String getDrivinglicencenumber() {
+    return drivinglicencenumber;
   }
 
-  public void setDrivingLicenceNumber(String drivingLicenceNumber) {
-    this.drivingLicenceNumber = drivingLicenceNumber;
+  public void setDrivinglicencenumber(String drivinglicencenumber) {
+    this.drivinglicencenumber = drivinglicencenumber;
   }
 
-  public Employee drivingLicenceGroups(String drivingLicenceGroups) {
-    this.drivingLicenceGroups = drivingLicenceGroups;
+  public Employee drivinglicencegroups(String drivinglicencegroups) {
+    this.drivinglicencegroups = drivinglicencegroups;
     return this;
   }
 
    /**
-   * Skupina ŘP [persistentní položka]
-   * @return drivingLicenceGroups
+   * skupina Řp [persistentní položka]
+   * @return drivinglicencegroups
   **/
-  @ApiModelProperty(example = "null", value = "Skupina ŘP [persistentní položka]")
-  public String getDrivingLicenceGroups() {
-    return drivingLicenceGroups;
+  @ApiModelProperty(example = "null", value = "skupina Řp [persistentní položka]")
+  public String getDrivinglicencegroups() {
+    return drivinglicencegroups;
   }
 
-  public void setDrivingLicenceGroups(String drivingLicenceGroups) {
-    this.drivingLicenceGroups = drivingLicenceGroups;
+  public void setDrivinglicencegroups(String drivinglicencegroups) {
+    this.drivinglicencegroups = drivinglicencegroups;
   }
 
-  public Employee temporaryAddressID(Employee temporaryAddressID) {
-    this.temporaryAddressID = temporaryAddressID;
+  public Employee temporaryaddressId(Employee temporaryaddressId) {
+    this.temporaryaddressId = temporaryaddressId;
     return this;
   }
 
    /**
-   * Get temporaryAddressID
-   * @return temporaryAddressID
+   * Get temporaryaddressId
+   * @return temporaryaddressId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Employee getTemporaryAddressID() {
-    return temporaryAddressID;
+  public Employee getTemporaryaddressId() {
+    return temporaryaddressId;
   }
 
-  public void setTemporaryAddressID(Employee temporaryAddressID) {
-    this.temporaryAddressID = temporaryAddressID;
+  public void setTemporaryaddressId(Employee temporaryaddressId) {
+    this.temporaryaddressId = temporaryaddressId;
   }
 
-  public Employee nationalityID(String nationalityID) {
-    this.nationalityID = nationalityID;
+  public Employee nationalityId(String nationalityId) {
+    this.nationalityId = nationalityId;
     return this;
   }
 
    /**
-   * Státní přísl.; ID objektu Země [persistentní položka]
-   * @return nationalityID
+   * státní přísl.; id objektu země [persistentní položka]
+   * @return nationalityId
   **/
-  @ApiModelProperty(example = "null", value = "Státní přísl.; ID objektu Země [persistentní položka]")
-  public String getNationalityID() {
-    return nationalityID;
+  @ApiModelProperty(example = "null", value = "státní přísl.; id objektu země [persistentní položka]")
+  public String getNationalityId() {
+    return nationalityId;
   }
 
-  public void setNationalityID(String nationalityID) {
-    this.nationalityID = nationalityID;
+  public void setNationalityId(String nationalityId) {
+    this.nationalityId = nationalityId;
   }
 
-  public Employee maritalStatus(Integer maritalStatus) {
-    this.maritalStatus = maritalStatus;
+  public Employee maritalstatus(Integer maritalstatus) {
+    this.maritalstatus = maritalstatus;
     return this;
   }
 
    /**
-   * Rodinný stav [persistentní položka]
-   * @return maritalStatus
+   * rodinný stav [persistentní položka]
+   * @return maritalstatus
   **/
-  @ApiModelProperty(example = "null", value = "Rodinný stav [persistentní položka]")
-  public Integer getMaritalStatus() {
-    return maritalStatus;
+  @ApiModelProperty(example = "null", value = "rodinný stav [persistentní položka]")
+  public Integer getMaritalstatus() {
+    return maritalstatus;
   }
 
-  public void setMaritalStatus(Integer maritalStatus) {
-    this.maritalStatus = maritalStatus;
+  public void setMaritalstatus(Integer maritalstatus) {
+    this.maritalstatus = maritalstatus;
   }
 
-  public Employee maritalStatusText(String maritalStatusText) {
-    this.maritalStatusText = maritalStatusText;
+  public Employee maritalstatustext(String maritalstatustext) {
+    this.maritalstatustext = maritalstatustext;
     return this;
   }
 
    /**
-   * Rodinný stav (text)
-   * @return maritalStatusText
+   * rodinný stav (text)
+   * @return maritalstatustext
   **/
-  @ApiModelProperty(example = "null", value = "Rodinný stav (text)")
-  public String getMaritalStatusText() {
-    return maritalStatusText;
+  @ApiModelProperty(example = "null", value = "rodinný stav (text)")
+  public String getMaritalstatustext() {
+    return maritalstatustext;
   }
 
-  public void setMaritalStatusText(String maritalStatusText) {
-    this.maritalStatusText = maritalStatusText;
+  public void setMaritalstatustext(String maritalstatustext) {
+    this.maritalstatustext = maritalstatustext;
   }
 
-  public Employee insuranceCompID(String insuranceCompID) {
-    this.insuranceCompID = insuranceCompID;
+  public Employee insurancecompId(String insurancecompId) {
+    this.insurancecompId = insurancecompId;
     return this;
   }
 
    /**
-   * Zdrav. pojišťovna; ID objektu Zdravotní pojišťovna [persistentní položka]
-   * @return insuranceCompID
+   * zdrav. pojišťovna; id objektu zdravotní pojišťovna [persistentní položka]
+   * @return insurancecompId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrav. pojišťovna; ID objektu Zdravotní pojišťovna [persistentní položka]")
-  public String getInsuranceCompID() {
-    return insuranceCompID;
+  @ApiModelProperty(example = "null", value = "zdrav. pojišťovna; id objektu zdravotní pojišťovna [persistentní položka]")
+  public String getInsurancecompId() {
+    return insurancecompId;
   }
 
-  public void setInsuranceCompID(String insuranceCompID) {
-    this.insuranceCompID = insuranceCompID;
+  public void setInsurancecompId(String insurancecompId) {
+    this.insurancecompId = insurancecompId;
   }
 
-  public Employee retirementFrom(DateTime retirementFrom) {
-    this.retirementFrom = retirementFrom;
+  public Employee retirementfrom(DateTime retirementfrom) {
+    this.retirementfrom = retirementfrom;
     return this;
   }
 
    /**
-   * Důchod od [persistentní položka]
-   * @return retirementFrom
+   * důchod od [persistentní položka]
+   * @return retirementfrom
   **/
-  @ApiModelProperty(example = "null", value = "Důchod od [persistentní položka]")
-  public DateTime getRetirementFrom() {
-    return retirementFrom;
+  @ApiModelProperty(example = "null", value = "důchod od [persistentní položka]")
+  public DateTime getRetirementfrom() {
+    return retirementfrom;
   }
 
-  public void setRetirementFrom(DateTime retirementFrom) {
-    this.retirementFrom = retirementFrom;
+  public void setRetirementfrom(DateTime retirementfrom) {
+    this.retirementfrom = retirementfrom;
   }
 
-  public Employee taxDeclaration(Boolean taxDeclaration) {
-    this.taxDeclaration = taxDeclaration;
+  public Employee taxdeclaration(Boolean taxdeclaration) {
+    this.taxdeclaration = taxdeclaration;
     return this;
   }
 
    /**
-   * Daň. prohlášení [persistentní položka]
-   * @return taxDeclaration
+   * daň. prohlášení [persistentní položka]
+   * @return taxdeclaration
   **/
-  @ApiModelProperty(example = "null", value = "Daň. prohlášení [persistentní položka]")
-  public Boolean getTaxDeclaration() {
-    return taxDeclaration;
+  @ApiModelProperty(example = "null", value = "daň. prohlášení [persistentní položka]")
+  public Boolean getTaxdeclaration() {
+    return taxdeclaration;
   }
 
-  public void setTaxDeclaration(Boolean taxDeclaration) {
-    this.taxDeclaration = taxDeclaration;
+  public void setTaxdeclaration(Boolean taxdeclaration) {
+    this.taxdeclaration = taxdeclaration;
   }
 
-  public Employee hIPaysGoverment(Boolean hIPaysGoverment) {
-    this.hIPaysGoverment = hIPaysGoverment;
+  public Employee hipaysgoverment(Boolean hipaysgoverment) {
+    this.hipaysgoverment = hipaysgoverment;
     return this;
   }
 
    /**
-   * Plátce ZP stát [persistentní položka]
-   * @return hIPaysGoverment
+   * plátce zp stát [persistentní položka]
+   * @return hipaysgoverment
   **/
-  @ApiModelProperty(example = "null", value = "Plátce ZP stát [persistentní položka]")
-  public Boolean getHIPaysGoverment() {
-    return hIPaysGoverment;
+  @ApiModelProperty(example = "null", value = "plátce zp stát [persistentní položka]")
+  public Boolean getHipaysgoverment() {
+    return hipaysgoverment;
   }
 
-  public void setHIPaysGoverment(Boolean hIPaysGoverment) {
-    this.hIPaysGoverment = hIPaysGoverment;
+  public void setHipaysgoverment(Boolean hipaysgoverment) {
+    this.hipaysgoverment = hipaysgoverment;
   }
 
-  public Employee hICountMinimal(Boolean hICountMinimal) {
-    this.hICountMinimal = hICountMinimal;
+  public Employee hicountminimal(Boolean hicountminimal) {
+    this.hicountminimal = hicountminimal;
     return this;
   }
 
    /**
-   * Min. ZP [persistentní položka]
-   * @return hICountMinimal
+   * min. zp [persistentní položka]
+   * @return hicountminimal
   **/
-  @ApiModelProperty(example = "null", value = "Min. ZP [persistentní položka]")
-  public Boolean getHICountMinimal() {
-    return hICountMinimal;
+  @ApiModelProperty(example = "null", value = "min. zp [persistentní položka]")
+  public Boolean getHicountminimal() {
+    return hicountminimal;
   }
 
-  public void setHICountMinimal(Boolean hICountMinimal) {
-    this.hICountMinimal = hICountMinimal;
+  public void setHicountminimal(Boolean hicountminimal) {
+    this.hicountminimal = hicountminimal;
   }
 
-  public Employee isPartner(Boolean isPartner) {
-    this.isPartner = isPartner;
+  public Employee ispartner(Boolean ispartner) {
+    this.ispartner = ispartner;
     return this;
   }
 
    /**
-   * Společník [persistentní položka]
-   * @return isPartner
+   * společník [persistentní položka]
+   * @return ispartner
   **/
-  @ApiModelProperty(example = "null", value = "Společník [persistentní položka]")
-  public Boolean getIsPartner() {
-    return isPartner;
+  @ApiModelProperty(example = "null", value = "společník [persistentní položka]")
+  public Boolean getIspartner() {
+    return ispartner;
   }
 
-  public void setIsPartner(Boolean isPartner) {
-    this.isPartner = isPartner;
+  public void setIspartner(Boolean ispartner) {
+    this.ispartner = ispartner;
   }
 
-  public Employee mealTicket(Boolean mealTicket) {
-    this.mealTicket = mealTicket;
+  public Employee mealticket(Boolean mealticket) {
+    this.mealticket = mealticket;
     return this;
   }
 
    /**
-   * Stravenky [persistentní položka]
-   * @return mealTicket
+   * stravenky [persistentní položka]
+   * @return mealticket
   **/
-  @ApiModelProperty(example = "null", value = "Stravenky [persistentní položka]")
-  public Boolean getMealTicket() {
-    return mealTicket;
+  @ApiModelProperty(example = "null", value = "stravenky [persistentní položka]")
+  public Boolean getMealticket() {
+    return mealticket;
   }
 
-  public void setMealTicket(Boolean mealTicket) {
-    this.mealTicket = mealTicket;
+  public void setMealticket(Boolean mealticket) {
+    this.mealticket = mealticket;
   }
 
-  public Employee dutyCar(Double dutyCar) {
-    this.dutyCar = dutyCar;
+  public Employee dutycar(Double dutycar) {
+    this.dutycar = dutycar;
     return this;
   }
 
    /**
-   * Služ. auto [persistentní položka]
-   * @return dutyCar
+   * služ. auto [persistentní položka]
+   * @return dutycar
   **/
-  @ApiModelProperty(example = "null", value = "Služ. auto [persistentní položka]")
-  public Double getDutyCar() {
-    return dutyCar;
+  @ApiModelProperty(example = "null", value = "služ. auto [persistentní položka]")
+  public Double getDutycar() {
+    return dutycar;
   }
 
-  public void setDutyCar(Double dutyCar) {
-    this.dutyCar = dutyCar;
+  public void setDutycar(Double dutycar) {
+    this.dutycar = dutycar;
   }
 
-  public Employee rentOriginalIncome(Double rentOriginalIncome) {
-    this.rentOriginalIncome = rentOriginalIncome;
+  public Employee rentoriginalincome(Double rentoriginalincome) {
+    this.rentoriginalincome = rentoriginalincome;
     return this;
   }
 
    /**
-   * Pův. příjem [persistentní položka]
-   * @return rentOriginalIncome
+   * pův. příjem [persistentní položka]
+   * @return rentoriginalincome
   **/
-  @ApiModelProperty(example = "null", value = "Pův. příjem [persistentní položka]")
-  public Double getRentOriginalIncome() {
-    return rentOriginalIncome;
+  @ApiModelProperty(example = "null", value = "pův. příjem [persistentní položka]")
+  public Double getRentoriginalincome() {
+    return rentoriginalincome;
   }
 
-  public void setRentOriginalIncome(Double rentOriginalIncome) {
-    this.rentOriginalIncome = rentOriginalIncome;
+  public void setRentoriginalincome(Double rentoriginalincome) {
+    this.rentoriginalincome = rentoriginalincome;
   }
 
-  public Employee rentActualIncome(Double rentActualIncome) {
-    this.rentActualIncome = rentActualIncome;
+  public Employee rentactualincome(Double rentactualincome) {
+    this.rentactualincome = rentactualincome;
     return this;
   }
 
    /**
-   * Souč. příjem [persistentní položka]
-   * @return rentActualIncome
+   * souč. příjem [persistentní položka]
+   * @return rentactualincome
   **/
-  @ApiModelProperty(example = "null", value = "Souč. příjem [persistentní položka]")
-  public Double getRentActualIncome() {
-    return rentActualIncome;
+  @ApiModelProperty(example = "null", value = "souč. příjem [persistentní položka]")
+  public Double getRentactualincome() {
+    return rentactualincome;
   }
 
-  public void setRentActualIncome(Double rentActualIncome) {
-    this.rentActualIncome = rentActualIncome;
+  public void setRentactualincome(Double rentactualincome) {
+    this.rentactualincome = rentactualincome;
   }
 
-  public Employee toAccount(Boolean toAccount) {
-    this.toAccount = toAccount;
+  public Employee toaccount(Boolean toaccount) {
+    this.toaccount = toaccount;
     return this;
   }
 
    /**
-   * Na účet [persistentní položka]
-   * @return toAccount
+   * na účet [persistentní položka]
+   * @return toaccount
   **/
-  @ApiModelProperty(example = "null", value = "Na účet [persistentní položka]")
-  public Boolean getToAccount() {
-    return toAccount;
+  @ApiModelProperty(example = "null", value = "na účet [persistentní položka]")
+  public Boolean getToaccount() {
+    return toaccount;
   }
 
-  public void setToAccount(Boolean toAccount) {
-    this.toAccount = toAccount;
+  public void setToaccount(Boolean toaccount) {
+    this.toaccount = toaccount;
   }
 
-  public Employee bankAccount(String bankAccount) {
-    this.bankAccount = bankAccount;
+  public Employee bankaccount(String bankaccount) {
+    this.bankaccount = bankaccount;
     return this;
   }
 
    /**
    * Číslo účtu [persistentní položka]
-   * @return bankAccount
+   * @return bankaccount
   **/
   @ApiModelProperty(example = "null", value = "Číslo účtu [persistentní položka]")
-  public String getBankAccount() {
-    return bankAccount;
+  public String getBankaccount() {
+    return bankaccount;
   }
 
-  public void setBankAccount(String bankAccount) {
-    this.bankAccount = bankAccount;
+  public void setBankaccount(String bankaccount) {
+    this.bankaccount = bankaccount;
   }
 
-  public Employee varSymbol(String varSymbol) {
-    this.varSymbol = varSymbol;
+  public Employee varsymbol(String varsymbol) {
+    this.varsymbol = varsymbol;
     return this;
   }
 
    /**
-   * Var. symbol [persistentní položka]
-   * @return varSymbol
+   * var. symbol [persistentní položka]
+   * @return varsymbol
   **/
-  @ApiModelProperty(example = "null", value = "Var. symbol [persistentní položka]")
-  public String getVarSymbol() {
-    return varSymbol;
+  @ApiModelProperty(example = "null", value = "var. symbol [persistentní položka]")
+  public String getVarsymbol() {
+    return varsymbol;
   }
 
-  public void setVarSymbol(String varSymbol) {
-    this.varSymbol = varSymbol;
+  public void setVarsymbol(String varsymbol) {
+    this.varsymbol = varsymbol;
   }
 
-  public Employee constSymbolID(String constSymbolID) {
-    this.constSymbolID = constSymbolID;
+  public Employee constsymbolId(String constsymbolId) {
+    this.constsymbolId = constsymbolId;
     return this;
   }
 
    /**
-   * Konst. symbol; ID objektu Konstantní symbol [persistentní položka]
-   * @return constSymbolID
+   * konst. symbol; id objektu konstantní symbol [persistentní položka]
+   * @return constsymbolId
   **/
-  @ApiModelProperty(example = "null", value = "Konst. symbol; ID objektu Konstantní symbol [persistentní položka]")
-  public String getConstSymbolID() {
-    return constSymbolID;
+  @ApiModelProperty(example = "null", value = "konst. symbol; id objektu konstantní symbol [persistentní položka]")
+  public String getConstsymbolId() {
+    return constsymbolId;
   }
 
-  public void setConstSymbolID(String constSymbolID) {
-    this.constSymbolID = constSymbolID;
+  public void setConstsymbolId(String constsymbolId) {
+    this.constsymbolId = constsymbolId;
   }
 
-  public Employee specSymbol(String specSymbol) {
-    this.specSymbol = specSymbol;
+  public Employee specsymbol(String specsymbol) {
+    this.specsymbol = specsymbol;
     return this;
   }
 
    /**
-   * Spec. symbol [persistentní položka]
-   * @return specSymbol
+   * spec. symbol [persistentní položka]
+   * @return specsymbol
   **/
-  @ApiModelProperty(example = "null", value = "Spec. symbol [persistentní položka]")
-  public String getSpecSymbol() {
-    return specSymbol;
+  @ApiModelProperty(example = "null", value = "spec. symbol [persistentní položka]")
+  public String getSpecsymbol() {
+    return specsymbol;
   }
 
-  public void setSpecSymbol(String specSymbol) {
-    this.specSymbol = specSymbol;
+  public void setSpecsymbol(String specsymbol) {
+    this.specsymbol = specsymbol;
   }
 
-  public Employee swiftCode(String swiftCode) {
-    this.swiftCode = swiftCode;
+  public Employee swiftcode(String swiftcode) {
+    this.swiftcode = swiftcode;
     return this;
   }
 
    /**
-   * SWIFT kód [persistentní položka]
-   * @return swiftCode
+   * swift kód [persistentní položka]
+   * @return swiftcode
   **/
-  @ApiModelProperty(example = "null", value = "SWIFT kód [persistentní položka]")
-  public String getSwiftCode() {
-    return swiftCode;
+  @ApiModelProperty(example = "null", value = "swift kód [persistentní položka]")
+  public String getSwiftcode() {
+    return swiftcode;
   }
 
-  public void setSwiftCode(String swiftCode) {
-    this.swiftCode = swiftCode;
+  public void setSwiftcode(String swiftcode) {
+    this.swiftcode = swiftcode;
   }
 
-  public Employee currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Employee currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
-  public Employee currAmount(Double currAmount) {
-    this.currAmount = currAmount;
+  public Employee curramount(Double curramount) {
+    this.curramount = curramount;
     return this;
   }
 
    /**
    * Částka [persistentní položka]
-   * @return currAmount
+   * @return curramount
   **/
   @ApiModelProperty(example = "null", value = "Částka [persistentní položka]")
-  public Double getCurrAmount() {
-    return currAmount;
+  public Double getCurramount() {
+    return curramount;
   }
 
-  public void setCurrAmount(Double currAmount) {
-    this.currAmount = currAmount;
+  public void setCurramount(Double curramount) {
+    this.curramount = curramount;
   }
 
-  public Employee currIsPercent(Boolean currIsPercent) {
-    this.currIsPercent = currIsPercent;
+  public Employee currispercent(Boolean currispercent) {
+    this.currispercent = currispercent;
     return this;
   }
 
    /**
-   * Procento [persistentní položka]
-   * @return currIsPercent
+   * procento [persistentní položka]
+   * @return currispercent
   **/
-  @ApiModelProperty(example = "null", value = "Procento [persistentní položka]")
-  public Boolean getCurrIsPercent() {
-    return currIsPercent;
+  @ApiModelProperty(example = "null", value = "procento [persistentní položka]")
+  public Boolean getCurrispercent() {
+    return currispercent;
   }
 
-  public void setCurrIsPercent(Boolean currIsPercent) {
-    this.currIsPercent = currIsPercent;
+  public void setCurrispercent(Boolean currispercent) {
+    this.currispercent = currispercent;
   }
 
-  public Employee currToAccount(Boolean currToAccount) {
-    this.currToAccount = currToAccount;
+  public Employee currtoaccount(Boolean currtoaccount) {
+    this.currtoaccount = currtoaccount;
     return this;
   }
 
    /**
-   * Na účet [persistentní položka]
-   * @return currToAccount
+   * na účet [persistentní položka]
+   * @return currtoaccount
   **/
-  @ApiModelProperty(example = "null", value = "Na účet [persistentní položka]")
-  public Boolean getCurrToAccount() {
-    return currToAccount;
+  @ApiModelProperty(example = "null", value = "na účet [persistentní položka]")
+  public Boolean getCurrtoaccount() {
+    return currtoaccount;
   }
 
-  public void setCurrToAccount(Boolean currToAccount) {
-    this.currToAccount = currToAccount;
+  public void setCurrtoaccount(Boolean currtoaccount) {
+    this.currtoaccount = currtoaccount;
   }
 
-  public Employee currBankAccount(String currBankAccount) {
-    this.currBankAccount = currBankAccount;
+  public Employee currbankaccount(String currbankaccount) {
+    this.currbankaccount = currbankaccount;
     return this;
   }
 
    /**
    * Číslo účtu [persistentní položka]
-   * @return currBankAccount
+   * @return currbankaccount
   **/
   @ApiModelProperty(example = "null", value = "Číslo účtu [persistentní položka]")
-  public String getCurrBankAccount() {
-    return currBankAccount;
+  public String getCurrbankaccount() {
+    return currbankaccount;
   }
 
-  public void setCurrBankAccount(String currBankAccount) {
-    this.currBankAccount = currBankAccount;
+  public void setCurrbankaccount(String currbankaccount) {
+    this.currbankaccount = currbankaccount;
   }
 
-  public Employee currVarSymbol(String currVarSymbol) {
-    this.currVarSymbol = currVarSymbol;
+  public Employee currvarsymbol(String currvarsymbol) {
+    this.currvarsymbol = currvarsymbol;
     return this;
   }
 
    /**
-   * Var. symbol [persistentní položka]
-   * @return currVarSymbol
+   * var. symbol [persistentní položka]
+   * @return currvarsymbol
   **/
-  @ApiModelProperty(example = "null", value = "Var. symbol [persistentní položka]")
-  public String getCurrVarSymbol() {
-    return currVarSymbol;
+  @ApiModelProperty(example = "null", value = "var. symbol [persistentní položka]")
+  public String getCurrvarsymbol() {
+    return currvarsymbol;
   }
 
-  public void setCurrVarSymbol(String currVarSymbol) {
-    this.currVarSymbol = currVarSymbol;
+  public void setCurrvarsymbol(String currvarsymbol) {
+    this.currvarsymbol = currvarsymbol;
   }
 
-  public Employee targetBankCountryID(String targetBankCountryID) {
-    this.targetBankCountryID = targetBankCountryID;
+  public Employee targetbankcountryId(String targetbankcountryId) {
+    this.targetbankcountryId = targetbankcountryId;
     return this;
   }
 
    /**
-   * Země banky; ID objektu Země [persistentní položka]
-   * @return targetBankCountryID
+   * země banky; id objektu země [persistentní položka]
+   * @return targetbankcountryId
   **/
-  @ApiModelProperty(example = "null", value = "Země banky; ID objektu Země [persistentní položka]")
-  public String getTargetBankCountryID() {
-    return targetBankCountryID;
+  @ApiModelProperty(example = "null", value = "země banky; id objektu země [persistentní položka]")
+  public String getTargetbankcountryId() {
+    return targetbankcountryId;
   }
 
-  public void setTargetBankCountryID(String targetBankCountryID) {
-    this.targetBankCountryID = targetBankCountryID;
+  public void setTargetbankcountryId(String targetbankcountryId) {
+    this.targetbankcountryId = targetbankcountryId;
   }
 
-  public Employee currConstSymbolID(String currConstSymbolID) {
-    this.currConstSymbolID = currConstSymbolID;
+  public Employee currconstsymbolId(String currconstsymbolId) {
+    this.currconstsymbolId = currconstsymbolId;
     return this;
   }
 
    /**
-   * Konst. symbol; ID objektu Konstantní symbol [persistentní položka]
-   * @return currConstSymbolID
+   * konst. symbol; id objektu konstantní symbol [persistentní položka]
+   * @return currconstsymbolId
   **/
-  @ApiModelProperty(example = "null", value = "Konst. symbol; ID objektu Konstantní symbol [persistentní položka]")
-  public String getCurrConstSymbolID() {
-    return currConstSymbolID;
+  @ApiModelProperty(example = "null", value = "konst. symbol; id objektu konstantní symbol [persistentní položka]")
+  public String getCurrconstsymbolId() {
+    return currconstsymbolId;
   }
 
-  public void setCurrConstSymbolID(String currConstSymbolID) {
-    this.currConstSymbolID = currConstSymbolID;
+  public void setCurrconstsymbolId(String currconstsymbolId) {
+    this.currconstsymbolId = currconstsymbolId;
   }
 
-  public Employee currSpecSymbol(String currSpecSymbol) {
-    this.currSpecSymbol = currSpecSymbol;
+  public Employee currspecsymbol(String currspecsymbol) {
+    this.currspecsymbol = currspecsymbol;
     return this;
   }
 
    /**
-   * Spec. symbol [persistentní položka]
-   * @return currSpecSymbol
+   * spec. symbol [persistentní položka]
+   * @return currspecsymbol
   **/
-  @ApiModelProperty(example = "null", value = "Spec. symbol [persistentní položka]")
-  public String getCurrSpecSymbol() {
-    return currSpecSymbol;
+  @ApiModelProperty(example = "null", value = "spec. symbol [persistentní položka]")
+  public String getCurrspecsymbol() {
+    return currspecsymbol;
   }
 
-  public void setCurrSpecSymbol(String currSpecSymbol) {
-    this.currSpecSymbol = currSpecSymbol;
+  public void setCurrspecsymbol(String currspecsymbol) {
+    this.currspecsymbol = currspecsymbol;
   }
 
-  public Employee currBankName(String currBankName) {
-    this.currBankName = currBankName;
+  public Employee currbankname(String currbankname) {
+    this.currbankname = currbankname;
     return this;
   }
 
    /**
-   * Název banky [persistentní položka]
-   * @return currBankName
+   * název banky [persistentní položka]
+   * @return currbankname
   **/
-  @ApiModelProperty(example = "null", value = "Název banky [persistentní položka]")
-  public String getCurrBankName() {
-    return currBankName;
+  @ApiModelProperty(example = "null", value = "název banky [persistentní položka]")
+  public String getCurrbankname() {
+    return currbankname;
   }
 
-  public void setCurrBankName(String currBankName) {
-    this.currBankName = currBankName;
+  public void setCurrbankname(String currbankname) {
+    this.currbankname = currbankname;
   }
 
-  public Employee currSwiftCode(String currSwiftCode) {
-    this.currSwiftCode = currSwiftCode;
+  public Employee currswiftcode(String currswiftcode) {
+    this.currswiftcode = currswiftcode;
     return this;
   }
 
    /**
-   * Swift kód [persistentní položka]
-   * @return currSwiftCode
+   * swift kód [persistentní položka]
+   * @return currswiftcode
   **/
-  @ApiModelProperty(example = "null", value = "Swift kód [persistentní položka]")
-  public String getCurrSwiftCode() {
-    return currSwiftCode;
+  @ApiModelProperty(example = "null", value = "swift kód [persistentní položka]")
+  public String getCurrswiftcode() {
+    return currswiftcode;
   }
 
-  public void setCurrSwiftCode(String currSwiftCode) {
-    this.currSwiftCode = currSwiftCode;
+  public void setCurrswiftcode(String currswiftcode) {
+    this.currswiftcode = currswiftcode;
   }
 
-  public Employee currForeignIssue(Integer currForeignIssue) {
-    this.currForeignIssue = currForeignIssue;
+  public Employee currforeignissue(Integer currforeignissue) {
+    this.currforeignissue = currforeignissue;
     return this;
   }
 
    /**
-   * Poplatky [persistentní položka]
-   * @return currForeignIssue
+   * poplatky [persistentní položka]
+   * @return currforeignissue
   **/
-  @ApiModelProperty(example = "null", value = "Poplatky [persistentní položka]")
-  public Integer getCurrForeignIssue() {
-    return currForeignIssue;
+  @ApiModelProperty(example = "null", value = "poplatky [persistentní položka]")
+  public Integer getCurrforeignissue() {
+    return currforeignissue;
   }
 
-  public void setCurrForeignIssue(Integer currForeignIssue) {
-    this.currForeignIssue = currForeignIssue;
+  public void setCurrforeignissue(Integer currforeignissue) {
+    this.currforeignissue = currforeignissue;
   }
 
-  public Employee currUrgent(Integer currUrgent) {
-    this.currUrgent = currUrgent;
+  public Employee currurgent(Integer currurgent) {
+    this.currurgent = currurgent;
     return this;
   }
 
    /**
-   * Provedení [persistentní položka]
-   * @return currUrgent
+   * provedení [persistentní položka]
+   * @return currurgent
   **/
-  @ApiModelProperty(example = "null", value = "Provedení [persistentní položka]")
-  public Integer getCurrUrgent() {
-    return currUrgent;
+  @ApiModelProperty(example = "null", value = "provedení [persistentní položka]")
+  public Integer getCurrurgent() {
+    return currurgent;
   }
 
-  public void setCurrUrgent(Integer currUrgent) {
-    this.currUrgent = currUrgent;
+  public void setCurrurgent(Integer currurgent) {
+    this.currurgent = currurgent;
   }
 
-  public Employee fedPersons(Integer fedPersons) {
-    this.fedPersons = fedPersons;
+  public Employee fedpersons(Integer fedpersons) {
+    this.fedpersons = fedpersons;
     return this;
   }
 
    /**
-   * Poč. osob [persistentní položka]
-   * @return fedPersons
+   * poč. osob [persistentní položka]
+   * @return fedpersons
   **/
-  @ApiModelProperty(example = "null", value = "Poč. osob [persistentní položka]")
-  public Integer getFedPersons() {
-    return fedPersons;
+  @ApiModelProperty(example = "null", value = "poč. osob [persistentní položka]")
+  public Integer getFedpersons() {
+    return fedpersons;
   }
 
-  public void setFedPersons(Integer fedPersons) {
-    this.fedPersons = fedPersons;
+  public void setFedpersons(Integer fedpersons) {
+    this.fedpersons = fedpersons;
   }
 
-  public Employee workAbility(Integer workAbility) {
-    this.workAbility = workAbility;
+  public Employee workability(Integer workability) {
+    this.workability = workability;
     return this;
   }
 
    /**
-   * Prac. schopnost [persistentní položka]
-   * @return workAbility
+   * prac. schopnost [persistentní položka]
+   * @return workability
   **/
-  @ApiModelProperty(example = "null", value = "Prac. schopnost [persistentní položka]")
-  public Integer getWorkAbility() {
-    return workAbility;
+  @ApiModelProperty(example = "null", value = "prac. schopnost [persistentní položka]")
+  public Integer getWorkability() {
+    return workability;
   }
 
-  public void setWorkAbility(Integer workAbility) {
-    this.workAbility = workAbility;
+  public void setWorkability(Integer workability) {
+    this.workability = workability;
   }
 
-  public Employee materialResponsibility(Boolean materialResponsibility) {
-    this.materialResponsibility = materialResponsibility;
+  public Employee materialresponsibility(Boolean materialresponsibility) {
+    this.materialresponsibility = materialresponsibility;
     return this;
   }
 
    /**
-   * Hm. odpovědnost [persistentní položka]
-   * @return materialResponsibility
+   * hm. odpovědnost [persistentní položka]
+   * @return materialresponsibility
   **/
-  @ApiModelProperty(example = "null", value = "Hm. odpovědnost [persistentní položka]")
-  public Boolean getMaterialResponsibility() {
-    return materialResponsibility;
+  @ApiModelProperty(example = "null", value = "hm. odpovědnost [persistentní položka]")
+  public Boolean getMaterialresponsibility() {
+    return materialresponsibility;
   }
 
-  public void setMaterialResponsibility(Boolean materialResponsibility) {
-    this.materialResponsibility = materialResponsibility;
+  public void setMaterialresponsibility(Boolean materialresponsibility) {
+    this.materialresponsibility = materialresponsibility;
   }
 
-  public Employee firstAcces(DateTime firstAcces) {
-    this.firstAcces = firstAcces;
+  public Employee firstacces(DateTime firstacces) {
+    this.firstacces = firstacces;
     return this;
   }
 
    /**
-   * První nástup [persistentní položka]
-   * @return firstAcces
+   * první nástup [persistentní položka]
+   * @return firstacces
   **/
-  @ApiModelProperty(example = "null", value = "První nástup [persistentní položka]")
-  public DateTime getFirstAcces() {
-    return firstAcces;
+  @ApiModelProperty(example = "null", value = "první nástup [persistentní položka]")
+  public DateTime getFirstacces() {
+    return firstacces;
   }
 
-  public void setFirstAcces(DateTime firstAcces) {
-    this.firstAcces = firstAcces;
+  public void setFirstacces(DateTime firstacces) {
+    this.firstacces = firstacces;
   }
 
-  public Employee countedIllness(Double countedIllness) {
-    this.countedIllness = countedIllness;
+  public Employee countedillness(Double countedillness) {
+    this.countedillness = countedillness;
     return this;
   }
 
    /**
-   * Dny nemoci [persistentní položka]
-   * @return countedIllness
+   * dny nemoci [persistentní položka]
+   * @return countedillness
   **/
-  @ApiModelProperty(example = "null", value = "Dny nemoci [persistentní položka]")
-  public Double getCountedIllness() {
-    return countedIllness;
+  @ApiModelProperty(example = "null", value = "dny nemoci [persistentní položka]")
+  public Double getCountedillness() {
+    return countedillness;
   }
 
-  public void setCountedIllness(Double countedIllness) {
-    this.countedIllness = countedIllness;
+  public void setCountedillness(Double countedillness) {
+    this.countedillness = countedillness;
   }
 
-  public Employee countedExperience(Integer countedExperience) {
-    this.countedExperience = countedExperience;
+  public Employee countedexperience(Integer countedexperience) {
+    this.countedexperience = countedexperience;
     return this;
   }
 
    /**
-   * Praxe [persistentní položka]
-   * @return countedExperience
+   * praxe [persistentní položka]
+   * @return countedexperience
   **/
-  @ApiModelProperty(example = "null", value = "Praxe [persistentní položka]")
-  public Integer getCountedExperience() {
-    return countedExperience;
+  @ApiModelProperty(example = "null", value = "praxe [persistentní položka]")
+  public Integer getCountedexperience() {
+    return countedexperience;
   }
 
-  public void setCountedExperience(Integer countedExperience) {
-    this.countedExperience = countedExperience;
+  public void setCountedexperience(Integer countedexperience) {
+    this.countedexperience = countedexperience;
   }
 
-  public Employee countedYears(Integer countedYears) {
-    this.countedYears = countedYears;
+  public Employee countedyears(Integer countedyears) {
+    this.countedyears = countedyears;
     return this;
   }
 
    /**
-   * Roky [persistentní položka]
-   * @return countedYears
+   * roky [persistentní položka]
+   * @return countedyears
   **/
-  @ApiModelProperty(example = "null", value = "Roky [persistentní položka]")
-  public Integer getCountedYears() {
-    return countedYears;
+  @ApiModelProperty(example = "null", value = "roky [persistentní položka]")
+  public Integer getCountedyears() {
+    return countedyears;
   }
 
-  public void setCountedYears(Integer countedYears) {
-    this.countedYears = countedYears;
+  public void setCountedyears(Integer countedyears) {
+    this.countedyears = countedyears;
   }
 
-  public Employee countedDays(Double countedDays) {
-    this.countedDays = countedDays;
+  public Employee counteddays(Double counteddays) {
+    this.counteddays = counteddays;
     return this;
   }
 
    /**
-   * Dny [persistentní položka]
-   * @return countedDays
+   * dny [persistentní položka]
+   * @return counteddays
   **/
-  @ApiModelProperty(example = "null", value = "Dny [persistentní položka]")
-  public Double getCountedDays() {
-    return countedDays;
+  @ApiModelProperty(example = "null", value = "dny [persistentní položka]")
+  public Double getCounteddays() {
+    return counteddays;
   }
 
-  public void setCountedDays(Double countedDays) {
-    this.countedDays = countedDays;
+  public void setCounteddays(Double counteddays) {
+    this.counteddays = counteddays;
   }
 
-  public Employee employeeName(String employeeName) {
-    this.employeeName = employeeName;
+  public Employee employeename(String employeename) {
+    this.employeename = employeename;
     return this;
   }
 
    /**
-   * Příjmení a jméno
-   * @return employeeName
+   * příjmení a jméno
+   * @return employeename
   **/
-  @ApiModelProperty(example = "null", value = "Příjmení a jméno")
-  public String getEmployeeName() {
-    return employeeName;
+  @ApiModelProperty(example = "null", value = "příjmení a jméno")
+  public String getEmployeename() {
+    return employeename;
   }
 
-  public void setEmployeeName(String employeeName) {
-    this.employeeName = employeeName;
+  public void setEmployeename(String employeename) {
+    this.employeename = employeename;
   }
 
-  public Employee prefixPersonalNumber(String prefixPersonalNumber) {
-    this.prefixPersonalNumber = prefixPersonalNumber;
+  public Employee prefixpersonalnumber(String prefixpersonalnumber) {
+    this.prefixpersonalnumber = prefixpersonalnumber;
     return this;
   }
 
    /**
-   * Prefix os.čísla
-   * @return prefixPersonalNumber
+   * prefix os.čísla
+   * @return prefixpersonalnumber
   **/
-  @ApiModelProperty(example = "null", value = "Prefix os.čísla")
-  public String getPrefixPersonalNumber() {
-    return prefixPersonalNumber;
+  @ApiModelProperty(example = "null", value = "prefix os.čísla")
+  public String getPrefixpersonalnumber() {
+    return prefixpersonalnumber;
   }
 
-  public void setPrefixPersonalNumber(String prefixPersonalNumber) {
-    this.prefixPersonalNumber = prefixPersonalNumber;
+  public void setPrefixpersonalnumber(String prefixpersonalnumber) {
+    this.prefixpersonalnumber = prefixpersonalnumber;
   }
 
-  public Employee bodyPersonalNumber(String bodyPersonalNumber) {
-    this.bodyPersonalNumber = bodyPersonalNumber;
+  public Employee bodypersonalnumber(String bodypersonalnumber) {
+    this.bodypersonalnumber = bodypersonalnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo
-   * @return bodyPersonalNumber
+   * pořadové číslo
+   * @return bodypersonalnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo")
-  public String getBodyPersonalNumber() {
-    return bodyPersonalNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo")
+  public String getBodypersonalnumber() {
+    return bodypersonalnumber;
   }
 
-  public void setBodyPersonalNumber(String bodyPersonalNumber) {
-    this.bodyPersonalNumber = bodyPersonalNumber;
+  public void setBodypersonalnumber(String bodypersonalnumber) {
+    this.bodypersonalnumber = bodypersonalnumber;
   }
 
-  public Employee suffixPersonalNumber(String suffixPersonalNumber) {
-    this.suffixPersonalNumber = suffixPersonalNumber;
+  public Employee suffixpersonalnumber(String suffixpersonalnumber) {
+    this.suffixpersonalnumber = suffixpersonalnumber;
     return this;
   }
 
    /**
-   * Suffix os.čísla
-   * @return suffixPersonalNumber
+   * suffix os.čísla
+   * @return suffixpersonalnumber
   **/
-  @ApiModelProperty(example = "null", value = "Suffix os.čísla")
-  public String getSuffixPersonalNumber() {
-    return suffixPersonalNumber;
+  @ApiModelProperty(example = "null", value = "suffix os.čísla")
+  public String getSuffixpersonalnumber() {
+    return suffixpersonalnumber;
   }
 
-  public void setSuffixPersonalNumber(String suffixPersonalNumber) {
-    this.suffixPersonalNumber = suffixPersonalNumber;
+  public void setSuffixpersonalnumber(String suffixpersonalnumber) {
+    this.suffixpersonalnumber = suffixpersonalnumber;
   }
 
-  public Employee educationGradeID(String educationGradeID) {
-    this.educationGradeID = educationGradeID;
+  public Employee educationgradeId(String educationgradeId) {
+    this.educationgradeId = educationgradeId;
     return this;
   }
 
    /**
-   * Stup. vzd.; ID objektu Stupeň vzdělání [persistentní položka]
-   * @return educationGradeID
+   * stup. vzd.; id objektu stupeň vzdělání [persistentní položka]
+   * @return educationgradeId
   **/
-  @ApiModelProperty(example = "null", value = "Stup. vzd.; ID objektu Stupeň vzdělání [persistentní položka]")
-  public String getEducationGradeID() {
-    return educationGradeID;
+  @ApiModelProperty(example = "null", value = "stup. vzd.; id objektu stupeň vzdělání [persistentní položka]")
+  public String getEducationgradeId() {
+    return educationgradeId;
   }
 
-  public void setEducationGradeID(String educationGradeID) {
-    this.educationGradeID = educationGradeID;
+  public void setEducationgradeId(String educationgradeId) {
+    this.educationgradeId = educationgradeId;
   }
 
-  public Employee educationBranchID(String educationBranchID) {
-    this.educationBranchID = educationBranchID;
+  public Employee educationbranchId(String educationbranchId) {
+    this.educationbranchId = educationbranchId;
     return this;
   }
 
    /**
-   * Obor vzd.; ID objektu Obor vzdělání [persistentní položka]
-   * @return educationBranchID
+   * obor vzd.; id objektu obor vzdělání [persistentní položka]
+   * @return educationbranchId
   **/
-  @ApiModelProperty(example = "null", value = "Obor vzd.; ID objektu Obor vzdělání [persistentní položka]")
-  public String getEducationBranchID() {
-    return educationBranchID;
+  @ApiModelProperty(example = "null", value = "obor vzd.; id objektu obor vzdělání [persistentní položka]")
+  public String getEducationbranchId() {
+    return educationbranchId;
   }
 
-  public void setEducationBranchID(String educationBranchID) {
-    this.educationBranchID = educationBranchID;
+  public void setEducationbranchId(String educationbranchId) {
+    this.educationbranchId = educationbranchId;
   }
 
-  public Employee retirementAge(DateTime retirementAge) {
-    this.retirementAge = retirementAge;
+  public Employee retirementage(DateTime retirementage) {
+    this.retirementage = retirementage;
     return this;
   }
 
    /**
-   * Důchodový věk [persistentní položka]
-   * @return retirementAge
+   * důchodový věk [persistentní položka]
+   * @return retirementage
   **/
-  @ApiModelProperty(example = "null", value = "Důchodový věk [persistentní položka]")
-  public DateTime getRetirementAge() {
-    return retirementAge;
+  @ApiModelProperty(example = "null", value = "důchodový věk [persistentní položka]")
+  public DateTime getRetirementage() {
+    return retirementage;
   }
 
-  public void setRetirementAge(DateTime retirementAge) {
-    this.retirementAge = retirementAge;
+  public void setRetirementage(DateTime retirementage) {
+    this.retirementage = retirementage;
   }
 
-  public Employee hasYoungChild(Boolean hasYoungChild) {
-    this.hasYoungChild = hasYoungChild;
+  public Employee hasyoungchild(Boolean hasyoungchild) {
+    this.hasyoungchild = hasyoungchild;
     return this;
   }
 
    /**
-   * Platí výživne na maloleté dieťa [persistentní položka]
-   * @return hasYoungChild
+   * platí výživne na maloleté dieťa [persistentní položka]
+   * @return hasyoungchild
   **/
-  @ApiModelProperty(example = "null", value = "Platí výživne na maloleté dieťa [persistentní položka]")
-  public Boolean getHasYoungChild() {
-    return hasYoungChild;
+  @ApiModelProperty(example = "null", value = "platí výživne na maloleté dieťa [persistentní položka]")
+  public Boolean getHasyoungchild() {
+    return hasyoungchild;
   }
 
-  public void setHasYoungChild(Boolean hasYoungChild) {
-    this.hasYoungChild = hasYoungChild;
+  public void setHasyoungchild(Boolean hasyoungchild) {
+    this.hasyoungchild = hasyoungchild;
   }
 
-  public Employee habitationCosts(Double habitationCosts) {
-    this.habitationCosts = habitationCosts;
+  public Employee habitationcosts(Double habitationcosts) {
+    this.habitationcosts = habitationcosts;
     return this;
   }
 
    /**
-   * Náklady na bydlení [persistentní položka]
-   * @return habitationCosts
+   * náklady na bydlení [persistentní položka]
+   * @return habitationcosts
   **/
-  @ApiModelProperty(example = "null", value = "Náklady na bydlení [persistentní položka]")
-  public Double getHabitationCosts() {
-    return habitationCosts;
+  @ApiModelProperty(example = "null", value = "náklady na bydlení [persistentní položka]")
+  public Double getHabitationcosts() {
+    return habitationcosts;
   }
 
-  public void setHabitationCosts(Double habitationCosts) {
-    this.habitationCosts = habitationCosts;
+  public void setHabitationcosts(Double habitationcosts) {
+    this.habitationcosts = habitationcosts;
   }
 
-  public Employee firstAccessToCompany(DateTime firstAccessToCompany) {
-    this.firstAccessToCompany = firstAccessToCompany;
+  public Employee firstaccesstocompany(DateTime firstaccesstocompany) {
+    this.firstaccesstocompany = firstaccesstocompany;
     return this;
   }
 
    /**
-   * Datum prvního nástupu k tomuto zaměstnavateli [persistentní položka]
-   * @return firstAccessToCompany
+   * datum prvního nástupu k tomuto zaměstnavateli [persistentní položka]
+   * @return firstaccesstocompany
   **/
-  @ApiModelProperty(example = "null", value = "Datum prvního nástupu k tomuto zaměstnavateli [persistentní položka]")
-  public DateTime getFirstAccessToCompany() {
-    return firstAccessToCompany;
+  @ApiModelProperty(example = "null", value = "datum prvního nástupu k tomuto zaměstnavateli [persistentní položka]")
+  public DateTime getFirstaccesstocompany() {
+    return firstaccesstocompany;
   }
 
-  public void setFirstAccessToCompany(DateTime firstAccessToCompany) {
-    this.firstAccessToCompany = firstAccessToCompany;
+  public void setFirstaccesstocompany(DateTime firstaccesstocompany) {
+    this.firstaccesstocompany = firstaccesstocompany;
   }
 
-  public Employee hIPaysGovernmentTypeID(String hIPaysGovernmentTypeID) {
-    this.hIPaysGovernmentTypeID = hIPaysGovernmentTypeID;
+  public Employee hipaysgovernmenttypeId(String hipaysgovernmenttypeId) {
+    this.hipaysgovernmenttypeId = hipaysgovernmenttypeId;
     return this;
   }
 
    /**
-   * Druh pojištěnce státu; ID objektu Druhy pojištěnců státu [persistentní položka]
-   * @return hIPaysGovernmentTypeID
+   * druh pojištěnce státu; id objektu druhy pojištěnců státu [persistentní položka]
+   * @return hipaysgovernmenttypeId
   **/
-  @ApiModelProperty(example = "null", value = "Druh pojištěnce státu; ID objektu Druhy pojištěnců státu [persistentní položka]")
-  public String getHIPaysGovernmentTypeID() {
-    return hIPaysGovernmentTypeID;
+  @ApiModelProperty(example = "null", value = "druh pojištěnce státu; id objektu druhy pojištěnců státu [persistentní položka]")
+  public String getHipaysgovernmenttypeId() {
+    return hipaysgovernmenttypeId;
   }
 
-  public void setHIPaysGovernmentTypeID(String hIPaysGovernmentTypeID) {
-    this.hIPaysGovernmentTypeID = hIPaysGovernmentTypeID;
+  public void setHipaysgovernmenttypeId(String hipaysgovernmenttypeId) {
+    this.hipaysgovernmenttypeId = hipaysgovernmenttypeId;
   }
 
   public Employee pictures(List<Employeepicture> pictures) {
@@ -1745,10 +1790,10 @@ public class Employee   {
   }
 
    /**
-   * Obrázky; kolekce BO Obrázek zaměstnance [nepersistentní položka]
+   * obrázky; kolekce bo obrázek zaměstnance [nepersistentní položka]
    * @return pictures
   **/
-  @ApiModelProperty(example = "null", value = "Obrázky; kolekce BO Obrázek zaměstnance [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "obrázky; kolekce bo obrázek zaměstnance [nepersistentní položka]")
   public List<Employeepicture> getPictures() {
     return pictures;
   }
@@ -1757,310 +1802,310 @@ public class Employee   {
     this.pictures = pictures;
   }
 
-  public Employee notPaySocIns(Boolean notPaySocIns) {
-    this.notPaySocIns = notPaySocIns;
+  public Employee notpaysocins(Boolean notpaysocins) {
+    this.notpaysocins = notpaysocins;
     return this;
   }
 
    /**
-   * Odvádí SP v zahraničí [persistentní položka]
-   * @return notPaySocIns
+   * odvádí sp v zahraničí [persistentní položka]
+   * @return notpaysocins
   **/
-  @ApiModelProperty(example = "null", value = "Odvádí SP v zahraničí [persistentní položka]")
-  public Boolean getNotPaySocIns() {
-    return notPaySocIns;
+  @ApiModelProperty(example = "null", value = "odvádí sp v zahraničí [persistentní položka]")
+  public Boolean getNotpaysocins() {
+    return notpaysocins;
   }
 
-  public void setNotPaySocIns(Boolean notPaySocIns) {
-    this.notPaySocIns = notPaySocIns;
+  public void setNotpaysocins(Boolean notpaysocins) {
+    this.notpaysocins = notpaysocins;
   }
 
-  public Employee notPayHealthIns(Boolean notPayHealthIns) {
-    this.notPayHealthIns = notPayHealthIns;
+  public Employee notpayhealthins(Boolean notpayhealthins) {
+    this.notpayhealthins = notpayhealthins;
     return this;
   }
 
    /**
-   * Odvádí ZP v zahraničí [persistentní položka]
-   * @return notPayHealthIns
+   * odvádí zp v zahraničí [persistentní položka]
+   * @return notpayhealthins
   **/
-  @ApiModelProperty(example = "null", value = "Odvádí ZP v zahraničí [persistentní položka]")
-  public Boolean getNotPayHealthIns() {
-    return notPayHealthIns;
+  @ApiModelProperty(example = "null", value = "odvádí zp v zahraničí [persistentní položka]")
+  public Boolean getNotpayhealthins() {
+    return notpayhealthins;
   }
 
-  public void setNotPayHealthIns(Boolean notPayHealthIns) {
-    this.notPayHealthIns = notPayHealthIns;
+  public void setNotpayhealthins(Boolean notpayhealthins) {
+    this.notpayhealthins = notpayhealthins;
   }
 
-  public Employee dockRegardedPension(Boolean dockRegardedPension) {
-    this.dockRegardedPension = dockRegardedPension;
+  public Employee dockregardedpension(Boolean dockregardedpension) {
+    this.dockregardedpension = dockregardedpension;
     return this;
   }
 
    /**
-   * Příjemce důchodových dávek z hlediska nesrazitelné sumy [persistentní položka]
-   * @return dockRegardedPension
+   * příjemce důchodových dávek z hlediska nesrazitelné sumy [persistentní položka]
+   * @return dockregardedpension
   **/
-  @ApiModelProperty(example = "null", value = "Příjemce důchodových dávek z hlediska nesrazitelné sumy [persistentní položka]")
-  public Boolean getDockRegardedPension() {
-    return dockRegardedPension;
+  @ApiModelProperty(example = "null", value = "příjemce důchodových dávek z hlediska nesrazitelné sumy [persistentní položka]")
+  public Boolean getDockregardedpension() {
+    return dockregardedpension;
   }
 
-  public void setDockRegardedPension(Boolean dockRegardedPension) {
-    this.dockRegardedPension = dockRegardedPension;
+  public void setDockregardedpension(Boolean dockregardedpension) {
+    this.dockregardedpension = dockregardedpension;
   }
 
-  public Employee dockRegardedPenalty(Boolean dockRegardedPenalty) {
-    this.dockRegardedPenalty = dockRegardedPenalty;
+  public Employee dockregardedpenalty(Boolean dockregardedpenalty) {
+    this.dockregardedpenalty = dockregardedpenalty;
     return this;
   }
 
    /**
-   * Zohlednění pokut při výpočtu srážek [persistentní položka]
-   * @return dockRegardedPenalty
+   * zohlednění pokut při výpočtu srážek [persistentní položka]
+   * @return dockregardedpenalty
   **/
-  @ApiModelProperty(example = "null", value = "Zohlednění pokut při výpočtu srážek [persistentní položka]")
-  public Boolean getDockRegardedPenalty() {
-    return dockRegardedPenalty;
+  @ApiModelProperty(example = "null", value = "zohlednění pokut při výpočtu srážek [persistentní položka]")
+  public Boolean getDockregardedpenalty() {
+    return dockregardedpenalty;
   }
 
-  public void setDockRegardedPenalty(Boolean dockRegardedPenalty) {
-    this.dockRegardedPenalty = dockRegardedPenalty;
+  public void setDockregardedpenalty(Boolean dockregardedpenalty) {
+    this.dockregardedpenalty = dockregardedpenalty;
   }
 
-  public Employee sRFAmountMin(Double sRFAmountMin) {
-    this.sRFAmountMin = sRFAmountMin;
+  public Employee sRfAmountmin(Double sRfAmountmin) {
+    this.sRfAmountmin = sRfAmountmin;
     return this;
   }
 
    /**
-   * Minimální částka PF [persistentní položka]
-   * @return sRFAmountMin
+   * minimální částka pf [persistentní položka]
+   * @return sRfAmountmin
   **/
-  @ApiModelProperty(example = "null", value = "Minimální částka PF [persistentní položka]")
-  public Double getSRFAmountMin() {
-    return sRFAmountMin;
+  @ApiModelProperty(example = "null", value = "minimální částka pf [persistentní položka]")
+  public Double getSRfAmountmin() {
+    return sRfAmountmin;
   }
 
-  public void setSRFAmountMin(Double sRFAmountMin) {
-    this.sRFAmountMin = sRFAmountMin;
+  public void setSRfAmountmin(Double sRfAmountmin) {
+    this.sRfAmountmin = sRfAmountmin;
   }
 
-  public Employee sRFAmountMax(Double sRFAmountMax) {
-    this.sRFAmountMax = sRFAmountMax;
+  public Employee sRfAmountmax(Double sRfAmountmax) {
+    this.sRfAmountmax = sRfAmountmax;
     return this;
   }
 
    /**
-   * Maximální částka PF [persistentní položka]
-   * @return sRFAmountMax
+   * maximální částka pf [persistentní položka]
+   * @return sRfAmountmax
   **/
-  @ApiModelProperty(example = "null", value = "Maximální částka PF [persistentní položka]")
-  public Double getSRFAmountMax() {
-    return sRFAmountMax;
+  @ApiModelProperty(example = "null", value = "maximální částka pf [persistentní položka]")
+  public Double getSRfAmountmax() {
+    return sRfAmountmax;
   }
 
-  public void setSRFAmountMax(Double sRFAmountMax) {
-    this.sRFAmountMax = sRFAmountMax;
+  public void setSRfAmountmax(Double sRfAmountmax) {
+    this.sRfAmountmax = sRfAmountmax;
   }
 
-  public Employee sRFPercentOfSIBase(Double sRFPercentOfSIBase) {
-    this.sRFPercentOfSIBase = sRFPercentOfSIBase;
+  public Employee sRfPercentofsibase(Double sRfPercentofsibase) {
+    this.sRfPercentofsibase = sRfPercentofsibase;
     return this;
   }
 
    /**
-   * Proc. základu SP pro PF [persistentní položka]
-   * @return sRFPercentOfSIBase
+   * proc. základu sp pro pf [persistentní položka]
+   * @return sRfPercentofsibase
   **/
-  @ApiModelProperty(example = "null", value = "Proc. základu SP pro PF [persistentní položka]")
-  public Double getSRFPercentOfSIBase() {
-    return sRFPercentOfSIBase;
+  @ApiModelProperty(example = "null", value = "proc. základu sp pro pf [persistentní položka]")
+  public Double getSRfPercentofsibase() {
+    return sRfPercentofsibase;
   }
 
-  public void setSRFPercentOfSIBase(Double sRFPercentOfSIBase) {
-    this.sRFPercentOfSIBase = sRFPercentOfSIBase;
+  public void setSRfPercentofsibase(Double sRfPercentofsibase) {
+    this.sRfPercentofsibase = sRfPercentofsibase;
   }
 
-  public Employee sRFAccount(String sRFAccount) {
-    this.sRFAccount = sRFAccount;
+  public Employee sRfAccount(String sRfAccount) {
+    this.sRfAccount = sRfAccount;
     return this;
   }
 
    /**
-   * Číslo účtu PF [persistentní položka]
-   * @return sRFAccount
+   * Číslo účtu pf [persistentní položka]
+   * @return sRfAccount
   **/
-  @ApiModelProperty(example = "null", value = "Číslo účtu PF [persistentní položka]")
-  public String getSRFAccount() {
-    return sRFAccount;
+  @ApiModelProperty(example = "null", value = "Číslo účtu pf [persistentní položka]")
+  public String getSRfAccount() {
+    return sRfAccount;
   }
 
-  public void setSRFAccount(String sRFAccount) {
-    this.sRFAccount = sRFAccount;
+  public void setSRfAccount(String sRfAccount) {
+    this.sRfAccount = sRfAccount;
   }
 
-  public Employee sRFVarSymbol(String sRFVarSymbol) {
-    this.sRFVarSymbol = sRFVarSymbol;
+  public Employee sRfVarsymbol(String sRfVarsymbol) {
+    this.sRfVarsymbol = sRfVarsymbol;
     return this;
   }
 
    /**
-   * Var. symbol PF [persistentní položka]
-   * @return sRFVarSymbol
+   * var. symbol pf [persistentní položka]
+   * @return sRfVarsymbol
   **/
-  @ApiModelProperty(example = "null", value = "Var. symbol PF [persistentní položka]")
-  public String getSRFVarSymbol() {
-    return sRFVarSymbol;
+  @ApiModelProperty(example = "null", value = "var. symbol pf [persistentní položka]")
+  public String getSRfVarsymbol() {
+    return sRfVarsymbol;
   }
 
-  public void setSRFVarSymbol(String sRFVarSymbol) {
-    this.sRFVarSymbol = sRFVarSymbol;
+  public void setSRfVarsymbol(String sRfVarsymbol) {
+    this.sRfVarsymbol = sRfVarsymbol;
   }
 
-  public Employee sRFConstSymbolID(String sRFConstSymbolID) {
-    this.sRFConstSymbolID = sRFConstSymbolID;
+  public Employee sRfConstsymbolId(String sRfConstsymbolId) {
+    this.sRfConstsymbolId = sRfConstsymbolId;
     return this;
   }
 
    /**
-   * Konst. symbol PF; ID objektu Konstantní symbol [persistentní položka]
-   * @return sRFConstSymbolID
+   * konst. symbol pf; id objektu konstantní symbol [persistentní položka]
+   * @return sRfConstsymbolId
   **/
-  @ApiModelProperty(example = "null", value = "Konst. symbol PF; ID objektu Konstantní symbol [persistentní položka]")
-  public String getSRFConstSymbolID() {
-    return sRFConstSymbolID;
+  @ApiModelProperty(example = "null", value = "konst. symbol pf; id objektu konstantní symbol [persistentní položka]")
+  public String getSRfConstsymbolId() {
+    return sRfConstsymbolId;
   }
 
-  public void setSRFConstSymbolID(String sRFConstSymbolID) {
-    this.sRFConstSymbolID = sRFConstSymbolID;
+  public void setSRfConstsymbolId(String sRfConstsymbolId) {
+    this.sRfConstsymbolId = sRfConstsymbolId;
   }
 
-  public Employee sRFSpecSymbol(String sRFSpecSymbol) {
-    this.sRFSpecSymbol = sRFSpecSymbol;
+  public Employee sRfSpecsymbol(String sRfSpecsymbol) {
+    this.sRfSpecsymbol = sRfSpecsymbol;
     return this;
   }
 
    /**
-   * Spec. symbol PF [persistentní položka]
-   * @return sRFSpecSymbol
+   * spec. symbol pf [persistentní položka]
+   * @return sRfSpecsymbol
   **/
-  @ApiModelProperty(example = "null", value = "Spec. symbol PF [persistentní položka]")
-  public String getSRFSpecSymbol() {
-    return sRFSpecSymbol;
+  @ApiModelProperty(example = "null", value = "spec. symbol pf [persistentní položka]")
+  public String getSRfSpecsymbol() {
+    return sRfSpecsymbol;
   }
 
-  public void setSRFSpecSymbol(String sRFSpecSymbol) {
-    this.sRFSpecSymbol = sRFSpecSymbol;
+  public void setSRfSpecsymbol(String sRfSpecsymbol) {
+    this.sRfSpecsymbol = sRfSpecsymbol;
   }
 
-  public Employee sLIAmount(Double sLIAmount) {
-    this.sLIAmount = sLIAmount;
+  public Employee sLiAmount(Double sLiAmount) {
+    this.sLiAmount = sLiAmount;
     return this;
   }
 
    /**
-   * Částka ŽP [persistentní položka]
-   * @return sLIAmount
+   * Částka Žp [persistentní položka]
+   * @return sLiAmount
   **/
-  @ApiModelProperty(example = "null", value = "Částka ŽP [persistentní položka]")
-  public Double getSLIAmount() {
-    return sLIAmount;
+  @ApiModelProperty(example = "null", value = "Částka Žp [persistentní položka]")
+  public Double getSLiAmount() {
+    return sLiAmount;
   }
 
-  public void setSLIAmount(Double sLIAmount) {
-    this.sLIAmount = sLIAmount;
+  public void setSLiAmount(Double sLiAmount) {
+    this.sLiAmount = sLiAmount;
   }
 
-  public Employee sLIAccount(String sLIAccount) {
-    this.sLIAccount = sLIAccount;
+  public Employee sLiAccount(String sLiAccount) {
+    this.sLiAccount = sLiAccount;
     return this;
   }
 
    /**
-   * Číslo účtu ŽP [persistentní položka]
-   * @return sLIAccount
+   * Číslo účtu Žp [persistentní položka]
+   * @return sLiAccount
   **/
-  @ApiModelProperty(example = "null", value = "Číslo účtu ŽP [persistentní položka]")
-  public String getSLIAccount() {
-    return sLIAccount;
+  @ApiModelProperty(example = "null", value = "Číslo účtu Žp [persistentní položka]")
+  public String getSLiAccount() {
+    return sLiAccount;
   }
 
-  public void setSLIAccount(String sLIAccount) {
-    this.sLIAccount = sLIAccount;
+  public void setSLiAccount(String sLiAccount) {
+    this.sLiAccount = sLiAccount;
   }
 
-  public Employee sLIVarSymbol(String sLIVarSymbol) {
-    this.sLIVarSymbol = sLIVarSymbol;
+  public Employee sLiVarsymbol(String sLiVarsymbol) {
+    this.sLiVarsymbol = sLiVarsymbol;
     return this;
   }
 
    /**
-   * Var. symbol ŽP [persistentní položka]
-   * @return sLIVarSymbol
+   * var. symbol Žp [persistentní položka]
+   * @return sLiVarsymbol
   **/
-  @ApiModelProperty(example = "null", value = "Var. symbol ŽP [persistentní položka]")
-  public String getSLIVarSymbol() {
-    return sLIVarSymbol;
+  @ApiModelProperty(example = "null", value = "var. symbol Žp [persistentní položka]")
+  public String getSLiVarsymbol() {
+    return sLiVarsymbol;
   }
 
-  public void setSLIVarSymbol(String sLIVarSymbol) {
-    this.sLIVarSymbol = sLIVarSymbol;
+  public void setSLiVarsymbol(String sLiVarsymbol) {
+    this.sLiVarsymbol = sLiVarsymbol;
   }
 
-  public Employee sLIConstSymbolID(String sLIConstSymbolID) {
-    this.sLIConstSymbolID = sLIConstSymbolID;
+  public Employee sLiConstsymbolId(String sLiConstsymbolId) {
+    this.sLiConstsymbolId = sLiConstsymbolId;
     return this;
   }
 
    /**
-   * Konst. symbol ŽP; ID objektu Konstantní symbol [persistentní položka]
-   * @return sLIConstSymbolID
+   * konst. symbol Žp; id objektu konstantní symbol [persistentní položka]
+   * @return sLiConstsymbolId
   **/
-  @ApiModelProperty(example = "null", value = "Konst. symbol ŽP; ID objektu Konstantní symbol [persistentní položka]")
-  public String getSLIConstSymbolID() {
-    return sLIConstSymbolID;
+  @ApiModelProperty(example = "null", value = "konst. symbol Žp; id objektu konstantní symbol [persistentní položka]")
+  public String getSLiConstsymbolId() {
+    return sLiConstsymbolId;
   }
 
-  public void setSLIConstSymbolID(String sLIConstSymbolID) {
-    this.sLIConstSymbolID = sLIConstSymbolID;
+  public void setSLiConstsymbolId(String sLiConstsymbolId) {
+    this.sLiConstsymbolId = sLiConstsymbolId;
   }
 
-  public Employee sLISpecSymbol(String sLISpecSymbol) {
-    this.sLISpecSymbol = sLISpecSymbol;
+  public Employee sLiSpecsymbol(String sLiSpecsymbol) {
+    this.sLiSpecsymbol = sLiSpecsymbol;
     return this;
   }
 
    /**
-   * Spec. symbol ŽP [persistentní položka]
-   * @return sLISpecSymbol
+   * spec. symbol Žp [persistentní položka]
+   * @return sLiSpecsymbol
   **/
-  @ApiModelProperty(example = "null", value = "Spec. symbol ŽP [persistentní položka]")
-  public String getSLISpecSymbol() {
-    return sLISpecSymbol;
+  @ApiModelProperty(example = "null", value = "spec. symbol Žp [persistentní položka]")
+  public String getSLiSpecsymbol() {
+    return sLiSpecsymbol;
   }
 
-  public void setSLISpecSymbol(String sLISpecSymbol) {
-    this.sLISpecSymbol = sLISpecSymbol;
+  public void setSLiSpecsymbol(String sLiSpecsymbol) {
+    this.sLiSpecsymbol = sLiSpecsymbol;
   }
 
-  public Employee sLICompany(Boolean sLICompany) {
-    this.sLICompany = sLICompany;
+  public Employee sLiCompany(Boolean sLiCompany) {
+    this.sLiCompany = sLiCompany;
     return this;
   }
 
    /**
-   * Příjemce plnění zaměstnavatel [persistentní položka]
-   * @return sLICompany
+   * příjemce plnění zaměstnavatel [persistentní položka]
+   * @return sLiCompany
   **/
-  @ApiModelProperty(example = "null", value = "Příjemce plnění zaměstnavatel [persistentní položka]")
-  public Boolean getSLICompany() {
-    return sLICompany;
+  @ApiModelProperty(example = "null", value = "příjemce plnění zaměstnavatel [persistentní položka]")
+  public Boolean getSLiCompany() {
+    return sLiCompany;
   }
 
-  public void setSLICompany(Boolean sLICompany) {
-    this.sLICompany = sLICompany;
+  public void setSLiCompany(Boolean sLiCompany) {
+    this.sLiCompany = sLiCompany;
   }
 
   public Employee sExposure(Double sExposure) {
@@ -2069,10 +2114,10 @@ public class Employee   {
   }
 
    /**
-   * Hodiny expozice [persistentní položka]
+   * hodiny expozice [persistentní položka]
    * @return sExposure
   **/
-  @ApiModelProperty(example = "null", value = "Hodiny expozice [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "hodiny expozice [persistentní položka]")
   public Double getSExposure() {
     return sExposure;
   }
@@ -2081,346 +2126,346 @@ public class Employee   {
     this.sExposure = sExposure;
   }
 
-  public Employee sMealTicketFullPrice(Double sMealTicketFullPrice) {
-    this.sMealTicketFullPrice = sMealTicketFullPrice;
+  public Employee sMealticketfullprice(Double sMealticketfullprice) {
+    this.sMealticketfullprice = sMealticketfullprice;
     return this;
   }
 
    /**
-   * Plná cena stravenky [persistentní položka]
-   * @return sMealTicketFullPrice
+   * plná cena stravenky [persistentní položka]
+   * @return sMealticketfullprice
   **/
-  @ApiModelProperty(example = "null", value = "Plná cena stravenky [persistentní položka]")
-  public Double getSMealTicketFullPrice() {
-    return sMealTicketFullPrice;
+  @ApiModelProperty(example = "null", value = "plná cena stravenky [persistentní položka]")
+  public Double getSMealticketfullprice() {
+    return sMealticketfullprice;
   }
 
-  public void setSMealTicketFullPrice(Double sMealTicketFullPrice) {
-    this.sMealTicketFullPrice = sMealTicketFullPrice;
+  public void setSMealticketfullprice(Double sMealticketfullprice) {
+    this.sMealticketfullprice = sMealticketfullprice;
   }
 
-  public Employee sMealTicketLowPrice(Double sMealTicketLowPrice) {
-    this.sMealTicketLowPrice = sMealTicketLowPrice;
+  public Employee sMealticketlowprice(Double sMealticketlowprice) {
+    this.sMealticketlowprice = sMealticketlowprice;
     return this;
   }
 
    /**
-   * Snížená cena stravenky [persistentní položka]
-   * @return sMealTicketLowPrice
+   * snížená cena stravenky [persistentní položka]
+   * @return sMealticketlowprice
   **/
-  @ApiModelProperty(example = "null", value = "Snížená cena stravenky [persistentní položka]")
-  public Double getSMealTicketLowPrice() {
-    return sMealTicketLowPrice;
+  @ApiModelProperty(example = "null", value = "snížená cena stravenky [persistentní položka]")
+  public Double getSMealticketlowprice() {
+    return sMealticketlowprice;
   }
 
-  public void setSMealTicketLowPrice(Double sMealTicketLowPrice) {
-    this.sMealTicketLowPrice = sMealTicketLowPrice;
+  public void setSMealticketlowprice(Double sMealticketlowprice) {
+    this.sMealticketlowprice = sMealticketlowprice;
   }
 
-  public Employee sStrangeSocInsNr(String sStrangeSocInsNr) {
-    this.sStrangeSocInsNr = sStrangeSocInsNr;
+  public Employee sStrangesocinsnr(String sStrangesocinsnr) {
+    this.sStrangesocinsnr = sStrangesocinsnr;
     return this;
   }
 
    /**
-   * Nositel cizoz.pojištění-Číslo [persistentní položka]
-   * @return sStrangeSocInsNr
+   * nositel cizoz.pojištění-Číslo [persistentní položka]
+   * @return sStrangesocinsnr
   **/
-  @ApiModelProperty(example = "null", value = "Nositel cizoz.pojištění-Číslo [persistentní položka]")
-  public String getSStrangeSocInsNr() {
-    return sStrangeSocInsNr;
+  @ApiModelProperty(example = "null", value = "nositel cizoz.pojištění-Číslo [persistentní položka]")
+  public String getSStrangesocinsnr() {
+    return sStrangesocinsnr;
   }
 
-  public void setSStrangeSocInsNr(String sStrangeSocInsNr) {
-    this.sStrangeSocInsNr = sStrangeSocInsNr;
+  public void setSStrangesocinsnr(String sStrangesocinsnr) {
+    this.sStrangesocinsnr = sStrangesocinsnr;
   }
 
-  public Employee sStrangeSocInsKeeper(String sStrangeSocInsKeeper) {
-    this.sStrangeSocInsKeeper = sStrangeSocInsKeeper;
+  public Employee sStrangesocinskeeper(String sStrangesocinskeeper) {
+    this.sStrangesocinskeeper = sStrangesocinskeeper;
     return this;
   }
 
    /**
-   * Nositel cizoz.pojištění-Název [persistentní položka]
-   * @return sStrangeSocInsKeeper
+   * nositel cizoz.pojištění-název [persistentní položka]
+   * @return sStrangesocinskeeper
   **/
-  @ApiModelProperty(example = "null", value = "Nositel cizoz.pojištění-Název [persistentní položka]")
-  public String getSStrangeSocInsKeeper() {
-    return sStrangeSocInsKeeper;
+  @ApiModelProperty(example = "null", value = "nositel cizoz.pojištění-název [persistentní položka]")
+  public String getSStrangesocinskeeper() {
+    return sStrangesocinskeeper;
   }
 
-  public void setSStrangeSocInsKeeper(String sStrangeSocInsKeeper) {
-    this.sStrangeSocInsKeeper = sStrangeSocInsKeeper;
+  public void setSStrangesocinskeeper(String sStrangesocinskeeper) {
+    this.sStrangesocinskeeper = sStrangesocinskeeper;
   }
 
-  public Employee sStrangeSocInsAddress(String sStrangeSocInsAddress) {
-    this.sStrangeSocInsAddress = sStrangeSocInsAddress;
+  public Employee sStrangesocinsaddress(String sStrangesocinsaddress) {
+    this.sStrangesocinsaddress = sStrangesocinsaddress;
     return this;
   }
 
    /**
-   * Nositel cizoz.pojištění-Ulice [persistentní položka]
-   * @return sStrangeSocInsAddress
+   * nositel cizoz.pojištění-ulice [persistentní položka]
+   * @return sStrangesocinsaddress
   **/
-  @ApiModelProperty(example = "null", value = "Nositel cizoz.pojištění-Ulice [persistentní položka]")
-  public String getSStrangeSocInsAddress() {
-    return sStrangeSocInsAddress;
+  @ApiModelProperty(example = "null", value = "nositel cizoz.pojištění-ulice [persistentní položka]")
+  public String getSStrangesocinsaddress() {
+    return sStrangesocinsaddress;
   }
 
-  public void setSStrangeSocInsAddress(String sStrangeSocInsAddress) {
-    this.sStrangeSocInsAddress = sStrangeSocInsAddress;
+  public void setSStrangesocinsaddress(String sStrangesocinsaddress) {
+    this.sStrangesocinsaddress = sStrangesocinsaddress;
   }
 
-  public Employee sTaxIdentNumber(String sTaxIdentNumber) {
-    this.sTaxIdentNumber = sTaxIdentNumber;
+  public Employee sTaxidentnumber(String sTaxidentnumber) {
+    this.sTaxidentnumber = sTaxidentnumber;
     return this;
   }
 
    /**
-   * Ident. číslo plátce daně [persistentní položka]
-   * @return sTaxIdentNumber
+   * ident. číslo plátce daně [persistentní položka]
+   * @return sTaxidentnumber
   **/
-  @ApiModelProperty(example = "null", value = "Ident. číslo plátce daně [persistentní položka]")
-  public String getSTaxIdentNumber() {
-    return sTaxIdentNumber;
+  @ApiModelProperty(example = "null", value = "ident. číslo plátce daně [persistentní položka]")
+  public String getSTaxidentnumber() {
+    return sTaxidentnumber;
   }
 
-  public void setSTaxIdentNumber(String sTaxIdentNumber) {
-    this.sTaxIdentNumber = sTaxIdentNumber;
+  public void setSTaxidentnumber(String sTaxidentnumber) {
+    this.sTaxidentnumber = sTaxidentnumber;
   }
 
-  public Employee sTaxNonResident(Boolean sTaxNonResident) {
-    this.sTaxNonResident = sTaxNonResident;
+  public Employee sTaxnonresident(Boolean sTaxnonresident) {
+    this.sTaxnonresident = sTaxnonresident;
     return this;
   }
 
    /**
-   * Daňový nerezident [persistentní položka]
-   * @return sTaxNonResident
+   * daňový nerezident [persistentní položka]
+   * @return sTaxnonresident
   **/
-  @ApiModelProperty(example = "null", value = "Daňový nerezident [persistentní položka]")
-  public Boolean getSTaxNonResident() {
-    return sTaxNonResident;
+  @ApiModelProperty(example = "null", value = "daňový nerezident [persistentní položka]")
+  public Boolean getSTaxnonresident() {
+    return sTaxnonresident;
   }
 
-  public void setSTaxNonResident(Boolean sTaxNonResident) {
-    this.sTaxNonResident = sTaxNonResident;
+  public void setSTaxnonresident(Boolean sTaxnonresident) {
+    this.sTaxnonresident = sTaxnonresident;
   }
 
-  public Employee sRaisedChildren(Integer sRaisedChildren) {
-    this.sRaisedChildren = sRaisedChildren;
+  public Employee sRaisedchildren(Integer sRaisedchildren) {
+    this.sRaisedchildren = sRaisedchildren;
     return this;
   }
 
    /**
-   * Počet vychovaných dětí [persistentní položka]
-   * @return sRaisedChildren
+   * počet vychovaných dětí [persistentní položka]
+   * @return sRaisedchildren
   **/
-  @ApiModelProperty(example = "null", value = "Počet vychovaných dětí [persistentní položka]")
-  public Integer getSRaisedChildren() {
-    return sRaisedChildren;
+  @ApiModelProperty(example = "null", value = "počet vychovaných dětí [persistentní položka]")
+  public Integer getSRaisedchildren() {
+    return sRaisedchildren;
   }
 
-  public void setSRaisedChildren(Integer sRaisedChildren) {
-    this.sRaisedChildren = sRaisedChildren;
+  public void setSRaisedchildren(Integer sRaisedchildren) {
+    this.sRaisedchildren = sRaisedchildren;
   }
 
-  public Employee sStrangeSocInsHouseNr(String sStrangeSocInsHouseNr) {
-    this.sStrangeSocInsHouseNr = sStrangeSocInsHouseNr;
+  public Employee sStrangesocinshousenr(String sStrangesocinshousenr) {
+    this.sStrangesocinshousenr = sStrangesocinshousenr;
     return this;
   }
 
    /**
-   * Nositel cizoz.pojištění-č.p. [persistentní položka]
-   * @return sStrangeSocInsHouseNr
+   * nositel cizoz.pojištění-č.p. [persistentní položka]
+   * @return sStrangesocinshousenr
   **/
-  @ApiModelProperty(example = "null", value = "Nositel cizoz.pojištění-č.p. [persistentní položka]")
-  public String getSStrangeSocInsHouseNr() {
-    return sStrangeSocInsHouseNr;
+  @ApiModelProperty(example = "null", value = "nositel cizoz.pojištění-č.p. [persistentní položka]")
+  public String getSStrangesocinshousenr() {
+    return sStrangesocinshousenr;
   }
 
-  public void setSStrangeSocInsHouseNr(String sStrangeSocInsHouseNr) {
-    this.sStrangeSocInsHouseNr = sStrangeSocInsHouseNr;
+  public void setSStrangesocinshousenr(String sStrangesocinshousenr) {
+    this.sStrangesocinshousenr = sStrangesocinshousenr;
   }
 
-  public Employee sStrangeSocInsPostCode(String sStrangeSocInsPostCode) {
-    this.sStrangeSocInsPostCode = sStrangeSocInsPostCode;
+  public Employee sStrangesocinspostcode(String sStrangesocinspostcode) {
+    this.sStrangesocinspostcode = sStrangesocinspostcode;
     return this;
   }
 
    /**
-   * Nositel cizoz.pojišt.-PostCode [persistentní položka]
-   * @return sStrangeSocInsPostCode
+   * nositel cizoz.pojišt.-postcode [persistentní položka]
+   * @return sStrangesocinspostcode
   **/
-  @ApiModelProperty(example = "null", value = "Nositel cizoz.pojišt.-PostCode [persistentní položka]")
-  public String getSStrangeSocInsPostCode() {
-    return sStrangeSocInsPostCode;
+  @ApiModelProperty(example = "null", value = "nositel cizoz.pojišt.-postcode [persistentní položka]")
+  public String getSStrangesocinspostcode() {
+    return sStrangesocinspostcode;
   }
 
-  public void setSStrangeSocInsPostCode(String sStrangeSocInsPostCode) {
-    this.sStrangeSocInsPostCode = sStrangeSocInsPostCode;
+  public void setSStrangesocinspostcode(String sStrangesocinspostcode) {
+    this.sStrangesocinspostcode = sStrangesocinspostcode;
   }
 
-  public Employee sStrangeSocInsCountry(String sStrangeSocInsCountry) {
-    this.sStrangeSocInsCountry = sStrangeSocInsCountry;
+  public Employee sStrangesocinscountry(String sStrangesocinscountry) {
+    this.sStrangesocinscountry = sStrangesocinscountry;
     return this;
   }
 
    /**
-   * Nositel cizoz.pojištění-Země; ID objektu Země [persistentní položka]
-   * @return sStrangeSocInsCountry
+   * nositel cizoz.pojištění-země; id objektu země [persistentní položka]
+   * @return sStrangesocinscountry
   **/
-  @ApiModelProperty(example = "null", value = "Nositel cizoz.pojištění-Země; ID objektu Země [persistentní položka]")
-  public String getSStrangeSocInsCountry() {
-    return sStrangeSocInsCountry;
+  @ApiModelProperty(example = "null", value = "nositel cizoz.pojištění-země; id objektu země [persistentní položka]")
+  public String getSStrangesocinscountry() {
+    return sStrangesocinscountry;
   }
 
-  public void setSStrangeSocInsCountry(String sStrangeSocInsCountry) {
-    this.sStrangeSocInsCountry = sStrangeSocInsCountry;
+  public void setSStrangesocinscountry(String sStrangesocinscountry) {
+    this.sStrangesocinscountry = sStrangesocinscountry;
   }
 
-  public Employee sStrangeSocInsCity(String sStrangeSocInsCity) {
-    this.sStrangeSocInsCity = sStrangeSocInsCity;
+  public Employee sStrangesocinscity(String sStrangesocinscity) {
+    this.sStrangesocinscity = sStrangesocinscity;
     return this;
   }
 
    /**
-   * Nositel cizoz.pojištění-Obec [persistentní položka]
-   * @return sStrangeSocInsCity
+   * nositel cizoz.pojištění-obec [persistentní položka]
+   * @return sStrangesocinscity
   **/
-  @ApiModelProperty(example = "null", value = "Nositel cizoz.pojištění-Obec [persistentní položka]")
-  public String getSStrangeSocInsCity() {
-    return sStrangeSocInsCity;
+  @ApiModelProperty(example = "null", value = "nositel cizoz.pojištění-obec [persistentní položka]")
+  public String getSStrangesocinscity() {
+    return sStrangesocinscity;
   }
 
-  public void setSStrangeSocInsCity(String sStrangeSocInsCity) {
-    this.sStrangeSocInsCity = sStrangeSocInsCity;
+  public void setSStrangesocinscity(String sStrangesocinscity) {
+    this.sStrangesocinscity = sStrangesocinscity;
   }
 
-  public Employee sDisabilityPensionFrom(DateTime sDisabilityPensionFrom) {
-    this.sDisabilityPensionFrom = sDisabilityPensionFrom;
+  public Employee sDisabilitypensionfrom(DateTime sDisabilitypensionfrom) {
+    this.sDisabilitypensionfrom = sDisabilitypensionfrom;
     return this;
   }
 
    /**
-   * Invalidní důch. od [persistentní položka]
-   * @return sDisabilityPensionFrom
+   * invalidní důch. od [persistentní položka]
+   * @return sDisabilitypensionfrom
   **/
-  @ApiModelProperty(example = "null", value = "Invalidní důch. od [persistentní položka]")
-  public DateTime getSDisabilityPensionFrom() {
-    return sDisabilityPensionFrom;
+  @ApiModelProperty(example = "null", value = "invalidní důch. od [persistentní položka]")
+  public DateTime getSDisabilitypensionfrom() {
+    return sDisabilitypensionfrom;
   }
 
-  public void setSDisabilityPensionFrom(DateTime sDisabilityPensionFrom) {
-    this.sDisabilityPensionFrom = sDisabilityPensionFrom;
+  public void setSDisabilitypensionfrom(DateTime sDisabilitypensionfrom) {
+    this.sDisabilitypensionfrom = sDisabilitypensionfrom;
   }
 
-  public Employee sForeignRetirement(Boolean sForeignRetirement) {
-    this.sForeignRetirement = sForeignRetirement;
+  public Employee sForeignretirement(Boolean sForeignretirement) {
+    this.sForeignretirement = sForeignretirement;
     return this;
   }
 
    /**
-   * Cizí starobní důchod [persistentní položka]
-   * @return sForeignRetirement
+   * cizí starobní důchod [persistentní položka]
+   * @return sForeignretirement
   **/
-  @ApiModelProperty(example = "null", value = "Cizí starobní důchod [persistentní položka]")
-  public Boolean getSForeignRetirement() {
-    return sForeignRetirement;
+  @ApiModelProperty(example = "null", value = "cizí starobní důchod [persistentní položka]")
+  public Boolean getSForeignretirement() {
+    return sForeignretirement;
   }
 
-  public void setSForeignRetirement(Boolean sForeignRetirement) {
-    this.sForeignRetirement = sForeignRetirement;
+  public void setSForeignretirement(Boolean sForeignretirement) {
+    this.sForeignretirement = sForeignretirement;
   }
 
-  public Employee sForeignDisabilityPension(Boolean sForeignDisabilityPension) {
-    this.sForeignDisabilityPension = sForeignDisabilityPension;
+  public Employee sForeigndisabilitypension(Boolean sForeigndisabilitypension) {
+    this.sForeigndisabilitypension = sForeigndisabilitypension;
     return this;
   }
 
    /**
-   * Cizí invalidní důchod [persistentní položka]
-   * @return sForeignDisabilityPension
+   * cizí invalidní důchod [persistentní položka]
+   * @return sForeigndisabilitypension
   **/
-  @ApiModelProperty(example = "null", value = "Cizí invalidní důchod [persistentní položka]")
-  public Boolean getSForeignDisabilityPension() {
-    return sForeignDisabilityPension;
+  @ApiModelProperty(example = "null", value = "cizí invalidní důchod [persistentní položka]")
+  public Boolean getSForeigndisabilitypension() {
+    return sForeigndisabilitypension;
   }
 
-  public void setSForeignDisabilityPension(Boolean sForeignDisabilityPension) {
-    this.sForeignDisabilityPension = sForeignDisabilityPension;
+  public void setSForeigndisabilitypension(Boolean sForeigndisabilitypension) {
+    this.sForeigndisabilitypension = sForeigndisabilitypension;
   }
 
-  public Employee sIsDisabled(Boolean sIsDisabled) {
-    this.sIsDisabled = sIsDisabled;
+  public Employee sIsdisabled(Boolean sIsdisabled) {
+    this.sIsdisabled = sIsdisabled;
     return this;
   }
 
    /**
-   * Zdravotně postižený [persistentní položka]
-   * @return sIsDisabled
+   * zdravotně postižený [persistentní položka]
+   * @return sIsdisabled
   **/
-  @ApiModelProperty(example = "null", value = "Zdravotně postižený [persistentní položka]")
-  public Boolean getSIsDisabled() {
-    return sIsDisabled;
+  @ApiModelProperty(example = "null", value = "zdravotně postižený [persistentní položka]")
+  public Boolean getSIsdisabled() {
+    return sIsdisabled;
   }
 
-  public void setSIsDisabled(Boolean sIsDisabled) {
-    this.sIsDisabled = sIsDisabled;
+  public void setSIsdisabled(Boolean sIsdisabled) {
+    this.sIsdisabled = sIsdisabled;
   }
 
-  public Employee sDisabilityPensionType(Integer sDisabilityPensionType) {
-    this.sDisabilityPensionType = sDisabilityPensionType;
+  public Employee sDisabilitypensiontype(Integer sDisabilitypensiontype) {
+    this.sDisabilitypensiontype = sDisabilitypensiontype;
     return this;
   }
 
    /**
-   * Stupeň invalidity [persistentní položka]
-   * @return sDisabilityPensionType
+   * stupeň invalidity [persistentní položka]
+   * @return sDisabilitypensiontype
   **/
-  @ApiModelProperty(example = "null", value = "Stupeň invalidity [persistentní položka]")
-  public Integer getSDisabilityPensionType() {
-    return sDisabilityPensionType;
+  @ApiModelProperty(example = "null", value = "stupeň invalidity [persistentní položka]")
+  public Integer getSDisabilitypensiontype() {
+    return sDisabilitypensiontype;
   }
 
-  public void setSDisabilityPensionType(Integer sDisabilityPensionType) {
-    this.sDisabilityPensionType = sDisabilityPensionType;
+  public void setSDisabilitypensiontype(Integer sDisabilitypensiontype) {
+    this.sDisabilitypensiontype = sDisabilitypensiontype;
   }
 
-  public Employee sWidowPension(Boolean sWidowPension) {
-    this.sWidowPension = sWidowPension;
+  public Employee sWidowpension(Boolean sWidowpension) {
+    this.sWidowpension = sWidowpension;
     return this;
   }
 
    /**
-   * Vdovský důchod [persistentní položka]
-   * @return sWidowPension
+   * vdovský důchod [persistentní položka]
+   * @return sWidowpension
   **/
-  @ApiModelProperty(example = "null", value = "Vdovský důchod [persistentní položka]")
-  public Boolean getSWidowPension() {
-    return sWidowPension;
+  @ApiModelProperty(example = "null", value = "vdovský důchod [persistentní položka]")
+  public Boolean getSWidowpension() {
+    return sWidowpension;
   }
 
-  public void setSWidowPension(Boolean sWidowPension) {
-    this.sWidowPension = sWidowPension;
+  public void setSWidowpension(Boolean sWidowpension) {
+    this.sWidowpension = sWidowpension;
   }
 
-  public Employee sOrphanAnnuity(Boolean sOrphanAnnuity) {
-    this.sOrphanAnnuity = sOrphanAnnuity;
+  public Employee sOrphanannuity(Boolean sOrphanannuity) {
+    this.sOrphanannuity = sOrphanannuity;
     return this;
   }
 
    /**
-   * Sirotčí důchod [persistentní položka]
-   * @return sOrphanAnnuity
+   * sirotčí důchod [persistentní položka]
+   * @return sOrphanannuity
   **/
-  @ApiModelProperty(example = "null", value = "Sirotčí důchod [persistentní položka]")
-  public Boolean getSOrphanAnnuity() {
-    return sOrphanAnnuity;
+  @ApiModelProperty(example = "null", value = "sirotčí důchod [persistentní položka]")
+  public Boolean getSOrphanannuity() {
+    return sOrphanannuity;
   }
 
-  public void setSOrphanAnnuity(Boolean sOrphanAnnuity) {
-    this.sOrphanAnnuity = sOrphanAnnuity;
+  public void setSOrphanannuity(Boolean sOrphanannuity) {
+    this.sOrphanannuity = sOrphanannuity;
   }
 
   public Employee sStudent(Boolean sStudent) {
@@ -2429,10 +2474,10 @@ public class Employee   {
   }
 
    /**
-   * Student [persistentní položka]
+   * student [persistentní položka]
    * @return sStudent
   **/
-  @ApiModelProperty(example = "null", value = "Student [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "student [persistentní položka]")
   public Boolean getSStudent() {
     return sStudent;
   }
@@ -2441,40 +2486,40 @@ public class Employee   {
     this.sStudent = sStudent;
   }
 
-  public Employee sHINumber(String sHINumber) {
-    this.sHINumber = sHINumber;
+  public Employee sHinumber(String sHinumber) {
+    this.sHinumber = sHinumber;
     return this;
   }
 
    /**
-   * Číslo ZP [persistentní položka]
-   * @return sHINumber
+   * Číslo zp [persistentní položka]
+   * @return sHinumber
   **/
-  @ApiModelProperty(example = "null", value = "Číslo ZP [persistentní položka]")
-  public String getSHINumber() {
-    return sHINumber;
+  @ApiModelProperty(example = "null", value = "Číslo zp [persistentní položka]")
+  public String getSHinumber() {
+    return sHinumber;
   }
 
-  public void setSHINumber(String sHINumber) {
-    this.sHINumber = sHINumber;
+  public void setSHinumber(String sHinumber) {
+    this.sHinumber = sHinumber;
   }
 
-  public Employee sIndividualUndockable(Double sIndividualUndockable) {
-    this.sIndividualUndockable = sIndividualUndockable;
+  public Employee sIndividualundockable(Double sIndividualundockable) {
+    this.sIndividualundockable = sIndividualundockable;
     return this;
   }
 
    /**
-   * Individ.nezabavitelné minimum [persistentní položka]
-   * @return sIndividualUndockable
+   * individ.nezabavitelné minimum [persistentní položka]
+   * @return sIndividualundockable
   **/
-  @ApiModelProperty(example = "null", value = "Individ.nezabavitelné minimum [persistentní položka]")
-  public Double getSIndividualUndockable() {
-    return sIndividualUndockable;
+  @ApiModelProperty(example = "null", value = "individ.nezabavitelné minimum [persistentní položka]")
+  public Double getSIndividualundockable() {
+    return sIndividualundockable;
   }
 
-  public void setSIndividualUndockable(Double sIndividualUndockable) {
-    this.sIndividualUndockable = sIndividualUndockable;
+  public void setSIndividualundockable(Double sIndividualundockable) {
+    this.sIndividualundockable = sIndividualundockable;
   }
 
   public Employee sInsolvency(Boolean sInsolvency) {
@@ -2483,10 +2528,10 @@ public class Employee   {
   }
 
    /**
-   * Zaměstnanec v insolv.řízení [persistentní položka]
+   * zaměstnanec v insolv.řízení [persistentní položka]
    * @return sInsolvency
   **/
-  @ApiModelProperty(example = "null", value = "Zaměstnanec v insolv.řízení [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "zaměstnanec v insolv.řízení [persistentní položka]")
   public Boolean getSInsolvency() {
     return sInsolvency;
   }
@@ -2495,148 +2540,148 @@ public class Employee   {
     this.sInsolvency = sInsolvency;
   }
 
-  public Employee sIndividualUndockableUse(Boolean sIndividualUndockableUse) {
-    this.sIndividualUndockableUse = sIndividualUndockableUse;
+  public Employee sIndividualundockableuse(Boolean sIndividualundockableuse) {
+    this.sIndividualundockableuse = sIndividualundockableuse;
     return this;
   }
 
    /**
-   * Použít individ.nezabav.minimum [persistentní položka]
-   * @return sIndividualUndockableUse
+   * použít individ.nezabav.minimum [persistentní položka]
+   * @return sIndividualundockableuse
   **/
-  @ApiModelProperty(example = "null", value = "Použít individ.nezabav.minimum [persistentní položka]")
-  public Boolean getSIndividualUndockableUse() {
-    return sIndividualUndockableUse;
+  @ApiModelProperty(example = "null", value = "použít individ.nezabav.minimum [persistentní položka]")
+  public Boolean getSIndividualundockableuse() {
+    return sIndividualundockableuse;
   }
 
-  public void setSIndividualUndockableUse(Boolean sIndividualUndockableUse) {
-    this.sIndividualUndockableUse = sIndividualUndockableUse;
+  public void setSIndividualundockableuse(Boolean sIndividualundockableuse) {
+    this.sIndividualundockableuse = sIndividualundockableuse;
   }
 
-  public Employee sCalcRetSavings(Boolean sCalcRetSavings) {
-    this.sCalcRetSavings = sCalcRetSavings;
+  public Employee sCalcretsavings(Boolean sCalcretsavings) {
+    this.sCalcretsavings = sCalcretsavings;
     return this;
   }
 
    /**
-   * Platí důchodové spoření [persistentní položka]
-   * @return sCalcRetSavings
+   * platí důchodové spoření [persistentní položka]
+   * @return sCalcretsavings
   **/
-  @ApiModelProperty(example = "null", value = "Platí důchodové spoření [persistentní položka]")
-  public Boolean getSCalcRetSavings() {
-    return sCalcRetSavings;
+  @ApiModelProperty(example = "null", value = "platí důchodové spoření [persistentní položka]")
+  public Boolean getSCalcretsavings() {
+    return sCalcretsavings;
   }
 
-  public void setSCalcRetSavings(Boolean sCalcRetSavings) {
-    this.sCalcRetSavings = sCalcRetSavings;
+  public void setSCalcretsavings(Boolean sCalcretsavings) {
+    this.sCalcretsavings = sCalcretsavings;
   }
 
-  public Employee sRSNumber(String sRSNumber) {
-    this.sRSNumber = sRSNumber;
+  public Employee sRsnumber(String sRsnumber) {
+    this.sRsnumber = sRsnumber;
     return this;
   }
 
    /**
-   * Číslo DS [persistentní položka]
-   * @return sRSNumber
+   * Číslo ds [persistentní položka]
+   * @return sRsnumber
   **/
-  @ApiModelProperty(example = "null", value = "Číslo DS [persistentní položka]")
-  public String getSRSNumber() {
-    return sRSNumber;
+  @ApiModelProperty(example = "null", value = "Číslo ds [persistentní položka]")
+  public String getSRsnumber() {
+    return sRsnumber;
   }
 
-  public void setSRSNumber(String sRSNumber) {
-    this.sRSNumber = sRSNumber;
+  public void setSRsnumber(String sRsnumber) {
+    this.sRsnumber = sRsnumber;
   }
 
-  public Employee sSocialInsNumber(String sSocialInsNumber) {
-    this.sSocialInsNumber = sSocialInsNumber;
+  public Employee sSocialinsnumber(String sSocialinsnumber) {
+    this.sSocialinsnumber = sSocialinsnumber;
     return this;
   }
 
    /**
-   * Číslo pojištěnce SP [persistentní položka]
-   * @return sSocialInsNumber
+   * Číslo pojištěnce sp [persistentní položka]
+   * @return sSocialinsnumber
   **/
-  @ApiModelProperty(example = "null", value = "Číslo pojištěnce SP [persistentní položka]")
-  public String getSSocialInsNumber() {
-    return sSocialInsNumber;
+  @ApiModelProperty(example = "null", value = "Číslo pojištěnce sp [persistentní položka]")
+  public String getSSocialinsnumber() {
+    return sSocialinsnumber;
   }
 
-  public void setSSocialInsNumber(String sSocialInsNumber) {
-    this.sSocialInsNumber = sSocialInsNumber;
+  public void setSSocialinsnumber(String sSocialinsnumber) {
+    this.sSocialinsnumber = sSocialinsnumber;
   }
 
-  public Employee sLITaxablePart(Double sLITaxablePart) {
-    this.sLITaxablePart = sLITaxablePart;
+  public Employee sLiTaxablepart(Double sLiTaxablepart) {
+    this.sLiTaxablepart = sLiTaxablepart;
     return this;
   }
 
    /**
-   * ŽP - neosvobozená část [persistentní položka]
-   * @return sLITaxablePart
+   * Žp - neosvobozená část [persistentní položka]
+   * @return sLiTaxablepart
   **/
-  @ApiModelProperty(example = "null", value = "ŽP - neosvobozená část [persistentní položka]")
-  public Double getSLITaxablePart() {
-    return sLITaxablePart;
+  @ApiModelProperty(example = "null", value = "Žp - neosvobozená část [persistentní položka]")
+  public Double getSLiTaxablepart() {
+    return sLiTaxablepart;
   }
 
-  public void setSLITaxablePart(Double sLITaxablePart) {
-    this.sLITaxablePart = sLITaxablePart;
+  public void setSLiTaxablepart(Double sLiTaxablepart) {
+    this.sLiTaxablepart = sLiTaxablepart;
   }
 
-  public Employee sTaxResidencyCountryID(String sTaxResidencyCountryID) {
-    this.sTaxResidencyCountryID = sTaxResidencyCountryID;
+  public Employee sTaxresidencycountryId(String sTaxresidencycountryId) {
+    this.sTaxresidencycountryId = sTaxresidencycountryId;
     return this;
   }
 
    /**
-   * Země daňové rezidentury; ID objektu Země [persistentní položka]
-   * @return sTaxResidencyCountryID
+   * země daňové rezidentury; id objektu země [persistentní položka]
+   * @return sTaxresidencycountryId
   **/
-  @ApiModelProperty(example = "null", value = "Země daňové rezidentury; ID objektu Země [persistentní položka]")
-  public String getSTaxResidencyCountryID() {
-    return sTaxResidencyCountryID;
+  @ApiModelProperty(example = "null", value = "země daňové rezidentury; id objektu země [persistentní položka]")
+  public String getSTaxresidencycountryId() {
+    return sTaxresidencycountryId;
   }
 
-  public void setSTaxResidencyCountryID(String sTaxResidencyCountryID) {
-    this.sTaxResidencyCountryID = sTaxResidencyCountryID;
+  public void setSTaxresidencycountryId(String sTaxresidencycountryId) {
+    this.sTaxresidencycountryId = sTaxresidencycountryId;
   }
 
-  public Employee sIdDocumentType(Integer sIdDocumentType) {
-    this.sIdDocumentType = sIdDocumentType;
+  public Employee sIddocumenttype(Integer sIddocumenttype) {
+    this.sIddocumenttype = sIddocumenttype;
     return this;
   }
 
    /**
-   * Typ dokladu [persistentní položka]
-   * @return sIdDocumentType
+   * typ dokladu [persistentní položka]
+   * @return sIddocumenttype
   **/
-  @ApiModelProperty(example = "null", value = "Typ dokladu [persistentní položka]")
-  public Integer getSIdDocumentType() {
-    return sIdDocumentType;
+  @ApiModelProperty(example = "null", value = "typ dokladu [persistentní položka]")
+  public Integer getSIddocumenttype() {
+    return sIddocumenttype;
   }
 
-  public void setSIdDocumentType(Integer sIdDocumentType) {
-    this.sIdDocumentType = sIdDocumentType;
+  public void setSIddocumenttype(Integer sIddocumenttype) {
+    this.sIddocumenttype = sIddocumenttype;
   }
 
-  public Employee sIdDocumentCountryCode(String sIdDocumentCountryCode) {
-    this.sIdDocumentCountryCode = sIdDocumentCountryCode;
+  public Employee sIddocumentcountrycode(String sIddocumentcountrycode) {
+    this.sIddocumentcountrycode = sIddocumentcountrycode;
     return this;
   }
 
    /**
-   * Kód státu dokladu; ID objektu Země [persistentní položka]
-   * @return sIdDocumentCountryCode
+   * kód státu dokladu; id objektu země [persistentní položka]
+   * @return sIddocumentcountrycode
   **/
-  @ApiModelProperty(example = "null", value = "Kód státu dokladu; ID objektu Země [persistentní položka]")
-  public String getSIdDocumentCountryCode() {
-    return sIdDocumentCountryCode;
+  @ApiModelProperty(example = "null", value = "kód státu dokladu; id objektu země [persistentní položka]")
+  public String getSIddocumentcountrycode() {
+    return sIddocumentcountrycode;
   }
 
-  public void setSIdDocumentCountryCode(String sIdDocumentCountryCode) {
-    this.sIdDocumentCountryCode = sIdDocumentCountryCode;
+  public void setSIddocumentcountrycode(String sIddocumentcountrycode) {
+    this.sIddocumentcountrycode = sIddocumentcountrycode;
   }
 
 
@@ -2649,136 +2694,136 @@ public class Employee   {
       return false;
     }
     Employee employee = (Employee) o;
-    return Objects.equals(this.displayName, employee.displayName) &&
-        Objects.equals(this.ID, employee.ID) &&
-        Objects.equals(this.dateOfChange, employee.dateOfChange) &&
-        Objects.equals(this.classID, employee.classID) &&
-        Objects.equals(this.objVersion, employee.objVersion) &&
+    return Objects.equals(this.displayname, employee.displayname) &&
+        Objects.equals(this.id, employee.id) &&
+        Objects.equals(this.dateofchange, employee.dateofchange) &&
+        Objects.equals(this.classid, employee.classid) &&
+        Objects.equals(this.objversion, employee.objversion) &&
         Objects.equals(this.hidden, employee.hidden) &&
-        Objects.equals(this.createdByID, employee.createdByID) &&
-        Objects.equals(this.correctedByID, employee.correctedByID) &&
-        Objects.equals(this.countOffDefinitions, employee.countOffDefinitions) &&
-        Objects.equals(this.consignedAids, employee.consignedAids) &&
-        Objects.equals(this.familyMembers, employee.familyMembers) &&
-        Objects.equals(this.personID, employee.personID) &&
+        Objects.equals(this.createdbyId, employee.createdbyId) &&
+        Objects.equals(this.correctedbyId, employee.correctedbyId) &&
+        Objects.equals(this.countoffdefinitions, employee.countoffdefinitions) &&
+        Objects.equals(this.consignedaids, employee.consignedaids) &&
+        Objects.equals(this.familymembers, employee.familymembers) &&
+        Objects.equals(this.personId, employee.personId) &&
         Objects.equals(this.sex, employee.sex) &&
-        Objects.equals(this.sexText, employee.sexText) &&
-        Objects.equals(this.dateOfBirthDATE, employee.dateOfBirthDATE) &&
-        Objects.equals(this.birthPlace, employee.birthPlace) &&
-        Objects.equals(this.personalNumber, employee.personalNumber) &&
-        Objects.equals(this.numPersonalNumber, employee.numPersonalNumber) &&
-        Objects.equals(this.formerLastname, employee.formerLastname) &&
-        Objects.equals(this.employPatternID, employee.employPatternID) &&
-        Objects.equals(this.pictureID, employee.pictureID) &&
-        Objects.equals(this.drivingLicenceNumber, employee.drivingLicenceNumber) &&
-        Objects.equals(this.drivingLicenceGroups, employee.drivingLicenceGroups) &&
-        Objects.equals(this.temporaryAddressID, employee.temporaryAddressID) &&
-        Objects.equals(this.nationalityID, employee.nationalityID) &&
-        Objects.equals(this.maritalStatus, employee.maritalStatus) &&
-        Objects.equals(this.maritalStatusText, employee.maritalStatusText) &&
-        Objects.equals(this.insuranceCompID, employee.insuranceCompID) &&
-        Objects.equals(this.retirementFrom, employee.retirementFrom) &&
-        Objects.equals(this.taxDeclaration, employee.taxDeclaration) &&
-        Objects.equals(this.hIPaysGoverment, employee.hIPaysGoverment) &&
-        Objects.equals(this.hICountMinimal, employee.hICountMinimal) &&
-        Objects.equals(this.isPartner, employee.isPartner) &&
-        Objects.equals(this.mealTicket, employee.mealTicket) &&
-        Objects.equals(this.dutyCar, employee.dutyCar) &&
-        Objects.equals(this.rentOriginalIncome, employee.rentOriginalIncome) &&
-        Objects.equals(this.rentActualIncome, employee.rentActualIncome) &&
-        Objects.equals(this.toAccount, employee.toAccount) &&
-        Objects.equals(this.bankAccount, employee.bankAccount) &&
-        Objects.equals(this.varSymbol, employee.varSymbol) &&
-        Objects.equals(this.constSymbolID, employee.constSymbolID) &&
-        Objects.equals(this.specSymbol, employee.specSymbol) &&
-        Objects.equals(this.swiftCode, employee.swiftCode) &&
-        Objects.equals(this.currencyID, employee.currencyID) &&
-        Objects.equals(this.currAmount, employee.currAmount) &&
-        Objects.equals(this.currIsPercent, employee.currIsPercent) &&
-        Objects.equals(this.currToAccount, employee.currToAccount) &&
-        Objects.equals(this.currBankAccount, employee.currBankAccount) &&
-        Objects.equals(this.currVarSymbol, employee.currVarSymbol) &&
-        Objects.equals(this.targetBankCountryID, employee.targetBankCountryID) &&
-        Objects.equals(this.currConstSymbolID, employee.currConstSymbolID) &&
-        Objects.equals(this.currSpecSymbol, employee.currSpecSymbol) &&
-        Objects.equals(this.currBankName, employee.currBankName) &&
-        Objects.equals(this.currSwiftCode, employee.currSwiftCode) &&
-        Objects.equals(this.currForeignIssue, employee.currForeignIssue) &&
-        Objects.equals(this.currUrgent, employee.currUrgent) &&
-        Objects.equals(this.fedPersons, employee.fedPersons) &&
-        Objects.equals(this.workAbility, employee.workAbility) &&
-        Objects.equals(this.materialResponsibility, employee.materialResponsibility) &&
-        Objects.equals(this.firstAcces, employee.firstAcces) &&
-        Objects.equals(this.countedIllness, employee.countedIllness) &&
-        Objects.equals(this.countedExperience, employee.countedExperience) &&
-        Objects.equals(this.countedYears, employee.countedYears) &&
-        Objects.equals(this.countedDays, employee.countedDays) &&
-        Objects.equals(this.employeeName, employee.employeeName) &&
-        Objects.equals(this.prefixPersonalNumber, employee.prefixPersonalNumber) &&
-        Objects.equals(this.bodyPersonalNumber, employee.bodyPersonalNumber) &&
-        Objects.equals(this.suffixPersonalNumber, employee.suffixPersonalNumber) &&
-        Objects.equals(this.educationGradeID, employee.educationGradeID) &&
-        Objects.equals(this.educationBranchID, employee.educationBranchID) &&
-        Objects.equals(this.retirementAge, employee.retirementAge) &&
-        Objects.equals(this.hasYoungChild, employee.hasYoungChild) &&
-        Objects.equals(this.habitationCosts, employee.habitationCosts) &&
-        Objects.equals(this.firstAccessToCompany, employee.firstAccessToCompany) &&
-        Objects.equals(this.hIPaysGovernmentTypeID, employee.hIPaysGovernmentTypeID) &&
+        Objects.equals(this.sextext, employee.sextext) &&
+        Objects.equals(this.dateofbirthdate, employee.dateofbirthdate) &&
+        Objects.equals(this.birthplace, employee.birthplace) &&
+        Objects.equals(this.personalnumber, employee.personalnumber) &&
+        Objects.equals(this.numpersonalnumber, employee.numpersonalnumber) &&
+        Objects.equals(this.formerlastname, employee.formerlastname) &&
+        Objects.equals(this.employpatternId, employee.employpatternId) &&
+        Objects.equals(this.pictureId, employee.pictureId) &&
+        Objects.equals(this.drivinglicencenumber, employee.drivinglicencenumber) &&
+        Objects.equals(this.drivinglicencegroups, employee.drivinglicencegroups) &&
+        Objects.equals(this.temporaryaddressId, employee.temporaryaddressId) &&
+        Objects.equals(this.nationalityId, employee.nationalityId) &&
+        Objects.equals(this.maritalstatus, employee.maritalstatus) &&
+        Objects.equals(this.maritalstatustext, employee.maritalstatustext) &&
+        Objects.equals(this.insurancecompId, employee.insurancecompId) &&
+        Objects.equals(this.retirementfrom, employee.retirementfrom) &&
+        Objects.equals(this.taxdeclaration, employee.taxdeclaration) &&
+        Objects.equals(this.hipaysgoverment, employee.hipaysgoverment) &&
+        Objects.equals(this.hicountminimal, employee.hicountminimal) &&
+        Objects.equals(this.ispartner, employee.ispartner) &&
+        Objects.equals(this.mealticket, employee.mealticket) &&
+        Objects.equals(this.dutycar, employee.dutycar) &&
+        Objects.equals(this.rentoriginalincome, employee.rentoriginalincome) &&
+        Objects.equals(this.rentactualincome, employee.rentactualincome) &&
+        Objects.equals(this.toaccount, employee.toaccount) &&
+        Objects.equals(this.bankaccount, employee.bankaccount) &&
+        Objects.equals(this.varsymbol, employee.varsymbol) &&
+        Objects.equals(this.constsymbolId, employee.constsymbolId) &&
+        Objects.equals(this.specsymbol, employee.specsymbol) &&
+        Objects.equals(this.swiftcode, employee.swiftcode) &&
+        Objects.equals(this.currencyId, employee.currencyId) &&
+        Objects.equals(this.curramount, employee.curramount) &&
+        Objects.equals(this.currispercent, employee.currispercent) &&
+        Objects.equals(this.currtoaccount, employee.currtoaccount) &&
+        Objects.equals(this.currbankaccount, employee.currbankaccount) &&
+        Objects.equals(this.currvarsymbol, employee.currvarsymbol) &&
+        Objects.equals(this.targetbankcountryId, employee.targetbankcountryId) &&
+        Objects.equals(this.currconstsymbolId, employee.currconstsymbolId) &&
+        Objects.equals(this.currspecsymbol, employee.currspecsymbol) &&
+        Objects.equals(this.currbankname, employee.currbankname) &&
+        Objects.equals(this.currswiftcode, employee.currswiftcode) &&
+        Objects.equals(this.currforeignissue, employee.currforeignissue) &&
+        Objects.equals(this.currurgent, employee.currurgent) &&
+        Objects.equals(this.fedpersons, employee.fedpersons) &&
+        Objects.equals(this.workability, employee.workability) &&
+        Objects.equals(this.materialresponsibility, employee.materialresponsibility) &&
+        Objects.equals(this.firstacces, employee.firstacces) &&
+        Objects.equals(this.countedillness, employee.countedillness) &&
+        Objects.equals(this.countedexperience, employee.countedexperience) &&
+        Objects.equals(this.countedyears, employee.countedyears) &&
+        Objects.equals(this.counteddays, employee.counteddays) &&
+        Objects.equals(this.employeename, employee.employeename) &&
+        Objects.equals(this.prefixpersonalnumber, employee.prefixpersonalnumber) &&
+        Objects.equals(this.bodypersonalnumber, employee.bodypersonalnumber) &&
+        Objects.equals(this.suffixpersonalnumber, employee.suffixpersonalnumber) &&
+        Objects.equals(this.educationgradeId, employee.educationgradeId) &&
+        Objects.equals(this.educationbranchId, employee.educationbranchId) &&
+        Objects.equals(this.retirementage, employee.retirementage) &&
+        Objects.equals(this.hasyoungchild, employee.hasyoungchild) &&
+        Objects.equals(this.habitationcosts, employee.habitationcosts) &&
+        Objects.equals(this.firstaccesstocompany, employee.firstaccesstocompany) &&
+        Objects.equals(this.hipaysgovernmenttypeId, employee.hipaysgovernmenttypeId) &&
         Objects.equals(this.pictures, employee.pictures) &&
-        Objects.equals(this.notPaySocIns, employee.notPaySocIns) &&
-        Objects.equals(this.notPayHealthIns, employee.notPayHealthIns) &&
-        Objects.equals(this.dockRegardedPension, employee.dockRegardedPension) &&
-        Objects.equals(this.dockRegardedPenalty, employee.dockRegardedPenalty) &&
-        Objects.equals(this.sRFAmountMin, employee.sRFAmountMin) &&
-        Objects.equals(this.sRFAmountMax, employee.sRFAmountMax) &&
-        Objects.equals(this.sRFPercentOfSIBase, employee.sRFPercentOfSIBase) &&
-        Objects.equals(this.sRFAccount, employee.sRFAccount) &&
-        Objects.equals(this.sRFVarSymbol, employee.sRFVarSymbol) &&
-        Objects.equals(this.sRFConstSymbolID, employee.sRFConstSymbolID) &&
-        Objects.equals(this.sRFSpecSymbol, employee.sRFSpecSymbol) &&
-        Objects.equals(this.sLIAmount, employee.sLIAmount) &&
-        Objects.equals(this.sLIAccount, employee.sLIAccount) &&
-        Objects.equals(this.sLIVarSymbol, employee.sLIVarSymbol) &&
-        Objects.equals(this.sLIConstSymbolID, employee.sLIConstSymbolID) &&
-        Objects.equals(this.sLISpecSymbol, employee.sLISpecSymbol) &&
-        Objects.equals(this.sLICompany, employee.sLICompany) &&
+        Objects.equals(this.notpaysocins, employee.notpaysocins) &&
+        Objects.equals(this.notpayhealthins, employee.notpayhealthins) &&
+        Objects.equals(this.dockregardedpension, employee.dockregardedpension) &&
+        Objects.equals(this.dockregardedpenalty, employee.dockregardedpenalty) &&
+        Objects.equals(this.sRfAmountmin, employee.sRfAmountmin) &&
+        Objects.equals(this.sRfAmountmax, employee.sRfAmountmax) &&
+        Objects.equals(this.sRfPercentofsibase, employee.sRfPercentofsibase) &&
+        Objects.equals(this.sRfAccount, employee.sRfAccount) &&
+        Objects.equals(this.sRfVarsymbol, employee.sRfVarsymbol) &&
+        Objects.equals(this.sRfConstsymbolId, employee.sRfConstsymbolId) &&
+        Objects.equals(this.sRfSpecsymbol, employee.sRfSpecsymbol) &&
+        Objects.equals(this.sLiAmount, employee.sLiAmount) &&
+        Objects.equals(this.sLiAccount, employee.sLiAccount) &&
+        Objects.equals(this.sLiVarsymbol, employee.sLiVarsymbol) &&
+        Objects.equals(this.sLiConstsymbolId, employee.sLiConstsymbolId) &&
+        Objects.equals(this.sLiSpecsymbol, employee.sLiSpecsymbol) &&
+        Objects.equals(this.sLiCompany, employee.sLiCompany) &&
         Objects.equals(this.sExposure, employee.sExposure) &&
-        Objects.equals(this.sMealTicketFullPrice, employee.sMealTicketFullPrice) &&
-        Objects.equals(this.sMealTicketLowPrice, employee.sMealTicketLowPrice) &&
-        Objects.equals(this.sStrangeSocInsNr, employee.sStrangeSocInsNr) &&
-        Objects.equals(this.sStrangeSocInsKeeper, employee.sStrangeSocInsKeeper) &&
-        Objects.equals(this.sStrangeSocInsAddress, employee.sStrangeSocInsAddress) &&
-        Objects.equals(this.sTaxIdentNumber, employee.sTaxIdentNumber) &&
-        Objects.equals(this.sTaxNonResident, employee.sTaxNonResident) &&
-        Objects.equals(this.sRaisedChildren, employee.sRaisedChildren) &&
-        Objects.equals(this.sStrangeSocInsHouseNr, employee.sStrangeSocInsHouseNr) &&
-        Objects.equals(this.sStrangeSocInsPostCode, employee.sStrangeSocInsPostCode) &&
-        Objects.equals(this.sStrangeSocInsCountry, employee.sStrangeSocInsCountry) &&
-        Objects.equals(this.sStrangeSocInsCity, employee.sStrangeSocInsCity) &&
-        Objects.equals(this.sDisabilityPensionFrom, employee.sDisabilityPensionFrom) &&
-        Objects.equals(this.sForeignRetirement, employee.sForeignRetirement) &&
-        Objects.equals(this.sForeignDisabilityPension, employee.sForeignDisabilityPension) &&
-        Objects.equals(this.sIsDisabled, employee.sIsDisabled) &&
-        Objects.equals(this.sDisabilityPensionType, employee.sDisabilityPensionType) &&
-        Objects.equals(this.sWidowPension, employee.sWidowPension) &&
-        Objects.equals(this.sOrphanAnnuity, employee.sOrphanAnnuity) &&
+        Objects.equals(this.sMealticketfullprice, employee.sMealticketfullprice) &&
+        Objects.equals(this.sMealticketlowprice, employee.sMealticketlowprice) &&
+        Objects.equals(this.sStrangesocinsnr, employee.sStrangesocinsnr) &&
+        Objects.equals(this.sStrangesocinskeeper, employee.sStrangesocinskeeper) &&
+        Objects.equals(this.sStrangesocinsaddress, employee.sStrangesocinsaddress) &&
+        Objects.equals(this.sTaxidentnumber, employee.sTaxidentnumber) &&
+        Objects.equals(this.sTaxnonresident, employee.sTaxnonresident) &&
+        Objects.equals(this.sRaisedchildren, employee.sRaisedchildren) &&
+        Objects.equals(this.sStrangesocinshousenr, employee.sStrangesocinshousenr) &&
+        Objects.equals(this.sStrangesocinspostcode, employee.sStrangesocinspostcode) &&
+        Objects.equals(this.sStrangesocinscountry, employee.sStrangesocinscountry) &&
+        Objects.equals(this.sStrangesocinscity, employee.sStrangesocinscity) &&
+        Objects.equals(this.sDisabilitypensionfrom, employee.sDisabilitypensionfrom) &&
+        Objects.equals(this.sForeignretirement, employee.sForeignretirement) &&
+        Objects.equals(this.sForeigndisabilitypension, employee.sForeigndisabilitypension) &&
+        Objects.equals(this.sIsdisabled, employee.sIsdisabled) &&
+        Objects.equals(this.sDisabilitypensiontype, employee.sDisabilitypensiontype) &&
+        Objects.equals(this.sWidowpension, employee.sWidowpension) &&
+        Objects.equals(this.sOrphanannuity, employee.sOrphanannuity) &&
         Objects.equals(this.sStudent, employee.sStudent) &&
-        Objects.equals(this.sHINumber, employee.sHINumber) &&
-        Objects.equals(this.sIndividualUndockable, employee.sIndividualUndockable) &&
+        Objects.equals(this.sHinumber, employee.sHinumber) &&
+        Objects.equals(this.sIndividualundockable, employee.sIndividualundockable) &&
         Objects.equals(this.sInsolvency, employee.sInsolvency) &&
-        Objects.equals(this.sIndividualUndockableUse, employee.sIndividualUndockableUse) &&
-        Objects.equals(this.sCalcRetSavings, employee.sCalcRetSavings) &&
-        Objects.equals(this.sRSNumber, employee.sRSNumber) &&
-        Objects.equals(this.sSocialInsNumber, employee.sSocialInsNumber) &&
-        Objects.equals(this.sLITaxablePart, employee.sLITaxablePart) &&
-        Objects.equals(this.sTaxResidencyCountryID, employee.sTaxResidencyCountryID) &&
-        Objects.equals(this.sIdDocumentType, employee.sIdDocumentType) &&
-        Objects.equals(this.sIdDocumentCountryCode, employee.sIdDocumentCountryCode);
+        Objects.equals(this.sIndividualundockableuse, employee.sIndividualundockableuse) &&
+        Objects.equals(this.sCalcretsavings, employee.sCalcretsavings) &&
+        Objects.equals(this.sRsnumber, employee.sRsnumber) &&
+        Objects.equals(this.sSocialinsnumber, employee.sSocialinsnumber) &&
+        Objects.equals(this.sLiTaxablepart, employee.sLiTaxablepart) &&
+        Objects.equals(this.sTaxresidencycountryId, employee.sTaxresidencycountryId) &&
+        Objects.equals(this.sIddocumenttype, employee.sIddocumenttype) &&
+        Objects.equals(this.sIddocumentcountrycode, employee.sIddocumentcountrycode);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, dateOfChange, classID, objVersion, hidden, createdByID, correctedByID, countOffDefinitions, consignedAids, familyMembers, personID, sex, sexText, dateOfBirthDATE, birthPlace, personalNumber, numPersonalNumber, formerLastname, employPatternID, pictureID, drivingLicenceNumber, drivingLicenceGroups, temporaryAddressID, nationalityID, maritalStatus, maritalStatusText, insuranceCompID, retirementFrom, taxDeclaration, hIPaysGoverment, hICountMinimal, isPartner, mealTicket, dutyCar, rentOriginalIncome, rentActualIncome, toAccount, bankAccount, varSymbol, constSymbolID, specSymbol, swiftCode, currencyID, currAmount, currIsPercent, currToAccount, currBankAccount, currVarSymbol, targetBankCountryID, currConstSymbolID, currSpecSymbol, currBankName, currSwiftCode, currForeignIssue, currUrgent, fedPersons, workAbility, materialResponsibility, firstAcces, countedIllness, countedExperience, countedYears, countedDays, employeeName, prefixPersonalNumber, bodyPersonalNumber, suffixPersonalNumber, educationGradeID, educationBranchID, retirementAge, hasYoungChild, habitationCosts, firstAccessToCompany, hIPaysGovernmentTypeID, pictures, notPaySocIns, notPayHealthIns, dockRegardedPension, dockRegardedPenalty, sRFAmountMin, sRFAmountMax, sRFPercentOfSIBase, sRFAccount, sRFVarSymbol, sRFConstSymbolID, sRFSpecSymbol, sLIAmount, sLIAccount, sLIVarSymbol, sLIConstSymbolID, sLISpecSymbol, sLICompany, sExposure, sMealTicketFullPrice, sMealTicketLowPrice, sStrangeSocInsNr, sStrangeSocInsKeeper, sStrangeSocInsAddress, sTaxIdentNumber, sTaxNonResident, sRaisedChildren, sStrangeSocInsHouseNr, sStrangeSocInsPostCode, sStrangeSocInsCountry, sStrangeSocInsCity, sDisabilityPensionFrom, sForeignRetirement, sForeignDisabilityPension, sIsDisabled, sDisabilityPensionType, sWidowPension, sOrphanAnnuity, sStudent, sHINumber, sIndividualUndockable, sInsolvency, sIndividualUndockableUse, sCalcRetSavings, sRSNumber, sSocialInsNumber, sLITaxablePart, sTaxResidencyCountryID, sIdDocumentType, sIdDocumentCountryCode);
+    return Objects.hash(displayname, id, dateofchange, classid, objversion, hidden, createdbyId, correctedbyId, countoffdefinitions, consignedaids, familymembers, personId, sex, sextext, dateofbirthdate, birthplace, personalnumber, numpersonalnumber, formerlastname, employpatternId, pictureId, drivinglicencenumber, drivinglicencegroups, temporaryaddressId, nationalityId, maritalstatus, maritalstatustext, insurancecompId, retirementfrom, taxdeclaration, hipaysgoverment, hicountminimal, ispartner, mealticket, dutycar, rentoriginalincome, rentactualincome, toaccount, bankaccount, varsymbol, constsymbolId, specsymbol, swiftcode, currencyId, curramount, currispercent, currtoaccount, currbankaccount, currvarsymbol, targetbankcountryId, currconstsymbolId, currspecsymbol, currbankname, currswiftcode, currforeignissue, currurgent, fedpersons, workability, materialresponsibility, firstacces, countedillness, countedexperience, countedyears, counteddays, employeename, prefixpersonalnumber, bodypersonalnumber, suffixpersonalnumber, educationgradeId, educationbranchId, retirementage, hasyoungchild, habitationcosts, firstaccesstocompany, hipaysgovernmenttypeId, pictures, notpaysocins, notpayhealthins, dockregardedpension, dockregardedpenalty, sRfAmountmin, sRfAmountmax, sRfPercentofsibase, sRfAccount, sRfVarsymbol, sRfConstsymbolId, sRfSpecsymbol, sLiAmount, sLiAccount, sLiVarsymbol, sLiConstsymbolId, sLiSpecsymbol, sLiCompany, sExposure, sMealticketfullprice, sMealticketlowprice, sStrangesocinsnr, sStrangesocinskeeper, sStrangesocinsaddress, sTaxidentnumber, sTaxnonresident, sRaisedchildren, sStrangesocinshousenr, sStrangesocinspostcode, sStrangesocinscountry, sStrangesocinscity, sDisabilitypensionfrom, sForeignretirement, sForeigndisabilitypension, sIsdisabled, sDisabilitypensiontype, sWidowpension, sOrphanannuity, sStudent, sHinumber, sIndividualundockable, sInsolvency, sIndividualundockableuse, sCalcretsavings, sRsnumber, sSocialinsnumber, sLiTaxablepart, sTaxresidencycountryId, sIddocumenttype, sIddocumentcountrycode);
   }
 
   @Override
@@ -2786,131 +2831,131 @@ public class Employee   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Employee {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    dateOfChange: ").append(toIndentedString(dateOfChange)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    dateofchange: ").append(toIndentedString(dateofchange)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    countOffDefinitions: ").append(toIndentedString(countOffDefinitions)).append("\n");
-    sb.append("    consignedAids: ").append(toIndentedString(consignedAids)).append("\n");
-    sb.append("    familyMembers: ").append(toIndentedString(familyMembers)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    countoffdefinitions: ").append(toIndentedString(countoffdefinitions)).append("\n");
+    sb.append("    consignedaids: ").append(toIndentedString(consignedaids)).append("\n");
+    sb.append("    familymembers: ").append(toIndentedString(familymembers)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
     sb.append("    sex: ").append(toIndentedString(sex)).append("\n");
-    sb.append("    sexText: ").append(toIndentedString(sexText)).append("\n");
-    sb.append("    dateOfBirthDATE: ").append(toIndentedString(dateOfBirthDATE)).append("\n");
-    sb.append("    birthPlace: ").append(toIndentedString(birthPlace)).append("\n");
-    sb.append("    personalNumber: ").append(toIndentedString(personalNumber)).append("\n");
-    sb.append("    numPersonalNumber: ").append(toIndentedString(numPersonalNumber)).append("\n");
-    sb.append("    formerLastname: ").append(toIndentedString(formerLastname)).append("\n");
-    sb.append("    employPatternID: ").append(toIndentedString(employPatternID)).append("\n");
-    sb.append("    pictureID: ").append(toIndentedString(pictureID)).append("\n");
-    sb.append("    drivingLicenceNumber: ").append(toIndentedString(drivingLicenceNumber)).append("\n");
-    sb.append("    drivingLicenceGroups: ").append(toIndentedString(drivingLicenceGroups)).append("\n");
-    sb.append("    temporaryAddressID: ").append(toIndentedString(temporaryAddressID)).append("\n");
-    sb.append("    nationalityID: ").append(toIndentedString(nationalityID)).append("\n");
-    sb.append("    maritalStatus: ").append(toIndentedString(maritalStatus)).append("\n");
-    sb.append("    maritalStatusText: ").append(toIndentedString(maritalStatusText)).append("\n");
-    sb.append("    insuranceCompID: ").append(toIndentedString(insuranceCompID)).append("\n");
-    sb.append("    retirementFrom: ").append(toIndentedString(retirementFrom)).append("\n");
-    sb.append("    taxDeclaration: ").append(toIndentedString(taxDeclaration)).append("\n");
-    sb.append("    hIPaysGoverment: ").append(toIndentedString(hIPaysGoverment)).append("\n");
-    sb.append("    hICountMinimal: ").append(toIndentedString(hICountMinimal)).append("\n");
-    sb.append("    isPartner: ").append(toIndentedString(isPartner)).append("\n");
-    sb.append("    mealTicket: ").append(toIndentedString(mealTicket)).append("\n");
-    sb.append("    dutyCar: ").append(toIndentedString(dutyCar)).append("\n");
-    sb.append("    rentOriginalIncome: ").append(toIndentedString(rentOriginalIncome)).append("\n");
-    sb.append("    rentActualIncome: ").append(toIndentedString(rentActualIncome)).append("\n");
-    sb.append("    toAccount: ").append(toIndentedString(toAccount)).append("\n");
-    sb.append("    bankAccount: ").append(toIndentedString(bankAccount)).append("\n");
-    sb.append("    varSymbol: ").append(toIndentedString(varSymbol)).append("\n");
-    sb.append("    constSymbolID: ").append(toIndentedString(constSymbolID)).append("\n");
-    sb.append("    specSymbol: ").append(toIndentedString(specSymbol)).append("\n");
-    sb.append("    swiftCode: ").append(toIndentedString(swiftCode)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    currAmount: ").append(toIndentedString(currAmount)).append("\n");
-    sb.append("    currIsPercent: ").append(toIndentedString(currIsPercent)).append("\n");
-    sb.append("    currToAccount: ").append(toIndentedString(currToAccount)).append("\n");
-    sb.append("    currBankAccount: ").append(toIndentedString(currBankAccount)).append("\n");
-    sb.append("    currVarSymbol: ").append(toIndentedString(currVarSymbol)).append("\n");
-    sb.append("    targetBankCountryID: ").append(toIndentedString(targetBankCountryID)).append("\n");
-    sb.append("    currConstSymbolID: ").append(toIndentedString(currConstSymbolID)).append("\n");
-    sb.append("    currSpecSymbol: ").append(toIndentedString(currSpecSymbol)).append("\n");
-    sb.append("    currBankName: ").append(toIndentedString(currBankName)).append("\n");
-    sb.append("    currSwiftCode: ").append(toIndentedString(currSwiftCode)).append("\n");
-    sb.append("    currForeignIssue: ").append(toIndentedString(currForeignIssue)).append("\n");
-    sb.append("    currUrgent: ").append(toIndentedString(currUrgent)).append("\n");
-    sb.append("    fedPersons: ").append(toIndentedString(fedPersons)).append("\n");
-    sb.append("    workAbility: ").append(toIndentedString(workAbility)).append("\n");
-    sb.append("    materialResponsibility: ").append(toIndentedString(materialResponsibility)).append("\n");
-    sb.append("    firstAcces: ").append(toIndentedString(firstAcces)).append("\n");
-    sb.append("    countedIllness: ").append(toIndentedString(countedIllness)).append("\n");
-    sb.append("    countedExperience: ").append(toIndentedString(countedExperience)).append("\n");
-    sb.append("    countedYears: ").append(toIndentedString(countedYears)).append("\n");
-    sb.append("    countedDays: ").append(toIndentedString(countedDays)).append("\n");
-    sb.append("    employeeName: ").append(toIndentedString(employeeName)).append("\n");
-    sb.append("    prefixPersonalNumber: ").append(toIndentedString(prefixPersonalNumber)).append("\n");
-    sb.append("    bodyPersonalNumber: ").append(toIndentedString(bodyPersonalNumber)).append("\n");
-    sb.append("    suffixPersonalNumber: ").append(toIndentedString(suffixPersonalNumber)).append("\n");
-    sb.append("    educationGradeID: ").append(toIndentedString(educationGradeID)).append("\n");
-    sb.append("    educationBranchID: ").append(toIndentedString(educationBranchID)).append("\n");
-    sb.append("    retirementAge: ").append(toIndentedString(retirementAge)).append("\n");
-    sb.append("    hasYoungChild: ").append(toIndentedString(hasYoungChild)).append("\n");
-    sb.append("    habitationCosts: ").append(toIndentedString(habitationCosts)).append("\n");
-    sb.append("    firstAccessToCompany: ").append(toIndentedString(firstAccessToCompany)).append("\n");
-    sb.append("    hIPaysGovernmentTypeID: ").append(toIndentedString(hIPaysGovernmentTypeID)).append("\n");
+    sb.append("    sextext: ").append(toIndentedString(sextext)).append("\n");
+    sb.append("    dateofbirthdate: ").append(toIndentedString(dateofbirthdate)).append("\n");
+    sb.append("    birthplace: ").append(toIndentedString(birthplace)).append("\n");
+    sb.append("    personalnumber: ").append(toIndentedString(personalnumber)).append("\n");
+    sb.append("    numpersonalnumber: ").append(toIndentedString(numpersonalnumber)).append("\n");
+    sb.append("    formerlastname: ").append(toIndentedString(formerlastname)).append("\n");
+    sb.append("    employpatternId: ").append(toIndentedString(employpatternId)).append("\n");
+    sb.append("    pictureId: ").append(toIndentedString(pictureId)).append("\n");
+    sb.append("    drivinglicencenumber: ").append(toIndentedString(drivinglicencenumber)).append("\n");
+    sb.append("    drivinglicencegroups: ").append(toIndentedString(drivinglicencegroups)).append("\n");
+    sb.append("    temporaryaddressId: ").append(toIndentedString(temporaryaddressId)).append("\n");
+    sb.append("    nationalityId: ").append(toIndentedString(nationalityId)).append("\n");
+    sb.append("    maritalstatus: ").append(toIndentedString(maritalstatus)).append("\n");
+    sb.append("    maritalstatustext: ").append(toIndentedString(maritalstatustext)).append("\n");
+    sb.append("    insurancecompId: ").append(toIndentedString(insurancecompId)).append("\n");
+    sb.append("    retirementfrom: ").append(toIndentedString(retirementfrom)).append("\n");
+    sb.append("    taxdeclaration: ").append(toIndentedString(taxdeclaration)).append("\n");
+    sb.append("    hipaysgoverment: ").append(toIndentedString(hipaysgoverment)).append("\n");
+    sb.append("    hicountminimal: ").append(toIndentedString(hicountminimal)).append("\n");
+    sb.append("    ispartner: ").append(toIndentedString(ispartner)).append("\n");
+    sb.append("    mealticket: ").append(toIndentedString(mealticket)).append("\n");
+    sb.append("    dutycar: ").append(toIndentedString(dutycar)).append("\n");
+    sb.append("    rentoriginalincome: ").append(toIndentedString(rentoriginalincome)).append("\n");
+    sb.append("    rentactualincome: ").append(toIndentedString(rentactualincome)).append("\n");
+    sb.append("    toaccount: ").append(toIndentedString(toaccount)).append("\n");
+    sb.append("    bankaccount: ").append(toIndentedString(bankaccount)).append("\n");
+    sb.append("    varsymbol: ").append(toIndentedString(varsymbol)).append("\n");
+    sb.append("    constsymbolId: ").append(toIndentedString(constsymbolId)).append("\n");
+    sb.append("    specsymbol: ").append(toIndentedString(specsymbol)).append("\n");
+    sb.append("    swiftcode: ").append(toIndentedString(swiftcode)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    curramount: ").append(toIndentedString(curramount)).append("\n");
+    sb.append("    currispercent: ").append(toIndentedString(currispercent)).append("\n");
+    sb.append("    currtoaccount: ").append(toIndentedString(currtoaccount)).append("\n");
+    sb.append("    currbankaccount: ").append(toIndentedString(currbankaccount)).append("\n");
+    sb.append("    currvarsymbol: ").append(toIndentedString(currvarsymbol)).append("\n");
+    sb.append("    targetbankcountryId: ").append(toIndentedString(targetbankcountryId)).append("\n");
+    sb.append("    currconstsymbolId: ").append(toIndentedString(currconstsymbolId)).append("\n");
+    sb.append("    currspecsymbol: ").append(toIndentedString(currspecsymbol)).append("\n");
+    sb.append("    currbankname: ").append(toIndentedString(currbankname)).append("\n");
+    sb.append("    currswiftcode: ").append(toIndentedString(currswiftcode)).append("\n");
+    sb.append("    currforeignissue: ").append(toIndentedString(currforeignissue)).append("\n");
+    sb.append("    currurgent: ").append(toIndentedString(currurgent)).append("\n");
+    sb.append("    fedpersons: ").append(toIndentedString(fedpersons)).append("\n");
+    sb.append("    workability: ").append(toIndentedString(workability)).append("\n");
+    sb.append("    materialresponsibility: ").append(toIndentedString(materialresponsibility)).append("\n");
+    sb.append("    firstacces: ").append(toIndentedString(firstacces)).append("\n");
+    sb.append("    countedillness: ").append(toIndentedString(countedillness)).append("\n");
+    sb.append("    countedexperience: ").append(toIndentedString(countedexperience)).append("\n");
+    sb.append("    countedyears: ").append(toIndentedString(countedyears)).append("\n");
+    sb.append("    counteddays: ").append(toIndentedString(counteddays)).append("\n");
+    sb.append("    employeename: ").append(toIndentedString(employeename)).append("\n");
+    sb.append("    prefixpersonalnumber: ").append(toIndentedString(prefixpersonalnumber)).append("\n");
+    sb.append("    bodypersonalnumber: ").append(toIndentedString(bodypersonalnumber)).append("\n");
+    sb.append("    suffixpersonalnumber: ").append(toIndentedString(suffixpersonalnumber)).append("\n");
+    sb.append("    educationgradeId: ").append(toIndentedString(educationgradeId)).append("\n");
+    sb.append("    educationbranchId: ").append(toIndentedString(educationbranchId)).append("\n");
+    sb.append("    retirementage: ").append(toIndentedString(retirementage)).append("\n");
+    sb.append("    hasyoungchild: ").append(toIndentedString(hasyoungchild)).append("\n");
+    sb.append("    habitationcosts: ").append(toIndentedString(habitationcosts)).append("\n");
+    sb.append("    firstaccesstocompany: ").append(toIndentedString(firstaccesstocompany)).append("\n");
+    sb.append("    hipaysgovernmenttypeId: ").append(toIndentedString(hipaysgovernmenttypeId)).append("\n");
     sb.append("    pictures: ").append(toIndentedString(pictures)).append("\n");
-    sb.append("    notPaySocIns: ").append(toIndentedString(notPaySocIns)).append("\n");
-    sb.append("    notPayHealthIns: ").append(toIndentedString(notPayHealthIns)).append("\n");
-    sb.append("    dockRegardedPension: ").append(toIndentedString(dockRegardedPension)).append("\n");
-    sb.append("    dockRegardedPenalty: ").append(toIndentedString(dockRegardedPenalty)).append("\n");
-    sb.append("    sRFAmountMin: ").append(toIndentedString(sRFAmountMin)).append("\n");
-    sb.append("    sRFAmountMax: ").append(toIndentedString(sRFAmountMax)).append("\n");
-    sb.append("    sRFPercentOfSIBase: ").append(toIndentedString(sRFPercentOfSIBase)).append("\n");
-    sb.append("    sRFAccount: ").append(toIndentedString(sRFAccount)).append("\n");
-    sb.append("    sRFVarSymbol: ").append(toIndentedString(sRFVarSymbol)).append("\n");
-    sb.append("    sRFConstSymbolID: ").append(toIndentedString(sRFConstSymbolID)).append("\n");
-    sb.append("    sRFSpecSymbol: ").append(toIndentedString(sRFSpecSymbol)).append("\n");
-    sb.append("    sLIAmount: ").append(toIndentedString(sLIAmount)).append("\n");
-    sb.append("    sLIAccount: ").append(toIndentedString(sLIAccount)).append("\n");
-    sb.append("    sLIVarSymbol: ").append(toIndentedString(sLIVarSymbol)).append("\n");
-    sb.append("    sLIConstSymbolID: ").append(toIndentedString(sLIConstSymbolID)).append("\n");
-    sb.append("    sLISpecSymbol: ").append(toIndentedString(sLISpecSymbol)).append("\n");
-    sb.append("    sLICompany: ").append(toIndentedString(sLICompany)).append("\n");
+    sb.append("    notpaysocins: ").append(toIndentedString(notpaysocins)).append("\n");
+    sb.append("    notpayhealthins: ").append(toIndentedString(notpayhealthins)).append("\n");
+    sb.append("    dockregardedpension: ").append(toIndentedString(dockregardedpension)).append("\n");
+    sb.append("    dockregardedpenalty: ").append(toIndentedString(dockregardedpenalty)).append("\n");
+    sb.append("    sRfAmountmin: ").append(toIndentedString(sRfAmountmin)).append("\n");
+    sb.append("    sRfAmountmax: ").append(toIndentedString(sRfAmountmax)).append("\n");
+    sb.append("    sRfPercentofsibase: ").append(toIndentedString(sRfPercentofsibase)).append("\n");
+    sb.append("    sRfAccount: ").append(toIndentedString(sRfAccount)).append("\n");
+    sb.append("    sRfVarsymbol: ").append(toIndentedString(sRfVarsymbol)).append("\n");
+    sb.append("    sRfConstsymbolId: ").append(toIndentedString(sRfConstsymbolId)).append("\n");
+    sb.append("    sRfSpecsymbol: ").append(toIndentedString(sRfSpecsymbol)).append("\n");
+    sb.append("    sLiAmount: ").append(toIndentedString(sLiAmount)).append("\n");
+    sb.append("    sLiAccount: ").append(toIndentedString(sLiAccount)).append("\n");
+    sb.append("    sLiVarsymbol: ").append(toIndentedString(sLiVarsymbol)).append("\n");
+    sb.append("    sLiConstsymbolId: ").append(toIndentedString(sLiConstsymbolId)).append("\n");
+    sb.append("    sLiSpecsymbol: ").append(toIndentedString(sLiSpecsymbol)).append("\n");
+    sb.append("    sLiCompany: ").append(toIndentedString(sLiCompany)).append("\n");
     sb.append("    sExposure: ").append(toIndentedString(sExposure)).append("\n");
-    sb.append("    sMealTicketFullPrice: ").append(toIndentedString(sMealTicketFullPrice)).append("\n");
-    sb.append("    sMealTicketLowPrice: ").append(toIndentedString(sMealTicketLowPrice)).append("\n");
-    sb.append("    sStrangeSocInsNr: ").append(toIndentedString(sStrangeSocInsNr)).append("\n");
-    sb.append("    sStrangeSocInsKeeper: ").append(toIndentedString(sStrangeSocInsKeeper)).append("\n");
-    sb.append("    sStrangeSocInsAddress: ").append(toIndentedString(sStrangeSocInsAddress)).append("\n");
-    sb.append("    sTaxIdentNumber: ").append(toIndentedString(sTaxIdentNumber)).append("\n");
-    sb.append("    sTaxNonResident: ").append(toIndentedString(sTaxNonResident)).append("\n");
-    sb.append("    sRaisedChildren: ").append(toIndentedString(sRaisedChildren)).append("\n");
-    sb.append("    sStrangeSocInsHouseNr: ").append(toIndentedString(sStrangeSocInsHouseNr)).append("\n");
-    sb.append("    sStrangeSocInsPostCode: ").append(toIndentedString(sStrangeSocInsPostCode)).append("\n");
-    sb.append("    sStrangeSocInsCountry: ").append(toIndentedString(sStrangeSocInsCountry)).append("\n");
-    sb.append("    sStrangeSocInsCity: ").append(toIndentedString(sStrangeSocInsCity)).append("\n");
-    sb.append("    sDisabilityPensionFrom: ").append(toIndentedString(sDisabilityPensionFrom)).append("\n");
-    sb.append("    sForeignRetirement: ").append(toIndentedString(sForeignRetirement)).append("\n");
-    sb.append("    sForeignDisabilityPension: ").append(toIndentedString(sForeignDisabilityPension)).append("\n");
-    sb.append("    sIsDisabled: ").append(toIndentedString(sIsDisabled)).append("\n");
-    sb.append("    sDisabilityPensionType: ").append(toIndentedString(sDisabilityPensionType)).append("\n");
-    sb.append("    sWidowPension: ").append(toIndentedString(sWidowPension)).append("\n");
-    sb.append("    sOrphanAnnuity: ").append(toIndentedString(sOrphanAnnuity)).append("\n");
+    sb.append("    sMealticketfullprice: ").append(toIndentedString(sMealticketfullprice)).append("\n");
+    sb.append("    sMealticketlowprice: ").append(toIndentedString(sMealticketlowprice)).append("\n");
+    sb.append("    sStrangesocinsnr: ").append(toIndentedString(sStrangesocinsnr)).append("\n");
+    sb.append("    sStrangesocinskeeper: ").append(toIndentedString(sStrangesocinskeeper)).append("\n");
+    sb.append("    sStrangesocinsaddress: ").append(toIndentedString(sStrangesocinsaddress)).append("\n");
+    sb.append("    sTaxidentnumber: ").append(toIndentedString(sTaxidentnumber)).append("\n");
+    sb.append("    sTaxnonresident: ").append(toIndentedString(sTaxnonresident)).append("\n");
+    sb.append("    sRaisedchildren: ").append(toIndentedString(sRaisedchildren)).append("\n");
+    sb.append("    sStrangesocinshousenr: ").append(toIndentedString(sStrangesocinshousenr)).append("\n");
+    sb.append("    sStrangesocinspostcode: ").append(toIndentedString(sStrangesocinspostcode)).append("\n");
+    sb.append("    sStrangesocinscountry: ").append(toIndentedString(sStrangesocinscountry)).append("\n");
+    sb.append("    sStrangesocinscity: ").append(toIndentedString(sStrangesocinscity)).append("\n");
+    sb.append("    sDisabilitypensionfrom: ").append(toIndentedString(sDisabilitypensionfrom)).append("\n");
+    sb.append("    sForeignretirement: ").append(toIndentedString(sForeignretirement)).append("\n");
+    sb.append("    sForeigndisabilitypension: ").append(toIndentedString(sForeigndisabilitypension)).append("\n");
+    sb.append("    sIsdisabled: ").append(toIndentedString(sIsdisabled)).append("\n");
+    sb.append("    sDisabilitypensiontype: ").append(toIndentedString(sDisabilitypensiontype)).append("\n");
+    sb.append("    sWidowpension: ").append(toIndentedString(sWidowpension)).append("\n");
+    sb.append("    sOrphanannuity: ").append(toIndentedString(sOrphanannuity)).append("\n");
     sb.append("    sStudent: ").append(toIndentedString(sStudent)).append("\n");
-    sb.append("    sHINumber: ").append(toIndentedString(sHINumber)).append("\n");
-    sb.append("    sIndividualUndockable: ").append(toIndentedString(sIndividualUndockable)).append("\n");
+    sb.append("    sHinumber: ").append(toIndentedString(sHinumber)).append("\n");
+    sb.append("    sIndividualundockable: ").append(toIndentedString(sIndividualundockable)).append("\n");
     sb.append("    sInsolvency: ").append(toIndentedString(sInsolvency)).append("\n");
-    sb.append("    sIndividualUndockableUse: ").append(toIndentedString(sIndividualUndockableUse)).append("\n");
-    sb.append("    sCalcRetSavings: ").append(toIndentedString(sCalcRetSavings)).append("\n");
-    sb.append("    sRSNumber: ").append(toIndentedString(sRSNumber)).append("\n");
-    sb.append("    sSocialInsNumber: ").append(toIndentedString(sSocialInsNumber)).append("\n");
-    sb.append("    sLITaxablePart: ").append(toIndentedString(sLITaxablePart)).append("\n");
-    sb.append("    sTaxResidencyCountryID: ").append(toIndentedString(sTaxResidencyCountryID)).append("\n");
-    sb.append("    sIdDocumentType: ").append(toIndentedString(sIdDocumentType)).append("\n");
-    sb.append("    sIdDocumentCountryCode: ").append(toIndentedString(sIdDocumentCountryCode)).append("\n");
+    sb.append("    sIndividualundockableuse: ").append(toIndentedString(sIndividualundockableuse)).append("\n");
+    sb.append("    sCalcretsavings: ").append(toIndentedString(sCalcretsavings)).append("\n");
+    sb.append("    sRsnumber: ").append(toIndentedString(sRsnumber)).append("\n");
+    sb.append("    sSocialinsnumber: ").append(toIndentedString(sSocialinsnumber)).append("\n");
+    sb.append("    sLiTaxablepart: ").append(toIndentedString(sLiTaxablepart)).append("\n");
+    sb.append("    sTaxresidencycountryId: ").append(toIndentedString(sTaxresidencycountryId)).append("\n");
+    sb.append("    sIddocumenttype: ").append(toIndentedString(sIddocumenttype)).append("\n");
+    sb.append("    sIddocumentcountrycode: ").append(toIndentedString(sIddocumentcountrycode)).append("\n");
     sb.append("}");
     return sb.toString();
   }

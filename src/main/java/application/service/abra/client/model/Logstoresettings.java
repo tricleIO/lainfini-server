@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,60 +36,96 @@ import java.util.Objects;
 /**
  * Logstoresettings
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Logstoresettings   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Logstoresettingsrow> rows = new ArrayList<Logstoresettingsrow>();
 
-  @SerializedName("ExecutionMode")
-  private Integer executionMode = null;
+  @SerializedName("executionmode")
+  private Integer executionmode = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Logstoresettings displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Logstoresettings id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Logstoresettings classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Logstoresettings objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Logstoresettings rows(List<Logstoresettingsrow> rows) {
@@ -103,10 +139,10 @@ public class Logstoresettings   {
   }
 
    /**
-   * Řádky; kolekce BO Nastavení nasklad./vysklad. z pozic [nepersistentní položka]
+   * Řádky; kolekce bo nastavení nasklad./vysklad. z pozic [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Nastavení nasklad./vysklad. z pozic [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo nastavení nasklad./vysklad. z pozic [nepersistentní položka]")
   public List<Logstoresettingsrow> getRows() {
     return rows;
   }
@@ -115,22 +151,22 @@ public class Logstoresettings   {
     this.rows = rows;
   }
 
-  public Logstoresettings executionMode(Integer executionMode) {
-    this.executionMode = executionMode;
+  public Logstoresettings executionmode(Integer executionmode) {
+    this.executionmode = executionmode;
     return this;
   }
 
    /**
-   * Způsob nastavení dokl. do stavu Provedeno [persistentní položka]
-   * @return executionMode
+   * způsob nastavení dokl. do stavu provedeno [persistentní položka]
+   * @return executionmode
   **/
-  @ApiModelProperty(example = "null", value = "Způsob nastavení dokl. do stavu Provedeno [persistentní položka]")
-  public Integer getExecutionMode() {
-    return executionMode;
+  @ApiModelProperty(example = "null", value = "způsob nastavení dokl. do stavu provedeno [persistentní položka]")
+  public Integer getExecutionmode() {
+    return executionmode;
   }
 
-  public void setExecutionMode(Integer executionMode) {
-    this.executionMode = executionMode;
+  public void setExecutionmode(Integer executionmode) {
+    this.executionmode = executionmode;
   }
 
 
@@ -143,17 +179,17 @@ public class Logstoresettings   {
       return false;
     }
     Logstoresettings logstoresettings = (Logstoresettings) o;
-    return Objects.equals(this.displayName, logstoresettings.displayName) &&
-        Objects.equals(this.ID, logstoresettings.ID) &&
-        Objects.equals(this.classID, logstoresettings.classID) &&
-        Objects.equals(this.objVersion, logstoresettings.objVersion) &&
+    return Objects.equals(this.displayname, logstoresettings.displayname) &&
+        Objects.equals(this.id, logstoresettings.id) &&
+        Objects.equals(this.classid, logstoresettings.classid) &&
+        Objects.equals(this.objversion, logstoresettings.objversion) &&
         Objects.equals(this.rows, logstoresettings.rows) &&
-        Objects.equals(this.executionMode, logstoresettings.executionMode);
+        Objects.equals(this.executionmode, logstoresettings.executionmode);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, executionMode);
+    return Objects.hash(displayname, id, classid, objversion, rows, executionmode);
   }
 
   @Override
@@ -161,12 +197,12 @@ public class Logstoresettings   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Logstoresettings {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    executionMode: ").append(toIndentedString(executionMode)).append("\n");
+    sb.append("    executionmode: ").append(toIndentedString(executionmode)).append("\n");
     sb.append("}");
     return sb.toString();
   }

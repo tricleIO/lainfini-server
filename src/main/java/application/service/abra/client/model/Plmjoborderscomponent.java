@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,99 +35,144 @@ import java.util.Objects;
 /**
  * Plmjoborderscomponent
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmjoborderscomponent   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("InputItem_ID")
-  private String inputItemID = null;
+  @SerializedName("inputitem_id")
+  private String inputitemId = null;
 
-  @SerializedName("Component")
+  @SerializedName("component")
   private String component = null;
 
-  @SerializedName("Component_ID")
-  private String componentID = null;
+  @SerializedName("component_id")
+  private String componentId = null;
 
-  @SerializedName("AssembledAt$DATE")
-  private DateTime assembledAtDATE = null;
+  @SerializedName("assembledat$date")
+  private DateTime assembledatdate = null;
 
-  @SerializedName("AssembledBy_ID")
-  private String assembledByID = null;
+  @SerializedName("assembledby_id")
+  private String assembledbyId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu VP - sériové číslo [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu VP - sériové číslo [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Plmjoborderscomponent inputItemID(String inputItemID) {
-    this.inputItemID = inputItemID;
+  public Plmjoborderscomponent displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Kusovník; ID objektu VP - kusovník [persistentní položka]
-   * @return inputItemID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Kusovník; ID objektu VP - kusovník [persistentní položka]")
-  public String getInputItemID() {
-    return inputItemID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setInputItemID(String inputItemID) {
-    this.inputItemID = inputItemID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Plmjoborderscomponent id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmjoborderscomponent classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmjoborderscomponent objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Plmjoborderscomponent parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu vp - sériové číslo [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu vp - sériové číslo [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Plmjoborderscomponent inputitemId(String inputitemId) {
+    this.inputitemId = inputitemId;
+    return this;
+  }
+
+   /**
+   * kusovník; id objektu vp - kusovník [persistentní položka]
+   * @return inputitemId
+  **/
+  @ApiModelProperty(example = "null", value = "kusovník; id objektu vp - kusovník [persistentní položka]")
+  public String getInputitemId() {
+    return inputitemId;
+  }
+
+  public void setInputitemId(String inputitemId) {
+    this.inputitemId = inputitemId;
   }
 
   public Plmjoborderscomponent component(String component) {
@@ -136,10 +181,10 @@ public class Plmjoborderscomponent   {
   }
 
    /**
-   * Komponenta [persistentní položka]
+   * komponenta [persistentní položka]
    * @return component
   **/
-  @ApiModelProperty(example = "null", value = "Komponenta [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "komponenta [persistentní položka]")
   public String getComponent() {
     return component;
   }
@@ -148,58 +193,58 @@ public class Plmjoborderscomponent   {
     this.component = component;
   }
 
-  public Plmjoborderscomponent componentID(String componentID) {
-    this.componentID = componentID;
+  public Plmjoborderscomponent componentId(String componentId) {
+    this.componentId = componentId;
     return this;
   }
 
    /**
-   * Komponenta; ID objektu Šarže/sériové číslo [persistentní položka]
-   * @return componentID
+   * komponenta; id objektu Šarže/sériové číslo [persistentní položka]
+   * @return componentId
   **/
-  @ApiModelProperty(example = "null", value = "Komponenta; ID objektu Šarže/sériové číslo [persistentní položka]")
-  public String getComponentID() {
-    return componentID;
+  @ApiModelProperty(example = "null", value = "komponenta; id objektu Šarže/sériové číslo [persistentní položka]")
+  public String getComponentId() {
+    return componentId;
   }
 
-  public void setComponentID(String componentID) {
-    this.componentID = componentID;
+  public void setComponentId(String componentId) {
+    this.componentId = componentId;
   }
 
-  public Plmjoborderscomponent assembledAtDATE(DateTime assembledAtDATE) {
-    this.assembledAtDATE = assembledAtDATE;
+  public Plmjoborderscomponent assembledatdate(DateTime assembledatdate) {
+    this.assembledatdate = assembledatdate;
     return this;
   }
 
    /**
-   * Zamontováno [persistentní položka]
-   * @return assembledAtDATE
+   * zamontováno [persistentní položka]
+   * @return assembledatdate
   **/
-  @ApiModelProperty(example = "null", value = "Zamontováno [persistentní položka]")
-  public DateTime getAssembledAtDATE() {
-    return assembledAtDATE;
+  @ApiModelProperty(example = "null", value = "zamontováno [persistentní položka]")
+  public DateTime getAssembledatdate() {
+    return assembledatdate;
   }
 
-  public void setAssembledAtDATE(DateTime assembledAtDATE) {
-    this.assembledAtDATE = assembledAtDATE;
+  public void setAssembledatdate(DateTime assembledatdate) {
+    this.assembledatdate = assembledatdate;
   }
 
-  public Plmjoborderscomponent assembledByID(String assembledByID) {
-    this.assembledByID = assembledByID;
+  public Plmjoborderscomponent assembledbyId(String assembledbyId) {
+    this.assembledbyId = assembledbyId;
     return this;
   }
 
    /**
-   * Zamontoval; ID objektu Pracovník [persistentní položka]
-   * @return assembledByID
+   * zamontoval; id objektu pracovník [persistentní položka]
+   * @return assembledbyId
   **/
-  @ApiModelProperty(example = "null", value = "Zamontoval; ID objektu Pracovník [persistentní položka]")
-  public String getAssembledByID() {
-    return assembledByID;
+  @ApiModelProperty(example = "null", value = "zamontoval; id objektu pracovník [persistentní položka]")
+  public String getAssembledbyId() {
+    return assembledbyId;
   }
 
-  public void setAssembledByID(String assembledByID) {
-    this.assembledByID = assembledByID;
+  public void setAssembledbyId(String assembledbyId) {
+    this.assembledbyId = assembledbyId;
   }
 
 
@@ -212,21 +257,21 @@ public class Plmjoborderscomponent   {
       return false;
     }
     Plmjoborderscomponent plmjoborderscomponent = (Plmjoborderscomponent) o;
-    return Objects.equals(this.displayName, plmjoborderscomponent.displayName) &&
-        Objects.equals(this.ID, plmjoborderscomponent.ID) &&
-        Objects.equals(this.classID, plmjoborderscomponent.classID) &&
-        Objects.equals(this.objVersion, plmjoborderscomponent.objVersion) &&
-        Objects.equals(this.parentID, plmjoborderscomponent.parentID) &&
-        Objects.equals(this.inputItemID, plmjoborderscomponent.inputItemID) &&
+    return Objects.equals(this.displayname, plmjoborderscomponent.displayname) &&
+        Objects.equals(this.id, plmjoborderscomponent.id) &&
+        Objects.equals(this.classid, plmjoborderscomponent.classid) &&
+        Objects.equals(this.objversion, plmjoborderscomponent.objversion) &&
+        Objects.equals(this.parentId, plmjoborderscomponent.parentId) &&
+        Objects.equals(this.inputitemId, plmjoborderscomponent.inputitemId) &&
         Objects.equals(this.component, plmjoborderscomponent.component) &&
-        Objects.equals(this.componentID, plmjoborderscomponent.componentID) &&
-        Objects.equals(this.assembledAtDATE, plmjoborderscomponent.assembledAtDATE) &&
-        Objects.equals(this.assembledByID, plmjoborderscomponent.assembledByID);
+        Objects.equals(this.componentId, plmjoborderscomponent.componentId) &&
+        Objects.equals(this.assembledatdate, plmjoborderscomponent.assembledatdate) &&
+        Objects.equals(this.assembledbyId, plmjoborderscomponent.assembledbyId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, inputItemID, component, componentID, assembledAtDATE, assembledByID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, inputitemId, component, componentId, assembledatdate, assembledbyId);
   }
 
   @Override
@@ -234,16 +279,16 @@ public class Plmjoborderscomponent   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmjoborderscomponent {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    inputItemID: ").append(toIndentedString(inputItemID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    inputitemId: ").append(toIndentedString(inputitemId)).append("\n");
     sb.append("    component: ").append(toIndentedString(component)).append("\n");
-    sb.append("    componentID: ").append(toIndentedString(componentID)).append("\n");
-    sb.append("    assembledAtDATE: ").append(toIndentedString(assembledAtDATE)).append("\n");
-    sb.append("    assembledByID: ").append(toIndentedString(assembledByID)).append("\n");
+    sb.append("    componentId: ").append(toIndentedString(componentId)).append("\n");
+    sb.append("    assembledatdate: ").append(toIndentedString(assembledatdate)).append("\n");
+    sb.append("    assembledbyId: ").append(toIndentedString(assembledbyId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

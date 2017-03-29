@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,117 +36,162 @@ import java.util.Objects;
 /**
  * Plmreqnode
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmreqnode   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Decomposition")
+  @SerializedName("decomposition")
   private Boolean decomposition = null;
 
-  @SerializedName("Issue")
+  @SerializedName("issue")
   private Integer issue = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("Master_ID")
-  private String masterID = null;
+  @SerializedName("master_id")
+  private String masterId = null;
 
-  @SerializedName("OutputItem_ID")
-  private Plmreqnode outputItemID = null;
+  @SerializedName("outputitem_id")
+  private Plmreqnode outputitemId = null;
 
-  @SerializedName("InputItem_ID")
-  private Plmreqnode inputItemID = null;
+  @SerializedName("inputitem_id")
+  private Plmreqnode inputitemId = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Plmreqnode> rows = new ArrayList<Plmreqnode>();
 
-  @SerializedName("TreePath")
-  private String treePath = null;
+  @SerializedName("treepath")
+  private String treepath = null;
 
-  @SerializedName("TreePathHumanReadable")
-  private String treePathHumanReadable = null;
+  @SerializedName("treepathhumanreadable")
+  private String treepathhumanreadable = null;
 
-  @SerializedName("TreeLevel")
-  private Integer treeLevel = null;
+  @SerializedName("treelevel")
+  private Integer treelevel = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Požadavek na výrobu [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Požadavek na výrobu [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Plmreqnode posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Plmreqnode displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pozice [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pozice [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Plmreqnode id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmreqnode classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmreqnode objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Plmreqnode parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu požadavek na výrobu [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu požadavek na výrobu [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Plmreqnode posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pozice [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pozice [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
   public Plmreqnode decomposition(Boolean decomposition) {
@@ -155,10 +200,10 @@ public class Plmreqnode   {
   }
 
    /**
-   * Decomposition [persistentní položka]
+   * decomposition [persistentní položka]
    * @return decomposition
   **/
-  @ApiModelProperty(example = "null", value = "Decomposition [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "decomposition [persistentní položka]")
   public Boolean getDecomposition() {
     return decomposition;
   }
@@ -173,10 +218,10 @@ public class Plmreqnode   {
   }
 
    /**
-   * Typ řádku [persistentní položka]
+   * typ řádku [persistentní položka]
    * @return issue
   **/
-  @ApiModelProperty(example = "null", value = "Typ řádku [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "typ řádku [persistentní položka]")
   public Integer getIssue() {
     return issue;
   }
@@ -185,67 +230,76 @@ public class Plmreqnode   {
     this.issue = issue;
   }
 
-  public Plmreqnode storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Plmreqnode storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * skladová karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
   }
 
-   /**
-   * Nadřízený uzel; ID objektu Uzel stromu požadavku na výrobu [persistentní položka]
-   * @return masterID
-  **/
-  @ApiModelProperty(example = "null", value = "Nadřízený uzel; ID objektu Uzel stromu požadavku na výrobu [persistentní položka]")
-  public String getMasterID() {
-    return masterID;
-  }
-
-  public Plmreqnode outputItemID(Plmreqnode outputItemID) {
-    this.outputItemID = outputItemID;
+  public Plmreqnode masterId(String masterId) {
+    this.masterId = masterId;
     return this;
   }
 
    /**
-   * Get outputItemID
-   * @return outputItemID
+   * nadřízený uzel; id objektu uzel stromu požadavku na výrobu [persistentní položka]
+   * @return masterId
+  **/
+  @ApiModelProperty(example = "null", value = "nadřízený uzel; id objektu uzel stromu požadavku na výrobu [persistentní položka]")
+  public String getMasterId() {
+    return masterId;
+  }
+
+  public void setMasterId(String masterId) {
+    this.masterId = masterId;
+  }
+
+  public Plmreqnode outputitemId(Plmreqnode outputitemId) {
+    this.outputitemId = outputitemId;
+    return this;
+  }
+
+   /**
+   * Get outputitemId
+   * @return outputitemId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Plmreqnode getOutputItemID() {
-    return outputItemID;
+  public Plmreqnode getOutputitemId() {
+    return outputitemId;
   }
 
-  public void setOutputItemID(Plmreqnode outputItemID) {
-    this.outputItemID = outputItemID;
+  public void setOutputitemId(Plmreqnode outputitemId) {
+    this.outputitemId = outputitemId;
   }
 
-  public Plmreqnode inputItemID(Plmreqnode inputItemID) {
-    this.inputItemID = inputItemID;
+  public Plmreqnode inputitemId(Plmreqnode inputitemId) {
+    this.inputitemId = inputitemId;
     return this;
   }
 
    /**
-   * Get inputItemID
-   * @return inputItemID
+   * Get inputitemId
+   * @return inputitemId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Plmreqnode getInputItemID() {
-    return inputItemID;
+  public Plmreqnode getInputitemId() {
+    return inputitemId;
   }
 
-  public void setInputItemID(Plmreqnode inputItemID) {
-    this.inputItemID = inputItemID;
+  public void setInputitemId(Plmreqnode inputitemId) {
+    this.inputitemId = inputitemId;
   }
 
   public Plmreqnode rows(List<Plmreqnode> rows) {
@@ -259,10 +313,10 @@ public class Plmreqnode   {
   }
 
    /**
-   * Řádky; kolekce BO Uzel stromu požadavku na výrobu [nepersistentní položka]
+   * Řádky; kolekce bo uzel stromu požadavku na výrobu [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Uzel stromu požadavku na výrobu [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo uzel stromu požadavku na výrobu [nepersistentní položka]")
   public List<Plmreqnode> getRows() {
     return rows;
   }
@@ -271,31 +325,58 @@ public class Plmreqnode   {
     this.rows = rows;
   }
 
-   /**
-   * Pořadí dle cesty ve stromu
-   * @return treePath
-  **/
-  @ApiModelProperty(example = "null", value = "Pořadí dle cesty ve stromu")
-  public String getTreePath() {
-    return treePath;
+  public Plmreqnode treepath(String treepath) {
+    this.treepath = treepath;
+    return this;
   }
 
    /**
-   * Pořadí dle cesty ve stromu
-   * @return treePathHumanReadable
+   * pořadí dle cesty ve stromu
+   * @return treepath
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí dle cesty ve stromu")
-  public String getTreePathHumanReadable() {
-    return treePathHumanReadable;
+  @ApiModelProperty(example = "null", value = "pořadí dle cesty ve stromu")
+  public String getTreepath() {
+    return treepath;
+  }
+
+  public void setTreepath(String treepath) {
+    this.treepath = treepath;
+  }
+
+  public Plmreqnode treepathhumanreadable(String treepathhumanreadable) {
+    this.treepathhumanreadable = treepathhumanreadable;
+    return this;
+  }
+
+   /**
+   * pořadí dle cesty ve stromu
+   * @return treepathhumanreadable
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí dle cesty ve stromu")
+  public String getTreepathhumanreadable() {
+    return treepathhumanreadable;
+  }
+
+  public void setTreepathhumanreadable(String treepathhumanreadable) {
+    this.treepathhumanreadable = treepathhumanreadable;
+  }
+
+  public Plmreqnode treelevel(Integer treelevel) {
+    this.treelevel = treelevel;
+    return this;
   }
 
    /**
    * Úroveň
-   * @return treeLevel
+   * @return treelevel
   **/
   @ApiModelProperty(example = "null", value = "Úroveň")
-  public Integer getTreeLevel() {
-    return treeLevel;
+  public Integer getTreelevel() {
+    return treelevel;
+  }
+
+  public void setTreelevel(Integer treelevel) {
+    this.treelevel = treelevel;
   }
 
 
@@ -308,27 +389,27 @@ public class Plmreqnode   {
       return false;
     }
     Plmreqnode plmreqnode = (Plmreqnode) o;
-    return Objects.equals(this.displayName, plmreqnode.displayName) &&
-        Objects.equals(this.ID, plmreqnode.ID) &&
-        Objects.equals(this.classID, plmreqnode.classID) &&
-        Objects.equals(this.objVersion, plmreqnode.objVersion) &&
-        Objects.equals(this.parentID, plmreqnode.parentID) &&
-        Objects.equals(this.posIndex, plmreqnode.posIndex) &&
+    return Objects.equals(this.displayname, plmreqnode.displayname) &&
+        Objects.equals(this.id, plmreqnode.id) &&
+        Objects.equals(this.classid, plmreqnode.classid) &&
+        Objects.equals(this.objversion, plmreqnode.objversion) &&
+        Objects.equals(this.parentId, plmreqnode.parentId) &&
+        Objects.equals(this.posindex, plmreqnode.posindex) &&
         Objects.equals(this.decomposition, plmreqnode.decomposition) &&
         Objects.equals(this.issue, plmreqnode.issue) &&
-        Objects.equals(this.storeCardID, plmreqnode.storeCardID) &&
-        Objects.equals(this.masterID, plmreqnode.masterID) &&
-        Objects.equals(this.outputItemID, plmreqnode.outputItemID) &&
-        Objects.equals(this.inputItemID, plmreqnode.inputItemID) &&
+        Objects.equals(this.storecardId, plmreqnode.storecardId) &&
+        Objects.equals(this.masterId, plmreqnode.masterId) &&
+        Objects.equals(this.outputitemId, plmreqnode.outputitemId) &&
+        Objects.equals(this.inputitemId, plmreqnode.inputitemId) &&
         Objects.equals(this.rows, plmreqnode.rows) &&
-        Objects.equals(this.treePath, plmreqnode.treePath) &&
-        Objects.equals(this.treePathHumanReadable, plmreqnode.treePathHumanReadable) &&
-        Objects.equals(this.treeLevel, plmreqnode.treeLevel);
+        Objects.equals(this.treepath, plmreqnode.treepath) &&
+        Objects.equals(this.treepathhumanreadable, plmreqnode.treepathhumanreadable) &&
+        Objects.equals(this.treelevel, plmreqnode.treelevel);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, decomposition, issue, storeCardID, masterID, outputItemID, inputItemID, rows, treePath, treePathHumanReadable, treeLevel);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, decomposition, issue, storecardId, masterId, outputitemId, inputitemId, rows, treepath, treepathhumanreadable, treelevel);
   }
 
   @Override
@@ -336,22 +417,22 @@ public class Plmreqnode   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmreqnode {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
     sb.append("    decomposition: ").append(toIndentedString(decomposition)).append("\n");
     sb.append("    issue: ").append(toIndentedString(issue)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    masterID: ").append(toIndentedString(masterID)).append("\n");
-    sb.append("    outputItemID: ").append(toIndentedString(outputItemID)).append("\n");
-    sb.append("    inputItemID: ").append(toIndentedString(inputItemID)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    masterId: ").append(toIndentedString(masterId)).append("\n");
+    sb.append("    outputitemId: ").append(toIndentedString(outputitemId)).append("\n");
+    sb.append("    inputitemId: ").append(toIndentedString(inputitemId)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    treePath: ").append(toIndentedString(treePath)).append("\n");
-    sb.append("    treePathHumanReadable: ").append(toIndentedString(treePathHumanReadable)).append("\n");
-    sb.append("    treeLevel: ").append(toIndentedString(treeLevel)).append("\n");
+    sb.append("    treepath: ").append(toIndentedString(treepath)).append("\n");
+    sb.append("    treepathhumanreadable: ").append(toIndentedString(treepathhumanreadable)).append("\n");
+    sb.append("    treelevel: ").append(toIndentedString(treelevel)).append("\n");
     sb.append("}");
     return sb.toString();
   }

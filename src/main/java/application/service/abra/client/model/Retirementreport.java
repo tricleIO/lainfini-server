@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,117 +35,153 @@ import java.util.Objects;
 /**
  * Retirementreport
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Retirementreport   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("WorkingRelation_ID")
-  private String workingRelationID = null;
+  @SerializedName("workingrelation_id")
+  private String workingrelationId = null;
 
-  @SerializedName("StateOfDocument")
-  private Integer stateOfDocument = null;
+  @SerializedName("stateofdocument")
+  private Integer stateofdocument = null;
 
-  @SerializedName("StateOfSending")
-  private Integer stateOfSending = null;
+  @SerializedName("stateofsending")
+  private Integer stateofsending = null;
 
-  @SerializedName("DocumentData")
-  private byte[] documentData = null;
+  @SerializedName("documentdata")
+  private byte[] documentdata = null;
 
-  @SerializedName("CalendarYear")
-  private Integer calendarYear = null;
+  @SerializedName("calendaryear")
+  private Integer calendaryear = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("Corrective")
+  @SerializedName("corrective")
   private Boolean corrective = null;
 
-  @SerializedName("PartOfYear")
-  private Boolean partOfYear = null;
+  @SerializedName("partofyear")
+  private Boolean partofyear = null;
 
-  @SerializedName("PartDateFrom$DATE")
-  private DateTime partDateFromDATE = null;
+  @SerializedName("partdatefrom$date")
+  private DateTime partdatefromdate = null;
 
-  @SerializedName("PartDateTo$DATE")
-  private DateTime partDateToDATE = null;
+  @SerializedName("partdateto$date")
+  private DateTime partdatetodate = null;
 
-  @SerializedName("StateOfDocument_Text")
-  private String stateOfDocumentText = null;
+  @SerializedName("stateofdocument_text")
+  private String stateofdocumentText = null;
 
-  @SerializedName("StateOfSending_Text")
-  private String stateOfSendingText = null;
+  @SerializedName("stateofsending_text")
+  private String stateofsendingText = null;
 
-  @SerializedName("Employee_ID")
-  private String employeeID = null;
+  @SerializedName("employee_id")
+  private String employeeId = null;
 
-  @SerializedName("RetirementReportDef_ID")
-  private String retirementReportDefID = null;
+  @SerializedName("retirementreportdef_id")
+  private String retirementreportdefId = null;
 
-  @SerializedName("CommunicationDocument_ID")
-  private String communicationDocumentID = null;
+  @SerializedName("communicationdocument_id")
+  private String communicationdocumentId = null;
 
-  @SerializedName("EmployeeName")
-  private String employeeName = null;
+  @SerializedName("employeename")
+  private String employeename = null;
 
-  @SerializedName("PersonalNumber")
-  private String personalNumber = null;
+  @SerializedName("personalnumber")
+  private String personalnumber = null;
 
-  @SerializedName("PartMonthFrom")
-  private Integer partMonthFrom = null;
+  @SerializedName("partmonthfrom")
+  private Integer partmonthfrom = null;
 
-  @SerializedName("PartMonthTo")
-  private Integer partMonthTo = null;
+  @SerializedName("partmonthto")
+  private Integer partmonthto = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Retirementreport displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Retirementreport id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Retirementreport classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Retirementreport objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Retirementreport description(String description) {
@@ -154,10 +190,10 @@ public class Retirementreport   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -166,130 +202,130 @@ public class Retirementreport   {
     this.description = description;
   }
 
-  public Retirementreport workingRelationID(String workingRelationID) {
-    this.workingRelationID = workingRelationID;
+  public Retirementreport workingrelationId(String workingrelationId) {
+    this.workingrelationId = workingrelationId;
     return this;
   }
 
    /**
-   * Pracovní poměr; ID objektu Pracovní poměr [persistentní položka]
-   * @return workingRelationID
+   * pracovní poměr; id objektu pracovní poměr [persistentní položka]
+   * @return workingrelationId
   **/
-  @ApiModelProperty(example = "null", value = "Pracovní poměr; ID objektu Pracovní poměr [persistentní položka]")
-  public String getWorkingRelationID() {
-    return workingRelationID;
+  @ApiModelProperty(example = "null", value = "pracovní poměr; id objektu pracovní poměr [persistentní položka]")
+  public String getWorkingrelationId() {
+    return workingrelationId;
   }
 
-  public void setWorkingRelationID(String workingRelationID) {
-    this.workingRelationID = workingRelationID;
+  public void setWorkingrelationId(String workingrelationId) {
+    this.workingrelationId = workingrelationId;
   }
 
-  public Retirementreport stateOfDocument(Integer stateOfDocument) {
-    this.stateOfDocument = stateOfDocument;
+  public Retirementreport stateofdocument(Integer stateofdocument) {
+    this.stateofdocument = stateofdocument;
     return this;
   }
 
    /**
-   * Stav zadání [persistentní položka]
-   * @return stateOfDocument
+   * stav zadání [persistentní položka]
+   * @return stateofdocument
   **/
-  @ApiModelProperty(example = "null", value = "Stav zadání [persistentní položka]")
-  public Integer getStateOfDocument() {
-    return stateOfDocument;
+  @ApiModelProperty(example = "null", value = "stav zadání [persistentní položka]")
+  public Integer getStateofdocument() {
+    return stateofdocument;
   }
 
-  public void setStateOfDocument(Integer stateOfDocument) {
-    this.stateOfDocument = stateOfDocument;
+  public void setStateofdocument(Integer stateofdocument) {
+    this.stateofdocument = stateofdocument;
   }
 
-  public Retirementreport stateOfSending(Integer stateOfSending) {
-    this.stateOfSending = stateOfSending;
+  public Retirementreport stateofsending(Integer stateofsending) {
+    this.stateofsending = stateofsending;
     return this;
   }
 
    /**
-   * Stav zpracování [persistentní položka]
-   * @return stateOfSending
+   * stav zpracování [persistentní položka]
+   * @return stateofsending
   **/
-  @ApiModelProperty(example = "null", value = "Stav zpracování [persistentní položka]")
-  public Integer getStateOfSending() {
-    return stateOfSending;
+  @ApiModelProperty(example = "null", value = "stav zpracování [persistentní položka]")
+  public Integer getStateofsending() {
+    return stateofsending;
   }
 
-  public void setStateOfSending(Integer stateOfSending) {
-    this.stateOfSending = stateOfSending;
+  public void setStateofsending(Integer stateofsending) {
+    this.stateofsending = stateofsending;
   }
 
-  public Retirementreport documentData(byte[] documentData) {
-    this.documentData = documentData;
+  public Retirementreport documentdata(byte[] documentdata) {
+    this.documentdata = documentdata;
     return this;
   }
 
    /**
-   * Data dokladu ELDP [persistentní položka]
-   * @return documentData
+   * data dokladu eldp [persistentní položka]
+   * @return documentdata
   **/
-  @ApiModelProperty(example = "null", value = "Data dokladu ELDP [persistentní položka]")
-  public byte[] getDocumentData() {
-    return documentData;
+  @ApiModelProperty(example = "null", value = "data dokladu eldp [persistentní položka]")
+  public byte[] getDocumentdata() {
+    return documentdata;
   }
 
-  public void setDocumentData(byte[] documentData) {
-    this.documentData = documentData;
+  public void setDocumentdata(byte[] documentdata) {
+    this.documentdata = documentdata;
   }
 
-  public Retirementreport calendarYear(Integer calendarYear) {
-    this.calendarYear = calendarYear;
+  public Retirementreport calendaryear(Integer calendaryear) {
+    this.calendaryear = calendaryear;
     return this;
   }
 
    /**
-   * Rok [persistentní položka]
-   * @return calendarYear
+   * rok [persistentní položka]
+   * @return calendaryear
   **/
-  @ApiModelProperty(example = "null", value = "Rok [persistentní položka]")
-  public Integer getCalendarYear() {
-    return calendarYear;
+  @ApiModelProperty(example = "null", value = "rok [persistentní položka]")
+  public Integer getCalendaryear() {
+    return calendaryear;
   }
 
-  public void setCalendarYear(Integer calendarYear) {
-    this.calendarYear = calendarYear;
+  public void setCalendaryear(Integer calendaryear) {
+    this.calendaryear = calendaryear;
   }
 
-  public Retirementreport createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Retirementreport createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Retirementreport correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Retirementreport correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
   public Retirementreport corrective(Boolean corrective) {
@@ -298,10 +334,10 @@ public class Retirementreport   {
   }
 
    /**
-   * Opravný [persistentní položka]
+   * opravný [persistentní položka]
    * @return corrective
   **/
-  @ApiModelProperty(example = "null", value = "Opravný [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "opravný [persistentní položka]")
   public Boolean getCorrective() {
     return corrective;
   }
@@ -310,184 +346,220 @@ public class Retirementreport   {
     this.corrective = corrective;
   }
 
-  public Retirementreport partOfYear(Boolean partOfYear) {
-    this.partOfYear = partOfYear;
+  public Retirementreport partofyear(Boolean partofyear) {
+    this.partofyear = partofyear;
     return this;
   }
 
    /**
-   * Za část roku [persistentní položka]
-   * @return partOfYear
+   * za část roku [persistentní položka]
+   * @return partofyear
   **/
-  @ApiModelProperty(example = "null", value = "Za část roku [persistentní položka]")
-  public Boolean getPartOfYear() {
-    return partOfYear;
+  @ApiModelProperty(example = "null", value = "za část roku [persistentní položka]")
+  public Boolean getPartofyear() {
+    return partofyear;
   }
 
-  public void setPartOfYear(Boolean partOfYear) {
-    this.partOfYear = partOfYear;
+  public void setPartofyear(Boolean partofyear) {
+    this.partofyear = partofyear;
   }
 
-  public Retirementreport partDateFromDATE(DateTime partDateFromDATE) {
-    this.partDateFromDATE = partDateFromDATE;
+  public Retirementreport partdatefromdate(DateTime partdatefromdate) {
+    this.partdatefromdate = partdatefromdate;
     return this;
   }
 
    /**
-   * Datum od [persistentní položka]
-   * @return partDateFromDATE
+   * datum od [persistentní položka]
+   * @return partdatefromdate
   **/
-  @ApiModelProperty(example = "null", value = "Datum od [persistentní položka]")
-  public DateTime getPartDateFromDATE() {
-    return partDateFromDATE;
+  @ApiModelProperty(example = "null", value = "datum od [persistentní položka]")
+  public DateTime getPartdatefromdate() {
+    return partdatefromdate;
   }
 
-  public void setPartDateFromDATE(DateTime partDateFromDATE) {
-    this.partDateFromDATE = partDateFromDATE;
+  public void setPartdatefromdate(DateTime partdatefromdate) {
+    this.partdatefromdate = partdatefromdate;
   }
 
-  public Retirementreport partDateToDATE(DateTime partDateToDATE) {
-    this.partDateToDATE = partDateToDATE;
+  public Retirementreport partdatetodate(DateTime partdatetodate) {
+    this.partdatetodate = partdatetodate;
     return this;
   }
 
    /**
-   * Datum do [persistentní položka]
-   * @return partDateToDATE
+   * datum do [persistentní položka]
+   * @return partdatetodate
   **/
-  @ApiModelProperty(example = "null", value = "Datum do [persistentní položka]")
-  public DateTime getPartDateToDATE() {
-    return partDateToDATE;
+  @ApiModelProperty(example = "null", value = "datum do [persistentní položka]")
+  public DateTime getPartdatetodate() {
+    return partdatetodate;
   }
 
-  public void setPartDateToDATE(DateTime partDateToDATE) {
-    this.partDateToDATE = partDateToDATE;
+  public void setPartdatetodate(DateTime partdatetodate) {
+    this.partdatetodate = partdatetodate;
   }
 
-   /**
-   * Stav zadání
-   * @return stateOfDocumentText
-  **/
-  @ApiModelProperty(example = "null", value = "Stav zadání")
-  public String getStateOfDocumentText() {
-    return stateOfDocumentText;
-  }
-
-   /**
-   * Stav zpracování
-   * @return stateOfSendingText
-  **/
-  @ApiModelProperty(example = "null", value = "Stav zpracování")
-  public String getStateOfSendingText() {
-    return stateOfSendingText;
-  }
-
-  public Retirementreport employeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public Retirementreport stateofdocumentText(String stateofdocumentText) {
+    this.stateofdocumentText = stateofdocumentText;
     return this;
   }
 
    /**
-   * Zaměstnanec; ID objektu Zaměstnanec
-   * @return employeeID
+   * stav zadání
+   * @return stateofdocumentText
   **/
-  @ApiModelProperty(example = "null", value = "Zaměstnanec; ID objektu Zaměstnanec")
-  public String getEmployeeID() {
-    return employeeID;
+  @ApiModelProperty(example = "null", value = "stav zadání")
+  public String getStateofdocumentText() {
+    return stateofdocumentText;
   }
 
-  public void setEmployeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public void setStateofdocumentText(String stateofdocumentText) {
+    this.stateofdocumentText = stateofdocumentText;
   }
 
-  public Retirementreport retirementReportDefID(String retirementReportDefID) {
-    this.retirementReportDefID = retirementReportDefID;
+  public Retirementreport stateofsendingText(String stateofsendingText) {
+    this.stateofsendingText = stateofsendingText;
     return this;
   }
 
    /**
-   * Definice ELDP; ID objektu Definice ELDP
-   * @return retirementReportDefID
+   * stav zpracování
+   * @return stateofsendingText
   **/
-  @ApiModelProperty(example = "null", value = "Definice ELDP; ID objektu Definice ELDP")
-  public String getRetirementReportDefID() {
-    return retirementReportDefID;
+  @ApiModelProperty(example = "null", value = "stav zpracování")
+  public String getStateofsendingText() {
+    return stateofsendingText;
   }
 
-  public void setRetirementReportDefID(String retirementReportDefID) {
-    this.retirementReportDefID = retirementReportDefID;
+  public void setStateofsendingText(String stateofsendingText) {
+    this.stateofsendingText = stateofsendingText;
   }
 
-  public Retirementreport communicationDocumentID(String communicationDocumentID) {
-    this.communicationDocumentID = communicationDocumentID;
+  public Retirementreport employeeId(String employeeId) {
+    this.employeeId = employeeId;
     return this;
   }
 
    /**
-   * Dokument; ID objektu Dokument [persistentní položka]
-   * @return communicationDocumentID
+   * zaměstnanec; id objektu zaměstnanec
+   * @return employeeId
   **/
-  @ApiModelProperty(example = "null", value = "Dokument; ID objektu Dokument [persistentní položka]")
-  public String getCommunicationDocumentID() {
-    return communicationDocumentID;
+  @ApiModelProperty(example = "null", value = "zaměstnanec; id objektu zaměstnanec")
+  public String getEmployeeId() {
+    return employeeId;
   }
 
-  public void setCommunicationDocumentID(String communicationDocumentID) {
-    this.communicationDocumentID = communicationDocumentID;
+  public void setEmployeeId(String employeeId) {
+    this.employeeId = employeeId;
   }
 
-   /**
-   * Příjmení a jméno
-   * @return employeeName
-  **/
-  @ApiModelProperty(example = "null", value = "Příjmení a jméno")
-  public String getEmployeeName() {
-    return employeeName;
-  }
-
-   /**
-   * Osobní číslo
-   * @return personalNumber
-  **/
-  @ApiModelProperty(example = "null", value = "Osobní číslo")
-  public String getPersonalNumber() {
-    return personalNumber;
-  }
-
-  public Retirementreport partMonthFrom(Integer partMonthFrom) {
-    this.partMonthFrom = partMonthFrom;
+  public Retirementreport retirementreportdefId(String retirementreportdefId) {
+    this.retirementreportdefId = retirementreportdefId;
     return this;
   }
 
    /**
-   * Měsíc od
-   * @return partMonthFrom
+   * definice eldp; id objektu definice eldp
+   * @return retirementreportdefId
   **/
-  @ApiModelProperty(example = "null", value = "Měsíc od")
-  public Integer getPartMonthFrom() {
-    return partMonthFrom;
+  @ApiModelProperty(example = "null", value = "definice eldp; id objektu definice eldp")
+  public String getRetirementreportdefId() {
+    return retirementreportdefId;
   }
 
-  public void setPartMonthFrom(Integer partMonthFrom) {
-    this.partMonthFrom = partMonthFrom;
+  public void setRetirementreportdefId(String retirementreportdefId) {
+    this.retirementreportdefId = retirementreportdefId;
   }
 
-  public Retirementreport partMonthTo(Integer partMonthTo) {
-    this.partMonthTo = partMonthTo;
+  public Retirementreport communicationdocumentId(String communicationdocumentId) {
+    this.communicationdocumentId = communicationdocumentId;
     return this;
   }
 
    /**
-   * Měsíc do
-   * @return partMonthTo
+   * dokument; id objektu dokument [persistentní položka]
+   * @return communicationdocumentId
   **/
-  @ApiModelProperty(example = "null", value = "Měsíc do")
-  public Integer getPartMonthTo() {
-    return partMonthTo;
+  @ApiModelProperty(example = "null", value = "dokument; id objektu dokument [persistentní položka]")
+  public String getCommunicationdocumentId() {
+    return communicationdocumentId;
   }
 
-  public void setPartMonthTo(Integer partMonthTo) {
-    this.partMonthTo = partMonthTo;
+  public void setCommunicationdocumentId(String communicationdocumentId) {
+    this.communicationdocumentId = communicationdocumentId;
+  }
+
+  public Retirementreport employeename(String employeename) {
+    this.employeename = employeename;
+    return this;
+  }
+
+   /**
+   * příjmení a jméno
+   * @return employeename
+  **/
+  @ApiModelProperty(example = "null", value = "příjmení a jméno")
+  public String getEmployeename() {
+    return employeename;
+  }
+
+  public void setEmployeename(String employeename) {
+    this.employeename = employeename;
+  }
+
+  public Retirementreport personalnumber(String personalnumber) {
+    this.personalnumber = personalnumber;
+    return this;
+  }
+
+   /**
+   * osobní číslo
+   * @return personalnumber
+  **/
+  @ApiModelProperty(example = "null", value = "osobní číslo")
+  public String getPersonalnumber() {
+    return personalnumber;
+  }
+
+  public void setPersonalnumber(String personalnumber) {
+    this.personalnumber = personalnumber;
+  }
+
+  public Retirementreport partmonthfrom(Integer partmonthfrom) {
+    this.partmonthfrom = partmonthfrom;
+    return this;
+  }
+
+   /**
+   * měsíc od
+   * @return partmonthfrom
+  **/
+  @ApiModelProperty(example = "null", value = "měsíc od")
+  public Integer getPartmonthfrom() {
+    return partmonthfrom;
+  }
+
+  public void setPartmonthfrom(Integer partmonthfrom) {
+    this.partmonthfrom = partmonthfrom;
+  }
+
+  public Retirementreport partmonthto(Integer partmonthto) {
+    this.partmonthto = partmonthto;
+    return this;
+  }
+
+   /**
+   * měsíc do
+   * @return partmonthto
+  **/
+  @ApiModelProperty(example = "null", value = "měsíc do")
+  public Integer getPartmonthto() {
+    return partmonthto;
+  }
+
+  public void setPartmonthto(Integer partmonthto) {
+    this.partmonthto = partmonthto;
   }
 
 
@@ -500,36 +572,36 @@ public class Retirementreport   {
       return false;
     }
     Retirementreport retirementreport = (Retirementreport) o;
-    return Objects.equals(this.displayName, retirementreport.displayName) &&
-        Objects.equals(this.ID, retirementreport.ID) &&
-        Objects.equals(this.classID, retirementreport.classID) &&
-        Objects.equals(this.objVersion, retirementreport.objVersion) &&
+    return Objects.equals(this.displayname, retirementreport.displayname) &&
+        Objects.equals(this.id, retirementreport.id) &&
+        Objects.equals(this.classid, retirementreport.classid) &&
+        Objects.equals(this.objversion, retirementreport.objversion) &&
         Objects.equals(this.description, retirementreport.description) &&
-        Objects.equals(this.workingRelationID, retirementreport.workingRelationID) &&
-        Objects.equals(this.stateOfDocument, retirementreport.stateOfDocument) &&
-        Objects.equals(this.stateOfSending, retirementreport.stateOfSending) &&
-        Objects.equals(this.documentData, retirementreport.documentData) &&
-        Objects.equals(this.calendarYear, retirementreport.calendarYear) &&
-        Objects.equals(this.createdByID, retirementreport.createdByID) &&
-        Objects.equals(this.correctedByID, retirementreport.correctedByID) &&
+        Objects.equals(this.workingrelationId, retirementreport.workingrelationId) &&
+        Objects.equals(this.stateofdocument, retirementreport.stateofdocument) &&
+        Objects.equals(this.stateofsending, retirementreport.stateofsending) &&
+        Objects.equals(this.documentdata, retirementreport.documentdata) &&
+        Objects.equals(this.calendaryear, retirementreport.calendaryear) &&
+        Objects.equals(this.createdbyId, retirementreport.createdbyId) &&
+        Objects.equals(this.correctedbyId, retirementreport.correctedbyId) &&
         Objects.equals(this.corrective, retirementreport.corrective) &&
-        Objects.equals(this.partOfYear, retirementreport.partOfYear) &&
-        Objects.equals(this.partDateFromDATE, retirementreport.partDateFromDATE) &&
-        Objects.equals(this.partDateToDATE, retirementreport.partDateToDATE) &&
-        Objects.equals(this.stateOfDocumentText, retirementreport.stateOfDocumentText) &&
-        Objects.equals(this.stateOfSendingText, retirementreport.stateOfSendingText) &&
-        Objects.equals(this.employeeID, retirementreport.employeeID) &&
-        Objects.equals(this.retirementReportDefID, retirementreport.retirementReportDefID) &&
-        Objects.equals(this.communicationDocumentID, retirementreport.communicationDocumentID) &&
-        Objects.equals(this.employeeName, retirementreport.employeeName) &&
-        Objects.equals(this.personalNumber, retirementreport.personalNumber) &&
-        Objects.equals(this.partMonthFrom, retirementreport.partMonthFrom) &&
-        Objects.equals(this.partMonthTo, retirementreport.partMonthTo);
+        Objects.equals(this.partofyear, retirementreport.partofyear) &&
+        Objects.equals(this.partdatefromdate, retirementreport.partdatefromdate) &&
+        Objects.equals(this.partdatetodate, retirementreport.partdatetodate) &&
+        Objects.equals(this.stateofdocumentText, retirementreport.stateofdocumentText) &&
+        Objects.equals(this.stateofsendingText, retirementreport.stateofsendingText) &&
+        Objects.equals(this.employeeId, retirementreport.employeeId) &&
+        Objects.equals(this.retirementreportdefId, retirementreport.retirementreportdefId) &&
+        Objects.equals(this.communicationdocumentId, retirementreport.communicationdocumentId) &&
+        Objects.equals(this.employeename, retirementreport.employeename) &&
+        Objects.equals(this.personalnumber, retirementreport.personalnumber) &&
+        Objects.equals(this.partmonthfrom, retirementreport.partmonthfrom) &&
+        Objects.equals(this.partmonthto, retirementreport.partmonthto);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, description, workingRelationID, stateOfDocument, stateOfSending, documentData, calendarYear, createdByID, correctedByID, corrective, partOfYear, partDateFromDATE, partDateToDATE, stateOfDocumentText, stateOfSendingText, employeeID, retirementReportDefID, communicationDocumentID, employeeName, personalNumber, partMonthFrom, partMonthTo);
+    return Objects.hash(displayname, id, classid, objversion, description, workingrelationId, stateofdocument, stateofsending, documentdata, calendaryear, createdbyId, correctedbyId, corrective, partofyear, partdatefromdate, partdatetodate, stateofdocumentText, stateofsendingText, employeeId, retirementreportdefId, communicationdocumentId, employeename, personalnumber, partmonthfrom, partmonthto);
   }
 
   @Override
@@ -537,31 +609,31 @@ public class Retirementreport   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Retirementreport {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    workingRelationID: ").append(toIndentedString(workingRelationID)).append("\n");
-    sb.append("    stateOfDocument: ").append(toIndentedString(stateOfDocument)).append("\n");
-    sb.append("    stateOfSending: ").append(toIndentedString(stateOfSending)).append("\n");
-    sb.append("    documentData: ").append(toIndentedString(documentData)).append("\n");
-    sb.append("    calendarYear: ").append(toIndentedString(calendarYear)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
+    sb.append("    workingrelationId: ").append(toIndentedString(workingrelationId)).append("\n");
+    sb.append("    stateofdocument: ").append(toIndentedString(stateofdocument)).append("\n");
+    sb.append("    stateofsending: ").append(toIndentedString(stateofsending)).append("\n");
+    sb.append("    documentdata: ").append(toIndentedString(documentdata)).append("\n");
+    sb.append("    calendaryear: ").append(toIndentedString(calendaryear)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
     sb.append("    corrective: ").append(toIndentedString(corrective)).append("\n");
-    sb.append("    partOfYear: ").append(toIndentedString(partOfYear)).append("\n");
-    sb.append("    partDateFromDATE: ").append(toIndentedString(partDateFromDATE)).append("\n");
-    sb.append("    partDateToDATE: ").append(toIndentedString(partDateToDATE)).append("\n");
-    sb.append("    stateOfDocumentText: ").append(toIndentedString(stateOfDocumentText)).append("\n");
-    sb.append("    stateOfSendingText: ").append(toIndentedString(stateOfSendingText)).append("\n");
-    sb.append("    employeeID: ").append(toIndentedString(employeeID)).append("\n");
-    sb.append("    retirementReportDefID: ").append(toIndentedString(retirementReportDefID)).append("\n");
-    sb.append("    communicationDocumentID: ").append(toIndentedString(communicationDocumentID)).append("\n");
-    sb.append("    employeeName: ").append(toIndentedString(employeeName)).append("\n");
-    sb.append("    personalNumber: ").append(toIndentedString(personalNumber)).append("\n");
-    sb.append("    partMonthFrom: ").append(toIndentedString(partMonthFrom)).append("\n");
-    sb.append("    partMonthTo: ").append(toIndentedString(partMonthTo)).append("\n");
+    sb.append("    partofyear: ").append(toIndentedString(partofyear)).append("\n");
+    sb.append("    partdatefromdate: ").append(toIndentedString(partdatefromdate)).append("\n");
+    sb.append("    partdatetodate: ").append(toIndentedString(partdatetodate)).append("\n");
+    sb.append("    stateofdocumentText: ").append(toIndentedString(stateofdocumentText)).append("\n");
+    sb.append("    stateofsendingText: ").append(toIndentedString(stateofsendingText)).append("\n");
+    sb.append("    employeeId: ").append(toIndentedString(employeeId)).append("\n");
+    sb.append("    retirementreportdefId: ").append(toIndentedString(retirementreportdefId)).append("\n");
+    sb.append("    communicationdocumentId: ").append(toIndentedString(communicationdocumentId)).append("\n");
+    sb.append("    employeename: ").append(toIndentedString(employeename)).append("\n");
+    sb.append("    personalnumber: ").append(toIndentedString(personalnumber)).append("\n");
+    sb.append("    partmonthfrom: ").append(toIndentedString(partmonthfrom)).append("\n");
+    sb.append("    partmonthto: ").append(toIndentedString(partmonthto)).append("\n");
     sb.append("}");
     return sb.toString();
   }

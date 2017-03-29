@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,102 +34,138 @@ import java.util.Objects;
 /**
  * Categoryitem
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Categoryitem   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ItemType")
-  private Integer itemType = null;
+  @SerializedName("itemtype")
+  private Integer itemtype = null;
 
-  @SerializedName("UserFieldDef2_ID")
-  private String userFieldDef2ID = null;
+  @SerializedName("userfielddef2_id")
+  private String userfielddef2Id = null;
 
-  @SerializedName("CategoryItemGroup_ID")
-  private String categoryItemGroupID = null;
+  @SerializedName("categoryitemgroup_id")
+  private String categoryitemgroupId = null;
 
-  @SerializedName("Expression")
+  @SerializedName("expression")
   private String expression = null;
 
-  @SerializedName("FieldName")
-  private String fieldName = null;
+  @SerializedName("fieldname")
+  private String fieldname = null;
 
-  @SerializedName("FieldLabel")
-  private String fieldLabel = null;
+  @SerializedName("fieldlabel")
+  private String fieldlabel = null;
 
-  @SerializedName("FieldHint")
-  private String fieldHint = null;
+  @SerializedName("fieldhint")
+  private String fieldhint = null;
 
-  @SerializedName("ItemTypeTXT")
-  private String itemTypeTXT = null;
+  @SerializedName("itemtypetxt")
+  private String itemtypetxt = null;
 
-  @SerializedName("DataTypeTXT")
-  private String dataTypeTXT = null;
+  @SerializedName("datatypetxt")
+  private String datatypetxt = null;
 
-  @SerializedName("FieldCode")
-  private Integer fieldCode = null;
+  @SerializedName("fieldcode")
+  private Integer fieldcode = null;
 
-  @SerializedName("SQLQuery")
-  private String sQLQuery = null;
+  @SerializedName("sqlquery")
+  private String sqlquery = null;
 
-  @SerializedName("DataType")
-  private Integer dataType = null;
+  @SerializedName("datatype")
+  private Integer datatype = null;
 
-  @SerializedName("DataSize")
-  private Integer dataSize = null;
+  @SerializedName("datasize")
+  private Integer datasize = null;
 
-  @SerializedName("DecimalPlaces")
-  private Integer decimalPlaces = null;
+  @SerializedName("decimalplaces")
+  private Integer decimalplaces = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Categoryitem displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Categoryitem id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Categoryitem classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Categoryitem objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Categoryitem hidden(Boolean hidden) {
@@ -138,10 +174,10 @@ public class Categoryitem   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -156,10 +192,10 @@ public class Categoryitem   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -168,58 +204,58 @@ public class Categoryitem   {
     this.name = name;
   }
 
-  public Categoryitem itemType(Integer itemType) {
-    this.itemType = itemType;
+  public Categoryitem itemtype(Integer itemtype) {
+    this.itemtype = itemtype;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return itemType
+   * typ [persistentní položka]
+   * @return itemtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getItemType() {
-    return itemType;
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getItemtype() {
+    return itemtype;
   }
 
-  public void setItemType(Integer itemType) {
-    this.itemType = itemType;
+  public void setItemtype(Integer itemtype) {
+    this.itemtype = itemtype;
   }
 
-  public Categoryitem userFieldDef2ID(String userFieldDef2ID) {
-    this.userFieldDef2ID = userFieldDef2ID;
+  public Categoryitem userfielddef2Id(String userfielddef2Id) {
+    this.userfielddef2Id = userfielddef2Id;
     return this;
   }
 
    /**
-   * Uživatelská položka; ID objektu Definovatelná položka [persistentní položka]
-   * @return userFieldDef2ID
+   * uživatelská položka; id objektu definovatelná položka [persistentní položka]
+   * @return userfielddef2Id
   **/
-  @ApiModelProperty(example = "null", value = "Uživatelská položka; ID objektu Definovatelná položka [persistentní položka]")
-  public String getUserFieldDef2ID() {
-    return userFieldDef2ID;
+  @ApiModelProperty(example = "null", value = "uživatelská položka; id objektu definovatelná položka [persistentní položka]")
+  public String getUserfielddef2Id() {
+    return userfielddef2Id;
   }
 
-  public void setUserFieldDef2ID(String userFieldDef2ID) {
-    this.userFieldDef2ID = userFieldDef2ID;
+  public void setUserfielddef2Id(String userfielddef2Id) {
+    this.userfielddef2Id = userfielddef2Id;
   }
 
-  public Categoryitem categoryItemGroupID(String categoryItemGroupID) {
-    this.categoryItemGroupID = categoryItemGroupID;
+  public Categoryitem categoryitemgroupId(String categoryitemgroupId) {
+    this.categoryitemgroupId = categoryitemgroupId;
     return this;
   }
 
    /**
-   * Skupina; ID objektu Skupina kategorizačních údajů [persistentní položka]
-   * @return categoryItemGroupID
+   * skupina; id objektu skupina kategorizačních údajů [persistentní položka]
+   * @return categoryitemgroupId
   **/
-  @ApiModelProperty(example = "null", value = "Skupina; ID objektu Skupina kategorizačních údajů [persistentní položka]")
-  public String getCategoryItemGroupID() {
-    return categoryItemGroupID;
+  @ApiModelProperty(example = "null", value = "skupina; id objektu skupina kategorizačních údajů [persistentní položka]")
+  public String getCategoryitemgroupId() {
+    return categoryitemgroupId;
   }
 
-  public void setCategoryItemGroupID(String categoryItemGroupID) {
-    this.categoryItemGroupID = categoryItemGroupID;
+  public void setCategoryitemgroupId(String categoryitemgroupId) {
+    this.categoryitemgroupId = categoryitemgroupId;
   }
 
   public Categoryitem expression(String expression) {
@@ -228,10 +264,10 @@ public class Categoryitem   {
   }
 
    /**
-   * Výraz [persistentní položka]
+   * výraz [persistentní položka]
    * @return expression
   **/
-  @ApiModelProperty(example = "null", value = "Výraz [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "výraz [persistentní položka]")
   public String getExpression() {
     return expression;
   }
@@ -240,184 +276,184 @@ public class Categoryitem   {
     this.expression = expression;
   }
 
-  public Categoryitem fieldName(String fieldName) {
-    this.fieldName = fieldName;
+  public Categoryitem fieldname(String fieldname) {
+    this.fieldname = fieldname;
     return this;
   }
 
    /**
-   * Jméno položky [persistentní položka]
-   * @return fieldName
+   * jméno položky [persistentní položka]
+   * @return fieldname
   **/
-  @ApiModelProperty(example = "null", value = "Jméno položky [persistentní položka]")
-  public String getFieldName() {
-    return fieldName;
+  @ApiModelProperty(example = "null", value = "jméno položky [persistentní položka]")
+  public String getFieldname() {
+    return fieldname;
   }
 
-  public void setFieldName(String fieldName) {
-    this.fieldName = fieldName;
+  public void setFieldname(String fieldname) {
+    this.fieldname = fieldname;
   }
 
-  public Categoryitem fieldLabel(String fieldLabel) {
-    this.fieldLabel = fieldLabel;
+  public Categoryitem fieldlabel(String fieldlabel) {
+    this.fieldlabel = fieldlabel;
     return this;
   }
 
    /**
-   * Popis položky
-   * @return fieldLabel
+   * popis položky
+   * @return fieldlabel
   **/
-  @ApiModelProperty(example = "null", value = "Popis položky")
-  public String getFieldLabel() {
-    return fieldLabel;
+  @ApiModelProperty(example = "null", value = "popis položky")
+  public String getFieldlabel() {
+    return fieldlabel;
   }
 
-  public void setFieldLabel(String fieldLabel) {
-    this.fieldLabel = fieldLabel;
+  public void setFieldlabel(String fieldlabel) {
+    this.fieldlabel = fieldlabel;
   }
 
-  public Categoryitem fieldHint(String fieldHint) {
-    this.fieldHint = fieldHint;
+  public Categoryitem fieldhint(String fieldhint) {
+    this.fieldhint = fieldhint;
     return this;
   }
 
    /**
-   * Popiska položky
-   * @return fieldHint
+   * popiska položky
+   * @return fieldhint
   **/
-  @ApiModelProperty(example = "null", value = "Popiska položky")
-  public String getFieldHint() {
-    return fieldHint;
+  @ApiModelProperty(example = "null", value = "popiska položky")
+  public String getFieldhint() {
+    return fieldhint;
   }
 
-  public void setFieldHint(String fieldHint) {
-    this.fieldHint = fieldHint;
+  public void setFieldhint(String fieldhint) {
+    this.fieldhint = fieldhint;
   }
 
-  public Categoryitem itemTypeTXT(String itemTypeTXT) {
-    this.itemTypeTXT = itemTypeTXT;
+  public Categoryitem itemtypetxt(String itemtypetxt) {
+    this.itemtypetxt = itemtypetxt;
     return this;
   }
 
    /**
-   * Typ
-   * @return itemTypeTXT
+   * typ
+   * @return itemtypetxt
   **/
-  @ApiModelProperty(example = "null", value = "Typ")
-  public String getItemTypeTXT() {
-    return itemTypeTXT;
+  @ApiModelProperty(example = "null", value = "typ")
+  public String getItemtypetxt() {
+    return itemtypetxt;
   }
 
-  public void setItemTypeTXT(String itemTypeTXT) {
-    this.itemTypeTXT = itemTypeTXT;
+  public void setItemtypetxt(String itemtypetxt) {
+    this.itemtypetxt = itemtypetxt;
   }
 
-  public Categoryitem dataTypeTXT(String dataTypeTXT) {
-    this.dataTypeTXT = dataTypeTXT;
+  public Categoryitem datatypetxt(String datatypetxt) {
+    this.datatypetxt = datatypetxt;
     return this;
   }
 
    /**
-   * Datový typ
-   * @return dataTypeTXT
+   * datový typ
+   * @return datatypetxt
   **/
-  @ApiModelProperty(example = "null", value = "Datový typ")
-  public String getDataTypeTXT() {
-    return dataTypeTXT;
+  @ApiModelProperty(example = "null", value = "datový typ")
+  public String getDatatypetxt() {
+    return datatypetxt;
   }
 
-  public void setDataTypeTXT(String dataTypeTXT) {
-    this.dataTypeTXT = dataTypeTXT;
+  public void setDatatypetxt(String datatypetxt) {
+    this.datatypetxt = datatypetxt;
   }
 
-  public Categoryitem fieldCode(Integer fieldCode) {
-    this.fieldCode = fieldCode;
+  public Categoryitem fieldcode(Integer fieldcode) {
+    this.fieldcode = fieldcode;
     return this;
   }
 
    /**
    * Číslo položky
-   * @return fieldCode
+   * @return fieldcode
   **/
   @ApiModelProperty(example = "null", value = "Číslo položky")
-  public Integer getFieldCode() {
-    return fieldCode;
+  public Integer getFieldcode() {
+    return fieldcode;
   }
 
-  public void setFieldCode(Integer fieldCode) {
-    this.fieldCode = fieldCode;
+  public void setFieldcode(Integer fieldcode) {
+    this.fieldcode = fieldcode;
   }
 
-  public Categoryitem sQLQuery(String sQLQuery) {
-    this.sQLQuery = sQLQuery;
+  public Categoryitem sqlquery(String sqlquery) {
+    this.sqlquery = sqlquery;
     return this;
   }
 
    /**
-   * Definice [persistentní položka]
-   * @return sQLQuery
+   * definice [persistentní položka]
+   * @return sqlquery
   **/
-  @ApiModelProperty(example = "null", value = "Definice [persistentní položka]")
-  public String getSQLQuery() {
-    return sQLQuery;
+  @ApiModelProperty(example = "null", value = "definice [persistentní položka]")
+  public String getSqlquery() {
+    return sqlquery;
   }
 
-  public void setSQLQuery(String sQLQuery) {
-    this.sQLQuery = sQLQuery;
+  public void setSqlquery(String sqlquery) {
+    this.sqlquery = sqlquery;
   }
 
-  public Categoryitem dataType(Integer dataType) {
-    this.dataType = dataType;
+  public Categoryitem datatype(Integer datatype) {
+    this.datatype = datatype;
     return this;
   }
 
    /**
-   * Datový typ [persistentní položka]
-   * @return dataType
+   * datový typ [persistentní položka]
+   * @return datatype
   **/
-  @ApiModelProperty(example = "null", value = "Datový typ [persistentní položka]")
-  public Integer getDataType() {
-    return dataType;
+  @ApiModelProperty(example = "null", value = "datový typ [persistentní položka]")
+  public Integer getDatatype() {
+    return datatype;
   }
 
-  public void setDataType(Integer dataType) {
-    this.dataType = dataType;
+  public void setDatatype(Integer datatype) {
+    this.datatype = datatype;
   }
 
-  public Categoryitem dataSize(Integer dataSize) {
-    this.dataSize = dataSize;
+  public Categoryitem datasize(Integer datasize) {
+    this.datasize = datasize;
     return this;
   }
 
    /**
-   * Velikost [persistentní položka]
-   * @return dataSize
+   * velikost [persistentní položka]
+   * @return datasize
   **/
-  @ApiModelProperty(example = "null", value = "Velikost [persistentní položka]")
-  public Integer getDataSize() {
-    return dataSize;
+  @ApiModelProperty(example = "null", value = "velikost [persistentní položka]")
+  public Integer getDatasize() {
+    return datasize;
   }
 
-  public void setDataSize(Integer dataSize) {
-    this.dataSize = dataSize;
+  public void setDatasize(Integer datasize) {
+    this.datasize = datasize;
   }
 
-  public Categoryitem decimalPlaces(Integer decimalPlaces) {
-    this.decimalPlaces = decimalPlaces;
+  public Categoryitem decimalplaces(Integer decimalplaces) {
+    this.decimalplaces = decimalplaces;
     return this;
   }
 
    /**
-   * Počet des.míst [persistentní položka]
-   * @return decimalPlaces
+   * počet des.míst [persistentní položka]
+   * @return decimalplaces
   **/
-  @ApiModelProperty(example = "null", value = "Počet des.míst [persistentní položka]")
-  public Integer getDecimalPlaces() {
-    return decimalPlaces;
+  @ApiModelProperty(example = "null", value = "počet des.míst [persistentní položka]")
+  public Integer getDecimalplaces() {
+    return decimalplaces;
   }
 
-  public void setDecimalPlaces(Integer decimalPlaces) {
-    this.decimalPlaces = decimalPlaces;
+  public void setDecimalplaces(Integer decimalplaces) {
+    this.decimalplaces = decimalplaces;
   }
 
 
@@ -430,31 +466,31 @@ public class Categoryitem   {
       return false;
     }
     Categoryitem categoryitem = (Categoryitem) o;
-    return Objects.equals(this.displayName, categoryitem.displayName) &&
-        Objects.equals(this.ID, categoryitem.ID) &&
-        Objects.equals(this.classID, categoryitem.classID) &&
-        Objects.equals(this.objVersion, categoryitem.objVersion) &&
+    return Objects.equals(this.displayname, categoryitem.displayname) &&
+        Objects.equals(this.id, categoryitem.id) &&
+        Objects.equals(this.classid, categoryitem.classid) &&
+        Objects.equals(this.objversion, categoryitem.objversion) &&
         Objects.equals(this.hidden, categoryitem.hidden) &&
         Objects.equals(this.name, categoryitem.name) &&
-        Objects.equals(this.itemType, categoryitem.itemType) &&
-        Objects.equals(this.userFieldDef2ID, categoryitem.userFieldDef2ID) &&
-        Objects.equals(this.categoryItemGroupID, categoryitem.categoryItemGroupID) &&
+        Objects.equals(this.itemtype, categoryitem.itemtype) &&
+        Objects.equals(this.userfielddef2Id, categoryitem.userfielddef2Id) &&
+        Objects.equals(this.categoryitemgroupId, categoryitem.categoryitemgroupId) &&
         Objects.equals(this.expression, categoryitem.expression) &&
-        Objects.equals(this.fieldName, categoryitem.fieldName) &&
-        Objects.equals(this.fieldLabel, categoryitem.fieldLabel) &&
-        Objects.equals(this.fieldHint, categoryitem.fieldHint) &&
-        Objects.equals(this.itemTypeTXT, categoryitem.itemTypeTXT) &&
-        Objects.equals(this.dataTypeTXT, categoryitem.dataTypeTXT) &&
-        Objects.equals(this.fieldCode, categoryitem.fieldCode) &&
-        Objects.equals(this.sQLQuery, categoryitem.sQLQuery) &&
-        Objects.equals(this.dataType, categoryitem.dataType) &&
-        Objects.equals(this.dataSize, categoryitem.dataSize) &&
-        Objects.equals(this.decimalPlaces, categoryitem.decimalPlaces);
+        Objects.equals(this.fieldname, categoryitem.fieldname) &&
+        Objects.equals(this.fieldlabel, categoryitem.fieldlabel) &&
+        Objects.equals(this.fieldhint, categoryitem.fieldhint) &&
+        Objects.equals(this.itemtypetxt, categoryitem.itemtypetxt) &&
+        Objects.equals(this.datatypetxt, categoryitem.datatypetxt) &&
+        Objects.equals(this.fieldcode, categoryitem.fieldcode) &&
+        Objects.equals(this.sqlquery, categoryitem.sqlquery) &&
+        Objects.equals(this.datatype, categoryitem.datatype) &&
+        Objects.equals(this.datasize, categoryitem.datasize) &&
+        Objects.equals(this.decimalplaces, categoryitem.decimalplaces);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, name, itemType, userFieldDef2ID, categoryItemGroupID, expression, fieldName, fieldLabel, fieldHint, itemTypeTXT, dataTypeTXT, fieldCode, sQLQuery, dataType, dataSize, decimalPlaces);
+    return Objects.hash(displayname, id, classid, objversion, hidden, name, itemtype, userfielddef2Id, categoryitemgroupId, expression, fieldname, fieldlabel, fieldhint, itemtypetxt, datatypetxt, fieldcode, sqlquery, datatype, datasize, decimalplaces);
   }
 
   @Override
@@ -462,26 +498,26 @@ public class Categoryitem   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Categoryitem {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    itemType: ").append(toIndentedString(itemType)).append("\n");
-    sb.append("    userFieldDef2ID: ").append(toIndentedString(userFieldDef2ID)).append("\n");
-    sb.append("    categoryItemGroupID: ").append(toIndentedString(categoryItemGroupID)).append("\n");
+    sb.append("    itemtype: ").append(toIndentedString(itemtype)).append("\n");
+    sb.append("    userfielddef2Id: ").append(toIndentedString(userfielddef2Id)).append("\n");
+    sb.append("    categoryitemgroupId: ").append(toIndentedString(categoryitemgroupId)).append("\n");
     sb.append("    expression: ").append(toIndentedString(expression)).append("\n");
-    sb.append("    fieldName: ").append(toIndentedString(fieldName)).append("\n");
-    sb.append("    fieldLabel: ").append(toIndentedString(fieldLabel)).append("\n");
-    sb.append("    fieldHint: ").append(toIndentedString(fieldHint)).append("\n");
-    sb.append("    itemTypeTXT: ").append(toIndentedString(itemTypeTXT)).append("\n");
-    sb.append("    dataTypeTXT: ").append(toIndentedString(dataTypeTXT)).append("\n");
-    sb.append("    fieldCode: ").append(toIndentedString(fieldCode)).append("\n");
-    sb.append("    sQLQuery: ").append(toIndentedString(sQLQuery)).append("\n");
-    sb.append("    dataType: ").append(toIndentedString(dataType)).append("\n");
-    sb.append("    dataSize: ").append(toIndentedString(dataSize)).append("\n");
-    sb.append("    decimalPlaces: ").append(toIndentedString(decimalPlaces)).append("\n");
+    sb.append("    fieldname: ").append(toIndentedString(fieldname)).append("\n");
+    sb.append("    fieldlabel: ").append(toIndentedString(fieldlabel)).append("\n");
+    sb.append("    fieldhint: ").append(toIndentedString(fieldhint)).append("\n");
+    sb.append("    itemtypetxt: ").append(toIndentedString(itemtypetxt)).append("\n");
+    sb.append("    datatypetxt: ").append(toIndentedString(datatypetxt)).append("\n");
+    sb.append("    fieldcode: ").append(toIndentedString(fieldcode)).append("\n");
+    sb.append("    sqlquery: ").append(toIndentedString(sqlquery)).append("\n");
+    sb.append("    datatype: ").append(toIndentedString(datatype)).append("\n");
+    sb.append("    datasize: ").append(toIndentedString(datasize)).append("\n");
+    sb.append("    decimalplaces: ").append(toIndentedString(decimalplaces)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,105 +34,141 @@ import java.util.Objects;
 /**
  * Posinternalean
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posinternalean   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("EANType")
-  private Integer eANType = null;
+  @SerializedName("eantype")
+  private Integer eantype = null;
 
-  @SerializedName("EANMask")
-  private String eANMask = null;
+  @SerializedName("eanmask")
+  private String eanmask = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("POSDiscount_ID")
-  private String pOSDiscountID = null;
+  @SerializedName("posdiscount_id")
+  private String posdiscountId = null;
 
-  @SerializedName("EAN")
-  private String EAN = null;
+  @SerializedName("ean")
+  private String ean = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Posinternalean eANType(Integer eANType) {
-    this.eANType = eANType;
+  public Posinternalean displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return eANType
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getEANType() {
-    return eANType;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setEANType(Integer eANType) {
-    this.eANType = eANType;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Posinternalean eANMask(String eANMask) {
-    this.eANMask = eANMask;
+  public Posinternalean id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Maska [persistentní položka]
-   * @return eANMask
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Maska [persistentní položka]")
-  public String getEANMask() {
-    return eANMask;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setEANMask(String eANMask) {
-    this.eANMask = eANMask;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Posinternalean classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Posinternalean objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Posinternalean eantype(Integer eantype) {
+    this.eantype = eantype;
+    return this;
+  }
+
+   /**
+   * typ [persistentní položka]
+   * @return eantype
+  **/
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getEantype() {
+    return eantype;
+  }
+
+  public void setEantype(Integer eantype) {
+    this.eantype = eantype;
+  }
+
+  public Posinternalean eanmask(String eanmask) {
+    this.eanmask = eanmask;
+    return this;
+  }
+
+   /**
+   * maska [persistentní položka]
+   * @return eanmask
+  **/
+  @ApiModelProperty(example = "null", value = "maska [persistentní položka]")
+  public String getEanmask() {
+    return eanmask;
+  }
+
+  public void setEanmask(String eanmask) {
+    this.eanmask = eanmask;
   }
 
   public Posinternalean name(String name) {
@@ -141,10 +177,10 @@ public class Posinternalean   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -153,40 +189,40 @@ public class Posinternalean   {
     this.name = name;
   }
 
-  public Posinternalean pOSDiscountID(String pOSDiscountID) {
-    this.pOSDiscountID = pOSDiscountID;
+  public Posinternalean posdiscountId(String posdiscountId) {
+    this.posdiscountId = posdiscountId;
     return this;
   }
 
    /**
-   * Sleva; ID objektu Sleva pro pokladní prodej [persistentní položka]
-   * @return pOSDiscountID
+   * sleva; id objektu sleva pro pokladní prodej [persistentní položka]
+   * @return posdiscountId
   **/
-  @ApiModelProperty(example = "null", value = "Sleva; ID objektu Sleva pro pokladní prodej [persistentní položka]")
-  public String getPOSDiscountID() {
-    return pOSDiscountID;
+  @ApiModelProperty(example = "null", value = "sleva; id objektu sleva pro pokladní prodej [persistentní položka]")
+  public String getPosdiscountId() {
+    return posdiscountId;
   }
 
-  public void setPOSDiscountID(String pOSDiscountID) {
-    this.pOSDiscountID = pOSDiscountID;
+  public void setPosdiscountId(String posdiscountId) {
+    this.posdiscountId = posdiscountId;
   }
 
-  public Posinternalean EAN(String EAN) {
-    this.EAN = EAN;
+  public Posinternalean ean(String ean) {
+    this.ean = ean;
     return this;
   }
 
    /**
-   * EAN kupónu [persistentní položka]
-   * @return EAN
+   * ean kupónu [persistentní položka]
+   * @return ean
   **/
-  @ApiModelProperty(example = "null", value = "EAN kupónu [persistentní položka]")
-  public String getEAN() {
-    return EAN;
+  @ApiModelProperty(example = "null", value = "ean kupónu [persistentní položka]")
+  public String getEan() {
+    return ean;
   }
 
-  public void setEAN(String EAN) {
-    this.EAN = EAN;
+  public void setEan(String ean) {
+    this.ean = ean;
   }
 
 
@@ -199,20 +235,20 @@ public class Posinternalean   {
       return false;
     }
     Posinternalean posinternalean = (Posinternalean) o;
-    return Objects.equals(this.displayName, posinternalean.displayName) &&
-        Objects.equals(this.ID, posinternalean.ID) &&
-        Objects.equals(this.classID, posinternalean.classID) &&
-        Objects.equals(this.objVersion, posinternalean.objVersion) &&
-        Objects.equals(this.eANType, posinternalean.eANType) &&
-        Objects.equals(this.eANMask, posinternalean.eANMask) &&
+    return Objects.equals(this.displayname, posinternalean.displayname) &&
+        Objects.equals(this.id, posinternalean.id) &&
+        Objects.equals(this.classid, posinternalean.classid) &&
+        Objects.equals(this.objversion, posinternalean.objversion) &&
+        Objects.equals(this.eantype, posinternalean.eantype) &&
+        Objects.equals(this.eanmask, posinternalean.eanmask) &&
         Objects.equals(this.name, posinternalean.name) &&
-        Objects.equals(this.pOSDiscountID, posinternalean.pOSDiscountID) &&
-        Objects.equals(this.EAN, posinternalean.EAN);
+        Objects.equals(this.posdiscountId, posinternalean.posdiscountId) &&
+        Objects.equals(this.ean, posinternalean.ean);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, eANType, eANMask, name, pOSDiscountID, EAN);
+    return Objects.hash(displayname, id, classid, objversion, eantype, eanmask, name, posdiscountId, ean);
   }
 
   @Override
@@ -220,15 +256,15 @@ public class Posinternalean   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posinternalean {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    eANType: ").append(toIndentedString(eANType)).append("\n");
-    sb.append("    eANMask: ").append(toIndentedString(eANMask)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    eantype: ").append(toIndentedString(eantype)).append("\n");
+    sb.append("    eanmask: ").append(toIndentedString(eanmask)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    pOSDiscountID: ").append(toIndentedString(pOSDiscountID)).append("\n");
-    sb.append("    EAN: ").append(toIndentedString(EAN)).append("\n");
+    sb.append("    posdiscountId: ").append(toIndentedString(posdiscountId)).append("\n");
+    sb.append("    ean: ").append(toIndentedString(ean)).append("\n");
     sb.append("}");
     return sb.toString();
   }

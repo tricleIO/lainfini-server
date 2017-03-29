@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,195 +35,240 @@ import java.util.Objects;
 /**
  * Logstorecontent
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Logstorecontent   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("StoreBatch_ID")
-  private String storeBatchID = null;
+  @SerializedName("storebatch_id")
+  private String storebatchId = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("QuantityReserved")
-  private Double quantityReserved = null;
+  @SerializedName("quantityreserved")
+  private Double quantityreserved = null;
 
-  @SerializedName("QuantityAwaited")
-  private Double quantityAwaited = null;
+  @SerializedName("quantityawaited")
+  private Double quantityawaited = null;
 
-  @SerializedName("DateOfStorage$DATE")
-  private DateTime dateOfStorageDATE = null;
+  @SerializedName("dateofstorage$date")
+  private DateTime dateofstoragedate = null;
 
-  @SerializedName("InvQuantity")
-  private Double invQuantity = null;
+  @SerializedName("invquantity")
+  private Double invquantity = null;
 
-  @SerializedName("InvChange")
-  private Boolean invChange = null;
+  @SerializedName("invchange")
+  private Boolean invchange = null;
 
-  @SerializedName("UnitQuantity")
-  private Double unitQuantity = null;
+  @SerializedName("unitquantity")
+  private Double unitquantity = null;
 
-  @SerializedName("UnitQuantityReserved")
-  private Double unitQuantityReserved = null;
+  @SerializedName("unitquantityreserved")
+  private Double unitquantityreserved = null;
 
-  @SerializedName("UnitQuantityAwaited")
-  private Double unitQuantityAwaited = null;
+  @SerializedName("unitquantityawaited")
+  private Double unitquantityawaited = null;
 
-  @SerializedName("UnitEditInvQuantity")
-  private Double unitEditInvQuantity = null;
+  @SerializedName("uniteditinvquantity")
+  private Double uniteditinvquantity = null;
 
-  @SerializedName("InvUnitQuantity")
-  private Double invUnitQuantity = null;
+  @SerializedName("invunitquantity")
+  private Double invunitquantity = null;
 
-  @SerializedName("TotalCapacity")
-  private Double totalCapacity = null;
+  @SerializedName("totalcapacity")
+  private Double totalcapacity = null;
 
-  @SerializedName("CapacityUnit")
-  private Integer capacityUnit = null;
+  @SerializedName("capacityunit")
+  private Integer capacityunit = null;
 
-  @SerializedName("TotalWeight")
-  private Double totalWeight = null;
+  @SerializedName("totalweight")
+  private Double totalweight = null;
 
-  @SerializedName("WeightUnit")
-  private Integer weightUnit = null;
+  @SerializedName("weightunit")
+  private Integer weightunit = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Skladová pozice [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Skladová pozice [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Logstorecontent storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Logstorecontent displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Logstorecontent storeBatchID(String storeBatchID) {
-    this.storeBatchID = storeBatchID;
+  public Logstorecontent id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Sériové číslo/šarže; ID objektu Šarže/sériové číslo [persistentní položka]
-   * @return storeBatchID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Sériové číslo/šarže; ID objektu Šarže/sériové číslo [persistentní položka]")
-  public String getStoreBatchID() {
-    return storeBatchID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setStoreBatchID(String storeBatchID) {
-    this.storeBatchID = storeBatchID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Logstorecontent qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Logstorecontent classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Logstorecontent unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Logstorecontent objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Převodní vztah jedn. [persistentní položka]
-   * @return unitRate
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Převodní vztah jedn. [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Logstorecontent parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu skladová pozice [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu skladová pozice [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Logstorecontent storecardId(String storecardId) {
+    this.storecardId = storecardId;
+    return this;
+  }
+
+   /**
+   * skladová karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
+  **/
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
+  }
+
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
+  }
+
+  public Logstorecontent storebatchId(String storebatchId) {
+    this.storebatchId = storebatchId;
+    return this;
+  }
+
+   /**
+   * sériové číslo/šarže; id objektu Šarže/sériové číslo [persistentní položka]
+   * @return storebatchId
+  **/
+  @ApiModelProperty(example = "null", value = "sériové číslo/šarže; id objektu Šarže/sériové číslo [persistentní položka]")
+  public String getStorebatchId() {
+    return storebatchId;
+  }
+
+  public void setStorebatchId(String storebatchId) {
+    this.storebatchId = storebatchId;
+  }
+
+  public Logstorecontent qunit(String qunit) {
+    this.qunit = qunit;
+    return this;
+  }
+
+   /**
+   * jednotka [persistentní položka]
+   * @return qunit
+  **/
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
+  }
+
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
+  }
+
+  public Logstorecontent unitrate(Double unitrate) {
+    this.unitrate = unitrate;
+    return this;
+  }
+
+   /**
+   * převodní vztah jedn. [persistentní položka]
+   * @return unitrate
+  **/
+  @ApiModelProperty(example = "null", value = "převodní vztah jedn. [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
+  }
+
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
   public Logstorecontent quantity(Double quantity) {
@@ -232,10 +277,10 @@ public class Logstorecontent   {
   }
 
    /**
-   * Množství [persistentní položka]
+   * množství [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "množství [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -244,229 +289,256 @@ public class Logstorecontent   {
     this.quantity = quantity;
   }
 
-  public Logstorecontent quantityReserved(Double quantityReserved) {
-    this.quantityReserved = quantityReserved;
+  public Logstorecontent quantityreserved(Double quantityreserved) {
+    this.quantityreserved = quantityreserved;
     return this;
   }
 
    /**
-   * Rezervované množství [persistentní položka]
-   * @return quantityReserved
+   * rezervované množství [persistentní položka]
+   * @return quantityreserved
   **/
-  @ApiModelProperty(example = "null", value = "Rezervované množství [persistentní položka]")
-  public Double getQuantityReserved() {
-    return quantityReserved;
+  @ApiModelProperty(example = "null", value = "rezervované množství [persistentní položka]")
+  public Double getQuantityreserved() {
+    return quantityreserved;
   }
 
-  public void setQuantityReserved(Double quantityReserved) {
-    this.quantityReserved = quantityReserved;
+  public void setQuantityreserved(Double quantityreserved) {
+    this.quantityreserved = quantityreserved;
   }
 
-  public Logstorecontent quantityAwaited(Double quantityAwaited) {
-    this.quantityAwaited = quantityAwaited;
+  public Logstorecontent quantityawaited(Double quantityawaited) {
+    this.quantityawaited = quantityawaited;
     return this;
   }
 
    /**
-   * Očekávané množství [persistentní položka]
-   * @return quantityAwaited
+   * očekávané množství [persistentní položka]
+   * @return quantityawaited
   **/
-  @ApiModelProperty(example = "null", value = "Očekávané množství [persistentní položka]")
-  public Double getQuantityAwaited() {
-    return quantityAwaited;
+  @ApiModelProperty(example = "null", value = "očekávané množství [persistentní položka]")
+  public Double getQuantityawaited() {
+    return quantityawaited;
   }
 
-  public void setQuantityAwaited(Double quantityAwaited) {
-    this.quantityAwaited = quantityAwaited;
+  public void setQuantityawaited(Double quantityawaited) {
+    this.quantityawaited = quantityawaited;
   }
 
-  public Logstorecontent dateOfStorageDATE(DateTime dateOfStorageDATE) {
-    this.dateOfStorageDATE = dateOfStorageDATE;
+  public Logstorecontent dateofstoragedate(DateTime dateofstoragedate) {
+    this.dateofstoragedate = dateofstoragedate;
     return this;
   }
 
    /**
-   * Datum naskladnění [persistentní položka]
-   * @return dateOfStorageDATE
+   * datum naskladnění [persistentní položka]
+   * @return dateofstoragedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum naskladnění [persistentní položka]")
-  public DateTime getDateOfStorageDATE() {
-    return dateOfStorageDATE;
+  @ApiModelProperty(example = "null", value = "datum naskladnění [persistentní položka]")
+  public DateTime getDateofstoragedate() {
+    return dateofstoragedate;
   }
 
-  public void setDateOfStorageDATE(DateTime dateOfStorageDATE) {
-    this.dateOfStorageDATE = dateOfStorageDATE;
+  public void setDateofstoragedate(DateTime dateofstoragedate) {
+    this.dateofstoragedate = dateofstoragedate;
   }
 
-  public Logstorecontent invQuantity(Double invQuantity) {
-    this.invQuantity = invQuantity;
+  public Logstorecontent invquantity(Double invquantity) {
+    this.invquantity = invquantity;
     return this;
   }
 
    /**
-   * Skutečné množství [persistentní položka]
-   * @return invQuantity
+   * skutečné množství [persistentní položka]
+   * @return invquantity
   **/
-  @ApiModelProperty(example = "null", value = "Skutečné množství [persistentní položka]")
-  public Double getInvQuantity() {
-    return invQuantity;
+  @ApiModelProperty(example = "null", value = "skutečné množství [persistentní položka]")
+  public Double getInvquantity() {
+    return invquantity;
   }
 
-  public void setInvQuantity(Double invQuantity) {
-    this.invQuantity = invQuantity;
+  public void setInvquantity(Double invquantity) {
+    this.invquantity = invquantity;
   }
 
-  public Logstorecontent invChange(Boolean invChange) {
-    this.invChange = invChange;
+  public Logstorecontent invchange(Boolean invchange) {
+    this.invchange = invchange;
     return this;
   }
 
    /**
-   * Změna v průběhu inventury [persistentní položka]
-   * @return invChange
+   * změna v průběhu inventury [persistentní položka]
+   * @return invchange
   **/
-  @ApiModelProperty(example = "null", value = "Změna v průběhu inventury [persistentní položka]")
-  public Boolean getInvChange() {
-    return invChange;
+  @ApiModelProperty(example = "null", value = "změna v průběhu inventury [persistentní položka]")
+  public Boolean getInvchange() {
+    return invchange;
   }
 
-  public void setInvChange(Boolean invChange) {
-    this.invChange = invChange;
+  public void setInvchange(Boolean invchange) {
+    this.invchange = invchange;
   }
 
-   /**
-   * Množství v jednotce
-   * @return unitQuantity
-  **/
-  @ApiModelProperty(example = "null", value = "Množství v jednotce")
-  public Double getUnitQuantity() {
-    return unitQuantity;
-  }
-
-   /**
-   * Rezervované množství v jednotce
-   * @return unitQuantityReserved
-  **/
-  @ApiModelProperty(example = "null", value = "Rezervované množství v jednotce")
-  public Double getUnitQuantityReserved() {
-    return unitQuantityReserved;
-  }
-
-   /**
-   * Očekávané množství v jednotce
-   * @return unitQuantityAwaited
-  **/
-  @ApiModelProperty(example = "null", value = "Očekávané množství v jednotce")
-  public Double getUnitQuantityAwaited() {
-    return unitQuantityAwaited;
-  }
-
-  public Logstorecontent unitEditInvQuantity(Double unitEditInvQuantity) {
-    this.unitEditInvQuantity = unitEditInvQuantity;
+  public Logstorecontent unitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
     return this;
   }
 
    /**
-   * Skutečné množství (pro editaci) v jednotce
-   * @return unitEditInvQuantity
+   * množství v jednotce
+   * @return unitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Skutečné množství (pro editaci) v jednotce")
-  public Double getUnitEditInvQuantity() {
-    return unitEditInvQuantity;
+  @ApiModelProperty(example = "null", value = "množství v jednotce")
+  public Double getUnitquantity() {
+    return unitquantity;
   }
 
-  public void setUnitEditInvQuantity(Double unitEditInvQuantity) {
-    this.unitEditInvQuantity = unitEditInvQuantity;
+  public void setUnitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
   }
 
-  public Logstorecontent invUnitQuantity(Double invUnitQuantity) {
-    this.invUnitQuantity = invUnitQuantity;
+  public Logstorecontent unitquantityreserved(Double unitquantityreserved) {
+    this.unitquantityreserved = unitquantityreserved;
     return this;
   }
 
    /**
-   * Skutečné množství v jednotce
-   * @return invUnitQuantity
+   * rezervované množství v jednotce
+   * @return unitquantityreserved
   **/
-  @ApiModelProperty(example = "null", value = "Skutečné množství v jednotce")
-  public Double getInvUnitQuantity() {
-    return invUnitQuantity;
+  @ApiModelProperty(example = "null", value = "rezervované množství v jednotce")
+  public Double getUnitquantityreserved() {
+    return unitquantityreserved;
   }
 
-  public void setInvUnitQuantity(Double invUnitQuantity) {
-    this.invUnitQuantity = invUnitQuantity;
+  public void setUnitquantityreserved(Double unitquantityreserved) {
+    this.unitquantityreserved = unitquantityreserved;
   }
 
-  public Logstorecontent totalCapacity(Double totalCapacity) {
-    this.totalCapacity = totalCapacity;
+  public Logstorecontent unitquantityawaited(Double unitquantityawaited) {
+    this.unitquantityawaited = unitquantityawaited;
     return this;
   }
 
    /**
-   * Celkový objem v jednotce [persistentní položka]
-   * @return totalCapacity
+   * očekávané množství v jednotce
+   * @return unitquantityawaited
   **/
-  @ApiModelProperty(example = "null", value = "Celkový objem v jednotce [persistentní položka]")
-  public Double getTotalCapacity() {
-    return totalCapacity;
+  @ApiModelProperty(example = "null", value = "očekávané množství v jednotce")
+  public Double getUnitquantityawaited() {
+    return unitquantityawaited;
   }
 
-  public void setTotalCapacity(Double totalCapacity) {
-    this.totalCapacity = totalCapacity;
+  public void setUnitquantityawaited(Double unitquantityawaited) {
+    this.unitquantityawaited = unitquantityawaited;
   }
 
-  public Logstorecontent capacityUnit(Integer capacityUnit) {
-    this.capacityUnit = capacityUnit;
+  public Logstorecontent uniteditinvquantity(Double uniteditinvquantity) {
+    this.uniteditinvquantity = uniteditinvquantity;
     return this;
   }
 
    /**
-   * Jednotka objemu [persistentní položka]
-   * @return capacityUnit
+   * skutečné množství (pro editaci) v jednotce
+   * @return uniteditinvquantity
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka objemu [persistentní položka]")
-  public Integer getCapacityUnit() {
-    return capacityUnit;
+  @ApiModelProperty(example = "null", value = "skutečné množství (pro editaci) v jednotce")
+  public Double getUniteditinvquantity() {
+    return uniteditinvquantity;
   }
 
-  public void setCapacityUnit(Integer capacityUnit) {
-    this.capacityUnit = capacityUnit;
+  public void setUniteditinvquantity(Double uniteditinvquantity) {
+    this.uniteditinvquantity = uniteditinvquantity;
   }
 
-  public Logstorecontent totalWeight(Double totalWeight) {
-    this.totalWeight = totalWeight;
+  public Logstorecontent invunitquantity(Double invunitquantity) {
+    this.invunitquantity = invunitquantity;
     return this;
   }
 
    /**
-   * Celková váha [persistentní položka]
-   * @return totalWeight
+   * skutečné množství v jednotce
+   * @return invunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Celková váha [persistentní položka]")
-  public Double getTotalWeight() {
-    return totalWeight;
+  @ApiModelProperty(example = "null", value = "skutečné množství v jednotce")
+  public Double getInvunitquantity() {
+    return invunitquantity;
   }
 
-  public void setTotalWeight(Double totalWeight) {
-    this.totalWeight = totalWeight;
+  public void setInvunitquantity(Double invunitquantity) {
+    this.invunitquantity = invunitquantity;
   }
 
-  public Logstorecontent weightUnit(Integer weightUnit) {
-    this.weightUnit = weightUnit;
+  public Logstorecontent totalcapacity(Double totalcapacity) {
+    this.totalcapacity = totalcapacity;
     return this;
   }
 
    /**
-   * Jednotka hmotnosti [persistentní položka]
-   * @return weightUnit
+   * celkový objem v jednotce [persistentní položka]
+   * @return totalcapacity
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka hmotnosti [persistentní položka]")
-  public Integer getWeightUnit() {
-    return weightUnit;
+  @ApiModelProperty(example = "null", value = "celkový objem v jednotce [persistentní položka]")
+  public Double getTotalcapacity() {
+    return totalcapacity;
   }
 
-  public void setWeightUnit(Integer weightUnit) {
-    this.weightUnit = weightUnit;
+  public void setTotalcapacity(Double totalcapacity) {
+    this.totalcapacity = totalcapacity;
+  }
+
+  public Logstorecontent capacityunit(Integer capacityunit) {
+    this.capacityunit = capacityunit;
+    return this;
+  }
+
+   /**
+   * jednotka objemu [persistentní položka]
+   * @return capacityunit
+  **/
+  @ApiModelProperty(example = "null", value = "jednotka objemu [persistentní položka]")
+  public Integer getCapacityunit() {
+    return capacityunit;
+  }
+
+  public void setCapacityunit(Integer capacityunit) {
+    this.capacityunit = capacityunit;
+  }
+
+  public Logstorecontent totalweight(Double totalweight) {
+    this.totalweight = totalweight;
+    return this;
+  }
+
+   /**
+   * celková váha [persistentní položka]
+   * @return totalweight
+  **/
+  @ApiModelProperty(example = "null", value = "celková váha [persistentní položka]")
+  public Double getTotalweight() {
+    return totalweight;
+  }
+
+  public void setTotalweight(Double totalweight) {
+    this.totalweight = totalweight;
+  }
+
+  public Logstorecontent weightunit(Integer weightunit) {
+    this.weightunit = weightunit;
+    return this;
+  }
+
+   /**
+   * jednotka hmotnosti [persistentní položka]
+   * @return weightunit
+  **/
+  @ApiModelProperty(example = "null", value = "jednotka hmotnosti [persistentní položka]")
+  public Integer getWeightunit() {
+    return weightunit;
+  }
+
+  public void setWeightunit(Integer weightunit) {
+    this.weightunit = weightunit;
   }
 
 
@@ -479,35 +551,35 @@ public class Logstorecontent   {
       return false;
     }
     Logstorecontent logstorecontent = (Logstorecontent) o;
-    return Objects.equals(this.displayName, logstorecontent.displayName) &&
-        Objects.equals(this.ID, logstorecontent.ID) &&
-        Objects.equals(this.classID, logstorecontent.classID) &&
-        Objects.equals(this.objVersion, logstorecontent.objVersion) &&
-        Objects.equals(this.parentID, logstorecontent.parentID) &&
-        Objects.equals(this.storeCardID, logstorecontent.storeCardID) &&
-        Objects.equals(this.storeBatchID, logstorecontent.storeBatchID) &&
-        Objects.equals(this.qUnit, logstorecontent.qUnit) &&
-        Objects.equals(this.unitRate, logstorecontent.unitRate) &&
+    return Objects.equals(this.displayname, logstorecontent.displayname) &&
+        Objects.equals(this.id, logstorecontent.id) &&
+        Objects.equals(this.classid, logstorecontent.classid) &&
+        Objects.equals(this.objversion, logstorecontent.objversion) &&
+        Objects.equals(this.parentId, logstorecontent.parentId) &&
+        Objects.equals(this.storecardId, logstorecontent.storecardId) &&
+        Objects.equals(this.storebatchId, logstorecontent.storebatchId) &&
+        Objects.equals(this.qunit, logstorecontent.qunit) &&
+        Objects.equals(this.unitrate, logstorecontent.unitrate) &&
         Objects.equals(this.quantity, logstorecontent.quantity) &&
-        Objects.equals(this.quantityReserved, logstorecontent.quantityReserved) &&
-        Objects.equals(this.quantityAwaited, logstorecontent.quantityAwaited) &&
-        Objects.equals(this.dateOfStorageDATE, logstorecontent.dateOfStorageDATE) &&
-        Objects.equals(this.invQuantity, logstorecontent.invQuantity) &&
-        Objects.equals(this.invChange, logstorecontent.invChange) &&
-        Objects.equals(this.unitQuantity, logstorecontent.unitQuantity) &&
-        Objects.equals(this.unitQuantityReserved, logstorecontent.unitQuantityReserved) &&
-        Objects.equals(this.unitQuantityAwaited, logstorecontent.unitQuantityAwaited) &&
-        Objects.equals(this.unitEditInvQuantity, logstorecontent.unitEditInvQuantity) &&
-        Objects.equals(this.invUnitQuantity, logstorecontent.invUnitQuantity) &&
-        Objects.equals(this.totalCapacity, logstorecontent.totalCapacity) &&
-        Objects.equals(this.capacityUnit, logstorecontent.capacityUnit) &&
-        Objects.equals(this.totalWeight, logstorecontent.totalWeight) &&
-        Objects.equals(this.weightUnit, logstorecontent.weightUnit);
+        Objects.equals(this.quantityreserved, logstorecontent.quantityreserved) &&
+        Objects.equals(this.quantityawaited, logstorecontent.quantityawaited) &&
+        Objects.equals(this.dateofstoragedate, logstorecontent.dateofstoragedate) &&
+        Objects.equals(this.invquantity, logstorecontent.invquantity) &&
+        Objects.equals(this.invchange, logstorecontent.invchange) &&
+        Objects.equals(this.unitquantity, logstorecontent.unitquantity) &&
+        Objects.equals(this.unitquantityreserved, logstorecontent.unitquantityreserved) &&
+        Objects.equals(this.unitquantityawaited, logstorecontent.unitquantityawaited) &&
+        Objects.equals(this.uniteditinvquantity, logstorecontent.uniteditinvquantity) &&
+        Objects.equals(this.invunitquantity, logstorecontent.invunitquantity) &&
+        Objects.equals(this.totalcapacity, logstorecontent.totalcapacity) &&
+        Objects.equals(this.capacityunit, logstorecontent.capacityunit) &&
+        Objects.equals(this.totalweight, logstorecontent.totalweight) &&
+        Objects.equals(this.weightunit, logstorecontent.weightunit);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, storeCardID, storeBatchID, qUnit, unitRate, quantity, quantityReserved, quantityAwaited, dateOfStorageDATE, invQuantity, invChange, unitQuantity, unitQuantityReserved, unitQuantityAwaited, unitEditInvQuantity, invUnitQuantity, totalCapacity, capacityUnit, totalWeight, weightUnit);
+    return Objects.hash(displayname, id, classid, objversion, parentId, storecardId, storebatchId, qunit, unitrate, quantity, quantityreserved, quantityawaited, dateofstoragedate, invquantity, invchange, unitquantity, unitquantityreserved, unitquantityawaited, uniteditinvquantity, invunitquantity, totalcapacity, capacityunit, totalweight, weightunit);
   }
 
   @Override
@@ -515,30 +587,30 @@ public class Logstorecontent   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Logstorecontent {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    storeBatchID: ").append(toIndentedString(storeBatchID)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    storebatchId: ").append(toIndentedString(storebatchId)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    quantityReserved: ").append(toIndentedString(quantityReserved)).append("\n");
-    sb.append("    quantityAwaited: ").append(toIndentedString(quantityAwaited)).append("\n");
-    sb.append("    dateOfStorageDATE: ").append(toIndentedString(dateOfStorageDATE)).append("\n");
-    sb.append("    invQuantity: ").append(toIndentedString(invQuantity)).append("\n");
-    sb.append("    invChange: ").append(toIndentedString(invChange)).append("\n");
-    sb.append("    unitQuantity: ").append(toIndentedString(unitQuantity)).append("\n");
-    sb.append("    unitQuantityReserved: ").append(toIndentedString(unitQuantityReserved)).append("\n");
-    sb.append("    unitQuantityAwaited: ").append(toIndentedString(unitQuantityAwaited)).append("\n");
-    sb.append("    unitEditInvQuantity: ").append(toIndentedString(unitEditInvQuantity)).append("\n");
-    sb.append("    invUnitQuantity: ").append(toIndentedString(invUnitQuantity)).append("\n");
-    sb.append("    totalCapacity: ").append(toIndentedString(totalCapacity)).append("\n");
-    sb.append("    capacityUnit: ").append(toIndentedString(capacityUnit)).append("\n");
-    sb.append("    totalWeight: ").append(toIndentedString(totalWeight)).append("\n");
-    sb.append("    weightUnit: ").append(toIndentedString(weightUnit)).append("\n");
+    sb.append("    quantityreserved: ").append(toIndentedString(quantityreserved)).append("\n");
+    sb.append("    quantityawaited: ").append(toIndentedString(quantityawaited)).append("\n");
+    sb.append("    dateofstoragedate: ").append(toIndentedString(dateofstoragedate)).append("\n");
+    sb.append("    invquantity: ").append(toIndentedString(invquantity)).append("\n");
+    sb.append("    invchange: ").append(toIndentedString(invchange)).append("\n");
+    sb.append("    unitquantity: ").append(toIndentedString(unitquantity)).append("\n");
+    sb.append("    unitquantityreserved: ").append(toIndentedString(unitquantityreserved)).append("\n");
+    sb.append("    unitquantityawaited: ").append(toIndentedString(unitquantityawaited)).append("\n");
+    sb.append("    uniteditinvquantity: ").append(toIndentedString(uniteditinvquantity)).append("\n");
+    sb.append("    invunitquantity: ").append(toIndentedString(invunitquantity)).append("\n");
+    sb.append("    totalcapacity: ").append(toIndentedString(totalcapacity)).append("\n");
+    sb.append("    capacityunit: ").append(toIndentedString(capacityunit)).append("\n");
+    sb.append("    totalweight: ").append(toIndentedString(totalweight)).append("\n");
+    sb.append("    weightunit: ").append(toIndentedString(weightunit)).append("\n");
     sb.append("}");
     return sb.toString();
   }

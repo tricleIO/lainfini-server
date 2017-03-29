@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,129 +34,174 @@ import java.util.Objects;
 /**
  * Actionpricelistrestrictionuse
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Actionpricelistrestrictionuse   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("RestrictionType")
-  private Integer restrictionType = null;
+  @SerializedName("restrictiontype")
+  private Integer restrictiontype = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Položka akčního ceníku [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Položka akčního ceníku [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Actionpricelistrestrictionuse restrictionType(Integer restrictionType) {
-    this.restrictionType = restrictionType;
+  public Actionpricelistrestrictionuse displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * RestrictionType [persistentní položka]
-   * @return restrictionType
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "RestrictionType [persistentní položka]")
-  public Integer getRestrictionType() {
-    return restrictionType;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setRestrictionType(Integer restrictionType) {
-    this.restrictionType = restrictionType;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Actionpricelistrestrictionuse firmID(String firmID) {
-    this.firmID = firmID;
+  public Actionpricelistrestrictionuse id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Firm_ID; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Firm_ID; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Actionpricelistrestrictionuse storeID(String storeID) {
-    this.storeID = storeID;
+  public Actionpricelistrestrictionuse classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Store_ID; ID objektu Firma [persistentní položka]
-   * @return storeID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Store_ID; ID objektu Firma [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Actionpricelistrestrictionuse objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Actionpricelistrestrictionuse parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu položka akčního ceníku [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu položka akčního ceníku [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Actionpricelistrestrictionuse restrictiontype(Integer restrictiontype) {
+    this.restrictiontype = restrictiontype;
+    return this;
+  }
+
+   /**
+   * restrictiontype [persistentní položka]
+   * @return restrictiontype
+  **/
+  @ApiModelProperty(example = "null", value = "restrictiontype [persistentní položka]")
+  public Integer getRestrictiontype() {
+    return restrictiontype;
+  }
+
+  public void setRestrictiontype(Integer restrictiontype) {
+    this.restrictiontype = restrictiontype;
+  }
+
+  public Actionpricelistrestrictionuse firmId(String firmId) {
+    this.firmId = firmId;
+    return this;
+  }
+
+   /**
+   * firm_id; id objektu firma [persistentní položka]
+   * @return firmId
+  **/
+  @ApiModelProperty(example = "null", value = "firm_id; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
+  }
+
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
+  }
+
+  public Actionpricelistrestrictionuse storeId(String storeId) {
+    this.storeId = storeId;
+    return this;
+  }
+
+   /**
+   * store_id; id objektu firma [persistentní položka]
+   * @return storeId
+  **/
+  @ApiModelProperty(example = "null", value = "store_id; id objektu firma [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
+  }
+
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
 
@@ -169,19 +214,19 @@ public class Actionpricelistrestrictionuse   {
       return false;
     }
     Actionpricelistrestrictionuse actionpricelistrestrictionuse = (Actionpricelistrestrictionuse) o;
-    return Objects.equals(this.displayName, actionpricelistrestrictionuse.displayName) &&
-        Objects.equals(this.ID, actionpricelistrestrictionuse.ID) &&
-        Objects.equals(this.classID, actionpricelistrestrictionuse.classID) &&
-        Objects.equals(this.objVersion, actionpricelistrestrictionuse.objVersion) &&
-        Objects.equals(this.parentID, actionpricelistrestrictionuse.parentID) &&
-        Objects.equals(this.restrictionType, actionpricelistrestrictionuse.restrictionType) &&
-        Objects.equals(this.firmID, actionpricelistrestrictionuse.firmID) &&
-        Objects.equals(this.storeID, actionpricelistrestrictionuse.storeID);
+    return Objects.equals(this.displayname, actionpricelistrestrictionuse.displayname) &&
+        Objects.equals(this.id, actionpricelistrestrictionuse.id) &&
+        Objects.equals(this.classid, actionpricelistrestrictionuse.classid) &&
+        Objects.equals(this.objversion, actionpricelistrestrictionuse.objversion) &&
+        Objects.equals(this.parentId, actionpricelistrestrictionuse.parentId) &&
+        Objects.equals(this.restrictiontype, actionpricelistrestrictionuse.restrictiontype) &&
+        Objects.equals(this.firmId, actionpricelistrestrictionuse.firmId) &&
+        Objects.equals(this.storeId, actionpricelistrestrictionuse.storeId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, restrictionType, firmID, storeID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, restrictiontype, firmId, storeId);
   }
 
   @Override
@@ -189,14 +234,14 @@ public class Actionpricelistrestrictionuse   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Actionpricelistrestrictionuse {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    restrictionType: ").append(toIndentedString(restrictionType)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    restrictiontype: ").append(toIndentedString(restrictiontype)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

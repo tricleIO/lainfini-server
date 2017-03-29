@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,117 +35,162 @@ import java.util.Objects;
 /**
  * Plmjoinputitemconfdiff
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmjoinputitemconfdiff   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("ConfirmedBy_ID")
-  private String confirmedByID = null;
+  @SerializedName("confirmedby_id")
+  private String confirmedbyId = null;
 
-  @SerializedName("ConfirmedAt$DATE")
-  private DateTime confirmedAtDATE = null;
+  @SerializedName("confirmedat$date")
+  private DateTime confirmedatdate = null;
 
-  @SerializedName("Kind")
+  @SerializedName("kind")
   private Integer kind = null;
 
-  @SerializedName("Difference")
+  @SerializedName("difference")
   private Double difference = null;
 
-  @SerializedName("ProductReceptionRow_ID")
-  private String productReceptionRowID = null;
+  @SerializedName("productreceptionrow_id")
+  private String productreceptionrowId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu VP - kusovník [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu VP - kusovník [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Plmjoinputitemconfdiff confirmedByID(String confirmedByID) {
-    this.confirmedByID = confirmedByID;
+  public Plmjoinputitemconfdiff displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Potvrdil; ID objektu Uživatel [persistentní položka]
-   * @return confirmedByID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Potvrdil; ID objektu Uživatel [persistentní položka]")
-  public String getConfirmedByID() {
-    return confirmedByID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setConfirmedByID(String confirmedByID) {
-    this.confirmedByID = confirmedByID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Plmjoinputitemconfdiff confirmedAtDATE(DateTime confirmedAtDATE) {
-    this.confirmedAtDATE = confirmedAtDATE;
+  public Plmjoinputitemconfdiff id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Potvrzeno [persistentní položka]
-   * @return confirmedAtDATE
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Potvrzeno [persistentní položka]")
-  public DateTime getConfirmedAtDATE() {
-    return confirmedAtDATE;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setConfirmedAtDATE(DateTime confirmedAtDATE) {
-    this.confirmedAtDATE = confirmedAtDATE;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmjoinputitemconfdiff classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmjoinputitemconfdiff objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Plmjoinputitemconfdiff parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu vp - kusovník [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu vp - kusovník [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Plmjoinputitemconfdiff confirmedbyId(String confirmedbyId) {
+    this.confirmedbyId = confirmedbyId;
+    return this;
+  }
+
+   /**
+   * potvrdil; id objektu uživatel [persistentní položka]
+   * @return confirmedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "potvrdil; id objektu uživatel [persistentní položka]")
+  public String getConfirmedbyId() {
+    return confirmedbyId;
+  }
+
+  public void setConfirmedbyId(String confirmedbyId) {
+    this.confirmedbyId = confirmedbyId;
+  }
+
+  public Plmjoinputitemconfdiff confirmedatdate(DateTime confirmedatdate) {
+    this.confirmedatdate = confirmedatdate;
+    return this;
+  }
+
+   /**
+   * potvrzeno [persistentní položka]
+   * @return confirmedatdate
+  **/
+  @ApiModelProperty(example = "null", value = "potvrzeno [persistentní položka]")
+  public DateTime getConfirmedatdate() {
+    return confirmedatdate;
+  }
+
+  public void setConfirmedatdate(DateTime confirmedatdate) {
+    this.confirmedatdate = confirmedatdate;
   }
 
   public Plmjoinputitemconfdiff kind(Integer kind) {
@@ -154,10 +199,10 @@ public class Plmjoinputitemconfdiff   {
   }
 
    /**
-   * Druh [persistentní položka]
+   * druh [persistentní položka]
    * @return kind
   **/
-  @ApiModelProperty(example = "null", value = "Druh [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "druh [persistentní položka]")
   public Integer getKind() {
     return kind;
   }
@@ -172,10 +217,10 @@ public class Plmjoinputitemconfdiff   {
   }
 
    /**
-   * Rozdíl/Hodnota [persistentní položka]
+   * rozdíl/hodnota [persistentní položka]
    * @return difference
   **/
-  @ApiModelProperty(example = "null", value = "Rozdíl/Hodnota [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "rozdíl/hodnota [persistentní položka]")
   public Double getDifference() {
     return difference;
   }
@@ -184,22 +229,22 @@ public class Plmjoinputitemconfdiff   {
     this.difference = difference;
   }
 
-  public Plmjoinputitemconfdiff productReceptionRowID(String productReceptionRowID) {
-    this.productReceptionRowID = productReceptionRowID;
+  public Plmjoinputitemconfdiff productreceptionrowId(String productreceptionrowId) {
+    this.productreceptionrowId = productreceptionrowId;
     return this;
   }
 
    /**
-   * Řádek příjmu; ID objektu Příjem hotových výrobků - řádek [persistentní položka]
-   * @return productReceptionRowID
+   * Řádek příjmu; id objektu příjem hotových výrobků - řádek [persistentní položka]
+   * @return productreceptionrowId
   **/
-  @ApiModelProperty(example = "null", value = "Řádek příjmu; ID objektu Příjem hotových výrobků - řádek [persistentní položka]")
-  public String getProductReceptionRowID() {
-    return productReceptionRowID;
+  @ApiModelProperty(example = "null", value = "Řádek příjmu; id objektu příjem hotových výrobků - řádek [persistentní položka]")
+  public String getProductreceptionrowId() {
+    return productreceptionrowId;
   }
 
-  public void setProductReceptionRowID(String productReceptionRowID) {
-    this.productReceptionRowID = productReceptionRowID;
+  public void setProductreceptionrowId(String productreceptionrowId) {
+    this.productreceptionrowId = productreceptionrowId;
   }
 
 
@@ -212,21 +257,21 @@ public class Plmjoinputitemconfdiff   {
       return false;
     }
     Plmjoinputitemconfdiff plmjoinputitemconfdiff = (Plmjoinputitemconfdiff) o;
-    return Objects.equals(this.displayName, plmjoinputitemconfdiff.displayName) &&
-        Objects.equals(this.ID, plmjoinputitemconfdiff.ID) &&
-        Objects.equals(this.classID, plmjoinputitemconfdiff.classID) &&
-        Objects.equals(this.objVersion, plmjoinputitemconfdiff.objVersion) &&
-        Objects.equals(this.parentID, plmjoinputitemconfdiff.parentID) &&
-        Objects.equals(this.confirmedByID, plmjoinputitemconfdiff.confirmedByID) &&
-        Objects.equals(this.confirmedAtDATE, plmjoinputitemconfdiff.confirmedAtDATE) &&
+    return Objects.equals(this.displayname, plmjoinputitemconfdiff.displayname) &&
+        Objects.equals(this.id, plmjoinputitemconfdiff.id) &&
+        Objects.equals(this.classid, plmjoinputitemconfdiff.classid) &&
+        Objects.equals(this.objversion, plmjoinputitemconfdiff.objversion) &&
+        Objects.equals(this.parentId, plmjoinputitemconfdiff.parentId) &&
+        Objects.equals(this.confirmedbyId, plmjoinputitemconfdiff.confirmedbyId) &&
+        Objects.equals(this.confirmedatdate, plmjoinputitemconfdiff.confirmedatdate) &&
         Objects.equals(this.kind, plmjoinputitemconfdiff.kind) &&
         Objects.equals(this.difference, plmjoinputitemconfdiff.difference) &&
-        Objects.equals(this.productReceptionRowID, plmjoinputitemconfdiff.productReceptionRowID);
+        Objects.equals(this.productreceptionrowId, plmjoinputitemconfdiff.productreceptionrowId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, confirmedByID, confirmedAtDATE, kind, difference, productReceptionRowID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, confirmedbyId, confirmedatdate, kind, difference, productreceptionrowId);
   }
 
   @Override
@@ -234,16 +279,16 @@ public class Plmjoinputitemconfdiff   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmjoinputitemconfdiff {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    confirmedByID: ").append(toIndentedString(confirmedByID)).append("\n");
-    sb.append("    confirmedAtDATE: ").append(toIndentedString(confirmedAtDATE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    confirmedbyId: ").append(toIndentedString(confirmedbyId)).append("\n");
+    sb.append("    confirmedatdate: ").append(toIndentedString(confirmedatdate)).append("\n");
     sb.append("    kind: ").append(toIndentedString(kind)).append("\n");
     sb.append("    difference: ").append(toIndentedString(difference)).append("\n");
-    sb.append("    productReceptionRowID: ").append(toIndentedString(productReceptionRowID)).append("\n");
+    sb.append("    productreceptionrowId: ").append(toIndentedString(productreceptionrowId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

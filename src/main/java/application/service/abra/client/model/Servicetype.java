@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,174 +34,210 @@ import java.util.Objects;
 /**
  * Servicetype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Servicetype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ObjectKind")
-  private Integer objectKind = null;
+  @SerializedName("objectkind")
+  private Integer objectkind = null;
 
-  @SerializedName("ServiceDocsDocQueue_ID")
-  private String serviceDocsDocQueueID = null;
+  @SerializedName("servicedocsdocqueue_id")
+  private String servicedocsdocqueueId = null;
 
-  @SerializedName("ObjectsSubTreeMenu_ID")
-  private String objectsSubTreeMenuID = null;
+  @SerializedName("objectssubtreemenu_id")
+  private String objectssubtreemenuId = null;
 
-  @SerializedName("MaterialSubTreeMenu_ID")
-  private String materialSubTreeMenuID = null;
+  @SerializedName("materialsubtreemenu_id")
+  private String materialsubtreemenuId = null;
 
-  @SerializedName("WorkSubTreeMenu_ID")
-  private String workSubTreeMenuID = null;
+  @SerializedName("worksubtreemenu_id")
+  private String worksubtreemenuId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("ServicedObjectOnStore")
-  private Boolean servicedObjectOnStore = null;
+  @SerializedName("servicedobjectonstore")
+  private Boolean servicedobjectonstore = null;
 
-  @SerializedName("StoreReceiptDocType")
-  private Integer storeReceiptDocType = null;
+  @SerializedName("storereceiptdoctype")
+  private Integer storereceiptdoctype = null;
 
-  @SerializedName("StoreReceiptDocQueue_ID")
-  private String storeReceiptDocQueueID = null;
+  @SerializedName("storereceiptdocqueue_id")
+  private String storereceiptdocqueueId = null;
 
-  @SerializedName("BillOfDeliveryDocQueue_ID")
-  private String billOfDeliveryDocQueueID = null;
+  @SerializedName("billofdeliverydocqueue_id")
+  private String billofdeliverydocqueueId = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("CooperationStore_ID")
-  private String cooperationStoreID = null;
+  @SerializedName("cooperationstore_id")
+  private String cooperationstoreId = null;
 
-  @SerializedName("MaterialStore_ID")
-  private String materialStoreID = null;
+  @SerializedName("materialstore_id")
+  private String materialstoreId = null;
 
-  @SerializedName("MaterialDocQueue_ID")
-  private String materialDocQueueID = null;
+  @SerializedName("materialdocqueue_id")
+  private String materialdocqueueId = null;
 
-  @SerializedName("MatRefundedBillDocQueue_ID")
-  private String matRefundedBillDocQueueID = null;
+  @SerializedName("matrefundedbilldocqueue_id")
+  private String matrefundedbilldocqueueId = null;
 
-  @SerializedName("WorkStore_ID")
-  private String workStoreID = null;
+  @SerializedName("workstore_id")
+  private String workstoreId = null;
 
-  @SerializedName("CashDesk_ID")
-  private String cashDeskID = null;
+  @SerializedName("cashdesk_id")
+  private String cashdeskId = null;
 
-  @SerializedName("CashReceivedDocQueue_ID")
-  private String cashReceivedDocQueueID = null;
+  @SerializedName("cashreceiveddocqueue_id")
+  private String cashreceiveddocqueueId = null;
 
-  @SerializedName("POSTerminalType")
-  private Integer pOSTerminalType = null;
+  @SerializedName("posterminaltype")
+  private Integer posterminaltype = null;
 
-  @SerializedName("DepositDocQueue_ID")
-  private String depositDocQueueID = null;
+  @SerializedName("depositdocqueue_id")
+  private String depositdocqueueId = null;
 
-  @SerializedName("WarnForOtherUnclosed")
-  private Boolean warnForOtherUnclosed = null;
+  @SerializedName("warnforotherunclosed")
+  private Boolean warnforotherunclosed = null;
 
-  @SerializedName("InsuaranceCoverage")
-  private Boolean insuaranceCoverage = null;
+  @SerializedName("insuarancecoverage")
+  private Boolean insuarancecoverage = null;
 
-  @SerializedName("ToInvoice")
-  private Boolean toInvoice = null;
+  @SerializedName("toinvoice")
+  private Boolean toinvoice = null;
 
-  @SerializedName("GenerateActivities")
-  private Boolean generateActivities = null;
+  @SerializedName("generateactivities")
+  private Boolean generateactivities = null;
 
-  @SerializedName("IncomingTransferDocQueue_ID")
-  private String incomingTransferDocQueueID = null;
+  @SerializedName("incomingtransferdocqueue_id")
+  private String incomingtransferdocqueueId = null;
 
-  @SerializedName("OutgoingTransferDocQueue_ID")
-  private String outgoingTransferDocQueueID = null;
+  @SerializedName("outgoingtransferdocqueue_id")
+  private String outgoingtransferdocqueueId = null;
 
-  @SerializedName("MaterOutTrasferDocQueue_ID")
-  private String materOutTrasferDocQueueID = null;
+  @SerializedName("materouttrasferdocqueue_id")
+  private String materouttrasferdocqueueId = null;
 
-  @SerializedName("MaterInTransferDocQueue_ID")
-  private String materInTransferDocQueueID = null;
+  @SerializedName("materintransferdocqueue_id")
+  private String materintransferdocqueueId = null;
 
-  @SerializedName("IncomeTypeMaterial_ID")
-  private String incomeTypeMaterialID = null;
+  @SerializedName("incometypematerial_id")
+  private String incometypematerialId = null;
 
-  @SerializedName("IncomeTypeWork_ID")
-  private String incomeTypeWorkID = null;
+  @SerializedName("incometypework_id")
+  private String incometypeworkId = null;
 
-  @SerializedName("IncomeTypeRole_ID")
-  private String incomeTypeRoleID = null;
+  @SerializedName("incometyperole_id")
+  private String incometyperoleId = null;
 
-  @SerializedName("IncomeTypeText_ID")
-  private String incomeTypeTextID = null;
+  @SerializedName("incometypetext_id")
+  private String incometypetextId = null;
 
-  @SerializedName("GuarantyRepairDefault")
-  private Integer guarantyRepairDefault = null;
+  @SerializedName("guarantyrepairdefault")
+  private Integer guarantyrepairdefault = null;
 
-  @SerializedName("MaxDuration")
-  private Double maxDuration = null;
+  @SerializedName("maxduration")
+  private Double maxduration = null;
 
-  @SerializedName("WorkInvoicingType")
-  private Integer workInvoicingType = null;
+  @SerializedName("workinvoicingtype")
+  private Integer workinvoicingtype = null;
 
-  @SerializedName("IssuedCreditNoteDQ_ID")
-  private String issuedCreditNoteDQID = null;
+  @SerializedName("issuedcreditnotedq_id")
+  private String issuedcreditnotedqId = null;
 
-  @SerializedName("RefundedCashReceivedDQ_ID")
-  private String refundedCashReceivedDQID = null;
+  @SerializedName("refundedcashreceiveddq_id")
+  private String refundedcashreceiveddqId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Servicetype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Servicetype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Servicetype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Servicetype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Servicetype hidden(Boolean hidden) {
@@ -210,10 +246,10 @@ public class Servicetype   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -228,10 +264,10 @@ public class Servicetype   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -246,10 +282,10 @@ public class Servicetype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -258,670 +294,670 @@ public class Servicetype   {
     this.name = name;
   }
 
-  public Servicetype objectKind(Integer objectKind) {
-    this.objectKind = objectKind;
+  public Servicetype objectkind(Integer objectkind) {
+    this.objectkind = objectkind;
     return this;
   }
 
    /**
-   * Druh [persistentní položka]
-   * @return objectKind
+   * druh [persistentní položka]
+   * @return objectkind
   **/
-  @ApiModelProperty(example = "null", value = "Druh [persistentní položka]")
-  public Integer getObjectKind() {
-    return objectKind;
+  @ApiModelProperty(example = "null", value = "druh [persistentní položka]")
+  public Integer getObjectkind() {
+    return objectkind;
   }
 
-  public void setObjectKind(Integer objectKind) {
-    this.objectKind = objectKind;
+  public void setObjectkind(Integer objectkind) {
+    this.objectkind = objectkind;
   }
 
-  public Servicetype serviceDocsDocQueueID(String serviceDocsDocQueueID) {
-    this.serviceDocsDocQueueID = serviceDocsDocQueueID;
+  public Servicetype servicedocsdocqueueId(String servicedocsdocqueueId) {
+    this.servicedocsdocqueueId = servicedocsdocqueueId;
     return this;
   }
 
    /**
-   * Řada pro SL; ID objektu Řada dokladů [persistentní položka]
-   * @return serviceDocsDocQueueID
+   * Řada pro sl; id objektu Řada dokladů [persistentní položka]
+   * @return servicedocsdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada pro SL; ID objektu Řada dokladů [persistentní položka]")
-  public String getServiceDocsDocQueueID() {
-    return serviceDocsDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada pro sl; id objektu Řada dokladů [persistentní položka]")
+  public String getServicedocsdocqueueId() {
+    return servicedocsdocqueueId;
   }
 
-  public void setServiceDocsDocQueueID(String serviceDocsDocQueueID) {
-    this.serviceDocsDocQueueID = serviceDocsDocQueueID;
+  public void setServicedocsdocqueueId(String servicedocsdocqueueId) {
+    this.servicedocsdocqueueId = servicedocsdocqueueId;
   }
 
-  public Servicetype objectsSubTreeMenuID(String objectsSubTreeMenuID) {
-    this.objectsSubTreeMenuID = objectsSubTreeMenuID;
+  public Servicetype objectssubtreemenuId(String objectssubtreemenuId) {
+    this.objectssubtreemenuId = objectssubtreemenuId;
     return this;
   }
 
    /**
-   * Menu předmětů; ID objektu Skladové menu [persistentní položka]
-   * @return objectsSubTreeMenuID
+   * menu předmětů; id objektu skladové menu [persistentní položka]
+   * @return objectssubtreemenuId
   **/
-  @ApiModelProperty(example = "null", value = "Menu předmětů; ID objektu Skladové menu [persistentní položka]")
-  public String getObjectsSubTreeMenuID() {
-    return objectsSubTreeMenuID;
+  @ApiModelProperty(example = "null", value = "menu předmětů; id objektu skladové menu [persistentní položka]")
+  public String getObjectssubtreemenuId() {
+    return objectssubtreemenuId;
   }
 
-  public void setObjectsSubTreeMenuID(String objectsSubTreeMenuID) {
-    this.objectsSubTreeMenuID = objectsSubTreeMenuID;
+  public void setObjectssubtreemenuId(String objectssubtreemenuId) {
+    this.objectssubtreemenuId = objectssubtreemenuId;
   }
 
-  public Servicetype materialSubTreeMenuID(String materialSubTreeMenuID) {
-    this.materialSubTreeMenuID = materialSubTreeMenuID;
+  public Servicetype materialsubtreemenuId(String materialsubtreemenuId) {
+    this.materialsubtreemenuId = materialsubtreemenuId;
     return this;
   }
 
    /**
-   * Menu materiálu; ID objektu Skladové menu [persistentní položka]
-   * @return materialSubTreeMenuID
+   * menu materiálu; id objektu skladové menu [persistentní položka]
+   * @return materialsubtreemenuId
   **/
-  @ApiModelProperty(example = "null", value = "Menu materiálu; ID objektu Skladové menu [persistentní položka]")
-  public String getMaterialSubTreeMenuID() {
-    return materialSubTreeMenuID;
+  @ApiModelProperty(example = "null", value = "menu materiálu; id objektu skladové menu [persistentní položka]")
+  public String getMaterialsubtreemenuId() {
+    return materialsubtreemenuId;
   }
 
-  public void setMaterialSubTreeMenuID(String materialSubTreeMenuID) {
-    this.materialSubTreeMenuID = materialSubTreeMenuID;
+  public void setMaterialsubtreemenuId(String materialsubtreemenuId) {
+    this.materialsubtreemenuId = materialsubtreemenuId;
   }
 
-  public Servicetype workSubTreeMenuID(String workSubTreeMenuID) {
-    this.workSubTreeMenuID = workSubTreeMenuID;
+  public Servicetype worksubtreemenuId(String worksubtreemenuId) {
+    this.worksubtreemenuId = worksubtreemenuId;
     return this;
   }
 
    /**
-   * Menu práce; ID objektu Skladové menu [persistentní položka]
-   * @return workSubTreeMenuID
+   * menu práce; id objektu skladové menu [persistentní položka]
+   * @return worksubtreemenuId
   **/
-  @ApiModelProperty(example = "null", value = "Menu práce; ID objektu Skladové menu [persistentní položka]")
-  public String getWorkSubTreeMenuID() {
-    return workSubTreeMenuID;
+  @ApiModelProperty(example = "null", value = "menu práce; id objektu skladové menu [persistentní položka]")
+  public String getWorksubtreemenuId() {
+    return worksubtreemenuId;
   }
 
-  public void setWorkSubTreeMenuID(String workSubTreeMenuID) {
-    this.workSubTreeMenuID = workSubTreeMenuID;
+  public void setWorksubtreemenuId(String worksubtreemenuId) {
+    this.worksubtreemenuId = worksubtreemenuId;
   }
 
-  public Servicetype divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Servicetype divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Servicetype servicedObjectOnStore(Boolean servicedObjectOnStore) {
-    this.servicedObjectOnStore = servicedObjectOnStore;
+  public Servicetype servicedobjectonstore(Boolean servicedobjectonstore) {
+    this.servicedobjectonstore = servicedobjectonstore;
     return this;
   }
 
    /**
-   * Naskladňovat [persistentní položka]
-   * @return servicedObjectOnStore
+   * naskladňovat [persistentní položka]
+   * @return servicedobjectonstore
   **/
-  @ApiModelProperty(example = "null", value = "Naskladňovat [persistentní položka]")
-  public Boolean getServicedObjectOnStore() {
-    return servicedObjectOnStore;
+  @ApiModelProperty(example = "null", value = "naskladňovat [persistentní položka]")
+  public Boolean getServicedobjectonstore() {
+    return servicedobjectonstore;
   }
 
-  public void setServicedObjectOnStore(Boolean servicedObjectOnStore) {
-    this.servicedObjectOnStore = servicedObjectOnStore;
+  public void setServicedobjectonstore(Boolean servicedobjectonstore) {
+    this.servicedobjectonstore = servicedobjectonstore;
   }
 
-  public Servicetype storeReceiptDocType(Integer storeReceiptDocType) {
-    this.storeReceiptDocType = storeReceiptDocType;
+  public Servicetype storereceiptdoctype(Integer storereceiptdoctype) {
+    this.storereceiptdoctype = storereceiptdoctype;
     return this;
   }
 
    /**
-   * Typ dokladu při příjmu [persistentní položka]
-   * @return storeReceiptDocType
+   * typ dokladu při příjmu [persistentní položka]
+   * @return storereceiptdoctype
   **/
-  @ApiModelProperty(example = "null", value = "Typ dokladu při příjmu [persistentní položka]")
-  public Integer getStoreReceiptDocType() {
-    return storeReceiptDocType;
+  @ApiModelProperty(example = "null", value = "typ dokladu při příjmu [persistentní položka]")
+  public Integer getStorereceiptdoctype() {
+    return storereceiptdoctype;
   }
 
-  public void setStoreReceiptDocType(Integer storeReceiptDocType) {
-    this.storeReceiptDocType = storeReceiptDocType;
+  public void setStorereceiptdoctype(Integer storereceiptdoctype) {
+    this.storereceiptdoctype = storereceiptdoctype;
   }
 
-  public Servicetype storeReceiptDocQueueID(String storeReceiptDocQueueID) {
-    this.storeReceiptDocQueueID = storeReceiptDocQueueID;
+  public Servicetype storereceiptdocqueueId(String storereceiptdocqueueId) {
+    this.storereceiptdocqueueId = storereceiptdocqueueId;
     return this;
   }
 
    /**
-   * Řada příjemek; ID objektu Řada dokladů [persistentní položka]
-   * @return storeReceiptDocQueueID
+   * Řada příjemek; id objektu Řada dokladů [persistentní položka]
+   * @return storereceiptdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada příjemek; ID objektu Řada dokladů [persistentní položka]")
-  public String getStoreReceiptDocQueueID() {
-    return storeReceiptDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada příjemek; id objektu Řada dokladů [persistentní položka]")
+  public String getStorereceiptdocqueueId() {
+    return storereceiptdocqueueId;
   }
 
-  public void setStoreReceiptDocQueueID(String storeReceiptDocQueueID) {
-    this.storeReceiptDocQueueID = storeReceiptDocQueueID;
+  public void setStorereceiptdocqueueId(String storereceiptdocqueueId) {
+    this.storereceiptdocqueueId = storereceiptdocqueueId;
   }
 
-  public Servicetype billOfDeliveryDocQueueID(String billOfDeliveryDocQueueID) {
-    this.billOfDeliveryDocQueueID = billOfDeliveryDocQueueID;
+  public Servicetype billofdeliverydocqueueId(String billofdeliverydocqueueId) {
+    this.billofdeliverydocqueueId = billofdeliverydocqueueId;
     return this;
   }
 
    /**
-   * Řada výdejek; ID objektu Řada dokladů [persistentní položka]
-   * @return billOfDeliveryDocQueueID
+   * Řada výdejek; id objektu Řada dokladů [persistentní položka]
+   * @return billofdeliverydocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada výdejek; ID objektu Řada dokladů [persistentní položka]")
-  public String getBillOfDeliveryDocQueueID() {
-    return billOfDeliveryDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada výdejek; id objektu Řada dokladů [persistentní položka]")
+  public String getBillofdeliverydocqueueId() {
+    return billofdeliverydocqueueId;
   }
 
-  public void setBillOfDeliveryDocQueueID(String billOfDeliveryDocQueueID) {
-    this.billOfDeliveryDocQueueID = billOfDeliveryDocQueueID;
+  public void setBillofdeliverydocqueueId(String billofdeliverydocqueueId) {
+    this.billofdeliverydocqueueId = billofdeliverydocqueueId;
   }
 
-  public Servicetype storeID(String storeID) {
-    this.storeID = storeID;
+  public Servicetype storeId(String storeId) {
+    this.storeId = storeId;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
-  public Servicetype cooperationStoreID(String cooperationStoreID) {
-    this.cooperationStoreID = cooperationStoreID;
+  public Servicetype cooperationstoreId(String cooperationstoreId) {
+    this.cooperationstoreId = cooperationstoreId;
     return this;
   }
 
    /**
-   * Kooperační sklad; ID objektu Sklad [persistentní položka]
-   * @return cooperationStoreID
+   * kooperační sklad; id objektu sklad [persistentní položka]
+   * @return cooperationstoreId
   **/
-  @ApiModelProperty(example = "null", value = "Kooperační sklad; ID objektu Sklad [persistentní položka]")
-  public String getCooperationStoreID() {
-    return cooperationStoreID;
+  @ApiModelProperty(example = "null", value = "kooperační sklad; id objektu sklad [persistentní položka]")
+  public String getCooperationstoreId() {
+    return cooperationstoreId;
   }
 
-  public void setCooperationStoreID(String cooperationStoreID) {
-    this.cooperationStoreID = cooperationStoreID;
+  public void setCooperationstoreId(String cooperationstoreId) {
+    this.cooperationstoreId = cooperationstoreId;
   }
 
-  public Servicetype materialStoreID(String materialStoreID) {
-    this.materialStoreID = materialStoreID;
+  public Servicetype materialstoreId(String materialstoreId) {
+    this.materialstoreId = materialstoreId;
     return this;
   }
 
    /**
-   * Sklad mat.; ID objektu Sklad [persistentní položka]
-   * @return materialStoreID
+   * sklad mat.; id objektu sklad [persistentní položka]
+   * @return materialstoreId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad mat.; ID objektu Sklad [persistentní položka]")
-  public String getMaterialStoreID() {
-    return materialStoreID;
+  @ApiModelProperty(example = "null", value = "sklad mat.; id objektu sklad [persistentní položka]")
+  public String getMaterialstoreId() {
+    return materialstoreId;
   }
 
-  public void setMaterialStoreID(String materialStoreID) {
-    this.materialStoreID = materialStoreID;
+  public void setMaterialstoreId(String materialstoreId) {
+    this.materialstoreId = materialstoreId;
   }
 
-  public Servicetype materialDocQueueID(String materialDocQueueID) {
-    this.materialDocQueueID = materialDocQueueID;
+  public Servicetype materialdocqueueId(String materialdocqueueId) {
+    this.materialdocqueueId = materialdocqueueId;
     return this;
   }
 
    /**
-   * Řada pro výdej materiálu; ID objektu Řada dokladů [persistentní položka]
-   * @return materialDocQueueID
+   * Řada pro výdej materiálu; id objektu Řada dokladů [persistentní položka]
+   * @return materialdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada pro výdej materiálu; ID objektu Řada dokladů [persistentní položka]")
-  public String getMaterialDocQueueID() {
-    return materialDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada pro výdej materiálu; id objektu Řada dokladů [persistentní položka]")
+  public String getMaterialdocqueueId() {
+    return materialdocqueueId;
   }
 
-  public void setMaterialDocQueueID(String materialDocQueueID) {
-    this.materialDocQueueID = materialDocQueueID;
+  public void setMaterialdocqueueId(String materialdocqueueId) {
+    this.materialdocqueueId = materialdocqueueId;
   }
 
-  public Servicetype matRefundedBillDocQueueID(String matRefundedBillDocQueueID) {
-    this.matRefundedBillDocQueueID = matRefundedBillDocQueueID;
+  public Servicetype matrefundedbilldocqueueId(String matrefundedbilldocqueueId) {
+    this.matrefundedbilldocqueueId = matrefundedbilldocqueueId;
     return this;
   }
 
    /**
-   * Řada pro vratky materiálu; ID objektu Řada dokladů [persistentní položka]
-   * @return matRefundedBillDocQueueID
+   * Řada pro vratky materiálu; id objektu Řada dokladů [persistentní položka]
+   * @return matrefundedbilldocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada pro vratky materiálu; ID objektu Řada dokladů [persistentní položka]")
-  public String getMatRefundedBillDocQueueID() {
-    return matRefundedBillDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada pro vratky materiálu; id objektu Řada dokladů [persistentní položka]")
+  public String getMatrefundedbilldocqueueId() {
+    return matrefundedbilldocqueueId;
   }
 
-  public void setMatRefundedBillDocQueueID(String matRefundedBillDocQueueID) {
-    this.matRefundedBillDocQueueID = matRefundedBillDocQueueID;
+  public void setMatrefundedbilldocqueueId(String matrefundedbilldocqueueId) {
+    this.matrefundedbilldocqueueId = matrefundedbilldocqueueId;
   }
 
-  public Servicetype workStoreID(String workStoreID) {
-    this.workStoreID = workStoreID;
+  public Servicetype workstoreId(String workstoreId) {
+    this.workstoreId = workstoreId;
     return this;
   }
 
    /**
-   * Sklad práce; ID objektu Sklad [persistentní položka]
-   * @return workStoreID
+   * sklad práce; id objektu sklad [persistentní položka]
+   * @return workstoreId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad práce; ID objektu Sklad [persistentní položka]")
-  public String getWorkStoreID() {
-    return workStoreID;
+  @ApiModelProperty(example = "null", value = "sklad práce; id objektu sklad [persistentní položka]")
+  public String getWorkstoreId() {
+    return workstoreId;
   }
 
-  public void setWorkStoreID(String workStoreID) {
-    this.workStoreID = workStoreID;
+  public void setWorkstoreId(String workstoreId) {
+    this.workstoreId = workstoreId;
   }
 
-  public Servicetype cashDeskID(String cashDeskID) {
-    this.cashDeskID = cashDeskID;
+  public Servicetype cashdeskId(String cashdeskId) {
+    this.cashdeskId = cashdeskId;
     return this;
   }
 
    /**
-   * Pokladna; ID objektu Pokladna [persistentní položka]
-   * @return cashDeskID
+   * pokladna; id objektu pokladna [persistentní položka]
+   * @return cashdeskId
   **/
-  @ApiModelProperty(example = "null", value = "Pokladna; ID objektu Pokladna [persistentní položka]")
-  public String getCashDeskID() {
-    return cashDeskID;
+  @ApiModelProperty(example = "null", value = "pokladna; id objektu pokladna [persistentní položka]")
+  public String getCashdeskId() {
+    return cashdeskId;
   }
 
-  public void setCashDeskID(String cashDeskID) {
-    this.cashDeskID = cashDeskID;
+  public void setCashdeskId(String cashdeskId) {
+    this.cashdeskId = cashdeskId;
   }
 
-  public Servicetype cashReceivedDocQueueID(String cashReceivedDocQueueID) {
-    this.cashReceivedDocQueueID = cashReceivedDocQueueID;
+  public Servicetype cashreceiveddocqueueId(String cashreceiveddocqueueId) {
+    this.cashreceiveddocqueueId = cashreceiveddocqueueId;
     return this;
   }
 
    /**
-   * Řada pokl.příj.; ID objektu Řada dokladů [persistentní položka]
-   * @return cashReceivedDocQueueID
+   * Řada pokl.příj.; id objektu Řada dokladů [persistentní položka]
+   * @return cashreceiveddocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada pokl.příj.; ID objektu Řada dokladů [persistentní položka]")
-  public String getCashReceivedDocQueueID() {
-    return cashReceivedDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada pokl.příj.; id objektu Řada dokladů [persistentní položka]")
+  public String getCashreceiveddocqueueId() {
+    return cashreceiveddocqueueId;
   }
 
-  public void setCashReceivedDocQueueID(String cashReceivedDocQueueID) {
-    this.cashReceivedDocQueueID = cashReceivedDocQueueID;
+  public void setCashreceiveddocqueueId(String cashreceiveddocqueueId) {
+    this.cashreceiveddocqueueId = cashreceiveddocqueueId;
   }
 
-  public Servicetype pOSTerminalType(Integer pOSTerminalType) {
-    this.pOSTerminalType = pOSTerminalType;
+  public Servicetype posterminaltype(Integer posterminaltype) {
+    this.posterminaltype = posterminaltype;
     return this;
   }
 
    /**
-   * Typ POS terminálu [persistentní položka]
-   * @return pOSTerminalType
+   * typ pos terminálu [persistentní položka]
+   * @return posterminaltype
   **/
-  @ApiModelProperty(example = "null", value = "Typ POS terminálu [persistentní položka]")
-  public Integer getPOSTerminalType() {
-    return pOSTerminalType;
+  @ApiModelProperty(example = "null", value = "typ pos terminálu [persistentní položka]")
+  public Integer getPosterminaltype() {
+    return posterminaltype;
   }
 
-  public void setPOSTerminalType(Integer pOSTerminalType) {
-    this.pOSTerminalType = pOSTerminalType;
+  public void setPosterminaltype(Integer posterminaltype) {
+    this.posterminaltype = posterminaltype;
   }
 
-  public Servicetype depositDocQueueID(String depositDocQueueID) {
-    this.depositDocQueueID = depositDocQueueID;
+  public Servicetype depositdocqueueId(String depositdocqueueId) {
+    this.depositdocqueueId = depositdocqueueId;
     return this;
   }
 
    /**
-   * Řada záloh; ID objektu Řada dokladů [persistentní položka]
-   * @return depositDocQueueID
+   * Řada záloh; id objektu Řada dokladů [persistentní položka]
+   * @return depositdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada záloh; ID objektu Řada dokladů [persistentní položka]")
-  public String getDepositDocQueueID() {
-    return depositDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada záloh; id objektu Řada dokladů [persistentní položka]")
+  public String getDepositdocqueueId() {
+    return depositdocqueueId;
   }
 
-  public void setDepositDocQueueID(String depositDocQueueID) {
-    this.depositDocQueueID = depositDocQueueID;
+  public void setDepositdocqueueId(String depositdocqueueId) {
+    this.depositdocqueueId = depositdocqueueId;
   }
 
-  public Servicetype warnForOtherUnclosed(Boolean warnForOtherUnclosed) {
-    this.warnForOtherUnclosed = warnForOtherUnclosed;
+  public Servicetype warnforotherunclosed(Boolean warnforotherunclosed) {
+    this.warnforotherunclosed = warnforotherunclosed;
     return this;
   }
 
    /**
-   * Upozornit [persistentní položka]
-   * @return warnForOtherUnclosed
+   * upozornit [persistentní položka]
+   * @return warnforotherunclosed
   **/
-  @ApiModelProperty(example = "null", value = "Upozornit [persistentní položka]")
-  public Boolean getWarnForOtherUnclosed() {
-    return warnForOtherUnclosed;
+  @ApiModelProperty(example = "null", value = "upozornit [persistentní položka]")
+  public Boolean getWarnforotherunclosed() {
+    return warnforotherunclosed;
   }
 
-  public void setWarnForOtherUnclosed(Boolean warnForOtherUnclosed) {
-    this.warnForOtherUnclosed = warnForOtherUnclosed;
+  public void setWarnforotherunclosed(Boolean warnforotherunclosed) {
+    this.warnforotherunclosed = warnforotherunclosed;
   }
 
-  public Servicetype insuaranceCoverage(Boolean insuaranceCoverage) {
-    this.insuaranceCoverage = insuaranceCoverage;
+  public Servicetype insuarancecoverage(Boolean insuarancecoverage) {
+    this.insuarancecoverage = insuarancecoverage;
     return this;
   }
 
    /**
-   * Pojišťovna [persistentní položka]
-   * @return insuaranceCoverage
+   * pojišťovna [persistentní položka]
+   * @return insuarancecoverage
   **/
-  @ApiModelProperty(example = "null", value = "Pojišťovna [persistentní položka]")
-  public Boolean getInsuaranceCoverage() {
-    return insuaranceCoverage;
+  @ApiModelProperty(example = "null", value = "pojišťovna [persistentní položka]")
+  public Boolean getInsuarancecoverage() {
+    return insuarancecoverage;
   }
 
-  public void setInsuaranceCoverage(Boolean insuaranceCoverage) {
-    this.insuaranceCoverage = insuaranceCoverage;
+  public void setInsuarancecoverage(Boolean insuarancecoverage) {
+    this.insuarancecoverage = insuarancecoverage;
   }
 
-  public Servicetype toInvoice(Boolean toInvoice) {
-    this.toInvoice = toInvoice;
+  public Servicetype toinvoice(Boolean toinvoice) {
+    this.toinvoice = toinvoice;
     return this;
   }
 
    /**
-   * Fakturovat [persistentní položka]
-   * @return toInvoice
+   * fakturovat [persistentní položka]
+   * @return toinvoice
   **/
-  @ApiModelProperty(example = "null", value = "Fakturovat [persistentní položka]")
-  public Boolean getToInvoice() {
-    return toInvoice;
+  @ApiModelProperty(example = "null", value = "fakturovat [persistentní položka]")
+  public Boolean getToinvoice() {
+    return toinvoice;
   }
 
-  public void setToInvoice(Boolean toInvoice) {
-    this.toInvoice = toInvoice;
+  public void setToinvoice(Boolean toinvoice) {
+    this.toinvoice = toinvoice;
   }
 
-  public Servicetype generateActivities(Boolean generateActivities) {
-    this.generateActivities = generateActivities;
+  public Servicetype generateactivities(Boolean generateactivities) {
+    this.generateactivities = generateactivities;
     return this;
   }
 
    /**
-   * Gen.aktivity [persistentní položka]
-   * @return generateActivities
+   * gen.aktivity [persistentní položka]
+   * @return generateactivities
   **/
-  @ApiModelProperty(example = "null", value = "Gen.aktivity [persistentní položka]")
-  public Boolean getGenerateActivities() {
-    return generateActivities;
+  @ApiModelProperty(example = "null", value = "gen.aktivity [persistentní položka]")
+  public Boolean getGenerateactivities() {
+    return generateactivities;
   }
 
-  public void setGenerateActivities(Boolean generateActivities) {
-    this.generateActivities = generateActivities;
+  public void setGenerateactivities(Boolean generateactivities) {
+    this.generateactivities = generateactivities;
   }
 
-  public Servicetype incomingTransferDocQueueID(String incomingTransferDocQueueID) {
-    this.incomingTransferDocQueueID = incomingTransferDocQueueID;
+  public Servicetype incomingtransferdocqueueId(String incomingtransferdocqueueId) {
+    this.incomingtransferdocqueueId = incomingtransferdocqueueId;
     return this;
   }
 
    /**
-   * Řada převodek příjem; ID objektu Řada dokladů [persistentní položka]
-   * @return incomingTransferDocQueueID
+   * Řada převodek příjem; id objektu Řada dokladů [persistentní položka]
+   * @return incomingtransferdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada převodek příjem; ID objektu Řada dokladů [persistentní položka]")
-  public String getIncomingTransferDocQueueID() {
-    return incomingTransferDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada převodek příjem; id objektu Řada dokladů [persistentní položka]")
+  public String getIncomingtransferdocqueueId() {
+    return incomingtransferdocqueueId;
   }
 
-  public void setIncomingTransferDocQueueID(String incomingTransferDocQueueID) {
-    this.incomingTransferDocQueueID = incomingTransferDocQueueID;
+  public void setIncomingtransferdocqueueId(String incomingtransferdocqueueId) {
+    this.incomingtransferdocqueueId = incomingtransferdocqueueId;
   }
 
-  public Servicetype outgoingTransferDocQueueID(String outgoingTransferDocQueueID) {
-    this.outgoingTransferDocQueueID = outgoingTransferDocQueueID;
+  public Servicetype outgoingtransferdocqueueId(String outgoingtransferdocqueueId) {
+    this.outgoingtransferdocqueueId = outgoingtransferdocqueueId;
     return this;
   }
 
    /**
-   * Řada převodek výdej; ID objektu Řada dokladů [persistentní položka]
-   * @return outgoingTransferDocQueueID
+   * Řada převodek výdej; id objektu Řada dokladů [persistentní položka]
+   * @return outgoingtransferdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada převodek výdej; ID objektu Řada dokladů [persistentní položka]")
-  public String getOutgoingTransferDocQueueID() {
-    return outgoingTransferDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada převodek výdej; id objektu Řada dokladů [persistentní položka]")
+  public String getOutgoingtransferdocqueueId() {
+    return outgoingtransferdocqueueId;
   }
 
-  public void setOutgoingTransferDocQueueID(String outgoingTransferDocQueueID) {
-    this.outgoingTransferDocQueueID = outgoingTransferDocQueueID;
+  public void setOutgoingtransferdocqueueId(String outgoingtransferdocqueueId) {
+    this.outgoingtransferdocqueueId = outgoingtransferdocqueueId;
   }
 
-  public Servicetype materOutTrasferDocQueueID(String materOutTrasferDocQueueID) {
-    this.materOutTrasferDocQueueID = materOutTrasferDocQueueID;
+  public Servicetype materouttrasferdocqueueId(String materouttrasferdocqueueId) {
+    this.materouttrasferdocqueueId = materouttrasferdocqueueId;
     return this;
   }
 
    /**
-   * Řada převodek výdej pro vysk.mat.; ID objektu Řada dokladů [persistentní položka]
-   * @return materOutTrasferDocQueueID
+   * Řada převodek výdej pro vysk.mat.; id objektu Řada dokladů [persistentní položka]
+   * @return materouttrasferdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada převodek výdej pro vysk.mat.; ID objektu Řada dokladů [persistentní položka]")
-  public String getMaterOutTrasferDocQueueID() {
-    return materOutTrasferDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada převodek výdej pro vysk.mat.; id objektu Řada dokladů [persistentní položka]")
+  public String getMaterouttrasferdocqueueId() {
+    return materouttrasferdocqueueId;
   }
 
-  public void setMaterOutTrasferDocQueueID(String materOutTrasferDocQueueID) {
-    this.materOutTrasferDocQueueID = materOutTrasferDocQueueID;
+  public void setMaterouttrasferdocqueueId(String materouttrasferdocqueueId) {
+    this.materouttrasferdocqueueId = materouttrasferdocqueueId;
   }
 
-  public Servicetype materInTransferDocQueueID(String materInTransferDocQueueID) {
-    this.materInTransferDocQueueID = materInTransferDocQueueID;
+  public Servicetype materintransferdocqueueId(String materintransferdocqueueId) {
+    this.materintransferdocqueueId = materintransferdocqueueId;
     return this;
   }
 
    /**
-   * Řada převodek výdej pro nask.mat.; ID objektu Řada dokladů [persistentní položka]
-   * @return materInTransferDocQueueID
+   * Řada převodek výdej pro nask.mat.; id objektu Řada dokladů [persistentní položka]
+   * @return materintransferdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada převodek výdej pro nask.mat.; ID objektu Řada dokladů [persistentní položka]")
-  public String getMaterInTransferDocQueueID() {
-    return materInTransferDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada převodek výdej pro nask.mat.; id objektu Řada dokladů [persistentní položka]")
+  public String getMaterintransferdocqueueId() {
+    return materintransferdocqueueId;
   }
 
-  public void setMaterInTransferDocQueueID(String materInTransferDocQueueID) {
-    this.materInTransferDocQueueID = materInTransferDocQueueID;
+  public void setMaterintransferdocqueueId(String materintransferdocqueueId) {
+    this.materintransferdocqueueId = materintransferdocqueueId;
   }
 
-  public Servicetype incomeTypeMaterialID(String incomeTypeMaterialID) {
-    this.incomeTypeMaterialID = incomeTypeMaterialID;
+  public Servicetype incometypematerialId(String incometypematerialId) {
+    this.incometypematerialId = incometypematerialId;
     return this;
   }
 
    /**
-   * Typ příjmu pro fakturaci materiálu; ID objektu Typ příjmu [persistentní položka]
-   * @return incomeTypeMaterialID
+   * typ příjmu pro fakturaci materiálu; id objektu typ příjmu [persistentní položka]
+   * @return incometypematerialId
   **/
-  @ApiModelProperty(example = "null", value = "Typ příjmu pro fakturaci materiálu; ID objektu Typ příjmu [persistentní položka]")
-  public String getIncomeTypeMaterialID() {
-    return incomeTypeMaterialID;
+  @ApiModelProperty(example = "null", value = "typ příjmu pro fakturaci materiálu; id objektu typ příjmu [persistentní položka]")
+  public String getIncometypematerialId() {
+    return incometypematerialId;
   }
 
-  public void setIncomeTypeMaterialID(String incomeTypeMaterialID) {
-    this.incomeTypeMaterialID = incomeTypeMaterialID;
+  public void setIncometypematerialId(String incometypematerialId) {
+    this.incometypematerialId = incometypematerialId;
   }
 
-  public Servicetype incomeTypeWorkID(String incomeTypeWorkID) {
-    this.incomeTypeWorkID = incomeTypeWorkID;
+  public Servicetype incometypeworkId(String incometypeworkId) {
+    this.incometypeworkId = incometypeworkId;
     return this;
   }
 
    /**
-   * Typ příjmu pro fakturaci práce; ID objektu Typ příjmu [persistentní položka]
-   * @return incomeTypeWorkID
+   * typ příjmu pro fakturaci práce; id objektu typ příjmu [persistentní položka]
+   * @return incometypeworkId
   **/
-  @ApiModelProperty(example = "null", value = "Typ příjmu pro fakturaci práce; ID objektu Typ příjmu [persistentní položka]")
-  public String getIncomeTypeWorkID() {
-    return incomeTypeWorkID;
+  @ApiModelProperty(example = "null", value = "typ příjmu pro fakturaci práce; id objektu typ příjmu [persistentní položka]")
+  public String getIncometypeworkId() {
+    return incometypeworkId;
   }
 
-  public void setIncomeTypeWorkID(String incomeTypeWorkID) {
-    this.incomeTypeWorkID = incomeTypeWorkID;
+  public void setIncometypeworkId(String incometypeworkId) {
+    this.incometypeworkId = incometypeworkId;
   }
 
-  public Servicetype incomeTypeRoleID(String incomeTypeRoleID) {
-    this.incomeTypeRoleID = incomeTypeRoleID;
+  public Servicetype incometyperoleId(String incometyperoleId) {
+    this.incometyperoleId = incometyperoleId;
     return this;
   }
 
    /**
-   * Typ příjmu pro fakturaci zařízení; ID objektu Typ příjmu [persistentní položka]
-   * @return incomeTypeRoleID
+   * typ příjmu pro fakturaci zařízení; id objektu typ příjmu [persistentní položka]
+   * @return incometyperoleId
   **/
-  @ApiModelProperty(example = "null", value = "Typ příjmu pro fakturaci zařízení; ID objektu Typ příjmu [persistentní položka]")
-  public String getIncomeTypeRoleID() {
-    return incomeTypeRoleID;
+  @ApiModelProperty(example = "null", value = "typ příjmu pro fakturaci zařízení; id objektu typ příjmu [persistentní položka]")
+  public String getIncometyperoleId() {
+    return incometyperoleId;
   }
 
-  public void setIncomeTypeRoleID(String incomeTypeRoleID) {
-    this.incomeTypeRoleID = incomeTypeRoleID;
+  public void setIncometyperoleId(String incometyperoleId) {
+    this.incometyperoleId = incometyperoleId;
   }
 
-  public Servicetype incomeTypeTextID(String incomeTypeTextID) {
-    this.incomeTypeTextID = incomeTypeTextID;
+  public Servicetype incometypetextId(String incometypetextId) {
+    this.incometypetextId = incometypetextId;
     return this;
   }
 
    /**
-   * Typ příjmu pro fakturaci textových řádků; ID objektu Typ příjmu [persistentní položka]
-   * @return incomeTypeTextID
+   * typ příjmu pro fakturaci textových řádků; id objektu typ příjmu [persistentní položka]
+   * @return incometypetextId
   **/
-  @ApiModelProperty(example = "null", value = "Typ příjmu pro fakturaci textových řádků; ID objektu Typ příjmu [persistentní položka]")
-  public String getIncomeTypeTextID() {
-    return incomeTypeTextID;
+  @ApiModelProperty(example = "null", value = "typ příjmu pro fakturaci textových řádků; id objektu typ příjmu [persistentní položka]")
+  public String getIncometypetextId() {
+    return incometypetextId;
   }
 
-  public void setIncomeTypeTextID(String incomeTypeTextID) {
-    this.incomeTypeTextID = incomeTypeTextID;
+  public void setIncometypetextId(String incometypetextId) {
+    this.incometypetextId = incometypetextId;
   }
 
-  public Servicetype guarantyRepairDefault(Integer guarantyRepairDefault) {
-    this.guarantyRepairDefault = guarantyRepairDefault;
+  public Servicetype guarantyrepairdefault(Integer guarantyrepairdefault) {
+    this.guarantyrepairdefault = guarantyrepairdefault;
     return this;
   }
 
    /**
-   * Výchozí hodnota záruky [persistentní položka]
-   * @return guarantyRepairDefault
+   * výchozí hodnota záruky [persistentní položka]
+   * @return guarantyrepairdefault
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí hodnota záruky [persistentní položka]")
-  public Integer getGuarantyRepairDefault() {
-    return guarantyRepairDefault;
+  @ApiModelProperty(example = "null", value = "výchozí hodnota záruky [persistentní položka]")
+  public Integer getGuarantyrepairdefault() {
+    return guarantyrepairdefault;
   }
 
-  public void setGuarantyRepairDefault(Integer guarantyRepairDefault) {
-    this.guarantyRepairDefault = guarantyRepairDefault;
+  public void setGuarantyrepairdefault(Integer guarantyrepairdefault) {
+    this.guarantyrepairdefault = guarantyrepairdefault;
   }
 
-  public Servicetype maxDuration(Double maxDuration) {
-    this.maxDuration = maxDuration;
+  public Servicetype maxduration(Double maxduration) {
+    this.maxduration = maxduration;
     return this;
   }
 
    /**
-   * Maximální doba trvání opravy [persistentní položka]
-   * @return maxDuration
+   * maximální doba trvání opravy [persistentní položka]
+   * @return maxduration
   **/
-  @ApiModelProperty(example = "null", value = "Maximální doba trvání opravy [persistentní položka]")
-  public Double getMaxDuration() {
-    return maxDuration;
+  @ApiModelProperty(example = "null", value = "maximální doba trvání opravy [persistentní položka]")
+  public Double getMaxduration() {
+    return maxduration;
   }
 
-  public void setMaxDuration(Double maxDuration) {
-    this.maxDuration = maxDuration;
+  public void setMaxduration(Double maxduration) {
+    this.maxduration = maxduration;
   }
 
-  public Servicetype workInvoicingType(Integer workInvoicingType) {
-    this.workInvoicingType = workInvoicingType;
+  public Servicetype workinvoicingtype(Integer workinvoicingtype) {
+    this.workinvoicingtype = workinvoicingtype;
     return this;
   }
 
    /**
-   * Způsob fakturace hodin práce [persistentní položka]
-   * @return workInvoicingType
+   * způsob fakturace hodin práce [persistentní položka]
+   * @return workinvoicingtype
   **/
-  @ApiModelProperty(example = "null", value = "Způsob fakturace hodin práce [persistentní položka]")
-  public Integer getWorkInvoicingType() {
-    return workInvoicingType;
+  @ApiModelProperty(example = "null", value = "způsob fakturace hodin práce [persistentní položka]")
+  public Integer getWorkinvoicingtype() {
+    return workinvoicingtype;
   }
 
-  public void setWorkInvoicingType(Integer workInvoicingType) {
-    this.workInvoicingType = workInvoicingType;
+  public void setWorkinvoicingtype(Integer workinvoicingtype) {
+    this.workinvoicingtype = workinvoicingtype;
   }
 
-  public Servicetype issuedCreditNoteDQID(String issuedCreditNoteDQID) {
-    this.issuedCreditNoteDQID = issuedCreditNoteDQID;
+  public Servicetype issuedcreditnotedqId(String issuedcreditnotedqId) {
+    this.issuedcreditnotedqId = issuedcreditnotedqId;
     return this;
   }
 
    /**
-   * Řada dobropisu vydaného k příjmu vratkou DL; ID objektu Řada dokladů [persistentní položka]
-   * @return issuedCreditNoteDQID
+   * Řada dobropisu vydaného k příjmu vratkou dl; id objektu Řada dokladů [persistentní položka]
+   * @return issuedcreditnotedqId
   **/
-  @ApiModelProperty(example = "null", value = "Řada dobropisu vydaného k příjmu vratkou DL; ID objektu Řada dokladů [persistentní položka]")
-  public String getIssuedCreditNoteDQID() {
-    return issuedCreditNoteDQID;
+  @ApiModelProperty(example = "null", value = "Řada dobropisu vydaného k příjmu vratkou dl; id objektu Řada dokladů [persistentní položka]")
+  public String getIssuedcreditnotedqId() {
+    return issuedcreditnotedqId;
   }
 
-  public void setIssuedCreditNoteDQID(String issuedCreditNoteDQID) {
-    this.issuedCreditNoteDQID = issuedCreditNoteDQID;
+  public void setIssuedcreditnotedqId(String issuedcreditnotedqId) {
+    this.issuedcreditnotedqId = issuedcreditnotedqId;
   }
 
-  public Servicetype refundedCashReceivedDQID(String refundedCashReceivedDQID) {
-    this.refundedCashReceivedDQID = refundedCashReceivedDQID;
+  public Servicetype refundedcashreceiveddqId(String refundedcashreceiveddqId) {
+    this.refundedcashreceiveddqId = refundedcashreceiveddqId;
     return this;
   }
 
    /**
-   * Řada vrácení pokl.příjmu k příjmu vratkou DL; ID objektu Řada dokladů [persistentní položka]
-   * @return refundedCashReceivedDQID
+   * Řada vrácení pokl.příjmu k příjmu vratkou dl; id objektu Řada dokladů [persistentní položka]
+   * @return refundedcashreceiveddqId
   **/
-  @ApiModelProperty(example = "null", value = "Řada vrácení pokl.příjmu k příjmu vratkou DL; ID objektu Řada dokladů [persistentní položka]")
-  public String getRefundedCashReceivedDQID() {
-    return refundedCashReceivedDQID;
+  @ApiModelProperty(example = "null", value = "Řada vrácení pokl.příjmu k příjmu vratkou dl; id objektu Řada dokladů [persistentní položka]")
+  public String getRefundedcashreceiveddqId() {
+    return refundedcashreceiveddqId;
   }
 
-  public void setRefundedCashReceivedDQID(String refundedCashReceivedDQID) {
-    this.refundedCashReceivedDQID = refundedCashReceivedDQID;
+  public void setRefundedcashreceiveddqId(String refundedcashreceiveddqId) {
+    this.refundedcashreceiveddqId = refundedcashreceiveddqId;
   }
 
 
@@ -934,55 +970,55 @@ public class Servicetype   {
       return false;
     }
     Servicetype servicetype = (Servicetype) o;
-    return Objects.equals(this.displayName, servicetype.displayName) &&
-        Objects.equals(this.ID, servicetype.ID) &&
-        Objects.equals(this.classID, servicetype.classID) &&
-        Objects.equals(this.objVersion, servicetype.objVersion) &&
+    return Objects.equals(this.displayname, servicetype.displayname) &&
+        Objects.equals(this.id, servicetype.id) &&
+        Objects.equals(this.classid, servicetype.classid) &&
+        Objects.equals(this.objversion, servicetype.objversion) &&
         Objects.equals(this.hidden, servicetype.hidden) &&
         Objects.equals(this.code, servicetype.code) &&
         Objects.equals(this.name, servicetype.name) &&
-        Objects.equals(this.objectKind, servicetype.objectKind) &&
-        Objects.equals(this.serviceDocsDocQueueID, servicetype.serviceDocsDocQueueID) &&
-        Objects.equals(this.objectsSubTreeMenuID, servicetype.objectsSubTreeMenuID) &&
-        Objects.equals(this.materialSubTreeMenuID, servicetype.materialSubTreeMenuID) &&
-        Objects.equals(this.workSubTreeMenuID, servicetype.workSubTreeMenuID) &&
-        Objects.equals(this.divisionID, servicetype.divisionID) &&
-        Objects.equals(this.servicedObjectOnStore, servicetype.servicedObjectOnStore) &&
-        Objects.equals(this.storeReceiptDocType, servicetype.storeReceiptDocType) &&
-        Objects.equals(this.storeReceiptDocQueueID, servicetype.storeReceiptDocQueueID) &&
-        Objects.equals(this.billOfDeliveryDocQueueID, servicetype.billOfDeliveryDocQueueID) &&
-        Objects.equals(this.storeID, servicetype.storeID) &&
-        Objects.equals(this.cooperationStoreID, servicetype.cooperationStoreID) &&
-        Objects.equals(this.materialStoreID, servicetype.materialStoreID) &&
-        Objects.equals(this.materialDocQueueID, servicetype.materialDocQueueID) &&
-        Objects.equals(this.matRefundedBillDocQueueID, servicetype.matRefundedBillDocQueueID) &&
-        Objects.equals(this.workStoreID, servicetype.workStoreID) &&
-        Objects.equals(this.cashDeskID, servicetype.cashDeskID) &&
-        Objects.equals(this.cashReceivedDocQueueID, servicetype.cashReceivedDocQueueID) &&
-        Objects.equals(this.pOSTerminalType, servicetype.pOSTerminalType) &&
-        Objects.equals(this.depositDocQueueID, servicetype.depositDocQueueID) &&
-        Objects.equals(this.warnForOtherUnclosed, servicetype.warnForOtherUnclosed) &&
-        Objects.equals(this.insuaranceCoverage, servicetype.insuaranceCoverage) &&
-        Objects.equals(this.toInvoice, servicetype.toInvoice) &&
-        Objects.equals(this.generateActivities, servicetype.generateActivities) &&
-        Objects.equals(this.incomingTransferDocQueueID, servicetype.incomingTransferDocQueueID) &&
-        Objects.equals(this.outgoingTransferDocQueueID, servicetype.outgoingTransferDocQueueID) &&
-        Objects.equals(this.materOutTrasferDocQueueID, servicetype.materOutTrasferDocQueueID) &&
-        Objects.equals(this.materInTransferDocQueueID, servicetype.materInTransferDocQueueID) &&
-        Objects.equals(this.incomeTypeMaterialID, servicetype.incomeTypeMaterialID) &&
-        Objects.equals(this.incomeTypeWorkID, servicetype.incomeTypeWorkID) &&
-        Objects.equals(this.incomeTypeRoleID, servicetype.incomeTypeRoleID) &&
-        Objects.equals(this.incomeTypeTextID, servicetype.incomeTypeTextID) &&
-        Objects.equals(this.guarantyRepairDefault, servicetype.guarantyRepairDefault) &&
-        Objects.equals(this.maxDuration, servicetype.maxDuration) &&
-        Objects.equals(this.workInvoicingType, servicetype.workInvoicingType) &&
-        Objects.equals(this.issuedCreditNoteDQID, servicetype.issuedCreditNoteDQID) &&
-        Objects.equals(this.refundedCashReceivedDQID, servicetype.refundedCashReceivedDQID);
+        Objects.equals(this.objectkind, servicetype.objectkind) &&
+        Objects.equals(this.servicedocsdocqueueId, servicetype.servicedocsdocqueueId) &&
+        Objects.equals(this.objectssubtreemenuId, servicetype.objectssubtreemenuId) &&
+        Objects.equals(this.materialsubtreemenuId, servicetype.materialsubtreemenuId) &&
+        Objects.equals(this.worksubtreemenuId, servicetype.worksubtreemenuId) &&
+        Objects.equals(this.divisionId, servicetype.divisionId) &&
+        Objects.equals(this.servicedobjectonstore, servicetype.servicedobjectonstore) &&
+        Objects.equals(this.storereceiptdoctype, servicetype.storereceiptdoctype) &&
+        Objects.equals(this.storereceiptdocqueueId, servicetype.storereceiptdocqueueId) &&
+        Objects.equals(this.billofdeliverydocqueueId, servicetype.billofdeliverydocqueueId) &&
+        Objects.equals(this.storeId, servicetype.storeId) &&
+        Objects.equals(this.cooperationstoreId, servicetype.cooperationstoreId) &&
+        Objects.equals(this.materialstoreId, servicetype.materialstoreId) &&
+        Objects.equals(this.materialdocqueueId, servicetype.materialdocqueueId) &&
+        Objects.equals(this.matrefundedbilldocqueueId, servicetype.matrefundedbilldocqueueId) &&
+        Objects.equals(this.workstoreId, servicetype.workstoreId) &&
+        Objects.equals(this.cashdeskId, servicetype.cashdeskId) &&
+        Objects.equals(this.cashreceiveddocqueueId, servicetype.cashreceiveddocqueueId) &&
+        Objects.equals(this.posterminaltype, servicetype.posterminaltype) &&
+        Objects.equals(this.depositdocqueueId, servicetype.depositdocqueueId) &&
+        Objects.equals(this.warnforotherunclosed, servicetype.warnforotherunclosed) &&
+        Objects.equals(this.insuarancecoverage, servicetype.insuarancecoverage) &&
+        Objects.equals(this.toinvoice, servicetype.toinvoice) &&
+        Objects.equals(this.generateactivities, servicetype.generateactivities) &&
+        Objects.equals(this.incomingtransferdocqueueId, servicetype.incomingtransferdocqueueId) &&
+        Objects.equals(this.outgoingtransferdocqueueId, servicetype.outgoingtransferdocqueueId) &&
+        Objects.equals(this.materouttrasferdocqueueId, servicetype.materouttrasferdocqueueId) &&
+        Objects.equals(this.materintransferdocqueueId, servicetype.materintransferdocqueueId) &&
+        Objects.equals(this.incometypematerialId, servicetype.incometypematerialId) &&
+        Objects.equals(this.incometypeworkId, servicetype.incometypeworkId) &&
+        Objects.equals(this.incometyperoleId, servicetype.incometyperoleId) &&
+        Objects.equals(this.incometypetextId, servicetype.incometypetextId) &&
+        Objects.equals(this.guarantyrepairdefault, servicetype.guarantyrepairdefault) &&
+        Objects.equals(this.maxduration, servicetype.maxduration) &&
+        Objects.equals(this.workinvoicingtype, servicetype.workinvoicingtype) &&
+        Objects.equals(this.issuedcreditnotedqId, servicetype.issuedcreditnotedqId) &&
+        Objects.equals(this.refundedcashreceiveddqId, servicetype.refundedcashreceiveddqId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, objectKind, serviceDocsDocQueueID, objectsSubTreeMenuID, materialSubTreeMenuID, workSubTreeMenuID, divisionID, servicedObjectOnStore, storeReceiptDocType, storeReceiptDocQueueID, billOfDeliveryDocQueueID, storeID, cooperationStoreID, materialStoreID, materialDocQueueID, matRefundedBillDocQueueID, workStoreID, cashDeskID, cashReceivedDocQueueID, pOSTerminalType, depositDocQueueID, warnForOtherUnclosed, insuaranceCoverage, toInvoice, generateActivities, incomingTransferDocQueueID, outgoingTransferDocQueueID, materOutTrasferDocQueueID, materInTransferDocQueueID, incomeTypeMaterialID, incomeTypeWorkID, incomeTypeRoleID, incomeTypeTextID, guarantyRepairDefault, maxDuration, workInvoicingType, issuedCreditNoteDQID, refundedCashReceivedDQID);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, objectkind, servicedocsdocqueueId, objectssubtreemenuId, materialsubtreemenuId, worksubtreemenuId, divisionId, servicedobjectonstore, storereceiptdoctype, storereceiptdocqueueId, billofdeliverydocqueueId, storeId, cooperationstoreId, materialstoreId, materialdocqueueId, matrefundedbilldocqueueId, workstoreId, cashdeskId, cashreceiveddocqueueId, posterminaltype, depositdocqueueId, warnforotherunclosed, insuarancecoverage, toinvoice, generateactivities, incomingtransferdocqueueId, outgoingtransferdocqueueId, materouttrasferdocqueueId, materintransferdocqueueId, incometypematerialId, incometypeworkId, incometyperoleId, incometypetextId, guarantyrepairdefault, maxduration, workinvoicingtype, issuedcreditnotedqId, refundedcashreceiveddqId);
   }
 
   @Override
@@ -990,50 +1026,50 @@ public class Servicetype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Servicetype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    objectKind: ").append(toIndentedString(objectKind)).append("\n");
-    sb.append("    serviceDocsDocQueueID: ").append(toIndentedString(serviceDocsDocQueueID)).append("\n");
-    sb.append("    objectsSubTreeMenuID: ").append(toIndentedString(objectsSubTreeMenuID)).append("\n");
-    sb.append("    materialSubTreeMenuID: ").append(toIndentedString(materialSubTreeMenuID)).append("\n");
-    sb.append("    workSubTreeMenuID: ").append(toIndentedString(workSubTreeMenuID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    servicedObjectOnStore: ").append(toIndentedString(servicedObjectOnStore)).append("\n");
-    sb.append("    storeReceiptDocType: ").append(toIndentedString(storeReceiptDocType)).append("\n");
-    sb.append("    storeReceiptDocQueueID: ").append(toIndentedString(storeReceiptDocQueueID)).append("\n");
-    sb.append("    billOfDeliveryDocQueueID: ").append(toIndentedString(billOfDeliveryDocQueueID)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    cooperationStoreID: ").append(toIndentedString(cooperationStoreID)).append("\n");
-    sb.append("    materialStoreID: ").append(toIndentedString(materialStoreID)).append("\n");
-    sb.append("    materialDocQueueID: ").append(toIndentedString(materialDocQueueID)).append("\n");
-    sb.append("    matRefundedBillDocQueueID: ").append(toIndentedString(matRefundedBillDocQueueID)).append("\n");
-    sb.append("    workStoreID: ").append(toIndentedString(workStoreID)).append("\n");
-    sb.append("    cashDeskID: ").append(toIndentedString(cashDeskID)).append("\n");
-    sb.append("    cashReceivedDocQueueID: ").append(toIndentedString(cashReceivedDocQueueID)).append("\n");
-    sb.append("    pOSTerminalType: ").append(toIndentedString(pOSTerminalType)).append("\n");
-    sb.append("    depositDocQueueID: ").append(toIndentedString(depositDocQueueID)).append("\n");
-    sb.append("    warnForOtherUnclosed: ").append(toIndentedString(warnForOtherUnclosed)).append("\n");
-    sb.append("    insuaranceCoverage: ").append(toIndentedString(insuaranceCoverage)).append("\n");
-    sb.append("    toInvoice: ").append(toIndentedString(toInvoice)).append("\n");
-    sb.append("    generateActivities: ").append(toIndentedString(generateActivities)).append("\n");
-    sb.append("    incomingTransferDocQueueID: ").append(toIndentedString(incomingTransferDocQueueID)).append("\n");
-    sb.append("    outgoingTransferDocQueueID: ").append(toIndentedString(outgoingTransferDocQueueID)).append("\n");
-    sb.append("    materOutTrasferDocQueueID: ").append(toIndentedString(materOutTrasferDocQueueID)).append("\n");
-    sb.append("    materInTransferDocQueueID: ").append(toIndentedString(materInTransferDocQueueID)).append("\n");
-    sb.append("    incomeTypeMaterialID: ").append(toIndentedString(incomeTypeMaterialID)).append("\n");
-    sb.append("    incomeTypeWorkID: ").append(toIndentedString(incomeTypeWorkID)).append("\n");
-    sb.append("    incomeTypeRoleID: ").append(toIndentedString(incomeTypeRoleID)).append("\n");
-    sb.append("    incomeTypeTextID: ").append(toIndentedString(incomeTypeTextID)).append("\n");
-    sb.append("    guarantyRepairDefault: ").append(toIndentedString(guarantyRepairDefault)).append("\n");
-    sb.append("    maxDuration: ").append(toIndentedString(maxDuration)).append("\n");
-    sb.append("    workInvoicingType: ").append(toIndentedString(workInvoicingType)).append("\n");
-    sb.append("    issuedCreditNoteDQID: ").append(toIndentedString(issuedCreditNoteDQID)).append("\n");
-    sb.append("    refundedCashReceivedDQID: ").append(toIndentedString(refundedCashReceivedDQID)).append("\n");
+    sb.append("    objectkind: ").append(toIndentedString(objectkind)).append("\n");
+    sb.append("    servicedocsdocqueueId: ").append(toIndentedString(servicedocsdocqueueId)).append("\n");
+    sb.append("    objectssubtreemenuId: ").append(toIndentedString(objectssubtreemenuId)).append("\n");
+    sb.append("    materialsubtreemenuId: ").append(toIndentedString(materialsubtreemenuId)).append("\n");
+    sb.append("    worksubtreemenuId: ").append(toIndentedString(worksubtreemenuId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    servicedobjectonstore: ").append(toIndentedString(servicedobjectonstore)).append("\n");
+    sb.append("    storereceiptdoctype: ").append(toIndentedString(storereceiptdoctype)).append("\n");
+    sb.append("    storereceiptdocqueueId: ").append(toIndentedString(storereceiptdocqueueId)).append("\n");
+    sb.append("    billofdeliverydocqueueId: ").append(toIndentedString(billofdeliverydocqueueId)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    cooperationstoreId: ").append(toIndentedString(cooperationstoreId)).append("\n");
+    sb.append("    materialstoreId: ").append(toIndentedString(materialstoreId)).append("\n");
+    sb.append("    materialdocqueueId: ").append(toIndentedString(materialdocqueueId)).append("\n");
+    sb.append("    matrefundedbilldocqueueId: ").append(toIndentedString(matrefundedbilldocqueueId)).append("\n");
+    sb.append("    workstoreId: ").append(toIndentedString(workstoreId)).append("\n");
+    sb.append("    cashdeskId: ").append(toIndentedString(cashdeskId)).append("\n");
+    sb.append("    cashreceiveddocqueueId: ").append(toIndentedString(cashreceiveddocqueueId)).append("\n");
+    sb.append("    posterminaltype: ").append(toIndentedString(posterminaltype)).append("\n");
+    sb.append("    depositdocqueueId: ").append(toIndentedString(depositdocqueueId)).append("\n");
+    sb.append("    warnforotherunclosed: ").append(toIndentedString(warnforotherunclosed)).append("\n");
+    sb.append("    insuarancecoverage: ").append(toIndentedString(insuarancecoverage)).append("\n");
+    sb.append("    toinvoice: ").append(toIndentedString(toinvoice)).append("\n");
+    sb.append("    generateactivities: ").append(toIndentedString(generateactivities)).append("\n");
+    sb.append("    incomingtransferdocqueueId: ").append(toIndentedString(incomingtransferdocqueueId)).append("\n");
+    sb.append("    outgoingtransferdocqueueId: ").append(toIndentedString(outgoingtransferdocqueueId)).append("\n");
+    sb.append("    materouttrasferdocqueueId: ").append(toIndentedString(materouttrasferdocqueueId)).append("\n");
+    sb.append("    materintransferdocqueueId: ").append(toIndentedString(materintransferdocqueueId)).append("\n");
+    sb.append("    incometypematerialId: ").append(toIndentedString(incometypematerialId)).append("\n");
+    sb.append("    incometypeworkId: ").append(toIndentedString(incometypeworkId)).append("\n");
+    sb.append("    incometyperoleId: ").append(toIndentedString(incometyperoleId)).append("\n");
+    sb.append("    incometypetextId: ").append(toIndentedString(incometypetextId)).append("\n");
+    sb.append("    guarantyrepairdefault: ").append(toIndentedString(guarantyrepairdefault)).append("\n");
+    sb.append("    maxduration: ").append(toIndentedString(maxduration)).append("\n");
+    sb.append("    workinvoicingtype: ").append(toIndentedString(workinvoicingtype)).append("\n");
+    sb.append("    issuedcreditnotedqId: ").append(toIndentedString(issuedcreditnotedqId)).append("\n");
+    sb.append("    refundedcashreceiveddqId: ").append(toIndentedString(refundedcashreceiveddqId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

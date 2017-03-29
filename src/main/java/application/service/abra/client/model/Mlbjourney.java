@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,156 +37,192 @@ import java.util.Objects;
 /**
  * Mlbjourney
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Mlbjourney   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Mlbjourneyrow> rows = new ArrayList<Mlbjourneyrow>();
 
-  @SerializedName("ThroughPlaces")
-  private String throughPlaces = null;
+  @SerializedName("throughplaces")
+  private String throughplaces = null;
 
-  @SerializedName("DistanceCounted")
-  private Double distanceCounted = null;
+  @SerializedName("distancecounted")
+  private Double distancecounted = null;
 
-  @SerializedName("StartPlace_ID")
-  private String startPlaceID = null;
+  @SerializedName("startplace_id")
+  private String startplaceId = null;
 
-  @SerializedName("EndPlace_ID")
-  private String endPlaceID = null;
+  @SerializedName("endplace_id")
+  private String endplaceId = null;
 
-  @SerializedName("AndBack")
-  private Boolean andBack = null;
+  @SerializedName("andback")
+  private Boolean andback = null;
 
-  @SerializedName("Distance")
+  @SerializedName("distance")
   private Double distance = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("FirmOffice_ID")
-  private String firmOfficeID = null;
+  @SerializedName("firmoffice_id")
+  private String firmofficeId = null;
 
-  @SerializedName("Purpose_ID")
-  private String purposeID = null;
+  @SerializedName("purpose_id")
+  private String purposeId = null;
 
-  @SerializedName("TRMCar_ID")
-  private String tRMCarID = null;
+  @SerializedName("trmcar_id")
+  private String trmcarId = null;
 
-  @SerializedName("TRMDriver_ID")
-  private String tRMDriverID = null;
+  @SerializedName("trmdriver_id")
+  private String trmdriverId = null;
 
-  @SerializedName("RouteDateFrom$DATE")
-  private DateTime routeDateFromDATE = null;
+  @SerializedName("routedatefrom$date")
+  private DateTime routedatefromdate = null;
 
-  @SerializedName("RouteDateTo$DATE")
-  private DateTime routeDateToDATE = null;
+  @SerializedName("routedateto$date")
+  private DateTime routedatetodate = null;
 
-  @SerializedName("MLBRoute_ID")
-  private String mLBRouteID = null;
+  @SerializedName("mlbroute_id")
+  private String mlbrouteId = null;
 
-  @SerializedName("NewTachoSet")
-  private Boolean newTachoSet = null;
+  @SerializedName("newtachoset")
+  private Boolean newtachoset = null;
 
-  @SerializedName("TachoBegin")
-  private Double tachoBegin = null;
+  @SerializedName("tachobegin")
+  private Double tachobegin = null;
 
-  @SerializedName("StaffUse")
-  private Boolean staffUse = null;
+  @SerializedName("staffuse")
+  private Boolean staffuse = null;
 
-  @SerializedName("MLBBalance_ID")
-  private String mLBBalanceID = null;
+  @SerializedName("mlbbalance_id")
+  private String mlbbalanceId = null;
 
-  @SerializedName("Passengers")
+  @SerializedName("passengers")
   private String passengers = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("TankContent")
-  private Double tankContent = null;
+  @SerializedName("tankcontent")
+  private Double tankcontent = null;
 
-  @SerializedName("TankContentCorrection")
-  private Double tankContentCorrection = null;
+  @SerializedName("tankcontentcorrection")
+  private Double tankcontentcorrection = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("TotalFuelPrice")
-  private Double totalFuelPrice = null;
+  @SerializedName("totalfuelprice")
+  private Double totalfuelprice = null;
 
-  @SerializedName("TotalExpenses")
-  private Double totalExpenses = null;
+  @SerializedName("totalexpenses")
+  private Double totalexpenses = null;
 
-  @SerializedName("FuelQuantity")
-  private Double fuelQuantity = null;
+  @SerializedName("fuelquantity")
+  private Double fuelquantity = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("TachoEnd")
-  private Double tachoEnd = null;
+  @SerializedName("tachoend")
+  private Double tachoend = null;
 
-  @SerializedName("FuelConsumption")
-  private Double fuelConsumption = null;
+  @SerializedName("fuelconsumption")
+  private Double fuelconsumption = null;
 
-  @SerializedName("PreviousTankContent")
-  private Double previousTankContent = null;
+  @SerializedName("previoustankcontent")
+  private Double previoustankcontent = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Mlbjourney displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Mlbjourney id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Mlbjourney classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Mlbjourney objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Mlbjourney rows(List<Mlbjourneyrow> rows) {
@@ -200,10 +236,10 @@ public class Mlbjourney   {
   }
 
    /**
-   * Řádky; kolekce BO Průjezdná místa [nepersistentní položka]
+   * Řádky; kolekce bo průjezdná místa [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Průjezdná místa [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo průjezdná místa [nepersistentní položka]")
   public List<Mlbjourneyrow> getRows() {
     return rows;
   }
@@ -212,94 +248,94 @@ public class Mlbjourney   {
     this.rows = rows;
   }
 
-  public Mlbjourney throughPlaces(String throughPlaces) {
-    this.throughPlaces = throughPlaces;
+  public Mlbjourney throughplaces(String throughplaces) {
+    this.throughplaces = throughplaces;
     return this;
   }
 
    /**
-   * Průjezdná místa
-   * @return throughPlaces
+   * průjezdná místa
+   * @return throughplaces
   **/
-  @ApiModelProperty(example = "null", value = "Průjezdná místa")
-  public String getThroughPlaces() {
-    return throughPlaces;
+  @ApiModelProperty(example = "null", value = "průjezdná místa")
+  public String getThroughplaces() {
+    return throughplaces;
   }
 
-  public void setThroughPlaces(String throughPlaces) {
-    this.throughPlaces = throughPlaces;
+  public void setThroughplaces(String throughplaces) {
+    this.throughplaces = throughplaces;
   }
 
-  public Mlbjourney distanceCounted(Double distanceCounted) {
-    this.distanceCounted = distanceCounted;
+  public Mlbjourney distancecounted(Double distancecounted) {
+    this.distancecounted = distancecounted;
     return this;
   }
 
    /**
-   * Spočtená vzdálenost
-   * @return distanceCounted
+   * spočtená vzdálenost
+   * @return distancecounted
   **/
-  @ApiModelProperty(example = "null", value = "Spočtená vzdálenost")
-  public Double getDistanceCounted() {
-    return distanceCounted;
+  @ApiModelProperty(example = "null", value = "spočtená vzdálenost")
+  public Double getDistancecounted() {
+    return distancecounted;
   }
 
-  public void setDistanceCounted(Double distanceCounted) {
-    this.distanceCounted = distanceCounted;
+  public void setDistancecounted(Double distancecounted) {
+    this.distancecounted = distancecounted;
   }
 
-  public Mlbjourney startPlaceID(String startPlaceID) {
-    this.startPlaceID = startPlaceID;
+  public Mlbjourney startplaceId(String startplaceId) {
+    this.startplaceId = startplaceId;
     return this;
   }
 
    /**
-   * Výchozí místo; ID objektu Místa [persistentní položka]
-   * @return startPlaceID
+   * výchozí místo; id objektu místa [persistentní položka]
+   * @return startplaceId
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí místo; ID objektu Místa [persistentní položka]")
-  public String getStartPlaceID() {
-    return startPlaceID;
+  @ApiModelProperty(example = "null", value = "výchozí místo; id objektu místa [persistentní položka]")
+  public String getStartplaceId() {
+    return startplaceId;
   }
 
-  public void setStartPlaceID(String startPlaceID) {
-    this.startPlaceID = startPlaceID;
+  public void setStartplaceId(String startplaceId) {
+    this.startplaceId = startplaceId;
   }
 
-  public Mlbjourney endPlaceID(String endPlaceID) {
-    this.endPlaceID = endPlaceID;
+  public Mlbjourney endplaceId(String endplaceId) {
+    this.endplaceId = endplaceId;
     return this;
   }
 
    /**
-   * Cílové místo; ID objektu Místa [persistentní položka]
-   * @return endPlaceID
+   * cílové místo; id objektu místa [persistentní položka]
+   * @return endplaceId
   **/
-  @ApiModelProperty(example = "null", value = "Cílové místo; ID objektu Místa [persistentní položka]")
-  public String getEndPlaceID() {
-    return endPlaceID;
+  @ApiModelProperty(example = "null", value = "cílové místo; id objektu místa [persistentní položka]")
+  public String getEndplaceId() {
+    return endplaceId;
   }
 
-  public void setEndPlaceID(String endPlaceID) {
-    this.endPlaceID = endPlaceID;
+  public void setEndplaceId(String endplaceId) {
+    this.endplaceId = endplaceId;
   }
 
-  public Mlbjourney andBack(Boolean andBack) {
-    this.andBack = andBack;
+  public Mlbjourney andback(Boolean andback) {
+    this.andback = andback;
     return this;
   }
 
    /**
-   * Zpět [persistentní položka]
-   * @return andBack
+   * zpět [persistentní položka]
+   * @return andback
   **/
-  @ApiModelProperty(example = "null", value = "Zpět [persistentní položka]")
-  public Boolean getAndBack() {
-    return andBack;
+  @ApiModelProperty(example = "null", value = "zpět [persistentní položka]")
+  public Boolean getAndback() {
+    return andback;
   }
 
-  public void setAndBack(Boolean andBack) {
-    this.andBack = andBack;
+  public void setAndback(Boolean andback) {
+    this.andback = andback;
   }
 
   public Mlbjourney distance(Double distance) {
@@ -308,10 +344,10 @@ public class Mlbjourney   {
   }
 
    /**
-   * Vzdálenost [persistentní položka]
+   * vzdálenost [persistentní položka]
    * @return distance
   **/
-  @ApiModelProperty(example = "null", value = "Vzdálenost [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "vzdálenost [persistentní položka]")
   public Double getDistance() {
     return distance;
   }
@@ -320,220 +356,220 @@ public class Mlbjourney   {
     this.distance = distance;
   }
 
-  public Mlbjourney firmID(String firmID) {
-    this.firmID = firmID;
+  public Mlbjourney firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Mlbjourney firmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public Mlbjourney firmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
     return this;
   }
 
    /**
-   * Provozovna; ID objektu Provozovna [persistentní položka]
-   * @return firmOfficeID
+   * provozovna; id objektu provozovna [persistentní položka]
+   * @return firmofficeId
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna; ID objektu Provozovna [persistentní položka]")
-  public String getFirmOfficeID() {
-    return firmOfficeID;
+  @ApiModelProperty(example = "null", value = "provozovna; id objektu provozovna [persistentní položka]")
+  public String getFirmofficeId() {
+    return firmofficeId;
   }
 
-  public void setFirmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public void setFirmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
   }
 
-  public Mlbjourney purposeID(String purposeID) {
-    this.purposeID = purposeID;
+  public Mlbjourney purposeId(String purposeId) {
+    this.purposeId = purposeId;
     return this;
   }
 
    /**
-   * Účel jízdy; ID objektu Účel jízdy [persistentní položka]
-   * @return purposeID
+   * Účel jízdy; id objektu Účel jízdy [persistentní položka]
+   * @return purposeId
   **/
-  @ApiModelProperty(example = "null", value = "Účel jízdy; ID objektu Účel jízdy [persistentní položka]")
-  public String getPurposeID() {
-    return purposeID;
+  @ApiModelProperty(example = "null", value = "Účel jízdy; id objektu Účel jízdy [persistentní položka]")
+  public String getPurposeId() {
+    return purposeId;
   }
 
-  public void setPurposeID(String purposeID) {
-    this.purposeID = purposeID;
+  public void setPurposeId(String purposeId) {
+    this.purposeId = purposeId;
   }
 
-  public Mlbjourney tRMCarID(String tRMCarID) {
-    this.tRMCarID = tRMCarID;
+  public Mlbjourney trmcarId(String trmcarId) {
+    this.trmcarId = trmcarId;
     return this;
   }
 
    /**
-   * Vozidlo; ID objektu Vozidlo [persistentní položka]
-   * @return tRMCarID
+   * vozidlo; id objektu vozidlo [persistentní položka]
+   * @return trmcarId
   **/
-  @ApiModelProperty(example = "null", value = "Vozidlo; ID objektu Vozidlo [persistentní položka]")
-  public String getTRMCarID() {
-    return tRMCarID;
+  @ApiModelProperty(example = "null", value = "vozidlo; id objektu vozidlo [persistentní položka]")
+  public String getTrmcarId() {
+    return trmcarId;
   }
 
-  public void setTRMCarID(String tRMCarID) {
-    this.tRMCarID = tRMCarID;
+  public void setTrmcarId(String trmcarId) {
+    this.trmcarId = trmcarId;
   }
 
-  public Mlbjourney tRMDriverID(String tRMDriverID) {
-    this.tRMDriverID = tRMDriverID;
+  public Mlbjourney trmdriverId(String trmdriverId) {
+    this.trmdriverId = trmdriverId;
     return this;
   }
 
    /**
-   * Řidič; ID objektu Řidič [persistentní položka]
-   * @return tRMDriverID
+   * Řidič; id objektu Řidič [persistentní položka]
+   * @return trmdriverId
   **/
-  @ApiModelProperty(example = "null", value = "Řidič; ID objektu Řidič [persistentní položka]")
-  public String getTRMDriverID() {
-    return tRMDriverID;
+  @ApiModelProperty(example = "null", value = "Řidič; id objektu Řidič [persistentní položka]")
+  public String getTrmdriverId() {
+    return trmdriverId;
   }
 
-  public void setTRMDriverID(String tRMDriverID) {
-    this.tRMDriverID = tRMDriverID;
+  public void setTrmdriverId(String trmdriverId) {
+    this.trmdriverId = trmdriverId;
   }
 
-  public Mlbjourney routeDateFromDATE(DateTime routeDateFromDATE) {
-    this.routeDateFromDATE = routeDateFromDATE;
+  public Mlbjourney routedatefromdate(DateTime routedatefromdate) {
+    this.routedatefromdate = routedatefromdate;
     return this;
   }
 
    /**
-   * Den odjezdu [persistentní položka]
-   * @return routeDateFromDATE
+   * den odjezdu [persistentní položka]
+   * @return routedatefromdate
   **/
-  @ApiModelProperty(example = "null", value = "Den odjezdu [persistentní položka]")
-  public DateTime getRouteDateFromDATE() {
-    return routeDateFromDATE;
+  @ApiModelProperty(example = "null", value = "den odjezdu [persistentní položka]")
+  public DateTime getRoutedatefromdate() {
+    return routedatefromdate;
   }
 
-  public void setRouteDateFromDATE(DateTime routeDateFromDATE) {
-    this.routeDateFromDATE = routeDateFromDATE;
+  public void setRoutedatefromdate(DateTime routedatefromdate) {
+    this.routedatefromdate = routedatefromdate;
   }
 
-  public Mlbjourney routeDateToDATE(DateTime routeDateToDATE) {
-    this.routeDateToDATE = routeDateToDATE;
+  public Mlbjourney routedatetodate(DateTime routedatetodate) {
+    this.routedatetodate = routedatetodate;
     return this;
   }
 
    /**
-   * Den příjezdu [persistentní položka]
-   * @return routeDateToDATE
+   * den příjezdu [persistentní položka]
+   * @return routedatetodate
   **/
-  @ApiModelProperty(example = "null", value = "Den příjezdu [persistentní položka]")
-  public DateTime getRouteDateToDATE() {
-    return routeDateToDATE;
+  @ApiModelProperty(example = "null", value = "den příjezdu [persistentní položka]")
+  public DateTime getRoutedatetodate() {
+    return routedatetodate;
   }
 
-  public void setRouteDateToDATE(DateTime routeDateToDATE) {
-    this.routeDateToDATE = routeDateToDATE;
+  public void setRoutedatetodate(DateTime routedatetodate) {
+    this.routedatetodate = routedatetodate;
   }
 
-  public Mlbjourney mLBRouteID(String mLBRouteID) {
-    this.mLBRouteID = mLBRouteID;
+  public Mlbjourney mlbrouteId(String mlbrouteId) {
+    this.mlbrouteId = mlbrouteId;
     return this;
   }
 
    /**
-   * Vzor jízdy; ID objektu Vzor jízdy [persistentní položka]
-   * @return mLBRouteID
+   * vzor jízdy; id objektu vzor jízdy [persistentní položka]
+   * @return mlbrouteId
   **/
-  @ApiModelProperty(example = "null", value = "Vzor jízdy; ID objektu Vzor jízdy [persistentní položka]")
-  public String getMLBRouteID() {
-    return mLBRouteID;
+  @ApiModelProperty(example = "null", value = "vzor jízdy; id objektu vzor jízdy [persistentní položka]")
+  public String getMlbrouteId() {
+    return mlbrouteId;
   }
 
-  public void setMLBRouteID(String mLBRouteID) {
-    this.mLBRouteID = mLBRouteID;
+  public void setMlbrouteId(String mlbrouteId) {
+    this.mlbrouteId = mlbrouteId;
   }
 
-  public Mlbjourney newTachoSet(Boolean newTachoSet) {
-    this.newTachoSet = newTachoSet;
+  public Mlbjourney newtachoset(Boolean newtachoset) {
+    this.newtachoset = newtachoset;
     return this;
   }
 
    /**
-   * Přednastavení stavu tachometru [persistentní položka]
-   * @return newTachoSet
+   * přednastavení stavu tachometru [persistentní položka]
+   * @return newtachoset
   **/
-  @ApiModelProperty(example = "null", value = "Přednastavení stavu tachometru [persistentní položka]")
-  public Boolean getNewTachoSet() {
-    return newTachoSet;
+  @ApiModelProperty(example = "null", value = "přednastavení stavu tachometru [persistentní položka]")
+  public Boolean getNewtachoset() {
+    return newtachoset;
   }
 
-  public void setNewTachoSet(Boolean newTachoSet) {
-    this.newTachoSet = newTachoSet;
+  public void setNewtachoset(Boolean newtachoset) {
+    this.newtachoset = newtachoset;
   }
 
-  public Mlbjourney tachoBegin(Double tachoBegin) {
-    this.tachoBegin = tachoBegin;
+  public Mlbjourney tachobegin(Double tachobegin) {
+    this.tachobegin = tachobegin;
     return this;
   }
 
    /**
-   * Počáteční stav tachometru [persistentní položka]
-   * @return tachoBegin
+   * počáteční stav tachometru [persistentní položka]
+   * @return tachobegin
   **/
-  @ApiModelProperty(example = "null", value = "Počáteční stav tachometru [persistentní položka]")
-  public Double getTachoBegin() {
-    return tachoBegin;
+  @ApiModelProperty(example = "null", value = "počáteční stav tachometru [persistentní položka]")
+  public Double getTachobegin() {
+    return tachobegin;
   }
 
-  public void setTachoBegin(Double tachoBegin) {
-    this.tachoBegin = tachoBegin;
+  public void setTachobegin(Double tachobegin) {
+    this.tachobegin = tachobegin;
   }
 
-  public Mlbjourney staffUse(Boolean staffUse) {
-    this.staffUse = staffUse;
+  public Mlbjourney staffuse(Boolean staffuse) {
+    this.staffuse = staffuse;
     return this;
   }
 
    /**
-   * Služebně [persistentní položka]
-   * @return staffUse
+   * služebně [persistentní položka]
+   * @return staffuse
   **/
-  @ApiModelProperty(example = "null", value = "Služebně [persistentní položka]")
-  public Boolean getStaffUse() {
-    return staffUse;
+  @ApiModelProperty(example = "null", value = "služebně [persistentní položka]")
+  public Boolean getStaffuse() {
+    return staffuse;
   }
 
-  public void setStaffUse(Boolean staffUse) {
-    this.staffUse = staffUse;
+  public void setStaffuse(Boolean staffuse) {
+    this.staffuse = staffuse;
   }
 
-  public Mlbjourney mLBBalanceID(String mLBBalanceID) {
-    this.mLBBalanceID = mLBBalanceID;
+  public Mlbjourney mlbbalanceId(String mlbbalanceId) {
+    this.mlbbalanceId = mlbbalanceId;
     return this;
   }
 
    /**
-   * Uzavřeno; ID objektu Uzávěrka knihy jízd [persistentní položka]
-   * @return mLBBalanceID
+   * uzavřeno; id objektu uzávěrka knihy jízd [persistentní položka]
+   * @return mlbbalanceId
   **/
-  @ApiModelProperty(example = "null", value = "Uzavřeno; ID objektu Uzávěrka knihy jízd [persistentní položka]")
-  public String getMLBBalanceID() {
-    return mLBBalanceID;
+  @ApiModelProperty(example = "null", value = "uzavřeno; id objektu uzávěrka knihy jízd [persistentní položka]")
+  public String getMlbbalanceId() {
+    return mlbbalanceId;
   }
 
-  public void setMLBBalanceID(String mLBBalanceID) {
-    this.mLBBalanceID = mLBBalanceID;
+  public void setMlbbalanceId(String mlbbalanceId) {
+    this.mlbbalanceId = mlbbalanceId;
   }
 
   public Mlbjourney passengers(String passengers) {
@@ -542,10 +578,10 @@ public class Mlbjourney   {
   }
 
    /**
-   * Spolucestující [persistentní položka]
+   * spolucestující [persistentní položka]
    * @return passengers
   **/
-  @ApiModelProperty(example = "null", value = "Spolucestující [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "spolucestující [persistentní položka]")
   public String getPassengers() {
     return passengers;
   }
@@ -560,10 +596,10 @@ public class Mlbjourney   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -572,238 +608,238 @@ public class Mlbjourney   {
     this.description = description;
   }
 
-  public Mlbjourney tankContent(Double tankContent) {
-    this.tankContent = tankContent;
+  public Mlbjourney tankcontent(Double tankcontent) {
+    this.tankcontent = tankcontent;
     return this;
   }
 
    /**
-   * Stav nádrže [persistentní položka]
-   * @return tankContent
+   * stav nádrže [persistentní položka]
+   * @return tankcontent
   **/
-  @ApiModelProperty(example = "null", value = "Stav nádrže [persistentní položka]")
-  public Double getTankContent() {
-    return tankContent;
+  @ApiModelProperty(example = "null", value = "stav nádrže [persistentní položka]")
+  public Double getTankcontent() {
+    return tankcontent;
   }
 
-  public void setTankContent(Double tankContent) {
-    this.tankContent = tankContent;
+  public void setTankcontent(Double tankcontent) {
+    this.tankcontent = tankcontent;
   }
 
-  public Mlbjourney tankContentCorrection(Double tankContentCorrection) {
-    this.tankContentCorrection = tankContentCorrection;
+  public Mlbjourney tankcontentcorrection(Double tankcontentcorrection) {
+    this.tankcontentcorrection = tankcontentcorrection;
     return this;
   }
 
    /**
-   * Korekce stavu nádrže [persistentní položka]
-   * @return tankContentCorrection
+   * korekce stavu nádrže [persistentní položka]
+   * @return tankcontentcorrection
   **/
-  @ApiModelProperty(example = "null", value = "Korekce stavu nádrže [persistentní položka]")
-  public Double getTankContentCorrection() {
-    return tankContentCorrection;
+  @ApiModelProperty(example = "null", value = "korekce stavu nádrže [persistentní položka]")
+  public Double getTankcontentcorrection() {
+    return tankcontentcorrection;
   }
 
-  public void setTankContentCorrection(Double tankContentCorrection) {
-    this.tankContentCorrection = tankContentCorrection;
+  public void setTankcontentcorrection(Double tankcontentcorrection) {
+    this.tankcontentcorrection = tankcontentcorrection;
   }
 
-  public Mlbjourney divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Mlbjourney divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Mlbjourney busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Mlbjourney busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Mlbjourney busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Mlbjourney bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obch.případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obch.případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obch.případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obch.případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Mlbjourney totalFuelPrice(Double totalFuelPrice) {
-    this.totalFuelPrice = totalFuelPrice;
+  public Mlbjourney totalfuelprice(Double totalfuelprice) {
+    this.totalfuelprice = totalfuelprice;
     return this;
   }
 
    /**
-   * Celková cena za PHM [persistentní položka]
-   * @return totalFuelPrice
+   * celková cena za phm [persistentní položka]
+   * @return totalfuelprice
   **/
-  @ApiModelProperty(example = "null", value = "Celková cena za PHM [persistentní položka]")
-  public Double getTotalFuelPrice() {
-    return totalFuelPrice;
+  @ApiModelProperty(example = "null", value = "celková cena za phm [persistentní položka]")
+  public Double getTotalfuelprice() {
+    return totalfuelprice;
   }
 
-  public void setTotalFuelPrice(Double totalFuelPrice) {
-    this.totalFuelPrice = totalFuelPrice;
+  public void setTotalfuelprice(Double totalfuelprice) {
+    this.totalfuelprice = totalfuelprice;
   }
 
-  public Mlbjourney totalExpenses(Double totalExpenses) {
-    this.totalExpenses = totalExpenses;
+  public Mlbjourney totalexpenses(Double totalexpenses) {
+    this.totalexpenses = totalexpenses;
     return this;
   }
 
    /**
-   * Celková cena za jízdu [persistentní položka]
-   * @return totalExpenses
+   * celková cena za jízdu [persistentní položka]
+   * @return totalexpenses
   **/
-  @ApiModelProperty(example = "null", value = "Celková cena za jízdu [persistentní položka]")
-  public Double getTotalExpenses() {
-    return totalExpenses;
+  @ApiModelProperty(example = "null", value = "celková cena za jízdu [persistentní položka]")
+  public Double getTotalexpenses() {
+    return totalexpenses;
   }
 
-  public void setTotalExpenses(Double totalExpenses) {
-    this.totalExpenses = totalExpenses;
+  public void setTotalexpenses(Double totalexpenses) {
+    this.totalexpenses = totalexpenses;
   }
 
-  public Mlbjourney fuelQuantity(Double fuelQuantity) {
-    this.fuelQuantity = fuelQuantity;
+  public Mlbjourney fuelquantity(Double fuelquantity) {
+    this.fuelquantity = fuelquantity;
     return this;
   }
 
    /**
-   * Celkové čerpání za jízdu [persistentní položka]
-   * @return fuelQuantity
+   * celkové čerpání za jízdu [persistentní položka]
+   * @return fuelquantity
   **/
-  @ApiModelProperty(example = "null", value = "Celkové čerpání za jízdu [persistentní položka]")
-  public Double getFuelQuantity() {
-    return fuelQuantity;
+  @ApiModelProperty(example = "null", value = "celkové čerpání za jízdu [persistentní položka]")
+  public Double getFuelquantity() {
+    return fuelquantity;
   }
 
-  public void setFuelQuantity(Double fuelQuantity) {
-    this.fuelQuantity = fuelQuantity;
+  public void setFuelquantity(Double fuelquantity) {
+    this.fuelquantity = fuelquantity;
   }
 
-  public Mlbjourney createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Mlbjourney createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Mlbjourney correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Mlbjourney correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Mlbjourney tachoEnd(Double tachoEnd) {
-    this.tachoEnd = tachoEnd;
+  public Mlbjourney tachoend(Double tachoend) {
+    this.tachoend = tachoend;
     return this;
   }
 
    /**
-   * Konečný stav tachometru
-   * @return tachoEnd
+   * konečný stav tachometru
+   * @return tachoend
   **/
-  @ApiModelProperty(example = "null", value = "Konečný stav tachometru")
-  public Double getTachoEnd() {
-    return tachoEnd;
+  @ApiModelProperty(example = "null", value = "konečný stav tachometru")
+  public Double getTachoend() {
+    return tachoend;
   }
 
-  public void setTachoEnd(Double tachoEnd) {
-    this.tachoEnd = tachoEnd;
+  public void setTachoend(Double tachoend) {
+    this.tachoend = tachoend;
   }
 
-  public Mlbjourney fuelConsumption(Double fuelConsumption) {
-    this.fuelConsumption = fuelConsumption;
+  public Mlbjourney fuelconsumption(Double fuelconsumption) {
+    this.fuelconsumption = fuelconsumption;
     return this;
   }
 
    /**
-   * Spotřeba PHM
-   * @return fuelConsumption
+   * spotřeba phm
+   * @return fuelconsumption
   **/
-  @ApiModelProperty(example = "null", value = "Spotřeba PHM")
-  public Double getFuelConsumption() {
-    return fuelConsumption;
+  @ApiModelProperty(example = "null", value = "spotřeba phm")
+  public Double getFuelconsumption() {
+    return fuelconsumption;
   }
 
-  public void setFuelConsumption(Double fuelConsumption) {
-    this.fuelConsumption = fuelConsumption;
+  public void setFuelconsumption(Double fuelconsumption) {
+    this.fuelconsumption = fuelconsumption;
   }
 
-  public Mlbjourney previousTankContent(Double previousTankContent) {
-    this.previousTankContent = previousTankContent;
+  public Mlbjourney previoustankcontent(Double previoustankcontent) {
+    this.previoustankcontent = previoustankcontent;
     return this;
   }
 
    /**
-   * Počáteční stav nádrže
-   * @return previousTankContent
+   * počáteční stav nádrže
+   * @return previoustankcontent
   **/
-  @ApiModelProperty(example = "null", value = "Počáteční stav nádrže")
-  public Double getPreviousTankContent() {
-    return previousTankContent;
+  @ApiModelProperty(example = "null", value = "počáteční stav nádrže")
+  public Double getPrevioustankcontent() {
+    return previoustankcontent;
   }
 
-  public void setPreviousTankContent(Double previousTankContent) {
-    this.previousTankContent = previousTankContent;
+  public void setPrevioustankcontent(Double previoustankcontent) {
+    this.previoustankcontent = previoustankcontent;
   }
 
 
@@ -816,49 +852,49 @@ public class Mlbjourney   {
       return false;
     }
     Mlbjourney mlbjourney = (Mlbjourney) o;
-    return Objects.equals(this.displayName, mlbjourney.displayName) &&
-        Objects.equals(this.ID, mlbjourney.ID) &&
-        Objects.equals(this.classID, mlbjourney.classID) &&
-        Objects.equals(this.objVersion, mlbjourney.objVersion) &&
+    return Objects.equals(this.displayname, mlbjourney.displayname) &&
+        Objects.equals(this.id, mlbjourney.id) &&
+        Objects.equals(this.classid, mlbjourney.classid) &&
+        Objects.equals(this.objversion, mlbjourney.objversion) &&
         Objects.equals(this.rows, mlbjourney.rows) &&
-        Objects.equals(this.throughPlaces, mlbjourney.throughPlaces) &&
-        Objects.equals(this.distanceCounted, mlbjourney.distanceCounted) &&
-        Objects.equals(this.startPlaceID, mlbjourney.startPlaceID) &&
-        Objects.equals(this.endPlaceID, mlbjourney.endPlaceID) &&
-        Objects.equals(this.andBack, mlbjourney.andBack) &&
+        Objects.equals(this.throughplaces, mlbjourney.throughplaces) &&
+        Objects.equals(this.distancecounted, mlbjourney.distancecounted) &&
+        Objects.equals(this.startplaceId, mlbjourney.startplaceId) &&
+        Objects.equals(this.endplaceId, mlbjourney.endplaceId) &&
+        Objects.equals(this.andback, mlbjourney.andback) &&
         Objects.equals(this.distance, mlbjourney.distance) &&
-        Objects.equals(this.firmID, mlbjourney.firmID) &&
-        Objects.equals(this.firmOfficeID, mlbjourney.firmOfficeID) &&
-        Objects.equals(this.purposeID, mlbjourney.purposeID) &&
-        Objects.equals(this.tRMCarID, mlbjourney.tRMCarID) &&
-        Objects.equals(this.tRMDriverID, mlbjourney.tRMDriverID) &&
-        Objects.equals(this.routeDateFromDATE, mlbjourney.routeDateFromDATE) &&
-        Objects.equals(this.routeDateToDATE, mlbjourney.routeDateToDATE) &&
-        Objects.equals(this.mLBRouteID, mlbjourney.mLBRouteID) &&
-        Objects.equals(this.newTachoSet, mlbjourney.newTachoSet) &&
-        Objects.equals(this.tachoBegin, mlbjourney.tachoBegin) &&
-        Objects.equals(this.staffUse, mlbjourney.staffUse) &&
-        Objects.equals(this.mLBBalanceID, mlbjourney.mLBBalanceID) &&
+        Objects.equals(this.firmId, mlbjourney.firmId) &&
+        Objects.equals(this.firmofficeId, mlbjourney.firmofficeId) &&
+        Objects.equals(this.purposeId, mlbjourney.purposeId) &&
+        Objects.equals(this.trmcarId, mlbjourney.trmcarId) &&
+        Objects.equals(this.trmdriverId, mlbjourney.trmdriverId) &&
+        Objects.equals(this.routedatefromdate, mlbjourney.routedatefromdate) &&
+        Objects.equals(this.routedatetodate, mlbjourney.routedatetodate) &&
+        Objects.equals(this.mlbrouteId, mlbjourney.mlbrouteId) &&
+        Objects.equals(this.newtachoset, mlbjourney.newtachoset) &&
+        Objects.equals(this.tachobegin, mlbjourney.tachobegin) &&
+        Objects.equals(this.staffuse, mlbjourney.staffuse) &&
+        Objects.equals(this.mlbbalanceId, mlbjourney.mlbbalanceId) &&
         Objects.equals(this.passengers, mlbjourney.passengers) &&
         Objects.equals(this.description, mlbjourney.description) &&
-        Objects.equals(this.tankContent, mlbjourney.tankContent) &&
-        Objects.equals(this.tankContentCorrection, mlbjourney.tankContentCorrection) &&
-        Objects.equals(this.divisionID, mlbjourney.divisionID) &&
-        Objects.equals(this.busOrderID, mlbjourney.busOrderID) &&
-        Objects.equals(this.busTransactionID, mlbjourney.busTransactionID) &&
-        Objects.equals(this.totalFuelPrice, mlbjourney.totalFuelPrice) &&
-        Objects.equals(this.totalExpenses, mlbjourney.totalExpenses) &&
-        Objects.equals(this.fuelQuantity, mlbjourney.fuelQuantity) &&
-        Objects.equals(this.createdByID, mlbjourney.createdByID) &&
-        Objects.equals(this.correctedByID, mlbjourney.correctedByID) &&
-        Objects.equals(this.tachoEnd, mlbjourney.tachoEnd) &&
-        Objects.equals(this.fuelConsumption, mlbjourney.fuelConsumption) &&
-        Objects.equals(this.previousTankContent, mlbjourney.previousTankContent);
+        Objects.equals(this.tankcontent, mlbjourney.tankcontent) &&
+        Objects.equals(this.tankcontentcorrection, mlbjourney.tankcontentcorrection) &&
+        Objects.equals(this.divisionId, mlbjourney.divisionId) &&
+        Objects.equals(this.busorderId, mlbjourney.busorderId) &&
+        Objects.equals(this.bustransactionId, mlbjourney.bustransactionId) &&
+        Objects.equals(this.totalfuelprice, mlbjourney.totalfuelprice) &&
+        Objects.equals(this.totalexpenses, mlbjourney.totalexpenses) &&
+        Objects.equals(this.fuelquantity, mlbjourney.fuelquantity) &&
+        Objects.equals(this.createdbyId, mlbjourney.createdbyId) &&
+        Objects.equals(this.correctedbyId, mlbjourney.correctedbyId) &&
+        Objects.equals(this.tachoend, mlbjourney.tachoend) &&
+        Objects.equals(this.fuelconsumption, mlbjourney.fuelconsumption) &&
+        Objects.equals(this.previoustankcontent, mlbjourney.previoustankcontent);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, throughPlaces, distanceCounted, startPlaceID, endPlaceID, andBack, distance, firmID, firmOfficeID, purposeID, tRMCarID, tRMDriverID, routeDateFromDATE, routeDateToDATE, mLBRouteID, newTachoSet, tachoBegin, staffUse, mLBBalanceID, passengers, description, tankContent, tankContentCorrection, divisionID, busOrderID, busTransactionID, totalFuelPrice, totalExpenses, fuelQuantity, createdByID, correctedByID, tachoEnd, fuelConsumption, previousTankContent);
+    return Objects.hash(displayname, id, classid, objversion, rows, throughplaces, distancecounted, startplaceId, endplaceId, andback, distance, firmId, firmofficeId, purposeId, trmcarId, trmdriverId, routedatefromdate, routedatetodate, mlbrouteId, newtachoset, tachobegin, staffuse, mlbbalanceId, passengers, description, tankcontent, tankcontentcorrection, divisionId, busorderId, bustransactionId, totalfuelprice, totalexpenses, fuelquantity, createdbyId, correctedbyId, tachoend, fuelconsumption, previoustankcontent);
   }
 
   @Override
@@ -866,44 +902,44 @@ public class Mlbjourney   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Mlbjourney {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    throughPlaces: ").append(toIndentedString(throughPlaces)).append("\n");
-    sb.append("    distanceCounted: ").append(toIndentedString(distanceCounted)).append("\n");
-    sb.append("    startPlaceID: ").append(toIndentedString(startPlaceID)).append("\n");
-    sb.append("    endPlaceID: ").append(toIndentedString(endPlaceID)).append("\n");
-    sb.append("    andBack: ").append(toIndentedString(andBack)).append("\n");
+    sb.append("    throughplaces: ").append(toIndentedString(throughplaces)).append("\n");
+    sb.append("    distancecounted: ").append(toIndentedString(distancecounted)).append("\n");
+    sb.append("    startplaceId: ").append(toIndentedString(startplaceId)).append("\n");
+    sb.append("    endplaceId: ").append(toIndentedString(endplaceId)).append("\n");
+    sb.append("    andback: ").append(toIndentedString(andback)).append("\n");
     sb.append("    distance: ").append(toIndentedString(distance)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    firmOfficeID: ").append(toIndentedString(firmOfficeID)).append("\n");
-    sb.append("    purposeID: ").append(toIndentedString(purposeID)).append("\n");
-    sb.append("    tRMCarID: ").append(toIndentedString(tRMCarID)).append("\n");
-    sb.append("    tRMDriverID: ").append(toIndentedString(tRMDriverID)).append("\n");
-    sb.append("    routeDateFromDATE: ").append(toIndentedString(routeDateFromDATE)).append("\n");
-    sb.append("    routeDateToDATE: ").append(toIndentedString(routeDateToDATE)).append("\n");
-    sb.append("    mLBRouteID: ").append(toIndentedString(mLBRouteID)).append("\n");
-    sb.append("    newTachoSet: ").append(toIndentedString(newTachoSet)).append("\n");
-    sb.append("    tachoBegin: ").append(toIndentedString(tachoBegin)).append("\n");
-    sb.append("    staffUse: ").append(toIndentedString(staffUse)).append("\n");
-    sb.append("    mLBBalanceID: ").append(toIndentedString(mLBBalanceID)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    firmofficeId: ").append(toIndentedString(firmofficeId)).append("\n");
+    sb.append("    purposeId: ").append(toIndentedString(purposeId)).append("\n");
+    sb.append("    trmcarId: ").append(toIndentedString(trmcarId)).append("\n");
+    sb.append("    trmdriverId: ").append(toIndentedString(trmdriverId)).append("\n");
+    sb.append("    routedatefromdate: ").append(toIndentedString(routedatefromdate)).append("\n");
+    sb.append("    routedatetodate: ").append(toIndentedString(routedatetodate)).append("\n");
+    sb.append("    mlbrouteId: ").append(toIndentedString(mlbrouteId)).append("\n");
+    sb.append("    newtachoset: ").append(toIndentedString(newtachoset)).append("\n");
+    sb.append("    tachobegin: ").append(toIndentedString(tachobegin)).append("\n");
+    sb.append("    staffuse: ").append(toIndentedString(staffuse)).append("\n");
+    sb.append("    mlbbalanceId: ").append(toIndentedString(mlbbalanceId)).append("\n");
     sb.append("    passengers: ").append(toIndentedString(passengers)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    tankContent: ").append(toIndentedString(tankContent)).append("\n");
-    sb.append("    tankContentCorrection: ").append(toIndentedString(tankContentCorrection)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    totalFuelPrice: ").append(toIndentedString(totalFuelPrice)).append("\n");
-    sb.append("    totalExpenses: ").append(toIndentedString(totalExpenses)).append("\n");
-    sb.append("    fuelQuantity: ").append(toIndentedString(fuelQuantity)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    tachoEnd: ").append(toIndentedString(tachoEnd)).append("\n");
-    sb.append("    fuelConsumption: ").append(toIndentedString(fuelConsumption)).append("\n");
-    sb.append("    previousTankContent: ").append(toIndentedString(previousTankContent)).append("\n");
+    sb.append("    tankcontent: ").append(toIndentedString(tankcontent)).append("\n");
+    sb.append("    tankcontentcorrection: ").append(toIndentedString(tankcontentcorrection)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    totalfuelprice: ").append(toIndentedString(totalfuelprice)).append("\n");
+    sb.append("    totalexpenses: ").append(toIndentedString(totalexpenses)).append("\n");
+    sb.append("    fuelquantity: ").append(toIndentedString(fuelquantity)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    tachoend: ").append(toIndentedString(tachoend)).append("\n");
+    sb.append("    fuelconsumption: ").append(toIndentedString(fuelconsumption)).append("\n");
+    sb.append("    previoustankcontent: ").append(toIndentedString(previoustankcontent)).append("\n");
     sb.append("}");
     return sb.toString();
   }

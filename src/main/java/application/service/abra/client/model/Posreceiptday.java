@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,105 +35,150 @@ import java.util.Objects;
 /**
  * Posreceiptday
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posreceiptday   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Date$DATE")
-  private DateTime dateDATE = null;
+  @SerializedName("date$date")
+  private DateTime datedate = null;
 
-  @SerializedName("Tenancy")
+  @SerializedName("tenancy")
   private Double tenancy = null;
 
-  @SerializedName("Deposit")
+  @SerializedName("deposit")
   private Double deposit = null;
 
-  @SerializedName("Collection")
+  @SerializedName("collection")
   private Double collection = null;
 
-  @SerializedName("IssuedInvoice")
-  private Double issuedInvoice = null;
+  @SerializedName("issuedinvoice")
+  private Double issuedinvoice = null;
 
-  @SerializedName("IssuedDInvoice")
-  private Double issuedDInvoice = null;
+  @SerializedName("issueddinvoice")
+  private Double issueddinvoice = null;
 
-  @SerializedName("UsedIssuedDInvoice")
-  private Double usedIssuedDInvoice = null;
+  @SerializedName("usedissueddinvoice")
+  private Double usedissueddinvoice = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Tržba - řádek [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Tržba - řádek [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Posreceiptday dateDATE(DateTime dateDATE) {
-    this.dateDATE = dateDATE;
+  public Posreceiptday displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum [persistentní položka]
-   * @return dateDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum [persistentní položka]")
-  public DateTime getDateDATE() {
-    return dateDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateDATE(DateTime dateDATE) {
-    this.dateDATE = dateDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Posreceiptday id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Posreceiptday classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Posreceiptday objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Posreceiptday parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu tržba - řádek [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu tržba - řádek [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Posreceiptday datedate(DateTime datedate) {
+    this.datedate = datedate;
+    return this;
+  }
+
+   /**
+   * datum [persistentní položka]
+   * @return datedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum [persistentní položka]")
+  public DateTime getDatedate() {
+    return datedate;
+  }
+
+  public void setDatedate(DateTime datedate) {
+    this.datedate = datedate;
   }
 
   public Posreceiptday tenancy(Double tenancy) {
@@ -142,10 +187,10 @@ public class Posreceiptday   {
   }
 
    /**
-   * Tržba [persistentní položka]
+   * tržba [persistentní položka]
    * @return tenancy
   **/
-  @ApiModelProperty(example = "null", value = "Tržba [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "tržba [persistentní položka]")
   public Double getTenancy() {
     return tenancy;
   }
@@ -160,10 +205,10 @@ public class Posreceiptday   {
   }
 
    /**
-   * Vloženo [persistentní položka]
+   * vloženo [persistentní položka]
    * @return deposit
   **/
-  @ApiModelProperty(example = "null", value = "Vloženo [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "vloženo [persistentní položka]")
   public Double getDeposit() {
     return deposit;
   }
@@ -178,10 +223,10 @@ public class Posreceiptday   {
   }
 
    /**
-   * Vybráno [persistentní položka]
+   * vybráno [persistentní položka]
    * @return collection
   **/
-  @ApiModelProperty(example = "null", value = "Vybráno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "vybráno [persistentní položka]")
   public Double getCollection() {
     return collection;
   }
@@ -190,58 +235,58 @@ public class Posreceiptday   {
     this.collection = collection;
   }
 
-  public Posreceiptday issuedInvoice(Double issuedInvoice) {
-    this.issuedInvoice = issuedInvoice;
+  public Posreceiptday issuedinvoice(Double issuedinvoice) {
+    this.issuedinvoice = issuedinvoice;
     return this;
   }
 
    /**
-   * Faktury [persistentní položka]
-   * @return issuedInvoice
+   * faktury [persistentní položka]
+   * @return issuedinvoice
   **/
-  @ApiModelProperty(example = "null", value = "Faktury [persistentní položka]")
-  public Double getIssuedInvoice() {
-    return issuedInvoice;
+  @ApiModelProperty(example = "null", value = "faktury [persistentní položka]")
+  public Double getIssuedinvoice() {
+    return issuedinvoice;
   }
 
-  public void setIssuedInvoice(Double issuedInvoice) {
-    this.issuedInvoice = issuedInvoice;
+  public void setIssuedinvoice(Double issuedinvoice) {
+    this.issuedinvoice = issuedinvoice;
   }
 
-  public Posreceiptday issuedDInvoice(Double issuedDInvoice) {
-    this.issuedDInvoice = issuedDInvoice;
+  public Posreceiptday issueddinvoice(Double issueddinvoice) {
+    this.issueddinvoice = issueddinvoice;
     return this;
   }
 
    /**
-   * Zálohy [persistentní položka]
-   * @return issuedDInvoice
+   * zálohy [persistentní položka]
+   * @return issueddinvoice
   **/
-  @ApiModelProperty(example = "null", value = "Zálohy [persistentní položka]")
-  public Double getIssuedDInvoice() {
-    return issuedDInvoice;
+  @ApiModelProperty(example = "null", value = "zálohy [persistentní položka]")
+  public Double getIssueddinvoice() {
+    return issueddinvoice;
   }
 
-  public void setIssuedDInvoice(Double issuedDInvoice) {
-    this.issuedDInvoice = issuedDInvoice;
+  public void setIssueddinvoice(Double issueddinvoice) {
+    this.issueddinvoice = issueddinvoice;
   }
 
-  public Posreceiptday usedIssuedDInvoice(Double usedIssuedDInvoice) {
-    this.usedIssuedDInvoice = usedIssuedDInvoice;
+  public Posreceiptday usedissueddinvoice(Double usedissueddinvoice) {
+    this.usedissueddinvoice = usedissueddinvoice;
     return this;
   }
 
    /**
-   * Použité zálohy [persistentní položka]
-   * @return usedIssuedDInvoice
+   * použité zálohy [persistentní položka]
+   * @return usedissueddinvoice
   **/
-  @ApiModelProperty(example = "null", value = "Použité zálohy [persistentní položka]")
-  public Double getUsedIssuedDInvoice() {
-    return usedIssuedDInvoice;
+  @ApiModelProperty(example = "null", value = "použité zálohy [persistentní položka]")
+  public Double getUsedissueddinvoice() {
+    return usedissueddinvoice;
   }
 
-  public void setUsedIssuedDInvoice(Double usedIssuedDInvoice) {
-    this.usedIssuedDInvoice = usedIssuedDInvoice;
+  public void setUsedissueddinvoice(Double usedissueddinvoice) {
+    this.usedissueddinvoice = usedissueddinvoice;
   }
 
 
@@ -254,23 +299,23 @@ public class Posreceiptday   {
       return false;
     }
     Posreceiptday posreceiptday = (Posreceiptday) o;
-    return Objects.equals(this.displayName, posreceiptday.displayName) &&
-        Objects.equals(this.ID, posreceiptday.ID) &&
-        Objects.equals(this.classID, posreceiptday.classID) &&
-        Objects.equals(this.objVersion, posreceiptday.objVersion) &&
-        Objects.equals(this.parentID, posreceiptday.parentID) &&
-        Objects.equals(this.dateDATE, posreceiptday.dateDATE) &&
+    return Objects.equals(this.displayname, posreceiptday.displayname) &&
+        Objects.equals(this.id, posreceiptday.id) &&
+        Objects.equals(this.classid, posreceiptday.classid) &&
+        Objects.equals(this.objversion, posreceiptday.objversion) &&
+        Objects.equals(this.parentId, posreceiptday.parentId) &&
+        Objects.equals(this.datedate, posreceiptday.datedate) &&
         Objects.equals(this.tenancy, posreceiptday.tenancy) &&
         Objects.equals(this.deposit, posreceiptday.deposit) &&
         Objects.equals(this.collection, posreceiptday.collection) &&
-        Objects.equals(this.issuedInvoice, posreceiptday.issuedInvoice) &&
-        Objects.equals(this.issuedDInvoice, posreceiptday.issuedDInvoice) &&
-        Objects.equals(this.usedIssuedDInvoice, posreceiptday.usedIssuedDInvoice);
+        Objects.equals(this.issuedinvoice, posreceiptday.issuedinvoice) &&
+        Objects.equals(this.issueddinvoice, posreceiptday.issueddinvoice) &&
+        Objects.equals(this.usedissueddinvoice, posreceiptday.usedissueddinvoice);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, dateDATE, tenancy, deposit, collection, issuedInvoice, issuedDInvoice, usedIssuedDInvoice);
+    return Objects.hash(displayname, id, classid, objversion, parentId, datedate, tenancy, deposit, collection, issuedinvoice, issueddinvoice, usedissueddinvoice);
   }
 
   @Override
@@ -278,18 +323,18 @@ public class Posreceiptday   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posreceiptday {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    dateDATE: ").append(toIndentedString(dateDATE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    datedate: ").append(toIndentedString(datedate)).append("\n");
     sb.append("    tenancy: ").append(toIndentedString(tenancy)).append("\n");
     sb.append("    deposit: ").append(toIndentedString(deposit)).append("\n");
     sb.append("    collection: ").append(toIndentedString(collection)).append("\n");
-    sb.append("    issuedInvoice: ").append(toIndentedString(issuedInvoice)).append("\n");
-    sb.append("    issuedDInvoice: ").append(toIndentedString(issuedDInvoice)).append("\n");
-    sb.append("    usedIssuedDInvoice: ").append(toIndentedString(usedIssuedDInvoice)).append("\n");
+    sb.append("    issuedinvoice: ").append(toIndentedString(issuedinvoice)).append("\n");
+    sb.append("    issueddinvoice: ").append(toIndentedString(issueddinvoice)).append("\n");
+    sb.append("    usedissueddinvoice: ").append(toIndentedString(usedissueddinvoice)).append("\n");
     sb.append("}");
     return sb.toString();
   }

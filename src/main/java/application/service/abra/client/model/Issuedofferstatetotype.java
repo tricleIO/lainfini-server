@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,204 +34,258 @@ import java.util.Objects;
 /**
  * Issuedofferstatetotype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Issuedofferstatetotype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("IssuedOfferState_ID")
-  private String issuedOfferStateID = null;
+  @SerializedName("issuedofferstate_id")
+  private String issuedofferstateId = null;
 
-  @SerializedName("OrderNr")
-  private Integer orderNr = null;
+  @SerializedName("ordernr")
+  private Integer ordernr = null;
 
-  @SerializedName("ActivityProcess_ID")
-  private String activityProcessID = null;
+  @SerializedName("activityprocess_id")
+  private String activityprocessId = null;
 
-  @SerializedName("DefaultDuration")
-  private Integer defaultDuration = null;
+  @SerializedName("defaultduration")
+  private Integer defaultduration = null;
 
-  @SerializedName("DefaultRole_ID")
-  private String defaultRoleID = null;
+  @SerializedName("defaultrole_id")
+  private String defaultroleId = null;
 
-  @SerializedName("DefaultUser_ID")
-  private String defaultUserID = null;
+  @SerializedName("defaultuser_id")
+  private String defaultuserId = null;
 
-  @SerializedName("IsGenerateToPlan")
-  private Boolean isGenerateToPlan = null;
+  @SerializedName("isgeneratetoplan")
+  private Boolean isgeneratetoplan = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Typ nabídky [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Typ nabídky [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Issuedofferstatetotype issuedOfferStateID(String issuedOfferStateID) {
-    this.issuedOfferStateID = issuedOfferStateID;
+  public Issuedofferstatetotype displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Stav; ID objektu Stav nabídky [persistentní položka]
-   * @return issuedOfferStateID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Stav; ID objektu Stav nabídky [persistentní položka]")
-  public String getIssuedOfferStateID() {
-    return issuedOfferStateID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setIssuedOfferStateID(String issuedOfferStateID) {
-    this.issuedOfferStateID = issuedOfferStateID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Issuedofferstatetotype orderNr(Integer orderNr) {
-    this.orderNr = orderNr;
+  public Issuedofferstatetotype id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return orderNr
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrderNr() {
-    return orderNr;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setOrderNr(Integer orderNr) {
-    this.orderNr = orderNr;
+  public void setId(String id) {
+    this.id = id;
   }
 
-   /**
-   * Proces aktivit
-   * @return activityProcessID
-  **/
-  @ApiModelProperty(example = "null", value = "Proces aktivit")
-  public String getActivityProcessID() {
-    return activityProcessID;
-  }
-
-  public Issuedofferstatetotype defaultDuration(Integer defaultDuration) {
-    this.defaultDuration = defaultDuration;
+  public Issuedofferstatetotype classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Maximální doba k dokončení [persistentní položka]
-   * @return defaultDuration
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Maximální doba k dokončení [persistentní položka]")
-  public Integer getDefaultDuration() {
-    return defaultDuration;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setDefaultDuration(Integer defaultDuration) {
-    this.defaultDuration = defaultDuration;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Issuedofferstatetotype defaultRoleID(String defaultRoleID) {
-    this.defaultRoleID = defaultRoleID;
+  public Issuedofferstatetotype objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Výchozí role řešitele; ID objektu Role [persistentní položka]
-   * @return defaultRoleID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí role řešitele; ID objektu Role [persistentní položka]")
-  public String getDefaultRoleID() {
-    return defaultRoleID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setDefaultRoleID(String defaultRoleID) {
-    this.defaultRoleID = defaultRoleID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Issuedofferstatetotype defaultUserID(String defaultUserID) {
-    this.defaultUserID = defaultUserID;
+  public Issuedofferstatetotype parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Výchozí řešitel; ID objektu Uživatel [persistentní položka]
-   * @return defaultUserID
+   * vlastník; id objektu typ nabídky [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí řešitel; ID objektu Uživatel [persistentní položka]")
-  public String getDefaultUserID() {
-    return defaultUserID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu typ nabídky [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setDefaultUserID(String defaultUserID) {
-    this.defaultUserID = defaultUserID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Issuedofferstatetotype isGenerateToPlan(Boolean isGenerateToPlan) {
-    this.isGenerateToPlan = isGenerateToPlan;
+  public Issuedofferstatetotype issuedofferstateId(String issuedofferstateId) {
+    this.issuedofferstateId = issuedofferstateId;
     return this;
   }
 
    /**
-   * Generovat do plánu [persistentní položka]
-   * @return isGenerateToPlan
+   * stav; id objektu stav nabídky [persistentní položka]
+   * @return issuedofferstateId
   **/
-  @ApiModelProperty(example = "null", value = "Generovat do plánu [persistentní položka]")
-  public Boolean getIsGenerateToPlan() {
-    return isGenerateToPlan;
+  @ApiModelProperty(example = "null", value = "stav; id objektu stav nabídky [persistentní položka]")
+  public String getIssuedofferstateId() {
+    return issuedofferstateId;
   }
 
-  public void setIsGenerateToPlan(Boolean isGenerateToPlan) {
-    this.isGenerateToPlan = isGenerateToPlan;
+  public void setIssuedofferstateId(String issuedofferstateId) {
+    this.issuedofferstateId = issuedofferstateId;
+  }
+
+  public Issuedofferstatetotype ordernr(Integer ordernr) {
+    this.ordernr = ordernr;
+    return this;
+  }
+
+   /**
+   * pořadové číslo [persistentní položka]
+   * @return ordernr
+  **/
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdernr() {
+    return ordernr;
+  }
+
+  public void setOrdernr(Integer ordernr) {
+    this.ordernr = ordernr;
+  }
+
+  public Issuedofferstatetotype activityprocessId(String activityprocessId) {
+    this.activityprocessId = activityprocessId;
+    return this;
+  }
+
+   /**
+   * proces aktivit
+   * @return activityprocessId
+  **/
+  @ApiModelProperty(example = "null", value = "proces aktivit")
+  public String getActivityprocessId() {
+    return activityprocessId;
+  }
+
+  public void setActivityprocessId(String activityprocessId) {
+    this.activityprocessId = activityprocessId;
+  }
+
+  public Issuedofferstatetotype defaultduration(Integer defaultduration) {
+    this.defaultduration = defaultduration;
+    return this;
+  }
+
+   /**
+   * maximální doba k dokončení [persistentní položka]
+   * @return defaultduration
+  **/
+  @ApiModelProperty(example = "null", value = "maximální doba k dokončení [persistentní položka]")
+  public Integer getDefaultduration() {
+    return defaultduration;
+  }
+
+  public void setDefaultduration(Integer defaultduration) {
+    this.defaultduration = defaultduration;
+  }
+
+  public Issuedofferstatetotype defaultroleId(String defaultroleId) {
+    this.defaultroleId = defaultroleId;
+    return this;
+  }
+
+   /**
+   * výchozí role řešitele; id objektu role [persistentní položka]
+   * @return defaultroleId
+  **/
+  @ApiModelProperty(example = "null", value = "výchozí role řešitele; id objektu role [persistentní položka]")
+  public String getDefaultroleId() {
+    return defaultroleId;
+  }
+
+  public void setDefaultroleId(String defaultroleId) {
+    this.defaultroleId = defaultroleId;
+  }
+
+  public Issuedofferstatetotype defaultuserId(String defaultuserId) {
+    this.defaultuserId = defaultuserId;
+    return this;
+  }
+
+   /**
+   * výchozí řešitel; id objektu uživatel [persistentní položka]
+   * @return defaultuserId
+  **/
+  @ApiModelProperty(example = "null", value = "výchozí řešitel; id objektu uživatel [persistentní položka]")
+  public String getDefaultuserId() {
+    return defaultuserId;
+  }
+
+  public void setDefaultuserId(String defaultuserId) {
+    this.defaultuserId = defaultuserId;
+  }
+
+  public Issuedofferstatetotype isgeneratetoplan(Boolean isgeneratetoplan) {
+    this.isgeneratetoplan = isgeneratetoplan;
+    return this;
+  }
+
+   /**
+   * generovat do plánu [persistentní položka]
+   * @return isgeneratetoplan
+  **/
+  @ApiModelProperty(example = "null", value = "generovat do plánu [persistentní položka]")
+  public Boolean getIsgeneratetoplan() {
+    return isgeneratetoplan;
+  }
+
+  public void setIsgeneratetoplan(Boolean isgeneratetoplan) {
+    this.isgeneratetoplan = isgeneratetoplan;
   }
 
 
@@ -244,23 +298,23 @@ public class Issuedofferstatetotype   {
       return false;
     }
     Issuedofferstatetotype issuedofferstatetotype = (Issuedofferstatetotype) o;
-    return Objects.equals(this.displayName, issuedofferstatetotype.displayName) &&
-        Objects.equals(this.ID, issuedofferstatetotype.ID) &&
-        Objects.equals(this.classID, issuedofferstatetotype.classID) &&
-        Objects.equals(this.objVersion, issuedofferstatetotype.objVersion) &&
-        Objects.equals(this.parentID, issuedofferstatetotype.parentID) &&
-        Objects.equals(this.issuedOfferStateID, issuedofferstatetotype.issuedOfferStateID) &&
-        Objects.equals(this.orderNr, issuedofferstatetotype.orderNr) &&
-        Objects.equals(this.activityProcessID, issuedofferstatetotype.activityProcessID) &&
-        Objects.equals(this.defaultDuration, issuedofferstatetotype.defaultDuration) &&
-        Objects.equals(this.defaultRoleID, issuedofferstatetotype.defaultRoleID) &&
-        Objects.equals(this.defaultUserID, issuedofferstatetotype.defaultUserID) &&
-        Objects.equals(this.isGenerateToPlan, issuedofferstatetotype.isGenerateToPlan);
+    return Objects.equals(this.displayname, issuedofferstatetotype.displayname) &&
+        Objects.equals(this.id, issuedofferstatetotype.id) &&
+        Objects.equals(this.classid, issuedofferstatetotype.classid) &&
+        Objects.equals(this.objversion, issuedofferstatetotype.objversion) &&
+        Objects.equals(this.parentId, issuedofferstatetotype.parentId) &&
+        Objects.equals(this.issuedofferstateId, issuedofferstatetotype.issuedofferstateId) &&
+        Objects.equals(this.ordernr, issuedofferstatetotype.ordernr) &&
+        Objects.equals(this.activityprocessId, issuedofferstatetotype.activityprocessId) &&
+        Objects.equals(this.defaultduration, issuedofferstatetotype.defaultduration) &&
+        Objects.equals(this.defaultroleId, issuedofferstatetotype.defaultroleId) &&
+        Objects.equals(this.defaultuserId, issuedofferstatetotype.defaultuserId) &&
+        Objects.equals(this.isgeneratetoplan, issuedofferstatetotype.isgeneratetoplan);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, issuedOfferStateID, orderNr, activityProcessID, defaultDuration, defaultRoleID, defaultUserID, isGenerateToPlan);
+    return Objects.hash(displayname, id, classid, objversion, parentId, issuedofferstateId, ordernr, activityprocessId, defaultduration, defaultroleId, defaultuserId, isgeneratetoplan);
   }
 
   @Override
@@ -268,18 +322,18 @@ public class Issuedofferstatetotype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Issuedofferstatetotype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    issuedOfferStateID: ").append(toIndentedString(issuedOfferStateID)).append("\n");
-    sb.append("    orderNr: ").append(toIndentedString(orderNr)).append("\n");
-    sb.append("    activityProcessID: ").append(toIndentedString(activityProcessID)).append("\n");
-    sb.append("    defaultDuration: ").append(toIndentedString(defaultDuration)).append("\n");
-    sb.append("    defaultRoleID: ").append(toIndentedString(defaultRoleID)).append("\n");
-    sb.append("    defaultUserID: ").append(toIndentedString(defaultUserID)).append("\n");
-    sb.append("    isGenerateToPlan: ").append(toIndentedString(isGenerateToPlan)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    issuedofferstateId: ").append(toIndentedString(issuedofferstateId)).append("\n");
+    sb.append("    ordernr: ").append(toIndentedString(ordernr)).append("\n");
+    sb.append("    activityprocessId: ").append(toIndentedString(activityprocessId)).append("\n");
+    sb.append("    defaultduration: ").append(toIndentedString(defaultduration)).append("\n");
+    sb.append("    defaultroleId: ").append(toIndentedString(defaultroleId)).append("\n");
+    sb.append("    defaultuserId: ").append(toIndentedString(defaultuserId)).append("\n");
+    sb.append("    isgeneratetoplan: ").append(toIndentedString(isgeneratetoplan)).append("\n");
     sb.append("}");
     return sb.toString();
   }

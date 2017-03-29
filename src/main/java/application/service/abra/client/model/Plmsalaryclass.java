@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,81 +35,117 @@ import java.util.Objects;
 /**
  * Plmsalaryclass
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmsalaryclass   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("DateOfChange")
-  private DateTime dateOfChange = null;
+  @SerializedName("dateofchange")
+  private DateTime dateofchange = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private Integer code = null;
 
-  @SerializedName("HourlyRate")
-  private Double hourlyRate = null;
+  @SerializedName("hourlyrate")
+  private Double hourlyrate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-  public Plmsalaryclass dateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public Plmsalaryclass displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum změny
-   * @return dateOfChange
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum změny")
-  public DateTime getDateOfChange() {
-    return dateOfChange;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  public Plmsalaryclass id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmsalaryclass dateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+    return this;
+  }
+
+   /**
+   * datum změny
+   * @return dateofchange
+  **/
+  @ApiModelProperty(example = "null", value = "datum změny")
+  public DateTime getDateofchange() {
+    return dateofchange;
+  }
+
+  public void setDateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+  }
+
+  public Plmsalaryclass classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmsalaryclass objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Plmsalaryclass code(Integer code) {
@@ -118,10 +154,10 @@ public class Plmsalaryclass   {
   }
 
    /**
-   * Tarifní třída [persistentní položka]
+   * tarifní třída [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Tarifní třída [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "tarifní třída [persistentní položka]")
   public Integer getCode() {
     return code;
   }
@@ -130,22 +166,22 @@ public class Plmsalaryclass   {
     this.code = code;
   }
 
-  public Plmsalaryclass hourlyRate(Double hourlyRate) {
-    this.hourlyRate = hourlyRate;
+  public Plmsalaryclass hourlyrate(Double hourlyrate) {
+    this.hourlyrate = hourlyrate;
     return this;
   }
 
    /**
-   * Sazba/hod. [persistentní položka]
-   * @return hourlyRate
+   * sazba/hod. [persistentní položka]
+   * @return hourlyrate
   **/
-  @ApiModelProperty(example = "null", value = "Sazba/hod. [persistentní položka]")
-  public Double getHourlyRate() {
-    return hourlyRate;
+  @ApiModelProperty(example = "null", value = "sazba/hod. [persistentní položka]")
+  public Double getHourlyrate() {
+    return hourlyrate;
   }
 
-  public void setHourlyRate(Double hourlyRate) {
-    this.hourlyRate = hourlyRate;
+  public void setHourlyrate(Double hourlyrate) {
+    this.hourlyrate = hourlyrate;
   }
 
 
@@ -158,18 +194,18 @@ public class Plmsalaryclass   {
       return false;
     }
     Plmsalaryclass plmsalaryclass = (Plmsalaryclass) o;
-    return Objects.equals(this.displayName, plmsalaryclass.displayName) &&
-        Objects.equals(this.ID, plmsalaryclass.ID) &&
-        Objects.equals(this.dateOfChange, plmsalaryclass.dateOfChange) &&
-        Objects.equals(this.classID, plmsalaryclass.classID) &&
-        Objects.equals(this.objVersion, plmsalaryclass.objVersion) &&
+    return Objects.equals(this.displayname, plmsalaryclass.displayname) &&
+        Objects.equals(this.id, plmsalaryclass.id) &&
+        Objects.equals(this.dateofchange, plmsalaryclass.dateofchange) &&
+        Objects.equals(this.classid, plmsalaryclass.classid) &&
+        Objects.equals(this.objversion, plmsalaryclass.objversion) &&
         Objects.equals(this.code, plmsalaryclass.code) &&
-        Objects.equals(this.hourlyRate, plmsalaryclass.hourlyRate);
+        Objects.equals(this.hourlyrate, plmsalaryclass.hourlyrate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, dateOfChange, classID, objVersion, code, hourlyRate);
+    return Objects.hash(displayname, id, dateofchange, classid, objversion, code, hourlyrate);
   }
 
   @Override
@@ -177,13 +213,13 @@ public class Plmsalaryclass   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmsalaryclass {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    dateOfChange: ").append(toIndentedString(dateOfChange)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    dateofchange: ").append(toIndentedString(dateofchange)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
-    sb.append("    hourlyRate: ").append(toIndentedString(hourlyRate)).append("\n");
+    sb.append("    hourlyrate: ").append(toIndentedString(hourlyrate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

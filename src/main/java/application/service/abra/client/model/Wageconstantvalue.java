@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,195 +35,240 @@ import java.util.Objects;
 /**
  * Wageconstantvalue
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wageconstantvalue   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("ValidFrom$DATE")
-  private DateTime validFromDATE = null;
+  @SerializedName("validfrom$date")
+  private DateTime validfromdate = null;
 
-  @SerializedName("StringFieldValue")
-  private String stringFieldValue = null;
+  @SerializedName("stringfieldvalue")
+  private String stringfieldvalue = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("MinStringFieldValue")
-  private String minStringFieldValue = null;
+  @SerializedName("minstringfieldvalue")
+  private String minstringfieldvalue = null;
 
-  @SerializedName("MaxStringFieldValue")
-  private String maxStringFieldValue = null;
+  @SerializedName("maxstringfieldvalue")
+  private String maxstringfieldvalue = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Hlavičkový objekt [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Hlavičkový objekt [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Wageconstantvalue validFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public Wageconstantvalue displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Platí od [persistentní položka]
-   * @return validFromDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Platí od [persistentní položka]")
-  public DateTime getValidFromDATE() {
-    return validFromDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setValidFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Wageconstantvalue stringFieldValue(String stringFieldValue) {
-    this.stringFieldValue = stringFieldValue;
+  public Wageconstantvalue id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Hodnota [persistentní položka]
-   * @return stringFieldValue
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Hodnota [persistentní položka]")
-  public String getStringFieldValue() {
-    return stringFieldValue;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setStringFieldValue(String stringFieldValue) {
-    this.stringFieldValue = stringFieldValue;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Wageconstantvalue createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Wageconstantvalue classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Wageconstantvalue correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Wageconstantvalue objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Wageconstantvalue minStringFieldValue(String minStringFieldValue) {
-    this.minStringFieldValue = minStringFieldValue;
+  public Wageconstantvalue parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Minimum
-   * @return minStringFieldValue
+   * vlastník; id objektu hlavičkový objekt [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Minimum")
-  public String getMinStringFieldValue() {
-    return minStringFieldValue;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu hlavičkový objekt [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setMinStringFieldValue(String minStringFieldValue) {
-    this.minStringFieldValue = minStringFieldValue;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Wageconstantvalue maxStringFieldValue(String maxStringFieldValue) {
-    this.maxStringFieldValue = maxStringFieldValue;
+  public Wageconstantvalue validfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
     return this;
   }
 
    /**
-   * Maximum
-   * @return maxStringFieldValue
+   * platí od [persistentní položka]
+   * @return validfromdate
   **/
-  @ApiModelProperty(example = "null", value = "Maximum")
-  public String getMaxStringFieldValue() {
-    return maxStringFieldValue;
+  @ApiModelProperty(example = "null", value = "platí od [persistentní položka]")
+  public DateTime getValidfromdate() {
+    return validfromdate;
   }
 
-  public void setMaxStringFieldValue(String maxStringFieldValue) {
-    this.maxStringFieldValue = maxStringFieldValue;
+  public void setValidfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
+  }
+
+  public Wageconstantvalue stringfieldvalue(String stringfieldvalue) {
+    this.stringfieldvalue = stringfieldvalue;
+    return this;
+  }
+
+   /**
+   * hodnota [persistentní položka]
+   * @return stringfieldvalue
+  **/
+  @ApiModelProperty(example = "null", value = "hodnota [persistentní položka]")
+  public String getStringfieldvalue() {
+    return stringfieldvalue;
+  }
+
+  public void setStringfieldvalue(String stringfieldvalue) {
+    this.stringfieldvalue = stringfieldvalue;
+  }
+
+  public Wageconstantvalue createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+    return this;
+  }
+
+   /**
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
+  }
+
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Wageconstantvalue correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+    return this;
+  }
+
+   /**
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
+  }
+
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+  }
+
+  public Wageconstantvalue minstringfieldvalue(String minstringfieldvalue) {
+    this.minstringfieldvalue = minstringfieldvalue;
+    return this;
+  }
+
+   /**
+   * minimum
+   * @return minstringfieldvalue
+  **/
+  @ApiModelProperty(example = "null", value = "minimum")
+  public String getMinstringfieldvalue() {
+    return minstringfieldvalue;
+  }
+
+  public void setMinstringfieldvalue(String minstringfieldvalue) {
+    this.minstringfieldvalue = minstringfieldvalue;
+  }
+
+  public Wageconstantvalue maxstringfieldvalue(String maxstringfieldvalue) {
+    this.maxstringfieldvalue = maxstringfieldvalue;
+    return this;
+  }
+
+   /**
+   * maximum
+   * @return maxstringfieldvalue
+  **/
+  @ApiModelProperty(example = "null", value = "maximum")
+  public String getMaxstringfieldvalue() {
+    return maxstringfieldvalue;
+  }
+
+  public void setMaxstringfieldvalue(String maxstringfieldvalue) {
+    this.maxstringfieldvalue = maxstringfieldvalue;
   }
 
   public Wageconstantvalue system(Boolean system) {
@@ -232,10 +277,10 @@ public class Wageconstantvalue   {
   }
 
    /**
-   * Systémová [persistentní položka]
+   * systémová [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Systémová [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "systémová [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -254,23 +299,23 @@ public class Wageconstantvalue   {
       return false;
     }
     Wageconstantvalue wageconstantvalue = (Wageconstantvalue) o;
-    return Objects.equals(this.displayName, wageconstantvalue.displayName) &&
-        Objects.equals(this.ID, wageconstantvalue.ID) &&
-        Objects.equals(this.classID, wageconstantvalue.classID) &&
-        Objects.equals(this.objVersion, wageconstantvalue.objVersion) &&
-        Objects.equals(this.parentID, wageconstantvalue.parentID) &&
-        Objects.equals(this.validFromDATE, wageconstantvalue.validFromDATE) &&
-        Objects.equals(this.stringFieldValue, wageconstantvalue.stringFieldValue) &&
-        Objects.equals(this.createdByID, wageconstantvalue.createdByID) &&
-        Objects.equals(this.correctedByID, wageconstantvalue.correctedByID) &&
-        Objects.equals(this.minStringFieldValue, wageconstantvalue.minStringFieldValue) &&
-        Objects.equals(this.maxStringFieldValue, wageconstantvalue.maxStringFieldValue) &&
+    return Objects.equals(this.displayname, wageconstantvalue.displayname) &&
+        Objects.equals(this.id, wageconstantvalue.id) &&
+        Objects.equals(this.classid, wageconstantvalue.classid) &&
+        Objects.equals(this.objversion, wageconstantvalue.objversion) &&
+        Objects.equals(this.parentId, wageconstantvalue.parentId) &&
+        Objects.equals(this.validfromdate, wageconstantvalue.validfromdate) &&
+        Objects.equals(this.stringfieldvalue, wageconstantvalue.stringfieldvalue) &&
+        Objects.equals(this.createdbyId, wageconstantvalue.createdbyId) &&
+        Objects.equals(this.correctedbyId, wageconstantvalue.correctedbyId) &&
+        Objects.equals(this.minstringfieldvalue, wageconstantvalue.minstringfieldvalue) &&
+        Objects.equals(this.maxstringfieldvalue, wageconstantvalue.maxstringfieldvalue) &&
         Objects.equals(this.system, wageconstantvalue.system);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, validFromDATE, stringFieldValue, createdByID, correctedByID, minStringFieldValue, maxStringFieldValue, system);
+    return Objects.hash(displayname, id, classid, objversion, parentId, validfromdate, stringfieldvalue, createdbyId, correctedbyId, minstringfieldvalue, maxstringfieldvalue, system);
   }
 
   @Override
@@ -278,17 +323,17 @@ public class Wageconstantvalue   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wageconstantvalue {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    validFromDATE: ").append(toIndentedString(validFromDATE)).append("\n");
-    sb.append("    stringFieldValue: ").append(toIndentedString(stringFieldValue)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    minStringFieldValue: ").append(toIndentedString(minStringFieldValue)).append("\n");
-    sb.append("    maxStringFieldValue: ").append(toIndentedString(maxStringFieldValue)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    validfromdate: ").append(toIndentedString(validfromdate)).append("\n");
+    sb.append("    stringfieldvalue: ").append(toIndentedString(stringfieldvalue)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    minstringfieldvalue: ").append(toIndentedString(minstringfieldvalue)).append("\n");
+    sb.append("    maxstringfieldvalue: ").append(toIndentedString(maxstringfieldvalue)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
     sb.append("}");
     return sb.toString();

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,78 +35,123 @@ import java.util.Objects;
 /**
  * Consignedaid
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Consignedaid   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("Borrowed$DATE")
-  private DateTime borrowedDATE = null;
+  @SerializedName("borrowed$date")
+  private DateTime borroweddate = null;
 
-  @SerializedName("Returned$DATE")
-  private DateTime returnedDATE = null;
+  @SerializedName("returned$date")
+  private DateTime returneddate = null;
 
-  @SerializedName("Price")
+  @SerializedName("price")
   private Double price = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Consignedaid displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Consignedaid id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Consignedaid classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Consignedaid objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Hlavičkový objekt [persistentní položka]
-   * @return parentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Hlavičkový objekt [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Consignedaid parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu hlavičkový objekt [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu hlavičkový objekt [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
   public Consignedaid description(String description) {
@@ -115,10 +160,10 @@ public class Consignedaid   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -127,40 +172,40 @@ public class Consignedaid   {
     this.description = description;
   }
 
-  public Consignedaid borrowedDATE(DateTime borrowedDATE) {
-    this.borrowedDATE = borrowedDATE;
+  public Consignedaid borroweddate(DateTime borroweddate) {
+    this.borroweddate = borroweddate;
     return this;
   }
 
    /**
-   * Půjčeno [persistentní položka]
-   * @return borrowedDATE
+   * půjčeno [persistentní položka]
+   * @return borroweddate
   **/
-  @ApiModelProperty(example = "null", value = "Půjčeno [persistentní položka]")
-  public DateTime getBorrowedDATE() {
-    return borrowedDATE;
+  @ApiModelProperty(example = "null", value = "půjčeno [persistentní položka]")
+  public DateTime getBorroweddate() {
+    return borroweddate;
   }
 
-  public void setBorrowedDATE(DateTime borrowedDATE) {
-    this.borrowedDATE = borrowedDATE;
+  public void setBorroweddate(DateTime borroweddate) {
+    this.borroweddate = borroweddate;
   }
 
-  public Consignedaid returnedDATE(DateTime returnedDATE) {
-    this.returnedDATE = returnedDATE;
+  public Consignedaid returneddate(DateTime returneddate) {
+    this.returneddate = returneddate;
     return this;
   }
 
    /**
-   * Vráceno [persistentní položka]
-   * @return returnedDATE
+   * vráceno [persistentní položka]
+   * @return returneddate
   **/
-  @ApiModelProperty(example = "null", value = "Vráceno [persistentní položka]")
-  public DateTime getReturnedDATE() {
-    return returnedDATE;
+  @ApiModelProperty(example = "null", value = "vráceno [persistentní položka]")
+  public DateTime getReturneddate() {
+    return returneddate;
   }
 
-  public void setReturnedDATE(DateTime returnedDATE) {
-    this.returnedDATE = returnedDATE;
+  public void setReturneddate(DateTime returneddate) {
+    this.returneddate = returneddate;
   }
 
   public Consignedaid price(Double price) {
@@ -169,10 +214,10 @@ public class Consignedaid   {
   }
 
    /**
-   * Cena [persistentní položka]
+   * cena [persistentní položka]
    * @return price
   **/
-  @ApiModelProperty(example = "null", value = "Cena [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "cena [persistentní položka]")
   public Double getPrice() {
     return price;
   }
@@ -191,20 +236,20 @@ public class Consignedaid   {
       return false;
     }
     Consignedaid consignedaid = (Consignedaid) o;
-    return Objects.equals(this.displayName, consignedaid.displayName) &&
-        Objects.equals(this.ID, consignedaid.ID) &&
-        Objects.equals(this.classID, consignedaid.classID) &&
-        Objects.equals(this.objVersion, consignedaid.objVersion) &&
-        Objects.equals(this.parentID, consignedaid.parentID) &&
+    return Objects.equals(this.displayname, consignedaid.displayname) &&
+        Objects.equals(this.id, consignedaid.id) &&
+        Objects.equals(this.classid, consignedaid.classid) &&
+        Objects.equals(this.objversion, consignedaid.objversion) &&
+        Objects.equals(this.parentId, consignedaid.parentId) &&
         Objects.equals(this.description, consignedaid.description) &&
-        Objects.equals(this.borrowedDATE, consignedaid.borrowedDATE) &&
-        Objects.equals(this.returnedDATE, consignedaid.returnedDATE) &&
+        Objects.equals(this.borroweddate, consignedaid.borroweddate) &&
+        Objects.equals(this.returneddate, consignedaid.returneddate) &&
         Objects.equals(this.price, consignedaid.price);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, description, borrowedDATE, returnedDATE, price);
+    return Objects.hash(displayname, id, classid, objversion, parentId, description, borroweddate, returneddate, price);
   }
 
   @Override
@@ -212,14 +257,14 @@ public class Consignedaid   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Consignedaid {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    borrowedDATE: ").append(toIndentedString(borrowedDATE)).append("\n");
-    sb.append("    returnedDATE: ").append(toIndentedString(returnedDATE)).append("\n");
+    sb.append("    borroweddate: ").append(toIndentedString(borroweddate)).append("\n");
+    sb.append("    returneddate: ").append(toIndentedString(returneddate)).append("\n");
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
     sb.append("}");
     return sb.toString();

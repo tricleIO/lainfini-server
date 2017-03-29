@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,72 +34,108 @@ import java.util.Objects;
 /**
  * Pdmuser
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Pdmuser   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("SecurityUser_ID")
-  private String securityUserID = null;
+  @SerializedName("securityuser_id")
+  private String securityuserId = null;
 
-  @SerializedName("Person_ID")
-  private String personID = null;
+  @SerializedName("person_id")
+  private String personId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("PostProvider_ID")
-  private String postProviderID = null;
+  @SerializedName("postprovider_id")
+  private String postproviderId = null;
 
-  @SerializedName("PersonName")
-  private String personName = null;
+  @SerializedName("personname")
+  private String personname = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Pdmuser displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Pdmuser id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Pdmuser classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Pdmuser objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Pdmuser hidden(Boolean hidden) {
@@ -108,10 +144,10 @@ public class Pdmuser   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -120,94 +156,94 @@ public class Pdmuser   {
     this.hidden = hidden;
   }
 
-  public Pdmuser securityUserID(String securityUserID) {
-    this.securityUserID = securityUserID;
+  public Pdmuser securityuserId(String securityuserId) {
+    this.securityuserId = securityuserId;
     return this;
   }
 
    /**
-   * Uživatel systému; ID objektu Uživatel [persistentní položka]
-   * @return securityUserID
+   * uživatel systému; id objektu uživatel [persistentní položka]
+   * @return securityuserId
   **/
-  @ApiModelProperty(example = "null", value = "Uživatel systému; ID objektu Uživatel [persistentní položka]")
-  public String getSecurityUserID() {
-    return securityUserID;
+  @ApiModelProperty(example = "null", value = "uživatel systému; id objektu uživatel [persistentní položka]")
+  public String getSecurityuserId() {
+    return securityuserId;
   }
 
-  public void setSecurityUserID(String securityUserID) {
-    this.securityUserID = securityUserID;
+  public void setSecurityuserId(String securityuserId) {
+    this.securityuserId = securityuserId;
   }
 
-  public Pdmuser personID(String personID) {
-    this.personID = personID;
+  public Pdmuser personId(String personId) {
+    this.personId = personId;
     return this;
   }
 
    /**
-   * Osoba; ID objektu Osoba [persistentní položka]
-   * @return personID
+   * osoba; id objektu osoba [persistentní položka]
+   * @return personId
   **/
-  @ApiModelProperty(example = "null", value = "Osoba; ID objektu Osoba [persistentní položka]")
-  public String getPersonID() {
-    return personID;
+  @ApiModelProperty(example = "null", value = "osoba; id objektu osoba [persistentní položka]")
+  public String getPersonId() {
+    return personId;
   }
 
-  public void setPersonID(String personID) {
-    this.personID = personID;
+  public void setPersonId(String personId) {
+    this.personId = personId;
   }
 
-  public Pdmuser divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Pdmuser divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Pdmuser postProviderID(String postProviderID) {
-    this.postProviderID = postProviderID;
+  public Pdmuser postproviderId(String postproviderId) {
+    this.postproviderId = postproviderId;
     return this;
   }
 
    /**
-   * Poštovní poskytovatel; ID objektu Poskytovatel poštovních služeb [persistentní položka]
-   * @return postProviderID
+   * poštovní poskytovatel; id objektu poskytovatel poštovních služeb [persistentní položka]
+   * @return postproviderId
   **/
-  @ApiModelProperty(example = "null", value = "Poštovní poskytovatel; ID objektu Poskytovatel poštovních služeb [persistentní položka]")
-  public String getPostProviderID() {
-    return postProviderID;
+  @ApiModelProperty(example = "null", value = "poštovní poskytovatel; id objektu poskytovatel poštovních služeb [persistentní položka]")
+  public String getPostproviderId() {
+    return postproviderId;
   }
 
-  public void setPostProviderID(String postProviderID) {
-    this.postProviderID = postProviderID;
+  public void setPostproviderId(String postproviderId) {
+    this.postproviderId = postproviderId;
   }
 
-  public Pdmuser personName(String personName) {
-    this.personName = personName;
+  public Pdmuser personname(String personname) {
+    this.personname = personname;
     return this;
   }
 
    /**
-   * Jméno osoby
-   * @return personName
+   * jméno osoby
+   * @return personname
   **/
-  @ApiModelProperty(example = "null", value = "Jméno osoby")
-  public String getPersonName() {
-    return personName;
+  @ApiModelProperty(example = "null", value = "jméno osoby")
+  public String getPersonname() {
+    return personname;
   }
 
-  public void setPersonName(String personName) {
-    this.personName = personName;
+  public void setPersonname(String personname) {
+    this.personname = personname;
   }
 
 
@@ -220,21 +256,21 @@ public class Pdmuser   {
       return false;
     }
     Pdmuser pdmuser = (Pdmuser) o;
-    return Objects.equals(this.displayName, pdmuser.displayName) &&
-        Objects.equals(this.ID, pdmuser.ID) &&
-        Objects.equals(this.classID, pdmuser.classID) &&
-        Objects.equals(this.objVersion, pdmuser.objVersion) &&
+    return Objects.equals(this.displayname, pdmuser.displayname) &&
+        Objects.equals(this.id, pdmuser.id) &&
+        Objects.equals(this.classid, pdmuser.classid) &&
+        Objects.equals(this.objversion, pdmuser.objversion) &&
         Objects.equals(this.hidden, pdmuser.hidden) &&
-        Objects.equals(this.securityUserID, pdmuser.securityUserID) &&
-        Objects.equals(this.personID, pdmuser.personID) &&
-        Objects.equals(this.divisionID, pdmuser.divisionID) &&
-        Objects.equals(this.postProviderID, pdmuser.postProviderID) &&
-        Objects.equals(this.personName, pdmuser.personName);
+        Objects.equals(this.securityuserId, pdmuser.securityuserId) &&
+        Objects.equals(this.personId, pdmuser.personId) &&
+        Objects.equals(this.divisionId, pdmuser.divisionId) &&
+        Objects.equals(this.postproviderId, pdmuser.postproviderId) &&
+        Objects.equals(this.personname, pdmuser.personname);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, securityUserID, personID, divisionID, postProviderID, personName);
+    return Objects.hash(displayname, id, classid, objversion, hidden, securityuserId, personId, divisionId, postproviderId, personname);
   }
 
   @Override
@@ -242,16 +278,16 @@ public class Pdmuser   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Pdmuser {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    securityUserID: ").append(toIndentedString(securityUserID)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    postProviderID: ").append(toIndentedString(postProviderID)).append("\n");
-    sb.append("    personName: ").append(toIndentedString(personName)).append("\n");
+    sb.append("    securityuserId: ").append(toIndentedString(securityuserId)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    postproviderId: ").append(toIndentedString(postproviderId)).append("\n");
+    sb.append("    personname: ").append(toIndentedString(personname)).append("\n");
     sb.append("}");
     return sb.toString();
   }

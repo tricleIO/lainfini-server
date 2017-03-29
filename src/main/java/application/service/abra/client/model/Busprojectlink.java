@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,87 +34,132 @@ import java.util.Objects;
 /**
  * Busprojectlink
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Busprojectlink   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Precedent_ID")
-  private String precedentID = null;
+  @SerializedName("precedent_id")
+  private String precedentId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Projekt [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Projekt [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Busprojectlink precedentID(String precedentID) {
-    this.precedentID = precedentID;
+  public Busprojectlink displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Předcházející projekt; ID objektu Projekt [persistentní položka]
-   * @return precedentID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Předcházející projekt; ID objektu Projekt [persistentní položka]")
-  public String getPrecedentID() {
-    return precedentID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPrecedentID(String precedentID) {
-    this.precedentID = precedentID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Busprojectlink id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Busprojectlink classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Busprojectlink objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Busprojectlink parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu projekt [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu projekt [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Busprojectlink precedentId(String precedentId) {
+    this.precedentId = precedentId;
+    return this;
+  }
+
+   /**
+   * předcházející projekt; id objektu projekt [persistentní položka]
+   * @return precedentId
+  **/
+  @ApiModelProperty(example = "null", value = "předcházející projekt; id objektu projekt [persistentní položka]")
+  public String getPrecedentId() {
+    return precedentId;
+  }
+
+  public void setPrecedentId(String precedentId) {
+    this.precedentId = precedentId;
   }
 
 
@@ -127,17 +172,17 @@ public class Busprojectlink   {
       return false;
     }
     Busprojectlink busprojectlink = (Busprojectlink) o;
-    return Objects.equals(this.displayName, busprojectlink.displayName) &&
-        Objects.equals(this.ID, busprojectlink.ID) &&
-        Objects.equals(this.classID, busprojectlink.classID) &&
-        Objects.equals(this.objVersion, busprojectlink.objVersion) &&
-        Objects.equals(this.parentID, busprojectlink.parentID) &&
-        Objects.equals(this.precedentID, busprojectlink.precedentID);
+    return Objects.equals(this.displayname, busprojectlink.displayname) &&
+        Objects.equals(this.id, busprojectlink.id) &&
+        Objects.equals(this.classid, busprojectlink.classid) &&
+        Objects.equals(this.objversion, busprojectlink.objversion) &&
+        Objects.equals(this.parentId, busprojectlink.parentId) &&
+        Objects.equals(this.precedentId, busprojectlink.precedentId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, precedentID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, precedentId);
   }
 
   @Override
@@ -145,12 +190,12 @@ public class Busprojectlink   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Busprojectlink {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    precedentID: ").append(toIndentedString(precedentID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    precedentId: ").append(toIndentedString(precedentId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

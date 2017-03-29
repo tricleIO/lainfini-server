@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,75 +36,111 @@ import java.util.Objects;
 /**
  * Possellingstandsmap
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Possellingstandsmap   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Possellingstandsmapspace> rows = new ArrayList<Possellingstandsmapspace>();
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Shop_ID")
-  private String shopID = null;
+  @SerializedName("shop_id")
+  private String shopId = null;
 
-  @SerializedName("Map")
+  @SerializedName("map")
   private byte[] map = null;
 
-  @SerializedName("ScreenWidth")
-  private Integer screenWidth = null;
+  @SerializedName("screenwidth")
+  private Integer screenwidth = null;
 
-  @SerializedName("ScreenHeigth")
-  private Integer screenHeigth = null;
+  @SerializedName("screenheigth")
+  private Integer screenheigth = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Possellingstandsmap displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Possellingstandsmap id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Possellingstandsmap classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Possellingstandsmap objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Possellingstandsmap rows(List<Possellingstandsmapspace> rows) {
@@ -118,10 +154,10 @@ public class Possellingstandsmap   {
   }
 
    /**
-   * Řádky; kolekce BO Plochy [nepersistentní položka]
+   * Řádky; kolekce bo plochy [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Plochy [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo plochy [nepersistentní položka]")
   public List<Possellingstandsmapspace> getRows() {
     return rows;
   }
@@ -136,10 +172,10 @@ public class Possellingstandsmap   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -154,10 +190,10 @@ public class Possellingstandsmap   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -166,22 +202,22 @@ public class Possellingstandsmap   {
     this.code = code;
   }
 
-  public Possellingstandsmap shopID(String shopID) {
-    this.shopID = shopID;
+  public Possellingstandsmap shopId(String shopId) {
+    this.shopId = shopId;
     return this;
   }
 
    /**
-   * Provoz; ID objektu Nastavení provozu [persistentní položka]
-   * @return shopID
+   * provoz; id objektu nastavení provozu [persistentní položka]
+   * @return shopId
   **/
-  @ApiModelProperty(example = "null", value = "Provoz; ID objektu Nastavení provozu [persistentní položka]")
-  public String getShopID() {
-    return shopID;
+  @ApiModelProperty(example = "null", value = "provoz; id objektu nastavení provozu [persistentní položka]")
+  public String getShopId() {
+    return shopId;
   }
 
-  public void setShopID(String shopID) {
-    this.shopID = shopID;
+  public void setShopId(String shopId) {
+    this.shopId = shopId;
   }
 
   public Possellingstandsmap map(byte[] map) {
@@ -190,10 +226,10 @@ public class Possellingstandsmap   {
   }
 
    /**
-   * Mapa [persistentní položka]
+   * mapa [persistentní položka]
    * @return map
   **/
-  @ApiModelProperty(example = "null", value = "Mapa [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "mapa [persistentní položka]")
   public byte[] getMap() {
     return map;
   }
@@ -202,40 +238,40 @@ public class Possellingstandsmap   {
     this.map = map;
   }
 
-  public Possellingstandsmap screenWidth(Integer screenWidth) {
-    this.screenWidth = screenWidth;
+  public Possellingstandsmap screenwidth(Integer screenwidth) {
+    this.screenwidth = screenwidth;
     return this;
   }
 
    /**
-   * Výška obrazovky [persistentní položka]
-   * @return screenWidth
+   * výška obrazovky [persistentní položka]
+   * @return screenwidth
   **/
-  @ApiModelProperty(example = "null", value = "Výška obrazovky [persistentní položka]")
-  public Integer getScreenWidth() {
-    return screenWidth;
+  @ApiModelProperty(example = "null", value = "výška obrazovky [persistentní položka]")
+  public Integer getScreenwidth() {
+    return screenwidth;
   }
 
-  public void setScreenWidth(Integer screenWidth) {
-    this.screenWidth = screenWidth;
+  public void setScreenwidth(Integer screenwidth) {
+    this.screenwidth = screenwidth;
   }
 
-  public Possellingstandsmap screenHeigth(Integer screenHeigth) {
-    this.screenHeigth = screenHeigth;
+  public Possellingstandsmap screenheigth(Integer screenheigth) {
+    this.screenheigth = screenheigth;
     return this;
   }
 
    /**
    * Šířka obrazovky [persistentní položka]
-   * @return screenHeigth
+   * @return screenheigth
   **/
   @ApiModelProperty(example = "null", value = "Šířka obrazovky [persistentní položka]")
-  public Integer getScreenHeigth() {
-    return screenHeigth;
+  public Integer getScreenheigth() {
+    return screenheigth;
   }
 
-  public void setScreenHeigth(Integer screenHeigth) {
-    this.screenHeigth = screenHeigth;
+  public void setScreenheigth(Integer screenheigth) {
+    this.screenheigth = screenheigth;
   }
 
 
@@ -248,22 +284,22 @@ public class Possellingstandsmap   {
       return false;
     }
     Possellingstandsmap possellingstandsmap = (Possellingstandsmap) o;
-    return Objects.equals(this.displayName, possellingstandsmap.displayName) &&
-        Objects.equals(this.ID, possellingstandsmap.ID) &&
-        Objects.equals(this.classID, possellingstandsmap.classID) &&
-        Objects.equals(this.objVersion, possellingstandsmap.objVersion) &&
+    return Objects.equals(this.displayname, possellingstandsmap.displayname) &&
+        Objects.equals(this.id, possellingstandsmap.id) &&
+        Objects.equals(this.classid, possellingstandsmap.classid) &&
+        Objects.equals(this.objversion, possellingstandsmap.objversion) &&
         Objects.equals(this.rows, possellingstandsmap.rows) &&
         Objects.equals(this.name, possellingstandsmap.name) &&
         Objects.equals(this.code, possellingstandsmap.code) &&
-        Objects.equals(this.shopID, possellingstandsmap.shopID) &&
+        Objects.equals(this.shopId, possellingstandsmap.shopId) &&
         Objects.equals(this.map, possellingstandsmap.map) &&
-        Objects.equals(this.screenWidth, possellingstandsmap.screenWidth) &&
-        Objects.equals(this.screenHeigth, possellingstandsmap.screenHeigth);
+        Objects.equals(this.screenwidth, possellingstandsmap.screenwidth) &&
+        Objects.equals(this.screenheigth, possellingstandsmap.screenheigth);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, name, code, shopID, map, screenWidth, screenHeigth);
+    return Objects.hash(displayname, id, classid, objversion, rows, name, code, shopId, map, screenwidth, screenheigth);
   }
 
   @Override
@@ -271,17 +307,17 @@ public class Possellingstandsmap   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Possellingstandsmap {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
-    sb.append("    shopID: ").append(toIndentedString(shopID)).append("\n");
+    sb.append("    shopId: ").append(toIndentedString(shopId)).append("\n");
     sb.append("    map: ").append(toIndentedString(map)).append("\n");
-    sb.append("    screenWidth: ").append(toIndentedString(screenWidth)).append("\n");
-    sb.append("    screenHeigth: ").append(toIndentedString(screenHeigth)).append("\n");
+    sb.append("    screenwidth: ").append(toIndentedString(screenwidth)).append("\n");
+    sb.append("    screenheigth: ").append(toIndentedString(screenheigth)).append("\n");
     sb.append("}");
     return sb.toString();
   }

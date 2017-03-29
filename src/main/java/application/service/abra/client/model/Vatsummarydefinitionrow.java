@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,174 +34,219 @@ import java.util.Objects;
 /**
  * Vatsummarydefinitionrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Vatsummarydefinitionrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("VATIndex_ID")
-  private String vATIndexID = null;
+  @SerializedName("vatindex_id")
+  private String vatindexId = null;
 
-  @SerializedName("BaseLineNumber")
-  private String baseLineNumber = null;
+  @SerializedName("baselinenumber")
+  private String baselinenumber = null;
 
-  @SerializedName("TaxLineNumber")
-  private String taxLineNumber = null;
+  @SerializedName("taxlinenumber")
+  private String taxlinenumber = null;
 
-  @SerializedName("VATReportMode")
-  private String vATReportMode = null;
+  @SerializedName("vatreportmode")
+  private String vatreportmode = null;
 
-  @SerializedName("AllowCorrection")
-  private Boolean allowCorrection = null;
+  @SerializedName("allowcorrection")
+  private Boolean allowcorrection = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Definice pro DPH přiznání [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Definice pro DPH přiznání [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Vatsummarydefinitionrow vATIndexID(String vATIndexID) {
-    this.vATIndexID = vATIndexID;
+  public Vatsummarydefinitionrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * DPHIndex; ID objektu DPH index [persistentní položka]
-   * @return vATIndexID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "DPHIndex; ID objektu DPH index [persistentní položka]")
-  public String getVATIndexID() {
-    return vATIndexID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setVATIndexID(String vATIndexID) {
-    this.vATIndexID = vATIndexID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Vatsummarydefinitionrow baseLineNumber(String baseLineNumber) {
-    this.baseLineNumber = baseLineNumber;
+  public Vatsummarydefinitionrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Iden.ř.základu [persistentní položka]
-   * @return baseLineNumber
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Iden.ř.základu [persistentní položka]")
-  public String getBaseLineNumber() {
-    return baseLineNumber;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setBaseLineNumber(String baseLineNumber) {
-    this.baseLineNumber = baseLineNumber;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Vatsummarydefinitionrow taxLineNumber(String taxLineNumber) {
-    this.taxLineNumber = taxLineNumber;
+  public Vatsummarydefinitionrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Iden.ř.daně [persistentní položka]
-   * @return taxLineNumber
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Iden.ř.daně [persistentní položka]")
-  public String getTaxLineNumber() {
-    return taxLineNumber;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setTaxLineNumber(String taxLineNumber) {
-    this.taxLineNumber = taxLineNumber;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Vatsummarydefinitionrow vATReportMode(String vATReportMode) {
-    this.vATReportMode = vATReportMode;
+  public Vatsummarydefinitionrow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Příznak pro výkazy DPH [persistentní položka]
-   * @return vATReportMode
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Příznak pro výkazy DPH [persistentní položka]")
-  public String getVATReportMode() {
-    return vATReportMode;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setVATReportMode(String vATReportMode) {
-    this.vATReportMode = vATReportMode;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Vatsummarydefinitionrow allowCorrection(Boolean allowCorrection) {
-    this.allowCorrection = allowCorrection;
+  public Vatsummarydefinitionrow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Povolit opravu [persistentní položka]
-   * @return allowCorrection
+   * vlastník; id objektu definice pro dph přiznání [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Povolit opravu [persistentní položka]")
-  public Boolean getAllowCorrection() {
-    return allowCorrection;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu definice pro dph přiznání [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setAllowCorrection(Boolean allowCorrection) {
-    this.allowCorrection = allowCorrection;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Vatsummarydefinitionrow vatindexId(String vatindexId) {
+    this.vatindexId = vatindexId;
+    return this;
+  }
+
+   /**
+   * dphindex; id objektu dph index [persistentní položka]
+   * @return vatindexId
+  **/
+  @ApiModelProperty(example = "null", value = "dphindex; id objektu dph index [persistentní položka]")
+  public String getVatindexId() {
+    return vatindexId;
+  }
+
+  public void setVatindexId(String vatindexId) {
+    this.vatindexId = vatindexId;
+  }
+
+  public Vatsummarydefinitionrow baselinenumber(String baselinenumber) {
+    this.baselinenumber = baselinenumber;
+    return this;
+  }
+
+   /**
+   * iden.ř.základu [persistentní položka]
+   * @return baselinenumber
+  **/
+  @ApiModelProperty(example = "null", value = "iden.ř.základu [persistentní položka]")
+  public String getBaselinenumber() {
+    return baselinenumber;
+  }
+
+  public void setBaselinenumber(String baselinenumber) {
+    this.baselinenumber = baselinenumber;
+  }
+
+  public Vatsummarydefinitionrow taxlinenumber(String taxlinenumber) {
+    this.taxlinenumber = taxlinenumber;
+    return this;
+  }
+
+   /**
+   * iden.ř.daně [persistentní položka]
+   * @return taxlinenumber
+  **/
+  @ApiModelProperty(example = "null", value = "iden.ř.daně [persistentní položka]")
+  public String getTaxlinenumber() {
+    return taxlinenumber;
+  }
+
+  public void setTaxlinenumber(String taxlinenumber) {
+    this.taxlinenumber = taxlinenumber;
+  }
+
+  public Vatsummarydefinitionrow vatreportmode(String vatreportmode) {
+    this.vatreportmode = vatreportmode;
+    return this;
+  }
+
+   /**
+   * příznak pro výkazy dph [persistentní položka]
+   * @return vatreportmode
+  **/
+  @ApiModelProperty(example = "null", value = "příznak pro výkazy dph [persistentní položka]")
+  public String getVatreportmode() {
+    return vatreportmode;
+  }
+
+  public void setVatreportmode(String vatreportmode) {
+    this.vatreportmode = vatreportmode;
+  }
+
+  public Vatsummarydefinitionrow allowcorrection(Boolean allowcorrection) {
+    this.allowcorrection = allowcorrection;
+    return this;
+  }
+
+   /**
+   * povolit opravu [persistentní položka]
+   * @return allowcorrection
+  **/
+  @ApiModelProperty(example = "null", value = "povolit opravu [persistentní položka]")
+  public Boolean getAllowcorrection() {
+    return allowcorrection;
+  }
+
+  public void setAllowcorrection(Boolean allowcorrection) {
+    this.allowcorrection = allowcorrection;
   }
 
   public Vatsummarydefinitionrow description(String description) {
@@ -210,10 +255,10 @@ public class Vatsummarydefinitionrow   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -232,22 +277,22 @@ public class Vatsummarydefinitionrow   {
       return false;
     }
     Vatsummarydefinitionrow vatsummarydefinitionrow = (Vatsummarydefinitionrow) o;
-    return Objects.equals(this.displayName, vatsummarydefinitionrow.displayName) &&
-        Objects.equals(this.ID, vatsummarydefinitionrow.ID) &&
-        Objects.equals(this.classID, vatsummarydefinitionrow.classID) &&
-        Objects.equals(this.objVersion, vatsummarydefinitionrow.objVersion) &&
-        Objects.equals(this.parentID, vatsummarydefinitionrow.parentID) &&
-        Objects.equals(this.vATIndexID, vatsummarydefinitionrow.vATIndexID) &&
-        Objects.equals(this.baseLineNumber, vatsummarydefinitionrow.baseLineNumber) &&
-        Objects.equals(this.taxLineNumber, vatsummarydefinitionrow.taxLineNumber) &&
-        Objects.equals(this.vATReportMode, vatsummarydefinitionrow.vATReportMode) &&
-        Objects.equals(this.allowCorrection, vatsummarydefinitionrow.allowCorrection) &&
+    return Objects.equals(this.displayname, vatsummarydefinitionrow.displayname) &&
+        Objects.equals(this.id, vatsummarydefinitionrow.id) &&
+        Objects.equals(this.classid, vatsummarydefinitionrow.classid) &&
+        Objects.equals(this.objversion, vatsummarydefinitionrow.objversion) &&
+        Objects.equals(this.parentId, vatsummarydefinitionrow.parentId) &&
+        Objects.equals(this.vatindexId, vatsummarydefinitionrow.vatindexId) &&
+        Objects.equals(this.baselinenumber, vatsummarydefinitionrow.baselinenumber) &&
+        Objects.equals(this.taxlinenumber, vatsummarydefinitionrow.taxlinenumber) &&
+        Objects.equals(this.vatreportmode, vatsummarydefinitionrow.vatreportmode) &&
+        Objects.equals(this.allowcorrection, vatsummarydefinitionrow.allowcorrection) &&
         Objects.equals(this.description, vatsummarydefinitionrow.description);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, vATIndexID, baseLineNumber, taxLineNumber, vATReportMode, allowCorrection, description);
+    return Objects.hash(displayname, id, classid, objversion, parentId, vatindexId, baselinenumber, taxlinenumber, vatreportmode, allowcorrection, description);
   }
 
   @Override
@@ -255,16 +300,16 @@ public class Vatsummarydefinitionrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Vatsummarydefinitionrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    vATIndexID: ").append(toIndentedString(vATIndexID)).append("\n");
-    sb.append("    baseLineNumber: ").append(toIndentedString(baseLineNumber)).append("\n");
-    sb.append("    taxLineNumber: ").append(toIndentedString(taxLineNumber)).append("\n");
-    sb.append("    vATReportMode: ").append(toIndentedString(vATReportMode)).append("\n");
-    sb.append("    allowCorrection: ").append(toIndentedString(allowCorrection)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    vatindexId: ").append(toIndentedString(vatindexId)).append("\n");
+    sb.append("    baselinenumber: ").append(toIndentedString(baselinenumber)).append("\n");
+    sb.append("    taxlinenumber: ").append(toIndentedString(taxlinenumber)).append("\n");
+    sb.append("    vatreportmode: ").append(toIndentedString(vatreportmode)).append("\n");
+    sb.append("    allowcorrection: ").append(toIndentedString(allowcorrection)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("}");
     return sb.toString();

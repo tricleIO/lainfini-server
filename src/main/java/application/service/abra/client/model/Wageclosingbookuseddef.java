@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,87 +34,132 @@ import java.util.Objects;
 /**
  * Wageclosingbookuseddef
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wageclosingbookuseddef   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Definition_ID")
-  private String definitionID = null;
+  @SerializedName("definition_id")
+  private String definitionId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Uzávěrka mezd [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Uzávěrka mezd [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Wageclosingbookuseddef definitionID(String definitionID) {
-    this.definitionID = definitionID;
+  public Wageclosingbookuseddef displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Definice uzávěrky; ID objektu Definice výpočtu uzávěrky [persistentní položka]
-   * @return definitionID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Definice uzávěrky; ID objektu Definice výpočtu uzávěrky [persistentní položka]")
-  public String getDefinitionID() {
-    return definitionID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDefinitionID(String definitionID) {
-    this.definitionID = definitionID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wageclosingbookuseddef id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wageclosingbookuseddef classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wageclosingbookuseddef objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Wageclosingbookuseddef parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu uzávěrka mezd [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu uzávěrka mezd [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Wageclosingbookuseddef definitionId(String definitionId) {
+    this.definitionId = definitionId;
+    return this;
+  }
+
+   /**
+   * definice uzávěrky; id objektu definice výpočtu uzávěrky [persistentní položka]
+   * @return definitionId
+  **/
+  @ApiModelProperty(example = "null", value = "definice uzávěrky; id objektu definice výpočtu uzávěrky [persistentní položka]")
+  public String getDefinitionId() {
+    return definitionId;
+  }
+
+  public void setDefinitionId(String definitionId) {
+    this.definitionId = definitionId;
   }
 
 
@@ -127,17 +172,17 @@ public class Wageclosingbookuseddef   {
       return false;
     }
     Wageclosingbookuseddef wageclosingbookuseddef = (Wageclosingbookuseddef) o;
-    return Objects.equals(this.displayName, wageclosingbookuseddef.displayName) &&
-        Objects.equals(this.ID, wageclosingbookuseddef.ID) &&
-        Objects.equals(this.classID, wageclosingbookuseddef.classID) &&
-        Objects.equals(this.objVersion, wageclosingbookuseddef.objVersion) &&
-        Objects.equals(this.parentID, wageclosingbookuseddef.parentID) &&
-        Objects.equals(this.definitionID, wageclosingbookuseddef.definitionID);
+    return Objects.equals(this.displayname, wageclosingbookuseddef.displayname) &&
+        Objects.equals(this.id, wageclosingbookuseddef.id) &&
+        Objects.equals(this.classid, wageclosingbookuseddef.classid) &&
+        Objects.equals(this.objversion, wageclosingbookuseddef.objversion) &&
+        Objects.equals(this.parentId, wageclosingbookuseddef.parentId) &&
+        Objects.equals(this.definitionId, wageclosingbookuseddef.definitionId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, definitionID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, definitionId);
   }
 
   @Override
@@ -145,12 +190,12 @@ public class Wageclosingbookuseddef   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wageclosingbookuseddef {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    definitionID: ").append(toIndentedString(definitionID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    definitionId: ").append(toIndentedString(definitionId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

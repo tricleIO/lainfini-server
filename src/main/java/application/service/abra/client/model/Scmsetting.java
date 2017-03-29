@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,87 +34,123 @@ import java.util.Objects;
 /**
  * Scmsetting
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Scmsetting   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("DisplayFormat")
-  private String displayFormat = null;
+  @SerializedName("displayformat")
+  private String displayformat = null;
 
-  @SerializedName("CrisisColor")
-  private Integer crisisColor = null;
+  @SerializedName("crisiscolor")
+  private Integer crisiscolor = null;
 
-  @SerializedName("TempCrisisColor")
-  private Integer tempCrisisColor = null;
+  @SerializedName("tempcrisiscolor")
+  private Integer tempcrisiscolor = null;
 
-  @SerializedName("CrisisFontColor")
-  private Integer crisisFontColor = null;
+  @SerializedName("crisisfontcolor")
+  private Integer crisisfontcolor = null;
 
-  @SerializedName("TempCrisisFontColor")
-  private Integer tempCrisisFontColor = null;
+  @SerializedName("tempcrisisfontcolor")
+  private Integer tempcrisisfontcolor = null;
 
-  @SerializedName("StoreCardsSource_ID")
-  private String storeCardsSourceID = null;
+  @SerializedName("storecardssource_id")
+  private String storecardssourceId = null;
 
-  @SerializedName("StoresSource_ID")
-  private String storesSourceID = null;
+  @SerializedName("storessource_id")
+  private String storessourceId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Scmsetting displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Scmsetting id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Scmsetting classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Scmsetting objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Scmsetting code(String code) {
@@ -123,10 +159,10 @@ public class Scmsetting   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -141,10 +177,10 @@ public class Scmsetting   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -159,10 +195,10 @@ public class Scmsetting   {
   }
 
    /**
-   * Systémové [persistentní položka]
+   * systémové [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Systémové [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "systémové [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -177,10 +213,10 @@ public class Scmsetting   {
   }
 
    /**
-   * Skryté [persistentní položka]
+   * skryté [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skryté [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skryté [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -189,130 +225,130 @@ public class Scmsetting   {
     this.hidden = hidden;
   }
 
-  public Scmsetting displayFormat(String displayFormat) {
-    this.displayFormat = displayFormat;
+  public Scmsetting displayformat(String displayformat) {
+    this.displayformat = displayformat;
     return this;
   }
 
    /**
-   * Zobrazovací maska [persistentní položka]
-   * @return displayFormat
+   * zobrazovací maska [persistentní položka]
+   * @return displayformat
   **/
-  @ApiModelProperty(example = "null", value = "Zobrazovací maska [persistentní položka]")
-  public String getDisplayFormat() {
-    return displayFormat;
+  @ApiModelProperty(example = "null", value = "zobrazovací maska [persistentní položka]")
+  public String getDisplayformat() {
+    return displayformat;
   }
 
-  public void setDisplayFormat(String displayFormat) {
-    this.displayFormat = displayFormat;
+  public void setDisplayformat(String displayformat) {
+    this.displayformat = displayformat;
   }
 
-  public Scmsetting crisisColor(Integer crisisColor) {
-    this.crisisColor = crisisColor;
+  public Scmsetting crisiscolor(Integer crisiscolor) {
+    this.crisiscolor = crisiscolor;
     return this;
   }
 
    /**
-   * Barva krize [persistentní položka]
-   * @return crisisColor
+   * barva krize [persistentní položka]
+   * @return crisiscolor
   **/
-  @ApiModelProperty(example = "null", value = "Barva krize [persistentní položka]")
-  public Integer getCrisisColor() {
-    return crisisColor;
+  @ApiModelProperty(example = "null", value = "barva krize [persistentní položka]")
+  public Integer getCrisiscolor() {
+    return crisiscolor;
   }
 
-  public void setCrisisColor(Integer crisisColor) {
-    this.crisisColor = crisisColor;
+  public void setCrisiscolor(Integer crisiscolor) {
+    this.crisiscolor = crisiscolor;
   }
 
-  public Scmsetting tempCrisisColor(Integer tempCrisisColor) {
-    this.tempCrisisColor = tempCrisisColor;
+  public Scmsetting tempcrisiscolor(Integer tempcrisiscolor) {
+    this.tempcrisiscolor = tempcrisiscolor;
     return this;
   }
 
    /**
-   * Barva dočasné krize [persistentní položka]
-   * @return tempCrisisColor
+   * barva dočasné krize [persistentní položka]
+   * @return tempcrisiscolor
   **/
-  @ApiModelProperty(example = "null", value = "Barva dočasné krize [persistentní položka]")
-  public Integer getTempCrisisColor() {
-    return tempCrisisColor;
+  @ApiModelProperty(example = "null", value = "barva dočasné krize [persistentní položka]")
+  public Integer getTempcrisiscolor() {
+    return tempcrisiscolor;
   }
 
-  public void setTempCrisisColor(Integer tempCrisisColor) {
-    this.tempCrisisColor = tempCrisisColor;
+  public void setTempcrisiscolor(Integer tempcrisiscolor) {
+    this.tempcrisiscolor = tempcrisiscolor;
   }
 
-  public Scmsetting crisisFontColor(Integer crisisFontColor) {
-    this.crisisFontColor = crisisFontColor;
+  public Scmsetting crisisfontcolor(Integer crisisfontcolor) {
+    this.crisisfontcolor = crisisfontcolor;
     return this;
   }
 
    /**
-   * Barva písma krize [persistentní položka]
-   * @return crisisFontColor
+   * barva písma krize [persistentní položka]
+   * @return crisisfontcolor
   **/
-  @ApiModelProperty(example = "null", value = "Barva písma krize [persistentní položka]")
-  public Integer getCrisisFontColor() {
-    return crisisFontColor;
+  @ApiModelProperty(example = "null", value = "barva písma krize [persistentní položka]")
+  public Integer getCrisisfontcolor() {
+    return crisisfontcolor;
   }
 
-  public void setCrisisFontColor(Integer crisisFontColor) {
-    this.crisisFontColor = crisisFontColor;
+  public void setCrisisfontcolor(Integer crisisfontcolor) {
+    this.crisisfontcolor = crisisfontcolor;
   }
 
-  public Scmsetting tempCrisisFontColor(Integer tempCrisisFontColor) {
-    this.tempCrisisFontColor = tempCrisisFontColor;
+  public Scmsetting tempcrisisfontcolor(Integer tempcrisisfontcolor) {
+    this.tempcrisisfontcolor = tempcrisisfontcolor;
     return this;
   }
 
    /**
-   * Barva písma dočasné krize [persistentní položka]
-   * @return tempCrisisFontColor
+   * barva písma dočasné krize [persistentní položka]
+   * @return tempcrisisfontcolor
   **/
-  @ApiModelProperty(example = "null", value = "Barva písma dočasné krize [persistentní položka]")
-  public Integer getTempCrisisFontColor() {
-    return tempCrisisFontColor;
+  @ApiModelProperty(example = "null", value = "barva písma dočasné krize [persistentní položka]")
+  public Integer getTempcrisisfontcolor() {
+    return tempcrisisfontcolor;
   }
 
-  public void setTempCrisisFontColor(Integer tempCrisisFontColor) {
-    this.tempCrisisFontColor = tempCrisisFontColor;
+  public void setTempcrisisfontcolor(Integer tempcrisisfontcolor) {
+    this.tempcrisisfontcolor = tempcrisisfontcolor;
   }
 
-  public Scmsetting storeCardsSourceID(String storeCardsSourceID) {
-    this.storeCardsSourceID = storeCardsSourceID;
+  public Scmsetting storecardssourceId(String storecardssourceId) {
+    this.storecardssourceId = storecardssourceId;
     return this;
   }
 
    /**
-   * Zdroj skl. karet; ID objektu Datový zdroj [persistentní položka]
-   * @return storeCardsSourceID
+   * zdroj skl. karet; id objektu datový zdroj [persistentní položka]
+   * @return storecardssourceId
   **/
-  @ApiModelProperty(example = "null", value = "Zdroj skl. karet; ID objektu Datový zdroj [persistentní položka]")
-  public String getStoreCardsSourceID() {
-    return storeCardsSourceID;
+  @ApiModelProperty(example = "null", value = "zdroj skl. karet; id objektu datový zdroj [persistentní položka]")
+  public String getStorecardssourceId() {
+    return storecardssourceId;
   }
 
-  public void setStoreCardsSourceID(String storeCardsSourceID) {
-    this.storeCardsSourceID = storeCardsSourceID;
+  public void setStorecardssourceId(String storecardssourceId) {
+    this.storecardssourceId = storecardssourceId;
   }
 
-  public Scmsetting storesSourceID(String storesSourceID) {
-    this.storesSourceID = storesSourceID;
+  public Scmsetting storessourceId(String storessourceId) {
+    this.storessourceId = storessourceId;
     return this;
   }
 
    /**
-   * Zdroj skladů; ID objektu Datový zdroj [persistentní položka]
-   * @return storesSourceID
+   * zdroj skladů; id objektu datový zdroj [persistentní položka]
+   * @return storessourceId
   **/
-  @ApiModelProperty(example = "null", value = "Zdroj skladů; ID objektu Datový zdroj [persistentní položka]")
-  public String getStoresSourceID() {
-    return storesSourceID;
+  @ApiModelProperty(example = "null", value = "zdroj skladů; id objektu datový zdroj [persistentní položka]")
+  public String getStoressourceId() {
+    return storessourceId;
   }
 
-  public void setStoresSourceID(String storesSourceID) {
-    this.storesSourceID = storesSourceID;
+  public void setStoressourceId(String storessourceId) {
+    this.storessourceId = storessourceId;
   }
 
 
@@ -325,26 +361,26 @@ public class Scmsetting   {
       return false;
     }
     Scmsetting scmsetting = (Scmsetting) o;
-    return Objects.equals(this.displayName, scmsetting.displayName) &&
-        Objects.equals(this.ID, scmsetting.ID) &&
-        Objects.equals(this.classID, scmsetting.classID) &&
-        Objects.equals(this.objVersion, scmsetting.objVersion) &&
+    return Objects.equals(this.displayname, scmsetting.displayname) &&
+        Objects.equals(this.id, scmsetting.id) &&
+        Objects.equals(this.classid, scmsetting.classid) &&
+        Objects.equals(this.objversion, scmsetting.objversion) &&
         Objects.equals(this.code, scmsetting.code) &&
         Objects.equals(this.name, scmsetting.name) &&
         Objects.equals(this.system, scmsetting.system) &&
         Objects.equals(this.hidden, scmsetting.hidden) &&
-        Objects.equals(this.displayFormat, scmsetting.displayFormat) &&
-        Objects.equals(this.crisisColor, scmsetting.crisisColor) &&
-        Objects.equals(this.tempCrisisColor, scmsetting.tempCrisisColor) &&
-        Objects.equals(this.crisisFontColor, scmsetting.crisisFontColor) &&
-        Objects.equals(this.tempCrisisFontColor, scmsetting.tempCrisisFontColor) &&
-        Objects.equals(this.storeCardsSourceID, scmsetting.storeCardsSourceID) &&
-        Objects.equals(this.storesSourceID, scmsetting.storesSourceID);
+        Objects.equals(this.displayformat, scmsetting.displayformat) &&
+        Objects.equals(this.crisiscolor, scmsetting.crisiscolor) &&
+        Objects.equals(this.tempcrisiscolor, scmsetting.tempcrisiscolor) &&
+        Objects.equals(this.crisisfontcolor, scmsetting.crisisfontcolor) &&
+        Objects.equals(this.tempcrisisfontcolor, scmsetting.tempcrisisfontcolor) &&
+        Objects.equals(this.storecardssourceId, scmsetting.storecardssourceId) &&
+        Objects.equals(this.storessourceId, scmsetting.storessourceId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, code, name, system, hidden, displayFormat, crisisColor, tempCrisisColor, crisisFontColor, tempCrisisFontColor, storeCardsSourceID, storesSourceID);
+    return Objects.hash(displayname, id, classid, objversion, code, name, system, hidden, displayformat, crisiscolor, tempcrisiscolor, crisisfontcolor, tempcrisisfontcolor, storecardssourceId, storessourceId);
   }
 
   @Override
@@ -352,21 +388,21 @@ public class Scmsetting   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Scmsetting {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    displayFormat: ").append(toIndentedString(displayFormat)).append("\n");
-    sb.append("    crisisColor: ").append(toIndentedString(crisisColor)).append("\n");
-    sb.append("    tempCrisisColor: ").append(toIndentedString(tempCrisisColor)).append("\n");
-    sb.append("    crisisFontColor: ").append(toIndentedString(crisisFontColor)).append("\n");
-    sb.append("    tempCrisisFontColor: ").append(toIndentedString(tempCrisisFontColor)).append("\n");
-    sb.append("    storeCardsSourceID: ").append(toIndentedString(storeCardsSourceID)).append("\n");
-    sb.append("    storesSourceID: ").append(toIndentedString(storesSourceID)).append("\n");
+    sb.append("    displayformat: ").append(toIndentedString(displayformat)).append("\n");
+    sb.append("    crisiscolor: ").append(toIndentedString(crisiscolor)).append("\n");
+    sb.append("    tempcrisiscolor: ").append(toIndentedString(tempcrisiscolor)).append("\n");
+    sb.append("    crisisfontcolor: ").append(toIndentedString(crisisfontcolor)).append("\n");
+    sb.append("    tempcrisisfontcolor: ").append(toIndentedString(tempcrisisfontcolor)).append("\n");
+    sb.append("    storecardssourceId: ").append(toIndentedString(storecardssourceId)).append("\n");
+    sb.append("    storessourceId: ").append(toIndentedString(storessourceId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

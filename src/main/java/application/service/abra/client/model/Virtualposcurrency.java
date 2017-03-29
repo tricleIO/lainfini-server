@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,192 +34,237 @@ import java.util.Objects;
 /**
  * Virtualposcurrency
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Virtualposcurrency   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("CashDesk_ID")
-  private String cashDeskID = null;
+  @SerializedName("cashdesk_id")
+  private String cashdeskId = null;
 
-  @SerializedName("CashReceivedDocQueue_ID")
-  private String cashReceivedDocQueueID = null;
+  @SerializedName("cashreceiveddocqueue_id")
+  private String cashreceiveddocqueueId = null;
 
-  @SerializedName("CashPaidDocQueue_ID")
-  private String cashPaidDocQueueID = null;
+  @SerializedName("cashpaiddocqueue_id")
+  private String cashpaiddocqueueId = null;
 
-  @SerializedName("POSCashReceivedDocQueue_ID")
-  private String pOSCashReceivedDocQueueID = null;
+  @SerializedName("poscashreceiveddocqueue_id")
+  private String poscashreceiveddocqueueId = null;
 
-  @SerializedName("POSCashPaidDocQueue_ID")
-  private String pOSCashPaidDocQueueID = null;
+  @SerializedName("poscashpaiddocqueue_id")
+  private String poscashpaiddocqueueId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Pokladní místo [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Pokladní místo [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Virtualposcurrency currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Virtualposcurrency displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Virtualposcurrency cashDeskID(String cashDeskID) {
-    this.cashDeskID = cashDeskID;
+  public Virtualposcurrency id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Pokladna; ID objektu Pokladna [persistentní položka]
-   * @return cashDeskID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Pokladna; ID objektu Pokladna [persistentní položka]")
-  public String getCashDeskID() {
-    return cashDeskID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setCashDeskID(String cashDeskID) {
-    this.cashDeskID = cashDeskID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Virtualposcurrency cashReceivedDocQueueID(String cashReceivedDocQueueID) {
-    this.cashReceivedDocQueueID = cashReceivedDocQueueID;
+  public Virtualposcurrency classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Příjem do pokladního prodeje; ID objektu Řada dokladů [persistentní položka]
-   * @return cashReceivedDocQueueID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Příjem do pokladního prodeje; ID objektu Řada dokladů [persistentní položka]")
-  public String getCashReceivedDocQueueID() {
-    return cashReceivedDocQueueID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setCashReceivedDocQueueID(String cashReceivedDocQueueID) {
-    this.cashReceivedDocQueueID = cashReceivedDocQueueID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Virtualposcurrency cashPaidDocQueueID(String cashPaidDocQueueID) {
-    this.cashPaidDocQueueID = cashPaidDocQueueID;
+  public Virtualposcurrency objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Výdej z pokladního prodeje; ID objektu Řada dokladů [persistentní položka]
-   * @return cashPaidDocQueueID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Výdej z pokladního prodeje; ID objektu Řada dokladů [persistentní položka]")
-  public String getCashPaidDocQueueID() {
-    return cashPaidDocQueueID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setCashPaidDocQueueID(String cashPaidDocQueueID) {
-    this.cashPaidDocQueueID = cashPaidDocQueueID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Virtualposcurrency pOSCashReceivedDocQueueID(String pOSCashReceivedDocQueueID) {
-    this.pOSCashReceivedDocQueueID = pOSCashReceivedDocQueueID;
+  public Virtualposcurrency parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Pokladní příjem; ID objektu Řada dokladů [persistentní položka]
-   * @return pOSCashReceivedDocQueueID
+   * vlastník; id objektu pokladní místo [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Pokladní příjem; ID objektu Řada dokladů [persistentní položka]")
-  public String getPOSCashReceivedDocQueueID() {
-    return pOSCashReceivedDocQueueID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu pokladní místo [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setPOSCashReceivedDocQueueID(String pOSCashReceivedDocQueueID) {
-    this.pOSCashReceivedDocQueueID = pOSCashReceivedDocQueueID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Virtualposcurrency pOSCashPaidDocQueueID(String pOSCashPaidDocQueueID) {
-    this.pOSCashPaidDocQueueID = pOSCashPaidDocQueueID;
+  public Virtualposcurrency currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Pokladní výdej; ID objektu Řada dokladů [persistentní položka]
-   * @return pOSCashPaidDocQueueID
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Pokladní výdej; ID objektu Řada dokladů [persistentní položka]")
-  public String getPOSCashPaidDocQueueID() {
-    return pOSCashPaidDocQueueID;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setPOSCashPaidDocQueueID(String pOSCashPaidDocQueueID) {
-    this.pOSCashPaidDocQueueID = pOSCashPaidDocQueueID;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
+  }
+
+  public Virtualposcurrency cashdeskId(String cashdeskId) {
+    this.cashdeskId = cashdeskId;
+    return this;
+  }
+
+   /**
+   * pokladna; id objektu pokladna [persistentní položka]
+   * @return cashdeskId
+  **/
+  @ApiModelProperty(example = "null", value = "pokladna; id objektu pokladna [persistentní položka]")
+  public String getCashdeskId() {
+    return cashdeskId;
+  }
+
+  public void setCashdeskId(String cashdeskId) {
+    this.cashdeskId = cashdeskId;
+  }
+
+  public Virtualposcurrency cashreceiveddocqueueId(String cashreceiveddocqueueId) {
+    this.cashreceiveddocqueueId = cashreceiveddocqueueId;
+    return this;
+  }
+
+   /**
+   * příjem do pokladního prodeje; id objektu Řada dokladů [persistentní položka]
+   * @return cashreceiveddocqueueId
+  **/
+  @ApiModelProperty(example = "null", value = "příjem do pokladního prodeje; id objektu Řada dokladů [persistentní položka]")
+  public String getCashreceiveddocqueueId() {
+    return cashreceiveddocqueueId;
+  }
+
+  public void setCashreceiveddocqueueId(String cashreceiveddocqueueId) {
+    this.cashreceiveddocqueueId = cashreceiveddocqueueId;
+  }
+
+  public Virtualposcurrency cashpaiddocqueueId(String cashpaiddocqueueId) {
+    this.cashpaiddocqueueId = cashpaiddocqueueId;
+    return this;
+  }
+
+   /**
+   * výdej z pokladního prodeje; id objektu Řada dokladů [persistentní položka]
+   * @return cashpaiddocqueueId
+  **/
+  @ApiModelProperty(example = "null", value = "výdej z pokladního prodeje; id objektu Řada dokladů [persistentní položka]")
+  public String getCashpaiddocqueueId() {
+    return cashpaiddocqueueId;
+  }
+
+  public void setCashpaiddocqueueId(String cashpaiddocqueueId) {
+    this.cashpaiddocqueueId = cashpaiddocqueueId;
+  }
+
+  public Virtualposcurrency poscashreceiveddocqueueId(String poscashreceiveddocqueueId) {
+    this.poscashreceiveddocqueueId = poscashreceiveddocqueueId;
+    return this;
+  }
+
+   /**
+   * pokladní příjem; id objektu Řada dokladů [persistentní položka]
+   * @return poscashreceiveddocqueueId
+  **/
+  @ApiModelProperty(example = "null", value = "pokladní příjem; id objektu Řada dokladů [persistentní položka]")
+  public String getPoscashreceiveddocqueueId() {
+    return poscashreceiveddocqueueId;
+  }
+
+  public void setPoscashreceiveddocqueueId(String poscashreceiveddocqueueId) {
+    this.poscashreceiveddocqueueId = poscashreceiveddocqueueId;
+  }
+
+  public Virtualposcurrency poscashpaiddocqueueId(String poscashpaiddocqueueId) {
+    this.poscashpaiddocqueueId = poscashpaiddocqueueId;
+    return this;
+  }
+
+   /**
+   * pokladní výdej; id objektu Řada dokladů [persistentní položka]
+   * @return poscashpaiddocqueueId
+  **/
+  @ApiModelProperty(example = "null", value = "pokladní výdej; id objektu Řada dokladů [persistentní položka]")
+  public String getPoscashpaiddocqueueId() {
+    return poscashpaiddocqueueId;
+  }
+
+  public void setPoscashpaiddocqueueId(String poscashpaiddocqueueId) {
+    this.poscashpaiddocqueueId = poscashpaiddocqueueId;
   }
 
 
@@ -232,22 +277,22 @@ public class Virtualposcurrency   {
       return false;
     }
     Virtualposcurrency virtualposcurrency = (Virtualposcurrency) o;
-    return Objects.equals(this.displayName, virtualposcurrency.displayName) &&
-        Objects.equals(this.ID, virtualposcurrency.ID) &&
-        Objects.equals(this.classID, virtualposcurrency.classID) &&
-        Objects.equals(this.objVersion, virtualposcurrency.objVersion) &&
-        Objects.equals(this.parentID, virtualposcurrency.parentID) &&
-        Objects.equals(this.currencyID, virtualposcurrency.currencyID) &&
-        Objects.equals(this.cashDeskID, virtualposcurrency.cashDeskID) &&
-        Objects.equals(this.cashReceivedDocQueueID, virtualposcurrency.cashReceivedDocQueueID) &&
-        Objects.equals(this.cashPaidDocQueueID, virtualposcurrency.cashPaidDocQueueID) &&
-        Objects.equals(this.pOSCashReceivedDocQueueID, virtualposcurrency.pOSCashReceivedDocQueueID) &&
-        Objects.equals(this.pOSCashPaidDocQueueID, virtualposcurrency.pOSCashPaidDocQueueID);
+    return Objects.equals(this.displayname, virtualposcurrency.displayname) &&
+        Objects.equals(this.id, virtualposcurrency.id) &&
+        Objects.equals(this.classid, virtualposcurrency.classid) &&
+        Objects.equals(this.objversion, virtualposcurrency.objversion) &&
+        Objects.equals(this.parentId, virtualposcurrency.parentId) &&
+        Objects.equals(this.currencyId, virtualposcurrency.currencyId) &&
+        Objects.equals(this.cashdeskId, virtualposcurrency.cashdeskId) &&
+        Objects.equals(this.cashreceiveddocqueueId, virtualposcurrency.cashreceiveddocqueueId) &&
+        Objects.equals(this.cashpaiddocqueueId, virtualposcurrency.cashpaiddocqueueId) &&
+        Objects.equals(this.poscashreceiveddocqueueId, virtualposcurrency.poscashreceiveddocqueueId) &&
+        Objects.equals(this.poscashpaiddocqueueId, virtualposcurrency.poscashpaiddocqueueId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, currencyID, cashDeskID, cashReceivedDocQueueID, cashPaidDocQueueID, pOSCashReceivedDocQueueID, pOSCashPaidDocQueueID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, currencyId, cashdeskId, cashreceiveddocqueueId, cashpaiddocqueueId, poscashreceiveddocqueueId, poscashpaiddocqueueId);
   }
 
   @Override
@@ -255,17 +300,17 @@ public class Virtualposcurrency   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Virtualposcurrency {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    cashDeskID: ").append(toIndentedString(cashDeskID)).append("\n");
-    sb.append("    cashReceivedDocQueueID: ").append(toIndentedString(cashReceivedDocQueueID)).append("\n");
-    sb.append("    cashPaidDocQueueID: ").append(toIndentedString(cashPaidDocQueueID)).append("\n");
-    sb.append("    pOSCashReceivedDocQueueID: ").append(toIndentedString(pOSCashReceivedDocQueueID)).append("\n");
-    sb.append("    pOSCashPaidDocQueueID: ").append(toIndentedString(pOSCashPaidDocQueueID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    cashdeskId: ").append(toIndentedString(cashdeskId)).append("\n");
+    sb.append("    cashreceiveddocqueueId: ").append(toIndentedString(cashreceiveddocqueueId)).append("\n");
+    sb.append("    cashpaiddocqueueId: ").append(toIndentedString(cashpaiddocqueueId)).append("\n");
+    sb.append("    poscashreceiveddocqueueId: ").append(toIndentedString(poscashreceiveddocqueueId)).append("\n");
+    sb.append("    poscashpaiddocqueueId: ").append(toIndentedString(poscashpaiddocqueueId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

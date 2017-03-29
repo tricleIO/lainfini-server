@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,123 +35,168 @@ import java.util.Objects;
 /**
  * Wageoperation
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wageoperation   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("OperType_ID")
-  private String operTypeID = null;
+  @SerializedName("opertype_id")
+  private String opertypeId = null;
 
-  @SerializedName("Charge")
+  @SerializedName("charge")
   private Double charge = null;
 
-  @SerializedName("CountOfUnit")
-  private Double countOfUnit = null;
+  @SerializedName("countofunit")
+  private Double countofunit = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("OperDate$DATE")
-  private DateTime operDateDATE = null;
+  @SerializedName("operdate$date")
+  private DateTime operdatedate = null;
 
-  @SerializedName("ImportSource_ID")
-  private String importSourceID = null;
+  @SerializedName("importsource_id")
+  private String importsourceId = null;
 
-  @SerializedName("ImportDate$DATE")
-  private DateTime importDateDATE = null;
+  @SerializedName("importdate$date")
+  private DateTime importdatedate = null;
 
-  @SerializedName("OperUnit")
-  private String operUnit = null;
+  @SerializedName("operunit")
+  private String operunit = null;
 
-  @SerializedName("TotalAmount")
-  private Double totalAmount = null;
+  @SerializedName("totalamount")
+  private Double totalamount = null;
 
-  @SerializedName("ExternalCreator")
-  private String externalCreator = null;
+  @SerializedName("externalcreator")
+  private String externalcreator = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Mzdový list dílčí [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Mzdový list dílčí [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Wageoperation operTypeID(String operTypeID) {
-    this.operTypeID = operTypeID;
+  public Wageoperation displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Typ výkonu; ID objektu Druhy výkonů [persistentní položka]
-   * @return operTypeID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Typ výkonu; ID objektu Druhy výkonů [persistentní položka]")
-  public String getOperTypeID() {
-    return operTypeID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setOperTypeID(String operTypeID) {
-    this.operTypeID = operTypeID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wageoperation id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wageoperation classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wageoperation objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Wageoperation parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu mzdový list dílčí [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu mzdový list dílčí [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Wageoperation opertypeId(String opertypeId) {
+    this.opertypeId = opertypeId;
+    return this;
+  }
+
+   /**
+   * typ výkonu; id objektu druhy výkonů [persistentní položka]
+   * @return opertypeId
+  **/
+  @ApiModelProperty(example = "null", value = "typ výkonu; id objektu druhy výkonů [persistentní položka]")
+  public String getOpertypeId() {
+    return opertypeId;
+  }
+
+  public void setOpertypeId(String opertypeId) {
+    this.opertypeId = opertypeId;
   }
 
   public Wageoperation charge(Double charge) {
@@ -160,10 +205,10 @@ public class Wageoperation   {
   }
 
    /**
-   * Sazba [persistentní položka]
+   * sazba [persistentní položka]
    * @return charge
   **/
-  @ApiModelProperty(example = "null", value = "Sazba [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "sazba [persistentní položka]")
   public Double getCharge() {
     return charge;
   }
@@ -172,175 +217,202 @@ public class Wageoperation   {
     this.charge = charge;
   }
 
-  public Wageoperation countOfUnit(Double countOfUnit) {
-    this.countOfUnit = countOfUnit;
+  public Wageoperation countofunit(Double countofunit) {
+    this.countofunit = countofunit;
     return this;
   }
 
    /**
-   * Počet [persistentní položka]
-   * @return countOfUnit
+   * počet [persistentní položka]
+   * @return countofunit
   **/
-  @ApiModelProperty(example = "null", value = "Počet [persistentní položka]")
-  public Double getCountOfUnit() {
-    return countOfUnit;
+  @ApiModelProperty(example = "null", value = "počet [persistentní položka]")
+  public Double getCountofunit() {
+    return countofunit;
   }
 
-  public void setCountOfUnit(Double countOfUnit) {
-    this.countOfUnit = countOfUnit;
+  public void setCountofunit(Double countofunit) {
+    this.countofunit = countofunit;
   }
 
-  public Wageoperation busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Wageoperation busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Wageoperation busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Wageoperation bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obch.případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obch.případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obch.případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obch.případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Wageoperation divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Wageoperation divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Wageoperation operDateDATE(DateTime operDateDATE) {
-    this.operDateDATE = operDateDATE;
+  public Wageoperation operdatedate(DateTime operdatedate) {
+    this.operdatedate = operdatedate;
     return this;
   }
 
    /**
-   * Datum [persistentní položka]
-   * @return operDateDATE
+   * datum [persistentní položka]
+   * @return operdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum [persistentní položka]")
-  public DateTime getOperDateDATE() {
-    return operDateDATE;
+  @ApiModelProperty(example = "null", value = "datum [persistentní položka]")
+  public DateTime getOperdatedate() {
+    return operdatedate;
   }
 
-  public void setOperDateDATE(DateTime operDateDATE) {
-    this.operDateDATE = operDateDATE;
+  public void setOperdatedate(DateTime operdatedate) {
+    this.operdatedate = operdatedate;
   }
 
-  public Wageoperation importSourceID(String importSourceID) {
-    this.importSourceID = importSourceID;
+  public Wageoperation importsourceId(String importsourceId) {
+    this.importsourceId = importsourceId;
     return this;
   }
 
    /**
-   * Zdroj importu; ID objektu Import do výkonů [persistentní položka]
-   * @return importSourceID
+   * zdroj importu; id objektu import do výkonů [persistentní položka]
+   * @return importsourceId
   **/
-  @ApiModelProperty(example = "null", value = "Zdroj importu; ID objektu Import do výkonů [persistentní položka]")
-  public String getImportSourceID() {
-    return importSourceID;
+  @ApiModelProperty(example = "null", value = "zdroj importu; id objektu import do výkonů [persistentní položka]")
+  public String getImportsourceId() {
+    return importsourceId;
   }
 
-  public void setImportSourceID(String importSourceID) {
-    this.importSourceID = importSourceID;
+  public void setImportsourceId(String importsourceId) {
+    this.importsourceId = importsourceId;
   }
 
-  public Wageoperation importDateDATE(DateTime importDateDATE) {
-    this.importDateDATE = importDateDATE;
+  public Wageoperation importdatedate(DateTime importdatedate) {
+    this.importdatedate = importdatedate;
     return this;
   }
 
    /**
-   * Datum importu [persistentní položka]
-   * @return importDateDATE
+   * datum importu [persistentní položka]
+   * @return importdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum importu [persistentní položka]")
-  public DateTime getImportDateDATE() {
-    return importDateDATE;
+  @ApiModelProperty(example = "null", value = "datum importu [persistentní položka]")
+  public DateTime getImportdatedate() {
+    return importdatedate;
   }
 
-  public void setImportDateDATE(DateTime importDateDATE) {
-    this.importDateDATE = importDateDATE;
+  public void setImportdatedate(DateTime importdatedate) {
+    this.importdatedate = importdatedate;
   }
 
-   /**
-   * Jednotka
-   * @return operUnit
-  **/
-  @ApiModelProperty(example = "null", value = "Jednotka")
-  public String getOperUnit() {
-    return operUnit;
-  }
-
-   /**
-   * Celková částka
-   * @return totalAmount
-  **/
-  @ApiModelProperty(example = "null", value = "Celková částka")
-  public Double getTotalAmount() {
-    return totalAmount;
-  }
-
-   /**
-   * Zdroj importu
-   * @return externalCreator
-  **/
-  @ApiModelProperty(example = "null", value = "Zdroj importu")
-  public String getExternalCreator() {
-    return externalCreator;
-  }
-
-  public Wageoperation busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Wageoperation operunit(String operunit) {
+    this.operunit = operunit;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * jednotka
+   * @return operunit
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "jednotka")
+  public String getOperunit() {
+    return operunit;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setOperunit(String operunit) {
+    this.operunit = operunit;
+  }
+
+  public Wageoperation totalamount(Double totalamount) {
+    this.totalamount = totalamount;
+    return this;
+  }
+
+   /**
+   * celková částka
+   * @return totalamount
+  **/
+  @ApiModelProperty(example = "null", value = "celková částka")
+  public Double getTotalamount() {
+    return totalamount;
+  }
+
+  public void setTotalamount(Double totalamount) {
+    this.totalamount = totalamount;
+  }
+
+  public Wageoperation externalcreator(String externalcreator) {
+    this.externalcreator = externalcreator;
+    return this;
+  }
+
+   /**
+   * zdroj importu
+   * @return externalcreator
+  **/
+  @ApiModelProperty(example = "null", value = "zdroj importu")
+  public String getExternalcreator() {
+    return externalcreator;
+  }
+
+  public void setExternalcreator(String externalcreator) {
+    this.externalcreator = externalcreator;
+  }
+
+  public Wageoperation busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
+    return this;
+  }
+
+   /**
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
+  **/
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
+  }
+
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
 
@@ -353,29 +425,29 @@ public class Wageoperation   {
       return false;
     }
     Wageoperation wageoperation = (Wageoperation) o;
-    return Objects.equals(this.displayName, wageoperation.displayName) &&
-        Objects.equals(this.ID, wageoperation.ID) &&
-        Objects.equals(this.classID, wageoperation.classID) &&
-        Objects.equals(this.objVersion, wageoperation.objVersion) &&
-        Objects.equals(this.parentID, wageoperation.parentID) &&
-        Objects.equals(this.operTypeID, wageoperation.operTypeID) &&
+    return Objects.equals(this.displayname, wageoperation.displayname) &&
+        Objects.equals(this.id, wageoperation.id) &&
+        Objects.equals(this.classid, wageoperation.classid) &&
+        Objects.equals(this.objversion, wageoperation.objversion) &&
+        Objects.equals(this.parentId, wageoperation.parentId) &&
+        Objects.equals(this.opertypeId, wageoperation.opertypeId) &&
         Objects.equals(this.charge, wageoperation.charge) &&
-        Objects.equals(this.countOfUnit, wageoperation.countOfUnit) &&
-        Objects.equals(this.busOrderID, wageoperation.busOrderID) &&
-        Objects.equals(this.busTransactionID, wageoperation.busTransactionID) &&
-        Objects.equals(this.divisionID, wageoperation.divisionID) &&
-        Objects.equals(this.operDateDATE, wageoperation.operDateDATE) &&
-        Objects.equals(this.importSourceID, wageoperation.importSourceID) &&
-        Objects.equals(this.importDateDATE, wageoperation.importDateDATE) &&
-        Objects.equals(this.operUnit, wageoperation.operUnit) &&
-        Objects.equals(this.totalAmount, wageoperation.totalAmount) &&
-        Objects.equals(this.externalCreator, wageoperation.externalCreator) &&
-        Objects.equals(this.busProjectID, wageoperation.busProjectID);
+        Objects.equals(this.countofunit, wageoperation.countofunit) &&
+        Objects.equals(this.busorderId, wageoperation.busorderId) &&
+        Objects.equals(this.bustransactionId, wageoperation.bustransactionId) &&
+        Objects.equals(this.divisionId, wageoperation.divisionId) &&
+        Objects.equals(this.operdatedate, wageoperation.operdatedate) &&
+        Objects.equals(this.importsourceId, wageoperation.importsourceId) &&
+        Objects.equals(this.importdatedate, wageoperation.importdatedate) &&
+        Objects.equals(this.operunit, wageoperation.operunit) &&
+        Objects.equals(this.totalamount, wageoperation.totalamount) &&
+        Objects.equals(this.externalcreator, wageoperation.externalcreator) &&
+        Objects.equals(this.busprojectId, wageoperation.busprojectId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, operTypeID, charge, countOfUnit, busOrderID, busTransactionID, divisionID, operDateDATE, importSourceID, importDateDATE, operUnit, totalAmount, externalCreator, busProjectID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, opertypeId, charge, countofunit, busorderId, bustransactionId, divisionId, operdatedate, importsourceId, importdatedate, operunit, totalamount, externalcreator, busprojectId);
   }
 
   @Override
@@ -383,24 +455,24 @@ public class Wageoperation   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wageoperation {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    operTypeID: ").append(toIndentedString(operTypeID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    opertypeId: ").append(toIndentedString(opertypeId)).append("\n");
     sb.append("    charge: ").append(toIndentedString(charge)).append("\n");
-    sb.append("    countOfUnit: ").append(toIndentedString(countOfUnit)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    operDateDATE: ").append(toIndentedString(operDateDATE)).append("\n");
-    sb.append("    importSourceID: ").append(toIndentedString(importSourceID)).append("\n");
-    sb.append("    importDateDATE: ").append(toIndentedString(importDateDATE)).append("\n");
-    sb.append("    operUnit: ").append(toIndentedString(operUnit)).append("\n");
-    sb.append("    totalAmount: ").append(toIndentedString(totalAmount)).append("\n");
-    sb.append("    externalCreator: ").append(toIndentedString(externalCreator)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
+    sb.append("    countofunit: ").append(toIndentedString(countofunit)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    operdatedate: ").append(toIndentedString(operdatedate)).append("\n");
+    sb.append("    importsourceId: ").append(toIndentedString(importsourceId)).append("\n");
+    sb.append("    importdatedate: ").append(toIndentedString(importdatedate)).append("\n");
+    sb.append("    operunit: ").append(toIndentedString(operunit)).append("\n");
+    sb.append("    totalamount: ").append(toIndentedString(totalamount)).append("\n");
+    sb.append("    externalcreator: ").append(toIndentedString(externalcreator)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,126 +37,162 @@ import java.util.Objects;
 /**
  * Systemsupportentry
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Systemsupportentry   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Kind")
+  @SerializedName("kind")
   private Integer kind = null;
 
-  @SerializedName("EntryDate$DATE")
-  private DateTime entryDateDATE = null;
+  @SerializedName("entrydate$date")
+  private DateTime entrydatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("ResponseEMail")
-  private String responseEMail = null;
+  @SerializedName("responseemail")
+  private String responseemail = null;
 
-  @SerializedName("ShortDescription")
-  private String shortDescription = null;
+  @SerializedName("shortdescription")
+  private String shortdescription = null;
 
-  @SerializedName("ProblemDescription")
-  private String problemDescription = null;
+  @SerializedName("problemdescription")
+  private String problemdescription = null;
 
-  @SerializedName("ImplementationData")
-  private String implementationData = null;
+  @SerializedName("implementationdata")
+  private String implementationdata = null;
 
-  @SerializedName("ProblemData")
-  private String problemData = null;
+  @SerializedName("problemdata")
+  private String problemdata = null;
 
-  @SerializedName("SolutionDate$DATE")
-  private DateTime solutionDateDATE = null;
+  @SerializedName("solutiondate$date")
+  private DateTime solutiondatedate = null;
 
-  @SerializedName("Solver")
+  @SerializedName("solver")
   private String solver = null;
 
-  @SerializedName("SolutionDescription")
-  private String solutionDescription = null;
+  @SerializedName("solutiondescription")
+  private String solutiondescription = null;
 
-  @SerializedName("CrossReference")
-  private String crossReference = null;
+  @SerializedName("crossreference")
+  private String crossreference = null;
 
-  @SerializedName("Status")
+  @SerializedName("status")
   private Integer status = null;
 
-  @SerializedName("EntryNumber")
-  private Integer entryNumber = null;
+  @SerializedName("entrynumber")
+  private Integer entrynumber = null;
 
-  @SerializedName("ProblemSendDate$DATE")
-  private DateTime problemSendDateDATE = null;
+  @SerializedName("problemsenddate$date")
+  private DateTime problemsenddatedate = null;
 
-  @SerializedName("SolutionSendDate$DATE")
-  private DateTime solutionSendDateDATE = null;
+  @SerializedName("solutionsenddate$date")
+  private DateTime solutionsenddatedate = null;
 
-  @SerializedName("MachineName")
-  private String machineName = null;
+  @SerializedName("machinename")
+  private String machinename = null;
 
-  @SerializedName("NotifyOnStart")
-  private Boolean notifyOnStart = null;
+  @SerializedName("notifyonstart")
+  private Boolean notifyonstart = null;
 
-  @SerializedName("NotifyOnSite")
-  private String notifyOnSite = null;
+  @SerializedName("notifyonsite")
+  private String notifyonsite = null;
 
-  @SerializedName("EntrySite")
-  private String entrySite = null;
+  @SerializedName("entrysite")
+  private String entrysite = null;
 
-  @SerializedName("Picture_ID")
-  private Systemsupportentry pictureID = null;
+  @SerializedName("picture_id")
+  private Systemsupportentry pictureId = null;
 
-  @SerializedName("VendorEntry")
-  private Boolean vendorEntry = null;
+  @SerializedName("vendorentry")
+  private Boolean vendorentry = null;
 
-  @SerializedName("Pictures")
+  @SerializedName("pictures")
   private List<Systemsupportentrypicture> pictures = new ArrayList<Systemsupportentrypicture>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Systemsupportentry displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Systemsupportentry id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Systemsupportentry classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Systemsupportentry objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Systemsupportentry kind(Integer kind) {
@@ -165,10 +201,10 @@ public class Systemsupportentry   {
   }
 
    /**
-   * Typ záznamu [persistentní položka]
+   * typ záznamu [persistentní položka]
    * @return kind
   **/
-  @ApiModelProperty(example = "null", value = "Typ záznamu [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "typ záznamu [persistentní položka]")
   public Integer getKind() {
     return kind;
   }
@@ -177,166 +213,166 @@ public class Systemsupportentry   {
     this.kind = kind;
   }
 
-  public Systemsupportentry entryDateDATE(DateTime entryDateDATE) {
-    this.entryDateDATE = entryDateDATE;
+  public Systemsupportentry entrydatedate(DateTime entrydatedate) {
+    this.entrydatedate = entrydatedate;
     return this;
   }
 
    /**
-   * Datum zadání [persistentní položka]
-   * @return entryDateDATE
+   * datum zadání [persistentní položka]
+   * @return entrydatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum zadání [persistentní položka]")
-  public DateTime getEntryDateDATE() {
-    return entryDateDATE;
+  @ApiModelProperty(example = "null", value = "datum zadání [persistentní položka]")
+  public DateTime getEntrydatedate() {
+    return entrydatedate;
   }
 
-  public void setEntryDateDATE(DateTime entryDateDATE) {
-    this.entryDateDATE = entryDateDATE;
+  public void setEntrydatedate(DateTime entrydatedate) {
+    this.entrydatedate = entrydatedate;
   }
 
-  public Systemsupportentry createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Systemsupportentry createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Systemsupportentry firmID(String firmID) {
-    this.firmID = firmID;
+  public Systemsupportentry firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Systemsupportentry responseEMail(String responseEMail) {
-    this.responseEMail = responseEMail;
+  public Systemsupportentry responseemail(String responseemail) {
+    this.responseemail = responseemail;
     return this;
   }
 
    /**
-   * E-mail pro odpověď [persistentní položka]
-   * @return responseEMail
+   * e-mail pro odpověď [persistentní položka]
+   * @return responseemail
   **/
-  @ApiModelProperty(example = "null", value = "E-mail pro odpověď [persistentní položka]")
-  public String getResponseEMail() {
-    return responseEMail;
+  @ApiModelProperty(example = "null", value = "e-mail pro odpověď [persistentní položka]")
+  public String getResponseemail() {
+    return responseemail;
   }
 
-  public void setResponseEMail(String responseEMail) {
-    this.responseEMail = responseEMail;
+  public void setResponseemail(String responseemail) {
+    this.responseemail = responseemail;
   }
 
-  public Systemsupportentry shortDescription(String shortDescription) {
-    this.shortDescription = shortDescription;
+  public Systemsupportentry shortdescription(String shortdescription) {
+    this.shortdescription = shortdescription;
     return this;
   }
 
    /**
-   * Krátký popis [persistentní položka]
-   * @return shortDescription
+   * krátký popis [persistentní položka]
+   * @return shortdescription
   **/
-  @ApiModelProperty(example = "null", value = "Krátký popis [persistentní položka]")
-  public String getShortDescription() {
-    return shortDescription;
+  @ApiModelProperty(example = "null", value = "krátký popis [persistentní položka]")
+  public String getShortdescription() {
+    return shortdescription;
   }
 
-  public void setShortDescription(String shortDescription) {
-    this.shortDescription = shortDescription;
+  public void setShortdescription(String shortdescription) {
+    this.shortdescription = shortdescription;
   }
 
-  public Systemsupportentry problemDescription(String problemDescription) {
-    this.problemDescription = problemDescription;
+  public Systemsupportentry problemdescription(String problemdescription) {
+    this.problemdescription = problemdescription;
     return this;
   }
 
    /**
-   * Popis problému [persistentní položka]
-   * @return problemDescription
+   * popis problému [persistentní položka]
+   * @return problemdescription
   **/
-  @ApiModelProperty(example = "null", value = "Popis problému [persistentní položka]")
-  public String getProblemDescription() {
-    return problemDescription;
+  @ApiModelProperty(example = "null", value = "popis problému [persistentní položka]")
+  public String getProblemdescription() {
+    return problemdescription;
   }
 
-  public void setProblemDescription(String problemDescription) {
-    this.problemDescription = problemDescription;
+  public void setProblemdescription(String problemdescription) {
+    this.problemdescription = problemdescription;
   }
 
-  public Systemsupportentry implementationData(String implementationData) {
-    this.implementationData = implementationData;
+  public Systemsupportentry implementationdata(String implementationdata) {
+    this.implementationdata = implementationdata;
     return this;
   }
 
    /**
-   * Implementační data [persistentní položka]
-   * @return implementationData
+   * implementační data [persistentní položka]
+   * @return implementationdata
   **/
-  @ApiModelProperty(example = "null", value = "Implementační data [persistentní položka]")
-  public String getImplementationData() {
-    return implementationData;
+  @ApiModelProperty(example = "null", value = "implementační data [persistentní položka]")
+  public String getImplementationdata() {
+    return implementationdata;
   }
 
-  public void setImplementationData(String implementationData) {
-    this.implementationData = implementationData;
+  public void setImplementationdata(String implementationdata) {
+    this.implementationdata = implementationdata;
   }
 
-  public Systemsupportentry problemData(String problemData) {
-    this.problemData = problemData;
+  public Systemsupportentry problemdata(String problemdata) {
+    this.problemdata = problemdata;
     return this;
   }
 
    /**
-   * Data [persistentní položka]
-   * @return problemData
+   * data [persistentní položka]
+   * @return problemdata
   **/
-  @ApiModelProperty(example = "null", value = "Data [persistentní položka]")
-  public String getProblemData() {
-    return problemData;
+  @ApiModelProperty(example = "null", value = "data [persistentní položka]")
+  public String getProblemdata() {
+    return problemdata;
   }
 
-  public void setProblemData(String problemData) {
-    this.problemData = problemData;
+  public void setProblemdata(String problemdata) {
+    this.problemdata = problemdata;
   }
 
-  public Systemsupportentry solutionDateDATE(DateTime solutionDateDATE) {
-    this.solutionDateDATE = solutionDateDATE;
+  public Systemsupportentry solutiondatedate(DateTime solutiondatedate) {
+    this.solutiondatedate = solutiondatedate;
     return this;
   }
 
    /**
-   * Datum řešení [persistentní položka]
-   * @return solutionDateDATE
+   * datum řešení [persistentní položka]
+   * @return solutiondatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum řešení [persistentní položka]")
-  public DateTime getSolutionDateDATE() {
-    return solutionDateDATE;
+  @ApiModelProperty(example = "null", value = "datum řešení [persistentní položka]")
+  public DateTime getSolutiondatedate() {
+    return solutiondatedate;
   }
 
-  public void setSolutionDateDATE(DateTime solutionDateDATE) {
-    this.solutionDateDATE = solutionDateDATE;
+  public void setSolutiondatedate(DateTime solutiondatedate) {
+    this.solutiondatedate = solutiondatedate;
   }
 
   public Systemsupportentry solver(String solver) {
@@ -357,40 +393,40 @@ public class Systemsupportentry   {
     this.solver = solver;
   }
 
-  public Systemsupportentry solutionDescription(String solutionDescription) {
-    this.solutionDescription = solutionDescription;
+  public Systemsupportentry solutiondescription(String solutiondescription) {
+    this.solutiondescription = solutiondescription;
     return this;
   }
 
    /**
-   * Popis řešení [persistentní položka]
-   * @return solutionDescription
+   * popis řešení [persistentní položka]
+   * @return solutiondescription
   **/
-  @ApiModelProperty(example = "null", value = "Popis řešení [persistentní položka]")
-  public String getSolutionDescription() {
-    return solutionDescription;
+  @ApiModelProperty(example = "null", value = "popis řešení [persistentní položka]")
+  public String getSolutiondescription() {
+    return solutiondescription;
   }
 
-  public void setSolutionDescription(String solutionDescription) {
-    this.solutionDescription = solutionDescription;
+  public void setSolutiondescription(String solutiondescription) {
+    this.solutiondescription = solutiondescription;
   }
 
-  public Systemsupportentry crossReference(String crossReference) {
-    this.crossReference = crossReference;
+  public Systemsupportentry crossreference(String crossreference) {
+    this.crossreference = crossreference;
     return this;
   }
 
    /**
-   * Odkaz [persistentní položka]
-   * @return crossReference
+   * odkaz [persistentní položka]
+   * @return crossreference
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz [persistentní položka]")
-  public String getCrossReference() {
-    return crossReference;
+  @ApiModelProperty(example = "null", value = "odkaz [persistentní položka]")
+  public String getCrossreference() {
+    return crossreference;
   }
 
-  public void setCrossReference(String crossReference) {
-    this.crossReference = crossReference;
+  public void setCrossreference(String crossreference) {
+    this.crossreference = crossreference;
   }
 
   public Systemsupportentry status(Integer status) {
@@ -399,10 +435,10 @@ public class Systemsupportentry   {
   }
 
    /**
-   * Stav [persistentní položka]
+   * stav [persistentní položka]
    * @return status
   **/
-  @ApiModelProperty(example = "null", value = "Stav [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "stav [persistentní položka]")
   public Integer getStatus() {
     return status;
   }
@@ -411,166 +447,166 @@ public class Systemsupportentry   {
     this.status = status;
   }
 
-  public Systemsupportentry entryNumber(Integer entryNumber) {
-    this.entryNumber = entryNumber;
+  public Systemsupportentry entrynumber(Integer entrynumber) {
+    this.entrynumber = entrynumber;
     return this;
   }
 
    /**
    * Číslo záznamu [persistentní položka]
-   * @return entryNumber
+   * @return entrynumber
   **/
   @ApiModelProperty(example = "null", value = "Číslo záznamu [persistentní položka]")
-  public Integer getEntryNumber() {
-    return entryNumber;
+  public Integer getEntrynumber() {
+    return entrynumber;
   }
 
-  public void setEntryNumber(Integer entryNumber) {
-    this.entryNumber = entryNumber;
+  public void setEntrynumber(Integer entrynumber) {
+    this.entrynumber = entrynumber;
   }
 
-  public Systemsupportentry problemSendDateDATE(DateTime problemSendDateDATE) {
-    this.problemSendDateDATE = problemSendDateDATE;
+  public Systemsupportentry problemsenddatedate(DateTime problemsenddatedate) {
+    this.problemsenddatedate = problemsenddatedate;
     return this;
   }
 
    /**
-   * Datum odeslání problému [persistentní položka]
-   * @return problemSendDateDATE
+   * datum odeslání problému [persistentní položka]
+   * @return problemsenddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum odeslání problému [persistentní položka]")
-  public DateTime getProblemSendDateDATE() {
-    return problemSendDateDATE;
+  @ApiModelProperty(example = "null", value = "datum odeslání problému [persistentní položka]")
+  public DateTime getProblemsenddatedate() {
+    return problemsenddatedate;
   }
 
-  public void setProblemSendDateDATE(DateTime problemSendDateDATE) {
-    this.problemSendDateDATE = problemSendDateDATE;
+  public void setProblemsenddatedate(DateTime problemsenddatedate) {
+    this.problemsenddatedate = problemsenddatedate;
   }
 
-  public Systemsupportentry solutionSendDateDATE(DateTime solutionSendDateDATE) {
-    this.solutionSendDateDATE = solutionSendDateDATE;
+  public Systemsupportentry solutionsenddatedate(DateTime solutionsenddatedate) {
+    this.solutionsenddatedate = solutionsenddatedate;
     return this;
   }
 
    /**
-   * Datum odeslání řešení [persistentní položka]
-   * @return solutionSendDateDATE
+   * datum odeslání řešení [persistentní položka]
+   * @return solutionsenddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum odeslání řešení [persistentní položka]")
-  public DateTime getSolutionSendDateDATE() {
-    return solutionSendDateDATE;
+  @ApiModelProperty(example = "null", value = "datum odeslání řešení [persistentní položka]")
+  public DateTime getSolutionsenddatedate() {
+    return solutionsenddatedate;
   }
 
-  public void setSolutionSendDateDATE(DateTime solutionSendDateDATE) {
-    this.solutionSendDateDATE = solutionSendDateDATE;
+  public void setSolutionsenddatedate(DateTime solutionsenddatedate) {
+    this.solutionsenddatedate = solutionsenddatedate;
   }
 
-  public Systemsupportentry machineName(String machineName) {
-    this.machineName = machineName;
+  public Systemsupportentry machinename(String machinename) {
+    this.machinename = machinename;
     return this;
   }
 
    /**
-   * Stanice [persistentní položka]
-   * @return machineName
+   * stanice [persistentní položka]
+   * @return machinename
   **/
-  @ApiModelProperty(example = "null", value = "Stanice [persistentní položka]")
-  public String getMachineName() {
-    return machineName;
+  @ApiModelProperty(example = "null", value = "stanice [persistentní položka]")
+  public String getMachinename() {
+    return machinename;
   }
 
-  public void setMachineName(String machineName) {
-    this.machineName = machineName;
+  public void setMachinename(String machinename) {
+    this.machinename = machinename;
   }
 
-  public Systemsupportentry notifyOnStart(Boolean notifyOnStart) {
-    this.notifyOnStart = notifyOnStart;
+  public Systemsupportentry notifyonstart(Boolean notifyonstart) {
+    this.notifyonstart = notifyonstart;
     return this;
   }
 
    /**
-   * Hlásit při startu [persistentní položka]
-   * @return notifyOnStart
+   * hlásit při startu [persistentní položka]
+   * @return notifyonstart
   **/
-  @ApiModelProperty(example = "null", value = "Hlásit při startu [persistentní položka]")
-  public Boolean getNotifyOnStart() {
-    return notifyOnStart;
+  @ApiModelProperty(example = "null", value = "hlásit při startu [persistentní položka]")
+  public Boolean getNotifyonstart() {
+    return notifyonstart;
   }
 
-  public void setNotifyOnStart(Boolean notifyOnStart) {
-    this.notifyOnStart = notifyOnStart;
+  public void setNotifyonstart(Boolean notifyonstart) {
+    this.notifyonstart = notifyonstart;
   }
 
-  public Systemsupportentry notifyOnSite(String notifyOnSite) {
-    this.notifyOnSite = notifyOnSite;
+  public Systemsupportentry notifyonsite(String notifyonsite) {
+    this.notifyonsite = notifyonsite;
     return this;
   }
 
    /**
-   * Hlásit hnízdu [persistentní položka]
-   * @return notifyOnSite
+   * hlásit hnízdu [persistentní položka]
+   * @return notifyonsite
   **/
-  @ApiModelProperty(example = "null", value = "Hlásit hnízdu [persistentní položka]")
-  public String getNotifyOnSite() {
-    return notifyOnSite;
+  @ApiModelProperty(example = "null", value = "hlásit hnízdu [persistentní položka]")
+  public String getNotifyonsite() {
+    return notifyonsite;
   }
 
-  public void setNotifyOnSite(String notifyOnSite) {
-    this.notifyOnSite = notifyOnSite;
+  public void setNotifyonsite(String notifyonsite) {
+    this.notifyonsite = notifyonsite;
   }
 
-  public Systemsupportentry entrySite(String entrySite) {
-    this.entrySite = entrySite;
+  public Systemsupportentry entrysite(String entrysite) {
+    this.entrysite = entrysite;
     return this;
   }
 
    /**
-   * Hnízdo záznamu [persistentní položka]
-   * @return entrySite
+   * hnízdo záznamu [persistentní položka]
+   * @return entrysite
   **/
-  @ApiModelProperty(example = "null", value = "Hnízdo záznamu [persistentní položka]")
-  public String getEntrySite() {
-    return entrySite;
+  @ApiModelProperty(example = "null", value = "hnízdo záznamu [persistentní položka]")
+  public String getEntrysite() {
+    return entrysite;
   }
 
-  public void setEntrySite(String entrySite) {
-    this.entrySite = entrySite;
+  public void setEntrysite(String entrysite) {
+    this.entrysite = entrysite;
   }
 
-  public Systemsupportentry pictureID(Systemsupportentry pictureID) {
-    this.pictureID = pictureID;
+  public Systemsupportentry pictureId(Systemsupportentry pictureId) {
+    this.pictureId = pictureId;
     return this;
   }
 
    /**
-   * Get pictureID
-   * @return pictureID
+   * Get pictureId
+   * @return pictureId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Systemsupportentry getPictureID() {
-    return pictureID;
+  public Systemsupportentry getPictureId() {
+    return pictureId;
   }
 
-  public void setPictureID(Systemsupportentry pictureID) {
-    this.pictureID = pictureID;
+  public void setPictureId(Systemsupportentry pictureId) {
+    this.pictureId = pictureId;
   }
 
-  public Systemsupportentry vendorEntry(Boolean vendorEntry) {
-    this.vendorEntry = vendorEntry;
+  public Systemsupportentry vendorentry(Boolean vendorentry) {
+    this.vendorentry = vendorentry;
     return this;
   }
 
    /**
-   * Záznam prodejce [persistentní položka]
-   * @return vendorEntry
+   * záznam prodejce [persistentní položka]
+   * @return vendorentry
   **/
-  @ApiModelProperty(example = "null", value = "Záznam prodejce [persistentní položka]")
-  public Boolean getVendorEntry() {
-    return vendorEntry;
+  @ApiModelProperty(example = "null", value = "záznam prodejce [persistentní položka]")
+  public Boolean getVendorentry() {
+    return vendorentry;
   }
 
-  public void setVendorEntry(Boolean vendorEntry) {
-    this.vendorEntry = vendorEntry;
+  public void setVendorentry(Boolean vendorentry) {
+    this.vendorentry = vendorentry;
   }
 
   public Systemsupportentry pictures(List<Systemsupportentrypicture> pictures) {
@@ -584,10 +620,10 @@ public class Systemsupportentry   {
   }
 
    /**
-   * Obrazovky; kolekce BO Obrázek k servisní knížce [nepersistentní položka]
+   * obrazovky; kolekce bo obrázek k servisní knížce [nepersistentní položka]
    * @return pictures
   **/
-  @ApiModelProperty(example = "null", value = "Obrazovky; kolekce BO Obrázek k servisní knížce [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "obrazovky; kolekce bo obrázek k servisní knížce [nepersistentní položka]")
   public List<Systemsupportentrypicture> getPictures() {
     return pictures;
   }
@@ -606,39 +642,39 @@ public class Systemsupportentry   {
       return false;
     }
     Systemsupportentry systemsupportentry = (Systemsupportentry) o;
-    return Objects.equals(this.displayName, systemsupportentry.displayName) &&
-        Objects.equals(this.ID, systemsupportentry.ID) &&
-        Objects.equals(this.classID, systemsupportentry.classID) &&
-        Objects.equals(this.objVersion, systemsupportentry.objVersion) &&
+    return Objects.equals(this.displayname, systemsupportentry.displayname) &&
+        Objects.equals(this.id, systemsupportentry.id) &&
+        Objects.equals(this.classid, systemsupportentry.classid) &&
+        Objects.equals(this.objversion, systemsupportentry.objversion) &&
         Objects.equals(this.kind, systemsupportentry.kind) &&
-        Objects.equals(this.entryDateDATE, systemsupportentry.entryDateDATE) &&
-        Objects.equals(this.createdByID, systemsupportentry.createdByID) &&
-        Objects.equals(this.firmID, systemsupportentry.firmID) &&
-        Objects.equals(this.responseEMail, systemsupportentry.responseEMail) &&
-        Objects.equals(this.shortDescription, systemsupportentry.shortDescription) &&
-        Objects.equals(this.problemDescription, systemsupportentry.problemDescription) &&
-        Objects.equals(this.implementationData, systemsupportentry.implementationData) &&
-        Objects.equals(this.problemData, systemsupportentry.problemData) &&
-        Objects.equals(this.solutionDateDATE, systemsupportentry.solutionDateDATE) &&
+        Objects.equals(this.entrydatedate, systemsupportentry.entrydatedate) &&
+        Objects.equals(this.createdbyId, systemsupportentry.createdbyId) &&
+        Objects.equals(this.firmId, systemsupportentry.firmId) &&
+        Objects.equals(this.responseemail, systemsupportentry.responseemail) &&
+        Objects.equals(this.shortdescription, systemsupportentry.shortdescription) &&
+        Objects.equals(this.problemdescription, systemsupportentry.problemdescription) &&
+        Objects.equals(this.implementationdata, systemsupportentry.implementationdata) &&
+        Objects.equals(this.problemdata, systemsupportentry.problemdata) &&
+        Objects.equals(this.solutiondatedate, systemsupportentry.solutiondatedate) &&
         Objects.equals(this.solver, systemsupportentry.solver) &&
-        Objects.equals(this.solutionDescription, systemsupportentry.solutionDescription) &&
-        Objects.equals(this.crossReference, systemsupportentry.crossReference) &&
+        Objects.equals(this.solutiondescription, systemsupportentry.solutiondescription) &&
+        Objects.equals(this.crossreference, systemsupportentry.crossreference) &&
         Objects.equals(this.status, systemsupportentry.status) &&
-        Objects.equals(this.entryNumber, systemsupportentry.entryNumber) &&
-        Objects.equals(this.problemSendDateDATE, systemsupportentry.problemSendDateDATE) &&
-        Objects.equals(this.solutionSendDateDATE, systemsupportentry.solutionSendDateDATE) &&
-        Objects.equals(this.machineName, systemsupportentry.machineName) &&
-        Objects.equals(this.notifyOnStart, systemsupportentry.notifyOnStart) &&
-        Objects.equals(this.notifyOnSite, systemsupportentry.notifyOnSite) &&
-        Objects.equals(this.entrySite, systemsupportentry.entrySite) &&
-        Objects.equals(this.pictureID, systemsupportentry.pictureID) &&
-        Objects.equals(this.vendorEntry, systemsupportentry.vendorEntry) &&
+        Objects.equals(this.entrynumber, systemsupportentry.entrynumber) &&
+        Objects.equals(this.problemsenddatedate, systemsupportentry.problemsenddatedate) &&
+        Objects.equals(this.solutionsenddatedate, systemsupportentry.solutionsenddatedate) &&
+        Objects.equals(this.machinename, systemsupportentry.machinename) &&
+        Objects.equals(this.notifyonstart, systemsupportentry.notifyonstart) &&
+        Objects.equals(this.notifyonsite, systemsupportentry.notifyonsite) &&
+        Objects.equals(this.entrysite, systemsupportentry.entrysite) &&
+        Objects.equals(this.pictureId, systemsupportentry.pictureId) &&
+        Objects.equals(this.vendorentry, systemsupportentry.vendorentry) &&
         Objects.equals(this.pictures, systemsupportentry.pictures);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, kind, entryDateDATE, createdByID, firmID, responseEMail, shortDescription, problemDescription, implementationData, problemData, solutionDateDATE, solver, solutionDescription, crossReference, status, entryNumber, problemSendDateDATE, solutionSendDateDATE, machineName, notifyOnStart, notifyOnSite, entrySite, pictureID, vendorEntry, pictures);
+    return Objects.hash(displayname, id, classid, objversion, kind, entrydatedate, createdbyId, firmId, responseemail, shortdescription, problemdescription, implementationdata, problemdata, solutiondatedate, solver, solutiondescription, crossreference, status, entrynumber, problemsenddatedate, solutionsenddatedate, machinename, notifyonstart, notifyonsite, entrysite, pictureId, vendorentry, pictures);
   }
 
   @Override
@@ -646,33 +682,33 @@ public class Systemsupportentry   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Systemsupportentry {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    kind: ").append(toIndentedString(kind)).append("\n");
-    sb.append("    entryDateDATE: ").append(toIndentedString(entryDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    responseEMail: ").append(toIndentedString(responseEMail)).append("\n");
-    sb.append("    shortDescription: ").append(toIndentedString(shortDescription)).append("\n");
-    sb.append("    problemDescription: ").append(toIndentedString(problemDescription)).append("\n");
-    sb.append("    implementationData: ").append(toIndentedString(implementationData)).append("\n");
-    sb.append("    problemData: ").append(toIndentedString(problemData)).append("\n");
-    sb.append("    solutionDateDATE: ").append(toIndentedString(solutionDateDATE)).append("\n");
+    sb.append("    entrydatedate: ").append(toIndentedString(entrydatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    responseemail: ").append(toIndentedString(responseemail)).append("\n");
+    sb.append("    shortdescription: ").append(toIndentedString(shortdescription)).append("\n");
+    sb.append("    problemdescription: ").append(toIndentedString(problemdescription)).append("\n");
+    sb.append("    implementationdata: ").append(toIndentedString(implementationdata)).append("\n");
+    sb.append("    problemdata: ").append(toIndentedString(problemdata)).append("\n");
+    sb.append("    solutiondatedate: ").append(toIndentedString(solutiondatedate)).append("\n");
     sb.append("    solver: ").append(toIndentedString(solver)).append("\n");
-    sb.append("    solutionDescription: ").append(toIndentedString(solutionDescription)).append("\n");
-    sb.append("    crossReference: ").append(toIndentedString(crossReference)).append("\n");
+    sb.append("    solutiondescription: ").append(toIndentedString(solutiondescription)).append("\n");
+    sb.append("    crossreference: ").append(toIndentedString(crossreference)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
-    sb.append("    entryNumber: ").append(toIndentedString(entryNumber)).append("\n");
-    sb.append("    problemSendDateDATE: ").append(toIndentedString(problemSendDateDATE)).append("\n");
-    sb.append("    solutionSendDateDATE: ").append(toIndentedString(solutionSendDateDATE)).append("\n");
-    sb.append("    machineName: ").append(toIndentedString(machineName)).append("\n");
-    sb.append("    notifyOnStart: ").append(toIndentedString(notifyOnStart)).append("\n");
-    sb.append("    notifyOnSite: ").append(toIndentedString(notifyOnSite)).append("\n");
-    sb.append("    entrySite: ").append(toIndentedString(entrySite)).append("\n");
-    sb.append("    pictureID: ").append(toIndentedString(pictureID)).append("\n");
-    sb.append("    vendorEntry: ").append(toIndentedString(vendorEntry)).append("\n");
+    sb.append("    entrynumber: ").append(toIndentedString(entrynumber)).append("\n");
+    sb.append("    problemsenddatedate: ").append(toIndentedString(problemsenddatedate)).append("\n");
+    sb.append("    solutionsenddatedate: ").append(toIndentedString(solutionsenddatedate)).append("\n");
+    sb.append("    machinename: ").append(toIndentedString(machinename)).append("\n");
+    sb.append("    notifyonstart: ").append(toIndentedString(notifyonstart)).append("\n");
+    sb.append("    notifyonsite: ").append(toIndentedString(notifyonsite)).append("\n");
+    sb.append("    entrysite: ").append(toIndentedString(entrysite)).append("\n");
+    sb.append("    pictureId: ").append(toIndentedString(pictureId)).append("\n");
+    sb.append("    vendorentry: ").append(toIndentedString(vendorentry)).append("\n");
     sb.append("    pictures: ").append(toIndentedString(pictures)).append("\n");
     sb.append("}");
     return sb.toString();

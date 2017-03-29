@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,147 +35,183 @@ import java.util.Objects;
 /**
  * Msgredirection
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Msgredirection   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("SecurityUser_ID")
-  private String securityUserID = null;
+  @SerializedName("securityuser_id")
+  private String securityuserId = null;
 
-  @SerializedName("EmailAddress")
-  private String emailAddress = null;
+  @SerializedName("emailaddress")
+  private String emailaddress = null;
 
-  @SerializedName("ValidFromDate$DATE")
-  private DateTime validFromDateDATE = null;
+  @SerializedName("validfromdate$date")
+  private DateTime validfromdatedate = null;
 
-  @SerializedName("ValidToDate$DATE")
-  private DateTime validToDateDATE = null;
+  @SerializedName("validtodate$date")
+  private DateTime validtodatedate = null;
 
-  @SerializedName("Reason")
+  @SerializedName("reason")
   private String reason = null;
 
-  @SerializedName("KeepMessage")
-  private Boolean keepMessage = null;
+  @SerializedName("keepmessage")
+  private Boolean keepmessage = null;
 
-  @SerializedName("EmailAccount_ID")
-  private String emailAccountID = null;
+  @SerializedName("emailaccount_id")
+  private String emailaccountId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Msgredirection securityUserID(String securityUserID) {
-    this.securityUserID = securityUserID;
+  public Msgredirection displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Uživatel; ID objektu Uživatel [persistentní položka]
-   * @return securityUserID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Uživatel; ID objektu Uživatel [persistentní položka]")
-  public String getSecurityUserID() {
-    return securityUserID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setSecurityUserID(String securityUserID) {
-    this.securityUserID = securityUserID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Msgredirection emailAddress(String emailAddress) {
-    this.emailAddress = emailAddress;
+  public Msgredirection id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Adresát(i) [persistentní položka]
-   * @return emailAddress
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Adresát(i) [persistentní položka]")
-  public String getEmailAddress() {
-    return emailAddress;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setEmailAddress(String emailAddress) {
-    this.emailAddress = emailAddress;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Msgredirection validFromDateDATE(DateTime validFromDateDATE) {
-    this.validFromDateDATE = validFromDateDATE;
+  public Msgredirection classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Platné od data [persistentní položka]
-   * @return validFromDateDATE
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Platné od data [persistentní položka]")
-  public DateTime getValidFromDateDATE() {
-    return validFromDateDATE;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setValidFromDateDATE(DateTime validFromDateDATE) {
-    this.validFromDateDATE = validFromDateDATE;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Msgredirection validToDateDATE(DateTime validToDateDATE) {
-    this.validToDateDATE = validToDateDATE;
+  public Msgredirection objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Platné do data [persistentní položka]
-   * @return validToDateDATE
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Platné do data [persistentní položka]")
-  public DateTime getValidToDateDATE() {
-    return validToDateDATE;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setValidToDateDATE(DateTime validToDateDATE) {
-    this.validToDateDATE = validToDateDATE;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Msgredirection securityuserId(String securityuserId) {
+    this.securityuserId = securityuserId;
+    return this;
+  }
+
+   /**
+   * uživatel; id objektu uživatel [persistentní položka]
+   * @return securityuserId
+  **/
+  @ApiModelProperty(example = "null", value = "uživatel; id objektu uživatel [persistentní položka]")
+  public String getSecurityuserId() {
+    return securityuserId;
+  }
+
+  public void setSecurityuserId(String securityuserId) {
+    this.securityuserId = securityuserId;
+  }
+
+  public Msgredirection emailaddress(String emailaddress) {
+    this.emailaddress = emailaddress;
+    return this;
+  }
+
+   /**
+   * adresát(i) [persistentní položka]
+   * @return emailaddress
+  **/
+  @ApiModelProperty(example = "null", value = "adresát(i) [persistentní položka]")
+  public String getEmailaddress() {
+    return emailaddress;
+  }
+
+  public void setEmailaddress(String emailaddress) {
+    this.emailaddress = emailaddress;
+  }
+
+  public Msgredirection validfromdatedate(DateTime validfromdatedate) {
+    this.validfromdatedate = validfromdatedate;
+    return this;
+  }
+
+   /**
+   * platné od data [persistentní položka]
+   * @return validfromdatedate
+  **/
+  @ApiModelProperty(example = "null", value = "platné od data [persistentní položka]")
+  public DateTime getValidfromdatedate() {
+    return validfromdatedate;
+  }
+
+  public void setValidfromdatedate(DateTime validfromdatedate) {
+    this.validfromdatedate = validfromdatedate;
+  }
+
+  public Msgredirection validtodatedate(DateTime validtodatedate) {
+    this.validtodatedate = validtodatedate;
+    return this;
+  }
+
+   /**
+   * platné do data [persistentní položka]
+   * @return validtodatedate
+  **/
+  @ApiModelProperty(example = "null", value = "platné do data [persistentní položka]")
+  public DateTime getValidtodatedate() {
+    return validtodatedate;
+  }
+
+  public void setValidtodatedate(DateTime validtodatedate) {
+    this.validtodatedate = validtodatedate;
   }
 
   public Msgredirection reason(String reason) {
@@ -184,10 +220,10 @@ public class Msgredirection   {
   }
 
    /**
-   * Důvod [persistentní položka]
+   * důvod [persistentní položka]
    * @return reason
   **/
-  @ApiModelProperty(example = "null", value = "Důvod [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "důvod [persistentní položka]")
   public String getReason() {
     return reason;
   }
@@ -196,40 +232,40 @@ public class Msgredirection   {
     this.reason = reason;
   }
 
-  public Msgredirection keepMessage(Boolean keepMessage) {
-    this.keepMessage = keepMessage;
+  public Msgredirection keepmessage(Boolean keepmessage) {
+    this.keepmessage = keepmessage;
     return this;
   }
 
    /**
-   * Ponechat vzkaz [persistentní položka]
-   * @return keepMessage
+   * ponechat vzkaz [persistentní položka]
+   * @return keepmessage
   **/
-  @ApiModelProperty(example = "null", value = "Ponechat vzkaz [persistentní položka]")
-  public Boolean getKeepMessage() {
-    return keepMessage;
+  @ApiModelProperty(example = "null", value = "ponechat vzkaz [persistentní položka]")
+  public Boolean getKeepmessage() {
+    return keepmessage;
   }
 
-  public void setKeepMessage(Boolean keepMessage) {
-    this.keepMessage = keepMessage;
+  public void setKeepmessage(Boolean keepmessage) {
+    this.keepmessage = keepmessage;
   }
 
-  public Msgredirection emailAccountID(String emailAccountID) {
-    this.emailAccountID = emailAccountID;
+  public Msgredirection emailaccountId(String emailaccountId) {
+    this.emailaccountId = emailaccountId;
     return this;
   }
 
    /**
-   * Vlastní e-mail. účet; ID objektu E-mailový účet [persistentní položka]
-   * @return emailAccountID
+   * vlastní e-mail. účet; id objektu e-mailový účet [persistentní položka]
+   * @return emailaccountId
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní e-mail. účet; ID objektu E-mailový účet [persistentní položka]")
-  public String getEmailAccountID() {
-    return emailAccountID;
+  @ApiModelProperty(example = "null", value = "vlastní e-mail. účet; id objektu e-mailový účet [persistentní položka]")
+  public String getEmailaccountId() {
+    return emailaccountId;
   }
 
-  public void setEmailAccountID(String emailAccountID) {
-    this.emailAccountID = emailAccountID;
+  public void setEmailaccountId(String emailaccountId) {
+    this.emailaccountId = emailaccountId;
   }
 
 
@@ -242,22 +278,22 @@ public class Msgredirection   {
       return false;
     }
     Msgredirection msgredirection = (Msgredirection) o;
-    return Objects.equals(this.displayName, msgredirection.displayName) &&
-        Objects.equals(this.ID, msgredirection.ID) &&
-        Objects.equals(this.classID, msgredirection.classID) &&
-        Objects.equals(this.objVersion, msgredirection.objVersion) &&
-        Objects.equals(this.securityUserID, msgredirection.securityUserID) &&
-        Objects.equals(this.emailAddress, msgredirection.emailAddress) &&
-        Objects.equals(this.validFromDateDATE, msgredirection.validFromDateDATE) &&
-        Objects.equals(this.validToDateDATE, msgredirection.validToDateDATE) &&
+    return Objects.equals(this.displayname, msgredirection.displayname) &&
+        Objects.equals(this.id, msgredirection.id) &&
+        Objects.equals(this.classid, msgredirection.classid) &&
+        Objects.equals(this.objversion, msgredirection.objversion) &&
+        Objects.equals(this.securityuserId, msgredirection.securityuserId) &&
+        Objects.equals(this.emailaddress, msgredirection.emailaddress) &&
+        Objects.equals(this.validfromdatedate, msgredirection.validfromdatedate) &&
+        Objects.equals(this.validtodatedate, msgredirection.validtodatedate) &&
         Objects.equals(this.reason, msgredirection.reason) &&
-        Objects.equals(this.keepMessage, msgredirection.keepMessage) &&
-        Objects.equals(this.emailAccountID, msgredirection.emailAccountID);
+        Objects.equals(this.keepmessage, msgredirection.keepmessage) &&
+        Objects.equals(this.emailaccountId, msgredirection.emailaccountId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, securityUserID, emailAddress, validFromDateDATE, validToDateDATE, reason, keepMessage, emailAccountID);
+    return Objects.hash(displayname, id, classid, objversion, securityuserId, emailaddress, validfromdatedate, validtodatedate, reason, keepmessage, emailaccountId);
   }
 
   @Override
@@ -265,17 +301,17 @@ public class Msgredirection   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Msgredirection {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    securityUserID: ").append(toIndentedString(securityUserID)).append("\n");
-    sb.append("    emailAddress: ").append(toIndentedString(emailAddress)).append("\n");
-    sb.append("    validFromDateDATE: ").append(toIndentedString(validFromDateDATE)).append("\n");
-    sb.append("    validToDateDATE: ").append(toIndentedString(validToDateDATE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    securityuserId: ").append(toIndentedString(securityuserId)).append("\n");
+    sb.append("    emailaddress: ").append(toIndentedString(emailaddress)).append("\n");
+    sb.append("    validfromdatedate: ").append(toIndentedString(validfromdatedate)).append("\n");
+    sb.append("    validtodatedate: ").append(toIndentedString(validtodatedate)).append("\n");
     sb.append("    reason: ").append(toIndentedString(reason)).append("\n");
-    sb.append("    keepMessage: ").append(toIndentedString(keepMessage)).append("\n");
-    sb.append("    emailAccountID: ").append(toIndentedString(emailAccountID)).append("\n");
+    sb.append("    keepmessage: ").append(toIndentedString(keepmessage)).append("\n");
+    sb.append("    emailaccountId: ").append(toIndentedString(emailaccountId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

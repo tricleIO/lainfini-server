@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,96 +34,132 @@ import java.util.Objects;
 /**
  * Pdmissuedcontenttype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Pdmissuedcontenttype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ShortName")
-  private String shortName = null;
+  @SerializedName("shortname")
+  private String shortname = null;
 
-  @SerializedName("IncludeIntoReports")
-  private Boolean includeIntoReports = null;
+  @SerializedName("includeintoreports")
+  private Boolean includeintoreports = null;
 
-  @SerializedName("GenPostNumber")
-  private Boolean genPostNumber = null;
+  @SerializedName("genpostnumber")
+  private Boolean genpostnumber = null;
 
-  @SerializedName("ReportNumber")
-  private String reportNumber = null;
+  @SerializedName("reportnumber")
+  private String reportnumber = null;
 
-  @SerializedName("PostCategory")
-  private String postCategory = null;
+  @SerializedName("postcategory")
+  private String postcategory = null;
 
-  @SerializedName("NumberQueue")
-  private Integer numberQueue = null;
+  @SerializedName("numberqueue")
+  private Integer numberqueue = null;
 
-  @SerializedName("NumberPrefix")
-  private String numberPrefix = null;
+  @SerializedName("numberprefix")
+  private String numberprefix = null;
 
-  @SerializedName("NumberSuffix")
-  private String numberSuffix = null;
+  @SerializedName("numbersuffix")
+  private String numbersuffix = null;
 
-  @SerializedName("NumberLimit")
-  private Integer numberLimit = null;
+  @SerializedName("numberlimit")
+  private Integer numberlimit = null;
 
-  @SerializedName("NumberQueue_ID")
-  private String numberQueueID = null;
+  @SerializedName("numberqueue_id")
+  private String numberqueueId = null;
 
-  @SerializedName("CompleteNumber")
-  private String completeNumber = null;
+  @SerializedName("completenumber")
+  private String completenumber = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Pdmissuedcontenttype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Pdmissuedcontenttype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Pdmissuedcontenttype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Pdmissuedcontenttype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Pdmissuedcontenttype hidden(Boolean hidden) {
@@ -132,10 +168,10 @@ public class Pdmissuedcontenttype   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -150,10 +186,10 @@ public class Pdmissuedcontenttype   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -168,10 +204,10 @@ public class Pdmissuedcontenttype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -180,193 +216,202 @@ public class Pdmissuedcontenttype   {
     this.name = name;
   }
 
-  public Pdmissuedcontenttype shortName(String shortName) {
-    this.shortName = shortName;
+  public Pdmissuedcontenttype shortname(String shortname) {
+    this.shortname = shortname;
     return this;
   }
 
    /**
-   * Krátký název [persistentní položka]
-   * @return shortName
+   * krátký název [persistentní položka]
+   * @return shortname
   **/
-  @ApiModelProperty(example = "null", value = "Krátký název [persistentní položka]")
-  public String getShortName() {
-    return shortName;
+  @ApiModelProperty(example = "null", value = "krátký název [persistentní položka]")
+  public String getShortname() {
+    return shortname;
   }
 
-  public void setShortName(String shortName) {
-    this.shortName = shortName;
+  public void setShortname(String shortname) {
+    this.shortname = shortname;
   }
 
-  public Pdmissuedcontenttype includeIntoReports(Boolean includeIntoReports) {
-    this.includeIntoReports = includeIntoReports;
+  public Pdmissuedcontenttype includeintoreports(Boolean includeintoreports) {
+    this.includeintoreports = includeintoreports;
     return this;
   }
 
    /**
-   * Zahrnovat do podacích archů [persistentní položka]
-   * @return includeIntoReports
+   * zahrnovat do podacích archů [persistentní položka]
+   * @return includeintoreports
   **/
-  @ApiModelProperty(example = "null", value = "Zahrnovat do podacích archů [persistentní položka]")
-  public Boolean getIncludeIntoReports() {
-    return includeIntoReports;
+  @ApiModelProperty(example = "null", value = "zahrnovat do podacích archů [persistentní položka]")
+  public Boolean getIncludeintoreports() {
+    return includeintoreports;
   }
 
-  public void setIncludeIntoReports(Boolean includeIntoReports) {
-    this.includeIntoReports = includeIntoReports;
+  public void setIncludeintoreports(Boolean includeintoreports) {
+    this.includeintoreports = includeintoreports;
   }
 
-  public Pdmissuedcontenttype genPostNumber(Boolean genPostNumber) {
-    this.genPostNumber = genPostNumber;
+  public Pdmissuedcontenttype genpostnumber(Boolean genpostnumber) {
+    this.genpostnumber = genpostnumber;
     return this;
   }
 
    /**
-   * Generování podacího čísla [persistentní položka]
-   * @return genPostNumber
+   * generování podacího čísla [persistentní položka]
+   * @return genpostnumber
   **/
-  @ApiModelProperty(example = "null", value = "Generování podacího čísla [persistentní položka]")
-  public Boolean getGenPostNumber() {
-    return genPostNumber;
+  @ApiModelProperty(example = "null", value = "generování podacího čísla [persistentní položka]")
+  public Boolean getGenpostnumber() {
+    return genpostnumber;
   }
 
-  public void setGenPostNumber(Boolean genPostNumber) {
-    this.genPostNumber = genPostNumber;
+  public void setGenpostnumber(Boolean genpostnumber) {
+    this.genpostnumber = genpostnumber;
   }
 
-  public Pdmissuedcontenttype reportNumber(String reportNumber) {
-    this.reportNumber = reportNumber;
+  public Pdmissuedcontenttype reportnumber(String reportnumber) {
+    this.reportnumber = reportnumber;
     return this;
   }
 
    /**
-   * Název podacího archu [persistentní položka]
-   * @return reportNumber
+   * název podacího archu [persistentní položka]
+   * @return reportnumber
   **/
-  @ApiModelProperty(example = "null", value = "Název podacího archu [persistentní položka]")
-  public String getReportNumber() {
-    return reportNumber;
+  @ApiModelProperty(example = "null", value = "název podacího archu [persistentní položka]")
+  public String getReportnumber() {
+    return reportnumber;
   }
 
-  public void setReportNumber(String reportNumber) {
-    this.reportNumber = reportNumber;
+  public void setReportnumber(String reportnumber) {
+    this.reportnumber = reportnumber;
   }
 
-  public Pdmissuedcontenttype postCategory(String postCategory) {
-    this.postCategory = postCategory;
+  public Pdmissuedcontenttype postcategory(String postcategory) {
+    this.postcategory = postcategory;
     return this;
   }
 
    /**
-   * Kategorie pošty [persistentní položka]
-   * @return postCategory
+   * kategorie pošty [persistentní položka]
+   * @return postcategory
   **/
-  @ApiModelProperty(example = "null", value = "Kategorie pošty [persistentní položka]")
-  public String getPostCategory() {
-    return postCategory;
+  @ApiModelProperty(example = "null", value = "kategorie pošty [persistentní položka]")
+  public String getPostcategory() {
+    return postcategory;
   }
 
-  public void setPostCategory(String postCategory) {
-    this.postCategory = postCategory;
+  public void setPostcategory(String postcategory) {
+    this.postcategory = postcategory;
   }
 
-  public Pdmissuedcontenttype numberQueue(Integer numberQueue) {
-    this.numberQueue = numberQueue;
+  public Pdmissuedcontenttype numberqueue(Integer numberqueue) {
+    this.numberqueue = numberqueue;
     return this;
   }
 
    /**
    * Číselná řada [persistentní položka]
-   * @return numberQueue
+   * @return numberqueue
   **/
   @ApiModelProperty(example = "null", value = "Číselná řada [persistentní položka]")
-  public Integer getNumberQueue() {
-    return numberQueue;
+  public Integer getNumberqueue() {
+    return numberqueue;
   }
 
-  public void setNumberQueue(Integer numberQueue) {
-    this.numberQueue = numberQueue;
+  public void setNumberqueue(Integer numberqueue) {
+    this.numberqueue = numberqueue;
   }
 
-  public Pdmissuedcontenttype numberPrefix(String numberPrefix) {
-    this.numberPrefix = numberPrefix;
+  public Pdmissuedcontenttype numberprefix(String numberprefix) {
+    this.numberprefix = numberprefix;
     return this;
   }
 
    /**
-   * Prefix číselné řady [persistentní položka]
-   * @return numberPrefix
+   * prefix číselné řady [persistentní položka]
+   * @return numberprefix
   **/
-  @ApiModelProperty(example = "null", value = "Prefix číselné řady [persistentní položka]")
-  public String getNumberPrefix() {
-    return numberPrefix;
+  @ApiModelProperty(example = "null", value = "prefix číselné řady [persistentní položka]")
+  public String getNumberprefix() {
+    return numberprefix;
   }
 
-  public void setNumberPrefix(String numberPrefix) {
-    this.numberPrefix = numberPrefix;
+  public void setNumberprefix(String numberprefix) {
+    this.numberprefix = numberprefix;
   }
 
-  public Pdmissuedcontenttype numberSuffix(String numberSuffix) {
-    this.numberSuffix = numberSuffix;
+  public Pdmissuedcontenttype numbersuffix(String numbersuffix) {
+    this.numbersuffix = numbersuffix;
     return this;
   }
 
    /**
-   * Přípona číselné řady [persistentní položka]
-   * @return numberSuffix
+   * přípona číselné řady [persistentní položka]
+   * @return numbersuffix
   **/
-  @ApiModelProperty(example = "null", value = "Přípona číselné řady [persistentní položka]")
-  public String getNumberSuffix() {
-    return numberSuffix;
+  @ApiModelProperty(example = "null", value = "přípona číselné řady [persistentní položka]")
+  public String getNumbersuffix() {
+    return numbersuffix;
   }
 
-  public void setNumberSuffix(String numberSuffix) {
-    this.numberSuffix = numberSuffix;
+  public void setNumbersuffix(String numbersuffix) {
+    this.numbersuffix = numbersuffix;
   }
 
-  public Pdmissuedcontenttype numberLimit(Integer numberLimit) {
-    this.numberLimit = numberLimit;
+  public Pdmissuedcontenttype numberlimit(Integer numberlimit) {
+    this.numberlimit = numberlimit;
     return this;
   }
 
    /**
-   * Limit číselné řady [persistentní položka]
-   * @return numberLimit
+   * limit číselné řady [persistentní položka]
+   * @return numberlimit
   **/
-  @ApiModelProperty(example = "null", value = "Limit číselné řady [persistentní položka]")
-  public Integer getNumberLimit() {
-    return numberLimit;
+  @ApiModelProperty(example = "null", value = "limit číselné řady [persistentní položka]")
+  public Integer getNumberlimit() {
+    return numberlimit;
   }
 
-  public void setNumberLimit(Integer numberLimit) {
-    this.numberLimit = numberLimit;
+  public void setNumberlimit(Integer numberlimit) {
+    this.numberlimit = numberlimit;
   }
 
-  public Pdmissuedcontenttype numberQueueID(String numberQueueID) {
-    this.numberQueueID = numberQueueID;
+  public Pdmissuedcontenttype numberqueueId(String numberqueueId) {
+    this.numberqueueId = numberqueueId;
     return this;
   }
 
    /**
-   * Odkaz na číselnou řadu; ID objektu Typy obsahů odeslané pošty [persistentní položka]
-   * @return numberQueueID
+   * odkaz na číselnou řadu; id objektu typy obsahů odeslané pošty [persistentní položka]
+   * @return numberqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na číselnou řadu; ID objektu Typy obsahů odeslané pošty [persistentní položka]")
-  public String getNumberQueueID() {
-    return numberQueueID;
+  @ApiModelProperty(example = "null", value = "odkaz na číselnou řadu; id objektu typy obsahů odeslané pošty [persistentní položka]")
+  public String getNumberqueueId() {
+    return numberqueueId;
   }
 
-  public void setNumberQueueID(String numberQueueID) {
-    this.numberQueueID = numberQueueID;
+  public void setNumberqueueId(String numberqueueId) {
+    this.numberqueueId = numberqueueId;
+  }
+
+  public Pdmissuedcontenttype completenumber(String completenumber) {
+    this.completenumber = completenumber;
+    return this;
   }
 
    /**
-   * Sestavená číselná řada
-   * @return completeNumber
+   * sestavená číselná řada
+   * @return completenumber
   **/
-  @ApiModelProperty(example = "null", value = "Sestavená číselná řada")
-  public String getCompleteNumber() {
-    return completeNumber;
+  @ApiModelProperty(example = "null", value = "sestavená číselná řada")
+  public String getCompletenumber() {
+    return completenumber;
+  }
+
+  public void setCompletenumber(String completenumber) {
+    this.completenumber = completenumber;
   }
 
 
@@ -379,29 +424,29 @@ public class Pdmissuedcontenttype   {
       return false;
     }
     Pdmissuedcontenttype pdmissuedcontenttype = (Pdmissuedcontenttype) o;
-    return Objects.equals(this.displayName, pdmissuedcontenttype.displayName) &&
-        Objects.equals(this.ID, pdmissuedcontenttype.ID) &&
-        Objects.equals(this.classID, pdmissuedcontenttype.classID) &&
-        Objects.equals(this.objVersion, pdmissuedcontenttype.objVersion) &&
+    return Objects.equals(this.displayname, pdmissuedcontenttype.displayname) &&
+        Objects.equals(this.id, pdmissuedcontenttype.id) &&
+        Objects.equals(this.classid, pdmissuedcontenttype.classid) &&
+        Objects.equals(this.objversion, pdmissuedcontenttype.objversion) &&
         Objects.equals(this.hidden, pdmissuedcontenttype.hidden) &&
         Objects.equals(this.code, pdmissuedcontenttype.code) &&
         Objects.equals(this.name, pdmissuedcontenttype.name) &&
-        Objects.equals(this.shortName, pdmissuedcontenttype.shortName) &&
-        Objects.equals(this.includeIntoReports, pdmissuedcontenttype.includeIntoReports) &&
-        Objects.equals(this.genPostNumber, pdmissuedcontenttype.genPostNumber) &&
-        Objects.equals(this.reportNumber, pdmissuedcontenttype.reportNumber) &&
-        Objects.equals(this.postCategory, pdmissuedcontenttype.postCategory) &&
-        Objects.equals(this.numberQueue, pdmissuedcontenttype.numberQueue) &&
-        Objects.equals(this.numberPrefix, pdmissuedcontenttype.numberPrefix) &&
-        Objects.equals(this.numberSuffix, pdmissuedcontenttype.numberSuffix) &&
-        Objects.equals(this.numberLimit, pdmissuedcontenttype.numberLimit) &&
-        Objects.equals(this.numberQueueID, pdmissuedcontenttype.numberQueueID) &&
-        Objects.equals(this.completeNumber, pdmissuedcontenttype.completeNumber);
+        Objects.equals(this.shortname, pdmissuedcontenttype.shortname) &&
+        Objects.equals(this.includeintoreports, pdmissuedcontenttype.includeintoreports) &&
+        Objects.equals(this.genpostnumber, pdmissuedcontenttype.genpostnumber) &&
+        Objects.equals(this.reportnumber, pdmissuedcontenttype.reportnumber) &&
+        Objects.equals(this.postcategory, pdmissuedcontenttype.postcategory) &&
+        Objects.equals(this.numberqueue, pdmissuedcontenttype.numberqueue) &&
+        Objects.equals(this.numberprefix, pdmissuedcontenttype.numberprefix) &&
+        Objects.equals(this.numbersuffix, pdmissuedcontenttype.numbersuffix) &&
+        Objects.equals(this.numberlimit, pdmissuedcontenttype.numberlimit) &&
+        Objects.equals(this.numberqueueId, pdmissuedcontenttype.numberqueueId) &&
+        Objects.equals(this.completenumber, pdmissuedcontenttype.completenumber);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, shortName, includeIntoReports, genPostNumber, reportNumber, postCategory, numberQueue, numberPrefix, numberSuffix, numberLimit, numberQueueID, completeNumber);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, shortname, includeintoreports, genpostnumber, reportnumber, postcategory, numberqueue, numberprefix, numbersuffix, numberlimit, numberqueueId, completenumber);
   }
 
   @Override
@@ -409,24 +454,24 @@ public class Pdmissuedcontenttype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Pdmissuedcontenttype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    shortName: ").append(toIndentedString(shortName)).append("\n");
-    sb.append("    includeIntoReports: ").append(toIndentedString(includeIntoReports)).append("\n");
-    sb.append("    genPostNumber: ").append(toIndentedString(genPostNumber)).append("\n");
-    sb.append("    reportNumber: ").append(toIndentedString(reportNumber)).append("\n");
-    sb.append("    postCategory: ").append(toIndentedString(postCategory)).append("\n");
-    sb.append("    numberQueue: ").append(toIndentedString(numberQueue)).append("\n");
-    sb.append("    numberPrefix: ").append(toIndentedString(numberPrefix)).append("\n");
-    sb.append("    numberSuffix: ").append(toIndentedString(numberSuffix)).append("\n");
-    sb.append("    numberLimit: ").append(toIndentedString(numberLimit)).append("\n");
-    sb.append("    numberQueueID: ").append(toIndentedString(numberQueueID)).append("\n");
-    sb.append("    completeNumber: ").append(toIndentedString(completeNumber)).append("\n");
+    sb.append("    shortname: ").append(toIndentedString(shortname)).append("\n");
+    sb.append("    includeintoreports: ").append(toIndentedString(includeintoreports)).append("\n");
+    sb.append("    genpostnumber: ").append(toIndentedString(genpostnumber)).append("\n");
+    sb.append("    reportnumber: ").append(toIndentedString(reportnumber)).append("\n");
+    sb.append("    postcategory: ").append(toIndentedString(postcategory)).append("\n");
+    sb.append("    numberqueue: ").append(toIndentedString(numberqueue)).append("\n");
+    sb.append("    numberprefix: ").append(toIndentedString(numberprefix)).append("\n");
+    sb.append("    numbersuffix: ").append(toIndentedString(numbersuffix)).append("\n");
+    sb.append("    numberlimit: ").append(toIndentedString(numberlimit)).append("\n");
+    sb.append("    numberqueueId: ").append(toIndentedString(numberqueueId)).append("\n");
+    sb.append("    completenumber: ").append(toIndentedString(completenumber)).append("\n");
     sb.append("}");
     return sb.toString();
   }

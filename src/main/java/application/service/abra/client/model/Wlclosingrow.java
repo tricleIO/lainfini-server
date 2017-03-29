@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,318 +34,363 @@ import java.util.Objects;
 /**
  * Wlclosingrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wlclosingrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Worker_ID")
-  private String workerID = null;
+  @SerializedName("worker_id")
+  private String workerId = null;
 
-  @SerializedName("TransferType")
-  private Integer transferType = null;
+  @SerializedName("transfertype")
+  private Integer transfertype = null;
 
-  @SerializedName("FieldCode")
-  private Integer fieldCode = null;
+  @SerializedName("fieldcode")
+  private Integer fieldcode = null;
 
-  @SerializedName("WageOperation_ID")
-  private String wageOperationID = null;
+  @SerializedName("wageoperation_id")
+  private String wageoperationId = null;
 
-  @SerializedName("Absence_ID")
-  private String absenceID = null;
+  @SerializedName("absence_id")
+  private String absenceId = null;
 
-  @SerializedName("SickBenefit_ID")
-  private String sickBenefitID = null;
+  @SerializedName("sickbenefit_id")
+  private String sickbenefitId = null;
 
-  @SerializedName("SickBenefitRow_ID")
-  private String sickBenefitRowID = null;
+  @SerializedName("sickbenefitrow_id")
+  private String sickbenefitrowId = null;
 
-  @SerializedName("WageListPartial_ID")
-  private String wageListPartialID = null;
+  @SerializedName("wagelistpartial_id")
+  private String wagelistpartialId = null;
 
-  @SerializedName("ClosedValue")
-  private Double closedValue = null;
+  @SerializedName("closedvalue")
+  private Double closedvalue = null;
 
-  @SerializedName("TotalValue")
-  private Double totalValue = null;
+  @SerializedName("totalvalue")
+  private Double totalvalue = null;
 
-  @SerializedName("ScriptParams")
-  private byte[] scriptParams = null;
+  @SerializedName("scriptparams")
+  private byte[] scriptparams = null;
 
-  @SerializedName("ScriptIdentifyString")
-  private String scriptIdentifyString = null;
+  @SerializedName("scriptidentifystring")
+  private String scriptidentifystring = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Docházka - uzávěrka [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Docházka - uzávěrka [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Wlclosingrow workerID(String workerID) {
-    this.workerID = workerID;
+  public Wlclosingrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pracovník; ID objektu Docházka - pracovníci [persistentní položka]
-   * @return workerID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pracovník; ID objektu Docházka - pracovníci [persistentní položka]")
-  public String getWorkerID() {
-    return workerID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setWorkerID(String workerID) {
-    this.workerID = workerID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Wlclosingrow transferType(Integer transferType) {
-    this.transferType = transferType;
+  public Wlclosingrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Způsob přenosu [persistentní položka]
-   * @return transferType
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Způsob přenosu [persistentní položka]")
-  public Integer getTransferType() {
-    return transferType;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setTransferType(Integer transferType) {
-    this.transferType = transferType;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Wlclosingrow fieldCode(Integer fieldCode) {
-    this.fieldCode = fieldCode;
+  public Wlclosingrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * FieldCode cílové položky [persistentní položka]
-   * @return fieldCode
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "FieldCode cílové položky [persistentní položka]")
-  public Integer getFieldCode() {
-    return fieldCode;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setFieldCode(Integer fieldCode) {
-    this.fieldCode = fieldCode;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Wlclosingrow wageOperationID(String wageOperationID) {
-    this.wageOperationID = wageOperationID;
+  public Wlclosingrow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Odkaz na výkon; ID objektu Výkon [persistentní položka]
-   * @return wageOperationID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na výkon; ID objektu Výkon [persistentní položka]")
-  public String getWageOperationID() {
-    return wageOperationID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setWageOperationID(String wageOperationID) {
-    this.wageOperationID = wageOperationID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Wlclosingrow absenceID(String absenceID) {
-    this.absenceID = absenceID;
+  public Wlclosingrow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Odkaz na Nepřítomnost; ID objektu Nepřítomnost [persistentní položka]
-   * @return absenceID
+   * vlastník; id objektu docházka - uzávěrka [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na Nepřítomnost; ID objektu Nepřítomnost [persistentní položka]")
-  public String getAbsenceID() {
-    return absenceID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu docházka - uzávěrka [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setAbsenceID(String absenceID) {
-    this.absenceID = absenceID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Wlclosingrow sickBenefitID(String sickBenefitID) {
-    this.sickBenefitID = sickBenefitID;
+  public Wlclosingrow workerId(String workerId) {
+    this.workerId = workerId;
     return this;
   }
 
    /**
-   * Odkaz na Nemoc.dávku; ID objektu Nemocenská dávka [persistentní položka]
-   * @return sickBenefitID
+   * pracovník; id objektu docházka - pracovníci [persistentní položka]
+   * @return workerId
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na Nemoc.dávku; ID objektu Nemocenská dávka [persistentní položka]")
-  public String getSickBenefitID() {
-    return sickBenefitID;
+  @ApiModelProperty(example = "null", value = "pracovník; id objektu docházka - pracovníci [persistentní položka]")
+  public String getWorkerId() {
+    return workerId;
   }
 
-  public void setSickBenefitID(String sickBenefitID) {
-    this.sickBenefitID = sickBenefitID;
+  public void setWorkerId(String workerId) {
+    this.workerId = workerId;
   }
 
-  public Wlclosingrow sickBenefitRowID(String sickBenefitRowID) {
-    this.sickBenefitRowID = sickBenefitRowID;
+  public Wlclosingrow transfertype(Integer transfertype) {
+    this.transfertype = transfertype;
     return this;
   }
 
    /**
-   * Odkaz na řádek Nemoc.dávky; ID objektu Řádek ND [persistentní položka]
-   * @return sickBenefitRowID
+   * způsob přenosu [persistentní položka]
+   * @return transfertype
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na řádek Nemoc.dávky; ID objektu Řádek ND [persistentní položka]")
-  public String getSickBenefitRowID() {
-    return sickBenefitRowID;
+  @ApiModelProperty(example = "null", value = "způsob přenosu [persistentní položka]")
+  public Integer getTransfertype() {
+    return transfertype;
   }
 
-  public void setSickBenefitRowID(String sickBenefitRowID) {
-    this.sickBenefitRowID = sickBenefitRowID;
+  public void setTransfertype(Integer transfertype) {
+    this.transfertype = transfertype;
   }
 
-  public Wlclosingrow wageListPartialID(String wageListPartialID) {
-    this.wageListPartialID = wageListPartialID;
+  public Wlclosingrow fieldcode(Integer fieldcode) {
+    this.fieldcode = fieldcode;
     return this;
   }
 
    /**
-   * Odkaz na dílčí mzdový list; ID objektu Mzdový list dílčí [persistentní položka]
-   * @return wageListPartialID
+   * fieldcode cílové položky [persistentní položka]
+   * @return fieldcode
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na dílčí mzdový list; ID objektu Mzdový list dílčí [persistentní položka]")
-  public String getWageListPartialID() {
-    return wageListPartialID;
+  @ApiModelProperty(example = "null", value = "fieldcode cílové položky [persistentní položka]")
+  public Integer getFieldcode() {
+    return fieldcode;
   }
 
-  public void setWageListPartialID(String wageListPartialID) {
-    this.wageListPartialID = wageListPartialID;
+  public void setFieldcode(Integer fieldcode) {
+    this.fieldcode = fieldcode;
   }
 
-  public Wlclosingrow closedValue(Double closedValue) {
-    this.closedValue = closedValue;
+  public Wlclosingrow wageoperationId(String wageoperationId) {
+    this.wageoperationId = wageoperationId;
     return this;
   }
 
    /**
-   * Hodnota uzávěrky [persistentní položka]
-   * @return closedValue
+   * odkaz na výkon; id objektu výkon [persistentní položka]
+   * @return wageoperationId
   **/
-  @ApiModelProperty(example = "null", value = "Hodnota uzávěrky [persistentní položka]")
-  public Double getClosedValue() {
-    return closedValue;
+  @ApiModelProperty(example = "null", value = "odkaz na výkon; id objektu výkon [persistentní položka]")
+  public String getWageoperationId() {
+    return wageoperationId;
   }
 
-  public void setClosedValue(Double closedValue) {
-    this.closedValue = closedValue;
+  public void setWageoperationId(String wageoperationId) {
+    this.wageoperationId = wageoperationId;
   }
 
-  public Wlclosingrow totalValue(Double totalValue) {
-    this.totalValue = totalValue;
+  public Wlclosingrow absenceId(String absenceId) {
+    this.absenceId = absenceId;
     return this;
   }
 
    /**
-   * Hodnota před korekcí [persistentní položka]
-   * @return totalValue
+   * odkaz na nepřítomnost; id objektu nepřítomnost [persistentní položka]
+   * @return absenceId
   **/
-  @ApiModelProperty(example = "null", value = "Hodnota před korekcí [persistentní položka]")
-  public Double getTotalValue() {
-    return totalValue;
+  @ApiModelProperty(example = "null", value = "odkaz na nepřítomnost; id objektu nepřítomnost [persistentní položka]")
+  public String getAbsenceId() {
+    return absenceId;
   }
 
-  public void setTotalValue(Double totalValue) {
-    this.totalValue = totalValue;
+  public void setAbsenceId(String absenceId) {
+    this.absenceId = absenceId;
   }
 
-  public Wlclosingrow scriptParams(byte[] scriptParams) {
-    this.scriptParams = scriptParams;
+  public Wlclosingrow sickbenefitId(String sickbenefitId) {
+    this.sickbenefitId = sickbenefitId;
     return this;
   }
 
    /**
-   * Parametry pro skript [persistentní položka]
-   * @return scriptParams
+   * odkaz na nemoc.dávku; id objektu nemocenská dávka [persistentní položka]
+   * @return sickbenefitId
   **/
-  @ApiModelProperty(example = "null", value = "Parametry pro skript [persistentní položka]")
-  public byte[] getScriptParams() {
-    return scriptParams;
+  @ApiModelProperty(example = "null", value = "odkaz na nemoc.dávku; id objektu nemocenská dávka [persistentní položka]")
+  public String getSickbenefitId() {
+    return sickbenefitId;
   }
 
-  public void setScriptParams(byte[] scriptParams) {
-    this.scriptParams = scriptParams;
+  public void setSickbenefitId(String sickbenefitId) {
+    this.sickbenefitId = sickbenefitId;
   }
 
-  public Wlclosingrow scriptIdentifyString(String scriptIdentifyString) {
-    this.scriptIdentifyString = scriptIdentifyString;
+  public Wlclosingrow sickbenefitrowId(String sickbenefitrowId) {
+    this.sickbenefitrowId = sickbenefitrowId;
     return this;
   }
 
    /**
-   * Identifikace skriptu [persistentní položka]
-   * @return scriptIdentifyString
+   * odkaz na řádek nemoc.dávky; id objektu Řádek nd [persistentní položka]
+   * @return sickbenefitrowId
   **/
-  @ApiModelProperty(example = "null", value = "Identifikace skriptu [persistentní položka]")
-  public String getScriptIdentifyString() {
-    return scriptIdentifyString;
+  @ApiModelProperty(example = "null", value = "odkaz na řádek nemoc.dávky; id objektu Řádek nd [persistentní položka]")
+  public String getSickbenefitrowId() {
+    return sickbenefitrowId;
   }
 
-  public void setScriptIdentifyString(String scriptIdentifyString) {
-    this.scriptIdentifyString = scriptIdentifyString;
+  public void setSickbenefitrowId(String sickbenefitrowId) {
+    this.sickbenefitrowId = sickbenefitrowId;
+  }
+
+  public Wlclosingrow wagelistpartialId(String wagelistpartialId) {
+    this.wagelistpartialId = wagelistpartialId;
+    return this;
+  }
+
+   /**
+   * odkaz na dílčí mzdový list; id objektu mzdový list dílčí [persistentní položka]
+   * @return wagelistpartialId
+  **/
+  @ApiModelProperty(example = "null", value = "odkaz na dílčí mzdový list; id objektu mzdový list dílčí [persistentní položka]")
+  public String getWagelistpartialId() {
+    return wagelistpartialId;
+  }
+
+  public void setWagelistpartialId(String wagelistpartialId) {
+    this.wagelistpartialId = wagelistpartialId;
+  }
+
+  public Wlclosingrow closedvalue(Double closedvalue) {
+    this.closedvalue = closedvalue;
+    return this;
+  }
+
+   /**
+   * hodnota uzávěrky [persistentní položka]
+   * @return closedvalue
+  **/
+  @ApiModelProperty(example = "null", value = "hodnota uzávěrky [persistentní položka]")
+  public Double getClosedvalue() {
+    return closedvalue;
+  }
+
+  public void setClosedvalue(Double closedvalue) {
+    this.closedvalue = closedvalue;
+  }
+
+  public Wlclosingrow totalvalue(Double totalvalue) {
+    this.totalvalue = totalvalue;
+    return this;
+  }
+
+   /**
+   * hodnota před korekcí [persistentní položka]
+   * @return totalvalue
+  **/
+  @ApiModelProperty(example = "null", value = "hodnota před korekcí [persistentní položka]")
+  public Double getTotalvalue() {
+    return totalvalue;
+  }
+
+  public void setTotalvalue(Double totalvalue) {
+    this.totalvalue = totalvalue;
+  }
+
+  public Wlclosingrow scriptparams(byte[] scriptparams) {
+    this.scriptparams = scriptparams;
+    return this;
+  }
+
+   /**
+   * parametry pro skript [persistentní položka]
+   * @return scriptparams
+  **/
+  @ApiModelProperty(example = "null", value = "parametry pro skript [persistentní položka]")
+  public byte[] getScriptparams() {
+    return scriptparams;
+  }
+
+  public void setScriptparams(byte[] scriptparams) {
+    this.scriptparams = scriptparams;
+  }
+
+  public Wlclosingrow scriptidentifystring(String scriptidentifystring) {
+    this.scriptidentifystring = scriptidentifystring;
+    return this;
+  }
+
+   /**
+   * identifikace skriptu [persistentní položka]
+   * @return scriptidentifystring
+  **/
+  @ApiModelProperty(example = "null", value = "identifikace skriptu [persistentní položka]")
+  public String getScriptidentifystring() {
+    return scriptidentifystring;
+  }
+
+  public void setScriptidentifystring(String scriptidentifystring) {
+    this.scriptidentifystring = scriptidentifystring;
   }
 
 
@@ -358,28 +403,28 @@ public class Wlclosingrow   {
       return false;
     }
     Wlclosingrow wlclosingrow = (Wlclosingrow) o;
-    return Objects.equals(this.displayName, wlclosingrow.displayName) &&
-        Objects.equals(this.ID, wlclosingrow.ID) &&
-        Objects.equals(this.classID, wlclosingrow.classID) &&
-        Objects.equals(this.objVersion, wlclosingrow.objVersion) &&
-        Objects.equals(this.parentID, wlclosingrow.parentID) &&
-        Objects.equals(this.workerID, wlclosingrow.workerID) &&
-        Objects.equals(this.transferType, wlclosingrow.transferType) &&
-        Objects.equals(this.fieldCode, wlclosingrow.fieldCode) &&
-        Objects.equals(this.wageOperationID, wlclosingrow.wageOperationID) &&
-        Objects.equals(this.absenceID, wlclosingrow.absenceID) &&
-        Objects.equals(this.sickBenefitID, wlclosingrow.sickBenefitID) &&
-        Objects.equals(this.sickBenefitRowID, wlclosingrow.sickBenefitRowID) &&
-        Objects.equals(this.wageListPartialID, wlclosingrow.wageListPartialID) &&
-        Objects.equals(this.closedValue, wlclosingrow.closedValue) &&
-        Objects.equals(this.totalValue, wlclosingrow.totalValue) &&
-        Objects.equals(this.scriptParams, wlclosingrow.scriptParams) &&
-        Objects.equals(this.scriptIdentifyString, wlclosingrow.scriptIdentifyString);
+    return Objects.equals(this.displayname, wlclosingrow.displayname) &&
+        Objects.equals(this.id, wlclosingrow.id) &&
+        Objects.equals(this.classid, wlclosingrow.classid) &&
+        Objects.equals(this.objversion, wlclosingrow.objversion) &&
+        Objects.equals(this.parentId, wlclosingrow.parentId) &&
+        Objects.equals(this.workerId, wlclosingrow.workerId) &&
+        Objects.equals(this.transfertype, wlclosingrow.transfertype) &&
+        Objects.equals(this.fieldcode, wlclosingrow.fieldcode) &&
+        Objects.equals(this.wageoperationId, wlclosingrow.wageoperationId) &&
+        Objects.equals(this.absenceId, wlclosingrow.absenceId) &&
+        Objects.equals(this.sickbenefitId, wlclosingrow.sickbenefitId) &&
+        Objects.equals(this.sickbenefitrowId, wlclosingrow.sickbenefitrowId) &&
+        Objects.equals(this.wagelistpartialId, wlclosingrow.wagelistpartialId) &&
+        Objects.equals(this.closedvalue, wlclosingrow.closedvalue) &&
+        Objects.equals(this.totalvalue, wlclosingrow.totalvalue) &&
+        Objects.equals(this.scriptparams, wlclosingrow.scriptparams) &&
+        Objects.equals(this.scriptidentifystring, wlclosingrow.scriptidentifystring);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, workerID, transferType, fieldCode, wageOperationID, absenceID, sickBenefitID, sickBenefitRowID, wageListPartialID, closedValue, totalValue, scriptParams, scriptIdentifyString);
+    return Objects.hash(displayname, id, classid, objversion, parentId, workerId, transfertype, fieldcode, wageoperationId, absenceId, sickbenefitId, sickbenefitrowId, wagelistpartialId, closedvalue, totalvalue, scriptparams, scriptidentifystring);
   }
 
   @Override
@@ -387,23 +432,23 @@ public class Wlclosingrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wlclosingrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    workerID: ").append(toIndentedString(workerID)).append("\n");
-    sb.append("    transferType: ").append(toIndentedString(transferType)).append("\n");
-    sb.append("    fieldCode: ").append(toIndentedString(fieldCode)).append("\n");
-    sb.append("    wageOperationID: ").append(toIndentedString(wageOperationID)).append("\n");
-    sb.append("    absenceID: ").append(toIndentedString(absenceID)).append("\n");
-    sb.append("    sickBenefitID: ").append(toIndentedString(sickBenefitID)).append("\n");
-    sb.append("    sickBenefitRowID: ").append(toIndentedString(sickBenefitRowID)).append("\n");
-    sb.append("    wageListPartialID: ").append(toIndentedString(wageListPartialID)).append("\n");
-    sb.append("    closedValue: ").append(toIndentedString(closedValue)).append("\n");
-    sb.append("    totalValue: ").append(toIndentedString(totalValue)).append("\n");
-    sb.append("    scriptParams: ").append(toIndentedString(scriptParams)).append("\n");
-    sb.append("    scriptIdentifyString: ").append(toIndentedString(scriptIdentifyString)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    workerId: ").append(toIndentedString(workerId)).append("\n");
+    sb.append("    transfertype: ").append(toIndentedString(transfertype)).append("\n");
+    sb.append("    fieldcode: ").append(toIndentedString(fieldcode)).append("\n");
+    sb.append("    wageoperationId: ").append(toIndentedString(wageoperationId)).append("\n");
+    sb.append("    absenceId: ").append(toIndentedString(absenceId)).append("\n");
+    sb.append("    sickbenefitId: ").append(toIndentedString(sickbenefitId)).append("\n");
+    sb.append("    sickbenefitrowId: ").append(toIndentedString(sickbenefitrowId)).append("\n");
+    sb.append("    wagelistpartialId: ").append(toIndentedString(wagelistpartialId)).append("\n");
+    sb.append("    closedvalue: ").append(toIndentedString(closedvalue)).append("\n");
+    sb.append("    totalvalue: ").append(toIndentedString(totalvalue)).append("\n");
+    sb.append("    scriptparams: ").append(toIndentedString(scriptparams)).append("\n");
+    sb.append("    scriptidentifystring: ").append(toIndentedString(scriptidentifystring)).append("\n");
     sb.append("}");
     return sb.toString();
   }

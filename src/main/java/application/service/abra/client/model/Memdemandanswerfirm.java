@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,138 +34,174 @@ import java.util.Objects;
 /**
  * Memdemandanswerfirm
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Memdemandanswerfirm   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("FirmOffice_ID")
-  private String firmOfficeID = null;
+  @SerializedName("firmoffice_id")
+  private String firmofficeId = null;
 
-  @SerializedName("Person_ID")
-  private String personID = null;
+  @SerializedName("person_id")
+  private String personId = null;
 
-  @SerializedName("FirmOfficeName")
-  private String firmOfficeName = null;
+  @SerializedName("firmofficename")
+  private String firmofficename = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Memdemandanswerfirm firmID(String firmID) {
-    this.firmID = firmID;
+  public Memdemandanswerfirm displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Memdemandanswerfirm firmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public Memdemandanswerfirm id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Provozovna; ID objektu Provozovna [persistentní položka]
-   * @return firmOfficeID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna; ID objektu Provozovna [persistentní položka]")
-  public String getFirmOfficeID() {
-    return firmOfficeID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setFirmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Memdemandanswerfirm personID(String personID) {
-    this.personID = personID;
+  public Memdemandanswerfirm classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Osoba; ID objektu Osoba [persistentní položka]
-   * @return personID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Osoba; ID objektu Osoba [persistentní položka]")
-  public String getPersonID() {
-    return personID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPersonID(String personID) {
-    this.personID = personID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Memdemandanswerfirm firmOfficeName(String firmOfficeName) {
-    this.firmOfficeName = firmOfficeName;
+  public Memdemandanswerfirm objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Název provozovny
-   * @return firmOfficeName
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Název provozovny")
-  public String getFirmOfficeName() {
-    return firmOfficeName;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setFirmOfficeName(String firmOfficeName) {
-    this.firmOfficeName = firmOfficeName;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Memdemandanswerfirm firmId(String firmId) {
+    this.firmId = firmId;
+    return this;
+  }
+
+   /**
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
+  **/
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
+  }
+
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
+  }
+
+  public Memdemandanswerfirm firmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
+    return this;
+  }
+
+   /**
+   * provozovna; id objektu provozovna [persistentní položka]
+   * @return firmofficeId
+  **/
+  @ApiModelProperty(example = "null", value = "provozovna; id objektu provozovna [persistentní položka]")
+  public String getFirmofficeId() {
+    return firmofficeId;
+  }
+
+  public void setFirmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
+  }
+
+  public Memdemandanswerfirm personId(String personId) {
+    this.personId = personId;
+    return this;
+  }
+
+   /**
+   * osoba; id objektu osoba [persistentní položka]
+   * @return personId
+  **/
+  @ApiModelProperty(example = "null", value = "osoba; id objektu osoba [persistentní položka]")
+  public String getPersonId() {
+    return personId;
+  }
+
+  public void setPersonId(String personId) {
+    this.personId = personId;
+  }
+
+  public Memdemandanswerfirm firmofficename(String firmofficename) {
+    this.firmofficename = firmofficename;
+    return this;
+  }
+
+   /**
+   * název provozovny
+   * @return firmofficename
+  **/
+  @ApiModelProperty(example = "null", value = "název provozovny")
+  public String getFirmofficename() {
+    return firmofficename;
+  }
+
+  public void setFirmofficename(String firmofficename) {
+    this.firmofficename = firmofficename;
   }
 
 
@@ -178,19 +214,19 @@ public class Memdemandanswerfirm   {
       return false;
     }
     Memdemandanswerfirm memdemandanswerfirm = (Memdemandanswerfirm) o;
-    return Objects.equals(this.displayName, memdemandanswerfirm.displayName) &&
-        Objects.equals(this.ID, memdemandanswerfirm.ID) &&
-        Objects.equals(this.classID, memdemandanswerfirm.classID) &&
-        Objects.equals(this.objVersion, memdemandanswerfirm.objVersion) &&
-        Objects.equals(this.firmID, memdemandanswerfirm.firmID) &&
-        Objects.equals(this.firmOfficeID, memdemandanswerfirm.firmOfficeID) &&
-        Objects.equals(this.personID, memdemandanswerfirm.personID) &&
-        Objects.equals(this.firmOfficeName, memdemandanswerfirm.firmOfficeName);
+    return Objects.equals(this.displayname, memdemandanswerfirm.displayname) &&
+        Objects.equals(this.id, memdemandanswerfirm.id) &&
+        Objects.equals(this.classid, memdemandanswerfirm.classid) &&
+        Objects.equals(this.objversion, memdemandanswerfirm.objversion) &&
+        Objects.equals(this.firmId, memdemandanswerfirm.firmId) &&
+        Objects.equals(this.firmofficeId, memdemandanswerfirm.firmofficeId) &&
+        Objects.equals(this.personId, memdemandanswerfirm.personId) &&
+        Objects.equals(this.firmofficename, memdemandanswerfirm.firmofficename);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, firmID, firmOfficeID, personID, firmOfficeName);
+    return Objects.hash(displayname, id, classid, objversion, firmId, firmofficeId, personId, firmofficename);
   }
 
   @Override
@@ -198,14 +234,14 @@ public class Memdemandanswerfirm   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Memdemandanswerfirm {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    firmOfficeID: ").append(toIndentedString(firmOfficeID)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
-    sb.append("    firmOfficeName: ").append(toIndentedString(firmOfficeName)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    firmofficeId: ").append(toIndentedString(firmofficeId)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
+    sb.append("    firmofficename: ").append(toIndentedString(firmofficename)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,141 +35,177 @@ import java.util.Objects;
 /**
  * Plmjobordersnotice
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmjobordersnotice   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("JobOrder_ID")
-  private String jobOrderID = null;
+  @SerializedName("joborder_id")
+  private String joborderId = null;
 
-  @SerializedName("SN_ID")
-  private String SN_ID = null;
+  @SerializedName("sn_id")
+  private String snId = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("Created$DATE")
-  private DateTime createdDATE = null;
+  @SerializedName("created$date")
+  private DateTime createddate = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Plmjobordersnotice jobOrderID(String jobOrderID) {
-    this.jobOrderID = jobOrderID;
+  public Plmjobordersnotice displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Výrobní příkaz; ID objektu Výrobní příkaz [persistentní položka]
-   * @return jobOrderID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Výrobní příkaz; ID objektu Výrobní příkaz [persistentní položka]")
-  public String getJobOrderID() {
-    return jobOrderID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setJobOrderID(String jobOrderID) {
-    this.jobOrderID = jobOrderID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Plmjobordersnotice SN_ID(String SN_ID) {
-    this.SN_ID = SN_ID;
+  public Plmjobordersnotice id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Výrobek; ID objektu VP - sériové číslo [persistentní položka]
-   * @return SN_ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Výrobek; ID objektu VP - sériové číslo [persistentní položka]")
-  public String getSNID() {
-    return SN_ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setSNID(String SN_ID) {
-    this.SN_ID = SN_ID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Plmjobordersnotice createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Plmjobordersnotice classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Plmjobordersnotice createdDATE(DateTime createdDATE) {
-    this.createdDATE = createdDATE;
+  public Plmjobordersnotice objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Vytvořeno [persistentní položka]
-   * @return createdDATE
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořeno [persistentní položka]")
-  public DateTime getCreatedDATE() {
-    return createdDATE;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setCreatedDATE(DateTime createdDATE) {
-    this.createdDATE = createdDATE;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Plmjobordersnotice joborderId(String joborderId) {
+    this.joborderId = joborderId;
+    return this;
+  }
+
+   /**
+   * výrobní příkaz; id objektu výrobní příkaz [persistentní položka]
+   * @return joborderId
+  **/
+  @ApiModelProperty(example = "null", value = "výrobní příkaz; id objektu výrobní příkaz [persistentní položka]")
+  public String getJoborderId() {
+    return joborderId;
+  }
+
+  public void setJoborderId(String joborderId) {
+    this.joborderId = joborderId;
+  }
+
+  public Plmjobordersnotice snId(String snId) {
+    this.snId = snId;
+    return this;
+  }
+
+   /**
+   * výrobek; id objektu vp - sériové číslo [persistentní položka]
+   * @return snId
+  **/
+  @ApiModelProperty(example = "null", value = "výrobek; id objektu vp - sériové číslo [persistentní položka]")
+  public String getSnId() {
+    return snId;
+  }
+
+  public void setSnId(String snId) {
+    this.snId = snId;
+  }
+
+  public Plmjobordersnotice createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+    return this;
+  }
+
+   /**
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
+  }
+
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Plmjobordersnotice createddate(DateTime createddate) {
+    this.createddate = createddate;
+    return this;
+  }
+
+   /**
+   * vytvořeno [persistentní položka]
+   * @return createddate
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořeno [persistentní položka]")
+  public DateTime getCreateddate() {
+    return createddate;
+  }
+
+  public void setCreateddate(DateTime createddate) {
+    this.createddate = createddate;
   }
 
   public Plmjobordersnotice note(String note) {
@@ -178,10 +214,10 @@ public class Plmjobordersnotice   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -200,20 +236,20 @@ public class Plmjobordersnotice   {
       return false;
     }
     Plmjobordersnotice plmjobordersnotice = (Plmjobordersnotice) o;
-    return Objects.equals(this.displayName, plmjobordersnotice.displayName) &&
-        Objects.equals(this.ID, plmjobordersnotice.ID) &&
-        Objects.equals(this.classID, plmjobordersnotice.classID) &&
-        Objects.equals(this.objVersion, plmjobordersnotice.objVersion) &&
-        Objects.equals(this.jobOrderID, plmjobordersnotice.jobOrderID) &&
-        Objects.equals(this.SN_ID, plmjobordersnotice.SN_ID) &&
-        Objects.equals(this.createdByID, plmjobordersnotice.createdByID) &&
-        Objects.equals(this.createdDATE, plmjobordersnotice.createdDATE) &&
+    return Objects.equals(this.displayname, plmjobordersnotice.displayname) &&
+        Objects.equals(this.id, plmjobordersnotice.id) &&
+        Objects.equals(this.classid, plmjobordersnotice.classid) &&
+        Objects.equals(this.objversion, plmjobordersnotice.objversion) &&
+        Objects.equals(this.joborderId, plmjobordersnotice.joborderId) &&
+        Objects.equals(this.snId, plmjobordersnotice.snId) &&
+        Objects.equals(this.createdbyId, plmjobordersnotice.createdbyId) &&
+        Objects.equals(this.createddate, plmjobordersnotice.createddate) &&
         Objects.equals(this.note, plmjobordersnotice.note);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, jobOrderID, SN_ID, createdByID, createdDATE, note);
+    return Objects.hash(displayname, id, classid, objversion, joborderId, snId, createdbyId, createddate, note);
   }
 
   @Override
@@ -221,14 +257,14 @@ public class Plmjobordersnotice   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmjobordersnotice {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    jobOrderID: ").append(toIndentedString(jobOrderID)).append("\n");
-    sb.append("    SN_ID: ").append(toIndentedString(SN_ID)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    createdDATE: ").append(toIndentedString(createdDATE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    joborderId: ").append(toIndentedString(joborderId)).append("\n");
+    sb.append("    snId: ").append(toIndentedString(snId)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    createddate: ").append(toIndentedString(createddate)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
     sb.append("}");
     return sb.toString();

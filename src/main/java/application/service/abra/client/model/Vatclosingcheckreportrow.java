@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,654 +35,699 @@ import java.util.Objects;
 /**
  * Vatclosingcheckreportrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Vatclosingcheckreportrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("SectionID")
-  private String sectionID = null;
+  @SerializedName("sectionid")
+  private String sectionid = null;
 
-  @SerializedName("DocumentType")
-  private String documentType = null;
+  @SerializedName("documenttype")
+  private String documenttype = null;
 
-  @SerializedName("Document_ID")
-  private String documentID = null;
+  @SerializedName("document_id")
+  private String documentId = null;
 
-  @SerializedName("DocNumber")
-  private String docNumber = null;
+  @SerializedName("docnumber")
+  private String docnumber = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("VATIdentNumber")
-  private String vATIdentNumber = null;
+  @SerializedName("vatidentnumber")
+  private String vatidentnumber = null;
 
-  @SerializedName("VATDate$DATE")
-  private DateTime vATDateDATE = null;
+  @SerializedName("vatdate$date")
+  private DateTime vatdatedate = null;
 
-  @SerializedName("SourceDocType")
-  private String sourceDocType = null;
+  @SerializedName("sourcedoctype")
+  private String sourcedoctype = null;
 
-  @SerializedName("Source_ID")
-  private String sourceID = null;
+  @SerializedName("source_id")
+  private String sourceId = null;
 
-  @SerializedName("SourceDocNumber")
-  private String sourceDocNumber = null;
+  @SerializedName("sourcedocnumber")
+  private String sourcedocnumber = null;
 
-  @SerializedName("VATRate")
-  private Double vATRate = null;
+  @SerializedName("vatrate")
+  private Double vatrate = null;
 
-  @SerializedName("BaseAmount")
-  private Double baseAmount = null;
+  @SerializedName("baseamount")
+  private Double baseamount = null;
 
-  @SerializedName("VATAmount")
-  private Double vATAmount = null;
+  @SerializedName("vatamount")
+  private Double vatamount = null;
 
-  @SerializedName("AllowanceAmount")
-  private Double allowanceAmount = null;
+  @SerializedName("allowanceamount")
+  private Double allowanceamount = null;
 
-  @SerializedName("DRCCode")
-  private String dRCCode = null;
+  @SerializedName("drccode")
+  private String drccode = null;
 
-  @SerializedName("DRCQuantity")
-  private Double dRCQuantity = null;
+  @SerializedName("drcquantity")
+  private Double drcquantity = null;
 
-  @SerializedName("DRCQUnit")
-  private String dRCQUnit = null;
+  @SerializedName("drcqunit")
+  private String drcqunit = null;
 
-  @SerializedName("DRC_ID")
-  private String DRC_ID = null;
+  @SerializedName("drc_id")
+  private String drcId = null;
 
-  @SerializedName("DefinitionRow_ID")
-  private String definitionRowID = null;
+  @SerializedName("definitionrow_id")
+  private String definitionrowId = null;
 
-  @SerializedName("TaxLineNumber")
-  private String taxLineNumber = null;
+  @SerializedName("taxlinenumber")
+  private String taxlinenumber = null;
 
-  @SerializedName("VATReportMode")
-  private String vATReportMode = null;
+  @SerializedName("vatreportmode")
+  private String vatreportmode = null;
 
-  @SerializedName("SortDocNumber")
-  private String sortDocNumber = null;
+  @SerializedName("sortdocnumber")
+  private String sortdocnumber = null;
 
-  @SerializedName("CorrectionCode")
-  private String correctionCode = null;
+  @SerializedName("correctioncode")
+  private String correctioncode = null;
 
-  @SerializedName("BaseAmountLow")
-  private Double baseAmountLow = null;
+  @SerializedName("baseamountlow")
+  private Double baseamountlow = null;
 
-  @SerializedName("VATAmountLow")
-  private Double vATAmountLow = null;
+  @SerializedName("vatamountlow")
+  private Double vatamountlow = null;
 
-  @SerializedName("TurnoverAmount")
-  private Double turnoverAmount = null;
+  @SerializedName("turnoveramount")
+  private Double turnoveramount = null;
 
-  @SerializedName("VATRate_ID")
-  private String vATRateID = null;
+  @SerializedName("vatrate_id")
+  private String vatrateId = null;
 
-  @SerializedName("Person_ID")
-  private String personID = null;
+  @SerializedName("person_id")
+  private String personId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Uzávěrka DPH [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Uzávěrka DPH [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Vatclosingcheckreportrow sectionID(String sectionID) {
-    this.sectionID = sectionID;
+  public Vatclosingcheckreportrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Oddíl [persistentní položka]
-   * @return sectionID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Oddíl [persistentní položka]")
-  public String getSectionID() {
-    return sectionID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setSectionID(String sectionID) {
-    this.sectionID = sectionID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Vatclosingcheckreportrow documentType(String documentType) {
-    this.documentType = documentType;
+  public Vatclosingcheckreportrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Typ dokladu [persistentní položka]
-   * @return documentType
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Typ dokladu [persistentní položka]")
-  public String getDocumentType() {
-    return documentType;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDocumentType(String documentType) {
-    this.documentType = documentType;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Vatclosingcheckreportrow documentID(String documentID) {
-    this.documentID = documentID;
+  public Vatclosingcheckreportrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * ID dokladu; ID objektu Dokument [persistentní položka]
-   * @return documentID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu; ID objektu Dokument [persistentní položka]")
-  public String getDocumentID() {
-    return documentID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setDocumentID(String documentID) {
-    this.documentID = documentID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Vatclosingcheckreportrow docNumber(String docNumber) {
-    this.docNumber = docNumber;
+  public Vatclosingcheckreportrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Vatclosingcheckreportrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu uzávěrka dph [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu uzávěrka dph [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Vatclosingcheckreportrow sectionid(String sectionid) {
+    this.sectionid = sectionid;
+    return this;
+  }
+
+   /**
+   * oddíl [persistentní položka]
+   * @return sectionid
+  **/
+  @ApiModelProperty(example = "null", value = "oddíl [persistentní položka]")
+  public String getSectionid() {
+    return sectionid;
+  }
+
+  public void setSectionid(String sectionid) {
+    this.sectionid = sectionid;
+  }
+
+  public Vatclosingcheckreportrow documenttype(String documenttype) {
+    this.documenttype = documenttype;
+    return this;
+  }
+
+   /**
+   * typ dokladu [persistentní položka]
+   * @return documenttype
+  **/
+  @ApiModelProperty(example = "null", value = "typ dokladu [persistentní položka]")
+  public String getDocumenttype() {
+    return documenttype;
+  }
+
+  public void setDocumenttype(String documenttype) {
+    this.documenttype = documenttype;
+  }
+
+  public Vatclosingcheckreportrow documentId(String documentId) {
+    this.documentId = documentId;
+    return this;
+  }
+
+   /**
+   * id dokladu; id objektu dokument [persistentní položka]
+   * @return documentId
+  **/
+  @ApiModelProperty(example = "null", value = "id dokladu; id objektu dokument [persistentní položka]")
+  public String getDocumentId() {
+    return documentId;
+  }
+
+  public void setDocumentId(String documentId) {
+    this.documentId = documentId;
+  }
+
+  public Vatclosingcheckreportrow docnumber(String docnumber) {
+    this.docnumber = docnumber;
     return this;
   }
 
    /**
    * Číslo dokladu [persistentní položka]
-   * @return docNumber
+   * @return docnumber
   **/
   @ApiModelProperty(example = "null", value = "Číslo dokladu [persistentní položka]")
-  public String getDocNumber() {
-    return docNumber;
+  public String getDocnumber() {
+    return docnumber;
   }
 
-  public void setDocNumber(String docNumber) {
-    this.docNumber = docNumber;
+  public void setDocnumber(String docnumber) {
+    this.docnumber = docnumber;
   }
 
-  public Vatclosingcheckreportrow firmID(String firmID) {
-    this.firmID = firmID;
+  public Vatclosingcheckreportrow firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Vatclosingcheckreportrow vATIdentNumber(String vATIdentNumber) {
-    this.vATIdentNumber = vATIdentNumber;
+  public Vatclosingcheckreportrow vatidentnumber(String vatidentnumber) {
+    this.vatidentnumber = vatidentnumber;
     return this;
   }
 
    /**
-   * DIČ [persistentní položka]
-   * @return vATIdentNumber
+   * diČ [persistentní položka]
+   * @return vatidentnumber
   **/
-  @ApiModelProperty(example = "null", value = "DIČ [persistentní položka]")
-  public String getVATIdentNumber() {
-    return vATIdentNumber;
+  @ApiModelProperty(example = "null", value = "diČ [persistentní položka]")
+  public String getVatidentnumber() {
+    return vatidentnumber;
   }
 
-  public void setVATIdentNumber(String vATIdentNumber) {
-    this.vATIdentNumber = vATIdentNumber;
+  public void setVatidentnumber(String vatidentnumber) {
+    this.vatidentnumber = vatidentnumber;
   }
 
-  public Vatclosingcheckreportrow vATDateDATE(DateTime vATDateDATE) {
-    this.vATDateDATE = vATDateDATE;
+  public Vatclosingcheckreportrow vatdatedate(DateTime vatdatedate) {
+    this.vatdatedate = vatdatedate;
     return this;
   }
 
    /**
-   * Datum DPH [persistentní položka]
-   * @return vATDateDATE
+   * datum dph [persistentní položka]
+   * @return vatdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum DPH [persistentní položka]")
-  public DateTime getVATDateDATE() {
-    return vATDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dph [persistentní položka]")
+  public DateTime getVatdatedate() {
+    return vatdatedate;
   }
 
-  public void setVATDateDATE(DateTime vATDateDATE) {
-    this.vATDateDATE = vATDateDATE;
+  public void setVatdatedate(DateTime vatdatedate) {
+    this.vatdatedate = vatdatedate;
   }
 
-  public Vatclosingcheckreportrow sourceDocType(String sourceDocType) {
-    this.sourceDocType = sourceDocType;
+  public Vatclosingcheckreportrow sourcedoctype(String sourcedoctype) {
+    this.sourcedoctype = sourcedoctype;
     return this;
   }
 
    /**
-   * Typ zdrojového dokladu [persistentní položka]
-   * @return sourceDocType
+   * typ zdrojového dokladu [persistentní položka]
+   * @return sourcedoctype
   **/
-  @ApiModelProperty(example = "null", value = "Typ zdrojového dokladu [persistentní položka]")
-  public String getSourceDocType() {
-    return sourceDocType;
+  @ApiModelProperty(example = "null", value = "typ zdrojového dokladu [persistentní položka]")
+  public String getSourcedoctype() {
+    return sourcedoctype;
   }
 
-  public void setSourceDocType(String sourceDocType) {
-    this.sourceDocType = sourceDocType;
+  public void setSourcedoctype(String sourcedoctype) {
+    this.sourcedoctype = sourcedoctype;
   }
 
-  public Vatclosingcheckreportrow sourceID(String sourceID) {
-    this.sourceID = sourceID;
+  public Vatclosingcheckreportrow sourceId(String sourceId) {
+    this.sourceId = sourceId;
     return this;
   }
 
    /**
-   * Zdrojový doklad; ID objektu Dokument [persistentní položka]
-   * @return sourceID
+   * zdrojový doklad; id objektu dokument [persistentní položka]
+   * @return sourceId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojový doklad; ID objektu Dokument [persistentní položka]")
-  public String getSourceID() {
-    return sourceID;
+  @ApiModelProperty(example = "null", value = "zdrojový doklad; id objektu dokument [persistentní položka]")
+  public String getSourceId() {
+    return sourceId;
   }
 
-  public void setSourceID(String sourceID) {
-    this.sourceID = sourceID;
+  public void setSourceId(String sourceId) {
+    this.sourceId = sourceId;
   }
 
-  public Vatclosingcheckreportrow sourceDocNumber(String sourceDocNumber) {
-    this.sourceDocNumber = sourceDocNumber;
+  public Vatclosingcheckreportrow sourcedocnumber(String sourcedocnumber) {
+    this.sourcedocnumber = sourcedocnumber;
     return this;
   }
 
    /**
    * Číslo zdrojového dokladu [persistentní položka]
-   * @return sourceDocNumber
+   * @return sourcedocnumber
   **/
   @ApiModelProperty(example = "null", value = "Číslo zdrojového dokladu [persistentní položka]")
-  public String getSourceDocNumber() {
-    return sourceDocNumber;
+  public String getSourcedocnumber() {
+    return sourcedocnumber;
   }
 
-  public void setSourceDocNumber(String sourceDocNumber) {
-    this.sourceDocNumber = sourceDocNumber;
+  public void setSourcedocnumber(String sourcedocnumber) {
+    this.sourcedocnumber = sourcedocnumber;
   }
 
-  public Vatclosingcheckreportrow vATRate(Double vATRate) {
-    this.vATRate = vATRate;
+  public Vatclosingcheckreportrow vatrate(Double vatrate) {
+    this.vatrate = vatrate;
     return this;
   }
 
    /**
-   * DPH sazba [persistentní položka]
-   * @return vATRate
+   * dph sazba [persistentní položka]
+   * @return vatrate
   **/
-  @ApiModelProperty(example = "null", value = "DPH sazba [persistentní položka]")
-  public Double getVATRate() {
-    return vATRate;
+  @ApiModelProperty(example = "null", value = "dph sazba [persistentní položka]")
+  public Double getVatrate() {
+    return vatrate;
   }
 
-  public void setVATRate(Double vATRate) {
-    this.vATRate = vATRate;
+  public void setVatrate(Double vatrate) {
+    this.vatrate = vatrate;
   }
 
-  public Vatclosingcheckreportrow baseAmount(Double baseAmount) {
-    this.baseAmount = baseAmount;
+  public Vatclosingcheckreportrow baseamount(Double baseamount) {
+    this.baseamount = baseamount;
     return this;
   }
 
    /**
-   * Základ [persistentní položka]
-   * @return baseAmount
+   * základ [persistentní položka]
+   * @return baseamount
   **/
-  @ApiModelProperty(example = "null", value = "Základ [persistentní položka]")
-  public Double getBaseAmount() {
-    return baseAmount;
+  @ApiModelProperty(example = "null", value = "základ [persistentní položka]")
+  public Double getBaseamount() {
+    return baseamount;
   }
 
-  public void setBaseAmount(Double baseAmount) {
-    this.baseAmount = baseAmount;
+  public void setBaseamount(Double baseamount) {
+    this.baseamount = baseamount;
   }
 
-  public Vatclosingcheckreportrow vATAmount(Double vATAmount) {
-    this.vATAmount = vATAmount;
+  public Vatclosingcheckreportrow vatamount(Double vatamount) {
+    this.vatamount = vatamount;
     return this;
   }
 
    /**
-   * DPH [persistentní položka]
-   * @return vATAmount
+   * dph [persistentní položka]
+   * @return vatamount
   **/
-  @ApiModelProperty(example = "null", value = "DPH [persistentní položka]")
-  public Double getVATAmount() {
-    return vATAmount;
+  @ApiModelProperty(example = "null", value = "dph [persistentní položka]")
+  public Double getVatamount() {
+    return vatamount;
   }
 
-  public void setVATAmount(Double vATAmount) {
-    this.vATAmount = vATAmount;
+  public void setVatamount(Double vatamount) {
+    this.vatamount = vatamount;
   }
 
-  public Vatclosingcheckreportrow allowanceAmount(Double allowanceAmount) {
-    this.allowanceAmount = allowanceAmount;
+  public Vatclosingcheckreportrow allowanceamount(Double allowanceamount) {
+    this.allowanceamount = allowanceamount;
     return this;
   }
 
    /**
-   * Odpočet [persistentní položka]
-   * @return allowanceAmount
+   * odpočet [persistentní položka]
+   * @return allowanceamount
   **/
-  @ApiModelProperty(example = "null", value = "Odpočet [persistentní položka]")
-  public Double getAllowanceAmount() {
-    return allowanceAmount;
+  @ApiModelProperty(example = "null", value = "odpočet [persistentní položka]")
+  public Double getAllowanceamount() {
+    return allowanceamount;
   }
 
-  public void setAllowanceAmount(Double allowanceAmount) {
-    this.allowanceAmount = allowanceAmount;
+  public void setAllowanceamount(Double allowanceamount) {
+    this.allowanceamount = allowanceamount;
   }
 
-  public Vatclosingcheckreportrow dRCCode(String dRCCode) {
-    this.dRCCode = dRCCode;
+  public Vatclosingcheckreportrow drccode(String drccode) {
+    this.drccode = drccode;
     return this;
   }
 
    /**
-   * DRC kód [persistentní položka]
-   * @return dRCCode
+   * drc kód [persistentní položka]
+   * @return drccode
   **/
-  @ApiModelProperty(example = "null", value = "DRC kód [persistentní položka]")
-  public String getDRCCode() {
-    return dRCCode;
+  @ApiModelProperty(example = "null", value = "drc kód [persistentní položka]")
+  public String getDrccode() {
+    return drccode;
   }
 
-  public void setDRCCode(String dRCCode) {
-    this.dRCCode = dRCCode;
+  public void setDrccode(String drccode) {
+    this.drccode = drccode;
   }
 
-  public Vatclosingcheckreportrow dRCQuantity(Double dRCQuantity) {
-    this.dRCQuantity = dRCQuantity;
+  public Vatclosingcheckreportrow drcquantity(Double drcquantity) {
+    this.drcquantity = drcquantity;
     return this;
   }
 
    /**
-   * DRC množství [persistentní položka]
-   * @return dRCQuantity
+   * drc množství [persistentní položka]
+   * @return drcquantity
   **/
-  @ApiModelProperty(example = "null", value = "DRC množství [persistentní položka]")
-  public Double getDRCQuantity() {
-    return dRCQuantity;
+  @ApiModelProperty(example = "null", value = "drc množství [persistentní položka]")
+  public Double getDrcquantity() {
+    return drcquantity;
   }
 
-  public void setDRCQuantity(Double dRCQuantity) {
-    this.dRCQuantity = dRCQuantity;
+  public void setDrcquantity(Double drcquantity) {
+    this.drcquantity = drcquantity;
   }
 
-  public Vatclosingcheckreportrow dRCQUnit(String dRCQUnit) {
-    this.dRCQUnit = dRCQUnit;
+  public Vatclosingcheckreportrow drcqunit(String drcqunit) {
+    this.drcqunit = drcqunit;
     return this;
   }
 
    /**
-   * DRC jednotka [persistentní položka]
-   * @return dRCQUnit
+   * drc jednotka [persistentní položka]
+   * @return drcqunit
   **/
-  @ApiModelProperty(example = "null", value = "DRC jednotka [persistentní položka]")
-  public String getDRCQUnit() {
-    return dRCQUnit;
+  @ApiModelProperty(example = "null", value = "drc jednotka [persistentní položka]")
+  public String getDrcqunit() {
+    return drcqunit;
   }
 
-  public void setDRCQUnit(String dRCQUnit) {
-    this.dRCQUnit = dRCQUnit;
+  public void setDrcqunit(String drcqunit) {
+    this.drcqunit = drcqunit;
   }
 
-  public Vatclosingcheckreportrow DRC_ID(String DRC_ID) {
-    this.DRC_ID = DRC_ID;
+  public Vatclosingcheckreportrow drcId(String drcId) {
+    this.drcId = drcId;
     return this;
   }
 
    /**
-   * DRC ID; ID objektu Kód typu plnění [persistentní položka]
-   * @return DRC_ID
+   * drc id; id objektu kód typu plnění [persistentní položka]
+   * @return drcId
   **/
-  @ApiModelProperty(example = "null", value = "DRC ID; ID objektu Kód typu plnění [persistentní položka]")
-  public String getDRCID() {
-    return DRC_ID;
+  @ApiModelProperty(example = "null", value = "drc id; id objektu kód typu plnění [persistentní položka]")
+  public String getDrcId() {
+    return drcId;
   }
 
-  public void setDRCID(String DRC_ID) {
-    this.DRC_ID = DRC_ID;
+  public void setDrcId(String drcId) {
+    this.drcId = drcId;
   }
 
-  public Vatclosingcheckreportrow definitionRowID(String definitionRowID) {
-    this.definitionRowID = definitionRowID;
+  public Vatclosingcheckreportrow definitionrowId(String definitionrowId) {
+    this.definitionrowId = definitionrowId;
     return this;
   }
 
    /**
-   * ID řádku definice DPH; ID objektu Definice pro DPH přiznání - řádek [persistentní položka]
-   * @return definitionRowID
+   * id řádku definice dph; id objektu definice pro dph přiznání - řádek [persistentní položka]
+   * @return definitionrowId
   **/
-  @ApiModelProperty(example = "null", value = "ID řádku definice DPH; ID objektu Definice pro DPH přiznání - řádek [persistentní položka]")
-  public String getDefinitionRowID() {
-    return definitionRowID;
+  @ApiModelProperty(example = "null", value = "id řádku definice dph; id objektu definice pro dph přiznání - řádek [persistentní položka]")
+  public String getDefinitionrowId() {
+    return definitionrowId;
   }
 
-  public void setDefinitionRowID(String definitionRowID) {
-    this.definitionRowID = definitionRowID;
+  public void setDefinitionrowId(String definitionrowId) {
+    this.definitionrowId = definitionrowId;
   }
 
-  public Vatclosingcheckreportrow taxLineNumber(String taxLineNumber) {
-    this.taxLineNumber = taxLineNumber;
+  public Vatclosingcheckreportrow taxlinenumber(String taxlinenumber) {
+    this.taxlinenumber = taxlinenumber;
     return this;
   }
 
    /**
-   * Číslo řádku přiznání DPH [persistentní položka]
-   * @return taxLineNumber
+   * Číslo řádku přiznání dph [persistentní položka]
+   * @return taxlinenumber
   **/
-  @ApiModelProperty(example = "null", value = "Číslo řádku přiznání DPH [persistentní položka]")
-  public String getTaxLineNumber() {
-    return taxLineNumber;
+  @ApiModelProperty(example = "null", value = "Číslo řádku přiznání dph [persistentní položka]")
+  public String getTaxlinenumber() {
+    return taxlinenumber;
   }
 
-  public void setTaxLineNumber(String taxLineNumber) {
-    this.taxLineNumber = taxLineNumber;
+  public void setTaxlinenumber(String taxlinenumber) {
+    this.taxlinenumber = taxlinenumber;
   }
 
-  public Vatclosingcheckreportrow vATReportMode(String vATReportMode) {
-    this.vATReportMode = vATReportMode;
+  public Vatclosingcheckreportrow vatreportmode(String vatreportmode) {
+    this.vatreportmode = vatreportmode;
     return this;
   }
 
    /**
-   * Příznak KV/KH DPH [persistentní položka]
-   * @return vATReportMode
+   * příznak kv/kh dph [persistentní položka]
+   * @return vatreportmode
   **/
-  @ApiModelProperty(example = "null", value = "Příznak KV/KH DPH [persistentní položka]")
-  public String getVATReportMode() {
-    return vATReportMode;
+  @ApiModelProperty(example = "null", value = "příznak kv/kh dph [persistentní položka]")
+  public String getVatreportmode() {
+    return vatreportmode;
   }
 
-  public void setVATReportMode(String vATReportMode) {
-    this.vATReportMode = vATReportMode;
+  public void setVatreportmode(String vatreportmode) {
+    this.vatreportmode = vatreportmode;
   }
 
-  public Vatclosingcheckreportrow sortDocNumber(String sortDocNumber) {
-    this.sortDocNumber = sortDocNumber;
+  public Vatclosingcheckreportrow sortdocnumber(String sortdocnumber) {
+    this.sortdocnumber = sortdocnumber;
     return this;
   }
 
    /**
    * Číslo dokladu pro třídění [persistentní položka]
-   * @return sortDocNumber
+   * @return sortdocnumber
   **/
   @ApiModelProperty(example = "null", value = "Číslo dokladu pro třídění [persistentní položka]")
-  public String getSortDocNumber() {
-    return sortDocNumber;
+  public String getSortdocnumber() {
+    return sortdocnumber;
   }
 
-  public void setSortDocNumber(String sortDocNumber) {
-    this.sortDocNumber = sortDocNumber;
+  public void setSortdocnumber(String sortdocnumber) {
+    this.sortdocnumber = sortdocnumber;
   }
 
-  public Vatclosingcheckreportrow correctionCode(String correctionCode) {
-    this.correctionCode = correctionCode;
+  public Vatclosingcheckreportrow correctioncode(String correctioncode) {
+    this.correctioncode = correctioncode;
     return this;
   }
 
    /**
-   * Kód korekce [persistentní položka]
-   * @return correctionCode
+   * kód korekce [persistentní položka]
+   * @return correctioncode
   **/
-  @ApiModelProperty(example = "null", value = "Kód korekce [persistentní položka]")
-  public String getCorrectionCode() {
-    return correctionCode;
+  @ApiModelProperty(example = "null", value = "kód korekce [persistentní položka]")
+  public String getCorrectioncode() {
+    return correctioncode;
   }
 
-  public void setCorrectionCode(String correctionCode) {
-    this.correctionCode = correctionCode;
+  public void setCorrectioncode(String correctioncode) {
+    this.correctioncode = correctioncode;
   }
 
-  public Vatclosingcheckreportrow baseAmountLow(Double baseAmountLow) {
-    this.baseAmountLow = baseAmountLow;
+  public Vatclosingcheckreportrow baseamountlow(Double baseamountlow) {
+    this.baseamountlow = baseamountlow;
     return this;
   }
 
    /**
-   * Základ v nižší sazbě [persistentní položka]
-   * @return baseAmountLow
+   * základ v nižší sazbě [persistentní položka]
+   * @return baseamountlow
   **/
-  @ApiModelProperty(example = "null", value = "Základ v nižší sazbě [persistentní položka]")
-  public Double getBaseAmountLow() {
-    return baseAmountLow;
+  @ApiModelProperty(example = "null", value = "základ v nižší sazbě [persistentní položka]")
+  public Double getBaseamountlow() {
+    return baseamountlow;
   }
 
-  public void setBaseAmountLow(Double baseAmountLow) {
-    this.baseAmountLow = baseAmountLow;
+  public void setBaseamountlow(Double baseamountlow) {
+    this.baseamountlow = baseamountlow;
   }
 
-  public Vatclosingcheckreportrow vATAmountLow(Double vATAmountLow) {
-    this.vATAmountLow = vATAmountLow;
+  public Vatclosingcheckreportrow vatamountlow(Double vatamountlow) {
+    this.vatamountlow = vatamountlow;
     return this;
   }
 
    /**
-   * DPH v nižší sazbě [persistentní položka]
-   * @return vATAmountLow
+   * dph v nižší sazbě [persistentní položka]
+   * @return vatamountlow
   **/
-  @ApiModelProperty(example = "null", value = "DPH v nižší sazbě [persistentní položka]")
-  public Double getVATAmountLow() {
-    return vATAmountLow;
+  @ApiModelProperty(example = "null", value = "dph v nižší sazbě [persistentní položka]")
+  public Double getVatamountlow() {
+    return vatamountlow;
   }
 
-  public void setVATAmountLow(Double vATAmountLow) {
-    this.vATAmountLow = vATAmountLow;
+  public void setVatamountlow(Double vatamountlow) {
+    this.vatamountlow = vatamountlow;
   }
 
-  public Vatclosingcheckreportrow turnoverAmount(Double turnoverAmount) {
-    this.turnoverAmount = turnoverAmount;
+  public Vatclosingcheckreportrow turnoveramount(Double turnoveramount) {
+    this.turnoveramount = turnoveramount;
     return this;
   }
 
    /**
-   * Obrat [persistentní položka]
-   * @return turnoverAmount
+   * obrat [persistentní položka]
+   * @return turnoveramount
   **/
-  @ApiModelProperty(example = "null", value = "Obrat [persistentní položka]")
-  public Double getTurnoverAmount() {
-    return turnoverAmount;
+  @ApiModelProperty(example = "null", value = "obrat [persistentní položka]")
+  public Double getTurnoveramount() {
+    return turnoveramount;
   }
 
-  public void setTurnoverAmount(Double turnoverAmount) {
-    this.turnoverAmount = turnoverAmount;
+  public void setTurnoveramount(Double turnoveramount) {
+    this.turnoveramount = turnoveramount;
   }
 
-  public Vatclosingcheckreportrow vATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public Vatclosingcheckreportrow vatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
     return this;
   }
 
    /**
-   * ID DPH sazby; ID objektu DPH sazba [persistentní položka]
-   * @return vATRateID
+   * id dph sazby; id objektu dph sazba [persistentní položka]
+   * @return vatrateId
   **/
-  @ApiModelProperty(example = "null", value = "ID DPH sazby; ID objektu DPH sazba [persistentní položka]")
-  public String getVATRateID() {
-    return vATRateID;
+  @ApiModelProperty(example = "null", value = "id dph sazby; id objektu dph sazba [persistentní položka]")
+  public String getVatrateId() {
+    return vatrateId;
   }
 
-  public void setVATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public void setVatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
   }
 
-  public Vatclosingcheckreportrow personID(String personID) {
-    this.personID = personID;
+  public Vatclosingcheckreportrow personId(String personId) {
+    this.personId = personId;
     return this;
   }
 
    /**
-   * Osoba; ID objektu Osoba
-   * @return personID
+   * osoba; id objektu osoba
+   * @return personId
   **/
-  @ApiModelProperty(example = "null", value = "Osoba; ID objektu Osoba")
-  public String getPersonID() {
-    return personID;
+  @ApiModelProperty(example = "null", value = "osoba; id objektu osoba")
+  public String getPersonId() {
+    return personId;
   }
 
-  public void setPersonID(String personID) {
-    this.personID = personID;
+  public void setPersonId(String personId) {
+    this.personId = personId;
   }
 
 
@@ -695,44 +740,44 @@ public class Vatclosingcheckreportrow   {
       return false;
     }
     Vatclosingcheckreportrow vatclosingcheckreportrow = (Vatclosingcheckreportrow) o;
-    return Objects.equals(this.displayName, vatclosingcheckreportrow.displayName) &&
-        Objects.equals(this.ID, vatclosingcheckreportrow.ID) &&
-        Objects.equals(this.classID, vatclosingcheckreportrow.classID) &&
-        Objects.equals(this.objVersion, vatclosingcheckreportrow.objVersion) &&
-        Objects.equals(this.parentID, vatclosingcheckreportrow.parentID) &&
-        Objects.equals(this.sectionID, vatclosingcheckreportrow.sectionID) &&
-        Objects.equals(this.documentType, vatclosingcheckreportrow.documentType) &&
-        Objects.equals(this.documentID, vatclosingcheckreportrow.documentID) &&
-        Objects.equals(this.docNumber, vatclosingcheckreportrow.docNumber) &&
-        Objects.equals(this.firmID, vatclosingcheckreportrow.firmID) &&
-        Objects.equals(this.vATIdentNumber, vatclosingcheckreportrow.vATIdentNumber) &&
-        Objects.equals(this.vATDateDATE, vatclosingcheckreportrow.vATDateDATE) &&
-        Objects.equals(this.sourceDocType, vatclosingcheckreportrow.sourceDocType) &&
-        Objects.equals(this.sourceID, vatclosingcheckreportrow.sourceID) &&
-        Objects.equals(this.sourceDocNumber, vatclosingcheckreportrow.sourceDocNumber) &&
-        Objects.equals(this.vATRate, vatclosingcheckreportrow.vATRate) &&
-        Objects.equals(this.baseAmount, vatclosingcheckreportrow.baseAmount) &&
-        Objects.equals(this.vATAmount, vatclosingcheckreportrow.vATAmount) &&
-        Objects.equals(this.allowanceAmount, vatclosingcheckreportrow.allowanceAmount) &&
-        Objects.equals(this.dRCCode, vatclosingcheckreportrow.dRCCode) &&
-        Objects.equals(this.dRCQuantity, vatclosingcheckreportrow.dRCQuantity) &&
-        Objects.equals(this.dRCQUnit, vatclosingcheckreportrow.dRCQUnit) &&
-        Objects.equals(this.DRC_ID, vatclosingcheckreportrow.DRC_ID) &&
-        Objects.equals(this.definitionRowID, vatclosingcheckreportrow.definitionRowID) &&
-        Objects.equals(this.taxLineNumber, vatclosingcheckreportrow.taxLineNumber) &&
-        Objects.equals(this.vATReportMode, vatclosingcheckreportrow.vATReportMode) &&
-        Objects.equals(this.sortDocNumber, vatclosingcheckreportrow.sortDocNumber) &&
-        Objects.equals(this.correctionCode, vatclosingcheckreportrow.correctionCode) &&
-        Objects.equals(this.baseAmountLow, vatclosingcheckreportrow.baseAmountLow) &&
-        Objects.equals(this.vATAmountLow, vatclosingcheckreportrow.vATAmountLow) &&
-        Objects.equals(this.turnoverAmount, vatclosingcheckreportrow.turnoverAmount) &&
-        Objects.equals(this.vATRateID, vatclosingcheckreportrow.vATRateID) &&
-        Objects.equals(this.personID, vatclosingcheckreportrow.personID);
+    return Objects.equals(this.displayname, vatclosingcheckreportrow.displayname) &&
+        Objects.equals(this.id, vatclosingcheckreportrow.id) &&
+        Objects.equals(this.classid, vatclosingcheckreportrow.classid) &&
+        Objects.equals(this.objversion, vatclosingcheckreportrow.objversion) &&
+        Objects.equals(this.parentId, vatclosingcheckreportrow.parentId) &&
+        Objects.equals(this.sectionid, vatclosingcheckreportrow.sectionid) &&
+        Objects.equals(this.documenttype, vatclosingcheckreportrow.documenttype) &&
+        Objects.equals(this.documentId, vatclosingcheckreportrow.documentId) &&
+        Objects.equals(this.docnumber, vatclosingcheckreportrow.docnumber) &&
+        Objects.equals(this.firmId, vatclosingcheckreportrow.firmId) &&
+        Objects.equals(this.vatidentnumber, vatclosingcheckreportrow.vatidentnumber) &&
+        Objects.equals(this.vatdatedate, vatclosingcheckreportrow.vatdatedate) &&
+        Objects.equals(this.sourcedoctype, vatclosingcheckreportrow.sourcedoctype) &&
+        Objects.equals(this.sourceId, vatclosingcheckreportrow.sourceId) &&
+        Objects.equals(this.sourcedocnumber, vatclosingcheckreportrow.sourcedocnumber) &&
+        Objects.equals(this.vatrate, vatclosingcheckreportrow.vatrate) &&
+        Objects.equals(this.baseamount, vatclosingcheckreportrow.baseamount) &&
+        Objects.equals(this.vatamount, vatclosingcheckreportrow.vatamount) &&
+        Objects.equals(this.allowanceamount, vatclosingcheckreportrow.allowanceamount) &&
+        Objects.equals(this.drccode, vatclosingcheckreportrow.drccode) &&
+        Objects.equals(this.drcquantity, vatclosingcheckreportrow.drcquantity) &&
+        Objects.equals(this.drcqunit, vatclosingcheckreportrow.drcqunit) &&
+        Objects.equals(this.drcId, vatclosingcheckreportrow.drcId) &&
+        Objects.equals(this.definitionrowId, vatclosingcheckreportrow.definitionrowId) &&
+        Objects.equals(this.taxlinenumber, vatclosingcheckreportrow.taxlinenumber) &&
+        Objects.equals(this.vatreportmode, vatclosingcheckreportrow.vatreportmode) &&
+        Objects.equals(this.sortdocnumber, vatclosingcheckreportrow.sortdocnumber) &&
+        Objects.equals(this.correctioncode, vatclosingcheckreportrow.correctioncode) &&
+        Objects.equals(this.baseamountlow, vatclosingcheckreportrow.baseamountlow) &&
+        Objects.equals(this.vatamountlow, vatclosingcheckreportrow.vatamountlow) &&
+        Objects.equals(this.turnoveramount, vatclosingcheckreportrow.turnoveramount) &&
+        Objects.equals(this.vatrateId, vatclosingcheckreportrow.vatrateId) &&
+        Objects.equals(this.personId, vatclosingcheckreportrow.personId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, sectionID, documentType, documentID, docNumber, firmID, vATIdentNumber, vATDateDATE, sourceDocType, sourceID, sourceDocNumber, vATRate, baseAmount, vATAmount, allowanceAmount, dRCCode, dRCQuantity, dRCQUnit, DRC_ID, definitionRowID, taxLineNumber, vATReportMode, sortDocNumber, correctionCode, baseAmountLow, vATAmountLow, turnoverAmount, vATRateID, personID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, sectionid, documenttype, documentId, docnumber, firmId, vatidentnumber, vatdatedate, sourcedoctype, sourceId, sourcedocnumber, vatrate, baseamount, vatamount, allowanceamount, drccode, drcquantity, drcqunit, drcId, definitionrowId, taxlinenumber, vatreportmode, sortdocnumber, correctioncode, baseamountlow, vatamountlow, turnoveramount, vatrateId, personId);
   }
 
   @Override
@@ -740,39 +785,39 @@ public class Vatclosingcheckreportrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Vatclosingcheckreportrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    sectionID: ").append(toIndentedString(sectionID)).append("\n");
-    sb.append("    documentType: ").append(toIndentedString(documentType)).append("\n");
-    sb.append("    documentID: ").append(toIndentedString(documentID)).append("\n");
-    sb.append("    docNumber: ").append(toIndentedString(docNumber)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    vATIdentNumber: ").append(toIndentedString(vATIdentNumber)).append("\n");
-    sb.append("    vATDateDATE: ").append(toIndentedString(vATDateDATE)).append("\n");
-    sb.append("    sourceDocType: ").append(toIndentedString(sourceDocType)).append("\n");
-    sb.append("    sourceID: ").append(toIndentedString(sourceID)).append("\n");
-    sb.append("    sourceDocNumber: ").append(toIndentedString(sourceDocNumber)).append("\n");
-    sb.append("    vATRate: ").append(toIndentedString(vATRate)).append("\n");
-    sb.append("    baseAmount: ").append(toIndentedString(baseAmount)).append("\n");
-    sb.append("    vATAmount: ").append(toIndentedString(vATAmount)).append("\n");
-    sb.append("    allowanceAmount: ").append(toIndentedString(allowanceAmount)).append("\n");
-    sb.append("    dRCCode: ").append(toIndentedString(dRCCode)).append("\n");
-    sb.append("    dRCQuantity: ").append(toIndentedString(dRCQuantity)).append("\n");
-    sb.append("    dRCQUnit: ").append(toIndentedString(dRCQUnit)).append("\n");
-    sb.append("    DRC_ID: ").append(toIndentedString(DRC_ID)).append("\n");
-    sb.append("    definitionRowID: ").append(toIndentedString(definitionRowID)).append("\n");
-    sb.append("    taxLineNumber: ").append(toIndentedString(taxLineNumber)).append("\n");
-    sb.append("    vATReportMode: ").append(toIndentedString(vATReportMode)).append("\n");
-    sb.append("    sortDocNumber: ").append(toIndentedString(sortDocNumber)).append("\n");
-    sb.append("    correctionCode: ").append(toIndentedString(correctionCode)).append("\n");
-    sb.append("    baseAmountLow: ").append(toIndentedString(baseAmountLow)).append("\n");
-    sb.append("    vATAmountLow: ").append(toIndentedString(vATAmountLow)).append("\n");
-    sb.append("    turnoverAmount: ").append(toIndentedString(turnoverAmount)).append("\n");
-    sb.append("    vATRateID: ").append(toIndentedString(vATRateID)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    sectionid: ").append(toIndentedString(sectionid)).append("\n");
+    sb.append("    documenttype: ").append(toIndentedString(documenttype)).append("\n");
+    sb.append("    documentId: ").append(toIndentedString(documentId)).append("\n");
+    sb.append("    docnumber: ").append(toIndentedString(docnumber)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    vatidentnumber: ").append(toIndentedString(vatidentnumber)).append("\n");
+    sb.append("    vatdatedate: ").append(toIndentedString(vatdatedate)).append("\n");
+    sb.append("    sourcedoctype: ").append(toIndentedString(sourcedoctype)).append("\n");
+    sb.append("    sourceId: ").append(toIndentedString(sourceId)).append("\n");
+    sb.append("    sourcedocnumber: ").append(toIndentedString(sourcedocnumber)).append("\n");
+    sb.append("    vatrate: ").append(toIndentedString(vatrate)).append("\n");
+    sb.append("    baseamount: ").append(toIndentedString(baseamount)).append("\n");
+    sb.append("    vatamount: ").append(toIndentedString(vatamount)).append("\n");
+    sb.append("    allowanceamount: ").append(toIndentedString(allowanceamount)).append("\n");
+    sb.append("    drccode: ").append(toIndentedString(drccode)).append("\n");
+    sb.append("    drcquantity: ").append(toIndentedString(drcquantity)).append("\n");
+    sb.append("    drcqunit: ").append(toIndentedString(drcqunit)).append("\n");
+    sb.append("    drcId: ").append(toIndentedString(drcId)).append("\n");
+    sb.append("    definitionrowId: ").append(toIndentedString(definitionrowId)).append("\n");
+    sb.append("    taxlinenumber: ").append(toIndentedString(taxlinenumber)).append("\n");
+    sb.append("    vatreportmode: ").append(toIndentedString(vatreportmode)).append("\n");
+    sb.append("    sortdocnumber: ").append(toIndentedString(sortdocnumber)).append("\n");
+    sb.append("    correctioncode: ").append(toIndentedString(correctioncode)).append("\n");
+    sb.append("    baseamountlow: ").append(toIndentedString(baseamountlow)).append("\n");
+    sb.append("    vatamountlow: ").append(toIndentedString(vatamountlow)).append("\n");
+    sb.append("    turnoveramount: ").append(toIndentedString(turnoveramount)).append("\n");
+    sb.append("    vatrateId: ").append(toIndentedString(vatrateId)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

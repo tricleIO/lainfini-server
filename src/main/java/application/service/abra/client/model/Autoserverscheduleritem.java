@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,270 +37,315 @@ import java.util.Objects;
 /**
  * Autoserverscheduleritem
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Autoserverscheduleritem   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("TaskCLSID")
-  private String taskCLSID = null;
+  @SerializedName("taskclsid")
+  private String taskclsid = null;
 
-  @SerializedName("TaskParameters")
-  private String taskParameters = null;
+  @SerializedName("taskparameters")
+  private String taskparameters = null;
 
-  @SerializedName("TaskDisplayName")
-  private String taskDisplayName = null;
+  @SerializedName("taskdisplayname")
+  private String taskdisplayname = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("RunAs_ID")
-  private String runAsID = null;
+  @SerializedName("runas_id")
+  private String runasId = null;
 
-  @SerializedName("RunAsPassword")
-  private String runAsPassword = null;
+  @SerializedName("runaspassword")
+  private String runaspassword = null;
 
-  @SerializedName("Subject")
+  @SerializedName("subject")
   private String subject = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("IsActive")
-  private Boolean isActive = null;
+  @SerializedName("isactive")
+  private Boolean isactive = null;
 
-  @SerializedName("StartDateTime$DATE")
-  private DateTime startDateTimeDATE = null;
+  @SerializedName("startdatetime$date")
+  private DateTime startdatetimedate = null;
 
-  @SerializedName("RepetitionKind")
-  private Integer repetitionKind = null;
+  @SerializedName("repetitionkind")
+  private Integer repetitionkind = null;
 
-  @SerializedName("RepetitionCount")
-  private Integer repetitionCount = null;
+  @SerializedName("repetitioncount")
+  private Integer repetitioncount = null;
 
-  @SerializedName("ExecutionDateKind")
-  private Integer executionDateKind = null;
+  @SerializedName("executiondatekind")
+  private Integer executiondatekind = null;
 
-  @SerializedName("RepetitionPeriodKind")
-  private Integer repetitionPeriodKind = null;
+  @SerializedName("repetitionperiodkind")
+  private Integer repetitionperiodkind = null;
 
-  @SerializedName("RepetitionTime$DATE")
-  private DateTime repetitionTimeDATE = null;
+  @SerializedName("repetitiontime$date")
+  private DateTime repetitiontimedate = null;
 
-  @SerializedName("RepetitionDay")
-  private Integer repetitionDay = null;
+  @SerializedName("repetitionday")
+  private Integer repetitionday = null;
 
-  @SerializedName("RepetitionMonth")
-  private Integer repetitionMonth = null;
+  @SerializedName("repetitionmonth")
+  private Integer repetitionmonth = null;
 
-  @SerializedName("RepetitionDaysInWeek")
-  private String repetitionDaysInWeek = null;
+  @SerializedName("repetitiondaysinweek")
+  private String repetitiondaysinweek = null;
 
-  @SerializedName("WeekendCorrectionKind")
-  private Integer weekendCorrectionKind = null;
+  @SerializedName("weekendcorrectionkind")
+  private Integer weekendcorrectionkind = null;
 
-  @SerializedName("NotificationKind")
-  private Integer notificationKind = null;
+  @SerializedName("notificationkind")
+  private Integer notificationkind = null;
 
-  @SerializedName("RepetitionCounter")
-  private Integer repetitionCounter = null;
+  @SerializedName("repetitioncounter")
+  private Integer repetitioncounter = null;
 
-  @SerializedName("RepeatToDate$DATE")
-  private DateTime repeatToDateDATE = null;
+  @SerializedName("repeattodate$date")
+  private DateTime repeattodatedate = null;
 
-  @SerializedName("ScheduledDateTime$DATE")
-  private DateTime scheduledDateTimeDATE = null;
+  @SerializedName("scheduleddatetime$date")
+  private DateTime scheduleddatetimedate = null;
 
-  @SerializedName("RepetitionWeek")
-  private Integer repetitionWeek = null;
+  @SerializedName("repetitionweek")
+  private Integer repetitionweek = null;
 
-  @SerializedName("ScheduledDateTimeStr")
-  private String scheduledDateTimeStr = null;
+  @SerializedName("scheduleddatetimestr")
+  private String scheduleddatetimestr = null;
 
-  @SerializedName("LastScheduledDateTime$DATE")
-  private DateTime lastScheduledDateTimeDATE = null;
+  @SerializedName("lastscheduleddatetime$date")
+  private DateTime lastscheduleddatetimedate = null;
 
-  @SerializedName("LastScheduledDateTimeStr")
-  private String lastScheduledDateTimeStr = null;
+  @SerializedName("lastscheduleddatetimestr")
+  private String lastscheduleddatetimestr = null;
 
-  @SerializedName("PlanDescription")
-  private String planDescription = null;
+  @SerializedName("plandescription")
+  private String plandescription = null;
 
-  @SerializedName("TaskContext")
-  private String taskContext = null;
+  @SerializedName("taskcontext")
+  private String taskcontext = null;
 
-  @SerializedName("Recipients")
+  @SerializedName("recipients")
   private List<Autoserverscheduleritemrecipient> recipients = new ArrayList<Autoserverscheduleritemrecipient>();
 
-  @SerializedName("Site")
+  @SerializedName("site")
   private String site = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Autoserverscheduleritem taskCLSID(String taskCLSID) {
-    this.taskCLSID = taskCLSID;
+  public Autoserverscheduleritem displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Typ úlohy [persistentní položka]
-   * @return taskCLSID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Typ úlohy [persistentní položka]")
-  public String getTaskCLSID() {
-    return taskCLSID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setTaskCLSID(String taskCLSID) {
-    this.taskCLSID = taskCLSID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Autoserverscheduleritem taskParameters(String taskParameters) {
-    this.taskParameters = taskParameters;
+  public Autoserverscheduleritem id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Parametry úlohy [persistentní položka]
-   * @return taskParameters
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Parametry úlohy [persistentní položka]")
-  public String getTaskParameters() {
-    return taskParameters;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setTaskParameters(String taskParameters) {
-    this.taskParameters = taskParameters;
+  public void setId(String id) {
+    this.id = id;
   }
 
-   /**
-   * Název úlohy
-   * @return taskDisplayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název úlohy")
-  public String getTaskDisplayName() {
-    return taskDisplayName;
-  }
-
-  public Autoserverscheduleritem createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Autoserverscheduleritem classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Autoserverscheduleritem correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Autoserverscheduleritem objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Autoserverscheduleritem runAsID(String runAsID) {
-    this.runAsID = runAsID;
+  public Autoserverscheduleritem taskclsid(String taskclsid) {
+    this.taskclsid = taskclsid;
     return this;
   }
 
    /**
-   * Spustit jako; ID objektu Uživatel [persistentní položka]
-   * @return runAsID
+   * typ úlohy [persistentní položka]
+   * @return taskclsid
   **/
-  @ApiModelProperty(example = "null", value = "Spustit jako; ID objektu Uživatel [persistentní položka]")
-  public String getRunAsID() {
-    return runAsID;
+  @ApiModelProperty(example = "null", value = "typ úlohy [persistentní položka]")
+  public String getTaskclsid() {
+    return taskclsid;
   }
 
-  public void setRunAsID(String runAsID) {
-    this.runAsID = runAsID;
+  public void setTaskclsid(String taskclsid) {
+    this.taskclsid = taskclsid;
   }
 
-  public Autoserverscheduleritem runAsPassword(String runAsPassword) {
-    this.runAsPassword = runAsPassword;
+  public Autoserverscheduleritem taskparameters(String taskparameters) {
+    this.taskparameters = taskparameters;
     return this;
   }
 
    /**
-   * Heslo
-   * @return runAsPassword
+   * parametry úlohy [persistentní položka]
+   * @return taskparameters
   **/
-  @ApiModelProperty(example = "null", value = "Heslo")
-  public String getRunAsPassword() {
-    return runAsPassword;
+  @ApiModelProperty(example = "null", value = "parametry úlohy [persistentní položka]")
+  public String getTaskparameters() {
+    return taskparameters;
   }
 
-  public void setRunAsPassword(String runAsPassword) {
-    this.runAsPassword = runAsPassword;
+  public void setTaskparameters(String taskparameters) {
+    this.taskparameters = taskparameters;
+  }
+
+  public Autoserverscheduleritem taskdisplayname(String taskdisplayname) {
+    this.taskdisplayname = taskdisplayname;
+    return this;
+  }
+
+   /**
+   * název úlohy
+   * @return taskdisplayname
+  **/
+  @ApiModelProperty(example = "null", value = "název úlohy")
+  public String getTaskdisplayname() {
+    return taskdisplayname;
+  }
+
+  public void setTaskdisplayname(String taskdisplayname) {
+    this.taskdisplayname = taskdisplayname;
+  }
+
+  public Autoserverscheduleritem createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+    return this;
+  }
+
+   /**
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
+  }
+
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Autoserverscheduleritem correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+    return this;
+  }
+
+   /**
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
+  }
+
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+  }
+
+  public Autoserverscheduleritem runasId(String runasId) {
+    this.runasId = runasId;
+    return this;
+  }
+
+   /**
+   * spustit jako; id objektu uživatel [persistentní položka]
+   * @return runasId
+  **/
+  @ApiModelProperty(example = "null", value = "spustit jako; id objektu uživatel [persistentní položka]")
+  public String getRunasId() {
+    return runasId;
+  }
+
+  public void setRunasId(String runasId) {
+    this.runasId = runasId;
+  }
+
+  public Autoserverscheduleritem runaspassword(String runaspassword) {
+    this.runaspassword = runaspassword;
+    return this;
+  }
+
+   /**
+   * heslo
+   * @return runaspassword
+  **/
+  @ApiModelProperty(example = "null", value = "heslo")
+  public String getRunaspassword() {
+    return runaspassword;
+  }
+
+  public void setRunaspassword(String runaspassword) {
+    this.runaspassword = runaspassword;
   }
 
   public Autoserverscheduleritem subject(String subject) {
@@ -309,10 +354,10 @@ public class Autoserverscheduleritem   {
   }
 
    /**
-   * Předmět [persistentní položka]
+   * předmět [persistentní položka]
    * @return subject
   **/
-  @ApiModelProperty(example = "null", value = "Předmět [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "předmět [persistentní položka]")
   public String getSubject() {
     return subject;
   }
@@ -327,10 +372,10 @@ public class Autoserverscheduleritem   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -345,10 +390,10 @@ public class Autoserverscheduleritem   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -357,355 +402,382 @@ public class Autoserverscheduleritem   {
     this.name = name;
   }
 
-  public Autoserverscheduleritem isActive(Boolean isActive) {
-    this.isActive = isActive;
+  public Autoserverscheduleritem isactive(Boolean isactive) {
+    this.isactive = isactive;
     return this;
   }
 
    /**
-   * Aktivní [persistentní položka]
-   * @return isActive
+   * aktivní [persistentní položka]
+   * @return isactive
   **/
-  @ApiModelProperty(example = "null", value = "Aktivní [persistentní položka]")
-  public Boolean getIsActive() {
-    return isActive;
+  @ApiModelProperty(example = "null", value = "aktivní [persistentní položka]")
+  public Boolean getIsactive() {
+    return isactive;
   }
 
-  public void setIsActive(Boolean isActive) {
-    this.isActive = isActive;
+  public void setIsactive(Boolean isactive) {
+    this.isactive = isactive;
   }
 
-  public Autoserverscheduleritem startDateTimeDATE(DateTime startDateTimeDATE) {
-    this.startDateTimeDATE = startDateTimeDATE;
+  public Autoserverscheduleritem startdatetimedate(DateTime startdatetimedate) {
+    this.startdatetimedate = startdatetimedate;
     return this;
   }
 
    /**
-   * Datum spuštění [persistentní položka]
-   * @return startDateTimeDATE
+   * datum spuštění [persistentní položka]
+   * @return startdatetimedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum spuštění [persistentní položka]")
-  public DateTime getStartDateTimeDATE() {
-    return startDateTimeDATE;
+  @ApiModelProperty(example = "null", value = "datum spuštění [persistentní položka]")
+  public DateTime getStartdatetimedate() {
+    return startdatetimedate;
   }
 
-  public void setStartDateTimeDATE(DateTime startDateTimeDATE) {
-    this.startDateTimeDATE = startDateTimeDATE;
+  public void setStartdatetimedate(DateTime startdatetimedate) {
+    this.startdatetimedate = startdatetimedate;
   }
 
-  public Autoserverscheduleritem repetitionKind(Integer repetitionKind) {
-    this.repetitionKind = repetitionKind;
+  public Autoserverscheduleritem repetitionkind(Integer repetitionkind) {
+    this.repetitionkind = repetitionkind;
     return this;
   }
 
    /**
-   * Způsob opakování [persistentní položka]
-   * @return repetitionKind
+   * způsob opakování [persistentní položka]
+   * @return repetitionkind
   **/
-  @ApiModelProperty(example = "null", value = "Způsob opakování [persistentní položka]")
-  public Integer getRepetitionKind() {
-    return repetitionKind;
+  @ApiModelProperty(example = "null", value = "způsob opakování [persistentní položka]")
+  public Integer getRepetitionkind() {
+    return repetitionkind;
   }
 
-  public void setRepetitionKind(Integer repetitionKind) {
-    this.repetitionKind = repetitionKind;
+  public void setRepetitionkind(Integer repetitionkind) {
+    this.repetitionkind = repetitionkind;
   }
 
-  public Autoserverscheduleritem repetitionCount(Integer repetitionCount) {
-    this.repetitionCount = repetitionCount;
+  public Autoserverscheduleritem repetitioncount(Integer repetitioncount) {
+    this.repetitioncount = repetitioncount;
     return this;
   }
 
    /**
-   * Definice počtu opakování [persistentní položka]
-   * @return repetitionCount
+   * definice počtu opakování [persistentní položka]
+   * @return repetitioncount
   **/
-  @ApiModelProperty(example = "null", value = "Definice počtu opakování [persistentní položka]")
-  public Integer getRepetitionCount() {
-    return repetitionCount;
+  @ApiModelProperty(example = "null", value = "definice počtu opakování [persistentní položka]")
+  public Integer getRepetitioncount() {
+    return repetitioncount;
   }
 
-  public void setRepetitionCount(Integer repetitionCount) {
-    this.repetitionCount = repetitionCount;
+  public void setRepetitioncount(Integer repetitioncount) {
+    this.repetitioncount = repetitioncount;
   }
 
-  public Autoserverscheduleritem executionDateKind(Integer executionDateKind) {
-    this.executionDateKind = executionDateKind;
+  public Autoserverscheduleritem executiondatekind(Integer executiondatekind) {
+    this.executiondatekind = executiondatekind;
     return this;
   }
 
    /**
-   * Způsob zaznamenání spuštění úlohy [persistentní položka]
-   * @return executionDateKind
+   * způsob zaznamenání spuštění úlohy [persistentní položka]
+   * @return executiondatekind
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zaznamenání spuštění úlohy [persistentní položka]")
-  public Integer getExecutionDateKind() {
-    return executionDateKind;
+  @ApiModelProperty(example = "null", value = "způsob zaznamenání spuštění úlohy [persistentní položka]")
+  public Integer getExecutiondatekind() {
+    return executiondatekind;
   }
 
-  public void setExecutionDateKind(Integer executionDateKind) {
-    this.executionDateKind = executionDateKind;
+  public void setExecutiondatekind(Integer executiondatekind) {
+    this.executiondatekind = executiondatekind;
   }
 
-  public Autoserverscheduleritem repetitionPeriodKind(Integer repetitionPeriodKind) {
-    this.repetitionPeriodKind = repetitionPeriodKind;
+  public Autoserverscheduleritem repetitionperiodkind(Integer repetitionperiodkind) {
+    this.repetitionperiodkind = repetitionperiodkind;
     return this;
   }
 
    /**
-   * Naplánování úlohy [persistentní položka]
-   * @return repetitionPeriodKind
+   * naplánování úlohy [persistentní položka]
+   * @return repetitionperiodkind
   **/
-  @ApiModelProperty(example = "null", value = "Naplánování úlohy [persistentní položka]")
-  public Integer getRepetitionPeriodKind() {
-    return repetitionPeriodKind;
+  @ApiModelProperty(example = "null", value = "naplánování úlohy [persistentní položka]")
+  public Integer getRepetitionperiodkind() {
+    return repetitionperiodkind;
   }
 
-  public void setRepetitionPeriodKind(Integer repetitionPeriodKind) {
-    this.repetitionPeriodKind = repetitionPeriodKind;
+  public void setRepetitionperiodkind(Integer repetitionperiodkind) {
+    this.repetitionperiodkind = repetitionperiodkind;
   }
 
-  public Autoserverscheduleritem repetitionTimeDATE(DateTime repetitionTimeDATE) {
-    this.repetitionTimeDATE = repetitionTimeDATE;
+  public Autoserverscheduleritem repetitiontimedate(DateTime repetitiontimedate) {
+    this.repetitiontimedate = repetitiontimedate;
     return this;
   }
 
    /**
    * Časový interval opakovaného spouštění / čas spuštění úlohy [persistentní položka]
-   * @return repetitionTimeDATE
+   * @return repetitiontimedate
   **/
   @ApiModelProperty(example = "null", value = "Časový interval opakovaného spouštění / čas spuštění úlohy [persistentní položka]")
-  public DateTime getRepetitionTimeDATE() {
-    return repetitionTimeDATE;
+  public DateTime getRepetitiontimedate() {
+    return repetitiontimedate;
   }
 
-  public void setRepetitionTimeDATE(DateTime repetitionTimeDATE) {
-    this.repetitionTimeDATE = repetitionTimeDATE;
+  public void setRepetitiontimedate(DateTime repetitiontimedate) {
+    this.repetitiontimedate = repetitiontimedate;
   }
 
-  public Autoserverscheduleritem repetitionDay(Integer repetitionDay) {
-    this.repetitionDay = repetitionDay;
+  public Autoserverscheduleritem repetitionday(Integer repetitionday) {
+    this.repetitionday = repetitionday;
     return this;
   }
 
    /**
-   * Kolikátý den [persistentní položka]
-   * @return repetitionDay
+   * kolikátý den [persistentní položka]
+   * @return repetitionday
   **/
-  @ApiModelProperty(example = "null", value = "Kolikátý den [persistentní položka]")
-  public Integer getRepetitionDay() {
-    return repetitionDay;
+  @ApiModelProperty(example = "null", value = "kolikátý den [persistentní položka]")
+  public Integer getRepetitionday() {
+    return repetitionday;
   }
 
-  public void setRepetitionDay(Integer repetitionDay) {
-    this.repetitionDay = repetitionDay;
+  public void setRepetitionday(Integer repetitionday) {
+    this.repetitionday = repetitionday;
   }
 
-  public Autoserverscheduleritem repetitionMonth(Integer repetitionMonth) {
-    this.repetitionMonth = repetitionMonth;
+  public Autoserverscheduleritem repetitionmonth(Integer repetitionmonth) {
+    this.repetitionmonth = repetitionmonth;
     return this;
   }
 
    /**
-   * Kolikátý měsíc [persistentní položka]
-   * @return repetitionMonth
+   * kolikátý měsíc [persistentní položka]
+   * @return repetitionmonth
   **/
-  @ApiModelProperty(example = "null", value = "Kolikátý měsíc [persistentní položka]")
-  public Integer getRepetitionMonth() {
-    return repetitionMonth;
+  @ApiModelProperty(example = "null", value = "kolikátý měsíc [persistentní položka]")
+  public Integer getRepetitionmonth() {
+    return repetitionmonth;
   }
 
-  public void setRepetitionMonth(Integer repetitionMonth) {
-    this.repetitionMonth = repetitionMonth;
+  public void setRepetitionmonth(Integer repetitionmonth) {
+    this.repetitionmonth = repetitionmonth;
   }
 
-  public Autoserverscheduleritem repetitionDaysInWeek(String repetitionDaysInWeek) {
-    this.repetitionDaysInWeek = repetitionDaysInWeek;
+  public Autoserverscheduleritem repetitiondaysinweek(String repetitiondaysinweek) {
+    this.repetitiondaysinweek = repetitiondaysinweek;
     return this;
   }
 
    /**
-   * Dny v týdnu [persistentní položka]
-   * @return repetitionDaysInWeek
+   * dny v týdnu [persistentní položka]
+   * @return repetitiondaysinweek
   **/
-  @ApiModelProperty(example = "null", value = "Dny v týdnu [persistentní položka]")
-  public String getRepetitionDaysInWeek() {
-    return repetitionDaysInWeek;
+  @ApiModelProperty(example = "null", value = "dny v týdnu [persistentní položka]")
+  public String getRepetitiondaysinweek() {
+    return repetitiondaysinweek;
   }
 
-  public void setRepetitionDaysInWeek(String repetitionDaysInWeek) {
-    this.repetitionDaysInWeek = repetitionDaysInWeek;
+  public void setRepetitiondaysinweek(String repetitiondaysinweek) {
+    this.repetitiondaysinweek = repetitiondaysinweek;
   }
 
-  public Autoserverscheduleritem weekendCorrectionKind(Integer weekendCorrectionKind) {
-    this.weekendCorrectionKind = weekendCorrectionKind;
+  public Autoserverscheduleritem weekendcorrectionkind(Integer weekendcorrectionkind) {
+    this.weekendcorrectionkind = weekendcorrectionkind;
     return this;
   }
 
    /**
-   * Způsob spuštění o víkendu [persistentní položka]
-   * @return weekendCorrectionKind
+   * způsob spuštění o víkendu [persistentní položka]
+   * @return weekendcorrectionkind
   **/
-  @ApiModelProperty(example = "null", value = "Způsob spuštění o víkendu [persistentní položka]")
-  public Integer getWeekendCorrectionKind() {
-    return weekendCorrectionKind;
+  @ApiModelProperty(example = "null", value = "způsob spuštění o víkendu [persistentní položka]")
+  public Integer getWeekendcorrectionkind() {
+    return weekendcorrectionkind;
   }
 
-  public void setWeekendCorrectionKind(Integer weekendCorrectionKind) {
-    this.weekendCorrectionKind = weekendCorrectionKind;
+  public void setWeekendcorrectionkind(Integer weekendcorrectionkind) {
+    this.weekendcorrectionkind = weekendcorrectionkind;
   }
 
-  public Autoserverscheduleritem notificationKind(Integer notificationKind) {
-    this.notificationKind = notificationKind;
+  public Autoserverscheduleritem notificationkind(Integer notificationkind) {
+    this.notificationkind = notificationkind;
     return this;
   }
 
    /**
-   * Oznámení o zpracování [persistentní položka]
-   * @return notificationKind
+   * oznámení o zpracování [persistentní položka]
+   * @return notificationkind
   **/
-  @ApiModelProperty(example = "null", value = "Oznámení o zpracování [persistentní položka]")
-  public Integer getNotificationKind() {
-    return notificationKind;
+  @ApiModelProperty(example = "null", value = "oznámení o zpracování [persistentní položka]")
+  public Integer getNotificationkind() {
+    return notificationkind;
   }
 
-  public void setNotificationKind(Integer notificationKind) {
-    this.notificationKind = notificationKind;
+  public void setNotificationkind(Integer notificationkind) {
+    this.notificationkind = notificationkind;
   }
 
-  public Autoserverscheduleritem repetitionCounter(Integer repetitionCounter) {
-    this.repetitionCounter = repetitionCounter;
+  public Autoserverscheduleritem repetitioncounter(Integer repetitioncounter) {
+    this.repetitioncounter = repetitioncounter;
     return this;
   }
 
    /**
-   * Počet vykonání [persistentní položka]
-   * @return repetitionCounter
+   * počet vykonání [persistentní položka]
+   * @return repetitioncounter
   **/
-  @ApiModelProperty(example = "null", value = "Počet vykonání [persistentní položka]")
-  public Integer getRepetitionCounter() {
-    return repetitionCounter;
+  @ApiModelProperty(example = "null", value = "počet vykonání [persistentní položka]")
+  public Integer getRepetitioncounter() {
+    return repetitioncounter;
   }
 
-  public void setRepetitionCounter(Integer repetitionCounter) {
-    this.repetitionCounter = repetitionCounter;
+  public void setRepetitioncounter(Integer repetitioncounter) {
+    this.repetitioncounter = repetitioncounter;
   }
 
-  public Autoserverscheduleritem repeatToDateDATE(DateTime repeatToDateDATE) {
-    this.repeatToDateDATE = repeatToDateDATE;
+  public Autoserverscheduleritem repeattodatedate(DateTime repeattodatedate) {
+    this.repeattodatedate = repeattodatedate;
     return this;
   }
 
    /**
-   * Datum a čas platnosti definice [persistentní položka]
-   * @return repeatToDateDATE
+   * datum a čas platnosti definice [persistentní položka]
+   * @return repeattodatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum a čas platnosti definice [persistentní položka]")
-  public DateTime getRepeatToDateDATE() {
-    return repeatToDateDATE;
+  @ApiModelProperty(example = "null", value = "datum a čas platnosti definice [persistentní položka]")
+  public DateTime getRepeattodatedate() {
+    return repeattodatedate;
   }
 
-  public void setRepeatToDateDATE(DateTime repeatToDateDATE) {
-    this.repeatToDateDATE = repeatToDateDATE;
+  public void setRepeattodatedate(DateTime repeattodatedate) {
+    this.repeattodatedate = repeattodatedate;
   }
 
-  public Autoserverscheduleritem scheduledDateTimeDATE(DateTime scheduledDateTimeDATE) {
-    this.scheduledDateTimeDATE = scheduledDateTimeDATE;
+  public Autoserverscheduleritem scheduleddatetimedate(DateTime scheduleddatetimedate) {
+    this.scheduleddatetimedate = scheduleddatetimedate;
     return this;
   }
 
    /**
    * Čas příštího spuštění [persistentní položka]
-   * @return scheduledDateTimeDATE
+   * @return scheduleddatetimedate
   **/
   @ApiModelProperty(example = "null", value = "Čas příštího spuštění [persistentní položka]")
-  public DateTime getScheduledDateTimeDATE() {
-    return scheduledDateTimeDATE;
+  public DateTime getScheduleddatetimedate() {
+    return scheduleddatetimedate;
   }
 
-  public void setScheduledDateTimeDATE(DateTime scheduledDateTimeDATE) {
-    this.scheduledDateTimeDATE = scheduledDateTimeDATE;
+  public void setScheduleddatetimedate(DateTime scheduleddatetimedate) {
+    this.scheduleddatetimedate = scheduleddatetimedate;
   }
 
-  public Autoserverscheduleritem repetitionWeek(Integer repetitionWeek) {
-    this.repetitionWeek = repetitionWeek;
+  public Autoserverscheduleritem repetitionweek(Integer repetitionweek) {
+    this.repetitionweek = repetitionweek;
     return this;
   }
 
    /**
-   * Kolikátý týden [persistentní položka]
-   * @return repetitionWeek
+   * kolikátý týden [persistentní položka]
+   * @return repetitionweek
   **/
-  @ApiModelProperty(example = "null", value = "Kolikátý týden [persistentní položka]")
-  public Integer getRepetitionWeek() {
-    return repetitionWeek;
+  @ApiModelProperty(example = "null", value = "kolikátý týden [persistentní položka]")
+  public Integer getRepetitionweek() {
+    return repetitionweek;
   }
 
-  public void setRepetitionWeek(Integer repetitionWeek) {
-    this.repetitionWeek = repetitionWeek;
+  public void setRepetitionweek(Integer repetitionweek) {
+    this.repetitionweek = repetitionweek;
+  }
+
+  public Autoserverscheduleritem scheduleddatetimestr(String scheduleddatetimestr) {
+    this.scheduleddatetimestr = scheduleddatetimestr;
+    return this;
   }
 
    /**
    * Čas příštího spuštění (popis)
-   * @return scheduledDateTimeStr
+   * @return scheduleddatetimestr
   **/
   @ApiModelProperty(example = "null", value = "Čas příštího spuštění (popis)")
-  public String getScheduledDateTimeStr() {
-    return scheduledDateTimeStr;
+  public String getScheduleddatetimestr() {
+    return scheduleddatetimestr;
   }
 
-  public Autoserverscheduleritem lastScheduledDateTimeDATE(DateTime lastScheduledDateTimeDATE) {
-    this.lastScheduledDateTimeDATE = lastScheduledDateTimeDATE;
+  public void setScheduleddatetimestr(String scheduleddatetimestr) {
+    this.scheduleddatetimestr = scheduleddatetimestr;
+  }
+
+  public Autoserverscheduleritem lastscheduleddatetimedate(DateTime lastscheduleddatetimedate) {
+    this.lastscheduleddatetimedate = lastscheduleddatetimedate;
     return this;
   }
 
    /**
    * Čas posledního spuštění [persistentní položka]
-   * @return lastScheduledDateTimeDATE
+   * @return lastscheduleddatetimedate
   **/
   @ApiModelProperty(example = "null", value = "Čas posledního spuštění [persistentní položka]")
-  public DateTime getLastScheduledDateTimeDATE() {
-    return lastScheduledDateTimeDATE;
+  public DateTime getLastscheduleddatetimedate() {
+    return lastscheduleddatetimedate;
   }
 
-  public void setLastScheduledDateTimeDATE(DateTime lastScheduledDateTimeDATE) {
-    this.lastScheduledDateTimeDATE = lastScheduledDateTimeDATE;
+  public void setLastscheduleddatetimedate(DateTime lastscheduleddatetimedate) {
+    this.lastscheduleddatetimedate = lastscheduleddatetimedate;
   }
 
-   /**
-   * Čas posledního spuštění (popis)
-   * @return lastScheduledDateTimeStr
-  **/
-  @ApiModelProperty(example = "null", value = "Čas posledního spuštění (popis)")
-  public String getLastScheduledDateTimeStr() {
-    return lastScheduledDateTimeStr;
-  }
-
-   /**
-   * Plán
-   * @return planDescription
-  **/
-  @ApiModelProperty(example = "null", value = "Plán")
-  public String getPlanDescription() {
-    return planDescription;
-  }
-
-  public Autoserverscheduleritem taskContext(String taskContext) {
-    this.taskContext = taskContext;
+  public Autoserverscheduleritem lastscheduleddatetimestr(String lastscheduleddatetimestr) {
+    this.lastscheduleddatetimestr = lastscheduleddatetimestr;
     return this;
   }
 
    /**
-   * Kontext úlohy [persistentní položka]
-   * @return taskContext
+   * Čas posledního spuštění (popis)
+   * @return lastscheduleddatetimestr
   **/
-  @ApiModelProperty(example = "null", value = "Kontext úlohy [persistentní položka]")
-  public String getTaskContext() {
-    return taskContext;
+  @ApiModelProperty(example = "null", value = "Čas posledního spuštění (popis)")
+  public String getLastscheduleddatetimestr() {
+    return lastscheduleddatetimestr;
   }
 
-  public void setTaskContext(String taskContext) {
-    this.taskContext = taskContext;
+  public void setLastscheduleddatetimestr(String lastscheduleddatetimestr) {
+    this.lastscheduleddatetimestr = lastscheduleddatetimestr;
+  }
+
+  public Autoserverscheduleritem plandescription(String plandescription) {
+    this.plandescription = plandescription;
+    return this;
+  }
+
+   /**
+   * plán
+   * @return plandescription
+  **/
+  @ApiModelProperty(example = "null", value = "plán")
+  public String getPlandescription() {
+    return plandescription;
+  }
+
+  public void setPlandescription(String plandescription) {
+    this.plandescription = plandescription;
+  }
+
+  public Autoserverscheduleritem taskcontext(String taskcontext) {
+    this.taskcontext = taskcontext;
+    return this;
+  }
+
+   /**
+   * kontext úlohy [persistentní položka]
+   * @return taskcontext
+  **/
+  @ApiModelProperty(example = "null", value = "kontext úlohy [persistentní položka]")
+  public String getTaskcontext() {
+    return taskcontext;
+  }
+
+  public void setTaskcontext(String taskcontext) {
+    this.taskcontext = taskcontext;
   }
 
   public Autoserverscheduleritem recipients(List<Autoserverscheduleritemrecipient> recipients) {
@@ -719,10 +791,10 @@ public class Autoserverscheduleritem   {
   }
 
    /**
-   * Adresáti; kolekce BO Naplánovaná úloha - adresát [nepersistentní položka]
+   * adresáti; kolekce bo naplánovaná úloha - adresát [nepersistentní položka]
    * @return recipients
   **/
-  @ApiModelProperty(example = "null", value = "Adresáti; kolekce BO Naplánovaná úloha - adresát [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "adresáti; kolekce bo naplánovaná úloha - adresát [nepersistentní položka]")
   public List<Autoserverscheduleritemrecipient> getRecipients() {
     return recipients;
   }
@@ -737,10 +809,10 @@ public class Autoserverscheduleritem   {
   }
 
    /**
-   * Replikační hnízdo [persistentní položka]
+   * replikační hnízdo [persistentní položka]
    * @return site
   **/
-  @ApiModelProperty(example = "null", value = "Replikační hnízdo [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "replikační hnízdo [persistentní položka]")
   public String getSite() {
     return site;
   }
@@ -759,48 +831,48 @@ public class Autoserverscheduleritem   {
       return false;
     }
     Autoserverscheduleritem autoserverscheduleritem = (Autoserverscheduleritem) o;
-    return Objects.equals(this.displayName, autoserverscheduleritem.displayName) &&
-        Objects.equals(this.ID, autoserverscheduleritem.ID) &&
-        Objects.equals(this.classID, autoserverscheduleritem.classID) &&
-        Objects.equals(this.objVersion, autoserverscheduleritem.objVersion) &&
-        Objects.equals(this.taskCLSID, autoserverscheduleritem.taskCLSID) &&
-        Objects.equals(this.taskParameters, autoserverscheduleritem.taskParameters) &&
-        Objects.equals(this.taskDisplayName, autoserverscheduleritem.taskDisplayName) &&
-        Objects.equals(this.createdByID, autoserverscheduleritem.createdByID) &&
-        Objects.equals(this.correctedByID, autoserverscheduleritem.correctedByID) &&
-        Objects.equals(this.runAsID, autoserverscheduleritem.runAsID) &&
-        Objects.equals(this.runAsPassword, autoserverscheduleritem.runAsPassword) &&
+    return Objects.equals(this.displayname, autoserverscheduleritem.displayname) &&
+        Objects.equals(this.id, autoserverscheduleritem.id) &&
+        Objects.equals(this.classid, autoserverscheduleritem.classid) &&
+        Objects.equals(this.objversion, autoserverscheduleritem.objversion) &&
+        Objects.equals(this.taskclsid, autoserverscheduleritem.taskclsid) &&
+        Objects.equals(this.taskparameters, autoserverscheduleritem.taskparameters) &&
+        Objects.equals(this.taskdisplayname, autoserverscheduleritem.taskdisplayname) &&
+        Objects.equals(this.createdbyId, autoserverscheduleritem.createdbyId) &&
+        Objects.equals(this.correctedbyId, autoserverscheduleritem.correctedbyId) &&
+        Objects.equals(this.runasId, autoserverscheduleritem.runasId) &&
+        Objects.equals(this.runaspassword, autoserverscheduleritem.runaspassword) &&
         Objects.equals(this.subject, autoserverscheduleritem.subject) &&
         Objects.equals(this.code, autoserverscheduleritem.code) &&
         Objects.equals(this.name, autoserverscheduleritem.name) &&
-        Objects.equals(this.isActive, autoserverscheduleritem.isActive) &&
-        Objects.equals(this.startDateTimeDATE, autoserverscheduleritem.startDateTimeDATE) &&
-        Objects.equals(this.repetitionKind, autoserverscheduleritem.repetitionKind) &&
-        Objects.equals(this.repetitionCount, autoserverscheduleritem.repetitionCount) &&
-        Objects.equals(this.executionDateKind, autoserverscheduleritem.executionDateKind) &&
-        Objects.equals(this.repetitionPeriodKind, autoserverscheduleritem.repetitionPeriodKind) &&
-        Objects.equals(this.repetitionTimeDATE, autoserverscheduleritem.repetitionTimeDATE) &&
-        Objects.equals(this.repetitionDay, autoserverscheduleritem.repetitionDay) &&
-        Objects.equals(this.repetitionMonth, autoserverscheduleritem.repetitionMonth) &&
-        Objects.equals(this.repetitionDaysInWeek, autoserverscheduleritem.repetitionDaysInWeek) &&
-        Objects.equals(this.weekendCorrectionKind, autoserverscheduleritem.weekendCorrectionKind) &&
-        Objects.equals(this.notificationKind, autoserverscheduleritem.notificationKind) &&
-        Objects.equals(this.repetitionCounter, autoserverscheduleritem.repetitionCounter) &&
-        Objects.equals(this.repeatToDateDATE, autoserverscheduleritem.repeatToDateDATE) &&
-        Objects.equals(this.scheduledDateTimeDATE, autoserverscheduleritem.scheduledDateTimeDATE) &&
-        Objects.equals(this.repetitionWeek, autoserverscheduleritem.repetitionWeek) &&
-        Objects.equals(this.scheduledDateTimeStr, autoserverscheduleritem.scheduledDateTimeStr) &&
-        Objects.equals(this.lastScheduledDateTimeDATE, autoserverscheduleritem.lastScheduledDateTimeDATE) &&
-        Objects.equals(this.lastScheduledDateTimeStr, autoserverscheduleritem.lastScheduledDateTimeStr) &&
-        Objects.equals(this.planDescription, autoserverscheduleritem.planDescription) &&
-        Objects.equals(this.taskContext, autoserverscheduleritem.taskContext) &&
+        Objects.equals(this.isactive, autoserverscheduleritem.isactive) &&
+        Objects.equals(this.startdatetimedate, autoserverscheduleritem.startdatetimedate) &&
+        Objects.equals(this.repetitionkind, autoserverscheduleritem.repetitionkind) &&
+        Objects.equals(this.repetitioncount, autoserverscheduleritem.repetitioncount) &&
+        Objects.equals(this.executiondatekind, autoserverscheduleritem.executiondatekind) &&
+        Objects.equals(this.repetitionperiodkind, autoserverscheduleritem.repetitionperiodkind) &&
+        Objects.equals(this.repetitiontimedate, autoserverscheduleritem.repetitiontimedate) &&
+        Objects.equals(this.repetitionday, autoserverscheduleritem.repetitionday) &&
+        Objects.equals(this.repetitionmonth, autoserverscheduleritem.repetitionmonth) &&
+        Objects.equals(this.repetitiondaysinweek, autoserverscheduleritem.repetitiondaysinweek) &&
+        Objects.equals(this.weekendcorrectionkind, autoserverscheduleritem.weekendcorrectionkind) &&
+        Objects.equals(this.notificationkind, autoserverscheduleritem.notificationkind) &&
+        Objects.equals(this.repetitioncounter, autoserverscheduleritem.repetitioncounter) &&
+        Objects.equals(this.repeattodatedate, autoserverscheduleritem.repeattodatedate) &&
+        Objects.equals(this.scheduleddatetimedate, autoserverscheduleritem.scheduleddatetimedate) &&
+        Objects.equals(this.repetitionweek, autoserverscheduleritem.repetitionweek) &&
+        Objects.equals(this.scheduleddatetimestr, autoserverscheduleritem.scheduleddatetimestr) &&
+        Objects.equals(this.lastscheduleddatetimedate, autoserverscheduleritem.lastscheduleddatetimedate) &&
+        Objects.equals(this.lastscheduleddatetimestr, autoserverscheduleritem.lastscheduleddatetimestr) &&
+        Objects.equals(this.plandescription, autoserverscheduleritem.plandescription) &&
+        Objects.equals(this.taskcontext, autoserverscheduleritem.taskcontext) &&
         Objects.equals(this.recipients, autoserverscheduleritem.recipients) &&
         Objects.equals(this.site, autoserverscheduleritem.site);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, taskCLSID, taskParameters, taskDisplayName, createdByID, correctedByID, runAsID, runAsPassword, subject, code, name, isActive, startDateTimeDATE, repetitionKind, repetitionCount, executionDateKind, repetitionPeriodKind, repetitionTimeDATE, repetitionDay, repetitionMonth, repetitionDaysInWeek, weekendCorrectionKind, notificationKind, repetitionCounter, repeatToDateDATE, scheduledDateTimeDATE, repetitionWeek, scheduledDateTimeStr, lastScheduledDateTimeDATE, lastScheduledDateTimeStr, planDescription, taskContext, recipients, site);
+    return Objects.hash(displayname, id, classid, objversion, taskclsid, taskparameters, taskdisplayname, createdbyId, correctedbyId, runasId, runaspassword, subject, code, name, isactive, startdatetimedate, repetitionkind, repetitioncount, executiondatekind, repetitionperiodkind, repetitiontimedate, repetitionday, repetitionmonth, repetitiondaysinweek, weekendcorrectionkind, notificationkind, repetitioncounter, repeattodatedate, scheduleddatetimedate, repetitionweek, scheduleddatetimestr, lastscheduleddatetimedate, lastscheduleddatetimestr, plandescription, taskcontext, recipients, site);
   }
 
   @Override
@@ -808,41 +880,41 @@ public class Autoserverscheduleritem   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Autoserverscheduleritem {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    taskCLSID: ").append(toIndentedString(taskCLSID)).append("\n");
-    sb.append("    taskParameters: ").append(toIndentedString(taskParameters)).append("\n");
-    sb.append("    taskDisplayName: ").append(toIndentedString(taskDisplayName)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    runAsID: ").append(toIndentedString(runAsID)).append("\n");
-    sb.append("    runAsPassword: ").append(toIndentedString(runAsPassword)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    taskclsid: ").append(toIndentedString(taskclsid)).append("\n");
+    sb.append("    taskparameters: ").append(toIndentedString(taskparameters)).append("\n");
+    sb.append("    taskdisplayname: ").append(toIndentedString(taskdisplayname)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    runasId: ").append(toIndentedString(runasId)).append("\n");
+    sb.append("    runaspassword: ").append(toIndentedString(runaspassword)).append("\n");
     sb.append("    subject: ").append(toIndentedString(subject)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    isActive: ").append(toIndentedString(isActive)).append("\n");
-    sb.append("    startDateTimeDATE: ").append(toIndentedString(startDateTimeDATE)).append("\n");
-    sb.append("    repetitionKind: ").append(toIndentedString(repetitionKind)).append("\n");
-    sb.append("    repetitionCount: ").append(toIndentedString(repetitionCount)).append("\n");
-    sb.append("    executionDateKind: ").append(toIndentedString(executionDateKind)).append("\n");
-    sb.append("    repetitionPeriodKind: ").append(toIndentedString(repetitionPeriodKind)).append("\n");
-    sb.append("    repetitionTimeDATE: ").append(toIndentedString(repetitionTimeDATE)).append("\n");
-    sb.append("    repetitionDay: ").append(toIndentedString(repetitionDay)).append("\n");
-    sb.append("    repetitionMonth: ").append(toIndentedString(repetitionMonth)).append("\n");
-    sb.append("    repetitionDaysInWeek: ").append(toIndentedString(repetitionDaysInWeek)).append("\n");
-    sb.append("    weekendCorrectionKind: ").append(toIndentedString(weekendCorrectionKind)).append("\n");
-    sb.append("    notificationKind: ").append(toIndentedString(notificationKind)).append("\n");
-    sb.append("    repetitionCounter: ").append(toIndentedString(repetitionCounter)).append("\n");
-    sb.append("    repeatToDateDATE: ").append(toIndentedString(repeatToDateDATE)).append("\n");
-    sb.append("    scheduledDateTimeDATE: ").append(toIndentedString(scheduledDateTimeDATE)).append("\n");
-    sb.append("    repetitionWeek: ").append(toIndentedString(repetitionWeek)).append("\n");
-    sb.append("    scheduledDateTimeStr: ").append(toIndentedString(scheduledDateTimeStr)).append("\n");
-    sb.append("    lastScheduledDateTimeDATE: ").append(toIndentedString(lastScheduledDateTimeDATE)).append("\n");
-    sb.append("    lastScheduledDateTimeStr: ").append(toIndentedString(lastScheduledDateTimeStr)).append("\n");
-    sb.append("    planDescription: ").append(toIndentedString(planDescription)).append("\n");
-    sb.append("    taskContext: ").append(toIndentedString(taskContext)).append("\n");
+    sb.append("    isactive: ").append(toIndentedString(isactive)).append("\n");
+    sb.append("    startdatetimedate: ").append(toIndentedString(startdatetimedate)).append("\n");
+    sb.append("    repetitionkind: ").append(toIndentedString(repetitionkind)).append("\n");
+    sb.append("    repetitioncount: ").append(toIndentedString(repetitioncount)).append("\n");
+    sb.append("    executiondatekind: ").append(toIndentedString(executiondatekind)).append("\n");
+    sb.append("    repetitionperiodkind: ").append(toIndentedString(repetitionperiodkind)).append("\n");
+    sb.append("    repetitiontimedate: ").append(toIndentedString(repetitiontimedate)).append("\n");
+    sb.append("    repetitionday: ").append(toIndentedString(repetitionday)).append("\n");
+    sb.append("    repetitionmonth: ").append(toIndentedString(repetitionmonth)).append("\n");
+    sb.append("    repetitiondaysinweek: ").append(toIndentedString(repetitiondaysinweek)).append("\n");
+    sb.append("    weekendcorrectionkind: ").append(toIndentedString(weekendcorrectionkind)).append("\n");
+    sb.append("    notificationkind: ").append(toIndentedString(notificationkind)).append("\n");
+    sb.append("    repetitioncounter: ").append(toIndentedString(repetitioncounter)).append("\n");
+    sb.append("    repeattodatedate: ").append(toIndentedString(repeattodatedate)).append("\n");
+    sb.append("    scheduleddatetimedate: ").append(toIndentedString(scheduleddatetimedate)).append("\n");
+    sb.append("    repetitionweek: ").append(toIndentedString(repetitionweek)).append("\n");
+    sb.append("    scheduleddatetimestr: ").append(toIndentedString(scheduleddatetimestr)).append("\n");
+    sb.append("    lastscheduleddatetimedate: ").append(toIndentedString(lastscheduleddatetimedate)).append("\n");
+    sb.append("    lastscheduleddatetimestr: ").append(toIndentedString(lastscheduleddatetimestr)).append("\n");
+    sb.append("    plandescription: ").append(toIndentedString(plandescription)).append("\n");
+    sb.append("    taskcontext: ").append(toIndentedString(taskcontext)).append("\n");
     sb.append("    recipients: ").append(toIndentedString(recipients)).append("\n");
     sb.append("    site: ").append(toIndentedString(site)).append("\n");
     sb.append("}");

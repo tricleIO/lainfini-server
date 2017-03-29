@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,285 +35,321 @@ import java.util.Objects;
 /**
  * Firminsolvencyrecord
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Firminsolvencyrecord   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("OrgIdentNumber")
-  private String orgIdentNumber = null;
+  @SerializedName("orgidentnumber")
+  private String orgidentnumber = null;
 
-  @SerializedName("CourtFileNr")
-  private String courtFileNr = null;
+  @SerializedName("courtfilenr")
+  private String courtfilenr = null;
 
-  @SerializedName("ProcessStatus")
-  private Integer processStatus = null;
+  @SerializedName("processstatus")
+  private Integer processstatus = null;
 
-  @SerializedName("ProcessStatusAsText")
-  private String processStatusAsText = null;
+  @SerializedName("processstatusastext")
+  private String processstatusastext = null;
 
-  @SerializedName("LastCheckDateTime$DATE")
-  private DateTime lastCheckDateTimeDATE = null;
+  @SerializedName("lastcheckdatetime$date")
+  private DateTime lastcheckdatetimedate = null;
 
-  @SerializedName("FirmName")
-  private String firmName = null;
+  @SerializedName("firmname")
+  private String firmname = null;
 
-  @SerializedName("FirmAddress")
-  private String firmAddress = null;
+  @SerializedName("firmaddress")
+  private String firmaddress = null;
 
-  @SerializedName("ProcessDetailURL")
-  private String processDetailURL = null;
+  @SerializedName("processdetailurl")
+  private String processdetailurl = null;
 
-  @SerializedName("CourtNr")
-  private Integer courtNr = null;
+  @SerializedName("courtnr")
+  private Integer courtnr = null;
 
-  @SerializedName("LastCheckMessage")
-  private String lastCheckMessage = null;
+  @SerializedName("lastcheckmessage")
+  private String lastcheckmessage = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Firminsolvencyrecord firmID(String firmID) {
-    this.firmID = firmID;
+  public Firminsolvencyrecord displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Firminsolvencyrecord orgIdentNumber(String orgIdentNumber) {
-    this.orgIdentNumber = orgIdentNumber;
+  public Firminsolvencyrecord id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * IČO [persistentní položka]
-   * @return orgIdentNumber
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "IČO [persistentní položka]")
-  public String getOrgIdentNumber() {
-    return orgIdentNumber;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setOrgIdentNumber(String orgIdentNumber) {
-    this.orgIdentNumber = orgIdentNumber;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Firminsolvencyrecord courtFileNr(String courtFileNr) {
-    this.courtFileNr = courtFileNr;
+  public Firminsolvencyrecord classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Firminsolvencyrecord objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Firminsolvencyrecord firmId(String firmId) {
+    this.firmId = firmId;
+    return this;
+  }
+
+   /**
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
+  **/
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
+  }
+
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
+  }
+
+  public Firminsolvencyrecord orgidentnumber(String orgidentnumber) {
+    this.orgidentnumber = orgidentnumber;
+    return this;
+  }
+
+   /**
+   * iČo [persistentní položka]
+   * @return orgidentnumber
+  **/
+  @ApiModelProperty(example = "null", value = "iČo [persistentní položka]")
+  public String getOrgidentnumber() {
+    return orgidentnumber;
+  }
+
+  public void setOrgidentnumber(String orgidentnumber) {
+    this.orgidentnumber = orgidentnumber;
+  }
+
+  public Firminsolvencyrecord courtfilenr(String courtfilenr) {
+    this.courtfilenr = courtfilenr;
     return this;
   }
 
    /**
    * Číslo spisu [persistentní položka]
-   * @return courtFileNr
+   * @return courtfilenr
   **/
   @ApiModelProperty(example = "null", value = "Číslo spisu [persistentní položka]")
-  public String getCourtFileNr() {
-    return courtFileNr;
+  public String getCourtfilenr() {
+    return courtfilenr;
   }
 
-  public void setCourtFileNr(String courtFileNr) {
-    this.courtFileNr = courtFileNr;
+  public void setCourtfilenr(String courtfilenr) {
+    this.courtfilenr = courtfilenr;
   }
 
-  public Firminsolvencyrecord processStatus(Integer processStatus) {
-    this.processStatus = processStatus;
+  public Firminsolvencyrecord processstatus(Integer processstatus) {
+    this.processstatus = processstatus;
     return this;
   }
 
    /**
-   * Stav konkursu [persistentní položka]
-   * @return processStatus
+   * stav konkursu [persistentní položka]
+   * @return processstatus
   **/
-  @ApiModelProperty(example = "null", value = "Stav konkursu [persistentní položka]")
-  public Integer getProcessStatus() {
-    return processStatus;
+  @ApiModelProperty(example = "null", value = "stav konkursu [persistentní položka]")
+  public Integer getProcessstatus() {
+    return processstatus;
   }
 
-  public void setProcessStatus(Integer processStatus) {
-    this.processStatus = processStatus;
+  public void setProcessstatus(Integer processstatus) {
+    this.processstatus = processstatus;
   }
 
-  public Firminsolvencyrecord processStatusAsText(String processStatusAsText) {
-    this.processStatusAsText = processStatusAsText;
+  public Firminsolvencyrecord processstatusastext(String processstatusastext) {
+    this.processstatusastext = processstatusastext;
     return this;
   }
 
    /**
-   * Stav konkursu - text
-   * @return processStatusAsText
+   * stav konkursu - text
+   * @return processstatusastext
   **/
-  @ApiModelProperty(example = "null", value = "Stav konkursu - text")
-  public String getProcessStatusAsText() {
-    return processStatusAsText;
+  @ApiModelProperty(example = "null", value = "stav konkursu - text")
+  public String getProcessstatusastext() {
+    return processstatusastext;
   }
 
-  public void setProcessStatusAsText(String processStatusAsText) {
-    this.processStatusAsText = processStatusAsText;
+  public void setProcessstatusastext(String processstatusastext) {
+    this.processstatusastext = processstatusastext;
   }
 
-  public Firminsolvencyrecord lastCheckDateTimeDATE(DateTime lastCheckDateTimeDATE) {
-    this.lastCheckDateTimeDATE = lastCheckDateTimeDATE;
+  public Firminsolvencyrecord lastcheckdatetimedate(DateTime lastcheckdatetimedate) {
+    this.lastcheckdatetimedate = lastcheckdatetimedate;
     return this;
   }
 
    /**
-   * Datum a čas posledního ověření [persistentní položka]
-   * @return lastCheckDateTimeDATE
+   * datum a čas posledního ověření [persistentní položka]
+   * @return lastcheckdatetimedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum a čas posledního ověření [persistentní položka]")
-  public DateTime getLastCheckDateTimeDATE() {
-    return lastCheckDateTimeDATE;
+  @ApiModelProperty(example = "null", value = "datum a čas posledního ověření [persistentní položka]")
+  public DateTime getLastcheckdatetimedate() {
+    return lastcheckdatetimedate;
   }
 
-  public void setLastCheckDateTimeDATE(DateTime lastCheckDateTimeDATE) {
-    this.lastCheckDateTimeDATE = lastCheckDateTimeDATE;
+  public void setLastcheckdatetimedate(DateTime lastcheckdatetimedate) {
+    this.lastcheckdatetimedate = lastcheckdatetimedate;
   }
 
-  public Firminsolvencyrecord firmName(String firmName) {
-    this.firmName = firmName;
+  public Firminsolvencyrecord firmname(String firmname) {
+    this.firmname = firmname;
     return this;
   }
 
    /**
-   * Název firmy v IR [persistentní položka]
-   * @return firmName
+   * název firmy v ir [persistentní položka]
+   * @return firmname
   **/
-  @ApiModelProperty(example = "null", value = "Název firmy v IR [persistentní položka]")
-  public String getFirmName() {
-    return firmName;
+  @ApiModelProperty(example = "null", value = "název firmy v ir [persistentní položka]")
+  public String getFirmname() {
+    return firmname;
   }
 
-  public void setFirmName(String firmName) {
-    this.firmName = firmName;
+  public void setFirmname(String firmname) {
+    this.firmname = firmname;
   }
 
-  public Firminsolvencyrecord firmAddress(String firmAddress) {
-    this.firmAddress = firmAddress;
+  public Firminsolvencyrecord firmaddress(String firmaddress) {
+    this.firmaddress = firmaddress;
     return this;
   }
 
    /**
-   * Adresa firmy v IR [persistentní položka]
-   * @return firmAddress
+   * adresa firmy v ir [persistentní položka]
+   * @return firmaddress
   **/
-  @ApiModelProperty(example = "null", value = "Adresa firmy v IR [persistentní položka]")
-  public String getFirmAddress() {
-    return firmAddress;
+  @ApiModelProperty(example = "null", value = "adresa firmy v ir [persistentní položka]")
+  public String getFirmaddress() {
+    return firmaddress;
   }
 
-  public void setFirmAddress(String firmAddress) {
-    this.firmAddress = firmAddress;
+  public void setFirmaddress(String firmaddress) {
+    this.firmaddress = firmaddress;
   }
 
-  public Firminsolvencyrecord processDetailURL(String processDetailURL) {
-    this.processDetailURL = processDetailURL;
+  public Firminsolvencyrecord processdetailurl(String processdetailurl) {
+    this.processdetailurl = processdetailurl;
     return this;
   }
 
    /**
-   * URL detailu konkursu [persistentní položka]
-   * @return processDetailURL
+   * url detailu konkursu [persistentní položka]
+   * @return processdetailurl
   **/
-  @ApiModelProperty(example = "null", value = "URL detailu konkursu [persistentní položka]")
-  public String getProcessDetailURL() {
-    return processDetailURL;
+  @ApiModelProperty(example = "null", value = "url detailu konkursu [persistentní položka]")
+  public String getProcessdetailurl() {
+    return processdetailurl;
   }
 
-  public void setProcessDetailURL(String processDetailURL) {
-    this.processDetailURL = processDetailURL;
+  public void setProcessdetailurl(String processdetailurl) {
+    this.processdetailurl = processdetailurl;
   }
 
-  public Firminsolvencyrecord courtNr(Integer courtNr) {
-    this.courtNr = courtNr;
+  public Firminsolvencyrecord courtnr(Integer courtnr) {
+    this.courtnr = courtnr;
     return this;
   }
 
    /**
    * Číslo senátu [persistentní položka]
-   * @return courtNr
+   * @return courtnr
   **/
   @ApiModelProperty(example = "null", value = "Číslo senátu [persistentní položka]")
-  public Integer getCourtNr() {
-    return courtNr;
+  public Integer getCourtnr() {
+    return courtnr;
   }
 
-  public void setCourtNr(Integer courtNr) {
-    this.courtNr = courtNr;
+  public void setCourtnr(Integer courtnr) {
+    this.courtnr = courtnr;
   }
 
-  public Firminsolvencyrecord lastCheckMessage(String lastCheckMessage) {
-    this.lastCheckMessage = lastCheckMessage;
+  public Firminsolvencyrecord lastcheckmessage(String lastcheckmessage) {
+    this.lastcheckmessage = lastcheckmessage;
     return this;
   }
 
    /**
-   * Zpráva z provedeného ověření [persistentní položka]
-   * @return lastCheckMessage
+   * zpráva z provedeného ověření [persistentní položka]
+   * @return lastcheckmessage
   **/
-  @ApiModelProperty(example = "null", value = "Zpráva z provedeného ověření [persistentní položka]")
-  public String getLastCheckMessage() {
-    return lastCheckMessage;
+  @ApiModelProperty(example = "null", value = "zpráva z provedeného ověření [persistentní položka]")
+  public String getLastcheckmessage() {
+    return lastcheckmessage;
   }
 
-  public void setLastCheckMessage(String lastCheckMessage) {
-    this.lastCheckMessage = lastCheckMessage;
+  public void setLastcheckmessage(String lastcheckmessage) {
+    this.lastcheckmessage = lastcheckmessage;
   }
 
 
@@ -326,26 +362,26 @@ public class Firminsolvencyrecord   {
       return false;
     }
     Firminsolvencyrecord firminsolvencyrecord = (Firminsolvencyrecord) o;
-    return Objects.equals(this.displayName, firminsolvencyrecord.displayName) &&
-        Objects.equals(this.ID, firminsolvencyrecord.ID) &&
-        Objects.equals(this.classID, firminsolvencyrecord.classID) &&
-        Objects.equals(this.objVersion, firminsolvencyrecord.objVersion) &&
-        Objects.equals(this.firmID, firminsolvencyrecord.firmID) &&
-        Objects.equals(this.orgIdentNumber, firminsolvencyrecord.orgIdentNumber) &&
-        Objects.equals(this.courtFileNr, firminsolvencyrecord.courtFileNr) &&
-        Objects.equals(this.processStatus, firminsolvencyrecord.processStatus) &&
-        Objects.equals(this.processStatusAsText, firminsolvencyrecord.processStatusAsText) &&
-        Objects.equals(this.lastCheckDateTimeDATE, firminsolvencyrecord.lastCheckDateTimeDATE) &&
-        Objects.equals(this.firmName, firminsolvencyrecord.firmName) &&
-        Objects.equals(this.firmAddress, firminsolvencyrecord.firmAddress) &&
-        Objects.equals(this.processDetailURL, firminsolvencyrecord.processDetailURL) &&
-        Objects.equals(this.courtNr, firminsolvencyrecord.courtNr) &&
-        Objects.equals(this.lastCheckMessage, firminsolvencyrecord.lastCheckMessage);
+    return Objects.equals(this.displayname, firminsolvencyrecord.displayname) &&
+        Objects.equals(this.id, firminsolvencyrecord.id) &&
+        Objects.equals(this.classid, firminsolvencyrecord.classid) &&
+        Objects.equals(this.objversion, firminsolvencyrecord.objversion) &&
+        Objects.equals(this.firmId, firminsolvencyrecord.firmId) &&
+        Objects.equals(this.orgidentnumber, firminsolvencyrecord.orgidentnumber) &&
+        Objects.equals(this.courtfilenr, firminsolvencyrecord.courtfilenr) &&
+        Objects.equals(this.processstatus, firminsolvencyrecord.processstatus) &&
+        Objects.equals(this.processstatusastext, firminsolvencyrecord.processstatusastext) &&
+        Objects.equals(this.lastcheckdatetimedate, firminsolvencyrecord.lastcheckdatetimedate) &&
+        Objects.equals(this.firmname, firminsolvencyrecord.firmname) &&
+        Objects.equals(this.firmaddress, firminsolvencyrecord.firmaddress) &&
+        Objects.equals(this.processdetailurl, firminsolvencyrecord.processdetailurl) &&
+        Objects.equals(this.courtnr, firminsolvencyrecord.courtnr) &&
+        Objects.equals(this.lastcheckmessage, firminsolvencyrecord.lastcheckmessage);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, firmID, orgIdentNumber, courtFileNr, processStatus, processStatusAsText, lastCheckDateTimeDATE, firmName, firmAddress, processDetailURL, courtNr, lastCheckMessage);
+    return Objects.hash(displayname, id, classid, objversion, firmId, orgidentnumber, courtfilenr, processstatus, processstatusastext, lastcheckdatetimedate, firmname, firmaddress, processdetailurl, courtnr, lastcheckmessage);
   }
 
   @Override
@@ -353,21 +389,21 @@ public class Firminsolvencyrecord   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Firminsolvencyrecord {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    orgIdentNumber: ").append(toIndentedString(orgIdentNumber)).append("\n");
-    sb.append("    courtFileNr: ").append(toIndentedString(courtFileNr)).append("\n");
-    sb.append("    processStatus: ").append(toIndentedString(processStatus)).append("\n");
-    sb.append("    processStatusAsText: ").append(toIndentedString(processStatusAsText)).append("\n");
-    sb.append("    lastCheckDateTimeDATE: ").append(toIndentedString(lastCheckDateTimeDATE)).append("\n");
-    sb.append("    firmName: ").append(toIndentedString(firmName)).append("\n");
-    sb.append("    firmAddress: ").append(toIndentedString(firmAddress)).append("\n");
-    sb.append("    processDetailURL: ").append(toIndentedString(processDetailURL)).append("\n");
-    sb.append("    courtNr: ").append(toIndentedString(courtNr)).append("\n");
-    sb.append("    lastCheckMessage: ").append(toIndentedString(lastCheckMessage)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    orgidentnumber: ").append(toIndentedString(orgidentnumber)).append("\n");
+    sb.append("    courtfilenr: ").append(toIndentedString(courtfilenr)).append("\n");
+    sb.append("    processstatus: ").append(toIndentedString(processstatus)).append("\n");
+    sb.append("    processstatusastext: ").append(toIndentedString(processstatusastext)).append("\n");
+    sb.append("    lastcheckdatetimedate: ").append(toIndentedString(lastcheckdatetimedate)).append("\n");
+    sb.append("    firmname: ").append(toIndentedString(firmname)).append("\n");
+    sb.append("    firmaddress: ").append(toIndentedString(firmaddress)).append("\n");
+    sb.append("    processdetailurl: ").append(toIndentedString(processdetailurl)).append("\n");
+    sb.append("    courtnr: ").append(toIndentedString(courtnr)).append("\n");
+    sb.append("    lastcheckmessage: ").append(toIndentedString(lastcheckmessage)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,192 +34,237 @@ import java.util.Objects;
 /**
  * Vatsummarydefinitionprefillexpression
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Vatsummarydefinitionprefillexpression   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("FieldCode")
-  private Integer fieldCode = null;
+  @SerializedName("fieldcode")
+  private Integer fieldcode = null;
 
-  @SerializedName("UseExpression")
-  private Integer useExpression = null;
+  @SerializedName("useexpression")
+  private Integer useexpression = null;
 
-  @SerializedName("SystemExpression")
-  private String systemExpression = null;
+  @SerializedName("systemexpression")
+  private String systemexpression = null;
 
-  @SerializedName("UserExpression")
-  private String userExpression = null;
+  @SerializedName("userexpression")
+  private String userexpression = null;
 
-  @SerializedName("FieldName")
-  private String fieldName = null;
+  @SerializedName("fieldname")
+  private String fieldname = null;
 
-  @SerializedName("PrefillKind")
-  private Integer prefillKind = null;
+  @SerializedName("prefillkind")
+  private Integer prefillkind = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Definice pro DPH přiznání [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Definice pro DPH přiznání [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Vatsummarydefinitionprefillexpression fieldCode(Integer fieldCode) {
-    this.fieldCode = fieldCode;
+  public Vatsummarydefinitionprefillexpression displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * FieldCode [persistentní položka]
-   * @return fieldCode
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "FieldCode [persistentní položka]")
-  public Integer getFieldCode() {
-    return fieldCode;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setFieldCode(Integer fieldCode) {
-    this.fieldCode = fieldCode;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Vatsummarydefinitionprefillexpression useExpression(Integer useExpression) {
-    this.useExpression = useExpression;
+  public Vatsummarydefinitionprefillexpression id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * UseExpression [persistentní položka]
-   * @return useExpression
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "UseExpression [persistentní položka]")
-  public Integer getUseExpression() {
-    return useExpression;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setUseExpression(Integer useExpression) {
-    this.useExpression = useExpression;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Vatsummarydefinitionprefillexpression systemExpression(String systemExpression) {
-    this.systemExpression = systemExpression;
+  public Vatsummarydefinitionprefillexpression classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * SystemExpression [persistentní položka]
-   * @return systemExpression
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "SystemExpression [persistentní položka]")
-  public String getSystemExpression() {
-    return systemExpression;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setSystemExpression(String systemExpression) {
-    this.systemExpression = systemExpression;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Vatsummarydefinitionprefillexpression userExpression(String userExpression) {
-    this.userExpression = userExpression;
+  public Vatsummarydefinitionprefillexpression objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * UserExpression [persistentní položka]
-   * @return userExpression
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "UserExpression [persistentní položka]")
-  public String getUserExpression() {
-    return userExpression;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setUserExpression(String userExpression) {
-    this.userExpression = userExpression;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Vatsummarydefinitionprefillexpression fieldName(String fieldName) {
-    this.fieldName = fieldName;
+  public Vatsummarydefinitionprefillexpression parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * FieldName
-   * @return fieldName
+   * vlastník; id objektu definice pro dph přiznání [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "FieldName")
-  public String getFieldName() {
-    return fieldName;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu definice pro dph přiznání [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setFieldName(String fieldName) {
-    this.fieldName = fieldName;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Vatsummarydefinitionprefillexpression prefillKind(Integer prefillKind) {
-    this.prefillKind = prefillKind;
+  public Vatsummarydefinitionprefillexpression fieldcode(Integer fieldcode) {
+    this.fieldcode = fieldcode;
     return this;
   }
 
    /**
-   * Předvyplnit [persistentní položka]
-   * @return prefillKind
+   * fieldcode [persistentní položka]
+   * @return fieldcode
   **/
-  @ApiModelProperty(example = "null", value = "Předvyplnit [persistentní položka]")
-  public Integer getPrefillKind() {
-    return prefillKind;
+  @ApiModelProperty(example = "null", value = "fieldcode [persistentní položka]")
+  public Integer getFieldcode() {
+    return fieldcode;
   }
 
-  public void setPrefillKind(Integer prefillKind) {
-    this.prefillKind = prefillKind;
+  public void setFieldcode(Integer fieldcode) {
+    this.fieldcode = fieldcode;
+  }
+
+  public Vatsummarydefinitionprefillexpression useexpression(Integer useexpression) {
+    this.useexpression = useexpression;
+    return this;
+  }
+
+   /**
+   * useexpression [persistentní položka]
+   * @return useexpression
+  **/
+  @ApiModelProperty(example = "null", value = "useexpression [persistentní položka]")
+  public Integer getUseexpression() {
+    return useexpression;
+  }
+
+  public void setUseexpression(Integer useexpression) {
+    this.useexpression = useexpression;
+  }
+
+  public Vatsummarydefinitionprefillexpression systemexpression(String systemexpression) {
+    this.systemexpression = systemexpression;
+    return this;
+  }
+
+   /**
+   * systemexpression [persistentní položka]
+   * @return systemexpression
+  **/
+  @ApiModelProperty(example = "null", value = "systemexpression [persistentní položka]")
+  public String getSystemexpression() {
+    return systemexpression;
+  }
+
+  public void setSystemexpression(String systemexpression) {
+    this.systemexpression = systemexpression;
+  }
+
+  public Vatsummarydefinitionprefillexpression userexpression(String userexpression) {
+    this.userexpression = userexpression;
+    return this;
+  }
+
+   /**
+   * userexpression [persistentní položka]
+   * @return userexpression
+  **/
+  @ApiModelProperty(example = "null", value = "userexpression [persistentní položka]")
+  public String getUserexpression() {
+    return userexpression;
+  }
+
+  public void setUserexpression(String userexpression) {
+    this.userexpression = userexpression;
+  }
+
+  public Vatsummarydefinitionprefillexpression fieldname(String fieldname) {
+    this.fieldname = fieldname;
+    return this;
+  }
+
+   /**
+   * fieldname
+   * @return fieldname
+  **/
+  @ApiModelProperty(example = "null", value = "fieldname")
+  public String getFieldname() {
+    return fieldname;
+  }
+
+  public void setFieldname(String fieldname) {
+    this.fieldname = fieldname;
+  }
+
+  public Vatsummarydefinitionprefillexpression prefillkind(Integer prefillkind) {
+    this.prefillkind = prefillkind;
+    return this;
+  }
+
+   /**
+   * předvyplnit [persistentní položka]
+   * @return prefillkind
+  **/
+  @ApiModelProperty(example = "null", value = "předvyplnit [persistentní položka]")
+  public Integer getPrefillkind() {
+    return prefillkind;
+  }
+
+  public void setPrefillkind(Integer prefillkind) {
+    this.prefillkind = prefillkind;
   }
 
 
@@ -232,22 +277,22 @@ public class Vatsummarydefinitionprefillexpression   {
       return false;
     }
     Vatsummarydefinitionprefillexpression vatsummarydefinitionprefillexpression = (Vatsummarydefinitionprefillexpression) o;
-    return Objects.equals(this.displayName, vatsummarydefinitionprefillexpression.displayName) &&
-        Objects.equals(this.ID, vatsummarydefinitionprefillexpression.ID) &&
-        Objects.equals(this.classID, vatsummarydefinitionprefillexpression.classID) &&
-        Objects.equals(this.objVersion, vatsummarydefinitionprefillexpression.objVersion) &&
-        Objects.equals(this.parentID, vatsummarydefinitionprefillexpression.parentID) &&
-        Objects.equals(this.fieldCode, vatsummarydefinitionprefillexpression.fieldCode) &&
-        Objects.equals(this.useExpression, vatsummarydefinitionprefillexpression.useExpression) &&
-        Objects.equals(this.systemExpression, vatsummarydefinitionprefillexpression.systemExpression) &&
-        Objects.equals(this.userExpression, vatsummarydefinitionprefillexpression.userExpression) &&
-        Objects.equals(this.fieldName, vatsummarydefinitionprefillexpression.fieldName) &&
-        Objects.equals(this.prefillKind, vatsummarydefinitionprefillexpression.prefillKind);
+    return Objects.equals(this.displayname, vatsummarydefinitionprefillexpression.displayname) &&
+        Objects.equals(this.id, vatsummarydefinitionprefillexpression.id) &&
+        Objects.equals(this.classid, vatsummarydefinitionprefillexpression.classid) &&
+        Objects.equals(this.objversion, vatsummarydefinitionprefillexpression.objversion) &&
+        Objects.equals(this.parentId, vatsummarydefinitionprefillexpression.parentId) &&
+        Objects.equals(this.fieldcode, vatsummarydefinitionprefillexpression.fieldcode) &&
+        Objects.equals(this.useexpression, vatsummarydefinitionprefillexpression.useexpression) &&
+        Objects.equals(this.systemexpression, vatsummarydefinitionprefillexpression.systemexpression) &&
+        Objects.equals(this.userexpression, vatsummarydefinitionprefillexpression.userexpression) &&
+        Objects.equals(this.fieldname, vatsummarydefinitionprefillexpression.fieldname) &&
+        Objects.equals(this.prefillkind, vatsummarydefinitionprefillexpression.prefillkind);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, fieldCode, useExpression, systemExpression, userExpression, fieldName, prefillKind);
+    return Objects.hash(displayname, id, classid, objversion, parentId, fieldcode, useexpression, systemexpression, userexpression, fieldname, prefillkind);
   }
 
   @Override
@@ -255,17 +300,17 @@ public class Vatsummarydefinitionprefillexpression   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Vatsummarydefinitionprefillexpression {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    fieldCode: ").append(toIndentedString(fieldCode)).append("\n");
-    sb.append("    useExpression: ").append(toIndentedString(useExpression)).append("\n");
-    sb.append("    systemExpression: ").append(toIndentedString(systemExpression)).append("\n");
-    sb.append("    userExpression: ").append(toIndentedString(userExpression)).append("\n");
-    sb.append("    fieldName: ").append(toIndentedString(fieldName)).append("\n");
-    sb.append("    prefillKind: ").append(toIndentedString(prefillKind)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    fieldcode: ").append(toIndentedString(fieldcode)).append("\n");
+    sb.append("    useexpression: ").append(toIndentedString(useexpression)).append("\n");
+    sb.append("    systemexpression: ").append(toIndentedString(systemexpression)).append("\n");
+    sb.append("    userexpression: ").append(toIndentedString(userexpression)).append("\n");
+    sb.append("    fieldname: ").append(toIndentedString(fieldname)).append("\n");
+    sb.append("    prefillkind: ").append(toIndentedString(prefillkind)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,171 +34,216 @@ import java.util.Objects;
 /**
  * Posmirrordefinitionrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posmirrordefinitionrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("ShortFallPrice")
-  private Double shortFallPrice = null;
+  @SerializedName("shortfallprice")
+  private Double shortfallprice = null;
 
-  @SerializedName("ShortFallPriceExists")
-  private Boolean shortFallPriceExists = null;
+  @SerializedName("shortfallpriceexists")
+  private Boolean shortfallpriceexists = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Definice zrcadla [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Definice zrcadla [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Posmirrordefinitionrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Posmirrordefinitionrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Posmirrordefinitionrow storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Posmirrordefinitionrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Posmirrordefinitionrow qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Posmirrordefinitionrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Posmirrordefinitionrow shortFallPrice(Double shortFallPrice) {
-    this.shortFallPrice = shortFallPrice;
+  public Posmirrordefinitionrow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Cena
-   * @return shortFallPrice
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Cena")
-  public Double getShortFallPrice() {
-    return shortFallPrice;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setShortFallPrice(Double shortFallPrice) {
-    this.shortFallPrice = shortFallPrice;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Posmirrordefinitionrow shortFallPriceExists(Boolean shortFallPriceExists) {
-    this.shortFallPriceExists = shortFallPriceExists;
+  public Posmirrordefinitionrow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Cena existuje
-   * @return shortFallPriceExists
+   * vlastník; id objektu definice zrcadla [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Cena existuje")
-  public Boolean getShortFallPriceExists() {
-    return shortFallPriceExists;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu definice zrcadla [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setShortFallPriceExists(Boolean shortFallPriceExists) {
-    this.shortFallPriceExists = shortFallPriceExists;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Posmirrordefinitionrow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Posmirrordefinitionrow storecardId(String storecardId) {
+    this.storecardId = storecardId;
+    return this;
+  }
+
+   /**
+   * skladová karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
+  **/
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
+  }
+
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
+  }
+
+  public Posmirrordefinitionrow qunit(String qunit) {
+    this.qunit = qunit;
+    return this;
+  }
+
+   /**
+   * jednotka [persistentní položka]
+   * @return qunit
+  **/
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
+  }
+
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
+  }
+
+  public Posmirrordefinitionrow shortfallprice(Double shortfallprice) {
+    this.shortfallprice = shortfallprice;
+    return this;
+  }
+
+   /**
+   * cena
+   * @return shortfallprice
+  **/
+  @ApiModelProperty(example = "null", value = "cena")
+  public Double getShortfallprice() {
+    return shortfallprice;
+  }
+
+  public void setShortfallprice(Double shortfallprice) {
+    this.shortfallprice = shortfallprice;
+  }
+
+  public Posmirrordefinitionrow shortfallpriceexists(Boolean shortfallpriceexists) {
+    this.shortfallpriceexists = shortfallpriceexists;
+    return this;
+  }
+
+   /**
+   * cena existuje
+   * @return shortfallpriceexists
+  **/
+  @ApiModelProperty(example = "null", value = "cena existuje")
+  public Boolean getShortfallpriceexists() {
+    return shortfallpriceexists;
+  }
+
+  public void setShortfallpriceexists(Boolean shortfallpriceexists) {
+    this.shortfallpriceexists = shortfallpriceexists;
   }
 
 
@@ -211,21 +256,21 @@ public class Posmirrordefinitionrow   {
       return false;
     }
     Posmirrordefinitionrow posmirrordefinitionrow = (Posmirrordefinitionrow) o;
-    return Objects.equals(this.displayName, posmirrordefinitionrow.displayName) &&
-        Objects.equals(this.ID, posmirrordefinitionrow.ID) &&
-        Objects.equals(this.classID, posmirrordefinitionrow.classID) &&
-        Objects.equals(this.objVersion, posmirrordefinitionrow.objVersion) &&
-        Objects.equals(this.parentID, posmirrordefinitionrow.parentID) &&
-        Objects.equals(this.posIndex, posmirrordefinitionrow.posIndex) &&
-        Objects.equals(this.storeCardID, posmirrordefinitionrow.storeCardID) &&
-        Objects.equals(this.qUnit, posmirrordefinitionrow.qUnit) &&
-        Objects.equals(this.shortFallPrice, posmirrordefinitionrow.shortFallPrice) &&
-        Objects.equals(this.shortFallPriceExists, posmirrordefinitionrow.shortFallPriceExists);
+    return Objects.equals(this.displayname, posmirrordefinitionrow.displayname) &&
+        Objects.equals(this.id, posmirrordefinitionrow.id) &&
+        Objects.equals(this.classid, posmirrordefinitionrow.classid) &&
+        Objects.equals(this.objversion, posmirrordefinitionrow.objversion) &&
+        Objects.equals(this.parentId, posmirrordefinitionrow.parentId) &&
+        Objects.equals(this.posindex, posmirrordefinitionrow.posindex) &&
+        Objects.equals(this.storecardId, posmirrordefinitionrow.storecardId) &&
+        Objects.equals(this.qunit, posmirrordefinitionrow.qunit) &&
+        Objects.equals(this.shortfallprice, posmirrordefinitionrow.shortfallprice) &&
+        Objects.equals(this.shortfallpriceexists, posmirrordefinitionrow.shortfallpriceexists);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, storeCardID, qUnit, shortFallPrice, shortFallPriceExists);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, storecardId, qunit, shortfallprice, shortfallpriceexists);
   }
 
   @Override
@@ -233,16 +278,16 @@ public class Posmirrordefinitionrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posmirrordefinitionrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    shortFallPrice: ").append(toIndentedString(shortFallPrice)).append("\n");
-    sb.append("    shortFallPriceExists: ").append(toIndentedString(shortFallPriceExists)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    shortfallprice: ").append(toIndentedString(shortfallprice)).append("\n");
+    sb.append("    shortfallpriceexists: ").append(toIndentedString(shortfallpriceexists)).append("\n");
     sb.append("}");
     return sb.toString();
   }

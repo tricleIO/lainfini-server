@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,132 +34,177 @@ import java.util.Objects;
 /**
  * Fastsearchdefinitionindex
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Fastsearchdefinitionindex   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("IndexExpression")
-  private String indexExpression = null;
+  @SerializedName("indexexpression")
+  private String indexexpression = null;
 
-  @SerializedName("Ready")
+  @SerializedName("ready")
   private Boolean ready = null;
 
-  @SerializedName("WordSplitKind")
-  private Integer wordSplitKind = null;
+  @SerializedName("wordsplitkind")
+  private Integer wordsplitkind = null;
 
-  @SerializedName("WordSplitKindStr")
-  private String wordSplitKindStr = null;
+  @SerializedName("wordsplitkindstr")
+  private String wordsplitkindstr = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("MinWordLength")
-  private Integer minWordLength = null;
+  @SerializedName("minwordlength")
+  private Integer minwordlength = null;
 
-  @SerializedName("MaxWordLength")
-  private Integer maxWordLength = null;
+  @SerializedName("maxwordlength")
+  private Integer maxwordlength = null;
 
-  @SerializedName("WordSplitDelimiters")
-  private String wordSplitDelimiters = null;
+  @SerializedName("wordsplitdelimiters")
+  private String wordsplitdelimiters = null;
 
-  @SerializedName("GID")
-  private String GID = null;
+  @SerializedName("gid")
+  private String gid = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Fulltextové hledání - definice [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Fulltextové hledání - definice [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Fastsearchdefinitionindex posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Fastsearchdefinitionindex displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Fastsearchdefinitionindex indexExpression(String indexExpression) {
-    this.indexExpression = indexExpression;
+  public Fastsearchdefinitionindex id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Výraz [persistentní položka]
-   * @return indexExpression
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Výraz [persistentní položka]")
-  public String getIndexExpression() {
-    return indexExpression;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setIndexExpression(String indexExpression) {
-    this.indexExpression = indexExpression;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Fastsearchdefinitionindex classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Fastsearchdefinitionindex objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Fastsearchdefinitionindex parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu fulltextové hledání - definice [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu fulltextové hledání - definice [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Fastsearchdefinitionindex posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Fastsearchdefinitionindex indexexpression(String indexexpression) {
+    this.indexexpression = indexexpression;
+    return this;
+  }
+
+   /**
+   * výraz [persistentní položka]
+   * @return indexexpression
+  **/
+  @ApiModelProperty(example = "null", value = "výraz [persistentní položka]")
+  public String getIndexexpression() {
+    return indexexpression;
+  }
+
+  public void setIndexexpression(String indexexpression) {
+    this.indexexpression = indexexpression;
   }
 
   public Fastsearchdefinitionindex ready(Boolean ready) {
@@ -168,10 +213,10 @@ public class Fastsearchdefinitionindex   {
   }
 
    /**
-   * Aktualizováno [persistentní položka]
+   * aktualizováno [persistentní položka]
    * @return ready
   **/
-  @ApiModelProperty(example = "null", value = "Aktualizováno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "aktualizováno [persistentní položka]")
   public Boolean getReady() {
     return ready;
   }
@@ -180,40 +225,40 @@ public class Fastsearchdefinitionindex   {
     this.ready = ready;
   }
 
-  public Fastsearchdefinitionindex wordSplitKind(Integer wordSplitKind) {
-    this.wordSplitKind = wordSplitKind;
+  public Fastsearchdefinitionindex wordsplitkind(Integer wordsplitkind) {
+    this.wordsplitkind = wordsplitkind;
     return this;
   }
 
    /**
-   * Dělení slov [persistentní položka]
-   * @return wordSplitKind
+   * dělení slov [persistentní položka]
+   * @return wordsplitkind
   **/
-  @ApiModelProperty(example = "null", value = "Dělení slov [persistentní položka]")
-  public Integer getWordSplitKind() {
-    return wordSplitKind;
+  @ApiModelProperty(example = "null", value = "dělení slov [persistentní položka]")
+  public Integer getWordsplitkind() {
+    return wordsplitkind;
   }
 
-  public void setWordSplitKind(Integer wordSplitKind) {
-    this.wordSplitKind = wordSplitKind;
+  public void setWordsplitkind(Integer wordsplitkind) {
+    this.wordsplitkind = wordsplitkind;
   }
 
-  public Fastsearchdefinitionindex wordSplitKindStr(String wordSplitKindStr) {
-    this.wordSplitKindStr = wordSplitKindStr;
+  public Fastsearchdefinitionindex wordsplitkindstr(String wordsplitkindstr) {
+    this.wordsplitkindstr = wordsplitkindstr;
     return this;
   }
 
    /**
-   * Dělení slov
-   * @return wordSplitKindStr
+   * dělení slov
+   * @return wordsplitkindstr
   **/
-  @ApiModelProperty(example = "null", value = "Dělení slov")
-  public String getWordSplitKindStr() {
-    return wordSplitKindStr;
+  @ApiModelProperty(example = "null", value = "dělení slov")
+  public String getWordsplitkindstr() {
+    return wordsplitkindstr;
   }
 
-  public void setWordSplitKindStr(String wordSplitKindStr) {
-    this.wordSplitKindStr = wordSplitKindStr;
+  public void setWordsplitkindstr(String wordsplitkindstr) {
+    this.wordsplitkindstr = wordsplitkindstr;
   }
 
   public Fastsearchdefinitionindex name(String name) {
@@ -222,10 +267,10 @@ public class Fastsearchdefinitionindex   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -234,76 +279,76 @@ public class Fastsearchdefinitionindex   {
     this.name = name;
   }
 
-  public Fastsearchdefinitionindex minWordLength(Integer minWordLength) {
-    this.minWordLength = minWordLength;
+  public Fastsearchdefinitionindex minwordlength(Integer minwordlength) {
+    this.minwordlength = minwordlength;
     return this;
   }
 
    /**
-   * Min. délka slova [persistentní položka]
-   * @return minWordLength
+   * min. délka slova [persistentní položka]
+   * @return minwordlength
   **/
-  @ApiModelProperty(example = "null", value = "Min. délka slova [persistentní položka]")
-  public Integer getMinWordLength() {
-    return minWordLength;
+  @ApiModelProperty(example = "null", value = "min. délka slova [persistentní položka]")
+  public Integer getMinwordlength() {
+    return minwordlength;
   }
 
-  public void setMinWordLength(Integer minWordLength) {
-    this.minWordLength = minWordLength;
+  public void setMinwordlength(Integer minwordlength) {
+    this.minwordlength = minwordlength;
   }
 
-  public Fastsearchdefinitionindex maxWordLength(Integer maxWordLength) {
-    this.maxWordLength = maxWordLength;
+  public Fastsearchdefinitionindex maxwordlength(Integer maxwordlength) {
+    this.maxwordlength = maxwordlength;
     return this;
   }
 
    /**
-   * Max. délka slova [persistentní položka]
-   * @return maxWordLength
+   * max. délka slova [persistentní položka]
+   * @return maxwordlength
   **/
-  @ApiModelProperty(example = "null", value = "Max. délka slova [persistentní položka]")
-  public Integer getMaxWordLength() {
-    return maxWordLength;
+  @ApiModelProperty(example = "null", value = "max. délka slova [persistentní položka]")
+  public Integer getMaxwordlength() {
+    return maxwordlength;
   }
 
-  public void setMaxWordLength(Integer maxWordLength) {
-    this.maxWordLength = maxWordLength;
+  public void setMaxwordlength(Integer maxwordlength) {
+    this.maxwordlength = maxwordlength;
   }
 
-  public Fastsearchdefinitionindex wordSplitDelimiters(String wordSplitDelimiters) {
-    this.wordSplitDelimiters = wordSplitDelimiters;
+  public Fastsearchdefinitionindex wordsplitdelimiters(String wordsplitdelimiters) {
+    this.wordsplitdelimiters = wordsplitdelimiters;
     return this;
   }
 
    /**
-   * Oddělovače [persistentní položka]
-   * @return wordSplitDelimiters
+   * oddělovače [persistentní položka]
+   * @return wordsplitdelimiters
   **/
-  @ApiModelProperty(example = "null", value = "Oddělovače [persistentní položka]")
-  public String getWordSplitDelimiters() {
-    return wordSplitDelimiters;
+  @ApiModelProperty(example = "null", value = "oddělovače [persistentní položka]")
+  public String getWordsplitdelimiters() {
+    return wordsplitdelimiters;
   }
 
-  public void setWordSplitDelimiters(String wordSplitDelimiters) {
-    this.wordSplitDelimiters = wordSplitDelimiters;
+  public void setWordsplitdelimiters(String wordsplitdelimiters) {
+    this.wordsplitdelimiters = wordsplitdelimiters;
   }
 
-  public Fastsearchdefinitionindex GID(String GID) {
-    this.GID = GID;
+  public Fastsearchdefinitionindex gid(String gid) {
+    this.gid = gid;
     return this;
   }
 
    /**
-   * Identifikátor inst. sady [persistentní položka]
-   * @return GID
+   * identifikátor inst. sady [persistentní položka]
+   * @return gid
   **/
-  @ApiModelProperty(example = "null", value = "Identifikátor inst. sady [persistentní položka]")
-  public String getGID() {
-    return GID;
+  @ApiModelProperty(example = "null", value = "identifikátor inst. sady [persistentní položka]")
+  public String getGid() {
+    return gid;
   }
 
-  public void setGID(String GID) {
-    this.GID = GID;
+  public void setGid(String gid) {
+    this.gid = gid;
   }
 
 
@@ -316,26 +361,26 @@ public class Fastsearchdefinitionindex   {
       return false;
     }
     Fastsearchdefinitionindex fastsearchdefinitionindex = (Fastsearchdefinitionindex) o;
-    return Objects.equals(this.displayName, fastsearchdefinitionindex.displayName) &&
-        Objects.equals(this.ID, fastsearchdefinitionindex.ID) &&
-        Objects.equals(this.classID, fastsearchdefinitionindex.classID) &&
-        Objects.equals(this.objVersion, fastsearchdefinitionindex.objVersion) &&
-        Objects.equals(this.parentID, fastsearchdefinitionindex.parentID) &&
-        Objects.equals(this.posIndex, fastsearchdefinitionindex.posIndex) &&
-        Objects.equals(this.indexExpression, fastsearchdefinitionindex.indexExpression) &&
+    return Objects.equals(this.displayname, fastsearchdefinitionindex.displayname) &&
+        Objects.equals(this.id, fastsearchdefinitionindex.id) &&
+        Objects.equals(this.classid, fastsearchdefinitionindex.classid) &&
+        Objects.equals(this.objversion, fastsearchdefinitionindex.objversion) &&
+        Objects.equals(this.parentId, fastsearchdefinitionindex.parentId) &&
+        Objects.equals(this.posindex, fastsearchdefinitionindex.posindex) &&
+        Objects.equals(this.indexexpression, fastsearchdefinitionindex.indexexpression) &&
         Objects.equals(this.ready, fastsearchdefinitionindex.ready) &&
-        Objects.equals(this.wordSplitKind, fastsearchdefinitionindex.wordSplitKind) &&
-        Objects.equals(this.wordSplitKindStr, fastsearchdefinitionindex.wordSplitKindStr) &&
+        Objects.equals(this.wordsplitkind, fastsearchdefinitionindex.wordsplitkind) &&
+        Objects.equals(this.wordsplitkindstr, fastsearchdefinitionindex.wordsplitkindstr) &&
         Objects.equals(this.name, fastsearchdefinitionindex.name) &&
-        Objects.equals(this.minWordLength, fastsearchdefinitionindex.minWordLength) &&
-        Objects.equals(this.maxWordLength, fastsearchdefinitionindex.maxWordLength) &&
-        Objects.equals(this.wordSplitDelimiters, fastsearchdefinitionindex.wordSplitDelimiters) &&
-        Objects.equals(this.GID, fastsearchdefinitionindex.GID);
+        Objects.equals(this.minwordlength, fastsearchdefinitionindex.minwordlength) &&
+        Objects.equals(this.maxwordlength, fastsearchdefinitionindex.maxwordlength) &&
+        Objects.equals(this.wordsplitdelimiters, fastsearchdefinitionindex.wordsplitdelimiters) &&
+        Objects.equals(this.gid, fastsearchdefinitionindex.gid);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, indexExpression, ready, wordSplitKind, wordSplitKindStr, name, minWordLength, maxWordLength, wordSplitDelimiters, GID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, indexexpression, ready, wordsplitkind, wordsplitkindstr, name, minwordlength, maxwordlength, wordsplitdelimiters, gid);
   }
 
   @Override
@@ -343,21 +388,21 @@ public class Fastsearchdefinitionindex   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Fastsearchdefinitionindex {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    indexExpression: ").append(toIndentedString(indexExpression)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    indexexpression: ").append(toIndentedString(indexexpression)).append("\n");
     sb.append("    ready: ").append(toIndentedString(ready)).append("\n");
-    sb.append("    wordSplitKind: ").append(toIndentedString(wordSplitKind)).append("\n");
-    sb.append("    wordSplitKindStr: ").append(toIndentedString(wordSplitKindStr)).append("\n");
+    sb.append("    wordsplitkind: ").append(toIndentedString(wordsplitkind)).append("\n");
+    sb.append("    wordsplitkindstr: ").append(toIndentedString(wordsplitkindstr)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    minWordLength: ").append(toIndentedString(minWordLength)).append("\n");
-    sb.append("    maxWordLength: ").append(toIndentedString(maxWordLength)).append("\n");
-    sb.append("    wordSplitDelimiters: ").append(toIndentedString(wordSplitDelimiters)).append("\n");
-    sb.append("    GID: ").append(toIndentedString(GID)).append("\n");
+    sb.append("    minwordlength: ").append(toIndentedString(minwordlength)).append("\n");
+    sb.append("    maxwordlength: ").append(toIndentedString(maxwordlength)).append("\n");
+    sb.append("    wordsplitdelimiters: ").append(toIndentedString(wordsplitdelimiters)).append("\n");
+    sb.append("    gid: ").append(toIndentedString(gid)).append("\n");
     sb.append("}");
     return sb.toString();
   }

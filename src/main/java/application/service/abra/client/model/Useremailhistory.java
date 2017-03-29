@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,99 +35,135 @@ import java.util.Objects;
 /**
  * Useremailhistory
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Useremailhistory   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Date$DATE")
-  private DateTime dateDATE = null;
+  @SerializedName("date$date")
+  private DateTime datedate = null;
 
-  @SerializedName("User_ID")
-  private String userID = null;
+  @SerializedName("user_id")
+  private String userId = null;
 
-  @SerializedName("Email")
+  @SerializedName("email")
   private String email = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Useremailhistory dateDATE(DateTime dateDATE) {
-    this.dateDATE = dateDATE;
+  public Useremailhistory displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum použití [persistentní položka]
-   * @return dateDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum použití [persistentní položka]")
-  public DateTime getDateDATE() {
-    return dateDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateDATE(DateTime dateDATE) {
-    this.dateDATE = dateDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Useremailhistory userID(String userID) {
-    this.userID = userID;
+  public Useremailhistory id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Osoba; ID objektu Uživatel [persistentní položka]
-   * @return userID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Osoba; ID objektu Uživatel [persistentní položka]")
-  public String getUserID() {
-    return userID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setUserID(String userID) {
-    this.userID = userID;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Useremailhistory classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Useremailhistory objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Useremailhistory datedate(DateTime datedate) {
+    this.datedate = datedate;
+    return this;
+  }
+
+   /**
+   * datum použití [persistentní položka]
+   * @return datedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum použití [persistentní položka]")
+  public DateTime getDatedate() {
+    return datedate;
+  }
+
+  public void setDatedate(DateTime datedate) {
+    this.datedate = datedate;
+  }
+
+  public Useremailhistory userId(String userId) {
+    this.userId = userId;
+    return this;
+  }
+
+   /**
+   * osoba; id objektu uživatel [persistentní položka]
+   * @return userId
+  **/
+  @ApiModelProperty(example = "null", value = "osoba; id objektu uživatel [persistentní položka]")
+  public String getUserId() {
+    return userId;
+  }
+
+  public void setUserId(String userId) {
+    this.userId = userId;
   }
 
   public Useremailhistory email(String email) {
@@ -136,10 +172,10 @@ public class Useremailhistory   {
   }
 
    /**
-   * E-mail [persistentní položka]
+   * e-mail [persistentní položka]
    * @return email
   **/
-  @ApiModelProperty(example = "null", value = "E-mail [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "e-mail [persistentní položka]")
   public String getEmail() {
     return email;
   }
@@ -158,18 +194,18 @@ public class Useremailhistory   {
       return false;
     }
     Useremailhistory useremailhistory = (Useremailhistory) o;
-    return Objects.equals(this.displayName, useremailhistory.displayName) &&
-        Objects.equals(this.ID, useremailhistory.ID) &&
-        Objects.equals(this.classID, useremailhistory.classID) &&
-        Objects.equals(this.objVersion, useremailhistory.objVersion) &&
-        Objects.equals(this.dateDATE, useremailhistory.dateDATE) &&
-        Objects.equals(this.userID, useremailhistory.userID) &&
+    return Objects.equals(this.displayname, useremailhistory.displayname) &&
+        Objects.equals(this.id, useremailhistory.id) &&
+        Objects.equals(this.classid, useremailhistory.classid) &&
+        Objects.equals(this.objversion, useremailhistory.objversion) &&
+        Objects.equals(this.datedate, useremailhistory.datedate) &&
+        Objects.equals(this.userId, useremailhistory.userId) &&
         Objects.equals(this.email, useremailhistory.email);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, dateDATE, userID, email);
+    return Objects.hash(displayname, id, classid, objversion, datedate, userId, email);
   }
 
   @Override
@@ -177,12 +213,12 @@ public class Useremailhistory   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Useremailhistory {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    dateDATE: ").append(toIndentedString(dateDATE)).append("\n");
-    sb.append("    userID: ").append(toIndentedString(userID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    datedate: ").append(toIndentedString(datedate)).append("\n");
+    sb.append("    userId: ").append(toIndentedString(userId)).append("\n");
     sb.append("    email: ").append(toIndentedString(email)).append("\n");
     sb.append("}");
     return sb.toString();

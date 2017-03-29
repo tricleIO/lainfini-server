@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,114 +35,150 @@ import java.util.Objects;
 /**
  * Storesubbatch
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Storesubbatch   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("StoreBatch_ID")
-  private String storeBatchID = null;
+  @SerializedName("storebatch_id")
+  private String storebatchId = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("MainUnitCode")
-  private String mainUnitCode = null;
+  @SerializedName("mainunitcode")
+  private String mainunitcode = null;
 
-  @SerializedName("MainUnitQuantity")
-  private Double mainUnitQuantity = null;
+  @SerializedName("mainunitquantity")
+  private Double mainunitquantity = null;
 
-  @SerializedName("Location_ID")
-  private String locationID = null;
+  @SerializedName("location_id")
+  private String locationId = null;
 
-  @SerializedName("GuaranteeEndDate$DATE")
-  private DateTime guaranteeEndDateDATE = null;
+  @SerializedName("guaranteeenddate$date")
+  private DateTime guaranteeenddatedate = null;
 
-  @SerializedName("GuaranteeEndDateAsText")
-  private String guaranteeEndDateAsText = null;
+  @SerializedName("guaranteeenddateastext")
+  private String guaranteeenddateastext = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Storesubbatch storeBatchID(String storeBatchID) {
-    this.storeBatchID = storeBatchID;
+  public Storesubbatch displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Šarže; ID objektu Šarže/sériové číslo [persistentní položka]
-   * @return storeBatchID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Šarže; ID objektu Šarže/sériové číslo [persistentní položka]")
-  public String getStoreBatchID() {
-    return storeBatchID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setStoreBatchID(String storeBatchID) {
-    this.storeBatchID = storeBatchID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Storesubbatch storeID(String storeID) {
-    this.storeID = storeID;
+  public Storesubbatch id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Storesubbatch classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Storesubbatch objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Storesubbatch storebatchId(String storebatchId) {
+    this.storebatchId = storebatchId;
+    return this;
+  }
+
+   /**
+   * Šarže; id objektu Šarže/sériové číslo [persistentní položka]
+   * @return storebatchId
+  **/
+  @ApiModelProperty(example = "null", value = "Šarže; id objektu Šarže/sériové číslo [persistentní položka]")
+  public String getStorebatchId() {
+    return storebatchId;
+  }
+
+  public void setStorebatchId(String storebatchId) {
+    this.storebatchId = storebatchId;
+  }
+
+  public Storesubbatch storeId(String storeId) {
+    this.storeId = storeId;
+    return this;
+  }
+
+   /**
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
+  **/
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
+  }
+
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
   public Storesubbatch quantity(Double quantity) {
@@ -151,10 +187,10 @@ public class Storesubbatch   {
   }
 
    /**
-   * Počet [persistentní položka]
+   * počet [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "počet [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -163,67 +199,94 @@ public class Storesubbatch   {
     this.quantity = quantity;
   }
 
-   /**
-   * Hlavní jednotka
-   * @return mainUnitCode
-  **/
-  @ApiModelProperty(example = "null", value = "Hlavní jednotka")
-  public String getMainUnitCode() {
-    return mainUnitCode;
-  }
-
-   /**
-   * Množství v hl. jednotce
-   * @return mainUnitQuantity
-  **/
-  @ApiModelProperty(example = "null", value = "Množství v hl. jednotce")
-  public Double getMainUnitQuantity() {
-    return mainUnitQuantity;
-  }
-
-  public Storesubbatch locationID(String locationID) {
-    this.locationID = locationID;
+  public Storesubbatch mainunitcode(String mainunitcode) {
+    this.mainunitcode = mainunitcode;
     return this;
   }
 
    /**
-   * Místo; ID objektu Skladové místo [persistentní položka]
-   * @return locationID
+   * hlavní jednotka
+   * @return mainunitcode
   **/
-  @ApiModelProperty(example = "null", value = "Místo; ID objektu Skladové místo [persistentní položka]")
-  public String getLocationID() {
-    return locationID;
+  @ApiModelProperty(example = "null", value = "hlavní jednotka")
+  public String getMainunitcode() {
+    return mainunitcode;
   }
 
-  public void setLocationID(String locationID) {
-    this.locationID = locationID;
+  public void setMainunitcode(String mainunitcode) {
+    this.mainunitcode = mainunitcode;
   }
 
-  public Storesubbatch guaranteeEndDateDATE(DateTime guaranteeEndDateDATE) {
-    this.guaranteeEndDateDATE = guaranteeEndDateDATE;
+  public Storesubbatch mainunitquantity(Double mainunitquantity) {
+    this.mainunitquantity = mainunitquantity;
     return this;
   }
 
    /**
-   * Datum záruky [persistentní položka]
-   * @return guaranteeEndDateDATE
+   * množství v hl. jednotce
+   * @return mainunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Datum záruky [persistentní položka]")
-  public DateTime getGuaranteeEndDateDATE() {
-    return guaranteeEndDateDATE;
+  @ApiModelProperty(example = "null", value = "množství v hl. jednotce")
+  public Double getMainunitquantity() {
+    return mainunitquantity;
   }
 
-  public void setGuaranteeEndDateDATE(DateTime guaranteeEndDateDATE) {
-    this.guaranteeEndDateDATE = guaranteeEndDateDATE;
+  public void setMainunitquantity(Double mainunitquantity) {
+    this.mainunitquantity = mainunitquantity;
+  }
+
+  public Storesubbatch locationId(String locationId) {
+    this.locationId = locationId;
+    return this;
   }
 
    /**
-   * Datum záruky
-   * @return guaranteeEndDateAsText
+   * místo; id objektu skladové místo [persistentní položka]
+   * @return locationId
   **/
-  @ApiModelProperty(example = "null", value = "Datum záruky")
-  public String getGuaranteeEndDateAsText() {
-    return guaranteeEndDateAsText;
+  @ApiModelProperty(example = "null", value = "místo; id objektu skladové místo [persistentní položka]")
+  public String getLocationId() {
+    return locationId;
+  }
+
+  public void setLocationId(String locationId) {
+    this.locationId = locationId;
+  }
+
+  public Storesubbatch guaranteeenddatedate(DateTime guaranteeenddatedate) {
+    this.guaranteeenddatedate = guaranteeenddatedate;
+    return this;
+  }
+
+   /**
+   * datum záruky [persistentní položka]
+   * @return guaranteeenddatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum záruky [persistentní položka]")
+  public DateTime getGuaranteeenddatedate() {
+    return guaranteeenddatedate;
+  }
+
+  public void setGuaranteeenddatedate(DateTime guaranteeenddatedate) {
+    this.guaranteeenddatedate = guaranteeenddatedate;
+  }
+
+  public Storesubbatch guaranteeenddateastext(String guaranteeenddateastext) {
+    this.guaranteeenddateastext = guaranteeenddateastext;
+    return this;
+  }
+
+   /**
+   * datum záruky
+   * @return guaranteeenddateastext
+  **/
+  @ApiModelProperty(example = "null", value = "datum záruky")
+  public String getGuaranteeenddateastext() {
+    return guaranteeenddateastext;
+  }
+
+  public void setGuaranteeenddateastext(String guaranteeenddateastext) {
+    this.guaranteeenddateastext = guaranteeenddateastext;
   }
 
 
@@ -236,23 +299,23 @@ public class Storesubbatch   {
       return false;
     }
     Storesubbatch storesubbatch = (Storesubbatch) o;
-    return Objects.equals(this.displayName, storesubbatch.displayName) &&
-        Objects.equals(this.ID, storesubbatch.ID) &&
-        Objects.equals(this.classID, storesubbatch.classID) &&
-        Objects.equals(this.objVersion, storesubbatch.objVersion) &&
-        Objects.equals(this.storeBatchID, storesubbatch.storeBatchID) &&
-        Objects.equals(this.storeID, storesubbatch.storeID) &&
+    return Objects.equals(this.displayname, storesubbatch.displayname) &&
+        Objects.equals(this.id, storesubbatch.id) &&
+        Objects.equals(this.classid, storesubbatch.classid) &&
+        Objects.equals(this.objversion, storesubbatch.objversion) &&
+        Objects.equals(this.storebatchId, storesubbatch.storebatchId) &&
+        Objects.equals(this.storeId, storesubbatch.storeId) &&
         Objects.equals(this.quantity, storesubbatch.quantity) &&
-        Objects.equals(this.mainUnitCode, storesubbatch.mainUnitCode) &&
-        Objects.equals(this.mainUnitQuantity, storesubbatch.mainUnitQuantity) &&
-        Objects.equals(this.locationID, storesubbatch.locationID) &&
-        Objects.equals(this.guaranteeEndDateDATE, storesubbatch.guaranteeEndDateDATE) &&
-        Objects.equals(this.guaranteeEndDateAsText, storesubbatch.guaranteeEndDateAsText);
+        Objects.equals(this.mainunitcode, storesubbatch.mainunitcode) &&
+        Objects.equals(this.mainunitquantity, storesubbatch.mainunitquantity) &&
+        Objects.equals(this.locationId, storesubbatch.locationId) &&
+        Objects.equals(this.guaranteeenddatedate, storesubbatch.guaranteeenddatedate) &&
+        Objects.equals(this.guaranteeenddateastext, storesubbatch.guaranteeenddateastext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, storeBatchID, storeID, quantity, mainUnitCode, mainUnitQuantity, locationID, guaranteeEndDateDATE, guaranteeEndDateAsText);
+    return Objects.hash(displayname, id, classid, objversion, storebatchId, storeId, quantity, mainunitcode, mainunitquantity, locationId, guaranteeenddatedate, guaranteeenddateastext);
   }
 
   @Override
@@ -260,18 +323,18 @@ public class Storesubbatch   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Storesubbatch {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    storeBatchID: ").append(toIndentedString(storeBatchID)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    storebatchId: ").append(toIndentedString(storebatchId)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    mainUnitCode: ").append(toIndentedString(mainUnitCode)).append("\n");
-    sb.append("    mainUnitQuantity: ").append(toIndentedString(mainUnitQuantity)).append("\n");
-    sb.append("    locationID: ").append(toIndentedString(locationID)).append("\n");
-    sb.append("    guaranteeEndDateDATE: ").append(toIndentedString(guaranteeEndDateDATE)).append("\n");
-    sb.append("    guaranteeEndDateAsText: ").append(toIndentedString(guaranteeEndDateAsText)).append("\n");
+    sb.append("    mainunitcode: ").append(toIndentedString(mainunitcode)).append("\n");
+    sb.append("    mainunitquantity: ").append(toIndentedString(mainunitquantity)).append("\n");
+    sb.append("    locationId: ").append(toIndentedString(locationId)).append("\n");
+    sb.append("    guaranteeenddatedate: ").append(toIndentedString(guaranteeenddatedate)).append("\n");
+    sb.append("    guaranteeenddateastext: ").append(toIndentedString(guaranteeenddateastext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

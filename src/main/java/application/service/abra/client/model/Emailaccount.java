@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,141 +34,177 @@ import java.util.Objects;
 /**
  * Emailaccount
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Emailaccount   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("AccountName")
-  private String accountName = null;
+  @SerializedName("accountname")
+  private String accountname = null;
 
-  @SerializedName("AccountAddress")
-  private String accountAddress = null;
+  @SerializedName("accountaddress")
+  private String accountaddress = null;
 
-  @SerializedName("Login")
+  @SerializedName("login")
   private String login = null;
 
-  @SerializedName("SecPassword")
-  private String secPassword = null;
+  @SerializedName("secpassword")
+  private String secpassword = null;
 
-  @SerializedName("Password")
+  @SerializedName("password")
   private String password = null;
 
-  @SerializedName("Server")
+  @SerializedName("server")
   private String server = null;
 
-  @SerializedName("Port")
+  @SerializedName("port")
   private Integer port = null;
 
-  @SerializedName("LeaveMsgOnServer")
-  private Boolean leaveMsgOnServer = null;
+  @SerializedName("leavemsgonserver")
+  private Boolean leavemsgonserver = null;
 
-  @SerializedName("EmailSMTPAccount_ID")
-  private String emailSMTPAccountID = null;
+  @SerializedName("emailsmtpaccount_id")
+  private String emailsmtpaccountId = null;
 
-  @SerializedName("ReceivedMailDocQueue_ID")
-  private String receivedMailDocQueueID = null;
+  @SerializedName("receivedmaildocqueue_id")
+  private String receivedmaildocqueueId = null;
 
-  @SerializedName("SendMailDocQueue_ID")
-  private String sendMailDocQueueID = null;
+  @SerializedName("sendmaildocqueue_id")
+  private String sendmaildocqueueId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("DefaultText")
-  private String defaultText = null;
+  @SerializedName("defaulttext")
+  private String defaulttext = null;
 
-  @SerializedName("MaxSizeLimit")
-  private Integer maxSizeLimit = null;
+  @SerializedName("maxsizelimit")
+  private Integer maxsizelimit = null;
 
-  @SerializedName("Owner_ID")
-  private String ownerID = null;
+  @SerializedName("owner_id")
+  private String ownerId = null;
 
-  @SerializedName("ConnectionSecurity")
-  private Integer connectionSecurity = null;
+  @SerializedName("connectionsecurity")
+  private Integer connectionsecurity = null;
 
-  @SerializedName("AccountType")
-  private Integer accountType = null;
+  @SerializedName("accounttype")
+  private Integer accounttype = null;
 
-  @SerializedName("PersonalDeliveryDocQueue_ID")
-  private String personalDeliveryDocQueueID = null;
+  @SerializedName("personaldeliverydocqueue_id")
+  private String personaldeliverydocqueueId = null;
 
-  @SerializedName("UseCredentialsToReceive")
-  private Boolean useCredentialsToReceive = null;
+  @SerializedName("usecredentialstoreceive")
+  private Boolean usecredentialstoreceive = null;
 
-  @SerializedName("UseCredentialsToSending")
-  private Boolean useCredentialsToSending = null;
+  @SerializedName("usecredentialstosending")
+  private Boolean usecredentialstosending = null;
 
-  @SerializedName("AccountTypeName")
-  private String accountTypeName = null;
+  @SerializedName("accounttypename")
+  private String accounttypename = null;
 
-  @SerializedName("TestDataBox")
-  private Boolean testDataBox = null;
+  @SerializedName("testdatabox")
+  private Boolean testdatabox = null;
 
-  @SerializedName("DataBoxType")
-  private Integer dataBoxType = null;
+  @SerializedName("databoxtype")
+  private Integer databoxtype = null;
 
-  @SerializedName("EffectiveOVM")
-  private Boolean effectiveOVM = null;
+  @SerializedName("effectiveovm")
+  private Boolean effectiveovm = null;
 
-  @SerializedName("DefaultTextSavedAs")
-  private Integer defaultTextSavedAs = null;
+  @SerializedName("defaulttextsavedas")
+  private Integer defaulttextsavedas = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Emailaccount displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Emailaccount id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Emailaccount classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Emailaccount objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Emailaccount hidden(Boolean hidden) {
@@ -177,10 +213,10 @@ public class Emailaccount   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -189,40 +225,40 @@ public class Emailaccount   {
     this.hidden = hidden;
   }
 
-  public Emailaccount accountName(String accountName) {
-    this.accountName = accountName;
+  public Emailaccount accountname(String accountname) {
+    this.accountname = accountname;
     return this;
   }
 
    /**
-   * Název účtu [persistentní položka]
-   * @return accountName
+   * název účtu [persistentní položka]
+   * @return accountname
   **/
-  @ApiModelProperty(example = "null", value = "Název účtu [persistentní položka]")
-  public String getAccountName() {
-    return accountName;
+  @ApiModelProperty(example = "null", value = "název účtu [persistentní položka]")
+  public String getAccountname() {
+    return accountname;
   }
 
-  public void setAccountName(String accountName) {
-    this.accountName = accountName;
+  public void setAccountname(String accountname) {
+    this.accountname = accountname;
   }
 
-  public Emailaccount accountAddress(String accountAddress) {
-    this.accountAddress = accountAddress;
+  public Emailaccount accountaddress(String accountaddress) {
+    this.accountaddress = accountaddress;
     return this;
   }
 
    /**
-   * E-mailová adresa [persistentní položka]
-   * @return accountAddress
+   * e-mailová adresa [persistentní položka]
+   * @return accountaddress
   **/
-  @ApiModelProperty(example = "null", value = "E-mailová adresa [persistentní položka]")
-  public String getAccountAddress() {
-    return accountAddress;
+  @ApiModelProperty(example = "null", value = "e-mailová adresa [persistentní položka]")
+  public String getAccountaddress() {
+    return accountaddress;
   }
 
-  public void setAccountAddress(String accountAddress) {
-    this.accountAddress = accountAddress;
+  public void setAccountaddress(String accountaddress) {
+    this.accountaddress = accountaddress;
   }
 
   public Emailaccount login(String login) {
@@ -231,10 +267,10 @@ public class Emailaccount   {
   }
 
    /**
-   * Přihlašovací jméno [persistentní položka]
+   * přihlašovací jméno [persistentní položka]
    * @return login
   **/
-  @ApiModelProperty(example = "null", value = "Přihlašovací jméno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "přihlašovací jméno [persistentní položka]")
   public String getLogin() {
     return login;
   }
@@ -243,31 +279,40 @@ public class Emailaccount   {
     this.login = login;
   }
 
-  public Emailaccount secPassword(String secPassword) {
-    this.secPassword = secPassword;
+  public Emailaccount secpassword(String secpassword) {
+    this.secpassword = secpassword;
     return this;
   }
 
    /**
-   * Zakódované heslo [persistentní položka]
-   * @return secPassword
+   * zakódované heslo [persistentní položka]
+   * @return secpassword
   **/
-  @ApiModelProperty(example = "null", value = "Zakódované heslo [persistentní položka]")
-  public String getSecPassword() {
-    return secPassword;
+  @ApiModelProperty(example = "null", value = "zakódované heslo [persistentní položka]")
+  public String getSecpassword() {
+    return secpassword;
   }
 
-  public void setSecPassword(String secPassword) {
-    this.secPassword = secPassword;
+  public void setSecpassword(String secpassword) {
+    this.secpassword = secpassword;
+  }
+
+  public Emailaccount password(String password) {
+    this.password = password;
+    return this;
   }
 
    /**
-   * Heslo
+   * heslo
    * @return password
   **/
-  @ApiModelProperty(example = "null", value = "Heslo")
+  @ApiModelProperty(example = "null", value = "heslo")
   public String getPassword() {
     return password;
+  }
+
+  public void setPassword(String password) {
+    this.password = password;
   }
 
   public Emailaccount server(String server) {
@@ -276,10 +321,10 @@ public class Emailaccount   {
   }
 
    /**
-   * POP3 server [persistentní položka]
+   * pop3 server [persistentní položka]
    * @return server
   **/
-  @ApiModelProperty(example = "null", value = "POP3 server [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "pop3 server [persistentní položka]")
   public String getServer() {
     return server;
   }
@@ -294,10 +339,10 @@ public class Emailaccount   {
   }
 
    /**
-   * Port [persistentní položka]
+   * port [persistentní položka]
    * @return port
   **/
-  @ApiModelProperty(example = "null", value = "Port [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "port [persistentní položka]")
   public Integer getPort() {
     return port;
   }
@@ -306,382 +351,382 @@ public class Emailaccount   {
     this.port = port;
   }
 
-  public Emailaccount leaveMsgOnServer(Boolean leaveMsgOnServer) {
-    this.leaveMsgOnServer = leaveMsgOnServer;
+  public Emailaccount leavemsgonserver(Boolean leavemsgonserver) {
+    this.leavemsgonserver = leavemsgonserver;
     return this;
   }
 
    /**
-   * Nemazat zprávy na serveru [persistentní položka]
-   * @return leaveMsgOnServer
+   * nemazat zprávy na serveru [persistentní položka]
+   * @return leavemsgonserver
   **/
-  @ApiModelProperty(example = "null", value = "Nemazat zprávy na serveru [persistentní položka]")
-  public Boolean getLeaveMsgOnServer() {
-    return leaveMsgOnServer;
+  @ApiModelProperty(example = "null", value = "nemazat zprávy na serveru [persistentní položka]")
+  public Boolean getLeavemsgonserver() {
+    return leavemsgonserver;
   }
 
-  public void setLeaveMsgOnServer(Boolean leaveMsgOnServer) {
-    this.leaveMsgOnServer = leaveMsgOnServer;
+  public void setLeavemsgonserver(Boolean leavemsgonserver) {
+    this.leavemsgonserver = leavemsgonserver;
   }
 
-  public Emailaccount emailSMTPAccountID(String emailSMTPAccountID) {
-    this.emailSMTPAccountID = emailSMTPAccountID;
+  public Emailaccount emailsmtpaccountId(String emailsmtpaccountId) {
+    this.emailsmtpaccountId = emailsmtpaccountId;
     return this;
   }
 
    /**
-   * Účet odchozího serveru SMTP; ID objektu E-mailový účet odchozího serveru SMTP [persistentní položka]
-   * @return emailSMTPAccountID
+   * Účet odchozího serveru smtp; id objektu e-mailový účet odchozího serveru smtp [persistentní položka]
+   * @return emailsmtpaccountId
   **/
-  @ApiModelProperty(example = "null", value = "Účet odchozího serveru SMTP; ID objektu E-mailový účet odchozího serveru SMTP [persistentní položka]")
-  public String getEmailSMTPAccountID() {
-    return emailSMTPAccountID;
+  @ApiModelProperty(example = "null", value = "Účet odchozího serveru smtp; id objektu e-mailový účet odchozího serveru smtp [persistentní položka]")
+  public String getEmailsmtpaccountId() {
+    return emailsmtpaccountId;
   }
 
-  public void setEmailSMTPAccountID(String emailSMTPAccountID) {
-    this.emailSMTPAccountID = emailSMTPAccountID;
+  public void setEmailsmtpaccountId(String emailsmtpaccountId) {
+    this.emailsmtpaccountId = emailsmtpaccountId;
   }
 
-  public Emailaccount receivedMailDocQueueID(String receivedMailDocQueueID) {
-    this.receivedMailDocQueueID = receivedMailDocQueueID;
+  public Emailaccount receivedmaildocqueueId(String receivedmaildocqueueId) {
+    this.receivedmaildocqueueId = receivedmaildocqueueId;
     return this;
   }
 
    /**
-   * Řada dokladů doručených e-mailů; ID objektu Řada dokladů [persistentní položka]
-   * @return receivedMailDocQueueID
+   * Řada dokladů doručených e-mailů; id objektu Řada dokladů [persistentní položka]
+   * @return receivedmaildocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů doručených e-mailů; ID objektu Řada dokladů [persistentní položka]")
-  public String getReceivedMailDocQueueID() {
-    return receivedMailDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada dokladů doručených e-mailů; id objektu Řada dokladů [persistentní položka]")
+  public String getReceivedmaildocqueueId() {
+    return receivedmaildocqueueId;
   }
 
-  public void setReceivedMailDocQueueID(String receivedMailDocQueueID) {
-    this.receivedMailDocQueueID = receivedMailDocQueueID;
+  public void setReceivedmaildocqueueId(String receivedmaildocqueueId) {
+    this.receivedmaildocqueueId = receivedmaildocqueueId;
   }
 
-  public Emailaccount sendMailDocQueueID(String sendMailDocQueueID) {
-    this.sendMailDocQueueID = sendMailDocQueueID;
+  public Emailaccount sendmaildocqueueId(String sendmaildocqueueId) {
+    this.sendmaildocqueueId = sendmaildocqueueId;
     return this;
   }
 
    /**
-   * Řada dokladů odeslaných e-mailů; ID objektu Řada dokladů [persistentní položka]
-   * @return sendMailDocQueueID
+   * Řada dokladů odeslaných e-mailů; id objektu Řada dokladů [persistentní položka]
+   * @return sendmaildocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů odeslaných e-mailů; ID objektu Řada dokladů [persistentní položka]")
-  public String getSendMailDocQueueID() {
-    return sendMailDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada dokladů odeslaných e-mailů; id objektu Řada dokladů [persistentní položka]")
+  public String getSendmaildocqueueId() {
+    return sendmaildocqueueId;
   }
 
-  public void setSendMailDocQueueID(String sendMailDocQueueID) {
-    this.sendMailDocQueueID = sendMailDocQueueID;
+  public void setSendmaildocqueueId(String sendmaildocqueueId) {
+    this.sendmaildocqueueId = sendmaildocqueueId;
   }
 
-  public Emailaccount divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Emailaccount divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Emailaccount busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Emailaccount busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Emailaccount busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Emailaccount bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obch. případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obch. případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obch. případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obch. případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Emailaccount busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Emailaccount busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Emailaccount defaultText(String defaultText) {
-    this.defaultText = defaultText;
+  public Emailaccount defaulttext(String defaulttext) {
+    this.defaulttext = defaulttext;
     return this;
   }
 
    /**
-   * Výchozí text [persistentní položka]
-   * @return defaultText
+   * výchozí text [persistentní položka]
+   * @return defaulttext
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí text [persistentní položka]")
-  public String getDefaultText() {
-    return defaultText;
+  @ApiModelProperty(example = "null", value = "výchozí text [persistentní položka]")
+  public String getDefaulttext() {
+    return defaulttext;
   }
 
-  public void setDefaultText(String defaultText) {
-    this.defaultText = defaultText;
+  public void setDefaulttext(String defaulttext) {
+    this.defaulttext = defaulttext;
   }
 
-  public Emailaccount maxSizeLimit(Integer maxSizeLimit) {
-    this.maxSizeLimit = maxSizeLimit;
+  public Emailaccount maxsizelimit(Integer maxsizelimit) {
+    this.maxsizelimit = maxsizelimit;
     return this;
   }
 
    /**
-   * Max. velikost přílohy (MB) [persistentní položka]
-   * @return maxSizeLimit
+   * max. velikost přílohy (mb) [persistentní položka]
+   * @return maxsizelimit
   **/
-  @ApiModelProperty(example = "null", value = "Max. velikost přílohy (MB) [persistentní položka]")
-  public Integer getMaxSizeLimit() {
-    return maxSizeLimit;
+  @ApiModelProperty(example = "null", value = "max. velikost přílohy (mb) [persistentní položka]")
+  public Integer getMaxsizelimit() {
+    return maxsizelimit;
   }
 
-  public void setMaxSizeLimit(Integer maxSizeLimit) {
-    this.maxSizeLimit = maxSizeLimit;
+  public void setMaxsizelimit(Integer maxsizelimit) {
+    this.maxsizelimit = maxsizelimit;
   }
 
-  public Emailaccount ownerID(String ownerID) {
-    this.ownerID = ownerID;
+  public Emailaccount ownerId(String ownerId) {
+    this.ownerId = ownerId;
     return this;
   }
 
    /**
-   * Vlastník účtu; ID objektu Uživatel [persistentní položka]
-   * @return ownerID
+   * vlastník účtu; id objektu uživatel [persistentní položka]
+   * @return ownerId
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník účtu; ID objektu Uživatel [persistentní položka]")
-  public String getOwnerID() {
-    return ownerID;
+  @ApiModelProperty(example = "null", value = "vlastník účtu; id objektu uživatel [persistentní položka]")
+  public String getOwnerId() {
+    return ownerId;
   }
 
-  public void setOwnerID(String ownerID) {
-    this.ownerID = ownerID;
+  public void setOwnerId(String ownerId) {
+    this.ownerId = ownerId;
   }
 
-  public Emailaccount connectionSecurity(Integer connectionSecurity) {
-    this.connectionSecurity = connectionSecurity;
+  public Emailaccount connectionsecurity(Integer connectionsecurity) {
+    this.connectionsecurity = connectionsecurity;
     return this;
   }
 
    /**
-   * Zabezpečení [persistentní položka]
-   * @return connectionSecurity
+   * zabezpečení [persistentní položka]
+   * @return connectionsecurity
   **/
-  @ApiModelProperty(example = "null", value = "Zabezpečení [persistentní položka]")
-  public Integer getConnectionSecurity() {
-    return connectionSecurity;
+  @ApiModelProperty(example = "null", value = "zabezpečení [persistentní položka]")
+  public Integer getConnectionsecurity() {
+    return connectionsecurity;
   }
 
-  public void setConnectionSecurity(Integer connectionSecurity) {
-    this.connectionSecurity = connectionSecurity;
+  public void setConnectionsecurity(Integer connectionsecurity) {
+    this.connectionsecurity = connectionsecurity;
   }
 
-  public Emailaccount accountType(Integer accountType) {
-    this.accountType = accountType;
+  public Emailaccount accounttype(Integer accounttype) {
+    this.accounttype = accounttype;
     return this;
   }
 
    /**
-   * Typ účtu [persistentní položka]
-   * @return accountType
+   * typ účtu [persistentní položka]
+   * @return accounttype
   **/
-  @ApiModelProperty(example = "null", value = "Typ účtu [persistentní položka]")
-  public Integer getAccountType() {
-    return accountType;
+  @ApiModelProperty(example = "null", value = "typ účtu [persistentní položka]")
+  public Integer getAccounttype() {
+    return accounttype;
   }
 
-  public void setAccountType(Integer accountType) {
-    this.accountType = accountType;
+  public void setAccounttype(Integer accounttype) {
+    this.accounttype = accounttype;
   }
 
-  public Emailaccount personalDeliveryDocQueueID(String personalDeliveryDocQueueID) {
-    this.personalDeliveryDocQueueID = personalDeliveryDocQueueID;
+  public Emailaccount personaldeliverydocqueueId(String personaldeliverydocqueueId) {
+    this.personaldeliverydocqueueId = personaldeliverydocqueueId;
     return this;
   }
 
    /**
-   * Řada dokladů datových zpráv do vl. rukou; ID objektu Řada dokladů [persistentní položka]
-   * @return personalDeliveryDocQueueID
+   * Řada dokladů datových zpráv do vl. rukou; id objektu Řada dokladů [persistentní položka]
+   * @return personaldeliverydocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů datových zpráv do vl. rukou; ID objektu Řada dokladů [persistentní položka]")
-  public String getPersonalDeliveryDocQueueID() {
-    return personalDeliveryDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada dokladů datových zpráv do vl. rukou; id objektu Řada dokladů [persistentní položka]")
+  public String getPersonaldeliverydocqueueId() {
+    return personaldeliverydocqueueId;
   }
 
-  public void setPersonalDeliveryDocQueueID(String personalDeliveryDocQueueID) {
-    this.personalDeliveryDocQueueID = personalDeliveryDocQueueID;
+  public void setPersonaldeliverydocqueueId(String personaldeliverydocqueueId) {
+    this.personaldeliverydocqueueId = personaldeliverydocqueueId;
   }
 
-  public Emailaccount useCredentialsToReceive(Boolean useCredentialsToReceive) {
-    this.useCredentialsToReceive = useCredentialsToReceive;
+  public Emailaccount usecredentialstoreceive(Boolean usecredentialstoreceive) {
+    this.usecredentialstoreceive = usecredentialstoreceive;
     return this;
   }
 
    /**
-   * Automaticky použít přihlašovací údaje pro příjem datových zpráv. [persistentní položka]
-   * @return useCredentialsToReceive
+   * automaticky použít přihlašovací údaje pro příjem datových zpráv. [persistentní položka]
+   * @return usecredentialstoreceive
   **/
-  @ApiModelProperty(example = "null", value = "Automaticky použít přihlašovací údaje pro příjem datových zpráv. [persistentní položka]")
-  public Boolean getUseCredentialsToReceive() {
-    return useCredentialsToReceive;
+  @ApiModelProperty(example = "null", value = "automaticky použít přihlašovací údaje pro příjem datových zpráv. [persistentní položka]")
+  public Boolean getUsecredentialstoreceive() {
+    return usecredentialstoreceive;
   }
 
-  public void setUseCredentialsToReceive(Boolean useCredentialsToReceive) {
-    this.useCredentialsToReceive = useCredentialsToReceive;
+  public void setUsecredentialstoreceive(Boolean usecredentialstoreceive) {
+    this.usecredentialstoreceive = usecredentialstoreceive;
   }
 
-  public Emailaccount useCredentialsToSending(Boolean useCredentialsToSending) {
-    this.useCredentialsToSending = useCredentialsToSending;
+  public Emailaccount usecredentialstosending(Boolean usecredentialstosending) {
+    this.usecredentialstosending = usecredentialstosending;
     return this;
   }
 
    /**
-   * Automaticky použít přihlašovací údaje pro odeslání datových zpráv. [persistentní položka]
-   * @return useCredentialsToSending
+   * automaticky použít přihlašovací údaje pro odeslání datových zpráv. [persistentní položka]
+   * @return usecredentialstosending
   **/
-  @ApiModelProperty(example = "null", value = "Automaticky použít přihlašovací údaje pro odeslání datových zpráv. [persistentní položka]")
-  public Boolean getUseCredentialsToSending() {
-    return useCredentialsToSending;
+  @ApiModelProperty(example = "null", value = "automaticky použít přihlašovací údaje pro odeslání datových zpráv. [persistentní položka]")
+  public Boolean getUsecredentialstosending() {
+    return usecredentialstosending;
   }
 
-  public void setUseCredentialsToSending(Boolean useCredentialsToSending) {
-    this.useCredentialsToSending = useCredentialsToSending;
+  public void setUsecredentialstosending(Boolean usecredentialstosending) {
+    this.usecredentialstosending = usecredentialstosending;
   }
 
-  public Emailaccount accountTypeName(String accountTypeName) {
-    this.accountTypeName = accountTypeName;
+  public Emailaccount accounttypename(String accounttypename) {
+    this.accounttypename = accounttypename;
     return this;
   }
 
    /**
-   * Typ účtu - název
-   * @return accountTypeName
+   * typ účtu - název
+   * @return accounttypename
   **/
-  @ApiModelProperty(example = "null", value = "Typ účtu - název")
-  public String getAccountTypeName() {
-    return accountTypeName;
+  @ApiModelProperty(example = "null", value = "typ účtu - název")
+  public String getAccounttypename() {
+    return accounttypename;
   }
 
-  public void setAccountTypeName(String accountTypeName) {
-    this.accountTypeName = accountTypeName;
+  public void setAccounttypename(String accounttypename) {
+    this.accounttypename = accounttypename;
   }
 
-  public Emailaccount testDataBox(Boolean testDataBox) {
-    this.testDataBox = testDataBox;
+  public Emailaccount testdatabox(Boolean testdatabox) {
+    this.testdatabox = testdatabox;
     return this;
   }
 
    /**
-   * Testovací účet datových schránek [persistentní položka]
-   * @return testDataBox
+   * testovací účet datových schránek [persistentní položka]
+   * @return testdatabox
   **/
-  @ApiModelProperty(example = "null", value = "Testovací účet datových schránek [persistentní položka]")
-  public Boolean getTestDataBox() {
-    return testDataBox;
+  @ApiModelProperty(example = "null", value = "testovací účet datových schránek [persistentní položka]")
+  public Boolean getTestdatabox() {
+    return testdatabox;
   }
 
-  public void setTestDataBox(Boolean testDataBox) {
-    this.testDataBox = testDataBox;
+  public void setTestdatabox(Boolean testdatabox) {
+    this.testdatabox = testdatabox;
   }
 
-  public Emailaccount dataBoxType(Integer dataBoxType) {
-    this.dataBoxType = dataBoxType;
+  public Emailaccount databoxtype(Integer databoxtype) {
+    this.databoxtype = databoxtype;
     return this;
   }
 
    /**
-   * Typ datové schránky [persistentní položka]
-   * @return dataBoxType
+   * typ datové schránky [persistentní položka]
+   * @return databoxtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ datové schránky [persistentní položka]")
-  public Integer getDataBoxType() {
-    return dataBoxType;
+  @ApiModelProperty(example = "null", value = "typ datové schránky [persistentní položka]")
+  public Integer getDataboxtype() {
+    return databoxtype;
   }
 
-  public void setDataBoxType(Integer dataBoxType) {
-    this.dataBoxType = dataBoxType;
+  public void setDataboxtype(Integer databoxtype) {
+    this.databoxtype = databoxtype;
   }
 
-  public Emailaccount effectiveOVM(Boolean effectiveOVM) {
-    this.effectiveOVM = effectiveOVM;
+  public Emailaccount effectiveovm(Boolean effectiveovm) {
+    this.effectiveovm = effectiveovm;
     return this;
   }
 
    /**
-   * Možno odesílat zprávy jako OVM [persistentní položka]
-   * @return effectiveOVM
+   * možno odesílat zprávy jako ovm [persistentní položka]
+   * @return effectiveovm
   **/
-  @ApiModelProperty(example = "null", value = "Možno odesílat zprávy jako OVM [persistentní položka]")
-  public Boolean getEffectiveOVM() {
-    return effectiveOVM;
+  @ApiModelProperty(example = "null", value = "možno odesílat zprávy jako ovm [persistentní položka]")
+  public Boolean getEffectiveovm() {
+    return effectiveovm;
   }
 
-  public void setEffectiveOVM(Boolean effectiveOVM) {
-    this.effectiveOVM = effectiveOVM;
+  public void setEffectiveovm(Boolean effectiveovm) {
+    this.effectiveovm = effectiveovm;
   }
 
-  public Emailaccount defaultTextSavedAs(Integer defaultTextSavedAs) {
-    this.defaultTextSavedAs = defaultTextSavedAs;
+  public Emailaccount defaulttextsavedas(Integer defaulttextsavedas) {
+    this.defaulttextsavedas = defaulttextsavedas;
     return this;
   }
 
    /**
-   * Výchozí text uložit jako [persistentní položka]
-   * @return defaultTextSavedAs
+   * výchozí text uložit jako [persistentní položka]
+   * @return defaulttextsavedas
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí text uložit jako [persistentní položka]")
-  public Integer getDefaultTextSavedAs() {
-    return defaultTextSavedAs;
+  @ApiModelProperty(example = "null", value = "výchozí text uložit jako [persistentní položka]")
+  public Integer getDefaulttextsavedas() {
+    return defaulttextsavedas;
   }
 
-  public void setDefaultTextSavedAs(Integer defaultTextSavedAs) {
-    this.defaultTextSavedAs = defaultTextSavedAs;
+  public void setDefaulttextsavedas(Integer defaulttextsavedas) {
+    this.defaulttextsavedas = defaulttextsavedas;
   }
 
 
@@ -694,44 +739,44 @@ public class Emailaccount   {
       return false;
     }
     Emailaccount emailaccount = (Emailaccount) o;
-    return Objects.equals(this.displayName, emailaccount.displayName) &&
-        Objects.equals(this.ID, emailaccount.ID) &&
-        Objects.equals(this.classID, emailaccount.classID) &&
-        Objects.equals(this.objVersion, emailaccount.objVersion) &&
+    return Objects.equals(this.displayname, emailaccount.displayname) &&
+        Objects.equals(this.id, emailaccount.id) &&
+        Objects.equals(this.classid, emailaccount.classid) &&
+        Objects.equals(this.objversion, emailaccount.objversion) &&
         Objects.equals(this.hidden, emailaccount.hidden) &&
-        Objects.equals(this.accountName, emailaccount.accountName) &&
-        Objects.equals(this.accountAddress, emailaccount.accountAddress) &&
+        Objects.equals(this.accountname, emailaccount.accountname) &&
+        Objects.equals(this.accountaddress, emailaccount.accountaddress) &&
         Objects.equals(this.login, emailaccount.login) &&
-        Objects.equals(this.secPassword, emailaccount.secPassword) &&
+        Objects.equals(this.secpassword, emailaccount.secpassword) &&
         Objects.equals(this.password, emailaccount.password) &&
         Objects.equals(this.server, emailaccount.server) &&
         Objects.equals(this.port, emailaccount.port) &&
-        Objects.equals(this.leaveMsgOnServer, emailaccount.leaveMsgOnServer) &&
-        Objects.equals(this.emailSMTPAccountID, emailaccount.emailSMTPAccountID) &&
-        Objects.equals(this.receivedMailDocQueueID, emailaccount.receivedMailDocQueueID) &&
-        Objects.equals(this.sendMailDocQueueID, emailaccount.sendMailDocQueueID) &&
-        Objects.equals(this.divisionID, emailaccount.divisionID) &&
-        Objects.equals(this.busOrderID, emailaccount.busOrderID) &&
-        Objects.equals(this.busTransactionID, emailaccount.busTransactionID) &&
-        Objects.equals(this.busProjectID, emailaccount.busProjectID) &&
-        Objects.equals(this.defaultText, emailaccount.defaultText) &&
-        Objects.equals(this.maxSizeLimit, emailaccount.maxSizeLimit) &&
-        Objects.equals(this.ownerID, emailaccount.ownerID) &&
-        Objects.equals(this.connectionSecurity, emailaccount.connectionSecurity) &&
-        Objects.equals(this.accountType, emailaccount.accountType) &&
-        Objects.equals(this.personalDeliveryDocQueueID, emailaccount.personalDeliveryDocQueueID) &&
-        Objects.equals(this.useCredentialsToReceive, emailaccount.useCredentialsToReceive) &&
-        Objects.equals(this.useCredentialsToSending, emailaccount.useCredentialsToSending) &&
-        Objects.equals(this.accountTypeName, emailaccount.accountTypeName) &&
-        Objects.equals(this.testDataBox, emailaccount.testDataBox) &&
-        Objects.equals(this.dataBoxType, emailaccount.dataBoxType) &&
-        Objects.equals(this.effectiveOVM, emailaccount.effectiveOVM) &&
-        Objects.equals(this.defaultTextSavedAs, emailaccount.defaultTextSavedAs);
+        Objects.equals(this.leavemsgonserver, emailaccount.leavemsgonserver) &&
+        Objects.equals(this.emailsmtpaccountId, emailaccount.emailsmtpaccountId) &&
+        Objects.equals(this.receivedmaildocqueueId, emailaccount.receivedmaildocqueueId) &&
+        Objects.equals(this.sendmaildocqueueId, emailaccount.sendmaildocqueueId) &&
+        Objects.equals(this.divisionId, emailaccount.divisionId) &&
+        Objects.equals(this.busorderId, emailaccount.busorderId) &&
+        Objects.equals(this.bustransactionId, emailaccount.bustransactionId) &&
+        Objects.equals(this.busprojectId, emailaccount.busprojectId) &&
+        Objects.equals(this.defaulttext, emailaccount.defaulttext) &&
+        Objects.equals(this.maxsizelimit, emailaccount.maxsizelimit) &&
+        Objects.equals(this.ownerId, emailaccount.ownerId) &&
+        Objects.equals(this.connectionsecurity, emailaccount.connectionsecurity) &&
+        Objects.equals(this.accounttype, emailaccount.accounttype) &&
+        Objects.equals(this.personaldeliverydocqueueId, emailaccount.personaldeliverydocqueueId) &&
+        Objects.equals(this.usecredentialstoreceive, emailaccount.usecredentialstoreceive) &&
+        Objects.equals(this.usecredentialstosending, emailaccount.usecredentialstosending) &&
+        Objects.equals(this.accounttypename, emailaccount.accounttypename) &&
+        Objects.equals(this.testdatabox, emailaccount.testdatabox) &&
+        Objects.equals(this.databoxtype, emailaccount.databoxtype) &&
+        Objects.equals(this.effectiveovm, emailaccount.effectiveovm) &&
+        Objects.equals(this.defaulttextsavedas, emailaccount.defaulttextsavedas);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, accountName, accountAddress, login, secPassword, password, server, port, leaveMsgOnServer, emailSMTPAccountID, receivedMailDocQueueID, sendMailDocQueueID, divisionID, busOrderID, busTransactionID, busProjectID, defaultText, maxSizeLimit, ownerID, connectionSecurity, accountType, personalDeliveryDocQueueID, useCredentialsToReceive, useCredentialsToSending, accountTypeName, testDataBox, dataBoxType, effectiveOVM, defaultTextSavedAs);
+    return Objects.hash(displayname, id, classid, objversion, hidden, accountname, accountaddress, login, secpassword, password, server, port, leavemsgonserver, emailsmtpaccountId, receivedmaildocqueueId, sendmaildocqueueId, divisionId, busorderId, bustransactionId, busprojectId, defaulttext, maxsizelimit, ownerId, connectionsecurity, accounttype, personaldeliverydocqueueId, usecredentialstoreceive, usecredentialstosending, accounttypename, testdatabox, databoxtype, effectiveovm, defaulttextsavedas);
   }
 
   @Override
@@ -739,39 +784,39 @@ public class Emailaccount   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Emailaccount {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    accountName: ").append(toIndentedString(accountName)).append("\n");
-    sb.append("    accountAddress: ").append(toIndentedString(accountAddress)).append("\n");
+    sb.append("    accountname: ").append(toIndentedString(accountname)).append("\n");
+    sb.append("    accountaddress: ").append(toIndentedString(accountaddress)).append("\n");
     sb.append("    login: ").append(toIndentedString(login)).append("\n");
-    sb.append("    secPassword: ").append(toIndentedString(secPassword)).append("\n");
+    sb.append("    secpassword: ").append(toIndentedString(secpassword)).append("\n");
     sb.append("    password: ").append(toIndentedString(password)).append("\n");
     sb.append("    server: ").append(toIndentedString(server)).append("\n");
     sb.append("    port: ").append(toIndentedString(port)).append("\n");
-    sb.append("    leaveMsgOnServer: ").append(toIndentedString(leaveMsgOnServer)).append("\n");
-    sb.append("    emailSMTPAccountID: ").append(toIndentedString(emailSMTPAccountID)).append("\n");
-    sb.append("    receivedMailDocQueueID: ").append(toIndentedString(receivedMailDocQueueID)).append("\n");
-    sb.append("    sendMailDocQueueID: ").append(toIndentedString(sendMailDocQueueID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    defaultText: ").append(toIndentedString(defaultText)).append("\n");
-    sb.append("    maxSizeLimit: ").append(toIndentedString(maxSizeLimit)).append("\n");
-    sb.append("    ownerID: ").append(toIndentedString(ownerID)).append("\n");
-    sb.append("    connectionSecurity: ").append(toIndentedString(connectionSecurity)).append("\n");
-    sb.append("    accountType: ").append(toIndentedString(accountType)).append("\n");
-    sb.append("    personalDeliveryDocQueueID: ").append(toIndentedString(personalDeliveryDocQueueID)).append("\n");
-    sb.append("    useCredentialsToReceive: ").append(toIndentedString(useCredentialsToReceive)).append("\n");
-    sb.append("    useCredentialsToSending: ").append(toIndentedString(useCredentialsToSending)).append("\n");
-    sb.append("    accountTypeName: ").append(toIndentedString(accountTypeName)).append("\n");
-    sb.append("    testDataBox: ").append(toIndentedString(testDataBox)).append("\n");
-    sb.append("    dataBoxType: ").append(toIndentedString(dataBoxType)).append("\n");
-    sb.append("    effectiveOVM: ").append(toIndentedString(effectiveOVM)).append("\n");
-    sb.append("    defaultTextSavedAs: ").append(toIndentedString(defaultTextSavedAs)).append("\n");
+    sb.append("    leavemsgonserver: ").append(toIndentedString(leavemsgonserver)).append("\n");
+    sb.append("    emailsmtpaccountId: ").append(toIndentedString(emailsmtpaccountId)).append("\n");
+    sb.append("    receivedmaildocqueueId: ").append(toIndentedString(receivedmaildocqueueId)).append("\n");
+    sb.append("    sendmaildocqueueId: ").append(toIndentedString(sendmaildocqueueId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    defaulttext: ").append(toIndentedString(defaulttext)).append("\n");
+    sb.append("    maxsizelimit: ").append(toIndentedString(maxsizelimit)).append("\n");
+    sb.append("    ownerId: ").append(toIndentedString(ownerId)).append("\n");
+    sb.append("    connectionsecurity: ").append(toIndentedString(connectionsecurity)).append("\n");
+    sb.append("    accounttype: ").append(toIndentedString(accounttype)).append("\n");
+    sb.append("    personaldeliverydocqueueId: ").append(toIndentedString(personaldeliverydocqueueId)).append("\n");
+    sb.append("    usecredentialstoreceive: ").append(toIndentedString(usecredentialstoreceive)).append("\n");
+    sb.append("    usecredentialstosending: ").append(toIndentedString(usecredentialstosending)).append("\n");
+    sb.append("    accounttypename: ").append(toIndentedString(accounttypename)).append("\n");
+    sb.append("    testdatabox: ").append(toIndentedString(testdatabox)).append("\n");
+    sb.append("    databoxtype: ").append(toIndentedString(databoxtype)).append("\n");
+    sb.append("    effectiveovm: ").append(toIndentedString(effectiveovm)).append("\n");
+    sb.append("    defaulttextsavedas: ").append(toIndentedString(defaulttextsavedas)).append("\n");
     sb.append("}");
     return sb.toString();
   }

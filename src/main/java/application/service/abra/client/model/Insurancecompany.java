@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,99 +34,135 @@ import java.util.Objects;
 /**
  * Insurancecompany
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Insurancecompany   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Address_ID")
-  private Insurancecompany addressID = null;
+  @SerializedName("address_id")
+  private Insurancecompany addressId = null;
 
-  @SerializedName("BankAccount")
-  private String bankAccount = null;
+  @SerializedName("bankaccount")
+  private String bankaccount = null;
 
-  @SerializedName("VarSymbol")
-  private String varSymbol = null;
+  @SerializedName("varsymbol")
+  private String varsymbol = null;
 
-  @SerializedName("ConstSymbol_ID")
-  private String constSymbolID = null;
+  @SerializedName("constsymbol_id")
+  private String constsymbolId = null;
 
-  @SerializedName("SpecSymbol")
-  private String specSymbol = null;
+  @SerializedName("specsymbol")
+  private String specsymbol = null;
 
-  @SerializedName("Account_ID")
-  private String accountID = null;
+  @SerializedName("account_id")
+  private String accountId = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("VarSymbolMask")
-  private String varSymbolMask = null;
+  @SerializedName("varsymbolmask")
+  private String varsymbolmask = null;
 
-  @SerializedName("SpecSymbolMask")
-  private String specSymbolMask = null;
+  @SerializedName("specsymbolmask")
+  private String specsymbolmask = null;
 
-  @SerializedName("FirmOrgIdentNumber")
-  private String firmOrgIdentNumber = null;
+  @SerializedName("firmorgidentnumber")
+  private String firmorgidentnumber = null;
 
-  @SerializedName("PreferredCode")
-  private String preferredCode = null;
+  @SerializedName("preferredcode")
+  private String preferredcode = null;
 
-  @SerializedName("PreferredDesc")
-  private String preferredDesc = null;
+  @SerializedName("preferreddesc")
+  private String preferreddesc = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Insurancecompany displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Insurancecompany id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Insurancecompany classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Insurancecompany objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Insurancecompany hidden(Boolean hidden) {
@@ -135,10 +171,10 @@ public class Insurancecompany   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -153,10 +189,10 @@ public class Insurancecompany   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -171,10 +207,10 @@ public class Insurancecompany   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -183,220 +219,220 @@ public class Insurancecompany   {
     this.name = name;
   }
 
-  public Insurancecompany addressID(Insurancecompany addressID) {
-    this.addressID = addressID;
+  public Insurancecompany addressId(Insurancecompany addressId) {
+    this.addressId = addressId;
     return this;
   }
 
    /**
-   * Get addressID
-   * @return addressID
+   * Get addressId
+   * @return addressId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Insurancecompany getAddressID() {
-    return addressID;
+  public Insurancecompany getAddressId() {
+    return addressId;
   }
 
-  public void setAddressID(Insurancecompany addressID) {
-    this.addressID = addressID;
+  public void setAddressId(Insurancecompany addressId) {
+    this.addressId = addressId;
   }
 
-  public Insurancecompany bankAccount(String bankAccount) {
-    this.bankAccount = bankAccount;
+  public Insurancecompany bankaccount(String bankaccount) {
+    this.bankaccount = bankaccount;
     return this;
   }
 
    /**
-   * Bankovní účet [persistentní položka]
-   * @return bankAccount
+   * bankovní účet [persistentní položka]
+   * @return bankaccount
   **/
-  @ApiModelProperty(example = "null", value = "Bankovní účet [persistentní položka]")
-  public String getBankAccount() {
-    return bankAccount;
+  @ApiModelProperty(example = "null", value = "bankovní účet [persistentní položka]")
+  public String getBankaccount() {
+    return bankaccount;
   }
 
-  public void setBankAccount(String bankAccount) {
-    this.bankAccount = bankAccount;
+  public void setBankaccount(String bankaccount) {
+    this.bankaccount = bankaccount;
   }
 
-  public Insurancecompany varSymbol(String varSymbol) {
-    this.varSymbol = varSymbol;
+  public Insurancecompany varsymbol(String varsymbol) {
+    this.varsymbol = varsymbol;
     return this;
   }
 
    /**
-   * Variabilní symbol [persistentní položka]
-   * @return varSymbol
+   * variabilní symbol [persistentní položka]
+   * @return varsymbol
   **/
-  @ApiModelProperty(example = "null", value = "Variabilní symbol [persistentní položka]")
-  public String getVarSymbol() {
-    return varSymbol;
+  @ApiModelProperty(example = "null", value = "variabilní symbol [persistentní položka]")
+  public String getVarsymbol() {
+    return varsymbol;
   }
 
-  public void setVarSymbol(String varSymbol) {
-    this.varSymbol = varSymbol;
+  public void setVarsymbol(String varsymbol) {
+    this.varsymbol = varsymbol;
   }
 
-  public Insurancecompany constSymbolID(String constSymbolID) {
-    this.constSymbolID = constSymbolID;
+  public Insurancecompany constsymbolId(String constsymbolId) {
+    this.constsymbolId = constsymbolId;
     return this;
   }
 
    /**
-   * Konst.symbol; ID objektu Konstantní symbol [persistentní položka]
-   * @return constSymbolID
+   * konst.symbol; id objektu konstantní symbol [persistentní položka]
+   * @return constsymbolId
   **/
-  @ApiModelProperty(example = "null", value = "Konst.symbol; ID objektu Konstantní symbol [persistentní položka]")
-  public String getConstSymbolID() {
-    return constSymbolID;
+  @ApiModelProperty(example = "null", value = "konst.symbol; id objektu konstantní symbol [persistentní položka]")
+  public String getConstsymbolId() {
+    return constsymbolId;
   }
 
-  public void setConstSymbolID(String constSymbolID) {
-    this.constSymbolID = constSymbolID;
+  public void setConstsymbolId(String constsymbolId) {
+    this.constsymbolId = constsymbolId;
   }
 
-  public Insurancecompany specSymbol(String specSymbol) {
-    this.specSymbol = specSymbol;
+  public Insurancecompany specsymbol(String specsymbol) {
+    this.specsymbol = specsymbol;
     return this;
   }
 
    /**
-   * Spec.symbol [persistentní položka]
-   * @return specSymbol
+   * spec.symbol [persistentní položka]
+   * @return specsymbol
   **/
-  @ApiModelProperty(example = "null", value = "Spec.symbol [persistentní položka]")
-  public String getSpecSymbol() {
-    return specSymbol;
+  @ApiModelProperty(example = "null", value = "spec.symbol [persistentní položka]")
+  public String getSpecsymbol() {
+    return specsymbol;
   }
 
-  public void setSpecSymbol(String specSymbol) {
-    this.specSymbol = specSymbol;
+  public void setSpecsymbol(String specsymbol) {
+    this.specsymbol = specsymbol;
   }
 
-  public Insurancecompany accountID(String accountID) {
-    this.accountID = accountID;
+  public Insurancecompany accountId(String accountId) {
+    this.accountId = accountId;
     return this;
   }
 
    /**
-   * Anal.účet; ID objektu Účet účetního rozvrhu [persistentní položka]
-   * @return accountID
+   * anal.účet; id objektu Účet účetního rozvrhu [persistentní položka]
+   * @return accountId
   **/
-  @ApiModelProperty(example = "null", value = "Anal.účet; ID objektu Účet účetního rozvrhu [persistentní položka]")
-  public String getAccountID() {
-    return accountID;
+  @ApiModelProperty(example = "null", value = "anal.účet; id objektu Účet účetního rozvrhu [persistentní položka]")
+  public String getAccountId() {
+    return accountId;
   }
 
-  public void setAccountID(String accountID) {
-    this.accountID = accountID;
+  public void setAccountId(String accountId) {
+    this.accountId = accountId;
   }
 
-  public Insurancecompany firmID(String firmID) {
-    this.firmID = firmID;
+  public Insurancecompany firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Insurancecompany varSymbolMask(String varSymbolMask) {
-    this.varSymbolMask = varSymbolMask;
+  public Insurancecompany varsymbolmask(String varsymbolmask) {
+    this.varsymbolmask = varsymbolmask;
     return this;
   }
 
    /**
-   * Maska var. symb. [persistentní položka]
-   * @return varSymbolMask
+   * maska var. symb. [persistentní položka]
+   * @return varsymbolmask
   **/
-  @ApiModelProperty(example = "null", value = "Maska var. symb. [persistentní položka]")
-  public String getVarSymbolMask() {
-    return varSymbolMask;
+  @ApiModelProperty(example = "null", value = "maska var. symb. [persistentní položka]")
+  public String getVarsymbolmask() {
+    return varsymbolmask;
   }
 
-  public void setVarSymbolMask(String varSymbolMask) {
-    this.varSymbolMask = varSymbolMask;
+  public void setVarsymbolmask(String varsymbolmask) {
+    this.varsymbolmask = varsymbolmask;
   }
 
-  public Insurancecompany specSymbolMask(String specSymbolMask) {
-    this.specSymbolMask = specSymbolMask;
+  public Insurancecompany specsymbolmask(String specsymbolmask) {
+    this.specsymbolmask = specsymbolmask;
     return this;
   }
 
    /**
-   * Maska pro generováni specifického symbolu [persistentní položka]
-   * @return specSymbolMask
+   * maska pro generováni specifického symbolu [persistentní položka]
+   * @return specsymbolmask
   **/
-  @ApiModelProperty(example = "null", value = "Maska pro generováni specifického symbolu [persistentní položka]")
-  public String getSpecSymbolMask() {
-    return specSymbolMask;
+  @ApiModelProperty(example = "null", value = "maska pro generováni specifického symbolu [persistentní položka]")
+  public String getSpecsymbolmask() {
+    return specsymbolmask;
   }
 
-  public void setSpecSymbolMask(String specSymbolMask) {
-    this.specSymbolMask = specSymbolMask;
+  public void setSpecsymbolmask(String specsymbolmask) {
+    this.specsymbolmask = specsymbolmask;
   }
 
-  public Insurancecompany firmOrgIdentNumber(String firmOrgIdentNumber) {
-    this.firmOrgIdentNumber = firmOrgIdentNumber;
+  public Insurancecompany firmorgidentnumber(String firmorgidentnumber) {
+    this.firmorgidentnumber = firmorgidentnumber;
     return this;
   }
 
    /**
-   * IČO zdravotní pojišťovny
-   * @return firmOrgIdentNumber
+   * iČo zdravotní pojišťovny
+   * @return firmorgidentnumber
   **/
-  @ApiModelProperty(example = "null", value = "IČO zdravotní pojišťovny")
-  public String getFirmOrgIdentNumber() {
-    return firmOrgIdentNumber;
+  @ApiModelProperty(example = "null", value = "iČo zdravotní pojišťovny")
+  public String getFirmorgidentnumber() {
+    return firmorgidentnumber;
   }
 
-  public void setFirmOrgIdentNumber(String firmOrgIdentNumber) {
-    this.firmOrgIdentNumber = firmOrgIdentNumber;
+  public void setFirmorgidentnumber(String firmorgidentnumber) {
+    this.firmorgidentnumber = firmorgidentnumber;
   }
 
-  public Insurancecompany preferredCode(String preferredCode) {
-    this.preferredCode = preferredCode;
+  public Insurancecompany preferredcode(String preferredcode) {
+    this.preferredcode = preferredcode;
     return this;
   }
 
    /**
-   * Preferovaný kód [persistentní položka]
-   * @return preferredCode
+   * preferovaný kód [persistentní položka]
+   * @return preferredcode
   **/
-  @ApiModelProperty(example = "null", value = "Preferovaný kód [persistentní položka]")
-  public String getPreferredCode() {
-    return preferredCode;
+  @ApiModelProperty(example = "null", value = "preferovaný kód [persistentní položka]")
+  public String getPreferredcode() {
+    return preferredcode;
   }
 
-  public void setPreferredCode(String preferredCode) {
-    this.preferredCode = preferredCode;
+  public void setPreferredcode(String preferredcode) {
+    this.preferredcode = preferredcode;
   }
 
-  public Insurancecompany preferredDesc(String preferredDesc) {
-    this.preferredDesc = preferredDesc;
+  public Insurancecompany preferreddesc(String preferreddesc) {
+    this.preferreddesc = preferreddesc;
     return this;
   }
 
    /**
-   * Popis [persistentní položka]
-   * @return preferredDesc
+   * popis [persistentní položka]
+   * @return preferreddesc
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
-  public String getPreferredDesc() {
-    return preferredDesc;
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
+  public String getPreferreddesc() {
+    return preferreddesc;
   }
 
-  public void setPreferredDesc(String preferredDesc) {
-    this.preferredDesc = preferredDesc;
+  public void setPreferreddesc(String preferreddesc) {
+    this.preferreddesc = preferreddesc;
   }
 
 
@@ -409,30 +445,30 @@ public class Insurancecompany   {
       return false;
     }
     Insurancecompany insurancecompany = (Insurancecompany) o;
-    return Objects.equals(this.displayName, insurancecompany.displayName) &&
-        Objects.equals(this.ID, insurancecompany.ID) &&
-        Objects.equals(this.classID, insurancecompany.classID) &&
-        Objects.equals(this.objVersion, insurancecompany.objVersion) &&
+    return Objects.equals(this.displayname, insurancecompany.displayname) &&
+        Objects.equals(this.id, insurancecompany.id) &&
+        Objects.equals(this.classid, insurancecompany.classid) &&
+        Objects.equals(this.objversion, insurancecompany.objversion) &&
         Objects.equals(this.hidden, insurancecompany.hidden) &&
         Objects.equals(this.code, insurancecompany.code) &&
         Objects.equals(this.name, insurancecompany.name) &&
-        Objects.equals(this.addressID, insurancecompany.addressID) &&
-        Objects.equals(this.bankAccount, insurancecompany.bankAccount) &&
-        Objects.equals(this.varSymbol, insurancecompany.varSymbol) &&
-        Objects.equals(this.constSymbolID, insurancecompany.constSymbolID) &&
-        Objects.equals(this.specSymbol, insurancecompany.specSymbol) &&
-        Objects.equals(this.accountID, insurancecompany.accountID) &&
-        Objects.equals(this.firmID, insurancecompany.firmID) &&
-        Objects.equals(this.varSymbolMask, insurancecompany.varSymbolMask) &&
-        Objects.equals(this.specSymbolMask, insurancecompany.specSymbolMask) &&
-        Objects.equals(this.firmOrgIdentNumber, insurancecompany.firmOrgIdentNumber) &&
-        Objects.equals(this.preferredCode, insurancecompany.preferredCode) &&
-        Objects.equals(this.preferredDesc, insurancecompany.preferredDesc);
+        Objects.equals(this.addressId, insurancecompany.addressId) &&
+        Objects.equals(this.bankaccount, insurancecompany.bankaccount) &&
+        Objects.equals(this.varsymbol, insurancecompany.varsymbol) &&
+        Objects.equals(this.constsymbolId, insurancecompany.constsymbolId) &&
+        Objects.equals(this.specsymbol, insurancecompany.specsymbol) &&
+        Objects.equals(this.accountId, insurancecompany.accountId) &&
+        Objects.equals(this.firmId, insurancecompany.firmId) &&
+        Objects.equals(this.varsymbolmask, insurancecompany.varsymbolmask) &&
+        Objects.equals(this.specsymbolmask, insurancecompany.specsymbolmask) &&
+        Objects.equals(this.firmorgidentnumber, insurancecompany.firmorgidentnumber) &&
+        Objects.equals(this.preferredcode, insurancecompany.preferredcode) &&
+        Objects.equals(this.preferreddesc, insurancecompany.preferreddesc);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, addressID, bankAccount, varSymbol, constSymbolID, specSymbol, accountID, firmID, varSymbolMask, specSymbolMask, firmOrgIdentNumber, preferredCode, preferredDesc);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, addressId, bankaccount, varsymbol, constsymbolId, specsymbol, accountId, firmId, varsymbolmask, specsymbolmask, firmorgidentnumber, preferredcode, preferreddesc);
   }
 
   @Override
@@ -440,25 +476,25 @@ public class Insurancecompany   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Insurancecompany {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    addressID: ").append(toIndentedString(addressID)).append("\n");
-    sb.append("    bankAccount: ").append(toIndentedString(bankAccount)).append("\n");
-    sb.append("    varSymbol: ").append(toIndentedString(varSymbol)).append("\n");
-    sb.append("    constSymbolID: ").append(toIndentedString(constSymbolID)).append("\n");
-    sb.append("    specSymbol: ").append(toIndentedString(specSymbol)).append("\n");
-    sb.append("    accountID: ").append(toIndentedString(accountID)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    varSymbolMask: ").append(toIndentedString(varSymbolMask)).append("\n");
-    sb.append("    specSymbolMask: ").append(toIndentedString(specSymbolMask)).append("\n");
-    sb.append("    firmOrgIdentNumber: ").append(toIndentedString(firmOrgIdentNumber)).append("\n");
-    sb.append("    preferredCode: ").append(toIndentedString(preferredCode)).append("\n");
-    sb.append("    preferredDesc: ").append(toIndentedString(preferredDesc)).append("\n");
+    sb.append("    addressId: ").append(toIndentedString(addressId)).append("\n");
+    sb.append("    bankaccount: ").append(toIndentedString(bankaccount)).append("\n");
+    sb.append("    varsymbol: ").append(toIndentedString(varsymbol)).append("\n");
+    sb.append("    constsymbolId: ").append(toIndentedString(constsymbolId)).append("\n");
+    sb.append("    specsymbol: ").append(toIndentedString(specsymbol)).append("\n");
+    sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    varsymbolmask: ").append(toIndentedString(varsymbolmask)).append("\n");
+    sb.append("    specsymbolmask: ").append(toIndentedString(specsymbolmask)).append("\n");
+    sb.append("    firmorgidentnumber: ").append(toIndentedString(firmorgidentnumber)).append("\n");
+    sb.append("    preferredcode: ").append(toIndentedString(preferredcode)).append("\n");
+    sb.append("    preferreddesc: ").append(toIndentedString(preferreddesc)).append("\n");
     sb.append("}");
     return sb.toString();
   }

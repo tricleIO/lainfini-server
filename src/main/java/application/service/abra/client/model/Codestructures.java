@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,63 +34,99 @@ import java.util.Objects;
 /**
  * Codestructures
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Codestructures   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("CodeStructure")
-  private String codeStructure = null;
+  @SerializedName("codestructure")
+  private String codestructure = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Codestructures displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Codestructures id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Codestructures classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Codestructures objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Codestructures code(String code) {
@@ -99,10 +135,10 @@ public class Codestructures   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -117,10 +153,10 @@ public class Codestructures   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -129,22 +165,22 @@ public class Codestructures   {
     this.name = name;
   }
 
-  public Codestructures codeStructure(String codeStructure) {
-    this.codeStructure = codeStructure;
+  public Codestructures codestructure(String codestructure) {
+    this.codestructure = codestructure;
     return this;
   }
 
    /**
-   * Struktura [persistentní položka]
-   * @return codeStructure
+   * struktura [persistentní položka]
+   * @return codestructure
   **/
-  @ApiModelProperty(example = "null", value = "Struktura [persistentní položka]")
-  public String getCodeStructure() {
-    return codeStructure;
+  @ApiModelProperty(example = "null", value = "struktura [persistentní položka]")
+  public String getCodestructure() {
+    return codestructure;
   }
 
-  public void setCodeStructure(String codeStructure) {
-    this.codeStructure = codeStructure;
+  public void setCodestructure(String codestructure) {
+    this.codestructure = codestructure;
   }
 
 
@@ -157,18 +193,18 @@ public class Codestructures   {
       return false;
     }
     Codestructures codestructures = (Codestructures) o;
-    return Objects.equals(this.displayName, codestructures.displayName) &&
-        Objects.equals(this.ID, codestructures.ID) &&
-        Objects.equals(this.classID, codestructures.classID) &&
-        Objects.equals(this.objVersion, codestructures.objVersion) &&
+    return Objects.equals(this.displayname, codestructures.displayname) &&
+        Objects.equals(this.id, codestructures.id) &&
+        Objects.equals(this.classid, codestructures.classid) &&
+        Objects.equals(this.objversion, codestructures.objversion) &&
         Objects.equals(this.code, codestructures.code) &&
         Objects.equals(this.name, codestructures.name) &&
-        Objects.equals(this.codeStructure, codestructures.codeStructure);
+        Objects.equals(this.codestructure, codestructures.codestructure);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, code, name, codeStructure);
+    return Objects.hash(displayname, id, classid, objversion, code, name, codestructure);
   }
 
   @Override
@@ -176,13 +212,13 @@ public class Codestructures   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Codestructures {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    codeStructure: ").append(toIndentedString(codeStructure)).append("\n");
+    sb.append("    codestructure: ").append(toIndentedString(codestructure)).append("\n");
     sb.append("}");
     return sb.toString();
   }

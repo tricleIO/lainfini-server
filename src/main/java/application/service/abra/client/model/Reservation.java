@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,162 +35,239 @@ import java.util.Objects;
 /**
  * Reservation
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Reservation   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Revided_ID")
-  private String revidedID = null;
+  @SerializedName("revided_id")
+  private String revidedId = null;
 
-  @SerializedName("RevisionDescription")
-  private String revisionDescription = null;
+  @SerializedName("revisiondescription")
+  private String revisiondescription = null;
 
-  @SerializedName("RevisionDate$DATE")
-  private DateTime revisionDateDATE = null;
+  @SerializedName("revisiondate$date")
+  private DateTime revisiondatedate = null;
 
-  @SerializedName("RevisionAuthor_ID")
-  private String revisionAuthorID = null;
+  @SerializedName("revisionauthor_id")
+  private String revisionauthorId = null;
 
-  @SerializedName("Revision")
+  @SerializedName("revision")
   private Integer revision = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("Priority")
+  @SerializedName("priority")
   private Integer priority = null;
 
-  @SerializedName("DateTo$DATE")
-  private DateTime dateToDATE = null;
+  @SerializedName("dateto$date")
+  private DateTime datetodate = null;
 
-  @SerializedName("DateFrom$DATE")
-  private DateTime dateFromDATE = null;
+  @SerializedName("datefrom$date")
+  private DateTime datefromdate = null;
 
-  @SerializedName("Reserved")
+  @SerializedName("reserved")
   private Double reserved = null;
 
-  @SerializedName("Supplied")
+  @SerializedName("supplied")
   private Double supplied = null;
 
-  @SerializedName("OrderDate$DATE")
-  private DateTime orderDateDATE = null;
+  @SerializedName("orderdate$date")
+  private DateTime orderdatedate = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("UnitReserved")
-  private Double unitReserved = null;
+  @SerializedName("unitreserved")
+  private Double unitreserved = null;
 
-  @SerializedName("UnitSupplied")
-  private Double unitSupplied = null;
+  @SerializedName("unitsupplied")
+  private Double unitsupplied = null;
 
-  @SerializedName("UnitActualReserved")
-  private Double unitActualReserved = null;
+  @SerializedName("unitactualreserved")
+  private Double unitactualreserved = null;
 
-  @SerializedName("Owner_ID")
-  private String ownerID = null;
+  @SerializedName("owner_id")
+  private String ownerId = null;
 
-  @SerializedName("OwnerKind")
-  private Integer ownerKind = null;
+  @SerializedName("ownerkind")
+  private Integer ownerkind = null;
 
-  @SerializedName("OwnerDisplayName")
-  private String ownerDisplayName = null;
+  @SerializedName("ownerdisplayname")
+  private String ownerdisplayname = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Reservation displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Reservation id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Reservation classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Reservation objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * ID revidovaného objektu; ID objektu Skladová rezervace
-   * @return revidedID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "ID revidovaného objektu; ID objektu Skladová rezervace")
-  public String getRevidedID() {
-    return revidedID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Reservation revidedId(String revidedId) {
+    this.revidedId = revidedId;
+    return this;
   }
 
    /**
-   * Popis revize
-   * @return revisionDescription
+   * id revidovaného objektu; id objektu skladová rezervace
+   * @return revidedId
   **/
-  @ApiModelProperty(example = "null", value = "Popis revize")
-  public String getRevisionDescription() {
-    return revisionDescription;
+  @ApiModelProperty(example = "null", value = "id revidovaného objektu; id objektu skladová rezervace")
+  public String getRevidedId() {
+    return revidedId;
+  }
+
+  public void setRevidedId(String revidedId) {
+    this.revidedId = revidedId;
+  }
+
+  public Reservation revisiondescription(String revisiondescription) {
+    this.revisiondescription = revisiondescription;
+    return this;
   }
 
    /**
-   * Datum revize
-   * @return revisionDateDATE
+   * popis revize
+   * @return revisiondescription
   **/
-  @ApiModelProperty(example = "null", value = "Datum revize")
-  public DateTime getRevisionDateDATE() {
-    return revisionDateDATE;
+  @ApiModelProperty(example = "null", value = "popis revize")
+  public String getRevisiondescription() {
+    return revisiondescription;
+  }
+
+  public void setRevisiondescription(String revisiondescription) {
+    this.revisiondescription = revisiondescription;
+  }
+
+  public Reservation revisiondatedate(DateTime revisiondatedate) {
+    this.revisiondatedate = revisiondatedate;
+    return this;
   }
 
    /**
-   * Autor revize; ID objektu Uživatel
-   * @return revisionAuthorID
+   * datum revize
+   * @return revisiondatedate
   **/
-  @ApiModelProperty(example = "null", value = "Autor revize; ID objektu Uživatel")
-  public String getRevisionAuthorID() {
-    return revisionAuthorID;
+  @ApiModelProperty(example = "null", value = "datum revize")
+  public DateTime getRevisiondatedate() {
+    return revisiondatedate;
+  }
+
+  public void setRevisiondatedate(DateTime revisiondatedate) {
+    this.revisiondatedate = revisiondatedate;
+  }
+
+  public Reservation revisionauthorId(String revisionauthorId) {
+    this.revisionauthorId = revisionauthorId;
+    return this;
+  }
+
+   /**
+   * autor revize; id objektu uživatel
+   * @return revisionauthorId
+  **/
+  @ApiModelProperty(example = "null", value = "autor revize; id objektu uživatel")
+  public String getRevisionauthorId() {
+    return revisionauthorId;
+  }
+
+  public void setRevisionauthorId(String revisionauthorId) {
+    this.revisionauthorId = revisionauthorId;
+  }
+
+  public Reservation revision(Integer revision) {
+    this.revision = revision;
+    return this;
   }
 
    /**
@@ -202,40 +279,44 @@ public class Reservation   {
     return revision;
   }
 
-  public Reservation storeID(String storeID) {
-    this.storeID = storeID;
+  public void setRevision(Integer revision) {
+    this.revision = revision;
+  }
+
+  public Reservation storeId(String storeId) {
+    this.storeId = storeId;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
-  public Reservation storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Reservation storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Sklad. karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * sklad. karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad. karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "sklad. karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
   }
 
   public Reservation priority(Integer priority) {
@@ -244,10 +325,10 @@ public class Reservation   {
   }
 
    /**
-   * Priorita [persistentní položka]
+   * priorita [persistentní položka]
    * @return priority
   **/
-  @ApiModelProperty(example = "null", value = "Priorita [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "priorita [persistentní položka]")
   public Integer getPriority() {
     return priority;
   }
@@ -256,40 +337,40 @@ public class Reservation   {
     this.priority = priority;
   }
 
-  public Reservation dateToDATE(DateTime dateToDATE) {
-    this.dateToDATE = dateToDATE;
+  public Reservation datetodate(DateTime datetodate) {
+    this.datetodate = datetodate;
     return this;
   }
 
    /**
-   * Rezervovat do [persistentní položka]
-   * @return dateToDATE
+   * rezervovat do [persistentní položka]
+   * @return datetodate
   **/
-  @ApiModelProperty(example = "null", value = "Rezervovat do [persistentní položka]")
-  public DateTime getDateToDATE() {
-    return dateToDATE;
+  @ApiModelProperty(example = "null", value = "rezervovat do [persistentní položka]")
+  public DateTime getDatetodate() {
+    return datetodate;
   }
 
-  public void setDateToDATE(DateTime dateToDATE) {
-    this.dateToDATE = dateToDATE;
+  public void setDatetodate(DateTime datetodate) {
+    this.datetodate = datetodate;
   }
 
-  public Reservation dateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public Reservation datefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
     return this;
   }
 
    /**
-   * Rezervovat od [persistentní položka]
-   * @return dateFromDATE
+   * rezervovat od [persistentní položka]
+   * @return datefromdate
   **/
-  @ApiModelProperty(example = "null", value = "Rezervovat od [persistentní položka]")
-  public DateTime getDateFromDATE() {
-    return dateFromDATE;
+  @ApiModelProperty(example = "null", value = "rezervovat od [persistentní položka]")
+  public DateTime getDatefromdate() {
+    return datefromdate;
   }
 
-  public void setDateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public void setDatefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
   }
 
   public Reservation reserved(Double reserved) {
@@ -298,10 +379,10 @@ public class Reservation   {
   }
 
    /**
-   * Množství [persistentní položka]
+   * množství [persistentní položka]
    * @return reserved
   **/
-  @ApiModelProperty(example = "null", value = "Množství [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "množství [persistentní položka]")
   public Double getReserved() {
     return reserved;
   }
@@ -316,10 +397,10 @@ public class Reservation   {
   }
 
    /**
-   * Vydodané množ. [persistentní položka]
+   * vydodané množ. [persistentní položka]
    * @return supplied
   **/
-  @ApiModelProperty(example = "null", value = "Vydodané množ. [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "vydodané množ. [persistentní položka]")
   public Double getSupplied() {
     return supplied;
   }
@@ -328,220 +409,220 @@ public class Reservation   {
     this.supplied = supplied;
   }
 
-  public Reservation orderDateDATE(DateTime orderDateDATE) {
-    this.orderDateDATE = orderDateDATE;
+  public Reservation orderdatedate(DateTime orderdatedate) {
+    this.orderdatedate = orderdatedate;
     return this;
   }
 
    /**
    * Čas objednání [persistentní položka]
-   * @return orderDateDATE
+   * @return orderdatedate
   **/
   @ApiModelProperty(example = "null", value = "Čas objednání [persistentní položka]")
-  public DateTime getOrderDateDATE() {
-    return orderDateDATE;
+  public DateTime getOrderdatedate() {
+    return orderdatedate;
   }
 
-  public void setOrderDateDATE(DateTime orderDateDATE) {
-    this.orderDateDATE = orderDateDATE;
+  public void setOrderdatedate(DateTime orderdatedate) {
+    this.orderdatedate = orderdatedate;
   }
 
-  public Reservation qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Reservation qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
   }
 
-  public Reservation unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Reservation unitrate(Double unitrate) {
+    this.unitrate = unitrate;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return unitRate
+   * vztah [persistentní položka]
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
-  public Reservation unitReserved(Double unitReserved) {
-    this.unitReserved = unitReserved;
+  public Reservation unitreserved(Double unitreserved) {
+    this.unitreserved = unitreserved;
     return this;
   }
 
    /**
-   * Rezervováno
-   * @return unitReserved
+   * rezervováno
+   * @return unitreserved
   **/
-  @ApiModelProperty(example = "null", value = "Rezervováno")
-  public Double getUnitReserved() {
-    return unitReserved;
+  @ApiModelProperty(example = "null", value = "rezervováno")
+  public Double getUnitreserved() {
+    return unitreserved;
   }
 
-  public void setUnitReserved(Double unitReserved) {
-    this.unitReserved = unitReserved;
+  public void setUnitreserved(Double unitreserved) {
+    this.unitreserved = unitreserved;
   }
 
-  public Reservation unitSupplied(Double unitSupplied) {
-    this.unitSupplied = unitSupplied;
+  public Reservation unitsupplied(Double unitsupplied) {
+    this.unitsupplied = unitsupplied;
     return this;
   }
 
    /**
-   * Splněno
-   * @return unitSupplied
+   * splněno
+   * @return unitsupplied
   **/
-  @ApiModelProperty(example = "null", value = "Splněno")
-  public Double getUnitSupplied() {
-    return unitSupplied;
+  @ApiModelProperty(example = "null", value = "splněno")
+  public Double getUnitsupplied() {
+    return unitsupplied;
   }
 
-  public void setUnitSupplied(Double unitSupplied) {
-    this.unitSupplied = unitSupplied;
+  public void setUnitsupplied(Double unitsupplied) {
+    this.unitsupplied = unitsupplied;
   }
 
-  public Reservation unitActualReserved(Double unitActualReserved) {
-    this.unitActualReserved = unitActualReserved;
+  public Reservation unitactualreserved(Double unitactualreserved) {
+    this.unitactualreserved = unitactualreserved;
     return this;
   }
 
    /**
-   * Akt. rezervováno
-   * @return unitActualReserved
+   * akt. rezervováno
+   * @return unitactualreserved
   **/
-  @ApiModelProperty(example = "null", value = "Akt. rezervováno")
-  public Double getUnitActualReserved() {
-    return unitActualReserved;
+  @ApiModelProperty(example = "null", value = "akt. rezervováno")
+  public Double getUnitactualreserved() {
+    return unitactualreserved;
   }
 
-  public void setUnitActualReserved(Double unitActualReserved) {
-    this.unitActualReserved = unitActualReserved;
+  public void setUnitactualreserved(Double unitactualreserved) {
+    this.unitactualreserved = unitactualreserved;
   }
 
-  public Reservation ownerID(String ownerID) {
-    this.ownerID = ownerID;
+  public Reservation ownerId(String ownerId) {
+    this.ownerId = ownerId;
     return this;
   }
 
    /**
-   * Vlastník [persistentní položka]
-   * @return ownerID
+   * vlastník [persistentní položka]
+   * @return ownerId
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník [persistentní položka]")
-  public String getOwnerID() {
-    return ownerID;
+  @ApiModelProperty(example = "null", value = "vlastník [persistentní položka]")
+  public String getOwnerId() {
+    return ownerId;
   }
 
-  public void setOwnerID(String ownerID) {
-    this.ownerID = ownerID;
+  public void setOwnerId(String ownerId) {
+    this.ownerId = ownerId;
   }
 
-  public Reservation ownerKind(Integer ownerKind) {
-    this.ownerKind = ownerKind;
+  public Reservation ownerkind(Integer ownerkind) {
+    this.ownerkind = ownerkind;
     return this;
   }
 
    /**
-   * Typ vlastníka [persistentní položka]
-   * @return ownerKind
+   * typ vlastníka [persistentní položka]
+   * @return ownerkind
   **/
-  @ApiModelProperty(example = "null", value = "Typ vlastníka [persistentní položka]")
-  public Integer getOwnerKind() {
-    return ownerKind;
+  @ApiModelProperty(example = "null", value = "typ vlastníka [persistentní položka]")
+  public Integer getOwnerkind() {
+    return ownerkind;
   }
 
-  public void setOwnerKind(Integer ownerKind) {
-    this.ownerKind = ownerKind;
+  public void setOwnerkind(Integer ownerkind) {
+    this.ownerkind = ownerkind;
   }
 
-  public Reservation ownerDisplayName(String ownerDisplayName) {
-    this.ownerDisplayName = ownerDisplayName;
+  public Reservation ownerdisplayname(String ownerdisplayname) {
+    this.ownerdisplayname = ownerdisplayname;
     return this;
   }
 
    /**
-   * Název vlastníka
-   * @return ownerDisplayName
+   * název vlastníka
+   * @return ownerdisplayname
   **/
-  @ApiModelProperty(example = "null", value = "Název vlastníka")
-  public String getOwnerDisplayName() {
-    return ownerDisplayName;
+  @ApiModelProperty(example = "null", value = "název vlastníka")
+  public String getOwnerdisplayname() {
+    return ownerdisplayname;
   }
 
-  public void setOwnerDisplayName(String ownerDisplayName) {
-    this.ownerDisplayName = ownerDisplayName;
+  public void setOwnerdisplayname(String ownerdisplayname) {
+    this.ownerdisplayname = ownerdisplayname;
   }
 
-  public Reservation busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Reservation busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Reservation busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Reservation bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obch. případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obch. případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obch. případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obch. případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Reservation busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Reservation busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
 
@@ -554,39 +635,39 @@ public class Reservation   {
       return false;
     }
     Reservation reservation = (Reservation) o;
-    return Objects.equals(this.displayName, reservation.displayName) &&
-        Objects.equals(this.ID, reservation.ID) &&
-        Objects.equals(this.classID, reservation.classID) &&
-        Objects.equals(this.objVersion, reservation.objVersion) &&
-        Objects.equals(this.revidedID, reservation.revidedID) &&
-        Objects.equals(this.revisionDescription, reservation.revisionDescription) &&
-        Objects.equals(this.revisionDateDATE, reservation.revisionDateDATE) &&
-        Objects.equals(this.revisionAuthorID, reservation.revisionAuthorID) &&
+    return Objects.equals(this.displayname, reservation.displayname) &&
+        Objects.equals(this.id, reservation.id) &&
+        Objects.equals(this.classid, reservation.classid) &&
+        Objects.equals(this.objversion, reservation.objversion) &&
+        Objects.equals(this.revidedId, reservation.revidedId) &&
+        Objects.equals(this.revisiondescription, reservation.revisiondescription) &&
+        Objects.equals(this.revisiondatedate, reservation.revisiondatedate) &&
+        Objects.equals(this.revisionauthorId, reservation.revisionauthorId) &&
         Objects.equals(this.revision, reservation.revision) &&
-        Objects.equals(this.storeID, reservation.storeID) &&
-        Objects.equals(this.storeCardID, reservation.storeCardID) &&
+        Objects.equals(this.storeId, reservation.storeId) &&
+        Objects.equals(this.storecardId, reservation.storecardId) &&
         Objects.equals(this.priority, reservation.priority) &&
-        Objects.equals(this.dateToDATE, reservation.dateToDATE) &&
-        Objects.equals(this.dateFromDATE, reservation.dateFromDATE) &&
+        Objects.equals(this.datetodate, reservation.datetodate) &&
+        Objects.equals(this.datefromdate, reservation.datefromdate) &&
         Objects.equals(this.reserved, reservation.reserved) &&
         Objects.equals(this.supplied, reservation.supplied) &&
-        Objects.equals(this.orderDateDATE, reservation.orderDateDATE) &&
-        Objects.equals(this.qUnit, reservation.qUnit) &&
-        Objects.equals(this.unitRate, reservation.unitRate) &&
-        Objects.equals(this.unitReserved, reservation.unitReserved) &&
-        Objects.equals(this.unitSupplied, reservation.unitSupplied) &&
-        Objects.equals(this.unitActualReserved, reservation.unitActualReserved) &&
-        Objects.equals(this.ownerID, reservation.ownerID) &&
-        Objects.equals(this.ownerKind, reservation.ownerKind) &&
-        Objects.equals(this.ownerDisplayName, reservation.ownerDisplayName) &&
-        Objects.equals(this.busOrderID, reservation.busOrderID) &&
-        Objects.equals(this.busTransactionID, reservation.busTransactionID) &&
-        Objects.equals(this.busProjectID, reservation.busProjectID);
+        Objects.equals(this.orderdatedate, reservation.orderdatedate) &&
+        Objects.equals(this.qunit, reservation.qunit) &&
+        Objects.equals(this.unitrate, reservation.unitrate) &&
+        Objects.equals(this.unitreserved, reservation.unitreserved) &&
+        Objects.equals(this.unitsupplied, reservation.unitsupplied) &&
+        Objects.equals(this.unitactualreserved, reservation.unitactualreserved) &&
+        Objects.equals(this.ownerId, reservation.ownerId) &&
+        Objects.equals(this.ownerkind, reservation.ownerkind) &&
+        Objects.equals(this.ownerdisplayname, reservation.ownerdisplayname) &&
+        Objects.equals(this.busorderId, reservation.busorderId) &&
+        Objects.equals(this.bustransactionId, reservation.bustransactionId) &&
+        Objects.equals(this.busprojectId, reservation.busprojectId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, revidedID, revisionDescription, revisionDateDATE, revisionAuthorID, revision, storeID, storeCardID, priority, dateToDATE, dateFromDATE, reserved, supplied, orderDateDATE, qUnit, unitRate, unitReserved, unitSupplied, unitActualReserved, ownerID, ownerKind, ownerDisplayName, busOrderID, busTransactionID, busProjectID);
+    return Objects.hash(displayname, id, classid, objversion, revidedId, revisiondescription, revisiondatedate, revisionauthorId, revision, storeId, storecardId, priority, datetodate, datefromdate, reserved, supplied, orderdatedate, qunit, unitrate, unitreserved, unitsupplied, unitactualreserved, ownerId, ownerkind, ownerdisplayname, busorderId, bustransactionId, busprojectId);
   }
 
   @Override
@@ -594,34 +675,34 @@ public class Reservation   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Reservation {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    revidedID: ").append(toIndentedString(revidedID)).append("\n");
-    sb.append("    revisionDescription: ").append(toIndentedString(revisionDescription)).append("\n");
-    sb.append("    revisionDateDATE: ").append(toIndentedString(revisionDateDATE)).append("\n");
-    sb.append("    revisionAuthorID: ").append(toIndentedString(revisionAuthorID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    revidedId: ").append(toIndentedString(revidedId)).append("\n");
+    sb.append("    revisiondescription: ").append(toIndentedString(revisiondescription)).append("\n");
+    sb.append("    revisiondatedate: ").append(toIndentedString(revisiondatedate)).append("\n");
+    sb.append("    revisionauthorId: ").append(toIndentedString(revisionauthorId)).append("\n");
     sb.append("    revision: ").append(toIndentedString(revision)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
-    sb.append("    dateToDATE: ").append(toIndentedString(dateToDATE)).append("\n");
-    sb.append("    dateFromDATE: ").append(toIndentedString(dateFromDATE)).append("\n");
+    sb.append("    datetodate: ").append(toIndentedString(datetodate)).append("\n");
+    sb.append("    datefromdate: ").append(toIndentedString(datefromdate)).append("\n");
     sb.append("    reserved: ").append(toIndentedString(reserved)).append("\n");
     sb.append("    supplied: ").append(toIndentedString(supplied)).append("\n");
-    sb.append("    orderDateDATE: ").append(toIndentedString(orderDateDATE)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    unitReserved: ").append(toIndentedString(unitReserved)).append("\n");
-    sb.append("    unitSupplied: ").append(toIndentedString(unitSupplied)).append("\n");
-    sb.append("    unitActualReserved: ").append(toIndentedString(unitActualReserved)).append("\n");
-    sb.append("    ownerID: ").append(toIndentedString(ownerID)).append("\n");
-    sb.append("    ownerKind: ").append(toIndentedString(ownerKind)).append("\n");
-    sb.append("    ownerDisplayName: ").append(toIndentedString(ownerDisplayName)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
+    sb.append("    orderdatedate: ").append(toIndentedString(orderdatedate)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    unitreserved: ").append(toIndentedString(unitreserved)).append("\n");
+    sb.append("    unitsupplied: ").append(toIndentedString(unitsupplied)).append("\n");
+    sb.append("    unitactualreserved: ").append(toIndentedString(unitactualreserved)).append("\n");
+    sb.append("    ownerId: ").append(toIndentedString(ownerId)).append("\n");
+    sb.append("    ownerkind: ").append(toIndentedString(ownerkind)).append("\n");
+    sb.append("    ownerdisplayname: ").append(toIndentedString(ownerdisplayname)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,90 +35,126 @@ import java.util.Objects;
 /**
  * Generalcalendar
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Generalcalendar   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("FixedHoliday")
-  private Boolean fixedHoliday = null;
+  @SerializedName("fixedholiday")
+  private Boolean fixedholiday = null;
 
-  @SerializedName("HolidayMonthDay")
-  private Integer holidayMonthDay = null;
+  @SerializedName("holidaymonthday")
+  private Integer holidaymonthday = null;
 
-  @SerializedName("ValidFromYear")
-  private Integer validFromYear = null;
+  @SerializedName("validfromyear")
+  private Integer validfromyear = null;
 
-  @SerializedName("ValidToYear")
-  private Integer validToYear = null;
+  @SerializedName("validtoyear")
+  private Integer validtoyear = null;
 
-  @SerializedName("HolidayDay")
-  private Integer holidayDay = null;
+  @SerializedName("holidayday")
+  private Integer holidayday = null;
 
-  @SerializedName("HolidayMonth")
-  private Integer holidayMonth = null;
+  @SerializedName("holidaymonth")
+  private Integer holidaymonth = null;
 
-  @SerializedName("MonthDayText")
-  private String monthDayText = null;
+  @SerializedName("monthdaytext")
+  private String monthdaytext = null;
 
-  @SerializedName("HolidayDate")
-  private DateTime holidayDate = null;
+  @SerializedName("holidaydate")
+  private DateTime holidaydate = null;
 
-  @SerializedName("FromYearText")
-  private String fromYearText = null;
+  @SerializedName("fromyeartext")
+  private String fromyeartext = null;
 
-  @SerializedName("ToYearText")
-  private String toYearText = null;
+  @SerializedName("toyeartext")
+  private String toyeartext = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Generalcalendar displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Generalcalendar id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Generalcalendar classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Generalcalendar objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Generalcalendar hidden(Boolean hidden) {
@@ -127,10 +163,10 @@ public class Generalcalendar   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -145,10 +181,10 @@ public class Generalcalendar   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -157,184 +193,184 @@ public class Generalcalendar   {
     this.name = name;
   }
 
-  public Generalcalendar fixedHoliday(Boolean fixedHoliday) {
-    this.fixedHoliday = fixedHoliday;
+  public Generalcalendar fixedholiday(Boolean fixedholiday) {
+    this.fixedholiday = fixedholiday;
     return this;
   }
 
    /**
-   * Pevný [persistentní položka]
-   * @return fixedHoliday
+   * pevný [persistentní položka]
+   * @return fixedholiday
   **/
-  @ApiModelProperty(example = "null", value = "Pevný [persistentní položka]")
-  public Boolean getFixedHoliday() {
-    return fixedHoliday;
+  @ApiModelProperty(example = "null", value = "pevný [persistentní položka]")
+  public Boolean getFixedholiday() {
+    return fixedholiday;
   }
 
-  public void setFixedHoliday(Boolean fixedHoliday) {
-    this.fixedHoliday = fixedHoliday;
+  public void setFixedholiday(Boolean fixedholiday) {
+    this.fixedholiday = fixedholiday;
   }
 
-  public Generalcalendar holidayMonthDay(Integer holidayMonthDay) {
-    this.holidayMonthDay = holidayMonthDay;
+  public Generalcalendar holidaymonthday(Integer holidaymonthday) {
+    this.holidaymonthday = holidaymonthday;
     return this;
   }
 
    /**
-   * Měsíc, den [persistentní položka]
-   * @return holidayMonthDay
+   * měsíc, den [persistentní položka]
+   * @return holidaymonthday
   **/
-  @ApiModelProperty(example = "null", value = "Měsíc, den [persistentní položka]")
-  public Integer getHolidayMonthDay() {
-    return holidayMonthDay;
+  @ApiModelProperty(example = "null", value = "měsíc, den [persistentní položka]")
+  public Integer getHolidaymonthday() {
+    return holidaymonthday;
   }
 
-  public void setHolidayMonthDay(Integer holidayMonthDay) {
-    this.holidayMonthDay = holidayMonthDay;
+  public void setHolidaymonthday(Integer holidaymonthday) {
+    this.holidaymonthday = holidaymonthday;
   }
 
-  public Generalcalendar validFromYear(Integer validFromYear) {
-    this.validFromYear = validFromYear;
+  public Generalcalendar validfromyear(Integer validfromyear) {
+    this.validfromyear = validfromyear;
     return this;
   }
 
    /**
-   * Od roku [persistentní položka]
-   * @return validFromYear
+   * od roku [persistentní položka]
+   * @return validfromyear
   **/
-  @ApiModelProperty(example = "null", value = "Od roku [persistentní položka]")
-  public Integer getValidFromYear() {
-    return validFromYear;
+  @ApiModelProperty(example = "null", value = "od roku [persistentní položka]")
+  public Integer getValidfromyear() {
+    return validfromyear;
   }
 
-  public void setValidFromYear(Integer validFromYear) {
-    this.validFromYear = validFromYear;
+  public void setValidfromyear(Integer validfromyear) {
+    this.validfromyear = validfromyear;
   }
 
-  public Generalcalendar validToYear(Integer validToYear) {
-    this.validToYear = validToYear;
+  public Generalcalendar validtoyear(Integer validtoyear) {
+    this.validtoyear = validtoyear;
     return this;
   }
 
    /**
-   * Do roku [persistentní položka]
-   * @return validToYear
+   * do roku [persistentní položka]
+   * @return validtoyear
   **/
-  @ApiModelProperty(example = "null", value = "Do roku [persistentní položka]")
-  public Integer getValidToYear() {
-    return validToYear;
+  @ApiModelProperty(example = "null", value = "do roku [persistentní položka]")
+  public Integer getValidtoyear() {
+    return validtoyear;
   }
 
-  public void setValidToYear(Integer validToYear) {
-    this.validToYear = validToYear;
+  public void setValidtoyear(Integer validtoyear) {
+    this.validtoyear = validtoyear;
   }
 
-  public Generalcalendar holidayDay(Integer holidayDay) {
-    this.holidayDay = holidayDay;
+  public Generalcalendar holidayday(Integer holidayday) {
+    this.holidayday = holidayday;
     return this;
   }
 
    /**
-   * Den
-   * @return holidayDay
+   * den
+   * @return holidayday
   **/
-  @ApiModelProperty(example = "null", value = "Den")
-  public Integer getHolidayDay() {
-    return holidayDay;
+  @ApiModelProperty(example = "null", value = "den")
+  public Integer getHolidayday() {
+    return holidayday;
   }
 
-  public void setHolidayDay(Integer holidayDay) {
-    this.holidayDay = holidayDay;
+  public void setHolidayday(Integer holidayday) {
+    this.holidayday = holidayday;
   }
 
-  public Generalcalendar holidayMonth(Integer holidayMonth) {
-    this.holidayMonth = holidayMonth;
+  public Generalcalendar holidaymonth(Integer holidaymonth) {
+    this.holidaymonth = holidaymonth;
     return this;
   }
 
    /**
-   * Měsíc
-   * @return holidayMonth
+   * měsíc
+   * @return holidaymonth
   **/
-  @ApiModelProperty(example = "null", value = "Měsíc")
-  public Integer getHolidayMonth() {
-    return holidayMonth;
+  @ApiModelProperty(example = "null", value = "měsíc")
+  public Integer getHolidaymonth() {
+    return holidaymonth;
   }
 
-  public void setHolidayMonth(Integer holidayMonth) {
-    this.holidayMonth = holidayMonth;
+  public void setHolidaymonth(Integer holidaymonth) {
+    this.holidaymonth = holidaymonth;
   }
 
-  public Generalcalendar monthDayText(String monthDayText) {
-    this.monthDayText = monthDayText;
+  public Generalcalendar monthdaytext(String monthdaytext) {
+    this.monthdaytext = monthdaytext;
     return this;
   }
 
    /**
-   * Den, měsíc
-   * @return monthDayText
+   * den, měsíc
+   * @return monthdaytext
   **/
-  @ApiModelProperty(example = "null", value = "Den, měsíc")
-  public String getMonthDayText() {
-    return monthDayText;
+  @ApiModelProperty(example = "null", value = "den, měsíc")
+  public String getMonthdaytext() {
+    return monthdaytext;
   }
 
-  public void setMonthDayText(String monthDayText) {
-    this.monthDayText = monthDayText;
+  public void setMonthdaytext(String monthdaytext) {
+    this.monthdaytext = monthdaytext;
   }
 
-  public Generalcalendar holidayDate(DateTime holidayDate) {
-    this.holidayDate = holidayDate;
+  public Generalcalendar holidaydate(DateTime holidaydate) {
+    this.holidaydate = holidaydate;
     return this;
   }
 
    /**
-   * Datum
-   * @return holidayDate
+   * datum
+   * @return holidaydate
   **/
-  @ApiModelProperty(example = "null", value = "Datum")
-  public DateTime getHolidayDate() {
-    return holidayDate;
+  @ApiModelProperty(example = "null", value = "datum")
+  public DateTime getHolidaydate() {
+    return holidaydate;
   }
 
-  public void setHolidayDate(DateTime holidayDate) {
-    this.holidayDate = holidayDate;
+  public void setHolidaydate(DateTime holidaydate) {
+    this.holidaydate = holidaydate;
   }
 
-  public Generalcalendar fromYearText(String fromYearText) {
-    this.fromYearText = fromYearText;
+  public Generalcalendar fromyeartext(String fromyeartext) {
+    this.fromyeartext = fromyeartext;
     return this;
   }
 
    /**
-   * Od roku
-   * @return fromYearText
+   * od roku
+   * @return fromyeartext
   **/
-  @ApiModelProperty(example = "null", value = "Od roku")
-  public String getFromYearText() {
-    return fromYearText;
+  @ApiModelProperty(example = "null", value = "od roku")
+  public String getFromyeartext() {
+    return fromyeartext;
   }
 
-  public void setFromYearText(String fromYearText) {
-    this.fromYearText = fromYearText;
+  public void setFromyeartext(String fromyeartext) {
+    this.fromyeartext = fromyeartext;
   }
 
-  public Generalcalendar toYearText(String toYearText) {
-    this.toYearText = toYearText;
+  public Generalcalendar toyeartext(String toyeartext) {
+    this.toyeartext = toyeartext;
     return this;
   }
 
    /**
-   * Do roku
-   * @return toYearText
+   * do roku
+   * @return toyeartext
   **/
-  @ApiModelProperty(example = "null", value = "Do roku")
-  public String getToYearText() {
-    return toYearText;
+  @ApiModelProperty(example = "null", value = "do roku")
+  public String getToyeartext() {
+    return toyeartext;
   }
 
-  public void setToYearText(String toYearText) {
-    this.toYearText = toYearText;
+  public void setToyeartext(String toyeartext) {
+    this.toyeartext = toyeartext;
   }
 
 
@@ -347,27 +383,27 @@ public class Generalcalendar   {
       return false;
     }
     Generalcalendar generalcalendar = (Generalcalendar) o;
-    return Objects.equals(this.displayName, generalcalendar.displayName) &&
-        Objects.equals(this.ID, generalcalendar.ID) &&
-        Objects.equals(this.classID, generalcalendar.classID) &&
-        Objects.equals(this.objVersion, generalcalendar.objVersion) &&
+    return Objects.equals(this.displayname, generalcalendar.displayname) &&
+        Objects.equals(this.id, generalcalendar.id) &&
+        Objects.equals(this.classid, generalcalendar.classid) &&
+        Objects.equals(this.objversion, generalcalendar.objversion) &&
         Objects.equals(this.hidden, generalcalendar.hidden) &&
         Objects.equals(this.name, generalcalendar.name) &&
-        Objects.equals(this.fixedHoliday, generalcalendar.fixedHoliday) &&
-        Objects.equals(this.holidayMonthDay, generalcalendar.holidayMonthDay) &&
-        Objects.equals(this.validFromYear, generalcalendar.validFromYear) &&
-        Objects.equals(this.validToYear, generalcalendar.validToYear) &&
-        Objects.equals(this.holidayDay, generalcalendar.holidayDay) &&
-        Objects.equals(this.holidayMonth, generalcalendar.holidayMonth) &&
-        Objects.equals(this.monthDayText, generalcalendar.monthDayText) &&
-        Objects.equals(this.holidayDate, generalcalendar.holidayDate) &&
-        Objects.equals(this.fromYearText, generalcalendar.fromYearText) &&
-        Objects.equals(this.toYearText, generalcalendar.toYearText);
+        Objects.equals(this.fixedholiday, generalcalendar.fixedholiday) &&
+        Objects.equals(this.holidaymonthday, generalcalendar.holidaymonthday) &&
+        Objects.equals(this.validfromyear, generalcalendar.validfromyear) &&
+        Objects.equals(this.validtoyear, generalcalendar.validtoyear) &&
+        Objects.equals(this.holidayday, generalcalendar.holidayday) &&
+        Objects.equals(this.holidaymonth, generalcalendar.holidaymonth) &&
+        Objects.equals(this.monthdaytext, generalcalendar.monthdaytext) &&
+        Objects.equals(this.holidaydate, generalcalendar.holidaydate) &&
+        Objects.equals(this.fromyeartext, generalcalendar.fromyeartext) &&
+        Objects.equals(this.toyeartext, generalcalendar.toyeartext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, name, fixedHoliday, holidayMonthDay, validFromYear, validToYear, holidayDay, holidayMonth, monthDayText, holidayDate, fromYearText, toYearText);
+    return Objects.hash(displayname, id, classid, objversion, hidden, name, fixedholiday, holidaymonthday, validfromyear, validtoyear, holidayday, holidaymonth, monthdaytext, holidaydate, fromyeartext, toyeartext);
   }
 
   @Override
@@ -375,22 +411,22 @@ public class Generalcalendar   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Generalcalendar {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    fixedHoliday: ").append(toIndentedString(fixedHoliday)).append("\n");
-    sb.append("    holidayMonthDay: ").append(toIndentedString(holidayMonthDay)).append("\n");
-    sb.append("    validFromYear: ").append(toIndentedString(validFromYear)).append("\n");
-    sb.append("    validToYear: ").append(toIndentedString(validToYear)).append("\n");
-    sb.append("    holidayDay: ").append(toIndentedString(holidayDay)).append("\n");
-    sb.append("    holidayMonth: ").append(toIndentedString(holidayMonth)).append("\n");
-    sb.append("    monthDayText: ").append(toIndentedString(monthDayText)).append("\n");
-    sb.append("    holidayDate: ").append(toIndentedString(holidayDate)).append("\n");
-    sb.append("    fromYearText: ").append(toIndentedString(fromYearText)).append("\n");
-    sb.append("    toYearText: ").append(toIndentedString(toYearText)).append("\n");
+    sb.append("    fixedholiday: ").append(toIndentedString(fixedholiday)).append("\n");
+    sb.append("    holidaymonthday: ").append(toIndentedString(holidaymonthday)).append("\n");
+    sb.append("    validfromyear: ").append(toIndentedString(validfromyear)).append("\n");
+    sb.append("    validtoyear: ").append(toIndentedString(validtoyear)).append("\n");
+    sb.append("    holidayday: ").append(toIndentedString(holidayday)).append("\n");
+    sb.append("    holidaymonth: ").append(toIndentedString(holidaymonth)).append("\n");
+    sb.append("    monthdaytext: ").append(toIndentedString(monthdaytext)).append("\n");
+    sb.append("    holidaydate: ").append(toIndentedString(holidaydate)).append("\n");
+    sb.append("    fromyeartext: ").append(toIndentedString(fromyeartext)).append("\n");
+    sb.append("    toyeartext: ").append(toIndentedString(toyeartext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

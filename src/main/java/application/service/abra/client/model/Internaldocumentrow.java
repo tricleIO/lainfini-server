@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,209 +36,254 @@ import java.util.Objects;
 /**
  * Internaldocumentrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Internaldocumentrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("TAmount")
-  private Double tAmount = null;
+  @SerializedName("tamount")
+  private Double tamount = null;
 
-  @SerializedName("LocalTAmount")
-  private Double localTAmount = null;
+  @SerializedName("localtamount")
+  private Double localtamount = null;
 
-  @SerializedName("CDConfirmedRows")
-  private List<Cdconfirmlink> cDConfirmedRows = new ArrayList<Cdconfirmlink>();
+  @SerializedName("cdconfirmedrows")
+  private List<Cdconfirmlink> cdconfirmedrows = new ArrayList<Cdconfirmlink>();
 
-  @SerializedName("CDConfirmedAmount")
-  private Double cDConfirmedAmount = null;
+  @SerializedName("cdconfirmedamount")
+  private Double cdconfirmedamount = null;
 
-  @SerializedName("Text")
+  @SerializedName("text")
   private String text = null;
 
-  @SerializedName("DebitAccount_ID")
-  private String debitAccountID = null;
+  @SerializedName("debitaccount_id")
+  private String debitaccountId = null;
 
-  @SerializedName("DebitDivision_ID")
-  private String debitDivisionID = null;
+  @SerializedName("debitdivision_id")
+  private String debitdivisionId = null;
 
-  @SerializedName("DebitBusOrder_ID")
-  private String debitBusOrderID = null;
+  @SerializedName("debitbusorder_id")
+  private String debitbusorderId = null;
 
-  @SerializedName("DebitBusTransaction_ID")
-  private String debitBusTransactionID = null;
+  @SerializedName("debitbustransaction_id")
+  private String debitbustransactionId = null;
 
-  @SerializedName("DebitBusProject_ID")
-  private String debitBusProjectID = null;
+  @SerializedName("debitbusproject_id")
+  private String debitbusprojectId = null;
 
-  @SerializedName("CreditAccount_ID")
-  private String creditAccountID = null;
+  @SerializedName("creditaccount_id")
+  private String creditaccountId = null;
 
-  @SerializedName("CreditDivision_ID")
-  private String creditDivisionID = null;
+  @SerializedName("creditdivision_id")
+  private String creditdivisionId = null;
 
-  @SerializedName("CreditBusOrder_ID")
-  private String creditBusOrderID = null;
+  @SerializedName("creditbusorder_id")
+  private String creditbusorderId = null;
 
-  @SerializedName("CreditBusTransaction_ID")
-  private String creditBusTransactionID = null;
+  @SerializedName("creditbustransaction_id")
+  private String creditbustransactionId = null;
 
-  @SerializedName("CreditBusProject_ID")
-  private String creditBusProjectID = null;
+  @SerializedName("creditbusproject_id")
+  private String creditbusprojectId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Interní doklad [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Interní doklad [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Internaldocumentrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Internaldocumentrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Internaldocumentrow tAmount(Double tAmount) {
-    this.tAmount = tAmount;
+  public Internaldocumentrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Celkem [persistentní položka]
-   * @return tAmount
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Celkem [persistentní položka]")
-  public Double getTAmount() {
-    return tAmount;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setTAmount(Double tAmount) {
-    this.tAmount = tAmount;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Internaldocumentrow localTAmount(Double localTAmount) {
-    this.localTAmount = localTAmount;
+  public Internaldocumentrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Celkem lokálně [persistentní položka]
-   * @return localTAmount
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Celkem lokálně [persistentní položka]")
-  public Double getLocalTAmount() {
-    return localTAmount;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setLocalTAmount(Double localTAmount) {
-    this.localTAmount = localTAmount;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Internaldocumentrow cDConfirmedRows(List<Cdconfirmlink> cDConfirmedRows) {
-    this.cDConfirmedRows = cDConfirmedRows;
-    return this;
-  }
-
-  public Internaldocumentrow addCDConfirmedRowsItem(Cdconfirmlink cDConfirmedRowsItem) {
-    this.cDConfirmedRows.add(cDConfirmedRowsItem);
+  public Internaldocumentrow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Odkaz na importovaný řádek schváleného výdaje; kolekce BO Vazba mezi schváleným výdajem a dokladem [nepersistentní položka]
-   * @return cDConfirmedRows
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na importovaný řádek schváleného výdaje; kolekce BO Vazba mezi schváleným výdajem a dokladem [nepersistentní položka]")
-  public List<Cdconfirmlink> getCDConfirmedRows() {
-    return cDConfirmedRows;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setCDConfirmedRows(List<Cdconfirmlink> cDConfirmedRows) {
-    this.cDConfirmedRows = cDConfirmedRows;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Internaldocumentrow cDConfirmedAmount(Double cDConfirmedAmount) {
-    this.cDConfirmedAmount = cDConfirmedAmount;
+  public Internaldocumentrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu interní doklad [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu interní doklad [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Internaldocumentrow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Internaldocumentrow tamount(Double tamount) {
+    this.tamount = tamount;
+    return this;
+  }
+
+   /**
+   * celkem [persistentní položka]
+   * @return tamount
+  **/
+  @ApiModelProperty(example = "null", value = "celkem [persistentní položka]")
+  public Double getTamount() {
+    return tamount;
+  }
+
+  public void setTamount(Double tamount) {
+    this.tamount = tamount;
+  }
+
+  public Internaldocumentrow localtamount(Double localtamount) {
+    this.localtamount = localtamount;
+    return this;
+  }
+
+   /**
+   * celkem lokálně [persistentní položka]
+   * @return localtamount
+  **/
+  @ApiModelProperty(example = "null", value = "celkem lokálně [persistentní položka]")
+  public Double getLocaltamount() {
+    return localtamount;
+  }
+
+  public void setLocaltamount(Double localtamount) {
+    this.localtamount = localtamount;
+  }
+
+  public Internaldocumentrow cdconfirmedrows(List<Cdconfirmlink> cdconfirmedrows) {
+    this.cdconfirmedrows = cdconfirmedrows;
+    return this;
+  }
+
+  public Internaldocumentrow addCdconfirmedrowsItem(Cdconfirmlink cdconfirmedrowsItem) {
+    this.cdconfirmedrows.add(cdconfirmedrowsItem);
+    return this;
+  }
+
+   /**
+   * odkaz na importovaný řádek schváleného výdaje; kolekce bo vazba mezi schváleným výdajem a dokladem [nepersistentní položka]
+   * @return cdconfirmedrows
+  **/
+  @ApiModelProperty(example = "null", value = "odkaz na importovaný řádek schváleného výdaje; kolekce bo vazba mezi schváleným výdajem a dokladem [nepersistentní položka]")
+  public List<Cdconfirmlink> getCdconfirmedrows() {
+    return cdconfirmedrows;
+  }
+
+  public void setCdconfirmedrows(List<Cdconfirmlink> cdconfirmedrows) {
+    this.cdconfirmedrows = cdconfirmedrows;
+  }
+
+  public Internaldocumentrow cdconfirmedamount(Double cdconfirmedamount) {
+    this.cdconfirmedamount = cdconfirmedamount;
     return this;
   }
 
    /**
    * Částka pokrytá schválenými výdaji
-   * @return cDConfirmedAmount
+   * @return cdconfirmedamount
   **/
   @ApiModelProperty(example = "null", value = "Částka pokrytá schválenými výdaji")
-  public Double getCDConfirmedAmount() {
-    return cDConfirmedAmount;
+  public Double getCdconfirmedamount() {
+    return cdconfirmedamount;
   }
 
-  public void setCDConfirmedAmount(Double cDConfirmedAmount) {
-    this.cDConfirmedAmount = cDConfirmedAmount;
+  public void setCdconfirmedamount(Double cdconfirmedamount) {
+    this.cdconfirmedamount = cdconfirmedamount;
   }
 
   public Internaldocumentrow text(String text) {
@@ -247,10 +292,10 @@ public class Internaldocumentrow   {
   }
 
    /**
-   * Text [persistentní položka]
+   * text [persistentní položka]
    * @return text
   **/
-  @ApiModelProperty(example = "null", value = "Text [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "text [persistentní položka]")
   public String getText() {
     return text;
   }
@@ -259,184 +304,184 @@ public class Internaldocumentrow   {
     this.text = text;
   }
 
-  public Internaldocumentrow debitAccountID(String debitAccountID) {
-    this.debitAccountID = debitAccountID;
+  public Internaldocumentrow debitaccountId(String debitaccountId) {
+    this.debitaccountId = debitaccountId;
     return this;
   }
 
    /**
-   * Účet MD; ID objektu Účet účetního rozvrhu [persistentní položka]
-   * @return debitAccountID
+   * Účet md; id objektu Účet účetního rozvrhu [persistentní položka]
+   * @return debitaccountId
   **/
-  @ApiModelProperty(example = "null", value = "Účet MD; ID objektu Účet účetního rozvrhu [persistentní položka]")
-  public String getDebitAccountID() {
-    return debitAccountID;
+  @ApiModelProperty(example = "null", value = "Účet md; id objektu Účet účetního rozvrhu [persistentní položka]")
+  public String getDebitaccountId() {
+    return debitaccountId;
   }
 
-  public void setDebitAccountID(String debitAccountID) {
-    this.debitAccountID = debitAccountID;
+  public void setDebitaccountId(String debitaccountId) {
+    this.debitaccountId = debitaccountId;
   }
 
-  public Internaldocumentrow debitDivisionID(String debitDivisionID) {
-    this.debitDivisionID = debitDivisionID;
+  public Internaldocumentrow debitdivisionId(String debitdivisionId) {
+    this.debitdivisionId = debitdivisionId;
     return this;
   }
 
    /**
-   * Středisko MD; ID objektu Středisko [persistentní položka]
-   * @return debitDivisionID
+   * středisko md; id objektu středisko [persistentní položka]
+   * @return debitdivisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko MD; ID objektu Středisko [persistentní položka]")
-  public String getDebitDivisionID() {
-    return debitDivisionID;
+  @ApiModelProperty(example = "null", value = "středisko md; id objektu středisko [persistentní položka]")
+  public String getDebitdivisionId() {
+    return debitdivisionId;
   }
 
-  public void setDebitDivisionID(String debitDivisionID) {
-    this.debitDivisionID = debitDivisionID;
+  public void setDebitdivisionId(String debitdivisionId) {
+    this.debitdivisionId = debitdivisionId;
   }
 
-  public Internaldocumentrow debitBusOrderID(String debitBusOrderID) {
-    this.debitBusOrderID = debitBusOrderID;
+  public Internaldocumentrow debitbusorderId(String debitbusorderId) {
+    this.debitbusorderId = debitbusorderId;
     return this;
   }
 
    /**
-   * Zakázka MD; ID objektu Zakázka [persistentní položka]
-   * @return debitBusOrderID
+   * zakázka md; id objektu zakázka [persistentní položka]
+   * @return debitbusorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka MD; ID objektu Zakázka [persistentní položka]")
-  public String getDebitBusOrderID() {
-    return debitBusOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka md; id objektu zakázka [persistentní položka]")
+  public String getDebitbusorderId() {
+    return debitbusorderId;
   }
 
-  public void setDebitBusOrderID(String debitBusOrderID) {
-    this.debitBusOrderID = debitBusOrderID;
+  public void setDebitbusorderId(String debitbusorderId) {
+    this.debitbusorderId = debitbusorderId;
   }
 
-  public Internaldocumentrow debitBusTransactionID(String debitBusTransactionID) {
-    this.debitBusTransactionID = debitBusTransactionID;
+  public Internaldocumentrow debitbustransactionId(String debitbustransactionId) {
+    this.debitbustransactionId = debitbustransactionId;
     return this;
   }
 
    /**
-   * O.případ MD; ID objektu Obchodní případ [persistentní položka]
-   * @return debitBusTransactionID
+   * o.případ md; id objektu obchodní případ [persistentní položka]
+   * @return debitbustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "O.případ MD; ID objektu Obchodní případ [persistentní položka]")
-  public String getDebitBusTransactionID() {
-    return debitBusTransactionID;
+  @ApiModelProperty(example = "null", value = "o.případ md; id objektu obchodní případ [persistentní položka]")
+  public String getDebitbustransactionId() {
+    return debitbustransactionId;
   }
 
-  public void setDebitBusTransactionID(String debitBusTransactionID) {
-    this.debitBusTransactionID = debitBusTransactionID;
+  public void setDebitbustransactionId(String debitbustransactionId) {
+    this.debitbustransactionId = debitbustransactionId;
   }
 
-  public Internaldocumentrow debitBusProjectID(String debitBusProjectID) {
-    this.debitBusProjectID = debitBusProjectID;
+  public Internaldocumentrow debitbusprojectId(String debitbusprojectId) {
+    this.debitbusprojectId = debitbusprojectId;
     return this;
   }
 
    /**
-   * Projekt MD; ID objektu Projekt [persistentní položka]
-   * @return debitBusProjectID
+   * projekt md; id objektu projekt [persistentní položka]
+   * @return debitbusprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt MD; ID objektu Projekt [persistentní položka]")
-  public String getDebitBusProjectID() {
-    return debitBusProjectID;
+  @ApiModelProperty(example = "null", value = "projekt md; id objektu projekt [persistentní položka]")
+  public String getDebitbusprojectId() {
+    return debitbusprojectId;
   }
 
-  public void setDebitBusProjectID(String debitBusProjectID) {
-    this.debitBusProjectID = debitBusProjectID;
+  public void setDebitbusprojectId(String debitbusprojectId) {
+    this.debitbusprojectId = debitbusprojectId;
   }
 
-  public Internaldocumentrow creditAccountID(String creditAccountID) {
-    this.creditAccountID = creditAccountID;
+  public Internaldocumentrow creditaccountId(String creditaccountId) {
+    this.creditaccountId = creditaccountId;
     return this;
   }
 
    /**
-   * Účet D; ID objektu Účet účetního rozvrhu [persistentní položka]
-   * @return creditAccountID
+   * Účet d; id objektu Účet účetního rozvrhu [persistentní položka]
+   * @return creditaccountId
   **/
-  @ApiModelProperty(example = "null", value = "Účet D; ID objektu Účet účetního rozvrhu [persistentní položka]")
-  public String getCreditAccountID() {
-    return creditAccountID;
+  @ApiModelProperty(example = "null", value = "Účet d; id objektu Účet účetního rozvrhu [persistentní položka]")
+  public String getCreditaccountId() {
+    return creditaccountId;
   }
 
-  public void setCreditAccountID(String creditAccountID) {
-    this.creditAccountID = creditAccountID;
+  public void setCreditaccountId(String creditaccountId) {
+    this.creditaccountId = creditaccountId;
   }
 
-  public Internaldocumentrow creditDivisionID(String creditDivisionID) {
-    this.creditDivisionID = creditDivisionID;
+  public Internaldocumentrow creditdivisionId(String creditdivisionId) {
+    this.creditdivisionId = creditdivisionId;
     return this;
   }
 
    /**
-   * Středisko D; ID objektu Středisko [persistentní položka]
-   * @return creditDivisionID
+   * středisko d; id objektu středisko [persistentní položka]
+   * @return creditdivisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko D; ID objektu Středisko [persistentní položka]")
-  public String getCreditDivisionID() {
-    return creditDivisionID;
+  @ApiModelProperty(example = "null", value = "středisko d; id objektu středisko [persistentní položka]")
+  public String getCreditdivisionId() {
+    return creditdivisionId;
   }
 
-  public void setCreditDivisionID(String creditDivisionID) {
-    this.creditDivisionID = creditDivisionID;
+  public void setCreditdivisionId(String creditdivisionId) {
+    this.creditdivisionId = creditdivisionId;
   }
 
-  public Internaldocumentrow creditBusOrderID(String creditBusOrderID) {
-    this.creditBusOrderID = creditBusOrderID;
+  public Internaldocumentrow creditbusorderId(String creditbusorderId) {
+    this.creditbusorderId = creditbusorderId;
     return this;
   }
 
    /**
-   * Zakázka D; ID objektu Zakázka [persistentní položka]
-   * @return creditBusOrderID
+   * zakázka d; id objektu zakázka [persistentní položka]
+   * @return creditbusorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka D; ID objektu Zakázka [persistentní položka]")
-  public String getCreditBusOrderID() {
-    return creditBusOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka d; id objektu zakázka [persistentní položka]")
+  public String getCreditbusorderId() {
+    return creditbusorderId;
   }
 
-  public void setCreditBusOrderID(String creditBusOrderID) {
-    this.creditBusOrderID = creditBusOrderID;
+  public void setCreditbusorderId(String creditbusorderId) {
+    this.creditbusorderId = creditbusorderId;
   }
 
-  public Internaldocumentrow creditBusTransactionID(String creditBusTransactionID) {
-    this.creditBusTransactionID = creditBusTransactionID;
+  public Internaldocumentrow creditbustransactionId(String creditbustransactionId) {
+    this.creditbustransactionId = creditbustransactionId;
     return this;
   }
 
    /**
-   * O.případ D; ID objektu Obchodní případ [persistentní položka]
-   * @return creditBusTransactionID
+   * o.případ d; id objektu obchodní případ [persistentní položka]
+   * @return creditbustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "O.případ D; ID objektu Obchodní případ [persistentní položka]")
-  public String getCreditBusTransactionID() {
-    return creditBusTransactionID;
+  @ApiModelProperty(example = "null", value = "o.případ d; id objektu obchodní případ [persistentní položka]")
+  public String getCreditbustransactionId() {
+    return creditbustransactionId;
   }
 
-  public void setCreditBusTransactionID(String creditBusTransactionID) {
-    this.creditBusTransactionID = creditBusTransactionID;
+  public void setCreditbustransactionId(String creditbustransactionId) {
+    this.creditbustransactionId = creditbustransactionId;
   }
 
-  public Internaldocumentrow creditBusProjectID(String creditBusProjectID) {
-    this.creditBusProjectID = creditBusProjectID;
+  public Internaldocumentrow creditbusprojectId(String creditbusprojectId) {
+    this.creditbusprojectId = creditbusprojectId;
     return this;
   }
 
    /**
-   * Projekt D; ID objektu Projekt [persistentní položka]
-   * @return creditBusProjectID
+   * projekt d; id objektu projekt [persistentní položka]
+   * @return creditbusprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt D; ID objektu Projekt [persistentní položka]")
-  public String getCreditBusProjectID() {
-    return creditBusProjectID;
+  @ApiModelProperty(example = "null", value = "projekt d; id objektu projekt [persistentní položka]")
+  public String getCreditbusprojectId() {
+    return creditbusprojectId;
   }
 
-  public void setCreditBusProjectID(String creditBusProjectID) {
-    this.creditBusProjectID = creditBusProjectID;
+  public void setCreditbusprojectId(String creditbusprojectId) {
+    this.creditbusprojectId = creditbusprojectId;
   }
 
 
@@ -449,32 +494,32 @@ public class Internaldocumentrow   {
       return false;
     }
     Internaldocumentrow internaldocumentrow = (Internaldocumentrow) o;
-    return Objects.equals(this.displayName, internaldocumentrow.displayName) &&
-        Objects.equals(this.ID, internaldocumentrow.ID) &&
-        Objects.equals(this.classID, internaldocumentrow.classID) &&
-        Objects.equals(this.objVersion, internaldocumentrow.objVersion) &&
-        Objects.equals(this.parentID, internaldocumentrow.parentID) &&
-        Objects.equals(this.posIndex, internaldocumentrow.posIndex) &&
-        Objects.equals(this.tAmount, internaldocumentrow.tAmount) &&
-        Objects.equals(this.localTAmount, internaldocumentrow.localTAmount) &&
-        Objects.equals(this.cDConfirmedRows, internaldocumentrow.cDConfirmedRows) &&
-        Objects.equals(this.cDConfirmedAmount, internaldocumentrow.cDConfirmedAmount) &&
+    return Objects.equals(this.displayname, internaldocumentrow.displayname) &&
+        Objects.equals(this.id, internaldocumentrow.id) &&
+        Objects.equals(this.classid, internaldocumentrow.classid) &&
+        Objects.equals(this.objversion, internaldocumentrow.objversion) &&
+        Objects.equals(this.parentId, internaldocumentrow.parentId) &&
+        Objects.equals(this.posindex, internaldocumentrow.posindex) &&
+        Objects.equals(this.tamount, internaldocumentrow.tamount) &&
+        Objects.equals(this.localtamount, internaldocumentrow.localtamount) &&
+        Objects.equals(this.cdconfirmedrows, internaldocumentrow.cdconfirmedrows) &&
+        Objects.equals(this.cdconfirmedamount, internaldocumentrow.cdconfirmedamount) &&
         Objects.equals(this.text, internaldocumentrow.text) &&
-        Objects.equals(this.debitAccountID, internaldocumentrow.debitAccountID) &&
-        Objects.equals(this.debitDivisionID, internaldocumentrow.debitDivisionID) &&
-        Objects.equals(this.debitBusOrderID, internaldocumentrow.debitBusOrderID) &&
-        Objects.equals(this.debitBusTransactionID, internaldocumentrow.debitBusTransactionID) &&
-        Objects.equals(this.debitBusProjectID, internaldocumentrow.debitBusProjectID) &&
-        Objects.equals(this.creditAccountID, internaldocumentrow.creditAccountID) &&
-        Objects.equals(this.creditDivisionID, internaldocumentrow.creditDivisionID) &&
-        Objects.equals(this.creditBusOrderID, internaldocumentrow.creditBusOrderID) &&
-        Objects.equals(this.creditBusTransactionID, internaldocumentrow.creditBusTransactionID) &&
-        Objects.equals(this.creditBusProjectID, internaldocumentrow.creditBusProjectID);
+        Objects.equals(this.debitaccountId, internaldocumentrow.debitaccountId) &&
+        Objects.equals(this.debitdivisionId, internaldocumentrow.debitdivisionId) &&
+        Objects.equals(this.debitbusorderId, internaldocumentrow.debitbusorderId) &&
+        Objects.equals(this.debitbustransactionId, internaldocumentrow.debitbustransactionId) &&
+        Objects.equals(this.debitbusprojectId, internaldocumentrow.debitbusprojectId) &&
+        Objects.equals(this.creditaccountId, internaldocumentrow.creditaccountId) &&
+        Objects.equals(this.creditdivisionId, internaldocumentrow.creditdivisionId) &&
+        Objects.equals(this.creditbusorderId, internaldocumentrow.creditbusorderId) &&
+        Objects.equals(this.creditbustransactionId, internaldocumentrow.creditbustransactionId) &&
+        Objects.equals(this.creditbusprojectId, internaldocumentrow.creditbusprojectId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, tAmount, localTAmount, cDConfirmedRows, cDConfirmedAmount, text, debitAccountID, debitDivisionID, debitBusOrderID, debitBusTransactionID, debitBusProjectID, creditAccountID, creditDivisionID, creditBusOrderID, creditBusTransactionID, creditBusProjectID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, tamount, localtamount, cdconfirmedrows, cdconfirmedamount, text, debitaccountId, debitdivisionId, debitbusorderId, debitbustransactionId, debitbusprojectId, creditaccountId, creditdivisionId, creditbusorderId, creditbustransactionId, creditbusprojectId);
   }
 
   @Override
@@ -482,27 +527,27 @@ public class Internaldocumentrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Internaldocumentrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    tAmount: ").append(toIndentedString(tAmount)).append("\n");
-    sb.append("    localTAmount: ").append(toIndentedString(localTAmount)).append("\n");
-    sb.append("    cDConfirmedRows: ").append(toIndentedString(cDConfirmedRows)).append("\n");
-    sb.append("    cDConfirmedAmount: ").append(toIndentedString(cDConfirmedAmount)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    tamount: ").append(toIndentedString(tamount)).append("\n");
+    sb.append("    localtamount: ").append(toIndentedString(localtamount)).append("\n");
+    sb.append("    cdconfirmedrows: ").append(toIndentedString(cdconfirmedrows)).append("\n");
+    sb.append("    cdconfirmedamount: ").append(toIndentedString(cdconfirmedamount)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
-    sb.append("    debitAccountID: ").append(toIndentedString(debitAccountID)).append("\n");
-    sb.append("    debitDivisionID: ").append(toIndentedString(debitDivisionID)).append("\n");
-    sb.append("    debitBusOrderID: ").append(toIndentedString(debitBusOrderID)).append("\n");
-    sb.append("    debitBusTransactionID: ").append(toIndentedString(debitBusTransactionID)).append("\n");
-    sb.append("    debitBusProjectID: ").append(toIndentedString(debitBusProjectID)).append("\n");
-    sb.append("    creditAccountID: ").append(toIndentedString(creditAccountID)).append("\n");
-    sb.append("    creditDivisionID: ").append(toIndentedString(creditDivisionID)).append("\n");
-    sb.append("    creditBusOrderID: ").append(toIndentedString(creditBusOrderID)).append("\n");
-    sb.append("    creditBusTransactionID: ").append(toIndentedString(creditBusTransactionID)).append("\n");
-    sb.append("    creditBusProjectID: ").append(toIndentedString(creditBusProjectID)).append("\n");
+    sb.append("    debitaccountId: ").append(toIndentedString(debitaccountId)).append("\n");
+    sb.append("    debitdivisionId: ").append(toIndentedString(debitdivisionId)).append("\n");
+    sb.append("    debitbusorderId: ").append(toIndentedString(debitbusorderId)).append("\n");
+    sb.append("    debitbustransactionId: ").append(toIndentedString(debitbustransactionId)).append("\n");
+    sb.append("    debitbusprojectId: ").append(toIndentedString(debitbusprojectId)).append("\n");
+    sb.append("    creditaccountId: ").append(toIndentedString(creditaccountId)).append("\n");
+    sb.append("    creditdivisionId: ").append(toIndentedString(creditdivisionId)).append("\n");
+    sb.append("    creditbusorderId: ").append(toIndentedString(creditbusorderId)).append("\n");
+    sb.append("    creditbustransactionId: ").append(toIndentedString(creditbustransactionId)).append("\n");
+    sb.append("    creditbusprojectId: ").append(toIndentedString(creditbusprojectId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

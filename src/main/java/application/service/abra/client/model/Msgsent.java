@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,213 +37,249 @@ import java.util.Objects;
 /**
  * Msgsent
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Msgsent   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("SentDate$DATE")
-  private DateTime sentDateDATE = null;
+  @SerializedName("sentdate$date")
+  private DateTime sentdatedate = null;
 
-  @SerializedName("SenderUser_ID")
-  private String senderUserID = null;
+  @SerializedName("senderuser_id")
+  private String senderuserId = null;
 
-  @SerializedName("MsgSubject")
-  private String msgSubject = null;
+  @SerializedName("msgsubject")
+  private String msgsubject = null;
 
-  @SerializedName("MsgBody")
-  private String msgBody = null;
+  @SerializedName("msgbody")
+  private String msgbody = null;
 
-  @SerializedName("ValidToDate$DATE")
-  private DateTime validToDateDATE = null;
+  @SerializedName("validtodate$date")
+  private DateTime validtodatedate = null;
 
-  @SerializedName("DeleteAfterDeletingByAll")
-  private Boolean deleteAfterDeletingByAll = null;
+  @SerializedName("deleteafterdeletingbyall")
+  private Boolean deleteafterdeletingbyall = null;
 
-  @SerializedName("ConfirmReading")
-  private Boolean confirmReading = null;
+  @SerializedName("confirmreading")
+  private Boolean confirmreading = null;
 
-  @SerializedName("Attachments")
+  @SerializedName("attachments")
   private List<Msgsent> attachments = new ArrayList<Msgsent>();
 
-  @SerializedName("Links")
+  @SerializedName("links")
   private List<Msglink> links = new ArrayList<Msglink>();
 
-  @SerializedName("Recipients")
+  @SerializedName("recipients")
   private List<Msgrecipient> recipients = new ArrayList<Msgrecipient>();
 
-  @SerializedName("RecipientsInOneLine")
-  private String recipientsInOneLine = null;
+  @SerializedName("recipientsinoneline")
+  private String recipientsinoneline = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Msgsent sentDateDATE(DateTime sentDateDATE) {
-    this.sentDateDATE = sentDateDATE;
+  public Msgsent displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum odeslání [persistentní položka]
-   * @return sentDateDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum odeslání [persistentní položka]")
-  public DateTime getSentDateDATE() {
-    return sentDateDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setSentDateDATE(DateTime sentDateDATE) {
-    this.sentDateDATE = sentDateDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Msgsent senderUserID(String senderUserID) {
-    this.senderUserID = senderUserID;
+  public Msgsent id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Odesílatel; ID objektu Uživatel [persistentní položka]
-   * @return senderUserID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Odesílatel; ID objektu Uživatel [persistentní položka]")
-  public String getSenderUserID() {
-    return senderUserID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setSenderUserID(String senderUserID) {
-    this.senderUserID = senderUserID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Msgsent msgSubject(String msgSubject) {
-    this.msgSubject = msgSubject;
+  public Msgsent classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Předmět [persistentní položka]
-   * @return msgSubject
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Předmět [persistentní položka]")
-  public String getMsgSubject() {
-    return msgSubject;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setMsgSubject(String msgSubject) {
-    this.msgSubject = msgSubject;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Msgsent msgBody(String msgBody) {
-    this.msgBody = msgBody;
+  public Msgsent objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Obsah [persistentní položka]
-   * @return msgBody
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Obsah [persistentní položka]")
-  public String getMsgBody() {
-    return msgBody;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setMsgBody(String msgBody) {
-    this.msgBody = msgBody;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Msgsent validToDateDATE(DateTime validToDateDATE) {
-    this.validToDateDATE = validToDateDATE;
+  public Msgsent sentdatedate(DateTime sentdatedate) {
+    this.sentdatedate = sentdatedate;
     return this;
   }
 
    /**
-   * Datum platnosti [persistentní položka]
-   * @return validToDateDATE
+   * datum odeslání [persistentní položka]
+   * @return sentdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum platnosti [persistentní položka]")
-  public DateTime getValidToDateDATE() {
-    return validToDateDATE;
+  @ApiModelProperty(example = "null", value = "datum odeslání [persistentní položka]")
+  public DateTime getSentdatedate() {
+    return sentdatedate;
   }
 
-  public void setValidToDateDATE(DateTime validToDateDATE) {
-    this.validToDateDATE = validToDateDATE;
+  public void setSentdatedate(DateTime sentdatedate) {
+    this.sentdatedate = sentdatedate;
   }
 
-  public Msgsent deleteAfterDeletingByAll(Boolean deleteAfterDeletingByAll) {
-    this.deleteAfterDeletingByAll = deleteAfterDeletingByAll;
+  public Msgsent senderuserId(String senderuserId) {
+    this.senderuserId = senderuserId;
     return this;
   }
 
    /**
-   * Smazat po smazání všemi [persistentní položka]
-   * @return deleteAfterDeletingByAll
+   * odesílatel; id objektu uživatel [persistentní položka]
+   * @return senderuserId
   **/
-  @ApiModelProperty(example = "null", value = "Smazat po smazání všemi [persistentní položka]")
-  public Boolean getDeleteAfterDeletingByAll() {
-    return deleteAfterDeletingByAll;
+  @ApiModelProperty(example = "null", value = "odesílatel; id objektu uživatel [persistentní položka]")
+  public String getSenderuserId() {
+    return senderuserId;
   }
 
-  public void setDeleteAfterDeletingByAll(Boolean deleteAfterDeletingByAll) {
-    this.deleteAfterDeletingByAll = deleteAfterDeletingByAll;
+  public void setSenderuserId(String senderuserId) {
+    this.senderuserId = senderuserId;
   }
 
-  public Msgsent confirmReading(Boolean confirmReading) {
-    this.confirmReading = confirmReading;
+  public Msgsent msgsubject(String msgsubject) {
+    this.msgsubject = msgsubject;
     return this;
   }
 
    /**
-   * Potvrzení přečtení [persistentní položka]
-   * @return confirmReading
+   * předmět [persistentní položka]
+   * @return msgsubject
   **/
-  @ApiModelProperty(example = "null", value = "Potvrzení přečtení [persistentní položka]")
-  public Boolean getConfirmReading() {
-    return confirmReading;
+  @ApiModelProperty(example = "null", value = "předmět [persistentní položka]")
+  public String getMsgsubject() {
+    return msgsubject;
   }
 
-  public void setConfirmReading(Boolean confirmReading) {
-    this.confirmReading = confirmReading;
+  public void setMsgsubject(String msgsubject) {
+    this.msgsubject = msgsubject;
+  }
+
+  public Msgsent msgbody(String msgbody) {
+    this.msgbody = msgbody;
+    return this;
+  }
+
+   /**
+   * obsah [persistentní položka]
+   * @return msgbody
+  **/
+  @ApiModelProperty(example = "null", value = "obsah [persistentní položka]")
+  public String getMsgbody() {
+    return msgbody;
+  }
+
+  public void setMsgbody(String msgbody) {
+    this.msgbody = msgbody;
+  }
+
+  public Msgsent validtodatedate(DateTime validtodatedate) {
+    this.validtodatedate = validtodatedate;
+    return this;
+  }
+
+   /**
+   * datum platnosti [persistentní položka]
+   * @return validtodatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum platnosti [persistentní položka]")
+  public DateTime getValidtodatedate() {
+    return validtodatedate;
+  }
+
+  public void setValidtodatedate(DateTime validtodatedate) {
+    this.validtodatedate = validtodatedate;
+  }
+
+  public Msgsent deleteafterdeletingbyall(Boolean deleteafterdeletingbyall) {
+    this.deleteafterdeletingbyall = deleteafterdeletingbyall;
+    return this;
+  }
+
+   /**
+   * smazat po smazání všemi [persistentní položka]
+   * @return deleteafterdeletingbyall
+  **/
+  @ApiModelProperty(example = "null", value = "smazat po smazání všemi [persistentní položka]")
+  public Boolean getDeleteafterdeletingbyall() {
+    return deleteafterdeletingbyall;
+  }
+
+  public void setDeleteafterdeletingbyall(Boolean deleteafterdeletingbyall) {
+    this.deleteafterdeletingbyall = deleteafterdeletingbyall;
+  }
+
+  public Msgsent confirmreading(Boolean confirmreading) {
+    this.confirmreading = confirmreading;
+    return this;
+  }
+
+   /**
+   * potvrzení přečtení [persistentní položka]
+   * @return confirmreading
+  **/
+  @ApiModelProperty(example = "null", value = "potvrzení přečtení [persistentní položka]")
+  public Boolean getConfirmreading() {
+    return confirmreading;
+  }
+
+  public void setConfirmreading(Boolean confirmreading) {
+    this.confirmreading = confirmreading;
   }
 
   public Msgsent attachments(List<Msgsent> attachments) {
@@ -257,10 +293,10 @@ public class Msgsent   {
   }
 
    /**
-   * Přílohy; kolekce BO Vzkaz [nepersistentní položka]
+   * přílohy; kolekce bo vzkaz [nepersistentní položka]
    * @return attachments
   **/
-  @ApiModelProperty(example = "null", value = "Přílohy; kolekce BO Vzkaz [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "přílohy; kolekce bo vzkaz [nepersistentní položka]")
   public List<Msgsent> getAttachments() {
     return attachments;
   }
@@ -280,10 +316,10 @@ public class Msgsent   {
   }
 
    /**
-   * Odkazy; kolekce BO Odkaz [nepersistentní položka]
+   * odkazy; kolekce bo odkaz [nepersistentní položka]
    * @return links
   **/
-  @ApiModelProperty(example = "null", value = "Odkazy; kolekce BO Odkaz [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "odkazy; kolekce bo odkaz [nepersistentní položka]")
   public List<Msglink> getLinks() {
     return links;
   }
@@ -303,10 +339,10 @@ public class Msgsent   {
   }
 
    /**
-   * Adresáti; kolekce BO Adresát vzkazu [nepersistentní položka]
+   * adresáti; kolekce bo adresát vzkazu [nepersistentní položka]
    * @return recipients
   **/
-  @ApiModelProperty(example = "null", value = "Adresáti; kolekce BO Adresát vzkazu [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "adresáti; kolekce bo adresát vzkazu [nepersistentní položka]")
   public List<Msgrecipient> getRecipients() {
     return recipients;
   }
@@ -315,22 +351,22 @@ public class Msgsent   {
     this.recipients = recipients;
   }
 
-  public Msgsent recipientsInOneLine(String recipientsInOneLine) {
-    this.recipientsInOneLine = recipientsInOneLine;
+  public Msgsent recipientsinoneline(String recipientsinoneline) {
+    this.recipientsinoneline = recipientsinoneline;
     return this;
   }
 
    /**
-   * Souhrn adresátů
-   * @return recipientsInOneLine
+   * souhrn adresátů
+   * @return recipientsinoneline
   **/
-  @ApiModelProperty(example = "null", value = "Souhrn adresátů")
-  public String getRecipientsInOneLine() {
-    return recipientsInOneLine;
+  @ApiModelProperty(example = "null", value = "souhrn adresátů")
+  public String getRecipientsinoneline() {
+    return recipientsinoneline;
   }
 
-  public void setRecipientsInOneLine(String recipientsInOneLine) {
-    this.recipientsInOneLine = recipientsInOneLine;
+  public void setRecipientsinoneline(String recipientsinoneline) {
+    this.recipientsinoneline = recipientsinoneline;
   }
 
 
@@ -343,26 +379,26 @@ public class Msgsent   {
       return false;
     }
     Msgsent msgsent = (Msgsent) o;
-    return Objects.equals(this.displayName, msgsent.displayName) &&
-        Objects.equals(this.ID, msgsent.ID) &&
-        Objects.equals(this.classID, msgsent.classID) &&
-        Objects.equals(this.objVersion, msgsent.objVersion) &&
-        Objects.equals(this.sentDateDATE, msgsent.sentDateDATE) &&
-        Objects.equals(this.senderUserID, msgsent.senderUserID) &&
-        Objects.equals(this.msgSubject, msgsent.msgSubject) &&
-        Objects.equals(this.msgBody, msgsent.msgBody) &&
-        Objects.equals(this.validToDateDATE, msgsent.validToDateDATE) &&
-        Objects.equals(this.deleteAfterDeletingByAll, msgsent.deleteAfterDeletingByAll) &&
-        Objects.equals(this.confirmReading, msgsent.confirmReading) &&
+    return Objects.equals(this.displayname, msgsent.displayname) &&
+        Objects.equals(this.id, msgsent.id) &&
+        Objects.equals(this.classid, msgsent.classid) &&
+        Objects.equals(this.objversion, msgsent.objversion) &&
+        Objects.equals(this.sentdatedate, msgsent.sentdatedate) &&
+        Objects.equals(this.senderuserId, msgsent.senderuserId) &&
+        Objects.equals(this.msgsubject, msgsent.msgsubject) &&
+        Objects.equals(this.msgbody, msgsent.msgbody) &&
+        Objects.equals(this.validtodatedate, msgsent.validtodatedate) &&
+        Objects.equals(this.deleteafterdeletingbyall, msgsent.deleteafterdeletingbyall) &&
+        Objects.equals(this.confirmreading, msgsent.confirmreading) &&
         Objects.equals(this.attachments, msgsent.attachments) &&
         Objects.equals(this.links, msgsent.links) &&
         Objects.equals(this.recipients, msgsent.recipients) &&
-        Objects.equals(this.recipientsInOneLine, msgsent.recipientsInOneLine);
+        Objects.equals(this.recipientsinoneline, msgsent.recipientsinoneline);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, sentDateDATE, senderUserID, msgSubject, msgBody, validToDateDATE, deleteAfterDeletingByAll, confirmReading, attachments, links, recipients, recipientsInOneLine);
+    return Objects.hash(displayname, id, classid, objversion, sentdatedate, senderuserId, msgsubject, msgbody, validtodatedate, deleteafterdeletingbyall, confirmreading, attachments, links, recipients, recipientsinoneline);
   }
 
   @Override
@@ -370,21 +406,21 @@ public class Msgsent   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Msgsent {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    sentDateDATE: ").append(toIndentedString(sentDateDATE)).append("\n");
-    sb.append("    senderUserID: ").append(toIndentedString(senderUserID)).append("\n");
-    sb.append("    msgSubject: ").append(toIndentedString(msgSubject)).append("\n");
-    sb.append("    msgBody: ").append(toIndentedString(msgBody)).append("\n");
-    sb.append("    validToDateDATE: ").append(toIndentedString(validToDateDATE)).append("\n");
-    sb.append("    deleteAfterDeletingByAll: ").append(toIndentedString(deleteAfterDeletingByAll)).append("\n");
-    sb.append("    confirmReading: ").append(toIndentedString(confirmReading)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    sentdatedate: ").append(toIndentedString(sentdatedate)).append("\n");
+    sb.append("    senderuserId: ").append(toIndentedString(senderuserId)).append("\n");
+    sb.append("    msgsubject: ").append(toIndentedString(msgsubject)).append("\n");
+    sb.append("    msgbody: ").append(toIndentedString(msgbody)).append("\n");
+    sb.append("    validtodatedate: ").append(toIndentedString(validtodatedate)).append("\n");
+    sb.append("    deleteafterdeletingbyall: ").append(toIndentedString(deleteafterdeletingbyall)).append("\n");
+    sb.append("    confirmreading: ").append(toIndentedString(confirmreading)).append("\n");
     sb.append("    attachments: ").append(toIndentedString(attachments)).append("\n");
     sb.append("    links: ").append(toIndentedString(links)).append("\n");
     sb.append("    recipients: ").append(toIndentedString(recipients)).append("\n");
-    sb.append("    recipientsInOneLine: ").append(toIndentedString(recipientsInOneLine)).append("\n");
+    sb.append("    recipientsinoneline: ").append(toIndentedString(recipientsinoneline)).append("\n");
     sb.append("}");
     return sb.toString();
   }

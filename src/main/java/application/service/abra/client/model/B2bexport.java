@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,84 +34,120 @@ import java.util.Objects;
 /**
  * B2bexport
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class B2bexport   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Title")
+  @SerializedName("title")
   private String title = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-  @SerializedName("DataSource")
-  private String dataSource = null;
+  @SerializedName("datasource")
+  private String datasource = null;
 
-  @SerializedName("ExportID")
-  private String exportID = null;
+  @SerializedName("exportid")
+  private String exportid = null;
 
-  @SerializedName("Data")
+  @SerializedName("data")
   private byte[] data = null;
 
-  @SerializedName("IsForm")
-  private Boolean isForm = null;
+  @SerializedName("isform")
+  private Boolean isform = null;
 
-  @SerializedName("Owner_ID")
-  private String ownerID = null;
+  @SerializedName("owner_id")
+  private String ownerId = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("Hash")
+  @SerializedName("hash")
   private String hash = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public B2bexport displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public B2bexport id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public B2bexport classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public B2bexport objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public B2bexport title(String title) {
@@ -120,10 +156,10 @@ public class B2bexport   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return title
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getTitle() {
     return title;
   }
@@ -138,10 +174,10 @@ public class B2bexport   {
   }
 
    /**
-   * Systémová [persistentní položka]
+   * systémová [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Systémová [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "systémová [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -150,40 +186,40 @@ public class B2bexport   {
     this.system = system;
   }
 
-  public B2bexport dataSource(String dataSource) {
-    this.dataSource = dataSource;
+  public B2bexport datasource(String datasource) {
+    this.datasource = datasource;
     return this;
   }
 
    /**
-   * Datový zdroj [persistentní položka]
-   * @return dataSource
+   * datový zdroj [persistentní položka]
+   * @return datasource
   **/
-  @ApiModelProperty(example = "null", value = "Datový zdroj [persistentní položka]")
-  public String getDataSource() {
-    return dataSource;
+  @ApiModelProperty(example = "null", value = "datový zdroj [persistentní položka]")
+  public String getDatasource() {
+    return datasource;
   }
 
-  public void setDataSource(String dataSource) {
-    this.dataSource = dataSource;
+  public void setDatasource(String datasource) {
+    this.datasource = datasource;
   }
 
-  public B2bexport exportID(String exportID) {
-    this.exportID = exportID;
+  public B2bexport exportid(String exportid) {
+    this.exportid = exportid;
     return this;
   }
 
    /**
-   * GUID sestavy [persistentní položka]
-   * @return exportID
+   * guid sestavy [persistentní položka]
+   * @return exportid
   **/
-  @ApiModelProperty(example = "null", value = "GUID sestavy [persistentní položka]")
-  public String getExportID() {
-    return exportID;
+  @ApiModelProperty(example = "null", value = "guid sestavy [persistentní položka]")
+  public String getExportid() {
+    return exportid;
   }
 
-  public void setExportID(String exportID) {
-    this.exportID = exportID;
+  public void setExportid(String exportid) {
+    this.exportid = exportid;
   }
 
   public B2bexport data(byte[] data) {
@@ -192,10 +228,10 @@ public class B2bexport   {
   }
 
    /**
-   * Data sestavy [persistentní položka]
+   * data sestavy [persistentní položka]
    * @return data
   **/
-  @ApiModelProperty(example = "null", value = "Data sestavy [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "data sestavy [persistentní položka]")
   public byte[] getData() {
     return data;
   }
@@ -204,76 +240,76 @@ public class B2bexport   {
     this.data = data;
   }
 
-  public B2bexport isForm(Boolean isForm) {
-    this.isForm = isForm;
+  public B2bexport isform(Boolean isform) {
+    this.isform = isform;
     return this;
   }
 
    /**
-   * Je formulář [persistentní položka]
-   * @return isForm
+   * je formulář [persistentní položka]
+   * @return isform
   **/
-  @ApiModelProperty(example = "null", value = "Je formulář [persistentní položka]")
-  public Boolean getIsForm() {
-    return isForm;
+  @ApiModelProperty(example = "null", value = "je formulář [persistentní položka]")
+  public Boolean getIsform() {
+    return isform;
   }
 
-  public void setIsForm(Boolean isForm) {
-    this.isForm = isForm;
+  public void setIsform(Boolean isform) {
+    this.isform = isform;
   }
 
-  public B2bexport ownerID(String ownerID) {
-    this.ownerID = ownerID;
+  public B2bexport ownerId(String ownerId) {
+    this.ownerId = ownerId;
     return this;
   }
 
    /**
-   * Vlastník; ID objektu Uživatel [persistentní položka]
-   * @return ownerID
+   * vlastník; id objektu uživatel [persistentní položka]
+   * @return ownerId
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Uživatel [persistentní položka]")
-  public String getOwnerID() {
-    return ownerID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu uživatel [persistentní položka]")
+  public String getOwnerId() {
+    return ownerId;
   }
 
-  public void setOwnerID(String ownerID) {
-    this.ownerID = ownerID;
+  public void setOwnerId(String ownerId) {
+    this.ownerId = ownerId;
   }
 
-  public B2bexport createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public B2bexport createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public B2bexport correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public B2bexport correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
   public B2bexport hash(String hash) {
@@ -282,10 +318,10 @@ public class B2bexport   {
   }
 
    /**
-   * Hash [persistentní položka]
+   * hash [persistentní položka]
    * @return hash
   **/
-  @ApiModelProperty(example = "null", value = "Hash [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "hash [persistentní položka]")
   public String getHash() {
     return hash;
   }
@@ -304,25 +340,25 @@ public class B2bexport   {
       return false;
     }
     B2bexport b2bexport = (B2bexport) o;
-    return Objects.equals(this.displayName, b2bexport.displayName) &&
-        Objects.equals(this.ID, b2bexport.ID) &&
-        Objects.equals(this.classID, b2bexport.classID) &&
-        Objects.equals(this.objVersion, b2bexport.objVersion) &&
+    return Objects.equals(this.displayname, b2bexport.displayname) &&
+        Objects.equals(this.id, b2bexport.id) &&
+        Objects.equals(this.classid, b2bexport.classid) &&
+        Objects.equals(this.objversion, b2bexport.objversion) &&
         Objects.equals(this.title, b2bexport.title) &&
         Objects.equals(this.system, b2bexport.system) &&
-        Objects.equals(this.dataSource, b2bexport.dataSource) &&
-        Objects.equals(this.exportID, b2bexport.exportID) &&
+        Objects.equals(this.datasource, b2bexport.datasource) &&
+        Objects.equals(this.exportid, b2bexport.exportid) &&
         Objects.equals(this.data, b2bexport.data) &&
-        Objects.equals(this.isForm, b2bexport.isForm) &&
-        Objects.equals(this.ownerID, b2bexport.ownerID) &&
-        Objects.equals(this.createdByID, b2bexport.createdByID) &&
-        Objects.equals(this.correctedByID, b2bexport.correctedByID) &&
+        Objects.equals(this.isform, b2bexport.isform) &&
+        Objects.equals(this.ownerId, b2bexport.ownerId) &&
+        Objects.equals(this.createdbyId, b2bexport.createdbyId) &&
+        Objects.equals(this.correctedbyId, b2bexport.correctedbyId) &&
         Objects.equals(this.hash, b2bexport.hash);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, title, system, dataSource, exportID, data, isForm, ownerID, createdByID, correctedByID, hash);
+    return Objects.hash(displayname, id, classid, objversion, title, system, datasource, exportid, data, isform, ownerId, createdbyId, correctedbyId, hash);
   }
 
   @Override
@@ -330,19 +366,19 @@ public class B2bexport   {
     StringBuilder sb = new StringBuilder();
     sb.append("class B2bexport {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
-    sb.append("    dataSource: ").append(toIndentedString(dataSource)).append("\n");
-    sb.append("    exportID: ").append(toIndentedString(exportID)).append("\n");
+    sb.append("    datasource: ").append(toIndentedString(datasource)).append("\n");
+    sb.append("    exportid: ").append(toIndentedString(exportid)).append("\n");
     sb.append("    data: ").append(toIndentedString(data)).append("\n");
-    sb.append("    isForm: ").append(toIndentedString(isForm)).append("\n");
-    sb.append("    ownerID: ").append(toIndentedString(ownerID)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
+    sb.append("    isform: ").append(toIndentedString(isform)).append("\n");
+    sb.append("    ownerId: ").append(toIndentedString(ownerId)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
     sb.append("    hash: ").append(toIndentedString(hash)).append("\n");
     sb.append("}");
     return sb.toString();

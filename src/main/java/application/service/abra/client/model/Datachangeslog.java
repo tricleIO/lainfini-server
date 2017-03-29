@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,207 +35,342 @@ import java.util.Objects;
 /**
  * Datachangeslog
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Datachangeslog   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Site")
+  @SerializedName("site")
   private String site = null;
 
-  @SerializedName("ClientCreatedAt$DATE")
-  private DateTime clientCreatedAtDATE = null;
+  @SerializedName("clientcreatedat$date")
+  private DateTime clientcreatedatdate = null;
 
-  @SerializedName("ServerCreatedAt$DATE")
-  private DateTime serverCreatedAtDATE = null;
+  @SerializedName("servercreatedat$date")
+  private DateTime servercreatedatdate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CLSID")
-  private String CLSID = null;
+  @SerializedName("clsid")
+  private String clsid = null;
 
-  @SerializedName("Obj_ID")
-  private String objID = null;
+  @SerializedName("obj_id")
+  private String objId = null;
 
-  @SerializedName("LogData")
-  private byte[] logData = null;
+  @SerializedName("logdata")
+  private byte[] logdata = null;
 
-  @SerializedName("Status")
+  @SerializedName("status")
   private Integer status = null;
 
-  @SerializedName("ObjectName")
-  private String objectName = null;
+  @SerializedName("objectname")
+  private String objectname = null;
 
-  @SerializedName("LogDataFormat")
-  private Integer logDataFormat = null;
+  @SerializedName("logdataformat")
+  private Integer logdataformat = null;
 
-  @SerializedName("CLSIDText")
-  private String cLSIDText = null;
+  @SerializedName("clsidtext")
+  private String clsidtext = null;
 
-  @SerializedName("NetworkCardID")
-  private String networkCardID = null;
+  @SerializedName("networkcardid")
+  private String networkcardid = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Hnízdo [persistentní položka]
-   * @return site
-  **/
-  @ApiModelProperty(example = "null", value = "Hnízdo [persistentní položka]")
-  public String getSite() {
-    return site;
-  }
-
-   /**
-   * Klientský čas vzniku [persistentní položka]
-   * @return clientCreatedAtDATE
-  **/
-  @ApiModelProperty(example = "null", value = "Klientský čas vzniku [persistentní položka]")
-  public DateTime getClientCreatedAtDATE() {
-    return clientCreatedAtDATE;
-  }
-
-   /**
-   * Centrální čas vzniku [persistentní položka]
-   * @return serverCreatedAtDATE
-  **/
-  @ApiModelProperty(example = "null", value = "Centrální čas vzniku [persistentní položka]")
-  public DateTime getServerCreatedAtDATE() {
-    return serverCreatedAtDATE;
-  }
-
-   /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
-  **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
-  }
-
-   /**
-   * Třída [persistentní položka]
-   * @return CLSID
-  **/
-  @ApiModelProperty(example = "null", value = "Třída [persistentní položka]")
-  public String getCLSID() {
-    return CLSID;
-  }
-
-   /**
-   * ID objektu [persistentní položka]
-   * @return objID
-  **/
-  @ApiModelProperty(example = "null", value = "ID objektu [persistentní položka]")
-  public String getObjID() {
-    return objID;
-  }
-
-   /**
-   * Data logu [persistentní položka]
-   * @return logData
-  **/
-  @ApiModelProperty(example = "null", value = "Data logu [persistentní položka]")
-  public byte[] getLogData() {
-    return logData;
-  }
-
-   /**
-   * Typ změny [persistentní položka]
-   * @return status
-  **/
-  @ApiModelProperty(example = "null", value = "Typ změny [persistentní položka]")
-  public Integer getStatus() {
-    return status;
-  }
-
-   /**
-   * Název objektu [persistentní položka]
-   * @return objectName
-  **/
-  @ApiModelProperty(example = "null", value = "Název objektu [persistentní položka]")
-  public String getObjectName() {
-    return objectName;
-  }
-
-   /**
-   * Formát dat logu [persistentní položka]
-   * @return logDataFormat
-  **/
-  @ApiModelProperty(example = "null", value = "Formát dat logu [persistentní položka]")
-  public Integer getLogDataFormat() {
-    return logDataFormat;
-  }
-
-  public Datachangeslog cLSIDText(String cLSIDText) {
-    this.cLSIDText = cLSIDText;
+  public Datachangeslog displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Třída (textově)
-   * @return cLSIDText
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Třída (textově)")
-  public String getCLSIDText() {
-    return cLSIDText;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setCLSIDText(String cLSIDText) {
-    this.cLSIDText = cLSIDText;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Datachangeslog id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID síť. karty [persistentní položka]
-   * @return networkCardID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID síť. karty [persistentní položka]")
-  public String getNetworkCardID() {
-    return networkCardID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Datachangeslog classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Datachangeslog objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Datachangeslog site(String site) {
+    this.site = site;
+    return this;
+  }
+
+   /**
+   * hnízdo [persistentní položka]
+   * @return site
+  **/
+  @ApiModelProperty(example = "null", value = "hnízdo [persistentní položka]")
+  public String getSite() {
+    return site;
+  }
+
+  public void setSite(String site) {
+    this.site = site;
+  }
+
+  public Datachangeslog clientcreatedatdate(DateTime clientcreatedatdate) {
+    this.clientcreatedatdate = clientcreatedatdate;
+    return this;
+  }
+
+   /**
+   * klientský čas vzniku [persistentní položka]
+   * @return clientcreatedatdate
+  **/
+  @ApiModelProperty(example = "null", value = "klientský čas vzniku [persistentní položka]")
+  public DateTime getClientcreatedatdate() {
+    return clientcreatedatdate;
+  }
+
+  public void setClientcreatedatdate(DateTime clientcreatedatdate) {
+    this.clientcreatedatdate = clientcreatedatdate;
+  }
+
+  public Datachangeslog servercreatedatdate(DateTime servercreatedatdate) {
+    this.servercreatedatdate = servercreatedatdate;
+    return this;
+  }
+
+   /**
+   * centrální čas vzniku [persistentní položka]
+   * @return servercreatedatdate
+  **/
+  @ApiModelProperty(example = "null", value = "centrální čas vzniku [persistentní položka]")
+  public DateTime getServercreatedatdate() {
+    return servercreatedatdate;
+  }
+
+  public void setServercreatedatdate(DateTime servercreatedatdate) {
+    this.servercreatedatdate = servercreatedatdate;
+  }
+
+  public Datachangeslog createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+    return this;
+  }
+
+   /**
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
+  }
+
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Datachangeslog clsid(String clsid) {
+    this.clsid = clsid;
+    return this;
+  }
+
+   /**
+   * třída [persistentní položka]
+   * @return clsid
+  **/
+  @ApiModelProperty(example = "null", value = "třída [persistentní položka]")
+  public String getClsid() {
+    return clsid;
+  }
+
+  public void setClsid(String clsid) {
+    this.clsid = clsid;
+  }
+
+  public Datachangeslog objId(String objId) {
+    this.objId = objId;
+    return this;
+  }
+
+   /**
+   * id objektu [persistentní položka]
+   * @return objId
+  **/
+  @ApiModelProperty(example = "null", value = "id objektu [persistentní položka]")
+  public String getObjId() {
+    return objId;
+  }
+
+  public void setObjId(String objId) {
+    this.objId = objId;
+  }
+
+  public Datachangeslog logdata(byte[] logdata) {
+    this.logdata = logdata;
+    return this;
+  }
+
+   /**
+   * data logu [persistentní položka]
+   * @return logdata
+  **/
+  @ApiModelProperty(example = "null", value = "data logu [persistentní položka]")
+  public byte[] getLogdata() {
+    return logdata;
+  }
+
+  public void setLogdata(byte[] logdata) {
+    this.logdata = logdata;
+  }
+
+  public Datachangeslog status(Integer status) {
+    this.status = status;
+    return this;
+  }
+
+   /**
+   * typ změny [persistentní položka]
+   * @return status
+  **/
+  @ApiModelProperty(example = "null", value = "typ změny [persistentní položka]")
+  public Integer getStatus() {
+    return status;
+  }
+
+  public void setStatus(Integer status) {
+    this.status = status;
+  }
+
+  public Datachangeslog objectname(String objectname) {
+    this.objectname = objectname;
+    return this;
+  }
+
+   /**
+   * název objektu [persistentní položka]
+   * @return objectname
+  **/
+  @ApiModelProperty(example = "null", value = "název objektu [persistentní položka]")
+  public String getObjectname() {
+    return objectname;
+  }
+
+  public void setObjectname(String objectname) {
+    this.objectname = objectname;
+  }
+
+  public Datachangeslog logdataformat(Integer logdataformat) {
+    this.logdataformat = logdataformat;
+    return this;
+  }
+
+   /**
+   * formát dat logu [persistentní položka]
+   * @return logdataformat
+  **/
+  @ApiModelProperty(example = "null", value = "formát dat logu [persistentní položka]")
+  public Integer getLogdataformat() {
+    return logdataformat;
+  }
+
+  public void setLogdataformat(Integer logdataformat) {
+    this.logdataformat = logdataformat;
+  }
+
+  public Datachangeslog clsidtext(String clsidtext) {
+    this.clsidtext = clsidtext;
+    return this;
+  }
+
+   /**
+   * třída (textově)
+   * @return clsidtext
+  **/
+  @ApiModelProperty(example = "null", value = "třída (textově)")
+  public String getClsidtext() {
+    return clsidtext;
+  }
+
+  public void setClsidtext(String clsidtext) {
+    this.clsidtext = clsidtext;
+  }
+
+  public Datachangeslog networkcardid(String networkcardid) {
+    this.networkcardid = networkcardid;
+    return this;
+  }
+
+   /**
+   * id síť. karty [persistentní položka]
+   * @return networkcardid
+  **/
+  @ApiModelProperty(example = "null", value = "id síť. karty [persistentní položka]")
+  public String getNetworkcardid() {
+    return networkcardid;
+  }
+
+  public void setNetworkcardid(String networkcardid) {
+    this.networkcardid = networkcardid;
   }
 
 
@@ -248,27 +383,27 @@ public class Datachangeslog   {
       return false;
     }
     Datachangeslog datachangeslog = (Datachangeslog) o;
-    return Objects.equals(this.displayName, datachangeslog.displayName) &&
-        Objects.equals(this.ID, datachangeslog.ID) &&
-        Objects.equals(this.classID, datachangeslog.classID) &&
-        Objects.equals(this.objVersion, datachangeslog.objVersion) &&
+    return Objects.equals(this.displayname, datachangeslog.displayname) &&
+        Objects.equals(this.id, datachangeslog.id) &&
+        Objects.equals(this.classid, datachangeslog.classid) &&
+        Objects.equals(this.objversion, datachangeslog.objversion) &&
         Objects.equals(this.site, datachangeslog.site) &&
-        Objects.equals(this.clientCreatedAtDATE, datachangeslog.clientCreatedAtDATE) &&
-        Objects.equals(this.serverCreatedAtDATE, datachangeslog.serverCreatedAtDATE) &&
-        Objects.equals(this.createdByID, datachangeslog.createdByID) &&
-        Objects.equals(this.CLSID, datachangeslog.CLSID) &&
-        Objects.equals(this.objID, datachangeslog.objID) &&
-        Objects.equals(this.logData, datachangeslog.logData) &&
+        Objects.equals(this.clientcreatedatdate, datachangeslog.clientcreatedatdate) &&
+        Objects.equals(this.servercreatedatdate, datachangeslog.servercreatedatdate) &&
+        Objects.equals(this.createdbyId, datachangeslog.createdbyId) &&
+        Objects.equals(this.clsid, datachangeslog.clsid) &&
+        Objects.equals(this.objId, datachangeslog.objId) &&
+        Objects.equals(this.logdata, datachangeslog.logdata) &&
         Objects.equals(this.status, datachangeslog.status) &&
-        Objects.equals(this.objectName, datachangeslog.objectName) &&
-        Objects.equals(this.logDataFormat, datachangeslog.logDataFormat) &&
-        Objects.equals(this.cLSIDText, datachangeslog.cLSIDText) &&
-        Objects.equals(this.networkCardID, datachangeslog.networkCardID);
+        Objects.equals(this.objectname, datachangeslog.objectname) &&
+        Objects.equals(this.logdataformat, datachangeslog.logdataformat) &&
+        Objects.equals(this.clsidtext, datachangeslog.clsidtext) &&
+        Objects.equals(this.networkcardid, datachangeslog.networkcardid);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, site, clientCreatedAtDATE, serverCreatedAtDATE, createdByID, CLSID, objID, logData, status, objectName, logDataFormat, cLSIDText, networkCardID);
+    return Objects.hash(displayname, id, classid, objversion, site, clientcreatedatdate, servercreatedatdate, createdbyId, clsid, objId, logdata, status, objectname, logdataformat, clsidtext, networkcardid);
   }
 
   @Override
@@ -276,22 +411,22 @@ public class Datachangeslog   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Datachangeslog {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    site: ").append(toIndentedString(site)).append("\n");
-    sb.append("    clientCreatedAtDATE: ").append(toIndentedString(clientCreatedAtDATE)).append("\n");
-    sb.append("    serverCreatedAtDATE: ").append(toIndentedString(serverCreatedAtDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    CLSID: ").append(toIndentedString(CLSID)).append("\n");
-    sb.append("    objID: ").append(toIndentedString(objID)).append("\n");
-    sb.append("    logData: ").append(toIndentedString(logData)).append("\n");
+    sb.append("    clientcreatedatdate: ").append(toIndentedString(clientcreatedatdate)).append("\n");
+    sb.append("    servercreatedatdate: ").append(toIndentedString(servercreatedatdate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    clsid: ").append(toIndentedString(clsid)).append("\n");
+    sb.append("    objId: ").append(toIndentedString(objId)).append("\n");
+    sb.append("    logdata: ").append(toIndentedString(logdata)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
-    sb.append("    objectName: ").append(toIndentedString(objectName)).append("\n");
-    sb.append("    logDataFormat: ").append(toIndentedString(logDataFormat)).append("\n");
-    sb.append("    cLSIDText: ").append(toIndentedString(cLSIDText)).append("\n");
-    sb.append("    networkCardID: ").append(toIndentedString(networkCardID)).append("\n");
+    sb.append("    objectname: ").append(toIndentedString(objectname)).append("\n");
+    sb.append("    logdataformat: ").append(toIndentedString(logdataformat)).append("\n");
+    sb.append("    clsidtext: ").append(toIndentedString(clsidtext)).append("\n");
+    sb.append("    networkcardid: ").append(toIndentedString(networkcardid)).append("\n");
     sb.append("}");
     return sb.toString();
   }

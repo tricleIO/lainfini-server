@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,129 +37,174 @@ import java.util.Objects;
 /**
  * Plmjoborderssn
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmjoborderssn   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("StoreBatch_ID")
-  private String storeBatchID = null;
+  @SerializedName("storebatch_id")
+  private String storebatchId = null;
 
-  @SerializedName("StoreSubBatch_ID")
-  private String storeSubBatchID = null;
+  @SerializedName("storesubbatch_id")
+  private String storesubbatchId = null;
 
-  @SerializedName("NewBatch")
-  private Boolean newBatch = null;
+  @SerializedName("newbatch")
+  private Boolean newbatch = null;
 
-  @SerializedName("NewBatchName")
-  private String newBatchName = null;
+  @SerializedName("newbatchname")
+  private String newbatchname = null;
 
-  @SerializedName("NewBatchExpirationDate$DATE")
-  private DateTime newBatchExpirationDateDATE = null;
+  @SerializedName("newbatchexpirationdate$date")
+  private DateTime newbatchexpirationdatedate = null;
 
-  @SerializedName("NewBatchComment")
-  private String newBatchComment = null;
+  @SerializedName("newbatchcomment")
+  private String newbatchcomment = null;
 
-  @SerializedName("NewBatchSpecification")
-  private String newBatchSpecification = null;
+  @SerializedName("newbatchspecification")
+  private String newbatchspecification = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("MainUnitRate")
-  private Double mainUnitRate = null;
+  @SerializedName("mainunitrate")
+  private Double mainunitrate = null;
 
-  @SerializedName("UnitQuantity")
-  private Double unitQuantity = null;
+  @SerializedName("unitquantity")
+  private Double unitquantity = null;
 
-  @SerializedName("MainUnitQuantity")
-  private Double mainUnitQuantity = null;
+  @SerializedName("mainunitquantity")
+  private Double mainunitquantity = null;
 
-  @SerializedName("PLMJobOrdersComponents")
-  private List<Plmjoborderscomponent> pLMJobOrdersComponents = new ArrayList<Plmjoborderscomponent>();
+  @SerializedName("plmjoborderscomponents")
+  private List<Plmjoborderscomponent> plmjoborderscomponents = new ArrayList<Plmjoborderscomponent>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu VP - vyráběná položka [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu VP - vyráběná položka [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Plmjoborderssn posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Plmjoborderssn displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Plmjoborderssn id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmjoborderssn classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmjoborderssn objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Plmjoborderssn parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu vp - vyráběná položka [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu vp - vyráběná položka [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Plmjoborderssn posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
   public Plmjoborderssn quantity(Double quantity) {
@@ -168,10 +213,10 @@ public class Plmjoborderssn   {
   }
 
    /**
-   * Počet [persistentní položka]
+   * počet [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "počet [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -180,243 +225,243 @@ public class Plmjoborderssn   {
     this.quantity = quantity;
   }
 
-  public Plmjoborderssn storeBatchID(String storeBatchID) {
-    this.storeBatchID = storeBatchID;
+  public Plmjoborderssn storebatchId(String storebatchId) {
+    this.storebatchId = storebatchId;
     return this;
   }
 
    /**
-   * Sériové číslo/šarže; ID objektu Šarže/sériové číslo [persistentní položka]
-   * @return storeBatchID
+   * sériové číslo/šarže; id objektu Šarže/sériové číslo [persistentní položka]
+   * @return storebatchId
   **/
-  @ApiModelProperty(example = "null", value = "Sériové číslo/šarže; ID objektu Šarže/sériové číslo [persistentní položka]")
-  public String getStoreBatchID() {
-    return storeBatchID;
+  @ApiModelProperty(example = "null", value = "sériové číslo/šarže; id objektu Šarže/sériové číslo [persistentní položka]")
+  public String getStorebatchId() {
+    return storebatchId;
   }
 
-  public void setStoreBatchID(String storeBatchID) {
-    this.storeBatchID = storeBatchID;
+  public void setStorebatchId(String storebatchId) {
+    this.storebatchId = storebatchId;
   }
 
-  public Plmjoborderssn storeSubBatchID(String storeSubBatchID) {
-    this.storeSubBatchID = storeSubBatchID;
+  public Plmjoborderssn storesubbatchId(String storesubbatchId) {
+    this.storesubbatchId = storesubbatchId;
     return this;
   }
 
    /**
-   * Dílčí sériové číslo/šarže; ID objektu Dílčí šarže/sériové číslo
-   * @return storeSubBatchID
+   * dílčí sériové číslo/šarže; id objektu dílčí šarže/sériové číslo
+   * @return storesubbatchId
   **/
-  @ApiModelProperty(example = "null", value = "Dílčí sériové číslo/šarže; ID objektu Dílčí šarže/sériové číslo")
-  public String getStoreSubBatchID() {
-    return storeSubBatchID;
+  @ApiModelProperty(example = "null", value = "dílčí sériové číslo/šarže; id objektu dílčí šarže/sériové číslo")
+  public String getStoresubbatchId() {
+    return storesubbatchId;
   }
 
-  public void setStoreSubBatchID(String storeSubBatchID) {
-    this.storeSubBatchID = storeSubBatchID;
+  public void setStoresubbatchId(String storesubbatchId) {
+    this.storesubbatchId = storesubbatchId;
   }
 
-  public Plmjoborderssn newBatch(Boolean newBatch) {
-    this.newBatch = newBatch;
+  public Plmjoborderssn newbatch(Boolean newbatch) {
+    this.newbatch = newbatch;
     return this;
   }
 
    /**
-   * Nová šarže
-   * @return newBatch
+   * nová šarže
+   * @return newbatch
   **/
-  @ApiModelProperty(example = "null", value = "Nová šarže")
-  public Boolean getNewBatch() {
-    return newBatch;
+  @ApiModelProperty(example = "null", value = "nová šarže")
+  public Boolean getNewbatch() {
+    return newbatch;
   }
 
-  public void setNewBatch(Boolean newBatch) {
-    this.newBatch = newBatch;
+  public void setNewbatch(Boolean newbatch) {
+    this.newbatch = newbatch;
   }
 
-  public Plmjoborderssn newBatchName(String newBatchName) {
-    this.newBatchName = newBatchName;
+  public Plmjoborderssn newbatchname(String newbatchname) {
+    this.newbatchname = newbatchname;
     return this;
   }
 
    /**
-   * Název
-   * @return newBatchName
+   * název
+   * @return newbatchname
   **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getNewBatchName() {
-    return newBatchName;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getNewbatchname() {
+    return newbatchname;
   }
 
-  public void setNewBatchName(String newBatchName) {
-    this.newBatchName = newBatchName;
+  public void setNewbatchname(String newbatchname) {
+    this.newbatchname = newbatchname;
   }
 
-  public Plmjoborderssn newBatchExpirationDateDATE(DateTime newBatchExpirationDateDATE) {
-    this.newBatchExpirationDateDATE = newBatchExpirationDateDATE;
+  public Plmjoborderssn newbatchexpirationdatedate(DateTime newbatchexpirationdatedate) {
+    this.newbatchexpirationdatedate = newbatchexpirationdatedate;
     return this;
   }
 
    /**
-   * Datum expirace
-   * @return newBatchExpirationDateDATE
+   * datum expirace
+   * @return newbatchexpirationdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum expirace")
-  public DateTime getNewBatchExpirationDateDATE() {
-    return newBatchExpirationDateDATE;
+  @ApiModelProperty(example = "null", value = "datum expirace")
+  public DateTime getNewbatchexpirationdatedate() {
+    return newbatchexpirationdatedate;
   }
 
-  public void setNewBatchExpirationDateDATE(DateTime newBatchExpirationDateDATE) {
-    this.newBatchExpirationDateDATE = newBatchExpirationDateDATE;
+  public void setNewbatchexpirationdatedate(DateTime newbatchexpirationdatedate) {
+    this.newbatchexpirationdatedate = newbatchexpirationdatedate;
   }
 
-  public Plmjoborderssn newBatchComment(String newBatchComment) {
-    this.newBatchComment = newBatchComment;
+  public Plmjoborderssn newbatchcomment(String newbatchcomment) {
+    this.newbatchcomment = newbatchcomment;
     return this;
   }
 
    /**
-   * Popis
-   * @return newBatchComment
+   * popis
+   * @return newbatchcomment
   **/
-  @ApiModelProperty(example = "null", value = "Popis")
-  public String getNewBatchComment() {
-    return newBatchComment;
+  @ApiModelProperty(example = "null", value = "popis")
+  public String getNewbatchcomment() {
+    return newbatchcomment;
   }
 
-  public void setNewBatchComment(String newBatchComment) {
-    this.newBatchComment = newBatchComment;
+  public void setNewbatchcomment(String newbatchcomment) {
+    this.newbatchcomment = newbatchcomment;
   }
 
-  public Plmjoborderssn newBatchSpecification(String newBatchSpecification) {
-    this.newBatchSpecification = newBatchSpecification;
+  public Plmjoborderssn newbatchspecification(String newbatchspecification) {
+    this.newbatchspecification = newbatchspecification;
     return this;
   }
 
    /**
-   * Specifikace
-   * @return newBatchSpecification
+   * specifikace
+   * @return newbatchspecification
   **/
-  @ApiModelProperty(example = "null", value = "Specifikace")
-  public String getNewBatchSpecification() {
-    return newBatchSpecification;
+  @ApiModelProperty(example = "null", value = "specifikace")
+  public String getNewbatchspecification() {
+    return newbatchspecification;
   }
 
-  public void setNewBatchSpecification(String newBatchSpecification) {
-    this.newBatchSpecification = newBatchSpecification;
+  public void setNewbatchspecification(String newbatchspecification) {
+    this.newbatchspecification = newbatchspecification;
   }
 
-  public Plmjoborderssn qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Plmjoborderssn qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
   }
 
-  public Plmjoborderssn unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Plmjoborderssn unitrate(Double unitrate) {
+    this.unitrate = unitrate;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return unitRate
+   * vztah [persistentní položka]
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
-  public Plmjoborderssn mainUnitRate(Double mainUnitRate) {
-    this.mainUnitRate = mainUnitRate;
+  public Plmjoborderssn mainunitrate(Double mainunitrate) {
+    this.mainunitrate = mainunitrate;
     return this;
   }
 
    /**
-   * Vztah hl. jednotky
-   * @return mainUnitRate
+   * vztah hl. jednotky
+   * @return mainunitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah hl. jednotky")
-  public Double getMainUnitRate() {
-    return mainUnitRate;
+  @ApiModelProperty(example = "null", value = "vztah hl. jednotky")
+  public Double getMainunitrate() {
+    return mainunitrate;
   }
 
-  public void setMainUnitRate(Double mainUnitRate) {
-    this.mainUnitRate = mainUnitRate;
+  public void setMainunitrate(Double mainunitrate) {
+    this.mainunitrate = mainunitrate;
   }
 
-  public Plmjoborderssn unitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public Plmjoborderssn unitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
     return this;
   }
 
    /**
-   * Počet
-   * @return unitQuantity
+   * počet
+   * @return unitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet")
-  public Double getUnitQuantity() {
-    return unitQuantity;
+  @ApiModelProperty(example = "null", value = "počet")
+  public Double getUnitquantity() {
+    return unitquantity;
   }
 
-  public void setUnitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public void setUnitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
   }
 
-  public Plmjoborderssn mainUnitQuantity(Double mainUnitQuantity) {
-    this.mainUnitQuantity = mainUnitQuantity;
+  public Plmjoborderssn mainunitquantity(Double mainunitquantity) {
+    this.mainunitquantity = mainunitquantity;
     return this;
   }
 
    /**
-   * Počet v hl. jednotce
-   * @return mainUnitQuantity
+   * počet v hl. jednotce
+   * @return mainunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet v hl. jednotce")
-  public Double getMainUnitQuantity() {
-    return mainUnitQuantity;
+  @ApiModelProperty(example = "null", value = "počet v hl. jednotce")
+  public Double getMainunitquantity() {
+    return mainunitquantity;
   }
 
-  public void setMainUnitQuantity(Double mainUnitQuantity) {
-    this.mainUnitQuantity = mainUnitQuantity;
+  public void setMainunitquantity(Double mainunitquantity) {
+    this.mainunitquantity = mainunitquantity;
   }
 
-  public Plmjoborderssn pLMJobOrdersComponents(List<Plmjoborderscomponent> pLMJobOrdersComponents) {
-    this.pLMJobOrdersComponents = pLMJobOrdersComponents;
+  public Plmjoborderssn plmjoborderscomponents(List<Plmjoborderscomponent> plmjoborderscomponents) {
+    this.plmjoborderscomponents = plmjoborderscomponents;
     return this;
   }
 
-  public Plmjoborderssn addPLMJobOrdersComponentsItem(Plmjoborderscomponent pLMJobOrdersComponentsItem) {
-    this.pLMJobOrdersComponents.add(pLMJobOrdersComponentsItem);
+  public Plmjoborderssn addPlmjoborderscomponentsItem(Plmjoborderscomponent plmjoborderscomponentsItem) {
+    this.plmjoborderscomponents.add(plmjoborderscomponentsItem);
     return this;
   }
 
    /**
-   * Sestavy komponenty; kolekce BO VP - sestavy komponenty [nepersistentní položka]
-   * @return pLMJobOrdersComponents
+   * sestavy komponenty; kolekce bo vp - sestavy komponenty [nepersistentní položka]
+   * @return plmjoborderscomponents
   **/
-  @ApiModelProperty(example = "null", value = "Sestavy komponenty; kolekce BO VP - sestavy komponenty [nepersistentní položka]")
-  public List<Plmjoborderscomponent> getPLMJobOrdersComponents() {
-    return pLMJobOrdersComponents;
+  @ApiModelProperty(example = "null", value = "sestavy komponenty; kolekce bo vp - sestavy komponenty [nepersistentní položka]")
+  public List<Plmjoborderscomponent> getPlmjoborderscomponents() {
+    return plmjoborderscomponents;
   }
 
-  public void setPLMJobOrdersComponents(List<Plmjoborderscomponent> pLMJobOrdersComponents) {
-    this.pLMJobOrdersComponents = pLMJobOrdersComponents;
+  public void setPlmjoborderscomponents(List<Plmjoborderscomponent> plmjoborderscomponents) {
+    this.plmjoborderscomponents = plmjoborderscomponents;
   }
 
 
@@ -429,31 +474,31 @@ public class Plmjoborderssn   {
       return false;
     }
     Plmjoborderssn plmjoborderssn = (Plmjoborderssn) o;
-    return Objects.equals(this.displayName, plmjoborderssn.displayName) &&
-        Objects.equals(this.ID, plmjoborderssn.ID) &&
-        Objects.equals(this.classID, plmjoborderssn.classID) &&
-        Objects.equals(this.objVersion, plmjoborderssn.objVersion) &&
-        Objects.equals(this.parentID, plmjoborderssn.parentID) &&
-        Objects.equals(this.posIndex, plmjoborderssn.posIndex) &&
+    return Objects.equals(this.displayname, plmjoborderssn.displayname) &&
+        Objects.equals(this.id, plmjoborderssn.id) &&
+        Objects.equals(this.classid, plmjoborderssn.classid) &&
+        Objects.equals(this.objversion, plmjoborderssn.objversion) &&
+        Objects.equals(this.parentId, plmjoborderssn.parentId) &&
+        Objects.equals(this.posindex, plmjoborderssn.posindex) &&
         Objects.equals(this.quantity, plmjoborderssn.quantity) &&
-        Objects.equals(this.storeBatchID, plmjoborderssn.storeBatchID) &&
-        Objects.equals(this.storeSubBatchID, plmjoborderssn.storeSubBatchID) &&
-        Objects.equals(this.newBatch, plmjoborderssn.newBatch) &&
-        Objects.equals(this.newBatchName, plmjoborderssn.newBatchName) &&
-        Objects.equals(this.newBatchExpirationDateDATE, plmjoborderssn.newBatchExpirationDateDATE) &&
-        Objects.equals(this.newBatchComment, plmjoborderssn.newBatchComment) &&
-        Objects.equals(this.newBatchSpecification, plmjoborderssn.newBatchSpecification) &&
-        Objects.equals(this.qUnit, plmjoborderssn.qUnit) &&
-        Objects.equals(this.unitRate, plmjoborderssn.unitRate) &&
-        Objects.equals(this.mainUnitRate, plmjoborderssn.mainUnitRate) &&
-        Objects.equals(this.unitQuantity, plmjoborderssn.unitQuantity) &&
-        Objects.equals(this.mainUnitQuantity, plmjoborderssn.mainUnitQuantity) &&
-        Objects.equals(this.pLMJobOrdersComponents, plmjoborderssn.pLMJobOrdersComponents);
+        Objects.equals(this.storebatchId, plmjoborderssn.storebatchId) &&
+        Objects.equals(this.storesubbatchId, plmjoborderssn.storesubbatchId) &&
+        Objects.equals(this.newbatch, plmjoborderssn.newbatch) &&
+        Objects.equals(this.newbatchname, plmjoborderssn.newbatchname) &&
+        Objects.equals(this.newbatchexpirationdatedate, plmjoborderssn.newbatchexpirationdatedate) &&
+        Objects.equals(this.newbatchcomment, plmjoborderssn.newbatchcomment) &&
+        Objects.equals(this.newbatchspecification, plmjoborderssn.newbatchspecification) &&
+        Objects.equals(this.qunit, plmjoborderssn.qunit) &&
+        Objects.equals(this.unitrate, plmjoborderssn.unitrate) &&
+        Objects.equals(this.mainunitrate, plmjoborderssn.mainunitrate) &&
+        Objects.equals(this.unitquantity, plmjoborderssn.unitquantity) &&
+        Objects.equals(this.mainunitquantity, plmjoborderssn.mainunitquantity) &&
+        Objects.equals(this.plmjoborderscomponents, plmjoborderssn.plmjoborderscomponents);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, quantity, storeBatchID, storeSubBatchID, newBatch, newBatchName, newBatchExpirationDateDATE, newBatchComment, newBatchSpecification, qUnit, unitRate, mainUnitRate, unitQuantity, mainUnitQuantity, pLMJobOrdersComponents);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, quantity, storebatchId, storesubbatchId, newbatch, newbatchname, newbatchexpirationdatedate, newbatchcomment, newbatchspecification, qunit, unitrate, mainunitrate, unitquantity, mainunitquantity, plmjoborderscomponents);
   }
 
   @Override
@@ -461,26 +506,26 @@ public class Plmjoborderssn   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmjoborderssn {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    storeBatchID: ").append(toIndentedString(storeBatchID)).append("\n");
-    sb.append("    storeSubBatchID: ").append(toIndentedString(storeSubBatchID)).append("\n");
-    sb.append("    newBatch: ").append(toIndentedString(newBatch)).append("\n");
-    sb.append("    newBatchName: ").append(toIndentedString(newBatchName)).append("\n");
-    sb.append("    newBatchExpirationDateDATE: ").append(toIndentedString(newBatchExpirationDateDATE)).append("\n");
-    sb.append("    newBatchComment: ").append(toIndentedString(newBatchComment)).append("\n");
-    sb.append("    newBatchSpecification: ").append(toIndentedString(newBatchSpecification)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    mainUnitRate: ").append(toIndentedString(mainUnitRate)).append("\n");
-    sb.append("    unitQuantity: ").append(toIndentedString(unitQuantity)).append("\n");
-    sb.append("    mainUnitQuantity: ").append(toIndentedString(mainUnitQuantity)).append("\n");
-    sb.append("    pLMJobOrdersComponents: ").append(toIndentedString(pLMJobOrdersComponents)).append("\n");
+    sb.append("    storebatchId: ").append(toIndentedString(storebatchId)).append("\n");
+    sb.append("    storesubbatchId: ").append(toIndentedString(storesubbatchId)).append("\n");
+    sb.append("    newbatch: ").append(toIndentedString(newbatch)).append("\n");
+    sb.append("    newbatchname: ").append(toIndentedString(newbatchname)).append("\n");
+    sb.append("    newbatchexpirationdatedate: ").append(toIndentedString(newbatchexpirationdatedate)).append("\n");
+    sb.append("    newbatchcomment: ").append(toIndentedString(newbatchcomment)).append("\n");
+    sb.append("    newbatchspecification: ").append(toIndentedString(newbatchspecification)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    mainunitrate: ").append(toIndentedString(mainunitrate)).append("\n");
+    sb.append("    unitquantity: ").append(toIndentedString(unitquantity)).append("\n");
+    sb.append("    mainunitquantity: ").append(toIndentedString(mainunitquantity)).append("\n");
+    sb.append("    plmjoborderscomponents: ").append(toIndentedString(plmjoborderscomponents)).append("\n");
     sb.append("}");
     return sb.toString();
   }

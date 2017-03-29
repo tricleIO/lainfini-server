@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,7 +34,7 @@ import java.util.Objects;
 /**
  * Importmgrparams
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Importmgrparams   {
   @SerializedName("output_document")
   private Id outputDocument = null;
@@ -69,10 +69,10 @@ public class Importmgrparams   {
   }
 
    /**
-   * ID importovaného dokladu, nebo pole ID importovaných dokladů (v případě importu více dokladů do jednoho)
+   * id importovaného dokladu, nebo pole id importovaných dokladů (v případě importu více dokladů do jednoho)
    * @return inputDocument
   **/
-  @ApiModelProperty(example = "null", value = "ID importovaného dokladu, nebo pole ID importovaných dokladů (v případě importu více dokladů do jednoho)")
+  @ApiModelProperty(example = "null", value = "id importovaného dokladu, nebo pole id importovaných dokladů (v případě importu více dokladů do jednoho)")
   public Id getInputDocument() {
     return inputDocument;
   }
@@ -87,10 +87,10 @@ public class Importmgrparams   {
   }
 
    /**
-   * Objekt parametrů importního manažera. Název parametru je vlastností objektu, jeho hodnota je hodnotou vlastnosti.
+   * objekt parametrů importního manažera. název parametru je vlastností objektu, jeho hodnota je hodnotou vlastnosti.
    * @return params
   **/
-  @ApiModelProperty(example = "null", value = "Objekt parametrů importního manažera. Název parametru je vlastností objektu, jeho hodnota je hodnotou vlastnosti.")
+  @ApiModelProperty(example = "null", value = "objekt parametrů importního manažera. název parametru je vlastností objektu, jeho hodnota je hodnotou vlastnosti.")
   public Object getParams() {
     return params;
   }

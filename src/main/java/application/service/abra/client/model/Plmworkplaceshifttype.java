@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,150 +34,195 @@ import java.util.Objects;
 /**
  * Plmworkplaceshifttype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmworkplaceshifttype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("ShiftType_ID")
-  private String shiftTypeID = null;
+  @SerializedName("shifttype_id")
+  private String shifttypeId = null;
 
-  @SerializedName("IncCapacityCoef")
-  private Double incCapacityCoef = null;
+  @SerializedName("inccapacitycoef")
+  private Double inccapacitycoef = null;
 
-  @SerializedName("IncCapacityIsMulti")
-  private Boolean incCapacityIsMulti = null;
+  @SerializedName("inccapacityismulti")
+  private Boolean inccapacityismulti = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Pracoviště a stroj [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Pracoviště a stroj [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Plmworkplaceshifttype posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Plmworkplaceshifttype displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Plmworkplaceshifttype shiftTypeID(String shiftTypeID) {
-    this.shiftTypeID = shiftTypeID;
+  public Plmworkplaceshifttype id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Druhy směn; ID objektu Druh pracovní směny [persistentní položka]
-   * @return shiftTypeID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Druhy směn; ID objektu Druh pracovní směny [persistentní položka]")
-  public String getShiftTypeID() {
-    return shiftTypeID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setShiftTypeID(String shiftTypeID) {
-    this.shiftTypeID = shiftTypeID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Plmworkplaceshifttype incCapacityCoef(Double incCapacityCoef) {
-    this.incCapacityCoef = incCapacityCoef;
+  public Plmworkplaceshifttype classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Koeficient navýšení [persistentní položka]
-   * @return incCapacityCoef
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Koeficient navýšení [persistentní položka]")
-  public Double getIncCapacityCoef() {
-    return incCapacityCoef;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setIncCapacityCoef(Double incCapacityCoef) {
-    this.incCapacityCoef = incCapacityCoef;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Plmworkplaceshifttype incCapacityIsMulti(Boolean incCapacityIsMulti) {
-    this.incCapacityIsMulti = incCapacityIsMulti;
+  public Plmworkplaceshifttype objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Způsob navýšení [persistentní položka]
-   * @return incCapacityIsMulti
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Způsob navýšení [persistentní položka]")
-  public Boolean getIncCapacityIsMulti() {
-    return incCapacityIsMulti;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setIncCapacityIsMulti(Boolean incCapacityIsMulti) {
-    this.incCapacityIsMulti = incCapacityIsMulti;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Plmworkplaceshifttype parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu pracoviště a stroj [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu pracoviště a stroj [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Plmworkplaceshifttype posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Plmworkplaceshifttype shifttypeId(String shifttypeId) {
+    this.shifttypeId = shifttypeId;
+    return this;
+  }
+
+   /**
+   * druhy směn; id objektu druh pracovní směny [persistentní položka]
+   * @return shifttypeId
+  **/
+  @ApiModelProperty(example = "null", value = "druhy směn; id objektu druh pracovní směny [persistentní položka]")
+  public String getShifttypeId() {
+    return shifttypeId;
+  }
+
+  public void setShifttypeId(String shifttypeId) {
+    this.shifttypeId = shifttypeId;
+  }
+
+  public Plmworkplaceshifttype inccapacitycoef(Double inccapacitycoef) {
+    this.inccapacitycoef = inccapacitycoef;
+    return this;
+  }
+
+   /**
+   * koeficient navýšení [persistentní položka]
+   * @return inccapacitycoef
+  **/
+  @ApiModelProperty(example = "null", value = "koeficient navýšení [persistentní položka]")
+  public Double getInccapacitycoef() {
+    return inccapacitycoef;
+  }
+
+  public void setInccapacitycoef(Double inccapacitycoef) {
+    this.inccapacitycoef = inccapacitycoef;
+  }
+
+  public Plmworkplaceshifttype inccapacityismulti(Boolean inccapacityismulti) {
+    this.inccapacityismulti = inccapacityismulti;
+    return this;
+  }
+
+   /**
+   * způsob navýšení [persistentní položka]
+   * @return inccapacityismulti
+  **/
+  @ApiModelProperty(example = "null", value = "způsob navýšení [persistentní položka]")
+  public Boolean getInccapacityismulti() {
+    return inccapacityismulti;
+  }
+
+  public void setInccapacityismulti(Boolean inccapacityismulti) {
+    this.inccapacityismulti = inccapacityismulti;
   }
 
 
@@ -190,20 +235,20 @@ public class Plmworkplaceshifttype   {
       return false;
     }
     Plmworkplaceshifttype plmworkplaceshifttype = (Plmworkplaceshifttype) o;
-    return Objects.equals(this.displayName, plmworkplaceshifttype.displayName) &&
-        Objects.equals(this.ID, plmworkplaceshifttype.ID) &&
-        Objects.equals(this.classID, plmworkplaceshifttype.classID) &&
-        Objects.equals(this.objVersion, plmworkplaceshifttype.objVersion) &&
-        Objects.equals(this.parentID, plmworkplaceshifttype.parentID) &&
-        Objects.equals(this.posIndex, plmworkplaceshifttype.posIndex) &&
-        Objects.equals(this.shiftTypeID, plmworkplaceshifttype.shiftTypeID) &&
-        Objects.equals(this.incCapacityCoef, plmworkplaceshifttype.incCapacityCoef) &&
-        Objects.equals(this.incCapacityIsMulti, plmworkplaceshifttype.incCapacityIsMulti);
+    return Objects.equals(this.displayname, plmworkplaceshifttype.displayname) &&
+        Objects.equals(this.id, plmworkplaceshifttype.id) &&
+        Objects.equals(this.classid, plmworkplaceshifttype.classid) &&
+        Objects.equals(this.objversion, plmworkplaceshifttype.objversion) &&
+        Objects.equals(this.parentId, plmworkplaceshifttype.parentId) &&
+        Objects.equals(this.posindex, plmworkplaceshifttype.posindex) &&
+        Objects.equals(this.shifttypeId, plmworkplaceshifttype.shifttypeId) &&
+        Objects.equals(this.inccapacitycoef, plmworkplaceshifttype.inccapacitycoef) &&
+        Objects.equals(this.inccapacityismulti, plmworkplaceshifttype.inccapacityismulti);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, shiftTypeID, incCapacityCoef, incCapacityIsMulti);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, shifttypeId, inccapacitycoef, inccapacityismulti);
   }
 
   @Override
@@ -211,15 +256,15 @@ public class Plmworkplaceshifttype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmworkplaceshifttype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    shiftTypeID: ").append(toIndentedString(shiftTypeID)).append("\n");
-    sb.append("    incCapacityCoef: ").append(toIndentedString(incCapacityCoef)).append("\n");
-    sb.append("    incCapacityIsMulti: ").append(toIndentedString(incCapacityIsMulti)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    shifttypeId: ").append(toIndentedString(shifttypeId)).append("\n");
+    sb.append("    inccapacitycoef: ").append(toIndentedString(inccapacitycoef)).append("\n");
+    sb.append("    inccapacityismulti: ").append(toIndentedString(inccapacityismulti)).append("\n");
     sb.append("}");
     return sb.toString();
   }

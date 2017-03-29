@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,387 +34,432 @@ import java.util.Objects;
 /**
  * Posmirrorrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posmirrorrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("RequestedQuantity")
-  private Double requestedQuantity = null;
+  @SerializedName("requestedquantity")
+  private Double requestedquantity = null;
 
-  @SerializedName("RealQuantity")
-  private Double realQuantity = null;
+  @SerializedName("realquantity")
+  private Double realquantity = null;
 
-  @SerializedName("RealQuantityOriginal")
-  private Double realQuantityOriginal = null;
+  @SerializedName("realquantityoriginal")
+  private Double realquantityoriginal = null;
 
-  @SerializedName("QuantityDifferenceVSOriginal")
-  private Double quantityDifferenceVSOriginal = null;
+  @SerializedName("quantitydifferencevsoriginal")
+  private Double quantitydifferencevsoriginal = null;
 
-  @SerializedName("QuantityDifferenceOriginal")
-  private Double quantityDifferenceOriginal = null;
+  @SerializedName("quantitydifferenceoriginal")
+  private Double quantitydifferenceoriginal = null;
 
-  @SerializedName("ShortFallTAmountOriginal")
-  private Double shortFallTAmountOriginal = null;
+  @SerializedName("shortfalltamountoriginal")
+  private Double shortfalltamountoriginal = null;
 
-  @SerializedName("ShortFallTAmountVSOriginal")
-  private Double shortFallTAmountVSOriginal = null;
+  @SerializedName("shortfalltamountvsoriginal")
+  private Double shortfalltamountvsoriginal = null;
 
-  @SerializedName("QuantityDifference")
-  private Double quantityDifference = null;
+  @SerializedName("quantitydifference")
+  private Double quantitydifference = null;
 
-  @SerializedName("ShortFallPrice")
-  private Double shortFallPrice = null;
+  @SerializedName("shortfallprice")
+  private Double shortfallprice = null;
 
-  @SerializedName("ShortFallTAmount")
-  private Double shortFallTAmount = null;
+  @SerializedName("shortfalltamount")
+  private Double shortfalltamount = null;
 
-  @SerializedName("Text")
+  @SerializedName("text")
   private String text = null;
 
-  @SerializedName("ShortFallExcluded")
-  private Boolean shortFallExcluded = null;
+  @SerializedName("shortfallexcluded")
+  private Boolean shortfallexcluded = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Zrcadlo [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Zrcadlo [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Posmirrorrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Posmirrorrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Posmirrorrow storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Posmirrorrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Posmirrorrow storeID(String storeID) {
-    this.storeID = storeID;
+  public Posmirrorrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Posmirrorrow qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Posmirrorrow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Posmirrorrow unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Posmirrorrow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return unitRate
+   * vlastník; id objektu zrcadlo [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu zrcadlo [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Posmirrorrow requestedQuantity(Double requestedQuantity) {
-    this.requestedQuantity = requestedQuantity;
+  public Posmirrorrow posindex(Integer posindex) {
+    this.posindex = posindex;
     return this;
   }
 
    /**
-   * Počet (očekáváno) [persistentní položka]
-   * @return requestedQuantity
+   * pořadí [persistentní položka]
+   * @return posindex
   **/
-  @ApiModelProperty(example = "null", value = "Počet (očekáváno) [persistentní položka]")
-  public Double getRequestedQuantity() {
-    return requestedQuantity;
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
   }
 
-  public void setRequestedQuantity(Double requestedQuantity) {
-    this.requestedQuantity = requestedQuantity;
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
-  public Posmirrorrow realQuantity(Double realQuantity) {
-    this.realQuantity = realQuantity;
+  public Posmirrorrow storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Skuteč. počet (nalezeno) [persistentní položka]
-   * @return realQuantity
+   * skladová karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skuteč. počet (nalezeno) [persistentní položka]")
-  public Double getRealQuantity() {
-    return realQuantity;
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setRealQuantity(Double realQuantity) {
-    this.realQuantity = realQuantity;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
   }
 
-  public Posmirrorrow realQuantityOriginal(Double realQuantityOriginal) {
-    this.realQuantityOriginal = realQuantityOriginal;
+  public Posmirrorrow storeId(String storeId) {
+    this.storeId = storeId;
     return this;
   }
 
    /**
-   * Původně nalezeno
-   * @return realQuantityOriginal
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
   **/
-  @ApiModelProperty(example = "null", value = "Původně nalezeno")
-  public Double getRealQuantityOriginal() {
-    return realQuantityOriginal;
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
   }
 
-  public void setRealQuantityOriginal(Double realQuantityOriginal) {
-    this.realQuantityOriginal = realQuantityOriginal;
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
-  public Posmirrorrow quantityDifferenceVSOriginal(Double quantityDifferenceVSOriginal) {
-    this.quantityDifferenceVSOriginal = quantityDifferenceVSOriginal;
+  public Posmirrorrow qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Změna rozdílu
-   * @return quantityDifferenceVSOriginal
+   * jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Změna rozdílu")
-  public Double getQuantityDifferenceVSOriginal() {
-    return quantityDifferenceVSOriginal;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setQuantityDifferenceVSOriginal(Double quantityDifferenceVSOriginal) {
-    this.quantityDifferenceVSOriginal = quantityDifferenceVSOriginal;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
   }
 
-  public Posmirrorrow quantityDifferenceOriginal(Double quantityDifferenceOriginal) {
-    this.quantityDifferenceOriginal = quantityDifferenceOriginal;
+  public Posmirrorrow unitrate(Double unitrate) {
+    this.unitrate = unitrate;
     return this;
   }
 
    /**
-   * Původní rozdíl
-   * @return quantityDifferenceOriginal
+   * vztah [persistentní položka]
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Původní rozdíl")
-  public Double getQuantityDifferenceOriginal() {
-    return quantityDifferenceOriginal;
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
   }
 
-  public void setQuantityDifferenceOriginal(Double quantityDifferenceOriginal) {
-    this.quantityDifferenceOriginal = quantityDifferenceOriginal;
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
-  public Posmirrorrow shortFallTAmountOriginal(Double shortFallTAmountOriginal) {
-    this.shortFallTAmountOriginal = shortFallTAmountOriginal;
+  public Posmirrorrow requestedquantity(Double requestedquantity) {
+    this.requestedquantity = requestedquantity;
     return this;
   }
 
    /**
-   * Původní cena manka
-   * @return shortFallTAmountOriginal
+   * počet (očekáváno) [persistentní položka]
+   * @return requestedquantity
   **/
-  @ApiModelProperty(example = "null", value = "Původní cena manka")
-  public Double getShortFallTAmountOriginal() {
-    return shortFallTAmountOriginal;
+  @ApiModelProperty(example = "null", value = "počet (očekáváno) [persistentní položka]")
+  public Double getRequestedquantity() {
+    return requestedquantity;
   }
 
-  public void setShortFallTAmountOriginal(Double shortFallTAmountOriginal) {
-    this.shortFallTAmountOriginal = shortFallTAmountOriginal;
+  public void setRequestedquantity(Double requestedquantity) {
+    this.requestedquantity = requestedquantity;
   }
 
-  public Posmirrorrow shortFallTAmountVSOriginal(Double shortFallTAmountVSOriginal) {
-    this.shortFallTAmountVSOriginal = shortFallTAmountVSOriginal;
+  public Posmirrorrow realquantity(Double realquantity) {
+    this.realquantity = realquantity;
     return this;
   }
 
    /**
-   * Změna ceny manka
-   * @return shortFallTAmountVSOriginal
+   * skuteč. počet (nalezeno) [persistentní položka]
+   * @return realquantity
   **/
-  @ApiModelProperty(example = "null", value = "Změna ceny manka")
-  public Double getShortFallTAmountVSOriginal() {
-    return shortFallTAmountVSOriginal;
+  @ApiModelProperty(example = "null", value = "skuteč. počet (nalezeno) [persistentní položka]")
+  public Double getRealquantity() {
+    return realquantity;
   }
 
-  public void setShortFallTAmountVSOriginal(Double shortFallTAmountVSOriginal) {
-    this.shortFallTAmountVSOriginal = shortFallTAmountVSOriginal;
+  public void setRealquantity(Double realquantity) {
+    this.realquantity = realquantity;
   }
 
-  public Posmirrorrow quantityDifference(Double quantityDifference) {
-    this.quantityDifference = quantityDifference;
+  public Posmirrorrow realquantityoriginal(Double realquantityoriginal) {
+    this.realquantityoriginal = realquantityoriginal;
     return this;
   }
 
    /**
-   * Rozdíl
-   * @return quantityDifference
+   * původně nalezeno
+   * @return realquantityoriginal
   **/
-  @ApiModelProperty(example = "null", value = "Rozdíl")
-  public Double getQuantityDifference() {
-    return quantityDifference;
+  @ApiModelProperty(example = "null", value = "původně nalezeno")
+  public Double getRealquantityoriginal() {
+    return realquantityoriginal;
   }
 
-  public void setQuantityDifference(Double quantityDifference) {
-    this.quantityDifference = quantityDifference;
+  public void setRealquantityoriginal(Double realquantityoriginal) {
+    this.realquantityoriginal = realquantityoriginal;
   }
 
-  public Posmirrorrow shortFallPrice(Double shortFallPrice) {
-    this.shortFallPrice = shortFallPrice;
+  public Posmirrorrow quantitydifferencevsoriginal(Double quantitydifferencevsoriginal) {
+    this.quantitydifferencevsoriginal = quantitydifferencevsoriginal;
     return this;
   }
 
    /**
-   * Prodejní cena u manka [persistentní položka]
-   * @return shortFallPrice
+   * změna rozdílu
+   * @return quantitydifferencevsoriginal
   **/
-  @ApiModelProperty(example = "null", value = "Prodejní cena u manka [persistentní položka]")
-  public Double getShortFallPrice() {
-    return shortFallPrice;
+  @ApiModelProperty(example = "null", value = "změna rozdílu")
+  public Double getQuantitydifferencevsoriginal() {
+    return quantitydifferencevsoriginal;
   }
 
-  public void setShortFallPrice(Double shortFallPrice) {
-    this.shortFallPrice = shortFallPrice;
+  public void setQuantitydifferencevsoriginal(Double quantitydifferencevsoriginal) {
+    this.quantitydifferencevsoriginal = quantitydifferencevsoriginal;
   }
 
-  public Posmirrorrow shortFallTAmount(Double shortFallTAmount) {
-    this.shortFallTAmount = shortFallTAmount;
+  public Posmirrorrow quantitydifferenceoriginal(Double quantitydifferenceoriginal) {
+    this.quantitydifferenceoriginal = quantitydifferenceoriginal;
     return this;
   }
 
    /**
-   * Cena manka [persistentní položka]
-   * @return shortFallTAmount
+   * původní rozdíl
+   * @return quantitydifferenceoriginal
   **/
-  @ApiModelProperty(example = "null", value = "Cena manka [persistentní položka]")
-  public Double getShortFallTAmount() {
-    return shortFallTAmount;
+  @ApiModelProperty(example = "null", value = "původní rozdíl")
+  public Double getQuantitydifferenceoriginal() {
+    return quantitydifferenceoriginal;
   }
 
-  public void setShortFallTAmount(Double shortFallTAmount) {
-    this.shortFallTAmount = shortFallTAmount;
+  public void setQuantitydifferenceoriginal(Double quantitydifferenceoriginal) {
+    this.quantitydifferenceoriginal = quantitydifferenceoriginal;
+  }
+
+  public Posmirrorrow shortfalltamountoriginal(Double shortfalltamountoriginal) {
+    this.shortfalltamountoriginal = shortfalltamountoriginal;
+    return this;
+  }
+
+   /**
+   * původní cena manka
+   * @return shortfalltamountoriginal
+  **/
+  @ApiModelProperty(example = "null", value = "původní cena manka")
+  public Double getShortfalltamountoriginal() {
+    return shortfalltamountoriginal;
+  }
+
+  public void setShortfalltamountoriginal(Double shortfalltamountoriginal) {
+    this.shortfalltamountoriginal = shortfalltamountoriginal;
+  }
+
+  public Posmirrorrow shortfalltamountvsoriginal(Double shortfalltamountvsoriginal) {
+    this.shortfalltamountvsoriginal = shortfalltamountvsoriginal;
+    return this;
+  }
+
+   /**
+   * změna ceny manka
+   * @return shortfalltamountvsoriginal
+  **/
+  @ApiModelProperty(example = "null", value = "změna ceny manka")
+  public Double getShortfalltamountvsoriginal() {
+    return shortfalltamountvsoriginal;
+  }
+
+  public void setShortfalltamountvsoriginal(Double shortfalltamountvsoriginal) {
+    this.shortfalltamountvsoriginal = shortfalltamountvsoriginal;
+  }
+
+  public Posmirrorrow quantitydifference(Double quantitydifference) {
+    this.quantitydifference = quantitydifference;
+    return this;
+  }
+
+   /**
+   * rozdíl
+   * @return quantitydifference
+  **/
+  @ApiModelProperty(example = "null", value = "rozdíl")
+  public Double getQuantitydifference() {
+    return quantitydifference;
+  }
+
+  public void setQuantitydifference(Double quantitydifference) {
+    this.quantitydifference = quantitydifference;
+  }
+
+  public Posmirrorrow shortfallprice(Double shortfallprice) {
+    this.shortfallprice = shortfallprice;
+    return this;
+  }
+
+   /**
+   * prodejní cena u manka [persistentní položka]
+   * @return shortfallprice
+  **/
+  @ApiModelProperty(example = "null", value = "prodejní cena u manka [persistentní položka]")
+  public Double getShortfallprice() {
+    return shortfallprice;
+  }
+
+  public void setShortfallprice(Double shortfallprice) {
+    this.shortfallprice = shortfallprice;
+  }
+
+  public Posmirrorrow shortfalltamount(Double shortfalltamount) {
+    this.shortfalltamount = shortfalltamount;
+    return this;
+  }
+
+   /**
+   * cena manka [persistentní položka]
+   * @return shortfalltamount
+  **/
+  @ApiModelProperty(example = "null", value = "cena manka [persistentní položka]")
+  public Double getShortfalltamount() {
+    return shortfalltamount;
+  }
+
+  public void setShortfalltamount(Double shortfalltamount) {
+    this.shortfalltamount = shortfalltamount;
   }
 
   public Posmirrorrow text(String text) {
@@ -423,10 +468,10 @@ public class Posmirrorrow   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return text
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getText() {
     return text;
   }
@@ -435,22 +480,22 @@ public class Posmirrorrow   {
     this.text = text;
   }
 
-  public Posmirrorrow shortFallExcluded(Boolean shortFallExcluded) {
-    this.shortFallExcluded = shortFallExcluded;
+  public Posmirrorrow shortfallexcluded(Boolean shortfallexcluded) {
+    this.shortfallexcluded = shortfallexcluded;
     return this;
   }
 
    /**
-   * Vyjmuto z tržeb [persistentní položka]
-   * @return shortFallExcluded
+   * vyjmuto z tržeb [persistentní položka]
+   * @return shortfallexcluded
   **/
-  @ApiModelProperty(example = "null", value = "Vyjmuto z tržeb [persistentní položka]")
-  public Boolean getShortFallExcluded() {
-    return shortFallExcluded;
+  @ApiModelProperty(example = "null", value = "vyjmuto z tržeb [persistentní položka]")
+  public Boolean getShortfallexcluded() {
+    return shortfallexcluded;
   }
 
-  public void setShortFallExcluded(Boolean shortFallExcluded) {
-    this.shortFallExcluded = shortFallExcluded;
+  public void setShortfallexcluded(Boolean shortfallexcluded) {
+    this.shortfallexcluded = shortfallexcluded;
   }
 
 
@@ -463,33 +508,33 @@ public class Posmirrorrow   {
       return false;
     }
     Posmirrorrow posmirrorrow = (Posmirrorrow) o;
-    return Objects.equals(this.displayName, posmirrorrow.displayName) &&
-        Objects.equals(this.ID, posmirrorrow.ID) &&
-        Objects.equals(this.classID, posmirrorrow.classID) &&
-        Objects.equals(this.objVersion, posmirrorrow.objVersion) &&
-        Objects.equals(this.parentID, posmirrorrow.parentID) &&
-        Objects.equals(this.posIndex, posmirrorrow.posIndex) &&
-        Objects.equals(this.storeCardID, posmirrorrow.storeCardID) &&
-        Objects.equals(this.storeID, posmirrorrow.storeID) &&
-        Objects.equals(this.qUnit, posmirrorrow.qUnit) &&
-        Objects.equals(this.unitRate, posmirrorrow.unitRate) &&
-        Objects.equals(this.requestedQuantity, posmirrorrow.requestedQuantity) &&
-        Objects.equals(this.realQuantity, posmirrorrow.realQuantity) &&
-        Objects.equals(this.realQuantityOriginal, posmirrorrow.realQuantityOriginal) &&
-        Objects.equals(this.quantityDifferenceVSOriginal, posmirrorrow.quantityDifferenceVSOriginal) &&
-        Objects.equals(this.quantityDifferenceOriginal, posmirrorrow.quantityDifferenceOriginal) &&
-        Objects.equals(this.shortFallTAmountOriginal, posmirrorrow.shortFallTAmountOriginal) &&
-        Objects.equals(this.shortFallTAmountVSOriginal, posmirrorrow.shortFallTAmountVSOriginal) &&
-        Objects.equals(this.quantityDifference, posmirrorrow.quantityDifference) &&
-        Objects.equals(this.shortFallPrice, posmirrorrow.shortFallPrice) &&
-        Objects.equals(this.shortFallTAmount, posmirrorrow.shortFallTAmount) &&
+    return Objects.equals(this.displayname, posmirrorrow.displayname) &&
+        Objects.equals(this.id, posmirrorrow.id) &&
+        Objects.equals(this.classid, posmirrorrow.classid) &&
+        Objects.equals(this.objversion, posmirrorrow.objversion) &&
+        Objects.equals(this.parentId, posmirrorrow.parentId) &&
+        Objects.equals(this.posindex, posmirrorrow.posindex) &&
+        Objects.equals(this.storecardId, posmirrorrow.storecardId) &&
+        Objects.equals(this.storeId, posmirrorrow.storeId) &&
+        Objects.equals(this.qunit, posmirrorrow.qunit) &&
+        Objects.equals(this.unitrate, posmirrorrow.unitrate) &&
+        Objects.equals(this.requestedquantity, posmirrorrow.requestedquantity) &&
+        Objects.equals(this.realquantity, posmirrorrow.realquantity) &&
+        Objects.equals(this.realquantityoriginal, posmirrorrow.realquantityoriginal) &&
+        Objects.equals(this.quantitydifferencevsoriginal, posmirrorrow.quantitydifferencevsoriginal) &&
+        Objects.equals(this.quantitydifferenceoriginal, posmirrorrow.quantitydifferenceoriginal) &&
+        Objects.equals(this.shortfalltamountoriginal, posmirrorrow.shortfalltamountoriginal) &&
+        Objects.equals(this.shortfalltamountvsoriginal, posmirrorrow.shortfalltamountvsoriginal) &&
+        Objects.equals(this.quantitydifference, posmirrorrow.quantitydifference) &&
+        Objects.equals(this.shortfallprice, posmirrorrow.shortfallprice) &&
+        Objects.equals(this.shortfalltamount, posmirrorrow.shortfalltamount) &&
         Objects.equals(this.text, posmirrorrow.text) &&
-        Objects.equals(this.shortFallExcluded, posmirrorrow.shortFallExcluded);
+        Objects.equals(this.shortfallexcluded, posmirrorrow.shortfallexcluded);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, storeCardID, storeID, qUnit, unitRate, requestedQuantity, realQuantity, realQuantityOriginal, quantityDifferenceVSOriginal, quantityDifferenceOriginal, shortFallTAmountOriginal, shortFallTAmountVSOriginal, quantityDifference, shortFallPrice, shortFallTAmount, text, shortFallExcluded);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, storecardId, storeId, qunit, unitrate, requestedquantity, realquantity, realquantityoriginal, quantitydifferencevsoriginal, quantitydifferenceoriginal, shortfalltamountoriginal, shortfalltamountvsoriginal, quantitydifference, shortfallprice, shortfalltamount, text, shortfallexcluded);
   }
 
   @Override
@@ -497,28 +542,28 @@ public class Posmirrorrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posmirrorrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    requestedQuantity: ").append(toIndentedString(requestedQuantity)).append("\n");
-    sb.append("    realQuantity: ").append(toIndentedString(realQuantity)).append("\n");
-    sb.append("    realQuantityOriginal: ").append(toIndentedString(realQuantityOriginal)).append("\n");
-    sb.append("    quantityDifferenceVSOriginal: ").append(toIndentedString(quantityDifferenceVSOriginal)).append("\n");
-    sb.append("    quantityDifferenceOriginal: ").append(toIndentedString(quantityDifferenceOriginal)).append("\n");
-    sb.append("    shortFallTAmountOriginal: ").append(toIndentedString(shortFallTAmountOriginal)).append("\n");
-    sb.append("    shortFallTAmountVSOriginal: ").append(toIndentedString(shortFallTAmountVSOriginal)).append("\n");
-    sb.append("    quantityDifference: ").append(toIndentedString(quantityDifference)).append("\n");
-    sb.append("    shortFallPrice: ").append(toIndentedString(shortFallPrice)).append("\n");
-    sb.append("    shortFallTAmount: ").append(toIndentedString(shortFallTAmount)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    requestedquantity: ").append(toIndentedString(requestedquantity)).append("\n");
+    sb.append("    realquantity: ").append(toIndentedString(realquantity)).append("\n");
+    sb.append("    realquantityoriginal: ").append(toIndentedString(realquantityoriginal)).append("\n");
+    sb.append("    quantitydifferencevsoriginal: ").append(toIndentedString(quantitydifferencevsoriginal)).append("\n");
+    sb.append("    quantitydifferenceoriginal: ").append(toIndentedString(quantitydifferenceoriginal)).append("\n");
+    sb.append("    shortfalltamountoriginal: ").append(toIndentedString(shortfalltamountoriginal)).append("\n");
+    sb.append("    shortfalltamountvsoriginal: ").append(toIndentedString(shortfalltamountvsoriginal)).append("\n");
+    sb.append("    quantitydifference: ").append(toIndentedString(quantitydifference)).append("\n");
+    sb.append("    shortfallprice: ").append(toIndentedString(shortfallprice)).append("\n");
+    sb.append("    shortfalltamount: ").append(toIndentedString(shortfalltamount)).append("\n");
     sb.append("    text: ").append(toIndentedString(text)).append("\n");
-    sb.append("    shortFallExcluded: ").append(toIndentedString(shortFallExcluded)).append("\n");
+    sb.append("    shortfallexcluded: ").append(toIndentedString(shortfallexcluded)).append("\n");
     sb.append("}");
     return sb.toString();
   }

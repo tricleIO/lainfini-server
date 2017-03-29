@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,297 +35,342 @@ import java.util.Objects;
 /**
  * Maininvprotocol
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Maininvprotocol   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("DateOfEnd$DATE")
-  private DateTime dateOfEndDATE = null;
+  @SerializedName("dateofend$date")
+  private DateTime dateofenddate = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("Closed")
+  @SerializedName("closed")
   private Boolean closed = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("StartingLogistic")
-  private Boolean startingLogistic = null;
+  @SerializedName("startinglogistic")
+  private Boolean startinglogistic = null;
 
-  @SerializedName("InventoryType")
-  private Integer inventoryType = null;
+  @SerializedName("inventorytype")
+  private Integer inventorytype = null;
 
-  @SerializedName("InventoryTypeDesc")
-  private String inventoryTypeDesc = null;
+  @SerializedName("inventorytypedesc")
+  private String inventorytypedesc = null;
 
-  @SerializedName("AddRowsFromPIP")
-  private Boolean addRowsFromPIP = null;
+  @SerializedName("addrowsfrompip")
+  private Boolean addrowsfrompip = null;
 
-  @SerializedName("StartedAt$DATE")
-  private DateTime startedAtDATE = null;
+  @SerializedName("startedat$date")
+  private DateTime startedatdate = null;
 
-  @SerializedName("Started")
+  @SerializedName("started")
   private Boolean started = null;
+
+  public Maininvprotocol displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
   }
 
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Maininvprotocol docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Maininvprotocol id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Maininvprotocol periodID(String periodID) {
-    this.periodID = periodID;
+  public Maininvprotocol classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Maininvprotocol ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Maininvprotocol objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Maininvprotocol docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Maininvprotocol docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Maininvprotocol createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Maininvprotocol periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Maininvprotocol correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Maininvprotocol ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Maininvprotocol newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Maininvprotocol docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Maininvprotocol newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Maininvprotocol createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Maininvprotocol dateOfEndDATE(DateTime dateOfEndDATE) {
-    this.dateOfEndDATE = dateOfEndDATE;
+  public Maininvprotocol correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Rozhodné datum inventury [persistentní položka]
-   * @return dateOfEndDATE
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Rozhodné datum inventury [persistentní položka]")
-  public DateTime getDateOfEndDATE() {
-    return dateOfEndDATE;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setDateOfEndDATE(DateTime dateOfEndDATE) {
-    this.dateOfEndDATE = dateOfEndDATE;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Maininvprotocol storeID(String storeID) {
-    this.storeID = storeID;
+  public Maininvprotocol newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
+  }
+
+  public Maininvprotocol newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
+    return this;
   }
 
    /**
-   * Ukončen [persistentní položka]
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
+  **/
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
+  }
+
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
+  }
+
+  public Maininvprotocol dateofenddate(DateTime dateofenddate) {
+    this.dateofenddate = dateofenddate;
+    return this;
+  }
+
+   /**
+   * rozhodné datum inventury [persistentní položka]
+   * @return dateofenddate
+  **/
+  @ApiModelProperty(example = "null", value = "rozhodné datum inventury [persistentní položka]")
+  public DateTime getDateofenddate() {
+    return dateofenddate;
+  }
+
+  public void setDateofenddate(DateTime dateofenddate) {
+    this.dateofenddate = dateofenddate;
+  }
+
+  public Maininvprotocol storeId(String storeId) {
+    this.storeId = storeId;
+    return this;
+  }
+
+   /**
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
+  **/
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
+  }
+
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
+  }
+
+  public Maininvprotocol closed(Boolean closed) {
+    this.closed = closed;
+    return this;
+  }
+
+   /**
+   * ukončen [persistentní položka]
    * @return closed
   **/
-  @ApiModelProperty(example = "null", value = "Ukončen [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "ukončen [persistentní položka]")
   public Boolean getClosed() {
     return closed;
+  }
+
+  public void setClosed(Boolean closed) {
+    this.closed = closed;
   }
 
   public Maininvprotocol description(String description) {
@@ -334,10 +379,10 @@ public class Maininvprotocol   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -346,76 +391,94 @@ public class Maininvprotocol   {
     this.description = description;
   }
 
-  public Maininvprotocol startingLogistic(Boolean startingLogistic) {
-    this.startingLogistic = startingLogistic;
+  public Maininvprotocol startinglogistic(Boolean startinglogistic) {
+    this.startinglogistic = startinglogistic;
     return this;
   }
 
    /**
-   * Zahájení polohování [persistentní položka]
-   * @return startingLogistic
+   * zahájení polohování [persistentní položka]
+   * @return startinglogistic
   **/
-  @ApiModelProperty(example = "null", value = "Zahájení polohování [persistentní položka]")
-  public Boolean getStartingLogistic() {
-    return startingLogistic;
+  @ApiModelProperty(example = "null", value = "zahájení polohování [persistentní položka]")
+  public Boolean getStartinglogistic() {
+    return startinglogistic;
   }
 
-  public void setStartingLogistic(Boolean startingLogistic) {
-    this.startingLogistic = startingLogistic;
+  public void setStartinglogistic(Boolean startinglogistic) {
+    this.startinglogistic = startinglogistic;
   }
 
-  public Maininvprotocol inventoryType(Integer inventoryType) {
-    this.inventoryType = inventoryType;
+  public Maininvprotocol inventorytype(Integer inventorytype) {
+    this.inventorytype = inventorytype;
     return this;
   }
 
    /**
-   * Typ inventury [persistentní položka]
-   * @return inventoryType
+   * typ inventury [persistentní položka]
+   * @return inventorytype
   **/
-  @ApiModelProperty(example = "null", value = "Typ inventury [persistentní položka]")
-  public Integer getInventoryType() {
-    return inventoryType;
+  @ApiModelProperty(example = "null", value = "typ inventury [persistentní položka]")
+  public Integer getInventorytype() {
+    return inventorytype;
   }
 
-  public void setInventoryType(Integer inventoryType) {
-    this.inventoryType = inventoryType;
+  public void setInventorytype(Integer inventorytype) {
+    this.inventorytype = inventorytype;
   }
 
-   /**
-   * Popis typu inventury
-   * @return inventoryTypeDesc
-  **/
-  @ApiModelProperty(example = "null", value = "Popis typu inventury")
-  public String getInventoryTypeDesc() {
-    return inventoryTypeDesc;
-  }
-
-  public Maininvprotocol addRowsFromPIP(Boolean addRowsFromPIP) {
-    this.addRowsFromPIP = addRowsFromPIP;
+  public Maininvprotocol inventorytypedesc(String inventorytypedesc) {
+    this.inventorytypedesc = inventorytypedesc;
     return this;
   }
 
    /**
-   * Přidávat řádky z DIP [persistentní položka]
-   * @return addRowsFromPIP
+   * popis typu inventury
+   * @return inventorytypedesc
   **/
-  @ApiModelProperty(example = "null", value = "Přidávat řádky z DIP [persistentní položka]")
-  public Boolean getAddRowsFromPIP() {
-    return addRowsFromPIP;
+  @ApiModelProperty(example = "null", value = "popis typu inventury")
+  public String getInventorytypedesc() {
+    return inventorytypedesc;
   }
 
-  public void setAddRowsFromPIP(Boolean addRowsFromPIP) {
-    this.addRowsFromPIP = addRowsFromPIP;
+  public void setInventorytypedesc(String inventorytypedesc) {
+    this.inventorytypedesc = inventorytypedesc;
+  }
+
+  public Maininvprotocol addrowsfrompip(Boolean addrowsfrompip) {
+    this.addrowsfrompip = addrowsfrompip;
+    return this;
   }
 
    /**
-   * Zahájení inventury [persistentní položka]
-   * @return startedAtDATE
+   * přidávat řádky z dip [persistentní položka]
+   * @return addrowsfrompip
   **/
-  @ApiModelProperty(example = "null", value = "Zahájení inventury [persistentní položka]")
-  public DateTime getStartedAtDATE() {
-    return startedAtDATE;
+  @ApiModelProperty(example = "null", value = "přidávat řádky z dip [persistentní položka]")
+  public Boolean getAddrowsfrompip() {
+    return addrowsfrompip;
+  }
+
+  public void setAddrowsfrompip(Boolean addrowsfrompip) {
+    this.addrowsfrompip = addrowsfrompip;
+  }
+
+  public Maininvprotocol startedatdate(DateTime startedatdate) {
+    this.startedatdate = startedatdate;
+    return this;
+  }
+
+   /**
+   * zahájení inventury [persistentní položka]
+   * @return startedatdate
+  **/
+  @ApiModelProperty(example = "null", value = "zahájení inventury [persistentní položka]")
+  public DateTime getStartedatdate() {
+    return startedatdate;
+  }
+
+  public void setStartedatdate(DateTime startedatdate) {
+    this.startedatdate = startedatdate;
   }
 
   public Maininvprotocol started(Boolean started) {
@@ -424,10 +487,10 @@ public class Maininvprotocol   {
   }
 
    /**
-   * Inventura zahájena
+   * inventura zahájena
    * @return started
   **/
-  @ApiModelProperty(example = "null", value = "Inventura zahájena")
+  @ApiModelProperty(example = "null", value = "inventura zahájena")
   public Boolean getStarted() {
     return started;
   }
@@ -446,33 +509,33 @@ public class Maininvprotocol   {
       return false;
     }
     Maininvprotocol maininvprotocol = (Maininvprotocol) o;
-    return Objects.equals(this.displayName, maininvprotocol.displayName) &&
-        Objects.equals(this.ID, maininvprotocol.ID) &&
-        Objects.equals(this.classID, maininvprotocol.classID) &&
-        Objects.equals(this.objVersion, maininvprotocol.objVersion) &&
-        Objects.equals(this.docQueueID, maininvprotocol.docQueueID) &&
-        Objects.equals(this.periodID, maininvprotocol.periodID) &&
-        Objects.equals(this.ordNumber, maininvprotocol.ordNumber) &&
-        Objects.equals(this.docDateDATE, maininvprotocol.docDateDATE) &&
-        Objects.equals(this.createdByID, maininvprotocol.createdByID) &&
-        Objects.equals(this.correctedByID, maininvprotocol.correctedByID) &&
-        Objects.equals(this.newRelatedType, maininvprotocol.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, maininvprotocol.newRelatedDocumentID) &&
-        Objects.equals(this.dateOfEndDATE, maininvprotocol.dateOfEndDATE) &&
-        Objects.equals(this.storeID, maininvprotocol.storeID) &&
+    return Objects.equals(this.displayname, maininvprotocol.displayname) &&
+        Objects.equals(this.id, maininvprotocol.id) &&
+        Objects.equals(this.classid, maininvprotocol.classid) &&
+        Objects.equals(this.objversion, maininvprotocol.objversion) &&
+        Objects.equals(this.docqueueId, maininvprotocol.docqueueId) &&
+        Objects.equals(this.periodId, maininvprotocol.periodId) &&
+        Objects.equals(this.ordnumber, maininvprotocol.ordnumber) &&
+        Objects.equals(this.docdatedate, maininvprotocol.docdatedate) &&
+        Objects.equals(this.createdbyId, maininvprotocol.createdbyId) &&
+        Objects.equals(this.correctedbyId, maininvprotocol.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, maininvprotocol.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, maininvprotocol.newrelateddocumentId) &&
+        Objects.equals(this.dateofenddate, maininvprotocol.dateofenddate) &&
+        Objects.equals(this.storeId, maininvprotocol.storeId) &&
         Objects.equals(this.closed, maininvprotocol.closed) &&
         Objects.equals(this.description, maininvprotocol.description) &&
-        Objects.equals(this.startingLogistic, maininvprotocol.startingLogistic) &&
-        Objects.equals(this.inventoryType, maininvprotocol.inventoryType) &&
-        Objects.equals(this.inventoryTypeDesc, maininvprotocol.inventoryTypeDesc) &&
-        Objects.equals(this.addRowsFromPIP, maininvprotocol.addRowsFromPIP) &&
-        Objects.equals(this.startedAtDATE, maininvprotocol.startedAtDATE) &&
+        Objects.equals(this.startinglogistic, maininvprotocol.startinglogistic) &&
+        Objects.equals(this.inventorytype, maininvprotocol.inventorytype) &&
+        Objects.equals(this.inventorytypedesc, maininvprotocol.inventorytypedesc) &&
+        Objects.equals(this.addrowsfrompip, maininvprotocol.addrowsfrompip) &&
+        Objects.equals(this.startedatdate, maininvprotocol.startedatdate) &&
         Objects.equals(this.started, maininvprotocol.started);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, dateOfEndDATE, storeID, closed, description, startingLogistic, inventoryType, inventoryTypeDesc, addRowsFromPIP, startedAtDATE, started);
+    return Objects.hash(displayname, id, classid, objversion, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, dateofenddate, storeId, closed, description, startinglogistic, inventorytype, inventorytypedesc, addrowsfrompip, startedatdate, started);
   }
 
   @Override
@@ -480,27 +543,27 @@ public class Maininvprotocol   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Maininvprotocol {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    dateOfEndDATE: ").append(toIndentedString(dateOfEndDATE)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    dateofenddate: ").append(toIndentedString(dateofenddate)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
     sb.append("    closed: ").append(toIndentedString(closed)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    startingLogistic: ").append(toIndentedString(startingLogistic)).append("\n");
-    sb.append("    inventoryType: ").append(toIndentedString(inventoryType)).append("\n");
-    sb.append("    inventoryTypeDesc: ").append(toIndentedString(inventoryTypeDesc)).append("\n");
-    sb.append("    addRowsFromPIP: ").append(toIndentedString(addRowsFromPIP)).append("\n");
-    sb.append("    startedAtDATE: ").append(toIndentedString(startedAtDATE)).append("\n");
+    sb.append("    startinglogistic: ").append(toIndentedString(startinglogistic)).append("\n");
+    sb.append("    inventorytype: ").append(toIndentedString(inventorytype)).append("\n");
+    sb.append("    inventorytypedesc: ").append(toIndentedString(inventorytypedesc)).append("\n");
+    sb.append("    addrowsfrompip: ").append(toIndentedString(addrowsfrompip)).append("\n");
+    sb.append("    startedatdate: ").append(toIndentedString(startedatdate)).append("\n");
     sb.append("    started: ").append(toIndentedString(started)).append("\n");
     sb.append("}");
     return sb.toString();

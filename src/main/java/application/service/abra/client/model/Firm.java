@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,345 +37,381 @@ import java.util.Objects;
 /**
  * Firm
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Firm   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Firmbankaccount> rows = new ArrayList<Firmbankaccount>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ResidenceAddress_ID")
-  private Firm residenceAddressID = null;
+  @SerializedName("residenceaddress_id")
+  private Firm residenceaddressId = null;
 
-  @SerializedName("OrgIdentNumber")
-  private String orgIdentNumber = null;
+  @SerializedName("orgidentnumber")
+  private String orgidentnumber = null;
 
-  @SerializedName("VATIdentNumber")
-  private String vATIdentNumber = null;
+  @SerializedName("vatidentnumber")
+  private String vatidentnumber = null;
 
-  @SerializedName("EORIIdentNumber")
-  private String eORIIdentNumber = null;
+  @SerializedName("eoriidentnumber")
+  private String eoriidentnumber = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("PriceList_ID")
-  private String priceListID = null;
+  @SerializedName("pricelist_id")
+  private String pricelistId = null;
 
-  @SerializedName("DueTerm")
-  private Integer dueTerm = null;
+  @SerializedName("dueterm")
+  private Integer dueterm = null;
 
-  @SerializedName("DealerCategory_ID")
-  private String dealerCategoryID = null;
+  @SerializedName("dealercategory_id")
+  private String dealercategoryId = null;
 
-  @SerializedName("DealerDiscount")
-  private Double dealerDiscount = null;
+  @SerializedName("dealerdiscount")
+  private Double dealerdiscount = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Comment")
+  @SerializedName("comment")
   private String comment = null;
 
-  @SerializedName("Credit")
+  @SerializedName("credit")
   private Double credit = null;
 
-  @SerializedName("CheckCredit")
-  private Boolean checkCredit = null;
+  @SerializedName("checkcredit")
+  private Boolean checkcredit = null;
 
-  @SerializedName("K0")
+  @SerializedName("k0")
   private String k0 = null;
 
-  @SerializedName("K1")
+  @SerializedName("k1")
   private String k1 = null;
 
-  @SerializedName("K2")
+  @SerializedName("k2")
   private String k2 = null;
 
-  @SerializedName("K3")
+  @SerializedName("k3")
   private String k3 = null;
 
-  @SerializedName("K4")
+  @SerializedName("k4")
   private String k4 = null;
 
-  @SerializedName("K5")
+  @SerializedName("k5")
   private String k5 = null;
 
-  @SerializedName("K6")
+  @SerializedName("k6")
   private String k6 = null;
 
-  @SerializedName("K7")
+  @SerializedName("k7")
   private String k7 = null;
 
-  @SerializedName("K8")
+  @SerializedName("k8")
   private String k8 = null;
 
-  @SerializedName("K9")
+  @SerializedName("k9")
   private String k9 = null;
 
-  @SerializedName("K10")
+  @SerializedName("k10")
   private String k10 = null;
 
-  @SerializedName("K11")
+  @SerializedName("k11")
   private String k11 = null;
 
-  @SerializedName("K12")
+  @SerializedName("k12")
   private String k12 = null;
 
-  @SerializedName("K13")
+  @SerializedName("k13")
   private String k13 = null;
 
-  @SerializedName("K14")
+  @SerializedName("k14")
   private String k14 = null;
 
-  @SerializedName("K15")
+  @SerializedName("k15")
   private String k15 = null;
 
-  @SerializedName("WWWAddress")
-  private String wWWAddress = null;
+  @SerializedName("wwwaddress")
+  private String wwwaddress = null;
 
-  @SerializedName("PrefixCode")
-  private String prefixCode = null;
+  @SerializedName("prefixcode")
+  private String prefixcode = null;
 
-  @SerializedName("BodyCode")
-  private String bodyCode = null;
+  @SerializedName("bodycode")
+  private String bodycode = null;
 
-  @SerializedName("SuffixCode")
-  private String suffixCode = null;
+  @SerializedName("suffixcode")
+  private String suffixcode = null;
 
-  @SerializedName("PenaltyPercent")
-  private Double penaltyPercent = null;
+  @SerializedName("penaltypercent")
+  private Double penaltypercent = null;
 
-  @SerializedName("FirmOffices")
-  private List<Firmoffice> firmOffices = new ArrayList<Firmoffice>();
+  @SerializedName("firmoffices")
+  private List<Firmoffice> firmoffices = new ArrayList<Firmoffice>();
 
-  @SerializedName("FirmNACEs")
-  private List<Firmnace> firmNACEs = new ArrayList<Firmnace>();
+  @SerializedName("firmnaces")
+  private List<Firmnace> firmnaces = new ArrayList<Firmnace>();
 
-  @SerializedName("CategoriesMetadata")
-  private List<Firmcategorymetadata> categoriesMetadata = new ArrayList<Firmcategorymetadata>();
+  @SerializedName("categoriesmetadata")
+  private List<Firmcategorymetadata> categoriesmetadata = new ArrayList<Firmcategorymetadata>();
 
-  @SerializedName("PaymentType_ID")
-  private String paymentTypeID = null;
+  @SerializedName("paymenttype_id")
+  private String paymenttypeId = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("Price_ID")
-  private String priceID = null;
+  @SerializedName("price_id")
+  private String priceId = null;
 
-  @SerializedName("NPTitle")
-  private String nPTitle = null;
+  @SerializedName("nptitle")
+  private String nptitle = null;
 
-  @SerializedName("NPResidencePermitNumber")
-  private String nPResidencePermitNumber = null;
+  @SerializedName("npresidencepermitnumber")
+  private String npresidencepermitnumber = null;
 
-  @SerializedName("NPBirthNumber")
-  private String nPBirthNumber = null;
+  @SerializedName("npbirthnumber")
+  private String npbirthnumber = null;
 
-  @SerializedName("NPSurname")
-  private String nPSurname = null;
+  @SerializedName("npsurname")
+  private String npsurname = null;
 
-  @SerializedName("NPForename")
-  private String nPForename = null;
+  @SerializedName("npforename")
+  private String npforename = null;
 
-  @SerializedName("IsRegistered")
-  private Boolean isRegistered = null;
+  @SerializedName("isregistered")
+  private Boolean isregistered = null;
 
-  @SerializedName("RegisterKeptAt")
-  private String registerKeptAt = null;
+  @SerializedName("registerkeptat")
+  private String registerkeptat = null;
 
-  @SerializedName("RegisterFileRef")
-  private String registerFileRef = null;
+  @SerializedName("registerfileref")
+  private String registerfileref = null;
 
-  @SerializedName("RegisterDate$DATE")
-  private DateTime registerDateDATE = null;
+  @SerializedName("registerdate$date")
+  private DateTime registerdatedate = null;
 
-  @SerializedName("PrefillDiscountKind")
-  private Boolean prefillDiscountKind = null;
+  @SerializedName("prefilldiscountkind")
+  private Boolean prefilldiscountkind = null;
 
-  @SerializedName("DealerDiscountKind")
-  private Integer dealerDiscountKind = null;
+  @SerializedName("dealerdiscountkind")
+  private Integer dealerdiscountkind = null;
 
-  @SerializedName("QuantityDiscountKind")
-  private Integer quantityDiscountKind = null;
+  @SerializedName("quantitydiscountkind")
+  private Integer quantitydiscountkind = null;
 
-  @SerializedName("CommunicationType_ID")
-  private String communicationTypeID = null;
+  @SerializedName("communicationtype_id")
+  private String communicationtypeId = null;
 
-  @SerializedName("AssortmentDiscounts")
-  private List<Firmassortmentdiscount> assortmentDiscounts = new ArrayList<Firmassortmentdiscount>();
+  @SerializedName("assortmentdiscounts")
+  private List<Firmassortmentdiscount> assortmentdiscounts = new ArrayList<Firmassortmentdiscount>();
 
-  @SerializedName("TAXIdentNumber")
-  private String tAXIdentNumber = null;
+  @SerializedName("taxidentnumber")
+  private String taxidentnumber = null;
 
-  @SerializedName("Pictures")
+  @SerializedName("pictures")
   private List<Firmpicture> pictures = new ArrayList<Firmpicture>();
 
-  @SerializedName("EInvoiceFormat")
-  private Integer eInvoiceFormat = null;
+  @SerializedName("einvoiceformat")
+  private Integer einvoiceformat = null;
 
-  @SerializedName("InvoicingDelivery")
-  private Integer invoicingDelivery = null;
+  @SerializedName("invoicingdelivery")
+  private Integer invoicingdelivery = null;
 
-  @SerializedName("NewFirmMode")
-  private Integer newFirmMode = null;
+  @SerializedName("newfirmmode")
+  private Integer newfirmmode = null;
 
-  @SerializedName("ElectronicAddress_ID")
-  private Firm electronicAddressID = null;
+  @SerializedName("electronicaddress_id")
+  private Firm electronicaddressId = null;
 
-  @SerializedName("InitialFirmPerson_ID")
-  private String initialFirmPersonID = null;
+  @SerializedName("initialfirmperson_id")
+  private String initialfirmpersonId = null;
 
-  @SerializedName("InitialFirmPerson_FirstName")
-  private String initialFirmPersonFirstName = null;
+  @SerializedName("initialfirmperson_firstname")
+  private String initialfirmpersonFirstname = null;
 
-  @SerializedName("InitialFirmPerson_LastName")
-  private String initialFirmPersonLastName = null;
+  @SerializedName("initialfirmperson_lastname")
+  private String initialfirmpersonLastname = null;
 
-  @SerializedName("InitialFirmPerson_Title")
-  private String initialFirmPersonTitle = null;
+  @SerializedName("initialfirmperson_title")
+  private String initialfirmpersonTitle = null;
 
-  @SerializedName("InitialFirmPerson_Suffix")
-  private String initialFirmPersonSuffix = null;
+  @SerializedName("initialfirmperson_suffix")
+  private String initialfirmpersonSuffix = null;
 
-  @SerializedName("ElecPosAgreementRef")
-  private String elecPosAgreementRef = null;
+  @SerializedName("elecposagreementref")
+  private String elecposagreementref = null;
 
-  @SerializedName("MajorCorrection")
-  private Boolean majorCorrection = null;
+  @SerializedName("majorcorrection")
+  private Boolean majorcorrection = null;
 
-  @SerializedName("UnreliableStatus")
-  private Integer unreliableStatus = null;
+  @SerializedName("unreliablestatus")
+  private Integer unreliablestatus = null;
 
-  @SerializedName("UnreliableDate$DATE")
-  private DateTime unreliableDateDATE = null;
+  @SerializedName("unreliabledate$date")
+  private DateTime unreliabledatedate = null;
 
-  @SerializedName("UnreliableCheckDate$DATE")
-  private DateTime unreliableCheckDateDATE = null;
+  @SerializedName("unreliablecheckdate$date")
+  private DateTime unreliablecheckdatedate = null;
 
-  @SerializedName("UnreliableStatusAsText")
-  private String unreliableStatusAsText = null;
+  @SerializedName("unreliablestatusastext")
+  private String unreliablestatusastext = null;
 
-  @SerializedName("InsolvencyCheckResult")
-  private Integer insolvencyCheckResult = null;
+  @SerializedName("insolvencycheckresult")
+  private Integer insolvencycheckresult = null;
 
-  @SerializedName("InsolvencyCheckResultAsText")
-  private String insolvencyCheckResultAsText = null;
+  @SerializedName("insolvencycheckresultastext")
+  private String insolvencycheckresultastext = null;
 
-  @SerializedName("InsolvencyLastCheckDateTime$DATE")
-  private DateTime insolvencyLastCheckDateTimeDATE = null;
+  @SerializedName("insolvencylastcheckdatetime$date")
+  private DateTime insolvencylastcheckdatetimedate = null;
 
-  @SerializedName("ImportDataFromARESAt$DATE")
-  private DateTime importDataFromARESAtDATE = null;
+  @SerializedName("importdatafromaresat$date")
+  private DateTime importdatafromaresatdate = null;
 
-  @SerializedName("Picture_ID")
-  private Firm pictureID = null;
+  @SerializedName("picture_id")
+  private Firm pictureId = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("VATCountry_ID")
-  private String vATCountryID = null;
+  @SerializedName("vatcountry_id")
+  private String vatcountryId = null;
 
-  @SerializedName("AfterDueTerm")
-  private Integer afterDueTerm = null;
+  @SerializedName("afterdueterm")
+  private Integer afterdueterm = null;
 
-  @SerializedName("AfterDueTermEnabled")
-  private Boolean afterDueTermEnabled = null;
+  @SerializedName("afterduetermenabled")
+  private Boolean afterduetermenabled = null;
 
-  @SerializedName("EquityCapital_ID")
-  private String equityCapitalID = null;
+  @SerializedName("equitycapital_id")
+  private String equitycapitalId = null;
 
-  @SerializedName("Turnover_ID")
-  private String turnoverID = null;
+  @SerializedName("turnover_id")
+  private String turnoverId = null;
 
-  @SerializedName("Profit_ID")
-  private String profitID = null;
+  @SerializedName("profit_id")
+  private String profitId = null;
 
-  @SerializedName("EmployeeCount_ID")
-  private String employeeCountID = null;
+  @SerializedName("employeecount_id")
+  private String employeecountId = null;
 
-  @SerializedName("LegalStatus_ID")
-  private String legalStatusID = null;
+  @SerializedName("legalstatus_id")
+  private String legalstatusId = null;
 
-  @SerializedName("OwnershipType_ID")
-  private String ownershipTypeID = null;
+  @SerializedName("ownershiptype_id")
+  private String ownershiptypeId = null;
 
-  @SerializedName("CommercialsAgreement")
-  private Integer commercialsAgreement = null;
+  @SerializedName("commercialsagreement")
+  private Integer commercialsagreement = null;
 
-  @SerializedName("MainNACECode_ID")
-  private String mainNACECodeID = null;
+  @SerializedName("mainnacecode_id")
+  private String mainnacecodeId = null;
 
-  @SerializedName("FirmPersons")
-  private List<Firmperson> firmPersons = new ArrayList<Firmperson>();
+  @SerializedName("firmpersons")
+  private List<Firmperson> firmpersons = new ArrayList<Firmperson>();
 
-  @SerializedName("CreatedAt$DATE")
-  private DateTime createdAtDATE = null;
+  @SerializedName("createdat$date")
+  private DateTime createdatdate = null;
 
-  @SerializedName("CorrectedAt$DATE")
-  private DateTime correctedAtDATE = null;
+  @SerializedName("correctedat$date")
+  private DateTime correctedatdate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Firm displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Firm id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Firm classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Firm objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Firm rows(List<Firmbankaccount> rows) {
@@ -389,10 +425,10 @@ public class Firm   {
   }
 
    /**
-   * Bankovní účty; kolekce BO Bankovní účet firmy [nepersistentní položka]
+   * bankovní účty; kolekce bo bankovní účet firmy [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Bankovní účty; kolekce BO Bankovní účet firmy [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "bankovní účty; kolekce bo bankovní účet firmy [nepersistentní položka]")
   public List<Firmbankaccount> getRows() {
     return rows;
   }
@@ -407,10 +443,10 @@ public class Firm   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -425,10 +461,10 @@ public class Firm   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -443,10 +479,10 @@ public class Firm   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -455,166 +491,166 @@ public class Firm   {
     this.name = name;
   }
 
-  public Firm residenceAddressID(Firm residenceAddressID) {
-    this.residenceAddressID = residenceAddressID;
+  public Firm residenceaddressId(Firm residenceaddressId) {
+    this.residenceaddressId = residenceaddressId;
     return this;
   }
 
    /**
-   * Get residenceAddressID
-   * @return residenceAddressID
+   * Get residenceaddressId
+   * @return residenceaddressId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Firm getResidenceAddressID() {
-    return residenceAddressID;
+  public Firm getResidenceaddressId() {
+    return residenceaddressId;
   }
 
-  public void setResidenceAddressID(Firm residenceAddressID) {
-    this.residenceAddressID = residenceAddressID;
+  public void setResidenceaddressId(Firm residenceaddressId) {
+    this.residenceaddressId = residenceaddressId;
   }
 
-  public Firm orgIdentNumber(String orgIdentNumber) {
-    this.orgIdentNumber = orgIdentNumber;
+  public Firm orgidentnumber(String orgidentnumber) {
+    this.orgidentnumber = orgidentnumber;
     return this;
   }
 
    /**
-   * IČO [persistentní položka]
-   * @return orgIdentNumber
+   * iČo [persistentní položka]
+   * @return orgidentnumber
   **/
-  @ApiModelProperty(example = "null", value = "IČO [persistentní položka]")
-  public String getOrgIdentNumber() {
-    return orgIdentNumber;
+  @ApiModelProperty(example = "null", value = "iČo [persistentní položka]")
+  public String getOrgidentnumber() {
+    return orgidentnumber;
   }
 
-  public void setOrgIdentNumber(String orgIdentNumber) {
-    this.orgIdentNumber = orgIdentNumber;
+  public void setOrgidentnumber(String orgidentnumber) {
+    this.orgidentnumber = orgidentnumber;
   }
 
-  public Firm vATIdentNumber(String vATIdentNumber) {
-    this.vATIdentNumber = vATIdentNumber;
+  public Firm vatidentnumber(String vatidentnumber) {
+    this.vatidentnumber = vatidentnumber;
     return this;
   }
 
    /**
-   * DIČ [persistentní položka]
-   * @return vATIdentNumber
+   * diČ [persistentní položka]
+   * @return vatidentnumber
   **/
-  @ApiModelProperty(example = "null", value = "DIČ [persistentní položka]")
-  public String getVATIdentNumber() {
-    return vATIdentNumber;
+  @ApiModelProperty(example = "null", value = "diČ [persistentní položka]")
+  public String getVatidentnumber() {
+    return vatidentnumber;
   }
 
-  public void setVATIdentNumber(String vATIdentNumber) {
-    this.vATIdentNumber = vATIdentNumber;
+  public void setVatidentnumber(String vatidentnumber) {
+    this.vatidentnumber = vatidentnumber;
   }
 
-  public Firm eORIIdentNumber(String eORIIdentNumber) {
-    this.eORIIdentNumber = eORIIdentNumber;
+  public Firm eoriidentnumber(String eoriidentnumber) {
+    this.eoriidentnumber = eoriidentnumber;
     return this;
   }
 
    /**
-   * Číslo EORI [persistentní položka]
-   * @return eORIIdentNumber
+   * Číslo eori [persistentní položka]
+   * @return eoriidentnumber
   **/
-  @ApiModelProperty(example = "null", value = "Číslo EORI [persistentní položka]")
-  public String getEORIIdentNumber() {
-    return eORIIdentNumber;
+  @ApiModelProperty(example = "null", value = "Číslo eori [persistentní položka]")
+  public String getEoriidentnumber() {
+    return eoriidentnumber;
   }
 
-  public void setEORIIdentNumber(String eORIIdentNumber) {
-    this.eORIIdentNumber = eORIIdentNumber;
+  public void setEoriidentnumber(String eoriidentnumber) {
+    this.eoriidentnumber = eoriidentnumber;
   }
 
-  public Firm firmID(String firmID) {
-    this.firmID = firmID;
+  public Firm firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Aktuální záznam; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * aktuální záznam; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Aktuální záznam; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "aktuální záznam; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Firm priceListID(String priceListID) {
-    this.priceListID = priceListID;
+  public Firm pricelistId(String pricelistId) {
+    this.pricelistId = pricelistId;
     return this;
   }
 
    /**
-   * Ceník; ID objektu Ceník [persistentní položka]
-   * @return priceListID
+   * ceník; id objektu ceník [persistentní položka]
+   * @return pricelistId
   **/
-  @ApiModelProperty(example = "null", value = "Ceník; ID objektu Ceník [persistentní položka]")
-  public String getPriceListID() {
-    return priceListID;
+  @ApiModelProperty(example = "null", value = "ceník; id objektu ceník [persistentní položka]")
+  public String getPricelistId() {
+    return pricelistId;
   }
 
-  public void setPriceListID(String priceListID) {
-    this.priceListID = priceListID;
+  public void setPricelistId(String pricelistId) {
+    this.pricelistId = pricelistId;
   }
 
-  public Firm dueTerm(Integer dueTerm) {
-    this.dueTerm = dueTerm;
+  public Firm dueterm(Integer dueterm) {
+    this.dueterm = dueterm;
     return this;
   }
 
    /**
-   * Splatnost [persistentní položka]
-   * @return dueTerm
+   * splatnost [persistentní položka]
+   * @return dueterm
   **/
-  @ApiModelProperty(example = "null", value = "Splatnost [persistentní položka]")
-  public Integer getDueTerm() {
-    return dueTerm;
+  @ApiModelProperty(example = "null", value = "splatnost [persistentní položka]")
+  public Integer getDueterm() {
+    return dueterm;
   }
 
-  public void setDueTerm(Integer dueTerm) {
-    this.dueTerm = dueTerm;
+  public void setDueterm(Integer dueterm) {
+    this.dueterm = dueterm;
   }
 
-  public Firm dealerCategoryID(String dealerCategoryID) {
-    this.dealerCategoryID = dealerCategoryID;
+  public Firm dealercategoryId(String dealercategoryId) {
+    this.dealercategoryId = dealercategoryId;
     return this;
   }
 
    /**
-   * Dealerská třída; ID objektu Dealerská třída [persistentní položka]
-   * @return dealerCategoryID
+   * dealerská třída; id objektu dealerská třída [persistentní položka]
+   * @return dealercategoryId
   **/
-  @ApiModelProperty(example = "null", value = "Dealerská třída; ID objektu Dealerská třída [persistentní položka]")
-  public String getDealerCategoryID() {
-    return dealerCategoryID;
+  @ApiModelProperty(example = "null", value = "dealerská třída; id objektu dealerská třída [persistentní položka]")
+  public String getDealercategoryId() {
+    return dealercategoryId;
   }
 
-  public void setDealerCategoryID(String dealerCategoryID) {
-    this.dealerCategoryID = dealerCategoryID;
+  public void setDealercategoryId(String dealercategoryId) {
+    this.dealercategoryId = dealercategoryId;
   }
 
-  public Firm dealerDiscount(Double dealerDiscount) {
-    this.dealerDiscount = dealerDiscount;
+  public Firm dealerdiscount(Double dealerdiscount) {
+    this.dealerdiscount = dealerdiscount;
     return this;
   }
 
    /**
-   * Dealerská sleva [persistentní položka]
-   * @return dealerDiscount
+   * dealerská sleva [persistentní položka]
+   * @return dealerdiscount
   **/
-  @ApiModelProperty(example = "null", value = "Dealerská sleva [persistentní položka]")
-  public Double getDealerDiscount() {
-    return dealerDiscount;
+  @ApiModelProperty(example = "null", value = "dealerská sleva [persistentní položka]")
+  public Double getDealerdiscount() {
+    return dealerdiscount;
   }
 
-  public void setDealerDiscount(Double dealerDiscount) {
-    this.dealerDiscount = dealerDiscount;
+  public void setDealerdiscount(Double dealerdiscount) {
+    this.dealerdiscount = dealerdiscount;
   }
 
   public Firm note(String note) {
@@ -623,10 +659,10 @@ public class Firm   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -641,10 +677,10 @@ public class Firm   {
   }
 
    /**
-   * Poznámka
+   * poznámka
    * @return comment
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka")
+  @ApiModelProperty(example = "null", value = "poznámka")
   public String getComment() {
     return comment;
   }
@@ -659,10 +695,10 @@ public class Firm   {
   }
 
    /**
-   * Kredit [persistentní položka]
+   * kredit [persistentní položka]
    * @return credit
   **/
-  @ApiModelProperty(example = "null", value = "Kredit [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kredit [persistentní položka]")
   public Double getCredit() {
     return credit;
   }
@@ -671,22 +707,22 @@ public class Firm   {
     this.credit = credit;
   }
 
-  public Firm checkCredit(Boolean checkCredit) {
-    this.checkCredit = checkCredit;
+  public Firm checkcredit(Boolean checkcredit) {
+    this.checkcredit = checkcredit;
     return this;
   }
 
    /**
-   * Sledovat kredit [persistentní položka]
-   * @return checkCredit
+   * sledovat kredit [persistentní položka]
+   * @return checkcredit
   **/
-  @ApiModelProperty(example = "null", value = "Sledovat kredit [persistentní položka]")
-  public Boolean getCheckCredit() {
-    return checkCredit;
+  @ApiModelProperty(example = "null", value = "sledovat kredit [persistentní položka]")
+  public Boolean getCheckcredit() {
+    return checkcredit;
   }
 
-  public void setCheckCredit(Boolean checkCredit) {
-    this.checkCredit = checkCredit;
+  public void setCheckcredit(Boolean checkcredit) {
+    this.checkcredit = checkcredit;
   }
 
   public Firm k0(String k0) {
@@ -695,10 +731,10 @@ public class Firm   {
   }
 
    /**
-   * Klíč 0 [persistentní položka]
+   * klíč 0 [persistentní položka]
    * @return k0
   **/
-  @ApiModelProperty(example = "null", value = "Klíč 0 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "klíč 0 [persistentní položka]")
   public String getK0() {
     return k0;
   }
@@ -713,10 +749,10 @@ public class Firm   {
   }
 
    /**
-   * Klíč 1 [persistentní položka]
+   * klíč 1 [persistentní položka]
    * @return k1
   **/
-  @ApiModelProperty(example = "null", value = "Klíč 1 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "klíč 1 [persistentní položka]")
   public String getK1() {
     return k1;
   }
@@ -731,10 +767,10 @@ public class Firm   {
   }
 
    /**
-   * Klíč 2 [persistentní položka]
+   * klíč 2 [persistentní položka]
    * @return k2
   **/
-  @ApiModelProperty(example = "null", value = "Klíč 2 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "klíč 2 [persistentní položka]")
   public String getK2() {
     return k2;
   }
@@ -749,10 +785,10 @@ public class Firm   {
   }
 
    /**
-   * Klíč 3 [persistentní položka]
+   * klíč 3 [persistentní položka]
    * @return k3
   **/
-  @ApiModelProperty(example = "null", value = "Klíč 3 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "klíč 3 [persistentní položka]")
   public String getK3() {
     return k3;
   }
@@ -767,10 +803,10 @@ public class Firm   {
   }
 
    /**
-   * Klíč 4 [persistentní položka]
+   * klíč 4 [persistentní položka]
    * @return k4
   **/
-  @ApiModelProperty(example = "null", value = "Klíč 4 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "klíč 4 [persistentní položka]")
   public String getK4() {
     return k4;
   }
@@ -785,10 +821,10 @@ public class Firm   {
   }
 
    /**
-   * Klíč 5 [persistentní položka]
+   * klíč 5 [persistentní položka]
    * @return k5
   **/
-  @ApiModelProperty(example = "null", value = "Klíč 5 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "klíč 5 [persistentní položka]")
   public String getK5() {
     return k5;
   }
@@ -803,10 +839,10 @@ public class Firm   {
   }
 
    /**
-   * Klíč 6 [persistentní položka]
+   * klíč 6 [persistentní položka]
    * @return k6
   **/
-  @ApiModelProperty(example = "null", value = "Klíč 6 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "klíč 6 [persistentní položka]")
   public String getK6() {
     return k6;
   }
@@ -821,10 +857,10 @@ public class Firm   {
   }
 
    /**
-   * Klíč 7 [persistentní položka]
+   * klíč 7 [persistentní položka]
    * @return k7
   **/
-  @ApiModelProperty(example = "null", value = "Klíč 7 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "klíč 7 [persistentní položka]")
   public String getK7() {
     return k7;
   }
@@ -839,10 +875,10 @@ public class Firm   {
   }
 
    /**
-   * Klíč 8 [persistentní položka]
+   * klíč 8 [persistentní položka]
    * @return k8
   **/
-  @ApiModelProperty(example = "null", value = "Klíč 8 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "klíč 8 [persistentní položka]")
   public String getK8() {
     return k8;
   }
@@ -857,10 +893,10 @@ public class Firm   {
   }
 
    /**
-   * Klíč 9 [persistentní položka]
+   * klíč 9 [persistentní položka]
    * @return k9
   **/
-  @ApiModelProperty(example = "null", value = "Klíč 9 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "klíč 9 [persistentní položka]")
   public String getK9() {
     return k9;
   }
@@ -875,10 +911,10 @@ public class Firm   {
   }
 
    /**
-   * Klíč 10 [persistentní položka]
+   * klíč 10 [persistentní položka]
    * @return k10
   **/
-  @ApiModelProperty(example = "null", value = "Klíč 10 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "klíč 10 [persistentní položka]")
   public String getK10() {
     return k10;
   }
@@ -893,10 +929,10 @@ public class Firm   {
   }
 
    /**
-   * Klíč 11 [persistentní položka]
+   * klíč 11 [persistentní položka]
    * @return k11
   **/
-  @ApiModelProperty(example = "null", value = "Klíč 11 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "klíč 11 [persistentní položka]")
   public String getK11() {
     return k11;
   }
@@ -911,10 +947,10 @@ public class Firm   {
   }
 
    /**
-   * Klíč 12 [persistentní položka]
+   * klíč 12 [persistentní položka]
    * @return k12
   **/
-  @ApiModelProperty(example = "null", value = "Klíč 12 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "klíč 12 [persistentní položka]")
   public String getK12() {
     return k12;
   }
@@ -929,10 +965,10 @@ public class Firm   {
   }
 
    /**
-   * Klíč 13 [persistentní položka]
+   * klíč 13 [persistentní položka]
    * @return k13
   **/
-  @ApiModelProperty(example = "null", value = "Klíč 13 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "klíč 13 [persistentní položka]")
   public String getK13() {
     return k13;
   }
@@ -947,10 +983,10 @@ public class Firm   {
   }
 
    /**
-   * Klíč 14 [persistentní položka]
+   * klíč 14 [persistentní položka]
    * @return k14
   **/
-  @ApiModelProperty(example = "null", value = "Klíč 14 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "klíč 14 [persistentní položka]")
   public String getK14() {
     return k14;
   }
@@ -965,10 +1001,10 @@ public class Firm   {
   }
 
    /**
-   * Klíč 15 [persistentní položka]
+   * klíč 15 [persistentní položka]
    * @return k15
   **/
-  @ApiModelProperty(example = "null", value = "Klíč 15 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "klíč 15 [persistentní položka]")
   public String getK15() {
     return k15;
   }
@@ -977,492 +1013,492 @@ public class Firm   {
     this.k15 = k15;
   }
 
-  public Firm wWWAddress(String wWWAddress) {
-    this.wWWAddress = wWWAddress;
+  public Firm wwwaddress(String wwwaddress) {
+    this.wwwaddress = wwwaddress;
     return this;
   }
 
    /**
-   * WWW adresa [persistentní položka]
-   * @return wWWAddress
+   * www adresa [persistentní položka]
+   * @return wwwaddress
   **/
-  @ApiModelProperty(example = "null", value = "WWW adresa [persistentní položka]")
-  public String getWWWAddress() {
-    return wWWAddress;
+  @ApiModelProperty(example = "null", value = "www adresa [persistentní položka]")
+  public String getWwwaddress() {
+    return wwwaddress;
   }
 
-  public void setWWWAddress(String wWWAddress) {
-    this.wWWAddress = wWWAddress;
+  public void setWwwaddress(String wwwaddress) {
+    this.wwwaddress = wwwaddress;
   }
 
-  public Firm prefixCode(String prefixCode) {
-    this.prefixCode = prefixCode;
+  public Firm prefixcode(String prefixcode) {
+    this.prefixcode = prefixcode;
     return this;
   }
 
    /**
-   * Prefix kódu
-   * @return prefixCode
+   * prefix kódu
+   * @return prefixcode
   **/
-  @ApiModelProperty(example = "null", value = "Prefix kódu")
-  public String getPrefixCode() {
-    return prefixCode;
+  @ApiModelProperty(example = "null", value = "prefix kódu")
+  public String getPrefixcode() {
+    return prefixcode;
   }
 
-  public void setPrefixCode(String prefixCode) {
-    this.prefixCode = prefixCode;
+  public void setPrefixcode(String prefixcode) {
+    this.prefixcode = prefixcode;
   }
 
-  public Firm bodyCode(String bodyCode) {
-    this.bodyCode = bodyCode;
+  public Firm bodycode(String bodycode) {
+    this.bodycode = bodycode;
     return this;
   }
 
    /**
    * Číslo kódu
-   * @return bodyCode
+   * @return bodycode
   **/
   @ApiModelProperty(example = "null", value = "Číslo kódu")
-  public String getBodyCode() {
-    return bodyCode;
+  public String getBodycode() {
+    return bodycode;
   }
 
-  public void setBodyCode(String bodyCode) {
-    this.bodyCode = bodyCode;
+  public void setBodycode(String bodycode) {
+    this.bodycode = bodycode;
   }
 
-  public Firm suffixCode(String suffixCode) {
-    this.suffixCode = suffixCode;
+  public Firm suffixcode(String suffixcode) {
+    this.suffixcode = suffixcode;
     return this;
   }
 
    /**
-   * Suffix kódu
-   * @return suffixCode
+   * suffix kódu
+   * @return suffixcode
   **/
-  @ApiModelProperty(example = "null", value = "Suffix kódu")
-  public String getSuffixCode() {
-    return suffixCode;
+  @ApiModelProperty(example = "null", value = "suffix kódu")
+  public String getSuffixcode() {
+    return suffixcode;
   }
 
-  public void setSuffixCode(String suffixCode) {
-    this.suffixCode = suffixCode;
+  public void setSuffixcode(String suffixcode) {
+    this.suffixcode = suffixcode;
   }
 
-  public Firm penaltyPercent(Double penaltyPercent) {
-    this.penaltyPercent = penaltyPercent;
+  public Firm penaltypercent(Double penaltypercent) {
+    this.penaltypercent = penaltypercent;
     return this;
   }
 
    /**
    * Úrok z prodlení [%] [persistentní položka]
-   * @return penaltyPercent
+   * @return penaltypercent
   **/
   @ApiModelProperty(example = "null", value = "Úrok z prodlení [%] [persistentní položka]")
-  public Double getPenaltyPercent() {
-    return penaltyPercent;
+  public Double getPenaltypercent() {
+    return penaltypercent;
   }
 
-  public void setPenaltyPercent(Double penaltyPercent) {
-    this.penaltyPercent = penaltyPercent;
+  public void setPenaltypercent(Double penaltypercent) {
+    this.penaltypercent = penaltypercent;
   }
 
-  public Firm firmOffices(List<Firmoffice> firmOffices) {
-    this.firmOffices = firmOffices;
+  public Firm firmoffices(List<Firmoffice> firmoffices) {
+    this.firmoffices = firmoffices;
     return this;
   }
 
-  public Firm addFirmOfficesItem(Firmoffice firmOfficesItem) {
-    this.firmOffices.add(firmOfficesItem);
-    return this;
-  }
-
-   /**
-   * Provozovny; kolekce BO Provozovna [nepersistentní položka]
-   * @return firmOffices
-  **/
-  @ApiModelProperty(example = "null", value = "Provozovny; kolekce BO Provozovna [nepersistentní položka]")
-  public List<Firmoffice> getFirmOffices() {
-    return firmOffices;
-  }
-
-  public void setFirmOffices(List<Firmoffice> firmOffices) {
-    this.firmOffices = firmOffices;
-  }
-
-  public Firm firmNACEs(List<Firmnace> firmNACEs) {
-    this.firmNACEs = firmNACEs;
-    return this;
-  }
-
-  public Firm addFirmNACEsItem(Firmnace firmNACEsItem) {
-    this.firmNACEs.add(firmNACEsItem);
+  public Firm addFirmofficesItem(Firmoffice firmofficesItem) {
+    this.firmoffices.add(firmofficesItem);
     return this;
   }
 
    /**
-   * Obory NACE; kolekce BO Obor činnosti NACE [nepersistentní položka]
-   * @return firmNACEs
+   * provozovny; kolekce bo provozovna [nepersistentní položka]
+   * @return firmoffices
   **/
-  @ApiModelProperty(example = "null", value = "Obory NACE; kolekce BO Obor činnosti NACE [nepersistentní položka]")
-  public List<Firmnace> getFirmNACEs() {
-    return firmNACEs;
+  @ApiModelProperty(example = "null", value = "provozovny; kolekce bo provozovna [nepersistentní položka]")
+  public List<Firmoffice> getFirmoffices() {
+    return firmoffices;
   }
 
-  public void setFirmNACEs(List<Firmnace> firmNACEs) {
-    this.firmNACEs = firmNACEs;
+  public void setFirmoffices(List<Firmoffice> firmoffices) {
+    this.firmoffices = firmoffices;
   }
 
-  public Firm categoriesMetadata(List<Firmcategorymetadata> categoriesMetadata) {
-    this.categoriesMetadata = categoriesMetadata;
+  public Firm firmnaces(List<Firmnace> firmnaces) {
+    this.firmnaces = firmnaces;
     return this;
   }
 
-  public Firm addCategoriesMetadataItem(Firmcategorymetadata categoriesMetadataItem) {
-    this.categoriesMetadata.add(categoriesMetadataItem);
-    return this;
-  }
-
-   /**
-   * Kategorizační metadata; kolekce BO Metadata kategorií [nepersistentní položka]
-   * @return categoriesMetadata
-  **/
-  @ApiModelProperty(example = "null", value = "Kategorizační metadata; kolekce BO Metadata kategorií [nepersistentní položka]")
-  public List<Firmcategorymetadata> getCategoriesMetadata() {
-    return categoriesMetadata;
-  }
-
-  public void setCategoriesMetadata(List<Firmcategorymetadata> categoriesMetadata) {
-    this.categoriesMetadata = categoriesMetadata;
-  }
-
-  public Firm paymentTypeID(String paymentTypeID) {
-    this.paymentTypeID = paymentTypeID;
+  public Firm addFirmnacesItem(Firmnace firmnacesItem) {
+    this.firmnaces.add(firmnacesItem);
     return this;
   }
 
    /**
-   * Způsob úhr.; ID objektu Způsob úhrady [persistentní položka]
-   * @return paymentTypeID
+   * obory nace; kolekce bo obor činnosti nace [nepersistentní položka]
+   * @return firmnaces
   **/
-  @ApiModelProperty(example = "null", value = "Způsob úhr.; ID objektu Způsob úhrady [persistentní položka]")
-  public String getPaymentTypeID() {
-    return paymentTypeID;
+  @ApiModelProperty(example = "null", value = "obory nace; kolekce bo obor činnosti nace [nepersistentní položka]")
+  public List<Firmnace> getFirmnaces() {
+    return firmnaces;
   }
 
-  public void setPaymentTypeID(String paymentTypeID) {
-    this.paymentTypeID = paymentTypeID;
+  public void setFirmnaces(List<Firmnace> firmnaces) {
+    this.firmnaces = firmnaces;
   }
 
-  public Firm currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Firm categoriesmetadata(List<Firmcategorymetadata> categoriesmetadata) {
+    this.categoriesmetadata = categoriesmetadata;
+    return this;
+  }
+
+  public Firm addCategoriesmetadataItem(Firmcategorymetadata categoriesmetadataItem) {
+    this.categoriesmetadata.add(categoriesmetadataItem);
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * kategorizační metadata; kolekce bo metadata kategorií [nepersistentní položka]
+   * @return categoriesmetadata
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "kategorizační metadata; kolekce bo metadata kategorií [nepersistentní položka]")
+  public List<Firmcategorymetadata> getCategoriesmetadata() {
+    return categoriesmetadata;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setCategoriesmetadata(List<Firmcategorymetadata> categoriesmetadata) {
+    this.categoriesmetadata = categoriesmetadata;
   }
 
-  public Firm priceID(String priceID) {
-    this.priceID = priceID;
+  public Firm paymenttypeId(String paymenttypeId) {
+    this.paymenttypeId = paymenttypeId;
     return this;
   }
 
    /**
-   * Typ ceny; ID objektu Definice ceny [persistentní položka]
-   * @return priceID
+   * způsob úhr.; id objektu způsob úhrady [persistentní položka]
+   * @return paymenttypeId
   **/
-  @ApiModelProperty(example = "null", value = "Typ ceny; ID objektu Definice ceny [persistentní položka]")
-  public String getPriceID() {
-    return priceID;
+  @ApiModelProperty(example = "null", value = "způsob úhr.; id objektu způsob úhrady [persistentní položka]")
+  public String getPaymenttypeId() {
+    return paymenttypeId;
   }
 
-  public void setPriceID(String priceID) {
-    this.priceID = priceID;
+  public void setPaymenttypeId(String paymenttypeId) {
+    this.paymenttypeId = paymenttypeId;
   }
 
-  public Firm nPTitle(String nPTitle) {
-    this.nPTitle = nPTitle;
+  public Firm currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Titul [persistentní položka]
-   * @return nPTitle
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Titul [persistentní položka]")
-  public String getNPTitle() {
-    return nPTitle;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setNPTitle(String nPTitle) {
-    this.nPTitle = nPTitle;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
-  public Firm nPResidencePermitNumber(String nPResidencePermitNumber) {
-    this.nPResidencePermitNumber = nPResidencePermitNumber;
+  public Firm priceId(String priceId) {
+    this.priceId = priceId;
+    return this;
+  }
+
+   /**
+   * typ ceny; id objektu definice ceny [persistentní položka]
+   * @return priceId
+  **/
+  @ApiModelProperty(example = "null", value = "typ ceny; id objektu definice ceny [persistentní položka]")
+  public String getPriceId() {
+    return priceId;
+  }
+
+  public void setPriceId(String priceId) {
+    this.priceId = priceId;
+  }
+
+  public Firm nptitle(String nptitle) {
+    this.nptitle = nptitle;
+    return this;
+  }
+
+   /**
+   * titul [persistentní položka]
+   * @return nptitle
+  **/
+  @ApiModelProperty(example = "null", value = "titul [persistentní položka]")
+  public String getNptitle() {
+    return nptitle;
+  }
+
+  public void setNptitle(String nptitle) {
+    this.nptitle = nptitle;
+  }
+
+  public Firm npresidencepermitnumber(String npresidencepermitnumber) {
+    this.npresidencepermitnumber = npresidencepermitnumber;
     return this;
   }
 
    /**
    * Číslo povolení k pobytu [persistentní položka]
-   * @return nPResidencePermitNumber
+   * @return npresidencepermitnumber
   **/
   @ApiModelProperty(example = "null", value = "Číslo povolení k pobytu [persistentní položka]")
-  public String getNPResidencePermitNumber() {
-    return nPResidencePermitNumber;
+  public String getNpresidencepermitnumber() {
+    return npresidencepermitnumber;
   }
 
-  public void setNPResidencePermitNumber(String nPResidencePermitNumber) {
-    this.nPResidencePermitNumber = nPResidencePermitNumber;
+  public void setNpresidencepermitnumber(String npresidencepermitnumber) {
+    this.npresidencepermitnumber = npresidencepermitnumber;
   }
 
-  public Firm nPBirthNumber(String nPBirthNumber) {
-    this.nPBirthNumber = nPBirthNumber;
+  public Firm npbirthnumber(String npbirthnumber) {
+    this.npbirthnumber = npbirthnumber;
     return this;
   }
 
    /**
-   * Rodné číslo [persistentní položka]
-   * @return nPBirthNumber
+   * rodné číslo [persistentní položka]
+   * @return npbirthnumber
   **/
-  @ApiModelProperty(example = "null", value = "Rodné číslo [persistentní položka]")
-  public String getNPBirthNumber() {
-    return nPBirthNumber;
+  @ApiModelProperty(example = "null", value = "rodné číslo [persistentní položka]")
+  public String getNpbirthnumber() {
+    return npbirthnumber;
   }
 
-  public void setNPBirthNumber(String nPBirthNumber) {
-    this.nPBirthNumber = nPBirthNumber;
+  public void setNpbirthnumber(String npbirthnumber) {
+    this.npbirthnumber = npbirthnumber;
   }
 
-  public Firm nPSurname(String nPSurname) {
-    this.nPSurname = nPSurname;
+  public Firm npsurname(String npsurname) {
+    this.npsurname = npsurname;
     return this;
   }
 
    /**
-   * Příjmení zaměstnavatele [persistentní položka]
-   * @return nPSurname
+   * příjmení zaměstnavatele [persistentní položka]
+   * @return npsurname
   **/
-  @ApiModelProperty(example = "null", value = "Příjmení zaměstnavatele [persistentní položka]")
-  public String getNPSurname() {
-    return nPSurname;
+  @ApiModelProperty(example = "null", value = "příjmení zaměstnavatele [persistentní položka]")
+  public String getNpsurname() {
+    return npsurname;
   }
 
-  public void setNPSurname(String nPSurname) {
-    this.nPSurname = nPSurname;
+  public void setNpsurname(String npsurname) {
+    this.npsurname = npsurname;
   }
 
-  public Firm nPForename(String nPForename) {
-    this.nPForename = nPForename;
+  public Firm npforename(String npforename) {
+    this.npforename = npforename;
     return this;
   }
 
    /**
-   * Jméno zaměstnavatele [persistentní položka]
-   * @return nPForename
+   * jméno zaměstnavatele [persistentní položka]
+   * @return npforename
   **/
-  @ApiModelProperty(example = "null", value = "Jméno zaměstnavatele [persistentní položka]")
-  public String getNPForename() {
-    return nPForename;
+  @ApiModelProperty(example = "null", value = "jméno zaměstnavatele [persistentní položka]")
+  public String getNpforename() {
+    return npforename;
   }
 
-  public void setNPForename(String nPForename) {
-    this.nPForename = nPForename;
+  public void setNpforename(String npforename) {
+    this.npforename = npforename;
   }
 
-  public Firm isRegistered(Boolean isRegistered) {
-    this.isRegistered = isRegistered;
+  public Firm isregistered(Boolean isregistered) {
+    this.isregistered = isregistered;
     return this;
   }
 
    /**
-   * Registrace [persistentní položka]
-   * @return isRegistered
+   * registrace [persistentní položka]
+   * @return isregistered
   **/
-  @ApiModelProperty(example = "null", value = "Registrace [persistentní položka]")
-  public Boolean getIsRegistered() {
-    return isRegistered;
+  @ApiModelProperty(example = "null", value = "registrace [persistentní položka]")
+  public Boolean getIsregistered() {
+    return isregistered;
   }
 
-  public void setIsRegistered(Boolean isRegistered) {
-    this.isRegistered = isRegistered;
+  public void setIsregistered(Boolean isregistered) {
+    this.isregistered = isregistered;
   }
 
-  public Firm registerKeptAt(String registerKeptAt) {
-    this.registerKeptAt = registerKeptAt;
+  public Firm registerkeptat(String registerkeptat) {
+    this.registerkeptat = registerkeptat;
     return this;
   }
 
    /**
-   * Registrace vedená u [persistentní položka]
-   * @return registerKeptAt
+   * registrace vedená u [persistentní položka]
+   * @return registerkeptat
   **/
-  @ApiModelProperty(example = "null", value = "Registrace vedená u [persistentní položka]")
-  public String getRegisterKeptAt() {
-    return registerKeptAt;
+  @ApiModelProperty(example = "null", value = "registrace vedená u [persistentní položka]")
+  public String getRegisterkeptat() {
+    return registerkeptat;
   }
 
-  public void setRegisterKeptAt(String registerKeptAt) {
-    this.registerKeptAt = registerKeptAt;
+  public void setRegisterkeptat(String registerkeptat) {
+    this.registerkeptat = registerkeptat;
   }
 
-  public Firm registerFileRef(String registerFileRef) {
-    this.registerFileRef = registerFileRef;
+  public Firm registerfileref(String registerfileref) {
+    this.registerfileref = registerfileref;
     return this;
   }
 
    /**
-   * Spis.zn.registrace [persistentní položka]
-   * @return registerFileRef
+   * spis.zn.registrace [persistentní položka]
+   * @return registerfileref
   **/
-  @ApiModelProperty(example = "null", value = "Spis.zn.registrace [persistentní položka]")
-  public String getRegisterFileRef() {
-    return registerFileRef;
+  @ApiModelProperty(example = "null", value = "spis.zn.registrace [persistentní položka]")
+  public String getRegisterfileref() {
+    return registerfileref;
   }
 
-  public void setRegisterFileRef(String registerFileRef) {
-    this.registerFileRef = registerFileRef;
+  public void setRegisterfileref(String registerfileref) {
+    this.registerfileref = registerfileref;
   }
 
-  public Firm registerDateDATE(DateTime registerDateDATE) {
-    this.registerDateDATE = registerDateDATE;
+  public Firm registerdatedate(DateTime registerdatedate) {
+    this.registerdatedate = registerdatedate;
     return this;
   }
 
    /**
-   * Datum zápisu [persistentní položka]
-   * @return registerDateDATE
+   * datum zápisu [persistentní položka]
+   * @return registerdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum zápisu [persistentní položka]")
-  public DateTime getRegisterDateDATE() {
-    return registerDateDATE;
+  @ApiModelProperty(example = "null", value = "datum zápisu [persistentní položka]")
+  public DateTime getRegisterdatedate() {
+    return registerdatedate;
   }
 
-  public void setRegisterDateDATE(DateTime registerDateDATE) {
-    this.registerDateDATE = registerDateDATE;
+  public void setRegisterdatedate(DateTime registerdatedate) {
+    this.registerdatedate = registerdatedate;
   }
 
-  public Firm prefillDiscountKind(Boolean prefillDiscountKind) {
-    this.prefillDiscountKind = prefillDiscountKind;
+  public Firm prefilldiscountkind(Boolean prefilldiscountkind) {
+    this.prefilldiscountkind = prefilldiscountkind;
     return this;
   }
 
    /**
-   * Předvyplnit typ slevy [persistentní položka]
-   * @return prefillDiscountKind
+   * předvyplnit typ slevy [persistentní položka]
+   * @return prefilldiscountkind
   **/
-  @ApiModelProperty(example = "null", value = "Předvyplnit typ slevy [persistentní položka]")
-  public Boolean getPrefillDiscountKind() {
-    return prefillDiscountKind;
+  @ApiModelProperty(example = "null", value = "předvyplnit typ slevy [persistentní položka]")
+  public Boolean getPrefilldiscountkind() {
+    return prefilldiscountkind;
   }
 
-  public void setPrefillDiscountKind(Boolean prefillDiscountKind) {
-    this.prefillDiscountKind = prefillDiscountKind;
+  public void setPrefilldiscountkind(Boolean prefilldiscountkind) {
+    this.prefilldiscountkind = prefilldiscountkind;
   }
 
-  public Firm dealerDiscountKind(Integer dealerDiscountKind) {
-    this.dealerDiscountKind = dealerDiscountKind;
+  public Firm dealerdiscountkind(Integer dealerdiscountkind) {
+    this.dealerdiscountkind = dealerdiscountkind;
     return this;
   }
 
    /**
-   * Typ dealerské slevy [persistentní položka]
-   * @return dealerDiscountKind
+   * typ dealerské slevy [persistentní položka]
+   * @return dealerdiscountkind
   **/
-  @ApiModelProperty(example = "null", value = "Typ dealerské slevy [persistentní položka]")
-  public Integer getDealerDiscountKind() {
-    return dealerDiscountKind;
+  @ApiModelProperty(example = "null", value = "typ dealerské slevy [persistentní položka]")
+  public Integer getDealerdiscountkind() {
+    return dealerdiscountkind;
   }
 
-  public void setDealerDiscountKind(Integer dealerDiscountKind) {
-    this.dealerDiscountKind = dealerDiscountKind;
+  public void setDealerdiscountkind(Integer dealerdiscountkind) {
+    this.dealerdiscountkind = dealerdiscountkind;
   }
 
-  public Firm quantityDiscountKind(Integer quantityDiscountKind) {
-    this.quantityDiscountKind = quantityDiscountKind;
+  public Firm quantitydiscountkind(Integer quantitydiscountkind) {
+    this.quantitydiscountkind = quantitydiscountkind;
     return this;
   }
 
    /**
-   * Typ množstevní slevy [persistentní položka]
-   * @return quantityDiscountKind
+   * typ množstevní slevy [persistentní položka]
+   * @return quantitydiscountkind
   **/
-  @ApiModelProperty(example = "null", value = "Typ množstevní slevy [persistentní položka]")
-  public Integer getQuantityDiscountKind() {
-    return quantityDiscountKind;
+  @ApiModelProperty(example = "null", value = "typ množstevní slevy [persistentní položka]")
+  public Integer getQuantitydiscountkind() {
+    return quantitydiscountkind;
   }
 
-  public void setQuantityDiscountKind(Integer quantityDiscountKind) {
-    this.quantityDiscountKind = quantityDiscountKind;
+  public void setQuantitydiscountkind(Integer quantitydiscountkind) {
+    this.quantitydiscountkind = quantitydiscountkind;
   }
 
-  public Firm communicationTypeID(String communicationTypeID) {
-    this.communicationTypeID = communicationTypeID;
+  public Firm communicationtypeId(String communicationtypeId) {
+    this.communicationtypeId = communicationtypeId;
     return this;
   }
 
    /**
-   * Způsob komunikace; ID objektu Způsob komunikace [persistentní položka]
-   * @return communicationTypeID
+   * způsob komunikace; id objektu způsob komunikace [persistentní položka]
+   * @return communicationtypeId
   **/
-  @ApiModelProperty(example = "null", value = "Způsob komunikace; ID objektu Způsob komunikace [persistentní položka]")
-  public String getCommunicationTypeID() {
-    return communicationTypeID;
+  @ApiModelProperty(example = "null", value = "způsob komunikace; id objektu způsob komunikace [persistentní položka]")
+  public String getCommunicationtypeId() {
+    return communicationtypeId;
   }
 
-  public void setCommunicationTypeID(String communicationTypeID) {
-    this.communicationTypeID = communicationTypeID;
+  public void setCommunicationtypeId(String communicationtypeId) {
+    this.communicationtypeId = communicationtypeId;
   }
 
-  public Firm assortmentDiscounts(List<Firmassortmentdiscount> assortmentDiscounts) {
-    this.assortmentDiscounts = assortmentDiscounts;
+  public Firm assortmentdiscounts(List<Firmassortmentdiscount> assortmentdiscounts) {
+    this.assortmentdiscounts = assortmentdiscounts;
     return this;
   }
 
-  public Firm addAssortmentDiscountsItem(Firmassortmentdiscount assortmentDiscountsItem) {
-    this.assortmentDiscounts.add(assortmentDiscountsItem);
-    return this;
-  }
-
-   /**
-   * Sortimentní slevy; kolekce BO Sortimentní sleva firmy [nepersistentní položka]
-   * @return assortmentDiscounts
-  **/
-  @ApiModelProperty(example = "null", value = "Sortimentní slevy; kolekce BO Sortimentní sleva firmy [nepersistentní položka]")
-  public List<Firmassortmentdiscount> getAssortmentDiscounts() {
-    return assortmentDiscounts;
-  }
-
-  public void setAssortmentDiscounts(List<Firmassortmentdiscount> assortmentDiscounts) {
-    this.assortmentDiscounts = assortmentDiscounts;
-  }
-
-  public Firm tAXIdentNumber(String tAXIdentNumber) {
-    this.tAXIdentNumber = tAXIdentNumber;
+  public Firm addAssortmentdiscountsItem(Firmassortmentdiscount assortmentdiscountsItem) {
+    this.assortmentdiscounts.add(assortmentdiscountsItem);
     return this;
   }
 
    /**
-   * IČD [persistentní položka]
-   * @return tAXIdentNumber
+   * sortimentní slevy; kolekce bo sortimentní sleva firmy [nepersistentní položka]
+   * @return assortmentdiscounts
   **/
-  @ApiModelProperty(example = "null", value = "IČD [persistentní položka]")
-  public String getTAXIdentNumber() {
-    return tAXIdentNumber;
+  @ApiModelProperty(example = "null", value = "sortimentní slevy; kolekce bo sortimentní sleva firmy [nepersistentní položka]")
+  public List<Firmassortmentdiscount> getAssortmentdiscounts() {
+    return assortmentdiscounts;
   }
 
-  public void setTAXIdentNumber(String tAXIdentNumber) {
-    this.tAXIdentNumber = tAXIdentNumber;
+  public void setAssortmentdiscounts(List<Firmassortmentdiscount> assortmentdiscounts) {
+    this.assortmentdiscounts = assortmentdiscounts;
+  }
+
+  public Firm taxidentnumber(String taxidentnumber) {
+    this.taxidentnumber = taxidentnumber;
+    return this;
+  }
+
+   /**
+   * iČd [persistentní položka]
+   * @return taxidentnumber
+  **/
+  @ApiModelProperty(example = "null", value = "iČd [persistentní položka]")
+  public String getTaxidentnumber() {
+    return taxidentnumber;
+  }
+
+  public void setTaxidentnumber(String taxidentnumber) {
+    this.taxidentnumber = taxidentnumber;
   }
 
   public Firm pictures(List<Firmpicture> pictures) {
@@ -1476,10 +1512,10 @@ public class Firm   {
   }
 
    /**
-   * Obrázky; kolekce BO Obrázek k firmě [nepersistentní položka]
+   * obrázky; kolekce bo obrázek k firmě [nepersistentní položka]
    * @return pictures
   **/
-  @ApiModelProperty(example = "null", value = "Obrázky; kolekce BO Obrázek k firmě [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "obrázky; kolekce bo obrázek k firmě [nepersistentní položka]")
   public List<Firmpicture> getPictures() {
     return pictures;
   }
@@ -1488,675 +1524,675 @@ public class Firm   {
     this.pictures = pictures;
   }
 
-  public Firm eInvoiceFormat(Integer eInvoiceFormat) {
-    this.eInvoiceFormat = eInvoiceFormat;
+  public Firm einvoiceformat(Integer einvoiceformat) {
+    this.einvoiceformat = einvoiceformat;
     return this;
   }
 
    /**
-   * Formát elektronických dokladů [persistentní položka]
-   * @return eInvoiceFormat
+   * formát elektronických dokladů [persistentní položka]
+   * @return einvoiceformat
   **/
-  @ApiModelProperty(example = "null", value = "Formát elektronických dokladů [persistentní položka]")
-  public Integer getEInvoiceFormat() {
-    return eInvoiceFormat;
+  @ApiModelProperty(example = "null", value = "formát elektronických dokladů [persistentní položka]")
+  public Integer getEinvoiceformat() {
+    return einvoiceformat;
   }
 
-  public void setEInvoiceFormat(Integer eInvoiceFormat) {
-    this.eInvoiceFormat = eInvoiceFormat;
+  public void setEinvoiceformat(Integer einvoiceformat) {
+    this.einvoiceformat = einvoiceformat;
   }
 
-  public Firm invoicingDelivery(Integer invoicingDelivery) {
-    this.invoicingDelivery = invoicingDelivery;
+  public Firm invoicingdelivery(Integer invoicingdelivery) {
+    this.invoicingdelivery = invoicingdelivery;
     return this;
   }
 
    /**
-   * Zpracování a odeslání el. dokladu [persistentní položka]
-   * @return invoicingDelivery
+   * zpracování a odeslání el. dokladu [persistentní položka]
+   * @return invoicingdelivery
   **/
-  @ApiModelProperty(example = "null", value = "Zpracování a odeslání el. dokladu [persistentní položka]")
-  public Integer getInvoicingDelivery() {
-    return invoicingDelivery;
+  @ApiModelProperty(example = "null", value = "zpracování a odeslání el. dokladu [persistentní položka]")
+  public Integer getInvoicingdelivery() {
+    return invoicingdelivery;
   }
 
-  public void setInvoicingDelivery(Integer invoicingDelivery) {
-    this.invoicingDelivery = invoicingDelivery;
+  public void setInvoicingdelivery(Integer invoicingdelivery) {
+    this.invoicingdelivery = invoicingdelivery;
   }
 
-  public Firm newFirmMode(Integer newFirmMode) {
-    this.newFirmMode = newFirmMode;
+  public Firm newfirmmode(Integer newfirmmode) {
+    this.newfirmmode = newfirmmode;
     return this;
   }
 
    /**
-   * Způsob zadávání nové firmy
-   * @return newFirmMode
+   * způsob zadávání nové firmy
+   * @return newfirmmode
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zadávání nové firmy")
-  public Integer getNewFirmMode() {
-    return newFirmMode;
+  @ApiModelProperty(example = "null", value = "způsob zadávání nové firmy")
+  public Integer getNewfirmmode() {
+    return newfirmmode;
   }
 
-  public void setNewFirmMode(Integer newFirmMode) {
-    this.newFirmMode = newFirmMode;
+  public void setNewfirmmode(Integer newfirmmode) {
+    this.newfirmmode = newfirmmode;
   }
 
-  public Firm electronicAddressID(Firm electronicAddressID) {
-    this.electronicAddressID = electronicAddressID;
+  public Firm electronicaddressId(Firm electronicaddressId) {
+    this.electronicaddressId = electronicaddressId;
     return this;
   }
 
    /**
-   * Get electronicAddressID
-   * @return electronicAddressID
-  **/
-  @ApiModelProperty(example = "null", value = "")
-  public Firm getElectronicAddressID() {
-    return electronicAddressID;
-  }
-
-  public void setElectronicAddressID(Firm electronicAddressID) {
-    this.electronicAddressID = electronicAddressID;
-  }
-
-  public Firm initialFirmPersonID(String initialFirmPersonID) {
-    this.initialFirmPersonID = initialFirmPersonID;
-    return this;
-  }
-
-   /**
-   * Výchozí osoba nové firmy; ID objektu Osoba ve firmě
-   * @return initialFirmPersonID
-  **/
-  @ApiModelProperty(example = "null", value = "Výchozí osoba nové firmy; ID objektu Osoba ve firmě")
-  public String getInitialFirmPersonID() {
-    return initialFirmPersonID;
-  }
-
-  public void setInitialFirmPersonID(String initialFirmPersonID) {
-    this.initialFirmPersonID = initialFirmPersonID;
-  }
-
-  public Firm initialFirmPersonFirstName(String initialFirmPersonFirstName) {
-    this.initialFirmPersonFirstName = initialFirmPersonFirstName;
-    return this;
-  }
-
-   /**
-   * Vých.osoba nové firmy - jméno
-   * @return initialFirmPersonFirstName
-  **/
-  @ApiModelProperty(example = "null", value = "Vých.osoba nové firmy - jméno")
-  public String getInitialFirmPersonFirstName() {
-    return initialFirmPersonFirstName;
-  }
-
-  public void setInitialFirmPersonFirstName(String initialFirmPersonFirstName) {
-    this.initialFirmPersonFirstName = initialFirmPersonFirstName;
-  }
-
-  public Firm initialFirmPersonLastName(String initialFirmPersonLastName) {
-    this.initialFirmPersonLastName = initialFirmPersonLastName;
-    return this;
-  }
-
-   /**
-   * Vých.os. nové firmy - příjmení
-   * @return initialFirmPersonLastName
-  **/
-  @ApiModelProperty(example = "null", value = "Vých.os. nové firmy - příjmení")
-  public String getInitialFirmPersonLastName() {
-    return initialFirmPersonLastName;
-  }
-
-  public void setInitialFirmPersonLastName(String initialFirmPersonLastName) {
-    this.initialFirmPersonLastName = initialFirmPersonLastName;
-  }
-
-  public Firm initialFirmPersonTitle(String initialFirmPersonTitle) {
-    this.initialFirmPersonTitle = initialFirmPersonTitle;
-    return this;
-  }
-
-   /**
-   * Vých.osoba nové firmy - titul
-   * @return initialFirmPersonTitle
-  **/
-  @ApiModelProperty(example = "null", value = "Vých.osoba nové firmy - titul")
-  public String getInitialFirmPersonTitle() {
-    return initialFirmPersonTitle;
-  }
-
-  public void setInitialFirmPersonTitle(String initialFirmPersonTitle) {
-    this.initialFirmPersonTitle = initialFirmPersonTitle;
-  }
-
-  public Firm initialFirmPersonSuffix(String initialFirmPersonSuffix) {
-    this.initialFirmPersonSuffix = initialFirmPersonSuffix;
-    return this;
-  }
-
-   /**
-   * Vých.os.nové firmy - titul za jménem
-   * @return initialFirmPersonSuffix
-  **/
-  @ApiModelProperty(example = "null", value = "Vých.os.nové firmy - titul za jménem")
-  public String getInitialFirmPersonSuffix() {
-    return initialFirmPersonSuffix;
-  }
-
-  public void setInitialFirmPersonSuffix(String initialFirmPersonSuffix) {
-    this.initialFirmPersonSuffix = initialFirmPersonSuffix;
-  }
-
-  public Firm elecPosAgreementRef(String elecPosAgreementRef) {
-    this.elecPosAgreementRef = elecPosAgreementRef;
-    return this;
-  }
-
-   /**
-   * Dohoda o el. zpracování dokladů [persistentní položka]
-   * @return elecPosAgreementRef
-  **/
-  @ApiModelProperty(example = "null", value = "Dohoda o el. zpracování dokladů [persistentní položka]")
-  public String getElecPosAgreementRef() {
-    return elecPosAgreementRef;
-  }
-
-  public void setElecPosAgreementRef(String elecPosAgreementRef) {
-    this.elecPosAgreementRef = elecPosAgreementRef;
-  }
-
-  public Firm majorCorrection(Boolean majorCorrection) {
-    this.majorCorrection = majorCorrection;
-    return this;
-  }
-
-   /**
-   * Zásadní oprava
-   * @return majorCorrection
-  **/
-  @ApiModelProperty(example = "null", value = "Zásadní oprava")
-  public Boolean getMajorCorrection() {
-    return majorCorrection;
-  }
-
-  public void setMajorCorrection(Boolean majorCorrection) {
-    this.majorCorrection = majorCorrection;
-  }
-
-  public Firm unreliableStatus(Integer unreliableStatus) {
-    this.unreliableStatus = unreliableStatus;
-    return this;
-  }
-
-   /**
-   * Status nespolehlivosti
-   * @return unreliableStatus
-  **/
-  @ApiModelProperty(example = "null", value = "Status nespolehlivosti")
-  public Integer getUnreliableStatus() {
-    return unreliableStatus;
-  }
-
-  public void setUnreliableStatus(Integer unreliableStatus) {
-    this.unreliableStatus = unreliableStatus;
-  }
-
-  public Firm unreliableDateDATE(DateTime unreliableDateDATE) {
-    this.unreliableDateDATE = unreliableDateDATE;
-    return this;
-  }
-
-   /**
-   * Datum zveřejnění nespolehlivosti plátce v registru plátců DPH
-   * @return unreliableDateDATE
-  **/
-  @ApiModelProperty(example = "null", value = "Datum zveřejnění nespolehlivosti plátce v registru plátců DPH")
-  public DateTime getUnreliableDateDATE() {
-    return unreliableDateDATE;
-  }
-
-  public void setUnreliableDateDATE(DateTime unreliableDateDATE) {
-    this.unreliableDateDATE = unreliableDateDATE;
-  }
-
-  public Firm unreliableCheckDateDATE(DateTime unreliableCheckDateDATE) {
-    this.unreliableCheckDateDATE = unreliableCheckDateDATE;
-    return this;
-  }
-
-   /**
-   * Datum kontroly nespolehlivosti
-   * @return unreliableCheckDateDATE
-  **/
-  @ApiModelProperty(example = "null", value = "Datum kontroly nespolehlivosti")
-  public DateTime getUnreliableCheckDateDATE() {
-    return unreliableCheckDateDATE;
-  }
-
-  public void setUnreliableCheckDateDATE(DateTime unreliableCheckDateDATE) {
-    this.unreliableCheckDateDATE = unreliableCheckDateDATE;
-  }
-
-  public Firm unreliableStatusAsText(String unreliableStatusAsText) {
-    this.unreliableStatusAsText = unreliableStatusAsText;
-    return this;
-  }
-
-   /**
-   * Status nespolehlivosti textově
-   * @return unreliableStatusAsText
-  **/
-  @ApiModelProperty(example = "null", value = "Status nespolehlivosti textově")
-  public String getUnreliableStatusAsText() {
-    return unreliableStatusAsText;
-  }
-
-  public void setUnreliableStatusAsText(String unreliableStatusAsText) {
-    this.unreliableStatusAsText = unreliableStatusAsText;
-  }
-
-  public Firm insolvencyCheckResult(Integer insolvencyCheckResult) {
-    this.insolvencyCheckResult = insolvencyCheckResult;
-    return this;
-  }
-
-   /**
-   * Stav insolvence
-   * @return insolvencyCheckResult
-  **/
-  @ApiModelProperty(example = "null", value = "Stav insolvence")
-  public Integer getInsolvencyCheckResult() {
-    return insolvencyCheckResult;
-  }
-
-  public void setInsolvencyCheckResult(Integer insolvencyCheckResult) {
-    this.insolvencyCheckResult = insolvencyCheckResult;
-  }
-
-  public Firm insolvencyCheckResultAsText(String insolvencyCheckResultAsText) {
-    this.insolvencyCheckResultAsText = insolvencyCheckResultAsText;
-    return this;
-  }
-
-   /**
-   * Stav insolvence textově
-   * @return insolvencyCheckResultAsText
-  **/
-  @ApiModelProperty(example = "null", value = "Stav insolvence textově")
-  public String getInsolvencyCheckResultAsText() {
-    return insolvencyCheckResultAsText;
-  }
-
-  public void setInsolvencyCheckResultAsText(String insolvencyCheckResultAsText) {
-    this.insolvencyCheckResultAsText = insolvencyCheckResultAsText;
-  }
-
-  public Firm insolvencyLastCheckDateTimeDATE(DateTime insolvencyLastCheckDateTimeDATE) {
-    this.insolvencyLastCheckDateTimeDATE = insolvencyLastCheckDateTimeDATE;
-    return this;
-  }
-
-   /**
-   * Datum a čas posledního ověření insolvence
-   * @return insolvencyLastCheckDateTimeDATE
-  **/
-  @ApiModelProperty(example = "null", value = "Datum a čas posledního ověření insolvence")
-  public DateTime getInsolvencyLastCheckDateTimeDATE() {
-    return insolvencyLastCheckDateTimeDATE;
-  }
-
-  public void setInsolvencyLastCheckDateTimeDATE(DateTime insolvencyLastCheckDateTimeDATE) {
-    this.insolvencyLastCheckDateTimeDATE = insolvencyLastCheckDateTimeDATE;
-  }
-
-  public Firm importDataFromARESAtDATE(DateTime importDataFromARESAtDATE) {
-    this.importDataFromARESAtDATE = importDataFromARESAtDATE;
-    return this;
-  }
-
-   /**
-   * Datum a čas importu z veřejné databáze [persistentní položka]
-   * @return importDataFromARESAtDATE
-  **/
-  @ApiModelProperty(example = "null", value = "Datum a čas importu z veřejné databáze [persistentní položka]")
-  public DateTime getImportDataFromARESAtDATE() {
-    return importDataFromARESAtDATE;
-  }
-
-  public void setImportDataFromARESAtDATE(DateTime importDataFromARESAtDATE) {
-    this.importDataFromARESAtDATE = importDataFromARESAtDATE;
-  }
-
-  public Firm pictureID(Firm pictureID) {
-    this.pictureID = pictureID;
-    return this;
-  }
-
-   /**
-   * Get pictureID
-   * @return pictureID
+   * Get electronicaddressId
+   * @return electronicaddressId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Firm getPictureID() {
-    return pictureID;
+  public Firm getElectronicaddressId() {
+    return electronicaddressId;
   }
 
-  public void setPictureID(Firm pictureID) {
-    this.pictureID = pictureID;
+  public void setElectronicaddressId(Firm electronicaddressId) {
+    this.electronicaddressId = electronicaddressId;
   }
 
-  public Firm storeID(String storeID) {
-    this.storeID = storeID;
+  public Firm initialfirmpersonId(String initialfirmpersonId) {
+    this.initialfirmpersonId = initialfirmpersonId;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * výchozí osoba nové firmy; id objektu osoba ve firmě
+   * @return initialfirmpersonId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "výchozí osoba nové firmy; id objektu osoba ve firmě")
+  public String getInitialfirmpersonId() {
+    return initialfirmpersonId;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setInitialfirmpersonId(String initialfirmpersonId) {
+    this.initialfirmpersonId = initialfirmpersonId;
   }
 
-  public Firm vATCountryID(String vATCountryID) {
-    this.vATCountryID = vATCountryID;
+  public Firm initialfirmpersonFirstname(String initialfirmpersonFirstname) {
+    this.initialfirmpersonFirstname = initialfirmpersonFirstname;
     return this;
   }
 
    /**
-   * Země DPH reg.; ID objektu Země [persistentní položka]
-   * @return vATCountryID
+   * vých.osoba nové firmy - jméno
+   * @return initialfirmpersonFirstname
   **/
-  @ApiModelProperty(example = "null", value = "Země DPH reg.; ID objektu Země [persistentní položka]")
-  public String getVATCountryID() {
-    return vATCountryID;
+  @ApiModelProperty(example = "null", value = "vých.osoba nové firmy - jméno")
+  public String getInitialfirmpersonFirstname() {
+    return initialfirmpersonFirstname;
   }
 
-  public void setVATCountryID(String vATCountryID) {
-    this.vATCountryID = vATCountryID;
+  public void setInitialfirmpersonFirstname(String initialfirmpersonFirstname) {
+    this.initialfirmpersonFirstname = initialfirmpersonFirstname;
   }
 
-  public Firm afterDueTerm(Integer afterDueTerm) {
-    this.afterDueTerm = afterDueTerm;
+  public Firm initialfirmpersonLastname(String initialfirmpersonLastname) {
+    this.initialfirmpersonLastname = initialfirmpersonLastname;
     return this;
   }
 
    /**
-   * Toler.vystavení po splat.(dny) [persistentní položka]
-   * @return afterDueTerm
+   * vých.os. nové firmy - příjmení
+   * @return initialfirmpersonLastname
   **/
-  @ApiModelProperty(example = "null", value = "Toler.vystavení po splat.(dny) [persistentní položka]")
-  public Integer getAfterDueTerm() {
-    return afterDueTerm;
+  @ApiModelProperty(example = "null", value = "vých.os. nové firmy - příjmení")
+  public String getInitialfirmpersonLastname() {
+    return initialfirmpersonLastname;
   }
 
-  public void setAfterDueTerm(Integer afterDueTerm) {
-    this.afterDueTerm = afterDueTerm;
+  public void setInitialfirmpersonLastname(String initialfirmpersonLastname) {
+    this.initialfirmpersonLastname = initialfirmpersonLastname;
   }
 
-  public Firm afterDueTermEnabled(Boolean afterDueTermEnabled) {
-    this.afterDueTermEnabled = afterDueTermEnabled;
+  public Firm initialfirmpersonTitle(String initialfirmpersonTitle) {
+    this.initialfirmpersonTitle = initialfirmpersonTitle;
     return this;
   }
 
    /**
-   * Použít lok. nastavení tolerance [persistentní položka]
-   * @return afterDueTermEnabled
+   * vých.osoba nové firmy - titul
+   * @return initialfirmpersonTitle
   **/
-  @ApiModelProperty(example = "null", value = "Použít lok. nastavení tolerance [persistentní položka]")
-  public Boolean getAfterDueTermEnabled() {
-    return afterDueTermEnabled;
+  @ApiModelProperty(example = "null", value = "vých.osoba nové firmy - titul")
+  public String getInitialfirmpersonTitle() {
+    return initialfirmpersonTitle;
   }
 
-  public void setAfterDueTermEnabled(Boolean afterDueTermEnabled) {
-    this.afterDueTermEnabled = afterDueTermEnabled;
+  public void setInitialfirmpersonTitle(String initialfirmpersonTitle) {
+    this.initialfirmpersonTitle = initialfirmpersonTitle;
   }
 
-  public Firm equityCapitalID(String equityCapitalID) {
-    this.equityCapitalID = equityCapitalID;
+  public Firm initialfirmpersonSuffix(String initialfirmpersonSuffix) {
+    this.initialfirmpersonSuffix = initialfirmpersonSuffix;
     return this;
   }
 
    /**
-   * Základní kapitál; ID objektu Finanční kategorie [persistentní položka]
-   * @return equityCapitalID
+   * vých.os.nové firmy - titul za jménem
+   * @return initialfirmpersonSuffix
   **/
-  @ApiModelProperty(example = "null", value = "Základní kapitál; ID objektu Finanční kategorie [persistentní položka]")
-  public String getEquityCapitalID() {
-    return equityCapitalID;
+  @ApiModelProperty(example = "null", value = "vých.os.nové firmy - titul za jménem")
+  public String getInitialfirmpersonSuffix() {
+    return initialfirmpersonSuffix;
   }
 
-  public void setEquityCapitalID(String equityCapitalID) {
-    this.equityCapitalID = equityCapitalID;
+  public void setInitialfirmpersonSuffix(String initialfirmpersonSuffix) {
+    this.initialfirmpersonSuffix = initialfirmpersonSuffix;
   }
 
-  public Firm turnoverID(String turnoverID) {
-    this.turnoverID = turnoverID;
+  public Firm elecposagreementref(String elecposagreementref) {
+    this.elecposagreementref = elecposagreementref;
     return this;
   }
 
    /**
-   * Obrat; ID objektu Finanční kategorie [persistentní položka]
-   * @return turnoverID
+   * dohoda o el. zpracování dokladů [persistentní položka]
+   * @return elecposagreementref
   **/
-  @ApiModelProperty(example = "null", value = "Obrat; ID objektu Finanční kategorie [persistentní položka]")
-  public String getTurnoverID() {
-    return turnoverID;
+  @ApiModelProperty(example = "null", value = "dohoda o el. zpracování dokladů [persistentní položka]")
+  public String getElecposagreementref() {
+    return elecposagreementref;
   }
 
-  public void setTurnoverID(String turnoverID) {
-    this.turnoverID = turnoverID;
+  public void setElecposagreementref(String elecposagreementref) {
+    this.elecposagreementref = elecposagreementref;
   }
 
-  public Firm profitID(String profitID) {
-    this.profitID = profitID;
+  public Firm majorcorrection(Boolean majorcorrection) {
+    this.majorcorrection = majorcorrection;
     return this;
   }
 
    /**
-   * Zisk; ID objektu Finanční kategorie [persistentní položka]
-   * @return profitID
+   * zásadní oprava
+   * @return majorcorrection
   **/
-  @ApiModelProperty(example = "null", value = "Zisk; ID objektu Finanční kategorie [persistentní položka]")
-  public String getProfitID() {
-    return profitID;
+  @ApiModelProperty(example = "null", value = "zásadní oprava")
+  public Boolean getMajorcorrection() {
+    return majorcorrection;
   }
 
-  public void setProfitID(String profitID) {
-    this.profitID = profitID;
+  public void setMajorcorrection(Boolean majorcorrection) {
+    this.majorcorrection = majorcorrection;
   }
 
-  public Firm employeeCountID(String employeeCountID) {
-    this.employeeCountID = employeeCountID;
+  public Firm unreliablestatus(Integer unreliablestatus) {
+    this.unreliablestatus = unreliablestatus;
     return this;
   }
 
    /**
-   * Počet zaměstnanců; ID objektu Počet zaměstnanců [persistentní položka]
-   * @return employeeCountID
+   * status nespolehlivosti
+   * @return unreliablestatus
   **/
-  @ApiModelProperty(example = "null", value = "Počet zaměstnanců; ID objektu Počet zaměstnanců [persistentní položka]")
-  public String getEmployeeCountID() {
-    return employeeCountID;
+  @ApiModelProperty(example = "null", value = "status nespolehlivosti")
+  public Integer getUnreliablestatus() {
+    return unreliablestatus;
   }
 
-  public void setEmployeeCountID(String employeeCountID) {
-    this.employeeCountID = employeeCountID;
+  public void setUnreliablestatus(Integer unreliablestatus) {
+    this.unreliablestatus = unreliablestatus;
   }
 
-  public Firm legalStatusID(String legalStatusID) {
-    this.legalStatusID = legalStatusID;
+  public Firm unreliabledatedate(DateTime unreliabledatedate) {
+    this.unreliabledatedate = unreliabledatedate;
     return this;
   }
 
    /**
-   * Právní forma; ID objektu Právní forma společnosti [persistentní položka]
-   * @return legalStatusID
+   * datum zveřejnění nespolehlivosti plátce v registru plátců dph
+   * @return unreliabledatedate
   **/
-  @ApiModelProperty(example = "null", value = "Právní forma; ID objektu Právní forma společnosti [persistentní položka]")
-  public String getLegalStatusID() {
-    return legalStatusID;
+  @ApiModelProperty(example = "null", value = "datum zveřejnění nespolehlivosti plátce v registru plátců dph")
+  public DateTime getUnreliabledatedate() {
+    return unreliabledatedate;
   }
 
-  public void setLegalStatusID(String legalStatusID) {
-    this.legalStatusID = legalStatusID;
+  public void setUnreliabledatedate(DateTime unreliabledatedate) {
+    this.unreliabledatedate = unreliabledatedate;
   }
 
-  public Firm ownershipTypeID(String ownershipTypeID) {
-    this.ownershipTypeID = ownershipTypeID;
+  public Firm unreliablecheckdatedate(DateTime unreliablecheckdatedate) {
+    this.unreliablecheckdatedate = unreliablecheckdatedate;
     return this;
   }
 
    /**
-   * Typ vlastnictví; ID objektu Typ vlastnictví [persistentní položka]
-   * @return ownershipTypeID
+   * datum kontroly nespolehlivosti
+   * @return unreliablecheckdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Typ vlastnictví; ID objektu Typ vlastnictví [persistentní položka]")
-  public String getOwnershipTypeID() {
-    return ownershipTypeID;
+  @ApiModelProperty(example = "null", value = "datum kontroly nespolehlivosti")
+  public DateTime getUnreliablecheckdatedate() {
+    return unreliablecheckdatedate;
   }
 
-  public void setOwnershipTypeID(String ownershipTypeID) {
-    this.ownershipTypeID = ownershipTypeID;
+  public void setUnreliablecheckdatedate(DateTime unreliablecheckdatedate) {
+    this.unreliablecheckdatedate = unreliablecheckdatedate;
   }
 
-  public Firm commercialsAgreement(Integer commercialsAgreement) {
-    this.commercialsAgreement = commercialsAgreement;
+  public Firm unreliablestatusastext(String unreliablestatusastext) {
+    this.unreliablestatusastext = unreliablestatusastext;
     return this;
   }
 
    /**
-   * Souhlas se zasíláním obch. sdělení [persistentní položka]
-   * @return commercialsAgreement
+   * status nespolehlivosti textově
+   * @return unreliablestatusastext
   **/
-  @ApiModelProperty(example = "null", value = "Souhlas se zasíláním obch. sdělení [persistentní položka]")
-  public Integer getCommercialsAgreement() {
-    return commercialsAgreement;
+  @ApiModelProperty(example = "null", value = "status nespolehlivosti textově")
+  public String getUnreliablestatusastext() {
+    return unreliablestatusastext;
   }
 
-  public void setCommercialsAgreement(Integer commercialsAgreement) {
-    this.commercialsAgreement = commercialsAgreement;
+  public void setUnreliablestatusastext(String unreliablestatusastext) {
+    this.unreliablestatusastext = unreliablestatusastext;
   }
 
-  public Firm mainNACECodeID(String mainNACECodeID) {
-    this.mainNACECodeID = mainNACECodeID;
+  public Firm insolvencycheckresult(Integer insolvencycheckresult) {
+    this.insolvencycheckresult = insolvencycheckresult;
     return this;
   }
 
    /**
-   * Hlavní NACE; ID objektu NACE kód [persistentní položka]
-   * @return mainNACECodeID
+   * stav insolvence
+   * @return insolvencycheckresult
   **/
-  @ApiModelProperty(example = "null", value = "Hlavní NACE; ID objektu NACE kód [persistentní položka]")
-  public String getMainNACECodeID() {
-    return mainNACECodeID;
+  @ApiModelProperty(example = "null", value = "stav insolvence")
+  public Integer getInsolvencycheckresult() {
+    return insolvencycheckresult;
   }
 
-  public void setMainNACECodeID(String mainNACECodeID) {
-    this.mainNACECodeID = mainNACECodeID;
+  public void setInsolvencycheckresult(Integer insolvencycheckresult) {
+    this.insolvencycheckresult = insolvencycheckresult;
   }
 
-  public Firm firmPersons(List<Firmperson> firmPersons) {
-    this.firmPersons = firmPersons;
-    return this;
-  }
-
-  public Firm addFirmPersonsItem(Firmperson firmPersonsItem) {
-    this.firmPersons.add(firmPersonsItem);
+  public Firm insolvencycheckresultastext(String insolvencycheckresultastext) {
+    this.insolvencycheckresultastext = insolvencycheckresultastext;
     return this;
   }
 
    /**
-   * Osoby ve firmě; kolekce BO Osoba ve firmě [nepersistentní položka]
-   * @return firmPersons
+   * stav insolvence textově
+   * @return insolvencycheckresultastext
   **/
-  @ApiModelProperty(example = "null", value = "Osoby ve firmě; kolekce BO Osoba ve firmě [nepersistentní položka]")
-  public List<Firmperson> getFirmPersons() {
-    return firmPersons;
+  @ApiModelProperty(example = "null", value = "stav insolvence textově")
+  public String getInsolvencycheckresultastext() {
+    return insolvencycheckresultastext;
   }
 
-  public void setFirmPersons(List<Firmperson> firmPersons) {
-    this.firmPersons = firmPersons;
+  public void setInsolvencycheckresultastext(String insolvencycheckresultastext) {
+    this.insolvencycheckresultastext = insolvencycheckresultastext;
   }
 
-  public Firm createdAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public Firm insolvencylastcheckdatetimedate(DateTime insolvencylastcheckdatetimedate) {
+    this.insolvencylastcheckdatetimedate = insolvencylastcheckdatetimedate;
     return this;
   }
 
    /**
-   * Vytvořeno [persistentní položka]
-   * @return createdAtDATE
+   * datum a čas posledního ověření insolvence
+   * @return insolvencylastcheckdatetimedate
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořeno [persistentní položka]")
-  public DateTime getCreatedAtDATE() {
-    return createdAtDATE;
+  @ApiModelProperty(example = "null", value = "datum a čas posledního ověření insolvence")
+  public DateTime getInsolvencylastcheckdatetimedate() {
+    return insolvencylastcheckdatetimedate;
   }
 
-  public void setCreatedAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public void setInsolvencylastcheckdatetimedate(DateTime insolvencylastcheckdatetimedate) {
+    this.insolvencylastcheckdatetimedate = insolvencylastcheckdatetimedate;
   }
 
-  public Firm correctedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public Firm importdatafromaresatdate(DateTime importdatafromaresatdate) {
+    this.importdatafromaresatdate = importdatafromaresatdate;
     return this;
   }
 
    /**
-   * Opraveno [persistentní položka]
-   * @return correctedAtDATE
+   * datum a čas importu z veřejné databáze [persistentní položka]
+   * @return importdatafromaresatdate
   **/
-  @ApiModelProperty(example = "null", value = "Opraveno [persistentní položka]")
-  public DateTime getCorrectedAtDATE() {
-    return correctedAtDATE;
+  @ApiModelProperty(example = "null", value = "datum a čas importu z veřejné databáze [persistentní položka]")
+  public DateTime getImportdatafromaresatdate() {
+    return importdatafromaresatdate;
   }
 
-  public void setCorrectedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public void setImportdatafromaresatdate(DateTime importdatafromaresatdate) {
+    this.importdatafromaresatdate = importdatafromaresatdate;
   }
 
-  public Firm createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Firm pictureId(Firm pictureId) {
+    this.pictureId = pictureId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * Get pictureId
+   * @return pictureId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "")
+  public Firm getPictureId() {
+    return pictureId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setPictureId(Firm pictureId) {
+    this.pictureId = pictureId;
   }
 
-  public Firm correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Firm storeId(String storeId) {
+    this.storeId = storeId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
+  }
+
+  public Firm vatcountryId(String vatcountryId) {
+    this.vatcountryId = vatcountryId;
+    return this;
+  }
+
+   /**
+   * země dph reg.; id objektu země [persistentní položka]
+   * @return vatcountryId
+  **/
+  @ApiModelProperty(example = "null", value = "země dph reg.; id objektu země [persistentní položka]")
+  public String getVatcountryId() {
+    return vatcountryId;
+  }
+
+  public void setVatcountryId(String vatcountryId) {
+    this.vatcountryId = vatcountryId;
+  }
+
+  public Firm afterdueterm(Integer afterdueterm) {
+    this.afterdueterm = afterdueterm;
+    return this;
+  }
+
+   /**
+   * toler.vystavení po splat.(dny) [persistentní položka]
+   * @return afterdueterm
+  **/
+  @ApiModelProperty(example = "null", value = "toler.vystavení po splat.(dny) [persistentní položka]")
+  public Integer getAfterdueterm() {
+    return afterdueterm;
+  }
+
+  public void setAfterdueterm(Integer afterdueterm) {
+    this.afterdueterm = afterdueterm;
+  }
+
+  public Firm afterduetermenabled(Boolean afterduetermenabled) {
+    this.afterduetermenabled = afterduetermenabled;
+    return this;
+  }
+
+   /**
+   * použít lok. nastavení tolerance [persistentní položka]
+   * @return afterduetermenabled
+  **/
+  @ApiModelProperty(example = "null", value = "použít lok. nastavení tolerance [persistentní položka]")
+  public Boolean getAfterduetermenabled() {
+    return afterduetermenabled;
+  }
+
+  public void setAfterduetermenabled(Boolean afterduetermenabled) {
+    this.afterduetermenabled = afterduetermenabled;
+  }
+
+  public Firm equitycapitalId(String equitycapitalId) {
+    this.equitycapitalId = equitycapitalId;
+    return this;
+  }
+
+   /**
+   * základní kapitál; id objektu finanční kategorie [persistentní položka]
+   * @return equitycapitalId
+  **/
+  @ApiModelProperty(example = "null", value = "základní kapitál; id objektu finanční kategorie [persistentní položka]")
+  public String getEquitycapitalId() {
+    return equitycapitalId;
+  }
+
+  public void setEquitycapitalId(String equitycapitalId) {
+    this.equitycapitalId = equitycapitalId;
+  }
+
+  public Firm turnoverId(String turnoverId) {
+    this.turnoverId = turnoverId;
+    return this;
+  }
+
+   /**
+   * obrat; id objektu finanční kategorie [persistentní položka]
+   * @return turnoverId
+  **/
+  @ApiModelProperty(example = "null", value = "obrat; id objektu finanční kategorie [persistentní položka]")
+  public String getTurnoverId() {
+    return turnoverId;
+  }
+
+  public void setTurnoverId(String turnoverId) {
+    this.turnoverId = turnoverId;
+  }
+
+  public Firm profitId(String profitId) {
+    this.profitId = profitId;
+    return this;
+  }
+
+   /**
+   * zisk; id objektu finanční kategorie [persistentní položka]
+   * @return profitId
+  **/
+  @ApiModelProperty(example = "null", value = "zisk; id objektu finanční kategorie [persistentní položka]")
+  public String getProfitId() {
+    return profitId;
+  }
+
+  public void setProfitId(String profitId) {
+    this.profitId = profitId;
+  }
+
+  public Firm employeecountId(String employeecountId) {
+    this.employeecountId = employeecountId;
+    return this;
+  }
+
+   /**
+   * počet zaměstnanců; id objektu počet zaměstnanců [persistentní položka]
+   * @return employeecountId
+  **/
+  @ApiModelProperty(example = "null", value = "počet zaměstnanců; id objektu počet zaměstnanců [persistentní položka]")
+  public String getEmployeecountId() {
+    return employeecountId;
+  }
+
+  public void setEmployeecountId(String employeecountId) {
+    this.employeecountId = employeecountId;
+  }
+
+  public Firm legalstatusId(String legalstatusId) {
+    this.legalstatusId = legalstatusId;
+    return this;
+  }
+
+   /**
+   * právní forma; id objektu právní forma společnosti [persistentní položka]
+   * @return legalstatusId
+  **/
+  @ApiModelProperty(example = "null", value = "právní forma; id objektu právní forma společnosti [persistentní položka]")
+  public String getLegalstatusId() {
+    return legalstatusId;
+  }
+
+  public void setLegalstatusId(String legalstatusId) {
+    this.legalstatusId = legalstatusId;
+  }
+
+  public Firm ownershiptypeId(String ownershiptypeId) {
+    this.ownershiptypeId = ownershiptypeId;
+    return this;
+  }
+
+   /**
+   * typ vlastnictví; id objektu typ vlastnictví [persistentní položka]
+   * @return ownershiptypeId
+  **/
+  @ApiModelProperty(example = "null", value = "typ vlastnictví; id objektu typ vlastnictví [persistentní položka]")
+  public String getOwnershiptypeId() {
+    return ownershiptypeId;
+  }
+
+  public void setOwnershiptypeId(String ownershiptypeId) {
+    this.ownershiptypeId = ownershiptypeId;
+  }
+
+  public Firm commercialsagreement(Integer commercialsagreement) {
+    this.commercialsagreement = commercialsagreement;
+    return this;
+  }
+
+   /**
+   * souhlas se zasíláním obch. sdělení [persistentní položka]
+   * @return commercialsagreement
+  **/
+  @ApiModelProperty(example = "null", value = "souhlas se zasíláním obch. sdělení [persistentní položka]")
+  public Integer getCommercialsagreement() {
+    return commercialsagreement;
+  }
+
+  public void setCommercialsagreement(Integer commercialsagreement) {
+    this.commercialsagreement = commercialsagreement;
+  }
+
+  public Firm mainnacecodeId(String mainnacecodeId) {
+    this.mainnacecodeId = mainnacecodeId;
+    return this;
+  }
+
+   /**
+   * hlavní nace; id objektu nace kód [persistentní položka]
+   * @return mainnacecodeId
+  **/
+  @ApiModelProperty(example = "null", value = "hlavní nace; id objektu nace kód [persistentní položka]")
+  public String getMainnacecodeId() {
+    return mainnacecodeId;
+  }
+
+  public void setMainnacecodeId(String mainnacecodeId) {
+    this.mainnacecodeId = mainnacecodeId;
+  }
+
+  public Firm firmpersons(List<Firmperson> firmpersons) {
+    this.firmpersons = firmpersons;
+    return this;
+  }
+
+  public Firm addFirmpersonsItem(Firmperson firmpersonsItem) {
+    this.firmpersons.add(firmpersonsItem);
+    return this;
+  }
+
+   /**
+   * osoby ve firmě; kolekce bo osoba ve firmě [nepersistentní položka]
+   * @return firmpersons
+  **/
+  @ApiModelProperty(example = "null", value = "osoby ve firmě; kolekce bo osoba ve firmě [nepersistentní položka]")
+  public List<Firmperson> getFirmpersons() {
+    return firmpersons;
+  }
+
+  public void setFirmpersons(List<Firmperson> firmpersons) {
+    this.firmpersons = firmpersons;
+  }
+
+  public Firm createdatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
+    return this;
+  }
+
+   /**
+   * vytvořeno [persistentní položka]
+   * @return createdatdate
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořeno [persistentní položka]")
+  public DateTime getCreatedatdate() {
+    return createdatdate;
+  }
+
+  public void setCreatedatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
+  }
+
+  public Firm correctedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
+    return this;
+  }
+
+   /**
+   * opraveno [persistentní položka]
+   * @return correctedatdate
+  **/
+  @ApiModelProperty(example = "null", value = "opraveno [persistentní položka]")
+  public DateTime getCorrectedatdate() {
+    return correctedatdate;
+  }
+
+  public void setCorrectedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
+  }
+
+  public Firm createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+    return this;
+  }
+
+   /**
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
+  }
+
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Firm correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+    return this;
+  }
+
+   /**
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
+  }
+
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
 
@@ -2169,27 +2205,27 @@ public class Firm   {
       return false;
     }
     Firm firm = (Firm) o;
-    return Objects.equals(this.displayName, firm.displayName) &&
-        Objects.equals(this.ID, firm.ID) &&
-        Objects.equals(this.classID, firm.classID) &&
-        Objects.equals(this.objVersion, firm.objVersion) &&
+    return Objects.equals(this.displayname, firm.displayname) &&
+        Objects.equals(this.id, firm.id) &&
+        Objects.equals(this.classid, firm.classid) &&
+        Objects.equals(this.objversion, firm.objversion) &&
         Objects.equals(this.rows, firm.rows) &&
         Objects.equals(this.hidden, firm.hidden) &&
         Objects.equals(this.code, firm.code) &&
         Objects.equals(this.name, firm.name) &&
-        Objects.equals(this.residenceAddressID, firm.residenceAddressID) &&
-        Objects.equals(this.orgIdentNumber, firm.orgIdentNumber) &&
-        Objects.equals(this.vATIdentNumber, firm.vATIdentNumber) &&
-        Objects.equals(this.eORIIdentNumber, firm.eORIIdentNumber) &&
-        Objects.equals(this.firmID, firm.firmID) &&
-        Objects.equals(this.priceListID, firm.priceListID) &&
-        Objects.equals(this.dueTerm, firm.dueTerm) &&
-        Objects.equals(this.dealerCategoryID, firm.dealerCategoryID) &&
-        Objects.equals(this.dealerDiscount, firm.dealerDiscount) &&
+        Objects.equals(this.residenceaddressId, firm.residenceaddressId) &&
+        Objects.equals(this.orgidentnumber, firm.orgidentnumber) &&
+        Objects.equals(this.vatidentnumber, firm.vatidentnumber) &&
+        Objects.equals(this.eoriidentnumber, firm.eoriidentnumber) &&
+        Objects.equals(this.firmId, firm.firmId) &&
+        Objects.equals(this.pricelistId, firm.pricelistId) &&
+        Objects.equals(this.dueterm, firm.dueterm) &&
+        Objects.equals(this.dealercategoryId, firm.dealercategoryId) &&
+        Objects.equals(this.dealerdiscount, firm.dealerdiscount) &&
         Objects.equals(this.note, firm.note) &&
         Objects.equals(this.comment, firm.comment) &&
         Objects.equals(this.credit, firm.credit) &&
-        Objects.equals(this.checkCredit, firm.checkCredit) &&
+        Objects.equals(this.checkcredit, firm.checkcredit) &&
         Objects.equals(this.k0, firm.k0) &&
         Objects.equals(this.k1, firm.k1) &&
         Objects.equals(this.k2, firm.k2) &&
@@ -2206,75 +2242,75 @@ public class Firm   {
         Objects.equals(this.k13, firm.k13) &&
         Objects.equals(this.k14, firm.k14) &&
         Objects.equals(this.k15, firm.k15) &&
-        Objects.equals(this.wWWAddress, firm.wWWAddress) &&
-        Objects.equals(this.prefixCode, firm.prefixCode) &&
-        Objects.equals(this.bodyCode, firm.bodyCode) &&
-        Objects.equals(this.suffixCode, firm.suffixCode) &&
-        Objects.equals(this.penaltyPercent, firm.penaltyPercent) &&
-        Objects.equals(this.firmOffices, firm.firmOffices) &&
-        Objects.equals(this.firmNACEs, firm.firmNACEs) &&
-        Objects.equals(this.categoriesMetadata, firm.categoriesMetadata) &&
-        Objects.equals(this.paymentTypeID, firm.paymentTypeID) &&
-        Objects.equals(this.currencyID, firm.currencyID) &&
-        Objects.equals(this.priceID, firm.priceID) &&
-        Objects.equals(this.nPTitle, firm.nPTitle) &&
-        Objects.equals(this.nPResidencePermitNumber, firm.nPResidencePermitNumber) &&
-        Objects.equals(this.nPBirthNumber, firm.nPBirthNumber) &&
-        Objects.equals(this.nPSurname, firm.nPSurname) &&
-        Objects.equals(this.nPForename, firm.nPForename) &&
-        Objects.equals(this.isRegistered, firm.isRegistered) &&
-        Objects.equals(this.registerKeptAt, firm.registerKeptAt) &&
-        Objects.equals(this.registerFileRef, firm.registerFileRef) &&
-        Objects.equals(this.registerDateDATE, firm.registerDateDATE) &&
-        Objects.equals(this.prefillDiscountKind, firm.prefillDiscountKind) &&
-        Objects.equals(this.dealerDiscountKind, firm.dealerDiscountKind) &&
-        Objects.equals(this.quantityDiscountKind, firm.quantityDiscountKind) &&
-        Objects.equals(this.communicationTypeID, firm.communicationTypeID) &&
-        Objects.equals(this.assortmentDiscounts, firm.assortmentDiscounts) &&
-        Objects.equals(this.tAXIdentNumber, firm.tAXIdentNumber) &&
+        Objects.equals(this.wwwaddress, firm.wwwaddress) &&
+        Objects.equals(this.prefixcode, firm.prefixcode) &&
+        Objects.equals(this.bodycode, firm.bodycode) &&
+        Objects.equals(this.suffixcode, firm.suffixcode) &&
+        Objects.equals(this.penaltypercent, firm.penaltypercent) &&
+        Objects.equals(this.firmoffices, firm.firmoffices) &&
+        Objects.equals(this.firmnaces, firm.firmnaces) &&
+        Objects.equals(this.categoriesmetadata, firm.categoriesmetadata) &&
+        Objects.equals(this.paymenttypeId, firm.paymenttypeId) &&
+        Objects.equals(this.currencyId, firm.currencyId) &&
+        Objects.equals(this.priceId, firm.priceId) &&
+        Objects.equals(this.nptitle, firm.nptitle) &&
+        Objects.equals(this.npresidencepermitnumber, firm.npresidencepermitnumber) &&
+        Objects.equals(this.npbirthnumber, firm.npbirthnumber) &&
+        Objects.equals(this.npsurname, firm.npsurname) &&
+        Objects.equals(this.npforename, firm.npforename) &&
+        Objects.equals(this.isregistered, firm.isregistered) &&
+        Objects.equals(this.registerkeptat, firm.registerkeptat) &&
+        Objects.equals(this.registerfileref, firm.registerfileref) &&
+        Objects.equals(this.registerdatedate, firm.registerdatedate) &&
+        Objects.equals(this.prefilldiscountkind, firm.prefilldiscountkind) &&
+        Objects.equals(this.dealerdiscountkind, firm.dealerdiscountkind) &&
+        Objects.equals(this.quantitydiscountkind, firm.quantitydiscountkind) &&
+        Objects.equals(this.communicationtypeId, firm.communicationtypeId) &&
+        Objects.equals(this.assortmentdiscounts, firm.assortmentdiscounts) &&
+        Objects.equals(this.taxidentnumber, firm.taxidentnumber) &&
         Objects.equals(this.pictures, firm.pictures) &&
-        Objects.equals(this.eInvoiceFormat, firm.eInvoiceFormat) &&
-        Objects.equals(this.invoicingDelivery, firm.invoicingDelivery) &&
-        Objects.equals(this.newFirmMode, firm.newFirmMode) &&
-        Objects.equals(this.electronicAddressID, firm.electronicAddressID) &&
-        Objects.equals(this.initialFirmPersonID, firm.initialFirmPersonID) &&
-        Objects.equals(this.initialFirmPersonFirstName, firm.initialFirmPersonFirstName) &&
-        Objects.equals(this.initialFirmPersonLastName, firm.initialFirmPersonLastName) &&
-        Objects.equals(this.initialFirmPersonTitle, firm.initialFirmPersonTitle) &&
-        Objects.equals(this.initialFirmPersonSuffix, firm.initialFirmPersonSuffix) &&
-        Objects.equals(this.elecPosAgreementRef, firm.elecPosAgreementRef) &&
-        Objects.equals(this.majorCorrection, firm.majorCorrection) &&
-        Objects.equals(this.unreliableStatus, firm.unreliableStatus) &&
-        Objects.equals(this.unreliableDateDATE, firm.unreliableDateDATE) &&
-        Objects.equals(this.unreliableCheckDateDATE, firm.unreliableCheckDateDATE) &&
-        Objects.equals(this.unreliableStatusAsText, firm.unreliableStatusAsText) &&
-        Objects.equals(this.insolvencyCheckResult, firm.insolvencyCheckResult) &&
-        Objects.equals(this.insolvencyCheckResultAsText, firm.insolvencyCheckResultAsText) &&
-        Objects.equals(this.insolvencyLastCheckDateTimeDATE, firm.insolvencyLastCheckDateTimeDATE) &&
-        Objects.equals(this.importDataFromARESAtDATE, firm.importDataFromARESAtDATE) &&
-        Objects.equals(this.pictureID, firm.pictureID) &&
-        Objects.equals(this.storeID, firm.storeID) &&
-        Objects.equals(this.vATCountryID, firm.vATCountryID) &&
-        Objects.equals(this.afterDueTerm, firm.afterDueTerm) &&
-        Objects.equals(this.afterDueTermEnabled, firm.afterDueTermEnabled) &&
-        Objects.equals(this.equityCapitalID, firm.equityCapitalID) &&
-        Objects.equals(this.turnoverID, firm.turnoverID) &&
-        Objects.equals(this.profitID, firm.profitID) &&
-        Objects.equals(this.employeeCountID, firm.employeeCountID) &&
-        Objects.equals(this.legalStatusID, firm.legalStatusID) &&
-        Objects.equals(this.ownershipTypeID, firm.ownershipTypeID) &&
-        Objects.equals(this.commercialsAgreement, firm.commercialsAgreement) &&
-        Objects.equals(this.mainNACECodeID, firm.mainNACECodeID) &&
-        Objects.equals(this.firmPersons, firm.firmPersons) &&
-        Objects.equals(this.createdAtDATE, firm.createdAtDATE) &&
-        Objects.equals(this.correctedAtDATE, firm.correctedAtDATE) &&
-        Objects.equals(this.createdByID, firm.createdByID) &&
-        Objects.equals(this.correctedByID, firm.correctedByID);
+        Objects.equals(this.einvoiceformat, firm.einvoiceformat) &&
+        Objects.equals(this.invoicingdelivery, firm.invoicingdelivery) &&
+        Objects.equals(this.newfirmmode, firm.newfirmmode) &&
+        Objects.equals(this.electronicaddressId, firm.electronicaddressId) &&
+        Objects.equals(this.initialfirmpersonId, firm.initialfirmpersonId) &&
+        Objects.equals(this.initialfirmpersonFirstname, firm.initialfirmpersonFirstname) &&
+        Objects.equals(this.initialfirmpersonLastname, firm.initialfirmpersonLastname) &&
+        Objects.equals(this.initialfirmpersonTitle, firm.initialfirmpersonTitle) &&
+        Objects.equals(this.initialfirmpersonSuffix, firm.initialfirmpersonSuffix) &&
+        Objects.equals(this.elecposagreementref, firm.elecposagreementref) &&
+        Objects.equals(this.majorcorrection, firm.majorcorrection) &&
+        Objects.equals(this.unreliablestatus, firm.unreliablestatus) &&
+        Objects.equals(this.unreliabledatedate, firm.unreliabledatedate) &&
+        Objects.equals(this.unreliablecheckdatedate, firm.unreliablecheckdatedate) &&
+        Objects.equals(this.unreliablestatusastext, firm.unreliablestatusastext) &&
+        Objects.equals(this.insolvencycheckresult, firm.insolvencycheckresult) &&
+        Objects.equals(this.insolvencycheckresultastext, firm.insolvencycheckresultastext) &&
+        Objects.equals(this.insolvencylastcheckdatetimedate, firm.insolvencylastcheckdatetimedate) &&
+        Objects.equals(this.importdatafromaresatdate, firm.importdatafromaresatdate) &&
+        Objects.equals(this.pictureId, firm.pictureId) &&
+        Objects.equals(this.storeId, firm.storeId) &&
+        Objects.equals(this.vatcountryId, firm.vatcountryId) &&
+        Objects.equals(this.afterdueterm, firm.afterdueterm) &&
+        Objects.equals(this.afterduetermenabled, firm.afterduetermenabled) &&
+        Objects.equals(this.equitycapitalId, firm.equitycapitalId) &&
+        Objects.equals(this.turnoverId, firm.turnoverId) &&
+        Objects.equals(this.profitId, firm.profitId) &&
+        Objects.equals(this.employeecountId, firm.employeecountId) &&
+        Objects.equals(this.legalstatusId, firm.legalstatusId) &&
+        Objects.equals(this.ownershiptypeId, firm.ownershiptypeId) &&
+        Objects.equals(this.commercialsagreement, firm.commercialsagreement) &&
+        Objects.equals(this.mainnacecodeId, firm.mainnacecodeId) &&
+        Objects.equals(this.firmpersons, firm.firmpersons) &&
+        Objects.equals(this.createdatdate, firm.createdatdate) &&
+        Objects.equals(this.correctedatdate, firm.correctedatdate) &&
+        Objects.equals(this.createdbyId, firm.createdbyId) &&
+        Objects.equals(this.correctedbyId, firm.correctedbyId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, code, name, residenceAddressID, orgIdentNumber, vATIdentNumber, eORIIdentNumber, firmID, priceListID, dueTerm, dealerCategoryID, dealerDiscount, note, comment, credit, checkCredit, k0, k1, k2, k3, k4, k5, k6, k7, k8, k9, k10, k11, k12, k13, k14, k15, wWWAddress, prefixCode, bodyCode, suffixCode, penaltyPercent, firmOffices, firmNACEs, categoriesMetadata, paymentTypeID, currencyID, priceID, nPTitle, nPResidencePermitNumber, nPBirthNumber, nPSurname, nPForename, isRegistered, registerKeptAt, registerFileRef, registerDateDATE, prefillDiscountKind, dealerDiscountKind, quantityDiscountKind, communicationTypeID, assortmentDiscounts, tAXIdentNumber, pictures, eInvoiceFormat, invoicingDelivery, newFirmMode, electronicAddressID, initialFirmPersonID, initialFirmPersonFirstName, initialFirmPersonLastName, initialFirmPersonTitle, initialFirmPersonSuffix, elecPosAgreementRef, majorCorrection, unreliableStatus, unreliableDateDATE, unreliableCheckDateDATE, unreliableStatusAsText, insolvencyCheckResult, insolvencyCheckResultAsText, insolvencyLastCheckDateTimeDATE, importDataFromARESAtDATE, pictureID, storeID, vATCountryID, afterDueTerm, afterDueTermEnabled, equityCapitalID, turnoverID, profitID, employeeCountID, legalStatusID, ownershipTypeID, commercialsAgreement, mainNACECodeID, firmPersons, createdAtDATE, correctedAtDATE, createdByID, correctedByID);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, code, name, residenceaddressId, orgidentnumber, vatidentnumber, eoriidentnumber, firmId, pricelistId, dueterm, dealercategoryId, dealerdiscount, note, comment, credit, checkcredit, k0, k1, k2, k3, k4, k5, k6, k7, k8, k9, k10, k11, k12, k13, k14, k15, wwwaddress, prefixcode, bodycode, suffixcode, penaltypercent, firmoffices, firmnaces, categoriesmetadata, paymenttypeId, currencyId, priceId, nptitle, npresidencepermitnumber, npbirthnumber, npsurname, npforename, isregistered, registerkeptat, registerfileref, registerdatedate, prefilldiscountkind, dealerdiscountkind, quantitydiscountkind, communicationtypeId, assortmentdiscounts, taxidentnumber, pictures, einvoiceformat, invoicingdelivery, newfirmmode, electronicaddressId, initialfirmpersonId, initialfirmpersonFirstname, initialfirmpersonLastname, initialfirmpersonTitle, initialfirmpersonSuffix, elecposagreementref, majorcorrection, unreliablestatus, unreliabledatedate, unreliablecheckdatedate, unreliablestatusastext, insolvencycheckresult, insolvencycheckresultastext, insolvencylastcheckdatetimedate, importdatafromaresatdate, pictureId, storeId, vatcountryId, afterdueterm, afterduetermenabled, equitycapitalId, turnoverId, profitId, employeecountId, legalstatusId, ownershiptypeId, commercialsagreement, mainnacecodeId, firmpersons, createdatdate, correctedatdate, createdbyId, correctedbyId);
   }
 
   @Override
@@ -2282,27 +2318,27 @@ public class Firm   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Firm {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    residenceAddressID: ").append(toIndentedString(residenceAddressID)).append("\n");
-    sb.append("    orgIdentNumber: ").append(toIndentedString(orgIdentNumber)).append("\n");
-    sb.append("    vATIdentNumber: ").append(toIndentedString(vATIdentNumber)).append("\n");
-    sb.append("    eORIIdentNumber: ").append(toIndentedString(eORIIdentNumber)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    priceListID: ").append(toIndentedString(priceListID)).append("\n");
-    sb.append("    dueTerm: ").append(toIndentedString(dueTerm)).append("\n");
-    sb.append("    dealerCategoryID: ").append(toIndentedString(dealerCategoryID)).append("\n");
-    sb.append("    dealerDiscount: ").append(toIndentedString(dealerDiscount)).append("\n");
+    sb.append("    residenceaddressId: ").append(toIndentedString(residenceaddressId)).append("\n");
+    sb.append("    orgidentnumber: ").append(toIndentedString(orgidentnumber)).append("\n");
+    sb.append("    vatidentnumber: ").append(toIndentedString(vatidentnumber)).append("\n");
+    sb.append("    eoriidentnumber: ").append(toIndentedString(eoriidentnumber)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    pricelistId: ").append(toIndentedString(pricelistId)).append("\n");
+    sb.append("    dueterm: ").append(toIndentedString(dueterm)).append("\n");
+    sb.append("    dealercategoryId: ").append(toIndentedString(dealercategoryId)).append("\n");
+    sb.append("    dealerdiscount: ").append(toIndentedString(dealerdiscount)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
     sb.append("    comment: ").append(toIndentedString(comment)).append("\n");
     sb.append("    credit: ").append(toIndentedString(credit)).append("\n");
-    sb.append("    checkCredit: ").append(toIndentedString(checkCredit)).append("\n");
+    sb.append("    checkcredit: ").append(toIndentedString(checkcredit)).append("\n");
     sb.append("    k0: ").append(toIndentedString(k0)).append("\n");
     sb.append("    k1: ").append(toIndentedString(k1)).append("\n");
     sb.append("    k2: ").append(toIndentedString(k2)).append("\n");
@@ -2319,70 +2355,70 @@ public class Firm   {
     sb.append("    k13: ").append(toIndentedString(k13)).append("\n");
     sb.append("    k14: ").append(toIndentedString(k14)).append("\n");
     sb.append("    k15: ").append(toIndentedString(k15)).append("\n");
-    sb.append("    wWWAddress: ").append(toIndentedString(wWWAddress)).append("\n");
-    sb.append("    prefixCode: ").append(toIndentedString(prefixCode)).append("\n");
-    sb.append("    bodyCode: ").append(toIndentedString(bodyCode)).append("\n");
-    sb.append("    suffixCode: ").append(toIndentedString(suffixCode)).append("\n");
-    sb.append("    penaltyPercent: ").append(toIndentedString(penaltyPercent)).append("\n");
-    sb.append("    firmOffices: ").append(toIndentedString(firmOffices)).append("\n");
-    sb.append("    firmNACEs: ").append(toIndentedString(firmNACEs)).append("\n");
-    sb.append("    categoriesMetadata: ").append(toIndentedString(categoriesMetadata)).append("\n");
-    sb.append("    paymentTypeID: ").append(toIndentedString(paymentTypeID)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    priceID: ").append(toIndentedString(priceID)).append("\n");
-    sb.append("    nPTitle: ").append(toIndentedString(nPTitle)).append("\n");
-    sb.append("    nPResidencePermitNumber: ").append(toIndentedString(nPResidencePermitNumber)).append("\n");
-    sb.append("    nPBirthNumber: ").append(toIndentedString(nPBirthNumber)).append("\n");
-    sb.append("    nPSurname: ").append(toIndentedString(nPSurname)).append("\n");
-    sb.append("    nPForename: ").append(toIndentedString(nPForename)).append("\n");
-    sb.append("    isRegistered: ").append(toIndentedString(isRegistered)).append("\n");
-    sb.append("    registerKeptAt: ").append(toIndentedString(registerKeptAt)).append("\n");
-    sb.append("    registerFileRef: ").append(toIndentedString(registerFileRef)).append("\n");
-    sb.append("    registerDateDATE: ").append(toIndentedString(registerDateDATE)).append("\n");
-    sb.append("    prefillDiscountKind: ").append(toIndentedString(prefillDiscountKind)).append("\n");
-    sb.append("    dealerDiscountKind: ").append(toIndentedString(dealerDiscountKind)).append("\n");
-    sb.append("    quantityDiscountKind: ").append(toIndentedString(quantityDiscountKind)).append("\n");
-    sb.append("    communicationTypeID: ").append(toIndentedString(communicationTypeID)).append("\n");
-    sb.append("    assortmentDiscounts: ").append(toIndentedString(assortmentDiscounts)).append("\n");
-    sb.append("    tAXIdentNumber: ").append(toIndentedString(tAXIdentNumber)).append("\n");
+    sb.append("    wwwaddress: ").append(toIndentedString(wwwaddress)).append("\n");
+    sb.append("    prefixcode: ").append(toIndentedString(prefixcode)).append("\n");
+    sb.append("    bodycode: ").append(toIndentedString(bodycode)).append("\n");
+    sb.append("    suffixcode: ").append(toIndentedString(suffixcode)).append("\n");
+    sb.append("    penaltypercent: ").append(toIndentedString(penaltypercent)).append("\n");
+    sb.append("    firmoffices: ").append(toIndentedString(firmoffices)).append("\n");
+    sb.append("    firmnaces: ").append(toIndentedString(firmnaces)).append("\n");
+    sb.append("    categoriesmetadata: ").append(toIndentedString(categoriesmetadata)).append("\n");
+    sb.append("    paymenttypeId: ").append(toIndentedString(paymenttypeId)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    priceId: ").append(toIndentedString(priceId)).append("\n");
+    sb.append("    nptitle: ").append(toIndentedString(nptitle)).append("\n");
+    sb.append("    npresidencepermitnumber: ").append(toIndentedString(npresidencepermitnumber)).append("\n");
+    sb.append("    npbirthnumber: ").append(toIndentedString(npbirthnumber)).append("\n");
+    sb.append("    npsurname: ").append(toIndentedString(npsurname)).append("\n");
+    sb.append("    npforename: ").append(toIndentedString(npforename)).append("\n");
+    sb.append("    isregistered: ").append(toIndentedString(isregistered)).append("\n");
+    sb.append("    registerkeptat: ").append(toIndentedString(registerkeptat)).append("\n");
+    sb.append("    registerfileref: ").append(toIndentedString(registerfileref)).append("\n");
+    sb.append("    registerdatedate: ").append(toIndentedString(registerdatedate)).append("\n");
+    sb.append("    prefilldiscountkind: ").append(toIndentedString(prefilldiscountkind)).append("\n");
+    sb.append("    dealerdiscountkind: ").append(toIndentedString(dealerdiscountkind)).append("\n");
+    sb.append("    quantitydiscountkind: ").append(toIndentedString(quantitydiscountkind)).append("\n");
+    sb.append("    communicationtypeId: ").append(toIndentedString(communicationtypeId)).append("\n");
+    sb.append("    assortmentdiscounts: ").append(toIndentedString(assortmentdiscounts)).append("\n");
+    sb.append("    taxidentnumber: ").append(toIndentedString(taxidentnumber)).append("\n");
     sb.append("    pictures: ").append(toIndentedString(pictures)).append("\n");
-    sb.append("    eInvoiceFormat: ").append(toIndentedString(eInvoiceFormat)).append("\n");
-    sb.append("    invoicingDelivery: ").append(toIndentedString(invoicingDelivery)).append("\n");
-    sb.append("    newFirmMode: ").append(toIndentedString(newFirmMode)).append("\n");
-    sb.append("    electronicAddressID: ").append(toIndentedString(electronicAddressID)).append("\n");
-    sb.append("    initialFirmPersonID: ").append(toIndentedString(initialFirmPersonID)).append("\n");
-    sb.append("    initialFirmPersonFirstName: ").append(toIndentedString(initialFirmPersonFirstName)).append("\n");
-    sb.append("    initialFirmPersonLastName: ").append(toIndentedString(initialFirmPersonLastName)).append("\n");
-    sb.append("    initialFirmPersonTitle: ").append(toIndentedString(initialFirmPersonTitle)).append("\n");
-    sb.append("    initialFirmPersonSuffix: ").append(toIndentedString(initialFirmPersonSuffix)).append("\n");
-    sb.append("    elecPosAgreementRef: ").append(toIndentedString(elecPosAgreementRef)).append("\n");
-    sb.append("    majorCorrection: ").append(toIndentedString(majorCorrection)).append("\n");
-    sb.append("    unreliableStatus: ").append(toIndentedString(unreliableStatus)).append("\n");
-    sb.append("    unreliableDateDATE: ").append(toIndentedString(unreliableDateDATE)).append("\n");
-    sb.append("    unreliableCheckDateDATE: ").append(toIndentedString(unreliableCheckDateDATE)).append("\n");
-    sb.append("    unreliableStatusAsText: ").append(toIndentedString(unreliableStatusAsText)).append("\n");
-    sb.append("    insolvencyCheckResult: ").append(toIndentedString(insolvencyCheckResult)).append("\n");
-    sb.append("    insolvencyCheckResultAsText: ").append(toIndentedString(insolvencyCheckResultAsText)).append("\n");
-    sb.append("    insolvencyLastCheckDateTimeDATE: ").append(toIndentedString(insolvencyLastCheckDateTimeDATE)).append("\n");
-    sb.append("    importDataFromARESAtDATE: ").append(toIndentedString(importDataFromARESAtDATE)).append("\n");
-    sb.append("    pictureID: ").append(toIndentedString(pictureID)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    vATCountryID: ").append(toIndentedString(vATCountryID)).append("\n");
-    sb.append("    afterDueTerm: ").append(toIndentedString(afterDueTerm)).append("\n");
-    sb.append("    afterDueTermEnabled: ").append(toIndentedString(afterDueTermEnabled)).append("\n");
-    sb.append("    equityCapitalID: ").append(toIndentedString(equityCapitalID)).append("\n");
-    sb.append("    turnoverID: ").append(toIndentedString(turnoverID)).append("\n");
-    sb.append("    profitID: ").append(toIndentedString(profitID)).append("\n");
-    sb.append("    employeeCountID: ").append(toIndentedString(employeeCountID)).append("\n");
-    sb.append("    legalStatusID: ").append(toIndentedString(legalStatusID)).append("\n");
-    sb.append("    ownershipTypeID: ").append(toIndentedString(ownershipTypeID)).append("\n");
-    sb.append("    commercialsAgreement: ").append(toIndentedString(commercialsAgreement)).append("\n");
-    sb.append("    mainNACECodeID: ").append(toIndentedString(mainNACECodeID)).append("\n");
-    sb.append("    firmPersons: ").append(toIndentedString(firmPersons)).append("\n");
-    sb.append("    createdAtDATE: ").append(toIndentedString(createdAtDATE)).append("\n");
-    sb.append("    correctedAtDATE: ").append(toIndentedString(correctedAtDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
+    sb.append("    einvoiceformat: ").append(toIndentedString(einvoiceformat)).append("\n");
+    sb.append("    invoicingdelivery: ").append(toIndentedString(invoicingdelivery)).append("\n");
+    sb.append("    newfirmmode: ").append(toIndentedString(newfirmmode)).append("\n");
+    sb.append("    electronicaddressId: ").append(toIndentedString(electronicaddressId)).append("\n");
+    sb.append("    initialfirmpersonId: ").append(toIndentedString(initialfirmpersonId)).append("\n");
+    sb.append("    initialfirmpersonFirstname: ").append(toIndentedString(initialfirmpersonFirstname)).append("\n");
+    sb.append("    initialfirmpersonLastname: ").append(toIndentedString(initialfirmpersonLastname)).append("\n");
+    sb.append("    initialfirmpersonTitle: ").append(toIndentedString(initialfirmpersonTitle)).append("\n");
+    sb.append("    initialfirmpersonSuffix: ").append(toIndentedString(initialfirmpersonSuffix)).append("\n");
+    sb.append("    elecposagreementref: ").append(toIndentedString(elecposagreementref)).append("\n");
+    sb.append("    majorcorrection: ").append(toIndentedString(majorcorrection)).append("\n");
+    sb.append("    unreliablestatus: ").append(toIndentedString(unreliablestatus)).append("\n");
+    sb.append("    unreliabledatedate: ").append(toIndentedString(unreliabledatedate)).append("\n");
+    sb.append("    unreliablecheckdatedate: ").append(toIndentedString(unreliablecheckdatedate)).append("\n");
+    sb.append("    unreliablestatusastext: ").append(toIndentedString(unreliablestatusastext)).append("\n");
+    sb.append("    insolvencycheckresult: ").append(toIndentedString(insolvencycheckresult)).append("\n");
+    sb.append("    insolvencycheckresultastext: ").append(toIndentedString(insolvencycheckresultastext)).append("\n");
+    sb.append("    insolvencylastcheckdatetimedate: ").append(toIndentedString(insolvencylastcheckdatetimedate)).append("\n");
+    sb.append("    importdatafromaresatdate: ").append(toIndentedString(importdatafromaresatdate)).append("\n");
+    sb.append("    pictureId: ").append(toIndentedString(pictureId)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    vatcountryId: ").append(toIndentedString(vatcountryId)).append("\n");
+    sb.append("    afterdueterm: ").append(toIndentedString(afterdueterm)).append("\n");
+    sb.append("    afterduetermenabled: ").append(toIndentedString(afterduetermenabled)).append("\n");
+    sb.append("    equitycapitalId: ").append(toIndentedString(equitycapitalId)).append("\n");
+    sb.append("    turnoverId: ").append(toIndentedString(turnoverId)).append("\n");
+    sb.append("    profitId: ").append(toIndentedString(profitId)).append("\n");
+    sb.append("    employeecountId: ").append(toIndentedString(employeecountId)).append("\n");
+    sb.append("    legalstatusId: ").append(toIndentedString(legalstatusId)).append("\n");
+    sb.append("    ownershiptypeId: ").append(toIndentedString(ownershiptypeId)).append("\n");
+    sb.append("    commercialsagreement: ").append(toIndentedString(commercialsagreement)).append("\n");
+    sb.append("    mainnacecodeId: ").append(toIndentedString(mainnacecodeId)).append("\n");
+    sb.append("    firmpersons: ").append(toIndentedString(firmpersons)).append("\n");
+    sb.append("    createdatdate: ").append(toIndentedString(createdatdate)).append("\n");
+    sb.append("    correctedatdate: ").append(toIndentedString(correctedatdate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

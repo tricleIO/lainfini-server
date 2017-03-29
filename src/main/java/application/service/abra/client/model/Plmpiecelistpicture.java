@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,114 +35,191 @@ import java.util.Objects;
 /**
  * Plmpiecelistpicture
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmpiecelistpicture   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Revided_ID")
-  private String revidedID = null;
+  @SerializedName("revided_id")
+  private String revidedId = null;
 
-  @SerializedName("RevisionDescription")
-  private String revisionDescription = null;
+  @SerializedName("revisiondescription")
+  private String revisiondescription = null;
 
-  @SerializedName("RevisionDate$DATE")
-  private DateTime revisionDateDATE = null;
+  @SerializedName("revisiondate$date")
+  private DateTime revisiondatedate = null;
 
-  @SerializedName("RevisionAuthor_ID")
-  private String revisionAuthorID = null;
+  @SerializedName("revisionauthor_id")
+  private String revisionauthorId = null;
 
-  @SerializedName("Revision")
+  @SerializedName("revision")
   private Integer revision = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Picture_ID")
-  private Plmpiecelistpicture pictureID = null;
+  @SerializedName("picture_id")
+  private Plmpiecelistpicture pictureId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Plmpiecelistpicture displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Plmpiecelistpicture id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmpiecelistpicture classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmpiecelistpicture objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * ID revidovaného objektu; ID objektu Obrázek ke kusovníku
-   * @return revidedID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "ID revidovaného objektu; ID objektu Obrázek ke kusovníku")
-  public String getRevidedID() {
-    return revidedID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Plmpiecelistpicture revidedId(String revidedId) {
+    this.revidedId = revidedId;
+    return this;
   }
 
    /**
-   * Popis revize
-   * @return revisionDescription
+   * id revidovaného objektu; id objektu obrázek ke kusovníku
+   * @return revidedId
   **/
-  @ApiModelProperty(example = "null", value = "Popis revize")
-  public String getRevisionDescription() {
-    return revisionDescription;
+  @ApiModelProperty(example = "null", value = "id revidovaného objektu; id objektu obrázek ke kusovníku")
+  public String getRevidedId() {
+    return revidedId;
+  }
+
+  public void setRevidedId(String revidedId) {
+    this.revidedId = revidedId;
+  }
+
+  public Plmpiecelistpicture revisiondescription(String revisiondescription) {
+    this.revisiondescription = revisiondescription;
+    return this;
   }
 
    /**
-   * Datum revize
-   * @return revisionDateDATE
+   * popis revize
+   * @return revisiondescription
   **/
-  @ApiModelProperty(example = "null", value = "Datum revize")
-  public DateTime getRevisionDateDATE() {
-    return revisionDateDATE;
+  @ApiModelProperty(example = "null", value = "popis revize")
+  public String getRevisiondescription() {
+    return revisiondescription;
+  }
+
+  public void setRevisiondescription(String revisiondescription) {
+    this.revisiondescription = revisiondescription;
+  }
+
+  public Plmpiecelistpicture revisiondatedate(DateTime revisiondatedate) {
+    this.revisiondatedate = revisiondatedate;
+    return this;
   }
 
    /**
-   * Autor revize; ID objektu Uživatel
-   * @return revisionAuthorID
+   * datum revize
+   * @return revisiondatedate
   **/
-  @ApiModelProperty(example = "null", value = "Autor revize; ID objektu Uživatel")
-  public String getRevisionAuthorID() {
-    return revisionAuthorID;
+  @ApiModelProperty(example = "null", value = "datum revize")
+  public DateTime getRevisiondatedate() {
+    return revisiondatedate;
+  }
+
+  public void setRevisiondatedate(DateTime revisiondatedate) {
+    this.revisiondatedate = revisiondatedate;
+  }
+
+  public Plmpiecelistpicture revisionauthorId(String revisionauthorId) {
+    this.revisionauthorId = revisionauthorId;
+    return this;
+  }
+
+   /**
+   * autor revize; id objektu uživatel
+   * @return revisionauthorId
+  **/
+  @ApiModelProperty(example = "null", value = "autor revize; id objektu uživatel")
+  public String getRevisionauthorId() {
+    return revisionauthorId;
+  }
+
+  public void setRevisionauthorId(String revisionauthorId) {
+    this.revisionauthorId = revisionauthorId;
+  }
+
+  public Plmpiecelistpicture revision(Integer revision) {
+    this.revision = revision;
+    return this;
   }
 
    /**
@@ -154,49 +231,62 @@ public class Plmpiecelistpicture   {
     return revision;
   }
 
-   /**
-   * Vlastník; ID objektu Kusovník [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Kusovník [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  public void setRevision(Integer revision) {
+    this.revision = revision;
   }
 
-  public Plmpiecelistpicture posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Plmpiecelistpicture parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * vlastník; id objektu kusovník [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu kusovník [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Plmpiecelistpicture pictureID(Plmpiecelistpicture pictureID) {
-    this.pictureID = pictureID;
+  public Plmpiecelistpicture posindex(Integer posindex) {
+    this.posindex = posindex;
     return this;
   }
 
    /**
-   * Get pictureID
-   * @return pictureID
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Plmpiecelistpicture pictureId(Plmpiecelistpicture pictureId) {
+    this.pictureId = pictureId;
+    return this;
+  }
+
+   /**
+   * Get pictureId
+   * @return pictureId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Plmpiecelistpicture getPictureID() {
-    return pictureID;
+  public Plmpiecelistpicture getPictureId() {
+    return pictureId;
   }
 
-  public void setPictureID(Plmpiecelistpicture pictureID) {
-    this.pictureID = pictureID;
+  public void setPictureId(Plmpiecelistpicture pictureId) {
+    this.pictureId = pictureId;
   }
 
 
@@ -209,23 +299,23 @@ public class Plmpiecelistpicture   {
       return false;
     }
     Plmpiecelistpicture plmpiecelistpicture = (Plmpiecelistpicture) o;
-    return Objects.equals(this.displayName, plmpiecelistpicture.displayName) &&
-        Objects.equals(this.ID, plmpiecelistpicture.ID) &&
-        Objects.equals(this.classID, plmpiecelistpicture.classID) &&
-        Objects.equals(this.objVersion, plmpiecelistpicture.objVersion) &&
-        Objects.equals(this.revidedID, plmpiecelistpicture.revidedID) &&
-        Objects.equals(this.revisionDescription, plmpiecelistpicture.revisionDescription) &&
-        Objects.equals(this.revisionDateDATE, plmpiecelistpicture.revisionDateDATE) &&
-        Objects.equals(this.revisionAuthorID, plmpiecelistpicture.revisionAuthorID) &&
+    return Objects.equals(this.displayname, plmpiecelistpicture.displayname) &&
+        Objects.equals(this.id, plmpiecelistpicture.id) &&
+        Objects.equals(this.classid, plmpiecelistpicture.classid) &&
+        Objects.equals(this.objversion, plmpiecelistpicture.objversion) &&
+        Objects.equals(this.revidedId, plmpiecelistpicture.revidedId) &&
+        Objects.equals(this.revisiondescription, plmpiecelistpicture.revisiondescription) &&
+        Objects.equals(this.revisiondatedate, plmpiecelistpicture.revisiondatedate) &&
+        Objects.equals(this.revisionauthorId, plmpiecelistpicture.revisionauthorId) &&
         Objects.equals(this.revision, plmpiecelistpicture.revision) &&
-        Objects.equals(this.parentID, plmpiecelistpicture.parentID) &&
-        Objects.equals(this.posIndex, plmpiecelistpicture.posIndex) &&
-        Objects.equals(this.pictureID, plmpiecelistpicture.pictureID);
+        Objects.equals(this.parentId, plmpiecelistpicture.parentId) &&
+        Objects.equals(this.posindex, plmpiecelistpicture.posindex) &&
+        Objects.equals(this.pictureId, plmpiecelistpicture.pictureId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, revidedID, revisionDescription, revisionDateDATE, revisionAuthorID, revision, parentID, posIndex, pictureID);
+    return Objects.hash(displayname, id, classid, objversion, revidedId, revisiondescription, revisiondatedate, revisionauthorId, revision, parentId, posindex, pictureId);
   }
 
   @Override
@@ -233,18 +323,18 @@ public class Plmpiecelistpicture   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmpiecelistpicture {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    revidedID: ").append(toIndentedString(revidedID)).append("\n");
-    sb.append("    revisionDescription: ").append(toIndentedString(revisionDescription)).append("\n");
-    sb.append("    revisionDateDATE: ").append(toIndentedString(revisionDateDATE)).append("\n");
-    sb.append("    revisionAuthorID: ").append(toIndentedString(revisionAuthorID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    revidedId: ").append(toIndentedString(revidedId)).append("\n");
+    sb.append("    revisiondescription: ").append(toIndentedString(revisiondescription)).append("\n");
+    sb.append("    revisiondatedate: ").append(toIndentedString(revisiondatedate)).append("\n");
+    sb.append("    revisionauthorId: ").append(toIndentedString(revisionauthorId)).append("\n");
     sb.append("    revision: ").append(toIndentedString(revision)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    pictureID: ").append(toIndentedString(pictureID)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    pictureId: ").append(toIndentedString(pictureId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

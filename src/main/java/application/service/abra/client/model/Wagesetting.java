@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,264 +36,300 @@ import java.util.Objects;
 /**
  * Wagesetting
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wagesetting   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Wagesettingrow> rows = new ArrayList<Wagesettingrow>();
 
-  @SerializedName("SBCalcSchemeForWSPart_ID")
-  private String sBCalcSchemeForWSPartID = null;
+  @SerializedName("sbcalcschemeforwspart_id")
+  private String sbcalcschemeforwspartId = null;
 
-  @SerializedName("SBCalcSchForWSCom_ID")
-  private String sBCalcSchForWSComID = null;
+  @SerializedName("sbcalcschforwscom_id")
+  private String sbcalcschforwscomId = null;
 
-  @SerializedName("YCCalcSchForWSCom_ID")
-  private String yCCalcSchForWSComID = null;
+  @SerializedName("yccalcschforwscom_id")
+  private String yccalcschforwscomId = null;
 
-  @SerializedName("UseUserRoundDefinitions")
-  private Boolean useUserRoundDefinitions = null;
+  @SerializedName("useuserrounddefinitions")
+  private Boolean useuserrounddefinitions = null;
 
-  @SerializedName("UserAnnClearingTaxBaseRounding")
-  private Integer userAnnClearingTaxBaseRounding = null;
+  @SerializedName("userannclearingtaxbaserounding")
+  private Integer userannclearingtaxbaserounding = null;
 
-  @SerializedName("UserAnnClearingTaxRounding")
-  private Integer userAnnClearingTaxRounding = null;
+  @SerializedName("userannclearingtaxrounding")
+  private Integer userannclearingtaxrounding = null;
 
-  @SerializedName("UserPercentDocksRounding")
-  private Integer userPercentDocksRounding = null;
+  @SerializedName("userpercentdocksrounding")
+  private Integer userpercentdocksrounding = null;
 
-  @SerializedName("FormulaCodeEmployee")
-  private String formulaCodeEmployee = null;
+  @SerializedName("formulacodeemployee")
+  private String formulacodeemployee = null;
 
-  @SerializedName("ReduceRewardByWorkTime")
-  private Boolean reduceRewardByWorkTime = null;
+  @SerializedName("reducerewardbyworktime")
+  private Boolean reducerewardbyworktime = null;
 
-  @SerializedName("UseAbsencesInCalculation")
-  private Boolean useAbsencesInCalculation = null;
+  @SerializedName("useabsencesincalculation")
+  private Boolean useabsencesincalculation = null;
 
-  @SerializedName("AutomaticCalc")
-  private Boolean automaticCalc = null;
+  @SerializedName("automaticcalc")
+  private Boolean automaticcalc = null;
 
-  @SerializedName("WageFactorySettings")
-  private List<Wagefactorysetting> wageFactorySettings = new ArrayList<Wagefactorysetting>();
+  @SerializedName("wagefactorysettings")
+  private List<Wagefactorysetting> wagefactorysettings = new ArrayList<Wagefactorysetting>();
 
-  @SerializedName("AverageType")
-  private Integer averageType = null;
+  @SerializedName("averagetype")
+  private Integer averagetype = null;
 
-  @SerializedName("FieldForPercentDock")
-  private Integer fieldForPercentDock = null;
+  @SerializedName("fieldforpercentdock")
+  private Integer fieldforpercentdock = null;
 
-  @SerializedName("AllowSicksBack")
-  private Boolean allowSicksBack = null;
+  @SerializedName("allowsicksback")
+  private Boolean allowsicksback = null;
 
-  @SerializedName("RewardLongTermShortingMethod")
-  private Integer rewardLongTermShortingMethod = null;
+  @SerializedName("rewardlongtermshortingmethod")
+  private Integer rewardlongtermshortingmethod = null;
 
-  @SerializedName("MealTicketClaimMode")
-  private Integer mealTicketClaimMode = null;
+  @SerializedName("mealticketclaimmode")
+  private Integer mealticketclaimmode = null;
 
-  @SerializedName("MTCMWithHoliday")
-  private Boolean mTCMWithHoliday = null;
+  @SerializedName("mtcmwithholiday")
+  private Boolean mtcmwithholiday = null;
 
-  @SerializedName("MTCMWithPaidFree")
-  private Boolean mTCMWithPaidFree = null;
+  @SerializedName("mtcmwithpaidfree")
+  private Boolean mtcmwithpaidfree = null;
 
-  @SerializedName("MTCMWithFeasts")
-  private Boolean mTCMWithFeasts = null;
+  @SerializedName("mtcmwithfeasts")
+  private Boolean mtcmwithfeasts = null;
 
-  @SerializedName("MTCMWithSicks")
-  private Boolean mTCMWithSicks = null;
+  @SerializedName("mtcmwithsicks")
+  private Boolean mtcmwithsicks = null;
 
-  @SerializedName("PreferredCodeBehaviour")
-  private Integer preferredCodeBehaviour = null;
+  @SerializedName("preferredcodebehaviour")
+  private Integer preferredcodebehaviour = null;
 
-  @SerializedName("ValidateSBMaximum")
-  private Boolean validateSBMaximum = null;
+  @SerializedName("validatesbmaximum")
+  private Boolean validatesbmaximum = null;
 
-  @SerializedName("HIAnnualClearingChart_ID")
-  private String hIAnnualClearingChartID = null;
+  @SerializedName("hiannualclearingchart_id")
+  private String hiannualclearingchartId = null;
 
-  @SerializedName("FieldForInsCompRegNum")
-  private Integer fieldForInsCompRegNum = null;
+  @SerializedName("fieldforinscompregnum")
+  private Integer fieldforinscompregnum = null;
 
-  @SerializedName("UserHIMinInsBaseRounding")
-  private Integer userHIMinInsBaseRounding = null;
+  @SerializedName("userhimininsbaserounding")
+  private Integer userhimininsbaserounding = null;
 
-  @SerializedName("UserHIKMinKMaxRounding")
-  private Integer userHIKMinKMaxRounding = null;
+  @SerializedName("userhikminkmaxrounding")
+  private Integer userhikminkmaxrounding = null;
 
-  @SerializedName("SIPeriodStdActionParams")
-  private String sIPeriodStdActionParams = null;
+  @SerializedName("siperiodstdactionparams")
+  private String siperiodstdactionparams = null;
 
-  @SerializedName("HIPeriodStdActionParams")
-  private String hIPeriodStdActionParams = null;
+  @SerializedName("hiperiodstdactionparams")
+  private String hiperiodstdactionparams = null;
 
-  @SerializedName("SIPeriodStdActionField")
-  private Integer sIPeriodStdActionField = null;
+  @SerializedName("siperiodstdactionfield")
+  private Integer siperiodstdactionfield = null;
 
-  @SerializedName("HIPeriodStdActionField")
-  private Integer hIPeriodStdActionField = null;
+  @SerializedName("hiperiodstdactionfield")
+  private Integer hiperiodstdactionfield = null;
 
-  @SerializedName("HIFirm_ID")
-  private String hIFirmID = null;
+  @SerializedName("hifirm_id")
+  private String hifirmId = null;
 
-  @SerializedName("UseUserHIRoundDefinitions")
-  private Boolean useUserHIRoundDefinitions = null;
+  @SerializedName("useuserhirounddefinitions")
+  private Boolean useuserhirounddefinitions = null;
 
-  @SerializedName("ClaimShortRounding")
-  private Integer claimShortRounding = null;
+  @SerializedName("claimshortrounding")
+  private Integer claimshortrounding = null;
 
-  @SerializedName("ClaimShortAuto")
-  private Boolean claimShortAuto = null;
+  @SerializedName("claimshortauto")
+  private Boolean claimshortauto = null;
 
-  @SerializedName("ClaimShortRoundingHrs")
-  private Integer claimShortRoundingHrs = null;
+  @SerializedName("claimshortroundinghrs")
+  private Integer claimshortroundinghrs = null;
 
-  @SerializedName("FieldForPercentDockLabel")
-  private String fieldForPercentDockLabel = null;
+  @SerializedName("fieldforpercentdocklabel")
+  private String fieldforpercentdocklabel = null;
 
-  @SerializedName("FieldForPercentDockName")
-  private String fieldForPercentDockName = null;
+  @SerializedName("fieldforpercentdockname")
+  private String fieldforpercentdockname = null;
 
-  @SerializedName("FieldForDisabilityName")
-  private String fieldForDisabilityName = null;
+  @SerializedName("fieldfordisabilityname")
+  private String fieldfordisabilityname = null;
 
-  @SerializedName("FieldForDisabilityFromName")
-  private String fieldForDisabilityFromName = null;
+  @SerializedName("fieldfordisabilityfromname")
+  private String fieldfordisabilityfromname = null;
 
-  @SerializedName("FieldForInsCompRegNumName")
-  private String fieldForInsCompRegNumName = null;
+  @SerializedName("fieldforinscompregnumname")
+  private String fieldforinscompregnumname = null;
 
-  @SerializedName("FieldForDisabilityLabel")
-  private String fieldForDisabilityLabel = null;
+  @SerializedName("fieldfordisabilitylabel")
+  private String fieldfordisabilitylabel = null;
 
-  @SerializedName("FieldForDisabilityFromLabel")
-  private String fieldForDisabilityFromLabel = null;
+  @SerializedName("fieldfordisabilityfromlabel")
+  private String fieldfordisabilityfromlabel = null;
 
-  @SerializedName("FieldForInsCompRegNumLabel")
-  private String fieldForInsCompRegNumLabel = null;
+  @SerializedName("fieldforinscompregnumlabel")
+  private String fieldforinscompregnumlabel = null;
 
-  @SerializedName("SystAnnClearingTaxBaseRounding")
-  private Integer systAnnClearingTaxBaseRounding = null;
+  @SerializedName("systannclearingtaxbaserounding")
+  private Integer systannclearingtaxbaserounding = null;
 
-  @SerializedName("SystAnnClearingTaxRounding")
-  private Integer systAnnClearingTaxRounding = null;
+  @SerializedName("systannclearingtaxrounding")
+  private Integer systannclearingtaxrounding = null;
 
-  @SerializedName("SystPercentDocksRounding")
-  private Integer systPercentDocksRounding = null;
+  @SerializedName("systpercentdocksrounding")
+  private Integer systpercentdocksrounding = null;
 
-  @SerializedName("AnnClearingTaxBaseRounding")
-  private Integer annClearingTaxBaseRounding = null;
+  @SerializedName("annclearingtaxbaserounding")
+  private Integer annclearingtaxbaserounding = null;
 
-  @SerializedName("AnnClearingTaxRounding")
-  private Integer annClearingTaxRounding = null;
+  @SerializedName("annclearingtaxrounding")
+  private Integer annclearingtaxrounding = null;
 
-  @SerializedName("PercentDocksRounding")
-  private Integer percentDocksRounding = null;
+  @SerializedName("percentdocksrounding")
+  private Integer percentdocksrounding = null;
 
-  @SerializedName("HIYearRounding")
-  private Integer hIYearRounding = null;
+  @SerializedName("hiyearrounding")
+  private Integer hiyearrounding = null;
 
-  @SerializedName("HIKMinKMaxRounding")
-  private Integer hIKMinKMaxRounding = null;
+  @SerializedName("hikminkmaxrounding")
+  private Integer hikminkmaxrounding = null;
 
-  @SerializedName("HIMinInsBaseRounding")
-  private Integer hIMinInsBaseRounding = null;
+  @SerializedName("himininsbaserounding")
+  private Integer himininsbaserounding = null;
 
-  @SerializedName("SystHIYearRounding")
-  private Integer systHIYearRounding = null;
+  @SerializedName("systhiyearrounding")
+  private Integer systhiyearrounding = null;
 
-  @SerializedName("SystHIKMinKMaxRounding")
-  private Integer systHIKMinKMaxRounding = null;
+  @SerializedName("systhikminkmaxrounding")
+  private Integer systhikminkmaxrounding = null;
 
-  @SerializedName("SystHIMinInsBaseRounding")
-  private Integer systHIMinInsBaseRounding = null;
+  @SerializedName("systhimininsbaserounding")
+  private Integer systhimininsbaserounding = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("WageClosingDayType")
-  private Integer wageClosingDayType = null;
+  @SerializedName("wageclosingdaytype")
+  private Integer wageclosingdaytype = null;
 
-  @SerializedName("WageClosingNrDays")
-  private Integer wageClosingNrDays = null;
+  @SerializedName("wageclosingnrdays")
+  private Integer wageclosingnrdays = null;
 
-  @SerializedName("SmallOrBigCompany")
-  private Integer smallOrBigCompany = null;
+  @SerializedName("smallorbigcompany")
+  private Integer smallorbigcompany = null;
 
-  @SerializedName("FieldForDisability")
-  private Integer fieldForDisability = null;
+  @SerializedName("fieldfordisability")
+  private Integer fieldfordisability = null;
 
-  @SerializedName("FieldForDisabilityFrom")
-  private Integer fieldForDisabilityFrom = null;
+  @SerializedName("fieldfordisabilityfrom")
+  private Integer fieldfordisabilityfrom = null;
 
-  @SerializedName("UserHIYearRounding")
-  private Integer userHIYearRounding = null;
+  @SerializedName("userhiyearrounding")
+  private Integer userhiyearrounding = null;
 
-  @SerializedName("SIPeriodStdActFldName")
-  private String sIPeriodStdActFldName = null;
+  @SerializedName("siperiodstdactfldname")
+  private String siperiodstdactfldname = null;
 
-  @SerializedName("SIPeriodStdActFldLabel")
-  private String sIPeriodStdActFldLabel = null;
+  @SerializedName("siperiodstdactfldlabel")
+  private String siperiodstdactfldlabel = null;
 
-  @SerializedName("HIPeriodStdActFldName")
-  private String hIPeriodStdActFldName = null;
+  @SerializedName("hiperiodstdactfldname")
+  private String hiperiodstdactfldname = null;
 
-  @SerializedName("HIPeriodStdActFldLabel")
-  private String hIPeriodStdActFldLabel = null;
+  @SerializedName("hiperiodstdactfldlabel")
+  private String hiperiodstdactfldlabel = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("ProtectedWorkshop")
-  private Boolean protectedWorkshop = null;
+  @SerializedName("protectedworkshop")
+  private Boolean protectedworkshop = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Wagesetting displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wagesetting id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wagesetting classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wagesetting objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Wagesetting rows(List<Wagesettingrow> rows) {
@@ -307,10 +343,10 @@ public class Wagesetting   {
   }
 
    /**
-   * Řádky; kolekce BO Vazba na proměnnou [nepersistentní položka]
+   * Řádky; kolekce bo vazba na proměnnou [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Vazba na proměnnou [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo vazba na proměnnou [nepersistentní položka]")
   public List<Wagesettingrow> getRows() {
     return rows;
   }
@@ -319,1251 +355,1251 @@ public class Wagesetting   {
     this.rows = rows;
   }
 
-  public Wagesetting sBCalcSchemeForWSPartID(String sBCalcSchemeForWSPartID) {
-    this.sBCalcSchemeForWSPartID = sBCalcSchemeForWSPartID;
+  public Wagesetting sbcalcschemeforwspartId(String sbcalcschemeforwspartId) {
+    this.sbcalcschemeforwspartId = sbcalcschemeforwspartId;
     return this;
   }
 
    /**
-   * Výp. schéma pro dílčí ML - ND v ochr. lhůtě; ID objektu Výpočtové schéma [persistentní položka]
-   * @return sBCalcSchemeForWSPartID
+   * výp. schéma pro dílčí ml - nd v ochr. lhůtě; id objektu výpočtové schéma [persistentní položka]
+   * @return sbcalcschemeforwspartId
   **/
-  @ApiModelProperty(example = "null", value = "Výp. schéma pro dílčí ML - ND v ochr. lhůtě; ID objektu Výpočtové schéma [persistentní položka]")
-  public String getSBCalcSchemeForWSPartID() {
-    return sBCalcSchemeForWSPartID;
+  @ApiModelProperty(example = "null", value = "výp. schéma pro dílčí ml - nd v ochr. lhůtě; id objektu výpočtové schéma [persistentní položka]")
+  public String getSbcalcschemeforwspartId() {
+    return sbcalcschemeforwspartId;
   }
 
-  public void setSBCalcSchemeForWSPartID(String sBCalcSchemeForWSPartID) {
-    this.sBCalcSchemeForWSPartID = sBCalcSchemeForWSPartID;
+  public void setSbcalcschemeforwspartId(String sbcalcschemeforwspartId) {
+    this.sbcalcschemeforwspartId = sbcalcschemeforwspartId;
   }
 
-  public Wagesetting sBCalcSchForWSComID(String sBCalcSchForWSComID) {
-    this.sBCalcSchForWSComID = sBCalcSchForWSComID;
+  public Wagesetting sbcalcschforwscomId(String sbcalcschforwscomId) {
+    this.sbcalcschforwscomId = sbcalcschforwscomId;
     return this;
   }
 
    /**
-   * Výp. schéma pro souhrnný ML - ND v ochr. lhůtě; ID objektu Výpočtové schéma [persistentní položka]
-   * @return sBCalcSchForWSComID
+   * výp. schéma pro souhrnný ml - nd v ochr. lhůtě; id objektu výpočtové schéma [persistentní položka]
+   * @return sbcalcschforwscomId
   **/
-  @ApiModelProperty(example = "null", value = "Výp. schéma pro souhrnný ML - ND v ochr. lhůtě; ID objektu Výpočtové schéma [persistentní položka]")
-  public String getSBCalcSchForWSComID() {
-    return sBCalcSchForWSComID;
+  @ApiModelProperty(example = "null", value = "výp. schéma pro souhrnný ml - nd v ochr. lhůtě; id objektu výpočtové schéma [persistentní položka]")
+  public String getSbcalcschforwscomId() {
+    return sbcalcschforwscomId;
   }
 
-  public void setSBCalcSchForWSComID(String sBCalcSchForWSComID) {
-    this.sBCalcSchForWSComID = sBCalcSchForWSComID;
+  public void setSbcalcschforwscomId(String sbcalcschforwscomId) {
+    this.sbcalcschforwscomId = sbcalcschforwscomId;
   }
 
-  public Wagesetting yCCalcSchForWSComID(String yCCalcSchForWSComID) {
-    this.yCCalcSchForWSComID = yCCalcSchForWSComID;
+  public Wagesetting yccalcschforwscomId(String yccalcschforwscomId) {
+    this.yccalcschforwscomId = yccalcschforwscomId;
     return this;
   }
 
    /**
-   * Výp. schéma pro souhrnný ML - RZÚ po ukončeném PP; ID objektu Výpočtové schéma [persistentní položka]
-   * @return yCCalcSchForWSComID
+   * výp. schéma pro souhrnný ml - rzÚ po ukončeném pp; id objektu výpočtové schéma [persistentní položka]
+   * @return yccalcschforwscomId
   **/
-  @ApiModelProperty(example = "null", value = "Výp. schéma pro souhrnný ML - RZÚ po ukončeném PP; ID objektu Výpočtové schéma [persistentní položka]")
-  public String getYCCalcSchForWSComID() {
-    return yCCalcSchForWSComID;
+  @ApiModelProperty(example = "null", value = "výp. schéma pro souhrnný ml - rzÚ po ukončeném pp; id objektu výpočtové schéma [persistentní položka]")
+  public String getYccalcschforwscomId() {
+    return yccalcschforwscomId;
   }
 
-  public void setYCCalcSchForWSComID(String yCCalcSchForWSComID) {
-    this.yCCalcSchForWSComID = yCCalcSchForWSComID;
+  public void setYccalcschforwscomId(String yccalcschforwscomId) {
+    this.yccalcschforwscomId = yccalcschforwscomId;
   }
 
-  public Wagesetting useUserRoundDefinitions(Boolean useUserRoundDefinitions) {
-    this.useUserRoundDefinitions = useUserRoundDefinitions;
+  public Wagesetting useuserrounddefinitions(Boolean useuserrounddefinitions) {
+    this.useuserrounddefinitions = useuserrounddefinitions;
     return this;
   }
 
    /**
    * uživ.def.zaokr. [persistentní položka]
-   * @return useUserRoundDefinitions
+   * @return useuserrounddefinitions
   **/
   @ApiModelProperty(example = "null", value = "uživ.def.zaokr. [persistentní položka]")
-  public Boolean getUseUserRoundDefinitions() {
-    return useUserRoundDefinitions;
+  public Boolean getUseuserrounddefinitions() {
+    return useuserrounddefinitions;
   }
 
-  public void setUseUserRoundDefinitions(Boolean useUserRoundDefinitions) {
-    this.useUserRoundDefinitions = useUserRoundDefinitions;
+  public void setUseuserrounddefinitions(Boolean useuserrounddefinitions) {
+    this.useuserrounddefinitions = useuserrounddefinitions;
   }
 
-  public Wagesetting userAnnClearingTaxBaseRounding(Integer userAnnClearingTaxBaseRounding) {
-    this.userAnnClearingTaxBaseRounding = userAnnClearingTaxBaseRounding;
+  public Wagesetting userannclearingtaxbaserounding(Integer userannclearingtaxbaserounding) {
+    this.userannclearingtaxbaserounding = userannclearingtaxbaserounding;
     return this;
   }
 
    /**
-   * Už.zaokr.základu daně [persistentní položka]
-   * @return userAnnClearingTaxBaseRounding
+   * už.zaokr.základu daně [persistentní položka]
+   * @return userannclearingtaxbaserounding
   **/
-  @ApiModelProperty(example = "null", value = "Už.zaokr.základu daně [persistentní položka]")
-  public Integer getUserAnnClearingTaxBaseRounding() {
-    return userAnnClearingTaxBaseRounding;
+  @ApiModelProperty(example = "null", value = "už.zaokr.základu daně [persistentní položka]")
+  public Integer getUserannclearingtaxbaserounding() {
+    return userannclearingtaxbaserounding;
   }
 
-  public void setUserAnnClearingTaxBaseRounding(Integer userAnnClearingTaxBaseRounding) {
-    this.userAnnClearingTaxBaseRounding = userAnnClearingTaxBaseRounding;
+  public void setUserannclearingtaxbaserounding(Integer userannclearingtaxbaserounding) {
+    this.userannclearingtaxbaserounding = userannclearingtaxbaserounding;
   }
 
-  public Wagesetting userAnnClearingTaxRounding(Integer userAnnClearingTaxRounding) {
-    this.userAnnClearingTaxRounding = userAnnClearingTaxRounding;
+  public Wagesetting userannclearingtaxrounding(Integer userannclearingtaxrounding) {
+    this.userannclearingtaxrounding = userannclearingtaxrounding;
     return this;
   }
 
    /**
-   * Už.zaokr.daně [persistentní položka]
-   * @return userAnnClearingTaxRounding
+   * už.zaokr.daně [persistentní položka]
+   * @return userannclearingtaxrounding
   **/
-  @ApiModelProperty(example = "null", value = "Už.zaokr.daně [persistentní položka]")
-  public Integer getUserAnnClearingTaxRounding() {
-    return userAnnClearingTaxRounding;
+  @ApiModelProperty(example = "null", value = "už.zaokr.daně [persistentní položka]")
+  public Integer getUserannclearingtaxrounding() {
+    return userannclearingtaxrounding;
   }
 
-  public void setUserAnnClearingTaxRounding(Integer userAnnClearingTaxRounding) {
-    this.userAnnClearingTaxRounding = userAnnClearingTaxRounding;
+  public void setUserannclearingtaxrounding(Integer userannclearingtaxrounding) {
+    this.userannclearingtaxrounding = userannclearingtaxrounding;
   }
 
-  public Wagesetting userPercentDocksRounding(Integer userPercentDocksRounding) {
-    this.userPercentDocksRounding = userPercentDocksRounding;
+  public Wagesetting userpercentdocksrounding(Integer userpercentdocksrounding) {
+    this.userpercentdocksrounding = userpercentdocksrounding;
     return this;
   }
 
    /**
-   * Už.zaokr.srážek [persistentní položka]
-   * @return userPercentDocksRounding
+   * už.zaokr.srážek [persistentní položka]
+   * @return userpercentdocksrounding
   **/
-  @ApiModelProperty(example = "null", value = "Už.zaokr.srážek [persistentní položka]")
-  public Integer getUserPercentDocksRounding() {
-    return userPercentDocksRounding;
+  @ApiModelProperty(example = "null", value = "už.zaokr.srážek [persistentní položka]")
+  public Integer getUserpercentdocksrounding() {
+    return userpercentdocksrounding;
   }
 
-  public void setUserPercentDocksRounding(Integer userPercentDocksRounding) {
-    this.userPercentDocksRounding = userPercentDocksRounding;
+  public void setUserpercentdocksrounding(Integer userpercentdocksrounding) {
+    this.userpercentdocksrounding = userpercentdocksrounding;
   }
 
-  public Wagesetting formulaCodeEmployee(String formulaCodeEmployee) {
-    this.formulaCodeEmployee = formulaCodeEmployee;
+  public Wagesetting formulacodeemployee(String formulacodeemployee) {
+    this.formulacodeemployee = formulacodeemployee;
     return this;
   }
 
    /**
-   * Def. kódu zaměstnance [persistentní položka]
-   * @return formulaCodeEmployee
+   * def. kódu zaměstnance [persistentní položka]
+   * @return formulacodeemployee
   **/
-  @ApiModelProperty(example = "null", value = "Def. kódu zaměstnance [persistentní položka]")
-  public String getFormulaCodeEmployee() {
-    return formulaCodeEmployee;
+  @ApiModelProperty(example = "null", value = "def. kódu zaměstnance [persistentní položka]")
+  public String getFormulacodeemployee() {
+    return formulacodeemployee;
   }
 
-  public void setFormulaCodeEmployee(String formulaCodeEmployee) {
-    this.formulaCodeEmployee = formulaCodeEmployee;
+  public void setFormulacodeemployee(String formulacodeemployee) {
+    this.formulacodeemployee = formulacodeemployee;
   }
 
-  public Wagesetting reduceRewardByWorkTime(Boolean reduceRewardByWorkTime) {
-    this.reduceRewardByWorkTime = reduceRewardByWorkTime;
+  public Wagesetting reducerewardbyworktime(Boolean reducerewardbyworktime) {
+    this.reducerewardbyworktime = reducerewardbyworktime;
     return this;
   }
 
    /**
-   * Redukce Odměny [persistentní položka]
-   * @return reduceRewardByWorkTime
+   * redukce odměny [persistentní položka]
+   * @return reducerewardbyworktime
   **/
-  @ApiModelProperty(example = "null", value = "Redukce Odměny [persistentní položka]")
-  public Boolean getReduceRewardByWorkTime() {
-    return reduceRewardByWorkTime;
+  @ApiModelProperty(example = "null", value = "redukce odměny [persistentní položka]")
+  public Boolean getReducerewardbyworktime() {
+    return reducerewardbyworktime;
   }
 
-  public void setReduceRewardByWorkTime(Boolean reduceRewardByWorkTime) {
-    this.reduceRewardByWorkTime = reduceRewardByWorkTime;
+  public void setReducerewardbyworktime(Boolean reducerewardbyworktime) {
+    this.reducerewardbyworktime = reducerewardbyworktime;
   }
 
-  public Wagesetting useAbsencesInCalculation(Boolean useAbsencesInCalculation) {
-    this.useAbsencesInCalculation = useAbsencesInCalculation;
+  public Wagesetting useabsencesincalculation(Boolean useabsencesincalculation) {
+    this.useabsencesincalculation = useabsencesincalculation;
     return this;
   }
 
    /**
-   * Použít nepřít. [persistentní položka]
-   * @return useAbsencesInCalculation
+   * použít nepřít. [persistentní položka]
+   * @return useabsencesincalculation
   **/
-  @ApiModelProperty(example = "null", value = "Použít nepřít. [persistentní položka]")
-  public Boolean getUseAbsencesInCalculation() {
-    return useAbsencesInCalculation;
+  @ApiModelProperty(example = "null", value = "použít nepřít. [persistentní položka]")
+  public Boolean getUseabsencesincalculation() {
+    return useabsencesincalculation;
   }
 
-  public void setUseAbsencesInCalculation(Boolean useAbsencesInCalculation) {
-    this.useAbsencesInCalculation = useAbsencesInCalculation;
+  public void setUseabsencesincalculation(Boolean useabsencesincalculation) {
+    this.useabsencesincalculation = useabsencesincalculation;
   }
 
-  public Wagesetting automaticCalc(Boolean automaticCalc) {
-    this.automaticCalc = automaticCalc;
+  public Wagesetting automaticcalc(Boolean automaticcalc) {
+    this.automaticcalc = automaticcalc;
     return this;
   }
 
    /**
-   * Automatický přepočet [persistentní položka]
-   * @return automaticCalc
+   * automatický přepočet [persistentní položka]
+   * @return automaticcalc
   **/
-  @ApiModelProperty(example = "null", value = "Automatický přepočet [persistentní položka]")
-  public Boolean getAutomaticCalc() {
-    return automaticCalc;
+  @ApiModelProperty(example = "null", value = "automatický přepočet [persistentní položka]")
+  public Boolean getAutomaticcalc() {
+    return automaticcalc;
   }
 
-  public void setAutomaticCalc(Boolean automaticCalc) {
-    this.automaticCalc = automaticCalc;
+  public void setAutomaticcalc(Boolean automaticcalc) {
+    this.automaticcalc = automaticcalc;
   }
 
-  public Wagesetting wageFactorySettings(List<Wagefactorysetting> wageFactorySettings) {
-    this.wageFactorySettings = wageFactorySettings;
+  public Wagesetting wagefactorysettings(List<Wagefactorysetting> wagefactorysettings) {
+    this.wagefactorysettings = wagefactorysettings;
     return this;
   }
 
-  public Wagesetting addWageFactorySettingsItem(Wagefactorysetting wageFactorySettingsItem) {
-    this.wageFactorySettings.add(wageFactorySettingsItem);
+  public Wagesetting addWagefactorysettingsItem(Wagefactorysetting wagefactorysettingsItem) {
+    this.wagefactorysettings.add(wagefactorysettingsItem);
     return this;
   }
 
    /**
-   * Nastavení zaokrouhlování; kolekce BO Systém.nastavení [nepersistentní položka]
-   * @return wageFactorySettings
+   * nastavení zaokrouhlování; kolekce bo systém.nastavení [nepersistentní položka]
+   * @return wagefactorysettings
   **/
-  @ApiModelProperty(example = "null", value = "Nastavení zaokrouhlování; kolekce BO Systém.nastavení [nepersistentní položka]")
-  public List<Wagefactorysetting> getWageFactorySettings() {
-    return wageFactorySettings;
+  @ApiModelProperty(example = "null", value = "nastavení zaokrouhlování; kolekce bo systém.nastavení [nepersistentní položka]")
+  public List<Wagefactorysetting> getWagefactorysettings() {
+    return wagefactorysettings;
   }
 
-  public void setWageFactorySettings(List<Wagefactorysetting> wageFactorySettings) {
-    this.wageFactorySettings = wageFactorySettings;
+  public void setWagefactorysettings(List<Wagefactorysetting> wagefactorysettings) {
+    this.wagefactorysettings = wagefactorysettings;
   }
 
-  public Wagesetting averageType(Integer averageType) {
-    this.averageType = averageType;
+  public Wagesetting averagetype(Integer averagetype) {
+    this.averagetype = averagetype;
     return this;
   }
 
    /**
-   * Výchozí typ průměru [persistentní položka]
-   * @return averageType
+   * výchozí typ průměru [persistentní položka]
+   * @return averagetype
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí typ průměru [persistentní položka]")
-  public Integer getAverageType() {
-    return averageType;
+  @ApiModelProperty(example = "null", value = "výchozí typ průměru [persistentní položka]")
+  public Integer getAveragetype() {
+    return averagetype;
   }
 
-  public void setAverageType(Integer averageType) {
-    this.averageType = averageType;
+  public void setAveragetype(Integer averagetype) {
+    this.averagetype = averagetype;
   }
 
-  public Wagesetting fieldForPercentDock(Integer fieldForPercentDock) {
-    this.fieldForPercentDock = fieldForPercentDock;
+  public Wagesetting fieldforpercentdock(Integer fieldforpercentdock) {
+    this.fieldforpercentdock = fieldforpercentdock;
     return this;
   }
 
    /**
-   * Položka pro srážku procentem [persistentní položka]
-   * @return fieldForPercentDock
+   * položka pro srážku procentem [persistentní položka]
+   * @return fieldforpercentdock
   **/
-  @ApiModelProperty(example = "null", value = "Položka pro srážku procentem [persistentní položka]")
-  public Integer getFieldForPercentDock() {
-    return fieldForPercentDock;
+  @ApiModelProperty(example = "null", value = "položka pro srážku procentem [persistentní položka]")
+  public Integer getFieldforpercentdock() {
+    return fieldforpercentdock;
   }
 
-  public void setFieldForPercentDock(Integer fieldForPercentDock) {
-    this.fieldForPercentDock = fieldForPercentDock;
+  public void setFieldforpercentdock(Integer fieldforpercentdock) {
+    this.fieldforpercentdock = fieldforpercentdock;
   }
 
-  public Wagesetting allowSicksBack(Boolean allowSicksBack) {
-    this.allowSicksBack = allowSicksBack;
+  public Wagesetting allowsicksback(Boolean allowsicksback) {
+    this.allowsicksback = allowsicksback;
     return this;
   }
 
    /**
-   * Povolit zpětné zadávání ND [persistentní položka]
-   * @return allowSicksBack
+   * povolit zpětné zadávání nd [persistentní položka]
+   * @return allowsicksback
   **/
-  @ApiModelProperty(example = "null", value = "Povolit zpětné zadávání ND [persistentní položka]")
-  public Boolean getAllowSicksBack() {
-    return allowSicksBack;
+  @ApiModelProperty(example = "null", value = "povolit zpětné zadávání nd [persistentní položka]")
+  public Boolean getAllowsicksback() {
+    return allowsicksback;
   }
 
-  public void setAllowSicksBack(Boolean allowSicksBack) {
-    this.allowSicksBack = allowSicksBack;
+  public void setAllowsicksback(Boolean allowsicksback) {
+    this.allowsicksback = allowsicksback;
   }
 
-  public Wagesetting rewardLongTermShortingMethod(Integer rewardLongTermShortingMethod) {
-    this.rewardLongTermShortingMethod = rewardLongTermShortingMethod;
+  public Wagesetting rewardlongtermshortingmethod(Integer rewardlongtermshortingmethod) {
+    this.rewardlongtermshortingmethod = rewardlongtermshortingmethod;
     return this;
   }
 
    /**
-   * Způsob krácení odměn [persistentní položka]
-   * @return rewardLongTermShortingMethod
+   * způsob krácení odměn [persistentní položka]
+   * @return rewardlongtermshortingmethod
   **/
-  @ApiModelProperty(example = "null", value = "Způsob krácení odměn [persistentní položka]")
-  public Integer getRewardLongTermShortingMethod() {
-    return rewardLongTermShortingMethod;
+  @ApiModelProperty(example = "null", value = "způsob krácení odměn [persistentní položka]")
+  public Integer getRewardlongtermshortingmethod() {
+    return rewardlongtermshortingmethod;
   }
 
-  public void setRewardLongTermShortingMethod(Integer rewardLongTermShortingMethod) {
-    this.rewardLongTermShortingMethod = rewardLongTermShortingMethod;
+  public void setRewardlongtermshortingmethod(Integer rewardlongtermshortingmethod) {
+    this.rewardlongtermshortingmethod = rewardlongtermshortingmethod;
   }
 
-  public Wagesetting mealTicketClaimMode(Integer mealTicketClaimMode) {
-    this.mealTicketClaimMode = mealTicketClaimMode;
+  public Wagesetting mealticketclaimmode(Integer mealticketclaimmode) {
+    this.mealticketclaimmode = mealticketclaimmode;
     return this;
   }
 
    /**
-   * Výpoč. nár. na stravenky [persistentní položka]
-   * @return mealTicketClaimMode
+   * výpoč. nár. na stravenky [persistentní položka]
+   * @return mealticketclaimmode
   **/
-  @ApiModelProperty(example = "null", value = "Výpoč. nár. na stravenky [persistentní položka]")
-  public Integer getMealTicketClaimMode() {
-    return mealTicketClaimMode;
+  @ApiModelProperty(example = "null", value = "výpoč. nár. na stravenky [persistentní položka]")
+  public Integer getMealticketclaimmode() {
+    return mealticketclaimmode;
   }
 
-  public void setMealTicketClaimMode(Integer mealTicketClaimMode) {
-    this.mealTicketClaimMode = mealTicketClaimMode;
+  public void setMealticketclaimmode(Integer mealticketclaimmode) {
+    this.mealticketclaimmode = mealticketclaimmode;
   }
 
-  public Wagesetting mTCMWithHoliday(Boolean mTCMWithHoliday) {
-    this.mTCMWithHoliday = mTCMWithHoliday;
+  public Wagesetting mtcmwithholiday(Boolean mtcmwithholiday) {
+    this.mtcmwithholiday = mtcmwithholiday;
     return this;
   }
 
    /**
-   * Zap. dov. do odpr. doby pro nár. na strav. [persistentní položka]
-   * @return mTCMWithHoliday
+   * zap. dov. do odpr. doby pro nár. na strav. [persistentní položka]
+   * @return mtcmwithholiday
   **/
-  @ApiModelProperty(example = "null", value = "Zap. dov. do odpr. doby pro nár. na strav. [persistentní položka]")
-  public Boolean getMTCMWithHoliday() {
-    return mTCMWithHoliday;
+  @ApiModelProperty(example = "null", value = "zap. dov. do odpr. doby pro nár. na strav. [persistentní položka]")
+  public Boolean getMtcmwithholiday() {
+    return mtcmwithholiday;
   }
 
-  public void setMTCMWithHoliday(Boolean mTCMWithHoliday) {
-    this.mTCMWithHoliday = mTCMWithHoliday;
+  public void setMtcmwithholiday(Boolean mtcmwithholiday) {
+    this.mtcmwithholiday = mtcmwithholiday;
   }
 
-  public Wagesetting mTCMWithPaidFree(Boolean mTCMWithPaidFree) {
-    this.mTCMWithPaidFree = mTCMWithPaidFree;
+  public Wagesetting mtcmwithpaidfree(Boolean mtcmwithpaidfree) {
+    this.mtcmwithpaidfree = mtcmwithpaidfree;
     return this;
   }
 
    /**
-   * Zap. plac. volno do odpr. doby pro nár. na strav. [persistentní položka]
-   * @return mTCMWithPaidFree
+   * zap. plac. volno do odpr. doby pro nár. na strav. [persistentní položka]
+   * @return mtcmwithpaidfree
   **/
-  @ApiModelProperty(example = "null", value = "Zap. plac. volno do odpr. doby pro nár. na strav. [persistentní položka]")
-  public Boolean getMTCMWithPaidFree() {
-    return mTCMWithPaidFree;
+  @ApiModelProperty(example = "null", value = "zap. plac. volno do odpr. doby pro nár. na strav. [persistentní položka]")
+  public Boolean getMtcmwithpaidfree() {
+    return mtcmwithpaidfree;
   }
 
-  public void setMTCMWithPaidFree(Boolean mTCMWithPaidFree) {
-    this.mTCMWithPaidFree = mTCMWithPaidFree;
+  public void setMtcmwithpaidfree(Boolean mtcmwithpaidfree) {
+    this.mtcmwithpaidfree = mtcmwithpaidfree;
   }
 
-  public Wagesetting mTCMWithFeasts(Boolean mTCMWithFeasts) {
-    this.mTCMWithFeasts = mTCMWithFeasts;
+  public Wagesetting mtcmwithfeasts(Boolean mtcmwithfeasts) {
+    this.mtcmwithfeasts = mtcmwithfeasts;
     return this;
   }
 
    /**
-   * Zap. svátky do odpr. doby pro nár. na strav. [persistentní položka]
-   * @return mTCMWithFeasts
+   * zap. svátky do odpr. doby pro nár. na strav. [persistentní položka]
+   * @return mtcmwithfeasts
   **/
-  @ApiModelProperty(example = "null", value = "Zap. svátky do odpr. doby pro nár. na strav. [persistentní položka]")
-  public Boolean getMTCMWithFeasts() {
-    return mTCMWithFeasts;
+  @ApiModelProperty(example = "null", value = "zap. svátky do odpr. doby pro nár. na strav. [persistentní položka]")
+  public Boolean getMtcmwithfeasts() {
+    return mtcmwithfeasts;
   }
 
-  public void setMTCMWithFeasts(Boolean mTCMWithFeasts) {
-    this.mTCMWithFeasts = mTCMWithFeasts;
+  public void setMtcmwithfeasts(Boolean mtcmwithfeasts) {
+    this.mtcmwithfeasts = mtcmwithfeasts;
   }
 
-  public Wagesetting mTCMWithSicks(Boolean mTCMWithSicks) {
-    this.mTCMWithSicks = mTCMWithSicks;
+  public Wagesetting mtcmwithsicks(Boolean mtcmwithsicks) {
+    this.mtcmwithsicks = mtcmwithsicks;
     return this;
   }
 
    /**
-   * Zap. nemoci do odpr. doby pro nár. na strav. [persistentní položka]
-   * @return mTCMWithSicks
+   * zap. nemoci do odpr. doby pro nár. na strav. [persistentní položka]
+   * @return mtcmwithsicks
   **/
-  @ApiModelProperty(example = "null", value = "Zap. nemoci do odpr. doby pro nár. na strav. [persistentní položka]")
-  public Boolean getMTCMWithSicks() {
-    return mTCMWithSicks;
+  @ApiModelProperty(example = "null", value = "zap. nemoci do odpr. doby pro nár. na strav. [persistentní položka]")
+  public Boolean getMtcmwithsicks() {
+    return mtcmwithsicks;
   }
 
-  public void setMTCMWithSicks(Boolean mTCMWithSicks) {
-    this.mTCMWithSicks = mTCMWithSicks;
+  public void setMtcmwithsicks(Boolean mtcmwithsicks) {
+    this.mtcmwithsicks = mtcmwithsicks;
   }
 
-  public Wagesetting preferredCodeBehaviour(Integer preferredCodeBehaviour) {
-    this.preferredCodeBehaviour = preferredCodeBehaviour;
+  public Wagesetting preferredcodebehaviour(Integer preferredcodebehaviour) {
+    this.preferredcodebehaviour = preferredcodebehaviour;
     return this;
   }
 
    /**
-   * Založení a ukončení poj.poměru [persistentní položka]
-   * @return preferredCodeBehaviour
+   * založení a ukončení poj.poměru [persistentní položka]
+   * @return preferredcodebehaviour
   **/
-  @ApiModelProperty(example = "null", value = "Založení a ukončení poj.poměru [persistentní položka]")
-  public Integer getPreferredCodeBehaviour() {
-    return preferredCodeBehaviour;
+  @ApiModelProperty(example = "null", value = "založení a ukončení poj.poměru [persistentní položka]")
+  public Integer getPreferredcodebehaviour() {
+    return preferredcodebehaviour;
   }
 
-  public void setPreferredCodeBehaviour(Integer preferredCodeBehaviour) {
-    this.preferredCodeBehaviour = preferredCodeBehaviour;
+  public void setPreferredcodebehaviour(Integer preferredcodebehaviour) {
+    this.preferredcodebehaviour = preferredcodebehaviour;
   }
 
-  public Wagesetting validateSBMaximum(Boolean validateSBMaximum) {
-    this.validateSBMaximum = validateSBMaximum;
+  public Wagesetting validatesbmaximum(Boolean validatesbmaximum) {
+    this.validatesbmaximum = validatesbmaximum;
     return this;
   }
 
    /**
-   * Kontrolovat maximum NPN [persistentní položka]
-   * @return validateSBMaximum
+   * kontrolovat maximum npn [persistentní položka]
+   * @return validatesbmaximum
   **/
-  @ApiModelProperty(example = "null", value = "Kontrolovat maximum NPN [persistentní položka]")
-  public Boolean getValidateSBMaximum() {
-    return validateSBMaximum;
+  @ApiModelProperty(example = "null", value = "kontrolovat maximum npn [persistentní položka]")
+  public Boolean getValidatesbmaximum() {
+    return validatesbmaximum;
   }
 
-  public void setValidateSBMaximum(Boolean validateSBMaximum) {
-    this.validateSBMaximum = validateSBMaximum;
+  public void setValidatesbmaximum(Boolean validatesbmaximum) {
+    this.validatesbmaximum = validatesbmaximum;
   }
 
-  public Wagesetting hIAnnualClearingChartID(String hIAnnualClearingChartID) {
-    this.hIAnnualClearingChartID = hIAnnualClearingChartID;
+  public Wagesetting hiannualclearingchartId(String hiannualclearingchartId) {
+    this.hiannualclearingchartId = hiannualclearingchartId;
     return this;
   }
 
    /**
-   * Výp. schéma pro výp. detail. řádku RZ ZP; ID objektu Výpočtové schéma [persistentní položka]
-   * @return hIAnnualClearingChartID
+   * výp. schéma pro výp. detail. řádku rz zp; id objektu výpočtové schéma [persistentní položka]
+   * @return hiannualclearingchartId
   **/
-  @ApiModelProperty(example = "null", value = "Výp. schéma pro výp. detail. řádku RZ ZP; ID objektu Výpočtové schéma [persistentní položka]")
-  public String getHIAnnualClearingChartID() {
-    return hIAnnualClearingChartID;
+  @ApiModelProperty(example = "null", value = "výp. schéma pro výp. detail. řádku rz zp; id objektu výpočtové schéma [persistentní položka]")
+  public String getHiannualclearingchartId() {
+    return hiannualclearingchartId;
   }
 
-  public void setHIAnnualClearingChartID(String hIAnnualClearingChartID) {
-    this.hIAnnualClearingChartID = hIAnnualClearingChartID;
+  public void setHiannualclearingchartId(String hiannualclearingchartId) {
+    this.hiannualclearingchartId = hiannualclearingchartId;
   }
 
-  public Wagesetting fieldForInsCompRegNum(Integer fieldForInsCompRegNum) {
-    this.fieldForInsCompRegNum = fieldForInsCompRegNum;
+  public Wagesetting fieldforinscompregnum(Integer fieldforinscompregnum) {
+    this.fieldforinscompregnum = fieldforinscompregnum;
     return this;
   }
 
    /**
-   * Kód položky Číslo plátce [persistentní položka]
-   * @return fieldForInsCompRegNum
+   * kód položky Číslo plátce [persistentní položka]
+   * @return fieldforinscompregnum
   **/
-  @ApiModelProperty(example = "null", value = "Kód položky Číslo plátce [persistentní položka]")
-  public Integer getFieldForInsCompRegNum() {
-    return fieldForInsCompRegNum;
+  @ApiModelProperty(example = "null", value = "kód položky Číslo plátce [persistentní položka]")
+  public Integer getFieldforinscompregnum() {
+    return fieldforinscompregnum;
   }
 
-  public void setFieldForInsCompRegNum(Integer fieldForInsCompRegNum) {
-    this.fieldForInsCompRegNum = fieldForInsCompRegNum;
+  public void setFieldforinscompregnum(Integer fieldforinscompregnum) {
+    this.fieldforinscompregnum = fieldforinscompregnum;
   }
 
-  public Wagesetting userHIMinInsBaseRounding(Integer userHIMinInsBaseRounding) {
-    this.userHIMinInsBaseRounding = userHIMinInsBaseRounding;
+  public Wagesetting userhimininsbaserounding(Integer userhimininsbaserounding) {
+    this.userhimininsbaserounding = userhimininsbaserounding;
     return this;
   }
 
    /**
-   * Způsob zaokr. min. zákl. pro roční zúčt. ZP [persistentní položka]
-   * @return userHIMinInsBaseRounding
+   * způsob zaokr. min. zákl. pro roční zúčt. zp [persistentní položka]
+   * @return userhimininsbaserounding
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zaokr. min. zákl. pro roční zúčt. ZP [persistentní položka]")
-  public Integer getUserHIMinInsBaseRounding() {
-    return userHIMinInsBaseRounding;
+  @ApiModelProperty(example = "null", value = "způsob zaokr. min. zákl. pro roční zúčt. zp [persistentní položka]")
+  public Integer getUserhimininsbaserounding() {
+    return userhimininsbaserounding;
   }
 
-  public void setUserHIMinInsBaseRounding(Integer userHIMinInsBaseRounding) {
-    this.userHIMinInsBaseRounding = userHIMinInsBaseRounding;
+  public void setUserhimininsbaserounding(Integer userhimininsbaserounding) {
+    this.userhimininsbaserounding = userhimininsbaserounding;
   }
 
-  public Wagesetting userHIKMinKMaxRounding(Integer userHIKMinKMaxRounding) {
-    this.userHIKMinKMaxRounding = userHIKMinKMaxRounding;
+  public Wagesetting userhikminkmaxrounding(Integer userhikminkmaxrounding) {
+    this.userhikminkmaxrounding = userhikminkmaxrounding;
     return this;
   }
 
    /**
-   * Způsob zaokr. koef. RZ ZP [persistentní položka]
-   * @return userHIKMinKMaxRounding
+   * způsob zaokr. koef. rz zp [persistentní položka]
+   * @return userhikminkmaxrounding
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zaokr. koef. RZ ZP [persistentní položka]")
-  public Integer getUserHIKMinKMaxRounding() {
-    return userHIKMinKMaxRounding;
+  @ApiModelProperty(example = "null", value = "způsob zaokr. koef. rz zp [persistentní položka]")
+  public Integer getUserhikminkmaxrounding() {
+    return userhikminkmaxrounding;
   }
 
-  public void setUserHIKMinKMaxRounding(Integer userHIKMinKMaxRounding) {
-    this.userHIKMinKMaxRounding = userHIKMinKMaxRounding;
+  public void setUserhikminkmaxrounding(Integer userhikminkmaxrounding) {
+    this.userhikminkmaxrounding = userhikminkmaxrounding;
   }
 
-  public Wagesetting sIPeriodStdActionParams(String sIPeriodStdActionParams) {
-    this.sIPeriodStdActionParams = sIPeriodStdActionParams;
+  public Wagesetting siperiodstdactionparams(String siperiodstdactionparams) {
+    this.siperiodstdactionparams = siperiodstdactionparams;
     return this;
   }
 
    /**
-   * Par. akce - přenos do poj. pom. SP [persistentní položka]
-   * @return sIPeriodStdActionParams
+   * par. akce - přenos do poj. pom. sp [persistentní položka]
+   * @return siperiodstdactionparams
   **/
-  @ApiModelProperty(example = "null", value = "Par. akce - přenos do poj. pom. SP [persistentní položka]")
-  public String getSIPeriodStdActionParams() {
-    return sIPeriodStdActionParams;
+  @ApiModelProperty(example = "null", value = "par. akce - přenos do poj. pom. sp [persistentní položka]")
+  public String getSiperiodstdactionparams() {
+    return siperiodstdactionparams;
   }
 
-  public void setSIPeriodStdActionParams(String sIPeriodStdActionParams) {
-    this.sIPeriodStdActionParams = sIPeriodStdActionParams;
+  public void setSiperiodstdactionparams(String siperiodstdactionparams) {
+    this.siperiodstdactionparams = siperiodstdactionparams;
   }
 
-  public Wagesetting hIPeriodStdActionParams(String hIPeriodStdActionParams) {
-    this.hIPeriodStdActionParams = hIPeriodStdActionParams;
+  public Wagesetting hiperiodstdactionparams(String hiperiodstdactionparams) {
+    this.hiperiodstdactionparams = hiperiodstdactionparams;
     return this;
   }
 
    /**
-   * Par. akce - přenos do poj. pom. ZP [persistentní položka]
-   * @return hIPeriodStdActionParams
+   * par. akce - přenos do poj. pom. zp [persistentní položka]
+   * @return hiperiodstdactionparams
   **/
-  @ApiModelProperty(example = "null", value = "Par. akce - přenos do poj. pom. ZP [persistentní položka]")
-  public String getHIPeriodStdActionParams() {
-    return hIPeriodStdActionParams;
+  @ApiModelProperty(example = "null", value = "par. akce - přenos do poj. pom. zp [persistentní položka]")
+  public String getHiperiodstdactionparams() {
+    return hiperiodstdactionparams;
   }
 
-  public void setHIPeriodStdActionParams(String hIPeriodStdActionParams) {
-    this.hIPeriodStdActionParams = hIPeriodStdActionParams;
+  public void setHiperiodstdactionparams(String hiperiodstdactionparams) {
+    this.hiperiodstdactionparams = hiperiodstdactionparams;
   }
 
-  public Wagesetting sIPeriodStdActionField(Integer sIPeriodStdActionField) {
-    this.sIPeriodStdActionField = sIPeriodStdActionField;
+  public Wagesetting siperiodstdactionfield(Integer siperiodstdactionfield) {
+    this.siperiodstdactionfield = siperiodstdactionfield;
     return this;
   }
 
    /**
-   * Kód pole MLS se základem StP [persistentní položka]
-   * @return sIPeriodStdActionField
+   * kód pole mls se základem stp [persistentní položka]
+   * @return siperiodstdactionfield
   **/
-  @ApiModelProperty(example = "null", value = "Kód pole MLS se základem StP [persistentní položka]")
-  public Integer getSIPeriodStdActionField() {
-    return sIPeriodStdActionField;
+  @ApiModelProperty(example = "null", value = "kód pole mls se základem stp [persistentní položka]")
+  public Integer getSiperiodstdactionfield() {
+    return siperiodstdactionfield;
   }
 
-  public void setSIPeriodStdActionField(Integer sIPeriodStdActionField) {
-    this.sIPeriodStdActionField = sIPeriodStdActionField;
+  public void setSiperiodstdactionfield(Integer siperiodstdactionfield) {
+    this.siperiodstdactionfield = siperiodstdactionfield;
   }
 
-  public Wagesetting hIPeriodStdActionField(Integer hIPeriodStdActionField) {
-    this.hIPeriodStdActionField = hIPeriodStdActionField;
+  public Wagesetting hiperiodstdactionfield(Integer hiperiodstdactionfield) {
+    this.hiperiodstdactionfield = hiperiodstdactionfield;
     return this;
   }
 
    /**
-   * Kód pole MLS se základem ZP [persistentní položka]
-   * @return hIPeriodStdActionField
+   * kód pole mls se základem zp [persistentní položka]
+   * @return hiperiodstdactionfield
   **/
-  @ApiModelProperty(example = "null", value = "Kód pole MLS se základem ZP [persistentní položka]")
-  public Integer getHIPeriodStdActionField() {
-    return hIPeriodStdActionField;
+  @ApiModelProperty(example = "null", value = "kód pole mls se základem zp [persistentní položka]")
+  public Integer getHiperiodstdactionfield() {
+    return hiperiodstdactionfield;
   }
 
-  public void setHIPeriodStdActionField(Integer hIPeriodStdActionField) {
-    this.hIPeriodStdActionField = hIPeriodStdActionField;
+  public void setHiperiodstdactionfield(Integer hiperiodstdactionfield) {
+    this.hiperiodstdactionfield = hiperiodstdactionfield;
   }
 
-  public Wagesetting hIFirmID(String hIFirmID) {
-    this.hIFirmID = hIFirmID;
+  public Wagesetting hifirmId(String hifirmId) {
+    this.hifirmId = hifirmId;
     return this;
   }
 
    /**
-   * Vlastní firma pro účely RZZP; ID objektu Firma [persistentní položka]
-   * @return hIFirmID
+   * vlastní firma pro účely rzzp; id objektu firma [persistentní položka]
+   * @return hifirmId
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní firma pro účely RZZP; ID objektu Firma [persistentní položka]")
-  public String getHIFirmID() {
-    return hIFirmID;
+  @ApiModelProperty(example = "null", value = "vlastní firma pro účely rzzp; id objektu firma [persistentní položka]")
+  public String getHifirmId() {
+    return hifirmId;
   }
 
-  public void setHIFirmID(String hIFirmID) {
-    this.hIFirmID = hIFirmID;
+  public void setHifirmId(String hifirmId) {
+    this.hifirmId = hifirmId;
   }
 
-  public Wagesetting useUserHIRoundDefinitions(Boolean useUserHIRoundDefinitions) {
-    this.useUserHIRoundDefinitions = useUserHIRoundDefinitions;
+  public Wagesetting useuserhirounddefinitions(Boolean useuserhirounddefinitions) {
+    this.useuserhirounddefinitions = useuserhirounddefinitions;
     return this;
   }
 
    /**
-   * Uživ. def. zaokrouh. RZZP [persistentní položka]
-   * @return useUserHIRoundDefinitions
+   * uživ. def. zaokrouh. rzzp [persistentní položka]
+   * @return useuserhirounddefinitions
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. def. zaokrouh. RZZP [persistentní položka]")
-  public Boolean getUseUserHIRoundDefinitions() {
-    return useUserHIRoundDefinitions;
+  @ApiModelProperty(example = "null", value = "uživ. def. zaokrouh. rzzp [persistentní položka]")
+  public Boolean getUseuserhirounddefinitions() {
+    return useuserhirounddefinitions;
   }
 
-  public void setUseUserHIRoundDefinitions(Boolean useUserHIRoundDefinitions) {
-    this.useUserHIRoundDefinitions = useUserHIRoundDefinitions;
+  public void setUseuserhirounddefinitions(Boolean useuserhirounddefinitions) {
+    this.useuserhirounddefinitions = useuserhirounddefinitions;
   }
 
-  public Wagesetting claimShortRounding(Integer claimShortRounding) {
-    this.claimShortRounding = claimShortRounding;
+  public Wagesetting claimshortrounding(Integer claimshortrounding) {
+    this.claimshortrounding = claimshortrounding;
     return this;
   }
 
    /**
-   * Zaokrouhlení krácení dovolené - dny [persistentní položka]
-   * @return claimShortRounding
+   * zaokrouhlení krácení dovolené - dny [persistentní položka]
+   * @return claimshortrounding
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlení krácení dovolené - dny [persistentní položka]")
-  public Integer getClaimShortRounding() {
-    return claimShortRounding;
+  @ApiModelProperty(example = "null", value = "zaokrouhlení krácení dovolené - dny [persistentní položka]")
+  public Integer getClaimshortrounding() {
+    return claimshortrounding;
   }
 
-  public void setClaimShortRounding(Integer claimShortRounding) {
-    this.claimShortRounding = claimShortRounding;
+  public void setClaimshortrounding(Integer claimshortrounding) {
+    this.claimshortrounding = claimshortrounding;
   }
 
-  public Wagesetting claimShortAuto(Boolean claimShortAuto) {
-    this.claimShortAuto = claimShortAuto;
+  public Wagesetting claimshortauto(Boolean claimshortauto) {
+    this.claimshortauto = claimshortauto;
     return this;
   }
 
    /**
-   * Krátit dovolenou automaticky [persistentní položka]
-   * @return claimShortAuto
+   * krátit dovolenou automaticky [persistentní položka]
+   * @return claimshortauto
   **/
-  @ApiModelProperty(example = "null", value = "Krátit dovolenou automaticky [persistentní položka]")
-  public Boolean getClaimShortAuto() {
-    return claimShortAuto;
+  @ApiModelProperty(example = "null", value = "krátit dovolenou automaticky [persistentní položka]")
+  public Boolean getClaimshortauto() {
+    return claimshortauto;
   }
 
-  public void setClaimShortAuto(Boolean claimShortAuto) {
-    this.claimShortAuto = claimShortAuto;
+  public void setClaimshortauto(Boolean claimshortauto) {
+    this.claimshortauto = claimshortauto;
   }
 
-  public Wagesetting claimShortRoundingHrs(Integer claimShortRoundingHrs) {
-    this.claimShortRoundingHrs = claimShortRoundingHrs;
+  public Wagesetting claimshortroundinghrs(Integer claimshortroundinghrs) {
+    this.claimshortroundinghrs = claimshortroundinghrs;
     return this;
   }
 
    /**
-   * Zaokrouhlení krácení dovolené - hodiny [persistentní položka]
-   * @return claimShortRoundingHrs
+   * zaokrouhlení krácení dovolené - hodiny [persistentní položka]
+   * @return claimshortroundinghrs
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlení krácení dovolené - hodiny [persistentní položka]")
-  public Integer getClaimShortRoundingHrs() {
-    return claimShortRoundingHrs;
+  @ApiModelProperty(example = "null", value = "zaokrouhlení krácení dovolené - hodiny [persistentní položka]")
+  public Integer getClaimshortroundinghrs() {
+    return claimshortroundinghrs;
   }
 
-  public void setClaimShortRoundingHrs(Integer claimShortRoundingHrs) {
-    this.claimShortRoundingHrs = claimShortRoundingHrs;
+  public void setClaimshortroundinghrs(Integer claimshortroundinghrs) {
+    this.claimshortroundinghrs = claimshortroundinghrs;
   }
 
-  public Wagesetting fieldForPercentDockLabel(String fieldForPercentDockLabel) {
-    this.fieldForPercentDockLabel = fieldForPercentDockLabel;
+  public Wagesetting fieldforpercentdocklabel(String fieldforpercentdocklabel) {
+    this.fieldforpercentdocklabel = fieldforpercentdocklabel;
     return this;
   }
 
    /**
-   * Položka pro srážku procentem - popis
-   * @return fieldForPercentDockLabel
+   * položka pro srážku procentem - popis
+   * @return fieldforpercentdocklabel
   **/
-  @ApiModelProperty(example = "null", value = "Položka pro srážku procentem - popis")
-  public String getFieldForPercentDockLabel() {
-    return fieldForPercentDockLabel;
+  @ApiModelProperty(example = "null", value = "položka pro srážku procentem - popis")
+  public String getFieldforpercentdocklabel() {
+    return fieldforpercentdocklabel;
   }
 
-  public void setFieldForPercentDockLabel(String fieldForPercentDockLabel) {
-    this.fieldForPercentDockLabel = fieldForPercentDockLabel;
+  public void setFieldforpercentdocklabel(String fieldforpercentdocklabel) {
+    this.fieldforpercentdocklabel = fieldforpercentdocklabel;
   }
 
-  public Wagesetting fieldForPercentDockName(String fieldForPercentDockName) {
-    this.fieldForPercentDockName = fieldForPercentDockName;
+  public Wagesetting fieldforpercentdockname(String fieldforpercentdockname) {
+    this.fieldforpercentdockname = fieldforpercentdockname;
     return this;
   }
 
    /**
-   * Položka pro srážku procentem - název
-   * @return fieldForPercentDockName
+   * položka pro srážku procentem - název
+   * @return fieldforpercentdockname
   **/
-  @ApiModelProperty(example = "null", value = "Položka pro srážku procentem - název")
-  public String getFieldForPercentDockName() {
-    return fieldForPercentDockName;
+  @ApiModelProperty(example = "null", value = "položka pro srážku procentem - název")
+  public String getFieldforpercentdockname() {
+    return fieldforpercentdockname;
   }
 
-  public void setFieldForPercentDockName(String fieldForPercentDockName) {
-    this.fieldForPercentDockName = fieldForPercentDockName;
+  public void setFieldforpercentdockname(String fieldforpercentdockname) {
+    this.fieldforpercentdockname = fieldforpercentdockname;
   }
 
-  public Wagesetting fieldForDisabilityName(String fieldForDisabilityName) {
-    this.fieldForDisabilityName = fieldForDisabilityName;
+  public Wagesetting fieldfordisabilityname(String fieldfordisabilityname) {
+    this.fieldfordisabilityname = fieldfordisabilityname;
     return this;
   }
 
    /**
-   * Kód položky Stupeň invalidity
-   * @return fieldForDisabilityName
+   * kód položky stupeň invalidity
+   * @return fieldfordisabilityname
   **/
-  @ApiModelProperty(example = "null", value = "Kód položky Stupeň invalidity")
-  public String getFieldForDisabilityName() {
-    return fieldForDisabilityName;
+  @ApiModelProperty(example = "null", value = "kód položky stupeň invalidity")
+  public String getFieldfordisabilityname() {
+    return fieldfordisabilityname;
   }
 
-  public void setFieldForDisabilityName(String fieldForDisabilityName) {
-    this.fieldForDisabilityName = fieldForDisabilityName;
+  public void setFieldfordisabilityname(String fieldfordisabilityname) {
+    this.fieldfordisabilityname = fieldfordisabilityname;
   }
 
-  public Wagesetting fieldForDisabilityFromName(String fieldForDisabilityFromName) {
-    this.fieldForDisabilityFromName = fieldForDisabilityFromName;
+  public Wagesetting fieldfordisabilityfromname(String fieldfordisabilityfromname) {
+    this.fieldfordisabilityfromname = fieldfordisabilityfromname;
     return this;
   }
 
    /**
-   * Kód položky Invalidní důchod od
-   * @return fieldForDisabilityFromName
+   * kód položky invalidní důchod od
+   * @return fieldfordisabilityfromname
   **/
-  @ApiModelProperty(example = "null", value = "Kód položky Invalidní důchod od")
-  public String getFieldForDisabilityFromName() {
-    return fieldForDisabilityFromName;
+  @ApiModelProperty(example = "null", value = "kód položky invalidní důchod od")
+  public String getFieldfordisabilityfromname() {
+    return fieldfordisabilityfromname;
   }
 
-  public void setFieldForDisabilityFromName(String fieldForDisabilityFromName) {
-    this.fieldForDisabilityFromName = fieldForDisabilityFromName;
+  public void setFieldfordisabilityfromname(String fieldfordisabilityfromname) {
+    this.fieldfordisabilityfromname = fieldfordisabilityfromname;
   }
 
-  public Wagesetting fieldForInsCompRegNumName(String fieldForInsCompRegNumName) {
-    this.fieldForInsCompRegNumName = fieldForInsCompRegNumName;
+  public Wagesetting fieldforinscompregnumname(String fieldforinscompregnumname) {
+    this.fieldforinscompregnumname = fieldforinscompregnumname;
     return this;
   }
 
    /**
-   * Kód položky Číslo plátce - název
-   * @return fieldForInsCompRegNumName
+   * kód položky Číslo plátce - název
+   * @return fieldforinscompregnumname
   **/
-  @ApiModelProperty(example = "null", value = "Kód položky Číslo plátce - název")
-  public String getFieldForInsCompRegNumName() {
-    return fieldForInsCompRegNumName;
+  @ApiModelProperty(example = "null", value = "kód položky Číslo plátce - název")
+  public String getFieldforinscompregnumname() {
+    return fieldforinscompregnumname;
   }
 
-  public void setFieldForInsCompRegNumName(String fieldForInsCompRegNumName) {
-    this.fieldForInsCompRegNumName = fieldForInsCompRegNumName;
+  public void setFieldforinscompregnumname(String fieldforinscompregnumname) {
+    this.fieldforinscompregnumname = fieldforinscompregnumname;
   }
 
-  public Wagesetting fieldForDisabilityLabel(String fieldForDisabilityLabel) {
-    this.fieldForDisabilityLabel = fieldForDisabilityLabel;
+  public Wagesetting fieldfordisabilitylabel(String fieldfordisabilitylabel) {
+    this.fieldfordisabilitylabel = fieldfordisabilitylabel;
     return this;
   }
 
    /**
-   * Kód položky Stupeň invalidity
-   * @return fieldForDisabilityLabel
+   * kód položky stupeň invalidity
+   * @return fieldfordisabilitylabel
   **/
-  @ApiModelProperty(example = "null", value = "Kód položky Stupeň invalidity")
-  public String getFieldForDisabilityLabel() {
-    return fieldForDisabilityLabel;
+  @ApiModelProperty(example = "null", value = "kód položky stupeň invalidity")
+  public String getFieldfordisabilitylabel() {
+    return fieldfordisabilitylabel;
   }
 
-  public void setFieldForDisabilityLabel(String fieldForDisabilityLabel) {
-    this.fieldForDisabilityLabel = fieldForDisabilityLabel;
+  public void setFieldfordisabilitylabel(String fieldfordisabilitylabel) {
+    this.fieldfordisabilitylabel = fieldfordisabilitylabel;
   }
 
-  public Wagesetting fieldForDisabilityFromLabel(String fieldForDisabilityFromLabel) {
-    this.fieldForDisabilityFromLabel = fieldForDisabilityFromLabel;
+  public Wagesetting fieldfordisabilityfromlabel(String fieldfordisabilityfromlabel) {
+    this.fieldfordisabilityfromlabel = fieldfordisabilityfromlabel;
     return this;
   }
 
    /**
-   * Kód položky Invalidní důchod od
-   * @return fieldForDisabilityFromLabel
+   * kód položky invalidní důchod od
+   * @return fieldfordisabilityfromlabel
   **/
-  @ApiModelProperty(example = "null", value = "Kód položky Invalidní důchod od")
-  public String getFieldForDisabilityFromLabel() {
-    return fieldForDisabilityFromLabel;
+  @ApiModelProperty(example = "null", value = "kód položky invalidní důchod od")
+  public String getFieldfordisabilityfromlabel() {
+    return fieldfordisabilityfromlabel;
   }
 
-  public void setFieldForDisabilityFromLabel(String fieldForDisabilityFromLabel) {
-    this.fieldForDisabilityFromLabel = fieldForDisabilityFromLabel;
+  public void setFieldfordisabilityfromlabel(String fieldfordisabilityfromlabel) {
+    this.fieldfordisabilityfromlabel = fieldfordisabilityfromlabel;
   }
 
-  public Wagesetting fieldForInsCompRegNumLabel(String fieldForInsCompRegNumLabel) {
-    this.fieldForInsCompRegNumLabel = fieldForInsCompRegNumLabel;
+  public Wagesetting fieldforinscompregnumlabel(String fieldforinscompregnumlabel) {
+    this.fieldforinscompregnumlabel = fieldforinscompregnumlabel;
     return this;
   }
 
    /**
-   * Kód položky Číslo plátce - popis
-   * @return fieldForInsCompRegNumLabel
+   * kód položky Číslo plátce - popis
+   * @return fieldforinscompregnumlabel
   **/
-  @ApiModelProperty(example = "null", value = "Kód položky Číslo plátce - popis")
-  public String getFieldForInsCompRegNumLabel() {
-    return fieldForInsCompRegNumLabel;
+  @ApiModelProperty(example = "null", value = "kód položky Číslo plátce - popis")
+  public String getFieldforinscompregnumlabel() {
+    return fieldforinscompregnumlabel;
   }
 
-  public void setFieldForInsCompRegNumLabel(String fieldForInsCompRegNumLabel) {
-    this.fieldForInsCompRegNumLabel = fieldForInsCompRegNumLabel;
+  public void setFieldforinscompregnumlabel(String fieldforinscompregnumlabel) {
+    this.fieldforinscompregnumlabel = fieldforinscompregnumlabel;
   }
 
-  public Wagesetting systAnnClearingTaxBaseRounding(Integer systAnnClearingTaxBaseRounding) {
-    this.systAnnClearingTaxBaseRounding = systAnnClearingTaxBaseRounding;
+  public Wagesetting systannclearingtaxbaserounding(Integer systannclearingtaxbaserounding) {
+    this.systannclearingtaxbaserounding = systannclearingtaxbaserounding;
     return this;
   }
 
    /**
-   * Syst.zaokr.základu daně
-   * @return systAnnClearingTaxBaseRounding
+   * syst.zaokr.základu daně
+   * @return systannclearingtaxbaserounding
   **/
-  @ApiModelProperty(example = "null", value = "Syst.zaokr.základu daně")
-  public Integer getSystAnnClearingTaxBaseRounding() {
-    return systAnnClearingTaxBaseRounding;
+  @ApiModelProperty(example = "null", value = "syst.zaokr.základu daně")
+  public Integer getSystannclearingtaxbaserounding() {
+    return systannclearingtaxbaserounding;
   }
 
-  public void setSystAnnClearingTaxBaseRounding(Integer systAnnClearingTaxBaseRounding) {
-    this.systAnnClearingTaxBaseRounding = systAnnClearingTaxBaseRounding;
+  public void setSystannclearingtaxbaserounding(Integer systannclearingtaxbaserounding) {
+    this.systannclearingtaxbaserounding = systannclearingtaxbaserounding;
   }
 
-  public Wagesetting systAnnClearingTaxRounding(Integer systAnnClearingTaxRounding) {
-    this.systAnnClearingTaxRounding = systAnnClearingTaxRounding;
+  public Wagesetting systannclearingtaxrounding(Integer systannclearingtaxrounding) {
+    this.systannclearingtaxrounding = systannclearingtaxrounding;
     return this;
   }
 
    /**
-   * Syst.zaokr.daně
-   * @return systAnnClearingTaxRounding
+   * syst.zaokr.daně
+   * @return systannclearingtaxrounding
   **/
-  @ApiModelProperty(example = "null", value = "Syst.zaokr.daně")
-  public Integer getSystAnnClearingTaxRounding() {
-    return systAnnClearingTaxRounding;
+  @ApiModelProperty(example = "null", value = "syst.zaokr.daně")
+  public Integer getSystannclearingtaxrounding() {
+    return systannclearingtaxrounding;
   }
 
-  public void setSystAnnClearingTaxRounding(Integer systAnnClearingTaxRounding) {
-    this.systAnnClearingTaxRounding = systAnnClearingTaxRounding;
+  public void setSystannclearingtaxrounding(Integer systannclearingtaxrounding) {
+    this.systannclearingtaxrounding = systannclearingtaxrounding;
   }
 
-  public Wagesetting systPercentDocksRounding(Integer systPercentDocksRounding) {
-    this.systPercentDocksRounding = systPercentDocksRounding;
+  public Wagesetting systpercentdocksrounding(Integer systpercentdocksrounding) {
+    this.systpercentdocksrounding = systpercentdocksrounding;
     return this;
   }
 
    /**
-   * Syst.zaokr.srážek
-   * @return systPercentDocksRounding
+   * syst.zaokr.srážek
+   * @return systpercentdocksrounding
   **/
-  @ApiModelProperty(example = "null", value = "Syst.zaokr.srážek")
-  public Integer getSystPercentDocksRounding() {
-    return systPercentDocksRounding;
+  @ApiModelProperty(example = "null", value = "syst.zaokr.srážek")
+  public Integer getSystpercentdocksrounding() {
+    return systpercentdocksrounding;
   }
 
-  public void setSystPercentDocksRounding(Integer systPercentDocksRounding) {
-    this.systPercentDocksRounding = systPercentDocksRounding;
+  public void setSystpercentdocksrounding(Integer systpercentdocksrounding) {
+    this.systpercentdocksrounding = systpercentdocksrounding;
   }
 
-  public Wagesetting annClearingTaxBaseRounding(Integer annClearingTaxBaseRounding) {
-    this.annClearingTaxBaseRounding = annClearingTaxBaseRounding;
+  public Wagesetting annclearingtaxbaserounding(Integer annclearingtaxbaserounding) {
+    this.annclearingtaxbaserounding = annclearingtaxbaserounding;
     return this;
   }
 
    /**
-   * Zaokr.základu daně
-   * @return annClearingTaxBaseRounding
+   * zaokr.základu daně
+   * @return annclearingtaxbaserounding
   **/
-  @ApiModelProperty(example = "null", value = "Zaokr.základu daně")
-  public Integer getAnnClearingTaxBaseRounding() {
-    return annClearingTaxBaseRounding;
+  @ApiModelProperty(example = "null", value = "zaokr.základu daně")
+  public Integer getAnnclearingtaxbaserounding() {
+    return annclearingtaxbaserounding;
   }
 
-  public void setAnnClearingTaxBaseRounding(Integer annClearingTaxBaseRounding) {
-    this.annClearingTaxBaseRounding = annClearingTaxBaseRounding;
+  public void setAnnclearingtaxbaserounding(Integer annclearingtaxbaserounding) {
+    this.annclearingtaxbaserounding = annclearingtaxbaserounding;
   }
 
-  public Wagesetting annClearingTaxRounding(Integer annClearingTaxRounding) {
-    this.annClearingTaxRounding = annClearingTaxRounding;
+  public Wagesetting annclearingtaxrounding(Integer annclearingtaxrounding) {
+    this.annclearingtaxrounding = annclearingtaxrounding;
     return this;
   }
 
    /**
-   * Zaokr.daně
-   * @return annClearingTaxRounding
+   * zaokr.daně
+   * @return annclearingtaxrounding
   **/
-  @ApiModelProperty(example = "null", value = "Zaokr.daně")
-  public Integer getAnnClearingTaxRounding() {
-    return annClearingTaxRounding;
+  @ApiModelProperty(example = "null", value = "zaokr.daně")
+  public Integer getAnnclearingtaxrounding() {
+    return annclearingtaxrounding;
   }
 
-  public void setAnnClearingTaxRounding(Integer annClearingTaxRounding) {
-    this.annClearingTaxRounding = annClearingTaxRounding;
+  public void setAnnclearingtaxrounding(Integer annclearingtaxrounding) {
+    this.annclearingtaxrounding = annclearingtaxrounding;
   }
 
-  public Wagesetting percentDocksRounding(Integer percentDocksRounding) {
-    this.percentDocksRounding = percentDocksRounding;
+  public Wagesetting percentdocksrounding(Integer percentdocksrounding) {
+    this.percentdocksrounding = percentdocksrounding;
     return this;
   }
 
    /**
-   * Zaokr.srážek
-   * @return percentDocksRounding
+   * zaokr.srážek
+   * @return percentdocksrounding
   **/
-  @ApiModelProperty(example = "null", value = "Zaokr.srážek")
-  public Integer getPercentDocksRounding() {
-    return percentDocksRounding;
+  @ApiModelProperty(example = "null", value = "zaokr.srážek")
+  public Integer getPercentdocksrounding() {
+    return percentdocksrounding;
   }
 
-  public void setPercentDocksRounding(Integer percentDocksRounding) {
-    this.percentDocksRounding = percentDocksRounding;
+  public void setPercentdocksrounding(Integer percentdocksrounding) {
+    this.percentdocksrounding = percentdocksrounding;
   }
 
-  public Wagesetting hIYearRounding(Integer hIYearRounding) {
-    this.hIYearRounding = hIYearRounding;
+  public Wagesetting hiyearrounding(Integer hiyearrounding) {
+    this.hiyearrounding = hiyearrounding;
     return this;
   }
 
    /**
-   * Způsob zaokr. vypoč. roč. ZP
-   * @return hIYearRounding
+   * způsob zaokr. vypoč. roč. zp
+   * @return hiyearrounding
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zaokr. vypoč. roč. ZP")
-  public Integer getHIYearRounding() {
-    return hIYearRounding;
+  @ApiModelProperty(example = "null", value = "způsob zaokr. vypoč. roč. zp")
+  public Integer getHiyearrounding() {
+    return hiyearrounding;
   }
 
-  public void setHIYearRounding(Integer hIYearRounding) {
-    this.hIYearRounding = hIYearRounding;
+  public void setHiyearrounding(Integer hiyearrounding) {
+    this.hiyearrounding = hiyearrounding;
   }
 
-  public Wagesetting hIKMinKMaxRounding(Integer hIKMinKMaxRounding) {
-    this.hIKMinKMaxRounding = hIKMinKMaxRounding;
+  public Wagesetting hikminkmaxrounding(Integer hikminkmaxrounding) {
+    this.hikminkmaxrounding = hikminkmaxrounding;
     return this;
   }
 
    /**
-   * Způsob zaokr. koef. RZ ZP
-   * @return hIKMinKMaxRounding
+   * způsob zaokr. koef. rz zp
+   * @return hikminkmaxrounding
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zaokr. koef. RZ ZP")
-  public Integer getHIKMinKMaxRounding() {
-    return hIKMinKMaxRounding;
+  @ApiModelProperty(example = "null", value = "způsob zaokr. koef. rz zp")
+  public Integer getHikminkmaxrounding() {
+    return hikminkmaxrounding;
   }
 
-  public void setHIKMinKMaxRounding(Integer hIKMinKMaxRounding) {
-    this.hIKMinKMaxRounding = hIKMinKMaxRounding;
+  public void setHikminkmaxrounding(Integer hikminkmaxrounding) {
+    this.hikminkmaxrounding = hikminkmaxrounding;
   }
 
-  public Wagesetting hIMinInsBaseRounding(Integer hIMinInsBaseRounding) {
-    this.hIMinInsBaseRounding = hIMinInsBaseRounding;
+  public Wagesetting himininsbaserounding(Integer himininsbaserounding) {
+    this.himininsbaserounding = himininsbaserounding;
     return this;
   }
 
    /**
-   * Způsob zaokr. min. zákl. pro roční zúčt. ZP
-   * @return hIMinInsBaseRounding
+   * způsob zaokr. min. zákl. pro roční zúčt. zp
+   * @return himininsbaserounding
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zaokr. min. zákl. pro roční zúčt. ZP")
-  public Integer getHIMinInsBaseRounding() {
-    return hIMinInsBaseRounding;
+  @ApiModelProperty(example = "null", value = "způsob zaokr. min. zákl. pro roční zúčt. zp")
+  public Integer getHimininsbaserounding() {
+    return himininsbaserounding;
   }
 
-  public void setHIMinInsBaseRounding(Integer hIMinInsBaseRounding) {
-    this.hIMinInsBaseRounding = hIMinInsBaseRounding;
+  public void setHimininsbaserounding(Integer himininsbaserounding) {
+    this.himininsbaserounding = himininsbaserounding;
   }
 
-  public Wagesetting systHIYearRounding(Integer systHIYearRounding) {
-    this.systHIYearRounding = systHIYearRounding;
+  public Wagesetting systhiyearrounding(Integer systhiyearrounding) {
+    this.systhiyearrounding = systhiyearrounding;
     return this;
   }
 
    /**
-   * Způsob zaokr. vypoč. roč. ZP
-   * @return systHIYearRounding
+   * způsob zaokr. vypoč. roč. zp
+   * @return systhiyearrounding
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zaokr. vypoč. roč. ZP")
-  public Integer getSystHIYearRounding() {
-    return systHIYearRounding;
+  @ApiModelProperty(example = "null", value = "způsob zaokr. vypoč. roč. zp")
+  public Integer getSysthiyearrounding() {
+    return systhiyearrounding;
   }
 
-  public void setSystHIYearRounding(Integer systHIYearRounding) {
-    this.systHIYearRounding = systHIYearRounding;
+  public void setSysthiyearrounding(Integer systhiyearrounding) {
+    this.systhiyearrounding = systhiyearrounding;
   }
 
-  public Wagesetting systHIKMinKMaxRounding(Integer systHIKMinKMaxRounding) {
-    this.systHIKMinKMaxRounding = systHIKMinKMaxRounding;
+  public Wagesetting systhikminkmaxrounding(Integer systhikminkmaxrounding) {
+    this.systhikminkmaxrounding = systhikminkmaxrounding;
     return this;
   }
 
    /**
-   * Způsob zaokr. koef. RZ ZP
-   * @return systHIKMinKMaxRounding
+   * způsob zaokr. koef. rz zp
+   * @return systhikminkmaxrounding
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zaokr. koef. RZ ZP")
-  public Integer getSystHIKMinKMaxRounding() {
-    return systHIKMinKMaxRounding;
+  @ApiModelProperty(example = "null", value = "způsob zaokr. koef. rz zp")
+  public Integer getSysthikminkmaxrounding() {
+    return systhikminkmaxrounding;
   }
 
-  public void setSystHIKMinKMaxRounding(Integer systHIKMinKMaxRounding) {
-    this.systHIKMinKMaxRounding = systHIKMinKMaxRounding;
+  public void setSysthikminkmaxrounding(Integer systhikminkmaxrounding) {
+    this.systhikminkmaxrounding = systhikminkmaxrounding;
   }
 
-  public Wagesetting systHIMinInsBaseRounding(Integer systHIMinInsBaseRounding) {
-    this.systHIMinInsBaseRounding = systHIMinInsBaseRounding;
+  public Wagesetting systhimininsbaserounding(Integer systhimininsbaserounding) {
+    this.systhimininsbaserounding = systhimininsbaserounding;
     return this;
   }
 
    /**
-   * Způsob zaokr. min. zákl. pro roční zúčt. ZP
-   * @return systHIMinInsBaseRounding
+   * způsob zaokr. min. zákl. pro roční zúčt. zp
+   * @return systhimininsbaserounding
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zaokr. min. zákl. pro roční zúčt. ZP")
-  public Integer getSystHIMinInsBaseRounding() {
-    return systHIMinInsBaseRounding;
+  @ApiModelProperty(example = "null", value = "způsob zaokr. min. zákl. pro roční zúčt. zp")
+  public Integer getSysthimininsbaserounding() {
+    return systhimininsbaserounding;
   }
 
-  public void setSystHIMinInsBaseRounding(Integer systHIMinInsBaseRounding) {
-    this.systHIMinInsBaseRounding = systHIMinInsBaseRounding;
+  public void setSysthimininsbaserounding(Integer systhimininsbaserounding) {
+    this.systhimininsbaserounding = systhimininsbaserounding;
   }
 
-  public Wagesetting firmID(String firmID) {
-    this.firmID = firmID;
+  public Wagesetting firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma plat. příkazů; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma plat. příkazů; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma plat. příkazů; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma plat. příkazů; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Wagesetting wageClosingDayType(Integer wageClosingDayType) {
-    this.wageClosingDayType = wageClosingDayType;
+  public Wagesetting wageclosingdaytype(Integer wageclosingdaytype) {
+    this.wageclosingdaytype = wageclosingdaytype;
     return this;
   }
 
    /**
-   * Typ dne uzávěrky [persistentní položka]
-   * @return wageClosingDayType
+   * typ dne uzávěrky [persistentní položka]
+   * @return wageclosingdaytype
   **/
-  @ApiModelProperty(example = "null", value = "Typ dne uzávěrky [persistentní položka]")
-  public Integer getWageClosingDayType() {
-    return wageClosingDayType;
+  @ApiModelProperty(example = "null", value = "typ dne uzávěrky [persistentní položka]")
+  public Integer getWageclosingdaytype() {
+    return wageclosingdaytype;
   }
 
-  public void setWageClosingDayType(Integer wageClosingDayType) {
-    this.wageClosingDayType = wageClosingDayType;
+  public void setWageclosingdaytype(Integer wageclosingdaytype) {
+    this.wageclosingdaytype = wageclosingdaytype;
   }
 
-  public Wagesetting wageClosingNrDays(Integer wageClosingNrDays) {
-    this.wageClosingNrDays = wageClosingNrDays;
+  public Wagesetting wageclosingnrdays(Integer wageclosingnrdays) {
+    this.wageclosingnrdays = wageclosingnrdays;
     return this;
   }
 
    /**
-   * Den uzávěrky [persistentní položka]
-   * @return wageClosingNrDays
+   * den uzávěrky [persistentní položka]
+   * @return wageclosingnrdays
   **/
-  @ApiModelProperty(example = "null", value = "Den uzávěrky [persistentní položka]")
-  public Integer getWageClosingNrDays() {
-    return wageClosingNrDays;
+  @ApiModelProperty(example = "null", value = "den uzávěrky [persistentní položka]")
+  public Integer getWageclosingnrdays() {
+    return wageclosingnrdays;
   }
 
-  public void setWageClosingNrDays(Integer wageClosingNrDays) {
-    this.wageClosingNrDays = wageClosingNrDays;
+  public void setWageclosingnrdays(Integer wageclosingnrdays) {
+    this.wageclosingnrdays = wageclosingnrdays;
   }
 
-  public Wagesetting smallOrBigCompany(Integer smallOrBigCompany) {
-    this.smallOrBigCompany = smallOrBigCompany;
+  public Wagesetting smallorbigcompany(Integer smallorbigcompany) {
+    this.smallorbigcompany = smallorbigcompany;
     return this;
   }
 
    /**
-   * Malá/velká org. [persistentní položka]
-   * @return smallOrBigCompany
+   * malá/velká org. [persistentní položka]
+   * @return smallorbigcompany
   **/
-  @ApiModelProperty(example = "null", value = "Malá/velká org. [persistentní položka]")
-  public Integer getSmallOrBigCompany() {
-    return smallOrBigCompany;
+  @ApiModelProperty(example = "null", value = "malá/velká org. [persistentní položka]")
+  public Integer getSmallorbigcompany() {
+    return smallorbigcompany;
   }
 
-  public void setSmallOrBigCompany(Integer smallOrBigCompany) {
-    this.smallOrBigCompany = smallOrBigCompany;
+  public void setSmallorbigcompany(Integer smallorbigcompany) {
+    this.smallorbigcompany = smallorbigcompany;
   }
 
-  public Wagesetting fieldForDisability(Integer fieldForDisability) {
-    this.fieldForDisability = fieldForDisability;
+  public Wagesetting fieldfordisability(Integer fieldfordisability) {
+    this.fieldfordisability = fieldfordisability;
     return this;
   }
 
    /**
-   * Kód položky Stupeň invalidity [persistentní položka]
-   * @return fieldForDisability
+   * kód položky stupeň invalidity [persistentní položka]
+   * @return fieldfordisability
   **/
-  @ApiModelProperty(example = "null", value = "Kód položky Stupeň invalidity [persistentní položka]")
-  public Integer getFieldForDisability() {
-    return fieldForDisability;
+  @ApiModelProperty(example = "null", value = "kód položky stupeň invalidity [persistentní položka]")
+  public Integer getFieldfordisability() {
+    return fieldfordisability;
   }
 
-  public void setFieldForDisability(Integer fieldForDisability) {
-    this.fieldForDisability = fieldForDisability;
+  public void setFieldfordisability(Integer fieldfordisability) {
+    this.fieldfordisability = fieldfordisability;
   }
 
-  public Wagesetting fieldForDisabilityFrom(Integer fieldForDisabilityFrom) {
-    this.fieldForDisabilityFrom = fieldForDisabilityFrom;
+  public Wagesetting fieldfordisabilityfrom(Integer fieldfordisabilityfrom) {
+    this.fieldfordisabilityfrom = fieldfordisabilityfrom;
     return this;
   }
 
    /**
-   * Kód položky Invalidní důchod od [persistentní položka]
-   * @return fieldForDisabilityFrom
+   * kód položky invalidní důchod od [persistentní položka]
+   * @return fieldfordisabilityfrom
   **/
-  @ApiModelProperty(example = "null", value = "Kód položky Invalidní důchod od [persistentní položka]")
-  public Integer getFieldForDisabilityFrom() {
-    return fieldForDisabilityFrom;
+  @ApiModelProperty(example = "null", value = "kód položky invalidní důchod od [persistentní položka]")
+  public Integer getFieldfordisabilityfrom() {
+    return fieldfordisabilityfrom;
   }
 
-  public void setFieldForDisabilityFrom(Integer fieldForDisabilityFrom) {
-    this.fieldForDisabilityFrom = fieldForDisabilityFrom;
+  public void setFieldfordisabilityfrom(Integer fieldfordisabilityfrom) {
+    this.fieldfordisabilityfrom = fieldfordisabilityfrom;
   }
 
-  public Wagesetting userHIYearRounding(Integer userHIYearRounding) {
-    this.userHIYearRounding = userHIYearRounding;
+  public Wagesetting userhiyearrounding(Integer userhiyearrounding) {
+    this.userhiyearrounding = userhiyearrounding;
     return this;
   }
 
    /**
-   * Způsob zaokr. vypoč. roč. ZP [persistentní položka]
-   * @return userHIYearRounding
+   * způsob zaokr. vypoč. roč. zp [persistentní položka]
+   * @return userhiyearrounding
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zaokr. vypoč. roč. ZP [persistentní položka]")
-  public Integer getUserHIYearRounding() {
-    return userHIYearRounding;
+  @ApiModelProperty(example = "null", value = "způsob zaokr. vypoč. roč. zp [persistentní položka]")
+  public Integer getUserhiyearrounding() {
+    return userhiyearrounding;
   }
 
-  public void setUserHIYearRounding(Integer userHIYearRounding) {
-    this.userHIYearRounding = userHIYearRounding;
+  public void setUserhiyearrounding(Integer userhiyearrounding) {
+    this.userhiyearrounding = userhiyearrounding;
   }
 
-  public Wagesetting sIPeriodStdActFldName(String sIPeriodStdActFldName) {
-    this.sIPeriodStdActFldName = sIPeriodStdActFldName;
+  public Wagesetting siperiodstdactfldname(String siperiodstdactfldname) {
+    this.siperiodstdactfldname = siperiodstdactfldname;
     return this;
   }
 
    /**
-   * Název pole MLS se základem StP
-   * @return sIPeriodStdActFldName
+   * název pole mls se základem stp
+   * @return siperiodstdactfldname
   **/
-  @ApiModelProperty(example = "null", value = "Název pole MLS se základem StP")
-  public String getSIPeriodStdActFldName() {
-    return sIPeriodStdActFldName;
+  @ApiModelProperty(example = "null", value = "název pole mls se základem stp")
+  public String getSiperiodstdactfldname() {
+    return siperiodstdactfldname;
   }
 
-  public void setSIPeriodStdActFldName(String sIPeriodStdActFldName) {
-    this.sIPeriodStdActFldName = sIPeriodStdActFldName;
+  public void setSiperiodstdactfldname(String siperiodstdactfldname) {
+    this.siperiodstdactfldname = siperiodstdactfldname;
   }
 
-  public Wagesetting sIPeriodStdActFldLabel(String sIPeriodStdActFldLabel) {
-    this.sIPeriodStdActFldLabel = sIPeriodStdActFldLabel;
+  public Wagesetting siperiodstdactfldlabel(String siperiodstdactfldlabel) {
+    this.siperiodstdactfldlabel = siperiodstdactfldlabel;
     return this;
   }
 
    /**
-   * Popiska pole MLS se základem StP
-   * @return sIPeriodStdActFldLabel
+   * popiska pole mls se základem stp
+   * @return siperiodstdactfldlabel
   **/
-  @ApiModelProperty(example = "null", value = "Popiska pole MLS se základem StP")
-  public String getSIPeriodStdActFldLabel() {
-    return sIPeriodStdActFldLabel;
+  @ApiModelProperty(example = "null", value = "popiska pole mls se základem stp")
+  public String getSiperiodstdactfldlabel() {
+    return siperiodstdactfldlabel;
   }
 
-  public void setSIPeriodStdActFldLabel(String sIPeriodStdActFldLabel) {
-    this.sIPeriodStdActFldLabel = sIPeriodStdActFldLabel;
+  public void setSiperiodstdactfldlabel(String siperiodstdactfldlabel) {
+    this.siperiodstdactfldlabel = siperiodstdactfldlabel;
   }
 
-  public Wagesetting hIPeriodStdActFldName(String hIPeriodStdActFldName) {
-    this.hIPeriodStdActFldName = hIPeriodStdActFldName;
+  public Wagesetting hiperiodstdactfldname(String hiperiodstdactfldname) {
+    this.hiperiodstdactfldname = hiperiodstdactfldname;
     return this;
   }
 
    /**
-   * Název pole MLS se základem ZP
-   * @return hIPeriodStdActFldName
+   * název pole mls se základem zp
+   * @return hiperiodstdactfldname
   **/
-  @ApiModelProperty(example = "null", value = "Název pole MLS se základem ZP")
-  public String getHIPeriodStdActFldName() {
-    return hIPeriodStdActFldName;
+  @ApiModelProperty(example = "null", value = "název pole mls se základem zp")
+  public String getHiperiodstdactfldname() {
+    return hiperiodstdactfldname;
   }
 
-  public void setHIPeriodStdActFldName(String hIPeriodStdActFldName) {
-    this.hIPeriodStdActFldName = hIPeriodStdActFldName;
+  public void setHiperiodstdactfldname(String hiperiodstdactfldname) {
+    this.hiperiodstdactfldname = hiperiodstdactfldname;
   }
 
-  public Wagesetting hIPeriodStdActFldLabel(String hIPeriodStdActFldLabel) {
-    this.hIPeriodStdActFldLabel = hIPeriodStdActFldLabel;
+  public Wagesetting hiperiodstdactfldlabel(String hiperiodstdactfldlabel) {
+    this.hiperiodstdactfldlabel = hiperiodstdactfldlabel;
     return this;
   }
 
    /**
-   * Popiska pole MLS se základem ZP
-   * @return hIPeriodStdActFldLabel
+   * popiska pole mls se základem zp
+   * @return hiperiodstdactfldlabel
   **/
-  @ApiModelProperty(example = "null", value = "Popiska pole MLS se základem ZP")
-  public String getHIPeriodStdActFldLabel() {
-    return hIPeriodStdActFldLabel;
+  @ApiModelProperty(example = "null", value = "popiska pole mls se základem zp")
+  public String getHiperiodstdactfldlabel() {
+    return hiperiodstdactfldlabel;
   }
 
-  public void setHIPeriodStdActFldLabel(String hIPeriodStdActFldLabel) {
-    this.hIPeriodStdActFldLabel = hIPeriodStdActFldLabel;
+  public void setHiperiodstdactfldlabel(String hiperiodstdactfldlabel) {
+    this.hiperiodstdactfldlabel = hiperiodstdactfldlabel;
   }
 
-  public Wagesetting divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Wagesetting divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko plat. příkazů; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko plat. příkazů; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko plat. příkazů; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko plat. příkazů; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Wagesetting protectedWorkshop(Boolean protectedWorkshop) {
-    this.protectedWorkshop = protectedWorkshop;
+  public Wagesetting protectedworkshop(Boolean protectedworkshop) {
+    this.protectedworkshop = protectedworkshop;
     return this;
   }
 
    /**
-   * Chráněná dílna [persistentní položka]
-   * @return protectedWorkshop
+   * chráněná dílna [persistentní položka]
+   * @return protectedworkshop
   **/
-  @ApiModelProperty(example = "null", value = "Chráněná dílna [persistentní položka]")
-  public Boolean getProtectedWorkshop() {
-    return protectedWorkshop;
+  @ApiModelProperty(example = "null", value = "chráněná dílna [persistentní položka]")
+  public Boolean getProtectedworkshop() {
+    return protectedworkshop;
   }
 
-  public void setProtectedWorkshop(Boolean protectedWorkshop) {
-    this.protectedWorkshop = protectedWorkshop;
+  public void setProtectedworkshop(Boolean protectedworkshop) {
+    this.protectedworkshop = protectedworkshop;
   }
 
 
@@ -1576,85 +1612,85 @@ public class Wagesetting   {
       return false;
     }
     Wagesetting wagesetting = (Wagesetting) o;
-    return Objects.equals(this.displayName, wagesetting.displayName) &&
-        Objects.equals(this.ID, wagesetting.ID) &&
-        Objects.equals(this.classID, wagesetting.classID) &&
-        Objects.equals(this.objVersion, wagesetting.objVersion) &&
+    return Objects.equals(this.displayname, wagesetting.displayname) &&
+        Objects.equals(this.id, wagesetting.id) &&
+        Objects.equals(this.classid, wagesetting.classid) &&
+        Objects.equals(this.objversion, wagesetting.objversion) &&
         Objects.equals(this.rows, wagesetting.rows) &&
-        Objects.equals(this.sBCalcSchemeForWSPartID, wagesetting.sBCalcSchemeForWSPartID) &&
-        Objects.equals(this.sBCalcSchForWSComID, wagesetting.sBCalcSchForWSComID) &&
-        Objects.equals(this.yCCalcSchForWSComID, wagesetting.yCCalcSchForWSComID) &&
-        Objects.equals(this.useUserRoundDefinitions, wagesetting.useUserRoundDefinitions) &&
-        Objects.equals(this.userAnnClearingTaxBaseRounding, wagesetting.userAnnClearingTaxBaseRounding) &&
-        Objects.equals(this.userAnnClearingTaxRounding, wagesetting.userAnnClearingTaxRounding) &&
-        Objects.equals(this.userPercentDocksRounding, wagesetting.userPercentDocksRounding) &&
-        Objects.equals(this.formulaCodeEmployee, wagesetting.formulaCodeEmployee) &&
-        Objects.equals(this.reduceRewardByWorkTime, wagesetting.reduceRewardByWorkTime) &&
-        Objects.equals(this.useAbsencesInCalculation, wagesetting.useAbsencesInCalculation) &&
-        Objects.equals(this.automaticCalc, wagesetting.automaticCalc) &&
-        Objects.equals(this.wageFactorySettings, wagesetting.wageFactorySettings) &&
-        Objects.equals(this.averageType, wagesetting.averageType) &&
-        Objects.equals(this.fieldForPercentDock, wagesetting.fieldForPercentDock) &&
-        Objects.equals(this.allowSicksBack, wagesetting.allowSicksBack) &&
-        Objects.equals(this.rewardLongTermShortingMethod, wagesetting.rewardLongTermShortingMethod) &&
-        Objects.equals(this.mealTicketClaimMode, wagesetting.mealTicketClaimMode) &&
-        Objects.equals(this.mTCMWithHoliday, wagesetting.mTCMWithHoliday) &&
-        Objects.equals(this.mTCMWithPaidFree, wagesetting.mTCMWithPaidFree) &&
-        Objects.equals(this.mTCMWithFeasts, wagesetting.mTCMWithFeasts) &&
-        Objects.equals(this.mTCMWithSicks, wagesetting.mTCMWithSicks) &&
-        Objects.equals(this.preferredCodeBehaviour, wagesetting.preferredCodeBehaviour) &&
-        Objects.equals(this.validateSBMaximum, wagesetting.validateSBMaximum) &&
-        Objects.equals(this.hIAnnualClearingChartID, wagesetting.hIAnnualClearingChartID) &&
-        Objects.equals(this.fieldForInsCompRegNum, wagesetting.fieldForInsCompRegNum) &&
-        Objects.equals(this.userHIMinInsBaseRounding, wagesetting.userHIMinInsBaseRounding) &&
-        Objects.equals(this.userHIKMinKMaxRounding, wagesetting.userHIKMinKMaxRounding) &&
-        Objects.equals(this.sIPeriodStdActionParams, wagesetting.sIPeriodStdActionParams) &&
-        Objects.equals(this.hIPeriodStdActionParams, wagesetting.hIPeriodStdActionParams) &&
-        Objects.equals(this.sIPeriodStdActionField, wagesetting.sIPeriodStdActionField) &&
-        Objects.equals(this.hIPeriodStdActionField, wagesetting.hIPeriodStdActionField) &&
-        Objects.equals(this.hIFirmID, wagesetting.hIFirmID) &&
-        Objects.equals(this.useUserHIRoundDefinitions, wagesetting.useUserHIRoundDefinitions) &&
-        Objects.equals(this.claimShortRounding, wagesetting.claimShortRounding) &&
-        Objects.equals(this.claimShortAuto, wagesetting.claimShortAuto) &&
-        Objects.equals(this.claimShortRoundingHrs, wagesetting.claimShortRoundingHrs) &&
-        Objects.equals(this.fieldForPercentDockLabel, wagesetting.fieldForPercentDockLabel) &&
-        Objects.equals(this.fieldForPercentDockName, wagesetting.fieldForPercentDockName) &&
-        Objects.equals(this.fieldForDisabilityName, wagesetting.fieldForDisabilityName) &&
-        Objects.equals(this.fieldForDisabilityFromName, wagesetting.fieldForDisabilityFromName) &&
-        Objects.equals(this.fieldForInsCompRegNumName, wagesetting.fieldForInsCompRegNumName) &&
-        Objects.equals(this.fieldForDisabilityLabel, wagesetting.fieldForDisabilityLabel) &&
-        Objects.equals(this.fieldForDisabilityFromLabel, wagesetting.fieldForDisabilityFromLabel) &&
-        Objects.equals(this.fieldForInsCompRegNumLabel, wagesetting.fieldForInsCompRegNumLabel) &&
-        Objects.equals(this.systAnnClearingTaxBaseRounding, wagesetting.systAnnClearingTaxBaseRounding) &&
-        Objects.equals(this.systAnnClearingTaxRounding, wagesetting.systAnnClearingTaxRounding) &&
-        Objects.equals(this.systPercentDocksRounding, wagesetting.systPercentDocksRounding) &&
-        Objects.equals(this.annClearingTaxBaseRounding, wagesetting.annClearingTaxBaseRounding) &&
-        Objects.equals(this.annClearingTaxRounding, wagesetting.annClearingTaxRounding) &&
-        Objects.equals(this.percentDocksRounding, wagesetting.percentDocksRounding) &&
-        Objects.equals(this.hIYearRounding, wagesetting.hIYearRounding) &&
-        Objects.equals(this.hIKMinKMaxRounding, wagesetting.hIKMinKMaxRounding) &&
-        Objects.equals(this.hIMinInsBaseRounding, wagesetting.hIMinInsBaseRounding) &&
-        Objects.equals(this.systHIYearRounding, wagesetting.systHIYearRounding) &&
-        Objects.equals(this.systHIKMinKMaxRounding, wagesetting.systHIKMinKMaxRounding) &&
-        Objects.equals(this.systHIMinInsBaseRounding, wagesetting.systHIMinInsBaseRounding) &&
-        Objects.equals(this.firmID, wagesetting.firmID) &&
-        Objects.equals(this.wageClosingDayType, wagesetting.wageClosingDayType) &&
-        Objects.equals(this.wageClosingNrDays, wagesetting.wageClosingNrDays) &&
-        Objects.equals(this.smallOrBigCompany, wagesetting.smallOrBigCompany) &&
-        Objects.equals(this.fieldForDisability, wagesetting.fieldForDisability) &&
-        Objects.equals(this.fieldForDisabilityFrom, wagesetting.fieldForDisabilityFrom) &&
-        Objects.equals(this.userHIYearRounding, wagesetting.userHIYearRounding) &&
-        Objects.equals(this.sIPeriodStdActFldName, wagesetting.sIPeriodStdActFldName) &&
-        Objects.equals(this.sIPeriodStdActFldLabel, wagesetting.sIPeriodStdActFldLabel) &&
-        Objects.equals(this.hIPeriodStdActFldName, wagesetting.hIPeriodStdActFldName) &&
-        Objects.equals(this.hIPeriodStdActFldLabel, wagesetting.hIPeriodStdActFldLabel) &&
-        Objects.equals(this.divisionID, wagesetting.divisionID) &&
-        Objects.equals(this.protectedWorkshop, wagesetting.protectedWorkshop);
+        Objects.equals(this.sbcalcschemeforwspartId, wagesetting.sbcalcschemeforwspartId) &&
+        Objects.equals(this.sbcalcschforwscomId, wagesetting.sbcalcschforwscomId) &&
+        Objects.equals(this.yccalcschforwscomId, wagesetting.yccalcschforwscomId) &&
+        Objects.equals(this.useuserrounddefinitions, wagesetting.useuserrounddefinitions) &&
+        Objects.equals(this.userannclearingtaxbaserounding, wagesetting.userannclearingtaxbaserounding) &&
+        Objects.equals(this.userannclearingtaxrounding, wagesetting.userannclearingtaxrounding) &&
+        Objects.equals(this.userpercentdocksrounding, wagesetting.userpercentdocksrounding) &&
+        Objects.equals(this.formulacodeemployee, wagesetting.formulacodeemployee) &&
+        Objects.equals(this.reducerewardbyworktime, wagesetting.reducerewardbyworktime) &&
+        Objects.equals(this.useabsencesincalculation, wagesetting.useabsencesincalculation) &&
+        Objects.equals(this.automaticcalc, wagesetting.automaticcalc) &&
+        Objects.equals(this.wagefactorysettings, wagesetting.wagefactorysettings) &&
+        Objects.equals(this.averagetype, wagesetting.averagetype) &&
+        Objects.equals(this.fieldforpercentdock, wagesetting.fieldforpercentdock) &&
+        Objects.equals(this.allowsicksback, wagesetting.allowsicksback) &&
+        Objects.equals(this.rewardlongtermshortingmethod, wagesetting.rewardlongtermshortingmethod) &&
+        Objects.equals(this.mealticketclaimmode, wagesetting.mealticketclaimmode) &&
+        Objects.equals(this.mtcmwithholiday, wagesetting.mtcmwithholiday) &&
+        Objects.equals(this.mtcmwithpaidfree, wagesetting.mtcmwithpaidfree) &&
+        Objects.equals(this.mtcmwithfeasts, wagesetting.mtcmwithfeasts) &&
+        Objects.equals(this.mtcmwithsicks, wagesetting.mtcmwithsicks) &&
+        Objects.equals(this.preferredcodebehaviour, wagesetting.preferredcodebehaviour) &&
+        Objects.equals(this.validatesbmaximum, wagesetting.validatesbmaximum) &&
+        Objects.equals(this.hiannualclearingchartId, wagesetting.hiannualclearingchartId) &&
+        Objects.equals(this.fieldforinscompregnum, wagesetting.fieldforinscompregnum) &&
+        Objects.equals(this.userhimininsbaserounding, wagesetting.userhimininsbaserounding) &&
+        Objects.equals(this.userhikminkmaxrounding, wagesetting.userhikminkmaxrounding) &&
+        Objects.equals(this.siperiodstdactionparams, wagesetting.siperiodstdactionparams) &&
+        Objects.equals(this.hiperiodstdactionparams, wagesetting.hiperiodstdactionparams) &&
+        Objects.equals(this.siperiodstdactionfield, wagesetting.siperiodstdactionfield) &&
+        Objects.equals(this.hiperiodstdactionfield, wagesetting.hiperiodstdactionfield) &&
+        Objects.equals(this.hifirmId, wagesetting.hifirmId) &&
+        Objects.equals(this.useuserhirounddefinitions, wagesetting.useuserhirounddefinitions) &&
+        Objects.equals(this.claimshortrounding, wagesetting.claimshortrounding) &&
+        Objects.equals(this.claimshortauto, wagesetting.claimshortauto) &&
+        Objects.equals(this.claimshortroundinghrs, wagesetting.claimshortroundinghrs) &&
+        Objects.equals(this.fieldforpercentdocklabel, wagesetting.fieldforpercentdocklabel) &&
+        Objects.equals(this.fieldforpercentdockname, wagesetting.fieldforpercentdockname) &&
+        Objects.equals(this.fieldfordisabilityname, wagesetting.fieldfordisabilityname) &&
+        Objects.equals(this.fieldfordisabilityfromname, wagesetting.fieldfordisabilityfromname) &&
+        Objects.equals(this.fieldforinscompregnumname, wagesetting.fieldforinscompregnumname) &&
+        Objects.equals(this.fieldfordisabilitylabel, wagesetting.fieldfordisabilitylabel) &&
+        Objects.equals(this.fieldfordisabilityfromlabel, wagesetting.fieldfordisabilityfromlabel) &&
+        Objects.equals(this.fieldforinscompregnumlabel, wagesetting.fieldforinscompregnumlabel) &&
+        Objects.equals(this.systannclearingtaxbaserounding, wagesetting.systannclearingtaxbaserounding) &&
+        Objects.equals(this.systannclearingtaxrounding, wagesetting.systannclearingtaxrounding) &&
+        Objects.equals(this.systpercentdocksrounding, wagesetting.systpercentdocksrounding) &&
+        Objects.equals(this.annclearingtaxbaserounding, wagesetting.annclearingtaxbaserounding) &&
+        Objects.equals(this.annclearingtaxrounding, wagesetting.annclearingtaxrounding) &&
+        Objects.equals(this.percentdocksrounding, wagesetting.percentdocksrounding) &&
+        Objects.equals(this.hiyearrounding, wagesetting.hiyearrounding) &&
+        Objects.equals(this.hikminkmaxrounding, wagesetting.hikminkmaxrounding) &&
+        Objects.equals(this.himininsbaserounding, wagesetting.himininsbaserounding) &&
+        Objects.equals(this.systhiyearrounding, wagesetting.systhiyearrounding) &&
+        Objects.equals(this.systhikminkmaxrounding, wagesetting.systhikminkmaxrounding) &&
+        Objects.equals(this.systhimininsbaserounding, wagesetting.systhimininsbaserounding) &&
+        Objects.equals(this.firmId, wagesetting.firmId) &&
+        Objects.equals(this.wageclosingdaytype, wagesetting.wageclosingdaytype) &&
+        Objects.equals(this.wageclosingnrdays, wagesetting.wageclosingnrdays) &&
+        Objects.equals(this.smallorbigcompany, wagesetting.smallorbigcompany) &&
+        Objects.equals(this.fieldfordisability, wagesetting.fieldfordisability) &&
+        Objects.equals(this.fieldfordisabilityfrom, wagesetting.fieldfordisabilityfrom) &&
+        Objects.equals(this.userhiyearrounding, wagesetting.userhiyearrounding) &&
+        Objects.equals(this.siperiodstdactfldname, wagesetting.siperiodstdactfldname) &&
+        Objects.equals(this.siperiodstdactfldlabel, wagesetting.siperiodstdactfldlabel) &&
+        Objects.equals(this.hiperiodstdactfldname, wagesetting.hiperiodstdactfldname) &&
+        Objects.equals(this.hiperiodstdactfldlabel, wagesetting.hiperiodstdactfldlabel) &&
+        Objects.equals(this.divisionId, wagesetting.divisionId) &&
+        Objects.equals(this.protectedworkshop, wagesetting.protectedworkshop);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, sBCalcSchemeForWSPartID, sBCalcSchForWSComID, yCCalcSchForWSComID, useUserRoundDefinitions, userAnnClearingTaxBaseRounding, userAnnClearingTaxRounding, userPercentDocksRounding, formulaCodeEmployee, reduceRewardByWorkTime, useAbsencesInCalculation, automaticCalc, wageFactorySettings, averageType, fieldForPercentDock, allowSicksBack, rewardLongTermShortingMethod, mealTicketClaimMode, mTCMWithHoliday, mTCMWithPaidFree, mTCMWithFeasts, mTCMWithSicks, preferredCodeBehaviour, validateSBMaximum, hIAnnualClearingChartID, fieldForInsCompRegNum, userHIMinInsBaseRounding, userHIKMinKMaxRounding, sIPeriodStdActionParams, hIPeriodStdActionParams, sIPeriodStdActionField, hIPeriodStdActionField, hIFirmID, useUserHIRoundDefinitions, claimShortRounding, claimShortAuto, claimShortRoundingHrs, fieldForPercentDockLabel, fieldForPercentDockName, fieldForDisabilityName, fieldForDisabilityFromName, fieldForInsCompRegNumName, fieldForDisabilityLabel, fieldForDisabilityFromLabel, fieldForInsCompRegNumLabel, systAnnClearingTaxBaseRounding, systAnnClearingTaxRounding, systPercentDocksRounding, annClearingTaxBaseRounding, annClearingTaxRounding, percentDocksRounding, hIYearRounding, hIKMinKMaxRounding, hIMinInsBaseRounding, systHIYearRounding, systHIKMinKMaxRounding, systHIMinInsBaseRounding, firmID, wageClosingDayType, wageClosingNrDays, smallOrBigCompany, fieldForDisability, fieldForDisabilityFrom, userHIYearRounding, sIPeriodStdActFldName, sIPeriodStdActFldLabel, hIPeriodStdActFldName, hIPeriodStdActFldLabel, divisionID, protectedWorkshop);
+    return Objects.hash(displayname, id, classid, objversion, rows, sbcalcschemeforwspartId, sbcalcschforwscomId, yccalcschforwscomId, useuserrounddefinitions, userannclearingtaxbaserounding, userannclearingtaxrounding, userpercentdocksrounding, formulacodeemployee, reducerewardbyworktime, useabsencesincalculation, automaticcalc, wagefactorysettings, averagetype, fieldforpercentdock, allowsicksback, rewardlongtermshortingmethod, mealticketclaimmode, mtcmwithholiday, mtcmwithpaidfree, mtcmwithfeasts, mtcmwithsicks, preferredcodebehaviour, validatesbmaximum, hiannualclearingchartId, fieldforinscompregnum, userhimininsbaserounding, userhikminkmaxrounding, siperiodstdactionparams, hiperiodstdactionparams, siperiodstdactionfield, hiperiodstdactionfield, hifirmId, useuserhirounddefinitions, claimshortrounding, claimshortauto, claimshortroundinghrs, fieldforpercentdocklabel, fieldforpercentdockname, fieldfordisabilityname, fieldfordisabilityfromname, fieldforinscompregnumname, fieldfordisabilitylabel, fieldfordisabilityfromlabel, fieldforinscompregnumlabel, systannclearingtaxbaserounding, systannclearingtaxrounding, systpercentdocksrounding, annclearingtaxbaserounding, annclearingtaxrounding, percentdocksrounding, hiyearrounding, hikminkmaxrounding, himininsbaserounding, systhiyearrounding, systhikminkmaxrounding, systhimininsbaserounding, firmId, wageclosingdaytype, wageclosingnrdays, smallorbigcompany, fieldfordisability, fieldfordisabilityfrom, userhiyearrounding, siperiodstdactfldname, siperiodstdactfldlabel, hiperiodstdactfldname, hiperiodstdactfldlabel, divisionId, protectedworkshop);
   }
 
   @Override
@@ -1662,80 +1698,80 @@ public class Wagesetting   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wagesetting {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    sBCalcSchemeForWSPartID: ").append(toIndentedString(sBCalcSchemeForWSPartID)).append("\n");
-    sb.append("    sBCalcSchForWSComID: ").append(toIndentedString(sBCalcSchForWSComID)).append("\n");
-    sb.append("    yCCalcSchForWSComID: ").append(toIndentedString(yCCalcSchForWSComID)).append("\n");
-    sb.append("    useUserRoundDefinitions: ").append(toIndentedString(useUserRoundDefinitions)).append("\n");
-    sb.append("    userAnnClearingTaxBaseRounding: ").append(toIndentedString(userAnnClearingTaxBaseRounding)).append("\n");
-    sb.append("    userAnnClearingTaxRounding: ").append(toIndentedString(userAnnClearingTaxRounding)).append("\n");
-    sb.append("    userPercentDocksRounding: ").append(toIndentedString(userPercentDocksRounding)).append("\n");
-    sb.append("    formulaCodeEmployee: ").append(toIndentedString(formulaCodeEmployee)).append("\n");
-    sb.append("    reduceRewardByWorkTime: ").append(toIndentedString(reduceRewardByWorkTime)).append("\n");
-    sb.append("    useAbsencesInCalculation: ").append(toIndentedString(useAbsencesInCalculation)).append("\n");
-    sb.append("    automaticCalc: ").append(toIndentedString(automaticCalc)).append("\n");
-    sb.append("    wageFactorySettings: ").append(toIndentedString(wageFactorySettings)).append("\n");
-    sb.append("    averageType: ").append(toIndentedString(averageType)).append("\n");
-    sb.append("    fieldForPercentDock: ").append(toIndentedString(fieldForPercentDock)).append("\n");
-    sb.append("    allowSicksBack: ").append(toIndentedString(allowSicksBack)).append("\n");
-    sb.append("    rewardLongTermShortingMethod: ").append(toIndentedString(rewardLongTermShortingMethod)).append("\n");
-    sb.append("    mealTicketClaimMode: ").append(toIndentedString(mealTicketClaimMode)).append("\n");
-    sb.append("    mTCMWithHoliday: ").append(toIndentedString(mTCMWithHoliday)).append("\n");
-    sb.append("    mTCMWithPaidFree: ").append(toIndentedString(mTCMWithPaidFree)).append("\n");
-    sb.append("    mTCMWithFeasts: ").append(toIndentedString(mTCMWithFeasts)).append("\n");
-    sb.append("    mTCMWithSicks: ").append(toIndentedString(mTCMWithSicks)).append("\n");
-    sb.append("    preferredCodeBehaviour: ").append(toIndentedString(preferredCodeBehaviour)).append("\n");
-    sb.append("    validateSBMaximum: ").append(toIndentedString(validateSBMaximum)).append("\n");
-    sb.append("    hIAnnualClearingChartID: ").append(toIndentedString(hIAnnualClearingChartID)).append("\n");
-    sb.append("    fieldForInsCompRegNum: ").append(toIndentedString(fieldForInsCompRegNum)).append("\n");
-    sb.append("    userHIMinInsBaseRounding: ").append(toIndentedString(userHIMinInsBaseRounding)).append("\n");
-    sb.append("    userHIKMinKMaxRounding: ").append(toIndentedString(userHIKMinKMaxRounding)).append("\n");
-    sb.append("    sIPeriodStdActionParams: ").append(toIndentedString(sIPeriodStdActionParams)).append("\n");
-    sb.append("    hIPeriodStdActionParams: ").append(toIndentedString(hIPeriodStdActionParams)).append("\n");
-    sb.append("    sIPeriodStdActionField: ").append(toIndentedString(sIPeriodStdActionField)).append("\n");
-    sb.append("    hIPeriodStdActionField: ").append(toIndentedString(hIPeriodStdActionField)).append("\n");
-    sb.append("    hIFirmID: ").append(toIndentedString(hIFirmID)).append("\n");
-    sb.append("    useUserHIRoundDefinitions: ").append(toIndentedString(useUserHIRoundDefinitions)).append("\n");
-    sb.append("    claimShortRounding: ").append(toIndentedString(claimShortRounding)).append("\n");
-    sb.append("    claimShortAuto: ").append(toIndentedString(claimShortAuto)).append("\n");
-    sb.append("    claimShortRoundingHrs: ").append(toIndentedString(claimShortRoundingHrs)).append("\n");
-    sb.append("    fieldForPercentDockLabel: ").append(toIndentedString(fieldForPercentDockLabel)).append("\n");
-    sb.append("    fieldForPercentDockName: ").append(toIndentedString(fieldForPercentDockName)).append("\n");
-    sb.append("    fieldForDisabilityName: ").append(toIndentedString(fieldForDisabilityName)).append("\n");
-    sb.append("    fieldForDisabilityFromName: ").append(toIndentedString(fieldForDisabilityFromName)).append("\n");
-    sb.append("    fieldForInsCompRegNumName: ").append(toIndentedString(fieldForInsCompRegNumName)).append("\n");
-    sb.append("    fieldForDisabilityLabel: ").append(toIndentedString(fieldForDisabilityLabel)).append("\n");
-    sb.append("    fieldForDisabilityFromLabel: ").append(toIndentedString(fieldForDisabilityFromLabel)).append("\n");
-    sb.append("    fieldForInsCompRegNumLabel: ").append(toIndentedString(fieldForInsCompRegNumLabel)).append("\n");
-    sb.append("    systAnnClearingTaxBaseRounding: ").append(toIndentedString(systAnnClearingTaxBaseRounding)).append("\n");
-    sb.append("    systAnnClearingTaxRounding: ").append(toIndentedString(systAnnClearingTaxRounding)).append("\n");
-    sb.append("    systPercentDocksRounding: ").append(toIndentedString(systPercentDocksRounding)).append("\n");
-    sb.append("    annClearingTaxBaseRounding: ").append(toIndentedString(annClearingTaxBaseRounding)).append("\n");
-    sb.append("    annClearingTaxRounding: ").append(toIndentedString(annClearingTaxRounding)).append("\n");
-    sb.append("    percentDocksRounding: ").append(toIndentedString(percentDocksRounding)).append("\n");
-    sb.append("    hIYearRounding: ").append(toIndentedString(hIYearRounding)).append("\n");
-    sb.append("    hIKMinKMaxRounding: ").append(toIndentedString(hIKMinKMaxRounding)).append("\n");
-    sb.append("    hIMinInsBaseRounding: ").append(toIndentedString(hIMinInsBaseRounding)).append("\n");
-    sb.append("    systHIYearRounding: ").append(toIndentedString(systHIYearRounding)).append("\n");
-    sb.append("    systHIKMinKMaxRounding: ").append(toIndentedString(systHIKMinKMaxRounding)).append("\n");
-    sb.append("    systHIMinInsBaseRounding: ").append(toIndentedString(systHIMinInsBaseRounding)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    wageClosingDayType: ").append(toIndentedString(wageClosingDayType)).append("\n");
-    sb.append("    wageClosingNrDays: ").append(toIndentedString(wageClosingNrDays)).append("\n");
-    sb.append("    smallOrBigCompany: ").append(toIndentedString(smallOrBigCompany)).append("\n");
-    sb.append("    fieldForDisability: ").append(toIndentedString(fieldForDisability)).append("\n");
-    sb.append("    fieldForDisabilityFrom: ").append(toIndentedString(fieldForDisabilityFrom)).append("\n");
-    sb.append("    userHIYearRounding: ").append(toIndentedString(userHIYearRounding)).append("\n");
-    sb.append("    sIPeriodStdActFldName: ").append(toIndentedString(sIPeriodStdActFldName)).append("\n");
-    sb.append("    sIPeriodStdActFldLabel: ").append(toIndentedString(sIPeriodStdActFldLabel)).append("\n");
-    sb.append("    hIPeriodStdActFldName: ").append(toIndentedString(hIPeriodStdActFldName)).append("\n");
-    sb.append("    hIPeriodStdActFldLabel: ").append(toIndentedString(hIPeriodStdActFldLabel)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    protectedWorkshop: ").append(toIndentedString(protectedWorkshop)).append("\n");
+    sb.append("    sbcalcschemeforwspartId: ").append(toIndentedString(sbcalcschemeforwspartId)).append("\n");
+    sb.append("    sbcalcschforwscomId: ").append(toIndentedString(sbcalcschforwscomId)).append("\n");
+    sb.append("    yccalcschforwscomId: ").append(toIndentedString(yccalcschforwscomId)).append("\n");
+    sb.append("    useuserrounddefinitions: ").append(toIndentedString(useuserrounddefinitions)).append("\n");
+    sb.append("    userannclearingtaxbaserounding: ").append(toIndentedString(userannclearingtaxbaserounding)).append("\n");
+    sb.append("    userannclearingtaxrounding: ").append(toIndentedString(userannclearingtaxrounding)).append("\n");
+    sb.append("    userpercentdocksrounding: ").append(toIndentedString(userpercentdocksrounding)).append("\n");
+    sb.append("    formulacodeemployee: ").append(toIndentedString(formulacodeemployee)).append("\n");
+    sb.append("    reducerewardbyworktime: ").append(toIndentedString(reducerewardbyworktime)).append("\n");
+    sb.append("    useabsencesincalculation: ").append(toIndentedString(useabsencesincalculation)).append("\n");
+    sb.append("    automaticcalc: ").append(toIndentedString(automaticcalc)).append("\n");
+    sb.append("    wagefactorysettings: ").append(toIndentedString(wagefactorysettings)).append("\n");
+    sb.append("    averagetype: ").append(toIndentedString(averagetype)).append("\n");
+    sb.append("    fieldforpercentdock: ").append(toIndentedString(fieldforpercentdock)).append("\n");
+    sb.append("    allowsicksback: ").append(toIndentedString(allowsicksback)).append("\n");
+    sb.append("    rewardlongtermshortingmethod: ").append(toIndentedString(rewardlongtermshortingmethod)).append("\n");
+    sb.append("    mealticketclaimmode: ").append(toIndentedString(mealticketclaimmode)).append("\n");
+    sb.append("    mtcmwithholiday: ").append(toIndentedString(mtcmwithholiday)).append("\n");
+    sb.append("    mtcmwithpaidfree: ").append(toIndentedString(mtcmwithpaidfree)).append("\n");
+    sb.append("    mtcmwithfeasts: ").append(toIndentedString(mtcmwithfeasts)).append("\n");
+    sb.append("    mtcmwithsicks: ").append(toIndentedString(mtcmwithsicks)).append("\n");
+    sb.append("    preferredcodebehaviour: ").append(toIndentedString(preferredcodebehaviour)).append("\n");
+    sb.append("    validatesbmaximum: ").append(toIndentedString(validatesbmaximum)).append("\n");
+    sb.append("    hiannualclearingchartId: ").append(toIndentedString(hiannualclearingchartId)).append("\n");
+    sb.append("    fieldforinscompregnum: ").append(toIndentedString(fieldforinscompregnum)).append("\n");
+    sb.append("    userhimininsbaserounding: ").append(toIndentedString(userhimininsbaserounding)).append("\n");
+    sb.append("    userhikminkmaxrounding: ").append(toIndentedString(userhikminkmaxrounding)).append("\n");
+    sb.append("    siperiodstdactionparams: ").append(toIndentedString(siperiodstdactionparams)).append("\n");
+    sb.append("    hiperiodstdactionparams: ").append(toIndentedString(hiperiodstdactionparams)).append("\n");
+    sb.append("    siperiodstdactionfield: ").append(toIndentedString(siperiodstdactionfield)).append("\n");
+    sb.append("    hiperiodstdactionfield: ").append(toIndentedString(hiperiodstdactionfield)).append("\n");
+    sb.append("    hifirmId: ").append(toIndentedString(hifirmId)).append("\n");
+    sb.append("    useuserhirounddefinitions: ").append(toIndentedString(useuserhirounddefinitions)).append("\n");
+    sb.append("    claimshortrounding: ").append(toIndentedString(claimshortrounding)).append("\n");
+    sb.append("    claimshortauto: ").append(toIndentedString(claimshortauto)).append("\n");
+    sb.append("    claimshortroundinghrs: ").append(toIndentedString(claimshortroundinghrs)).append("\n");
+    sb.append("    fieldforpercentdocklabel: ").append(toIndentedString(fieldforpercentdocklabel)).append("\n");
+    sb.append("    fieldforpercentdockname: ").append(toIndentedString(fieldforpercentdockname)).append("\n");
+    sb.append("    fieldfordisabilityname: ").append(toIndentedString(fieldfordisabilityname)).append("\n");
+    sb.append("    fieldfordisabilityfromname: ").append(toIndentedString(fieldfordisabilityfromname)).append("\n");
+    sb.append("    fieldforinscompregnumname: ").append(toIndentedString(fieldforinscompregnumname)).append("\n");
+    sb.append("    fieldfordisabilitylabel: ").append(toIndentedString(fieldfordisabilitylabel)).append("\n");
+    sb.append("    fieldfordisabilityfromlabel: ").append(toIndentedString(fieldfordisabilityfromlabel)).append("\n");
+    sb.append("    fieldforinscompregnumlabel: ").append(toIndentedString(fieldforinscompregnumlabel)).append("\n");
+    sb.append("    systannclearingtaxbaserounding: ").append(toIndentedString(systannclearingtaxbaserounding)).append("\n");
+    sb.append("    systannclearingtaxrounding: ").append(toIndentedString(systannclearingtaxrounding)).append("\n");
+    sb.append("    systpercentdocksrounding: ").append(toIndentedString(systpercentdocksrounding)).append("\n");
+    sb.append("    annclearingtaxbaserounding: ").append(toIndentedString(annclearingtaxbaserounding)).append("\n");
+    sb.append("    annclearingtaxrounding: ").append(toIndentedString(annclearingtaxrounding)).append("\n");
+    sb.append("    percentdocksrounding: ").append(toIndentedString(percentdocksrounding)).append("\n");
+    sb.append("    hiyearrounding: ").append(toIndentedString(hiyearrounding)).append("\n");
+    sb.append("    hikminkmaxrounding: ").append(toIndentedString(hikminkmaxrounding)).append("\n");
+    sb.append("    himininsbaserounding: ").append(toIndentedString(himininsbaserounding)).append("\n");
+    sb.append("    systhiyearrounding: ").append(toIndentedString(systhiyearrounding)).append("\n");
+    sb.append("    systhikminkmaxrounding: ").append(toIndentedString(systhikminkmaxrounding)).append("\n");
+    sb.append("    systhimininsbaserounding: ").append(toIndentedString(systhimininsbaserounding)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    wageclosingdaytype: ").append(toIndentedString(wageclosingdaytype)).append("\n");
+    sb.append("    wageclosingnrdays: ").append(toIndentedString(wageclosingnrdays)).append("\n");
+    sb.append("    smallorbigcompany: ").append(toIndentedString(smallorbigcompany)).append("\n");
+    sb.append("    fieldfordisability: ").append(toIndentedString(fieldfordisability)).append("\n");
+    sb.append("    fieldfordisabilityfrom: ").append(toIndentedString(fieldfordisabilityfrom)).append("\n");
+    sb.append("    userhiyearrounding: ").append(toIndentedString(userhiyearrounding)).append("\n");
+    sb.append("    siperiodstdactfldname: ").append(toIndentedString(siperiodstdactfldname)).append("\n");
+    sb.append("    siperiodstdactfldlabel: ").append(toIndentedString(siperiodstdactfldlabel)).append("\n");
+    sb.append("    hiperiodstdactfldname: ").append(toIndentedString(hiperiodstdactfldname)).append("\n");
+    sb.append("    hiperiodstdactfldlabel: ").append(toIndentedString(hiperiodstdactfldlabel)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    protectedworkshop: ").append(toIndentedString(protectedworkshop)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,132 +34,177 @@ import java.util.Objects;
 /**
  * Firmassortmentdiscount
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Firmassortmentdiscount   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("StoreAssortmentGroup_ID")
-  private String storeAssortmentGroupID = null;
+  @SerializedName("storeassortmentgroup_id")
+  private String storeassortmentgroupId = null;
 
-  @SerializedName("Price_ID")
-  private String priceID = null;
+  @SerializedName("price_id")
+  private String priceId = null;
 
-  @SerializedName("Discount")
+  @SerializedName("discount")
   private Double discount = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Firma [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Firma [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Firmassortmentdiscount posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Firmassortmentdiscount displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Firmassortmentdiscount storeAssortmentGroupID(String storeAssortmentGroupID) {
-    this.storeAssortmentGroupID = storeAssortmentGroupID;
+  public Firmassortmentdiscount id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Sortimentní skupina; ID objektu Sortimentní skupina [persistentní položka]
-   * @return storeAssortmentGroupID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Sortimentní skupina; ID objektu Sortimentní skupina [persistentní položka]")
-  public String getStoreAssortmentGroupID() {
-    return storeAssortmentGroupID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setStoreAssortmentGroupID(String storeAssortmentGroupID) {
-    this.storeAssortmentGroupID = storeAssortmentGroupID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Firmassortmentdiscount priceID(String priceID) {
-    this.priceID = priceID;
+  public Firmassortmentdiscount classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Typ ceny; ID objektu Definice ceny [persistentní položka]
-   * @return priceID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Typ ceny; ID objektu Definice ceny [persistentní položka]")
-  public String getPriceID() {
-    return priceID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPriceID(String priceID) {
-    this.priceID = priceID;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Firmassortmentdiscount objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Firmassortmentdiscount parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu firma [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu firma [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Firmassortmentdiscount posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Firmassortmentdiscount storeassortmentgroupId(String storeassortmentgroupId) {
+    this.storeassortmentgroupId = storeassortmentgroupId;
+    return this;
+  }
+
+   /**
+   * sortimentní skupina; id objektu sortimentní skupina [persistentní položka]
+   * @return storeassortmentgroupId
+  **/
+  @ApiModelProperty(example = "null", value = "sortimentní skupina; id objektu sortimentní skupina [persistentní položka]")
+  public String getStoreassortmentgroupId() {
+    return storeassortmentgroupId;
+  }
+
+  public void setStoreassortmentgroupId(String storeassortmentgroupId) {
+    this.storeassortmentgroupId = storeassortmentgroupId;
+  }
+
+  public Firmassortmentdiscount priceId(String priceId) {
+    this.priceId = priceId;
+    return this;
+  }
+
+   /**
+   * typ ceny; id objektu definice ceny [persistentní položka]
+   * @return priceId
+  **/
+  @ApiModelProperty(example = "null", value = "typ ceny; id objektu definice ceny [persistentní položka]")
+  public String getPriceId() {
+    return priceId;
+  }
+
+  public void setPriceId(String priceId) {
+    this.priceId = priceId;
   }
 
   public Firmassortmentdiscount discount(Double discount) {
@@ -168,10 +213,10 @@ public class Firmassortmentdiscount   {
   }
 
    /**
-   * Sleva [persistentní položka]
+   * sleva [persistentní položka]
    * @return discount
   **/
-  @ApiModelProperty(example = "null", value = "Sleva [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "sleva [persistentní položka]")
   public Double getDiscount() {
     return discount;
   }
@@ -190,20 +235,20 @@ public class Firmassortmentdiscount   {
       return false;
     }
     Firmassortmentdiscount firmassortmentdiscount = (Firmassortmentdiscount) o;
-    return Objects.equals(this.displayName, firmassortmentdiscount.displayName) &&
-        Objects.equals(this.ID, firmassortmentdiscount.ID) &&
-        Objects.equals(this.classID, firmassortmentdiscount.classID) &&
-        Objects.equals(this.objVersion, firmassortmentdiscount.objVersion) &&
-        Objects.equals(this.parentID, firmassortmentdiscount.parentID) &&
-        Objects.equals(this.posIndex, firmassortmentdiscount.posIndex) &&
-        Objects.equals(this.storeAssortmentGroupID, firmassortmentdiscount.storeAssortmentGroupID) &&
-        Objects.equals(this.priceID, firmassortmentdiscount.priceID) &&
+    return Objects.equals(this.displayname, firmassortmentdiscount.displayname) &&
+        Objects.equals(this.id, firmassortmentdiscount.id) &&
+        Objects.equals(this.classid, firmassortmentdiscount.classid) &&
+        Objects.equals(this.objversion, firmassortmentdiscount.objversion) &&
+        Objects.equals(this.parentId, firmassortmentdiscount.parentId) &&
+        Objects.equals(this.posindex, firmassortmentdiscount.posindex) &&
+        Objects.equals(this.storeassortmentgroupId, firmassortmentdiscount.storeassortmentgroupId) &&
+        Objects.equals(this.priceId, firmassortmentdiscount.priceId) &&
         Objects.equals(this.discount, firmassortmentdiscount.discount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, storeAssortmentGroupID, priceID, discount);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, storeassortmentgroupId, priceId, discount);
   }
 
   @Override
@@ -211,14 +256,14 @@ public class Firmassortmentdiscount   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Firmassortmentdiscount {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    storeAssortmentGroupID: ").append(toIndentedString(storeAssortmentGroupID)).append("\n");
-    sb.append("    priceID: ").append(toIndentedString(priceID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    storeassortmentgroupId: ").append(toIndentedString(storeassortmentgroupId)).append("\n");
+    sb.append("    priceId: ").append(toIndentedString(priceId)).append("\n");
     sb.append("    discount: ").append(toIndentedString(discount)).append("\n");
     sb.append("}");
     return sb.toString();

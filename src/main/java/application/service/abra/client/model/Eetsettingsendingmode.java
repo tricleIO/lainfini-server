@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,108 +35,153 @@ import java.util.Objects;
 /**
  * Eetsettingsendingmode
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Eetsettingsendingmode   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("ValidFrom$DATE")
-  private DateTime validFromDATE = null;
+  @SerializedName("validfrom$date")
+  private DateTime validfromdate = null;
 
-  @SerializedName("SendingMode")
-  private Integer sendingMode = null;
+  @SerializedName("sendingmode")
+  private Integer sendingmode = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Hlavičkový objekt [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Hlavičkový objekt [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Eetsettingsendingmode validFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public Eetsettingsendingmode displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Platnost od [persistentní položka]
-   * @return validFromDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Platnost od [persistentní položka]")
-  public DateTime getValidFromDATE() {
-    return validFromDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setValidFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Eetsettingsendingmode sendingMode(Integer sendingMode) {
-    this.sendingMode = sendingMode;
+  public Eetsettingsendingmode id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Mód odesílaní [persistentní položka]
-   * @return sendingMode
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Mód odesílaní [persistentní položka]")
-  public Integer getSendingMode() {
-    return sendingMode;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setSendingMode(Integer sendingMode) {
-    this.sendingMode = sendingMode;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Eetsettingsendingmode classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Eetsettingsendingmode objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Eetsettingsendingmode parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu hlavičkový objekt [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu hlavičkový objekt [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Eetsettingsendingmode validfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
+    return this;
+  }
+
+   /**
+   * platnost od [persistentní položka]
+   * @return validfromdate
+  **/
+  @ApiModelProperty(example = "null", value = "platnost od [persistentní položka]")
+  public DateTime getValidfromdate() {
+    return validfromdate;
+  }
+
+  public void setValidfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
+  }
+
+  public Eetsettingsendingmode sendingmode(Integer sendingmode) {
+    this.sendingmode = sendingmode;
+    return this;
+  }
+
+   /**
+   * mód odesílaní [persistentní položka]
+   * @return sendingmode
+  **/
+  @ApiModelProperty(example = "null", value = "mód odesílaní [persistentní položka]")
+  public Integer getSendingmode() {
+    return sendingmode;
+  }
+
+  public void setSendingmode(Integer sendingmode) {
+    this.sendingmode = sendingmode;
   }
 
 
@@ -149,18 +194,18 @@ public class Eetsettingsendingmode   {
       return false;
     }
     Eetsettingsendingmode eetsettingsendingmode = (Eetsettingsendingmode) o;
-    return Objects.equals(this.displayName, eetsettingsendingmode.displayName) &&
-        Objects.equals(this.ID, eetsettingsendingmode.ID) &&
-        Objects.equals(this.classID, eetsettingsendingmode.classID) &&
-        Objects.equals(this.objVersion, eetsettingsendingmode.objVersion) &&
-        Objects.equals(this.parentID, eetsettingsendingmode.parentID) &&
-        Objects.equals(this.validFromDATE, eetsettingsendingmode.validFromDATE) &&
-        Objects.equals(this.sendingMode, eetsettingsendingmode.sendingMode);
+    return Objects.equals(this.displayname, eetsettingsendingmode.displayname) &&
+        Objects.equals(this.id, eetsettingsendingmode.id) &&
+        Objects.equals(this.classid, eetsettingsendingmode.classid) &&
+        Objects.equals(this.objversion, eetsettingsendingmode.objversion) &&
+        Objects.equals(this.parentId, eetsettingsendingmode.parentId) &&
+        Objects.equals(this.validfromdate, eetsettingsendingmode.validfromdate) &&
+        Objects.equals(this.sendingmode, eetsettingsendingmode.sendingmode);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, validFromDATE, sendingMode);
+    return Objects.hash(displayname, id, classid, objversion, parentId, validfromdate, sendingmode);
   }
 
   @Override
@@ -168,13 +213,13 @@ public class Eetsettingsendingmode   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Eetsettingsendingmode {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    validFromDATE: ").append(toIndentedString(validFromDATE)).append("\n");
-    sb.append("    sendingMode: ").append(toIndentedString(sendingMode)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    validfromdate: ").append(toIndentedString(validfromdate)).append("\n");
+    sb.append("    sendingmode: ").append(toIndentedString(sendingmode)).append("\n");
     sb.append("}");
     return sb.toString();
   }

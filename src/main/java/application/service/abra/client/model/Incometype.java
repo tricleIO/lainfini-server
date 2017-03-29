@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,81 +34,117 @@ import java.util.Objects;
 /**
  * Incometype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Incometype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("AnalyticalAccount")
-  private String analyticalAccount = null;
+  @SerializedName("analyticalaccount")
+  private String analyticalaccount = null;
 
-  @SerializedName("Category")
+  @SerializedName("category")
   private Integer category = null;
 
-  @SerializedName("BookColumn")
-  private Integer bookColumn = null;
+  @SerializedName("bookcolumn")
+  private Integer bookcolumn = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("EETKind")
-  private Integer eETKind = null;
+  @SerializedName("eetkind")
+  private Integer eetkind = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Incometype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Incometype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Incometype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Incometype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Incometype hidden(Boolean hidden) {
@@ -117,10 +153,10 @@ public class Incometype   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -135,10 +171,10 @@ public class Incometype   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -153,10 +189,10 @@ public class Incometype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -165,22 +201,22 @@ public class Incometype   {
     this.name = name;
   }
 
-  public Incometype analyticalAccount(String analyticalAccount) {
-    this.analyticalAccount = analyticalAccount;
+  public Incometype analyticalaccount(String analyticalaccount) {
+    this.analyticalaccount = analyticalaccount;
     return this;
   }
 
    /**
-   * Analytika [persistentní položka]
-   * @return analyticalAccount
+   * analytika [persistentní položka]
+   * @return analyticalaccount
   **/
-  @ApiModelProperty(example = "null", value = "Analytika [persistentní položka]")
-  public String getAnalyticalAccount() {
-    return analyticalAccount;
+  @ApiModelProperty(example = "null", value = "analytika [persistentní položka]")
+  public String getAnalyticalaccount() {
+    return analyticalaccount;
   }
 
-  public void setAnalyticalAccount(String analyticalAccount) {
-    this.analyticalAccount = analyticalAccount;
+  public void setAnalyticalaccount(String analyticalaccount) {
+    this.analyticalaccount = analyticalaccount;
   }
 
   public Incometype category(Integer category) {
@@ -189,10 +225,10 @@ public class Incometype   {
   }
 
    /**
-   * Kategorie [persistentní položka]
+   * kategorie [persistentní položka]
    * @return category
   **/
-  @ApiModelProperty(example = "null", value = "Kategorie [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kategorie [persistentní položka]")
   public Integer getCategory() {
     return category;
   }
@@ -201,22 +237,22 @@ public class Incometype   {
     this.category = category;
   }
 
-  public Incometype bookColumn(Integer bookColumn) {
-    this.bookColumn = bookColumn;
+  public Incometype bookcolumn(Integer bookcolumn) {
+    this.bookcolumn = bookcolumn;
     return this;
   }
 
    /**
-   * Sloupec deníku [persistentní položka]
-   * @return bookColumn
+   * sloupec deníku [persistentní položka]
+   * @return bookcolumn
   **/
-  @ApiModelProperty(example = "null", value = "Sloupec deníku [persistentní položka]")
-  public Integer getBookColumn() {
-    return bookColumn;
+  @ApiModelProperty(example = "null", value = "sloupec deníku [persistentní položka]")
+  public Integer getBookcolumn() {
+    return bookcolumn;
   }
 
-  public void setBookColumn(Integer bookColumn) {
-    this.bookColumn = bookColumn;
+  public void setBookcolumn(Integer bookcolumn) {
+    this.bookcolumn = bookcolumn;
   }
 
   public Incometype description(String description) {
@@ -225,10 +261,10 @@ public class Incometype   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -237,40 +273,40 @@ public class Incometype   {
     this.description = description;
   }
 
-  public Incometype eETKind(Integer eETKind) {
-    this.eETKind = eETKind;
+  public Incometype eetkind(Integer eetkind) {
+    this.eetkind = eetkind;
     return this;
   }
 
    /**
-   * EET druh [persistentní položka]
-   * @return eETKind
+   * eet druh [persistentní položka]
+   * @return eetkind
   **/
-  @ApiModelProperty(example = "null", value = "EET druh [persistentní položka]")
-  public Integer getEETKind() {
-    return eETKind;
+  @ApiModelProperty(example = "null", value = "eet druh [persistentní položka]")
+  public Integer getEetkind() {
+    return eetkind;
   }
 
-  public void setEETKind(Integer eETKind) {
-    this.eETKind = eETKind;
+  public void setEetkind(Integer eetkind) {
+    this.eetkind = eetkind;
   }
 
-  public Incometype parentID(String parentID) {
-    this.parentID = parentID;
+  public Incometype parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Nadřízený; ID objektu Typ příjmu [persistentní položka]
-   * @return parentID
+   * nadřízený; id objektu typ příjmu [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízený; ID objektu Typ příjmu [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "nadřízený; id objektu typ příjmu [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setParentID(String parentID) {
-    this.parentID = parentID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
 
@@ -283,24 +319,24 @@ public class Incometype   {
       return false;
     }
     Incometype incometype = (Incometype) o;
-    return Objects.equals(this.displayName, incometype.displayName) &&
-        Objects.equals(this.ID, incometype.ID) &&
-        Objects.equals(this.classID, incometype.classID) &&
-        Objects.equals(this.objVersion, incometype.objVersion) &&
+    return Objects.equals(this.displayname, incometype.displayname) &&
+        Objects.equals(this.id, incometype.id) &&
+        Objects.equals(this.classid, incometype.classid) &&
+        Objects.equals(this.objversion, incometype.objversion) &&
         Objects.equals(this.hidden, incometype.hidden) &&
         Objects.equals(this.code, incometype.code) &&
         Objects.equals(this.name, incometype.name) &&
-        Objects.equals(this.analyticalAccount, incometype.analyticalAccount) &&
+        Objects.equals(this.analyticalaccount, incometype.analyticalaccount) &&
         Objects.equals(this.category, incometype.category) &&
-        Objects.equals(this.bookColumn, incometype.bookColumn) &&
+        Objects.equals(this.bookcolumn, incometype.bookcolumn) &&
         Objects.equals(this.description, incometype.description) &&
-        Objects.equals(this.eETKind, incometype.eETKind) &&
-        Objects.equals(this.parentID, incometype.parentID);
+        Objects.equals(this.eetkind, incometype.eetkind) &&
+        Objects.equals(this.parentId, incometype.parentId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, analyticalAccount, category, bookColumn, description, eETKind, parentID);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, analyticalaccount, category, bookcolumn, description, eetkind, parentId);
   }
 
   @Override
@@ -308,19 +344,19 @@ public class Incometype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Incometype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    analyticalAccount: ").append(toIndentedString(analyticalAccount)).append("\n");
+    sb.append("    analyticalaccount: ").append(toIndentedString(analyticalaccount)).append("\n");
     sb.append("    category: ").append(toIndentedString(category)).append("\n");
-    sb.append("    bookColumn: ").append(toIndentedString(bookColumn)).append("\n");
+    sb.append("    bookcolumn: ").append(toIndentedString(bookcolumn)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    eETKind: ").append(toIndentedString(eETKind)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
+    sb.append("    eetkind: ").append(toIndentedString(eetkind)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

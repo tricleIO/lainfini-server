@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,120 +34,156 @@ import java.util.Objects;
 /**
  * Cdconfirmlink
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Cdconfirmlink   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Row_ID")
-  private String rowID = null;
+  @SerializedName("row_id")
+  private String rowId = null;
 
-  @SerializedName("RDocumentType")
-  private String rDocumentType = null;
+  @SerializedName("rdocumenttype")
+  private String rdocumenttype = null;
 
-  @SerializedName("RDocumentRow_ID")
-  private String rDocumentRowID = null;
+  @SerializedName("rdocumentrow_id")
+  private String rdocumentrowId = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Cdconfirmlink rowID(String rowID) {
-    this.rowID = rowID;
+  public Cdconfirmlink displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Řádek výdaje; ID objektu Schválený výdaj - řádek [persistentní položka]
-   * @return rowID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Řádek výdaje; ID objektu Schválený výdaj - řádek [persistentní položka]")
-  public String getRowID() {
-    return rowID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setRowID(String rowID) {
-    this.rowID = rowID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Cdconfirmlink rDocumentType(String rDocumentType) {
-    this.rDocumentType = rDocumentType;
+  public Cdconfirmlink id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Typ dokladu [persistentní položka]
-   * @return rDocumentType
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Typ dokladu [persistentní položka]")
-  public String getRDocumentType() {
-    return rDocumentType;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setRDocumentType(String rDocumentType) {
-    this.rDocumentType = rDocumentType;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Cdconfirmlink rDocumentRowID(String rDocumentRowID) {
-    this.rDocumentRowID = rDocumentRowID;
+  public Cdconfirmlink classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Cdconfirmlink objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Cdconfirmlink rowId(String rowId) {
+    this.rowId = rowId;
+    return this;
+  }
+
+   /**
+   * Řádek výdaje; id objektu schválený výdaj - řádek [persistentní položka]
+   * @return rowId
+  **/
+  @ApiModelProperty(example = "null", value = "Řádek výdaje; id objektu schválený výdaj - řádek [persistentní položka]")
+  public String getRowId() {
+    return rowId;
+  }
+
+  public void setRowId(String rowId) {
+    this.rowId = rowId;
+  }
+
+  public Cdconfirmlink rdocumenttype(String rdocumenttype) {
+    this.rdocumenttype = rdocumenttype;
+    return this;
+  }
+
+   /**
+   * typ dokladu [persistentní položka]
+   * @return rdocumenttype
+  **/
+  @ApiModelProperty(example = "null", value = "typ dokladu [persistentní položka]")
+  public String getRdocumenttype() {
+    return rdocumenttype;
+  }
+
+  public void setRdocumenttype(String rdocumenttype) {
+    this.rdocumenttype = rdocumenttype;
+  }
+
+  public Cdconfirmlink rdocumentrowId(String rdocumentrowId) {
+    this.rdocumentrowId = rdocumentrowId;
     return this;
   }
 
    /**
    * Řádek dokladu [persistentní položka]
-   * @return rDocumentRowID
+   * @return rdocumentrowId
   **/
   @ApiModelProperty(example = "null", value = "Řádek dokladu [persistentní položka]")
-  public String getRDocumentRowID() {
-    return rDocumentRowID;
+  public String getRdocumentrowId() {
+    return rdocumentrowId;
   }
 
-  public void setRDocumentRowID(String rDocumentRowID) {
-    this.rDocumentRowID = rDocumentRowID;
+  public void setRdocumentrowId(String rdocumentrowId) {
+    this.rdocumentrowId = rdocumentrowId;
   }
 
   public Cdconfirmlink amount(Double amount) {
@@ -178,19 +214,19 @@ public class Cdconfirmlink   {
       return false;
     }
     Cdconfirmlink cdconfirmlink = (Cdconfirmlink) o;
-    return Objects.equals(this.displayName, cdconfirmlink.displayName) &&
-        Objects.equals(this.ID, cdconfirmlink.ID) &&
-        Objects.equals(this.classID, cdconfirmlink.classID) &&
-        Objects.equals(this.objVersion, cdconfirmlink.objVersion) &&
-        Objects.equals(this.rowID, cdconfirmlink.rowID) &&
-        Objects.equals(this.rDocumentType, cdconfirmlink.rDocumentType) &&
-        Objects.equals(this.rDocumentRowID, cdconfirmlink.rDocumentRowID) &&
+    return Objects.equals(this.displayname, cdconfirmlink.displayname) &&
+        Objects.equals(this.id, cdconfirmlink.id) &&
+        Objects.equals(this.classid, cdconfirmlink.classid) &&
+        Objects.equals(this.objversion, cdconfirmlink.objversion) &&
+        Objects.equals(this.rowId, cdconfirmlink.rowId) &&
+        Objects.equals(this.rdocumenttype, cdconfirmlink.rdocumenttype) &&
+        Objects.equals(this.rdocumentrowId, cdconfirmlink.rdocumentrowId) &&
         Objects.equals(this.amount, cdconfirmlink.amount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rowID, rDocumentType, rDocumentRowID, amount);
+    return Objects.hash(displayname, id, classid, objversion, rowId, rdocumenttype, rdocumentrowId, amount);
   }
 
   @Override
@@ -198,13 +234,13 @@ public class Cdconfirmlink   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Cdconfirmlink {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    rowID: ").append(toIndentedString(rowID)).append("\n");
-    sb.append("    rDocumentType: ").append(toIndentedString(rDocumentType)).append("\n");
-    sb.append("    rDocumentRowID: ").append(toIndentedString(rDocumentRowID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    rowId: ").append(toIndentedString(rowId)).append("\n");
+    sb.append("    rdocumenttype: ").append(toIndentedString(rdocumenttype)).append("\n");
+    sb.append("    rdocumentrowId: ").append(toIndentedString(rdocumentrowId)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
     sb.append("}");
     return sb.toString();

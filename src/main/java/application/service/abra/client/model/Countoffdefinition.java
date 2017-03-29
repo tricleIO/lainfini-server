@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,81 +34,126 @@ import java.util.Objects;
 /**
  * Countoffdefinition
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Countoffdefinition   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("CountOffType_ID")
-  private String countOffTypeID = null;
+  @SerializedName("countofftype_id")
+  private String countofftypeId = null;
 
-  @SerializedName("MonthAmount")
-  private Double monthAmount = null;
+  @SerializedName("monthamount")
+  private Double monthamount = null;
 
-  @SerializedName("ValidFrom_ID")
-  private String validFromID = null;
+  @SerializedName("validfrom_id")
+  private String validfromId = null;
 
-  @SerializedName("ValidTo_ID")
-  private String validToID = null;
+  @SerializedName("validto_id")
+  private String validtoId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Countoffdefinition displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Countoffdefinition id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Countoffdefinition classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Countoffdefinition objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Hlavičkový objekt [persistentní položka]
-   * @return parentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Hlavičkový objekt [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Countoffdefinition parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu hlavičkový objekt [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu hlavičkový objekt [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
   public Countoffdefinition description(String description) {
@@ -117,10 +162,10 @@ public class Countoffdefinition   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -129,76 +174,76 @@ public class Countoffdefinition   {
     this.description = description;
   }
 
-  public Countoffdefinition countOffTypeID(String countOffTypeID) {
-    this.countOffTypeID = countOffTypeID;
+  public Countoffdefinition countofftypeId(String countofftypeId) {
+    this.countofftypeId = countofftypeId;
     return this;
   }
 
    /**
-   * Druh; ID objektu Typ odpočtu/slevy [persistentní položka]
-   * @return countOffTypeID
+   * druh; id objektu typ odpočtu/slevy [persistentní položka]
+   * @return countofftypeId
   **/
-  @ApiModelProperty(example = "null", value = "Druh; ID objektu Typ odpočtu/slevy [persistentní položka]")
-  public String getCountOffTypeID() {
-    return countOffTypeID;
+  @ApiModelProperty(example = "null", value = "druh; id objektu typ odpočtu/slevy [persistentní položka]")
+  public String getCountofftypeId() {
+    return countofftypeId;
   }
 
-  public void setCountOffTypeID(String countOffTypeID) {
-    this.countOffTypeID = countOffTypeID;
+  public void setCountofftypeId(String countofftypeId) {
+    this.countofftypeId = countofftypeId;
   }
 
-  public Countoffdefinition monthAmount(Double monthAmount) {
-    this.monthAmount = monthAmount;
+  public Countoffdefinition monthamount(Double monthamount) {
+    this.monthamount = monthamount;
     return this;
   }
 
    /**
    * Částka [persistentní položka]
-   * @return monthAmount
+   * @return monthamount
   **/
   @ApiModelProperty(example = "null", value = "Částka [persistentní položka]")
-  public Double getMonthAmount() {
-    return monthAmount;
+  public Double getMonthamount() {
+    return monthamount;
   }
 
-  public void setMonthAmount(Double monthAmount) {
-    this.monthAmount = monthAmount;
+  public void setMonthamount(Double monthamount) {
+    this.monthamount = monthamount;
   }
 
-  public Countoffdefinition validFromID(String validFromID) {
-    this.validFromID = validFromID;
+  public Countoffdefinition validfromId(String validfromId) {
+    this.validfromId = validfromId;
     return this;
   }
 
    /**
-   * Platí od; ID objektu Mzdové období [persistentní položka]
-   * @return validFromID
+   * platí od; id objektu mzdové období [persistentní položka]
+   * @return validfromId
   **/
-  @ApiModelProperty(example = "null", value = "Platí od; ID objektu Mzdové období [persistentní položka]")
-  public String getValidFromID() {
-    return validFromID;
+  @ApiModelProperty(example = "null", value = "platí od; id objektu mzdové období [persistentní položka]")
+  public String getValidfromId() {
+    return validfromId;
   }
 
-  public void setValidFromID(String validFromID) {
-    this.validFromID = validFromID;
+  public void setValidfromId(String validfromId) {
+    this.validfromId = validfromId;
   }
 
-  public Countoffdefinition validToID(String validToID) {
-    this.validToID = validToID;
+  public Countoffdefinition validtoId(String validtoId) {
+    this.validtoId = validtoId;
     return this;
   }
 
    /**
-   * Platí do; ID objektu Mzdové období [persistentní položka]
-   * @return validToID
+   * platí do; id objektu mzdové období [persistentní položka]
+   * @return validtoId
   **/
-  @ApiModelProperty(example = "null", value = "Platí do; ID objektu Mzdové období [persistentní položka]")
-  public String getValidToID() {
-    return validToID;
+  @ApiModelProperty(example = "null", value = "platí do; id objektu mzdové období [persistentní položka]")
+  public String getValidtoId() {
+    return validtoId;
   }
 
-  public void setValidToID(String validToID) {
-    this.validToID = validToID;
+  public void setValidtoId(String validtoId) {
+    this.validtoId = validtoId;
   }
 
 
@@ -211,21 +256,21 @@ public class Countoffdefinition   {
       return false;
     }
     Countoffdefinition countoffdefinition = (Countoffdefinition) o;
-    return Objects.equals(this.displayName, countoffdefinition.displayName) &&
-        Objects.equals(this.ID, countoffdefinition.ID) &&
-        Objects.equals(this.classID, countoffdefinition.classID) &&
-        Objects.equals(this.objVersion, countoffdefinition.objVersion) &&
-        Objects.equals(this.parentID, countoffdefinition.parentID) &&
+    return Objects.equals(this.displayname, countoffdefinition.displayname) &&
+        Objects.equals(this.id, countoffdefinition.id) &&
+        Objects.equals(this.classid, countoffdefinition.classid) &&
+        Objects.equals(this.objversion, countoffdefinition.objversion) &&
+        Objects.equals(this.parentId, countoffdefinition.parentId) &&
         Objects.equals(this.description, countoffdefinition.description) &&
-        Objects.equals(this.countOffTypeID, countoffdefinition.countOffTypeID) &&
-        Objects.equals(this.monthAmount, countoffdefinition.monthAmount) &&
-        Objects.equals(this.validFromID, countoffdefinition.validFromID) &&
-        Objects.equals(this.validToID, countoffdefinition.validToID);
+        Objects.equals(this.countofftypeId, countoffdefinition.countofftypeId) &&
+        Objects.equals(this.monthamount, countoffdefinition.monthamount) &&
+        Objects.equals(this.validfromId, countoffdefinition.validfromId) &&
+        Objects.equals(this.validtoId, countoffdefinition.validtoId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, description, countOffTypeID, monthAmount, validFromID, validToID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, description, countofftypeId, monthamount, validfromId, validtoId);
   }
 
   @Override
@@ -233,16 +278,16 @@ public class Countoffdefinition   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Countoffdefinition {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    countOffTypeID: ").append(toIndentedString(countOffTypeID)).append("\n");
-    sb.append("    monthAmount: ").append(toIndentedString(monthAmount)).append("\n");
-    sb.append("    validFromID: ").append(toIndentedString(validFromID)).append("\n");
-    sb.append("    validToID: ").append(toIndentedString(validToID)).append("\n");
+    sb.append("    countofftypeId: ").append(toIndentedString(countofftypeId)).append("\n");
+    sb.append("    monthamount: ").append(toIndentedString(monthamount)).append("\n");
+    sb.append("    validfromId: ").append(toIndentedString(validfromId)).append("\n");
+    sb.append("    validtoId: ").append(toIndentedString(validtoId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

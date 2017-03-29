@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,96 +37,132 @@ import java.util.Objects;
 /**
  * Intrastatreport
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Intrastatreport   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Intrastatreportdeclaration> rows = new ArrayList<Intrastatreportdeclaration>();
 
-  @SerializedName("IntrastatReport_ID")
-  private String intrastatReportID = null;
+  @SerializedName("intrastatreport_id")
+  private String intrastatreportId = null;
 
-  @SerializedName("Envelopeid")
+  @SerializedName("envelopeid")
   private String envelopeid = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("DateFrom$DATE")
-  private DateTime dateFromDATE = null;
+  @SerializedName("datefrom$date")
+  private DateTime datefromdate = null;
 
-  @SerializedName("DateTo$DATE")
-  private DateTime dateToDATE = null;
+  @SerializedName("dateto$date")
+  private DateTime datetodate = null;
 
-  @SerializedName("CommunicationDocument_ID")
-  private String communicationDocumentID = null;
+  @SerializedName("communicationdocument_id")
+  private String communicationdocumentId = null;
 
-  @SerializedName("Conditions")
+  @SerializedName("conditions")
   private byte[] conditions = null;
 
-  @SerializedName("Status")
+  @SerializedName("status")
   private Integer status = null;
 
-  @SerializedName("IsChanged")
-  private Boolean isChanged = null;
+  @SerializedName("ischanged")
+  private Boolean ischanged = null;
 
-  @SerializedName("Origin")
+  @SerializedName("origin")
   private Integer origin = null;
 
-  @SerializedName("DifferentFromPreviousReport")
-  private Boolean differentFromPreviousReport = null;
+  @SerializedName("differentfrompreviousreport")
+  private Boolean differentfrompreviousreport = null;
 
-  @SerializedName("IsOnlyDeleting")
-  private Boolean isOnlyDeleting = null;
+  @SerializedName("isonlydeleting")
+  private Boolean isonlydeleting = null;
 
-  @SerializedName("ExportVersion")
-  private Integer exportVersion = null;
+  @SerializedName("exportversion")
+  private Integer exportversion = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Intrastatreport displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Intrastatreport id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Intrastatreport classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Intrastatreport objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Intrastatreport rows(List<Intrastatreportdeclaration> rows) {
@@ -140,10 +176,10 @@ public class Intrastatreport   {
   }
 
    /**
-   * Řádky; kolekce BO Deklarace INTRASTAT [nepersistentní položka]
+   * Řádky; kolekce bo deklarace intrastat [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Deklarace INTRASTAT [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo deklarace intrastat [nepersistentní položka]")
   public List<Intrastatreportdeclaration> getRows() {
     return rows;
   }
@@ -152,22 +188,22 @@ public class Intrastatreport   {
     this.rows = rows;
   }
 
-  public Intrastatreport intrastatReportID(String intrastatReportID) {
-    this.intrastatReportID = intrastatReportID;
+  public Intrastatreport intrastatreportId(String intrastatreportId) {
+    this.intrastatreportId = intrastatreportId;
     return this;
   }
 
    /**
-   * Opravované podání; ID objektu Podání INTRASTAT [persistentní položka]
-   * @return intrastatReportID
+   * opravované podání; id objektu podání intrastat [persistentní položka]
+   * @return intrastatreportId
   **/
-  @ApiModelProperty(example = "null", value = "Opravované podání; ID objektu Podání INTRASTAT [persistentní položka]")
-  public String getIntrastatReportID() {
-    return intrastatReportID;
+  @ApiModelProperty(example = "null", value = "opravované podání; id objektu podání intrastat [persistentní položka]")
+  public String getIntrastatreportId() {
+    return intrastatreportId;
   }
 
-  public void setIntrastatReportID(String intrastatReportID) {
-    this.intrastatReportID = intrastatReportID;
+  public void setIntrastatreportId(String intrastatreportId) {
+    this.intrastatreportId = intrastatreportId;
   }
 
   public Intrastatreport envelopeid(String envelopeid) {
@@ -176,10 +212,10 @@ public class Intrastatreport   {
   }
 
    /**
-   * Identifikátor PVS [persistentní položka]
+   * identifikátor pvs [persistentní položka]
    * @return envelopeid
   **/
-  @ApiModelProperty(example = "null", value = "Identifikátor PVS [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "identifikátor pvs [persistentní položka]")
   public String getEnvelopeid() {
     return envelopeid;
   }
@@ -188,76 +224,76 @@ public class Intrastatreport   {
     this.envelopeid = envelopeid;
   }
 
-  public Intrastatreport docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Intrastatreport docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum a čas generování [persistentní položka]
-   * @return docDateDATE
+   * datum a čas generování [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum a čas generování [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum a čas generování [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Intrastatreport dateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public Intrastatreport datefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
     return this;
   }
 
    /**
-   * Datum od [persistentní položka]
-   * @return dateFromDATE
+   * datum od [persistentní položka]
+   * @return datefromdate
   **/
-  @ApiModelProperty(example = "null", value = "Datum od [persistentní položka]")
-  public DateTime getDateFromDATE() {
-    return dateFromDATE;
+  @ApiModelProperty(example = "null", value = "datum od [persistentní položka]")
+  public DateTime getDatefromdate() {
+    return datefromdate;
   }
 
-  public void setDateFromDATE(DateTime dateFromDATE) {
-    this.dateFromDATE = dateFromDATE;
+  public void setDatefromdate(DateTime datefromdate) {
+    this.datefromdate = datefromdate;
   }
 
-  public Intrastatreport dateToDATE(DateTime dateToDATE) {
-    this.dateToDATE = dateToDATE;
+  public Intrastatreport datetodate(DateTime datetodate) {
+    this.datetodate = datetodate;
     return this;
   }
 
    /**
-   * Datum do [persistentní položka]
-   * @return dateToDATE
+   * datum do [persistentní položka]
+   * @return datetodate
   **/
-  @ApiModelProperty(example = "null", value = "Datum do [persistentní položka]")
-  public DateTime getDateToDATE() {
-    return dateToDATE;
+  @ApiModelProperty(example = "null", value = "datum do [persistentní položka]")
+  public DateTime getDatetodate() {
+    return datetodate;
   }
 
-  public void setDateToDATE(DateTime dateToDATE) {
-    this.dateToDATE = dateToDATE;
+  public void setDatetodate(DateTime datetodate) {
+    this.datetodate = datetodate;
   }
 
-  public Intrastatreport communicationDocumentID(String communicationDocumentID) {
-    this.communicationDocumentID = communicationDocumentID;
+  public Intrastatreport communicationdocumentId(String communicationdocumentId) {
+    this.communicationdocumentId = communicationdocumentId;
     return this;
   }
 
    /**
-   * Dokument; ID objektu Dokument [persistentní položka]
-   * @return communicationDocumentID
+   * dokument; id objektu dokument [persistentní položka]
+   * @return communicationdocumentId
   **/
-  @ApiModelProperty(example = "null", value = "Dokument; ID objektu Dokument [persistentní položka]")
-  public String getCommunicationDocumentID() {
-    return communicationDocumentID;
+  @ApiModelProperty(example = "null", value = "dokument; id objektu dokument [persistentní položka]")
+  public String getCommunicationdocumentId() {
+    return communicationdocumentId;
   }
 
-  public void setCommunicationDocumentID(String communicationDocumentID) {
-    this.communicationDocumentID = communicationDocumentID;
+  public void setCommunicationdocumentId(String communicationdocumentId) {
+    this.communicationdocumentId = communicationdocumentId;
   }
 
   public Intrastatreport conditions(byte[] conditions) {
@@ -266,10 +302,10 @@ public class Intrastatreport   {
   }
 
    /**
-   * Podmínky [persistentní položka]
+   * podmínky [persistentní položka]
    * @return conditions
   **/
-  @ApiModelProperty(example = "null", value = "Podmínky [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "podmínky [persistentní položka]")
   public byte[] getConditions() {
     return conditions;
   }
@@ -284,10 +320,10 @@ public class Intrastatreport   {
   }
 
    /**
-   * Status [persistentní položka]
+   * status [persistentní položka]
    * @return status
   **/
-  @ApiModelProperty(example = "null", value = "Status [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "status [persistentní položka]")
   public Integer getStatus() {
     return status;
   }
@@ -296,13 +332,22 @@ public class Intrastatreport   {
     this.status = status;
   }
 
+  public Intrastatreport ischanged(Boolean ischanged) {
+    this.ischanged = ischanged;
+    return this;
+  }
+
    /**
-   * Podklady změněny
-   * @return isChanged
+   * podklady změněny
+   * @return ischanged
   **/
-  @ApiModelProperty(example = "null", value = "Podklady změněny")
-  public Boolean getIsChanged() {
-    return isChanged;
+  @ApiModelProperty(example = "null", value = "podklady změněny")
+  public Boolean getIschanged() {
+    return ischanged;
+  }
+
+  public void setIschanged(Boolean ischanged) {
+    this.ischanged = ischanged;
   }
 
   public Intrastatreport origin(Integer origin) {
@@ -311,10 +356,10 @@ public class Intrastatreport   {
   }
 
    /**
-   * Původ [persistentní položka]
+   * původ [persistentní položka]
    * @return origin
   **/
-  @ApiModelProperty(example = "null", value = "Původ [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "původ [persistentní položka]")
   public Integer getOrigin() {
     return origin;
   }
@@ -323,40 +368,58 @@ public class Intrastatreport   {
     this.origin = origin;
   }
 
-   /**
-   * Různý od předchozího
-   * @return differentFromPreviousReport
-  **/
-  @ApiModelProperty(example = "null", value = "Různý od předchozího")
-  public Boolean getDifferentFromPreviousReport() {
-    return differentFromPreviousReport;
-  }
-
-   /**
-   * Obsahuje pouze mazací deklarace
-   * @return isOnlyDeleting
-  **/
-  @ApiModelProperty(example = "null", value = "Obsahuje pouze mazací deklarace")
-  public Boolean getIsOnlyDeleting() {
-    return isOnlyDeleting;
-  }
-
-  public Intrastatreport exportVersion(Integer exportVersion) {
-    this.exportVersion = exportVersion;
+  public Intrastatreport differentfrompreviousreport(Boolean differentfrompreviousreport) {
+    this.differentfrompreviousreport = differentfrompreviousreport;
     return this;
   }
 
    /**
-   * Verze exportu [persistentní položka]
-   * @return exportVersion
+   * různý od předchozího
+   * @return differentfrompreviousreport
   **/
-  @ApiModelProperty(example = "null", value = "Verze exportu [persistentní položka]")
-  public Integer getExportVersion() {
-    return exportVersion;
+  @ApiModelProperty(example = "null", value = "různý od předchozího")
+  public Boolean getDifferentfrompreviousreport() {
+    return differentfrompreviousreport;
   }
 
-  public void setExportVersion(Integer exportVersion) {
-    this.exportVersion = exportVersion;
+  public void setDifferentfrompreviousreport(Boolean differentfrompreviousreport) {
+    this.differentfrompreviousreport = differentfrompreviousreport;
+  }
+
+  public Intrastatreport isonlydeleting(Boolean isonlydeleting) {
+    this.isonlydeleting = isonlydeleting;
+    return this;
+  }
+
+   /**
+   * obsahuje pouze mazací deklarace
+   * @return isonlydeleting
+  **/
+  @ApiModelProperty(example = "null", value = "obsahuje pouze mazací deklarace")
+  public Boolean getIsonlydeleting() {
+    return isonlydeleting;
+  }
+
+  public void setIsonlydeleting(Boolean isonlydeleting) {
+    this.isonlydeleting = isonlydeleting;
+  }
+
+  public Intrastatreport exportversion(Integer exportversion) {
+    this.exportversion = exportversion;
+    return this;
+  }
+
+   /**
+   * verze exportu [persistentní položka]
+   * @return exportversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze exportu [persistentní položka]")
+  public Integer getExportversion() {
+    return exportversion;
+  }
+
+  public void setExportversion(Integer exportversion) {
+    this.exportversion = exportversion;
   }
 
 
@@ -369,29 +432,29 @@ public class Intrastatreport   {
       return false;
     }
     Intrastatreport intrastatreport = (Intrastatreport) o;
-    return Objects.equals(this.displayName, intrastatreport.displayName) &&
-        Objects.equals(this.ID, intrastatreport.ID) &&
-        Objects.equals(this.classID, intrastatreport.classID) &&
-        Objects.equals(this.objVersion, intrastatreport.objVersion) &&
+    return Objects.equals(this.displayname, intrastatreport.displayname) &&
+        Objects.equals(this.id, intrastatreport.id) &&
+        Objects.equals(this.classid, intrastatreport.classid) &&
+        Objects.equals(this.objversion, intrastatreport.objversion) &&
         Objects.equals(this.rows, intrastatreport.rows) &&
-        Objects.equals(this.intrastatReportID, intrastatreport.intrastatReportID) &&
+        Objects.equals(this.intrastatreportId, intrastatreport.intrastatreportId) &&
         Objects.equals(this.envelopeid, intrastatreport.envelopeid) &&
-        Objects.equals(this.docDateDATE, intrastatreport.docDateDATE) &&
-        Objects.equals(this.dateFromDATE, intrastatreport.dateFromDATE) &&
-        Objects.equals(this.dateToDATE, intrastatreport.dateToDATE) &&
-        Objects.equals(this.communicationDocumentID, intrastatreport.communicationDocumentID) &&
+        Objects.equals(this.docdatedate, intrastatreport.docdatedate) &&
+        Objects.equals(this.datefromdate, intrastatreport.datefromdate) &&
+        Objects.equals(this.datetodate, intrastatreport.datetodate) &&
+        Objects.equals(this.communicationdocumentId, intrastatreport.communicationdocumentId) &&
         Objects.equals(this.conditions, intrastatreport.conditions) &&
         Objects.equals(this.status, intrastatreport.status) &&
-        Objects.equals(this.isChanged, intrastatreport.isChanged) &&
+        Objects.equals(this.ischanged, intrastatreport.ischanged) &&
         Objects.equals(this.origin, intrastatreport.origin) &&
-        Objects.equals(this.differentFromPreviousReport, intrastatreport.differentFromPreviousReport) &&
-        Objects.equals(this.isOnlyDeleting, intrastatreport.isOnlyDeleting) &&
-        Objects.equals(this.exportVersion, intrastatreport.exportVersion);
+        Objects.equals(this.differentfrompreviousreport, intrastatreport.differentfrompreviousreport) &&
+        Objects.equals(this.isonlydeleting, intrastatreport.isonlydeleting) &&
+        Objects.equals(this.exportversion, intrastatreport.exportversion);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, intrastatReportID, envelopeid, docDateDATE, dateFromDATE, dateToDATE, communicationDocumentID, conditions, status, isChanged, origin, differentFromPreviousReport, isOnlyDeleting, exportVersion);
+    return Objects.hash(displayname, id, classid, objversion, rows, intrastatreportId, envelopeid, docdatedate, datefromdate, datetodate, communicationdocumentId, conditions, status, ischanged, origin, differentfrompreviousreport, isonlydeleting, exportversion);
   }
 
   @Override
@@ -399,24 +462,24 @@ public class Intrastatreport   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Intrastatreport {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    intrastatReportID: ").append(toIndentedString(intrastatReportID)).append("\n");
+    sb.append("    intrastatreportId: ").append(toIndentedString(intrastatreportId)).append("\n");
     sb.append("    envelopeid: ").append(toIndentedString(envelopeid)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    dateFromDATE: ").append(toIndentedString(dateFromDATE)).append("\n");
-    sb.append("    dateToDATE: ").append(toIndentedString(dateToDATE)).append("\n");
-    sb.append("    communicationDocumentID: ").append(toIndentedString(communicationDocumentID)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    datefromdate: ").append(toIndentedString(datefromdate)).append("\n");
+    sb.append("    datetodate: ").append(toIndentedString(datetodate)).append("\n");
+    sb.append("    communicationdocumentId: ").append(toIndentedString(communicationdocumentId)).append("\n");
     sb.append("    conditions: ").append(toIndentedString(conditions)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
-    sb.append("    isChanged: ").append(toIndentedString(isChanged)).append("\n");
+    sb.append("    ischanged: ").append(toIndentedString(ischanged)).append("\n");
     sb.append("    origin: ").append(toIndentedString(origin)).append("\n");
-    sb.append("    differentFromPreviousReport: ").append(toIndentedString(differentFromPreviousReport)).append("\n");
-    sb.append("    isOnlyDeleting: ").append(toIndentedString(isOnlyDeleting)).append("\n");
-    sb.append("    exportVersion: ").append(toIndentedString(exportVersion)).append("\n");
+    sb.append("    differentfrompreviousreport: ").append(toIndentedString(differentfrompreviousreport)).append("\n");
+    sb.append("    isonlydeleting: ").append(toIndentedString(isonlydeleting)).append("\n");
+    sb.append("    exportversion: ").append(toIndentedString(exportversion)).append("\n");
     sb.append("}");
     return sb.toString();
   }

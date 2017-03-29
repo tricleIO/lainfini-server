@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,177 +37,213 @@ import java.util.Objects;
 /**
  * Reversechargedeclaration
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Reversechargedeclaration   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Reversechargedeclarationrow> rows = new ArrayList<Reversechargedeclarationrow>();
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("AccPresetDef_ID")
-  private String accPresetDefID = null;
+  @SerializedName("accpresetdef_id")
+  private String accpresetdefId = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("FirmOffice_ID")
-  private String firmOfficeID = null;
+  @SerializedName("firmoffice_id")
+  private String firmofficeId = null;
 
-  @SerializedName("Person_ID")
-  private String personID = null;
+  @SerializedName("person_id")
+  private String personId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("AccDate$DATE")
-  private DateTime accDateDATE = null;
+  @SerializedName("accdate$date")
+  private DateTime accdatedate = null;
 
-  @SerializedName("AccDocQueue_ID")
-  private String accDocQueueID = null;
+  @SerializedName("accdocqueue_id")
+  private String accdocqueueId = null;
 
-  @SerializedName("AccountingType")
-  private Integer accountingType = null;
+  @SerializedName("accountingtype")
+  private Integer accountingtype = null;
 
-  @SerializedName("IsAccounted")
-  private Boolean isAccounted = null;
+  @SerializedName("isaccounted")
+  private Boolean isaccounted = null;
 
-  @SerializedName("Dirty")
+  @SerializedName("dirty")
   private Boolean dirty = null;
 
-  @SerializedName("LocalAmount")
-  private Double localAmount = null;
+  @SerializedName("localamount")
+  private Double localamount = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("InvoiceCurrRate")
-  private Double invoiceCurrRate = null;
+  @SerializedName("invoicecurrrate")
+  private Double invoicecurrrate = null;
 
-  @SerializedName("InvoiceRefCurrRate")
-  private Double invoiceRefCurrRate = null;
+  @SerializedName("invoicerefcurrrate")
+  private Double invoicerefcurrrate = null;
 
-  @SerializedName("InvoiceCoef")
-  private Integer invoiceCoef = null;
+  @SerializedName("invoicecoef")
+  private Integer invoicecoef = null;
 
-  @SerializedName("InvoiceLocalCoef")
-  private Integer invoiceLocalCoef = null;
+  @SerializedName("invoicelocalcoef")
+  private Integer invoicelocalcoef = null;
 
-  @SerializedName("InvoiceZone_ID")
-  private String invoiceZoneID = null;
+  @SerializedName("invoicezone_id")
+  private String invoicezoneId = null;
 
-  @SerializedName("InvoiceLocalZone_ID")
-  private String invoiceLocalZoneID = null;
+  @SerializedName("invoicelocalzone_id")
+  private String invoicelocalzoneId = null;
 
-  @SerializedName("InvoiceRefCurrency_ID")
-  private String invoiceRefCurrencyID = null;
+  @SerializedName("invoicerefcurrency_id")
+  private String invoicerefcurrencyId = null;
 
-  @SerializedName("InvoiceLocalRefCurrency_ID")
-  private String invoiceLocalRefCurrencyID = null;
+  @SerializedName("invoicelocalrefcurrency_id")
+  private String invoicelocalrefcurrencyId = null;
 
-  @SerializedName("TotalBaseAmount")
-  private Double totalBaseAmount = null;
+  @SerializedName("totalbaseamount")
+  private Double totalbaseamount = null;
 
-  @SerializedName("TotalLocalBaseAmount")
-  private Double totalLocalBaseAmount = null;
+  @SerializedName("totallocalbaseamount")
+  private Double totallocalbaseamount = null;
 
-  @SerializedName("TotalSourceAmount")
-  private Double totalSourceAmount = null;
+  @SerializedName("totalsourceamount")
+  private Double totalsourceamount = null;
 
-  @SerializedName("SDocument_ID")
-  private String sDocumentID = null;
+  @SerializedName("sdocument_id")
+  private String sdocumentId = null;
 
-  @SerializedName("SDocumentType")
-  private String sDocumentType = null;
+  @SerializedName("sdocumenttype")
+  private String sdocumenttype = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("VATCountry_ID")
-  private String vATCountryID = null;
+  @SerializedName("vatcountry_id")
+  private String vatcountryId = null;
 
-  @SerializedName("VATDate$DATE")
-  private DateTime vATDateDATE = null;
+  @SerializedName("vatdate$date")
+  private DateTime vatdatedate = null;
 
-  @SerializedName("VATDeductionDate$DATE")
-  private DateTime vATDeductionDateDATE = null;
+  @SerializedName("vatdeductiondate$date")
+  private DateTime vatdeductiondatedate = null;
 
-  @SerializedName("VATReportPreference")
-  private String vATReportPreference = null;
+  @SerializedName("vatreportpreference")
+  private String vatreportpreference = null;
 
-  @SerializedName("CreatedAt$DATE")
-  private DateTime createdAtDATE = null;
+  @SerializedName("createdat$date")
+  private DateTime createdatdate = null;
 
-  @SerializedName("CorrectedAt$DATE")
-  private DateTime correctedAtDATE = null;
+  @SerializedName("correctedat$date")
+  private DateTime correctedatdate = null;
+
+  public Reversechargedeclaration displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Reversechargedeclaration id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Reversechargedeclaration classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Reversechargedeclaration objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Reversechargedeclaration rows(List<Reversechargedeclarationrow> rows) {
@@ -221,10 +257,10 @@ public class Reversechargedeclaration   {
   }
 
    /**
-   * Řádky; kolekce BO Doklad reverse charge - řádek [nepersistentní položka]
+   * Řádky; kolekce bo doklad reverse charge - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Doklad reverse charge - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo doklad reverse charge - řádek [nepersistentní položka]")
   public List<Reversechargedeclarationrow> getRows() {
     return rows;
   }
@@ -233,220 +269,220 @@ public class Reversechargedeclaration   {
     this.rows = rows;
   }
 
-  public Reversechargedeclaration docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Reversechargedeclaration docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Reversechargedeclaration periodID(String periodID) {
-    this.periodID = periodID;
+  public Reversechargedeclaration periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Reversechargedeclaration ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Reversechargedeclaration ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Reversechargedeclaration docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Reversechargedeclaration docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Reversechargedeclaration createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Reversechargedeclaration createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Reversechargedeclaration correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Reversechargedeclaration correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Reversechargedeclaration newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Reversechargedeclaration newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Reversechargedeclaration newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Reversechargedeclaration newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Reversechargedeclaration accPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public Reversechargedeclaration accpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
     return this;
   }
 
    /**
-   * Předkontace; ID objektu Účetní předkontace [persistentní položka]
-   * @return accPresetDefID
+   * předkontace; id objektu Účetní předkontace [persistentní položka]
+   * @return accpresetdefId
   **/
-  @ApiModelProperty(example = "null", value = "Předkontace; ID objektu Účetní předkontace [persistentní položka]")
-  public String getAccPresetDefID() {
-    return accPresetDefID;
+  @ApiModelProperty(example = "null", value = "předkontace; id objektu Účetní předkontace [persistentní položka]")
+  public String getAccpresetdefId() {
+    return accpresetdefId;
   }
 
-  public void setAccPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public void setAccpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
   }
 
-  public Reversechargedeclaration firmID(String firmID) {
-    this.firmID = firmID;
+  public Reversechargedeclaration firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Reversechargedeclaration firmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public Reversechargedeclaration firmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
     return this;
   }
 
    /**
-   * Provozovna; ID objektu Provozovna [persistentní položka]
-   * @return firmOfficeID
+   * provozovna; id objektu provozovna [persistentní položka]
+   * @return firmofficeId
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna; ID objektu Provozovna [persistentní položka]")
-  public String getFirmOfficeID() {
-    return firmOfficeID;
+  @ApiModelProperty(example = "null", value = "provozovna; id objektu provozovna [persistentní položka]")
+  public String getFirmofficeId() {
+    return firmofficeId;
   }
 
-  public void setFirmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public void setFirmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
   }
 
-  public Reversechargedeclaration personID(String personID) {
-    this.personID = personID;
+  public Reversechargedeclaration personId(String personId) {
+    this.personId = personId;
     return this;
   }
 
    /**
-   * Osoba; ID objektu Osoba [persistentní položka]
-   * @return personID
+   * osoba; id objektu osoba [persistentní položka]
+   * @return personId
   **/
-  @ApiModelProperty(example = "null", value = "Osoba; ID objektu Osoba [persistentní položka]")
-  public String getPersonID() {
-    return personID;
+  @ApiModelProperty(example = "null", value = "osoba; id objektu osoba [persistentní položka]")
+  public String getPersonId() {
+    return personId;
   }
 
-  public void setPersonID(String personID) {
-    this.personID = personID;
+  public void setPersonId(String personId) {
+    this.personId = personId;
   }
 
   public Reversechargedeclaration description(String description) {
@@ -455,10 +491,10 @@ public class Reversechargedeclaration   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -467,76 +503,76 @@ public class Reversechargedeclaration   {
     this.description = description;
   }
 
-  public Reversechargedeclaration accDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public Reversechargedeclaration accdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
     return this;
   }
 
    /**
-   * Datum účt. [persistentní položka]
-   * @return accDateDATE
+   * datum účt. [persistentní položka]
+   * @return accdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum účt. [persistentní položka]")
-  public DateTime getAccDateDATE() {
-    return accDateDATE;
+  @ApiModelProperty(example = "null", value = "datum účt. [persistentní položka]")
+  public DateTime getAccdatedate() {
+    return accdatedate;
   }
 
-  public void setAccDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public void setAccdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
   }
 
-  public Reversechargedeclaration accDocQueueID(String accDocQueueID) {
-    this.accDocQueueID = accDocQueueID;
+  public Reversechargedeclaration accdocqueueId(String accdocqueueId) {
+    this.accdocqueueId = accdocqueueId;
     return this;
   }
 
    /**
-   * Účetní řada; ID objektu Účetní řada dokladů [persistentní položka]
-   * @return accDocQueueID
+   * Účetní řada; id objektu Účetní řada dokladů [persistentní položka]
+   * @return accdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Účetní řada; ID objektu Účetní řada dokladů [persistentní položka]")
-  public String getAccDocQueueID() {
-    return accDocQueueID;
+  @ApiModelProperty(example = "null", value = "Účetní řada; id objektu Účetní řada dokladů [persistentní položka]")
+  public String getAccdocqueueId() {
+    return accdocqueueId;
   }
 
-  public void setAccDocQueueID(String accDocQueueID) {
-    this.accDocQueueID = accDocQueueID;
+  public void setAccdocqueueId(String accdocqueueId) {
+    this.accdocqueueId = accdocqueueId;
   }
 
-  public Reversechargedeclaration accountingType(Integer accountingType) {
-    this.accountingType = accountingType;
+  public Reversechargedeclaration accountingtype(Integer accountingtype) {
+    this.accountingtype = accountingtype;
     return this;
   }
 
    /**
-   * Jak účtovat
-   * @return accountingType
+   * jak účtovat
+   * @return accountingtype
   **/
-  @ApiModelProperty(example = "null", value = "Jak účtovat")
-  public Integer getAccountingType() {
-    return accountingType;
+  @ApiModelProperty(example = "null", value = "jak účtovat")
+  public Integer getAccountingtype() {
+    return accountingtype;
   }
 
-  public void setAccountingType(Integer accountingType) {
-    this.accountingType = accountingType;
+  public void setAccountingtype(Integer accountingtype) {
+    this.accountingtype = accountingtype;
   }
 
-  public Reversechargedeclaration isAccounted(Boolean isAccounted) {
-    this.isAccounted = isAccounted;
+  public Reversechargedeclaration isaccounted(Boolean isaccounted) {
+    this.isaccounted = isaccounted;
     return this;
   }
 
    /**
    * Účtováno
-   * @return isAccounted
+   * @return isaccounted
   **/
   @ApiModelProperty(example = "null", value = "Účtováno")
-  public Boolean getIsAccounted() {
-    return isAccounted;
+  public Boolean getIsaccounted() {
+    return isaccounted;
   }
 
-  public void setIsAccounted(Boolean isAccounted) {
-    this.isAccounted = isAccounted;
+  public void setIsaccounted(Boolean isaccounted) {
+    this.isaccounted = isaccounted;
   }
 
   public Reversechargedeclaration dirty(Boolean dirty) {
@@ -545,10 +581,10 @@ public class Reversechargedeclaration   {
   }
 
    /**
-   * Zakázané přepočítání [persistentní položka]
+   * zakázané přepočítání [persistentní položka]
    * @return dirty
   **/
-  @ApiModelProperty(example = "null", value = "Zakázané přepočítání [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "zakázané přepočítání [persistentní položka]")
   public Boolean getDirty() {
     return dirty;
   }
@@ -557,337 +593,400 @@ public class Reversechargedeclaration   {
     this.dirty = dirty;
   }
 
-   /**
-   * Částka odvodu DPH v lok. měně [persistentní položka]
-   * @return localAmount
-  **/
-  @ApiModelProperty(example = "null", value = "Částka odvodu DPH v lok. měně [persistentní položka]")
-  public Double getLocalAmount() {
-    return localAmount;
+  public Reversechargedeclaration localamount(Double localamount) {
+    this.localamount = localamount;
+    return this;
   }
 
    /**
-   * Částka odvodu DPH [persistentní položka]
+   * Částka odvodu dph v lok. měně [persistentní položka]
+   * @return localamount
+  **/
+  @ApiModelProperty(example = "null", value = "Částka odvodu dph v lok. měně [persistentní položka]")
+  public Double getLocalamount() {
+    return localamount;
+  }
+
+  public void setLocalamount(Double localamount) {
+    this.localamount = localamount;
+  }
+
+  public Reversechargedeclaration amount(Double amount) {
+    this.amount = amount;
+    return this;
+  }
+
+   /**
+   * Částka odvodu dph [persistentní položka]
    * @return amount
   **/
-  @ApiModelProperty(example = "null", value = "Částka odvodu DPH [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "Částka odvodu dph [persistentní položka]")
   public Double getAmount() {
     return amount;
   }
 
-  public Reversechargedeclaration invoiceCurrRate(Double invoiceCurrRate) {
-    this.invoiceCurrRate = invoiceCurrRate;
+  public void setAmount(Double amount) {
+    this.amount = amount;
+  }
+
+  public Reversechargedeclaration invoicecurrrate(Double invoicecurrrate) {
+    this.invoicecurrrate = invoicecurrrate;
     return this;
   }
 
    /**
-   * Kurz měny [persistentní položka]
-   * @return invoiceCurrRate
+   * kurz měny [persistentní položka]
+   * @return invoicecurrrate
   **/
-  @ApiModelProperty(example = "null", value = "Kurz měny [persistentní položka]")
-  public Double getInvoiceCurrRate() {
-    return invoiceCurrRate;
+  @ApiModelProperty(example = "null", value = "kurz měny [persistentní položka]")
+  public Double getInvoicecurrrate() {
+    return invoicecurrrate;
   }
 
-  public void setInvoiceCurrRate(Double invoiceCurrRate) {
-    this.invoiceCurrRate = invoiceCurrRate;
+  public void setInvoicecurrrate(Double invoicecurrrate) {
+    this.invoicecurrrate = invoicecurrrate;
   }
 
-  public Reversechargedeclaration invoiceRefCurrRate(Double invoiceRefCurrRate) {
-    this.invoiceRefCurrRate = invoiceRefCurrRate;
+  public Reversechargedeclaration invoicerefcurrrate(Double invoicerefcurrrate) {
+    this.invoicerefcurrrate = invoicerefcurrrate;
     return this;
   }
 
    /**
-   * Kurz vztažný [persistentní položka]
-   * @return invoiceRefCurrRate
+   * kurz vztažný [persistentní položka]
+   * @return invoicerefcurrrate
   **/
-  @ApiModelProperty(example = "null", value = "Kurz vztažný [persistentní položka]")
-  public Double getInvoiceRefCurrRate() {
-    return invoiceRefCurrRate;
+  @ApiModelProperty(example = "null", value = "kurz vztažný [persistentní položka]")
+  public Double getInvoicerefcurrrate() {
+    return invoicerefcurrrate;
   }
 
-  public void setInvoiceRefCurrRate(Double invoiceRefCurrRate) {
-    this.invoiceRefCurrRate = invoiceRefCurrRate;
+  public void setInvoicerefcurrrate(Double invoicerefcurrrate) {
+    this.invoicerefcurrrate = invoicerefcurrrate;
   }
 
-  public Reversechargedeclaration invoiceCoef(Integer invoiceCoef) {
-    this.invoiceCoef = invoiceCoef;
+  public Reversechargedeclaration invoicecoef(Integer invoicecoef) {
+    this.invoicecoef = invoicecoef;
     return this;
   }
 
    /**
-   * Koeficient [persistentní položka]
-   * @return invoiceCoef
+   * koeficient [persistentní položka]
+   * @return invoicecoef
   **/
-  @ApiModelProperty(example = "null", value = "Koeficient [persistentní položka]")
-  public Integer getInvoiceCoef() {
-    return invoiceCoef;
+  @ApiModelProperty(example = "null", value = "koeficient [persistentní položka]")
+  public Integer getInvoicecoef() {
+    return invoicecoef;
   }
 
-  public void setInvoiceCoef(Integer invoiceCoef) {
-    this.invoiceCoef = invoiceCoef;
+  public void setInvoicecoef(Integer invoicecoef) {
+    this.invoicecoef = invoicecoef;
   }
 
-  public Reversechargedeclaration invoiceLocalCoef(Integer invoiceLocalCoef) {
-    this.invoiceLocalCoef = invoiceLocalCoef;
+  public Reversechargedeclaration invoicelocalcoef(Integer invoicelocalcoef) {
+    this.invoicelocalcoef = invoicelocalcoef;
     return this;
   }
 
    /**
-   * Lokální koeficient [persistentní položka]
-   * @return invoiceLocalCoef
+   * lokální koeficient [persistentní položka]
+   * @return invoicelocalcoef
   **/
-  @ApiModelProperty(example = "null", value = "Lokální koeficient [persistentní položka]")
-  public Integer getInvoiceLocalCoef() {
-    return invoiceLocalCoef;
+  @ApiModelProperty(example = "null", value = "lokální koeficient [persistentní položka]")
+  public Integer getInvoicelocalcoef() {
+    return invoicelocalcoef;
   }
 
-  public void setInvoiceLocalCoef(Integer invoiceLocalCoef) {
-    this.invoiceLocalCoef = invoiceLocalCoef;
+  public void setInvoicelocalcoef(Integer invoicelocalcoef) {
+    this.invoicelocalcoef = invoicelocalcoef;
   }
 
-  public Reversechargedeclaration invoiceZoneID(String invoiceZoneID) {
-    this.invoiceZoneID = invoiceZoneID;
+  public Reversechargedeclaration invoicezoneId(String invoicezoneId) {
+    this.invoicezoneId = invoicezoneId;
     return this;
   }
 
    /**
-   * Zóna; ID objektu Měna [persistentní položka]
-   * @return invoiceZoneID
+   * zóna; id objektu měna [persistentní položka]
+   * @return invoicezoneId
   **/
-  @ApiModelProperty(example = "null", value = "Zóna; ID objektu Měna [persistentní položka]")
-  public String getInvoiceZoneID() {
-    return invoiceZoneID;
+  @ApiModelProperty(example = "null", value = "zóna; id objektu měna [persistentní položka]")
+  public String getInvoicezoneId() {
+    return invoicezoneId;
   }
 
-  public void setInvoiceZoneID(String invoiceZoneID) {
-    this.invoiceZoneID = invoiceZoneID;
+  public void setInvoicezoneId(String invoicezoneId) {
+    this.invoicezoneId = invoicezoneId;
   }
 
-  public Reversechargedeclaration invoiceLocalZoneID(String invoiceLocalZoneID) {
-    this.invoiceLocalZoneID = invoiceLocalZoneID;
+  public Reversechargedeclaration invoicelocalzoneId(String invoicelocalzoneId) {
+    this.invoicelocalzoneId = invoicelocalzoneId;
     return this;
   }
 
    /**
-   * Lokální zóna; ID objektu Měna [persistentní položka]
-   * @return invoiceLocalZoneID
+   * lokální zóna; id objektu měna [persistentní položka]
+   * @return invoicelocalzoneId
   **/
-  @ApiModelProperty(example = "null", value = "Lokální zóna; ID objektu Měna [persistentní položka]")
-  public String getInvoiceLocalZoneID() {
-    return invoiceLocalZoneID;
+  @ApiModelProperty(example = "null", value = "lokální zóna; id objektu měna [persistentní položka]")
+  public String getInvoicelocalzoneId() {
+    return invoicelocalzoneId;
   }
 
-  public void setInvoiceLocalZoneID(String invoiceLocalZoneID) {
-    this.invoiceLocalZoneID = invoiceLocalZoneID;
+  public void setInvoicelocalzoneId(String invoicelocalzoneId) {
+    this.invoicelocalzoneId = invoicelocalzoneId;
   }
 
-   /**
-   * Ref.měna; ID objektu Měna
-   * @return invoiceRefCurrencyID
-  **/
-  @ApiModelProperty(example = "null", value = "Ref.měna; ID objektu Měna")
-  public String getInvoiceRefCurrencyID() {
-    return invoiceRefCurrencyID;
+  public Reversechargedeclaration invoicerefcurrencyId(String invoicerefcurrencyId) {
+    this.invoicerefcurrencyId = invoicerefcurrencyId;
+    return this;
   }
 
    /**
-   * Lok.ref.měna; ID objektu Měna
-   * @return invoiceLocalRefCurrencyID
+   * ref.měna; id objektu měna
+   * @return invoicerefcurrencyId
   **/
-  @ApiModelProperty(example = "null", value = "Lok.ref.měna; ID objektu Měna")
-  public String getInvoiceLocalRefCurrencyID() {
-    return invoiceLocalRefCurrencyID;
+  @ApiModelProperty(example = "null", value = "ref.měna; id objektu měna")
+  public String getInvoicerefcurrencyId() {
+    return invoicerefcurrencyId;
+  }
+
+  public void setInvoicerefcurrencyId(String invoicerefcurrencyId) {
+    this.invoicerefcurrencyId = invoicerefcurrencyId;
+  }
+
+  public Reversechargedeclaration invoicelocalrefcurrencyId(String invoicelocalrefcurrencyId) {
+    this.invoicelocalrefcurrencyId = invoicelocalrefcurrencyId;
+    return this;
+  }
+
+   /**
+   * lok.ref.měna; id objektu měna
+   * @return invoicelocalrefcurrencyId
+  **/
+  @ApiModelProperty(example = "null", value = "lok.ref.měna; id objektu měna")
+  public String getInvoicelocalrefcurrencyId() {
+    return invoicelocalrefcurrencyId;
+  }
+
+  public void setInvoicelocalrefcurrencyId(String invoicelocalrefcurrencyId) {
+    this.invoicelocalrefcurrencyId = invoicelocalrefcurrencyId;
+  }
+
+  public Reversechargedeclaration totalbaseamount(Double totalbaseamount) {
+    this.totalbaseamount = totalbaseamount;
+    return this;
   }
 
    /**
    * Částka základu přepočítaná
-   * @return totalBaseAmount
+   * @return totalbaseamount
   **/
   @ApiModelProperty(example = "null", value = "Částka základu přepočítaná")
-  public Double getTotalBaseAmount() {
-    return totalBaseAmount;
+  public Double getTotalbaseamount() {
+    return totalbaseamount;
+  }
+
+  public void setTotalbaseamount(Double totalbaseamount) {
+    this.totalbaseamount = totalbaseamount;
+  }
+
+  public Reversechargedeclaration totallocalbaseamount(Double totallocalbaseamount) {
+    this.totallocalbaseamount = totallocalbaseamount;
+    return this;
   }
 
    /**
    * Částka základu v lok. měn.
-   * @return totalLocalBaseAmount
+   * @return totallocalbaseamount
   **/
   @ApiModelProperty(example = "null", value = "Částka základu v lok. měn.")
-  public Double getTotalLocalBaseAmount() {
-    return totalLocalBaseAmount;
+  public Double getTotallocalbaseamount() {
+    return totallocalbaseamount;
+  }
+
+  public void setTotallocalbaseamount(Double totallocalbaseamount) {
+    this.totallocalbaseamount = totallocalbaseamount;
+  }
+
+  public Reversechargedeclaration totalsourceamount(Double totalsourceamount) {
+    this.totalsourceamount = totalsourceamount;
+    return this;
   }
 
    /**
    * Částka základu
-   * @return totalSourceAmount
+   * @return totalsourceamount
   **/
   @ApiModelProperty(example = "null", value = "Částka základu")
-  public Double getTotalSourceAmount() {
-    return totalSourceAmount;
+  public Double getTotalsourceamount() {
+    return totalsourceamount;
   }
 
-  public Reversechargedeclaration sDocumentID(String sDocumentID) {
-    this.sDocumentID = sDocumentID;
+  public void setTotalsourceamount(Double totalsourceamount) {
+    this.totalsourceamount = totalsourceamount;
+  }
+
+  public Reversechargedeclaration sdocumentId(String sdocumentId) {
+    this.sdocumentId = sdocumentId;
     return this;
   }
 
    /**
-   * Zdrojový dokl.; ID objektu Dokument [persistentní položka]
-   * @return sDocumentID
+   * zdrojový dokl.; id objektu dokument [persistentní položka]
+   * @return sdocumentId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojový dokl.; ID objektu Dokument [persistentní položka]")
-  public String getSDocumentID() {
-    return sDocumentID;
+  @ApiModelProperty(example = "null", value = "zdrojový dokl.; id objektu dokument [persistentní položka]")
+  public String getSdocumentId() {
+    return sdocumentId;
   }
 
-  public void setSDocumentID(String sDocumentID) {
-    this.sDocumentID = sDocumentID;
+  public void setSdocumentId(String sdocumentId) {
+    this.sdocumentId = sdocumentId;
   }
 
-  public Reversechargedeclaration sDocumentType(String sDocumentType) {
-    this.sDocumentType = sDocumentType;
+  public Reversechargedeclaration sdocumenttype(String sdocumenttype) {
+    this.sdocumenttype = sdocumenttype;
     return this;
   }
 
    /**
-   * Typ zdrojového dokl. [persistentní položka]
-   * @return sDocumentType
+   * typ zdrojového dokl. [persistentní položka]
+   * @return sdocumenttype
   **/
-  @ApiModelProperty(example = "null", value = "Typ zdrojového dokl. [persistentní položka]")
-  public String getSDocumentType() {
-    return sDocumentType;
+  @ApiModelProperty(example = "null", value = "typ zdrojového dokl. [persistentní položka]")
+  public String getSdocumenttype() {
+    return sdocumenttype;
   }
 
-  public void setSDocumentType(String sDocumentType) {
-    this.sDocumentType = sDocumentType;
+  public void setSdocumenttype(String sdocumenttype) {
+    this.sdocumenttype = sdocumenttype;
   }
 
-  public Reversechargedeclaration currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Reversechargedeclaration currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
-  public Reversechargedeclaration vATCountryID(String vATCountryID) {
-    this.vATCountryID = vATCountryID;
+  public Reversechargedeclaration vatcountryId(String vatcountryId) {
+    this.vatcountryId = vatcountryId;
     return this;
   }
 
    /**
-   * Země DPH; ID objektu Země [persistentní položka]
-   * @return vATCountryID
+   * země dph; id objektu země [persistentní položka]
+   * @return vatcountryId
   **/
-  @ApiModelProperty(example = "null", value = "Země DPH; ID objektu Země [persistentní položka]")
-  public String getVATCountryID() {
-    return vATCountryID;
+  @ApiModelProperty(example = "null", value = "země dph; id objektu země [persistentní položka]")
+  public String getVatcountryId() {
+    return vatcountryId;
   }
 
-  public void setVATCountryID(String vATCountryID) {
-    this.vATCountryID = vATCountryID;
+  public void setVatcountryId(String vatcountryId) {
+    this.vatcountryId = vatcountryId;
   }
 
-  public Reversechargedeclaration vATDateDATE(DateTime vATDateDATE) {
-    this.vATDateDATE = vATDateDATE;
+  public Reversechargedeclaration vatdatedate(DateTime vatdatedate) {
+    this.vatdatedate = vatdatedate;
     return this;
   }
 
    /**
-   * Datum přiznání DPH [persistentní položka]
-   * @return vATDateDATE
+   * datum přiznání dph [persistentní položka]
+   * @return vatdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum přiznání DPH [persistentní položka]")
-  public DateTime getVATDateDATE() {
-    return vATDateDATE;
+  @ApiModelProperty(example = "null", value = "datum přiznání dph [persistentní položka]")
+  public DateTime getVatdatedate() {
+    return vatdatedate;
   }
 
-  public void setVATDateDATE(DateTime vATDateDATE) {
-    this.vATDateDATE = vATDateDATE;
+  public void setVatdatedate(DateTime vatdatedate) {
+    this.vatdatedate = vatdatedate;
   }
 
-  public Reversechargedeclaration vATDeductionDateDATE(DateTime vATDeductionDateDATE) {
-    this.vATDeductionDateDATE = vATDeductionDateDATE;
+  public Reversechargedeclaration vatdeductiondatedate(DateTime vatdeductiondatedate) {
+    this.vatdeductiondatedate = vatdeductiondatedate;
     return this;
   }
 
    /**
-   * Datum odpočtu DPH [persistentní položka]
-   * @return vATDeductionDateDATE
+   * datum odpočtu dph [persistentní položka]
+   * @return vatdeductiondatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum odpočtu DPH [persistentní položka]")
-  public DateTime getVATDeductionDateDATE() {
-    return vATDeductionDateDATE;
+  @ApiModelProperty(example = "null", value = "datum odpočtu dph [persistentní položka]")
+  public DateTime getVatdeductiondatedate() {
+    return vatdeductiondatedate;
   }
 
-  public void setVATDeductionDateDATE(DateTime vATDeductionDateDATE) {
-    this.vATDeductionDateDATE = vATDeductionDateDATE;
+  public void setVatdeductiondatedate(DateTime vatdeductiondatedate) {
+    this.vatdeductiondatedate = vatdeductiondatedate;
   }
 
-  public Reversechargedeclaration vATReportPreference(String vATReportPreference) {
-    this.vATReportPreference = vATReportPreference;
+  public Reversechargedeclaration vatreportpreference(String vatreportpreference) {
+    this.vatreportpreference = vatreportpreference;
     return this;
   }
 
    /**
-   * Preference výkazu DPH [persistentní položka]
-   * @return vATReportPreference
+   * preference výkazu dph [persistentní položka]
+   * @return vatreportpreference
   **/
-  @ApiModelProperty(example = "null", value = "Preference výkazu DPH [persistentní položka]")
-  public String getVATReportPreference() {
-    return vATReportPreference;
+  @ApiModelProperty(example = "null", value = "preference výkazu dph [persistentní položka]")
+  public String getVatreportpreference() {
+    return vatreportpreference;
   }
 
-  public void setVATReportPreference(String vATReportPreference) {
-    this.vATReportPreference = vATReportPreference;
+  public void setVatreportpreference(String vatreportpreference) {
+    this.vatreportpreference = vatreportpreference;
   }
 
-  public Reversechargedeclaration createdAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public Reversechargedeclaration createdatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
     return this;
   }
 
    /**
-   * Vytvořeno [persistentní položka]
-   * @return createdAtDATE
+   * vytvořeno [persistentní položka]
+   * @return createdatdate
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořeno [persistentní položka]")
-  public DateTime getCreatedAtDATE() {
-    return createdAtDATE;
+  @ApiModelProperty(example = "null", value = "vytvořeno [persistentní položka]")
+  public DateTime getCreatedatdate() {
+    return createdatdate;
   }
 
-  public void setCreatedAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public void setCreatedatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
   }
 
-  public Reversechargedeclaration correctedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public Reversechargedeclaration correctedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
     return this;
   }
 
    /**
-   * Opraveno [persistentní položka]
-   * @return correctedAtDATE
+   * opraveno [persistentní položka]
+   * @return correctedatdate
   **/
-  @ApiModelProperty(example = "null", value = "Opraveno [persistentní položka]")
-  public DateTime getCorrectedAtDATE() {
-    return correctedAtDATE;
+  @ApiModelProperty(example = "null", value = "opraveno [persistentní položka]")
+  public DateTime getCorrectedatdate() {
+    return correctedatdate;
   }
 
-  public void setCorrectedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public void setCorrectedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
   }
 
 
@@ -900,56 +999,56 @@ public class Reversechargedeclaration   {
       return false;
     }
     Reversechargedeclaration reversechargedeclaration = (Reversechargedeclaration) o;
-    return Objects.equals(this.displayName, reversechargedeclaration.displayName) &&
-        Objects.equals(this.ID, reversechargedeclaration.ID) &&
-        Objects.equals(this.classID, reversechargedeclaration.classID) &&
-        Objects.equals(this.objVersion, reversechargedeclaration.objVersion) &&
+    return Objects.equals(this.displayname, reversechargedeclaration.displayname) &&
+        Objects.equals(this.id, reversechargedeclaration.id) &&
+        Objects.equals(this.classid, reversechargedeclaration.classid) &&
+        Objects.equals(this.objversion, reversechargedeclaration.objversion) &&
         Objects.equals(this.rows, reversechargedeclaration.rows) &&
-        Objects.equals(this.docQueueID, reversechargedeclaration.docQueueID) &&
-        Objects.equals(this.periodID, reversechargedeclaration.periodID) &&
-        Objects.equals(this.ordNumber, reversechargedeclaration.ordNumber) &&
-        Objects.equals(this.docDateDATE, reversechargedeclaration.docDateDATE) &&
-        Objects.equals(this.createdByID, reversechargedeclaration.createdByID) &&
-        Objects.equals(this.correctedByID, reversechargedeclaration.correctedByID) &&
-        Objects.equals(this.newRelatedType, reversechargedeclaration.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, reversechargedeclaration.newRelatedDocumentID) &&
-        Objects.equals(this.accPresetDefID, reversechargedeclaration.accPresetDefID) &&
-        Objects.equals(this.firmID, reversechargedeclaration.firmID) &&
-        Objects.equals(this.firmOfficeID, reversechargedeclaration.firmOfficeID) &&
-        Objects.equals(this.personID, reversechargedeclaration.personID) &&
+        Objects.equals(this.docqueueId, reversechargedeclaration.docqueueId) &&
+        Objects.equals(this.periodId, reversechargedeclaration.periodId) &&
+        Objects.equals(this.ordnumber, reversechargedeclaration.ordnumber) &&
+        Objects.equals(this.docdatedate, reversechargedeclaration.docdatedate) &&
+        Objects.equals(this.createdbyId, reversechargedeclaration.createdbyId) &&
+        Objects.equals(this.correctedbyId, reversechargedeclaration.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, reversechargedeclaration.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, reversechargedeclaration.newrelateddocumentId) &&
+        Objects.equals(this.accpresetdefId, reversechargedeclaration.accpresetdefId) &&
+        Objects.equals(this.firmId, reversechargedeclaration.firmId) &&
+        Objects.equals(this.firmofficeId, reversechargedeclaration.firmofficeId) &&
+        Objects.equals(this.personId, reversechargedeclaration.personId) &&
         Objects.equals(this.description, reversechargedeclaration.description) &&
-        Objects.equals(this.accDateDATE, reversechargedeclaration.accDateDATE) &&
-        Objects.equals(this.accDocQueueID, reversechargedeclaration.accDocQueueID) &&
-        Objects.equals(this.accountingType, reversechargedeclaration.accountingType) &&
-        Objects.equals(this.isAccounted, reversechargedeclaration.isAccounted) &&
+        Objects.equals(this.accdatedate, reversechargedeclaration.accdatedate) &&
+        Objects.equals(this.accdocqueueId, reversechargedeclaration.accdocqueueId) &&
+        Objects.equals(this.accountingtype, reversechargedeclaration.accountingtype) &&
+        Objects.equals(this.isaccounted, reversechargedeclaration.isaccounted) &&
         Objects.equals(this.dirty, reversechargedeclaration.dirty) &&
-        Objects.equals(this.localAmount, reversechargedeclaration.localAmount) &&
+        Objects.equals(this.localamount, reversechargedeclaration.localamount) &&
         Objects.equals(this.amount, reversechargedeclaration.amount) &&
-        Objects.equals(this.invoiceCurrRate, reversechargedeclaration.invoiceCurrRate) &&
-        Objects.equals(this.invoiceRefCurrRate, reversechargedeclaration.invoiceRefCurrRate) &&
-        Objects.equals(this.invoiceCoef, reversechargedeclaration.invoiceCoef) &&
-        Objects.equals(this.invoiceLocalCoef, reversechargedeclaration.invoiceLocalCoef) &&
-        Objects.equals(this.invoiceZoneID, reversechargedeclaration.invoiceZoneID) &&
-        Objects.equals(this.invoiceLocalZoneID, reversechargedeclaration.invoiceLocalZoneID) &&
-        Objects.equals(this.invoiceRefCurrencyID, reversechargedeclaration.invoiceRefCurrencyID) &&
-        Objects.equals(this.invoiceLocalRefCurrencyID, reversechargedeclaration.invoiceLocalRefCurrencyID) &&
-        Objects.equals(this.totalBaseAmount, reversechargedeclaration.totalBaseAmount) &&
-        Objects.equals(this.totalLocalBaseAmount, reversechargedeclaration.totalLocalBaseAmount) &&
-        Objects.equals(this.totalSourceAmount, reversechargedeclaration.totalSourceAmount) &&
-        Objects.equals(this.sDocumentID, reversechargedeclaration.sDocumentID) &&
-        Objects.equals(this.sDocumentType, reversechargedeclaration.sDocumentType) &&
-        Objects.equals(this.currencyID, reversechargedeclaration.currencyID) &&
-        Objects.equals(this.vATCountryID, reversechargedeclaration.vATCountryID) &&
-        Objects.equals(this.vATDateDATE, reversechargedeclaration.vATDateDATE) &&
-        Objects.equals(this.vATDeductionDateDATE, reversechargedeclaration.vATDeductionDateDATE) &&
-        Objects.equals(this.vATReportPreference, reversechargedeclaration.vATReportPreference) &&
-        Objects.equals(this.createdAtDATE, reversechargedeclaration.createdAtDATE) &&
-        Objects.equals(this.correctedAtDATE, reversechargedeclaration.correctedAtDATE);
+        Objects.equals(this.invoicecurrrate, reversechargedeclaration.invoicecurrrate) &&
+        Objects.equals(this.invoicerefcurrrate, reversechargedeclaration.invoicerefcurrrate) &&
+        Objects.equals(this.invoicecoef, reversechargedeclaration.invoicecoef) &&
+        Objects.equals(this.invoicelocalcoef, reversechargedeclaration.invoicelocalcoef) &&
+        Objects.equals(this.invoicezoneId, reversechargedeclaration.invoicezoneId) &&
+        Objects.equals(this.invoicelocalzoneId, reversechargedeclaration.invoicelocalzoneId) &&
+        Objects.equals(this.invoicerefcurrencyId, reversechargedeclaration.invoicerefcurrencyId) &&
+        Objects.equals(this.invoicelocalrefcurrencyId, reversechargedeclaration.invoicelocalrefcurrencyId) &&
+        Objects.equals(this.totalbaseamount, reversechargedeclaration.totalbaseamount) &&
+        Objects.equals(this.totallocalbaseamount, reversechargedeclaration.totallocalbaseamount) &&
+        Objects.equals(this.totalsourceamount, reversechargedeclaration.totalsourceamount) &&
+        Objects.equals(this.sdocumentId, reversechargedeclaration.sdocumentId) &&
+        Objects.equals(this.sdocumenttype, reversechargedeclaration.sdocumenttype) &&
+        Objects.equals(this.currencyId, reversechargedeclaration.currencyId) &&
+        Objects.equals(this.vatcountryId, reversechargedeclaration.vatcountryId) &&
+        Objects.equals(this.vatdatedate, reversechargedeclaration.vatdatedate) &&
+        Objects.equals(this.vatdeductiondatedate, reversechargedeclaration.vatdeductiondatedate) &&
+        Objects.equals(this.vatreportpreference, reversechargedeclaration.vatreportpreference) &&
+        Objects.equals(this.createdatdate, reversechargedeclaration.createdatdate) &&
+        Objects.equals(this.correctedatdate, reversechargedeclaration.correctedatdate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, accPresetDefID, firmID, firmOfficeID, personID, description, accDateDATE, accDocQueueID, accountingType, isAccounted, dirty, localAmount, amount, invoiceCurrRate, invoiceRefCurrRate, invoiceCoef, invoiceLocalCoef, invoiceZoneID, invoiceLocalZoneID, invoiceRefCurrencyID, invoiceLocalRefCurrencyID, totalBaseAmount, totalLocalBaseAmount, totalSourceAmount, sDocumentID, sDocumentType, currencyID, vATCountryID, vATDateDATE, vATDeductionDateDATE, vATReportPreference, createdAtDATE, correctedAtDATE);
+    return Objects.hash(displayname, id, classid, objversion, rows, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, accpresetdefId, firmId, firmofficeId, personId, description, accdatedate, accdocqueueId, accountingtype, isaccounted, dirty, localamount, amount, invoicecurrrate, invoicerefcurrrate, invoicecoef, invoicelocalcoef, invoicezoneId, invoicelocalzoneId, invoicerefcurrencyId, invoicelocalrefcurrencyId, totalbaseamount, totallocalbaseamount, totalsourceamount, sdocumentId, sdocumenttype, currencyId, vatcountryId, vatdatedate, vatdeductiondatedate, vatreportpreference, createdatdate, correctedatdate);
   }
 
   @Override
@@ -957,51 +1056,51 @@ public class Reversechargedeclaration   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Reversechargedeclaration {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    accPresetDefID: ").append(toIndentedString(accPresetDefID)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    firmOfficeID: ").append(toIndentedString(firmOfficeID)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    accpresetdefId: ").append(toIndentedString(accpresetdefId)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    firmofficeId: ").append(toIndentedString(firmofficeId)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    accDateDATE: ").append(toIndentedString(accDateDATE)).append("\n");
-    sb.append("    accDocQueueID: ").append(toIndentedString(accDocQueueID)).append("\n");
-    sb.append("    accountingType: ").append(toIndentedString(accountingType)).append("\n");
-    sb.append("    isAccounted: ").append(toIndentedString(isAccounted)).append("\n");
+    sb.append("    accdatedate: ").append(toIndentedString(accdatedate)).append("\n");
+    sb.append("    accdocqueueId: ").append(toIndentedString(accdocqueueId)).append("\n");
+    sb.append("    accountingtype: ").append(toIndentedString(accountingtype)).append("\n");
+    sb.append("    isaccounted: ").append(toIndentedString(isaccounted)).append("\n");
     sb.append("    dirty: ").append(toIndentedString(dirty)).append("\n");
-    sb.append("    localAmount: ").append(toIndentedString(localAmount)).append("\n");
+    sb.append("    localamount: ").append(toIndentedString(localamount)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    invoiceCurrRate: ").append(toIndentedString(invoiceCurrRate)).append("\n");
-    sb.append("    invoiceRefCurrRate: ").append(toIndentedString(invoiceRefCurrRate)).append("\n");
-    sb.append("    invoiceCoef: ").append(toIndentedString(invoiceCoef)).append("\n");
-    sb.append("    invoiceLocalCoef: ").append(toIndentedString(invoiceLocalCoef)).append("\n");
-    sb.append("    invoiceZoneID: ").append(toIndentedString(invoiceZoneID)).append("\n");
-    sb.append("    invoiceLocalZoneID: ").append(toIndentedString(invoiceLocalZoneID)).append("\n");
-    sb.append("    invoiceRefCurrencyID: ").append(toIndentedString(invoiceRefCurrencyID)).append("\n");
-    sb.append("    invoiceLocalRefCurrencyID: ").append(toIndentedString(invoiceLocalRefCurrencyID)).append("\n");
-    sb.append("    totalBaseAmount: ").append(toIndentedString(totalBaseAmount)).append("\n");
-    sb.append("    totalLocalBaseAmount: ").append(toIndentedString(totalLocalBaseAmount)).append("\n");
-    sb.append("    totalSourceAmount: ").append(toIndentedString(totalSourceAmount)).append("\n");
-    sb.append("    sDocumentID: ").append(toIndentedString(sDocumentID)).append("\n");
-    sb.append("    sDocumentType: ").append(toIndentedString(sDocumentType)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    vATCountryID: ").append(toIndentedString(vATCountryID)).append("\n");
-    sb.append("    vATDateDATE: ").append(toIndentedString(vATDateDATE)).append("\n");
-    sb.append("    vATDeductionDateDATE: ").append(toIndentedString(vATDeductionDateDATE)).append("\n");
-    sb.append("    vATReportPreference: ").append(toIndentedString(vATReportPreference)).append("\n");
-    sb.append("    createdAtDATE: ").append(toIndentedString(createdAtDATE)).append("\n");
-    sb.append("    correctedAtDATE: ").append(toIndentedString(correctedAtDATE)).append("\n");
+    sb.append("    invoicecurrrate: ").append(toIndentedString(invoicecurrrate)).append("\n");
+    sb.append("    invoicerefcurrrate: ").append(toIndentedString(invoicerefcurrrate)).append("\n");
+    sb.append("    invoicecoef: ").append(toIndentedString(invoicecoef)).append("\n");
+    sb.append("    invoicelocalcoef: ").append(toIndentedString(invoicelocalcoef)).append("\n");
+    sb.append("    invoicezoneId: ").append(toIndentedString(invoicezoneId)).append("\n");
+    sb.append("    invoicelocalzoneId: ").append(toIndentedString(invoicelocalzoneId)).append("\n");
+    sb.append("    invoicerefcurrencyId: ").append(toIndentedString(invoicerefcurrencyId)).append("\n");
+    sb.append("    invoicelocalrefcurrencyId: ").append(toIndentedString(invoicelocalrefcurrencyId)).append("\n");
+    sb.append("    totalbaseamount: ").append(toIndentedString(totalbaseamount)).append("\n");
+    sb.append("    totallocalbaseamount: ").append(toIndentedString(totallocalbaseamount)).append("\n");
+    sb.append("    totalsourceamount: ").append(toIndentedString(totalsourceamount)).append("\n");
+    sb.append("    sdocumentId: ").append(toIndentedString(sdocumentId)).append("\n");
+    sb.append("    sdocumenttype: ").append(toIndentedString(sdocumenttype)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    vatcountryId: ").append(toIndentedString(vatcountryId)).append("\n");
+    sb.append("    vatdatedate: ").append(toIndentedString(vatdatedate)).append("\n");
+    sb.append("    vatdeductiondatedate: ").append(toIndentedString(vatdeductiondatedate)).append("\n");
+    sb.append("    vatreportpreference: ").append(toIndentedString(vatreportpreference)).append("\n");
+    sb.append("    createdatdate: ").append(toIndentedString(createdatdate)).append("\n");
+    sb.append("    correctedatdate: ").append(toIndentedString(correctedatdate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,162 +34,198 @@ import java.util.Objects;
 /**
  * Autoserversetting
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Autoserversetting   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("EmailAccount_ID")
-  private String emailAccountID = null;
+  @SerializedName("emailaccount_id")
+  private String emailaccountId = null;
 
-  @SerializedName("DefaultUser_ID")
-  private String defaultUserID = null;
+  @SerializedName("defaultuser_id")
+  private String defaultuserId = null;
 
-  @SerializedName("RefreshInterval")
-  private Integer refreshInterval = null;
+  @SerializedName("refreshinterval")
+  private Integer refreshinterval = null;
 
-  @SerializedName("PoolSize")
-  private Integer poolSize = null;
+  @SerializedName("poolsize")
+  private Integer poolsize = null;
 
-  @SerializedName("IsActive")
-  private Boolean isActive = null;
+  @SerializedName("isactive")
+  private Boolean isactive = null;
 
-  @SerializedName("Site")
+  @SerializedName("site")
   private String site = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Autoserversetting emailAccountID(String emailAccountID) {
-    this.emailAccountID = emailAccountID;
+  public Autoserversetting displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * E-mailový účet; ID objektu E-mailový účet [persistentní položka]
-   * @return emailAccountID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "E-mailový účet; ID objektu E-mailový účet [persistentní položka]")
-  public String getEmailAccountID() {
-    return emailAccountID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setEmailAccountID(String emailAccountID) {
-    this.emailAccountID = emailAccountID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Autoserversetting defaultUserID(String defaultUserID) {
-    this.defaultUserID = defaultUserID;
+  public Autoserversetting id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Výchozí uživatel; ID objektu Uživatel [persistentní položka]
-   * @return defaultUserID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí uživatel; ID objektu Uživatel [persistentní položka]")
-  public String getDefaultUserID() {
-    return defaultUserID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDefaultUserID(String defaultUserID) {
-    this.defaultUserID = defaultUserID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Autoserversetting refreshInterval(Integer refreshInterval) {
-    this.refreshInterval = refreshInterval;
+  public Autoserversetting classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Interval občerstvení [persistentní položka]
-   * @return refreshInterval
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Interval občerstvení [persistentní položka]")
-  public Integer getRefreshInterval() {
-    return refreshInterval;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setRefreshInterval(Integer refreshInterval) {
-    this.refreshInterval = refreshInterval;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Autoserversetting poolSize(Integer poolSize) {
-    this.poolSize = poolSize;
+  public Autoserversetting objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Počet úloh [persistentní položka]
-   * @return poolSize
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Počet úloh [persistentní položka]")
-  public Integer getPoolSize() {
-    return poolSize;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setPoolSize(Integer poolSize) {
-    this.poolSize = poolSize;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Autoserversetting isActive(Boolean isActive) {
-    this.isActive = isActive;
+  public Autoserversetting emailaccountId(String emailaccountId) {
+    this.emailaccountId = emailaccountId;
     return this;
   }
 
    /**
-   * Aktivní [persistentní položka]
-   * @return isActive
+   * e-mailový účet; id objektu e-mailový účet [persistentní položka]
+   * @return emailaccountId
   **/
-  @ApiModelProperty(example = "null", value = "Aktivní [persistentní položka]")
-  public Boolean getIsActive() {
-    return isActive;
+  @ApiModelProperty(example = "null", value = "e-mailový účet; id objektu e-mailový účet [persistentní položka]")
+  public String getEmailaccountId() {
+    return emailaccountId;
   }
 
-  public void setIsActive(Boolean isActive) {
-    this.isActive = isActive;
+  public void setEmailaccountId(String emailaccountId) {
+    this.emailaccountId = emailaccountId;
+  }
+
+  public Autoserversetting defaultuserId(String defaultuserId) {
+    this.defaultuserId = defaultuserId;
+    return this;
+  }
+
+   /**
+   * výchozí uživatel; id objektu uživatel [persistentní položka]
+   * @return defaultuserId
+  **/
+  @ApiModelProperty(example = "null", value = "výchozí uživatel; id objektu uživatel [persistentní položka]")
+  public String getDefaultuserId() {
+    return defaultuserId;
+  }
+
+  public void setDefaultuserId(String defaultuserId) {
+    this.defaultuserId = defaultuserId;
+  }
+
+  public Autoserversetting refreshinterval(Integer refreshinterval) {
+    this.refreshinterval = refreshinterval;
+    return this;
+  }
+
+   /**
+   * interval občerstvení [persistentní položka]
+   * @return refreshinterval
+  **/
+  @ApiModelProperty(example = "null", value = "interval občerstvení [persistentní položka]")
+  public Integer getRefreshinterval() {
+    return refreshinterval;
+  }
+
+  public void setRefreshinterval(Integer refreshinterval) {
+    this.refreshinterval = refreshinterval;
+  }
+
+  public Autoserversetting poolsize(Integer poolsize) {
+    this.poolsize = poolsize;
+    return this;
+  }
+
+   /**
+   * počet úloh [persistentní položka]
+   * @return poolsize
+  **/
+  @ApiModelProperty(example = "null", value = "počet úloh [persistentní položka]")
+  public Integer getPoolsize() {
+    return poolsize;
+  }
+
+  public void setPoolsize(Integer poolsize) {
+    this.poolsize = poolsize;
+  }
+
+  public Autoserversetting isactive(Boolean isactive) {
+    this.isactive = isactive;
+    return this;
+  }
+
+   /**
+   * aktivní [persistentní položka]
+   * @return isactive
+  **/
+  @ApiModelProperty(example = "null", value = "aktivní [persistentní položka]")
+  public Boolean getIsactive() {
+    return isactive;
+  }
+
+  public void setIsactive(Boolean isactive) {
+    this.isactive = isactive;
   }
 
   public Autoserversetting site(String site) {
@@ -198,10 +234,10 @@ public class Autoserversetting   {
   }
 
    /**
-   * Replikační hnízdo [persistentní položka]
+   * replikační hnízdo [persistentní položka]
    * @return site
   **/
-  @ApiModelProperty(example = "null", value = "Replikační hnízdo [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "replikační hnízdo [persistentní položka]")
   public String getSite() {
     return site;
   }
@@ -220,21 +256,21 @@ public class Autoserversetting   {
       return false;
     }
     Autoserversetting autoserversetting = (Autoserversetting) o;
-    return Objects.equals(this.displayName, autoserversetting.displayName) &&
-        Objects.equals(this.ID, autoserversetting.ID) &&
-        Objects.equals(this.classID, autoserversetting.classID) &&
-        Objects.equals(this.objVersion, autoserversetting.objVersion) &&
-        Objects.equals(this.emailAccountID, autoserversetting.emailAccountID) &&
-        Objects.equals(this.defaultUserID, autoserversetting.defaultUserID) &&
-        Objects.equals(this.refreshInterval, autoserversetting.refreshInterval) &&
-        Objects.equals(this.poolSize, autoserversetting.poolSize) &&
-        Objects.equals(this.isActive, autoserversetting.isActive) &&
+    return Objects.equals(this.displayname, autoserversetting.displayname) &&
+        Objects.equals(this.id, autoserversetting.id) &&
+        Objects.equals(this.classid, autoserversetting.classid) &&
+        Objects.equals(this.objversion, autoserversetting.objversion) &&
+        Objects.equals(this.emailaccountId, autoserversetting.emailaccountId) &&
+        Objects.equals(this.defaultuserId, autoserversetting.defaultuserId) &&
+        Objects.equals(this.refreshinterval, autoserversetting.refreshinterval) &&
+        Objects.equals(this.poolsize, autoserversetting.poolsize) &&
+        Objects.equals(this.isactive, autoserversetting.isactive) &&
         Objects.equals(this.site, autoserversetting.site);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, emailAccountID, defaultUserID, refreshInterval, poolSize, isActive, site);
+    return Objects.hash(displayname, id, classid, objversion, emailaccountId, defaultuserId, refreshinterval, poolsize, isactive, site);
   }
 
   @Override
@@ -242,15 +278,15 @@ public class Autoserversetting   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Autoserversetting {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    emailAccountID: ").append(toIndentedString(emailAccountID)).append("\n");
-    sb.append("    defaultUserID: ").append(toIndentedString(defaultUserID)).append("\n");
-    sb.append("    refreshInterval: ").append(toIndentedString(refreshInterval)).append("\n");
-    sb.append("    poolSize: ").append(toIndentedString(poolSize)).append("\n");
-    sb.append("    isActive: ").append(toIndentedString(isActive)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    emailaccountId: ").append(toIndentedString(emailaccountId)).append("\n");
+    sb.append("    defaultuserId: ").append(toIndentedString(defaultuserId)).append("\n");
+    sb.append("    refreshinterval: ").append(toIndentedString(refreshinterval)).append("\n");
+    sb.append("    poolsize: ").append(toIndentedString(poolsize)).append("\n");
+    sb.append("    isactive: ").append(toIndentedString(isactive)).append("\n");
     sb.append("    site: ").append(toIndentedString(site)).append("\n");
     sb.append("}");
     return sb.toString();

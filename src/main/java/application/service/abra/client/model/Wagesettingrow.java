@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,75 +34,120 @@ import java.util.Objects;
 /**
  * Wagesettingrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wagesettingrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("WageConstant_ID")
-  private String wageConstantID = null;
+  @SerializedName("wageconstant_id")
+  private String wageconstantId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Wagesettingrow displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wagesettingrow id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wagesettingrow classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wagesettingrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Nastavení parametrů mezd [persistentní položka]
-   * @return parentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Nastavení parametrů mezd [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Wagesettingrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu nastavení parametrů mezd [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu nastavení parametrů mezd [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
   public Wagesettingrow code(String code) {
@@ -111,10 +156,10 @@ public class Wagesettingrow   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -129,10 +174,10 @@ public class Wagesettingrow   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -141,22 +186,22 @@ public class Wagesettingrow   {
     this.name = name;
   }
 
-  public Wagesettingrow wageConstantID(String wageConstantID) {
-    this.wageConstantID = wageConstantID;
+  public Wagesettingrow wageconstantId(String wageconstantId) {
+    this.wageconstantId = wageconstantId;
     return this;
   }
 
    /**
-   * Proměnná; ID objektu Globální proměnná [persistentní položka]
-   * @return wageConstantID
+   * proměnná; id objektu globální proměnná [persistentní položka]
+   * @return wageconstantId
   **/
-  @ApiModelProperty(example = "null", value = "Proměnná; ID objektu Globální proměnná [persistentní položka]")
-  public String getWageConstantID() {
-    return wageConstantID;
+  @ApiModelProperty(example = "null", value = "proměnná; id objektu globální proměnná [persistentní položka]")
+  public String getWageconstantId() {
+    return wageconstantId;
   }
 
-  public void setWageConstantID(String wageConstantID) {
-    this.wageConstantID = wageConstantID;
+  public void setWageconstantId(String wageconstantId) {
+    this.wageconstantId = wageconstantId;
   }
 
 
@@ -169,19 +214,19 @@ public class Wagesettingrow   {
       return false;
     }
     Wagesettingrow wagesettingrow = (Wagesettingrow) o;
-    return Objects.equals(this.displayName, wagesettingrow.displayName) &&
-        Objects.equals(this.ID, wagesettingrow.ID) &&
-        Objects.equals(this.classID, wagesettingrow.classID) &&
-        Objects.equals(this.objVersion, wagesettingrow.objVersion) &&
-        Objects.equals(this.parentID, wagesettingrow.parentID) &&
+    return Objects.equals(this.displayname, wagesettingrow.displayname) &&
+        Objects.equals(this.id, wagesettingrow.id) &&
+        Objects.equals(this.classid, wagesettingrow.classid) &&
+        Objects.equals(this.objversion, wagesettingrow.objversion) &&
+        Objects.equals(this.parentId, wagesettingrow.parentId) &&
         Objects.equals(this.code, wagesettingrow.code) &&
         Objects.equals(this.name, wagesettingrow.name) &&
-        Objects.equals(this.wageConstantID, wagesettingrow.wageConstantID);
+        Objects.equals(this.wageconstantId, wagesettingrow.wageconstantId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, code, name, wageConstantID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, code, name, wageconstantId);
   }
 
   @Override
@@ -189,14 +234,14 @@ public class Wagesettingrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wagesettingrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    wageConstantID: ").append(toIndentedString(wageConstantID)).append("\n");
+    sb.append("    wageconstantId: ").append(toIndentedString(wageconstantId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

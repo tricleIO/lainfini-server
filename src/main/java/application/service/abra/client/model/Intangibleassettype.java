@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,75 +35,111 @@ import java.util.Objects;
 /**
  * Intangibleassettype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Intangibleassettype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("CommmonMonthCount")
-  private Integer commmonMonthCount = null;
+  @SerializedName("commmonmonthcount")
+  private Integer commmonmonthcount = null;
 
-  @SerializedName("ValorisationMonthCount")
-  private Integer valorisationMonthCount = null;
+  @SerializedName("valorisationmonthcount")
+  private Integer valorisationmonthcount = null;
 
-  @SerializedName("ValidFrom$DATE")
-  private DateTime validFromDATE = null;
+  @SerializedName("validfrom$date")
+  private DateTime validfromdate = null;
 
-  @SerializedName("ValidTo$DATE")
-  private DateTime validToDATE = null;
+  @SerializedName("validto$date")
+  private DateTime validtodate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Intangibleassettype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Intangibleassettype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Intangibleassettype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Intangibleassettype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Intangibleassettype hidden(Boolean hidden) {
@@ -112,10 +148,10 @@ public class Intangibleassettype   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -130,10 +166,10 @@ public class Intangibleassettype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -148,10 +184,10 @@ public class Intangibleassettype   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -160,76 +196,76 @@ public class Intangibleassettype   {
     this.code = code;
   }
 
-  public Intangibleassettype commmonMonthCount(Integer commmonMonthCount) {
-    this.commmonMonthCount = commmonMonthCount;
+  public Intangibleassettype commmonmonthcount(Integer commmonmonthcount) {
+    this.commmonmonthcount = commmonmonthcount;
     return this;
   }
 
    /**
-   * Běžná doba odp. [persistentní položka]
-   * @return commmonMonthCount
+   * běžná doba odp. [persistentní položka]
+   * @return commmonmonthcount
   **/
-  @ApiModelProperty(example = "null", value = "Běžná doba odp. [persistentní položka]")
-  public Integer getCommmonMonthCount() {
-    return commmonMonthCount;
+  @ApiModelProperty(example = "null", value = "běžná doba odp. [persistentní položka]")
+  public Integer getCommmonmonthcount() {
+    return commmonmonthcount;
   }
 
-  public void setCommmonMonthCount(Integer commmonMonthCount) {
-    this.commmonMonthCount = commmonMonthCount;
+  public void setCommmonmonthcount(Integer commmonmonthcount) {
+    this.commmonmonthcount = commmonmonthcount;
   }
 
-  public Intangibleassettype valorisationMonthCount(Integer valorisationMonthCount) {
-    this.valorisationMonthCount = valorisationMonthCount;
+  public Intangibleassettype valorisationmonthcount(Integer valorisationmonthcount) {
+    this.valorisationmonthcount = valorisationmonthcount;
     return this;
   }
 
    /**
-   * Doba odp. pro TZ [persistentní položka]
-   * @return valorisationMonthCount
+   * doba odp. pro tz [persistentní položka]
+   * @return valorisationmonthcount
   **/
-  @ApiModelProperty(example = "null", value = "Doba odp. pro TZ [persistentní položka]")
-  public Integer getValorisationMonthCount() {
-    return valorisationMonthCount;
+  @ApiModelProperty(example = "null", value = "doba odp. pro tz [persistentní položka]")
+  public Integer getValorisationmonthcount() {
+    return valorisationmonthcount;
   }
 
-  public void setValorisationMonthCount(Integer valorisationMonthCount) {
-    this.valorisationMonthCount = valorisationMonthCount;
+  public void setValorisationmonthcount(Integer valorisationmonthcount) {
+    this.valorisationmonthcount = valorisationmonthcount;
   }
 
-  public Intangibleassettype validFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public Intangibleassettype validfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
     return this;
   }
 
    /**
-   * Platí od [persistentní položka]
-   * @return validFromDATE
+   * platí od [persistentní položka]
+   * @return validfromdate
   **/
-  @ApiModelProperty(example = "null", value = "Platí od [persistentní položka]")
-  public DateTime getValidFromDATE() {
-    return validFromDATE;
+  @ApiModelProperty(example = "null", value = "platí od [persistentní položka]")
+  public DateTime getValidfromdate() {
+    return validfromdate;
   }
 
-  public void setValidFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public void setValidfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
   }
 
-  public Intangibleassettype validToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public Intangibleassettype validtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
     return this;
   }
 
    /**
-   * Platí do [persistentní položka]
-   * @return validToDATE
+   * platí do [persistentní položka]
+   * @return validtodate
   **/
-  @ApiModelProperty(example = "null", value = "Platí do [persistentní položka]")
-  public DateTime getValidToDATE() {
-    return validToDATE;
+  @ApiModelProperty(example = "null", value = "platí do [persistentní položka]")
+  public DateTime getValidtodate() {
+    return validtodate;
   }
 
-  public void setValidToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public void setValidtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
   }
 
 
@@ -242,22 +278,22 @@ public class Intangibleassettype   {
       return false;
     }
     Intangibleassettype intangibleassettype = (Intangibleassettype) o;
-    return Objects.equals(this.displayName, intangibleassettype.displayName) &&
-        Objects.equals(this.ID, intangibleassettype.ID) &&
-        Objects.equals(this.classID, intangibleassettype.classID) &&
-        Objects.equals(this.objVersion, intangibleassettype.objVersion) &&
+    return Objects.equals(this.displayname, intangibleassettype.displayname) &&
+        Objects.equals(this.id, intangibleassettype.id) &&
+        Objects.equals(this.classid, intangibleassettype.classid) &&
+        Objects.equals(this.objversion, intangibleassettype.objversion) &&
         Objects.equals(this.hidden, intangibleassettype.hidden) &&
         Objects.equals(this.name, intangibleassettype.name) &&
         Objects.equals(this.code, intangibleassettype.code) &&
-        Objects.equals(this.commmonMonthCount, intangibleassettype.commmonMonthCount) &&
-        Objects.equals(this.valorisationMonthCount, intangibleassettype.valorisationMonthCount) &&
-        Objects.equals(this.validFromDATE, intangibleassettype.validFromDATE) &&
-        Objects.equals(this.validToDATE, intangibleassettype.validToDATE);
+        Objects.equals(this.commmonmonthcount, intangibleassettype.commmonmonthcount) &&
+        Objects.equals(this.valorisationmonthcount, intangibleassettype.valorisationmonthcount) &&
+        Objects.equals(this.validfromdate, intangibleassettype.validfromdate) &&
+        Objects.equals(this.validtodate, intangibleassettype.validtodate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, name, code, commmonMonthCount, valorisationMonthCount, validFromDATE, validToDATE);
+    return Objects.hash(displayname, id, classid, objversion, hidden, name, code, commmonmonthcount, valorisationmonthcount, validfromdate, validtodate);
   }
 
   @Override
@@ -265,17 +301,17 @@ public class Intangibleassettype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Intangibleassettype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
-    sb.append("    commmonMonthCount: ").append(toIndentedString(commmonMonthCount)).append("\n");
-    sb.append("    valorisationMonthCount: ").append(toIndentedString(valorisationMonthCount)).append("\n");
-    sb.append("    validFromDATE: ").append(toIndentedString(validFromDATE)).append("\n");
-    sb.append("    validToDATE: ").append(toIndentedString(validToDATE)).append("\n");
+    sb.append("    commmonmonthcount: ").append(toIndentedString(commmonmonthcount)).append("\n");
+    sb.append("    valorisationmonthcount: ").append(toIndentedString(valorisationmonthcount)).append("\n");
+    sb.append("    validfromdate: ").append(toIndentedString(validfromdate)).append("\n");
+    sb.append("    validtodate: ").append(toIndentedString(validtodate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,99 +35,135 @@ import java.util.Objects;
 /**
  * Crpplanvariant
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Crpplanvariant   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("User_ID")
-  private String userID = null;
+  @SerializedName("user_id")
+  private String userId = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("VisibilityKind")
-  private Integer visibilityKind = null;
+  @SerializedName("visibilitykind")
+  private Integer visibilitykind = null;
 
-  @SerializedName("IsMajor")
-  private Boolean isMajor = null;
+  @SerializedName("ismajor")
+  private Boolean ismajor = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("UpdatedDate$DATE")
-  private DateTime updatedDateDATE = null;
+  @SerializedName("updateddate$date")
+  private DateTime updateddatedate = null;
 
-  @SerializedName("SavedItemsCount")
-  private Integer savedItemsCount = null;
+  @SerializedName("saveditemscount")
+  private Integer saveditemscount = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Crpplanvariant userID(String userID) {
-    this.userID = userID;
+  public Crpplanvariant displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Vlastník; ID objektu Uživatel [persistentní položka]
-   * @return userID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Uživatel [persistentní položka]")
-  public String getUserID() {
-    return userID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setUserID(String userID) {
-    this.userID = userID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Crpplanvariant id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Crpplanvariant classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Crpplanvariant objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Crpplanvariant userId(String userId) {
+    this.userId = userId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu uživatel [persistentní položka]
+   * @return userId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu uživatel [persistentní položka]")
+  public String getUserId() {
+    return userId;
+  }
+
+  public void setUserId(String userId) {
+    this.userId = userId;
   }
 
   public Crpplanvariant code(String code) {
@@ -136,10 +172,10 @@ public class Crpplanvariant   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -154,10 +190,10 @@ public class Crpplanvariant   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -166,112 +202,112 @@ public class Crpplanvariant   {
     this.name = name;
   }
 
-  public Crpplanvariant visibilityKind(Integer visibilityKind) {
-    this.visibilityKind = visibilityKind;
+  public Crpplanvariant visibilitykind(Integer visibilitykind) {
+    this.visibilitykind = visibilitykind;
     return this;
   }
 
    /**
-   * Viditelnost [persistentní položka]
-   * @return visibilityKind
+   * viditelnost [persistentní položka]
+   * @return visibilitykind
   **/
-  @ApiModelProperty(example = "null", value = "Viditelnost [persistentní položka]")
-  public Integer getVisibilityKind() {
-    return visibilityKind;
+  @ApiModelProperty(example = "null", value = "viditelnost [persistentní položka]")
+  public Integer getVisibilitykind() {
+    return visibilitykind;
   }
 
-  public void setVisibilityKind(Integer visibilityKind) {
-    this.visibilityKind = visibilityKind;
+  public void setVisibilitykind(Integer visibilitykind) {
+    this.visibilitykind = visibilitykind;
   }
 
-  public Crpplanvariant isMajor(Boolean isMajor) {
-    this.isMajor = isMajor;
+  public Crpplanvariant ismajor(Boolean ismajor) {
+    this.ismajor = ismajor;
     return this;
   }
 
    /**
-   * Hlavní [persistentní položka]
-   * @return isMajor
+   * hlavní [persistentní položka]
+   * @return ismajor
   **/
-  @ApiModelProperty(example = "null", value = "Hlavní [persistentní položka]")
-  public Boolean getIsMajor() {
-    return isMajor;
+  @ApiModelProperty(example = "null", value = "hlavní [persistentní položka]")
+  public Boolean getIsmajor() {
+    return ismajor;
   }
 
-  public void setIsMajor(Boolean isMajor) {
-    this.isMajor = isMajor;
+  public void setIsmajor(Boolean ismajor) {
+    this.ismajor = ismajor;
   }
 
-  public Crpplanvariant createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Crpplanvariant createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Crpplanvariant correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Crpplanvariant correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Crpplanvariant updatedDateDATE(DateTime updatedDateDATE) {
-    this.updatedDateDATE = updatedDateDATE;
+  public Crpplanvariant updateddatedate(DateTime updateddatedate) {
+    this.updateddatedate = updateddatedate;
     return this;
   }
 
    /**
-   * Datum [persistentní položka]
-   * @return updatedDateDATE
+   * datum [persistentní položka]
+   * @return updateddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum [persistentní položka]")
-  public DateTime getUpdatedDateDATE() {
-    return updatedDateDATE;
+  @ApiModelProperty(example = "null", value = "datum [persistentní položka]")
+  public DateTime getUpdateddatedate() {
+    return updateddatedate;
   }
 
-  public void setUpdatedDateDATE(DateTime updatedDateDATE) {
-    this.updatedDateDATE = updatedDateDATE;
+  public void setUpdateddatedate(DateTime updateddatedate) {
+    this.updateddatedate = updateddatedate;
   }
 
-  public Crpplanvariant savedItemsCount(Integer savedItemsCount) {
-    this.savedItemsCount = savedItemsCount;
+  public Crpplanvariant saveditemscount(Integer saveditemscount) {
+    this.saveditemscount = saveditemscount;
     return this;
   }
 
    /**
-   * Počet [persistentní položka]
-   * @return savedItemsCount
+   * počet [persistentní položka]
+   * @return saveditemscount
   **/
-  @ApiModelProperty(example = "null", value = "Počet [persistentní položka]")
-  public Integer getSavedItemsCount() {
-    return savedItemsCount;
+  @ApiModelProperty(example = "null", value = "počet [persistentní položka]")
+  public Integer getSaveditemscount() {
+    return saveditemscount;
   }
 
-  public void setSavedItemsCount(Integer savedItemsCount) {
-    this.savedItemsCount = savedItemsCount;
+  public void setSaveditemscount(Integer saveditemscount) {
+    this.saveditemscount = saveditemscount;
   }
 
 
@@ -284,24 +320,24 @@ public class Crpplanvariant   {
       return false;
     }
     Crpplanvariant crpplanvariant = (Crpplanvariant) o;
-    return Objects.equals(this.displayName, crpplanvariant.displayName) &&
-        Objects.equals(this.ID, crpplanvariant.ID) &&
-        Objects.equals(this.classID, crpplanvariant.classID) &&
-        Objects.equals(this.objVersion, crpplanvariant.objVersion) &&
-        Objects.equals(this.userID, crpplanvariant.userID) &&
+    return Objects.equals(this.displayname, crpplanvariant.displayname) &&
+        Objects.equals(this.id, crpplanvariant.id) &&
+        Objects.equals(this.classid, crpplanvariant.classid) &&
+        Objects.equals(this.objversion, crpplanvariant.objversion) &&
+        Objects.equals(this.userId, crpplanvariant.userId) &&
         Objects.equals(this.code, crpplanvariant.code) &&
         Objects.equals(this.name, crpplanvariant.name) &&
-        Objects.equals(this.visibilityKind, crpplanvariant.visibilityKind) &&
-        Objects.equals(this.isMajor, crpplanvariant.isMajor) &&
-        Objects.equals(this.createdByID, crpplanvariant.createdByID) &&
-        Objects.equals(this.correctedByID, crpplanvariant.correctedByID) &&
-        Objects.equals(this.updatedDateDATE, crpplanvariant.updatedDateDATE) &&
-        Objects.equals(this.savedItemsCount, crpplanvariant.savedItemsCount);
+        Objects.equals(this.visibilitykind, crpplanvariant.visibilitykind) &&
+        Objects.equals(this.ismajor, crpplanvariant.ismajor) &&
+        Objects.equals(this.createdbyId, crpplanvariant.createdbyId) &&
+        Objects.equals(this.correctedbyId, crpplanvariant.correctedbyId) &&
+        Objects.equals(this.updateddatedate, crpplanvariant.updateddatedate) &&
+        Objects.equals(this.saveditemscount, crpplanvariant.saveditemscount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, userID, code, name, visibilityKind, isMajor, createdByID, correctedByID, updatedDateDATE, savedItemsCount);
+    return Objects.hash(displayname, id, classid, objversion, userId, code, name, visibilitykind, ismajor, createdbyId, correctedbyId, updateddatedate, saveditemscount);
   }
 
   @Override
@@ -309,19 +345,19 @@ public class Crpplanvariant   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Crpplanvariant {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    userID: ").append(toIndentedString(userID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    userId: ").append(toIndentedString(userId)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    visibilityKind: ").append(toIndentedString(visibilityKind)).append("\n");
-    sb.append("    isMajor: ").append(toIndentedString(isMajor)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    updatedDateDATE: ").append(toIndentedString(updatedDateDATE)).append("\n");
-    sb.append("    savedItemsCount: ").append(toIndentedString(savedItemsCount)).append("\n");
+    sb.append("    visibilitykind: ").append(toIndentedString(visibilitykind)).append("\n");
+    sb.append("    ismajor: ").append(toIndentedString(ismajor)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    updateddatedate: ").append(toIndentedString(updateddatedate)).append("\n");
+    sb.append("    saveditemscount: ").append(toIndentedString(saveditemscount)).append("\n");
     sb.append("}");
     return sb.toString();
   }

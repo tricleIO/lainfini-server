@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,111 +34,147 @@ import java.util.Objects;
 /**
  * Userdefinedform
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Userdefinedform   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("CLSID")
-  private String CLSID = null;
+  @SerializedName("clsid")
+  private String clsid = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Data")
+  @SerializedName("data")
   private byte[] data = null;
 
-  @SerializedName("SourceCode")
-  private String sourceCode = null;
+  @SerializedName("sourcecode")
+  private String sourcecode = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("Owner_ID")
-  private String ownerID = null;
+  @SerializedName("owner_id")
+  private String ownerId = null;
 
-  @SerializedName("CLSIDText")
-  private String cLSIDText = null;
+  @SerializedName("clsidtext")
+  private String clsidtext = null;
 
-  @SerializedName("DefinitionID")
-  private String definitionID = null;
+  @SerializedName("definitionid")
+  private String definitionid = null;
 
-  @SerializedName("Preferred")
+  @SerializedName("preferred")
   private Boolean preferred = null;
 
-  @SerializedName("SGlobal")
-  private Boolean sGlobal = null;
+  @SerializedName("sglobal")
+  private Boolean sglobal = null;
 
-  @SerializedName("Hash")
+  @SerializedName("hash")
   private String hash = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Userdefinedform CLSID(String CLSID) {
-    this.CLSID = CLSID;
+  public Userdefinedform displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Třída [persistentní položka]
-   * @return CLSID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Třída [persistentní položka]")
-  public String getCLSID() {
-    return CLSID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setCLSID(String CLSID) {
-    this.CLSID = CLSID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Userdefinedform id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Userdefinedform classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Userdefinedform objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Userdefinedform clsid(String clsid) {
+    this.clsid = clsid;
+    return this;
+  }
+
+   /**
+   * třída [persistentní položka]
+   * @return clsid
+  **/
+  @ApiModelProperty(example = "null", value = "třída [persistentní položka]")
+  public String getClsid() {
+    return clsid;
+  }
+
+  public void setClsid(String clsid) {
+    this.clsid = clsid;
   }
 
   public Userdefinedform system(Boolean system) {
@@ -147,10 +183,10 @@ public class Userdefinedform   {
   }
 
    /**
-   * Syst. [persistentní položka]
+   * syst. [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Syst. [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "syst. [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -165,10 +201,10 @@ public class Userdefinedform   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -183,10 +219,10 @@ public class Userdefinedform   {
   }
 
    /**
-   * Definice [persistentní položka]
+   * definice [persistentní položka]
    * @return data
   **/
-  @ApiModelProperty(example = "null", value = "Definice [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "definice [persistentní položka]")
   public byte[] getData() {
     return data;
   }
@@ -195,112 +231,112 @@ public class Userdefinedform   {
     this.data = data;
   }
 
-  public Userdefinedform sourceCode(String sourceCode) {
-    this.sourceCode = sourceCode;
+  public Userdefinedform sourcecode(String sourcecode) {
+    this.sourcecode = sourcecode;
     return this;
   }
 
    /**
-   * Zdrojový kód
-   * @return sourceCode
+   * zdrojový kód
+   * @return sourcecode
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojový kód")
-  public String getSourceCode() {
-    return sourceCode;
+  @ApiModelProperty(example = "null", value = "zdrojový kód")
+  public String getSourcecode() {
+    return sourcecode;
   }
 
-  public void setSourceCode(String sourceCode) {
-    this.sourceCode = sourceCode;
+  public void setSourcecode(String sourcecode) {
+    this.sourcecode = sourcecode;
   }
 
-  public Userdefinedform createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Userdefinedform createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Userdefinedform correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Userdefinedform correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Userdefinedform ownerID(String ownerID) {
-    this.ownerID = ownerID;
+  public Userdefinedform ownerId(String ownerId) {
+    this.ownerId = ownerId;
     return this;
   }
 
    /**
-   * Vlastník; ID objektu Uživatel [persistentní položka]
-   * @return ownerID
+   * vlastník; id objektu uživatel [persistentní položka]
+   * @return ownerId
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Uživatel [persistentní položka]")
-  public String getOwnerID() {
-    return ownerID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu uživatel [persistentní položka]")
+  public String getOwnerId() {
+    return ownerId;
   }
 
-  public void setOwnerID(String ownerID) {
-    this.ownerID = ownerID;
+  public void setOwnerId(String ownerId) {
+    this.ownerId = ownerId;
   }
 
-  public Userdefinedform cLSIDText(String cLSIDText) {
-    this.cLSIDText = cLSIDText;
+  public Userdefinedform clsidtext(String clsidtext) {
+    this.clsidtext = clsidtext;
     return this;
   }
 
    /**
-   * Třída (textově)
-   * @return cLSIDText
+   * třída (textově)
+   * @return clsidtext
   **/
-  @ApiModelProperty(example = "null", value = "Třída (textově)")
-  public String getCLSIDText() {
-    return cLSIDText;
+  @ApiModelProperty(example = "null", value = "třída (textově)")
+  public String getClsidtext() {
+    return clsidtext;
   }
 
-  public void setCLSIDText(String cLSIDText) {
-    this.cLSIDText = cLSIDText;
+  public void setClsidtext(String clsidtext) {
+    this.clsidtext = clsidtext;
   }
 
-  public Userdefinedform definitionID(String definitionID) {
-    this.definitionID = definitionID;
+  public Userdefinedform definitionid(String definitionid) {
+    this.definitionid = definitionid;
     return this;
   }
 
    /**
-   * GUID definice [persistentní položka]
-   * @return definitionID
+   * guid definice [persistentní položka]
+   * @return definitionid
   **/
-  @ApiModelProperty(example = "null", value = "GUID definice [persistentní položka]")
-  public String getDefinitionID() {
-    return definitionID;
+  @ApiModelProperty(example = "null", value = "guid definice [persistentní položka]")
+  public String getDefinitionid() {
+    return definitionid;
   }
 
-  public void setDefinitionID(String definitionID) {
-    this.definitionID = definitionID;
+  public void setDefinitionid(String definitionid) {
+    this.definitionid = definitionid;
   }
 
   public Userdefinedform preferred(Boolean preferred) {
@@ -309,10 +345,10 @@ public class Userdefinedform   {
   }
 
    /**
-   * Preferovaný [persistentní položka]
+   * preferovaný [persistentní položka]
    * @return preferred
   **/
-  @ApiModelProperty(example = "null", value = "Preferovaný [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "preferovaný [persistentní položka]")
   public Boolean getPreferred() {
     return preferred;
   }
@@ -321,22 +357,22 @@ public class Userdefinedform   {
     this.preferred = preferred;
   }
 
-  public Userdefinedform sGlobal(Boolean sGlobal) {
-    this.sGlobal = sGlobal;
+  public Userdefinedform sglobal(Boolean sglobal) {
+    this.sglobal = sglobal;
     return this;
   }
 
    /**
-   * Globální
-   * @return sGlobal
+   * globální
+   * @return sglobal
   **/
-  @ApiModelProperty(example = "null", value = "Globální")
-  public Boolean getSGlobal() {
-    return sGlobal;
+  @ApiModelProperty(example = "null", value = "globální")
+  public Boolean getSglobal() {
+    return sglobal;
   }
 
-  public void setSGlobal(Boolean sGlobal) {
-    this.sGlobal = sGlobal;
+  public void setSglobal(Boolean sglobal) {
+    this.sglobal = sglobal;
   }
 
   public Userdefinedform hash(String hash) {
@@ -345,10 +381,10 @@ public class Userdefinedform   {
   }
 
    /**
-   * Hash [persistentní položka]
+   * hash [persistentní položka]
    * @return hash
   **/
-  @ApiModelProperty(example = "null", value = "Hash [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "hash [persistentní položka]")
   public String getHash() {
     return hash;
   }
@@ -367,28 +403,28 @@ public class Userdefinedform   {
       return false;
     }
     Userdefinedform userdefinedform = (Userdefinedform) o;
-    return Objects.equals(this.displayName, userdefinedform.displayName) &&
-        Objects.equals(this.ID, userdefinedform.ID) &&
-        Objects.equals(this.classID, userdefinedform.classID) &&
-        Objects.equals(this.objVersion, userdefinedform.objVersion) &&
-        Objects.equals(this.CLSID, userdefinedform.CLSID) &&
+    return Objects.equals(this.displayname, userdefinedform.displayname) &&
+        Objects.equals(this.id, userdefinedform.id) &&
+        Objects.equals(this.classid, userdefinedform.classid) &&
+        Objects.equals(this.objversion, userdefinedform.objversion) &&
+        Objects.equals(this.clsid, userdefinedform.clsid) &&
         Objects.equals(this.system, userdefinedform.system) &&
         Objects.equals(this.name, userdefinedform.name) &&
         Objects.equals(this.data, userdefinedform.data) &&
-        Objects.equals(this.sourceCode, userdefinedform.sourceCode) &&
-        Objects.equals(this.createdByID, userdefinedform.createdByID) &&
-        Objects.equals(this.correctedByID, userdefinedform.correctedByID) &&
-        Objects.equals(this.ownerID, userdefinedform.ownerID) &&
-        Objects.equals(this.cLSIDText, userdefinedform.cLSIDText) &&
-        Objects.equals(this.definitionID, userdefinedform.definitionID) &&
+        Objects.equals(this.sourcecode, userdefinedform.sourcecode) &&
+        Objects.equals(this.createdbyId, userdefinedform.createdbyId) &&
+        Objects.equals(this.correctedbyId, userdefinedform.correctedbyId) &&
+        Objects.equals(this.ownerId, userdefinedform.ownerId) &&
+        Objects.equals(this.clsidtext, userdefinedform.clsidtext) &&
+        Objects.equals(this.definitionid, userdefinedform.definitionid) &&
         Objects.equals(this.preferred, userdefinedform.preferred) &&
-        Objects.equals(this.sGlobal, userdefinedform.sGlobal) &&
+        Objects.equals(this.sglobal, userdefinedform.sglobal) &&
         Objects.equals(this.hash, userdefinedform.hash);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, CLSID, system, name, data, sourceCode, createdByID, correctedByID, ownerID, cLSIDText, definitionID, preferred, sGlobal, hash);
+    return Objects.hash(displayname, id, classid, objversion, clsid, system, name, data, sourcecode, createdbyId, correctedbyId, ownerId, clsidtext, definitionid, preferred, sglobal, hash);
   }
 
   @Override
@@ -396,22 +432,22 @@ public class Userdefinedform   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Userdefinedform {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    CLSID: ").append(toIndentedString(CLSID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    clsid: ").append(toIndentedString(clsid)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    data: ").append(toIndentedString(data)).append("\n");
-    sb.append("    sourceCode: ").append(toIndentedString(sourceCode)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    ownerID: ").append(toIndentedString(ownerID)).append("\n");
-    sb.append("    cLSIDText: ").append(toIndentedString(cLSIDText)).append("\n");
-    sb.append("    definitionID: ").append(toIndentedString(definitionID)).append("\n");
+    sb.append("    sourcecode: ").append(toIndentedString(sourcecode)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    ownerId: ").append(toIndentedString(ownerId)).append("\n");
+    sb.append("    clsidtext: ").append(toIndentedString(clsidtext)).append("\n");
+    sb.append("    definitionid: ").append(toIndentedString(definitionid)).append("\n");
     sb.append("    preferred: ").append(toIndentedString(preferred)).append("\n");
-    sb.append("    sGlobal: ").append(toIndentedString(sGlobal)).append("\n");
+    sb.append("    sglobal: ").append(toIndentedString(sglobal)).append("\n");
     sb.append("    hash: ").append(toIndentedString(hash)).append("\n");
     sb.append("}");
     return sb.toString();

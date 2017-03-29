@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,171 +34,216 @@ import java.util.Objects;
 /**
  * Assetinvlistrestriction
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Assetinvlistrestriction   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("IncludedAssetTypes")
-  private Integer includedAssetTypes = null;
+  @SerializedName("includedassettypes")
+  private Integer includedassettypes = null;
 
-  @SerializedName("Responsible_ID")
-  private String responsibleID = null;
+  @SerializedName("responsible_id")
+  private String responsibleId = null;
 
-  @SerializedName("AssetLocation_ID")
-  private String assetLocationID = null;
+  @SerializedName("assetlocation_id")
+  private String assetlocationId = null;
 
-  @SerializedName("EvidenceDivision_ID")
-  private String evidenceDivisionID = null;
+  @SerializedName("evidencedivision_id")
+  private String evidencedivisionId = null;
 
-  @SerializedName("ExpensesDivision_ID")
-  private String expensesDivisionID = null;
+  @SerializedName("expensesdivision_id")
+  private String expensesdivisionId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Inventarizační seznam majetku [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Inventarizační seznam majetku [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Assetinvlistrestriction includedAssetTypes(Integer includedAssetTypes) {
-    this.includedAssetTypes = includedAssetTypes;
+  public Assetinvlistrestriction displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Zahrnutý majetek [persistentní položka]
-   * @return includedAssetTypes
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Zahrnutý majetek [persistentní položka]")
-  public Integer getIncludedAssetTypes() {
-    return includedAssetTypes;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setIncludedAssetTypes(Integer includedAssetTypes) {
-    this.includedAssetTypes = includedAssetTypes;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Assetinvlistrestriction responsibleID(String responsibleID) {
-    this.responsibleID = responsibleID;
+  public Assetinvlistrestriction id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Odpovědná osoba; ID objektu Odpovědná osoba [persistentní položka]
-   * @return responsibleID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Odpovědná osoba; ID objektu Odpovědná osoba [persistentní položka]")
-  public String getResponsibleID() {
-    return responsibleID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setResponsibleID(String responsibleID) {
-    this.responsibleID = responsibleID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Assetinvlistrestriction assetLocationID(String assetLocationID) {
-    this.assetLocationID = assetLocationID;
+  public Assetinvlistrestriction classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Umístění; ID objektu Umístění majetku [persistentní položka]
-   * @return assetLocationID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Umístění; ID objektu Umístění majetku [persistentní položka]")
-  public String getAssetLocationID() {
-    return assetLocationID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setAssetLocationID(String assetLocationID) {
-    this.assetLocationID = assetLocationID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Assetinvlistrestriction evidenceDivisionID(String evidenceDivisionID) {
-    this.evidenceDivisionID = evidenceDivisionID;
+  public Assetinvlistrestriction objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Evidenční středisko; ID objektu Středisko [persistentní položka]
-   * @return evidenceDivisionID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Evidenční středisko; ID objektu Středisko [persistentní položka]")
-  public String getEvidenceDivisionID() {
-    return evidenceDivisionID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setEvidenceDivisionID(String evidenceDivisionID) {
-    this.evidenceDivisionID = evidenceDivisionID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Assetinvlistrestriction expensesDivisionID(String expensesDivisionID) {
-    this.expensesDivisionID = expensesDivisionID;
+  public Assetinvlistrestriction parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Nákladové středisko; ID objektu Středisko [persistentní položka]
-   * @return expensesDivisionID
+   * vlastník; id objektu inventarizační seznam majetku [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Nákladové středisko; ID objektu Středisko [persistentní položka]")
-  public String getExpensesDivisionID() {
-    return expensesDivisionID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu inventarizační seznam majetku [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setExpensesDivisionID(String expensesDivisionID) {
-    this.expensesDivisionID = expensesDivisionID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Assetinvlistrestriction includedassettypes(Integer includedassettypes) {
+    this.includedassettypes = includedassettypes;
+    return this;
+  }
+
+   /**
+   * zahrnutý majetek [persistentní položka]
+   * @return includedassettypes
+  **/
+  @ApiModelProperty(example = "null", value = "zahrnutý majetek [persistentní položka]")
+  public Integer getIncludedassettypes() {
+    return includedassettypes;
+  }
+
+  public void setIncludedassettypes(Integer includedassettypes) {
+    this.includedassettypes = includedassettypes;
+  }
+
+  public Assetinvlistrestriction responsibleId(String responsibleId) {
+    this.responsibleId = responsibleId;
+    return this;
+  }
+
+   /**
+   * odpovědná osoba; id objektu odpovědná osoba [persistentní položka]
+   * @return responsibleId
+  **/
+  @ApiModelProperty(example = "null", value = "odpovědná osoba; id objektu odpovědná osoba [persistentní položka]")
+  public String getResponsibleId() {
+    return responsibleId;
+  }
+
+  public void setResponsibleId(String responsibleId) {
+    this.responsibleId = responsibleId;
+  }
+
+  public Assetinvlistrestriction assetlocationId(String assetlocationId) {
+    this.assetlocationId = assetlocationId;
+    return this;
+  }
+
+   /**
+   * umístění; id objektu umístění majetku [persistentní položka]
+   * @return assetlocationId
+  **/
+  @ApiModelProperty(example = "null", value = "umístění; id objektu umístění majetku [persistentní položka]")
+  public String getAssetlocationId() {
+    return assetlocationId;
+  }
+
+  public void setAssetlocationId(String assetlocationId) {
+    this.assetlocationId = assetlocationId;
+  }
+
+  public Assetinvlistrestriction evidencedivisionId(String evidencedivisionId) {
+    this.evidencedivisionId = evidencedivisionId;
+    return this;
+  }
+
+   /**
+   * evidenční středisko; id objektu středisko [persistentní položka]
+   * @return evidencedivisionId
+  **/
+  @ApiModelProperty(example = "null", value = "evidenční středisko; id objektu středisko [persistentní položka]")
+  public String getEvidencedivisionId() {
+    return evidencedivisionId;
+  }
+
+  public void setEvidencedivisionId(String evidencedivisionId) {
+    this.evidencedivisionId = evidencedivisionId;
+  }
+
+  public Assetinvlistrestriction expensesdivisionId(String expensesdivisionId) {
+    this.expensesdivisionId = expensesdivisionId;
+    return this;
+  }
+
+   /**
+   * nákladové středisko; id objektu středisko [persistentní položka]
+   * @return expensesdivisionId
+  **/
+  @ApiModelProperty(example = "null", value = "nákladové středisko; id objektu středisko [persistentní položka]")
+  public String getExpensesdivisionId() {
+    return expensesdivisionId;
+  }
+
+  public void setExpensesdivisionId(String expensesdivisionId) {
+    this.expensesdivisionId = expensesdivisionId;
   }
 
 
@@ -211,21 +256,21 @@ public class Assetinvlistrestriction   {
       return false;
     }
     Assetinvlistrestriction assetinvlistrestriction = (Assetinvlistrestriction) o;
-    return Objects.equals(this.displayName, assetinvlistrestriction.displayName) &&
-        Objects.equals(this.ID, assetinvlistrestriction.ID) &&
-        Objects.equals(this.classID, assetinvlistrestriction.classID) &&
-        Objects.equals(this.objVersion, assetinvlistrestriction.objVersion) &&
-        Objects.equals(this.parentID, assetinvlistrestriction.parentID) &&
-        Objects.equals(this.includedAssetTypes, assetinvlistrestriction.includedAssetTypes) &&
-        Objects.equals(this.responsibleID, assetinvlistrestriction.responsibleID) &&
-        Objects.equals(this.assetLocationID, assetinvlistrestriction.assetLocationID) &&
-        Objects.equals(this.evidenceDivisionID, assetinvlistrestriction.evidenceDivisionID) &&
-        Objects.equals(this.expensesDivisionID, assetinvlistrestriction.expensesDivisionID);
+    return Objects.equals(this.displayname, assetinvlistrestriction.displayname) &&
+        Objects.equals(this.id, assetinvlistrestriction.id) &&
+        Objects.equals(this.classid, assetinvlistrestriction.classid) &&
+        Objects.equals(this.objversion, assetinvlistrestriction.objversion) &&
+        Objects.equals(this.parentId, assetinvlistrestriction.parentId) &&
+        Objects.equals(this.includedassettypes, assetinvlistrestriction.includedassettypes) &&
+        Objects.equals(this.responsibleId, assetinvlistrestriction.responsibleId) &&
+        Objects.equals(this.assetlocationId, assetinvlistrestriction.assetlocationId) &&
+        Objects.equals(this.evidencedivisionId, assetinvlistrestriction.evidencedivisionId) &&
+        Objects.equals(this.expensesdivisionId, assetinvlistrestriction.expensesdivisionId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, includedAssetTypes, responsibleID, assetLocationID, evidenceDivisionID, expensesDivisionID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, includedassettypes, responsibleId, assetlocationId, evidencedivisionId, expensesdivisionId);
   }
 
   @Override
@@ -233,16 +278,16 @@ public class Assetinvlistrestriction   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Assetinvlistrestriction {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    includedAssetTypes: ").append(toIndentedString(includedAssetTypes)).append("\n");
-    sb.append("    responsibleID: ").append(toIndentedString(responsibleID)).append("\n");
-    sb.append("    assetLocationID: ").append(toIndentedString(assetLocationID)).append("\n");
-    sb.append("    evidenceDivisionID: ").append(toIndentedString(evidenceDivisionID)).append("\n");
-    sb.append("    expensesDivisionID: ").append(toIndentedString(expensesDivisionID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    includedassettypes: ").append(toIndentedString(includedassettypes)).append("\n");
+    sb.append("    responsibleId: ").append(toIndentedString(responsibleId)).append("\n");
+    sb.append("    assetlocationId: ").append(toIndentedString(assetlocationId)).append("\n");
+    sb.append("    evidencedivisionId: ").append(toIndentedString(evidencedivisionId)).append("\n");
+    sb.append("    expensesdivisionId: ").append(toIndentedString(expensesdivisionId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

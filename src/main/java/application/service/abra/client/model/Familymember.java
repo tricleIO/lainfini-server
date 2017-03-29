@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,246 +35,300 @@ import java.util.Objects;
 /**
  * Familymember
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Familymember   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("LastName")
-  private String lastName = null;
+  @SerializedName("lastname")
+  private String lastname = null;
 
-  @SerializedName("FirstName")
-  private String firstName = null;
+  @SerializedName("firstname")
+  private String firstname = null;
 
-  @SerializedName("BirthNumber")
-  private String birthNumber = null;
+  @SerializedName("birthnumber")
+  private String birthnumber = null;
 
-  @SerializedName("FamilyRelationType")
-  private Integer familyRelationType = null;
+  @SerializedName("familyrelationtype")
+  private Integer familyrelationtype = null;
 
-  @SerializedName("CountOffType_ID")
-  private String countOffTypeID = null;
+  @SerializedName("countofftype_id")
+  private String countofftypeId = null;
 
-  @SerializedName("ValidFrom_ID")
-  private String validFromID = null;
+  @SerializedName("validfrom_id")
+  private String validfromId = null;
 
-  @SerializedName("ValidTo_ID")
-  private String validToID = null;
+  @SerializedName("validto_id")
+  private String validtoId = null;
 
-  @SerializedName("DateOfBirth$DATE")
-  private DateTime dateOfBirthDATE = null;
+  @SerializedName("dateofbirth$date")
+  private DateTime dateofbirthdate = null;
 
-  @SerializedName("Age")
+  @SerializedName("age")
   private Integer age = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Hlavičkový objekt [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Hlavičkový objekt [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Familymember lastName(String lastName) {
-    this.lastName = lastName;
+  public Familymember displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Příjmení [persistentní položka]
-   * @return lastName
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Příjmení [persistentní položka]")
-  public String getLastName() {
-    return lastName;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setLastName(String lastName) {
-    this.lastName = lastName;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Familymember firstName(String firstName) {
-    this.firstName = firstName;
+  public Familymember id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Křestní jméno [persistentní položka]
-   * @return firstName
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Křestní jméno [persistentní položka]")
-  public String getFirstName() {
-    return firstName;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setFirstName(String firstName) {
-    this.firstName = firstName;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Familymember birthNumber(String birthNumber) {
-    this.birthNumber = birthNumber;
+  public Familymember classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Rodné číslo [persistentní položka]
-   * @return birthNumber
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Rodné číslo [persistentní položka]")
-  public String getBirthNumber() {
-    return birthNumber;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setBirthNumber(String birthNumber) {
-    this.birthNumber = birthNumber;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Familymember familyRelationType(Integer familyRelationType) {
-    this.familyRelationType = familyRelationType;
+  public Familymember objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return familyRelationType
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Integer getFamilyRelationType() {
-    return familyRelationType;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setFamilyRelationType(Integer familyRelationType) {
-    this.familyRelationType = familyRelationType;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Familymember countOffTypeID(String countOffTypeID) {
-    this.countOffTypeID = countOffTypeID;
+  public Familymember parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Odpočet; ID objektu Typ odpočtu/slevy [persistentní položka]
-   * @return countOffTypeID
+   * vlastník; id objektu hlavičkový objekt [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Odpočet; ID objektu Typ odpočtu/slevy [persistentní položka]")
-  public String getCountOffTypeID() {
-    return countOffTypeID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu hlavičkový objekt [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setCountOffTypeID(String countOffTypeID) {
-    this.countOffTypeID = countOffTypeID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Familymember validFromID(String validFromID) {
-    this.validFromID = validFromID;
+  public Familymember lastname(String lastname) {
+    this.lastname = lastname;
     return this;
   }
 
    /**
-   * Platí od; ID objektu Mzdové období [persistentní položka]
-   * @return validFromID
+   * příjmení [persistentní položka]
+   * @return lastname
   **/
-  @ApiModelProperty(example = "null", value = "Platí od; ID objektu Mzdové období [persistentní položka]")
-  public String getValidFromID() {
-    return validFromID;
+  @ApiModelProperty(example = "null", value = "příjmení [persistentní položka]")
+  public String getLastname() {
+    return lastname;
   }
 
-  public void setValidFromID(String validFromID) {
-    this.validFromID = validFromID;
+  public void setLastname(String lastname) {
+    this.lastname = lastname;
   }
 
-  public Familymember validToID(String validToID) {
-    this.validToID = validToID;
+  public Familymember firstname(String firstname) {
+    this.firstname = firstname;
     return this;
   }
 
    /**
-   * Platí do; ID objektu Mzdové období [persistentní položka]
-   * @return validToID
+   * křestní jméno [persistentní položka]
+   * @return firstname
   **/
-  @ApiModelProperty(example = "null", value = "Platí do; ID objektu Mzdové období [persistentní položka]")
-  public String getValidToID() {
-    return validToID;
+  @ApiModelProperty(example = "null", value = "křestní jméno [persistentní položka]")
+  public String getFirstname() {
+    return firstname;
   }
 
-  public void setValidToID(String validToID) {
-    this.validToID = validToID;
+  public void setFirstname(String firstname) {
+    this.firstname = firstname;
   }
 
-  public Familymember dateOfBirthDATE(DateTime dateOfBirthDATE) {
-    this.dateOfBirthDATE = dateOfBirthDATE;
+  public Familymember birthnumber(String birthnumber) {
+    this.birthnumber = birthnumber;
     return this;
   }
 
    /**
-   * Datum narození [persistentní položka]
-   * @return dateOfBirthDATE
+   * rodné číslo [persistentní položka]
+   * @return birthnumber
   **/
-  @ApiModelProperty(example = "null", value = "Datum narození [persistentní položka]")
-  public DateTime getDateOfBirthDATE() {
-    return dateOfBirthDATE;
+  @ApiModelProperty(example = "null", value = "rodné číslo [persistentní položka]")
+  public String getBirthnumber() {
+    return birthnumber;
   }
 
-  public void setDateOfBirthDATE(DateTime dateOfBirthDATE) {
-    this.dateOfBirthDATE = dateOfBirthDATE;
+  public void setBirthnumber(String birthnumber) {
+    this.birthnumber = birthnumber;
+  }
+
+  public Familymember familyrelationtype(Integer familyrelationtype) {
+    this.familyrelationtype = familyrelationtype;
+    return this;
   }
 
    /**
-   * Věk
+   * vztah [persistentní položka]
+   * @return familyrelationtype
+  **/
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Integer getFamilyrelationtype() {
+    return familyrelationtype;
+  }
+
+  public void setFamilyrelationtype(Integer familyrelationtype) {
+    this.familyrelationtype = familyrelationtype;
+  }
+
+  public Familymember countofftypeId(String countofftypeId) {
+    this.countofftypeId = countofftypeId;
+    return this;
+  }
+
+   /**
+   * odpočet; id objektu typ odpočtu/slevy [persistentní položka]
+   * @return countofftypeId
+  **/
+  @ApiModelProperty(example = "null", value = "odpočet; id objektu typ odpočtu/slevy [persistentní položka]")
+  public String getCountofftypeId() {
+    return countofftypeId;
+  }
+
+  public void setCountofftypeId(String countofftypeId) {
+    this.countofftypeId = countofftypeId;
+  }
+
+  public Familymember validfromId(String validfromId) {
+    this.validfromId = validfromId;
+    return this;
+  }
+
+   /**
+   * platí od; id objektu mzdové období [persistentní položka]
+   * @return validfromId
+  **/
+  @ApiModelProperty(example = "null", value = "platí od; id objektu mzdové období [persistentní položka]")
+  public String getValidfromId() {
+    return validfromId;
+  }
+
+  public void setValidfromId(String validfromId) {
+    this.validfromId = validfromId;
+  }
+
+  public Familymember validtoId(String validtoId) {
+    this.validtoId = validtoId;
+    return this;
+  }
+
+   /**
+   * platí do; id objektu mzdové období [persistentní položka]
+   * @return validtoId
+  **/
+  @ApiModelProperty(example = "null", value = "platí do; id objektu mzdové období [persistentní položka]")
+  public String getValidtoId() {
+    return validtoId;
+  }
+
+  public void setValidtoId(String validtoId) {
+    this.validtoId = validtoId;
+  }
+
+  public Familymember dateofbirthdate(DateTime dateofbirthdate) {
+    this.dateofbirthdate = dateofbirthdate;
+    return this;
+  }
+
+   /**
+   * datum narození [persistentní položka]
+   * @return dateofbirthdate
+  **/
+  @ApiModelProperty(example = "null", value = "datum narození [persistentní položka]")
+  public DateTime getDateofbirthdate() {
+    return dateofbirthdate;
+  }
+
+  public void setDateofbirthdate(DateTime dateofbirthdate) {
+    this.dateofbirthdate = dateofbirthdate;
+  }
+
+  public Familymember age(Integer age) {
+    this.age = age;
+    return this;
+  }
+
+   /**
+   * věk
    * @return age
   **/
-  @ApiModelProperty(example = "null", value = "Věk")
+  @ApiModelProperty(example = "null", value = "věk")
   public Integer getAge() {
     return age;
+  }
+
+  public void setAge(Integer age) {
+    this.age = age;
   }
 
 
@@ -287,25 +341,25 @@ public class Familymember   {
       return false;
     }
     Familymember familymember = (Familymember) o;
-    return Objects.equals(this.displayName, familymember.displayName) &&
-        Objects.equals(this.ID, familymember.ID) &&
-        Objects.equals(this.classID, familymember.classID) &&
-        Objects.equals(this.objVersion, familymember.objVersion) &&
-        Objects.equals(this.parentID, familymember.parentID) &&
-        Objects.equals(this.lastName, familymember.lastName) &&
-        Objects.equals(this.firstName, familymember.firstName) &&
-        Objects.equals(this.birthNumber, familymember.birthNumber) &&
-        Objects.equals(this.familyRelationType, familymember.familyRelationType) &&
-        Objects.equals(this.countOffTypeID, familymember.countOffTypeID) &&
-        Objects.equals(this.validFromID, familymember.validFromID) &&
-        Objects.equals(this.validToID, familymember.validToID) &&
-        Objects.equals(this.dateOfBirthDATE, familymember.dateOfBirthDATE) &&
+    return Objects.equals(this.displayname, familymember.displayname) &&
+        Objects.equals(this.id, familymember.id) &&
+        Objects.equals(this.classid, familymember.classid) &&
+        Objects.equals(this.objversion, familymember.objversion) &&
+        Objects.equals(this.parentId, familymember.parentId) &&
+        Objects.equals(this.lastname, familymember.lastname) &&
+        Objects.equals(this.firstname, familymember.firstname) &&
+        Objects.equals(this.birthnumber, familymember.birthnumber) &&
+        Objects.equals(this.familyrelationtype, familymember.familyrelationtype) &&
+        Objects.equals(this.countofftypeId, familymember.countofftypeId) &&
+        Objects.equals(this.validfromId, familymember.validfromId) &&
+        Objects.equals(this.validtoId, familymember.validtoId) &&
+        Objects.equals(this.dateofbirthdate, familymember.dateofbirthdate) &&
         Objects.equals(this.age, familymember.age);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, lastName, firstName, birthNumber, familyRelationType, countOffTypeID, validFromID, validToID, dateOfBirthDATE, age);
+    return Objects.hash(displayname, id, classid, objversion, parentId, lastname, firstname, birthnumber, familyrelationtype, countofftypeId, validfromId, validtoId, dateofbirthdate, age);
   }
 
   @Override
@@ -313,19 +367,19 @@ public class Familymember   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Familymember {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    lastName: ").append(toIndentedString(lastName)).append("\n");
-    sb.append("    firstName: ").append(toIndentedString(firstName)).append("\n");
-    sb.append("    birthNumber: ").append(toIndentedString(birthNumber)).append("\n");
-    sb.append("    familyRelationType: ").append(toIndentedString(familyRelationType)).append("\n");
-    sb.append("    countOffTypeID: ").append(toIndentedString(countOffTypeID)).append("\n");
-    sb.append("    validFromID: ").append(toIndentedString(validFromID)).append("\n");
-    sb.append("    validToID: ").append(toIndentedString(validToID)).append("\n");
-    sb.append("    dateOfBirthDATE: ").append(toIndentedString(dateOfBirthDATE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    lastname: ").append(toIndentedString(lastname)).append("\n");
+    sb.append("    firstname: ").append(toIndentedString(firstname)).append("\n");
+    sb.append("    birthnumber: ").append(toIndentedString(birthnumber)).append("\n");
+    sb.append("    familyrelationtype: ").append(toIndentedString(familyrelationtype)).append("\n");
+    sb.append("    countofftypeId: ").append(toIndentedString(countofftypeId)).append("\n");
+    sb.append("    validfromId: ").append(toIndentedString(validfromId)).append("\n");
+    sb.append("    validtoId: ").append(toIndentedString(validtoId)).append("\n");
+    sb.append("    dateofbirthdate: ").append(toIndentedString(dateofbirthdate)).append("\n");
     sb.append("    age: ").append(toIndentedString(age)).append("\n");
     sb.append("}");
     return sb.toString();

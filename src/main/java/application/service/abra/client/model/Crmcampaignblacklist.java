@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,96 +35,132 @@ import java.util.Objects;
 /**
  * Crmcampaignblacklist
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Crmcampaignblacklist   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("Person_ID")
-  private String personID = null;
+  @SerializedName("person_id")
+  private String personId = null;
 
-  @SerializedName("FirmOffice_ID")
-  private String firmOfficeID = null;
+  @SerializedName("firmoffice_id")
+  private String firmofficeId = null;
 
-  @SerializedName("ProhibitionDate$DATE")
-  private DateTime prohibitionDateDATE = null;
+  @SerializedName("prohibitiondate$date")
+  private DateTime prohibitiondatedate = null;
 
-  @SerializedName("EMail")
-  private Boolean eMail = null;
+  @SerializedName("email")
+  private Boolean email = null;
 
-  @SerializedName("EMailAddress")
-  private String eMailAddress = null;
+  @SerializedName("emailaddress")
+  private String emailaddress = null;
 
-  @SerializedName("Post")
+  @SerializedName("post")
   private Boolean post = null;
 
-  @SerializedName("Personal")
+  @SerializedName("personal")
   private Boolean personal = null;
 
-  @SerializedName("Phone")
+  @SerializedName("phone")
   private Boolean phone = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Crmcampaignblacklist displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Crmcampaignblacklist id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Crmcampaignblacklist classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Crmcampaignblacklist objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Crmcampaignblacklist hidden(Boolean hidden) {
@@ -133,10 +169,10 @@ public class Crmcampaignblacklist   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -145,112 +181,112 @@ public class Crmcampaignblacklist   {
     this.hidden = hidden;
   }
 
-  public Crmcampaignblacklist firmID(String firmID) {
-    this.firmID = firmID;
+  public Crmcampaignblacklist firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Crmcampaignblacklist personID(String personID) {
-    this.personID = personID;
+  public Crmcampaignblacklist personId(String personId) {
+    this.personId = personId;
     return this;
   }
 
    /**
-   * Osoba; ID objektu Osoba [persistentní položka]
-   * @return personID
+   * osoba; id objektu osoba [persistentní položka]
+   * @return personId
   **/
-  @ApiModelProperty(example = "null", value = "Osoba; ID objektu Osoba [persistentní položka]")
-  public String getPersonID() {
-    return personID;
+  @ApiModelProperty(example = "null", value = "osoba; id objektu osoba [persistentní položka]")
+  public String getPersonId() {
+    return personId;
   }
 
-  public void setPersonID(String personID) {
-    this.personID = personID;
+  public void setPersonId(String personId) {
+    this.personId = personId;
   }
 
-  public Crmcampaignblacklist firmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public Crmcampaignblacklist firmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
     return this;
   }
 
    /**
-   * Provozovna; ID objektu Provozovna [persistentní položka]
-   * @return firmOfficeID
+   * provozovna; id objektu provozovna [persistentní položka]
+   * @return firmofficeId
   **/
-  @ApiModelProperty(example = "null", value = "Provozovna; ID objektu Provozovna [persistentní položka]")
-  public String getFirmOfficeID() {
-    return firmOfficeID;
+  @ApiModelProperty(example = "null", value = "provozovna; id objektu provozovna [persistentní položka]")
+  public String getFirmofficeId() {
+    return firmofficeId;
   }
 
-  public void setFirmOfficeID(String firmOfficeID) {
-    this.firmOfficeID = firmOfficeID;
+  public void setFirmofficeId(String firmofficeId) {
+    this.firmofficeId = firmofficeId;
   }
 
-  public Crmcampaignblacklist prohibitionDateDATE(DateTime prohibitionDateDATE) {
-    this.prohibitionDateDATE = prohibitionDateDATE;
+  public Crmcampaignblacklist prohibitiondatedate(DateTime prohibitiondatedate) {
+    this.prohibitiondatedate = prohibitiondatedate;
     return this;
   }
 
    /**
-   * Datum zakázání [persistentní položka]
-   * @return prohibitionDateDATE
+   * datum zakázání [persistentní položka]
+   * @return prohibitiondatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum zakázání [persistentní položka]")
-  public DateTime getProhibitionDateDATE() {
-    return prohibitionDateDATE;
+  @ApiModelProperty(example = "null", value = "datum zakázání [persistentní položka]")
+  public DateTime getProhibitiondatedate() {
+    return prohibitiondatedate;
   }
 
-  public void setProhibitionDateDATE(DateTime prohibitionDateDATE) {
-    this.prohibitionDateDATE = prohibitionDateDATE;
+  public void setProhibitiondatedate(DateTime prohibitiondatedate) {
+    this.prohibitiondatedate = prohibitiondatedate;
   }
 
-  public Crmcampaignblacklist eMail(Boolean eMail) {
-    this.eMail = eMail;
+  public Crmcampaignblacklist email(Boolean email) {
+    this.email = email;
     return this;
   }
 
    /**
-   * E-mailem [persistentní položka]
-   * @return eMail
+   * e-mailem [persistentní položka]
+   * @return email
   **/
-  @ApiModelProperty(example = "null", value = "E-mailem [persistentní položka]")
-  public Boolean getEMail() {
-    return eMail;
+  @ApiModelProperty(example = "null", value = "e-mailem [persistentní položka]")
+  public Boolean getEmail() {
+    return email;
   }
 
-  public void setEMail(Boolean eMail) {
-    this.eMail = eMail;
+  public void setEmail(Boolean email) {
+    this.email = email;
   }
 
-  public Crmcampaignblacklist eMailAddress(String eMailAddress) {
-    this.eMailAddress = eMailAddress;
+  public Crmcampaignblacklist emailaddress(String emailaddress) {
+    this.emailaddress = emailaddress;
     return this;
   }
 
    /**
-   * Adresa e-mailu [persistentní položka]
-   * @return eMailAddress
+   * adresa e-mailu [persistentní položka]
+   * @return emailaddress
   **/
-  @ApiModelProperty(example = "null", value = "Adresa e-mailu [persistentní položka]")
-  public String getEMailAddress() {
-    return eMailAddress;
+  @ApiModelProperty(example = "null", value = "adresa e-mailu [persistentní položka]")
+  public String getEmailaddress() {
+    return emailaddress;
   }
 
-  public void setEMailAddress(String eMailAddress) {
-    this.eMailAddress = eMailAddress;
+  public void setEmailaddress(String emailaddress) {
+    this.emailaddress = emailaddress;
   }
 
   public Crmcampaignblacklist post(Boolean post) {
@@ -259,10 +295,10 @@ public class Crmcampaignblacklist   {
   }
 
    /**
-   * Poštou [persistentní položka]
+   * poštou [persistentní položka]
    * @return post
   **/
-  @ApiModelProperty(example = "null", value = "Poštou [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poštou [persistentní položka]")
   public Boolean getPost() {
     return post;
   }
@@ -277,10 +313,10 @@ public class Crmcampaignblacklist   {
   }
 
    /**
-   * Osobně [persistentní položka]
+   * osobně [persistentní položka]
    * @return personal
   **/
-  @ApiModelProperty(example = "null", value = "Osobně [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "osobně [persistentní položka]")
   public Boolean getPersonal() {
     return personal;
   }
@@ -295,10 +331,10 @@ public class Crmcampaignblacklist   {
   }
 
    /**
-   * Telefonicky [persistentní položka]
+   * telefonicky [persistentní položka]
    * @return phone
   **/
-  @ApiModelProperty(example = "null", value = "Telefonicky [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "telefonicky [persistentní položka]")
   public Boolean getPhone() {
     return phone;
   }
@@ -307,76 +343,76 @@ public class Crmcampaignblacklist   {
     this.phone = phone;
   }
 
-  public Crmcampaignblacklist divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Crmcampaignblacklist divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Crmcampaignblacklist busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Crmcampaignblacklist busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Crmcampaignblacklist busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Crmcampaignblacklist bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obch. případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obch. případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obch. případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obch. případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Crmcampaignblacklist busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Crmcampaignblacklist busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
 
@@ -389,29 +425,29 @@ public class Crmcampaignblacklist   {
       return false;
     }
     Crmcampaignblacklist crmcampaignblacklist = (Crmcampaignblacklist) o;
-    return Objects.equals(this.displayName, crmcampaignblacklist.displayName) &&
-        Objects.equals(this.ID, crmcampaignblacklist.ID) &&
-        Objects.equals(this.classID, crmcampaignblacklist.classID) &&
-        Objects.equals(this.objVersion, crmcampaignblacklist.objVersion) &&
+    return Objects.equals(this.displayname, crmcampaignblacklist.displayname) &&
+        Objects.equals(this.id, crmcampaignblacklist.id) &&
+        Objects.equals(this.classid, crmcampaignblacklist.classid) &&
+        Objects.equals(this.objversion, crmcampaignblacklist.objversion) &&
         Objects.equals(this.hidden, crmcampaignblacklist.hidden) &&
-        Objects.equals(this.firmID, crmcampaignblacklist.firmID) &&
-        Objects.equals(this.personID, crmcampaignblacklist.personID) &&
-        Objects.equals(this.firmOfficeID, crmcampaignblacklist.firmOfficeID) &&
-        Objects.equals(this.prohibitionDateDATE, crmcampaignblacklist.prohibitionDateDATE) &&
-        Objects.equals(this.eMail, crmcampaignblacklist.eMail) &&
-        Objects.equals(this.eMailAddress, crmcampaignblacklist.eMailAddress) &&
+        Objects.equals(this.firmId, crmcampaignblacklist.firmId) &&
+        Objects.equals(this.personId, crmcampaignblacklist.personId) &&
+        Objects.equals(this.firmofficeId, crmcampaignblacklist.firmofficeId) &&
+        Objects.equals(this.prohibitiondatedate, crmcampaignblacklist.prohibitiondatedate) &&
+        Objects.equals(this.email, crmcampaignblacklist.email) &&
+        Objects.equals(this.emailaddress, crmcampaignblacklist.emailaddress) &&
         Objects.equals(this.post, crmcampaignblacklist.post) &&
         Objects.equals(this.personal, crmcampaignblacklist.personal) &&
         Objects.equals(this.phone, crmcampaignblacklist.phone) &&
-        Objects.equals(this.divisionID, crmcampaignblacklist.divisionID) &&
-        Objects.equals(this.busOrderID, crmcampaignblacklist.busOrderID) &&
-        Objects.equals(this.busTransactionID, crmcampaignblacklist.busTransactionID) &&
-        Objects.equals(this.busProjectID, crmcampaignblacklist.busProjectID);
+        Objects.equals(this.divisionId, crmcampaignblacklist.divisionId) &&
+        Objects.equals(this.busorderId, crmcampaignblacklist.busorderId) &&
+        Objects.equals(this.bustransactionId, crmcampaignblacklist.bustransactionId) &&
+        Objects.equals(this.busprojectId, crmcampaignblacklist.busprojectId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, firmID, personID, firmOfficeID, prohibitionDateDATE, eMail, eMailAddress, post, personal, phone, divisionID, busOrderID, busTransactionID, busProjectID);
+    return Objects.hash(displayname, id, classid, objversion, hidden, firmId, personId, firmofficeId, prohibitiondatedate, email, emailaddress, post, personal, phone, divisionId, busorderId, bustransactionId, busprojectId);
   }
 
   @Override
@@ -419,24 +455,24 @@ public class Crmcampaignblacklist   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Crmcampaignblacklist {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
-    sb.append("    firmOfficeID: ").append(toIndentedString(firmOfficeID)).append("\n");
-    sb.append("    prohibitionDateDATE: ").append(toIndentedString(prohibitionDateDATE)).append("\n");
-    sb.append("    eMail: ").append(toIndentedString(eMail)).append("\n");
-    sb.append("    eMailAddress: ").append(toIndentedString(eMailAddress)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
+    sb.append("    firmofficeId: ").append(toIndentedString(firmofficeId)).append("\n");
+    sb.append("    prohibitiondatedate: ").append(toIndentedString(prohibitiondatedate)).append("\n");
+    sb.append("    email: ").append(toIndentedString(email)).append("\n");
+    sb.append("    emailaddress: ").append(toIndentedString(emailaddress)).append("\n");
     sb.append("    post: ").append(toIndentedString(post)).append("\n");
     sb.append("    personal: ").append(toIndentedString(personal)).append("\n");
     sb.append("    phone: ").append(toIndentedString(phone)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,120 +35,156 @@ import java.util.Objects;
 /**
  * Wlworker
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wlworker   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("DateOfChange")
-  private DateTime dateOfChange = null;
+  @SerializedName("dateofchange")
+  private DateTime dateofchange = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Person_ID")
-  private String personID = null;
+  @SerializedName("person_id")
+  private String personId = null;
 
-  @SerializedName("Superior_ID")
-  private String superiorID = null;
+  @SerializedName("superior_id")
+  private String superiorId = null;
 
-  @SerializedName("WorkingRelation_ID")
-  private String workingRelationID = null;
+  @SerializedName("workingrelation_id")
+  private String workingrelationId = null;
 
-  @SerializedName("ValidFrom$DATE")
-  private DateTime validFromDATE = null;
+  @SerializedName("validfrom$date")
+  private DateTime validfromdate = null;
 
-  @SerializedName("ValidTo$DATE")
-  private DateTime validToDATE = null;
+  @SerializedName("validto$date")
+  private DateTime validtodate = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("ExternalID")
-  private String externalID = null;
+  @SerializedName("externalid")
+  private String externalid = null;
 
-  @SerializedName("PersonName")
-  private String personName = null;
+  @SerializedName("personname")
+  private String personname = null;
 
-  @SerializedName("SuperiorName")
-  private String superiorName = null;
+  @SerializedName("superiorname")
+  private String superiorname = null;
 
-  @SerializedName("PersonalNumber")
-  private String personalNumber = null;
+  @SerializedName("personalnumber")
+  private String personalnumber = null;
 
-  @SerializedName("SecurityUser_ID")
-  private String securityUserID = null;
+  @SerializedName("securityuser_id")
+  private String securityuserId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-  public Wlworker dateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public Wlworker displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum změny
-   * @return dateOfChange
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum změny")
-  public DateTime getDateOfChange() {
-    return dateOfChange;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  public Wlworker id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wlworker dateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+    return this;
+  }
+
+   /**
+   * datum změny
+   * @return dateofchange
+  **/
+  @ApiModelProperty(example = "null", value = "datum změny")
+  public DateTime getDateofchange() {
+    return dateofchange;
+  }
+
+  public void setDateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+  }
+
+  public Wlworker classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wlworker objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Wlworker hidden(Boolean hidden) {
@@ -157,10 +193,10 @@ public class Wlworker   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -169,256 +205,256 @@ public class Wlworker   {
     this.hidden = hidden;
   }
 
-  public Wlworker personID(String personID) {
-    this.personID = personID;
+  public Wlworker personId(String personId) {
+    this.personId = personId;
     return this;
   }
 
    /**
-   * Osoba; ID objektu Osoba [persistentní položka]
-   * @return personID
+   * osoba; id objektu osoba [persistentní položka]
+   * @return personId
   **/
-  @ApiModelProperty(example = "null", value = "Osoba; ID objektu Osoba [persistentní položka]")
-  public String getPersonID() {
-    return personID;
+  @ApiModelProperty(example = "null", value = "osoba; id objektu osoba [persistentní položka]")
+  public String getPersonId() {
+    return personId;
   }
 
-  public void setPersonID(String personID) {
-    this.personID = personID;
+  public void setPersonId(String personId) {
+    this.personId = personId;
   }
 
-  public Wlworker superiorID(String superiorID) {
-    this.superiorID = superiorID;
+  public Wlworker superiorId(String superiorId) {
+    this.superiorId = superiorId;
     return this;
   }
 
    /**
-   * Nadřízený pracovník; ID objektu Docházka - pracovníci [persistentní položka]
-   * @return superiorID
+   * nadřízený pracovník; id objektu docházka - pracovníci [persistentní položka]
+   * @return superiorId
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízený pracovník; ID objektu Docházka - pracovníci [persistentní položka]")
-  public String getSuperiorID() {
-    return superiorID;
+  @ApiModelProperty(example = "null", value = "nadřízený pracovník; id objektu docházka - pracovníci [persistentní položka]")
+  public String getSuperiorId() {
+    return superiorId;
   }
 
-  public void setSuperiorID(String superiorID) {
-    this.superiorID = superiorID;
+  public void setSuperiorId(String superiorId) {
+    this.superiorId = superiorId;
   }
 
-  public Wlworker workingRelationID(String workingRelationID) {
-    this.workingRelationID = workingRelationID;
+  public Wlworker workingrelationId(String workingrelationId) {
+    this.workingrelationId = workingrelationId;
     return this;
   }
 
    /**
-   * Pracovní poměr; ID objektu Pracovní poměr [persistentní položka]
-   * @return workingRelationID
+   * pracovní poměr; id objektu pracovní poměr [persistentní položka]
+   * @return workingrelationId
   **/
-  @ApiModelProperty(example = "null", value = "Pracovní poměr; ID objektu Pracovní poměr [persistentní položka]")
-  public String getWorkingRelationID() {
-    return workingRelationID;
+  @ApiModelProperty(example = "null", value = "pracovní poměr; id objektu pracovní poměr [persistentní položka]")
+  public String getWorkingrelationId() {
+    return workingrelationId;
   }
 
-  public void setWorkingRelationID(String workingRelationID) {
-    this.workingRelationID = workingRelationID;
+  public void setWorkingrelationId(String workingrelationId) {
+    this.workingrelationId = workingrelationId;
   }
 
-  public Wlworker validFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public Wlworker validfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
     return this;
   }
 
    /**
-   * Platí od [persistentní položka]
-   * @return validFromDATE
+   * platí od [persistentní položka]
+   * @return validfromdate
   **/
-  @ApiModelProperty(example = "null", value = "Platí od [persistentní položka]")
-  public DateTime getValidFromDATE() {
-    return validFromDATE;
+  @ApiModelProperty(example = "null", value = "platí od [persistentní položka]")
+  public DateTime getValidfromdate() {
+    return validfromdate;
   }
 
-  public void setValidFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public void setValidfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
   }
 
-  public Wlworker validToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public Wlworker validtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
     return this;
   }
 
    /**
-   * Platí do [persistentní položka]
-   * @return validToDATE
+   * platí do [persistentní položka]
+   * @return validtodate
   **/
-  @ApiModelProperty(example = "null", value = "Platí do [persistentní položka]")
-  public DateTime getValidToDATE() {
-    return validToDATE;
+  @ApiModelProperty(example = "null", value = "platí do [persistentní položka]")
+  public DateTime getValidtodate() {
+    return validtodate;
   }
 
-  public void setValidToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public void setValidtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
   }
 
-  public Wlworker divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Wlworker divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Wlworker busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Wlworker busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Wlworker busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Wlworker bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obchodní případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obchodní případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obchodní případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obchodní případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Wlworker busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Wlworker busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Wlworker externalID(String externalID) {
-    this.externalID = externalID;
+  public Wlworker externalid(String externalid) {
+    this.externalid = externalid;
     return this;
   }
 
    /**
-   * Externí identifikátor [persistentní položka]
-   * @return externalID
+   * externí identifikátor [persistentní položka]
+   * @return externalid
   **/
-  @ApiModelProperty(example = "null", value = "Externí identifikátor [persistentní položka]")
-  public String getExternalID() {
-    return externalID;
+  @ApiModelProperty(example = "null", value = "externí identifikátor [persistentní položka]")
+  public String getExternalid() {
+    return externalid;
   }
 
-  public void setExternalID(String externalID) {
-    this.externalID = externalID;
+  public void setExternalid(String externalid) {
+    this.externalid = externalid;
   }
 
-  public Wlworker personName(String personName) {
-    this.personName = personName;
+  public Wlworker personname(String personname) {
+    this.personname = personname;
     return this;
   }
 
    /**
-   * Jméno pracovníka
-   * @return personName
+   * jméno pracovníka
+   * @return personname
   **/
-  @ApiModelProperty(example = "null", value = "Jméno pracovníka")
-  public String getPersonName() {
-    return personName;
+  @ApiModelProperty(example = "null", value = "jméno pracovníka")
+  public String getPersonname() {
+    return personname;
   }
 
-  public void setPersonName(String personName) {
-    this.personName = personName;
+  public void setPersonname(String personname) {
+    this.personname = personname;
   }
 
-  public Wlworker superiorName(String superiorName) {
-    this.superiorName = superiorName;
+  public Wlworker superiorname(String superiorname) {
+    this.superiorname = superiorname;
     return this;
   }
 
    /**
-   * Jméno nadříz. pracovníka
-   * @return superiorName
+   * jméno nadříz. pracovníka
+   * @return superiorname
   **/
-  @ApiModelProperty(example = "null", value = "Jméno nadříz. pracovníka")
-  public String getSuperiorName() {
-    return superiorName;
+  @ApiModelProperty(example = "null", value = "jméno nadříz. pracovníka")
+  public String getSuperiorname() {
+    return superiorname;
   }
 
-  public void setSuperiorName(String superiorName) {
-    this.superiorName = superiorName;
+  public void setSuperiorname(String superiorname) {
+    this.superiorname = superiorname;
   }
 
-  public Wlworker personalNumber(String personalNumber) {
-    this.personalNumber = personalNumber;
+  public Wlworker personalnumber(String personalnumber) {
+    this.personalnumber = personalnumber;
     return this;
   }
 
    /**
    * Číslo pracovníka
-   * @return personalNumber
+   * @return personalnumber
   **/
   @ApiModelProperty(example = "null", value = "Číslo pracovníka")
-  public String getPersonalNumber() {
-    return personalNumber;
+  public String getPersonalnumber() {
+    return personalnumber;
   }
 
-  public void setPersonalNumber(String personalNumber) {
-    this.personalNumber = personalNumber;
+  public void setPersonalnumber(String personalnumber) {
+    this.personalnumber = personalnumber;
   }
 
-  public Wlworker securityUserID(String securityUserID) {
-    this.securityUserID = securityUserID;
+  public Wlworker securityuserId(String securityuserId) {
+    this.securityuserId = securityuserId;
     return this;
   }
 
    /**
-   * Uživatel; ID objektu Uživatel [persistentní položka]
-   * @return securityUserID
+   * uživatel; id objektu uživatel [persistentní položka]
+   * @return securityuserId
   **/
-  @ApiModelProperty(example = "null", value = "Uživatel; ID objektu Uživatel [persistentní položka]")
-  public String getSecurityUserID() {
-    return securityUserID;
+  @ApiModelProperty(example = "null", value = "uživatel; id objektu uživatel [persistentní položka]")
+  public String getSecurityuserId() {
+    return securityuserId;
   }
 
-  public void setSecurityUserID(String securityUserID) {
-    this.securityUserID = securityUserID;
+  public void setSecurityuserId(String securityuserId) {
+    this.securityuserId = securityuserId;
   }
 
 
@@ -431,31 +467,31 @@ public class Wlworker   {
       return false;
     }
     Wlworker wlworker = (Wlworker) o;
-    return Objects.equals(this.displayName, wlworker.displayName) &&
-        Objects.equals(this.ID, wlworker.ID) &&
-        Objects.equals(this.dateOfChange, wlworker.dateOfChange) &&
-        Objects.equals(this.classID, wlworker.classID) &&
-        Objects.equals(this.objVersion, wlworker.objVersion) &&
+    return Objects.equals(this.displayname, wlworker.displayname) &&
+        Objects.equals(this.id, wlworker.id) &&
+        Objects.equals(this.dateofchange, wlworker.dateofchange) &&
+        Objects.equals(this.classid, wlworker.classid) &&
+        Objects.equals(this.objversion, wlworker.objversion) &&
         Objects.equals(this.hidden, wlworker.hidden) &&
-        Objects.equals(this.personID, wlworker.personID) &&
-        Objects.equals(this.superiorID, wlworker.superiorID) &&
-        Objects.equals(this.workingRelationID, wlworker.workingRelationID) &&
-        Objects.equals(this.validFromDATE, wlworker.validFromDATE) &&
-        Objects.equals(this.validToDATE, wlworker.validToDATE) &&
-        Objects.equals(this.divisionID, wlworker.divisionID) &&
-        Objects.equals(this.busOrderID, wlworker.busOrderID) &&
-        Objects.equals(this.busTransactionID, wlworker.busTransactionID) &&
-        Objects.equals(this.busProjectID, wlworker.busProjectID) &&
-        Objects.equals(this.externalID, wlworker.externalID) &&
-        Objects.equals(this.personName, wlworker.personName) &&
-        Objects.equals(this.superiorName, wlworker.superiorName) &&
-        Objects.equals(this.personalNumber, wlworker.personalNumber) &&
-        Objects.equals(this.securityUserID, wlworker.securityUserID);
+        Objects.equals(this.personId, wlworker.personId) &&
+        Objects.equals(this.superiorId, wlworker.superiorId) &&
+        Objects.equals(this.workingrelationId, wlworker.workingrelationId) &&
+        Objects.equals(this.validfromdate, wlworker.validfromdate) &&
+        Objects.equals(this.validtodate, wlworker.validtodate) &&
+        Objects.equals(this.divisionId, wlworker.divisionId) &&
+        Objects.equals(this.busorderId, wlworker.busorderId) &&
+        Objects.equals(this.bustransactionId, wlworker.bustransactionId) &&
+        Objects.equals(this.busprojectId, wlworker.busprojectId) &&
+        Objects.equals(this.externalid, wlworker.externalid) &&
+        Objects.equals(this.personname, wlworker.personname) &&
+        Objects.equals(this.superiorname, wlworker.superiorname) &&
+        Objects.equals(this.personalnumber, wlworker.personalnumber) &&
+        Objects.equals(this.securityuserId, wlworker.securityuserId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, dateOfChange, classID, objVersion, hidden, personID, superiorID, workingRelationID, validFromDATE, validToDATE, divisionID, busOrderID, busTransactionID, busProjectID, externalID, personName, superiorName, personalNumber, securityUserID);
+    return Objects.hash(displayname, id, dateofchange, classid, objversion, hidden, personId, superiorId, workingrelationId, validfromdate, validtodate, divisionId, busorderId, bustransactionId, busprojectId, externalid, personname, superiorname, personalnumber, securityuserId);
   }
 
   @Override
@@ -463,26 +499,26 @@ public class Wlworker   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wlworker {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    dateOfChange: ").append(toIndentedString(dateOfChange)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    dateofchange: ").append(toIndentedString(dateofchange)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
-    sb.append("    superiorID: ").append(toIndentedString(superiorID)).append("\n");
-    sb.append("    workingRelationID: ").append(toIndentedString(workingRelationID)).append("\n");
-    sb.append("    validFromDATE: ").append(toIndentedString(validFromDATE)).append("\n");
-    sb.append("    validToDATE: ").append(toIndentedString(validToDATE)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    externalID: ").append(toIndentedString(externalID)).append("\n");
-    sb.append("    personName: ").append(toIndentedString(personName)).append("\n");
-    sb.append("    superiorName: ").append(toIndentedString(superiorName)).append("\n");
-    sb.append("    personalNumber: ").append(toIndentedString(personalNumber)).append("\n");
-    sb.append("    securityUserID: ").append(toIndentedString(securityUserID)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
+    sb.append("    superiorId: ").append(toIndentedString(superiorId)).append("\n");
+    sb.append("    workingrelationId: ").append(toIndentedString(workingrelationId)).append("\n");
+    sb.append("    validfromdate: ").append(toIndentedString(validfromdate)).append("\n");
+    sb.append("    validtodate: ").append(toIndentedString(validtodate)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    externalid: ").append(toIndentedString(externalid)).append("\n");
+    sb.append("    personname: ").append(toIndentedString(personname)).append("\n");
+    sb.append("    superiorname: ").append(toIndentedString(superiorname)).append("\n");
+    sb.append("    personalnumber: ").append(toIndentedString(personalnumber)).append("\n");
+    sb.append("    securityuserId: ").append(toIndentedString(securityuserId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

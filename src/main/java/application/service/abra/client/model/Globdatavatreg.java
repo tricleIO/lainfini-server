@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,129 +35,174 @@ import java.util.Objects;
 /**
  * Globdatavatreg
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Globdatavatreg   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("DateOfChange$DATE")
-  private DateTime dateOfChangeDATE = null;
+  @SerializedName("dateofchange$date")
+  private DateTime dateofchangedate = null;
 
-  @SerializedName("VATIdentNumber")
-  private String vATIdentNumber = null;
+  @SerializedName("vatidentnumber")
+  private String vatidentnumber = null;
 
-  @SerializedName("VATByPayment")
-  private Boolean vATByPayment = null;
+  @SerializedName("vatbypayment")
+  private Boolean vatbypayment = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Globální data [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Globální data [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Globdatavatreg dateOfChangeDATE(DateTime dateOfChangeDATE) {
-    this.dateOfChangeDATE = dateOfChangeDATE;
+  public Globdatavatreg displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum změny [persistentní položka]
-   * @return dateOfChangeDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum změny [persistentní položka]")
-  public DateTime getDateOfChangeDATE() {
-    return dateOfChangeDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateOfChangeDATE(DateTime dateOfChangeDATE) {
-    this.dateOfChangeDATE = dateOfChangeDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Globdatavatreg vATIdentNumber(String vATIdentNumber) {
-    this.vATIdentNumber = vATIdentNumber;
+  public Globdatavatreg id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * DIČ [persistentní položka]
-   * @return vATIdentNumber
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "DIČ [persistentní položka]")
-  public String getVATIdentNumber() {
-    return vATIdentNumber;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setVATIdentNumber(String vATIdentNumber) {
-    this.vATIdentNumber = vATIdentNumber;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Globdatavatreg vATByPayment(Boolean vATByPayment) {
-    this.vATByPayment = vATByPayment;
+  public Globdatavatreg classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Uplatnění DPH na základě přijetí platby [persistentní položka]
-   * @return vATByPayment
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Uplatnění DPH na základě přijetí platby [persistentní položka]")
-  public Boolean getVATByPayment() {
-    return vATByPayment;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setVATByPayment(Boolean vATByPayment) {
-    this.vATByPayment = vATByPayment;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Globdatavatreg objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Globdatavatreg parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu globální data [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu globální data [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Globdatavatreg dateofchangedate(DateTime dateofchangedate) {
+    this.dateofchangedate = dateofchangedate;
+    return this;
+  }
+
+   /**
+   * datum změny [persistentní položka]
+   * @return dateofchangedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum změny [persistentní položka]")
+  public DateTime getDateofchangedate() {
+    return dateofchangedate;
+  }
+
+  public void setDateofchangedate(DateTime dateofchangedate) {
+    this.dateofchangedate = dateofchangedate;
+  }
+
+  public Globdatavatreg vatidentnumber(String vatidentnumber) {
+    this.vatidentnumber = vatidentnumber;
+    return this;
+  }
+
+   /**
+   * diČ [persistentní položka]
+   * @return vatidentnumber
+  **/
+  @ApiModelProperty(example = "null", value = "diČ [persistentní položka]")
+  public String getVatidentnumber() {
+    return vatidentnumber;
+  }
+
+  public void setVatidentnumber(String vatidentnumber) {
+    this.vatidentnumber = vatidentnumber;
+  }
+
+  public Globdatavatreg vatbypayment(Boolean vatbypayment) {
+    this.vatbypayment = vatbypayment;
+    return this;
+  }
+
+   /**
+   * uplatnění dph na základě přijetí platby [persistentní položka]
+   * @return vatbypayment
+  **/
+  @ApiModelProperty(example = "null", value = "uplatnění dph na základě přijetí platby [persistentní položka]")
+  public Boolean getVatbypayment() {
+    return vatbypayment;
+  }
+
+  public void setVatbypayment(Boolean vatbypayment) {
+    this.vatbypayment = vatbypayment;
   }
 
 
@@ -170,19 +215,19 @@ public class Globdatavatreg   {
       return false;
     }
     Globdatavatreg globdatavatreg = (Globdatavatreg) o;
-    return Objects.equals(this.displayName, globdatavatreg.displayName) &&
-        Objects.equals(this.ID, globdatavatreg.ID) &&
-        Objects.equals(this.classID, globdatavatreg.classID) &&
-        Objects.equals(this.objVersion, globdatavatreg.objVersion) &&
-        Objects.equals(this.parentID, globdatavatreg.parentID) &&
-        Objects.equals(this.dateOfChangeDATE, globdatavatreg.dateOfChangeDATE) &&
-        Objects.equals(this.vATIdentNumber, globdatavatreg.vATIdentNumber) &&
-        Objects.equals(this.vATByPayment, globdatavatreg.vATByPayment);
+    return Objects.equals(this.displayname, globdatavatreg.displayname) &&
+        Objects.equals(this.id, globdatavatreg.id) &&
+        Objects.equals(this.classid, globdatavatreg.classid) &&
+        Objects.equals(this.objversion, globdatavatreg.objversion) &&
+        Objects.equals(this.parentId, globdatavatreg.parentId) &&
+        Objects.equals(this.dateofchangedate, globdatavatreg.dateofchangedate) &&
+        Objects.equals(this.vatidentnumber, globdatavatreg.vatidentnumber) &&
+        Objects.equals(this.vatbypayment, globdatavatreg.vatbypayment);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, dateOfChangeDATE, vATIdentNumber, vATByPayment);
+    return Objects.hash(displayname, id, classid, objversion, parentId, dateofchangedate, vatidentnumber, vatbypayment);
   }
 
   @Override
@@ -190,14 +235,14 @@ public class Globdatavatreg   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Globdatavatreg {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    dateOfChangeDATE: ").append(toIndentedString(dateOfChangeDATE)).append("\n");
-    sb.append("    vATIdentNumber: ").append(toIndentedString(vATIdentNumber)).append("\n");
-    sb.append("    vATByPayment: ").append(toIndentedString(vATByPayment)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    dateofchangedate: ").append(toIndentedString(dateofchangedate)).append("\n");
+    sb.append("    vatidentnumber: ").append(toIndentedString(vatidentnumber)).append("\n");
+    sb.append("    vatbypayment: ").append(toIndentedString(vatbypayment)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,114 +37,150 @@ import java.util.Objects;
 /**
  * Plmworkplace
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmworkplace   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("DateOfChange")
-  private DateTime dateOfChange = null;
+  @SerializedName("dateofchange")
+  private DateTime dateofchange = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("HourlyRate")
-  private Double hourlyRate = null;
+  @SerializedName("hourlyrate")
+  private Double hourlyrate = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("Capacity")
+  @SerializedName("capacity")
   private Double capacity = null;
 
-  @SerializedName("BatchBuffer")
-  private Integer batchBuffer = null;
+  @SerializedName("batchbuffer")
+  private Integer batchbuffer = null;
 
-  @SerializedName("BatchSize")
-  private Double batchSize = null;
+  @SerializedName("batchsize")
+  private Double batchsize = null;
 
-  @SerializedName("MachineCount")
-  private Double machineCount = null;
+  @SerializedName("machinecount")
+  private Double machinecount = null;
 
-  @SerializedName("ShiftCalendar_ID")
-  private String shiftCalendarID = null;
+  @SerializedName("shiftcalendar_id")
+  private String shiftcalendarId = null;
 
-  @SerializedName("WorkPlaceShiftTypes")
-  private List<Plmworkplaceshifttype> workPlaceShiftTypes = new ArrayList<Plmworkplaceshifttype>();
+  @SerializedName("workplaceshifttypes")
+  private List<Plmworkplaceshifttype> workplaceshifttypes = new ArrayList<Plmworkplaceshifttype>();
 
-  @SerializedName("CRPShow")
-  private Boolean cRPShow = null;
+  @SerializedName("crpshow")
+  private Boolean crpshow = null;
 
-  @SerializedName("CRPGrain")
-  private Integer cRPGrain = null;
+  @SerializedName("crpgrain")
+  private Integer crpgrain = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-  public Plmworkplace dateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public Plmworkplace displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum změny
-   * @return dateOfChange
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum změny")
-  public DateTime getDateOfChange() {
-    return dateOfChange;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  public Plmworkplace id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmworkplace dateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+    return this;
+  }
+
+   /**
+   * datum změny
+   * @return dateofchange
+  **/
+  @ApiModelProperty(example = "null", value = "datum změny")
+  public DateTime getDateofchange() {
+    return dateofchange;
+  }
+
+  public void setDateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+  }
+
+  public Plmworkplace classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmworkplace objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Plmworkplace hidden(Boolean hidden) {
@@ -153,10 +189,10 @@ public class Plmworkplace   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -171,10 +207,10 @@ public class Plmworkplace   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -189,10 +225,10 @@ public class Plmworkplace   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -201,40 +237,40 @@ public class Plmworkplace   {
     this.name = name;
   }
 
-  public Plmworkplace hourlyRate(Double hourlyRate) {
-    this.hourlyRate = hourlyRate;
+  public Plmworkplace hourlyrate(Double hourlyrate) {
+    this.hourlyrate = hourlyrate;
     return this;
   }
 
    /**
-   * Hod. sazba [persistentní položka]
-   * @return hourlyRate
+   * hod. sazba [persistentní položka]
+   * @return hourlyrate
   **/
-  @ApiModelProperty(example = "null", value = "Hod. sazba [persistentní položka]")
-  public Double getHourlyRate() {
-    return hourlyRate;
+  @ApiModelProperty(example = "null", value = "hod. sazba [persistentní položka]")
+  public Double getHourlyrate() {
+    return hourlyrate;
   }
 
-  public void setHourlyRate(Double hourlyRate) {
-    this.hourlyRate = hourlyRate;
+  public void setHourlyrate(Double hourlyrate) {
+    this.hourlyrate = hourlyrate;
   }
 
-  public Plmworkplace divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Plmworkplace divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
   public Plmworkplace capacity(Double capacity) {
@@ -243,10 +279,10 @@ public class Plmworkplace   {
   }
 
    /**
-   * Kapacita [persistentní položka]
+   * kapacita [persistentní položka]
    * @return capacity
   **/
-  @ApiModelProperty(example = "null", value = "Kapacita [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kapacita [persistentní položka]")
   public Double getCapacity() {
     return capacity;
   }
@@ -255,135 +291,135 @@ public class Plmworkplace   {
     this.capacity = capacity;
   }
 
-  public Plmworkplace batchBuffer(Integer batchBuffer) {
-    this.batchBuffer = batchBuffer;
+  public Plmworkplace batchbuffer(Integer batchbuffer) {
+    this.batchbuffer = batchbuffer;
     return this;
   }
 
    /**
-   * Zásobník dávek [persistentní položka]
-   * @return batchBuffer
+   * zásobník dávek [persistentní položka]
+   * @return batchbuffer
   **/
-  @ApiModelProperty(example = "null", value = "Zásobník dávek [persistentní položka]")
-  public Integer getBatchBuffer() {
-    return batchBuffer;
+  @ApiModelProperty(example = "null", value = "zásobník dávek [persistentní položka]")
+  public Integer getBatchbuffer() {
+    return batchbuffer;
   }
 
-  public void setBatchBuffer(Integer batchBuffer) {
-    this.batchBuffer = batchBuffer;
+  public void setBatchbuffer(Integer batchbuffer) {
+    this.batchbuffer = batchbuffer;
   }
 
-  public Plmworkplace batchSize(Double batchSize) {
-    this.batchSize = batchSize;
+  public Plmworkplace batchsize(Double batchsize) {
+    this.batchsize = batchsize;
     return this;
   }
 
    /**
-   * Velikost dávky [persistentní položka]
-   * @return batchSize
+   * velikost dávky [persistentní položka]
+   * @return batchsize
   **/
-  @ApiModelProperty(example = "null", value = "Velikost dávky [persistentní položka]")
-  public Double getBatchSize() {
-    return batchSize;
+  @ApiModelProperty(example = "null", value = "velikost dávky [persistentní položka]")
+  public Double getBatchsize() {
+    return batchsize;
   }
 
-  public void setBatchSize(Double batchSize) {
-    this.batchSize = batchSize;
+  public void setBatchsize(Double batchsize) {
+    this.batchsize = batchsize;
   }
 
-  public Plmworkplace machineCount(Double machineCount) {
-    this.machineCount = machineCount;
+  public Plmworkplace machinecount(Double machinecount) {
+    this.machinecount = machinecount;
     return this;
   }
 
    /**
-   * Počet strojů / pracovníků [persistentní položka]
-   * @return machineCount
+   * počet strojů / pracovníků [persistentní položka]
+   * @return machinecount
   **/
-  @ApiModelProperty(example = "null", value = "Počet strojů / pracovníků [persistentní položka]")
-  public Double getMachineCount() {
-    return machineCount;
+  @ApiModelProperty(example = "null", value = "počet strojů / pracovníků [persistentní položka]")
+  public Double getMachinecount() {
+    return machinecount;
   }
 
-  public void setMachineCount(Double machineCount) {
-    this.machineCount = machineCount;
+  public void setMachinecount(Double machinecount) {
+    this.machinecount = machinecount;
   }
 
-  public Plmworkplace shiftCalendarID(String shiftCalendarID) {
-    this.shiftCalendarID = shiftCalendarID;
+  public Plmworkplace shiftcalendarId(String shiftcalendarId) {
+    this.shiftcalendarId = shiftcalendarId;
     return this;
   }
 
    /**
-   * Kalendář; ID objektu Pracovní kalendář [persistentní položka]
-   * @return shiftCalendarID
+   * kalendář; id objektu pracovní kalendář [persistentní položka]
+   * @return shiftcalendarId
   **/
-  @ApiModelProperty(example = "null", value = "Kalendář; ID objektu Pracovní kalendář [persistentní položka]")
-  public String getShiftCalendarID() {
-    return shiftCalendarID;
+  @ApiModelProperty(example = "null", value = "kalendář; id objektu pracovní kalendář [persistentní položka]")
+  public String getShiftcalendarId() {
+    return shiftcalendarId;
   }
 
-  public void setShiftCalendarID(String shiftCalendarID) {
-    this.shiftCalendarID = shiftCalendarID;
+  public void setShiftcalendarId(String shiftcalendarId) {
+    this.shiftcalendarId = shiftcalendarId;
   }
 
-  public Plmworkplace workPlaceShiftTypes(List<Plmworkplaceshifttype> workPlaceShiftTypes) {
-    this.workPlaceShiftTypes = workPlaceShiftTypes;
+  public Plmworkplace workplaceshifttypes(List<Plmworkplaceshifttype> workplaceshifttypes) {
+    this.workplaceshifttypes = workplaceshifttypes;
     return this;
   }
 
-  public Plmworkplace addWorkPlaceShiftTypesItem(Plmworkplaceshifttype workPlaceShiftTypesItem) {
-    this.workPlaceShiftTypes.add(workPlaceShiftTypesItem);
-    return this;
-  }
-
-   /**
-   * Vazba na druhy směn; kolekce BO Druh směn na pracovišti [nepersistentní položka]
-   * @return workPlaceShiftTypes
-  **/
-  @ApiModelProperty(example = "null", value = "Vazba na druhy směn; kolekce BO Druh směn na pracovišti [nepersistentní položka]")
-  public List<Plmworkplaceshifttype> getWorkPlaceShiftTypes() {
-    return workPlaceShiftTypes;
-  }
-
-  public void setWorkPlaceShiftTypes(List<Plmworkplaceshifttype> workPlaceShiftTypes) {
-    this.workPlaceShiftTypes = workPlaceShiftTypes;
-  }
-
-  public Plmworkplace cRPShow(Boolean cRPShow) {
-    this.cRPShow = cRPShow;
+  public Plmworkplace addWorkplaceshifttypesItem(Plmworkplaceshifttype workplaceshifttypesItem) {
+    this.workplaceshifttypes.add(workplaceshifttypesItem);
     return this;
   }
 
    /**
-   * Kap. plán [persistentní položka]
-   * @return cRPShow
+   * vazba na druhy směn; kolekce bo druh směn na pracovišti [nepersistentní položka]
+   * @return workplaceshifttypes
   **/
-  @ApiModelProperty(example = "null", value = "Kap. plán [persistentní položka]")
-  public Boolean getCRPShow() {
-    return cRPShow;
+  @ApiModelProperty(example = "null", value = "vazba na druhy směn; kolekce bo druh směn na pracovišti [nepersistentní položka]")
+  public List<Plmworkplaceshifttype> getWorkplaceshifttypes() {
+    return workplaceshifttypes;
   }
 
-  public void setCRPShow(Boolean cRPShow) {
-    this.cRPShow = cRPShow;
+  public void setWorkplaceshifttypes(List<Plmworkplaceshifttype> workplaceshifttypes) {
+    this.workplaceshifttypes = workplaceshifttypes;
   }
 
-  public Plmworkplace cRPGrain(Integer cRPGrain) {
-    this.cRPGrain = cRPGrain;
+  public Plmworkplace crpshow(Boolean crpshow) {
+    this.crpshow = crpshow;
     return this;
   }
 
    /**
-   * Zrnitost [persistentní položka]
-   * @return cRPGrain
+   * kap. plán [persistentní položka]
+   * @return crpshow
   **/
-  @ApiModelProperty(example = "null", value = "Zrnitost [persistentní položka]")
-  public Integer getCRPGrain() {
-    return cRPGrain;
+  @ApiModelProperty(example = "null", value = "kap. plán [persistentní položka]")
+  public Boolean getCrpshow() {
+    return crpshow;
   }
 
-  public void setCRPGrain(Integer cRPGrain) {
-    this.cRPGrain = cRPGrain;
+  public void setCrpshow(Boolean crpshow) {
+    this.crpshow = crpshow;
+  }
+
+  public Plmworkplace crpgrain(Integer crpgrain) {
+    this.crpgrain = crpgrain;
+    return this;
+  }
+
+   /**
+   * zrnitost [persistentní položka]
+   * @return crpgrain
+  **/
+  @ApiModelProperty(example = "null", value = "zrnitost [persistentní položka]")
+  public Integer getCrpgrain() {
+    return crpgrain;
+  }
+
+  public void setCrpgrain(Integer crpgrain) {
+    this.crpgrain = crpgrain;
   }
 
 
@@ -396,29 +432,29 @@ public class Plmworkplace   {
       return false;
     }
     Plmworkplace plmworkplace = (Plmworkplace) o;
-    return Objects.equals(this.displayName, plmworkplace.displayName) &&
-        Objects.equals(this.ID, plmworkplace.ID) &&
-        Objects.equals(this.dateOfChange, plmworkplace.dateOfChange) &&
-        Objects.equals(this.classID, plmworkplace.classID) &&
-        Objects.equals(this.objVersion, plmworkplace.objVersion) &&
+    return Objects.equals(this.displayname, plmworkplace.displayname) &&
+        Objects.equals(this.id, plmworkplace.id) &&
+        Objects.equals(this.dateofchange, plmworkplace.dateofchange) &&
+        Objects.equals(this.classid, plmworkplace.classid) &&
+        Objects.equals(this.objversion, plmworkplace.objversion) &&
         Objects.equals(this.hidden, plmworkplace.hidden) &&
         Objects.equals(this.code, plmworkplace.code) &&
         Objects.equals(this.name, plmworkplace.name) &&
-        Objects.equals(this.hourlyRate, plmworkplace.hourlyRate) &&
-        Objects.equals(this.divisionID, plmworkplace.divisionID) &&
+        Objects.equals(this.hourlyrate, plmworkplace.hourlyrate) &&
+        Objects.equals(this.divisionId, plmworkplace.divisionId) &&
         Objects.equals(this.capacity, plmworkplace.capacity) &&
-        Objects.equals(this.batchBuffer, plmworkplace.batchBuffer) &&
-        Objects.equals(this.batchSize, plmworkplace.batchSize) &&
-        Objects.equals(this.machineCount, plmworkplace.machineCount) &&
-        Objects.equals(this.shiftCalendarID, plmworkplace.shiftCalendarID) &&
-        Objects.equals(this.workPlaceShiftTypes, plmworkplace.workPlaceShiftTypes) &&
-        Objects.equals(this.cRPShow, plmworkplace.cRPShow) &&
-        Objects.equals(this.cRPGrain, plmworkplace.cRPGrain);
+        Objects.equals(this.batchbuffer, plmworkplace.batchbuffer) &&
+        Objects.equals(this.batchsize, plmworkplace.batchsize) &&
+        Objects.equals(this.machinecount, plmworkplace.machinecount) &&
+        Objects.equals(this.shiftcalendarId, plmworkplace.shiftcalendarId) &&
+        Objects.equals(this.workplaceshifttypes, plmworkplace.workplaceshifttypes) &&
+        Objects.equals(this.crpshow, plmworkplace.crpshow) &&
+        Objects.equals(this.crpgrain, plmworkplace.crpgrain);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, dateOfChange, classID, objVersion, hidden, code, name, hourlyRate, divisionID, capacity, batchBuffer, batchSize, machineCount, shiftCalendarID, workPlaceShiftTypes, cRPShow, cRPGrain);
+    return Objects.hash(displayname, id, dateofchange, classid, objversion, hidden, code, name, hourlyrate, divisionId, capacity, batchbuffer, batchsize, machinecount, shiftcalendarId, workplaceshifttypes, crpshow, crpgrain);
   }
 
   @Override
@@ -426,24 +462,24 @@ public class Plmworkplace   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmworkplace {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    dateOfChange: ").append(toIndentedString(dateOfChange)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    dateofchange: ").append(toIndentedString(dateofchange)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    hourlyRate: ").append(toIndentedString(hourlyRate)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
+    sb.append("    hourlyrate: ").append(toIndentedString(hourlyrate)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
     sb.append("    capacity: ").append(toIndentedString(capacity)).append("\n");
-    sb.append("    batchBuffer: ").append(toIndentedString(batchBuffer)).append("\n");
-    sb.append("    batchSize: ").append(toIndentedString(batchSize)).append("\n");
-    sb.append("    machineCount: ").append(toIndentedString(machineCount)).append("\n");
-    sb.append("    shiftCalendarID: ").append(toIndentedString(shiftCalendarID)).append("\n");
-    sb.append("    workPlaceShiftTypes: ").append(toIndentedString(workPlaceShiftTypes)).append("\n");
-    sb.append("    cRPShow: ").append(toIndentedString(cRPShow)).append("\n");
-    sb.append("    cRPGrain: ").append(toIndentedString(cRPGrain)).append("\n");
+    sb.append("    batchbuffer: ").append(toIndentedString(batchbuffer)).append("\n");
+    sb.append("    batchsize: ").append(toIndentedString(batchsize)).append("\n");
+    sb.append("    machinecount: ").append(toIndentedString(machinecount)).append("\n");
+    sb.append("    shiftcalendarId: ").append(toIndentedString(shiftcalendarId)).append("\n");
+    sb.append("    workplaceshifttypes: ").append(toIndentedString(workplaceshifttypes)).append("\n");
+    sb.append("    crpshow: ").append(toIndentedString(crpshow)).append("\n");
+    sb.append("    crpgrain: ").append(toIndentedString(crpgrain)).append("\n");
     sb.append("}");
     return sb.toString();
   }

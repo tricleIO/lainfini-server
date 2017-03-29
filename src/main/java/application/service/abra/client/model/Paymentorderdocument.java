@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,111 +34,156 @@ import java.util.Objects;
 /**
  * Paymentorderdocument
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Paymentorderdocument   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PDocument_ID")
-  private String pDocumentID = null;
+  @SerializedName("pdocument_id")
+  private String pdocumentId = null;
 
-  @SerializedName("PDocumentType")
-  private String pDocumentType = null;
+  @SerializedName("pdocumenttype")
+  private String pdocumenttype = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Platební příkaz - řádek [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Platební příkaz - řádek [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Paymentorderdocument pDocumentID(String pDocumentID) {
-    this.pDocumentID = pDocumentID;
+  public Paymentorderdocument displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Placený doklad; ID objektu Dokument [persistentní položka]
-   * @return pDocumentID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Placený doklad; ID objektu Dokument [persistentní položka]")
-  public String getPDocumentID() {
-    return pDocumentID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPDocumentID(String pDocumentID) {
-    this.pDocumentID = pDocumentID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Paymentorderdocument pDocumentType(String pDocumentType) {
-    this.pDocumentType = pDocumentType;
+  public Paymentorderdocument id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Typ plac. dokladu [persistentní položka]
-   * @return pDocumentType
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Typ plac. dokladu [persistentní položka]")
-  public String getPDocumentType() {
-    return pDocumentType;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setPDocumentType(String pDocumentType) {
-    this.pDocumentType = pDocumentType;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Paymentorderdocument classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Paymentorderdocument objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Paymentorderdocument parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu platební příkaz - řádek [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu platební příkaz - řádek [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Paymentorderdocument pdocumentId(String pdocumentId) {
+    this.pdocumentId = pdocumentId;
+    return this;
+  }
+
+   /**
+   * placený doklad; id objektu dokument [persistentní položka]
+   * @return pdocumentId
+  **/
+  @ApiModelProperty(example = "null", value = "placený doklad; id objektu dokument [persistentní položka]")
+  public String getPdocumentId() {
+    return pdocumentId;
+  }
+
+  public void setPdocumentId(String pdocumentId) {
+    this.pdocumentId = pdocumentId;
+  }
+
+  public Paymentorderdocument pdocumenttype(String pdocumenttype) {
+    this.pdocumenttype = pdocumenttype;
+    return this;
+  }
+
+   /**
+   * typ plac. dokladu [persistentní položka]
+   * @return pdocumenttype
+  **/
+  @ApiModelProperty(example = "null", value = "typ plac. dokladu [persistentní položka]")
+  public String getPdocumenttype() {
+    return pdocumenttype;
+  }
+
+  public void setPdocumenttype(String pdocumenttype) {
+    this.pdocumenttype = pdocumenttype;
   }
 
   public Paymentorderdocument amount(Double amount) {
@@ -147,10 +192,10 @@ public class Paymentorderdocument   {
   }
 
    /**
-   * Placená částka dokl. [persistentní položka]
+   * placená částka dokl. [persistentní položka]
    * @return amount
   **/
-  @ApiModelProperty(example = "null", value = "Placená částka dokl. [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "placená částka dokl. [persistentní položka]")
   public Double getAmount() {
     return amount;
   }
@@ -169,19 +214,19 @@ public class Paymentorderdocument   {
       return false;
     }
     Paymentorderdocument paymentorderdocument = (Paymentorderdocument) o;
-    return Objects.equals(this.displayName, paymentorderdocument.displayName) &&
-        Objects.equals(this.ID, paymentorderdocument.ID) &&
-        Objects.equals(this.classID, paymentorderdocument.classID) &&
-        Objects.equals(this.objVersion, paymentorderdocument.objVersion) &&
-        Objects.equals(this.parentID, paymentorderdocument.parentID) &&
-        Objects.equals(this.pDocumentID, paymentorderdocument.pDocumentID) &&
-        Objects.equals(this.pDocumentType, paymentorderdocument.pDocumentType) &&
+    return Objects.equals(this.displayname, paymentorderdocument.displayname) &&
+        Objects.equals(this.id, paymentorderdocument.id) &&
+        Objects.equals(this.classid, paymentorderdocument.classid) &&
+        Objects.equals(this.objversion, paymentorderdocument.objversion) &&
+        Objects.equals(this.parentId, paymentorderdocument.parentId) &&
+        Objects.equals(this.pdocumentId, paymentorderdocument.pdocumentId) &&
+        Objects.equals(this.pdocumenttype, paymentorderdocument.pdocumenttype) &&
         Objects.equals(this.amount, paymentorderdocument.amount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, pDocumentID, pDocumentType, amount);
+    return Objects.hash(displayname, id, classid, objversion, parentId, pdocumentId, pdocumenttype, amount);
   }
 
   @Override
@@ -189,13 +234,13 @@ public class Paymentorderdocument   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Paymentorderdocument {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    pDocumentID: ").append(toIndentedString(pDocumentID)).append("\n");
-    sb.append("    pDocumentType: ").append(toIndentedString(pDocumentType)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    pdocumentId: ").append(toIndentedString(pdocumentId)).append("\n");
+    sb.append("    pdocumenttype: ").append(toIndentedString(pdocumenttype)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
     sb.append("}");
     return sb.toString();

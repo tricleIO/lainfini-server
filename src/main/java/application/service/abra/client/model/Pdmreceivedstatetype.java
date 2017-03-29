@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,69 +34,105 @@ import java.util.Objects;
 /**
  * Pdmreceivedstatetype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Pdmreceivedstatetype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("StateKind")
-  private Integer stateKind = null;
+  @SerializedName("statekind")
+  private Integer statekind = null;
 
-  @SerializedName("StateOrder")
-  private Integer stateOrder = null;
+  @SerializedName("stateorder")
+  private Integer stateorder = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Pdmreceivedstatetype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Pdmreceivedstatetype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Pdmreceivedstatetype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Pdmreceivedstatetype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Pdmreceivedstatetype hidden(Boolean hidden) {
@@ -105,10 +141,10 @@ public class Pdmreceivedstatetype   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -123,10 +159,10 @@ public class Pdmreceivedstatetype   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -141,10 +177,10 @@ public class Pdmreceivedstatetype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -153,40 +189,40 @@ public class Pdmreceivedstatetype   {
     this.name = name;
   }
 
-  public Pdmreceivedstatetype stateKind(Integer stateKind) {
-    this.stateKind = stateKind;
+  public Pdmreceivedstatetype statekind(Integer statekind) {
+    this.statekind = statekind;
     return this;
   }
 
    /**
-   * Druh stavu [persistentní položka]
-   * @return stateKind
+   * druh stavu [persistentní položka]
+   * @return statekind
   **/
-  @ApiModelProperty(example = "null", value = "Druh stavu [persistentní položka]")
-  public Integer getStateKind() {
-    return stateKind;
+  @ApiModelProperty(example = "null", value = "druh stavu [persistentní položka]")
+  public Integer getStatekind() {
+    return statekind;
   }
 
-  public void setStateKind(Integer stateKind) {
-    this.stateKind = stateKind;
+  public void setStatekind(Integer statekind) {
+    this.statekind = statekind;
   }
 
-  public Pdmreceivedstatetype stateOrder(Integer stateOrder) {
-    this.stateOrder = stateOrder;
+  public Pdmreceivedstatetype stateorder(Integer stateorder) {
+    this.stateorder = stateorder;
     return this;
   }
 
    /**
-   * Pořadí stavu [persistentní položka]
-   * @return stateOrder
+   * pořadí stavu [persistentní položka]
+   * @return stateorder
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí stavu [persistentní položka]")
-  public Integer getStateOrder() {
-    return stateOrder;
+  @ApiModelProperty(example = "null", value = "pořadí stavu [persistentní položka]")
+  public Integer getStateorder() {
+    return stateorder;
   }
 
-  public void setStateOrder(Integer stateOrder) {
-    this.stateOrder = stateOrder;
+  public void setStateorder(Integer stateorder) {
+    this.stateorder = stateorder;
   }
 
 
@@ -199,20 +235,20 @@ public class Pdmreceivedstatetype   {
       return false;
     }
     Pdmreceivedstatetype pdmreceivedstatetype = (Pdmreceivedstatetype) o;
-    return Objects.equals(this.displayName, pdmreceivedstatetype.displayName) &&
-        Objects.equals(this.ID, pdmreceivedstatetype.ID) &&
-        Objects.equals(this.classID, pdmreceivedstatetype.classID) &&
-        Objects.equals(this.objVersion, pdmreceivedstatetype.objVersion) &&
+    return Objects.equals(this.displayname, pdmreceivedstatetype.displayname) &&
+        Objects.equals(this.id, pdmreceivedstatetype.id) &&
+        Objects.equals(this.classid, pdmreceivedstatetype.classid) &&
+        Objects.equals(this.objversion, pdmreceivedstatetype.objversion) &&
         Objects.equals(this.hidden, pdmreceivedstatetype.hidden) &&
         Objects.equals(this.code, pdmreceivedstatetype.code) &&
         Objects.equals(this.name, pdmreceivedstatetype.name) &&
-        Objects.equals(this.stateKind, pdmreceivedstatetype.stateKind) &&
-        Objects.equals(this.stateOrder, pdmreceivedstatetype.stateOrder);
+        Objects.equals(this.statekind, pdmreceivedstatetype.statekind) &&
+        Objects.equals(this.stateorder, pdmreceivedstatetype.stateorder);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, stateKind, stateOrder);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, statekind, stateorder);
   }
 
   @Override
@@ -220,15 +256,15 @@ public class Pdmreceivedstatetype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Pdmreceivedstatetype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    stateKind: ").append(toIndentedString(stateKind)).append("\n");
-    sb.append("    stateOrder: ").append(toIndentedString(stateOrder)).append("\n");
+    sb.append("    statekind: ").append(toIndentedString(statekind)).append("\n");
+    sb.append("    stateorder: ").append(toIndentedString(stateorder)).append("\n");
     sb.append("}");
     return sb.toString();
   }

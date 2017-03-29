@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,105 +34,141 @@ import java.util.Objects;
 /**
  * Wikifile
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wikifile   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("BlobData")
-  private byte[] blobData = null;
+  @SerializedName("blobdata")
+  private byte[] blobdata = null;
 
-  @SerializedName("Space_ID")
-  private String spaceID = null;
+  @SerializedName("space_id")
+  private String spaceId = null;
 
-  @SerializedName("Path")
+  @SerializedName("path")
   private String path = null;
 
-  @SerializedName("IsImage")
-  private Boolean isImage = null;
+  @SerializedName("isimage")
+  private Boolean isimage = null;
 
-  @SerializedName("FileSize")
-  private Integer fileSize = null;
+  @SerializedName("filesize")
+  private Integer filesize = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Wikifile blobData(byte[] blobData) {
-    this.blobData = blobData;
+  public Wikifile displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Data [persistentní položka]
-   * @return blobData
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Data [persistentní položka]")
-  public byte[] getBlobData() {
-    return blobData;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setBlobData(byte[] blobData) {
-    this.blobData = blobData;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Wikifile spaceID(String spaceID) {
-    this.spaceID = spaceID;
+  public Wikifile id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Prostor; ID objektu Wiki prostor [persistentní položka]
-   * @return spaceID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Prostor; ID objektu Wiki prostor [persistentní položka]")
-  public String getSpaceID() {
-    return spaceID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setSpaceID(String spaceID) {
-    this.spaceID = spaceID;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wikifile classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wikifile objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Wikifile blobdata(byte[] blobdata) {
+    this.blobdata = blobdata;
+    return this;
+  }
+
+   /**
+   * data [persistentní položka]
+   * @return blobdata
+  **/
+  @ApiModelProperty(example = "null", value = "data [persistentní položka]")
+  public byte[] getBlobdata() {
+    return blobdata;
+  }
+
+  public void setBlobdata(byte[] blobdata) {
+    this.blobdata = blobdata;
+  }
+
+  public Wikifile spaceId(String spaceId) {
+    this.spaceId = spaceId;
+    return this;
+  }
+
+   /**
+   * prostor; id objektu wiki prostor [persistentní položka]
+   * @return spaceId
+  **/
+  @ApiModelProperty(example = "null", value = "prostor; id objektu wiki prostor [persistentní položka]")
+  public String getSpaceId() {
+    return spaceId;
+  }
+
+  public void setSpaceId(String spaceId) {
+    this.spaceId = spaceId;
   }
 
   public Wikifile path(String path) {
@@ -141,10 +177,10 @@ public class Wikifile   {
   }
 
    /**
-   * Cesta [persistentní položka]
+   * cesta [persistentní položka]
    * @return path
   **/
-  @ApiModelProperty(example = "null", value = "Cesta [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "cesta [persistentní položka]")
   public String getPath() {
     return path;
   }
@@ -153,40 +189,40 @@ public class Wikifile   {
     this.path = path;
   }
 
-  public Wikifile isImage(Boolean isImage) {
-    this.isImage = isImage;
+  public Wikifile isimage(Boolean isimage) {
+    this.isimage = isimage;
     return this;
   }
 
    /**
-   * Obrázek [persistentní položka]
-   * @return isImage
+   * obrázek [persistentní položka]
+   * @return isimage
   **/
-  @ApiModelProperty(example = "null", value = "Obrázek [persistentní položka]")
-  public Boolean getIsImage() {
-    return isImage;
+  @ApiModelProperty(example = "null", value = "obrázek [persistentní položka]")
+  public Boolean getIsimage() {
+    return isimage;
   }
 
-  public void setIsImage(Boolean isImage) {
-    this.isImage = isImage;
+  public void setIsimage(Boolean isimage) {
+    this.isimage = isimage;
   }
 
-  public Wikifile fileSize(Integer fileSize) {
-    this.fileSize = fileSize;
+  public Wikifile filesize(Integer filesize) {
+    this.filesize = filesize;
     return this;
   }
 
    /**
-   * Velikost souboru [persistentní položka]
-   * @return fileSize
+   * velikost souboru [persistentní položka]
+   * @return filesize
   **/
-  @ApiModelProperty(example = "null", value = "Velikost souboru [persistentní položka]")
-  public Integer getFileSize() {
-    return fileSize;
+  @ApiModelProperty(example = "null", value = "velikost souboru [persistentní položka]")
+  public Integer getFilesize() {
+    return filesize;
   }
 
-  public void setFileSize(Integer fileSize) {
-    this.fileSize = fileSize;
+  public void setFilesize(Integer filesize) {
+    this.filesize = filesize;
   }
 
 
@@ -199,20 +235,20 @@ public class Wikifile   {
       return false;
     }
     Wikifile wikifile = (Wikifile) o;
-    return Objects.equals(this.displayName, wikifile.displayName) &&
-        Objects.equals(this.ID, wikifile.ID) &&
-        Objects.equals(this.classID, wikifile.classID) &&
-        Objects.equals(this.objVersion, wikifile.objVersion) &&
-        Objects.equals(this.blobData, wikifile.blobData) &&
-        Objects.equals(this.spaceID, wikifile.spaceID) &&
+    return Objects.equals(this.displayname, wikifile.displayname) &&
+        Objects.equals(this.id, wikifile.id) &&
+        Objects.equals(this.classid, wikifile.classid) &&
+        Objects.equals(this.objversion, wikifile.objversion) &&
+        Objects.equals(this.blobdata, wikifile.blobdata) &&
+        Objects.equals(this.spaceId, wikifile.spaceId) &&
         Objects.equals(this.path, wikifile.path) &&
-        Objects.equals(this.isImage, wikifile.isImage) &&
-        Objects.equals(this.fileSize, wikifile.fileSize);
+        Objects.equals(this.isimage, wikifile.isimage) &&
+        Objects.equals(this.filesize, wikifile.filesize);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, blobData, spaceID, path, isImage, fileSize);
+    return Objects.hash(displayname, id, classid, objversion, blobdata, spaceId, path, isimage, filesize);
   }
 
   @Override
@@ -220,15 +256,15 @@ public class Wikifile   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wikifile {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    blobData: ").append(toIndentedString(blobData)).append("\n");
-    sb.append("    spaceID: ").append(toIndentedString(spaceID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    blobdata: ").append(toIndentedString(blobdata)).append("\n");
+    sb.append("    spaceId: ").append(toIndentedString(spaceId)).append("\n");
     sb.append("    path: ").append(toIndentedString(path)).append("\n");
-    sb.append("    isImage: ").append(toIndentedString(isImage)).append("\n");
-    sb.append("    fileSize: ").append(toIndentedString(fileSize)).append("\n");
+    sb.append("    isimage: ").append(toIndentedString(isimage)).append("\n");
+    sb.append("    filesize: ").append(toIndentedString(filesize)).append("\n");
     sb.append("}");
     return sb.toString();
   }

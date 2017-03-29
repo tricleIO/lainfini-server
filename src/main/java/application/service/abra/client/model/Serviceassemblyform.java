@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,171 +37,207 @@ import java.util.Objects;
 /**
  * Serviceassemblyform
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Serviceassemblyform   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("ServiceDocument_ID")
-  private String serviceDocumentID = null;
+  @SerializedName("servicedocument_id")
+  private String servicedocumentId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("Cooperation")
+  @SerializedName("cooperation")
   private Boolean cooperation = null;
 
-  @SerializedName("CooperationFirm_ID")
-  private String cooperationFirmID = null;
+  @SerializedName("cooperationfirm_id")
+  private String cooperationfirmId = null;
 
-  @SerializedName("CooperationFirmOffice_ID")
-  private String cooperationFirmOfficeID = null;
+  @SerializedName("cooperationfirmoffice_id")
+  private String cooperationfirmofficeId = null;
 
-  @SerializedName("CooperationPerson_ID")
-  private String cooperationPersonID = null;
+  @SerializedName("cooperationperson_id")
+  private String cooperationpersonId = null;
 
-  @SerializedName("CooperationSurcharge")
-  private Double cooperationSurcharge = null;
+  @SerializedName("cooperationsurcharge")
+  private Double cooperationsurcharge = null;
 
-  @SerializedName("ServiceWorkSpace_ID")
-  private String serviceWorkSpaceID = null;
+  @SerializedName("serviceworkspace_id")
+  private String serviceworkspaceId = null;
 
-  @SerializedName("AssemblyState")
-  private Integer assemblyState = null;
+  @SerializedName("assemblystate")
+  private Integer assemblystate = null;
 
-  @SerializedName("StartDate$DATE")
-  private DateTime startDateDATE = null;
+  @SerializedName("startdate$date")
+  private DateTime startdatedate = null;
 
-  @SerializedName("EndDate$DATE")
-  private DateTime endDateDATE = null;
+  @SerializedName("enddate$date")
+  private DateTime enddatedate = null;
 
-  @SerializedName("ResponsibleRole_ID")
-  private String responsibleRoleID = null;
+  @SerializedName("responsiblerole_id")
+  private String responsibleroleId = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("CooperationState")
-  private Integer cooperationState = null;
+  @SerializedName("cooperationstate")
+  private Integer cooperationstate = null;
 
-  @SerializedName("CooperationOutDate$DATE")
-  private DateTime cooperationOutDateDATE = null;
+  @SerializedName("cooperationoutdate$date")
+  private DateTime cooperationoutdatedate = null;
 
-  @SerializedName("CooperationBackPlanDate$DATE")
-  private DateTime cooperationBackPlanDateDATE = null;
+  @SerializedName("cooperationbackplandate$date")
+  private DateTime cooperationbackplandatedate = null;
 
-  @SerializedName("CooperationBackDate$DATE")
-  private DateTime cooperationBackDateDATE = null;
+  @SerializedName("cooperationbackdate$date")
+  private DateTime cooperationbackdatedate = null;
 
-  @SerializedName("CoopTransferOut_ID")
-  private String coopTransferOutID = null;
+  @SerializedName("cooptransferout_id")
+  private String cooptransferoutId = null;
 
-  @SerializedName("CoopTransferBack_ID")
-  private String coopTransferBackID = null;
+  @SerializedName("cooptransferback_id")
+  private String cooptransferbackId = null;
 
-  @SerializedName("AllowIntermediation")
-  private Boolean allowIntermediation = null;
+  @SerializedName("allowintermediation")
+  private Boolean allowintermediation = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Serviceassemblyformrow> rows = new ArrayList<Serviceassemblyformrow>();
 
-  @SerializedName("AssemblyStateAsText")
-  private String assemblyStateAsText = null;
+  @SerializedName("assemblystateastext")
+  private String assemblystateastext = null;
 
-  @SerializedName("TotalPriceWithoutVAT")
-  private Double totalPriceWithoutVAT = null;
+  @SerializedName("totalpricewithoutvat")
+  private Double totalpricewithoutvat = null;
 
-  @SerializedName("TotalPriceWithVAT")
-  private Double totalPriceWithVAT = null;
+  @SerializedName("totalpricewithvat")
+  private Double totalpricewithvat = null;
 
-  @SerializedName("MaterialOnStockState")
-  private Double materialOnStockState = null;
+  @SerializedName("materialonstockstate")
+  private Double materialonstockstate = null;
 
-  @SerializedName("MaterialOutStockingState")
-  private Double materialOutStockingState = null;
+  @SerializedName("materialoutstockingstate")
+  private Double materialoutstockingstate = null;
 
-  @SerializedName("CooperationReturn")
-  private List<Serviceassemblycoopreceiving> cooperationReturn = new ArrayList<Serviceassemblycoopreceiving>();
+  @SerializedName("cooperationreturn")
+  private List<Serviceassemblycoopreceiving> cooperationreturn = new ArrayList<Serviceassemblycoopreceiving>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Serviceassemblyform serviceDocumentID(String serviceDocumentID) {
-    this.serviceDocumentID = serviceDocumentID;
+  public Serviceassemblyform displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Servisní list; ID objektu Servisní list [persistentní položka]
-   * @return serviceDocumentID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Servisní list; ID objektu Servisní list [persistentní položka]")
-  public String getServiceDocumentID() {
-    return serviceDocumentID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setServiceDocumentID(String serviceDocumentID) {
-    this.serviceDocumentID = serviceDocumentID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Serviceassemblyform ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Serviceassemblyform id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Serviceassemblyform classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Serviceassemblyform objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Serviceassemblyform servicedocumentId(String servicedocumentId) {
+    this.servicedocumentId = servicedocumentId;
+    return this;
+  }
+
+   /**
+   * servisní list; id objektu servisní list [persistentní položka]
+   * @return servicedocumentId
+  **/
+  @ApiModelProperty(example = "null", value = "servisní list; id objektu servisní list [persistentní položka]")
+  public String getServicedocumentId() {
+    return servicedocumentId;
+  }
+
+  public void setServicedocumentId(String servicedocumentId) {
+    this.servicedocumentId = servicedocumentId;
+  }
+
+  public Serviceassemblyform ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
+    return this;
+  }
+
+   /**
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
+  **/
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
+  }
+
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
   public Serviceassemblyform cooperation(Boolean cooperation) {
@@ -210,10 +246,10 @@ public class Serviceassemblyform   {
   }
 
    /**
-   * Kooperace [persistentní položka]
+   * kooperace [persistentní položka]
    * @return cooperation
   **/
-  @ApiModelProperty(example = "null", value = "Kooperace [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kooperace [persistentní položka]")
   public Boolean getCooperation() {
     return cooperation;
   }
@@ -222,166 +258,166 @@ public class Serviceassemblyform   {
     this.cooperation = cooperation;
   }
 
-  public Serviceassemblyform cooperationFirmID(String cooperationFirmID) {
-    this.cooperationFirmID = cooperationFirmID;
+  public Serviceassemblyform cooperationfirmId(String cooperationfirmId) {
+    this.cooperationfirmId = cooperationfirmId;
     return this;
   }
 
    /**
-   * Kooperace - firma; ID objektu Firma [persistentní položka]
-   * @return cooperationFirmID
+   * kooperace - firma; id objektu firma [persistentní položka]
+   * @return cooperationfirmId
   **/
-  @ApiModelProperty(example = "null", value = "Kooperace - firma; ID objektu Firma [persistentní položka]")
-  public String getCooperationFirmID() {
-    return cooperationFirmID;
+  @ApiModelProperty(example = "null", value = "kooperace - firma; id objektu firma [persistentní položka]")
+  public String getCooperationfirmId() {
+    return cooperationfirmId;
   }
 
-  public void setCooperationFirmID(String cooperationFirmID) {
-    this.cooperationFirmID = cooperationFirmID;
+  public void setCooperationfirmId(String cooperationfirmId) {
+    this.cooperationfirmId = cooperationfirmId;
   }
 
-  public Serviceassemblyform cooperationFirmOfficeID(String cooperationFirmOfficeID) {
-    this.cooperationFirmOfficeID = cooperationFirmOfficeID;
+  public Serviceassemblyform cooperationfirmofficeId(String cooperationfirmofficeId) {
+    this.cooperationfirmofficeId = cooperationfirmofficeId;
     return this;
   }
 
    /**
-   * Kooperace - provozovna; ID objektu Provozovna [persistentní položka]
-   * @return cooperationFirmOfficeID
+   * kooperace - provozovna; id objektu provozovna [persistentní položka]
+   * @return cooperationfirmofficeId
   **/
-  @ApiModelProperty(example = "null", value = "Kooperace - provozovna; ID objektu Provozovna [persistentní položka]")
-  public String getCooperationFirmOfficeID() {
-    return cooperationFirmOfficeID;
+  @ApiModelProperty(example = "null", value = "kooperace - provozovna; id objektu provozovna [persistentní položka]")
+  public String getCooperationfirmofficeId() {
+    return cooperationfirmofficeId;
   }
 
-  public void setCooperationFirmOfficeID(String cooperationFirmOfficeID) {
-    this.cooperationFirmOfficeID = cooperationFirmOfficeID;
+  public void setCooperationfirmofficeId(String cooperationfirmofficeId) {
+    this.cooperationfirmofficeId = cooperationfirmofficeId;
   }
 
-  public Serviceassemblyform cooperationPersonID(String cooperationPersonID) {
-    this.cooperationPersonID = cooperationPersonID;
+  public Serviceassemblyform cooperationpersonId(String cooperationpersonId) {
+    this.cooperationpersonId = cooperationpersonId;
     return this;
   }
 
    /**
-   * Kooperace - osoba; ID objektu Osoba [persistentní položka]
-   * @return cooperationPersonID
+   * kooperace - osoba; id objektu osoba [persistentní položka]
+   * @return cooperationpersonId
   **/
-  @ApiModelProperty(example = "null", value = "Kooperace - osoba; ID objektu Osoba [persistentní položka]")
-  public String getCooperationPersonID() {
-    return cooperationPersonID;
+  @ApiModelProperty(example = "null", value = "kooperace - osoba; id objektu osoba [persistentní položka]")
+  public String getCooperationpersonId() {
+    return cooperationpersonId;
   }
 
-  public void setCooperationPersonID(String cooperationPersonID) {
-    this.cooperationPersonID = cooperationPersonID;
+  public void setCooperationpersonId(String cooperationpersonId) {
+    this.cooperationpersonId = cooperationpersonId;
   }
 
-  public Serviceassemblyform cooperationSurcharge(Double cooperationSurcharge) {
-    this.cooperationSurcharge = cooperationSurcharge;
+  public Serviceassemblyform cooperationsurcharge(Double cooperationsurcharge) {
+    this.cooperationsurcharge = cooperationsurcharge;
     return this;
   }
 
    /**
-   * Kooperace - marže [persistentní položka]
-   * @return cooperationSurcharge
+   * kooperace - marže [persistentní položka]
+   * @return cooperationsurcharge
   **/
-  @ApiModelProperty(example = "null", value = "Kooperace - marže [persistentní položka]")
-  public Double getCooperationSurcharge() {
-    return cooperationSurcharge;
+  @ApiModelProperty(example = "null", value = "kooperace - marže [persistentní položka]")
+  public Double getCooperationsurcharge() {
+    return cooperationsurcharge;
   }
 
-  public void setCooperationSurcharge(Double cooperationSurcharge) {
-    this.cooperationSurcharge = cooperationSurcharge;
+  public void setCooperationsurcharge(Double cooperationsurcharge) {
+    this.cooperationsurcharge = cooperationsurcharge;
   }
 
-  public Serviceassemblyform serviceWorkSpaceID(String serviceWorkSpaceID) {
-    this.serviceWorkSpaceID = serviceWorkSpaceID;
+  public Serviceassemblyform serviceworkspaceId(String serviceworkspaceId) {
+    this.serviceworkspaceId = serviceworkspaceId;
     return this;
   }
 
    /**
-   * Dílna/Pracoviště; ID objektu Servisní dílna/pracoviště [persistentní položka]
-   * @return serviceWorkSpaceID
+   * dílna/pracoviště; id objektu servisní dílna/pracoviště [persistentní položka]
+   * @return serviceworkspaceId
   **/
-  @ApiModelProperty(example = "null", value = "Dílna/Pracoviště; ID objektu Servisní dílna/pracoviště [persistentní položka]")
-  public String getServiceWorkSpaceID() {
-    return serviceWorkSpaceID;
+  @ApiModelProperty(example = "null", value = "dílna/pracoviště; id objektu servisní dílna/pracoviště [persistentní položka]")
+  public String getServiceworkspaceId() {
+    return serviceworkspaceId;
   }
 
-  public void setServiceWorkSpaceID(String serviceWorkSpaceID) {
-    this.serviceWorkSpaceID = serviceWorkSpaceID;
+  public void setServiceworkspaceId(String serviceworkspaceId) {
+    this.serviceworkspaceId = serviceworkspaceId;
   }
 
-  public Serviceassemblyform assemblyState(Integer assemblyState) {
-    this.assemblyState = assemblyState;
+  public Serviceassemblyform assemblystate(Integer assemblystate) {
+    this.assemblystate = assemblystate;
     return this;
   }
 
    /**
-   * Stav [persistentní položka]
-   * @return assemblyState
+   * stav [persistentní položka]
+   * @return assemblystate
   **/
-  @ApiModelProperty(example = "null", value = "Stav [persistentní položka]")
-  public Integer getAssemblyState() {
-    return assemblyState;
+  @ApiModelProperty(example = "null", value = "stav [persistentní položka]")
+  public Integer getAssemblystate() {
+    return assemblystate;
   }
 
-  public void setAssemblyState(Integer assemblyState) {
-    this.assemblyState = assemblyState;
+  public void setAssemblystate(Integer assemblystate) {
+    this.assemblystate = assemblystate;
   }
 
-  public Serviceassemblyform startDateDATE(DateTime startDateDATE) {
-    this.startDateDATE = startDateDATE;
+  public Serviceassemblyform startdatedate(DateTime startdatedate) {
+    this.startdatedate = startdatedate;
     return this;
   }
 
    /**
-   * Datum zahájení [persistentní položka]
-   * @return startDateDATE
+   * datum zahájení [persistentní položka]
+   * @return startdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum zahájení [persistentní položka]")
-  public DateTime getStartDateDATE() {
-    return startDateDATE;
+  @ApiModelProperty(example = "null", value = "datum zahájení [persistentní položka]")
+  public DateTime getStartdatedate() {
+    return startdatedate;
   }
 
-  public void setStartDateDATE(DateTime startDateDATE) {
-    this.startDateDATE = startDateDATE;
+  public void setStartdatedate(DateTime startdatedate) {
+    this.startdatedate = startdatedate;
   }
 
-  public Serviceassemblyform endDateDATE(DateTime endDateDATE) {
-    this.endDateDATE = endDateDATE;
+  public Serviceassemblyform enddatedate(DateTime enddatedate) {
+    this.enddatedate = enddatedate;
     return this;
   }
 
    /**
-   * Datum ukončení [persistentní položka]
-   * @return endDateDATE
+   * datum ukončení [persistentní položka]
+   * @return enddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum ukončení [persistentní položka]")
-  public DateTime getEndDateDATE() {
-    return endDateDATE;
+  @ApiModelProperty(example = "null", value = "datum ukončení [persistentní položka]")
+  public DateTime getEnddatedate() {
+    return enddatedate;
   }
 
-  public void setEndDateDATE(DateTime endDateDATE) {
-    this.endDateDATE = endDateDATE;
+  public void setEnddatedate(DateTime enddatedate) {
+    this.enddatedate = enddatedate;
   }
 
-  public Serviceassemblyform responsibleRoleID(String responsibleRoleID) {
-    this.responsibleRoleID = responsibleRoleID;
+  public Serviceassemblyform responsibleroleId(String responsibleroleId) {
+    this.responsibleroleId = responsibleroleId;
     return this;
   }
 
    /**
-   * Role odpovědné osoby; ID objektu Role [persistentní položka]
-   * @return responsibleRoleID
+   * role odpovědné osoby; id objektu role [persistentní položka]
+   * @return responsibleroleId
   **/
-  @ApiModelProperty(example = "null", value = "Role odpovědné osoby; ID objektu Role [persistentní položka]")
-  public String getResponsibleRoleID() {
-    return responsibleRoleID;
+  @ApiModelProperty(example = "null", value = "role odpovědné osoby; id objektu role [persistentní položka]")
+  public String getResponsibleroleId() {
+    return responsibleroleId;
   }
 
-  public void setResponsibleRoleID(String responsibleRoleID) {
-    this.responsibleRoleID = responsibleRoleID;
+  public void setResponsibleroleId(String responsibleroleId) {
+    this.responsibleroleId = responsibleroleId;
   }
 
   public Serviceassemblyform note(String note) {
@@ -390,10 +426,10 @@ public class Serviceassemblyform   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -402,130 +438,130 @@ public class Serviceassemblyform   {
     this.note = note;
   }
 
-  public Serviceassemblyform cooperationState(Integer cooperationState) {
-    this.cooperationState = cooperationState;
+  public Serviceassemblyform cooperationstate(Integer cooperationstate) {
+    this.cooperationstate = cooperationstate;
     return this;
   }
 
    /**
-   * Stav kooperace [persistentní položka]
-   * @return cooperationState
+   * stav kooperace [persistentní položka]
+   * @return cooperationstate
   **/
-  @ApiModelProperty(example = "null", value = "Stav kooperace [persistentní položka]")
-  public Integer getCooperationState() {
-    return cooperationState;
+  @ApiModelProperty(example = "null", value = "stav kooperace [persistentní položka]")
+  public Integer getCooperationstate() {
+    return cooperationstate;
   }
 
-  public void setCooperationState(Integer cooperationState) {
-    this.cooperationState = cooperationState;
+  public void setCooperationstate(Integer cooperationstate) {
+    this.cooperationstate = cooperationstate;
   }
 
-  public Serviceassemblyform cooperationOutDateDATE(DateTime cooperationOutDateDATE) {
-    this.cooperationOutDateDATE = cooperationOutDateDATE;
+  public Serviceassemblyform cooperationoutdatedate(DateTime cooperationoutdatedate) {
+    this.cooperationoutdatedate = cooperationoutdatedate;
     return this;
   }
 
    /**
-   * Datum výdeje [persistentní položka]
-   * @return cooperationOutDateDATE
+   * datum výdeje [persistentní položka]
+   * @return cooperationoutdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum výdeje [persistentní položka]")
-  public DateTime getCooperationOutDateDATE() {
-    return cooperationOutDateDATE;
+  @ApiModelProperty(example = "null", value = "datum výdeje [persistentní položka]")
+  public DateTime getCooperationoutdatedate() {
+    return cooperationoutdatedate;
   }
 
-  public void setCooperationOutDateDATE(DateTime cooperationOutDateDATE) {
-    this.cooperationOutDateDATE = cooperationOutDateDATE;
+  public void setCooperationoutdatedate(DateTime cooperationoutdatedate) {
+    this.cooperationoutdatedate = cooperationoutdatedate;
   }
 
-  public Serviceassemblyform cooperationBackPlanDateDATE(DateTime cooperationBackPlanDateDATE) {
-    this.cooperationBackPlanDateDATE = cooperationBackPlanDateDATE;
+  public Serviceassemblyform cooperationbackplandatedate(DateTime cooperationbackplandatedate) {
+    this.cooperationbackplandatedate = cooperationbackplandatedate;
     return this;
   }
 
    /**
-   * Plán.datum návratu [persistentní položka]
-   * @return cooperationBackPlanDateDATE
+   * plán.datum návratu [persistentní položka]
+   * @return cooperationbackplandatedate
   **/
-  @ApiModelProperty(example = "null", value = "Plán.datum návratu [persistentní položka]")
-  public DateTime getCooperationBackPlanDateDATE() {
-    return cooperationBackPlanDateDATE;
+  @ApiModelProperty(example = "null", value = "plán.datum návratu [persistentní položka]")
+  public DateTime getCooperationbackplandatedate() {
+    return cooperationbackplandatedate;
   }
 
-  public void setCooperationBackPlanDateDATE(DateTime cooperationBackPlanDateDATE) {
-    this.cooperationBackPlanDateDATE = cooperationBackPlanDateDATE;
+  public void setCooperationbackplandatedate(DateTime cooperationbackplandatedate) {
+    this.cooperationbackplandatedate = cooperationbackplandatedate;
   }
 
-  public Serviceassemblyform cooperationBackDateDATE(DateTime cooperationBackDateDATE) {
-    this.cooperationBackDateDATE = cooperationBackDateDATE;
+  public Serviceassemblyform cooperationbackdatedate(DateTime cooperationbackdatedate) {
+    this.cooperationbackdatedate = cooperationbackdatedate;
     return this;
   }
 
    /**
-   * Datum návratu [persistentní položka]
-   * @return cooperationBackDateDATE
+   * datum návratu [persistentní položka]
+   * @return cooperationbackdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum návratu [persistentní položka]")
-  public DateTime getCooperationBackDateDATE() {
-    return cooperationBackDateDATE;
+  @ApiModelProperty(example = "null", value = "datum návratu [persistentní položka]")
+  public DateTime getCooperationbackdatedate() {
+    return cooperationbackdatedate;
   }
 
-  public void setCooperationBackDateDATE(DateTime cooperationBackDateDATE) {
-    this.cooperationBackDateDATE = cooperationBackDateDATE;
+  public void setCooperationbackdatedate(DateTime cooperationbackdatedate) {
+    this.cooperationbackdatedate = cooperationbackdatedate;
   }
 
-  public Serviceassemblyform coopTransferOutID(String coopTransferOutID) {
-    this.coopTransferOutID = coopTransferOutID;
+  public Serviceassemblyform cooptransferoutId(String cooptransferoutId) {
+    this.cooptransferoutId = cooptransferoutId;
     return this;
   }
 
    /**
-   * Převodka do kooperace; ID objektu Převodka výdej [persistentní položka]
-   * @return coopTransferOutID
+   * převodka do kooperace; id objektu převodka výdej [persistentní položka]
+   * @return cooptransferoutId
   **/
-  @ApiModelProperty(example = "null", value = "Převodka do kooperace; ID objektu Převodka výdej [persistentní položka]")
-  public String getCoopTransferOutID() {
-    return coopTransferOutID;
+  @ApiModelProperty(example = "null", value = "převodka do kooperace; id objektu převodka výdej [persistentní položka]")
+  public String getCooptransferoutId() {
+    return cooptransferoutId;
   }
 
-  public void setCoopTransferOutID(String coopTransferOutID) {
-    this.coopTransferOutID = coopTransferOutID;
+  public void setCooptransferoutId(String cooptransferoutId) {
+    this.cooptransferoutId = cooptransferoutId;
   }
 
-  public Serviceassemblyform coopTransferBackID(String coopTransferBackID) {
-    this.coopTransferBackID = coopTransferBackID;
+  public Serviceassemblyform cooptransferbackId(String cooptransferbackId) {
+    this.cooptransferbackId = cooptransferbackId;
     return this;
   }
 
    /**
-   * Převodka z kooperace; ID objektu Skladový doklad [persistentní položka]
-   * @return coopTransferBackID
+   * převodka z kooperace; id objektu skladový doklad [persistentní položka]
+   * @return cooptransferbackId
   **/
-  @ApiModelProperty(example = "null", value = "Převodka z kooperace; ID objektu Skladový doklad [persistentní položka]")
-  public String getCoopTransferBackID() {
-    return coopTransferBackID;
+  @ApiModelProperty(example = "null", value = "převodka z kooperace; id objektu skladový doklad [persistentní položka]")
+  public String getCooptransferbackId() {
+    return cooptransferbackId;
   }
 
-  public void setCoopTransferBackID(String coopTransferBackID) {
-    this.coopTransferBackID = coopTransferBackID;
+  public void setCooptransferbackId(String cooptransferbackId) {
+    this.cooptransferbackId = cooptransferbackId;
   }
 
-  public Serviceassemblyform allowIntermediation(Boolean allowIntermediation) {
-    this.allowIntermediation = allowIntermediation;
+  public Serviceassemblyform allowintermediation(Boolean allowintermediation) {
+    this.allowintermediation = allowintermediation;
     return this;
   }
 
    /**
-   * Umožnit přefakturaci [persistentní položka]
-   * @return allowIntermediation
+   * umožnit přefakturaci [persistentní položka]
+   * @return allowintermediation
   **/
-  @ApiModelProperty(example = "null", value = "Umožnit přefakturaci [persistentní položka]")
-  public Boolean getAllowIntermediation() {
-    return allowIntermediation;
+  @ApiModelProperty(example = "null", value = "umožnit přefakturaci [persistentní položka]")
+  public Boolean getAllowintermediation() {
+    return allowintermediation;
   }
 
-  public void setAllowIntermediation(Boolean allowIntermediation) {
-    this.allowIntermediation = allowIntermediation;
+  public void setAllowintermediation(Boolean allowintermediation) {
+    this.allowintermediation = allowintermediation;
   }
 
   public Serviceassemblyform rows(List<Serviceassemblyformrow> rows) {
@@ -539,10 +575,10 @@ public class Serviceassemblyform   {
   }
 
    /**
-   * Řádky; kolekce BO Řádek montážního listu [nepersistentní položka]
+   * Řádky; kolekce bo Řádek montážního listu [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Řádek montážního listu [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo Řádek montážního listu [nepersistentní položka]")
   public List<Serviceassemblyformrow> getRows() {
     return rows;
   }
@@ -551,117 +587,117 @@ public class Serviceassemblyform   {
     this.rows = rows;
   }
 
-  public Serviceassemblyform assemblyStateAsText(String assemblyStateAsText) {
-    this.assemblyStateAsText = assemblyStateAsText;
+  public Serviceassemblyform assemblystateastext(String assemblystateastext) {
+    this.assemblystateastext = assemblystateastext;
     return this;
   }
 
    /**
-   * Stav
-   * @return assemblyStateAsText
+   * stav
+   * @return assemblystateastext
   **/
-  @ApiModelProperty(example = "null", value = "Stav")
-  public String getAssemblyStateAsText() {
-    return assemblyStateAsText;
+  @ApiModelProperty(example = "null", value = "stav")
+  public String getAssemblystateastext() {
+    return assemblystateastext;
   }
 
-  public void setAssemblyStateAsText(String assemblyStateAsText) {
-    this.assemblyStateAsText = assemblyStateAsText;
+  public void setAssemblystateastext(String assemblystateastext) {
+    this.assemblystateastext = assemblystateastext;
   }
 
-  public Serviceassemblyform totalPriceWithoutVAT(Double totalPriceWithoutVAT) {
-    this.totalPriceWithoutVAT = totalPriceWithoutVAT;
+  public Serviceassemblyform totalpricewithoutvat(Double totalpricewithoutvat) {
+    this.totalpricewithoutvat = totalpricewithoutvat;
     return this;
   }
 
    /**
-   * Celk.cena bez DPH
-   * @return totalPriceWithoutVAT
+   * celk.cena bez dph
+   * @return totalpricewithoutvat
   **/
-  @ApiModelProperty(example = "null", value = "Celk.cena bez DPH")
-  public Double getTotalPriceWithoutVAT() {
-    return totalPriceWithoutVAT;
+  @ApiModelProperty(example = "null", value = "celk.cena bez dph")
+  public Double getTotalpricewithoutvat() {
+    return totalpricewithoutvat;
   }
 
-  public void setTotalPriceWithoutVAT(Double totalPriceWithoutVAT) {
-    this.totalPriceWithoutVAT = totalPriceWithoutVAT;
+  public void setTotalpricewithoutvat(Double totalpricewithoutvat) {
+    this.totalpricewithoutvat = totalpricewithoutvat;
   }
 
-  public Serviceassemblyform totalPriceWithVAT(Double totalPriceWithVAT) {
-    this.totalPriceWithVAT = totalPriceWithVAT;
+  public Serviceassemblyform totalpricewithvat(Double totalpricewithvat) {
+    this.totalpricewithvat = totalpricewithvat;
     return this;
   }
 
    /**
-   * Celk.cena s DPH
-   * @return totalPriceWithVAT
+   * celk.cena s dph
+   * @return totalpricewithvat
   **/
-  @ApiModelProperty(example = "null", value = "Celk.cena s DPH")
-  public Double getTotalPriceWithVAT() {
-    return totalPriceWithVAT;
+  @ApiModelProperty(example = "null", value = "celk.cena s dph")
+  public Double getTotalpricewithvat() {
+    return totalpricewithvat;
   }
 
-  public void setTotalPriceWithVAT(Double totalPriceWithVAT) {
-    this.totalPriceWithVAT = totalPriceWithVAT;
+  public void setTotalpricewithvat(Double totalpricewithvat) {
+    this.totalpricewithvat = totalpricewithvat;
   }
 
-  public Serviceassemblyform materialOnStockState(Double materialOnStockState) {
-    this.materialOnStockState = materialOnStockState;
+  public Serviceassemblyform materialonstockstate(Double materialonstockstate) {
+    this.materialonstockstate = materialonstockstate;
     return this;
   }
 
    /**
-   * Pokrytí skladem
-   * @return materialOnStockState
+   * pokrytí skladem
+   * @return materialonstockstate
   **/
-  @ApiModelProperty(example = "null", value = "Pokrytí skladem")
-  public Double getMaterialOnStockState() {
-    return materialOnStockState;
+  @ApiModelProperty(example = "null", value = "pokrytí skladem")
+  public Double getMaterialonstockstate() {
+    return materialonstockstate;
   }
 
-  public void setMaterialOnStockState(Double materialOnStockState) {
-    this.materialOnStockState = materialOnStockState;
+  public void setMaterialonstockstate(Double materialonstockstate) {
+    this.materialonstockstate = materialonstockstate;
   }
 
-  public Serviceassemblyform materialOutStockingState(Double materialOutStockingState) {
-    this.materialOutStockingState = materialOutStockingState;
+  public Serviceassemblyform materialoutstockingstate(Double materialoutstockingstate) {
+    this.materialoutstockingstate = materialoutstockingstate;
     return this;
   }
 
    /**
-   * Vyskladněno
-   * @return materialOutStockingState
+   * vyskladněno
+   * @return materialoutstockingstate
   **/
-  @ApiModelProperty(example = "null", value = "Vyskladněno")
-  public Double getMaterialOutStockingState() {
-    return materialOutStockingState;
+  @ApiModelProperty(example = "null", value = "vyskladněno")
+  public Double getMaterialoutstockingstate() {
+    return materialoutstockingstate;
   }
 
-  public void setMaterialOutStockingState(Double materialOutStockingState) {
-    this.materialOutStockingState = materialOutStockingState;
+  public void setMaterialoutstockingstate(Double materialoutstockingstate) {
+    this.materialoutstockingstate = materialoutstockingstate;
   }
 
-  public Serviceassemblyform cooperationReturn(List<Serviceassemblycoopreceiving> cooperationReturn) {
-    this.cooperationReturn = cooperationReturn;
+  public Serviceassemblyform cooperationreturn(List<Serviceassemblycoopreceiving> cooperationreturn) {
+    this.cooperationreturn = cooperationreturn;
     return this;
   }
 
-  public Serviceassemblyform addCooperationReturnItem(Serviceassemblycoopreceiving cooperationReturnItem) {
-    this.cooperationReturn.add(cooperationReturnItem);
+  public Serviceassemblyform addCooperationreturnItem(Serviceassemblycoopreceiving cooperationreturnItem) {
+    this.cooperationreturn.add(cooperationreturnItem);
     return this;
   }
 
    /**
-   * Návraty z kooperace; kolekce BO Vrácení zpět z koop. pro ML [nepersistentní položka]
-   * @return cooperationReturn
+   * návraty z kooperace; kolekce bo vrácení zpět z koop. pro ml [nepersistentní položka]
+   * @return cooperationreturn
   **/
-  @ApiModelProperty(example = "null", value = "Návraty z kooperace; kolekce BO Vrácení zpět z koop. pro ML [nepersistentní položka]")
-  public List<Serviceassemblycoopreceiving> getCooperationReturn() {
-    return cooperationReturn;
+  @ApiModelProperty(example = "null", value = "návraty z kooperace; kolekce bo vrácení zpět z koop. pro ml [nepersistentní položka]")
+  public List<Serviceassemblycoopreceiving> getCooperationreturn() {
+    return cooperationreturn;
   }
 
-  public void setCooperationReturn(List<Serviceassemblycoopreceiving> cooperationReturn) {
-    this.cooperationReturn = cooperationReturn;
+  public void setCooperationreturn(List<Serviceassemblycoopreceiving> cooperationreturn) {
+    this.cooperationreturn = cooperationreturn;
   }
 
 
@@ -674,42 +710,42 @@ public class Serviceassemblyform   {
       return false;
     }
     Serviceassemblyform serviceassemblyform = (Serviceassemblyform) o;
-    return Objects.equals(this.displayName, serviceassemblyform.displayName) &&
-        Objects.equals(this.ID, serviceassemblyform.ID) &&
-        Objects.equals(this.classID, serviceassemblyform.classID) &&
-        Objects.equals(this.objVersion, serviceassemblyform.objVersion) &&
-        Objects.equals(this.serviceDocumentID, serviceassemblyform.serviceDocumentID) &&
-        Objects.equals(this.ordNumber, serviceassemblyform.ordNumber) &&
+    return Objects.equals(this.displayname, serviceassemblyform.displayname) &&
+        Objects.equals(this.id, serviceassemblyform.id) &&
+        Objects.equals(this.classid, serviceassemblyform.classid) &&
+        Objects.equals(this.objversion, serviceassemblyform.objversion) &&
+        Objects.equals(this.servicedocumentId, serviceassemblyform.servicedocumentId) &&
+        Objects.equals(this.ordnumber, serviceassemblyform.ordnumber) &&
         Objects.equals(this.cooperation, serviceassemblyform.cooperation) &&
-        Objects.equals(this.cooperationFirmID, serviceassemblyform.cooperationFirmID) &&
-        Objects.equals(this.cooperationFirmOfficeID, serviceassemblyform.cooperationFirmOfficeID) &&
-        Objects.equals(this.cooperationPersonID, serviceassemblyform.cooperationPersonID) &&
-        Objects.equals(this.cooperationSurcharge, serviceassemblyform.cooperationSurcharge) &&
-        Objects.equals(this.serviceWorkSpaceID, serviceassemblyform.serviceWorkSpaceID) &&
-        Objects.equals(this.assemblyState, serviceassemblyform.assemblyState) &&
-        Objects.equals(this.startDateDATE, serviceassemblyform.startDateDATE) &&
-        Objects.equals(this.endDateDATE, serviceassemblyform.endDateDATE) &&
-        Objects.equals(this.responsibleRoleID, serviceassemblyform.responsibleRoleID) &&
+        Objects.equals(this.cooperationfirmId, serviceassemblyform.cooperationfirmId) &&
+        Objects.equals(this.cooperationfirmofficeId, serviceassemblyform.cooperationfirmofficeId) &&
+        Objects.equals(this.cooperationpersonId, serviceassemblyform.cooperationpersonId) &&
+        Objects.equals(this.cooperationsurcharge, serviceassemblyform.cooperationsurcharge) &&
+        Objects.equals(this.serviceworkspaceId, serviceassemblyform.serviceworkspaceId) &&
+        Objects.equals(this.assemblystate, serviceassemblyform.assemblystate) &&
+        Objects.equals(this.startdatedate, serviceassemblyform.startdatedate) &&
+        Objects.equals(this.enddatedate, serviceassemblyform.enddatedate) &&
+        Objects.equals(this.responsibleroleId, serviceassemblyform.responsibleroleId) &&
         Objects.equals(this.note, serviceassemblyform.note) &&
-        Objects.equals(this.cooperationState, serviceassemblyform.cooperationState) &&
-        Objects.equals(this.cooperationOutDateDATE, serviceassemblyform.cooperationOutDateDATE) &&
-        Objects.equals(this.cooperationBackPlanDateDATE, serviceassemblyform.cooperationBackPlanDateDATE) &&
-        Objects.equals(this.cooperationBackDateDATE, serviceassemblyform.cooperationBackDateDATE) &&
-        Objects.equals(this.coopTransferOutID, serviceassemblyform.coopTransferOutID) &&
-        Objects.equals(this.coopTransferBackID, serviceassemblyform.coopTransferBackID) &&
-        Objects.equals(this.allowIntermediation, serviceassemblyform.allowIntermediation) &&
+        Objects.equals(this.cooperationstate, serviceassemblyform.cooperationstate) &&
+        Objects.equals(this.cooperationoutdatedate, serviceassemblyform.cooperationoutdatedate) &&
+        Objects.equals(this.cooperationbackplandatedate, serviceassemblyform.cooperationbackplandatedate) &&
+        Objects.equals(this.cooperationbackdatedate, serviceassemblyform.cooperationbackdatedate) &&
+        Objects.equals(this.cooptransferoutId, serviceassemblyform.cooptransferoutId) &&
+        Objects.equals(this.cooptransferbackId, serviceassemblyform.cooptransferbackId) &&
+        Objects.equals(this.allowintermediation, serviceassemblyform.allowintermediation) &&
         Objects.equals(this.rows, serviceassemblyform.rows) &&
-        Objects.equals(this.assemblyStateAsText, serviceassemblyform.assemblyStateAsText) &&
-        Objects.equals(this.totalPriceWithoutVAT, serviceassemblyform.totalPriceWithoutVAT) &&
-        Objects.equals(this.totalPriceWithVAT, serviceassemblyform.totalPriceWithVAT) &&
-        Objects.equals(this.materialOnStockState, serviceassemblyform.materialOnStockState) &&
-        Objects.equals(this.materialOutStockingState, serviceassemblyform.materialOutStockingState) &&
-        Objects.equals(this.cooperationReturn, serviceassemblyform.cooperationReturn);
+        Objects.equals(this.assemblystateastext, serviceassemblyform.assemblystateastext) &&
+        Objects.equals(this.totalpricewithoutvat, serviceassemblyform.totalpricewithoutvat) &&
+        Objects.equals(this.totalpricewithvat, serviceassemblyform.totalpricewithvat) &&
+        Objects.equals(this.materialonstockstate, serviceassemblyform.materialonstockstate) &&
+        Objects.equals(this.materialoutstockingstate, serviceassemblyform.materialoutstockingstate) &&
+        Objects.equals(this.cooperationreturn, serviceassemblyform.cooperationreturn);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, serviceDocumentID, ordNumber, cooperation, cooperationFirmID, cooperationFirmOfficeID, cooperationPersonID, cooperationSurcharge, serviceWorkSpaceID, assemblyState, startDateDATE, endDateDATE, responsibleRoleID, note, cooperationState, cooperationOutDateDATE, cooperationBackPlanDateDATE, cooperationBackDateDATE, coopTransferOutID, coopTransferBackID, allowIntermediation, rows, assemblyStateAsText, totalPriceWithoutVAT, totalPriceWithVAT, materialOnStockState, materialOutStockingState, cooperationReturn);
+    return Objects.hash(displayname, id, classid, objversion, servicedocumentId, ordnumber, cooperation, cooperationfirmId, cooperationfirmofficeId, cooperationpersonId, cooperationsurcharge, serviceworkspaceId, assemblystate, startdatedate, enddatedate, responsibleroleId, note, cooperationstate, cooperationoutdatedate, cooperationbackplandatedate, cooperationbackdatedate, cooptransferoutId, cooptransferbackId, allowintermediation, rows, assemblystateastext, totalpricewithoutvat, totalpricewithvat, materialonstockstate, materialoutstockingstate, cooperationreturn);
   }
 
   @Override
@@ -717,37 +753,37 @@ public class Serviceassemblyform   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Serviceassemblyform {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    serviceDocumentID: ").append(toIndentedString(serviceDocumentID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    servicedocumentId: ").append(toIndentedString(servicedocumentId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
     sb.append("    cooperation: ").append(toIndentedString(cooperation)).append("\n");
-    sb.append("    cooperationFirmID: ").append(toIndentedString(cooperationFirmID)).append("\n");
-    sb.append("    cooperationFirmOfficeID: ").append(toIndentedString(cooperationFirmOfficeID)).append("\n");
-    sb.append("    cooperationPersonID: ").append(toIndentedString(cooperationPersonID)).append("\n");
-    sb.append("    cooperationSurcharge: ").append(toIndentedString(cooperationSurcharge)).append("\n");
-    sb.append("    serviceWorkSpaceID: ").append(toIndentedString(serviceWorkSpaceID)).append("\n");
-    sb.append("    assemblyState: ").append(toIndentedString(assemblyState)).append("\n");
-    sb.append("    startDateDATE: ").append(toIndentedString(startDateDATE)).append("\n");
-    sb.append("    endDateDATE: ").append(toIndentedString(endDateDATE)).append("\n");
-    sb.append("    responsibleRoleID: ").append(toIndentedString(responsibleRoleID)).append("\n");
+    sb.append("    cooperationfirmId: ").append(toIndentedString(cooperationfirmId)).append("\n");
+    sb.append("    cooperationfirmofficeId: ").append(toIndentedString(cooperationfirmofficeId)).append("\n");
+    sb.append("    cooperationpersonId: ").append(toIndentedString(cooperationpersonId)).append("\n");
+    sb.append("    cooperationsurcharge: ").append(toIndentedString(cooperationsurcharge)).append("\n");
+    sb.append("    serviceworkspaceId: ").append(toIndentedString(serviceworkspaceId)).append("\n");
+    sb.append("    assemblystate: ").append(toIndentedString(assemblystate)).append("\n");
+    sb.append("    startdatedate: ").append(toIndentedString(startdatedate)).append("\n");
+    sb.append("    enddatedate: ").append(toIndentedString(enddatedate)).append("\n");
+    sb.append("    responsibleroleId: ").append(toIndentedString(responsibleroleId)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
-    sb.append("    cooperationState: ").append(toIndentedString(cooperationState)).append("\n");
-    sb.append("    cooperationOutDateDATE: ").append(toIndentedString(cooperationOutDateDATE)).append("\n");
-    sb.append("    cooperationBackPlanDateDATE: ").append(toIndentedString(cooperationBackPlanDateDATE)).append("\n");
-    sb.append("    cooperationBackDateDATE: ").append(toIndentedString(cooperationBackDateDATE)).append("\n");
-    sb.append("    coopTransferOutID: ").append(toIndentedString(coopTransferOutID)).append("\n");
-    sb.append("    coopTransferBackID: ").append(toIndentedString(coopTransferBackID)).append("\n");
-    sb.append("    allowIntermediation: ").append(toIndentedString(allowIntermediation)).append("\n");
+    sb.append("    cooperationstate: ").append(toIndentedString(cooperationstate)).append("\n");
+    sb.append("    cooperationoutdatedate: ").append(toIndentedString(cooperationoutdatedate)).append("\n");
+    sb.append("    cooperationbackplandatedate: ").append(toIndentedString(cooperationbackplandatedate)).append("\n");
+    sb.append("    cooperationbackdatedate: ").append(toIndentedString(cooperationbackdatedate)).append("\n");
+    sb.append("    cooptransferoutId: ").append(toIndentedString(cooptransferoutId)).append("\n");
+    sb.append("    cooptransferbackId: ").append(toIndentedString(cooptransferbackId)).append("\n");
+    sb.append("    allowintermediation: ").append(toIndentedString(allowintermediation)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    assemblyStateAsText: ").append(toIndentedString(assemblyStateAsText)).append("\n");
-    sb.append("    totalPriceWithoutVAT: ").append(toIndentedString(totalPriceWithoutVAT)).append("\n");
-    sb.append("    totalPriceWithVAT: ").append(toIndentedString(totalPriceWithVAT)).append("\n");
-    sb.append("    materialOnStockState: ").append(toIndentedString(materialOnStockState)).append("\n");
-    sb.append("    materialOutStockingState: ").append(toIndentedString(materialOutStockingState)).append("\n");
-    sb.append("    cooperationReturn: ").append(toIndentedString(cooperationReturn)).append("\n");
+    sb.append("    assemblystateastext: ").append(toIndentedString(assemblystateastext)).append("\n");
+    sb.append("    totalpricewithoutvat: ").append(toIndentedString(totalpricewithoutvat)).append("\n");
+    sb.append("    totalpricewithvat: ").append(toIndentedString(totalpricewithvat)).append("\n");
+    sb.append("    materialonstockstate: ").append(toIndentedString(materialonstockstate)).append("\n");
+    sb.append("    materialoutstockingstate: ").append(toIndentedString(materialoutstockingstate)).append("\n");
+    sb.append("    cooperationreturn: ").append(toIndentedString(cooperationreturn)).append("\n");
     sb.append("}");
     return sb.toString();
   }

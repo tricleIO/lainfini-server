@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,138 +34,174 @@ import java.util.Objects;
 /**
  * Mlbparameter
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Mlbparameter   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("NormWinterFromTo")
-  private String normWinterFromTo = null;
+  @SerializedName("normwinterfromto")
+  private String normwinterfromto = null;
 
-  @SerializedName("NormSpringFromTo")
-  private String normSpringFromTo = null;
+  @SerializedName("normspringfromto")
+  private String normspringfromto = null;
 
-  @SerializedName("NormSummerFromTo")
-  private String normSummerFromTo = null;
+  @SerializedName("normsummerfromto")
+  private String normsummerfromto = null;
 
-  @SerializedName("NormAutumnFromTo")
-  private String normAutumnFromTo = null;
+  @SerializedName("normautumnfromto")
+  private String normautumnfromto = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Mlbparameter normWinterFromTo(String normWinterFromTo) {
-    this.normWinterFromTo = normWinterFromTo;
+  public Mlbparameter displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Období pro normu Zimní [persistentní položka]
-   * @return normWinterFromTo
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Období pro normu Zimní [persistentní položka]")
-  public String getNormWinterFromTo() {
-    return normWinterFromTo;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setNormWinterFromTo(String normWinterFromTo) {
-    this.normWinterFromTo = normWinterFromTo;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Mlbparameter normSpringFromTo(String normSpringFromTo) {
-    this.normSpringFromTo = normSpringFromTo;
+  public Mlbparameter id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Období pro normu Střední (Jaro) [persistentní položka]
-   * @return normSpringFromTo
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Období pro normu Střední (Jaro) [persistentní položka]")
-  public String getNormSpringFromTo() {
-    return normSpringFromTo;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setNormSpringFromTo(String normSpringFromTo) {
-    this.normSpringFromTo = normSpringFromTo;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Mlbparameter normSummerFromTo(String normSummerFromTo) {
-    this.normSummerFromTo = normSummerFromTo;
+  public Mlbparameter classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Období pro normu Letní [persistentní položka]
-   * @return normSummerFromTo
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Období pro normu Letní [persistentní položka]")
-  public String getNormSummerFromTo() {
-    return normSummerFromTo;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setNormSummerFromTo(String normSummerFromTo) {
-    this.normSummerFromTo = normSummerFromTo;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Mlbparameter normAutumnFromTo(String normAutumnFromTo) {
-    this.normAutumnFromTo = normAutumnFromTo;
+  public Mlbparameter objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Období pro normu Střední (Podzim) [persistentní položka]
-   * @return normAutumnFromTo
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Období pro normu Střední (Podzim) [persistentní položka]")
-  public String getNormAutumnFromTo() {
-    return normAutumnFromTo;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setNormAutumnFromTo(String normAutumnFromTo) {
-    this.normAutumnFromTo = normAutumnFromTo;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Mlbparameter normwinterfromto(String normwinterfromto) {
+    this.normwinterfromto = normwinterfromto;
+    return this;
+  }
+
+   /**
+   * období pro normu zimní [persistentní položka]
+   * @return normwinterfromto
+  **/
+  @ApiModelProperty(example = "null", value = "období pro normu zimní [persistentní položka]")
+  public String getNormwinterfromto() {
+    return normwinterfromto;
+  }
+
+  public void setNormwinterfromto(String normwinterfromto) {
+    this.normwinterfromto = normwinterfromto;
+  }
+
+  public Mlbparameter normspringfromto(String normspringfromto) {
+    this.normspringfromto = normspringfromto;
+    return this;
+  }
+
+   /**
+   * období pro normu střední (jaro) [persistentní položka]
+   * @return normspringfromto
+  **/
+  @ApiModelProperty(example = "null", value = "období pro normu střední (jaro) [persistentní položka]")
+  public String getNormspringfromto() {
+    return normspringfromto;
+  }
+
+  public void setNormspringfromto(String normspringfromto) {
+    this.normspringfromto = normspringfromto;
+  }
+
+  public Mlbparameter normsummerfromto(String normsummerfromto) {
+    this.normsummerfromto = normsummerfromto;
+    return this;
+  }
+
+   /**
+   * období pro normu letní [persistentní položka]
+   * @return normsummerfromto
+  **/
+  @ApiModelProperty(example = "null", value = "období pro normu letní [persistentní položka]")
+  public String getNormsummerfromto() {
+    return normsummerfromto;
+  }
+
+  public void setNormsummerfromto(String normsummerfromto) {
+    this.normsummerfromto = normsummerfromto;
+  }
+
+  public Mlbparameter normautumnfromto(String normautumnfromto) {
+    this.normautumnfromto = normautumnfromto;
+    return this;
+  }
+
+   /**
+   * období pro normu střední (podzim) [persistentní položka]
+   * @return normautumnfromto
+  **/
+  @ApiModelProperty(example = "null", value = "období pro normu střední (podzim) [persistentní položka]")
+  public String getNormautumnfromto() {
+    return normautumnfromto;
+  }
+
+  public void setNormautumnfromto(String normautumnfromto) {
+    this.normautumnfromto = normautumnfromto;
   }
 
 
@@ -178,19 +214,19 @@ public class Mlbparameter   {
       return false;
     }
     Mlbparameter mlbparameter = (Mlbparameter) o;
-    return Objects.equals(this.displayName, mlbparameter.displayName) &&
-        Objects.equals(this.ID, mlbparameter.ID) &&
-        Objects.equals(this.classID, mlbparameter.classID) &&
-        Objects.equals(this.objVersion, mlbparameter.objVersion) &&
-        Objects.equals(this.normWinterFromTo, mlbparameter.normWinterFromTo) &&
-        Objects.equals(this.normSpringFromTo, mlbparameter.normSpringFromTo) &&
-        Objects.equals(this.normSummerFromTo, mlbparameter.normSummerFromTo) &&
-        Objects.equals(this.normAutumnFromTo, mlbparameter.normAutumnFromTo);
+    return Objects.equals(this.displayname, mlbparameter.displayname) &&
+        Objects.equals(this.id, mlbparameter.id) &&
+        Objects.equals(this.classid, mlbparameter.classid) &&
+        Objects.equals(this.objversion, mlbparameter.objversion) &&
+        Objects.equals(this.normwinterfromto, mlbparameter.normwinterfromto) &&
+        Objects.equals(this.normspringfromto, mlbparameter.normspringfromto) &&
+        Objects.equals(this.normsummerfromto, mlbparameter.normsummerfromto) &&
+        Objects.equals(this.normautumnfromto, mlbparameter.normautumnfromto);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, normWinterFromTo, normSpringFromTo, normSummerFromTo, normAutumnFromTo);
+    return Objects.hash(displayname, id, classid, objversion, normwinterfromto, normspringfromto, normsummerfromto, normautumnfromto);
   }
 
   @Override
@@ -198,14 +234,14 @@ public class Mlbparameter   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Mlbparameter {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    normWinterFromTo: ").append(toIndentedString(normWinterFromTo)).append("\n");
-    sb.append("    normSpringFromTo: ").append(toIndentedString(normSpringFromTo)).append("\n");
-    sb.append("    normSummerFromTo: ").append(toIndentedString(normSummerFromTo)).append("\n");
-    sb.append("    normAutumnFromTo: ").append(toIndentedString(normAutumnFromTo)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    normwinterfromto: ").append(toIndentedString(normwinterfromto)).append("\n");
+    sb.append("    normspringfromto: ").append(toIndentedString(normspringfromto)).append("\n");
+    sb.append("    normsummerfromto: ").append(toIndentedString(normsummerfromto)).append("\n");
+    sb.append("    normautumnfromto: ").append(toIndentedString(normautumnfromto)).append("\n");
     sb.append("}");
     return sb.toString();
   }

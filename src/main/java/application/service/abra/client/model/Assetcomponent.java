@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,147 +37,192 @@ import java.util.Objects;
 /**
  * Assetcomponent
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Assetcomponent   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("InventorySubNr")
-  private String inventorySubNr = null;
+  @SerializedName("inventorysubnr")
+  private String inventorysubnr = null;
 
-  @SerializedName("EAN")
-  private String EAN = null;
+  @SerializedName("ean")
+  private String ean = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("PutInDate$DATE")
-  private DateTime putInDateDATE = null;
+  @SerializedName("putindate$date")
+  private DateTime putindatedate = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Comment")
+  @SerializedName("comment")
   private String comment = null;
 
-  @SerializedName("PurchasePrice")
-  private Double purchasePrice = null;
+  @SerializedName("purchaseprice")
+  private Double purchaseprice = null;
 
-  @SerializedName("TaxBasePriceInitial")
-  private Double taxBasePriceInitial = null;
+  @SerializedName("taxbasepriceinitial")
+  private Double taxbasepriceinitial = null;
 
-  @SerializedName("TaxBasePriceEdit")
-  private Double taxBasePriceEdit = null;
+  @SerializedName("taxbasepriceedit")
+  private Double taxbasepriceedit = null;
 
-  @SerializedName("AccBasePriceInitial")
-  private Double accBasePriceInitial = null;
+  @SerializedName("accbasepriceinitial")
+  private Double accbasepriceinitial = null;
 
-  @SerializedName("AccBasePriceEdit")
-  private Double accBasePriceEdit = null;
+  @SerializedName("accbasepriceedit")
+  private Double accbasepriceedit = null;
 
-  @SerializedName("TaxRemainderPriceInitial")
-  private Double taxRemainderPriceInitial = null;
+  @SerializedName("taxremainderpriceinitial")
+  private Double taxremainderpriceinitial = null;
 
-  @SerializedName("AccRemainderPriceInitial")
-  private Double accRemainderPriceInitial = null;
+  @SerializedName("accremainderpriceinitial")
+  private Double accremainderpriceinitial = null;
 
-  @SerializedName("TaxBasePriceActual")
-  private Double taxBasePriceActual = null;
+  @SerializedName("taxbasepriceactual")
+  private Double taxbasepriceactual = null;
 
-  @SerializedName("AccBasePriceActual")
-  private Double accBasePriceActual = null;
+  @SerializedName("accbasepriceactual")
+  private Double accbasepriceactual = null;
 
-  @SerializedName("TaxRemainderPriceActual")
-  private Double taxRemainderPriceActual = null;
+  @SerializedName("taxremainderpriceactual")
+  private Double taxremainderpriceactual = null;
 
-  @SerializedName("AccRemainderPriceActual")
-  private Double accRemainderPriceActual = null;
+  @SerializedName("accremainderpriceactual")
+  private Double accremainderpriceactual = null;
 
-  @SerializedName("TakenOutDate$DATE")
-  private DateTime takenOutDateDATE = null;
+  @SerializedName("takenoutdate$date")
+  private DateTime takenoutdatedate = null;
 
-  @SerializedName("TakenOutReason")
-  private String takenOutReason = null;
+  @SerializedName("takenoutreason")
+  private String takenoutreason = null;
 
-  @SerializedName("TakenOutBy_ID")
-  private String takenOutByID = null;
+  @SerializedName("takenoutby_id")
+  private String takenoutbyId = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("ComponentInitiallyTakenOut")
-  private Boolean componentInitiallyTakenOut = null;
+  @SerializedName("componentinitiallytakenout")
+  private Boolean componentinitiallytakenout = null;
 
-  @SerializedName("ComponentActuallyTakenOut")
-  private Boolean componentActuallyTakenOut = null;
+  @SerializedName("componentactuallytakenout")
+  private Boolean componentactuallytakenout = null;
 
-  @SerializedName("AssetPeriods")
-  private List<Assetcomponentperiod> assetPeriods = new ArrayList<Assetcomponentperiod>();
+  @SerializedName("assetperiods")
+  private List<Assetcomponentperiod> assetperiods = new ArrayList<Assetcomponentperiod>();
 
-  @SerializedName("PostponedTaxDeprec")
-  private Double postponedTaxDeprec = null;
+  @SerializedName("postponedtaxdeprec")
+  private Double postponedtaxdeprec = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Assetcomponent displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Assetcomponent id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Assetcomponent classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Assetcomponent objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Karta majetku [persistentní položka]
-   * @return parentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Karta majetku [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Assetcomponent parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu karta majetku [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu karta majetku [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
   public Assetcomponent code(String code) {
@@ -186,10 +231,10 @@ public class Assetcomponent   {
   }
 
    /**
-   * Kód CPA [persistentní položka]
+   * kód cpa [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód CPA [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód cpa [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -198,40 +243,40 @@ public class Assetcomponent   {
     this.code = code;
   }
 
-  public Assetcomponent inventorySubNr(String inventorySubNr) {
-    this.inventorySubNr = inventorySubNr;
+  public Assetcomponent inventorysubnr(String inventorysubnr) {
+    this.inventorysubnr = inventorysubnr;
     return this;
   }
 
    /**
-   * Inventární subčíslo [persistentní položka]
-   * @return inventorySubNr
+   * inventární subčíslo [persistentní položka]
+   * @return inventorysubnr
   **/
-  @ApiModelProperty(example = "null", value = "Inventární subčíslo [persistentní položka]")
-  public String getInventorySubNr() {
-    return inventorySubNr;
+  @ApiModelProperty(example = "null", value = "inventární subčíslo [persistentní položka]")
+  public String getInventorysubnr() {
+    return inventorysubnr;
   }
 
-  public void setInventorySubNr(String inventorySubNr) {
-    this.inventorySubNr = inventorySubNr;
+  public void setInventorysubnr(String inventorysubnr) {
+    this.inventorysubnr = inventorysubnr;
   }
 
-  public Assetcomponent EAN(String EAN) {
-    this.EAN = EAN;
+  public Assetcomponent ean(String ean) {
+    this.ean = ean;
     return this;
   }
 
    /**
-   * EAN [persistentní položka]
-   * @return EAN
+   * ean [persistentní položka]
+   * @return ean
   **/
-  @ApiModelProperty(example = "null", value = "EAN [persistentní položka]")
-  public String getEAN() {
-    return EAN;
+  @ApiModelProperty(example = "null", value = "ean [persistentní položka]")
+  public String getEan() {
+    return ean;
   }
 
-  public void setEAN(String EAN) {
-    this.EAN = EAN;
+  public void setEan(String ean) {
+    this.ean = ean;
   }
 
   public Assetcomponent name(String name) {
@@ -240,10 +285,10 @@ public class Assetcomponent   {
   }
 
    /**
-   * Název prvku [persistentní položka]
+   * název prvku [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název prvku [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název prvku [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -252,22 +297,22 @@ public class Assetcomponent   {
     this.name = name;
   }
 
-  public Assetcomponent putInDateDATE(DateTime putInDateDATE) {
-    this.putInDateDATE = putInDateDATE;
+  public Assetcomponent putindatedate(DateTime putindatedate) {
+    this.putindatedate = putindatedate;
     return this;
   }
 
    /**
-   * Zařazen [persistentní položka]
-   * @return putInDateDATE
+   * zařazen [persistentní položka]
+   * @return putindatedate
   **/
-  @ApiModelProperty(example = "null", value = "Zařazen [persistentní položka]")
-  public DateTime getPutInDateDATE() {
-    return putInDateDATE;
+  @ApiModelProperty(example = "null", value = "zařazen [persistentní položka]")
+  public DateTime getPutindatedate() {
+    return putindatedate;
   }
 
-  public void setPutInDateDATE(DateTime putInDateDATE) {
-    this.putInDateDATE = putInDateDATE;
+  public void setPutindatedate(DateTime putindatedate) {
+    this.putindatedate = putindatedate;
   }
 
   public Assetcomponent note(String note) {
@@ -276,10 +321,10 @@ public class Assetcomponent   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -294,10 +339,10 @@ public class Assetcomponent   {
   }
 
    /**
-   * Poznámka
+   * poznámka
    * @return comment
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka")
+  @ApiModelProperty(example = "null", value = "poznámka")
   public String getComment() {
     return comment;
   }
@@ -306,324 +351,369 @@ public class Assetcomponent   {
     this.comment = comment;
   }
 
-  public Assetcomponent purchasePrice(Double purchasePrice) {
-    this.purchasePrice = purchasePrice;
+  public Assetcomponent purchaseprice(Double purchaseprice) {
+    this.purchaseprice = purchaseprice;
     return this;
   }
 
    /**
-   * Nákupní cena [persistentní položka]
-   * @return purchasePrice
+   * nákupní cena [persistentní položka]
+   * @return purchaseprice
   **/
-  @ApiModelProperty(example = "null", value = "Nákupní cena [persistentní položka]")
-  public Double getPurchasePrice() {
-    return purchasePrice;
+  @ApiModelProperty(example = "null", value = "nákupní cena [persistentní položka]")
+  public Double getPurchaseprice() {
+    return purchaseprice;
   }
 
-  public void setPurchasePrice(Double purchasePrice) {
-    this.purchasePrice = purchasePrice;
+  public void setPurchaseprice(Double purchaseprice) {
+    this.purchaseprice = purchaseprice;
   }
 
-  public Assetcomponent taxBasePriceInitial(Double taxBasePriceInitial) {
-    this.taxBasePriceInitial = taxBasePriceInitial;
+  public Assetcomponent taxbasepriceinitial(Double taxbasepriceinitial) {
+    this.taxbasepriceinitial = taxbasepriceinitial;
     return this;
   }
 
    /**
-   * Vých.daň.vstup.c. [persistentní položka]
-   * @return taxBasePriceInitial
+   * vých.daň.vstup.c. [persistentní položka]
+   * @return taxbasepriceinitial
   **/
-  @ApiModelProperty(example = "null", value = "Vých.daň.vstup.c. [persistentní položka]")
-  public Double getTaxBasePriceInitial() {
-    return taxBasePriceInitial;
+  @ApiModelProperty(example = "null", value = "vých.daň.vstup.c. [persistentní položka]")
+  public Double getTaxbasepriceinitial() {
+    return taxbasepriceinitial;
   }
 
-  public void setTaxBasePriceInitial(Double taxBasePriceInitial) {
-    this.taxBasePriceInitial = taxBasePriceInitial;
+  public void setTaxbasepriceinitial(Double taxbasepriceinitial) {
+    this.taxbasepriceinitial = taxbasepriceinitial;
   }
 
-  public Assetcomponent taxBasePriceEdit(Double taxBasePriceEdit) {
-    this.taxBasePriceEdit = taxBasePriceEdit;
+  public Assetcomponent taxbasepriceedit(Double taxbasepriceedit) {
+    this.taxbasepriceedit = taxbasepriceedit;
     return this;
   }
 
    /**
-   * Editovaná daň.vst.cena prvku
-   * @return taxBasePriceEdit
+   * editovaná daň.vst.cena prvku
+   * @return taxbasepriceedit
   **/
-  @ApiModelProperty(example = "null", value = "Editovaná daň.vst.cena prvku")
-  public Double getTaxBasePriceEdit() {
-    return taxBasePriceEdit;
+  @ApiModelProperty(example = "null", value = "editovaná daň.vst.cena prvku")
+  public Double getTaxbasepriceedit() {
+    return taxbasepriceedit;
   }
 
-  public void setTaxBasePriceEdit(Double taxBasePriceEdit) {
-    this.taxBasePriceEdit = taxBasePriceEdit;
+  public void setTaxbasepriceedit(Double taxbasepriceedit) {
+    this.taxbasepriceedit = taxbasepriceedit;
   }
 
-  public Assetcomponent accBasePriceInitial(Double accBasePriceInitial) {
-    this.accBasePriceInitial = accBasePriceInitial;
+  public Assetcomponent accbasepriceinitial(Double accbasepriceinitial) {
+    this.accbasepriceinitial = accbasepriceinitial;
     return this;
   }
 
    /**
-   * Vých.účet.vstup.c. [persistentní položka]
-   * @return accBasePriceInitial
+   * vých.účet.vstup.c. [persistentní položka]
+   * @return accbasepriceinitial
   **/
-  @ApiModelProperty(example = "null", value = "Vých.účet.vstup.c. [persistentní položka]")
-  public Double getAccBasePriceInitial() {
-    return accBasePriceInitial;
+  @ApiModelProperty(example = "null", value = "vých.účet.vstup.c. [persistentní položka]")
+  public Double getAccbasepriceinitial() {
+    return accbasepriceinitial;
   }
 
-  public void setAccBasePriceInitial(Double accBasePriceInitial) {
-    this.accBasePriceInitial = accBasePriceInitial;
+  public void setAccbasepriceinitial(Double accbasepriceinitial) {
+    this.accbasepriceinitial = accbasepriceinitial;
   }
 
-  public Assetcomponent accBasePriceEdit(Double accBasePriceEdit) {
-    this.accBasePriceEdit = accBasePriceEdit;
+  public Assetcomponent accbasepriceedit(Double accbasepriceedit) {
+    this.accbasepriceedit = accbasepriceedit;
     return this;
   }
 
    /**
-   * Editovaná úč.vst.cena prvku
-   * @return accBasePriceEdit
+   * editovaná úč.vst.cena prvku
+   * @return accbasepriceedit
   **/
-  @ApiModelProperty(example = "null", value = "Editovaná úč.vst.cena prvku")
-  public Double getAccBasePriceEdit() {
-    return accBasePriceEdit;
+  @ApiModelProperty(example = "null", value = "editovaná úč.vst.cena prvku")
+  public Double getAccbasepriceedit() {
+    return accbasepriceedit;
   }
 
-  public void setAccBasePriceEdit(Double accBasePriceEdit) {
-    this.accBasePriceEdit = accBasePriceEdit;
+  public void setAccbasepriceedit(Double accbasepriceedit) {
+    this.accbasepriceedit = accbasepriceedit;
   }
 
-  public Assetcomponent taxRemainderPriceInitial(Double taxRemainderPriceInitial) {
-    this.taxRemainderPriceInitial = taxRemainderPriceInitial;
+  public Assetcomponent taxremainderpriceinitial(Double taxremainderpriceinitial) {
+    this.taxremainderpriceinitial = taxremainderpriceinitial;
     return this;
   }
 
    /**
-   * Vých.daň.zůst.c. [persistentní položka]
-   * @return taxRemainderPriceInitial
+   * vých.daň.zůst.c. [persistentní položka]
+   * @return taxremainderpriceinitial
   **/
-  @ApiModelProperty(example = "null", value = "Vých.daň.zůst.c. [persistentní položka]")
-  public Double getTaxRemainderPriceInitial() {
-    return taxRemainderPriceInitial;
+  @ApiModelProperty(example = "null", value = "vých.daň.zůst.c. [persistentní položka]")
+  public Double getTaxremainderpriceinitial() {
+    return taxremainderpriceinitial;
   }
 
-  public void setTaxRemainderPriceInitial(Double taxRemainderPriceInitial) {
-    this.taxRemainderPriceInitial = taxRemainderPriceInitial;
+  public void setTaxremainderpriceinitial(Double taxremainderpriceinitial) {
+    this.taxremainderpriceinitial = taxremainderpriceinitial;
   }
 
-  public Assetcomponent accRemainderPriceInitial(Double accRemainderPriceInitial) {
-    this.accRemainderPriceInitial = accRemainderPriceInitial;
+  public Assetcomponent accremainderpriceinitial(Double accremainderpriceinitial) {
+    this.accremainderpriceinitial = accremainderpriceinitial;
     return this;
   }
 
    /**
-   * Vých.účet.zůst.c. [persistentní položka]
-   * @return accRemainderPriceInitial
+   * vých.účet.zůst.c. [persistentní položka]
+   * @return accremainderpriceinitial
   **/
-  @ApiModelProperty(example = "null", value = "Vých.účet.zůst.c. [persistentní položka]")
-  public Double getAccRemainderPriceInitial() {
-    return accRemainderPriceInitial;
+  @ApiModelProperty(example = "null", value = "vých.účet.zůst.c. [persistentní položka]")
+  public Double getAccremainderpriceinitial() {
+    return accremainderpriceinitial;
   }
 
-  public void setAccRemainderPriceInitial(Double accRemainderPriceInitial) {
-    this.accRemainderPriceInitial = accRemainderPriceInitial;
+  public void setAccremainderpriceinitial(Double accremainderpriceinitial) {
+    this.accremainderpriceinitial = accremainderpriceinitial;
   }
 
-   /**
-   * Akt.daň.vstup.c. [persistentní položka]
-   * @return taxBasePriceActual
-  **/
-  @ApiModelProperty(example = "null", value = "Akt.daň.vstup.c. [persistentní položka]")
-  public Double getTaxBasePriceActual() {
-    return taxBasePriceActual;
-  }
-
-   /**
-   * Akt.účet.vstup.c. [persistentní položka]
-   * @return accBasePriceActual
-  **/
-  @ApiModelProperty(example = "null", value = "Akt.účet.vstup.c. [persistentní položka]")
-  public Double getAccBasePriceActual() {
-    return accBasePriceActual;
-  }
-
-   /**
-   * Akt.daň.zůst.c. [persistentní položka]
-   * @return taxRemainderPriceActual
-  **/
-  @ApiModelProperty(example = "null", value = "Akt.daň.zůst.c. [persistentní položka]")
-  public Double getTaxRemainderPriceActual() {
-    return taxRemainderPriceActual;
-  }
-
-   /**
-   * Akt.účet.zůst.c. [persistentní položka]
-   * @return accRemainderPriceActual
-  **/
-  @ApiModelProperty(example = "null", value = "Akt.účet.zůst.c. [persistentní položka]")
-  public Double getAccRemainderPriceActual() {
-    return accRemainderPriceActual;
-  }
-
-  public Assetcomponent takenOutDateDATE(DateTime takenOutDateDATE) {
-    this.takenOutDateDATE = takenOutDateDATE;
+  public Assetcomponent taxbasepriceactual(Double taxbasepriceactual) {
+    this.taxbasepriceactual = taxbasepriceactual;
     return this;
   }
 
    /**
-   * Vyjmut [persistentní položka]
-   * @return takenOutDateDATE
+   * akt.daň.vstup.c. [persistentní položka]
+   * @return taxbasepriceactual
   **/
-  @ApiModelProperty(example = "null", value = "Vyjmut [persistentní položka]")
-  public DateTime getTakenOutDateDATE() {
-    return takenOutDateDATE;
+  @ApiModelProperty(example = "null", value = "akt.daň.vstup.c. [persistentní položka]")
+  public Double getTaxbasepriceactual() {
+    return taxbasepriceactual;
   }
 
-  public void setTakenOutDateDATE(DateTime takenOutDateDATE) {
-    this.takenOutDateDATE = takenOutDateDATE;
+  public void setTaxbasepriceactual(Double taxbasepriceactual) {
+    this.taxbasepriceactual = taxbasepriceactual;
   }
 
-  public Assetcomponent takenOutReason(String takenOutReason) {
-    this.takenOutReason = takenOutReason;
+  public Assetcomponent accbasepriceactual(Double accbasepriceactual) {
+    this.accbasepriceactual = accbasepriceactual;
     return this;
   }
 
    /**
-   * Důvod [persistentní položka]
-   * @return takenOutReason
+   * akt.účet.vstup.c. [persistentní položka]
+   * @return accbasepriceactual
   **/
-  @ApiModelProperty(example = "null", value = "Důvod [persistentní položka]")
-  public String getTakenOutReason() {
-    return takenOutReason;
+  @ApiModelProperty(example = "null", value = "akt.účet.vstup.c. [persistentní položka]")
+  public Double getAccbasepriceactual() {
+    return accbasepriceactual;
   }
 
-  public void setTakenOutReason(String takenOutReason) {
-    this.takenOutReason = takenOutReason;
+  public void setAccbasepriceactual(Double accbasepriceactual) {
+    this.accbasepriceactual = accbasepriceactual;
   }
 
-  public Assetcomponent takenOutByID(String takenOutByID) {
-    this.takenOutByID = takenOutByID;
+  public Assetcomponent taxremainderpriceactual(Double taxremainderpriceactual) {
+    this.taxremainderpriceactual = taxremainderpriceactual;
     return this;
   }
 
    /**
-   * Vyjmul; ID objektu Uživatel [persistentní položka]
-   * @return takenOutByID
+   * akt.daň.zůst.c. [persistentní položka]
+   * @return taxremainderpriceactual
   **/
-  @ApiModelProperty(example = "null", value = "Vyjmul; ID objektu Uživatel [persistentní položka]")
-  public String getTakenOutByID() {
-    return takenOutByID;
+  @ApiModelProperty(example = "null", value = "akt.daň.zůst.c. [persistentní položka]")
+  public Double getTaxremainderpriceactual() {
+    return taxremainderpriceactual;
   }
 
-  public void setTakenOutByID(String takenOutByID) {
-    this.takenOutByID = takenOutByID;
+  public void setTaxremainderpriceactual(Double taxremainderpriceactual) {
+    this.taxremainderpriceactual = taxremainderpriceactual;
   }
 
-  public Assetcomponent createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Assetcomponent accremainderpriceactual(Double accremainderpriceactual) {
+    this.accremainderpriceactual = accremainderpriceactual;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * akt.účet.zůst.c. [persistentní položka]
+   * @return accremainderpriceactual
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "akt.účet.zůst.c. [persistentní položka]")
+  public Double getAccremainderpriceactual() {
+    return accremainderpriceactual;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setAccremainderpriceactual(Double accremainderpriceactual) {
+    this.accremainderpriceactual = accremainderpriceactual;
   }
 
-  public Assetcomponent correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Assetcomponent takenoutdatedate(DateTime takenoutdatedate) {
+    this.takenoutdatedate = takenoutdatedate;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * vyjmut [persistentní položka]
+   * @return takenoutdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "vyjmut [persistentní položka]")
+  public DateTime getTakenoutdatedate() {
+    return takenoutdatedate;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setTakenoutdatedate(DateTime takenoutdatedate) {
+    this.takenoutdatedate = takenoutdatedate;
   }
 
-  public Assetcomponent componentInitiallyTakenOut(Boolean componentInitiallyTakenOut) {
-    this.componentInitiallyTakenOut = componentInitiallyTakenOut;
+  public Assetcomponent takenoutreason(String takenoutreason) {
+    this.takenoutreason = takenoutreason;
+    return this;
+  }
+
+   /**
+   * důvod [persistentní položka]
+   * @return takenoutreason
+  **/
+  @ApiModelProperty(example = "null", value = "důvod [persistentní položka]")
+  public String getTakenoutreason() {
+    return takenoutreason;
+  }
+
+  public void setTakenoutreason(String takenoutreason) {
+    this.takenoutreason = takenoutreason;
+  }
+
+  public Assetcomponent takenoutbyId(String takenoutbyId) {
+    this.takenoutbyId = takenoutbyId;
+    return this;
+  }
+
+   /**
+   * vyjmul; id objektu uživatel [persistentní položka]
+   * @return takenoutbyId
+  **/
+  @ApiModelProperty(example = "null", value = "vyjmul; id objektu uživatel [persistentní položka]")
+  public String getTakenoutbyId() {
+    return takenoutbyId;
+  }
+
+  public void setTakenoutbyId(String takenoutbyId) {
+    this.takenoutbyId = takenoutbyId;
+  }
+
+  public Assetcomponent createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+    return this;
+  }
+
+   /**
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
+  }
+
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Assetcomponent correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+    return this;
+  }
+
+   /**
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
+  }
+
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+  }
+
+  public Assetcomponent componentinitiallytakenout(Boolean componentinitiallytakenout) {
+    this.componentinitiallytakenout = componentinitiallytakenout;
     return this;
   }
 
    /**
    * 
-   * @return componentInitiallyTakenOut
+   * @return componentinitiallytakenout
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Boolean getComponentInitiallyTakenOut() {
-    return componentInitiallyTakenOut;
+  public Boolean getComponentinitiallytakenout() {
+    return componentinitiallytakenout;
   }
 
-  public void setComponentInitiallyTakenOut(Boolean componentInitiallyTakenOut) {
-    this.componentInitiallyTakenOut = componentInitiallyTakenOut;
+  public void setComponentinitiallytakenout(Boolean componentinitiallytakenout) {
+    this.componentinitiallytakenout = componentinitiallytakenout;
   }
 
-  public Assetcomponent componentActuallyTakenOut(Boolean componentActuallyTakenOut) {
-    this.componentActuallyTakenOut = componentActuallyTakenOut;
+  public Assetcomponent componentactuallytakenout(Boolean componentactuallytakenout) {
+    this.componentactuallytakenout = componentactuallytakenout;
     return this;
   }
 
    /**
    * 
-   * @return componentActuallyTakenOut
+   * @return componentactuallytakenout
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Boolean getComponentActuallyTakenOut() {
-    return componentActuallyTakenOut;
+  public Boolean getComponentactuallytakenout() {
+    return componentactuallytakenout;
   }
 
-  public void setComponentActuallyTakenOut(Boolean componentActuallyTakenOut) {
-    this.componentActuallyTakenOut = componentActuallyTakenOut;
+  public void setComponentactuallytakenout(Boolean componentactuallytakenout) {
+    this.componentactuallytakenout = componentactuallytakenout;
   }
 
-  public Assetcomponent assetPeriods(List<Assetcomponentperiod> assetPeriods) {
-    this.assetPeriods = assetPeriods;
+  public Assetcomponent assetperiods(List<Assetcomponentperiod> assetperiods) {
+    this.assetperiods = assetperiods;
     return this;
   }
 
-  public Assetcomponent addAssetPeriodsItem(Assetcomponentperiod assetPeriodsItem) {
-    this.assetPeriods.add(assetPeriodsItem);
+  public Assetcomponent addAssetperiodsItem(Assetcomponentperiod assetperiodsItem) {
+    this.assetperiods.add(assetperiodsItem);
     return this;
   }
 
    /**
-   * Období změny ceny; kolekce BO Období zvýšení ceny prvku [nepersistentní položka]
-   * @return assetPeriods
+   * období změny ceny; kolekce bo období zvýšení ceny prvku [nepersistentní položka]
+   * @return assetperiods
   **/
-  @ApiModelProperty(example = "null", value = "Období změny ceny; kolekce BO Období zvýšení ceny prvku [nepersistentní položka]")
-  public List<Assetcomponentperiod> getAssetPeriods() {
-    return assetPeriods;
+  @ApiModelProperty(example = "null", value = "období změny ceny; kolekce bo období zvýšení ceny prvku [nepersistentní položka]")
+  public List<Assetcomponentperiod> getAssetperiods() {
+    return assetperiods;
   }
 
-  public void setAssetPeriods(List<Assetcomponentperiod> assetPeriods) {
-    this.assetPeriods = assetPeriods;
+  public void setAssetperiods(List<Assetcomponentperiod> assetperiods) {
+    this.assetperiods = assetperiods;
+  }
+
+  public Assetcomponent postponedtaxdeprec(Double postponedtaxdeprec) {
+    this.postponedtaxdeprec = postponedtaxdeprec;
+    return this;
   }
 
    /**
-   * Odložený odpis [persistentní položka]
-   * @return postponedTaxDeprec
+   * odložený odpis [persistentní položka]
+   * @return postponedtaxdeprec
   **/
-  @ApiModelProperty(example = "null", value = "Odložený odpis [persistentní položka]")
-  public Double getPostponedTaxDeprec() {
-    return postponedTaxDeprec;
+  @ApiModelProperty(example = "null", value = "odložený odpis [persistentní položka]")
+  public Double getPostponedtaxdeprec() {
+    return postponedtaxdeprec;
+  }
+
+  public void setPostponedtaxdeprec(Double postponedtaxdeprec) {
+    this.postponedtaxdeprec = postponedtaxdeprec;
   }
 
 
@@ -636,43 +726,43 @@ public class Assetcomponent   {
       return false;
     }
     Assetcomponent assetcomponent = (Assetcomponent) o;
-    return Objects.equals(this.displayName, assetcomponent.displayName) &&
-        Objects.equals(this.ID, assetcomponent.ID) &&
-        Objects.equals(this.classID, assetcomponent.classID) &&
-        Objects.equals(this.objVersion, assetcomponent.objVersion) &&
-        Objects.equals(this.parentID, assetcomponent.parentID) &&
+    return Objects.equals(this.displayname, assetcomponent.displayname) &&
+        Objects.equals(this.id, assetcomponent.id) &&
+        Objects.equals(this.classid, assetcomponent.classid) &&
+        Objects.equals(this.objversion, assetcomponent.objversion) &&
+        Objects.equals(this.parentId, assetcomponent.parentId) &&
         Objects.equals(this.code, assetcomponent.code) &&
-        Objects.equals(this.inventorySubNr, assetcomponent.inventorySubNr) &&
-        Objects.equals(this.EAN, assetcomponent.EAN) &&
+        Objects.equals(this.inventorysubnr, assetcomponent.inventorysubnr) &&
+        Objects.equals(this.ean, assetcomponent.ean) &&
         Objects.equals(this.name, assetcomponent.name) &&
-        Objects.equals(this.putInDateDATE, assetcomponent.putInDateDATE) &&
+        Objects.equals(this.putindatedate, assetcomponent.putindatedate) &&
         Objects.equals(this.note, assetcomponent.note) &&
         Objects.equals(this.comment, assetcomponent.comment) &&
-        Objects.equals(this.purchasePrice, assetcomponent.purchasePrice) &&
-        Objects.equals(this.taxBasePriceInitial, assetcomponent.taxBasePriceInitial) &&
-        Objects.equals(this.taxBasePriceEdit, assetcomponent.taxBasePriceEdit) &&
-        Objects.equals(this.accBasePriceInitial, assetcomponent.accBasePriceInitial) &&
-        Objects.equals(this.accBasePriceEdit, assetcomponent.accBasePriceEdit) &&
-        Objects.equals(this.taxRemainderPriceInitial, assetcomponent.taxRemainderPriceInitial) &&
-        Objects.equals(this.accRemainderPriceInitial, assetcomponent.accRemainderPriceInitial) &&
-        Objects.equals(this.taxBasePriceActual, assetcomponent.taxBasePriceActual) &&
-        Objects.equals(this.accBasePriceActual, assetcomponent.accBasePriceActual) &&
-        Objects.equals(this.taxRemainderPriceActual, assetcomponent.taxRemainderPriceActual) &&
-        Objects.equals(this.accRemainderPriceActual, assetcomponent.accRemainderPriceActual) &&
-        Objects.equals(this.takenOutDateDATE, assetcomponent.takenOutDateDATE) &&
-        Objects.equals(this.takenOutReason, assetcomponent.takenOutReason) &&
-        Objects.equals(this.takenOutByID, assetcomponent.takenOutByID) &&
-        Objects.equals(this.createdByID, assetcomponent.createdByID) &&
-        Objects.equals(this.correctedByID, assetcomponent.correctedByID) &&
-        Objects.equals(this.componentInitiallyTakenOut, assetcomponent.componentInitiallyTakenOut) &&
-        Objects.equals(this.componentActuallyTakenOut, assetcomponent.componentActuallyTakenOut) &&
-        Objects.equals(this.assetPeriods, assetcomponent.assetPeriods) &&
-        Objects.equals(this.postponedTaxDeprec, assetcomponent.postponedTaxDeprec);
+        Objects.equals(this.purchaseprice, assetcomponent.purchaseprice) &&
+        Objects.equals(this.taxbasepriceinitial, assetcomponent.taxbasepriceinitial) &&
+        Objects.equals(this.taxbasepriceedit, assetcomponent.taxbasepriceedit) &&
+        Objects.equals(this.accbasepriceinitial, assetcomponent.accbasepriceinitial) &&
+        Objects.equals(this.accbasepriceedit, assetcomponent.accbasepriceedit) &&
+        Objects.equals(this.taxremainderpriceinitial, assetcomponent.taxremainderpriceinitial) &&
+        Objects.equals(this.accremainderpriceinitial, assetcomponent.accremainderpriceinitial) &&
+        Objects.equals(this.taxbasepriceactual, assetcomponent.taxbasepriceactual) &&
+        Objects.equals(this.accbasepriceactual, assetcomponent.accbasepriceactual) &&
+        Objects.equals(this.taxremainderpriceactual, assetcomponent.taxremainderpriceactual) &&
+        Objects.equals(this.accremainderpriceactual, assetcomponent.accremainderpriceactual) &&
+        Objects.equals(this.takenoutdatedate, assetcomponent.takenoutdatedate) &&
+        Objects.equals(this.takenoutreason, assetcomponent.takenoutreason) &&
+        Objects.equals(this.takenoutbyId, assetcomponent.takenoutbyId) &&
+        Objects.equals(this.createdbyId, assetcomponent.createdbyId) &&
+        Objects.equals(this.correctedbyId, assetcomponent.correctedbyId) &&
+        Objects.equals(this.componentinitiallytakenout, assetcomponent.componentinitiallytakenout) &&
+        Objects.equals(this.componentactuallytakenout, assetcomponent.componentactuallytakenout) &&
+        Objects.equals(this.assetperiods, assetcomponent.assetperiods) &&
+        Objects.equals(this.postponedtaxdeprec, assetcomponent.postponedtaxdeprec);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, code, inventorySubNr, EAN, name, putInDateDATE, note, comment, purchasePrice, taxBasePriceInitial, taxBasePriceEdit, accBasePriceInitial, accBasePriceEdit, taxRemainderPriceInitial, accRemainderPriceInitial, taxBasePriceActual, accBasePriceActual, taxRemainderPriceActual, accRemainderPriceActual, takenOutDateDATE, takenOutReason, takenOutByID, createdByID, correctedByID, componentInitiallyTakenOut, componentActuallyTakenOut, assetPeriods, postponedTaxDeprec);
+    return Objects.hash(displayname, id, classid, objversion, parentId, code, inventorysubnr, ean, name, putindatedate, note, comment, purchaseprice, taxbasepriceinitial, taxbasepriceedit, accbasepriceinitial, accbasepriceedit, taxremainderpriceinitial, accremainderpriceinitial, taxbasepriceactual, accbasepriceactual, taxremainderpriceactual, accremainderpriceactual, takenoutdatedate, takenoutreason, takenoutbyId, createdbyId, correctedbyId, componentinitiallytakenout, componentactuallytakenout, assetperiods, postponedtaxdeprec);
   }
 
   @Override
@@ -680,38 +770,38 @@ public class Assetcomponent   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Assetcomponent {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
-    sb.append("    inventorySubNr: ").append(toIndentedString(inventorySubNr)).append("\n");
-    sb.append("    EAN: ").append(toIndentedString(EAN)).append("\n");
+    sb.append("    inventorysubnr: ").append(toIndentedString(inventorysubnr)).append("\n");
+    sb.append("    ean: ").append(toIndentedString(ean)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    putInDateDATE: ").append(toIndentedString(putInDateDATE)).append("\n");
+    sb.append("    putindatedate: ").append(toIndentedString(putindatedate)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
     sb.append("    comment: ").append(toIndentedString(comment)).append("\n");
-    sb.append("    purchasePrice: ").append(toIndentedString(purchasePrice)).append("\n");
-    sb.append("    taxBasePriceInitial: ").append(toIndentedString(taxBasePriceInitial)).append("\n");
-    sb.append("    taxBasePriceEdit: ").append(toIndentedString(taxBasePriceEdit)).append("\n");
-    sb.append("    accBasePriceInitial: ").append(toIndentedString(accBasePriceInitial)).append("\n");
-    sb.append("    accBasePriceEdit: ").append(toIndentedString(accBasePriceEdit)).append("\n");
-    sb.append("    taxRemainderPriceInitial: ").append(toIndentedString(taxRemainderPriceInitial)).append("\n");
-    sb.append("    accRemainderPriceInitial: ").append(toIndentedString(accRemainderPriceInitial)).append("\n");
-    sb.append("    taxBasePriceActual: ").append(toIndentedString(taxBasePriceActual)).append("\n");
-    sb.append("    accBasePriceActual: ").append(toIndentedString(accBasePriceActual)).append("\n");
-    sb.append("    taxRemainderPriceActual: ").append(toIndentedString(taxRemainderPriceActual)).append("\n");
-    sb.append("    accRemainderPriceActual: ").append(toIndentedString(accRemainderPriceActual)).append("\n");
-    sb.append("    takenOutDateDATE: ").append(toIndentedString(takenOutDateDATE)).append("\n");
-    sb.append("    takenOutReason: ").append(toIndentedString(takenOutReason)).append("\n");
-    sb.append("    takenOutByID: ").append(toIndentedString(takenOutByID)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    componentInitiallyTakenOut: ").append(toIndentedString(componentInitiallyTakenOut)).append("\n");
-    sb.append("    componentActuallyTakenOut: ").append(toIndentedString(componentActuallyTakenOut)).append("\n");
-    sb.append("    assetPeriods: ").append(toIndentedString(assetPeriods)).append("\n");
-    sb.append("    postponedTaxDeprec: ").append(toIndentedString(postponedTaxDeprec)).append("\n");
+    sb.append("    purchaseprice: ").append(toIndentedString(purchaseprice)).append("\n");
+    sb.append("    taxbasepriceinitial: ").append(toIndentedString(taxbasepriceinitial)).append("\n");
+    sb.append("    taxbasepriceedit: ").append(toIndentedString(taxbasepriceedit)).append("\n");
+    sb.append("    accbasepriceinitial: ").append(toIndentedString(accbasepriceinitial)).append("\n");
+    sb.append("    accbasepriceedit: ").append(toIndentedString(accbasepriceedit)).append("\n");
+    sb.append("    taxremainderpriceinitial: ").append(toIndentedString(taxremainderpriceinitial)).append("\n");
+    sb.append("    accremainderpriceinitial: ").append(toIndentedString(accremainderpriceinitial)).append("\n");
+    sb.append("    taxbasepriceactual: ").append(toIndentedString(taxbasepriceactual)).append("\n");
+    sb.append("    accbasepriceactual: ").append(toIndentedString(accbasepriceactual)).append("\n");
+    sb.append("    taxremainderpriceactual: ").append(toIndentedString(taxremainderpriceactual)).append("\n");
+    sb.append("    accremainderpriceactual: ").append(toIndentedString(accremainderpriceactual)).append("\n");
+    sb.append("    takenoutdatedate: ").append(toIndentedString(takenoutdatedate)).append("\n");
+    sb.append("    takenoutreason: ").append(toIndentedString(takenoutreason)).append("\n");
+    sb.append("    takenoutbyId: ").append(toIndentedString(takenoutbyId)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    componentinitiallytakenout: ").append(toIndentedString(componentinitiallytakenout)).append("\n");
+    sb.append("    componentactuallytakenout: ").append(toIndentedString(componentactuallytakenout)).append("\n");
+    sb.append("    assetperiods: ").append(toIndentedString(assetperiods)).append("\n");
+    sb.append("    postponedtaxdeprec: ").append(toIndentedString(postponedtaxdeprec)).append("\n");
     sb.append("}");
     return sb.toString();
   }

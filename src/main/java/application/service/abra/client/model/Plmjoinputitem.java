@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,198 +36,234 @@ import java.util.Objects;
 /**
  * Plmjoinputitem
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmjoinputitem   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("PLMMIPLMaterialDistribution")
-  private List<Plmmiplmaterialdistribution> pLMMIPLMaterialDistribution = new ArrayList<Plmmiplmaterialdistribution>();
+  @SerializedName("plmmiplmaterialdistribution")
+  private List<Plmmiplmaterialdistribution> plmmiplmaterialdistribution = new ArrayList<Plmmiplmaterialdistribution>();
 
-  @SerializedName("PLMMIPLRMaterialDistribution")
-  private List<Plmmiplrmaterialdistribution> pLMMIPLRMaterialDistribution = new ArrayList<Plmmiplrmaterialdistribution>();
+  @SerializedName("plmmiplrmaterialdistribution")
+  private List<Plmmiplrmaterialdistribution> plmmiplrmaterialdistribution = new ArrayList<Plmmiplrmaterialdistribution>();
 
-  @SerializedName("PLMJOInputItemReservations")
-  private List<Plmjoinputitemreservation> pLMJOInputItemReservations = new ArrayList<Plmjoinputitemreservation>();
+  @SerializedName("plmjoinputitemreservations")
+  private List<Plmjoinputitemreservation> plmjoinputitemreservations = new ArrayList<Plmjoinputitemreservation>();
 
-  @SerializedName("Replaceable")
+  @SerializedName("replaceable")
   private Boolean replaceable = null;
 
-  @SerializedName("RealStoreCard_ID")
-  private String realStoreCardID = null;
+  @SerializedName("realstorecard_id")
+  private String realstorecardId = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("Qunit")
+  @SerializedName("qunit")
   private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("UnitQuantity")
-  private Double unitQuantity = null;
+  @SerializedName("unitquantity")
+  private Double unitquantity = null;
 
-  @SerializedName("AllowMix")
-  private Boolean allowMix = null;
+  @SerializedName("allowmix")
+  private Boolean allowmix = null;
 
-  @SerializedName("ReservedQuantity")
-  private Double reservedQuantity = null;
+  @SerializedName("reservedquantity")
+  private Double reservedquantity = null;
 
-  @SerializedName("ReservedUnitQuantity")
-  private Double reservedUnitQuantity = null;
+  @SerializedName("reservedunitquantity")
+  private Double reservedunitquantity = null;
 
-  @SerializedName("DistributedQuantity")
-  private Double distributedQuantity = null;
+  @SerializedName("distributedquantity")
+  private Double distributedquantity = null;
 
-  @SerializedName("DistributedUnitQuantity")
-  private Double distributedUnitQuantity = null;
+  @SerializedName("distributedunitquantity")
+  private Double distributedunitquantity = null;
 
-  @SerializedName("Phase_ID")
-  private String phaseID = null;
+  @SerializedName("phase_id")
+  private String phaseId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("RecordsSN")
-  private Boolean recordsSN = null;
+  @SerializedName("recordssn")
+  private Boolean recordssn = null;
 
-  @SerializedName("SupposedStore_ID")
-  private String supposedStoreID = null;
+  @SerializedName("supposedstore_id")
+  private String supposedstoreId = null;
 
-  @SerializedName("WastePercentage")
-  private Double wastePercentage = null;
+  @SerializedName("wastepercentage")
+  private Double wastepercentage = null;
 
-  @SerializedName("QuantityRounding")
-  private Integer quantityRounding = null;
+  @SerializedName("quantityrounding")
+  private Integer quantityrounding = null;
 
-  @SerializedName("DemandStatus")
-  private Integer demandStatus = null;
+  @SerializedName("demandstatus")
+  private Integer demandstatus = null;
 
-  @SerializedName("StoreQuantityWithReplacements")
-  private Double storeQuantityWithReplacements = null;
+  @SerializedName("storequantitywithreplacements")
+  private Double storequantitywithreplacements = null;
 
-  @SerializedName("ConfirmationDifferences")
-  private List<Plmjoinputitemconfdiff> confirmationDifferences = new ArrayList<Plmjoinputitemconfdiff>();
+  @SerializedName("confirmationdifferences")
+  private List<Plmjoinputitemconfdiff> confirmationdifferences = new ArrayList<Plmjoinputitemconfdiff>();
 
-  @SerializedName("Owner_ID")
-  private String ownerID = null;
+  @SerializedName("owner_id")
+  private String ownerId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Plmjoinputitem pLMMIPLMaterialDistribution(List<Plmmiplmaterialdistribution> pLMMIPLMaterialDistribution) {
-    this.pLMMIPLMaterialDistribution = pLMMIPLMaterialDistribution;
-    return this;
-  }
-
-  public Plmjoinputitem addPLMMIPLMaterialDistributionItem(Plmmiplmaterialdistribution pLMMIPLMaterialDistributionItem) {
-    this.pLMMIPLMaterialDistribution.add(pLMMIPLMaterialDistributionItem);
+  public Plmjoinputitem displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Výdejky; kolekce BO VP - výdej materiálu [nepersistentní položka]
-   * @return pLMMIPLMaterialDistribution
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Výdejky; kolekce BO VP - výdej materiálu [nepersistentní položka]")
-  public List<Plmmiplmaterialdistribution> getPLMMIPLMaterialDistribution() {
-    return pLMMIPLMaterialDistribution;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPLMMIPLMaterialDistribution(List<Plmmiplmaterialdistribution> pLMMIPLMaterialDistribution) {
-    this.pLMMIPLMaterialDistribution = pLMMIPLMaterialDistribution;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Plmjoinputitem pLMMIPLRMaterialDistribution(List<Plmmiplrmaterialdistribution> pLMMIPLRMaterialDistribution) {
-    this.pLMMIPLRMaterialDistribution = pLMMIPLRMaterialDistribution;
-    return this;
-  }
-
-  public Plmjoinputitem addPLMMIPLRMaterialDistributionItem(Plmmiplrmaterialdistribution pLMMIPLRMaterialDistributionItem) {
-    this.pLMMIPLRMaterialDistribution.add(pLMMIPLRMaterialDistributionItem);
+  public Plmjoinputitem id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Vratky; kolekce BO VP - vrácení materiálu [nepersistentní položka]
-   * @return pLMMIPLRMaterialDistribution
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vratky; kolekce BO VP - vrácení materiálu [nepersistentní položka]")
-  public List<Plmmiplrmaterialdistribution> getPLMMIPLRMaterialDistribution() {
-    return pLMMIPLRMaterialDistribution;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setPLMMIPLRMaterialDistribution(List<Plmmiplrmaterialdistribution> pLMMIPLRMaterialDistribution) {
-    this.pLMMIPLRMaterialDistribution = pLMMIPLRMaterialDistribution;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Plmjoinputitem pLMJOInputItemReservations(List<Plmjoinputitemreservation> pLMJOInputItemReservations) {
-    this.pLMJOInputItemReservations = pLMJOInputItemReservations;
-    return this;
-  }
-
-  public Plmjoinputitem addPLMJOInputItemReservationsItem(Plmjoinputitemreservation pLMJOInputItemReservationsItem) {
-    this.pLMJOInputItemReservations.add(pLMJOInputItemReservationsItem);
+  public Plmjoinputitem classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Rezervace; kolekce BO VP - rezervace [nepersistentní položka]
-   * @return pLMJOInputItemReservations
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Rezervace; kolekce BO VP - rezervace [nepersistentní položka]")
-  public List<Plmjoinputitemreservation> getPLMJOInputItemReservations() {
-    return pLMJOInputItemReservations;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPLMJOInputItemReservations(List<Plmjoinputitemreservation> pLMJOInputItemReservations) {
-    this.pLMJOInputItemReservations = pLMJOInputItemReservations;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmjoinputitem objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Plmjoinputitem plmmiplmaterialdistribution(List<Plmmiplmaterialdistribution> plmmiplmaterialdistribution) {
+    this.plmmiplmaterialdistribution = plmmiplmaterialdistribution;
+    return this;
+  }
+
+  public Plmjoinputitem addPlmmiplmaterialdistributionItem(Plmmiplmaterialdistribution plmmiplmaterialdistributionItem) {
+    this.plmmiplmaterialdistribution.add(plmmiplmaterialdistributionItem);
+    return this;
+  }
+
+   /**
+   * výdejky; kolekce bo vp - výdej materiálu [nepersistentní položka]
+   * @return plmmiplmaterialdistribution
+  **/
+  @ApiModelProperty(example = "null", value = "výdejky; kolekce bo vp - výdej materiálu [nepersistentní položka]")
+  public List<Plmmiplmaterialdistribution> getPlmmiplmaterialdistribution() {
+    return plmmiplmaterialdistribution;
+  }
+
+  public void setPlmmiplmaterialdistribution(List<Plmmiplmaterialdistribution> plmmiplmaterialdistribution) {
+    this.plmmiplmaterialdistribution = plmmiplmaterialdistribution;
+  }
+
+  public Plmjoinputitem plmmiplrmaterialdistribution(List<Plmmiplrmaterialdistribution> plmmiplrmaterialdistribution) {
+    this.plmmiplrmaterialdistribution = plmmiplrmaterialdistribution;
+    return this;
+  }
+
+  public Plmjoinputitem addPlmmiplrmaterialdistributionItem(Plmmiplrmaterialdistribution plmmiplrmaterialdistributionItem) {
+    this.plmmiplrmaterialdistribution.add(plmmiplrmaterialdistributionItem);
+    return this;
+  }
+
+   /**
+   * vratky; kolekce bo vp - vrácení materiálu [nepersistentní položka]
+   * @return plmmiplrmaterialdistribution
+  **/
+  @ApiModelProperty(example = "null", value = "vratky; kolekce bo vp - vrácení materiálu [nepersistentní položka]")
+  public List<Plmmiplrmaterialdistribution> getPlmmiplrmaterialdistribution() {
+    return plmmiplrmaterialdistribution;
+  }
+
+  public void setPlmmiplrmaterialdistribution(List<Plmmiplrmaterialdistribution> plmmiplrmaterialdistribution) {
+    this.plmmiplrmaterialdistribution = plmmiplrmaterialdistribution;
+  }
+
+  public Plmjoinputitem plmjoinputitemreservations(List<Plmjoinputitemreservation> plmjoinputitemreservations) {
+    this.plmjoinputitemreservations = plmjoinputitemreservations;
+    return this;
+  }
+
+  public Plmjoinputitem addPlmjoinputitemreservationsItem(Plmjoinputitemreservation plmjoinputitemreservationsItem) {
+    this.plmjoinputitemreservations.add(plmjoinputitemreservationsItem);
+    return this;
+  }
+
+   /**
+   * rezervace; kolekce bo vp - rezervace [nepersistentní položka]
+   * @return plmjoinputitemreservations
+  **/
+  @ApiModelProperty(example = "null", value = "rezervace; kolekce bo vp - rezervace [nepersistentní položka]")
+  public List<Plmjoinputitemreservation> getPlmjoinputitemreservations() {
+    return plmjoinputitemreservations;
+  }
+
+  public void setPlmjoinputitemreservations(List<Plmjoinputitemreservation> plmjoinputitemreservations) {
+    this.plmjoinputitemreservations = plmjoinputitemreservations;
   }
 
   public Plmjoinputitem replaceable(Boolean replaceable) {
@@ -236,10 +272,10 @@ public class Plmjoinputitem   {
   }
 
    /**
-   * Aut. náhrada [persistentní položka]
+   * aut. náhrada [persistentní položka]
    * @return replaceable
   **/
-  @ApiModelProperty(example = "null", value = "Aut. náhrada [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "aut. náhrada [persistentní položka]")
   public Boolean getReplaceable() {
     return replaceable;
   }
@@ -248,22 +284,22 @@ public class Plmjoinputitem   {
     this.replaceable = replaceable;
   }
 
-  public Plmjoinputitem realStoreCardID(String realStoreCardID) {
-    this.realStoreCardID = realStoreCardID;
+  public Plmjoinputitem realstorecardId(String realstorecardId) {
+    this.realstorecardId = realstorecardId;
     return this;
   }
 
    /**
-   * Skutečně použitý materiál; ID objektu Skladová karta [persistentní položka]
-   * @return realStoreCardID
+   * skutečně použitý materiál; id objektu skladová karta [persistentní položka]
+   * @return realstorecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skutečně použitý materiál; ID objektu Skladová karta [persistentní položka]")
-  public String getRealStoreCardID() {
-    return realStoreCardID;
+  @ApiModelProperty(example = "null", value = "skutečně použitý materiál; id objektu skladová karta [persistentní položka]")
+  public String getRealstorecardId() {
+    return realstorecardId;
   }
 
-  public void setRealStoreCardID(String realStoreCardID) {
-    this.realStoreCardID = realStoreCardID;
+  public void setRealstorecardId(String realstorecardId) {
+    this.realstorecardId = realstorecardId;
   }
 
   public Plmjoinputitem quantity(Double quantity) {
@@ -272,10 +308,10 @@ public class Plmjoinputitem   {
   }
 
    /**
-   * Množství v ev. jednotkách [persistentní položka]
+   * množství v ev. jednotkách [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství v ev. jednotkách [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "množství v ev. jednotkách [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -290,10 +326,10 @@ public class Plmjoinputitem   {
   }
 
    /**
-   * Jednotka [persistentní položka]
+   * jednotka [persistentní položka]
    * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
   public String getQunit() {
     return qunit;
   }
@@ -302,112 +338,148 @@ public class Plmjoinputitem   {
     this.qunit = qunit;
   }
 
-  public Plmjoinputitem unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Plmjoinputitem unitrate(Double unitrate) {
+    this.unitrate = unitrate;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return unitRate
+   * vztah [persistentní položka]
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
-  public Plmjoinputitem unitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public Plmjoinputitem unitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
     return this;
   }
 
    /**
-   * Množství
-   * @return unitQuantity
+   * množství
+   * @return unitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství")
-  public Double getUnitQuantity() {
-    return unitQuantity;
+  @ApiModelProperty(example = "null", value = "množství")
+  public Double getUnitquantity() {
+    return unitquantity;
   }
 
-  public void setUnitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public void setUnitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
   }
 
-  public Plmjoinputitem allowMix(Boolean allowMix) {
-    this.allowMix = allowMix;
+  public Plmjoinputitem allowmix(Boolean allowmix) {
+    this.allowmix = allowmix;
     return this;
   }
 
    /**
-   * Mix [persistentní položka]
-   * @return allowMix
+   * mix [persistentní položka]
+   * @return allowmix
   **/
-  @ApiModelProperty(example = "null", value = "Mix [persistentní položka]")
-  public Boolean getAllowMix() {
-    return allowMix;
+  @ApiModelProperty(example = "null", value = "mix [persistentní položka]")
+  public Boolean getAllowmix() {
+    return allowmix;
   }
 
-  public void setAllowMix(Boolean allowMix) {
-    this.allowMix = allowMix;
+  public void setAllowmix(Boolean allowmix) {
+    this.allowmix = allowmix;
   }
 
-   /**
-   * Rezervováno
-   * @return reservedQuantity
-  **/
-  @ApiModelProperty(example = "null", value = "Rezervováno")
-  public Double getReservedQuantity() {
-    return reservedQuantity;
-  }
-
-   /**
-   * Rezervováno v ev.jedn.
-   * @return reservedUnitQuantity
-  **/
-  @ApiModelProperty(example = "null", value = "Rezervováno v ev.jedn.")
-  public Double getReservedUnitQuantity() {
-    return reservedUnitQuantity;
-  }
-
-   /**
-   * Vydáno v ev.jedn.
-   * @return distributedQuantity
-  **/
-  @ApiModelProperty(example = "null", value = "Vydáno v ev.jedn.")
-  public Double getDistributedQuantity() {
-    return distributedQuantity;
-  }
-
-   /**
-   * Vydáno
-   * @return distributedUnitQuantity
-  **/
-  @ApiModelProperty(example = "null", value = "Vydáno")
-  public Double getDistributedUnitQuantity() {
-    return distributedUnitQuantity;
-  }
-
-  public Plmjoinputitem phaseID(String phaseID) {
-    this.phaseID = phaseID;
+  public Plmjoinputitem reservedquantity(Double reservedquantity) {
+    this.reservedquantity = reservedquantity;
     return this;
   }
 
    /**
-   * Etapa; ID objektu Etapa [persistentní položka]
-   * @return phaseID
+   * rezervováno
+   * @return reservedquantity
   **/
-  @ApiModelProperty(example = "null", value = "Etapa; ID objektu Etapa [persistentní položka]")
-  public String getPhaseID() {
-    return phaseID;
+  @ApiModelProperty(example = "null", value = "rezervováno")
+  public Double getReservedquantity() {
+    return reservedquantity;
   }
 
-  public void setPhaseID(String phaseID) {
-    this.phaseID = phaseID;
+  public void setReservedquantity(Double reservedquantity) {
+    this.reservedquantity = reservedquantity;
+  }
+
+  public Plmjoinputitem reservedunitquantity(Double reservedunitquantity) {
+    this.reservedunitquantity = reservedunitquantity;
+    return this;
+  }
+
+   /**
+   * rezervováno v ev.jedn.
+   * @return reservedunitquantity
+  **/
+  @ApiModelProperty(example = "null", value = "rezervováno v ev.jedn.")
+  public Double getReservedunitquantity() {
+    return reservedunitquantity;
+  }
+
+  public void setReservedunitquantity(Double reservedunitquantity) {
+    this.reservedunitquantity = reservedunitquantity;
+  }
+
+  public Plmjoinputitem distributedquantity(Double distributedquantity) {
+    this.distributedquantity = distributedquantity;
+    return this;
+  }
+
+   /**
+   * vydáno v ev.jedn.
+   * @return distributedquantity
+  **/
+  @ApiModelProperty(example = "null", value = "vydáno v ev.jedn.")
+  public Double getDistributedquantity() {
+    return distributedquantity;
+  }
+
+  public void setDistributedquantity(Double distributedquantity) {
+    this.distributedquantity = distributedquantity;
+  }
+
+  public Plmjoinputitem distributedunitquantity(Double distributedunitquantity) {
+    this.distributedunitquantity = distributedunitquantity;
+    return this;
+  }
+
+   /**
+   * vydáno
+   * @return distributedunitquantity
+  **/
+  @ApiModelProperty(example = "null", value = "vydáno")
+  public Double getDistributedunitquantity() {
+    return distributedunitquantity;
+  }
+
+  public void setDistributedunitquantity(Double distributedunitquantity) {
+    this.distributedunitquantity = distributedunitquantity;
+  }
+
+  public Plmjoinputitem phaseId(String phaseId) {
+    this.phaseId = phaseId;
+    return this;
+  }
+
+   /**
+   * etapa; id objektu etapa [persistentní položka]
+   * @return phaseId
+  **/
+  @ApiModelProperty(example = "null", value = "etapa; id objektu etapa [persistentní položka]")
+  public String getPhaseId() {
+    return phaseId;
+  }
+
+  public void setPhaseId(String phaseId) {
+    this.phaseId = phaseId;
   }
 
   public Plmjoinputitem description(String description) {
@@ -416,10 +488,10 @@ public class Plmjoinputitem   {
   }
 
    /**
-   * Označení [persistentní položka]
+   * označení [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Označení [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "označení [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -434,10 +506,10 @@ public class Plmjoinputitem   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -446,144 +518,153 @@ public class Plmjoinputitem   {
     this.note = note;
   }
 
-  public Plmjoinputitem recordsSN(Boolean recordsSN) {
-    this.recordsSN = recordsSN;
+  public Plmjoinputitem recordssn(Boolean recordssn) {
+    this.recordssn = recordssn;
     return this;
   }
 
    /**
-   * Evidovat SČ [persistentní položka]
-   * @return recordsSN
+   * evidovat sČ [persistentní položka]
+   * @return recordssn
   **/
-  @ApiModelProperty(example = "null", value = "Evidovat SČ [persistentní položka]")
-  public Boolean getRecordsSN() {
-    return recordsSN;
+  @ApiModelProperty(example = "null", value = "evidovat sČ [persistentní položka]")
+  public Boolean getRecordssn() {
+    return recordssn;
   }
 
-  public void setRecordsSN(Boolean recordsSN) {
-    this.recordsSN = recordsSN;
+  public void setRecordssn(Boolean recordssn) {
+    this.recordssn = recordssn;
   }
 
-  public Plmjoinputitem supposedStoreID(String supposedStoreID) {
-    this.supposedStoreID = supposedStoreID;
+  public Plmjoinputitem supposedstoreId(String supposedstoreId) {
+    this.supposedstoreId = supposedstoreId;
     return this;
   }
 
    /**
-   * Předpokládaný sklad; ID objektu Sklad [persistentní položka]
-   * @return supposedStoreID
+   * předpokládaný sklad; id objektu sklad [persistentní položka]
+   * @return supposedstoreId
   **/
-  @ApiModelProperty(example = "null", value = "Předpokládaný sklad; ID objektu Sklad [persistentní položka]")
-  public String getSupposedStoreID() {
-    return supposedStoreID;
+  @ApiModelProperty(example = "null", value = "předpokládaný sklad; id objektu sklad [persistentní položka]")
+  public String getSupposedstoreId() {
+    return supposedstoreId;
   }
 
-  public void setSupposedStoreID(String supposedStoreID) {
-    this.supposedStoreID = supposedStoreID;
+  public void setSupposedstoreId(String supposedstoreId) {
+    this.supposedstoreId = supposedstoreId;
   }
 
-  public Plmjoinputitem wastePercentage(Double wastePercentage) {
-    this.wastePercentage = wastePercentage;
+  public Plmjoinputitem wastepercentage(Double wastepercentage) {
+    this.wastepercentage = wastepercentage;
     return this;
   }
 
    /**
-   * Ztráty [%] [persistentní položka]
-   * @return wastePercentage
+   * ztráty [%] [persistentní položka]
+   * @return wastepercentage
   **/
-  @ApiModelProperty(example = "null", value = "Ztráty [%] [persistentní položka]")
-  public Double getWastePercentage() {
-    return wastePercentage;
+  @ApiModelProperty(example = "null", value = "ztráty [%] [persistentní položka]")
+  public Double getWastepercentage() {
+    return wastepercentage;
   }
 
-  public void setWastePercentage(Double wastePercentage) {
-    this.wastePercentage = wastePercentage;
+  public void setWastepercentage(Double wastepercentage) {
+    this.wastepercentage = wastepercentage;
   }
 
-  public Plmjoinputitem quantityRounding(Integer quantityRounding) {
-    this.quantityRounding = quantityRounding;
+  public Plmjoinputitem quantityrounding(Integer quantityrounding) {
+    this.quantityrounding = quantityrounding;
     return this;
   }
 
    /**
-   * Zaokrouhlení množství [persistentní položka]
-   * @return quantityRounding
+   * zaokrouhlení množství [persistentní položka]
+   * @return quantityrounding
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlení množství [persistentní položka]")
-  public Integer getQuantityRounding() {
-    return quantityRounding;
+  @ApiModelProperty(example = "null", value = "zaokrouhlení množství [persistentní položka]")
+  public Integer getQuantityrounding() {
+    return quantityrounding;
   }
 
-  public void setQuantityRounding(Integer quantityRounding) {
-    this.quantityRounding = quantityRounding;
+  public void setQuantityrounding(Integer quantityrounding) {
+    this.quantityrounding = quantityrounding;
   }
 
-  public Plmjoinputitem demandStatus(Integer demandStatus) {
-    this.demandStatus = demandStatus;
+  public Plmjoinputitem demandstatus(Integer demandstatus) {
+    this.demandstatus = demandstatus;
     return this;
   }
 
    /**
-   * Stav poptávky [persistentní položka]
-   * @return demandStatus
+   * stav poptávky [persistentní položka]
+   * @return demandstatus
   **/
-  @ApiModelProperty(example = "null", value = "Stav poptávky [persistentní položka]")
-  public Integer getDemandStatus() {
-    return demandStatus;
+  @ApiModelProperty(example = "null", value = "stav poptávky [persistentní položka]")
+  public Integer getDemandstatus() {
+    return demandstatus;
   }
 
-  public void setDemandStatus(Integer demandStatus) {
-    this.demandStatus = demandStatus;
+  public void setDemandstatus(Integer demandstatus) {
+    this.demandstatus = demandstatus;
   }
 
-  public Plmjoinputitem storeQuantityWithReplacements(Double storeQuantityWithReplacements) {
-    this.storeQuantityWithReplacements = storeQuantityWithReplacements;
+  public Plmjoinputitem storequantitywithreplacements(Double storequantitywithreplacements) {
+    this.storequantitywithreplacements = storequantitywithreplacements;
     return this;
   }
 
    /**
-   * Stav skladu
-   * @return storeQuantityWithReplacements
+   * stav skladu
+   * @return storequantitywithreplacements
   **/
-  @ApiModelProperty(example = "null", value = "Stav skladu")
-  public Double getStoreQuantityWithReplacements() {
-    return storeQuantityWithReplacements;
+  @ApiModelProperty(example = "null", value = "stav skladu")
+  public Double getStorequantitywithreplacements() {
+    return storequantitywithreplacements;
   }
 
-  public void setStoreQuantityWithReplacements(Double storeQuantityWithReplacements) {
-    this.storeQuantityWithReplacements = storeQuantityWithReplacements;
+  public void setStorequantitywithreplacements(Double storequantitywithreplacements) {
+    this.storequantitywithreplacements = storequantitywithreplacements;
   }
 
-  public Plmjoinputitem confirmationDifferences(List<Plmjoinputitemconfdiff> confirmationDifferences) {
-    this.confirmationDifferences = confirmationDifferences;
+  public Plmjoinputitem confirmationdifferences(List<Plmjoinputitemconfdiff> confirmationdifferences) {
+    this.confirmationdifferences = confirmationdifferences;
     return this;
   }
 
-  public Plmjoinputitem addConfirmationDifferencesItem(Plmjoinputitemconfdiff confirmationDifferencesItem) {
-    this.confirmationDifferences.add(confirmationDifferencesItem);
+  public Plmjoinputitem addConfirmationdifferencesItem(Plmjoinputitemconfdiff confirmationdifferencesItem) {
+    this.confirmationdifferences.add(confirmationdifferencesItem);
     return this;
   }
 
    /**
-   * Potvrzení rozdílů; kolekce BO VP - potvrzení rozdílu materiálu při ocenění [nepersistentní položka]
-   * @return confirmationDifferences
+   * potvrzení rozdílů; kolekce bo vp - potvrzení rozdílu materiálu při ocenění [nepersistentní položka]
+   * @return confirmationdifferences
   **/
-  @ApiModelProperty(example = "null", value = "Potvrzení rozdílů; kolekce BO VP - potvrzení rozdílu materiálu při ocenění [nepersistentní položka]")
-  public List<Plmjoinputitemconfdiff> getConfirmationDifferences() {
-    return confirmationDifferences;
+  @ApiModelProperty(example = "null", value = "potvrzení rozdílů; kolekce bo vp - potvrzení rozdílu materiálu při ocenění [nepersistentní položka]")
+  public List<Plmjoinputitemconfdiff> getConfirmationdifferences() {
+    return confirmationdifferences;
   }
 
-  public void setConfirmationDifferences(List<Plmjoinputitemconfdiff> confirmationDifferences) {
-    this.confirmationDifferences = confirmationDifferences;
+  public void setConfirmationdifferences(List<Plmjoinputitemconfdiff> confirmationdifferences) {
+    this.confirmationdifferences = confirmationdifferences;
+  }
+
+  public Plmjoinputitem ownerId(String ownerId) {
+    this.ownerId = ownerId;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Uzel stromu výrobního příkazu [persistentní položka]
-   * @return ownerID
+   * vlastník; id objektu uzel stromu výrobního příkazu [persistentní položka]
+   * @return ownerId
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Uzel stromu výrobního příkazu [persistentní položka]")
-  public String getOwnerID() {
-    return ownerID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu uzel stromu výrobního příkazu [persistentní položka]")
+  public String getOwnerId() {
+    return ownerId;
+  }
+
+  public void setOwnerId(String ownerId) {
+    this.ownerId = ownerId;
   }
 
 
@@ -596,40 +677,40 @@ public class Plmjoinputitem   {
       return false;
     }
     Plmjoinputitem plmjoinputitem = (Plmjoinputitem) o;
-    return Objects.equals(this.displayName, plmjoinputitem.displayName) &&
-        Objects.equals(this.ID, plmjoinputitem.ID) &&
-        Objects.equals(this.classID, plmjoinputitem.classID) &&
-        Objects.equals(this.objVersion, plmjoinputitem.objVersion) &&
-        Objects.equals(this.pLMMIPLMaterialDistribution, plmjoinputitem.pLMMIPLMaterialDistribution) &&
-        Objects.equals(this.pLMMIPLRMaterialDistribution, plmjoinputitem.pLMMIPLRMaterialDistribution) &&
-        Objects.equals(this.pLMJOInputItemReservations, plmjoinputitem.pLMJOInputItemReservations) &&
+    return Objects.equals(this.displayname, plmjoinputitem.displayname) &&
+        Objects.equals(this.id, plmjoinputitem.id) &&
+        Objects.equals(this.classid, plmjoinputitem.classid) &&
+        Objects.equals(this.objversion, plmjoinputitem.objversion) &&
+        Objects.equals(this.plmmiplmaterialdistribution, plmjoinputitem.plmmiplmaterialdistribution) &&
+        Objects.equals(this.plmmiplrmaterialdistribution, plmjoinputitem.plmmiplrmaterialdistribution) &&
+        Objects.equals(this.plmjoinputitemreservations, plmjoinputitem.plmjoinputitemreservations) &&
         Objects.equals(this.replaceable, plmjoinputitem.replaceable) &&
-        Objects.equals(this.realStoreCardID, plmjoinputitem.realStoreCardID) &&
+        Objects.equals(this.realstorecardId, plmjoinputitem.realstorecardId) &&
         Objects.equals(this.quantity, plmjoinputitem.quantity) &&
         Objects.equals(this.qunit, plmjoinputitem.qunit) &&
-        Objects.equals(this.unitRate, plmjoinputitem.unitRate) &&
-        Objects.equals(this.unitQuantity, plmjoinputitem.unitQuantity) &&
-        Objects.equals(this.allowMix, plmjoinputitem.allowMix) &&
-        Objects.equals(this.reservedQuantity, plmjoinputitem.reservedQuantity) &&
-        Objects.equals(this.reservedUnitQuantity, plmjoinputitem.reservedUnitQuantity) &&
-        Objects.equals(this.distributedQuantity, plmjoinputitem.distributedQuantity) &&
-        Objects.equals(this.distributedUnitQuantity, plmjoinputitem.distributedUnitQuantity) &&
-        Objects.equals(this.phaseID, plmjoinputitem.phaseID) &&
+        Objects.equals(this.unitrate, plmjoinputitem.unitrate) &&
+        Objects.equals(this.unitquantity, plmjoinputitem.unitquantity) &&
+        Objects.equals(this.allowmix, plmjoinputitem.allowmix) &&
+        Objects.equals(this.reservedquantity, plmjoinputitem.reservedquantity) &&
+        Objects.equals(this.reservedunitquantity, plmjoinputitem.reservedunitquantity) &&
+        Objects.equals(this.distributedquantity, plmjoinputitem.distributedquantity) &&
+        Objects.equals(this.distributedunitquantity, plmjoinputitem.distributedunitquantity) &&
+        Objects.equals(this.phaseId, plmjoinputitem.phaseId) &&
         Objects.equals(this.description, plmjoinputitem.description) &&
         Objects.equals(this.note, plmjoinputitem.note) &&
-        Objects.equals(this.recordsSN, plmjoinputitem.recordsSN) &&
-        Objects.equals(this.supposedStoreID, plmjoinputitem.supposedStoreID) &&
-        Objects.equals(this.wastePercentage, plmjoinputitem.wastePercentage) &&
-        Objects.equals(this.quantityRounding, plmjoinputitem.quantityRounding) &&
-        Objects.equals(this.demandStatus, plmjoinputitem.demandStatus) &&
-        Objects.equals(this.storeQuantityWithReplacements, plmjoinputitem.storeQuantityWithReplacements) &&
-        Objects.equals(this.confirmationDifferences, plmjoinputitem.confirmationDifferences) &&
-        Objects.equals(this.ownerID, plmjoinputitem.ownerID);
+        Objects.equals(this.recordssn, plmjoinputitem.recordssn) &&
+        Objects.equals(this.supposedstoreId, plmjoinputitem.supposedstoreId) &&
+        Objects.equals(this.wastepercentage, plmjoinputitem.wastepercentage) &&
+        Objects.equals(this.quantityrounding, plmjoinputitem.quantityrounding) &&
+        Objects.equals(this.demandstatus, plmjoinputitem.demandstatus) &&
+        Objects.equals(this.storequantitywithreplacements, plmjoinputitem.storequantitywithreplacements) &&
+        Objects.equals(this.confirmationdifferences, plmjoinputitem.confirmationdifferences) &&
+        Objects.equals(this.ownerId, plmjoinputitem.ownerId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, pLMMIPLMaterialDistribution, pLMMIPLRMaterialDistribution, pLMJOInputItemReservations, replaceable, realStoreCardID, quantity, qunit, unitRate, unitQuantity, allowMix, reservedQuantity, reservedUnitQuantity, distributedQuantity, distributedUnitQuantity, phaseID, description, note, recordsSN, supposedStoreID, wastePercentage, quantityRounding, demandStatus, storeQuantityWithReplacements, confirmationDifferences, ownerID);
+    return Objects.hash(displayname, id, classid, objversion, plmmiplmaterialdistribution, plmmiplrmaterialdistribution, plmjoinputitemreservations, replaceable, realstorecardId, quantity, qunit, unitrate, unitquantity, allowmix, reservedquantity, reservedunitquantity, distributedquantity, distributedunitquantity, phaseId, description, note, recordssn, supposedstoreId, wastepercentage, quantityrounding, demandstatus, storequantitywithreplacements, confirmationdifferences, ownerId);
   }
 
   @Override
@@ -637,35 +718,35 @@ public class Plmjoinputitem   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmjoinputitem {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    pLMMIPLMaterialDistribution: ").append(toIndentedString(pLMMIPLMaterialDistribution)).append("\n");
-    sb.append("    pLMMIPLRMaterialDistribution: ").append(toIndentedString(pLMMIPLRMaterialDistribution)).append("\n");
-    sb.append("    pLMJOInputItemReservations: ").append(toIndentedString(pLMJOInputItemReservations)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    plmmiplmaterialdistribution: ").append(toIndentedString(plmmiplmaterialdistribution)).append("\n");
+    sb.append("    plmmiplrmaterialdistribution: ").append(toIndentedString(plmmiplrmaterialdistribution)).append("\n");
+    sb.append("    plmjoinputitemreservations: ").append(toIndentedString(plmjoinputitemreservations)).append("\n");
     sb.append("    replaceable: ").append(toIndentedString(replaceable)).append("\n");
-    sb.append("    realStoreCardID: ").append(toIndentedString(realStoreCardID)).append("\n");
+    sb.append("    realstorecardId: ").append(toIndentedString(realstorecardId)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
     sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    unitQuantity: ").append(toIndentedString(unitQuantity)).append("\n");
-    sb.append("    allowMix: ").append(toIndentedString(allowMix)).append("\n");
-    sb.append("    reservedQuantity: ").append(toIndentedString(reservedQuantity)).append("\n");
-    sb.append("    reservedUnitQuantity: ").append(toIndentedString(reservedUnitQuantity)).append("\n");
-    sb.append("    distributedQuantity: ").append(toIndentedString(distributedQuantity)).append("\n");
-    sb.append("    distributedUnitQuantity: ").append(toIndentedString(distributedUnitQuantity)).append("\n");
-    sb.append("    phaseID: ").append(toIndentedString(phaseID)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    unitquantity: ").append(toIndentedString(unitquantity)).append("\n");
+    sb.append("    allowmix: ").append(toIndentedString(allowmix)).append("\n");
+    sb.append("    reservedquantity: ").append(toIndentedString(reservedquantity)).append("\n");
+    sb.append("    reservedunitquantity: ").append(toIndentedString(reservedunitquantity)).append("\n");
+    sb.append("    distributedquantity: ").append(toIndentedString(distributedquantity)).append("\n");
+    sb.append("    distributedunitquantity: ").append(toIndentedString(distributedunitquantity)).append("\n");
+    sb.append("    phaseId: ").append(toIndentedString(phaseId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
-    sb.append("    recordsSN: ").append(toIndentedString(recordsSN)).append("\n");
-    sb.append("    supposedStoreID: ").append(toIndentedString(supposedStoreID)).append("\n");
-    sb.append("    wastePercentage: ").append(toIndentedString(wastePercentage)).append("\n");
-    sb.append("    quantityRounding: ").append(toIndentedString(quantityRounding)).append("\n");
-    sb.append("    demandStatus: ").append(toIndentedString(demandStatus)).append("\n");
-    sb.append("    storeQuantityWithReplacements: ").append(toIndentedString(storeQuantityWithReplacements)).append("\n");
-    sb.append("    confirmationDifferences: ").append(toIndentedString(confirmationDifferences)).append("\n");
-    sb.append("    ownerID: ").append(toIndentedString(ownerID)).append("\n");
+    sb.append("    recordssn: ").append(toIndentedString(recordssn)).append("\n");
+    sb.append("    supposedstoreId: ").append(toIndentedString(supposedstoreId)).append("\n");
+    sb.append("    wastepercentage: ").append(toIndentedString(wastepercentage)).append("\n");
+    sb.append("    quantityrounding: ").append(toIndentedString(quantityrounding)).append("\n");
+    sb.append("    demandstatus: ").append(toIndentedString(demandstatus)).append("\n");
+    sb.append("    storequantitywithreplacements: ").append(toIndentedString(storequantitywithreplacements)).append("\n");
+    sb.append("    confirmationdifferences: ").append(toIndentedString(confirmationdifferences)).append("\n");
+    sb.append("    ownerId: ").append(toIndentedString(ownerId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

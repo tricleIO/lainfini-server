@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,150 +34,195 @@ import java.util.Objects;
 /**
  * Storecontainer
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Storecontainer   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("UnitQuantity")
-  private Double unitQuantity = null;
+  @SerializedName("unitquantity")
+  private Double unitquantity = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Jednotka skladové karty [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Jednotka skladové karty [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Storecontainer unitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public Storecontainer displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Množství [persistentní položka]
-   * @return unitQuantity
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Množství [persistentní položka]")
-  public Double getUnitQuantity() {
-    return unitQuantity;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setUnitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Storecontainer storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Storecontainer id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Karta obalu; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Karta obalu; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Storecontainer qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Storecontainer classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Storecontainer unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Storecontainer objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Vztah
-   * @return unitRate
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vztah")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Storecontainer parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu jednotka skladové karty [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu jednotka skladové karty [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Storecontainer unitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
+    return this;
+  }
+
+   /**
+   * množství [persistentní položka]
+   * @return unitquantity
+  **/
+  @ApiModelProperty(example = "null", value = "množství [persistentní položka]")
+  public Double getUnitquantity() {
+    return unitquantity;
+  }
+
+  public void setUnitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
+  }
+
+  public Storecontainer storecardId(String storecardId) {
+    this.storecardId = storecardId;
+    return this;
+  }
+
+   /**
+   * karta obalu; id objektu skladová karta [persistentní položka]
+   * @return storecardId
+  **/
+  @ApiModelProperty(example = "null", value = "karta obalu; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
+  }
+
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
+  }
+
+  public Storecontainer qunit(String qunit) {
+    this.qunit = qunit;
+    return this;
+  }
+
+   /**
+   * jednotka [persistentní položka]
+   * @return qunit
+  **/
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
+  }
+
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
+  }
+
+  public Storecontainer unitrate(Double unitrate) {
+    this.unitrate = unitrate;
+    return this;
+  }
+
+   /**
+   * vztah
+   * @return unitrate
+  **/
+  @ApiModelProperty(example = "null", value = "vztah")
+  public Double getUnitrate() {
+    return unitrate;
+  }
+
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
 
@@ -190,20 +235,20 @@ public class Storecontainer   {
       return false;
     }
     Storecontainer storecontainer = (Storecontainer) o;
-    return Objects.equals(this.displayName, storecontainer.displayName) &&
-        Objects.equals(this.ID, storecontainer.ID) &&
-        Objects.equals(this.classID, storecontainer.classID) &&
-        Objects.equals(this.objVersion, storecontainer.objVersion) &&
-        Objects.equals(this.parentID, storecontainer.parentID) &&
-        Objects.equals(this.unitQuantity, storecontainer.unitQuantity) &&
-        Objects.equals(this.storeCardID, storecontainer.storeCardID) &&
-        Objects.equals(this.qUnit, storecontainer.qUnit) &&
-        Objects.equals(this.unitRate, storecontainer.unitRate);
+    return Objects.equals(this.displayname, storecontainer.displayname) &&
+        Objects.equals(this.id, storecontainer.id) &&
+        Objects.equals(this.classid, storecontainer.classid) &&
+        Objects.equals(this.objversion, storecontainer.objversion) &&
+        Objects.equals(this.parentId, storecontainer.parentId) &&
+        Objects.equals(this.unitquantity, storecontainer.unitquantity) &&
+        Objects.equals(this.storecardId, storecontainer.storecardId) &&
+        Objects.equals(this.qunit, storecontainer.qunit) &&
+        Objects.equals(this.unitrate, storecontainer.unitrate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, unitQuantity, storeCardID, qUnit, unitRate);
+    return Objects.hash(displayname, id, classid, objversion, parentId, unitquantity, storecardId, qunit, unitrate);
   }
 
   @Override
@@ -211,15 +256,15 @@ public class Storecontainer   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Storecontainer {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    unitQuantity: ").append(toIndentedString(unitQuantity)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    unitquantity: ").append(toIndentedString(unitquantity)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

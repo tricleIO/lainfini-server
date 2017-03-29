@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,150 +34,186 @@ import java.util.Objects;
 /**
  * Posuser
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posuser   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("User_ID")
-  private String userID = null;
+  @SerializedName("user_id")
+  private String userId = null;
 
-  @SerializedName("VirtualPOS_ID")
-  private String virtualPOSID = null;
+  @SerializedName("virtualpos_id")
+  private String virtualposId = null;
 
-  @SerializedName("ShiftCalendar_ID")
-  private String shiftCalendarID = null;
+  @SerializedName("shiftcalendar_id")
+  private String shiftcalendarId = null;
 
-  @SerializedName("POSShift_ID")
-  private String pOSShiftID = null;
+  @SerializedName("posshift_id")
+  private String posshiftId = null;
 
-  @SerializedName("MaxDiscount")
-  private Double maxDiscount = null;
+  @SerializedName("maxdiscount")
+  private Double maxdiscount = null;
 
-  @SerializedName("ValidateDiscount")
-  private Boolean validateDiscount = null;
+  @SerializedName("validatediscount")
+  private Boolean validatediscount = null;
 
-  @SerializedName("ValidateShortFallExclusion")
-  private Boolean validateShortFallExclusion = null;
+  @SerializedName("validateshortfallexclusion")
+  private Boolean validateshortfallexclusion = null;
 
-  @SerializedName("UpdateAfterPrintBillPreview")
-  private Boolean updateAfterPrintBillPreview = null;
+  @SerializedName("updateafterprintbillpreview")
+  private Boolean updateafterprintbillpreview = null;
 
-  @SerializedName("ChangePrice")
-  private Boolean changePrice = null;
+  @SerializedName("changeprice")
+  private Boolean changeprice = null;
 
-  @SerializedName("RightIncome")
-  private Boolean rightIncome = null;
+  @SerializedName("rightincome")
+  private Boolean rightincome = null;
 
-  @SerializedName("RightBillOfDelivery")
-  private Boolean rightBillOfDelivery = null;
+  @SerializedName("rightbillofdelivery")
+  private Boolean rightbillofdelivery = null;
 
-  @SerializedName("CloneBill")
-  private Boolean cloneBill = null;
+  @SerializedName("clonebill")
+  private Boolean clonebill = null;
 
-  @SerializedName("RightEditBill")
-  private Boolean rightEditBill = null;
+  @SerializedName("righteditbill")
+  private Boolean righteditbill = null;
 
-  @SerializedName("ShopManager")
-  private Boolean shopManager = null;
+  @SerializedName("shopmanager")
+  private Boolean shopmanager = null;
 
-  @SerializedName("OrdersBalanceWOPChange")
-  private Boolean ordersBalanceWOPChange = null;
+  @SerializedName("ordersbalancewopchange")
+  private Boolean ordersbalancewopchange = null;
 
-  @SerializedName("OrdersBalanceOOPChange")
-  private Boolean ordersBalanceOOPChange = null;
+  @SerializedName("ordersbalanceoopchange")
+  private Boolean ordersbalanceoopchange = null;
 
-  @SerializedName("OrdersBalanceRetainChange")
-  private Boolean ordersBalanceRetainChange = null;
+  @SerializedName("ordersbalanceretainchange")
+  private Boolean ordersbalanceretainchange = null;
 
-  @SerializedName("OrdersBalForcedALStatChange")
-  private Boolean ordersBalForcedALStatChange = null;
+  @SerializedName("ordersbalforcedalstatchange")
+  private Boolean ordersbalforcedalstatchange = null;
 
-  @SerializedName("OrderFlowsOrderFinishedChange")
-  private Boolean orderFlowsOrderFinishedChange = null;
+  @SerializedName("orderflowsorderfinishedchange")
+  private Boolean orderflowsorderfinishedchange = null;
 
-  @SerializedName("ViewFinalAmount")
-  private Boolean viewFinalAmount = null;
+  @SerializedName("viewfinalamount")
+  private Boolean viewfinalamount = null;
 
-  @SerializedName("ViewQuantity")
-  private Boolean viewQuantity = null;
+  @SerializedName("viewquantity")
+  private Boolean viewquantity = null;
 
-  @SerializedName("ViewStoreInfo")
-  private Boolean viewStoreInfo = null;
+  @SerializedName("viewstoreinfo")
+  private Boolean viewstoreinfo = null;
 
-  @SerializedName("PrintFiscalCopy")
-  private Boolean printFiscalCopy = null;
+  @SerializedName("printfiscalcopy")
+  private Boolean printfiscalcopy = null;
 
-  @SerializedName("PrintCopy")
-  private Boolean printCopy = null;
+  @SerializedName("printcopy")
+  private Boolean printcopy = null;
 
-  @SerializedName("OfferOnLogScreen")
-  private Integer offerOnLogScreen = null;
+  @SerializedName("offeronlogscreen")
+  private Integer offeronlogscreen = null;
 
-  @SerializedName("MirrorShortFallTransfer")
-  private Boolean mirrorShortFallTransfer = null;
+  @SerializedName("mirrorshortfalltransfer")
+  private Boolean mirrorshortfalltransfer = null;
 
-  @SerializedName("MirrorShowStoreQuantity")
-  private Boolean mirrorShowStoreQuantity = null;
+  @SerializedName("mirrorshowstorequantity")
+  private Boolean mirrorshowstorequantity = null;
 
-  @SerializedName("MirrorQuantityPrefill")
-  private Boolean mirrorQuantityPrefill = null;
+  @SerializedName("mirrorquantityprefill")
+  private Boolean mirrorquantityprefill = null;
 
-  @SerializedName("MirrorShortFallExclusion")
-  private Integer mirrorShortFallExclusion = null;
+  @SerializedName("mirrorshortfallexclusion")
+  private Integer mirrorshortfallexclusion = null;
 
-  @SerializedName("RightChangePayments")
-  private Boolean rightChangePayments = null;
+  @SerializedName("rightchangepayments")
+  private Boolean rightchangepayments = null;
 
-  @SerializedName("AutomaticallyRefiscalization")
-  private Boolean automaticallyRefiscalization = null;
+  @SerializedName("automaticallyrefiscalization")
+  private Boolean automaticallyrefiscalization = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Posuser displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Posuser id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Posuser classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Posuser objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Posuser hidden(Boolean hidden) {
@@ -186,10 +222,10 @@ public class Posuser   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -198,562 +234,562 @@ public class Posuser   {
     this.hidden = hidden;
   }
 
-  public Posuser userID(String userID) {
-    this.userID = userID;
+  public Posuser userId(String userId) {
+    this.userId = userId;
     return this;
   }
 
    /**
-   * Uživatel; ID objektu Uživatel [persistentní položka]
-   * @return userID
+   * uživatel; id objektu uživatel [persistentní položka]
+   * @return userId
   **/
-  @ApiModelProperty(example = "null", value = "Uživatel; ID objektu Uživatel [persistentní položka]")
-  public String getUserID() {
-    return userID;
+  @ApiModelProperty(example = "null", value = "uživatel; id objektu uživatel [persistentní položka]")
+  public String getUserId() {
+    return userId;
   }
 
-  public void setUserID(String userID) {
-    this.userID = userID;
+  public void setUserId(String userId) {
+    this.userId = userId;
   }
 
-  public Posuser virtualPOSID(String virtualPOSID) {
-    this.virtualPOSID = virtualPOSID;
+  public Posuser virtualposId(String virtualposId) {
+    this.virtualposId = virtualposId;
     return this;
   }
 
    /**
-   * Pokladní místo; ID objektu Pokladní místo [persistentní položka]
-   * @return virtualPOSID
+   * pokladní místo; id objektu pokladní místo [persistentní položka]
+   * @return virtualposId
   **/
-  @ApiModelProperty(example = "null", value = "Pokladní místo; ID objektu Pokladní místo [persistentní položka]")
-  public String getVirtualPOSID() {
-    return virtualPOSID;
+  @ApiModelProperty(example = "null", value = "pokladní místo; id objektu pokladní místo [persistentní položka]")
+  public String getVirtualposId() {
+    return virtualposId;
   }
 
-  public void setVirtualPOSID(String virtualPOSID) {
-    this.virtualPOSID = virtualPOSID;
+  public void setVirtualposId(String virtualposId) {
+    this.virtualposId = virtualposId;
   }
 
-  public Posuser shiftCalendarID(String shiftCalendarID) {
-    this.shiftCalendarID = shiftCalendarID;
+  public Posuser shiftcalendarId(String shiftcalendarId) {
+    this.shiftcalendarId = shiftcalendarId;
     return this;
   }
 
    /**
-   * Pracovní kalendář; ID objektu Pracovní kalendář [persistentní položka]
-   * @return shiftCalendarID
+   * pracovní kalendář; id objektu pracovní kalendář [persistentní položka]
+   * @return shiftcalendarId
   **/
-  @ApiModelProperty(example = "null", value = "Pracovní kalendář; ID objektu Pracovní kalendář [persistentní položka]")
-  public String getShiftCalendarID() {
-    return shiftCalendarID;
+  @ApiModelProperty(example = "null", value = "pracovní kalendář; id objektu pracovní kalendář [persistentní položka]")
+  public String getShiftcalendarId() {
+    return shiftcalendarId;
   }
 
-  public void setShiftCalendarID(String shiftCalendarID) {
-    this.shiftCalendarID = shiftCalendarID;
+  public void setShiftcalendarId(String shiftcalendarId) {
+    this.shiftcalendarId = shiftcalendarId;
   }
 
-  public Posuser pOSShiftID(String pOSShiftID) {
-    this.pOSShiftID = pOSShiftID;
+  public Posuser posshiftId(String posshiftId) {
+    this.posshiftId = posshiftId;
     return this;
   }
 
    /**
-   * Aktivní směna; ID objektu Směna [persistentní položka]
-   * @return pOSShiftID
+   * aktivní směna; id objektu směna [persistentní položka]
+   * @return posshiftId
   **/
-  @ApiModelProperty(example = "null", value = "Aktivní směna; ID objektu Směna [persistentní položka]")
-  public String getPOSShiftID() {
-    return pOSShiftID;
+  @ApiModelProperty(example = "null", value = "aktivní směna; id objektu směna [persistentní položka]")
+  public String getPosshiftId() {
+    return posshiftId;
   }
 
-  public void setPOSShiftID(String pOSShiftID) {
-    this.pOSShiftID = pOSShiftID;
+  public void setPosshiftId(String posshiftId) {
+    this.posshiftId = posshiftId;
   }
 
-  public Posuser maxDiscount(Double maxDiscount) {
-    this.maxDiscount = maxDiscount;
+  public Posuser maxdiscount(Double maxdiscount) {
+    this.maxdiscount = maxdiscount;
     return this;
   }
 
    /**
-   * Sleva [persistentní položka]
-   * @return maxDiscount
+   * sleva [persistentní položka]
+   * @return maxdiscount
   **/
-  @ApiModelProperty(example = "null", value = "Sleva [persistentní položka]")
-  public Double getMaxDiscount() {
-    return maxDiscount;
+  @ApiModelProperty(example = "null", value = "sleva [persistentní položka]")
+  public Double getMaxdiscount() {
+    return maxdiscount;
   }
 
-  public void setMaxDiscount(Double maxDiscount) {
-    this.maxDiscount = maxDiscount;
+  public void setMaxdiscount(Double maxdiscount) {
+    this.maxdiscount = maxdiscount;
   }
 
-  public Posuser validateDiscount(Boolean validateDiscount) {
-    this.validateDiscount = validateDiscount;
+  public Posuser validatediscount(Boolean validatediscount) {
+    this.validatediscount = validatediscount;
     return this;
   }
 
    /**
-   * Autorizace slev [persistentní položka]
-   * @return validateDiscount
+   * autorizace slev [persistentní položka]
+   * @return validatediscount
   **/
-  @ApiModelProperty(example = "null", value = "Autorizace slev [persistentní položka]")
-  public Boolean getValidateDiscount() {
-    return validateDiscount;
+  @ApiModelProperty(example = "null", value = "autorizace slev [persistentní položka]")
+  public Boolean getValidatediscount() {
+    return validatediscount;
   }
 
-  public void setValidateDiscount(Boolean validateDiscount) {
-    this.validateDiscount = validateDiscount;
+  public void setValidatediscount(Boolean validatediscount) {
+    this.validatediscount = validatediscount;
   }
 
-  public Posuser validateShortFallExclusion(Boolean validateShortFallExclusion) {
-    this.validateShortFallExclusion = validateShortFallExclusion;
+  public Posuser validateshortfallexclusion(Boolean validateshortfallexclusion) {
+    this.validateshortfallexclusion = validateshortfallexclusion;
     return this;
   }
 
    /**
-   * Autorizace vyjmutí [persistentní položka]
-   * @return validateShortFallExclusion
+   * autorizace vyjmutí [persistentní položka]
+   * @return validateshortfallexclusion
   **/
-  @ApiModelProperty(example = "null", value = "Autorizace vyjmutí [persistentní položka]")
-  public Boolean getValidateShortFallExclusion() {
-    return validateShortFallExclusion;
+  @ApiModelProperty(example = "null", value = "autorizace vyjmutí [persistentní položka]")
+  public Boolean getValidateshortfallexclusion() {
+    return validateshortfallexclusion;
   }
 
-  public void setValidateShortFallExclusion(Boolean validateShortFallExclusion) {
-    this.validateShortFallExclusion = validateShortFallExclusion;
+  public void setValidateshortfallexclusion(Boolean validateshortfallexclusion) {
+    this.validateshortfallexclusion = validateshortfallexclusion;
   }
 
-  public Posuser updateAfterPrintBillPreview(Boolean updateAfterPrintBillPreview) {
-    this.updateAfterPrintBillPreview = updateAfterPrintBillPreview;
+  public Posuser updateafterprintbillpreview(Boolean updateafterprintbillpreview) {
+    this.updateafterprintbillpreview = updateafterprintbillpreview;
     return this;
   }
 
    /**
-   * Opravy po tisku náhledu [persistentní položka]
-   * @return updateAfterPrintBillPreview
+   * opravy po tisku náhledu [persistentní položka]
+   * @return updateafterprintbillpreview
   **/
-  @ApiModelProperty(example = "null", value = "Opravy po tisku náhledu [persistentní položka]")
-  public Boolean getUpdateAfterPrintBillPreview() {
-    return updateAfterPrintBillPreview;
+  @ApiModelProperty(example = "null", value = "opravy po tisku náhledu [persistentní položka]")
+  public Boolean getUpdateafterprintbillpreview() {
+    return updateafterprintbillpreview;
   }
 
-  public void setUpdateAfterPrintBillPreview(Boolean updateAfterPrintBillPreview) {
-    this.updateAfterPrintBillPreview = updateAfterPrintBillPreview;
+  public void setUpdateafterprintbillpreview(Boolean updateafterprintbillpreview) {
+    this.updateafterprintbillpreview = updateafterprintbillpreview;
   }
 
-  public Posuser changePrice(Boolean changePrice) {
-    this.changePrice = changePrice;
+  public Posuser changeprice(Boolean changeprice) {
+    this.changeprice = changeprice;
     return this;
   }
 
    /**
-   * Měnit cenu [persistentní položka]
-   * @return changePrice
+   * měnit cenu [persistentní položka]
+   * @return changeprice
   **/
-  @ApiModelProperty(example = "null", value = "Měnit cenu [persistentní položka]")
-  public Boolean getChangePrice() {
-    return changePrice;
+  @ApiModelProperty(example = "null", value = "měnit cenu [persistentní položka]")
+  public Boolean getChangeprice() {
+    return changeprice;
   }
 
-  public void setChangePrice(Boolean changePrice) {
-    this.changePrice = changePrice;
+  public void setChangeprice(Boolean changeprice) {
+    this.changeprice = changeprice;
   }
 
-  public Posuser rightIncome(Boolean rightIncome) {
-    this.rightIncome = rightIncome;
+  public Posuser rightincome(Boolean rightincome) {
+    this.rightincome = rightincome;
     return this;
   }
 
    /**
-   * Vracení [persistentní položka]
-   * @return rightIncome
+   * vracení [persistentní položka]
+   * @return rightincome
   **/
-  @ApiModelProperty(example = "null", value = "Vracení [persistentní položka]")
-  public Boolean getRightIncome() {
-    return rightIncome;
+  @ApiModelProperty(example = "null", value = "vracení [persistentní položka]")
+  public Boolean getRightincome() {
+    return rightincome;
   }
 
-  public void setRightIncome(Boolean rightIncome) {
-    this.rightIncome = rightIncome;
+  public void setRightincome(Boolean rightincome) {
+    this.rightincome = rightincome;
   }
 
-  public Posuser rightBillOfDelivery(Boolean rightBillOfDelivery) {
-    this.rightBillOfDelivery = rightBillOfDelivery;
+  public Posuser rightbillofdelivery(Boolean rightbillofdelivery) {
+    this.rightbillofdelivery = rightbillofdelivery;
     return this;
   }
 
    /**
-   * Výdej [persistentní položka]
-   * @return rightBillOfDelivery
+   * výdej [persistentní položka]
+   * @return rightbillofdelivery
   **/
-  @ApiModelProperty(example = "null", value = "Výdej [persistentní položka]")
-  public Boolean getRightBillOfDelivery() {
-    return rightBillOfDelivery;
+  @ApiModelProperty(example = "null", value = "výdej [persistentní položka]")
+  public Boolean getRightbillofdelivery() {
+    return rightbillofdelivery;
   }
 
-  public void setRightBillOfDelivery(Boolean rightBillOfDelivery) {
-    this.rightBillOfDelivery = rightBillOfDelivery;
+  public void setRightbillofdelivery(Boolean rightbillofdelivery) {
+    this.rightbillofdelivery = rightbillofdelivery;
   }
 
-  public Posuser cloneBill(Boolean cloneBill) {
-    this.cloneBill = cloneBill;
+  public Posuser clonebill(Boolean clonebill) {
+    this.clonebill = clonebill;
     return this;
   }
 
    /**
-   * Kopírovat [persistentní položka]
-   * @return cloneBill
+   * kopírovat [persistentní položka]
+   * @return clonebill
   **/
-  @ApiModelProperty(example = "null", value = "Kopírovat [persistentní položka]")
-  public Boolean getCloneBill() {
-    return cloneBill;
+  @ApiModelProperty(example = "null", value = "kopírovat [persistentní položka]")
+  public Boolean getClonebill() {
+    return clonebill;
   }
 
-  public void setCloneBill(Boolean cloneBill) {
-    this.cloneBill = cloneBill;
+  public void setClonebill(Boolean clonebill) {
+    this.clonebill = clonebill;
   }
 
-  public Posuser rightEditBill(Boolean rightEditBill) {
-    this.rightEditBill = rightEditBill;
+  public Posuser righteditbill(Boolean righteditbill) {
+    this.righteditbill = righteditbill;
     return this;
   }
 
    /**
-   * Oprávnění editovat účtenku [persistentní položka]
-   * @return rightEditBill
+   * oprávnění editovat účtenku [persistentní položka]
+   * @return righteditbill
   **/
-  @ApiModelProperty(example = "null", value = "Oprávnění editovat účtenku [persistentní položka]")
-  public Boolean getRightEditBill() {
-    return rightEditBill;
+  @ApiModelProperty(example = "null", value = "oprávnění editovat účtenku [persistentní položka]")
+  public Boolean getRighteditbill() {
+    return righteditbill;
   }
 
-  public void setRightEditBill(Boolean rightEditBill) {
-    this.rightEditBill = rightEditBill;
+  public void setRighteditbill(Boolean righteditbill) {
+    this.righteditbill = righteditbill;
   }
 
-  public Posuser shopManager(Boolean shopManager) {
-    this.shopManager = shopManager;
+  public Posuser shopmanager(Boolean shopmanager) {
+    this.shopmanager = shopmanager;
     return this;
   }
 
    /**
-   * Provozní vedoucí [persistentní položka]
-   * @return shopManager
+   * provozní vedoucí [persistentní položka]
+   * @return shopmanager
   **/
-  @ApiModelProperty(example = "null", value = "Provozní vedoucí [persistentní položka]")
-  public Boolean getShopManager() {
-    return shopManager;
+  @ApiModelProperty(example = "null", value = "provozní vedoucí [persistentní položka]")
+  public Boolean getShopmanager() {
+    return shopmanager;
   }
 
-  public void setShopManager(Boolean shopManager) {
-    this.shopManager = shopManager;
+  public void setShopmanager(Boolean shopmanager) {
+    this.shopmanager = shopmanager;
   }
 
-  public Posuser ordersBalanceWOPChange(Boolean ordersBalanceWOPChange) {
-    this.ordersBalanceWOPChange = ordersBalanceWOPChange;
+  public Posuser ordersbalancewopchange(Boolean ordersbalancewopchange) {
+    this.ordersbalancewopchange = ordersbalancewopchange;
     return this;
   }
 
    /**
-   * Oprávnění měnit v uzávěrce bonů ztráty výroby [persistentní položka]
-   * @return ordersBalanceWOPChange
+   * oprávnění měnit v uzávěrce bonů ztráty výroby [persistentní položka]
+   * @return ordersbalancewopchange
   **/
-  @ApiModelProperty(example = "null", value = "Oprávnění měnit v uzávěrce bonů ztráty výroby [persistentní položka]")
-  public Boolean getOrdersBalanceWOPChange() {
-    return ordersBalanceWOPChange;
+  @ApiModelProperty(example = "null", value = "oprávnění měnit v uzávěrce bonů ztráty výroby [persistentní položka]")
+  public Boolean getOrdersbalancewopchange() {
+    return ordersbalancewopchange;
   }
 
-  public void setOrdersBalanceWOPChange(Boolean ordersBalanceWOPChange) {
-    this.ordersBalanceWOPChange = ordersBalanceWOPChange;
+  public void setOrdersbalancewopchange(Boolean ordersbalancewopchange) {
+    this.ordersbalancewopchange = ordersbalancewopchange;
   }
 
-  public Posuser ordersBalanceOOPChange(Boolean ordersBalanceOOPChange) {
-    this.ordersBalanceOOPChange = ordersBalanceOOPChange;
+  public Posuser ordersbalanceoopchange(Boolean ordersbalanceoopchange) {
+    this.ordersbalanceoopchange = ordersbalanceoopchange;
     return this;
   }
 
    /**
-   * Oprávnění měnit v uzávěrce bonů přebytky výroby [persistentní položka]
-   * @return ordersBalanceOOPChange
+   * oprávnění měnit v uzávěrce bonů přebytky výroby [persistentní položka]
+   * @return ordersbalanceoopchange
   **/
-  @ApiModelProperty(example = "null", value = "Oprávnění měnit v uzávěrce bonů přebytky výroby [persistentní položka]")
-  public Boolean getOrdersBalanceOOPChange() {
-    return ordersBalanceOOPChange;
+  @ApiModelProperty(example = "null", value = "oprávnění měnit v uzávěrce bonů přebytky výroby [persistentní položka]")
+  public Boolean getOrdersbalanceoopchange() {
+    return ordersbalanceoopchange;
   }
 
-  public void setOrdersBalanceOOPChange(Boolean ordersBalanceOOPChange) {
-    this.ordersBalanceOOPChange = ordersBalanceOOPChange;
+  public void setOrdersbalanceoopchange(Boolean ordersbalanceoopchange) {
+    this.ordersbalanceoopchange = ordersbalanceoopchange;
   }
 
-  public Posuser ordersBalanceRetainChange(Boolean ordersBalanceRetainChange) {
-    this.ordersBalanceRetainChange = ordersBalanceRetainChange;
+  public Posuser ordersbalanceretainchange(Boolean ordersbalanceretainchange) {
+    this.ordersbalanceretainchange = ordersbalanceretainchange;
     return this;
   }
 
    /**
-   * Oprávnění měnit v uzávěrce bonů požadovaný zůstatek zbylé zásoby [persistentní položka]
-   * @return ordersBalanceRetainChange
+   * oprávnění měnit v uzávěrce bonů požadovaný zůstatek zbylé zásoby [persistentní položka]
+   * @return ordersbalanceretainchange
   **/
-  @ApiModelProperty(example = "null", value = "Oprávnění měnit v uzávěrce bonů požadovaný zůstatek zbylé zásoby [persistentní položka]")
-  public Boolean getOrdersBalanceRetainChange() {
-    return ordersBalanceRetainChange;
+  @ApiModelProperty(example = "null", value = "oprávnění měnit v uzávěrce bonů požadovaný zůstatek zbylé zásoby [persistentní položka]")
+  public Boolean getOrdersbalanceretainchange() {
+    return ordersbalanceretainchange;
   }
 
-  public void setOrdersBalanceRetainChange(Boolean ordersBalanceRetainChange) {
-    this.ordersBalanceRetainChange = ordersBalanceRetainChange;
+  public void setOrdersbalanceretainchange(Boolean ordersbalanceretainchange) {
+    this.ordersbalanceretainchange = ordersbalanceretainchange;
   }
 
-  public Posuser ordersBalForcedALStatChange(Boolean ordersBalForcedALStatChange) {
-    this.ordersBalForcedALStatChange = ordersBalForcedALStatChange;
+  public Posuser ordersbalforcedalstatchange(Boolean ordersbalforcedalstatchange) {
+    this.ordersbalforcedalstatchange = ordersbalforcedalstatchange;
     return this;
   }
 
    /**
-   * Oprávnění měnit v uzávěrce bonů požadovaný stav výrobních listů [persistentní položka]
-   * @return ordersBalForcedALStatChange
+   * oprávnění měnit v uzávěrce bonů požadovaný stav výrobních listů [persistentní položka]
+   * @return ordersbalforcedalstatchange
   **/
-  @ApiModelProperty(example = "null", value = "Oprávnění měnit v uzávěrce bonů požadovaný stav výrobních listů [persistentní položka]")
-  public Boolean getOrdersBalForcedALStatChange() {
-    return ordersBalForcedALStatChange;
+  @ApiModelProperty(example = "null", value = "oprávnění měnit v uzávěrce bonů požadovaný stav výrobních listů [persistentní položka]")
+  public Boolean getOrdersbalforcedalstatchange() {
+    return ordersbalforcedalstatchange;
   }
 
-  public void setOrdersBalForcedALStatChange(Boolean ordersBalForcedALStatChange) {
-    this.ordersBalForcedALStatChange = ordersBalForcedALStatChange;
+  public void setOrdersbalforcedalstatchange(Boolean ordersbalforcedalstatchange) {
+    this.ordersbalforcedalstatchange = ordersbalforcedalstatchange;
   }
 
-  public Posuser orderFlowsOrderFinishedChange(Boolean orderFlowsOrderFinishedChange) {
-    this.orderFlowsOrderFinishedChange = orderFlowsOrderFinishedChange;
+  public Posuser orderflowsorderfinishedchange(Boolean orderflowsorderfinishedchange) {
+    this.orderflowsorderfinishedchange = orderflowsorderfinishedchange;
     return this;
   }
 
    /**
-   * Oprávnění měnit v seznamu bonů stav zpracování [persistentní položka]
-   * @return orderFlowsOrderFinishedChange
+   * oprávnění měnit v seznamu bonů stav zpracování [persistentní položka]
+   * @return orderflowsorderfinishedchange
   **/
-  @ApiModelProperty(example = "null", value = "Oprávnění měnit v seznamu bonů stav zpracování [persistentní položka]")
-  public Boolean getOrderFlowsOrderFinishedChange() {
-    return orderFlowsOrderFinishedChange;
+  @ApiModelProperty(example = "null", value = "oprávnění měnit v seznamu bonů stav zpracování [persistentní položka]")
+  public Boolean getOrderflowsorderfinishedchange() {
+    return orderflowsorderfinishedchange;
   }
 
-  public void setOrderFlowsOrderFinishedChange(Boolean orderFlowsOrderFinishedChange) {
-    this.orderFlowsOrderFinishedChange = orderFlowsOrderFinishedChange;
+  public void setOrderflowsorderfinishedchange(Boolean orderflowsorderfinishedchange) {
+    this.orderflowsorderfinishedchange = orderflowsorderfinishedchange;
   }
 
-  public Posuser viewFinalAmount(Boolean viewFinalAmount) {
-    this.viewFinalAmount = viewFinalAmount;
+  public Posuser viewfinalamount(Boolean viewfinalamount) {
+    this.viewfinalamount = viewfinalamount;
     return this;
   }
 
    /**
-   * Vidět tržbu [persistentní položka]
-   * @return viewFinalAmount
+   * vidět tržbu [persistentní položka]
+   * @return viewfinalamount
   **/
-  @ApiModelProperty(example = "null", value = "Vidět tržbu [persistentní položka]")
-  public Boolean getViewFinalAmount() {
-    return viewFinalAmount;
+  @ApiModelProperty(example = "null", value = "vidět tržbu [persistentní položka]")
+  public Boolean getViewfinalamount() {
+    return viewfinalamount;
   }
 
-  public void setViewFinalAmount(Boolean viewFinalAmount) {
-    this.viewFinalAmount = viewFinalAmount;
+  public void setViewfinalamount(Boolean viewfinalamount) {
+    this.viewfinalamount = viewfinalamount;
   }
 
-  public Posuser viewQuantity(Boolean viewQuantity) {
-    this.viewQuantity = viewQuantity;
+  public Posuser viewquantity(Boolean viewquantity) {
+    this.viewquantity = viewquantity;
     return this;
   }
 
    /**
-   * Vidět zásobu [persistentní položka]
-   * @return viewQuantity
+   * vidět zásobu [persistentní položka]
+   * @return viewquantity
   **/
-  @ApiModelProperty(example = "null", value = "Vidět zásobu [persistentní položka]")
-  public Boolean getViewQuantity() {
-    return viewQuantity;
+  @ApiModelProperty(example = "null", value = "vidět zásobu [persistentní položka]")
+  public Boolean getViewquantity() {
+    return viewquantity;
   }
 
-  public void setViewQuantity(Boolean viewQuantity) {
-    this.viewQuantity = viewQuantity;
+  public void setViewquantity(Boolean viewquantity) {
+    this.viewquantity = viewquantity;
   }
 
-  public Posuser viewStoreInfo(Boolean viewStoreInfo) {
-    this.viewStoreInfo = viewStoreInfo;
+  public Posuser viewstoreinfo(Boolean viewstoreinfo) {
+    this.viewstoreinfo = viewstoreinfo;
     return this;
   }
 
    /**
-   * Vidět informace o zboží [persistentní položka]
-   * @return viewStoreInfo
+   * vidět informace o zboží [persistentní položka]
+   * @return viewstoreinfo
   **/
-  @ApiModelProperty(example = "null", value = "Vidět informace o zboží [persistentní položka]")
-  public Boolean getViewStoreInfo() {
-    return viewStoreInfo;
+  @ApiModelProperty(example = "null", value = "vidět informace o zboží [persistentní položka]")
+  public Boolean getViewstoreinfo() {
+    return viewstoreinfo;
   }
 
-  public void setViewStoreInfo(Boolean viewStoreInfo) {
-    this.viewStoreInfo = viewStoreInfo;
+  public void setViewstoreinfo(Boolean viewstoreinfo) {
+    this.viewstoreinfo = viewstoreinfo;
   }
 
-  public Posuser printFiscalCopy(Boolean printFiscalCopy) {
-    this.printFiscalCopy = printFiscalCopy;
+  public Posuser printfiscalcopy(Boolean printfiscalcopy) {
+    this.printfiscalcopy = printfiscalcopy;
     return this;
   }
 
    /**
-   * Tisk kopie na fiskál [persistentní položka]
-   * @return printFiscalCopy
+   * tisk kopie na fiskál [persistentní položka]
+   * @return printfiscalcopy
   **/
-  @ApiModelProperty(example = "null", value = "Tisk kopie na fiskál [persistentní položka]")
-  public Boolean getPrintFiscalCopy() {
-    return printFiscalCopy;
+  @ApiModelProperty(example = "null", value = "tisk kopie na fiskál [persistentní položka]")
+  public Boolean getPrintfiscalcopy() {
+    return printfiscalcopy;
   }
 
-  public void setPrintFiscalCopy(Boolean printFiscalCopy) {
-    this.printFiscalCopy = printFiscalCopy;
+  public void setPrintfiscalcopy(Boolean printfiscalcopy) {
+    this.printfiscalcopy = printfiscalcopy;
   }
 
-  public Posuser printCopy(Boolean printCopy) {
-    this.printCopy = printCopy;
+  public Posuser printcopy(Boolean printcopy) {
+    this.printcopy = printcopy;
     return this;
   }
 
    /**
-   * Tisk kopie [persistentní položka]
-   * @return printCopy
+   * tisk kopie [persistentní položka]
+   * @return printcopy
   **/
-  @ApiModelProperty(example = "null", value = "Tisk kopie [persistentní položka]")
-  public Boolean getPrintCopy() {
-    return printCopy;
+  @ApiModelProperty(example = "null", value = "tisk kopie [persistentní položka]")
+  public Boolean getPrintcopy() {
+    return printcopy;
   }
 
-  public void setPrintCopy(Boolean printCopy) {
-    this.printCopy = printCopy;
+  public void setPrintcopy(Boolean printcopy) {
+    this.printcopy = printcopy;
   }
 
-  public Posuser offerOnLogScreen(Integer offerOnLogScreen) {
-    this.offerOnLogScreen = offerOnLogScreen;
+  public Posuser offeronlogscreen(Integer offeronlogscreen) {
+    this.offeronlogscreen = offeronlogscreen;
     return this;
   }
 
    /**
-   * Pozice na přihlašovací obrazovce [persistentní položka]
-   * @return offerOnLogScreen
+   * pozice na přihlašovací obrazovce [persistentní položka]
+   * @return offeronlogscreen
   **/
-  @ApiModelProperty(example = "null", value = "Pozice na přihlašovací obrazovce [persistentní položka]")
-  public Integer getOfferOnLogScreen() {
-    return offerOnLogScreen;
+  @ApiModelProperty(example = "null", value = "pozice na přihlašovací obrazovce [persistentní položka]")
+  public Integer getOfferonlogscreen() {
+    return offeronlogscreen;
   }
 
-  public void setOfferOnLogScreen(Integer offerOnLogScreen) {
-    this.offerOnLogScreen = offerOnLogScreen;
+  public void setOfferonlogscreen(Integer offeronlogscreen) {
+    this.offeronlogscreen = offeronlogscreen;
   }
 
-  public Posuser mirrorShortFallTransfer(Boolean mirrorShortFallTransfer) {
-    this.mirrorShortFallTransfer = mirrorShortFallTransfer;
+  public Posuser mirrorshortfalltransfer(Boolean mirrorshortfalltransfer) {
+    this.mirrorshortfalltransfer = mirrorshortfalltransfer;
     return this;
   }
 
    /**
-   * Převádět manko ze zrcadla na jiné pokladní místo [persistentní položka]
-   * @return mirrorShortFallTransfer
+   * převádět manko ze zrcadla na jiné pokladní místo [persistentní položka]
+   * @return mirrorshortfalltransfer
   **/
-  @ApiModelProperty(example = "null", value = "Převádět manko ze zrcadla na jiné pokladní místo [persistentní položka]")
-  public Boolean getMirrorShortFallTransfer() {
-    return mirrorShortFallTransfer;
+  @ApiModelProperty(example = "null", value = "převádět manko ze zrcadla na jiné pokladní místo [persistentní položka]")
+  public Boolean getMirrorshortfalltransfer() {
+    return mirrorshortfalltransfer;
   }
 
-  public void setMirrorShortFallTransfer(Boolean mirrorShortFallTransfer) {
-    this.mirrorShortFallTransfer = mirrorShortFallTransfer;
+  public void setMirrorshortfalltransfer(Boolean mirrorshortfalltransfer) {
+    this.mirrorshortfalltransfer = mirrorshortfalltransfer;
   }
 
-  public Posuser mirrorShowStoreQuantity(Boolean mirrorShowStoreQuantity) {
-    this.mirrorShowStoreQuantity = mirrorShowStoreQuantity;
+  public Posuser mirrorshowstorequantity(Boolean mirrorshowstorequantity) {
+    this.mirrorshowstorequantity = mirrorshowstorequantity;
     return this;
   }
 
    /**
-   * Ukazovat při zpracování zrcadla požadované zásoby [persistentní položka]
-   * @return mirrorShowStoreQuantity
+   * ukazovat při zpracování zrcadla požadované zásoby [persistentní položka]
+   * @return mirrorshowstorequantity
   **/
-  @ApiModelProperty(example = "null", value = "Ukazovat při zpracování zrcadla požadované zásoby [persistentní položka]")
-  public Boolean getMirrorShowStoreQuantity() {
-    return mirrorShowStoreQuantity;
+  @ApiModelProperty(example = "null", value = "ukazovat při zpracování zrcadla požadované zásoby [persistentní položka]")
+  public Boolean getMirrorshowstorequantity() {
+    return mirrorshowstorequantity;
   }
 
-  public void setMirrorShowStoreQuantity(Boolean mirrorShowStoreQuantity) {
-    this.mirrorShowStoreQuantity = mirrorShowStoreQuantity;
+  public void setMirrorshowstorequantity(Boolean mirrorshowstorequantity) {
+    this.mirrorshowstorequantity = mirrorshowstorequantity;
   }
 
-  public Posuser mirrorQuantityPrefill(Boolean mirrorQuantityPrefill) {
-    this.mirrorQuantityPrefill = mirrorQuantityPrefill;
+  public Posuser mirrorquantityprefill(Boolean mirrorquantityprefill) {
+    this.mirrorquantityprefill = mirrorquantityprefill;
     return this;
   }
 
    /**
-   * Předvyplňovat množství aktuální zásobou [persistentní položka]
-   * @return mirrorQuantityPrefill
+   * předvyplňovat množství aktuální zásobou [persistentní položka]
+   * @return mirrorquantityprefill
   **/
-  @ApiModelProperty(example = "null", value = "Předvyplňovat množství aktuální zásobou [persistentní položka]")
-  public Boolean getMirrorQuantityPrefill() {
-    return mirrorQuantityPrefill;
+  @ApiModelProperty(example = "null", value = "předvyplňovat množství aktuální zásobou [persistentní položka]")
+  public Boolean getMirrorquantityprefill() {
+    return mirrorquantityprefill;
   }
 
-  public void setMirrorQuantityPrefill(Boolean mirrorQuantityPrefill) {
-    this.mirrorQuantityPrefill = mirrorQuantityPrefill;
+  public void setMirrorquantityprefill(Boolean mirrorquantityprefill) {
+    this.mirrorquantityprefill = mirrorquantityprefill;
   }
 
-  public Posuser mirrorShortFallExclusion(Integer mirrorShortFallExclusion) {
-    this.mirrorShortFallExclusion = mirrorShortFallExclusion;
+  public Posuser mirrorshortfallexclusion(Integer mirrorshortfallexclusion) {
+    this.mirrorshortfallexclusion = mirrorshortfallexclusion;
     return this;
   }
 
    /**
-   * Právo vyjmout manko ze zrcadla z tržeb [persistentní položka]
-   * @return mirrorShortFallExclusion
+   * právo vyjmout manko ze zrcadla z tržeb [persistentní položka]
+   * @return mirrorshortfallexclusion
   **/
-  @ApiModelProperty(example = "null", value = "Právo vyjmout manko ze zrcadla z tržeb [persistentní položka]")
-  public Integer getMirrorShortFallExclusion() {
-    return mirrorShortFallExclusion;
+  @ApiModelProperty(example = "null", value = "právo vyjmout manko ze zrcadla z tržeb [persistentní položka]")
+  public Integer getMirrorshortfallexclusion() {
+    return mirrorshortfallexclusion;
   }
 
-  public void setMirrorShortFallExclusion(Integer mirrorShortFallExclusion) {
-    this.mirrorShortFallExclusion = mirrorShortFallExclusion;
+  public void setMirrorshortfallexclusion(Integer mirrorshortfallexclusion) {
+    this.mirrorshortfallexclusion = mirrorshortfallexclusion;
   }
 
-  public Posuser rightChangePayments(Boolean rightChangePayments) {
-    this.rightChangePayments = rightChangePayments;
+  public Posuser rightchangepayments(Boolean rightchangepayments) {
+    this.rightchangepayments = rightchangepayments;
     return this;
   }
 
    /**
-   * Právo opravovat platby [persistentní položka]
-   * @return rightChangePayments
+   * právo opravovat platby [persistentní položka]
+   * @return rightchangepayments
   **/
-  @ApiModelProperty(example = "null", value = "Právo opravovat platby [persistentní položka]")
-  public Boolean getRightChangePayments() {
-    return rightChangePayments;
+  @ApiModelProperty(example = "null", value = "právo opravovat platby [persistentní položka]")
+  public Boolean getRightchangepayments() {
+    return rightchangepayments;
   }
 
-  public void setRightChangePayments(Boolean rightChangePayments) {
-    this.rightChangePayments = rightChangePayments;
+  public void setRightchangepayments(Boolean rightchangepayments) {
+    this.rightchangepayments = rightchangepayments;
   }
 
-  public Posuser automaticallyRefiscalization(Boolean automaticallyRefiscalization) {
-    this.automaticallyRefiscalization = automaticallyRefiscalization;
+  public Posuser automaticallyrefiscalization(Boolean automaticallyrefiscalization) {
+    this.automaticallyrefiscalization = automaticallyrefiscalization;
     return this;
   }
 
    /**
-   * Opakovat fiskalizaci [persistentní položka]
-   * @return automaticallyRefiscalization
+   * opakovat fiskalizaci [persistentní položka]
+   * @return automaticallyrefiscalization
   **/
-  @ApiModelProperty(example = "null", value = "Opakovat fiskalizaci [persistentní položka]")
-  public Boolean getAutomaticallyRefiscalization() {
-    return automaticallyRefiscalization;
+  @ApiModelProperty(example = "null", value = "opakovat fiskalizaci [persistentní položka]")
+  public Boolean getAutomaticallyrefiscalization() {
+    return automaticallyrefiscalization;
   }
 
-  public void setAutomaticallyRefiscalization(Boolean automaticallyRefiscalization) {
-    this.automaticallyRefiscalization = automaticallyRefiscalization;
+  public void setAutomaticallyrefiscalization(Boolean automaticallyrefiscalization) {
+    this.automaticallyrefiscalization = automaticallyrefiscalization;
   }
 
 
@@ -766,47 +802,47 @@ public class Posuser   {
       return false;
     }
     Posuser posuser = (Posuser) o;
-    return Objects.equals(this.displayName, posuser.displayName) &&
-        Objects.equals(this.ID, posuser.ID) &&
-        Objects.equals(this.classID, posuser.classID) &&
-        Objects.equals(this.objVersion, posuser.objVersion) &&
+    return Objects.equals(this.displayname, posuser.displayname) &&
+        Objects.equals(this.id, posuser.id) &&
+        Objects.equals(this.classid, posuser.classid) &&
+        Objects.equals(this.objversion, posuser.objversion) &&
         Objects.equals(this.hidden, posuser.hidden) &&
-        Objects.equals(this.userID, posuser.userID) &&
-        Objects.equals(this.virtualPOSID, posuser.virtualPOSID) &&
-        Objects.equals(this.shiftCalendarID, posuser.shiftCalendarID) &&
-        Objects.equals(this.pOSShiftID, posuser.pOSShiftID) &&
-        Objects.equals(this.maxDiscount, posuser.maxDiscount) &&
-        Objects.equals(this.validateDiscount, posuser.validateDiscount) &&
-        Objects.equals(this.validateShortFallExclusion, posuser.validateShortFallExclusion) &&
-        Objects.equals(this.updateAfterPrintBillPreview, posuser.updateAfterPrintBillPreview) &&
-        Objects.equals(this.changePrice, posuser.changePrice) &&
-        Objects.equals(this.rightIncome, posuser.rightIncome) &&
-        Objects.equals(this.rightBillOfDelivery, posuser.rightBillOfDelivery) &&
-        Objects.equals(this.cloneBill, posuser.cloneBill) &&
-        Objects.equals(this.rightEditBill, posuser.rightEditBill) &&
-        Objects.equals(this.shopManager, posuser.shopManager) &&
-        Objects.equals(this.ordersBalanceWOPChange, posuser.ordersBalanceWOPChange) &&
-        Objects.equals(this.ordersBalanceOOPChange, posuser.ordersBalanceOOPChange) &&
-        Objects.equals(this.ordersBalanceRetainChange, posuser.ordersBalanceRetainChange) &&
-        Objects.equals(this.ordersBalForcedALStatChange, posuser.ordersBalForcedALStatChange) &&
-        Objects.equals(this.orderFlowsOrderFinishedChange, posuser.orderFlowsOrderFinishedChange) &&
-        Objects.equals(this.viewFinalAmount, posuser.viewFinalAmount) &&
-        Objects.equals(this.viewQuantity, posuser.viewQuantity) &&
-        Objects.equals(this.viewStoreInfo, posuser.viewStoreInfo) &&
-        Objects.equals(this.printFiscalCopy, posuser.printFiscalCopy) &&
-        Objects.equals(this.printCopy, posuser.printCopy) &&
-        Objects.equals(this.offerOnLogScreen, posuser.offerOnLogScreen) &&
-        Objects.equals(this.mirrorShortFallTransfer, posuser.mirrorShortFallTransfer) &&
-        Objects.equals(this.mirrorShowStoreQuantity, posuser.mirrorShowStoreQuantity) &&
-        Objects.equals(this.mirrorQuantityPrefill, posuser.mirrorQuantityPrefill) &&
-        Objects.equals(this.mirrorShortFallExclusion, posuser.mirrorShortFallExclusion) &&
-        Objects.equals(this.rightChangePayments, posuser.rightChangePayments) &&
-        Objects.equals(this.automaticallyRefiscalization, posuser.automaticallyRefiscalization);
+        Objects.equals(this.userId, posuser.userId) &&
+        Objects.equals(this.virtualposId, posuser.virtualposId) &&
+        Objects.equals(this.shiftcalendarId, posuser.shiftcalendarId) &&
+        Objects.equals(this.posshiftId, posuser.posshiftId) &&
+        Objects.equals(this.maxdiscount, posuser.maxdiscount) &&
+        Objects.equals(this.validatediscount, posuser.validatediscount) &&
+        Objects.equals(this.validateshortfallexclusion, posuser.validateshortfallexclusion) &&
+        Objects.equals(this.updateafterprintbillpreview, posuser.updateafterprintbillpreview) &&
+        Objects.equals(this.changeprice, posuser.changeprice) &&
+        Objects.equals(this.rightincome, posuser.rightincome) &&
+        Objects.equals(this.rightbillofdelivery, posuser.rightbillofdelivery) &&
+        Objects.equals(this.clonebill, posuser.clonebill) &&
+        Objects.equals(this.righteditbill, posuser.righteditbill) &&
+        Objects.equals(this.shopmanager, posuser.shopmanager) &&
+        Objects.equals(this.ordersbalancewopchange, posuser.ordersbalancewopchange) &&
+        Objects.equals(this.ordersbalanceoopchange, posuser.ordersbalanceoopchange) &&
+        Objects.equals(this.ordersbalanceretainchange, posuser.ordersbalanceretainchange) &&
+        Objects.equals(this.ordersbalforcedalstatchange, posuser.ordersbalforcedalstatchange) &&
+        Objects.equals(this.orderflowsorderfinishedchange, posuser.orderflowsorderfinishedchange) &&
+        Objects.equals(this.viewfinalamount, posuser.viewfinalamount) &&
+        Objects.equals(this.viewquantity, posuser.viewquantity) &&
+        Objects.equals(this.viewstoreinfo, posuser.viewstoreinfo) &&
+        Objects.equals(this.printfiscalcopy, posuser.printfiscalcopy) &&
+        Objects.equals(this.printcopy, posuser.printcopy) &&
+        Objects.equals(this.offeronlogscreen, posuser.offeronlogscreen) &&
+        Objects.equals(this.mirrorshortfalltransfer, posuser.mirrorshortfalltransfer) &&
+        Objects.equals(this.mirrorshowstorequantity, posuser.mirrorshowstorequantity) &&
+        Objects.equals(this.mirrorquantityprefill, posuser.mirrorquantityprefill) &&
+        Objects.equals(this.mirrorshortfallexclusion, posuser.mirrorshortfallexclusion) &&
+        Objects.equals(this.rightchangepayments, posuser.rightchangepayments) &&
+        Objects.equals(this.automaticallyrefiscalization, posuser.automaticallyrefiscalization);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, userID, virtualPOSID, shiftCalendarID, pOSShiftID, maxDiscount, validateDiscount, validateShortFallExclusion, updateAfterPrintBillPreview, changePrice, rightIncome, rightBillOfDelivery, cloneBill, rightEditBill, shopManager, ordersBalanceWOPChange, ordersBalanceOOPChange, ordersBalanceRetainChange, ordersBalForcedALStatChange, orderFlowsOrderFinishedChange, viewFinalAmount, viewQuantity, viewStoreInfo, printFiscalCopy, printCopy, offerOnLogScreen, mirrorShortFallTransfer, mirrorShowStoreQuantity, mirrorQuantityPrefill, mirrorShortFallExclusion, rightChangePayments, automaticallyRefiscalization);
+    return Objects.hash(displayname, id, classid, objversion, hidden, userId, virtualposId, shiftcalendarId, posshiftId, maxdiscount, validatediscount, validateshortfallexclusion, updateafterprintbillpreview, changeprice, rightincome, rightbillofdelivery, clonebill, righteditbill, shopmanager, ordersbalancewopchange, ordersbalanceoopchange, ordersbalanceretainchange, ordersbalforcedalstatchange, orderflowsorderfinishedchange, viewfinalamount, viewquantity, viewstoreinfo, printfiscalcopy, printcopy, offeronlogscreen, mirrorshortfalltransfer, mirrorshowstorequantity, mirrorquantityprefill, mirrorshortfallexclusion, rightchangepayments, automaticallyrefiscalization);
   }
 
   @Override
@@ -814,42 +850,42 @@ public class Posuser   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posuser {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    userID: ").append(toIndentedString(userID)).append("\n");
-    sb.append("    virtualPOSID: ").append(toIndentedString(virtualPOSID)).append("\n");
-    sb.append("    shiftCalendarID: ").append(toIndentedString(shiftCalendarID)).append("\n");
-    sb.append("    pOSShiftID: ").append(toIndentedString(pOSShiftID)).append("\n");
-    sb.append("    maxDiscount: ").append(toIndentedString(maxDiscount)).append("\n");
-    sb.append("    validateDiscount: ").append(toIndentedString(validateDiscount)).append("\n");
-    sb.append("    validateShortFallExclusion: ").append(toIndentedString(validateShortFallExclusion)).append("\n");
-    sb.append("    updateAfterPrintBillPreview: ").append(toIndentedString(updateAfterPrintBillPreview)).append("\n");
-    sb.append("    changePrice: ").append(toIndentedString(changePrice)).append("\n");
-    sb.append("    rightIncome: ").append(toIndentedString(rightIncome)).append("\n");
-    sb.append("    rightBillOfDelivery: ").append(toIndentedString(rightBillOfDelivery)).append("\n");
-    sb.append("    cloneBill: ").append(toIndentedString(cloneBill)).append("\n");
-    sb.append("    rightEditBill: ").append(toIndentedString(rightEditBill)).append("\n");
-    sb.append("    shopManager: ").append(toIndentedString(shopManager)).append("\n");
-    sb.append("    ordersBalanceWOPChange: ").append(toIndentedString(ordersBalanceWOPChange)).append("\n");
-    sb.append("    ordersBalanceOOPChange: ").append(toIndentedString(ordersBalanceOOPChange)).append("\n");
-    sb.append("    ordersBalanceRetainChange: ").append(toIndentedString(ordersBalanceRetainChange)).append("\n");
-    sb.append("    ordersBalForcedALStatChange: ").append(toIndentedString(ordersBalForcedALStatChange)).append("\n");
-    sb.append("    orderFlowsOrderFinishedChange: ").append(toIndentedString(orderFlowsOrderFinishedChange)).append("\n");
-    sb.append("    viewFinalAmount: ").append(toIndentedString(viewFinalAmount)).append("\n");
-    sb.append("    viewQuantity: ").append(toIndentedString(viewQuantity)).append("\n");
-    sb.append("    viewStoreInfo: ").append(toIndentedString(viewStoreInfo)).append("\n");
-    sb.append("    printFiscalCopy: ").append(toIndentedString(printFiscalCopy)).append("\n");
-    sb.append("    printCopy: ").append(toIndentedString(printCopy)).append("\n");
-    sb.append("    offerOnLogScreen: ").append(toIndentedString(offerOnLogScreen)).append("\n");
-    sb.append("    mirrorShortFallTransfer: ").append(toIndentedString(mirrorShortFallTransfer)).append("\n");
-    sb.append("    mirrorShowStoreQuantity: ").append(toIndentedString(mirrorShowStoreQuantity)).append("\n");
-    sb.append("    mirrorQuantityPrefill: ").append(toIndentedString(mirrorQuantityPrefill)).append("\n");
-    sb.append("    mirrorShortFallExclusion: ").append(toIndentedString(mirrorShortFallExclusion)).append("\n");
-    sb.append("    rightChangePayments: ").append(toIndentedString(rightChangePayments)).append("\n");
-    sb.append("    automaticallyRefiscalization: ").append(toIndentedString(automaticallyRefiscalization)).append("\n");
+    sb.append("    userId: ").append(toIndentedString(userId)).append("\n");
+    sb.append("    virtualposId: ").append(toIndentedString(virtualposId)).append("\n");
+    sb.append("    shiftcalendarId: ").append(toIndentedString(shiftcalendarId)).append("\n");
+    sb.append("    posshiftId: ").append(toIndentedString(posshiftId)).append("\n");
+    sb.append("    maxdiscount: ").append(toIndentedString(maxdiscount)).append("\n");
+    sb.append("    validatediscount: ").append(toIndentedString(validatediscount)).append("\n");
+    sb.append("    validateshortfallexclusion: ").append(toIndentedString(validateshortfallexclusion)).append("\n");
+    sb.append("    updateafterprintbillpreview: ").append(toIndentedString(updateafterprintbillpreview)).append("\n");
+    sb.append("    changeprice: ").append(toIndentedString(changeprice)).append("\n");
+    sb.append("    rightincome: ").append(toIndentedString(rightincome)).append("\n");
+    sb.append("    rightbillofdelivery: ").append(toIndentedString(rightbillofdelivery)).append("\n");
+    sb.append("    clonebill: ").append(toIndentedString(clonebill)).append("\n");
+    sb.append("    righteditbill: ").append(toIndentedString(righteditbill)).append("\n");
+    sb.append("    shopmanager: ").append(toIndentedString(shopmanager)).append("\n");
+    sb.append("    ordersbalancewopchange: ").append(toIndentedString(ordersbalancewopchange)).append("\n");
+    sb.append("    ordersbalanceoopchange: ").append(toIndentedString(ordersbalanceoopchange)).append("\n");
+    sb.append("    ordersbalanceretainchange: ").append(toIndentedString(ordersbalanceretainchange)).append("\n");
+    sb.append("    ordersbalforcedalstatchange: ").append(toIndentedString(ordersbalforcedalstatchange)).append("\n");
+    sb.append("    orderflowsorderfinishedchange: ").append(toIndentedString(orderflowsorderfinishedchange)).append("\n");
+    sb.append("    viewfinalamount: ").append(toIndentedString(viewfinalamount)).append("\n");
+    sb.append("    viewquantity: ").append(toIndentedString(viewquantity)).append("\n");
+    sb.append("    viewstoreinfo: ").append(toIndentedString(viewstoreinfo)).append("\n");
+    sb.append("    printfiscalcopy: ").append(toIndentedString(printfiscalcopy)).append("\n");
+    sb.append("    printcopy: ").append(toIndentedString(printcopy)).append("\n");
+    sb.append("    offeronlogscreen: ").append(toIndentedString(offeronlogscreen)).append("\n");
+    sb.append("    mirrorshortfalltransfer: ").append(toIndentedString(mirrorshortfalltransfer)).append("\n");
+    sb.append("    mirrorshowstorequantity: ").append(toIndentedString(mirrorshowstorequantity)).append("\n");
+    sb.append("    mirrorquantityprefill: ").append(toIndentedString(mirrorquantityprefill)).append("\n");
+    sb.append("    mirrorshortfallexclusion: ").append(toIndentedString(mirrorshortfallexclusion)).append("\n");
+    sb.append("    rightchangepayments: ").append(toIndentedString(rightchangepayments)).append("\n");
+    sb.append("    automaticallyrefiscalization: ").append(toIndentedString(automaticallyrefiscalization)).append("\n");
     sb.append("}");
     return sb.toString();
   }

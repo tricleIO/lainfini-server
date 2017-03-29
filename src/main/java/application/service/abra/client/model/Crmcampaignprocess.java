@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,96 +34,132 @@ import java.util.Objects;
 /**
  * Crmcampaignprocess
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Crmcampaignprocess   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Campaign_ID")
-  private String campaignID = null;
+  @SerializedName("campaign_id")
+  private String campaignId = null;
 
-  @SerializedName("Audience_ID")
-  private String audienceID = null;
+  @SerializedName("audience_id")
+  private String audienceId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Crmcampaignprocess campaignID(String campaignID) {
-    this.campaignID = campaignID;
+  public Crmcampaignprocess displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Kampaň; ID objektu Kampaň [persistentní položka]
-   * @return campaignID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Kampaň; ID objektu Kampaň [persistentní položka]")
-  public String getCampaignID() {
-    return campaignID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setCampaignID(String campaignID) {
-    this.campaignID = campaignID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Crmcampaignprocess audienceID(String audienceID) {
-    this.audienceID = audienceID;
+  public Crmcampaignprocess id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Adresát; ID objektu Adresát kampaně [persistentní položka]
-   * @return audienceID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Adresát; ID objektu Adresát kampaně [persistentní položka]")
-  public String getAudienceID() {
-    return audienceID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setAudienceID(String audienceID) {
-    this.audienceID = audienceID;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Crmcampaignprocess classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Crmcampaignprocess objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Crmcampaignprocess campaignId(String campaignId) {
+    this.campaignId = campaignId;
+    return this;
+  }
+
+   /**
+   * kampaň; id objektu kampaň [persistentní položka]
+   * @return campaignId
+  **/
+  @ApiModelProperty(example = "null", value = "kampaň; id objektu kampaň [persistentní položka]")
+  public String getCampaignId() {
+    return campaignId;
+  }
+
+  public void setCampaignId(String campaignId) {
+    this.campaignId = campaignId;
+  }
+
+  public Crmcampaignprocess audienceId(String audienceId) {
+    this.audienceId = audienceId;
+    return this;
+  }
+
+   /**
+   * adresát; id objektu adresát kampaně [persistentní položka]
+   * @return audienceId
+  **/
+  @ApiModelProperty(example = "null", value = "adresát; id objektu adresát kampaně [persistentní položka]")
+  public String getAudienceId() {
+    return audienceId;
+  }
+
+  public void setAudienceId(String audienceId) {
+    this.audienceId = audienceId;
   }
 
 
@@ -136,17 +172,17 @@ public class Crmcampaignprocess   {
       return false;
     }
     Crmcampaignprocess crmcampaignprocess = (Crmcampaignprocess) o;
-    return Objects.equals(this.displayName, crmcampaignprocess.displayName) &&
-        Objects.equals(this.ID, crmcampaignprocess.ID) &&
-        Objects.equals(this.classID, crmcampaignprocess.classID) &&
-        Objects.equals(this.objVersion, crmcampaignprocess.objVersion) &&
-        Objects.equals(this.campaignID, crmcampaignprocess.campaignID) &&
-        Objects.equals(this.audienceID, crmcampaignprocess.audienceID);
+    return Objects.equals(this.displayname, crmcampaignprocess.displayname) &&
+        Objects.equals(this.id, crmcampaignprocess.id) &&
+        Objects.equals(this.classid, crmcampaignprocess.classid) &&
+        Objects.equals(this.objversion, crmcampaignprocess.objversion) &&
+        Objects.equals(this.campaignId, crmcampaignprocess.campaignId) &&
+        Objects.equals(this.audienceId, crmcampaignprocess.audienceId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, campaignID, audienceID);
+    return Objects.hash(displayname, id, classid, objversion, campaignId, audienceId);
   }
 
   @Override
@@ -154,12 +190,12 @@ public class Crmcampaignprocess   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Crmcampaignprocess {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    campaignID: ").append(toIndentedString(campaignID)).append("\n");
-    sb.append("    audienceID: ").append(toIndentedString(audienceID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    campaignId: ").append(toIndentedString(campaignId)).append("\n");
+    sb.append("    audienceId: ").append(toIndentedString(audienceId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

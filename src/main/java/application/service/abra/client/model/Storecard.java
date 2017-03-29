@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -25,7 +25,6 @@
 
 package application.service.abra.client.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.google.gson.annotations.SerializedName;
 import io.swagger.annotations.ApiModelProperty;
 import org.joda.time.DateTime;
@@ -38,324 +37,359 @@ import java.util.Objects;
 /**
  * Storecard
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
-@JsonIgnoreProperties(ignoreUnknown = true)
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Storecard   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("DateOfChange")
-  private DateTime dateOfChange = null;
+  @SerializedName("dateofchange")
+  private DateTime dateofchange = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("StoreUnits")
-  private List<Storeunit> storeUnits = new ArrayList<Storeunit>();
+  @SerializedName("storeunits")
+  private List<Storeunit> storeunits = new ArrayList<Storeunit>();
 
-  @SerializedName("Components")
+  @SerializedName("components")
   private List<Storecardcomponent> components = new ArrayList<Storecardcomponent>();
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("PLU")
-  private Integer PLU = null;
+  @SerializedName("plu")
+  private Integer plu = null;
 
-  @SerializedName("EAN")
-  private String EAN = null;
+  @SerializedName("ean")
+  private String ean = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ShortName")
-  private String shortName = null;
+  @SerializedName("shortname")
+  private String shortname = null;
 
-  @SerializedName("ForeignName")
-  private String foreignName = null;
+  @SerializedName("foreignname")
+  private String foreignname = null;
 
-  @SerializedName("Specification")
+  @SerializedName("specification")
   private String specification = null;
 
-  @SerializedName("Specification2")
+  @SerializedName("specification2")
   private String specification2 = null;
 
-  @SerializedName("StoreCardCategory_ID")
-  private String storeCardCategoryID = null;
+  @SerializedName("storecardcategory_id")
+  private String storecardcategoryId = null;
 
-  @SerializedName("Producer_ID")
-  private String producerID = null;
+  @SerializedName("producer_id")
+  private String producerId = null;
 
-  @SerializedName("VATRate")
-  private Double vATRate = null;
+  @SerializedName("vatrate")
+  private Double vatrate = null;
 
-  @SerializedName("SpendingTaxTariff")
-  private Double spendingTaxTariff = null;
+  @SerializedName("spendingtaxtariff")
+  private Double spendingtaxtariff = null;
 
-  @SerializedName("CustomsTariff")
-  private Double customsTariff = null;
+  @SerializedName("customstariff")
+  private Double customstariff = null;
 
-  @SerializedName("Country_ID")
-  private String countryID = null;
+  @SerializedName("country_id")
+  private String countryId = null;
 
-  @SerializedName("Category")
+  @SerializedName("category")
   private Integer category = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Comment")
+  @SerializedName("comment")
   private String comment = null;
 
-  @SerializedName("SerialNumberStructure")
-  private String serialNumberStructure = null;
+  @SerializedName("serialnumberstructure")
+  private String serialnumberstructure = null;
 
-  @SerializedName("CustomsTariffNumber")
-  private String customsTariffNumber = null;
+  @SerializedName("customstariffnumber")
+  private String customstariffnumber = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("StoreMenuItem_ID")
-  private String storeMenuItemID = null;
+  @SerializedName("storemenuitem_id")
+  private String storemenuitemId = null;
 
-  @SerializedName("DealerDiscount_ID")
-  private String dealerDiscountID = null;
+  @SerializedName("dealerdiscount_id")
+  private String dealerdiscountId = null;
 
-  @SerializedName("QuantityDiscount_ID")
-  private String quantityDiscountID = null;
+  @SerializedName("quantitydiscount_id")
+  private String quantitydiscountId = null;
 
-  @SerializedName("MainUnitCode")
-  private String mainUnitCode = null;
+  @SerializedName("mainunitcode")
+  private String mainunitcode = null;
 
-  @SerializedName("IsScalable")
-  private Boolean isScalable = null;
+  @SerializedName("isscalable")
+  private Boolean isscalable = null;
 
-  @SerializedName("IsProduct")
-  private Boolean isProduct = null;
+  @SerializedName("isproduct")
+  private Boolean isproduct = null;
 
-  @SerializedName("PrefixCode")
-  private String prefixCode = null;
+  @SerializedName("prefixcode")
+  private String prefixcode = null;
 
-  @SerializedName("BodyCode")
-  private String bodyCode = null;
+  @SerializedName("bodycode")
+  private String bodycode = null;
 
-  @SerializedName("SuffixCode")
-  private String suffixCode = null;
+  @SerializedName("suffixcode")
+  private String suffixcode = null;
 
-  @SerializedName("MainSupplier_ID")
-  private String mainSupplierID = null;
+  @SerializedName("mainsupplier_id")
+  private String mainsupplierId = null;
 
-  @SerializedName("MainUnitRate")
-  private Double mainUnitRate = null;
+  @SerializedName("mainunitrate")
+  private Double mainunitrate = null;
 
-  @SerializedName("Picture_ID")
-  private Storecard pictureID = null;
+  @SerializedName("picture_id")
+  private Storecard pictureId = null;
 
-  @SerializedName("ExpirationDue")
-  private Integer expirationDue = null;
+  @SerializedName("expirationdue")
+  private Integer expirationdue = null;
 
-  @SerializedName("WithContainers")
-  private Boolean withContainers = null;
+  @SerializedName("withcontainers")
+  private Boolean withcontainers = null;
 
-  @SerializedName("AuthorizedBy_ID")
-  private String authorizedByID = null;
+  @SerializedName("authorizedby_id")
+  private String authorizedbyId = null;
 
-  @SerializedName("AuthorizedAt$DATE")
-  private DateTime authorizedAtDATE = null;
+  @SerializedName("authorizedat$date")
+  private DateTime authorizedatdate = null;
 
-  @SerializedName("VATRate_ID")
-  private String vATRateID = null;
+  @SerializedName("vatrate_id")
+  private String vatrateId = null;
 
-  @SerializedName("VATRates")
-  private List<Storecardvatrate> vATRates = new ArrayList<Storecardvatrate>();
+  @SerializedName("vatrates")
+  private List<Storecardvatrate> vatrates = new ArrayList<Storecardvatrate>();
 
-  @SerializedName("IntrastatInputStatistic_ID")
-  private String intrastatInputStatisticID = null;
+  @SerializedName("intrastatinputstatistic_id")
+  private String intrastatinputstatisticId = null;
 
-  @SerializedName("IntrastatOutputStatistic_ID")
-  private String intrastatOutputStatisticID = null;
+  @SerializedName("intrastatoutputstatistic_id")
+  private String intrastatoutputstatisticId = null;
 
-  @SerializedName("IntrastatCommodity_ID")
-  private String intrastatCommodityID = null;
+  @SerializedName("intrastatcommodity_id")
+  private String intrastatcommodityId = null;
 
-  @SerializedName("IntrastatUnitCode")
-  private String intrastatUnitCode = null;
+  @SerializedName("intrastatunitcode")
+  private String intrastatunitcode = null;
 
-  @SerializedName("IntrastatUnitRate")
-  private Double intrastatUnitRate = null;
+  @SerializedName("intrastatunitrate")
+  private Double intrastatunitrate = null;
 
-  @SerializedName("IntrastatUnitRateRef")
-  private Double intrastatUnitRateRef = null;
+  @SerializedName("intrastatunitrateref")
+  private Double intrastatunitrateref = null;
 
-  @SerializedName("IntrastatExtraType_ID")
-  private String intrastatExtraTypeID = null;
+  @SerializedName("intrastatextratype_id")
+  private String intrastatextratypeId = null;
 
-  @SerializedName("IntrastatWeight")
-  private Double intrastatWeight = null;
+  @SerializedName("intrastatweight")
+  private Double intrastatweight = null;
 
-  @SerializedName("IntrastatWeightUnit")
-  private Integer intrastatWeightUnit = null;
+  @SerializedName("intrastatweightunit")
+  private Integer intrastatweightunit = null;
 
-  @SerializedName("OutOfStockDelivery")
-  private Integer outOfStockDelivery = null;
+  @SerializedName("outofstockdelivery")
+  private Integer outofstockdelivery = null;
 
-  @SerializedName("OutOfStockBatchDelivery")
-  private Integer outOfStockBatchDelivery = null;
+  @SerializedName("outofstockbatchdelivery")
+  private Integer outofstockbatchdelivery = null;
 
-  @SerializedName("UseOutOfStockDelivery")
-  private Boolean useOutOfStockDelivery = null;
+  @SerializedName("useoutofstockdelivery")
+  private Boolean useoutofstockdelivery = null;
 
-  @SerializedName("UseOutOfStockBatchDelivery")
-  private Boolean useOutOfStockBatchDelivery = null;
+  @SerializedName("useoutofstockbatchdelivery")
+  private Boolean useoutofstockbatchdelivery = null;
 
-  @SerializedName("DiscountsExcluded")
-  private Boolean discountsExcluded = null;
+  @SerializedName("discountsexcluded")
+  private Boolean discountsexcluded = null;
 
-  @SerializedName("IntrastatRegion_ID")
-  private String intrastatRegionID = null;
+  @SerializedName("intrastatregion_id")
+  private String intrastatregionId = null;
 
-  @SerializedName("StoreBatchStructure_ID")
-  private String storeBatchStructureID = null;
+  @SerializedName("storebatchstructure_id")
+  private String storebatchstructureId = null;
 
-  @SerializedName("StoreAssortmentGroup_ID")
-  private String storeAssortmentGroupID = null;
+  @SerializedName("storeassortmentgroup_id")
+  private String storeassortmentgroupId = null;
 
-  @SerializedName("UsualGrossProfit")
-  private Double usualGrossProfit = null;
+  @SerializedName("usualgrossprofit")
+  private Double usualgrossprofit = null;
 
-  @SerializedName("ToleranceType")
-  private Integer toleranceType = null;
+  @SerializedName("tolerancetype")
+  private Integer tolerancetype = null;
 
-  @SerializedName("TolerancePlus")
-  private Double tolerancePlus = null;
+  @SerializedName("toleranceplus")
+  private Double toleranceplus = null;
 
-  @SerializedName("ToleranceMinus")
-  private Double toleranceMinus = null;
+  @SerializedName("toleranceminus")
+  private Double toleranceminus = null;
 
-  @SerializedName("IntrastatCurrentPrice")
-  private Double intrastatCurrentPrice = null;
+  @SerializedName("intrastatcurrentprice")
+  private Double intrastatcurrentprice = null;
 
-  @SerializedName("IntrastatCurrentPriceLimit")
-  private Double intrastatCurrentPriceLimit = null;
+  @SerializedName("intrastatcurrentpricelimit")
+  private Double intrastatcurrentpricelimit = null;
 
-  @SerializedName("Pictures")
+  @SerializedName("pictures")
   private List<Storecardpicture> pictures = new ArrayList<Storecardpicture>();
 
-  @SerializedName("GuaranteeLength")
-  private Double guaranteeLength = null;
+  @SerializedName("guaranteelength")
+  private Double guaranteelength = null;
 
-  @SerializedName("GuaranteeUnitName")
-  private String guaranteeUnitName = null;
+  @SerializedName("guaranteeunitname")
+  private String guaranteeunitname = null;
 
-  @SerializedName("GuaranteeLengthCorporate")
-  private Double guaranteeLengthCorporate = null;
+  @SerializedName("guaranteelengthcorporate")
+  private Double guaranteelengthcorporate = null;
 
-  @SerializedName("GuaranteeUnitNameCorporate")
-  private String guaranteeUnitNameCorporate = null;
+  @SerializedName("guaranteeunitnamecorporate")
+  private String guaranteeunitnamecorporate = null;
 
-  @SerializedName("MOSSService_ID")
-  private String mOSSServiceID = null;
+  @SerializedName("mossservice_id")
+  private String mossserviceId = null;
 
-  @SerializedName("DRCArticles")
-  private List<Storecarddrcarticle> dRCArticles = new ArrayList<Storecarddrcarticle>();
+  @SerializedName("drcarticles")
+  private List<Storecarddrcarticle> drcarticles = new ArrayList<Storecarddrcarticle>();
 
-  @SerializedName("IncomeType_ID")
-  private String incomeTypeID = null;
+  @SerializedName("incometype_id")
+  private String incometypeId = null;
 
-  @SerializedName("CreatedAt$DATE")
-  private DateTime createdAtDATE = null;
+  @SerializedName("createdat$date")
+  private DateTime createdatdate = null;
 
-  @SerializedName("CorrectedAt$DATE")
-  private DateTime correctedAtDATE = null;
+  @SerializedName("correctedat$date")
+  private DateTime correctedatdate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-  public Storecard dateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public Storecard displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum změny
-   * @return dateOfChange
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum změny")
-  public DateTime getDateOfChange() {
-    return dateOfChange;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Storecard storeUnits(List<Storeunit> storeUnits) {
-    this.storeUnits = storeUnits;
-    return this;
-  }
-
-  public Storecard addStoreUnitsItem(Storeunit storeUnitsItem) {
-    this.storeUnits.add(storeUnitsItem);
+  public Storecard id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Jednotky; kolekce BO Jednotka skladové karty [nepersistentní položka]
-   * @return storeUnits
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Jednotky; kolekce BO Jednotka skladové karty [nepersistentní položka]")
-  public List<Storeunit> getStoreUnits() {
-    return storeUnits;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setStoreUnits(List<Storeunit> storeUnits) {
-    this.storeUnits = storeUnits;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Storecard dateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+    return this;
+  }
+
+   /**
+   * datum změny
+   * @return dateofchange
+  **/
+  @ApiModelProperty(example = "null", value = "datum změny")
+  public DateTime getDateofchange() {
+    return dateofchange;
+  }
+
+  public void setDateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+  }
+
+  public Storecard classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Storecard objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Storecard storeunits(List<Storeunit> storeunits) {
+    this.storeunits = storeunits;
+    return this;
+  }
+
+  public Storecard addStoreunitsItem(Storeunit storeunitsItem) {
+    this.storeunits.add(storeunitsItem);
+    return this;
+  }
+
+   /**
+   * jednotky; kolekce bo jednotka skladové karty [nepersistentní položka]
+   * @return storeunits
+  **/
+  @ApiModelProperty(example = "null", value = "jednotky; kolekce bo jednotka skladové karty [nepersistentní položka]")
+  public List<Storeunit> getStoreunits() {
+    return storeunits;
+  }
+
+  public void setStoreunits(List<Storeunit> storeunits) {
+    this.storeunits = storeunits;
   }
 
   public Storecard components(List<Storecardcomponent> components) {
@@ -369,10 +403,10 @@ public class Storecard   {
   }
 
    /**
-   * Komponenty; kolekce BO Součást skladové makrokarty [nepersistentní položka]
+   * komponenty; kolekce bo součást skladové makrokarty [nepersistentní položka]
    * @return components
   **/
-  @ApiModelProperty(example = "null", value = "Komponenty; kolekce BO Součást skladové makrokarty [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "komponenty; kolekce bo součást skladové makrokarty [nepersistentní položka]")
   public List<Storecardcomponent> getComponents() {
     return components;
   }
@@ -387,10 +421,10 @@ public class Storecard   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -399,40 +433,40 @@ public class Storecard   {
     this.code = code;
   }
 
-  public Storecard PLU(Integer PLU) {
-    this.PLU = PLU;
+  public Storecard plu(Integer plu) {
+    this.plu = plu;
     return this;
   }
 
    /**
-   * PLU [persistentní položka]
-   * @return PLU
+   * plu [persistentní položka]
+   * @return plu
   **/
-  @ApiModelProperty(example = "null", value = "PLU [persistentní položka]")
-  public Integer getPLU() {
-    return PLU;
+  @ApiModelProperty(example = "null", value = "plu [persistentní položka]")
+  public Integer getPlu() {
+    return plu;
   }
 
-  public void setPLU(Integer PLU) {
-    this.PLU = PLU;
+  public void setPlu(Integer plu) {
+    this.plu = plu;
   }
 
-  public Storecard EAN(String EAN) {
-    this.EAN = EAN;
+  public Storecard ean(String ean) {
+    this.ean = ean;
     return this;
   }
 
    /**
-   * EAN [persistentní položka]
-   * @return EAN
+   * ean [persistentní položka]
+   * @return ean
   **/
-  @ApiModelProperty(example = "null", value = "EAN [persistentní položka]")
-  public String getEAN() {
-    return EAN;
+  @ApiModelProperty(example = "null", value = "ean [persistentní položka]")
+  public String getEan() {
+    return ean;
   }
 
-  public void setEAN(String EAN) {
-    this.EAN = EAN;
+  public void setEan(String ean) {
+    this.ean = ean;
   }
 
   public Storecard name(String name) {
@@ -441,10 +475,10 @@ public class Storecard   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -453,40 +487,40 @@ public class Storecard   {
     this.name = name;
   }
 
-  public Storecard shortName(String shortName) {
-    this.shortName = shortName;
+  public Storecard shortname(String shortname) {
+    this.shortname = shortname;
     return this;
   }
 
    /**
-   * Zkr.název [persistentní položka]
-   * @return shortName
+   * zkr.název [persistentní položka]
+   * @return shortname
   **/
-  @ApiModelProperty(example = "null", value = "Zkr.název [persistentní položka]")
-  public String getShortName() {
-    return shortName;
+  @ApiModelProperty(example = "null", value = "zkr.název [persistentní položka]")
+  public String getShortname() {
+    return shortname;
   }
 
-  public void setShortName(String shortName) {
-    this.shortName = shortName;
+  public void setShortname(String shortname) {
+    this.shortname = shortname;
   }
 
-  public Storecard foreignName(String foreignName) {
-    this.foreignName = foreignName;
+  public Storecard foreignname(String foreignname) {
+    this.foreignname = foreignname;
     return this;
   }
 
    /**
-   * Název cizí [persistentní položka]
-   * @return foreignName
+   * název cizí [persistentní položka]
+   * @return foreignname
   **/
-  @ApiModelProperty(example = "null", value = "Název cizí [persistentní položka]")
-  public String getForeignName() {
-    return foreignName;
+  @ApiModelProperty(example = "null", value = "název cizí [persistentní položka]")
+  public String getForeignname() {
+    return foreignname;
   }
 
-  public void setForeignName(String foreignName) {
-    this.foreignName = foreignName;
+  public void setForeignname(String foreignname) {
+    this.foreignname = foreignname;
   }
 
   public Storecard specification(String specification) {
@@ -495,10 +529,10 @@ public class Storecard   {
   }
 
    /**
-   * Specifikace [persistentní položka]
+   * specifikace [persistentní položka]
    * @return specification
   **/
-  @ApiModelProperty(example = "null", value = "Specifikace [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "specifikace [persistentní položka]")
   public String getSpecification() {
     return specification;
   }
@@ -513,10 +547,10 @@ public class Storecard   {
   }
 
    /**
-   * Specifikace2 [persistentní položka]
+   * specifikace2 [persistentní položka]
    * @return specification2
   **/
-  @ApiModelProperty(example = "null", value = "Specifikace2 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "specifikace2 [persistentní položka]")
   public String getSpecification2() {
     return specification2;
   }
@@ -525,103 +559,112 @@ public class Storecard   {
     this.specification2 = specification2;
   }
 
-  public Storecard storeCardCategoryID(String storeCardCategoryID) {
-    this.storeCardCategoryID = storeCardCategoryID;
+  public Storecard storecardcategoryId(String storecardcategoryId) {
+    this.storecardcategoryId = storecardcategoryId;
     return this;
   }
 
    /**
-   * Typ; ID objektu Typ skladové karty [persistentní položka]
-   * @return storeCardCategoryID
+   * typ; id objektu typ skladové karty [persistentní položka]
+   * @return storecardcategoryId
   **/
-  @ApiModelProperty(example = "null", value = "Typ; ID objektu Typ skladové karty [persistentní položka]")
-  public String getStoreCardCategoryID() {
-    return storeCardCategoryID;
+  @ApiModelProperty(example = "null", value = "typ; id objektu typ skladové karty [persistentní položka]")
+  public String getStorecardcategoryId() {
+    return storecardcategoryId;
   }
 
-  public void setStoreCardCategoryID(String storeCardCategoryID) {
-    this.storeCardCategoryID = storeCardCategoryID;
+  public void setStorecardcategoryId(String storecardcategoryId) {
+    this.storecardcategoryId = storecardcategoryId;
   }
 
-  public Storecard producerID(String producerID) {
-    this.producerID = producerID;
+  public Storecard producerId(String producerId) {
+    this.producerId = producerId;
     return this;
   }
 
    /**
-   * Výrobce; ID objektu Firma [persistentní položka]
-   * @return producerID
+   * výrobce; id objektu firma [persistentní položka]
+   * @return producerId
   **/
-  @ApiModelProperty(example = "null", value = "Výrobce; ID objektu Firma [persistentní položka]")
-  public String getProducerID() {
-    return producerID;
+  @ApiModelProperty(example = "null", value = "výrobce; id objektu firma [persistentní položka]")
+  public String getProducerId() {
+    return producerId;
   }
 
-  public void setProducerID(String producerID) {
-    this.producerID = producerID;
+  public void setProducerId(String producerId) {
+    this.producerId = producerId;
   }
 
-   /**
-   * DPH sazba
-   * @return vATRate
-  **/
-  @ApiModelProperty(example = "null", value = "DPH sazba")
-  public Double getVATRate() {
-    return vATRate;
-  }
-
-  public Storecard spendingTaxTariff(Double spendingTaxTariff) {
-    this.spendingTaxTariff = spendingTaxTariff;
+  public Storecard vatrate(Double vatrate) {
+    this.vatrate = vatrate;
     return this;
   }
 
    /**
-   * Proc.náklady [persistentní položka]
-   * @return spendingTaxTariff
+   * dph sazba
+   * @return vatrate
   **/
-  @ApiModelProperty(example = "null", value = "Proc.náklady [persistentní položka]")
-  public Double getSpendingTaxTariff() {
-    return spendingTaxTariff;
+  @ApiModelProperty(example = "null", value = "dph sazba")
+  public Double getVatrate() {
+    return vatrate;
   }
 
-  public void setSpendingTaxTariff(Double spendingTaxTariff) {
-    this.spendingTaxTariff = spendingTaxTariff;
+  public void setVatrate(Double vatrate) {
+    this.vatrate = vatrate;
   }
 
-  public Storecard customsTariff(Double customsTariff) {
-    this.customsTariff = customsTariff;
+  public Storecard spendingtaxtariff(Double spendingtaxtariff) {
+    this.spendingtaxtariff = spendingtaxtariff;
     return this;
   }
 
    /**
-   * Cel.sazba [persistentní položka]
-   * @return customsTariff
+   * proc.náklady [persistentní položka]
+   * @return spendingtaxtariff
   **/
-  @ApiModelProperty(example = "null", value = "Cel.sazba [persistentní položka]")
-  public Double getCustomsTariff() {
-    return customsTariff;
+  @ApiModelProperty(example = "null", value = "proc.náklady [persistentní položka]")
+  public Double getSpendingtaxtariff() {
+    return spendingtaxtariff;
   }
 
-  public void setCustomsTariff(Double customsTariff) {
-    this.customsTariff = customsTariff;
+  public void setSpendingtaxtariff(Double spendingtaxtariff) {
+    this.spendingtaxtariff = spendingtaxtariff;
   }
 
-  public Storecard countryID(String countryID) {
-    this.countryID = countryID;
+  public Storecard customstariff(Double customstariff) {
+    this.customstariff = customstariff;
     return this;
   }
 
    /**
-   * Země; ID objektu Země [persistentní položka]
-   * @return countryID
+   * cel.sazba [persistentní položka]
+   * @return customstariff
   **/
-  @ApiModelProperty(example = "null", value = "Země; ID objektu Země [persistentní položka]")
-  public String getCountryID() {
-    return countryID;
+  @ApiModelProperty(example = "null", value = "cel.sazba [persistentní položka]")
+  public Double getCustomstariff() {
+    return customstariff;
   }
 
-  public void setCountryID(String countryID) {
-    this.countryID = countryID;
+  public void setCustomstariff(Double customstariff) {
+    this.customstariff = customstariff;
+  }
+
+  public Storecard countryId(String countryId) {
+    this.countryId = countryId;
+    return this;
+  }
+
+   /**
+   * země; id objektu země [persistentní položka]
+   * @return countryId
+  **/
+  @ApiModelProperty(example = "null", value = "země; id objektu země [persistentní položka]")
+  public String getCountryId() {
+    return countryId;
+  }
+
+  public void setCountryId(String countryId) {
+    this.countryId = countryId;
   }
 
   public Storecard category(Integer category) {
@@ -630,10 +673,10 @@ public class Storecard   {
   }
 
    /**
-   * Třída [persistentní položka]
+   * třída [persistentní položka]
    * @return category
   **/
-  @ApiModelProperty(example = "null", value = "Třída [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "třída [persistentní položka]")
   public Integer getCategory() {
     return category;
   }
@@ -648,10 +691,10 @@ public class Storecard   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -666,10 +709,10 @@ public class Storecard   {
   }
 
    /**
-   * Poznámka
+   * poznámka
    * @return comment
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka")
+  @ApiModelProperty(example = "null", value = "poznámka")
   public String getComment() {
     return comment;
   }
@@ -678,40 +721,40 @@ public class Storecard   {
     this.comment = comment;
   }
 
-  public Storecard serialNumberStructure(String serialNumberStructure) {
-    this.serialNumberStructure = serialNumberStructure;
+  public Storecard serialnumberstructure(String serialnumberstructure) {
+    this.serialnumberstructure = serialnumberstructure;
     return this;
   }
 
    /**
-   * Strukt.sér.č. [persistentní položka]
-   * @return serialNumberStructure
+   * strukt.sér.č. [persistentní položka]
+   * @return serialnumberstructure
   **/
-  @ApiModelProperty(example = "null", value = "Strukt.sér.č. [persistentní položka]")
-  public String getSerialNumberStructure() {
-    return serialNumberStructure;
+  @ApiModelProperty(example = "null", value = "strukt.sér.č. [persistentní položka]")
+  public String getSerialnumberstructure() {
+    return serialnumberstructure;
   }
 
-  public void setSerialNumberStructure(String serialNumberStructure) {
-    this.serialNumberStructure = serialNumberStructure;
+  public void setSerialnumberstructure(String serialnumberstructure) {
+    this.serialnumberstructure = serialnumberstructure;
   }
 
-  public Storecard customsTariffNumber(String customsTariffNumber) {
-    this.customsTariffNumber = customsTariffNumber;
+  public Storecard customstariffnumber(String customstariffnumber) {
+    this.customstariffnumber = customstariffnumber;
     return this;
   }
 
    /**
    * Č.celního sazeb. [persistentní položka]
-   * @return customsTariffNumber
+   * @return customstariffnumber
   **/
   @ApiModelProperty(example = "null", value = "Č.celního sazeb. [persistentní položka]")
-  public String getCustomsTariffNumber() {
-    return customsTariffNumber;
+  public String getCustomstariffnumber() {
+    return customstariffnumber;
   }
 
-  public void setCustomsTariffNumber(String customsTariffNumber) {
-    this.customsTariffNumber = customsTariffNumber;
+  public void setCustomstariffnumber(String customstariffnumber) {
+    this.customstariffnumber = customstariffnumber;
   }
 
   public Storecard hidden(Boolean hidden) {
@@ -720,10 +763,10 @@ public class Storecard   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -732,729 +775,747 @@ public class Storecard   {
     this.hidden = hidden;
   }
 
-  public Storecard storeMenuItemID(String storeMenuItemID) {
-    this.storeMenuItemID = storeMenuItemID;
+  public Storecard storemenuitemId(String storemenuitemId) {
+    this.storemenuitemId = storemenuitemId;
     return this;
   }
 
    /**
-   * Menu; ID objektu Skladové menu [persistentní položka]
-   * @return storeMenuItemID
+   * menu; id objektu skladové menu [persistentní položka]
+   * @return storemenuitemId
   **/
-  @ApiModelProperty(example = "null", value = "Menu; ID objektu Skladové menu [persistentní položka]")
-  public String getStoreMenuItemID() {
-    return storeMenuItemID;
+  @ApiModelProperty(example = "null", value = "menu; id objektu skladové menu [persistentní položka]")
+  public String getStoremenuitemId() {
+    return storemenuitemId;
   }
 
-  public void setStoreMenuItemID(String storeMenuItemID) {
-    this.storeMenuItemID = storeMenuItemID;
+  public void setStoremenuitemId(String storemenuitemId) {
+    this.storemenuitemId = storemenuitemId;
   }
 
-  public Storecard dealerDiscountID(String dealerDiscountID) {
-    this.dealerDiscountID = dealerDiscountID;
+  public Storecard dealerdiscountId(String dealerdiscountId) {
+    this.dealerdiscountId = dealerdiscountId;
     return this;
   }
 
    /**
-   * Dealerské slevy; ID objektu Dealerská sleva [persistentní položka]
-   * @return dealerDiscountID
+   * dealerské slevy; id objektu dealerská sleva [persistentní položka]
+   * @return dealerdiscountId
   **/
-  @ApiModelProperty(example = "null", value = "Dealerské slevy; ID objektu Dealerská sleva [persistentní položka]")
-  public String getDealerDiscountID() {
-    return dealerDiscountID;
+  @ApiModelProperty(example = "null", value = "dealerské slevy; id objektu dealerská sleva [persistentní položka]")
+  public String getDealerdiscountId() {
+    return dealerdiscountId;
   }
 
-  public void setDealerDiscountID(String dealerDiscountID) {
-    this.dealerDiscountID = dealerDiscountID;
+  public void setDealerdiscountId(String dealerdiscountId) {
+    this.dealerdiscountId = dealerdiscountId;
   }
 
-  public Storecard quantityDiscountID(String quantityDiscountID) {
-    this.quantityDiscountID = quantityDiscountID;
+  public Storecard quantitydiscountId(String quantitydiscountId) {
+    this.quantitydiscountId = quantitydiscountId;
     return this;
   }
 
    /**
-   * Kusové slevy; ID objektu Kusová sleva [persistentní položka]
-   * @return quantityDiscountID
+   * kusové slevy; id objektu kusová sleva [persistentní položka]
+   * @return quantitydiscountId
   **/
-  @ApiModelProperty(example = "null", value = "Kusové slevy; ID objektu Kusová sleva [persistentní položka]")
-  public String getQuantityDiscountID() {
-    return quantityDiscountID;
+  @ApiModelProperty(example = "null", value = "kusové slevy; id objektu kusová sleva [persistentní položka]")
+  public String getQuantitydiscountId() {
+    return quantitydiscountId;
   }
 
-  public void setQuantityDiscountID(String quantityDiscountID) {
-    this.quantityDiscountID = quantityDiscountID;
+  public void setQuantitydiscountId(String quantitydiscountId) {
+    this.quantitydiscountId = quantitydiscountId;
   }
 
-  public Storecard mainUnitCode(String mainUnitCode) {
-    this.mainUnitCode = mainUnitCode;
+  public Storecard mainunitcode(String mainunitcode) {
+    this.mainunitcode = mainunitcode;
     return this;
   }
 
    /**
-   * Hlavní jednotka [persistentní položka]
-   * @return mainUnitCode
+   * hlavní jednotka [persistentní položka]
+   * @return mainunitcode
   **/
-  @ApiModelProperty(example = "null", value = "Hlavní jednotka [persistentní položka]")
-  public String getMainUnitCode() {
-    return mainUnitCode;
+  @ApiModelProperty(example = "null", value = "hlavní jednotka [persistentní položka]")
+  public String getMainunitcode() {
+    return mainunitcode;
   }
 
-  public void setMainUnitCode(String mainUnitCode) {
-    this.mainUnitCode = mainUnitCode;
+  public void setMainunitcode(String mainunitcode) {
+    this.mainunitcode = mainunitcode;
   }
 
-  public Storecard isScalable(Boolean isScalable) {
-    this.isScalable = isScalable;
+  public Storecard isscalable(Boolean isscalable) {
+    this.isscalable = isscalable;
     return this;
   }
 
    /**
-   * Vážitelnost [persistentní položka]
-   * @return isScalable
+   * vážitelnost [persistentní položka]
+   * @return isscalable
   **/
-  @ApiModelProperty(example = "null", value = "Vážitelnost [persistentní položka]")
-  public Boolean getIsScalable() {
-    return isScalable;
+  @ApiModelProperty(example = "null", value = "vážitelnost [persistentní položka]")
+  public Boolean getIsscalable() {
+    return isscalable;
   }
 
-  public void setIsScalable(Boolean isScalable) {
-    this.isScalable = isScalable;
+  public void setIsscalable(Boolean isscalable) {
+    this.isscalable = isscalable;
   }
 
-  public Storecard isProduct(Boolean isProduct) {
-    this.isProduct = isProduct;
+  public Storecard isproduct(Boolean isproduct) {
+    this.isproduct = isproduct;
     return this;
   }
 
    /**
-   * Výrobek [persistentní položka]
-   * @return isProduct
+   * výrobek [persistentní položka]
+   * @return isproduct
   **/
-  @ApiModelProperty(example = "null", value = "Výrobek [persistentní položka]")
-  public Boolean getIsProduct() {
-    return isProduct;
+  @ApiModelProperty(example = "null", value = "výrobek [persistentní položka]")
+  public Boolean getIsproduct() {
+    return isproduct;
   }
 
-  public void setIsProduct(Boolean isProduct) {
-    this.isProduct = isProduct;
+  public void setIsproduct(Boolean isproduct) {
+    this.isproduct = isproduct;
   }
 
-  public Storecard prefixCode(String prefixCode) {
-    this.prefixCode = prefixCode;
+  public Storecard prefixcode(String prefixcode) {
+    this.prefixcode = prefixcode;
     return this;
   }
 
    /**
-   * Prefix kódu
-   * @return prefixCode
+   * prefix kódu
+   * @return prefixcode
   **/
-  @ApiModelProperty(example = "null", value = "Prefix kódu")
-  public String getPrefixCode() {
-    return prefixCode;
+  @ApiModelProperty(example = "null", value = "prefix kódu")
+  public String getPrefixcode() {
+    return prefixcode;
   }
 
-  public void setPrefixCode(String prefixCode) {
-    this.prefixCode = prefixCode;
+  public void setPrefixcode(String prefixcode) {
+    this.prefixcode = prefixcode;
   }
 
-  public Storecard bodyCode(String bodyCode) {
-    this.bodyCode = bodyCode;
+  public Storecard bodycode(String bodycode) {
+    this.bodycode = bodycode;
     return this;
   }
 
    /**
    * Číslo kódu
-   * @return bodyCode
+   * @return bodycode
   **/
   @ApiModelProperty(example = "null", value = "Číslo kódu")
-  public String getBodyCode() {
-    return bodyCode;
+  public String getBodycode() {
+    return bodycode;
   }
 
-  public void setBodyCode(String bodyCode) {
-    this.bodyCode = bodyCode;
+  public void setBodycode(String bodycode) {
+    this.bodycode = bodycode;
   }
 
-  public Storecard suffixCode(String suffixCode) {
-    this.suffixCode = suffixCode;
+  public Storecard suffixcode(String suffixcode) {
+    this.suffixcode = suffixcode;
     return this;
   }
 
    /**
-   * Sufix kódu
-   * @return suffixCode
+   * sufix kódu
+   * @return suffixcode
   **/
-  @ApiModelProperty(example = "null", value = "Sufix kódu")
-  public String getSuffixCode() {
-    return suffixCode;
+  @ApiModelProperty(example = "null", value = "sufix kódu")
+  public String getSuffixcode() {
+    return suffixcode;
   }
 
-  public void setSuffixCode(String suffixCode) {
-    this.suffixCode = suffixCode;
+  public void setSuffixcode(String suffixcode) {
+    this.suffixcode = suffixcode;
   }
 
-  public Storecard mainSupplierID(String mainSupplierID) {
-    this.mainSupplierID = mainSupplierID;
+  public Storecard mainsupplierId(String mainsupplierId) {
+    this.mainsupplierId = mainsupplierId;
     return this;
   }
 
    /**
-   * Hl. dodavatel; ID objektu Dodavatel [persistentní položka]
-   * @return mainSupplierID
+   * hl. dodavatel; id objektu dodavatel [persistentní položka]
+   * @return mainsupplierId
   **/
-  @ApiModelProperty(example = "null", value = "Hl. dodavatel; ID objektu Dodavatel [persistentní položka]")
-  public String getMainSupplierID() {
-    return mainSupplierID;
+  @ApiModelProperty(example = "null", value = "hl. dodavatel; id objektu dodavatel [persistentní položka]")
+  public String getMainsupplierId() {
+    return mainsupplierId;
   }
 
-  public void setMainSupplierID(String mainSupplierID) {
-    this.mainSupplierID = mainSupplierID;
+  public void setMainsupplierId(String mainsupplierId) {
+    this.mainsupplierId = mainsupplierId;
   }
 
-   /**
-   * Vztah hl.jednotky
-   * @return mainUnitRate
-  **/
-  @ApiModelProperty(example = "null", value = "Vztah hl.jednotky")
-  public Double getMainUnitRate() {
-    return mainUnitRate;
-  }
-
-  public Storecard pictureID(Storecard pictureID) {
-    this.pictureID = pictureID;
+  public Storecard mainunitrate(Double mainunitrate) {
+    this.mainunitrate = mainunitrate;
     return this;
   }
 
    /**
-   * Get pictureID
-   * @return pictureID
+   * vztah hl.jednotky
+   * @return mainunitrate
+  **/
+  @ApiModelProperty(example = "null", value = "vztah hl.jednotky")
+  public Double getMainunitrate() {
+    return mainunitrate;
+  }
+
+  public void setMainunitrate(Double mainunitrate) {
+    this.mainunitrate = mainunitrate;
+  }
+
+  public Storecard pictureId(Storecard pictureId) {
+    this.pictureId = pictureId;
+    return this;
+  }
+
+   /**
+   * Get pictureId
+   * @return pictureId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Storecard getPictureID() {
-    return pictureID;
+  public Storecard getPictureId() {
+    return pictureId;
   }
 
-  public void setPictureID(Storecard pictureID) {
-    this.pictureID = pictureID;
+  public void setPictureId(Storecard pictureId) {
+    this.pictureId = pictureId;
   }
 
-  public Storecard expirationDue(Integer expirationDue) {
-    this.expirationDue = expirationDue;
+  public Storecard expirationdue(Integer expirationdue) {
+    this.expirationdue = expirationdue;
     return this;
   }
 
    /**
-   * Expirace [persistentní položka]
-   * @return expirationDue
+   * expirace [persistentní položka]
+   * @return expirationdue
   **/
-  @ApiModelProperty(example = "null", value = "Expirace [persistentní položka]")
-  public Integer getExpirationDue() {
-    return expirationDue;
+  @ApiModelProperty(example = "null", value = "expirace [persistentní položka]")
+  public Integer getExpirationdue() {
+    return expirationdue;
   }
 
-  public void setExpirationDue(Integer expirationDue) {
-    this.expirationDue = expirationDue;
+  public void setExpirationdue(Integer expirationdue) {
+    this.expirationdue = expirationdue;
   }
 
-  public Storecard withContainers(Boolean withContainers) {
-    this.withContainers = withContainers;
+  public Storecard withcontainers(Boolean withcontainers) {
+    this.withcontainers = withcontainers;
     return this;
   }
 
    /**
-   * S obaly [persistentní položka]
-   * @return withContainers
+   * s obaly [persistentní položka]
+   * @return withcontainers
   **/
-  @ApiModelProperty(example = "null", value = "S obaly [persistentní položka]")
-  public Boolean getWithContainers() {
-    return withContainers;
+  @ApiModelProperty(example = "null", value = "s obaly [persistentní položka]")
+  public Boolean getWithcontainers() {
+    return withcontainers;
   }
 
-  public void setWithContainers(Boolean withContainers) {
-    this.withContainers = withContainers;
+  public void setWithcontainers(Boolean withcontainers) {
+    this.withcontainers = withcontainers;
   }
 
-  public Storecard authorizedByID(String authorizedByID) {
-    this.authorizedByID = authorizedByID;
+  public Storecard authorizedbyId(String authorizedbyId) {
+    this.authorizedbyId = authorizedbyId;
     return this;
   }
 
    /**
-   * Schválil; ID objektu Uživatel [persistentní položka]
-   * @return authorizedByID
+   * schválil; id objektu uživatel [persistentní položka]
+   * @return authorizedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Schválil; ID objektu Uživatel [persistentní položka]")
-  public String getAuthorizedByID() {
-    return authorizedByID;
+  @ApiModelProperty(example = "null", value = "schválil; id objektu uživatel [persistentní položka]")
+  public String getAuthorizedbyId() {
+    return authorizedbyId;
   }
 
-  public void setAuthorizedByID(String authorizedByID) {
-    this.authorizedByID = authorizedByID;
+  public void setAuthorizedbyId(String authorizedbyId) {
+    this.authorizedbyId = authorizedbyId;
   }
 
-  public Storecard authorizedAtDATE(DateTime authorizedAtDATE) {
-    this.authorizedAtDATE = authorizedAtDATE;
+  public Storecard authorizedatdate(DateTime authorizedatdate) {
+    this.authorizedatdate = authorizedatdate;
     return this;
   }
 
    /**
-   * Datum schválení [persistentní položka]
-   * @return authorizedAtDATE
+   * datum schválení [persistentní položka]
+   * @return authorizedatdate
   **/
-  @ApiModelProperty(example = "null", value = "Datum schválení [persistentní položka]")
-  public DateTime getAuthorizedAtDATE() {
-    return authorizedAtDATE;
+  @ApiModelProperty(example = "null", value = "datum schválení [persistentní položka]")
+  public DateTime getAuthorizedatdate() {
+    return authorizedatdate;
   }
 
-  public void setAuthorizedAtDATE(DateTime authorizedAtDATE) {
-    this.authorizedAtDATE = authorizedAtDATE;
+  public void setAuthorizedatdate(DateTime authorizedatdate) {
+    this.authorizedatdate = authorizedatdate;
   }
 
-  public Storecard vATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public Storecard vatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
     return this;
   }
 
    /**
-   * %DPH; ID objektu DPH sazba
-   * @return vATRateID
+   * %dph; id objektu dph sazba
+   * @return vatrateId
   **/
-  @ApiModelProperty(example = "null", value = "%DPH; ID objektu DPH sazba")
-  public String getVATRateID() {
-    return vATRateID;
+  @ApiModelProperty(example = "null", value = "%dph; id objektu dph sazba")
+  public String getVatrateId() {
+    return vatrateId;
   }
 
-  public void setVATRateID(String vATRateID) {
-    this.vATRateID = vATRateID;
+  public void setVatrateId(String vatrateId) {
+    this.vatrateId = vatrateId;
   }
 
-  public Storecard vATRates(List<Storecardvatrate> vATRates) {
-    this.vATRates = vATRates;
+  public Storecard vatrates(List<Storecardvatrate> vatrates) {
+    this.vatrates = vatrates;
     return this;
   }
 
-  public Storecard addVATRatesItem(Storecardvatrate vATRatesItem) {
-    this.vATRates.add(vATRatesItem);
-    return this;
-  }
-
-   /**
-   * DPH sazby; kolekce BO DPH sazba skl. karty [nepersistentní položka]
-   * @return vATRates
-  **/
-  @ApiModelProperty(example = "null", value = "DPH sazby; kolekce BO DPH sazba skl. karty [nepersistentní položka]")
-  public List<Storecardvatrate> getVATRates() {
-    return vATRates;
-  }
-
-  public void setVATRates(List<Storecardvatrate> vATRates) {
-    this.vATRates = vATRates;
-  }
-
-  public Storecard intrastatInputStatisticID(String intrastatInputStatisticID) {
-    this.intrastatInputStatisticID = intrastatInputStatisticID;
+  public Storecard addVatratesItem(Storecardvatrate vatratesItem) {
+    this.vatrates.add(vatratesItem);
     return this;
   }
 
    /**
-   * Stat.hodnota na vstupu; ID objektu Definice statistické hodnoty na vstupu [persistentní položka]
-   * @return intrastatInputStatisticID
+   * dph sazby; kolekce bo dph sazba skl. karty [nepersistentní položka]
+   * @return vatrates
   **/
-  @ApiModelProperty(example = "null", value = "Stat.hodnota na vstupu; ID objektu Definice statistické hodnoty na vstupu [persistentní položka]")
-  public String getIntrastatInputStatisticID() {
-    return intrastatInputStatisticID;
+  @ApiModelProperty(example = "null", value = "dph sazby; kolekce bo dph sazba skl. karty [nepersistentní položka]")
+  public List<Storecardvatrate> getVatrates() {
+    return vatrates;
   }
 
-  public void setIntrastatInputStatisticID(String intrastatInputStatisticID) {
-    this.intrastatInputStatisticID = intrastatInputStatisticID;
+  public void setVatrates(List<Storecardvatrate> vatrates) {
+    this.vatrates = vatrates;
   }
 
-  public Storecard intrastatOutputStatisticID(String intrastatOutputStatisticID) {
-    this.intrastatOutputStatisticID = intrastatOutputStatisticID;
+  public Storecard intrastatinputstatisticId(String intrastatinputstatisticId) {
+    this.intrastatinputstatisticId = intrastatinputstatisticId;
     return this;
   }
 
    /**
-   * Stat.hodnota na výstupu; ID objektu Definice statistické hodnoty na výstupu [persistentní položka]
-   * @return intrastatOutputStatisticID
+   * stat.hodnota na vstupu; id objektu definice statistické hodnoty na vstupu [persistentní položka]
+   * @return intrastatinputstatisticId
   **/
-  @ApiModelProperty(example = "null", value = "Stat.hodnota na výstupu; ID objektu Definice statistické hodnoty na výstupu [persistentní položka]")
-  public String getIntrastatOutputStatisticID() {
-    return intrastatOutputStatisticID;
+  @ApiModelProperty(example = "null", value = "stat.hodnota na vstupu; id objektu definice statistické hodnoty na vstupu [persistentní položka]")
+  public String getIntrastatinputstatisticId() {
+    return intrastatinputstatisticId;
   }
 
-  public void setIntrastatOutputStatisticID(String intrastatOutputStatisticID) {
-    this.intrastatOutputStatisticID = intrastatOutputStatisticID;
+  public void setIntrastatinputstatisticId(String intrastatinputstatisticId) {
+    this.intrastatinputstatisticId = intrastatinputstatisticId;
   }
 
-  public Storecard intrastatCommodityID(String intrastatCommodityID) {
-    this.intrastatCommodityID = intrastatCommodityID;
+  public Storecard intrastatoutputstatisticId(String intrastatoutputstatisticId) {
+    this.intrastatoutputstatisticId = intrastatoutputstatisticId;
     return this;
   }
 
    /**
-   * Kombinovaná nomenklatura; ID objektu Kombinovaná nomenklatura [persistentní položka]
-   * @return intrastatCommodityID
+   * stat.hodnota na výstupu; id objektu definice statistické hodnoty na výstupu [persistentní položka]
+   * @return intrastatoutputstatisticId
   **/
-  @ApiModelProperty(example = "null", value = "Kombinovaná nomenklatura; ID objektu Kombinovaná nomenklatura [persistentní položka]")
-  public String getIntrastatCommodityID() {
-    return intrastatCommodityID;
+  @ApiModelProperty(example = "null", value = "stat.hodnota na výstupu; id objektu definice statistické hodnoty na výstupu [persistentní položka]")
+  public String getIntrastatoutputstatisticId() {
+    return intrastatoutputstatisticId;
   }
 
-  public void setIntrastatCommodityID(String intrastatCommodityID) {
-    this.intrastatCommodityID = intrastatCommodityID;
+  public void setIntrastatoutputstatisticId(String intrastatoutputstatisticId) {
+    this.intrastatoutputstatisticId = intrastatoutputstatisticId;
   }
 
-   /**
-   * Kód doplňkové jednotky [persistentní položka]
-   * @return intrastatUnitCode
-  **/
-  @ApiModelProperty(example = "null", value = "Kód doplňkové jednotky [persistentní položka]")
-  public String getIntrastatUnitCode() {
-    return intrastatUnitCode;
-  }
-
-  public Storecard intrastatUnitRate(Double intrastatUnitRate) {
-    this.intrastatUnitRate = intrastatUnitRate;
+  public Storecard intrastatcommodityId(String intrastatcommodityId) {
+    this.intrastatcommodityId = intrastatcommodityId;
     return this;
   }
 
    /**
-   * Vztah doplňkové jednotky [persistentní položka]
-   * @return intrastatUnitRate
+   * kombinovaná nomenklatura; id objektu kombinovaná nomenklatura [persistentní položka]
+   * @return intrastatcommodityId
   **/
-  @ApiModelProperty(example = "null", value = "Vztah doplňkové jednotky [persistentní položka]")
-  public Double getIntrastatUnitRate() {
-    return intrastatUnitRate;
+  @ApiModelProperty(example = "null", value = "kombinovaná nomenklatura; id objektu kombinovaná nomenklatura [persistentní položka]")
+  public String getIntrastatcommodityId() {
+    return intrastatcommodityId;
   }
 
-  public void setIntrastatUnitRate(Double intrastatUnitRate) {
-    this.intrastatUnitRate = intrastatUnitRate;
+  public void setIntrastatcommodityId(String intrastatcommodityId) {
+    this.intrastatcommodityId = intrastatcommodityId;
   }
 
-  public Storecard intrastatUnitRateRef(Double intrastatUnitRateRef) {
-    this.intrastatUnitRateRef = intrastatUnitRateRef;
+  public Storecard intrastatunitcode(String intrastatunitcode) {
+    this.intrastatunitcode = intrastatunitcode;
     return this;
   }
 
    /**
-   * Ref.vztah doplňkové jednotky [persistentní položka]
-   * @return intrastatUnitRateRef
+   * kód doplňkové jednotky [persistentní položka]
+   * @return intrastatunitcode
   **/
-  @ApiModelProperty(example = "null", value = "Ref.vztah doplňkové jednotky [persistentní položka]")
-  public Double getIntrastatUnitRateRef() {
-    return intrastatUnitRateRef;
+  @ApiModelProperty(example = "null", value = "kód doplňkové jednotky [persistentní položka]")
+  public String getIntrastatunitcode() {
+    return intrastatunitcode;
   }
 
-  public void setIntrastatUnitRateRef(Double intrastatUnitRateRef) {
-    this.intrastatUnitRateRef = intrastatUnitRateRef;
+  public void setIntrastatunitcode(String intrastatunitcode) {
+    this.intrastatunitcode = intrastatunitcode;
   }
 
-  public Storecard intrastatExtraTypeID(String intrastatExtraTypeID) {
-    this.intrastatExtraTypeID = intrastatExtraTypeID;
+  public Storecard intrastatunitrate(Double intrastatunitrate) {
+    this.intrastatunitrate = intrastatunitrate;
     return this;
   }
 
    /**
-   * Zvláštní pohyb; ID objektu Zvláštní pohyb [persistentní položka]
-   * @return intrastatExtraTypeID
+   * vztah doplňkové jednotky [persistentní položka]
+   * @return intrastatunitrate
   **/
-  @ApiModelProperty(example = "null", value = "Zvláštní pohyb; ID objektu Zvláštní pohyb [persistentní položka]")
-  public String getIntrastatExtraTypeID() {
-    return intrastatExtraTypeID;
+  @ApiModelProperty(example = "null", value = "vztah doplňkové jednotky [persistentní položka]")
+  public Double getIntrastatunitrate() {
+    return intrastatunitrate;
   }
 
-  public void setIntrastatExtraTypeID(String intrastatExtraTypeID) {
-    this.intrastatExtraTypeID = intrastatExtraTypeID;
+  public void setIntrastatunitrate(Double intrastatunitrate) {
+    this.intrastatunitrate = intrastatunitrate;
   }
 
-  public Storecard intrastatWeight(Double intrastatWeight) {
-    this.intrastatWeight = intrastatWeight;
+  public Storecard intrastatunitrateref(Double intrastatunitrateref) {
+    this.intrastatunitrateref = intrastatunitrateref;
     return this;
   }
 
    /**
-   * Hmotnost doplňkové jednotky [persistentní položka]
-   * @return intrastatWeight
+   * ref.vztah doplňkové jednotky [persistentní položka]
+   * @return intrastatunitrateref
   **/
-  @ApiModelProperty(example = "null", value = "Hmotnost doplňkové jednotky [persistentní položka]")
-  public Double getIntrastatWeight() {
-    return intrastatWeight;
+  @ApiModelProperty(example = "null", value = "ref.vztah doplňkové jednotky [persistentní položka]")
+  public Double getIntrastatunitrateref() {
+    return intrastatunitrateref;
   }
 
-  public void setIntrastatWeight(Double intrastatWeight) {
-    this.intrastatWeight = intrastatWeight;
+  public void setIntrastatunitrateref(Double intrastatunitrateref) {
+    this.intrastatunitrateref = intrastatunitrateref;
   }
 
-  public Storecard intrastatWeightUnit(Integer intrastatWeightUnit) {
-    this.intrastatWeightUnit = intrastatWeightUnit;
+  public Storecard intrastatextratypeId(String intrastatextratypeId) {
+    this.intrastatextratypeId = intrastatextratypeId;
     return this;
   }
 
    /**
-   * Jednotka hmotnosti doplňkové jednotky [persistentní položka]
-   * @return intrastatWeightUnit
+   * zvláštní pohyb; id objektu zvláštní pohyb [persistentní položka]
+   * @return intrastatextratypeId
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka hmotnosti doplňkové jednotky [persistentní položka]")
-  public Integer getIntrastatWeightUnit() {
-    return intrastatWeightUnit;
+  @ApiModelProperty(example = "null", value = "zvláštní pohyb; id objektu zvláštní pohyb [persistentní položka]")
+  public String getIntrastatextratypeId() {
+    return intrastatextratypeId;
   }
 
-  public void setIntrastatWeightUnit(Integer intrastatWeightUnit) {
-    this.intrastatWeightUnit = intrastatWeightUnit;
+  public void setIntrastatextratypeId(String intrastatextratypeId) {
+    this.intrastatextratypeId = intrastatextratypeId;
   }
 
-  public Storecard outOfStockDelivery(Integer outOfStockDelivery) {
-    this.outOfStockDelivery = outOfStockDelivery;
+  public Storecard intrastatweight(Double intrastatweight) {
+    this.intrastatweight = intrastatweight;
     return this;
   }
 
    /**
-   * Vyskl. [persistentní položka]
-   * @return outOfStockDelivery
+   * hmotnost doplňkové jednotky [persistentní položka]
+   * @return intrastatweight
   **/
-  @ApiModelProperty(example = "null", value = "Vyskl. [persistentní položka]")
-  public Integer getOutOfStockDelivery() {
-    return outOfStockDelivery;
+  @ApiModelProperty(example = "null", value = "hmotnost doplňkové jednotky [persistentní položka]")
+  public Double getIntrastatweight() {
+    return intrastatweight;
   }
 
-  public void setOutOfStockDelivery(Integer outOfStockDelivery) {
-    this.outOfStockDelivery = outOfStockDelivery;
+  public void setIntrastatweight(Double intrastatweight) {
+    this.intrastatweight = intrastatweight;
   }
 
-  public Storecard outOfStockBatchDelivery(Integer outOfStockBatchDelivery) {
-    this.outOfStockBatchDelivery = outOfStockBatchDelivery;
+  public Storecard intrastatweightunit(Integer intrastatweightunit) {
+    this.intrastatweightunit = intrastatweightunit;
     return this;
   }
 
    /**
-   * Vyskl. šarží/s.čísel [persistentní položka]
-   * @return outOfStockBatchDelivery
+   * jednotka hmotnosti doplňkové jednotky [persistentní položka]
+   * @return intrastatweightunit
   **/
-  @ApiModelProperty(example = "null", value = "Vyskl. šarží/s.čísel [persistentní položka]")
-  public Integer getOutOfStockBatchDelivery() {
-    return outOfStockBatchDelivery;
+  @ApiModelProperty(example = "null", value = "jednotka hmotnosti doplňkové jednotky [persistentní položka]")
+  public Integer getIntrastatweightunit() {
+    return intrastatweightunit;
   }
 
-  public void setOutOfStockBatchDelivery(Integer outOfStockBatchDelivery) {
-    this.outOfStockBatchDelivery = outOfStockBatchDelivery;
+  public void setIntrastatweightunit(Integer intrastatweightunit) {
+    this.intrastatweightunit = intrastatweightunit;
   }
 
-  public Storecard useOutOfStockDelivery(Boolean useOutOfStockDelivery) {
-    this.useOutOfStockDelivery = useOutOfStockDelivery;
+  public Storecard outofstockdelivery(Integer outofstockdelivery) {
+    this.outofstockdelivery = outofstockdelivery;
     return this;
   }
 
    /**
-   * Použít vyskl. [persistentní položka]
-   * @return useOutOfStockDelivery
+   * vyskl. [persistentní položka]
+   * @return outofstockdelivery
   **/
-  @ApiModelProperty(example = "null", value = "Použít vyskl. [persistentní položka]")
-  public Boolean getUseOutOfStockDelivery() {
-    return useOutOfStockDelivery;
+  @ApiModelProperty(example = "null", value = "vyskl. [persistentní položka]")
+  public Integer getOutofstockdelivery() {
+    return outofstockdelivery;
   }
 
-  public void setUseOutOfStockDelivery(Boolean useOutOfStockDelivery) {
-    this.useOutOfStockDelivery = useOutOfStockDelivery;
+  public void setOutofstockdelivery(Integer outofstockdelivery) {
+    this.outofstockdelivery = outofstockdelivery;
   }
 
-  public Storecard useOutOfStockBatchDelivery(Boolean useOutOfStockBatchDelivery) {
-    this.useOutOfStockBatchDelivery = useOutOfStockBatchDelivery;
+  public Storecard outofstockbatchdelivery(Integer outofstockbatchdelivery) {
+    this.outofstockbatchdelivery = outofstockbatchdelivery;
     return this;
   }
 
    /**
-   * Vyskl. šarží/s.čísel [persistentní položka]
-   * @return useOutOfStockBatchDelivery
+   * vyskl. šarží/s.čísel [persistentní položka]
+   * @return outofstockbatchdelivery
   **/
-  @ApiModelProperty(example = "null", value = "Vyskl. šarží/s.čísel [persistentní položka]")
-  public Boolean getUseOutOfStockBatchDelivery() {
-    return useOutOfStockBatchDelivery;
+  @ApiModelProperty(example = "null", value = "vyskl. šarží/s.čísel [persistentní položka]")
+  public Integer getOutofstockbatchdelivery() {
+    return outofstockbatchdelivery;
   }
 
-  public void setUseOutOfStockBatchDelivery(Boolean useOutOfStockBatchDelivery) {
-    this.useOutOfStockBatchDelivery = useOutOfStockBatchDelivery;
+  public void setOutofstockbatchdelivery(Integer outofstockbatchdelivery) {
+    this.outofstockbatchdelivery = outofstockbatchdelivery;
   }
 
-  public Storecard discountsExcluded(Boolean discountsExcluded) {
-    this.discountsExcluded = discountsExcluded;
+  public Storecard useoutofstockdelivery(Boolean useoutofstockdelivery) {
+    this.useoutofstockdelivery = useoutofstockdelivery;
     return this;
   }
 
    /**
-   * Vyloučeno ze slev [persistentní položka]
-   * @return discountsExcluded
+   * použít vyskl. [persistentní položka]
+   * @return useoutofstockdelivery
   **/
-  @ApiModelProperty(example = "null", value = "Vyloučeno ze slev [persistentní položka]")
-  public Boolean getDiscountsExcluded() {
-    return discountsExcluded;
+  @ApiModelProperty(example = "null", value = "použít vyskl. [persistentní položka]")
+  public Boolean getUseoutofstockdelivery() {
+    return useoutofstockdelivery;
   }
 
-  public void setDiscountsExcluded(Boolean discountsExcluded) {
-    this.discountsExcluded = discountsExcluded;
+  public void setUseoutofstockdelivery(Boolean useoutofstockdelivery) {
+    this.useoutofstockdelivery = useoutofstockdelivery;
   }
 
-  public Storecard intrastatRegionID(String intrastatRegionID) {
-    this.intrastatRegionID = intrastatRegionID;
+  public Storecard useoutofstockbatchdelivery(Boolean useoutofstockbatchdelivery) {
+    this.useoutofstockbatchdelivery = useoutofstockbatchdelivery;
     return this;
   }
 
    /**
-   * Kraj původu; ID objektu Kraj [persistentní položka]
-   * @return intrastatRegionID
+   * vyskl. šarží/s.čísel [persistentní položka]
+   * @return useoutofstockbatchdelivery
   **/
-  @ApiModelProperty(example = "null", value = "Kraj původu; ID objektu Kraj [persistentní položka]")
-  public String getIntrastatRegionID() {
-    return intrastatRegionID;
+  @ApiModelProperty(example = "null", value = "vyskl. šarží/s.čísel [persistentní položka]")
+  public Boolean getUseoutofstockbatchdelivery() {
+    return useoutofstockbatchdelivery;
   }
 
-  public void setIntrastatRegionID(String intrastatRegionID) {
-    this.intrastatRegionID = intrastatRegionID;
+  public void setUseoutofstockbatchdelivery(Boolean useoutofstockbatchdelivery) {
+    this.useoutofstockbatchdelivery = useoutofstockbatchdelivery;
   }
 
-  public Storecard storeBatchStructureID(String storeBatchStructureID) {
-    this.storeBatchStructureID = storeBatchStructureID;
+  public Storecard discountsexcluded(Boolean discountsexcluded) {
+    this.discountsexcluded = discountsexcluded;
     return this;
   }
 
    /**
-   * Struktura kódu šarže/s.čísla; ID objektu Struktura kódu šarže a sériového čísla [persistentní položka]
-   * @return storeBatchStructureID
+   * vyloučeno ze slev [persistentní položka]
+   * @return discountsexcluded
   **/
-  @ApiModelProperty(example = "null", value = "Struktura kódu šarže/s.čísla; ID objektu Struktura kódu šarže a sériového čísla [persistentní položka]")
-  public String getStoreBatchStructureID() {
-    return storeBatchStructureID;
+  @ApiModelProperty(example = "null", value = "vyloučeno ze slev [persistentní položka]")
+  public Boolean getDiscountsexcluded() {
+    return discountsexcluded;
   }
 
-  public void setStoreBatchStructureID(String storeBatchStructureID) {
-    this.storeBatchStructureID = storeBatchStructureID;
+  public void setDiscountsexcluded(Boolean discountsexcluded) {
+    this.discountsexcluded = discountsexcluded;
   }
 
-  public Storecard storeAssortmentGroupID(String storeAssortmentGroupID) {
-    this.storeAssortmentGroupID = storeAssortmentGroupID;
+  public Storecard intrastatregionId(String intrastatregionId) {
+    this.intrastatregionId = intrastatregionId;
     return this;
   }
 
    /**
-   * Sortimentní skupina; ID objektu Sortimentní skupina [persistentní položka]
-   * @return storeAssortmentGroupID
+   * kraj původu; id objektu kraj [persistentní položka]
+   * @return intrastatregionId
   **/
-  @ApiModelProperty(example = "null", value = "Sortimentní skupina; ID objektu Sortimentní skupina [persistentní položka]")
-  public String getStoreAssortmentGroupID() {
-    return storeAssortmentGroupID;
+  @ApiModelProperty(example = "null", value = "kraj původu; id objektu kraj [persistentní položka]")
+  public String getIntrastatregionId() {
+    return intrastatregionId;
   }
 
-  public void setStoreAssortmentGroupID(String storeAssortmentGroupID) {
-    this.storeAssortmentGroupID = storeAssortmentGroupID;
+  public void setIntrastatregionId(String intrastatregionId) {
+    this.intrastatregionId = intrastatregionId;
   }
 
-  public Storecard usualGrossProfit(Double usualGrossProfit) {
-    this.usualGrossProfit = usualGrossProfit;
+  public Storecard storebatchstructureId(String storebatchstructureId) {
+    this.storebatchstructureId = storebatchstructureId;
     return this;
   }
 
    /**
-   * Procento obvyklé marže [persistentní položka]
-   * @return usualGrossProfit
+   * struktura kódu šarže/s.čísla; id objektu struktura kódu šarže a sériového čísla [persistentní položka]
+   * @return storebatchstructureId
   **/
-  @ApiModelProperty(example = "null", value = "Procento obvyklé marže [persistentní položka]")
-  public Double getUsualGrossProfit() {
-    return usualGrossProfit;
+  @ApiModelProperty(example = "null", value = "struktura kódu šarže/s.čísla; id objektu struktura kódu šarže a sériového čísla [persistentní položka]")
+  public String getStorebatchstructureId() {
+    return storebatchstructureId;
   }
 
-  public void setUsualGrossProfit(Double usualGrossProfit) {
-    this.usualGrossProfit = usualGrossProfit;
+  public void setStorebatchstructureId(String storebatchstructureId) {
+    this.storebatchstructureId = storebatchstructureId;
   }
 
-  public Storecard toleranceType(Integer toleranceType) {
-    this.toleranceType = toleranceType;
+  public Storecard storeassortmentgroupId(String storeassortmentgroupId) {
+    this.storeassortmentgroupId = storeassortmentgroupId;
     return this;
   }
 
    /**
-   * Typ tolerance marže [persistentní položka]
-   * @return toleranceType
+   * sortimentní skupina; id objektu sortimentní skupina [persistentní položka]
+   * @return storeassortmentgroupId
   **/
-  @ApiModelProperty(example = "null", value = "Typ tolerance marže [persistentní položka]")
-  public Integer getToleranceType() {
-    return toleranceType;
+  @ApiModelProperty(example = "null", value = "sortimentní skupina; id objektu sortimentní skupina [persistentní položka]")
+  public String getStoreassortmentgroupId() {
+    return storeassortmentgroupId;
   }
 
-  public void setToleranceType(Integer toleranceType) {
-    this.toleranceType = toleranceType;
+  public void setStoreassortmentgroupId(String storeassortmentgroupId) {
+    this.storeassortmentgroupId = storeassortmentgroupId;
   }
 
-  public Storecard tolerancePlus(Double tolerancePlus) {
-    this.tolerancePlus = tolerancePlus;
+  public Storecard usualgrossprofit(Double usualgrossprofit) {
+    this.usualgrossprofit = usualgrossprofit;
     return this;
   }
 
    /**
-   * Tolerance nahoru [persistentní položka]
-   * @return tolerancePlus
+   * procento obvyklé marže [persistentní položka]
+   * @return usualgrossprofit
   **/
-  @ApiModelProperty(example = "null", value = "Tolerance nahoru [persistentní položka]")
-  public Double getTolerancePlus() {
-    return tolerancePlus;
+  @ApiModelProperty(example = "null", value = "procento obvyklé marže [persistentní položka]")
+  public Double getUsualgrossprofit() {
+    return usualgrossprofit;
   }
 
-  public void setTolerancePlus(Double tolerancePlus) {
-    this.tolerancePlus = tolerancePlus;
+  public void setUsualgrossprofit(Double usualgrossprofit) {
+    this.usualgrossprofit = usualgrossprofit;
   }
 
-  public Storecard toleranceMinus(Double toleranceMinus) {
-    this.toleranceMinus = toleranceMinus;
+  public Storecard tolerancetype(Integer tolerancetype) {
+    this.tolerancetype = tolerancetype;
     return this;
   }
 
    /**
-   * Tolerance dolů [persistentní položka]
-   * @return toleranceMinus
+   * typ tolerance marže [persistentní položka]
+   * @return tolerancetype
   **/
-  @ApiModelProperty(example = "null", value = "Tolerance dolů [persistentní položka]")
-  public Double getToleranceMinus() {
-    return toleranceMinus;
+  @ApiModelProperty(example = "null", value = "typ tolerance marže [persistentní položka]")
+  public Integer getTolerancetype() {
+    return tolerancetype;
   }
 
-  public void setToleranceMinus(Double toleranceMinus) {
-    this.toleranceMinus = toleranceMinus;
+  public void setTolerancetype(Integer tolerancetype) {
+    this.tolerancetype = tolerancetype;
   }
 
-  public Storecard intrastatCurrentPrice(Double intrastatCurrentPrice) {
-    this.intrastatCurrentPrice = intrastatCurrentPrice;
+  public Storecard toleranceplus(Double toleranceplus) {
+    this.toleranceplus = toleranceplus;
     return this;
   }
 
    /**
-   * Obvyklá cena [persistentní položka]
-   * @return intrastatCurrentPrice
+   * tolerance nahoru [persistentní položka]
+   * @return toleranceplus
   **/
-  @ApiModelProperty(example = "null", value = "Obvyklá cena [persistentní položka]")
-  public Double getIntrastatCurrentPrice() {
-    return intrastatCurrentPrice;
+  @ApiModelProperty(example = "null", value = "tolerance nahoru [persistentní položka]")
+  public Double getToleranceplus() {
+    return toleranceplus;
   }
 
-  public void setIntrastatCurrentPrice(Double intrastatCurrentPrice) {
-    this.intrastatCurrentPrice = intrastatCurrentPrice;
+  public void setToleranceplus(Double toleranceplus) {
+    this.toleranceplus = toleranceplus;
   }
 
-  public Storecard intrastatCurrentPriceLimit(Double intrastatCurrentPriceLimit) {
-    this.intrastatCurrentPriceLimit = intrastatCurrentPriceLimit;
+  public Storecard toleranceminus(Double toleranceminus) {
+    this.toleranceminus = toleranceminus;
     return this;
   }
 
    /**
-   * Limit pro obvyklou cenu [persistentní položka]
-   * @return intrastatCurrentPriceLimit
+   * tolerance dolů [persistentní položka]
+   * @return toleranceminus
   **/
-  @ApiModelProperty(example = "null", value = "Limit pro obvyklou cenu [persistentní položka]")
-  public Double getIntrastatCurrentPriceLimit() {
-    return intrastatCurrentPriceLimit;
+  @ApiModelProperty(example = "null", value = "tolerance dolů [persistentní položka]")
+  public Double getToleranceminus() {
+    return toleranceminus;
   }
 
-  public void setIntrastatCurrentPriceLimit(Double intrastatCurrentPriceLimit) {
-    this.intrastatCurrentPriceLimit = intrastatCurrentPriceLimit;
+  public void setToleranceminus(Double toleranceminus) {
+    this.toleranceminus = toleranceminus;
+  }
+
+  public Storecard intrastatcurrentprice(Double intrastatcurrentprice) {
+    this.intrastatcurrentprice = intrastatcurrentprice;
+    return this;
+  }
+
+   /**
+   * obvyklá cena [persistentní položka]
+   * @return intrastatcurrentprice
+  **/
+  @ApiModelProperty(example = "null", value = "obvyklá cena [persistentní položka]")
+  public Double getIntrastatcurrentprice() {
+    return intrastatcurrentprice;
+  }
+
+  public void setIntrastatcurrentprice(Double intrastatcurrentprice) {
+    this.intrastatcurrentprice = intrastatcurrentprice;
+  }
+
+  public Storecard intrastatcurrentpricelimit(Double intrastatcurrentpricelimit) {
+    this.intrastatcurrentpricelimit = intrastatcurrentpricelimit;
+    return this;
+  }
+
+   /**
+   * limit pro obvyklou cenu [persistentní položka]
+   * @return intrastatcurrentpricelimit
+  **/
+  @ApiModelProperty(example = "null", value = "limit pro obvyklou cenu [persistentní položka]")
+  public Double getIntrastatcurrentpricelimit() {
+    return intrastatcurrentpricelimit;
+  }
+
+  public void setIntrastatcurrentpricelimit(Double intrastatcurrentpricelimit) {
+    this.intrastatcurrentpricelimit = intrastatcurrentpricelimit;
   }
 
   public Storecard pictures(List<Storecardpicture> pictures) {
@@ -1468,10 +1529,10 @@ public class Storecard   {
   }
 
    /**
-   * Obrázky; kolekce BO Obrázek ke skladové kartě [nepersistentní položka]
+   * obrázky; kolekce bo obrázek ke skladové kartě [nepersistentní položka]
    * @return pictures
   **/
-  @ApiModelProperty(example = "null", value = "Obrázky; kolekce BO Obrázek ke skladové kartě [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "obrázky; kolekce bo obrázek ke skladové kartě [nepersistentní položka]")
   public List<Storecardpicture> getPictures() {
     return pictures;
   }
@@ -1480,207 +1541,207 @@ public class Storecard   {
     this.pictures = pictures;
   }
 
-  public Storecard guaranteeLength(Double guaranteeLength) {
-    this.guaranteeLength = guaranteeLength;
+  public Storecard guaranteelength(Double guaranteelength) {
+    this.guaranteelength = guaranteelength;
     return this;
   }
 
    /**
-   * Záruka pro soukromé osoby [persistentní položka]
-   * @return guaranteeLength
+   * záruka pro soukromé osoby [persistentní položka]
+   * @return guaranteelength
   **/
-  @ApiModelProperty(example = "null", value = "Záruka pro soukromé osoby [persistentní položka]")
-  public Double getGuaranteeLength() {
-    return guaranteeLength;
+  @ApiModelProperty(example = "null", value = "záruka pro soukromé osoby [persistentní položka]")
+  public Double getGuaranteelength() {
+    return guaranteelength;
   }
 
-  public void setGuaranteeLength(Double guaranteeLength) {
-    this.guaranteeLength = guaranteeLength;
+  public void setGuaranteelength(Double guaranteelength) {
+    this.guaranteelength = guaranteelength;
   }
 
-  public Storecard guaranteeUnitName(String guaranteeUnitName) {
-    this.guaranteeUnitName = guaranteeUnitName;
+  public Storecard guaranteeunitname(String guaranteeunitname) {
+    this.guaranteeunitname = guaranteeunitname;
     return this;
   }
 
    /**
-   * Jednotka záruky pro soukromé osoby
-   * @return guaranteeUnitName
+   * jednotka záruky pro soukromé osoby
+   * @return guaranteeunitname
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka záruky pro soukromé osoby")
-  public String getGuaranteeUnitName() {
-    return guaranteeUnitName;
+  @ApiModelProperty(example = "null", value = "jednotka záruky pro soukromé osoby")
+  public String getGuaranteeunitname() {
+    return guaranteeunitname;
   }
 
-  public void setGuaranteeUnitName(String guaranteeUnitName) {
-    this.guaranteeUnitName = guaranteeUnitName;
+  public void setGuaranteeunitname(String guaranteeunitname) {
+    this.guaranteeunitname = guaranteeunitname;
   }
 
-  public Storecard guaranteeLengthCorporate(Double guaranteeLengthCorporate) {
-    this.guaranteeLengthCorporate = guaranteeLengthCorporate;
+  public Storecard guaranteelengthcorporate(Double guaranteelengthcorporate) {
+    this.guaranteelengthcorporate = guaranteelengthcorporate;
     return this;
   }
 
    /**
-   * Záruka pro firmy [persistentní položka]
-   * @return guaranteeLengthCorporate
+   * záruka pro firmy [persistentní položka]
+   * @return guaranteelengthcorporate
   **/
-  @ApiModelProperty(example = "null", value = "Záruka pro firmy [persistentní položka]")
-  public Double getGuaranteeLengthCorporate() {
-    return guaranteeLengthCorporate;
+  @ApiModelProperty(example = "null", value = "záruka pro firmy [persistentní položka]")
+  public Double getGuaranteelengthcorporate() {
+    return guaranteelengthcorporate;
   }
 
-  public void setGuaranteeLengthCorporate(Double guaranteeLengthCorporate) {
-    this.guaranteeLengthCorporate = guaranteeLengthCorporate;
+  public void setGuaranteelengthcorporate(Double guaranteelengthcorporate) {
+    this.guaranteelengthcorporate = guaranteelengthcorporate;
   }
 
-  public Storecard guaranteeUnitNameCorporate(String guaranteeUnitNameCorporate) {
-    this.guaranteeUnitNameCorporate = guaranteeUnitNameCorporate;
+  public Storecard guaranteeunitnamecorporate(String guaranteeunitnamecorporate) {
+    this.guaranteeunitnamecorporate = guaranteeunitnamecorporate;
     return this;
   }
 
    /**
-   * Jednotka záruky pro firmy
-   * @return guaranteeUnitNameCorporate
+   * jednotka záruky pro firmy
+   * @return guaranteeunitnamecorporate
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka záruky pro firmy")
-  public String getGuaranteeUnitNameCorporate() {
-    return guaranteeUnitNameCorporate;
+  @ApiModelProperty(example = "null", value = "jednotka záruky pro firmy")
+  public String getGuaranteeunitnamecorporate() {
+    return guaranteeunitnamecorporate;
   }
 
-  public void setGuaranteeUnitNameCorporate(String guaranteeUnitNameCorporate) {
-    this.guaranteeUnitNameCorporate = guaranteeUnitNameCorporate;
+  public void setGuaranteeunitnamecorporate(String guaranteeunitnamecorporate) {
+    this.guaranteeunitnamecorporate = guaranteeunitnamecorporate;
   }
 
-  public Storecard mOSSServiceID(String mOSSServiceID) {
-    this.mOSSServiceID = mOSSServiceID;
+  public Storecard mossserviceId(String mossserviceId) {
+    this.mossserviceId = mossserviceId;
     return this;
   }
 
    /**
-   * Druh poskytnuté služby MOSS; ID objektu Druhy poskytovaných služeb MOSS [persistentní položka]
-   * @return mOSSServiceID
+   * druh poskytnuté služby moss; id objektu druhy poskytovaných služeb moss [persistentní položka]
+   * @return mossserviceId
   **/
-  @ApiModelProperty(example = "null", value = "Druh poskytnuté služby MOSS; ID objektu Druhy poskytovaných služeb MOSS [persistentní položka]")
-  public String getMOSSServiceID() {
-    return mOSSServiceID;
+  @ApiModelProperty(example = "null", value = "druh poskytnuté služby moss; id objektu druhy poskytovaných služeb moss [persistentní položka]")
+  public String getMossserviceId() {
+    return mossserviceId;
   }
 
-  public void setMOSSServiceID(String mOSSServiceID) {
-    this.mOSSServiceID = mOSSServiceID;
+  public void setMossserviceId(String mossserviceId) {
+    this.mossserviceId = mossserviceId;
   }
 
-  public Storecard dRCArticles(List<Storecarddrcarticle> dRCArticles) {
-    this.dRCArticles = dRCArticles;
+  public Storecard drcarticles(List<Storecarddrcarticle> drcarticles) {
+    this.drcarticles = drcarticles;
     return this;
   }
 
-  public Storecard addDRCArticlesItem(Storecarddrcarticle dRCArticlesItem) {
-    this.dRCArticles.add(dRCArticlesItem);
-    return this;
-  }
-
-   /**
-   * Typy plnění přenesení daňové povinnosti; kolekce BO Typ plnění skl. karty [nepersistentní položka]
-   * @return dRCArticles
-  **/
-  @ApiModelProperty(example = "null", value = "Typy plnění přenesení daňové povinnosti; kolekce BO Typ plnění skl. karty [nepersistentní položka]")
-  public List<Storecarddrcarticle> getDRCArticles() {
-    return dRCArticles;
-  }
-
-  public void setDRCArticles(List<Storecarddrcarticle> dRCArticles) {
-    this.dRCArticles = dRCArticles;
-  }
-
-  public Storecard incomeTypeID(String incomeTypeID) {
-    this.incomeTypeID = incomeTypeID;
+  public Storecard addDrcarticlesItem(Storecarddrcarticle drcarticlesItem) {
+    this.drcarticles.add(drcarticlesItem);
     return this;
   }
 
    /**
-   * Typ výdaje; ID objektu Typ příjmu [persistentní položka]
-   * @return incomeTypeID
+   * typy plnění přenesení daňové povinnosti; kolekce bo typ plnění skl. karty [nepersistentní položka]
+   * @return drcarticles
   **/
-  @ApiModelProperty(example = "null", value = "Typ výdaje; ID objektu Typ příjmu [persistentní položka]")
-  public String getIncomeTypeID() {
-    return incomeTypeID;
+  @ApiModelProperty(example = "null", value = "typy plnění přenesení daňové povinnosti; kolekce bo typ plnění skl. karty [nepersistentní položka]")
+  public List<Storecarddrcarticle> getDrcarticles() {
+    return drcarticles;
   }
 
-  public void setIncomeTypeID(String incomeTypeID) {
-    this.incomeTypeID = incomeTypeID;
+  public void setDrcarticles(List<Storecarddrcarticle> drcarticles) {
+    this.drcarticles = drcarticles;
   }
 
-  public Storecard createdAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public Storecard incometypeId(String incometypeId) {
+    this.incometypeId = incometypeId;
     return this;
   }
 
    /**
-   * Vytvořeno [persistentní položka]
-   * @return createdAtDATE
+   * typ výdaje; id objektu typ příjmu [persistentní položka]
+   * @return incometypeId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořeno [persistentní položka]")
-  public DateTime getCreatedAtDATE() {
-    return createdAtDATE;
+  @ApiModelProperty(example = "null", value = "typ výdaje; id objektu typ příjmu [persistentní položka]")
+  public String getIncometypeId() {
+    return incometypeId;
   }
 
-  public void setCreatedAtDATE(DateTime createdAtDATE) {
-    this.createdAtDATE = createdAtDATE;
+  public void setIncometypeId(String incometypeId) {
+    this.incometypeId = incometypeId;
   }
 
-  public Storecard correctedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public Storecard createdatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
     return this;
   }
 
    /**
-   * Opraveno [persistentní položka]
-   * @return correctedAtDATE
+   * vytvořeno [persistentní položka]
+   * @return createdatdate
   **/
-  @ApiModelProperty(example = "null", value = "Opraveno [persistentní položka]")
-  public DateTime getCorrectedAtDATE() {
-    return correctedAtDATE;
+  @ApiModelProperty(example = "null", value = "vytvořeno [persistentní položka]")
+  public DateTime getCreatedatdate() {
+    return createdatdate;
   }
 
-  public void setCorrectedAtDATE(DateTime correctedAtDATE) {
-    this.correctedAtDATE = correctedAtDATE;
+  public void setCreatedatdate(DateTime createdatdate) {
+    this.createdatdate = createdatdate;
   }
 
-  public Storecard createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Storecard correctedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * opraveno [persistentní položka]
+   * @return correctedatdate
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "opraveno [persistentní položka]")
+  public DateTime getCorrectedatdate() {
+    return correctedatdate;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCorrectedatdate(DateTime correctedatdate) {
+    this.correctedatdate = correctedatdate;
   }
 
-  public Storecard correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Storecard createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Storecard correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+    return this;
+  }
+
+   /**
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
+  }
+
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
 
@@ -1693,91 +1754,91 @@ public class Storecard   {
       return false;
     }
     Storecard storecard = (Storecard) o;
-    return Objects.equals(this.displayName, storecard.displayName) &&
-        Objects.equals(this.ID, storecard.ID) &&
-        Objects.equals(this.dateOfChange, storecard.dateOfChange) &&
-        Objects.equals(this.classID, storecard.classID) &&
-        Objects.equals(this.objVersion, storecard.objVersion) &&
-        Objects.equals(this.storeUnits, storecard.storeUnits) &&
+    return Objects.equals(this.displayname, storecard.displayname) &&
+        Objects.equals(this.id, storecard.id) &&
+        Objects.equals(this.dateofchange, storecard.dateofchange) &&
+        Objects.equals(this.classid, storecard.classid) &&
+        Objects.equals(this.objversion, storecard.objversion) &&
+        Objects.equals(this.storeunits, storecard.storeunits) &&
         Objects.equals(this.components, storecard.components) &&
         Objects.equals(this.code, storecard.code) &&
-        Objects.equals(this.PLU, storecard.PLU) &&
-        Objects.equals(this.EAN, storecard.EAN) &&
+        Objects.equals(this.plu, storecard.plu) &&
+        Objects.equals(this.ean, storecard.ean) &&
         Objects.equals(this.name, storecard.name) &&
-        Objects.equals(this.shortName, storecard.shortName) &&
-        Objects.equals(this.foreignName, storecard.foreignName) &&
+        Objects.equals(this.shortname, storecard.shortname) &&
+        Objects.equals(this.foreignname, storecard.foreignname) &&
         Objects.equals(this.specification, storecard.specification) &&
         Objects.equals(this.specification2, storecard.specification2) &&
-        Objects.equals(this.storeCardCategoryID, storecard.storeCardCategoryID) &&
-        Objects.equals(this.producerID, storecard.producerID) &&
-        Objects.equals(this.vATRate, storecard.vATRate) &&
-        Objects.equals(this.spendingTaxTariff, storecard.spendingTaxTariff) &&
-        Objects.equals(this.customsTariff, storecard.customsTariff) &&
-        Objects.equals(this.countryID, storecard.countryID) &&
+        Objects.equals(this.storecardcategoryId, storecard.storecardcategoryId) &&
+        Objects.equals(this.producerId, storecard.producerId) &&
+        Objects.equals(this.vatrate, storecard.vatrate) &&
+        Objects.equals(this.spendingtaxtariff, storecard.spendingtaxtariff) &&
+        Objects.equals(this.customstariff, storecard.customstariff) &&
+        Objects.equals(this.countryId, storecard.countryId) &&
         Objects.equals(this.category, storecard.category) &&
         Objects.equals(this.note, storecard.note) &&
         Objects.equals(this.comment, storecard.comment) &&
-        Objects.equals(this.serialNumberStructure, storecard.serialNumberStructure) &&
-        Objects.equals(this.customsTariffNumber, storecard.customsTariffNumber) &&
+        Objects.equals(this.serialnumberstructure, storecard.serialnumberstructure) &&
+        Objects.equals(this.customstariffnumber, storecard.customstariffnumber) &&
         Objects.equals(this.hidden, storecard.hidden) &&
-        Objects.equals(this.storeMenuItemID, storecard.storeMenuItemID) &&
-        Objects.equals(this.dealerDiscountID, storecard.dealerDiscountID) &&
-        Objects.equals(this.quantityDiscountID, storecard.quantityDiscountID) &&
-        Objects.equals(this.mainUnitCode, storecard.mainUnitCode) &&
-        Objects.equals(this.isScalable, storecard.isScalable) &&
-        Objects.equals(this.isProduct, storecard.isProduct) &&
-        Objects.equals(this.prefixCode, storecard.prefixCode) &&
-        Objects.equals(this.bodyCode, storecard.bodyCode) &&
-        Objects.equals(this.suffixCode, storecard.suffixCode) &&
-        Objects.equals(this.mainSupplierID, storecard.mainSupplierID) &&
-        Objects.equals(this.mainUnitRate, storecard.mainUnitRate) &&
-        Objects.equals(this.pictureID, storecard.pictureID) &&
-        Objects.equals(this.expirationDue, storecard.expirationDue) &&
-        Objects.equals(this.withContainers, storecard.withContainers) &&
-        Objects.equals(this.authorizedByID, storecard.authorizedByID) &&
-        Objects.equals(this.authorizedAtDATE, storecard.authorizedAtDATE) &&
-        Objects.equals(this.vATRateID, storecard.vATRateID) &&
-        Objects.equals(this.vATRates, storecard.vATRates) &&
-        Objects.equals(this.intrastatInputStatisticID, storecard.intrastatInputStatisticID) &&
-        Objects.equals(this.intrastatOutputStatisticID, storecard.intrastatOutputStatisticID) &&
-        Objects.equals(this.intrastatCommodityID, storecard.intrastatCommodityID) &&
-        Objects.equals(this.intrastatUnitCode, storecard.intrastatUnitCode) &&
-        Objects.equals(this.intrastatUnitRate, storecard.intrastatUnitRate) &&
-        Objects.equals(this.intrastatUnitRateRef, storecard.intrastatUnitRateRef) &&
-        Objects.equals(this.intrastatExtraTypeID, storecard.intrastatExtraTypeID) &&
-        Objects.equals(this.intrastatWeight, storecard.intrastatWeight) &&
-        Objects.equals(this.intrastatWeightUnit, storecard.intrastatWeightUnit) &&
-        Objects.equals(this.outOfStockDelivery, storecard.outOfStockDelivery) &&
-        Objects.equals(this.outOfStockBatchDelivery, storecard.outOfStockBatchDelivery) &&
-        Objects.equals(this.useOutOfStockDelivery, storecard.useOutOfStockDelivery) &&
-        Objects.equals(this.useOutOfStockBatchDelivery, storecard.useOutOfStockBatchDelivery) &&
-        Objects.equals(this.discountsExcluded, storecard.discountsExcluded) &&
-        Objects.equals(this.intrastatRegionID, storecard.intrastatRegionID) &&
-        Objects.equals(this.storeBatchStructureID, storecard.storeBatchStructureID) &&
-        Objects.equals(this.storeAssortmentGroupID, storecard.storeAssortmentGroupID) &&
-        Objects.equals(this.usualGrossProfit, storecard.usualGrossProfit) &&
-        Objects.equals(this.toleranceType, storecard.toleranceType) &&
-        Objects.equals(this.tolerancePlus, storecard.tolerancePlus) &&
-        Objects.equals(this.toleranceMinus, storecard.toleranceMinus) &&
-        Objects.equals(this.intrastatCurrentPrice, storecard.intrastatCurrentPrice) &&
-        Objects.equals(this.intrastatCurrentPriceLimit, storecard.intrastatCurrentPriceLimit) &&
+        Objects.equals(this.storemenuitemId, storecard.storemenuitemId) &&
+        Objects.equals(this.dealerdiscountId, storecard.dealerdiscountId) &&
+        Objects.equals(this.quantitydiscountId, storecard.quantitydiscountId) &&
+        Objects.equals(this.mainunitcode, storecard.mainunitcode) &&
+        Objects.equals(this.isscalable, storecard.isscalable) &&
+        Objects.equals(this.isproduct, storecard.isproduct) &&
+        Objects.equals(this.prefixcode, storecard.prefixcode) &&
+        Objects.equals(this.bodycode, storecard.bodycode) &&
+        Objects.equals(this.suffixcode, storecard.suffixcode) &&
+        Objects.equals(this.mainsupplierId, storecard.mainsupplierId) &&
+        Objects.equals(this.mainunitrate, storecard.mainunitrate) &&
+        Objects.equals(this.pictureId, storecard.pictureId) &&
+        Objects.equals(this.expirationdue, storecard.expirationdue) &&
+        Objects.equals(this.withcontainers, storecard.withcontainers) &&
+        Objects.equals(this.authorizedbyId, storecard.authorizedbyId) &&
+        Objects.equals(this.authorizedatdate, storecard.authorizedatdate) &&
+        Objects.equals(this.vatrateId, storecard.vatrateId) &&
+        Objects.equals(this.vatrates, storecard.vatrates) &&
+        Objects.equals(this.intrastatinputstatisticId, storecard.intrastatinputstatisticId) &&
+        Objects.equals(this.intrastatoutputstatisticId, storecard.intrastatoutputstatisticId) &&
+        Objects.equals(this.intrastatcommodityId, storecard.intrastatcommodityId) &&
+        Objects.equals(this.intrastatunitcode, storecard.intrastatunitcode) &&
+        Objects.equals(this.intrastatunitrate, storecard.intrastatunitrate) &&
+        Objects.equals(this.intrastatunitrateref, storecard.intrastatunitrateref) &&
+        Objects.equals(this.intrastatextratypeId, storecard.intrastatextratypeId) &&
+        Objects.equals(this.intrastatweight, storecard.intrastatweight) &&
+        Objects.equals(this.intrastatweightunit, storecard.intrastatweightunit) &&
+        Objects.equals(this.outofstockdelivery, storecard.outofstockdelivery) &&
+        Objects.equals(this.outofstockbatchdelivery, storecard.outofstockbatchdelivery) &&
+        Objects.equals(this.useoutofstockdelivery, storecard.useoutofstockdelivery) &&
+        Objects.equals(this.useoutofstockbatchdelivery, storecard.useoutofstockbatchdelivery) &&
+        Objects.equals(this.discountsexcluded, storecard.discountsexcluded) &&
+        Objects.equals(this.intrastatregionId, storecard.intrastatregionId) &&
+        Objects.equals(this.storebatchstructureId, storecard.storebatchstructureId) &&
+        Objects.equals(this.storeassortmentgroupId, storecard.storeassortmentgroupId) &&
+        Objects.equals(this.usualgrossprofit, storecard.usualgrossprofit) &&
+        Objects.equals(this.tolerancetype, storecard.tolerancetype) &&
+        Objects.equals(this.toleranceplus, storecard.toleranceplus) &&
+        Objects.equals(this.toleranceminus, storecard.toleranceminus) &&
+        Objects.equals(this.intrastatcurrentprice, storecard.intrastatcurrentprice) &&
+        Objects.equals(this.intrastatcurrentpricelimit, storecard.intrastatcurrentpricelimit) &&
         Objects.equals(this.pictures, storecard.pictures) &&
-        Objects.equals(this.guaranteeLength, storecard.guaranteeLength) &&
-        Objects.equals(this.guaranteeUnitName, storecard.guaranteeUnitName) &&
-        Objects.equals(this.guaranteeLengthCorporate, storecard.guaranteeLengthCorporate) &&
-        Objects.equals(this.guaranteeUnitNameCorporate, storecard.guaranteeUnitNameCorporate) &&
-        Objects.equals(this.mOSSServiceID, storecard.mOSSServiceID) &&
-        Objects.equals(this.dRCArticles, storecard.dRCArticles) &&
-        Objects.equals(this.incomeTypeID, storecard.incomeTypeID) &&
-        Objects.equals(this.createdAtDATE, storecard.createdAtDATE) &&
-        Objects.equals(this.correctedAtDATE, storecard.correctedAtDATE) &&
-        Objects.equals(this.createdByID, storecard.createdByID) &&
-        Objects.equals(this.correctedByID, storecard.correctedByID);
+        Objects.equals(this.guaranteelength, storecard.guaranteelength) &&
+        Objects.equals(this.guaranteeunitname, storecard.guaranteeunitname) &&
+        Objects.equals(this.guaranteelengthcorporate, storecard.guaranteelengthcorporate) &&
+        Objects.equals(this.guaranteeunitnamecorporate, storecard.guaranteeunitnamecorporate) &&
+        Objects.equals(this.mossserviceId, storecard.mossserviceId) &&
+        Objects.equals(this.drcarticles, storecard.drcarticles) &&
+        Objects.equals(this.incometypeId, storecard.incometypeId) &&
+        Objects.equals(this.createdatdate, storecard.createdatdate) &&
+        Objects.equals(this.correctedatdate, storecard.correctedatdate) &&
+        Objects.equals(this.createdbyId, storecard.createdbyId) &&
+        Objects.equals(this.correctedbyId, storecard.correctedbyId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, dateOfChange, classID, objVersion, storeUnits, components, code, PLU, EAN, name, shortName, foreignName, specification, specification2, storeCardCategoryID, producerID, vATRate, spendingTaxTariff, customsTariff, countryID, category, note, comment, serialNumberStructure, customsTariffNumber, hidden, storeMenuItemID, dealerDiscountID, quantityDiscountID, mainUnitCode, isScalable, isProduct, prefixCode, bodyCode, suffixCode, mainSupplierID, mainUnitRate, pictureID, expirationDue, withContainers, authorizedByID, authorizedAtDATE, vATRateID, vATRates, intrastatInputStatisticID, intrastatOutputStatisticID, intrastatCommodityID, intrastatUnitCode, intrastatUnitRate, intrastatUnitRateRef, intrastatExtraTypeID, intrastatWeight, intrastatWeightUnit, outOfStockDelivery, outOfStockBatchDelivery, useOutOfStockDelivery, useOutOfStockBatchDelivery, discountsExcluded, intrastatRegionID, storeBatchStructureID, storeAssortmentGroupID, usualGrossProfit, toleranceType, tolerancePlus, toleranceMinus, intrastatCurrentPrice, intrastatCurrentPriceLimit, pictures, guaranteeLength, guaranteeUnitName, guaranteeLengthCorporate, guaranteeUnitNameCorporate, mOSSServiceID, dRCArticles, incomeTypeID, createdAtDATE, correctedAtDATE, createdByID, correctedByID);
+    return Objects.hash(displayname, id, dateofchange, classid, objversion, storeunits, components, code, plu, ean, name, shortname, foreignname, specification, specification2, storecardcategoryId, producerId, vatrate, spendingtaxtariff, customstariff, countryId, category, note, comment, serialnumberstructure, customstariffnumber, hidden, storemenuitemId, dealerdiscountId, quantitydiscountId, mainunitcode, isscalable, isproduct, prefixcode, bodycode, suffixcode, mainsupplierId, mainunitrate, pictureId, expirationdue, withcontainers, authorizedbyId, authorizedatdate, vatrateId, vatrates, intrastatinputstatisticId, intrastatoutputstatisticId, intrastatcommodityId, intrastatunitcode, intrastatunitrate, intrastatunitrateref, intrastatextratypeId, intrastatweight, intrastatweightunit, outofstockdelivery, outofstockbatchdelivery, useoutofstockdelivery, useoutofstockbatchdelivery, discountsexcluded, intrastatregionId, storebatchstructureId, storeassortmentgroupId, usualgrossprofit, tolerancetype, toleranceplus, toleranceminus, intrastatcurrentprice, intrastatcurrentpricelimit, pictures, guaranteelength, guaranteeunitname, guaranteelengthcorporate, guaranteeunitnamecorporate, mossserviceId, drcarticles, incometypeId, createdatdate, correctedatdate, createdbyId, correctedbyId);
   }
 
   @Override
@@ -1785,86 +1846,86 @@ public class Storecard   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Storecard {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    dateOfChange: ").append(toIndentedString(dateOfChange)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    storeUnits: ").append(toIndentedString(storeUnits)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    dateofchange: ").append(toIndentedString(dateofchange)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    storeunits: ").append(toIndentedString(storeunits)).append("\n");
     sb.append("    components: ").append(toIndentedString(components)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
-    sb.append("    PLU: ").append(toIndentedString(PLU)).append("\n");
-    sb.append("    EAN: ").append(toIndentedString(EAN)).append("\n");
+    sb.append("    plu: ").append(toIndentedString(plu)).append("\n");
+    sb.append("    ean: ").append(toIndentedString(ean)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    shortName: ").append(toIndentedString(shortName)).append("\n");
-    sb.append("    foreignName: ").append(toIndentedString(foreignName)).append("\n");
+    sb.append("    shortname: ").append(toIndentedString(shortname)).append("\n");
+    sb.append("    foreignname: ").append(toIndentedString(foreignname)).append("\n");
     sb.append("    specification: ").append(toIndentedString(specification)).append("\n");
     sb.append("    specification2: ").append(toIndentedString(specification2)).append("\n");
-    sb.append("    storeCardCategoryID: ").append(toIndentedString(storeCardCategoryID)).append("\n");
-    sb.append("    producerID: ").append(toIndentedString(producerID)).append("\n");
-    sb.append("    vATRate: ").append(toIndentedString(vATRate)).append("\n");
-    sb.append("    spendingTaxTariff: ").append(toIndentedString(spendingTaxTariff)).append("\n");
-    sb.append("    customsTariff: ").append(toIndentedString(customsTariff)).append("\n");
-    sb.append("    countryID: ").append(toIndentedString(countryID)).append("\n");
+    sb.append("    storecardcategoryId: ").append(toIndentedString(storecardcategoryId)).append("\n");
+    sb.append("    producerId: ").append(toIndentedString(producerId)).append("\n");
+    sb.append("    vatrate: ").append(toIndentedString(vatrate)).append("\n");
+    sb.append("    spendingtaxtariff: ").append(toIndentedString(spendingtaxtariff)).append("\n");
+    sb.append("    customstariff: ").append(toIndentedString(customstariff)).append("\n");
+    sb.append("    countryId: ").append(toIndentedString(countryId)).append("\n");
     sb.append("    category: ").append(toIndentedString(category)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
     sb.append("    comment: ").append(toIndentedString(comment)).append("\n");
-    sb.append("    serialNumberStructure: ").append(toIndentedString(serialNumberStructure)).append("\n");
-    sb.append("    customsTariffNumber: ").append(toIndentedString(customsTariffNumber)).append("\n");
+    sb.append("    serialnumberstructure: ").append(toIndentedString(serialnumberstructure)).append("\n");
+    sb.append("    customstariffnumber: ").append(toIndentedString(customstariffnumber)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    storeMenuItemID: ").append(toIndentedString(storeMenuItemID)).append("\n");
-    sb.append("    dealerDiscountID: ").append(toIndentedString(dealerDiscountID)).append("\n");
-    sb.append("    quantityDiscountID: ").append(toIndentedString(quantityDiscountID)).append("\n");
-    sb.append("    mainUnitCode: ").append(toIndentedString(mainUnitCode)).append("\n");
-    sb.append("    isScalable: ").append(toIndentedString(isScalable)).append("\n");
-    sb.append("    isProduct: ").append(toIndentedString(isProduct)).append("\n");
-    sb.append("    prefixCode: ").append(toIndentedString(prefixCode)).append("\n");
-    sb.append("    bodyCode: ").append(toIndentedString(bodyCode)).append("\n");
-    sb.append("    suffixCode: ").append(toIndentedString(suffixCode)).append("\n");
-    sb.append("    mainSupplierID: ").append(toIndentedString(mainSupplierID)).append("\n");
-    sb.append("    mainUnitRate: ").append(toIndentedString(mainUnitRate)).append("\n");
-    sb.append("    pictureID: ").append(toIndentedString(pictureID)).append("\n");
-    sb.append("    expirationDue: ").append(toIndentedString(expirationDue)).append("\n");
-    sb.append("    withContainers: ").append(toIndentedString(withContainers)).append("\n");
-    sb.append("    authorizedByID: ").append(toIndentedString(authorizedByID)).append("\n");
-    sb.append("    authorizedAtDATE: ").append(toIndentedString(authorizedAtDATE)).append("\n");
-    sb.append("    vATRateID: ").append(toIndentedString(vATRateID)).append("\n");
-    sb.append("    vATRates: ").append(toIndentedString(vATRates)).append("\n");
-    sb.append("    intrastatInputStatisticID: ").append(toIndentedString(intrastatInputStatisticID)).append("\n");
-    sb.append("    intrastatOutputStatisticID: ").append(toIndentedString(intrastatOutputStatisticID)).append("\n");
-    sb.append("    intrastatCommodityID: ").append(toIndentedString(intrastatCommodityID)).append("\n");
-    sb.append("    intrastatUnitCode: ").append(toIndentedString(intrastatUnitCode)).append("\n");
-    sb.append("    intrastatUnitRate: ").append(toIndentedString(intrastatUnitRate)).append("\n");
-    sb.append("    intrastatUnitRateRef: ").append(toIndentedString(intrastatUnitRateRef)).append("\n");
-    sb.append("    intrastatExtraTypeID: ").append(toIndentedString(intrastatExtraTypeID)).append("\n");
-    sb.append("    intrastatWeight: ").append(toIndentedString(intrastatWeight)).append("\n");
-    sb.append("    intrastatWeightUnit: ").append(toIndentedString(intrastatWeightUnit)).append("\n");
-    sb.append("    outOfStockDelivery: ").append(toIndentedString(outOfStockDelivery)).append("\n");
-    sb.append("    outOfStockBatchDelivery: ").append(toIndentedString(outOfStockBatchDelivery)).append("\n");
-    sb.append("    useOutOfStockDelivery: ").append(toIndentedString(useOutOfStockDelivery)).append("\n");
-    sb.append("    useOutOfStockBatchDelivery: ").append(toIndentedString(useOutOfStockBatchDelivery)).append("\n");
-    sb.append("    discountsExcluded: ").append(toIndentedString(discountsExcluded)).append("\n");
-    sb.append("    intrastatRegionID: ").append(toIndentedString(intrastatRegionID)).append("\n");
-    sb.append("    storeBatchStructureID: ").append(toIndentedString(storeBatchStructureID)).append("\n");
-    sb.append("    storeAssortmentGroupID: ").append(toIndentedString(storeAssortmentGroupID)).append("\n");
-    sb.append("    usualGrossProfit: ").append(toIndentedString(usualGrossProfit)).append("\n");
-    sb.append("    toleranceType: ").append(toIndentedString(toleranceType)).append("\n");
-    sb.append("    tolerancePlus: ").append(toIndentedString(tolerancePlus)).append("\n");
-    sb.append("    toleranceMinus: ").append(toIndentedString(toleranceMinus)).append("\n");
-    sb.append("    intrastatCurrentPrice: ").append(toIndentedString(intrastatCurrentPrice)).append("\n");
-    sb.append("    intrastatCurrentPriceLimit: ").append(toIndentedString(intrastatCurrentPriceLimit)).append("\n");
+    sb.append("    storemenuitemId: ").append(toIndentedString(storemenuitemId)).append("\n");
+    sb.append("    dealerdiscountId: ").append(toIndentedString(dealerdiscountId)).append("\n");
+    sb.append("    quantitydiscountId: ").append(toIndentedString(quantitydiscountId)).append("\n");
+    sb.append("    mainunitcode: ").append(toIndentedString(mainunitcode)).append("\n");
+    sb.append("    isscalable: ").append(toIndentedString(isscalable)).append("\n");
+    sb.append("    isproduct: ").append(toIndentedString(isproduct)).append("\n");
+    sb.append("    prefixcode: ").append(toIndentedString(prefixcode)).append("\n");
+    sb.append("    bodycode: ").append(toIndentedString(bodycode)).append("\n");
+    sb.append("    suffixcode: ").append(toIndentedString(suffixcode)).append("\n");
+    sb.append("    mainsupplierId: ").append(toIndentedString(mainsupplierId)).append("\n");
+    sb.append("    mainunitrate: ").append(toIndentedString(mainunitrate)).append("\n");
+    sb.append("    pictureId: ").append(toIndentedString(pictureId)).append("\n");
+    sb.append("    expirationdue: ").append(toIndentedString(expirationdue)).append("\n");
+    sb.append("    withcontainers: ").append(toIndentedString(withcontainers)).append("\n");
+    sb.append("    authorizedbyId: ").append(toIndentedString(authorizedbyId)).append("\n");
+    sb.append("    authorizedatdate: ").append(toIndentedString(authorizedatdate)).append("\n");
+    sb.append("    vatrateId: ").append(toIndentedString(vatrateId)).append("\n");
+    sb.append("    vatrates: ").append(toIndentedString(vatrates)).append("\n");
+    sb.append("    intrastatinputstatisticId: ").append(toIndentedString(intrastatinputstatisticId)).append("\n");
+    sb.append("    intrastatoutputstatisticId: ").append(toIndentedString(intrastatoutputstatisticId)).append("\n");
+    sb.append("    intrastatcommodityId: ").append(toIndentedString(intrastatcommodityId)).append("\n");
+    sb.append("    intrastatunitcode: ").append(toIndentedString(intrastatunitcode)).append("\n");
+    sb.append("    intrastatunitrate: ").append(toIndentedString(intrastatunitrate)).append("\n");
+    sb.append("    intrastatunitrateref: ").append(toIndentedString(intrastatunitrateref)).append("\n");
+    sb.append("    intrastatextratypeId: ").append(toIndentedString(intrastatextratypeId)).append("\n");
+    sb.append("    intrastatweight: ").append(toIndentedString(intrastatweight)).append("\n");
+    sb.append("    intrastatweightunit: ").append(toIndentedString(intrastatweightunit)).append("\n");
+    sb.append("    outofstockdelivery: ").append(toIndentedString(outofstockdelivery)).append("\n");
+    sb.append("    outofstockbatchdelivery: ").append(toIndentedString(outofstockbatchdelivery)).append("\n");
+    sb.append("    useoutofstockdelivery: ").append(toIndentedString(useoutofstockdelivery)).append("\n");
+    sb.append("    useoutofstockbatchdelivery: ").append(toIndentedString(useoutofstockbatchdelivery)).append("\n");
+    sb.append("    discountsexcluded: ").append(toIndentedString(discountsexcluded)).append("\n");
+    sb.append("    intrastatregionId: ").append(toIndentedString(intrastatregionId)).append("\n");
+    sb.append("    storebatchstructureId: ").append(toIndentedString(storebatchstructureId)).append("\n");
+    sb.append("    storeassortmentgroupId: ").append(toIndentedString(storeassortmentgroupId)).append("\n");
+    sb.append("    usualgrossprofit: ").append(toIndentedString(usualgrossprofit)).append("\n");
+    sb.append("    tolerancetype: ").append(toIndentedString(tolerancetype)).append("\n");
+    sb.append("    toleranceplus: ").append(toIndentedString(toleranceplus)).append("\n");
+    sb.append("    toleranceminus: ").append(toIndentedString(toleranceminus)).append("\n");
+    sb.append("    intrastatcurrentprice: ").append(toIndentedString(intrastatcurrentprice)).append("\n");
+    sb.append("    intrastatcurrentpricelimit: ").append(toIndentedString(intrastatcurrentpricelimit)).append("\n");
     sb.append("    pictures: ").append(toIndentedString(pictures)).append("\n");
-    sb.append("    guaranteeLength: ").append(toIndentedString(guaranteeLength)).append("\n");
-    sb.append("    guaranteeUnitName: ").append(toIndentedString(guaranteeUnitName)).append("\n");
-    sb.append("    guaranteeLengthCorporate: ").append(toIndentedString(guaranteeLengthCorporate)).append("\n");
-    sb.append("    guaranteeUnitNameCorporate: ").append(toIndentedString(guaranteeUnitNameCorporate)).append("\n");
-    sb.append("    mOSSServiceID: ").append(toIndentedString(mOSSServiceID)).append("\n");
-    sb.append("    dRCArticles: ").append(toIndentedString(dRCArticles)).append("\n");
-    sb.append("    incomeTypeID: ").append(toIndentedString(incomeTypeID)).append("\n");
-    sb.append("    createdAtDATE: ").append(toIndentedString(createdAtDATE)).append("\n");
-    sb.append("    correctedAtDATE: ").append(toIndentedString(correctedAtDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
+    sb.append("    guaranteelength: ").append(toIndentedString(guaranteelength)).append("\n");
+    sb.append("    guaranteeunitname: ").append(toIndentedString(guaranteeunitname)).append("\n");
+    sb.append("    guaranteelengthcorporate: ").append(toIndentedString(guaranteelengthcorporate)).append("\n");
+    sb.append("    guaranteeunitnamecorporate: ").append(toIndentedString(guaranteeunitnamecorporate)).append("\n");
+    sb.append("    mossserviceId: ").append(toIndentedString(mossserviceId)).append("\n");
+    sb.append("    drcarticles: ").append(toIndentedString(drcarticles)).append("\n");
+    sb.append("    incometypeId: ").append(toIndentedString(incometypeId)).append("\n");
+    sb.append("    createdatdate: ").append(toIndentedString(createdatdate)).append("\n");
+    sb.append("    correctedatdate: ").append(toIndentedString(correctedatdate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

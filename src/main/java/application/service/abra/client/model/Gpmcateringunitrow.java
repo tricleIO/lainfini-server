@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,153 +34,198 @@ import java.util.Objects;
 /**
  * Gpmcateringunitrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Gpmcateringunitrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("PlanedUnitPrice")
-  private Double planedUnitPrice = null;
+  @SerializedName("planedunitprice")
+  private Double planedunitprice = null;
 
-  @SerializedName("BoardersCount")
-  private Double boardersCount = null;
+  @SerializedName("boarderscount")
+  private Double boarderscount = null;
 
-  @SerializedName("TotalPlanedPartialCosts")
-  private Double totalPlanedPartialCosts = null;
+  @SerializedName("totalplanedpartialcosts")
+  private Double totalplanedpartialcosts = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Stravní jednotka [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Stravní jednotka [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Gpmcateringunitrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Gpmcateringunitrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Gpmcateringunitrow planedUnitPrice(Double planedUnitPrice) {
-    this.planedUnitPrice = planedUnitPrice;
+  public Gpmcateringunitrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Jednotková cena plánovaných nákladů [persistentní položka]
-   * @return planedUnitPrice
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Jednotková cena plánovaných nákladů [persistentní položka]")
-  public Double getPlanedUnitPrice() {
-    return planedUnitPrice;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setPlanedUnitPrice(Double planedUnitPrice) {
-    this.planedUnitPrice = planedUnitPrice;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Gpmcateringunitrow boardersCount(Double boardersCount) {
-    this.boardersCount = boardersCount;
+  public Gpmcateringunitrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Počet strávníků [persistentní položka]
-   * @return boardersCount
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Počet strávníků [persistentní položka]")
-  public Double getBoardersCount() {
-    return boardersCount;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setBoardersCount(Double boardersCount) {
-    this.boardersCount = boardersCount;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Gpmcateringunitrow totalPlanedPartialCosts(Double totalPlanedPartialCosts) {
-    this.totalPlanedPartialCosts = totalPlanedPartialCosts;
+  public Gpmcateringunitrow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Plánované náklady na dílčí SJ
-   * @return totalPlanedPartialCosts
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Plánované náklady na dílčí SJ")
-  public Double getTotalPlanedPartialCosts() {
-    return totalPlanedPartialCosts;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setTotalPlanedPartialCosts(Double totalPlanedPartialCosts) {
-    this.totalPlanedPartialCosts = totalPlanedPartialCosts;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Gpmcateringunitrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu stravní jednotka [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu stravní jednotka [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Gpmcateringunitrow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Gpmcateringunitrow planedunitprice(Double planedunitprice) {
+    this.planedunitprice = planedunitprice;
+    return this;
+  }
+
+   /**
+   * jednotková cena plánovaných nákladů [persistentní položka]
+   * @return planedunitprice
+  **/
+  @ApiModelProperty(example = "null", value = "jednotková cena plánovaných nákladů [persistentní položka]")
+  public Double getPlanedunitprice() {
+    return planedunitprice;
+  }
+
+  public void setPlanedunitprice(Double planedunitprice) {
+    this.planedunitprice = planedunitprice;
+  }
+
+  public Gpmcateringunitrow boarderscount(Double boarderscount) {
+    this.boarderscount = boarderscount;
+    return this;
+  }
+
+   /**
+   * počet strávníků [persistentní položka]
+   * @return boarderscount
+  **/
+  @ApiModelProperty(example = "null", value = "počet strávníků [persistentní položka]")
+  public Double getBoarderscount() {
+    return boarderscount;
+  }
+
+  public void setBoarderscount(Double boarderscount) {
+    this.boarderscount = boarderscount;
+  }
+
+  public Gpmcateringunitrow totalplanedpartialcosts(Double totalplanedpartialcosts) {
+    this.totalplanedpartialcosts = totalplanedpartialcosts;
+    return this;
+  }
+
+   /**
+   * plánované náklady na dílčí sj
+   * @return totalplanedpartialcosts
+  **/
+  @ApiModelProperty(example = "null", value = "plánované náklady na dílčí sj")
+  public Double getTotalplanedpartialcosts() {
+    return totalplanedpartialcosts;
+  }
+
+  public void setTotalplanedpartialcosts(Double totalplanedpartialcosts) {
+    this.totalplanedpartialcosts = totalplanedpartialcosts;
   }
 
   public Gpmcateringunitrow description(String description) {
@@ -189,10 +234,10 @@ public class Gpmcateringunitrow   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -211,21 +256,21 @@ public class Gpmcateringunitrow   {
       return false;
     }
     Gpmcateringunitrow gpmcateringunitrow = (Gpmcateringunitrow) o;
-    return Objects.equals(this.displayName, gpmcateringunitrow.displayName) &&
-        Objects.equals(this.ID, gpmcateringunitrow.ID) &&
-        Objects.equals(this.classID, gpmcateringunitrow.classID) &&
-        Objects.equals(this.objVersion, gpmcateringunitrow.objVersion) &&
-        Objects.equals(this.parentID, gpmcateringunitrow.parentID) &&
-        Objects.equals(this.posIndex, gpmcateringunitrow.posIndex) &&
-        Objects.equals(this.planedUnitPrice, gpmcateringunitrow.planedUnitPrice) &&
-        Objects.equals(this.boardersCount, gpmcateringunitrow.boardersCount) &&
-        Objects.equals(this.totalPlanedPartialCosts, gpmcateringunitrow.totalPlanedPartialCosts) &&
+    return Objects.equals(this.displayname, gpmcateringunitrow.displayname) &&
+        Objects.equals(this.id, gpmcateringunitrow.id) &&
+        Objects.equals(this.classid, gpmcateringunitrow.classid) &&
+        Objects.equals(this.objversion, gpmcateringunitrow.objversion) &&
+        Objects.equals(this.parentId, gpmcateringunitrow.parentId) &&
+        Objects.equals(this.posindex, gpmcateringunitrow.posindex) &&
+        Objects.equals(this.planedunitprice, gpmcateringunitrow.planedunitprice) &&
+        Objects.equals(this.boarderscount, gpmcateringunitrow.boarderscount) &&
+        Objects.equals(this.totalplanedpartialcosts, gpmcateringunitrow.totalplanedpartialcosts) &&
         Objects.equals(this.description, gpmcateringunitrow.description);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, planedUnitPrice, boardersCount, totalPlanedPartialCosts, description);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, planedunitprice, boarderscount, totalplanedpartialcosts, description);
   }
 
   @Override
@@ -233,15 +278,15 @@ public class Gpmcateringunitrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Gpmcateringunitrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    planedUnitPrice: ").append(toIndentedString(planedUnitPrice)).append("\n");
-    sb.append("    boardersCount: ").append(toIndentedString(boardersCount)).append("\n");
-    sb.append("    totalPlanedPartialCosts: ").append(toIndentedString(totalPlanedPartialCosts)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    planedunitprice: ").append(toIndentedString(planedunitprice)).append("\n");
+    sb.append("    boarderscount: ").append(toIndentedString(boarderscount)).append("\n");
+    sb.append("    totalplanedpartialcosts: ").append(toIndentedString(totalplanedpartialcosts)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("}");
     return sb.toString();

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,108 +37,144 @@ import java.util.Objects;
 /**
  * Posreceipt
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posreceipt   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Posreceiptrow> rows = new ArrayList<Posreceiptrow>();
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("VirtualPOS_ID")
-  private String virtualPOSID = null;
+  @SerializedName("virtualpos_id")
+  private String virtualposId = null;
 
-  @SerializedName("Stoped")
+  @SerializedName("stoped")
   private Boolean stoped = null;
 
-  @SerializedName("StopedDate$DATE")
-  private DateTime stopedDateDATE = null;
+  @SerializedName("stopeddate$date")
+  private DateTime stopeddatedate = null;
 
-  @SerializedName("StopedBy_ID")
-  private String stopedByID = null;
+  @SerializedName("stopedby_id")
+  private String stopedbyId = null;
 
-  @SerializedName("Ended")
+  @SerializedName("ended")
   private Boolean ended = null;
 
-  @SerializedName("EndedDate$DATE")
-  private DateTime endedDateDATE = null;
+  @SerializedName("endeddate$date")
+  private DateTime endeddatedate = null;
 
-  @SerializedName("EndedBy_ID")
-  private String endedByID = null;
+  @SerializedName("endedby_id")
+  private String endedbyId = null;
 
-  @SerializedName("POSShift_ID")
-  private String pOSShiftID = null;
+  @SerializedName("posshift_id")
+  private String posshiftId = null;
 
-  @SerializedName("PayChangeDocCount")
-  private Integer payChangeDocCount = null;
+  @SerializedName("paychangedoccount")
+  private Integer paychangedoccount = null;
+
+  public Posreceipt displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Posreceipt id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Posreceipt classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Posreceipt objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Posreceipt rows(List<Posreceiptrow> rows) {
@@ -152,10 +188,10 @@ public class Posreceipt   {
   }
 
    /**
-   * Řádky; kolekce BO Tržba - řádek [nepersistentní položka]
+   * Řádky; kolekce bo tržba - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Tržba - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo tržba - řádek [nepersistentní položka]")
   public List<Posreceiptrow> getRows() {
     return rows;
   }
@@ -164,166 +200,166 @@ public class Posreceipt   {
     this.rows = rows;
   }
 
-  public Posreceipt docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Posreceipt docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Posreceipt periodID(String periodID) {
-    this.periodID = periodID;
+  public Posreceipt periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Posreceipt ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Posreceipt ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Posreceipt docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Posreceipt docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Posreceipt createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Posreceipt createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Posreceipt correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Posreceipt correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Posreceipt newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Posreceipt newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Posreceipt newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Posreceipt newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Posreceipt virtualPOSID(String virtualPOSID) {
-    this.virtualPOSID = virtualPOSID;
+  public Posreceipt virtualposId(String virtualposId) {
+    this.virtualposId = virtualposId;
     return this;
   }
 
    /**
-   * Pok. místo; ID objektu Pokladní místo [persistentní položka]
-   * @return virtualPOSID
+   * pok. místo; id objektu pokladní místo [persistentní položka]
+   * @return virtualposId
   **/
-  @ApiModelProperty(example = "null", value = "Pok. místo; ID objektu Pokladní místo [persistentní položka]")
-  public String getVirtualPOSID() {
-    return virtualPOSID;
+  @ApiModelProperty(example = "null", value = "pok. místo; id objektu pokladní místo [persistentní položka]")
+  public String getVirtualposId() {
+    return virtualposId;
   }
 
-  public void setVirtualPOSID(String virtualPOSID) {
-    this.virtualPOSID = virtualPOSID;
+  public void setVirtualposId(String virtualposId) {
+    this.virtualposId = virtualposId;
   }
 
   public Posreceipt stoped(Boolean stoped) {
@@ -332,10 +368,10 @@ public class Posreceipt   {
   }
 
    /**
-   * Uzavřena [persistentní položka]
+   * uzavřena [persistentní položka]
    * @return stoped
   **/
-  @ApiModelProperty(example = "null", value = "Uzavřena [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "uzavřena [persistentní položka]")
   public Boolean getStoped() {
     return stoped;
   }
@@ -344,40 +380,40 @@ public class Posreceipt   {
     this.stoped = stoped;
   }
 
-  public Posreceipt stopedDateDATE(DateTime stopedDateDATE) {
-    this.stopedDateDATE = stopedDateDATE;
+  public Posreceipt stopeddatedate(DateTime stopeddatedate) {
+    this.stopeddatedate = stopeddatedate;
     return this;
   }
 
    /**
-   * Dat. uzavření [persistentní položka]
-   * @return stopedDateDATE
+   * dat. uzavření [persistentní položka]
+   * @return stopeddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Dat. uzavření [persistentní položka]")
-  public DateTime getStopedDateDATE() {
-    return stopedDateDATE;
+  @ApiModelProperty(example = "null", value = "dat. uzavření [persistentní položka]")
+  public DateTime getStopeddatedate() {
+    return stopeddatedate;
   }
 
-  public void setStopedDateDATE(DateTime stopedDateDATE) {
-    this.stopedDateDATE = stopedDateDATE;
+  public void setStopeddatedate(DateTime stopeddatedate) {
+    this.stopeddatedate = stopeddatedate;
   }
 
-  public Posreceipt stopedByID(String stopedByID) {
-    this.stopedByID = stopedByID;
+  public Posreceipt stopedbyId(String stopedbyId) {
+    this.stopedbyId = stopedbyId;
     return this;
   }
 
    /**
-   * Uzavřel; ID objektu Uživatel [persistentní položka]
-   * @return stopedByID
+   * uzavřel; id objektu uživatel [persistentní položka]
+   * @return stopedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Uzavřel; ID objektu Uživatel [persistentní položka]")
-  public String getStopedByID() {
-    return stopedByID;
+  @ApiModelProperty(example = "null", value = "uzavřel; id objektu uživatel [persistentní položka]")
+  public String getStopedbyId() {
+    return stopedbyId;
   }
 
-  public void setStopedByID(String stopedByID) {
-    this.stopedByID = stopedByID;
+  public void setStopedbyId(String stopedbyId) {
+    this.stopedbyId = stopedbyId;
   }
 
   public Posreceipt ended(Boolean ended) {
@@ -386,10 +422,10 @@ public class Posreceipt   {
   }
 
    /**
-   * Odvedená [persistentní položka]
+   * odvedená [persistentní položka]
    * @return ended
   **/
-  @ApiModelProperty(example = "null", value = "Odvedená [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "odvedená [persistentní položka]")
   public Boolean getEnded() {
     return ended;
   }
@@ -398,76 +434,76 @@ public class Posreceipt   {
     this.ended = ended;
   }
 
-  public Posreceipt endedDateDATE(DateTime endedDateDATE) {
-    this.endedDateDATE = endedDateDATE;
+  public Posreceipt endeddatedate(DateTime endeddatedate) {
+    this.endeddatedate = endeddatedate;
     return this;
   }
 
    /**
-   * Dat. odvodu [persistentní položka]
-   * @return endedDateDATE
+   * dat. odvodu [persistentní položka]
+   * @return endeddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Dat. odvodu [persistentní položka]")
-  public DateTime getEndedDateDATE() {
-    return endedDateDATE;
+  @ApiModelProperty(example = "null", value = "dat. odvodu [persistentní položka]")
+  public DateTime getEndeddatedate() {
+    return endeddatedate;
   }
 
-  public void setEndedDateDATE(DateTime endedDateDATE) {
-    this.endedDateDATE = endedDateDATE;
+  public void setEndeddatedate(DateTime endeddatedate) {
+    this.endeddatedate = endeddatedate;
   }
 
-  public Posreceipt endedByID(String endedByID) {
-    this.endedByID = endedByID;
+  public Posreceipt endedbyId(String endedbyId) {
+    this.endedbyId = endedbyId;
     return this;
   }
 
    /**
-   * Odvedl; ID objektu Uživatel [persistentní položka]
-   * @return endedByID
+   * odvedl; id objektu uživatel [persistentní položka]
+   * @return endedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Odvedl; ID objektu Uživatel [persistentní položka]")
-  public String getEndedByID() {
-    return endedByID;
+  @ApiModelProperty(example = "null", value = "odvedl; id objektu uživatel [persistentní položka]")
+  public String getEndedbyId() {
+    return endedbyId;
   }
 
-  public void setEndedByID(String endedByID) {
-    this.endedByID = endedByID;
+  public void setEndedbyId(String endedbyId) {
+    this.endedbyId = endedbyId;
   }
 
-  public Posreceipt pOSShiftID(String pOSShiftID) {
-    this.pOSShiftID = pOSShiftID;
+  public Posreceipt posshiftId(String posshiftId) {
+    this.posshiftId = posshiftId;
     return this;
   }
 
    /**
-   * Směna; ID objektu Směna [persistentní položka]
-   * @return pOSShiftID
+   * směna; id objektu směna [persistentní položka]
+   * @return posshiftId
   **/
-  @ApiModelProperty(example = "null", value = "Směna; ID objektu Směna [persistentní položka]")
-  public String getPOSShiftID() {
-    return pOSShiftID;
+  @ApiModelProperty(example = "null", value = "směna; id objektu směna [persistentní položka]")
+  public String getPosshiftId() {
+    return posshiftId;
   }
 
-  public void setPOSShiftID(String pOSShiftID) {
-    this.pOSShiftID = pOSShiftID;
+  public void setPosshiftId(String posshiftId) {
+    this.posshiftId = posshiftId;
   }
 
-  public Posreceipt payChangeDocCount(Integer payChangeDocCount) {
-    this.payChangeDocCount = payChangeDocCount;
+  public Posreceipt paychangedoccount(Integer paychangedoccount) {
+    this.paychangedoccount = paychangedoccount;
     return this;
   }
 
    /**
-   * Počet dokladů ve změně platby [persistentní položka]
-   * @return payChangeDocCount
+   * počet dokladů ve změně platby [persistentní položka]
+   * @return paychangedoccount
   **/
-  @ApiModelProperty(example = "null", value = "Počet dokladů ve změně platby [persistentní položka]")
-  public Integer getPayChangeDocCount() {
-    return payChangeDocCount;
+  @ApiModelProperty(example = "null", value = "počet dokladů ve změně platby [persistentní položka]")
+  public Integer getPaychangedoccount() {
+    return paychangedoccount;
   }
 
-  public void setPayChangeDocCount(Integer payChangeDocCount) {
-    this.payChangeDocCount = payChangeDocCount;
+  public void setPaychangedoccount(Integer paychangedoccount) {
+    this.paychangedoccount = paychangedoccount;
   }
 
 
@@ -480,33 +516,33 @@ public class Posreceipt   {
       return false;
     }
     Posreceipt posreceipt = (Posreceipt) o;
-    return Objects.equals(this.displayName, posreceipt.displayName) &&
-        Objects.equals(this.ID, posreceipt.ID) &&
-        Objects.equals(this.classID, posreceipt.classID) &&
-        Objects.equals(this.objVersion, posreceipt.objVersion) &&
+    return Objects.equals(this.displayname, posreceipt.displayname) &&
+        Objects.equals(this.id, posreceipt.id) &&
+        Objects.equals(this.classid, posreceipt.classid) &&
+        Objects.equals(this.objversion, posreceipt.objversion) &&
         Objects.equals(this.rows, posreceipt.rows) &&
-        Objects.equals(this.docQueueID, posreceipt.docQueueID) &&
-        Objects.equals(this.periodID, posreceipt.periodID) &&
-        Objects.equals(this.ordNumber, posreceipt.ordNumber) &&
-        Objects.equals(this.docDateDATE, posreceipt.docDateDATE) &&
-        Objects.equals(this.createdByID, posreceipt.createdByID) &&
-        Objects.equals(this.correctedByID, posreceipt.correctedByID) &&
-        Objects.equals(this.newRelatedType, posreceipt.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, posreceipt.newRelatedDocumentID) &&
-        Objects.equals(this.virtualPOSID, posreceipt.virtualPOSID) &&
+        Objects.equals(this.docqueueId, posreceipt.docqueueId) &&
+        Objects.equals(this.periodId, posreceipt.periodId) &&
+        Objects.equals(this.ordnumber, posreceipt.ordnumber) &&
+        Objects.equals(this.docdatedate, posreceipt.docdatedate) &&
+        Objects.equals(this.createdbyId, posreceipt.createdbyId) &&
+        Objects.equals(this.correctedbyId, posreceipt.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, posreceipt.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, posreceipt.newrelateddocumentId) &&
+        Objects.equals(this.virtualposId, posreceipt.virtualposId) &&
         Objects.equals(this.stoped, posreceipt.stoped) &&
-        Objects.equals(this.stopedDateDATE, posreceipt.stopedDateDATE) &&
-        Objects.equals(this.stopedByID, posreceipt.stopedByID) &&
+        Objects.equals(this.stopeddatedate, posreceipt.stopeddatedate) &&
+        Objects.equals(this.stopedbyId, posreceipt.stopedbyId) &&
         Objects.equals(this.ended, posreceipt.ended) &&
-        Objects.equals(this.endedDateDATE, posreceipt.endedDateDATE) &&
-        Objects.equals(this.endedByID, posreceipt.endedByID) &&
-        Objects.equals(this.pOSShiftID, posreceipt.pOSShiftID) &&
-        Objects.equals(this.payChangeDocCount, posreceipt.payChangeDocCount);
+        Objects.equals(this.endeddatedate, posreceipt.endeddatedate) &&
+        Objects.equals(this.endedbyId, posreceipt.endedbyId) &&
+        Objects.equals(this.posshiftId, posreceipt.posshiftId) &&
+        Objects.equals(this.paychangedoccount, posreceipt.paychangedoccount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, virtualPOSID, stoped, stopedDateDATE, stopedByID, ended, endedDateDATE, endedByID, pOSShiftID, payChangeDocCount);
+    return Objects.hash(displayname, id, classid, objversion, rows, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, virtualposId, stoped, stopeddatedate, stopedbyId, ended, endeddatedate, endedbyId, posshiftId, paychangedoccount);
   }
 
   @Override
@@ -514,28 +550,28 @@ public class Posreceipt   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posreceipt {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    virtualPOSID: ").append(toIndentedString(virtualPOSID)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    virtualposId: ").append(toIndentedString(virtualposId)).append("\n");
     sb.append("    stoped: ").append(toIndentedString(stoped)).append("\n");
-    sb.append("    stopedDateDATE: ").append(toIndentedString(stopedDateDATE)).append("\n");
-    sb.append("    stopedByID: ").append(toIndentedString(stopedByID)).append("\n");
+    sb.append("    stopeddatedate: ").append(toIndentedString(stopeddatedate)).append("\n");
+    sb.append("    stopedbyId: ").append(toIndentedString(stopedbyId)).append("\n");
     sb.append("    ended: ").append(toIndentedString(ended)).append("\n");
-    sb.append("    endedDateDATE: ").append(toIndentedString(endedDateDATE)).append("\n");
-    sb.append("    endedByID: ").append(toIndentedString(endedByID)).append("\n");
-    sb.append("    pOSShiftID: ").append(toIndentedString(pOSShiftID)).append("\n");
-    sb.append("    payChangeDocCount: ").append(toIndentedString(payChangeDocCount)).append("\n");
+    sb.append("    endeddatedate: ").append(toIndentedString(endeddatedate)).append("\n");
+    sb.append("    endedbyId: ").append(toIndentedString(endedbyId)).append("\n");
+    sb.append("    posshiftId: ").append(toIndentedString(posshiftId)).append("\n");
+    sb.append("    paychangedoccount: ").append(toIndentedString(paychangedoccount)).append("\n");
     sb.append("}");
     return sb.toString();
   }

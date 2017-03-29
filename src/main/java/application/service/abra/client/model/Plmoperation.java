@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,153 +37,189 @@ import java.util.Objects;
 /**
  * Plmoperation
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmoperation   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Plmoperationchange> rows = new ArrayList<Plmoperationchange>();
 
-  @SerializedName("JobOrdersRoutines_ID")
-  private String jobOrdersRoutinesID = null;
+  @SerializedName("jobordersroutines_id")
+  private String jobordersroutinesId = null;
 
-  @SerializedName("JobOrdersSN_ID")
-  private String jobOrdersSNID = null;
+  @SerializedName("joborderssn_id")
+  private String joborderssnId = null;
 
-  @SerializedName("PerformedBy_ID")
-  private String performedByID = null;
+  @SerializedName("performedby_id")
+  private String performedbyId = null;
 
-  @SerializedName("StartedAt$DATE")
-  private DateTime startedAtDATE = null;
+  @SerializedName("startedat$date")
+  private DateTime startedatdate = null;
 
-  @SerializedName("FinishedAt$DATE")
-  private DateTime finishedAtDATE = null;
+  @SerializedName("finishedat$date")
+  private DateTime finishedatdate = null;
 
-  @SerializedName("Duration")
+  @SerializedName("duration")
   private Double duration = null;
 
-  @SerializedName("OperationResult")
-  private Boolean operationResult = null;
+  @SerializedName("operationresult")
+  private Boolean operationresult = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("SalaryClass_ID")
-  private String salaryClassID = null;
+  @SerializedName("salaryclass_id")
+  private String salaryclassId = null;
 
-  @SerializedName("HourlyRate")
-  private Double hourlyRate = null;
+  @SerializedName("hourlyrate")
+  private Double hourlyrate = null;
 
-  @SerializedName("SalaryCosts")
-  private Double salaryCosts = null;
+  @SerializedName("salarycosts")
+  private Double salarycosts = null;
 
-  @SerializedName("OverheadCosts")
-  private Double overheadCosts = null;
+  @SerializedName("overheadcosts")
+  private Double overheadcosts = null;
 
-  @SerializedName("GeneralExpense")
-  private Double generalExpense = null;
+  @SerializedName("generalexpense")
+  private Double generalexpense = null;
 
-  @SerializedName("Cooperation")
+  @SerializedName("cooperation")
   private Boolean cooperation = null;
 
-  @SerializedName("AggregateWorkTicket_ID")
-  private String aggregateWorkTicketID = null;
+  @SerializedName("aggregateworkticket_id")
+  private String aggregateworkticketId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("UnitQuantity")
-  private Double unitQuantity = null;
+  @SerializedName("unitquantity")
+  private Double unitquantity = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("ValueTransfer")
-  private Integer valueTransfer = null;
+  @SerializedName("valuetransfer")
+  private Integer valuetransfer = null;
 
-  @SerializedName("WageOperationType_ID")
-  private String wageOperationTypeID = null;
+  @SerializedName("wageoperationtype_id")
+  private String wageoperationtypeId = null;
 
-  @SerializedName("FinishedProductRow_ID")
-  private String finishedProductRowID = null;
+  @SerializedName("finishedproductrow_id")
+  private String finishedproductrowId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("WorkPlace_ID")
-  private String workPlaceID = null;
+  @SerializedName("workplace_id")
+  private String workplaceId = null;
 
-  @SerializedName("TotalTAC")
-  private Double totalTAC = null;
+  @SerializedName("totaltac")
+  private Double totaltac = null;
 
-  @SerializedName("TotalTBC")
-  private Double totalTBC = null;
+  @SerializedName("totaltbc")
+  private Double totaltbc = null;
 
-  @SerializedName("TotalTime")
-  private Double totalTime = null;
+  @SerializedName("totaltime")
+  private Double totaltime = null;
 
-  @SerializedName("OperationWSIs")
-  private List<Plmoperationwsi> operationWSIs = new ArrayList<Plmoperationwsi>();
+  @SerializedName("operationwsis")
+  private List<Plmoperationwsi> operationwsis = new ArrayList<Plmoperationwsi>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Plmoperation displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Plmoperation id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmoperation classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmoperation objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Plmoperation rows(List<Plmoperationchange> rows) {
@@ -197,10 +233,10 @@ public class Plmoperation   {
   }
 
    /**
-   * Řádky; kolekce BO Změna pracovního lístku [nepersistentní položka]
+   * Řádky; kolekce bo změna pracovního lístku [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Změna pracovního lístku [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo změna pracovního lístku [nepersistentní položka]")
   public List<Plmoperationchange> getRows() {
     return rows;
   }
@@ -209,94 +245,94 @@ public class Plmoperation   {
     this.rows = rows;
   }
 
-  public Plmoperation jobOrdersRoutinesID(String jobOrdersRoutinesID) {
-    this.jobOrdersRoutinesID = jobOrdersRoutinesID;
+  public Plmoperation jobordersroutinesId(String jobordersroutinesId) {
+    this.jobordersroutinesId = jobordersroutinesId;
     return this;
   }
 
    /**
-   * Odkaz na výrobní postup; ID objektu VP - technologický postup [persistentní položka]
-   * @return jobOrdersRoutinesID
+   * odkaz na výrobní postup; id objektu vp - technologický postup [persistentní položka]
+   * @return jobordersroutinesId
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na výrobní postup; ID objektu VP - technologický postup [persistentní položka]")
-  public String getJobOrdersRoutinesID() {
-    return jobOrdersRoutinesID;
+  @ApiModelProperty(example = "null", value = "odkaz na výrobní postup; id objektu vp - technologický postup [persistentní položka]")
+  public String getJobordersroutinesId() {
+    return jobordersroutinesId;
   }
 
-  public void setJobOrdersRoutinesID(String jobOrdersRoutinesID) {
-    this.jobOrdersRoutinesID = jobOrdersRoutinesID;
+  public void setJobordersroutinesId(String jobordersroutinesId) {
+    this.jobordersroutinesId = jobordersroutinesId;
   }
 
-  public Plmoperation jobOrdersSNID(String jobOrdersSNID) {
-    this.jobOrdersSNID = jobOrdersSNID;
+  public Plmoperation joborderssnId(String joborderssnId) {
+    this.joborderssnId = joborderssnId;
     return this;
   }
 
    /**
-   * Odkaz na SN; ID objektu VP - sériové číslo [persistentní položka]
-   * @return jobOrdersSNID
+   * odkaz na sn; id objektu vp - sériové číslo [persistentní položka]
+   * @return joborderssnId
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na SN; ID objektu VP - sériové číslo [persistentní položka]")
-  public String getJobOrdersSNID() {
-    return jobOrdersSNID;
+  @ApiModelProperty(example = "null", value = "odkaz na sn; id objektu vp - sériové číslo [persistentní položka]")
+  public String getJoborderssnId() {
+    return joborderssnId;
   }
 
-  public void setJobOrdersSNID(String jobOrdersSNID) {
-    this.jobOrdersSNID = jobOrdersSNID;
+  public void setJoborderssnId(String joborderssnId) {
+    this.joborderssnId = joborderssnId;
   }
 
-  public Plmoperation performedByID(String performedByID) {
-    this.performedByID = performedByID;
+  public Plmoperation performedbyId(String performedbyId) {
+    this.performedbyId = performedbyId;
     return this;
   }
 
    /**
-   * Pracovník; ID objektu Pracovník [persistentní položka]
-   * @return performedByID
+   * pracovník; id objektu pracovník [persistentní položka]
+   * @return performedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Pracovník; ID objektu Pracovník [persistentní položka]")
-  public String getPerformedByID() {
-    return performedByID;
+  @ApiModelProperty(example = "null", value = "pracovník; id objektu pracovník [persistentní položka]")
+  public String getPerformedbyId() {
+    return performedbyId;
   }
 
-  public void setPerformedByID(String performedByID) {
-    this.performedByID = performedByID;
+  public void setPerformedbyId(String performedbyId) {
+    this.performedbyId = performedbyId;
   }
 
-  public Plmoperation startedAtDATE(DateTime startedAtDATE) {
-    this.startedAtDATE = startedAtDATE;
+  public Plmoperation startedatdate(DateTime startedatdate) {
+    this.startedatdate = startedatdate;
     return this;
   }
 
    /**
-   * Začátek [persistentní položka]
-   * @return startedAtDATE
+   * začátek [persistentní položka]
+   * @return startedatdate
   **/
-  @ApiModelProperty(example = "null", value = "Začátek [persistentní položka]")
-  public DateTime getStartedAtDATE() {
-    return startedAtDATE;
+  @ApiModelProperty(example = "null", value = "začátek [persistentní položka]")
+  public DateTime getStartedatdate() {
+    return startedatdate;
   }
 
-  public void setStartedAtDATE(DateTime startedAtDATE) {
-    this.startedAtDATE = startedAtDATE;
+  public void setStartedatdate(DateTime startedatdate) {
+    this.startedatdate = startedatdate;
   }
 
-  public Plmoperation finishedAtDATE(DateTime finishedAtDATE) {
-    this.finishedAtDATE = finishedAtDATE;
+  public Plmoperation finishedatdate(DateTime finishedatdate) {
+    this.finishedatdate = finishedatdate;
     return this;
   }
 
    /**
-   * Ukončení [persistentní položka]
-   * @return finishedAtDATE
+   * ukončení [persistentní položka]
+   * @return finishedatdate
   **/
-  @ApiModelProperty(example = "null", value = "Ukončení [persistentní položka]")
-  public DateTime getFinishedAtDATE() {
-    return finishedAtDATE;
+  @ApiModelProperty(example = "null", value = "ukončení [persistentní položka]")
+  public DateTime getFinishedatdate() {
+    return finishedatdate;
   }
 
-  public void setFinishedAtDATE(DateTime finishedAtDATE) {
-    this.finishedAtDATE = finishedAtDATE;
+  public void setFinishedatdate(DateTime finishedatdate) {
+    this.finishedatdate = finishedatdate;
   }
 
   public Plmoperation duration(Double duration) {
@@ -305,10 +341,10 @@ public class Plmoperation   {
   }
 
    /**
-   * Doba trvání v hod.
+   * doba trvání v hod.
    * @return duration
   **/
-  @ApiModelProperty(example = "null", value = "Doba trvání v hod.")
+  @ApiModelProperty(example = "null", value = "doba trvání v hod.")
   public Double getDuration() {
     return duration;
   }
@@ -317,22 +353,22 @@ public class Plmoperation   {
     this.duration = duration;
   }
 
-  public Plmoperation operationResult(Boolean operationResult) {
-    this.operationResult = operationResult;
+  public Plmoperation operationresult(Boolean operationresult) {
+    this.operationresult = operationresult;
     return this;
   }
 
    /**
-   * Výsledek [persistentní položka]
-   * @return operationResult
+   * výsledek [persistentní položka]
+   * @return operationresult
   **/
-  @ApiModelProperty(example = "null", value = "Výsledek [persistentní položka]")
-  public Boolean getOperationResult() {
-    return operationResult;
+  @ApiModelProperty(example = "null", value = "výsledek [persistentní položka]")
+  public Boolean getOperationresult() {
+    return operationresult;
   }
 
-  public void setOperationResult(Boolean operationResult) {
-    this.operationResult = operationResult;
+  public void setOperationresult(Boolean operationresult) {
+    this.operationresult = operationresult;
   }
 
   public Plmoperation quantity(Double quantity) {
@@ -341,10 +377,10 @@ public class Plmoperation   {
   }
 
    /**
-   * Dokončeno v ev.jedn. [persistentní položka]
+   * dokončeno v ev.jedn. [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Dokončeno v ev.jedn. [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "dokončeno v ev.jedn. [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -353,112 +389,112 @@ public class Plmoperation   {
     this.quantity = quantity;
   }
 
-  public Plmoperation divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Plmoperation divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Plmoperation salaryClassID(String salaryClassID) {
-    this.salaryClassID = salaryClassID;
+  public Plmoperation salaryclassId(String salaryclassId) {
+    this.salaryclassId = salaryclassId;
     return this;
   }
 
    /**
-   * Tarifní třída skutečná; ID objektu Tarifní třída [persistentní položka]
-   * @return salaryClassID
+   * tarifní třída skutečná; id objektu tarifní třída [persistentní položka]
+   * @return salaryclassId
   **/
-  @ApiModelProperty(example = "null", value = "Tarifní třída skutečná; ID objektu Tarifní třída [persistentní položka]")
-  public String getSalaryClassID() {
-    return salaryClassID;
+  @ApiModelProperty(example = "null", value = "tarifní třída skutečná; id objektu tarifní třída [persistentní položka]")
+  public String getSalaryclassId() {
+    return salaryclassId;
   }
 
-  public void setSalaryClassID(String salaryClassID) {
-    this.salaryClassID = salaryClassID;
+  public void setSalaryclassId(String salaryclassId) {
+    this.salaryclassId = salaryclassId;
   }
 
-  public Plmoperation hourlyRate(Double hourlyRate) {
-    this.hourlyRate = hourlyRate;
+  public Plmoperation hourlyrate(Double hourlyrate) {
+    this.hourlyrate = hourlyrate;
     return this;
   }
 
    /**
-   * Sazba [persistentní položka]
-   * @return hourlyRate
+   * sazba [persistentní položka]
+   * @return hourlyrate
   **/
-  @ApiModelProperty(example = "null", value = "Sazba [persistentní položka]")
-  public Double getHourlyRate() {
-    return hourlyRate;
+  @ApiModelProperty(example = "null", value = "sazba [persistentní položka]")
+  public Double getHourlyrate() {
+    return hourlyrate;
   }
 
-  public void setHourlyRate(Double hourlyRate) {
-    this.hourlyRate = hourlyRate;
+  public void setHourlyrate(Double hourlyrate) {
+    this.hourlyrate = hourlyrate;
   }
 
-  public Plmoperation salaryCosts(Double salaryCosts) {
-    this.salaryCosts = salaryCosts;
+  public Plmoperation salarycosts(Double salarycosts) {
+    this.salarycosts = salarycosts;
     return this;
   }
 
    /**
-   * Mzdové náklady [persistentní položka]
-   * @return salaryCosts
+   * mzdové náklady [persistentní položka]
+   * @return salarycosts
   **/
-  @ApiModelProperty(example = "null", value = "Mzdové náklady [persistentní položka]")
-  public Double getSalaryCosts() {
-    return salaryCosts;
+  @ApiModelProperty(example = "null", value = "mzdové náklady [persistentní položka]")
+  public Double getSalarycosts() {
+    return salarycosts;
   }
 
-  public void setSalaryCosts(Double salaryCosts) {
-    this.salaryCosts = salaryCosts;
+  public void setSalarycosts(Double salarycosts) {
+    this.salarycosts = salarycosts;
   }
 
-  public Plmoperation overheadCosts(Double overheadCosts) {
-    this.overheadCosts = overheadCosts;
+  public Plmoperation overheadcosts(Double overheadcosts) {
+    this.overheadcosts = overheadcosts;
     return this;
   }
 
    /**
-   * Výrobní režie [persistentní položka]
-   * @return overheadCosts
+   * výrobní režie [persistentní položka]
+   * @return overheadcosts
   **/
-  @ApiModelProperty(example = "null", value = "Výrobní režie [persistentní položka]")
-  public Double getOverheadCosts() {
-    return overheadCosts;
+  @ApiModelProperty(example = "null", value = "výrobní režie [persistentní položka]")
+  public Double getOverheadcosts() {
+    return overheadcosts;
   }
 
-  public void setOverheadCosts(Double overheadCosts) {
-    this.overheadCosts = overheadCosts;
+  public void setOverheadcosts(Double overheadcosts) {
+    this.overheadcosts = overheadcosts;
   }
 
-  public Plmoperation generalExpense(Double generalExpense) {
-    this.generalExpense = generalExpense;
+  public Plmoperation generalexpense(Double generalexpense) {
+    this.generalexpense = generalexpense;
     return this;
   }
 
    /**
-   * Správní režie [persistentní položka]
-   * @return generalExpense
+   * správní režie [persistentní položka]
+   * @return generalexpense
   **/
-  @ApiModelProperty(example = "null", value = "Správní režie [persistentní položka]")
-  public Double getGeneralExpense() {
-    return generalExpense;
+  @ApiModelProperty(example = "null", value = "správní režie [persistentní položka]")
+  public Double getGeneralexpense() {
+    return generalexpense;
   }
 
-  public void setGeneralExpense(Double generalExpense) {
-    this.generalExpense = generalExpense;
+  public void setGeneralexpense(Double generalexpense) {
+    this.generalexpense = generalexpense;
   }
 
   public Plmoperation cooperation(Boolean cooperation) {
@@ -467,10 +503,10 @@ public class Plmoperation   {
   }
 
    /**
-   * Kooperace [persistentní položka]
+   * kooperace [persistentní položka]
    * @return cooperation
   **/
-  @ApiModelProperty(example = "null", value = "Kooperace [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kooperace [persistentní položka]")
   public Boolean getCooperation() {
     return cooperation;
   }
@@ -479,315 +515,315 @@ public class Plmoperation   {
     this.cooperation = cooperation;
   }
 
-  public Plmoperation aggregateWorkTicketID(String aggregateWorkTicketID) {
-    this.aggregateWorkTicketID = aggregateWorkTicketID;
+  public Plmoperation aggregateworkticketId(String aggregateworkticketId) {
+    this.aggregateworkticketId = aggregateworkticketId;
     return this;
   }
 
    /**
-   * Souhrnné prac. lístky; ID objektu Souhrnný pracovní lístek [persistentní položka]
-   * @return aggregateWorkTicketID
+   * souhrnné prac. lístky; id objektu souhrnný pracovní lístek [persistentní položka]
+   * @return aggregateworkticketId
   **/
-  @ApiModelProperty(example = "null", value = "Souhrnné prac. lístky; ID objektu Souhrnný pracovní lístek [persistentní položka]")
-  public String getAggregateWorkTicketID() {
-    return aggregateWorkTicketID;
+  @ApiModelProperty(example = "null", value = "souhrnné prac. lístky; id objektu souhrnný pracovní lístek [persistentní položka]")
+  public String getAggregateworkticketId() {
+    return aggregateworkticketId;
   }
 
-  public void setAggregateWorkTicketID(String aggregateWorkTicketID) {
-    this.aggregateWorkTicketID = aggregateWorkTicketID;
+  public void setAggregateworkticketId(String aggregateworkticketId) {
+    this.aggregateworkticketId = aggregateworkticketId;
   }
 
-  public Plmoperation busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Plmoperation busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Plmoperation busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Plmoperation bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obch. případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obch. případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obch. případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obch. případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Plmoperation qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Plmoperation qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Jednotka
-   * @return qUnit
+   * jednotka
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "jednotka")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
   }
 
-  public Plmoperation unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Plmoperation unitrate(Double unitrate) {
+    this.unitrate = unitrate;
     return this;
   }
 
    /**
-   * Vztah
-   * @return unitRate
+   * vztah
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "vztah")
+  public Double getUnitrate() {
+    return unitrate;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
-  public Plmoperation unitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public Plmoperation unitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
     return this;
   }
 
    /**
-   * Dokončeno
-   * @return unitQuantity
+   * dokončeno
+   * @return unitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Dokončeno")
-  public Double getUnitQuantity() {
-    return unitQuantity;
+  @ApiModelProperty(example = "null", value = "dokončeno")
+  public Double getUnitquantity() {
+    return unitquantity;
   }
 
-  public void setUnitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public void setUnitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
   }
 
-  public Plmoperation createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Plmoperation createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Plmoperation docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Plmoperation docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Plmoperation valueTransfer(Integer valueTransfer) {
-    this.valueTransfer = valueTransfer;
+  public Plmoperation valuetransfer(Integer valuetransfer) {
+    this.valuetransfer = valuetransfer;
     return this;
   }
 
    /**
-   * Způsob přenosu hodnoty [persistentní položka]
-   * @return valueTransfer
+   * způsob přenosu hodnoty [persistentní položka]
+   * @return valuetransfer
   **/
-  @ApiModelProperty(example = "null", value = "Způsob přenosu hodnoty [persistentní položka]")
-  public Integer getValueTransfer() {
-    return valueTransfer;
+  @ApiModelProperty(example = "null", value = "způsob přenosu hodnoty [persistentní položka]")
+  public Integer getValuetransfer() {
+    return valuetransfer;
   }
 
-  public void setValueTransfer(Integer valueTransfer) {
-    this.valueTransfer = valueTransfer;
+  public void setValuetransfer(Integer valuetransfer) {
+    this.valuetransfer = valuetransfer;
   }
 
-  public Plmoperation wageOperationTypeID(String wageOperationTypeID) {
-    this.wageOperationTypeID = wageOperationTypeID;
+  public Plmoperation wageoperationtypeId(String wageoperationtypeId) {
+    this.wageoperationtypeId = wageoperationtypeId;
     return this;
   }
 
    /**
-   * Druh výkonu; ID objektu Druhy výkonů [persistentní položka]
-   * @return wageOperationTypeID
+   * druh výkonu; id objektu druhy výkonů [persistentní položka]
+   * @return wageoperationtypeId
   **/
-  @ApiModelProperty(example = "null", value = "Druh výkonu; ID objektu Druhy výkonů [persistentní položka]")
-  public String getWageOperationTypeID() {
-    return wageOperationTypeID;
+  @ApiModelProperty(example = "null", value = "druh výkonu; id objektu druhy výkonů [persistentní položka]")
+  public String getWageoperationtypeId() {
+    return wageoperationtypeId;
   }
 
-  public void setWageOperationTypeID(String wageOperationTypeID) {
-    this.wageOperationTypeID = wageOperationTypeID;
+  public void setWageoperationtypeId(String wageoperationtypeId) {
+    this.wageoperationtypeId = wageoperationtypeId;
   }
 
-  public Plmoperation finishedProductRowID(String finishedProductRowID) {
-    this.finishedProductRowID = finishedProductRowID;
+  public Plmoperation finishedproductrowId(String finishedproductrowId) {
+    this.finishedproductrowId = finishedproductrowId;
     return this;
   }
 
    /**
-   * Dokončený výrobek; ID objektu Dokončený výrobek - řádek [persistentní položka]
-   * @return finishedProductRowID
+   * dokončený výrobek; id objektu dokončený výrobek - řádek [persistentní položka]
+   * @return finishedproductrowId
   **/
-  @ApiModelProperty(example = "null", value = "Dokončený výrobek; ID objektu Dokončený výrobek - řádek [persistentní položka]")
-  public String getFinishedProductRowID() {
-    return finishedProductRowID;
+  @ApiModelProperty(example = "null", value = "dokončený výrobek; id objektu dokončený výrobek - řádek [persistentní položka]")
+  public String getFinishedproductrowId() {
+    return finishedproductrowId;
   }
 
-  public void setFinishedProductRowID(String finishedProductRowID) {
-    this.finishedProductRowID = finishedProductRowID;
+  public void setFinishedproductrowId(String finishedproductrowId) {
+    this.finishedproductrowId = finishedproductrowId;
   }
 
-  public Plmoperation busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Plmoperation busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Plmoperation workPlaceID(String workPlaceID) {
-    this.workPlaceID = workPlaceID;
+  public Plmoperation workplaceId(String workplaceId) {
+    this.workplaceId = workplaceId;
     return this;
   }
 
    /**
-   * Skutečné pracoviště; ID objektu Pracoviště a stroj [persistentní položka]
-   * @return workPlaceID
+   * skutečné pracoviště; id objektu pracoviště a stroj [persistentní položka]
+   * @return workplaceId
   **/
-  @ApiModelProperty(example = "null", value = "Skutečné pracoviště; ID objektu Pracoviště a stroj [persistentní položka]")
-  public String getWorkPlaceID() {
-    return workPlaceID;
+  @ApiModelProperty(example = "null", value = "skutečné pracoviště; id objektu pracoviště a stroj [persistentní položka]")
+  public String getWorkplaceId() {
+    return workplaceId;
   }
 
-  public void setWorkPlaceID(String workPlaceID) {
-    this.workPlaceID = workPlaceID;
+  public void setWorkplaceId(String workplaceId) {
+    this.workplaceId = workplaceId;
   }
 
-  public Plmoperation totalTAC(Double totalTAC) {
-    this.totalTAC = totalTAC;
+  public Plmoperation totaltac(Double totaltac) {
+    this.totaltac = totaltac;
     return this;
   }
 
    /**
-   * Doba TAC [persistentní položka]
-   * @return totalTAC
+   * doba tac [persistentní položka]
+   * @return totaltac
   **/
-  @ApiModelProperty(example = "null", value = "Doba TAC [persistentní položka]")
-  public Double getTotalTAC() {
-    return totalTAC;
+  @ApiModelProperty(example = "null", value = "doba tac [persistentní položka]")
+  public Double getTotaltac() {
+    return totaltac;
   }
 
-  public void setTotalTAC(Double totalTAC) {
-    this.totalTAC = totalTAC;
+  public void setTotaltac(Double totaltac) {
+    this.totaltac = totaltac;
   }
 
-  public Plmoperation totalTBC(Double totalTBC) {
-    this.totalTBC = totalTBC;
+  public Plmoperation totaltbc(Double totaltbc) {
+    this.totaltbc = totaltbc;
     return this;
   }
 
    /**
-   * Doba TBC [persistentní položka]
-   * @return totalTBC
+   * doba tbc [persistentní položka]
+   * @return totaltbc
   **/
-  @ApiModelProperty(example = "null", value = "Doba TBC [persistentní položka]")
-  public Double getTotalTBC() {
-    return totalTBC;
+  @ApiModelProperty(example = "null", value = "doba tbc [persistentní položka]")
+  public Double getTotaltbc() {
+    return totaltbc;
   }
 
-  public void setTotalTBC(Double totalTBC) {
-    this.totalTBC = totalTBC;
+  public void setTotaltbc(Double totaltbc) {
+    this.totaltbc = totaltbc;
   }
 
-  public Plmoperation totalTime(Double totalTime) {
-    this.totalTime = totalTime;
+  public Plmoperation totaltime(Double totaltime) {
+    this.totaltime = totaltime;
     return this;
   }
 
    /**
-   * Doba trvání [persistentní položka]
-   * @return totalTime
+   * doba trvání [persistentní položka]
+   * @return totaltime
   **/
-  @ApiModelProperty(example = "null", value = "Doba trvání [persistentní položka]")
-  public Double getTotalTime() {
-    return totalTime;
+  @ApiModelProperty(example = "null", value = "doba trvání [persistentní položka]")
+  public Double getTotaltime() {
+    return totaltime;
   }
 
-  public void setTotalTime(Double totalTime) {
-    this.totalTime = totalTime;
+  public void setTotaltime(Double totaltime) {
+    this.totaltime = totaltime;
   }
 
-  public Plmoperation operationWSIs(List<Plmoperationwsi> operationWSIs) {
-    this.operationWSIs = operationWSIs;
+  public Plmoperation operationwsis(List<Plmoperationwsi> operationwsis) {
+    this.operationwsis = operationwsis;
     return this;
   }
 
-  public Plmoperation addOperationWSIsItem(Plmoperationwsi operationWSIsItem) {
-    this.operationWSIs.add(operationWSIsItem);
+  public Plmoperation addOperationwsisItem(Plmoperationwsi operationwsisItem) {
+    this.operationwsis.add(operationwsisItem);
     return this;
   }
 
    /**
-   * Dílenské úkony; kolekce BO Úkony na prac. lístku [nepersistentní položka]
-   * @return operationWSIs
+   * dílenské úkony; kolekce bo Úkony na prac. lístku [nepersistentní položka]
+   * @return operationwsis
   **/
-  @ApiModelProperty(example = "null", value = "Dílenské úkony; kolekce BO Úkony na prac. lístku [nepersistentní položka]")
-  public List<Plmoperationwsi> getOperationWSIs() {
-    return operationWSIs;
+  @ApiModelProperty(example = "null", value = "dílenské úkony; kolekce bo Úkony na prac. lístku [nepersistentní položka]")
+  public List<Plmoperationwsi> getOperationwsis() {
+    return operationwsis;
   }
 
-  public void setOperationWSIs(List<Plmoperationwsi> operationWSIs) {
-    this.operationWSIs = operationWSIs;
+  public void setOperationwsis(List<Plmoperationwsi> operationwsis) {
+    this.operationwsis = operationwsis;
   }
 
 
@@ -800,48 +836,48 @@ public class Plmoperation   {
       return false;
     }
     Plmoperation plmoperation = (Plmoperation) o;
-    return Objects.equals(this.displayName, plmoperation.displayName) &&
-        Objects.equals(this.ID, plmoperation.ID) &&
-        Objects.equals(this.classID, plmoperation.classID) &&
-        Objects.equals(this.objVersion, plmoperation.objVersion) &&
+    return Objects.equals(this.displayname, plmoperation.displayname) &&
+        Objects.equals(this.id, plmoperation.id) &&
+        Objects.equals(this.classid, plmoperation.classid) &&
+        Objects.equals(this.objversion, plmoperation.objversion) &&
         Objects.equals(this.rows, plmoperation.rows) &&
-        Objects.equals(this.jobOrdersRoutinesID, plmoperation.jobOrdersRoutinesID) &&
-        Objects.equals(this.jobOrdersSNID, plmoperation.jobOrdersSNID) &&
-        Objects.equals(this.performedByID, plmoperation.performedByID) &&
-        Objects.equals(this.startedAtDATE, plmoperation.startedAtDATE) &&
-        Objects.equals(this.finishedAtDATE, plmoperation.finishedAtDATE) &&
+        Objects.equals(this.jobordersroutinesId, plmoperation.jobordersroutinesId) &&
+        Objects.equals(this.joborderssnId, plmoperation.joborderssnId) &&
+        Objects.equals(this.performedbyId, plmoperation.performedbyId) &&
+        Objects.equals(this.startedatdate, plmoperation.startedatdate) &&
+        Objects.equals(this.finishedatdate, plmoperation.finishedatdate) &&
         Objects.equals(this.duration, plmoperation.duration) &&
-        Objects.equals(this.operationResult, plmoperation.operationResult) &&
+        Objects.equals(this.operationresult, plmoperation.operationresult) &&
         Objects.equals(this.quantity, plmoperation.quantity) &&
-        Objects.equals(this.divisionID, plmoperation.divisionID) &&
-        Objects.equals(this.salaryClassID, plmoperation.salaryClassID) &&
-        Objects.equals(this.hourlyRate, plmoperation.hourlyRate) &&
-        Objects.equals(this.salaryCosts, plmoperation.salaryCosts) &&
-        Objects.equals(this.overheadCosts, plmoperation.overheadCosts) &&
-        Objects.equals(this.generalExpense, plmoperation.generalExpense) &&
+        Objects.equals(this.divisionId, plmoperation.divisionId) &&
+        Objects.equals(this.salaryclassId, plmoperation.salaryclassId) &&
+        Objects.equals(this.hourlyrate, plmoperation.hourlyrate) &&
+        Objects.equals(this.salarycosts, plmoperation.salarycosts) &&
+        Objects.equals(this.overheadcosts, plmoperation.overheadcosts) &&
+        Objects.equals(this.generalexpense, plmoperation.generalexpense) &&
         Objects.equals(this.cooperation, plmoperation.cooperation) &&
-        Objects.equals(this.aggregateWorkTicketID, plmoperation.aggregateWorkTicketID) &&
-        Objects.equals(this.busOrderID, plmoperation.busOrderID) &&
-        Objects.equals(this.busTransactionID, plmoperation.busTransactionID) &&
-        Objects.equals(this.qUnit, plmoperation.qUnit) &&
-        Objects.equals(this.unitRate, plmoperation.unitRate) &&
-        Objects.equals(this.unitQuantity, plmoperation.unitQuantity) &&
-        Objects.equals(this.createdByID, plmoperation.createdByID) &&
-        Objects.equals(this.docDateDATE, plmoperation.docDateDATE) &&
-        Objects.equals(this.valueTransfer, plmoperation.valueTransfer) &&
-        Objects.equals(this.wageOperationTypeID, plmoperation.wageOperationTypeID) &&
-        Objects.equals(this.finishedProductRowID, plmoperation.finishedProductRowID) &&
-        Objects.equals(this.busProjectID, plmoperation.busProjectID) &&
-        Objects.equals(this.workPlaceID, plmoperation.workPlaceID) &&
-        Objects.equals(this.totalTAC, plmoperation.totalTAC) &&
-        Objects.equals(this.totalTBC, plmoperation.totalTBC) &&
-        Objects.equals(this.totalTime, plmoperation.totalTime) &&
-        Objects.equals(this.operationWSIs, plmoperation.operationWSIs);
+        Objects.equals(this.aggregateworkticketId, plmoperation.aggregateworkticketId) &&
+        Objects.equals(this.busorderId, plmoperation.busorderId) &&
+        Objects.equals(this.bustransactionId, plmoperation.bustransactionId) &&
+        Objects.equals(this.qunit, plmoperation.qunit) &&
+        Objects.equals(this.unitrate, plmoperation.unitrate) &&
+        Objects.equals(this.unitquantity, plmoperation.unitquantity) &&
+        Objects.equals(this.createdbyId, plmoperation.createdbyId) &&
+        Objects.equals(this.docdatedate, plmoperation.docdatedate) &&
+        Objects.equals(this.valuetransfer, plmoperation.valuetransfer) &&
+        Objects.equals(this.wageoperationtypeId, plmoperation.wageoperationtypeId) &&
+        Objects.equals(this.finishedproductrowId, plmoperation.finishedproductrowId) &&
+        Objects.equals(this.busprojectId, plmoperation.busprojectId) &&
+        Objects.equals(this.workplaceId, plmoperation.workplaceId) &&
+        Objects.equals(this.totaltac, plmoperation.totaltac) &&
+        Objects.equals(this.totaltbc, plmoperation.totaltbc) &&
+        Objects.equals(this.totaltime, plmoperation.totaltime) &&
+        Objects.equals(this.operationwsis, plmoperation.operationwsis);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, jobOrdersRoutinesID, jobOrdersSNID, performedByID, startedAtDATE, finishedAtDATE, duration, operationResult, quantity, divisionID, salaryClassID, hourlyRate, salaryCosts, overheadCosts, generalExpense, cooperation, aggregateWorkTicketID, busOrderID, busTransactionID, qUnit, unitRate, unitQuantity, createdByID, docDateDATE, valueTransfer, wageOperationTypeID, finishedProductRowID, busProjectID, workPlaceID, totalTAC, totalTBC, totalTime, operationWSIs);
+    return Objects.hash(displayname, id, classid, objversion, rows, jobordersroutinesId, joborderssnId, performedbyId, startedatdate, finishedatdate, duration, operationresult, quantity, divisionId, salaryclassId, hourlyrate, salarycosts, overheadcosts, generalexpense, cooperation, aggregateworkticketId, busorderId, bustransactionId, qunit, unitrate, unitquantity, createdbyId, docdatedate, valuetransfer, wageoperationtypeId, finishedproductrowId, busprojectId, workplaceId, totaltac, totaltbc, totaltime, operationwsis);
   }
 
   @Override
@@ -849,43 +885,43 @@ public class Plmoperation   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmoperation {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    jobOrdersRoutinesID: ").append(toIndentedString(jobOrdersRoutinesID)).append("\n");
-    sb.append("    jobOrdersSNID: ").append(toIndentedString(jobOrdersSNID)).append("\n");
-    sb.append("    performedByID: ").append(toIndentedString(performedByID)).append("\n");
-    sb.append("    startedAtDATE: ").append(toIndentedString(startedAtDATE)).append("\n");
-    sb.append("    finishedAtDATE: ").append(toIndentedString(finishedAtDATE)).append("\n");
+    sb.append("    jobordersroutinesId: ").append(toIndentedString(jobordersroutinesId)).append("\n");
+    sb.append("    joborderssnId: ").append(toIndentedString(joborderssnId)).append("\n");
+    sb.append("    performedbyId: ").append(toIndentedString(performedbyId)).append("\n");
+    sb.append("    startedatdate: ").append(toIndentedString(startedatdate)).append("\n");
+    sb.append("    finishedatdate: ").append(toIndentedString(finishedatdate)).append("\n");
     sb.append("    duration: ").append(toIndentedString(duration)).append("\n");
-    sb.append("    operationResult: ").append(toIndentedString(operationResult)).append("\n");
+    sb.append("    operationresult: ").append(toIndentedString(operationresult)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    salaryClassID: ").append(toIndentedString(salaryClassID)).append("\n");
-    sb.append("    hourlyRate: ").append(toIndentedString(hourlyRate)).append("\n");
-    sb.append("    salaryCosts: ").append(toIndentedString(salaryCosts)).append("\n");
-    sb.append("    overheadCosts: ").append(toIndentedString(overheadCosts)).append("\n");
-    sb.append("    generalExpense: ").append(toIndentedString(generalExpense)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    salaryclassId: ").append(toIndentedString(salaryclassId)).append("\n");
+    sb.append("    hourlyrate: ").append(toIndentedString(hourlyrate)).append("\n");
+    sb.append("    salarycosts: ").append(toIndentedString(salarycosts)).append("\n");
+    sb.append("    overheadcosts: ").append(toIndentedString(overheadcosts)).append("\n");
+    sb.append("    generalexpense: ").append(toIndentedString(generalexpense)).append("\n");
     sb.append("    cooperation: ").append(toIndentedString(cooperation)).append("\n");
-    sb.append("    aggregateWorkTicketID: ").append(toIndentedString(aggregateWorkTicketID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    unitQuantity: ").append(toIndentedString(unitQuantity)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    valueTransfer: ").append(toIndentedString(valueTransfer)).append("\n");
-    sb.append("    wageOperationTypeID: ").append(toIndentedString(wageOperationTypeID)).append("\n");
-    sb.append("    finishedProductRowID: ").append(toIndentedString(finishedProductRowID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    workPlaceID: ").append(toIndentedString(workPlaceID)).append("\n");
-    sb.append("    totalTAC: ").append(toIndentedString(totalTAC)).append("\n");
-    sb.append("    totalTBC: ").append(toIndentedString(totalTBC)).append("\n");
-    sb.append("    totalTime: ").append(toIndentedString(totalTime)).append("\n");
-    sb.append("    operationWSIs: ").append(toIndentedString(operationWSIs)).append("\n");
+    sb.append("    aggregateworkticketId: ").append(toIndentedString(aggregateworkticketId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    unitquantity: ").append(toIndentedString(unitquantity)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    valuetransfer: ").append(toIndentedString(valuetransfer)).append("\n");
+    sb.append("    wageoperationtypeId: ").append(toIndentedString(wageoperationtypeId)).append("\n");
+    sb.append("    finishedproductrowId: ").append(toIndentedString(finishedproductrowId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    workplaceId: ").append(toIndentedString(workplaceId)).append("\n");
+    sb.append("    totaltac: ").append(toIndentedString(totaltac)).append("\n");
+    sb.append("    totaltbc: ").append(toIndentedString(totaltbc)).append("\n");
+    sb.append("    totaltime: ").append(toIndentedString(totaltime)).append("\n");
+    sb.append("    operationwsis: ").append(toIndentedString(operationwsis)).append("\n");
     sb.append("}");
     return sb.toString();
   }

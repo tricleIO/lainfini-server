@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,159 +35,195 @@ import java.util.Objects;
 /**
  * Issuedofferstatechange
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Issuedofferstatechange   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("IssuedOffer_ID")
-  private String issuedOfferID = null;
+  @SerializedName("issuedoffer_id")
+  private String issuedofferId = null;
 
-  @SerializedName("OfferState_ID")
-  private String offerStateID = null;
+  @SerializedName("offerstate_id")
+  private String offerstateId = null;
 
-  @SerializedName("PlanDate$DATE")
-  private DateTime planDateDATE = null;
+  @SerializedName("plandate$date")
+  private DateTime plandatedate = null;
 
-  @SerializedName("RealDate$DATE")
-  private DateTime realDateDATE = null;
+  @SerializedName("realdate$date")
+  private DateTime realdatedate = null;
 
-  @SerializedName("ActualSolver_ID")
-  private String actualSolverID = null;
+  @SerializedName("actualsolver_id")
+  private String actualsolverId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Issuedofferstatechange issuedOfferID(String issuedOfferID) {
-    this.issuedOfferID = issuedOfferID;
+  public Issuedofferstatechange displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Nabídka; ID objektu Nabídka vydaná [persistentní položka]
-   * @return issuedOfferID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Nabídka; ID objektu Nabídka vydaná [persistentní položka]")
-  public String getIssuedOfferID() {
-    return issuedOfferID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setIssuedOfferID(String issuedOfferID) {
-    this.issuedOfferID = issuedOfferID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Issuedofferstatechange offerStateID(String offerStateID) {
-    this.offerStateID = offerStateID;
+  public Issuedofferstatechange id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Stav nabídky; ID objektu Stav nabídky [persistentní položka]
-   * @return offerStateID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Stav nabídky; ID objektu Stav nabídky [persistentní položka]")
-  public String getOfferStateID() {
-    return offerStateID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setOfferStateID(String offerStateID) {
-    this.offerStateID = offerStateID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Issuedofferstatechange planDateDATE(DateTime planDateDATE) {
-    this.planDateDATE = planDateDATE;
+  public Issuedofferstatechange classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Plánovaný termín [persistentní položka]
-   * @return planDateDATE
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Plánovaný termín [persistentní položka]")
-  public DateTime getPlanDateDATE() {
-    return planDateDATE;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPlanDateDATE(DateTime planDateDATE) {
-    this.planDateDATE = planDateDATE;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Issuedofferstatechange realDateDATE(DateTime realDateDATE) {
-    this.realDateDATE = realDateDATE;
+  public Issuedofferstatechange objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Reálný termín [persistentní položka]
-   * @return realDateDATE
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Reálný termín [persistentní položka]")
-  public DateTime getRealDateDATE() {
-    return realDateDATE;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setRealDateDATE(DateTime realDateDATE) {
-    this.realDateDATE = realDateDATE;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Issuedofferstatechange actualSolverID(String actualSolverID) {
-    this.actualSolverID = actualSolverID;
+  public Issuedofferstatechange issuedofferId(String issuedofferId) {
+    this.issuedofferId = issuedofferId;
     return this;
   }
 
    /**
-   * Řešitel; ID objektu Uživatel [persistentní položka]
-   * @return actualSolverID
+   * nabídka; id objektu nabídka vydaná [persistentní položka]
+   * @return issuedofferId
   **/
-  @ApiModelProperty(example = "null", value = "Řešitel; ID objektu Uživatel [persistentní položka]")
-  public String getActualSolverID() {
-    return actualSolverID;
+  @ApiModelProperty(example = "null", value = "nabídka; id objektu nabídka vydaná [persistentní položka]")
+  public String getIssuedofferId() {
+    return issuedofferId;
   }
 
-  public void setActualSolverID(String actualSolverID) {
-    this.actualSolverID = actualSolverID;
+  public void setIssuedofferId(String issuedofferId) {
+    this.issuedofferId = issuedofferId;
+  }
+
+  public Issuedofferstatechange offerstateId(String offerstateId) {
+    this.offerstateId = offerstateId;
+    return this;
+  }
+
+   /**
+   * stav nabídky; id objektu stav nabídky [persistentní položka]
+   * @return offerstateId
+  **/
+  @ApiModelProperty(example = "null", value = "stav nabídky; id objektu stav nabídky [persistentní položka]")
+  public String getOfferstateId() {
+    return offerstateId;
+  }
+
+  public void setOfferstateId(String offerstateId) {
+    this.offerstateId = offerstateId;
+  }
+
+  public Issuedofferstatechange plandatedate(DateTime plandatedate) {
+    this.plandatedate = plandatedate;
+    return this;
+  }
+
+   /**
+   * plánovaný termín [persistentní položka]
+   * @return plandatedate
+  **/
+  @ApiModelProperty(example = "null", value = "plánovaný termín [persistentní položka]")
+  public DateTime getPlandatedate() {
+    return plandatedate;
+  }
+
+  public void setPlandatedate(DateTime plandatedate) {
+    this.plandatedate = plandatedate;
+  }
+
+  public Issuedofferstatechange realdatedate(DateTime realdatedate) {
+    this.realdatedate = realdatedate;
+    return this;
+  }
+
+   /**
+   * reálný termín [persistentní položka]
+   * @return realdatedate
+  **/
+  @ApiModelProperty(example = "null", value = "reálný termín [persistentní položka]")
+  public DateTime getRealdatedate() {
+    return realdatedate;
+  }
+
+  public void setRealdatedate(DateTime realdatedate) {
+    this.realdatedate = realdatedate;
+  }
+
+  public Issuedofferstatechange actualsolverId(String actualsolverId) {
+    this.actualsolverId = actualsolverId;
+    return this;
+  }
+
+   /**
+   * Řešitel; id objektu uživatel [persistentní položka]
+   * @return actualsolverId
+  **/
+  @ApiModelProperty(example = "null", value = "Řešitel; id objektu uživatel [persistentní položka]")
+  public String getActualsolverId() {
+    return actualsolverId;
+  }
+
+  public void setActualsolverId(String actualsolverId) {
+    this.actualsolverId = actualsolverId;
   }
 
 
@@ -200,20 +236,20 @@ public class Issuedofferstatechange   {
       return false;
     }
     Issuedofferstatechange issuedofferstatechange = (Issuedofferstatechange) o;
-    return Objects.equals(this.displayName, issuedofferstatechange.displayName) &&
-        Objects.equals(this.ID, issuedofferstatechange.ID) &&
-        Objects.equals(this.classID, issuedofferstatechange.classID) &&
-        Objects.equals(this.objVersion, issuedofferstatechange.objVersion) &&
-        Objects.equals(this.issuedOfferID, issuedofferstatechange.issuedOfferID) &&
-        Objects.equals(this.offerStateID, issuedofferstatechange.offerStateID) &&
-        Objects.equals(this.planDateDATE, issuedofferstatechange.planDateDATE) &&
-        Objects.equals(this.realDateDATE, issuedofferstatechange.realDateDATE) &&
-        Objects.equals(this.actualSolverID, issuedofferstatechange.actualSolverID);
+    return Objects.equals(this.displayname, issuedofferstatechange.displayname) &&
+        Objects.equals(this.id, issuedofferstatechange.id) &&
+        Objects.equals(this.classid, issuedofferstatechange.classid) &&
+        Objects.equals(this.objversion, issuedofferstatechange.objversion) &&
+        Objects.equals(this.issuedofferId, issuedofferstatechange.issuedofferId) &&
+        Objects.equals(this.offerstateId, issuedofferstatechange.offerstateId) &&
+        Objects.equals(this.plandatedate, issuedofferstatechange.plandatedate) &&
+        Objects.equals(this.realdatedate, issuedofferstatechange.realdatedate) &&
+        Objects.equals(this.actualsolverId, issuedofferstatechange.actualsolverId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, issuedOfferID, offerStateID, planDateDATE, realDateDATE, actualSolverID);
+    return Objects.hash(displayname, id, classid, objversion, issuedofferId, offerstateId, plandatedate, realdatedate, actualsolverId);
   }
 
   @Override
@@ -221,15 +257,15 @@ public class Issuedofferstatechange   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Issuedofferstatechange {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    issuedOfferID: ").append(toIndentedString(issuedOfferID)).append("\n");
-    sb.append("    offerStateID: ").append(toIndentedString(offerStateID)).append("\n");
-    sb.append("    planDateDATE: ").append(toIndentedString(planDateDATE)).append("\n");
-    sb.append("    realDateDATE: ").append(toIndentedString(realDateDATE)).append("\n");
-    sb.append("    actualSolverID: ").append(toIndentedString(actualSolverID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    issuedofferId: ").append(toIndentedString(issuedofferId)).append("\n");
+    sb.append("    offerstateId: ").append(toIndentedString(offerstateId)).append("\n");
+    sb.append("    plandatedate: ").append(toIndentedString(plandatedate)).append("\n");
+    sb.append("    realdatedate: ").append(toIndentedString(realdatedate)).append("\n");
+    sb.append("    actualsolverId: ").append(toIndentedString(actualsolverId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

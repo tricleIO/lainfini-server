@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,403 +37,457 @@ import java.util.Objects;
 /**
  * Loanschedulerow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Loanschedulerow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("DueDate$DATE")
-  private DateTime dueDateDATE = null;
+  @SerializedName("duedate$date")
+  private DateTime duedatedate = null;
 
-  @SerializedName("PrincipalTAmount")
-  private Double principalTAmount = null;
+  @SerializedName("principaltamount")
+  private Double principaltamount = null;
 
-  @SerializedName("LocalPrincipalTAmount")
-  private Double localPrincipalTAmount = null;
+  @SerializedName("localprincipaltamount")
+  private Double localprincipaltamount = null;
 
-  @SerializedName("InterestTAmount")
-  private Double interestTAmount = null;
+  @SerializedName("interesttamount")
+  private Double interesttamount = null;
 
-  @SerializedName("LocalInterestTAmount")
-  private Double localInterestTAmount = null;
+  @SerializedName("localinteresttamount")
+  private Double localinteresttamount = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("PayDoc_ID")
-  private String payDocID = null;
+  @SerializedName("paydoc_id")
+  private String paydocId = null;
 
-  @SerializedName("InterestPayDoc_ID")
-  private String interestPayDocID = null;
+  @SerializedName("interestpaydoc_id")
+  private String interestpaydocId = null;
 
-  @SerializedName("InterestParts")
-  private List<Loanscheduleinterestpart> interestParts = new ArrayList<Loanscheduleinterestpart>();
+  @SerializedName("interestparts")
+  private List<Loanscheduleinterestpart> interestparts = new ArrayList<Loanscheduleinterestpart>();
 
-  @SerializedName("PrincipalPayDocs")
-  private List<Loanscheduleprincipalpaydoc> principalPayDocs = new ArrayList<Loanscheduleprincipalpaydoc>();
+  @SerializedName("principalpaydocs")
+  private List<Loanscheduleprincipalpaydoc> principalpaydocs = new ArrayList<Loanscheduleprincipalpaydoc>();
 
-  @SerializedName("PrincipalPayDocDisplay")
-  private String principalPayDocDisplay = null;
+  @SerializedName("principalpaydocdisplay")
+  private String principalpaydocdisplay = null;
 
-  @SerializedName("PaidAmount")
-  private Double paidAmount = null;
+  @SerializedName("paidamount")
+  private Double paidamount = null;
 
-  @SerializedName("LocalPaidAmount")
-  private Double localPaidAmount = null;
+  @SerializedName("localpaidamount")
+  private Double localpaidamount = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Splátkový kalendář [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Splátkový kalendář [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Loanschedulerow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Loanschedulerow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Loanschedulerow dueDateDATE(DateTime dueDateDATE) {
-    this.dueDateDATE = dueDateDATE;
+  public Loanschedulerow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Datum splatnosti [persistentní položka]
-   * @return dueDateDATE
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Datum splatnosti [persistentní položka]")
-  public DateTime getDueDateDATE() {
-    return dueDateDATE;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDueDateDATE(DateTime dueDateDATE) {
-    this.dueDateDATE = dueDateDATE;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Loanschedulerow principalTAmount(Double principalTAmount) {
-    this.principalTAmount = principalTAmount;
+  public Loanschedulerow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Splácená jistina [persistentní položka]
-   * @return principalTAmount
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Splácená jistina [persistentní položka]")
-  public Double getPrincipalTAmount() {
-    return principalTAmount;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPrincipalTAmount(Double principalTAmount) {
-    this.principalTAmount = principalTAmount;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Loanschedulerow localPrincipalTAmount(Double localPrincipalTAmount) {
-    this.localPrincipalTAmount = localPrincipalTAmount;
+  public Loanschedulerow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Splácená jistina lok. [persistentní položka]
-   * @return localPrincipalTAmount
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Splácená jistina lok. [persistentní položka]")
-  public Double getLocalPrincipalTAmount() {
-    return localPrincipalTAmount;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setLocalPrincipalTAmount(Double localPrincipalTAmount) {
-    this.localPrincipalTAmount = localPrincipalTAmount;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Loanschedulerow interestTAmount(Double interestTAmount) {
-    this.interestTAmount = interestTAmount;
+  public Loanschedulerow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Splácený úrok [persistentní položka]
-   * @return interestTAmount
+   * vlastník; id objektu splátkový kalendář [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Splácený úrok [persistentní položka]")
-  public Double getInterestTAmount() {
-    return interestTAmount;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu splátkový kalendář [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setInterestTAmount(Double interestTAmount) {
-    this.interestTAmount = interestTAmount;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Loanschedulerow localInterestTAmount(Double localInterestTAmount) {
-    this.localInterestTAmount = localInterestTAmount;
+  public Loanschedulerow posindex(Integer posindex) {
+    this.posindex = posindex;
     return this;
   }
 
    /**
-   * Splácený úrok lok. [persistentní položka]
-   * @return localInterestTAmount
+   * pořadí [persistentní položka]
+   * @return posindex
   **/
-  @ApiModelProperty(example = "null", value = "Splácený úrok lok. [persistentní položka]")
-  public Double getLocalInterestTAmount() {
-    return localInterestTAmount;
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
   }
 
-  public void setLocalInterestTAmount(Double localInterestTAmount) {
-    this.localInterestTAmount = localInterestTAmount;
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
-  public Loanschedulerow divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Loanschedulerow duedatedate(DateTime duedatedate) {
+    this.duedatedate = duedatedate;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * datum splatnosti [persistentní položka]
+   * @return duedatedate
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "datum splatnosti [persistentní položka]")
+  public DateTime getDuedatedate() {
+    return duedatedate;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDuedatedate(DateTime duedatedate) {
+    this.duedatedate = duedatedate;
   }
 
-  public Loanschedulerow busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Loanschedulerow principaltamount(Double principaltamount) {
+    this.principaltamount = principaltamount;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * splácená jistina [persistentní položka]
+   * @return principaltamount
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "splácená jistina [persistentní položka]")
+  public Double getPrincipaltamount() {
+    return principaltamount;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setPrincipaltamount(Double principaltamount) {
+    this.principaltamount = principaltamount;
   }
 
-  public Loanschedulerow busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Loanschedulerow localprincipaltamount(Double localprincipaltamount) {
+    this.localprincipaltamount = localprincipaltamount;
     return this;
   }
 
    /**
-   * Obch.případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * splácená jistina lok. [persistentní položka]
+   * @return localprincipaltamount
   **/
-  @ApiModelProperty(example = "null", value = "Obch.případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "splácená jistina lok. [persistentní položka]")
+  public Double getLocalprincipaltamount() {
+    return localprincipaltamount;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setLocalprincipaltamount(Double localprincipaltamount) {
+    this.localprincipaltamount = localprincipaltamount;
   }
 
-  public Loanschedulerow payDocID(String payDocID) {
-    this.payDocID = payDocID;
+  public Loanschedulerow interesttamount(Double interesttamount) {
+    this.interesttamount = interesttamount;
     return this;
   }
 
    /**
-   * Předpis splátky; ID objektu Ostatní příjem [persistentní položka]
-   * @return payDocID
+   * splácený úrok [persistentní položka]
+   * @return interesttamount
   **/
-  @ApiModelProperty(example = "null", value = "Předpis splátky; ID objektu Ostatní příjem [persistentní položka]")
-  public String getPayDocID() {
-    return payDocID;
+  @ApiModelProperty(example = "null", value = "splácený úrok [persistentní položka]")
+  public Double getInteresttamount() {
+    return interesttamount;
   }
 
-  public void setPayDocID(String payDocID) {
-    this.payDocID = payDocID;
+  public void setInteresttamount(Double interesttamount) {
+    this.interesttamount = interesttamount;
   }
 
-  public Loanschedulerow interestPayDocID(String interestPayDocID) {
-    this.interestPayDocID = interestPayDocID;
+  public Loanschedulerow localinteresttamount(Double localinteresttamount) {
+    this.localinteresttamount = localinteresttamount;
     return this;
   }
 
    /**
-   * Zaúčtování platby; ID objektu Interní doklad [persistentní položka]
-   * @return interestPayDocID
+   * splácený úrok lok. [persistentní položka]
+   * @return localinteresttamount
   **/
-  @ApiModelProperty(example = "null", value = "Zaúčtování platby; ID objektu Interní doklad [persistentní položka]")
-  public String getInterestPayDocID() {
-    return interestPayDocID;
+  @ApiModelProperty(example = "null", value = "splácený úrok lok. [persistentní položka]")
+  public Double getLocalinteresttamount() {
+    return localinteresttamount;
   }
 
-  public void setInterestPayDocID(String interestPayDocID) {
-    this.interestPayDocID = interestPayDocID;
+  public void setLocalinteresttamount(Double localinteresttamount) {
+    this.localinteresttamount = localinteresttamount;
   }
 
-  public Loanschedulerow interestParts(List<Loanscheduleinterestpart> interestParts) {
-    this.interestParts = interestParts;
-    return this;
-  }
-
-  public Loanschedulerow addInterestPartsItem(Loanscheduleinterestpart interestPartsItem) {
-    this.interestParts.add(interestPartsItem);
+  public Loanschedulerow divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Předpisy úroků; kolekce BO Předpis úroků [nepersistentní položka]
-   * @return interestParts
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Předpisy úroků; kolekce BO Předpis úroků [nepersistentní položka]")
-  public List<Loanscheduleinterestpart> getInterestParts() {
-    return interestParts;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setInterestParts(List<Loanscheduleinterestpart> interestParts) {
-    this.interestParts = interestParts;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Loanschedulerow principalPayDocs(List<Loanscheduleprincipalpaydoc> principalPayDocs) {
-    this.principalPayDocs = principalPayDocs;
-    return this;
-  }
-
-  public Loanschedulerow addPrincipalPayDocsItem(Loanscheduleprincipalpaydoc principalPayDocsItem) {
-    this.principalPayDocs.add(principalPayDocsItem);
+  public Loanschedulerow busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Platby jistiny; kolekce BO Platby jistiny [nepersistentní položka]
-   * @return principalPayDocs
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Platby jistiny; kolekce BO Platby jistiny [nepersistentní položka]")
-  public List<Loanscheduleprincipalpaydoc> getPrincipalPayDocs() {
-    return principalPayDocs;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setPrincipalPayDocs(List<Loanscheduleprincipalpaydoc> principalPayDocs) {
-    this.principalPayDocs = principalPayDocs;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-   /**
-   * Platby jistiny - popis
-   * @return principalPayDocDisplay
-  **/
-  @ApiModelProperty(example = "null", value = "Platby jistiny - popis")
-  public String getPrincipalPayDocDisplay() {
-    return principalPayDocDisplay;
-  }
-
-  public Loanschedulerow paidAmount(Double paidAmount) {
-    this.paidAmount = paidAmount;
+  public Loanschedulerow bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Zaplacená částka [persistentní položka]
-   * @return paidAmount
+   * obch.případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Zaplacená částka [persistentní položka]")
-  public Double getPaidAmount() {
-    return paidAmount;
+  @ApiModelProperty(example = "null", value = "obch.případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setPaidAmount(Double paidAmount) {
-    this.paidAmount = paidAmount;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Loanschedulerow localPaidAmount(Double localPaidAmount) {
-    this.localPaidAmount = localPaidAmount;
+  public Loanschedulerow paydocId(String paydocId) {
+    this.paydocId = paydocId;
     return this;
   }
 
    /**
-   * Zaplacená částka lok. [persistentní položka]
-   * @return localPaidAmount
+   * předpis splátky; id objektu ostatní příjem [persistentní položka]
+   * @return paydocId
   **/
-  @ApiModelProperty(example = "null", value = "Zaplacená částka lok. [persistentní položka]")
-  public Double getLocalPaidAmount() {
-    return localPaidAmount;
+  @ApiModelProperty(example = "null", value = "předpis splátky; id objektu ostatní příjem [persistentní položka]")
+  public String getPaydocId() {
+    return paydocId;
   }
 
-  public void setLocalPaidAmount(Double localPaidAmount) {
-    this.localPaidAmount = localPaidAmount;
+  public void setPaydocId(String paydocId) {
+    this.paydocId = paydocId;
+  }
+
+  public Loanschedulerow interestpaydocId(String interestpaydocId) {
+    this.interestpaydocId = interestpaydocId;
+    return this;
+  }
+
+   /**
+   * zaúčtování platby; id objektu interní doklad [persistentní položka]
+   * @return interestpaydocId
+  **/
+  @ApiModelProperty(example = "null", value = "zaúčtování platby; id objektu interní doklad [persistentní položka]")
+  public String getInterestpaydocId() {
+    return interestpaydocId;
+  }
+
+  public void setInterestpaydocId(String interestpaydocId) {
+    this.interestpaydocId = interestpaydocId;
+  }
+
+  public Loanschedulerow interestparts(List<Loanscheduleinterestpart> interestparts) {
+    this.interestparts = interestparts;
+    return this;
+  }
+
+  public Loanschedulerow addInterestpartsItem(Loanscheduleinterestpart interestpartsItem) {
+    this.interestparts.add(interestpartsItem);
+    return this;
+  }
+
+   /**
+   * předpisy úroků; kolekce bo předpis úroků [nepersistentní položka]
+   * @return interestparts
+  **/
+  @ApiModelProperty(example = "null", value = "předpisy úroků; kolekce bo předpis úroků [nepersistentní položka]")
+  public List<Loanscheduleinterestpart> getInterestparts() {
+    return interestparts;
+  }
+
+  public void setInterestparts(List<Loanscheduleinterestpart> interestparts) {
+    this.interestparts = interestparts;
+  }
+
+  public Loanschedulerow principalpaydocs(List<Loanscheduleprincipalpaydoc> principalpaydocs) {
+    this.principalpaydocs = principalpaydocs;
+    return this;
+  }
+
+  public Loanschedulerow addPrincipalpaydocsItem(Loanscheduleprincipalpaydoc principalpaydocsItem) {
+    this.principalpaydocs.add(principalpaydocsItem);
+    return this;
+  }
+
+   /**
+   * platby jistiny; kolekce bo platby jistiny [nepersistentní položka]
+   * @return principalpaydocs
+  **/
+  @ApiModelProperty(example = "null", value = "platby jistiny; kolekce bo platby jistiny [nepersistentní položka]")
+  public List<Loanscheduleprincipalpaydoc> getPrincipalpaydocs() {
+    return principalpaydocs;
+  }
+
+  public void setPrincipalpaydocs(List<Loanscheduleprincipalpaydoc> principalpaydocs) {
+    this.principalpaydocs = principalpaydocs;
+  }
+
+  public Loanschedulerow principalpaydocdisplay(String principalpaydocdisplay) {
+    this.principalpaydocdisplay = principalpaydocdisplay;
+    return this;
+  }
+
+   /**
+   * platby jistiny - popis
+   * @return principalpaydocdisplay
+  **/
+  @ApiModelProperty(example = "null", value = "platby jistiny - popis")
+  public String getPrincipalpaydocdisplay() {
+    return principalpaydocdisplay;
+  }
+
+  public void setPrincipalpaydocdisplay(String principalpaydocdisplay) {
+    this.principalpaydocdisplay = principalpaydocdisplay;
+  }
+
+  public Loanschedulerow paidamount(Double paidamount) {
+    this.paidamount = paidamount;
+    return this;
+  }
+
+   /**
+   * zaplacená částka [persistentní položka]
+   * @return paidamount
+  **/
+  @ApiModelProperty(example = "null", value = "zaplacená částka [persistentní položka]")
+  public Double getPaidamount() {
+    return paidamount;
+  }
+
+  public void setPaidamount(Double paidamount) {
+    this.paidamount = paidamount;
+  }
+
+  public Loanschedulerow localpaidamount(Double localpaidamount) {
+    this.localpaidamount = localpaidamount;
+    return this;
+  }
+
+   /**
+   * zaplacená částka lok. [persistentní položka]
+   * @return localpaidamount
+  **/
+  @ApiModelProperty(example = "null", value = "zaplacená částka lok. [persistentní položka]")
+  public Double getLocalpaidamount() {
+    return localpaidamount;
+  }
+
+  public void setLocalpaidamount(Double localpaidamount) {
+    this.localpaidamount = localpaidamount;
   }
 
 
@@ -446,32 +500,32 @@ public class Loanschedulerow   {
       return false;
     }
     Loanschedulerow loanschedulerow = (Loanschedulerow) o;
-    return Objects.equals(this.displayName, loanschedulerow.displayName) &&
-        Objects.equals(this.ID, loanschedulerow.ID) &&
-        Objects.equals(this.classID, loanschedulerow.classID) &&
-        Objects.equals(this.objVersion, loanschedulerow.objVersion) &&
-        Objects.equals(this.parentID, loanschedulerow.parentID) &&
-        Objects.equals(this.posIndex, loanschedulerow.posIndex) &&
-        Objects.equals(this.dueDateDATE, loanschedulerow.dueDateDATE) &&
-        Objects.equals(this.principalTAmount, loanschedulerow.principalTAmount) &&
-        Objects.equals(this.localPrincipalTAmount, loanschedulerow.localPrincipalTAmount) &&
-        Objects.equals(this.interestTAmount, loanschedulerow.interestTAmount) &&
-        Objects.equals(this.localInterestTAmount, loanschedulerow.localInterestTAmount) &&
-        Objects.equals(this.divisionID, loanschedulerow.divisionID) &&
-        Objects.equals(this.busOrderID, loanschedulerow.busOrderID) &&
-        Objects.equals(this.busTransactionID, loanschedulerow.busTransactionID) &&
-        Objects.equals(this.payDocID, loanschedulerow.payDocID) &&
-        Objects.equals(this.interestPayDocID, loanschedulerow.interestPayDocID) &&
-        Objects.equals(this.interestParts, loanschedulerow.interestParts) &&
-        Objects.equals(this.principalPayDocs, loanschedulerow.principalPayDocs) &&
-        Objects.equals(this.principalPayDocDisplay, loanschedulerow.principalPayDocDisplay) &&
-        Objects.equals(this.paidAmount, loanschedulerow.paidAmount) &&
-        Objects.equals(this.localPaidAmount, loanschedulerow.localPaidAmount);
+    return Objects.equals(this.displayname, loanschedulerow.displayname) &&
+        Objects.equals(this.id, loanschedulerow.id) &&
+        Objects.equals(this.classid, loanschedulerow.classid) &&
+        Objects.equals(this.objversion, loanschedulerow.objversion) &&
+        Objects.equals(this.parentId, loanschedulerow.parentId) &&
+        Objects.equals(this.posindex, loanschedulerow.posindex) &&
+        Objects.equals(this.duedatedate, loanschedulerow.duedatedate) &&
+        Objects.equals(this.principaltamount, loanschedulerow.principaltamount) &&
+        Objects.equals(this.localprincipaltamount, loanschedulerow.localprincipaltamount) &&
+        Objects.equals(this.interesttamount, loanschedulerow.interesttamount) &&
+        Objects.equals(this.localinteresttamount, loanschedulerow.localinteresttamount) &&
+        Objects.equals(this.divisionId, loanschedulerow.divisionId) &&
+        Objects.equals(this.busorderId, loanschedulerow.busorderId) &&
+        Objects.equals(this.bustransactionId, loanschedulerow.bustransactionId) &&
+        Objects.equals(this.paydocId, loanschedulerow.paydocId) &&
+        Objects.equals(this.interestpaydocId, loanschedulerow.interestpaydocId) &&
+        Objects.equals(this.interestparts, loanschedulerow.interestparts) &&
+        Objects.equals(this.principalpaydocs, loanschedulerow.principalpaydocs) &&
+        Objects.equals(this.principalpaydocdisplay, loanschedulerow.principalpaydocdisplay) &&
+        Objects.equals(this.paidamount, loanschedulerow.paidamount) &&
+        Objects.equals(this.localpaidamount, loanschedulerow.localpaidamount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, dueDateDATE, principalTAmount, localPrincipalTAmount, interestTAmount, localInterestTAmount, divisionID, busOrderID, busTransactionID, payDocID, interestPayDocID, interestParts, principalPayDocs, principalPayDocDisplay, paidAmount, localPaidAmount);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, duedatedate, principaltamount, localprincipaltamount, interesttamount, localinteresttamount, divisionId, busorderId, bustransactionId, paydocId, interestpaydocId, interestparts, principalpaydocs, principalpaydocdisplay, paidamount, localpaidamount);
   }
 
   @Override
@@ -479,27 +533,27 @@ public class Loanschedulerow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Loanschedulerow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    dueDateDATE: ").append(toIndentedString(dueDateDATE)).append("\n");
-    sb.append("    principalTAmount: ").append(toIndentedString(principalTAmount)).append("\n");
-    sb.append("    localPrincipalTAmount: ").append(toIndentedString(localPrincipalTAmount)).append("\n");
-    sb.append("    interestTAmount: ").append(toIndentedString(interestTAmount)).append("\n");
-    sb.append("    localInterestTAmount: ").append(toIndentedString(localInterestTAmount)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    payDocID: ").append(toIndentedString(payDocID)).append("\n");
-    sb.append("    interestPayDocID: ").append(toIndentedString(interestPayDocID)).append("\n");
-    sb.append("    interestParts: ").append(toIndentedString(interestParts)).append("\n");
-    sb.append("    principalPayDocs: ").append(toIndentedString(principalPayDocs)).append("\n");
-    sb.append("    principalPayDocDisplay: ").append(toIndentedString(principalPayDocDisplay)).append("\n");
-    sb.append("    paidAmount: ").append(toIndentedString(paidAmount)).append("\n");
-    sb.append("    localPaidAmount: ").append(toIndentedString(localPaidAmount)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    duedatedate: ").append(toIndentedString(duedatedate)).append("\n");
+    sb.append("    principaltamount: ").append(toIndentedString(principaltamount)).append("\n");
+    sb.append("    localprincipaltamount: ").append(toIndentedString(localprincipaltamount)).append("\n");
+    sb.append("    interesttamount: ").append(toIndentedString(interesttamount)).append("\n");
+    sb.append("    localinteresttamount: ").append(toIndentedString(localinteresttamount)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    paydocId: ").append(toIndentedString(paydocId)).append("\n");
+    sb.append("    interestpaydocId: ").append(toIndentedString(interestpaydocId)).append("\n");
+    sb.append("    interestparts: ").append(toIndentedString(interestparts)).append("\n");
+    sb.append("    principalpaydocs: ").append(toIndentedString(principalpaydocs)).append("\n");
+    sb.append("    principalpaydocdisplay: ").append(toIndentedString(principalpaydocdisplay)).append("\n");
+    sb.append("    paidamount: ").append(toIndentedString(paidamount)).append("\n");
+    sb.append("    localpaidamount: ").append(toIndentedString(localpaidamount)).append("\n");
     sb.append("}");
     return sb.toString();
   }

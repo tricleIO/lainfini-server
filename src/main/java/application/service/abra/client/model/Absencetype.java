@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,93 +34,129 @@ import java.util.Objects;
 /**
  * Absencetype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Absencetype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("AbsenceBaseType")
-  private Integer absenceBaseType = null;
+  @SerializedName("absencebasetype")
+  private Integer absencebasetype = null;
 
-  @SerializedName("GiveCalendarDays")
-  private Boolean giveCalendarDays = null;
+  @SerializedName("givecalendardays")
+  private Boolean givecalendardays = null;
 
-  @SerializedName("NoEvidenceState")
-  private Boolean noEvidenceState = null;
+  @SerializedName("noevidencestate")
+  private Boolean noevidencestate = null;
 
-  @SerializedName("NoCalculation")
-  private Boolean noCalculation = null;
+  @SerializedName("nocalculation")
+  private Boolean nocalculation = null;
 
-  @SerializedName("ExTimeType")
-  private Integer exTimeType = null;
+  @SerializedName("extimetype")
+  private Integer extimetype = null;
 
-  @SerializedName("PaidFreeType")
-  private Integer paidFreeType = null;
+  @SerializedName("paidfreetype")
+  private Integer paidfreetype = null;
 
-  @SerializedName("NoInsurance")
-  private Boolean noInsurance = null;
+  @SerializedName("noinsurance")
+  private Boolean noinsurance = null;
 
-  @SerializedName("AbsenceBaseTypeText")
-  private String absenceBaseTypeText = null;
+  @SerializedName("absencebasetypetext")
+  private String absencebasetypetext = null;
 
-  @SerializedName("ExTimeTypeText")
-  private String exTimeTypeText = null;
+  @SerializedName("extimetypetext")
+  private String extimetypetext = null;
 
-  @SerializedName("PaidFreeTypeText")
-  private String paidFreeTypeText = null;
+  @SerializedName("paidfreetypetext")
+  private String paidfreetypetext = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Absencetype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Absencetype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Absencetype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Absencetype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Absencetype hidden(Boolean hidden) {
@@ -129,10 +165,10 @@ public class Absencetype   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -147,10 +183,10 @@ public class Absencetype   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -165,10 +201,10 @@ public class Absencetype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -177,184 +213,184 @@ public class Absencetype   {
     this.name = name;
   }
 
-  public Absencetype absenceBaseType(Integer absenceBaseType) {
-    this.absenceBaseType = absenceBaseType;
+  public Absencetype absencebasetype(Integer absencebasetype) {
+    this.absencebasetype = absencebasetype;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return absenceBaseType
+   * typ [persistentní položka]
+   * @return absencebasetype
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getAbsenceBaseType() {
-    return absenceBaseType;
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getAbsencebasetype() {
+    return absencebasetype;
   }
 
-  public void setAbsenceBaseType(Integer absenceBaseType) {
-    this.absenceBaseType = absenceBaseType;
+  public void setAbsencebasetype(Integer absencebasetype) {
+    this.absencebasetype = absencebasetype;
   }
 
-  public Absencetype giveCalendarDays(Boolean giveCalendarDays) {
-    this.giveCalendarDays = giveCalendarDays;
+  public Absencetype givecalendardays(Boolean givecalendardays) {
+    this.givecalendardays = givecalendardays;
     return this;
   }
 
    /**
-   * Kal. dny [persistentní položka]
-   * @return giveCalendarDays
+   * kal. dny [persistentní položka]
+   * @return givecalendardays
   **/
-  @ApiModelProperty(example = "null", value = "Kal. dny [persistentní položka]")
-  public Boolean getGiveCalendarDays() {
-    return giveCalendarDays;
+  @ApiModelProperty(example = "null", value = "kal. dny [persistentní položka]")
+  public Boolean getGivecalendardays() {
+    return givecalendardays;
   }
 
-  public void setGiveCalendarDays(Boolean giveCalendarDays) {
-    this.giveCalendarDays = giveCalendarDays;
+  public void setGivecalendardays(Boolean givecalendardays) {
+    this.givecalendardays = givecalendardays;
   }
 
-  public Absencetype noEvidenceState(Boolean noEvidenceState) {
-    this.noEvidenceState = noEvidenceState;
+  public Absencetype noevidencestate(Boolean noevidencestate) {
+    this.noevidencestate = noevidencestate;
     return this;
   }
 
    /**
-   * Mimo evid. [persistentní položka]
-   * @return noEvidenceState
+   * mimo evid. [persistentní položka]
+   * @return noevidencestate
   **/
-  @ApiModelProperty(example = "null", value = "Mimo evid. [persistentní položka]")
-  public Boolean getNoEvidenceState() {
-    return noEvidenceState;
+  @ApiModelProperty(example = "null", value = "mimo evid. [persistentní položka]")
+  public Boolean getNoevidencestate() {
+    return noevidencestate;
   }
 
-  public void setNoEvidenceState(Boolean noEvidenceState) {
-    this.noEvidenceState = noEvidenceState;
+  public void setNoevidencestate(Boolean noevidencestate) {
+    this.noevidencestate = noevidencestate;
   }
 
-  public Absencetype noCalculation(Boolean noCalculation) {
-    this.noCalculation = noCalculation;
+  public Absencetype nocalculation(Boolean nocalculation) {
+    this.nocalculation = nocalculation;
     return this;
   }
 
    /**
-   * Bez mzdy [persistentní položka]
-   * @return noCalculation
+   * bez mzdy [persistentní položka]
+   * @return nocalculation
   **/
-  @ApiModelProperty(example = "null", value = "Bez mzdy [persistentní položka]")
-  public Boolean getNoCalculation() {
-    return noCalculation;
+  @ApiModelProperty(example = "null", value = "bez mzdy [persistentní položka]")
+  public Boolean getNocalculation() {
+    return nocalculation;
   }
 
-  public void setNoCalculation(Boolean noCalculation) {
-    this.noCalculation = noCalculation;
+  public void setNocalculation(Boolean nocalculation) {
+    this.nocalculation = nocalculation;
   }
 
-  public Absencetype exTimeType(Integer exTimeType) {
-    this.exTimeType = exTimeType;
+  public Absencetype extimetype(Integer extimetype) {
+    this.extimetype = extimetype;
     return this;
   }
 
    /**
-   * Dlouhodobá nepřít. [persistentní položka]
-   * @return exTimeType
+   * dlouhodobá nepřít. [persistentní položka]
+   * @return extimetype
   **/
-  @ApiModelProperty(example = "null", value = "Dlouhodobá nepřít. [persistentní položka]")
-  public Integer getExTimeType() {
-    return exTimeType;
+  @ApiModelProperty(example = "null", value = "dlouhodobá nepřít. [persistentní položka]")
+  public Integer getExtimetype() {
+    return extimetype;
   }
 
-  public void setExTimeType(Integer exTimeType) {
-    this.exTimeType = exTimeType;
+  public void setExtimetype(Integer extimetype) {
+    this.extimetype = extimetype;
   }
 
-  public Absencetype paidFreeType(Integer paidFreeType) {
-    this.paidFreeType = paidFreeType;
+  public Absencetype paidfreetype(Integer paidfreetype) {
+    this.paidfreetype = paidfreetype;
     return this;
   }
 
    /**
-   * Kat. plac. volna [persistentní položka]
-   * @return paidFreeType
+   * kat. plac. volna [persistentní položka]
+   * @return paidfreetype
   **/
-  @ApiModelProperty(example = "null", value = "Kat. plac. volna [persistentní položka]")
-  public Integer getPaidFreeType() {
-    return paidFreeType;
+  @ApiModelProperty(example = "null", value = "kat. plac. volna [persistentní položka]")
+  public Integer getPaidfreetype() {
+    return paidfreetype;
   }
 
-  public void setPaidFreeType(Integer paidFreeType) {
-    this.paidFreeType = paidFreeType;
+  public void setPaidfreetype(Integer paidfreetype) {
+    this.paidfreetype = paidfreetype;
   }
 
-  public Absencetype noInsurance(Boolean noInsurance) {
-    this.noInsurance = noInsurance;
+  public Absencetype noinsurance(Boolean noinsurance) {
+    this.noinsurance = noinsurance;
     return this;
   }
 
    /**
-   * Bez pojištění [persistentní položka]
-   * @return noInsurance
+   * bez pojištění [persistentní položka]
+   * @return noinsurance
   **/
-  @ApiModelProperty(example = "null", value = "Bez pojištění [persistentní položka]")
-  public Boolean getNoInsurance() {
-    return noInsurance;
+  @ApiModelProperty(example = "null", value = "bez pojištění [persistentní položka]")
+  public Boolean getNoinsurance() {
+    return noinsurance;
   }
 
-  public void setNoInsurance(Boolean noInsurance) {
-    this.noInsurance = noInsurance;
+  public void setNoinsurance(Boolean noinsurance) {
+    this.noinsurance = noinsurance;
   }
 
-  public Absencetype absenceBaseTypeText(String absenceBaseTypeText) {
-    this.absenceBaseTypeText = absenceBaseTypeText;
+  public Absencetype absencebasetypetext(String absencebasetypetext) {
+    this.absencebasetypetext = absencebasetypetext;
     return this;
   }
 
    /**
-   * Typ
-   * @return absenceBaseTypeText
+   * typ
+   * @return absencebasetypetext
   **/
-  @ApiModelProperty(example = "null", value = "Typ")
-  public String getAbsenceBaseTypeText() {
-    return absenceBaseTypeText;
+  @ApiModelProperty(example = "null", value = "typ")
+  public String getAbsencebasetypetext() {
+    return absencebasetypetext;
   }
 
-  public void setAbsenceBaseTypeText(String absenceBaseTypeText) {
-    this.absenceBaseTypeText = absenceBaseTypeText;
+  public void setAbsencebasetypetext(String absencebasetypetext) {
+    this.absencebasetypetext = absencebasetypetext;
   }
 
-  public Absencetype exTimeTypeText(String exTimeTypeText) {
-    this.exTimeTypeText = exTimeTypeText;
+  public Absencetype extimetypetext(String extimetypetext) {
+    this.extimetypetext = extimetypetext;
     return this;
   }
 
    /**
-   * Dlouhodobá nepřít.
-   * @return exTimeTypeText
+   * dlouhodobá nepřít.
+   * @return extimetypetext
   **/
-  @ApiModelProperty(example = "null", value = "Dlouhodobá nepřít.")
-  public String getExTimeTypeText() {
-    return exTimeTypeText;
+  @ApiModelProperty(example = "null", value = "dlouhodobá nepřít.")
+  public String getExtimetypetext() {
+    return extimetypetext;
   }
 
-  public void setExTimeTypeText(String exTimeTypeText) {
-    this.exTimeTypeText = exTimeTypeText;
+  public void setExtimetypetext(String extimetypetext) {
+    this.extimetypetext = extimetypetext;
   }
 
-  public Absencetype paidFreeTypeText(String paidFreeTypeText) {
-    this.paidFreeTypeText = paidFreeTypeText;
+  public Absencetype paidfreetypetext(String paidfreetypetext) {
+    this.paidfreetypetext = paidfreetypetext;
     return this;
   }
 
    /**
-   * Kat. plac. volna
-   * @return paidFreeTypeText
+   * kat. plac. volna
+   * @return paidfreetypetext
   **/
-  @ApiModelProperty(example = "null", value = "Kat. plac. volna")
-  public String getPaidFreeTypeText() {
-    return paidFreeTypeText;
+  @ApiModelProperty(example = "null", value = "kat. plac. volna")
+  public String getPaidfreetypetext() {
+    return paidfreetypetext;
   }
 
-  public void setPaidFreeTypeText(String paidFreeTypeText) {
-    this.paidFreeTypeText = paidFreeTypeText;
+  public void setPaidfreetypetext(String paidfreetypetext) {
+    this.paidfreetypetext = paidfreetypetext;
   }
 
 
@@ -367,28 +403,28 @@ public class Absencetype   {
       return false;
     }
     Absencetype absencetype = (Absencetype) o;
-    return Objects.equals(this.displayName, absencetype.displayName) &&
-        Objects.equals(this.ID, absencetype.ID) &&
-        Objects.equals(this.classID, absencetype.classID) &&
-        Objects.equals(this.objVersion, absencetype.objVersion) &&
+    return Objects.equals(this.displayname, absencetype.displayname) &&
+        Objects.equals(this.id, absencetype.id) &&
+        Objects.equals(this.classid, absencetype.classid) &&
+        Objects.equals(this.objversion, absencetype.objversion) &&
         Objects.equals(this.hidden, absencetype.hidden) &&
         Objects.equals(this.code, absencetype.code) &&
         Objects.equals(this.name, absencetype.name) &&
-        Objects.equals(this.absenceBaseType, absencetype.absenceBaseType) &&
-        Objects.equals(this.giveCalendarDays, absencetype.giveCalendarDays) &&
-        Objects.equals(this.noEvidenceState, absencetype.noEvidenceState) &&
-        Objects.equals(this.noCalculation, absencetype.noCalculation) &&
-        Objects.equals(this.exTimeType, absencetype.exTimeType) &&
-        Objects.equals(this.paidFreeType, absencetype.paidFreeType) &&
-        Objects.equals(this.noInsurance, absencetype.noInsurance) &&
-        Objects.equals(this.absenceBaseTypeText, absencetype.absenceBaseTypeText) &&
-        Objects.equals(this.exTimeTypeText, absencetype.exTimeTypeText) &&
-        Objects.equals(this.paidFreeTypeText, absencetype.paidFreeTypeText);
+        Objects.equals(this.absencebasetype, absencetype.absencebasetype) &&
+        Objects.equals(this.givecalendardays, absencetype.givecalendardays) &&
+        Objects.equals(this.noevidencestate, absencetype.noevidencestate) &&
+        Objects.equals(this.nocalculation, absencetype.nocalculation) &&
+        Objects.equals(this.extimetype, absencetype.extimetype) &&
+        Objects.equals(this.paidfreetype, absencetype.paidfreetype) &&
+        Objects.equals(this.noinsurance, absencetype.noinsurance) &&
+        Objects.equals(this.absencebasetypetext, absencetype.absencebasetypetext) &&
+        Objects.equals(this.extimetypetext, absencetype.extimetypetext) &&
+        Objects.equals(this.paidfreetypetext, absencetype.paidfreetypetext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, absenceBaseType, giveCalendarDays, noEvidenceState, noCalculation, exTimeType, paidFreeType, noInsurance, absenceBaseTypeText, exTimeTypeText, paidFreeTypeText);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, absencebasetype, givecalendardays, noevidencestate, nocalculation, extimetype, paidfreetype, noinsurance, absencebasetypetext, extimetypetext, paidfreetypetext);
   }
 
   @Override
@@ -396,23 +432,23 @@ public class Absencetype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Absencetype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    absenceBaseType: ").append(toIndentedString(absenceBaseType)).append("\n");
-    sb.append("    giveCalendarDays: ").append(toIndentedString(giveCalendarDays)).append("\n");
-    sb.append("    noEvidenceState: ").append(toIndentedString(noEvidenceState)).append("\n");
-    sb.append("    noCalculation: ").append(toIndentedString(noCalculation)).append("\n");
-    sb.append("    exTimeType: ").append(toIndentedString(exTimeType)).append("\n");
-    sb.append("    paidFreeType: ").append(toIndentedString(paidFreeType)).append("\n");
-    sb.append("    noInsurance: ").append(toIndentedString(noInsurance)).append("\n");
-    sb.append("    absenceBaseTypeText: ").append(toIndentedString(absenceBaseTypeText)).append("\n");
-    sb.append("    exTimeTypeText: ").append(toIndentedString(exTimeTypeText)).append("\n");
-    sb.append("    paidFreeTypeText: ").append(toIndentedString(paidFreeTypeText)).append("\n");
+    sb.append("    absencebasetype: ").append(toIndentedString(absencebasetype)).append("\n");
+    sb.append("    givecalendardays: ").append(toIndentedString(givecalendardays)).append("\n");
+    sb.append("    noevidencestate: ").append(toIndentedString(noevidencestate)).append("\n");
+    sb.append("    nocalculation: ").append(toIndentedString(nocalculation)).append("\n");
+    sb.append("    extimetype: ").append(toIndentedString(extimetype)).append("\n");
+    sb.append("    paidfreetype: ").append(toIndentedString(paidfreetype)).append("\n");
+    sb.append("    noinsurance: ").append(toIndentedString(noinsurance)).append("\n");
+    sb.append("    absencebasetypetext: ").append(toIndentedString(absencebasetypetext)).append("\n");
+    sb.append("    extimetypetext: ").append(toIndentedString(extimetypetext)).append("\n");
+    sb.append("    paidfreetypetext: ").append(toIndentedString(paidfreetypetext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

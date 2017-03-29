@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,123 +37,159 @@ import java.util.Objects;
 /**
  * Spmnorm
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Spmnorm   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Spmnormmaterials> rows = new ArrayList<Spmnormmaterials>();
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("StoreCardCode")
-  private String storeCardCode = null;
+  @SerializedName("storecardcode")
+  private String storecardcode = null;
 
-  @SerializedName("StoreCardName")
-  private String storeCardName = null;
+  @SerializedName("storecardname")
+  private String storecardname = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("UnitQuantity")
-  private Double unitQuantity = null;
+  @SerializedName("unitquantity")
+  private Double unitquantity = null;
 
-  @SerializedName("WeightInGrams")
-  private Double weightInGrams = null;
+  @SerializedName("weightingrams")
+  private Double weightingrams = null;
 
-  @SerializedName("WeightInGrCalculated")
-  private Double weightInGrCalculated = null;
+  @SerializedName("weightingrcalculated")
+  private Double weightingrcalculated = null;
 
-  @SerializedName("UnitWeightInGrams")
-  private Double unitWeightInGrams = null;
+  @SerializedName("unitweightingrams")
+  private Double unitweightingrams = null;
 
-  @SerializedName("UnitWeightInGrCalculated")
-  private Double unitWeightInGrCalculated = null;
+  @SerializedName("unitweightingrcalculated")
+  private Double unitweightingrcalculated = null;
 
-  @SerializedName("OperationDescription")
-  private String operationDescription = null;
+  @SerializedName("operationdescription")
+  private String operationdescription = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CreatedDate$DATE")
-  private DateTime createdDateDATE = null;
+  @SerializedName("createddate$date")
+  private DateTime createddatedate = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("CorrectedDate$DATE")
-  private DateTime correctedDateDATE = null;
+  @SerializedName("correcteddate$date")
+  private DateTime correcteddatedate = null;
 
-  @SerializedName("Picture_ID")
-  private Spmnorm pictureID = null;
+  @SerializedName("picture_id")
+  private Spmnorm pictureId = null;
 
-  @SerializedName("Store_ID")
-  private String storeID = null;
+  @SerializedName("store_id")
+  private String storeId = null;
 
-  @SerializedName("CalculatedUnitPrice")
-  private Double calculatedUnitPrice = null;
+  @SerializedName("calculatedunitprice")
+  private Double calculatedunitprice = null;
 
-  @SerializedName("CalculatedPrice")
-  private Double calculatedPrice = null;
+  @SerializedName("calculatedprice")
+  private Double calculatedprice = null;
 
-  @SerializedName("Pictures")
+  @SerializedName("pictures")
   private List<Spmnormpicture> pictures = new ArrayList<Spmnormpicture>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Spmnorm displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Spmnorm id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Spmnorm classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Spmnorm objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Spmnorm rows(List<Spmnormmaterials> rows) {
@@ -167,10 +203,10 @@ public class Spmnorm   {
   }
 
    /**
-   * Řádky; kolekce BO Norma kompletace - řádek [nepersistentní položka]
+   * Řádky; kolekce bo norma kompletace - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Norma kompletace - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo norma kompletace - řádek [nepersistentní položka]")
   public List<Spmnormmaterials> getRows() {
     return rows;
   }
@@ -179,94 +215,94 @@ public class Spmnorm   {
     this.rows = rows;
   }
 
-  public Spmnorm storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Spmnorm storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Skladová karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * skladová karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "skladová karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
   }
 
-  public Spmnorm storeCardCode(String storeCardCode) {
-    this.storeCardCode = storeCardCode;
+  public Spmnorm storecardcode(String storecardcode) {
+    this.storecardcode = storecardcode;
     return this;
   }
 
    /**
-   * Skladová karta - kód
-   * @return storeCardCode
+   * skladová karta - kód
+   * @return storecardcode
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta - kód")
-  public String getStoreCardCode() {
-    return storeCardCode;
+  @ApiModelProperty(example = "null", value = "skladová karta - kód")
+  public String getStorecardcode() {
+    return storecardcode;
   }
 
-  public void setStoreCardCode(String storeCardCode) {
-    this.storeCardCode = storeCardCode;
+  public void setStorecardcode(String storecardcode) {
+    this.storecardcode = storecardcode;
   }
 
-  public Spmnorm storeCardName(String storeCardName) {
-    this.storeCardName = storeCardName;
+  public Spmnorm storecardname(String storecardname) {
+    this.storecardname = storecardname;
     return this;
   }
 
    /**
-   * Skladová karta - název
-   * @return storeCardName
+   * skladová karta - název
+   * @return storecardname
   **/
-  @ApiModelProperty(example = "null", value = "Skladová karta - název")
-  public String getStoreCardName() {
-    return storeCardName;
+  @ApiModelProperty(example = "null", value = "skladová karta - název")
+  public String getStorecardname() {
+    return storecardname;
   }
 
-  public void setStoreCardName(String storeCardName) {
-    this.storeCardName = storeCardName;
+  public void setStorecardname(String storecardname) {
+    this.storecardname = storecardname;
   }
 
-  public Spmnorm qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Spmnorm qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
   }
 
-  public Spmnorm unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Spmnorm unitrate(Double unitrate) {
+    this.unitrate = unitrate;
     return this;
   }
 
    /**
-   * Vztah
-   * @return unitRate
+   * vztah
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "vztah")
+  public Double getUnitrate() {
+    return unitrate;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
   public Spmnorm quantity(Double quantity) {
@@ -275,10 +311,10 @@ public class Spmnorm   {
   }
 
    /**
-   * Počet v jedn.se vzt.1 [persistentní položka]
+   * počet v jedn.se vzt.1 [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet v jedn.se vzt.1 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "počet v jedn.se vzt.1 [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -287,112 +323,112 @@ public class Spmnorm   {
     this.quantity = quantity;
   }
 
-  public Spmnorm unitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public Spmnorm unitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
     return this;
   }
 
    /**
-   * Počet
-   * @return unitQuantity
+   * počet
+   * @return unitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet")
-  public Double getUnitQuantity() {
-    return unitQuantity;
+  @ApiModelProperty(example = "null", value = "počet")
+  public Double getUnitquantity() {
+    return unitquantity;
   }
 
-  public void setUnitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public void setUnitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
   }
 
-  public Spmnorm weightInGrams(Double weightInGrams) {
-    this.weightInGrams = weightInGrams;
+  public Spmnorm weightingrams(Double weightingrams) {
+    this.weightingrams = weightingrams;
     return this;
   }
 
    /**
-   * Celková hmotnost v gramech
-   * @return weightInGrams
+   * celková hmotnost v gramech
+   * @return weightingrams
   **/
-  @ApiModelProperty(example = "null", value = "Celková hmotnost v gramech")
-  public Double getWeightInGrams() {
-    return weightInGrams;
+  @ApiModelProperty(example = "null", value = "celková hmotnost v gramech")
+  public Double getWeightingrams() {
+    return weightingrams;
   }
 
-  public void setWeightInGrams(Double weightInGrams) {
-    this.weightInGrams = weightInGrams;
+  public void setWeightingrams(Double weightingrams) {
+    this.weightingrams = weightingrams;
   }
 
-  public Spmnorm weightInGrCalculated(Double weightInGrCalculated) {
-    this.weightInGrCalculated = weightInGrCalculated;
+  public Spmnorm weightingrcalculated(Double weightingrcalculated) {
+    this.weightingrcalculated = weightingrcalculated;
     return this;
   }
 
    /**
-   * Celk. hmot. v gr. vypočtená
-   * @return weightInGrCalculated
+   * celk. hmot. v gr. vypočtená
+   * @return weightingrcalculated
   **/
-  @ApiModelProperty(example = "null", value = "Celk. hmot. v gr. vypočtená")
-  public Double getWeightInGrCalculated() {
-    return weightInGrCalculated;
+  @ApiModelProperty(example = "null", value = "celk. hmot. v gr. vypočtená")
+  public Double getWeightingrcalculated() {
+    return weightingrcalculated;
   }
 
-  public void setWeightInGrCalculated(Double weightInGrCalculated) {
-    this.weightInGrCalculated = weightInGrCalculated;
+  public void setWeightingrcalculated(Double weightingrcalculated) {
+    this.weightingrcalculated = weightingrcalculated;
   }
 
-  public Spmnorm unitWeightInGrams(Double unitWeightInGrams) {
-    this.unitWeightInGrams = unitWeightInGrams;
+  public Spmnorm unitweightingrams(Double unitweightingrams) {
+    this.unitweightingrams = unitweightingrams;
     return this;
   }
 
    /**
-   * Hmotnost jednotky v gramech
-   * @return unitWeightInGrams
+   * hmotnost jednotky v gramech
+   * @return unitweightingrams
   **/
-  @ApiModelProperty(example = "null", value = "Hmotnost jednotky v gramech")
-  public Double getUnitWeightInGrams() {
-    return unitWeightInGrams;
+  @ApiModelProperty(example = "null", value = "hmotnost jednotky v gramech")
+  public Double getUnitweightingrams() {
+    return unitweightingrams;
   }
 
-  public void setUnitWeightInGrams(Double unitWeightInGrams) {
-    this.unitWeightInGrams = unitWeightInGrams;
+  public void setUnitweightingrams(Double unitweightingrams) {
+    this.unitweightingrams = unitweightingrams;
   }
 
-  public Spmnorm unitWeightInGrCalculated(Double unitWeightInGrCalculated) {
-    this.unitWeightInGrCalculated = unitWeightInGrCalculated;
+  public Spmnorm unitweightingrcalculated(Double unitweightingrcalculated) {
+    this.unitweightingrcalculated = unitweightingrcalculated;
     return this;
   }
 
    /**
-   * Hmotnost jedn. v gr. vypočtená
-   * @return unitWeightInGrCalculated
+   * hmotnost jedn. v gr. vypočtená
+   * @return unitweightingrcalculated
   **/
-  @ApiModelProperty(example = "null", value = "Hmotnost jedn. v gr. vypočtená")
-  public Double getUnitWeightInGrCalculated() {
-    return unitWeightInGrCalculated;
+  @ApiModelProperty(example = "null", value = "hmotnost jedn. v gr. vypočtená")
+  public Double getUnitweightingrcalculated() {
+    return unitweightingrcalculated;
   }
 
-  public void setUnitWeightInGrCalculated(Double unitWeightInGrCalculated) {
-    this.unitWeightInGrCalculated = unitWeightInGrCalculated;
+  public void setUnitweightingrcalculated(Double unitweightingrcalculated) {
+    this.unitweightingrcalculated = unitweightingrcalculated;
   }
 
-  public Spmnorm operationDescription(String operationDescription) {
-    this.operationDescription = operationDescription;
+  public Spmnorm operationdescription(String operationdescription) {
+    this.operationdescription = operationdescription;
     return this;
   }
 
    /**
-   * Pracovní postup [persistentní položka]
-   * @return operationDescription
+   * pracovní postup [persistentní položka]
+   * @return operationdescription
   **/
-  @ApiModelProperty(example = "null", value = "Pracovní postup [persistentní položka]")
-  public String getOperationDescription() {
-    return operationDescription;
+  @ApiModelProperty(example = "null", value = "pracovní postup [persistentní položka]")
+  public String getOperationdescription() {
+    return operationdescription;
   }
 
-  public void setOperationDescription(String operationDescription) {
-    this.operationDescription = operationDescription;
+  public void setOperationdescription(String operationdescription) {
+    this.operationdescription = operationdescription;
   }
 
   public Spmnorm description(String description) {
@@ -401,10 +437,10 @@ public class Spmnorm   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -413,148 +449,148 @@ public class Spmnorm   {
     this.description = description;
   }
 
-  public Spmnorm createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Spmnorm createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Spmnorm createdDateDATE(DateTime createdDateDATE) {
-    this.createdDateDATE = createdDateDATE;
+  public Spmnorm createddatedate(DateTime createddatedate) {
+    this.createddatedate = createddatedate;
     return this;
   }
 
    /**
-   * Datum vytvoření [persistentní položka]
-   * @return createdDateDATE
+   * datum vytvoření [persistentní položka]
+   * @return createddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum vytvoření [persistentní položka]")
-  public DateTime getCreatedDateDATE() {
-    return createdDateDATE;
+  @ApiModelProperty(example = "null", value = "datum vytvoření [persistentní položka]")
+  public DateTime getCreateddatedate() {
+    return createddatedate;
   }
 
-  public void setCreatedDateDATE(DateTime createdDateDATE) {
-    this.createdDateDATE = createdDateDATE;
+  public void setCreateddatedate(DateTime createddatedate) {
+    this.createddatedate = createddatedate;
   }
 
-  public Spmnorm correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Spmnorm correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Spmnorm correctedDateDATE(DateTime correctedDateDATE) {
-    this.correctedDateDATE = correctedDateDATE;
+  public Spmnorm correcteddatedate(DateTime correcteddatedate) {
+    this.correcteddatedate = correcteddatedate;
     return this;
   }
 
    /**
-   * Datum opravy [persistentní položka]
-   * @return correctedDateDATE
+   * datum opravy [persistentní položka]
+   * @return correcteddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum opravy [persistentní položka]")
-  public DateTime getCorrectedDateDATE() {
-    return correctedDateDATE;
+  @ApiModelProperty(example = "null", value = "datum opravy [persistentní položka]")
+  public DateTime getCorrecteddatedate() {
+    return correcteddatedate;
   }
 
-  public void setCorrectedDateDATE(DateTime correctedDateDATE) {
-    this.correctedDateDATE = correctedDateDATE;
+  public void setCorrecteddatedate(DateTime correcteddatedate) {
+    this.correcteddatedate = correcteddatedate;
   }
 
-  public Spmnorm pictureID(Spmnorm pictureID) {
-    this.pictureID = pictureID;
+  public Spmnorm pictureId(Spmnorm pictureId) {
+    this.pictureId = pictureId;
     return this;
   }
 
    /**
-   * Get pictureID
-   * @return pictureID
+   * Get pictureId
+   * @return pictureId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Spmnorm getPictureID() {
-    return pictureID;
+  public Spmnorm getPictureId() {
+    return pictureId;
   }
 
-  public void setPictureID(Spmnorm pictureID) {
-    this.pictureID = pictureID;
+  public void setPictureId(Spmnorm pictureId) {
+    this.pictureId = pictureId;
   }
 
-  public Spmnorm storeID(String storeID) {
-    this.storeID = storeID;
+  public Spmnorm storeId(String storeId) {
+    this.storeId = storeId;
     return this;
   }
 
    /**
-   * Sklad; ID objektu Sklad [persistentní položka]
-   * @return storeID
+   * sklad; id objektu sklad [persistentní položka]
+   * @return storeId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad; ID objektu Sklad [persistentní položka]")
-  public String getStoreID() {
-    return storeID;
+  @ApiModelProperty(example = "null", value = "sklad; id objektu sklad [persistentní položka]")
+  public String getStoreId() {
+    return storeId;
   }
 
-  public void setStoreID(String storeID) {
-    this.storeID = storeID;
+  public void setStoreId(String storeId) {
+    this.storeId = storeId;
   }
 
-  public Spmnorm calculatedUnitPrice(Double calculatedUnitPrice) {
-    this.calculatedUnitPrice = calculatedUnitPrice;
+  public Spmnorm calculatedunitprice(Double calculatedunitprice) {
+    this.calculatedunitprice = calculatedunitprice;
     return this;
   }
 
    /**
-   * Cena jednotky
-   * @return calculatedUnitPrice
+   * cena jednotky
+   * @return calculatedunitprice
   **/
-  @ApiModelProperty(example = "null", value = "Cena jednotky")
-  public Double getCalculatedUnitPrice() {
-    return calculatedUnitPrice;
+  @ApiModelProperty(example = "null", value = "cena jednotky")
+  public Double getCalculatedunitprice() {
+    return calculatedunitprice;
   }
 
-  public void setCalculatedUnitPrice(Double calculatedUnitPrice) {
-    this.calculatedUnitPrice = calculatedUnitPrice;
+  public void setCalculatedunitprice(Double calculatedunitprice) {
+    this.calculatedunitprice = calculatedunitprice;
   }
 
-  public Spmnorm calculatedPrice(Double calculatedPrice) {
-    this.calculatedPrice = calculatedPrice;
+  public Spmnorm calculatedprice(Double calculatedprice) {
+    this.calculatedprice = calculatedprice;
     return this;
   }
 
    /**
-   * Cena [persistentní položka]
-   * @return calculatedPrice
+   * cena [persistentní položka]
+   * @return calculatedprice
   **/
-  @ApiModelProperty(example = "null", value = "Cena [persistentní položka]")
-  public Double getCalculatedPrice() {
-    return calculatedPrice;
+  @ApiModelProperty(example = "null", value = "cena [persistentní položka]")
+  public Double getCalculatedprice() {
+    return calculatedprice;
   }
 
-  public void setCalculatedPrice(Double calculatedPrice) {
-    this.calculatedPrice = calculatedPrice;
+  public void setCalculatedprice(Double calculatedprice) {
+    this.calculatedprice = calculatedprice;
   }
 
   public Spmnorm pictures(List<Spmnormpicture> pictures) {
@@ -568,10 +604,10 @@ public class Spmnorm   {
   }
 
    /**
-   * Obrázky; kolekce BO Norma kompletace - obrázek [nepersistentní položka]
+   * obrázky; kolekce bo norma kompletace - obrázek [nepersistentní položka]
    * @return pictures
   **/
-  @ApiModelProperty(example = "null", value = "Obrázky; kolekce BO Norma kompletace - obrázek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "obrázky; kolekce bo norma kompletace - obrázek [nepersistentní položka]")
   public List<Spmnormpicture> getPictures() {
     return pictures;
   }
@@ -590,38 +626,38 @@ public class Spmnorm   {
       return false;
     }
     Spmnorm spmnorm = (Spmnorm) o;
-    return Objects.equals(this.displayName, spmnorm.displayName) &&
-        Objects.equals(this.ID, spmnorm.ID) &&
-        Objects.equals(this.classID, spmnorm.classID) &&
-        Objects.equals(this.objVersion, spmnorm.objVersion) &&
+    return Objects.equals(this.displayname, spmnorm.displayname) &&
+        Objects.equals(this.id, spmnorm.id) &&
+        Objects.equals(this.classid, spmnorm.classid) &&
+        Objects.equals(this.objversion, spmnorm.objversion) &&
         Objects.equals(this.rows, spmnorm.rows) &&
-        Objects.equals(this.storeCardID, spmnorm.storeCardID) &&
-        Objects.equals(this.storeCardCode, spmnorm.storeCardCode) &&
-        Objects.equals(this.storeCardName, spmnorm.storeCardName) &&
-        Objects.equals(this.qUnit, spmnorm.qUnit) &&
-        Objects.equals(this.unitRate, spmnorm.unitRate) &&
+        Objects.equals(this.storecardId, spmnorm.storecardId) &&
+        Objects.equals(this.storecardcode, spmnorm.storecardcode) &&
+        Objects.equals(this.storecardname, spmnorm.storecardname) &&
+        Objects.equals(this.qunit, spmnorm.qunit) &&
+        Objects.equals(this.unitrate, spmnorm.unitrate) &&
         Objects.equals(this.quantity, spmnorm.quantity) &&
-        Objects.equals(this.unitQuantity, spmnorm.unitQuantity) &&
-        Objects.equals(this.weightInGrams, spmnorm.weightInGrams) &&
-        Objects.equals(this.weightInGrCalculated, spmnorm.weightInGrCalculated) &&
-        Objects.equals(this.unitWeightInGrams, spmnorm.unitWeightInGrams) &&
-        Objects.equals(this.unitWeightInGrCalculated, spmnorm.unitWeightInGrCalculated) &&
-        Objects.equals(this.operationDescription, spmnorm.operationDescription) &&
+        Objects.equals(this.unitquantity, spmnorm.unitquantity) &&
+        Objects.equals(this.weightingrams, spmnorm.weightingrams) &&
+        Objects.equals(this.weightingrcalculated, spmnorm.weightingrcalculated) &&
+        Objects.equals(this.unitweightingrams, spmnorm.unitweightingrams) &&
+        Objects.equals(this.unitweightingrcalculated, spmnorm.unitweightingrcalculated) &&
+        Objects.equals(this.operationdescription, spmnorm.operationdescription) &&
         Objects.equals(this.description, spmnorm.description) &&
-        Objects.equals(this.createdByID, spmnorm.createdByID) &&
-        Objects.equals(this.createdDateDATE, spmnorm.createdDateDATE) &&
-        Objects.equals(this.correctedByID, spmnorm.correctedByID) &&
-        Objects.equals(this.correctedDateDATE, spmnorm.correctedDateDATE) &&
-        Objects.equals(this.pictureID, spmnorm.pictureID) &&
-        Objects.equals(this.storeID, spmnorm.storeID) &&
-        Objects.equals(this.calculatedUnitPrice, spmnorm.calculatedUnitPrice) &&
-        Objects.equals(this.calculatedPrice, spmnorm.calculatedPrice) &&
+        Objects.equals(this.createdbyId, spmnorm.createdbyId) &&
+        Objects.equals(this.createddatedate, spmnorm.createddatedate) &&
+        Objects.equals(this.correctedbyId, spmnorm.correctedbyId) &&
+        Objects.equals(this.correcteddatedate, spmnorm.correcteddatedate) &&
+        Objects.equals(this.pictureId, spmnorm.pictureId) &&
+        Objects.equals(this.storeId, spmnorm.storeId) &&
+        Objects.equals(this.calculatedunitprice, spmnorm.calculatedunitprice) &&
+        Objects.equals(this.calculatedprice, spmnorm.calculatedprice) &&
         Objects.equals(this.pictures, spmnorm.pictures);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, storeCardID, storeCardCode, storeCardName, qUnit, unitRate, quantity, unitQuantity, weightInGrams, weightInGrCalculated, unitWeightInGrams, unitWeightInGrCalculated, operationDescription, description, createdByID, createdDateDATE, correctedByID, correctedDateDATE, pictureID, storeID, calculatedUnitPrice, calculatedPrice, pictures);
+    return Objects.hash(displayname, id, classid, objversion, rows, storecardId, storecardcode, storecardname, qunit, unitrate, quantity, unitquantity, weightingrams, weightingrcalculated, unitweightingrams, unitweightingrcalculated, operationdescription, description, createdbyId, createddatedate, correctedbyId, correcteddatedate, pictureId, storeId, calculatedunitprice, calculatedprice, pictures);
   }
 
   @Override
@@ -629,32 +665,32 @@ public class Spmnorm   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Spmnorm {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    storeCardCode: ").append(toIndentedString(storeCardCode)).append("\n");
-    sb.append("    storeCardName: ").append(toIndentedString(storeCardName)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    storecardcode: ").append(toIndentedString(storecardcode)).append("\n");
+    sb.append("    storecardname: ").append(toIndentedString(storecardname)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    unitQuantity: ").append(toIndentedString(unitQuantity)).append("\n");
-    sb.append("    weightInGrams: ").append(toIndentedString(weightInGrams)).append("\n");
-    sb.append("    weightInGrCalculated: ").append(toIndentedString(weightInGrCalculated)).append("\n");
-    sb.append("    unitWeightInGrams: ").append(toIndentedString(unitWeightInGrams)).append("\n");
-    sb.append("    unitWeightInGrCalculated: ").append(toIndentedString(unitWeightInGrCalculated)).append("\n");
-    sb.append("    operationDescription: ").append(toIndentedString(operationDescription)).append("\n");
+    sb.append("    unitquantity: ").append(toIndentedString(unitquantity)).append("\n");
+    sb.append("    weightingrams: ").append(toIndentedString(weightingrams)).append("\n");
+    sb.append("    weightingrcalculated: ").append(toIndentedString(weightingrcalculated)).append("\n");
+    sb.append("    unitweightingrams: ").append(toIndentedString(unitweightingrams)).append("\n");
+    sb.append("    unitweightingrcalculated: ").append(toIndentedString(unitweightingrcalculated)).append("\n");
+    sb.append("    operationdescription: ").append(toIndentedString(operationdescription)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    createdDateDATE: ").append(toIndentedString(createdDateDATE)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    correctedDateDATE: ").append(toIndentedString(correctedDateDATE)).append("\n");
-    sb.append("    pictureID: ").append(toIndentedString(pictureID)).append("\n");
-    sb.append("    storeID: ").append(toIndentedString(storeID)).append("\n");
-    sb.append("    calculatedUnitPrice: ").append(toIndentedString(calculatedUnitPrice)).append("\n");
-    sb.append("    calculatedPrice: ").append(toIndentedString(calculatedPrice)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    createddatedate: ").append(toIndentedString(createddatedate)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    correcteddatedate: ").append(toIndentedString(correcteddatedate)).append("\n");
+    sb.append("    pictureId: ").append(toIndentedString(pictureId)).append("\n");
+    sb.append("    storeId: ").append(toIndentedString(storeId)).append("\n");
+    sb.append("    calculatedunitprice: ").append(toIndentedString(calculatedunitprice)).append("\n");
+    sb.append("    calculatedprice: ").append(toIndentedString(calculatedprice)).append("\n");
     sb.append("    pictures: ").append(toIndentedString(pictures)).append("\n");
     sb.append("}");
     return sb.toString();

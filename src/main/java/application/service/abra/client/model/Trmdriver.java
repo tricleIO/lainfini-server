@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,75 +34,111 @@ import java.util.Objects;
 /**
  * Trmdriver
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Trmdriver   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Person_ID")
-  private String personID = null;
+  @SerializedName("person_id")
+  private String personId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("TRMDriverCategory_ID")
-  private String tRMDriverCategoryID = null;
+  @SerializedName("trmdrivercategory_id")
+  private String trmdrivercategoryId = null;
 
-  @SerializedName("TRMDriverClass_ID")
-  private String tRMDriverClassID = null;
+  @SerializedName("trmdriverclass_id")
+  private String trmdriverclassId = null;
 
-  @SerializedName("DriverName")
-  private String driverName = null;
+  @SerializedName("drivername")
+  private String drivername = null;
 
-  @SerializedName("DriverNumber")
-  private String driverNumber = null;
+  @SerializedName("drivernumber")
+  private String drivernumber = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Trmdriver displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Trmdriver id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Trmdriver classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Trmdriver objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Trmdriver hidden(Boolean hidden) {
@@ -111,10 +147,10 @@ public class Trmdriver   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -123,112 +159,112 @@ public class Trmdriver   {
     this.hidden = hidden;
   }
 
-  public Trmdriver personID(String personID) {
-    this.personID = personID;
+  public Trmdriver personId(String personId) {
+    this.personId = personId;
     return this;
   }
 
    /**
-   * Osoba; ID objektu Osoba [persistentní položka]
-   * @return personID
+   * osoba; id objektu osoba [persistentní položka]
+   * @return personId
   **/
-  @ApiModelProperty(example = "null", value = "Osoba; ID objektu Osoba [persistentní položka]")
-  public String getPersonID() {
-    return personID;
+  @ApiModelProperty(example = "null", value = "osoba; id objektu osoba [persistentní položka]")
+  public String getPersonId() {
+    return personId;
   }
 
-  public void setPersonID(String personID) {
-    this.personID = personID;
+  public void setPersonId(String personId) {
+    this.personId = personId;
   }
 
-  public Trmdriver divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Trmdriver divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Trmdriver tRMDriverCategoryID(String tRMDriverCategoryID) {
-    this.tRMDriverCategoryID = tRMDriverCategoryID;
+  public Trmdriver trmdrivercategoryId(String trmdrivercategoryId) {
+    this.trmdrivercategoryId = trmdrivercategoryId;
     return this;
   }
 
    /**
-   * Kategorie; ID objektu Kategorie řidiče [persistentní položka]
-   * @return tRMDriverCategoryID
+   * kategorie; id objektu kategorie řidiče [persistentní položka]
+   * @return trmdrivercategoryId
   **/
-  @ApiModelProperty(example = "null", value = "Kategorie; ID objektu Kategorie řidiče [persistentní položka]")
-  public String getTRMDriverCategoryID() {
-    return tRMDriverCategoryID;
+  @ApiModelProperty(example = "null", value = "kategorie; id objektu kategorie řidiče [persistentní položka]")
+  public String getTrmdrivercategoryId() {
+    return trmdrivercategoryId;
   }
 
-  public void setTRMDriverCategoryID(String tRMDriverCategoryID) {
-    this.tRMDriverCategoryID = tRMDriverCategoryID;
+  public void setTrmdrivercategoryId(String trmdrivercategoryId) {
+    this.trmdrivercategoryId = trmdrivercategoryId;
   }
 
-  public Trmdriver tRMDriverClassID(String tRMDriverClassID) {
-    this.tRMDriverClassID = tRMDriverClassID;
+  public Trmdriver trmdriverclassId(String trmdriverclassId) {
+    this.trmdriverclassId = trmdriverclassId;
     return this;
   }
 
    /**
-   * Třída; ID objektu Třída řidiče [persistentní položka]
-   * @return tRMDriverClassID
+   * třída; id objektu třída řidiče [persistentní položka]
+   * @return trmdriverclassId
   **/
-  @ApiModelProperty(example = "null", value = "Třída; ID objektu Třída řidiče [persistentní položka]")
-  public String getTRMDriverClassID() {
-    return tRMDriverClassID;
+  @ApiModelProperty(example = "null", value = "třída; id objektu třída řidiče [persistentní položka]")
+  public String getTrmdriverclassId() {
+    return trmdriverclassId;
   }
 
-  public void setTRMDriverClassID(String tRMDriverClassID) {
-    this.tRMDriverClassID = tRMDriverClassID;
+  public void setTrmdriverclassId(String trmdriverclassId) {
+    this.trmdriverclassId = trmdriverclassId;
   }
 
-  public Trmdriver driverName(String driverName) {
-    this.driverName = driverName;
+  public Trmdriver drivername(String drivername) {
+    this.drivername = drivername;
     return this;
   }
 
    /**
    * Řidič
-   * @return driverName
+   * @return drivername
   **/
   @ApiModelProperty(example = "null", value = "Řidič")
-  public String getDriverName() {
-    return driverName;
+  public String getDrivername() {
+    return drivername;
   }
 
-  public void setDriverName(String driverName) {
-    this.driverName = driverName;
+  public void setDrivername(String drivername) {
+    this.drivername = drivername;
   }
 
-  public Trmdriver driverNumber(String driverNumber) {
-    this.driverNumber = driverNumber;
+  public Trmdriver drivernumber(String drivernumber) {
+    this.drivernumber = drivernumber;
     return this;
   }
 
    /**
-   * Osob.číslo
-   * @return driverNumber
+   * osob.číslo
+   * @return drivernumber
   **/
-  @ApiModelProperty(example = "null", value = "Osob.číslo")
-  public String getDriverNumber() {
-    return driverNumber;
+  @ApiModelProperty(example = "null", value = "osob.číslo")
+  public String getDrivernumber() {
+    return drivernumber;
   }
 
-  public void setDriverNumber(String driverNumber) {
-    this.driverNumber = driverNumber;
+  public void setDrivernumber(String drivernumber) {
+    this.drivernumber = drivernumber;
   }
 
 
@@ -241,22 +277,22 @@ public class Trmdriver   {
       return false;
     }
     Trmdriver trmdriver = (Trmdriver) o;
-    return Objects.equals(this.displayName, trmdriver.displayName) &&
-        Objects.equals(this.ID, trmdriver.ID) &&
-        Objects.equals(this.classID, trmdriver.classID) &&
-        Objects.equals(this.objVersion, trmdriver.objVersion) &&
+    return Objects.equals(this.displayname, trmdriver.displayname) &&
+        Objects.equals(this.id, trmdriver.id) &&
+        Objects.equals(this.classid, trmdriver.classid) &&
+        Objects.equals(this.objversion, trmdriver.objversion) &&
         Objects.equals(this.hidden, trmdriver.hidden) &&
-        Objects.equals(this.personID, trmdriver.personID) &&
-        Objects.equals(this.divisionID, trmdriver.divisionID) &&
-        Objects.equals(this.tRMDriverCategoryID, trmdriver.tRMDriverCategoryID) &&
-        Objects.equals(this.tRMDriverClassID, trmdriver.tRMDriverClassID) &&
-        Objects.equals(this.driverName, trmdriver.driverName) &&
-        Objects.equals(this.driverNumber, trmdriver.driverNumber);
+        Objects.equals(this.personId, trmdriver.personId) &&
+        Objects.equals(this.divisionId, trmdriver.divisionId) &&
+        Objects.equals(this.trmdrivercategoryId, trmdriver.trmdrivercategoryId) &&
+        Objects.equals(this.trmdriverclassId, trmdriver.trmdriverclassId) &&
+        Objects.equals(this.drivername, trmdriver.drivername) &&
+        Objects.equals(this.drivernumber, trmdriver.drivernumber);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, personID, divisionID, tRMDriverCategoryID, tRMDriverClassID, driverName, driverNumber);
+    return Objects.hash(displayname, id, classid, objversion, hidden, personId, divisionId, trmdrivercategoryId, trmdriverclassId, drivername, drivernumber);
   }
 
   @Override
@@ -264,17 +300,17 @@ public class Trmdriver   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Trmdriver {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    personID: ").append(toIndentedString(personID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    tRMDriverCategoryID: ").append(toIndentedString(tRMDriverCategoryID)).append("\n");
-    sb.append("    tRMDriverClassID: ").append(toIndentedString(tRMDriverClassID)).append("\n");
-    sb.append("    driverName: ").append(toIndentedString(driverName)).append("\n");
-    sb.append("    driverNumber: ").append(toIndentedString(driverNumber)).append("\n");
+    sb.append("    personId: ").append(toIndentedString(personId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    trmdrivercategoryId: ").append(toIndentedString(trmdrivercategoryId)).append("\n");
+    sb.append("    trmdriverclassId: ").append(toIndentedString(trmdriverclassId)).append("\n");
+    sb.append("    drivername: ").append(toIndentedString(drivername)).append("\n");
+    sb.append("    drivernumber: ").append(toIndentedString(drivernumber)).append("\n");
     sb.append("}");
     return sb.toString();
   }

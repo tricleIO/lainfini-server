@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,183 +37,219 @@ import java.util.Objects;
 /**
  * Busorder
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Busorder   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Comment")
+  @SerializedName("comment")
   private String comment = null;
 
-  @SerializedName("Closed")
+  @SerializedName("closed")
   private Boolean closed = null;
 
-  @SerializedName("Date$DATE")
-  private DateTime dateDATE = null;
+  @SerializedName("date$date")
+  private DateTime datedate = null;
 
-  @SerializedName("DisplayParent")
-  private String displayParent = null;
+  @SerializedName("displayparent")
+  private String displayparent = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("PrefixCode")
-  private String prefixCode = null;
+  @SerializedName("prefixcode")
+  private String prefixcode = null;
 
-  @SerializedName("BodyCode")
-  private String bodyCode = null;
+  @SerializedName("bodycode")
+  private String bodycode = null;
 
-  @SerializedName("SuffixCode")
-  private String suffixCode = null;
+  @SerializedName("suffixcode")
+  private String suffixcode = null;
 
-  @SerializedName("PlannedEndDate$DATE")
-  private DateTime plannedEndDateDATE = null;
+  @SerializedName("plannedenddate$date")
+  private DateTime plannedenddatedate = null;
 
-  @SerializedName("Approved")
+  @SerializedName("approved")
   private Boolean approved = null;
 
-  @SerializedName("ExtendedControl")
-  private Boolean extendedControl = null;
+  @SerializedName("extendedcontrol")
+  private Boolean extendedcontrol = null;
 
-  @SerializedName("MasterSolverRole_ID")
-  private String masterSolverRoleID = null;
+  @SerializedName("mastersolverrole_id")
+  private String mastersolverroleId = null;
 
-  @SerializedName("ProcessState")
-  private Integer processState = null;
+  @SerializedName("processstate")
+  private Integer processstate = null;
 
-  @SerializedName("Priority")
+  @SerializedName("priority")
   private Integer priority = null;
 
-  @SerializedName("PlannedCostsOther")
-  private Double plannedCostsOther = null;
+  @SerializedName("plannedcostsother")
+  private Double plannedcostsother = null;
 
-  @SerializedName("PlannedRevenuesOther")
-  private Double plannedRevenuesOther = null;
+  @SerializedName("plannedrevenuesother")
+  private Double plannedrevenuesother = null;
 
-  @SerializedName("PlannedCostsTotal")
-  private Double plannedCostsTotal = null;
+  @SerializedName("plannedcoststotal")
+  private Double plannedcoststotal = null;
 
-  @SerializedName("PlannedRevenuesTotal")
-  private Double plannedRevenuesTotal = null;
+  @SerializedName("plannedrevenuestotal")
+  private Double plannedrevenuestotal = null;
 
-  @SerializedName("IssuedOffer_ID")
-  private String issuedOfferID = null;
+  @SerializedName("issuedoffer_id")
+  private String issuedofferId = null;
 
-  @SerializedName("InvoicingType")
-  private Integer invoicingType = null;
+  @SerializedName("invoicingtype")
+  private Integer invoicingtype = null;
 
-  @SerializedName("FixedAmount")
-  private Double fixedAmount = null;
+  @SerializedName("fixedamount")
+  private Double fixedamount = null;
 
-  @SerializedName("CheckActivityVsSources")
-  private Integer checkActivityVsSources = null;
+  @SerializedName("checkactivityvssources")
+  private Integer checkactivityvssources = null;
 
-  @SerializedName("FinalizationState")
-  private Double finalizationState = null;
+  @SerializedName("finalizationstate")
+  private Double finalizationstate = null;
 
-  @SerializedName("PlannedCostsAllTotal")
-  private Double plannedCostsAllTotal = null;
+  @SerializedName("plannedcostsalltotal")
+  private Double plannedcostsalltotal = null;
 
-  @SerializedName("PlannedRevenuesAllTotal")
-  private Double plannedRevenuesAllTotal = null;
+  @SerializedName("plannedrevenuesalltotal")
+  private Double plannedrevenuesalltotal = null;
 
-  @SerializedName("PlannedProfitTotal")
-  private Double plannedProfitTotal = null;
+  @SerializedName("plannedprofittotal")
+  private Double plannedprofittotal = null;
 
-  @SerializedName("PlannedProfit")
-  private Double plannedProfit = null;
+  @SerializedName("plannedprofit")
+  private Double plannedprofit = null;
 
-  @SerializedName("ProcessStateAsText")
-  private String processStateAsText = null;
+  @SerializedName("processstateastext")
+  private String processstateastext = null;
 
-  @SerializedName("InvoicingTypeAsText")
-  private String invoicingTypeAsText = null;
+  @SerializedName("invoicingtypeastext")
+  private String invoicingtypeastext = null;
 
-  @SerializedName("CheckActivityVsSourcesAsText")
-  private String checkActivityVsSourcesAsText = null;
+  @SerializedName("checkactivityvssourcesastext")
+  private String checkactivityvssourcesastext = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("ClosingDate$DATE")
-  private DateTime closingDateDATE = null;
+  @SerializedName("closingdate$date")
+  private DateTime closingdatedate = null;
 
-  @SerializedName("PlannedCostsSubTree")
-  private Double plannedCostsSubTree = null;
+  @SerializedName("plannedcostssubtree")
+  private Double plannedcostssubtree = null;
 
-  @SerializedName("PlannedRevenuesSubTree")
-  private Double plannedRevenuesSubTree = null;
+  @SerializedName("plannedrevenuessubtree")
+  private Double plannedrevenuessubtree = null;
 
-  @SerializedName("FinalizationStateSub")
-  private Double finalizationStateSub = null;
+  @SerializedName("finalizationstatesub")
+  private Double finalizationstatesub = null;
 
-  @SerializedName("Links")
+  @SerializedName("links")
   private List<Busorderlink> links = new ArrayList<Busorderlink>();
 
-  @SerializedName("CheckPoints")
-  private List<Busordercheckpoint> checkPoints = new ArrayList<Busordercheckpoint>();
+  @SerializedName("checkpoints")
+  private List<Busordercheckpoint> checkpoints = new ArrayList<Busordercheckpoint>();
 
-  @SerializedName("Sources")
+  @SerializedName("sources")
   private List<Busordersource> sources = new ArrayList<Busordersource>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Busorder displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Busorder id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Busorder classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Busorder objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Busorder hidden(Boolean hidden) {
@@ -222,10 +258,10 @@ public class Busorder   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -240,10 +276,10 @@ public class Busorder   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -258,10 +294,10 @@ public class Busorder   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -276,10 +312,10 @@ public class Busorder   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -294,10 +330,10 @@ public class Busorder   {
   }
 
    /**
-   * Poznámka
+   * poznámka
    * @return comment
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka")
+  @ApiModelProperty(example = "null", value = "poznámka")
   public String getComment() {
     return comment;
   }
@@ -312,10 +348,10 @@ public class Busorder   {
   }
 
    /**
-   * Uzavřeno [persistentní položka]
+   * uzavřeno [persistentní položka]
    * @return closed
   **/
-  @ApiModelProperty(example = "null", value = "Uzavřeno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "uzavřeno [persistentní položka]")
   public Boolean getClosed() {
     return closed;
   }
@@ -324,139 +360,148 @@ public class Busorder   {
     this.closed = closed;
   }
 
-  public Busorder dateDATE(DateTime dateDATE) {
-    this.dateDATE = dateDATE;
+  public Busorder datedate(DateTime datedate) {
+    this.datedate = datedate;
     return this;
   }
 
    /**
-   * Datum zahájení [persistentní položka]
-   * @return dateDATE
+   * datum zahájení [persistentní položka]
+   * @return datedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum zahájení [persistentní položka]")
-  public DateTime getDateDATE() {
-    return dateDATE;
+  @ApiModelProperty(example = "null", value = "datum zahájení [persistentní položka]")
+  public DateTime getDatedate() {
+    return datedate;
   }
 
-  public void setDateDATE(DateTime dateDATE) {
-    this.dateDATE = dateDATE;
+  public void setDatedate(DateTime datedate) {
+    this.datedate = datedate;
   }
 
-   /**
-   * Nadřízený(zobr.)
-   * @return displayParent
-  **/
-  @ApiModelProperty(example = "null", value = "Nadřízený(zobr.)")
-  public String getDisplayParent() {
-    return displayParent;
-  }
-
-  public Busorder divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Busorder displayparent(String displayparent) {
+    this.displayparent = displayparent;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * nadřízený(zobr.)
+   * @return displayparent
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "nadřízený(zobr.)")
+  public String getDisplayparent() {
+    return displayparent;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDisplayparent(String displayparent) {
+    this.displayparent = displayparent;
   }
 
-  public Busorder firmID(String firmID) {
-    this.firmID = firmID;
+  public Busorder divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Busorder prefixCode(String prefixCode) {
-    this.prefixCode = prefixCode;
+  public Busorder firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Prefix kódu
-   * @return prefixCode
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Prefix kódu")
-  public String getPrefixCode() {
-    return prefixCode;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setPrefixCode(String prefixCode) {
-    this.prefixCode = prefixCode;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Busorder bodyCode(String bodyCode) {
-    this.bodyCode = bodyCode;
+  public Busorder prefixcode(String prefixcode) {
+    this.prefixcode = prefixcode;
+    return this;
+  }
+
+   /**
+   * prefix kódu
+   * @return prefixcode
+  **/
+  @ApiModelProperty(example = "null", value = "prefix kódu")
+  public String getPrefixcode() {
+    return prefixcode;
+  }
+
+  public void setPrefixcode(String prefixcode) {
+    this.prefixcode = prefixcode;
+  }
+
+  public Busorder bodycode(String bodycode) {
+    this.bodycode = bodycode;
     return this;
   }
 
    /**
    * Číslo kódu
-   * @return bodyCode
+   * @return bodycode
   **/
   @ApiModelProperty(example = "null", value = "Číslo kódu")
-  public String getBodyCode() {
-    return bodyCode;
+  public String getBodycode() {
+    return bodycode;
   }
 
-  public void setBodyCode(String bodyCode) {
-    this.bodyCode = bodyCode;
+  public void setBodycode(String bodycode) {
+    this.bodycode = bodycode;
   }
 
-  public Busorder suffixCode(String suffixCode) {
-    this.suffixCode = suffixCode;
+  public Busorder suffixcode(String suffixcode) {
+    this.suffixcode = suffixcode;
     return this;
   }
 
    /**
-   * Sufix kódu
-   * @return suffixCode
+   * sufix kódu
+   * @return suffixcode
   **/
-  @ApiModelProperty(example = "null", value = "Sufix kódu")
-  public String getSuffixCode() {
-    return suffixCode;
+  @ApiModelProperty(example = "null", value = "sufix kódu")
+  public String getSuffixcode() {
+    return suffixcode;
   }
 
-  public void setSuffixCode(String suffixCode) {
-    this.suffixCode = suffixCode;
+  public void setSuffixcode(String suffixcode) {
+    this.suffixcode = suffixcode;
   }
 
-  public Busorder plannedEndDateDATE(DateTime plannedEndDateDATE) {
-    this.plannedEndDateDATE = plannedEndDateDATE;
+  public Busorder plannedenddatedate(DateTime plannedenddatedate) {
+    this.plannedenddatedate = plannedenddatedate;
     return this;
   }
 
    /**
-   * Pl.datum ukončení [persistentní položka]
-   * @return plannedEndDateDATE
+   * pl.datum ukončení [persistentní položka]
+   * @return plannedenddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Pl.datum ukončení [persistentní položka]")
-  public DateTime getPlannedEndDateDATE() {
-    return plannedEndDateDATE;
+  @ApiModelProperty(example = "null", value = "pl.datum ukončení [persistentní položka]")
+  public DateTime getPlannedenddatedate() {
+    return plannedenddatedate;
   }
 
-  public void setPlannedEndDateDATE(DateTime plannedEndDateDATE) {
-    this.plannedEndDateDATE = plannedEndDateDATE;
+  public void setPlannedenddatedate(DateTime plannedenddatedate) {
+    this.plannedenddatedate = plannedenddatedate;
   }
 
   public Busorder approved(Boolean approved) {
@@ -465,10 +510,10 @@ public class Busorder   {
   }
 
    /**
-   * Schváleno [persistentní položka]
+   * schváleno [persistentní položka]
    * @return approved
   **/
-  @ApiModelProperty(example = "null", value = "Schváleno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "schváleno [persistentní položka]")
   public Boolean getApproved() {
     return approved;
   }
@@ -477,58 +522,58 @@ public class Busorder   {
     this.approved = approved;
   }
 
-  public Busorder extendedControl(Boolean extendedControl) {
-    this.extendedControl = extendedControl;
+  public Busorder extendedcontrol(Boolean extendedcontrol) {
+    this.extendedcontrol = extendedcontrol;
     return this;
   }
 
    /**
-   * Rozšířené řízení [persistentní položka]
-   * @return extendedControl
+   * rozšířené řízení [persistentní položka]
+   * @return extendedcontrol
   **/
-  @ApiModelProperty(example = "null", value = "Rozšířené řízení [persistentní položka]")
-  public Boolean getExtendedControl() {
-    return extendedControl;
+  @ApiModelProperty(example = "null", value = "rozšířené řízení [persistentní položka]")
+  public Boolean getExtendedcontrol() {
+    return extendedcontrol;
   }
 
-  public void setExtendedControl(Boolean extendedControl) {
-    this.extendedControl = extendedControl;
+  public void setExtendedcontrol(Boolean extendedcontrol) {
+    this.extendedcontrol = extendedcontrol;
   }
 
-  public Busorder masterSolverRoleID(String masterSolverRoleID) {
-    this.masterSolverRoleID = masterSolverRoleID;
+  public Busorder mastersolverroleId(String mastersolverroleId) {
+    this.mastersolverroleId = mastersolverroleId;
     return this;
   }
 
    /**
-   * Vedoucí; ID objektu Role [persistentní položka]
-   * @return masterSolverRoleID
+   * vedoucí; id objektu role [persistentní položka]
+   * @return mastersolverroleId
   **/
-  @ApiModelProperty(example = "null", value = "Vedoucí; ID objektu Role [persistentní položka]")
-  public String getMasterSolverRoleID() {
-    return masterSolverRoleID;
+  @ApiModelProperty(example = "null", value = "vedoucí; id objektu role [persistentní položka]")
+  public String getMastersolverroleId() {
+    return mastersolverroleId;
   }
 
-  public void setMasterSolverRoleID(String masterSolverRoleID) {
-    this.masterSolverRoleID = masterSolverRoleID;
+  public void setMastersolverroleId(String mastersolverroleId) {
+    this.mastersolverroleId = mastersolverroleId;
   }
 
-  public Busorder processState(Integer processState) {
-    this.processState = processState;
+  public Busorder processstate(Integer processstate) {
+    this.processstate = processstate;
     return this;
   }
 
    /**
-   * Stav [persistentní položka]
-   * @return processState
+   * stav [persistentní položka]
+   * @return processstate
   **/
-  @ApiModelProperty(example = "null", value = "Stav [persistentní položka]")
-  public Integer getProcessState() {
-    return processState;
+  @ApiModelProperty(example = "null", value = "stav [persistentní položka]")
+  public Integer getProcessstate() {
+    return processstate;
   }
 
-  public void setProcessState(Integer processState) {
-    this.processState = processState;
+  public void setProcessstate(Integer processstate) {
+    this.processstate = processstate;
   }
 
   public Busorder priority(Integer priority) {
@@ -537,10 +582,10 @@ public class Busorder   {
   }
 
    /**
-   * Priorita [persistentní položka]
+   * priorita [persistentní položka]
    * @return priority
   **/
-  @ApiModelProperty(example = "null", value = "Priorita [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "priorita [persistentní položka]")
   public Integer getPriority() {
     return priority;
   }
@@ -549,382 +594,382 @@ public class Busorder   {
     this.priority = priority;
   }
 
-  public Busorder plannedCostsOther(Double plannedCostsOther) {
-    this.plannedCostsOther = plannedCostsOther;
+  public Busorder plannedcostsother(Double plannedcostsother) {
+    this.plannedcostsother = plannedcostsother;
     return this;
   }
 
    /**
-   * Ostatní pl.náklady [persistentní položka]
-   * @return plannedCostsOther
+   * ostatní pl.náklady [persistentní položka]
+   * @return plannedcostsother
   **/
-  @ApiModelProperty(example = "null", value = "Ostatní pl.náklady [persistentní položka]")
-  public Double getPlannedCostsOther() {
-    return plannedCostsOther;
+  @ApiModelProperty(example = "null", value = "ostatní pl.náklady [persistentní položka]")
+  public Double getPlannedcostsother() {
+    return plannedcostsother;
   }
 
-  public void setPlannedCostsOther(Double plannedCostsOther) {
-    this.plannedCostsOther = plannedCostsOther;
+  public void setPlannedcostsother(Double plannedcostsother) {
+    this.plannedcostsother = plannedcostsother;
   }
 
-  public Busorder plannedRevenuesOther(Double plannedRevenuesOther) {
-    this.plannedRevenuesOther = plannedRevenuesOther;
+  public Busorder plannedrevenuesother(Double plannedrevenuesother) {
+    this.plannedrevenuesother = plannedrevenuesother;
     return this;
   }
 
    /**
-   * Ostatní pl.výnosy [persistentní položka]
-   * @return plannedRevenuesOther
+   * ostatní pl.výnosy [persistentní položka]
+   * @return plannedrevenuesother
   **/
-  @ApiModelProperty(example = "null", value = "Ostatní pl.výnosy [persistentní položka]")
-  public Double getPlannedRevenuesOther() {
-    return plannedRevenuesOther;
+  @ApiModelProperty(example = "null", value = "ostatní pl.výnosy [persistentní položka]")
+  public Double getPlannedrevenuesother() {
+    return plannedrevenuesother;
   }
 
-  public void setPlannedRevenuesOther(Double plannedRevenuesOther) {
-    this.plannedRevenuesOther = plannedRevenuesOther;
+  public void setPlannedrevenuesother(Double plannedrevenuesother) {
+    this.plannedrevenuesother = plannedrevenuesother;
   }
 
-  public Busorder plannedCostsTotal(Double plannedCostsTotal) {
-    this.plannedCostsTotal = plannedCostsTotal;
+  public Busorder plannedcoststotal(Double plannedcoststotal) {
+    this.plannedcoststotal = plannedcoststotal;
     return this;
   }
 
    /**
-   * Pl.náklady [persistentní položka]
-   * @return plannedCostsTotal
+   * pl.náklady [persistentní položka]
+   * @return plannedcoststotal
   **/
-  @ApiModelProperty(example = "null", value = "Pl.náklady [persistentní položka]")
-  public Double getPlannedCostsTotal() {
-    return plannedCostsTotal;
+  @ApiModelProperty(example = "null", value = "pl.náklady [persistentní položka]")
+  public Double getPlannedcoststotal() {
+    return plannedcoststotal;
   }
 
-  public void setPlannedCostsTotal(Double plannedCostsTotal) {
-    this.plannedCostsTotal = plannedCostsTotal;
+  public void setPlannedcoststotal(Double plannedcoststotal) {
+    this.plannedcoststotal = plannedcoststotal;
   }
 
-  public Busorder plannedRevenuesTotal(Double plannedRevenuesTotal) {
-    this.plannedRevenuesTotal = plannedRevenuesTotal;
+  public Busorder plannedrevenuestotal(Double plannedrevenuestotal) {
+    this.plannedrevenuestotal = plannedrevenuestotal;
     return this;
   }
 
    /**
-   * Pl.výnosy [persistentní položka]
-   * @return plannedRevenuesTotal
+   * pl.výnosy [persistentní položka]
+   * @return plannedrevenuestotal
   **/
-  @ApiModelProperty(example = "null", value = "Pl.výnosy [persistentní položka]")
-  public Double getPlannedRevenuesTotal() {
-    return plannedRevenuesTotal;
+  @ApiModelProperty(example = "null", value = "pl.výnosy [persistentní položka]")
+  public Double getPlannedrevenuestotal() {
+    return plannedrevenuestotal;
   }
 
-  public void setPlannedRevenuesTotal(Double plannedRevenuesTotal) {
-    this.plannedRevenuesTotal = plannedRevenuesTotal;
+  public void setPlannedrevenuestotal(Double plannedrevenuestotal) {
+    this.plannedrevenuestotal = plannedrevenuestotal;
   }
 
-  public Busorder issuedOfferID(String issuedOfferID) {
-    this.issuedOfferID = issuedOfferID;
+  public Busorder issuedofferId(String issuedofferId) {
+    this.issuedofferId = issuedofferId;
     return this;
   }
 
    /**
-   * Nabídka vydaná; ID objektu Nabídka vydaná [persistentní položka]
-   * @return issuedOfferID
+   * nabídka vydaná; id objektu nabídka vydaná [persistentní položka]
+   * @return issuedofferId
   **/
-  @ApiModelProperty(example = "null", value = "Nabídka vydaná; ID objektu Nabídka vydaná [persistentní položka]")
-  public String getIssuedOfferID() {
-    return issuedOfferID;
+  @ApiModelProperty(example = "null", value = "nabídka vydaná; id objektu nabídka vydaná [persistentní položka]")
+  public String getIssuedofferId() {
+    return issuedofferId;
   }
 
-  public void setIssuedOfferID(String issuedOfferID) {
-    this.issuedOfferID = issuedOfferID;
+  public void setIssuedofferId(String issuedofferId) {
+    this.issuedofferId = issuedofferId;
   }
 
-  public Busorder invoicingType(Integer invoicingType) {
-    this.invoicingType = invoicingType;
+  public Busorder invoicingtype(Integer invoicingtype) {
+    this.invoicingtype = invoicingtype;
     return this;
   }
 
    /**
-   * Způsob fakturace [persistentní položka]
-   * @return invoicingType
+   * způsob fakturace [persistentní položka]
+   * @return invoicingtype
   **/
-  @ApiModelProperty(example = "null", value = "Způsob fakturace [persistentní položka]")
-  public Integer getInvoicingType() {
-    return invoicingType;
+  @ApiModelProperty(example = "null", value = "způsob fakturace [persistentní položka]")
+  public Integer getInvoicingtype() {
+    return invoicingtype;
   }
 
-  public void setInvoicingType(Integer invoicingType) {
-    this.invoicingType = invoicingType;
+  public void setInvoicingtype(Integer invoicingtype) {
+    this.invoicingtype = invoicingtype;
   }
 
-  public Busorder fixedAmount(Double fixedAmount) {
-    this.fixedAmount = fixedAmount;
+  public Busorder fixedamount(Double fixedamount) {
+    this.fixedamount = fixedamount;
     return this;
   }
 
    /**
-   * Fakturovat [persistentní položka]
-   * @return fixedAmount
+   * fakturovat [persistentní položka]
+   * @return fixedamount
   **/
-  @ApiModelProperty(example = "null", value = "Fakturovat [persistentní položka]")
-  public Double getFixedAmount() {
-    return fixedAmount;
+  @ApiModelProperty(example = "null", value = "fakturovat [persistentní položka]")
+  public Double getFixedamount() {
+    return fixedamount;
   }
 
-  public void setFixedAmount(Double fixedAmount) {
-    this.fixedAmount = fixedAmount;
+  public void setFixedamount(Double fixedamount) {
+    this.fixedamount = fixedamount;
   }
 
-  public Busorder checkActivityVsSources(Integer checkActivityVsSources) {
-    this.checkActivityVsSources = checkActivityVsSources;
+  public Busorder checkactivityvssources(Integer checkactivityvssources) {
+    this.checkactivityvssources = checkactivityvssources;
     return this;
   }
 
    /**
-   * Kontrola role [persistentní položka]
-   * @return checkActivityVsSources
+   * kontrola role [persistentní položka]
+   * @return checkactivityvssources
   **/
-  @ApiModelProperty(example = "null", value = "Kontrola role [persistentní položka]")
-  public Integer getCheckActivityVsSources() {
-    return checkActivityVsSources;
+  @ApiModelProperty(example = "null", value = "kontrola role [persistentní položka]")
+  public Integer getCheckactivityvssources() {
+    return checkactivityvssources;
   }
 
-  public void setCheckActivityVsSources(Integer checkActivityVsSources) {
-    this.checkActivityVsSources = checkActivityVsSources;
+  public void setCheckactivityvssources(Integer checkactivityvssources) {
+    this.checkactivityvssources = checkactivityvssources;
   }
 
-  public Busorder finalizationState(Double finalizationState) {
-    this.finalizationState = finalizationState;
+  public Busorder finalizationstate(Double finalizationstate) {
+    this.finalizationstate = finalizationstate;
     return this;
   }
 
    /**
-   * Procento dokončení [persistentní položka]
-   * @return finalizationState
+   * procento dokončení [persistentní položka]
+   * @return finalizationstate
   **/
-  @ApiModelProperty(example = "null", value = "Procento dokončení [persistentní položka]")
-  public Double getFinalizationState() {
-    return finalizationState;
+  @ApiModelProperty(example = "null", value = "procento dokončení [persistentní položka]")
+  public Double getFinalizationstate() {
+    return finalizationstate;
   }
 
-  public void setFinalizationState(Double finalizationState) {
-    this.finalizationState = finalizationState;
+  public void setFinalizationstate(Double finalizationstate) {
+    this.finalizationstate = finalizationstate;
   }
 
-  public Busorder plannedCostsAllTotal(Double plannedCostsAllTotal) {
-    this.plannedCostsAllTotal = plannedCostsAllTotal;
+  public Busorder plannedcostsalltotal(Double plannedcostsalltotal) {
+    this.plannedcostsalltotal = plannedcostsalltotal;
     return this;
   }
 
    /**
-   * Celk.plán.nákl.
-   * @return plannedCostsAllTotal
+   * celk.plán.nákl.
+   * @return plannedcostsalltotal
   **/
-  @ApiModelProperty(example = "null", value = "Celk.plán.nákl.")
-  public Double getPlannedCostsAllTotal() {
-    return plannedCostsAllTotal;
+  @ApiModelProperty(example = "null", value = "celk.plán.nákl.")
+  public Double getPlannedcostsalltotal() {
+    return plannedcostsalltotal;
   }
 
-  public void setPlannedCostsAllTotal(Double plannedCostsAllTotal) {
-    this.plannedCostsAllTotal = plannedCostsAllTotal;
+  public void setPlannedcostsalltotal(Double plannedcostsalltotal) {
+    this.plannedcostsalltotal = plannedcostsalltotal;
   }
 
-  public Busorder plannedRevenuesAllTotal(Double plannedRevenuesAllTotal) {
-    this.plannedRevenuesAllTotal = plannedRevenuesAllTotal;
+  public Busorder plannedrevenuesalltotal(Double plannedrevenuesalltotal) {
+    this.plannedrevenuesalltotal = plannedrevenuesalltotal;
     return this;
   }
 
    /**
-   * Celk.plán.výnosy
-   * @return plannedRevenuesAllTotal
+   * celk.plán.výnosy
+   * @return plannedrevenuesalltotal
   **/
-  @ApiModelProperty(example = "null", value = "Celk.plán.výnosy")
-  public Double getPlannedRevenuesAllTotal() {
-    return plannedRevenuesAllTotal;
+  @ApiModelProperty(example = "null", value = "celk.plán.výnosy")
+  public Double getPlannedrevenuesalltotal() {
+    return plannedrevenuesalltotal;
   }
 
-  public void setPlannedRevenuesAllTotal(Double plannedRevenuesAllTotal) {
-    this.plannedRevenuesAllTotal = plannedRevenuesAllTotal;
+  public void setPlannedrevenuesalltotal(Double plannedrevenuesalltotal) {
+    this.plannedrevenuesalltotal = plannedrevenuesalltotal;
   }
 
-  public Busorder plannedProfitTotal(Double plannedProfitTotal) {
-    this.plannedProfitTotal = plannedProfitTotal;
+  public Busorder plannedprofittotal(Double plannedprofittotal) {
+    this.plannedprofittotal = plannedprofittotal;
     return this;
   }
 
    /**
-   * Plánovaný zisk
-   * @return plannedProfitTotal
+   * plánovaný zisk
+   * @return plannedprofittotal
   **/
-  @ApiModelProperty(example = "null", value = "Plánovaný zisk")
-  public Double getPlannedProfitTotal() {
-    return plannedProfitTotal;
+  @ApiModelProperty(example = "null", value = "plánovaný zisk")
+  public Double getPlannedprofittotal() {
+    return plannedprofittotal;
   }
 
-  public void setPlannedProfitTotal(Double plannedProfitTotal) {
-    this.plannedProfitTotal = plannedProfitTotal;
+  public void setPlannedprofittotal(Double plannedprofittotal) {
+    this.plannedprofittotal = plannedprofittotal;
   }
 
-  public Busorder plannedProfit(Double plannedProfit) {
-    this.plannedProfit = plannedProfit;
+  public Busorder plannedprofit(Double plannedprofit) {
+    this.plannedprofit = plannedprofit;
     return this;
   }
 
    /**
-   * Plánovaný zisk vč.podřízených
-   * @return plannedProfit
+   * plánovaný zisk vč.podřízených
+   * @return plannedprofit
   **/
-  @ApiModelProperty(example = "null", value = "Plánovaný zisk vč.podřízených")
-  public Double getPlannedProfit() {
-    return plannedProfit;
+  @ApiModelProperty(example = "null", value = "plánovaný zisk vč.podřízených")
+  public Double getPlannedprofit() {
+    return plannedprofit;
   }
 
-  public void setPlannedProfit(Double plannedProfit) {
-    this.plannedProfit = plannedProfit;
+  public void setPlannedprofit(Double plannedprofit) {
+    this.plannedprofit = plannedprofit;
   }
 
-  public Busorder processStateAsText(String processStateAsText) {
-    this.processStateAsText = processStateAsText;
+  public Busorder processstateastext(String processstateastext) {
+    this.processstateastext = processstateastext;
     return this;
   }
 
    /**
-   * Stav
-   * @return processStateAsText
+   * stav
+   * @return processstateastext
   **/
-  @ApiModelProperty(example = "null", value = "Stav")
-  public String getProcessStateAsText() {
-    return processStateAsText;
+  @ApiModelProperty(example = "null", value = "stav")
+  public String getProcessstateastext() {
+    return processstateastext;
   }
 
-  public void setProcessStateAsText(String processStateAsText) {
-    this.processStateAsText = processStateAsText;
+  public void setProcessstateastext(String processstateastext) {
+    this.processstateastext = processstateastext;
   }
 
-  public Busorder invoicingTypeAsText(String invoicingTypeAsText) {
-    this.invoicingTypeAsText = invoicingTypeAsText;
+  public Busorder invoicingtypeastext(String invoicingtypeastext) {
+    this.invoicingtypeastext = invoicingtypeastext;
     return this;
   }
 
    /**
-   * Způsob fakturace
-   * @return invoicingTypeAsText
+   * způsob fakturace
+   * @return invoicingtypeastext
   **/
-  @ApiModelProperty(example = "null", value = "Způsob fakturace")
-  public String getInvoicingTypeAsText() {
-    return invoicingTypeAsText;
+  @ApiModelProperty(example = "null", value = "způsob fakturace")
+  public String getInvoicingtypeastext() {
+    return invoicingtypeastext;
   }
 
-  public void setInvoicingTypeAsText(String invoicingTypeAsText) {
-    this.invoicingTypeAsText = invoicingTypeAsText;
+  public void setInvoicingtypeastext(String invoicingtypeastext) {
+    this.invoicingtypeastext = invoicingtypeastext;
   }
 
-  public Busorder checkActivityVsSourcesAsText(String checkActivityVsSourcesAsText) {
-    this.checkActivityVsSourcesAsText = checkActivityVsSourcesAsText;
+  public Busorder checkactivityvssourcesastext(String checkactivityvssourcesastext) {
+    this.checkactivityvssourcesastext = checkactivityvssourcesastext;
     return this;
   }
 
    /**
-   * Kontrola role
-   * @return checkActivityVsSourcesAsText
+   * kontrola role
+   * @return checkactivityvssourcesastext
   **/
-  @ApiModelProperty(example = "null", value = "Kontrola role")
-  public String getCheckActivityVsSourcesAsText() {
-    return checkActivityVsSourcesAsText;
+  @ApiModelProperty(example = "null", value = "kontrola role")
+  public String getCheckactivityvssourcesastext() {
+    return checkactivityvssourcesastext;
   }
 
-  public void setCheckActivityVsSourcesAsText(String checkActivityVsSourcesAsText) {
-    this.checkActivityVsSourcesAsText = checkActivityVsSourcesAsText;
+  public void setCheckactivityvssourcesastext(String checkactivityvssourcesastext) {
+    this.checkactivityvssourcesastext = checkactivityvssourcesastext;
   }
 
-  public Busorder parentID(String parentID) {
-    this.parentID = parentID;
+  public Busorder parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Nadřízený; ID objektu Zakázka [persistentní položka]
-   * @return parentID
+   * nadřízený; id objektu zakázka [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Nadřízený; ID objektu Zakázka [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "nadřízený; id objektu zakázka [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setParentID(String parentID) {
-    this.parentID = parentID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Busorder closingDateDATE(DateTime closingDateDATE) {
-    this.closingDateDATE = closingDateDATE;
+  public Busorder closingdatedate(DateTime closingdatedate) {
+    this.closingdatedate = closingdatedate;
     return this;
   }
 
    /**
-   * Datum uzavření [persistentní položka]
-   * @return closingDateDATE
+   * datum uzavření [persistentní položka]
+   * @return closingdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum uzavření [persistentní položka]")
-  public DateTime getClosingDateDATE() {
-    return closingDateDATE;
+  @ApiModelProperty(example = "null", value = "datum uzavření [persistentní položka]")
+  public DateTime getClosingdatedate() {
+    return closingdatedate;
   }
 
-  public void setClosingDateDATE(DateTime closingDateDATE) {
-    this.closingDateDATE = closingDateDATE;
+  public void setClosingdatedate(DateTime closingdatedate) {
+    this.closingdatedate = closingdatedate;
   }
 
-  public Busorder plannedCostsSubTree(Double plannedCostsSubTree) {
-    this.plannedCostsSubTree = plannedCostsSubTree;
+  public Busorder plannedcostssubtree(Double plannedcostssubtree) {
+    this.plannedcostssubtree = plannedcostssubtree;
     return this;
   }
 
    /**
-   * Plán.nákl.za podřízené zakázky
-   * @return plannedCostsSubTree
+   * plán.nákl.za podřízené zakázky
+   * @return plannedcostssubtree
   **/
-  @ApiModelProperty(example = "null", value = "Plán.nákl.za podřízené zakázky")
-  public Double getPlannedCostsSubTree() {
-    return plannedCostsSubTree;
+  @ApiModelProperty(example = "null", value = "plán.nákl.za podřízené zakázky")
+  public Double getPlannedcostssubtree() {
+    return plannedcostssubtree;
   }
 
-  public void setPlannedCostsSubTree(Double plannedCostsSubTree) {
-    this.plannedCostsSubTree = plannedCostsSubTree;
+  public void setPlannedcostssubtree(Double plannedcostssubtree) {
+    this.plannedcostssubtree = plannedcostssubtree;
   }
 
-  public Busorder plannedRevenuesSubTree(Double plannedRevenuesSubTree) {
-    this.plannedRevenuesSubTree = plannedRevenuesSubTree;
+  public Busorder plannedrevenuessubtree(Double plannedrevenuessubtree) {
+    this.plannedrevenuessubtree = plannedrevenuessubtree;
     return this;
   }
 
    /**
-   * Plán.výnosy za podřízené zakázky
-   * @return plannedRevenuesSubTree
+   * plán.výnosy za podřízené zakázky
+   * @return plannedrevenuessubtree
   **/
-  @ApiModelProperty(example = "null", value = "Plán.výnosy za podřízené zakázky")
-  public Double getPlannedRevenuesSubTree() {
-    return plannedRevenuesSubTree;
+  @ApiModelProperty(example = "null", value = "plán.výnosy za podřízené zakázky")
+  public Double getPlannedrevenuessubtree() {
+    return plannedrevenuessubtree;
   }
 
-  public void setPlannedRevenuesSubTree(Double plannedRevenuesSubTree) {
-    this.plannedRevenuesSubTree = plannedRevenuesSubTree;
+  public void setPlannedrevenuessubtree(Double plannedrevenuessubtree) {
+    this.plannedrevenuessubtree = plannedrevenuessubtree;
   }
 
-  public Busorder finalizationStateSub(Double finalizationStateSub) {
-    this.finalizationStateSub = finalizationStateSub;
+  public Busorder finalizationstatesub(Double finalizationstatesub) {
+    this.finalizationstatesub = finalizationstatesub;
     return this;
   }
 
    /**
-   * Proc.dokončení podřízených zakázek
-   * @return finalizationStateSub
+   * proc.dokončení podřízených zakázek
+   * @return finalizationstatesub
   **/
-  @ApiModelProperty(example = "null", value = "Proc.dokončení podřízených zakázek")
-  public Double getFinalizationStateSub() {
-    return finalizationStateSub;
+  @ApiModelProperty(example = "null", value = "proc.dokončení podřízených zakázek")
+  public Double getFinalizationstatesub() {
+    return finalizationstatesub;
   }
 
-  public void setFinalizationStateSub(Double finalizationStateSub) {
-    this.finalizationStateSub = finalizationStateSub;
+  public void setFinalizationstatesub(Double finalizationstatesub) {
+    this.finalizationstatesub = finalizationstatesub;
   }
 
   public Busorder links(List<Busorderlink> links) {
@@ -938,10 +983,10 @@ public class Busorder   {
   }
 
    /**
-   * Návaznosti na před.zak.; kolekce BO Návaznosti zakázky [nepersistentní položka]
+   * návaznosti na před.zak.; kolekce bo návaznosti zakázky [nepersistentní položka]
    * @return links
   **/
-  @ApiModelProperty(example = "null", value = "Návaznosti na před.zak.; kolekce BO Návaznosti zakázky [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "návaznosti na před.zak.; kolekce bo návaznosti zakázky [nepersistentní položka]")
   public List<Busorderlink> getLinks() {
     return links;
   }
@@ -950,27 +995,27 @@ public class Busorder   {
     this.links = links;
   }
 
-  public Busorder checkPoints(List<Busordercheckpoint> checkPoints) {
-    this.checkPoints = checkPoints;
+  public Busorder checkpoints(List<Busordercheckpoint> checkpoints) {
+    this.checkpoints = checkpoints;
     return this;
   }
 
-  public Busorder addCheckPointsItem(Busordercheckpoint checkPointsItem) {
-    this.checkPoints.add(checkPointsItem);
+  public Busorder addCheckpointsItem(Busordercheckpoint checkpointsItem) {
+    this.checkpoints.add(checkpointsItem);
     return this;
   }
 
    /**
-   * Kontrolní body; kolekce BO Zakázky - kontrolní bod [nepersistentní položka]
-   * @return checkPoints
+   * kontrolní body; kolekce bo zakázky - kontrolní bod [nepersistentní položka]
+   * @return checkpoints
   **/
-  @ApiModelProperty(example = "null", value = "Kontrolní body; kolekce BO Zakázky - kontrolní bod [nepersistentní položka]")
-  public List<Busordercheckpoint> getCheckPoints() {
-    return checkPoints;
+  @ApiModelProperty(example = "null", value = "kontrolní body; kolekce bo zakázky - kontrolní bod [nepersistentní položka]")
+  public List<Busordercheckpoint> getCheckpoints() {
+    return checkpoints;
   }
 
-  public void setCheckPoints(List<Busordercheckpoint> checkPoints) {
-    this.checkPoints = checkPoints;
+  public void setCheckpoints(List<Busordercheckpoint> checkpoints) {
+    this.checkpoints = checkpoints;
   }
 
   public Busorder sources(List<Busordersource> sources) {
@@ -984,10 +1029,10 @@ public class Busorder   {
   }
 
    /**
-   * Zdroje; kolekce BO Zakázky - zdroj [nepersistentní položka]
+   * zdroje; kolekce bo zakázky - zdroj [nepersistentní položka]
    * @return sources
   **/
-  @ApiModelProperty(example = "null", value = "Zdroje; kolekce BO Zakázky - zdroj [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "zdroje; kolekce bo zakázky - zdroj [nepersistentní položka]")
   public List<Busordersource> getSources() {
     return sources;
   }
@@ -1006,58 +1051,58 @@ public class Busorder   {
       return false;
     }
     Busorder busorder = (Busorder) o;
-    return Objects.equals(this.displayName, busorder.displayName) &&
-        Objects.equals(this.ID, busorder.ID) &&
-        Objects.equals(this.classID, busorder.classID) &&
-        Objects.equals(this.objVersion, busorder.objVersion) &&
+    return Objects.equals(this.displayname, busorder.displayname) &&
+        Objects.equals(this.id, busorder.id) &&
+        Objects.equals(this.classid, busorder.classid) &&
+        Objects.equals(this.objversion, busorder.objversion) &&
         Objects.equals(this.hidden, busorder.hidden) &&
         Objects.equals(this.name, busorder.name) &&
         Objects.equals(this.code, busorder.code) &&
         Objects.equals(this.note, busorder.note) &&
         Objects.equals(this.comment, busorder.comment) &&
         Objects.equals(this.closed, busorder.closed) &&
-        Objects.equals(this.dateDATE, busorder.dateDATE) &&
-        Objects.equals(this.displayParent, busorder.displayParent) &&
-        Objects.equals(this.divisionID, busorder.divisionID) &&
-        Objects.equals(this.firmID, busorder.firmID) &&
-        Objects.equals(this.prefixCode, busorder.prefixCode) &&
-        Objects.equals(this.bodyCode, busorder.bodyCode) &&
-        Objects.equals(this.suffixCode, busorder.suffixCode) &&
-        Objects.equals(this.plannedEndDateDATE, busorder.plannedEndDateDATE) &&
+        Objects.equals(this.datedate, busorder.datedate) &&
+        Objects.equals(this.displayparent, busorder.displayparent) &&
+        Objects.equals(this.divisionId, busorder.divisionId) &&
+        Objects.equals(this.firmId, busorder.firmId) &&
+        Objects.equals(this.prefixcode, busorder.prefixcode) &&
+        Objects.equals(this.bodycode, busorder.bodycode) &&
+        Objects.equals(this.suffixcode, busorder.suffixcode) &&
+        Objects.equals(this.plannedenddatedate, busorder.plannedenddatedate) &&
         Objects.equals(this.approved, busorder.approved) &&
-        Objects.equals(this.extendedControl, busorder.extendedControl) &&
-        Objects.equals(this.masterSolverRoleID, busorder.masterSolverRoleID) &&
-        Objects.equals(this.processState, busorder.processState) &&
+        Objects.equals(this.extendedcontrol, busorder.extendedcontrol) &&
+        Objects.equals(this.mastersolverroleId, busorder.mastersolverroleId) &&
+        Objects.equals(this.processstate, busorder.processstate) &&
         Objects.equals(this.priority, busorder.priority) &&
-        Objects.equals(this.plannedCostsOther, busorder.plannedCostsOther) &&
-        Objects.equals(this.plannedRevenuesOther, busorder.plannedRevenuesOther) &&
-        Objects.equals(this.plannedCostsTotal, busorder.plannedCostsTotal) &&
-        Objects.equals(this.plannedRevenuesTotal, busorder.plannedRevenuesTotal) &&
-        Objects.equals(this.issuedOfferID, busorder.issuedOfferID) &&
-        Objects.equals(this.invoicingType, busorder.invoicingType) &&
-        Objects.equals(this.fixedAmount, busorder.fixedAmount) &&
-        Objects.equals(this.checkActivityVsSources, busorder.checkActivityVsSources) &&
-        Objects.equals(this.finalizationState, busorder.finalizationState) &&
-        Objects.equals(this.plannedCostsAllTotal, busorder.plannedCostsAllTotal) &&
-        Objects.equals(this.plannedRevenuesAllTotal, busorder.plannedRevenuesAllTotal) &&
-        Objects.equals(this.plannedProfitTotal, busorder.plannedProfitTotal) &&
-        Objects.equals(this.plannedProfit, busorder.plannedProfit) &&
-        Objects.equals(this.processStateAsText, busorder.processStateAsText) &&
-        Objects.equals(this.invoicingTypeAsText, busorder.invoicingTypeAsText) &&
-        Objects.equals(this.checkActivityVsSourcesAsText, busorder.checkActivityVsSourcesAsText) &&
-        Objects.equals(this.parentID, busorder.parentID) &&
-        Objects.equals(this.closingDateDATE, busorder.closingDateDATE) &&
-        Objects.equals(this.plannedCostsSubTree, busorder.plannedCostsSubTree) &&
-        Objects.equals(this.plannedRevenuesSubTree, busorder.plannedRevenuesSubTree) &&
-        Objects.equals(this.finalizationStateSub, busorder.finalizationStateSub) &&
+        Objects.equals(this.plannedcostsother, busorder.plannedcostsother) &&
+        Objects.equals(this.plannedrevenuesother, busorder.plannedrevenuesother) &&
+        Objects.equals(this.plannedcoststotal, busorder.plannedcoststotal) &&
+        Objects.equals(this.plannedrevenuestotal, busorder.plannedrevenuestotal) &&
+        Objects.equals(this.issuedofferId, busorder.issuedofferId) &&
+        Objects.equals(this.invoicingtype, busorder.invoicingtype) &&
+        Objects.equals(this.fixedamount, busorder.fixedamount) &&
+        Objects.equals(this.checkactivityvssources, busorder.checkactivityvssources) &&
+        Objects.equals(this.finalizationstate, busorder.finalizationstate) &&
+        Objects.equals(this.plannedcostsalltotal, busorder.plannedcostsalltotal) &&
+        Objects.equals(this.plannedrevenuesalltotal, busorder.plannedrevenuesalltotal) &&
+        Objects.equals(this.plannedprofittotal, busorder.plannedprofittotal) &&
+        Objects.equals(this.plannedprofit, busorder.plannedprofit) &&
+        Objects.equals(this.processstateastext, busorder.processstateastext) &&
+        Objects.equals(this.invoicingtypeastext, busorder.invoicingtypeastext) &&
+        Objects.equals(this.checkactivityvssourcesastext, busorder.checkactivityvssourcesastext) &&
+        Objects.equals(this.parentId, busorder.parentId) &&
+        Objects.equals(this.closingdatedate, busorder.closingdatedate) &&
+        Objects.equals(this.plannedcostssubtree, busorder.plannedcostssubtree) &&
+        Objects.equals(this.plannedrevenuessubtree, busorder.plannedrevenuessubtree) &&
+        Objects.equals(this.finalizationstatesub, busorder.finalizationstatesub) &&
         Objects.equals(this.links, busorder.links) &&
-        Objects.equals(this.checkPoints, busorder.checkPoints) &&
+        Objects.equals(this.checkpoints, busorder.checkpoints) &&
         Objects.equals(this.sources, busorder.sources);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, name, code, note, comment, closed, dateDATE, displayParent, divisionID, firmID, prefixCode, bodyCode, suffixCode, plannedEndDateDATE, approved, extendedControl, masterSolverRoleID, processState, priority, plannedCostsOther, plannedRevenuesOther, plannedCostsTotal, plannedRevenuesTotal, issuedOfferID, invoicingType, fixedAmount, checkActivityVsSources, finalizationState, plannedCostsAllTotal, plannedRevenuesAllTotal, plannedProfitTotal, plannedProfit, processStateAsText, invoicingTypeAsText, checkActivityVsSourcesAsText, parentID, closingDateDATE, plannedCostsSubTree, plannedRevenuesSubTree, finalizationStateSub, links, checkPoints, sources);
+    return Objects.hash(displayname, id, classid, objversion, hidden, name, code, note, comment, closed, datedate, displayparent, divisionId, firmId, prefixcode, bodycode, suffixcode, plannedenddatedate, approved, extendedcontrol, mastersolverroleId, processstate, priority, plannedcostsother, plannedrevenuesother, plannedcoststotal, plannedrevenuestotal, issuedofferId, invoicingtype, fixedamount, checkactivityvssources, finalizationstate, plannedcostsalltotal, plannedrevenuesalltotal, plannedprofittotal, plannedprofit, processstateastext, invoicingtypeastext, checkactivityvssourcesastext, parentId, closingdatedate, plannedcostssubtree, plannedrevenuessubtree, finalizationstatesub, links, checkpoints, sources);
   }
 
   @Override
@@ -1065,52 +1110,52 @@ public class Busorder   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Busorder {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
     sb.append("    comment: ").append(toIndentedString(comment)).append("\n");
     sb.append("    closed: ").append(toIndentedString(closed)).append("\n");
-    sb.append("    dateDATE: ").append(toIndentedString(dateDATE)).append("\n");
-    sb.append("    displayParent: ").append(toIndentedString(displayParent)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    prefixCode: ").append(toIndentedString(prefixCode)).append("\n");
-    sb.append("    bodyCode: ").append(toIndentedString(bodyCode)).append("\n");
-    sb.append("    suffixCode: ").append(toIndentedString(suffixCode)).append("\n");
-    sb.append("    plannedEndDateDATE: ").append(toIndentedString(plannedEndDateDATE)).append("\n");
+    sb.append("    datedate: ").append(toIndentedString(datedate)).append("\n");
+    sb.append("    displayparent: ").append(toIndentedString(displayparent)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    prefixcode: ").append(toIndentedString(prefixcode)).append("\n");
+    sb.append("    bodycode: ").append(toIndentedString(bodycode)).append("\n");
+    sb.append("    suffixcode: ").append(toIndentedString(suffixcode)).append("\n");
+    sb.append("    plannedenddatedate: ").append(toIndentedString(plannedenddatedate)).append("\n");
     sb.append("    approved: ").append(toIndentedString(approved)).append("\n");
-    sb.append("    extendedControl: ").append(toIndentedString(extendedControl)).append("\n");
-    sb.append("    masterSolverRoleID: ").append(toIndentedString(masterSolverRoleID)).append("\n");
-    sb.append("    processState: ").append(toIndentedString(processState)).append("\n");
+    sb.append("    extendedcontrol: ").append(toIndentedString(extendedcontrol)).append("\n");
+    sb.append("    mastersolverroleId: ").append(toIndentedString(mastersolverroleId)).append("\n");
+    sb.append("    processstate: ").append(toIndentedString(processstate)).append("\n");
     sb.append("    priority: ").append(toIndentedString(priority)).append("\n");
-    sb.append("    plannedCostsOther: ").append(toIndentedString(plannedCostsOther)).append("\n");
-    sb.append("    plannedRevenuesOther: ").append(toIndentedString(plannedRevenuesOther)).append("\n");
-    sb.append("    plannedCostsTotal: ").append(toIndentedString(plannedCostsTotal)).append("\n");
-    sb.append("    plannedRevenuesTotal: ").append(toIndentedString(plannedRevenuesTotal)).append("\n");
-    sb.append("    issuedOfferID: ").append(toIndentedString(issuedOfferID)).append("\n");
-    sb.append("    invoicingType: ").append(toIndentedString(invoicingType)).append("\n");
-    sb.append("    fixedAmount: ").append(toIndentedString(fixedAmount)).append("\n");
-    sb.append("    checkActivityVsSources: ").append(toIndentedString(checkActivityVsSources)).append("\n");
-    sb.append("    finalizationState: ").append(toIndentedString(finalizationState)).append("\n");
-    sb.append("    plannedCostsAllTotal: ").append(toIndentedString(plannedCostsAllTotal)).append("\n");
-    sb.append("    plannedRevenuesAllTotal: ").append(toIndentedString(plannedRevenuesAllTotal)).append("\n");
-    sb.append("    plannedProfitTotal: ").append(toIndentedString(plannedProfitTotal)).append("\n");
-    sb.append("    plannedProfit: ").append(toIndentedString(plannedProfit)).append("\n");
-    sb.append("    processStateAsText: ").append(toIndentedString(processStateAsText)).append("\n");
-    sb.append("    invoicingTypeAsText: ").append(toIndentedString(invoicingTypeAsText)).append("\n");
-    sb.append("    checkActivityVsSourcesAsText: ").append(toIndentedString(checkActivityVsSourcesAsText)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    closingDateDATE: ").append(toIndentedString(closingDateDATE)).append("\n");
-    sb.append("    plannedCostsSubTree: ").append(toIndentedString(plannedCostsSubTree)).append("\n");
-    sb.append("    plannedRevenuesSubTree: ").append(toIndentedString(plannedRevenuesSubTree)).append("\n");
-    sb.append("    finalizationStateSub: ").append(toIndentedString(finalizationStateSub)).append("\n");
+    sb.append("    plannedcostsother: ").append(toIndentedString(plannedcostsother)).append("\n");
+    sb.append("    plannedrevenuesother: ").append(toIndentedString(plannedrevenuesother)).append("\n");
+    sb.append("    plannedcoststotal: ").append(toIndentedString(plannedcoststotal)).append("\n");
+    sb.append("    plannedrevenuestotal: ").append(toIndentedString(plannedrevenuestotal)).append("\n");
+    sb.append("    issuedofferId: ").append(toIndentedString(issuedofferId)).append("\n");
+    sb.append("    invoicingtype: ").append(toIndentedString(invoicingtype)).append("\n");
+    sb.append("    fixedamount: ").append(toIndentedString(fixedamount)).append("\n");
+    sb.append("    checkactivityvssources: ").append(toIndentedString(checkactivityvssources)).append("\n");
+    sb.append("    finalizationstate: ").append(toIndentedString(finalizationstate)).append("\n");
+    sb.append("    plannedcostsalltotal: ").append(toIndentedString(plannedcostsalltotal)).append("\n");
+    sb.append("    plannedrevenuesalltotal: ").append(toIndentedString(plannedrevenuesalltotal)).append("\n");
+    sb.append("    plannedprofittotal: ").append(toIndentedString(plannedprofittotal)).append("\n");
+    sb.append("    plannedprofit: ").append(toIndentedString(plannedprofit)).append("\n");
+    sb.append("    processstateastext: ").append(toIndentedString(processstateastext)).append("\n");
+    sb.append("    invoicingtypeastext: ").append(toIndentedString(invoicingtypeastext)).append("\n");
+    sb.append("    checkactivityvssourcesastext: ").append(toIndentedString(checkactivityvssourcesastext)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    closingdatedate: ").append(toIndentedString(closingdatedate)).append("\n");
+    sb.append("    plannedcostssubtree: ").append(toIndentedString(plannedcostssubtree)).append("\n");
+    sb.append("    plannedrevenuessubtree: ").append(toIndentedString(plannedrevenuessubtree)).append("\n");
+    sb.append("    finalizationstatesub: ").append(toIndentedString(finalizationstatesub)).append("\n");
     sb.append("    links: ").append(toIndentedString(links)).append("\n");
-    sb.append("    checkPoints: ").append(toIndentedString(checkPoints)).append("\n");
+    sb.append("    checkpoints: ").append(toIndentedString(checkpoints)).append("\n");
     sb.append("    sources: ").append(toIndentedString(sources)).append("\n");
     sb.append("}");
     return sb.toString();

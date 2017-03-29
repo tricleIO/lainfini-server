@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,111 +36,147 @@ import java.util.Objects;
 /**
  * Assetinvlistresult
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Assetinvlistresult   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Assetinvlistresultcomp> rows = new ArrayList<Assetinvlistresultcomp>();
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("AssetInv_ID")
-  private String assetInvID = null;
+  @SerializedName("assetinv_id")
+  private String assetinvId = null;
 
-  @SerializedName("AssetCard_Type")
-  private Integer assetCardType = null;
+  @SerializedName("assetcard_type")
+  private Integer assetcardType = null;
 
-  @SerializedName("AssetCard_ID")
-  private String assetCardID = null;
+  @SerializedName("assetcard_id")
+  private String assetcardId = null;
 
-  @SerializedName("IsCollection")
-  private Integer isCollection = null;
+  @SerializedName("iscollection")
+  private Integer iscollection = null;
 
-  @SerializedName("SmallSubCard_ID")
-  private String smallSubCardID = null;
+  @SerializedName("smallsubcard_id")
+  private String smallsubcardId = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Responsible_ID")
-  private String responsibleID = null;
+  @SerializedName("responsible_id")
+  private String responsibleId = null;
 
-  @SerializedName("AssetLocation_ID")
-  private String assetLocationID = null;
+  @SerializedName("assetlocation_id")
+  private String assetlocationId = null;
 
-  @SerializedName("EvidenceDivision_ID")
-  private String evidenceDivisionID = null;
+  @SerializedName("evidencedivision_id")
+  private String evidencedivisionId = null;
 
-  @SerializedName("ExpensesDivision_ID")
-  private String expensesDivisionID = null;
+  @SerializedName("expensesdivision_id")
+  private String expensesdivisionId = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Integer quantity = null;
 
-  @SerializedName("AssetCardStatus")
-  private Integer assetCardStatus = null;
+  @SerializedName("assetcardstatus")
+  private Integer assetcardstatus = null;
 
-  @SerializedName("IsImported")
-  private Boolean isImported = null;
+  @SerializedName("isimported")
+  private Boolean isimported = null;
 
-  @SerializedName("ImportDescription")
-  private String importDescription = null;
+  @SerializedName("importdescription")
+  private String importdescription = null;
 
-  @SerializedName("ApprovalStatus")
-  private Integer approvalStatus = null;
+  @SerializedName("approvalstatus")
+  private Integer approvalstatus = null;
 
-  @SerializedName("AppliedInCard")
-  private Boolean appliedInCard = null;
+  @SerializedName("appliedincard")
+  private Boolean appliedincard = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Assetinvlistresult displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Assetinvlistresult id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Assetinvlistresult classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Assetinvlistresult objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Assetinvlistresult rows(List<Assetinvlistresultcomp> rows) {
@@ -154,10 +190,10 @@ public class Assetinvlistresult   {
   }
 
    /**
-   * Řádky; kolekce BO Prvek majetku výsledek inventury [nepersistentní položka]
+   * Řádky; kolekce bo prvek majetku výsledek inventury [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Prvek majetku výsledek inventury [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo prvek majetku výsledek inventury [nepersistentní položka]")
   public List<Assetinvlistresultcomp> getRows() {
     return rows;
   }
@@ -166,112 +202,112 @@ public class Assetinvlistresult   {
     this.rows = rows;
   }
 
-  public Assetinvlistresult parentID(String parentID) {
-    this.parentID = parentID;
+  public Assetinvlistresult parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Odkaz na seznam; ID objektu Inventarizační seznam majetku [persistentní položka]
-   * @return parentID
+   * odkaz na seznam; id objektu inventarizační seznam majetku [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na seznam; ID objektu Inventarizační seznam majetku [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "odkaz na seznam; id objektu inventarizační seznam majetku [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setParentID(String parentID) {
-    this.parentID = parentID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Assetinvlistresult assetInvID(String assetInvID) {
-    this.assetInvID = assetInvID;
+  public Assetinvlistresult assetinvId(String assetinvId) {
+    this.assetinvId = assetinvId;
     return this;
   }
 
    /**
-   * Odkaz na inventuru; ID objektu Inventura majetku [persistentní položka]
-   * @return assetInvID
+   * odkaz na inventuru; id objektu inventura majetku [persistentní položka]
+   * @return assetinvId
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na inventuru; ID objektu Inventura majetku [persistentní položka]")
-  public String getAssetInvID() {
-    return assetInvID;
+  @ApiModelProperty(example = "null", value = "odkaz na inventuru; id objektu inventura majetku [persistentní položka]")
+  public String getAssetinvId() {
+    return assetinvId;
   }
 
-  public void setAssetInvID(String assetInvID) {
-    this.assetInvID = assetInvID;
+  public void setAssetinvId(String assetinvId) {
+    this.assetinvId = assetinvId;
   }
 
-  public Assetinvlistresult assetCardType(Integer assetCardType) {
-    this.assetCardType = assetCardType;
+  public Assetinvlistresult assetcardType(Integer assetcardType) {
+    this.assetcardType = assetcardType;
     return this;
   }
 
    /**
-   * Typ majetku [persistentní položka]
-   * @return assetCardType
+   * typ majetku [persistentní položka]
+   * @return assetcardType
   **/
-  @ApiModelProperty(example = "null", value = "Typ majetku [persistentní položka]")
-  public Integer getAssetCardType() {
-    return assetCardType;
+  @ApiModelProperty(example = "null", value = "typ majetku [persistentní položka]")
+  public Integer getAssetcardType() {
+    return assetcardType;
   }
 
-  public void setAssetCardType(Integer assetCardType) {
-    this.assetCardType = assetCardType;
+  public void setAssetcardType(Integer assetcardType) {
+    this.assetcardType = assetcardType;
   }
 
-  public Assetinvlistresult assetCardID(String assetCardID) {
-    this.assetCardID = assetCardID;
+  public Assetinvlistresult assetcardId(String assetcardId) {
+    this.assetcardId = assetcardId;
     return this;
   }
 
    /**
-   * Odkaz na kartu majetku; ID objektu Karta majetku [persistentní položka]
-   * @return assetCardID
+   * odkaz na kartu majetku; id objektu karta majetku [persistentní položka]
+   * @return assetcardId
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na kartu majetku; ID objektu Karta majetku [persistentní položka]")
-  public String getAssetCardID() {
-    return assetCardID;
+  @ApiModelProperty(example = "null", value = "odkaz na kartu majetku; id objektu karta majetku [persistentní položka]")
+  public String getAssetcardId() {
+    return assetcardId;
   }
 
-  public void setAssetCardID(String assetCardID) {
-    this.assetCardID = assetCardID;
+  public void setAssetcardId(String assetcardId) {
+    this.assetcardId = assetcardId;
   }
 
-  public Assetinvlistresult isCollection(Integer isCollection) {
-    this.isCollection = isCollection;
+  public Assetinvlistresult iscollection(Integer iscollection) {
+    this.iscollection = iscollection;
     return this;
   }
 
    /**
-   * Je kolekce [persistentní položka]
-   * @return isCollection
+   * je kolekce [persistentní položka]
+   * @return iscollection
   **/
-  @ApiModelProperty(example = "null", value = "Je kolekce [persistentní položka]")
-  public Integer getIsCollection() {
-    return isCollection;
+  @ApiModelProperty(example = "null", value = "je kolekce [persistentní položka]")
+  public Integer getIscollection() {
+    return iscollection;
   }
 
-  public void setIsCollection(Integer isCollection) {
-    this.isCollection = isCollection;
+  public void setIscollection(Integer iscollection) {
+    this.iscollection = iscollection;
   }
 
-  public Assetinvlistresult smallSubCardID(String smallSubCardID) {
-    this.smallSubCardID = smallSubCardID;
+  public Assetinvlistresult smallsubcardId(String smallsubcardId) {
+    this.smallsubcardId = smallsubcardId;
     return this;
   }
 
    /**
-   * Karta DrM; ID objektu Položka drobného majetku [persistentní položka]
-   * @return smallSubCardID
+   * karta drm; id objektu položka drobného majetku [persistentní položka]
+   * @return smallsubcardId
   **/
-  @ApiModelProperty(example = "null", value = "Karta DrM; ID objektu Položka drobného majetku [persistentní položka]")
-  public String getSmallSubCardID() {
-    return smallSubCardID;
+  @ApiModelProperty(example = "null", value = "karta drm; id objektu položka drobného majetku [persistentní položka]")
+  public String getSmallsubcardId() {
+    return smallsubcardId;
   }
 
-  public void setSmallSubCardID(String smallSubCardID) {
-    this.smallSubCardID = smallSubCardID;
+  public void setSmallsubcardId(String smallsubcardId) {
+    this.smallsubcardId = smallsubcardId;
   }
 
   public Assetinvlistresult name(String name) {
@@ -280,10 +316,10 @@ public class Assetinvlistresult   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -292,76 +328,76 @@ public class Assetinvlistresult   {
     this.name = name;
   }
 
-  public Assetinvlistresult responsibleID(String responsibleID) {
-    this.responsibleID = responsibleID;
+  public Assetinvlistresult responsibleId(String responsibleId) {
+    this.responsibleId = responsibleId;
     return this;
   }
 
    /**
-   * Odpovědná osoba; ID objektu Odpovědná osoba [persistentní položka]
-   * @return responsibleID
+   * odpovědná osoba; id objektu odpovědná osoba [persistentní položka]
+   * @return responsibleId
   **/
-  @ApiModelProperty(example = "null", value = "Odpovědná osoba; ID objektu Odpovědná osoba [persistentní položka]")
-  public String getResponsibleID() {
-    return responsibleID;
+  @ApiModelProperty(example = "null", value = "odpovědná osoba; id objektu odpovědná osoba [persistentní položka]")
+  public String getResponsibleId() {
+    return responsibleId;
   }
 
-  public void setResponsibleID(String responsibleID) {
-    this.responsibleID = responsibleID;
+  public void setResponsibleId(String responsibleId) {
+    this.responsibleId = responsibleId;
   }
 
-  public Assetinvlistresult assetLocationID(String assetLocationID) {
-    this.assetLocationID = assetLocationID;
+  public Assetinvlistresult assetlocationId(String assetlocationId) {
+    this.assetlocationId = assetlocationId;
     return this;
   }
 
    /**
-   * Umístění; ID objektu Umístění majetku [persistentní položka]
-   * @return assetLocationID
+   * umístění; id objektu umístění majetku [persistentní položka]
+   * @return assetlocationId
   **/
-  @ApiModelProperty(example = "null", value = "Umístění; ID objektu Umístění majetku [persistentní položka]")
-  public String getAssetLocationID() {
-    return assetLocationID;
+  @ApiModelProperty(example = "null", value = "umístění; id objektu umístění majetku [persistentní položka]")
+  public String getAssetlocationId() {
+    return assetlocationId;
   }
 
-  public void setAssetLocationID(String assetLocationID) {
-    this.assetLocationID = assetLocationID;
+  public void setAssetlocationId(String assetlocationId) {
+    this.assetlocationId = assetlocationId;
   }
 
-  public Assetinvlistresult evidenceDivisionID(String evidenceDivisionID) {
-    this.evidenceDivisionID = evidenceDivisionID;
+  public Assetinvlistresult evidencedivisionId(String evidencedivisionId) {
+    this.evidencedivisionId = evidencedivisionId;
     return this;
   }
 
    /**
-   * EvidenceDivision_ID; ID objektu Středisko [persistentní položka]
-   * @return evidenceDivisionID
+   * evidencedivision_id; id objektu středisko [persistentní položka]
+   * @return evidencedivisionId
   **/
-  @ApiModelProperty(example = "null", value = "EvidenceDivision_ID; ID objektu Středisko [persistentní položka]")
-  public String getEvidenceDivisionID() {
-    return evidenceDivisionID;
+  @ApiModelProperty(example = "null", value = "evidencedivision_id; id objektu středisko [persistentní položka]")
+  public String getEvidencedivisionId() {
+    return evidencedivisionId;
   }
 
-  public void setEvidenceDivisionID(String evidenceDivisionID) {
-    this.evidenceDivisionID = evidenceDivisionID;
+  public void setEvidencedivisionId(String evidencedivisionId) {
+    this.evidencedivisionId = evidencedivisionId;
   }
 
-  public Assetinvlistresult expensesDivisionID(String expensesDivisionID) {
-    this.expensesDivisionID = expensesDivisionID;
+  public Assetinvlistresult expensesdivisionId(String expensesdivisionId) {
+    this.expensesdivisionId = expensesdivisionId;
     return this;
   }
 
    /**
-   * ExpensesDivision_ID; ID objektu Středisko [persistentní položka]
-   * @return expensesDivisionID
+   * expensesdivision_id; id objektu středisko [persistentní položka]
+   * @return expensesdivisionId
   **/
-  @ApiModelProperty(example = "null", value = "ExpensesDivision_ID; ID objektu Středisko [persistentní položka]")
-  public String getExpensesDivisionID() {
-    return expensesDivisionID;
+  @ApiModelProperty(example = "null", value = "expensesdivision_id; id objektu středisko [persistentní položka]")
+  public String getExpensesdivisionId() {
+    return expensesdivisionId;
   }
 
-  public void setExpensesDivisionID(String expensesDivisionID) {
-    this.expensesDivisionID = expensesDivisionID;
+  public void setExpensesdivisionId(String expensesdivisionId) {
+    this.expensesdivisionId = expensesdivisionId;
   }
 
   public Assetinvlistresult quantity(Integer quantity) {
@@ -370,10 +406,10 @@ public class Assetinvlistresult   {
   }
 
    /**
-   * Počet [persistentní položka]
+   * počet [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Počet [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "počet [persistentní položka]")
   public Integer getQuantity() {
     return quantity;
   }
@@ -382,94 +418,94 @@ public class Assetinvlistresult   {
     this.quantity = quantity;
   }
 
-  public Assetinvlistresult assetCardStatus(Integer assetCardStatus) {
-    this.assetCardStatus = assetCardStatus;
+  public Assetinvlistresult assetcardstatus(Integer assetcardstatus) {
+    this.assetcardstatus = assetcardstatus;
     return this;
   }
 
    /**
-   * Stav majetku [persistentní položka]
-   * @return assetCardStatus
+   * stav majetku [persistentní položka]
+   * @return assetcardstatus
   **/
-  @ApiModelProperty(example = "null", value = "Stav majetku [persistentní položka]")
-  public Integer getAssetCardStatus() {
-    return assetCardStatus;
+  @ApiModelProperty(example = "null", value = "stav majetku [persistentní položka]")
+  public Integer getAssetcardstatus() {
+    return assetcardstatus;
   }
 
-  public void setAssetCardStatus(Integer assetCardStatus) {
-    this.assetCardStatus = assetCardStatus;
+  public void setAssetcardstatus(Integer assetcardstatus) {
+    this.assetcardstatus = assetcardstatus;
   }
 
-  public Assetinvlistresult isImported(Boolean isImported) {
-    this.isImported = isImported;
+  public Assetinvlistresult isimported(Boolean isimported) {
+    this.isimported = isimported;
     return this;
   }
 
    /**
-   * Importován [persistentní položka]
-   * @return isImported
+   * importován [persistentní položka]
+   * @return isimported
   **/
-  @ApiModelProperty(example = "null", value = "Importován [persistentní položka]")
-  public Boolean getIsImported() {
-    return isImported;
+  @ApiModelProperty(example = "null", value = "importován [persistentní položka]")
+  public Boolean getIsimported() {
+    return isimported;
   }
 
-  public void setIsImported(Boolean isImported) {
-    this.isImported = isImported;
+  public void setIsimported(Boolean isimported) {
+    this.isimported = isimported;
   }
 
-  public Assetinvlistresult importDescription(String importDescription) {
-    this.importDescription = importDescription;
+  public Assetinvlistresult importdescription(String importdescription) {
+    this.importdescription = importdescription;
     return this;
   }
 
    /**
-   * Poznámka k importu [persistentní položka]
-   * @return importDescription
+   * poznámka k importu [persistentní položka]
+   * @return importdescription
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka k importu [persistentní položka]")
-  public String getImportDescription() {
-    return importDescription;
+  @ApiModelProperty(example = "null", value = "poznámka k importu [persistentní položka]")
+  public String getImportdescription() {
+    return importdescription;
   }
 
-  public void setImportDescription(String importDescription) {
-    this.importDescription = importDescription;
+  public void setImportdescription(String importdescription) {
+    this.importdescription = importdescription;
   }
 
-  public Assetinvlistresult approvalStatus(Integer approvalStatus) {
-    this.approvalStatus = approvalStatus;
+  public Assetinvlistresult approvalstatus(Integer approvalstatus) {
+    this.approvalstatus = approvalstatus;
     return this;
   }
 
    /**
-   * Stav schválení [persistentní položka]
-   * @return approvalStatus
+   * stav schválení [persistentní položka]
+   * @return approvalstatus
   **/
-  @ApiModelProperty(example = "null", value = "Stav schválení [persistentní položka]")
-  public Integer getApprovalStatus() {
-    return approvalStatus;
+  @ApiModelProperty(example = "null", value = "stav schválení [persistentní položka]")
+  public Integer getApprovalstatus() {
+    return approvalstatus;
   }
 
-  public void setApprovalStatus(Integer approvalStatus) {
-    this.approvalStatus = approvalStatus;
+  public void setApprovalstatus(Integer approvalstatus) {
+    this.approvalstatus = approvalstatus;
   }
 
-  public Assetinvlistresult appliedInCard(Boolean appliedInCard) {
-    this.appliedInCard = appliedInCard;
+  public Assetinvlistresult appliedincard(Boolean appliedincard) {
+    this.appliedincard = appliedincard;
     return this;
   }
 
    /**
-   * Změna přenesena [persistentní položka]
-   * @return appliedInCard
+   * změna přenesena [persistentní položka]
+   * @return appliedincard
   **/
-  @ApiModelProperty(example = "null", value = "Změna přenesena [persistentní položka]")
-  public Boolean getAppliedInCard() {
-    return appliedInCard;
+  @ApiModelProperty(example = "null", value = "změna přenesena [persistentní položka]")
+  public Boolean getAppliedincard() {
+    return appliedincard;
   }
 
-  public void setAppliedInCard(Boolean appliedInCard) {
-    this.appliedInCard = appliedInCard;
+  public void setAppliedincard(Boolean appliedincard) {
+    this.appliedincard = appliedincard;
   }
 
   public Assetinvlistresult description(String description) {
@@ -478,10 +514,10 @@ public class Assetinvlistresult   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -500,34 +536,34 @@ public class Assetinvlistresult   {
       return false;
     }
     Assetinvlistresult assetinvlistresult = (Assetinvlistresult) o;
-    return Objects.equals(this.displayName, assetinvlistresult.displayName) &&
-        Objects.equals(this.ID, assetinvlistresult.ID) &&
-        Objects.equals(this.classID, assetinvlistresult.classID) &&
-        Objects.equals(this.objVersion, assetinvlistresult.objVersion) &&
+    return Objects.equals(this.displayname, assetinvlistresult.displayname) &&
+        Objects.equals(this.id, assetinvlistresult.id) &&
+        Objects.equals(this.classid, assetinvlistresult.classid) &&
+        Objects.equals(this.objversion, assetinvlistresult.objversion) &&
         Objects.equals(this.rows, assetinvlistresult.rows) &&
-        Objects.equals(this.parentID, assetinvlistresult.parentID) &&
-        Objects.equals(this.assetInvID, assetinvlistresult.assetInvID) &&
-        Objects.equals(this.assetCardType, assetinvlistresult.assetCardType) &&
-        Objects.equals(this.assetCardID, assetinvlistresult.assetCardID) &&
-        Objects.equals(this.isCollection, assetinvlistresult.isCollection) &&
-        Objects.equals(this.smallSubCardID, assetinvlistresult.smallSubCardID) &&
+        Objects.equals(this.parentId, assetinvlistresult.parentId) &&
+        Objects.equals(this.assetinvId, assetinvlistresult.assetinvId) &&
+        Objects.equals(this.assetcardType, assetinvlistresult.assetcardType) &&
+        Objects.equals(this.assetcardId, assetinvlistresult.assetcardId) &&
+        Objects.equals(this.iscollection, assetinvlistresult.iscollection) &&
+        Objects.equals(this.smallsubcardId, assetinvlistresult.smallsubcardId) &&
         Objects.equals(this.name, assetinvlistresult.name) &&
-        Objects.equals(this.responsibleID, assetinvlistresult.responsibleID) &&
-        Objects.equals(this.assetLocationID, assetinvlistresult.assetLocationID) &&
-        Objects.equals(this.evidenceDivisionID, assetinvlistresult.evidenceDivisionID) &&
-        Objects.equals(this.expensesDivisionID, assetinvlistresult.expensesDivisionID) &&
+        Objects.equals(this.responsibleId, assetinvlistresult.responsibleId) &&
+        Objects.equals(this.assetlocationId, assetinvlistresult.assetlocationId) &&
+        Objects.equals(this.evidencedivisionId, assetinvlistresult.evidencedivisionId) &&
+        Objects.equals(this.expensesdivisionId, assetinvlistresult.expensesdivisionId) &&
         Objects.equals(this.quantity, assetinvlistresult.quantity) &&
-        Objects.equals(this.assetCardStatus, assetinvlistresult.assetCardStatus) &&
-        Objects.equals(this.isImported, assetinvlistresult.isImported) &&
-        Objects.equals(this.importDescription, assetinvlistresult.importDescription) &&
-        Objects.equals(this.approvalStatus, assetinvlistresult.approvalStatus) &&
-        Objects.equals(this.appliedInCard, assetinvlistresult.appliedInCard) &&
+        Objects.equals(this.assetcardstatus, assetinvlistresult.assetcardstatus) &&
+        Objects.equals(this.isimported, assetinvlistresult.isimported) &&
+        Objects.equals(this.importdescription, assetinvlistresult.importdescription) &&
+        Objects.equals(this.approvalstatus, assetinvlistresult.approvalstatus) &&
+        Objects.equals(this.appliedincard, assetinvlistresult.appliedincard) &&
         Objects.equals(this.description, assetinvlistresult.description);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, parentID, assetInvID, assetCardType, assetCardID, isCollection, smallSubCardID, name, responsibleID, assetLocationID, evidenceDivisionID, expensesDivisionID, quantity, assetCardStatus, isImported, importDescription, approvalStatus, appliedInCard, description);
+    return Objects.hash(displayname, id, classid, objversion, rows, parentId, assetinvId, assetcardType, assetcardId, iscollection, smallsubcardId, name, responsibleId, assetlocationId, evidencedivisionId, expensesdivisionId, quantity, assetcardstatus, isimported, importdescription, approvalstatus, appliedincard, description);
   }
 
   @Override
@@ -535,28 +571,28 @@ public class Assetinvlistresult   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Assetinvlistresult {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    assetInvID: ").append(toIndentedString(assetInvID)).append("\n");
-    sb.append("    assetCardType: ").append(toIndentedString(assetCardType)).append("\n");
-    sb.append("    assetCardID: ").append(toIndentedString(assetCardID)).append("\n");
-    sb.append("    isCollection: ").append(toIndentedString(isCollection)).append("\n");
-    sb.append("    smallSubCardID: ").append(toIndentedString(smallSubCardID)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    assetinvId: ").append(toIndentedString(assetinvId)).append("\n");
+    sb.append("    assetcardType: ").append(toIndentedString(assetcardType)).append("\n");
+    sb.append("    assetcardId: ").append(toIndentedString(assetcardId)).append("\n");
+    sb.append("    iscollection: ").append(toIndentedString(iscollection)).append("\n");
+    sb.append("    smallsubcardId: ").append(toIndentedString(smallsubcardId)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    responsibleID: ").append(toIndentedString(responsibleID)).append("\n");
-    sb.append("    assetLocationID: ").append(toIndentedString(assetLocationID)).append("\n");
-    sb.append("    evidenceDivisionID: ").append(toIndentedString(evidenceDivisionID)).append("\n");
-    sb.append("    expensesDivisionID: ").append(toIndentedString(expensesDivisionID)).append("\n");
+    sb.append("    responsibleId: ").append(toIndentedString(responsibleId)).append("\n");
+    sb.append("    assetlocationId: ").append(toIndentedString(assetlocationId)).append("\n");
+    sb.append("    evidencedivisionId: ").append(toIndentedString(evidencedivisionId)).append("\n");
+    sb.append("    expensesdivisionId: ").append(toIndentedString(expensesdivisionId)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    assetCardStatus: ").append(toIndentedString(assetCardStatus)).append("\n");
-    sb.append("    isImported: ").append(toIndentedString(isImported)).append("\n");
-    sb.append("    importDescription: ").append(toIndentedString(importDescription)).append("\n");
-    sb.append("    approvalStatus: ").append(toIndentedString(approvalStatus)).append("\n");
-    sb.append("    appliedInCard: ").append(toIndentedString(appliedInCard)).append("\n");
+    sb.append("    assetcardstatus: ").append(toIndentedString(assetcardstatus)).append("\n");
+    sb.append("    isimported: ").append(toIndentedString(isimported)).append("\n");
+    sb.append("    importdescription: ").append(toIndentedString(importdescription)).append("\n");
+    sb.append("    approvalstatus: ").append(toIndentedString(approvalstatus)).append("\n");
+    sb.append("    appliedincard: ").append(toIndentedString(appliedincard)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("}");
     return sb.toString();

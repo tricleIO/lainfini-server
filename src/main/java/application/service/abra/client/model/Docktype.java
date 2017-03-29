@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,93 +34,129 @@ import java.util.Objects;
 /**
  * Docktype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Docktype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("BaseType")
-  private Integer baseType = null;
+  @SerializedName("basetype")
+  private Integer basetype = null;
 
-  @SerializedName("Periodicity")
+  @SerializedName("periodicity")
   private Integer periodicity = null;
 
-  @SerializedName("InternalDock")
-  private Boolean internalDock = null;
+  @SerializedName("internaldock")
+  private Boolean internaldock = null;
 
-  @SerializedName("DebtCorrect")
-  private Boolean debtCorrect = null;
+  @SerializedName("debtcorrect")
+  private Boolean debtcorrect = null;
 
-  @SerializedName("CompToMinimum")
-  private Boolean compToMinimum = null;
+  @SerializedName("comptominimum")
+  private Boolean comptominimum = null;
 
-  @SerializedName("PartialDock")
-  private Boolean partialDock = null;
+  @SerializedName("partialdock")
+  private Boolean partialdock = null;
 
-  @SerializedName("PrintGroup")
-  private String printGroup = null;
+  @SerializedName("printgroup")
+  private String printgroup = null;
 
-  @SerializedName("BaseTypeText")
-  private String baseTypeText = null;
+  @SerializedName("basetypetext")
+  private String basetypetext = null;
 
-  @SerializedName("AgreementDock")
-  private Boolean agreementDock = null;
+  @SerializedName("agreementdock")
+  private Boolean agreementdock = null;
 
-  @SerializedName("DockFromAgreements")
-  private Boolean dockFromAgreements = null;
+  @SerializedName("dockfromagreements")
+  private Boolean dockfromagreements = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Docktype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Docktype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Docktype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Docktype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Docktype hidden(Boolean hidden) {
@@ -129,10 +165,10 @@ public class Docktype   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -147,10 +183,10 @@ public class Docktype   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -165,10 +201,10 @@ public class Docktype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -177,22 +213,22 @@ public class Docktype   {
     this.name = name;
   }
 
-  public Docktype baseType(Integer baseType) {
-    this.baseType = baseType;
+  public Docktype basetype(Integer basetype) {
+    this.basetype = basetype;
     return this;
   }
 
    /**
-   * Typ [persistentní položka]
-   * @return baseType
+   * typ [persistentní položka]
+   * @return basetype
   **/
-  @ApiModelProperty(example = "null", value = "Typ [persistentní položka]")
-  public Integer getBaseType() {
-    return baseType;
+  @ApiModelProperty(example = "null", value = "typ [persistentní položka]")
+  public Integer getBasetype() {
+    return basetype;
   }
 
-  public void setBaseType(Integer baseType) {
-    this.baseType = baseType;
+  public void setBasetype(Integer basetype) {
+    this.basetype = basetype;
   }
 
   public Docktype periodicity(Integer periodicity) {
@@ -201,10 +237,10 @@ public class Docktype   {
   }
 
    /**
-   * Perioda [persistentní položka]
+   * perioda [persistentní položka]
    * @return periodicity
   **/
-  @ApiModelProperty(example = "null", value = "Perioda [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "perioda [persistentní položka]")
   public Integer getPeriodicity() {
     return periodicity;
   }
@@ -213,148 +249,148 @@ public class Docktype   {
     this.periodicity = periodicity;
   }
 
-  public Docktype internalDock(Boolean internalDock) {
-    this.internalDock = internalDock;
+  public Docktype internaldock(Boolean internaldock) {
+    this.internaldock = internaldock;
     return this;
   }
 
    /**
-   * Interní [persistentní položka]
-   * @return internalDock
+   * interní [persistentní položka]
+   * @return internaldock
   **/
-  @ApiModelProperty(example = "null", value = "Interní [persistentní položka]")
-  public Boolean getInternalDock() {
-    return internalDock;
+  @ApiModelProperty(example = "null", value = "interní [persistentní položka]")
+  public Boolean getInternaldock() {
+    return internaldock;
   }
 
-  public void setInternalDock(Boolean internalDock) {
-    this.internalDock = internalDock;
+  public void setInternaldock(Boolean internaldock) {
+    this.internaldock = internaldock;
   }
 
-  public Docktype debtCorrect(Boolean debtCorrect) {
-    this.debtCorrect = debtCorrect;
+  public Docktype debtcorrect(Boolean debtcorrect) {
+    this.debtcorrect = debtcorrect;
     return this;
   }
 
    /**
-   * Dluh [persistentní položka]
-   * @return debtCorrect
+   * dluh [persistentní položka]
+   * @return debtcorrect
   **/
-  @ApiModelProperty(example = "null", value = "Dluh [persistentní položka]")
-  public Boolean getDebtCorrect() {
-    return debtCorrect;
+  @ApiModelProperty(example = "null", value = "dluh [persistentní položka]")
+  public Boolean getDebtcorrect() {
+    return debtcorrect;
   }
 
-  public void setDebtCorrect(Boolean debtCorrect) {
-    this.debtCorrect = debtCorrect;
+  public void setDebtcorrect(Boolean debtcorrect) {
+    this.debtcorrect = debtcorrect;
   }
 
-  public Docktype compToMinimum(Boolean compToMinimum) {
-    this.compToMinimum = compToMinimum;
+  public Docktype comptominimum(Boolean comptominimum) {
+    this.comptominimum = comptominimum;
     return this;
   }
 
    /**
-   * Minimum [persistentní položka]
-   * @return compToMinimum
+   * minimum [persistentní položka]
+   * @return comptominimum
   **/
-  @ApiModelProperty(example = "null", value = "Minimum [persistentní položka]")
-  public Boolean getCompToMinimum() {
-    return compToMinimum;
+  @ApiModelProperty(example = "null", value = "minimum [persistentní položka]")
+  public Boolean getComptominimum() {
+    return comptominimum;
   }
 
-  public void setCompToMinimum(Boolean compToMinimum) {
-    this.compToMinimum = compToMinimum;
+  public void setComptominimum(Boolean comptominimum) {
+    this.comptominimum = comptominimum;
   }
 
-  public Docktype partialDock(Boolean partialDock) {
-    this.partialDock = partialDock;
+  public Docktype partialdock(Boolean partialdock) {
+    this.partialdock = partialdock;
     return this;
   }
 
    /**
    * Část [persistentní položka]
-   * @return partialDock
+   * @return partialdock
   **/
   @ApiModelProperty(example = "null", value = "Část [persistentní položka]")
-  public Boolean getPartialDock() {
-    return partialDock;
+  public Boolean getPartialdock() {
+    return partialdock;
   }
 
-  public void setPartialDock(Boolean partialDock) {
-    this.partialDock = partialDock;
+  public void setPartialdock(Boolean partialdock) {
+    this.partialdock = partialdock;
   }
 
-  public Docktype printGroup(String printGroup) {
-    this.printGroup = printGroup;
+  public Docktype printgroup(String printgroup) {
+    this.printgroup = printgroup;
     return this;
   }
 
    /**
-   * Tisk [persistentní položka]
-   * @return printGroup
+   * tisk [persistentní položka]
+   * @return printgroup
   **/
-  @ApiModelProperty(example = "null", value = "Tisk [persistentní položka]")
-  public String getPrintGroup() {
-    return printGroup;
+  @ApiModelProperty(example = "null", value = "tisk [persistentní položka]")
+  public String getPrintgroup() {
+    return printgroup;
   }
 
-  public void setPrintGroup(String printGroup) {
-    this.printGroup = printGroup;
+  public void setPrintgroup(String printgroup) {
+    this.printgroup = printgroup;
   }
 
-  public Docktype baseTypeText(String baseTypeText) {
-    this.baseTypeText = baseTypeText;
+  public Docktype basetypetext(String basetypetext) {
+    this.basetypetext = basetypetext;
     return this;
   }
 
    /**
-   * Typ
-   * @return baseTypeText
+   * typ
+   * @return basetypetext
   **/
-  @ApiModelProperty(example = "null", value = "Typ")
-  public String getBaseTypeText() {
-    return baseTypeText;
+  @ApiModelProperty(example = "null", value = "typ")
+  public String getBasetypetext() {
+    return basetypetext;
   }
 
-  public void setBaseTypeText(String baseTypeText) {
-    this.baseTypeText = baseTypeText;
+  public void setBasetypetext(String basetypetext) {
+    this.basetypetext = basetypetext;
   }
 
-  public Docktype agreementDock(Boolean agreementDock) {
-    this.agreementDock = agreementDock;
+  public Docktype agreementdock(Boolean agreementdock) {
+    this.agreementdock = agreementdock;
     return this;
   }
 
    /**
-   * Srážka dohodou [persistentní položka]
-   * @return agreementDock
+   * srážka dohodou [persistentní položka]
+   * @return agreementdock
   **/
-  @ApiModelProperty(example = "null", value = "Srážka dohodou [persistentní položka]")
-  public Boolean getAgreementDock() {
-    return agreementDock;
+  @ApiModelProperty(example = "null", value = "srážka dohodou [persistentní položka]")
+  public Boolean getAgreementdock() {
+    return agreementdock;
   }
 
-  public void setAgreementDock(Boolean agreementDock) {
-    this.agreementDock = agreementDock;
+  public void setAgreementdock(Boolean agreementdock) {
+    this.agreementdock = agreementdock;
   }
 
-  public Docktype dockFromAgreements(Boolean dockFromAgreements) {
-    this.dockFromAgreements = dockFromAgreements;
+  public Docktype dockfromagreements(Boolean dockfromagreements) {
+    this.dockfromagreements = dockfromagreements;
     return this;
   }
 
    /**
-   * Srážet i z dohod [persistentní položka]
-   * @return dockFromAgreements
+   * srážet i z dohod [persistentní položka]
+   * @return dockfromagreements
   **/
-  @ApiModelProperty(example = "null", value = "Srážet i z dohod [persistentní položka]")
-  public Boolean getDockFromAgreements() {
-    return dockFromAgreements;
+  @ApiModelProperty(example = "null", value = "srážet i z dohod [persistentní položka]")
+  public Boolean getDockfromagreements() {
+    return dockfromagreements;
   }
 
-  public void setDockFromAgreements(Boolean dockFromAgreements) {
-    this.dockFromAgreements = dockFromAgreements;
+  public void setDockfromagreements(Boolean dockfromagreements) {
+    this.dockfromagreements = dockfromagreements;
   }
 
 
@@ -367,28 +403,28 @@ public class Docktype   {
       return false;
     }
     Docktype docktype = (Docktype) o;
-    return Objects.equals(this.displayName, docktype.displayName) &&
-        Objects.equals(this.ID, docktype.ID) &&
-        Objects.equals(this.classID, docktype.classID) &&
-        Objects.equals(this.objVersion, docktype.objVersion) &&
+    return Objects.equals(this.displayname, docktype.displayname) &&
+        Objects.equals(this.id, docktype.id) &&
+        Objects.equals(this.classid, docktype.classid) &&
+        Objects.equals(this.objversion, docktype.objversion) &&
         Objects.equals(this.hidden, docktype.hidden) &&
         Objects.equals(this.code, docktype.code) &&
         Objects.equals(this.name, docktype.name) &&
-        Objects.equals(this.baseType, docktype.baseType) &&
+        Objects.equals(this.basetype, docktype.basetype) &&
         Objects.equals(this.periodicity, docktype.periodicity) &&
-        Objects.equals(this.internalDock, docktype.internalDock) &&
-        Objects.equals(this.debtCorrect, docktype.debtCorrect) &&
-        Objects.equals(this.compToMinimum, docktype.compToMinimum) &&
-        Objects.equals(this.partialDock, docktype.partialDock) &&
-        Objects.equals(this.printGroup, docktype.printGroup) &&
-        Objects.equals(this.baseTypeText, docktype.baseTypeText) &&
-        Objects.equals(this.agreementDock, docktype.agreementDock) &&
-        Objects.equals(this.dockFromAgreements, docktype.dockFromAgreements);
+        Objects.equals(this.internaldock, docktype.internaldock) &&
+        Objects.equals(this.debtcorrect, docktype.debtcorrect) &&
+        Objects.equals(this.comptominimum, docktype.comptominimum) &&
+        Objects.equals(this.partialdock, docktype.partialdock) &&
+        Objects.equals(this.printgroup, docktype.printgroup) &&
+        Objects.equals(this.basetypetext, docktype.basetypetext) &&
+        Objects.equals(this.agreementdock, docktype.agreementdock) &&
+        Objects.equals(this.dockfromagreements, docktype.dockfromagreements);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, baseType, periodicity, internalDock, debtCorrect, compToMinimum, partialDock, printGroup, baseTypeText, agreementDock, dockFromAgreements);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, basetype, periodicity, internaldock, debtcorrect, comptominimum, partialdock, printgroup, basetypetext, agreementdock, dockfromagreements);
   }
 
   @Override
@@ -396,23 +432,23 @@ public class Docktype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Docktype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    baseType: ").append(toIndentedString(baseType)).append("\n");
+    sb.append("    basetype: ").append(toIndentedString(basetype)).append("\n");
     sb.append("    periodicity: ").append(toIndentedString(periodicity)).append("\n");
-    sb.append("    internalDock: ").append(toIndentedString(internalDock)).append("\n");
-    sb.append("    debtCorrect: ").append(toIndentedString(debtCorrect)).append("\n");
-    sb.append("    compToMinimum: ").append(toIndentedString(compToMinimum)).append("\n");
-    sb.append("    partialDock: ").append(toIndentedString(partialDock)).append("\n");
-    sb.append("    printGroup: ").append(toIndentedString(printGroup)).append("\n");
-    sb.append("    baseTypeText: ").append(toIndentedString(baseTypeText)).append("\n");
-    sb.append("    agreementDock: ").append(toIndentedString(agreementDock)).append("\n");
-    sb.append("    dockFromAgreements: ").append(toIndentedString(dockFromAgreements)).append("\n");
+    sb.append("    internaldock: ").append(toIndentedString(internaldock)).append("\n");
+    sb.append("    debtcorrect: ").append(toIndentedString(debtcorrect)).append("\n");
+    sb.append("    comptominimum: ").append(toIndentedString(comptominimum)).append("\n");
+    sb.append("    partialdock: ").append(toIndentedString(partialdock)).append("\n");
+    sb.append("    printgroup: ").append(toIndentedString(printgroup)).append("\n");
+    sb.append("    basetypetext: ").append(toIndentedString(basetypetext)).append("\n");
+    sb.append("    agreementdock: ").append(toIndentedString(agreementdock)).append("\n");
+    sb.append("    dockfromagreements: ").append(toIndentedString(dockfromagreements)).append("\n");
     sb.append("}");
     return sb.toString();
   }

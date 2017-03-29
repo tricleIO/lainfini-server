@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,81 +34,117 @@ import java.util.Objects;
 /**
  * Drcarticle
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Drcarticle   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("OutOfUse")
-  private Boolean outOfUse = null;
+  @SerializedName("outofuse")
+  private Boolean outofuse = null;
 
-  @SerializedName("LimitAmount")
-  private Double limitAmount = null;
+  @SerializedName("limitamount")
+  private Double limitamount = null;
 
-  @SerializedName("LimitGroup")
-  private String limitGroup = null;
+  @SerializedName("limitgroup")
+  private String limitgroup = null;
 
-  @SerializedName("Country_ID")
-  private String countryID = null;
+  @SerializedName("country_id")
+  private String countryId = null;
 
-  @SerializedName("VATCheckReportKind")
-  private Integer vATCheckReportKind = null;
+  @SerializedName("vatcheckreportkind")
+  private Integer vatcheckreportkind = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Drcarticle displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Drcarticle id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Drcarticle classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Drcarticle objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Drcarticle hidden(Boolean hidden) {
@@ -117,10 +153,10 @@ public class Drcarticle   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -135,10 +171,10 @@ public class Drcarticle   {
   }
 
    /**
-   * Kód typu [persistentní položka]
+   * kód typu [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód typu [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód typu [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -153,10 +189,10 @@ public class Drcarticle   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -165,112 +201,112 @@ public class Drcarticle   {
     this.name = name;
   }
 
-  public Drcarticle qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Drcarticle qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Vykazovaná jednotka [persistentní položka]
-   * @return qUnit
+   * vykazovaná jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Vykazovaná jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "vykazovaná jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
   }
 
-  public Drcarticle outOfUse(Boolean outOfUse) {
-    this.outOfUse = outOfUse;
+  public Drcarticle outofuse(Boolean outofuse) {
+    this.outofuse = outofuse;
     return this;
   }
 
    /**
-   * Nepoužívaný [persistentní položka]
-   * @return outOfUse
+   * nepoužívaný [persistentní položka]
+   * @return outofuse
   **/
-  @ApiModelProperty(example = "null", value = "Nepoužívaný [persistentní položka]")
-  public Boolean getOutOfUse() {
-    return outOfUse;
+  @ApiModelProperty(example = "null", value = "nepoužívaný [persistentní položka]")
+  public Boolean getOutofuse() {
+    return outofuse;
   }
 
-  public void setOutOfUse(Boolean outOfUse) {
-    this.outOfUse = outOfUse;
+  public void setOutofuse(Boolean outofuse) {
+    this.outofuse = outofuse;
   }
 
-  public Drcarticle limitAmount(Double limitAmount) {
-    this.limitAmount = limitAmount;
+  public Drcarticle limitamount(Double limitamount) {
+    this.limitamount = limitamount;
     return this;
   }
 
    /**
-   * Limit [persistentní položka]
-   * @return limitAmount
+   * limit [persistentní položka]
+   * @return limitamount
   **/
-  @ApiModelProperty(example = "null", value = "Limit [persistentní položka]")
-  public Double getLimitAmount() {
-    return limitAmount;
+  @ApiModelProperty(example = "null", value = "limit [persistentní položka]")
+  public Double getLimitamount() {
+    return limitamount;
   }
 
-  public void setLimitAmount(Double limitAmount) {
-    this.limitAmount = limitAmount;
+  public void setLimitamount(Double limitamount) {
+    this.limitamount = limitamount;
   }
 
-  public Drcarticle limitGroup(String limitGroup) {
-    this.limitGroup = limitGroup;
+  public Drcarticle limitgroup(String limitgroup) {
+    this.limitgroup = limitgroup;
     return this;
   }
 
    /**
-   * Skupina pro limit [persistentní položka]
-   * @return limitGroup
+   * skupina pro limit [persistentní položka]
+   * @return limitgroup
   **/
-  @ApiModelProperty(example = "null", value = "Skupina pro limit [persistentní položka]")
-  public String getLimitGroup() {
-    return limitGroup;
+  @ApiModelProperty(example = "null", value = "skupina pro limit [persistentní položka]")
+  public String getLimitgroup() {
+    return limitgroup;
   }
 
-  public void setLimitGroup(String limitGroup) {
-    this.limitGroup = limitGroup;
+  public void setLimitgroup(String limitgroup) {
+    this.limitgroup = limitgroup;
   }
 
-  public Drcarticle countryID(String countryID) {
-    this.countryID = countryID;
+  public Drcarticle countryId(String countryId) {
+    this.countryId = countryId;
     return this;
   }
 
    /**
-   * Země; ID objektu Země [persistentní položka]
-   * @return countryID
+   * země; id objektu země [persistentní položka]
+   * @return countryId
   **/
-  @ApiModelProperty(example = "null", value = "Země; ID objektu Země [persistentní položka]")
-  public String getCountryID() {
-    return countryID;
+  @ApiModelProperty(example = "null", value = "země; id objektu země [persistentní položka]")
+  public String getCountryId() {
+    return countryId;
   }
 
-  public void setCountryID(String countryID) {
-    this.countryID = countryID;
+  public void setCountryId(String countryId) {
+    this.countryId = countryId;
   }
 
-  public Drcarticle vATCheckReportKind(Integer vATCheckReportKind) {
-    this.vATCheckReportKind = vATCheckReportKind;
+  public Drcarticle vatcheckreportkind(Integer vatcheckreportkind) {
+    this.vatcheckreportkind = vatcheckreportkind;
     return this;
   }
 
    /**
-   * Do KV DPH [persistentní položka]
-   * @return vATCheckReportKind
+   * do kv dph [persistentní položka]
+   * @return vatcheckreportkind
   **/
-  @ApiModelProperty(example = "null", value = "Do KV DPH [persistentní položka]")
-  public Integer getVATCheckReportKind() {
-    return vATCheckReportKind;
+  @ApiModelProperty(example = "null", value = "do kv dph [persistentní položka]")
+  public Integer getVatcheckreportkind() {
+    return vatcheckreportkind;
   }
 
-  public void setVATCheckReportKind(Integer vATCheckReportKind) {
-    this.vATCheckReportKind = vATCheckReportKind;
+  public void setVatcheckreportkind(Integer vatcheckreportkind) {
+    this.vatcheckreportkind = vatcheckreportkind;
   }
 
 
@@ -283,24 +319,24 @@ public class Drcarticle   {
       return false;
     }
     Drcarticle drcarticle = (Drcarticle) o;
-    return Objects.equals(this.displayName, drcarticle.displayName) &&
-        Objects.equals(this.ID, drcarticle.ID) &&
-        Objects.equals(this.classID, drcarticle.classID) &&
-        Objects.equals(this.objVersion, drcarticle.objVersion) &&
+    return Objects.equals(this.displayname, drcarticle.displayname) &&
+        Objects.equals(this.id, drcarticle.id) &&
+        Objects.equals(this.classid, drcarticle.classid) &&
+        Objects.equals(this.objversion, drcarticle.objversion) &&
         Objects.equals(this.hidden, drcarticle.hidden) &&
         Objects.equals(this.code, drcarticle.code) &&
         Objects.equals(this.name, drcarticle.name) &&
-        Objects.equals(this.qUnit, drcarticle.qUnit) &&
-        Objects.equals(this.outOfUse, drcarticle.outOfUse) &&
-        Objects.equals(this.limitAmount, drcarticle.limitAmount) &&
-        Objects.equals(this.limitGroup, drcarticle.limitGroup) &&
-        Objects.equals(this.countryID, drcarticle.countryID) &&
-        Objects.equals(this.vATCheckReportKind, drcarticle.vATCheckReportKind);
+        Objects.equals(this.qunit, drcarticle.qunit) &&
+        Objects.equals(this.outofuse, drcarticle.outofuse) &&
+        Objects.equals(this.limitamount, drcarticle.limitamount) &&
+        Objects.equals(this.limitgroup, drcarticle.limitgroup) &&
+        Objects.equals(this.countryId, drcarticle.countryId) &&
+        Objects.equals(this.vatcheckreportkind, drcarticle.vatcheckreportkind);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, qUnit, outOfUse, limitAmount, limitGroup, countryID, vATCheckReportKind);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, qunit, outofuse, limitamount, limitgroup, countryId, vatcheckreportkind);
   }
 
   @Override
@@ -308,19 +344,19 @@ public class Drcarticle   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Drcarticle {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    outOfUse: ").append(toIndentedString(outOfUse)).append("\n");
-    sb.append("    limitAmount: ").append(toIndentedString(limitAmount)).append("\n");
-    sb.append("    limitGroup: ").append(toIndentedString(limitGroup)).append("\n");
-    sb.append("    countryID: ").append(toIndentedString(countryID)).append("\n");
-    sb.append("    vATCheckReportKind: ").append(toIndentedString(vATCheckReportKind)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    outofuse: ").append(toIndentedString(outofuse)).append("\n");
+    sb.append("    limitamount: ").append(toIndentedString(limitamount)).append("\n");
+    sb.append("    limitgroup: ").append(toIndentedString(limitgroup)).append("\n");
+    sb.append("    countryId: ").append(toIndentedString(countryId)).append("\n");
+    sb.append("    vatcheckreportkind: ").append(toIndentedString(vatcheckreportkind)).append("\n");
     sb.append("}");
     return sb.toString();
   }

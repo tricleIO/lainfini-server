@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,150 +34,195 @@ import java.util.Objects;
 /**
  * Plmtariffrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmtariffrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("WorkPlace_ID")
-  private String workPlaceID = null;
+  @SerializedName("workplace_id")
+  private String workplaceId = null;
 
-  @SerializedName("OverheadCosts")
-  private Double overheadCosts = null;
+  @SerializedName("overheadcosts")
+  private Double overheadcosts = null;
 
-  @SerializedName("OverheadCostsPerc")
-  private Double overheadCostsPerc = null;
+  @SerializedName("overheadcostsperc")
+  private Double overheadcostsperc = null;
 
-  @SerializedName("GeneralExpense")
-  private Double generalExpense = null;
+  @SerializedName("generalexpense")
+  private Double generalexpense = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Režijní sazba [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Režijní sazba [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Plmtariffrow workPlaceID(String workPlaceID) {
-    this.workPlaceID = workPlaceID;
+  public Plmtariffrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pracoviště; ID objektu Pracoviště a stroj [persistentní položka]
-   * @return workPlaceID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pracoviště; ID objektu Pracoviště a stroj [persistentní položka]")
-  public String getWorkPlaceID() {
-    return workPlaceID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setWorkPlaceID(String workPlaceID) {
-    this.workPlaceID = workPlaceID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Plmtariffrow overheadCosts(Double overheadCosts) {
-    this.overheadCosts = overheadCosts;
+  public Plmtariffrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Výrobní režie/hod. [persistentní položka]
-   * @return overheadCosts
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Výrobní režie/hod. [persistentní položka]")
-  public Double getOverheadCosts() {
-    return overheadCosts;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setOverheadCosts(Double overheadCosts) {
-    this.overheadCosts = overheadCosts;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Plmtariffrow overheadCostsPerc(Double overheadCostsPerc) {
-    this.overheadCostsPerc = overheadCostsPerc;
+  public Plmtariffrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Výrobní režie (%) [persistentní položka]
-   * @return overheadCostsPerc
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Výrobní režie (%) [persistentní položka]")
-  public Double getOverheadCostsPerc() {
-    return overheadCostsPerc;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setOverheadCostsPerc(Double overheadCostsPerc) {
-    this.overheadCostsPerc = overheadCostsPerc;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Plmtariffrow generalExpense(Double generalExpense) {
-    this.generalExpense = generalExpense;
+  public Plmtariffrow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Správní režie (%) [persistentní položka]
-   * @return generalExpense
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Správní režie (%) [persistentní položka]")
-  public Double getGeneralExpense() {
-    return generalExpense;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setGeneralExpense(Double generalExpense) {
-    this.generalExpense = generalExpense;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Plmtariffrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu režijní sazba [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu režijní sazba [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Plmtariffrow workplaceId(String workplaceId) {
+    this.workplaceId = workplaceId;
+    return this;
+  }
+
+   /**
+   * pracoviště; id objektu pracoviště a stroj [persistentní položka]
+   * @return workplaceId
+  **/
+  @ApiModelProperty(example = "null", value = "pracoviště; id objektu pracoviště a stroj [persistentní položka]")
+  public String getWorkplaceId() {
+    return workplaceId;
+  }
+
+  public void setWorkplaceId(String workplaceId) {
+    this.workplaceId = workplaceId;
+  }
+
+  public Plmtariffrow overheadcosts(Double overheadcosts) {
+    this.overheadcosts = overheadcosts;
+    return this;
+  }
+
+   /**
+   * výrobní režie/hod. [persistentní položka]
+   * @return overheadcosts
+  **/
+  @ApiModelProperty(example = "null", value = "výrobní režie/hod. [persistentní položka]")
+  public Double getOverheadcosts() {
+    return overheadcosts;
+  }
+
+  public void setOverheadcosts(Double overheadcosts) {
+    this.overheadcosts = overheadcosts;
+  }
+
+  public Plmtariffrow overheadcostsperc(Double overheadcostsperc) {
+    this.overheadcostsperc = overheadcostsperc;
+    return this;
+  }
+
+   /**
+   * výrobní režie (%) [persistentní položka]
+   * @return overheadcostsperc
+  **/
+  @ApiModelProperty(example = "null", value = "výrobní režie (%) [persistentní položka]")
+  public Double getOverheadcostsperc() {
+    return overheadcostsperc;
+  }
+
+  public void setOverheadcostsperc(Double overheadcostsperc) {
+    this.overheadcostsperc = overheadcostsperc;
+  }
+
+  public Plmtariffrow generalexpense(Double generalexpense) {
+    this.generalexpense = generalexpense;
+    return this;
+  }
+
+   /**
+   * správní režie (%) [persistentní položka]
+   * @return generalexpense
+  **/
+  @ApiModelProperty(example = "null", value = "správní režie (%) [persistentní položka]")
+  public Double getGeneralexpense() {
+    return generalexpense;
+  }
+
+  public void setGeneralexpense(Double generalexpense) {
+    this.generalexpense = generalexpense;
   }
 
 
@@ -190,20 +235,20 @@ public class Plmtariffrow   {
       return false;
     }
     Plmtariffrow plmtariffrow = (Plmtariffrow) o;
-    return Objects.equals(this.displayName, plmtariffrow.displayName) &&
-        Objects.equals(this.ID, plmtariffrow.ID) &&
-        Objects.equals(this.classID, plmtariffrow.classID) &&
-        Objects.equals(this.objVersion, plmtariffrow.objVersion) &&
-        Objects.equals(this.parentID, plmtariffrow.parentID) &&
-        Objects.equals(this.workPlaceID, plmtariffrow.workPlaceID) &&
-        Objects.equals(this.overheadCosts, plmtariffrow.overheadCosts) &&
-        Objects.equals(this.overheadCostsPerc, plmtariffrow.overheadCostsPerc) &&
-        Objects.equals(this.generalExpense, plmtariffrow.generalExpense);
+    return Objects.equals(this.displayname, plmtariffrow.displayname) &&
+        Objects.equals(this.id, plmtariffrow.id) &&
+        Objects.equals(this.classid, plmtariffrow.classid) &&
+        Objects.equals(this.objversion, plmtariffrow.objversion) &&
+        Objects.equals(this.parentId, plmtariffrow.parentId) &&
+        Objects.equals(this.workplaceId, plmtariffrow.workplaceId) &&
+        Objects.equals(this.overheadcosts, plmtariffrow.overheadcosts) &&
+        Objects.equals(this.overheadcostsperc, plmtariffrow.overheadcostsperc) &&
+        Objects.equals(this.generalexpense, plmtariffrow.generalexpense);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, workPlaceID, overheadCosts, overheadCostsPerc, generalExpense);
+    return Objects.hash(displayname, id, classid, objversion, parentId, workplaceId, overheadcosts, overheadcostsperc, generalexpense);
   }
 
   @Override
@@ -211,15 +256,15 @@ public class Plmtariffrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmtariffrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    workPlaceID: ").append(toIndentedString(workPlaceID)).append("\n");
-    sb.append("    overheadCosts: ").append(toIndentedString(overheadCosts)).append("\n");
-    sb.append("    overheadCostsPerc: ").append(toIndentedString(overheadCostsPerc)).append("\n");
-    sb.append("    generalExpense: ").append(toIndentedString(generalExpense)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    workplaceId: ").append(toIndentedString(workplaceId)).append("\n");
+    sb.append("    overheadcosts: ").append(toIndentedString(overheadcosts)).append("\n");
+    sb.append("    overheadcostsperc: ").append(toIndentedString(overheadcostsperc)).append("\n");
+    sb.append("    generalexpense: ").append(toIndentedString(generalexpense)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,180 +35,216 @@ import java.util.Objects;
 /**
  * Intrastatexchangeratehistory
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Intrastatexchangeratehistory   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Date$DATE")
-  private DateTime dateDATE = null;
+  @SerializedName("date$date")
+  private DateTime datedate = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("CurrRate")
-  private Double currRate = null;
+  @SerializedName("currrate")
+  private Double currrate = null;
 
-  @SerializedName("RefCurrRate")
-  private Double refCurrRate = null;
+  @SerializedName("refcurrrate")
+  private Double refcurrrate = null;
 
-  @SerializedName("YearByDate")
-  private Integer yearByDate = null;
+  @SerializedName("yearbydate")
+  private Integer yearbydate = null;
 
-  @SerializedName("MonthByDate")
-  private Integer monthByDate = null;
+  @SerializedName("monthbydate")
+  private Integer monthbydate = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Intrastatexchangeratehistory dateDATE(DateTime dateDATE) {
-    this.dateDATE = dateDATE;
+  public Intrastatexchangeratehistory displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum [persistentní položka]
-   * @return dateDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum [persistentní položka]")
-  public DateTime getDateDATE() {
-    return dateDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateDATE(DateTime dateDATE) {
-    this.dateDATE = dateDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Intrastatexchangeratehistory parentID(String parentID) {
-    this.parentID = parentID;
+  public Intrastatexchangeratehistory id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * ID lístku [persistentní položka]
-   * @return parentID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID lístku [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setParentID(String parentID) {
-    this.parentID = parentID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Intrastatexchangeratehistory currRate(Double currRate) {
-    this.currRate = currRate;
+  public Intrastatexchangeratehistory classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Kurz [persistentní položka]
-   * @return currRate
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Kurz [persistentní položka]")
-  public Double getCurrRate() {
-    return currRate;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setCurrRate(Double currRate) {
-    this.currRate = currRate;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Intrastatexchangeratehistory refCurrRate(Double refCurrRate) {
-    this.refCurrRate = refCurrRate;
+  public Intrastatexchangeratehistory objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Kurz vztažný [persistentní položka]
-   * @return refCurrRate
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Kurz vztažný [persistentní položka]")
-  public Double getRefCurrRate() {
-    return refCurrRate;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setRefCurrRate(Double refCurrRate) {
-    this.refCurrRate = refCurrRate;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Intrastatexchangeratehistory yearByDate(Integer yearByDate) {
-    this.yearByDate = yearByDate;
+  public Intrastatexchangeratehistory datedate(DateTime datedate) {
+    this.datedate = datedate;
     return this;
   }
 
    /**
-   * Rok
-   * @return yearByDate
+   * datum [persistentní položka]
+   * @return datedate
   **/
-  @ApiModelProperty(example = "null", value = "Rok")
-  public Integer getYearByDate() {
-    return yearByDate;
+  @ApiModelProperty(example = "null", value = "datum [persistentní položka]")
+  public DateTime getDatedate() {
+    return datedate;
   }
 
-  public void setYearByDate(Integer yearByDate) {
-    this.yearByDate = yearByDate;
+  public void setDatedate(DateTime datedate) {
+    this.datedate = datedate;
   }
 
-  public Intrastatexchangeratehistory monthByDate(Integer monthByDate) {
-    this.monthByDate = monthByDate;
+  public Intrastatexchangeratehistory parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Měsíc
-   * @return monthByDate
+   * id lístku [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Měsíc")
-  public Integer getMonthByDate() {
-    return monthByDate;
+  @ApiModelProperty(example = "null", value = "id lístku [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setMonthByDate(Integer monthByDate) {
-    this.monthByDate = monthByDate;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Intrastatexchangeratehistory currrate(Double currrate) {
+    this.currrate = currrate;
+    return this;
+  }
+
+   /**
+   * kurz [persistentní položka]
+   * @return currrate
+  **/
+  @ApiModelProperty(example = "null", value = "kurz [persistentní položka]")
+  public Double getCurrrate() {
+    return currrate;
+  }
+
+  public void setCurrrate(Double currrate) {
+    this.currrate = currrate;
+  }
+
+  public Intrastatexchangeratehistory refcurrrate(Double refcurrrate) {
+    this.refcurrrate = refcurrrate;
+    return this;
+  }
+
+   /**
+   * kurz vztažný [persistentní položka]
+   * @return refcurrrate
+  **/
+  @ApiModelProperty(example = "null", value = "kurz vztažný [persistentní položka]")
+  public Double getRefcurrrate() {
+    return refcurrrate;
+  }
+
+  public void setRefcurrrate(Double refcurrrate) {
+    this.refcurrrate = refcurrrate;
+  }
+
+  public Intrastatexchangeratehistory yearbydate(Integer yearbydate) {
+    this.yearbydate = yearbydate;
+    return this;
+  }
+
+   /**
+   * rok
+   * @return yearbydate
+  **/
+  @ApiModelProperty(example = "null", value = "rok")
+  public Integer getYearbydate() {
+    return yearbydate;
+  }
+
+  public void setYearbydate(Integer yearbydate) {
+    this.yearbydate = yearbydate;
+  }
+
+  public Intrastatexchangeratehistory monthbydate(Integer monthbydate) {
+    this.monthbydate = monthbydate;
+    return this;
+  }
+
+   /**
+   * měsíc
+   * @return monthbydate
+  **/
+  @ApiModelProperty(example = "null", value = "měsíc")
+  public Integer getMonthbydate() {
+    return monthbydate;
+  }
+
+  public void setMonthbydate(Integer monthbydate) {
+    this.monthbydate = monthbydate;
   }
 
 
@@ -221,21 +257,21 @@ public class Intrastatexchangeratehistory   {
       return false;
     }
     Intrastatexchangeratehistory intrastatexchangeratehistory = (Intrastatexchangeratehistory) o;
-    return Objects.equals(this.displayName, intrastatexchangeratehistory.displayName) &&
-        Objects.equals(this.ID, intrastatexchangeratehistory.ID) &&
-        Objects.equals(this.classID, intrastatexchangeratehistory.classID) &&
-        Objects.equals(this.objVersion, intrastatexchangeratehistory.objVersion) &&
-        Objects.equals(this.dateDATE, intrastatexchangeratehistory.dateDATE) &&
-        Objects.equals(this.parentID, intrastatexchangeratehistory.parentID) &&
-        Objects.equals(this.currRate, intrastatexchangeratehistory.currRate) &&
-        Objects.equals(this.refCurrRate, intrastatexchangeratehistory.refCurrRate) &&
-        Objects.equals(this.yearByDate, intrastatexchangeratehistory.yearByDate) &&
-        Objects.equals(this.monthByDate, intrastatexchangeratehistory.monthByDate);
+    return Objects.equals(this.displayname, intrastatexchangeratehistory.displayname) &&
+        Objects.equals(this.id, intrastatexchangeratehistory.id) &&
+        Objects.equals(this.classid, intrastatexchangeratehistory.classid) &&
+        Objects.equals(this.objversion, intrastatexchangeratehistory.objversion) &&
+        Objects.equals(this.datedate, intrastatexchangeratehistory.datedate) &&
+        Objects.equals(this.parentId, intrastatexchangeratehistory.parentId) &&
+        Objects.equals(this.currrate, intrastatexchangeratehistory.currrate) &&
+        Objects.equals(this.refcurrrate, intrastatexchangeratehistory.refcurrrate) &&
+        Objects.equals(this.yearbydate, intrastatexchangeratehistory.yearbydate) &&
+        Objects.equals(this.monthbydate, intrastatexchangeratehistory.monthbydate);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, dateDATE, parentID, currRate, refCurrRate, yearByDate, monthByDate);
+    return Objects.hash(displayname, id, classid, objversion, datedate, parentId, currrate, refcurrrate, yearbydate, monthbydate);
   }
 
   @Override
@@ -243,16 +279,16 @@ public class Intrastatexchangeratehistory   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Intrastatexchangeratehistory {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    dateDATE: ").append(toIndentedString(dateDATE)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    currRate: ").append(toIndentedString(currRate)).append("\n");
-    sb.append("    refCurrRate: ").append(toIndentedString(refCurrRate)).append("\n");
-    sb.append("    yearByDate: ").append(toIndentedString(yearByDate)).append("\n");
-    sb.append("    monthByDate: ").append(toIndentedString(monthByDate)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    datedate: ").append(toIndentedString(datedate)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    currrate: ").append(toIndentedString(currrate)).append("\n");
+    sb.append("    refcurrrate: ").append(toIndentedString(refcurrrate)).append("\n");
+    sb.append("    yearbydate: ").append(toIndentedString(yearbydate)).append("\n");
+    sb.append("    monthbydate: ").append(toIndentedString(monthbydate)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,213 +35,258 @@ import java.util.Objects;
 /**
  * Vatregistrationrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Vatregistrationrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("DateOfChange$DATE")
-  private DateTime dateOfChangeDATE = null;
+  @SerializedName("dateofchange$date")
+  private DateTime dateofchangedate = null;
 
-  @SerializedName("VATPayor")
-  private Boolean vATPayor = null;
+  @SerializedName("vatpayor")
+  private Boolean vatpayor = null;
 
-  @SerializedName("VATIdentNumber")
-  private String vATIdentNumber = null;
+  @SerializedName("vatidentnumber")
+  private String vatidentnumber = null;
 
-  @SerializedName("CompanyName")
-  private String companyName = null;
+  @SerializedName("companyname")
+  private String companyname = null;
 
-  @SerializedName("MOSSStateOfID")
-  private Boolean mOSSStateOfID = null;
+  @SerializedName("mossstateofid")
+  private Boolean mossstateofid = null;
 
-  @SerializedName("MOSSAllowed")
-  private Boolean mOSSAllowed = null;
+  @SerializedName("mossallowed")
+  private Boolean mossallowed = null;
 
-  @SerializedName("VATByPayment")
-  private Boolean vATByPayment = null;
+  @SerializedName("vatbypayment")
+  private Boolean vatbypayment = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu DPH registrace v zemi EU [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu DPH registrace v zemi EU [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Vatregistrationrow dateOfChangeDATE(DateTime dateOfChangeDATE) {
-    this.dateOfChangeDATE = dateOfChangeDATE;
+  public Vatregistrationrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum změny [persistentní položka]
-   * @return dateOfChangeDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum změny [persistentní položka]")
-  public DateTime getDateOfChangeDATE() {
-    return dateOfChangeDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateOfChangeDATE(DateTime dateOfChangeDATE) {
-    this.dateOfChangeDATE = dateOfChangeDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Vatregistrationrow vATPayor(Boolean vATPayor) {
-    this.vATPayor = vATPayor;
+  public Vatregistrationrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Plátce DPH [persistentní položka]
-   * @return vATPayor
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Plátce DPH [persistentní položka]")
-  public Boolean getVATPayor() {
-    return vATPayor;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setVATPayor(Boolean vATPayor) {
-    this.vATPayor = vATPayor;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Vatregistrationrow vATIdentNumber(String vATIdentNumber) {
-    this.vATIdentNumber = vATIdentNumber;
+  public Vatregistrationrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * DIČ v dané zemi [persistentní položka]
-   * @return vATIdentNumber
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "DIČ v dané zemi [persistentní položka]")
-  public String getVATIdentNumber() {
-    return vATIdentNumber;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setVATIdentNumber(String vATIdentNumber) {
-    this.vATIdentNumber = vATIdentNumber;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Vatregistrationrow companyName(String companyName) {
-    this.companyName = companyName;
+  public Vatregistrationrow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Název firmy [persistentní položka]
-   * @return companyName
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Název firmy [persistentní položka]")
-  public String getCompanyName() {
-    return companyName;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setCompanyName(String companyName) {
-    this.companyName = companyName;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Vatregistrationrow mOSSStateOfID(Boolean mOSSStateOfID) {
-    this.mOSSStateOfID = mOSSStateOfID;
+  public Vatregistrationrow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Stát identifikace [persistentní položka]
-   * @return mOSSStateOfID
+   * vlastník; id objektu dph registrace v zemi eu [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Stát identifikace [persistentní položka]")
-  public Boolean getMOSSStateOfID() {
-    return mOSSStateOfID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu dph registrace v zemi eu [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setMOSSStateOfID(Boolean mOSSStateOfID) {
-    this.mOSSStateOfID = mOSSStateOfID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Vatregistrationrow mOSSAllowed(Boolean mOSSAllowed) {
-    this.mOSSAllowed = mOSSAllowed;
+  public Vatregistrationrow dateofchangedate(DateTime dateofchangedate) {
+    this.dateofchangedate = dateofchangedate;
     return this;
   }
 
    /**
-   * Režim MOSS [persistentní položka]
-   * @return mOSSAllowed
+   * datum změny [persistentní položka]
+   * @return dateofchangedate
   **/
-  @ApiModelProperty(example = "null", value = "Režim MOSS [persistentní položka]")
-  public Boolean getMOSSAllowed() {
-    return mOSSAllowed;
+  @ApiModelProperty(example = "null", value = "datum změny [persistentní položka]")
+  public DateTime getDateofchangedate() {
+    return dateofchangedate;
   }
 
-  public void setMOSSAllowed(Boolean mOSSAllowed) {
-    this.mOSSAllowed = mOSSAllowed;
+  public void setDateofchangedate(DateTime dateofchangedate) {
+    this.dateofchangedate = dateofchangedate;
   }
 
-  public Vatregistrationrow vATByPayment(Boolean vATByPayment) {
-    this.vATByPayment = vATByPayment;
+  public Vatregistrationrow vatpayor(Boolean vatpayor) {
+    this.vatpayor = vatpayor;
     return this;
   }
 
    /**
-   * Uplatnění DPH na základě přijetí platby [persistentní položka]
-   * @return vATByPayment
+   * plátce dph [persistentní položka]
+   * @return vatpayor
   **/
-  @ApiModelProperty(example = "null", value = "Uplatnění DPH na základě přijetí platby [persistentní položka]")
-  public Boolean getVATByPayment() {
-    return vATByPayment;
+  @ApiModelProperty(example = "null", value = "plátce dph [persistentní položka]")
+  public Boolean getVatpayor() {
+    return vatpayor;
   }
 
-  public void setVATByPayment(Boolean vATByPayment) {
-    this.vATByPayment = vATByPayment;
+  public void setVatpayor(Boolean vatpayor) {
+    this.vatpayor = vatpayor;
+  }
+
+  public Vatregistrationrow vatidentnumber(String vatidentnumber) {
+    this.vatidentnumber = vatidentnumber;
+    return this;
+  }
+
+   /**
+   * diČ v dané zemi [persistentní položka]
+   * @return vatidentnumber
+  **/
+  @ApiModelProperty(example = "null", value = "diČ v dané zemi [persistentní položka]")
+  public String getVatidentnumber() {
+    return vatidentnumber;
+  }
+
+  public void setVatidentnumber(String vatidentnumber) {
+    this.vatidentnumber = vatidentnumber;
+  }
+
+  public Vatregistrationrow companyname(String companyname) {
+    this.companyname = companyname;
+    return this;
+  }
+
+   /**
+   * název firmy [persistentní položka]
+   * @return companyname
+  **/
+  @ApiModelProperty(example = "null", value = "název firmy [persistentní položka]")
+  public String getCompanyname() {
+    return companyname;
+  }
+
+  public void setCompanyname(String companyname) {
+    this.companyname = companyname;
+  }
+
+  public Vatregistrationrow mossstateofid(Boolean mossstateofid) {
+    this.mossstateofid = mossstateofid;
+    return this;
+  }
+
+   /**
+   * stát identifikace [persistentní položka]
+   * @return mossstateofid
+  **/
+  @ApiModelProperty(example = "null", value = "stát identifikace [persistentní položka]")
+  public Boolean getMossstateofid() {
+    return mossstateofid;
+  }
+
+  public void setMossstateofid(Boolean mossstateofid) {
+    this.mossstateofid = mossstateofid;
+  }
+
+  public Vatregistrationrow mossallowed(Boolean mossallowed) {
+    this.mossallowed = mossallowed;
+    return this;
+  }
+
+   /**
+   * režim moss [persistentní položka]
+   * @return mossallowed
+  **/
+  @ApiModelProperty(example = "null", value = "režim moss [persistentní položka]")
+  public Boolean getMossallowed() {
+    return mossallowed;
+  }
+
+  public void setMossallowed(Boolean mossallowed) {
+    this.mossallowed = mossallowed;
+  }
+
+  public Vatregistrationrow vatbypayment(Boolean vatbypayment) {
+    this.vatbypayment = vatbypayment;
+    return this;
+  }
+
+   /**
+   * uplatnění dph na základě přijetí platby [persistentní položka]
+   * @return vatbypayment
+  **/
+  @ApiModelProperty(example = "null", value = "uplatnění dph na základě přijetí platby [persistentní položka]")
+  public Boolean getVatbypayment() {
+    return vatbypayment;
+  }
+
+  public void setVatbypayment(Boolean vatbypayment) {
+    this.vatbypayment = vatbypayment;
   }
 
 
@@ -254,23 +299,23 @@ public class Vatregistrationrow   {
       return false;
     }
     Vatregistrationrow vatregistrationrow = (Vatregistrationrow) o;
-    return Objects.equals(this.displayName, vatregistrationrow.displayName) &&
-        Objects.equals(this.ID, vatregistrationrow.ID) &&
-        Objects.equals(this.classID, vatregistrationrow.classID) &&
-        Objects.equals(this.objVersion, vatregistrationrow.objVersion) &&
-        Objects.equals(this.parentID, vatregistrationrow.parentID) &&
-        Objects.equals(this.dateOfChangeDATE, vatregistrationrow.dateOfChangeDATE) &&
-        Objects.equals(this.vATPayor, vatregistrationrow.vATPayor) &&
-        Objects.equals(this.vATIdentNumber, vatregistrationrow.vATIdentNumber) &&
-        Objects.equals(this.companyName, vatregistrationrow.companyName) &&
-        Objects.equals(this.mOSSStateOfID, vatregistrationrow.mOSSStateOfID) &&
-        Objects.equals(this.mOSSAllowed, vatregistrationrow.mOSSAllowed) &&
-        Objects.equals(this.vATByPayment, vatregistrationrow.vATByPayment);
+    return Objects.equals(this.displayname, vatregistrationrow.displayname) &&
+        Objects.equals(this.id, vatregistrationrow.id) &&
+        Objects.equals(this.classid, vatregistrationrow.classid) &&
+        Objects.equals(this.objversion, vatregistrationrow.objversion) &&
+        Objects.equals(this.parentId, vatregistrationrow.parentId) &&
+        Objects.equals(this.dateofchangedate, vatregistrationrow.dateofchangedate) &&
+        Objects.equals(this.vatpayor, vatregistrationrow.vatpayor) &&
+        Objects.equals(this.vatidentnumber, vatregistrationrow.vatidentnumber) &&
+        Objects.equals(this.companyname, vatregistrationrow.companyname) &&
+        Objects.equals(this.mossstateofid, vatregistrationrow.mossstateofid) &&
+        Objects.equals(this.mossallowed, vatregistrationrow.mossallowed) &&
+        Objects.equals(this.vatbypayment, vatregistrationrow.vatbypayment);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, dateOfChangeDATE, vATPayor, vATIdentNumber, companyName, mOSSStateOfID, mOSSAllowed, vATByPayment);
+    return Objects.hash(displayname, id, classid, objversion, parentId, dateofchangedate, vatpayor, vatidentnumber, companyname, mossstateofid, mossallowed, vatbypayment);
   }
 
   @Override
@@ -278,18 +323,18 @@ public class Vatregistrationrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Vatregistrationrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    dateOfChangeDATE: ").append(toIndentedString(dateOfChangeDATE)).append("\n");
-    sb.append("    vATPayor: ").append(toIndentedString(vATPayor)).append("\n");
-    sb.append("    vATIdentNumber: ").append(toIndentedString(vATIdentNumber)).append("\n");
-    sb.append("    companyName: ").append(toIndentedString(companyName)).append("\n");
-    sb.append("    mOSSStateOfID: ").append(toIndentedString(mOSSStateOfID)).append("\n");
-    sb.append("    mOSSAllowed: ").append(toIndentedString(mOSSAllowed)).append("\n");
-    sb.append("    vATByPayment: ").append(toIndentedString(vATByPayment)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    dateofchangedate: ").append(toIndentedString(dateofchangedate)).append("\n");
+    sb.append("    vatpayor: ").append(toIndentedString(vatpayor)).append("\n");
+    sb.append("    vatidentnumber: ").append(toIndentedString(vatidentnumber)).append("\n");
+    sb.append("    companyname: ").append(toIndentedString(companyname)).append("\n");
+    sb.append("    mossstateofid: ").append(toIndentedString(mossstateofid)).append("\n");
+    sb.append("    mossallowed: ").append(toIndentedString(mossallowed)).append("\n");
+    sb.append("    vatbypayment: ").append(toIndentedString(vatbypayment)).append("\n");
     sb.append("}");
     return sb.toString();
   }

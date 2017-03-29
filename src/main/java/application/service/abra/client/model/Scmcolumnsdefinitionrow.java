@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,129 +34,174 @@ import java.util.Objects;
 /**
  * Scmcolumnsdefinitionrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Scmcolumnsdefinitionrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Caption")
+  @SerializedName("caption")
   private String caption = null;
 
-  @SerializedName("IsCalculated")
-  private Boolean isCalculated = null;
+  @SerializedName("iscalculated")
+  private Boolean iscalculated = null;
 
-  @SerializedName("DataSource_ID")
-  private String dataSourceID = null;
+  @SerializedName("datasource_id")
+  private String datasourceId = null;
 
-  @SerializedName("FieldName")
-  private String fieldName = null;
+  @SerializedName("fieldname")
+  private String fieldname = null;
 
-  @SerializedName("DataType")
-  private Integer dataType = null;
+  @SerializedName("datatype")
+  private Integer datatype = null;
 
-  @SerializedName("Kind")
+  @SerializedName("kind")
   private Integer kind = null;
 
-  @SerializedName("DisplayWidth")
-  private Integer displayWidth = null;
+  @SerializedName("displaywidth")
+  private Integer displaywidth = null;
 
-  @SerializedName("AggregateFunction")
-  private Integer aggregateFunction = null;
+  @SerializedName("aggregatefunction")
+  private Integer aggregatefunction = null;
 
-  @SerializedName("IncludeToResult")
-  private Boolean includeToResult = null;
+  @SerializedName("includetoresult")
+  private Boolean includetoresult = null;
 
-  @SerializedName("Expression")
+  @SerializedName("expression")
   private String expression = null;
 
-  @SerializedName("ShowCondition")
-  private String showCondition = null;
+  @SerializedName("showcondition")
+  private String showcondition = null;
 
-  @SerializedName("Conditions")
+  @SerializedName("conditions")
   private byte[] conditions = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Definice sloupců bilance [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Definice sloupců bilance [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Scmcolumnsdefinitionrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Scmcolumnsdefinitionrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Scmcolumnsdefinitionrow id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Scmcolumnsdefinitionrow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Scmcolumnsdefinitionrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Scmcolumnsdefinitionrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu definice sloupců bilance [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu definice sloupců bilance [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Scmcolumnsdefinitionrow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
   public Scmcolumnsdefinitionrow name(String name) {
@@ -165,10 +210,10 @@ public class Scmcolumnsdefinitionrow   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -183,10 +228,10 @@ public class Scmcolumnsdefinitionrow   {
   }
 
    /**
-   * Popisek [persistentní položka]
+   * popisek [persistentní položka]
    * @return caption
   **/
-  @ApiModelProperty(example = "null", value = "Popisek [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popisek [persistentní položka]")
   public String getCaption() {
     return caption;
   }
@@ -195,76 +240,76 @@ public class Scmcolumnsdefinitionrow   {
     this.caption = caption;
   }
 
-  public Scmcolumnsdefinitionrow isCalculated(Boolean isCalculated) {
-    this.isCalculated = isCalculated;
+  public Scmcolumnsdefinitionrow iscalculated(Boolean iscalculated) {
+    this.iscalculated = iscalculated;
     return this;
   }
 
    /**
-   * Počítaný sloupec [persistentní položka]
-   * @return isCalculated
+   * počítaný sloupec [persistentní položka]
+   * @return iscalculated
   **/
-  @ApiModelProperty(example = "null", value = "Počítaný sloupec [persistentní položka]")
-  public Boolean getIsCalculated() {
-    return isCalculated;
+  @ApiModelProperty(example = "null", value = "počítaný sloupec [persistentní položka]")
+  public Boolean getIscalculated() {
+    return iscalculated;
   }
 
-  public void setIsCalculated(Boolean isCalculated) {
-    this.isCalculated = isCalculated;
+  public void setIscalculated(Boolean iscalculated) {
+    this.iscalculated = iscalculated;
   }
 
-  public Scmcolumnsdefinitionrow dataSourceID(String dataSourceID) {
-    this.dataSourceID = dataSourceID;
+  public Scmcolumnsdefinitionrow datasourceId(String datasourceId) {
+    this.datasourceId = datasourceId;
     return this;
   }
 
    /**
-   * Datový zdroj; ID objektu Datový zdroj [persistentní položka]
-   * @return dataSourceID
+   * datový zdroj; id objektu datový zdroj [persistentní položka]
+   * @return datasourceId
   **/
-  @ApiModelProperty(example = "null", value = "Datový zdroj; ID objektu Datový zdroj [persistentní položka]")
-  public String getDataSourceID() {
-    return dataSourceID;
+  @ApiModelProperty(example = "null", value = "datový zdroj; id objektu datový zdroj [persistentní položka]")
+  public String getDatasourceId() {
+    return datasourceId;
   }
 
-  public void setDataSourceID(String dataSourceID) {
-    this.dataSourceID = dataSourceID;
+  public void setDatasourceId(String datasourceId) {
+    this.datasourceId = datasourceId;
   }
 
-  public Scmcolumnsdefinitionrow fieldName(String fieldName) {
-    this.fieldName = fieldName;
+  public Scmcolumnsdefinitionrow fieldname(String fieldname) {
+    this.fieldname = fieldname;
     return this;
   }
 
    /**
-   * Sloupec [persistentní položka]
-   * @return fieldName
+   * sloupec [persistentní položka]
+   * @return fieldname
   **/
-  @ApiModelProperty(example = "null", value = "Sloupec [persistentní položka]")
-  public String getFieldName() {
-    return fieldName;
+  @ApiModelProperty(example = "null", value = "sloupec [persistentní položka]")
+  public String getFieldname() {
+    return fieldname;
   }
 
-  public void setFieldName(String fieldName) {
-    this.fieldName = fieldName;
+  public void setFieldname(String fieldname) {
+    this.fieldname = fieldname;
   }
 
-  public Scmcolumnsdefinitionrow dataType(Integer dataType) {
-    this.dataType = dataType;
+  public Scmcolumnsdefinitionrow datatype(Integer datatype) {
+    this.datatype = datatype;
     return this;
   }
 
    /**
-   * Datový typ [persistentní položka]
-   * @return dataType
+   * datový typ [persistentní položka]
+   * @return datatype
   **/
-  @ApiModelProperty(example = "null", value = "Datový typ [persistentní položka]")
-  public Integer getDataType() {
-    return dataType;
+  @ApiModelProperty(example = "null", value = "datový typ [persistentní položka]")
+  public Integer getDatatype() {
+    return datatype;
   }
 
-  public void setDataType(Integer dataType) {
-    this.dataType = dataType;
+  public void setDatatype(Integer datatype) {
+    this.datatype = datatype;
   }
 
   public Scmcolumnsdefinitionrow kind(Integer kind) {
@@ -273,10 +318,10 @@ public class Scmcolumnsdefinitionrow   {
   }
 
    /**
-   * Typ sloupce [persistentní položka]
+   * typ sloupce [persistentní položka]
    * @return kind
   **/
-  @ApiModelProperty(example = "null", value = "Typ sloupce [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "typ sloupce [persistentní položka]")
   public Integer getKind() {
     return kind;
   }
@@ -285,58 +330,58 @@ public class Scmcolumnsdefinitionrow   {
     this.kind = kind;
   }
 
-  public Scmcolumnsdefinitionrow displayWidth(Integer displayWidth) {
-    this.displayWidth = displayWidth;
+  public Scmcolumnsdefinitionrow displaywidth(Integer displaywidth) {
+    this.displaywidth = displaywidth;
     return this;
   }
 
    /**
-   * Zobrazovací velikost [persistentní položka]
-   * @return displayWidth
+   * zobrazovací velikost [persistentní položka]
+   * @return displaywidth
   **/
-  @ApiModelProperty(example = "null", value = "Zobrazovací velikost [persistentní položka]")
-  public Integer getDisplayWidth() {
-    return displayWidth;
+  @ApiModelProperty(example = "null", value = "zobrazovací velikost [persistentní položka]")
+  public Integer getDisplaywidth() {
+    return displaywidth;
   }
 
-  public void setDisplayWidth(Integer displayWidth) {
-    this.displayWidth = displayWidth;
+  public void setDisplaywidth(Integer displaywidth) {
+    this.displaywidth = displaywidth;
   }
 
-  public Scmcolumnsdefinitionrow aggregateFunction(Integer aggregateFunction) {
-    this.aggregateFunction = aggregateFunction;
+  public Scmcolumnsdefinitionrow aggregatefunction(Integer aggregatefunction) {
+    this.aggregatefunction = aggregatefunction;
     return this;
   }
 
    /**
-   * Agregační funkce [persistentní položka]
-   * @return aggregateFunction
+   * agregační funkce [persistentní položka]
+   * @return aggregatefunction
   **/
-  @ApiModelProperty(example = "null", value = "Agregační funkce [persistentní položka]")
-  public Integer getAggregateFunction() {
-    return aggregateFunction;
+  @ApiModelProperty(example = "null", value = "agregační funkce [persistentní položka]")
+  public Integer getAggregatefunction() {
+    return aggregatefunction;
   }
 
-  public void setAggregateFunction(Integer aggregateFunction) {
-    this.aggregateFunction = aggregateFunction;
+  public void setAggregatefunction(Integer aggregatefunction) {
+    this.aggregatefunction = aggregatefunction;
   }
 
-  public Scmcolumnsdefinitionrow includeToResult(Boolean includeToResult) {
-    this.includeToResult = includeToResult;
+  public Scmcolumnsdefinitionrow includetoresult(Boolean includetoresult) {
+    this.includetoresult = includetoresult;
     return this;
   }
 
    /**
-   * Započítat [persistentní položka]
-   * @return includeToResult
+   * započítat [persistentní položka]
+   * @return includetoresult
   **/
-  @ApiModelProperty(example = "null", value = "Započítat [persistentní položka]")
-  public Boolean getIncludeToResult() {
-    return includeToResult;
+  @ApiModelProperty(example = "null", value = "započítat [persistentní položka]")
+  public Boolean getIncludetoresult() {
+    return includetoresult;
   }
 
-  public void setIncludeToResult(Boolean includeToResult) {
-    this.includeToResult = includeToResult;
+  public void setIncludetoresult(Boolean includetoresult) {
+    this.includetoresult = includetoresult;
   }
 
   public Scmcolumnsdefinitionrow expression(String expression) {
@@ -345,10 +390,10 @@ public class Scmcolumnsdefinitionrow   {
   }
 
    /**
-   * Výraz [persistentní položka]
+   * výraz [persistentní položka]
    * @return expression
   **/
-  @ApiModelProperty(example = "null", value = "Výraz [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "výraz [persistentní položka]")
   public String getExpression() {
     return expression;
   }
@@ -357,22 +402,22 @@ public class Scmcolumnsdefinitionrow   {
     this.expression = expression;
   }
 
-  public Scmcolumnsdefinitionrow showCondition(String showCondition) {
-    this.showCondition = showCondition;
+  public Scmcolumnsdefinitionrow showcondition(String showcondition) {
+    this.showcondition = showcondition;
     return this;
   }
 
    /**
-   * Zobrazovací podmínka [persistentní položka]
-   * @return showCondition
+   * zobrazovací podmínka [persistentní položka]
+   * @return showcondition
   **/
-  @ApiModelProperty(example = "null", value = "Zobrazovací podmínka [persistentní položka]")
-  public String getShowCondition() {
-    return showCondition;
+  @ApiModelProperty(example = "null", value = "zobrazovací podmínka [persistentní položka]")
+  public String getShowcondition() {
+    return showcondition;
   }
 
-  public void setShowCondition(String showCondition) {
-    this.showCondition = showCondition;
+  public void setShowcondition(String showcondition) {
+    this.showcondition = showcondition;
   }
 
   public Scmcolumnsdefinitionrow conditions(byte[] conditions) {
@@ -381,10 +426,10 @@ public class Scmcolumnsdefinitionrow   {
   }
 
    /**
-   * Podmínky [persistentní položka]
+   * podmínky [persistentní položka]
    * @return conditions
   **/
-  @ApiModelProperty(example = "null", value = "Podmínky [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "podmínky [persistentní položka]")
   public byte[] getConditions() {
     return conditions;
   }
@@ -393,13 +438,22 @@ public class Scmcolumnsdefinitionrow   {
     this.conditions = conditions;
   }
 
+  public Scmcolumnsdefinitionrow system(Boolean system) {
+    this.system = system;
+    return this;
+  }
+
    /**
-   * Systémový [persistentní položka]
+   * systémový [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Systémový [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "systémový [persistentní položka]")
   public Boolean getSystem() {
     return system;
+  }
+
+  public void setSystem(Boolean system) {
+    this.system = system;
   }
 
 
@@ -412,31 +466,31 @@ public class Scmcolumnsdefinitionrow   {
       return false;
     }
     Scmcolumnsdefinitionrow scmcolumnsdefinitionrow = (Scmcolumnsdefinitionrow) o;
-    return Objects.equals(this.displayName, scmcolumnsdefinitionrow.displayName) &&
-        Objects.equals(this.ID, scmcolumnsdefinitionrow.ID) &&
-        Objects.equals(this.classID, scmcolumnsdefinitionrow.classID) &&
-        Objects.equals(this.objVersion, scmcolumnsdefinitionrow.objVersion) &&
-        Objects.equals(this.parentID, scmcolumnsdefinitionrow.parentID) &&
-        Objects.equals(this.posIndex, scmcolumnsdefinitionrow.posIndex) &&
+    return Objects.equals(this.displayname, scmcolumnsdefinitionrow.displayname) &&
+        Objects.equals(this.id, scmcolumnsdefinitionrow.id) &&
+        Objects.equals(this.classid, scmcolumnsdefinitionrow.classid) &&
+        Objects.equals(this.objversion, scmcolumnsdefinitionrow.objversion) &&
+        Objects.equals(this.parentId, scmcolumnsdefinitionrow.parentId) &&
+        Objects.equals(this.posindex, scmcolumnsdefinitionrow.posindex) &&
         Objects.equals(this.name, scmcolumnsdefinitionrow.name) &&
         Objects.equals(this.caption, scmcolumnsdefinitionrow.caption) &&
-        Objects.equals(this.isCalculated, scmcolumnsdefinitionrow.isCalculated) &&
-        Objects.equals(this.dataSourceID, scmcolumnsdefinitionrow.dataSourceID) &&
-        Objects.equals(this.fieldName, scmcolumnsdefinitionrow.fieldName) &&
-        Objects.equals(this.dataType, scmcolumnsdefinitionrow.dataType) &&
+        Objects.equals(this.iscalculated, scmcolumnsdefinitionrow.iscalculated) &&
+        Objects.equals(this.datasourceId, scmcolumnsdefinitionrow.datasourceId) &&
+        Objects.equals(this.fieldname, scmcolumnsdefinitionrow.fieldname) &&
+        Objects.equals(this.datatype, scmcolumnsdefinitionrow.datatype) &&
         Objects.equals(this.kind, scmcolumnsdefinitionrow.kind) &&
-        Objects.equals(this.displayWidth, scmcolumnsdefinitionrow.displayWidth) &&
-        Objects.equals(this.aggregateFunction, scmcolumnsdefinitionrow.aggregateFunction) &&
-        Objects.equals(this.includeToResult, scmcolumnsdefinitionrow.includeToResult) &&
+        Objects.equals(this.displaywidth, scmcolumnsdefinitionrow.displaywidth) &&
+        Objects.equals(this.aggregatefunction, scmcolumnsdefinitionrow.aggregatefunction) &&
+        Objects.equals(this.includetoresult, scmcolumnsdefinitionrow.includetoresult) &&
         Objects.equals(this.expression, scmcolumnsdefinitionrow.expression) &&
-        Objects.equals(this.showCondition, scmcolumnsdefinitionrow.showCondition) &&
+        Objects.equals(this.showcondition, scmcolumnsdefinitionrow.showcondition) &&
         Objects.equals(this.conditions, scmcolumnsdefinitionrow.conditions) &&
         Objects.equals(this.system, scmcolumnsdefinitionrow.system);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, name, caption, isCalculated, dataSourceID, fieldName, dataType, kind, displayWidth, aggregateFunction, includeToResult, expression, showCondition, conditions, system);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, name, caption, iscalculated, datasourceId, fieldname, datatype, kind, displaywidth, aggregatefunction, includetoresult, expression, showcondition, conditions, system);
   }
 
   @Override
@@ -444,24 +498,24 @@ public class Scmcolumnsdefinitionrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Scmcolumnsdefinitionrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    caption: ").append(toIndentedString(caption)).append("\n");
-    sb.append("    isCalculated: ").append(toIndentedString(isCalculated)).append("\n");
-    sb.append("    dataSourceID: ").append(toIndentedString(dataSourceID)).append("\n");
-    sb.append("    fieldName: ").append(toIndentedString(fieldName)).append("\n");
-    sb.append("    dataType: ").append(toIndentedString(dataType)).append("\n");
+    sb.append("    iscalculated: ").append(toIndentedString(iscalculated)).append("\n");
+    sb.append("    datasourceId: ").append(toIndentedString(datasourceId)).append("\n");
+    sb.append("    fieldname: ").append(toIndentedString(fieldname)).append("\n");
+    sb.append("    datatype: ").append(toIndentedString(datatype)).append("\n");
     sb.append("    kind: ").append(toIndentedString(kind)).append("\n");
-    sb.append("    displayWidth: ").append(toIndentedString(displayWidth)).append("\n");
-    sb.append("    aggregateFunction: ").append(toIndentedString(aggregateFunction)).append("\n");
-    sb.append("    includeToResult: ").append(toIndentedString(includeToResult)).append("\n");
+    sb.append("    displaywidth: ").append(toIndentedString(displaywidth)).append("\n");
+    sb.append("    aggregatefunction: ").append(toIndentedString(aggregatefunction)).append("\n");
+    sb.append("    includetoresult: ").append(toIndentedString(includetoresult)).append("\n");
     sb.append("    expression: ").append(toIndentedString(expression)).append("\n");
-    sb.append("    showCondition: ").append(toIndentedString(showCondition)).append("\n");
+    sb.append("    showcondition: ").append(toIndentedString(showcondition)).append("\n");
     sb.append("    conditions: ").append(toIndentedString(conditions)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
     sb.append("}");

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,552 +34,588 @@ import java.util.Objects;
 /**
  * Plmjosetparsqueue
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmjosetparsqueue   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("MaterialInIncome")
-  private Boolean materialInIncome = null;
+  @SerializedName("materialinincome")
+  private Boolean materialinincome = null;
 
-  @SerializedName("CooperationInIncome")
-  private Boolean cooperationInIncome = null;
+  @SerializedName("cooperationinincome")
+  private Boolean cooperationinincome = null;
 
-  @SerializedName("PriceInIncome")
-  private Integer priceInIncome = null;
+  @SerializedName("priceinincome")
+  private Integer priceinincome = null;
 
-  @SerializedName("SalariesInIncome")
-  private Boolean salariesInIncome = null;
+  @SerializedName("salariesinincome")
+  private Boolean salariesinincome = null;
 
-  @SerializedName("OverheadCostsInIncome")
-  private Boolean overheadCostsInIncome = null;
+  @SerializedName("overheadcostsinincome")
+  private Boolean overheadcostsinincome = null;
 
-  @SerializedName("GeneralExpenseInIncome")
-  private Boolean generalExpenseInIncome = null;
+  @SerializedName("generalexpenseinincome")
+  private Boolean generalexpenseinincome = null;
 
-  @SerializedName("OperationsAuto")
-  private Boolean operationsAuto = null;
+  @SerializedName("operationsauto")
+  private Boolean operationsauto = null;
 
-  @SerializedName("DocQueueForAWT_ID")
-  private String docQueueForAWTID = null;
+  @SerializedName("docqueueforawt_id")
+  private String docqueueforawtId = null;
 
-  @SerializedName("AccPresetDef_ID")
-  private String accPresetDefID = null;
+  @SerializedName("accpresetdef_id")
+  private String accpresetdefId = null;
 
-  @SerializedName("BatchOperationOver")
-  private Boolean batchOperationOver = null;
+  @SerializedName("batchoperationover")
+  private Boolean batchoperationover = null;
 
-  @SerializedName("MaterialDistributionOver")
-  private Boolean materialDistributionOver = null;
+  @SerializedName("materialdistributionover")
+  private Boolean materialdistributionover = null;
 
-  @SerializedName("AfterJOStartUp")
-  private Integer afterJOStartUp = null;
+  @SerializedName("afterjostartup")
+  private Integer afterjostartup = null;
 
-  @SerializedName("ConsumablesInIncome")
-  private Integer consumablesInIncome = null;
+  @SerializedName("consumablesinincome")
+  private Integer consumablesinincome = null;
 
-  @SerializedName("ProductReceptionOver")
-  private Boolean productReceptionOver = null;
+  @SerializedName("productreceptionover")
+  private Boolean productreceptionover = null;
 
-  @SerializedName("IgnoreDateOfExpiration")
-  private Boolean ignoreDateOfExpiration = null;
+  @SerializedName("ignoredateofexpiration")
+  private Boolean ignoredateofexpiration = null;
 
-  @SerializedName("DocumentCategoryForTesting_ID")
-  private String documentCategoryForTestingID = null;
+  @SerializedName("documentcategoryfortesting_id")
+  private String documentcategoryfortestingId = null;
 
-  @SerializedName("DefaultSupposedStore_ID")
-  private String defaultSupposedStoreID = null;
+  @SerializedName("defaultsupposedstore_id")
+  private String defaultsupposedstoreId = null;
 
-  @SerializedName("Transfer")
+  @SerializedName("transfer")
   private Integer transfer = null;
 
-  @SerializedName("AllowRepairTransOp")
-  private Integer allowRepairTransOp = null;
+  @SerializedName("allowrepairtransop")
+  private Integer allowrepairtransop = null;
 
-  @SerializedName("Correction")
+  @SerializedName("correction")
   private Integer correction = null;
 
-  @SerializedName("GroupDivision")
-  private Boolean groupDivision = null;
+  @SerializedName("groupdivision")
+  private Boolean groupdivision = null;
 
-  @SerializedName("GroupBusOrder")
-  private Boolean groupBusOrder = null;
+  @SerializedName("groupbusorder")
+  private Boolean groupbusorder = null;
 
-  @SerializedName("GroupBusTransaction")
-  private Boolean groupBusTransaction = null;
+  @SerializedName("groupbustransaction")
+  private Boolean groupbustransaction = null;
 
-  @SerializedName("GroupBusProject")
-  private Boolean groupBusProject = null;
+  @SerializedName("groupbusproject")
+  private Boolean groupbusproject = null;
 
-  @SerializedName("GroupDate")
-  private Integer groupDate = null;
+  @SerializedName("groupdate")
+  private Integer groupdate = null;
 
-  @SerializedName("ValueTransfer1")
-  private Integer valueTransfer1 = null;
+  @SerializedName("valuetransfer1")
+  private Integer valuetransfer1 = null;
 
-  @SerializedName("WageOperationType1_ID")
-  private String wageOperationType1ID = null;
+  @SerializedName("wageoperationtype1_id")
+  private String wageoperationtype1Id = null;
 
-  @SerializedName("ValueTransfer2")
-  private Integer valueTransfer2 = null;
+  @SerializedName("valuetransfer2")
+  private Integer valuetransfer2 = null;
 
-  @SerializedName("WageOperationType2_ID")
-  private String wageOperationType2ID = null;
+  @SerializedName("wageoperationtype2_id")
+  private String wageoperationtype2Id = null;
 
-  @SerializedName("InPlan")
-  private Boolean inPlan = null;
+  @SerializedName("inplan")
+  private Boolean inplan = null;
 
-  @SerializedName("AfterPR")
-  private Integer afterPR = null;
+  @SerializedName("afterpr")
+  private Integer afterpr = null;
 
-  @SerializedName("ToleranceMaterialPositive")
-  private Double toleranceMaterialPositive = null;
+  @SerializedName("tolerancematerialpositive")
+  private Double tolerancematerialpositive = null;
 
-  @SerializedName("ToleranceMaterialNegative")
-  private Double toleranceMaterialNegative = null;
+  @SerializedName("tolerancematerialnegative")
+  private Double tolerancematerialnegative = null;
 
-  @SerializedName("ToleranceWagesPositive")
-  private Double toleranceWagesPositive = null;
+  @SerializedName("tolerancewagespositive")
+  private Double tolerancewagespositive = null;
 
-  @SerializedName("ToleranceWagesNegative")
-  private Double toleranceWagesNegative = null;
+  @SerializedName("tolerancewagesnegative")
+  private Double tolerancewagesnegative = null;
 
-  @SerializedName("MaterialExpenseInIncome")
-  private Boolean materialExpenseInIncome = null;
+  @SerializedName("materialexpenseinincome")
+  private Boolean materialexpenseinincome = null;
 
-  @SerializedName("ValuationPR")
-  private Integer valuationPR = null;
+  @SerializedName("valuationpr")
+  private Integer valuationpr = null;
 
-  @SerializedName("ValuationTypePR")
-  private Integer valuationTypePR = null;
+  @SerializedName("valuationtypepr")
+  private Integer valuationtypepr = null;
 
-  @SerializedName("DocQueueForFP_ID")
-  private String docQueueForFPID = null;
+  @SerializedName("docqueueforfp_id")
+  private String docqueueforfpId = null;
 
-  @SerializedName("AccPresetDefForFP_ID")
-  private String accPresetDefForFPID = null;
+  @SerializedName("accpresetdefforfp_id")
+  private String accpresetdefforfpId = null;
 
-  @SerializedName("AutoServerScheduler_ID")
-  private String autoServerSchedulerID = null;
+  @SerializedName("autoserverscheduler_id")
+  private String autoserverschedulerId = null;
 
-  @SerializedName("ModeUseMDAfterPR")
-  private Integer modeUseMDAfterPR = null;
+  @SerializedName("modeusemdafterpr")
+  private Integer modeusemdafterpr = null;
 
-  @SerializedName("ModeUseOpAfterPR")
-  private Integer modeUseOpAfterPR = null;
+  @SerializedName("modeuseopafterpr")
+  private Integer modeuseopafterpr = null;
 
-  @SerializedName("AWTByDate")
-  private Integer aWTByDate = null;
+  @SerializedName("awtbydate")
+  private Integer awtbydate = null;
 
-  @SerializedName("AWTByDivision")
-  private Boolean aWTByDivision = null;
+  @SerializedName("awtbydivision")
+  private Boolean awtbydivision = null;
 
-  @SerializedName("AWTDivision_ID")
-  private String aWTDivisionID = null;
+  @SerializedName("awtdivision_id")
+  private String awtdivisionId = null;
 
-  @SerializedName("AWTByBusOrder")
-  private Boolean aWTByBusOrder = null;
+  @SerializedName("awtbybusorder")
+  private Boolean awtbybusorder = null;
 
-  @SerializedName("AWTBusOrder_ID")
-  private String aWTBusOrderID = null;
+  @SerializedName("awtbusorder_id")
+  private String awtbusorderId = null;
 
-  @SerializedName("AWTByBusTransaction")
-  private Boolean aWTByBusTransaction = null;
+  @SerializedName("awtbybustransaction")
+  private Boolean awtbybustransaction = null;
 
-  @SerializedName("AWTBusTransaction_ID")
-  private String aWTBusTransactionID = null;
+  @SerializedName("awtbustransaction_id")
+  private String awtbustransactionId = null;
 
-  @SerializedName("AWTByBusProject")
-  private Boolean aWTByBusProject = null;
+  @SerializedName("awtbybusproject")
+  private Boolean awtbybusproject = null;
 
-  @SerializedName("AWTByJobOrder")
-  private Boolean aWTByJobOrder = null;
+  @SerializedName("awtbyjoborder")
+  private Boolean awtbyjoborder = null;
 
-  @SerializedName("AWTBusProject_ID")
-  private String aWTBusProjectID = null;
+  @SerializedName("awtbusproject_id")
+  private String awtbusprojectId = null;
 
-  @SerializedName("BalanceDocQueue_ID")
-  private String balanceDocQueueID = null;
+  @SerializedName("balancedocqueue_id")
+  private String balancedocqueueId = null;
 
-  @SerializedName("BalanceAccPresetDef_ID")
-  private String balanceAccPresetDefID = null;
+  @SerializedName("balanceaccpresetdef_id")
+  private String balanceaccpresetdefId = null;
 
-  @SerializedName("BalanceDepDocQueue_ID")
-  private String balanceDepDocQueueID = null;
+  @SerializedName("balancedepdocqueue_id")
+  private String balancedepdocqueueId = null;
 
-  @SerializedName("BalanceDepAccPresetDef_ID")
-  private String balanceDepAccPresetDefID = null;
+  @SerializedName("balancedepaccpresetdef_id")
+  private String balancedepaccpresetdefId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Plmjosetparsqueue docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Plmjosetparsqueue displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Řada dokladu; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladu; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Plmjosetparsqueue materialInIncome(Boolean materialInIncome) {
-    this.materialInIncome = materialInIncome;
+  public Plmjosetparsqueue id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Mat. v příjmu [persistentní položka]
-   * @return materialInIncome
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Mat. v příjmu [persistentní položka]")
-  public Boolean getMaterialInIncome() {
-    return materialInIncome;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setMaterialInIncome(Boolean materialInIncome) {
-    this.materialInIncome = materialInIncome;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Plmjosetparsqueue cooperationInIncome(Boolean cooperationInIncome) {
-    this.cooperationInIncome = cooperationInIncome;
+  public Plmjosetparsqueue classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Koop. v příjmu [persistentní položka]
-   * @return cooperationInIncome
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Koop. v příjmu [persistentní položka]")
-  public Boolean getCooperationInIncome() {
-    return cooperationInIncome;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setCooperationInIncome(Boolean cooperationInIncome) {
-    this.cooperationInIncome = cooperationInIncome;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Plmjosetparsqueue priceInIncome(Integer priceInIncome) {
-    this.priceInIncome = priceInIncome;
+  public Plmjosetparsqueue objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Pevná cena v příjmu [persistentní položka]
-   * @return priceInIncome
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Pevná cena v příjmu [persistentní položka]")
-  public Integer getPriceInIncome() {
-    return priceInIncome;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setPriceInIncome(Integer priceInIncome) {
-    this.priceInIncome = priceInIncome;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Plmjosetparsqueue salariesInIncome(Boolean salariesInIncome) {
-    this.salariesInIncome = salariesInIncome;
+  public Plmjosetparsqueue docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Mzdy v příjmu [persistentní položka]
-   * @return salariesInIncome
+   * Řada dokladu; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Mzdy v příjmu [persistentní položka]")
-  public Boolean getSalariesInIncome() {
-    return salariesInIncome;
+  @ApiModelProperty(example = "null", value = "Řada dokladu; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setSalariesInIncome(Boolean salariesInIncome) {
-    this.salariesInIncome = salariesInIncome;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Plmjosetparsqueue overheadCostsInIncome(Boolean overheadCostsInIncome) {
-    this.overheadCostsInIncome = overheadCostsInIncome;
+  public Plmjosetparsqueue materialinincome(Boolean materialinincome) {
+    this.materialinincome = materialinincome;
     return this;
   }
 
    /**
-   * Výr. režie v příjmu [persistentní položka]
-   * @return overheadCostsInIncome
+   * mat. v příjmu [persistentní položka]
+   * @return materialinincome
   **/
-  @ApiModelProperty(example = "null", value = "Výr. režie v příjmu [persistentní položka]")
-  public Boolean getOverheadCostsInIncome() {
-    return overheadCostsInIncome;
+  @ApiModelProperty(example = "null", value = "mat. v příjmu [persistentní položka]")
+  public Boolean getMaterialinincome() {
+    return materialinincome;
   }
 
-  public void setOverheadCostsInIncome(Boolean overheadCostsInIncome) {
-    this.overheadCostsInIncome = overheadCostsInIncome;
+  public void setMaterialinincome(Boolean materialinincome) {
+    this.materialinincome = materialinincome;
   }
 
-  public Plmjosetparsqueue generalExpenseInIncome(Boolean generalExpenseInIncome) {
-    this.generalExpenseInIncome = generalExpenseInIncome;
+  public Plmjosetparsqueue cooperationinincome(Boolean cooperationinincome) {
+    this.cooperationinincome = cooperationinincome;
     return this;
   }
 
    /**
-   * Správ. režie v příjmu [persistentní položka]
-   * @return generalExpenseInIncome
+   * koop. v příjmu [persistentní položka]
+   * @return cooperationinincome
   **/
-  @ApiModelProperty(example = "null", value = "Správ. režie v příjmu [persistentní položka]")
-  public Boolean getGeneralExpenseInIncome() {
-    return generalExpenseInIncome;
+  @ApiModelProperty(example = "null", value = "koop. v příjmu [persistentní položka]")
+  public Boolean getCooperationinincome() {
+    return cooperationinincome;
   }
 
-  public void setGeneralExpenseInIncome(Boolean generalExpenseInIncome) {
-    this.generalExpenseInIncome = generalExpenseInIncome;
+  public void setCooperationinincome(Boolean cooperationinincome) {
+    this.cooperationinincome = cooperationinincome;
   }
 
-  public Plmjosetparsqueue operationsAuto(Boolean operationsAuto) {
-    this.operationsAuto = operationsAuto;
+  public Plmjosetparsqueue priceinincome(Integer priceinincome) {
+    this.priceinincome = priceinincome;
     return this;
   }
 
    /**
-   * Prac. lístky autom. [persistentní položka]
-   * @return operationsAuto
+   * pevná cena v příjmu [persistentní položka]
+   * @return priceinincome
   **/
-  @ApiModelProperty(example = "null", value = "Prac. lístky autom. [persistentní položka]")
-  public Boolean getOperationsAuto() {
-    return operationsAuto;
+  @ApiModelProperty(example = "null", value = "pevná cena v příjmu [persistentní položka]")
+  public Integer getPriceinincome() {
+    return priceinincome;
   }
 
-  public void setOperationsAuto(Boolean operationsAuto) {
-    this.operationsAuto = operationsAuto;
+  public void setPriceinincome(Integer priceinincome) {
+    this.priceinincome = priceinincome;
   }
 
-  public Plmjosetparsqueue docQueueForAWTID(String docQueueForAWTID) {
-    this.docQueueForAWTID = docQueueForAWTID;
+  public Plmjosetparsqueue salariesinincome(Boolean salariesinincome) {
+    this.salariesinincome = salariesinincome;
     return this;
   }
 
    /**
-   * Řada dokladu; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueForAWTID
+   * mzdy v příjmu [persistentní položka]
+   * @return salariesinincome
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladu; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueForAWTID() {
-    return docQueueForAWTID;
+  @ApiModelProperty(example = "null", value = "mzdy v příjmu [persistentní položka]")
+  public Boolean getSalariesinincome() {
+    return salariesinincome;
   }
 
-  public void setDocQueueForAWTID(String docQueueForAWTID) {
-    this.docQueueForAWTID = docQueueForAWTID;
+  public void setSalariesinincome(Boolean salariesinincome) {
+    this.salariesinincome = salariesinincome;
   }
 
-  public Plmjosetparsqueue accPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public Plmjosetparsqueue overheadcostsinincome(Boolean overheadcostsinincome) {
+    this.overheadcostsinincome = overheadcostsinincome;
     return this;
   }
 
    /**
-   * Účetní předkontace; ID objektu Účetní předkontace [persistentní položka]
-   * @return accPresetDefID
+   * výr. režie v příjmu [persistentní položka]
+   * @return overheadcostsinincome
   **/
-  @ApiModelProperty(example = "null", value = "Účetní předkontace; ID objektu Účetní předkontace [persistentní položka]")
-  public String getAccPresetDefID() {
-    return accPresetDefID;
+  @ApiModelProperty(example = "null", value = "výr. režie v příjmu [persistentní položka]")
+  public Boolean getOverheadcostsinincome() {
+    return overheadcostsinincome;
   }
 
-  public void setAccPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public void setOverheadcostsinincome(Boolean overheadcostsinincome) {
+    this.overheadcostsinincome = overheadcostsinincome;
   }
 
-  public Plmjosetparsqueue batchOperationOver(Boolean batchOperationOver) {
-    this.batchOperationOver = batchOperationOver;
+  public Plmjosetparsqueue generalexpenseinincome(Boolean generalexpenseinincome) {
+    this.generalexpenseinincome = generalexpenseinincome;
     return this;
   }
 
    /**
-   * Povolit předimenzovat dávkovou operaci [persistentní položka]
-   * @return batchOperationOver
+   * správ. režie v příjmu [persistentní položka]
+   * @return generalexpenseinincome
   **/
-  @ApiModelProperty(example = "null", value = "Povolit předimenzovat dávkovou operaci [persistentní položka]")
-  public Boolean getBatchOperationOver() {
-    return batchOperationOver;
+  @ApiModelProperty(example = "null", value = "správ. režie v příjmu [persistentní položka]")
+  public Boolean getGeneralexpenseinincome() {
+    return generalexpenseinincome;
   }
 
-  public void setBatchOperationOver(Boolean batchOperationOver) {
-    this.batchOperationOver = batchOperationOver;
+  public void setGeneralexpenseinincome(Boolean generalexpenseinincome) {
+    this.generalexpenseinincome = generalexpenseinincome;
   }
 
-  public Plmjosetparsqueue materialDistributionOver(Boolean materialDistributionOver) {
-    this.materialDistributionOver = materialDistributionOver;
+  public Plmjosetparsqueue operationsauto(Boolean operationsauto) {
+    this.operationsauto = operationsauto;
     return this;
   }
 
    /**
-   * Povolit předimenzovat výdej [persistentní položka]
-   * @return materialDistributionOver
+   * prac. lístky autom. [persistentní položka]
+   * @return operationsauto
   **/
-  @ApiModelProperty(example = "null", value = "Povolit předimenzovat výdej [persistentní položka]")
-  public Boolean getMaterialDistributionOver() {
-    return materialDistributionOver;
+  @ApiModelProperty(example = "null", value = "prac. lístky autom. [persistentní položka]")
+  public Boolean getOperationsauto() {
+    return operationsauto;
   }
 
-  public void setMaterialDistributionOver(Boolean materialDistributionOver) {
-    this.materialDistributionOver = materialDistributionOver;
+  public void setOperationsauto(Boolean operationsauto) {
+    this.operationsauto = operationsauto;
   }
 
-  public Plmjosetparsqueue afterJOStartUp(Integer afterJOStartUp) {
-    this.afterJOStartUp = afterJOStartUp;
+  public Plmjosetparsqueue docqueueforawtId(String docqueueforawtId) {
+    this.docqueueforawtId = docqueueforawtId;
     return this;
   }
 
    /**
-   * Po spuštění VP vygenerovat [persistentní položka]
-   * @return afterJOStartUp
+   * Řada dokladu; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueforawtId
   **/
-  @ApiModelProperty(example = "null", value = "Po spuštění VP vygenerovat [persistentní položka]")
-  public Integer getAfterJOStartUp() {
-    return afterJOStartUp;
+  @ApiModelProperty(example = "null", value = "Řada dokladu; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueforawtId() {
+    return docqueueforawtId;
   }
 
-  public void setAfterJOStartUp(Integer afterJOStartUp) {
-    this.afterJOStartUp = afterJOStartUp;
+  public void setDocqueueforawtId(String docqueueforawtId) {
+    this.docqueueforawtId = docqueueforawtId;
   }
 
-  public Plmjosetparsqueue consumablesInIncome(Integer consumablesInIncome) {
-    this.consumablesInIncome = consumablesInIncome;
+  public Plmjosetparsqueue accpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
     return this;
   }
 
    /**
-   * Spotřební mat. v příjmu [persistentní položka]
-   * @return consumablesInIncome
+   * Účetní předkontace; id objektu Účetní předkontace [persistentní položka]
+   * @return accpresetdefId
   **/
-  @ApiModelProperty(example = "null", value = "Spotřební mat. v příjmu [persistentní položka]")
-  public Integer getConsumablesInIncome() {
-    return consumablesInIncome;
+  @ApiModelProperty(example = "null", value = "Účetní předkontace; id objektu Účetní předkontace [persistentní položka]")
+  public String getAccpresetdefId() {
+    return accpresetdefId;
   }
 
-  public void setConsumablesInIncome(Integer consumablesInIncome) {
-    this.consumablesInIncome = consumablesInIncome;
+  public void setAccpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
   }
 
-  public Plmjosetparsqueue productReceptionOver(Boolean productReceptionOver) {
-    this.productReceptionOver = productReceptionOver;
+  public Plmjosetparsqueue batchoperationover(Boolean batchoperationover) {
+    this.batchoperationover = batchoperationover;
     return this;
   }
 
    /**
-   * Povolit předimenzovat příjem hotových výrobků [persistentní položka]
-   * @return productReceptionOver
+   * povolit předimenzovat dávkovou operaci [persistentní položka]
+   * @return batchoperationover
   **/
-  @ApiModelProperty(example = "null", value = "Povolit předimenzovat příjem hotových výrobků [persistentní položka]")
-  public Boolean getProductReceptionOver() {
-    return productReceptionOver;
+  @ApiModelProperty(example = "null", value = "povolit předimenzovat dávkovou operaci [persistentní položka]")
+  public Boolean getBatchoperationover() {
+    return batchoperationover;
   }
 
-  public void setProductReceptionOver(Boolean productReceptionOver) {
-    this.productReceptionOver = productReceptionOver;
+  public void setBatchoperationover(Boolean batchoperationover) {
+    this.batchoperationover = batchoperationover;
   }
 
-  public Plmjosetparsqueue ignoreDateOfExpiration(Boolean ignoreDateOfExpiration) {
-    this.ignoreDateOfExpiration = ignoreDateOfExpiration;
+  public Plmjosetparsqueue materialdistributionover(Boolean materialdistributionover) {
+    this.materialdistributionover = materialdistributionover;
     return this;
   }
 
    /**
-   * Ignorovat datum expirace při výdeji sériových čísel/šarží [persistentní položka]
-   * @return ignoreDateOfExpiration
+   * povolit předimenzovat výdej [persistentní položka]
+   * @return materialdistributionover
   **/
-  @ApiModelProperty(example = "null", value = "Ignorovat datum expirace při výdeji sériových čísel/šarží [persistentní položka]")
-  public Boolean getIgnoreDateOfExpiration() {
-    return ignoreDateOfExpiration;
+  @ApiModelProperty(example = "null", value = "povolit předimenzovat výdej [persistentní položka]")
+  public Boolean getMaterialdistributionover() {
+    return materialdistributionover;
   }
 
-  public void setIgnoreDateOfExpiration(Boolean ignoreDateOfExpiration) {
-    this.ignoreDateOfExpiration = ignoreDateOfExpiration;
+  public void setMaterialdistributionover(Boolean materialdistributionover) {
+    this.materialdistributionover = materialdistributionover;
   }
 
-  public Plmjosetparsqueue documentCategoryForTestingID(String documentCategoryForTestingID) {
-    this.documentCategoryForTestingID = documentCategoryForTestingID;
+  public Plmjosetparsqueue afterjostartup(Integer afterjostartup) {
+    this.afterjostartup = afterjostartup;
     return this;
   }
 
    /**
-   * Kategorie dokumentů pro testování; ID objektu Kategorie dokumentu [persistentní položka]
-   * @return documentCategoryForTestingID
+   * po spuštění vp vygenerovat [persistentní položka]
+   * @return afterjostartup
   **/
-  @ApiModelProperty(example = "null", value = "Kategorie dokumentů pro testování; ID objektu Kategorie dokumentu [persistentní položka]")
-  public String getDocumentCategoryForTestingID() {
-    return documentCategoryForTestingID;
+  @ApiModelProperty(example = "null", value = "po spuštění vp vygenerovat [persistentní položka]")
+  public Integer getAfterjostartup() {
+    return afterjostartup;
   }
 
-  public void setDocumentCategoryForTestingID(String documentCategoryForTestingID) {
-    this.documentCategoryForTestingID = documentCategoryForTestingID;
+  public void setAfterjostartup(Integer afterjostartup) {
+    this.afterjostartup = afterjostartup;
   }
 
-  public Plmjosetparsqueue defaultSupposedStoreID(String defaultSupposedStoreID) {
-    this.defaultSupposedStoreID = defaultSupposedStoreID;
+  public Plmjosetparsqueue consumablesinincome(Integer consumablesinincome) {
+    this.consumablesinincome = consumablesinincome;
     return this;
   }
 
    /**
-   * Výchozí předpokládaný sklad; ID objektu Sklad [persistentní položka]
-   * @return defaultSupposedStoreID
+   * spotřební mat. v příjmu [persistentní položka]
+   * @return consumablesinincome
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí předpokládaný sklad; ID objektu Sklad [persistentní položka]")
-  public String getDefaultSupposedStoreID() {
-    return defaultSupposedStoreID;
+  @ApiModelProperty(example = "null", value = "spotřební mat. v příjmu [persistentní položka]")
+  public Integer getConsumablesinincome() {
+    return consumablesinincome;
   }
 
-  public void setDefaultSupposedStoreID(String defaultSupposedStoreID) {
-    this.defaultSupposedStoreID = defaultSupposedStoreID;
+  public void setConsumablesinincome(Integer consumablesinincome) {
+    this.consumablesinincome = consumablesinincome;
+  }
+
+  public Plmjosetparsqueue productreceptionover(Boolean productreceptionover) {
+    this.productreceptionover = productreceptionover;
+    return this;
+  }
+
+   /**
+   * povolit předimenzovat příjem hotových výrobků [persistentní položka]
+   * @return productreceptionover
+  **/
+  @ApiModelProperty(example = "null", value = "povolit předimenzovat příjem hotových výrobků [persistentní položka]")
+  public Boolean getProductreceptionover() {
+    return productreceptionover;
+  }
+
+  public void setProductreceptionover(Boolean productreceptionover) {
+    this.productreceptionover = productreceptionover;
+  }
+
+  public Plmjosetparsqueue ignoredateofexpiration(Boolean ignoredateofexpiration) {
+    this.ignoredateofexpiration = ignoredateofexpiration;
+    return this;
+  }
+
+   /**
+   * ignorovat datum expirace při výdeji sériových čísel/šarží [persistentní položka]
+   * @return ignoredateofexpiration
+  **/
+  @ApiModelProperty(example = "null", value = "ignorovat datum expirace při výdeji sériových čísel/šarží [persistentní položka]")
+  public Boolean getIgnoredateofexpiration() {
+    return ignoredateofexpiration;
+  }
+
+  public void setIgnoredateofexpiration(Boolean ignoredateofexpiration) {
+    this.ignoredateofexpiration = ignoredateofexpiration;
+  }
+
+  public Plmjosetparsqueue documentcategoryfortestingId(String documentcategoryfortestingId) {
+    this.documentcategoryfortestingId = documentcategoryfortestingId;
+    return this;
+  }
+
+   /**
+   * kategorie dokumentů pro testování; id objektu kategorie dokumentu [persistentní položka]
+   * @return documentcategoryfortestingId
+  **/
+  @ApiModelProperty(example = "null", value = "kategorie dokumentů pro testování; id objektu kategorie dokumentu [persistentní položka]")
+  public String getDocumentcategoryfortestingId() {
+    return documentcategoryfortestingId;
+  }
+
+  public void setDocumentcategoryfortestingId(String documentcategoryfortestingId) {
+    this.documentcategoryfortestingId = documentcategoryfortestingId;
+  }
+
+  public Plmjosetparsqueue defaultsupposedstoreId(String defaultsupposedstoreId) {
+    this.defaultsupposedstoreId = defaultsupposedstoreId;
+    return this;
+  }
+
+   /**
+   * výchozí předpokládaný sklad; id objektu sklad [persistentní položka]
+   * @return defaultsupposedstoreId
+  **/
+  @ApiModelProperty(example = "null", value = "výchozí předpokládaný sklad; id objektu sklad [persistentní položka]")
+  public String getDefaultsupposedstoreId() {
+    return defaultsupposedstoreId;
+  }
+
+  public void setDefaultsupposedstoreId(String defaultsupposedstoreId) {
+    this.defaultsupposedstoreId = defaultsupposedstoreId;
   }
 
   public Plmjosetparsqueue transfer(Integer transfer) {
@@ -588,10 +624,10 @@ public class Plmjosetparsqueue   {
   }
 
    /**
-   * Co přenášet [persistentní položka]
+   * co přenášet [persistentní položka]
    * @return transfer
   **/
-  @ApiModelProperty(example = "null", value = "Co přenášet [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "co přenášet [persistentní položka]")
   public Integer getTransfer() {
     return transfer;
   }
@@ -600,22 +636,22 @@ public class Plmjosetparsqueue   {
     this.transfer = transfer;
   }
 
-  public Plmjosetparsqueue allowRepairTransOp(Integer allowRepairTransOp) {
-    this.allowRepairTransOp = allowRepairTransOp;
+  public Plmjosetparsqueue allowrepairtransop(Integer allowrepairtransop) {
+    this.allowrepairtransop = allowrepairtransop;
     return this;
   }
 
    /**
-   * Umožnit opravit [persistentní položka]
-   * @return allowRepairTransOp
+   * umožnit opravit [persistentní položka]
+   * @return allowrepairtransop
   **/
-  @ApiModelProperty(example = "null", value = "Umožnit opravit [persistentní položka]")
-  public Integer getAllowRepairTransOp() {
-    return allowRepairTransOp;
+  @ApiModelProperty(example = "null", value = "umožnit opravit [persistentní položka]")
+  public Integer getAllowrepairtransop() {
+    return allowrepairtransop;
   }
 
-  public void setAllowRepairTransOp(Integer allowRepairTransOp) {
-    this.allowRepairTransOp = allowRepairTransOp;
+  public void setAllowrepairtransop(Integer allowrepairtransop) {
+    this.allowrepairtransop = allowrepairtransop;
   }
 
   public Plmjosetparsqueue correction(Integer correction) {
@@ -624,10 +660,10 @@ public class Plmjosetparsqueue   {
   }
 
    /**
-   * Korekce [persistentní položka]
+   * korekce [persistentní položka]
    * @return correction
   **/
-  @ApiModelProperty(example = "null", value = "Korekce [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "korekce [persistentní položka]")
   public Integer getCorrection() {
     return correction;
   }
@@ -636,670 +672,670 @@ public class Plmjosetparsqueue   {
     this.correction = correction;
   }
 
-  public Plmjosetparsqueue groupDivision(Boolean groupDivision) {
-    this.groupDivision = groupDivision;
+  public Plmjosetparsqueue groupdivision(Boolean groupdivision) {
+    this.groupdivision = groupdivision;
     return this;
   }
 
    /**
-   * Seskupit dle střediska [persistentní položka]
-   * @return groupDivision
+   * seskupit dle střediska [persistentní položka]
+   * @return groupdivision
   **/
-  @ApiModelProperty(example = "null", value = "Seskupit dle střediska [persistentní položka]")
-  public Boolean getGroupDivision() {
-    return groupDivision;
+  @ApiModelProperty(example = "null", value = "seskupit dle střediska [persistentní položka]")
+  public Boolean getGroupdivision() {
+    return groupdivision;
   }
 
-  public void setGroupDivision(Boolean groupDivision) {
-    this.groupDivision = groupDivision;
+  public void setGroupdivision(Boolean groupdivision) {
+    this.groupdivision = groupdivision;
   }
 
-  public Plmjosetparsqueue groupBusOrder(Boolean groupBusOrder) {
-    this.groupBusOrder = groupBusOrder;
+  public Plmjosetparsqueue groupbusorder(Boolean groupbusorder) {
+    this.groupbusorder = groupbusorder;
     return this;
   }
 
    /**
-   * Seskupit dle zakázky [persistentní položka]
-   * @return groupBusOrder
+   * seskupit dle zakázky [persistentní položka]
+   * @return groupbusorder
   **/
-  @ApiModelProperty(example = "null", value = "Seskupit dle zakázky [persistentní položka]")
-  public Boolean getGroupBusOrder() {
-    return groupBusOrder;
+  @ApiModelProperty(example = "null", value = "seskupit dle zakázky [persistentní položka]")
+  public Boolean getGroupbusorder() {
+    return groupbusorder;
   }
 
-  public void setGroupBusOrder(Boolean groupBusOrder) {
-    this.groupBusOrder = groupBusOrder;
+  public void setGroupbusorder(Boolean groupbusorder) {
+    this.groupbusorder = groupbusorder;
   }
 
-  public Plmjosetparsqueue groupBusTransaction(Boolean groupBusTransaction) {
-    this.groupBusTransaction = groupBusTransaction;
+  public Plmjosetparsqueue groupbustransaction(Boolean groupbustransaction) {
+    this.groupbustransaction = groupbustransaction;
     return this;
   }
 
    /**
-   * Seskupit dle obchodního případu [persistentní položka]
-   * @return groupBusTransaction
+   * seskupit dle obchodního případu [persistentní položka]
+   * @return groupbustransaction
   **/
-  @ApiModelProperty(example = "null", value = "Seskupit dle obchodního případu [persistentní položka]")
-  public Boolean getGroupBusTransaction() {
-    return groupBusTransaction;
+  @ApiModelProperty(example = "null", value = "seskupit dle obchodního případu [persistentní položka]")
+  public Boolean getGroupbustransaction() {
+    return groupbustransaction;
   }
 
-  public void setGroupBusTransaction(Boolean groupBusTransaction) {
-    this.groupBusTransaction = groupBusTransaction;
+  public void setGroupbustransaction(Boolean groupbustransaction) {
+    this.groupbustransaction = groupbustransaction;
   }
 
-  public Plmjosetparsqueue groupBusProject(Boolean groupBusProject) {
-    this.groupBusProject = groupBusProject;
+  public Plmjosetparsqueue groupbusproject(Boolean groupbusproject) {
+    this.groupbusproject = groupbusproject;
     return this;
   }
 
    /**
-   * Seskupit dle projektu [persistentní položka]
-   * @return groupBusProject
+   * seskupit dle projektu [persistentní položka]
+   * @return groupbusproject
   **/
-  @ApiModelProperty(example = "null", value = "Seskupit dle projektu [persistentní položka]")
-  public Boolean getGroupBusProject() {
-    return groupBusProject;
+  @ApiModelProperty(example = "null", value = "seskupit dle projektu [persistentní položka]")
+  public Boolean getGroupbusproject() {
+    return groupbusproject;
   }
 
-  public void setGroupBusProject(Boolean groupBusProject) {
-    this.groupBusProject = groupBusProject;
+  public void setGroupbusproject(Boolean groupbusproject) {
+    this.groupbusproject = groupbusproject;
   }
 
-  public Plmjosetparsqueue groupDate(Integer groupDate) {
-    this.groupDate = groupDate;
+  public Plmjosetparsqueue groupdate(Integer groupdate) {
+    this.groupdate = groupdate;
     return this;
   }
 
    /**
-   * Seskupit dle datumu [persistentní položka]
-   * @return groupDate
+   * seskupit dle datumu [persistentní položka]
+   * @return groupdate
   **/
-  @ApiModelProperty(example = "null", value = "Seskupit dle datumu [persistentní položka]")
-  public Integer getGroupDate() {
-    return groupDate;
+  @ApiModelProperty(example = "null", value = "seskupit dle datumu [persistentní položka]")
+  public Integer getGroupdate() {
+    return groupdate;
   }
 
-  public void setGroupDate(Integer groupDate) {
-    this.groupDate = groupDate;
+  public void setGroupdate(Integer groupdate) {
+    this.groupdate = groupdate;
   }
 
-  public Plmjosetparsqueue valueTransfer1(Integer valueTransfer1) {
-    this.valueTransfer1 = valueTransfer1;
+  public Plmjosetparsqueue valuetransfer1(Integer valuetransfer1) {
+    this.valuetransfer1 = valuetransfer1;
     return this;
   }
 
    /**
-   * Způsob přenosu [persistentní položka]
-   * @return valueTransfer1
+   * způsob přenosu [persistentní položka]
+   * @return valuetransfer1
   **/
-  @ApiModelProperty(example = "null", value = "Způsob přenosu [persistentní položka]")
-  public Integer getValueTransfer1() {
-    return valueTransfer1;
+  @ApiModelProperty(example = "null", value = "způsob přenosu [persistentní položka]")
+  public Integer getValuetransfer1() {
+    return valuetransfer1;
   }
 
-  public void setValueTransfer1(Integer valueTransfer1) {
-    this.valueTransfer1 = valueTransfer1;
+  public void setValuetransfer1(Integer valuetransfer1) {
+    this.valuetransfer1 = valuetransfer1;
   }
 
-  public Plmjosetparsqueue wageOperationType1ID(String wageOperationType1ID) {
-    this.wageOperationType1ID = wageOperationType1ID;
+  public Plmjosetparsqueue wageoperationtype1Id(String wageoperationtype1Id) {
+    this.wageoperationtype1Id = wageoperationtype1Id;
     return this;
   }
 
    /**
-   * Druh výkonu; ID objektu Druhy výkonů [persistentní položka]
-   * @return wageOperationType1ID
+   * druh výkonu; id objektu druhy výkonů [persistentní položka]
+   * @return wageoperationtype1Id
   **/
-  @ApiModelProperty(example = "null", value = "Druh výkonu; ID objektu Druhy výkonů [persistentní položka]")
-  public String getWageOperationType1ID() {
-    return wageOperationType1ID;
+  @ApiModelProperty(example = "null", value = "druh výkonu; id objektu druhy výkonů [persistentní položka]")
+  public String getWageoperationtype1Id() {
+    return wageoperationtype1Id;
   }
 
-  public void setWageOperationType1ID(String wageOperationType1ID) {
-    this.wageOperationType1ID = wageOperationType1ID;
+  public void setWageoperationtype1Id(String wageoperationtype1Id) {
+    this.wageoperationtype1Id = wageoperationtype1Id;
   }
 
-  public Plmjosetparsqueue valueTransfer2(Integer valueTransfer2) {
-    this.valueTransfer2 = valueTransfer2;
+  public Plmjosetparsqueue valuetransfer2(Integer valuetransfer2) {
+    this.valuetransfer2 = valuetransfer2;
     return this;
   }
 
    /**
-   * Způsob přenosu [persistentní položka]
-   * @return valueTransfer2
+   * způsob přenosu [persistentní položka]
+   * @return valuetransfer2
   **/
-  @ApiModelProperty(example = "null", value = "Způsob přenosu [persistentní položka]")
-  public Integer getValueTransfer2() {
-    return valueTransfer2;
+  @ApiModelProperty(example = "null", value = "způsob přenosu [persistentní položka]")
+  public Integer getValuetransfer2() {
+    return valuetransfer2;
   }
 
-  public void setValueTransfer2(Integer valueTransfer2) {
-    this.valueTransfer2 = valueTransfer2;
+  public void setValuetransfer2(Integer valuetransfer2) {
+    this.valuetransfer2 = valuetransfer2;
   }
 
-  public Plmjosetparsqueue wageOperationType2ID(String wageOperationType2ID) {
-    this.wageOperationType2ID = wageOperationType2ID;
+  public Plmjosetparsqueue wageoperationtype2Id(String wageoperationtype2Id) {
+    this.wageoperationtype2Id = wageoperationtype2Id;
     return this;
   }
 
    /**
-   * Druh výkonu; ID objektu Druhy výkonů [persistentní položka]
-   * @return wageOperationType2ID
+   * druh výkonu; id objektu druhy výkonů [persistentní položka]
+   * @return wageoperationtype2Id
   **/
-  @ApiModelProperty(example = "null", value = "Druh výkonu; ID objektu Druhy výkonů [persistentní položka]")
-  public String getWageOperationType2ID() {
-    return wageOperationType2ID;
+  @ApiModelProperty(example = "null", value = "druh výkonu; id objektu druhy výkonů [persistentní položka]")
+  public String getWageoperationtype2Id() {
+    return wageoperationtype2Id;
   }
 
-  public void setWageOperationType2ID(String wageOperationType2ID) {
-    this.wageOperationType2ID = wageOperationType2ID;
+  public void setWageoperationtype2Id(String wageoperationtype2Id) {
+    this.wageoperationtype2Id = wageoperationtype2Id;
   }
 
-  public Plmjosetparsqueue inPlan(Boolean inPlan) {
-    this.inPlan = inPlan;
+  public Plmjosetparsqueue inplan(Boolean inplan) {
+    this.inplan = inplan;
     return this;
   }
 
    /**
-   * Započítat do kapacitního plánu [persistentní položka]
-   * @return inPlan
+   * započítat do kapacitního plánu [persistentní položka]
+   * @return inplan
   **/
-  @ApiModelProperty(example = "null", value = "Započítat do kapacitního plánu [persistentní položka]")
-  public Boolean getInPlan() {
-    return inPlan;
+  @ApiModelProperty(example = "null", value = "započítat do kapacitního plánu [persistentní položka]")
+  public Boolean getInplan() {
+    return inplan;
   }
 
-  public void setInPlan(Boolean inPlan) {
-    this.inPlan = inPlan;
+  public void setInplan(Boolean inplan) {
+    this.inplan = inplan;
   }
 
-  public Plmjosetparsqueue afterPR(Integer afterPR) {
-    this.afterPR = afterPR;
+  public Plmjosetparsqueue afterpr(Integer afterpr) {
+    this.afterpr = afterpr;
     return this;
   }
 
    /**
-   * Po vytvoření PHV generovat [persistentní položka]
-   * @return afterPR
+   * po vytvoření phv generovat [persistentní položka]
+   * @return afterpr
   **/
-  @ApiModelProperty(example = "null", value = "Po vytvoření PHV generovat [persistentní položka]")
-  public Integer getAfterPR() {
-    return afterPR;
+  @ApiModelProperty(example = "null", value = "po vytvoření phv generovat [persistentní položka]")
+  public Integer getAfterpr() {
+    return afterpr;
   }
 
-  public void setAfterPR(Integer afterPR) {
-    this.afterPR = afterPR;
+  public void setAfterpr(Integer afterpr) {
+    this.afterpr = afterpr;
   }
 
-  public Plmjosetparsqueue toleranceMaterialPositive(Double toleranceMaterialPositive) {
-    this.toleranceMaterialPositive = toleranceMaterialPositive;
+  public Plmjosetparsqueue tolerancematerialpositive(Double tolerancematerialpositive) {
+    this.tolerancematerialpositive = tolerancematerialpositive;
     return this;
   }
 
    /**
-   * Kladná tolerance výdeje materiálu [persistentní položka]
-   * @return toleranceMaterialPositive
+   * kladná tolerance výdeje materiálu [persistentní položka]
+   * @return tolerancematerialpositive
   **/
-  @ApiModelProperty(example = "null", value = "Kladná tolerance výdeje materiálu [persistentní položka]")
-  public Double getToleranceMaterialPositive() {
-    return toleranceMaterialPositive;
+  @ApiModelProperty(example = "null", value = "kladná tolerance výdeje materiálu [persistentní položka]")
+  public Double getTolerancematerialpositive() {
+    return tolerancematerialpositive;
   }
 
-  public void setToleranceMaterialPositive(Double toleranceMaterialPositive) {
-    this.toleranceMaterialPositive = toleranceMaterialPositive;
+  public void setTolerancematerialpositive(Double tolerancematerialpositive) {
+    this.tolerancematerialpositive = tolerancematerialpositive;
   }
 
-  public Plmjosetparsqueue toleranceMaterialNegative(Double toleranceMaterialNegative) {
-    this.toleranceMaterialNegative = toleranceMaterialNegative;
+  public Plmjosetparsqueue tolerancematerialnegative(Double tolerancematerialnegative) {
+    this.tolerancematerialnegative = tolerancematerialnegative;
     return this;
   }
 
    /**
-   * Záporná tolerance výdeje materiálu [persistentní položka]
-   * @return toleranceMaterialNegative
+   * záporná tolerance výdeje materiálu [persistentní položka]
+   * @return tolerancematerialnegative
   **/
-  @ApiModelProperty(example = "null", value = "Záporná tolerance výdeje materiálu [persistentní položka]")
-  public Double getToleranceMaterialNegative() {
-    return toleranceMaterialNegative;
+  @ApiModelProperty(example = "null", value = "záporná tolerance výdeje materiálu [persistentní položka]")
+  public Double getTolerancematerialnegative() {
+    return tolerancematerialnegative;
   }
 
-  public void setToleranceMaterialNegative(Double toleranceMaterialNegative) {
-    this.toleranceMaterialNegative = toleranceMaterialNegative;
+  public void setTolerancematerialnegative(Double tolerancematerialnegative) {
+    this.tolerancematerialnegative = tolerancematerialnegative;
   }
 
-  public Plmjosetparsqueue toleranceWagesPositive(Double toleranceWagesPositive) {
-    this.toleranceWagesPositive = toleranceWagesPositive;
+  public Plmjosetparsqueue tolerancewagespositive(Double tolerancewagespositive) {
+    this.tolerancewagespositive = tolerancewagespositive;
     return this;
   }
 
    /**
-   * Kladná tolerance mzdy+režie [persistentní položka]
-   * @return toleranceWagesPositive
+   * kladná tolerance mzdy+režie [persistentní položka]
+   * @return tolerancewagespositive
   **/
-  @ApiModelProperty(example = "null", value = "Kladná tolerance mzdy+režie [persistentní položka]")
-  public Double getToleranceWagesPositive() {
-    return toleranceWagesPositive;
+  @ApiModelProperty(example = "null", value = "kladná tolerance mzdy+režie [persistentní položka]")
+  public Double getTolerancewagespositive() {
+    return tolerancewagespositive;
   }
 
-  public void setToleranceWagesPositive(Double toleranceWagesPositive) {
-    this.toleranceWagesPositive = toleranceWagesPositive;
+  public void setTolerancewagespositive(Double tolerancewagespositive) {
+    this.tolerancewagespositive = tolerancewagespositive;
   }
 
-  public Plmjosetparsqueue toleranceWagesNegative(Double toleranceWagesNegative) {
-    this.toleranceWagesNegative = toleranceWagesNegative;
+  public Plmjosetparsqueue tolerancewagesnegative(Double tolerancewagesnegative) {
+    this.tolerancewagesnegative = tolerancewagesnegative;
     return this;
   }
 
    /**
-   * Záporná tolerance mzdy+režie [persistentní položka]
-   * @return toleranceWagesNegative
+   * záporná tolerance mzdy+režie [persistentní položka]
+   * @return tolerancewagesnegative
   **/
-  @ApiModelProperty(example = "null", value = "Záporná tolerance mzdy+režie [persistentní položka]")
-  public Double getToleranceWagesNegative() {
-    return toleranceWagesNegative;
+  @ApiModelProperty(example = "null", value = "záporná tolerance mzdy+režie [persistentní položka]")
+  public Double getTolerancewagesnegative() {
+    return tolerancewagesnegative;
   }
 
-  public void setToleranceWagesNegative(Double toleranceWagesNegative) {
-    this.toleranceWagesNegative = toleranceWagesNegative;
+  public void setTolerancewagesnegative(Double tolerancewagesnegative) {
+    this.tolerancewagesnegative = tolerancewagesnegative;
   }
 
-  public Plmjosetparsqueue materialExpenseInIncome(Boolean materialExpenseInIncome) {
-    this.materialExpenseInIncome = materialExpenseInIncome;
+  public Plmjosetparsqueue materialexpenseinincome(Boolean materialexpenseinincome) {
+    this.materialexpenseinincome = materialexpenseinincome;
     return this;
   }
 
    /**
-   * Materiálová režie v příjmu [persistentní položka]
-   * @return materialExpenseInIncome
+   * materiálová režie v příjmu [persistentní položka]
+   * @return materialexpenseinincome
   **/
-  @ApiModelProperty(example = "null", value = "Materiálová režie v příjmu [persistentní položka]")
-  public Boolean getMaterialExpenseInIncome() {
-    return materialExpenseInIncome;
+  @ApiModelProperty(example = "null", value = "materiálová režie v příjmu [persistentní položka]")
+  public Boolean getMaterialexpenseinincome() {
+    return materialexpenseinincome;
   }
 
-  public void setMaterialExpenseInIncome(Boolean materialExpenseInIncome) {
-    this.materialExpenseInIncome = materialExpenseInIncome;
+  public void setMaterialexpenseinincome(Boolean materialexpenseinincome) {
+    this.materialexpenseinincome = materialexpenseinincome;
   }
 
-  public Plmjosetparsqueue valuationPR(Integer valuationPR) {
-    this.valuationPR = valuationPR;
+  public Plmjosetparsqueue valuationpr(Integer valuationpr) {
+    this.valuationpr = valuationpr;
     return this;
   }
 
    /**
-   * Oceňovat PHV [persistentní položka]
-   * @return valuationPR
+   * oceňovat phv [persistentní položka]
+   * @return valuationpr
   **/
-  @ApiModelProperty(example = "null", value = "Oceňovat PHV [persistentní položka]")
-  public Integer getValuationPR() {
-    return valuationPR;
+  @ApiModelProperty(example = "null", value = "oceňovat phv [persistentní položka]")
+  public Integer getValuationpr() {
+    return valuationpr;
   }
 
-  public void setValuationPR(Integer valuationPR) {
-    this.valuationPR = valuationPR;
+  public void setValuationpr(Integer valuationpr) {
+    this.valuationpr = valuationpr;
   }
 
-  public Plmjosetparsqueue valuationTypePR(Integer valuationTypePR) {
-    this.valuationTypePR = valuationTypePR;
+  public Plmjosetparsqueue valuationtypepr(Integer valuationtypepr) {
+    this.valuationtypepr = valuationtypepr;
     return this;
   }
 
    /**
-   * Způsob ocenění PHV [persistentní položka]
-   * @return valuationTypePR
+   * způsob ocenění phv [persistentní položka]
+   * @return valuationtypepr
   **/
-  @ApiModelProperty(example = "null", value = "Způsob ocenění PHV [persistentní položka]")
-  public Integer getValuationTypePR() {
-    return valuationTypePR;
+  @ApiModelProperty(example = "null", value = "způsob ocenění phv [persistentní položka]")
+  public Integer getValuationtypepr() {
+    return valuationtypepr;
   }
 
-  public void setValuationTypePR(Integer valuationTypePR) {
-    this.valuationTypePR = valuationTypePR;
+  public void setValuationtypepr(Integer valuationtypepr) {
+    this.valuationtypepr = valuationtypepr;
   }
 
-  public Plmjosetparsqueue docQueueForFPID(String docQueueForFPID) {
-    this.docQueueForFPID = docQueueForFPID;
+  public Plmjosetparsqueue docqueueforfpId(String docqueueforfpId) {
+    this.docqueueforfpId = docqueueforfpId;
     return this;
   }
 
    /**
-   * Řada Dok. výrobky; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueForFPID
+   * Řada dok. výrobky; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueforfpId
   **/
-  @ApiModelProperty(example = "null", value = "Řada Dok. výrobky; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueForFPID() {
-    return docQueueForFPID;
+  @ApiModelProperty(example = "null", value = "Řada dok. výrobky; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueforfpId() {
+    return docqueueforfpId;
   }
 
-  public void setDocQueueForFPID(String docQueueForFPID) {
-    this.docQueueForFPID = docQueueForFPID;
+  public void setDocqueueforfpId(String docqueueforfpId) {
+    this.docqueueforfpId = docqueueforfpId;
   }
 
-  public Plmjosetparsqueue accPresetDefForFPID(String accPresetDefForFPID) {
-    this.accPresetDefForFPID = accPresetDefForFPID;
+  public Plmjosetparsqueue accpresetdefforfpId(String accpresetdefforfpId) {
+    this.accpresetdefforfpId = accpresetdefforfpId;
     return this;
   }
 
    /**
-   * Úč. předkontace Dok. výrobky; ID objektu Účetní předkontace [persistentní položka]
-   * @return accPresetDefForFPID
+   * Úč. předkontace dok. výrobky; id objektu Účetní předkontace [persistentní položka]
+   * @return accpresetdefforfpId
   **/
-  @ApiModelProperty(example = "null", value = "Úč. předkontace Dok. výrobky; ID objektu Účetní předkontace [persistentní položka]")
-  public String getAccPresetDefForFPID() {
-    return accPresetDefForFPID;
+  @ApiModelProperty(example = "null", value = "Úč. předkontace dok. výrobky; id objektu Účetní předkontace [persistentní položka]")
+  public String getAccpresetdefforfpId() {
+    return accpresetdefforfpId;
   }
 
-  public void setAccPresetDefForFPID(String accPresetDefForFPID) {
-    this.accPresetDefForFPID = accPresetDefForFPID;
+  public void setAccpresetdefforfpId(String accpresetdefforfpId) {
+    this.accpresetdefforfpId = accpresetdefforfpId;
   }
 
-  public Plmjosetparsqueue autoServerSchedulerID(String autoServerSchedulerID) {
-    this.autoServerSchedulerID = autoServerSchedulerID;
+  public Plmjosetparsqueue autoserverschedulerId(String autoserverschedulerId) {
+    this.autoserverschedulerId = autoserverschedulerId;
     return this;
   }
 
    /**
-   * Úloha autoserveru; ID objektu Naplánovaná úloha [persistentní položka]
-   * @return autoServerSchedulerID
+   * Úloha autoserveru; id objektu naplánovaná úloha [persistentní položka]
+   * @return autoserverschedulerId
   **/
-  @ApiModelProperty(example = "null", value = "Úloha autoserveru; ID objektu Naplánovaná úloha [persistentní položka]")
-  public String getAutoServerSchedulerID() {
-    return autoServerSchedulerID;
+  @ApiModelProperty(example = "null", value = "Úloha autoserveru; id objektu naplánovaná úloha [persistentní položka]")
+  public String getAutoserverschedulerId() {
+    return autoserverschedulerId;
   }
 
-  public void setAutoServerSchedulerID(String autoServerSchedulerID) {
-    this.autoServerSchedulerID = autoServerSchedulerID;
+  public void setAutoserverschedulerId(String autoserverschedulerId) {
+    this.autoserverschedulerId = autoserverschedulerId;
   }
 
-  public Plmjosetparsqueue modeUseMDAfterPR(Integer modeUseMDAfterPR) {
-    this.modeUseMDAfterPR = modeUseMDAfterPR;
+  public Plmjosetparsqueue modeusemdafterpr(Integer modeusemdafterpr) {
+    this.modeusemdafterpr = modeusemdafterpr;
     return this;
   }
 
    /**
-   * Způsob započítání výdeje materiálu po datu příjmu [persistentní položka]
-   * @return modeUseMDAfterPR
+   * způsob započítání výdeje materiálu po datu příjmu [persistentní položka]
+   * @return modeusemdafterpr
   **/
-  @ApiModelProperty(example = "null", value = "Způsob započítání výdeje materiálu po datu příjmu [persistentní položka]")
-  public Integer getModeUseMDAfterPR() {
-    return modeUseMDAfterPR;
+  @ApiModelProperty(example = "null", value = "způsob započítání výdeje materiálu po datu příjmu [persistentní položka]")
+  public Integer getModeusemdafterpr() {
+    return modeusemdafterpr;
   }
 
-  public void setModeUseMDAfterPR(Integer modeUseMDAfterPR) {
-    this.modeUseMDAfterPR = modeUseMDAfterPR;
+  public void setModeusemdafterpr(Integer modeusemdafterpr) {
+    this.modeusemdafterpr = modeusemdafterpr;
   }
 
-  public Plmjosetparsqueue modeUseOpAfterPR(Integer modeUseOpAfterPR) {
-    this.modeUseOpAfterPR = modeUseOpAfterPR;
+  public Plmjosetparsqueue modeuseopafterpr(Integer modeuseopafterpr) {
+    this.modeuseopafterpr = modeuseopafterpr;
     return this;
   }
 
    /**
-   * Způsob započítání pracovních lístků po datu příjmu [persistentní položka]
-   * @return modeUseOpAfterPR
+   * způsob započítání pracovních lístků po datu příjmu [persistentní položka]
+   * @return modeuseopafterpr
   **/
-  @ApiModelProperty(example = "null", value = "Způsob započítání pracovních lístků po datu příjmu [persistentní položka]")
-  public Integer getModeUseOpAfterPR() {
-    return modeUseOpAfterPR;
+  @ApiModelProperty(example = "null", value = "způsob započítání pracovních lístků po datu příjmu [persistentní položka]")
+  public Integer getModeuseopafterpr() {
+    return modeuseopafterpr;
   }
 
-  public void setModeUseOpAfterPR(Integer modeUseOpAfterPR) {
-    this.modeUseOpAfterPR = modeUseOpAfterPR;
+  public void setModeuseopafterpr(Integer modeuseopafterpr) {
+    this.modeuseopafterpr = modeuseopafterpr;
   }
 
-  public Plmjosetparsqueue aWTByDate(Integer aWTByDate) {
-    this.aWTByDate = aWTByDate;
+  public Plmjosetparsqueue awtbydate(Integer awtbydate) {
+    this.awtbydate = awtbydate;
     return this;
   }
 
    /**
-   * SPL dle data [persistentní položka]
-   * @return aWTByDate
+   * spl dle data [persistentní položka]
+   * @return awtbydate
   **/
-  @ApiModelProperty(example = "null", value = "SPL dle data [persistentní položka]")
-  public Integer getAWTByDate() {
-    return aWTByDate;
+  @ApiModelProperty(example = "null", value = "spl dle data [persistentní položka]")
+  public Integer getAwtbydate() {
+    return awtbydate;
   }
 
-  public void setAWTByDate(Integer aWTByDate) {
-    this.aWTByDate = aWTByDate;
+  public void setAwtbydate(Integer awtbydate) {
+    this.awtbydate = awtbydate;
   }
 
-  public Plmjosetparsqueue aWTByDivision(Boolean aWTByDivision) {
-    this.aWTByDivision = aWTByDivision;
+  public Plmjosetparsqueue awtbydivision(Boolean awtbydivision) {
+    this.awtbydivision = awtbydivision;
     return this;
   }
 
    /**
-   * SPL dle střediska [persistentní položka]
-   * @return aWTByDivision
+   * spl dle střediska [persistentní položka]
+   * @return awtbydivision
   **/
-  @ApiModelProperty(example = "null", value = "SPL dle střediska [persistentní položka]")
-  public Boolean getAWTByDivision() {
-    return aWTByDivision;
+  @ApiModelProperty(example = "null", value = "spl dle střediska [persistentní položka]")
+  public Boolean getAwtbydivision() {
+    return awtbydivision;
   }
 
-  public void setAWTByDivision(Boolean aWTByDivision) {
-    this.aWTByDivision = aWTByDivision;
+  public void setAwtbydivision(Boolean awtbydivision) {
+    this.awtbydivision = awtbydivision;
   }
 
-  public Plmjosetparsqueue aWTDivisionID(String aWTDivisionID) {
-    this.aWTDivisionID = aWTDivisionID;
+  public Plmjosetparsqueue awtdivisionId(String awtdivisionId) {
+    this.awtdivisionId = awtdivisionId;
     return this;
   }
 
    /**
-   * SPL - středisko; ID objektu Středisko [persistentní položka]
-   * @return aWTDivisionID
+   * spl - středisko; id objektu středisko [persistentní položka]
+   * @return awtdivisionId
   **/
-  @ApiModelProperty(example = "null", value = "SPL - středisko; ID objektu Středisko [persistentní položka]")
-  public String getAWTDivisionID() {
-    return aWTDivisionID;
+  @ApiModelProperty(example = "null", value = "spl - středisko; id objektu středisko [persistentní položka]")
+  public String getAwtdivisionId() {
+    return awtdivisionId;
   }
 
-  public void setAWTDivisionID(String aWTDivisionID) {
-    this.aWTDivisionID = aWTDivisionID;
+  public void setAwtdivisionId(String awtdivisionId) {
+    this.awtdivisionId = awtdivisionId;
   }
 
-  public Plmjosetparsqueue aWTByBusOrder(Boolean aWTByBusOrder) {
-    this.aWTByBusOrder = aWTByBusOrder;
+  public Plmjosetparsqueue awtbybusorder(Boolean awtbybusorder) {
+    this.awtbybusorder = awtbybusorder;
     return this;
   }
 
    /**
-   * SPL dle zakázek [persistentní položka]
-   * @return aWTByBusOrder
+   * spl dle zakázek [persistentní položka]
+   * @return awtbybusorder
   **/
-  @ApiModelProperty(example = "null", value = "SPL dle zakázek [persistentní položka]")
-  public Boolean getAWTByBusOrder() {
-    return aWTByBusOrder;
+  @ApiModelProperty(example = "null", value = "spl dle zakázek [persistentní položka]")
+  public Boolean getAwtbybusorder() {
+    return awtbybusorder;
   }
 
-  public void setAWTByBusOrder(Boolean aWTByBusOrder) {
-    this.aWTByBusOrder = aWTByBusOrder;
+  public void setAwtbybusorder(Boolean awtbybusorder) {
+    this.awtbybusorder = awtbybusorder;
   }
 
-  public Plmjosetparsqueue aWTBusOrderID(String aWTBusOrderID) {
-    this.aWTBusOrderID = aWTBusOrderID;
+  public Plmjosetparsqueue awtbusorderId(String awtbusorderId) {
+    this.awtbusorderId = awtbusorderId;
     return this;
   }
 
    /**
-   * SPL - zakázka; ID objektu Zakázka [persistentní položka]
-   * @return aWTBusOrderID
+   * spl - zakázka; id objektu zakázka [persistentní položka]
+   * @return awtbusorderId
   **/
-  @ApiModelProperty(example = "null", value = "SPL - zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getAWTBusOrderID() {
-    return aWTBusOrderID;
+  @ApiModelProperty(example = "null", value = "spl - zakázka; id objektu zakázka [persistentní položka]")
+  public String getAwtbusorderId() {
+    return awtbusorderId;
   }
 
-  public void setAWTBusOrderID(String aWTBusOrderID) {
-    this.aWTBusOrderID = aWTBusOrderID;
+  public void setAwtbusorderId(String awtbusorderId) {
+    this.awtbusorderId = awtbusorderId;
   }
 
-  public Plmjosetparsqueue aWTByBusTransaction(Boolean aWTByBusTransaction) {
-    this.aWTByBusTransaction = aWTByBusTransaction;
+  public Plmjosetparsqueue awtbybustransaction(Boolean awtbybustransaction) {
+    this.awtbybustransaction = awtbybustransaction;
     return this;
   }
 
    /**
-   * SPL dle obch. případů [persistentní položka]
-   * @return aWTByBusTransaction
+   * spl dle obch. případů [persistentní položka]
+   * @return awtbybustransaction
   **/
-  @ApiModelProperty(example = "null", value = "SPL dle obch. případů [persistentní položka]")
-  public Boolean getAWTByBusTransaction() {
-    return aWTByBusTransaction;
+  @ApiModelProperty(example = "null", value = "spl dle obch. případů [persistentní položka]")
+  public Boolean getAwtbybustransaction() {
+    return awtbybustransaction;
   }
 
-  public void setAWTByBusTransaction(Boolean aWTByBusTransaction) {
-    this.aWTByBusTransaction = aWTByBusTransaction;
+  public void setAwtbybustransaction(Boolean awtbybustransaction) {
+    this.awtbybustransaction = awtbybustransaction;
   }
 
-  public Plmjosetparsqueue aWTBusTransactionID(String aWTBusTransactionID) {
-    this.aWTBusTransactionID = aWTBusTransactionID;
+  public Plmjosetparsqueue awtbustransactionId(String awtbustransactionId) {
+    this.awtbustransactionId = awtbustransactionId;
     return this;
   }
 
    /**
-   * SPL - obch. případ; ID objektu Obchodní případ [persistentní položka]
-   * @return aWTBusTransactionID
+   * spl - obch. případ; id objektu obchodní případ [persistentní položka]
+   * @return awtbustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "SPL - obch. případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getAWTBusTransactionID() {
-    return aWTBusTransactionID;
+  @ApiModelProperty(example = "null", value = "spl - obch. případ; id objektu obchodní případ [persistentní položka]")
+  public String getAwtbustransactionId() {
+    return awtbustransactionId;
   }
 
-  public void setAWTBusTransactionID(String aWTBusTransactionID) {
-    this.aWTBusTransactionID = aWTBusTransactionID;
+  public void setAwtbustransactionId(String awtbustransactionId) {
+    this.awtbustransactionId = awtbustransactionId;
   }
 
-  public Plmjosetparsqueue aWTByBusProject(Boolean aWTByBusProject) {
-    this.aWTByBusProject = aWTByBusProject;
+  public Plmjosetparsqueue awtbybusproject(Boolean awtbybusproject) {
+    this.awtbybusproject = awtbybusproject;
     return this;
   }
 
    /**
-   * SPL dle projektů [persistentní položka]
-   * @return aWTByBusProject
+   * spl dle projektů [persistentní položka]
+   * @return awtbybusproject
   **/
-  @ApiModelProperty(example = "null", value = "SPL dle projektů [persistentní položka]")
-  public Boolean getAWTByBusProject() {
-    return aWTByBusProject;
+  @ApiModelProperty(example = "null", value = "spl dle projektů [persistentní položka]")
+  public Boolean getAwtbybusproject() {
+    return awtbybusproject;
   }
 
-  public void setAWTByBusProject(Boolean aWTByBusProject) {
-    this.aWTByBusProject = aWTByBusProject;
+  public void setAwtbybusproject(Boolean awtbybusproject) {
+    this.awtbybusproject = awtbybusproject;
   }
 
-  public Plmjosetparsqueue aWTByJobOrder(Boolean aWTByJobOrder) {
-    this.aWTByJobOrder = aWTByJobOrder;
+  public Plmjosetparsqueue awtbyjoborder(Boolean awtbyjoborder) {
+    this.awtbyjoborder = awtbyjoborder;
     return this;
   }
 
    /**
-   * SPL dle výr. projektů [persistentní položka]
-   * @return aWTByJobOrder
+   * spl dle výr. projektů [persistentní položka]
+   * @return awtbyjoborder
   **/
-  @ApiModelProperty(example = "null", value = "SPL dle výr. projektů [persistentní položka]")
-  public Boolean getAWTByJobOrder() {
-    return aWTByJobOrder;
+  @ApiModelProperty(example = "null", value = "spl dle výr. projektů [persistentní položka]")
+  public Boolean getAwtbyjoborder() {
+    return awtbyjoborder;
   }
 
-  public void setAWTByJobOrder(Boolean aWTByJobOrder) {
-    this.aWTByJobOrder = aWTByJobOrder;
+  public void setAwtbyjoborder(Boolean awtbyjoborder) {
+    this.awtbyjoborder = awtbyjoborder;
   }
 
-  public Plmjosetparsqueue aWTBusProjectID(String aWTBusProjectID) {
-    this.aWTBusProjectID = aWTBusProjectID;
+  public Plmjosetparsqueue awtbusprojectId(String awtbusprojectId) {
+    this.awtbusprojectId = awtbusprojectId;
     return this;
   }
 
    /**
-   * SPL - projekt; ID objektu Projekt [persistentní položka]
-   * @return aWTBusProjectID
+   * spl - projekt; id objektu projekt [persistentní položka]
+   * @return awtbusprojectId
   **/
-  @ApiModelProperty(example = "null", value = "SPL - projekt; ID objektu Projekt [persistentní položka]")
-  public String getAWTBusProjectID() {
-    return aWTBusProjectID;
+  @ApiModelProperty(example = "null", value = "spl - projekt; id objektu projekt [persistentní položka]")
+  public String getAwtbusprojectId() {
+    return awtbusprojectId;
   }
 
-  public void setAWTBusProjectID(String aWTBusProjectID) {
-    this.aWTBusProjectID = aWTBusProjectID;
+  public void setAwtbusprojectId(String awtbusprojectId) {
+    this.awtbusprojectId = awtbusprojectId;
   }
 
-  public Plmjosetparsqueue balanceDocQueueID(String balanceDocQueueID) {
-    this.balanceDocQueueID = balanceDocQueueID;
+  public Plmjosetparsqueue balancedocqueueId(String balancedocqueueId) {
+    this.balancedocqueueId = balancedocqueueId;
     return this;
   }
 
    /**
-   * Řada VNV; ID objektu Řada dokladů [persistentní položka]
-   * @return balanceDocQueueID
+   * Řada vnv; id objektu Řada dokladů [persistentní položka]
+   * @return balancedocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada VNV; ID objektu Řada dokladů [persistentní položka]")
-  public String getBalanceDocQueueID() {
-    return balanceDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada vnv; id objektu Řada dokladů [persistentní položka]")
+  public String getBalancedocqueueId() {
+    return balancedocqueueId;
   }
 
-  public void setBalanceDocQueueID(String balanceDocQueueID) {
-    this.balanceDocQueueID = balanceDocQueueID;
+  public void setBalancedocqueueId(String balancedocqueueId) {
+    this.balancedocqueueId = balancedocqueueId;
   }
 
-  public Plmjosetparsqueue balanceAccPresetDefID(String balanceAccPresetDefID) {
-    this.balanceAccPresetDefID = balanceAccPresetDefID;
+  public Plmjosetparsqueue balanceaccpresetdefId(String balanceaccpresetdefId) {
+    this.balanceaccpresetdefId = balanceaccpresetdefId;
     return this;
   }
 
    /**
-   * Úč. předkontace VNV; ID objektu Účetní předkontace [persistentní položka]
-   * @return balanceAccPresetDefID
+   * Úč. předkontace vnv; id objektu Účetní předkontace [persistentní položka]
+   * @return balanceaccpresetdefId
   **/
-  @ApiModelProperty(example = "null", value = "Úč. předkontace VNV; ID objektu Účetní předkontace [persistentní položka]")
-  public String getBalanceAccPresetDefID() {
-    return balanceAccPresetDefID;
+  @ApiModelProperty(example = "null", value = "Úč. předkontace vnv; id objektu Účetní předkontace [persistentní položka]")
+  public String getBalanceaccpresetdefId() {
+    return balanceaccpresetdefId;
   }
 
-  public void setBalanceAccPresetDefID(String balanceAccPresetDefID) {
-    this.balanceAccPresetDefID = balanceAccPresetDefID;
+  public void setBalanceaccpresetdefId(String balanceaccpresetdefId) {
+    this.balanceaccpresetdefId = balanceaccpresetdefId;
   }
 
-  public Plmjosetparsqueue balanceDepDocQueueID(String balanceDepDocQueueID) {
-    this.balanceDepDocQueueID = balanceDepDocQueueID;
+  public Plmjosetparsqueue balancedepdocqueueId(String balancedepdocqueueId) {
+    this.balancedepdocqueueId = balancedepdocqueueId;
     return this;
   }
 
    /**
-   * Řada nezapočtených VNV; ID objektu Řada dokladů [persistentní položka]
-   * @return balanceDepDocQueueID
+   * Řada nezapočtených vnv; id objektu Řada dokladů [persistentní položka]
+   * @return balancedepdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada nezapočtených VNV; ID objektu Řada dokladů [persistentní položka]")
-  public String getBalanceDepDocQueueID() {
-    return balanceDepDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada nezapočtených vnv; id objektu Řada dokladů [persistentní položka]")
+  public String getBalancedepdocqueueId() {
+    return balancedepdocqueueId;
   }
 
-  public void setBalanceDepDocQueueID(String balanceDepDocQueueID) {
-    this.balanceDepDocQueueID = balanceDepDocQueueID;
+  public void setBalancedepdocqueueId(String balancedepdocqueueId) {
+    this.balancedepdocqueueId = balancedepdocqueueId;
   }
 
-  public Plmjosetparsqueue balanceDepAccPresetDefID(String balanceDepAccPresetDefID) {
-    this.balanceDepAccPresetDefID = balanceDepAccPresetDefID;
+  public Plmjosetparsqueue balancedepaccpresetdefId(String balancedepaccpresetdefId) {
+    this.balancedepaccpresetdefId = balancedepaccpresetdefId;
     return this;
   }
 
    /**
-   * Úč. předkontace nezapočtených VNV; ID objektu Účetní předkontace [persistentní položka]
-   * @return balanceDepAccPresetDefID
+   * Úč. předkontace nezapočtených vnv; id objektu Účetní předkontace [persistentní položka]
+   * @return balancedepaccpresetdefId
   **/
-  @ApiModelProperty(example = "null", value = "Úč. předkontace nezapočtených VNV; ID objektu Účetní předkontace [persistentní položka]")
-  public String getBalanceDepAccPresetDefID() {
-    return balanceDepAccPresetDefID;
+  @ApiModelProperty(example = "null", value = "Úč. předkontace nezapočtených vnv; id objektu Účetní předkontace [persistentní položka]")
+  public String getBalancedepaccpresetdefId() {
+    return balancedepaccpresetdefId;
   }
 
-  public void setBalanceDepAccPresetDefID(String balanceDepAccPresetDefID) {
-    this.balanceDepAccPresetDefID = balanceDepAccPresetDefID;
+  public void setBalancedepaccpresetdefId(String balancedepaccpresetdefId) {
+    this.balancedepaccpresetdefId = balancedepaccpresetdefId;
   }
 
 
@@ -1312,73 +1348,73 @@ public class Plmjosetparsqueue   {
       return false;
     }
     Plmjosetparsqueue plmjosetparsqueue = (Plmjosetparsqueue) o;
-    return Objects.equals(this.displayName, plmjosetparsqueue.displayName) &&
-        Objects.equals(this.ID, plmjosetparsqueue.ID) &&
-        Objects.equals(this.classID, plmjosetparsqueue.classID) &&
-        Objects.equals(this.objVersion, plmjosetparsqueue.objVersion) &&
-        Objects.equals(this.docQueueID, plmjosetparsqueue.docQueueID) &&
-        Objects.equals(this.materialInIncome, plmjosetparsqueue.materialInIncome) &&
-        Objects.equals(this.cooperationInIncome, plmjosetparsqueue.cooperationInIncome) &&
-        Objects.equals(this.priceInIncome, plmjosetparsqueue.priceInIncome) &&
-        Objects.equals(this.salariesInIncome, plmjosetparsqueue.salariesInIncome) &&
-        Objects.equals(this.overheadCostsInIncome, plmjosetparsqueue.overheadCostsInIncome) &&
-        Objects.equals(this.generalExpenseInIncome, plmjosetparsqueue.generalExpenseInIncome) &&
-        Objects.equals(this.operationsAuto, plmjosetparsqueue.operationsAuto) &&
-        Objects.equals(this.docQueueForAWTID, plmjosetparsqueue.docQueueForAWTID) &&
-        Objects.equals(this.accPresetDefID, plmjosetparsqueue.accPresetDefID) &&
-        Objects.equals(this.batchOperationOver, plmjosetparsqueue.batchOperationOver) &&
-        Objects.equals(this.materialDistributionOver, plmjosetparsqueue.materialDistributionOver) &&
-        Objects.equals(this.afterJOStartUp, plmjosetparsqueue.afterJOStartUp) &&
-        Objects.equals(this.consumablesInIncome, plmjosetparsqueue.consumablesInIncome) &&
-        Objects.equals(this.productReceptionOver, plmjosetparsqueue.productReceptionOver) &&
-        Objects.equals(this.ignoreDateOfExpiration, plmjosetparsqueue.ignoreDateOfExpiration) &&
-        Objects.equals(this.documentCategoryForTestingID, plmjosetparsqueue.documentCategoryForTestingID) &&
-        Objects.equals(this.defaultSupposedStoreID, plmjosetparsqueue.defaultSupposedStoreID) &&
+    return Objects.equals(this.displayname, plmjosetparsqueue.displayname) &&
+        Objects.equals(this.id, plmjosetparsqueue.id) &&
+        Objects.equals(this.classid, plmjosetparsqueue.classid) &&
+        Objects.equals(this.objversion, plmjosetparsqueue.objversion) &&
+        Objects.equals(this.docqueueId, plmjosetparsqueue.docqueueId) &&
+        Objects.equals(this.materialinincome, plmjosetparsqueue.materialinincome) &&
+        Objects.equals(this.cooperationinincome, plmjosetparsqueue.cooperationinincome) &&
+        Objects.equals(this.priceinincome, plmjosetparsqueue.priceinincome) &&
+        Objects.equals(this.salariesinincome, plmjosetparsqueue.salariesinincome) &&
+        Objects.equals(this.overheadcostsinincome, plmjosetparsqueue.overheadcostsinincome) &&
+        Objects.equals(this.generalexpenseinincome, plmjosetparsqueue.generalexpenseinincome) &&
+        Objects.equals(this.operationsauto, plmjosetparsqueue.operationsauto) &&
+        Objects.equals(this.docqueueforawtId, plmjosetparsqueue.docqueueforawtId) &&
+        Objects.equals(this.accpresetdefId, plmjosetparsqueue.accpresetdefId) &&
+        Objects.equals(this.batchoperationover, plmjosetparsqueue.batchoperationover) &&
+        Objects.equals(this.materialdistributionover, plmjosetparsqueue.materialdistributionover) &&
+        Objects.equals(this.afterjostartup, plmjosetparsqueue.afterjostartup) &&
+        Objects.equals(this.consumablesinincome, plmjosetparsqueue.consumablesinincome) &&
+        Objects.equals(this.productreceptionover, plmjosetparsqueue.productreceptionover) &&
+        Objects.equals(this.ignoredateofexpiration, plmjosetparsqueue.ignoredateofexpiration) &&
+        Objects.equals(this.documentcategoryfortestingId, plmjosetparsqueue.documentcategoryfortestingId) &&
+        Objects.equals(this.defaultsupposedstoreId, plmjosetparsqueue.defaultsupposedstoreId) &&
         Objects.equals(this.transfer, plmjosetparsqueue.transfer) &&
-        Objects.equals(this.allowRepairTransOp, plmjosetparsqueue.allowRepairTransOp) &&
+        Objects.equals(this.allowrepairtransop, plmjosetparsqueue.allowrepairtransop) &&
         Objects.equals(this.correction, plmjosetparsqueue.correction) &&
-        Objects.equals(this.groupDivision, plmjosetparsqueue.groupDivision) &&
-        Objects.equals(this.groupBusOrder, plmjosetparsqueue.groupBusOrder) &&
-        Objects.equals(this.groupBusTransaction, plmjosetparsqueue.groupBusTransaction) &&
-        Objects.equals(this.groupBusProject, plmjosetparsqueue.groupBusProject) &&
-        Objects.equals(this.groupDate, plmjosetparsqueue.groupDate) &&
-        Objects.equals(this.valueTransfer1, plmjosetparsqueue.valueTransfer1) &&
-        Objects.equals(this.wageOperationType1ID, plmjosetparsqueue.wageOperationType1ID) &&
-        Objects.equals(this.valueTransfer2, plmjosetparsqueue.valueTransfer2) &&
-        Objects.equals(this.wageOperationType2ID, plmjosetparsqueue.wageOperationType2ID) &&
-        Objects.equals(this.inPlan, plmjosetparsqueue.inPlan) &&
-        Objects.equals(this.afterPR, plmjosetparsqueue.afterPR) &&
-        Objects.equals(this.toleranceMaterialPositive, plmjosetparsqueue.toleranceMaterialPositive) &&
-        Objects.equals(this.toleranceMaterialNegative, plmjosetparsqueue.toleranceMaterialNegative) &&
-        Objects.equals(this.toleranceWagesPositive, plmjosetparsqueue.toleranceWagesPositive) &&
-        Objects.equals(this.toleranceWagesNegative, plmjosetparsqueue.toleranceWagesNegative) &&
-        Objects.equals(this.materialExpenseInIncome, plmjosetparsqueue.materialExpenseInIncome) &&
-        Objects.equals(this.valuationPR, plmjosetparsqueue.valuationPR) &&
-        Objects.equals(this.valuationTypePR, plmjosetparsqueue.valuationTypePR) &&
-        Objects.equals(this.docQueueForFPID, plmjosetparsqueue.docQueueForFPID) &&
-        Objects.equals(this.accPresetDefForFPID, plmjosetparsqueue.accPresetDefForFPID) &&
-        Objects.equals(this.autoServerSchedulerID, plmjosetparsqueue.autoServerSchedulerID) &&
-        Objects.equals(this.modeUseMDAfterPR, plmjosetparsqueue.modeUseMDAfterPR) &&
-        Objects.equals(this.modeUseOpAfterPR, plmjosetparsqueue.modeUseOpAfterPR) &&
-        Objects.equals(this.aWTByDate, plmjosetparsqueue.aWTByDate) &&
-        Objects.equals(this.aWTByDivision, plmjosetparsqueue.aWTByDivision) &&
-        Objects.equals(this.aWTDivisionID, plmjosetparsqueue.aWTDivisionID) &&
-        Objects.equals(this.aWTByBusOrder, plmjosetparsqueue.aWTByBusOrder) &&
-        Objects.equals(this.aWTBusOrderID, plmjosetparsqueue.aWTBusOrderID) &&
-        Objects.equals(this.aWTByBusTransaction, plmjosetparsqueue.aWTByBusTransaction) &&
-        Objects.equals(this.aWTBusTransactionID, plmjosetparsqueue.aWTBusTransactionID) &&
-        Objects.equals(this.aWTByBusProject, plmjosetparsqueue.aWTByBusProject) &&
-        Objects.equals(this.aWTByJobOrder, plmjosetparsqueue.aWTByJobOrder) &&
-        Objects.equals(this.aWTBusProjectID, plmjosetparsqueue.aWTBusProjectID) &&
-        Objects.equals(this.balanceDocQueueID, plmjosetparsqueue.balanceDocQueueID) &&
-        Objects.equals(this.balanceAccPresetDefID, plmjosetparsqueue.balanceAccPresetDefID) &&
-        Objects.equals(this.balanceDepDocQueueID, plmjosetparsqueue.balanceDepDocQueueID) &&
-        Objects.equals(this.balanceDepAccPresetDefID, plmjosetparsqueue.balanceDepAccPresetDefID);
+        Objects.equals(this.groupdivision, plmjosetparsqueue.groupdivision) &&
+        Objects.equals(this.groupbusorder, plmjosetparsqueue.groupbusorder) &&
+        Objects.equals(this.groupbustransaction, plmjosetparsqueue.groupbustransaction) &&
+        Objects.equals(this.groupbusproject, plmjosetparsqueue.groupbusproject) &&
+        Objects.equals(this.groupdate, plmjosetparsqueue.groupdate) &&
+        Objects.equals(this.valuetransfer1, plmjosetparsqueue.valuetransfer1) &&
+        Objects.equals(this.wageoperationtype1Id, plmjosetparsqueue.wageoperationtype1Id) &&
+        Objects.equals(this.valuetransfer2, plmjosetparsqueue.valuetransfer2) &&
+        Objects.equals(this.wageoperationtype2Id, plmjosetparsqueue.wageoperationtype2Id) &&
+        Objects.equals(this.inplan, plmjosetparsqueue.inplan) &&
+        Objects.equals(this.afterpr, plmjosetparsqueue.afterpr) &&
+        Objects.equals(this.tolerancematerialpositive, plmjosetparsqueue.tolerancematerialpositive) &&
+        Objects.equals(this.tolerancematerialnegative, plmjosetparsqueue.tolerancematerialnegative) &&
+        Objects.equals(this.tolerancewagespositive, plmjosetparsqueue.tolerancewagespositive) &&
+        Objects.equals(this.tolerancewagesnegative, plmjosetparsqueue.tolerancewagesnegative) &&
+        Objects.equals(this.materialexpenseinincome, plmjosetparsqueue.materialexpenseinincome) &&
+        Objects.equals(this.valuationpr, plmjosetparsqueue.valuationpr) &&
+        Objects.equals(this.valuationtypepr, plmjosetparsqueue.valuationtypepr) &&
+        Objects.equals(this.docqueueforfpId, plmjosetparsqueue.docqueueforfpId) &&
+        Objects.equals(this.accpresetdefforfpId, plmjosetparsqueue.accpresetdefforfpId) &&
+        Objects.equals(this.autoserverschedulerId, plmjosetparsqueue.autoserverschedulerId) &&
+        Objects.equals(this.modeusemdafterpr, plmjosetparsqueue.modeusemdafterpr) &&
+        Objects.equals(this.modeuseopafterpr, plmjosetparsqueue.modeuseopafterpr) &&
+        Objects.equals(this.awtbydate, plmjosetparsqueue.awtbydate) &&
+        Objects.equals(this.awtbydivision, plmjosetparsqueue.awtbydivision) &&
+        Objects.equals(this.awtdivisionId, plmjosetparsqueue.awtdivisionId) &&
+        Objects.equals(this.awtbybusorder, plmjosetparsqueue.awtbybusorder) &&
+        Objects.equals(this.awtbusorderId, plmjosetparsqueue.awtbusorderId) &&
+        Objects.equals(this.awtbybustransaction, plmjosetparsqueue.awtbybustransaction) &&
+        Objects.equals(this.awtbustransactionId, plmjosetparsqueue.awtbustransactionId) &&
+        Objects.equals(this.awtbybusproject, plmjosetparsqueue.awtbybusproject) &&
+        Objects.equals(this.awtbyjoborder, plmjosetparsqueue.awtbyjoborder) &&
+        Objects.equals(this.awtbusprojectId, plmjosetparsqueue.awtbusprojectId) &&
+        Objects.equals(this.balancedocqueueId, plmjosetparsqueue.balancedocqueueId) &&
+        Objects.equals(this.balanceaccpresetdefId, plmjosetparsqueue.balanceaccpresetdefId) &&
+        Objects.equals(this.balancedepdocqueueId, plmjosetparsqueue.balancedepdocqueueId) &&
+        Objects.equals(this.balancedepaccpresetdefId, plmjosetparsqueue.balancedepaccpresetdefId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, docQueueID, materialInIncome, cooperationInIncome, priceInIncome, salariesInIncome, overheadCostsInIncome, generalExpenseInIncome, operationsAuto, docQueueForAWTID, accPresetDefID, batchOperationOver, materialDistributionOver, afterJOStartUp, consumablesInIncome, productReceptionOver, ignoreDateOfExpiration, documentCategoryForTestingID, defaultSupposedStoreID, transfer, allowRepairTransOp, correction, groupDivision, groupBusOrder, groupBusTransaction, groupBusProject, groupDate, valueTransfer1, wageOperationType1ID, valueTransfer2, wageOperationType2ID, inPlan, afterPR, toleranceMaterialPositive, toleranceMaterialNegative, toleranceWagesPositive, toleranceWagesNegative, materialExpenseInIncome, valuationPR, valuationTypePR, docQueueForFPID, accPresetDefForFPID, autoServerSchedulerID, modeUseMDAfterPR, modeUseOpAfterPR, aWTByDate, aWTByDivision, aWTDivisionID, aWTByBusOrder, aWTBusOrderID, aWTByBusTransaction, aWTBusTransactionID, aWTByBusProject, aWTByJobOrder, aWTBusProjectID, balanceDocQueueID, balanceAccPresetDefID, balanceDepDocQueueID, balanceDepAccPresetDefID);
+    return Objects.hash(displayname, id, classid, objversion, docqueueId, materialinincome, cooperationinincome, priceinincome, salariesinincome, overheadcostsinincome, generalexpenseinincome, operationsauto, docqueueforawtId, accpresetdefId, batchoperationover, materialdistributionover, afterjostartup, consumablesinincome, productreceptionover, ignoredateofexpiration, documentcategoryfortestingId, defaultsupposedstoreId, transfer, allowrepairtransop, correction, groupdivision, groupbusorder, groupbustransaction, groupbusproject, groupdate, valuetransfer1, wageoperationtype1Id, valuetransfer2, wageoperationtype2Id, inplan, afterpr, tolerancematerialpositive, tolerancematerialnegative, tolerancewagespositive, tolerancewagesnegative, materialexpenseinincome, valuationpr, valuationtypepr, docqueueforfpId, accpresetdefforfpId, autoserverschedulerId, modeusemdafterpr, modeuseopafterpr, awtbydate, awtbydivision, awtdivisionId, awtbybusorder, awtbusorderId, awtbybustransaction, awtbustransactionId, awtbybusproject, awtbyjoborder, awtbusprojectId, balancedocqueueId, balanceaccpresetdefId, balancedepdocqueueId, balancedepaccpresetdefId);
   }
 
   @Override
@@ -1386,68 +1422,68 @@ public class Plmjosetparsqueue   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmjosetparsqueue {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    materialInIncome: ").append(toIndentedString(materialInIncome)).append("\n");
-    sb.append("    cooperationInIncome: ").append(toIndentedString(cooperationInIncome)).append("\n");
-    sb.append("    priceInIncome: ").append(toIndentedString(priceInIncome)).append("\n");
-    sb.append("    salariesInIncome: ").append(toIndentedString(salariesInIncome)).append("\n");
-    sb.append("    overheadCostsInIncome: ").append(toIndentedString(overheadCostsInIncome)).append("\n");
-    sb.append("    generalExpenseInIncome: ").append(toIndentedString(generalExpenseInIncome)).append("\n");
-    sb.append("    operationsAuto: ").append(toIndentedString(operationsAuto)).append("\n");
-    sb.append("    docQueueForAWTID: ").append(toIndentedString(docQueueForAWTID)).append("\n");
-    sb.append("    accPresetDefID: ").append(toIndentedString(accPresetDefID)).append("\n");
-    sb.append("    batchOperationOver: ").append(toIndentedString(batchOperationOver)).append("\n");
-    sb.append("    materialDistributionOver: ").append(toIndentedString(materialDistributionOver)).append("\n");
-    sb.append("    afterJOStartUp: ").append(toIndentedString(afterJOStartUp)).append("\n");
-    sb.append("    consumablesInIncome: ").append(toIndentedString(consumablesInIncome)).append("\n");
-    sb.append("    productReceptionOver: ").append(toIndentedString(productReceptionOver)).append("\n");
-    sb.append("    ignoreDateOfExpiration: ").append(toIndentedString(ignoreDateOfExpiration)).append("\n");
-    sb.append("    documentCategoryForTestingID: ").append(toIndentedString(documentCategoryForTestingID)).append("\n");
-    sb.append("    defaultSupposedStoreID: ").append(toIndentedString(defaultSupposedStoreID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    materialinincome: ").append(toIndentedString(materialinincome)).append("\n");
+    sb.append("    cooperationinincome: ").append(toIndentedString(cooperationinincome)).append("\n");
+    sb.append("    priceinincome: ").append(toIndentedString(priceinincome)).append("\n");
+    sb.append("    salariesinincome: ").append(toIndentedString(salariesinincome)).append("\n");
+    sb.append("    overheadcostsinincome: ").append(toIndentedString(overheadcostsinincome)).append("\n");
+    sb.append("    generalexpenseinincome: ").append(toIndentedString(generalexpenseinincome)).append("\n");
+    sb.append("    operationsauto: ").append(toIndentedString(operationsauto)).append("\n");
+    sb.append("    docqueueforawtId: ").append(toIndentedString(docqueueforawtId)).append("\n");
+    sb.append("    accpresetdefId: ").append(toIndentedString(accpresetdefId)).append("\n");
+    sb.append("    batchoperationover: ").append(toIndentedString(batchoperationover)).append("\n");
+    sb.append("    materialdistributionover: ").append(toIndentedString(materialdistributionover)).append("\n");
+    sb.append("    afterjostartup: ").append(toIndentedString(afterjostartup)).append("\n");
+    sb.append("    consumablesinincome: ").append(toIndentedString(consumablesinincome)).append("\n");
+    sb.append("    productreceptionover: ").append(toIndentedString(productreceptionover)).append("\n");
+    sb.append("    ignoredateofexpiration: ").append(toIndentedString(ignoredateofexpiration)).append("\n");
+    sb.append("    documentcategoryfortestingId: ").append(toIndentedString(documentcategoryfortestingId)).append("\n");
+    sb.append("    defaultsupposedstoreId: ").append(toIndentedString(defaultsupposedstoreId)).append("\n");
     sb.append("    transfer: ").append(toIndentedString(transfer)).append("\n");
-    sb.append("    allowRepairTransOp: ").append(toIndentedString(allowRepairTransOp)).append("\n");
+    sb.append("    allowrepairtransop: ").append(toIndentedString(allowrepairtransop)).append("\n");
     sb.append("    correction: ").append(toIndentedString(correction)).append("\n");
-    sb.append("    groupDivision: ").append(toIndentedString(groupDivision)).append("\n");
-    sb.append("    groupBusOrder: ").append(toIndentedString(groupBusOrder)).append("\n");
-    sb.append("    groupBusTransaction: ").append(toIndentedString(groupBusTransaction)).append("\n");
-    sb.append("    groupBusProject: ").append(toIndentedString(groupBusProject)).append("\n");
-    sb.append("    groupDate: ").append(toIndentedString(groupDate)).append("\n");
-    sb.append("    valueTransfer1: ").append(toIndentedString(valueTransfer1)).append("\n");
-    sb.append("    wageOperationType1ID: ").append(toIndentedString(wageOperationType1ID)).append("\n");
-    sb.append("    valueTransfer2: ").append(toIndentedString(valueTransfer2)).append("\n");
-    sb.append("    wageOperationType2ID: ").append(toIndentedString(wageOperationType2ID)).append("\n");
-    sb.append("    inPlan: ").append(toIndentedString(inPlan)).append("\n");
-    sb.append("    afterPR: ").append(toIndentedString(afterPR)).append("\n");
-    sb.append("    toleranceMaterialPositive: ").append(toIndentedString(toleranceMaterialPositive)).append("\n");
-    sb.append("    toleranceMaterialNegative: ").append(toIndentedString(toleranceMaterialNegative)).append("\n");
-    sb.append("    toleranceWagesPositive: ").append(toIndentedString(toleranceWagesPositive)).append("\n");
-    sb.append("    toleranceWagesNegative: ").append(toIndentedString(toleranceWagesNegative)).append("\n");
-    sb.append("    materialExpenseInIncome: ").append(toIndentedString(materialExpenseInIncome)).append("\n");
-    sb.append("    valuationPR: ").append(toIndentedString(valuationPR)).append("\n");
-    sb.append("    valuationTypePR: ").append(toIndentedString(valuationTypePR)).append("\n");
-    sb.append("    docQueueForFPID: ").append(toIndentedString(docQueueForFPID)).append("\n");
-    sb.append("    accPresetDefForFPID: ").append(toIndentedString(accPresetDefForFPID)).append("\n");
-    sb.append("    autoServerSchedulerID: ").append(toIndentedString(autoServerSchedulerID)).append("\n");
-    sb.append("    modeUseMDAfterPR: ").append(toIndentedString(modeUseMDAfterPR)).append("\n");
-    sb.append("    modeUseOpAfterPR: ").append(toIndentedString(modeUseOpAfterPR)).append("\n");
-    sb.append("    aWTByDate: ").append(toIndentedString(aWTByDate)).append("\n");
-    sb.append("    aWTByDivision: ").append(toIndentedString(aWTByDivision)).append("\n");
-    sb.append("    aWTDivisionID: ").append(toIndentedString(aWTDivisionID)).append("\n");
-    sb.append("    aWTByBusOrder: ").append(toIndentedString(aWTByBusOrder)).append("\n");
-    sb.append("    aWTBusOrderID: ").append(toIndentedString(aWTBusOrderID)).append("\n");
-    sb.append("    aWTByBusTransaction: ").append(toIndentedString(aWTByBusTransaction)).append("\n");
-    sb.append("    aWTBusTransactionID: ").append(toIndentedString(aWTBusTransactionID)).append("\n");
-    sb.append("    aWTByBusProject: ").append(toIndentedString(aWTByBusProject)).append("\n");
-    sb.append("    aWTByJobOrder: ").append(toIndentedString(aWTByJobOrder)).append("\n");
-    sb.append("    aWTBusProjectID: ").append(toIndentedString(aWTBusProjectID)).append("\n");
-    sb.append("    balanceDocQueueID: ").append(toIndentedString(balanceDocQueueID)).append("\n");
-    sb.append("    balanceAccPresetDefID: ").append(toIndentedString(balanceAccPresetDefID)).append("\n");
-    sb.append("    balanceDepDocQueueID: ").append(toIndentedString(balanceDepDocQueueID)).append("\n");
-    sb.append("    balanceDepAccPresetDefID: ").append(toIndentedString(balanceDepAccPresetDefID)).append("\n");
+    sb.append("    groupdivision: ").append(toIndentedString(groupdivision)).append("\n");
+    sb.append("    groupbusorder: ").append(toIndentedString(groupbusorder)).append("\n");
+    sb.append("    groupbustransaction: ").append(toIndentedString(groupbustransaction)).append("\n");
+    sb.append("    groupbusproject: ").append(toIndentedString(groupbusproject)).append("\n");
+    sb.append("    groupdate: ").append(toIndentedString(groupdate)).append("\n");
+    sb.append("    valuetransfer1: ").append(toIndentedString(valuetransfer1)).append("\n");
+    sb.append("    wageoperationtype1Id: ").append(toIndentedString(wageoperationtype1Id)).append("\n");
+    sb.append("    valuetransfer2: ").append(toIndentedString(valuetransfer2)).append("\n");
+    sb.append("    wageoperationtype2Id: ").append(toIndentedString(wageoperationtype2Id)).append("\n");
+    sb.append("    inplan: ").append(toIndentedString(inplan)).append("\n");
+    sb.append("    afterpr: ").append(toIndentedString(afterpr)).append("\n");
+    sb.append("    tolerancematerialpositive: ").append(toIndentedString(tolerancematerialpositive)).append("\n");
+    sb.append("    tolerancematerialnegative: ").append(toIndentedString(tolerancematerialnegative)).append("\n");
+    sb.append("    tolerancewagespositive: ").append(toIndentedString(tolerancewagespositive)).append("\n");
+    sb.append("    tolerancewagesnegative: ").append(toIndentedString(tolerancewagesnegative)).append("\n");
+    sb.append("    materialexpenseinincome: ").append(toIndentedString(materialexpenseinincome)).append("\n");
+    sb.append("    valuationpr: ").append(toIndentedString(valuationpr)).append("\n");
+    sb.append("    valuationtypepr: ").append(toIndentedString(valuationtypepr)).append("\n");
+    sb.append("    docqueueforfpId: ").append(toIndentedString(docqueueforfpId)).append("\n");
+    sb.append("    accpresetdefforfpId: ").append(toIndentedString(accpresetdefforfpId)).append("\n");
+    sb.append("    autoserverschedulerId: ").append(toIndentedString(autoserverschedulerId)).append("\n");
+    sb.append("    modeusemdafterpr: ").append(toIndentedString(modeusemdafterpr)).append("\n");
+    sb.append("    modeuseopafterpr: ").append(toIndentedString(modeuseopafterpr)).append("\n");
+    sb.append("    awtbydate: ").append(toIndentedString(awtbydate)).append("\n");
+    sb.append("    awtbydivision: ").append(toIndentedString(awtbydivision)).append("\n");
+    sb.append("    awtdivisionId: ").append(toIndentedString(awtdivisionId)).append("\n");
+    sb.append("    awtbybusorder: ").append(toIndentedString(awtbybusorder)).append("\n");
+    sb.append("    awtbusorderId: ").append(toIndentedString(awtbusorderId)).append("\n");
+    sb.append("    awtbybustransaction: ").append(toIndentedString(awtbybustransaction)).append("\n");
+    sb.append("    awtbustransactionId: ").append(toIndentedString(awtbustransactionId)).append("\n");
+    sb.append("    awtbybusproject: ").append(toIndentedString(awtbybusproject)).append("\n");
+    sb.append("    awtbyjoborder: ").append(toIndentedString(awtbyjoborder)).append("\n");
+    sb.append("    awtbusprojectId: ").append(toIndentedString(awtbusprojectId)).append("\n");
+    sb.append("    balancedocqueueId: ").append(toIndentedString(balancedocqueueId)).append("\n");
+    sb.append("    balanceaccpresetdefId: ").append(toIndentedString(balanceaccpresetdefId)).append("\n");
+    sb.append("    balancedepdocqueueId: ").append(toIndentedString(balancedepdocqueueId)).append("\n");
+    sb.append("    balancedepaccpresetdefId: ").append(toIndentedString(balancedepaccpresetdefId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

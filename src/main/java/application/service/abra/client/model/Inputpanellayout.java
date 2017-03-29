@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,72 +36,108 @@ import java.util.Objects;
 /**
  * Inputpanellayout
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Inputpanellayout   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Inputpaneldefinition> rows = new ArrayList<Inputpaneldefinition>();
 
-  @SerializedName("SiteClassID")
-  private String siteClassID = null;
+  @SerializedName("siteclassid")
+  private String siteclassid = null;
 
-  @SerializedName("PanelName")
-  private String panelName = null;
+  @SerializedName("panelname")
+  private String panelname = null;
 
-  @SerializedName("LayoutOrder")
-  private Integer layoutOrder = null;
+  @SerializedName("layoutorder")
+  private Integer layoutorder = null;
 
-  @SerializedName("LayoutName")
-  private String layoutName = null;
+  @SerializedName("layoutname")
+  private String layoutname = null;
 
-  @SerializedName("LayoutExpression")
-  private String layoutExpression = null;
+  @SerializedName("layoutexpression")
+  private String layoutexpression = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Inputpanellayout displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Inputpanellayout id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Inputpanellayout classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Inputpanellayout objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Inputpanellayout rows(List<Inputpaneldefinition> rows) {
@@ -115,10 +151,10 @@ public class Inputpanellayout   {
   }
 
    /**
-   * Řádky; kolekce BO Variantní formuláře - definice [nepersistentní položka]
+   * Řádky; kolekce bo variantní formuláře - definice [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Variantní formuláře - definice [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo variantní formuláře - definice [nepersistentní položka]")
   public List<Inputpaneldefinition> getRows() {
     return rows;
   }
@@ -127,94 +163,94 @@ public class Inputpanellayout   {
     this.rows = rows;
   }
 
-  public Inputpanellayout siteClassID(String siteClassID) {
-    this.siteClassID = siteClassID;
+  public Inputpanellayout siteclassid(String siteclassid) {
+    this.siteclassid = siteclassid;
     return this;
   }
 
    /**
-   * Identifikace agendy [persistentní položka]
-   * @return siteClassID
+   * identifikace agendy [persistentní položka]
+   * @return siteclassid
   **/
-  @ApiModelProperty(example = "null", value = "Identifikace agendy [persistentní položka]")
-  public String getSiteClassID() {
-    return siteClassID;
+  @ApiModelProperty(example = "null", value = "identifikace agendy [persistentní položka]")
+  public String getSiteclassid() {
+    return siteclassid;
   }
 
-  public void setSiteClassID(String siteClassID) {
-    this.siteClassID = siteClassID;
+  public void setSiteclassid(String siteclassid) {
+    this.siteclassid = siteclassid;
   }
 
-  public Inputpanellayout panelName(String panelName) {
-    this.panelName = panelName;
+  public Inputpanellayout panelname(String panelname) {
+    this.panelname = panelname;
     return this;
   }
 
    /**
-   * Název panelu [persistentní položka]
-   * @return panelName
+   * název panelu [persistentní položka]
+   * @return panelname
   **/
-  @ApiModelProperty(example = "null", value = "Název panelu [persistentní položka]")
-  public String getPanelName() {
-    return panelName;
+  @ApiModelProperty(example = "null", value = "název panelu [persistentní položka]")
+  public String getPanelname() {
+    return panelname;
   }
 
-  public void setPanelName(String panelName) {
-    this.panelName = panelName;
+  public void setPanelname(String panelname) {
+    this.panelname = panelname;
   }
 
-  public Inputpanellayout layoutOrder(Integer layoutOrder) {
-    this.layoutOrder = layoutOrder;
+  public Inputpanellayout layoutorder(Integer layoutorder) {
+    this.layoutorder = layoutorder;
     return this;
   }
 
    /**
-   * Pořadí vyhodnocení výrazu varianty [persistentní položka]
-   * @return layoutOrder
+   * pořadí vyhodnocení výrazu varianty [persistentní položka]
+   * @return layoutorder
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí vyhodnocení výrazu varianty [persistentní položka]")
-  public Integer getLayoutOrder() {
-    return layoutOrder;
+  @ApiModelProperty(example = "null", value = "pořadí vyhodnocení výrazu varianty [persistentní položka]")
+  public Integer getLayoutorder() {
+    return layoutorder;
   }
 
-  public void setLayoutOrder(Integer layoutOrder) {
-    this.layoutOrder = layoutOrder;
+  public void setLayoutorder(Integer layoutorder) {
+    this.layoutorder = layoutorder;
   }
 
-  public Inputpanellayout layoutName(String layoutName) {
-    this.layoutName = layoutName;
+  public Inputpanellayout layoutname(String layoutname) {
+    this.layoutname = layoutname;
     return this;
   }
 
    /**
-   * Název varianty [persistentní položka]
-   * @return layoutName
+   * název varianty [persistentní položka]
+   * @return layoutname
   **/
-  @ApiModelProperty(example = "null", value = "Název varianty [persistentní položka]")
-  public String getLayoutName() {
-    return layoutName;
+  @ApiModelProperty(example = "null", value = "název varianty [persistentní položka]")
+  public String getLayoutname() {
+    return layoutname;
   }
 
-  public void setLayoutName(String layoutName) {
-    this.layoutName = layoutName;
+  public void setLayoutname(String layoutname) {
+    this.layoutname = layoutname;
   }
 
-  public Inputpanellayout layoutExpression(String layoutExpression) {
-    this.layoutExpression = layoutExpression;
+  public Inputpanellayout layoutexpression(String layoutexpression) {
+    this.layoutexpression = layoutexpression;
     return this;
   }
 
    /**
-   * Výraz [persistentní položka]
-   * @return layoutExpression
+   * výraz [persistentní položka]
+   * @return layoutexpression
   **/
-  @ApiModelProperty(example = "null", value = "Výraz [persistentní položka]")
-  public String getLayoutExpression() {
-    return layoutExpression;
+  @ApiModelProperty(example = "null", value = "výraz [persistentní položka]")
+  public String getLayoutexpression() {
+    return layoutexpression;
   }
 
-  public void setLayoutExpression(String layoutExpression) {
-    this.layoutExpression = layoutExpression;
+  public void setLayoutexpression(String layoutexpression) {
+    this.layoutexpression = layoutexpression;
   }
 
 
@@ -227,21 +263,21 @@ public class Inputpanellayout   {
       return false;
     }
     Inputpanellayout inputpanellayout = (Inputpanellayout) o;
-    return Objects.equals(this.displayName, inputpanellayout.displayName) &&
-        Objects.equals(this.ID, inputpanellayout.ID) &&
-        Objects.equals(this.classID, inputpanellayout.classID) &&
-        Objects.equals(this.objVersion, inputpanellayout.objVersion) &&
+    return Objects.equals(this.displayname, inputpanellayout.displayname) &&
+        Objects.equals(this.id, inputpanellayout.id) &&
+        Objects.equals(this.classid, inputpanellayout.classid) &&
+        Objects.equals(this.objversion, inputpanellayout.objversion) &&
         Objects.equals(this.rows, inputpanellayout.rows) &&
-        Objects.equals(this.siteClassID, inputpanellayout.siteClassID) &&
-        Objects.equals(this.panelName, inputpanellayout.panelName) &&
-        Objects.equals(this.layoutOrder, inputpanellayout.layoutOrder) &&
-        Objects.equals(this.layoutName, inputpanellayout.layoutName) &&
-        Objects.equals(this.layoutExpression, inputpanellayout.layoutExpression);
+        Objects.equals(this.siteclassid, inputpanellayout.siteclassid) &&
+        Objects.equals(this.panelname, inputpanellayout.panelname) &&
+        Objects.equals(this.layoutorder, inputpanellayout.layoutorder) &&
+        Objects.equals(this.layoutname, inputpanellayout.layoutname) &&
+        Objects.equals(this.layoutexpression, inputpanellayout.layoutexpression);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, siteClassID, panelName, layoutOrder, layoutName, layoutExpression);
+    return Objects.hash(displayname, id, classid, objversion, rows, siteclassid, panelname, layoutorder, layoutname, layoutexpression);
   }
 
   @Override
@@ -249,16 +285,16 @@ public class Inputpanellayout   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Inputpanellayout {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    siteClassID: ").append(toIndentedString(siteClassID)).append("\n");
-    sb.append("    panelName: ").append(toIndentedString(panelName)).append("\n");
-    sb.append("    layoutOrder: ").append(toIndentedString(layoutOrder)).append("\n");
-    sb.append("    layoutName: ").append(toIndentedString(layoutName)).append("\n");
-    sb.append("    layoutExpression: ").append(toIndentedString(layoutExpression)).append("\n");
+    sb.append("    siteclassid: ").append(toIndentedString(siteclassid)).append("\n");
+    sb.append("    panelname: ").append(toIndentedString(panelname)).append("\n");
+    sb.append("    layoutorder: ").append(toIndentedString(layoutorder)).append("\n");
+    sb.append("    layoutname: ").append(toIndentedString(layoutname)).append("\n");
+    sb.append("    layoutexpression: ").append(toIndentedString(layoutexpression)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,129 +35,174 @@ import java.util.Objects;
 /**
  * Vatraterow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Vatraterow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("ValidFromDate$DATE")
-  private DateTime validFromDateDATE = null;
+  @SerializedName("validfromdate$date")
+  private DateTime validfromdatedate = null;
 
-  @SerializedName("ValidToDate$DATE")
-  private DateTime validToDateDATE = null;
+  @SerializedName("validtodate$date")
+  private DateTime validtodatedate = null;
 
-  @SerializedName("Ancestor_ID")
-  private String ancestorID = null;
+  @SerializedName("ancestor_id")
+  private String ancestorId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu DPH sazba [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu DPH sazba [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Vatraterow validFromDateDATE(DateTime validFromDateDATE) {
-    this.validFromDateDATE = validFromDateDATE;
+  public Vatraterow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Platnost od [persistentní položka]
-   * @return validFromDateDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Platnost od [persistentní položka]")
-  public DateTime getValidFromDateDATE() {
-    return validFromDateDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setValidFromDateDATE(DateTime validFromDateDATE) {
-    this.validFromDateDATE = validFromDateDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Vatraterow validToDateDATE(DateTime validToDateDATE) {
-    this.validToDateDATE = validToDateDATE;
+  public Vatraterow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Platnost do [persistentní položka]
-   * @return validToDateDATE
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Platnost do [persistentní položka]")
-  public DateTime getValidToDateDATE() {
-    return validToDateDATE;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setValidToDateDATE(DateTime validToDateDATE) {
-    this.validToDateDATE = validToDateDATE;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Vatraterow ancestorID(String ancestorID) {
-    this.ancestorID = ancestorID;
+  public Vatraterow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Předchůdce; ID objektu DPH sazba [persistentní položka]
-   * @return ancestorID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Předchůdce; ID objektu DPH sazba [persistentní položka]")
-  public String getAncestorID() {
-    return ancestorID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setAncestorID(String ancestorID) {
-    this.ancestorID = ancestorID;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Vatraterow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Vatraterow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu dph sazba [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu dph sazba [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Vatraterow validfromdatedate(DateTime validfromdatedate) {
+    this.validfromdatedate = validfromdatedate;
+    return this;
+  }
+
+   /**
+   * platnost od [persistentní položka]
+   * @return validfromdatedate
+  **/
+  @ApiModelProperty(example = "null", value = "platnost od [persistentní položka]")
+  public DateTime getValidfromdatedate() {
+    return validfromdatedate;
+  }
+
+  public void setValidfromdatedate(DateTime validfromdatedate) {
+    this.validfromdatedate = validfromdatedate;
+  }
+
+  public Vatraterow validtodatedate(DateTime validtodatedate) {
+    this.validtodatedate = validtodatedate;
+    return this;
+  }
+
+   /**
+   * platnost do [persistentní položka]
+   * @return validtodatedate
+  **/
+  @ApiModelProperty(example = "null", value = "platnost do [persistentní položka]")
+  public DateTime getValidtodatedate() {
+    return validtodatedate;
+  }
+
+  public void setValidtodatedate(DateTime validtodatedate) {
+    this.validtodatedate = validtodatedate;
+  }
+
+  public Vatraterow ancestorId(String ancestorId) {
+    this.ancestorId = ancestorId;
+    return this;
+  }
+
+   /**
+   * předchůdce; id objektu dph sazba [persistentní položka]
+   * @return ancestorId
+  **/
+  @ApiModelProperty(example = "null", value = "předchůdce; id objektu dph sazba [persistentní položka]")
+  public String getAncestorId() {
+    return ancestorId;
+  }
+
+  public void setAncestorId(String ancestorId) {
+    this.ancestorId = ancestorId;
   }
 
 
@@ -170,19 +215,19 @@ public class Vatraterow   {
       return false;
     }
     Vatraterow vatraterow = (Vatraterow) o;
-    return Objects.equals(this.displayName, vatraterow.displayName) &&
-        Objects.equals(this.ID, vatraterow.ID) &&
-        Objects.equals(this.classID, vatraterow.classID) &&
-        Objects.equals(this.objVersion, vatraterow.objVersion) &&
-        Objects.equals(this.parentID, vatraterow.parentID) &&
-        Objects.equals(this.validFromDateDATE, vatraterow.validFromDateDATE) &&
-        Objects.equals(this.validToDateDATE, vatraterow.validToDateDATE) &&
-        Objects.equals(this.ancestorID, vatraterow.ancestorID);
+    return Objects.equals(this.displayname, vatraterow.displayname) &&
+        Objects.equals(this.id, vatraterow.id) &&
+        Objects.equals(this.classid, vatraterow.classid) &&
+        Objects.equals(this.objversion, vatraterow.objversion) &&
+        Objects.equals(this.parentId, vatraterow.parentId) &&
+        Objects.equals(this.validfromdatedate, vatraterow.validfromdatedate) &&
+        Objects.equals(this.validtodatedate, vatraterow.validtodatedate) &&
+        Objects.equals(this.ancestorId, vatraterow.ancestorId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, validFromDateDATE, validToDateDATE, ancestorID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, validfromdatedate, validtodatedate, ancestorId);
   }
 
   @Override
@@ -190,14 +235,14 @@ public class Vatraterow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Vatraterow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    validFromDateDATE: ").append(toIndentedString(validFromDateDATE)).append("\n");
-    sb.append("    validToDateDATE: ").append(toIndentedString(validToDateDATE)).append("\n");
-    sb.append("    ancestorID: ").append(toIndentedString(ancestorID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    validfromdatedate: ").append(toIndentedString(validfromdatedate)).append("\n");
+    sb.append("    validtodatedate: ").append(toIndentedString(validtodatedate)).append("\n");
+    sb.append("    ancestorId: ").append(toIndentedString(ancestorId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

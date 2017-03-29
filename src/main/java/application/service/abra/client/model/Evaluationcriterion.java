@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,90 +36,126 @@ import java.util.Objects;
 /**
  * Evaluationcriterion
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Evaluationcriterion   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Evaluationcriteriondescscore> rows = new ArrayList<Evaluationcriteriondescscore>();
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("CriterionType")
-  private Integer criterionType = null;
+  @SerializedName("criteriontype")
+  private Integer criteriontype = null;
 
-  @SerializedName("Expression")
+  @SerializedName("expression")
   private String expression = null;
 
-  @SerializedName("MinScore")
-  private Integer minScore = null;
+  @SerializedName("minscore")
+  private Integer minscore = null;
 
-  @SerializedName("MaxScore")
-  private Integer maxScore = null;
+  @SerializedName("maxscore")
+  private Integer maxscore = null;
 
-  @SerializedName("SatisfactoryScore")
-  private Integer satisfactoryScore = null;
+  @SerializedName("satisfactoryscore")
+  private Integer satisfactoryscore = null;
 
-  @SerializedName("DataSources")
-  private List<Evaluationcriteriondatasource> dataSources = new ArrayList<Evaluationcriteriondatasource>();
+  @SerializedName("datasources")
+  private List<Evaluationcriteriondatasource> datasources = new ArrayList<Evaluationcriteriondatasource>();
 
-  @SerializedName("ConditionForTakeover")
-  private String conditionForTakeover = null;
+  @SerializedName("conditionfortakeover")
+  private String conditionfortakeover = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Evaluationcriterion displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Evaluationcriterion id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Evaluationcriterion classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Evaluationcriterion objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Evaluationcriterion rows(List<Evaluationcriteriondescscore> rows) {
@@ -133,10 +169,10 @@ public class Evaluationcriterion   {
   }
 
    /**
-   * Řádky; kolekce BO Hodnotící kritérium - popisy bodového hodnocení [nepersistentní položka]
+   * Řádky; kolekce bo hodnotící kritérium - popisy bodového hodnocení [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Hodnotící kritérium - popisy bodového hodnocení [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo hodnotící kritérium - popisy bodového hodnocení [nepersistentní položka]")
   public List<Evaluationcriteriondescscore> getRows() {
     return rows;
   }
@@ -151,10 +187,10 @@ public class Evaluationcriterion   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -169,10 +205,10 @@ public class Evaluationcriterion   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -187,10 +223,10 @@ public class Evaluationcriterion   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -199,22 +235,22 @@ public class Evaluationcriterion   {
     this.description = description;
   }
 
-  public Evaluationcriterion criterionType(Integer criterionType) {
-    this.criterionType = criterionType;
+  public Evaluationcriterion criteriontype(Integer criteriontype) {
+    this.criteriontype = criteriontype;
     return this;
   }
 
    /**
-   * Typ kritéria [persistentní položka]
-   * @return criterionType
+   * typ kritéria [persistentní položka]
+   * @return criteriontype
   **/
-  @ApiModelProperty(example = "null", value = "Typ kritéria [persistentní položka]")
-  public Integer getCriterionType() {
-    return criterionType;
+  @ApiModelProperty(example = "null", value = "typ kritéria [persistentní položka]")
+  public Integer getCriteriontype() {
+    return criteriontype;
   }
 
-  public void setCriterionType(Integer criterionType) {
-    this.criterionType = criterionType;
+  public void setCriteriontype(Integer criteriontype) {
+    this.criteriontype = criteriontype;
   }
 
   public Evaluationcriterion expression(String expression) {
@@ -223,10 +259,10 @@ public class Evaluationcriterion   {
   }
 
    /**
-   * Výraz [persistentní položka]
+   * výraz [persistentní položka]
    * @return expression
   **/
-  @ApiModelProperty(example = "null", value = "Výraz [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "výraz [persistentní položka]")
   public String getExpression() {
     return expression;
   }
@@ -235,99 +271,99 @@ public class Evaluationcriterion   {
     this.expression = expression;
   }
 
-  public Evaluationcriterion minScore(Integer minScore) {
-    this.minScore = minScore;
+  public Evaluationcriterion minscore(Integer minscore) {
+    this.minscore = minscore;
     return this;
   }
 
    /**
-   * Minimální počet bodů [persistentní položka]
-   * @return minScore
+   * minimální počet bodů [persistentní položka]
+   * @return minscore
   **/
-  @ApiModelProperty(example = "null", value = "Minimální počet bodů [persistentní položka]")
-  public Integer getMinScore() {
-    return minScore;
+  @ApiModelProperty(example = "null", value = "minimální počet bodů [persistentní položka]")
+  public Integer getMinscore() {
+    return minscore;
   }
 
-  public void setMinScore(Integer minScore) {
-    this.minScore = minScore;
+  public void setMinscore(Integer minscore) {
+    this.minscore = minscore;
   }
 
-  public Evaluationcriterion maxScore(Integer maxScore) {
-    this.maxScore = maxScore;
+  public Evaluationcriterion maxscore(Integer maxscore) {
+    this.maxscore = maxscore;
     return this;
   }
 
    /**
-   * Maximální počet bodů [persistentní položka]
-   * @return maxScore
+   * maximální počet bodů [persistentní položka]
+   * @return maxscore
   **/
-  @ApiModelProperty(example = "null", value = "Maximální počet bodů [persistentní položka]")
-  public Integer getMaxScore() {
-    return maxScore;
+  @ApiModelProperty(example = "null", value = "maximální počet bodů [persistentní položka]")
+  public Integer getMaxscore() {
+    return maxscore;
   }
 
-  public void setMaxScore(Integer maxScore) {
-    this.maxScore = maxScore;
+  public void setMaxscore(Integer maxscore) {
+    this.maxscore = maxscore;
   }
 
-  public Evaluationcriterion satisfactoryScore(Integer satisfactoryScore) {
-    this.satisfactoryScore = satisfactoryScore;
+  public Evaluationcriterion satisfactoryscore(Integer satisfactoryscore) {
+    this.satisfactoryscore = satisfactoryscore;
     return this;
   }
 
    /**
-   * Počet bodů postačujících ke schválení [persistentní položka]
-   * @return satisfactoryScore
+   * počet bodů postačujících ke schválení [persistentní položka]
+   * @return satisfactoryscore
   **/
-  @ApiModelProperty(example = "null", value = "Počet bodů postačujících ke schválení [persistentní položka]")
-  public Integer getSatisfactoryScore() {
-    return satisfactoryScore;
+  @ApiModelProperty(example = "null", value = "počet bodů postačujících ke schválení [persistentní položka]")
+  public Integer getSatisfactoryscore() {
+    return satisfactoryscore;
   }
 
-  public void setSatisfactoryScore(Integer satisfactoryScore) {
-    this.satisfactoryScore = satisfactoryScore;
+  public void setSatisfactoryscore(Integer satisfactoryscore) {
+    this.satisfactoryscore = satisfactoryscore;
   }
 
-  public Evaluationcriterion dataSources(List<Evaluationcriteriondatasource> dataSources) {
-    this.dataSources = dataSources;
+  public Evaluationcriterion datasources(List<Evaluationcriteriondatasource> datasources) {
+    this.datasources = datasources;
     return this;
   }
 
-  public Evaluationcriterion addDataSourcesItem(Evaluationcriteriondatasource dataSourcesItem) {
-    this.dataSources.add(dataSourcesItem);
-    return this;
-  }
-
-   /**
-   * Datové zdroje; kolekce BO Hodnotící kritérium - datové zdroje [nepersistentní položka]
-   * @return dataSources
-  **/
-  @ApiModelProperty(example = "null", value = "Datové zdroje; kolekce BO Hodnotící kritérium - datové zdroje [nepersistentní položka]")
-  public List<Evaluationcriteriondatasource> getDataSources() {
-    return dataSources;
-  }
-
-  public void setDataSources(List<Evaluationcriteriondatasource> dataSources) {
-    this.dataSources = dataSources;
-  }
-
-  public Evaluationcriterion conditionForTakeover(String conditionForTakeover) {
-    this.conditionForTakeover = conditionForTakeover;
+  public Evaluationcriterion addDatasourcesItem(Evaluationcriteriondatasource datasourcesItem) {
+    this.datasources.add(datasourcesItem);
     return this;
   }
 
    /**
-   * Podmínka pro převzetí [persistentní položka]
-   * @return conditionForTakeover
+   * datové zdroje; kolekce bo hodnotící kritérium - datové zdroje [nepersistentní položka]
+   * @return datasources
   **/
-  @ApiModelProperty(example = "null", value = "Podmínka pro převzetí [persistentní položka]")
-  public String getConditionForTakeover() {
-    return conditionForTakeover;
+  @ApiModelProperty(example = "null", value = "datové zdroje; kolekce bo hodnotící kritérium - datové zdroje [nepersistentní položka]")
+  public List<Evaluationcriteriondatasource> getDatasources() {
+    return datasources;
   }
 
-  public void setConditionForTakeover(String conditionForTakeover) {
-    this.conditionForTakeover = conditionForTakeover;
+  public void setDatasources(List<Evaluationcriteriondatasource> datasources) {
+    this.datasources = datasources;
+  }
+
+  public Evaluationcriterion conditionfortakeover(String conditionfortakeover) {
+    this.conditionfortakeover = conditionfortakeover;
+    return this;
+  }
+
+   /**
+   * podmínka pro převzetí [persistentní položka]
+   * @return conditionfortakeover
+  **/
+  @ApiModelProperty(example = "null", value = "podmínka pro převzetí [persistentní položka]")
+  public String getConditionfortakeover() {
+    return conditionfortakeover;
+  }
+
+  public void setConditionfortakeover(String conditionfortakeover) {
+    this.conditionfortakeover = conditionfortakeover;
   }
 
   public Evaluationcriterion system(Boolean system) {
@@ -336,10 +372,10 @@ public class Evaluationcriterion   {
   }
 
    /**
-   * Systémový [persistentní položka]
+   * systémový [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Systémový [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "systémový [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -358,27 +394,27 @@ public class Evaluationcriterion   {
       return false;
     }
     Evaluationcriterion evaluationcriterion = (Evaluationcriterion) o;
-    return Objects.equals(this.displayName, evaluationcriterion.displayName) &&
-        Objects.equals(this.ID, evaluationcriterion.ID) &&
-        Objects.equals(this.classID, evaluationcriterion.classID) &&
-        Objects.equals(this.objVersion, evaluationcriterion.objVersion) &&
+    return Objects.equals(this.displayname, evaluationcriterion.displayname) &&
+        Objects.equals(this.id, evaluationcriterion.id) &&
+        Objects.equals(this.classid, evaluationcriterion.classid) &&
+        Objects.equals(this.objversion, evaluationcriterion.objversion) &&
         Objects.equals(this.rows, evaluationcriterion.rows) &&
         Objects.equals(this.code, evaluationcriterion.code) &&
         Objects.equals(this.name, evaluationcriterion.name) &&
         Objects.equals(this.description, evaluationcriterion.description) &&
-        Objects.equals(this.criterionType, evaluationcriterion.criterionType) &&
+        Objects.equals(this.criteriontype, evaluationcriterion.criteriontype) &&
         Objects.equals(this.expression, evaluationcriterion.expression) &&
-        Objects.equals(this.minScore, evaluationcriterion.minScore) &&
-        Objects.equals(this.maxScore, evaluationcriterion.maxScore) &&
-        Objects.equals(this.satisfactoryScore, evaluationcriterion.satisfactoryScore) &&
-        Objects.equals(this.dataSources, evaluationcriterion.dataSources) &&
-        Objects.equals(this.conditionForTakeover, evaluationcriterion.conditionForTakeover) &&
+        Objects.equals(this.minscore, evaluationcriterion.minscore) &&
+        Objects.equals(this.maxscore, evaluationcriterion.maxscore) &&
+        Objects.equals(this.satisfactoryscore, evaluationcriterion.satisfactoryscore) &&
+        Objects.equals(this.datasources, evaluationcriterion.datasources) &&
+        Objects.equals(this.conditionfortakeover, evaluationcriterion.conditionfortakeover) &&
         Objects.equals(this.system, evaluationcriterion.system);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, code, name, description, criterionType, expression, minScore, maxScore, satisfactoryScore, dataSources, conditionForTakeover, system);
+    return Objects.hash(displayname, id, classid, objversion, rows, code, name, description, criteriontype, expression, minscore, maxscore, satisfactoryscore, datasources, conditionfortakeover, system);
   }
 
   @Override
@@ -386,21 +422,21 @@ public class Evaluationcriterion   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Evaluationcriterion {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    criterionType: ").append(toIndentedString(criterionType)).append("\n");
+    sb.append("    criteriontype: ").append(toIndentedString(criteriontype)).append("\n");
     sb.append("    expression: ").append(toIndentedString(expression)).append("\n");
-    sb.append("    minScore: ").append(toIndentedString(minScore)).append("\n");
-    sb.append("    maxScore: ").append(toIndentedString(maxScore)).append("\n");
-    sb.append("    satisfactoryScore: ").append(toIndentedString(satisfactoryScore)).append("\n");
-    sb.append("    dataSources: ").append(toIndentedString(dataSources)).append("\n");
-    sb.append("    conditionForTakeover: ").append(toIndentedString(conditionForTakeover)).append("\n");
+    sb.append("    minscore: ").append(toIndentedString(minscore)).append("\n");
+    sb.append("    maxscore: ").append(toIndentedString(maxscore)).append("\n");
+    sb.append("    satisfactoryscore: ").append(toIndentedString(satisfactoryscore)).append("\n");
+    sb.append("    datasources: ").append(toIndentedString(datasources)).append("\n");
+    sb.append("    conditionfortakeover: ").append(toIndentedString(conditionfortakeover)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
     sb.append("}");
     return sb.toString();

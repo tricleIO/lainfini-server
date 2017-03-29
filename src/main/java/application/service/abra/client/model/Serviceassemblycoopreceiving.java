@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,153 +35,198 @@ import java.util.Objects;
 /**
  * Serviceassemblycoopreceiving
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Serviceassemblycoopreceiving   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("ReturnDate$DATE")
-  private DateTime returnDateDATE = null;
+  @SerializedName("returndate$date")
+  private DateTime returndatedate = null;
 
-  @SerializedName("OutgoingTransfer_ID")
-  private String outgoingTransferID = null;
+  @SerializedName("outgoingtransfer_id")
+  private String outgoingtransferId = null;
 
-  @SerializedName("BillOfDelivery_ID")
-  private String billOfDeliveryID = null;
+  @SerializedName("billofdelivery_id")
+  private String billofdeliveryId = null;
 
-  @SerializedName("ReceiptCard_ID")
-  private String receiptCardID = null;
+  @SerializedName("receiptcard_id")
+  private String receiptcardId = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Montážní list [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Montážní list [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Serviceassemblycoopreceiving returnDateDATE(DateTime returnDateDATE) {
-    this.returnDateDATE = returnDateDATE;
+  public Serviceassemblycoopreceiving displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum příjmu [persistentní položka]
-   * @return returnDateDATE
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum příjmu [persistentní položka]")
-  public DateTime getReturnDateDATE() {
-    return returnDateDATE;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setReturnDateDATE(DateTime returnDateDATE) {
-    this.returnDateDATE = returnDateDATE;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Serviceassemblycoopreceiving outgoingTransferID(String outgoingTransferID) {
-    this.outgoingTransferID = outgoingTransferID;
+  public Serviceassemblycoopreceiving id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Převodka výdej z koop.; ID objektu Převodka výdej [persistentní položka]
-   * @return outgoingTransferID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Převodka výdej z koop.; ID objektu Převodka výdej [persistentní položka]")
-  public String getOutgoingTransferID() {
-    return outgoingTransferID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setOutgoingTransferID(String outgoingTransferID) {
-    this.outgoingTransferID = outgoingTransferID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Serviceassemblycoopreceiving billOfDeliveryID(String billOfDeliveryID) {
-    this.billOfDeliveryID = billOfDeliveryID;
+  public Serviceassemblycoopreceiving classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Dodací list; ID objektu Dodací list [persistentní položka]
-   * @return billOfDeliveryID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Dodací list; ID objektu Dodací list [persistentní položka]")
-  public String getBillOfDeliveryID() {
-    return billOfDeliveryID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setBillOfDeliveryID(String billOfDeliveryID) {
-    this.billOfDeliveryID = billOfDeliveryID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Serviceassemblycoopreceiving receiptCardID(String receiptCardID) {
-    this.receiptCardID = receiptCardID;
+  public Serviceassemblycoopreceiving objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Příjemka; ID objektu Příjemka [persistentní položka]
-   * @return receiptCardID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Příjemka; ID objektu Příjemka [persistentní položka]")
-  public String getReceiptCardID() {
-    return receiptCardID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setReceiptCardID(String receiptCardID) {
-    this.receiptCardID = receiptCardID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Serviceassemblycoopreceiving parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu montážní list [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu montážní list [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Serviceassemblycoopreceiving returndatedate(DateTime returndatedate) {
+    this.returndatedate = returndatedate;
+    return this;
+  }
+
+   /**
+   * datum příjmu [persistentní položka]
+   * @return returndatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum příjmu [persistentní položka]")
+  public DateTime getReturndatedate() {
+    return returndatedate;
+  }
+
+  public void setReturndatedate(DateTime returndatedate) {
+    this.returndatedate = returndatedate;
+  }
+
+  public Serviceassemblycoopreceiving outgoingtransferId(String outgoingtransferId) {
+    this.outgoingtransferId = outgoingtransferId;
+    return this;
+  }
+
+   /**
+   * převodka výdej z koop.; id objektu převodka výdej [persistentní položka]
+   * @return outgoingtransferId
+  **/
+  @ApiModelProperty(example = "null", value = "převodka výdej z koop.; id objektu převodka výdej [persistentní položka]")
+  public String getOutgoingtransferId() {
+    return outgoingtransferId;
+  }
+
+  public void setOutgoingtransferId(String outgoingtransferId) {
+    this.outgoingtransferId = outgoingtransferId;
+  }
+
+  public Serviceassemblycoopreceiving billofdeliveryId(String billofdeliveryId) {
+    this.billofdeliveryId = billofdeliveryId;
+    return this;
+  }
+
+   /**
+   * dodací list; id objektu dodací list [persistentní položka]
+   * @return billofdeliveryId
+  **/
+  @ApiModelProperty(example = "null", value = "dodací list; id objektu dodací list [persistentní položka]")
+  public String getBillofdeliveryId() {
+    return billofdeliveryId;
+  }
+
+  public void setBillofdeliveryId(String billofdeliveryId) {
+    this.billofdeliveryId = billofdeliveryId;
+  }
+
+  public Serviceassemblycoopreceiving receiptcardId(String receiptcardId) {
+    this.receiptcardId = receiptcardId;
+    return this;
+  }
+
+   /**
+   * příjemka; id objektu příjemka [persistentní položka]
+   * @return receiptcardId
+  **/
+  @ApiModelProperty(example = "null", value = "příjemka; id objektu příjemka [persistentní položka]")
+  public String getReceiptcardId() {
+    return receiptcardId;
+  }
+
+  public void setReceiptcardId(String receiptcardId) {
+    this.receiptcardId = receiptcardId;
   }
 
   public Serviceassemblycoopreceiving quantity(Double quantity) {
@@ -190,10 +235,10 @@ public class Serviceassemblycoopreceiving   {
   }
 
    /**
-   * Množství [persistentní položka]
+   * množství [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "množství [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -212,21 +257,21 @@ public class Serviceassemblycoopreceiving   {
       return false;
     }
     Serviceassemblycoopreceiving serviceassemblycoopreceiving = (Serviceassemblycoopreceiving) o;
-    return Objects.equals(this.displayName, serviceassemblycoopreceiving.displayName) &&
-        Objects.equals(this.ID, serviceassemblycoopreceiving.ID) &&
-        Objects.equals(this.classID, serviceassemblycoopreceiving.classID) &&
-        Objects.equals(this.objVersion, serviceassemblycoopreceiving.objVersion) &&
-        Objects.equals(this.parentID, serviceassemblycoopreceiving.parentID) &&
-        Objects.equals(this.returnDateDATE, serviceassemblycoopreceiving.returnDateDATE) &&
-        Objects.equals(this.outgoingTransferID, serviceassemblycoopreceiving.outgoingTransferID) &&
-        Objects.equals(this.billOfDeliveryID, serviceassemblycoopreceiving.billOfDeliveryID) &&
-        Objects.equals(this.receiptCardID, serviceassemblycoopreceiving.receiptCardID) &&
+    return Objects.equals(this.displayname, serviceassemblycoopreceiving.displayname) &&
+        Objects.equals(this.id, serviceassemblycoopreceiving.id) &&
+        Objects.equals(this.classid, serviceassemblycoopreceiving.classid) &&
+        Objects.equals(this.objversion, serviceassemblycoopreceiving.objversion) &&
+        Objects.equals(this.parentId, serviceassemblycoopreceiving.parentId) &&
+        Objects.equals(this.returndatedate, serviceassemblycoopreceiving.returndatedate) &&
+        Objects.equals(this.outgoingtransferId, serviceassemblycoopreceiving.outgoingtransferId) &&
+        Objects.equals(this.billofdeliveryId, serviceassemblycoopreceiving.billofdeliveryId) &&
+        Objects.equals(this.receiptcardId, serviceassemblycoopreceiving.receiptcardId) &&
         Objects.equals(this.quantity, serviceassemblycoopreceiving.quantity);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, returnDateDATE, outgoingTransferID, billOfDeliveryID, receiptCardID, quantity);
+    return Objects.hash(displayname, id, classid, objversion, parentId, returndatedate, outgoingtransferId, billofdeliveryId, receiptcardId, quantity);
   }
 
   @Override
@@ -234,15 +279,15 @@ public class Serviceassemblycoopreceiving   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Serviceassemblycoopreceiving {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    returnDateDATE: ").append(toIndentedString(returnDateDATE)).append("\n");
-    sb.append("    outgoingTransferID: ").append(toIndentedString(outgoingTransferID)).append("\n");
-    sb.append("    billOfDeliveryID: ").append(toIndentedString(billOfDeliveryID)).append("\n");
-    sb.append("    receiptCardID: ").append(toIndentedString(receiptCardID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    returndatedate: ").append(toIndentedString(returndatedate)).append("\n");
+    sb.append("    outgoingtransferId: ").append(toIndentedString(outgoingtransferId)).append("\n");
+    sb.append("    billofdeliveryId: ").append(toIndentedString(billofdeliveryId)).append("\n");
+    sb.append("    receiptcardId: ").append(toIndentedString(receiptcardId)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
     sb.append("}");
     return sb.toString();

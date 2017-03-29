@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,111 +34,156 @@ import java.util.Objects;
 /**
  * Holidayrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Holidayrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("WagePeriod_ID")
-  private String wagePeriodID = null;
+  @SerializedName("wageperiod_id")
+  private String wageperiodId = null;
 
-  @SerializedName("DrawDown")
-  private Double drawDown = null;
+  @SerializedName("drawdown")
+  private Double drawdown = null;
 
-  @SerializedName("Paid")
+  @SerializedName("paid")
   private Double paid = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Nárok na dovolenou [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Nárok na dovolenou [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Holidayrow wagePeriodID(String wagePeriodID) {
-    this.wagePeriodID = wagePeriodID;
+  public Holidayrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Mzdové období; ID objektu Mzdové období [persistentní položka]
-   * @return wagePeriodID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Mzdové období; ID objektu Mzdové období [persistentní položka]")
-  public String getWagePeriodID() {
-    return wagePeriodID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setWagePeriodID(String wagePeriodID) {
-    this.wagePeriodID = wagePeriodID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Holidayrow drawDown(Double drawDown) {
-    this.drawDown = drawDown;
+  public Holidayrow id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Holidayrow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Holidayrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Holidayrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu nárok na dovolenou [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu nárok na dovolenou [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Holidayrow wageperiodId(String wageperiodId) {
+    this.wageperiodId = wageperiodId;
+    return this;
+  }
+
+   /**
+   * mzdové období; id objektu mzdové období [persistentní položka]
+   * @return wageperiodId
+  **/
+  @ApiModelProperty(example = "null", value = "mzdové období; id objektu mzdové období [persistentní položka]")
+  public String getWageperiodId() {
+    return wageperiodId;
+  }
+
+  public void setWageperiodId(String wageperiodId) {
+    this.wageperiodId = wageperiodId;
+  }
+
+  public Holidayrow drawdown(Double drawdown) {
+    this.drawdown = drawdown;
     return this;
   }
 
    /**
    * Čerpáno [persistentní položka]
-   * @return drawDown
+   * @return drawdown
   **/
   @ApiModelProperty(example = "null", value = "Čerpáno [persistentní položka]")
-  public Double getDrawDown() {
-    return drawDown;
+  public Double getDrawdown() {
+    return drawdown;
   }
 
-  public void setDrawDown(Double drawDown) {
-    this.drawDown = drawDown;
+  public void setDrawdown(Double drawdown) {
+    this.drawdown = drawdown;
   }
 
   public Holidayrow paid(Double paid) {
@@ -147,10 +192,10 @@ public class Holidayrow   {
   }
 
    /**
-   * Proplaceno [persistentní položka]
+   * proplaceno [persistentní položka]
    * @return paid
   **/
-  @ApiModelProperty(example = "null", value = "Proplaceno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "proplaceno [persistentní položka]")
   public Double getPaid() {
     return paid;
   }
@@ -169,19 +214,19 @@ public class Holidayrow   {
       return false;
     }
     Holidayrow holidayrow = (Holidayrow) o;
-    return Objects.equals(this.displayName, holidayrow.displayName) &&
-        Objects.equals(this.ID, holidayrow.ID) &&
-        Objects.equals(this.classID, holidayrow.classID) &&
-        Objects.equals(this.objVersion, holidayrow.objVersion) &&
-        Objects.equals(this.parentID, holidayrow.parentID) &&
-        Objects.equals(this.wagePeriodID, holidayrow.wagePeriodID) &&
-        Objects.equals(this.drawDown, holidayrow.drawDown) &&
+    return Objects.equals(this.displayname, holidayrow.displayname) &&
+        Objects.equals(this.id, holidayrow.id) &&
+        Objects.equals(this.classid, holidayrow.classid) &&
+        Objects.equals(this.objversion, holidayrow.objversion) &&
+        Objects.equals(this.parentId, holidayrow.parentId) &&
+        Objects.equals(this.wageperiodId, holidayrow.wageperiodId) &&
+        Objects.equals(this.drawdown, holidayrow.drawdown) &&
         Objects.equals(this.paid, holidayrow.paid);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, wagePeriodID, drawDown, paid);
+    return Objects.hash(displayname, id, classid, objversion, parentId, wageperiodId, drawdown, paid);
   }
 
   @Override
@@ -189,13 +234,13 @@ public class Holidayrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Holidayrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    wagePeriodID: ").append(toIndentedString(wagePeriodID)).append("\n");
-    sb.append("    drawDown: ").append(toIndentedString(drawDown)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    wageperiodId: ").append(toIndentedString(wageperiodId)).append("\n");
+    sb.append("    drawdown: ").append(toIndentedString(drawdown)).append("\n");
     sb.append("    paid: ").append(toIndentedString(paid)).append("\n");
     sb.append("}");
     return sb.toString();

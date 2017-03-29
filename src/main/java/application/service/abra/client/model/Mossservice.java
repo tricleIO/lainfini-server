@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,66 +34,102 @@ import java.util.Objects;
 /**
  * Mossservice
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Mossservice   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("OutOfUse")
-  private Boolean outOfUse = null;
+  @SerializedName("outofuse")
+  private Boolean outofuse = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Mossservice displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Mossservice id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Mossservice classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Mossservice objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Mossservice hidden(Boolean hidden) {
@@ -102,10 +138,10 @@ public class Mossservice   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -120,10 +156,10 @@ public class Mossservice   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -138,10 +174,10 @@ public class Mossservice   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -150,22 +186,22 @@ public class Mossservice   {
     this.name = name;
   }
 
-  public Mossservice outOfUse(Boolean outOfUse) {
-    this.outOfUse = outOfUse;
+  public Mossservice outofuse(Boolean outofuse) {
+    this.outofuse = outofuse;
     return this;
   }
 
    /**
-   * Nepoužívaný [persistentní položka]
-   * @return outOfUse
+   * nepoužívaný [persistentní položka]
+   * @return outofuse
   **/
-  @ApiModelProperty(example = "null", value = "Nepoužívaný [persistentní položka]")
-  public Boolean getOutOfUse() {
-    return outOfUse;
+  @ApiModelProperty(example = "null", value = "nepoužívaný [persistentní položka]")
+  public Boolean getOutofuse() {
+    return outofuse;
   }
 
-  public void setOutOfUse(Boolean outOfUse) {
-    this.outOfUse = outOfUse;
+  public void setOutofuse(Boolean outofuse) {
+    this.outofuse = outofuse;
   }
 
 
@@ -178,19 +214,19 @@ public class Mossservice   {
       return false;
     }
     Mossservice mossservice = (Mossservice) o;
-    return Objects.equals(this.displayName, mossservice.displayName) &&
-        Objects.equals(this.ID, mossservice.ID) &&
-        Objects.equals(this.classID, mossservice.classID) &&
-        Objects.equals(this.objVersion, mossservice.objVersion) &&
+    return Objects.equals(this.displayname, mossservice.displayname) &&
+        Objects.equals(this.id, mossservice.id) &&
+        Objects.equals(this.classid, mossservice.classid) &&
+        Objects.equals(this.objversion, mossservice.objversion) &&
         Objects.equals(this.hidden, mossservice.hidden) &&
         Objects.equals(this.code, mossservice.code) &&
         Objects.equals(this.name, mossservice.name) &&
-        Objects.equals(this.outOfUse, mossservice.outOfUse);
+        Objects.equals(this.outofuse, mossservice.outofuse);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, outOfUse);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, outofuse);
   }
 
   @Override
@@ -198,14 +234,14 @@ public class Mossservice   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Mossservice {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    outOfUse: ").append(toIndentedString(outOfUse)).append("\n");
+    sb.append("    outofuse: ").append(toIndentedString(outofuse)).append("\n");
     sb.append("}");
     return sb.toString();
   }

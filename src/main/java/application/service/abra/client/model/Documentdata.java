@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,117 +35,194 @@ import java.util.Objects;
 /**
  * Documentdata
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Documentdata   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Revided_ID")
-  private String revidedID = null;
+  @SerializedName("revided_id")
+  private String revidedId = null;
 
-  @SerializedName("RevisionDescription")
-  private String revisionDescription = null;
+  @SerializedName("revisiondescription")
+  private String revisiondescription = null;
 
-  @SerializedName("RevisionDate$DATE")
-  private DateTime revisionDateDATE = null;
+  @SerializedName("revisiondate$date")
+  private DateTime revisiondatedate = null;
 
-  @SerializedName("RevisionAuthor_ID")
-  private String revisionAuthorID = null;
+  @SerializedName("revisionauthor_id")
+  private String revisionauthorId = null;
 
-  @SerializedName("Revision")
+  @SerializedName("revision")
   private Integer revision = null;
 
-  @SerializedName("BlobData")
-  private byte[] blobData = null;
+  @SerializedName("blobdata")
+  private byte[] blobdata = null;
 
-  @SerializedName("Compressed")
+  @SerializedName("compressed")
   private Boolean compressed = null;
 
-  @SerializedName("OriginalSize")
-  private Integer originalSize = null;
+  @SerializedName("originalsize")
+  private Integer originalsize = null;
 
-  @SerializedName("CompressedSize")
-  private Integer compressedSize = null;
+  @SerializedName("compressedsize")
+  private Integer compressedsize = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Documentdata displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Documentdata id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Documentdata classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Documentdata objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * ID revidovaného objektu; ID objektu Data dokumentu
-   * @return revidedID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "ID revidovaného objektu; ID objektu Data dokumentu")
-  public String getRevidedID() {
-    return revidedID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Documentdata revidedId(String revidedId) {
+    this.revidedId = revidedId;
+    return this;
   }
 
    /**
-   * Popis revize
-   * @return revisionDescription
+   * id revidovaného objektu; id objektu data dokumentu
+   * @return revidedId
   **/
-  @ApiModelProperty(example = "null", value = "Popis revize")
-  public String getRevisionDescription() {
-    return revisionDescription;
+  @ApiModelProperty(example = "null", value = "id revidovaného objektu; id objektu data dokumentu")
+  public String getRevidedId() {
+    return revidedId;
+  }
+
+  public void setRevidedId(String revidedId) {
+    this.revidedId = revidedId;
+  }
+
+  public Documentdata revisiondescription(String revisiondescription) {
+    this.revisiondescription = revisiondescription;
+    return this;
   }
 
    /**
-   * Datum revize
-   * @return revisionDateDATE
+   * popis revize
+   * @return revisiondescription
   **/
-  @ApiModelProperty(example = "null", value = "Datum revize")
-  public DateTime getRevisionDateDATE() {
-    return revisionDateDATE;
+  @ApiModelProperty(example = "null", value = "popis revize")
+  public String getRevisiondescription() {
+    return revisiondescription;
+  }
+
+  public void setRevisiondescription(String revisiondescription) {
+    this.revisiondescription = revisiondescription;
+  }
+
+  public Documentdata revisiondatedate(DateTime revisiondatedate) {
+    this.revisiondatedate = revisiondatedate;
+    return this;
   }
 
    /**
-   * Autor revize; ID objektu Uživatel
-   * @return revisionAuthorID
+   * datum revize
+   * @return revisiondatedate
   **/
-  @ApiModelProperty(example = "null", value = "Autor revize; ID objektu Uživatel")
-  public String getRevisionAuthorID() {
-    return revisionAuthorID;
+  @ApiModelProperty(example = "null", value = "datum revize")
+  public DateTime getRevisiondatedate() {
+    return revisiondatedate;
+  }
+
+  public void setRevisiondatedate(DateTime revisiondatedate) {
+    this.revisiondatedate = revisiondatedate;
+  }
+
+  public Documentdata revisionauthorId(String revisionauthorId) {
+    this.revisionauthorId = revisionauthorId;
+    return this;
+  }
+
+   /**
+   * autor revize; id objektu uživatel
+   * @return revisionauthorId
+  **/
+  @ApiModelProperty(example = "null", value = "autor revize; id objektu uživatel")
+  public String getRevisionauthorId() {
+    return revisionauthorId;
+  }
+
+  public void setRevisionauthorId(String revisionauthorId) {
+    this.revisionauthorId = revisionauthorId;
+  }
+
+  public Documentdata revision(Integer revision) {
+    this.revision = revision;
+    return this;
   }
 
    /**
@@ -157,22 +234,26 @@ public class Documentdata   {
     return revision;
   }
 
-  public Documentdata blobData(byte[] blobData) {
-    this.blobData = blobData;
+  public void setRevision(Integer revision) {
+    this.revision = revision;
+  }
+
+  public Documentdata blobdata(byte[] blobdata) {
+    this.blobdata = blobdata;
     return this;
   }
 
    /**
-   * Data [persistentní položka]
-   * @return blobData
+   * data [persistentní položka]
+   * @return blobdata
   **/
-  @ApiModelProperty(example = "null", value = "Data [persistentní položka]")
-  public byte[] getBlobData() {
-    return blobData;
+  @ApiModelProperty(example = "null", value = "data [persistentní položka]")
+  public byte[] getBlobdata() {
+    return blobdata;
   }
 
-  public void setBlobData(byte[] blobData) {
-    this.blobData = blobData;
+  public void setBlobdata(byte[] blobdata) {
+    this.blobdata = blobdata;
   }
 
   public Documentdata compressed(Boolean compressed) {
@@ -181,10 +262,10 @@ public class Documentdata   {
   }
 
    /**
-   * Komprimován [persistentní položka]
+   * komprimován [persistentní položka]
    * @return compressed
   **/
-  @ApiModelProperty(example = "null", value = "Komprimován [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "komprimován [persistentní položka]")
   public Boolean getCompressed() {
     return compressed;
   }
@@ -193,40 +274,40 @@ public class Documentdata   {
     this.compressed = compressed;
   }
 
-  public Documentdata originalSize(Integer originalSize) {
-    this.originalSize = originalSize;
+  public Documentdata originalsize(Integer originalsize) {
+    this.originalsize = originalsize;
     return this;
   }
 
    /**
-   * Původní velikost [persistentní položka]
-   * @return originalSize
+   * původní velikost [persistentní položka]
+   * @return originalsize
   **/
-  @ApiModelProperty(example = "null", value = "Původní velikost [persistentní položka]")
-  public Integer getOriginalSize() {
-    return originalSize;
+  @ApiModelProperty(example = "null", value = "původní velikost [persistentní položka]")
+  public Integer getOriginalsize() {
+    return originalsize;
   }
 
-  public void setOriginalSize(Integer originalSize) {
-    this.originalSize = originalSize;
+  public void setOriginalsize(Integer originalsize) {
+    this.originalsize = originalsize;
   }
 
-  public Documentdata compressedSize(Integer compressedSize) {
-    this.compressedSize = compressedSize;
+  public Documentdata compressedsize(Integer compressedsize) {
+    this.compressedsize = compressedsize;
     return this;
   }
 
    /**
-   * Komprimovaná velikost [persistentní položka]
-   * @return compressedSize
+   * komprimovaná velikost [persistentní položka]
+   * @return compressedsize
   **/
-  @ApiModelProperty(example = "null", value = "Komprimovaná velikost [persistentní položka]")
-  public Integer getCompressedSize() {
-    return compressedSize;
+  @ApiModelProperty(example = "null", value = "komprimovaná velikost [persistentní položka]")
+  public Integer getCompressedsize() {
+    return compressedsize;
   }
 
-  public void setCompressedSize(Integer compressedSize) {
-    this.compressedSize = compressedSize;
+  public void setCompressedsize(Integer compressedsize) {
+    this.compressedsize = compressedsize;
   }
 
 
@@ -239,24 +320,24 @@ public class Documentdata   {
       return false;
     }
     Documentdata documentdata = (Documentdata) o;
-    return Objects.equals(this.displayName, documentdata.displayName) &&
-        Objects.equals(this.ID, documentdata.ID) &&
-        Objects.equals(this.classID, documentdata.classID) &&
-        Objects.equals(this.objVersion, documentdata.objVersion) &&
-        Objects.equals(this.revidedID, documentdata.revidedID) &&
-        Objects.equals(this.revisionDescription, documentdata.revisionDescription) &&
-        Objects.equals(this.revisionDateDATE, documentdata.revisionDateDATE) &&
-        Objects.equals(this.revisionAuthorID, documentdata.revisionAuthorID) &&
+    return Objects.equals(this.displayname, documentdata.displayname) &&
+        Objects.equals(this.id, documentdata.id) &&
+        Objects.equals(this.classid, documentdata.classid) &&
+        Objects.equals(this.objversion, documentdata.objversion) &&
+        Objects.equals(this.revidedId, documentdata.revidedId) &&
+        Objects.equals(this.revisiondescription, documentdata.revisiondescription) &&
+        Objects.equals(this.revisiondatedate, documentdata.revisiondatedate) &&
+        Objects.equals(this.revisionauthorId, documentdata.revisionauthorId) &&
         Objects.equals(this.revision, documentdata.revision) &&
-        Objects.equals(this.blobData, documentdata.blobData) &&
+        Objects.equals(this.blobdata, documentdata.blobdata) &&
         Objects.equals(this.compressed, documentdata.compressed) &&
-        Objects.equals(this.originalSize, documentdata.originalSize) &&
-        Objects.equals(this.compressedSize, documentdata.compressedSize);
+        Objects.equals(this.originalsize, documentdata.originalsize) &&
+        Objects.equals(this.compressedsize, documentdata.compressedsize);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, revidedID, revisionDescription, revisionDateDATE, revisionAuthorID, revision, blobData, compressed, originalSize, compressedSize);
+    return Objects.hash(displayname, id, classid, objversion, revidedId, revisiondescription, revisiondatedate, revisionauthorId, revision, blobdata, compressed, originalsize, compressedsize);
   }
 
   @Override
@@ -264,19 +345,19 @@ public class Documentdata   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Documentdata {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    revidedID: ").append(toIndentedString(revidedID)).append("\n");
-    sb.append("    revisionDescription: ").append(toIndentedString(revisionDescription)).append("\n");
-    sb.append("    revisionDateDATE: ").append(toIndentedString(revisionDateDATE)).append("\n");
-    sb.append("    revisionAuthorID: ").append(toIndentedString(revisionAuthorID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    revidedId: ").append(toIndentedString(revidedId)).append("\n");
+    sb.append("    revisiondescription: ").append(toIndentedString(revisiondescription)).append("\n");
+    sb.append("    revisiondatedate: ").append(toIndentedString(revisiondatedate)).append("\n");
+    sb.append("    revisionauthorId: ").append(toIndentedString(revisionauthorId)).append("\n");
     sb.append("    revision: ").append(toIndentedString(revision)).append("\n");
-    sb.append("    blobData: ").append(toIndentedString(blobData)).append("\n");
+    sb.append("    blobdata: ").append(toIndentedString(blobdata)).append("\n");
     sb.append("    compressed: ").append(toIndentedString(compressed)).append("\n");
-    sb.append("    originalSize: ").append(toIndentedString(originalSize)).append("\n");
-    sb.append("    compressedSize: ").append(toIndentedString(compressedSize)).append("\n");
+    sb.append("    originalsize: ").append(toIndentedString(originalsize)).append("\n");
+    sb.append("    compressedsize: ").append(toIndentedString(compressedsize)).append("\n");
     sb.append("}");
     return sb.toString();
   }

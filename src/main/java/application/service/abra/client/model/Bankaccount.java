@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,105 +36,141 @@ import java.util.Objects;
 /**
  * Bankaccount
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Bankaccount   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Bankaccountbeginning> rows = new ArrayList<Bankaccountbeginning>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("BankAccount")
-  private String bankAccount = null;
+  @SerializedName("bankaccount")
+  private String bankaccount = null;
 
-  @SerializedName("SpecSymbol")
-  private String specSymbol = null;
+  @SerializedName("specsymbol")
+  private String specsymbol = null;
 
-  @SerializedName("BankStatement_ID")
-  private String bankStatementID = null;
+  @SerializedName("bankstatement_id")
+  private String bankstatementId = null;
 
-  @SerializedName("PaymentOrder_ID")
-  private String paymentOrderID = null;
+  @SerializedName("paymentorder_id")
+  private String paymentorderId = null;
 
-  @SerializedName("Account_ID")
-  private String accountID = null;
+  @SerializedName("account_id")
+  private String accountId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("FirstOpenPeriod_ID")
-  private String firstOpenPeriodID = null;
+  @SerializedName("firstopenperiod_id")
+  private String firstopenperiodId = null;
 
-  @SerializedName("LastOpenPeriod_ID")
-  private String lastOpenPeriodID = null;
+  @SerializedName("lastopenperiod_id")
+  private String lastopenperiodId = null;
 
-  @SerializedName("FirstLocalAmount")
-  private Double firstLocalAmount = null;
+  @SerializedName("firstlocalamount")
+  private Double firstlocalamount = null;
 
-  @SerializedName("FirstAmount")
-  private Double firstAmount = null;
+  @SerializedName("firstamount")
+  private Double firstamount = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("SwiftCode")
-  private String swiftCode = null;
+  @SerializedName("swiftcode")
+  private String swiftcode = null;
 
-  @SerializedName("IBANCode")
-  private String iBANCode = null;
+  @SerializedName("ibancode")
+  private String ibancode = null;
 
-  @SerializedName("BankCountry_ID")
-  private String bankCountryID = null;
+  @SerializedName("bankcountry_id")
+  private String bankcountryId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Bankaccount displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Bankaccount id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Bankaccount classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Bankaccount objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Bankaccount rows(List<Bankaccountbeginning> rows) {
@@ -148,10 +184,10 @@ public class Bankaccount   {
   }
 
    /**
-   * Počátky; kolekce BO Počátek bankovního účtu [nepersistentní položka]
+   * počátky; kolekce bo počátek bankovního účtu [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Počátky; kolekce BO Počátek bankovního účtu [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "počátky; kolekce bo počátek bankovního účtu [nepersistentní položka]")
   public List<Bankaccountbeginning> getRows() {
     return rows;
   }
@@ -166,10 +202,10 @@ public class Bankaccount   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -184,10 +220,10 @@ public class Bankaccount   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -196,229 +232,256 @@ public class Bankaccount   {
     this.name = name;
   }
 
-  public Bankaccount bankAccount(String bankAccount) {
-    this.bankAccount = bankAccount;
+  public Bankaccount bankaccount(String bankaccount) {
+    this.bankaccount = bankaccount;
     return this;
   }
 
    /**
-   * Bank.účet [persistentní položka]
-   * @return bankAccount
+   * bank.účet [persistentní položka]
+   * @return bankaccount
   **/
-  @ApiModelProperty(example = "null", value = "Bank.účet [persistentní položka]")
-  public String getBankAccount() {
-    return bankAccount;
+  @ApiModelProperty(example = "null", value = "bank.účet [persistentní položka]")
+  public String getBankaccount() {
+    return bankaccount;
   }
 
-  public void setBankAccount(String bankAccount) {
-    this.bankAccount = bankAccount;
+  public void setBankaccount(String bankaccount) {
+    this.bankaccount = bankaccount;
   }
 
-  public Bankaccount specSymbol(String specSymbol) {
-    this.specSymbol = specSymbol;
+  public Bankaccount specsymbol(String specsymbol) {
+    this.specsymbol = specsymbol;
     return this;
   }
 
    /**
-   * Spec.symbol [persistentní položka]
-   * @return specSymbol
+   * spec.symbol [persistentní položka]
+   * @return specsymbol
   **/
-  @ApiModelProperty(example = "null", value = "Spec.symbol [persistentní položka]")
-  public String getSpecSymbol() {
-    return specSymbol;
+  @ApiModelProperty(example = "null", value = "spec.symbol [persistentní položka]")
+  public String getSpecsymbol() {
+    return specsymbol;
   }
 
-  public void setSpecSymbol(String specSymbol) {
-    this.specSymbol = specSymbol;
+  public void setSpecsymbol(String specsymbol) {
+    this.specsymbol = specsymbol;
   }
 
-  public Bankaccount bankStatementID(String bankStatementID) {
-    this.bankStatementID = bankStatementID;
+  public Bankaccount bankstatementId(String bankstatementId) {
+    this.bankstatementId = bankstatementId;
     return this;
   }
 
    /**
-   * Bankovní výpis; ID objektu Řada dokladů [persistentní položka]
-   * @return bankStatementID
+   * bankovní výpis; id objektu Řada dokladů [persistentní položka]
+   * @return bankstatementId
   **/
-  @ApiModelProperty(example = "null", value = "Bankovní výpis; ID objektu Řada dokladů [persistentní položka]")
-  public String getBankStatementID() {
-    return bankStatementID;
+  @ApiModelProperty(example = "null", value = "bankovní výpis; id objektu Řada dokladů [persistentní položka]")
+  public String getBankstatementId() {
+    return bankstatementId;
   }
 
-  public void setBankStatementID(String bankStatementID) {
-    this.bankStatementID = bankStatementID;
+  public void setBankstatementId(String bankstatementId) {
+    this.bankstatementId = bankstatementId;
   }
 
-  public Bankaccount paymentOrderID(String paymentOrderID) {
-    this.paymentOrderID = paymentOrderID;
+  public Bankaccount paymentorderId(String paymentorderId) {
+    this.paymentorderId = paymentorderId;
     return this;
   }
 
    /**
-   * Platební příkaz; ID objektu Řada dokladů [persistentní položka]
-   * @return paymentOrderID
+   * platební příkaz; id objektu Řada dokladů [persistentní položka]
+   * @return paymentorderId
   **/
-  @ApiModelProperty(example = "null", value = "Platební příkaz; ID objektu Řada dokladů [persistentní položka]")
-  public String getPaymentOrderID() {
-    return paymentOrderID;
+  @ApiModelProperty(example = "null", value = "platební příkaz; id objektu Řada dokladů [persistentní položka]")
+  public String getPaymentorderId() {
+    return paymentorderId;
   }
 
-  public void setPaymentOrderID(String paymentOrderID) {
-    this.paymentOrderID = paymentOrderID;
+  public void setPaymentorderId(String paymentorderId) {
+    this.paymentorderId = paymentorderId;
   }
 
-  public Bankaccount accountID(String accountID) {
-    this.accountID = accountID;
+  public Bankaccount accountId(String accountId) {
+    this.accountId = accountId;
     return this;
   }
 
    /**
-   * Účet; ID objektu Účet účetního rozvrhu [persistentní položka]
-   * @return accountID
+   * Účet; id objektu Účet účetního rozvrhu [persistentní položka]
+   * @return accountId
   **/
-  @ApiModelProperty(example = "null", value = "Účet; ID objektu Účet účetního rozvrhu [persistentní položka]")
-  public String getAccountID() {
-    return accountID;
+  @ApiModelProperty(example = "null", value = "Účet; id objektu Účet účetního rozvrhu [persistentní položka]")
+  public String getAccountId() {
+    return accountId;
   }
 
-  public void setAccountID(String accountID) {
-    this.accountID = accountID;
+  public void setAccountId(String accountId) {
+    this.accountId = accountId;
   }
 
-  public Bankaccount divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Bankaccount divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Bankaccount firstOpenPeriodID(String firstOpenPeriodID) {
-    this.firstOpenPeriodID = firstOpenPeriodID;
+  public Bankaccount firstopenperiodId(String firstopenperiodId) {
+    this.firstopenperiodId = firstopenperiodId;
     return this;
   }
 
    /**
-   * První období; ID objektu Období [persistentní položka]
-   * @return firstOpenPeriodID
+   * první období; id objektu období [persistentní položka]
+   * @return firstopenperiodId
   **/
-  @ApiModelProperty(example = "null", value = "První období; ID objektu Období [persistentní položka]")
-  public String getFirstOpenPeriodID() {
-    return firstOpenPeriodID;
+  @ApiModelProperty(example = "null", value = "první období; id objektu období [persistentní položka]")
+  public String getFirstopenperiodId() {
+    return firstopenperiodId;
   }
 
-  public void setFirstOpenPeriodID(String firstOpenPeriodID) {
-    this.firstOpenPeriodID = firstOpenPeriodID;
+  public void setFirstopenperiodId(String firstopenperiodId) {
+    this.firstopenperiodId = firstopenperiodId;
   }
 
-   /**
-   * Akt.období; ID objektu Období [persistentní položka]
-   * @return lastOpenPeriodID
-  **/
-  @ApiModelProperty(example = "null", value = "Akt.období; ID objektu Období [persistentní položka]")
-  public String getLastOpenPeriodID() {
-    return lastOpenPeriodID;
+  public Bankaccount lastopenperiodId(String lastopenperiodId) {
+    this.lastopenperiodId = lastopenperiodId;
+    return this;
   }
 
    /**
-   * Lokál.částka prvního poč.
-   * @return firstLocalAmount
+   * akt.období; id objektu období [persistentní položka]
+   * @return lastopenperiodId
   **/
-  @ApiModelProperty(example = "null", value = "Lokál.částka prvního poč.")
-  public Double getFirstLocalAmount() {
-    return firstLocalAmount;
+  @ApiModelProperty(example = "null", value = "akt.období; id objektu období [persistentní položka]")
+  public String getLastopenperiodId() {
+    return lastopenperiodId;
+  }
+
+  public void setLastopenperiodId(String lastopenperiodId) {
+    this.lastopenperiodId = lastopenperiodId;
+  }
+
+  public Bankaccount firstlocalamount(Double firstlocalamount) {
+    this.firstlocalamount = firstlocalamount;
+    return this;
+  }
+
+   /**
+   * lokál.částka prvního poč.
+   * @return firstlocalamount
+  **/
+  @ApiModelProperty(example = "null", value = "lokál.částka prvního poč.")
+  public Double getFirstlocalamount() {
+    return firstlocalamount;
+  }
+
+  public void setFirstlocalamount(Double firstlocalamount) {
+    this.firstlocalamount = firstlocalamount;
+  }
+
+  public Bankaccount firstamount(Double firstamount) {
+    this.firstamount = firstamount;
+    return this;
   }
 
    /**
    * Částka prvního poč.
-   * @return firstAmount
+   * @return firstamount
   **/
   @ApiModelProperty(example = "null", value = "Částka prvního poč.")
-  public Double getFirstAmount() {
-    return firstAmount;
+  public Double getFirstamount() {
+    return firstamount;
   }
 
-  public Bankaccount currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setFirstamount(Double firstamount) {
+    this.firstamount = firstamount;
+  }
+
+  public Bankaccount currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
-  public Bankaccount swiftCode(String swiftCode) {
-    this.swiftCode = swiftCode;
+  public Bankaccount swiftcode(String swiftcode) {
+    this.swiftcode = swiftcode;
     return this;
   }
 
    /**
-   * SWIFT [persistentní položka]
-   * @return swiftCode
+   * swift [persistentní položka]
+   * @return swiftcode
   **/
-  @ApiModelProperty(example = "null", value = "SWIFT [persistentní položka]")
-  public String getSwiftCode() {
-    return swiftCode;
+  @ApiModelProperty(example = "null", value = "swift [persistentní položka]")
+  public String getSwiftcode() {
+    return swiftcode;
   }
 
-  public void setSwiftCode(String swiftCode) {
-    this.swiftCode = swiftCode;
+  public void setSwiftcode(String swiftcode) {
+    this.swiftcode = swiftcode;
   }
 
-  public Bankaccount iBANCode(String iBANCode) {
-    this.iBANCode = iBANCode;
+  public Bankaccount ibancode(String ibancode) {
+    this.ibancode = ibancode;
     return this;
   }
 
    /**
-   * IBAN [persistentní položka]
-   * @return iBANCode
+   * iban [persistentní položka]
+   * @return ibancode
   **/
-  @ApiModelProperty(example = "null", value = "IBAN [persistentní položka]")
-  public String getIBANCode() {
-    return iBANCode;
+  @ApiModelProperty(example = "null", value = "iban [persistentní položka]")
+  public String getIbancode() {
+    return ibancode;
   }
 
-  public void setIBANCode(String iBANCode) {
-    this.iBANCode = iBANCode;
+  public void setIbancode(String ibancode) {
+    this.ibancode = ibancode;
   }
 
-  public Bankaccount bankCountryID(String bankCountryID) {
-    this.bankCountryID = bankCountryID;
+  public Bankaccount bankcountryId(String bankcountryId) {
+    this.bankcountryId = bankcountryId;
     return this;
   }
 
    /**
-   * Země banky; ID objektu Země [persistentní položka]
-   * @return bankCountryID
+   * země banky; id objektu země [persistentní položka]
+   * @return bankcountryId
   **/
-  @ApiModelProperty(example = "null", value = "Země banky; ID objektu Země [persistentní položka]")
-  public String getBankCountryID() {
-    return bankCountryID;
+  @ApiModelProperty(example = "null", value = "země banky; id objektu země [persistentní položka]")
+  public String getBankcountryId() {
+    return bankcountryId;
   }
 
-  public void setBankCountryID(String bankCountryID) {
-    this.bankCountryID = bankCountryID;
+  public void setBankcountryId(String bankcountryId) {
+    this.bankcountryId = bankcountryId;
   }
 
 
@@ -431,32 +494,32 @@ public class Bankaccount   {
       return false;
     }
     Bankaccount bankaccount = (Bankaccount) o;
-    return Objects.equals(this.displayName, bankaccount.displayName) &&
-        Objects.equals(this.ID, bankaccount.ID) &&
-        Objects.equals(this.classID, bankaccount.classID) &&
-        Objects.equals(this.objVersion, bankaccount.objVersion) &&
+    return Objects.equals(this.displayname, bankaccount.displayname) &&
+        Objects.equals(this.id, bankaccount.id) &&
+        Objects.equals(this.classid, bankaccount.classid) &&
+        Objects.equals(this.objversion, bankaccount.objversion) &&
         Objects.equals(this.rows, bankaccount.rows) &&
         Objects.equals(this.hidden, bankaccount.hidden) &&
         Objects.equals(this.name, bankaccount.name) &&
-        Objects.equals(this.bankAccount, bankaccount.bankAccount) &&
-        Objects.equals(this.specSymbol, bankaccount.specSymbol) &&
-        Objects.equals(this.bankStatementID, bankaccount.bankStatementID) &&
-        Objects.equals(this.paymentOrderID, bankaccount.paymentOrderID) &&
-        Objects.equals(this.accountID, bankaccount.accountID) &&
-        Objects.equals(this.divisionID, bankaccount.divisionID) &&
-        Objects.equals(this.firstOpenPeriodID, bankaccount.firstOpenPeriodID) &&
-        Objects.equals(this.lastOpenPeriodID, bankaccount.lastOpenPeriodID) &&
-        Objects.equals(this.firstLocalAmount, bankaccount.firstLocalAmount) &&
-        Objects.equals(this.firstAmount, bankaccount.firstAmount) &&
-        Objects.equals(this.currencyID, bankaccount.currencyID) &&
-        Objects.equals(this.swiftCode, bankaccount.swiftCode) &&
-        Objects.equals(this.iBANCode, bankaccount.iBANCode) &&
-        Objects.equals(this.bankCountryID, bankaccount.bankCountryID);
+        Objects.equals(this.bankaccount, bankaccount.bankaccount) &&
+        Objects.equals(this.specsymbol, bankaccount.specsymbol) &&
+        Objects.equals(this.bankstatementId, bankaccount.bankstatementId) &&
+        Objects.equals(this.paymentorderId, bankaccount.paymentorderId) &&
+        Objects.equals(this.accountId, bankaccount.accountId) &&
+        Objects.equals(this.divisionId, bankaccount.divisionId) &&
+        Objects.equals(this.firstopenperiodId, bankaccount.firstopenperiodId) &&
+        Objects.equals(this.lastopenperiodId, bankaccount.lastopenperiodId) &&
+        Objects.equals(this.firstlocalamount, bankaccount.firstlocalamount) &&
+        Objects.equals(this.firstamount, bankaccount.firstamount) &&
+        Objects.equals(this.currencyId, bankaccount.currencyId) &&
+        Objects.equals(this.swiftcode, bankaccount.swiftcode) &&
+        Objects.equals(this.ibancode, bankaccount.ibancode) &&
+        Objects.equals(this.bankcountryId, bankaccount.bankcountryId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, name, bankAccount, specSymbol, bankStatementID, paymentOrderID, accountID, divisionID, firstOpenPeriodID, lastOpenPeriodID, firstLocalAmount, firstAmount, currencyID, swiftCode, iBANCode, bankCountryID);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, name, bankaccount, specsymbol, bankstatementId, paymentorderId, accountId, divisionId, firstopenperiodId, lastopenperiodId, firstlocalamount, firstamount, currencyId, swiftcode, ibancode, bankcountryId);
   }
 
   @Override
@@ -464,27 +527,27 @@ public class Bankaccount   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Bankaccount {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    bankAccount: ").append(toIndentedString(bankAccount)).append("\n");
-    sb.append("    specSymbol: ").append(toIndentedString(specSymbol)).append("\n");
-    sb.append("    bankStatementID: ").append(toIndentedString(bankStatementID)).append("\n");
-    sb.append("    paymentOrderID: ").append(toIndentedString(paymentOrderID)).append("\n");
-    sb.append("    accountID: ").append(toIndentedString(accountID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    firstOpenPeriodID: ").append(toIndentedString(firstOpenPeriodID)).append("\n");
-    sb.append("    lastOpenPeriodID: ").append(toIndentedString(lastOpenPeriodID)).append("\n");
-    sb.append("    firstLocalAmount: ").append(toIndentedString(firstLocalAmount)).append("\n");
-    sb.append("    firstAmount: ").append(toIndentedString(firstAmount)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    swiftCode: ").append(toIndentedString(swiftCode)).append("\n");
-    sb.append("    iBANCode: ").append(toIndentedString(iBANCode)).append("\n");
-    sb.append("    bankCountryID: ").append(toIndentedString(bankCountryID)).append("\n");
+    sb.append("    bankaccount: ").append(toIndentedString(bankaccount)).append("\n");
+    sb.append("    specsymbol: ").append(toIndentedString(specsymbol)).append("\n");
+    sb.append("    bankstatementId: ").append(toIndentedString(bankstatementId)).append("\n");
+    sb.append("    paymentorderId: ").append(toIndentedString(paymentorderId)).append("\n");
+    sb.append("    accountId: ").append(toIndentedString(accountId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    firstopenperiodId: ").append(toIndentedString(firstopenperiodId)).append("\n");
+    sb.append("    lastopenperiodId: ").append(toIndentedString(lastopenperiodId)).append("\n");
+    sb.append("    firstlocalamount: ").append(toIndentedString(firstlocalamount)).append("\n");
+    sb.append("    firstamount: ").append(toIndentedString(firstamount)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    swiftcode: ").append(toIndentedString(swiftcode)).append("\n");
+    sb.append("    ibancode: ").append(toIndentedString(ibancode)).append("\n");
+    sb.append("    bankcountryId: ").append(toIndentedString(bankcountryId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

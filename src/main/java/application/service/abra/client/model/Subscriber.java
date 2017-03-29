@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,87 +34,123 @@ import java.util.Objects;
 /**
  * Subscriber
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Subscriber   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("ExternalNumber")
-  private String externalNumber = null;
+  @SerializedName("externalnumber")
+  private String externalnumber = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("StoreCard_ID")
-  private String storeCardID = null;
+  @SerializedName("storecard_id")
+  private String storecardId = null;
 
-  @SerializedName("ExternalSpecification")
-  private String externalSpecification = null;
+  @SerializedName("externalspecification")
+  private String externalspecification = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Subscriber externalNumber(String externalNumber) {
-    this.externalNumber = externalNumber;
+  public Subscriber displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Ext. číslo [persistentní položka]
-   * @return externalNumber
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Ext. číslo [persistentní položka]")
-  public String getExternalNumber() {
-    return externalNumber;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setExternalNumber(String externalNumber) {
-    this.externalNumber = externalNumber;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Subscriber id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Subscriber classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Subscriber objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Subscriber externalnumber(String externalnumber) {
+    this.externalnumber = externalnumber;
+    return this;
+  }
+
+   /**
+   * ext. číslo [persistentní položka]
+   * @return externalnumber
+  **/
+  @ApiModelProperty(example = "null", value = "ext. číslo [persistentní položka]")
+  public String getExternalnumber() {
+    return externalnumber;
+  }
+
+  public void setExternalnumber(String externalnumber) {
+    this.externalnumber = externalnumber;
   }
 
   public Subscriber name(String name) {
@@ -123,10 +159,10 @@ public class Subscriber   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -135,58 +171,58 @@ public class Subscriber   {
     this.name = name;
   }
 
-  public Subscriber firmID(String firmID) {
-    this.firmID = firmID;
+  public Subscriber firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Subscriber storeCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public Subscriber storecardId(String storecardId) {
+    this.storecardId = storecardId;
     return this;
   }
 
    /**
-   * Skl. karta; ID objektu Skladová karta [persistentní položka]
-   * @return storeCardID
+   * skl. karta; id objektu skladová karta [persistentní položka]
+   * @return storecardId
   **/
-  @ApiModelProperty(example = "null", value = "Skl. karta; ID objektu Skladová karta [persistentní položka]")
-  public String getStoreCardID() {
-    return storeCardID;
+  @ApiModelProperty(example = "null", value = "skl. karta; id objektu skladová karta [persistentní položka]")
+  public String getStorecardId() {
+    return storecardId;
   }
 
-  public void setStoreCardID(String storeCardID) {
-    this.storeCardID = storeCardID;
+  public void setStorecardId(String storecardId) {
+    this.storecardId = storecardId;
   }
 
-  public Subscriber externalSpecification(String externalSpecification) {
-    this.externalSpecification = externalSpecification;
+  public Subscriber externalspecification(String externalspecification) {
+    this.externalspecification = externalspecification;
     return this;
   }
 
    /**
-   * Ext. specifikace [persistentní položka]
-   * @return externalSpecification
+   * ext. specifikace [persistentní položka]
+   * @return externalspecification
   **/
-  @ApiModelProperty(example = "null", value = "Ext. specifikace [persistentní položka]")
-  public String getExternalSpecification() {
-    return externalSpecification;
+  @ApiModelProperty(example = "null", value = "ext. specifikace [persistentní položka]")
+  public String getExternalspecification() {
+    return externalspecification;
   }
 
-  public void setExternalSpecification(String externalSpecification) {
-    this.externalSpecification = externalSpecification;
+  public void setExternalspecification(String externalspecification) {
+    this.externalspecification = externalspecification;
   }
 
 
@@ -199,20 +235,20 @@ public class Subscriber   {
       return false;
     }
     Subscriber subscriber = (Subscriber) o;
-    return Objects.equals(this.displayName, subscriber.displayName) &&
-        Objects.equals(this.ID, subscriber.ID) &&
-        Objects.equals(this.classID, subscriber.classID) &&
-        Objects.equals(this.objVersion, subscriber.objVersion) &&
-        Objects.equals(this.externalNumber, subscriber.externalNumber) &&
+    return Objects.equals(this.displayname, subscriber.displayname) &&
+        Objects.equals(this.id, subscriber.id) &&
+        Objects.equals(this.classid, subscriber.classid) &&
+        Objects.equals(this.objversion, subscriber.objversion) &&
+        Objects.equals(this.externalnumber, subscriber.externalnumber) &&
         Objects.equals(this.name, subscriber.name) &&
-        Objects.equals(this.firmID, subscriber.firmID) &&
-        Objects.equals(this.storeCardID, subscriber.storeCardID) &&
-        Objects.equals(this.externalSpecification, subscriber.externalSpecification);
+        Objects.equals(this.firmId, subscriber.firmId) &&
+        Objects.equals(this.storecardId, subscriber.storecardId) &&
+        Objects.equals(this.externalspecification, subscriber.externalspecification);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, externalNumber, name, firmID, storeCardID, externalSpecification);
+    return Objects.hash(displayname, id, classid, objversion, externalnumber, name, firmId, storecardId, externalspecification);
   }
 
   @Override
@@ -220,15 +256,15 @@ public class Subscriber   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Subscriber {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    externalNumber: ").append(toIndentedString(externalNumber)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    externalnumber: ").append(toIndentedString(externalnumber)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    storeCardID: ").append(toIndentedString(storeCardID)).append("\n");
-    sb.append("    externalSpecification: ").append(toIndentedString(externalSpecification)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    storecardId: ").append(toIndentedString(storecardId)).append("\n");
+    sb.append("    externalspecification: ").append(toIndentedString(externalspecification)).append("\n");
     sb.append("}");
     return sb.toString();
   }

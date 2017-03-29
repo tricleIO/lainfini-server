@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,93 +34,138 @@ import java.util.Objects;
 /**
  * Annualclearingcountoff
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Annualclearingcountoff   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("MonthCount")
-  private Integer monthCount = null;
+  @SerializedName("monthcount")
+  private Integer monthcount = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-  @SerializedName("YearAmount")
-  private Double yearAmount = null;
+  @SerializedName("yearamount")
+  private Double yearamount = null;
 
-  @SerializedName("CountOffType_ID")
-  private String countOffTypeID = null;
+  @SerializedName("countofftype_id")
+  private String countofftypeId = null;
 
-  @SerializedName("FMName")
-  private String fMName = null;
+  @SerializedName("fmname")
+  private String fmname = null;
 
-  @SerializedName("WagePeriodFrom_ID")
-  private String wagePeriodFromID = null;
+  @SerializedName("wageperiodfrom_id")
+  private String wageperiodfromId = null;
 
-  @SerializedName("WagePeriodTo_ID")
-  private String wagePeriodToID = null;
+  @SerializedName("wageperiodto_id")
+  private String wageperiodtoId = null;
 
-  @SerializedName("Correction")
+  @SerializedName("correction")
   private Double correction = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Annualclearingcountoff displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Annualclearingcountoff id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Annualclearingcountoff classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Annualclearingcountoff objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Vlastník; ID objektu Řádek ročního zúčtování [persistentní položka]
-   * @return parentID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Řádek ročního zúčtování [persistentní položka]")
-  public String getParentID() {
-    return parentID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Annualclearingcountoff parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu Řádek ročního zúčtování [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu Řádek ročního zúčtování [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
   public Annualclearingcountoff description(String description) {
@@ -129,10 +174,10 @@ public class Annualclearingcountoff   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -141,22 +186,22 @@ public class Annualclearingcountoff   {
     this.description = description;
   }
 
-  public Annualclearingcountoff monthCount(Integer monthCount) {
-    this.monthCount = monthCount;
+  public Annualclearingcountoff monthcount(Integer monthcount) {
+    this.monthcount = monthcount;
     return this;
   }
 
    /**
-   * Poč.měsíců [persistentní položka]
-   * @return monthCount
+   * poč.měsíců [persistentní položka]
+   * @return monthcount
   **/
-  @ApiModelProperty(example = "null", value = "Poč.měsíců [persistentní položka]")
-  public Integer getMonthCount() {
-    return monthCount;
+  @ApiModelProperty(example = "null", value = "poč.měsíců [persistentní položka]")
+  public Integer getMonthcount() {
+    return monthcount;
   }
 
-  public void setMonthCount(Integer monthCount) {
-    this.monthCount = monthCount;
+  public void setMonthcount(Integer monthcount) {
+    this.monthcount = monthcount;
   }
 
   public Annualclearingcountoff amount(Double amount) {
@@ -177,94 +222,94 @@ public class Annualclearingcountoff   {
     this.amount = amount;
   }
 
-  public Annualclearingcountoff yearAmount(Double yearAmount) {
-    this.yearAmount = yearAmount;
+  public Annualclearingcountoff yearamount(Double yearamount) {
+    this.yearamount = yearamount;
     return this;
   }
 
    /**
-   * Roční částka
-   * @return yearAmount
+   * roční částka
+   * @return yearamount
   **/
-  @ApiModelProperty(example = "null", value = "Roční částka")
-  public Double getYearAmount() {
-    return yearAmount;
+  @ApiModelProperty(example = "null", value = "roční částka")
+  public Double getYearamount() {
+    return yearamount;
   }
 
-  public void setYearAmount(Double yearAmount) {
-    this.yearAmount = yearAmount;
+  public void setYearamount(Double yearamount) {
+    this.yearamount = yearamount;
   }
 
-  public Annualclearingcountoff countOffTypeID(String countOffTypeID) {
-    this.countOffTypeID = countOffTypeID;
+  public Annualclearingcountoff countofftypeId(String countofftypeId) {
+    this.countofftypeId = countofftypeId;
     return this;
   }
 
    /**
-   * Typ odpočtu; ID objektu Typ odpočtu/slevy [persistentní položka]
-   * @return countOffTypeID
+   * typ odpočtu; id objektu typ odpočtu/slevy [persistentní položka]
+   * @return countofftypeId
   **/
-  @ApiModelProperty(example = "null", value = "Typ odpočtu; ID objektu Typ odpočtu/slevy [persistentní položka]")
-  public String getCountOffTypeID() {
-    return countOffTypeID;
+  @ApiModelProperty(example = "null", value = "typ odpočtu; id objektu typ odpočtu/slevy [persistentní položka]")
+  public String getCountofftypeId() {
+    return countofftypeId;
   }
 
-  public void setCountOffTypeID(String countOffTypeID) {
-    this.countOffTypeID = countOffTypeID;
+  public void setCountofftypeId(String countofftypeId) {
+    this.countofftypeId = countofftypeId;
   }
 
-  public Annualclearingcountoff fMName(String fMName) {
-    this.fMName = fMName;
+  public Annualclearingcountoff fmname(String fmname) {
+    this.fmname = fmname;
     return this;
   }
 
    /**
-   * Rodinný příslušník [persistentní položka]
-   * @return fMName
+   * rodinný příslušník [persistentní položka]
+   * @return fmname
   **/
-  @ApiModelProperty(example = "null", value = "Rodinný příslušník [persistentní položka]")
-  public String getFMName() {
-    return fMName;
+  @ApiModelProperty(example = "null", value = "rodinný příslušník [persistentní položka]")
+  public String getFmname() {
+    return fmname;
   }
 
-  public void setFMName(String fMName) {
-    this.fMName = fMName;
+  public void setFmname(String fmname) {
+    this.fmname = fmname;
   }
 
-  public Annualclearingcountoff wagePeriodFromID(String wagePeriodFromID) {
-    this.wagePeriodFromID = wagePeriodFromID;
+  public Annualclearingcountoff wageperiodfromId(String wageperiodfromId) {
+    this.wageperiodfromId = wageperiodfromId;
     return this;
   }
 
    /**
-   * Období od; ID objektu Mzdové období [persistentní položka]
-   * @return wagePeriodFromID
+   * období od; id objektu mzdové období [persistentní položka]
+   * @return wageperiodfromId
   **/
-  @ApiModelProperty(example = "null", value = "Období od; ID objektu Mzdové období [persistentní položka]")
-  public String getWagePeriodFromID() {
-    return wagePeriodFromID;
+  @ApiModelProperty(example = "null", value = "období od; id objektu mzdové období [persistentní položka]")
+  public String getWageperiodfromId() {
+    return wageperiodfromId;
   }
 
-  public void setWagePeriodFromID(String wagePeriodFromID) {
-    this.wagePeriodFromID = wagePeriodFromID;
+  public void setWageperiodfromId(String wageperiodfromId) {
+    this.wageperiodfromId = wageperiodfromId;
   }
 
-  public Annualclearingcountoff wagePeriodToID(String wagePeriodToID) {
-    this.wagePeriodToID = wagePeriodToID;
+  public Annualclearingcountoff wageperiodtoId(String wageperiodtoId) {
+    this.wageperiodtoId = wageperiodtoId;
     return this;
   }
 
    /**
-   * Období do; ID objektu Mzdové období [persistentní položka]
-   * @return wagePeriodToID
+   * období do; id objektu mzdové období [persistentní položka]
+   * @return wageperiodtoId
   **/
-  @ApiModelProperty(example = "null", value = "Období do; ID objektu Mzdové období [persistentní položka]")
-  public String getWagePeriodToID() {
-    return wagePeriodToID;
+  @ApiModelProperty(example = "null", value = "období do; id objektu mzdové období [persistentní položka]")
+  public String getWageperiodtoId() {
+    return wageperiodtoId;
   }
 
-  public void setWagePeriodToID(String wagePeriodToID) {
-    this.wagePeriodToID = wagePeriodToID;
+  public void setWageperiodtoId(String wageperiodtoId) {
+    this.wageperiodtoId = wageperiodtoId;
   }
 
   public Annualclearingcountoff correction(Double correction) {
@@ -273,10 +318,10 @@ public class Annualclearingcountoff   {
   }
 
    /**
-   * Oprava [persistentní položka]
+   * oprava [persistentní položka]
    * @return correction
   **/
-  @ApiModelProperty(example = "null", value = "Oprava [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "oprava [persistentní položka]")
   public Double getCorrection() {
     return correction;
   }
@@ -295,25 +340,25 @@ public class Annualclearingcountoff   {
       return false;
     }
     Annualclearingcountoff annualclearingcountoff = (Annualclearingcountoff) o;
-    return Objects.equals(this.displayName, annualclearingcountoff.displayName) &&
-        Objects.equals(this.ID, annualclearingcountoff.ID) &&
-        Objects.equals(this.classID, annualclearingcountoff.classID) &&
-        Objects.equals(this.objVersion, annualclearingcountoff.objVersion) &&
-        Objects.equals(this.parentID, annualclearingcountoff.parentID) &&
+    return Objects.equals(this.displayname, annualclearingcountoff.displayname) &&
+        Objects.equals(this.id, annualclearingcountoff.id) &&
+        Objects.equals(this.classid, annualclearingcountoff.classid) &&
+        Objects.equals(this.objversion, annualclearingcountoff.objversion) &&
+        Objects.equals(this.parentId, annualclearingcountoff.parentId) &&
         Objects.equals(this.description, annualclearingcountoff.description) &&
-        Objects.equals(this.monthCount, annualclearingcountoff.monthCount) &&
+        Objects.equals(this.monthcount, annualclearingcountoff.monthcount) &&
         Objects.equals(this.amount, annualclearingcountoff.amount) &&
-        Objects.equals(this.yearAmount, annualclearingcountoff.yearAmount) &&
-        Objects.equals(this.countOffTypeID, annualclearingcountoff.countOffTypeID) &&
-        Objects.equals(this.fMName, annualclearingcountoff.fMName) &&
-        Objects.equals(this.wagePeriodFromID, annualclearingcountoff.wagePeriodFromID) &&
-        Objects.equals(this.wagePeriodToID, annualclearingcountoff.wagePeriodToID) &&
+        Objects.equals(this.yearamount, annualclearingcountoff.yearamount) &&
+        Objects.equals(this.countofftypeId, annualclearingcountoff.countofftypeId) &&
+        Objects.equals(this.fmname, annualclearingcountoff.fmname) &&
+        Objects.equals(this.wageperiodfromId, annualclearingcountoff.wageperiodfromId) &&
+        Objects.equals(this.wageperiodtoId, annualclearingcountoff.wageperiodtoId) &&
         Objects.equals(this.correction, annualclearingcountoff.correction);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, description, monthCount, amount, yearAmount, countOffTypeID, fMName, wagePeriodFromID, wagePeriodToID, correction);
+    return Objects.hash(displayname, id, classid, objversion, parentId, description, monthcount, amount, yearamount, countofftypeId, fmname, wageperiodfromId, wageperiodtoId, correction);
   }
 
   @Override
@@ -321,19 +366,19 @@ public class Annualclearingcountoff   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Annualclearingcountoff {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    monthCount: ").append(toIndentedString(monthCount)).append("\n");
+    sb.append("    monthcount: ").append(toIndentedString(monthcount)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
-    sb.append("    yearAmount: ").append(toIndentedString(yearAmount)).append("\n");
-    sb.append("    countOffTypeID: ").append(toIndentedString(countOffTypeID)).append("\n");
-    sb.append("    fMName: ").append(toIndentedString(fMName)).append("\n");
-    sb.append("    wagePeriodFromID: ").append(toIndentedString(wagePeriodFromID)).append("\n");
-    sb.append("    wagePeriodToID: ").append(toIndentedString(wagePeriodToID)).append("\n");
+    sb.append("    yearamount: ").append(toIndentedString(yearamount)).append("\n");
+    sb.append("    countofftypeId: ").append(toIndentedString(countofftypeId)).append("\n");
+    sb.append("    fmname: ").append(toIndentedString(fmname)).append("\n");
+    sb.append("    wageperiodfromId: ").append(toIndentedString(wageperiodfromId)).append("\n");
+    sb.append("    wageperiodtoId: ").append(toIndentedString(wageperiodtoId)).append("\n");
     sb.append("    correction: ").append(toIndentedString(correction)).append("\n");
     sb.append("}");
     return sb.toString();

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,192 +34,237 @@ import java.util.Objects;
 /**
  * Workingfundyear
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Workingfundyear   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("CalendarYear")
-  private Integer calendarYear = null;
+  @SerializedName("calendaryear")
+  private Integer calendaryear = null;
 
-  @SerializedName("FirstQuarterFund")
-  private Double firstQuarterFund = null;
+  @SerializedName("firstquarterfund")
+  private Double firstquarterfund = null;
 
-  @SerializedName("SecondQuarterFund")
-  private Double secondQuarterFund = null;
+  @SerializedName("secondquarterfund")
+  private Double secondquarterfund = null;
 
-  @SerializedName("ThirdQuarterFund")
-  private Double thirdQuarterFund = null;
+  @SerializedName("thirdquarterfund")
+  private Double thirdquarterfund = null;
 
-  @SerializedName("FourthQuarterFund")
-  private Double fourthQuarterFund = null;
+  @SerializedName("fourthquarterfund")
+  private Double fourthquarterfund = null;
 
-  @SerializedName("YearFund")
-  private Double yearFund = null;
+  @SerializedName("yearfund")
+  private Double yearfund = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Fondy pracovní doby pro týdenní úvazek [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Fondy pracovní doby pro týdenní úvazek [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Workingfundyear calendarYear(Integer calendarYear) {
-    this.calendarYear = calendarYear;
+  public Workingfundyear displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Rok [persistentní položka]
-   * @return calendarYear
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Rok [persistentní položka]")
-  public Integer getCalendarYear() {
-    return calendarYear;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setCalendarYear(Integer calendarYear) {
-    this.calendarYear = calendarYear;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Workingfundyear firstQuarterFund(Double firstQuarterFund) {
-    this.firstQuarterFund = firstQuarterFund;
+  public Workingfundyear id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Workingfundyear classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Workingfundyear objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Workingfundyear parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu fondy pracovní doby pro týdenní úvazek [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu fondy pracovní doby pro týdenní úvazek [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Workingfundyear calendaryear(Integer calendaryear) {
+    this.calendaryear = calendaryear;
+    return this;
+  }
+
+   /**
+   * rok [persistentní položka]
+   * @return calendaryear
+  **/
+  @ApiModelProperty(example = "null", value = "rok [persistentní položka]")
+  public Integer getCalendaryear() {
+    return calendaryear;
+  }
+
+  public void setCalendaryear(Integer calendaryear) {
+    this.calendaryear = calendaryear;
+  }
+
+  public Workingfundyear firstquarterfund(Double firstquarterfund) {
+    this.firstquarterfund = firstquarterfund;
     return this;
   }
 
    /**
    * 1.čtvrtletí [persistentní položka]
-   * @return firstQuarterFund
+   * @return firstquarterfund
   **/
   @ApiModelProperty(example = "null", value = "1.čtvrtletí [persistentní položka]")
-  public Double getFirstQuarterFund() {
-    return firstQuarterFund;
+  public Double getFirstquarterfund() {
+    return firstquarterfund;
   }
 
-  public void setFirstQuarterFund(Double firstQuarterFund) {
-    this.firstQuarterFund = firstQuarterFund;
+  public void setFirstquarterfund(Double firstquarterfund) {
+    this.firstquarterfund = firstquarterfund;
   }
 
-  public Workingfundyear secondQuarterFund(Double secondQuarterFund) {
-    this.secondQuarterFund = secondQuarterFund;
+  public Workingfundyear secondquarterfund(Double secondquarterfund) {
+    this.secondquarterfund = secondquarterfund;
     return this;
   }
 
    /**
    * 2.čtvrtletí [persistentní položka]
-   * @return secondQuarterFund
+   * @return secondquarterfund
   **/
   @ApiModelProperty(example = "null", value = "2.čtvrtletí [persistentní položka]")
-  public Double getSecondQuarterFund() {
-    return secondQuarterFund;
+  public Double getSecondquarterfund() {
+    return secondquarterfund;
   }
 
-  public void setSecondQuarterFund(Double secondQuarterFund) {
-    this.secondQuarterFund = secondQuarterFund;
+  public void setSecondquarterfund(Double secondquarterfund) {
+    this.secondquarterfund = secondquarterfund;
   }
 
-  public Workingfundyear thirdQuarterFund(Double thirdQuarterFund) {
-    this.thirdQuarterFund = thirdQuarterFund;
+  public Workingfundyear thirdquarterfund(Double thirdquarterfund) {
+    this.thirdquarterfund = thirdquarterfund;
     return this;
   }
 
    /**
    * 3.čtvrtletí [persistentní položka]
-   * @return thirdQuarterFund
+   * @return thirdquarterfund
   **/
   @ApiModelProperty(example = "null", value = "3.čtvrtletí [persistentní položka]")
-  public Double getThirdQuarterFund() {
-    return thirdQuarterFund;
+  public Double getThirdquarterfund() {
+    return thirdquarterfund;
   }
 
-  public void setThirdQuarterFund(Double thirdQuarterFund) {
-    this.thirdQuarterFund = thirdQuarterFund;
+  public void setThirdquarterfund(Double thirdquarterfund) {
+    this.thirdquarterfund = thirdquarterfund;
   }
 
-  public Workingfundyear fourthQuarterFund(Double fourthQuarterFund) {
-    this.fourthQuarterFund = fourthQuarterFund;
+  public Workingfundyear fourthquarterfund(Double fourthquarterfund) {
+    this.fourthquarterfund = fourthquarterfund;
     return this;
   }
 
    /**
    * 4.čtvrtletí [persistentní položka]
-   * @return fourthQuarterFund
+   * @return fourthquarterfund
   **/
   @ApiModelProperty(example = "null", value = "4.čtvrtletí [persistentní položka]")
-  public Double getFourthQuarterFund() {
-    return fourthQuarterFund;
+  public Double getFourthquarterfund() {
+    return fourthquarterfund;
   }
 
-  public void setFourthQuarterFund(Double fourthQuarterFund) {
-    this.fourthQuarterFund = fourthQuarterFund;
+  public void setFourthquarterfund(Double fourthquarterfund) {
+    this.fourthquarterfund = fourthquarterfund;
   }
 
-  public Workingfundyear yearFund(Double yearFund) {
-    this.yearFund = yearFund;
+  public Workingfundyear yearfund(Double yearfund) {
+    this.yearfund = yearfund;
     return this;
   }
 
    /**
-   * Roční fond [persistentní položka]
-   * @return yearFund
+   * roční fond [persistentní položka]
+   * @return yearfund
   **/
-  @ApiModelProperty(example = "null", value = "Roční fond [persistentní položka]")
-  public Double getYearFund() {
-    return yearFund;
+  @ApiModelProperty(example = "null", value = "roční fond [persistentní položka]")
+  public Double getYearfund() {
+    return yearfund;
   }
 
-  public void setYearFund(Double yearFund) {
-    this.yearFund = yearFund;
+  public void setYearfund(Double yearfund) {
+    this.yearfund = yearfund;
   }
 
 
@@ -232,22 +277,22 @@ public class Workingfundyear   {
       return false;
     }
     Workingfundyear workingfundyear = (Workingfundyear) o;
-    return Objects.equals(this.displayName, workingfundyear.displayName) &&
-        Objects.equals(this.ID, workingfundyear.ID) &&
-        Objects.equals(this.classID, workingfundyear.classID) &&
-        Objects.equals(this.objVersion, workingfundyear.objVersion) &&
-        Objects.equals(this.parentID, workingfundyear.parentID) &&
-        Objects.equals(this.calendarYear, workingfundyear.calendarYear) &&
-        Objects.equals(this.firstQuarterFund, workingfundyear.firstQuarterFund) &&
-        Objects.equals(this.secondQuarterFund, workingfundyear.secondQuarterFund) &&
-        Objects.equals(this.thirdQuarterFund, workingfundyear.thirdQuarterFund) &&
-        Objects.equals(this.fourthQuarterFund, workingfundyear.fourthQuarterFund) &&
-        Objects.equals(this.yearFund, workingfundyear.yearFund);
+    return Objects.equals(this.displayname, workingfundyear.displayname) &&
+        Objects.equals(this.id, workingfundyear.id) &&
+        Objects.equals(this.classid, workingfundyear.classid) &&
+        Objects.equals(this.objversion, workingfundyear.objversion) &&
+        Objects.equals(this.parentId, workingfundyear.parentId) &&
+        Objects.equals(this.calendaryear, workingfundyear.calendaryear) &&
+        Objects.equals(this.firstquarterfund, workingfundyear.firstquarterfund) &&
+        Objects.equals(this.secondquarterfund, workingfundyear.secondquarterfund) &&
+        Objects.equals(this.thirdquarterfund, workingfundyear.thirdquarterfund) &&
+        Objects.equals(this.fourthquarterfund, workingfundyear.fourthquarterfund) &&
+        Objects.equals(this.yearfund, workingfundyear.yearfund);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, calendarYear, firstQuarterFund, secondQuarterFund, thirdQuarterFund, fourthQuarterFund, yearFund);
+    return Objects.hash(displayname, id, classid, objversion, parentId, calendaryear, firstquarterfund, secondquarterfund, thirdquarterfund, fourthquarterfund, yearfund);
   }
 
   @Override
@@ -255,17 +300,17 @@ public class Workingfundyear   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Workingfundyear {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    calendarYear: ").append(toIndentedString(calendarYear)).append("\n");
-    sb.append("    firstQuarterFund: ").append(toIndentedString(firstQuarterFund)).append("\n");
-    sb.append("    secondQuarterFund: ").append(toIndentedString(secondQuarterFund)).append("\n");
-    sb.append("    thirdQuarterFund: ").append(toIndentedString(thirdQuarterFund)).append("\n");
-    sb.append("    fourthQuarterFund: ").append(toIndentedString(fourthQuarterFund)).append("\n");
-    sb.append("    yearFund: ").append(toIndentedString(yearFund)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    calendaryear: ").append(toIndentedString(calendaryear)).append("\n");
+    sb.append("    firstquarterfund: ").append(toIndentedString(firstquarterfund)).append("\n");
+    sb.append("    secondquarterfund: ").append(toIndentedString(secondquarterfund)).append("\n");
+    sb.append("    thirdquarterfund: ").append(toIndentedString(thirdquarterfund)).append("\n");
+    sb.append("    fourthquarterfund: ").append(toIndentedString(fourthquarterfund)).append("\n");
+    sb.append("    yearfund: ").append(toIndentedString(yearfund)).append("\n");
     sb.append("}");
     return sb.toString();
   }

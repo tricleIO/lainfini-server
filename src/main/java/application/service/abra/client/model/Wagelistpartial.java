@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,2390 +37,2840 @@ import java.util.Objects;
 /**
  * Wagelistpartial
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wagelistpartial   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("CalcCharts")
-  private List<Calcwlistpartial> calcCharts = new ArrayList<Calcwlistpartial>();
+  @SerializedName("calccharts")
+  private List<Calcwlistpartial> calccharts = new ArrayList<Calcwlistpartial>();
 
-  @SerializedName("IsComputed")
-  private Boolean isComputed = null;
+  @SerializedName("iscomputed")
+  private Boolean iscomputed = null;
 
-  @SerializedName("WagePeriod_ID")
-  private String wagePeriodID = null;
+  @SerializedName("wageperiod_id")
+  private String wageperiodId = null;
 
-  @SerializedName("WorkingRelation_ID")
-  private String workingRelationID = null;
+  @SerializedName("workingrelation_id")
+  private String workingrelationId = null;
 
-  @SerializedName("Employee_ID")
-  private String employeeID = null;
+  @SerializedName("employee_id")
+  private String employeeId = null;
 
-  @SerializedName("WageOperations")
-  private List<Wageoperation> wageOperations = new ArrayList<Wageoperation>();
+  @SerializedName("wageoperations")
+  private List<Wageoperation> wageoperations = new ArrayList<Wageoperation>();
 
-  @SerializedName("AdditionalCharges")
-  private List<Additionalcharge> additionalCharges = new ArrayList<Additionalcharge>();
+  @SerializedName("additionalcharges")
+  private List<Additionalcharge> additionalcharges = new ArrayList<Additionalcharge>();
 
-  @SerializedName("WageCompensations")
-  private List<Wagecompensation> wageCompensations = new ArrayList<Wagecompensation>();
+  @SerializedName("wagecompensations")
+  private List<Wagecompensation> wagecompensations = new ArrayList<Wagecompensation>();
 
-  @SerializedName("TotalAbsence")
-  private Double totalAbsence = null;
+  @SerializedName("totalabsence")
+  private Double totalabsence = null;
 
-  @SerializedName("MonthFund")
-  private Double monthFund = null;
+  @SerializedName("monthfund")
+  private Double monthfund = null;
 
-  @SerializedName("WorkingFund")
-  private Double workingFund = null;
+  @SerializedName("workingfund")
+  private Double workingfund = null;
 
-  @SerializedName("WageForUnit")
-  private Double wageForUnit = null;
+  @SerializedName("wageforunit")
+  private Double wageforunit = null;
 
-  @SerializedName("TotalWorkTime")
-  private Double totalWorkTime = null;
+  @SerializedName("totalworktime")
+  private Double totalworktime = null;
 
-  @SerializedName("AverageWage")
-  private Double averageWage = null;
+  @SerializedName("averagewage")
+  private Double averagewage = null;
 
-  @SerializedName("HolidayTotal")
-  private Double holidayTotal = null;
+  @SerializedName("holidaytotal")
+  private Double holidaytotal = null;
 
-  @SerializedName("HolidayDrawDays")
-  private Double holidayDrawDays = null;
+  @SerializedName("holidaydrawdays")
+  private Double holidaydrawdays = null;
 
-  @SerializedName("PaidHoliday")
-  private Double paidHoliday = null;
+  @SerializedName("paidholiday")
+  private Double paidholiday = null;
 
-  @SerializedName("HolidayType_ID")
-  private String holidayTypeID = null;
+  @SerializedName("holidaytype_id")
+  private String holidaytypeId = null;
 
-  @SerializedName("GrossWageTotal")
-  private Double grossWageTotal = null;
+  @SerializedName("grosswagetotal")
+  private Double grosswagetotal = null;
 
-  @SerializedName("SickBenefitNumerator")
-  private Double sickBenefitNumerator = null;
+  @SerializedName("sickbenefitnumerator")
+  private Double sickbenefitnumerator = null;
 
-  @SerializedName("SickBenefitDenominator")
-  private Double sickBenefitDenominator = null;
+  @SerializedName("sickbenefitdenominator")
+  private Double sickbenefitdenominator = null;
 
-  @SerializedName("HolidayNumerator")
-  private Double holidayNumerator = null;
+  @SerializedName("holidaynumerator")
+  private Double holidaynumerator = null;
 
-  @SerializedName("OldSixMonthsReward")
-  private Double oldSixMonthsReward = null;
+  @SerializedName("oldsixmonthsreward")
+  private Double oldsixmonthsreward = null;
 
-  @SerializedName("OldTwelveMonthsReward")
-  private Double oldTwelveMonthsReward = null;
+  @SerializedName("oldtwelvemonthsreward")
+  private Double oldtwelvemonthsreward = null;
 
-  @SerializedName("OldRewardLongTermTotal")
-  private Double oldRewardLongTermTotal = null;
+  @SerializedName("oldrewardlongtermtotal")
+  private Double oldrewardlongtermtotal = null;
 
-  @SerializedName("OldRewardPeriodLength")
-  private Integer oldRewardPeriodLength = null;
+  @SerializedName("oldrewardperiodlength")
+  private Integer oldrewardperiodlength = null;
 
-  @SerializedName("XMLImported")
-  private Boolean xMLImported = null;
+  @SerializedName("xmlimported")
+  private Boolean xmlimported = null;
 
-  @SerializedName("AfterWorkingRelation")
-  private Boolean afterWorkingRelation = null;
+  @SerializedName("afterworkingrelation")
+  private Boolean afterworkingrelation = null;
 
-  @SerializedName("CommonIsComputed")
-  private Boolean commonIsComputed = null;
+  @SerializedName("commoniscomputed")
+  private Boolean commoniscomputed = null;
 
-  @SerializedName("CommonDisplayName")
-  private String commonDisplayName = null;
+  @SerializedName("commondisplayname")
+  private String commondisplayname = null;
 
-  @SerializedName("WageListFrom")
-  private DateTime wageListFrom = null;
+  @SerializedName("wagelistfrom")
+  private DateTime wagelistfrom = null;
 
-  @SerializedName("WageListTo")
-  private DateTime wageListTo = null;
+  @SerializedName("wagelistto")
+  private DateTime wagelistto = null;
 
-  @SerializedName("WageListRealFrom")
-  private DateTime wageListRealFrom = null;
+  @SerializedName("wagelistrealfrom")
+  private DateTime wagelistrealfrom = null;
 
-  @SerializedName("CalendarDuty")
-  private Double calendarDuty = null;
+  @SerializedName("calendarduty")
+  private Double calendarduty = null;
 
-  @SerializedName("Pers_LastName")
-  private String persLastName = null;
+  @SerializedName("pers_lastname")
+  private String persLastname = null;
 
-  @SerializedName("Pers_PersonalNumber")
-  private String persPersonalNumber = null;
+  @SerializedName("pers_personalnumber")
+  private String persPersonalnumber = null;
 
-  @SerializedName("Pers_NumPersonalNumber")
-  private Integer persNumPersonalNumber = null;
+  @SerializedName("pers_numpersonalnumber")
+  private Integer persNumpersonalnumber = null;
 
-  @SerializedName("MainWorkingRelation")
-  private Boolean mainWorkingRelation = null;
+  @SerializedName("mainworkingrelation")
+  private Boolean mainworkingrelation = null;
 
-  @SerializedName("WageListCommon_ID")
-  private String wageListCommonID = null;
+  @SerializedName("wagelistcommon_id")
+  private String wagelistcommonId = null;
 
-  @SerializedName("WLSickTo")
-  private DateTime wLSickTo = null;
+  @SerializedName("wlsickto")
+  private DateTime wlsickto = null;
 
-  @SerializedName("CalcAvgNetWage")
-  private Boolean calcAvgNetWage = null;
+  @SerializedName("calcavgnetwage")
+  private Boolean calcavgnetwage = null;
 
-  @SerializedName("HolidayDrawHours")
-  private Double holidayDrawHours = null;
+  @SerializedName("holidaydrawhours")
+  private Double holidaydrawhours = null;
 
-  @SerializedName("PaidHolidayHours")
-  private Double paidHolidayHours = null;
+  @SerializedName("paidholidayhours")
+  private Double paidholidayhours = null;
 
-  @SerializedName("CalculationOrder")
-  private Integer calculationOrder = null;
+  @SerializedName("calculationorder")
+  private Integer calculationorder = null;
 
-  @SerializedName("S_WorkDays")
-  private Double sWorkDays = null;
+  @SerializedName("s_workdays")
+  private Double sWorkdays = null;
 
-  @SerializedName("S_WorkDaysTotal")
-  private Double sWorkDaysTotal = null;
+  @SerializedName("s_workdaystotal")
+  private Double sWorkdaystotal = null;
 
-  @SerializedName("S_WorkHours")
-  private Double sWorkHours = null;
+  @SerializedName("s_workhours")
+  private Double sWorkhours = null;
 
-  @SerializedName("S_WorkHoursTotal")
-  private Double sWorkHoursTotal = null;
+  @SerializedName("s_workhourstotal")
+  private Double sWorkhourstotal = null;
 
-  @SerializedName("S_MixedHours")
-  private Double sMixedHours = null;
+  @SerializedName("s_mixedhours")
+  private Double sMixedhours = null;
 
-  @SerializedName("S_MixedHoursTotal")
-  private Double sMixedHoursTotal = null;
+  @SerializedName("s_mixedhourstotal")
+  private Double sMixedhourstotal = null;
 
-  @SerializedName("S_OperHoursTotal")
-  private Double sOperHoursTotal = null;
+  @SerializedName("s_operhourstotal")
+  private Double sOperhourstotal = null;
 
-  @SerializedName("S_OperWageTotal")
-  private Double sOperWageTotal = null;
+  @SerializedName("s_operwagetotal")
+  private Double sOperwagetotal = null;
 
-  @SerializedName("S_TaskWage")
-  private Double sTaskWage = null;
+  @SerializedName("s_taskwage")
+  private Double sTaskwage = null;
 
-  @SerializedName("S_TaskWageTotal")
-  private Double sTaskWageTotal = null;
+  @SerializedName("s_taskwagetotal")
+  private Double sTaskwagetotal = null;
 
-  @SerializedName("S_TimeWage")
-  private Double sTimeWage = null;
+  @SerializedName("s_timewage")
+  private Double sTimewage = null;
 
-  @SerializedName("S_TimeWageTotal")
-  private Double sTimeWageTotal = null;
+  @SerializedName("s_timewagetotal")
+  private Double sTimewagetotal = null;
 
-  @SerializedName("S_FeastHours")
-  private Double sFeastHours = null;
+  @SerializedName("s_feasthours")
+  private Double sFeasthours = null;
 
-  @SerializedName("S_FeastHoursTotal")
-  private Double sFeastHoursTotal = null;
+  @SerializedName("s_feasthourstotal")
+  private Double sFeasthourstotal = null;
 
-  @SerializedName("S_FeastCharge")
-  private Double sFeastCharge = null;
+  @SerializedName("s_feastcharge")
+  private Double sFeastcharge = null;
 
-  @SerializedName("S_FeastChargeTotal")
-  private Double sFeastChargeTotal = null;
+  @SerializedName("s_feastchargetotal")
+  private Double sFeastchargetotal = null;
 
-  @SerializedName("S_NightHours")
-  private Double sNightHours = null;
+  @SerializedName("s_nighthours")
+  private Double sNighthours = null;
 
-  @SerializedName("S_NightHoursTotal")
-  private Double sNightHoursTotal = null;
+  @SerializedName("s_nighthourstotal")
+  private Double sNighthourstotal = null;
 
-  @SerializedName("S_NightCharge")
-  private Double sNightCharge = null;
+  @SerializedName("s_nightcharge")
+  private Double sNightcharge = null;
 
-  @SerializedName("S_NightChargeTotal")
-  private Double sNightChargeTotal = null;
+  @SerializedName("s_nightchargetotal")
+  private Double sNightchargetotal = null;
 
-  @SerializedName("S_EnvHours")
-  private Double sEnvHours = null;
+  @SerializedName("s_envhours")
+  private Double sEnvhours = null;
 
-  @SerializedName("S_EnvHoursTotal")
-  private Double sEnvHoursTotal = null;
+  @SerializedName("s_envhourstotal")
+  private Double sEnvhourstotal = null;
 
-  @SerializedName("S_EnvCharge")
-  private Double sEnvCharge = null;
+  @SerializedName("s_envcharge")
+  private Double sEnvcharge = null;
 
-  @SerializedName("S_EnvChargeTotal")
-  private Double sEnvChargeTotal = null;
+  @SerializedName("s_envchargetotal")
+  private Double sEnvchargetotal = null;
 
-  @SerializedName("S_OverTime")
-  private Double sOverTime = null;
+  @SerializedName("s_overtime")
+  private Double sOvertime = null;
 
-  @SerializedName("S_OverTimeTotal")
-  private Double sOverTimeTotal = null;
+  @SerializedName("s_overtimetotal")
+  private Double sOvertimetotal = null;
 
-  @SerializedName("S_OverTimeCharge")
-  private Double sOverTimeCharge = null;
+  @SerializedName("s_overtimecharge")
+  private Double sOvertimecharge = null;
 
-  @SerializedName("S_OverTimeChargeTotal")
-  private Double sOverTimeChargeTotal = null;
+  @SerializedName("s_overtimechargetotal")
+  private Double sOvertimechargetotal = null;
 
-  @SerializedName("S_OtherCharges")
-  private Double sOtherCharges = null;
+  @SerializedName("s_othercharges")
+  private Double sOthercharges = null;
 
-  @SerializedName("S_PersonalCharge")
-  private Double sPersonalCharge = null;
+  @SerializedName("s_personalcharge")
+  private Double sPersonalcharge = null;
 
-  @SerializedName("S_PersonalChargeTotal")
-  private Double sPersonalChargeTotal = null;
+  @SerializedName("s_personalchargetotal")
+  private Double sPersonalchargetotal = null;
 
-  @SerializedName("S_ChiefCharge")
-  private Double sChiefCharge = null;
+  @SerializedName("s_chiefcharge")
+  private Double sChiefcharge = null;
 
-  @SerializedName("S_ChiefChargeTotal")
-  private Double sChiefChargeTotal = null;
+  @SerializedName("s_chiefchargetotal")
+  private Double sChiefchargetotal = null;
 
-  @SerializedName("S_SubCharge")
-  private Double sSubCharge = null;
+  @SerializedName("s_subcharge")
+  private Double sSubcharge = null;
 
-  @SerializedName("S_SubChargeTotal")
-  private Double sSubChargeTotal = null;
+  @SerializedName("s_subchargetotal")
+  private Double sSubchargetotal = null;
 
-  @SerializedName("S_WEndHours")
-  private Double sWEndHours = null;
+  @SerializedName("s_wendhours")
+  private Double sWendhours = null;
 
-  @SerializedName("S_WEndHoursTotal")
-  private Double sWEndHoursTotal = null;
+  @SerializedName("s_wendhourstotal")
+  private Double sWendhourstotal = null;
 
-  @SerializedName("S_WEndCharge")
-  private Double sWEndCharge = null;
+  @SerializedName("s_wendcharge")
+  private Double sWendcharge = null;
 
-  @SerializedName("S_WEndChargeTotal")
-  private Double sWEndChargeTotal = null;
+  @SerializedName("s_wendchargetotal")
+  private Double sWendchargetotal = null;
 
-  @SerializedName("S_PaidFeast")
-  private Double sPaidFeast = null;
+  @SerializedName("s_paidfeast")
+  private Double sPaidfeast = null;
 
-  @SerializedName("S_PaidFeastTotal")
-  private Double sPaidFeastTotal = null;
+  @SerializedName("s_paidfeasttotal")
+  private Double sPaidfeasttotal = null;
 
-  @SerializedName("S_PaidFeastCompens")
-  private Double sPaidFeastCompens = null;
+  @SerializedName("s_paidfeastcompens")
+  private Double sPaidfeastcompens = null;
 
-  @SerializedName("S_PaidFeastCompTotal")
-  private Double sPaidFeastCompTotal = null;
+  @SerializedName("s_paidfeastcomptotal")
+  private Double sPaidfeastcomptotal = null;
 
-  @SerializedName("S_PaidFree")
-  private Double sPaidFree = null;
+  @SerializedName("s_paidfree")
+  private Double sPaidfree = null;
 
-  @SerializedName("S_PaidFreeTotal")
-  private Double sPaidFreeTotal = null;
+  @SerializedName("s_paidfreetotal")
+  private Double sPaidfreetotal = null;
 
-  @SerializedName("S_PaidFreeCompens")
-  private Double sPaidFreeCompens = null;
+  @SerializedName("s_paidfreecompens")
+  private Double sPaidfreecompens = null;
 
-  @SerializedName("S_PaidFreeCompTotal")
-  private Double sPaidFreeCompTotal = null;
+  @SerializedName("s_paidfreecomptotal")
+  private Double sPaidfreecomptotal = null;
 
-  @SerializedName("S_Holiday")
+  @SerializedName("s_holiday")
   private Double sHoliday = null;
 
-  @SerializedName("S_HolidayCompens")
-  private Double sHolidayCompens = null;
+  @SerializedName("s_holidaycompens")
+  private Double sHolidaycompens = null;
 
-  @SerializedName("S_HolidayCompTotal")
-  private Double sHolidayCompTotal = null;
+  @SerializedName("s_holidaycomptotal")
+  private Double sHolidaycomptotal = null;
 
-  @SerializedName("S_PaidHolidayCompens")
-  private Double sPaidHolidayCompens = null;
+  @SerializedName("s_paidholidaycompens")
+  private Double sPaidholidaycompens = null;
 
-  @SerializedName("S_PaidHolidayCompTotal")
-  private Double sPaidHolidayCompTotal = null;
+  @SerializedName("s_paidholidaycomptotal")
+  private Double sPaidholidaycomptotal = null;
 
-  @SerializedName("S_Readiness")
+  @SerializedName("s_readiness")
   private Double sReadiness = null;
 
-  @SerializedName("S_ReadinessTotal")
-  private Double sReadinessTotal = null;
+  @SerializedName("s_readinesstotal")
+  private Double sReadinesstotal = null;
 
-  @SerializedName("S_ReadinessCompens")
-  private Double sReadinessCompens = null;
+  @SerializedName("s_readinesscompens")
+  private Double sReadinesscompens = null;
 
-  @SerializedName("S_ReadinessCompTotal")
-  private Double sReadinessCompTotal = null;
+  @SerializedName("s_readinesscomptotal")
+  private Double sReadinesscomptotal = null;
 
-  @SerializedName("S_ArmyExercise")
-  private Double sArmyExercise = null;
+  @SerializedName("s_armyexercise")
+  private Double sArmyexercise = null;
 
-  @SerializedName("S_ArmyExerciseTotal")
-  private Double sArmyExerciseTotal = null;
+  @SerializedName("s_armyexercisetotal")
+  private Double sArmyexercisetotal = null;
 
-  @SerializedName("S_ArmyDuty")
-  private Double sArmyDuty = null;
+  @SerializedName("s_armyduty")
+  private Double sArmyduty = null;
 
-  @SerializedName("S_ArmyPerCent")
-  private Double sArmyPerCent = null;
+  @SerializedName("s_armypercent")
+  private Double sArmypercent = null;
 
-  @SerializedName("S_ArmyCompensation")
-  private Double sArmyCompensation = null;
+  @SerializedName("s_armycompensation")
+  private Double sArmycompensation = null;
 
-  @SerializedName("S_ArmyCompTotal")
-  private Double sArmyCompTotal = null;
+  @SerializedName("s_armycomptotal")
+  private Double sArmycomptotal = null;
 
-  @SerializedName("S_LostWageCompens")
-  private Double sLostWageCompens = null;
+  @SerializedName("s_lostwagecompens")
+  private Double sLostwagecompens = null;
 
-  @SerializedName("S_OtherCompensations")
-  private Double sOtherCompensations = null;
+  @SerializedName("s_othercompensations")
+  private Double sOthercompensations = null;
 
-  @SerializedName("S_NaturalWage")
-  private Double sNaturalWage = null;
+  @SerializedName("s_naturalwage")
+  private Double sNaturalwage = null;
 
-  @SerializedName("S_NaturalWageTotal")
-  private Double sNaturalWageTotal = null;
+  @SerializedName("s_naturalwagetotal")
+  private Double sNaturalwagetotal = null;
 
-  @SerializedName("S_ApprenticeFee")
-  private Double sApprenticeFee = null;
+  @SerializedName("s_apprenticefee")
+  private Double sApprenticefee = null;
 
-  @SerializedName("S_ApprenticeFeeTotal")
-  private Double sApprenticeFeeTotal = null;
+  @SerializedName("s_apprenticefeetotal")
+  private Double sApprenticefeetotal = null;
 
-  @SerializedName("S_ExecutiveFee")
-  private Double sExecutiveFee = null;
+  @SerializedName("s_executivefee")
+  private Double sExecutivefee = null;
 
-  @SerializedName("S_ExecutiveFeeTotal")
-  private Double sExecutiveFeeTotal = null;
+  @SerializedName("s_executivefeetotal")
+  private Double sExecutivefeetotal = null;
 
-  @SerializedName("S_CorporateFee")
-  private Double sCorporateFee = null;
+  @SerializedName("s_corporatefee")
+  private Double sCorporatefee = null;
 
-  @SerializedName("S_CorporateFeeTotal")
-  private Double sCorporateFeeTotal = null;
+  @SerializedName("s_corporatefeetotal")
+  private Double sCorporatefeetotal = null;
 
-  @SerializedName("S_ExitClaim")
-  private Boolean sExitClaim = null;
+  @SerializedName("s_exitclaim")
+  private Boolean sExitclaim = null;
 
-  @SerializedName("S_ExitMultiple")
-  private Double sExitMultiple = null;
+  @SerializedName("s_exitmultiple")
+  private Double sExitmultiple = null;
 
-  @SerializedName("S_ExitDemand")
-  private Double sExitDemand = null;
+  @SerializedName("s_exitdemand")
+  private Double sExitdemand = null;
 
-  @SerializedName("S_ExitCompensation")
-  private Double sExitCompensation = null;
+  @SerializedName("s_exitcompensation")
+  private Double sExitcompensation = null;
 
-  @SerializedName("S_ExitCompTotal")
-  private Double sExitCompTotal = null;
+  @SerializedName("s_exitcomptotal")
+  private Double sExitcomptotal = null;
 
-  @SerializedName("S_ExitInsuranceBase")
-  private Double sExitInsuranceBase = null;
+  @SerializedName("s_exitinsurancebase")
+  private Double sExitinsurancebase = null;
 
-  @SerializedName("S_ExitFee")
-  private Double sExitFee = null;
+  @SerializedName("s_exitfee")
+  private Double sExitfee = null;
 
-  @SerializedName("S_Bonus")
+  @SerializedName("s_bonus")
   private Double sBonus = null;
 
-  @SerializedName("S_BonusTotal")
-  private Double sBonusTotal = null;
+  @SerializedName("s_bonustotal")
+  private Double sBonustotal = null;
 
-  @SerializedName("S_Reward")
+  @SerializedName("s_reward")
   private Double sReward = null;
 
-  @SerializedName("S_RewardTotal")
-  private Double sRewardTotal = null;
+  @SerializedName("s_rewardtotal")
+  private Double sRewardtotal = null;
 
-  @SerializedName("S_RewardLongTerm")
-  private Double sRewardLongTerm = null;
+  @SerializedName("s_rewardlongterm")
+  private Double sRewardlongterm = null;
 
-  @SerializedName("S_RewardLongTermTotal")
-  private Double sRewardLongTermTotal = null;
+  @SerializedName("s_rewardlongtermtotal")
+  private Double sRewardlongtermtotal = null;
 
-  @SerializedName("S_RewardPeriodLength")
-  private Integer sRewardPeriodLength = null;
+  @SerializedName("s_rewardperiodlength")
+  private Integer sRewardperiodlength = null;
 
-  @SerializedName("S_Thirteen")
+  @SerializedName("s_thirteen")
   private Double sThirteen = null;
 
-  @SerializedName("S_ThirteenTotal")
-  private Double sThirteenTotal = null;
+  @SerializedName("s_thirteentotal")
+  private Double sThirteentotal = null;
 
-  @SerializedName("S_Fourteen")
+  @SerializedName("s_fourteen")
   private Double sFourteen = null;
 
-  @SerializedName("S_FourteenTotal")
-  private Double sFourteenTotal = null;
+  @SerializedName("s_fourteentotal")
+  private Double sFourteentotal = null;
 
-  @SerializedName("S_UnpaidFreeCal")
-  private Double sUnpaidFreeCal = null;
+  @SerializedName("s_unpaidfreecal")
+  private Double sUnpaidfreecal = null;
 
-  @SerializedName("S_UnpaidFreeCalTotal")
-  private Double sUnpaidFreeCalTotal = null;
+  @SerializedName("s_unpaidfreecaltotal")
+  private Double sUnpaidfreecaltotal = null;
 
-  @SerializedName("S_UnpaidFreeWork")
-  private Double sUnpaidFreeWork = null;
+  @SerializedName("s_unpaidfreework")
+  private Double sUnpaidfreework = null;
 
-  @SerializedName("S_UnpaidFreeWorkTotal")
-  private Double sUnpaidFreeWorkTotal = null;
+  @SerializedName("s_unpaidfreeworktotal")
+  private Double sUnpaidfreeworktotal = null;
 
-  @SerializedName("S_AbsenceCal")
-  private Double sAbsenceCal = null;
+  @SerializedName("s_absencecal")
+  private Double sAbsencecal = null;
 
-  @SerializedName("S_AbsenceCalTotal")
-  private Double sAbsenceCalTotal = null;
+  @SerializedName("s_absencecaltotal")
+  private Double sAbsencecaltotal = null;
 
-  @SerializedName("S_AbsenceWork")
-  private Double sAbsenceWork = null;
+  @SerializedName("s_absencework")
+  private Double sAbsencework = null;
 
-  @SerializedName("S_AbsenceWorkTotal")
-  private Double sAbsenceWorkTotal = null;
+  @SerializedName("s_absenceworktotal")
+  private Double sAbsenceworktotal = null;
 
-  @SerializedName("S_GrossWage")
-  private Double sGrossWage = null;
+  @SerializedName("s_grosswage")
+  private Double sGrosswage = null;
 
-  @SerializedName("S_BaseWage")
-  private Double sBaseWage = null;
+  @SerializedName("s_basewage")
+  private Double sBasewage = null;
 
-  @SerializedName("S_ChargesAndCompens")
-  private Double sChargesAndCompens = null;
+  @SerializedName("s_chargesandcompens")
+  private Double sChargesandcompens = null;
 
-  @SerializedName("S_OtherPersExp")
-  private Double sOtherPersExp = null;
+  @SerializedName("s_otherpersexp")
+  private Double sOtherpersexp = null;
 
-  @SerializedName("S_MinWageCoef")
-  private Double sMinWageCoef = null;
+  @SerializedName("s_minwagecoef")
+  private Double sMinwagecoef = null;
 
-  @SerializedName("S_MinWage")
-  private Double sMinWage = null;
+  @SerializedName("s_minwage")
+  private Double sMinwage = null;
 
-  @SerializedName("S_MinWageCorrect")
-  private Double sMinWageCorrect = null;
+  @SerializedName("s_minwagecorrect")
+  private Double sMinwagecorrect = null;
 
-  @SerializedName("S_SurCharge")
-  private Double sSurCharge = null;
+  @SerializedName("s_surcharge")
+  private Double sSurcharge = null;
 
-  @SerializedName("S_SurChargeTotal")
-  private Double sSurChargeTotal = null;
+  @SerializedName("s_surchargetotal")
+  private Double sSurchargetotal = null;
 
-  @SerializedName("S_WorkHoursOper")
-  private Double sWorkHoursOper = null;
+  @SerializedName("s_workhoursoper")
+  private Double sWorkhoursoper = null;
 
-  @SerializedName("S_WorkDaysOper")
-  private Double sWorkDaysOper = null;
+  @SerializedName("s_workdaysoper")
+  private Double sWorkdaysoper = null;
 
-  @SerializedName("S_TaskWageOper")
-  private Double sTaskWageOper = null;
+  @SerializedName("s_taskwageoper")
+  private Double sTaskwageoper = null;
 
-  @SerializedName("S_OperDaysTotal")
-  private Double sOperDaysTotal = null;
+  @SerializedName("s_operdaystotal")
+  private Double sOperdaystotal = null;
 
-  @SerializedName("S_FeastHoursOper")
-  private Double sFeastHoursOper = null;
+  @SerializedName("s_feasthoursoper")
+  private Double sFeasthoursoper = null;
 
-  @SerializedName("S_NightHoursOper")
-  private Double sNightHoursOper = null;
+  @SerializedName("s_nighthoursoper")
+  private Double sNighthoursoper = null;
 
-  @SerializedName("S_EnvHoursOper")
-  private Double sEnvHoursOper = null;
+  @SerializedName("s_envhoursoper")
+  private Double sEnvhoursoper = null;
 
-  @SerializedName("S_BonusOper")
-  private Double sBonusOper = null;
+  @SerializedName("s_bonusoper")
+  private Double sBonusoper = null;
 
-  @SerializedName("S_RewardOper")
-  private Double sRewardOper = null;
+  @SerializedName("s_rewardoper")
+  private Double sRewardoper = null;
 
-  @SerializedName("S_RewardLongTermOper")
-  private Double sRewardLongTermOper = null;
+  @SerializedName("s_rewardlongtermoper")
+  private Double sRewardlongtermoper = null;
 
-  @SerializedName("S_ThirteenOper")
-  private Double sThirteenOper = null;
+  @SerializedName("s_thirteenoper")
+  private Double sThirteenoper = null;
 
-  @SerializedName("S_FourteenOper")
-  private Double sFourteenOper = null;
+  @SerializedName("s_fourteenoper")
+  private Double sFourteenoper = null;
 
-  @SerializedName("S_PersonalChargeOper")
-  private Double sPersonalChargeOper = null;
+  @SerializedName("s_personalchargeoper")
+  private Double sPersonalchargeoper = null;
 
-  @SerializedName("S_ChiefChargeOper")
-  private Double sChiefChargeOper = null;
+  @SerializedName("s_chiefchargeoper")
+  private Double sChiefchargeoper = null;
 
-  @SerializedName("S_SubChargeOper")
-  private Double sSubChargeOper = null;
+  @SerializedName("s_subchargeoper")
+  private Double sSubchargeoper = null;
 
-  @SerializedName("S_WEndHoursOper")
-  private Double sWEndHoursOper = null;
+  @SerializedName("s_wendhoursoper")
+  private Double sWendhoursoper = null;
 
-  @SerializedName("S_PaidFeastOper")
-  private Double sPaidFeastOper = null;
+  @SerializedName("s_paidfeastoper")
+  private Double sPaidfeastoper = null;
 
-  @SerializedName("S_PaidFreeOper")
-  private Double sPaidFreeOper = null;
+  @SerializedName("s_paidfreeoper")
+  private Double sPaidfreeoper = null;
 
-  @SerializedName("S_HolidayOper")
-  private Double sHolidayOper = null;
+  @SerializedName("s_holidayoper")
+  private Double sHolidayoper = null;
 
-  @SerializedName("S_ReadinessOper")
-  private Double sReadinessOper = null;
+  @SerializedName("s_readinessoper")
+  private Double sReadinessoper = null;
 
-  @SerializedName("S_ExitCompOper")
-  private Double sExitCompOper = null;
+  @SerializedName("s_exitcompoper")
+  private Double sExitcompoper = null;
 
-  @SerializedName("S_UnpaidFreeCalOper")
-  private Double sUnpaidFreeCalOper = null;
+  @SerializedName("s_unpaidfreecaloper")
+  private Double sUnpaidfreecaloper = null;
 
-  @SerializedName("S_UnpaidFreeWorkOper")
-  private Double sUnpaidFreeWorkOper = null;
+  @SerializedName("s_unpaidfreeworkoper")
+  private Double sUnpaidfreeworkoper = null;
 
-  @SerializedName("S_AbsenceCalOper")
-  private Double sAbsenceCalOper = null;
+  @SerializedName("s_absencecaloper")
+  private Double sAbsencecaloper = null;
 
-  @SerializedName("S_AbsenceWorkOper")
-  private Double sAbsenceWorkOper = null;
+  @SerializedName("s_absenceworkoper")
+  private Double sAbsenceworkoper = null;
 
-  @SerializedName("S_ApprenticeFeeOper")
-  private Double sApprenticeFeeOper = null;
+  @SerializedName("s_apprenticefeeoper")
+  private Double sApprenticefeeoper = null;
 
-  @SerializedName("S_ExecutiveFeeOper")
-  private Double sExecutiveFeeOper = null;
+  @SerializedName("s_executivefeeoper")
+  private Double sExecutivefeeoper = null;
 
-  @SerializedName("S_CorporateFeeOper")
-  private Double sCorporateFeeOper = null;
+  @SerializedName("s_corporatefeeoper")
+  private Double sCorporatefeeoper = null;
 
-  @SerializedName("S_SickAbsences")
-  private Double sSickAbsences = null;
+  @SerializedName("s_sickabsences")
+  private Double sSickabsences = null;
 
-  @SerializedName("S_SickBenefits")
-  private Double sSickBenefits = null;
+  @SerializedName("s_sickbenefits")
+  private Double sSickbenefits = null;
 
-  @SerializedName("S_HealthInsBase")
-  private Double sHealthInsBase = null;
+  @SerializedName("s_healthinsbase")
+  private Double sHealthinsbase = null;
 
-  @SerializedName("S_HealthInsBaseTotal")
-  private Double sHealthInsBaseTotal = null;
+  @SerializedName("s_healthinsbasetotal")
+  private Double sHealthinsbasetotal = null;
 
-  @SerializedName("S_HealthInsBaseCorrect")
-  private Double sHealthInsBaseCorrect = null;
+  @SerializedName("s_healthinsbasecorrect")
+  private Double sHealthinsbasecorrect = null;
 
-  @SerializedName("S_HealthIns")
-  private Double sHealthIns = null;
+  @SerializedName("s_healthins")
+  private Double sHealthins = null;
 
-  @SerializedName("S_HealthInsEmployee")
-  private Double sHealthInsEmployee = null;
+  @SerializedName("s_healthinsemployee")
+  private Double sHealthinsemployee = null;
 
-  @SerializedName("S_HealthInsCompany")
-  private Double sHealthInsCompany = null;
+  @SerializedName("s_healthinscompany")
+  private Double sHealthinscompany = null;
 
-  @SerializedName("S_SocialInsBase")
-  private Double sSocialInsBase = null;
+  @SerializedName("s_socialinsbase")
+  private Double sSocialinsbase = null;
 
-  @SerializedName("S_SocialInsBaseTotal")
-  private Double sSocialInsBaseTotal = null;
+  @SerializedName("s_socialinsbasetotal")
+  private Double sSocialinsbasetotal = null;
 
-  @SerializedName("S_SocialInsBaseCorrect")
-  private Double sSocialInsBaseCorrect = null;
+  @SerializedName("s_socialinsbasecorrect")
+  private Double sSocialinsbasecorrect = null;
 
-  @SerializedName("S_SocialIns")
-  private Double sSocialIns = null;
+  @SerializedName("s_socialins")
+  private Double sSocialins = null;
 
-  @SerializedName("S_SocialInsEmployee")
-  private Double sSocialInsEmployee = null;
+  @SerializedName("s_socialinsemployee")
+  private Double sSocialinsemployee = null;
 
-  @SerializedName("S_OtherCompInsBase")
-  private Double sOtherCompInsBase = null;
+  @SerializedName("s_othercompinsbase")
+  private Double sOthercompinsbase = null;
 
-  @SerializedName("S_HealthInsUnpaidFreeDock")
-  private Boolean sHealthInsUnpaidFreeDock = null;
+  @SerializedName("s_healthinsunpaidfreedock")
+  private Boolean sHealthinsunpaidfreedock = null;
 
-  @SerializedName("S_Category2")
+  @SerializedName("s_category2")
   private Double sCategory2 = null;
 
-  @SerializedName("S_Category2Oper")
-  private Double sCategory2Oper = null;
+  @SerializedName("s_category2oper")
+  private Double sCategory2oper = null;
 
-  @SerializedName("S_Category2Total")
-  private Double sCategory2Total = null;
+  @SerializedName("s_category2total")
+  private Double sCategory2total = null;
 
-  @SerializedName("S_Category3")
+  @SerializedName("s_category3")
   private Double sCategory3 = null;
 
-  @SerializedName("S_Category3Oper")
-  private Double sCategory3Oper = null;
+  @SerializedName("s_category3oper")
+  private Double sCategory3oper = null;
 
-  @SerializedName("S_Category3Total")
-  private Double sCategory3Total = null;
+  @SerializedName("s_category3total")
+  private Double sCategory3total = null;
 
-  @SerializedName("S_Category4")
+  @SerializedName("s_category4")
   private Double sCategory4 = null;
 
-  @SerializedName("S_Category4Oper")
-  private Double sCategory4Oper = null;
+  @SerializedName("s_category4oper")
+  private Double sCategory4oper = null;
 
-  @SerializedName("S_Category4Total")
-  private Double sCategory4Total = null;
+  @SerializedName("s_category4total")
+  private Double sCategory4total = null;
 
-  @SerializedName("S_POL_Wage")
-  private Double sPOLWage = null;
+  @SerializedName("s_pol_wage")
+  private Double sPolWage = null;
 
-  @SerializedName("S_TaxableIncome")
-  private Double sTaxableIncome = null;
+  @SerializedName("s_taxableincome")
+  private Double sTaxableincome = null;
 
-  @SerializedName("S_TravelComp")
-  private Double sTravelComp = null;
+  @SerializedName("s_travelcomp")
+  private Double sTravelcomp = null;
 
-  @SerializedName("S_TravelCompOper")
-  private Double sTravelCompOper = null;
+  @SerializedName("s_travelcompoper")
+  private Double sTravelcompoper = null;
 
-  @SerializedName("S_TravelCompTotal")
-  private Double sTravelCompTotal = null;
+  @SerializedName("s_travelcomptotal")
+  private Double sTravelcomptotal = null;
 
-  @SerializedName("S_MealTicketDemand")
-  private Integer sMealTicketDemand = null;
+  @SerializedName("s_mealticketdemand")
+  private Integer sMealticketdemand = null;
 
-  @SerializedName("S_MealTicketDemandTotal")
-  private Integer sMealTicketDemandTotal = null;
+  @SerializedName("s_mealticketdemandtotal")
+  private Integer sMealticketdemandtotal = null;
 
-  @SerializedName("S_MealTicketCount")
-  private Integer sMealTicketCount = null;
+  @SerializedName("s_mealticketcount")
+  private Integer sMealticketcount = null;
 
-  @SerializedName("S_MealTicketFullCount")
-  private Integer sMealTicketFullCount = null;
+  @SerializedName("s_mealticketfullcount")
+  private Integer sMealticketfullcount = null;
 
-  @SerializedName("S_MealTicketDisCount")
-  private Integer sMealTicketDisCount = null;
+  @SerializedName("s_mealticketdiscount")
+  private Integer sMealticketdiscount = null;
 
-  @SerializedName("S_POL_Dock")
-  private Double sPOLDock = null;
+  @SerializedName("s_pol_dock")
+  private Double sPolDock = null;
 
-  @SerializedName("S_POL_DockOper")
-  private Double sPOLDockOper = null;
+  @SerializedName("s_pol_dockoper")
+  private Double sPolDockoper = null;
 
-  @SerializedName("S_POL_DockTotal")
-  private Double sPOLDockTotal = null;
+  @SerializedName("s_pol_docktotal")
+  private Double sPolDocktotal = null;
 
-  @SerializedName("S_Exposure")
+  @SerializedName("s_exposure")
   private Double sExposure = null;
 
-  @SerializedName("S_ExposureTotal")
-  private Double sExposureTotal = null;
+  @SerializedName("s_exposuretotal")
+  private Double sExposuretotal = null;
 
-  @SerializedName("S_ExcludedDays")
-  private Integer sExcludedDays = null;
+  @SerializedName("s_excludeddays")
+  private Integer sExcludeddays = null;
 
-  @SerializedName("S_ExcludedDaysCorrect")
-  private Integer sExcludedDaysCorrect = null;
+  @SerializedName("s_excludeddayscorrect")
+  private Integer sExcludeddayscorrect = null;
 
-  @SerializedName("S_ExcludedDaysOutSide")
-  private Integer sExcludedDaysOutSide = null;
+  @SerializedName("s_excludeddaysoutside")
+  private Integer sExcludeddaysoutside = null;
 
-  @SerializedName("S_ExcusedAbsence")
-  private Double sExcusedAbsence = null;
+  @SerializedName("s_excusedabsence")
+  private Double sExcusedabsence = null;
 
-  @SerializedName("S_OverTimeAbsence")
-  private Double sOverTimeAbsence = null;
+  @SerializedName("s_overtimeabsence")
+  private Double sOvertimeabsence = null;
 
-  @SerializedName("S_AbsenceWorkHours")
-  private Double sAbsenceWorkHours = null;
+  @SerializedName("s_absenceworkhours")
+  private Double sAbsenceworkhours = null;
 
-  @SerializedName("S_FlatTravelComp")
-  private Double sFlatTravelComp = null;
+  @SerializedName("s_flattravelcomp")
+  private Double sFlattravelcomp = null;
 
-  @SerializedName("S_WageDeposit")
-  private Double sWageDeposit = null;
+  @SerializedName("s_wagedeposit")
+  private Double sWagedeposit = null;
 
-  @SerializedName("S_SocialInsMinimum")
-  private Double sSocialInsMinimum = null;
+  @SerializedName("s_socialinsminimum")
+  private Double sSocialinsminimum = null;
 
-  @SerializedName("S_IsSocialInsurance")
-  private Integer sIsSocialInsurance = null;
+  @SerializedName("s_issocialinsurance")
+  private Integer sIssocialinsurance = null;
 
-  @SerializedName("S_Phone_Dock")
+  @SerializedName("s_phone_dock")
   private Double sPhoneDock = null;
 
-  @SerializedName("S_Phone_DockTotal")
-  private Double sPhoneDockTotal = null;
+  @SerializedName("s_phone_docktotal")
+  private Double sPhoneDocktotal = null;
 
-  @SerializedName("S_RewardSixMonth")
-  private Double sRewardSixMonth = null;
+  @SerializedName("s_rewardsixmonth")
+  private Double sRewardsixmonth = null;
 
-  @SerializedName("S_RewardSixMonthTotal")
-  private Double sRewardSixMonthTotal = null;
+  @SerializedName("s_rewardsixmonthtotal")
+  private Double sRewardsixmonthtotal = null;
 
-  @SerializedName("S_RewardTwelveMonth")
-  private Double sRewardTwelveMonth = null;
+  @SerializedName("s_rewardtwelvemonth")
+  private Double sRewardtwelvemonth = null;
 
-  @SerializedName("S_RewardTwelveMonthTotal")
-  private Double sRewardTwelveMonthTotal = null;
+  @SerializedName("s_rewardtwelvemonthtotal")
+  private Double sRewardtwelvemonthtotal = null;
 
-  @SerializedName("S_ArmyExerciseCal")
-  private Double sArmyExerciseCal = null;
+  @SerializedName("s_armyexercisecal")
+  private Double sArmyexercisecal = null;
 
-  @SerializedName("S_ArmyExerciseCalTotal")
-  private Double sArmyExerciseCalTotal = null;
+  @SerializedName("s_armyexercisecaltotal")
+  private Double sArmyexercisecaltotal = null;
 
-  @SerializedName("S_SubtractedDays")
-  private Double sSubtractedDays = null;
+  @SerializedName("s_subtracteddays")
+  private Double sSubtracteddays = null;
 
-  @SerializedName("S_SubtractedDaysTotal")
-  private Double sSubtractedDaysTotal = null;
+  @SerializedName("s_subtracteddaystotal")
+  private Double sSubtracteddaystotal = null;
 
-  @SerializedName("S_RewardSixMonthOper")
-  private Double sRewardSixMonthOper = null;
+  @SerializedName("s_rewardsixmonthoper")
+  private Double sRewardsixmonthoper = null;
 
-  @SerializedName("S_RewardTwelveMonthOper")
-  private Double sRewardTwelveMonthOper = null;
+  @SerializedName("s_rewardtwelvemonthoper")
+  private Double sRewardtwelvemonthoper = null;
 
-  @SerializedName("S_ExcludedDaysCorrection")
-  private Double sExcludedDaysCorrection = null;
+  @SerializedName("s_excludeddayscorrection")
+  private Double sExcludeddayscorrection = null;
 
-  @SerializedName("S_SmallOrBigCompany")
-  private Integer sSmallOrBigCompany = null;
+  @SerializedName("s_smallorbigcompany")
+  private Integer sSmallorbigcompany = null;
 
-  @SerializedName("S_SickAbsencesOutOfRelation")
-  private Double sSickAbsencesOutOfRelation = null;
+  @SerializedName("s_sickabsencesoutofrelation")
+  private Double sSickabsencesoutofrelation = null;
 
-  @SerializedName("S_ExcludedDaysAfterRetAge")
-  private Double sExcludedDaysAfterRetAge = null;
+  @SerializedName("s_excludeddaysafterretage")
+  private Double sExcludeddaysafterretage = null;
 
-  @SerializedName("S_ExcludedDaysAfterRetAgeCorr")
-  private Double sExcludedDaysAfterRetAgeCorr = null;
+  @SerializedName("s_excludeddaysafterretagecorr")
+  private Double sExcludeddaysafterretagecorr = null;
 
-  @SerializedName("S_WorkingFundForOvertime")
-  private Double sWorkingFundForOvertime = null;
+  @SerializedName("s_workingfundforovertime")
+  private Double sWorkingfundforovertime = null;
 
-  @SerializedName("S_OverpaidHoliday")
-  private Double sOverpaidHoliday = null;
+  @SerializedName("s_overpaidholiday")
+  private Double sOverpaidholiday = null;
 
-  @SerializedName("S_AverageCorrect")
-  private Double sAverageCorrect = null;
+  @SerializedName("s_averagecorrect")
+  private Double sAveragecorrect = null;
 
-  @SerializedName("S_GrossWageForAvgNetWage")
-  private Double sGrossWageForAvgNetWage = null;
+  @SerializedName("s_grosswageforavgnetwage")
+  private Double sGrosswageforavgnetwage = null;
 
-  @SerializedName("S_SocInsBaseLowRate")
-  private Double sSocInsBaseLowRate = null;
+  @SerializedName("s_socinsbaselowrate")
+  private Double sSocinsbaselowrate = null;
 
-  @SerializedName("S_SickCompBoost")
-  private Double sSickCompBoost = null;
+  @SerializedName("s_sickcompboost")
+  private Double sSickcompboost = null;
 
-  @SerializedName("S_NormalDuty")
-  private Double sNormalDuty = null;
+  @SerializedName("s_normalduty")
+  private Double sNormalduty = null;
 
-  @SerializedName("S_SurChargeGuaranteed")
-  private Double sSurChargeGuaranteed = null;
+  @SerializedName("s_surchargeguaranteed")
+  private Double sSurchargeguaranteed = null;
 
-  @SerializedName("S_GuaranteedWage")
-  private Double sGuaranteedWage = null;
+  @SerializedName("s_guaranteedwage")
+  private Double sGuaranteedwage = null;
 
-  @SerializedName("S_SurChargeGuaranteedTotal")
-  private Double sSurChargeGuaranteedTotal = null;
+  @SerializedName("s_surchargeguaranteedtotal")
+  private Double sSurchargeguaranteedtotal = null;
 
-  @SerializedName("S_UnresolvedOvertimeTotal")
-  private Double sUnresolvedOvertimeTotal = null;
+  @SerializedName("s_unresolvedovertimetotal")
+  private Double sUnresolvedovertimetotal = null;
 
-  @SerializedName("S_OvertimeSubstFree")
-  private Double sOvertimeSubstFree = null;
+  @SerializedName("s_overtimesubstfree")
+  private Double sOvertimesubstfree = null;
 
-  @SerializedName("S_UnresolvedOvertime")
-  private Double sUnresolvedOvertime = null;
+  @SerializedName("s_unresolvedovertime")
+  private Double sUnresolvedovertime = null;
 
-  @SerializedName("S_FeastMode")
-  private Integer sFeastMode = null;
+  @SerializedName("s_feastmode")
+  private Integer sFeastmode = null;
 
-  @SerializedName("S_OvertimeSubstFreeTotal")
-  private Double sOvertimeSubstFreeTotal = null;
+  @SerializedName("s_overtimesubstfreetotal")
+  private Double sOvertimesubstfreetotal = null;
 
-  @SerializedName("S_OldOvertimeHours")
-  private Double sOldOvertimeHours = null;
+  @SerializedName("s_oldovertimehours")
+  private Double sOldovertimehours = null;
 
-  @SerializedName("S_OldOvertimeHoursTotal")
-  private Double sOldOvertimeHoursTotal = null;
+  @SerializedName("s_oldovertimehourstotal")
+  private Double sOldovertimehourstotal = null;
 
-  @SerializedName("S_DisasterCompTime")
-  private Double sDisasterCompTime = null;
+  @SerializedName("s_disastercomptime")
+  private Double sDisastercomptime = null;
 
-  @SerializedName("S_MalfunctionCompTime")
-  private Double sMalfunctionCompTime = null;
+  @SerializedName("s_malfunctioncomptime")
+  private Double sMalfunctioncomptime = null;
 
-  @SerializedName("S_OtherObstructionCompTime")
-  private Double sOtherObstructionCompTime = null;
+  @SerializedName("s_otherobstructioncomptime")
+  private Double sOtherobstructioncomptime = null;
 
-  @SerializedName("S_DisasterComp")
-  private Double sDisasterComp = null;
+  @SerializedName("s_disastercomp")
+  private Double sDisastercomp = null;
 
-  @SerializedName("S_MalfunctionComp")
-  private Double sMalfunctionComp = null;
+  @SerializedName("s_malfunctioncomp")
+  private Double sMalfunctioncomp = null;
 
-  @SerializedName("S_OtherObstructionComp")
-  private Double sOtherObstructionComp = null;
+  @SerializedName("s_otherobstructioncomp")
+  private Double sOtherobstructioncomp = null;
 
-  @SerializedName("S_DisasterCompTotal")
-  private Double sDisasterCompTotal = null;
+  @SerializedName("s_disastercomptotal")
+  private Double sDisastercomptotal = null;
 
-  @SerializedName("S_MalfuncCompTotal")
-  private Double sMalfuncCompTotal = null;
+  @SerializedName("s_malfunccomptotal")
+  private Double sMalfunccomptotal = null;
 
-  @SerializedName("S_OtherObstCompTotal")
-  private Double sOtherObstCompTotal = null;
+  @SerializedName("s_otherobstcomptotal")
+  private Double sOtherobstcomptotal = null;
 
-  @SerializedName("S_RewardJubilee")
-  private Double sRewardJubilee = null;
+  @SerializedName("s_rewardjubilee")
+  private Double sRewardjubilee = null;
 
-  @SerializedName("S_GuaranteedWageCorrect")
-  private Double sGuaranteedWageCorrect = null;
+  @SerializedName("s_guaranteedwagecorrect")
+  private Double sGuaranteedwagecorrect = null;
 
-  @SerializedName("S_FeastHoursOutOfRelation")
-  private Double sFeastHoursOutOfRelation = null;
+  @SerializedName("s_feasthoursoutofrelation")
+  private Double sFeasthoursoutofrelation = null;
 
-  @SerializedName("S_FeastHourInAbsenceAndSickness")
-  private Double sFeastHourInAbsenceAndSickness = null;
+  @SerializedName("s_feasthourinabsenceandsickness")
+  private Double sFeasthourinabsenceandsickness = null;
 
-  @SerializedName("S_RewardJubileeAllBase")
-  private Double sRewardJubileeAllBase = null;
+  @SerializedName("s_rewardjubileeallbase")
+  private Double sRewardjubileeallbase = null;
 
-  @SerializedName("S_RewardJubileeNoneBase")
-  private Double sRewardJubileeNoneBase = null;
+  @SerializedName("s_rewardjubileenonebase")
+  private Double sRewardjubileenonebase = null;
 
-  @SerializedName("S_AvgShiftLength")
-  private Double sAvgShiftLength = null;
+  @SerializedName("s_avgshiftlength")
+  private Double sAvgshiftlength = null;
 
-  @SerializedName("S_PaidFeastHoursOper")
-  private Double sPaidFeastHoursOper = null;
+  @SerializedName("s_paidfeasthoursoper")
+  private Double sPaidfeasthoursoper = null;
 
-  @SerializedName("S_SurChargeGuarantInGrossWage")
-  private Integer sSurChargeGuarantInGrossWage = null;
+  @SerializedName("s_surchargeguarantingrosswage")
+  private Integer sSurchargeguarantingrosswage = null;
 
-  @SerializedName("S_PaidFeastHours")
-  private Double sPaidFeastHours = null;
+  @SerializedName("s_paidfeasthours")
+  private Double sPaidfeasthours = null;
 
-  @SerializedName("S_RenumerationForm")
-  private Integer sRenumerationForm = null;
+  @SerializedName("s_renumerationform")
+  private Integer sRenumerationform = null;
 
-  @SerializedName("S_HolidayHours")
-  private Double sHolidayHours = null;
+  @SerializedName("s_holidayhours")
+  private Double sHolidayhours = null;
 
-  @SerializedName("S_ExitInsBaseCorrection")
-  private Double sExitInsBaseCorrection = null;
+  @SerializedName("s_exitinsbasecorrection")
+  private Double sExitinsbasecorrection = null;
 
-  @SerializedName("S_IsHealthInsurance")
-  private Integer sIsHealthInsurance = null;
+  @SerializedName("s_ishealthinsurance")
+  private Integer sIshealthinsurance = null;
 
-  @SerializedName("S_InventionReward")
-  private Double sInventionReward = null;
+  @SerializedName("s_inventionreward")
+  private Double sInventionreward = null;
 
-  @SerializedName("S_PercentOfAvgCompTotal")
-  private Double sPercentOfAvgCompTotal = null;
+  @SerializedName("s_percentofavgcomptotal")
+  private Double sPercentofavgcomptotal = null;
 
-  @SerializedName("S_PercentOfAvgComp")
-  private Double sPercentOfAvgComp = null;
+  @SerializedName("s_percentofavgcomp")
+  private Double sPercentofavgcomp = null;
 
-  @SerializedName("S_AvgCompPercent")
-  private Double sAvgCompPercent = null;
+  @SerializedName("s_avgcomppercent")
+  private Double sAvgcomppercent = null;
 
-  @SerializedName("S_PercentOfAvgCompTime")
-  private Double sPercentOfAvgCompTime = null;
+  @SerializedName("s_percentofavgcomptime")
+  private Double sPercentofavgcomptime = null;
 
-  @SerializedName("S_HolidayDrawCheck1")
-  private Integer sHolidayDrawCheck1 = null;
+  @SerializedName("s_holidaydrawcheck1")
+  private Integer sHolidaydrawcheck1 = null;
 
-  @SerializedName("S_HolidayDrawCheck2")
-  private Integer sHolidayDrawCheck2 = null;
+  @SerializedName("s_holidaydrawcheck2")
+  private Integer sHolidaydrawcheck2 = null;
 
-  @SerializedName("S_HolidayDrawcheck3")
-  private String sHolidayDrawcheck3 = null;
+  @SerializedName("s_holidaydrawcheck3")
+  private String sHolidaydrawcheck3 = null;
 
-  @SerializedName("S_GrossWageCheck")
-  private Integer sGrossWageCheck = null;
+  @SerializedName("s_grosswagecheck")
+  private Integer sGrosswagecheck = null;
 
-  @SerializedName("S_HasSIDiscount")
-  private Integer sHasSIDiscount = null;
+  @SerializedName("s_hassidiscount")
+  private Integer sHassidiscount = null;
 
-  @SerializedName("S_HasSIDiscountEdit")
-  private Integer sHasSIDiscountEdit = null;
+  @SerializedName("s_hassidiscountedit")
+  private Integer sHassidiscountedit = null;
 
-  @SerializedName("S_LifeInsTaxBase")
-  private Double sLifeInsTaxBase = null;
+  @SerializedName("s_lifeinstaxbase")
+  private Double sLifeinstaxbase = null;
 
-  @SerializedName("S_LifeInsAmount")
-  private Double sLifeInsAmount = null;
+  @SerializedName("s_lifeinsamount")
+  private Double sLifeinsamount = null;
 
-  @SerializedName("S_RetFundTaxBase")
-  private Double sRetFundTaxBase = null;
+  @SerializedName("s_retfundtaxbase")
+  private Double sRetfundtaxbase = null;
 
-  @SerializedName("S_RetFundAmount")
-  private Double sRetFundAmount = null;
+  @SerializedName("s_retfundamount")
+  private Double sRetfundamount = null;
 
-  @SerializedName("S_AgreementIncome")
-  private Double sAgreementIncome = null;
+  @SerializedName("s_agreementincome")
+  private Double sAgreementincome = null;
 
-  @SerializedName("S_DutyCarTotal")
-  private Double sDutyCarTotal = null;
+  @SerializedName("s_dutycartotal")
+  private Double sDutycartotal = null;
 
-  @SerializedName("S_DutyCar")
-  private Double sDutyCar = null;
+  @SerializedName("s_dutycar")
+  private Double sDutycar = null;
 
-  @SerializedName("S_DisabilityPension")
-  private Integer sDisabilityPension = null;
+  @SerializedName("s_disabilitypension")
+  private Integer sDisabilitypension = null;
 
-  @SerializedName("S_PartTimeIncome")
-  private Double sPartTimeIncome = null;
+  @SerializedName("s_parttimeincome")
+  private Double sParttimeincome = null;
 
-  @SerializedName("S_NaturalWageForAvg")
-  private Double sNaturalWageForAvg = null;
+  @SerializedName("s_naturalwageforavg")
+  private Double sNaturalwageforavg = null;
 
-  @SerializedName("S_LifeInsTaxablePart")
-  private Double sLifeInsTaxablePart = null;
+  @SerializedName("s_lifeinstaxablepart")
+  private Double sLifeinstaxablepart = null;
 
-  @SerializedName("S_WorkActivityIncome")
-  private Double sWorkActivityIncome = null;
+  @SerializedName("s_workactivityincome")
+  private Double sWorkactivityincome = null;
+
+  public Wagelistpartial displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
   }
 
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Wagelistpartial docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Wagelistpartial id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Wagelistpartial periodID(String periodID) {
-    this.periodID = periodID;
+  public Wagelistpartial classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Wagelistpartial ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Wagelistpartial objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Wagelistpartial docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Wagelistpartial docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Wagelistpartial createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Wagelistpartial periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Wagelistpartial correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Wagelistpartial ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Wagelistpartial newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Wagelistpartial docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Wagelistpartial newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Wagelistpartial createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Wagelistpartial calcCharts(List<Calcwlistpartial> calcCharts) {
-    this.calcCharts = calcCharts;
-    return this;
-  }
-
-  public Wagelistpartial addCalcChartsItem(Calcwlistpartial calcChartsItem) {
-    this.calcCharts.add(calcChartsItem);
+  public Wagelistpartial correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Výpočtová schémata; kolekce BO Schéma pro ML dílčí [nepersistentní položka]
-   * @return calcCharts
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Výpočtová schémata; kolekce BO Schéma pro ML dílčí [nepersistentní položka]")
-  public List<Calcwlistpartial> getCalcCharts() {
-    return calcCharts;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCalcCharts(List<Calcwlistpartial> calcCharts) {
-    this.calcCharts = calcCharts;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Wagelistpartial isComputed(Boolean isComputed) {
-    this.isComputed = isComputed;
+  public Wagelistpartial newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Vypočteno [persistentní položka]
-   * @return isComputed
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Vypočteno [persistentní položka]")
-  public Boolean getIsComputed() {
-    return isComputed;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setIsComputed(Boolean isComputed) {
-    this.isComputed = isComputed;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Wagelistpartial wagePeriodID(String wagePeriodID) {
-    this.wagePeriodID = wagePeriodID;
+  public Wagelistpartial newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * Období; ID objektu Mzdové období [persistentní položka]
-   * @return wagePeriodID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Mzdové období [persistentní položka]")
-  public String getWagePeriodID() {
-    return wagePeriodID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setWagePeriodID(String wagePeriodID) {
-    this.wagePeriodID = wagePeriodID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Wagelistpartial workingRelationID(String workingRelationID) {
-    this.workingRelationID = workingRelationID;
+  public Wagelistpartial calccharts(List<Calcwlistpartial> calccharts) {
+    this.calccharts = calccharts;
+    return this;
+  }
+
+  public Wagelistpartial addCalcchartsItem(Calcwlistpartial calcchartsItem) {
+    this.calccharts.add(calcchartsItem);
     return this;
   }
 
    /**
-   * Pr. poměr; ID objektu Pracovní poměr [persistentní položka]
-   * @return workingRelationID
+   * výpočtová schémata; kolekce bo schéma pro ml dílčí [nepersistentní položka]
+   * @return calccharts
   **/
-  @ApiModelProperty(example = "null", value = "Pr. poměr; ID objektu Pracovní poměr [persistentní položka]")
-  public String getWorkingRelationID() {
-    return workingRelationID;
+  @ApiModelProperty(example = "null", value = "výpočtová schémata; kolekce bo schéma pro ml dílčí [nepersistentní položka]")
+  public List<Calcwlistpartial> getCalccharts() {
+    return calccharts;
   }
 
-  public void setWorkingRelationID(String workingRelationID) {
-    this.workingRelationID = workingRelationID;
+  public void setCalccharts(List<Calcwlistpartial> calccharts) {
+    this.calccharts = calccharts;
   }
 
-  public Wagelistpartial employeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public Wagelistpartial iscomputed(Boolean iscomputed) {
+    this.iscomputed = iscomputed;
     return this;
   }
 
    /**
-   * Zaměstnanec; ID objektu Zaměstnanec
-   * @return employeeID
+   * vypočteno [persistentní položka]
+   * @return iscomputed
   **/
-  @ApiModelProperty(example = "null", value = "Zaměstnanec; ID objektu Zaměstnanec")
-  public String getEmployeeID() {
-    return employeeID;
+  @ApiModelProperty(example = "null", value = "vypočteno [persistentní položka]")
+  public Boolean getIscomputed() {
+    return iscomputed;
   }
 
-  public void setEmployeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public void setIscomputed(Boolean iscomputed) {
+    this.iscomputed = iscomputed;
   }
 
-  public Wagelistpartial wageOperations(List<Wageoperation> wageOperations) {
-    this.wageOperations = wageOperations;
-    return this;
-  }
-
-  public Wagelistpartial addWageOperationsItem(Wageoperation wageOperationsItem) {
-    this.wageOperations.add(wageOperationsItem);
+  public Wagelistpartial wageperiodId(String wageperiodId) {
+    this.wageperiodId = wageperiodId;
     return this;
   }
 
    /**
-   * Výkony; kolekce BO Výkon [nepersistentní položka]
-   * @return wageOperations
+   * období; id objektu mzdové období [persistentní položka]
+   * @return wageperiodId
   **/
-  @ApiModelProperty(example = "null", value = "Výkony; kolekce BO Výkon [nepersistentní položka]")
-  public List<Wageoperation> getWageOperations() {
-    return wageOperations;
+  @ApiModelProperty(example = "null", value = "období; id objektu mzdové období [persistentní položka]")
+  public String getWageperiodId() {
+    return wageperiodId;
   }
 
-  public void setWageOperations(List<Wageoperation> wageOperations) {
-    this.wageOperations = wageOperations;
+  public void setWageperiodId(String wageperiodId) {
+    this.wageperiodId = wageperiodId;
   }
 
-  public Wagelistpartial additionalCharges(List<Additionalcharge> additionalCharges) {
-    this.additionalCharges = additionalCharges;
-    return this;
-  }
-
-  public Wagelistpartial addAdditionalChargesItem(Additionalcharge additionalChargesItem) {
-    this.additionalCharges.add(additionalChargesItem);
+  public Wagelistpartial workingrelationId(String workingrelationId) {
+    this.workingrelationId = workingrelationId;
     return this;
   }
 
    /**
-   * Příplatky; kolekce BO Příplatek [nepersistentní položka]
-   * @return additionalCharges
+   * pr. poměr; id objektu pracovní poměr [persistentní položka]
+   * @return workingrelationId
   **/
-  @ApiModelProperty(example = "null", value = "Příplatky; kolekce BO Příplatek [nepersistentní položka]")
-  public List<Additionalcharge> getAdditionalCharges() {
-    return additionalCharges;
+  @ApiModelProperty(example = "null", value = "pr. poměr; id objektu pracovní poměr [persistentní položka]")
+  public String getWorkingrelationId() {
+    return workingrelationId;
   }
 
-  public void setAdditionalCharges(List<Additionalcharge> additionalCharges) {
-    this.additionalCharges = additionalCharges;
+  public void setWorkingrelationId(String workingrelationId) {
+    this.workingrelationId = workingrelationId;
   }
 
-  public Wagelistpartial wageCompensations(List<Wagecompensation> wageCompensations) {
-    this.wageCompensations = wageCompensations;
-    return this;
-  }
-
-  public Wagelistpartial addWageCompensationsItem(Wagecompensation wageCompensationsItem) {
-    this.wageCompensations.add(wageCompensationsItem);
+  public Wagelistpartial employeeId(String employeeId) {
+    this.employeeId = employeeId;
     return this;
   }
 
    /**
-   * Náhrady; kolekce BO Náhrada mzdy [nepersistentní položka]
-   * @return wageCompensations
+   * zaměstnanec; id objektu zaměstnanec
+   * @return employeeId
   **/
-  @ApiModelProperty(example = "null", value = "Náhrady; kolekce BO Náhrada mzdy [nepersistentní položka]")
-  public List<Wagecompensation> getWageCompensations() {
-    return wageCompensations;
+  @ApiModelProperty(example = "null", value = "zaměstnanec; id objektu zaměstnanec")
+  public String getEmployeeId() {
+    return employeeId;
   }
 
-  public void setWageCompensations(List<Wagecompensation> wageCompensations) {
-    this.wageCompensations = wageCompensations;
+  public void setEmployeeId(String employeeId) {
+    this.employeeId = employeeId;
+  }
+
+  public Wagelistpartial wageoperations(List<Wageoperation> wageoperations) {
+    this.wageoperations = wageoperations;
+    return this;
+  }
+
+  public Wagelistpartial addWageoperationsItem(Wageoperation wageoperationsItem) {
+    this.wageoperations.add(wageoperationsItem);
+    return this;
   }
 
    /**
-   * Nepřítomnost [persistentní položka]
-   * @return totalAbsence
+   * výkony; kolekce bo výkon [nepersistentní položka]
+   * @return wageoperations
   **/
-  @ApiModelProperty(example = "null", value = "Nepřítomnost [persistentní položka]")
-  public Double getTotalAbsence() {
-    return totalAbsence;
+  @ApiModelProperty(example = "null", value = "výkony; kolekce bo výkon [nepersistentní položka]")
+  public List<Wageoperation> getWageoperations() {
+    return wageoperations;
+  }
+
+  public void setWageoperations(List<Wageoperation> wageoperations) {
+    this.wageoperations = wageoperations;
+  }
+
+  public Wagelistpartial additionalcharges(List<Additionalcharge> additionalcharges) {
+    this.additionalcharges = additionalcharges;
+    return this;
+  }
+
+  public Wagelistpartial addAdditionalchargesItem(Additionalcharge additionalchargesItem) {
+    this.additionalcharges.add(additionalchargesItem);
+    return this;
   }
 
    /**
-   * Měs. fond [persistentní položka]
-   * @return monthFund
+   * příplatky; kolekce bo příplatek [nepersistentní položka]
+   * @return additionalcharges
   **/
-  @ApiModelProperty(example = "null", value = "Měs. fond [persistentní položka]")
-  public Double getMonthFund() {
-    return monthFund;
+  @ApiModelProperty(example = "null", value = "příplatky; kolekce bo příplatek [nepersistentní položka]")
+  public List<Additionalcharge> getAdditionalcharges() {
+    return additionalcharges;
+  }
+
+  public void setAdditionalcharges(List<Additionalcharge> additionalcharges) {
+    this.additionalcharges = additionalcharges;
+  }
+
+  public Wagelistpartial wagecompensations(List<Wagecompensation> wagecompensations) {
+    this.wagecompensations = wagecompensations;
+    return this;
+  }
+
+  public Wagelistpartial addWagecompensationsItem(Wagecompensation wagecompensationsItem) {
+    this.wagecompensations.add(wagecompensationsItem);
+    return this;
   }
 
    /**
-   * Fond pr. doby [persistentní položka]
-   * @return workingFund
+   * náhrady; kolekce bo náhrada mzdy [nepersistentní položka]
+   * @return wagecompensations
   **/
-  @ApiModelProperty(example = "null", value = "Fond pr. doby [persistentní položka]")
-  public Double getWorkingFund() {
-    return workingFund;
+  @ApiModelProperty(example = "null", value = "náhrady; kolekce bo náhrada mzdy [nepersistentní položka]")
+  public List<Wagecompensation> getWagecompensations() {
+    return wagecompensations;
+  }
+
+  public void setWagecompensations(List<Wagecompensation> wagecompensations) {
+    this.wagecompensations = wagecompensations;
+  }
+
+  public Wagelistpartial totalabsence(Double totalabsence) {
+    this.totalabsence = totalabsence;
+    return this;
   }
 
    /**
-   * Jedn. mzda [persistentní položka]
-   * @return wageForUnit
+   * nepřítomnost [persistentní položka]
+   * @return totalabsence
   **/
-  @ApiModelProperty(example = "null", value = "Jedn. mzda [persistentní položka]")
-  public Double getWageForUnit() {
-    return wageForUnit;
+  @ApiModelProperty(example = "null", value = "nepřítomnost [persistentní položka]")
+  public Double getTotalabsence() {
+    return totalabsence;
+  }
+
+  public void setTotalabsence(Double totalabsence) {
+    this.totalabsence = totalabsence;
+  }
+
+  public Wagelistpartial monthfund(Double monthfund) {
+    this.monthfund = monthfund;
+    return this;
   }
 
    /**
-   * Odpr. čas (hod) [persistentní položka]
-   * @return totalWorkTime
+   * měs. fond [persistentní položka]
+   * @return monthfund
   **/
-  @ApiModelProperty(example = "null", value = "Odpr. čas (hod) [persistentní položka]")
-  public Double getTotalWorkTime() {
-    return totalWorkTime;
+  @ApiModelProperty(example = "null", value = "měs. fond [persistentní položka]")
+  public Double getMonthfund() {
+    return monthfund;
+  }
+
+  public void setMonthfund(Double monthfund) {
+    this.monthfund = monthfund;
+  }
+
+  public Wagelistpartial workingfund(Double workingfund) {
+    this.workingfund = workingfund;
+    return this;
   }
 
    /**
-   * Průměr [persistentní položka]
-   * @return averageWage
+   * fond pr. doby [persistentní položka]
+   * @return workingfund
   **/
-  @ApiModelProperty(example = "null", value = "Průměr [persistentní položka]")
-  public Double getAverageWage() {
-    return averageWage;
+  @ApiModelProperty(example = "null", value = "fond pr. doby [persistentní položka]")
+  public Double getWorkingfund() {
+    return workingfund;
   }
 
-  public Wagelistpartial holidayTotal(Double holidayTotal) {
-    this.holidayTotal = holidayTotal;
+  public void setWorkingfund(Double workingfund) {
+    this.workingfund = workingfund;
+  }
+
+  public Wagelistpartial wageforunit(Double wageforunit) {
+    this.wageforunit = wageforunit;
+    return this;
+  }
+
+   /**
+   * jedn. mzda [persistentní položka]
+   * @return wageforunit
+  **/
+  @ApiModelProperty(example = "null", value = "jedn. mzda [persistentní položka]")
+  public Double getWageforunit() {
+    return wageforunit;
+  }
+
+  public void setWageforunit(Double wageforunit) {
+    this.wageforunit = wageforunit;
+  }
+
+  public Wagelistpartial totalworktime(Double totalworktime) {
+    this.totalworktime = totalworktime;
+    return this;
+  }
+
+   /**
+   * odpr. čas (hod) [persistentní položka]
+   * @return totalworktime
+  **/
+  @ApiModelProperty(example = "null", value = "odpr. čas (hod) [persistentní položka]")
+  public Double getTotalworktime() {
+    return totalworktime;
+  }
+
+  public void setTotalworktime(Double totalworktime) {
+    this.totalworktime = totalworktime;
+  }
+
+  public Wagelistpartial averagewage(Double averagewage) {
+    this.averagewage = averagewage;
+    return this;
+  }
+
+   /**
+   * průměr [persistentní položka]
+   * @return averagewage
+  **/
+  @ApiModelProperty(example = "null", value = "průměr [persistentní položka]")
+  public Double getAveragewage() {
+    return averagewage;
+  }
+
+  public void setAveragewage(Double averagewage) {
+    this.averagewage = averagewage;
+  }
+
+  public Wagelistpartial holidaytotal(Double holidaytotal) {
+    this.holidaytotal = holidaytotal;
     return this;
   }
 
    /**
    * Čerp. dovolená (h) [persistentní položka]
-   * @return holidayTotal
+   * @return holidaytotal
   **/
   @ApiModelProperty(example = "null", value = "Čerp. dovolená (h) [persistentní položka]")
-  public Double getHolidayTotal() {
-    return holidayTotal;
+  public Double getHolidaytotal() {
+    return holidaytotal;
   }
 
-  public void setHolidayTotal(Double holidayTotal) {
-    this.holidayTotal = holidayTotal;
+  public void setHolidaytotal(Double holidaytotal) {
+    this.holidaytotal = holidaytotal;
   }
 
-  public Wagelistpartial holidayDrawDays(Double holidayDrawDays) {
-    this.holidayDrawDays = holidayDrawDays;
+  public Wagelistpartial holidaydrawdays(Double holidaydrawdays) {
+    this.holidaydrawdays = holidaydrawdays;
     return this;
   }
 
    /**
    * Čerp. dovolená celkem (d) [persistentní položka]
-   * @return holidayDrawDays
+   * @return holidaydrawdays
   **/
   @ApiModelProperty(example = "null", value = "Čerp. dovolená celkem (d) [persistentní položka]")
-  public Double getHolidayDrawDays() {
-    return holidayDrawDays;
+  public Double getHolidaydrawdays() {
+    return holidaydrawdays;
   }
 
-  public void setHolidayDrawDays(Double holidayDrawDays) {
-    this.holidayDrawDays = holidayDrawDays;
+  public void setHolidaydrawdays(Double holidaydrawdays) {
+    this.holidaydrawdays = holidaydrawdays;
   }
 
-  public Wagelistpartial paidHoliday(Double paidHoliday) {
-    this.paidHoliday = paidHoliday;
+  public Wagelistpartial paidholiday(Double paidholiday) {
+    this.paidholiday = paidholiday;
     return this;
   }
 
    /**
-   * Propl. dovolená (d) [persistentní položka]
-   * @return paidHoliday
+   * propl. dovolená (d) [persistentní položka]
+   * @return paidholiday
   **/
-  @ApiModelProperty(example = "null", value = "Propl. dovolená (d) [persistentní položka]")
-  public Double getPaidHoliday() {
-    return paidHoliday;
+  @ApiModelProperty(example = "null", value = "propl. dovolená (d) [persistentní položka]")
+  public Double getPaidholiday() {
+    return paidholiday;
   }
 
-  public void setPaidHoliday(Double paidHoliday) {
-    this.paidHoliday = paidHoliday;
+  public void setPaidholiday(Double paidholiday) {
+    this.paidholiday = paidholiday;
   }
 
-  public Wagelistpartial holidayTypeID(String holidayTypeID) {
-    this.holidayTypeID = holidayTypeID;
+  public Wagelistpartial holidaytypeId(String holidaytypeId) {
+    this.holidaytypeId = holidaytypeId;
     return this;
   }
 
    /**
-   * Typ dovolené; ID objektu Druh dovolené [persistentní položka]
-   * @return holidayTypeID
+   * typ dovolené; id objektu druh dovolené [persistentní položka]
+   * @return holidaytypeId
   **/
-  @ApiModelProperty(example = "null", value = "Typ dovolené; ID objektu Druh dovolené [persistentní položka]")
-  public String getHolidayTypeID() {
-    return holidayTypeID;
+  @ApiModelProperty(example = "null", value = "typ dovolené; id objektu druh dovolené [persistentní položka]")
+  public String getHolidaytypeId() {
+    return holidaytypeId;
   }
 
-  public void setHolidayTypeID(String holidayTypeID) {
-    this.holidayTypeID = holidayTypeID;
+  public void setHolidaytypeId(String holidaytypeId) {
+    this.holidaytypeId = holidaytypeId;
   }
 
-   /**
-   * Hrubá mzda [persistentní položka]
-   * @return grossWageTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Hrubá mzda [persistentní položka]")
-  public Double getGrossWageTotal() {
-    return grossWageTotal;
-  }
-
-  public Wagelistpartial sickBenefitNumerator(Double sickBenefitNumerator) {
-    this.sickBenefitNumerator = sickBenefitNumerator;
+  public Wagelistpartial grosswagetotal(Double grosswagetotal) {
+    this.grosswagetotal = grosswagetotal;
     return this;
   }
 
    /**
-   * Čitatel pro ND [persistentní položka]
-   * @return sickBenefitNumerator
+   * hrubá mzda [persistentní položka]
+   * @return grosswagetotal
   **/
-  @ApiModelProperty(example = "null", value = "Čitatel pro ND [persistentní položka]")
-  public Double getSickBenefitNumerator() {
-    return sickBenefitNumerator;
+  @ApiModelProperty(example = "null", value = "hrubá mzda [persistentní položka]")
+  public Double getGrosswagetotal() {
+    return grosswagetotal;
   }
 
-  public void setSickBenefitNumerator(Double sickBenefitNumerator) {
-    this.sickBenefitNumerator = sickBenefitNumerator;
+  public void setGrosswagetotal(Double grosswagetotal) {
+    this.grosswagetotal = grosswagetotal;
   }
 
-  public Wagelistpartial sickBenefitDenominator(Double sickBenefitDenominator) {
-    this.sickBenefitDenominator = sickBenefitDenominator;
+  public Wagelistpartial sickbenefitnumerator(Double sickbenefitnumerator) {
+    this.sickbenefitnumerator = sickbenefitnumerator;
     return this;
   }
 
    /**
-   * Jmenovatel pro ND [persistentní položka]
-   * @return sickBenefitDenominator
+   * Čitatel pro nd [persistentní položka]
+   * @return sickbenefitnumerator
   **/
-  @ApiModelProperty(example = "null", value = "Jmenovatel pro ND [persistentní položka]")
-  public Double getSickBenefitDenominator() {
-    return sickBenefitDenominator;
+  @ApiModelProperty(example = "null", value = "Čitatel pro nd [persistentní položka]")
+  public Double getSickbenefitnumerator() {
+    return sickbenefitnumerator;
   }
 
-  public void setSickBenefitDenominator(Double sickBenefitDenominator) {
-    this.sickBenefitDenominator = sickBenefitDenominator;
+  public void setSickbenefitnumerator(Double sickbenefitnumerator) {
+    this.sickbenefitnumerator = sickbenefitnumerator;
   }
 
-  public Wagelistpartial holidayNumerator(Double holidayNumerator) {
-    this.holidayNumerator = holidayNumerator;
+  public Wagelistpartial sickbenefitdenominator(Double sickbenefitdenominator) {
+    this.sickbenefitdenominator = sickbenefitdenominator;
+    return this;
+  }
+
+   /**
+   * jmenovatel pro nd [persistentní položka]
+   * @return sickbenefitdenominator
+  **/
+  @ApiModelProperty(example = "null", value = "jmenovatel pro nd [persistentní položka]")
+  public Double getSickbenefitdenominator() {
+    return sickbenefitdenominator;
+  }
+
+  public void setSickbenefitdenominator(Double sickbenefitdenominator) {
+    this.sickbenefitdenominator = sickbenefitdenominator;
+  }
+
+  public Wagelistpartial holidaynumerator(Double holidaynumerator) {
+    this.holidaynumerator = holidaynumerator;
     return this;
   }
 
    /**
    * Čitatel pro dov. [persistentní položka]
-   * @return holidayNumerator
+   * @return holidaynumerator
   **/
   @ApiModelProperty(example = "null", value = "Čitatel pro dov. [persistentní položka]")
-  public Double getHolidayNumerator() {
-    return holidayNumerator;
+  public Double getHolidaynumerator() {
+    return holidaynumerator;
   }
 
-  public void setHolidayNumerator(Double holidayNumerator) {
-    this.holidayNumerator = holidayNumerator;
+  public void setHolidaynumerator(Double holidaynumerator) {
+    this.holidaynumerator = holidaynumerator;
   }
 
-  public Wagelistpartial oldSixMonthsReward(Double oldSixMonthsReward) {
-    this.oldSixMonthsReward = oldSixMonthsReward;
+  public Wagelistpartial oldsixmonthsreward(Double oldsixmonthsreward) {
+    this.oldsixmonthsreward = oldsixmonthsreward;
     return this;
   }
 
    /**
-   * Pololetní odměny [persistentní položka]
-   * @return oldSixMonthsReward
+   * pololetní odměny [persistentní položka]
+   * @return oldsixmonthsreward
   **/
-  @ApiModelProperty(example = "null", value = "Pololetní odměny [persistentní položka]")
-  public Double getOldSixMonthsReward() {
-    return oldSixMonthsReward;
+  @ApiModelProperty(example = "null", value = "pololetní odměny [persistentní položka]")
+  public Double getOldsixmonthsreward() {
+    return oldsixmonthsreward;
   }
 
-  public void setOldSixMonthsReward(Double oldSixMonthsReward) {
-    this.oldSixMonthsReward = oldSixMonthsReward;
+  public void setOldsixmonthsreward(Double oldsixmonthsreward) {
+    this.oldsixmonthsreward = oldsixmonthsreward;
   }
 
-  public Wagelistpartial oldTwelveMonthsReward(Double oldTwelveMonthsReward) {
-    this.oldTwelveMonthsReward = oldTwelveMonthsReward;
+  public Wagelistpartial oldtwelvemonthsreward(Double oldtwelvemonthsreward) {
+    this.oldtwelvemonthsreward = oldtwelvemonthsreward;
     return this;
   }
 
    /**
-   * Roční odměny [persistentní položka]
-   * @return oldTwelveMonthsReward
+   * roční odměny [persistentní položka]
+   * @return oldtwelvemonthsreward
   **/
-  @ApiModelProperty(example = "null", value = "Roční odměny [persistentní položka]")
-  public Double getOldTwelveMonthsReward() {
-    return oldTwelveMonthsReward;
+  @ApiModelProperty(example = "null", value = "roční odměny [persistentní položka]")
+  public Double getOldtwelvemonthsreward() {
+    return oldtwelvemonthsreward;
   }
 
-  public void setOldTwelveMonthsReward(Double oldTwelveMonthsReward) {
-    this.oldTwelveMonthsReward = oldTwelveMonthsReward;
+  public void setOldtwelvemonthsreward(Double oldtwelvemonthsreward) {
+    this.oldtwelvemonthsreward = oldtwelvemonthsreward;
   }
 
-  public Wagelistpartial oldRewardLongTermTotal(Double oldRewardLongTermTotal) {
-    this.oldRewardLongTermTotal = oldRewardLongTermTotal;
+  public Wagelistpartial oldrewardlongtermtotal(Double oldrewardlongtermtotal) {
+    this.oldrewardlongtermtotal = oldrewardlongtermtotal;
     return this;
   }
 
    /**
-   * Dlouhodobé odměny celk [persistentní položka]
-   * @return oldRewardLongTermTotal
+   * dlouhodobé odměny celk [persistentní položka]
+   * @return oldrewardlongtermtotal
   **/
-  @ApiModelProperty(example = "null", value = "Dlouhodobé odměny celk [persistentní položka]")
-  public Double getOldRewardLongTermTotal() {
-    return oldRewardLongTermTotal;
+  @ApiModelProperty(example = "null", value = "dlouhodobé odměny celk [persistentní položka]")
+  public Double getOldrewardlongtermtotal() {
+    return oldrewardlongtermtotal;
   }
 
-  public void setOldRewardLongTermTotal(Double oldRewardLongTermTotal) {
-    this.oldRewardLongTermTotal = oldRewardLongTermTotal;
+  public void setOldrewardlongtermtotal(Double oldrewardlongtermtotal) {
+    this.oldrewardlongtermtotal = oldrewardlongtermtotal;
   }
 
-  public Wagelistpartial oldRewardPeriodLength(Integer oldRewardPeriodLength) {
-    this.oldRewardPeriodLength = oldRewardPeriodLength;
+  public Wagelistpartial oldrewardperiodlength(Integer oldrewardperiodlength) {
+    this.oldrewardperiodlength = oldrewardperiodlength;
     return this;
   }
 
    /**
-   * Délka obd., za které jsou odměny [persistentní položka]
-   * @return oldRewardPeriodLength
+   * délka obd., za které jsou odměny [persistentní položka]
+   * @return oldrewardperiodlength
   **/
-  @ApiModelProperty(example = "null", value = "Délka obd., za které jsou odměny [persistentní položka]")
-  public Integer getOldRewardPeriodLength() {
-    return oldRewardPeriodLength;
+  @ApiModelProperty(example = "null", value = "délka obd., za které jsou odměny [persistentní položka]")
+  public Integer getOldrewardperiodlength() {
+    return oldrewardperiodlength;
   }
 
-  public void setOldRewardPeriodLength(Integer oldRewardPeriodLength) {
-    this.oldRewardPeriodLength = oldRewardPeriodLength;
+  public void setOldrewardperiodlength(Integer oldrewardperiodlength) {
+    this.oldrewardperiodlength = oldrewardperiodlength;
   }
 
-   /**
-   * Importovaný ML [persistentní položka]
-   * @return xMLImported
-  **/
-  @ApiModelProperty(example = "null", value = "Importovaný ML [persistentní položka]")
-  public Boolean getXMLImported() {
-    return xMLImported;
+  public Wagelistpartial xmlimported(Boolean xmlimported) {
+    this.xmlimported = xmlimported;
+    return this;
   }
 
    /**
-   * Po skončení PP [persistentní položka]
-   * @return afterWorkingRelation
+   * importovaný ml [persistentní položka]
+   * @return xmlimported
   **/
-  @ApiModelProperty(example = "null", value = "Po skončení PP [persistentní položka]")
-  public Boolean getAfterWorkingRelation() {
-    return afterWorkingRelation;
+  @ApiModelProperty(example = "null", value = "importovaný ml [persistentní položka]")
+  public Boolean getXmlimported() {
+    return xmlimported;
+  }
+
+  public void setXmlimported(Boolean xmlimported) {
+    this.xmlimported = xmlimported;
+  }
+
+  public Wagelistpartial afterworkingrelation(Boolean afterworkingrelation) {
+    this.afterworkingrelation = afterworkingrelation;
+    return this;
   }
 
    /**
-   * Spol. ML vyp.
-   * @return commonIsComputed
+   * po skončení pp [persistentní položka]
+   * @return afterworkingrelation
   **/
-  @ApiModelProperty(example = "null", value = "Spol. ML vyp.")
-  public Boolean getCommonIsComputed() {
-    return commonIsComputed;
+  @ApiModelProperty(example = "null", value = "po skončení pp [persistentní položka]")
+  public Boolean getAfterworkingrelation() {
+    return afterworkingrelation;
+  }
+
+  public void setAfterworkingrelation(Boolean afterworkingrelation) {
+    this.afterworkingrelation = afterworkingrelation;
+  }
+
+  public Wagelistpartial commoniscomputed(Boolean commoniscomputed) {
+    this.commoniscomputed = commoniscomputed;
+    return this;
   }
 
    /**
-   * Spol. ML
-   * @return commonDisplayName
+   * spol. ml vyp.
+   * @return commoniscomputed
   **/
-  @ApiModelProperty(example = "null", value = "Spol. ML")
-  public String getCommonDisplayName() {
-    return commonDisplayName;
+  @ApiModelProperty(example = "null", value = "spol. ml vyp.")
+  public Boolean getCommoniscomputed() {
+    return commoniscomputed;
+  }
+
+  public void setCommoniscomputed(Boolean commoniscomputed) {
+    this.commoniscomputed = commoniscomputed;
+  }
+
+  public Wagelistpartial commondisplayname(String commondisplayname) {
+    this.commondisplayname = commondisplayname;
+    return this;
   }
 
    /**
-   * ML od data
-   * @return wageListFrom
+   * spol. ml
+   * @return commondisplayname
   **/
-  @ApiModelProperty(example = "null", value = "ML od data")
-  public DateTime getWageListFrom() {
-    return wageListFrom;
+  @ApiModelProperty(example = "null", value = "spol. ml")
+  public String getCommondisplayname() {
+    return commondisplayname;
+  }
+
+  public void setCommondisplayname(String commondisplayname) {
+    this.commondisplayname = commondisplayname;
+  }
+
+  public Wagelistpartial wagelistfrom(DateTime wagelistfrom) {
+    this.wagelistfrom = wagelistfrom;
+    return this;
   }
 
    /**
-   * ML do data
-   * @return wageListTo
+   * ml od data
+   * @return wagelistfrom
   **/
-  @ApiModelProperty(example = "null", value = "ML do data")
-  public DateTime getWageListTo() {
-    return wageListTo;
+  @ApiModelProperty(example = "null", value = "ml od data")
+  public DateTime getWagelistfrom() {
+    return wagelistfrom;
+  }
+
+  public void setWagelistfrom(DateTime wagelistfrom) {
+    this.wagelistfrom = wagelistfrom;
+  }
+
+  public Wagelistpartial wagelistto(DateTime wagelistto) {
+    this.wagelistto = wagelistto;
+    return this;
   }
 
    /**
-   * ML od data nástupu
-   * @return wageListRealFrom
+   * ml do data
+   * @return wagelistto
   **/
-  @ApiModelProperty(example = "null", value = "ML od data nástupu")
-  public DateTime getWageListRealFrom() {
-    return wageListRealFrom;
+  @ApiModelProperty(example = "null", value = "ml do data")
+  public DateTime getWagelistto() {
+    return wagelistto;
+  }
+
+  public void setWagelistto(DateTime wagelistto) {
+    this.wagelistto = wagelistto;
+  }
+
+  public Wagelistpartial wagelistrealfrom(DateTime wagelistrealfrom) {
+    this.wagelistrealfrom = wagelistrealfrom;
+    return this;
+  }
+
+   /**
+   * ml od data nástupu
+   * @return wagelistrealfrom
+  **/
+  @ApiModelProperty(example = "null", value = "ml od data nástupu")
+  public DateTime getWagelistrealfrom() {
+    return wagelistrealfrom;
+  }
+
+  public void setWagelistrealfrom(DateTime wagelistrealfrom) {
+    this.wagelistrealfrom = wagelistrealfrom;
+  }
+
+  public Wagelistpartial calendarduty(Double calendarduty) {
+    this.calendarduty = calendarduty;
+    return this;
   }
 
    /**
    * Úvazek
-   * @return calendarDuty
+   * @return calendarduty
   **/
   @ApiModelProperty(example = "null", value = "Úvazek")
-  public Double getCalendarDuty() {
-    return calendarDuty;
+  public Double getCalendarduty() {
+    return calendarduty;
   }
 
-   /**
-   * Příjmení
-   * @return persLastName
-  **/
-  @ApiModelProperty(example = "null", value = "Příjmení")
-  public String getPersLastName() {
-    return persLastName;
+  public void setCalendarduty(Double calendarduty) {
+    this.calendarduty = calendarduty;
   }
 
-   /**
-   * Os.číslo
-   * @return persPersonalNumber
-  **/
-  @ApiModelProperty(example = "null", value = "Os.číslo")
-  public String getPersPersonalNumber() {
-    return persPersonalNumber;
-  }
-
-   /**
-   * Os.číslo numericky
-   * @return persNumPersonalNumber
-  **/
-  @ApiModelProperty(example = "null", value = "Os.číslo numericky")
-  public Integer getPersNumPersonalNumber() {
-    return persNumPersonalNumber;
-  }
-
-   /**
-   * Hl. prac. poměr
-   * @return mainWorkingRelation
-  **/
-  @ApiModelProperty(example = "null", value = "Hl. prac. poměr")
-  public Boolean getMainWorkingRelation() {
-    return mainWorkingRelation;
-  }
-
-  public Wagelistpartial wageListCommonID(String wageListCommonID) {
-    this.wageListCommonID = wageListCommonID;
+  public Wagelistpartial persLastname(String persLastname) {
+    this.persLastname = persLastname;
     return this;
   }
 
    /**
-   * Spol. ML; ID objektu Mzdový list souhrnný
-   * @return wageListCommonID
+   * příjmení
+   * @return persLastname
   **/
-  @ApiModelProperty(example = "null", value = "Spol. ML; ID objektu Mzdový list souhrnný")
-  public String getWageListCommonID() {
-    return wageListCommonID;
+  @ApiModelProperty(example = "null", value = "příjmení")
+  public String getPersLastname() {
+    return persLastname;
   }
 
-  public void setWageListCommonID(String wageListCommonID) {
-    this.wageListCommonID = wageListCommonID;
+  public void setPersLastname(String persLastname) {
+    this.persLastname = persLastname;
   }
 
-   /**
-   * ND do data
-   * @return wLSickTo
-  **/
-  @ApiModelProperty(example = "null", value = "ND do data")
-  public DateTime getWLSickTo() {
-    return wLSickTo;
-  }
-
-  public Wagelistpartial calcAvgNetWage(Boolean calcAvgNetWage) {
-    this.calcAvgNetWage = calcAvgNetWage;
+  public Wagelistpartial persPersonalnumber(String persPersonalnumber) {
+    this.persPersonalnumber = persPersonalnumber;
     return this;
   }
 
    /**
-   * Probíhá výpočet PČM
-   * @return calcAvgNetWage
+   * os.číslo
+   * @return persPersonalnumber
   **/
-  @ApiModelProperty(example = "null", value = "Probíhá výpočet PČM")
-  public Boolean getCalcAvgNetWage() {
-    return calcAvgNetWage;
+  @ApiModelProperty(example = "null", value = "os.číslo")
+  public String getPersPersonalnumber() {
+    return persPersonalnumber;
   }
 
-  public void setCalcAvgNetWage(Boolean calcAvgNetWage) {
-    this.calcAvgNetWage = calcAvgNetWage;
+  public void setPersPersonalnumber(String persPersonalnumber) {
+    this.persPersonalnumber = persPersonalnumber;
   }
 
-  public Wagelistpartial holidayDrawHours(Double holidayDrawHours) {
-    this.holidayDrawHours = holidayDrawHours;
+  public Wagelistpartial persNumpersonalnumber(Integer persNumpersonalnumber) {
+    this.persNumpersonalnumber = persNumpersonalnumber;
+    return this;
+  }
+
+   /**
+   * os.číslo numericky
+   * @return persNumpersonalnumber
+  **/
+  @ApiModelProperty(example = "null", value = "os.číslo numericky")
+  public Integer getPersNumpersonalnumber() {
+    return persNumpersonalnumber;
+  }
+
+  public void setPersNumpersonalnumber(Integer persNumpersonalnumber) {
+    this.persNumpersonalnumber = persNumpersonalnumber;
+  }
+
+  public Wagelistpartial mainworkingrelation(Boolean mainworkingrelation) {
+    this.mainworkingrelation = mainworkingrelation;
+    return this;
+  }
+
+   /**
+   * hl. prac. poměr
+   * @return mainworkingrelation
+  **/
+  @ApiModelProperty(example = "null", value = "hl. prac. poměr")
+  public Boolean getMainworkingrelation() {
+    return mainworkingrelation;
+  }
+
+  public void setMainworkingrelation(Boolean mainworkingrelation) {
+    this.mainworkingrelation = mainworkingrelation;
+  }
+
+  public Wagelistpartial wagelistcommonId(String wagelistcommonId) {
+    this.wagelistcommonId = wagelistcommonId;
+    return this;
+  }
+
+   /**
+   * spol. ml; id objektu mzdový list souhrnný
+   * @return wagelistcommonId
+  **/
+  @ApiModelProperty(example = "null", value = "spol. ml; id objektu mzdový list souhrnný")
+  public String getWagelistcommonId() {
+    return wagelistcommonId;
+  }
+
+  public void setWagelistcommonId(String wagelistcommonId) {
+    this.wagelistcommonId = wagelistcommonId;
+  }
+
+  public Wagelistpartial wlsickto(DateTime wlsickto) {
+    this.wlsickto = wlsickto;
+    return this;
+  }
+
+   /**
+   * nd do data
+   * @return wlsickto
+  **/
+  @ApiModelProperty(example = "null", value = "nd do data")
+  public DateTime getWlsickto() {
+    return wlsickto;
+  }
+
+  public void setWlsickto(DateTime wlsickto) {
+    this.wlsickto = wlsickto;
+  }
+
+  public Wagelistpartial calcavgnetwage(Boolean calcavgnetwage) {
+    this.calcavgnetwage = calcavgnetwage;
+    return this;
+  }
+
+   /**
+   * probíhá výpočet pČm
+   * @return calcavgnetwage
+  **/
+  @ApiModelProperty(example = "null", value = "probíhá výpočet pČm")
+  public Boolean getCalcavgnetwage() {
+    return calcavgnetwage;
+  }
+
+  public void setCalcavgnetwage(Boolean calcavgnetwage) {
+    this.calcavgnetwage = calcavgnetwage;
+  }
+
+  public Wagelistpartial holidaydrawhours(Double holidaydrawhours) {
+    this.holidaydrawhours = holidaydrawhours;
     return this;
   }
 
    /**
    * Čerp. dovolená celkem (h) [persistentní položka]
-   * @return holidayDrawHours
+   * @return holidaydrawhours
   **/
   @ApiModelProperty(example = "null", value = "Čerp. dovolená celkem (h) [persistentní položka]")
-  public Double getHolidayDrawHours() {
-    return holidayDrawHours;
+  public Double getHolidaydrawhours() {
+    return holidaydrawhours;
   }
 
-  public void setHolidayDrawHours(Double holidayDrawHours) {
-    this.holidayDrawHours = holidayDrawHours;
+  public void setHolidaydrawhours(Double holidaydrawhours) {
+    this.holidaydrawhours = holidaydrawhours;
   }
 
-  public Wagelistpartial paidHolidayHours(Double paidHolidayHours) {
-    this.paidHolidayHours = paidHolidayHours;
+  public Wagelistpartial paidholidayhours(Double paidholidayhours) {
+    this.paidholidayhours = paidholidayhours;
     return this;
   }
 
    /**
-   * Propl. dovolená (h) [persistentní položka]
-   * @return paidHolidayHours
+   * propl. dovolená (h) [persistentní položka]
+   * @return paidholidayhours
   **/
-  @ApiModelProperty(example = "null", value = "Propl. dovolená (h) [persistentní položka]")
-  public Double getPaidHolidayHours() {
-    return paidHolidayHours;
+  @ApiModelProperty(example = "null", value = "propl. dovolená (h) [persistentní položka]")
+  public Double getPaidholidayhours() {
+    return paidholidayhours;
   }
 
-  public void setPaidHolidayHours(Double paidHolidayHours) {
-    this.paidHolidayHours = paidHolidayHours;
+  public void setPaidholidayhours(Double paidholidayhours) {
+    this.paidholidayhours = paidholidayhours;
   }
 
-   /**
-   * Pořadí výpočtu
-   * @return calculationOrder
-  **/
-  @ApiModelProperty(example = "null", value = "Pořadí výpočtu")
-  public Integer getCalculationOrder() {
-    return calculationOrder;
-  }
-
-  public Wagelistpartial sWorkDays(Double sWorkDays) {
-    this.sWorkDays = sWorkDays;
+  public Wagelistpartial calculationorder(Integer calculationorder) {
+    this.calculationorder = calculationorder;
     return this;
   }
 
    /**
-   * Odpracované dny [persistentní položka]
-   * @return sWorkDays
+   * pořadí výpočtu
+   * @return calculationorder
   **/
-  @ApiModelProperty(example = "null", value = "Odpracované dny [persistentní položka]")
-  public Double getSWorkDays() {
-    return sWorkDays;
+  @ApiModelProperty(example = "null", value = "pořadí výpočtu")
+  public Integer getCalculationorder() {
+    return calculationorder;
   }
 
-  public void setSWorkDays(Double sWorkDays) {
-    this.sWorkDays = sWorkDays;
+  public void setCalculationorder(Integer calculationorder) {
+    this.calculationorder = calculationorder;
   }
 
-   /**
-   * Odpracované dny celkem [persistentní položka]
-   * @return sWorkDaysTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Odpracované dny celkem [persistentní položka]")
-  public Double getSWorkDaysTotal() {
-    return sWorkDaysTotal;
-  }
-
-  public Wagelistpartial sWorkHours(Double sWorkHours) {
-    this.sWorkHours = sWorkHours;
+  public Wagelistpartial sWorkdays(Double sWorkdays) {
+    this.sWorkdays = sWorkdays;
     return this;
   }
 
    /**
-   * Odpracované hodiny [persistentní položka]
-   * @return sWorkHours
+   * odpracované dny [persistentní položka]
+   * @return sWorkdays
   **/
-  @ApiModelProperty(example = "null", value = "Odpracované hodiny [persistentní položka]")
-  public Double getSWorkHours() {
-    return sWorkHours;
+  @ApiModelProperty(example = "null", value = "odpracované dny [persistentní položka]")
+  public Double getSWorkdays() {
+    return sWorkdays;
   }
 
-  public void setSWorkHours(Double sWorkHours) {
-    this.sWorkHours = sWorkHours;
+  public void setSWorkdays(Double sWorkdays) {
+    this.sWorkdays = sWorkdays;
   }
 
-   /**
-   * Odpracované hodiny celkem [persistentní položka]
-   * @return sWorkHoursTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Odpracované hodiny celkem [persistentní položka]")
-  public Double getSWorkHoursTotal() {
-    return sWorkHoursTotal;
-  }
-
-  public Wagelistpartial sMixedHours(Double sMixedHours) {
-    this.sMixedHours = sMixedHours;
+  public Wagelistpartial sWorkdaystotal(Double sWorkdaystotal) {
+    this.sWorkdaystotal = sWorkdaystotal;
     return this;
   }
 
    /**
-   * Smíšené hodiny [persistentní položka]
-   * @return sMixedHours
+   * odpracované dny celkem [persistentní položka]
+   * @return sWorkdaystotal
   **/
-  @ApiModelProperty(example = "null", value = "Smíšené hodiny [persistentní položka]")
-  public Double getSMixedHours() {
-    return sMixedHours;
+  @ApiModelProperty(example = "null", value = "odpracované dny celkem [persistentní položka]")
+  public Double getSWorkdaystotal() {
+    return sWorkdaystotal;
   }
 
-  public void setSMixedHours(Double sMixedHours) {
-    this.sMixedHours = sMixedHours;
+  public void setSWorkdaystotal(Double sWorkdaystotal) {
+    this.sWorkdaystotal = sWorkdaystotal;
   }
 
-   /**
-   * Smíšené hodiny celkem [persistentní položka]
-   * @return sMixedHoursTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Smíšené hodiny celkem [persistentní položka]")
-  public Double getSMixedHoursTotal() {
-    return sMixedHoursTotal;
+  public Wagelistpartial sWorkhours(Double sWorkhours) {
+    this.sWorkhours = sWorkhours;
+    return this;
   }
 
    /**
-   * Hodiny z výkonů [persistentní položka]
-   * @return sOperHoursTotal
+   * odpracované hodiny [persistentní položka]
+   * @return sWorkhours
   **/
-  @ApiModelProperty(example = "null", value = "Hodiny z výkonů [persistentní položka]")
-  public Double getSOperHoursTotal() {
-    return sOperHoursTotal;
+  @ApiModelProperty(example = "null", value = "odpracované hodiny [persistentní položka]")
+  public Double getSWorkhours() {
+    return sWorkhours;
+  }
+
+  public void setSWorkhours(Double sWorkhours) {
+    this.sWorkhours = sWorkhours;
+  }
+
+  public Wagelistpartial sWorkhourstotal(Double sWorkhourstotal) {
+    this.sWorkhourstotal = sWorkhourstotal;
+    return this;
+  }
+
+   /**
+   * odpracované hodiny celkem [persistentní položka]
+   * @return sWorkhourstotal
+  **/
+  @ApiModelProperty(example = "null", value = "odpracované hodiny celkem [persistentní položka]")
+  public Double getSWorkhourstotal() {
+    return sWorkhourstotal;
+  }
+
+  public void setSWorkhourstotal(Double sWorkhourstotal) {
+    this.sWorkhourstotal = sWorkhourstotal;
+  }
+
+  public Wagelistpartial sMixedhours(Double sMixedhours) {
+    this.sMixedhours = sMixedhours;
+    return this;
+  }
+
+   /**
+   * smíšené hodiny [persistentní položka]
+   * @return sMixedhours
+  **/
+  @ApiModelProperty(example = "null", value = "smíšené hodiny [persistentní položka]")
+  public Double getSMixedhours() {
+    return sMixedhours;
+  }
+
+  public void setSMixedhours(Double sMixedhours) {
+    this.sMixedhours = sMixedhours;
+  }
+
+  public Wagelistpartial sMixedhourstotal(Double sMixedhourstotal) {
+    this.sMixedhourstotal = sMixedhourstotal;
+    return this;
+  }
+
+   /**
+   * smíšené hodiny celkem [persistentní položka]
+   * @return sMixedhourstotal
+  **/
+  @ApiModelProperty(example = "null", value = "smíšené hodiny celkem [persistentní položka]")
+  public Double getSMixedhourstotal() {
+    return sMixedhourstotal;
+  }
+
+  public void setSMixedhourstotal(Double sMixedhourstotal) {
+    this.sMixedhourstotal = sMixedhourstotal;
+  }
+
+  public Wagelistpartial sOperhourstotal(Double sOperhourstotal) {
+    this.sOperhourstotal = sOperhourstotal;
+    return this;
+  }
+
+   /**
+   * hodiny z výkonů [persistentní položka]
+   * @return sOperhourstotal
+  **/
+  @ApiModelProperty(example = "null", value = "hodiny z výkonů [persistentní položka]")
+  public Double getSOperhourstotal() {
+    return sOperhourstotal;
+  }
+
+  public void setSOperhourstotal(Double sOperhourstotal) {
+    this.sOperhourstotal = sOperhourstotal;
+  }
+
+  public Wagelistpartial sOperwagetotal(Double sOperwagetotal) {
+    this.sOperwagetotal = sOperwagetotal;
+    return this;
   }
 
    /**
    * Časová mzda z výkonů [persistentní položka]
-   * @return sOperWageTotal
+   * @return sOperwagetotal
   **/
   @ApiModelProperty(example = "null", value = "Časová mzda z výkonů [persistentní položka]")
-  public Double getSOperWageTotal() {
-    return sOperWageTotal;
+  public Double getSOperwagetotal() {
+    return sOperwagetotal;
   }
 
-  public Wagelistpartial sTaskWage(Double sTaskWage) {
-    this.sTaskWage = sTaskWage;
+  public void setSOperwagetotal(Double sOperwagetotal) {
+    this.sOperwagetotal = sOperwagetotal;
+  }
+
+  public Wagelistpartial sTaskwage(Double sTaskwage) {
+    this.sTaskwage = sTaskwage;
     return this;
   }
 
    /**
    * Úkolová mzda [persistentní položka]
-   * @return sTaskWage
+   * @return sTaskwage
   **/
   @ApiModelProperty(example = "null", value = "Úkolová mzda [persistentní položka]")
-  public Double getSTaskWage() {
-    return sTaskWage;
+  public Double getSTaskwage() {
+    return sTaskwage;
   }
 
-  public void setSTaskWage(Double sTaskWage) {
-    this.sTaskWage = sTaskWage;
+  public void setSTaskwage(Double sTaskwage) {
+    this.sTaskwage = sTaskwage;
+  }
+
+  public Wagelistpartial sTaskwagetotal(Double sTaskwagetotal) {
+    this.sTaskwagetotal = sTaskwagetotal;
+    return this;
   }
 
    /**
    * Úkolová mzda celkem [persistentní položka]
-   * @return sTaskWageTotal
+   * @return sTaskwagetotal
   **/
   @ApiModelProperty(example = "null", value = "Úkolová mzda celkem [persistentní položka]")
-  public Double getSTaskWageTotal() {
-    return sTaskWageTotal;
+  public Double getSTaskwagetotal() {
+    return sTaskwagetotal;
   }
 
-  public Wagelistpartial sTimeWage(Double sTimeWage) {
-    this.sTimeWage = sTimeWage;
+  public void setSTaskwagetotal(Double sTaskwagetotal) {
+    this.sTaskwagetotal = sTaskwagetotal;
+  }
+
+  public Wagelistpartial sTimewage(Double sTimewage) {
+    this.sTimewage = sTimewage;
     return this;
   }
 
    /**
    * Časová mzda opr. [persistentní položka]
-   * @return sTimeWage
+   * @return sTimewage
   **/
   @ApiModelProperty(example = "null", value = "Časová mzda opr. [persistentní položka]")
-  public Double getSTimeWage() {
-    return sTimeWage;
+  public Double getSTimewage() {
+    return sTimewage;
   }
 
-  public void setSTimeWage(Double sTimeWage) {
-    this.sTimeWage = sTimeWage;
+  public void setSTimewage(Double sTimewage) {
+    this.sTimewage = sTimewage;
+  }
+
+  public Wagelistpartial sTimewagetotal(Double sTimewagetotal) {
+    this.sTimewagetotal = sTimewagetotal;
+    return this;
   }
 
    /**
    * Časová mzda [persistentní položka]
-   * @return sTimeWageTotal
+   * @return sTimewagetotal
   **/
   @ApiModelProperty(example = "null", value = "Časová mzda [persistentní položka]")
-  public Double getSTimeWageTotal() {
-    return sTimeWageTotal;
+  public Double getSTimewagetotal() {
+    return sTimewagetotal;
   }
 
-  public Wagelistpartial sFeastHours(Double sFeastHours) {
-    this.sFeastHours = sFeastHours;
+  public void setSTimewagetotal(Double sTimewagetotal) {
+    this.sTimewagetotal = sTimewagetotal;
+  }
+
+  public Wagelistpartial sFeasthours(Double sFeasthours) {
+    this.sFeasthours = sFeasthours;
     return this;
   }
 
    /**
-   * Hodiny ve svátek [persistentní položka]
-   * @return sFeastHours
+   * hodiny ve svátek [persistentní položka]
+   * @return sFeasthours
   **/
-  @ApiModelProperty(example = "null", value = "Hodiny ve svátek [persistentní položka]")
-  public Double getSFeastHours() {
-    return sFeastHours;
+  @ApiModelProperty(example = "null", value = "hodiny ve svátek [persistentní položka]")
+  public Double getSFeasthours() {
+    return sFeasthours;
   }
 
-  public void setSFeastHours(Double sFeastHours) {
-    this.sFeastHours = sFeastHours;
+  public void setSFeasthours(Double sFeasthours) {
+    this.sFeasthours = sFeasthours;
   }
 
-   /**
-   * Hodiny ve svátek celkem [persistentní položka]
-   * @return sFeastHoursTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Hodiny ve svátek celkem [persistentní položka]")
-  public Double getSFeastHoursTotal() {
-    return sFeastHoursTotal;
-  }
-
-  public Wagelistpartial sFeastCharge(Double sFeastCharge) {
-    this.sFeastCharge = sFeastCharge;
+  public Wagelistpartial sFeasthourstotal(Double sFeasthourstotal) {
+    this.sFeasthourstotal = sFeasthourstotal;
     return this;
   }
 
    /**
-   * Příplatek za svátek opr. [persistentní položka]
-   * @return sFeastCharge
+   * hodiny ve svátek celkem [persistentní položka]
+   * @return sFeasthourstotal
   **/
-  @ApiModelProperty(example = "null", value = "Příplatek za svátek opr. [persistentní položka]")
-  public Double getSFeastCharge() {
-    return sFeastCharge;
+  @ApiModelProperty(example = "null", value = "hodiny ve svátek celkem [persistentní položka]")
+  public Double getSFeasthourstotal() {
+    return sFeasthourstotal;
   }
 
-  public void setSFeastCharge(Double sFeastCharge) {
-    this.sFeastCharge = sFeastCharge;
+  public void setSFeasthourstotal(Double sFeasthourstotal) {
+    this.sFeasthourstotal = sFeasthourstotal;
   }
 
-   /**
-   * Příplatek za svátek [persistentní položka]
-   * @return sFeastChargeTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Příplatek za svátek [persistentní položka]")
-  public Double getSFeastChargeTotal() {
-    return sFeastChargeTotal;
-  }
-
-  public Wagelistpartial sNightHours(Double sNightHours) {
-    this.sNightHours = sNightHours;
+  public Wagelistpartial sFeastcharge(Double sFeastcharge) {
+    this.sFeastcharge = sFeastcharge;
     return this;
   }
 
    /**
-   * Hodiny v noci [persistentní položka]
-   * @return sNightHours
+   * příplatek za svátek opr. [persistentní položka]
+   * @return sFeastcharge
   **/
-  @ApiModelProperty(example = "null", value = "Hodiny v noci [persistentní položka]")
-  public Double getSNightHours() {
-    return sNightHours;
+  @ApiModelProperty(example = "null", value = "příplatek za svátek opr. [persistentní položka]")
+  public Double getSFeastcharge() {
+    return sFeastcharge;
   }
 
-  public void setSNightHours(Double sNightHours) {
-    this.sNightHours = sNightHours;
+  public void setSFeastcharge(Double sFeastcharge) {
+    this.sFeastcharge = sFeastcharge;
   }
 
-   /**
-   * Hodiny v noci celkem [persistentní položka]
-   * @return sNightHoursTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Hodiny v noci celkem [persistentní položka]")
-  public Double getSNightHoursTotal() {
-    return sNightHoursTotal;
-  }
-
-  public Wagelistpartial sNightCharge(Double sNightCharge) {
-    this.sNightCharge = sNightCharge;
+  public Wagelistpartial sFeastchargetotal(Double sFeastchargetotal) {
+    this.sFeastchargetotal = sFeastchargetotal;
     return this;
   }
 
    /**
-   * Příplatek za noc opr. [persistentní položka]
-   * @return sNightCharge
+   * příplatek za svátek [persistentní položka]
+   * @return sFeastchargetotal
   **/
-  @ApiModelProperty(example = "null", value = "Příplatek za noc opr. [persistentní položka]")
-  public Double getSNightCharge() {
-    return sNightCharge;
+  @ApiModelProperty(example = "null", value = "příplatek za svátek [persistentní položka]")
+  public Double getSFeastchargetotal() {
+    return sFeastchargetotal;
   }
 
-  public void setSNightCharge(Double sNightCharge) {
-    this.sNightCharge = sNightCharge;
+  public void setSFeastchargetotal(Double sFeastchargetotal) {
+    this.sFeastchargetotal = sFeastchargetotal;
   }
 
-   /**
-   * Příplatek za noc [persistentní položka]
-   * @return sNightChargeTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Příplatek za noc [persistentní položka]")
-  public Double getSNightChargeTotal() {
-    return sNightChargeTotal;
-  }
-
-  public Wagelistpartial sEnvHours(Double sEnvHours) {
-    this.sEnvHours = sEnvHours;
+  public Wagelistpartial sNighthours(Double sNighthours) {
+    this.sNighthours = sNighthours;
     return this;
   }
 
    /**
-   * Hodiny ve škod. prostředí [persistentní položka]
-   * @return sEnvHours
+   * hodiny v noci [persistentní položka]
+   * @return sNighthours
   **/
-  @ApiModelProperty(example = "null", value = "Hodiny ve škod. prostředí [persistentní položka]")
-  public Double getSEnvHours() {
-    return sEnvHours;
+  @ApiModelProperty(example = "null", value = "hodiny v noci [persistentní položka]")
+  public Double getSNighthours() {
+    return sNighthours;
   }
 
-  public void setSEnvHours(Double sEnvHours) {
-    this.sEnvHours = sEnvHours;
+  public void setSNighthours(Double sNighthours) {
+    this.sNighthours = sNighthours;
   }
 
-   /**
-   * Hodiny ve škod. prostředí celk [persistentní položka]
-   * @return sEnvHoursTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Hodiny ve škod. prostředí celk [persistentní položka]")
-  public Double getSEnvHoursTotal() {
-    return sEnvHoursTotal;
-  }
-
-  public Wagelistpartial sEnvCharge(Double sEnvCharge) {
-    this.sEnvCharge = sEnvCharge;
+  public Wagelistpartial sNighthourstotal(Double sNighthourstotal) {
+    this.sNighthourstotal = sNighthourstotal;
     return this;
   }
 
    /**
-   * Příplatek za prostředí opr. [persistentní položka]
-   * @return sEnvCharge
+   * hodiny v noci celkem [persistentní položka]
+   * @return sNighthourstotal
   **/
-  @ApiModelProperty(example = "null", value = "Příplatek za prostředí opr. [persistentní položka]")
-  public Double getSEnvCharge() {
-    return sEnvCharge;
+  @ApiModelProperty(example = "null", value = "hodiny v noci celkem [persistentní položka]")
+  public Double getSNighthourstotal() {
+    return sNighthourstotal;
   }
 
-  public void setSEnvCharge(Double sEnvCharge) {
-    this.sEnvCharge = sEnvCharge;
+  public void setSNighthourstotal(Double sNighthourstotal) {
+    this.sNighthourstotal = sNighthourstotal;
   }
 
-   /**
-   * Příplatek za prostředí [persistentní položka]
-   * @return sEnvChargeTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Příplatek za prostředí [persistentní položka]")
-  public Double getSEnvChargeTotal() {
-    return sEnvChargeTotal;
-  }
-
-  public Wagelistpartial sOverTime(Double sOverTime) {
-    this.sOverTime = sOverTime;
+  public Wagelistpartial sNightcharge(Double sNightcharge) {
+    this.sNightcharge = sNightcharge;
     return this;
   }
 
    /**
-   * Přesčasové hodiny [persistentní položka]
-   * @return sOverTime
+   * příplatek za noc opr. [persistentní položka]
+   * @return sNightcharge
   **/
-  @ApiModelProperty(example = "null", value = "Přesčasové hodiny [persistentní položka]")
-  public Double getSOverTime() {
-    return sOverTime;
+  @ApiModelProperty(example = "null", value = "příplatek za noc opr. [persistentní položka]")
+  public Double getSNightcharge() {
+    return sNightcharge;
   }
 
-  public void setSOverTime(Double sOverTime) {
-    this.sOverTime = sOverTime;
+  public void setSNightcharge(Double sNightcharge) {
+    this.sNightcharge = sNightcharge;
   }
 
-   /**
-   * Přesčasové hodiny celkem [persistentní položka]
-   * @return sOverTimeTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Přesčasové hodiny celkem [persistentní položka]")
-  public Double getSOverTimeTotal() {
-    return sOverTimeTotal;
-  }
-
-  public Wagelistpartial sOverTimeCharge(Double sOverTimeCharge) {
-    this.sOverTimeCharge = sOverTimeCharge;
+  public Wagelistpartial sNightchargetotal(Double sNightchargetotal) {
+    this.sNightchargetotal = sNightchargetotal;
     return this;
   }
 
    /**
-   * Příplatek za přesčas opr. [persistentní položka]
-   * @return sOverTimeCharge
+   * příplatek za noc [persistentní položka]
+   * @return sNightchargetotal
   **/
-  @ApiModelProperty(example = "null", value = "Příplatek za přesčas opr. [persistentní položka]")
-  public Double getSOverTimeCharge() {
-    return sOverTimeCharge;
+  @ApiModelProperty(example = "null", value = "příplatek za noc [persistentní položka]")
+  public Double getSNightchargetotal() {
+    return sNightchargetotal;
   }
 
-  public void setSOverTimeCharge(Double sOverTimeCharge) {
-    this.sOverTimeCharge = sOverTimeCharge;
+  public void setSNightchargetotal(Double sNightchargetotal) {
+    this.sNightchargetotal = sNightchargetotal;
   }
 
-   /**
-   * Příplatek za přesčas [persistentní položka]
-   * @return sOverTimeChargeTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Příplatek za přesčas [persistentní položka]")
-  public Double getSOverTimeChargeTotal() {
-    return sOverTimeChargeTotal;
-  }
-
-   /**
-   * Ostatní příplatky [persistentní položka]
-   * @return sOtherCharges
-  **/
-  @ApiModelProperty(example = "null", value = "Ostatní příplatky [persistentní položka]")
-  public Double getSOtherCharges() {
-    return sOtherCharges;
-  }
-
-  public Wagelistpartial sPersonalCharge(Double sPersonalCharge) {
-    this.sPersonalCharge = sPersonalCharge;
+  public Wagelistpartial sEnvhours(Double sEnvhours) {
+    this.sEnvhours = sEnvhours;
     return this;
   }
 
    /**
-   * Osobní příplatek [persistentní položka]
-   * @return sPersonalCharge
+   * hodiny ve škod. prostředí [persistentní položka]
+   * @return sEnvhours
   **/
-  @ApiModelProperty(example = "null", value = "Osobní příplatek [persistentní položka]")
-  public Double getSPersonalCharge() {
-    return sPersonalCharge;
+  @ApiModelProperty(example = "null", value = "hodiny ve škod. prostředí [persistentní položka]")
+  public Double getSEnvhours() {
+    return sEnvhours;
   }
 
-  public void setSPersonalCharge(Double sPersonalCharge) {
-    this.sPersonalCharge = sPersonalCharge;
+  public void setSEnvhours(Double sEnvhours) {
+    this.sEnvhours = sEnvhours;
   }
 
-   /**
-   * Osobní příplatek celkem [persistentní položka]
-   * @return sPersonalChargeTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Osobní příplatek celkem [persistentní položka]")
-  public Double getSPersonalChargeTotal() {
-    return sPersonalChargeTotal;
-  }
-
-  public Wagelistpartial sChiefCharge(Double sChiefCharge) {
-    this.sChiefCharge = sChiefCharge;
+  public Wagelistpartial sEnvhourstotal(Double sEnvhourstotal) {
+    this.sEnvhourstotal = sEnvhourstotal;
     return this;
   }
 
    /**
-   * Příplatek za vedení [persistentní položka]
-   * @return sChiefCharge
+   * hodiny ve škod. prostředí celk [persistentní položka]
+   * @return sEnvhourstotal
   **/
-  @ApiModelProperty(example = "null", value = "Příplatek za vedení [persistentní položka]")
-  public Double getSChiefCharge() {
-    return sChiefCharge;
+  @ApiModelProperty(example = "null", value = "hodiny ve škod. prostředí celk [persistentní položka]")
+  public Double getSEnvhourstotal() {
+    return sEnvhourstotal;
   }
 
-  public void setSChiefCharge(Double sChiefCharge) {
-    this.sChiefCharge = sChiefCharge;
+  public void setSEnvhourstotal(Double sEnvhourstotal) {
+    this.sEnvhourstotal = sEnvhourstotal;
   }
 
-   /**
-   * Příplatek za vedení celkem [persistentní položka]
-   * @return sChiefChargeTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Příplatek za vedení celkem [persistentní položka]")
-  public Double getSChiefChargeTotal() {
-    return sChiefChargeTotal;
-  }
-
-  public Wagelistpartial sSubCharge(Double sSubCharge) {
-    this.sSubCharge = sSubCharge;
+  public Wagelistpartial sEnvcharge(Double sEnvcharge) {
+    this.sEnvcharge = sEnvcharge;
     return this;
   }
 
    /**
-   * Přípl. za zastupování [persistentní položka]
-   * @return sSubCharge
+   * příplatek za prostředí opr. [persistentní položka]
+   * @return sEnvcharge
   **/
-  @ApiModelProperty(example = "null", value = "Přípl. za zastupování [persistentní položka]")
-  public Double getSSubCharge() {
-    return sSubCharge;
+  @ApiModelProperty(example = "null", value = "příplatek za prostředí opr. [persistentní položka]")
+  public Double getSEnvcharge() {
+    return sEnvcharge;
   }
 
-  public void setSSubCharge(Double sSubCharge) {
-    this.sSubCharge = sSubCharge;
+  public void setSEnvcharge(Double sEnvcharge) {
+    this.sEnvcharge = sEnvcharge;
   }
 
-   /**
-   * Přípl. za zastupování celkem [persistentní položka]
-   * @return sSubChargeTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Přípl. za zastupování celkem [persistentní položka]")
-  public Double getSSubChargeTotal() {
-    return sSubChargeTotal;
-  }
-
-  public Wagelistpartial sWEndHours(Double sWEndHours) {
-    this.sWEndHours = sWEndHours;
+  public Wagelistpartial sEnvchargetotal(Double sEnvchargetotal) {
+    this.sEnvchargetotal = sEnvchargetotal;
     return this;
   }
 
    /**
-   * Hodiny v So a Ne [persistentní položka]
-   * @return sWEndHours
+   * příplatek za prostředí [persistentní položka]
+   * @return sEnvchargetotal
   **/
-  @ApiModelProperty(example = "null", value = "Hodiny v So a Ne [persistentní položka]")
-  public Double getSWEndHours() {
-    return sWEndHours;
+  @ApiModelProperty(example = "null", value = "příplatek za prostředí [persistentní položka]")
+  public Double getSEnvchargetotal() {
+    return sEnvchargetotal;
   }
 
-  public void setSWEndHours(Double sWEndHours) {
-    this.sWEndHours = sWEndHours;
+  public void setSEnvchargetotal(Double sEnvchargetotal) {
+    this.sEnvchargetotal = sEnvchargetotal;
   }
 
-   /**
-   * Hodiny v So a Ne celkem [persistentní položka]
-   * @return sWEndHoursTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Hodiny v So a Ne celkem [persistentní položka]")
-  public Double getSWEndHoursTotal() {
-    return sWEndHoursTotal;
-  }
-
-  public Wagelistpartial sWEndCharge(Double sWEndCharge) {
-    this.sWEndCharge = sWEndCharge;
+  public Wagelistpartial sOvertime(Double sOvertime) {
+    this.sOvertime = sOvertime;
     return this;
   }
 
    /**
-   * Příplatek za So a Ne opr. [persistentní položka]
-   * @return sWEndCharge
+   * přesčasové hodiny [persistentní položka]
+   * @return sOvertime
   **/
-  @ApiModelProperty(example = "null", value = "Příplatek za So a Ne opr. [persistentní položka]")
-  public Double getSWEndCharge() {
-    return sWEndCharge;
+  @ApiModelProperty(example = "null", value = "přesčasové hodiny [persistentní položka]")
+  public Double getSOvertime() {
+    return sOvertime;
   }
 
-  public void setSWEndCharge(Double sWEndCharge) {
-    this.sWEndCharge = sWEndCharge;
+  public void setSOvertime(Double sOvertime) {
+    this.sOvertime = sOvertime;
   }
 
-   /**
-   * Příplatek za So a Ne [persistentní položka]
-   * @return sWEndChargeTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Příplatek za So a Ne [persistentní položka]")
-  public Double getSWEndChargeTotal() {
-    return sWEndChargeTotal;
-  }
-
-  public Wagelistpartial sPaidFeast(Double sPaidFeast) {
-    this.sPaidFeast = sPaidFeast;
+  public Wagelistpartial sOvertimetotal(Double sOvertimetotal) {
+    this.sOvertimetotal = sOvertimetotal;
     return this;
   }
 
    /**
-   * Proplacené svátky (d) [persistentní položka]
-   * @return sPaidFeast
+   * přesčasové hodiny celkem [persistentní položka]
+   * @return sOvertimetotal
   **/
-  @ApiModelProperty(example = "null", value = "Proplacené svátky (d) [persistentní položka]")
-  public Double getSPaidFeast() {
-    return sPaidFeast;
+  @ApiModelProperty(example = "null", value = "přesčasové hodiny celkem [persistentní položka]")
+  public Double getSOvertimetotal() {
+    return sOvertimetotal;
   }
 
-  public void setSPaidFeast(Double sPaidFeast) {
-    this.sPaidFeast = sPaidFeast;
+  public void setSOvertimetotal(Double sOvertimetotal) {
+    this.sOvertimetotal = sOvertimetotal;
   }
 
-   /**
-   * Proplacené svátky celkem (h) [persistentní položka]
-   * @return sPaidFeastTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Proplacené svátky celkem (h) [persistentní položka]")
-  public Double getSPaidFeastTotal() {
-    return sPaidFeastTotal;
-  }
-
-  public Wagelistpartial sPaidFeastCompens(Double sPaidFeastCompens) {
-    this.sPaidFeastCompens = sPaidFeastCompens;
+  public Wagelistpartial sOvertimecharge(Double sOvertimecharge) {
+    this.sOvertimecharge = sOvertimecharge;
     return this;
   }
 
    /**
-   * Náhrada za svátek opr. [persistentní položka]
-   * @return sPaidFeastCompens
+   * příplatek za přesčas opr. [persistentní položka]
+   * @return sOvertimecharge
   **/
-  @ApiModelProperty(example = "null", value = "Náhrada za svátek opr. [persistentní položka]")
-  public Double getSPaidFeastCompens() {
-    return sPaidFeastCompens;
+  @ApiModelProperty(example = "null", value = "příplatek za přesčas opr. [persistentní položka]")
+  public Double getSOvertimecharge() {
+    return sOvertimecharge;
   }
 
-  public void setSPaidFeastCompens(Double sPaidFeastCompens) {
-    this.sPaidFeastCompens = sPaidFeastCompens;
+  public void setSOvertimecharge(Double sOvertimecharge) {
+    this.sOvertimecharge = sOvertimecharge;
   }
 
-   /**
-   * Náhrada za svátek [persistentní položka]
-   * @return sPaidFeastCompTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Náhrada za svátek [persistentní položka]")
-  public Double getSPaidFeastCompTotal() {
-    return sPaidFeastCompTotal;
-  }
-
-  public Wagelistpartial sPaidFree(Double sPaidFree) {
-    this.sPaidFree = sPaidFree;
+  public Wagelistpartial sOvertimechargetotal(Double sOvertimechargetotal) {
+    this.sOvertimechargetotal = sOvertimechargetotal;
     return this;
   }
 
    /**
-   * Placené volno (h) [persistentní položka]
-   * @return sPaidFree
+   * příplatek za přesčas [persistentní položka]
+   * @return sOvertimechargetotal
   **/
-  @ApiModelProperty(example = "null", value = "Placené volno (h) [persistentní položka]")
-  public Double getSPaidFree() {
-    return sPaidFree;
+  @ApiModelProperty(example = "null", value = "příplatek za přesčas [persistentní položka]")
+  public Double getSOvertimechargetotal() {
+    return sOvertimechargetotal;
   }
 
-  public void setSPaidFree(Double sPaidFree) {
-    this.sPaidFree = sPaidFree;
+  public void setSOvertimechargetotal(Double sOvertimechargetotal) {
+    this.sOvertimechargetotal = sOvertimechargetotal;
   }
 
-   /**
-   * Placené volno celkem (h) [persistentní položka]
-   * @return sPaidFreeTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Placené volno celkem (h) [persistentní položka]")
-  public Double getSPaidFreeTotal() {
-    return sPaidFreeTotal;
-  }
-
-  public Wagelistpartial sPaidFreeCompens(Double sPaidFreeCompens) {
-    this.sPaidFreeCompens = sPaidFreeCompens;
+  public Wagelistpartial sOthercharges(Double sOthercharges) {
+    this.sOthercharges = sOthercharges;
     return this;
   }
 
    /**
-   * Náhr. za plac. volno opr. [persistentní položka]
-   * @return sPaidFreeCompens
+   * ostatní příplatky [persistentní položka]
+   * @return sOthercharges
   **/
-  @ApiModelProperty(example = "null", value = "Náhr. za plac. volno opr. [persistentní položka]")
-  public Double getSPaidFreeCompens() {
-    return sPaidFreeCompens;
+  @ApiModelProperty(example = "null", value = "ostatní příplatky [persistentní položka]")
+  public Double getSOthercharges() {
+    return sOthercharges;
   }
 
-  public void setSPaidFreeCompens(Double sPaidFreeCompens) {
-    this.sPaidFreeCompens = sPaidFreeCompens;
+  public void setSOthercharges(Double sOthercharges) {
+    this.sOthercharges = sOthercharges;
+  }
+
+  public Wagelistpartial sPersonalcharge(Double sPersonalcharge) {
+    this.sPersonalcharge = sPersonalcharge;
+    return this;
   }
 
    /**
-   * Náhrada za placené volno [persistentní položka]
-   * @return sPaidFreeCompTotal
+   * osobní příplatek [persistentní položka]
+   * @return sPersonalcharge
   **/
-  @ApiModelProperty(example = "null", value = "Náhrada za placené volno [persistentní položka]")
-  public Double getSPaidFreeCompTotal() {
-    return sPaidFreeCompTotal;
+  @ApiModelProperty(example = "null", value = "osobní příplatek [persistentní položka]")
+  public Double getSPersonalcharge() {
+    return sPersonalcharge;
+  }
+
+  public void setSPersonalcharge(Double sPersonalcharge) {
+    this.sPersonalcharge = sPersonalcharge;
+  }
+
+  public Wagelistpartial sPersonalchargetotal(Double sPersonalchargetotal) {
+    this.sPersonalchargetotal = sPersonalchargetotal;
+    return this;
+  }
+
+   /**
+   * osobní příplatek celkem [persistentní položka]
+   * @return sPersonalchargetotal
+  **/
+  @ApiModelProperty(example = "null", value = "osobní příplatek celkem [persistentní položka]")
+  public Double getSPersonalchargetotal() {
+    return sPersonalchargetotal;
+  }
+
+  public void setSPersonalchargetotal(Double sPersonalchargetotal) {
+    this.sPersonalchargetotal = sPersonalchargetotal;
+  }
+
+  public Wagelistpartial sChiefcharge(Double sChiefcharge) {
+    this.sChiefcharge = sChiefcharge;
+    return this;
+  }
+
+   /**
+   * příplatek za vedení [persistentní položka]
+   * @return sChiefcharge
+  **/
+  @ApiModelProperty(example = "null", value = "příplatek za vedení [persistentní položka]")
+  public Double getSChiefcharge() {
+    return sChiefcharge;
+  }
+
+  public void setSChiefcharge(Double sChiefcharge) {
+    this.sChiefcharge = sChiefcharge;
+  }
+
+  public Wagelistpartial sChiefchargetotal(Double sChiefchargetotal) {
+    this.sChiefchargetotal = sChiefchargetotal;
+    return this;
+  }
+
+   /**
+   * příplatek za vedení celkem [persistentní položka]
+   * @return sChiefchargetotal
+  **/
+  @ApiModelProperty(example = "null", value = "příplatek za vedení celkem [persistentní položka]")
+  public Double getSChiefchargetotal() {
+    return sChiefchargetotal;
+  }
+
+  public void setSChiefchargetotal(Double sChiefchargetotal) {
+    this.sChiefchargetotal = sChiefchargetotal;
+  }
+
+  public Wagelistpartial sSubcharge(Double sSubcharge) {
+    this.sSubcharge = sSubcharge;
+    return this;
+  }
+
+   /**
+   * přípl. za zastupování [persistentní položka]
+   * @return sSubcharge
+  **/
+  @ApiModelProperty(example = "null", value = "přípl. za zastupování [persistentní položka]")
+  public Double getSSubcharge() {
+    return sSubcharge;
+  }
+
+  public void setSSubcharge(Double sSubcharge) {
+    this.sSubcharge = sSubcharge;
+  }
+
+  public Wagelistpartial sSubchargetotal(Double sSubchargetotal) {
+    this.sSubchargetotal = sSubchargetotal;
+    return this;
+  }
+
+   /**
+   * přípl. za zastupování celkem [persistentní položka]
+   * @return sSubchargetotal
+  **/
+  @ApiModelProperty(example = "null", value = "přípl. za zastupování celkem [persistentní položka]")
+  public Double getSSubchargetotal() {
+    return sSubchargetotal;
+  }
+
+  public void setSSubchargetotal(Double sSubchargetotal) {
+    this.sSubchargetotal = sSubchargetotal;
+  }
+
+  public Wagelistpartial sWendhours(Double sWendhours) {
+    this.sWendhours = sWendhours;
+    return this;
+  }
+
+   /**
+   * hodiny v so a ne [persistentní položka]
+   * @return sWendhours
+  **/
+  @ApiModelProperty(example = "null", value = "hodiny v so a ne [persistentní položka]")
+  public Double getSWendhours() {
+    return sWendhours;
+  }
+
+  public void setSWendhours(Double sWendhours) {
+    this.sWendhours = sWendhours;
+  }
+
+  public Wagelistpartial sWendhourstotal(Double sWendhourstotal) {
+    this.sWendhourstotal = sWendhourstotal;
+    return this;
+  }
+
+   /**
+   * hodiny v so a ne celkem [persistentní položka]
+   * @return sWendhourstotal
+  **/
+  @ApiModelProperty(example = "null", value = "hodiny v so a ne celkem [persistentní položka]")
+  public Double getSWendhourstotal() {
+    return sWendhourstotal;
+  }
+
+  public void setSWendhourstotal(Double sWendhourstotal) {
+    this.sWendhourstotal = sWendhourstotal;
+  }
+
+  public Wagelistpartial sWendcharge(Double sWendcharge) {
+    this.sWendcharge = sWendcharge;
+    return this;
+  }
+
+   /**
+   * příplatek za so a ne opr. [persistentní položka]
+   * @return sWendcharge
+  **/
+  @ApiModelProperty(example = "null", value = "příplatek za so a ne opr. [persistentní položka]")
+  public Double getSWendcharge() {
+    return sWendcharge;
+  }
+
+  public void setSWendcharge(Double sWendcharge) {
+    this.sWendcharge = sWendcharge;
+  }
+
+  public Wagelistpartial sWendchargetotal(Double sWendchargetotal) {
+    this.sWendchargetotal = sWendchargetotal;
+    return this;
+  }
+
+   /**
+   * příplatek za so a ne [persistentní položka]
+   * @return sWendchargetotal
+  **/
+  @ApiModelProperty(example = "null", value = "příplatek za so a ne [persistentní položka]")
+  public Double getSWendchargetotal() {
+    return sWendchargetotal;
+  }
+
+  public void setSWendchargetotal(Double sWendchargetotal) {
+    this.sWendchargetotal = sWendchargetotal;
+  }
+
+  public Wagelistpartial sPaidfeast(Double sPaidfeast) {
+    this.sPaidfeast = sPaidfeast;
+    return this;
+  }
+
+   /**
+   * proplacené svátky (d) [persistentní položka]
+   * @return sPaidfeast
+  **/
+  @ApiModelProperty(example = "null", value = "proplacené svátky (d) [persistentní položka]")
+  public Double getSPaidfeast() {
+    return sPaidfeast;
+  }
+
+  public void setSPaidfeast(Double sPaidfeast) {
+    this.sPaidfeast = sPaidfeast;
+  }
+
+  public Wagelistpartial sPaidfeasttotal(Double sPaidfeasttotal) {
+    this.sPaidfeasttotal = sPaidfeasttotal;
+    return this;
+  }
+
+   /**
+   * proplacené svátky celkem (h) [persistentní položka]
+   * @return sPaidfeasttotal
+  **/
+  @ApiModelProperty(example = "null", value = "proplacené svátky celkem (h) [persistentní položka]")
+  public Double getSPaidfeasttotal() {
+    return sPaidfeasttotal;
+  }
+
+  public void setSPaidfeasttotal(Double sPaidfeasttotal) {
+    this.sPaidfeasttotal = sPaidfeasttotal;
+  }
+
+  public Wagelistpartial sPaidfeastcompens(Double sPaidfeastcompens) {
+    this.sPaidfeastcompens = sPaidfeastcompens;
+    return this;
+  }
+
+   /**
+   * náhrada za svátek opr. [persistentní položka]
+   * @return sPaidfeastcompens
+  **/
+  @ApiModelProperty(example = "null", value = "náhrada za svátek opr. [persistentní položka]")
+  public Double getSPaidfeastcompens() {
+    return sPaidfeastcompens;
+  }
+
+  public void setSPaidfeastcompens(Double sPaidfeastcompens) {
+    this.sPaidfeastcompens = sPaidfeastcompens;
+  }
+
+  public Wagelistpartial sPaidfeastcomptotal(Double sPaidfeastcomptotal) {
+    this.sPaidfeastcomptotal = sPaidfeastcomptotal;
+    return this;
+  }
+
+   /**
+   * náhrada za svátek [persistentní položka]
+   * @return sPaidfeastcomptotal
+  **/
+  @ApiModelProperty(example = "null", value = "náhrada za svátek [persistentní položka]")
+  public Double getSPaidfeastcomptotal() {
+    return sPaidfeastcomptotal;
+  }
+
+  public void setSPaidfeastcomptotal(Double sPaidfeastcomptotal) {
+    this.sPaidfeastcomptotal = sPaidfeastcomptotal;
+  }
+
+  public Wagelistpartial sPaidfree(Double sPaidfree) {
+    this.sPaidfree = sPaidfree;
+    return this;
+  }
+
+   /**
+   * placené volno (h) [persistentní položka]
+   * @return sPaidfree
+  **/
+  @ApiModelProperty(example = "null", value = "placené volno (h) [persistentní položka]")
+  public Double getSPaidfree() {
+    return sPaidfree;
+  }
+
+  public void setSPaidfree(Double sPaidfree) {
+    this.sPaidfree = sPaidfree;
+  }
+
+  public Wagelistpartial sPaidfreetotal(Double sPaidfreetotal) {
+    this.sPaidfreetotal = sPaidfreetotal;
+    return this;
+  }
+
+   /**
+   * placené volno celkem (h) [persistentní položka]
+   * @return sPaidfreetotal
+  **/
+  @ApiModelProperty(example = "null", value = "placené volno celkem (h) [persistentní položka]")
+  public Double getSPaidfreetotal() {
+    return sPaidfreetotal;
+  }
+
+  public void setSPaidfreetotal(Double sPaidfreetotal) {
+    this.sPaidfreetotal = sPaidfreetotal;
+  }
+
+  public Wagelistpartial sPaidfreecompens(Double sPaidfreecompens) {
+    this.sPaidfreecompens = sPaidfreecompens;
+    return this;
+  }
+
+   /**
+   * náhr. za plac. volno opr. [persistentní položka]
+   * @return sPaidfreecompens
+  **/
+  @ApiModelProperty(example = "null", value = "náhr. za plac. volno opr. [persistentní položka]")
+  public Double getSPaidfreecompens() {
+    return sPaidfreecompens;
+  }
+
+  public void setSPaidfreecompens(Double sPaidfreecompens) {
+    this.sPaidfreecompens = sPaidfreecompens;
+  }
+
+  public Wagelistpartial sPaidfreecomptotal(Double sPaidfreecomptotal) {
+    this.sPaidfreecomptotal = sPaidfreecomptotal;
+    return this;
+  }
+
+   /**
+   * náhrada za placené volno [persistentní položka]
+   * @return sPaidfreecomptotal
+  **/
+  @ApiModelProperty(example = "null", value = "náhrada za placené volno [persistentní položka]")
+  public Double getSPaidfreecomptotal() {
+    return sPaidfreecomptotal;
+  }
+
+  public void setSPaidfreecomptotal(Double sPaidfreecomptotal) {
+    this.sPaidfreecomptotal = sPaidfreecomptotal;
   }
 
   public Wagelistpartial sHoliday(Double sHoliday) {
@@ -2441,58 +2891,76 @@ public class Wagelistpartial   {
     this.sHoliday = sHoliday;
   }
 
-  public Wagelistpartial sHolidayCompens(Double sHolidayCompens) {
-    this.sHolidayCompens = sHolidayCompens;
+  public Wagelistpartial sHolidaycompens(Double sHolidaycompens) {
+    this.sHolidaycompens = sHolidaycompens;
     return this;
   }
 
    /**
-   * Náhr. za dovolenou opr. [persistentní položka]
-   * @return sHolidayCompens
+   * náhr. za dovolenou opr. [persistentní položka]
+   * @return sHolidaycompens
   **/
-  @ApiModelProperty(example = "null", value = "Náhr. za dovolenou opr. [persistentní položka]")
-  public Double getSHolidayCompens() {
-    return sHolidayCompens;
+  @ApiModelProperty(example = "null", value = "náhr. za dovolenou opr. [persistentní položka]")
+  public Double getSHolidaycompens() {
+    return sHolidaycompens;
   }
 
-  public void setSHolidayCompens(Double sHolidayCompens) {
-    this.sHolidayCompens = sHolidayCompens;
+  public void setSHolidaycompens(Double sHolidaycompens) {
+    this.sHolidaycompens = sHolidaycompens;
   }
 
-   /**
-   * Náhrada za dovolenou [persistentní položka]
-   * @return sHolidayCompTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Náhrada za dovolenou [persistentní položka]")
-  public Double getSHolidayCompTotal() {
-    return sHolidayCompTotal;
-  }
-
-  public Wagelistpartial sPaidHolidayCompens(Double sPaidHolidayCompens) {
-    this.sPaidHolidayCompens = sPaidHolidayCompens;
+  public Wagelistpartial sHolidaycomptotal(Double sHolidaycomptotal) {
+    this.sHolidaycomptotal = sHolidaycomptotal;
     return this;
   }
 
    /**
-   * Náhr. proplac. dovolené opr. [persistentní položka]
-   * @return sPaidHolidayCompens
+   * náhrada za dovolenou [persistentní položka]
+   * @return sHolidaycomptotal
   **/
-  @ApiModelProperty(example = "null", value = "Náhr. proplac. dovolené opr. [persistentní položka]")
-  public Double getSPaidHolidayCompens() {
-    return sPaidHolidayCompens;
+  @ApiModelProperty(example = "null", value = "náhrada za dovolenou [persistentní položka]")
+  public Double getSHolidaycomptotal() {
+    return sHolidaycomptotal;
   }
 
-  public void setSPaidHolidayCompens(Double sPaidHolidayCompens) {
-    this.sPaidHolidayCompens = sPaidHolidayCompens;
+  public void setSHolidaycomptotal(Double sHolidaycomptotal) {
+    this.sHolidaycomptotal = sHolidaycomptotal;
+  }
+
+  public Wagelistpartial sPaidholidaycompens(Double sPaidholidaycompens) {
+    this.sPaidholidaycompens = sPaidholidaycompens;
+    return this;
   }
 
    /**
-   * Náhrada za proplac. dovolenou [persistentní položka]
-   * @return sPaidHolidayCompTotal
+   * náhr. proplac. dovolené opr. [persistentní položka]
+   * @return sPaidholidaycompens
   **/
-  @ApiModelProperty(example = "null", value = "Náhrada za proplac. dovolenou [persistentní položka]")
-  public Double getSPaidHolidayCompTotal() {
-    return sPaidHolidayCompTotal;
+  @ApiModelProperty(example = "null", value = "náhr. proplac. dovolené opr. [persistentní položka]")
+  public Double getSPaidholidaycompens() {
+    return sPaidholidaycompens;
+  }
+
+  public void setSPaidholidaycompens(Double sPaidholidaycompens) {
+    this.sPaidholidaycompens = sPaidholidaycompens;
+  }
+
+  public Wagelistpartial sPaidholidaycomptotal(Double sPaidholidaycomptotal) {
+    this.sPaidholidaycomptotal = sPaidholidaycomptotal;
+    return this;
+  }
+
+   /**
+   * náhrada za proplac. dovolenou [persistentní položka]
+   * @return sPaidholidaycomptotal
+  **/
+  @ApiModelProperty(example = "null", value = "náhrada za proplac. dovolenou [persistentní položka]")
+  public Double getSPaidholidaycomptotal() {
+    return sPaidholidaycomptotal;
+  }
+
+  public void setSPaidholidaycomptotal(Double sPaidholidaycomptotal) {
+    this.sPaidholidaycomptotal = sPaidholidaycomptotal;
   }
 
   public Wagelistpartial sReadiness(Double sReadiness) {
@@ -2501,10 +2969,10 @@ public class Wagelistpartial   {
   }
 
    /**
-   * Pracovní pohotovost (h) [persistentní položka]
+   * pracovní pohotovost (h) [persistentní položka]
    * @return sReadiness
   **/
-  @ApiModelProperty(example = "null", value = "Pracovní pohotovost (h) [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "pracovní pohotovost (h) [persistentní položka]")
   public Double getSReadiness() {
     return sReadiness;
   }
@@ -2513,364 +2981,472 @@ public class Wagelistpartial   {
     this.sReadiness = sReadiness;
   }
 
-   /**
-   * Prac. pohotovost celkem (h) [persistentní položka]
-   * @return sReadinessTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Prac. pohotovost celkem (h) [persistentní položka]")
-  public Double getSReadinessTotal() {
-    return sReadinessTotal;
-  }
-
-  public Wagelistpartial sReadinessCompens(Double sReadinessCompens) {
-    this.sReadinessCompens = sReadinessCompens;
+  public Wagelistpartial sReadinesstotal(Double sReadinesstotal) {
+    this.sReadinesstotal = sReadinesstotal;
     return this;
   }
 
    /**
-   * Odměna za prac. pohot. opr. [persistentní položka]
-   * @return sReadinessCompens
+   * prac. pohotovost celkem (h) [persistentní položka]
+   * @return sReadinesstotal
   **/
-  @ApiModelProperty(example = "null", value = "Odměna za prac. pohot. opr. [persistentní položka]")
-  public Double getSReadinessCompens() {
-    return sReadinessCompens;
+  @ApiModelProperty(example = "null", value = "prac. pohotovost celkem (h) [persistentní položka]")
+  public Double getSReadinesstotal() {
+    return sReadinesstotal;
   }
 
-  public void setSReadinessCompens(Double sReadinessCompens) {
-    this.sReadinessCompens = sReadinessCompens;
+  public void setSReadinesstotal(Double sReadinesstotal) {
+    this.sReadinesstotal = sReadinesstotal;
   }
 
-   /**
-   * Odměna za pracovní pohot. [persistentní položka]
-   * @return sReadinessCompTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Odměna za pracovní pohot. [persistentní položka]")
-  public Double getSReadinessCompTotal() {
-    return sReadinessCompTotal;
-  }
-
-  public Wagelistpartial sArmyExercise(Double sArmyExercise) {
-    this.sArmyExercise = sArmyExercise;
+  public Wagelistpartial sReadinesscompens(Double sReadinesscompens) {
+    this.sReadinesscompens = sReadinesscompens;
     return this;
   }
 
    /**
-   * Vojenské cvičení (d) [persistentní položka]
-   * @return sArmyExercise
+   * odměna za prac. pohot. opr. [persistentní položka]
+   * @return sReadinesscompens
   **/
-  @ApiModelProperty(example = "null", value = "Vojenské cvičení (d) [persistentní položka]")
-  public Double getSArmyExercise() {
-    return sArmyExercise;
+  @ApiModelProperty(example = "null", value = "odměna za prac. pohot. opr. [persistentní položka]")
+  public Double getSReadinesscompens() {
+    return sReadinesscompens;
   }
 
-  public void setSArmyExercise(Double sArmyExercise) {
-    this.sArmyExercise = sArmyExercise;
+  public void setSReadinesscompens(Double sReadinesscompens) {
+    this.sReadinesscompens = sReadinesscompens;
   }
 
-   /**
-   * Voj. cvičení celkem (h) [persistentní položka]
-   * @return sArmyExerciseTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Voj. cvičení celkem (h) [persistentní položka]")
-  public Double getSArmyExerciseTotal() {
-    return sArmyExerciseTotal;
-  }
-
-  public Wagelistpartial sArmyDuty(Double sArmyDuty) {
-    this.sArmyDuty = sArmyDuty;
+  public Wagelistpartial sReadinesscomptotal(Double sReadinesscomptotal) {
+    this.sReadinesscomptotal = sReadinesscomptotal;
     return this;
   }
 
    /**
-   * Vojenská služba (d) [persistentní položka]
-   * @return sArmyDuty
+   * odměna za pracovní pohot. [persistentní položka]
+   * @return sReadinesscomptotal
   **/
-  @ApiModelProperty(example = "null", value = "Vojenská služba (d) [persistentní položka]")
-  public Double getSArmyDuty() {
-    return sArmyDuty;
+  @ApiModelProperty(example = "null", value = "odměna za pracovní pohot. [persistentní položka]")
+  public Double getSReadinesscomptotal() {
+    return sReadinesscomptotal;
   }
 
-  public void setSArmyDuty(Double sArmyDuty) {
-    this.sArmyDuty = sArmyDuty;
+  public void setSReadinesscomptotal(Double sReadinesscomptotal) {
+    this.sReadinesscomptotal = sReadinesscomptotal;
   }
 
-  public Wagelistpartial sArmyPerCent(Double sArmyPerCent) {
-    this.sArmyPerCent = sArmyPerCent;
+  public Wagelistpartial sArmyexercise(Double sArmyexercise) {
+    this.sArmyexercise = sArmyexercise;
     return this;
   }
 
    /**
-   * Voj. pov. proc. průměru [persistentní položka]
-   * @return sArmyPerCent
+   * vojenské cvičení (d) [persistentní položka]
+   * @return sArmyexercise
   **/
-  @ApiModelProperty(example = "null", value = "Voj. pov. proc. průměru [persistentní položka]")
-  public Double getSArmyPerCent() {
-    return sArmyPerCent;
+  @ApiModelProperty(example = "null", value = "vojenské cvičení (d) [persistentní položka]")
+  public Double getSArmyexercise() {
+    return sArmyexercise;
   }
 
-  public void setSArmyPerCent(Double sArmyPerCent) {
-    this.sArmyPerCent = sArmyPerCent;
+  public void setSArmyexercise(Double sArmyexercise) {
+    this.sArmyexercise = sArmyexercise;
   }
 
-  public Wagelistpartial sArmyCompensation(Double sArmyCompensation) {
-    this.sArmyCompensation = sArmyCompensation;
+  public Wagelistpartial sArmyexercisetotal(Double sArmyexercisetotal) {
+    this.sArmyexercisetotal = sArmyexercisetotal;
     return this;
   }
 
    /**
-   * Voj. povinnost opr. [persistentní položka]
-   * @return sArmyCompensation
+   * voj. cvičení celkem (h) [persistentní položka]
+   * @return sArmyexercisetotal
   **/
-  @ApiModelProperty(example = "null", value = "Voj. povinnost opr. [persistentní položka]")
-  public Double getSArmyCompensation() {
-    return sArmyCompensation;
+  @ApiModelProperty(example = "null", value = "voj. cvičení celkem (h) [persistentní položka]")
+  public Double getSArmyexercisetotal() {
+    return sArmyexercisetotal;
   }
 
-  public void setSArmyCompensation(Double sArmyCompensation) {
-    this.sArmyCompensation = sArmyCompensation;
+  public void setSArmyexercisetotal(Double sArmyexercisetotal) {
+    this.sArmyexercisetotal = sArmyexercisetotal;
   }
 
-   /**
-   * Vojenská povinnost [persistentní položka]
-   * @return sArmyCompTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Vojenská povinnost [persistentní položka]")
-  public Double getSArmyCompTotal() {
-    return sArmyCompTotal;
-  }
-
-  public Wagelistpartial sLostWageCompens(Double sLostWageCompens) {
-    this.sLostWageCompens = sLostWageCompens;
+  public Wagelistpartial sArmyduty(Double sArmyduty) {
+    this.sArmyduty = sArmyduty;
     return this;
   }
 
    /**
-   * Ztráta na výdělku [persistentní položka]
-   * @return sLostWageCompens
+   * vojenská služba (d) [persistentní položka]
+   * @return sArmyduty
   **/
-  @ApiModelProperty(example = "null", value = "Ztráta na výdělku [persistentní položka]")
-  public Double getSLostWageCompens() {
-    return sLostWageCompens;
+  @ApiModelProperty(example = "null", value = "vojenská služba (d) [persistentní položka]")
+  public Double getSArmyduty() {
+    return sArmyduty;
   }
 
-  public void setSLostWageCompens(Double sLostWageCompens) {
-    this.sLostWageCompens = sLostWageCompens;
+  public void setSArmyduty(Double sArmyduty) {
+    this.sArmyduty = sArmyduty;
   }
 
-   /**
-   * Ostatní náhrady celkem [persistentní položka]
-   * @return sOtherCompensations
-  **/
-  @ApiModelProperty(example = "null", value = "Ostatní náhrady celkem [persistentní položka]")
-  public Double getSOtherCompensations() {
-    return sOtherCompensations;
-  }
-
-  public Wagelistpartial sNaturalWage(Double sNaturalWage) {
-    this.sNaturalWage = sNaturalWage;
+  public Wagelistpartial sArmypercent(Double sArmypercent) {
+    this.sArmypercent = sArmypercent;
     return this;
   }
 
    /**
-   * Naturální mzda [persistentní položka]
-   * @return sNaturalWage
+   * voj. pov. proc. průměru [persistentní položka]
+   * @return sArmypercent
   **/
-  @ApiModelProperty(example = "null", value = "Naturální mzda [persistentní položka]")
-  public Double getSNaturalWage() {
-    return sNaturalWage;
+  @ApiModelProperty(example = "null", value = "voj. pov. proc. průměru [persistentní položka]")
+  public Double getSArmypercent() {
+    return sArmypercent;
   }
 
-  public void setSNaturalWage(Double sNaturalWage) {
-    this.sNaturalWage = sNaturalWage;
+  public void setSArmypercent(Double sArmypercent) {
+    this.sArmypercent = sArmypercent;
   }
 
-   /**
-   * Natur. mzda celkem [persistentní položka]
-   * @return sNaturalWageTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Natur. mzda celkem [persistentní položka]")
-  public Double getSNaturalWageTotal() {
-    return sNaturalWageTotal;
-  }
-
-  public Wagelistpartial sApprenticeFee(Double sApprenticeFee) {
-    this.sApprenticeFee = sApprenticeFee;
+  public Wagelistpartial sArmycompensation(Double sArmycompensation) {
+    this.sArmycompensation = sArmycompensation;
     return this;
   }
 
    /**
-   * Odměna za práci učňů [persistentní položka]
-   * @return sApprenticeFee
+   * voj. povinnost opr. [persistentní položka]
+   * @return sArmycompensation
   **/
-  @ApiModelProperty(example = "null", value = "Odměna za práci učňů [persistentní položka]")
-  public Double getSApprenticeFee() {
-    return sApprenticeFee;
+  @ApiModelProperty(example = "null", value = "voj. povinnost opr. [persistentní položka]")
+  public Double getSArmycompensation() {
+    return sArmycompensation;
   }
 
-  public void setSApprenticeFee(Double sApprenticeFee) {
-    this.sApprenticeFee = sApprenticeFee;
+  public void setSArmycompensation(Double sArmycompensation) {
+    this.sArmycompensation = sArmycompensation;
   }
 
-   /**
-   * Odměna za práci učňů celkem [persistentní položka]
-   * @return sApprenticeFeeTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Odměna za práci učňů celkem [persistentní položka]")
-  public Double getSApprenticeFeeTotal() {
-    return sApprenticeFeeTotal;
-  }
-
-  public Wagelistpartial sExecutiveFee(Double sExecutiveFee) {
-    this.sExecutiveFee = sExecutiveFee;
+  public Wagelistpartial sArmycomptotal(Double sArmycomptotal) {
+    this.sArmycomptotal = sArmycomptotal;
     return this;
   }
 
    /**
-   * Odměny jednatelů (§6/1b) [persistentní položka]
-   * @return sExecutiveFee
+   * vojenská povinnost [persistentní položka]
+   * @return sArmycomptotal
   **/
-  @ApiModelProperty(example = "null", value = "Odměny jednatelů (§6/1b) [persistentní položka]")
-  public Double getSExecutiveFee() {
-    return sExecutiveFee;
+  @ApiModelProperty(example = "null", value = "vojenská povinnost [persistentní položka]")
+  public Double getSArmycomptotal() {
+    return sArmycomptotal;
   }
 
-  public void setSExecutiveFee(Double sExecutiveFee) {
-    this.sExecutiveFee = sExecutiveFee;
+  public void setSArmycomptotal(Double sArmycomptotal) {
+    this.sArmycomptotal = sArmycomptotal;
   }
 
-   /**
-   * Odměny jednatelů celkem [persistentní položka]
-   * @return sExecutiveFeeTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Odměny jednatelů celkem [persistentní položka]")
-  public Double getSExecutiveFeeTotal() {
-    return sExecutiveFeeTotal;
-  }
-
-  public Wagelistpartial sCorporateFee(Double sCorporateFee) {
-    this.sCorporateFee = sCorporateFee;
+  public Wagelistpartial sLostwagecompens(Double sLostwagecompens) {
+    this.sLostwagecompens = sLostwagecompens;
     return this;
   }
 
    /**
-   * Odměny statut. org (§6/1c) [persistentní položka]
-   * @return sCorporateFee
+   * ztráta na výdělku [persistentní položka]
+   * @return sLostwagecompens
   **/
-  @ApiModelProperty(example = "null", value = "Odměny statut. org (§6/1c) [persistentní položka]")
-  public Double getSCorporateFee() {
-    return sCorporateFee;
+  @ApiModelProperty(example = "null", value = "ztráta na výdělku [persistentní položka]")
+  public Double getSLostwagecompens() {
+    return sLostwagecompens;
   }
 
-  public void setSCorporateFee(Double sCorporateFee) {
-    this.sCorporateFee = sCorporateFee;
+  public void setSLostwagecompens(Double sLostwagecompens) {
+    this.sLostwagecompens = sLostwagecompens;
   }
 
-   /**
-   * Odměny statut. org. celkem [persistentní položka]
-   * @return sCorporateFeeTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Odměny statut. org. celkem [persistentní položka]")
-  public Double getSCorporateFeeTotal() {
-    return sCorporateFeeTotal;
-  }
-
-  public Wagelistpartial sExitClaim(Boolean sExitClaim) {
-    this.sExitClaim = sExitClaim;
+  public Wagelistpartial sOthercompensations(Double sOthercompensations) {
+    this.sOthercompensations = sOthercompensations;
     return this;
   }
 
    /**
-   * Nárok na odstupné [persistentní položka]
-   * @return sExitClaim
+   * ostatní náhrady celkem [persistentní položka]
+   * @return sOthercompensations
   **/
-  @ApiModelProperty(example = "null", value = "Nárok na odstupné [persistentní položka]")
-  public Boolean getSExitClaim() {
-    return sExitClaim;
+  @ApiModelProperty(example = "null", value = "ostatní náhrady celkem [persistentní položka]")
+  public Double getSOthercompensations() {
+    return sOthercompensations;
   }
 
-  public void setSExitClaim(Boolean sExitClaim) {
-    this.sExitClaim = sExitClaim;
+  public void setSOthercompensations(Double sOthercompensations) {
+    this.sOthercompensations = sOthercompensations;
   }
 
-  public Wagelistpartial sExitMultiple(Double sExitMultiple) {
-    this.sExitMultiple = sExitMultiple;
+  public Wagelistpartial sNaturalwage(Double sNaturalwage) {
+    this.sNaturalwage = sNaturalwage;
     return this;
   }
 
    /**
-   * Nárok na násobek průměrné mzdy [persistentní položka]
-   * @return sExitMultiple
+   * naturální mzda [persistentní položka]
+   * @return sNaturalwage
   **/
-  @ApiModelProperty(example = "null", value = "Nárok na násobek průměrné mzdy [persistentní položka]")
-  public Double getSExitMultiple() {
-    return sExitMultiple;
+  @ApiModelProperty(example = "null", value = "naturální mzda [persistentní položka]")
+  public Double getSNaturalwage() {
+    return sNaturalwage;
   }
 
-  public void setSExitMultiple(Double sExitMultiple) {
-    this.sExitMultiple = sExitMultiple;
+  public void setSNaturalwage(Double sNaturalwage) {
+    this.sNaturalwage = sNaturalwage;
   }
 
-   /**
-   * Nárokovatelné odstupné [persistentní položka]
-   * @return sExitDemand
-  **/
-  @ApiModelProperty(example = "null", value = "Nárokovatelné odstupné [persistentní položka]")
-  public Double getSExitDemand() {
-    return sExitDemand;
-  }
-
-  public Wagelistpartial sExitCompensation(Double sExitCompensation) {
-    this.sExitCompensation = sExitCompensation;
+  public Wagelistpartial sNaturalwagetotal(Double sNaturalwagetotal) {
+    this.sNaturalwagetotal = sNaturalwagetotal;
     return this;
   }
 
    /**
-   * Odstupné [persistentní položka]
-   * @return sExitCompensation
+   * natur. mzda celkem [persistentní položka]
+   * @return sNaturalwagetotal
   **/
-  @ApiModelProperty(example = "null", value = "Odstupné [persistentní položka]")
-  public Double getSExitCompensation() {
-    return sExitCompensation;
+  @ApiModelProperty(example = "null", value = "natur. mzda celkem [persistentní položka]")
+  public Double getSNaturalwagetotal() {
+    return sNaturalwagetotal;
   }
 
-  public void setSExitCompensation(Double sExitCompensation) {
-    this.sExitCompensation = sExitCompensation;
+  public void setSNaturalwagetotal(Double sNaturalwagetotal) {
+    this.sNaturalwagetotal = sNaturalwagetotal;
   }
 
-   /**
-   * Odstupné celkem [persistentní položka]
-   * @return sExitCompTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Odstupné celkem [persistentní položka]")
-  public Double getSExitCompTotal() {
-    return sExitCompTotal;
-  }
-
-   /**
-   * Odstupné - základ ZP [persistentní položka]
-   * @return sExitInsuranceBase
-  **/
-  @ApiModelProperty(example = "null", value = "Odstupné - základ ZP [persistentní položka]")
-  public Double getSExitInsuranceBase() {
-    return sExitInsuranceBase;
-  }
-
-  public Wagelistpartial sExitFee(Double sExitFee) {
-    this.sExitFee = sExitFee;
+  public Wagelistpartial sApprenticefee(Double sApprenticefee) {
+    this.sApprenticefee = sApprenticefee;
     return this;
   }
 
    /**
-   * Odchodné [persistentní položka]
-   * @return sExitFee
+   * odměna za práci učňů [persistentní položka]
+   * @return sApprenticefee
   **/
-  @ApiModelProperty(example = "null", value = "Odchodné [persistentní položka]")
-  public Double getSExitFee() {
-    return sExitFee;
+  @ApiModelProperty(example = "null", value = "odměna za práci učňů [persistentní položka]")
+  public Double getSApprenticefee() {
+    return sApprenticefee;
   }
 
-  public void setSExitFee(Double sExitFee) {
-    this.sExitFee = sExitFee;
+  public void setSApprenticefee(Double sApprenticefee) {
+    this.sApprenticefee = sApprenticefee;
+  }
+
+  public Wagelistpartial sApprenticefeetotal(Double sApprenticefeetotal) {
+    this.sApprenticefeetotal = sApprenticefeetotal;
+    return this;
+  }
+
+   /**
+   * odměna za práci učňů celkem [persistentní položka]
+   * @return sApprenticefeetotal
+  **/
+  @ApiModelProperty(example = "null", value = "odměna za práci učňů celkem [persistentní položka]")
+  public Double getSApprenticefeetotal() {
+    return sApprenticefeetotal;
+  }
+
+  public void setSApprenticefeetotal(Double sApprenticefeetotal) {
+    this.sApprenticefeetotal = sApprenticefeetotal;
+  }
+
+  public Wagelistpartial sExecutivefee(Double sExecutivefee) {
+    this.sExecutivefee = sExecutivefee;
+    return this;
+  }
+
+   /**
+   * odměny jednatelů (§6/1b) [persistentní položka]
+   * @return sExecutivefee
+  **/
+  @ApiModelProperty(example = "null", value = "odměny jednatelů (§6/1b) [persistentní položka]")
+  public Double getSExecutivefee() {
+    return sExecutivefee;
+  }
+
+  public void setSExecutivefee(Double sExecutivefee) {
+    this.sExecutivefee = sExecutivefee;
+  }
+
+  public Wagelistpartial sExecutivefeetotal(Double sExecutivefeetotal) {
+    this.sExecutivefeetotal = sExecutivefeetotal;
+    return this;
+  }
+
+   /**
+   * odměny jednatelů celkem [persistentní položka]
+   * @return sExecutivefeetotal
+  **/
+  @ApiModelProperty(example = "null", value = "odměny jednatelů celkem [persistentní položka]")
+  public Double getSExecutivefeetotal() {
+    return sExecutivefeetotal;
+  }
+
+  public void setSExecutivefeetotal(Double sExecutivefeetotal) {
+    this.sExecutivefeetotal = sExecutivefeetotal;
+  }
+
+  public Wagelistpartial sCorporatefee(Double sCorporatefee) {
+    this.sCorporatefee = sCorporatefee;
+    return this;
+  }
+
+   /**
+   * odměny statut. org (§6/1c) [persistentní položka]
+   * @return sCorporatefee
+  **/
+  @ApiModelProperty(example = "null", value = "odměny statut. org (§6/1c) [persistentní položka]")
+  public Double getSCorporatefee() {
+    return sCorporatefee;
+  }
+
+  public void setSCorporatefee(Double sCorporatefee) {
+    this.sCorporatefee = sCorporatefee;
+  }
+
+  public Wagelistpartial sCorporatefeetotal(Double sCorporatefeetotal) {
+    this.sCorporatefeetotal = sCorporatefeetotal;
+    return this;
+  }
+
+   /**
+   * odměny statut. org. celkem [persistentní položka]
+   * @return sCorporatefeetotal
+  **/
+  @ApiModelProperty(example = "null", value = "odměny statut. org. celkem [persistentní položka]")
+  public Double getSCorporatefeetotal() {
+    return sCorporatefeetotal;
+  }
+
+  public void setSCorporatefeetotal(Double sCorporatefeetotal) {
+    this.sCorporatefeetotal = sCorporatefeetotal;
+  }
+
+  public Wagelistpartial sExitclaim(Boolean sExitclaim) {
+    this.sExitclaim = sExitclaim;
+    return this;
+  }
+
+   /**
+   * nárok na odstupné [persistentní položka]
+   * @return sExitclaim
+  **/
+  @ApiModelProperty(example = "null", value = "nárok na odstupné [persistentní položka]")
+  public Boolean getSExitclaim() {
+    return sExitclaim;
+  }
+
+  public void setSExitclaim(Boolean sExitclaim) {
+    this.sExitclaim = sExitclaim;
+  }
+
+  public Wagelistpartial sExitmultiple(Double sExitmultiple) {
+    this.sExitmultiple = sExitmultiple;
+    return this;
+  }
+
+   /**
+   * nárok na násobek průměrné mzdy [persistentní položka]
+   * @return sExitmultiple
+  **/
+  @ApiModelProperty(example = "null", value = "nárok na násobek průměrné mzdy [persistentní položka]")
+  public Double getSExitmultiple() {
+    return sExitmultiple;
+  }
+
+  public void setSExitmultiple(Double sExitmultiple) {
+    this.sExitmultiple = sExitmultiple;
+  }
+
+  public Wagelistpartial sExitdemand(Double sExitdemand) {
+    this.sExitdemand = sExitdemand;
+    return this;
+  }
+
+   /**
+   * nárokovatelné odstupné [persistentní položka]
+   * @return sExitdemand
+  **/
+  @ApiModelProperty(example = "null", value = "nárokovatelné odstupné [persistentní položka]")
+  public Double getSExitdemand() {
+    return sExitdemand;
+  }
+
+  public void setSExitdemand(Double sExitdemand) {
+    this.sExitdemand = sExitdemand;
+  }
+
+  public Wagelistpartial sExitcompensation(Double sExitcompensation) {
+    this.sExitcompensation = sExitcompensation;
+    return this;
+  }
+
+   /**
+   * odstupné [persistentní položka]
+   * @return sExitcompensation
+  **/
+  @ApiModelProperty(example = "null", value = "odstupné [persistentní položka]")
+  public Double getSExitcompensation() {
+    return sExitcompensation;
+  }
+
+  public void setSExitcompensation(Double sExitcompensation) {
+    this.sExitcompensation = sExitcompensation;
+  }
+
+  public Wagelistpartial sExitcomptotal(Double sExitcomptotal) {
+    this.sExitcomptotal = sExitcomptotal;
+    return this;
+  }
+
+   /**
+   * odstupné celkem [persistentní položka]
+   * @return sExitcomptotal
+  **/
+  @ApiModelProperty(example = "null", value = "odstupné celkem [persistentní položka]")
+  public Double getSExitcomptotal() {
+    return sExitcomptotal;
+  }
+
+  public void setSExitcomptotal(Double sExitcomptotal) {
+    this.sExitcomptotal = sExitcomptotal;
+  }
+
+  public Wagelistpartial sExitinsurancebase(Double sExitinsurancebase) {
+    this.sExitinsurancebase = sExitinsurancebase;
+    return this;
+  }
+
+   /**
+   * odstupné - základ zp [persistentní položka]
+   * @return sExitinsurancebase
+  **/
+  @ApiModelProperty(example = "null", value = "odstupné - základ zp [persistentní položka]")
+  public Double getSExitinsurancebase() {
+    return sExitinsurancebase;
+  }
+
+  public void setSExitinsurancebase(Double sExitinsurancebase) {
+    this.sExitinsurancebase = sExitinsurancebase;
+  }
+
+  public Wagelistpartial sExitfee(Double sExitfee) {
+    this.sExitfee = sExitfee;
+    return this;
+  }
+
+   /**
+   * odchodné [persistentní položka]
+   * @return sExitfee
+  **/
+  @ApiModelProperty(example = "null", value = "odchodné [persistentní položka]")
+  public Double getSExitfee() {
+    return sExitfee;
+  }
+
+  public void setSExitfee(Double sExitfee) {
+    this.sExitfee = sExitfee;
   }
 
   public Wagelistpartial sBonus(Double sBonus) {
@@ -2879,10 +3455,10 @@ public class Wagelistpartial   {
   }
 
    /**
-   * Prémie [persistentní položka]
+   * prémie [persistentní položka]
    * @return sBonus
   **/
-  @ApiModelProperty(example = "null", value = "Prémie [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "prémie [persistentní položka]")
   public Double getSBonus() {
     return sBonus;
   }
@@ -2891,13 +3467,22 @@ public class Wagelistpartial   {
     this.sBonus = sBonus;
   }
 
+  public Wagelistpartial sBonustotal(Double sBonustotal) {
+    this.sBonustotal = sBonustotal;
+    return this;
+  }
+
    /**
-   * Prémie celkem [persistentní položka]
-   * @return sBonusTotal
+   * prémie celkem [persistentní položka]
+   * @return sBonustotal
   **/
-  @ApiModelProperty(example = "null", value = "Prémie celkem [persistentní položka]")
-  public Double getSBonusTotal() {
-    return sBonusTotal;
+  @ApiModelProperty(example = "null", value = "prémie celkem [persistentní položka]")
+  public Double getSBonustotal() {
+    return sBonustotal;
+  }
+
+  public void setSBonustotal(Double sBonustotal) {
+    this.sBonustotal = sBonustotal;
   }
 
   public Wagelistpartial sReward(Double sReward) {
@@ -2906,10 +3491,10 @@ public class Wagelistpartial   {
   }
 
    /**
-   * Odměna [persistentní položka]
+   * odměna [persistentní položka]
    * @return sReward
   **/
-  @ApiModelProperty(example = "null", value = "Odměna [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "odměna [persistentní položka]")
   public Double getSReward() {
     return sReward;
   }
@@ -2918,58 +3503,76 @@ public class Wagelistpartial   {
     this.sReward = sReward;
   }
 
-   /**
-   * Odměna celkem [persistentní položka]
-   * @return sRewardTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Odměna celkem [persistentní položka]")
-  public Double getSRewardTotal() {
-    return sRewardTotal;
-  }
-
-  public Wagelistpartial sRewardLongTerm(Double sRewardLongTerm) {
-    this.sRewardLongTerm = sRewardLongTerm;
+  public Wagelistpartial sRewardtotal(Double sRewardtotal) {
+    this.sRewardtotal = sRewardtotal;
     return this;
   }
 
    /**
-   * Roční, pololetní, apod.odměna [persistentní položka]
-   * @return sRewardLongTerm
+   * odměna celkem [persistentní položka]
+   * @return sRewardtotal
   **/
-  @ApiModelProperty(example = "null", value = "Roční, pololetní, apod.odměna [persistentní položka]")
-  public Double getSRewardLongTerm() {
-    return sRewardLongTerm;
+  @ApiModelProperty(example = "null", value = "odměna celkem [persistentní položka]")
+  public Double getSRewardtotal() {
+    return sRewardtotal;
   }
 
-  public void setSRewardLongTerm(Double sRewardLongTerm) {
-    this.sRewardLongTerm = sRewardLongTerm;
+  public void setSRewardtotal(Double sRewardtotal) {
+    this.sRewardtotal = sRewardtotal;
   }
 
-   /**
-   * Roční,pololet.apod.odměna celk [persistentní položka]
-   * @return sRewardLongTermTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Roční,pololet.apod.odměna celk [persistentní položka]")
-  public Double getSRewardLongTermTotal() {
-    return sRewardLongTermTotal;
-  }
-
-  public Wagelistpartial sRewardPeriodLength(Integer sRewardPeriodLength) {
-    this.sRewardPeriodLength = sRewardPeriodLength;
+  public Wagelistpartial sRewardlongterm(Double sRewardlongterm) {
+    this.sRewardlongterm = sRewardlongterm;
     return this;
   }
 
    /**
-   * Délka obd., za které je odměna [persistentní položka]
-   * @return sRewardPeriodLength
+   * roční, pololetní, apod.odměna [persistentní položka]
+   * @return sRewardlongterm
   **/
-  @ApiModelProperty(example = "null", value = "Délka obd., za které je odměna [persistentní položka]")
-  public Integer getSRewardPeriodLength() {
-    return sRewardPeriodLength;
+  @ApiModelProperty(example = "null", value = "roční, pololetní, apod.odměna [persistentní položka]")
+  public Double getSRewardlongterm() {
+    return sRewardlongterm;
   }
 
-  public void setSRewardPeriodLength(Integer sRewardPeriodLength) {
-    this.sRewardPeriodLength = sRewardPeriodLength;
+  public void setSRewardlongterm(Double sRewardlongterm) {
+    this.sRewardlongterm = sRewardlongterm;
+  }
+
+  public Wagelistpartial sRewardlongtermtotal(Double sRewardlongtermtotal) {
+    this.sRewardlongtermtotal = sRewardlongtermtotal;
+    return this;
+  }
+
+   /**
+   * roční,pololet.apod.odměna celk [persistentní položka]
+   * @return sRewardlongtermtotal
+  **/
+  @ApiModelProperty(example = "null", value = "roční,pololet.apod.odměna celk [persistentní položka]")
+  public Double getSRewardlongtermtotal() {
+    return sRewardlongtermtotal;
+  }
+
+  public void setSRewardlongtermtotal(Double sRewardlongtermtotal) {
+    this.sRewardlongtermtotal = sRewardlongtermtotal;
+  }
+
+  public Wagelistpartial sRewardperiodlength(Integer sRewardperiodlength) {
+    this.sRewardperiodlength = sRewardperiodlength;
+    return this;
+  }
+
+   /**
+   * délka obd., za které je odměna [persistentní položka]
+   * @return sRewardperiodlength
+  **/
+  @ApiModelProperty(example = "null", value = "délka obd., za které je odměna [persistentní položka]")
+  public Integer getSRewardperiodlength() {
+    return sRewardperiodlength;
+  }
+
+  public void setSRewardperiodlength(Integer sRewardperiodlength) {
+    this.sRewardperiodlength = sRewardperiodlength;
   }
 
   public Wagelistpartial sThirteen(Double sThirteen) {
@@ -2978,10 +3581,10 @@ public class Wagelistpartial   {
   }
 
    /**
-   * Třináctý plat [persistentní položka]
+   * třináctý plat [persistentní položka]
    * @return sThirteen
   **/
-  @ApiModelProperty(example = "null", value = "Třináctý plat [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "třináctý plat [persistentní položka]")
   public Double getSThirteen() {
     return sThirteen;
   }
@@ -2990,13 +3593,22 @@ public class Wagelistpartial   {
     this.sThirteen = sThirteen;
   }
 
+  public Wagelistpartial sThirteentotal(Double sThirteentotal) {
+    this.sThirteentotal = sThirteentotal;
+    return this;
+  }
+
    /**
-   * Třináctý plat celkem [persistentní položka]
-   * @return sThirteenTotal
+   * třináctý plat celkem [persistentní položka]
+   * @return sThirteentotal
   **/
-  @ApiModelProperty(example = "null", value = "Třináctý plat celkem [persistentní položka]")
-  public Double getSThirteenTotal() {
-    return sThirteenTotal;
+  @ApiModelProperty(example = "null", value = "třináctý plat celkem [persistentní položka]")
+  public Double getSThirteentotal() {
+    return sThirteentotal;
+  }
+
+  public void setSThirteentotal(Double sThirteentotal) {
+    this.sThirteentotal = sThirteentotal;
   }
 
   public Wagelistpartial sFourteen(Double sFourteen) {
@@ -3017,652 +3629,1102 @@ public class Wagelistpartial   {
     this.sFourteen = sFourteen;
   }
 
+  public Wagelistpartial sFourteentotal(Double sFourteentotal) {
+    this.sFourteentotal = sFourteentotal;
+    return this;
+  }
+
    /**
    * Čtrnáctý plat celkem [persistentní položka]
-   * @return sFourteenTotal
+   * @return sFourteentotal
   **/
   @ApiModelProperty(example = "null", value = "Čtrnáctý plat celkem [persistentní položka]")
-  public Double getSFourteenTotal() {
-    return sFourteenTotal;
+  public Double getSFourteentotal() {
+    return sFourteentotal;
   }
 
-  public Wagelistpartial sUnpaidFreeCal(Double sUnpaidFreeCal) {
-    this.sUnpaidFreeCal = sUnpaidFreeCal;
+  public void setSFourteentotal(Double sFourteentotal) {
+    this.sFourteentotal = sFourteentotal;
+  }
+
+  public Wagelistpartial sUnpaidfreecal(Double sUnpaidfreecal) {
+    this.sUnpaidfreecal = sUnpaidfreecal;
     return this;
   }
 
    /**
-   * Nepl. volno (kal. dny) [persistentní položka]
-   * @return sUnpaidFreeCal
+   * nepl. volno (kal. dny) [persistentní položka]
+   * @return sUnpaidfreecal
   **/
-  @ApiModelProperty(example = "null", value = "Nepl. volno (kal. dny) [persistentní položka]")
-  public Double getSUnpaidFreeCal() {
-    return sUnpaidFreeCal;
+  @ApiModelProperty(example = "null", value = "nepl. volno (kal. dny) [persistentní položka]")
+  public Double getSUnpaidfreecal() {
+    return sUnpaidfreecal;
   }
 
-  public void setSUnpaidFreeCal(Double sUnpaidFreeCal) {
-    this.sUnpaidFreeCal = sUnpaidFreeCal;
+  public void setSUnpaidfreecal(Double sUnpaidfreecal) {
+    this.sUnpaidfreecal = sUnpaidfreecal;
   }
 
-   /**
-   * Nepl. volno (kal. dny) celkem [persistentní položka]
-   * @return sUnpaidFreeCalTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Nepl. volno (kal. dny) celkem [persistentní položka]")
-  public Double getSUnpaidFreeCalTotal() {
-    return sUnpaidFreeCalTotal;
-  }
-
-  public Wagelistpartial sUnpaidFreeWork(Double sUnpaidFreeWork) {
-    this.sUnpaidFreeWork = sUnpaidFreeWork;
+  public Wagelistpartial sUnpaidfreecaltotal(Double sUnpaidfreecaltotal) {
+    this.sUnpaidfreecaltotal = sUnpaidfreecaltotal;
     return this;
   }
 
    /**
-   * Nepl. volno (pr. dny) [persistentní položka]
-   * @return sUnpaidFreeWork
+   * nepl. volno (kal. dny) celkem [persistentní položka]
+   * @return sUnpaidfreecaltotal
   **/
-  @ApiModelProperty(example = "null", value = "Nepl. volno (pr. dny) [persistentní položka]")
-  public Double getSUnpaidFreeWork() {
-    return sUnpaidFreeWork;
+  @ApiModelProperty(example = "null", value = "nepl. volno (kal. dny) celkem [persistentní položka]")
+  public Double getSUnpaidfreecaltotal() {
+    return sUnpaidfreecaltotal;
   }
 
-  public void setSUnpaidFreeWork(Double sUnpaidFreeWork) {
-    this.sUnpaidFreeWork = sUnpaidFreeWork;
+  public void setSUnpaidfreecaltotal(Double sUnpaidfreecaltotal) {
+    this.sUnpaidfreecaltotal = sUnpaidfreecaltotal;
   }
 
-   /**
-   * Nepl. volno (pr. hod) celkem [persistentní položka]
-   * @return sUnpaidFreeWorkTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Nepl. volno (pr. hod) celkem [persistentní položka]")
-  public Double getSUnpaidFreeWorkTotal() {
-    return sUnpaidFreeWorkTotal;
-  }
-
-  public Wagelistpartial sAbsenceCal(Double sAbsenceCal) {
-    this.sAbsenceCal = sAbsenceCal;
+  public Wagelistpartial sUnpaidfreework(Double sUnpaidfreework) {
+    this.sUnpaidfreework = sUnpaidfreework;
     return this;
   }
 
    /**
-   * Neoml. absence (kal. dny) [persistentní položka]
-   * @return sAbsenceCal
+   * nepl. volno (pr. dny) [persistentní položka]
+   * @return sUnpaidfreework
   **/
-  @ApiModelProperty(example = "null", value = "Neoml. absence (kal. dny) [persistentní položka]")
-  public Double getSAbsenceCal() {
-    return sAbsenceCal;
+  @ApiModelProperty(example = "null", value = "nepl. volno (pr. dny) [persistentní položka]")
+  public Double getSUnpaidfreework() {
+    return sUnpaidfreework;
   }
 
-  public void setSAbsenceCal(Double sAbsenceCal) {
-    this.sAbsenceCal = sAbsenceCal;
+  public void setSUnpaidfreework(Double sUnpaidfreework) {
+    this.sUnpaidfreework = sUnpaidfreework;
   }
 
-   /**
-   * Neoml. absence (kal.dny) celk. [persistentní položka]
-   * @return sAbsenceCalTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Neoml. absence (kal.dny) celk. [persistentní položka]")
-  public Double getSAbsenceCalTotal() {
-    return sAbsenceCalTotal;
-  }
-
-  public Wagelistpartial sAbsenceWork(Double sAbsenceWork) {
-    this.sAbsenceWork = sAbsenceWork;
+  public Wagelistpartial sUnpaidfreeworktotal(Double sUnpaidfreeworktotal) {
+    this.sUnpaidfreeworktotal = sUnpaidfreeworktotal;
     return this;
   }
 
    /**
-   * Neoml. absence (pr. dny) [persistentní položka]
-   * @return sAbsenceWork
+   * nepl. volno (pr. hod) celkem [persistentní položka]
+   * @return sUnpaidfreeworktotal
   **/
-  @ApiModelProperty(example = "null", value = "Neoml. absence (pr. dny) [persistentní položka]")
-  public Double getSAbsenceWork() {
-    return sAbsenceWork;
+  @ApiModelProperty(example = "null", value = "nepl. volno (pr. hod) celkem [persistentní položka]")
+  public Double getSUnpaidfreeworktotal() {
+    return sUnpaidfreeworktotal;
   }
 
-  public void setSAbsenceWork(Double sAbsenceWork) {
-    this.sAbsenceWork = sAbsenceWork;
+  public void setSUnpaidfreeworktotal(Double sUnpaidfreeworktotal) {
+    this.sUnpaidfreeworktotal = sUnpaidfreeworktotal;
   }
 
-   /**
-   * Neoml. absence (pr.hod) celk. [persistentní položka]
-   * @return sAbsenceWorkTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Neoml. absence (pr.hod) celk. [persistentní položka]")
-  public Double getSAbsenceWorkTotal() {
-    return sAbsenceWorkTotal;
-  }
-
-  public Wagelistpartial sGrossWage(Double sGrossWage) {
-    this.sGrossWage = sGrossWage;
+  public Wagelistpartial sAbsencecal(Double sAbsencecal) {
+    this.sAbsencecal = sAbsencecal;
     return this;
   }
 
    /**
-   * Hrubá mzda opr. [persistentní položka]
-   * @return sGrossWage
+   * neoml. absence (kal. dny) [persistentní položka]
+   * @return sAbsencecal
   **/
-  @ApiModelProperty(example = "null", value = "Hrubá mzda opr. [persistentní položka]")
-  public Double getSGrossWage() {
-    return sGrossWage;
+  @ApiModelProperty(example = "null", value = "neoml. absence (kal. dny) [persistentní položka]")
+  public Double getSAbsencecal() {
+    return sAbsencecal;
   }
 
-  public void setSGrossWage(Double sGrossWage) {
-    this.sGrossWage = sGrossWage;
+  public void setSAbsencecal(Double sAbsencecal) {
+    this.sAbsencecal = sAbsencecal;
   }
 
-   /**
-   * Základní mzda - do min. mzdy [persistentní položka]
-   * @return sBaseWage
-  **/
-  @ApiModelProperty(example = "null", value = "Základní mzda - do min. mzdy [persistentní položka]")
-  public Double getSBaseWage() {
-    return sBaseWage;
-  }
-
-   /**
-   * Ostatní - mimo min. mzdu [persistentní položka]
-   * @return sChargesAndCompens
-  **/
-  @ApiModelProperty(example = "null", value = "Ostatní - mimo min. mzdu [persistentní položka]")
-  public Double getSChargesAndCompens() {
-    return sChargesAndCompens;
-  }
-
-   /**
-   * Ostatní os. náklady [persistentní položka]
-   * @return sOtherPersExp
-  **/
-  @ApiModelProperty(example = "null", value = "Ostatní os. náklady [persistentní položka]")
-  public Double getSOtherPersExp() {
-    return sOtherPersExp;
-  }
-
-   /**
-   * Koeficient minimální mzdy [persistentní položka]
-   * @return sMinWageCoef
-  **/
-  @ApiModelProperty(example = "null", value = "Koeficient minimální mzdy [persistentní položka]")
-  public Double getSMinWageCoef() {
-    return sMinWageCoef;
-  }
-
-   /**
-   * Minimální mzda [persistentní položka]
-   * @return sMinWage
-  **/
-  @ApiModelProperty(example = "null", value = "Minimální mzda [persistentní položka]")
-  public Double getSMinWage() {
-    return sMinWage;
-  }
-
-   /**
-   * Minimální mzda upravená [persistentní položka]
-   * @return sMinWageCorrect
-  **/
-  @ApiModelProperty(example = "null", value = "Minimální mzda upravená [persistentní položka]")
-  public Double getSMinWageCorrect() {
-    return sMinWageCorrect;
-  }
-
-  public Wagelistpartial sSurCharge(Double sSurCharge) {
-    this.sSurCharge = sSurCharge;
+  public Wagelistpartial sAbsencecaltotal(Double sAbsencecaltotal) {
+    this.sAbsencecaltotal = sAbsencecaltotal;
     return this;
   }
 
    /**
-   * Doplatek do min. mzdy opr. [persistentní položka]
-   * @return sSurCharge
+   * neoml. absence (kal.dny) celk. [persistentní položka]
+   * @return sAbsencecaltotal
   **/
-  @ApiModelProperty(example = "null", value = "Doplatek do min. mzdy opr. [persistentní položka]")
-  public Double getSSurCharge() {
-    return sSurCharge;
+  @ApiModelProperty(example = "null", value = "neoml. absence (kal.dny) celk. [persistentní položka]")
+  public Double getSAbsencecaltotal() {
+    return sAbsencecaltotal;
   }
 
-  public void setSSurCharge(Double sSurCharge) {
-    this.sSurCharge = sSurCharge;
+  public void setSAbsencecaltotal(Double sAbsencecaltotal) {
+    this.sAbsencecaltotal = sAbsencecaltotal;
   }
 
-   /**
-   * Doplatek do min. mzdy [persistentní položka]
-   * @return sSurChargeTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Doplatek do min. mzdy [persistentní položka]")
-  public Double getSSurChargeTotal() {
-    return sSurChargeTotal;
+  public Wagelistpartial sAbsencework(Double sAbsencework) {
+    this.sAbsencework = sAbsencework;
+    return this;
   }
 
    /**
-   * Odpracované hodiny z výkonů [persistentní položka]
-   * @return sWorkHoursOper
+   * neoml. absence (pr. dny) [persistentní položka]
+   * @return sAbsencework
   **/
-  @ApiModelProperty(example = "null", value = "Odpracované hodiny z výkonů [persistentní položka]")
-  public Double getSWorkHoursOper() {
-    return sWorkHoursOper;
+  @ApiModelProperty(example = "null", value = "neoml. absence (pr. dny) [persistentní položka]")
+  public Double getSAbsencework() {
+    return sAbsencework;
+  }
+
+  public void setSAbsencework(Double sAbsencework) {
+    this.sAbsencework = sAbsencework;
+  }
+
+  public Wagelistpartial sAbsenceworktotal(Double sAbsenceworktotal) {
+    this.sAbsenceworktotal = sAbsenceworktotal;
+    return this;
   }
 
    /**
-   * Odpracované dny z výkonů [persistentní položka]
-   * @return sWorkDaysOper
+   * neoml. absence (pr.hod) celk. [persistentní položka]
+   * @return sAbsenceworktotal
   **/
-  @ApiModelProperty(example = "null", value = "Odpracované dny z výkonů [persistentní položka]")
-  public Double getSWorkDaysOper() {
-    return sWorkDaysOper;
+  @ApiModelProperty(example = "null", value = "neoml. absence (pr.hod) celk. [persistentní položka]")
+  public Double getSAbsenceworktotal() {
+    return sAbsenceworktotal;
+  }
+
+  public void setSAbsenceworktotal(Double sAbsenceworktotal) {
+    this.sAbsenceworktotal = sAbsenceworktotal;
+  }
+
+  public Wagelistpartial sGrosswage(Double sGrosswage) {
+    this.sGrosswage = sGrosswage;
+    return this;
+  }
+
+   /**
+   * hrubá mzda opr. [persistentní položka]
+   * @return sGrosswage
+  **/
+  @ApiModelProperty(example = "null", value = "hrubá mzda opr. [persistentní položka]")
+  public Double getSGrosswage() {
+    return sGrosswage;
+  }
+
+  public void setSGrosswage(Double sGrosswage) {
+    this.sGrosswage = sGrosswage;
+  }
+
+  public Wagelistpartial sBasewage(Double sBasewage) {
+    this.sBasewage = sBasewage;
+    return this;
+  }
+
+   /**
+   * základní mzda - do min. mzdy [persistentní položka]
+   * @return sBasewage
+  **/
+  @ApiModelProperty(example = "null", value = "základní mzda - do min. mzdy [persistentní položka]")
+  public Double getSBasewage() {
+    return sBasewage;
+  }
+
+  public void setSBasewage(Double sBasewage) {
+    this.sBasewage = sBasewage;
+  }
+
+  public Wagelistpartial sChargesandcompens(Double sChargesandcompens) {
+    this.sChargesandcompens = sChargesandcompens;
+    return this;
+  }
+
+   /**
+   * ostatní - mimo min. mzdu [persistentní položka]
+   * @return sChargesandcompens
+  **/
+  @ApiModelProperty(example = "null", value = "ostatní - mimo min. mzdu [persistentní položka]")
+  public Double getSChargesandcompens() {
+    return sChargesandcompens;
+  }
+
+  public void setSChargesandcompens(Double sChargesandcompens) {
+    this.sChargesandcompens = sChargesandcompens;
+  }
+
+  public Wagelistpartial sOtherpersexp(Double sOtherpersexp) {
+    this.sOtherpersexp = sOtherpersexp;
+    return this;
+  }
+
+   /**
+   * ostatní os. náklady [persistentní položka]
+   * @return sOtherpersexp
+  **/
+  @ApiModelProperty(example = "null", value = "ostatní os. náklady [persistentní položka]")
+  public Double getSOtherpersexp() {
+    return sOtherpersexp;
+  }
+
+  public void setSOtherpersexp(Double sOtherpersexp) {
+    this.sOtherpersexp = sOtherpersexp;
+  }
+
+  public Wagelistpartial sMinwagecoef(Double sMinwagecoef) {
+    this.sMinwagecoef = sMinwagecoef;
+    return this;
+  }
+
+   /**
+   * koeficient minimální mzdy [persistentní položka]
+   * @return sMinwagecoef
+  **/
+  @ApiModelProperty(example = "null", value = "koeficient minimální mzdy [persistentní položka]")
+  public Double getSMinwagecoef() {
+    return sMinwagecoef;
+  }
+
+  public void setSMinwagecoef(Double sMinwagecoef) {
+    this.sMinwagecoef = sMinwagecoef;
+  }
+
+  public Wagelistpartial sMinwage(Double sMinwage) {
+    this.sMinwage = sMinwage;
+    return this;
+  }
+
+   /**
+   * minimální mzda [persistentní položka]
+   * @return sMinwage
+  **/
+  @ApiModelProperty(example = "null", value = "minimální mzda [persistentní položka]")
+  public Double getSMinwage() {
+    return sMinwage;
+  }
+
+  public void setSMinwage(Double sMinwage) {
+    this.sMinwage = sMinwage;
+  }
+
+  public Wagelistpartial sMinwagecorrect(Double sMinwagecorrect) {
+    this.sMinwagecorrect = sMinwagecorrect;
+    return this;
+  }
+
+   /**
+   * minimální mzda upravená [persistentní položka]
+   * @return sMinwagecorrect
+  **/
+  @ApiModelProperty(example = "null", value = "minimální mzda upravená [persistentní položka]")
+  public Double getSMinwagecorrect() {
+    return sMinwagecorrect;
+  }
+
+  public void setSMinwagecorrect(Double sMinwagecorrect) {
+    this.sMinwagecorrect = sMinwagecorrect;
+  }
+
+  public Wagelistpartial sSurcharge(Double sSurcharge) {
+    this.sSurcharge = sSurcharge;
+    return this;
+  }
+
+   /**
+   * doplatek do min. mzdy opr. [persistentní položka]
+   * @return sSurcharge
+  **/
+  @ApiModelProperty(example = "null", value = "doplatek do min. mzdy opr. [persistentní položka]")
+  public Double getSSurcharge() {
+    return sSurcharge;
+  }
+
+  public void setSSurcharge(Double sSurcharge) {
+    this.sSurcharge = sSurcharge;
+  }
+
+  public Wagelistpartial sSurchargetotal(Double sSurchargetotal) {
+    this.sSurchargetotal = sSurchargetotal;
+    return this;
+  }
+
+   /**
+   * doplatek do min. mzdy [persistentní položka]
+   * @return sSurchargetotal
+  **/
+  @ApiModelProperty(example = "null", value = "doplatek do min. mzdy [persistentní položka]")
+  public Double getSSurchargetotal() {
+    return sSurchargetotal;
+  }
+
+  public void setSSurchargetotal(Double sSurchargetotal) {
+    this.sSurchargetotal = sSurchargetotal;
+  }
+
+  public Wagelistpartial sWorkhoursoper(Double sWorkhoursoper) {
+    this.sWorkhoursoper = sWorkhoursoper;
+    return this;
+  }
+
+   /**
+   * odpracované hodiny z výkonů [persistentní položka]
+   * @return sWorkhoursoper
+  **/
+  @ApiModelProperty(example = "null", value = "odpracované hodiny z výkonů [persistentní položka]")
+  public Double getSWorkhoursoper() {
+    return sWorkhoursoper;
+  }
+
+  public void setSWorkhoursoper(Double sWorkhoursoper) {
+    this.sWorkhoursoper = sWorkhoursoper;
+  }
+
+  public Wagelistpartial sWorkdaysoper(Double sWorkdaysoper) {
+    this.sWorkdaysoper = sWorkdaysoper;
+    return this;
+  }
+
+   /**
+   * odpracované dny z výkonů [persistentní položka]
+   * @return sWorkdaysoper
+  **/
+  @ApiModelProperty(example = "null", value = "odpracované dny z výkonů [persistentní položka]")
+  public Double getSWorkdaysoper() {
+    return sWorkdaysoper;
+  }
+
+  public void setSWorkdaysoper(Double sWorkdaysoper) {
+    this.sWorkdaysoper = sWorkdaysoper;
+  }
+
+  public Wagelistpartial sTaskwageoper(Double sTaskwageoper) {
+    this.sTaskwageoper = sTaskwageoper;
+    return this;
   }
 
    /**
    * Úkolová mzda z výkonů [persistentní položka]
-   * @return sTaskWageOper
+   * @return sTaskwageoper
   **/
   @ApiModelProperty(example = "null", value = "Úkolová mzda z výkonů [persistentní položka]")
-  public Double getSTaskWageOper() {
-    return sTaskWageOper;
+  public Double getSTaskwageoper() {
+    return sTaskwageoper;
+  }
+
+  public void setSTaskwageoper(Double sTaskwageoper) {
+    this.sTaskwageoper = sTaskwageoper;
+  }
+
+  public Wagelistpartial sOperdaystotal(Double sOperdaystotal) {
+    this.sOperdaystotal = sOperdaystotal;
+    return this;
   }
 
    /**
-   * Dny z výkonů v časové mzdě [persistentní položka]
-   * @return sOperDaysTotal
+   * dny z výkonů v časové mzdě [persistentní položka]
+   * @return sOperdaystotal
   **/
-  @ApiModelProperty(example = "null", value = "Dny z výkonů v časové mzdě [persistentní položka]")
-  public Double getSOperDaysTotal() {
-    return sOperDaysTotal;
+  @ApiModelProperty(example = "null", value = "dny z výkonů v časové mzdě [persistentní položka]")
+  public Double getSOperdaystotal() {
+    return sOperdaystotal;
+  }
+
+  public void setSOperdaystotal(Double sOperdaystotal) {
+    this.sOperdaystotal = sOperdaystotal;
+  }
+
+  public Wagelistpartial sFeasthoursoper(Double sFeasthoursoper) {
+    this.sFeasthoursoper = sFeasthoursoper;
+    return this;
   }
 
    /**
-   * Hodiny ve svátek z výkonů [persistentní položka]
-   * @return sFeastHoursOper
+   * hodiny ve svátek z výkonů [persistentní položka]
+   * @return sFeasthoursoper
   **/
-  @ApiModelProperty(example = "null", value = "Hodiny ve svátek z výkonů [persistentní položka]")
-  public Double getSFeastHoursOper() {
-    return sFeastHoursOper;
+  @ApiModelProperty(example = "null", value = "hodiny ve svátek z výkonů [persistentní položka]")
+  public Double getSFeasthoursoper() {
+    return sFeasthoursoper;
+  }
+
+  public void setSFeasthoursoper(Double sFeasthoursoper) {
+    this.sFeasthoursoper = sFeasthoursoper;
+  }
+
+  public Wagelistpartial sNighthoursoper(Double sNighthoursoper) {
+    this.sNighthoursoper = sNighthoursoper;
+    return this;
   }
 
    /**
-   * Hodiny v noci z výkonů [persistentní položka]
-   * @return sNightHoursOper
+   * hodiny v noci z výkonů [persistentní položka]
+   * @return sNighthoursoper
   **/
-  @ApiModelProperty(example = "null", value = "Hodiny v noci z výkonů [persistentní položka]")
-  public Double getSNightHoursOper() {
-    return sNightHoursOper;
+  @ApiModelProperty(example = "null", value = "hodiny v noci z výkonů [persistentní položka]")
+  public Double getSNighthoursoper() {
+    return sNighthoursoper;
+  }
+
+  public void setSNighthoursoper(Double sNighthoursoper) {
+    this.sNighthoursoper = sNighthoursoper;
+  }
+
+  public Wagelistpartial sEnvhoursoper(Double sEnvhoursoper) {
+    this.sEnvhoursoper = sEnvhoursoper;
+    return this;
   }
 
    /**
-   * Hod. ve škod. prostředí z výk. [persistentní položka]
-   * @return sEnvHoursOper
+   * hod. ve škod. prostředí z výk. [persistentní položka]
+   * @return sEnvhoursoper
   **/
-  @ApiModelProperty(example = "null", value = "Hod. ve škod. prostředí z výk. [persistentní položka]")
-  public Double getSEnvHoursOper() {
-    return sEnvHoursOper;
+  @ApiModelProperty(example = "null", value = "hod. ve škod. prostředí z výk. [persistentní položka]")
+  public Double getSEnvhoursoper() {
+    return sEnvhoursoper;
+  }
+
+  public void setSEnvhoursoper(Double sEnvhoursoper) {
+    this.sEnvhoursoper = sEnvhoursoper;
+  }
+
+  public Wagelistpartial sBonusoper(Double sBonusoper) {
+    this.sBonusoper = sBonusoper;
+    return this;
   }
 
    /**
-   * Prémie z výkonů [persistentní položka]
-   * @return sBonusOper
+   * prémie z výkonů [persistentní položka]
+   * @return sBonusoper
   **/
-  @ApiModelProperty(example = "null", value = "Prémie z výkonů [persistentní položka]")
-  public Double getSBonusOper() {
-    return sBonusOper;
+  @ApiModelProperty(example = "null", value = "prémie z výkonů [persistentní položka]")
+  public Double getSBonusoper() {
+    return sBonusoper;
+  }
+
+  public void setSBonusoper(Double sBonusoper) {
+    this.sBonusoper = sBonusoper;
+  }
+
+  public Wagelistpartial sRewardoper(Double sRewardoper) {
+    this.sRewardoper = sRewardoper;
+    return this;
   }
 
    /**
-   * Odměna z výkonů [persistentní položka]
-   * @return sRewardOper
+   * odměna z výkonů [persistentní položka]
+   * @return sRewardoper
   **/
-  @ApiModelProperty(example = "null", value = "Odměna z výkonů [persistentní položka]")
-  public Double getSRewardOper() {
-    return sRewardOper;
+  @ApiModelProperty(example = "null", value = "odměna z výkonů [persistentní položka]")
+  public Double getSRewardoper() {
+    return sRewardoper;
+  }
+
+  public void setSRewardoper(Double sRewardoper) {
+    this.sRewardoper = sRewardoper;
+  }
+
+  public Wagelistpartial sRewardlongtermoper(Double sRewardlongtermoper) {
+    this.sRewardlongtermoper = sRewardlongtermoper;
+    return this;
   }
 
    /**
-   * Roční,polol.ap.odměna z výkonů [persistentní položka]
-   * @return sRewardLongTermOper
+   * roční,polol.ap.odměna z výkonů [persistentní položka]
+   * @return sRewardlongtermoper
   **/
-  @ApiModelProperty(example = "null", value = "Roční,polol.ap.odměna z výkonů [persistentní položka]")
-  public Double getSRewardLongTermOper() {
-    return sRewardLongTermOper;
+  @ApiModelProperty(example = "null", value = "roční,polol.ap.odměna z výkonů [persistentní položka]")
+  public Double getSRewardlongtermoper() {
+    return sRewardlongtermoper;
+  }
+
+  public void setSRewardlongtermoper(Double sRewardlongtermoper) {
+    this.sRewardlongtermoper = sRewardlongtermoper;
+  }
+
+  public Wagelistpartial sThirteenoper(Double sThirteenoper) {
+    this.sThirteenoper = sThirteenoper;
+    return this;
   }
 
    /**
-   * Třináctý plat z výkonů [persistentní položka]
-   * @return sThirteenOper
+   * třináctý plat z výkonů [persistentní položka]
+   * @return sThirteenoper
   **/
-  @ApiModelProperty(example = "null", value = "Třináctý plat z výkonů [persistentní položka]")
-  public Double getSThirteenOper() {
-    return sThirteenOper;
+  @ApiModelProperty(example = "null", value = "třináctý plat z výkonů [persistentní položka]")
+  public Double getSThirteenoper() {
+    return sThirteenoper;
+  }
+
+  public void setSThirteenoper(Double sThirteenoper) {
+    this.sThirteenoper = sThirteenoper;
+  }
+
+  public Wagelistpartial sFourteenoper(Double sFourteenoper) {
+    this.sFourteenoper = sFourteenoper;
+    return this;
   }
 
    /**
    * Čtrnáctý plat z výkonů [persistentní položka]
-   * @return sFourteenOper
+   * @return sFourteenoper
   **/
   @ApiModelProperty(example = "null", value = "Čtrnáctý plat z výkonů [persistentní položka]")
-  public Double getSFourteenOper() {
-    return sFourteenOper;
+  public Double getSFourteenoper() {
+    return sFourteenoper;
+  }
+
+  public void setSFourteenoper(Double sFourteenoper) {
+    this.sFourteenoper = sFourteenoper;
+  }
+
+  public Wagelistpartial sPersonalchargeoper(Double sPersonalchargeoper) {
+    this.sPersonalchargeoper = sPersonalchargeoper;
+    return this;
   }
 
    /**
-   * Osobní příplatek z výkonů [persistentní položka]
-   * @return sPersonalChargeOper
+   * osobní příplatek z výkonů [persistentní položka]
+   * @return sPersonalchargeoper
   **/
-  @ApiModelProperty(example = "null", value = "Osobní příplatek z výkonů [persistentní položka]")
-  public Double getSPersonalChargeOper() {
-    return sPersonalChargeOper;
+  @ApiModelProperty(example = "null", value = "osobní příplatek z výkonů [persistentní položka]")
+  public Double getSPersonalchargeoper() {
+    return sPersonalchargeoper;
+  }
+
+  public void setSPersonalchargeoper(Double sPersonalchargeoper) {
+    this.sPersonalchargeoper = sPersonalchargeoper;
+  }
+
+  public Wagelistpartial sChiefchargeoper(Double sChiefchargeoper) {
+    this.sChiefchargeoper = sChiefchargeoper;
+    return this;
   }
 
    /**
-   * Příplatek za vedení z výkonů [persistentní položka]
-   * @return sChiefChargeOper
+   * příplatek za vedení z výkonů [persistentní položka]
+   * @return sChiefchargeoper
   **/
-  @ApiModelProperty(example = "null", value = "Příplatek za vedení z výkonů [persistentní položka]")
-  public Double getSChiefChargeOper() {
-    return sChiefChargeOper;
+  @ApiModelProperty(example = "null", value = "příplatek za vedení z výkonů [persistentní položka]")
+  public Double getSChiefchargeoper() {
+    return sChiefchargeoper;
+  }
+
+  public void setSChiefchargeoper(Double sChiefchargeoper) {
+    this.sChiefchargeoper = sChiefchargeoper;
+  }
+
+  public Wagelistpartial sSubchargeoper(Double sSubchargeoper) {
+    this.sSubchargeoper = sSubchargeoper;
+    return this;
   }
 
    /**
-   * Přípl. za zastupování z výkonů [persistentní položka]
-   * @return sSubChargeOper
+   * přípl. za zastupování z výkonů [persistentní položka]
+   * @return sSubchargeoper
   **/
-  @ApiModelProperty(example = "null", value = "Přípl. za zastupování z výkonů [persistentní položka]")
-  public Double getSSubChargeOper() {
-    return sSubChargeOper;
+  @ApiModelProperty(example = "null", value = "přípl. za zastupování z výkonů [persistentní položka]")
+  public Double getSSubchargeoper() {
+    return sSubchargeoper;
+  }
+
+  public void setSSubchargeoper(Double sSubchargeoper) {
+    this.sSubchargeoper = sSubchargeoper;
+  }
+
+  public Wagelistpartial sWendhoursoper(Double sWendhoursoper) {
+    this.sWendhoursoper = sWendhoursoper;
+    return this;
   }
 
    /**
-   * Hodiny v So a Ne z výkonů [persistentní položka]
-   * @return sWEndHoursOper
+   * hodiny v so a ne z výkonů [persistentní položka]
+   * @return sWendhoursoper
   **/
-  @ApiModelProperty(example = "null", value = "Hodiny v So a Ne z výkonů [persistentní položka]")
-  public Double getSWEndHoursOper() {
-    return sWEndHoursOper;
+  @ApiModelProperty(example = "null", value = "hodiny v so a ne z výkonů [persistentní položka]")
+  public Double getSWendhoursoper() {
+    return sWendhoursoper;
+  }
+
+  public void setSWendhoursoper(Double sWendhoursoper) {
+    this.sWendhoursoper = sWendhoursoper;
+  }
+
+  public Wagelistpartial sPaidfeastoper(Double sPaidfeastoper) {
+    this.sPaidfeastoper = sPaidfeastoper;
+    return this;
   }
 
    /**
-   * Proplacené svátky z výkonů [persistentní položka]
-   * @return sPaidFeastOper
+   * proplacené svátky z výkonů [persistentní položka]
+   * @return sPaidfeastoper
   **/
-  @ApiModelProperty(example = "null", value = "Proplacené svátky z výkonů [persistentní položka]")
-  public Double getSPaidFeastOper() {
-    return sPaidFeastOper;
+  @ApiModelProperty(example = "null", value = "proplacené svátky z výkonů [persistentní položka]")
+  public Double getSPaidfeastoper() {
+    return sPaidfeastoper;
+  }
+
+  public void setSPaidfeastoper(Double sPaidfeastoper) {
+    this.sPaidfeastoper = sPaidfeastoper;
+  }
+
+  public Wagelistpartial sPaidfreeoper(Double sPaidfreeoper) {
+    this.sPaidfreeoper = sPaidfreeoper;
+    return this;
   }
 
    /**
-   * Placené volno z výkonů [persistentní položka]
-   * @return sPaidFreeOper
+   * placené volno z výkonů [persistentní položka]
+   * @return sPaidfreeoper
   **/
-  @ApiModelProperty(example = "null", value = "Placené volno z výkonů [persistentní položka]")
-  public Double getSPaidFreeOper() {
-    return sPaidFreeOper;
+  @ApiModelProperty(example = "null", value = "placené volno z výkonů [persistentní položka]")
+  public Double getSPaidfreeoper() {
+    return sPaidfreeoper;
+  }
+
+  public void setSPaidfreeoper(Double sPaidfreeoper) {
+    this.sPaidfreeoper = sPaidfreeoper;
+  }
+
+  public Wagelistpartial sHolidayoper(Double sHolidayoper) {
+    this.sHolidayoper = sHolidayoper;
+    return this;
   }
 
    /**
    * Čerpaná dovolená z výkonů [persistentní položka]
-   * @return sHolidayOper
+   * @return sHolidayoper
   **/
   @ApiModelProperty(example = "null", value = "Čerpaná dovolená z výkonů [persistentní položka]")
-  public Double getSHolidayOper() {
-    return sHolidayOper;
+  public Double getSHolidayoper() {
+    return sHolidayoper;
   }
 
-   /**
-   * Prac. pohotovost z výkonů [persistentní položka]
-   * @return sReadinessOper
-  **/
-  @ApiModelProperty(example = "null", value = "Prac. pohotovost z výkonů [persistentní položka]")
-  public Double getSReadinessOper() {
-    return sReadinessOper;
+  public void setSHolidayoper(Double sHolidayoper) {
+    this.sHolidayoper = sHolidayoper;
   }
 
-   /**
-   * Odstupné z výkonů [persistentní položka]
-   * @return sExitCompOper
-  **/
-  @ApiModelProperty(example = "null", value = "Odstupné z výkonů [persistentní položka]")
-  public Double getSExitCompOper() {
-    return sExitCompOper;
-  }
-
-   /**
-   * Nepl. volno (kal. dny) z výk. [persistentní položka]
-   * @return sUnpaidFreeCalOper
-  **/
-  @ApiModelProperty(example = "null", value = "Nepl. volno (kal. dny) z výk. [persistentní položka]")
-  public Double getSUnpaidFreeCalOper() {
-    return sUnpaidFreeCalOper;
-  }
-
-   /**
-   * Nepl. volno (pr. dny) z výk. [persistentní položka]
-   * @return sUnpaidFreeWorkOper
-  **/
-  @ApiModelProperty(example = "null", value = "Nepl. volno (pr. dny) z výk. [persistentní položka]")
-  public Double getSUnpaidFreeWorkOper() {
-    return sUnpaidFreeWorkOper;
-  }
-
-   /**
-   * Neoml.absence (kal.dny) z výk. [persistentní položka]
-   * @return sAbsenceCalOper
-  **/
-  @ApiModelProperty(example = "null", value = "Neoml.absence (kal.dny) z výk. [persistentní položka]")
-  public Double getSAbsenceCalOper() {
-    return sAbsenceCalOper;
-  }
-
-   /**
-   * Neoml.absence (pr.dny) z výk. [persistentní položka]
-   * @return sAbsenceWorkOper
-  **/
-  @ApiModelProperty(example = "null", value = "Neoml.absence (pr.dny) z výk. [persistentní položka]")
-  public Double getSAbsenceWorkOper() {
-    return sAbsenceWorkOper;
-  }
-
-   /**
-   * Odměna za práci učňů z výkonů [persistentní položka]
-   * @return sApprenticeFeeOper
-  **/
-  @ApiModelProperty(example = "null", value = "Odměna za práci učňů z výkonů [persistentní položka]")
-  public Double getSApprenticeFeeOper() {
-    return sApprenticeFeeOper;
-  }
-
-   /**
-   * Odměny jednatelů z výkonů [persistentní položka]
-   * @return sExecutiveFeeOper
-  **/
-  @ApiModelProperty(example = "null", value = "Odměny jednatelů z výkonů [persistentní položka]")
-  public Double getSExecutiveFeeOper() {
-    return sExecutiveFeeOper;
-  }
-
-   /**
-   * Odměny statut. orgánů z výkonů [persistentní položka]
-   * @return sCorporateFeeOper
-  **/
-  @ApiModelProperty(example = "null", value = "Odměny statut. orgánů z výkonů [persistentní položka]")
-  public Double getSCorporateFeeOper() {
-    return sCorporateFeeOper;
-  }
-
-   /**
-   * Nem. dávky a náhrady - nepřít. [persistentní položka]
-   * @return sSickAbsences
-  **/
-  @ApiModelProperty(example = "null", value = "Nem. dávky a náhrady - nepřít. [persistentní položka]")
-  public Double getSSickAbsences() {
-    return sSickAbsences;
-  }
-
-   /**
-   * Nem. dávky a náhrady - částka [persistentní položka]
-   * @return sSickBenefits
-  **/
-  @ApiModelProperty(example = "null", value = "Nem. dávky a náhrady - částka [persistentní položka]")
-  public Double getSSickBenefits() {
-    return sSickBenefits;
-  }
-
-  public Wagelistpartial sHealthInsBase(Double sHealthInsBase) {
-    this.sHealthInsBase = sHealthInsBase;
+  public Wagelistpartial sReadinessoper(Double sReadinessoper) {
+    this.sReadinessoper = sReadinessoper;
     return this;
   }
 
    /**
-   * Základ ZP - oprava [persistentní položka]
-   * @return sHealthInsBase
+   * prac. pohotovost z výkonů [persistentní položka]
+   * @return sReadinessoper
   **/
-  @ApiModelProperty(example = "null", value = "Základ ZP - oprava [persistentní položka]")
-  public Double getSHealthInsBase() {
-    return sHealthInsBase;
+  @ApiModelProperty(example = "null", value = "prac. pohotovost z výkonů [persistentní položka]")
+  public Double getSReadinessoper() {
+    return sReadinessoper;
   }
 
-  public void setSHealthInsBase(Double sHealthInsBase) {
-    this.sHealthInsBase = sHealthInsBase;
+  public void setSReadinessoper(Double sReadinessoper) {
+    this.sReadinessoper = sReadinessoper;
   }
 
-   /**
-   * Základ ZP součet [persistentní položka]
-   * @return sHealthInsBaseTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Základ ZP součet [persistentní položka]")
-  public Double getSHealthInsBaseTotal() {
-    return sHealthInsBaseTotal;
-  }
-
-   /**
-   * Základ ZP [persistentní položka]
-   * @return sHealthInsBaseCorrect
-  **/
-  @ApiModelProperty(example = "null", value = "Základ ZP [persistentní položka]")
-  public Double getSHealthInsBaseCorrect() {
-    return sHealthInsBaseCorrect;
-  }
-
-  public Wagelistpartial sHealthIns(Double sHealthIns) {
-    this.sHealthIns = sHealthIns;
+  public Wagelistpartial sExitcompoper(Double sExitcompoper) {
+    this.sExitcompoper = sExitcompoper;
     return this;
   }
 
    /**
-   * Pojistné ZP - oprava [persistentní položka]
-   * @return sHealthIns
+   * odstupné z výkonů [persistentní položka]
+   * @return sExitcompoper
   **/
-  @ApiModelProperty(example = "null", value = "Pojistné ZP - oprava [persistentní položka]")
-  public Double getSHealthIns() {
-    return sHealthIns;
+  @ApiModelProperty(example = "null", value = "odstupné z výkonů [persistentní položka]")
+  public Double getSExitcompoper() {
+    return sExitcompoper;
   }
 
-  public void setSHealthIns(Double sHealthIns) {
-    this.sHealthIns = sHealthIns;
+  public void setSExitcompoper(Double sExitcompoper) {
+    this.sExitcompoper = sExitcompoper;
   }
 
-   /**
-   * Pojistné ZP - zaměstnanec [persistentní položka]
-   * @return sHealthInsEmployee
-  **/
-  @ApiModelProperty(example = "null", value = "Pojistné ZP - zaměstnanec [persistentní položka]")
-  public Double getSHealthInsEmployee() {
-    return sHealthInsEmployee;
-  }
-
-   /**
-   * Pojistné ZP - zaměstnavatel [persistentní položka]
-   * @return sHealthInsCompany
-  **/
-  @ApiModelProperty(example = "null", value = "Pojistné ZP - zaměstnavatel [persistentní položka]")
-  public Double getSHealthInsCompany() {
-    return sHealthInsCompany;
-  }
-
-  public Wagelistpartial sSocialInsBase(Double sSocialInsBase) {
-    this.sSocialInsBase = sSocialInsBase;
+  public Wagelistpartial sUnpaidfreecaloper(Double sUnpaidfreecaloper) {
+    this.sUnpaidfreecaloper = sUnpaidfreecaloper;
     return this;
   }
 
    /**
-   * Základ SP - oprava [persistentní položka]
-   * @return sSocialInsBase
+   * nepl. volno (kal. dny) z výk. [persistentní položka]
+   * @return sUnpaidfreecaloper
   **/
-  @ApiModelProperty(example = "null", value = "Základ SP - oprava [persistentní položka]")
-  public Double getSSocialInsBase() {
-    return sSocialInsBase;
+  @ApiModelProperty(example = "null", value = "nepl. volno (kal. dny) z výk. [persistentní položka]")
+  public Double getSUnpaidfreecaloper() {
+    return sUnpaidfreecaloper;
   }
 
-  public void setSSocialInsBase(Double sSocialInsBase) {
-    this.sSocialInsBase = sSocialInsBase;
+  public void setSUnpaidfreecaloper(Double sUnpaidfreecaloper) {
+    this.sUnpaidfreecaloper = sUnpaidfreecaloper;
   }
 
-   /**
-   * Základ SP součet [persistentní položka]
-   * @return sSocialInsBaseTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Základ SP součet [persistentní položka]")
-  public Double getSSocialInsBaseTotal() {
-    return sSocialInsBaseTotal;
-  }
-
-   /**
-   * Základ SP [persistentní položka]
-   * @return sSocialInsBaseCorrect
-  **/
-  @ApiModelProperty(example = "null", value = "Základ SP [persistentní položka]")
-  public Double getSSocialInsBaseCorrect() {
-    return sSocialInsBaseCorrect;
-  }
-
-  public Wagelistpartial sSocialIns(Double sSocialIns) {
-    this.sSocialIns = sSocialIns;
+  public Wagelistpartial sUnpaidfreeworkoper(Double sUnpaidfreeworkoper) {
+    this.sUnpaidfreeworkoper = sUnpaidfreeworkoper;
     return this;
   }
 
    /**
-   * Pojistné SP - oprava [persistentní položka]
-   * @return sSocialIns
+   * nepl. volno (pr. dny) z výk. [persistentní položka]
+   * @return sUnpaidfreeworkoper
   **/
-  @ApiModelProperty(example = "null", value = "Pojistné SP - oprava [persistentní položka]")
-  public Double getSSocialIns() {
-    return sSocialIns;
+  @ApiModelProperty(example = "null", value = "nepl. volno (pr. dny) z výk. [persistentní položka]")
+  public Double getSUnpaidfreeworkoper() {
+    return sUnpaidfreeworkoper;
   }
 
-  public void setSSocialIns(Double sSocialIns) {
-    this.sSocialIns = sSocialIns;
+  public void setSUnpaidfreeworkoper(Double sUnpaidfreeworkoper) {
+    this.sUnpaidfreeworkoper = sUnpaidfreeworkoper;
   }
 
-   /**
-   * Pojistné SP - zaměstnanec [persistentní položka]
-   * @return sSocialInsEmployee
-  **/
-  @ApiModelProperty(example = "null", value = "Pojistné SP - zaměstnanec [persistentní položka]")
-  public Double getSSocialInsEmployee() {
-    return sSocialInsEmployee;
-  }
-
-   /**
-   * Ostatní náhrady - základ poj. [persistentní položka]
-   * @return sOtherCompInsBase
-  **/
-  @ApiModelProperty(example = "null", value = "Ostatní náhrady - základ poj. [persistentní položka]")
-  public Double getSOtherCompInsBase() {
-    return sOtherCompInsBase;
-  }
-
-  public Wagelistpartial sHealthInsUnpaidFreeDock(Boolean sHealthInsUnpaidFreeDock) {
-    this.sHealthInsUnpaidFreeDock = sHealthInsUnpaidFreeDock;
+  public Wagelistpartial sAbsencecaloper(Double sAbsencecaloper) {
+    this.sAbsencecaloper = sAbsencecaloper;
     return this;
   }
 
    /**
-   * Srazit 9% ZP za nepl. volno [persistentní položka]
-   * @return sHealthInsUnpaidFreeDock
+   * neoml.absence (kal.dny) z výk. [persistentní položka]
+   * @return sAbsencecaloper
   **/
-  @ApiModelProperty(example = "null", value = "Srazit 9% ZP za nepl. volno [persistentní položka]")
-  public Boolean getSHealthInsUnpaidFreeDock() {
-    return sHealthInsUnpaidFreeDock;
+  @ApiModelProperty(example = "null", value = "neoml.absence (kal.dny) z výk. [persistentní položka]")
+  public Double getSAbsencecaloper() {
+    return sAbsencecaloper;
   }
 
-  public void setSHealthInsUnpaidFreeDock(Boolean sHealthInsUnpaidFreeDock) {
-    this.sHealthInsUnpaidFreeDock = sHealthInsUnpaidFreeDock;
+  public void setSAbsencecaloper(Double sAbsencecaloper) {
+    this.sAbsencecaloper = sAbsencecaloper;
+  }
+
+  public Wagelistpartial sAbsenceworkoper(Double sAbsenceworkoper) {
+    this.sAbsenceworkoper = sAbsenceworkoper;
+    return this;
+  }
+
+   /**
+   * neoml.absence (pr.dny) z výk. [persistentní položka]
+   * @return sAbsenceworkoper
+  **/
+  @ApiModelProperty(example = "null", value = "neoml.absence (pr.dny) z výk. [persistentní položka]")
+  public Double getSAbsenceworkoper() {
+    return sAbsenceworkoper;
+  }
+
+  public void setSAbsenceworkoper(Double sAbsenceworkoper) {
+    this.sAbsenceworkoper = sAbsenceworkoper;
+  }
+
+  public Wagelistpartial sApprenticefeeoper(Double sApprenticefeeoper) {
+    this.sApprenticefeeoper = sApprenticefeeoper;
+    return this;
+  }
+
+   /**
+   * odměna za práci učňů z výkonů [persistentní položka]
+   * @return sApprenticefeeoper
+  **/
+  @ApiModelProperty(example = "null", value = "odměna za práci učňů z výkonů [persistentní položka]")
+  public Double getSApprenticefeeoper() {
+    return sApprenticefeeoper;
+  }
+
+  public void setSApprenticefeeoper(Double sApprenticefeeoper) {
+    this.sApprenticefeeoper = sApprenticefeeoper;
+  }
+
+  public Wagelistpartial sExecutivefeeoper(Double sExecutivefeeoper) {
+    this.sExecutivefeeoper = sExecutivefeeoper;
+    return this;
+  }
+
+   /**
+   * odměny jednatelů z výkonů [persistentní položka]
+   * @return sExecutivefeeoper
+  **/
+  @ApiModelProperty(example = "null", value = "odměny jednatelů z výkonů [persistentní položka]")
+  public Double getSExecutivefeeoper() {
+    return sExecutivefeeoper;
+  }
+
+  public void setSExecutivefeeoper(Double sExecutivefeeoper) {
+    this.sExecutivefeeoper = sExecutivefeeoper;
+  }
+
+  public Wagelistpartial sCorporatefeeoper(Double sCorporatefeeoper) {
+    this.sCorporatefeeoper = sCorporatefeeoper;
+    return this;
+  }
+
+   /**
+   * odměny statut. orgánů z výkonů [persistentní položka]
+   * @return sCorporatefeeoper
+  **/
+  @ApiModelProperty(example = "null", value = "odměny statut. orgánů z výkonů [persistentní položka]")
+  public Double getSCorporatefeeoper() {
+    return sCorporatefeeoper;
+  }
+
+  public void setSCorporatefeeoper(Double sCorporatefeeoper) {
+    this.sCorporatefeeoper = sCorporatefeeoper;
+  }
+
+  public Wagelistpartial sSickabsences(Double sSickabsences) {
+    this.sSickabsences = sSickabsences;
+    return this;
+  }
+
+   /**
+   * nem. dávky a náhrady - nepřít. [persistentní položka]
+   * @return sSickabsences
+  **/
+  @ApiModelProperty(example = "null", value = "nem. dávky a náhrady - nepřít. [persistentní položka]")
+  public Double getSSickabsences() {
+    return sSickabsences;
+  }
+
+  public void setSSickabsences(Double sSickabsences) {
+    this.sSickabsences = sSickabsences;
+  }
+
+  public Wagelistpartial sSickbenefits(Double sSickbenefits) {
+    this.sSickbenefits = sSickbenefits;
+    return this;
+  }
+
+   /**
+   * nem. dávky a náhrady - částka [persistentní položka]
+   * @return sSickbenefits
+  **/
+  @ApiModelProperty(example = "null", value = "nem. dávky a náhrady - částka [persistentní položka]")
+  public Double getSSickbenefits() {
+    return sSickbenefits;
+  }
+
+  public void setSSickbenefits(Double sSickbenefits) {
+    this.sSickbenefits = sSickbenefits;
+  }
+
+  public Wagelistpartial sHealthinsbase(Double sHealthinsbase) {
+    this.sHealthinsbase = sHealthinsbase;
+    return this;
+  }
+
+   /**
+   * základ zp - oprava [persistentní položka]
+   * @return sHealthinsbase
+  **/
+  @ApiModelProperty(example = "null", value = "základ zp - oprava [persistentní položka]")
+  public Double getSHealthinsbase() {
+    return sHealthinsbase;
+  }
+
+  public void setSHealthinsbase(Double sHealthinsbase) {
+    this.sHealthinsbase = sHealthinsbase;
+  }
+
+  public Wagelistpartial sHealthinsbasetotal(Double sHealthinsbasetotal) {
+    this.sHealthinsbasetotal = sHealthinsbasetotal;
+    return this;
+  }
+
+   /**
+   * základ zp součet [persistentní položka]
+   * @return sHealthinsbasetotal
+  **/
+  @ApiModelProperty(example = "null", value = "základ zp součet [persistentní položka]")
+  public Double getSHealthinsbasetotal() {
+    return sHealthinsbasetotal;
+  }
+
+  public void setSHealthinsbasetotal(Double sHealthinsbasetotal) {
+    this.sHealthinsbasetotal = sHealthinsbasetotal;
+  }
+
+  public Wagelistpartial sHealthinsbasecorrect(Double sHealthinsbasecorrect) {
+    this.sHealthinsbasecorrect = sHealthinsbasecorrect;
+    return this;
+  }
+
+   /**
+   * základ zp [persistentní položka]
+   * @return sHealthinsbasecorrect
+  **/
+  @ApiModelProperty(example = "null", value = "základ zp [persistentní položka]")
+  public Double getSHealthinsbasecorrect() {
+    return sHealthinsbasecorrect;
+  }
+
+  public void setSHealthinsbasecorrect(Double sHealthinsbasecorrect) {
+    this.sHealthinsbasecorrect = sHealthinsbasecorrect;
+  }
+
+  public Wagelistpartial sHealthins(Double sHealthins) {
+    this.sHealthins = sHealthins;
+    return this;
+  }
+
+   /**
+   * pojistné zp - oprava [persistentní položka]
+   * @return sHealthins
+  **/
+  @ApiModelProperty(example = "null", value = "pojistné zp - oprava [persistentní položka]")
+  public Double getSHealthins() {
+    return sHealthins;
+  }
+
+  public void setSHealthins(Double sHealthins) {
+    this.sHealthins = sHealthins;
+  }
+
+  public Wagelistpartial sHealthinsemployee(Double sHealthinsemployee) {
+    this.sHealthinsemployee = sHealthinsemployee;
+    return this;
+  }
+
+   /**
+   * pojistné zp - zaměstnanec [persistentní položka]
+   * @return sHealthinsemployee
+  **/
+  @ApiModelProperty(example = "null", value = "pojistné zp - zaměstnanec [persistentní položka]")
+  public Double getSHealthinsemployee() {
+    return sHealthinsemployee;
+  }
+
+  public void setSHealthinsemployee(Double sHealthinsemployee) {
+    this.sHealthinsemployee = sHealthinsemployee;
+  }
+
+  public Wagelistpartial sHealthinscompany(Double sHealthinscompany) {
+    this.sHealthinscompany = sHealthinscompany;
+    return this;
+  }
+
+   /**
+   * pojistné zp - zaměstnavatel [persistentní položka]
+   * @return sHealthinscompany
+  **/
+  @ApiModelProperty(example = "null", value = "pojistné zp - zaměstnavatel [persistentní položka]")
+  public Double getSHealthinscompany() {
+    return sHealthinscompany;
+  }
+
+  public void setSHealthinscompany(Double sHealthinscompany) {
+    this.sHealthinscompany = sHealthinscompany;
+  }
+
+  public Wagelistpartial sSocialinsbase(Double sSocialinsbase) {
+    this.sSocialinsbase = sSocialinsbase;
+    return this;
+  }
+
+   /**
+   * základ sp - oprava [persistentní položka]
+   * @return sSocialinsbase
+  **/
+  @ApiModelProperty(example = "null", value = "základ sp - oprava [persistentní položka]")
+  public Double getSSocialinsbase() {
+    return sSocialinsbase;
+  }
+
+  public void setSSocialinsbase(Double sSocialinsbase) {
+    this.sSocialinsbase = sSocialinsbase;
+  }
+
+  public Wagelistpartial sSocialinsbasetotal(Double sSocialinsbasetotal) {
+    this.sSocialinsbasetotal = sSocialinsbasetotal;
+    return this;
+  }
+
+   /**
+   * základ sp součet [persistentní položka]
+   * @return sSocialinsbasetotal
+  **/
+  @ApiModelProperty(example = "null", value = "základ sp součet [persistentní položka]")
+  public Double getSSocialinsbasetotal() {
+    return sSocialinsbasetotal;
+  }
+
+  public void setSSocialinsbasetotal(Double sSocialinsbasetotal) {
+    this.sSocialinsbasetotal = sSocialinsbasetotal;
+  }
+
+  public Wagelistpartial sSocialinsbasecorrect(Double sSocialinsbasecorrect) {
+    this.sSocialinsbasecorrect = sSocialinsbasecorrect;
+    return this;
+  }
+
+   /**
+   * základ sp [persistentní položka]
+   * @return sSocialinsbasecorrect
+  **/
+  @ApiModelProperty(example = "null", value = "základ sp [persistentní položka]")
+  public Double getSSocialinsbasecorrect() {
+    return sSocialinsbasecorrect;
+  }
+
+  public void setSSocialinsbasecorrect(Double sSocialinsbasecorrect) {
+    this.sSocialinsbasecorrect = sSocialinsbasecorrect;
+  }
+
+  public Wagelistpartial sSocialins(Double sSocialins) {
+    this.sSocialins = sSocialins;
+    return this;
+  }
+
+   /**
+   * pojistné sp - oprava [persistentní položka]
+   * @return sSocialins
+  **/
+  @ApiModelProperty(example = "null", value = "pojistné sp - oprava [persistentní položka]")
+  public Double getSSocialins() {
+    return sSocialins;
+  }
+
+  public void setSSocialins(Double sSocialins) {
+    this.sSocialins = sSocialins;
+  }
+
+  public Wagelistpartial sSocialinsemployee(Double sSocialinsemployee) {
+    this.sSocialinsemployee = sSocialinsemployee;
+    return this;
+  }
+
+   /**
+   * pojistné sp - zaměstnanec [persistentní položka]
+   * @return sSocialinsemployee
+  **/
+  @ApiModelProperty(example = "null", value = "pojistné sp - zaměstnanec [persistentní položka]")
+  public Double getSSocialinsemployee() {
+    return sSocialinsemployee;
+  }
+
+  public void setSSocialinsemployee(Double sSocialinsemployee) {
+    this.sSocialinsemployee = sSocialinsemployee;
+  }
+
+  public Wagelistpartial sOthercompinsbase(Double sOthercompinsbase) {
+    this.sOthercompinsbase = sOthercompinsbase;
+    return this;
+  }
+
+   /**
+   * ostatní náhrady - základ poj. [persistentní položka]
+   * @return sOthercompinsbase
+  **/
+  @ApiModelProperty(example = "null", value = "ostatní náhrady - základ poj. [persistentní položka]")
+  public Double getSOthercompinsbase() {
+    return sOthercompinsbase;
+  }
+
+  public void setSOthercompinsbase(Double sOthercompinsbase) {
+    this.sOthercompinsbase = sOthercompinsbase;
+  }
+
+  public Wagelistpartial sHealthinsunpaidfreedock(Boolean sHealthinsunpaidfreedock) {
+    this.sHealthinsunpaidfreedock = sHealthinsunpaidfreedock;
+    return this;
+  }
+
+   /**
+   * srazit 9% zp za nepl. volno [persistentní položka]
+   * @return sHealthinsunpaidfreedock
+  **/
+  @ApiModelProperty(example = "null", value = "srazit 9% zp za nepl. volno [persistentní položka]")
+  public Boolean getSHealthinsunpaidfreedock() {
+    return sHealthinsunpaidfreedock;
+  }
+
+  public void setSHealthinsunpaidfreedock(Boolean sHealthinsunpaidfreedock) {
+    this.sHealthinsunpaidfreedock = sHealthinsunpaidfreedock;
   }
 
   public Wagelistpartial sCategory2(Double sCategory2) {
@@ -3671,10 +4733,10 @@ public class Wagelistpartial   {
   }
 
    /**
-   * Směny v kategorii 2 [persistentní položka]
+   * směny v kategorii 2 [persistentní položka]
    * @return sCategory2
   **/
-  @ApiModelProperty(example = "null", value = "Směny v kategorii 2 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "směny v kategorii 2 [persistentní položka]")
   public Double getSCategory2() {
     return sCategory2;
   }
@@ -3683,22 +4745,40 @@ public class Wagelistpartial   {
     this.sCategory2 = sCategory2;
   }
 
-   /**
-   * Směny v kategorii 2 z výkonů [persistentní položka]
-   * @return sCategory2Oper
-  **/
-  @ApiModelProperty(example = "null", value = "Směny v kategorii 2 z výkonů [persistentní položka]")
-  public Double getSCategory2Oper() {
-    return sCategory2Oper;
+  public Wagelistpartial sCategory2oper(Double sCategory2oper) {
+    this.sCategory2oper = sCategory2oper;
+    return this;
   }
 
    /**
-   * Směny v kategorii 2 celkem [persistentní položka]
-   * @return sCategory2Total
+   * směny v kategorii 2 z výkonů [persistentní položka]
+   * @return sCategory2oper
   **/
-  @ApiModelProperty(example = "null", value = "Směny v kategorii 2 celkem [persistentní položka]")
-  public Double getSCategory2Total() {
-    return sCategory2Total;
+  @ApiModelProperty(example = "null", value = "směny v kategorii 2 z výkonů [persistentní položka]")
+  public Double getSCategory2oper() {
+    return sCategory2oper;
+  }
+
+  public void setSCategory2oper(Double sCategory2oper) {
+    this.sCategory2oper = sCategory2oper;
+  }
+
+  public Wagelistpartial sCategory2total(Double sCategory2total) {
+    this.sCategory2total = sCategory2total;
+    return this;
+  }
+
+   /**
+   * směny v kategorii 2 celkem [persistentní položka]
+   * @return sCategory2total
+  **/
+  @ApiModelProperty(example = "null", value = "směny v kategorii 2 celkem [persistentní položka]")
+  public Double getSCategory2total() {
+    return sCategory2total;
+  }
+
+  public void setSCategory2total(Double sCategory2total) {
+    this.sCategory2total = sCategory2total;
   }
 
   public Wagelistpartial sCategory3(Double sCategory3) {
@@ -3707,10 +4787,10 @@ public class Wagelistpartial   {
   }
 
    /**
-   * Směny v kategorii 3 [persistentní položka]
+   * směny v kategorii 3 [persistentní položka]
    * @return sCategory3
   **/
-  @ApiModelProperty(example = "null", value = "Směny v kategorii 3 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "směny v kategorii 3 [persistentní položka]")
   public Double getSCategory3() {
     return sCategory3;
   }
@@ -3719,22 +4799,40 @@ public class Wagelistpartial   {
     this.sCategory3 = sCategory3;
   }
 
-   /**
-   * Směny v kategorii 3 z výkonů [persistentní položka]
-   * @return sCategory3Oper
-  **/
-  @ApiModelProperty(example = "null", value = "Směny v kategorii 3 z výkonů [persistentní položka]")
-  public Double getSCategory3Oper() {
-    return sCategory3Oper;
+  public Wagelistpartial sCategory3oper(Double sCategory3oper) {
+    this.sCategory3oper = sCategory3oper;
+    return this;
   }
 
    /**
-   * Směny v kategorii 3 celkem [persistentní položka]
-   * @return sCategory3Total
+   * směny v kategorii 3 z výkonů [persistentní položka]
+   * @return sCategory3oper
   **/
-  @ApiModelProperty(example = "null", value = "Směny v kategorii 3 celkem [persistentní položka]")
-  public Double getSCategory3Total() {
-    return sCategory3Total;
+  @ApiModelProperty(example = "null", value = "směny v kategorii 3 z výkonů [persistentní položka]")
+  public Double getSCategory3oper() {
+    return sCategory3oper;
+  }
+
+  public void setSCategory3oper(Double sCategory3oper) {
+    this.sCategory3oper = sCategory3oper;
+  }
+
+  public Wagelistpartial sCategory3total(Double sCategory3total) {
+    this.sCategory3total = sCategory3total;
+    return this;
+  }
+
+   /**
+   * směny v kategorii 3 celkem [persistentní položka]
+   * @return sCategory3total
+  **/
+  @ApiModelProperty(example = "null", value = "směny v kategorii 3 celkem [persistentní položka]")
+  public Double getSCategory3total() {
+    return sCategory3total;
+  }
+
+  public void setSCategory3total(Double sCategory3total) {
+    this.sCategory3total = sCategory3total;
   }
 
   public Wagelistpartial sCategory4(Double sCategory4) {
@@ -3743,10 +4841,10 @@ public class Wagelistpartial   {
   }
 
    /**
-   * Směny v kategorii 4 [persistentní položka]
+   * směny v kategorii 4 [persistentní položka]
    * @return sCategory4
   **/
-  @ApiModelProperty(example = "null", value = "Směny v kategorii 4 [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "směny v kategorii 4 [persistentní položka]")
   public Double getSCategory4() {
     return sCategory4;
   }
@@ -3755,184 +4853,274 @@ public class Wagelistpartial   {
     this.sCategory4 = sCategory4;
   }
 
-   /**
-   * Směny v kategorii 4 z výkonů [persistentní položka]
-   * @return sCategory4Oper
-  **/
-  @ApiModelProperty(example = "null", value = "Směny v kategorii 4 z výkonů [persistentní položka]")
-  public Double getSCategory4Oper() {
-    return sCategory4Oper;
-  }
-
-   /**
-   * Směny v kategorii 4 celkem [persistentní položka]
-   * @return sCategory4Total
-  **/
-  @ApiModelProperty(example = "null", value = "Směny v kategorii 4 celkem [persistentní položka]")
-  public Double getSCategory4Total() {
-    return sCategory4Total;
-  }
-
-  public Wagelistpartial sPOLWage(Double sPOLWage) {
-    this.sPOLWage = sPOLWage;
+  public Wagelistpartial sCategory4oper(Double sCategory4oper) {
+    this.sCategory4oper = sCategory4oper;
     return this;
   }
 
    /**
-   * Pohonné hmoty - natur. příjem [persistentní položka]
-   * @return sPOLWage
+   * směny v kategorii 4 z výkonů [persistentní položka]
+   * @return sCategory4oper
   **/
-  @ApiModelProperty(example = "null", value = "Pohonné hmoty - natur. příjem [persistentní položka]")
-  public Double getSPOLWage() {
-    return sPOLWage;
+  @ApiModelProperty(example = "null", value = "směny v kategorii 4 z výkonů [persistentní položka]")
+  public Double getSCategory4oper() {
+    return sCategory4oper;
   }
 
-  public void setSPOLWage(Double sPOLWage) {
-    this.sPOLWage = sPOLWage;
+  public void setSCategory4oper(Double sCategory4oper) {
+    this.sCategory4oper = sCategory4oper;
   }
 
-   /**
-   * Zdanitelné příjmy [persistentní položka]
-   * @return sTaxableIncome
-  **/
-  @ApiModelProperty(example = "null", value = "Zdanitelné příjmy [persistentní položka]")
-  public Double getSTaxableIncome() {
-    return sTaxableIncome;
-  }
-
-  public Wagelistpartial sTravelComp(Double sTravelComp) {
-    this.sTravelComp = sTravelComp;
+  public Wagelistpartial sCategory4total(Double sCategory4total) {
+    this.sCategory4total = sCategory4total;
     return this;
   }
 
    /**
-   * Cestovní náhrady [persistentní položka]
-   * @return sTravelComp
+   * směny v kategorii 4 celkem [persistentní položka]
+   * @return sCategory4total
   **/
-  @ApiModelProperty(example = "null", value = "Cestovní náhrady [persistentní položka]")
-  public Double getSTravelComp() {
-    return sTravelComp;
+  @ApiModelProperty(example = "null", value = "směny v kategorii 4 celkem [persistentní položka]")
+  public Double getSCategory4total() {
+    return sCategory4total;
   }
 
-  public void setSTravelComp(Double sTravelComp) {
-    this.sTravelComp = sTravelComp;
+  public void setSCategory4total(Double sCategory4total) {
+    this.sCategory4total = sCategory4total;
   }
 
-   /**
-   * Cestovní náhrady z výkonů [persistentní položka]
-   * @return sTravelCompOper
-  **/
-  @ApiModelProperty(example = "null", value = "Cestovní náhrady z výkonů [persistentní položka]")
-  public Double getSTravelCompOper() {
-    return sTravelCompOper;
-  }
-
-   /**
-   * Cestovní náhrady celkem [persistentní položka]
-   * @return sTravelCompTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Cestovní náhrady celkem [persistentní položka]")
-  public Double getSTravelCompTotal() {
-    return sTravelCompTotal;
-  }
-
-  public Wagelistpartial sMealTicketDemand(Integer sMealTicketDemand) {
-    this.sMealTicketDemand = sMealTicketDemand;
+  public Wagelistpartial sPolWage(Double sPolWage) {
+    this.sPolWage = sPolWage;
     return this;
   }
 
    /**
-   * Nárok na stravenky [persistentní položka]
-   * @return sMealTicketDemand
+   * pohonné hmoty - natur. příjem [persistentní položka]
+   * @return sPolWage
   **/
-  @ApiModelProperty(example = "null", value = "Nárok na stravenky [persistentní položka]")
-  public Integer getSMealTicketDemand() {
-    return sMealTicketDemand;
+  @ApiModelProperty(example = "null", value = "pohonné hmoty - natur. příjem [persistentní položka]")
+  public Double getSPolWage() {
+    return sPolWage;
   }
 
-  public void setSMealTicketDemand(Integer sMealTicketDemand) {
-    this.sMealTicketDemand = sMealTicketDemand;
+  public void setSPolWage(Double sPolWage) {
+    this.sPolWage = sPolWage;
   }
 
-   /**
-   * Nárok  na stravenky celkem [persistentní položka]
-   * @return sMealTicketDemandTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Nárok  na stravenky celkem [persistentní položka]")
-  public Integer getSMealTicketDemandTotal() {
-    return sMealTicketDemandTotal;
-  }
-
-  public Wagelistpartial sMealTicketCount(Integer sMealTicketCount) {
-    this.sMealTicketCount = sMealTicketCount;
+  public Wagelistpartial sTaxableincome(Double sTaxableincome) {
+    this.sTaxableincome = sTaxableincome;
     return this;
   }
 
    /**
-   * Počet vydaných stravenek [persistentní položka]
-   * @return sMealTicketCount
+   * zdanitelné příjmy [persistentní položka]
+   * @return sTaxableincome
   **/
-  @ApiModelProperty(example = "null", value = "Počet vydaných stravenek [persistentní položka]")
-  public Integer getSMealTicketCount() {
-    return sMealTicketCount;
+  @ApiModelProperty(example = "null", value = "zdanitelné příjmy [persistentní položka]")
+  public Double getSTaxableincome() {
+    return sTaxableincome;
   }
 
-  public void setSMealTicketCount(Integer sMealTicketCount) {
-    this.sMealTicketCount = sMealTicketCount;
+  public void setSTaxableincome(Double sTaxableincome) {
+    this.sTaxableincome = sTaxableincome;
   }
 
-   /**
-   * Počet stravenek za plnou cenu [persistentní položka]
-   * @return sMealTicketFullCount
-  **/
-  @ApiModelProperty(example = "null", value = "Počet stravenek za plnou cenu [persistentní položka]")
-  public Integer getSMealTicketFullCount() {
-    return sMealTicketFullCount;
-  }
-
-   /**
-   * Počet stravenek za sníženou ce [persistentní položka]
-   * @return sMealTicketDisCount
-  **/
-  @ApiModelProperty(example = "null", value = "Počet stravenek za sníženou ce [persistentní položka]")
-  public Integer getSMealTicketDisCount() {
-    return sMealTicketDisCount;
-  }
-
-  public Wagelistpartial sPOLDock(Double sPOLDock) {
-    this.sPOLDock = sPOLDock;
+  public Wagelistpartial sTravelcomp(Double sTravelcomp) {
+    this.sTravelcomp = sTravelcomp;
     return this;
   }
 
    /**
-   * PHM za soukromé cesty [persistentní položka]
-   * @return sPOLDock
+   * cestovní náhrady [persistentní položka]
+   * @return sTravelcomp
   **/
-  @ApiModelProperty(example = "null", value = "PHM za soukromé cesty [persistentní položka]")
-  public Double getSPOLDock() {
-    return sPOLDock;
+  @ApiModelProperty(example = "null", value = "cestovní náhrady [persistentní položka]")
+  public Double getSTravelcomp() {
+    return sTravelcomp;
   }
 
-  public void setSPOLDock(Double sPOLDock) {
-    this.sPOLDock = sPOLDock;
+  public void setSTravelcomp(Double sTravelcomp) {
+    this.sTravelcomp = sTravelcomp;
   }
 
-   /**
-   * PHM za soukr. cesty z výkonů [persistentní položka]
-   * @return sPOLDockOper
-  **/
-  @ApiModelProperty(example = "null", value = "PHM za soukr. cesty z výkonů [persistentní položka]")
-  public Double getSPOLDockOper() {
-    return sPOLDockOper;
+  public Wagelistpartial sTravelcompoper(Double sTravelcompoper) {
+    this.sTravelcompoper = sTravelcompoper;
+    return this;
   }
 
    /**
-   * PHM za soukr. cesty celkem [persistentní položka]
-   * @return sPOLDockTotal
+   * cestovní náhrady z výkonů [persistentní položka]
+   * @return sTravelcompoper
   **/
-  @ApiModelProperty(example = "null", value = "PHM za soukr. cesty celkem [persistentní položka]")
-  public Double getSPOLDockTotal() {
-    return sPOLDockTotal;
+  @ApiModelProperty(example = "null", value = "cestovní náhrady z výkonů [persistentní položka]")
+  public Double getSTravelcompoper() {
+    return sTravelcompoper;
+  }
+
+  public void setSTravelcompoper(Double sTravelcompoper) {
+    this.sTravelcompoper = sTravelcompoper;
+  }
+
+  public Wagelistpartial sTravelcomptotal(Double sTravelcomptotal) {
+    this.sTravelcomptotal = sTravelcomptotal;
+    return this;
+  }
+
+   /**
+   * cestovní náhrady celkem [persistentní položka]
+   * @return sTravelcomptotal
+  **/
+  @ApiModelProperty(example = "null", value = "cestovní náhrady celkem [persistentní položka]")
+  public Double getSTravelcomptotal() {
+    return sTravelcomptotal;
+  }
+
+  public void setSTravelcomptotal(Double sTravelcomptotal) {
+    this.sTravelcomptotal = sTravelcomptotal;
+  }
+
+  public Wagelistpartial sMealticketdemand(Integer sMealticketdemand) {
+    this.sMealticketdemand = sMealticketdemand;
+    return this;
+  }
+
+   /**
+   * nárok na stravenky [persistentní položka]
+   * @return sMealticketdemand
+  **/
+  @ApiModelProperty(example = "null", value = "nárok na stravenky [persistentní položka]")
+  public Integer getSMealticketdemand() {
+    return sMealticketdemand;
+  }
+
+  public void setSMealticketdemand(Integer sMealticketdemand) {
+    this.sMealticketdemand = sMealticketdemand;
+  }
+
+  public Wagelistpartial sMealticketdemandtotal(Integer sMealticketdemandtotal) {
+    this.sMealticketdemandtotal = sMealticketdemandtotal;
+    return this;
+  }
+
+   /**
+   * nárok  na stravenky celkem [persistentní položka]
+   * @return sMealticketdemandtotal
+  **/
+  @ApiModelProperty(example = "null", value = "nárok  na stravenky celkem [persistentní položka]")
+  public Integer getSMealticketdemandtotal() {
+    return sMealticketdemandtotal;
+  }
+
+  public void setSMealticketdemandtotal(Integer sMealticketdemandtotal) {
+    this.sMealticketdemandtotal = sMealticketdemandtotal;
+  }
+
+  public Wagelistpartial sMealticketcount(Integer sMealticketcount) {
+    this.sMealticketcount = sMealticketcount;
+    return this;
+  }
+
+   /**
+   * počet vydaných stravenek [persistentní položka]
+   * @return sMealticketcount
+  **/
+  @ApiModelProperty(example = "null", value = "počet vydaných stravenek [persistentní položka]")
+  public Integer getSMealticketcount() {
+    return sMealticketcount;
+  }
+
+  public void setSMealticketcount(Integer sMealticketcount) {
+    this.sMealticketcount = sMealticketcount;
+  }
+
+  public Wagelistpartial sMealticketfullcount(Integer sMealticketfullcount) {
+    this.sMealticketfullcount = sMealticketfullcount;
+    return this;
+  }
+
+   /**
+   * počet stravenek za plnou cenu [persistentní položka]
+   * @return sMealticketfullcount
+  **/
+  @ApiModelProperty(example = "null", value = "počet stravenek za plnou cenu [persistentní položka]")
+  public Integer getSMealticketfullcount() {
+    return sMealticketfullcount;
+  }
+
+  public void setSMealticketfullcount(Integer sMealticketfullcount) {
+    this.sMealticketfullcount = sMealticketfullcount;
+  }
+
+  public Wagelistpartial sMealticketdiscount(Integer sMealticketdiscount) {
+    this.sMealticketdiscount = sMealticketdiscount;
+    return this;
+  }
+
+   /**
+   * počet stravenek za sníženou ce [persistentní položka]
+   * @return sMealticketdiscount
+  **/
+  @ApiModelProperty(example = "null", value = "počet stravenek za sníženou ce [persistentní položka]")
+  public Integer getSMealticketdiscount() {
+    return sMealticketdiscount;
+  }
+
+  public void setSMealticketdiscount(Integer sMealticketdiscount) {
+    this.sMealticketdiscount = sMealticketdiscount;
+  }
+
+  public Wagelistpartial sPolDock(Double sPolDock) {
+    this.sPolDock = sPolDock;
+    return this;
+  }
+
+   /**
+   * phm za soukromé cesty [persistentní položka]
+   * @return sPolDock
+  **/
+  @ApiModelProperty(example = "null", value = "phm za soukromé cesty [persistentní položka]")
+  public Double getSPolDock() {
+    return sPolDock;
+  }
+
+  public void setSPolDock(Double sPolDock) {
+    this.sPolDock = sPolDock;
+  }
+
+  public Wagelistpartial sPolDockoper(Double sPolDockoper) {
+    this.sPolDockoper = sPolDockoper;
+    return this;
+  }
+
+   /**
+   * phm za soukr. cesty z výkonů [persistentní položka]
+   * @return sPolDockoper
+  **/
+  @ApiModelProperty(example = "null", value = "phm za soukr. cesty z výkonů [persistentní položka]")
+  public Double getSPolDockoper() {
+    return sPolDockoper;
+  }
+
+  public void setSPolDockoper(Double sPolDockoper) {
+    this.sPolDockoper = sPolDockoper;
+  }
+
+  public Wagelistpartial sPolDocktotal(Double sPolDocktotal) {
+    this.sPolDocktotal = sPolDocktotal;
+    return this;
+  }
+
+   /**
+   * phm za soukr. cesty celkem [persistentní položka]
+   * @return sPolDocktotal
+  **/
+  @ApiModelProperty(example = "null", value = "phm za soukr. cesty celkem [persistentní položka]")
+  public Double getSPolDocktotal() {
+    return sPolDocktotal;
+  }
+
+  public void setSPolDocktotal(Double sPolDocktotal) {
+    this.sPolDocktotal = sPolDocktotal;
   }
 
   public Wagelistpartial sExposure(Double sExposure) {
@@ -3941,10 +5129,10 @@ public class Wagelistpartial   {
   }
 
    /**
-   * Hodiny expozice [persistentní položka]
+   * hodiny expozice [persistentní položka]
    * @return sExposure
   **/
-  @ApiModelProperty(example = "null", value = "Hodiny expozice [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "hodiny expozice [persistentní položka]")
   public Double getSExposure() {
     return sExposure;
   }
@@ -3953,130 +5141,202 @@ public class Wagelistpartial   {
     this.sExposure = sExposure;
   }
 
-   /**
-   * Hodiny expozice celkem [persistentní položka]
-   * @return sExposureTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Hodiny expozice celkem [persistentní položka]")
-  public Double getSExposureTotal() {
-    return sExposureTotal;
-  }
-
-   /**
-   * Vyloučená doba (dny) [persistentní položka]
-   * @return sExcludedDays
-  **/
-  @ApiModelProperty(example = "null", value = "Vyloučená doba (dny) [persistentní položka]")
-  public Integer getSExcludedDays() {
-    return sExcludedDays;
-  }
-
-   /**
-   * Vyloučená doba korigovaná [persistentní položka]
-   * @return sExcludedDaysCorrect
-  **/
-  @ApiModelProperty(example = "null", value = "Vyloučená doba korigovaná [persistentní položka]")
-  public Integer getSExcludedDaysCorrect() {
-    return sExcludedDaysCorrect;
-  }
-
-   /**
-   * Vyloučená doba mimo pr. poměr [persistentní položka]
-   * @return sExcludedDaysOutSide
-  **/
-  @ApiModelProperty(example = "null", value = "Vyloučená doba mimo pr. poměr [persistentní položka]")
-  public Integer getSExcludedDaysOutSide() {
-    return sExcludedDaysOutSide;
-  }
-
-   /**
-   * Omluvená absence [persistentní položka]
-   * @return sExcusedAbsence
-  **/
-  @ApiModelProperty(example = "null", value = "Omluvená absence [persistentní položka]")
-  public Double getSExcusedAbsence() {
-    return sExcusedAbsence;
-  }
-
-   /**
-   * Korekce nepřít. pro přesčas [persistentní položka]
-   * @return sOverTimeAbsence
-  **/
-  @ApiModelProperty(example = "null", value = "Korekce nepřít. pro přesčas [persistentní položka]")
-  public Double getSOverTimeAbsence() {
-    return sOverTimeAbsence;
-  }
-
-  public Wagelistpartial sAbsenceWorkHours(Double sAbsenceWorkHours) {
-    this.sAbsenceWorkHours = sAbsenceWorkHours;
+  public Wagelistpartial sExposuretotal(Double sExposuretotal) {
+    this.sExposuretotal = sExposuretotal;
     return this;
   }
 
    /**
-   * Neoml. absence (pr. hod) [persistentní položka]
-   * @return sAbsenceWorkHours
+   * hodiny expozice celkem [persistentní položka]
+   * @return sExposuretotal
   **/
-  @ApiModelProperty(example = "null", value = "Neoml. absence (pr. hod) [persistentní položka]")
-  public Double getSAbsenceWorkHours() {
-    return sAbsenceWorkHours;
+  @ApiModelProperty(example = "null", value = "hodiny expozice celkem [persistentní položka]")
+  public Double getSExposuretotal() {
+    return sExposuretotal;
   }
 
-  public void setSAbsenceWorkHours(Double sAbsenceWorkHours) {
-    this.sAbsenceWorkHours = sAbsenceWorkHours;
+  public void setSExposuretotal(Double sExposuretotal) {
+    this.sExposuretotal = sExposuretotal;
   }
 
-  public Wagelistpartial sFlatTravelComp(Double sFlatTravelComp) {
-    this.sFlatTravelComp = sFlatTravelComp;
+  public Wagelistpartial sExcludeddays(Integer sExcludeddays) {
+    this.sExcludeddays = sExcludeddays;
     return this;
   }
 
    /**
-   * Paušál. náhrada cest. výdajů [persistentní položka]
-   * @return sFlatTravelComp
+   * vyloučená doba (dny) [persistentní položka]
+   * @return sExcludeddays
   **/
-  @ApiModelProperty(example = "null", value = "Paušál. náhrada cest. výdajů [persistentní položka]")
-  public Double getSFlatTravelComp() {
-    return sFlatTravelComp;
+  @ApiModelProperty(example = "null", value = "vyloučená doba (dny) [persistentní položka]")
+  public Integer getSExcludeddays() {
+    return sExcludeddays;
   }
 
-  public void setSFlatTravelComp(Double sFlatTravelComp) {
-    this.sFlatTravelComp = sFlatTravelComp;
+  public void setSExcludeddays(Integer sExcludeddays) {
+    this.sExcludeddays = sExcludeddays;
   }
 
-  public Wagelistpartial sWageDeposit(Double sWageDeposit) {
-    this.sWageDeposit = sWageDeposit;
+  public Wagelistpartial sExcludeddayscorrect(Integer sExcludeddayscorrect) {
+    this.sExcludeddayscorrect = sExcludeddayscorrect;
     return this;
   }
 
    /**
-   * Záloha na mzdu [persistentní položka]
-   * @return sWageDeposit
+   * vyloučená doba korigovaná [persistentní položka]
+   * @return sExcludeddayscorrect
   **/
-  @ApiModelProperty(example = "null", value = "Záloha na mzdu [persistentní položka]")
-  public Double getSWageDeposit() {
-    return sWageDeposit;
+  @ApiModelProperty(example = "null", value = "vyloučená doba korigovaná [persistentní položka]")
+  public Integer getSExcludeddayscorrect() {
+    return sExcludeddayscorrect;
   }
 
-  public void setSWageDeposit(Double sWageDeposit) {
-    this.sWageDeposit = sWageDeposit;
+  public void setSExcludeddayscorrect(Integer sExcludeddayscorrect) {
+    this.sExcludeddayscorrect = sExcludeddayscorrect;
+  }
+
+  public Wagelistpartial sExcludeddaysoutside(Integer sExcludeddaysoutside) {
+    this.sExcludeddaysoutside = sExcludeddaysoutside;
+    return this;
   }
 
    /**
-   * Min. výdělek pro účast na NP [persistentní položka]
-   * @return sSocialInsMinimum
+   * vyloučená doba mimo pr. poměr [persistentní položka]
+   * @return sExcludeddaysoutside
   **/
-  @ApiModelProperty(example = "null", value = "Min. výdělek pro účast na NP [persistentní položka]")
-  public Double getSSocialInsMinimum() {
-    return sSocialInsMinimum;
+  @ApiModelProperty(example = "null", value = "vyloučená doba mimo pr. poměr [persistentní položka]")
+  public Integer getSExcludeddaysoutside() {
+    return sExcludeddaysoutside;
+  }
+
+  public void setSExcludeddaysoutside(Integer sExcludeddaysoutside) {
+    this.sExcludeddaysoutside = sExcludeddaysoutside;
+  }
+
+  public Wagelistpartial sExcusedabsence(Double sExcusedabsence) {
+    this.sExcusedabsence = sExcusedabsence;
+    return this;
+  }
+
+   /**
+   * omluvená absence [persistentní položka]
+   * @return sExcusedabsence
+  **/
+  @ApiModelProperty(example = "null", value = "omluvená absence [persistentní položka]")
+  public Double getSExcusedabsence() {
+    return sExcusedabsence;
+  }
+
+  public void setSExcusedabsence(Double sExcusedabsence) {
+    this.sExcusedabsence = sExcusedabsence;
+  }
+
+  public Wagelistpartial sOvertimeabsence(Double sOvertimeabsence) {
+    this.sOvertimeabsence = sOvertimeabsence;
+    return this;
+  }
+
+   /**
+   * korekce nepřít. pro přesčas [persistentní položka]
+   * @return sOvertimeabsence
+  **/
+  @ApiModelProperty(example = "null", value = "korekce nepřít. pro přesčas [persistentní položka]")
+  public Double getSOvertimeabsence() {
+    return sOvertimeabsence;
+  }
+
+  public void setSOvertimeabsence(Double sOvertimeabsence) {
+    this.sOvertimeabsence = sOvertimeabsence;
+  }
+
+  public Wagelistpartial sAbsenceworkhours(Double sAbsenceworkhours) {
+    this.sAbsenceworkhours = sAbsenceworkhours;
+    return this;
+  }
+
+   /**
+   * neoml. absence (pr. hod) [persistentní položka]
+   * @return sAbsenceworkhours
+  **/
+  @ApiModelProperty(example = "null", value = "neoml. absence (pr. hod) [persistentní položka]")
+  public Double getSAbsenceworkhours() {
+    return sAbsenceworkhours;
+  }
+
+  public void setSAbsenceworkhours(Double sAbsenceworkhours) {
+    this.sAbsenceworkhours = sAbsenceworkhours;
+  }
+
+  public Wagelistpartial sFlattravelcomp(Double sFlattravelcomp) {
+    this.sFlattravelcomp = sFlattravelcomp;
+    return this;
+  }
+
+   /**
+   * paušál. náhrada cest. výdajů [persistentní položka]
+   * @return sFlattravelcomp
+  **/
+  @ApiModelProperty(example = "null", value = "paušál. náhrada cest. výdajů [persistentní položka]")
+  public Double getSFlattravelcomp() {
+    return sFlattravelcomp;
+  }
+
+  public void setSFlattravelcomp(Double sFlattravelcomp) {
+    this.sFlattravelcomp = sFlattravelcomp;
+  }
+
+  public Wagelistpartial sWagedeposit(Double sWagedeposit) {
+    this.sWagedeposit = sWagedeposit;
+    return this;
+  }
+
+   /**
+   * záloha na mzdu [persistentní položka]
+   * @return sWagedeposit
+  **/
+  @ApiModelProperty(example = "null", value = "záloha na mzdu [persistentní položka]")
+  public Double getSWagedeposit() {
+    return sWagedeposit;
+  }
+
+  public void setSWagedeposit(Double sWagedeposit) {
+    this.sWagedeposit = sWagedeposit;
+  }
+
+  public Wagelistpartial sSocialinsminimum(Double sSocialinsminimum) {
+    this.sSocialinsminimum = sSocialinsminimum;
+    return this;
+  }
+
+   /**
+   * min. výdělek pro účast na np [persistentní položka]
+   * @return sSocialinsminimum
+  **/
+  @ApiModelProperty(example = "null", value = "min. výdělek pro účast na np [persistentní položka]")
+  public Double getSSocialinsminimum() {
+    return sSocialinsminimum;
+  }
+
+  public void setSSocialinsminimum(Double sSocialinsminimum) {
+    this.sSocialinsminimum = sSocialinsminimum;
+  }
+
+  public Wagelistpartial sIssocialinsurance(Integer sIssocialinsurance) {
+    this.sIssocialinsurance = sIssocialinsurance;
+    return this;
   }
 
    /**
    * Účasten sociálního pojištění [persistentní položka]
-   * @return sIsSocialInsurance
+   * @return sIssocialinsurance
   **/
   @ApiModelProperty(example = "null", value = "Účasten sociálního pojištění [persistentní položka]")
-  public Integer getSIsSocialInsurance() {
-    return sIsSocialInsurance;
+  public Integer getSIssocialinsurance() {
+    return sIssocialinsurance;
+  }
+
+  public void setSIssocialinsurance(Integer sIssocialinsurance) {
+    this.sIssocialinsurance = sIssocialinsurance;
   }
 
   public Wagelistpartial sPhoneDock(Double sPhoneDock) {
@@ -4085,10 +5345,10 @@ public class Wagelistpartial   {
   }
 
    /**
-   * Telefon, soukromé hovory, opr. [persistentní položka]
+   * telefon, soukromé hovory, opr. [persistentní položka]
    * @return sPhoneDock
   **/
-  @ApiModelProperty(example = "null", value = "Telefon, soukromé hovory, opr. [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "telefon, soukromé hovory, opr. [persistentní položka]")
   public Double getSPhoneDock() {
     return sPhoneDock;
   }
@@ -4097,1039 +5357,1426 @@ public class Wagelistpartial   {
     this.sPhoneDock = sPhoneDock;
   }
 
-   /**
-   * Telefon, soukromé hovory [persistentní položka]
-   * @return sPhoneDockTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Telefon, soukromé hovory [persistentní položka]")
-  public Double getSPhoneDockTotal() {
-    return sPhoneDockTotal;
-  }
-
-  public Wagelistpartial sRewardSixMonth(Double sRewardSixMonth) {
-    this.sRewardSixMonth = sRewardSixMonth;
+  public Wagelistpartial sPhoneDocktotal(Double sPhoneDocktotal) {
+    this.sPhoneDocktotal = sPhoneDocktotal;
     return this;
   }
 
    /**
-   * Pololetní odměna [persistentní položka]
-   * @return sRewardSixMonth
+   * telefon, soukromé hovory [persistentní položka]
+   * @return sPhoneDocktotal
   **/
-  @ApiModelProperty(example = "null", value = "Pololetní odměna [persistentní položka]")
-  public Double getSRewardSixMonth() {
-    return sRewardSixMonth;
+  @ApiModelProperty(example = "null", value = "telefon, soukromé hovory [persistentní položka]")
+  public Double getSPhoneDocktotal() {
+    return sPhoneDocktotal;
   }
 
-  public void setSRewardSixMonth(Double sRewardSixMonth) {
-    this.sRewardSixMonth = sRewardSixMonth;
+  public void setSPhoneDocktotal(Double sPhoneDocktotal) {
+    this.sPhoneDocktotal = sPhoneDocktotal;
   }
 
-   /**
-   * Pololetní odměna celkem [persistentní položka]
-   * @return sRewardSixMonthTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Pololetní odměna celkem [persistentní položka]")
-  public Double getSRewardSixMonthTotal() {
-    return sRewardSixMonthTotal;
-  }
-
-  public Wagelistpartial sRewardTwelveMonth(Double sRewardTwelveMonth) {
-    this.sRewardTwelveMonth = sRewardTwelveMonth;
+  public Wagelistpartial sRewardsixmonth(Double sRewardsixmonth) {
+    this.sRewardsixmonth = sRewardsixmonth;
     return this;
   }
 
    /**
-   * Roční odměna [persistentní položka]
-   * @return sRewardTwelveMonth
+   * pololetní odměna [persistentní položka]
+   * @return sRewardsixmonth
   **/
-  @ApiModelProperty(example = "null", value = "Roční odměna [persistentní položka]")
-  public Double getSRewardTwelveMonth() {
-    return sRewardTwelveMonth;
+  @ApiModelProperty(example = "null", value = "pololetní odměna [persistentní položka]")
+  public Double getSRewardsixmonth() {
+    return sRewardsixmonth;
   }
 
-  public void setSRewardTwelveMonth(Double sRewardTwelveMonth) {
-    this.sRewardTwelveMonth = sRewardTwelveMonth;
+  public void setSRewardsixmonth(Double sRewardsixmonth) {
+    this.sRewardsixmonth = sRewardsixmonth;
   }
 
-   /**
-   * Roční odměna celkem [persistentní položka]
-   * @return sRewardTwelveMonthTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Roční odměna celkem [persistentní položka]")
-  public Double getSRewardTwelveMonthTotal() {
-    return sRewardTwelveMonthTotal;
-  }
-
-  public Wagelistpartial sArmyExerciseCal(Double sArmyExerciseCal) {
-    this.sArmyExerciseCal = sArmyExerciseCal;
+  public Wagelistpartial sRewardsixmonthtotal(Double sRewardsixmonthtotal) {
+    this.sRewardsixmonthtotal = sRewardsixmonthtotal;
     return this;
   }
 
    /**
-   * Kalendářní dny voj. cvičení [persistentní položka]
-   * @return sArmyExerciseCal
+   * pololetní odměna celkem [persistentní položka]
+   * @return sRewardsixmonthtotal
   **/
-  @ApiModelProperty(example = "null", value = "Kalendářní dny voj. cvičení [persistentní položka]")
-  public Double getSArmyExerciseCal() {
-    return sArmyExerciseCal;
+  @ApiModelProperty(example = "null", value = "pololetní odměna celkem [persistentní položka]")
+  public Double getSRewardsixmonthtotal() {
+    return sRewardsixmonthtotal;
   }
 
-  public void setSArmyExerciseCal(Double sArmyExerciseCal) {
-    this.sArmyExerciseCal = sArmyExerciseCal;
+  public void setSRewardsixmonthtotal(Double sRewardsixmonthtotal) {
+    this.sRewardsixmonthtotal = sRewardsixmonthtotal;
   }
 
-   /**
-   * Kal. dny voj. cvičení celkem [persistentní položka]
-   * @return sArmyExerciseCalTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Kal. dny voj. cvičení celkem [persistentní položka]")
-  public Double getSArmyExerciseCalTotal() {
-    return sArmyExerciseCalTotal;
-  }
-
-  public Wagelistpartial sSubtractedDays(Double sSubtractedDays) {
-    this.sSubtractedDays = sSubtractedDays;
+  public Wagelistpartial sRewardtwelvemonth(Double sRewardtwelvemonth) {
+    this.sRewardtwelvemonth = sRewardtwelvemonth;
     return this;
   }
 
    /**
-   * Doby odečt. (ELDP) - oprava [persistentní položka]
-   * @return sSubtractedDays
+   * roční odměna [persistentní položka]
+   * @return sRewardtwelvemonth
   **/
-  @ApiModelProperty(example = "null", value = "Doby odečt. (ELDP) - oprava [persistentní položka]")
-  public Double getSSubtractedDays() {
-    return sSubtractedDays;
+  @ApiModelProperty(example = "null", value = "roční odměna [persistentní položka]")
+  public Double getSRewardtwelvemonth() {
+    return sRewardtwelvemonth;
   }
 
-  public void setSSubtractedDays(Double sSubtractedDays) {
-    this.sSubtractedDays = sSubtractedDays;
+  public void setSRewardtwelvemonth(Double sRewardtwelvemonth) {
+    this.sRewardtwelvemonth = sRewardtwelvemonth;
   }
 
-   /**
-   * Doby odečt. (ELDP) [persistentní položka]
-   * @return sSubtractedDaysTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Doby odečt. (ELDP) [persistentní položka]")
-  public Double getSSubtractedDaysTotal() {
-    return sSubtractedDaysTotal;
-  }
-
-   /**
-   * Pololetní odměna z výkonů [persistentní položka]
-   * @return sRewardSixMonthOper
-  **/
-  @ApiModelProperty(example = "null", value = "Pololetní odměna z výkonů [persistentní položka]")
-  public Double getSRewardSixMonthOper() {
-    return sRewardSixMonthOper;
-  }
-
-   /**
-   * Roční odměna z výkonů [persistentní položka]
-   * @return sRewardTwelveMonthOper
-  **/
-  @ApiModelProperty(example = "null", value = "Roční odměna z výkonů [persistentní položka]")
-  public Double getSRewardTwelveMonthOper() {
-    return sRewardTwelveMonthOper;
-  }
-
-  public Wagelistpartial sExcludedDaysCorrection(Double sExcludedDaysCorrection) {
-    this.sExcludedDaysCorrection = sExcludedDaysCorrection;
+  public Wagelistpartial sRewardtwelvemonthtotal(Double sRewardtwelvemonthtotal) {
+    this.sRewardtwelvemonthtotal = sRewardtwelvemonthtotal;
     return this;
   }
 
    /**
-   * Vyloučené doby - oprava [persistentní položka]
-   * @return sExcludedDaysCorrection
+   * roční odměna celkem [persistentní položka]
+   * @return sRewardtwelvemonthtotal
   **/
-  @ApiModelProperty(example = "null", value = "Vyloučené doby - oprava [persistentní položka]")
-  public Double getSExcludedDaysCorrection() {
-    return sExcludedDaysCorrection;
+  @ApiModelProperty(example = "null", value = "roční odměna celkem [persistentní položka]")
+  public Double getSRewardtwelvemonthtotal() {
+    return sRewardtwelvemonthtotal;
   }
 
-  public void setSExcludedDaysCorrection(Double sExcludedDaysCorrection) {
-    this.sExcludedDaysCorrection = sExcludedDaysCorrection;
+  public void setSRewardtwelvemonthtotal(Double sRewardtwelvemonthtotal) {
+    this.sRewardtwelvemonthtotal = sRewardtwelvemonthtotal;
   }
 
-   /**
-   * Typ organizace [persistentní položka]
-   * @return sSmallOrBigCompany
-  **/
-  @ApiModelProperty(example = "null", value = "Typ organizace [persistentní položka]")
-  public Integer getSSmallOrBigCompany() {
-    return sSmallOrBigCompany;
-  }
-
-   /**
-   * Nem.dávky-nepřítomnost mimo PP [persistentní položka]
-   * @return sSickAbsencesOutOfRelation
-  **/
-  @ApiModelProperty(example = "null", value = "Nem.dávky-nepřítomnost mimo PP [persistentní položka]")
-  public Double getSSickAbsencesOutOfRelation() {
-    return sSickAbsencesOutOfRelation;
-  }
-
-   /**
-   * Vyloučená doba v důch. věku [persistentní položka]
-   * @return sExcludedDaysAfterRetAge
-  **/
-  @ApiModelProperty(example = "null", value = "Vyloučená doba v důch. věku [persistentní položka]")
-  public Double getSExcludedDaysAfterRetAge() {
-    return sExcludedDaysAfterRetAge;
-  }
-
-  public Wagelistpartial sExcludedDaysAfterRetAgeCorr(Double sExcludedDaysAfterRetAgeCorr) {
-    this.sExcludedDaysAfterRetAgeCorr = sExcludedDaysAfterRetAgeCorr;
+  public Wagelistpartial sArmyexercisecal(Double sArmyexercisecal) {
+    this.sArmyexercisecal = sArmyexercisecal;
     return this;
   }
 
    /**
-   * Vyloučená d. v důch. věku kor. [persistentní položka]
-   * @return sExcludedDaysAfterRetAgeCorr
+   * kalendářní dny voj. cvičení [persistentní položka]
+   * @return sArmyexercisecal
   **/
-  @ApiModelProperty(example = "null", value = "Vyloučená d. v důch. věku kor. [persistentní položka]")
-  public Double getSExcludedDaysAfterRetAgeCorr() {
-    return sExcludedDaysAfterRetAgeCorr;
+  @ApiModelProperty(example = "null", value = "kalendářní dny voj. cvičení [persistentní položka]")
+  public Double getSArmyexercisecal() {
+    return sArmyexercisecal;
   }
 
-  public void setSExcludedDaysAfterRetAgeCorr(Double sExcludedDaysAfterRetAgeCorr) {
-    this.sExcludedDaysAfterRetAgeCorr = sExcludedDaysAfterRetAgeCorr;
+  public void setSArmyexercisecal(Double sArmyexercisecal) {
+    this.sArmyexercisecal = sArmyexercisecal;
   }
 
-   /**
-   * Fond pracovní doby pro přesčas [persistentní položka]
-   * @return sWorkingFundForOvertime
-  **/
-  @ApiModelProperty(example = "null", value = "Fond pracovní doby pro přesčas [persistentní položka]")
-  public Double getSWorkingFundForOvertime() {
-    return sWorkingFundForOvertime;
-  }
-
-  public Wagelistpartial sOverpaidHoliday(Double sOverpaidHoliday) {
-    this.sOverpaidHoliday = sOverpaidHoliday;
+  public Wagelistpartial sArmyexercisecaltotal(Double sArmyexercisecaltotal) {
+    this.sArmyexercisecaltotal = sArmyexercisecaltotal;
     return this;
   }
 
    /**
-   * Vrácení náhrady za dovolenou [persistentní položka]
-   * @return sOverpaidHoliday
+   * kal. dny voj. cvičení celkem [persistentní položka]
+   * @return sArmyexercisecaltotal
   **/
-  @ApiModelProperty(example = "null", value = "Vrácení náhrady za dovolenou [persistentní položka]")
-  public Double getSOverpaidHoliday() {
-    return sOverpaidHoliday;
+  @ApiModelProperty(example = "null", value = "kal. dny voj. cvičení celkem [persistentní položka]")
+  public Double getSArmyexercisecaltotal() {
+    return sArmyexercisecaltotal;
   }
 
-  public void setSOverpaidHoliday(Double sOverpaidHoliday) {
-    this.sOverpaidHoliday = sOverpaidHoliday;
+  public void setSArmyexercisecaltotal(Double sArmyexercisecaltotal) {
+    this.sArmyexercisecaltotal = sArmyexercisecaltotal;
   }
 
-   /**
-   * Průměr na náhrady - korigovaný [persistentní položka]
-   * @return sAverageCorrect
-  **/
-  @ApiModelProperty(example = "null", value = "Průměr na náhrady - korigovaný [persistentní položka]")
-  public Double getSAverageCorrect() {
-    return sAverageCorrect;
-  }
-
-   /**
-   * Hrubá mzda pro výpočet PČM [persistentní položka]
-   * @return sGrossWageForAvgNetWage
-  **/
-  @ApiModelProperty(example = "null", value = "Hrubá mzda pro výpočet PČM [persistentní položka]")
-  public Double getSGrossWageForAvgNetWage() {
-    return sGrossWageForAvgNetWage;
-  }
-
-   /**
-   * Základ pro sníženou sazbu SP [persistentní položka]
-   * @return sSocInsBaseLowRate
-  **/
-  @ApiModelProperty(example = "null", value = "Základ pro sníženou sazbu SP [persistentní položka]")
-  public Double getSSocInsBaseLowRate() {
-    return sSocInsBaseLowRate;
-  }
-
-   /**
-   * Navýšení náhrady při PN [persistentní položka]
-   * @return sSickCompBoost
-  **/
-  @ApiModelProperty(example = "null", value = "Navýšení náhrady při PN [persistentní položka]")
-  public Double getSSickCompBoost() {
-    return sSickCompBoost;
-  }
-
-   /**
-   * Normální úvazek [persistentní položka]
-   * @return sNormalDuty
-  **/
-  @ApiModelProperty(example = "null", value = "Normální úvazek [persistentní položka]")
-  public Double getSNormalDuty() {
-    return sNormalDuty;
-  }
-
-  public Wagelistpartial sSurChargeGuaranteed(Double sSurChargeGuaranteed) {
-    this.sSurChargeGuaranteed = sSurChargeGuaranteed;
+  public Wagelistpartial sSubtracteddays(Double sSubtracteddays) {
+    this.sSubtracteddays = sSubtracteddays;
     return this;
   }
 
    /**
-   * Doplatek do zaručené mzdy opr. [persistentní položka]
-   * @return sSurChargeGuaranteed
+   * doby odečt. (eldp) - oprava [persistentní položka]
+   * @return sSubtracteddays
   **/
-  @ApiModelProperty(example = "null", value = "Doplatek do zaručené mzdy opr. [persistentní položka]")
-  public Double getSSurChargeGuaranteed() {
-    return sSurChargeGuaranteed;
+  @ApiModelProperty(example = "null", value = "doby odečt. (eldp) - oprava [persistentní položka]")
+  public Double getSSubtracteddays() {
+    return sSubtracteddays;
   }
 
-  public void setSSurChargeGuaranteed(Double sSurChargeGuaranteed) {
-    this.sSurChargeGuaranteed = sSurChargeGuaranteed;
+  public void setSSubtracteddays(Double sSubtracteddays) {
+    this.sSubtracteddays = sSubtracteddays;
   }
 
-   /**
-   * Zaručená mzda [persistentní položka]
-   * @return sGuaranteedWage
-  **/
-  @ApiModelProperty(example = "null", value = "Zaručená mzda [persistentní položka]")
-  public Double getSGuaranteedWage() {
-    return sGuaranteedWage;
-  }
-
-   /**
-   * Doplatek do zaručené mzdy [persistentní položka]
-   * @return sSurChargeGuaranteedTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Doplatek do zaručené mzdy [persistentní položka]")
-  public Double getSSurChargeGuaranteedTotal() {
-    return sSurChargeGuaranteedTotal;
-  }
-
-   /**
-   * Nevypořádaný přesčas - celkem [persistentní položka]
-   * @return sUnresolvedOvertimeTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Nevypořádaný přesčas - celkem [persistentní položka]")
-  public Double getSUnresolvedOvertimeTotal() {
-    return sUnresolvedOvertimeTotal;
-  }
-
-  public Wagelistpartial sOvertimeSubstFree(Double sOvertimeSubstFree) {
-    this.sOvertimeSubstFree = sOvertimeSubstFree;
+  public Wagelistpartial sSubtracteddaystotal(Double sSubtracteddaystotal) {
+    this.sSubtracteddaystotal = sSubtracteddaystotal;
     return this;
   }
 
    /**
-   * Náhradní volno za přesčas [persistentní položka]
-   * @return sOvertimeSubstFree
+   * doby odečt. (eldp) [persistentní položka]
+   * @return sSubtracteddaystotal
   **/
-  @ApiModelProperty(example = "null", value = "Náhradní volno za přesčas [persistentní položka]")
-  public Double getSOvertimeSubstFree() {
-    return sOvertimeSubstFree;
+  @ApiModelProperty(example = "null", value = "doby odečt. (eldp) [persistentní položka]")
+  public Double getSSubtracteddaystotal() {
+    return sSubtracteddaystotal;
   }
 
-  public void setSOvertimeSubstFree(Double sOvertimeSubstFree) {
-    this.sOvertimeSubstFree = sOvertimeSubstFree;
+  public void setSSubtracteddaystotal(Double sSubtracteddaystotal) {
+    this.sSubtracteddaystotal = sSubtracteddaystotal;
   }
 
-  public Wagelistpartial sUnresolvedOvertime(Double sUnresolvedOvertime) {
-    this.sUnresolvedOvertime = sUnresolvedOvertime;
+  public Wagelistpartial sRewardsixmonthoper(Double sRewardsixmonthoper) {
+    this.sRewardsixmonthoper = sRewardsixmonthoper;
     return this;
   }
 
    /**
-   * Nevypořádaný přesčas [persistentní položka]
-   * @return sUnresolvedOvertime
+   * pololetní odměna z výkonů [persistentní položka]
+   * @return sRewardsixmonthoper
   **/
-  @ApiModelProperty(example = "null", value = "Nevypořádaný přesčas [persistentní položka]")
-  public Double getSUnresolvedOvertime() {
-    return sUnresolvedOvertime;
+  @ApiModelProperty(example = "null", value = "pololetní odměna z výkonů [persistentní položka]")
+  public Double getSRewardsixmonthoper() {
+    return sRewardsixmonthoper;
   }
 
-  public void setSUnresolvedOvertime(Double sUnresolvedOvertime) {
-    this.sUnresolvedOvertime = sUnresolvedOvertime;
+  public void setSRewardsixmonthoper(Double sRewardsixmonthoper) {
+    this.sRewardsixmonthoper = sRewardsixmonthoper;
   }
 
-   /**
-   * Způsob počítání svátků  [persistentní položka]
-   * @return sFeastMode
-  **/
-  @ApiModelProperty(example = "null", value = "Způsob počítání svátků  [persistentní položka]")
-  public Integer getSFeastMode() {
-    return sFeastMode;
-  }
-
-   /**
-   * Náhr. volno za přesčas-celkem [persistentní položka]
-   * @return sOvertimeSubstFreeTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Náhr. volno za přesčas-celkem [persistentní položka]")
-  public Double getSOvertimeSubstFreeTotal() {
-    return sOvertimeSubstFreeTotal;
-  }
-
-  public Wagelistpartial sOldOvertimeHours(Double sOldOvertimeHours) {
-    this.sOldOvertimeHours = sOldOvertimeHours;
+  public Wagelistpartial sRewardtwelvemonthoper(Double sRewardtwelvemonthoper) {
+    this.sRewardtwelvemonthoper = sRewardtwelvemonthoper;
     return this;
   }
 
    /**
-   * Vypořádání přesčasu (h) [persistentní položka]
-   * @return sOldOvertimeHours
+   * roční odměna z výkonů [persistentní položka]
+   * @return sRewardtwelvemonthoper
   **/
-  @ApiModelProperty(example = "null", value = "Vypořádání přesčasu (h) [persistentní položka]")
-  public Double getSOldOvertimeHours() {
-    return sOldOvertimeHours;
+  @ApiModelProperty(example = "null", value = "roční odměna z výkonů [persistentní položka]")
+  public Double getSRewardtwelvemonthoper() {
+    return sRewardtwelvemonthoper;
   }
 
-  public void setSOldOvertimeHours(Double sOldOvertimeHours) {
-    this.sOldOvertimeHours = sOldOvertimeHours;
+  public void setSRewardtwelvemonthoper(Double sRewardtwelvemonthoper) {
+    this.sRewardtwelvemonthoper = sRewardtwelvemonthoper;
   }
 
-   /**
-   * Vypořádání přesčasu-celkem (h) [persistentní položka]
-   * @return sOldOvertimeHoursTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Vypořádání přesčasu-celkem (h) [persistentní položka]")
-  public Double getSOldOvertimeHoursTotal() {
-    return sOldOvertimeHoursTotal;
-  }
-
-  public Wagelistpartial sDisasterCompTime(Double sDisasterCompTime) {
-    this.sDisasterCompTime = sDisasterCompTime;
+  public Wagelistpartial sExcludeddayscorrection(Double sExcludeddayscorrection) {
+    this.sExcludeddayscorrection = sExcludeddayscorrection;
     return this;
   }
 
    /**
-   * Hod. náhr. při nepřizni počasí [persistentní položka]
-   * @return sDisasterCompTime
+   * vyloučené doby - oprava [persistentní položka]
+   * @return sExcludeddayscorrection
   **/
-  @ApiModelProperty(example = "null", value = "Hod. náhr. při nepřizni počasí [persistentní položka]")
-  public Double getSDisasterCompTime() {
-    return sDisasterCompTime;
+  @ApiModelProperty(example = "null", value = "vyloučené doby - oprava [persistentní položka]")
+  public Double getSExcludeddayscorrection() {
+    return sExcludeddayscorrection;
   }
 
-  public void setSDisasterCompTime(Double sDisasterCompTime) {
-    this.sDisasterCompTime = sDisasterCompTime;
+  public void setSExcludeddayscorrection(Double sExcludeddayscorrection) {
+    this.sExcludeddayscorrection = sExcludeddayscorrection;
   }
 
-  public Wagelistpartial sMalfunctionCompTime(Double sMalfunctionCompTime) {
-    this.sMalfunctionCompTime = sMalfunctionCompTime;
+  public Wagelistpartial sSmallorbigcompany(Integer sSmallorbigcompany) {
+    this.sSmallorbigcompany = sSmallorbigcompany;
     return this;
   }
 
    /**
-   * Hod. náhr. při poruše stroje [persistentní položka]
-   * @return sMalfunctionCompTime
+   * typ organizace [persistentní položka]
+   * @return sSmallorbigcompany
   **/
-  @ApiModelProperty(example = "null", value = "Hod. náhr. při poruše stroje [persistentní položka]")
-  public Double getSMalfunctionCompTime() {
-    return sMalfunctionCompTime;
+  @ApiModelProperty(example = "null", value = "typ organizace [persistentní položka]")
+  public Integer getSSmallorbigcompany() {
+    return sSmallorbigcompany;
   }
 
-  public void setSMalfunctionCompTime(Double sMalfunctionCompTime) {
-    this.sMalfunctionCompTime = sMalfunctionCompTime;
+  public void setSSmallorbigcompany(Integer sSmallorbigcompany) {
+    this.sSmallorbigcompany = sSmallorbigcompany;
   }
 
-  public Wagelistpartial sOtherObstructionCompTime(Double sOtherObstructionCompTime) {
-    this.sOtherObstructionCompTime = sOtherObstructionCompTime;
+  public Wagelistpartial sSickabsencesoutofrelation(Double sSickabsencesoutofrelation) {
+    this.sSickabsencesoutofrelation = sSickabsencesoutofrelation;
     return this;
   }
 
    /**
-   * Hod. náhr. při ost. překážkách [persistentní položka]
-   * @return sOtherObstructionCompTime
+   * nem.dávky-nepřítomnost mimo pp [persistentní položka]
+   * @return sSickabsencesoutofrelation
   **/
-  @ApiModelProperty(example = "null", value = "Hod. náhr. při ost. překážkách [persistentní položka]")
-  public Double getSOtherObstructionCompTime() {
-    return sOtherObstructionCompTime;
+  @ApiModelProperty(example = "null", value = "nem.dávky-nepřítomnost mimo pp [persistentní položka]")
+  public Double getSSickabsencesoutofrelation() {
+    return sSickabsencesoutofrelation;
   }
 
-  public void setSOtherObstructionCompTime(Double sOtherObstructionCompTime) {
-    this.sOtherObstructionCompTime = sOtherObstructionCompTime;
+  public void setSSickabsencesoutofrelation(Double sSickabsencesoutofrelation) {
+    this.sSickabsencesoutofrelation = sSickabsencesoutofrelation;
   }
 
-  public Wagelistpartial sDisasterComp(Double sDisasterComp) {
-    this.sDisasterComp = sDisasterComp;
+  public Wagelistpartial sExcludeddaysafterretage(Double sExcludeddaysafterretage) {
+    this.sExcludeddaysafterretage = sExcludeddaysafterretage;
     return this;
   }
 
    /**
-   * Náhr. při nepřiz. počasí opr. [persistentní položka]
-   * @return sDisasterComp
+   * vyloučená doba v důch. věku [persistentní položka]
+   * @return sExcludeddaysafterretage
   **/
-  @ApiModelProperty(example = "null", value = "Náhr. při nepřiz. počasí opr. [persistentní položka]")
-  public Double getSDisasterComp() {
-    return sDisasterComp;
+  @ApiModelProperty(example = "null", value = "vyloučená doba v důch. věku [persistentní položka]")
+  public Double getSExcludeddaysafterretage() {
+    return sExcludeddaysafterretage;
   }
 
-  public void setSDisasterComp(Double sDisasterComp) {
-    this.sDisasterComp = sDisasterComp;
+  public void setSExcludeddaysafterretage(Double sExcludeddaysafterretage) {
+    this.sExcludeddaysafterretage = sExcludeddaysafterretage;
   }
 
-  public Wagelistpartial sMalfunctionComp(Double sMalfunctionComp) {
-    this.sMalfunctionComp = sMalfunctionComp;
+  public Wagelistpartial sExcludeddaysafterretagecorr(Double sExcludeddaysafterretagecorr) {
+    this.sExcludeddaysafterretagecorr = sExcludeddaysafterretagecorr;
     return this;
   }
 
    /**
-   * Náhr. při poruše stroje opr. [persistentní položka]
-   * @return sMalfunctionComp
+   * vyloučená d. v důch. věku kor. [persistentní položka]
+   * @return sExcludeddaysafterretagecorr
   **/
-  @ApiModelProperty(example = "null", value = "Náhr. při poruše stroje opr. [persistentní položka]")
-  public Double getSMalfunctionComp() {
-    return sMalfunctionComp;
+  @ApiModelProperty(example = "null", value = "vyloučená d. v důch. věku kor. [persistentní položka]")
+  public Double getSExcludeddaysafterretagecorr() {
+    return sExcludeddaysafterretagecorr;
   }
 
-  public void setSMalfunctionComp(Double sMalfunctionComp) {
-    this.sMalfunctionComp = sMalfunctionComp;
+  public void setSExcludeddaysafterretagecorr(Double sExcludeddaysafterretagecorr) {
+    this.sExcludeddaysafterretagecorr = sExcludeddaysafterretagecorr;
   }
 
-  public Wagelistpartial sOtherObstructionComp(Double sOtherObstructionComp) {
-    this.sOtherObstructionComp = sOtherObstructionComp;
+  public Wagelistpartial sWorkingfundforovertime(Double sWorkingfundforovertime) {
+    this.sWorkingfundforovertime = sWorkingfundforovertime;
     return this;
   }
 
    /**
-   * Náhr. při ost. překážkách opr. [persistentní položka]
-   * @return sOtherObstructionComp
+   * fond pracovní doby pro přesčas [persistentní položka]
+   * @return sWorkingfundforovertime
   **/
-  @ApiModelProperty(example = "null", value = "Náhr. při ost. překážkách opr. [persistentní položka]")
-  public Double getSOtherObstructionComp() {
-    return sOtherObstructionComp;
+  @ApiModelProperty(example = "null", value = "fond pracovní doby pro přesčas [persistentní položka]")
+  public Double getSWorkingfundforovertime() {
+    return sWorkingfundforovertime;
   }
 
-  public void setSOtherObstructionComp(Double sOtherObstructionComp) {
-    this.sOtherObstructionComp = sOtherObstructionComp;
+  public void setSWorkingfundforovertime(Double sWorkingfundforovertime) {
+    this.sWorkingfundforovertime = sWorkingfundforovertime;
   }
 
-   /**
-   * Náhr. při nepřizni počasí [persistentní položka]
-   * @return sDisasterCompTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Náhr. při nepřizni počasí [persistentní položka]")
-  public Double getSDisasterCompTotal() {
-    return sDisasterCompTotal;
-  }
-
-   /**
-   * Náhr. při poruše stroje [persistentní položka]
-   * @return sMalfuncCompTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Náhr. při poruše stroje [persistentní položka]")
-  public Double getSMalfuncCompTotal() {
-    return sMalfuncCompTotal;
-  }
-
-   /**
-   * Náhr. při ost. překážkách [persistentní položka]
-   * @return sOtherObstCompTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Náhr. při ost. překážkách [persistentní položka]")
-  public Double getSOtherObstCompTotal() {
-    return sOtherObstCompTotal;
-  }
-
-  public Wagelistpartial sRewardJubilee(Double sRewardJubilee) {
-    this.sRewardJubilee = sRewardJubilee;
+  public Wagelistpartial sOverpaidholiday(Double sOverpaidholiday) {
+    this.sOverpaidholiday = sOverpaidholiday;
     return this;
   }
 
    /**
-   * Jubilejní odměna - daň [persistentní položka]
-   * @return sRewardJubilee
+   * vrácení náhrady za dovolenou [persistentní položka]
+   * @return sOverpaidholiday
   **/
-  @ApiModelProperty(example = "null", value = "Jubilejní odměna - daň [persistentní položka]")
-  public Double getSRewardJubilee() {
-    return sRewardJubilee;
+  @ApiModelProperty(example = "null", value = "vrácení náhrady za dovolenou [persistentní položka]")
+  public Double getSOverpaidholiday() {
+    return sOverpaidholiday;
   }
 
-  public void setSRewardJubilee(Double sRewardJubilee) {
-    this.sRewardJubilee = sRewardJubilee;
+  public void setSOverpaidholiday(Double sOverpaidholiday) {
+    this.sOverpaidholiday = sOverpaidholiday;
   }
 
-   /**
-   * Zaručená mzda upravená [persistentní položka]
-   * @return sGuaranteedWageCorrect
-  **/
-  @ApiModelProperty(example = "null", value = "Zaručená mzda upravená [persistentní položka]")
-  public Double getSGuaranteedWageCorrect() {
-    return sGuaranteedWageCorrect;
-  }
-
-  public Wagelistpartial sFeastHoursOutOfRelation(Double sFeastHoursOutOfRelation) {
-    this.sFeastHoursOutOfRelation = sFeastHoursOutOfRelation;
+  public Wagelistpartial sAveragecorrect(Double sAveragecorrect) {
+    this.sAveragecorrect = sAveragecorrect;
     return this;
   }
 
    /**
-   * Hodiny svátků mimo PP [persistentní položka]
-   * @return sFeastHoursOutOfRelation
+   * průměr na náhrady - korigovaný [persistentní položka]
+   * @return sAveragecorrect
   **/
-  @ApiModelProperty(example = "null", value = "Hodiny svátků mimo PP [persistentní položka]")
-  public Double getSFeastHoursOutOfRelation() {
-    return sFeastHoursOutOfRelation;
+  @ApiModelProperty(example = "null", value = "průměr na náhrady - korigovaný [persistentní položka]")
+  public Double getSAveragecorrect() {
+    return sAveragecorrect;
   }
 
-  public void setSFeastHoursOutOfRelation(Double sFeastHoursOutOfRelation) {
-    this.sFeastHoursOutOfRelation = sFeastHoursOutOfRelation;
+  public void setSAveragecorrect(Double sAveragecorrect) {
+    this.sAveragecorrect = sAveragecorrect;
   }
 
-  public Wagelistpartial sFeastHourInAbsenceAndSickness(Double sFeastHourInAbsenceAndSickness) {
-    this.sFeastHourInAbsenceAndSickness = sFeastHourInAbsenceAndSickness;
+  public Wagelistpartial sGrosswageforavgnetwage(Double sGrosswageforavgnetwage) {
+    this.sGrosswageforavgnetwage = sGrosswageforavgnetwage;
     return this;
   }
 
    /**
-   * Hodiny svátků v nepř. a nemoci [persistentní položka]
-   * @return sFeastHourInAbsenceAndSickness
+   * hrubá mzda pro výpočet pČm [persistentní položka]
+   * @return sGrosswageforavgnetwage
   **/
-  @ApiModelProperty(example = "null", value = "Hodiny svátků v nepř. a nemoci [persistentní položka]")
-  public Double getSFeastHourInAbsenceAndSickness() {
-    return sFeastHourInAbsenceAndSickness;
+  @ApiModelProperty(example = "null", value = "hrubá mzda pro výpočet pČm [persistentní položka]")
+  public Double getSGrosswageforavgnetwage() {
+    return sGrosswageforavgnetwage;
   }
 
-  public void setSFeastHourInAbsenceAndSickness(Double sFeastHourInAbsenceAndSickness) {
-    this.sFeastHourInAbsenceAndSickness = sFeastHourInAbsenceAndSickness;
+  public void setSGrosswageforavgnetwage(Double sGrosswageforavgnetwage) {
+    this.sGrosswageforavgnetwage = sGrosswageforavgnetwage;
   }
 
-  public Wagelistpartial sRewardJubileeAllBase(Double sRewardJubileeAllBase) {
-    this.sRewardJubileeAllBase = sRewardJubileeAllBase;
+  public Wagelistpartial sSocinsbaselowrate(Double sSocinsbaselowrate) {
+    this.sSocinsbaselowrate = sSocinsbaselowrate;
     return this;
   }
 
    /**
-   * Jubilejní odměna - daň, SP, ZP [persistentní položka]
-   * @return sRewardJubileeAllBase
+   * základ pro sníženou sazbu sp [persistentní položka]
+   * @return sSocinsbaselowrate
   **/
-  @ApiModelProperty(example = "null", value = "Jubilejní odměna - daň, SP, ZP [persistentní položka]")
-  public Double getSRewardJubileeAllBase() {
-    return sRewardJubileeAllBase;
+  @ApiModelProperty(example = "null", value = "základ pro sníženou sazbu sp [persistentní položka]")
+  public Double getSSocinsbaselowrate() {
+    return sSocinsbaselowrate;
   }
 
-  public void setSRewardJubileeAllBase(Double sRewardJubileeAllBase) {
-    this.sRewardJubileeAllBase = sRewardJubileeAllBase;
+  public void setSSocinsbaselowrate(Double sSocinsbaselowrate) {
+    this.sSocinsbaselowrate = sSocinsbaselowrate;
   }
 
-  public Wagelistpartial sRewardJubileeNoneBase(Double sRewardJubileeNoneBase) {
-    this.sRewardJubileeNoneBase = sRewardJubileeNoneBase;
+  public Wagelistpartial sSickcompboost(Double sSickcompboost) {
+    this.sSickcompboost = sSickcompboost;
     return this;
   }
 
    /**
-   * Jubilejní odměna-nepeněžní [persistentní položka]
-   * @return sRewardJubileeNoneBase
+   * navýšení náhrady při pn [persistentní položka]
+   * @return sSickcompboost
   **/
-  @ApiModelProperty(example = "null", value = "Jubilejní odměna-nepeněžní [persistentní položka]")
-  public Double getSRewardJubileeNoneBase() {
-    return sRewardJubileeNoneBase;
+  @ApiModelProperty(example = "null", value = "navýšení náhrady při pn [persistentní položka]")
+  public Double getSSickcompboost() {
+    return sSickcompboost;
   }
 
-  public void setSRewardJubileeNoneBase(Double sRewardJubileeNoneBase) {
-    this.sRewardJubileeNoneBase = sRewardJubileeNoneBase;
+  public void setSSickcompboost(Double sSickcompboost) {
+    this.sSickcompboost = sSickcompboost;
   }
 
-   /**
-   * Průměrná délka směny [persistentní položka]
-   * @return sAvgShiftLength
-  **/
-  @ApiModelProperty(example = "null", value = "Průměrná délka směny [persistentní položka]")
-  public Double getSAvgShiftLength() {
-    return sAvgShiftLength;
-  }
-
-   /**
-   * Hod. náhrad za svátek z výkonů [persistentní položka]
-   * @return sPaidFeastHoursOper
-  **/
-  @ApiModelProperty(example = "null", value = "Hod. náhrad za svátek z výkonů [persistentní položka]")
-  public Double getSPaidFeastHoursOper() {
-    return sPaidFeastHoursOper;
-  }
-
-   /**
-   * Doplatek mzdy součástí HM [persistentní položka]
-   * @return sSurChargeGuarantInGrossWage
-  **/
-  @ApiModelProperty(example = "null", value = "Doplatek mzdy součástí HM [persistentní položka]")
-  public Integer getSSurChargeGuarantInGrossWage() {
-    return sSurChargeGuarantInGrossWage;
-  }
-
-  public Wagelistpartial sPaidFeastHours(Double sPaidFeastHours) {
-    this.sPaidFeastHours = sPaidFeastHours;
+  public Wagelistpartial sNormalduty(Double sNormalduty) {
+    this.sNormalduty = sNormalduty;
     return this;
   }
 
    /**
-   * Hodiny propl. svátků - zadané [persistentní položka]
-   * @return sPaidFeastHours
+   * normální úvazek [persistentní položka]
+   * @return sNormalduty
   **/
-  @ApiModelProperty(example = "null", value = "Hodiny propl. svátků - zadané [persistentní položka]")
-  public Double getSPaidFeastHours() {
-    return sPaidFeastHours;
+  @ApiModelProperty(example = "null", value = "normální úvazek [persistentní položka]")
+  public Double getSNormalduty() {
+    return sNormalduty;
   }
 
-  public void setSPaidFeastHours(Double sPaidFeastHours) {
-    this.sPaidFeastHours = sPaidFeastHours;
+  public void setSNormalduty(Double sNormalduty) {
+    this.sNormalduty = sNormalduty;
+  }
+
+  public Wagelistpartial sSurchargeguaranteed(Double sSurchargeguaranteed) {
+    this.sSurchargeguaranteed = sSurchargeguaranteed;
+    return this;
   }
 
    /**
-   * Způsob odměňování [persistentní položka]
-   * @return sRenumerationForm
+   * doplatek do zaručené mzdy opr. [persistentní položka]
+   * @return sSurchargeguaranteed
   **/
-  @ApiModelProperty(example = "null", value = "Způsob odměňování [persistentní položka]")
-  public Integer getSRenumerationForm() {
-    return sRenumerationForm;
+  @ApiModelProperty(example = "null", value = "doplatek do zaručené mzdy opr. [persistentní položka]")
+  public Double getSSurchargeguaranteed() {
+    return sSurchargeguaranteed;
   }
 
-  public Wagelistpartial sHolidayHours(Double sHolidayHours) {
-    this.sHolidayHours = sHolidayHours;
+  public void setSSurchargeguaranteed(Double sSurchargeguaranteed) {
+    this.sSurchargeguaranteed = sSurchargeguaranteed;
+  }
+
+  public Wagelistpartial sGuaranteedwage(Double sGuaranteedwage) {
+    this.sGuaranteedwage = sGuaranteedwage;
+    return this;
+  }
+
+   /**
+   * zaručená mzda [persistentní položka]
+   * @return sGuaranteedwage
+  **/
+  @ApiModelProperty(example = "null", value = "zaručená mzda [persistentní položka]")
+  public Double getSGuaranteedwage() {
+    return sGuaranteedwage;
+  }
+
+  public void setSGuaranteedwage(Double sGuaranteedwage) {
+    this.sGuaranteedwage = sGuaranteedwage;
+  }
+
+  public Wagelistpartial sSurchargeguaranteedtotal(Double sSurchargeguaranteedtotal) {
+    this.sSurchargeguaranteedtotal = sSurchargeguaranteedtotal;
+    return this;
+  }
+
+   /**
+   * doplatek do zaručené mzdy [persistentní položka]
+   * @return sSurchargeguaranteedtotal
+  **/
+  @ApiModelProperty(example = "null", value = "doplatek do zaručené mzdy [persistentní položka]")
+  public Double getSSurchargeguaranteedtotal() {
+    return sSurchargeguaranteedtotal;
+  }
+
+  public void setSSurchargeguaranteedtotal(Double sSurchargeguaranteedtotal) {
+    this.sSurchargeguaranteedtotal = sSurchargeguaranteedtotal;
+  }
+
+  public Wagelistpartial sUnresolvedovertimetotal(Double sUnresolvedovertimetotal) {
+    this.sUnresolvedovertimetotal = sUnresolvedovertimetotal;
+    return this;
+  }
+
+   /**
+   * nevypořádaný přesčas - celkem [persistentní položka]
+   * @return sUnresolvedovertimetotal
+  **/
+  @ApiModelProperty(example = "null", value = "nevypořádaný přesčas - celkem [persistentní položka]")
+  public Double getSUnresolvedovertimetotal() {
+    return sUnresolvedovertimetotal;
+  }
+
+  public void setSUnresolvedovertimetotal(Double sUnresolvedovertimetotal) {
+    this.sUnresolvedovertimetotal = sUnresolvedovertimetotal;
+  }
+
+  public Wagelistpartial sOvertimesubstfree(Double sOvertimesubstfree) {
+    this.sOvertimesubstfree = sOvertimesubstfree;
+    return this;
+  }
+
+   /**
+   * náhradní volno za přesčas [persistentní položka]
+   * @return sOvertimesubstfree
+  **/
+  @ApiModelProperty(example = "null", value = "náhradní volno za přesčas [persistentní položka]")
+  public Double getSOvertimesubstfree() {
+    return sOvertimesubstfree;
+  }
+
+  public void setSOvertimesubstfree(Double sOvertimesubstfree) {
+    this.sOvertimesubstfree = sOvertimesubstfree;
+  }
+
+  public Wagelistpartial sUnresolvedovertime(Double sUnresolvedovertime) {
+    this.sUnresolvedovertime = sUnresolvedovertime;
+    return this;
+  }
+
+   /**
+   * nevypořádaný přesčas [persistentní položka]
+   * @return sUnresolvedovertime
+  **/
+  @ApiModelProperty(example = "null", value = "nevypořádaný přesčas [persistentní položka]")
+  public Double getSUnresolvedovertime() {
+    return sUnresolvedovertime;
+  }
+
+  public void setSUnresolvedovertime(Double sUnresolvedovertime) {
+    this.sUnresolvedovertime = sUnresolvedovertime;
+  }
+
+  public Wagelistpartial sFeastmode(Integer sFeastmode) {
+    this.sFeastmode = sFeastmode;
+    return this;
+  }
+
+   /**
+   * způsob počítání svátků  [persistentní položka]
+   * @return sFeastmode
+  **/
+  @ApiModelProperty(example = "null", value = "způsob počítání svátků  [persistentní položka]")
+  public Integer getSFeastmode() {
+    return sFeastmode;
+  }
+
+  public void setSFeastmode(Integer sFeastmode) {
+    this.sFeastmode = sFeastmode;
+  }
+
+  public Wagelistpartial sOvertimesubstfreetotal(Double sOvertimesubstfreetotal) {
+    this.sOvertimesubstfreetotal = sOvertimesubstfreetotal;
+    return this;
+  }
+
+   /**
+   * náhr. volno za přesčas-celkem [persistentní položka]
+   * @return sOvertimesubstfreetotal
+  **/
+  @ApiModelProperty(example = "null", value = "náhr. volno za přesčas-celkem [persistentní položka]")
+  public Double getSOvertimesubstfreetotal() {
+    return sOvertimesubstfreetotal;
+  }
+
+  public void setSOvertimesubstfreetotal(Double sOvertimesubstfreetotal) {
+    this.sOvertimesubstfreetotal = sOvertimesubstfreetotal;
+  }
+
+  public Wagelistpartial sOldovertimehours(Double sOldovertimehours) {
+    this.sOldovertimehours = sOldovertimehours;
+    return this;
+  }
+
+   /**
+   * vypořádání přesčasu (h) [persistentní položka]
+   * @return sOldovertimehours
+  **/
+  @ApiModelProperty(example = "null", value = "vypořádání přesčasu (h) [persistentní položka]")
+  public Double getSOldovertimehours() {
+    return sOldovertimehours;
+  }
+
+  public void setSOldovertimehours(Double sOldovertimehours) {
+    this.sOldovertimehours = sOldovertimehours;
+  }
+
+  public Wagelistpartial sOldovertimehourstotal(Double sOldovertimehourstotal) {
+    this.sOldovertimehourstotal = sOldovertimehourstotal;
+    return this;
+  }
+
+   /**
+   * vypořádání přesčasu-celkem (h) [persistentní položka]
+   * @return sOldovertimehourstotal
+  **/
+  @ApiModelProperty(example = "null", value = "vypořádání přesčasu-celkem (h) [persistentní položka]")
+  public Double getSOldovertimehourstotal() {
+    return sOldovertimehourstotal;
+  }
+
+  public void setSOldovertimehourstotal(Double sOldovertimehourstotal) {
+    this.sOldovertimehourstotal = sOldovertimehourstotal;
+  }
+
+  public Wagelistpartial sDisastercomptime(Double sDisastercomptime) {
+    this.sDisastercomptime = sDisastercomptime;
+    return this;
+  }
+
+   /**
+   * hod. náhr. při nepřizni počasí [persistentní položka]
+   * @return sDisastercomptime
+  **/
+  @ApiModelProperty(example = "null", value = "hod. náhr. při nepřizni počasí [persistentní položka]")
+  public Double getSDisastercomptime() {
+    return sDisastercomptime;
+  }
+
+  public void setSDisastercomptime(Double sDisastercomptime) {
+    this.sDisastercomptime = sDisastercomptime;
+  }
+
+  public Wagelistpartial sMalfunctioncomptime(Double sMalfunctioncomptime) {
+    this.sMalfunctioncomptime = sMalfunctioncomptime;
+    return this;
+  }
+
+   /**
+   * hod. náhr. při poruše stroje [persistentní položka]
+   * @return sMalfunctioncomptime
+  **/
+  @ApiModelProperty(example = "null", value = "hod. náhr. při poruše stroje [persistentní položka]")
+  public Double getSMalfunctioncomptime() {
+    return sMalfunctioncomptime;
+  }
+
+  public void setSMalfunctioncomptime(Double sMalfunctioncomptime) {
+    this.sMalfunctioncomptime = sMalfunctioncomptime;
+  }
+
+  public Wagelistpartial sOtherobstructioncomptime(Double sOtherobstructioncomptime) {
+    this.sOtherobstructioncomptime = sOtherobstructioncomptime;
+    return this;
+  }
+
+   /**
+   * hod. náhr. při ost. překážkách [persistentní položka]
+   * @return sOtherobstructioncomptime
+  **/
+  @ApiModelProperty(example = "null", value = "hod. náhr. při ost. překážkách [persistentní položka]")
+  public Double getSOtherobstructioncomptime() {
+    return sOtherobstructioncomptime;
+  }
+
+  public void setSOtherobstructioncomptime(Double sOtherobstructioncomptime) {
+    this.sOtherobstructioncomptime = sOtherobstructioncomptime;
+  }
+
+  public Wagelistpartial sDisastercomp(Double sDisastercomp) {
+    this.sDisastercomp = sDisastercomp;
+    return this;
+  }
+
+   /**
+   * náhr. při nepřiz. počasí opr. [persistentní položka]
+   * @return sDisastercomp
+  **/
+  @ApiModelProperty(example = "null", value = "náhr. při nepřiz. počasí opr. [persistentní položka]")
+  public Double getSDisastercomp() {
+    return sDisastercomp;
+  }
+
+  public void setSDisastercomp(Double sDisastercomp) {
+    this.sDisastercomp = sDisastercomp;
+  }
+
+  public Wagelistpartial sMalfunctioncomp(Double sMalfunctioncomp) {
+    this.sMalfunctioncomp = sMalfunctioncomp;
+    return this;
+  }
+
+   /**
+   * náhr. při poruše stroje opr. [persistentní položka]
+   * @return sMalfunctioncomp
+  **/
+  @ApiModelProperty(example = "null", value = "náhr. při poruše stroje opr. [persistentní položka]")
+  public Double getSMalfunctioncomp() {
+    return sMalfunctioncomp;
+  }
+
+  public void setSMalfunctioncomp(Double sMalfunctioncomp) {
+    this.sMalfunctioncomp = sMalfunctioncomp;
+  }
+
+  public Wagelistpartial sOtherobstructioncomp(Double sOtherobstructioncomp) {
+    this.sOtherobstructioncomp = sOtherobstructioncomp;
+    return this;
+  }
+
+   /**
+   * náhr. při ost. překážkách opr. [persistentní položka]
+   * @return sOtherobstructioncomp
+  **/
+  @ApiModelProperty(example = "null", value = "náhr. při ost. překážkách opr. [persistentní položka]")
+  public Double getSOtherobstructioncomp() {
+    return sOtherobstructioncomp;
+  }
+
+  public void setSOtherobstructioncomp(Double sOtherobstructioncomp) {
+    this.sOtherobstructioncomp = sOtherobstructioncomp;
+  }
+
+  public Wagelistpartial sDisastercomptotal(Double sDisastercomptotal) {
+    this.sDisastercomptotal = sDisastercomptotal;
+    return this;
+  }
+
+   /**
+   * náhr. při nepřizni počasí [persistentní položka]
+   * @return sDisastercomptotal
+  **/
+  @ApiModelProperty(example = "null", value = "náhr. při nepřizni počasí [persistentní položka]")
+  public Double getSDisastercomptotal() {
+    return sDisastercomptotal;
+  }
+
+  public void setSDisastercomptotal(Double sDisastercomptotal) {
+    this.sDisastercomptotal = sDisastercomptotal;
+  }
+
+  public Wagelistpartial sMalfunccomptotal(Double sMalfunccomptotal) {
+    this.sMalfunccomptotal = sMalfunccomptotal;
+    return this;
+  }
+
+   /**
+   * náhr. při poruše stroje [persistentní položka]
+   * @return sMalfunccomptotal
+  **/
+  @ApiModelProperty(example = "null", value = "náhr. při poruše stroje [persistentní položka]")
+  public Double getSMalfunccomptotal() {
+    return sMalfunccomptotal;
+  }
+
+  public void setSMalfunccomptotal(Double sMalfunccomptotal) {
+    this.sMalfunccomptotal = sMalfunccomptotal;
+  }
+
+  public Wagelistpartial sOtherobstcomptotal(Double sOtherobstcomptotal) {
+    this.sOtherobstcomptotal = sOtherobstcomptotal;
+    return this;
+  }
+
+   /**
+   * náhr. při ost. překážkách [persistentní položka]
+   * @return sOtherobstcomptotal
+  **/
+  @ApiModelProperty(example = "null", value = "náhr. při ost. překážkách [persistentní položka]")
+  public Double getSOtherobstcomptotal() {
+    return sOtherobstcomptotal;
+  }
+
+  public void setSOtherobstcomptotal(Double sOtherobstcomptotal) {
+    this.sOtherobstcomptotal = sOtherobstcomptotal;
+  }
+
+  public Wagelistpartial sRewardjubilee(Double sRewardjubilee) {
+    this.sRewardjubilee = sRewardjubilee;
+    return this;
+  }
+
+   /**
+   * jubilejní odměna - daň [persistentní položka]
+   * @return sRewardjubilee
+  **/
+  @ApiModelProperty(example = "null", value = "jubilejní odměna - daň [persistentní položka]")
+  public Double getSRewardjubilee() {
+    return sRewardjubilee;
+  }
+
+  public void setSRewardjubilee(Double sRewardjubilee) {
+    this.sRewardjubilee = sRewardjubilee;
+  }
+
+  public Wagelistpartial sGuaranteedwagecorrect(Double sGuaranteedwagecorrect) {
+    this.sGuaranteedwagecorrect = sGuaranteedwagecorrect;
+    return this;
+  }
+
+   /**
+   * zaručená mzda upravená [persistentní položka]
+   * @return sGuaranteedwagecorrect
+  **/
+  @ApiModelProperty(example = "null", value = "zaručená mzda upravená [persistentní položka]")
+  public Double getSGuaranteedwagecorrect() {
+    return sGuaranteedwagecorrect;
+  }
+
+  public void setSGuaranteedwagecorrect(Double sGuaranteedwagecorrect) {
+    this.sGuaranteedwagecorrect = sGuaranteedwagecorrect;
+  }
+
+  public Wagelistpartial sFeasthoursoutofrelation(Double sFeasthoursoutofrelation) {
+    this.sFeasthoursoutofrelation = sFeasthoursoutofrelation;
+    return this;
+  }
+
+   /**
+   * hodiny svátků mimo pp [persistentní položka]
+   * @return sFeasthoursoutofrelation
+  **/
+  @ApiModelProperty(example = "null", value = "hodiny svátků mimo pp [persistentní položka]")
+  public Double getSFeasthoursoutofrelation() {
+    return sFeasthoursoutofrelation;
+  }
+
+  public void setSFeasthoursoutofrelation(Double sFeasthoursoutofrelation) {
+    this.sFeasthoursoutofrelation = sFeasthoursoutofrelation;
+  }
+
+  public Wagelistpartial sFeasthourinabsenceandsickness(Double sFeasthourinabsenceandsickness) {
+    this.sFeasthourinabsenceandsickness = sFeasthourinabsenceandsickness;
+    return this;
+  }
+
+   /**
+   * hodiny svátků v nepř. a nemoci [persistentní položka]
+   * @return sFeasthourinabsenceandsickness
+  **/
+  @ApiModelProperty(example = "null", value = "hodiny svátků v nepř. a nemoci [persistentní položka]")
+  public Double getSFeasthourinabsenceandsickness() {
+    return sFeasthourinabsenceandsickness;
+  }
+
+  public void setSFeasthourinabsenceandsickness(Double sFeasthourinabsenceandsickness) {
+    this.sFeasthourinabsenceandsickness = sFeasthourinabsenceandsickness;
+  }
+
+  public Wagelistpartial sRewardjubileeallbase(Double sRewardjubileeallbase) {
+    this.sRewardjubileeallbase = sRewardjubileeallbase;
+    return this;
+  }
+
+   /**
+   * jubilejní odměna - daň, sp, zp [persistentní položka]
+   * @return sRewardjubileeallbase
+  **/
+  @ApiModelProperty(example = "null", value = "jubilejní odměna - daň, sp, zp [persistentní položka]")
+  public Double getSRewardjubileeallbase() {
+    return sRewardjubileeallbase;
+  }
+
+  public void setSRewardjubileeallbase(Double sRewardjubileeallbase) {
+    this.sRewardjubileeallbase = sRewardjubileeallbase;
+  }
+
+  public Wagelistpartial sRewardjubileenonebase(Double sRewardjubileenonebase) {
+    this.sRewardjubileenonebase = sRewardjubileenonebase;
+    return this;
+  }
+
+   /**
+   * jubilejní odměna-nepeněžní [persistentní položka]
+   * @return sRewardjubileenonebase
+  **/
+  @ApiModelProperty(example = "null", value = "jubilejní odměna-nepeněžní [persistentní položka]")
+  public Double getSRewardjubileenonebase() {
+    return sRewardjubileenonebase;
+  }
+
+  public void setSRewardjubileenonebase(Double sRewardjubileenonebase) {
+    this.sRewardjubileenonebase = sRewardjubileenonebase;
+  }
+
+  public Wagelistpartial sAvgshiftlength(Double sAvgshiftlength) {
+    this.sAvgshiftlength = sAvgshiftlength;
+    return this;
+  }
+
+   /**
+   * průměrná délka směny [persistentní položka]
+   * @return sAvgshiftlength
+  **/
+  @ApiModelProperty(example = "null", value = "průměrná délka směny [persistentní položka]")
+  public Double getSAvgshiftlength() {
+    return sAvgshiftlength;
+  }
+
+  public void setSAvgshiftlength(Double sAvgshiftlength) {
+    this.sAvgshiftlength = sAvgshiftlength;
+  }
+
+  public Wagelistpartial sPaidfeasthoursoper(Double sPaidfeasthoursoper) {
+    this.sPaidfeasthoursoper = sPaidfeasthoursoper;
+    return this;
+  }
+
+   /**
+   * hod. náhrad za svátek z výkonů [persistentní položka]
+   * @return sPaidfeasthoursoper
+  **/
+  @ApiModelProperty(example = "null", value = "hod. náhrad za svátek z výkonů [persistentní položka]")
+  public Double getSPaidfeasthoursoper() {
+    return sPaidfeasthoursoper;
+  }
+
+  public void setSPaidfeasthoursoper(Double sPaidfeasthoursoper) {
+    this.sPaidfeasthoursoper = sPaidfeasthoursoper;
+  }
+
+  public Wagelistpartial sSurchargeguarantingrosswage(Integer sSurchargeguarantingrosswage) {
+    this.sSurchargeguarantingrosswage = sSurchargeguarantingrosswage;
+    return this;
+  }
+
+   /**
+   * doplatek mzdy součástí hm [persistentní položka]
+   * @return sSurchargeguarantingrosswage
+  **/
+  @ApiModelProperty(example = "null", value = "doplatek mzdy součástí hm [persistentní položka]")
+  public Integer getSSurchargeguarantingrosswage() {
+    return sSurchargeguarantingrosswage;
+  }
+
+  public void setSSurchargeguarantingrosswage(Integer sSurchargeguarantingrosswage) {
+    this.sSurchargeguarantingrosswage = sSurchargeguarantingrosswage;
+  }
+
+  public Wagelistpartial sPaidfeasthours(Double sPaidfeasthours) {
+    this.sPaidfeasthours = sPaidfeasthours;
+    return this;
+  }
+
+   /**
+   * hodiny propl. svátků - zadané [persistentní položka]
+   * @return sPaidfeasthours
+  **/
+  @ApiModelProperty(example = "null", value = "hodiny propl. svátků - zadané [persistentní položka]")
+  public Double getSPaidfeasthours() {
+    return sPaidfeasthours;
+  }
+
+  public void setSPaidfeasthours(Double sPaidfeasthours) {
+    this.sPaidfeasthours = sPaidfeasthours;
+  }
+
+  public Wagelistpartial sRenumerationform(Integer sRenumerationform) {
+    this.sRenumerationform = sRenumerationform;
+    return this;
+  }
+
+   /**
+   * způsob odměňování [persistentní položka]
+   * @return sRenumerationform
+  **/
+  @ApiModelProperty(example = "null", value = "způsob odměňování [persistentní položka]")
+  public Integer getSRenumerationform() {
+    return sRenumerationform;
+  }
+
+  public void setSRenumerationform(Integer sRenumerationform) {
+    this.sRenumerationform = sRenumerationform;
+  }
+
+  public Wagelistpartial sHolidayhours(Double sHolidayhours) {
+    this.sHolidayhours = sHolidayhours;
     return this;
   }
 
    /**
    * Čerpaná dovolená (h) [persistentní položka]
-   * @return sHolidayHours
+   * @return sHolidayhours
   **/
   @ApiModelProperty(example = "null", value = "Čerpaná dovolená (h) [persistentní položka]")
-  public Double getSHolidayHours() {
-    return sHolidayHours;
+  public Double getSHolidayhours() {
+    return sHolidayhours;
   }
 
-  public void setSHolidayHours(Double sHolidayHours) {
-    this.sHolidayHours = sHolidayHours;
+  public void setSHolidayhours(Double sHolidayhours) {
+    this.sHolidayhours = sHolidayhours;
   }
 
-  public Wagelistpartial sExitInsBaseCorrection(Double sExitInsBaseCorrection) {
-    this.sExitInsBaseCorrection = sExitInsBaseCorrection;
+  public Wagelistpartial sExitinsbasecorrection(Double sExitinsbasecorrection) {
+    this.sExitinsbasecorrection = sExitinsbasecorrection;
     return this;
   }
 
    /**
-   * Odstupné - základ ZP - oprava [persistentní položka]
-   * @return sExitInsBaseCorrection
+   * odstupné - základ zp - oprava [persistentní položka]
+   * @return sExitinsbasecorrection
   **/
-  @ApiModelProperty(example = "null", value = "Odstupné - základ ZP - oprava [persistentní položka]")
-  public Double getSExitInsBaseCorrection() {
-    return sExitInsBaseCorrection;
+  @ApiModelProperty(example = "null", value = "odstupné - základ zp - oprava [persistentní položka]")
+  public Double getSExitinsbasecorrection() {
+    return sExitinsbasecorrection;
   }
 
-  public void setSExitInsBaseCorrection(Double sExitInsBaseCorrection) {
-    this.sExitInsBaseCorrection = sExitInsBaseCorrection;
+  public void setSExitinsbasecorrection(Double sExitinsbasecorrection) {
+    this.sExitinsbasecorrection = sExitinsbasecorrection;
+  }
+
+  public Wagelistpartial sIshealthinsurance(Integer sIshealthinsurance) {
+    this.sIshealthinsurance = sIshealthinsurance;
+    return this;
   }
 
    /**
    * Účasten zdravotního pojištění [persistentní položka]
-   * @return sIsHealthInsurance
+   * @return sIshealthinsurance
   **/
   @ApiModelProperty(example = "null", value = "Účasten zdravotního pojištění [persistentní položka]")
-  public Integer getSIsHealthInsurance() {
-    return sIsHealthInsurance;
+  public Integer getSIshealthinsurance() {
+    return sIshealthinsurance;
   }
 
-  public Wagelistpartial sInventionReward(Double sInventionReward) {
-    this.sInventionReward = sInventionReward;
+  public void setSIshealthinsurance(Integer sIshealthinsurance) {
+    this.sIshealthinsurance = sIshealthinsurance;
+  }
+
+  public Wagelistpartial sInventionreward(Double sInventionreward) {
+    this.sInventionreward = sInventionreward;
     return this;
   }
 
    /**
-   * Odměna za vynálezy [persistentní položka]
-   * @return sInventionReward
+   * odměna za vynálezy [persistentní položka]
+   * @return sInventionreward
   **/
-  @ApiModelProperty(example = "null", value = "Odměna za vynálezy [persistentní položka]")
-  public Double getSInventionReward() {
-    return sInventionReward;
+  @ApiModelProperty(example = "null", value = "odměna za vynálezy [persistentní položka]")
+  public Double getSInventionreward() {
+    return sInventionreward;
   }
 
-  public void setSInventionReward(Double sInventionReward) {
-    this.sInventionReward = sInventionReward;
+  public void setSInventionreward(Double sInventionreward) {
+    this.sInventionreward = sInventionreward;
   }
 
-   /**
-   * Náhr. procentem průměru-celkem [persistentní položka]
-   * @return sPercentOfAvgCompTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Náhr. procentem průměru-celkem [persistentní položka]")
-  public Double getSPercentOfAvgCompTotal() {
-    return sPercentOfAvgCompTotal;
-  }
-
-  public Wagelistpartial sPercentOfAvgComp(Double sPercentOfAvgComp) {
-    this.sPercentOfAvgComp = sPercentOfAvgComp;
+  public Wagelistpartial sPercentofavgcomptotal(Double sPercentofavgcomptotal) {
+    this.sPercentofavgcomptotal = sPercentofavgcomptotal;
     return this;
   }
 
    /**
-   * Náhrada daná procentem průměru [persistentní položka]
-   * @return sPercentOfAvgComp
+   * náhr. procentem průměru-celkem [persistentní položka]
+   * @return sPercentofavgcomptotal
   **/
-  @ApiModelProperty(example = "null", value = "Náhrada daná procentem průměru [persistentní položka]")
-  public Double getSPercentOfAvgComp() {
-    return sPercentOfAvgComp;
+  @ApiModelProperty(example = "null", value = "náhr. procentem průměru-celkem [persistentní položka]")
+  public Double getSPercentofavgcomptotal() {
+    return sPercentofavgcomptotal;
   }
 
-  public void setSPercentOfAvgComp(Double sPercentOfAvgComp) {
-    this.sPercentOfAvgComp = sPercentOfAvgComp;
+  public void setSPercentofavgcomptotal(Double sPercentofavgcomptotal) {
+    this.sPercentofavgcomptotal = sPercentofavgcomptotal;
   }
 
-  public Wagelistpartial sAvgCompPercent(Double sAvgCompPercent) {
-    this.sAvgCompPercent = sAvgCompPercent;
+  public Wagelistpartial sPercentofavgcomp(Double sPercentofavgcomp) {
+    this.sPercentofavgcomp = sPercentofavgcomp;
     return this;
   }
 
    /**
-   * Procento pro náhradu z průměru [persistentní položka]
-   * @return sAvgCompPercent
+   * náhrada daná procentem průměru [persistentní položka]
+   * @return sPercentofavgcomp
   **/
-  @ApiModelProperty(example = "null", value = "Procento pro náhradu z průměru [persistentní položka]")
-  public Double getSAvgCompPercent() {
-    return sAvgCompPercent;
+  @ApiModelProperty(example = "null", value = "náhrada daná procentem průměru [persistentní položka]")
+  public Double getSPercentofavgcomp() {
+    return sPercentofavgcomp;
   }
 
-  public void setSAvgCompPercent(Double sAvgCompPercent) {
-    this.sAvgCompPercent = sAvgCompPercent;
+  public void setSPercentofavgcomp(Double sPercentofavgcomp) {
+    this.sPercentofavgcomp = sPercentofavgcomp;
   }
 
-  public Wagelistpartial sPercentOfAvgCompTime(Double sPercentOfAvgCompTime) {
-    this.sPercentOfAvgCompTime = sPercentOfAvgCompTime;
+  public Wagelistpartial sAvgcomppercent(Double sAvgcomppercent) {
+    this.sAvgcomppercent = sAvgcomppercent;
     return this;
   }
 
    /**
-   * Hod. náhrady procentem průměru [persistentní položka]
-   * @return sPercentOfAvgCompTime
+   * procento pro náhradu z průměru [persistentní položka]
+   * @return sAvgcomppercent
   **/
-  @ApiModelProperty(example = "null", value = "Hod. náhrady procentem průměru [persistentní položka]")
-  public Double getSPercentOfAvgCompTime() {
-    return sPercentOfAvgCompTime;
+  @ApiModelProperty(example = "null", value = "procento pro náhradu z průměru [persistentní položka]")
+  public Double getSAvgcomppercent() {
+    return sAvgcomppercent;
   }
 
-  public void setSPercentOfAvgCompTime(Double sPercentOfAvgCompTime) {
-    this.sPercentOfAvgCompTime = sPercentOfAvgCompTime;
+  public void setSAvgcomppercent(Double sAvgcomppercent) {
+    this.sAvgcomppercent = sAvgcomppercent;
   }
 
-   /**
-   * Kontrola čerpání dovolené 1 [persistentní položka]
-   * @return sHolidayDrawCheck1
-  **/
-  @ApiModelProperty(example = "null", value = "Kontrola čerpání dovolené 1 [persistentní položka]")
-  public Integer getSHolidayDrawCheck1() {
-    return sHolidayDrawCheck1;
-  }
-
-   /**
-   * Kontrola čerpání dovolené 2 [persistentní položka]
-   * @return sHolidayDrawCheck2
-  **/
-  @ApiModelProperty(example = "null", value = "Kontrola čerpání dovolené 2 [persistentní položka]")
-  public Integer getSHolidayDrawCheck2() {
-    return sHolidayDrawCheck2;
-  }
-
-   /**
-   * Kontrola čerpání dovolené 3 [persistentní položka]
-   * @return sHolidayDrawcheck3
-  **/
-  @ApiModelProperty(example = "null", value = "Kontrola čerpání dovolené 3 [persistentní položka]")
-  public String getSHolidayDrawcheck3() {
-    return sHolidayDrawcheck3;
-  }
-
-   /**
-   * Kontrola hrubé mzdy [persistentní položka]
-   * @return sGrossWageCheck
-  **/
-  @ApiModelProperty(example = "null", value = "Kontrola hrubé mzdy [persistentní položka]")
-  public Integer getSGrossWageCheck() {
-    return sGrossWageCheck;
-  }
-
-   /**
-   * Má slevu na soc.pojištění [persistentní položka]
-   * @return sHasSIDiscount
-  **/
-  @ApiModelProperty(example = "null", value = "Má slevu na soc.pojištění [persistentní položka]")
-  public Integer getSHasSIDiscount() {
-    return sHasSIDiscount;
-  }
-
-  public Wagelistpartial sHasSIDiscountEdit(Integer sHasSIDiscountEdit) {
-    this.sHasSIDiscountEdit = sHasSIDiscountEdit;
+  public Wagelistpartial sPercentofavgcomptime(Double sPercentofavgcomptime) {
+    this.sPercentofavgcomptime = sPercentofavgcomptime;
     return this;
   }
 
    /**
-   * Má slevu na soc.pojištení vyp. [persistentní položka]
-   * @return sHasSIDiscountEdit
+   * hod. náhrady procentem průměru [persistentní položka]
+   * @return sPercentofavgcomptime
   **/
-  @ApiModelProperty(example = "null", value = "Má slevu na soc.pojištení vyp. [persistentní položka]")
-  public Integer getSHasSIDiscountEdit() {
-    return sHasSIDiscountEdit;
+  @ApiModelProperty(example = "null", value = "hod. náhrady procentem průměru [persistentní položka]")
+  public Double getSPercentofavgcomptime() {
+    return sPercentofavgcomptime;
   }
 
-  public void setSHasSIDiscountEdit(Integer sHasSIDiscountEdit) {
-    this.sHasSIDiscountEdit = sHasSIDiscountEdit;
+  public void setSPercentofavgcomptime(Double sPercentofavgcomptime) {
+    this.sPercentofavgcomptime = sPercentofavgcomptime;
   }
 
-  public Wagelistpartial sLifeInsTaxBase(Double sLifeInsTaxBase) {
-    this.sLifeInsTaxBase = sLifeInsTaxBase;
+  public Wagelistpartial sHolidaydrawcheck1(Integer sHolidaydrawcheck1) {
+    this.sHolidaydrawcheck1 = sHolidaydrawcheck1;
+    return this;
+  }
+
+   /**
+   * kontrola čerpání dovolené 1 [persistentní položka]
+   * @return sHolidaydrawcheck1
+  **/
+  @ApiModelProperty(example = "null", value = "kontrola čerpání dovolené 1 [persistentní položka]")
+  public Integer getSHolidaydrawcheck1() {
+    return sHolidaydrawcheck1;
+  }
+
+  public void setSHolidaydrawcheck1(Integer sHolidaydrawcheck1) {
+    this.sHolidaydrawcheck1 = sHolidaydrawcheck1;
+  }
+
+  public Wagelistpartial sHolidaydrawcheck2(Integer sHolidaydrawcheck2) {
+    this.sHolidaydrawcheck2 = sHolidaydrawcheck2;
+    return this;
+  }
+
+   /**
+   * kontrola čerpání dovolené 2 [persistentní položka]
+   * @return sHolidaydrawcheck2
+  **/
+  @ApiModelProperty(example = "null", value = "kontrola čerpání dovolené 2 [persistentní položka]")
+  public Integer getSHolidaydrawcheck2() {
+    return sHolidaydrawcheck2;
+  }
+
+  public void setSHolidaydrawcheck2(Integer sHolidaydrawcheck2) {
+    this.sHolidaydrawcheck2 = sHolidaydrawcheck2;
+  }
+
+  public Wagelistpartial sHolidaydrawcheck3(String sHolidaydrawcheck3) {
+    this.sHolidaydrawcheck3 = sHolidaydrawcheck3;
+    return this;
+  }
+
+   /**
+   * kontrola čerpání dovolené 3 [persistentní položka]
+   * @return sHolidaydrawcheck3
+  **/
+  @ApiModelProperty(example = "null", value = "kontrola čerpání dovolené 3 [persistentní položka]")
+  public String getSHolidaydrawcheck3() {
+    return sHolidaydrawcheck3;
+  }
+
+  public void setSHolidaydrawcheck3(String sHolidaydrawcheck3) {
+    this.sHolidaydrawcheck3 = sHolidaydrawcheck3;
+  }
+
+  public Wagelistpartial sGrosswagecheck(Integer sGrosswagecheck) {
+    this.sGrosswagecheck = sGrosswagecheck;
+    return this;
+  }
+
+   /**
+   * kontrola hrubé mzdy [persistentní položka]
+   * @return sGrosswagecheck
+  **/
+  @ApiModelProperty(example = "null", value = "kontrola hrubé mzdy [persistentní položka]")
+  public Integer getSGrosswagecheck() {
+    return sGrosswagecheck;
+  }
+
+  public void setSGrosswagecheck(Integer sGrosswagecheck) {
+    this.sGrosswagecheck = sGrosswagecheck;
+  }
+
+  public Wagelistpartial sHassidiscount(Integer sHassidiscount) {
+    this.sHassidiscount = sHassidiscount;
+    return this;
+  }
+
+   /**
+   * má slevu na soc.pojištění [persistentní položka]
+   * @return sHassidiscount
+  **/
+  @ApiModelProperty(example = "null", value = "má slevu na soc.pojištění [persistentní položka]")
+  public Integer getSHassidiscount() {
+    return sHassidiscount;
+  }
+
+  public void setSHassidiscount(Integer sHassidiscount) {
+    this.sHassidiscount = sHassidiscount;
+  }
+
+  public Wagelistpartial sHassidiscountedit(Integer sHassidiscountedit) {
+    this.sHassidiscountedit = sHassidiscountedit;
+    return this;
+  }
+
+   /**
+   * má slevu na soc.pojištení vyp. [persistentní položka]
+   * @return sHassidiscountedit
+  **/
+  @ApiModelProperty(example = "null", value = "má slevu na soc.pojištení vyp. [persistentní položka]")
+  public Integer getSHassidiscountedit() {
+    return sHassidiscountedit;
+  }
+
+  public void setSHassidiscountedit(Integer sHassidiscountedit) {
+    this.sHassidiscountedit = sHassidiscountedit;
+  }
+
+  public Wagelistpartial sLifeinstaxbase(Double sLifeinstaxbase) {
+    this.sLifeinstaxbase = sLifeinstaxbase;
     return this;
   }
 
    /**
    * Živ. pojištění daňový základ [persistentní položka]
-   * @return sLifeInsTaxBase
+   * @return sLifeinstaxbase
   **/
   @ApiModelProperty(example = "null", value = "Živ. pojištění daňový základ [persistentní položka]")
-  public Double getSLifeInsTaxBase() {
-    return sLifeInsTaxBase;
+  public Double getSLifeinstaxbase() {
+    return sLifeinstaxbase;
   }
 
-  public void setSLifeInsTaxBase(Double sLifeInsTaxBase) {
-    this.sLifeInsTaxBase = sLifeInsTaxBase;
+  public void setSLifeinstaxbase(Double sLifeinstaxbase) {
+    this.sLifeinstaxbase = sLifeinstaxbase;
   }
 
-  public Wagelistpartial sLifeInsAmount(Double sLifeInsAmount) {
-    this.sLifeInsAmount = sLifeInsAmount;
+  public Wagelistpartial sLifeinsamount(Double sLifeinsamount) {
+    this.sLifeinsamount = sLifeinsamount;
     return this;
   }
 
    /**
    * Živ. pojištění částka [persistentní položka]
-   * @return sLifeInsAmount
+   * @return sLifeinsamount
   **/
   @ApiModelProperty(example = "null", value = "Živ. pojištění částka [persistentní položka]")
-  public Double getSLifeInsAmount() {
-    return sLifeInsAmount;
+  public Double getSLifeinsamount() {
+    return sLifeinsamount;
   }
 
-  public void setSLifeInsAmount(Double sLifeInsAmount) {
-    this.sLifeInsAmount = sLifeInsAmount;
+  public void setSLifeinsamount(Double sLifeinsamount) {
+    this.sLifeinsamount = sLifeinsamount;
   }
 
-  public Wagelistpartial sRetFundTaxBase(Double sRetFundTaxBase) {
-    this.sRetFundTaxBase = sRetFundTaxBase;
+  public Wagelistpartial sRetfundtaxbase(Double sRetfundtaxbase) {
+    this.sRetfundtaxbase = sRetfundtaxbase;
     return this;
   }
 
    /**
-   * Penzijní fond základ daně [persistentní položka]
-   * @return sRetFundTaxBase
+   * penzijní fond základ daně [persistentní položka]
+   * @return sRetfundtaxbase
   **/
-  @ApiModelProperty(example = "null", value = "Penzijní fond základ daně [persistentní položka]")
-  public Double getSRetFundTaxBase() {
-    return sRetFundTaxBase;
+  @ApiModelProperty(example = "null", value = "penzijní fond základ daně [persistentní položka]")
+  public Double getSRetfundtaxbase() {
+    return sRetfundtaxbase;
   }
 
-  public void setSRetFundTaxBase(Double sRetFundTaxBase) {
-    this.sRetFundTaxBase = sRetFundTaxBase;
+  public void setSRetfundtaxbase(Double sRetfundtaxbase) {
+    this.sRetfundtaxbase = sRetfundtaxbase;
   }
 
-  public Wagelistpartial sRetFundAmount(Double sRetFundAmount) {
-    this.sRetFundAmount = sRetFundAmount;
+  public Wagelistpartial sRetfundamount(Double sRetfundamount) {
+    this.sRetfundamount = sRetfundamount;
     return this;
   }
 
    /**
-   * Penzijní fond částka [persistentní položka]
-   * @return sRetFundAmount
+   * penzijní fond částka [persistentní položka]
+   * @return sRetfundamount
   **/
-  @ApiModelProperty(example = "null", value = "Penzijní fond částka [persistentní položka]")
-  public Double getSRetFundAmount() {
-    return sRetFundAmount;
+  @ApiModelProperty(example = "null", value = "penzijní fond částka [persistentní položka]")
+  public Double getSRetfundamount() {
+    return sRetfundamount;
   }
 
-  public void setSRetFundAmount(Double sRetFundAmount) {
-    this.sRetFundAmount = sRetFundAmount;
+  public void setSRetfundamount(Double sRetfundamount) {
+    this.sRetfundamount = sRetfundamount;
   }
 
-   /**
-   * Příjmy z DPP [persistentní položka]
-   * @return sAgreementIncome
-  **/
-  @ApiModelProperty(example = "null", value = "Příjmy z DPP [persistentní položka]")
-  public Double getSAgreementIncome() {
-    return sAgreementIncome;
-  }
-
-   /**
-   * Služební auto pro soukr. [persistentní položka]
-   * @return sDutyCarTotal
-  **/
-  @ApiModelProperty(example = "null", value = "Služební auto pro soukr. [persistentní položka]")
-  public Double getSDutyCarTotal() {
-    return sDutyCarTotal;
-  }
-
-  public Wagelistpartial sDutyCar(Double sDutyCar) {
-    this.sDutyCar = sDutyCar;
+  public Wagelistpartial sAgreementincome(Double sAgreementincome) {
+    this.sAgreementincome = sAgreementincome;
     return this;
   }
 
    /**
-   * Služební auto pro soukr. opr. [persistentní položka]
-   * @return sDutyCar
+   * příjmy z dpp [persistentní položka]
+   * @return sAgreementincome
   **/
-  @ApiModelProperty(example = "null", value = "Služební auto pro soukr. opr. [persistentní položka]")
-  public Double getSDutyCar() {
-    return sDutyCar;
+  @ApiModelProperty(example = "null", value = "příjmy z dpp [persistentní položka]")
+  public Double getSAgreementincome() {
+    return sAgreementincome;
   }
 
-  public void setSDutyCar(Double sDutyCar) {
-    this.sDutyCar = sDutyCar;
+  public void setSAgreementincome(Double sAgreementincome) {
+    this.sAgreementincome = sAgreementincome;
   }
 
-   /**
-   * Pobírá invalidní důchod [persistentní položka]
-   * @return sDisabilityPension
-  **/
-  @ApiModelProperty(example = "null", value = "Pobírá invalidní důchod [persistentní položka]")
-  public Integer getSDisabilityPension() {
-    return sDisabilityPension;
-  }
-
-   /**
-   * Příjmy z PP malého rozsahu [persistentní položka]
-   * @return sPartTimeIncome
-  **/
-  @ApiModelProperty(example = "null", value = "Příjmy z PP malého rozsahu [persistentní položka]")
-  public Double getSPartTimeIncome() {
-    return sPartTimeIncome;
-  }
-
-  public Wagelistpartial sNaturalWageForAvg(Double sNaturalWageForAvg) {
-    this.sNaturalWageForAvg = sNaturalWageForAvg;
+  public Wagelistpartial sDutycartotal(Double sDutycartotal) {
+    this.sDutycartotal = sDutycartotal;
     return this;
   }
 
    /**
-   * Naturální mzda do průměru [persistentní položka]
-   * @return sNaturalWageForAvg
+   * služební auto pro soukr. [persistentní položka]
+   * @return sDutycartotal
   **/
-  @ApiModelProperty(example = "null", value = "Naturální mzda do průměru [persistentní položka]")
-  public Double getSNaturalWageForAvg() {
-    return sNaturalWageForAvg;
+  @ApiModelProperty(example = "null", value = "služební auto pro soukr. [persistentní položka]")
+  public Double getSDutycartotal() {
+    return sDutycartotal;
   }
 
-  public void setSNaturalWageForAvg(Double sNaturalWageForAvg) {
-    this.sNaturalWageForAvg = sNaturalWageForAvg;
+  public void setSDutycartotal(Double sDutycartotal) {
+    this.sDutycartotal = sDutycartotal;
   }
 
-   /**
-   * ŽP - neosvobozená část [persistentní položka]
-   * @return sLifeInsTaxablePart
-  **/
-  @ApiModelProperty(example = "null", value = "ŽP - neosvobozená část [persistentní položka]")
-  public Double getSLifeInsTaxablePart() {
-    return sLifeInsTaxablePart;
+  public Wagelistpartial sDutycar(Double sDutycar) {
+    this.sDutycar = sDutycar;
+    return this;
   }
 
    /**
-   * Příjmy z DPČ [persistentní položka]
-   * @return sWorkActivityIncome
+   * služební auto pro soukr. opr. [persistentní položka]
+   * @return sDutycar
   **/
-  @ApiModelProperty(example = "null", value = "Příjmy z DPČ [persistentní položka]")
-  public Double getSWorkActivityIncome() {
-    return sWorkActivityIncome;
+  @ApiModelProperty(example = "null", value = "služební auto pro soukr. opr. [persistentní položka]")
+  public Double getSDutycar() {
+    return sDutycar;
+  }
+
+  public void setSDutycar(Double sDutycar) {
+    this.sDutycar = sDutycar;
+  }
+
+  public Wagelistpartial sDisabilitypension(Integer sDisabilitypension) {
+    this.sDisabilitypension = sDisabilitypension;
+    return this;
+  }
+
+   /**
+   * pobírá invalidní důchod [persistentní položka]
+   * @return sDisabilitypension
+  **/
+  @ApiModelProperty(example = "null", value = "pobírá invalidní důchod [persistentní položka]")
+  public Integer getSDisabilitypension() {
+    return sDisabilitypension;
+  }
+
+  public void setSDisabilitypension(Integer sDisabilitypension) {
+    this.sDisabilitypension = sDisabilitypension;
+  }
+
+  public Wagelistpartial sParttimeincome(Double sParttimeincome) {
+    this.sParttimeincome = sParttimeincome;
+    return this;
+  }
+
+   /**
+   * příjmy z pp malého rozsahu [persistentní položka]
+   * @return sParttimeincome
+  **/
+  @ApiModelProperty(example = "null", value = "příjmy z pp malého rozsahu [persistentní položka]")
+  public Double getSParttimeincome() {
+    return sParttimeincome;
+  }
+
+  public void setSParttimeincome(Double sParttimeincome) {
+    this.sParttimeincome = sParttimeincome;
+  }
+
+  public Wagelistpartial sNaturalwageforavg(Double sNaturalwageforavg) {
+    this.sNaturalwageforavg = sNaturalwageforavg;
+    return this;
+  }
+
+   /**
+   * naturální mzda do průměru [persistentní položka]
+   * @return sNaturalwageforavg
+  **/
+  @ApiModelProperty(example = "null", value = "naturální mzda do průměru [persistentní položka]")
+  public Double getSNaturalwageforavg() {
+    return sNaturalwageforavg;
+  }
+
+  public void setSNaturalwageforavg(Double sNaturalwageforavg) {
+    this.sNaturalwageforavg = sNaturalwageforavg;
+  }
+
+  public Wagelistpartial sLifeinstaxablepart(Double sLifeinstaxablepart) {
+    this.sLifeinstaxablepart = sLifeinstaxablepart;
+    return this;
+  }
+
+   /**
+   * Žp - neosvobozená část [persistentní položka]
+   * @return sLifeinstaxablepart
+  **/
+  @ApiModelProperty(example = "null", value = "Žp - neosvobozená část [persistentní položka]")
+  public Double getSLifeinstaxablepart() {
+    return sLifeinstaxablepart;
+  }
+
+  public void setSLifeinstaxablepart(Double sLifeinstaxablepart) {
+    this.sLifeinstaxablepart = sLifeinstaxablepart;
+  }
+
+  public Wagelistpartial sWorkactivityincome(Double sWorkactivityincome) {
+    this.sWorkactivityincome = sWorkactivityincome;
+    return this;
+  }
+
+   /**
+   * příjmy z dpČ [persistentní položka]
+   * @return sWorkactivityincome
+  **/
+  @ApiModelProperty(example = "null", value = "příjmy z dpČ [persistentní položka]")
+  public Double getSWorkactivityincome() {
+    return sWorkactivityincome;
+  }
+
+  public void setSWorkactivityincome(Double sWorkactivityincome) {
+    this.sWorkactivityincome = sWorkactivityincome;
   }
 
 
@@ -5142,331 +6789,331 @@ public class Wagelistpartial   {
       return false;
     }
     Wagelistpartial wagelistpartial = (Wagelistpartial) o;
-    return Objects.equals(this.displayName, wagelistpartial.displayName) &&
-        Objects.equals(this.ID, wagelistpartial.ID) &&
-        Objects.equals(this.classID, wagelistpartial.classID) &&
-        Objects.equals(this.objVersion, wagelistpartial.objVersion) &&
-        Objects.equals(this.docQueueID, wagelistpartial.docQueueID) &&
-        Objects.equals(this.periodID, wagelistpartial.periodID) &&
-        Objects.equals(this.ordNumber, wagelistpartial.ordNumber) &&
-        Objects.equals(this.docDateDATE, wagelistpartial.docDateDATE) &&
-        Objects.equals(this.createdByID, wagelistpartial.createdByID) &&
-        Objects.equals(this.correctedByID, wagelistpartial.correctedByID) &&
-        Objects.equals(this.newRelatedType, wagelistpartial.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, wagelistpartial.newRelatedDocumentID) &&
-        Objects.equals(this.calcCharts, wagelistpartial.calcCharts) &&
-        Objects.equals(this.isComputed, wagelistpartial.isComputed) &&
-        Objects.equals(this.wagePeriodID, wagelistpartial.wagePeriodID) &&
-        Objects.equals(this.workingRelationID, wagelistpartial.workingRelationID) &&
-        Objects.equals(this.employeeID, wagelistpartial.employeeID) &&
-        Objects.equals(this.wageOperations, wagelistpartial.wageOperations) &&
-        Objects.equals(this.additionalCharges, wagelistpartial.additionalCharges) &&
-        Objects.equals(this.wageCompensations, wagelistpartial.wageCompensations) &&
-        Objects.equals(this.totalAbsence, wagelistpartial.totalAbsence) &&
-        Objects.equals(this.monthFund, wagelistpartial.monthFund) &&
-        Objects.equals(this.workingFund, wagelistpartial.workingFund) &&
-        Objects.equals(this.wageForUnit, wagelistpartial.wageForUnit) &&
-        Objects.equals(this.totalWorkTime, wagelistpartial.totalWorkTime) &&
-        Objects.equals(this.averageWage, wagelistpartial.averageWage) &&
-        Objects.equals(this.holidayTotal, wagelistpartial.holidayTotal) &&
-        Objects.equals(this.holidayDrawDays, wagelistpartial.holidayDrawDays) &&
-        Objects.equals(this.paidHoliday, wagelistpartial.paidHoliday) &&
-        Objects.equals(this.holidayTypeID, wagelistpartial.holidayTypeID) &&
-        Objects.equals(this.grossWageTotal, wagelistpartial.grossWageTotal) &&
-        Objects.equals(this.sickBenefitNumerator, wagelistpartial.sickBenefitNumerator) &&
-        Objects.equals(this.sickBenefitDenominator, wagelistpartial.sickBenefitDenominator) &&
-        Objects.equals(this.holidayNumerator, wagelistpartial.holidayNumerator) &&
-        Objects.equals(this.oldSixMonthsReward, wagelistpartial.oldSixMonthsReward) &&
-        Objects.equals(this.oldTwelveMonthsReward, wagelistpartial.oldTwelveMonthsReward) &&
-        Objects.equals(this.oldRewardLongTermTotal, wagelistpartial.oldRewardLongTermTotal) &&
-        Objects.equals(this.oldRewardPeriodLength, wagelistpartial.oldRewardPeriodLength) &&
-        Objects.equals(this.xMLImported, wagelistpartial.xMLImported) &&
-        Objects.equals(this.afterWorkingRelation, wagelistpartial.afterWorkingRelation) &&
-        Objects.equals(this.commonIsComputed, wagelistpartial.commonIsComputed) &&
-        Objects.equals(this.commonDisplayName, wagelistpartial.commonDisplayName) &&
-        Objects.equals(this.wageListFrom, wagelistpartial.wageListFrom) &&
-        Objects.equals(this.wageListTo, wagelistpartial.wageListTo) &&
-        Objects.equals(this.wageListRealFrom, wagelistpartial.wageListRealFrom) &&
-        Objects.equals(this.calendarDuty, wagelistpartial.calendarDuty) &&
-        Objects.equals(this.persLastName, wagelistpartial.persLastName) &&
-        Objects.equals(this.persPersonalNumber, wagelistpartial.persPersonalNumber) &&
-        Objects.equals(this.persNumPersonalNumber, wagelistpartial.persNumPersonalNumber) &&
-        Objects.equals(this.mainWorkingRelation, wagelistpartial.mainWorkingRelation) &&
-        Objects.equals(this.wageListCommonID, wagelistpartial.wageListCommonID) &&
-        Objects.equals(this.wLSickTo, wagelistpartial.wLSickTo) &&
-        Objects.equals(this.calcAvgNetWage, wagelistpartial.calcAvgNetWage) &&
-        Objects.equals(this.holidayDrawHours, wagelistpartial.holidayDrawHours) &&
-        Objects.equals(this.paidHolidayHours, wagelistpartial.paidHolidayHours) &&
-        Objects.equals(this.calculationOrder, wagelistpartial.calculationOrder) &&
-        Objects.equals(this.sWorkDays, wagelistpartial.sWorkDays) &&
-        Objects.equals(this.sWorkDaysTotal, wagelistpartial.sWorkDaysTotal) &&
-        Objects.equals(this.sWorkHours, wagelistpartial.sWorkHours) &&
-        Objects.equals(this.sWorkHoursTotal, wagelistpartial.sWorkHoursTotal) &&
-        Objects.equals(this.sMixedHours, wagelistpartial.sMixedHours) &&
-        Objects.equals(this.sMixedHoursTotal, wagelistpartial.sMixedHoursTotal) &&
-        Objects.equals(this.sOperHoursTotal, wagelistpartial.sOperHoursTotal) &&
-        Objects.equals(this.sOperWageTotal, wagelistpartial.sOperWageTotal) &&
-        Objects.equals(this.sTaskWage, wagelistpartial.sTaskWage) &&
-        Objects.equals(this.sTaskWageTotal, wagelistpartial.sTaskWageTotal) &&
-        Objects.equals(this.sTimeWage, wagelistpartial.sTimeWage) &&
-        Objects.equals(this.sTimeWageTotal, wagelistpartial.sTimeWageTotal) &&
-        Objects.equals(this.sFeastHours, wagelistpartial.sFeastHours) &&
-        Objects.equals(this.sFeastHoursTotal, wagelistpartial.sFeastHoursTotal) &&
-        Objects.equals(this.sFeastCharge, wagelistpartial.sFeastCharge) &&
-        Objects.equals(this.sFeastChargeTotal, wagelistpartial.sFeastChargeTotal) &&
-        Objects.equals(this.sNightHours, wagelistpartial.sNightHours) &&
-        Objects.equals(this.sNightHoursTotal, wagelistpartial.sNightHoursTotal) &&
-        Objects.equals(this.sNightCharge, wagelistpartial.sNightCharge) &&
-        Objects.equals(this.sNightChargeTotal, wagelistpartial.sNightChargeTotal) &&
-        Objects.equals(this.sEnvHours, wagelistpartial.sEnvHours) &&
-        Objects.equals(this.sEnvHoursTotal, wagelistpartial.sEnvHoursTotal) &&
-        Objects.equals(this.sEnvCharge, wagelistpartial.sEnvCharge) &&
-        Objects.equals(this.sEnvChargeTotal, wagelistpartial.sEnvChargeTotal) &&
-        Objects.equals(this.sOverTime, wagelistpartial.sOverTime) &&
-        Objects.equals(this.sOverTimeTotal, wagelistpartial.sOverTimeTotal) &&
-        Objects.equals(this.sOverTimeCharge, wagelistpartial.sOverTimeCharge) &&
-        Objects.equals(this.sOverTimeChargeTotal, wagelistpartial.sOverTimeChargeTotal) &&
-        Objects.equals(this.sOtherCharges, wagelistpartial.sOtherCharges) &&
-        Objects.equals(this.sPersonalCharge, wagelistpartial.sPersonalCharge) &&
-        Objects.equals(this.sPersonalChargeTotal, wagelistpartial.sPersonalChargeTotal) &&
-        Objects.equals(this.sChiefCharge, wagelistpartial.sChiefCharge) &&
-        Objects.equals(this.sChiefChargeTotal, wagelistpartial.sChiefChargeTotal) &&
-        Objects.equals(this.sSubCharge, wagelistpartial.sSubCharge) &&
-        Objects.equals(this.sSubChargeTotal, wagelistpartial.sSubChargeTotal) &&
-        Objects.equals(this.sWEndHours, wagelistpartial.sWEndHours) &&
-        Objects.equals(this.sWEndHoursTotal, wagelistpartial.sWEndHoursTotal) &&
-        Objects.equals(this.sWEndCharge, wagelistpartial.sWEndCharge) &&
-        Objects.equals(this.sWEndChargeTotal, wagelistpartial.sWEndChargeTotal) &&
-        Objects.equals(this.sPaidFeast, wagelistpartial.sPaidFeast) &&
-        Objects.equals(this.sPaidFeastTotal, wagelistpartial.sPaidFeastTotal) &&
-        Objects.equals(this.sPaidFeastCompens, wagelistpartial.sPaidFeastCompens) &&
-        Objects.equals(this.sPaidFeastCompTotal, wagelistpartial.sPaidFeastCompTotal) &&
-        Objects.equals(this.sPaidFree, wagelistpartial.sPaidFree) &&
-        Objects.equals(this.sPaidFreeTotal, wagelistpartial.sPaidFreeTotal) &&
-        Objects.equals(this.sPaidFreeCompens, wagelistpartial.sPaidFreeCompens) &&
-        Objects.equals(this.sPaidFreeCompTotal, wagelistpartial.sPaidFreeCompTotal) &&
+    return Objects.equals(this.displayname, wagelistpartial.displayname) &&
+        Objects.equals(this.id, wagelistpartial.id) &&
+        Objects.equals(this.classid, wagelistpartial.classid) &&
+        Objects.equals(this.objversion, wagelistpartial.objversion) &&
+        Objects.equals(this.docqueueId, wagelistpartial.docqueueId) &&
+        Objects.equals(this.periodId, wagelistpartial.periodId) &&
+        Objects.equals(this.ordnumber, wagelistpartial.ordnumber) &&
+        Objects.equals(this.docdatedate, wagelistpartial.docdatedate) &&
+        Objects.equals(this.createdbyId, wagelistpartial.createdbyId) &&
+        Objects.equals(this.correctedbyId, wagelistpartial.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, wagelistpartial.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, wagelistpartial.newrelateddocumentId) &&
+        Objects.equals(this.calccharts, wagelistpartial.calccharts) &&
+        Objects.equals(this.iscomputed, wagelistpartial.iscomputed) &&
+        Objects.equals(this.wageperiodId, wagelistpartial.wageperiodId) &&
+        Objects.equals(this.workingrelationId, wagelistpartial.workingrelationId) &&
+        Objects.equals(this.employeeId, wagelistpartial.employeeId) &&
+        Objects.equals(this.wageoperations, wagelistpartial.wageoperations) &&
+        Objects.equals(this.additionalcharges, wagelistpartial.additionalcharges) &&
+        Objects.equals(this.wagecompensations, wagelistpartial.wagecompensations) &&
+        Objects.equals(this.totalabsence, wagelistpartial.totalabsence) &&
+        Objects.equals(this.monthfund, wagelistpartial.monthfund) &&
+        Objects.equals(this.workingfund, wagelistpartial.workingfund) &&
+        Objects.equals(this.wageforunit, wagelistpartial.wageforunit) &&
+        Objects.equals(this.totalworktime, wagelistpartial.totalworktime) &&
+        Objects.equals(this.averagewage, wagelistpartial.averagewage) &&
+        Objects.equals(this.holidaytotal, wagelistpartial.holidaytotal) &&
+        Objects.equals(this.holidaydrawdays, wagelistpartial.holidaydrawdays) &&
+        Objects.equals(this.paidholiday, wagelistpartial.paidholiday) &&
+        Objects.equals(this.holidaytypeId, wagelistpartial.holidaytypeId) &&
+        Objects.equals(this.grosswagetotal, wagelistpartial.grosswagetotal) &&
+        Objects.equals(this.sickbenefitnumerator, wagelistpartial.sickbenefitnumerator) &&
+        Objects.equals(this.sickbenefitdenominator, wagelistpartial.sickbenefitdenominator) &&
+        Objects.equals(this.holidaynumerator, wagelistpartial.holidaynumerator) &&
+        Objects.equals(this.oldsixmonthsreward, wagelistpartial.oldsixmonthsreward) &&
+        Objects.equals(this.oldtwelvemonthsreward, wagelistpartial.oldtwelvemonthsreward) &&
+        Objects.equals(this.oldrewardlongtermtotal, wagelistpartial.oldrewardlongtermtotal) &&
+        Objects.equals(this.oldrewardperiodlength, wagelistpartial.oldrewardperiodlength) &&
+        Objects.equals(this.xmlimported, wagelistpartial.xmlimported) &&
+        Objects.equals(this.afterworkingrelation, wagelistpartial.afterworkingrelation) &&
+        Objects.equals(this.commoniscomputed, wagelistpartial.commoniscomputed) &&
+        Objects.equals(this.commondisplayname, wagelistpartial.commondisplayname) &&
+        Objects.equals(this.wagelistfrom, wagelistpartial.wagelistfrom) &&
+        Objects.equals(this.wagelistto, wagelistpartial.wagelistto) &&
+        Objects.equals(this.wagelistrealfrom, wagelistpartial.wagelistrealfrom) &&
+        Objects.equals(this.calendarduty, wagelistpartial.calendarduty) &&
+        Objects.equals(this.persLastname, wagelistpartial.persLastname) &&
+        Objects.equals(this.persPersonalnumber, wagelistpartial.persPersonalnumber) &&
+        Objects.equals(this.persNumpersonalnumber, wagelistpartial.persNumpersonalnumber) &&
+        Objects.equals(this.mainworkingrelation, wagelistpartial.mainworkingrelation) &&
+        Objects.equals(this.wagelistcommonId, wagelistpartial.wagelistcommonId) &&
+        Objects.equals(this.wlsickto, wagelistpartial.wlsickto) &&
+        Objects.equals(this.calcavgnetwage, wagelistpartial.calcavgnetwage) &&
+        Objects.equals(this.holidaydrawhours, wagelistpartial.holidaydrawhours) &&
+        Objects.equals(this.paidholidayhours, wagelistpartial.paidholidayhours) &&
+        Objects.equals(this.calculationorder, wagelistpartial.calculationorder) &&
+        Objects.equals(this.sWorkdays, wagelistpartial.sWorkdays) &&
+        Objects.equals(this.sWorkdaystotal, wagelistpartial.sWorkdaystotal) &&
+        Objects.equals(this.sWorkhours, wagelistpartial.sWorkhours) &&
+        Objects.equals(this.sWorkhourstotal, wagelistpartial.sWorkhourstotal) &&
+        Objects.equals(this.sMixedhours, wagelistpartial.sMixedhours) &&
+        Objects.equals(this.sMixedhourstotal, wagelistpartial.sMixedhourstotal) &&
+        Objects.equals(this.sOperhourstotal, wagelistpartial.sOperhourstotal) &&
+        Objects.equals(this.sOperwagetotal, wagelistpartial.sOperwagetotal) &&
+        Objects.equals(this.sTaskwage, wagelistpartial.sTaskwage) &&
+        Objects.equals(this.sTaskwagetotal, wagelistpartial.sTaskwagetotal) &&
+        Objects.equals(this.sTimewage, wagelistpartial.sTimewage) &&
+        Objects.equals(this.sTimewagetotal, wagelistpartial.sTimewagetotal) &&
+        Objects.equals(this.sFeasthours, wagelistpartial.sFeasthours) &&
+        Objects.equals(this.sFeasthourstotal, wagelistpartial.sFeasthourstotal) &&
+        Objects.equals(this.sFeastcharge, wagelistpartial.sFeastcharge) &&
+        Objects.equals(this.sFeastchargetotal, wagelistpartial.sFeastchargetotal) &&
+        Objects.equals(this.sNighthours, wagelistpartial.sNighthours) &&
+        Objects.equals(this.sNighthourstotal, wagelistpartial.sNighthourstotal) &&
+        Objects.equals(this.sNightcharge, wagelistpartial.sNightcharge) &&
+        Objects.equals(this.sNightchargetotal, wagelistpartial.sNightchargetotal) &&
+        Objects.equals(this.sEnvhours, wagelistpartial.sEnvhours) &&
+        Objects.equals(this.sEnvhourstotal, wagelistpartial.sEnvhourstotal) &&
+        Objects.equals(this.sEnvcharge, wagelistpartial.sEnvcharge) &&
+        Objects.equals(this.sEnvchargetotal, wagelistpartial.sEnvchargetotal) &&
+        Objects.equals(this.sOvertime, wagelistpartial.sOvertime) &&
+        Objects.equals(this.sOvertimetotal, wagelistpartial.sOvertimetotal) &&
+        Objects.equals(this.sOvertimecharge, wagelistpartial.sOvertimecharge) &&
+        Objects.equals(this.sOvertimechargetotal, wagelistpartial.sOvertimechargetotal) &&
+        Objects.equals(this.sOthercharges, wagelistpartial.sOthercharges) &&
+        Objects.equals(this.sPersonalcharge, wagelistpartial.sPersonalcharge) &&
+        Objects.equals(this.sPersonalchargetotal, wagelistpartial.sPersonalchargetotal) &&
+        Objects.equals(this.sChiefcharge, wagelistpartial.sChiefcharge) &&
+        Objects.equals(this.sChiefchargetotal, wagelistpartial.sChiefchargetotal) &&
+        Objects.equals(this.sSubcharge, wagelistpartial.sSubcharge) &&
+        Objects.equals(this.sSubchargetotal, wagelistpartial.sSubchargetotal) &&
+        Objects.equals(this.sWendhours, wagelistpartial.sWendhours) &&
+        Objects.equals(this.sWendhourstotal, wagelistpartial.sWendhourstotal) &&
+        Objects.equals(this.sWendcharge, wagelistpartial.sWendcharge) &&
+        Objects.equals(this.sWendchargetotal, wagelistpartial.sWendchargetotal) &&
+        Objects.equals(this.sPaidfeast, wagelistpartial.sPaidfeast) &&
+        Objects.equals(this.sPaidfeasttotal, wagelistpartial.sPaidfeasttotal) &&
+        Objects.equals(this.sPaidfeastcompens, wagelistpartial.sPaidfeastcompens) &&
+        Objects.equals(this.sPaidfeastcomptotal, wagelistpartial.sPaidfeastcomptotal) &&
+        Objects.equals(this.sPaidfree, wagelistpartial.sPaidfree) &&
+        Objects.equals(this.sPaidfreetotal, wagelistpartial.sPaidfreetotal) &&
+        Objects.equals(this.sPaidfreecompens, wagelistpartial.sPaidfreecompens) &&
+        Objects.equals(this.sPaidfreecomptotal, wagelistpartial.sPaidfreecomptotal) &&
         Objects.equals(this.sHoliday, wagelistpartial.sHoliday) &&
-        Objects.equals(this.sHolidayCompens, wagelistpartial.sHolidayCompens) &&
-        Objects.equals(this.sHolidayCompTotal, wagelistpartial.sHolidayCompTotal) &&
-        Objects.equals(this.sPaidHolidayCompens, wagelistpartial.sPaidHolidayCompens) &&
-        Objects.equals(this.sPaidHolidayCompTotal, wagelistpartial.sPaidHolidayCompTotal) &&
+        Objects.equals(this.sHolidaycompens, wagelistpartial.sHolidaycompens) &&
+        Objects.equals(this.sHolidaycomptotal, wagelistpartial.sHolidaycomptotal) &&
+        Objects.equals(this.sPaidholidaycompens, wagelistpartial.sPaidholidaycompens) &&
+        Objects.equals(this.sPaidholidaycomptotal, wagelistpartial.sPaidholidaycomptotal) &&
         Objects.equals(this.sReadiness, wagelistpartial.sReadiness) &&
-        Objects.equals(this.sReadinessTotal, wagelistpartial.sReadinessTotal) &&
-        Objects.equals(this.sReadinessCompens, wagelistpartial.sReadinessCompens) &&
-        Objects.equals(this.sReadinessCompTotal, wagelistpartial.sReadinessCompTotal) &&
-        Objects.equals(this.sArmyExercise, wagelistpartial.sArmyExercise) &&
-        Objects.equals(this.sArmyExerciseTotal, wagelistpartial.sArmyExerciseTotal) &&
-        Objects.equals(this.sArmyDuty, wagelistpartial.sArmyDuty) &&
-        Objects.equals(this.sArmyPerCent, wagelistpartial.sArmyPerCent) &&
-        Objects.equals(this.sArmyCompensation, wagelistpartial.sArmyCompensation) &&
-        Objects.equals(this.sArmyCompTotal, wagelistpartial.sArmyCompTotal) &&
-        Objects.equals(this.sLostWageCompens, wagelistpartial.sLostWageCompens) &&
-        Objects.equals(this.sOtherCompensations, wagelistpartial.sOtherCompensations) &&
-        Objects.equals(this.sNaturalWage, wagelistpartial.sNaturalWage) &&
-        Objects.equals(this.sNaturalWageTotal, wagelistpartial.sNaturalWageTotal) &&
-        Objects.equals(this.sApprenticeFee, wagelistpartial.sApprenticeFee) &&
-        Objects.equals(this.sApprenticeFeeTotal, wagelistpartial.sApprenticeFeeTotal) &&
-        Objects.equals(this.sExecutiveFee, wagelistpartial.sExecutiveFee) &&
-        Objects.equals(this.sExecutiveFeeTotal, wagelistpartial.sExecutiveFeeTotal) &&
-        Objects.equals(this.sCorporateFee, wagelistpartial.sCorporateFee) &&
-        Objects.equals(this.sCorporateFeeTotal, wagelistpartial.sCorporateFeeTotal) &&
-        Objects.equals(this.sExitClaim, wagelistpartial.sExitClaim) &&
-        Objects.equals(this.sExitMultiple, wagelistpartial.sExitMultiple) &&
-        Objects.equals(this.sExitDemand, wagelistpartial.sExitDemand) &&
-        Objects.equals(this.sExitCompensation, wagelistpartial.sExitCompensation) &&
-        Objects.equals(this.sExitCompTotal, wagelistpartial.sExitCompTotal) &&
-        Objects.equals(this.sExitInsuranceBase, wagelistpartial.sExitInsuranceBase) &&
-        Objects.equals(this.sExitFee, wagelistpartial.sExitFee) &&
+        Objects.equals(this.sReadinesstotal, wagelistpartial.sReadinesstotal) &&
+        Objects.equals(this.sReadinesscompens, wagelistpartial.sReadinesscompens) &&
+        Objects.equals(this.sReadinesscomptotal, wagelistpartial.sReadinesscomptotal) &&
+        Objects.equals(this.sArmyexercise, wagelistpartial.sArmyexercise) &&
+        Objects.equals(this.sArmyexercisetotal, wagelistpartial.sArmyexercisetotal) &&
+        Objects.equals(this.sArmyduty, wagelistpartial.sArmyduty) &&
+        Objects.equals(this.sArmypercent, wagelistpartial.sArmypercent) &&
+        Objects.equals(this.sArmycompensation, wagelistpartial.sArmycompensation) &&
+        Objects.equals(this.sArmycomptotal, wagelistpartial.sArmycomptotal) &&
+        Objects.equals(this.sLostwagecompens, wagelistpartial.sLostwagecompens) &&
+        Objects.equals(this.sOthercompensations, wagelistpartial.sOthercompensations) &&
+        Objects.equals(this.sNaturalwage, wagelistpartial.sNaturalwage) &&
+        Objects.equals(this.sNaturalwagetotal, wagelistpartial.sNaturalwagetotal) &&
+        Objects.equals(this.sApprenticefee, wagelistpartial.sApprenticefee) &&
+        Objects.equals(this.sApprenticefeetotal, wagelistpartial.sApprenticefeetotal) &&
+        Objects.equals(this.sExecutivefee, wagelistpartial.sExecutivefee) &&
+        Objects.equals(this.sExecutivefeetotal, wagelistpartial.sExecutivefeetotal) &&
+        Objects.equals(this.sCorporatefee, wagelistpartial.sCorporatefee) &&
+        Objects.equals(this.sCorporatefeetotal, wagelistpartial.sCorporatefeetotal) &&
+        Objects.equals(this.sExitclaim, wagelistpartial.sExitclaim) &&
+        Objects.equals(this.sExitmultiple, wagelistpartial.sExitmultiple) &&
+        Objects.equals(this.sExitdemand, wagelistpartial.sExitdemand) &&
+        Objects.equals(this.sExitcompensation, wagelistpartial.sExitcompensation) &&
+        Objects.equals(this.sExitcomptotal, wagelistpartial.sExitcomptotal) &&
+        Objects.equals(this.sExitinsurancebase, wagelistpartial.sExitinsurancebase) &&
+        Objects.equals(this.sExitfee, wagelistpartial.sExitfee) &&
         Objects.equals(this.sBonus, wagelistpartial.sBonus) &&
-        Objects.equals(this.sBonusTotal, wagelistpartial.sBonusTotal) &&
+        Objects.equals(this.sBonustotal, wagelistpartial.sBonustotal) &&
         Objects.equals(this.sReward, wagelistpartial.sReward) &&
-        Objects.equals(this.sRewardTotal, wagelistpartial.sRewardTotal) &&
-        Objects.equals(this.sRewardLongTerm, wagelistpartial.sRewardLongTerm) &&
-        Objects.equals(this.sRewardLongTermTotal, wagelistpartial.sRewardLongTermTotal) &&
-        Objects.equals(this.sRewardPeriodLength, wagelistpartial.sRewardPeriodLength) &&
+        Objects.equals(this.sRewardtotal, wagelistpartial.sRewardtotal) &&
+        Objects.equals(this.sRewardlongterm, wagelistpartial.sRewardlongterm) &&
+        Objects.equals(this.sRewardlongtermtotal, wagelistpartial.sRewardlongtermtotal) &&
+        Objects.equals(this.sRewardperiodlength, wagelistpartial.sRewardperiodlength) &&
         Objects.equals(this.sThirteen, wagelistpartial.sThirteen) &&
-        Objects.equals(this.sThirteenTotal, wagelistpartial.sThirteenTotal) &&
+        Objects.equals(this.sThirteentotal, wagelistpartial.sThirteentotal) &&
         Objects.equals(this.sFourteen, wagelistpartial.sFourteen) &&
-        Objects.equals(this.sFourteenTotal, wagelistpartial.sFourteenTotal) &&
-        Objects.equals(this.sUnpaidFreeCal, wagelistpartial.sUnpaidFreeCal) &&
-        Objects.equals(this.sUnpaidFreeCalTotal, wagelistpartial.sUnpaidFreeCalTotal) &&
-        Objects.equals(this.sUnpaidFreeWork, wagelistpartial.sUnpaidFreeWork) &&
-        Objects.equals(this.sUnpaidFreeWorkTotal, wagelistpartial.sUnpaidFreeWorkTotal) &&
-        Objects.equals(this.sAbsenceCal, wagelistpartial.sAbsenceCal) &&
-        Objects.equals(this.sAbsenceCalTotal, wagelistpartial.sAbsenceCalTotal) &&
-        Objects.equals(this.sAbsenceWork, wagelistpartial.sAbsenceWork) &&
-        Objects.equals(this.sAbsenceWorkTotal, wagelistpartial.sAbsenceWorkTotal) &&
-        Objects.equals(this.sGrossWage, wagelistpartial.sGrossWage) &&
-        Objects.equals(this.sBaseWage, wagelistpartial.sBaseWage) &&
-        Objects.equals(this.sChargesAndCompens, wagelistpartial.sChargesAndCompens) &&
-        Objects.equals(this.sOtherPersExp, wagelistpartial.sOtherPersExp) &&
-        Objects.equals(this.sMinWageCoef, wagelistpartial.sMinWageCoef) &&
-        Objects.equals(this.sMinWage, wagelistpartial.sMinWage) &&
-        Objects.equals(this.sMinWageCorrect, wagelistpartial.sMinWageCorrect) &&
-        Objects.equals(this.sSurCharge, wagelistpartial.sSurCharge) &&
-        Objects.equals(this.sSurChargeTotal, wagelistpartial.sSurChargeTotal) &&
-        Objects.equals(this.sWorkHoursOper, wagelistpartial.sWorkHoursOper) &&
-        Objects.equals(this.sWorkDaysOper, wagelistpartial.sWorkDaysOper) &&
-        Objects.equals(this.sTaskWageOper, wagelistpartial.sTaskWageOper) &&
-        Objects.equals(this.sOperDaysTotal, wagelistpartial.sOperDaysTotal) &&
-        Objects.equals(this.sFeastHoursOper, wagelistpartial.sFeastHoursOper) &&
-        Objects.equals(this.sNightHoursOper, wagelistpartial.sNightHoursOper) &&
-        Objects.equals(this.sEnvHoursOper, wagelistpartial.sEnvHoursOper) &&
-        Objects.equals(this.sBonusOper, wagelistpartial.sBonusOper) &&
-        Objects.equals(this.sRewardOper, wagelistpartial.sRewardOper) &&
-        Objects.equals(this.sRewardLongTermOper, wagelistpartial.sRewardLongTermOper) &&
-        Objects.equals(this.sThirteenOper, wagelistpartial.sThirteenOper) &&
-        Objects.equals(this.sFourteenOper, wagelistpartial.sFourteenOper) &&
-        Objects.equals(this.sPersonalChargeOper, wagelistpartial.sPersonalChargeOper) &&
-        Objects.equals(this.sChiefChargeOper, wagelistpartial.sChiefChargeOper) &&
-        Objects.equals(this.sSubChargeOper, wagelistpartial.sSubChargeOper) &&
-        Objects.equals(this.sWEndHoursOper, wagelistpartial.sWEndHoursOper) &&
-        Objects.equals(this.sPaidFeastOper, wagelistpartial.sPaidFeastOper) &&
-        Objects.equals(this.sPaidFreeOper, wagelistpartial.sPaidFreeOper) &&
-        Objects.equals(this.sHolidayOper, wagelistpartial.sHolidayOper) &&
-        Objects.equals(this.sReadinessOper, wagelistpartial.sReadinessOper) &&
-        Objects.equals(this.sExitCompOper, wagelistpartial.sExitCompOper) &&
-        Objects.equals(this.sUnpaidFreeCalOper, wagelistpartial.sUnpaidFreeCalOper) &&
-        Objects.equals(this.sUnpaidFreeWorkOper, wagelistpartial.sUnpaidFreeWorkOper) &&
-        Objects.equals(this.sAbsenceCalOper, wagelistpartial.sAbsenceCalOper) &&
-        Objects.equals(this.sAbsenceWorkOper, wagelistpartial.sAbsenceWorkOper) &&
-        Objects.equals(this.sApprenticeFeeOper, wagelistpartial.sApprenticeFeeOper) &&
-        Objects.equals(this.sExecutiveFeeOper, wagelistpartial.sExecutiveFeeOper) &&
-        Objects.equals(this.sCorporateFeeOper, wagelistpartial.sCorporateFeeOper) &&
-        Objects.equals(this.sSickAbsences, wagelistpartial.sSickAbsences) &&
-        Objects.equals(this.sSickBenefits, wagelistpartial.sSickBenefits) &&
-        Objects.equals(this.sHealthInsBase, wagelistpartial.sHealthInsBase) &&
-        Objects.equals(this.sHealthInsBaseTotal, wagelistpartial.sHealthInsBaseTotal) &&
-        Objects.equals(this.sHealthInsBaseCorrect, wagelistpartial.sHealthInsBaseCorrect) &&
-        Objects.equals(this.sHealthIns, wagelistpartial.sHealthIns) &&
-        Objects.equals(this.sHealthInsEmployee, wagelistpartial.sHealthInsEmployee) &&
-        Objects.equals(this.sHealthInsCompany, wagelistpartial.sHealthInsCompany) &&
-        Objects.equals(this.sSocialInsBase, wagelistpartial.sSocialInsBase) &&
-        Objects.equals(this.sSocialInsBaseTotal, wagelistpartial.sSocialInsBaseTotal) &&
-        Objects.equals(this.sSocialInsBaseCorrect, wagelistpartial.sSocialInsBaseCorrect) &&
-        Objects.equals(this.sSocialIns, wagelistpartial.sSocialIns) &&
-        Objects.equals(this.sSocialInsEmployee, wagelistpartial.sSocialInsEmployee) &&
-        Objects.equals(this.sOtherCompInsBase, wagelistpartial.sOtherCompInsBase) &&
-        Objects.equals(this.sHealthInsUnpaidFreeDock, wagelistpartial.sHealthInsUnpaidFreeDock) &&
+        Objects.equals(this.sFourteentotal, wagelistpartial.sFourteentotal) &&
+        Objects.equals(this.sUnpaidfreecal, wagelistpartial.sUnpaidfreecal) &&
+        Objects.equals(this.sUnpaidfreecaltotal, wagelistpartial.sUnpaidfreecaltotal) &&
+        Objects.equals(this.sUnpaidfreework, wagelistpartial.sUnpaidfreework) &&
+        Objects.equals(this.sUnpaidfreeworktotal, wagelistpartial.sUnpaidfreeworktotal) &&
+        Objects.equals(this.sAbsencecal, wagelistpartial.sAbsencecal) &&
+        Objects.equals(this.sAbsencecaltotal, wagelistpartial.sAbsencecaltotal) &&
+        Objects.equals(this.sAbsencework, wagelistpartial.sAbsencework) &&
+        Objects.equals(this.sAbsenceworktotal, wagelistpartial.sAbsenceworktotal) &&
+        Objects.equals(this.sGrosswage, wagelistpartial.sGrosswage) &&
+        Objects.equals(this.sBasewage, wagelistpartial.sBasewage) &&
+        Objects.equals(this.sChargesandcompens, wagelistpartial.sChargesandcompens) &&
+        Objects.equals(this.sOtherpersexp, wagelistpartial.sOtherpersexp) &&
+        Objects.equals(this.sMinwagecoef, wagelistpartial.sMinwagecoef) &&
+        Objects.equals(this.sMinwage, wagelistpartial.sMinwage) &&
+        Objects.equals(this.sMinwagecorrect, wagelistpartial.sMinwagecorrect) &&
+        Objects.equals(this.sSurcharge, wagelistpartial.sSurcharge) &&
+        Objects.equals(this.sSurchargetotal, wagelistpartial.sSurchargetotal) &&
+        Objects.equals(this.sWorkhoursoper, wagelistpartial.sWorkhoursoper) &&
+        Objects.equals(this.sWorkdaysoper, wagelistpartial.sWorkdaysoper) &&
+        Objects.equals(this.sTaskwageoper, wagelistpartial.sTaskwageoper) &&
+        Objects.equals(this.sOperdaystotal, wagelistpartial.sOperdaystotal) &&
+        Objects.equals(this.sFeasthoursoper, wagelistpartial.sFeasthoursoper) &&
+        Objects.equals(this.sNighthoursoper, wagelistpartial.sNighthoursoper) &&
+        Objects.equals(this.sEnvhoursoper, wagelistpartial.sEnvhoursoper) &&
+        Objects.equals(this.sBonusoper, wagelistpartial.sBonusoper) &&
+        Objects.equals(this.sRewardoper, wagelistpartial.sRewardoper) &&
+        Objects.equals(this.sRewardlongtermoper, wagelistpartial.sRewardlongtermoper) &&
+        Objects.equals(this.sThirteenoper, wagelistpartial.sThirteenoper) &&
+        Objects.equals(this.sFourteenoper, wagelistpartial.sFourteenoper) &&
+        Objects.equals(this.sPersonalchargeoper, wagelistpartial.sPersonalchargeoper) &&
+        Objects.equals(this.sChiefchargeoper, wagelistpartial.sChiefchargeoper) &&
+        Objects.equals(this.sSubchargeoper, wagelistpartial.sSubchargeoper) &&
+        Objects.equals(this.sWendhoursoper, wagelistpartial.sWendhoursoper) &&
+        Objects.equals(this.sPaidfeastoper, wagelistpartial.sPaidfeastoper) &&
+        Objects.equals(this.sPaidfreeoper, wagelistpartial.sPaidfreeoper) &&
+        Objects.equals(this.sHolidayoper, wagelistpartial.sHolidayoper) &&
+        Objects.equals(this.sReadinessoper, wagelistpartial.sReadinessoper) &&
+        Objects.equals(this.sExitcompoper, wagelistpartial.sExitcompoper) &&
+        Objects.equals(this.sUnpaidfreecaloper, wagelistpartial.sUnpaidfreecaloper) &&
+        Objects.equals(this.sUnpaidfreeworkoper, wagelistpartial.sUnpaidfreeworkoper) &&
+        Objects.equals(this.sAbsencecaloper, wagelistpartial.sAbsencecaloper) &&
+        Objects.equals(this.sAbsenceworkoper, wagelistpartial.sAbsenceworkoper) &&
+        Objects.equals(this.sApprenticefeeoper, wagelistpartial.sApprenticefeeoper) &&
+        Objects.equals(this.sExecutivefeeoper, wagelistpartial.sExecutivefeeoper) &&
+        Objects.equals(this.sCorporatefeeoper, wagelistpartial.sCorporatefeeoper) &&
+        Objects.equals(this.sSickabsences, wagelistpartial.sSickabsences) &&
+        Objects.equals(this.sSickbenefits, wagelistpartial.sSickbenefits) &&
+        Objects.equals(this.sHealthinsbase, wagelistpartial.sHealthinsbase) &&
+        Objects.equals(this.sHealthinsbasetotal, wagelistpartial.sHealthinsbasetotal) &&
+        Objects.equals(this.sHealthinsbasecorrect, wagelistpartial.sHealthinsbasecorrect) &&
+        Objects.equals(this.sHealthins, wagelistpartial.sHealthins) &&
+        Objects.equals(this.sHealthinsemployee, wagelistpartial.sHealthinsemployee) &&
+        Objects.equals(this.sHealthinscompany, wagelistpartial.sHealthinscompany) &&
+        Objects.equals(this.sSocialinsbase, wagelistpartial.sSocialinsbase) &&
+        Objects.equals(this.sSocialinsbasetotal, wagelistpartial.sSocialinsbasetotal) &&
+        Objects.equals(this.sSocialinsbasecorrect, wagelistpartial.sSocialinsbasecorrect) &&
+        Objects.equals(this.sSocialins, wagelistpartial.sSocialins) &&
+        Objects.equals(this.sSocialinsemployee, wagelistpartial.sSocialinsemployee) &&
+        Objects.equals(this.sOthercompinsbase, wagelistpartial.sOthercompinsbase) &&
+        Objects.equals(this.sHealthinsunpaidfreedock, wagelistpartial.sHealthinsunpaidfreedock) &&
         Objects.equals(this.sCategory2, wagelistpartial.sCategory2) &&
-        Objects.equals(this.sCategory2Oper, wagelistpartial.sCategory2Oper) &&
-        Objects.equals(this.sCategory2Total, wagelistpartial.sCategory2Total) &&
+        Objects.equals(this.sCategory2oper, wagelistpartial.sCategory2oper) &&
+        Objects.equals(this.sCategory2total, wagelistpartial.sCategory2total) &&
         Objects.equals(this.sCategory3, wagelistpartial.sCategory3) &&
-        Objects.equals(this.sCategory3Oper, wagelistpartial.sCategory3Oper) &&
-        Objects.equals(this.sCategory3Total, wagelistpartial.sCategory3Total) &&
+        Objects.equals(this.sCategory3oper, wagelistpartial.sCategory3oper) &&
+        Objects.equals(this.sCategory3total, wagelistpartial.sCategory3total) &&
         Objects.equals(this.sCategory4, wagelistpartial.sCategory4) &&
-        Objects.equals(this.sCategory4Oper, wagelistpartial.sCategory4Oper) &&
-        Objects.equals(this.sCategory4Total, wagelistpartial.sCategory4Total) &&
-        Objects.equals(this.sPOLWage, wagelistpartial.sPOLWage) &&
-        Objects.equals(this.sTaxableIncome, wagelistpartial.sTaxableIncome) &&
-        Objects.equals(this.sTravelComp, wagelistpartial.sTravelComp) &&
-        Objects.equals(this.sTravelCompOper, wagelistpartial.sTravelCompOper) &&
-        Objects.equals(this.sTravelCompTotal, wagelistpartial.sTravelCompTotal) &&
-        Objects.equals(this.sMealTicketDemand, wagelistpartial.sMealTicketDemand) &&
-        Objects.equals(this.sMealTicketDemandTotal, wagelistpartial.sMealTicketDemandTotal) &&
-        Objects.equals(this.sMealTicketCount, wagelistpartial.sMealTicketCount) &&
-        Objects.equals(this.sMealTicketFullCount, wagelistpartial.sMealTicketFullCount) &&
-        Objects.equals(this.sMealTicketDisCount, wagelistpartial.sMealTicketDisCount) &&
-        Objects.equals(this.sPOLDock, wagelistpartial.sPOLDock) &&
-        Objects.equals(this.sPOLDockOper, wagelistpartial.sPOLDockOper) &&
-        Objects.equals(this.sPOLDockTotal, wagelistpartial.sPOLDockTotal) &&
+        Objects.equals(this.sCategory4oper, wagelistpartial.sCategory4oper) &&
+        Objects.equals(this.sCategory4total, wagelistpartial.sCategory4total) &&
+        Objects.equals(this.sPolWage, wagelistpartial.sPolWage) &&
+        Objects.equals(this.sTaxableincome, wagelistpartial.sTaxableincome) &&
+        Objects.equals(this.sTravelcomp, wagelistpartial.sTravelcomp) &&
+        Objects.equals(this.sTravelcompoper, wagelistpartial.sTravelcompoper) &&
+        Objects.equals(this.sTravelcomptotal, wagelistpartial.sTravelcomptotal) &&
+        Objects.equals(this.sMealticketdemand, wagelistpartial.sMealticketdemand) &&
+        Objects.equals(this.sMealticketdemandtotal, wagelistpartial.sMealticketdemandtotal) &&
+        Objects.equals(this.sMealticketcount, wagelistpartial.sMealticketcount) &&
+        Objects.equals(this.sMealticketfullcount, wagelistpartial.sMealticketfullcount) &&
+        Objects.equals(this.sMealticketdiscount, wagelistpartial.sMealticketdiscount) &&
+        Objects.equals(this.sPolDock, wagelistpartial.sPolDock) &&
+        Objects.equals(this.sPolDockoper, wagelistpartial.sPolDockoper) &&
+        Objects.equals(this.sPolDocktotal, wagelistpartial.sPolDocktotal) &&
         Objects.equals(this.sExposure, wagelistpartial.sExposure) &&
-        Objects.equals(this.sExposureTotal, wagelistpartial.sExposureTotal) &&
-        Objects.equals(this.sExcludedDays, wagelistpartial.sExcludedDays) &&
-        Objects.equals(this.sExcludedDaysCorrect, wagelistpartial.sExcludedDaysCorrect) &&
-        Objects.equals(this.sExcludedDaysOutSide, wagelistpartial.sExcludedDaysOutSide) &&
-        Objects.equals(this.sExcusedAbsence, wagelistpartial.sExcusedAbsence) &&
-        Objects.equals(this.sOverTimeAbsence, wagelistpartial.sOverTimeAbsence) &&
-        Objects.equals(this.sAbsenceWorkHours, wagelistpartial.sAbsenceWorkHours) &&
-        Objects.equals(this.sFlatTravelComp, wagelistpartial.sFlatTravelComp) &&
-        Objects.equals(this.sWageDeposit, wagelistpartial.sWageDeposit) &&
-        Objects.equals(this.sSocialInsMinimum, wagelistpartial.sSocialInsMinimum) &&
-        Objects.equals(this.sIsSocialInsurance, wagelistpartial.sIsSocialInsurance) &&
+        Objects.equals(this.sExposuretotal, wagelistpartial.sExposuretotal) &&
+        Objects.equals(this.sExcludeddays, wagelistpartial.sExcludeddays) &&
+        Objects.equals(this.sExcludeddayscorrect, wagelistpartial.sExcludeddayscorrect) &&
+        Objects.equals(this.sExcludeddaysoutside, wagelistpartial.sExcludeddaysoutside) &&
+        Objects.equals(this.sExcusedabsence, wagelistpartial.sExcusedabsence) &&
+        Objects.equals(this.sOvertimeabsence, wagelistpartial.sOvertimeabsence) &&
+        Objects.equals(this.sAbsenceworkhours, wagelistpartial.sAbsenceworkhours) &&
+        Objects.equals(this.sFlattravelcomp, wagelistpartial.sFlattravelcomp) &&
+        Objects.equals(this.sWagedeposit, wagelistpartial.sWagedeposit) &&
+        Objects.equals(this.sSocialinsminimum, wagelistpartial.sSocialinsminimum) &&
+        Objects.equals(this.sIssocialinsurance, wagelistpartial.sIssocialinsurance) &&
         Objects.equals(this.sPhoneDock, wagelistpartial.sPhoneDock) &&
-        Objects.equals(this.sPhoneDockTotal, wagelistpartial.sPhoneDockTotal) &&
-        Objects.equals(this.sRewardSixMonth, wagelistpartial.sRewardSixMonth) &&
-        Objects.equals(this.sRewardSixMonthTotal, wagelistpartial.sRewardSixMonthTotal) &&
-        Objects.equals(this.sRewardTwelveMonth, wagelistpartial.sRewardTwelveMonth) &&
-        Objects.equals(this.sRewardTwelveMonthTotal, wagelistpartial.sRewardTwelveMonthTotal) &&
-        Objects.equals(this.sArmyExerciseCal, wagelistpartial.sArmyExerciseCal) &&
-        Objects.equals(this.sArmyExerciseCalTotal, wagelistpartial.sArmyExerciseCalTotal) &&
-        Objects.equals(this.sSubtractedDays, wagelistpartial.sSubtractedDays) &&
-        Objects.equals(this.sSubtractedDaysTotal, wagelistpartial.sSubtractedDaysTotal) &&
-        Objects.equals(this.sRewardSixMonthOper, wagelistpartial.sRewardSixMonthOper) &&
-        Objects.equals(this.sRewardTwelveMonthOper, wagelistpartial.sRewardTwelveMonthOper) &&
-        Objects.equals(this.sExcludedDaysCorrection, wagelistpartial.sExcludedDaysCorrection) &&
-        Objects.equals(this.sSmallOrBigCompany, wagelistpartial.sSmallOrBigCompany) &&
-        Objects.equals(this.sSickAbsencesOutOfRelation, wagelistpartial.sSickAbsencesOutOfRelation) &&
-        Objects.equals(this.sExcludedDaysAfterRetAge, wagelistpartial.sExcludedDaysAfterRetAge) &&
-        Objects.equals(this.sExcludedDaysAfterRetAgeCorr, wagelistpartial.sExcludedDaysAfterRetAgeCorr) &&
-        Objects.equals(this.sWorkingFundForOvertime, wagelistpartial.sWorkingFundForOvertime) &&
-        Objects.equals(this.sOverpaidHoliday, wagelistpartial.sOverpaidHoliday) &&
-        Objects.equals(this.sAverageCorrect, wagelistpartial.sAverageCorrect) &&
-        Objects.equals(this.sGrossWageForAvgNetWage, wagelistpartial.sGrossWageForAvgNetWage) &&
-        Objects.equals(this.sSocInsBaseLowRate, wagelistpartial.sSocInsBaseLowRate) &&
-        Objects.equals(this.sSickCompBoost, wagelistpartial.sSickCompBoost) &&
-        Objects.equals(this.sNormalDuty, wagelistpartial.sNormalDuty) &&
-        Objects.equals(this.sSurChargeGuaranteed, wagelistpartial.sSurChargeGuaranteed) &&
-        Objects.equals(this.sGuaranteedWage, wagelistpartial.sGuaranteedWage) &&
-        Objects.equals(this.sSurChargeGuaranteedTotal, wagelistpartial.sSurChargeGuaranteedTotal) &&
-        Objects.equals(this.sUnresolvedOvertimeTotal, wagelistpartial.sUnresolvedOvertimeTotal) &&
-        Objects.equals(this.sOvertimeSubstFree, wagelistpartial.sOvertimeSubstFree) &&
-        Objects.equals(this.sUnresolvedOvertime, wagelistpartial.sUnresolvedOvertime) &&
-        Objects.equals(this.sFeastMode, wagelistpartial.sFeastMode) &&
-        Objects.equals(this.sOvertimeSubstFreeTotal, wagelistpartial.sOvertimeSubstFreeTotal) &&
-        Objects.equals(this.sOldOvertimeHours, wagelistpartial.sOldOvertimeHours) &&
-        Objects.equals(this.sOldOvertimeHoursTotal, wagelistpartial.sOldOvertimeHoursTotal) &&
-        Objects.equals(this.sDisasterCompTime, wagelistpartial.sDisasterCompTime) &&
-        Objects.equals(this.sMalfunctionCompTime, wagelistpartial.sMalfunctionCompTime) &&
-        Objects.equals(this.sOtherObstructionCompTime, wagelistpartial.sOtherObstructionCompTime) &&
-        Objects.equals(this.sDisasterComp, wagelistpartial.sDisasterComp) &&
-        Objects.equals(this.sMalfunctionComp, wagelistpartial.sMalfunctionComp) &&
-        Objects.equals(this.sOtherObstructionComp, wagelistpartial.sOtherObstructionComp) &&
-        Objects.equals(this.sDisasterCompTotal, wagelistpartial.sDisasterCompTotal) &&
-        Objects.equals(this.sMalfuncCompTotal, wagelistpartial.sMalfuncCompTotal) &&
-        Objects.equals(this.sOtherObstCompTotal, wagelistpartial.sOtherObstCompTotal) &&
-        Objects.equals(this.sRewardJubilee, wagelistpartial.sRewardJubilee) &&
-        Objects.equals(this.sGuaranteedWageCorrect, wagelistpartial.sGuaranteedWageCorrect) &&
-        Objects.equals(this.sFeastHoursOutOfRelation, wagelistpartial.sFeastHoursOutOfRelation) &&
-        Objects.equals(this.sFeastHourInAbsenceAndSickness, wagelistpartial.sFeastHourInAbsenceAndSickness) &&
-        Objects.equals(this.sRewardJubileeAllBase, wagelistpartial.sRewardJubileeAllBase) &&
-        Objects.equals(this.sRewardJubileeNoneBase, wagelistpartial.sRewardJubileeNoneBase) &&
-        Objects.equals(this.sAvgShiftLength, wagelistpartial.sAvgShiftLength) &&
-        Objects.equals(this.sPaidFeastHoursOper, wagelistpartial.sPaidFeastHoursOper) &&
-        Objects.equals(this.sSurChargeGuarantInGrossWage, wagelistpartial.sSurChargeGuarantInGrossWage) &&
-        Objects.equals(this.sPaidFeastHours, wagelistpartial.sPaidFeastHours) &&
-        Objects.equals(this.sRenumerationForm, wagelistpartial.sRenumerationForm) &&
-        Objects.equals(this.sHolidayHours, wagelistpartial.sHolidayHours) &&
-        Objects.equals(this.sExitInsBaseCorrection, wagelistpartial.sExitInsBaseCorrection) &&
-        Objects.equals(this.sIsHealthInsurance, wagelistpartial.sIsHealthInsurance) &&
-        Objects.equals(this.sInventionReward, wagelistpartial.sInventionReward) &&
-        Objects.equals(this.sPercentOfAvgCompTotal, wagelistpartial.sPercentOfAvgCompTotal) &&
-        Objects.equals(this.sPercentOfAvgComp, wagelistpartial.sPercentOfAvgComp) &&
-        Objects.equals(this.sAvgCompPercent, wagelistpartial.sAvgCompPercent) &&
-        Objects.equals(this.sPercentOfAvgCompTime, wagelistpartial.sPercentOfAvgCompTime) &&
-        Objects.equals(this.sHolidayDrawCheck1, wagelistpartial.sHolidayDrawCheck1) &&
-        Objects.equals(this.sHolidayDrawCheck2, wagelistpartial.sHolidayDrawCheck2) &&
-        Objects.equals(this.sHolidayDrawcheck3, wagelistpartial.sHolidayDrawcheck3) &&
-        Objects.equals(this.sGrossWageCheck, wagelistpartial.sGrossWageCheck) &&
-        Objects.equals(this.sHasSIDiscount, wagelistpartial.sHasSIDiscount) &&
-        Objects.equals(this.sHasSIDiscountEdit, wagelistpartial.sHasSIDiscountEdit) &&
-        Objects.equals(this.sLifeInsTaxBase, wagelistpartial.sLifeInsTaxBase) &&
-        Objects.equals(this.sLifeInsAmount, wagelistpartial.sLifeInsAmount) &&
-        Objects.equals(this.sRetFundTaxBase, wagelistpartial.sRetFundTaxBase) &&
-        Objects.equals(this.sRetFundAmount, wagelistpartial.sRetFundAmount) &&
-        Objects.equals(this.sAgreementIncome, wagelistpartial.sAgreementIncome) &&
-        Objects.equals(this.sDutyCarTotal, wagelistpartial.sDutyCarTotal) &&
-        Objects.equals(this.sDutyCar, wagelistpartial.sDutyCar) &&
-        Objects.equals(this.sDisabilityPension, wagelistpartial.sDisabilityPension) &&
-        Objects.equals(this.sPartTimeIncome, wagelistpartial.sPartTimeIncome) &&
-        Objects.equals(this.sNaturalWageForAvg, wagelistpartial.sNaturalWageForAvg) &&
-        Objects.equals(this.sLifeInsTaxablePart, wagelistpartial.sLifeInsTaxablePart) &&
-        Objects.equals(this.sWorkActivityIncome, wagelistpartial.sWorkActivityIncome);
+        Objects.equals(this.sPhoneDocktotal, wagelistpartial.sPhoneDocktotal) &&
+        Objects.equals(this.sRewardsixmonth, wagelistpartial.sRewardsixmonth) &&
+        Objects.equals(this.sRewardsixmonthtotal, wagelistpartial.sRewardsixmonthtotal) &&
+        Objects.equals(this.sRewardtwelvemonth, wagelistpartial.sRewardtwelvemonth) &&
+        Objects.equals(this.sRewardtwelvemonthtotal, wagelistpartial.sRewardtwelvemonthtotal) &&
+        Objects.equals(this.sArmyexercisecal, wagelistpartial.sArmyexercisecal) &&
+        Objects.equals(this.sArmyexercisecaltotal, wagelistpartial.sArmyexercisecaltotal) &&
+        Objects.equals(this.sSubtracteddays, wagelistpartial.sSubtracteddays) &&
+        Objects.equals(this.sSubtracteddaystotal, wagelistpartial.sSubtracteddaystotal) &&
+        Objects.equals(this.sRewardsixmonthoper, wagelistpartial.sRewardsixmonthoper) &&
+        Objects.equals(this.sRewardtwelvemonthoper, wagelistpartial.sRewardtwelvemonthoper) &&
+        Objects.equals(this.sExcludeddayscorrection, wagelistpartial.sExcludeddayscorrection) &&
+        Objects.equals(this.sSmallorbigcompany, wagelistpartial.sSmallorbigcompany) &&
+        Objects.equals(this.sSickabsencesoutofrelation, wagelistpartial.sSickabsencesoutofrelation) &&
+        Objects.equals(this.sExcludeddaysafterretage, wagelistpartial.sExcludeddaysafterretage) &&
+        Objects.equals(this.sExcludeddaysafterretagecorr, wagelistpartial.sExcludeddaysafterretagecorr) &&
+        Objects.equals(this.sWorkingfundforovertime, wagelistpartial.sWorkingfundforovertime) &&
+        Objects.equals(this.sOverpaidholiday, wagelistpartial.sOverpaidholiday) &&
+        Objects.equals(this.sAveragecorrect, wagelistpartial.sAveragecorrect) &&
+        Objects.equals(this.sGrosswageforavgnetwage, wagelistpartial.sGrosswageforavgnetwage) &&
+        Objects.equals(this.sSocinsbaselowrate, wagelistpartial.sSocinsbaselowrate) &&
+        Objects.equals(this.sSickcompboost, wagelistpartial.sSickcompboost) &&
+        Objects.equals(this.sNormalduty, wagelistpartial.sNormalduty) &&
+        Objects.equals(this.sSurchargeguaranteed, wagelistpartial.sSurchargeguaranteed) &&
+        Objects.equals(this.sGuaranteedwage, wagelistpartial.sGuaranteedwage) &&
+        Objects.equals(this.sSurchargeguaranteedtotal, wagelistpartial.sSurchargeguaranteedtotal) &&
+        Objects.equals(this.sUnresolvedovertimetotal, wagelistpartial.sUnresolvedovertimetotal) &&
+        Objects.equals(this.sOvertimesubstfree, wagelistpartial.sOvertimesubstfree) &&
+        Objects.equals(this.sUnresolvedovertime, wagelistpartial.sUnresolvedovertime) &&
+        Objects.equals(this.sFeastmode, wagelistpartial.sFeastmode) &&
+        Objects.equals(this.sOvertimesubstfreetotal, wagelistpartial.sOvertimesubstfreetotal) &&
+        Objects.equals(this.sOldovertimehours, wagelistpartial.sOldovertimehours) &&
+        Objects.equals(this.sOldovertimehourstotal, wagelistpartial.sOldovertimehourstotal) &&
+        Objects.equals(this.sDisastercomptime, wagelistpartial.sDisastercomptime) &&
+        Objects.equals(this.sMalfunctioncomptime, wagelistpartial.sMalfunctioncomptime) &&
+        Objects.equals(this.sOtherobstructioncomptime, wagelistpartial.sOtherobstructioncomptime) &&
+        Objects.equals(this.sDisastercomp, wagelistpartial.sDisastercomp) &&
+        Objects.equals(this.sMalfunctioncomp, wagelistpartial.sMalfunctioncomp) &&
+        Objects.equals(this.sOtherobstructioncomp, wagelistpartial.sOtherobstructioncomp) &&
+        Objects.equals(this.sDisastercomptotal, wagelistpartial.sDisastercomptotal) &&
+        Objects.equals(this.sMalfunccomptotal, wagelistpartial.sMalfunccomptotal) &&
+        Objects.equals(this.sOtherobstcomptotal, wagelistpartial.sOtherobstcomptotal) &&
+        Objects.equals(this.sRewardjubilee, wagelistpartial.sRewardjubilee) &&
+        Objects.equals(this.sGuaranteedwagecorrect, wagelistpartial.sGuaranteedwagecorrect) &&
+        Objects.equals(this.sFeasthoursoutofrelation, wagelistpartial.sFeasthoursoutofrelation) &&
+        Objects.equals(this.sFeasthourinabsenceandsickness, wagelistpartial.sFeasthourinabsenceandsickness) &&
+        Objects.equals(this.sRewardjubileeallbase, wagelistpartial.sRewardjubileeallbase) &&
+        Objects.equals(this.sRewardjubileenonebase, wagelistpartial.sRewardjubileenonebase) &&
+        Objects.equals(this.sAvgshiftlength, wagelistpartial.sAvgshiftlength) &&
+        Objects.equals(this.sPaidfeasthoursoper, wagelistpartial.sPaidfeasthoursoper) &&
+        Objects.equals(this.sSurchargeguarantingrosswage, wagelistpartial.sSurchargeguarantingrosswage) &&
+        Objects.equals(this.sPaidfeasthours, wagelistpartial.sPaidfeasthours) &&
+        Objects.equals(this.sRenumerationform, wagelistpartial.sRenumerationform) &&
+        Objects.equals(this.sHolidayhours, wagelistpartial.sHolidayhours) &&
+        Objects.equals(this.sExitinsbasecorrection, wagelistpartial.sExitinsbasecorrection) &&
+        Objects.equals(this.sIshealthinsurance, wagelistpartial.sIshealthinsurance) &&
+        Objects.equals(this.sInventionreward, wagelistpartial.sInventionreward) &&
+        Objects.equals(this.sPercentofavgcomptotal, wagelistpartial.sPercentofavgcomptotal) &&
+        Objects.equals(this.sPercentofavgcomp, wagelistpartial.sPercentofavgcomp) &&
+        Objects.equals(this.sAvgcomppercent, wagelistpartial.sAvgcomppercent) &&
+        Objects.equals(this.sPercentofavgcomptime, wagelistpartial.sPercentofavgcomptime) &&
+        Objects.equals(this.sHolidaydrawcheck1, wagelistpartial.sHolidaydrawcheck1) &&
+        Objects.equals(this.sHolidaydrawcheck2, wagelistpartial.sHolidaydrawcheck2) &&
+        Objects.equals(this.sHolidaydrawcheck3, wagelistpartial.sHolidaydrawcheck3) &&
+        Objects.equals(this.sGrosswagecheck, wagelistpartial.sGrosswagecheck) &&
+        Objects.equals(this.sHassidiscount, wagelistpartial.sHassidiscount) &&
+        Objects.equals(this.sHassidiscountedit, wagelistpartial.sHassidiscountedit) &&
+        Objects.equals(this.sLifeinstaxbase, wagelistpartial.sLifeinstaxbase) &&
+        Objects.equals(this.sLifeinsamount, wagelistpartial.sLifeinsamount) &&
+        Objects.equals(this.sRetfundtaxbase, wagelistpartial.sRetfundtaxbase) &&
+        Objects.equals(this.sRetfundamount, wagelistpartial.sRetfundamount) &&
+        Objects.equals(this.sAgreementincome, wagelistpartial.sAgreementincome) &&
+        Objects.equals(this.sDutycartotal, wagelistpartial.sDutycartotal) &&
+        Objects.equals(this.sDutycar, wagelistpartial.sDutycar) &&
+        Objects.equals(this.sDisabilitypension, wagelistpartial.sDisabilitypension) &&
+        Objects.equals(this.sParttimeincome, wagelistpartial.sParttimeincome) &&
+        Objects.equals(this.sNaturalwageforavg, wagelistpartial.sNaturalwageforavg) &&
+        Objects.equals(this.sLifeinstaxablepart, wagelistpartial.sLifeinstaxablepart) &&
+        Objects.equals(this.sWorkactivityincome, wagelistpartial.sWorkactivityincome);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, calcCharts, isComputed, wagePeriodID, workingRelationID, employeeID, wageOperations, additionalCharges, wageCompensations, totalAbsence, monthFund, workingFund, wageForUnit, totalWorkTime, averageWage, holidayTotal, holidayDrawDays, paidHoliday, holidayTypeID, grossWageTotal, sickBenefitNumerator, sickBenefitDenominator, holidayNumerator, oldSixMonthsReward, oldTwelveMonthsReward, oldRewardLongTermTotal, oldRewardPeriodLength, xMLImported, afterWorkingRelation, commonIsComputed, commonDisplayName, wageListFrom, wageListTo, wageListRealFrom, calendarDuty, persLastName, persPersonalNumber, persNumPersonalNumber, mainWorkingRelation, wageListCommonID, wLSickTo, calcAvgNetWage, holidayDrawHours, paidHolidayHours, calculationOrder, sWorkDays, sWorkDaysTotal, sWorkHours, sWorkHoursTotal, sMixedHours, sMixedHoursTotal, sOperHoursTotal, sOperWageTotal, sTaskWage, sTaskWageTotal, sTimeWage, sTimeWageTotal, sFeastHours, sFeastHoursTotal, sFeastCharge, sFeastChargeTotal, sNightHours, sNightHoursTotal, sNightCharge, sNightChargeTotal, sEnvHours, sEnvHoursTotal, sEnvCharge, sEnvChargeTotal, sOverTime, sOverTimeTotal, sOverTimeCharge, sOverTimeChargeTotal, sOtherCharges, sPersonalCharge, sPersonalChargeTotal, sChiefCharge, sChiefChargeTotal, sSubCharge, sSubChargeTotal, sWEndHours, sWEndHoursTotal, sWEndCharge, sWEndChargeTotal, sPaidFeast, sPaidFeastTotal, sPaidFeastCompens, sPaidFeastCompTotal, sPaidFree, sPaidFreeTotal, sPaidFreeCompens, sPaidFreeCompTotal, sHoliday, sHolidayCompens, sHolidayCompTotal, sPaidHolidayCompens, sPaidHolidayCompTotal, sReadiness, sReadinessTotal, sReadinessCompens, sReadinessCompTotal, sArmyExercise, sArmyExerciseTotal, sArmyDuty, sArmyPerCent, sArmyCompensation, sArmyCompTotal, sLostWageCompens, sOtherCompensations, sNaturalWage, sNaturalWageTotal, sApprenticeFee, sApprenticeFeeTotal, sExecutiveFee, sExecutiveFeeTotal, sCorporateFee, sCorporateFeeTotal, sExitClaim, sExitMultiple, sExitDemand, sExitCompensation, sExitCompTotal, sExitInsuranceBase, sExitFee, sBonus, sBonusTotal, sReward, sRewardTotal, sRewardLongTerm, sRewardLongTermTotal, sRewardPeriodLength, sThirteen, sThirteenTotal, sFourteen, sFourteenTotal, sUnpaidFreeCal, sUnpaidFreeCalTotal, sUnpaidFreeWork, sUnpaidFreeWorkTotal, sAbsenceCal, sAbsenceCalTotal, sAbsenceWork, sAbsenceWorkTotal, sGrossWage, sBaseWage, sChargesAndCompens, sOtherPersExp, sMinWageCoef, sMinWage, sMinWageCorrect, sSurCharge, sSurChargeTotal, sWorkHoursOper, sWorkDaysOper, sTaskWageOper, sOperDaysTotal, sFeastHoursOper, sNightHoursOper, sEnvHoursOper, sBonusOper, sRewardOper, sRewardLongTermOper, sThirteenOper, sFourteenOper, sPersonalChargeOper, sChiefChargeOper, sSubChargeOper, sWEndHoursOper, sPaidFeastOper, sPaidFreeOper, sHolidayOper, sReadinessOper, sExitCompOper, sUnpaidFreeCalOper, sUnpaidFreeWorkOper, sAbsenceCalOper, sAbsenceWorkOper, sApprenticeFeeOper, sExecutiveFeeOper, sCorporateFeeOper, sSickAbsences, sSickBenefits, sHealthInsBase, sHealthInsBaseTotal, sHealthInsBaseCorrect, sHealthIns, sHealthInsEmployee, sHealthInsCompany, sSocialInsBase, sSocialInsBaseTotal, sSocialInsBaseCorrect, sSocialIns, sSocialInsEmployee, sOtherCompInsBase, sHealthInsUnpaidFreeDock, sCategory2, sCategory2Oper, sCategory2Total, sCategory3, sCategory3Oper, sCategory3Total, sCategory4, sCategory4Oper, sCategory4Total, sPOLWage, sTaxableIncome, sTravelComp, sTravelCompOper, sTravelCompTotal, sMealTicketDemand, sMealTicketDemandTotal, sMealTicketCount, sMealTicketFullCount, sMealTicketDisCount, sPOLDock, sPOLDockOper, sPOLDockTotal, sExposure, sExposureTotal, sExcludedDays, sExcludedDaysCorrect, sExcludedDaysOutSide, sExcusedAbsence, sOverTimeAbsence, sAbsenceWorkHours, sFlatTravelComp, sWageDeposit, sSocialInsMinimum, sIsSocialInsurance, sPhoneDock, sPhoneDockTotal, sRewardSixMonth, sRewardSixMonthTotal, sRewardTwelveMonth, sRewardTwelveMonthTotal, sArmyExerciseCal, sArmyExerciseCalTotal, sSubtractedDays, sSubtractedDaysTotal, sRewardSixMonthOper, sRewardTwelveMonthOper, sExcludedDaysCorrection, sSmallOrBigCompany, sSickAbsencesOutOfRelation, sExcludedDaysAfterRetAge, sExcludedDaysAfterRetAgeCorr, sWorkingFundForOvertime, sOverpaidHoliday, sAverageCorrect, sGrossWageForAvgNetWage, sSocInsBaseLowRate, sSickCompBoost, sNormalDuty, sSurChargeGuaranteed, sGuaranteedWage, sSurChargeGuaranteedTotal, sUnresolvedOvertimeTotal, sOvertimeSubstFree, sUnresolvedOvertime, sFeastMode, sOvertimeSubstFreeTotal, sOldOvertimeHours, sOldOvertimeHoursTotal, sDisasterCompTime, sMalfunctionCompTime, sOtherObstructionCompTime, sDisasterComp, sMalfunctionComp, sOtherObstructionComp, sDisasterCompTotal, sMalfuncCompTotal, sOtherObstCompTotal, sRewardJubilee, sGuaranteedWageCorrect, sFeastHoursOutOfRelation, sFeastHourInAbsenceAndSickness, sRewardJubileeAllBase, sRewardJubileeNoneBase, sAvgShiftLength, sPaidFeastHoursOper, sSurChargeGuarantInGrossWage, sPaidFeastHours, sRenumerationForm, sHolidayHours, sExitInsBaseCorrection, sIsHealthInsurance, sInventionReward, sPercentOfAvgCompTotal, sPercentOfAvgComp, sAvgCompPercent, sPercentOfAvgCompTime, sHolidayDrawCheck1, sHolidayDrawCheck2, sHolidayDrawcheck3, sGrossWageCheck, sHasSIDiscount, sHasSIDiscountEdit, sLifeInsTaxBase, sLifeInsAmount, sRetFundTaxBase, sRetFundAmount, sAgreementIncome, sDutyCarTotal, sDutyCar, sDisabilityPension, sPartTimeIncome, sNaturalWageForAvg, sLifeInsTaxablePart, sWorkActivityIncome);
+    return Objects.hash(displayname, id, classid, objversion, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, calccharts, iscomputed, wageperiodId, workingrelationId, employeeId, wageoperations, additionalcharges, wagecompensations, totalabsence, monthfund, workingfund, wageforunit, totalworktime, averagewage, holidaytotal, holidaydrawdays, paidholiday, holidaytypeId, grosswagetotal, sickbenefitnumerator, sickbenefitdenominator, holidaynumerator, oldsixmonthsreward, oldtwelvemonthsreward, oldrewardlongtermtotal, oldrewardperiodlength, xmlimported, afterworkingrelation, commoniscomputed, commondisplayname, wagelistfrom, wagelistto, wagelistrealfrom, calendarduty, persLastname, persPersonalnumber, persNumpersonalnumber, mainworkingrelation, wagelistcommonId, wlsickto, calcavgnetwage, holidaydrawhours, paidholidayhours, calculationorder, sWorkdays, sWorkdaystotal, sWorkhours, sWorkhourstotal, sMixedhours, sMixedhourstotal, sOperhourstotal, sOperwagetotal, sTaskwage, sTaskwagetotal, sTimewage, sTimewagetotal, sFeasthours, sFeasthourstotal, sFeastcharge, sFeastchargetotal, sNighthours, sNighthourstotal, sNightcharge, sNightchargetotal, sEnvhours, sEnvhourstotal, sEnvcharge, sEnvchargetotal, sOvertime, sOvertimetotal, sOvertimecharge, sOvertimechargetotal, sOthercharges, sPersonalcharge, sPersonalchargetotal, sChiefcharge, sChiefchargetotal, sSubcharge, sSubchargetotal, sWendhours, sWendhourstotal, sWendcharge, sWendchargetotal, sPaidfeast, sPaidfeasttotal, sPaidfeastcompens, sPaidfeastcomptotal, sPaidfree, sPaidfreetotal, sPaidfreecompens, sPaidfreecomptotal, sHoliday, sHolidaycompens, sHolidaycomptotal, sPaidholidaycompens, sPaidholidaycomptotal, sReadiness, sReadinesstotal, sReadinesscompens, sReadinesscomptotal, sArmyexercise, sArmyexercisetotal, sArmyduty, sArmypercent, sArmycompensation, sArmycomptotal, sLostwagecompens, sOthercompensations, sNaturalwage, sNaturalwagetotal, sApprenticefee, sApprenticefeetotal, sExecutivefee, sExecutivefeetotal, sCorporatefee, sCorporatefeetotal, sExitclaim, sExitmultiple, sExitdemand, sExitcompensation, sExitcomptotal, sExitinsurancebase, sExitfee, sBonus, sBonustotal, sReward, sRewardtotal, sRewardlongterm, sRewardlongtermtotal, sRewardperiodlength, sThirteen, sThirteentotal, sFourteen, sFourteentotal, sUnpaidfreecal, sUnpaidfreecaltotal, sUnpaidfreework, sUnpaidfreeworktotal, sAbsencecal, sAbsencecaltotal, sAbsencework, sAbsenceworktotal, sGrosswage, sBasewage, sChargesandcompens, sOtherpersexp, sMinwagecoef, sMinwage, sMinwagecorrect, sSurcharge, sSurchargetotal, sWorkhoursoper, sWorkdaysoper, sTaskwageoper, sOperdaystotal, sFeasthoursoper, sNighthoursoper, sEnvhoursoper, sBonusoper, sRewardoper, sRewardlongtermoper, sThirteenoper, sFourteenoper, sPersonalchargeoper, sChiefchargeoper, sSubchargeoper, sWendhoursoper, sPaidfeastoper, sPaidfreeoper, sHolidayoper, sReadinessoper, sExitcompoper, sUnpaidfreecaloper, sUnpaidfreeworkoper, sAbsencecaloper, sAbsenceworkoper, sApprenticefeeoper, sExecutivefeeoper, sCorporatefeeoper, sSickabsences, sSickbenefits, sHealthinsbase, sHealthinsbasetotal, sHealthinsbasecorrect, sHealthins, sHealthinsemployee, sHealthinscompany, sSocialinsbase, sSocialinsbasetotal, sSocialinsbasecorrect, sSocialins, sSocialinsemployee, sOthercompinsbase, sHealthinsunpaidfreedock, sCategory2, sCategory2oper, sCategory2total, sCategory3, sCategory3oper, sCategory3total, sCategory4, sCategory4oper, sCategory4total, sPolWage, sTaxableincome, sTravelcomp, sTravelcompoper, sTravelcomptotal, sMealticketdemand, sMealticketdemandtotal, sMealticketcount, sMealticketfullcount, sMealticketdiscount, sPolDock, sPolDockoper, sPolDocktotal, sExposure, sExposuretotal, sExcludeddays, sExcludeddayscorrect, sExcludeddaysoutside, sExcusedabsence, sOvertimeabsence, sAbsenceworkhours, sFlattravelcomp, sWagedeposit, sSocialinsminimum, sIssocialinsurance, sPhoneDock, sPhoneDocktotal, sRewardsixmonth, sRewardsixmonthtotal, sRewardtwelvemonth, sRewardtwelvemonthtotal, sArmyexercisecal, sArmyexercisecaltotal, sSubtracteddays, sSubtracteddaystotal, sRewardsixmonthoper, sRewardtwelvemonthoper, sExcludeddayscorrection, sSmallorbigcompany, sSickabsencesoutofrelation, sExcludeddaysafterretage, sExcludeddaysafterretagecorr, sWorkingfundforovertime, sOverpaidholiday, sAveragecorrect, sGrosswageforavgnetwage, sSocinsbaselowrate, sSickcompboost, sNormalduty, sSurchargeguaranteed, sGuaranteedwage, sSurchargeguaranteedtotal, sUnresolvedovertimetotal, sOvertimesubstfree, sUnresolvedovertime, sFeastmode, sOvertimesubstfreetotal, sOldovertimehours, sOldovertimehourstotal, sDisastercomptime, sMalfunctioncomptime, sOtherobstructioncomptime, sDisastercomp, sMalfunctioncomp, sOtherobstructioncomp, sDisastercomptotal, sMalfunccomptotal, sOtherobstcomptotal, sRewardjubilee, sGuaranteedwagecorrect, sFeasthoursoutofrelation, sFeasthourinabsenceandsickness, sRewardjubileeallbase, sRewardjubileenonebase, sAvgshiftlength, sPaidfeasthoursoper, sSurchargeguarantingrosswage, sPaidfeasthours, sRenumerationform, sHolidayhours, sExitinsbasecorrection, sIshealthinsurance, sInventionreward, sPercentofavgcomptotal, sPercentofavgcomp, sAvgcomppercent, sPercentofavgcomptime, sHolidaydrawcheck1, sHolidaydrawcheck2, sHolidaydrawcheck3, sGrosswagecheck, sHassidiscount, sHassidiscountedit, sLifeinstaxbase, sLifeinsamount, sRetfundtaxbase, sRetfundamount, sAgreementincome, sDutycartotal, sDutycar, sDisabilitypension, sParttimeincome, sNaturalwageforavg, sLifeinstaxablepart, sWorkactivityincome);
   }
 
   @Override
@@ -5474,326 +7121,326 @@ public class Wagelistpartial   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wagelistpartial {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    calcCharts: ").append(toIndentedString(calcCharts)).append("\n");
-    sb.append("    isComputed: ").append(toIndentedString(isComputed)).append("\n");
-    sb.append("    wagePeriodID: ").append(toIndentedString(wagePeriodID)).append("\n");
-    sb.append("    workingRelationID: ").append(toIndentedString(workingRelationID)).append("\n");
-    sb.append("    employeeID: ").append(toIndentedString(employeeID)).append("\n");
-    sb.append("    wageOperations: ").append(toIndentedString(wageOperations)).append("\n");
-    sb.append("    additionalCharges: ").append(toIndentedString(additionalCharges)).append("\n");
-    sb.append("    wageCompensations: ").append(toIndentedString(wageCompensations)).append("\n");
-    sb.append("    totalAbsence: ").append(toIndentedString(totalAbsence)).append("\n");
-    sb.append("    monthFund: ").append(toIndentedString(monthFund)).append("\n");
-    sb.append("    workingFund: ").append(toIndentedString(workingFund)).append("\n");
-    sb.append("    wageForUnit: ").append(toIndentedString(wageForUnit)).append("\n");
-    sb.append("    totalWorkTime: ").append(toIndentedString(totalWorkTime)).append("\n");
-    sb.append("    averageWage: ").append(toIndentedString(averageWage)).append("\n");
-    sb.append("    holidayTotal: ").append(toIndentedString(holidayTotal)).append("\n");
-    sb.append("    holidayDrawDays: ").append(toIndentedString(holidayDrawDays)).append("\n");
-    sb.append("    paidHoliday: ").append(toIndentedString(paidHoliday)).append("\n");
-    sb.append("    holidayTypeID: ").append(toIndentedString(holidayTypeID)).append("\n");
-    sb.append("    grossWageTotal: ").append(toIndentedString(grossWageTotal)).append("\n");
-    sb.append("    sickBenefitNumerator: ").append(toIndentedString(sickBenefitNumerator)).append("\n");
-    sb.append("    sickBenefitDenominator: ").append(toIndentedString(sickBenefitDenominator)).append("\n");
-    sb.append("    holidayNumerator: ").append(toIndentedString(holidayNumerator)).append("\n");
-    sb.append("    oldSixMonthsReward: ").append(toIndentedString(oldSixMonthsReward)).append("\n");
-    sb.append("    oldTwelveMonthsReward: ").append(toIndentedString(oldTwelveMonthsReward)).append("\n");
-    sb.append("    oldRewardLongTermTotal: ").append(toIndentedString(oldRewardLongTermTotal)).append("\n");
-    sb.append("    oldRewardPeriodLength: ").append(toIndentedString(oldRewardPeriodLength)).append("\n");
-    sb.append("    xMLImported: ").append(toIndentedString(xMLImported)).append("\n");
-    sb.append("    afterWorkingRelation: ").append(toIndentedString(afterWorkingRelation)).append("\n");
-    sb.append("    commonIsComputed: ").append(toIndentedString(commonIsComputed)).append("\n");
-    sb.append("    commonDisplayName: ").append(toIndentedString(commonDisplayName)).append("\n");
-    sb.append("    wageListFrom: ").append(toIndentedString(wageListFrom)).append("\n");
-    sb.append("    wageListTo: ").append(toIndentedString(wageListTo)).append("\n");
-    sb.append("    wageListRealFrom: ").append(toIndentedString(wageListRealFrom)).append("\n");
-    sb.append("    calendarDuty: ").append(toIndentedString(calendarDuty)).append("\n");
-    sb.append("    persLastName: ").append(toIndentedString(persLastName)).append("\n");
-    sb.append("    persPersonalNumber: ").append(toIndentedString(persPersonalNumber)).append("\n");
-    sb.append("    persNumPersonalNumber: ").append(toIndentedString(persNumPersonalNumber)).append("\n");
-    sb.append("    mainWorkingRelation: ").append(toIndentedString(mainWorkingRelation)).append("\n");
-    sb.append("    wageListCommonID: ").append(toIndentedString(wageListCommonID)).append("\n");
-    sb.append("    wLSickTo: ").append(toIndentedString(wLSickTo)).append("\n");
-    sb.append("    calcAvgNetWage: ").append(toIndentedString(calcAvgNetWage)).append("\n");
-    sb.append("    holidayDrawHours: ").append(toIndentedString(holidayDrawHours)).append("\n");
-    sb.append("    paidHolidayHours: ").append(toIndentedString(paidHolidayHours)).append("\n");
-    sb.append("    calculationOrder: ").append(toIndentedString(calculationOrder)).append("\n");
-    sb.append("    sWorkDays: ").append(toIndentedString(sWorkDays)).append("\n");
-    sb.append("    sWorkDaysTotal: ").append(toIndentedString(sWorkDaysTotal)).append("\n");
-    sb.append("    sWorkHours: ").append(toIndentedString(sWorkHours)).append("\n");
-    sb.append("    sWorkHoursTotal: ").append(toIndentedString(sWorkHoursTotal)).append("\n");
-    sb.append("    sMixedHours: ").append(toIndentedString(sMixedHours)).append("\n");
-    sb.append("    sMixedHoursTotal: ").append(toIndentedString(sMixedHoursTotal)).append("\n");
-    sb.append("    sOperHoursTotal: ").append(toIndentedString(sOperHoursTotal)).append("\n");
-    sb.append("    sOperWageTotal: ").append(toIndentedString(sOperWageTotal)).append("\n");
-    sb.append("    sTaskWage: ").append(toIndentedString(sTaskWage)).append("\n");
-    sb.append("    sTaskWageTotal: ").append(toIndentedString(sTaskWageTotal)).append("\n");
-    sb.append("    sTimeWage: ").append(toIndentedString(sTimeWage)).append("\n");
-    sb.append("    sTimeWageTotal: ").append(toIndentedString(sTimeWageTotal)).append("\n");
-    sb.append("    sFeastHours: ").append(toIndentedString(sFeastHours)).append("\n");
-    sb.append("    sFeastHoursTotal: ").append(toIndentedString(sFeastHoursTotal)).append("\n");
-    sb.append("    sFeastCharge: ").append(toIndentedString(sFeastCharge)).append("\n");
-    sb.append("    sFeastChargeTotal: ").append(toIndentedString(sFeastChargeTotal)).append("\n");
-    sb.append("    sNightHours: ").append(toIndentedString(sNightHours)).append("\n");
-    sb.append("    sNightHoursTotal: ").append(toIndentedString(sNightHoursTotal)).append("\n");
-    sb.append("    sNightCharge: ").append(toIndentedString(sNightCharge)).append("\n");
-    sb.append("    sNightChargeTotal: ").append(toIndentedString(sNightChargeTotal)).append("\n");
-    sb.append("    sEnvHours: ").append(toIndentedString(sEnvHours)).append("\n");
-    sb.append("    sEnvHoursTotal: ").append(toIndentedString(sEnvHoursTotal)).append("\n");
-    sb.append("    sEnvCharge: ").append(toIndentedString(sEnvCharge)).append("\n");
-    sb.append("    sEnvChargeTotal: ").append(toIndentedString(sEnvChargeTotal)).append("\n");
-    sb.append("    sOverTime: ").append(toIndentedString(sOverTime)).append("\n");
-    sb.append("    sOverTimeTotal: ").append(toIndentedString(sOverTimeTotal)).append("\n");
-    sb.append("    sOverTimeCharge: ").append(toIndentedString(sOverTimeCharge)).append("\n");
-    sb.append("    sOverTimeChargeTotal: ").append(toIndentedString(sOverTimeChargeTotal)).append("\n");
-    sb.append("    sOtherCharges: ").append(toIndentedString(sOtherCharges)).append("\n");
-    sb.append("    sPersonalCharge: ").append(toIndentedString(sPersonalCharge)).append("\n");
-    sb.append("    sPersonalChargeTotal: ").append(toIndentedString(sPersonalChargeTotal)).append("\n");
-    sb.append("    sChiefCharge: ").append(toIndentedString(sChiefCharge)).append("\n");
-    sb.append("    sChiefChargeTotal: ").append(toIndentedString(sChiefChargeTotal)).append("\n");
-    sb.append("    sSubCharge: ").append(toIndentedString(sSubCharge)).append("\n");
-    sb.append("    sSubChargeTotal: ").append(toIndentedString(sSubChargeTotal)).append("\n");
-    sb.append("    sWEndHours: ").append(toIndentedString(sWEndHours)).append("\n");
-    sb.append("    sWEndHoursTotal: ").append(toIndentedString(sWEndHoursTotal)).append("\n");
-    sb.append("    sWEndCharge: ").append(toIndentedString(sWEndCharge)).append("\n");
-    sb.append("    sWEndChargeTotal: ").append(toIndentedString(sWEndChargeTotal)).append("\n");
-    sb.append("    sPaidFeast: ").append(toIndentedString(sPaidFeast)).append("\n");
-    sb.append("    sPaidFeastTotal: ").append(toIndentedString(sPaidFeastTotal)).append("\n");
-    sb.append("    sPaidFeastCompens: ").append(toIndentedString(sPaidFeastCompens)).append("\n");
-    sb.append("    sPaidFeastCompTotal: ").append(toIndentedString(sPaidFeastCompTotal)).append("\n");
-    sb.append("    sPaidFree: ").append(toIndentedString(sPaidFree)).append("\n");
-    sb.append("    sPaidFreeTotal: ").append(toIndentedString(sPaidFreeTotal)).append("\n");
-    sb.append("    sPaidFreeCompens: ").append(toIndentedString(sPaidFreeCompens)).append("\n");
-    sb.append("    sPaidFreeCompTotal: ").append(toIndentedString(sPaidFreeCompTotal)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    calccharts: ").append(toIndentedString(calccharts)).append("\n");
+    sb.append("    iscomputed: ").append(toIndentedString(iscomputed)).append("\n");
+    sb.append("    wageperiodId: ").append(toIndentedString(wageperiodId)).append("\n");
+    sb.append("    workingrelationId: ").append(toIndentedString(workingrelationId)).append("\n");
+    sb.append("    employeeId: ").append(toIndentedString(employeeId)).append("\n");
+    sb.append("    wageoperations: ").append(toIndentedString(wageoperations)).append("\n");
+    sb.append("    additionalcharges: ").append(toIndentedString(additionalcharges)).append("\n");
+    sb.append("    wagecompensations: ").append(toIndentedString(wagecompensations)).append("\n");
+    sb.append("    totalabsence: ").append(toIndentedString(totalabsence)).append("\n");
+    sb.append("    monthfund: ").append(toIndentedString(monthfund)).append("\n");
+    sb.append("    workingfund: ").append(toIndentedString(workingfund)).append("\n");
+    sb.append("    wageforunit: ").append(toIndentedString(wageforunit)).append("\n");
+    sb.append("    totalworktime: ").append(toIndentedString(totalworktime)).append("\n");
+    sb.append("    averagewage: ").append(toIndentedString(averagewage)).append("\n");
+    sb.append("    holidaytotal: ").append(toIndentedString(holidaytotal)).append("\n");
+    sb.append("    holidaydrawdays: ").append(toIndentedString(holidaydrawdays)).append("\n");
+    sb.append("    paidholiday: ").append(toIndentedString(paidholiday)).append("\n");
+    sb.append("    holidaytypeId: ").append(toIndentedString(holidaytypeId)).append("\n");
+    sb.append("    grosswagetotal: ").append(toIndentedString(grosswagetotal)).append("\n");
+    sb.append("    sickbenefitnumerator: ").append(toIndentedString(sickbenefitnumerator)).append("\n");
+    sb.append("    sickbenefitdenominator: ").append(toIndentedString(sickbenefitdenominator)).append("\n");
+    sb.append("    holidaynumerator: ").append(toIndentedString(holidaynumerator)).append("\n");
+    sb.append("    oldsixmonthsreward: ").append(toIndentedString(oldsixmonthsreward)).append("\n");
+    sb.append("    oldtwelvemonthsreward: ").append(toIndentedString(oldtwelvemonthsreward)).append("\n");
+    sb.append("    oldrewardlongtermtotal: ").append(toIndentedString(oldrewardlongtermtotal)).append("\n");
+    sb.append("    oldrewardperiodlength: ").append(toIndentedString(oldrewardperiodlength)).append("\n");
+    sb.append("    xmlimported: ").append(toIndentedString(xmlimported)).append("\n");
+    sb.append("    afterworkingrelation: ").append(toIndentedString(afterworkingrelation)).append("\n");
+    sb.append("    commoniscomputed: ").append(toIndentedString(commoniscomputed)).append("\n");
+    sb.append("    commondisplayname: ").append(toIndentedString(commondisplayname)).append("\n");
+    sb.append("    wagelistfrom: ").append(toIndentedString(wagelistfrom)).append("\n");
+    sb.append("    wagelistto: ").append(toIndentedString(wagelistto)).append("\n");
+    sb.append("    wagelistrealfrom: ").append(toIndentedString(wagelistrealfrom)).append("\n");
+    sb.append("    calendarduty: ").append(toIndentedString(calendarduty)).append("\n");
+    sb.append("    persLastname: ").append(toIndentedString(persLastname)).append("\n");
+    sb.append("    persPersonalnumber: ").append(toIndentedString(persPersonalnumber)).append("\n");
+    sb.append("    persNumpersonalnumber: ").append(toIndentedString(persNumpersonalnumber)).append("\n");
+    sb.append("    mainworkingrelation: ").append(toIndentedString(mainworkingrelation)).append("\n");
+    sb.append("    wagelistcommonId: ").append(toIndentedString(wagelistcommonId)).append("\n");
+    sb.append("    wlsickto: ").append(toIndentedString(wlsickto)).append("\n");
+    sb.append("    calcavgnetwage: ").append(toIndentedString(calcavgnetwage)).append("\n");
+    sb.append("    holidaydrawhours: ").append(toIndentedString(holidaydrawhours)).append("\n");
+    sb.append("    paidholidayhours: ").append(toIndentedString(paidholidayhours)).append("\n");
+    sb.append("    calculationorder: ").append(toIndentedString(calculationorder)).append("\n");
+    sb.append("    sWorkdays: ").append(toIndentedString(sWorkdays)).append("\n");
+    sb.append("    sWorkdaystotal: ").append(toIndentedString(sWorkdaystotal)).append("\n");
+    sb.append("    sWorkhours: ").append(toIndentedString(sWorkhours)).append("\n");
+    sb.append("    sWorkhourstotal: ").append(toIndentedString(sWorkhourstotal)).append("\n");
+    sb.append("    sMixedhours: ").append(toIndentedString(sMixedhours)).append("\n");
+    sb.append("    sMixedhourstotal: ").append(toIndentedString(sMixedhourstotal)).append("\n");
+    sb.append("    sOperhourstotal: ").append(toIndentedString(sOperhourstotal)).append("\n");
+    sb.append("    sOperwagetotal: ").append(toIndentedString(sOperwagetotal)).append("\n");
+    sb.append("    sTaskwage: ").append(toIndentedString(sTaskwage)).append("\n");
+    sb.append("    sTaskwagetotal: ").append(toIndentedString(sTaskwagetotal)).append("\n");
+    sb.append("    sTimewage: ").append(toIndentedString(sTimewage)).append("\n");
+    sb.append("    sTimewagetotal: ").append(toIndentedString(sTimewagetotal)).append("\n");
+    sb.append("    sFeasthours: ").append(toIndentedString(sFeasthours)).append("\n");
+    sb.append("    sFeasthourstotal: ").append(toIndentedString(sFeasthourstotal)).append("\n");
+    sb.append("    sFeastcharge: ").append(toIndentedString(sFeastcharge)).append("\n");
+    sb.append("    sFeastchargetotal: ").append(toIndentedString(sFeastchargetotal)).append("\n");
+    sb.append("    sNighthours: ").append(toIndentedString(sNighthours)).append("\n");
+    sb.append("    sNighthourstotal: ").append(toIndentedString(sNighthourstotal)).append("\n");
+    sb.append("    sNightcharge: ").append(toIndentedString(sNightcharge)).append("\n");
+    sb.append("    sNightchargetotal: ").append(toIndentedString(sNightchargetotal)).append("\n");
+    sb.append("    sEnvhours: ").append(toIndentedString(sEnvhours)).append("\n");
+    sb.append("    sEnvhourstotal: ").append(toIndentedString(sEnvhourstotal)).append("\n");
+    sb.append("    sEnvcharge: ").append(toIndentedString(sEnvcharge)).append("\n");
+    sb.append("    sEnvchargetotal: ").append(toIndentedString(sEnvchargetotal)).append("\n");
+    sb.append("    sOvertime: ").append(toIndentedString(sOvertime)).append("\n");
+    sb.append("    sOvertimetotal: ").append(toIndentedString(sOvertimetotal)).append("\n");
+    sb.append("    sOvertimecharge: ").append(toIndentedString(sOvertimecharge)).append("\n");
+    sb.append("    sOvertimechargetotal: ").append(toIndentedString(sOvertimechargetotal)).append("\n");
+    sb.append("    sOthercharges: ").append(toIndentedString(sOthercharges)).append("\n");
+    sb.append("    sPersonalcharge: ").append(toIndentedString(sPersonalcharge)).append("\n");
+    sb.append("    sPersonalchargetotal: ").append(toIndentedString(sPersonalchargetotal)).append("\n");
+    sb.append("    sChiefcharge: ").append(toIndentedString(sChiefcharge)).append("\n");
+    sb.append("    sChiefchargetotal: ").append(toIndentedString(sChiefchargetotal)).append("\n");
+    sb.append("    sSubcharge: ").append(toIndentedString(sSubcharge)).append("\n");
+    sb.append("    sSubchargetotal: ").append(toIndentedString(sSubchargetotal)).append("\n");
+    sb.append("    sWendhours: ").append(toIndentedString(sWendhours)).append("\n");
+    sb.append("    sWendhourstotal: ").append(toIndentedString(sWendhourstotal)).append("\n");
+    sb.append("    sWendcharge: ").append(toIndentedString(sWendcharge)).append("\n");
+    sb.append("    sWendchargetotal: ").append(toIndentedString(sWendchargetotal)).append("\n");
+    sb.append("    sPaidfeast: ").append(toIndentedString(sPaidfeast)).append("\n");
+    sb.append("    sPaidfeasttotal: ").append(toIndentedString(sPaidfeasttotal)).append("\n");
+    sb.append("    sPaidfeastcompens: ").append(toIndentedString(sPaidfeastcompens)).append("\n");
+    sb.append("    sPaidfeastcomptotal: ").append(toIndentedString(sPaidfeastcomptotal)).append("\n");
+    sb.append("    sPaidfree: ").append(toIndentedString(sPaidfree)).append("\n");
+    sb.append("    sPaidfreetotal: ").append(toIndentedString(sPaidfreetotal)).append("\n");
+    sb.append("    sPaidfreecompens: ").append(toIndentedString(sPaidfreecompens)).append("\n");
+    sb.append("    sPaidfreecomptotal: ").append(toIndentedString(sPaidfreecomptotal)).append("\n");
     sb.append("    sHoliday: ").append(toIndentedString(sHoliday)).append("\n");
-    sb.append("    sHolidayCompens: ").append(toIndentedString(sHolidayCompens)).append("\n");
-    sb.append("    sHolidayCompTotal: ").append(toIndentedString(sHolidayCompTotal)).append("\n");
-    sb.append("    sPaidHolidayCompens: ").append(toIndentedString(sPaidHolidayCompens)).append("\n");
-    sb.append("    sPaidHolidayCompTotal: ").append(toIndentedString(sPaidHolidayCompTotal)).append("\n");
+    sb.append("    sHolidaycompens: ").append(toIndentedString(sHolidaycompens)).append("\n");
+    sb.append("    sHolidaycomptotal: ").append(toIndentedString(sHolidaycomptotal)).append("\n");
+    sb.append("    sPaidholidaycompens: ").append(toIndentedString(sPaidholidaycompens)).append("\n");
+    sb.append("    sPaidholidaycomptotal: ").append(toIndentedString(sPaidholidaycomptotal)).append("\n");
     sb.append("    sReadiness: ").append(toIndentedString(sReadiness)).append("\n");
-    sb.append("    sReadinessTotal: ").append(toIndentedString(sReadinessTotal)).append("\n");
-    sb.append("    sReadinessCompens: ").append(toIndentedString(sReadinessCompens)).append("\n");
-    sb.append("    sReadinessCompTotal: ").append(toIndentedString(sReadinessCompTotal)).append("\n");
-    sb.append("    sArmyExercise: ").append(toIndentedString(sArmyExercise)).append("\n");
-    sb.append("    sArmyExerciseTotal: ").append(toIndentedString(sArmyExerciseTotal)).append("\n");
-    sb.append("    sArmyDuty: ").append(toIndentedString(sArmyDuty)).append("\n");
-    sb.append("    sArmyPerCent: ").append(toIndentedString(sArmyPerCent)).append("\n");
-    sb.append("    sArmyCompensation: ").append(toIndentedString(sArmyCompensation)).append("\n");
-    sb.append("    sArmyCompTotal: ").append(toIndentedString(sArmyCompTotal)).append("\n");
-    sb.append("    sLostWageCompens: ").append(toIndentedString(sLostWageCompens)).append("\n");
-    sb.append("    sOtherCompensations: ").append(toIndentedString(sOtherCompensations)).append("\n");
-    sb.append("    sNaturalWage: ").append(toIndentedString(sNaturalWage)).append("\n");
-    sb.append("    sNaturalWageTotal: ").append(toIndentedString(sNaturalWageTotal)).append("\n");
-    sb.append("    sApprenticeFee: ").append(toIndentedString(sApprenticeFee)).append("\n");
-    sb.append("    sApprenticeFeeTotal: ").append(toIndentedString(sApprenticeFeeTotal)).append("\n");
-    sb.append("    sExecutiveFee: ").append(toIndentedString(sExecutiveFee)).append("\n");
-    sb.append("    sExecutiveFeeTotal: ").append(toIndentedString(sExecutiveFeeTotal)).append("\n");
-    sb.append("    sCorporateFee: ").append(toIndentedString(sCorporateFee)).append("\n");
-    sb.append("    sCorporateFeeTotal: ").append(toIndentedString(sCorporateFeeTotal)).append("\n");
-    sb.append("    sExitClaim: ").append(toIndentedString(sExitClaim)).append("\n");
-    sb.append("    sExitMultiple: ").append(toIndentedString(sExitMultiple)).append("\n");
-    sb.append("    sExitDemand: ").append(toIndentedString(sExitDemand)).append("\n");
-    sb.append("    sExitCompensation: ").append(toIndentedString(sExitCompensation)).append("\n");
-    sb.append("    sExitCompTotal: ").append(toIndentedString(sExitCompTotal)).append("\n");
-    sb.append("    sExitInsuranceBase: ").append(toIndentedString(sExitInsuranceBase)).append("\n");
-    sb.append("    sExitFee: ").append(toIndentedString(sExitFee)).append("\n");
+    sb.append("    sReadinesstotal: ").append(toIndentedString(sReadinesstotal)).append("\n");
+    sb.append("    sReadinesscompens: ").append(toIndentedString(sReadinesscompens)).append("\n");
+    sb.append("    sReadinesscomptotal: ").append(toIndentedString(sReadinesscomptotal)).append("\n");
+    sb.append("    sArmyexercise: ").append(toIndentedString(sArmyexercise)).append("\n");
+    sb.append("    sArmyexercisetotal: ").append(toIndentedString(sArmyexercisetotal)).append("\n");
+    sb.append("    sArmyduty: ").append(toIndentedString(sArmyduty)).append("\n");
+    sb.append("    sArmypercent: ").append(toIndentedString(sArmypercent)).append("\n");
+    sb.append("    sArmycompensation: ").append(toIndentedString(sArmycompensation)).append("\n");
+    sb.append("    sArmycomptotal: ").append(toIndentedString(sArmycomptotal)).append("\n");
+    sb.append("    sLostwagecompens: ").append(toIndentedString(sLostwagecompens)).append("\n");
+    sb.append("    sOthercompensations: ").append(toIndentedString(sOthercompensations)).append("\n");
+    sb.append("    sNaturalwage: ").append(toIndentedString(sNaturalwage)).append("\n");
+    sb.append("    sNaturalwagetotal: ").append(toIndentedString(sNaturalwagetotal)).append("\n");
+    sb.append("    sApprenticefee: ").append(toIndentedString(sApprenticefee)).append("\n");
+    sb.append("    sApprenticefeetotal: ").append(toIndentedString(sApprenticefeetotal)).append("\n");
+    sb.append("    sExecutivefee: ").append(toIndentedString(sExecutivefee)).append("\n");
+    sb.append("    sExecutivefeetotal: ").append(toIndentedString(sExecutivefeetotal)).append("\n");
+    sb.append("    sCorporatefee: ").append(toIndentedString(sCorporatefee)).append("\n");
+    sb.append("    sCorporatefeetotal: ").append(toIndentedString(sCorporatefeetotal)).append("\n");
+    sb.append("    sExitclaim: ").append(toIndentedString(sExitclaim)).append("\n");
+    sb.append("    sExitmultiple: ").append(toIndentedString(sExitmultiple)).append("\n");
+    sb.append("    sExitdemand: ").append(toIndentedString(sExitdemand)).append("\n");
+    sb.append("    sExitcompensation: ").append(toIndentedString(sExitcompensation)).append("\n");
+    sb.append("    sExitcomptotal: ").append(toIndentedString(sExitcomptotal)).append("\n");
+    sb.append("    sExitinsurancebase: ").append(toIndentedString(sExitinsurancebase)).append("\n");
+    sb.append("    sExitfee: ").append(toIndentedString(sExitfee)).append("\n");
     sb.append("    sBonus: ").append(toIndentedString(sBonus)).append("\n");
-    sb.append("    sBonusTotal: ").append(toIndentedString(sBonusTotal)).append("\n");
+    sb.append("    sBonustotal: ").append(toIndentedString(sBonustotal)).append("\n");
     sb.append("    sReward: ").append(toIndentedString(sReward)).append("\n");
-    sb.append("    sRewardTotal: ").append(toIndentedString(sRewardTotal)).append("\n");
-    sb.append("    sRewardLongTerm: ").append(toIndentedString(sRewardLongTerm)).append("\n");
-    sb.append("    sRewardLongTermTotal: ").append(toIndentedString(sRewardLongTermTotal)).append("\n");
-    sb.append("    sRewardPeriodLength: ").append(toIndentedString(sRewardPeriodLength)).append("\n");
+    sb.append("    sRewardtotal: ").append(toIndentedString(sRewardtotal)).append("\n");
+    sb.append("    sRewardlongterm: ").append(toIndentedString(sRewardlongterm)).append("\n");
+    sb.append("    sRewardlongtermtotal: ").append(toIndentedString(sRewardlongtermtotal)).append("\n");
+    sb.append("    sRewardperiodlength: ").append(toIndentedString(sRewardperiodlength)).append("\n");
     sb.append("    sThirteen: ").append(toIndentedString(sThirteen)).append("\n");
-    sb.append("    sThirteenTotal: ").append(toIndentedString(sThirteenTotal)).append("\n");
+    sb.append("    sThirteentotal: ").append(toIndentedString(sThirteentotal)).append("\n");
     sb.append("    sFourteen: ").append(toIndentedString(sFourteen)).append("\n");
-    sb.append("    sFourteenTotal: ").append(toIndentedString(sFourteenTotal)).append("\n");
-    sb.append("    sUnpaidFreeCal: ").append(toIndentedString(sUnpaidFreeCal)).append("\n");
-    sb.append("    sUnpaidFreeCalTotal: ").append(toIndentedString(sUnpaidFreeCalTotal)).append("\n");
-    sb.append("    sUnpaidFreeWork: ").append(toIndentedString(sUnpaidFreeWork)).append("\n");
-    sb.append("    sUnpaidFreeWorkTotal: ").append(toIndentedString(sUnpaidFreeWorkTotal)).append("\n");
-    sb.append("    sAbsenceCal: ").append(toIndentedString(sAbsenceCal)).append("\n");
-    sb.append("    sAbsenceCalTotal: ").append(toIndentedString(sAbsenceCalTotal)).append("\n");
-    sb.append("    sAbsenceWork: ").append(toIndentedString(sAbsenceWork)).append("\n");
-    sb.append("    sAbsenceWorkTotal: ").append(toIndentedString(sAbsenceWorkTotal)).append("\n");
-    sb.append("    sGrossWage: ").append(toIndentedString(sGrossWage)).append("\n");
-    sb.append("    sBaseWage: ").append(toIndentedString(sBaseWage)).append("\n");
-    sb.append("    sChargesAndCompens: ").append(toIndentedString(sChargesAndCompens)).append("\n");
-    sb.append("    sOtherPersExp: ").append(toIndentedString(sOtherPersExp)).append("\n");
-    sb.append("    sMinWageCoef: ").append(toIndentedString(sMinWageCoef)).append("\n");
-    sb.append("    sMinWage: ").append(toIndentedString(sMinWage)).append("\n");
-    sb.append("    sMinWageCorrect: ").append(toIndentedString(sMinWageCorrect)).append("\n");
-    sb.append("    sSurCharge: ").append(toIndentedString(sSurCharge)).append("\n");
-    sb.append("    sSurChargeTotal: ").append(toIndentedString(sSurChargeTotal)).append("\n");
-    sb.append("    sWorkHoursOper: ").append(toIndentedString(sWorkHoursOper)).append("\n");
-    sb.append("    sWorkDaysOper: ").append(toIndentedString(sWorkDaysOper)).append("\n");
-    sb.append("    sTaskWageOper: ").append(toIndentedString(sTaskWageOper)).append("\n");
-    sb.append("    sOperDaysTotal: ").append(toIndentedString(sOperDaysTotal)).append("\n");
-    sb.append("    sFeastHoursOper: ").append(toIndentedString(sFeastHoursOper)).append("\n");
-    sb.append("    sNightHoursOper: ").append(toIndentedString(sNightHoursOper)).append("\n");
-    sb.append("    sEnvHoursOper: ").append(toIndentedString(sEnvHoursOper)).append("\n");
-    sb.append("    sBonusOper: ").append(toIndentedString(sBonusOper)).append("\n");
-    sb.append("    sRewardOper: ").append(toIndentedString(sRewardOper)).append("\n");
-    sb.append("    sRewardLongTermOper: ").append(toIndentedString(sRewardLongTermOper)).append("\n");
-    sb.append("    sThirteenOper: ").append(toIndentedString(sThirteenOper)).append("\n");
-    sb.append("    sFourteenOper: ").append(toIndentedString(sFourteenOper)).append("\n");
-    sb.append("    sPersonalChargeOper: ").append(toIndentedString(sPersonalChargeOper)).append("\n");
-    sb.append("    sChiefChargeOper: ").append(toIndentedString(sChiefChargeOper)).append("\n");
-    sb.append("    sSubChargeOper: ").append(toIndentedString(sSubChargeOper)).append("\n");
-    sb.append("    sWEndHoursOper: ").append(toIndentedString(sWEndHoursOper)).append("\n");
-    sb.append("    sPaidFeastOper: ").append(toIndentedString(sPaidFeastOper)).append("\n");
-    sb.append("    sPaidFreeOper: ").append(toIndentedString(sPaidFreeOper)).append("\n");
-    sb.append("    sHolidayOper: ").append(toIndentedString(sHolidayOper)).append("\n");
-    sb.append("    sReadinessOper: ").append(toIndentedString(sReadinessOper)).append("\n");
-    sb.append("    sExitCompOper: ").append(toIndentedString(sExitCompOper)).append("\n");
-    sb.append("    sUnpaidFreeCalOper: ").append(toIndentedString(sUnpaidFreeCalOper)).append("\n");
-    sb.append("    sUnpaidFreeWorkOper: ").append(toIndentedString(sUnpaidFreeWorkOper)).append("\n");
-    sb.append("    sAbsenceCalOper: ").append(toIndentedString(sAbsenceCalOper)).append("\n");
-    sb.append("    sAbsenceWorkOper: ").append(toIndentedString(sAbsenceWorkOper)).append("\n");
-    sb.append("    sApprenticeFeeOper: ").append(toIndentedString(sApprenticeFeeOper)).append("\n");
-    sb.append("    sExecutiveFeeOper: ").append(toIndentedString(sExecutiveFeeOper)).append("\n");
-    sb.append("    sCorporateFeeOper: ").append(toIndentedString(sCorporateFeeOper)).append("\n");
-    sb.append("    sSickAbsences: ").append(toIndentedString(sSickAbsences)).append("\n");
-    sb.append("    sSickBenefits: ").append(toIndentedString(sSickBenefits)).append("\n");
-    sb.append("    sHealthInsBase: ").append(toIndentedString(sHealthInsBase)).append("\n");
-    sb.append("    sHealthInsBaseTotal: ").append(toIndentedString(sHealthInsBaseTotal)).append("\n");
-    sb.append("    sHealthInsBaseCorrect: ").append(toIndentedString(sHealthInsBaseCorrect)).append("\n");
-    sb.append("    sHealthIns: ").append(toIndentedString(sHealthIns)).append("\n");
-    sb.append("    sHealthInsEmployee: ").append(toIndentedString(sHealthInsEmployee)).append("\n");
-    sb.append("    sHealthInsCompany: ").append(toIndentedString(sHealthInsCompany)).append("\n");
-    sb.append("    sSocialInsBase: ").append(toIndentedString(sSocialInsBase)).append("\n");
-    sb.append("    sSocialInsBaseTotal: ").append(toIndentedString(sSocialInsBaseTotal)).append("\n");
-    sb.append("    sSocialInsBaseCorrect: ").append(toIndentedString(sSocialInsBaseCorrect)).append("\n");
-    sb.append("    sSocialIns: ").append(toIndentedString(sSocialIns)).append("\n");
-    sb.append("    sSocialInsEmployee: ").append(toIndentedString(sSocialInsEmployee)).append("\n");
-    sb.append("    sOtherCompInsBase: ").append(toIndentedString(sOtherCompInsBase)).append("\n");
-    sb.append("    sHealthInsUnpaidFreeDock: ").append(toIndentedString(sHealthInsUnpaidFreeDock)).append("\n");
+    sb.append("    sFourteentotal: ").append(toIndentedString(sFourteentotal)).append("\n");
+    sb.append("    sUnpaidfreecal: ").append(toIndentedString(sUnpaidfreecal)).append("\n");
+    sb.append("    sUnpaidfreecaltotal: ").append(toIndentedString(sUnpaidfreecaltotal)).append("\n");
+    sb.append("    sUnpaidfreework: ").append(toIndentedString(sUnpaidfreework)).append("\n");
+    sb.append("    sUnpaidfreeworktotal: ").append(toIndentedString(sUnpaidfreeworktotal)).append("\n");
+    sb.append("    sAbsencecal: ").append(toIndentedString(sAbsencecal)).append("\n");
+    sb.append("    sAbsencecaltotal: ").append(toIndentedString(sAbsencecaltotal)).append("\n");
+    sb.append("    sAbsencework: ").append(toIndentedString(sAbsencework)).append("\n");
+    sb.append("    sAbsenceworktotal: ").append(toIndentedString(sAbsenceworktotal)).append("\n");
+    sb.append("    sGrosswage: ").append(toIndentedString(sGrosswage)).append("\n");
+    sb.append("    sBasewage: ").append(toIndentedString(sBasewage)).append("\n");
+    sb.append("    sChargesandcompens: ").append(toIndentedString(sChargesandcompens)).append("\n");
+    sb.append("    sOtherpersexp: ").append(toIndentedString(sOtherpersexp)).append("\n");
+    sb.append("    sMinwagecoef: ").append(toIndentedString(sMinwagecoef)).append("\n");
+    sb.append("    sMinwage: ").append(toIndentedString(sMinwage)).append("\n");
+    sb.append("    sMinwagecorrect: ").append(toIndentedString(sMinwagecorrect)).append("\n");
+    sb.append("    sSurcharge: ").append(toIndentedString(sSurcharge)).append("\n");
+    sb.append("    sSurchargetotal: ").append(toIndentedString(sSurchargetotal)).append("\n");
+    sb.append("    sWorkhoursoper: ").append(toIndentedString(sWorkhoursoper)).append("\n");
+    sb.append("    sWorkdaysoper: ").append(toIndentedString(sWorkdaysoper)).append("\n");
+    sb.append("    sTaskwageoper: ").append(toIndentedString(sTaskwageoper)).append("\n");
+    sb.append("    sOperdaystotal: ").append(toIndentedString(sOperdaystotal)).append("\n");
+    sb.append("    sFeasthoursoper: ").append(toIndentedString(sFeasthoursoper)).append("\n");
+    sb.append("    sNighthoursoper: ").append(toIndentedString(sNighthoursoper)).append("\n");
+    sb.append("    sEnvhoursoper: ").append(toIndentedString(sEnvhoursoper)).append("\n");
+    sb.append("    sBonusoper: ").append(toIndentedString(sBonusoper)).append("\n");
+    sb.append("    sRewardoper: ").append(toIndentedString(sRewardoper)).append("\n");
+    sb.append("    sRewardlongtermoper: ").append(toIndentedString(sRewardlongtermoper)).append("\n");
+    sb.append("    sThirteenoper: ").append(toIndentedString(sThirteenoper)).append("\n");
+    sb.append("    sFourteenoper: ").append(toIndentedString(sFourteenoper)).append("\n");
+    sb.append("    sPersonalchargeoper: ").append(toIndentedString(sPersonalchargeoper)).append("\n");
+    sb.append("    sChiefchargeoper: ").append(toIndentedString(sChiefchargeoper)).append("\n");
+    sb.append("    sSubchargeoper: ").append(toIndentedString(sSubchargeoper)).append("\n");
+    sb.append("    sWendhoursoper: ").append(toIndentedString(sWendhoursoper)).append("\n");
+    sb.append("    sPaidfeastoper: ").append(toIndentedString(sPaidfeastoper)).append("\n");
+    sb.append("    sPaidfreeoper: ").append(toIndentedString(sPaidfreeoper)).append("\n");
+    sb.append("    sHolidayoper: ").append(toIndentedString(sHolidayoper)).append("\n");
+    sb.append("    sReadinessoper: ").append(toIndentedString(sReadinessoper)).append("\n");
+    sb.append("    sExitcompoper: ").append(toIndentedString(sExitcompoper)).append("\n");
+    sb.append("    sUnpaidfreecaloper: ").append(toIndentedString(sUnpaidfreecaloper)).append("\n");
+    sb.append("    sUnpaidfreeworkoper: ").append(toIndentedString(sUnpaidfreeworkoper)).append("\n");
+    sb.append("    sAbsencecaloper: ").append(toIndentedString(sAbsencecaloper)).append("\n");
+    sb.append("    sAbsenceworkoper: ").append(toIndentedString(sAbsenceworkoper)).append("\n");
+    sb.append("    sApprenticefeeoper: ").append(toIndentedString(sApprenticefeeoper)).append("\n");
+    sb.append("    sExecutivefeeoper: ").append(toIndentedString(sExecutivefeeoper)).append("\n");
+    sb.append("    sCorporatefeeoper: ").append(toIndentedString(sCorporatefeeoper)).append("\n");
+    sb.append("    sSickabsences: ").append(toIndentedString(sSickabsences)).append("\n");
+    sb.append("    sSickbenefits: ").append(toIndentedString(sSickbenefits)).append("\n");
+    sb.append("    sHealthinsbase: ").append(toIndentedString(sHealthinsbase)).append("\n");
+    sb.append("    sHealthinsbasetotal: ").append(toIndentedString(sHealthinsbasetotal)).append("\n");
+    sb.append("    sHealthinsbasecorrect: ").append(toIndentedString(sHealthinsbasecorrect)).append("\n");
+    sb.append("    sHealthins: ").append(toIndentedString(sHealthins)).append("\n");
+    sb.append("    sHealthinsemployee: ").append(toIndentedString(sHealthinsemployee)).append("\n");
+    sb.append("    sHealthinscompany: ").append(toIndentedString(sHealthinscompany)).append("\n");
+    sb.append("    sSocialinsbase: ").append(toIndentedString(sSocialinsbase)).append("\n");
+    sb.append("    sSocialinsbasetotal: ").append(toIndentedString(sSocialinsbasetotal)).append("\n");
+    sb.append("    sSocialinsbasecorrect: ").append(toIndentedString(sSocialinsbasecorrect)).append("\n");
+    sb.append("    sSocialins: ").append(toIndentedString(sSocialins)).append("\n");
+    sb.append("    sSocialinsemployee: ").append(toIndentedString(sSocialinsemployee)).append("\n");
+    sb.append("    sOthercompinsbase: ").append(toIndentedString(sOthercompinsbase)).append("\n");
+    sb.append("    sHealthinsunpaidfreedock: ").append(toIndentedString(sHealthinsunpaidfreedock)).append("\n");
     sb.append("    sCategory2: ").append(toIndentedString(sCategory2)).append("\n");
-    sb.append("    sCategory2Oper: ").append(toIndentedString(sCategory2Oper)).append("\n");
-    sb.append("    sCategory2Total: ").append(toIndentedString(sCategory2Total)).append("\n");
+    sb.append("    sCategory2oper: ").append(toIndentedString(sCategory2oper)).append("\n");
+    sb.append("    sCategory2total: ").append(toIndentedString(sCategory2total)).append("\n");
     sb.append("    sCategory3: ").append(toIndentedString(sCategory3)).append("\n");
-    sb.append("    sCategory3Oper: ").append(toIndentedString(sCategory3Oper)).append("\n");
-    sb.append("    sCategory3Total: ").append(toIndentedString(sCategory3Total)).append("\n");
+    sb.append("    sCategory3oper: ").append(toIndentedString(sCategory3oper)).append("\n");
+    sb.append("    sCategory3total: ").append(toIndentedString(sCategory3total)).append("\n");
     sb.append("    sCategory4: ").append(toIndentedString(sCategory4)).append("\n");
-    sb.append("    sCategory4Oper: ").append(toIndentedString(sCategory4Oper)).append("\n");
-    sb.append("    sCategory4Total: ").append(toIndentedString(sCategory4Total)).append("\n");
-    sb.append("    sPOLWage: ").append(toIndentedString(sPOLWage)).append("\n");
-    sb.append("    sTaxableIncome: ").append(toIndentedString(sTaxableIncome)).append("\n");
-    sb.append("    sTravelComp: ").append(toIndentedString(sTravelComp)).append("\n");
-    sb.append("    sTravelCompOper: ").append(toIndentedString(sTravelCompOper)).append("\n");
-    sb.append("    sTravelCompTotal: ").append(toIndentedString(sTravelCompTotal)).append("\n");
-    sb.append("    sMealTicketDemand: ").append(toIndentedString(sMealTicketDemand)).append("\n");
-    sb.append("    sMealTicketDemandTotal: ").append(toIndentedString(sMealTicketDemandTotal)).append("\n");
-    sb.append("    sMealTicketCount: ").append(toIndentedString(sMealTicketCount)).append("\n");
-    sb.append("    sMealTicketFullCount: ").append(toIndentedString(sMealTicketFullCount)).append("\n");
-    sb.append("    sMealTicketDisCount: ").append(toIndentedString(sMealTicketDisCount)).append("\n");
-    sb.append("    sPOLDock: ").append(toIndentedString(sPOLDock)).append("\n");
-    sb.append("    sPOLDockOper: ").append(toIndentedString(sPOLDockOper)).append("\n");
-    sb.append("    sPOLDockTotal: ").append(toIndentedString(sPOLDockTotal)).append("\n");
+    sb.append("    sCategory4oper: ").append(toIndentedString(sCategory4oper)).append("\n");
+    sb.append("    sCategory4total: ").append(toIndentedString(sCategory4total)).append("\n");
+    sb.append("    sPolWage: ").append(toIndentedString(sPolWage)).append("\n");
+    sb.append("    sTaxableincome: ").append(toIndentedString(sTaxableincome)).append("\n");
+    sb.append("    sTravelcomp: ").append(toIndentedString(sTravelcomp)).append("\n");
+    sb.append("    sTravelcompoper: ").append(toIndentedString(sTravelcompoper)).append("\n");
+    sb.append("    sTravelcomptotal: ").append(toIndentedString(sTravelcomptotal)).append("\n");
+    sb.append("    sMealticketdemand: ").append(toIndentedString(sMealticketdemand)).append("\n");
+    sb.append("    sMealticketdemandtotal: ").append(toIndentedString(sMealticketdemandtotal)).append("\n");
+    sb.append("    sMealticketcount: ").append(toIndentedString(sMealticketcount)).append("\n");
+    sb.append("    sMealticketfullcount: ").append(toIndentedString(sMealticketfullcount)).append("\n");
+    sb.append("    sMealticketdiscount: ").append(toIndentedString(sMealticketdiscount)).append("\n");
+    sb.append("    sPolDock: ").append(toIndentedString(sPolDock)).append("\n");
+    sb.append("    sPolDockoper: ").append(toIndentedString(sPolDockoper)).append("\n");
+    sb.append("    sPolDocktotal: ").append(toIndentedString(sPolDocktotal)).append("\n");
     sb.append("    sExposure: ").append(toIndentedString(sExposure)).append("\n");
-    sb.append("    sExposureTotal: ").append(toIndentedString(sExposureTotal)).append("\n");
-    sb.append("    sExcludedDays: ").append(toIndentedString(sExcludedDays)).append("\n");
-    sb.append("    sExcludedDaysCorrect: ").append(toIndentedString(sExcludedDaysCorrect)).append("\n");
-    sb.append("    sExcludedDaysOutSide: ").append(toIndentedString(sExcludedDaysOutSide)).append("\n");
-    sb.append("    sExcusedAbsence: ").append(toIndentedString(sExcusedAbsence)).append("\n");
-    sb.append("    sOverTimeAbsence: ").append(toIndentedString(sOverTimeAbsence)).append("\n");
-    sb.append("    sAbsenceWorkHours: ").append(toIndentedString(sAbsenceWorkHours)).append("\n");
-    sb.append("    sFlatTravelComp: ").append(toIndentedString(sFlatTravelComp)).append("\n");
-    sb.append("    sWageDeposit: ").append(toIndentedString(sWageDeposit)).append("\n");
-    sb.append("    sSocialInsMinimum: ").append(toIndentedString(sSocialInsMinimum)).append("\n");
-    sb.append("    sIsSocialInsurance: ").append(toIndentedString(sIsSocialInsurance)).append("\n");
+    sb.append("    sExposuretotal: ").append(toIndentedString(sExposuretotal)).append("\n");
+    sb.append("    sExcludeddays: ").append(toIndentedString(sExcludeddays)).append("\n");
+    sb.append("    sExcludeddayscorrect: ").append(toIndentedString(sExcludeddayscorrect)).append("\n");
+    sb.append("    sExcludeddaysoutside: ").append(toIndentedString(sExcludeddaysoutside)).append("\n");
+    sb.append("    sExcusedabsence: ").append(toIndentedString(sExcusedabsence)).append("\n");
+    sb.append("    sOvertimeabsence: ").append(toIndentedString(sOvertimeabsence)).append("\n");
+    sb.append("    sAbsenceworkhours: ").append(toIndentedString(sAbsenceworkhours)).append("\n");
+    sb.append("    sFlattravelcomp: ").append(toIndentedString(sFlattravelcomp)).append("\n");
+    sb.append("    sWagedeposit: ").append(toIndentedString(sWagedeposit)).append("\n");
+    sb.append("    sSocialinsminimum: ").append(toIndentedString(sSocialinsminimum)).append("\n");
+    sb.append("    sIssocialinsurance: ").append(toIndentedString(sIssocialinsurance)).append("\n");
     sb.append("    sPhoneDock: ").append(toIndentedString(sPhoneDock)).append("\n");
-    sb.append("    sPhoneDockTotal: ").append(toIndentedString(sPhoneDockTotal)).append("\n");
-    sb.append("    sRewardSixMonth: ").append(toIndentedString(sRewardSixMonth)).append("\n");
-    sb.append("    sRewardSixMonthTotal: ").append(toIndentedString(sRewardSixMonthTotal)).append("\n");
-    sb.append("    sRewardTwelveMonth: ").append(toIndentedString(sRewardTwelveMonth)).append("\n");
-    sb.append("    sRewardTwelveMonthTotal: ").append(toIndentedString(sRewardTwelveMonthTotal)).append("\n");
-    sb.append("    sArmyExerciseCal: ").append(toIndentedString(sArmyExerciseCal)).append("\n");
-    sb.append("    sArmyExerciseCalTotal: ").append(toIndentedString(sArmyExerciseCalTotal)).append("\n");
-    sb.append("    sSubtractedDays: ").append(toIndentedString(sSubtractedDays)).append("\n");
-    sb.append("    sSubtractedDaysTotal: ").append(toIndentedString(sSubtractedDaysTotal)).append("\n");
-    sb.append("    sRewardSixMonthOper: ").append(toIndentedString(sRewardSixMonthOper)).append("\n");
-    sb.append("    sRewardTwelveMonthOper: ").append(toIndentedString(sRewardTwelveMonthOper)).append("\n");
-    sb.append("    sExcludedDaysCorrection: ").append(toIndentedString(sExcludedDaysCorrection)).append("\n");
-    sb.append("    sSmallOrBigCompany: ").append(toIndentedString(sSmallOrBigCompany)).append("\n");
-    sb.append("    sSickAbsencesOutOfRelation: ").append(toIndentedString(sSickAbsencesOutOfRelation)).append("\n");
-    sb.append("    sExcludedDaysAfterRetAge: ").append(toIndentedString(sExcludedDaysAfterRetAge)).append("\n");
-    sb.append("    sExcludedDaysAfterRetAgeCorr: ").append(toIndentedString(sExcludedDaysAfterRetAgeCorr)).append("\n");
-    sb.append("    sWorkingFundForOvertime: ").append(toIndentedString(sWorkingFundForOvertime)).append("\n");
-    sb.append("    sOverpaidHoliday: ").append(toIndentedString(sOverpaidHoliday)).append("\n");
-    sb.append("    sAverageCorrect: ").append(toIndentedString(sAverageCorrect)).append("\n");
-    sb.append("    sGrossWageForAvgNetWage: ").append(toIndentedString(sGrossWageForAvgNetWage)).append("\n");
-    sb.append("    sSocInsBaseLowRate: ").append(toIndentedString(sSocInsBaseLowRate)).append("\n");
-    sb.append("    sSickCompBoost: ").append(toIndentedString(sSickCompBoost)).append("\n");
-    sb.append("    sNormalDuty: ").append(toIndentedString(sNormalDuty)).append("\n");
-    sb.append("    sSurChargeGuaranteed: ").append(toIndentedString(sSurChargeGuaranteed)).append("\n");
-    sb.append("    sGuaranteedWage: ").append(toIndentedString(sGuaranteedWage)).append("\n");
-    sb.append("    sSurChargeGuaranteedTotal: ").append(toIndentedString(sSurChargeGuaranteedTotal)).append("\n");
-    sb.append("    sUnresolvedOvertimeTotal: ").append(toIndentedString(sUnresolvedOvertimeTotal)).append("\n");
-    sb.append("    sOvertimeSubstFree: ").append(toIndentedString(sOvertimeSubstFree)).append("\n");
-    sb.append("    sUnresolvedOvertime: ").append(toIndentedString(sUnresolvedOvertime)).append("\n");
-    sb.append("    sFeastMode: ").append(toIndentedString(sFeastMode)).append("\n");
-    sb.append("    sOvertimeSubstFreeTotal: ").append(toIndentedString(sOvertimeSubstFreeTotal)).append("\n");
-    sb.append("    sOldOvertimeHours: ").append(toIndentedString(sOldOvertimeHours)).append("\n");
-    sb.append("    sOldOvertimeHoursTotal: ").append(toIndentedString(sOldOvertimeHoursTotal)).append("\n");
-    sb.append("    sDisasterCompTime: ").append(toIndentedString(sDisasterCompTime)).append("\n");
-    sb.append("    sMalfunctionCompTime: ").append(toIndentedString(sMalfunctionCompTime)).append("\n");
-    sb.append("    sOtherObstructionCompTime: ").append(toIndentedString(sOtherObstructionCompTime)).append("\n");
-    sb.append("    sDisasterComp: ").append(toIndentedString(sDisasterComp)).append("\n");
-    sb.append("    sMalfunctionComp: ").append(toIndentedString(sMalfunctionComp)).append("\n");
-    sb.append("    sOtherObstructionComp: ").append(toIndentedString(sOtherObstructionComp)).append("\n");
-    sb.append("    sDisasterCompTotal: ").append(toIndentedString(sDisasterCompTotal)).append("\n");
-    sb.append("    sMalfuncCompTotal: ").append(toIndentedString(sMalfuncCompTotal)).append("\n");
-    sb.append("    sOtherObstCompTotal: ").append(toIndentedString(sOtherObstCompTotal)).append("\n");
-    sb.append("    sRewardJubilee: ").append(toIndentedString(sRewardJubilee)).append("\n");
-    sb.append("    sGuaranteedWageCorrect: ").append(toIndentedString(sGuaranteedWageCorrect)).append("\n");
-    sb.append("    sFeastHoursOutOfRelation: ").append(toIndentedString(sFeastHoursOutOfRelation)).append("\n");
-    sb.append("    sFeastHourInAbsenceAndSickness: ").append(toIndentedString(sFeastHourInAbsenceAndSickness)).append("\n");
-    sb.append("    sRewardJubileeAllBase: ").append(toIndentedString(sRewardJubileeAllBase)).append("\n");
-    sb.append("    sRewardJubileeNoneBase: ").append(toIndentedString(sRewardJubileeNoneBase)).append("\n");
-    sb.append("    sAvgShiftLength: ").append(toIndentedString(sAvgShiftLength)).append("\n");
-    sb.append("    sPaidFeastHoursOper: ").append(toIndentedString(sPaidFeastHoursOper)).append("\n");
-    sb.append("    sSurChargeGuarantInGrossWage: ").append(toIndentedString(sSurChargeGuarantInGrossWage)).append("\n");
-    sb.append("    sPaidFeastHours: ").append(toIndentedString(sPaidFeastHours)).append("\n");
-    sb.append("    sRenumerationForm: ").append(toIndentedString(sRenumerationForm)).append("\n");
-    sb.append("    sHolidayHours: ").append(toIndentedString(sHolidayHours)).append("\n");
-    sb.append("    sExitInsBaseCorrection: ").append(toIndentedString(sExitInsBaseCorrection)).append("\n");
-    sb.append("    sIsHealthInsurance: ").append(toIndentedString(sIsHealthInsurance)).append("\n");
-    sb.append("    sInventionReward: ").append(toIndentedString(sInventionReward)).append("\n");
-    sb.append("    sPercentOfAvgCompTotal: ").append(toIndentedString(sPercentOfAvgCompTotal)).append("\n");
-    sb.append("    sPercentOfAvgComp: ").append(toIndentedString(sPercentOfAvgComp)).append("\n");
-    sb.append("    sAvgCompPercent: ").append(toIndentedString(sAvgCompPercent)).append("\n");
-    sb.append("    sPercentOfAvgCompTime: ").append(toIndentedString(sPercentOfAvgCompTime)).append("\n");
-    sb.append("    sHolidayDrawCheck1: ").append(toIndentedString(sHolidayDrawCheck1)).append("\n");
-    sb.append("    sHolidayDrawCheck2: ").append(toIndentedString(sHolidayDrawCheck2)).append("\n");
-    sb.append("    sHolidayDrawcheck3: ").append(toIndentedString(sHolidayDrawcheck3)).append("\n");
-    sb.append("    sGrossWageCheck: ").append(toIndentedString(sGrossWageCheck)).append("\n");
-    sb.append("    sHasSIDiscount: ").append(toIndentedString(sHasSIDiscount)).append("\n");
-    sb.append("    sHasSIDiscountEdit: ").append(toIndentedString(sHasSIDiscountEdit)).append("\n");
-    sb.append("    sLifeInsTaxBase: ").append(toIndentedString(sLifeInsTaxBase)).append("\n");
-    sb.append("    sLifeInsAmount: ").append(toIndentedString(sLifeInsAmount)).append("\n");
-    sb.append("    sRetFundTaxBase: ").append(toIndentedString(sRetFundTaxBase)).append("\n");
-    sb.append("    sRetFundAmount: ").append(toIndentedString(sRetFundAmount)).append("\n");
-    sb.append("    sAgreementIncome: ").append(toIndentedString(sAgreementIncome)).append("\n");
-    sb.append("    sDutyCarTotal: ").append(toIndentedString(sDutyCarTotal)).append("\n");
-    sb.append("    sDutyCar: ").append(toIndentedString(sDutyCar)).append("\n");
-    sb.append("    sDisabilityPension: ").append(toIndentedString(sDisabilityPension)).append("\n");
-    sb.append("    sPartTimeIncome: ").append(toIndentedString(sPartTimeIncome)).append("\n");
-    sb.append("    sNaturalWageForAvg: ").append(toIndentedString(sNaturalWageForAvg)).append("\n");
-    sb.append("    sLifeInsTaxablePart: ").append(toIndentedString(sLifeInsTaxablePart)).append("\n");
-    sb.append("    sWorkActivityIncome: ").append(toIndentedString(sWorkActivityIncome)).append("\n");
+    sb.append("    sPhoneDocktotal: ").append(toIndentedString(sPhoneDocktotal)).append("\n");
+    sb.append("    sRewardsixmonth: ").append(toIndentedString(sRewardsixmonth)).append("\n");
+    sb.append("    sRewardsixmonthtotal: ").append(toIndentedString(sRewardsixmonthtotal)).append("\n");
+    sb.append("    sRewardtwelvemonth: ").append(toIndentedString(sRewardtwelvemonth)).append("\n");
+    sb.append("    sRewardtwelvemonthtotal: ").append(toIndentedString(sRewardtwelvemonthtotal)).append("\n");
+    sb.append("    sArmyexercisecal: ").append(toIndentedString(sArmyexercisecal)).append("\n");
+    sb.append("    sArmyexercisecaltotal: ").append(toIndentedString(sArmyexercisecaltotal)).append("\n");
+    sb.append("    sSubtracteddays: ").append(toIndentedString(sSubtracteddays)).append("\n");
+    sb.append("    sSubtracteddaystotal: ").append(toIndentedString(sSubtracteddaystotal)).append("\n");
+    sb.append("    sRewardsixmonthoper: ").append(toIndentedString(sRewardsixmonthoper)).append("\n");
+    sb.append("    sRewardtwelvemonthoper: ").append(toIndentedString(sRewardtwelvemonthoper)).append("\n");
+    sb.append("    sExcludeddayscorrection: ").append(toIndentedString(sExcludeddayscorrection)).append("\n");
+    sb.append("    sSmallorbigcompany: ").append(toIndentedString(sSmallorbigcompany)).append("\n");
+    sb.append("    sSickabsencesoutofrelation: ").append(toIndentedString(sSickabsencesoutofrelation)).append("\n");
+    sb.append("    sExcludeddaysafterretage: ").append(toIndentedString(sExcludeddaysafterretage)).append("\n");
+    sb.append("    sExcludeddaysafterretagecorr: ").append(toIndentedString(sExcludeddaysafterretagecorr)).append("\n");
+    sb.append("    sWorkingfundforovertime: ").append(toIndentedString(sWorkingfundforovertime)).append("\n");
+    sb.append("    sOverpaidholiday: ").append(toIndentedString(sOverpaidholiday)).append("\n");
+    sb.append("    sAveragecorrect: ").append(toIndentedString(sAveragecorrect)).append("\n");
+    sb.append("    sGrosswageforavgnetwage: ").append(toIndentedString(sGrosswageforavgnetwage)).append("\n");
+    sb.append("    sSocinsbaselowrate: ").append(toIndentedString(sSocinsbaselowrate)).append("\n");
+    sb.append("    sSickcompboost: ").append(toIndentedString(sSickcompboost)).append("\n");
+    sb.append("    sNormalduty: ").append(toIndentedString(sNormalduty)).append("\n");
+    sb.append("    sSurchargeguaranteed: ").append(toIndentedString(sSurchargeguaranteed)).append("\n");
+    sb.append("    sGuaranteedwage: ").append(toIndentedString(sGuaranteedwage)).append("\n");
+    sb.append("    sSurchargeguaranteedtotal: ").append(toIndentedString(sSurchargeguaranteedtotal)).append("\n");
+    sb.append("    sUnresolvedovertimetotal: ").append(toIndentedString(sUnresolvedovertimetotal)).append("\n");
+    sb.append("    sOvertimesubstfree: ").append(toIndentedString(sOvertimesubstfree)).append("\n");
+    sb.append("    sUnresolvedovertime: ").append(toIndentedString(sUnresolvedovertime)).append("\n");
+    sb.append("    sFeastmode: ").append(toIndentedString(sFeastmode)).append("\n");
+    sb.append("    sOvertimesubstfreetotal: ").append(toIndentedString(sOvertimesubstfreetotal)).append("\n");
+    sb.append("    sOldovertimehours: ").append(toIndentedString(sOldovertimehours)).append("\n");
+    sb.append("    sOldovertimehourstotal: ").append(toIndentedString(sOldovertimehourstotal)).append("\n");
+    sb.append("    sDisastercomptime: ").append(toIndentedString(sDisastercomptime)).append("\n");
+    sb.append("    sMalfunctioncomptime: ").append(toIndentedString(sMalfunctioncomptime)).append("\n");
+    sb.append("    sOtherobstructioncomptime: ").append(toIndentedString(sOtherobstructioncomptime)).append("\n");
+    sb.append("    sDisastercomp: ").append(toIndentedString(sDisastercomp)).append("\n");
+    sb.append("    sMalfunctioncomp: ").append(toIndentedString(sMalfunctioncomp)).append("\n");
+    sb.append("    sOtherobstructioncomp: ").append(toIndentedString(sOtherobstructioncomp)).append("\n");
+    sb.append("    sDisastercomptotal: ").append(toIndentedString(sDisastercomptotal)).append("\n");
+    sb.append("    sMalfunccomptotal: ").append(toIndentedString(sMalfunccomptotal)).append("\n");
+    sb.append("    sOtherobstcomptotal: ").append(toIndentedString(sOtherobstcomptotal)).append("\n");
+    sb.append("    sRewardjubilee: ").append(toIndentedString(sRewardjubilee)).append("\n");
+    sb.append("    sGuaranteedwagecorrect: ").append(toIndentedString(sGuaranteedwagecorrect)).append("\n");
+    sb.append("    sFeasthoursoutofrelation: ").append(toIndentedString(sFeasthoursoutofrelation)).append("\n");
+    sb.append("    sFeasthourinabsenceandsickness: ").append(toIndentedString(sFeasthourinabsenceandsickness)).append("\n");
+    sb.append("    sRewardjubileeallbase: ").append(toIndentedString(sRewardjubileeallbase)).append("\n");
+    sb.append("    sRewardjubileenonebase: ").append(toIndentedString(sRewardjubileenonebase)).append("\n");
+    sb.append("    sAvgshiftlength: ").append(toIndentedString(sAvgshiftlength)).append("\n");
+    sb.append("    sPaidfeasthoursoper: ").append(toIndentedString(sPaidfeasthoursoper)).append("\n");
+    sb.append("    sSurchargeguarantingrosswage: ").append(toIndentedString(sSurchargeguarantingrosswage)).append("\n");
+    sb.append("    sPaidfeasthours: ").append(toIndentedString(sPaidfeasthours)).append("\n");
+    sb.append("    sRenumerationform: ").append(toIndentedString(sRenumerationform)).append("\n");
+    sb.append("    sHolidayhours: ").append(toIndentedString(sHolidayhours)).append("\n");
+    sb.append("    sExitinsbasecorrection: ").append(toIndentedString(sExitinsbasecorrection)).append("\n");
+    sb.append("    sIshealthinsurance: ").append(toIndentedString(sIshealthinsurance)).append("\n");
+    sb.append("    sInventionreward: ").append(toIndentedString(sInventionreward)).append("\n");
+    sb.append("    sPercentofavgcomptotal: ").append(toIndentedString(sPercentofavgcomptotal)).append("\n");
+    sb.append("    sPercentofavgcomp: ").append(toIndentedString(sPercentofavgcomp)).append("\n");
+    sb.append("    sAvgcomppercent: ").append(toIndentedString(sAvgcomppercent)).append("\n");
+    sb.append("    sPercentofavgcomptime: ").append(toIndentedString(sPercentofavgcomptime)).append("\n");
+    sb.append("    sHolidaydrawcheck1: ").append(toIndentedString(sHolidaydrawcheck1)).append("\n");
+    sb.append("    sHolidaydrawcheck2: ").append(toIndentedString(sHolidaydrawcheck2)).append("\n");
+    sb.append("    sHolidaydrawcheck3: ").append(toIndentedString(sHolidaydrawcheck3)).append("\n");
+    sb.append("    sGrosswagecheck: ").append(toIndentedString(sGrosswagecheck)).append("\n");
+    sb.append("    sHassidiscount: ").append(toIndentedString(sHassidiscount)).append("\n");
+    sb.append("    sHassidiscountedit: ").append(toIndentedString(sHassidiscountedit)).append("\n");
+    sb.append("    sLifeinstaxbase: ").append(toIndentedString(sLifeinstaxbase)).append("\n");
+    sb.append("    sLifeinsamount: ").append(toIndentedString(sLifeinsamount)).append("\n");
+    sb.append("    sRetfundtaxbase: ").append(toIndentedString(sRetfundtaxbase)).append("\n");
+    sb.append("    sRetfundamount: ").append(toIndentedString(sRetfundamount)).append("\n");
+    sb.append("    sAgreementincome: ").append(toIndentedString(sAgreementincome)).append("\n");
+    sb.append("    sDutycartotal: ").append(toIndentedString(sDutycartotal)).append("\n");
+    sb.append("    sDutycar: ").append(toIndentedString(sDutycar)).append("\n");
+    sb.append("    sDisabilitypension: ").append(toIndentedString(sDisabilitypension)).append("\n");
+    sb.append("    sParttimeincome: ").append(toIndentedString(sParttimeincome)).append("\n");
+    sb.append("    sNaturalwageforavg: ").append(toIndentedString(sNaturalwageforavg)).append("\n");
+    sb.append("    sLifeinstaxablepart: ").append(toIndentedString(sLifeinstaxablepart)).append("\n");
+    sb.append("    sWorkactivityincome: ").append(toIndentedString(sWorkactivityincome)).append("\n");
     sb.append("}");
     return sb.toString();
   }

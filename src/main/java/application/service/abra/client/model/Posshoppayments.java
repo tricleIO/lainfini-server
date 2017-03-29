@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,171 +34,216 @@ import java.util.Objects;
 /**
  * Posshoppayments
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posshoppayments   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("PaymentType_ID")
-  private String paymentTypeID = null;
+  @SerializedName("paymenttype_id")
+  private String paymenttypeId = null;
 
-  @SerializedName("NumberOfBillCopies")
-  private Integer numberOfBillCopies = null;
+  @SerializedName("numberofbillcopies")
+  private Integer numberofbillcopies = null;
 
-  @SerializedName("RoundExponent")
-  private Integer roundExponent = null;
+  @SerializedName("roundexponent")
+  private Integer roundexponent = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Nastavení provozu [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Nastavení provozu [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Posshoppayments posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Posshoppayments displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Posshoppayments currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Posshoppayments id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Posshoppayments paymentTypeID(String paymentTypeID) {
-    this.paymentTypeID = paymentTypeID;
+  public Posshoppayments classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Způsob úhrady; ID objektu Způsob úhrady [persistentní položka]
-   * @return paymentTypeID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Způsob úhrady; ID objektu Způsob úhrady [persistentní položka]")
-  public String getPaymentTypeID() {
-    return paymentTypeID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPaymentTypeID(String paymentTypeID) {
-    this.paymentTypeID = paymentTypeID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Posshoppayments numberOfBillCopies(Integer numberOfBillCopies) {
-    this.numberOfBillCopies = numberOfBillCopies;
+  public Posshoppayments objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Počet kopií [persistentní položka]
-   * @return numberOfBillCopies
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Počet kopií [persistentní položka]")
-  public Integer getNumberOfBillCopies() {
-    return numberOfBillCopies;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setNumberOfBillCopies(Integer numberOfBillCopies) {
-    this.numberOfBillCopies = numberOfBillCopies;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Posshoppayments roundExponent(Integer roundExponent) {
-    this.roundExponent = roundExponent;
+  public Posshoppayments parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Přesnost zaokrouhlování [persistentní položka]
-   * @return roundExponent
+   * vlastník; id objektu nastavení provozu [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Přesnost zaokrouhlování [persistentní položka]")
-  public Integer getRoundExponent() {
-    return roundExponent;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu nastavení provozu [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setRoundExponent(Integer roundExponent) {
-    this.roundExponent = roundExponent;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Posshoppayments posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Posshoppayments currencyId(String currencyId) {
+    this.currencyId = currencyId;
+    return this;
+  }
+
+   /**
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
+  **/
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
+  }
+
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
+  }
+
+  public Posshoppayments paymenttypeId(String paymenttypeId) {
+    this.paymenttypeId = paymenttypeId;
+    return this;
+  }
+
+   /**
+   * způsob úhrady; id objektu způsob úhrady [persistentní položka]
+   * @return paymenttypeId
+  **/
+  @ApiModelProperty(example = "null", value = "způsob úhrady; id objektu způsob úhrady [persistentní položka]")
+  public String getPaymenttypeId() {
+    return paymenttypeId;
+  }
+
+  public void setPaymenttypeId(String paymenttypeId) {
+    this.paymenttypeId = paymenttypeId;
+  }
+
+  public Posshoppayments numberofbillcopies(Integer numberofbillcopies) {
+    this.numberofbillcopies = numberofbillcopies;
+    return this;
+  }
+
+   /**
+   * počet kopií [persistentní položka]
+   * @return numberofbillcopies
+  **/
+  @ApiModelProperty(example = "null", value = "počet kopií [persistentní položka]")
+  public Integer getNumberofbillcopies() {
+    return numberofbillcopies;
+  }
+
+  public void setNumberofbillcopies(Integer numberofbillcopies) {
+    this.numberofbillcopies = numberofbillcopies;
+  }
+
+  public Posshoppayments roundexponent(Integer roundexponent) {
+    this.roundexponent = roundexponent;
+    return this;
+  }
+
+   /**
+   * přesnost zaokrouhlování [persistentní položka]
+   * @return roundexponent
+  **/
+  @ApiModelProperty(example = "null", value = "přesnost zaokrouhlování [persistentní položka]")
+  public Integer getRoundexponent() {
+    return roundexponent;
+  }
+
+  public void setRoundexponent(Integer roundexponent) {
+    this.roundexponent = roundexponent;
   }
 
 
@@ -211,21 +256,21 @@ public class Posshoppayments   {
       return false;
     }
     Posshoppayments posshoppayments = (Posshoppayments) o;
-    return Objects.equals(this.displayName, posshoppayments.displayName) &&
-        Objects.equals(this.ID, posshoppayments.ID) &&
-        Objects.equals(this.classID, posshoppayments.classID) &&
-        Objects.equals(this.objVersion, posshoppayments.objVersion) &&
-        Objects.equals(this.parentID, posshoppayments.parentID) &&
-        Objects.equals(this.posIndex, posshoppayments.posIndex) &&
-        Objects.equals(this.currencyID, posshoppayments.currencyID) &&
-        Objects.equals(this.paymentTypeID, posshoppayments.paymentTypeID) &&
-        Objects.equals(this.numberOfBillCopies, posshoppayments.numberOfBillCopies) &&
-        Objects.equals(this.roundExponent, posshoppayments.roundExponent);
+    return Objects.equals(this.displayname, posshoppayments.displayname) &&
+        Objects.equals(this.id, posshoppayments.id) &&
+        Objects.equals(this.classid, posshoppayments.classid) &&
+        Objects.equals(this.objversion, posshoppayments.objversion) &&
+        Objects.equals(this.parentId, posshoppayments.parentId) &&
+        Objects.equals(this.posindex, posshoppayments.posindex) &&
+        Objects.equals(this.currencyId, posshoppayments.currencyId) &&
+        Objects.equals(this.paymenttypeId, posshoppayments.paymenttypeId) &&
+        Objects.equals(this.numberofbillcopies, posshoppayments.numberofbillcopies) &&
+        Objects.equals(this.roundexponent, posshoppayments.roundexponent);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, currencyID, paymentTypeID, numberOfBillCopies, roundExponent);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, currencyId, paymenttypeId, numberofbillcopies, roundexponent);
   }
 
   @Override
@@ -233,16 +278,16 @@ public class Posshoppayments   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posshoppayments {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    paymentTypeID: ").append(toIndentedString(paymentTypeID)).append("\n");
-    sb.append("    numberOfBillCopies: ").append(toIndentedString(numberOfBillCopies)).append("\n");
-    sb.append("    roundExponent: ").append(toIndentedString(roundExponent)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    paymenttypeId: ").append(toIndentedString(paymenttypeId)).append("\n");
+    sb.append("    numberofbillcopies: ").append(toIndentedString(numberofbillcopies)).append("\n");
+    sb.append("    roundexponent: ").append(toIndentedString(roundexponent)).append("\n");
     sb.append("}");
     return sb.toString();
   }

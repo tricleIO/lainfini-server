@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,93 +35,129 @@ import java.util.Objects;
 /**
  * Assetexpense
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Assetexpense   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("AssetCard_ID")
-  private String assetCardID = null;
+  @SerializedName("assetcard_id")
+  private String assetcardId = null;
 
-  @SerializedName("Doc_Type")
+  @SerializedName("doc_type")
   private String docType = null;
 
-  @SerializedName("Doc_ID")
-  private String docID = null;
+  @SerializedName("doc_id")
+  private String docId = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("Date$DATE")
-  private DateTime dateDATE = null;
+  @SerializedName("date$date")
+  private DateTime datedate = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("Amount")
+  @SerializedName("amount")
   private Double amount = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Assetexpense assetCardID(String assetCardID) {
-    this.assetCardID = assetCardID;
+  public Assetexpense displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Karta majetku; ID objektu Karta majetku [persistentní položka]
-   * @return assetCardID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Karta majetku; ID objektu Karta majetku [persistentní položka]")
-  public String getAssetCardID() {
-    return assetCardID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setAssetCardID(String assetCardID) {
-    this.assetCardID = assetCardID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Assetexpense id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Assetexpense classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Assetexpense objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Assetexpense assetcardId(String assetcardId) {
+    this.assetcardId = assetcardId;
+    return this;
+  }
+
+   /**
+   * karta majetku; id objektu karta majetku [persistentní položka]
+   * @return assetcardId
+  **/
+  @ApiModelProperty(example = "null", value = "karta majetku; id objektu karta majetku [persistentní položka]")
+  public String getAssetcardId() {
+    return assetcardId;
+  }
+
+  public void setAssetcardId(String assetcardId) {
+    this.assetcardId = assetcardId;
   }
 
   public Assetexpense docType(String docType) {
@@ -130,10 +166,10 @@ public class Assetexpense   {
   }
 
    /**
-   * Typ dokladu [persistentní položka]
+   * typ dokladu [persistentní položka]
    * @return docType
   **/
-  @ApiModelProperty(example = "null", value = "Typ dokladu [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "typ dokladu [persistentní položka]")
   public String getDocType() {
     return docType;
   }
@@ -142,58 +178,58 @@ public class Assetexpense   {
     this.docType = docType;
   }
 
-  public Assetexpense docID(String docID) {
-    this.docID = docID;
+  public Assetexpense docId(String docId) {
+    this.docId = docId;
     return this;
   }
 
    /**
-   * Doklad; ID objektu Dokument [persistentní položka]
-   * @return docID
+   * doklad; id objektu dokument [persistentní položka]
+   * @return docId
   **/
-  @ApiModelProperty(example = "null", value = "Doklad; ID objektu Dokument [persistentní položka]")
-  public String getDocID() {
-    return docID;
+  @ApiModelProperty(example = "null", value = "doklad; id objektu dokument [persistentní položka]")
+  public String getDocId() {
+    return docId;
   }
 
-  public void setDocID(String docID) {
-    this.docID = docID;
+  public void setDocId(String docId) {
+    this.docId = docId;
   }
 
-  public Assetexpense docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Assetexpense docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dokladu [persistentní položka]
-   * @return docDateDATE
+   * datum dokladu [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dokladu [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dokladu [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Assetexpense dateDATE(DateTime dateDATE) {
-    this.dateDATE = dateDATE;
+  public Assetexpense datedate(DateTime datedate) {
+    this.datedate = datedate;
     return this;
   }
 
    /**
-   * Datum připojení [persistentní položka]
-   * @return dateDATE
+   * datum připojení [persistentní položka]
+   * @return datedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum připojení [persistentní položka]")
-  public DateTime getDateDATE() {
-    return dateDATE;
+  @ApiModelProperty(example = "null", value = "datum připojení [persistentní položka]")
+  public DateTime getDatedate() {
+    return datedate;
   }
 
-  public void setDateDATE(DateTime dateDATE) {
-    this.dateDATE = dateDATE;
+  public void setDatedate(DateTime datedate) {
+    this.datedate = datedate;
   }
 
   public Assetexpense description(String description) {
@@ -202,10 +238,10 @@ public class Assetexpense   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -242,22 +278,22 @@ public class Assetexpense   {
       return false;
     }
     Assetexpense assetexpense = (Assetexpense) o;
-    return Objects.equals(this.displayName, assetexpense.displayName) &&
-        Objects.equals(this.ID, assetexpense.ID) &&
-        Objects.equals(this.classID, assetexpense.classID) &&
-        Objects.equals(this.objVersion, assetexpense.objVersion) &&
-        Objects.equals(this.assetCardID, assetexpense.assetCardID) &&
+    return Objects.equals(this.displayname, assetexpense.displayname) &&
+        Objects.equals(this.id, assetexpense.id) &&
+        Objects.equals(this.classid, assetexpense.classid) &&
+        Objects.equals(this.objversion, assetexpense.objversion) &&
+        Objects.equals(this.assetcardId, assetexpense.assetcardId) &&
         Objects.equals(this.docType, assetexpense.docType) &&
-        Objects.equals(this.docID, assetexpense.docID) &&
-        Objects.equals(this.docDateDATE, assetexpense.docDateDATE) &&
-        Objects.equals(this.dateDATE, assetexpense.dateDATE) &&
+        Objects.equals(this.docId, assetexpense.docId) &&
+        Objects.equals(this.docdatedate, assetexpense.docdatedate) &&
+        Objects.equals(this.datedate, assetexpense.datedate) &&
         Objects.equals(this.description, assetexpense.description) &&
         Objects.equals(this.amount, assetexpense.amount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, assetCardID, docType, docID, docDateDATE, dateDATE, description, amount);
+    return Objects.hash(displayname, id, classid, objversion, assetcardId, docType, docId, docdatedate, datedate, description, amount);
   }
 
   @Override
@@ -265,15 +301,15 @@ public class Assetexpense   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Assetexpense {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    assetCardID: ").append(toIndentedString(assetCardID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    assetcardId: ").append(toIndentedString(assetcardId)).append("\n");
     sb.append("    docType: ").append(toIndentedString(docType)).append("\n");
-    sb.append("    docID: ").append(toIndentedString(docID)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    dateDATE: ").append(toIndentedString(dateDATE)).append("\n");
+    sb.append("    docId: ").append(toIndentedString(docId)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    datedate: ").append(toIndentedString(datedate)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    amount: ").append(toIndentedString(amount)).append("\n");
     sb.append("}");

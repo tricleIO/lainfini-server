@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,192 +34,237 @@ import java.util.Objects;
 /**
  * Wagefactorysetting
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wagefactorysetting   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("AnnClearingTaxBaseRounding")
-  private Integer annClearingTaxBaseRounding = null;
+  @SerializedName("annclearingtaxbaserounding")
+  private Integer annclearingtaxbaserounding = null;
 
-  @SerializedName("AnnClearingTaxRounding")
-  private Integer annClearingTaxRounding = null;
+  @SerializedName("annclearingtaxrounding")
+  private Integer annclearingtaxrounding = null;
 
-  @SerializedName("PercentDocksRounding")
-  private Integer percentDocksRounding = null;
+  @SerializedName("percentdocksrounding")
+  private Integer percentdocksrounding = null;
 
-  @SerializedName("HIYearRounding")
-  private Integer hIYearRounding = null;
+  @SerializedName("hiyearrounding")
+  private Integer hiyearrounding = null;
 
-  @SerializedName("HIMinInsBaseRounding")
-  private Integer hIMinInsBaseRounding = null;
+  @SerializedName("himininsbaserounding")
+  private Integer himininsbaserounding = null;
 
-  @SerializedName("HIKMinKMaxRounding")
-  private Integer hIKMinKMaxRounding = null;
+  @SerializedName("hikminkmaxrounding")
+  private Integer hikminkmaxrounding = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Nastavení parametrů mezd [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Nastavení parametrů mezd [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Wagefactorysetting annClearingTaxBaseRounding(Integer annClearingTaxBaseRounding) {
-    this.annClearingTaxBaseRounding = annClearingTaxBaseRounding;
+  public Wagefactorysetting displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Zaokr.základu daně [persistentní položka]
-   * @return annClearingTaxBaseRounding
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Zaokr.základu daně [persistentní položka]")
-  public Integer getAnnClearingTaxBaseRounding() {
-    return annClearingTaxBaseRounding;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setAnnClearingTaxBaseRounding(Integer annClearingTaxBaseRounding) {
-    this.annClearingTaxBaseRounding = annClearingTaxBaseRounding;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Wagefactorysetting annClearingTaxRounding(Integer annClearingTaxRounding) {
-    this.annClearingTaxRounding = annClearingTaxRounding;
+  public Wagefactorysetting id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Zaokr.daně [persistentní položka]
-   * @return annClearingTaxRounding
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Zaokr.daně [persistentní položka]")
-  public Integer getAnnClearingTaxRounding() {
-    return annClearingTaxRounding;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setAnnClearingTaxRounding(Integer annClearingTaxRounding) {
-    this.annClearingTaxRounding = annClearingTaxRounding;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Wagefactorysetting percentDocksRounding(Integer percentDocksRounding) {
-    this.percentDocksRounding = percentDocksRounding;
+  public Wagefactorysetting classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Zaokr.srážek [persistentní položka]
-   * @return percentDocksRounding
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Zaokr.srážek [persistentní položka]")
-  public Integer getPercentDocksRounding() {
-    return percentDocksRounding;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPercentDocksRounding(Integer percentDocksRounding) {
-    this.percentDocksRounding = percentDocksRounding;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Wagefactorysetting hIYearRounding(Integer hIYearRounding) {
-    this.hIYearRounding = hIYearRounding;
+  public Wagefactorysetting objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Způsob zaokr. vypoč. roč. ZP [persistentní položka]
-   * @return hIYearRounding
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zaokr. vypoč. roč. ZP [persistentní položka]")
-  public Integer getHIYearRounding() {
-    return hIYearRounding;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setHIYearRounding(Integer hIYearRounding) {
-    this.hIYearRounding = hIYearRounding;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Wagefactorysetting hIMinInsBaseRounding(Integer hIMinInsBaseRounding) {
-    this.hIMinInsBaseRounding = hIMinInsBaseRounding;
+  public Wagefactorysetting parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Způsob zaokr. min. zákl. pro roční zúčt. ZP [persistentní položka]
-   * @return hIMinInsBaseRounding
+   * vlastník; id objektu nastavení parametrů mezd [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zaokr. min. zákl. pro roční zúčt. ZP [persistentní položka]")
-  public Integer getHIMinInsBaseRounding() {
-    return hIMinInsBaseRounding;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu nastavení parametrů mezd [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setHIMinInsBaseRounding(Integer hIMinInsBaseRounding) {
-    this.hIMinInsBaseRounding = hIMinInsBaseRounding;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Wagefactorysetting hIKMinKMaxRounding(Integer hIKMinKMaxRounding) {
-    this.hIKMinKMaxRounding = hIKMinKMaxRounding;
+  public Wagefactorysetting annclearingtaxbaserounding(Integer annclearingtaxbaserounding) {
+    this.annclearingtaxbaserounding = annclearingtaxbaserounding;
     return this;
   }
 
    /**
-   * Způsob zaokr. koef. RZ ZP [persistentní položka]
-   * @return hIKMinKMaxRounding
+   * zaokr.základu daně [persistentní položka]
+   * @return annclearingtaxbaserounding
   **/
-  @ApiModelProperty(example = "null", value = "Způsob zaokr. koef. RZ ZP [persistentní položka]")
-  public Integer getHIKMinKMaxRounding() {
-    return hIKMinKMaxRounding;
+  @ApiModelProperty(example = "null", value = "zaokr.základu daně [persistentní položka]")
+  public Integer getAnnclearingtaxbaserounding() {
+    return annclearingtaxbaserounding;
   }
 
-  public void setHIKMinKMaxRounding(Integer hIKMinKMaxRounding) {
-    this.hIKMinKMaxRounding = hIKMinKMaxRounding;
+  public void setAnnclearingtaxbaserounding(Integer annclearingtaxbaserounding) {
+    this.annclearingtaxbaserounding = annclearingtaxbaserounding;
+  }
+
+  public Wagefactorysetting annclearingtaxrounding(Integer annclearingtaxrounding) {
+    this.annclearingtaxrounding = annclearingtaxrounding;
+    return this;
+  }
+
+   /**
+   * zaokr.daně [persistentní položka]
+   * @return annclearingtaxrounding
+  **/
+  @ApiModelProperty(example = "null", value = "zaokr.daně [persistentní položka]")
+  public Integer getAnnclearingtaxrounding() {
+    return annclearingtaxrounding;
+  }
+
+  public void setAnnclearingtaxrounding(Integer annclearingtaxrounding) {
+    this.annclearingtaxrounding = annclearingtaxrounding;
+  }
+
+  public Wagefactorysetting percentdocksrounding(Integer percentdocksrounding) {
+    this.percentdocksrounding = percentdocksrounding;
+    return this;
+  }
+
+   /**
+   * zaokr.srážek [persistentní položka]
+   * @return percentdocksrounding
+  **/
+  @ApiModelProperty(example = "null", value = "zaokr.srážek [persistentní položka]")
+  public Integer getPercentdocksrounding() {
+    return percentdocksrounding;
+  }
+
+  public void setPercentdocksrounding(Integer percentdocksrounding) {
+    this.percentdocksrounding = percentdocksrounding;
+  }
+
+  public Wagefactorysetting hiyearrounding(Integer hiyearrounding) {
+    this.hiyearrounding = hiyearrounding;
+    return this;
+  }
+
+   /**
+   * způsob zaokr. vypoč. roč. zp [persistentní položka]
+   * @return hiyearrounding
+  **/
+  @ApiModelProperty(example = "null", value = "způsob zaokr. vypoč. roč. zp [persistentní položka]")
+  public Integer getHiyearrounding() {
+    return hiyearrounding;
+  }
+
+  public void setHiyearrounding(Integer hiyearrounding) {
+    this.hiyearrounding = hiyearrounding;
+  }
+
+  public Wagefactorysetting himininsbaserounding(Integer himininsbaserounding) {
+    this.himininsbaserounding = himininsbaserounding;
+    return this;
+  }
+
+   /**
+   * způsob zaokr. min. zákl. pro roční zúčt. zp [persistentní položka]
+   * @return himininsbaserounding
+  **/
+  @ApiModelProperty(example = "null", value = "způsob zaokr. min. zákl. pro roční zúčt. zp [persistentní položka]")
+  public Integer getHimininsbaserounding() {
+    return himininsbaserounding;
+  }
+
+  public void setHimininsbaserounding(Integer himininsbaserounding) {
+    this.himininsbaserounding = himininsbaserounding;
+  }
+
+  public Wagefactorysetting hikminkmaxrounding(Integer hikminkmaxrounding) {
+    this.hikminkmaxrounding = hikminkmaxrounding;
+    return this;
+  }
+
+   /**
+   * způsob zaokr. koef. rz zp [persistentní položka]
+   * @return hikminkmaxrounding
+  **/
+  @ApiModelProperty(example = "null", value = "způsob zaokr. koef. rz zp [persistentní položka]")
+  public Integer getHikminkmaxrounding() {
+    return hikminkmaxrounding;
+  }
+
+  public void setHikminkmaxrounding(Integer hikminkmaxrounding) {
+    this.hikminkmaxrounding = hikminkmaxrounding;
   }
 
 
@@ -232,22 +277,22 @@ public class Wagefactorysetting   {
       return false;
     }
     Wagefactorysetting wagefactorysetting = (Wagefactorysetting) o;
-    return Objects.equals(this.displayName, wagefactorysetting.displayName) &&
-        Objects.equals(this.ID, wagefactorysetting.ID) &&
-        Objects.equals(this.classID, wagefactorysetting.classID) &&
-        Objects.equals(this.objVersion, wagefactorysetting.objVersion) &&
-        Objects.equals(this.parentID, wagefactorysetting.parentID) &&
-        Objects.equals(this.annClearingTaxBaseRounding, wagefactorysetting.annClearingTaxBaseRounding) &&
-        Objects.equals(this.annClearingTaxRounding, wagefactorysetting.annClearingTaxRounding) &&
-        Objects.equals(this.percentDocksRounding, wagefactorysetting.percentDocksRounding) &&
-        Objects.equals(this.hIYearRounding, wagefactorysetting.hIYearRounding) &&
-        Objects.equals(this.hIMinInsBaseRounding, wagefactorysetting.hIMinInsBaseRounding) &&
-        Objects.equals(this.hIKMinKMaxRounding, wagefactorysetting.hIKMinKMaxRounding);
+    return Objects.equals(this.displayname, wagefactorysetting.displayname) &&
+        Objects.equals(this.id, wagefactorysetting.id) &&
+        Objects.equals(this.classid, wagefactorysetting.classid) &&
+        Objects.equals(this.objversion, wagefactorysetting.objversion) &&
+        Objects.equals(this.parentId, wagefactorysetting.parentId) &&
+        Objects.equals(this.annclearingtaxbaserounding, wagefactorysetting.annclearingtaxbaserounding) &&
+        Objects.equals(this.annclearingtaxrounding, wagefactorysetting.annclearingtaxrounding) &&
+        Objects.equals(this.percentdocksrounding, wagefactorysetting.percentdocksrounding) &&
+        Objects.equals(this.hiyearrounding, wagefactorysetting.hiyearrounding) &&
+        Objects.equals(this.himininsbaserounding, wagefactorysetting.himininsbaserounding) &&
+        Objects.equals(this.hikminkmaxrounding, wagefactorysetting.hikminkmaxrounding);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, annClearingTaxBaseRounding, annClearingTaxRounding, percentDocksRounding, hIYearRounding, hIMinInsBaseRounding, hIKMinKMaxRounding);
+    return Objects.hash(displayname, id, classid, objversion, parentId, annclearingtaxbaserounding, annclearingtaxrounding, percentdocksrounding, hiyearrounding, himininsbaserounding, hikminkmaxrounding);
   }
 
   @Override
@@ -255,17 +300,17 @@ public class Wagefactorysetting   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wagefactorysetting {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    annClearingTaxBaseRounding: ").append(toIndentedString(annClearingTaxBaseRounding)).append("\n");
-    sb.append("    annClearingTaxRounding: ").append(toIndentedString(annClearingTaxRounding)).append("\n");
-    sb.append("    percentDocksRounding: ").append(toIndentedString(percentDocksRounding)).append("\n");
-    sb.append("    hIYearRounding: ").append(toIndentedString(hIYearRounding)).append("\n");
-    sb.append("    hIMinInsBaseRounding: ").append(toIndentedString(hIMinInsBaseRounding)).append("\n");
-    sb.append("    hIKMinKMaxRounding: ").append(toIndentedString(hIKMinKMaxRounding)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    annclearingtaxbaserounding: ").append(toIndentedString(annclearingtaxbaserounding)).append("\n");
+    sb.append("    annclearingtaxrounding: ").append(toIndentedString(annclearingtaxrounding)).append("\n");
+    sb.append("    percentdocksrounding: ").append(toIndentedString(percentdocksrounding)).append("\n");
+    sb.append("    hiyearrounding: ").append(toIndentedString(hiyearrounding)).append("\n");
+    sb.append("    himininsbaserounding: ").append(toIndentedString(himininsbaserounding)).append("\n");
+    sb.append("    hikminkmaxrounding: ").append(toIndentedString(hikminkmaxrounding)).append("\n");
     sb.append("}");
     return sb.toString();
   }

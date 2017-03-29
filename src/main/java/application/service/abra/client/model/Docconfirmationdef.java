@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,177 +34,213 @@ import java.util.Objects;
 /**
  * Docconfirmationdef
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Docconfirmationdef   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DocType")
-  private String docType = null;
+  @SerializedName("doctype")
+  private String doctype = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("CreatorRole_ID")
-  private String creatorRoleID = null;
+  @SerializedName("creatorrole_id")
+  private String creatorroleId = null;
 
-  @SerializedName("Condition")
+  @SerializedName("condition")
   private String condition = null;
 
-  @SerializedName("ConfirmatorRole_ID")
-  private String confirmatorRoleID = null;
+  @SerializedName("confirmatorrole_id")
+  private String confirmatorroleId = null;
 
-  @SerializedName("ConfirmatorUser_ID")
-  private String confirmatorUserID = null;
+  @SerializedName("confirmatoruser_id")
+  private String confirmatoruserId = null;
 
-  @SerializedName("ConfirmatorOrder")
-  private Integer confirmatorOrder = null;
+  @SerializedName("confirmatororder")
+  private Integer confirmatororder = null;
 
-  @SerializedName("EvaluateConfirmator")
-  private Boolean evaluateConfirmator = null;
+  @SerializedName("evaluateconfirmator")
+  private Boolean evaluateconfirmator = null;
 
-  @SerializedName("ExpressionForEvalConfirmator")
-  private String expressionForEvalConfirmator = null;
+  @SerializedName("expressionforevalconfirmator")
+  private String expressionforevalconfirmator = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Docconfirmationdef docType(String docType) {
-    this.docType = docType;
+  public Docconfirmationdef displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Typ dokladu [persistentní položka]
-   * @return docType
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Typ dokladu [persistentní položka]")
-  public String getDocType() {
-    return docType;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDocType(String docType) {
-    this.docType = docType;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Docconfirmationdef docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Docconfirmationdef id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Řada dokladů; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Docconfirmationdef createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Docconfirmationdef classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Docconfirmationdef correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Docconfirmationdef objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Docconfirmationdef creatorRoleID(String creatorRoleID) {
-    this.creatorRoleID = creatorRoleID;
+  public Docconfirmationdef doctype(String doctype) {
+    this.doctype = doctype;
     return this;
   }
 
    /**
-   * Tvůrce dokladu; ID objektu Role [persistentní položka]
-   * @return creatorRoleID
+   * typ dokladu [persistentní položka]
+   * @return doctype
   **/
-  @ApiModelProperty(example = "null", value = "Tvůrce dokladu; ID objektu Role [persistentní položka]")
-  public String getCreatorRoleID() {
-    return creatorRoleID;
+  @ApiModelProperty(example = "null", value = "typ dokladu [persistentní položka]")
+  public String getDoctype() {
+    return doctype;
   }
 
-  public void setCreatorRoleID(String creatorRoleID) {
-    this.creatorRoleID = creatorRoleID;
+  public void setDoctype(String doctype) {
+    this.doctype = doctype;
+  }
+
+  public Docconfirmationdef docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
+    return this;
+  }
+
+   /**
+   * Řada dokladů; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
+  **/
+  @ApiModelProperty(example = "null", value = "Řada dokladů; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
+  }
+
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
+  }
+
+  public Docconfirmationdef createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+    return this;
+  }
+
+   /**
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
+  }
+
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Docconfirmationdef correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+    return this;
+  }
+
+   /**
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
+  }
+
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+  }
+
+  public Docconfirmationdef creatorroleId(String creatorroleId) {
+    this.creatorroleId = creatorroleId;
+    return this;
+  }
+
+   /**
+   * tvůrce dokladu; id objektu role [persistentní položka]
+   * @return creatorroleId
+  **/
+  @ApiModelProperty(example = "null", value = "tvůrce dokladu; id objektu role [persistentní položka]")
+  public String getCreatorroleId() {
+    return creatorroleId;
+  }
+
+  public void setCreatorroleId(String creatorroleId) {
+    this.creatorroleId = creatorroleId;
   }
 
   public Docconfirmationdef condition(String condition) {
@@ -213,10 +249,10 @@ public class Docconfirmationdef   {
   }
 
    /**
-   * Podmínka [persistentní položka]
+   * podmínka [persistentní položka]
    * @return condition
   **/
-  @ApiModelProperty(example = "null", value = "Podmínka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "podmínka [persistentní položka]")
   public String getCondition() {
     return condition;
   }
@@ -225,94 +261,94 @@ public class Docconfirmationdef   {
     this.condition = condition;
   }
 
-  public Docconfirmationdef confirmatorRoleID(String confirmatorRoleID) {
-    this.confirmatorRoleID = confirmatorRoleID;
+  public Docconfirmationdef confirmatorroleId(String confirmatorroleId) {
+    this.confirmatorroleId = confirmatorroleId;
     return this;
   }
 
    /**
-   * Role schvalovatele; ID objektu Role [persistentní položka]
-   * @return confirmatorRoleID
+   * role schvalovatele; id objektu role [persistentní položka]
+   * @return confirmatorroleId
   **/
-  @ApiModelProperty(example = "null", value = "Role schvalovatele; ID objektu Role [persistentní položka]")
-  public String getConfirmatorRoleID() {
-    return confirmatorRoleID;
+  @ApiModelProperty(example = "null", value = "role schvalovatele; id objektu role [persistentní položka]")
+  public String getConfirmatorroleId() {
+    return confirmatorroleId;
   }
 
-  public void setConfirmatorRoleID(String confirmatorRoleID) {
-    this.confirmatorRoleID = confirmatorRoleID;
+  public void setConfirmatorroleId(String confirmatorroleId) {
+    this.confirmatorroleId = confirmatorroleId;
   }
 
-  public Docconfirmationdef confirmatorUserID(String confirmatorUserID) {
-    this.confirmatorUserID = confirmatorUserID;
+  public Docconfirmationdef confirmatoruserId(String confirmatoruserId) {
+    this.confirmatoruserId = confirmatoruserId;
     return this;
   }
 
    /**
-   * Schvalovatel; ID objektu Uživatel [persistentní položka]
-   * @return confirmatorUserID
+   * schvalovatel; id objektu uživatel [persistentní položka]
+   * @return confirmatoruserId
   **/
-  @ApiModelProperty(example = "null", value = "Schvalovatel; ID objektu Uživatel [persistentní položka]")
-  public String getConfirmatorUserID() {
-    return confirmatorUserID;
+  @ApiModelProperty(example = "null", value = "schvalovatel; id objektu uživatel [persistentní položka]")
+  public String getConfirmatoruserId() {
+    return confirmatoruserId;
   }
 
-  public void setConfirmatorUserID(String confirmatorUserID) {
-    this.confirmatorUserID = confirmatorUserID;
+  public void setConfirmatoruserId(String confirmatoruserId) {
+    this.confirmatoruserId = confirmatoruserId;
   }
 
-  public Docconfirmationdef confirmatorOrder(Integer confirmatorOrder) {
-    this.confirmatorOrder = confirmatorOrder;
+  public Docconfirmationdef confirmatororder(Integer confirmatororder) {
+    this.confirmatororder = confirmatororder;
     return this;
   }
 
    /**
-   * Pořadí schvalovatele [persistentní položka]
-   * @return confirmatorOrder
+   * pořadí schvalovatele [persistentní položka]
+   * @return confirmatororder
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí schvalovatele [persistentní položka]")
-  public Integer getConfirmatorOrder() {
-    return confirmatorOrder;
+  @ApiModelProperty(example = "null", value = "pořadí schvalovatele [persistentní položka]")
+  public Integer getConfirmatororder() {
+    return confirmatororder;
   }
 
-  public void setConfirmatorOrder(Integer confirmatorOrder) {
-    this.confirmatorOrder = confirmatorOrder;
+  public void setConfirmatororder(Integer confirmatororder) {
+    this.confirmatororder = confirmatororder;
   }
 
-  public Docconfirmationdef evaluateConfirmator(Boolean evaluateConfirmator) {
-    this.evaluateConfirmator = evaluateConfirmator;
+  public Docconfirmationdef evaluateconfirmator(Boolean evaluateconfirmator) {
+    this.evaluateconfirmator = evaluateconfirmator;
     return this;
   }
 
    /**
-   * Schvalovatel výrazem [persistentní položka]
-   * @return evaluateConfirmator
+   * schvalovatel výrazem [persistentní položka]
+   * @return evaluateconfirmator
   **/
-  @ApiModelProperty(example = "null", value = "Schvalovatel výrazem [persistentní položka]")
-  public Boolean getEvaluateConfirmator() {
-    return evaluateConfirmator;
+  @ApiModelProperty(example = "null", value = "schvalovatel výrazem [persistentní položka]")
+  public Boolean getEvaluateconfirmator() {
+    return evaluateconfirmator;
   }
 
-  public void setEvaluateConfirmator(Boolean evaluateConfirmator) {
-    this.evaluateConfirmator = evaluateConfirmator;
+  public void setEvaluateconfirmator(Boolean evaluateconfirmator) {
+    this.evaluateconfirmator = evaluateconfirmator;
   }
 
-  public Docconfirmationdef expressionForEvalConfirmator(String expressionForEvalConfirmator) {
-    this.expressionForEvalConfirmator = expressionForEvalConfirmator;
+  public Docconfirmationdef expressionforevalconfirmator(String expressionforevalconfirmator) {
+    this.expressionforevalconfirmator = expressionforevalconfirmator;
     return this;
   }
 
    /**
-   * Výraz pro vyhodnocení role resp. uživatele, který provádí schvalování [persistentní položka]
-   * @return expressionForEvalConfirmator
+   * výraz pro vyhodnocení role resp. uživatele, který provádí schvalování [persistentní položka]
+   * @return expressionforevalconfirmator
   **/
-  @ApiModelProperty(example = "null", value = "Výraz pro vyhodnocení role resp. uživatele, který provádí schvalování [persistentní položka]")
-  public String getExpressionForEvalConfirmator() {
-    return expressionForEvalConfirmator;
+  @ApiModelProperty(example = "null", value = "výraz pro vyhodnocení role resp. uživatele, který provádí schvalování [persistentní položka]")
+  public String getExpressionforevalconfirmator() {
+    return expressionforevalconfirmator;
   }
 
-  public void setExpressionForEvalConfirmator(String expressionForEvalConfirmator) {
-    this.expressionForEvalConfirmator = expressionForEvalConfirmator;
+  public void setExpressionforevalconfirmator(String expressionforevalconfirmator) {
+    this.expressionforevalconfirmator = expressionforevalconfirmator;
   }
 
 
@@ -325,26 +361,26 @@ public class Docconfirmationdef   {
       return false;
     }
     Docconfirmationdef docconfirmationdef = (Docconfirmationdef) o;
-    return Objects.equals(this.displayName, docconfirmationdef.displayName) &&
-        Objects.equals(this.ID, docconfirmationdef.ID) &&
-        Objects.equals(this.classID, docconfirmationdef.classID) &&
-        Objects.equals(this.objVersion, docconfirmationdef.objVersion) &&
-        Objects.equals(this.docType, docconfirmationdef.docType) &&
-        Objects.equals(this.docQueueID, docconfirmationdef.docQueueID) &&
-        Objects.equals(this.createdByID, docconfirmationdef.createdByID) &&
-        Objects.equals(this.correctedByID, docconfirmationdef.correctedByID) &&
-        Objects.equals(this.creatorRoleID, docconfirmationdef.creatorRoleID) &&
+    return Objects.equals(this.displayname, docconfirmationdef.displayname) &&
+        Objects.equals(this.id, docconfirmationdef.id) &&
+        Objects.equals(this.classid, docconfirmationdef.classid) &&
+        Objects.equals(this.objversion, docconfirmationdef.objversion) &&
+        Objects.equals(this.doctype, docconfirmationdef.doctype) &&
+        Objects.equals(this.docqueueId, docconfirmationdef.docqueueId) &&
+        Objects.equals(this.createdbyId, docconfirmationdef.createdbyId) &&
+        Objects.equals(this.correctedbyId, docconfirmationdef.correctedbyId) &&
+        Objects.equals(this.creatorroleId, docconfirmationdef.creatorroleId) &&
         Objects.equals(this.condition, docconfirmationdef.condition) &&
-        Objects.equals(this.confirmatorRoleID, docconfirmationdef.confirmatorRoleID) &&
-        Objects.equals(this.confirmatorUserID, docconfirmationdef.confirmatorUserID) &&
-        Objects.equals(this.confirmatorOrder, docconfirmationdef.confirmatorOrder) &&
-        Objects.equals(this.evaluateConfirmator, docconfirmationdef.evaluateConfirmator) &&
-        Objects.equals(this.expressionForEvalConfirmator, docconfirmationdef.expressionForEvalConfirmator);
+        Objects.equals(this.confirmatorroleId, docconfirmationdef.confirmatorroleId) &&
+        Objects.equals(this.confirmatoruserId, docconfirmationdef.confirmatoruserId) &&
+        Objects.equals(this.confirmatororder, docconfirmationdef.confirmatororder) &&
+        Objects.equals(this.evaluateconfirmator, docconfirmationdef.evaluateconfirmator) &&
+        Objects.equals(this.expressionforevalconfirmator, docconfirmationdef.expressionforevalconfirmator);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, docType, docQueueID, createdByID, correctedByID, creatorRoleID, condition, confirmatorRoleID, confirmatorUserID, confirmatorOrder, evaluateConfirmator, expressionForEvalConfirmator);
+    return Objects.hash(displayname, id, classid, objversion, doctype, docqueueId, createdbyId, correctedbyId, creatorroleId, condition, confirmatorroleId, confirmatoruserId, confirmatororder, evaluateconfirmator, expressionforevalconfirmator);
   }
 
   @Override
@@ -352,21 +388,21 @@ public class Docconfirmationdef   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Docconfirmationdef {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    docType: ").append(toIndentedString(docType)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    creatorRoleID: ").append(toIndentedString(creatorRoleID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    doctype: ").append(toIndentedString(doctype)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    creatorroleId: ").append(toIndentedString(creatorroleId)).append("\n");
     sb.append("    condition: ").append(toIndentedString(condition)).append("\n");
-    sb.append("    confirmatorRoleID: ").append(toIndentedString(confirmatorRoleID)).append("\n");
-    sb.append("    confirmatorUserID: ").append(toIndentedString(confirmatorUserID)).append("\n");
-    sb.append("    confirmatorOrder: ").append(toIndentedString(confirmatorOrder)).append("\n");
-    sb.append("    evaluateConfirmator: ").append(toIndentedString(evaluateConfirmator)).append("\n");
-    sb.append("    expressionForEvalConfirmator: ").append(toIndentedString(expressionForEvalConfirmator)).append("\n");
+    sb.append("    confirmatorroleId: ").append(toIndentedString(confirmatorroleId)).append("\n");
+    sb.append("    confirmatoruserId: ").append(toIndentedString(confirmatoruserId)).append("\n");
+    sb.append("    confirmatororder: ").append(toIndentedString(confirmatororder)).append("\n");
+    sb.append("    evaluateconfirmator: ").append(toIndentedString(evaluateconfirmator)).append("\n");
+    sb.append("    expressionforevalconfirmator: ").append(toIndentedString(expressionforevalconfirmator)).append("\n");
     sb.append("}");
     return sb.toString();
   }

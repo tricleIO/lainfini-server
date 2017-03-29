@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,78 +34,114 @@ import java.util.Objects;
 /**
  * Wikispace
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wikispace   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Title")
+  @SerializedName("title")
   private String title = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("HomePageName")
-  private String homePageName = null;
+  @SerializedName("homepagename")
+  private String homepagename = null;
 
-  @SerializedName("HomePage_ID")
-  private String homePageID = null;
+  @SerializedName("homepage_id")
+  private String homepageId = null;
 
-  @SerializedName("CamelCaseEnable")
-  private Boolean camelCaseEnable = null;
+  @SerializedName("camelcaseenable")
+  private Boolean camelcaseenable = null;
 
-  @SerializedName("PageStyle_ID")
-  private String pageStyleID = null;
+  @SerializedName("pagestyle_id")
+  private String pagestyleId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Wikispace displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wikispace id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wikispace classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wikispace objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Wikispace hidden(Boolean hidden) {
@@ -114,10 +150,10 @@ public class Wikispace   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -132,10 +168,10 @@ public class Wikispace   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -150,10 +186,10 @@ public class Wikispace   {
   }
 
    /**
-   * Titulek [persistentní položka]
+   * titulek [persistentní položka]
    * @return title
   **/
-  @ApiModelProperty(example = "null", value = "Titulek [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "titulek [persistentní položka]")
   public String getTitle() {
     return title;
   }
@@ -168,10 +204,10 @@ public class Wikispace   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -180,76 +216,76 @@ public class Wikispace   {
     this.note = note;
   }
 
-  public Wikispace homePageName(String homePageName) {
-    this.homePageName = homePageName;
+  public Wikispace homepagename(String homepagename) {
+    this.homepagename = homepagename;
     return this;
   }
 
    /**
-   * Jméno domácí stránky [persistentní položka]
-   * @return homePageName
+   * jméno domácí stránky [persistentní položka]
+   * @return homepagename
   **/
-  @ApiModelProperty(example = "null", value = "Jméno domácí stránky [persistentní položka]")
-  public String getHomePageName() {
-    return homePageName;
+  @ApiModelProperty(example = "null", value = "jméno domácí stránky [persistentní položka]")
+  public String getHomepagename() {
+    return homepagename;
   }
 
-  public void setHomePageName(String homePageName) {
-    this.homePageName = homePageName;
+  public void setHomepagename(String homepagename) {
+    this.homepagename = homepagename;
   }
 
-  public Wikispace homePageID(String homePageID) {
-    this.homePageID = homePageID;
+  public Wikispace homepageId(String homepageId) {
+    this.homepageId = homepageId;
     return this;
   }
 
    /**
-   * Domácí stránka; ID objektu Wiki stránka
-   * @return homePageID
+   * domácí stránka; id objektu wiki stránka
+   * @return homepageId
   **/
-  @ApiModelProperty(example = "null", value = "Domácí stránka; ID objektu Wiki stránka")
-  public String getHomePageID() {
-    return homePageID;
+  @ApiModelProperty(example = "null", value = "domácí stránka; id objektu wiki stránka")
+  public String getHomepageId() {
+    return homepageId;
   }
 
-  public void setHomePageID(String homePageID) {
-    this.homePageID = homePageID;
+  public void setHomepageId(String homepageId) {
+    this.homepageId = homepageId;
   }
 
-  public Wikispace camelCaseEnable(Boolean camelCaseEnable) {
-    this.camelCaseEnable = camelCaseEnable;
+  public Wikispace camelcaseenable(Boolean camelcaseenable) {
+    this.camelcaseenable = camelcaseenable;
     return this;
   }
 
    /**
-   * Rozlišení Camel Case [persistentní položka]
-   * @return camelCaseEnable
+   * rozlišení camel case [persistentní položka]
+   * @return camelcaseenable
   **/
-  @ApiModelProperty(example = "null", value = "Rozlišení Camel Case [persistentní položka]")
-  public Boolean getCamelCaseEnable() {
-    return camelCaseEnable;
+  @ApiModelProperty(example = "null", value = "rozlišení camel case [persistentní položka]")
+  public Boolean getCamelcaseenable() {
+    return camelcaseenable;
   }
 
-  public void setCamelCaseEnable(Boolean camelCaseEnable) {
-    this.camelCaseEnable = camelCaseEnable;
+  public void setCamelcaseenable(Boolean camelcaseenable) {
+    this.camelcaseenable = camelcaseenable;
   }
 
-  public Wikispace pageStyleID(String pageStyleID) {
-    this.pageStyleID = pageStyleID;
+  public Wikispace pagestyleId(String pagestyleId) {
+    this.pagestyleId = pagestyleId;
     return this;
   }
 
    /**
-   * Styl stránky; ID objektu Systémový soubor stylů [persistentní položka]
-   * @return pageStyleID
+   * styl stránky; id objektu systémový soubor stylů [persistentní položka]
+   * @return pagestyleId
   **/
-  @ApiModelProperty(example = "null", value = "Styl stránky; ID objektu Systémový soubor stylů [persistentní položka]")
-  public String getPageStyleID() {
-    return pageStyleID;
+  @ApiModelProperty(example = "null", value = "styl stránky; id objektu systémový soubor stylů [persistentní položka]")
+  public String getPagestyleId() {
+    return pagestyleId;
   }
 
-  public void setPageStyleID(String pageStyleID) {
-    this.pageStyleID = pageStyleID;
+  public void setPagestyleId(String pagestyleId) {
+    this.pagestyleId = pagestyleId;
   }
 
 
@@ -262,23 +298,23 @@ public class Wikispace   {
       return false;
     }
     Wikispace wikispace = (Wikispace) o;
-    return Objects.equals(this.displayName, wikispace.displayName) &&
-        Objects.equals(this.ID, wikispace.ID) &&
-        Objects.equals(this.classID, wikispace.classID) &&
-        Objects.equals(this.objVersion, wikispace.objVersion) &&
+    return Objects.equals(this.displayname, wikispace.displayname) &&
+        Objects.equals(this.id, wikispace.id) &&
+        Objects.equals(this.classid, wikispace.classid) &&
+        Objects.equals(this.objversion, wikispace.objversion) &&
         Objects.equals(this.hidden, wikispace.hidden) &&
         Objects.equals(this.name, wikispace.name) &&
         Objects.equals(this.title, wikispace.title) &&
         Objects.equals(this.note, wikispace.note) &&
-        Objects.equals(this.homePageName, wikispace.homePageName) &&
-        Objects.equals(this.homePageID, wikispace.homePageID) &&
-        Objects.equals(this.camelCaseEnable, wikispace.camelCaseEnable) &&
-        Objects.equals(this.pageStyleID, wikispace.pageStyleID);
+        Objects.equals(this.homepagename, wikispace.homepagename) &&
+        Objects.equals(this.homepageId, wikispace.homepageId) &&
+        Objects.equals(this.camelcaseenable, wikispace.camelcaseenable) &&
+        Objects.equals(this.pagestyleId, wikispace.pagestyleId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, name, title, note, homePageName, homePageID, camelCaseEnable, pageStyleID);
+    return Objects.hash(displayname, id, classid, objversion, hidden, name, title, note, homepagename, homepageId, camelcaseenable, pagestyleId);
   }
 
   @Override
@@ -286,18 +322,18 @@ public class Wikispace   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wikispace {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
-    sb.append("    homePageName: ").append(toIndentedString(homePageName)).append("\n");
-    sb.append("    homePageID: ").append(toIndentedString(homePageID)).append("\n");
-    sb.append("    camelCaseEnable: ").append(toIndentedString(camelCaseEnable)).append("\n");
-    sb.append("    pageStyleID: ").append(toIndentedString(pageStyleID)).append("\n");
+    sb.append("    homepagename: ").append(toIndentedString(homepagename)).append("\n");
+    sb.append("    homepageId: ").append(toIndentedString(homepageId)).append("\n");
+    sb.append("    camelcaseenable: ").append(toIndentedString(camelcaseenable)).append("\n");
+    sb.append("    pagestyleId: ").append(toIndentedString(pagestyleId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

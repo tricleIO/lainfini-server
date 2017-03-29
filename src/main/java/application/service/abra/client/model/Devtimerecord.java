@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,207 +35,243 @@ import java.util.Objects;
 /**
  * Devtimerecord
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Devtimerecord   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DevDocument_ID")
-  private String devDocumentID = null;
+  @SerializedName("devdocument_id")
+  private String devdocumentId = null;
 
-  @SerializedName("DevDocumentType")
-  private String devDocumentType = null;
+  @SerializedName("devdocumenttype")
+  private String devdocumenttype = null;
 
-  @SerializedName("DateOfRecord$DATE")
-  private DateTime dateOfRecordDATE = null;
+  @SerializedName("dateofrecord$date")
+  private DateTime dateofrecorddate = null;
 
-  @SerializedName("Worker_ID")
-  private String workerID = null;
+  @SerializedName("worker_id")
+  private String workerId = null;
 
-  @SerializedName("TimeOfWork")
-  private Double timeOfWork = null;
+  @SerializedName("timeofwork")
+  private Double timeofwork = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("RemainingTime")
-  private Double remainingTime = null;
+  @SerializedName("remainingtime")
+  private Double remainingtime = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Devtimerecord devDocumentID(String devDocumentID) {
-    this.devDocumentID = devDocumentID;
+  public Devtimerecord displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Projektová dokumentace; ID objektu Dokument [persistentní položka]
-   * @return devDocumentID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Projektová dokumentace; ID objektu Dokument [persistentní položka]")
-  public String getDevDocumentID() {
-    return devDocumentID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDevDocumentID(String devDocumentID) {
-    this.devDocumentID = devDocumentID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Devtimerecord devDocumentType(String devDocumentType) {
-    this.devDocumentType = devDocumentType;
+  public Devtimerecord id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Typ projektové dokumentace [persistentní položka]
-   * @return devDocumentType
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Typ projektové dokumentace [persistentní položka]")
-  public String getDevDocumentType() {
-    return devDocumentType;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDevDocumentType(String devDocumentType) {
-    this.devDocumentType = devDocumentType;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Devtimerecord dateOfRecordDATE(DateTime dateOfRecordDATE) {
-    this.dateOfRecordDATE = dateOfRecordDATE;
+  public Devtimerecord classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Ve dni [persistentní položka]
-   * @return dateOfRecordDATE
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Ve dni [persistentní položka]")
-  public DateTime getDateOfRecordDATE() {
-    return dateOfRecordDATE;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setDateOfRecordDATE(DateTime dateOfRecordDATE) {
-    this.dateOfRecordDATE = dateOfRecordDATE;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Devtimerecord workerID(String workerID) {
-    this.workerID = workerID;
+  public Devtimerecord objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Pracovník; ID objektu Uživatel [persistentní položka]
-   * @return workerID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Pracovník; ID objektu Uživatel [persistentní položka]")
-  public String getWorkerID() {
-    return workerID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setWorkerID(String workerID) {
-    this.workerID = workerID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Devtimerecord timeOfWork(Double timeOfWork) {
-    this.timeOfWork = timeOfWork;
+  public Devtimerecord devdocumentId(String devdocumentId) {
+    this.devdocumentId = devdocumentId;
     return this;
   }
 
    /**
-   * Strávený čas [persistentní položka]
-   * @return timeOfWork
+   * projektová dokumentace; id objektu dokument [persistentní položka]
+   * @return devdocumentId
   **/
-  @ApiModelProperty(example = "null", value = "Strávený čas [persistentní položka]")
-  public Double getTimeOfWork() {
-    return timeOfWork;
+  @ApiModelProperty(example = "null", value = "projektová dokumentace; id objektu dokument [persistentní položka]")
+  public String getDevdocumentId() {
+    return devdocumentId;
   }
 
-  public void setTimeOfWork(Double timeOfWork) {
-    this.timeOfWork = timeOfWork;
+  public void setDevdocumentId(String devdocumentId) {
+    this.devdocumentId = devdocumentId;
   }
 
-  public Devtimerecord createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Devtimerecord devdocumenttype(String devdocumenttype) {
+    this.devdocumenttype = devdocumenttype;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * typ projektové dokumentace [persistentní položka]
+   * @return devdocumenttype
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "typ projektové dokumentace [persistentní položka]")
+  public String getDevdocumenttype() {
+    return devdocumenttype;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setDevdocumenttype(String devdocumenttype) {
+    this.devdocumenttype = devdocumenttype;
   }
 
-  public Devtimerecord correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Devtimerecord dateofrecorddate(DateTime dateofrecorddate) {
+    this.dateofrecorddate = dateofrecorddate;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * ve dni [persistentní položka]
+   * @return dateofrecorddate
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "ve dni [persistentní položka]")
+  public DateTime getDateofrecorddate() {
+    return dateofrecorddate;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setDateofrecorddate(DateTime dateofrecorddate) {
+    this.dateofrecorddate = dateofrecorddate;
+  }
+
+  public Devtimerecord workerId(String workerId) {
+    this.workerId = workerId;
+    return this;
+  }
+
+   /**
+   * pracovník; id objektu uživatel [persistentní položka]
+   * @return workerId
+  **/
+  @ApiModelProperty(example = "null", value = "pracovník; id objektu uživatel [persistentní položka]")
+  public String getWorkerId() {
+    return workerId;
+  }
+
+  public void setWorkerId(String workerId) {
+    this.workerId = workerId;
+  }
+
+  public Devtimerecord timeofwork(Double timeofwork) {
+    this.timeofwork = timeofwork;
+    return this;
+  }
+
+   /**
+   * strávený čas [persistentní položka]
+   * @return timeofwork
+  **/
+  @ApiModelProperty(example = "null", value = "strávený čas [persistentní položka]")
+  public Double getTimeofwork() {
+    return timeofwork;
+  }
+
+  public void setTimeofwork(Double timeofwork) {
+    this.timeofwork = timeofwork;
+  }
+
+  public Devtimerecord createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+    return this;
+  }
+
+   /**
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
+  }
+
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Devtimerecord correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+    return this;
+  }
+
+   /**
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
+  }
+
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
   public Devtimerecord description(String description) {
@@ -244,10 +280,10 @@ public class Devtimerecord   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -256,13 +292,22 @@ public class Devtimerecord   {
     this.description = description;
   }
 
+  public Devtimerecord remainingtime(Double remainingtime) {
+    this.remainingtime = remainingtime;
+    return this;
+  }
+
    /**
-   * Zbývající čas
-   * @return remainingTime
+   * zbývající čas
+   * @return remainingtime
   **/
-  @ApiModelProperty(example = "null", value = "Zbývající čas")
-  public Double getRemainingTime() {
-    return remainingTime;
+  @ApiModelProperty(example = "null", value = "zbývající čas")
+  public Double getRemainingtime() {
+    return remainingtime;
+  }
+
+  public void setRemainingtime(Double remainingtime) {
+    this.remainingtime = remainingtime;
   }
 
 
@@ -275,24 +320,24 @@ public class Devtimerecord   {
       return false;
     }
     Devtimerecord devtimerecord = (Devtimerecord) o;
-    return Objects.equals(this.displayName, devtimerecord.displayName) &&
-        Objects.equals(this.ID, devtimerecord.ID) &&
-        Objects.equals(this.classID, devtimerecord.classID) &&
-        Objects.equals(this.objVersion, devtimerecord.objVersion) &&
-        Objects.equals(this.devDocumentID, devtimerecord.devDocumentID) &&
-        Objects.equals(this.devDocumentType, devtimerecord.devDocumentType) &&
-        Objects.equals(this.dateOfRecordDATE, devtimerecord.dateOfRecordDATE) &&
-        Objects.equals(this.workerID, devtimerecord.workerID) &&
-        Objects.equals(this.timeOfWork, devtimerecord.timeOfWork) &&
-        Objects.equals(this.createdByID, devtimerecord.createdByID) &&
-        Objects.equals(this.correctedByID, devtimerecord.correctedByID) &&
+    return Objects.equals(this.displayname, devtimerecord.displayname) &&
+        Objects.equals(this.id, devtimerecord.id) &&
+        Objects.equals(this.classid, devtimerecord.classid) &&
+        Objects.equals(this.objversion, devtimerecord.objversion) &&
+        Objects.equals(this.devdocumentId, devtimerecord.devdocumentId) &&
+        Objects.equals(this.devdocumenttype, devtimerecord.devdocumenttype) &&
+        Objects.equals(this.dateofrecorddate, devtimerecord.dateofrecorddate) &&
+        Objects.equals(this.workerId, devtimerecord.workerId) &&
+        Objects.equals(this.timeofwork, devtimerecord.timeofwork) &&
+        Objects.equals(this.createdbyId, devtimerecord.createdbyId) &&
+        Objects.equals(this.correctedbyId, devtimerecord.correctedbyId) &&
         Objects.equals(this.description, devtimerecord.description) &&
-        Objects.equals(this.remainingTime, devtimerecord.remainingTime);
+        Objects.equals(this.remainingtime, devtimerecord.remainingtime);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, devDocumentID, devDocumentType, dateOfRecordDATE, workerID, timeOfWork, createdByID, correctedByID, description, remainingTime);
+    return Objects.hash(displayname, id, classid, objversion, devdocumentId, devdocumenttype, dateofrecorddate, workerId, timeofwork, createdbyId, correctedbyId, description, remainingtime);
   }
 
   @Override
@@ -300,19 +345,19 @@ public class Devtimerecord   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Devtimerecord {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    devDocumentID: ").append(toIndentedString(devDocumentID)).append("\n");
-    sb.append("    devDocumentType: ").append(toIndentedString(devDocumentType)).append("\n");
-    sb.append("    dateOfRecordDATE: ").append(toIndentedString(dateOfRecordDATE)).append("\n");
-    sb.append("    workerID: ").append(toIndentedString(workerID)).append("\n");
-    sb.append("    timeOfWork: ").append(toIndentedString(timeOfWork)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    devdocumentId: ").append(toIndentedString(devdocumentId)).append("\n");
+    sb.append("    devdocumenttype: ").append(toIndentedString(devdocumenttype)).append("\n");
+    sb.append("    dateofrecorddate: ").append(toIndentedString(dateofrecorddate)).append("\n");
+    sb.append("    workerId: ").append(toIndentedString(workerId)).append("\n");
+    sb.append("    timeofwork: ").append(toIndentedString(timeofwork)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    remainingTime: ").append(toIndentedString(remainingTime)).append("\n");
+    sb.append("    remainingtime: ").append(toIndentedString(remainingtime)).append("\n");
     sb.append("}");
     return sb.toString();
   }

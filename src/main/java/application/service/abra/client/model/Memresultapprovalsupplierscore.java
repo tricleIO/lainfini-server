@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,156 +35,201 @@ import java.util.Objects;
 /**
  * Memresultapprovalsupplierscore
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Memresultapprovalsupplierscore   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("EvaluationCriterion_ID")
-  private String evaluationCriterionID = null;
+  @SerializedName("evaluationcriterion_id")
+  private String evaluationcriterionId = null;
 
-  @SerializedName("CreatedDate$DATE")
-  private DateTime createdDateDATE = null;
+  @SerializedName("createddate$date")
+  private DateTime createddatedate = null;
 
-  @SerializedName("Frequency")
+  @SerializedName("frequency")
   private Integer frequency = null;
 
-  @SerializedName("OrderNumber")
-  private Integer orderNumber = null;
+  @SerializedName("ordernumber")
+  private Integer ordernumber = null;
 
-  @SerializedName("InYear")
-  private Integer inYear = null;
+  @SerializedName("inyear")
+  private Integer inyear = null;
 
-  @SerializedName("EvaluatedFromDate$DATE")
-  private DateTime evaluatedFromDateDATE = null;
+  @SerializedName("evaluatedfromdate$date")
+  private DateTime evaluatedfromdatedate = null;
 
-  @SerializedName("EvaluatedToDate$DATE")
-  private DateTime evaluatedToDateDATE = null;
+  @SerializedName("evaluatedtodate$date")
+  private DateTime evaluatedtodatedate = null;
 
-  @SerializedName("CalculatedScore")
-  private Integer calculatedScore = null;
+  @SerializedName("calculatedscore")
+  private Integer calculatedscore = null;
 
-  @SerializedName("Score")
+  @SerializedName("score")
   private Integer score = null;
 
-  @SerializedName("Takeover")
+  @SerializedName("takeover")
   private Boolean takeover = null;
 
-  @SerializedName("PeriodText")
-  private String periodText = null;
+  @SerializedName("periodtext")
+  private String periodtext = null;
 
-  @SerializedName("Satisfactory")
+  @SerializedName("satisfactory")
   private Boolean satisfactory = null;
 
-  @SerializedName("PercentScore")
-  private Double percentScore = null;
+  @SerializedName("percentscore")
+  private Double percentscore = null;
 
-  @SerializedName("HeaderIndex")
-  private Integer headerIndex = null;
+  @SerializedName("headerindex")
+  private Integer headerindex = null;
 
-  @SerializedName("ApprovedSupplierScore_ID")
-  private String approvedSupplierScoreID = null;
+  @SerializedName("approvedsupplierscore_id")
+  private String approvedsupplierscoreId = null;
 
-  @SerializedName("Exists")
+  @SerializedName("exists")
   private Boolean exists = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Hodnocený dodavatel [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Hodnocený dodavatel [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Memresultapprovalsupplierscore evaluationCriterionID(String evaluationCriterionID) {
-    this.evaluationCriterionID = evaluationCriterionID;
+  public Memresultapprovalsupplierscore displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Hodnotící kritérium; ID objektu Hodnotící kritérium [persistentní položka]
-   * @return evaluationCriterionID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Hodnotící kritérium; ID objektu Hodnotící kritérium [persistentní položka]")
-  public String getEvaluationCriterionID() {
-    return evaluationCriterionID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setEvaluationCriterionID(String evaluationCriterionID) {
-    this.evaluationCriterionID = evaluationCriterionID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Memresultapprovalsupplierscore createdDateDATE(DateTime createdDateDATE) {
-    this.createdDateDATE = createdDateDATE;
+  public Memresultapprovalsupplierscore id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Datum známkování [persistentní položka]
-   * @return createdDateDATE
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Datum známkování [persistentní položka]")
-  public DateTime getCreatedDateDATE() {
-    return createdDateDATE;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setCreatedDateDATE(DateTime createdDateDATE) {
-    this.createdDateDATE = createdDateDATE;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Memresultapprovalsupplierscore classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Memresultapprovalsupplierscore objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Memresultapprovalsupplierscore parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu hodnocený dodavatel [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu hodnocený dodavatel [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Memresultapprovalsupplierscore evaluationcriterionId(String evaluationcriterionId) {
+    this.evaluationcriterionId = evaluationcriterionId;
+    return this;
+  }
+
+   /**
+   * hodnotící kritérium; id objektu hodnotící kritérium [persistentní položka]
+   * @return evaluationcriterionId
+  **/
+  @ApiModelProperty(example = "null", value = "hodnotící kritérium; id objektu hodnotící kritérium [persistentní položka]")
+  public String getEvaluationcriterionId() {
+    return evaluationcriterionId;
+  }
+
+  public void setEvaluationcriterionId(String evaluationcriterionId) {
+    this.evaluationcriterionId = evaluationcriterionId;
+  }
+
+  public Memresultapprovalsupplierscore createddatedate(DateTime createddatedate) {
+    this.createddatedate = createddatedate;
+    return this;
+  }
+
+   /**
+   * datum známkování [persistentní položka]
+   * @return createddatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum známkování [persistentní položka]")
+  public DateTime getCreateddatedate() {
+    return createddatedate;
+  }
+
+  public void setCreateddatedate(DateTime createddatedate) {
+    this.createddatedate = createddatedate;
   }
 
   public Memresultapprovalsupplierscore frequency(Integer frequency) {
@@ -205,94 +250,94 @@ public class Memresultapprovalsupplierscore   {
     this.frequency = frequency;
   }
 
-  public Memresultapprovalsupplierscore orderNumber(Integer orderNumber) {
-    this.orderNumber = orderNumber;
+  public Memresultapprovalsupplierscore ordernumber(Integer ordernumber) {
+    this.ordernumber = ordernumber;
     return this;
   }
 
    /**
-   * Pořadové číslo období [persistentní položka]
-   * @return orderNumber
+   * pořadové číslo období [persistentní položka]
+   * @return ordernumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo období [persistentní položka]")
-  public Integer getOrderNumber() {
-    return orderNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo období [persistentní položka]")
+  public Integer getOrdernumber() {
+    return ordernumber;
   }
 
-  public void setOrderNumber(Integer orderNumber) {
-    this.orderNumber = orderNumber;
+  public void setOrdernumber(Integer ordernumber) {
+    this.ordernumber = ordernumber;
   }
 
-  public Memresultapprovalsupplierscore inYear(Integer inYear) {
-    this.inYear = inYear;
+  public Memresultapprovalsupplierscore inyear(Integer inyear) {
+    this.inyear = inyear;
     return this;
   }
 
    /**
-   * Rok [persistentní položka]
-   * @return inYear
+   * rok [persistentní položka]
+   * @return inyear
   **/
-  @ApiModelProperty(example = "null", value = "Rok [persistentní položka]")
-  public Integer getInYear() {
-    return inYear;
+  @ApiModelProperty(example = "null", value = "rok [persistentní položka]")
+  public Integer getInyear() {
+    return inyear;
   }
 
-  public void setInYear(Integer inYear) {
-    this.inYear = inYear;
+  public void setInyear(Integer inyear) {
+    this.inyear = inyear;
   }
 
-  public Memresultapprovalsupplierscore evaluatedFromDateDATE(DateTime evaluatedFromDateDATE) {
-    this.evaluatedFromDateDATE = evaluatedFromDateDATE;
+  public Memresultapprovalsupplierscore evaluatedfromdatedate(DateTime evaluatedfromdatedate) {
+    this.evaluatedfromdatedate = evaluatedfromdatedate;
     return this;
   }
 
    /**
-   * Spodní datum vyhodnocovaného období [persistentní položka]
-   * @return evaluatedFromDateDATE
+   * spodní datum vyhodnocovaného období [persistentní položka]
+   * @return evaluatedfromdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Spodní datum vyhodnocovaného období [persistentní položka]")
-  public DateTime getEvaluatedFromDateDATE() {
-    return evaluatedFromDateDATE;
+  @ApiModelProperty(example = "null", value = "spodní datum vyhodnocovaného období [persistentní položka]")
+  public DateTime getEvaluatedfromdatedate() {
+    return evaluatedfromdatedate;
   }
 
-  public void setEvaluatedFromDateDATE(DateTime evaluatedFromDateDATE) {
-    this.evaluatedFromDateDATE = evaluatedFromDateDATE;
+  public void setEvaluatedfromdatedate(DateTime evaluatedfromdatedate) {
+    this.evaluatedfromdatedate = evaluatedfromdatedate;
   }
 
-  public Memresultapprovalsupplierscore evaluatedToDateDATE(DateTime evaluatedToDateDATE) {
-    this.evaluatedToDateDATE = evaluatedToDateDATE;
+  public Memresultapprovalsupplierscore evaluatedtodatedate(DateTime evaluatedtodatedate) {
+    this.evaluatedtodatedate = evaluatedtodatedate;
     return this;
   }
 
    /**
-   * Horní datum vyhodnocovaného období [persistentní položka]
-   * @return evaluatedToDateDATE
+   * horní datum vyhodnocovaného období [persistentní položka]
+   * @return evaluatedtodatedate
   **/
-  @ApiModelProperty(example = "null", value = "Horní datum vyhodnocovaného období [persistentní položka]")
-  public DateTime getEvaluatedToDateDATE() {
-    return evaluatedToDateDATE;
+  @ApiModelProperty(example = "null", value = "horní datum vyhodnocovaného období [persistentní položka]")
+  public DateTime getEvaluatedtodatedate() {
+    return evaluatedtodatedate;
   }
 
-  public void setEvaluatedToDateDATE(DateTime evaluatedToDateDATE) {
-    this.evaluatedToDateDATE = evaluatedToDateDATE;
+  public void setEvaluatedtodatedate(DateTime evaluatedtodatedate) {
+    this.evaluatedtodatedate = evaluatedtodatedate;
   }
 
-  public Memresultapprovalsupplierscore calculatedScore(Integer calculatedScore) {
-    this.calculatedScore = calculatedScore;
+  public Memresultapprovalsupplierscore calculatedscore(Integer calculatedscore) {
+    this.calculatedscore = calculatedscore;
     return this;
   }
 
    /**
-   * Vypočtený počet bodů [persistentní položka]
-   * @return calculatedScore
+   * vypočtený počet bodů [persistentní položka]
+   * @return calculatedscore
   **/
-  @ApiModelProperty(example = "null", value = "Vypočtený počet bodů [persistentní položka]")
-  public Integer getCalculatedScore() {
-    return calculatedScore;
+  @ApiModelProperty(example = "null", value = "vypočtený počet bodů [persistentní položka]")
+  public Integer getCalculatedscore() {
+    return calculatedscore;
   }
 
-  public void setCalculatedScore(Integer calculatedScore) {
-    this.calculatedScore = calculatedScore;
+  public void setCalculatedscore(Integer calculatedscore) {
+    this.calculatedscore = calculatedscore;
   }
 
   public Memresultapprovalsupplierscore score(Integer score) {
@@ -301,10 +346,10 @@ public class Memresultapprovalsupplierscore   {
   }
 
    /**
-   * Počet bodů [persistentní položka]
+   * počet bodů [persistentní položka]
    * @return score
   **/
-  @ApiModelProperty(example = "null", value = "Počet bodů [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "počet bodů [persistentní položka]")
   public Integer getScore() {
     return score;
   }
@@ -319,10 +364,10 @@ public class Memresultapprovalsupplierscore   {
   }
 
    /**
-   * Převzato [persistentní položka]
+   * převzato [persistentní položka]
    * @return takeover
   **/
-  @ApiModelProperty(example = "null", value = "Převzato [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "převzato [persistentní položka]")
   public Boolean getTakeover() {
     return takeover;
   }
@@ -331,22 +376,22 @@ public class Memresultapprovalsupplierscore   {
     this.takeover = takeover;
   }
 
-  public Memresultapprovalsupplierscore periodText(String periodText) {
-    this.periodText = periodText;
+  public Memresultapprovalsupplierscore periodtext(String periodtext) {
+    this.periodtext = periodtext;
     return this;
   }
 
    /**
-   * Období
-   * @return periodText
+   * období
+   * @return periodtext
   **/
-  @ApiModelProperty(example = "null", value = "Období")
-  public String getPeriodText() {
-    return periodText;
+  @ApiModelProperty(example = "null", value = "období")
+  public String getPeriodtext() {
+    return periodtext;
   }
 
-  public void setPeriodText(String periodText) {
-    this.periodText = periodText;
+  public void setPeriodtext(String periodtext) {
+    this.periodtext = periodtext;
   }
 
   public Memresultapprovalsupplierscore satisfactory(Boolean satisfactory) {
@@ -355,10 +400,10 @@ public class Memresultapprovalsupplierscore   {
   }
 
    /**
-   * Vyhovuje
+   * vyhovuje
    * @return satisfactory
   **/
-  @ApiModelProperty(example = "null", value = "Vyhovuje")
+  @ApiModelProperty(example = "null", value = "vyhovuje")
   public Boolean getSatisfactory() {
     return satisfactory;
   }
@@ -367,58 +412,58 @@ public class Memresultapprovalsupplierscore   {
     this.satisfactory = satisfactory;
   }
 
-  public Memresultapprovalsupplierscore percentScore(Double percentScore) {
-    this.percentScore = percentScore;
+  public Memresultapprovalsupplierscore percentscore(Double percentscore) {
+    this.percentscore = percentscore;
     return this;
   }
 
    /**
-   * Procentní hodnocení
-   * @return percentScore
+   * procentní hodnocení
+   * @return percentscore
   **/
-  @ApiModelProperty(example = "null", value = "Procentní hodnocení")
-  public Double getPercentScore() {
-    return percentScore;
+  @ApiModelProperty(example = "null", value = "procentní hodnocení")
+  public Double getPercentscore() {
+    return percentscore;
   }
 
-  public void setPercentScore(Double percentScore) {
-    this.percentScore = percentScore;
+  public void setPercentscore(Double percentscore) {
+    this.percentscore = percentscore;
   }
 
-  public Memresultapprovalsupplierscore headerIndex(Integer headerIndex) {
-    this.headerIndex = headerIndex;
+  public Memresultapprovalsupplierscore headerindex(Integer headerindex) {
+    this.headerindex = headerindex;
     return this;
   }
 
    /**
-   * Odkaz na hlavičku
-   * @return headerIndex
+   * odkaz na hlavičku
+   * @return headerindex
   **/
-  @ApiModelProperty(example = "null", value = "Odkaz na hlavičku")
-  public Integer getHeaderIndex() {
-    return headerIndex;
+  @ApiModelProperty(example = "null", value = "odkaz na hlavičku")
+  public Integer getHeaderindex() {
+    return headerindex;
   }
 
-  public void setHeaderIndex(Integer headerIndex) {
-    this.headerIndex = headerIndex;
+  public void setHeaderindex(Integer headerindex) {
+    this.headerindex = headerindex;
   }
 
-  public Memresultapprovalsupplierscore approvedSupplierScoreID(String approvedSupplierScoreID) {
-    this.approvedSupplierScoreID = approvedSupplierScoreID;
+  public Memresultapprovalsupplierscore approvedsupplierscoreId(String approvedsupplierscoreId) {
+    this.approvedsupplierscoreId = approvedsupplierscoreId;
     return this;
   }
 
    /**
-   * Identifikace již existujícího hodnocení
-   * @return approvedSupplierScoreID
+   * identifikace již existujícího hodnocení
+   * @return approvedsupplierscoreId
   **/
-  @ApiModelProperty(example = "null", value = "Identifikace již existujícího hodnocení")
-  public String getApprovedSupplierScoreID() {
-    return approvedSupplierScoreID;
+  @ApiModelProperty(example = "null", value = "identifikace již existujícího hodnocení")
+  public String getApprovedsupplierscoreId() {
+    return approvedsupplierscoreId;
   }
 
-  public void setApprovedSupplierScoreID(String approvedSupplierScoreID) {
-    this.approvedSupplierScoreID = approvedSupplierScoreID;
+  public void setApprovedsupplierscoreId(String approvedsupplierscoreId) {
+    this.approvedsupplierscoreId = approvedsupplierscoreId;
   }
 
   public Memresultapprovalsupplierscore exists(Boolean exists) {
@@ -427,10 +472,10 @@ public class Memresultapprovalsupplierscore   {
   }
 
    /**
-   * Hodnocení existuje
+   * hodnocení existuje
    * @return exists
   **/
-  @ApiModelProperty(example = "null", value = "Hodnocení existuje")
+  @ApiModelProperty(example = "null", value = "hodnocení existuje")
   public Boolean getExists() {
     return exists;
   }
@@ -439,40 +484,40 @@ public class Memresultapprovalsupplierscore   {
     this.exists = exists;
   }
 
-  public Memresultapprovalsupplierscore createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Memresultapprovalsupplierscore createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Memresultapprovalsupplierscore correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Memresultapprovalsupplierscore correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
 
@@ -485,34 +530,34 @@ public class Memresultapprovalsupplierscore   {
       return false;
     }
     Memresultapprovalsupplierscore memresultapprovalsupplierscore = (Memresultapprovalsupplierscore) o;
-    return Objects.equals(this.displayName, memresultapprovalsupplierscore.displayName) &&
-        Objects.equals(this.ID, memresultapprovalsupplierscore.ID) &&
-        Objects.equals(this.classID, memresultapprovalsupplierscore.classID) &&
-        Objects.equals(this.objVersion, memresultapprovalsupplierscore.objVersion) &&
-        Objects.equals(this.parentID, memresultapprovalsupplierscore.parentID) &&
-        Objects.equals(this.evaluationCriterionID, memresultapprovalsupplierscore.evaluationCriterionID) &&
-        Objects.equals(this.createdDateDATE, memresultapprovalsupplierscore.createdDateDATE) &&
+    return Objects.equals(this.displayname, memresultapprovalsupplierscore.displayname) &&
+        Objects.equals(this.id, memresultapprovalsupplierscore.id) &&
+        Objects.equals(this.classid, memresultapprovalsupplierscore.classid) &&
+        Objects.equals(this.objversion, memresultapprovalsupplierscore.objversion) &&
+        Objects.equals(this.parentId, memresultapprovalsupplierscore.parentId) &&
+        Objects.equals(this.evaluationcriterionId, memresultapprovalsupplierscore.evaluationcriterionId) &&
+        Objects.equals(this.createddatedate, memresultapprovalsupplierscore.createddatedate) &&
         Objects.equals(this.frequency, memresultapprovalsupplierscore.frequency) &&
-        Objects.equals(this.orderNumber, memresultapprovalsupplierscore.orderNumber) &&
-        Objects.equals(this.inYear, memresultapprovalsupplierscore.inYear) &&
-        Objects.equals(this.evaluatedFromDateDATE, memresultapprovalsupplierscore.evaluatedFromDateDATE) &&
-        Objects.equals(this.evaluatedToDateDATE, memresultapprovalsupplierscore.evaluatedToDateDATE) &&
-        Objects.equals(this.calculatedScore, memresultapprovalsupplierscore.calculatedScore) &&
+        Objects.equals(this.ordernumber, memresultapprovalsupplierscore.ordernumber) &&
+        Objects.equals(this.inyear, memresultapprovalsupplierscore.inyear) &&
+        Objects.equals(this.evaluatedfromdatedate, memresultapprovalsupplierscore.evaluatedfromdatedate) &&
+        Objects.equals(this.evaluatedtodatedate, memresultapprovalsupplierscore.evaluatedtodatedate) &&
+        Objects.equals(this.calculatedscore, memresultapprovalsupplierscore.calculatedscore) &&
         Objects.equals(this.score, memresultapprovalsupplierscore.score) &&
         Objects.equals(this.takeover, memresultapprovalsupplierscore.takeover) &&
-        Objects.equals(this.periodText, memresultapprovalsupplierscore.periodText) &&
+        Objects.equals(this.periodtext, memresultapprovalsupplierscore.periodtext) &&
         Objects.equals(this.satisfactory, memresultapprovalsupplierscore.satisfactory) &&
-        Objects.equals(this.percentScore, memresultapprovalsupplierscore.percentScore) &&
-        Objects.equals(this.headerIndex, memresultapprovalsupplierscore.headerIndex) &&
-        Objects.equals(this.approvedSupplierScoreID, memresultapprovalsupplierscore.approvedSupplierScoreID) &&
+        Objects.equals(this.percentscore, memresultapprovalsupplierscore.percentscore) &&
+        Objects.equals(this.headerindex, memresultapprovalsupplierscore.headerindex) &&
+        Objects.equals(this.approvedsupplierscoreId, memresultapprovalsupplierscore.approvedsupplierscoreId) &&
         Objects.equals(this.exists, memresultapprovalsupplierscore.exists) &&
-        Objects.equals(this.createdByID, memresultapprovalsupplierscore.createdByID) &&
-        Objects.equals(this.correctedByID, memresultapprovalsupplierscore.correctedByID);
+        Objects.equals(this.createdbyId, memresultapprovalsupplierscore.createdbyId) &&
+        Objects.equals(this.correctedbyId, memresultapprovalsupplierscore.correctedbyId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, evaluationCriterionID, createdDateDATE, frequency, orderNumber, inYear, evaluatedFromDateDATE, evaluatedToDateDATE, calculatedScore, score, takeover, periodText, satisfactory, percentScore, headerIndex, approvedSupplierScoreID, exists, createdByID, correctedByID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, evaluationcriterionId, createddatedate, frequency, ordernumber, inyear, evaluatedfromdatedate, evaluatedtodatedate, calculatedscore, score, takeover, periodtext, satisfactory, percentscore, headerindex, approvedsupplierscoreId, exists, createdbyId, correctedbyId);
   }
 
   @Override
@@ -520,29 +565,29 @@ public class Memresultapprovalsupplierscore   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Memresultapprovalsupplierscore {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    evaluationCriterionID: ").append(toIndentedString(evaluationCriterionID)).append("\n");
-    sb.append("    createdDateDATE: ").append(toIndentedString(createdDateDATE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    evaluationcriterionId: ").append(toIndentedString(evaluationcriterionId)).append("\n");
+    sb.append("    createddatedate: ").append(toIndentedString(createddatedate)).append("\n");
     sb.append("    frequency: ").append(toIndentedString(frequency)).append("\n");
-    sb.append("    orderNumber: ").append(toIndentedString(orderNumber)).append("\n");
-    sb.append("    inYear: ").append(toIndentedString(inYear)).append("\n");
-    sb.append("    evaluatedFromDateDATE: ").append(toIndentedString(evaluatedFromDateDATE)).append("\n");
-    sb.append("    evaluatedToDateDATE: ").append(toIndentedString(evaluatedToDateDATE)).append("\n");
-    sb.append("    calculatedScore: ").append(toIndentedString(calculatedScore)).append("\n");
+    sb.append("    ordernumber: ").append(toIndentedString(ordernumber)).append("\n");
+    sb.append("    inyear: ").append(toIndentedString(inyear)).append("\n");
+    sb.append("    evaluatedfromdatedate: ").append(toIndentedString(evaluatedfromdatedate)).append("\n");
+    sb.append("    evaluatedtodatedate: ").append(toIndentedString(evaluatedtodatedate)).append("\n");
+    sb.append("    calculatedscore: ").append(toIndentedString(calculatedscore)).append("\n");
     sb.append("    score: ").append(toIndentedString(score)).append("\n");
     sb.append("    takeover: ").append(toIndentedString(takeover)).append("\n");
-    sb.append("    periodText: ").append(toIndentedString(periodText)).append("\n");
+    sb.append("    periodtext: ").append(toIndentedString(periodtext)).append("\n");
     sb.append("    satisfactory: ").append(toIndentedString(satisfactory)).append("\n");
-    sb.append("    percentScore: ").append(toIndentedString(percentScore)).append("\n");
-    sb.append("    headerIndex: ").append(toIndentedString(headerIndex)).append("\n");
-    sb.append("    approvedSupplierScoreID: ").append(toIndentedString(approvedSupplierScoreID)).append("\n");
+    sb.append("    percentscore: ").append(toIndentedString(percentscore)).append("\n");
+    sb.append("    headerindex: ").append(toIndentedString(headerindex)).append("\n");
+    sb.append("    approvedsupplierscoreId: ").append(toIndentedString(approvedsupplierscoreId)).append("\n");
     sb.append("    exists: ").append(toIndentedString(exists)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

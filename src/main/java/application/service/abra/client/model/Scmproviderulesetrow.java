@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,138 +34,183 @@ import java.util.Objects;
 /**
  * Scmproviderulesetrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Scmproviderulesetrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Condition")
+  @SerializedName("condition")
   private String condition = null;
 
-  @SerializedName("BuilderCLSID")
-  private String builderCLSID = null;
+  @SerializedName("builderclsid")
+  private String builderclsid = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("FirmExpr")
-  private String firmExpr = null;
+  @SerializedName("firmexpr")
+  private String firmexpr = null;
 
-  @SerializedName("FirmOfficeExpr")
-  private String firmOfficeExpr = null;
+  @SerializedName("firmofficeexpr")
+  private String firmofficeexpr = null;
 
-  @SerializedName("DivisionExpr")
-  private String divisionExpr = null;
+  @SerializedName("divisionexpr")
+  private String divisionexpr = null;
 
-  @SerializedName("BusOrderExpr")
-  private String busOrderExpr = null;
+  @SerializedName("busorderexpr")
+  private String busorderexpr = null;
 
-  @SerializedName("BusTransactionExpr")
-  private String busTransactionExpr = null;
+  @SerializedName("bustransactionexpr")
+  private String bustransactionexpr = null;
 
-  @SerializedName("BusProjectExpr")
-  private String busProjectExpr = null;
+  @SerializedName("busprojectexpr")
+  private String busprojectexpr = null;
 
-  @SerializedName("Function_ID")
-  private String functionID = null;
+  @SerializedName("function_id")
+  private String functionId = null;
 
-  @SerializedName("ContinueEvaluation")
-  private Boolean continueEvaluation = null;
+  @SerializedName("continueevaluation")
+  private Boolean continueevaluation = null;
 
-  @SerializedName("StoreExpr")
-  private String storeExpr = null;
+  @SerializedName("storeexpr")
+  private String storeexpr = null;
 
-  @SerializedName("QuantityExpr")
-  private String quantityExpr = null;
+  @SerializedName("quantityexpr")
+  private String quantityexpr = null;
 
-  @SerializedName("QUnitExpr")
-  private String qUnitExpr = null;
+  @SerializedName("qunitexpr")
+  private String qunitexpr = null;
 
-  @SerializedName("DateExpr")
-  private String dateExpr = null;
+  @SerializedName("dateexpr")
+  private String dateexpr = null;
 
-  @SerializedName("SourceStoreExpr")
-  private String sourceStoreExpr = null;
+  @SerializedName("sourcestoreexpr")
+  private String sourcestoreexpr = null;
 
-  @SerializedName("TargetDocQueue_ID")
-  private String targetDocQueueID = null;
+  @SerializedName("targetdocqueue_id")
+  private String targetdocqueueId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Pravidlo pro zajištění zdrojů [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Pravidlo pro zajištění zdrojů [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Scmproviderulesetrow posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Scmproviderulesetrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Scmproviderulesetrow id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Scmproviderulesetrow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Scmproviderulesetrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Scmproviderulesetrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu pravidlo pro zajištění zdrojů [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu pravidlo pro zajištění zdrojů [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Scmproviderulesetrow posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
   public Scmproviderulesetrow condition(String condition) {
@@ -174,10 +219,10 @@ public class Scmproviderulesetrow   {
   }
 
    /**
-   * Podmínka [persistentní položka]
+   * podmínka [persistentní položka]
    * @return condition
   **/
-  @ApiModelProperty(example = "null", value = "Podmínka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "podmínka [persistentní položka]")
   public String getCondition() {
     return condition;
   }
@@ -186,292 +231,292 @@ public class Scmproviderulesetrow   {
     this.condition = condition;
   }
 
-  public Scmproviderulesetrow builderCLSID(String builderCLSID) {
-    this.builderCLSID = builderCLSID;
+  public Scmproviderulesetrow builderclsid(String builderclsid) {
+    this.builderclsid = builderclsid;
     return this;
   }
 
    /**
-   * Typ dokumentu [persistentní položka]
-   * @return builderCLSID
+   * typ dokumentu [persistentní položka]
+   * @return builderclsid
   **/
-  @ApiModelProperty(example = "null", value = "Typ dokumentu [persistentní položka]")
-  public String getBuilderCLSID() {
-    return builderCLSID;
+  @ApiModelProperty(example = "null", value = "typ dokumentu [persistentní položka]")
+  public String getBuilderclsid() {
+    return builderclsid;
   }
 
-  public void setBuilderCLSID(String builderCLSID) {
-    this.builderCLSID = builderCLSID;
+  public void setBuilderclsid(String builderclsid) {
+    this.builderclsid = builderclsid;
   }
 
-  public Scmproviderulesetrow docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Scmproviderulesetrow docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Řada dokladů; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * Řada dokladů; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "Řada dokladů; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Scmproviderulesetrow firmExpr(String firmExpr) {
-    this.firmExpr = firmExpr;
+  public Scmproviderulesetrow firmexpr(String firmexpr) {
+    this.firmexpr = firmexpr;
     return this;
   }
 
    /**
-   * Výraz firmy [persistentní položka]
-   * @return firmExpr
+   * výraz firmy [persistentní položka]
+   * @return firmexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz firmy [persistentní položka]")
-  public String getFirmExpr() {
-    return firmExpr;
+  @ApiModelProperty(example = "null", value = "výraz firmy [persistentní položka]")
+  public String getFirmexpr() {
+    return firmexpr;
   }
 
-  public void setFirmExpr(String firmExpr) {
-    this.firmExpr = firmExpr;
+  public void setFirmexpr(String firmexpr) {
+    this.firmexpr = firmexpr;
   }
 
-  public Scmproviderulesetrow firmOfficeExpr(String firmOfficeExpr) {
-    this.firmOfficeExpr = firmOfficeExpr;
+  public Scmproviderulesetrow firmofficeexpr(String firmofficeexpr) {
+    this.firmofficeexpr = firmofficeexpr;
     return this;
   }
 
    /**
-   * Výraz provozovny [persistentní položka]
-   * @return firmOfficeExpr
+   * výraz provozovny [persistentní položka]
+   * @return firmofficeexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz provozovny [persistentní položka]")
-  public String getFirmOfficeExpr() {
-    return firmOfficeExpr;
+  @ApiModelProperty(example = "null", value = "výraz provozovny [persistentní položka]")
+  public String getFirmofficeexpr() {
+    return firmofficeexpr;
   }
 
-  public void setFirmOfficeExpr(String firmOfficeExpr) {
-    this.firmOfficeExpr = firmOfficeExpr;
+  public void setFirmofficeexpr(String firmofficeexpr) {
+    this.firmofficeexpr = firmofficeexpr;
   }
 
-  public Scmproviderulesetrow divisionExpr(String divisionExpr) {
-    this.divisionExpr = divisionExpr;
+  public Scmproviderulesetrow divisionexpr(String divisionexpr) {
+    this.divisionexpr = divisionexpr;
     return this;
   }
 
    /**
-   * Výraz střediska [persistentní položka]
-   * @return divisionExpr
+   * výraz střediska [persistentní položka]
+   * @return divisionexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz střediska [persistentní položka]")
-  public String getDivisionExpr() {
-    return divisionExpr;
+  @ApiModelProperty(example = "null", value = "výraz střediska [persistentní položka]")
+  public String getDivisionexpr() {
+    return divisionexpr;
   }
 
-  public void setDivisionExpr(String divisionExpr) {
-    this.divisionExpr = divisionExpr;
+  public void setDivisionexpr(String divisionexpr) {
+    this.divisionexpr = divisionexpr;
   }
 
-  public Scmproviderulesetrow busOrderExpr(String busOrderExpr) {
-    this.busOrderExpr = busOrderExpr;
+  public Scmproviderulesetrow busorderexpr(String busorderexpr) {
+    this.busorderexpr = busorderexpr;
     return this;
   }
 
    /**
-   * Výraz zakázky [persistentní položka]
-   * @return busOrderExpr
+   * výraz zakázky [persistentní položka]
+   * @return busorderexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz zakázky [persistentní položka]")
-  public String getBusOrderExpr() {
-    return busOrderExpr;
+  @ApiModelProperty(example = "null", value = "výraz zakázky [persistentní položka]")
+  public String getBusorderexpr() {
+    return busorderexpr;
   }
 
-  public void setBusOrderExpr(String busOrderExpr) {
-    this.busOrderExpr = busOrderExpr;
+  public void setBusorderexpr(String busorderexpr) {
+    this.busorderexpr = busorderexpr;
   }
 
-  public Scmproviderulesetrow busTransactionExpr(String busTransactionExpr) {
-    this.busTransactionExpr = busTransactionExpr;
+  public Scmproviderulesetrow bustransactionexpr(String bustransactionexpr) {
+    this.bustransactionexpr = bustransactionexpr;
     return this;
   }
 
    /**
-   * Výraz obch. případu [persistentní položka]
-   * @return busTransactionExpr
+   * výraz obch. případu [persistentní položka]
+   * @return bustransactionexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz obch. případu [persistentní položka]")
-  public String getBusTransactionExpr() {
-    return busTransactionExpr;
+  @ApiModelProperty(example = "null", value = "výraz obch. případu [persistentní položka]")
+  public String getBustransactionexpr() {
+    return bustransactionexpr;
   }
 
-  public void setBusTransactionExpr(String busTransactionExpr) {
-    this.busTransactionExpr = busTransactionExpr;
+  public void setBustransactionexpr(String bustransactionexpr) {
+    this.bustransactionexpr = bustransactionexpr;
   }
 
-  public Scmproviderulesetrow busProjectExpr(String busProjectExpr) {
-    this.busProjectExpr = busProjectExpr;
+  public Scmproviderulesetrow busprojectexpr(String busprojectexpr) {
+    this.busprojectexpr = busprojectexpr;
     return this;
   }
 
    /**
-   * Výraz projektu [persistentní položka]
-   * @return busProjectExpr
+   * výraz projektu [persistentní položka]
+   * @return busprojectexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz projektu [persistentní položka]")
-  public String getBusProjectExpr() {
-    return busProjectExpr;
+  @ApiModelProperty(example = "null", value = "výraz projektu [persistentní položka]")
+  public String getBusprojectexpr() {
+    return busprojectexpr;
   }
 
-  public void setBusProjectExpr(String busProjectExpr) {
-    this.busProjectExpr = busProjectExpr;
+  public void setBusprojectexpr(String busprojectexpr) {
+    this.busprojectexpr = busprojectexpr;
   }
 
-  public Scmproviderulesetrow functionID(String functionID) {
-    this.functionID = functionID;
+  public Scmproviderulesetrow functionId(String functionId) {
+    this.functionId = functionId;
     return this;
   }
 
    /**
-   * Funkce pro zajištění; ID objektu Funkce zajištění zdrojů [persistentní položka]
-   * @return functionID
+   * funkce pro zajištění; id objektu funkce zajištění zdrojů [persistentní položka]
+   * @return functionId
   **/
-  @ApiModelProperty(example = "null", value = "Funkce pro zajištění; ID objektu Funkce zajištění zdrojů [persistentní položka]")
-  public String getFunctionID() {
-    return functionID;
+  @ApiModelProperty(example = "null", value = "funkce pro zajištění; id objektu funkce zajištění zdrojů [persistentní položka]")
+  public String getFunctionId() {
+    return functionId;
   }
 
-  public void setFunctionID(String functionID) {
-    this.functionID = functionID;
+  public void setFunctionId(String functionId) {
+    this.functionId = functionId;
   }
 
-  public Scmproviderulesetrow continueEvaluation(Boolean continueEvaluation) {
-    this.continueEvaluation = continueEvaluation;
+  public Scmproviderulesetrow continueevaluation(Boolean continueevaluation) {
+    this.continueevaluation = continueevaluation;
     return this;
   }
 
    /**
-   * Pokračovat [persistentní položka]
-   * @return continueEvaluation
+   * pokračovat [persistentní položka]
+   * @return continueevaluation
   **/
-  @ApiModelProperty(example = "null", value = "Pokračovat [persistentní položka]")
-  public Boolean getContinueEvaluation() {
-    return continueEvaluation;
+  @ApiModelProperty(example = "null", value = "pokračovat [persistentní položka]")
+  public Boolean getContinueevaluation() {
+    return continueevaluation;
   }
 
-  public void setContinueEvaluation(Boolean continueEvaluation) {
-    this.continueEvaluation = continueEvaluation;
+  public void setContinueevaluation(Boolean continueevaluation) {
+    this.continueevaluation = continueevaluation;
   }
 
-  public Scmproviderulesetrow storeExpr(String storeExpr) {
-    this.storeExpr = storeExpr;
+  public Scmproviderulesetrow storeexpr(String storeexpr) {
+    this.storeexpr = storeexpr;
     return this;
   }
 
    /**
-   * Výraz skladu [persistentní položka]
-   * @return storeExpr
+   * výraz skladu [persistentní položka]
+   * @return storeexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz skladu [persistentní položka]")
-  public String getStoreExpr() {
-    return storeExpr;
+  @ApiModelProperty(example = "null", value = "výraz skladu [persistentní položka]")
+  public String getStoreexpr() {
+    return storeexpr;
   }
 
-  public void setStoreExpr(String storeExpr) {
-    this.storeExpr = storeExpr;
+  public void setStoreexpr(String storeexpr) {
+    this.storeexpr = storeexpr;
   }
 
-  public Scmproviderulesetrow quantityExpr(String quantityExpr) {
-    this.quantityExpr = quantityExpr;
+  public Scmproviderulesetrow quantityexpr(String quantityexpr) {
+    this.quantityexpr = quantityexpr;
     return this;
   }
 
    /**
-   * Výraz pro množství [persistentní položka]
-   * @return quantityExpr
+   * výraz pro množství [persistentní položka]
+   * @return quantityexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz pro množství [persistentní položka]")
-  public String getQuantityExpr() {
-    return quantityExpr;
+  @ApiModelProperty(example = "null", value = "výraz pro množství [persistentní položka]")
+  public String getQuantityexpr() {
+    return quantityexpr;
   }
 
-  public void setQuantityExpr(String quantityExpr) {
-    this.quantityExpr = quantityExpr;
+  public void setQuantityexpr(String quantityexpr) {
+    this.quantityexpr = quantityexpr;
   }
 
-  public Scmproviderulesetrow qUnitExpr(String qUnitExpr) {
-    this.qUnitExpr = qUnitExpr;
+  public Scmproviderulesetrow qunitexpr(String qunitexpr) {
+    this.qunitexpr = qunitexpr;
     return this;
   }
 
    /**
-   * Výraz pro jednotku [persistentní položka]
-   * @return qUnitExpr
+   * výraz pro jednotku [persistentní položka]
+   * @return qunitexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz pro jednotku [persistentní položka]")
-  public String getQUnitExpr() {
-    return qUnitExpr;
+  @ApiModelProperty(example = "null", value = "výraz pro jednotku [persistentní položka]")
+  public String getQunitexpr() {
+    return qunitexpr;
   }
 
-  public void setQUnitExpr(String qUnitExpr) {
-    this.qUnitExpr = qUnitExpr;
+  public void setQunitexpr(String qunitexpr) {
+    this.qunitexpr = qunitexpr;
   }
 
-  public Scmproviderulesetrow dateExpr(String dateExpr) {
-    this.dateExpr = dateExpr;
+  public Scmproviderulesetrow dateexpr(String dateexpr) {
+    this.dateexpr = dateexpr;
     return this;
   }
 
    /**
-   * Výraz pro datum [persistentní položka]
-   * @return dateExpr
+   * výraz pro datum [persistentní položka]
+   * @return dateexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz pro datum [persistentní položka]")
-  public String getDateExpr() {
-    return dateExpr;
+  @ApiModelProperty(example = "null", value = "výraz pro datum [persistentní položka]")
+  public String getDateexpr() {
+    return dateexpr;
   }
 
-  public void setDateExpr(String dateExpr) {
-    this.dateExpr = dateExpr;
+  public void setDateexpr(String dateexpr) {
+    this.dateexpr = dateexpr;
   }
 
-  public Scmproviderulesetrow sourceStoreExpr(String sourceStoreExpr) {
-    this.sourceStoreExpr = sourceStoreExpr;
+  public Scmproviderulesetrow sourcestoreexpr(String sourcestoreexpr) {
+    this.sourcestoreexpr = sourcestoreexpr;
     return this;
   }
 
    /**
-   * Výraz zdrojového skladu [persistentní položka]
-   * @return sourceStoreExpr
+   * výraz zdrojového skladu [persistentní položka]
+   * @return sourcestoreexpr
   **/
-  @ApiModelProperty(example = "null", value = "Výraz zdrojového skladu [persistentní položka]")
-  public String getSourceStoreExpr() {
-    return sourceStoreExpr;
+  @ApiModelProperty(example = "null", value = "výraz zdrojového skladu [persistentní položka]")
+  public String getSourcestoreexpr() {
+    return sourcestoreexpr;
   }
 
-  public void setSourceStoreExpr(String sourceStoreExpr) {
-    this.sourceStoreExpr = sourceStoreExpr;
+  public void setSourcestoreexpr(String sourcestoreexpr) {
+    this.sourcestoreexpr = sourcestoreexpr;
   }
 
-  public Scmproviderulesetrow targetDocQueueID(String targetDocQueueID) {
-    this.targetDocQueueID = targetDocQueueID;
+  public Scmproviderulesetrow targetdocqueueId(String targetdocqueueId) {
+    this.targetdocqueueId = targetdocqueueId;
     return this;
   }
 
    /**
-   * Cílová řada dokladů; ID objektu Řada dokladů [persistentní položka]
-   * @return targetDocQueueID
+   * cílová řada dokladů; id objektu Řada dokladů [persistentní položka]
+   * @return targetdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Cílová řada dokladů; ID objektu Řada dokladů [persistentní položka]")
-  public String getTargetDocQueueID() {
-    return targetDocQueueID;
+  @ApiModelProperty(example = "null", value = "cílová řada dokladů; id objektu Řada dokladů [persistentní položka]")
+  public String getTargetdocqueueId() {
+    return targetdocqueueId;
   }
 
-  public void setTargetDocQueueID(String targetDocQueueID) {
-    this.targetDocQueueID = targetDocQueueID;
+  public void setTargetdocqueueId(String targetdocqueueId) {
+    this.targetdocqueueId = targetdocqueueId;
   }
 
 
@@ -484,34 +529,34 @@ public class Scmproviderulesetrow   {
       return false;
     }
     Scmproviderulesetrow scmproviderulesetrow = (Scmproviderulesetrow) o;
-    return Objects.equals(this.displayName, scmproviderulesetrow.displayName) &&
-        Objects.equals(this.ID, scmproviderulesetrow.ID) &&
-        Objects.equals(this.classID, scmproviderulesetrow.classID) &&
-        Objects.equals(this.objVersion, scmproviderulesetrow.objVersion) &&
-        Objects.equals(this.parentID, scmproviderulesetrow.parentID) &&
-        Objects.equals(this.posIndex, scmproviderulesetrow.posIndex) &&
+    return Objects.equals(this.displayname, scmproviderulesetrow.displayname) &&
+        Objects.equals(this.id, scmproviderulesetrow.id) &&
+        Objects.equals(this.classid, scmproviderulesetrow.classid) &&
+        Objects.equals(this.objversion, scmproviderulesetrow.objversion) &&
+        Objects.equals(this.parentId, scmproviderulesetrow.parentId) &&
+        Objects.equals(this.posindex, scmproviderulesetrow.posindex) &&
         Objects.equals(this.condition, scmproviderulesetrow.condition) &&
-        Objects.equals(this.builderCLSID, scmproviderulesetrow.builderCLSID) &&
-        Objects.equals(this.docQueueID, scmproviderulesetrow.docQueueID) &&
-        Objects.equals(this.firmExpr, scmproviderulesetrow.firmExpr) &&
-        Objects.equals(this.firmOfficeExpr, scmproviderulesetrow.firmOfficeExpr) &&
-        Objects.equals(this.divisionExpr, scmproviderulesetrow.divisionExpr) &&
-        Objects.equals(this.busOrderExpr, scmproviderulesetrow.busOrderExpr) &&
-        Objects.equals(this.busTransactionExpr, scmproviderulesetrow.busTransactionExpr) &&
-        Objects.equals(this.busProjectExpr, scmproviderulesetrow.busProjectExpr) &&
-        Objects.equals(this.functionID, scmproviderulesetrow.functionID) &&
-        Objects.equals(this.continueEvaluation, scmproviderulesetrow.continueEvaluation) &&
-        Objects.equals(this.storeExpr, scmproviderulesetrow.storeExpr) &&
-        Objects.equals(this.quantityExpr, scmproviderulesetrow.quantityExpr) &&
-        Objects.equals(this.qUnitExpr, scmproviderulesetrow.qUnitExpr) &&
-        Objects.equals(this.dateExpr, scmproviderulesetrow.dateExpr) &&
-        Objects.equals(this.sourceStoreExpr, scmproviderulesetrow.sourceStoreExpr) &&
-        Objects.equals(this.targetDocQueueID, scmproviderulesetrow.targetDocQueueID);
+        Objects.equals(this.builderclsid, scmproviderulesetrow.builderclsid) &&
+        Objects.equals(this.docqueueId, scmproviderulesetrow.docqueueId) &&
+        Objects.equals(this.firmexpr, scmproviderulesetrow.firmexpr) &&
+        Objects.equals(this.firmofficeexpr, scmproviderulesetrow.firmofficeexpr) &&
+        Objects.equals(this.divisionexpr, scmproviderulesetrow.divisionexpr) &&
+        Objects.equals(this.busorderexpr, scmproviderulesetrow.busorderexpr) &&
+        Objects.equals(this.bustransactionexpr, scmproviderulesetrow.bustransactionexpr) &&
+        Objects.equals(this.busprojectexpr, scmproviderulesetrow.busprojectexpr) &&
+        Objects.equals(this.functionId, scmproviderulesetrow.functionId) &&
+        Objects.equals(this.continueevaluation, scmproviderulesetrow.continueevaluation) &&
+        Objects.equals(this.storeexpr, scmproviderulesetrow.storeexpr) &&
+        Objects.equals(this.quantityexpr, scmproviderulesetrow.quantityexpr) &&
+        Objects.equals(this.qunitexpr, scmproviderulesetrow.qunitexpr) &&
+        Objects.equals(this.dateexpr, scmproviderulesetrow.dateexpr) &&
+        Objects.equals(this.sourcestoreexpr, scmproviderulesetrow.sourcestoreexpr) &&
+        Objects.equals(this.targetdocqueueId, scmproviderulesetrow.targetdocqueueId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, condition, builderCLSID, docQueueID, firmExpr, firmOfficeExpr, divisionExpr, busOrderExpr, busTransactionExpr, busProjectExpr, functionID, continueEvaluation, storeExpr, quantityExpr, qUnitExpr, dateExpr, sourceStoreExpr, targetDocQueueID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, condition, builderclsid, docqueueId, firmexpr, firmofficeexpr, divisionexpr, busorderexpr, bustransactionexpr, busprojectexpr, functionId, continueevaluation, storeexpr, quantityexpr, qunitexpr, dateexpr, sourcestoreexpr, targetdocqueueId);
   }
 
   @Override
@@ -519,29 +564,29 @@ public class Scmproviderulesetrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Scmproviderulesetrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
     sb.append("    condition: ").append(toIndentedString(condition)).append("\n");
-    sb.append("    builderCLSID: ").append(toIndentedString(builderCLSID)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    firmExpr: ").append(toIndentedString(firmExpr)).append("\n");
-    sb.append("    firmOfficeExpr: ").append(toIndentedString(firmOfficeExpr)).append("\n");
-    sb.append("    divisionExpr: ").append(toIndentedString(divisionExpr)).append("\n");
-    sb.append("    busOrderExpr: ").append(toIndentedString(busOrderExpr)).append("\n");
-    sb.append("    busTransactionExpr: ").append(toIndentedString(busTransactionExpr)).append("\n");
-    sb.append("    busProjectExpr: ").append(toIndentedString(busProjectExpr)).append("\n");
-    sb.append("    functionID: ").append(toIndentedString(functionID)).append("\n");
-    sb.append("    continueEvaluation: ").append(toIndentedString(continueEvaluation)).append("\n");
-    sb.append("    storeExpr: ").append(toIndentedString(storeExpr)).append("\n");
-    sb.append("    quantityExpr: ").append(toIndentedString(quantityExpr)).append("\n");
-    sb.append("    qUnitExpr: ").append(toIndentedString(qUnitExpr)).append("\n");
-    sb.append("    dateExpr: ").append(toIndentedString(dateExpr)).append("\n");
-    sb.append("    sourceStoreExpr: ").append(toIndentedString(sourceStoreExpr)).append("\n");
-    sb.append("    targetDocQueueID: ").append(toIndentedString(targetDocQueueID)).append("\n");
+    sb.append("    builderclsid: ").append(toIndentedString(builderclsid)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    firmexpr: ").append(toIndentedString(firmexpr)).append("\n");
+    sb.append("    firmofficeexpr: ").append(toIndentedString(firmofficeexpr)).append("\n");
+    sb.append("    divisionexpr: ").append(toIndentedString(divisionexpr)).append("\n");
+    sb.append("    busorderexpr: ").append(toIndentedString(busorderexpr)).append("\n");
+    sb.append("    bustransactionexpr: ").append(toIndentedString(bustransactionexpr)).append("\n");
+    sb.append("    busprojectexpr: ").append(toIndentedString(busprojectexpr)).append("\n");
+    sb.append("    functionId: ").append(toIndentedString(functionId)).append("\n");
+    sb.append("    continueevaluation: ").append(toIndentedString(continueevaluation)).append("\n");
+    sb.append("    storeexpr: ").append(toIndentedString(storeexpr)).append("\n");
+    sb.append("    quantityexpr: ").append(toIndentedString(quantityexpr)).append("\n");
+    sb.append("    qunitexpr: ").append(toIndentedString(qunitexpr)).append("\n");
+    sb.append("    dateexpr: ").append(toIndentedString(dateexpr)).append("\n");
+    sb.append("    sourcestoreexpr: ").append(toIndentedString(sourcestoreexpr)).append("\n");
+    sb.append("    targetdocqueueId: ").append(toIndentedString(targetdocqueueId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

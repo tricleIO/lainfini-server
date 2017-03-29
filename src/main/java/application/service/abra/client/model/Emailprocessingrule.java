@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,161 +36,197 @@ import java.util.Objects;
 /**
  * Emailprocessingrule
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Emailprocessingrule   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("GoOn")
-  private Boolean goOn = null;
+  @SerializedName("goon")
+  private Boolean goon = null;
 
-  @SerializedName("RuleActions")
-  private List<Emailprocessingruleaction> ruleActions = new ArrayList<Emailprocessingruleaction>();
+  @SerializedName("ruleactions")
+  private List<Emailprocessingruleaction> ruleactions = new ArrayList<Emailprocessingruleaction>();
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("EmailAccount_ID")
-  private String emailAccountID = null;
+  @SerializedName("emailaccount_id")
+  private String emailaccountId = null;
 
-  @SerializedName("FileNameMask")
-  private String fileNameMask = null;
+  @SerializedName("filenamemask")
+  private String filenamemask = null;
 
-  @SerializedName("FileNameMaskIsRegEx")
-  private Boolean fileNameMaskIsRegEx = null;
+  @SerializedName("filenamemaskisregex")
+  private Boolean filenamemaskisregex = null;
 
-  @SerializedName("SenderMask")
-  private String senderMask = null;
+  @SerializedName("sendermask")
+  private String sendermask = null;
 
-  @SerializedName("SenderMaskIsRegEx")
-  private Boolean senderMaskIsRegEx = null;
+  @SerializedName("sendermaskisregex")
+  private Boolean sendermaskisregex = null;
 
-  @SerializedName("SendToMask")
-  private String sendToMask = null;
+  @SerializedName("sendtomask")
+  private String sendtomask = null;
 
-  @SerializedName("SendToMaskIsRegEx")
-  private Boolean sendToMaskIsRegEx = null;
+  @SerializedName("sendtomaskisregex")
+  private Boolean sendtomaskisregex = null;
 
-  @SerializedName("SubjectMask")
-  private String subjectMask = null;
+  @SerializedName("subjectmask")
+  private String subjectmask = null;
 
-  @SerializedName("SubjectMaskIsRegEx")
-  private Boolean subjectMaskIsRegEx = null;
+  @SerializedName("subjectmaskisregex")
+  private Boolean subjectmaskisregex = null;
 
-  @SerializedName("EmailCondition")
-  private String emailCondition = null;
+  @SerializedName("emailcondition")
+  private String emailcondition = null;
 
-  @SerializedName("IsForEmail")
-  private Boolean isForEmail = null;
+  @SerializedName("isforemail")
+  private Boolean isforemail = null;
 
-  @SerializedName("IsForAttachment")
-  private Boolean isForAttachment = null;
+  @SerializedName("isforattachment")
+  private Boolean isforattachment = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Emailprocessingrule posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Emailprocessingrule displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Emailprocessingrule goOn(Boolean goOn) {
-    this.goOn = goOn;
+  public Emailprocessingrule id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Pokračovat [persistentní položka]
-   * @return goOn
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Pokračovat [persistentní položka]")
-  public Boolean getGoOn() {
-    return goOn;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setGoOn(Boolean goOn) {
-    this.goOn = goOn;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Emailprocessingrule ruleActions(List<Emailprocessingruleaction> ruleActions) {
-    this.ruleActions = ruleActions;
-    return this;
-  }
-
-  public Emailprocessingrule addRuleActionsItem(Emailprocessingruleaction ruleActionsItem) {
-    this.ruleActions.add(ruleActionsItem);
+  public Emailprocessingrule classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Akce; kolekce BO Akce pravidla pro zpracování doručené e-mail. pošty [nepersistentní položka]
-   * @return ruleActions
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Akce; kolekce BO Akce pravidla pro zpracování doručené e-mail. pošty [nepersistentní položka]")
-  public List<Emailprocessingruleaction> getRuleActions() {
-    return ruleActions;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setRuleActions(List<Emailprocessingruleaction> ruleActions) {
-    this.ruleActions = ruleActions;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Emailprocessingrule objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Emailprocessingrule posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Emailprocessingrule goon(Boolean goon) {
+    this.goon = goon;
+    return this;
+  }
+
+   /**
+   * pokračovat [persistentní položka]
+   * @return goon
+  **/
+  @ApiModelProperty(example = "null", value = "pokračovat [persistentní položka]")
+  public Boolean getGoon() {
+    return goon;
+  }
+
+  public void setGoon(Boolean goon) {
+    this.goon = goon;
+  }
+
+  public Emailprocessingrule ruleactions(List<Emailprocessingruleaction> ruleactions) {
+    this.ruleactions = ruleactions;
+    return this;
+  }
+
+  public Emailprocessingrule addRuleactionsItem(Emailprocessingruleaction ruleactionsItem) {
+    this.ruleactions.add(ruleactionsItem);
+    return this;
+  }
+
+   /**
+   * akce; kolekce bo akce pravidla pro zpracování doručené e-mail. pošty [nepersistentní položka]
+   * @return ruleactions
+  **/
+  @ApiModelProperty(example = "null", value = "akce; kolekce bo akce pravidla pro zpracování doručené e-mail. pošty [nepersistentní položka]")
+  public List<Emailprocessingruleaction> getRuleactions() {
+    return ruleactions;
+  }
+
+  public void setRuleactions(List<Emailprocessingruleaction> ruleactions) {
+    this.ruleactions = ruleactions;
   }
 
   public Emailprocessingrule description(String description) {
@@ -199,10 +235,10 @@ public class Emailprocessingrule   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -211,220 +247,220 @@ public class Emailprocessingrule   {
     this.description = description;
   }
 
-  public Emailprocessingrule emailAccountID(String emailAccountID) {
-    this.emailAccountID = emailAccountID;
+  public Emailprocessingrule emailaccountId(String emailaccountId) {
+    this.emailaccountId = emailaccountId;
     return this;
   }
 
    /**
-   * E-mailový účet; ID objektu E-mailový účet [persistentní položka]
-   * @return emailAccountID
+   * e-mailový účet; id objektu e-mailový účet [persistentní položka]
+   * @return emailaccountId
   **/
-  @ApiModelProperty(example = "null", value = "E-mailový účet; ID objektu E-mailový účet [persistentní položka]")
-  public String getEmailAccountID() {
-    return emailAccountID;
+  @ApiModelProperty(example = "null", value = "e-mailový účet; id objektu e-mailový účet [persistentní položka]")
+  public String getEmailaccountId() {
+    return emailaccountId;
   }
 
-  public void setEmailAccountID(String emailAccountID) {
-    this.emailAccountID = emailAccountID;
+  public void setEmailaccountId(String emailaccountId) {
+    this.emailaccountId = emailaccountId;
   }
 
-  public Emailprocessingrule fileNameMask(String fileNameMask) {
-    this.fileNameMask = fileNameMask;
+  public Emailprocessingrule filenamemask(String filenamemask) {
+    this.filenamemask = filenamemask;
     return this;
   }
 
    /**
-   * Maska pro název přílohy [persistentní položka]
-   * @return fileNameMask
+   * maska pro název přílohy [persistentní položka]
+   * @return filenamemask
   **/
-  @ApiModelProperty(example = "null", value = "Maska pro název přílohy [persistentní položka]")
-  public String getFileNameMask() {
-    return fileNameMask;
+  @ApiModelProperty(example = "null", value = "maska pro název přílohy [persistentní položka]")
+  public String getFilenamemask() {
+    return filenamemask;
   }
 
-  public void setFileNameMask(String fileNameMask) {
-    this.fileNameMask = fileNameMask;
+  public void setFilenamemask(String filenamemask) {
+    this.filenamemask = filenamemask;
   }
 
-  public Emailprocessingrule fileNameMaskIsRegEx(Boolean fileNameMaskIsRegEx) {
-    this.fileNameMaskIsRegEx = fileNameMaskIsRegEx;
+  public Emailprocessingrule filenamemaskisregex(Boolean filenamemaskisregex) {
+    this.filenamemaskisregex = filenamemaskisregex;
     return this;
   }
 
    /**
-   * Maska pro název přílohy je regulární výraz [persistentní položka]
-   * @return fileNameMaskIsRegEx
+   * maska pro název přílohy je regulární výraz [persistentní položka]
+   * @return filenamemaskisregex
   **/
-  @ApiModelProperty(example = "null", value = "Maska pro název přílohy je regulární výraz [persistentní položka]")
-  public Boolean getFileNameMaskIsRegEx() {
-    return fileNameMaskIsRegEx;
+  @ApiModelProperty(example = "null", value = "maska pro název přílohy je regulární výraz [persistentní položka]")
+  public Boolean getFilenamemaskisregex() {
+    return filenamemaskisregex;
   }
 
-  public void setFileNameMaskIsRegEx(Boolean fileNameMaskIsRegEx) {
-    this.fileNameMaskIsRegEx = fileNameMaskIsRegEx;
+  public void setFilenamemaskisregex(Boolean filenamemaskisregex) {
+    this.filenamemaskisregex = filenamemaskisregex;
   }
 
-  public Emailprocessingrule senderMask(String senderMask) {
-    this.senderMask = senderMask;
+  public Emailprocessingrule sendermask(String sendermask) {
+    this.sendermask = sendermask;
     return this;
   }
 
    /**
-   * Maska pro odesílatele [persistentní položka]
-   * @return senderMask
+   * maska pro odesílatele [persistentní položka]
+   * @return sendermask
   **/
-  @ApiModelProperty(example = "null", value = "Maska pro odesílatele [persistentní položka]")
-  public String getSenderMask() {
-    return senderMask;
+  @ApiModelProperty(example = "null", value = "maska pro odesílatele [persistentní položka]")
+  public String getSendermask() {
+    return sendermask;
   }
 
-  public void setSenderMask(String senderMask) {
-    this.senderMask = senderMask;
+  public void setSendermask(String sendermask) {
+    this.sendermask = sendermask;
   }
 
-  public Emailprocessingrule senderMaskIsRegEx(Boolean senderMaskIsRegEx) {
-    this.senderMaskIsRegEx = senderMaskIsRegEx;
+  public Emailprocessingrule sendermaskisregex(Boolean sendermaskisregex) {
+    this.sendermaskisregex = sendermaskisregex;
     return this;
   }
 
    /**
-   * Maska pro odesílatele je regulární výraz [persistentní položka]
-   * @return senderMaskIsRegEx
+   * maska pro odesílatele je regulární výraz [persistentní položka]
+   * @return sendermaskisregex
   **/
-  @ApiModelProperty(example = "null", value = "Maska pro odesílatele je regulární výraz [persistentní položka]")
-  public Boolean getSenderMaskIsRegEx() {
-    return senderMaskIsRegEx;
+  @ApiModelProperty(example = "null", value = "maska pro odesílatele je regulární výraz [persistentní položka]")
+  public Boolean getSendermaskisregex() {
+    return sendermaskisregex;
   }
 
-  public void setSenderMaskIsRegEx(Boolean senderMaskIsRegEx) {
-    this.senderMaskIsRegEx = senderMaskIsRegEx;
+  public void setSendermaskisregex(Boolean sendermaskisregex) {
+    this.sendermaskisregex = sendermaskisregex;
   }
 
-  public Emailprocessingrule sendToMask(String sendToMask) {
-    this.sendToMask = sendToMask;
+  public Emailprocessingrule sendtomask(String sendtomask) {
+    this.sendtomask = sendtomask;
     return this;
   }
 
    /**
-   * Maska pro příjemce [persistentní položka]
-   * @return sendToMask
+   * maska pro příjemce [persistentní položka]
+   * @return sendtomask
   **/
-  @ApiModelProperty(example = "null", value = "Maska pro příjemce [persistentní položka]")
-  public String getSendToMask() {
-    return sendToMask;
+  @ApiModelProperty(example = "null", value = "maska pro příjemce [persistentní položka]")
+  public String getSendtomask() {
+    return sendtomask;
   }
 
-  public void setSendToMask(String sendToMask) {
-    this.sendToMask = sendToMask;
+  public void setSendtomask(String sendtomask) {
+    this.sendtomask = sendtomask;
   }
 
-  public Emailprocessingrule sendToMaskIsRegEx(Boolean sendToMaskIsRegEx) {
-    this.sendToMaskIsRegEx = sendToMaskIsRegEx;
+  public Emailprocessingrule sendtomaskisregex(Boolean sendtomaskisregex) {
+    this.sendtomaskisregex = sendtomaskisregex;
     return this;
   }
 
    /**
-   * Maska pro příjemce je regulární výraz [persistentní položka]
-   * @return sendToMaskIsRegEx
+   * maska pro příjemce je regulární výraz [persistentní položka]
+   * @return sendtomaskisregex
   **/
-  @ApiModelProperty(example = "null", value = "Maska pro příjemce je regulární výraz [persistentní položka]")
-  public Boolean getSendToMaskIsRegEx() {
-    return sendToMaskIsRegEx;
+  @ApiModelProperty(example = "null", value = "maska pro příjemce je regulární výraz [persistentní položka]")
+  public Boolean getSendtomaskisregex() {
+    return sendtomaskisregex;
   }
 
-  public void setSendToMaskIsRegEx(Boolean sendToMaskIsRegEx) {
-    this.sendToMaskIsRegEx = sendToMaskIsRegEx;
+  public void setSendtomaskisregex(Boolean sendtomaskisregex) {
+    this.sendtomaskisregex = sendtomaskisregex;
   }
 
-  public Emailprocessingrule subjectMask(String subjectMask) {
-    this.subjectMask = subjectMask;
+  public Emailprocessingrule subjectmask(String subjectmask) {
+    this.subjectmask = subjectmask;
     return this;
   }
 
    /**
-   * Maska pro předmět [persistentní položka]
-   * @return subjectMask
+   * maska pro předmět [persistentní položka]
+   * @return subjectmask
   **/
-  @ApiModelProperty(example = "null", value = "Maska pro předmět [persistentní položka]")
-  public String getSubjectMask() {
-    return subjectMask;
+  @ApiModelProperty(example = "null", value = "maska pro předmět [persistentní položka]")
+  public String getSubjectmask() {
+    return subjectmask;
   }
 
-  public void setSubjectMask(String subjectMask) {
-    this.subjectMask = subjectMask;
+  public void setSubjectmask(String subjectmask) {
+    this.subjectmask = subjectmask;
   }
 
-  public Emailprocessingrule subjectMaskIsRegEx(Boolean subjectMaskIsRegEx) {
-    this.subjectMaskIsRegEx = subjectMaskIsRegEx;
+  public Emailprocessingrule subjectmaskisregex(Boolean subjectmaskisregex) {
+    this.subjectmaskisregex = subjectmaskisregex;
     return this;
   }
 
    /**
-   * Maska pro předmět je regulární výraz [persistentní položka]
-   * @return subjectMaskIsRegEx
+   * maska pro předmět je regulární výraz [persistentní položka]
+   * @return subjectmaskisregex
   **/
-  @ApiModelProperty(example = "null", value = "Maska pro předmět je regulární výraz [persistentní položka]")
-  public Boolean getSubjectMaskIsRegEx() {
-    return subjectMaskIsRegEx;
+  @ApiModelProperty(example = "null", value = "maska pro předmět je regulární výraz [persistentní položka]")
+  public Boolean getSubjectmaskisregex() {
+    return subjectmaskisregex;
   }
 
-  public void setSubjectMaskIsRegEx(Boolean subjectMaskIsRegEx) {
-    this.subjectMaskIsRegEx = subjectMaskIsRegEx;
+  public void setSubjectmaskisregex(Boolean subjectmaskisregex) {
+    this.subjectmaskisregex = subjectmaskisregex;
   }
 
-  public Emailprocessingrule emailCondition(String emailCondition) {
-    this.emailCondition = emailCondition;
+  public Emailprocessingrule emailcondition(String emailcondition) {
+    this.emailcondition = emailcondition;
     return this;
   }
 
    /**
-   * Podmínka [persistentní položka]
-   * @return emailCondition
+   * podmínka [persistentní položka]
+   * @return emailcondition
   **/
-  @ApiModelProperty(example = "null", value = "Podmínka [persistentní položka]")
-  public String getEmailCondition() {
-    return emailCondition;
+  @ApiModelProperty(example = "null", value = "podmínka [persistentní položka]")
+  public String getEmailcondition() {
+    return emailcondition;
   }
 
-  public void setEmailCondition(String emailCondition) {
-    this.emailCondition = emailCondition;
+  public void setEmailcondition(String emailcondition) {
+    this.emailcondition = emailcondition;
   }
 
-  public Emailprocessingrule isForEmail(Boolean isForEmail) {
-    this.isForEmail = isForEmail;
+  public Emailprocessingrule isforemail(Boolean isforemail) {
+    this.isforemail = isforemail;
     return this;
   }
 
    /**
-   * Pro e-mail [persistentní položka]
-   * @return isForEmail
+   * pro e-mail [persistentní položka]
+   * @return isforemail
   **/
-  @ApiModelProperty(example = "null", value = "Pro e-mail [persistentní položka]")
-  public Boolean getIsForEmail() {
-    return isForEmail;
+  @ApiModelProperty(example = "null", value = "pro e-mail [persistentní položka]")
+  public Boolean getIsforemail() {
+    return isforemail;
   }
 
-  public void setIsForEmail(Boolean isForEmail) {
-    this.isForEmail = isForEmail;
+  public void setIsforemail(Boolean isforemail) {
+    this.isforemail = isforemail;
   }
 
-  public Emailprocessingrule isForAttachment(Boolean isForAttachment) {
-    this.isForAttachment = isForAttachment;
+  public Emailprocessingrule isforattachment(Boolean isforattachment) {
+    this.isforattachment = isforattachment;
     return this;
   }
 
    /**
-   * Pro přílohu [persistentní položka]
-   * @return isForAttachment
+   * pro přílohu [persistentní položka]
+   * @return isforattachment
   **/
-  @ApiModelProperty(example = "null", value = "Pro přílohu [persistentní položka]")
-  public Boolean getIsForAttachment() {
-    return isForAttachment;
+  @ApiModelProperty(example = "null", value = "pro přílohu [persistentní položka]")
+  public Boolean getIsforattachment() {
+    return isforattachment;
   }
 
-  public void setIsForAttachment(Boolean isForAttachment) {
-    this.isForAttachment = isForAttachment;
+  public void setIsforattachment(Boolean isforattachment) {
+    this.isforattachment = isforattachment;
   }
 
 
@@ -437,31 +473,31 @@ public class Emailprocessingrule   {
       return false;
     }
     Emailprocessingrule emailprocessingrule = (Emailprocessingrule) o;
-    return Objects.equals(this.displayName, emailprocessingrule.displayName) &&
-        Objects.equals(this.ID, emailprocessingrule.ID) &&
-        Objects.equals(this.classID, emailprocessingrule.classID) &&
-        Objects.equals(this.objVersion, emailprocessingrule.objVersion) &&
-        Objects.equals(this.posIndex, emailprocessingrule.posIndex) &&
-        Objects.equals(this.goOn, emailprocessingrule.goOn) &&
-        Objects.equals(this.ruleActions, emailprocessingrule.ruleActions) &&
+    return Objects.equals(this.displayname, emailprocessingrule.displayname) &&
+        Objects.equals(this.id, emailprocessingrule.id) &&
+        Objects.equals(this.classid, emailprocessingrule.classid) &&
+        Objects.equals(this.objversion, emailprocessingrule.objversion) &&
+        Objects.equals(this.posindex, emailprocessingrule.posindex) &&
+        Objects.equals(this.goon, emailprocessingrule.goon) &&
+        Objects.equals(this.ruleactions, emailprocessingrule.ruleactions) &&
         Objects.equals(this.description, emailprocessingrule.description) &&
-        Objects.equals(this.emailAccountID, emailprocessingrule.emailAccountID) &&
-        Objects.equals(this.fileNameMask, emailprocessingrule.fileNameMask) &&
-        Objects.equals(this.fileNameMaskIsRegEx, emailprocessingrule.fileNameMaskIsRegEx) &&
-        Objects.equals(this.senderMask, emailprocessingrule.senderMask) &&
-        Objects.equals(this.senderMaskIsRegEx, emailprocessingrule.senderMaskIsRegEx) &&
-        Objects.equals(this.sendToMask, emailprocessingrule.sendToMask) &&
-        Objects.equals(this.sendToMaskIsRegEx, emailprocessingrule.sendToMaskIsRegEx) &&
-        Objects.equals(this.subjectMask, emailprocessingrule.subjectMask) &&
-        Objects.equals(this.subjectMaskIsRegEx, emailprocessingrule.subjectMaskIsRegEx) &&
-        Objects.equals(this.emailCondition, emailprocessingrule.emailCondition) &&
-        Objects.equals(this.isForEmail, emailprocessingrule.isForEmail) &&
-        Objects.equals(this.isForAttachment, emailprocessingrule.isForAttachment);
+        Objects.equals(this.emailaccountId, emailprocessingrule.emailaccountId) &&
+        Objects.equals(this.filenamemask, emailprocessingrule.filenamemask) &&
+        Objects.equals(this.filenamemaskisregex, emailprocessingrule.filenamemaskisregex) &&
+        Objects.equals(this.sendermask, emailprocessingrule.sendermask) &&
+        Objects.equals(this.sendermaskisregex, emailprocessingrule.sendermaskisregex) &&
+        Objects.equals(this.sendtomask, emailprocessingrule.sendtomask) &&
+        Objects.equals(this.sendtomaskisregex, emailprocessingrule.sendtomaskisregex) &&
+        Objects.equals(this.subjectmask, emailprocessingrule.subjectmask) &&
+        Objects.equals(this.subjectmaskisregex, emailprocessingrule.subjectmaskisregex) &&
+        Objects.equals(this.emailcondition, emailprocessingrule.emailcondition) &&
+        Objects.equals(this.isforemail, emailprocessingrule.isforemail) &&
+        Objects.equals(this.isforattachment, emailprocessingrule.isforattachment);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, posIndex, goOn, ruleActions, description, emailAccountID, fileNameMask, fileNameMaskIsRegEx, senderMask, senderMaskIsRegEx, sendToMask, sendToMaskIsRegEx, subjectMask, subjectMaskIsRegEx, emailCondition, isForEmail, isForAttachment);
+    return Objects.hash(displayname, id, classid, objversion, posindex, goon, ruleactions, description, emailaccountId, filenamemask, filenamemaskisregex, sendermask, sendermaskisregex, sendtomask, sendtomaskisregex, subjectmask, subjectmaskisregex, emailcondition, isforemail, isforattachment);
   }
 
   @Override
@@ -469,26 +505,26 @@ public class Emailprocessingrule   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Emailprocessingrule {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    goOn: ").append(toIndentedString(goOn)).append("\n");
-    sb.append("    ruleActions: ").append(toIndentedString(ruleActions)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    goon: ").append(toIndentedString(goon)).append("\n");
+    sb.append("    ruleactions: ").append(toIndentedString(ruleactions)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    emailAccountID: ").append(toIndentedString(emailAccountID)).append("\n");
-    sb.append("    fileNameMask: ").append(toIndentedString(fileNameMask)).append("\n");
-    sb.append("    fileNameMaskIsRegEx: ").append(toIndentedString(fileNameMaskIsRegEx)).append("\n");
-    sb.append("    senderMask: ").append(toIndentedString(senderMask)).append("\n");
-    sb.append("    senderMaskIsRegEx: ").append(toIndentedString(senderMaskIsRegEx)).append("\n");
-    sb.append("    sendToMask: ").append(toIndentedString(sendToMask)).append("\n");
-    sb.append("    sendToMaskIsRegEx: ").append(toIndentedString(sendToMaskIsRegEx)).append("\n");
-    sb.append("    subjectMask: ").append(toIndentedString(subjectMask)).append("\n");
-    sb.append("    subjectMaskIsRegEx: ").append(toIndentedString(subjectMaskIsRegEx)).append("\n");
-    sb.append("    emailCondition: ").append(toIndentedString(emailCondition)).append("\n");
-    sb.append("    isForEmail: ").append(toIndentedString(isForEmail)).append("\n");
-    sb.append("    isForAttachment: ").append(toIndentedString(isForAttachment)).append("\n");
+    sb.append("    emailaccountId: ").append(toIndentedString(emailaccountId)).append("\n");
+    sb.append("    filenamemask: ").append(toIndentedString(filenamemask)).append("\n");
+    sb.append("    filenamemaskisregex: ").append(toIndentedString(filenamemaskisregex)).append("\n");
+    sb.append("    sendermask: ").append(toIndentedString(sendermask)).append("\n");
+    sb.append("    sendermaskisregex: ").append(toIndentedString(sendermaskisregex)).append("\n");
+    sb.append("    sendtomask: ").append(toIndentedString(sendtomask)).append("\n");
+    sb.append("    sendtomaskisregex: ").append(toIndentedString(sendtomaskisregex)).append("\n");
+    sb.append("    subjectmask: ").append(toIndentedString(subjectmask)).append("\n");
+    sb.append("    subjectmaskisregex: ").append(toIndentedString(subjectmaskisregex)).append("\n");
+    sb.append("    emailcondition: ").append(toIndentedString(emailcondition)).append("\n");
+    sb.append("    isforemail: ").append(toIndentedString(isforemail)).append("\n");
+    sb.append("    isforattachment: ").append(toIndentedString(isforattachment)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,261 +37,297 @@ import java.util.Objects;
 /**
  * Workinginjury
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Workinginjury   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Workinginjuryrow> rows = new ArrayList<Workinginjuryrow>();
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("IndustryBranchCode")
-  private String industryBranchCode = null;
+  @SerializedName("industrybranchcode")
+  private String industrybranchcode = null;
 
-  @SerializedName("BaseType")
-  private Integer baseType = null;
+  @SerializedName("basetype")
+  private Integer basetype = null;
 
-  @SerializedName("InjuryPlace")
-  private String injuryPlace = null;
+  @SerializedName("injuryplace")
+  private String injuryplace = null;
 
-  @SerializedName("InjuryOnWorkPlace")
-  private Boolean injuryOnWorkPlace = null;
+  @SerializedName("injuryonworkplace")
+  private Boolean injuryonworkplace = null;
 
-  @SerializedName("InjuryActivity")
-  private String injuryActivity = null;
+  @SerializedName("injuryactivity")
+  private String injuryactivity = null;
 
-  @SerializedName("WorkPosition_ID")
-  private String workPositionID = null;
+  @SerializedName("workposition_id")
+  private String workpositionId = null;
 
-  @SerializedName("AdequateQualification")
-  private Boolean adequateQualification = null;
+  @SerializedName("adequatequalification")
+  private Boolean adequatequalification = null;
 
-  @SerializedName("DateOfInjury$DATE")
-  private DateTime dateOfInjuryDATE = null;
+  @SerializedName("dateofinjury$date")
+  private DateTime dateofinjurydate = null;
 
-  @SerializedName("BeginOfShift")
-  private String beginOfShift = null;
+  @SerializedName("beginofshift")
+  private String beginofshift = null;
 
-  @SerializedName("NumberOfInjured")
-  private Integer numberOfInjured = null;
+  @SerializedName("numberofinjured")
+  private Integer numberofinjured = null;
 
-  @SerializedName("TypeOfInjury")
-  private String typeOfInjury = null;
+  @SerializedName("typeofinjury")
+  private String typeofinjury = null;
 
-  @SerializedName("Relevance")
+  @SerializedName("relevance")
   private Integer relevance = null;
 
-  @SerializedName("CausedByCar")
-  private Boolean causedByCar = null;
+  @SerializedName("causedbycar")
+  private Boolean causedbycar = null;
 
-  @SerializedName("CausedByMachine")
-  private Boolean causedByMachine = null;
+  @SerializedName("causedbymachine")
+  private Boolean causedbymachine = null;
 
-  @SerializedName("CausedByStuff")
-  private Boolean causedByStuff = null;
+  @SerializedName("causedbystuff")
+  private Boolean causedbystuff = null;
 
-  @SerializedName("CausedByFall")
-  private Boolean causedByFall = null;
+  @SerializedName("causedbyfall")
+  private Boolean causedbyfall = null;
 
-  @SerializedName("CausedByTool")
-  private Boolean causedByTool = null;
+  @SerializedName("causedbytool")
+  private Boolean causedbytool = null;
 
-  @SerializedName("CausedByChemicalAgents")
-  private Boolean causedByChemicalAgents = null;
+  @SerializedName("causedbychemicalagents")
+  private Boolean causedbychemicalagents = null;
 
-  @SerializedName("CausedByFire")
-  private Boolean causedByFire = null;
+  @SerializedName("causedbyfire")
+  private Boolean causedbyfire = null;
 
-  @SerializedName("CausedByEngine")
-  private Boolean causedByEngine = null;
+  @SerializedName("causedbyengine")
+  private Boolean causedbyengine = null;
 
-  @SerializedName("CausedByPeopleOrAnimals")
-  private Boolean causedByPeopleOrAnimals = null;
+  @SerializedName("causedbypeopleoranimals")
+  private Boolean causedbypeopleoranimals = null;
 
-  @SerializedName("CausedByOtherReason")
-  private Boolean causedByOtherReason = null;
+  @SerializedName("causedbyotherreason")
+  private Boolean causedbyotherreason = null;
 
-  @SerializedName("BecauseOfMalfunction")
-  private Boolean becauseOfMalfunction = null;
+  @SerializedName("becauseofmalfunction")
+  private Boolean becauseofmalfunction = null;
 
-  @SerializedName("BecauseOfUnderestimating")
-  private Boolean becauseOfUnderestimating = null;
+  @SerializedName("becauseofunderestimating")
+  private Boolean becauseofunderestimating = null;
 
-  @SerializedName("BecauseOfFaultOfWorkingPlace")
-  private Boolean becauseOfFaultOfWorkingPlace = null;
+  @SerializedName("becauseoffaultofworkingplace")
+  private Boolean becauseoffaultofworkingplace = null;
 
-  @SerializedName("BecauseOfBadPersonalProtection")
-  private Boolean becauseOfBadPersonalProtection = null;
+  @SerializedName("becauseofbadpersonalprotection")
+  private Boolean becauseofbadpersonalprotection = null;
 
-  @SerializedName("BecauseOfRulesViolation")
-  private Boolean becauseOfRulesViolation = null;
+  @SerializedName("becauseofrulesviolation")
+  private Boolean becauseofrulesviolation = null;
 
-  @SerializedName("BecauseOfHumanFactor")
-  private Boolean becauseOfHumanFactor = null;
+  @SerializedName("becauseofhumanfactor")
+  private Boolean becauseofhumanfactor = null;
 
-  @SerializedName("BecauseOfOthersReason")
-  private Boolean becauseOfOthersReason = null;
+  @SerializedName("becauseofothersreason")
+  private Boolean becauseofothersreason = null;
 
-  @SerializedName("DescriptionOfConditions")
-  private String descriptionOfConditions = null;
+  @SerializedName("descriptionofconditions")
+  private String descriptionofconditions = null;
 
-  @SerializedName("DescriptionOfBrokenRules")
-  private String descriptionOfBrokenRules = null;
+  @SerializedName("descriptionofbrokenrules")
+  private String descriptionofbrokenrules = null;
 
-  @SerializedName("WorkingRelation_ID")
-  private String workingRelationID = null;
+  @SerializedName("workingrelation_id")
+  private String workingrelationId = null;
 
-  @SerializedName("Employee_ID")
-  private String employeeID = null;
+  @SerializedName("employee_id")
+  private String employeeId = null;
 
-  @SerializedName("BaseTypeAsText")
-  private String baseTypeAsText = null;
+  @SerializedName("basetypeastext")
+  private String basetypeastext = null;
 
-  @SerializedName("RelevanceAsText")
-  private String relevanceAsText = null;
+  @SerializedName("relevanceastext")
+  private String relevanceastext = null;
 
-  @SerializedName("PERS_PersonalNumber")
-  private String pERSPersonalNumber = null;
+  @SerializedName("pers_personalnumber")
+  private String persPersonalnumber = null;
 
-  @SerializedName("S_SolveAsContravention")
-  private Boolean sSolveAsContravention = null;
+  @SerializedName("s_solveascontravention")
+  private Boolean sSolveascontravention = null;
 
-  @SerializedName("S_CausedByTussle")
-  private Boolean sCausedByTussle = null;
+  @SerializedName("s_causedbytussle")
+  private Boolean sCausedbytussle = null;
 
-  @SerializedName("S_InvestigatedByPolice")
-  private Boolean sInvestigatedByPolice = null;
+  @SerializedName("s_investigatedbypolice")
+  private Boolean sInvestigatedbypolice = null;
 
-  @SerializedName("S_CausedByCrimminalOffense")
-  private Boolean sCausedByCrimminalOffense = null;
+  @SerializedName("s_causedbycrimminaloffense")
+  private Boolean sCausedbycrimminaloffense = null;
 
-  @SerializedName("S_CausedByDrunkenessOrDrugs")
-  private Boolean sCausedByDrunkenessOrDrugs = null;
+  @SerializedName("s_causedbydrunkenessordrugs")
+  private Boolean sCausedbydrunkenessordrugs = null;
 
-  @SerializedName("S_CausedDeliberately")
-  private Boolean sCausedDeliberately = null;
+  @SerializedName("s_causeddeliberately")
+  private Boolean sCauseddeliberately = null;
 
-  @SerializedName("S_InjuryReasonDetails")
-  private String sInjuryReasonDetails = null;
+  @SerializedName("s_injuryreasondetails")
+  private String sInjuryreasondetails = null;
 
-  @SerializedName("S_InjuryInvestigatedDetails")
-  private String sInjuryInvestigatedDetails = null;
+  @SerializedName("s_injuryinvestigateddetails")
+  private String sInjuryinvestigateddetails = null;
 
-  @SerializedName("S_CausedByElectricity")
-  private Boolean sCausedByElectricity = null;
+  @SerializedName("s_causedbyelectricity")
+  private Boolean sCausedbyelectricity = null;
 
-  @SerializedName("S_ShiftBeginDateTime")
-  private DateTime sShiftBeginDateTime = null;
+  @SerializedName("s_shiftbegindatetime")
+  private DateTime sShiftbegindatetime = null;
 
-  @SerializedName("S_AcceptedInjuryPrevention")
-  private String sAcceptedInjuryPrevention = null;
+  @SerializedName("s_acceptedinjuryprevention")
+  private String sAcceptedinjuryprevention = null;
 
-  @SerializedName("S_InjuredAndWitnessProclamation")
-  private String sInjuredAndWitnessProclamation = null;
+  @SerializedName("s_injuredandwitnessproclamation")
+  private String sInjuredandwitnessproclamation = null;
 
-  @SerializedName("S_Witness1Name")
-  private String sWitness1Name = null;
+  @SerializedName("s_witness1name")
+  private String sWitness1name = null;
 
-  @SerializedName("S_Witness2Name")
-  private String sWitness2Name = null;
+  @SerializedName("s_witness2name")
+  private String sWitness2name = null;
 
-  @SerializedName("S_Witness3Name")
-  private String sWitness3Name = null;
+  @SerializedName("s_witness3name")
+  private String sWitness3name = null;
 
-  @SerializedName("S_Witness4Name")
-  private String sWitness4Name = null;
+  @SerializedName("s_witness4name")
+  private String sWitness4name = null;
 
-  @SerializedName("S_Witness5Name")
-  private String sWitness5Name = null;
+  @SerializedName("s_witness5name")
+  private String sWitness5name = null;
 
-  @SerializedName("S_SecurityAuthorityName")
-  private String sSecurityAuthorityName = null;
+  @SerializedName("s_securityauthorityname")
+  private String sSecurityauthorityname = null;
 
-  @SerializedName("S_UnionRepresentativeName")
-  private String sUnionRepresentativeName = null;
+  @SerializedName("s_unionrepresentativename")
+  private String sUnionrepresentativename = null;
 
-  @SerializedName("S_LocalWorkInspectorate")
-  private String sLocalWorkInspectorate = null;
+  @SerializedName("s_localworkinspectorate")
+  private String sLocalworkinspectorate = null;
 
-  @SerializedName("S_HospitalizationDays")
-  private Integer sHospitalizationDays = null;
+  @SerializedName("s_hospitalizationdays")
+  private Integer sHospitalizationdays = null;
 
-  @SerializedName("S_DateOfDeath")
-  private DateTime sDateOfDeath = null;
+  @SerializedName("s_dateofdeath")
+  private DateTime sDateofdeath = null;
 
-  @SerializedName("S_InjuryTypeCode")
-  private String sInjuryTypeCode = null;
+  @SerializedName("s_injurytypecode")
+  private String sInjurytypecode = null;
 
-  @SerializedName("S_InjuredBodyPartCode")
-  private String sInjuredBodyPartCode = null;
+  @SerializedName("s_injuredbodypartcode")
+  private String sInjuredbodypartcode = null;
+
+  public Workinginjury displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Workinginjury id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Workinginjury classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Workinginjury objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Workinginjury rows(List<Workinginjuryrow> rows) {
@@ -305,10 +341,10 @@ public class Workinginjury   {
   }
 
    /**
-   * Řádky; kolekce BO Řádek pracovního úrazu [nepersistentní položka]
+   * Řádky; kolekce bo Řádek pracovního úrazu [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Řádek pracovního úrazu [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo Řádek pracovního úrazu [nepersistentní položka]")
   public List<Workinginjuryrow> getRows() {
     return rows;
   }
@@ -317,346 +353,346 @@ public class Workinginjury   {
     this.rows = rows;
   }
 
-  public Workinginjury docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Workinginjury docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Workinginjury periodID(String periodID) {
-    this.periodID = periodID;
+  public Workinginjury periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Workinginjury ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Workinginjury ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Workinginjury docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Workinginjury docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Workinginjury createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Workinginjury createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Workinginjury correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Workinginjury correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Workinginjury newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Workinginjury newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Workinginjury newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Workinginjury newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Workinginjury industryBranchCode(String industryBranchCode) {
-    this.industryBranchCode = industryBranchCode;
+  public Workinginjury industrybranchcode(String industrybranchcode) {
+    this.industrybranchcode = industrybranchcode;
     return this;
   }
 
    /**
-   * OKEČ (CZ-NACE) [persistentní položka]
-   * @return industryBranchCode
+   * okeČ (cz-nace) [persistentní položka]
+   * @return industrybranchcode
   **/
-  @ApiModelProperty(example = "null", value = "OKEČ (CZ-NACE) [persistentní položka]")
-  public String getIndustryBranchCode() {
-    return industryBranchCode;
+  @ApiModelProperty(example = "null", value = "okeČ (cz-nace) [persistentní položka]")
+  public String getIndustrybranchcode() {
+    return industrybranchcode;
   }
 
-  public void setIndustryBranchCode(String industryBranchCode) {
-    this.industryBranchCode = industryBranchCode;
+  public void setIndustrybranchcode(String industrybranchcode) {
+    this.industrybranchcode = industrybranchcode;
   }
 
-  public Workinginjury baseType(Integer baseType) {
-    this.baseType = baseType;
+  public Workinginjury basetype(Integer basetype) {
+    this.basetype = basetype;
     return this;
   }
 
    /**
-   * Základní typ [persistentní položka]
-   * @return baseType
+   * základní typ [persistentní položka]
+   * @return basetype
   **/
-  @ApiModelProperty(example = "null", value = "Základní typ [persistentní položka]")
-  public Integer getBaseType() {
-    return baseType;
+  @ApiModelProperty(example = "null", value = "základní typ [persistentní položka]")
+  public Integer getBasetype() {
+    return basetype;
   }
 
-  public void setBaseType(Integer baseType) {
-    this.baseType = baseType;
+  public void setBasetype(Integer basetype) {
+    this.basetype = basetype;
   }
 
-  public Workinginjury injuryPlace(String injuryPlace) {
-    this.injuryPlace = injuryPlace;
+  public Workinginjury injuryplace(String injuryplace) {
+    this.injuryplace = injuryplace;
     return this;
   }
 
    /**
-   * Místo úrazu [persistentní položka]
-   * @return injuryPlace
+   * místo úrazu [persistentní položka]
+   * @return injuryplace
   **/
-  @ApiModelProperty(example = "null", value = "Místo úrazu [persistentní položka]")
-  public String getInjuryPlace() {
-    return injuryPlace;
+  @ApiModelProperty(example = "null", value = "místo úrazu [persistentní položka]")
+  public String getInjuryplace() {
+    return injuryplace;
   }
 
-  public void setInjuryPlace(String injuryPlace) {
-    this.injuryPlace = injuryPlace;
+  public void setInjuryplace(String injuryplace) {
+    this.injuryplace = injuryplace;
   }
 
-  public Workinginjury injuryOnWorkPlace(Boolean injuryOnWorkPlace) {
-    this.injuryOnWorkPlace = injuryOnWorkPlace;
+  public Workinginjury injuryonworkplace(Boolean injuryonworkplace) {
+    this.injuryonworkplace = injuryonworkplace;
     return this;
   }
 
    /**
    * Úraz na pracovišti [persistentní položka]
-   * @return injuryOnWorkPlace
+   * @return injuryonworkplace
   **/
   @ApiModelProperty(example = "null", value = "Úraz na pracovišti [persistentní položka]")
-  public Boolean getInjuryOnWorkPlace() {
-    return injuryOnWorkPlace;
+  public Boolean getInjuryonworkplace() {
+    return injuryonworkplace;
   }
 
-  public void setInjuryOnWorkPlace(Boolean injuryOnWorkPlace) {
-    this.injuryOnWorkPlace = injuryOnWorkPlace;
+  public void setInjuryonworkplace(Boolean injuryonworkplace) {
+    this.injuryonworkplace = injuryonworkplace;
   }
 
-  public Workinginjury injuryActivity(String injuryActivity) {
-    this.injuryActivity = injuryActivity;
+  public Workinginjury injuryactivity(String injuryactivity) {
+    this.injuryactivity = injuryactivity;
     return this;
   }
 
    /**
    * Činnost při úrazu [persistentní položka]
-   * @return injuryActivity
+   * @return injuryactivity
   **/
   @ApiModelProperty(example = "null", value = "Činnost při úrazu [persistentní položka]")
-  public String getInjuryActivity() {
-    return injuryActivity;
+  public String getInjuryactivity() {
+    return injuryactivity;
   }
 
-  public void setInjuryActivity(String injuryActivity) {
-    this.injuryActivity = injuryActivity;
+  public void setInjuryactivity(String injuryactivity) {
+    this.injuryactivity = injuryactivity;
   }
 
-  public Workinginjury workPositionID(String workPositionID) {
-    this.workPositionID = workPositionID;
+  public Workinginjury workpositionId(String workpositionId) {
+    this.workpositionId = workpositionId;
     return this;
   }
 
    /**
-   * Pracovní zařazení; ID objektu Pracovní zařazení [persistentní položka]
-   * @return workPositionID
+   * pracovní zařazení; id objektu pracovní zařazení [persistentní položka]
+   * @return workpositionId
   **/
-  @ApiModelProperty(example = "null", value = "Pracovní zařazení; ID objektu Pracovní zařazení [persistentní položka]")
-  public String getWorkPositionID() {
-    return workPositionID;
+  @ApiModelProperty(example = "null", value = "pracovní zařazení; id objektu pracovní zařazení [persistentní položka]")
+  public String getWorkpositionId() {
+    return workpositionId;
   }
 
-  public void setWorkPositionID(String workPositionID) {
-    this.workPositionID = workPositionID;
+  public void setWorkpositionId(String workpositionId) {
+    this.workpositionId = workpositionId;
   }
 
-  public Workinginjury adequateQualification(Boolean adequateQualification) {
-    this.adequateQualification = adequateQualification;
+  public Workinginjury adequatequalification(Boolean adequatequalification) {
+    this.adequatequalification = adequatequalification;
     return this;
   }
 
    /**
-   * Kvalifikace pro výkon práce [persistentní položka]
-   * @return adequateQualification
+   * kvalifikace pro výkon práce [persistentní položka]
+   * @return adequatequalification
   **/
-  @ApiModelProperty(example = "null", value = "Kvalifikace pro výkon práce [persistentní položka]")
-  public Boolean getAdequateQualification() {
-    return adequateQualification;
+  @ApiModelProperty(example = "null", value = "kvalifikace pro výkon práce [persistentní položka]")
+  public Boolean getAdequatequalification() {
+    return adequatequalification;
   }
 
-  public void setAdequateQualification(Boolean adequateQualification) {
-    this.adequateQualification = adequateQualification;
+  public void setAdequatequalification(Boolean adequatequalification) {
+    this.adequatequalification = adequatequalification;
   }
 
-  public Workinginjury dateOfInjuryDATE(DateTime dateOfInjuryDATE) {
-    this.dateOfInjuryDATE = dateOfInjuryDATE;
+  public Workinginjury dateofinjurydate(DateTime dateofinjurydate) {
+    this.dateofinjurydate = dateofinjurydate;
     return this;
   }
 
    /**
-   * Datum a hodina úrazu [persistentní položka]
-   * @return dateOfInjuryDATE
+   * datum a hodina úrazu [persistentní položka]
+   * @return dateofinjurydate
   **/
-  @ApiModelProperty(example = "null", value = "Datum a hodina úrazu [persistentní položka]")
-  public DateTime getDateOfInjuryDATE() {
-    return dateOfInjuryDATE;
+  @ApiModelProperty(example = "null", value = "datum a hodina úrazu [persistentní položka]")
+  public DateTime getDateofinjurydate() {
+    return dateofinjurydate;
   }
 
-  public void setDateOfInjuryDATE(DateTime dateOfInjuryDATE) {
-    this.dateOfInjuryDATE = dateOfInjuryDATE;
+  public void setDateofinjurydate(DateTime dateofinjurydate) {
+    this.dateofinjurydate = dateofinjurydate;
   }
 
-  public Workinginjury beginOfShift(String beginOfShift) {
-    this.beginOfShift = beginOfShift;
+  public Workinginjury beginofshift(String beginofshift) {
+    this.beginofshift = beginofshift;
     return this;
   }
 
    /**
-   * Začátek směny [persistentní položka]
-   * @return beginOfShift
+   * začátek směny [persistentní položka]
+   * @return beginofshift
   **/
-  @ApiModelProperty(example = "null", value = "Začátek směny [persistentní položka]")
-  public String getBeginOfShift() {
-    return beginOfShift;
+  @ApiModelProperty(example = "null", value = "začátek směny [persistentní položka]")
+  public String getBeginofshift() {
+    return beginofshift;
   }
 
-  public void setBeginOfShift(String beginOfShift) {
-    this.beginOfShift = beginOfShift;
+  public void setBeginofshift(String beginofshift) {
+    this.beginofshift = beginofshift;
   }
 
-  public Workinginjury numberOfInjured(Integer numberOfInjured) {
-    this.numberOfInjured = numberOfInjured;
+  public Workinginjury numberofinjured(Integer numberofinjured) {
+    this.numberofinjured = numberofinjured;
     return this;
   }
 
    /**
-   * Počet zraněných [persistentní položka]
-   * @return numberOfInjured
+   * počet zraněných [persistentní položka]
+   * @return numberofinjured
   **/
-  @ApiModelProperty(example = "null", value = "Počet zraněných [persistentní položka]")
-  public Integer getNumberOfInjured() {
-    return numberOfInjured;
+  @ApiModelProperty(example = "null", value = "počet zraněných [persistentní položka]")
+  public Integer getNumberofinjured() {
+    return numberofinjured;
   }
 
-  public void setNumberOfInjured(Integer numberOfInjured) {
-    this.numberOfInjured = numberOfInjured;
+  public void setNumberofinjured(Integer numberofinjured) {
+    this.numberofinjured = numberofinjured;
   }
 
-  public Workinginjury typeOfInjury(String typeOfInjury) {
-    this.typeOfInjury = typeOfInjury;
+  public Workinginjury typeofinjury(String typeofinjury) {
+    this.typeofinjury = typeofinjury;
     return this;
   }
 
    /**
-   * Druh zranění [persistentní položka]
-   * @return typeOfInjury
+   * druh zranění [persistentní položka]
+   * @return typeofinjury
   **/
-  @ApiModelProperty(example = "null", value = "Druh zranění [persistentní položka]")
-  public String getTypeOfInjury() {
-    return typeOfInjury;
+  @ApiModelProperty(example = "null", value = "druh zranění [persistentní položka]")
+  public String getTypeofinjury() {
+    return typeofinjury;
   }
 
-  public void setTypeOfInjury(String typeOfInjury) {
-    this.typeOfInjury = typeOfInjury;
+  public void setTypeofinjury(String typeofinjury) {
+    this.typeofinjury = typeofinjury;
   }
 
   public Workinginjury relevance(Integer relevance) {
@@ -665,10 +701,10 @@ public class Workinginjury   {
   }
 
    /**
-   * Druh úrazu [persistentní položka]
+   * druh úrazu [persistentní položka]
    * @return relevance
   **/
-  @ApiModelProperty(example = "null", value = "Druh úrazu [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "druh úrazu [persistentní položka]")
   public Integer getRelevance() {
     return relevance;
   }
@@ -677,859 +713,868 @@ public class Workinginjury   {
     this.relevance = relevance;
   }
 
-  public Workinginjury causedByCar(Boolean causedByCar) {
-    this.causedByCar = causedByCar;
+  public Workinginjury causedbycar(Boolean causedbycar) {
+    this.causedbycar = causedbycar;
     return this;
   }
 
    /**
-   * Způsobeno dopravním prostředkem [persistentní položka]
-   * @return causedByCar
+   * způsobeno dopravním prostředkem [persistentní položka]
+   * @return causedbycar
   **/
-  @ApiModelProperty(example = "null", value = "Způsobeno dopravním prostředkem [persistentní položka]")
-  public Boolean getCausedByCar() {
-    return causedByCar;
+  @ApiModelProperty(example = "null", value = "způsobeno dopravním prostředkem [persistentní položka]")
+  public Boolean getCausedbycar() {
+    return causedbycar;
   }
 
-  public void setCausedByCar(Boolean causedByCar) {
-    this.causedByCar = causedByCar;
+  public void setCausedbycar(Boolean causedbycar) {
+    this.causedbycar = causedbycar;
   }
 
-  public Workinginjury causedByMachine(Boolean causedByMachine) {
-    this.causedByMachine = causedByMachine;
+  public Workinginjury causedbymachine(Boolean causedbymachine) {
+    this.causedbymachine = causedbymachine;
     return this;
   }
 
    /**
-   * Způsobeno strojem [persistentní položka]
-   * @return causedByMachine
+   * způsobeno strojem [persistentní položka]
+   * @return causedbymachine
   **/
-  @ApiModelProperty(example = "null", value = "Způsobeno strojem [persistentní položka]")
-  public Boolean getCausedByMachine() {
-    return causedByMachine;
+  @ApiModelProperty(example = "null", value = "způsobeno strojem [persistentní položka]")
+  public Boolean getCausedbymachine() {
+    return causedbymachine;
   }
 
-  public void setCausedByMachine(Boolean causedByMachine) {
-    this.causedByMachine = causedByMachine;
+  public void setCausedbymachine(Boolean causedbymachine) {
+    this.causedbymachine = causedbymachine;
   }
 
-  public Workinginjury causedByStuff(Boolean causedByStuff) {
-    this.causedByStuff = causedByStuff;
+  public Workinginjury causedbystuff(Boolean causedbystuff) {
+    this.causedbystuff = causedbystuff;
     return this;
   }
 
    /**
-   * Způsobeno materiálem [persistentní položka]
-   * @return causedByStuff
+   * způsobeno materiálem [persistentní položka]
+   * @return causedbystuff
   **/
-  @ApiModelProperty(example = "null", value = "Způsobeno materiálem [persistentní položka]")
-  public Boolean getCausedByStuff() {
-    return causedByStuff;
+  @ApiModelProperty(example = "null", value = "způsobeno materiálem [persistentní položka]")
+  public Boolean getCausedbystuff() {
+    return causedbystuff;
   }
 
-  public void setCausedByStuff(Boolean causedByStuff) {
-    this.causedByStuff = causedByStuff;
+  public void setCausedbystuff(Boolean causedbystuff) {
+    this.causedbystuff = causedbystuff;
   }
 
-  public Workinginjury causedByFall(Boolean causedByFall) {
-    this.causedByFall = causedByFall;
+  public Workinginjury causedbyfall(Boolean causedbyfall) {
+    this.causedbyfall = causedbyfall;
     return this;
   }
 
    /**
-   * Způsobeno pádem [persistentní položka]
-   * @return causedByFall
+   * způsobeno pádem [persistentní položka]
+   * @return causedbyfall
   **/
-  @ApiModelProperty(example = "null", value = "Způsobeno pádem [persistentní položka]")
-  public Boolean getCausedByFall() {
-    return causedByFall;
+  @ApiModelProperty(example = "null", value = "způsobeno pádem [persistentní položka]")
+  public Boolean getCausedbyfall() {
+    return causedbyfall;
   }
 
-  public void setCausedByFall(Boolean causedByFall) {
-    this.causedByFall = causedByFall;
+  public void setCausedbyfall(Boolean causedbyfall) {
+    this.causedbyfall = causedbyfall;
   }
 
-  public Workinginjury causedByTool(Boolean causedByTool) {
-    this.causedByTool = causedByTool;
+  public Workinginjury causedbytool(Boolean causedbytool) {
+    this.causedbytool = causedbytool;
     return this;
   }
 
    /**
-   * Způsobeno nástrojem [persistentní položka]
-   * @return causedByTool
+   * způsobeno nástrojem [persistentní položka]
+   * @return causedbytool
   **/
-  @ApiModelProperty(example = "null", value = "Způsobeno nástrojem [persistentní položka]")
-  public Boolean getCausedByTool() {
-    return causedByTool;
+  @ApiModelProperty(example = "null", value = "způsobeno nástrojem [persistentní položka]")
+  public Boolean getCausedbytool() {
+    return causedbytool;
   }
 
-  public void setCausedByTool(Boolean causedByTool) {
-    this.causedByTool = causedByTool;
+  public void setCausedbytool(Boolean causedbytool) {
+    this.causedbytool = causedbytool;
   }
 
-  public Workinginjury causedByChemicalAgents(Boolean causedByChemicalAgents) {
-    this.causedByChemicalAgents = causedByChemicalAgents;
+  public Workinginjury causedbychemicalagents(Boolean causedbychemicalagents) {
+    this.causedbychemicalagents = causedbychemicalagents;
     return this;
   }
 
    /**
-   * Způsobeno chem. lát. [persistentní položka]
-   * @return causedByChemicalAgents
+   * způsobeno chem. lát. [persistentní položka]
+   * @return causedbychemicalagents
   **/
-  @ApiModelProperty(example = "null", value = "Způsobeno chem. lát. [persistentní položka]")
-  public Boolean getCausedByChemicalAgents() {
-    return causedByChemicalAgents;
+  @ApiModelProperty(example = "null", value = "způsobeno chem. lát. [persistentní položka]")
+  public Boolean getCausedbychemicalagents() {
+    return causedbychemicalagents;
   }
 
-  public void setCausedByChemicalAgents(Boolean causedByChemicalAgents) {
-    this.causedByChemicalAgents = causedByChemicalAgents;
+  public void setCausedbychemicalagents(Boolean causedbychemicalagents) {
+    this.causedbychemicalagents = causedbychemicalagents;
   }
 
-  public Workinginjury causedByFire(Boolean causedByFire) {
-    this.causedByFire = causedByFire;
+  public Workinginjury causedbyfire(Boolean causedbyfire) {
+    this.causedbyfire = causedbyfire;
     return this;
   }
 
    /**
-   * Způsobeno ohněm [persistentní položka]
-   * @return causedByFire
+   * způsobeno ohněm [persistentní položka]
+   * @return causedbyfire
   **/
-  @ApiModelProperty(example = "null", value = "Způsobeno ohněm [persistentní položka]")
-  public Boolean getCausedByFire() {
-    return causedByFire;
+  @ApiModelProperty(example = "null", value = "způsobeno ohněm [persistentní položka]")
+  public Boolean getCausedbyfire() {
+    return causedbyfire;
   }
 
-  public void setCausedByFire(Boolean causedByFire) {
-    this.causedByFire = causedByFire;
+  public void setCausedbyfire(Boolean causedbyfire) {
+    this.causedbyfire = causedbyfire;
   }
 
-  public Workinginjury causedByEngine(Boolean causedByEngine) {
-    this.causedByEngine = causedByEngine;
+  public Workinginjury causedbyengine(Boolean causedbyengine) {
+    this.causedbyengine = causedbyengine;
     return this;
   }
 
    /**
-   * Způsobeno hnacím strojem [persistentní položka]
-   * @return causedByEngine
+   * způsobeno hnacím strojem [persistentní položka]
+   * @return causedbyengine
   **/
-  @ApiModelProperty(example = "null", value = "Způsobeno hnacím strojem [persistentní položka]")
-  public Boolean getCausedByEngine() {
-    return causedByEngine;
+  @ApiModelProperty(example = "null", value = "způsobeno hnacím strojem [persistentní položka]")
+  public Boolean getCausedbyengine() {
+    return causedbyengine;
   }
 
-  public void setCausedByEngine(Boolean causedByEngine) {
-    this.causedByEngine = causedByEngine;
+  public void setCausedbyengine(Boolean causedbyengine) {
+    this.causedbyengine = causedbyengine;
   }
 
-  public Workinginjury causedByPeopleOrAnimals(Boolean causedByPeopleOrAnimals) {
-    this.causedByPeopleOrAnimals = causedByPeopleOrAnimals;
+  public Workinginjury causedbypeopleoranimals(Boolean causedbypeopleoranimals) {
+    this.causedbypeopleoranimals = causedbypeopleoranimals;
     return this;
   }
 
    /**
-   * Způsobeno lidmi nebo zvířaty [persistentní položka]
-   * @return causedByPeopleOrAnimals
+   * způsobeno lidmi nebo zvířaty [persistentní položka]
+   * @return causedbypeopleoranimals
   **/
-  @ApiModelProperty(example = "null", value = "Způsobeno lidmi nebo zvířaty [persistentní položka]")
-  public Boolean getCausedByPeopleOrAnimals() {
-    return causedByPeopleOrAnimals;
+  @ApiModelProperty(example = "null", value = "způsobeno lidmi nebo zvířaty [persistentní položka]")
+  public Boolean getCausedbypeopleoranimals() {
+    return causedbypeopleoranimals;
   }
 
-  public void setCausedByPeopleOrAnimals(Boolean causedByPeopleOrAnimals) {
-    this.causedByPeopleOrAnimals = causedByPeopleOrAnimals;
+  public void setCausedbypeopleoranimals(Boolean causedbypeopleoranimals) {
+    this.causedbypeopleoranimals = causedbypeopleoranimals;
   }
 
-  public Workinginjury causedByOtherReason(Boolean causedByOtherReason) {
-    this.causedByOtherReason = causedByOtherReason;
+  public Workinginjury causedbyotherreason(Boolean causedbyotherreason) {
+    this.causedbyotherreason = causedbyotherreason;
     return this;
   }
 
    /**
-   * Způsobeno jinou příčinou [persistentní položka]
-   * @return causedByOtherReason
+   * způsobeno jinou příčinou [persistentní položka]
+   * @return causedbyotherreason
   **/
-  @ApiModelProperty(example = "null", value = "Způsobeno jinou příčinou [persistentní položka]")
-  public Boolean getCausedByOtherReason() {
-    return causedByOtherReason;
+  @ApiModelProperty(example = "null", value = "způsobeno jinou příčinou [persistentní položka]")
+  public Boolean getCausedbyotherreason() {
+    return causedbyotherreason;
   }
 
-  public void setCausedByOtherReason(Boolean causedByOtherReason) {
-    this.causedByOtherReason = causedByOtherReason;
+  public void setCausedbyotherreason(Boolean causedbyotherreason) {
+    this.causedbyotherreason = causedbyotherreason;
   }
 
-  public Workinginjury becauseOfMalfunction(Boolean becauseOfMalfunction) {
-    this.becauseOfMalfunction = becauseOfMalfunction;
+  public Workinginjury becauseofmalfunction(Boolean becauseofmalfunction) {
+    this.becauseofmalfunction = becauseofmalfunction;
     return this;
   }
 
    /**
-   * Způsobeno poruchou [persistentní položka]
-   * @return becauseOfMalfunction
+   * způsobeno poruchou [persistentní položka]
+   * @return becauseofmalfunction
   **/
-  @ApiModelProperty(example = "null", value = "Způsobeno poruchou [persistentní položka]")
-  public Boolean getBecauseOfMalfunction() {
-    return becauseOfMalfunction;
+  @ApiModelProperty(example = "null", value = "způsobeno poruchou [persistentní položka]")
+  public Boolean getBecauseofmalfunction() {
+    return becauseofmalfunction;
   }
 
-  public void setBecauseOfMalfunction(Boolean becauseOfMalfunction) {
-    this.becauseOfMalfunction = becauseOfMalfunction;
+  public void setBecauseofmalfunction(Boolean becauseofmalfunction) {
+    this.becauseofmalfunction = becauseofmalfunction;
   }
 
-  public Workinginjury becauseOfUnderestimating(Boolean becauseOfUnderestimating) {
-    this.becauseOfUnderestimating = becauseOfUnderestimating;
+  public Workinginjury becauseofunderestimating(Boolean becauseofunderestimating) {
+    this.becauseofunderestimating = becauseofunderestimating;
     return this;
   }
 
    /**
-   * Způsobeno neodhadnutým nebezpečím [persistentní položka]
-   * @return becauseOfUnderestimating
+   * způsobeno neodhadnutým nebezpečím [persistentní položka]
+   * @return becauseofunderestimating
   **/
-  @ApiModelProperty(example = "null", value = "Způsobeno neodhadnutým nebezpečím [persistentní položka]")
-  public Boolean getBecauseOfUnderestimating() {
-    return becauseOfUnderestimating;
+  @ApiModelProperty(example = "null", value = "způsobeno neodhadnutým nebezpečím [persistentní položka]")
+  public Boolean getBecauseofunderestimating() {
+    return becauseofunderestimating;
   }
 
-  public void setBecauseOfUnderestimating(Boolean becauseOfUnderestimating) {
-    this.becauseOfUnderestimating = becauseOfUnderestimating;
+  public void setBecauseofunderestimating(Boolean becauseofunderestimating) {
+    this.becauseofunderestimating = becauseofunderestimating;
   }
 
-  public Workinginjury becauseOfFaultOfWorkingPlace(Boolean becauseOfFaultOfWorkingPlace) {
-    this.becauseOfFaultOfWorkingPlace = becauseOfFaultOfWorkingPlace;
+  public Workinginjury becauseoffaultofworkingplace(Boolean becauseoffaultofworkingplace) {
+    this.becauseoffaultofworkingplace = becauseoffaultofworkingplace;
     return this;
   }
 
    /**
-   * Poruchou na pracovišti [persistentní položka]
-   * @return becauseOfFaultOfWorkingPlace
+   * poruchou na pracovišti [persistentní položka]
+   * @return becauseoffaultofworkingplace
   **/
-  @ApiModelProperty(example = "null", value = "Poruchou na pracovišti [persistentní položka]")
-  public Boolean getBecauseOfFaultOfWorkingPlace() {
-    return becauseOfFaultOfWorkingPlace;
+  @ApiModelProperty(example = "null", value = "poruchou na pracovišti [persistentní položka]")
+  public Boolean getBecauseoffaultofworkingplace() {
+    return becauseoffaultofworkingplace;
   }
 
-  public void setBecauseOfFaultOfWorkingPlace(Boolean becauseOfFaultOfWorkingPlace) {
-    this.becauseOfFaultOfWorkingPlace = becauseOfFaultOfWorkingPlace;
+  public void setBecauseoffaultofworkingplace(Boolean becauseoffaultofworkingplace) {
+    this.becauseoffaultofworkingplace = becauseoffaultofworkingplace;
   }
 
-  public Workinginjury becauseOfBadPersonalProtection(Boolean becauseOfBadPersonalProtection) {
-    this.becauseOfBadPersonalProtection = becauseOfBadPersonalProtection;
+  public Workinginjury becauseofbadpersonalprotection(Boolean becauseofbadpersonalprotection) {
+    this.becauseofbadpersonalprotection = becauseofbadpersonalprotection;
     return this;
   }
 
    /**
    * Špatná osobní ochrana [persistentní položka]
-   * @return becauseOfBadPersonalProtection
+   * @return becauseofbadpersonalprotection
   **/
   @ApiModelProperty(example = "null", value = "Špatná osobní ochrana [persistentní položka]")
-  public Boolean getBecauseOfBadPersonalProtection() {
-    return becauseOfBadPersonalProtection;
+  public Boolean getBecauseofbadpersonalprotection() {
+    return becauseofbadpersonalprotection;
   }
 
-  public void setBecauseOfBadPersonalProtection(Boolean becauseOfBadPersonalProtection) {
-    this.becauseOfBadPersonalProtection = becauseOfBadPersonalProtection;
+  public void setBecauseofbadpersonalprotection(Boolean becauseofbadpersonalprotection) {
+    this.becauseofbadpersonalprotection = becauseofbadpersonalprotection;
   }
 
-  public Workinginjury becauseOfRulesViolation(Boolean becauseOfRulesViolation) {
-    this.becauseOfRulesViolation = becauseOfRulesViolation;
+  public Workinginjury becauseofrulesviolation(Boolean becauseofrulesviolation) {
+    this.becauseofrulesviolation = becauseofrulesviolation;
     return this;
   }
 
    /**
-   * Porušení prac. zásad [persistentní položka]
-   * @return becauseOfRulesViolation
+   * porušení prac. zásad [persistentní položka]
+   * @return becauseofrulesviolation
   **/
-  @ApiModelProperty(example = "null", value = "Porušení prac. zásad [persistentní položka]")
-  public Boolean getBecauseOfRulesViolation() {
-    return becauseOfRulesViolation;
+  @ApiModelProperty(example = "null", value = "porušení prac. zásad [persistentní položka]")
+  public Boolean getBecauseofrulesviolation() {
+    return becauseofrulesviolation;
   }
 
-  public void setBecauseOfRulesViolation(Boolean becauseOfRulesViolation) {
-    this.becauseOfRulesViolation = becauseOfRulesViolation;
+  public void setBecauseofrulesviolation(Boolean becauseofrulesviolation) {
+    this.becauseofrulesviolation = becauseofrulesviolation;
   }
 
-  public Workinginjury becauseOfHumanFactor(Boolean becauseOfHumanFactor) {
-    this.becauseOfHumanFactor = becauseOfHumanFactor;
+  public Workinginjury becauseofhumanfactor(Boolean becauseofhumanfactor) {
+    this.becauseofhumanfactor = becauseofhumanfactor;
     return this;
   }
 
    /**
-   * Lidský faktor [persistentní položka]
-   * @return becauseOfHumanFactor
+   * lidský faktor [persistentní položka]
+   * @return becauseofhumanfactor
   **/
-  @ApiModelProperty(example = "null", value = "Lidský faktor [persistentní položka]")
-  public Boolean getBecauseOfHumanFactor() {
-    return becauseOfHumanFactor;
+  @ApiModelProperty(example = "null", value = "lidský faktor [persistentní položka]")
+  public Boolean getBecauseofhumanfactor() {
+    return becauseofhumanfactor;
   }
 
-  public void setBecauseOfHumanFactor(Boolean becauseOfHumanFactor) {
-    this.becauseOfHumanFactor = becauseOfHumanFactor;
+  public void setBecauseofhumanfactor(Boolean becauseofhumanfactor) {
+    this.becauseofhumanfactor = becauseofhumanfactor;
   }
 
-  public Workinginjury becauseOfOthersReason(Boolean becauseOfOthersReason) {
-    this.becauseOfOthersReason = becauseOfOthersReason;
+  public Workinginjury becauseofothersreason(Boolean becauseofothersreason) {
+    this.becauseofothersreason = becauseofothersreason;
     return this;
   }
 
    /**
-   * Jiným činitelem [persistentní položka]
-   * @return becauseOfOthersReason
+   * jiným činitelem [persistentní položka]
+   * @return becauseofothersreason
   **/
-  @ApiModelProperty(example = "null", value = "Jiným činitelem [persistentní položka]")
-  public Boolean getBecauseOfOthersReason() {
-    return becauseOfOthersReason;
+  @ApiModelProperty(example = "null", value = "jiným činitelem [persistentní položka]")
+  public Boolean getBecauseofothersreason() {
+    return becauseofothersreason;
   }
 
-  public void setBecauseOfOthersReason(Boolean becauseOfOthersReason) {
-    this.becauseOfOthersReason = becauseOfOthersReason;
+  public void setBecauseofothersreason(Boolean becauseofothersreason) {
+    this.becauseofothersreason = becauseofothersreason;
   }
 
-  public Workinginjury descriptionOfConditions(String descriptionOfConditions) {
-    this.descriptionOfConditions = descriptionOfConditions;
+  public Workinginjury descriptionofconditions(String descriptionofconditions) {
+    this.descriptionofconditions = descriptionofconditions;
     return this;
   }
 
    /**
-   * Popis okolností [persistentní položka]
-   * @return descriptionOfConditions
+   * popis okolností [persistentní položka]
+   * @return descriptionofconditions
   **/
-  @ApiModelProperty(example = "null", value = "Popis okolností [persistentní položka]")
-  public String getDescriptionOfConditions() {
-    return descriptionOfConditions;
+  @ApiModelProperty(example = "null", value = "popis okolností [persistentní položka]")
+  public String getDescriptionofconditions() {
+    return descriptionofconditions;
   }
 
-  public void setDescriptionOfConditions(String descriptionOfConditions) {
-    this.descriptionOfConditions = descriptionOfConditions;
+  public void setDescriptionofconditions(String descriptionofconditions) {
+    this.descriptionofconditions = descriptionofconditions;
   }
 
-  public Workinginjury descriptionOfBrokenRules(String descriptionOfBrokenRules) {
-    this.descriptionOfBrokenRules = descriptionOfBrokenRules;
+  public Workinginjury descriptionofbrokenrules(String descriptionofbrokenrules) {
+    this.descriptionofbrokenrules = descriptionofbrokenrules;
     return this;
   }
 
    /**
-   * Popis porušených předpisů [persistentní položka]
-   * @return descriptionOfBrokenRules
+   * popis porušených předpisů [persistentní položka]
+   * @return descriptionofbrokenrules
   **/
-  @ApiModelProperty(example = "null", value = "Popis porušených předpisů [persistentní položka]")
-  public String getDescriptionOfBrokenRules() {
-    return descriptionOfBrokenRules;
+  @ApiModelProperty(example = "null", value = "popis porušených předpisů [persistentní položka]")
+  public String getDescriptionofbrokenrules() {
+    return descriptionofbrokenrules;
   }
 
-  public void setDescriptionOfBrokenRules(String descriptionOfBrokenRules) {
-    this.descriptionOfBrokenRules = descriptionOfBrokenRules;
+  public void setDescriptionofbrokenrules(String descriptionofbrokenrules) {
+    this.descriptionofbrokenrules = descriptionofbrokenrules;
   }
 
-  public Workinginjury workingRelationID(String workingRelationID) {
-    this.workingRelationID = workingRelationID;
+  public Workinginjury workingrelationId(String workingrelationId) {
+    this.workingrelationId = workingrelationId;
     return this;
   }
 
    /**
-   * Pracovní poměr; ID objektu Pracovní poměr [persistentní položka]
-   * @return workingRelationID
+   * pracovní poměr; id objektu pracovní poměr [persistentní položka]
+   * @return workingrelationId
   **/
-  @ApiModelProperty(example = "null", value = "Pracovní poměr; ID objektu Pracovní poměr [persistentní položka]")
-  public String getWorkingRelationID() {
-    return workingRelationID;
+  @ApiModelProperty(example = "null", value = "pracovní poměr; id objektu pracovní poměr [persistentní položka]")
+  public String getWorkingrelationId() {
+    return workingrelationId;
   }
 
-  public void setWorkingRelationID(String workingRelationID) {
-    this.workingRelationID = workingRelationID;
+  public void setWorkingrelationId(String workingrelationId) {
+    this.workingrelationId = workingrelationId;
   }
 
-  public Workinginjury employeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public Workinginjury employeeId(String employeeId) {
+    this.employeeId = employeeId;
     return this;
   }
 
    /**
-   * Zaměstnanec; ID objektu Zaměstnanec
-   * @return employeeID
+   * zaměstnanec; id objektu zaměstnanec
+   * @return employeeId
   **/
-  @ApiModelProperty(example = "null", value = "Zaměstnanec; ID objektu Zaměstnanec")
-  public String getEmployeeID() {
-    return employeeID;
+  @ApiModelProperty(example = "null", value = "zaměstnanec; id objektu zaměstnanec")
+  public String getEmployeeId() {
+    return employeeId;
   }
 
-  public void setEmployeeID(String employeeID) {
-    this.employeeID = employeeID;
+  public void setEmployeeId(String employeeId) {
+    this.employeeId = employeeId;
   }
 
-  public Workinginjury baseTypeAsText(String baseTypeAsText) {
-    this.baseTypeAsText = baseTypeAsText;
+  public Workinginjury basetypeastext(String basetypeastext) {
+    this.basetypeastext = basetypeastext;
     return this;
   }
 
    /**
-   * Základní typ
-   * @return baseTypeAsText
+   * základní typ
+   * @return basetypeastext
   **/
-  @ApiModelProperty(example = "null", value = "Základní typ")
-  public String getBaseTypeAsText() {
-    return baseTypeAsText;
+  @ApiModelProperty(example = "null", value = "základní typ")
+  public String getBasetypeastext() {
+    return basetypeastext;
   }
 
-  public void setBaseTypeAsText(String baseTypeAsText) {
-    this.baseTypeAsText = baseTypeAsText;
+  public void setBasetypeastext(String basetypeastext) {
+    this.basetypeastext = basetypeastext;
   }
 
-  public Workinginjury relevanceAsText(String relevanceAsText) {
-    this.relevanceAsText = relevanceAsText;
+  public Workinginjury relevanceastext(String relevanceastext) {
+    this.relevanceastext = relevanceastext;
     return this;
   }
 
    /**
-   * Druh úrazu
-   * @return relevanceAsText
+   * druh úrazu
+   * @return relevanceastext
   **/
-  @ApiModelProperty(example = "null", value = "Druh úrazu")
-  public String getRelevanceAsText() {
-    return relevanceAsText;
+  @ApiModelProperty(example = "null", value = "druh úrazu")
+  public String getRelevanceastext() {
+    return relevanceastext;
   }
 
-  public void setRelevanceAsText(String relevanceAsText) {
-    this.relevanceAsText = relevanceAsText;
+  public void setRelevanceastext(String relevanceastext) {
+    this.relevanceastext = relevanceastext;
+  }
+
+  public Workinginjury persPersonalnumber(String persPersonalnumber) {
+    this.persPersonalnumber = persPersonalnumber;
+    return this;
   }
 
    /**
-   * Os.číslo
-   * @return pERSPersonalNumber
+   * os.číslo
+   * @return persPersonalnumber
   **/
-  @ApiModelProperty(example = "null", value = "Os.číslo")
-  public String getPERSPersonalNumber() {
-    return pERSPersonalNumber;
+  @ApiModelProperty(example = "null", value = "os.číslo")
+  public String getPersPersonalnumber() {
+    return persPersonalnumber;
   }
 
-  public Workinginjury sSolveAsContravention(Boolean sSolveAsContravention) {
-    this.sSolveAsContravention = sSolveAsContravention;
+  public void setPersPersonalnumber(String persPersonalnumber) {
+    this.persPersonalnumber = persPersonalnumber;
+  }
+
+  public Workinginjury sSolveascontravention(Boolean sSolveascontravention) {
+    this.sSolveascontravention = sSolveascontravention;
     return this;
   }
 
    /**
    * Řešen jako přestupek [persistentní položka]
-   * @return sSolveAsContravention
+   * @return sSolveascontravention
   **/
   @ApiModelProperty(example = "null", value = "Řešen jako přestupek [persistentní položka]")
-  public Boolean getSSolveAsContravention() {
-    return sSolveAsContravention;
+  public Boolean getSSolveascontravention() {
+    return sSolveascontravention;
   }
 
-  public void setSSolveAsContravention(Boolean sSolveAsContravention) {
-    this.sSolveAsContravention = sSolveAsContravention;
+  public void setSSolveascontravention(Boolean sSolveascontravention) {
+    this.sSolveascontravention = sSolveascontravention;
   }
 
-  public Workinginjury sCausedByTussle(Boolean sCausedByTussle) {
-    this.sCausedByTussle = sCausedByTussle;
+  public Workinginjury sCausedbytussle(Boolean sCausedbytussle) {
+    this.sCausedbytussle = sCausedbytussle;
     return this;
   }
 
    /**
    * Úraz zaviněný účastí ve rvačce [persistentní položka]
-   * @return sCausedByTussle
+   * @return sCausedbytussle
   **/
   @ApiModelProperty(example = "null", value = "Úraz zaviněný účastí ve rvačce [persistentní položka]")
-  public Boolean getSCausedByTussle() {
-    return sCausedByTussle;
+  public Boolean getSCausedbytussle() {
+    return sCausedbytussle;
   }
 
-  public void setSCausedByTussle(Boolean sCausedByTussle) {
-    this.sCausedByTussle = sCausedByTussle;
+  public void setSCausedbytussle(Boolean sCausedbytussle) {
+    this.sCausedbytussle = sCausedbytussle;
   }
 
-  public Workinginjury sInvestigatedByPolice(Boolean sInvestigatedByPolice) {
-    this.sInvestigatedByPolice = sInvestigatedByPolice;
+  public Workinginjury sInvestigatedbypolice(Boolean sInvestigatedbypolice) {
+    this.sInvestigatedbypolice = sInvestigatedbypolice;
     return this;
   }
 
    /**
-   * Vyšetřován policií ČR [persistentní položka]
-   * @return sInvestigatedByPolice
+   * vyšetřován policií Čr [persistentní položka]
+   * @return sInvestigatedbypolice
   **/
-  @ApiModelProperty(example = "null", value = "Vyšetřován policií ČR [persistentní položka]")
-  public Boolean getSInvestigatedByPolice() {
-    return sInvestigatedByPolice;
+  @ApiModelProperty(example = "null", value = "vyšetřován policií Čr [persistentní položka]")
+  public Boolean getSInvestigatedbypolice() {
+    return sInvestigatedbypolice;
   }
 
-  public void setSInvestigatedByPolice(Boolean sInvestigatedByPolice) {
-    this.sInvestigatedByPolice = sInvestigatedByPolice;
+  public void setSInvestigatedbypolice(Boolean sInvestigatedbypolice) {
+    this.sInvestigatedbypolice = sInvestigatedbypolice;
   }
 
-  public Workinginjury sCausedByCrimminalOffense(Boolean sCausedByCrimminalOffense) {
-    this.sCausedByCrimminalOffense = sCausedByCrimminalOffense;
+  public Workinginjury sCausedbycrimminaloffense(Boolean sCausedbycrimminaloffense) {
+    this.sCausedbycrimminaloffense = sCausedbycrimminaloffense;
     return this;
   }
 
    /**
    * Úraz při spáchání trest.činu [persistentní položka]
-   * @return sCausedByCrimminalOffense
+   * @return sCausedbycrimminaloffense
   **/
   @ApiModelProperty(example = "null", value = "Úraz při spáchání trest.činu [persistentní položka]")
-  public Boolean getSCausedByCrimminalOffense() {
-    return sCausedByCrimminalOffense;
+  public Boolean getSCausedbycrimminaloffense() {
+    return sCausedbycrimminaloffense;
   }
 
-  public void setSCausedByCrimminalOffense(Boolean sCausedByCrimminalOffense) {
-    this.sCausedByCrimminalOffense = sCausedByCrimminalOffense;
+  public void setSCausedbycrimminaloffense(Boolean sCausedbycrimminaloffense) {
+    this.sCausedbycrimminaloffense = sCausedbycrimminaloffense;
   }
 
-  public Workinginjury sCausedByDrunkenessOrDrugs(Boolean sCausedByDrunkenessOrDrugs) {
-    this.sCausedByDrunkenessOrDrugs = sCausedByDrunkenessOrDrugs;
+  public Workinginjury sCausedbydrunkenessordrugs(Boolean sCausedbydrunkenessordrugs) {
+    this.sCausedbydrunkenessordrugs = sCausedbydrunkenessordrugs;
     return this;
   }
 
    /**
    * Úraz jako následek opilosti [persistentní položka]
-   * @return sCausedByDrunkenessOrDrugs
+   * @return sCausedbydrunkenessordrugs
   **/
   @ApiModelProperty(example = "null", value = "Úraz jako následek opilosti [persistentní položka]")
-  public Boolean getSCausedByDrunkenessOrDrugs() {
-    return sCausedByDrunkenessOrDrugs;
+  public Boolean getSCausedbydrunkenessordrugs() {
+    return sCausedbydrunkenessordrugs;
   }
 
-  public void setSCausedByDrunkenessOrDrugs(Boolean sCausedByDrunkenessOrDrugs) {
-    this.sCausedByDrunkenessOrDrugs = sCausedByDrunkenessOrDrugs;
+  public void setSCausedbydrunkenessordrugs(Boolean sCausedbydrunkenessordrugs) {
+    this.sCausedbydrunkenessordrugs = sCausedbydrunkenessordrugs;
   }
 
-  public Workinginjury sCausedDeliberately(Boolean sCausedDeliberately) {
-    this.sCausedDeliberately = sCausedDeliberately;
+  public Workinginjury sCauseddeliberately(Boolean sCauseddeliberately) {
+    this.sCauseddeliberately = sCauseddeliberately;
     return this;
   }
 
    /**
    * Úraz vznikl úmyslně [persistentní položka]
-   * @return sCausedDeliberately
+   * @return sCauseddeliberately
   **/
   @ApiModelProperty(example = "null", value = "Úraz vznikl úmyslně [persistentní položka]")
-  public Boolean getSCausedDeliberately() {
-    return sCausedDeliberately;
+  public Boolean getSCauseddeliberately() {
+    return sCauseddeliberately;
   }
 
-  public void setSCausedDeliberately(Boolean sCausedDeliberately) {
-    this.sCausedDeliberately = sCausedDeliberately;
+  public void setSCauseddeliberately(Boolean sCauseddeliberately) {
+    this.sCauseddeliberately = sCauseddeliberately;
   }
 
-  public Workinginjury sInjuryReasonDetails(String sInjuryReasonDetails) {
-    this.sInjuryReasonDetails = sInjuryReasonDetails;
+  public Workinginjury sInjuryreasondetails(String sInjuryreasondetails) {
+    this.sInjuryreasondetails = sInjuryreasondetails;
     return this;
   }
 
    /**
-   * Detaily vzniku úrazu [persistentní položka]
-   * @return sInjuryReasonDetails
+   * detaily vzniku úrazu [persistentní položka]
+   * @return sInjuryreasondetails
   **/
-  @ApiModelProperty(example = "null", value = "Detaily vzniku úrazu [persistentní položka]")
-  public String getSInjuryReasonDetails() {
-    return sInjuryReasonDetails;
+  @ApiModelProperty(example = "null", value = "detaily vzniku úrazu [persistentní položka]")
+  public String getSInjuryreasondetails() {
+    return sInjuryreasondetails;
   }
 
-  public void setSInjuryReasonDetails(String sInjuryReasonDetails) {
-    this.sInjuryReasonDetails = sInjuryReasonDetails;
+  public void setSInjuryreasondetails(String sInjuryreasondetails) {
+    this.sInjuryreasondetails = sInjuryreasondetails;
   }
 
-  public Workinginjury sInjuryInvestigatedDetails(String sInjuryInvestigatedDetails) {
-    this.sInjuryInvestigatedDetails = sInjuryInvestigatedDetails;
+  public Workinginjury sInjuryinvestigateddetails(String sInjuryinvestigateddetails) {
+    this.sInjuryinvestigateddetails = sInjuryinvestigateddetails;
     return this;
   }
 
    /**
-   * Detaily vyšetřování úrazu [persistentní položka]
-   * @return sInjuryInvestigatedDetails
+   * detaily vyšetřování úrazu [persistentní položka]
+   * @return sInjuryinvestigateddetails
   **/
-  @ApiModelProperty(example = "null", value = "Detaily vyšetřování úrazu [persistentní položka]")
-  public String getSInjuryInvestigatedDetails() {
-    return sInjuryInvestigatedDetails;
+  @ApiModelProperty(example = "null", value = "detaily vyšetřování úrazu [persistentní položka]")
+  public String getSInjuryinvestigateddetails() {
+    return sInjuryinvestigateddetails;
   }
 
-  public void setSInjuryInvestigatedDetails(String sInjuryInvestigatedDetails) {
-    this.sInjuryInvestigatedDetails = sInjuryInvestigatedDetails;
+  public void setSInjuryinvestigateddetails(String sInjuryinvestigateddetails) {
+    this.sInjuryinvestigateddetails = sInjuryinvestigateddetails;
   }
 
-  public Workinginjury sCausedByElectricity(Boolean sCausedByElectricity) {
-    this.sCausedByElectricity = sCausedByElectricity;
+  public Workinginjury sCausedbyelectricity(Boolean sCausedbyelectricity) {
+    this.sCausedbyelectricity = sCausedbyelectricity;
     return this;
   }
 
    /**
-   * Způsobeno zásahem el. proudu [persistentní položka]
-   * @return sCausedByElectricity
+   * způsobeno zásahem el. proudu [persistentní položka]
+   * @return sCausedbyelectricity
   **/
-  @ApiModelProperty(example = "null", value = "Způsobeno zásahem el. proudu [persistentní položka]")
-  public Boolean getSCausedByElectricity() {
-    return sCausedByElectricity;
+  @ApiModelProperty(example = "null", value = "způsobeno zásahem el. proudu [persistentní položka]")
+  public Boolean getSCausedbyelectricity() {
+    return sCausedbyelectricity;
   }
 
-  public void setSCausedByElectricity(Boolean sCausedByElectricity) {
-    this.sCausedByElectricity = sCausedByElectricity;
+  public void setSCausedbyelectricity(Boolean sCausedbyelectricity) {
+    this.sCausedbyelectricity = sCausedbyelectricity;
   }
 
-  public Workinginjury sShiftBeginDateTime(DateTime sShiftBeginDateTime) {
-    this.sShiftBeginDateTime = sShiftBeginDateTime;
+  public Workinginjury sShiftbegindatetime(DateTime sShiftbegindatetime) {
+    this.sShiftbegindatetime = sShiftbegindatetime;
     return this;
   }
 
    /**
-   * Počátek směny [persistentní položka]
-   * @return sShiftBeginDateTime
+   * počátek směny [persistentní položka]
+   * @return sShiftbegindatetime
   **/
-  @ApiModelProperty(example = "null", value = "Počátek směny [persistentní položka]")
-  public DateTime getSShiftBeginDateTime() {
-    return sShiftBeginDateTime;
+  @ApiModelProperty(example = "null", value = "počátek směny [persistentní položka]")
+  public DateTime getSShiftbegindatetime() {
+    return sShiftbegindatetime;
   }
 
-  public void setSShiftBeginDateTime(DateTime sShiftBeginDateTime) {
-    this.sShiftBeginDateTime = sShiftBeginDateTime;
+  public void setSShiftbegindatetime(DateTime sShiftbegindatetime) {
+    this.sShiftbegindatetime = sShiftbegindatetime;
   }
 
-  public Workinginjury sAcceptedInjuryPrevention(String sAcceptedInjuryPrevention) {
-    this.sAcceptedInjuryPrevention = sAcceptedInjuryPrevention;
+  public Workinginjury sAcceptedinjuryprevention(String sAcceptedinjuryprevention) {
+    this.sAcceptedinjuryprevention = sAcceptedinjuryprevention;
     return this;
   }
 
    /**
-   * Přijatá preventivní opatření [persistentní položka]
-   * @return sAcceptedInjuryPrevention
+   * přijatá preventivní opatření [persistentní položka]
+   * @return sAcceptedinjuryprevention
   **/
-  @ApiModelProperty(example = "null", value = "Přijatá preventivní opatření [persistentní položka]")
-  public String getSAcceptedInjuryPrevention() {
-    return sAcceptedInjuryPrevention;
+  @ApiModelProperty(example = "null", value = "přijatá preventivní opatření [persistentní položka]")
+  public String getSAcceptedinjuryprevention() {
+    return sAcceptedinjuryprevention;
   }
 
-  public void setSAcceptedInjuryPrevention(String sAcceptedInjuryPrevention) {
-    this.sAcceptedInjuryPrevention = sAcceptedInjuryPrevention;
+  public void setSAcceptedinjuryprevention(String sAcceptedinjuryprevention) {
+    this.sAcceptedinjuryprevention = sAcceptedinjuryprevention;
   }
 
-  public Workinginjury sInjuredAndWitnessProclamation(String sInjuredAndWitnessProclamation) {
-    this.sInjuredAndWitnessProclamation = sInjuredAndWitnessProclamation;
+  public Workinginjury sInjuredandwitnessproclamation(String sInjuredandwitnessproclamation) {
+    this.sInjuredandwitnessproclamation = sInjuredandwitnessproclamation;
     return this;
   }
 
    /**
-   * Vyjádření zraněného a svědků [persistentní položka]
-   * @return sInjuredAndWitnessProclamation
+   * vyjádření zraněného a svědků [persistentní položka]
+   * @return sInjuredandwitnessproclamation
   **/
-  @ApiModelProperty(example = "null", value = "Vyjádření zraněného a svědků [persistentní položka]")
-  public String getSInjuredAndWitnessProclamation() {
-    return sInjuredAndWitnessProclamation;
+  @ApiModelProperty(example = "null", value = "vyjádření zraněného a svědků [persistentní položka]")
+  public String getSInjuredandwitnessproclamation() {
+    return sInjuredandwitnessproclamation;
   }
 
-  public void setSInjuredAndWitnessProclamation(String sInjuredAndWitnessProclamation) {
-    this.sInjuredAndWitnessProclamation = sInjuredAndWitnessProclamation;
+  public void setSInjuredandwitnessproclamation(String sInjuredandwitnessproclamation) {
+    this.sInjuredandwitnessproclamation = sInjuredandwitnessproclamation;
   }
 
-  public Workinginjury sWitness1Name(String sWitness1Name) {
-    this.sWitness1Name = sWitness1Name;
+  public Workinginjury sWitness1name(String sWitness1name) {
+    this.sWitness1name = sWitness1name;
     return this;
   }
 
    /**
-   * Jméno svědka 1 [persistentní položka]
-   * @return sWitness1Name
+   * jméno svědka 1 [persistentní položka]
+   * @return sWitness1name
   **/
-  @ApiModelProperty(example = "null", value = "Jméno svědka 1 [persistentní položka]")
-  public String getSWitness1Name() {
-    return sWitness1Name;
+  @ApiModelProperty(example = "null", value = "jméno svědka 1 [persistentní položka]")
+  public String getSWitness1name() {
+    return sWitness1name;
   }
 
-  public void setSWitness1Name(String sWitness1Name) {
-    this.sWitness1Name = sWitness1Name;
+  public void setSWitness1name(String sWitness1name) {
+    this.sWitness1name = sWitness1name;
   }
 
-  public Workinginjury sWitness2Name(String sWitness2Name) {
-    this.sWitness2Name = sWitness2Name;
+  public Workinginjury sWitness2name(String sWitness2name) {
+    this.sWitness2name = sWitness2name;
     return this;
   }
 
    /**
-   * Jméno svědka 2 [persistentní položka]
-   * @return sWitness2Name
+   * jméno svědka 2 [persistentní položka]
+   * @return sWitness2name
   **/
-  @ApiModelProperty(example = "null", value = "Jméno svědka 2 [persistentní položka]")
-  public String getSWitness2Name() {
-    return sWitness2Name;
+  @ApiModelProperty(example = "null", value = "jméno svědka 2 [persistentní položka]")
+  public String getSWitness2name() {
+    return sWitness2name;
   }
 
-  public void setSWitness2Name(String sWitness2Name) {
-    this.sWitness2Name = sWitness2Name;
+  public void setSWitness2name(String sWitness2name) {
+    this.sWitness2name = sWitness2name;
   }
 
-  public Workinginjury sWitness3Name(String sWitness3Name) {
-    this.sWitness3Name = sWitness3Name;
+  public Workinginjury sWitness3name(String sWitness3name) {
+    this.sWitness3name = sWitness3name;
     return this;
   }
 
    /**
-   * Jméno svědka 3 [persistentní položka]
-   * @return sWitness3Name
+   * jméno svědka 3 [persistentní položka]
+   * @return sWitness3name
   **/
-  @ApiModelProperty(example = "null", value = "Jméno svědka 3 [persistentní položka]")
-  public String getSWitness3Name() {
-    return sWitness3Name;
+  @ApiModelProperty(example = "null", value = "jméno svědka 3 [persistentní položka]")
+  public String getSWitness3name() {
+    return sWitness3name;
   }
 
-  public void setSWitness3Name(String sWitness3Name) {
-    this.sWitness3Name = sWitness3Name;
+  public void setSWitness3name(String sWitness3name) {
+    this.sWitness3name = sWitness3name;
   }
 
-  public Workinginjury sWitness4Name(String sWitness4Name) {
-    this.sWitness4Name = sWitness4Name;
+  public Workinginjury sWitness4name(String sWitness4name) {
+    this.sWitness4name = sWitness4name;
     return this;
   }
 
    /**
-   * Jméno svědka 4 [persistentní položka]
-   * @return sWitness4Name
+   * jméno svědka 4 [persistentní položka]
+   * @return sWitness4name
   **/
-  @ApiModelProperty(example = "null", value = "Jméno svědka 4 [persistentní položka]")
-  public String getSWitness4Name() {
-    return sWitness4Name;
+  @ApiModelProperty(example = "null", value = "jméno svědka 4 [persistentní položka]")
+  public String getSWitness4name() {
+    return sWitness4name;
   }
 
-  public void setSWitness4Name(String sWitness4Name) {
-    this.sWitness4Name = sWitness4Name;
+  public void setSWitness4name(String sWitness4name) {
+    this.sWitness4name = sWitness4name;
   }
 
-  public Workinginjury sWitness5Name(String sWitness5Name) {
-    this.sWitness5Name = sWitness5Name;
+  public Workinginjury sWitness5name(String sWitness5name) {
+    this.sWitness5name = sWitness5name;
     return this;
   }
 
    /**
-   * Jméno svědka 5 [persistentní položka]
-   * @return sWitness5Name
+   * jméno svědka 5 [persistentní položka]
+   * @return sWitness5name
   **/
-  @ApiModelProperty(example = "null", value = "Jméno svědka 5 [persistentní položka]")
-  public String getSWitness5Name() {
-    return sWitness5Name;
+  @ApiModelProperty(example = "null", value = "jméno svědka 5 [persistentní položka]")
+  public String getSWitness5name() {
+    return sWitness5name;
   }
 
-  public void setSWitness5Name(String sWitness5Name) {
-    this.sWitness5Name = sWitness5Name;
+  public void setSWitness5name(String sWitness5name) {
+    this.sWitness5name = sWitness5name;
   }
 
-  public Workinginjury sSecurityAuthorityName(String sSecurityAuthorityName) {
-    this.sSecurityAuthorityName = sSecurityAuthorityName;
+  public Workinginjury sSecurityauthorityname(String sSecurityauthorityname) {
+    this.sSecurityauthorityname = sSecurityauthorityname;
     return this;
   }
 
    /**
-   * Jméno pracovníka BOZP [persistentní položka]
-   * @return sSecurityAuthorityName
+   * jméno pracovníka bozp [persistentní položka]
+   * @return sSecurityauthorityname
   **/
-  @ApiModelProperty(example = "null", value = "Jméno pracovníka BOZP [persistentní položka]")
-  public String getSSecurityAuthorityName() {
-    return sSecurityAuthorityName;
+  @ApiModelProperty(example = "null", value = "jméno pracovníka bozp [persistentní položka]")
+  public String getSSecurityauthorityname() {
+    return sSecurityauthorityname;
   }
 
-  public void setSSecurityAuthorityName(String sSecurityAuthorityName) {
-    this.sSecurityAuthorityName = sSecurityAuthorityName;
+  public void setSSecurityauthorityname(String sSecurityauthorityname) {
+    this.sSecurityauthorityname = sSecurityauthorityname;
   }
 
-  public Workinginjury sUnionRepresentativeName(String sUnionRepresentativeName) {
-    this.sUnionRepresentativeName = sUnionRepresentativeName;
+  public Workinginjury sUnionrepresentativename(String sUnionrepresentativename) {
+    this.sUnionrepresentativename = sUnionrepresentativename;
     return this;
   }
 
    /**
-   * Jméno zástupce odborů [persistentní položka]
-   * @return sUnionRepresentativeName
+   * jméno zástupce odborů [persistentní položka]
+   * @return sUnionrepresentativename
   **/
-  @ApiModelProperty(example = "null", value = "Jméno zástupce odborů [persistentní položka]")
-  public String getSUnionRepresentativeName() {
-    return sUnionRepresentativeName;
+  @ApiModelProperty(example = "null", value = "jméno zástupce odborů [persistentní položka]")
+  public String getSUnionrepresentativename() {
+    return sUnionrepresentativename;
   }
 
-  public void setSUnionRepresentativeName(String sUnionRepresentativeName) {
-    this.sUnionRepresentativeName = sUnionRepresentativeName;
+  public void setSUnionrepresentativename(String sUnionrepresentativename) {
+    this.sUnionrepresentativename = sUnionrepresentativename;
   }
 
-  public Workinginjury sLocalWorkInspectorate(String sLocalWorkInspectorate) {
-    this.sLocalWorkInspectorate = sLocalWorkInspectorate;
+  public Workinginjury sLocalworkinspectorate(String sLocalworkinspectorate) {
+    this.sLocalworkinspectorate = sLocalworkinspectorate;
     return this;
   }
 
    /**
-   * Oblastní inspektorát práce [persistentní položka]
-   * @return sLocalWorkInspectorate
+   * oblastní inspektorát práce [persistentní položka]
+   * @return sLocalworkinspectorate
   **/
-  @ApiModelProperty(example = "null", value = "Oblastní inspektorát práce [persistentní položka]")
-  public String getSLocalWorkInspectorate() {
-    return sLocalWorkInspectorate;
+  @ApiModelProperty(example = "null", value = "oblastní inspektorát práce [persistentní položka]")
+  public String getSLocalworkinspectorate() {
+    return sLocalworkinspectorate;
   }
 
-  public void setSLocalWorkInspectorate(String sLocalWorkInspectorate) {
-    this.sLocalWorkInspectorate = sLocalWorkInspectorate;
+  public void setSLocalworkinspectorate(String sLocalworkinspectorate) {
+    this.sLocalworkinspectorate = sLocalworkinspectorate;
   }
 
-  public Workinginjury sHospitalizationDays(Integer sHospitalizationDays) {
-    this.sHospitalizationDays = sHospitalizationDays;
+  public Workinginjury sHospitalizationdays(Integer sHospitalizationdays) {
+    this.sHospitalizationdays = sHospitalizationdays;
     return this;
   }
 
    /**
-   * Počet dní hospitalizace [persistentní položka]
-   * @return sHospitalizationDays
+   * počet dní hospitalizace [persistentní položka]
+   * @return sHospitalizationdays
   **/
-  @ApiModelProperty(example = "null", value = "Počet dní hospitalizace [persistentní položka]")
-  public Integer getSHospitalizationDays() {
-    return sHospitalizationDays;
+  @ApiModelProperty(example = "null", value = "počet dní hospitalizace [persistentní položka]")
+  public Integer getSHospitalizationdays() {
+    return sHospitalizationdays;
   }
 
-  public void setSHospitalizationDays(Integer sHospitalizationDays) {
-    this.sHospitalizationDays = sHospitalizationDays;
+  public void setSHospitalizationdays(Integer sHospitalizationdays) {
+    this.sHospitalizationdays = sHospitalizationdays;
   }
 
-  public Workinginjury sDateOfDeath(DateTime sDateOfDeath) {
-    this.sDateOfDeath = sDateOfDeath;
+  public Workinginjury sDateofdeath(DateTime sDateofdeath) {
+    this.sDateofdeath = sDateofdeath;
     return this;
   }
 
    /**
-   * Datum úmrtí [persistentní položka]
-   * @return sDateOfDeath
+   * datum úmrtí [persistentní položka]
+   * @return sDateofdeath
   **/
-  @ApiModelProperty(example = "null", value = "Datum úmrtí [persistentní položka]")
-  public DateTime getSDateOfDeath() {
-    return sDateOfDeath;
+  @ApiModelProperty(example = "null", value = "datum úmrtí [persistentní položka]")
+  public DateTime getSDateofdeath() {
+    return sDateofdeath;
   }
 
-  public void setSDateOfDeath(DateTime sDateOfDeath) {
-    this.sDateOfDeath = sDateOfDeath;
+  public void setSDateofdeath(DateTime sDateofdeath) {
+    this.sDateofdeath = sDateofdeath;
   }
 
-  public Workinginjury sInjuryTypeCode(String sInjuryTypeCode) {
-    this.sInjuryTypeCode = sInjuryTypeCode;
+  public Workinginjury sInjurytypecode(String sInjurytypecode) {
+    this.sInjurytypecode = sInjurytypecode;
     return this;
   }
 
    /**
-   * Kód typu zranění [persistentní položka]
-   * @return sInjuryTypeCode
+   * kód typu zranění [persistentní položka]
+   * @return sInjurytypecode
   **/
-  @ApiModelProperty(example = "null", value = "Kód typu zranění [persistentní položka]")
-  public String getSInjuryTypeCode() {
-    return sInjuryTypeCode;
+  @ApiModelProperty(example = "null", value = "kód typu zranění [persistentní položka]")
+  public String getSInjurytypecode() {
+    return sInjurytypecode;
   }
 
-  public void setSInjuryTypeCode(String sInjuryTypeCode) {
-    this.sInjuryTypeCode = sInjuryTypeCode;
+  public void setSInjurytypecode(String sInjurytypecode) {
+    this.sInjurytypecode = sInjurytypecode;
   }
 
-  public Workinginjury sInjuredBodyPartCode(String sInjuredBodyPartCode) {
-    this.sInjuredBodyPartCode = sInjuredBodyPartCode;
+  public Workinginjury sInjuredbodypartcode(String sInjuredbodypartcode) {
+    this.sInjuredbodypartcode = sInjuredbodypartcode;
     return this;
   }
 
    /**
-   * Kód zraněné části těla [persistentní položka]
-   * @return sInjuredBodyPartCode
+   * kód zraněné části těla [persistentní položka]
+   * @return sInjuredbodypartcode
   **/
-  @ApiModelProperty(example = "null", value = "Kód zraněné části těla [persistentní položka]")
-  public String getSInjuredBodyPartCode() {
-    return sInjuredBodyPartCode;
+  @ApiModelProperty(example = "null", value = "kód zraněné části těla [persistentní položka]")
+  public String getSInjuredbodypartcode() {
+    return sInjuredbodypartcode;
   }
 
-  public void setSInjuredBodyPartCode(String sInjuredBodyPartCode) {
-    this.sInjuredBodyPartCode = sInjuredBodyPartCode;
+  public void setSInjuredbodypartcode(String sInjuredbodypartcode) {
+    this.sInjuredbodypartcode = sInjuredbodypartcode;
   }
 
 
@@ -1542,84 +1587,84 @@ public class Workinginjury   {
       return false;
     }
     Workinginjury workinginjury = (Workinginjury) o;
-    return Objects.equals(this.displayName, workinginjury.displayName) &&
-        Objects.equals(this.ID, workinginjury.ID) &&
-        Objects.equals(this.classID, workinginjury.classID) &&
-        Objects.equals(this.objVersion, workinginjury.objVersion) &&
+    return Objects.equals(this.displayname, workinginjury.displayname) &&
+        Objects.equals(this.id, workinginjury.id) &&
+        Objects.equals(this.classid, workinginjury.classid) &&
+        Objects.equals(this.objversion, workinginjury.objversion) &&
         Objects.equals(this.rows, workinginjury.rows) &&
-        Objects.equals(this.docQueueID, workinginjury.docQueueID) &&
-        Objects.equals(this.periodID, workinginjury.periodID) &&
-        Objects.equals(this.ordNumber, workinginjury.ordNumber) &&
-        Objects.equals(this.docDateDATE, workinginjury.docDateDATE) &&
-        Objects.equals(this.createdByID, workinginjury.createdByID) &&
-        Objects.equals(this.correctedByID, workinginjury.correctedByID) &&
-        Objects.equals(this.newRelatedType, workinginjury.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, workinginjury.newRelatedDocumentID) &&
-        Objects.equals(this.industryBranchCode, workinginjury.industryBranchCode) &&
-        Objects.equals(this.baseType, workinginjury.baseType) &&
-        Objects.equals(this.injuryPlace, workinginjury.injuryPlace) &&
-        Objects.equals(this.injuryOnWorkPlace, workinginjury.injuryOnWorkPlace) &&
-        Objects.equals(this.injuryActivity, workinginjury.injuryActivity) &&
-        Objects.equals(this.workPositionID, workinginjury.workPositionID) &&
-        Objects.equals(this.adequateQualification, workinginjury.adequateQualification) &&
-        Objects.equals(this.dateOfInjuryDATE, workinginjury.dateOfInjuryDATE) &&
-        Objects.equals(this.beginOfShift, workinginjury.beginOfShift) &&
-        Objects.equals(this.numberOfInjured, workinginjury.numberOfInjured) &&
-        Objects.equals(this.typeOfInjury, workinginjury.typeOfInjury) &&
+        Objects.equals(this.docqueueId, workinginjury.docqueueId) &&
+        Objects.equals(this.periodId, workinginjury.periodId) &&
+        Objects.equals(this.ordnumber, workinginjury.ordnumber) &&
+        Objects.equals(this.docdatedate, workinginjury.docdatedate) &&
+        Objects.equals(this.createdbyId, workinginjury.createdbyId) &&
+        Objects.equals(this.correctedbyId, workinginjury.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, workinginjury.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, workinginjury.newrelateddocumentId) &&
+        Objects.equals(this.industrybranchcode, workinginjury.industrybranchcode) &&
+        Objects.equals(this.basetype, workinginjury.basetype) &&
+        Objects.equals(this.injuryplace, workinginjury.injuryplace) &&
+        Objects.equals(this.injuryonworkplace, workinginjury.injuryonworkplace) &&
+        Objects.equals(this.injuryactivity, workinginjury.injuryactivity) &&
+        Objects.equals(this.workpositionId, workinginjury.workpositionId) &&
+        Objects.equals(this.adequatequalification, workinginjury.adequatequalification) &&
+        Objects.equals(this.dateofinjurydate, workinginjury.dateofinjurydate) &&
+        Objects.equals(this.beginofshift, workinginjury.beginofshift) &&
+        Objects.equals(this.numberofinjured, workinginjury.numberofinjured) &&
+        Objects.equals(this.typeofinjury, workinginjury.typeofinjury) &&
         Objects.equals(this.relevance, workinginjury.relevance) &&
-        Objects.equals(this.causedByCar, workinginjury.causedByCar) &&
-        Objects.equals(this.causedByMachine, workinginjury.causedByMachine) &&
-        Objects.equals(this.causedByStuff, workinginjury.causedByStuff) &&
-        Objects.equals(this.causedByFall, workinginjury.causedByFall) &&
-        Objects.equals(this.causedByTool, workinginjury.causedByTool) &&
-        Objects.equals(this.causedByChemicalAgents, workinginjury.causedByChemicalAgents) &&
-        Objects.equals(this.causedByFire, workinginjury.causedByFire) &&
-        Objects.equals(this.causedByEngine, workinginjury.causedByEngine) &&
-        Objects.equals(this.causedByPeopleOrAnimals, workinginjury.causedByPeopleOrAnimals) &&
-        Objects.equals(this.causedByOtherReason, workinginjury.causedByOtherReason) &&
-        Objects.equals(this.becauseOfMalfunction, workinginjury.becauseOfMalfunction) &&
-        Objects.equals(this.becauseOfUnderestimating, workinginjury.becauseOfUnderestimating) &&
-        Objects.equals(this.becauseOfFaultOfWorkingPlace, workinginjury.becauseOfFaultOfWorkingPlace) &&
-        Objects.equals(this.becauseOfBadPersonalProtection, workinginjury.becauseOfBadPersonalProtection) &&
-        Objects.equals(this.becauseOfRulesViolation, workinginjury.becauseOfRulesViolation) &&
-        Objects.equals(this.becauseOfHumanFactor, workinginjury.becauseOfHumanFactor) &&
-        Objects.equals(this.becauseOfOthersReason, workinginjury.becauseOfOthersReason) &&
-        Objects.equals(this.descriptionOfConditions, workinginjury.descriptionOfConditions) &&
-        Objects.equals(this.descriptionOfBrokenRules, workinginjury.descriptionOfBrokenRules) &&
-        Objects.equals(this.workingRelationID, workinginjury.workingRelationID) &&
-        Objects.equals(this.employeeID, workinginjury.employeeID) &&
-        Objects.equals(this.baseTypeAsText, workinginjury.baseTypeAsText) &&
-        Objects.equals(this.relevanceAsText, workinginjury.relevanceAsText) &&
-        Objects.equals(this.pERSPersonalNumber, workinginjury.pERSPersonalNumber) &&
-        Objects.equals(this.sSolveAsContravention, workinginjury.sSolveAsContravention) &&
-        Objects.equals(this.sCausedByTussle, workinginjury.sCausedByTussle) &&
-        Objects.equals(this.sInvestigatedByPolice, workinginjury.sInvestigatedByPolice) &&
-        Objects.equals(this.sCausedByCrimminalOffense, workinginjury.sCausedByCrimminalOffense) &&
-        Objects.equals(this.sCausedByDrunkenessOrDrugs, workinginjury.sCausedByDrunkenessOrDrugs) &&
-        Objects.equals(this.sCausedDeliberately, workinginjury.sCausedDeliberately) &&
-        Objects.equals(this.sInjuryReasonDetails, workinginjury.sInjuryReasonDetails) &&
-        Objects.equals(this.sInjuryInvestigatedDetails, workinginjury.sInjuryInvestigatedDetails) &&
-        Objects.equals(this.sCausedByElectricity, workinginjury.sCausedByElectricity) &&
-        Objects.equals(this.sShiftBeginDateTime, workinginjury.sShiftBeginDateTime) &&
-        Objects.equals(this.sAcceptedInjuryPrevention, workinginjury.sAcceptedInjuryPrevention) &&
-        Objects.equals(this.sInjuredAndWitnessProclamation, workinginjury.sInjuredAndWitnessProclamation) &&
-        Objects.equals(this.sWitness1Name, workinginjury.sWitness1Name) &&
-        Objects.equals(this.sWitness2Name, workinginjury.sWitness2Name) &&
-        Objects.equals(this.sWitness3Name, workinginjury.sWitness3Name) &&
-        Objects.equals(this.sWitness4Name, workinginjury.sWitness4Name) &&
-        Objects.equals(this.sWitness5Name, workinginjury.sWitness5Name) &&
-        Objects.equals(this.sSecurityAuthorityName, workinginjury.sSecurityAuthorityName) &&
-        Objects.equals(this.sUnionRepresentativeName, workinginjury.sUnionRepresentativeName) &&
-        Objects.equals(this.sLocalWorkInspectorate, workinginjury.sLocalWorkInspectorate) &&
-        Objects.equals(this.sHospitalizationDays, workinginjury.sHospitalizationDays) &&
-        Objects.equals(this.sDateOfDeath, workinginjury.sDateOfDeath) &&
-        Objects.equals(this.sInjuryTypeCode, workinginjury.sInjuryTypeCode) &&
-        Objects.equals(this.sInjuredBodyPartCode, workinginjury.sInjuredBodyPartCode);
+        Objects.equals(this.causedbycar, workinginjury.causedbycar) &&
+        Objects.equals(this.causedbymachine, workinginjury.causedbymachine) &&
+        Objects.equals(this.causedbystuff, workinginjury.causedbystuff) &&
+        Objects.equals(this.causedbyfall, workinginjury.causedbyfall) &&
+        Objects.equals(this.causedbytool, workinginjury.causedbytool) &&
+        Objects.equals(this.causedbychemicalagents, workinginjury.causedbychemicalagents) &&
+        Objects.equals(this.causedbyfire, workinginjury.causedbyfire) &&
+        Objects.equals(this.causedbyengine, workinginjury.causedbyengine) &&
+        Objects.equals(this.causedbypeopleoranimals, workinginjury.causedbypeopleoranimals) &&
+        Objects.equals(this.causedbyotherreason, workinginjury.causedbyotherreason) &&
+        Objects.equals(this.becauseofmalfunction, workinginjury.becauseofmalfunction) &&
+        Objects.equals(this.becauseofunderestimating, workinginjury.becauseofunderestimating) &&
+        Objects.equals(this.becauseoffaultofworkingplace, workinginjury.becauseoffaultofworkingplace) &&
+        Objects.equals(this.becauseofbadpersonalprotection, workinginjury.becauseofbadpersonalprotection) &&
+        Objects.equals(this.becauseofrulesviolation, workinginjury.becauseofrulesviolation) &&
+        Objects.equals(this.becauseofhumanfactor, workinginjury.becauseofhumanfactor) &&
+        Objects.equals(this.becauseofothersreason, workinginjury.becauseofothersreason) &&
+        Objects.equals(this.descriptionofconditions, workinginjury.descriptionofconditions) &&
+        Objects.equals(this.descriptionofbrokenrules, workinginjury.descriptionofbrokenrules) &&
+        Objects.equals(this.workingrelationId, workinginjury.workingrelationId) &&
+        Objects.equals(this.employeeId, workinginjury.employeeId) &&
+        Objects.equals(this.basetypeastext, workinginjury.basetypeastext) &&
+        Objects.equals(this.relevanceastext, workinginjury.relevanceastext) &&
+        Objects.equals(this.persPersonalnumber, workinginjury.persPersonalnumber) &&
+        Objects.equals(this.sSolveascontravention, workinginjury.sSolveascontravention) &&
+        Objects.equals(this.sCausedbytussle, workinginjury.sCausedbytussle) &&
+        Objects.equals(this.sInvestigatedbypolice, workinginjury.sInvestigatedbypolice) &&
+        Objects.equals(this.sCausedbycrimminaloffense, workinginjury.sCausedbycrimminaloffense) &&
+        Objects.equals(this.sCausedbydrunkenessordrugs, workinginjury.sCausedbydrunkenessordrugs) &&
+        Objects.equals(this.sCauseddeliberately, workinginjury.sCauseddeliberately) &&
+        Objects.equals(this.sInjuryreasondetails, workinginjury.sInjuryreasondetails) &&
+        Objects.equals(this.sInjuryinvestigateddetails, workinginjury.sInjuryinvestigateddetails) &&
+        Objects.equals(this.sCausedbyelectricity, workinginjury.sCausedbyelectricity) &&
+        Objects.equals(this.sShiftbegindatetime, workinginjury.sShiftbegindatetime) &&
+        Objects.equals(this.sAcceptedinjuryprevention, workinginjury.sAcceptedinjuryprevention) &&
+        Objects.equals(this.sInjuredandwitnessproclamation, workinginjury.sInjuredandwitnessproclamation) &&
+        Objects.equals(this.sWitness1name, workinginjury.sWitness1name) &&
+        Objects.equals(this.sWitness2name, workinginjury.sWitness2name) &&
+        Objects.equals(this.sWitness3name, workinginjury.sWitness3name) &&
+        Objects.equals(this.sWitness4name, workinginjury.sWitness4name) &&
+        Objects.equals(this.sWitness5name, workinginjury.sWitness5name) &&
+        Objects.equals(this.sSecurityauthorityname, workinginjury.sSecurityauthorityname) &&
+        Objects.equals(this.sUnionrepresentativename, workinginjury.sUnionrepresentativename) &&
+        Objects.equals(this.sLocalworkinspectorate, workinginjury.sLocalworkinspectorate) &&
+        Objects.equals(this.sHospitalizationdays, workinginjury.sHospitalizationdays) &&
+        Objects.equals(this.sDateofdeath, workinginjury.sDateofdeath) &&
+        Objects.equals(this.sInjurytypecode, workinginjury.sInjurytypecode) &&
+        Objects.equals(this.sInjuredbodypartcode, workinginjury.sInjuredbodypartcode);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, industryBranchCode, baseType, injuryPlace, injuryOnWorkPlace, injuryActivity, workPositionID, adequateQualification, dateOfInjuryDATE, beginOfShift, numberOfInjured, typeOfInjury, relevance, causedByCar, causedByMachine, causedByStuff, causedByFall, causedByTool, causedByChemicalAgents, causedByFire, causedByEngine, causedByPeopleOrAnimals, causedByOtherReason, becauseOfMalfunction, becauseOfUnderestimating, becauseOfFaultOfWorkingPlace, becauseOfBadPersonalProtection, becauseOfRulesViolation, becauseOfHumanFactor, becauseOfOthersReason, descriptionOfConditions, descriptionOfBrokenRules, workingRelationID, employeeID, baseTypeAsText, relevanceAsText, pERSPersonalNumber, sSolveAsContravention, sCausedByTussle, sInvestigatedByPolice, sCausedByCrimminalOffense, sCausedByDrunkenessOrDrugs, sCausedDeliberately, sInjuryReasonDetails, sInjuryInvestigatedDetails, sCausedByElectricity, sShiftBeginDateTime, sAcceptedInjuryPrevention, sInjuredAndWitnessProclamation, sWitness1Name, sWitness2Name, sWitness3Name, sWitness4Name, sWitness5Name, sSecurityAuthorityName, sUnionRepresentativeName, sLocalWorkInspectorate, sHospitalizationDays, sDateOfDeath, sInjuryTypeCode, sInjuredBodyPartCode);
+    return Objects.hash(displayname, id, classid, objversion, rows, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, industrybranchcode, basetype, injuryplace, injuryonworkplace, injuryactivity, workpositionId, adequatequalification, dateofinjurydate, beginofshift, numberofinjured, typeofinjury, relevance, causedbycar, causedbymachine, causedbystuff, causedbyfall, causedbytool, causedbychemicalagents, causedbyfire, causedbyengine, causedbypeopleoranimals, causedbyotherreason, becauseofmalfunction, becauseofunderestimating, becauseoffaultofworkingplace, becauseofbadpersonalprotection, becauseofrulesviolation, becauseofhumanfactor, becauseofothersreason, descriptionofconditions, descriptionofbrokenrules, workingrelationId, employeeId, basetypeastext, relevanceastext, persPersonalnumber, sSolveascontravention, sCausedbytussle, sInvestigatedbypolice, sCausedbycrimminaloffense, sCausedbydrunkenessordrugs, sCauseddeliberately, sInjuryreasondetails, sInjuryinvestigateddetails, sCausedbyelectricity, sShiftbegindatetime, sAcceptedinjuryprevention, sInjuredandwitnessproclamation, sWitness1name, sWitness2name, sWitness3name, sWitness4name, sWitness5name, sSecurityauthorityname, sUnionrepresentativename, sLocalworkinspectorate, sHospitalizationdays, sDateofdeath, sInjurytypecode, sInjuredbodypartcode);
   }
 
   @Override
@@ -1627,79 +1672,79 @@ public class Workinginjury   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Workinginjury {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    industryBranchCode: ").append(toIndentedString(industryBranchCode)).append("\n");
-    sb.append("    baseType: ").append(toIndentedString(baseType)).append("\n");
-    sb.append("    injuryPlace: ").append(toIndentedString(injuryPlace)).append("\n");
-    sb.append("    injuryOnWorkPlace: ").append(toIndentedString(injuryOnWorkPlace)).append("\n");
-    sb.append("    injuryActivity: ").append(toIndentedString(injuryActivity)).append("\n");
-    sb.append("    workPositionID: ").append(toIndentedString(workPositionID)).append("\n");
-    sb.append("    adequateQualification: ").append(toIndentedString(adequateQualification)).append("\n");
-    sb.append("    dateOfInjuryDATE: ").append(toIndentedString(dateOfInjuryDATE)).append("\n");
-    sb.append("    beginOfShift: ").append(toIndentedString(beginOfShift)).append("\n");
-    sb.append("    numberOfInjured: ").append(toIndentedString(numberOfInjured)).append("\n");
-    sb.append("    typeOfInjury: ").append(toIndentedString(typeOfInjury)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    industrybranchcode: ").append(toIndentedString(industrybranchcode)).append("\n");
+    sb.append("    basetype: ").append(toIndentedString(basetype)).append("\n");
+    sb.append("    injuryplace: ").append(toIndentedString(injuryplace)).append("\n");
+    sb.append("    injuryonworkplace: ").append(toIndentedString(injuryonworkplace)).append("\n");
+    sb.append("    injuryactivity: ").append(toIndentedString(injuryactivity)).append("\n");
+    sb.append("    workpositionId: ").append(toIndentedString(workpositionId)).append("\n");
+    sb.append("    adequatequalification: ").append(toIndentedString(adequatequalification)).append("\n");
+    sb.append("    dateofinjurydate: ").append(toIndentedString(dateofinjurydate)).append("\n");
+    sb.append("    beginofshift: ").append(toIndentedString(beginofshift)).append("\n");
+    sb.append("    numberofinjured: ").append(toIndentedString(numberofinjured)).append("\n");
+    sb.append("    typeofinjury: ").append(toIndentedString(typeofinjury)).append("\n");
     sb.append("    relevance: ").append(toIndentedString(relevance)).append("\n");
-    sb.append("    causedByCar: ").append(toIndentedString(causedByCar)).append("\n");
-    sb.append("    causedByMachine: ").append(toIndentedString(causedByMachine)).append("\n");
-    sb.append("    causedByStuff: ").append(toIndentedString(causedByStuff)).append("\n");
-    sb.append("    causedByFall: ").append(toIndentedString(causedByFall)).append("\n");
-    sb.append("    causedByTool: ").append(toIndentedString(causedByTool)).append("\n");
-    sb.append("    causedByChemicalAgents: ").append(toIndentedString(causedByChemicalAgents)).append("\n");
-    sb.append("    causedByFire: ").append(toIndentedString(causedByFire)).append("\n");
-    sb.append("    causedByEngine: ").append(toIndentedString(causedByEngine)).append("\n");
-    sb.append("    causedByPeopleOrAnimals: ").append(toIndentedString(causedByPeopleOrAnimals)).append("\n");
-    sb.append("    causedByOtherReason: ").append(toIndentedString(causedByOtherReason)).append("\n");
-    sb.append("    becauseOfMalfunction: ").append(toIndentedString(becauseOfMalfunction)).append("\n");
-    sb.append("    becauseOfUnderestimating: ").append(toIndentedString(becauseOfUnderestimating)).append("\n");
-    sb.append("    becauseOfFaultOfWorkingPlace: ").append(toIndentedString(becauseOfFaultOfWorkingPlace)).append("\n");
-    sb.append("    becauseOfBadPersonalProtection: ").append(toIndentedString(becauseOfBadPersonalProtection)).append("\n");
-    sb.append("    becauseOfRulesViolation: ").append(toIndentedString(becauseOfRulesViolation)).append("\n");
-    sb.append("    becauseOfHumanFactor: ").append(toIndentedString(becauseOfHumanFactor)).append("\n");
-    sb.append("    becauseOfOthersReason: ").append(toIndentedString(becauseOfOthersReason)).append("\n");
-    sb.append("    descriptionOfConditions: ").append(toIndentedString(descriptionOfConditions)).append("\n");
-    sb.append("    descriptionOfBrokenRules: ").append(toIndentedString(descriptionOfBrokenRules)).append("\n");
-    sb.append("    workingRelationID: ").append(toIndentedString(workingRelationID)).append("\n");
-    sb.append("    employeeID: ").append(toIndentedString(employeeID)).append("\n");
-    sb.append("    baseTypeAsText: ").append(toIndentedString(baseTypeAsText)).append("\n");
-    sb.append("    relevanceAsText: ").append(toIndentedString(relevanceAsText)).append("\n");
-    sb.append("    pERSPersonalNumber: ").append(toIndentedString(pERSPersonalNumber)).append("\n");
-    sb.append("    sSolveAsContravention: ").append(toIndentedString(sSolveAsContravention)).append("\n");
-    sb.append("    sCausedByTussle: ").append(toIndentedString(sCausedByTussle)).append("\n");
-    sb.append("    sInvestigatedByPolice: ").append(toIndentedString(sInvestigatedByPolice)).append("\n");
-    sb.append("    sCausedByCrimminalOffense: ").append(toIndentedString(sCausedByCrimminalOffense)).append("\n");
-    sb.append("    sCausedByDrunkenessOrDrugs: ").append(toIndentedString(sCausedByDrunkenessOrDrugs)).append("\n");
-    sb.append("    sCausedDeliberately: ").append(toIndentedString(sCausedDeliberately)).append("\n");
-    sb.append("    sInjuryReasonDetails: ").append(toIndentedString(sInjuryReasonDetails)).append("\n");
-    sb.append("    sInjuryInvestigatedDetails: ").append(toIndentedString(sInjuryInvestigatedDetails)).append("\n");
-    sb.append("    sCausedByElectricity: ").append(toIndentedString(sCausedByElectricity)).append("\n");
-    sb.append("    sShiftBeginDateTime: ").append(toIndentedString(sShiftBeginDateTime)).append("\n");
-    sb.append("    sAcceptedInjuryPrevention: ").append(toIndentedString(sAcceptedInjuryPrevention)).append("\n");
-    sb.append("    sInjuredAndWitnessProclamation: ").append(toIndentedString(sInjuredAndWitnessProclamation)).append("\n");
-    sb.append("    sWitness1Name: ").append(toIndentedString(sWitness1Name)).append("\n");
-    sb.append("    sWitness2Name: ").append(toIndentedString(sWitness2Name)).append("\n");
-    sb.append("    sWitness3Name: ").append(toIndentedString(sWitness3Name)).append("\n");
-    sb.append("    sWitness4Name: ").append(toIndentedString(sWitness4Name)).append("\n");
-    sb.append("    sWitness5Name: ").append(toIndentedString(sWitness5Name)).append("\n");
-    sb.append("    sSecurityAuthorityName: ").append(toIndentedString(sSecurityAuthorityName)).append("\n");
-    sb.append("    sUnionRepresentativeName: ").append(toIndentedString(sUnionRepresentativeName)).append("\n");
-    sb.append("    sLocalWorkInspectorate: ").append(toIndentedString(sLocalWorkInspectorate)).append("\n");
-    sb.append("    sHospitalizationDays: ").append(toIndentedString(sHospitalizationDays)).append("\n");
-    sb.append("    sDateOfDeath: ").append(toIndentedString(sDateOfDeath)).append("\n");
-    sb.append("    sInjuryTypeCode: ").append(toIndentedString(sInjuryTypeCode)).append("\n");
-    sb.append("    sInjuredBodyPartCode: ").append(toIndentedString(sInjuredBodyPartCode)).append("\n");
+    sb.append("    causedbycar: ").append(toIndentedString(causedbycar)).append("\n");
+    sb.append("    causedbymachine: ").append(toIndentedString(causedbymachine)).append("\n");
+    sb.append("    causedbystuff: ").append(toIndentedString(causedbystuff)).append("\n");
+    sb.append("    causedbyfall: ").append(toIndentedString(causedbyfall)).append("\n");
+    sb.append("    causedbytool: ").append(toIndentedString(causedbytool)).append("\n");
+    sb.append("    causedbychemicalagents: ").append(toIndentedString(causedbychemicalagents)).append("\n");
+    sb.append("    causedbyfire: ").append(toIndentedString(causedbyfire)).append("\n");
+    sb.append("    causedbyengine: ").append(toIndentedString(causedbyengine)).append("\n");
+    sb.append("    causedbypeopleoranimals: ").append(toIndentedString(causedbypeopleoranimals)).append("\n");
+    sb.append("    causedbyotherreason: ").append(toIndentedString(causedbyotherreason)).append("\n");
+    sb.append("    becauseofmalfunction: ").append(toIndentedString(becauseofmalfunction)).append("\n");
+    sb.append("    becauseofunderestimating: ").append(toIndentedString(becauseofunderestimating)).append("\n");
+    sb.append("    becauseoffaultofworkingplace: ").append(toIndentedString(becauseoffaultofworkingplace)).append("\n");
+    sb.append("    becauseofbadpersonalprotection: ").append(toIndentedString(becauseofbadpersonalprotection)).append("\n");
+    sb.append("    becauseofrulesviolation: ").append(toIndentedString(becauseofrulesviolation)).append("\n");
+    sb.append("    becauseofhumanfactor: ").append(toIndentedString(becauseofhumanfactor)).append("\n");
+    sb.append("    becauseofothersreason: ").append(toIndentedString(becauseofothersreason)).append("\n");
+    sb.append("    descriptionofconditions: ").append(toIndentedString(descriptionofconditions)).append("\n");
+    sb.append("    descriptionofbrokenrules: ").append(toIndentedString(descriptionofbrokenrules)).append("\n");
+    sb.append("    workingrelationId: ").append(toIndentedString(workingrelationId)).append("\n");
+    sb.append("    employeeId: ").append(toIndentedString(employeeId)).append("\n");
+    sb.append("    basetypeastext: ").append(toIndentedString(basetypeastext)).append("\n");
+    sb.append("    relevanceastext: ").append(toIndentedString(relevanceastext)).append("\n");
+    sb.append("    persPersonalnumber: ").append(toIndentedString(persPersonalnumber)).append("\n");
+    sb.append("    sSolveascontravention: ").append(toIndentedString(sSolveascontravention)).append("\n");
+    sb.append("    sCausedbytussle: ").append(toIndentedString(sCausedbytussle)).append("\n");
+    sb.append("    sInvestigatedbypolice: ").append(toIndentedString(sInvestigatedbypolice)).append("\n");
+    sb.append("    sCausedbycrimminaloffense: ").append(toIndentedString(sCausedbycrimminaloffense)).append("\n");
+    sb.append("    sCausedbydrunkenessordrugs: ").append(toIndentedString(sCausedbydrunkenessordrugs)).append("\n");
+    sb.append("    sCauseddeliberately: ").append(toIndentedString(sCauseddeliberately)).append("\n");
+    sb.append("    sInjuryreasondetails: ").append(toIndentedString(sInjuryreasondetails)).append("\n");
+    sb.append("    sInjuryinvestigateddetails: ").append(toIndentedString(sInjuryinvestigateddetails)).append("\n");
+    sb.append("    sCausedbyelectricity: ").append(toIndentedString(sCausedbyelectricity)).append("\n");
+    sb.append("    sShiftbegindatetime: ").append(toIndentedString(sShiftbegindatetime)).append("\n");
+    sb.append("    sAcceptedinjuryprevention: ").append(toIndentedString(sAcceptedinjuryprevention)).append("\n");
+    sb.append("    sInjuredandwitnessproclamation: ").append(toIndentedString(sInjuredandwitnessproclamation)).append("\n");
+    sb.append("    sWitness1name: ").append(toIndentedString(sWitness1name)).append("\n");
+    sb.append("    sWitness2name: ").append(toIndentedString(sWitness2name)).append("\n");
+    sb.append("    sWitness3name: ").append(toIndentedString(sWitness3name)).append("\n");
+    sb.append("    sWitness4name: ").append(toIndentedString(sWitness4name)).append("\n");
+    sb.append("    sWitness5name: ").append(toIndentedString(sWitness5name)).append("\n");
+    sb.append("    sSecurityauthorityname: ").append(toIndentedString(sSecurityauthorityname)).append("\n");
+    sb.append("    sUnionrepresentativename: ").append(toIndentedString(sUnionrepresentativename)).append("\n");
+    sb.append("    sLocalworkinspectorate: ").append(toIndentedString(sLocalworkinspectorate)).append("\n");
+    sb.append("    sHospitalizationdays: ").append(toIndentedString(sHospitalizationdays)).append("\n");
+    sb.append("    sDateofdeath: ").append(toIndentedString(sDateofdeath)).append("\n");
+    sb.append("    sInjurytypecode: ").append(toIndentedString(sInjurytypecode)).append("\n");
+    sb.append("    sInjuredbodypartcode: ").append(toIndentedString(sInjuredbodypartcode)).append("\n");
     sb.append("}");
     return sb.toString();
   }

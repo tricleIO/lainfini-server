@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,87 +34,132 @@ import java.util.Objects;
 /**
  * Serviceworkcategoryrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Serviceworkcategoryrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Role_ID")
-  private String roleID = null;
+  @SerializedName("role_id")
+  private String roleId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Servisní odbornost [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Servisní odbornost [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Serviceworkcategoryrow roleID(String roleID) {
-    this.roleID = roleID;
+  public Serviceworkcategoryrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Role; ID objektu Role [persistentní položka]
-   * @return roleID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Role; ID objektu Role [persistentní položka]")
-  public String getRoleID() {
-    return roleID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setRoleID(String roleID) {
-    this.roleID = roleID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Serviceworkcategoryrow id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Serviceworkcategoryrow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Serviceworkcategoryrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Serviceworkcategoryrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu servisní odbornost [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu servisní odbornost [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Serviceworkcategoryrow roleId(String roleId) {
+    this.roleId = roleId;
+    return this;
+  }
+
+   /**
+   * role; id objektu role [persistentní položka]
+   * @return roleId
+  **/
+  @ApiModelProperty(example = "null", value = "role; id objektu role [persistentní položka]")
+  public String getRoleId() {
+    return roleId;
+  }
+
+  public void setRoleId(String roleId) {
+    this.roleId = roleId;
   }
 
 
@@ -127,17 +172,17 @@ public class Serviceworkcategoryrow   {
       return false;
     }
     Serviceworkcategoryrow serviceworkcategoryrow = (Serviceworkcategoryrow) o;
-    return Objects.equals(this.displayName, serviceworkcategoryrow.displayName) &&
-        Objects.equals(this.ID, serviceworkcategoryrow.ID) &&
-        Objects.equals(this.classID, serviceworkcategoryrow.classID) &&
-        Objects.equals(this.objVersion, serviceworkcategoryrow.objVersion) &&
-        Objects.equals(this.parentID, serviceworkcategoryrow.parentID) &&
-        Objects.equals(this.roleID, serviceworkcategoryrow.roleID);
+    return Objects.equals(this.displayname, serviceworkcategoryrow.displayname) &&
+        Objects.equals(this.id, serviceworkcategoryrow.id) &&
+        Objects.equals(this.classid, serviceworkcategoryrow.classid) &&
+        Objects.equals(this.objversion, serviceworkcategoryrow.objversion) &&
+        Objects.equals(this.parentId, serviceworkcategoryrow.parentId) &&
+        Objects.equals(this.roleId, serviceworkcategoryrow.roleId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, roleID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, roleId);
   }
 
   @Override
@@ -145,12 +190,12 @@ public class Serviceworkcategoryrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Serviceworkcategoryrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    roleID: ").append(toIndentedString(roleID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    roleId: ").append(toIndentedString(roleId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

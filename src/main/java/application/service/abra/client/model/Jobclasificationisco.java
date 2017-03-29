@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,72 +35,108 @@ import java.util.Objects;
 /**
  * Jobclasificationisco
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Jobclasificationisco   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("ValidDateTo$DATE")
-  private DateTime validDateToDATE = null;
+  @SerializedName("validdateto$date")
+  private DateTime validdatetodate = null;
 
-  @SerializedName("ValidDateFrom$DATE")
-  private DateTime validDateFromDATE = null;
+  @SerializedName("validdatefrom$date")
+  private DateTime validdatefromdate = null;
 
-  @SerializedName("SuccessorCode")
-  private String successorCode = null;
+  @SerializedName("successorcode")
+  private String successorcode = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Jobclasificationisco displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Jobclasificationisco id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Jobclasificationisco classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Jobclasificationisco objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Jobclasificationisco hidden(Boolean hidden) {
@@ -109,10 +145,10 @@ public class Jobclasificationisco   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -127,10 +163,10 @@ public class Jobclasificationisco   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -145,10 +181,10 @@ public class Jobclasificationisco   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -157,58 +193,58 @@ public class Jobclasificationisco   {
     this.name = name;
   }
 
-  public Jobclasificationisco validDateToDATE(DateTime validDateToDATE) {
-    this.validDateToDATE = validDateToDATE;
+  public Jobclasificationisco validdatetodate(DateTime validdatetodate) {
+    this.validdatetodate = validdatetodate;
     return this;
   }
 
    /**
-   * Datum platnosti do [persistentní položka]
-   * @return validDateToDATE
+   * datum platnosti do [persistentní položka]
+   * @return validdatetodate
   **/
-  @ApiModelProperty(example = "null", value = "Datum platnosti do [persistentní položka]")
-  public DateTime getValidDateToDATE() {
-    return validDateToDATE;
+  @ApiModelProperty(example = "null", value = "datum platnosti do [persistentní položka]")
+  public DateTime getValiddatetodate() {
+    return validdatetodate;
   }
 
-  public void setValidDateToDATE(DateTime validDateToDATE) {
-    this.validDateToDATE = validDateToDATE;
+  public void setValiddatetodate(DateTime validdatetodate) {
+    this.validdatetodate = validdatetodate;
   }
 
-  public Jobclasificationisco validDateFromDATE(DateTime validDateFromDATE) {
-    this.validDateFromDATE = validDateFromDATE;
+  public Jobclasificationisco validdatefromdate(DateTime validdatefromdate) {
+    this.validdatefromdate = validdatefromdate;
     return this;
   }
 
    /**
-   * Datum platnosti od [persistentní položka]
-   * @return validDateFromDATE
+   * datum platnosti od [persistentní položka]
+   * @return validdatefromdate
   **/
-  @ApiModelProperty(example = "null", value = "Datum platnosti od [persistentní položka]")
-  public DateTime getValidDateFromDATE() {
-    return validDateFromDATE;
+  @ApiModelProperty(example = "null", value = "datum platnosti od [persistentní položka]")
+  public DateTime getValiddatefromdate() {
+    return validdatefromdate;
   }
 
-  public void setValidDateFromDATE(DateTime validDateFromDATE) {
-    this.validDateFromDATE = validDateFromDATE;
+  public void setValiddatefromdate(DateTime validdatefromdate) {
+    this.validdatefromdate = validdatefromdate;
   }
 
-  public Jobclasificationisco successorCode(String successorCode) {
-    this.successorCode = successorCode;
+  public Jobclasificationisco successorcode(String successorcode) {
+    this.successorcode = successorcode;
     return this;
   }
 
    /**
-   * Kód nástupce klasifikace zaměstnání [persistentní položka]
-   * @return successorCode
+   * kód nástupce klasifikace zaměstnání [persistentní položka]
+   * @return successorcode
   **/
-  @ApiModelProperty(example = "null", value = "Kód nástupce klasifikace zaměstnání [persistentní položka]")
-  public String getSuccessorCode() {
-    return successorCode;
+  @ApiModelProperty(example = "null", value = "kód nástupce klasifikace zaměstnání [persistentní položka]")
+  public String getSuccessorcode() {
+    return successorcode;
   }
 
-  public void setSuccessorCode(String successorCode) {
-    this.successorCode = successorCode;
+  public void setSuccessorcode(String successorcode) {
+    this.successorcode = successorcode;
   }
 
 
@@ -221,21 +257,21 @@ public class Jobclasificationisco   {
       return false;
     }
     Jobclasificationisco jobclasificationisco = (Jobclasificationisco) o;
-    return Objects.equals(this.displayName, jobclasificationisco.displayName) &&
-        Objects.equals(this.ID, jobclasificationisco.ID) &&
-        Objects.equals(this.classID, jobclasificationisco.classID) &&
-        Objects.equals(this.objVersion, jobclasificationisco.objVersion) &&
+    return Objects.equals(this.displayname, jobclasificationisco.displayname) &&
+        Objects.equals(this.id, jobclasificationisco.id) &&
+        Objects.equals(this.classid, jobclasificationisco.classid) &&
+        Objects.equals(this.objversion, jobclasificationisco.objversion) &&
         Objects.equals(this.hidden, jobclasificationisco.hidden) &&
         Objects.equals(this.code, jobclasificationisco.code) &&
         Objects.equals(this.name, jobclasificationisco.name) &&
-        Objects.equals(this.validDateToDATE, jobclasificationisco.validDateToDATE) &&
-        Objects.equals(this.validDateFromDATE, jobclasificationisco.validDateFromDATE) &&
-        Objects.equals(this.successorCode, jobclasificationisco.successorCode);
+        Objects.equals(this.validdatetodate, jobclasificationisco.validdatetodate) &&
+        Objects.equals(this.validdatefromdate, jobclasificationisco.validdatefromdate) &&
+        Objects.equals(this.successorcode, jobclasificationisco.successorcode);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, validDateToDATE, validDateFromDATE, successorCode);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, validdatetodate, validdatefromdate, successorcode);
   }
 
   @Override
@@ -243,16 +279,16 @@ public class Jobclasificationisco   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Jobclasificationisco {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    validDateToDATE: ").append(toIndentedString(validDateToDATE)).append("\n");
-    sb.append("    validDateFromDATE: ").append(toIndentedString(validDateFromDATE)).append("\n");
-    sb.append("    successorCode: ").append(toIndentedString(successorCode)).append("\n");
+    sb.append("    validdatetodate: ").append(toIndentedString(validdatetodate)).append("\n");
+    sb.append("    validdatefromdate: ").append(toIndentedString(validdatefromdate)).append("\n");
+    sb.append("    successorcode: ").append(toIndentedString(successorcode)).append("\n");
     sb.append("}");
     return sb.toString();
   }

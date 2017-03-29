@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,72 +36,108 @@ import java.util.Objects;
 /**
  * Vatregistration
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Vatregistration   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Vatregistrationrow> rows = new ArrayList<Vatregistrationrow>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Country_ID")
-  private String countryID = null;
+  @SerializedName("country_id")
+  private String countryId = null;
 
-  @SerializedName("DocIssueLimit")
-  private Integer docIssueLimit = null;
+  @SerializedName("docissuelimit")
+  private Integer docissuelimit = null;
 
-  @SerializedName("VATRounding")
-  private Integer vATRounding = null;
+  @SerializedName("vatrounding")
+  private Integer vatrounding = null;
 
-  @SerializedName("VATAllowance")
-  private Double vATAllowance = null;
+  @SerializedName("vatallowance")
+  private Double vatallowance = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Vatregistration displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Vatregistration id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Vatregistration classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Vatregistration objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Vatregistration rows(List<Vatregistrationrow> rows) {
@@ -115,10 +151,10 @@ public class Vatregistration   {
   }
 
    /**
-   * Řádky; kolekce BO DPH registrace v zemi EU - řádek [nepersistentní položka]
+   * Řádky; kolekce bo dph registrace v zemi eu - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO DPH registrace v zemi EU - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo dph registrace v zemi eu - řádek [nepersistentní položka]")
   public List<Vatregistrationrow> getRows() {
     return rows;
   }
@@ -133,10 +169,10 @@ public class Vatregistration   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -145,76 +181,76 @@ public class Vatregistration   {
     this.hidden = hidden;
   }
 
-  public Vatregistration countryID(String countryID) {
-    this.countryID = countryID;
+  public Vatregistration countryId(String countryId) {
+    this.countryId = countryId;
     return this;
   }
 
    /**
-   * Země; ID objektu Země [persistentní položka]
-   * @return countryID
+   * země; id objektu země [persistentní položka]
+   * @return countryId
   **/
-  @ApiModelProperty(example = "null", value = "Země; ID objektu Země [persistentní položka]")
-  public String getCountryID() {
-    return countryID;
+  @ApiModelProperty(example = "null", value = "země; id objektu země [persistentní položka]")
+  public String getCountryId() {
+    return countryId;
   }
 
-  public void setCountryID(String countryID) {
-    this.countryID = countryID;
+  public void setCountryId(String countryId) {
+    this.countryId = countryId;
   }
 
-  public Vatregistration docIssueLimit(Integer docIssueLimit) {
-    this.docIssueLimit = docIssueLimit;
+  public Vatregistration docissuelimit(Integer docissuelimit) {
+    this.docissuelimit = docissuelimit;
     return this;
   }
 
    /**
-   * Limit data plnění [persistentní položka]
-   * @return docIssueLimit
+   * limit data plnění [persistentní položka]
+   * @return docissuelimit
   **/
-  @ApiModelProperty(example = "null", value = "Limit data plnění [persistentní položka]")
-  public Integer getDocIssueLimit() {
-    return docIssueLimit;
+  @ApiModelProperty(example = "null", value = "limit data plnění [persistentní položka]")
+  public Integer getDocissuelimit() {
+    return docissuelimit;
   }
 
-  public void setDocIssueLimit(Integer docIssueLimit) {
-    this.docIssueLimit = docIssueLimit;
+  public void setDocissuelimit(Integer docissuelimit) {
+    this.docissuelimit = docissuelimit;
   }
 
-  public Vatregistration vATRounding(Integer vATRounding) {
-    this.vATRounding = vATRounding;
+  public Vatregistration vatrounding(Integer vatrounding) {
+    this.vatrounding = vatrounding;
     return this;
   }
 
    /**
-   * Zaokrouhlení DPH [persistentní položka]
-   * @return vATRounding
+   * zaokrouhlení dph [persistentní položka]
+   * @return vatrounding
   **/
-  @ApiModelProperty(example = "null", value = "Zaokrouhlení DPH [persistentní položka]")
-  public Integer getVATRounding() {
-    return vATRounding;
+  @ApiModelProperty(example = "null", value = "zaokrouhlení dph [persistentní položka]")
+  public Integer getVatrounding() {
+    return vatrounding;
   }
 
-  public void setVATRounding(Integer vATRounding) {
-    this.vATRounding = vATRounding;
+  public void setVatrounding(Integer vatrounding) {
+    this.vatrounding = vatrounding;
   }
 
-  public Vatregistration vATAllowance(Double vATAllowance) {
-    this.vATAllowance = vATAllowance;
+  public Vatregistration vatallowance(Double vatallowance) {
+    this.vatallowance = vatallowance;
     return this;
   }
 
    /**
-   * Tolerance DPH [persistentní položka]
-   * @return vATAllowance
+   * tolerance dph [persistentní položka]
+   * @return vatallowance
   **/
-  @ApiModelProperty(example = "null", value = "Tolerance DPH [persistentní položka]")
-  public Double getVATAllowance() {
-    return vATAllowance;
+  @ApiModelProperty(example = "null", value = "tolerance dph [persistentní položka]")
+  public Double getVatallowance() {
+    return vatallowance;
   }
 
-  public void setVATAllowance(Double vATAllowance) {
-    this.vATAllowance = vATAllowance;
+  public void setVatallowance(Double vatallowance) {
+    this.vatallowance = vatallowance;
   }
 
 
@@ -227,21 +263,21 @@ public class Vatregistration   {
       return false;
     }
     Vatregistration vatregistration = (Vatregistration) o;
-    return Objects.equals(this.displayName, vatregistration.displayName) &&
-        Objects.equals(this.ID, vatregistration.ID) &&
-        Objects.equals(this.classID, vatregistration.classID) &&
-        Objects.equals(this.objVersion, vatregistration.objVersion) &&
+    return Objects.equals(this.displayname, vatregistration.displayname) &&
+        Objects.equals(this.id, vatregistration.id) &&
+        Objects.equals(this.classid, vatregistration.classid) &&
+        Objects.equals(this.objversion, vatregistration.objversion) &&
         Objects.equals(this.rows, vatregistration.rows) &&
         Objects.equals(this.hidden, vatregistration.hidden) &&
-        Objects.equals(this.countryID, vatregistration.countryID) &&
-        Objects.equals(this.docIssueLimit, vatregistration.docIssueLimit) &&
-        Objects.equals(this.vATRounding, vatregistration.vATRounding) &&
-        Objects.equals(this.vATAllowance, vatregistration.vATAllowance);
+        Objects.equals(this.countryId, vatregistration.countryId) &&
+        Objects.equals(this.docissuelimit, vatregistration.docissuelimit) &&
+        Objects.equals(this.vatrounding, vatregistration.vatrounding) &&
+        Objects.equals(this.vatallowance, vatregistration.vatallowance);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, countryID, docIssueLimit, vATRounding, vATAllowance);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, countryId, docissuelimit, vatrounding, vatallowance);
   }
 
   @Override
@@ -249,16 +285,16 @@ public class Vatregistration   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Vatregistration {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    countryID: ").append(toIndentedString(countryID)).append("\n");
-    sb.append("    docIssueLimit: ").append(toIndentedString(docIssueLimit)).append("\n");
-    sb.append("    vATRounding: ").append(toIndentedString(vATRounding)).append("\n");
-    sb.append("    vATAllowance: ").append(toIndentedString(vATAllowance)).append("\n");
+    sb.append("    countryId: ").append(toIndentedString(countryId)).append("\n");
+    sb.append("    docissuelimit: ").append(toIndentedString(docissuelimit)).append("\n");
+    sb.append("    vatrounding: ").append(toIndentedString(vatrounding)).append("\n");
+    sb.append("    vatallowance: ").append(toIndentedString(vatallowance)).append("\n");
     sb.append("}");
     return sb.toString();
   }

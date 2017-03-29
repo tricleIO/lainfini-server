@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,303 +37,339 @@ import java.util.Objects;
 /**
  * Assetdiscard
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Assetdiscard   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("AccPresetDef_ID")
-  private String accPresetDefID = null;
+  @SerializedName("accpresetdef_id")
+  private String accpresetdefId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("AccDate$DATE")
-  private DateTime accDateDATE = null;
+  @SerializedName("accdate$date")
+  private DateTime accdatedate = null;
 
-  @SerializedName("AccDocQueue_ID")
-  private String accDocQueueID = null;
+  @SerializedName("accdocqueue_id")
+  private String accdocqueueId = null;
 
-  @SerializedName("AccountingType")
-  private Integer accountingType = null;
+  @SerializedName("accountingtype")
+  private Integer accountingtype = null;
 
-  @SerializedName("IsAccounted")
-  private Boolean isAccounted = null;
+  @SerializedName("isaccounted")
+  private Boolean isaccounted = null;
 
-  @SerializedName("Dirty")
+  @SerializedName("dirty")
   private Boolean dirty = null;
 
-  @SerializedName("AssetCard_Type")
-  private Integer assetCardType = null;
+  @SerializedName("assetcard_type")
+  private Integer assetcardType = null;
 
-  @SerializedName("AssetCard_ID")
-  private String assetCardID = null;
+  @SerializedName("assetcard_id")
+  private String assetcardId = null;
 
-  @SerializedName("TaxBasePriceAmount")
-  private Double taxBasePriceAmount = null;
+  @SerializedName("taxbasepriceamount")
+  private Double taxbasepriceamount = null;
 
-  @SerializedName("AccBasePriceAmount")
-  private Double accBasePriceAmount = null;
+  @SerializedName("accbasepriceamount")
+  private Double accbasepriceamount = null;
 
-  @SerializedName("TaxRemainderPriceAmount")
-  private Double taxRemainderPriceAmount = null;
+  @SerializedName("taxremainderpriceamount")
+  private Double taxremainderpriceamount = null;
 
-  @SerializedName("AccRemainderPriceAmount")
-  private Double accRemainderPriceAmount = null;
+  @SerializedName("accremainderpriceamount")
+  private Double accremainderpriceamount = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("LastTaxDepreciationPerc")
-  private Double lastTaxDepreciationPerc = null;
+  @SerializedName("lasttaxdepreciationperc")
+  private Double lasttaxdepreciationperc = null;
 
-  @SerializedName("IsFinal")
-  private Boolean isFinal = null;
+  @SerializedName("isfinal")
+  private Boolean isfinal = null;
 
-  @SerializedName("IsFinalAsText")
-  private String isFinalAsText = null;
+  @SerializedName("isfinalastext")
+  private String isfinalastext = null;
 
-  @SerializedName("Components")
+  @SerializedName("components")
   private List<Assetdiscardcomponent> components = new ArrayList<Assetdiscardcomponent>();
+
+  public Assetdiscard displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
   }
 
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Assetdiscard docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Assetdiscard id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Assetdiscard periodID(String periodID) {
-    this.periodID = periodID;
+  public Assetdiscard classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Assetdiscard ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Assetdiscard objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Assetdiscard docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Assetdiscard docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Assetdiscard createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Assetdiscard periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Assetdiscard correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Assetdiscard ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Assetdiscard newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Assetdiscard docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Assetdiscard newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Assetdiscard createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Assetdiscard accPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public Assetdiscard correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Předkontace; ID objektu Účetní předkontace [persistentní položka]
-   * @return accPresetDefID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Předkontace; ID objektu Účetní předkontace [persistentní položka]")
-  public String getAccPresetDefID() {
-    return accPresetDefID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setAccPresetDefID(String accPresetDefID) {
-    this.accPresetDefID = accPresetDefID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+  }
+
+  public Assetdiscard newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
+    return this;
+  }
+
+   /**
+   * typ relace
+   * @return newrelatedtype
+  **/
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
+  }
+
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
+  }
+
+  public Assetdiscard newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
+    return this;
+  }
+
+   /**
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
+  **/
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
+  }
+
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
+  }
+
+  public Assetdiscard accpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
+    return this;
+  }
+
+   /**
+   * předkontace; id objektu Účetní předkontace [persistentní položka]
+   * @return accpresetdefId
+  **/
+  @ApiModelProperty(example = "null", value = "předkontace; id objektu Účetní předkontace [persistentní položka]")
+  public String getAccpresetdefId() {
+    return accpresetdefId;
+  }
+
+  public void setAccpresetdefId(String accpresetdefId) {
+    this.accpresetdefId = accpresetdefId;
   }
 
   public Assetdiscard description(String description) {
@@ -342,10 +378,10 @@ public class Assetdiscard   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -354,76 +390,76 @@ public class Assetdiscard   {
     this.description = description;
   }
 
-  public Assetdiscard accDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public Assetdiscard accdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
     return this;
   }
 
    /**
-   * Datum účt. [persistentní položka]
-   * @return accDateDATE
+   * datum účt. [persistentní položka]
+   * @return accdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum účt. [persistentní položka]")
-  public DateTime getAccDateDATE() {
-    return accDateDATE;
+  @ApiModelProperty(example = "null", value = "datum účt. [persistentní položka]")
+  public DateTime getAccdatedate() {
+    return accdatedate;
   }
 
-  public void setAccDateDATE(DateTime accDateDATE) {
-    this.accDateDATE = accDateDATE;
+  public void setAccdatedate(DateTime accdatedate) {
+    this.accdatedate = accdatedate;
   }
 
-  public Assetdiscard accDocQueueID(String accDocQueueID) {
-    this.accDocQueueID = accDocQueueID;
+  public Assetdiscard accdocqueueId(String accdocqueueId) {
+    this.accdocqueueId = accdocqueueId;
     return this;
   }
 
    /**
-   * Účetní řada; ID objektu Účetní řada dokladů [persistentní položka]
-   * @return accDocQueueID
+   * Účetní řada; id objektu Účetní řada dokladů [persistentní položka]
+   * @return accdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Účetní řada; ID objektu Účetní řada dokladů [persistentní položka]")
-  public String getAccDocQueueID() {
-    return accDocQueueID;
+  @ApiModelProperty(example = "null", value = "Účetní řada; id objektu Účetní řada dokladů [persistentní položka]")
+  public String getAccdocqueueId() {
+    return accdocqueueId;
   }
 
-  public void setAccDocQueueID(String accDocQueueID) {
-    this.accDocQueueID = accDocQueueID;
+  public void setAccdocqueueId(String accdocqueueId) {
+    this.accdocqueueId = accdocqueueId;
   }
 
-  public Assetdiscard accountingType(Integer accountingType) {
-    this.accountingType = accountingType;
+  public Assetdiscard accountingtype(Integer accountingtype) {
+    this.accountingtype = accountingtype;
     return this;
   }
 
    /**
-   * Jak účtovat
-   * @return accountingType
+   * jak účtovat
+   * @return accountingtype
   **/
-  @ApiModelProperty(example = "null", value = "Jak účtovat")
-  public Integer getAccountingType() {
-    return accountingType;
+  @ApiModelProperty(example = "null", value = "jak účtovat")
+  public Integer getAccountingtype() {
+    return accountingtype;
   }
 
-  public void setAccountingType(Integer accountingType) {
-    this.accountingType = accountingType;
+  public void setAccountingtype(Integer accountingtype) {
+    this.accountingtype = accountingtype;
   }
 
-  public Assetdiscard isAccounted(Boolean isAccounted) {
-    this.isAccounted = isAccounted;
+  public Assetdiscard isaccounted(Boolean isaccounted) {
+    this.isaccounted = isaccounted;
     return this;
   }
 
    /**
    * Účtováno
-   * @return isAccounted
+   * @return isaccounted
   **/
   @ApiModelProperty(example = "null", value = "Účtováno")
-  public Boolean getIsAccounted() {
-    return isAccounted;
+  public Boolean getIsaccounted() {
+    return isaccounted;
   }
 
-  public void setIsAccounted(Boolean isAccounted) {
-    this.isAccounted = isAccounted;
+  public void setIsaccounted(Boolean isaccounted) {
+    this.isaccounted = isaccounted;
   }
 
   public Assetdiscard dirty(Boolean dirty) {
@@ -432,10 +468,10 @@ public class Assetdiscard   {
   }
 
    /**
-   * Zakázané přepočítání
+   * zakázané přepočítání
    * @return dirty
   **/
-  @ApiModelProperty(example = "null", value = "Zakázané přepočítání")
+  @ApiModelProperty(example = "null", value = "zakázané přepočítání")
   public Boolean getDirty() {
     return dirty;
   }
@@ -444,238 +480,238 @@ public class Assetdiscard   {
     this.dirty = dirty;
   }
 
-  public Assetdiscard assetCardType(Integer assetCardType) {
-    this.assetCardType = assetCardType;
+  public Assetdiscard assetcardType(Integer assetcardType) {
+    this.assetcardType = assetcardType;
     return this;
   }
 
    /**
-   * Typ karty
-   * @return assetCardType
+   * typ karty
+   * @return assetcardType
   **/
-  @ApiModelProperty(example = "null", value = "Typ karty")
-  public Integer getAssetCardType() {
-    return assetCardType;
+  @ApiModelProperty(example = "null", value = "typ karty")
+  public Integer getAssetcardType() {
+    return assetcardType;
   }
 
-  public void setAssetCardType(Integer assetCardType) {
-    this.assetCardType = assetCardType;
+  public void setAssetcardType(Integer assetcardType) {
+    this.assetcardType = assetcardType;
   }
 
-  public Assetdiscard assetCardID(String assetCardID) {
-    this.assetCardID = assetCardID;
+  public Assetdiscard assetcardId(String assetcardId) {
+    this.assetcardId = assetcardId;
     return this;
   }
 
    /**
-   * Karta majetku; ID objektu Karta majetku [persistentní položka]
-   * @return assetCardID
+   * karta majetku; id objektu karta majetku [persistentní položka]
+   * @return assetcardId
   **/
-  @ApiModelProperty(example = "null", value = "Karta majetku; ID objektu Karta majetku [persistentní položka]")
-  public String getAssetCardID() {
-    return assetCardID;
+  @ApiModelProperty(example = "null", value = "karta majetku; id objektu karta majetku [persistentní položka]")
+  public String getAssetcardId() {
+    return assetcardId;
   }
 
-  public void setAssetCardID(String assetCardID) {
-    this.assetCardID = assetCardID;
+  public void setAssetcardId(String assetcardId) {
+    this.assetcardId = assetcardId;
   }
 
-  public Assetdiscard taxBasePriceAmount(Double taxBasePriceAmount) {
-    this.taxBasePriceAmount = taxBasePriceAmount;
+  public Assetdiscard taxbasepriceamount(Double taxbasepriceamount) {
+    this.taxbasepriceamount = taxbasepriceamount;
     return this;
   }
 
    /**
-   * Daň.vstup.cena [persistentní položka]
-   * @return taxBasePriceAmount
+   * daň.vstup.cena [persistentní položka]
+   * @return taxbasepriceamount
   **/
-  @ApiModelProperty(example = "null", value = "Daň.vstup.cena [persistentní položka]")
-  public Double getTaxBasePriceAmount() {
-    return taxBasePriceAmount;
+  @ApiModelProperty(example = "null", value = "daň.vstup.cena [persistentní položka]")
+  public Double getTaxbasepriceamount() {
+    return taxbasepriceamount;
   }
 
-  public void setTaxBasePriceAmount(Double taxBasePriceAmount) {
-    this.taxBasePriceAmount = taxBasePriceAmount;
+  public void setTaxbasepriceamount(Double taxbasepriceamount) {
+    this.taxbasepriceamount = taxbasepriceamount;
   }
 
-  public Assetdiscard accBasePriceAmount(Double accBasePriceAmount) {
-    this.accBasePriceAmount = accBasePriceAmount;
+  public Assetdiscard accbasepriceamount(Double accbasepriceamount) {
+    this.accbasepriceamount = accbasepriceamount;
     return this;
   }
 
    /**
    * Účet.vstup.cena [persistentní položka]
-   * @return accBasePriceAmount
+   * @return accbasepriceamount
   **/
   @ApiModelProperty(example = "null", value = "Účet.vstup.cena [persistentní položka]")
-  public Double getAccBasePriceAmount() {
-    return accBasePriceAmount;
+  public Double getAccbasepriceamount() {
+    return accbasepriceamount;
   }
 
-  public void setAccBasePriceAmount(Double accBasePriceAmount) {
-    this.accBasePriceAmount = accBasePriceAmount;
+  public void setAccbasepriceamount(Double accbasepriceamount) {
+    this.accbasepriceamount = accbasepriceamount;
   }
 
-  public Assetdiscard taxRemainderPriceAmount(Double taxRemainderPriceAmount) {
-    this.taxRemainderPriceAmount = taxRemainderPriceAmount;
+  public Assetdiscard taxremainderpriceamount(Double taxremainderpriceamount) {
+    this.taxremainderpriceamount = taxremainderpriceamount;
     return this;
   }
 
    /**
-   * Daň.zůst.cena [persistentní položka]
-   * @return taxRemainderPriceAmount
+   * daň.zůst.cena [persistentní položka]
+   * @return taxremainderpriceamount
   **/
-  @ApiModelProperty(example = "null", value = "Daň.zůst.cena [persistentní položka]")
-  public Double getTaxRemainderPriceAmount() {
-    return taxRemainderPriceAmount;
+  @ApiModelProperty(example = "null", value = "daň.zůst.cena [persistentní položka]")
+  public Double getTaxremainderpriceamount() {
+    return taxremainderpriceamount;
   }
 
-  public void setTaxRemainderPriceAmount(Double taxRemainderPriceAmount) {
-    this.taxRemainderPriceAmount = taxRemainderPriceAmount;
+  public void setTaxremainderpriceamount(Double taxremainderpriceamount) {
+    this.taxremainderpriceamount = taxremainderpriceamount;
   }
 
-  public Assetdiscard accRemainderPriceAmount(Double accRemainderPriceAmount) {
-    this.accRemainderPriceAmount = accRemainderPriceAmount;
+  public Assetdiscard accremainderpriceamount(Double accremainderpriceamount) {
+    this.accremainderpriceamount = accremainderpriceamount;
     return this;
   }
 
    /**
    * Účet.zůst.cena [persistentní položka]
-   * @return accRemainderPriceAmount
+   * @return accremainderpriceamount
   **/
   @ApiModelProperty(example = "null", value = "Účet.zůst.cena [persistentní položka]")
-  public Double getAccRemainderPriceAmount() {
-    return accRemainderPriceAmount;
+  public Double getAccremainderpriceamount() {
+    return accremainderpriceamount;
   }
 
-  public void setAccRemainderPriceAmount(Double accRemainderPriceAmount) {
-    this.accRemainderPriceAmount = accRemainderPriceAmount;
+  public void setAccremainderpriceamount(Double accremainderpriceamount) {
+    this.accremainderpriceamount = accremainderpriceamount;
   }
 
-  public Assetdiscard divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Assetdiscard divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Assetdiscard busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Assetdiscard busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Assetdiscard busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Assetdiscard bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obch.případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obch.případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obch.případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obch.případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Assetdiscard busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Assetdiscard busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Assetdiscard lastTaxDepreciationPerc(Double lastTaxDepreciationPerc) {
-    this.lastTaxDepreciationPerc = lastTaxDepreciationPerc;
+  public Assetdiscard lasttaxdepreciationperc(Double lasttaxdepreciationperc) {
+    this.lasttaxdepreciationperc = lasttaxdepreciationperc;
     return this;
   }
 
    /**
    * %daň.odpisu při vyř. [persistentní položka]
-   * @return lastTaxDepreciationPerc
+   * @return lasttaxdepreciationperc
   **/
   @ApiModelProperty(example = "null", value = "%daň.odpisu při vyř. [persistentní položka]")
-  public Double getLastTaxDepreciationPerc() {
-    return lastTaxDepreciationPerc;
+  public Double getLasttaxdepreciationperc() {
+    return lasttaxdepreciationperc;
   }
 
-  public void setLastTaxDepreciationPerc(Double lastTaxDepreciationPerc) {
-    this.lastTaxDepreciationPerc = lastTaxDepreciationPerc;
+  public void setLasttaxdepreciationperc(Double lasttaxdepreciationperc) {
+    this.lasttaxdepreciationperc = lasttaxdepreciationperc;
   }
 
-  public Assetdiscard isFinal(Boolean isFinal) {
-    this.isFinal = isFinal;
+  public Assetdiscard isfinal(Boolean isfinal) {
+    this.isfinal = isfinal;
     return this;
   }
 
    /**
    * úplné [persistentní položka]
-   * @return isFinal
+   * @return isfinal
   **/
   @ApiModelProperty(example = "null", value = "úplné [persistentní položka]")
-  public Boolean getIsFinal() {
-    return isFinal;
+  public Boolean getIsfinal() {
+    return isfinal;
   }
 
-  public void setIsFinal(Boolean isFinal) {
-    this.isFinal = isFinal;
+  public void setIsfinal(Boolean isfinal) {
+    this.isfinal = isfinal;
   }
 
-  public Assetdiscard isFinalAsText(String isFinalAsText) {
-    this.isFinalAsText = isFinalAsText;
+  public Assetdiscard isfinalastext(String isfinalastext) {
+    this.isfinalastext = isfinalastext;
     return this;
   }
 
    /**
    * úplné
-   * @return isFinalAsText
+   * @return isfinalastext
   **/
   @ApiModelProperty(example = "null", value = "úplné")
-  public String getIsFinalAsText() {
-    return isFinalAsText;
+  public String getIsfinalastext() {
+    return isfinalastext;
   }
 
-  public void setIsFinalAsText(String isFinalAsText) {
-    this.isFinalAsText = isFinalAsText;
+  public void setIsfinalastext(String isfinalastext) {
+    this.isfinalastext = isfinalastext;
   }
 
   public Assetdiscard components(List<Assetdiscardcomponent> components) {
@@ -689,10 +725,10 @@ public class Assetdiscard   {
   }
 
    /**
-   * Prvky dokladu vyřazení majetku; kolekce BO Prvek na dokladu vyřazení majetku [nepersistentní položka]
+   * prvky dokladu vyřazení majetku; kolekce bo prvek na dokladu vyřazení majetku [nepersistentní položka]
    * @return components
   **/
-  @ApiModelProperty(example = "null", value = "Prvky dokladu vyřazení majetku; kolekce BO Prvek na dokladu vyřazení majetku [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "prvky dokladu vyřazení majetku; kolekce bo prvek na dokladu vyřazení majetku [nepersistentní položka]")
   public List<Assetdiscardcomponent> getComponents() {
     return components;
   }
@@ -711,44 +747,44 @@ public class Assetdiscard   {
       return false;
     }
     Assetdiscard assetdiscard = (Assetdiscard) o;
-    return Objects.equals(this.displayName, assetdiscard.displayName) &&
-        Objects.equals(this.ID, assetdiscard.ID) &&
-        Objects.equals(this.classID, assetdiscard.classID) &&
-        Objects.equals(this.objVersion, assetdiscard.objVersion) &&
-        Objects.equals(this.docQueueID, assetdiscard.docQueueID) &&
-        Objects.equals(this.periodID, assetdiscard.periodID) &&
-        Objects.equals(this.ordNumber, assetdiscard.ordNumber) &&
-        Objects.equals(this.docDateDATE, assetdiscard.docDateDATE) &&
-        Objects.equals(this.createdByID, assetdiscard.createdByID) &&
-        Objects.equals(this.correctedByID, assetdiscard.correctedByID) &&
-        Objects.equals(this.newRelatedType, assetdiscard.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, assetdiscard.newRelatedDocumentID) &&
-        Objects.equals(this.accPresetDefID, assetdiscard.accPresetDefID) &&
+    return Objects.equals(this.displayname, assetdiscard.displayname) &&
+        Objects.equals(this.id, assetdiscard.id) &&
+        Objects.equals(this.classid, assetdiscard.classid) &&
+        Objects.equals(this.objversion, assetdiscard.objversion) &&
+        Objects.equals(this.docqueueId, assetdiscard.docqueueId) &&
+        Objects.equals(this.periodId, assetdiscard.periodId) &&
+        Objects.equals(this.ordnumber, assetdiscard.ordnumber) &&
+        Objects.equals(this.docdatedate, assetdiscard.docdatedate) &&
+        Objects.equals(this.createdbyId, assetdiscard.createdbyId) &&
+        Objects.equals(this.correctedbyId, assetdiscard.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, assetdiscard.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, assetdiscard.newrelateddocumentId) &&
+        Objects.equals(this.accpresetdefId, assetdiscard.accpresetdefId) &&
         Objects.equals(this.description, assetdiscard.description) &&
-        Objects.equals(this.accDateDATE, assetdiscard.accDateDATE) &&
-        Objects.equals(this.accDocQueueID, assetdiscard.accDocQueueID) &&
-        Objects.equals(this.accountingType, assetdiscard.accountingType) &&
-        Objects.equals(this.isAccounted, assetdiscard.isAccounted) &&
+        Objects.equals(this.accdatedate, assetdiscard.accdatedate) &&
+        Objects.equals(this.accdocqueueId, assetdiscard.accdocqueueId) &&
+        Objects.equals(this.accountingtype, assetdiscard.accountingtype) &&
+        Objects.equals(this.isaccounted, assetdiscard.isaccounted) &&
         Objects.equals(this.dirty, assetdiscard.dirty) &&
-        Objects.equals(this.assetCardType, assetdiscard.assetCardType) &&
-        Objects.equals(this.assetCardID, assetdiscard.assetCardID) &&
-        Objects.equals(this.taxBasePriceAmount, assetdiscard.taxBasePriceAmount) &&
-        Objects.equals(this.accBasePriceAmount, assetdiscard.accBasePriceAmount) &&
-        Objects.equals(this.taxRemainderPriceAmount, assetdiscard.taxRemainderPriceAmount) &&
-        Objects.equals(this.accRemainderPriceAmount, assetdiscard.accRemainderPriceAmount) &&
-        Objects.equals(this.divisionID, assetdiscard.divisionID) &&
-        Objects.equals(this.busOrderID, assetdiscard.busOrderID) &&
-        Objects.equals(this.busTransactionID, assetdiscard.busTransactionID) &&
-        Objects.equals(this.busProjectID, assetdiscard.busProjectID) &&
-        Objects.equals(this.lastTaxDepreciationPerc, assetdiscard.lastTaxDepreciationPerc) &&
-        Objects.equals(this.isFinal, assetdiscard.isFinal) &&
-        Objects.equals(this.isFinalAsText, assetdiscard.isFinalAsText) &&
+        Objects.equals(this.assetcardType, assetdiscard.assetcardType) &&
+        Objects.equals(this.assetcardId, assetdiscard.assetcardId) &&
+        Objects.equals(this.taxbasepriceamount, assetdiscard.taxbasepriceamount) &&
+        Objects.equals(this.accbasepriceamount, assetdiscard.accbasepriceamount) &&
+        Objects.equals(this.taxremainderpriceamount, assetdiscard.taxremainderpriceamount) &&
+        Objects.equals(this.accremainderpriceamount, assetdiscard.accremainderpriceamount) &&
+        Objects.equals(this.divisionId, assetdiscard.divisionId) &&
+        Objects.equals(this.busorderId, assetdiscard.busorderId) &&
+        Objects.equals(this.bustransactionId, assetdiscard.bustransactionId) &&
+        Objects.equals(this.busprojectId, assetdiscard.busprojectId) &&
+        Objects.equals(this.lasttaxdepreciationperc, assetdiscard.lasttaxdepreciationperc) &&
+        Objects.equals(this.isfinal, assetdiscard.isfinal) &&
+        Objects.equals(this.isfinalastext, assetdiscard.isfinalastext) &&
         Objects.equals(this.components, assetdiscard.components);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, accPresetDefID, description, accDateDATE, accDocQueueID, accountingType, isAccounted, dirty, assetCardType, assetCardID, taxBasePriceAmount, accBasePriceAmount, taxRemainderPriceAmount, accRemainderPriceAmount, divisionID, busOrderID, busTransactionID, busProjectID, lastTaxDepreciationPerc, isFinal, isFinalAsText, components);
+    return Objects.hash(displayname, id, classid, objversion, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, accpresetdefId, description, accdatedate, accdocqueueId, accountingtype, isaccounted, dirty, assetcardType, assetcardId, taxbasepriceamount, accbasepriceamount, taxremainderpriceamount, accremainderpriceamount, divisionId, busorderId, bustransactionId, busprojectId, lasttaxdepreciationperc, isfinal, isfinalastext, components);
   }
 
   @Override
@@ -756,38 +792,38 @@ public class Assetdiscard   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Assetdiscard {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    accPresetDefID: ").append(toIndentedString(accPresetDefID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    accpresetdefId: ").append(toIndentedString(accpresetdefId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    accDateDATE: ").append(toIndentedString(accDateDATE)).append("\n");
-    sb.append("    accDocQueueID: ").append(toIndentedString(accDocQueueID)).append("\n");
-    sb.append("    accountingType: ").append(toIndentedString(accountingType)).append("\n");
-    sb.append("    isAccounted: ").append(toIndentedString(isAccounted)).append("\n");
+    sb.append("    accdatedate: ").append(toIndentedString(accdatedate)).append("\n");
+    sb.append("    accdocqueueId: ").append(toIndentedString(accdocqueueId)).append("\n");
+    sb.append("    accountingtype: ").append(toIndentedString(accountingtype)).append("\n");
+    sb.append("    isaccounted: ").append(toIndentedString(isaccounted)).append("\n");
     sb.append("    dirty: ").append(toIndentedString(dirty)).append("\n");
-    sb.append("    assetCardType: ").append(toIndentedString(assetCardType)).append("\n");
-    sb.append("    assetCardID: ").append(toIndentedString(assetCardID)).append("\n");
-    sb.append("    taxBasePriceAmount: ").append(toIndentedString(taxBasePriceAmount)).append("\n");
-    sb.append("    accBasePriceAmount: ").append(toIndentedString(accBasePriceAmount)).append("\n");
-    sb.append("    taxRemainderPriceAmount: ").append(toIndentedString(taxRemainderPriceAmount)).append("\n");
-    sb.append("    accRemainderPriceAmount: ").append(toIndentedString(accRemainderPriceAmount)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    lastTaxDepreciationPerc: ").append(toIndentedString(lastTaxDepreciationPerc)).append("\n");
-    sb.append("    isFinal: ").append(toIndentedString(isFinal)).append("\n");
-    sb.append("    isFinalAsText: ").append(toIndentedString(isFinalAsText)).append("\n");
+    sb.append("    assetcardType: ").append(toIndentedString(assetcardType)).append("\n");
+    sb.append("    assetcardId: ").append(toIndentedString(assetcardId)).append("\n");
+    sb.append("    taxbasepriceamount: ").append(toIndentedString(taxbasepriceamount)).append("\n");
+    sb.append("    accbasepriceamount: ").append(toIndentedString(accbasepriceamount)).append("\n");
+    sb.append("    taxremainderpriceamount: ").append(toIndentedString(taxremainderpriceamount)).append("\n");
+    sb.append("    accremainderpriceamount: ").append(toIndentedString(accremainderpriceamount)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    lasttaxdepreciationperc: ").append(toIndentedString(lasttaxdepreciationperc)).append("\n");
+    sb.append("    isfinal: ").append(toIndentedString(isfinal)).append("\n");
+    sb.append("    isfinalastext: ").append(toIndentedString(isfinalastext)).append("\n");
     sb.append("    components: ").append(toIndentedString(components)).append("\n");
     sb.append("}");
     return sb.toString();

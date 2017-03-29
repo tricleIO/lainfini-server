@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,132 +37,168 @@ import java.util.Objects;
 /**
  * Person
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Person   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("LastName")
-  private String lastName = null;
+  @SerializedName("lastname")
+  private String lastname = null;
 
-  @SerializedName("FirstName")
-  private String firstName = null;
+  @SerializedName("firstname")
+  private String firstname = null;
 
-  @SerializedName("Title")
+  @SerializedName("title")
   private String title = null;
 
-  @SerializedName("Grade")
+  @SerializedName("grade")
   private String grade = null;
 
-  @SerializedName("BirthNumber")
-  private String birthNumber = null;
+  @SerializedName("birthnumber")
+  private String birthnumber = null;
 
-  @SerializedName("IDCardNumber")
-  private String iDCardNumber = null;
+  @SerializedName("idcardnumber")
+  private String idcardnumber = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Comment")
+  @SerializedName("comment")
   private String comment = null;
 
-  @SerializedName("Address_ID")
-  private Person addressID = null;
+  @SerializedName("address_id")
+  private Person addressId = null;
 
-  @SerializedName("FullName")
-  private String fullName = null;
+  @SerializedName("fullname")
+  private String fullname = null;
 
-  @SerializedName("IsEmployee")
-  private Boolean isEmployee = null;
+  @SerializedName("isemployee")
+  private Boolean isemployee = null;
 
-  @SerializedName("IsOwned")
-  private Boolean isOwned = null;
+  @SerializedName("isowned")
+  private Boolean isowned = null;
 
-  @SerializedName("PersonalNumber")
-  private String personalNumber = null;
+  @SerializedName("personalnumber")
+  private String personalnumber = null;
 
-  @SerializedName("Picture_ID")
-  private Person pictureID = null;
+  @SerializedName("picture_id")
+  private Person pictureId = null;
 
-  @SerializedName("Suffix")
+  @SerializedName("suffix")
   private String suffix = null;
 
-  @SerializedName("LastAndFirstName")
-  private String lastAndFirstName = null;
+  @SerializedName("lastandfirstname")
+  private String lastandfirstname = null;
 
-  @SerializedName("DateOfBirth$DATE")
-  private DateTime dateOfBirthDATE = null;
+  @SerializedName("dateofbirth$date")
+  private DateTime dateofbirthdate = null;
 
-  @SerializedName("InsolvencyCheckResult")
-  private Integer insolvencyCheckResult = null;
+  @SerializedName("insolvencycheckresult")
+  private Integer insolvencycheckresult = null;
 
-  @SerializedName("InsolvencyCheckResultAsText")
-  private String insolvencyCheckResultAsText = null;
+  @SerializedName("insolvencycheckresultastext")
+  private String insolvencycheckresultastext = null;
 
-  @SerializedName("InsolvencyLastCheckDateTime$DATE")
-  private DateTime insolvencyLastCheckDateTimeDATE = null;
+  @SerializedName("insolvencylastcheckdatetime$date")
+  private DateTime insolvencylastcheckdatetimedate = null;
 
-  @SerializedName("SalutationTitle")
-  private String salutationTitle = null;
+  @SerializedName("salutationtitle")
+  private String salutationtitle = null;
 
-  @SerializedName("SalutationName")
-  private String salutationName = null;
+  @SerializedName("salutationname")
+  private String salutationname = null;
 
-  @SerializedName("CommercialsAgreement")
-  private Integer commercialsAgreement = null;
+  @SerializedName("commercialsagreement")
+  private Integer commercialsagreement = null;
 
-  @SerializedName("CommercialsAgreementDesc")
-  private String commercialsAgreementDesc = null;
+  @SerializedName("commercialsagreementdesc")
+  private String commercialsagreementdesc = null;
 
-  @SerializedName("Pictures")
+  @SerializedName("pictures")
   private List<Personpicture> pictures = new ArrayList<Personpicture>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Person displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Person id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Person classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Person objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Person hidden(Boolean hidden) {
@@ -171,10 +207,10 @@ public class Person   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -183,40 +219,40 @@ public class Person   {
     this.hidden = hidden;
   }
 
-  public Person lastName(String lastName) {
-    this.lastName = lastName;
+  public Person lastname(String lastname) {
+    this.lastname = lastname;
     return this;
   }
 
    /**
-   * Příjmení [persistentní položka]
-   * @return lastName
+   * příjmení [persistentní položka]
+   * @return lastname
   **/
-  @ApiModelProperty(example = "null", value = "Příjmení [persistentní položka]")
-  public String getLastName() {
-    return lastName;
+  @ApiModelProperty(example = "null", value = "příjmení [persistentní položka]")
+  public String getLastname() {
+    return lastname;
   }
 
-  public void setLastName(String lastName) {
-    this.lastName = lastName;
+  public void setLastname(String lastname) {
+    this.lastname = lastname;
   }
 
-  public Person firstName(String firstName) {
-    this.firstName = firstName;
+  public Person firstname(String firstname) {
+    this.firstname = firstname;
     return this;
   }
 
    /**
-   * Jméno [persistentní položka]
-   * @return firstName
+   * jméno [persistentní položka]
+   * @return firstname
   **/
-  @ApiModelProperty(example = "null", value = "Jméno [persistentní položka]")
-  public String getFirstName() {
-    return firstName;
+  @ApiModelProperty(example = "null", value = "jméno [persistentní položka]")
+  public String getFirstname() {
+    return firstname;
   }
 
-  public void setFirstName(String firstName) {
-    this.firstName = firstName;
+  public void setFirstname(String firstname) {
+    this.firstname = firstname;
   }
 
   public Person title(String title) {
@@ -225,10 +261,10 @@ public class Person   {
   }
 
    /**
-   * Titul [persistentní položka]
+   * titul [persistentní položka]
    * @return title
   **/
-  @ApiModelProperty(example = "null", value = "Titul [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "titul [persistentní položka]")
   public String getTitle() {
     return title;
   }
@@ -243,10 +279,10 @@ public class Person   {
   }
 
    /**
-   * Popis pozice [persistentní položka]
+   * popis pozice [persistentní položka]
    * @return grade
   **/
-  @ApiModelProperty(example = "null", value = "Popis pozice [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis pozice [persistentní položka]")
   public String getGrade() {
     return grade;
   }
@@ -255,40 +291,40 @@ public class Person   {
     this.grade = grade;
   }
 
-  public Person birthNumber(String birthNumber) {
-    this.birthNumber = birthNumber;
+  public Person birthnumber(String birthnumber) {
+    this.birthnumber = birthnumber;
     return this;
   }
 
    /**
-   * Rodné číslo [persistentní položka]
-   * @return birthNumber
+   * rodné číslo [persistentní položka]
+   * @return birthnumber
   **/
-  @ApiModelProperty(example = "null", value = "Rodné číslo [persistentní položka]")
-  public String getBirthNumber() {
-    return birthNumber;
+  @ApiModelProperty(example = "null", value = "rodné číslo [persistentní položka]")
+  public String getBirthnumber() {
+    return birthnumber;
   }
 
-  public void setBirthNumber(String birthNumber) {
-    this.birthNumber = birthNumber;
+  public void setBirthnumber(String birthnumber) {
+    this.birthnumber = birthnumber;
   }
 
-  public Person iDCardNumber(String iDCardNumber) {
-    this.iDCardNumber = iDCardNumber;
+  public Person idcardnumber(String idcardnumber) {
+    this.idcardnumber = idcardnumber;
     return this;
   }
 
    /**
-   * Číslo OP/pasu [persistentní položka]
-   * @return iDCardNumber
+   * Číslo op/pasu [persistentní položka]
+   * @return idcardnumber
   **/
-  @ApiModelProperty(example = "null", value = "Číslo OP/pasu [persistentní položka]")
-  public String getIDCardNumber() {
-    return iDCardNumber;
+  @ApiModelProperty(example = "null", value = "Číslo op/pasu [persistentní položka]")
+  public String getIdcardnumber() {
+    return idcardnumber;
   }
 
-  public void setIDCardNumber(String iDCardNumber) {
-    this.iDCardNumber = iDCardNumber;
+  public void setIdcardnumber(String idcardnumber) {
+    this.idcardnumber = idcardnumber;
   }
 
   public Person note(String note) {
@@ -297,10 +333,10 @@ public class Person   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -315,10 +351,10 @@ public class Person   {
   }
 
    /**
-   * Poznámka
+   * poznámka
    * @return comment
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka")
+  @ApiModelProperty(example = "null", value = "poznámka")
   public String getComment() {
     return comment;
   }
@@ -327,94 +363,112 @@ public class Person   {
     this.comment = comment;
   }
 
-  public Person addressID(Person addressID) {
-    this.addressID = addressID;
+  public Person addressId(Person addressId) {
+    this.addressId = addressId;
     return this;
   }
 
    /**
-   * Get addressID
-   * @return addressID
+   * Get addressId
+   * @return addressId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Person getAddressID() {
-    return addressID;
+  public Person getAddressId() {
+    return addressId;
   }
 
-  public void setAddressID(Person addressID) {
-    this.addressID = addressID;
+  public void setAddressId(Person addressId) {
+    this.addressId = addressId;
   }
 
-   /**
-   * Jméno + Příjmení
-   * @return fullName
-  **/
-  @ApiModelProperty(example = "null", value = "Jméno + Příjmení")
-  public String getFullName() {
-    return fullName;
-  }
-
-  public Person isEmployee(Boolean isEmployee) {
-    this.isEmployee = isEmployee;
+  public Person fullname(String fullname) {
+    this.fullname = fullname;
     return this;
   }
 
    /**
-   * Zaměstnanec/Pracovník [persistentní položka]
-   * @return isEmployee
+   * jméno + příjmení
+   * @return fullname
   **/
-  @ApiModelProperty(example = "null", value = "Zaměstnanec/Pracovník [persistentní položka]")
-  public Boolean getIsEmployee() {
-    return isEmployee;
+  @ApiModelProperty(example = "null", value = "jméno + příjmení")
+  public String getFullname() {
+    return fullname;
   }
 
-  public void setIsEmployee(Boolean isEmployee) {
-    this.isEmployee = isEmployee;
+  public void setFullname(String fullname) {
+    this.fullname = fullname;
   }
 
-   /**
-   * Vlastněná [persistentní položka]
-   * @return isOwned
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastněná [persistentní položka]")
-  public Boolean getIsOwned() {
-    return isOwned;
-  }
-
-  public Person personalNumber(String personalNumber) {
-    this.personalNumber = personalNumber;
+  public Person isemployee(Boolean isemployee) {
+    this.isemployee = isemployee;
     return this;
   }
 
    /**
-   * Osob.číslo [persistentní položka]
-   * @return personalNumber
+   * zaměstnanec/pracovník [persistentní položka]
+   * @return isemployee
   **/
-  @ApiModelProperty(example = "null", value = "Osob.číslo [persistentní položka]")
-  public String getPersonalNumber() {
-    return personalNumber;
+  @ApiModelProperty(example = "null", value = "zaměstnanec/pracovník [persistentní položka]")
+  public Boolean getIsemployee() {
+    return isemployee;
   }
 
-  public void setPersonalNumber(String personalNumber) {
-    this.personalNumber = personalNumber;
+  public void setIsemployee(Boolean isemployee) {
+    this.isemployee = isemployee;
   }
 
-  public Person pictureID(Person pictureID) {
-    this.pictureID = pictureID;
+  public Person isowned(Boolean isowned) {
+    this.isowned = isowned;
     return this;
   }
 
    /**
-   * Get pictureID
-   * @return pictureID
+   * vlastněná [persistentní položka]
+   * @return isowned
+  **/
+  @ApiModelProperty(example = "null", value = "vlastněná [persistentní položka]")
+  public Boolean getIsowned() {
+    return isowned;
+  }
+
+  public void setIsowned(Boolean isowned) {
+    this.isowned = isowned;
+  }
+
+  public Person personalnumber(String personalnumber) {
+    this.personalnumber = personalnumber;
+    return this;
+  }
+
+   /**
+   * osob.číslo [persistentní položka]
+   * @return personalnumber
+  **/
+  @ApiModelProperty(example = "null", value = "osob.číslo [persistentní položka]")
+  public String getPersonalnumber() {
+    return personalnumber;
+  }
+
+  public void setPersonalnumber(String personalnumber) {
+    this.personalnumber = personalnumber;
+  }
+
+  public Person pictureId(Person pictureId) {
+    this.pictureId = pictureId;
+    return this;
+  }
+
+   /**
+   * Get pictureId
+   * @return pictureId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Person getPictureID() {
-    return pictureID;
+  public Person getPictureId() {
+    return pictureId;
   }
 
-  public void setPictureID(Person pictureID) {
-    this.pictureID = pictureID;
+  public void setPictureId(Person pictureId) {
+    this.pictureId = pictureId;
   }
 
   public Person suffix(String suffix) {
@@ -423,10 +477,10 @@ public class Person   {
   }
 
    /**
-   * Titul za jménem [persistentní položka]
+   * titul za jménem [persistentní položka]
    * @return suffix
   **/
-  @ApiModelProperty(example = "null", value = "Titul za jménem [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "titul za jménem [persistentní položka]")
   public String getSuffix() {
     return suffix;
   }
@@ -435,157 +489,166 @@ public class Person   {
     this.suffix = suffix;
   }
 
-   /**
-   * Příjmení + Jméno
-   * @return lastAndFirstName
-  **/
-  @ApiModelProperty(example = "null", value = "Příjmení + Jméno")
-  public String getLastAndFirstName() {
-    return lastAndFirstName;
-  }
-
-  public Person dateOfBirthDATE(DateTime dateOfBirthDATE) {
-    this.dateOfBirthDATE = dateOfBirthDATE;
+  public Person lastandfirstname(String lastandfirstname) {
+    this.lastandfirstname = lastandfirstname;
     return this;
   }
 
    /**
-   * Datum narození [persistentní položka]
-   * @return dateOfBirthDATE
+   * příjmení + jméno
+   * @return lastandfirstname
   **/
-  @ApiModelProperty(example = "null", value = "Datum narození [persistentní položka]")
-  public DateTime getDateOfBirthDATE() {
-    return dateOfBirthDATE;
+  @ApiModelProperty(example = "null", value = "příjmení + jméno")
+  public String getLastandfirstname() {
+    return lastandfirstname;
   }
 
-  public void setDateOfBirthDATE(DateTime dateOfBirthDATE) {
-    this.dateOfBirthDATE = dateOfBirthDATE;
+  public void setLastandfirstname(String lastandfirstname) {
+    this.lastandfirstname = lastandfirstname;
   }
 
-  public Person insolvencyCheckResult(Integer insolvencyCheckResult) {
-    this.insolvencyCheckResult = insolvencyCheckResult;
+  public Person dateofbirthdate(DateTime dateofbirthdate) {
+    this.dateofbirthdate = dateofbirthdate;
     return this;
   }
 
    /**
-   * Stav insolvence
-   * @return insolvencyCheckResult
+   * datum narození [persistentní položka]
+   * @return dateofbirthdate
   **/
-  @ApiModelProperty(example = "null", value = "Stav insolvence")
-  public Integer getInsolvencyCheckResult() {
-    return insolvencyCheckResult;
+  @ApiModelProperty(example = "null", value = "datum narození [persistentní položka]")
+  public DateTime getDateofbirthdate() {
+    return dateofbirthdate;
   }
 
-  public void setInsolvencyCheckResult(Integer insolvencyCheckResult) {
-    this.insolvencyCheckResult = insolvencyCheckResult;
+  public void setDateofbirthdate(DateTime dateofbirthdate) {
+    this.dateofbirthdate = dateofbirthdate;
   }
 
-  public Person insolvencyCheckResultAsText(String insolvencyCheckResultAsText) {
-    this.insolvencyCheckResultAsText = insolvencyCheckResultAsText;
+  public Person insolvencycheckresult(Integer insolvencycheckresult) {
+    this.insolvencycheckresult = insolvencycheckresult;
     return this;
   }
 
    /**
-   * Stav insolvence textově
-   * @return insolvencyCheckResultAsText
+   * stav insolvence
+   * @return insolvencycheckresult
   **/
-  @ApiModelProperty(example = "null", value = "Stav insolvence textově")
-  public String getInsolvencyCheckResultAsText() {
-    return insolvencyCheckResultAsText;
+  @ApiModelProperty(example = "null", value = "stav insolvence")
+  public Integer getInsolvencycheckresult() {
+    return insolvencycheckresult;
   }
 
-  public void setInsolvencyCheckResultAsText(String insolvencyCheckResultAsText) {
-    this.insolvencyCheckResultAsText = insolvencyCheckResultAsText;
+  public void setInsolvencycheckresult(Integer insolvencycheckresult) {
+    this.insolvencycheckresult = insolvencycheckresult;
   }
 
-  public Person insolvencyLastCheckDateTimeDATE(DateTime insolvencyLastCheckDateTimeDATE) {
-    this.insolvencyLastCheckDateTimeDATE = insolvencyLastCheckDateTimeDATE;
+  public Person insolvencycheckresultastext(String insolvencycheckresultastext) {
+    this.insolvencycheckresultastext = insolvencycheckresultastext;
     return this;
   }
 
    /**
-   * Datum a čas posledního ověření insolvence
-   * @return insolvencyLastCheckDateTimeDATE
+   * stav insolvence textově
+   * @return insolvencycheckresultastext
   **/
-  @ApiModelProperty(example = "null", value = "Datum a čas posledního ověření insolvence")
-  public DateTime getInsolvencyLastCheckDateTimeDATE() {
-    return insolvencyLastCheckDateTimeDATE;
+  @ApiModelProperty(example = "null", value = "stav insolvence textově")
+  public String getInsolvencycheckresultastext() {
+    return insolvencycheckresultastext;
   }
 
-  public void setInsolvencyLastCheckDateTimeDATE(DateTime insolvencyLastCheckDateTimeDATE) {
-    this.insolvencyLastCheckDateTimeDATE = insolvencyLastCheckDateTimeDATE;
+  public void setInsolvencycheckresultastext(String insolvencycheckresultastext) {
+    this.insolvencycheckresultastext = insolvencycheckresultastext;
   }
 
-  public Person salutationTitle(String salutationTitle) {
-    this.salutationTitle = salutationTitle;
+  public Person insolvencylastcheckdatetimedate(DateTime insolvencylastcheckdatetimedate) {
+    this.insolvencylastcheckdatetimedate = insolvencylastcheckdatetimedate;
     return this;
   }
 
    /**
-   * Oslovení [persistentní položka]
-   * @return salutationTitle
+   * datum a čas posledního ověření insolvence
+   * @return insolvencylastcheckdatetimedate
   **/
-  @ApiModelProperty(example = "null", value = "Oslovení [persistentní položka]")
-  public String getSalutationTitle() {
-    return salutationTitle;
+  @ApiModelProperty(example = "null", value = "datum a čas posledního ověření insolvence")
+  public DateTime getInsolvencylastcheckdatetimedate() {
+    return insolvencylastcheckdatetimedate;
   }
 
-  public void setSalutationTitle(String salutationTitle) {
-    this.salutationTitle = salutationTitle;
+  public void setInsolvencylastcheckdatetimedate(DateTime insolvencylastcheckdatetimedate) {
+    this.insolvencylastcheckdatetimedate = insolvencylastcheckdatetimedate;
   }
 
-  public Person salutationName(String salutationName) {
-    this.salutationName = salutationName;
+  public Person salutationtitle(String salutationtitle) {
+    this.salutationtitle = salutationtitle;
     return this;
   }
 
    /**
-   * Jméno v 5. pádu [persistentní položka]
-   * @return salutationName
+   * oslovení [persistentní položka]
+   * @return salutationtitle
   **/
-  @ApiModelProperty(example = "null", value = "Jméno v 5. pádu [persistentní položka]")
-  public String getSalutationName() {
-    return salutationName;
+  @ApiModelProperty(example = "null", value = "oslovení [persistentní položka]")
+  public String getSalutationtitle() {
+    return salutationtitle;
   }
 
-  public void setSalutationName(String salutationName) {
-    this.salutationName = salutationName;
+  public void setSalutationtitle(String salutationtitle) {
+    this.salutationtitle = salutationtitle;
   }
 
-  public Person commercialsAgreement(Integer commercialsAgreement) {
-    this.commercialsAgreement = commercialsAgreement;
+  public Person salutationname(String salutationname) {
+    this.salutationname = salutationname;
     return this;
   }
 
    /**
-   * Souhlas s reklamou [persistentní položka]
-   * @return commercialsAgreement
+   * jméno v 5. pádu [persistentní položka]
+   * @return salutationname
   **/
-  @ApiModelProperty(example = "null", value = "Souhlas s reklamou [persistentní položka]")
-  public Integer getCommercialsAgreement() {
-    return commercialsAgreement;
+  @ApiModelProperty(example = "null", value = "jméno v 5. pádu [persistentní položka]")
+  public String getSalutationname() {
+    return salutationname;
   }
 
-  public void setCommercialsAgreement(Integer commercialsAgreement) {
-    this.commercialsAgreement = commercialsAgreement;
+  public void setSalutationname(String salutationname) {
+    this.salutationname = salutationname;
   }
 
-  public Person commercialsAgreementDesc(String commercialsAgreementDesc) {
-    this.commercialsAgreementDesc = commercialsAgreementDesc;
+  public Person commercialsagreement(Integer commercialsagreement) {
+    this.commercialsagreement = commercialsagreement;
     return this;
   }
 
    /**
-   * Souhlas s reklamou - popis
-   * @return commercialsAgreementDesc
+   * souhlas s reklamou [persistentní položka]
+   * @return commercialsagreement
   **/
-  @ApiModelProperty(example = "null", value = "Souhlas s reklamou - popis")
-  public String getCommercialsAgreementDesc() {
-    return commercialsAgreementDesc;
+  @ApiModelProperty(example = "null", value = "souhlas s reklamou [persistentní položka]")
+  public Integer getCommercialsagreement() {
+    return commercialsagreement;
   }
 
-  public void setCommercialsAgreementDesc(String commercialsAgreementDesc) {
-    this.commercialsAgreementDesc = commercialsAgreementDesc;
+  public void setCommercialsagreement(Integer commercialsagreement) {
+    this.commercialsagreement = commercialsagreement;
+  }
+
+  public Person commercialsagreementdesc(String commercialsagreementdesc) {
+    this.commercialsagreementdesc = commercialsagreementdesc;
+    return this;
+  }
+
+   /**
+   * souhlas s reklamou - popis
+   * @return commercialsagreementdesc
+  **/
+  @ApiModelProperty(example = "null", value = "souhlas s reklamou - popis")
+  public String getCommercialsagreementdesc() {
+    return commercialsagreementdesc;
+  }
+
+  public void setCommercialsagreementdesc(String commercialsagreementdesc) {
+    this.commercialsagreementdesc = commercialsagreementdesc;
   }
 
   public Person pictures(List<Personpicture> pictures) {
@@ -599,10 +662,10 @@ public class Person   {
   }
 
    /**
-   * Obrázky; kolekce BO Obrázek k osobě [nepersistentní položka]
+   * obrázky; kolekce bo obrázek k osobě [nepersistentní položka]
    * @return pictures
   **/
-  @ApiModelProperty(example = "null", value = "Obrázky; kolekce BO Obrázek k osobě [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "obrázky; kolekce bo obrázek k osobě [nepersistentní položka]")
   public List<Personpicture> getPictures() {
     return pictures;
   }
@@ -621,41 +684,41 @@ public class Person   {
       return false;
     }
     Person person = (Person) o;
-    return Objects.equals(this.displayName, person.displayName) &&
-        Objects.equals(this.ID, person.ID) &&
-        Objects.equals(this.classID, person.classID) &&
-        Objects.equals(this.objVersion, person.objVersion) &&
+    return Objects.equals(this.displayname, person.displayname) &&
+        Objects.equals(this.id, person.id) &&
+        Objects.equals(this.classid, person.classid) &&
+        Objects.equals(this.objversion, person.objversion) &&
         Objects.equals(this.hidden, person.hidden) &&
-        Objects.equals(this.lastName, person.lastName) &&
-        Objects.equals(this.firstName, person.firstName) &&
+        Objects.equals(this.lastname, person.lastname) &&
+        Objects.equals(this.firstname, person.firstname) &&
         Objects.equals(this.title, person.title) &&
         Objects.equals(this.grade, person.grade) &&
-        Objects.equals(this.birthNumber, person.birthNumber) &&
-        Objects.equals(this.iDCardNumber, person.iDCardNumber) &&
+        Objects.equals(this.birthnumber, person.birthnumber) &&
+        Objects.equals(this.idcardnumber, person.idcardnumber) &&
         Objects.equals(this.note, person.note) &&
         Objects.equals(this.comment, person.comment) &&
-        Objects.equals(this.addressID, person.addressID) &&
-        Objects.equals(this.fullName, person.fullName) &&
-        Objects.equals(this.isEmployee, person.isEmployee) &&
-        Objects.equals(this.isOwned, person.isOwned) &&
-        Objects.equals(this.personalNumber, person.personalNumber) &&
-        Objects.equals(this.pictureID, person.pictureID) &&
+        Objects.equals(this.addressId, person.addressId) &&
+        Objects.equals(this.fullname, person.fullname) &&
+        Objects.equals(this.isemployee, person.isemployee) &&
+        Objects.equals(this.isowned, person.isowned) &&
+        Objects.equals(this.personalnumber, person.personalnumber) &&
+        Objects.equals(this.pictureId, person.pictureId) &&
         Objects.equals(this.suffix, person.suffix) &&
-        Objects.equals(this.lastAndFirstName, person.lastAndFirstName) &&
-        Objects.equals(this.dateOfBirthDATE, person.dateOfBirthDATE) &&
-        Objects.equals(this.insolvencyCheckResult, person.insolvencyCheckResult) &&
-        Objects.equals(this.insolvencyCheckResultAsText, person.insolvencyCheckResultAsText) &&
-        Objects.equals(this.insolvencyLastCheckDateTimeDATE, person.insolvencyLastCheckDateTimeDATE) &&
-        Objects.equals(this.salutationTitle, person.salutationTitle) &&
-        Objects.equals(this.salutationName, person.salutationName) &&
-        Objects.equals(this.commercialsAgreement, person.commercialsAgreement) &&
-        Objects.equals(this.commercialsAgreementDesc, person.commercialsAgreementDesc) &&
+        Objects.equals(this.lastandfirstname, person.lastandfirstname) &&
+        Objects.equals(this.dateofbirthdate, person.dateofbirthdate) &&
+        Objects.equals(this.insolvencycheckresult, person.insolvencycheckresult) &&
+        Objects.equals(this.insolvencycheckresultastext, person.insolvencycheckresultastext) &&
+        Objects.equals(this.insolvencylastcheckdatetimedate, person.insolvencylastcheckdatetimedate) &&
+        Objects.equals(this.salutationtitle, person.salutationtitle) &&
+        Objects.equals(this.salutationname, person.salutationname) &&
+        Objects.equals(this.commercialsagreement, person.commercialsagreement) &&
+        Objects.equals(this.commercialsagreementdesc, person.commercialsagreementdesc) &&
         Objects.equals(this.pictures, person.pictures);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, lastName, firstName, title, grade, birthNumber, iDCardNumber, note, comment, addressID, fullName, isEmployee, isOwned, personalNumber, pictureID, suffix, lastAndFirstName, dateOfBirthDATE, insolvencyCheckResult, insolvencyCheckResultAsText, insolvencyLastCheckDateTimeDATE, salutationTitle, salutationName, commercialsAgreement, commercialsAgreementDesc, pictures);
+    return Objects.hash(displayname, id, classid, objversion, hidden, lastname, firstname, title, grade, birthnumber, idcardnumber, note, comment, addressId, fullname, isemployee, isowned, personalnumber, pictureId, suffix, lastandfirstname, dateofbirthdate, insolvencycheckresult, insolvencycheckresultastext, insolvencylastcheckdatetimedate, salutationtitle, salutationname, commercialsagreement, commercialsagreementdesc, pictures);
   }
 
   @Override
@@ -663,35 +726,35 @@ public class Person   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Person {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    lastName: ").append(toIndentedString(lastName)).append("\n");
-    sb.append("    firstName: ").append(toIndentedString(firstName)).append("\n");
+    sb.append("    lastname: ").append(toIndentedString(lastname)).append("\n");
+    sb.append("    firstname: ").append(toIndentedString(firstname)).append("\n");
     sb.append("    title: ").append(toIndentedString(title)).append("\n");
     sb.append("    grade: ").append(toIndentedString(grade)).append("\n");
-    sb.append("    birthNumber: ").append(toIndentedString(birthNumber)).append("\n");
-    sb.append("    iDCardNumber: ").append(toIndentedString(iDCardNumber)).append("\n");
+    sb.append("    birthnumber: ").append(toIndentedString(birthnumber)).append("\n");
+    sb.append("    idcardnumber: ").append(toIndentedString(idcardnumber)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
     sb.append("    comment: ").append(toIndentedString(comment)).append("\n");
-    sb.append("    addressID: ").append(toIndentedString(addressID)).append("\n");
-    sb.append("    fullName: ").append(toIndentedString(fullName)).append("\n");
-    sb.append("    isEmployee: ").append(toIndentedString(isEmployee)).append("\n");
-    sb.append("    isOwned: ").append(toIndentedString(isOwned)).append("\n");
-    sb.append("    personalNumber: ").append(toIndentedString(personalNumber)).append("\n");
-    sb.append("    pictureID: ").append(toIndentedString(pictureID)).append("\n");
+    sb.append("    addressId: ").append(toIndentedString(addressId)).append("\n");
+    sb.append("    fullname: ").append(toIndentedString(fullname)).append("\n");
+    sb.append("    isemployee: ").append(toIndentedString(isemployee)).append("\n");
+    sb.append("    isowned: ").append(toIndentedString(isowned)).append("\n");
+    sb.append("    personalnumber: ").append(toIndentedString(personalnumber)).append("\n");
+    sb.append("    pictureId: ").append(toIndentedString(pictureId)).append("\n");
     sb.append("    suffix: ").append(toIndentedString(suffix)).append("\n");
-    sb.append("    lastAndFirstName: ").append(toIndentedString(lastAndFirstName)).append("\n");
-    sb.append("    dateOfBirthDATE: ").append(toIndentedString(dateOfBirthDATE)).append("\n");
-    sb.append("    insolvencyCheckResult: ").append(toIndentedString(insolvencyCheckResult)).append("\n");
-    sb.append("    insolvencyCheckResultAsText: ").append(toIndentedString(insolvencyCheckResultAsText)).append("\n");
-    sb.append("    insolvencyLastCheckDateTimeDATE: ").append(toIndentedString(insolvencyLastCheckDateTimeDATE)).append("\n");
-    sb.append("    salutationTitle: ").append(toIndentedString(salutationTitle)).append("\n");
-    sb.append("    salutationName: ").append(toIndentedString(salutationName)).append("\n");
-    sb.append("    commercialsAgreement: ").append(toIndentedString(commercialsAgreement)).append("\n");
-    sb.append("    commercialsAgreementDesc: ").append(toIndentedString(commercialsAgreementDesc)).append("\n");
+    sb.append("    lastandfirstname: ").append(toIndentedString(lastandfirstname)).append("\n");
+    sb.append("    dateofbirthdate: ").append(toIndentedString(dateofbirthdate)).append("\n");
+    sb.append("    insolvencycheckresult: ").append(toIndentedString(insolvencycheckresult)).append("\n");
+    sb.append("    insolvencycheckresultastext: ").append(toIndentedString(insolvencycheckresultastext)).append("\n");
+    sb.append("    insolvencylastcheckdatetimedate: ").append(toIndentedString(insolvencylastcheckdatetimedate)).append("\n");
+    sb.append("    salutationtitle: ").append(toIndentedString(salutationtitle)).append("\n");
+    sb.append("    salutationname: ").append(toIndentedString(salutationname)).append("\n");
+    sb.append("    commercialsagreement: ").append(toIndentedString(commercialsagreement)).append("\n");
+    sb.append("    commercialsagreementdesc: ").append(toIndentedString(commercialsagreementdesc)).append("\n");
     sb.append("    pictures: ").append(toIndentedString(pictures)).append("\n");
     sb.append("}");
     return sb.toString();

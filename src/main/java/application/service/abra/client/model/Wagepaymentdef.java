@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,201 +34,237 @@ import java.util.Objects;
 /**
  * Wagepaymentdef
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wagepaymentdef   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-  @SerializedName("DescriptionExpr")
-  private String descriptionExpr = null;
+  @SerializedName("descriptionexpr")
+  private String descriptionexpr = null;
 
-  @SerializedName("TargetBankAccountExpr")
-  private String targetBankAccountExpr = null;
+  @SerializedName("targetbankaccountexpr")
+  private String targetbankaccountexpr = null;
 
-  @SerializedName("TargeBankNameExpr")
-  private String targeBankNameExpr = null;
+  @SerializedName("targebanknameexpr")
+  private String targebanknameexpr = null;
 
-  @SerializedName("VarSymbolExpr")
-  private String varSymbolExpr = null;
+  @SerializedName("varsymbolexpr")
+  private String varsymbolexpr = null;
 
-  @SerializedName("ConstSymbolExpr")
-  private String constSymbolExpr = null;
+  @SerializedName("constsymbolexpr")
+  private String constsymbolexpr = null;
 
-  @SerializedName("SpecSymbolExpr")
-  private String specSymbolExpr = null;
+  @SerializedName("specsymbolexpr")
+  private String specsymbolexpr = null;
 
-  @SerializedName("CurrencyExpr")
-  private String currencyExpr = null;
+  @SerializedName("currencyexpr")
+  private String currencyexpr = null;
 
-  @SerializedName("CountryExpr")
-  private String countryExpr = null;
+  @SerializedName("countryexpr")
+  private String countryexpr = null;
 
-  @SerializedName("ForeingIssueExpr")
-  private String foreingIssueExpr = null;
+  @SerializedName("foreingissueexpr")
+  private String foreingissueexpr = null;
 
-  @SerializedName("UrgentExpr")
-  private String urgentExpr = null;
+  @SerializedName("urgentexpr")
+  private String urgentexpr = null;
 
-  @SerializedName("SwiftCodeExpr")
-  private String swiftCodeExpr = null;
+  @SerializedName("swiftcodeexpr")
+  private String swiftcodeexpr = null;
 
-  @SerializedName("DueDateExpr")
-  private String dueDateExpr = null;
+  @SerializedName("duedateexpr")
+  private String duedateexpr = null;
 
-  @SerializedName("TargetBankCountryExpr")
-  private String targetBankCountryExpr = null;
+  @SerializedName("targetbankcountryexpr")
+  private String targetbankcountryexpr = null;
 
-  @SerializedName("SupressExpression")
-  private Integer supressExpression = null;
+  @SerializedName("supressexpression")
+  private Integer supressexpression = null;
 
-  @SerializedName("SupressExpressionText")
-  private String supressExpressionText = null;
+  @SerializedName("supressexpressiontext")
+  private String supressexpressiontext = null;
 
-  @SerializedName("DescriptionUserExpr")
-  private String descriptionUserExpr = null;
+  @SerializedName("descriptionuserexpr")
+  private String descriptionuserexpr = null;
 
-  @SerializedName("BankAccount_ID")
-  private String bankAccountID = null;
+  @SerializedName("bankaccount_id")
+  private String bankaccountId = null;
 
-  @SerializedName("TargetBankAccountUserExpr")
-  private String targetBankAccountUserExpr = null;
+  @SerializedName("targetbankaccountuserexpr")
+  private String targetbankaccountuserexpr = null;
 
-  @SerializedName("TargeBankNameUserExpr")
-  private String targeBankNameUserExpr = null;
+  @SerializedName("targebanknameuserexpr")
+  private String targebanknameuserexpr = null;
 
-  @SerializedName("VarSymbolUserExpr")
-  private String varSymbolUserExpr = null;
+  @SerializedName("varsymboluserexpr")
+  private String varsymboluserexpr = null;
 
-  @SerializedName("ConstSymbolUserExpr")
-  private String constSymbolUserExpr = null;
+  @SerializedName("constsymboluserexpr")
+  private String constsymboluserexpr = null;
 
-  @SerializedName("SpecSymbolUserExpr")
-  private String specSymbolUserExpr = null;
+  @SerializedName("specsymboluserexpr")
+  private String specsymboluserexpr = null;
 
-  @SerializedName("CurrencyUserExpr")
-  private String currencyUserExpr = null;
+  @SerializedName("currencyuserexpr")
+  private String currencyuserexpr = null;
 
-  @SerializedName("CountryUserExpr")
-  private String countryUserExpr = null;
+  @SerializedName("countryuserexpr")
+  private String countryuserexpr = null;
 
-  @SerializedName("ForeingIssueUserExpr")
-  private String foreingIssueUserExpr = null;
+  @SerializedName("foreingissueuserexpr")
+  private String foreingissueuserexpr = null;
 
-  @SerializedName("UrgentUserExpr")
-  private String urgentUserExpr = null;
+  @SerializedName("urgentuserexpr")
+  private String urgentuserexpr = null;
 
-  @SerializedName("SwiftCodeUserExpr")
-  private String swiftCodeUserExpr = null;
+  @SerializedName("swiftcodeuserexpr")
+  private String swiftcodeuserexpr = null;
 
-  @SerializedName("DueDateUserExpr")
-  private String dueDateUserExpr = null;
+  @SerializedName("duedateuserexpr")
+  private String duedateuserexpr = null;
 
-  @SerializedName("FirmIDExpr")
-  private String firmIDExpr = null;
+  @SerializedName("firmidexpr")
+  private String firmidexpr = null;
 
-  @SerializedName("BusOrderIDExpr")
-  private String busOrderIDExpr = null;
+  @SerializedName("busorderidexpr")
+  private String busorderidexpr = null;
 
-  @SerializedName("BusTransactionIDExpr")
-  private String busTransactionIDExpr = null;
+  @SerializedName("bustransactionidexpr")
+  private String bustransactionidexpr = null;
 
-  @SerializedName("DivisionIDExpr")
-  private String divisionIDExpr = null;
+  @SerializedName("divisionidexpr")
+  private String divisionidexpr = null;
 
-  @SerializedName("FirmIDUserExpr")
-  private String firmIDUserExpr = null;
+  @SerializedName("firmiduserexpr")
+  private String firmiduserexpr = null;
 
-  @SerializedName("BusOrderIDUserExpr")
-  private String busOrderIDUserExpr = null;
+  @SerializedName("busorderiduserexpr")
+  private String busorderiduserexpr = null;
 
-  @SerializedName("BusTransactionIDUserExpr")
-  private String busTransactionIDUserExpr = null;
+  @SerializedName("bustransactioniduserexpr")
+  private String bustransactioniduserexpr = null;
 
-  @SerializedName("DivisionIDUserExpr")
-  private String divisionIDUserExpr = null;
+  @SerializedName("divisioniduserexpr")
+  private String divisioniduserexpr = null;
 
-  @SerializedName("BaseType")
-  private Integer baseType = null;
+  @SerializedName("basetype")
+  private Integer basetype = null;
 
-  @SerializedName("BaseType_Text")
-  private String baseTypeText = null;
+  @SerializedName("basetype_text")
+  private String basetypeText = null;
 
-  @SerializedName("FlagUserExpr")
-  private String flagUserExpr = null;
+  @SerializedName("flaguserexpr")
+  private String flaguserexpr = null;
 
-  @SerializedName("FlagExpr")
-  private String flagExpr = null;
+  @SerializedName("flagexpr")
+  private String flagexpr = null;
 
-  @SerializedName("BankAccountUserExpr")
-  private String bankAccountUserExpr = null;
+  @SerializedName("bankaccountuserexpr")
+  private String bankaccountuserexpr = null;
 
-  @SerializedName("BankAccountByExpr")
-  private Boolean bankAccountByExpr = null;
+  @SerializedName("bankaccountbyexpr")
+  private Boolean bankaccountbyexpr = null;
 
-  @SerializedName("BusProjectIDExpr")
-  private String busProjectIDExpr = null;
+  @SerializedName("busprojectidexpr")
+  private String busprojectidexpr = null;
 
-  @SerializedName("BusProjectIDUserExpr")
-  private String busProjectIDUserExpr = null;
+  @SerializedName("busprojectiduserexpr")
+  private String busprojectiduserexpr = null;
 
-  @SerializedName("TargetBankCountryUserExpr")
-  private String targetBankCountryUserExpr = null;
+  @SerializedName("targetbankcountryuserexpr")
+  private String targetbankcountryuserexpr = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Wagepaymentdef displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wagepaymentdef id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wagepaymentdef classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wagepaymentdef objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Wagepaymentdef hidden(Boolean hidden) {
@@ -237,10 +273,10 @@ public class Wagepaymentdef   {
   }
 
    /**
-   * Skrytý
+   * skrytý
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý")
+  @ApiModelProperty(example = "null", value = "skrytý")
   public Boolean getHidden() {
     return hidden;
   }
@@ -255,10 +291,10 @@ public class Wagepaymentdef   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -273,10 +309,10 @@ public class Wagepaymentdef   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -291,10 +327,10 @@ public class Wagepaymentdef   {
   }
 
    /**
-   * Syst. [persistentní položka]
+   * syst. [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Syst. [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "syst. [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -303,814 +339,814 @@ public class Wagepaymentdef   {
     this.system = system;
   }
 
-  public Wagepaymentdef descriptionExpr(String descriptionExpr) {
-    this.descriptionExpr = descriptionExpr;
+  public Wagepaymentdef descriptionexpr(String descriptionexpr) {
+    this.descriptionexpr = descriptionexpr;
     return this;
   }
 
    /**
-   * Text příkazu [persistentní položka]
-   * @return descriptionExpr
+   * text příkazu [persistentní položka]
+   * @return descriptionexpr
   **/
-  @ApiModelProperty(example = "null", value = "Text příkazu [persistentní položka]")
-  public String getDescriptionExpr() {
-    return descriptionExpr;
+  @ApiModelProperty(example = "null", value = "text příkazu [persistentní položka]")
+  public String getDescriptionexpr() {
+    return descriptionexpr;
   }
 
-  public void setDescriptionExpr(String descriptionExpr) {
-    this.descriptionExpr = descriptionExpr;
+  public void setDescriptionexpr(String descriptionexpr) {
+    this.descriptionexpr = descriptionexpr;
   }
 
-  public Wagepaymentdef targetBankAccountExpr(String targetBankAccountExpr) {
-    this.targetBankAccountExpr = targetBankAccountExpr;
+  public Wagepaymentdef targetbankaccountexpr(String targetbankaccountexpr) {
+    this.targetbankaccountexpr = targetbankaccountexpr;
     return this;
   }
 
    /**
-   * Cílový účet [persistentní položka]
-   * @return targetBankAccountExpr
+   * cílový účet [persistentní položka]
+   * @return targetbankaccountexpr
   **/
-  @ApiModelProperty(example = "null", value = "Cílový účet [persistentní položka]")
-  public String getTargetBankAccountExpr() {
-    return targetBankAccountExpr;
+  @ApiModelProperty(example = "null", value = "cílový účet [persistentní položka]")
+  public String getTargetbankaccountexpr() {
+    return targetbankaccountexpr;
   }
 
-  public void setTargetBankAccountExpr(String targetBankAccountExpr) {
-    this.targetBankAccountExpr = targetBankAccountExpr;
+  public void setTargetbankaccountexpr(String targetbankaccountexpr) {
+    this.targetbankaccountexpr = targetbankaccountexpr;
   }
 
-  public Wagepaymentdef targeBankNameExpr(String targeBankNameExpr) {
-    this.targeBankNameExpr = targeBankNameExpr;
+  public Wagepaymentdef targebanknameexpr(String targebanknameexpr) {
+    this.targebanknameexpr = targebanknameexpr;
     return this;
   }
 
    /**
-   * Cílová banka [persistentní položka]
-   * @return targeBankNameExpr
+   * cílová banka [persistentní položka]
+   * @return targebanknameexpr
   **/
-  @ApiModelProperty(example = "null", value = "Cílová banka [persistentní položka]")
-  public String getTargeBankNameExpr() {
-    return targeBankNameExpr;
+  @ApiModelProperty(example = "null", value = "cílová banka [persistentní položka]")
+  public String getTargebanknameexpr() {
+    return targebanknameexpr;
   }
 
-  public void setTargeBankNameExpr(String targeBankNameExpr) {
-    this.targeBankNameExpr = targeBankNameExpr;
+  public void setTargebanknameexpr(String targebanknameexpr) {
+    this.targebanknameexpr = targebanknameexpr;
   }
 
-  public Wagepaymentdef varSymbolExpr(String varSymbolExpr) {
-    this.varSymbolExpr = varSymbolExpr;
+  public Wagepaymentdef varsymbolexpr(String varsymbolexpr) {
+    this.varsymbolexpr = varsymbolexpr;
     return this;
   }
 
    /**
-   * Variabilní symb. [persistentní položka]
-   * @return varSymbolExpr
+   * variabilní symb. [persistentní položka]
+   * @return varsymbolexpr
   **/
-  @ApiModelProperty(example = "null", value = "Variabilní symb. [persistentní položka]")
-  public String getVarSymbolExpr() {
-    return varSymbolExpr;
+  @ApiModelProperty(example = "null", value = "variabilní symb. [persistentní položka]")
+  public String getVarsymbolexpr() {
+    return varsymbolexpr;
   }
 
-  public void setVarSymbolExpr(String varSymbolExpr) {
-    this.varSymbolExpr = varSymbolExpr;
+  public void setVarsymbolexpr(String varsymbolexpr) {
+    this.varsymbolexpr = varsymbolexpr;
   }
 
-  public Wagepaymentdef constSymbolExpr(String constSymbolExpr) {
-    this.constSymbolExpr = constSymbolExpr;
+  public Wagepaymentdef constsymbolexpr(String constsymbolexpr) {
+    this.constsymbolexpr = constsymbolexpr;
     return this;
   }
 
    /**
-   * Konstantní symb. [persistentní položka]
-   * @return constSymbolExpr
+   * konstantní symb. [persistentní položka]
+   * @return constsymbolexpr
   **/
-  @ApiModelProperty(example = "null", value = "Konstantní symb. [persistentní položka]")
-  public String getConstSymbolExpr() {
-    return constSymbolExpr;
+  @ApiModelProperty(example = "null", value = "konstantní symb. [persistentní položka]")
+  public String getConstsymbolexpr() {
+    return constsymbolexpr;
   }
 
-  public void setConstSymbolExpr(String constSymbolExpr) {
-    this.constSymbolExpr = constSymbolExpr;
+  public void setConstsymbolexpr(String constsymbolexpr) {
+    this.constsymbolexpr = constsymbolexpr;
   }
 
-  public Wagepaymentdef specSymbolExpr(String specSymbolExpr) {
-    this.specSymbolExpr = specSymbolExpr;
+  public Wagepaymentdef specsymbolexpr(String specsymbolexpr) {
+    this.specsymbolexpr = specsymbolexpr;
     return this;
   }
 
    /**
-   * Specifický symb. [persistentní položka]
-   * @return specSymbolExpr
+   * specifický symb. [persistentní položka]
+   * @return specsymbolexpr
   **/
-  @ApiModelProperty(example = "null", value = "Specifický symb. [persistentní položka]")
-  public String getSpecSymbolExpr() {
-    return specSymbolExpr;
+  @ApiModelProperty(example = "null", value = "specifický symb. [persistentní položka]")
+  public String getSpecsymbolexpr() {
+    return specsymbolexpr;
   }
 
-  public void setSpecSymbolExpr(String specSymbolExpr) {
-    this.specSymbolExpr = specSymbolExpr;
+  public void setSpecsymbolexpr(String specsymbolexpr) {
+    this.specsymbolexpr = specsymbolexpr;
   }
 
-  public Wagepaymentdef currencyExpr(String currencyExpr) {
-    this.currencyExpr = currencyExpr;
+  public Wagepaymentdef currencyexpr(String currencyexpr) {
+    this.currencyexpr = currencyexpr;
     return this;
   }
 
    /**
-   * Měna [persistentní položka]
-   * @return currencyExpr
+   * měna [persistentní položka]
+   * @return currencyexpr
   **/
-  @ApiModelProperty(example = "null", value = "Měna [persistentní položka]")
-  public String getCurrencyExpr() {
-    return currencyExpr;
+  @ApiModelProperty(example = "null", value = "měna [persistentní položka]")
+  public String getCurrencyexpr() {
+    return currencyexpr;
   }
 
-  public void setCurrencyExpr(String currencyExpr) {
-    this.currencyExpr = currencyExpr;
+  public void setCurrencyexpr(String currencyexpr) {
+    this.currencyexpr = currencyexpr;
   }
 
-  public Wagepaymentdef countryExpr(String countryExpr) {
-    this.countryExpr = countryExpr;
+  public Wagepaymentdef countryexpr(String countryexpr) {
+    this.countryexpr = countryexpr;
     return this;
   }
 
    /**
-   * Země [persistentní položka]
-   * @return countryExpr
+   * země [persistentní položka]
+   * @return countryexpr
   **/
-  @ApiModelProperty(example = "null", value = "Země [persistentní položka]")
-  public String getCountryExpr() {
-    return countryExpr;
+  @ApiModelProperty(example = "null", value = "země [persistentní položka]")
+  public String getCountryexpr() {
+    return countryexpr;
   }
 
-  public void setCountryExpr(String countryExpr) {
-    this.countryExpr = countryExpr;
+  public void setCountryexpr(String countryexpr) {
+    this.countryexpr = countryexpr;
   }
 
-  public Wagepaymentdef foreingIssueExpr(String foreingIssueExpr) {
-    this.foreingIssueExpr = foreingIssueExpr;
+  public Wagepaymentdef foreingissueexpr(String foreingissueexpr) {
+    this.foreingissueexpr = foreingissueexpr;
     return this;
   }
 
    /**
-   * Dodatečné poplatky [persistentní položka]
-   * @return foreingIssueExpr
+   * dodatečné poplatky [persistentní položka]
+   * @return foreingissueexpr
   **/
-  @ApiModelProperty(example = "null", value = "Dodatečné poplatky [persistentní položka]")
-  public String getForeingIssueExpr() {
-    return foreingIssueExpr;
+  @ApiModelProperty(example = "null", value = "dodatečné poplatky [persistentní položka]")
+  public String getForeingissueexpr() {
+    return foreingissueexpr;
   }
 
-  public void setForeingIssueExpr(String foreingIssueExpr) {
-    this.foreingIssueExpr = foreingIssueExpr;
+  public void setForeingissueexpr(String foreingissueexpr) {
+    this.foreingissueexpr = foreingissueexpr;
   }
 
-  public Wagepaymentdef urgentExpr(String urgentExpr) {
-    this.urgentExpr = urgentExpr;
+  public Wagepaymentdef urgentexpr(String urgentexpr) {
+    this.urgentexpr = urgentexpr;
     return this;
   }
 
    /**
-   * Způsob provedení pl. [persistentní položka]
-   * @return urgentExpr
+   * způsob provedení pl. [persistentní položka]
+   * @return urgentexpr
   **/
-  @ApiModelProperty(example = "null", value = "Způsob provedení pl. [persistentní položka]")
-  public String getUrgentExpr() {
-    return urgentExpr;
+  @ApiModelProperty(example = "null", value = "způsob provedení pl. [persistentní položka]")
+  public String getUrgentexpr() {
+    return urgentexpr;
   }
 
-  public void setUrgentExpr(String urgentExpr) {
-    this.urgentExpr = urgentExpr;
+  public void setUrgentexpr(String urgentexpr) {
+    this.urgentexpr = urgentexpr;
   }
 
-  public Wagepaymentdef swiftCodeExpr(String swiftCodeExpr) {
-    this.swiftCodeExpr = swiftCodeExpr;
+  public Wagepaymentdef swiftcodeexpr(String swiftcodeexpr) {
+    this.swiftcodeexpr = swiftcodeexpr;
     return this;
   }
 
    /**
-   * SWIFT kód [persistentní položka]
-   * @return swiftCodeExpr
+   * swift kód [persistentní položka]
+   * @return swiftcodeexpr
   **/
-  @ApiModelProperty(example = "null", value = "SWIFT kód [persistentní položka]")
-  public String getSwiftCodeExpr() {
-    return swiftCodeExpr;
+  @ApiModelProperty(example = "null", value = "swift kód [persistentní položka]")
+  public String getSwiftcodeexpr() {
+    return swiftcodeexpr;
   }
 
-  public void setSwiftCodeExpr(String swiftCodeExpr) {
-    this.swiftCodeExpr = swiftCodeExpr;
+  public void setSwiftcodeexpr(String swiftcodeexpr) {
+    this.swiftcodeexpr = swiftcodeexpr;
   }
 
-  public Wagepaymentdef dueDateExpr(String dueDateExpr) {
-    this.dueDateExpr = dueDateExpr;
+  public Wagepaymentdef duedateexpr(String duedateexpr) {
+    this.duedateexpr = duedateexpr;
     return this;
   }
 
    /**
-   * Splatnost [persistentní položka]
-   * @return dueDateExpr
+   * splatnost [persistentní položka]
+   * @return duedateexpr
   **/
-  @ApiModelProperty(example = "null", value = "Splatnost [persistentní položka]")
-  public String getDueDateExpr() {
-    return dueDateExpr;
+  @ApiModelProperty(example = "null", value = "splatnost [persistentní položka]")
+  public String getDuedateexpr() {
+    return duedateexpr;
   }
 
-  public void setDueDateExpr(String dueDateExpr) {
-    this.dueDateExpr = dueDateExpr;
+  public void setDuedateexpr(String duedateexpr) {
+    this.duedateexpr = duedateexpr;
   }
 
-  public Wagepaymentdef targetBankCountryExpr(String targetBankCountryExpr) {
-    this.targetBankCountryExpr = targetBankCountryExpr;
+  public Wagepaymentdef targetbankcountryexpr(String targetbankcountryexpr) {
+    this.targetbankcountryexpr = targetbankcountryexpr;
     return this;
   }
 
    /**
-   * Země cílového účtu [persistentní položka]
-   * @return targetBankCountryExpr
+   * země cílového účtu [persistentní položka]
+   * @return targetbankcountryexpr
   **/
-  @ApiModelProperty(example = "null", value = "Země cílového účtu [persistentní položka]")
-  public String getTargetBankCountryExpr() {
-    return targetBankCountryExpr;
+  @ApiModelProperty(example = "null", value = "země cílového účtu [persistentní položka]")
+  public String getTargetbankcountryexpr() {
+    return targetbankcountryexpr;
   }
 
-  public void setTargetBankCountryExpr(String targetBankCountryExpr) {
-    this.targetBankCountryExpr = targetBankCountryExpr;
+  public void setTargetbankcountryexpr(String targetbankcountryexpr) {
+    this.targetbankcountryexpr = targetbankcountryexpr;
   }
 
-  public Wagepaymentdef supressExpression(Integer supressExpression) {
-    this.supressExpression = supressExpression;
+  public Wagepaymentdef supressexpression(Integer supressexpression) {
+    this.supressexpression = supressexpression;
     return this;
   }
 
    /**
-   * Použít výraz
-   * @return supressExpression
+   * použít výraz
+   * @return supressexpression
   **/
-  @ApiModelProperty(example = "null", value = "Použít výraz")
-  public Integer getSupressExpression() {
-    return supressExpression;
+  @ApiModelProperty(example = "null", value = "použít výraz")
+  public Integer getSupressexpression() {
+    return supressexpression;
   }
 
-  public void setSupressExpression(Integer supressExpression) {
-    this.supressExpression = supressExpression;
+  public void setSupressexpression(Integer supressexpression) {
+    this.supressexpression = supressexpression;
   }
 
-  public Wagepaymentdef supressExpressionText(String supressExpressionText) {
-    this.supressExpressionText = supressExpressionText;
+  public Wagepaymentdef supressexpressiontext(String supressexpressiontext) {
+    this.supressexpressiontext = supressexpressiontext;
     return this;
   }
 
    /**
-   * Použít výraz
-   * @return supressExpressionText
+   * použít výraz
+   * @return supressexpressiontext
   **/
-  @ApiModelProperty(example = "null", value = "Použít výraz")
-  public String getSupressExpressionText() {
-    return supressExpressionText;
+  @ApiModelProperty(example = "null", value = "použít výraz")
+  public String getSupressexpressiontext() {
+    return supressexpressiontext;
   }
 
-  public void setSupressExpressionText(String supressExpressionText) {
-    this.supressExpressionText = supressExpressionText;
+  public void setSupressexpressiontext(String supressexpressiontext) {
+    this.supressexpressiontext = supressexpressiontext;
   }
 
-  public Wagepaymentdef descriptionUserExpr(String descriptionUserExpr) {
-    this.descriptionUserExpr = descriptionUserExpr;
+  public Wagepaymentdef descriptionuserexpr(String descriptionuserexpr) {
+    this.descriptionuserexpr = descriptionuserexpr;
     return this;
   }
 
    /**
-   * Uživ. text příkazu
-   * @return descriptionUserExpr
+   * uživ. text příkazu
+   * @return descriptionuserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. text příkazu")
-  public String getDescriptionUserExpr() {
-    return descriptionUserExpr;
+  @ApiModelProperty(example = "null", value = "uživ. text příkazu")
+  public String getDescriptionuserexpr() {
+    return descriptionuserexpr;
   }
 
-  public void setDescriptionUserExpr(String descriptionUserExpr) {
-    this.descriptionUserExpr = descriptionUserExpr;
+  public void setDescriptionuserexpr(String descriptionuserexpr) {
+    this.descriptionuserexpr = descriptionuserexpr;
   }
 
-  public Wagepaymentdef bankAccountID(String bankAccountID) {
-    this.bankAccountID = bankAccountID;
+  public Wagepaymentdef bankaccountId(String bankaccountId) {
+    this.bankaccountId = bankaccountId;
     return this;
   }
 
    /**
-   * Uživ. zdroj.účet a banka; ID objektu Bankovní účet
-   * @return bankAccountID
+   * uživ. zdroj.účet a banka; id objektu bankovní účet
+   * @return bankaccountId
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. zdroj.účet a banka; ID objektu Bankovní účet")
-  public String getBankAccountID() {
-    return bankAccountID;
+  @ApiModelProperty(example = "null", value = "uživ. zdroj.účet a banka; id objektu bankovní účet")
+  public String getBankaccountId() {
+    return bankaccountId;
   }
 
-  public void setBankAccountID(String bankAccountID) {
-    this.bankAccountID = bankAccountID;
+  public void setBankaccountId(String bankaccountId) {
+    this.bankaccountId = bankaccountId;
   }
 
-  public Wagepaymentdef targetBankAccountUserExpr(String targetBankAccountUserExpr) {
-    this.targetBankAccountUserExpr = targetBankAccountUserExpr;
+  public Wagepaymentdef targetbankaccountuserexpr(String targetbankaccountuserexpr) {
+    this.targetbankaccountuserexpr = targetbankaccountuserexpr;
     return this;
   }
 
    /**
-   * Uživ. cílový účet
-   * @return targetBankAccountUserExpr
+   * uživ. cílový účet
+   * @return targetbankaccountuserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. cílový účet")
-  public String getTargetBankAccountUserExpr() {
-    return targetBankAccountUserExpr;
+  @ApiModelProperty(example = "null", value = "uživ. cílový účet")
+  public String getTargetbankaccountuserexpr() {
+    return targetbankaccountuserexpr;
   }
 
-  public void setTargetBankAccountUserExpr(String targetBankAccountUserExpr) {
-    this.targetBankAccountUserExpr = targetBankAccountUserExpr;
+  public void setTargetbankaccountuserexpr(String targetbankaccountuserexpr) {
+    this.targetbankaccountuserexpr = targetbankaccountuserexpr;
   }
 
-  public Wagepaymentdef targeBankNameUserExpr(String targeBankNameUserExpr) {
-    this.targeBankNameUserExpr = targeBankNameUserExpr;
+  public Wagepaymentdef targebanknameuserexpr(String targebanknameuserexpr) {
+    this.targebanknameuserexpr = targebanknameuserexpr;
     return this;
   }
 
    /**
-   * Uživ. cílová banka
-   * @return targeBankNameUserExpr
+   * uživ. cílová banka
+   * @return targebanknameuserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. cílová banka")
-  public String getTargeBankNameUserExpr() {
-    return targeBankNameUserExpr;
+  @ApiModelProperty(example = "null", value = "uživ. cílová banka")
+  public String getTargebanknameuserexpr() {
+    return targebanknameuserexpr;
   }
 
-  public void setTargeBankNameUserExpr(String targeBankNameUserExpr) {
-    this.targeBankNameUserExpr = targeBankNameUserExpr;
+  public void setTargebanknameuserexpr(String targebanknameuserexpr) {
+    this.targebanknameuserexpr = targebanknameuserexpr;
   }
 
-  public Wagepaymentdef varSymbolUserExpr(String varSymbolUserExpr) {
-    this.varSymbolUserExpr = varSymbolUserExpr;
+  public Wagepaymentdef varsymboluserexpr(String varsymboluserexpr) {
+    this.varsymboluserexpr = varsymboluserexpr;
     return this;
   }
 
    /**
-   * Uživ. variabilní symb.
-   * @return varSymbolUserExpr
+   * uživ. variabilní symb.
+   * @return varsymboluserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. variabilní symb.")
-  public String getVarSymbolUserExpr() {
-    return varSymbolUserExpr;
+  @ApiModelProperty(example = "null", value = "uživ. variabilní symb.")
+  public String getVarsymboluserexpr() {
+    return varsymboluserexpr;
   }
 
-  public void setVarSymbolUserExpr(String varSymbolUserExpr) {
-    this.varSymbolUserExpr = varSymbolUserExpr;
+  public void setVarsymboluserexpr(String varsymboluserexpr) {
+    this.varsymboluserexpr = varsymboluserexpr;
   }
 
-  public Wagepaymentdef constSymbolUserExpr(String constSymbolUserExpr) {
-    this.constSymbolUserExpr = constSymbolUserExpr;
+  public Wagepaymentdef constsymboluserexpr(String constsymboluserexpr) {
+    this.constsymboluserexpr = constsymboluserexpr;
     return this;
   }
 
    /**
-   * Uživ. konstantní symb.
-   * @return constSymbolUserExpr
+   * uživ. konstantní symb.
+   * @return constsymboluserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. konstantní symb.")
-  public String getConstSymbolUserExpr() {
-    return constSymbolUserExpr;
+  @ApiModelProperty(example = "null", value = "uživ. konstantní symb.")
+  public String getConstsymboluserexpr() {
+    return constsymboluserexpr;
   }
 
-  public void setConstSymbolUserExpr(String constSymbolUserExpr) {
-    this.constSymbolUserExpr = constSymbolUserExpr;
+  public void setConstsymboluserexpr(String constsymboluserexpr) {
+    this.constsymboluserexpr = constsymboluserexpr;
   }
 
-  public Wagepaymentdef specSymbolUserExpr(String specSymbolUserExpr) {
-    this.specSymbolUserExpr = specSymbolUserExpr;
+  public Wagepaymentdef specsymboluserexpr(String specsymboluserexpr) {
+    this.specsymboluserexpr = specsymboluserexpr;
     return this;
   }
 
    /**
-   * Uživ. specifický symb.
-   * @return specSymbolUserExpr
+   * uživ. specifický symb.
+   * @return specsymboluserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. specifický symb.")
-  public String getSpecSymbolUserExpr() {
-    return specSymbolUserExpr;
+  @ApiModelProperty(example = "null", value = "uživ. specifický symb.")
+  public String getSpecsymboluserexpr() {
+    return specsymboluserexpr;
   }
 
-  public void setSpecSymbolUserExpr(String specSymbolUserExpr) {
-    this.specSymbolUserExpr = specSymbolUserExpr;
+  public void setSpecsymboluserexpr(String specsymboluserexpr) {
+    this.specsymboluserexpr = specsymboluserexpr;
   }
 
-  public Wagepaymentdef currencyUserExpr(String currencyUserExpr) {
-    this.currencyUserExpr = currencyUserExpr;
+  public Wagepaymentdef currencyuserexpr(String currencyuserexpr) {
+    this.currencyuserexpr = currencyuserexpr;
     return this;
   }
 
    /**
-   * Uživ. měna
-   * @return currencyUserExpr
+   * uživ. měna
+   * @return currencyuserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. měna")
-  public String getCurrencyUserExpr() {
-    return currencyUserExpr;
+  @ApiModelProperty(example = "null", value = "uživ. měna")
+  public String getCurrencyuserexpr() {
+    return currencyuserexpr;
   }
 
-  public void setCurrencyUserExpr(String currencyUserExpr) {
-    this.currencyUserExpr = currencyUserExpr;
+  public void setCurrencyuserexpr(String currencyuserexpr) {
+    this.currencyuserexpr = currencyuserexpr;
   }
 
-  public Wagepaymentdef countryUserExpr(String countryUserExpr) {
-    this.countryUserExpr = countryUserExpr;
+  public Wagepaymentdef countryuserexpr(String countryuserexpr) {
+    this.countryuserexpr = countryuserexpr;
     return this;
   }
 
    /**
-   * Uživ. země
-   * @return countryUserExpr
+   * uživ. země
+   * @return countryuserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. země")
-  public String getCountryUserExpr() {
-    return countryUserExpr;
+  @ApiModelProperty(example = "null", value = "uživ. země")
+  public String getCountryuserexpr() {
+    return countryuserexpr;
   }
 
-  public void setCountryUserExpr(String countryUserExpr) {
-    this.countryUserExpr = countryUserExpr;
+  public void setCountryuserexpr(String countryuserexpr) {
+    this.countryuserexpr = countryuserexpr;
   }
 
-  public Wagepaymentdef foreingIssueUserExpr(String foreingIssueUserExpr) {
-    this.foreingIssueUserExpr = foreingIssueUserExpr;
+  public Wagepaymentdef foreingissueuserexpr(String foreingissueuserexpr) {
+    this.foreingissueuserexpr = foreingissueuserexpr;
     return this;
   }
 
    /**
-   * Uživ. dodatečné poplatky
-   * @return foreingIssueUserExpr
+   * uživ. dodatečné poplatky
+   * @return foreingissueuserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. dodatečné poplatky")
-  public String getForeingIssueUserExpr() {
-    return foreingIssueUserExpr;
+  @ApiModelProperty(example = "null", value = "uživ. dodatečné poplatky")
+  public String getForeingissueuserexpr() {
+    return foreingissueuserexpr;
   }
 
-  public void setForeingIssueUserExpr(String foreingIssueUserExpr) {
-    this.foreingIssueUserExpr = foreingIssueUserExpr;
+  public void setForeingissueuserexpr(String foreingissueuserexpr) {
+    this.foreingissueuserexpr = foreingissueuserexpr;
   }
 
-  public Wagepaymentdef urgentUserExpr(String urgentUserExpr) {
-    this.urgentUserExpr = urgentUserExpr;
+  public Wagepaymentdef urgentuserexpr(String urgentuserexpr) {
+    this.urgentuserexpr = urgentuserexpr;
     return this;
   }
 
    /**
-   * Uživ. způsob provedení pl.
-   * @return urgentUserExpr
+   * uživ. způsob provedení pl.
+   * @return urgentuserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. způsob provedení pl.")
-  public String getUrgentUserExpr() {
-    return urgentUserExpr;
+  @ApiModelProperty(example = "null", value = "uživ. způsob provedení pl.")
+  public String getUrgentuserexpr() {
+    return urgentuserexpr;
   }
 
-  public void setUrgentUserExpr(String urgentUserExpr) {
-    this.urgentUserExpr = urgentUserExpr;
+  public void setUrgentuserexpr(String urgentuserexpr) {
+    this.urgentuserexpr = urgentuserexpr;
   }
 
-  public Wagepaymentdef swiftCodeUserExpr(String swiftCodeUserExpr) {
-    this.swiftCodeUserExpr = swiftCodeUserExpr;
+  public Wagepaymentdef swiftcodeuserexpr(String swiftcodeuserexpr) {
+    this.swiftcodeuserexpr = swiftcodeuserexpr;
     return this;
   }
 
    /**
-   * Uživ. SWIFT kód
-   * @return swiftCodeUserExpr
+   * uživ. swift kód
+   * @return swiftcodeuserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. SWIFT kód")
-  public String getSwiftCodeUserExpr() {
-    return swiftCodeUserExpr;
+  @ApiModelProperty(example = "null", value = "uživ. swift kód")
+  public String getSwiftcodeuserexpr() {
+    return swiftcodeuserexpr;
   }
 
-  public void setSwiftCodeUserExpr(String swiftCodeUserExpr) {
-    this.swiftCodeUserExpr = swiftCodeUserExpr;
+  public void setSwiftcodeuserexpr(String swiftcodeuserexpr) {
+    this.swiftcodeuserexpr = swiftcodeuserexpr;
   }
 
-  public Wagepaymentdef dueDateUserExpr(String dueDateUserExpr) {
-    this.dueDateUserExpr = dueDateUserExpr;
+  public Wagepaymentdef duedateuserexpr(String duedateuserexpr) {
+    this.duedateuserexpr = duedateuserexpr;
     return this;
   }
 
    /**
-   * Uživ. splatnost
-   * @return dueDateUserExpr
+   * uživ. splatnost
+   * @return duedateuserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. splatnost")
-  public String getDueDateUserExpr() {
-    return dueDateUserExpr;
+  @ApiModelProperty(example = "null", value = "uživ. splatnost")
+  public String getDuedateuserexpr() {
+    return duedateuserexpr;
   }
 
-  public void setDueDateUserExpr(String dueDateUserExpr) {
-    this.dueDateUserExpr = dueDateUserExpr;
+  public void setDuedateuserexpr(String duedateuserexpr) {
+    this.duedateuserexpr = duedateuserexpr;
   }
 
-  public Wagepaymentdef firmIDExpr(String firmIDExpr) {
-    this.firmIDExpr = firmIDExpr;
+  public Wagepaymentdef firmidexpr(String firmidexpr) {
+    this.firmidexpr = firmidexpr;
     return this;
   }
 
    /**
-   * Firma [persistentní položka]
-   * @return firmIDExpr
+   * firma [persistentní položka]
+   * @return firmidexpr
   **/
-  @ApiModelProperty(example = "null", value = "Firma [persistentní položka]")
-  public String getFirmIDExpr() {
-    return firmIDExpr;
+  @ApiModelProperty(example = "null", value = "firma [persistentní položka]")
+  public String getFirmidexpr() {
+    return firmidexpr;
   }
 
-  public void setFirmIDExpr(String firmIDExpr) {
-    this.firmIDExpr = firmIDExpr;
+  public void setFirmidexpr(String firmidexpr) {
+    this.firmidexpr = firmidexpr;
   }
 
-  public Wagepaymentdef busOrderIDExpr(String busOrderIDExpr) {
-    this.busOrderIDExpr = busOrderIDExpr;
+  public Wagepaymentdef busorderidexpr(String busorderidexpr) {
+    this.busorderidexpr = busorderidexpr;
     return this;
   }
 
    /**
-   * Zakázka [persistentní položka]
-   * @return busOrderIDExpr
+   * zakázka [persistentní položka]
+   * @return busorderidexpr
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka [persistentní položka]")
-  public String getBusOrderIDExpr() {
-    return busOrderIDExpr;
+  @ApiModelProperty(example = "null", value = "zakázka [persistentní položka]")
+  public String getBusorderidexpr() {
+    return busorderidexpr;
   }
 
-  public void setBusOrderIDExpr(String busOrderIDExpr) {
-    this.busOrderIDExpr = busOrderIDExpr;
+  public void setBusorderidexpr(String busorderidexpr) {
+    this.busorderidexpr = busorderidexpr;
   }
 
-  public Wagepaymentdef busTransactionIDExpr(String busTransactionIDExpr) {
-    this.busTransactionIDExpr = busTransactionIDExpr;
+  public Wagepaymentdef bustransactionidexpr(String bustransactionidexpr) {
+    this.bustransactionidexpr = bustransactionidexpr;
     return this;
   }
 
    /**
-   * Obch. případ [persistentní položka]
-   * @return busTransactionIDExpr
+   * obch. případ [persistentní položka]
+   * @return bustransactionidexpr
   **/
-  @ApiModelProperty(example = "null", value = "Obch. případ [persistentní položka]")
-  public String getBusTransactionIDExpr() {
-    return busTransactionIDExpr;
+  @ApiModelProperty(example = "null", value = "obch. případ [persistentní položka]")
+  public String getBustransactionidexpr() {
+    return bustransactionidexpr;
   }
 
-  public void setBusTransactionIDExpr(String busTransactionIDExpr) {
-    this.busTransactionIDExpr = busTransactionIDExpr;
+  public void setBustransactionidexpr(String bustransactionidexpr) {
+    this.bustransactionidexpr = bustransactionidexpr;
   }
 
-  public Wagepaymentdef divisionIDExpr(String divisionIDExpr) {
-    this.divisionIDExpr = divisionIDExpr;
+  public Wagepaymentdef divisionidexpr(String divisionidexpr) {
+    this.divisionidexpr = divisionidexpr;
     return this;
   }
 
    /**
-   * Středisko [persistentní položka]
-   * @return divisionIDExpr
+   * středisko [persistentní položka]
+   * @return divisionidexpr
   **/
-  @ApiModelProperty(example = "null", value = "Středisko [persistentní položka]")
-  public String getDivisionIDExpr() {
-    return divisionIDExpr;
+  @ApiModelProperty(example = "null", value = "středisko [persistentní položka]")
+  public String getDivisionidexpr() {
+    return divisionidexpr;
   }
 
-  public void setDivisionIDExpr(String divisionIDExpr) {
-    this.divisionIDExpr = divisionIDExpr;
+  public void setDivisionidexpr(String divisionidexpr) {
+    this.divisionidexpr = divisionidexpr;
   }
 
-  public Wagepaymentdef firmIDUserExpr(String firmIDUserExpr) {
-    this.firmIDUserExpr = firmIDUserExpr;
+  public Wagepaymentdef firmiduserexpr(String firmiduserexpr) {
+    this.firmiduserexpr = firmiduserexpr;
     return this;
   }
 
    /**
-   * Firma
-   * @return firmIDUserExpr
+   * firma
+   * @return firmiduserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Firma")
-  public String getFirmIDUserExpr() {
-    return firmIDUserExpr;
+  @ApiModelProperty(example = "null", value = "firma")
+  public String getFirmiduserexpr() {
+    return firmiduserexpr;
   }
 
-  public void setFirmIDUserExpr(String firmIDUserExpr) {
-    this.firmIDUserExpr = firmIDUserExpr;
+  public void setFirmiduserexpr(String firmiduserexpr) {
+    this.firmiduserexpr = firmiduserexpr;
   }
 
-  public Wagepaymentdef busOrderIDUserExpr(String busOrderIDUserExpr) {
-    this.busOrderIDUserExpr = busOrderIDUserExpr;
+  public Wagepaymentdef busorderiduserexpr(String busorderiduserexpr) {
+    this.busorderiduserexpr = busorderiduserexpr;
     return this;
   }
 
    /**
-   * Uživ. zak.
-   * @return busOrderIDUserExpr
+   * uživ. zak.
+   * @return busorderiduserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. zak.")
-  public String getBusOrderIDUserExpr() {
-    return busOrderIDUserExpr;
+  @ApiModelProperty(example = "null", value = "uživ. zak.")
+  public String getBusorderiduserexpr() {
+    return busorderiduserexpr;
   }
 
-  public void setBusOrderIDUserExpr(String busOrderIDUserExpr) {
-    this.busOrderIDUserExpr = busOrderIDUserExpr;
+  public void setBusorderiduserexpr(String busorderiduserexpr) {
+    this.busorderiduserexpr = busorderiduserexpr;
   }
 
-  public Wagepaymentdef busTransactionIDUserExpr(String busTransactionIDUserExpr) {
-    this.busTransactionIDUserExpr = busTransactionIDUserExpr;
+  public Wagepaymentdef bustransactioniduserexpr(String bustransactioniduserexpr) {
+    this.bustransactioniduserexpr = bustransactioniduserexpr;
     return this;
   }
 
    /**
-   * Uživ. obch. příp.
-   * @return busTransactionIDUserExpr
+   * uživ. obch. příp.
+   * @return bustransactioniduserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. obch. příp.")
-  public String getBusTransactionIDUserExpr() {
-    return busTransactionIDUserExpr;
+  @ApiModelProperty(example = "null", value = "uživ. obch. příp.")
+  public String getBustransactioniduserexpr() {
+    return bustransactioniduserexpr;
   }
 
-  public void setBusTransactionIDUserExpr(String busTransactionIDUserExpr) {
-    this.busTransactionIDUserExpr = busTransactionIDUserExpr;
+  public void setBustransactioniduserexpr(String bustransactioniduserexpr) {
+    this.bustransactioniduserexpr = bustransactioniduserexpr;
   }
 
-  public Wagepaymentdef divisionIDUserExpr(String divisionIDUserExpr) {
-    this.divisionIDUserExpr = divisionIDUserExpr;
+  public Wagepaymentdef divisioniduserexpr(String divisioniduserexpr) {
+    this.divisioniduserexpr = divisioniduserexpr;
     return this;
   }
 
    /**
-   * Uživ. středisko
-   * @return divisionIDUserExpr
+   * uživ. středisko
+   * @return divisioniduserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. středisko")
-  public String getDivisionIDUserExpr() {
-    return divisionIDUserExpr;
+  @ApiModelProperty(example = "null", value = "uživ. středisko")
+  public String getDivisioniduserexpr() {
+    return divisioniduserexpr;
   }
 
-  public void setDivisionIDUserExpr(String divisionIDUserExpr) {
-    this.divisionIDUserExpr = divisionIDUserExpr;
+  public void setDivisioniduserexpr(String divisioniduserexpr) {
+    this.divisioniduserexpr = divisioniduserexpr;
   }
 
-  public Wagepaymentdef baseType(Integer baseType) {
-    this.baseType = baseType;
+  public Wagepaymentdef basetype(Integer basetype) {
+    this.basetype = basetype;
     return this;
   }
 
    /**
-   * Zákl. druh [persistentní položka]
-   * @return baseType
+   * zákl. druh [persistentní položka]
+   * @return basetype
   **/
-  @ApiModelProperty(example = "null", value = "Zákl. druh [persistentní položka]")
-  public Integer getBaseType() {
-    return baseType;
+  @ApiModelProperty(example = "null", value = "zákl. druh [persistentní položka]")
+  public Integer getBasetype() {
+    return basetype;
   }
 
-  public void setBaseType(Integer baseType) {
-    this.baseType = baseType;
+  public void setBasetype(Integer basetype) {
+    this.basetype = basetype;
   }
 
-  public Wagepaymentdef baseTypeText(String baseTypeText) {
-    this.baseTypeText = baseTypeText;
+  public Wagepaymentdef basetypeText(String basetypeText) {
+    this.basetypeText = basetypeText;
     return this;
   }
 
    /**
-   * Zákl. druh - text
-   * @return baseTypeText
+   * zákl. druh - text
+   * @return basetypeText
   **/
-  @ApiModelProperty(example = "null", value = "Zákl. druh - text")
-  public String getBaseTypeText() {
-    return baseTypeText;
+  @ApiModelProperty(example = "null", value = "zákl. druh - text")
+  public String getBasetypeText() {
+    return basetypeText;
   }
 
-  public void setBaseTypeText(String baseTypeText) {
-    this.baseTypeText = baseTypeText;
+  public void setBasetypeText(String basetypeText) {
+    this.basetypeText = basetypeText;
   }
 
-  public Wagepaymentdef flagUserExpr(String flagUserExpr) {
-    this.flagUserExpr = flagUserExpr;
+  public Wagepaymentdef flaguserexpr(String flaguserexpr) {
+    this.flaguserexpr = flaguserexpr;
     return this;
   }
 
    /**
-   * Uživ. rozliš. řetězec
-   * @return flagUserExpr
+   * uživ. rozliš. řetězec
+   * @return flaguserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. rozliš. řetězec")
-  public String getFlagUserExpr() {
-    return flagUserExpr;
+  @ApiModelProperty(example = "null", value = "uživ. rozliš. řetězec")
+  public String getFlaguserexpr() {
+    return flaguserexpr;
   }
 
-  public void setFlagUserExpr(String flagUserExpr) {
-    this.flagUserExpr = flagUserExpr;
+  public void setFlaguserexpr(String flaguserexpr) {
+    this.flaguserexpr = flaguserexpr;
   }
 
-  public Wagepaymentdef flagExpr(String flagExpr) {
-    this.flagExpr = flagExpr;
+  public Wagepaymentdef flagexpr(String flagexpr) {
+    this.flagexpr = flagexpr;
     return this;
   }
 
    /**
-   * Rozliš. řetězec [persistentní položka]
-   * @return flagExpr
+   * rozliš. řetězec [persistentní položka]
+   * @return flagexpr
   **/
-  @ApiModelProperty(example = "null", value = "Rozliš. řetězec [persistentní položka]")
-  public String getFlagExpr() {
-    return flagExpr;
+  @ApiModelProperty(example = "null", value = "rozliš. řetězec [persistentní položka]")
+  public String getFlagexpr() {
+    return flagexpr;
   }
 
-  public void setFlagExpr(String flagExpr) {
-    this.flagExpr = flagExpr;
+  public void setFlagexpr(String flagexpr) {
+    this.flagexpr = flagexpr;
   }
 
-  public Wagepaymentdef bankAccountUserExpr(String bankAccountUserExpr) {
-    this.bankAccountUserExpr = bankAccountUserExpr;
+  public Wagepaymentdef bankaccountuserexpr(String bankaccountuserexpr) {
+    this.bankaccountuserexpr = bankaccountuserexpr;
     return this;
   }
 
    /**
-   * Uživ.zdroj.účet výraz
-   * @return bankAccountUserExpr
+   * uživ.zdroj.účet výraz
+   * @return bankaccountuserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživ.zdroj.účet výraz")
-  public String getBankAccountUserExpr() {
-    return bankAccountUserExpr;
+  @ApiModelProperty(example = "null", value = "uživ.zdroj.účet výraz")
+  public String getBankaccountuserexpr() {
+    return bankaccountuserexpr;
   }
 
-  public void setBankAccountUserExpr(String bankAccountUserExpr) {
-    this.bankAccountUserExpr = bankAccountUserExpr;
+  public void setBankaccountuserexpr(String bankaccountuserexpr) {
+    this.bankaccountuserexpr = bankaccountuserexpr;
   }
 
-  public Wagepaymentdef bankAccountByExpr(Boolean bankAccountByExpr) {
-    this.bankAccountByExpr = bankAccountByExpr;
+  public Wagepaymentdef bankaccountbyexpr(Boolean bankaccountbyexpr) {
+    this.bankaccountbyexpr = bankaccountbyexpr;
     return this;
   }
 
    /**
-   * Uživ.zdroj.účet je dán výrazem
-   * @return bankAccountByExpr
+   * uživ.zdroj.účet je dán výrazem
+   * @return bankaccountbyexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživ.zdroj.účet je dán výrazem")
-  public Boolean getBankAccountByExpr() {
-    return bankAccountByExpr;
+  @ApiModelProperty(example = "null", value = "uživ.zdroj.účet je dán výrazem")
+  public Boolean getBankaccountbyexpr() {
+    return bankaccountbyexpr;
   }
 
-  public void setBankAccountByExpr(Boolean bankAccountByExpr) {
-    this.bankAccountByExpr = bankAccountByExpr;
+  public void setBankaccountbyexpr(Boolean bankaccountbyexpr) {
+    this.bankaccountbyexpr = bankaccountbyexpr;
   }
 
-  public Wagepaymentdef busProjectIDExpr(String busProjectIDExpr) {
-    this.busProjectIDExpr = busProjectIDExpr;
+  public Wagepaymentdef busprojectidexpr(String busprojectidexpr) {
+    this.busprojectidexpr = busprojectidexpr;
     return this;
   }
 
    /**
-   * Projekt [persistentní položka]
-   * @return busProjectIDExpr
+   * projekt [persistentní položka]
+   * @return busprojectidexpr
   **/
-  @ApiModelProperty(example = "null", value = "Projekt [persistentní položka]")
-  public String getBusProjectIDExpr() {
-    return busProjectIDExpr;
+  @ApiModelProperty(example = "null", value = "projekt [persistentní položka]")
+  public String getBusprojectidexpr() {
+    return busprojectidexpr;
   }
 
-  public void setBusProjectIDExpr(String busProjectIDExpr) {
-    this.busProjectIDExpr = busProjectIDExpr;
+  public void setBusprojectidexpr(String busprojectidexpr) {
+    this.busprojectidexpr = busprojectidexpr;
   }
 
-  public Wagepaymentdef busProjectIDUserExpr(String busProjectIDUserExpr) {
-    this.busProjectIDUserExpr = busProjectIDUserExpr;
+  public Wagepaymentdef busprojectiduserexpr(String busprojectiduserexpr) {
+    this.busprojectiduserexpr = busprojectiduserexpr;
     return this;
   }
 
    /**
-   * Uživatelský projekt [persistentní položka]
-   * @return busProjectIDUserExpr
+   * uživatelský projekt [persistentní položka]
+   * @return busprojectiduserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživatelský projekt [persistentní položka]")
-  public String getBusProjectIDUserExpr() {
-    return busProjectIDUserExpr;
+  @ApiModelProperty(example = "null", value = "uživatelský projekt [persistentní položka]")
+  public String getBusprojectiduserexpr() {
+    return busprojectiduserexpr;
   }
 
-  public void setBusProjectIDUserExpr(String busProjectIDUserExpr) {
-    this.busProjectIDUserExpr = busProjectIDUserExpr;
+  public void setBusprojectiduserexpr(String busprojectiduserexpr) {
+    this.busprojectiduserexpr = busprojectiduserexpr;
   }
 
-  public Wagepaymentdef targetBankCountryUserExpr(String targetBankCountryUserExpr) {
-    this.targetBankCountryUserExpr = targetBankCountryUserExpr;
+  public Wagepaymentdef targetbankcountryuserexpr(String targetbankcountryuserexpr) {
+    this.targetbankcountryuserexpr = targetbankcountryuserexpr;
     return this;
   }
 
    /**
-   * Uživ. země cílového účtu [persistentní položka]
-   * @return targetBankCountryUserExpr
+   * uživ. země cílového účtu [persistentní položka]
+   * @return targetbankcountryuserexpr
   **/
-  @ApiModelProperty(example = "null", value = "Uživ. země cílového účtu [persistentní položka]")
-  public String getTargetBankCountryUserExpr() {
-    return targetBankCountryUserExpr;
+  @ApiModelProperty(example = "null", value = "uživ. země cílového účtu [persistentní položka]")
+  public String getTargetbankcountryuserexpr() {
+    return targetbankcountryuserexpr;
   }
 
-  public void setTargetBankCountryUserExpr(String targetBankCountryUserExpr) {
-    this.targetBankCountryUserExpr = targetBankCountryUserExpr;
+  public void setTargetbankcountryuserexpr(String targetbankcountryuserexpr) {
+    this.targetbankcountryuserexpr = targetbankcountryuserexpr;
   }
 
 
@@ -1123,64 +1159,64 @@ public class Wagepaymentdef   {
       return false;
     }
     Wagepaymentdef wagepaymentdef = (Wagepaymentdef) o;
-    return Objects.equals(this.displayName, wagepaymentdef.displayName) &&
-        Objects.equals(this.ID, wagepaymentdef.ID) &&
-        Objects.equals(this.classID, wagepaymentdef.classID) &&
-        Objects.equals(this.objVersion, wagepaymentdef.objVersion) &&
+    return Objects.equals(this.displayname, wagepaymentdef.displayname) &&
+        Objects.equals(this.id, wagepaymentdef.id) &&
+        Objects.equals(this.classid, wagepaymentdef.classid) &&
+        Objects.equals(this.objversion, wagepaymentdef.objversion) &&
         Objects.equals(this.hidden, wagepaymentdef.hidden) &&
         Objects.equals(this.code, wagepaymentdef.code) &&
         Objects.equals(this.name, wagepaymentdef.name) &&
         Objects.equals(this.system, wagepaymentdef.system) &&
-        Objects.equals(this.descriptionExpr, wagepaymentdef.descriptionExpr) &&
-        Objects.equals(this.targetBankAccountExpr, wagepaymentdef.targetBankAccountExpr) &&
-        Objects.equals(this.targeBankNameExpr, wagepaymentdef.targeBankNameExpr) &&
-        Objects.equals(this.varSymbolExpr, wagepaymentdef.varSymbolExpr) &&
-        Objects.equals(this.constSymbolExpr, wagepaymentdef.constSymbolExpr) &&
-        Objects.equals(this.specSymbolExpr, wagepaymentdef.specSymbolExpr) &&
-        Objects.equals(this.currencyExpr, wagepaymentdef.currencyExpr) &&
-        Objects.equals(this.countryExpr, wagepaymentdef.countryExpr) &&
-        Objects.equals(this.foreingIssueExpr, wagepaymentdef.foreingIssueExpr) &&
-        Objects.equals(this.urgentExpr, wagepaymentdef.urgentExpr) &&
-        Objects.equals(this.swiftCodeExpr, wagepaymentdef.swiftCodeExpr) &&
-        Objects.equals(this.dueDateExpr, wagepaymentdef.dueDateExpr) &&
-        Objects.equals(this.targetBankCountryExpr, wagepaymentdef.targetBankCountryExpr) &&
-        Objects.equals(this.supressExpression, wagepaymentdef.supressExpression) &&
-        Objects.equals(this.supressExpressionText, wagepaymentdef.supressExpressionText) &&
-        Objects.equals(this.descriptionUserExpr, wagepaymentdef.descriptionUserExpr) &&
-        Objects.equals(this.bankAccountID, wagepaymentdef.bankAccountID) &&
-        Objects.equals(this.targetBankAccountUserExpr, wagepaymentdef.targetBankAccountUserExpr) &&
-        Objects.equals(this.targeBankNameUserExpr, wagepaymentdef.targeBankNameUserExpr) &&
-        Objects.equals(this.varSymbolUserExpr, wagepaymentdef.varSymbolUserExpr) &&
-        Objects.equals(this.constSymbolUserExpr, wagepaymentdef.constSymbolUserExpr) &&
-        Objects.equals(this.specSymbolUserExpr, wagepaymentdef.specSymbolUserExpr) &&
-        Objects.equals(this.currencyUserExpr, wagepaymentdef.currencyUserExpr) &&
-        Objects.equals(this.countryUserExpr, wagepaymentdef.countryUserExpr) &&
-        Objects.equals(this.foreingIssueUserExpr, wagepaymentdef.foreingIssueUserExpr) &&
-        Objects.equals(this.urgentUserExpr, wagepaymentdef.urgentUserExpr) &&
-        Objects.equals(this.swiftCodeUserExpr, wagepaymentdef.swiftCodeUserExpr) &&
-        Objects.equals(this.dueDateUserExpr, wagepaymentdef.dueDateUserExpr) &&
-        Objects.equals(this.firmIDExpr, wagepaymentdef.firmIDExpr) &&
-        Objects.equals(this.busOrderIDExpr, wagepaymentdef.busOrderIDExpr) &&
-        Objects.equals(this.busTransactionIDExpr, wagepaymentdef.busTransactionIDExpr) &&
-        Objects.equals(this.divisionIDExpr, wagepaymentdef.divisionIDExpr) &&
-        Objects.equals(this.firmIDUserExpr, wagepaymentdef.firmIDUserExpr) &&
-        Objects.equals(this.busOrderIDUserExpr, wagepaymentdef.busOrderIDUserExpr) &&
-        Objects.equals(this.busTransactionIDUserExpr, wagepaymentdef.busTransactionIDUserExpr) &&
-        Objects.equals(this.divisionIDUserExpr, wagepaymentdef.divisionIDUserExpr) &&
-        Objects.equals(this.baseType, wagepaymentdef.baseType) &&
-        Objects.equals(this.baseTypeText, wagepaymentdef.baseTypeText) &&
-        Objects.equals(this.flagUserExpr, wagepaymentdef.flagUserExpr) &&
-        Objects.equals(this.flagExpr, wagepaymentdef.flagExpr) &&
-        Objects.equals(this.bankAccountUserExpr, wagepaymentdef.bankAccountUserExpr) &&
-        Objects.equals(this.bankAccountByExpr, wagepaymentdef.bankAccountByExpr) &&
-        Objects.equals(this.busProjectIDExpr, wagepaymentdef.busProjectIDExpr) &&
-        Objects.equals(this.busProjectIDUserExpr, wagepaymentdef.busProjectIDUserExpr) &&
-        Objects.equals(this.targetBankCountryUserExpr, wagepaymentdef.targetBankCountryUserExpr);
+        Objects.equals(this.descriptionexpr, wagepaymentdef.descriptionexpr) &&
+        Objects.equals(this.targetbankaccountexpr, wagepaymentdef.targetbankaccountexpr) &&
+        Objects.equals(this.targebanknameexpr, wagepaymentdef.targebanknameexpr) &&
+        Objects.equals(this.varsymbolexpr, wagepaymentdef.varsymbolexpr) &&
+        Objects.equals(this.constsymbolexpr, wagepaymentdef.constsymbolexpr) &&
+        Objects.equals(this.specsymbolexpr, wagepaymentdef.specsymbolexpr) &&
+        Objects.equals(this.currencyexpr, wagepaymentdef.currencyexpr) &&
+        Objects.equals(this.countryexpr, wagepaymentdef.countryexpr) &&
+        Objects.equals(this.foreingissueexpr, wagepaymentdef.foreingissueexpr) &&
+        Objects.equals(this.urgentexpr, wagepaymentdef.urgentexpr) &&
+        Objects.equals(this.swiftcodeexpr, wagepaymentdef.swiftcodeexpr) &&
+        Objects.equals(this.duedateexpr, wagepaymentdef.duedateexpr) &&
+        Objects.equals(this.targetbankcountryexpr, wagepaymentdef.targetbankcountryexpr) &&
+        Objects.equals(this.supressexpression, wagepaymentdef.supressexpression) &&
+        Objects.equals(this.supressexpressiontext, wagepaymentdef.supressexpressiontext) &&
+        Objects.equals(this.descriptionuserexpr, wagepaymentdef.descriptionuserexpr) &&
+        Objects.equals(this.bankaccountId, wagepaymentdef.bankaccountId) &&
+        Objects.equals(this.targetbankaccountuserexpr, wagepaymentdef.targetbankaccountuserexpr) &&
+        Objects.equals(this.targebanknameuserexpr, wagepaymentdef.targebanknameuserexpr) &&
+        Objects.equals(this.varsymboluserexpr, wagepaymentdef.varsymboluserexpr) &&
+        Objects.equals(this.constsymboluserexpr, wagepaymentdef.constsymboluserexpr) &&
+        Objects.equals(this.specsymboluserexpr, wagepaymentdef.specsymboluserexpr) &&
+        Objects.equals(this.currencyuserexpr, wagepaymentdef.currencyuserexpr) &&
+        Objects.equals(this.countryuserexpr, wagepaymentdef.countryuserexpr) &&
+        Objects.equals(this.foreingissueuserexpr, wagepaymentdef.foreingissueuserexpr) &&
+        Objects.equals(this.urgentuserexpr, wagepaymentdef.urgentuserexpr) &&
+        Objects.equals(this.swiftcodeuserexpr, wagepaymentdef.swiftcodeuserexpr) &&
+        Objects.equals(this.duedateuserexpr, wagepaymentdef.duedateuserexpr) &&
+        Objects.equals(this.firmidexpr, wagepaymentdef.firmidexpr) &&
+        Objects.equals(this.busorderidexpr, wagepaymentdef.busorderidexpr) &&
+        Objects.equals(this.bustransactionidexpr, wagepaymentdef.bustransactionidexpr) &&
+        Objects.equals(this.divisionidexpr, wagepaymentdef.divisionidexpr) &&
+        Objects.equals(this.firmiduserexpr, wagepaymentdef.firmiduserexpr) &&
+        Objects.equals(this.busorderiduserexpr, wagepaymentdef.busorderiduserexpr) &&
+        Objects.equals(this.bustransactioniduserexpr, wagepaymentdef.bustransactioniduserexpr) &&
+        Objects.equals(this.divisioniduserexpr, wagepaymentdef.divisioniduserexpr) &&
+        Objects.equals(this.basetype, wagepaymentdef.basetype) &&
+        Objects.equals(this.basetypeText, wagepaymentdef.basetypeText) &&
+        Objects.equals(this.flaguserexpr, wagepaymentdef.flaguserexpr) &&
+        Objects.equals(this.flagexpr, wagepaymentdef.flagexpr) &&
+        Objects.equals(this.bankaccountuserexpr, wagepaymentdef.bankaccountuserexpr) &&
+        Objects.equals(this.bankaccountbyexpr, wagepaymentdef.bankaccountbyexpr) &&
+        Objects.equals(this.busprojectidexpr, wagepaymentdef.busprojectidexpr) &&
+        Objects.equals(this.busprojectiduserexpr, wagepaymentdef.busprojectiduserexpr) &&
+        Objects.equals(this.targetbankcountryuserexpr, wagepaymentdef.targetbankcountryuserexpr);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, system, descriptionExpr, targetBankAccountExpr, targeBankNameExpr, varSymbolExpr, constSymbolExpr, specSymbolExpr, currencyExpr, countryExpr, foreingIssueExpr, urgentExpr, swiftCodeExpr, dueDateExpr, targetBankCountryExpr, supressExpression, supressExpressionText, descriptionUserExpr, bankAccountID, targetBankAccountUserExpr, targeBankNameUserExpr, varSymbolUserExpr, constSymbolUserExpr, specSymbolUserExpr, currencyUserExpr, countryUserExpr, foreingIssueUserExpr, urgentUserExpr, swiftCodeUserExpr, dueDateUserExpr, firmIDExpr, busOrderIDExpr, busTransactionIDExpr, divisionIDExpr, firmIDUserExpr, busOrderIDUserExpr, busTransactionIDUserExpr, divisionIDUserExpr, baseType, baseTypeText, flagUserExpr, flagExpr, bankAccountUserExpr, bankAccountByExpr, busProjectIDExpr, busProjectIDUserExpr, targetBankCountryUserExpr);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, system, descriptionexpr, targetbankaccountexpr, targebanknameexpr, varsymbolexpr, constsymbolexpr, specsymbolexpr, currencyexpr, countryexpr, foreingissueexpr, urgentexpr, swiftcodeexpr, duedateexpr, targetbankcountryexpr, supressexpression, supressexpressiontext, descriptionuserexpr, bankaccountId, targetbankaccountuserexpr, targebanknameuserexpr, varsymboluserexpr, constsymboluserexpr, specsymboluserexpr, currencyuserexpr, countryuserexpr, foreingissueuserexpr, urgentuserexpr, swiftcodeuserexpr, duedateuserexpr, firmidexpr, busorderidexpr, bustransactionidexpr, divisionidexpr, firmiduserexpr, busorderiduserexpr, bustransactioniduserexpr, divisioniduserexpr, basetype, basetypeText, flaguserexpr, flagexpr, bankaccountuserexpr, bankaccountbyexpr, busprojectidexpr, busprojectiduserexpr, targetbankcountryuserexpr);
   }
 
   @Override
@@ -1188,59 +1224,59 @@ public class Wagepaymentdef   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wagepaymentdef {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
-    sb.append("    descriptionExpr: ").append(toIndentedString(descriptionExpr)).append("\n");
-    sb.append("    targetBankAccountExpr: ").append(toIndentedString(targetBankAccountExpr)).append("\n");
-    sb.append("    targeBankNameExpr: ").append(toIndentedString(targeBankNameExpr)).append("\n");
-    sb.append("    varSymbolExpr: ").append(toIndentedString(varSymbolExpr)).append("\n");
-    sb.append("    constSymbolExpr: ").append(toIndentedString(constSymbolExpr)).append("\n");
-    sb.append("    specSymbolExpr: ").append(toIndentedString(specSymbolExpr)).append("\n");
-    sb.append("    currencyExpr: ").append(toIndentedString(currencyExpr)).append("\n");
-    sb.append("    countryExpr: ").append(toIndentedString(countryExpr)).append("\n");
-    sb.append("    foreingIssueExpr: ").append(toIndentedString(foreingIssueExpr)).append("\n");
-    sb.append("    urgentExpr: ").append(toIndentedString(urgentExpr)).append("\n");
-    sb.append("    swiftCodeExpr: ").append(toIndentedString(swiftCodeExpr)).append("\n");
-    sb.append("    dueDateExpr: ").append(toIndentedString(dueDateExpr)).append("\n");
-    sb.append("    targetBankCountryExpr: ").append(toIndentedString(targetBankCountryExpr)).append("\n");
-    sb.append("    supressExpression: ").append(toIndentedString(supressExpression)).append("\n");
-    sb.append("    supressExpressionText: ").append(toIndentedString(supressExpressionText)).append("\n");
-    sb.append("    descriptionUserExpr: ").append(toIndentedString(descriptionUserExpr)).append("\n");
-    sb.append("    bankAccountID: ").append(toIndentedString(bankAccountID)).append("\n");
-    sb.append("    targetBankAccountUserExpr: ").append(toIndentedString(targetBankAccountUserExpr)).append("\n");
-    sb.append("    targeBankNameUserExpr: ").append(toIndentedString(targeBankNameUserExpr)).append("\n");
-    sb.append("    varSymbolUserExpr: ").append(toIndentedString(varSymbolUserExpr)).append("\n");
-    sb.append("    constSymbolUserExpr: ").append(toIndentedString(constSymbolUserExpr)).append("\n");
-    sb.append("    specSymbolUserExpr: ").append(toIndentedString(specSymbolUserExpr)).append("\n");
-    sb.append("    currencyUserExpr: ").append(toIndentedString(currencyUserExpr)).append("\n");
-    sb.append("    countryUserExpr: ").append(toIndentedString(countryUserExpr)).append("\n");
-    sb.append("    foreingIssueUserExpr: ").append(toIndentedString(foreingIssueUserExpr)).append("\n");
-    sb.append("    urgentUserExpr: ").append(toIndentedString(urgentUserExpr)).append("\n");
-    sb.append("    swiftCodeUserExpr: ").append(toIndentedString(swiftCodeUserExpr)).append("\n");
-    sb.append("    dueDateUserExpr: ").append(toIndentedString(dueDateUserExpr)).append("\n");
-    sb.append("    firmIDExpr: ").append(toIndentedString(firmIDExpr)).append("\n");
-    sb.append("    busOrderIDExpr: ").append(toIndentedString(busOrderIDExpr)).append("\n");
-    sb.append("    busTransactionIDExpr: ").append(toIndentedString(busTransactionIDExpr)).append("\n");
-    sb.append("    divisionIDExpr: ").append(toIndentedString(divisionIDExpr)).append("\n");
-    sb.append("    firmIDUserExpr: ").append(toIndentedString(firmIDUserExpr)).append("\n");
-    sb.append("    busOrderIDUserExpr: ").append(toIndentedString(busOrderIDUserExpr)).append("\n");
-    sb.append("    busTransactionIDUserExpr: ").append(toIndentedString(busTransactionIDUserExpr)).append("\n");
-    sb.append("    divisionIDUserExpr: ").append(toIndentedString(divisionIDUserExpr)).append("\n");
-    sb.append("    baseType: ").append(toIndentedString(baseType)).append("\n");
-    sb.append("    baseTypeText: ").append(toIndentedString(baseTypeText)).append("\n");
-    sb.append("    flagUserExpr: ").append(toIndentedString(flagUserExpr)).append("\n");
-    sb.append("    flagExpr: ").append(toIndentedString(flagExpr)).append("\n");
-    sb.append("    bankAccountUserExpr: ").append(toIndentedString(bankAccountUserExpr)).append("\n");
-    sb.append("    bankAccountByExpr: ").append(toIndentedString(bankAccountByExpr)).append("\n");
-    sb.append("    busProjectIDExpr: ").append(toIndentedString(busProjectIDExpr)).append("\n");
-    sb.append("    busProjectIDUserExpr: ").append(toIndentedString(busProjectIDUserExpr)).append("\n");
-    sb.append("    targetBankCountryUserExpr: ").append(toIndentedString(targetBankCountryUserExpr)).append("\n");
+    sb.append("    descriptionexpr: ").append(toIndentedString(descriptionexpr)).append("\n");
+    sb.append("    targetbankaccountexpr: ").append(toIndentedString(targetbankaccountexpr)).append("\n");
+    sb.append("    targebanknameexpr: ").append(toIndentedString(targebanknameexpr)).append("\n");
+    sb.append("    varsymbolexpr: ").append(toIndentedString(varsymbolexpr)).append("\n");
+    sb.append("    constsymbolexpr: ").append(toIndentedString(constsymbolexpr)).append("\n");
+    sb.append("    specsymbolexpr: ").append(toIndentedString(specsymbolexpr)).append("\n");
+    sb.append("    currencyexpr: ").append(toIndentedString(currencyexpr)).append("\n");
+    sb.append("    countryexpr: ").append(toIndentedString(countryexpr)).append("\n");
+    sb.append("    foreingissueexpr: ").append(toIndentedString(foreingissueexpr)).append("\n");
+    sb.append("    urgentexpr: ").append(toIndentedString(urgentexpr)).append("\n");
+    sb.append("    swiftcodeexpr: ").append(toIndentedString(swiftcodeexpr)).append("\n");
+    sb.append("    duedateexpr: ").append(toIndentedString(duedateexpr)).append("\n");
+    sb.append("    targetbankcountryexpr: ").append(toIndentedString(targetbankcountryexpr)).append("\n");
+    sb.append("    supressexpression: ").append(toIndentedString(supressexpression)).append("\n");
+    sb.append("    supressexpressiontext: ").append(toIndentedString(supressexpressiontext)).append("\n");
+    sb.append("    descriptionuserexpr: ").append(toIndentedString(descriptionuserexpr)).append("\n");
+    sb.append("    bankaccountId: ").append(toIndentedString(bankaccountId)).append("\n");
+    sb.append("    targetbankaccountuserexpr: ").append(toIndentedString(targetbankaccountuserexpr)).append("\n");
+    sb.append("    targebanknameuserexpr: ").append(toIndentedString(targebanknameuserexpr)).append("\n");
+    sb.append("    varsymboluserexpr: ").append(toIndentedString(varsymboluserexpr)).append("\n");
+    sb.append("    constsymboluserexpr: ").append(toIndentedString(constsymboluserexpr)).append("\n");
+    sb.append("    specsymboluserexpr: ").append(toIndentedString(specsymboluserexpr)).append("\n");
+    sb.append("    currencyuserexpr: ").append(toIndentedString(currencyuserexpr)).append("\n");
+    sb.append("    countryuserexpr: ").append(toIndentedString(countryuserexpr)).append("\n");
+    sb.append("    foreingissueuserexpr: ").append(toIndentedString(foreingissueuserexpr)).append("\n");
+    sb.append("    urgentuserexpr: ").append(toIndentedString(urgentuserexpr)).append("\n");
+    sb.append("    swiftcodeuserexpr: ").append(toIndentedString(swiftcodeuserexpr)).append("\n");
+    sb.append("    duedateuserexpr: ").append(toIndentedString(duedateuserexpr)).append("\n");
+    sb.append("    firmidexpr: ").append(toIndentedString(firmidexpr)).append("\n");
+    sb.append("    busorderidexpr: ").append(toIndentedString(busorderidexpr)).append("\n");
+    sb.append("    bustransactionidexpr: ").append(toIndentedString(bustransactionidexpr)).append("\n");
+    sb.append("    divisionidexpr: ").append(toIndentedString(divisionidexpr)).append("\n");
+    sb.append("    firmiduserexpr: ").append(toIndentedString(firmiduserexpr)).append("\n");
+    sb.append("    busorderiduserexpr: ").append(toIndentedString(busorderiduserexpr)).append("\n");
+    sb.append("    bustransactioniduserexpr: ").append(toIndentedString(bustransactioniduserexpr)).append("\n");
+    sb.append("    divisioniduserexpr: ").append(toIndentedString(divisioniduserexpr)).append("\n");
+    sb.append("    basetype: ").append(toIndentedString(basetype)).append("\n");
+    sb.append("    basetypeText: ").append(toIndentedString(basetypeText)).append("\n");
+    sb.append("    flaguserexpr: ").append(toIndentedString(flaguserexpr)).append("\n");
+    sb.append("    flagexpr: ").append(toIndentedString(flagexpr)).append("\n");
+    sb.append("    bankaccountuserexpr: ").append(toIndentedString(bankaccountuserexpr)).append("\n");
+    sb.append("    bankaccountbyexpr: ").append(toIndentedString(bankaccountbyexpr)).append("\n");
+    sb.append("    busprojectidexpr: ").append(toIndentedString(busprojectidexpr)).append("\n");
+    sb.append("    busprojectiduserexpr: ").append(toIndentedString(busprojectiduserexpr)).append("\n");
+    sb.append("    targetbankcountryuserexpr: ").append(toIndentedString(targetbankcountryuserexpr)).append("\n");
     sb.append("}");
     return sb.toString();
   }

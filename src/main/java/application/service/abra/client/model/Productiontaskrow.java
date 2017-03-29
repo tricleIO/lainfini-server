@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,171 +34,216 @@ import java.util.Objects;
 /**
  * Productiontaskrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Productiontaskrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Material_ID")
-  private String materialID = null;
+  @SerializedName("material_id")
+  private String materialId = null;
 
-  @SerializedName("Product_ID")
-  private String productID = null;
+  @SerializedName("product_id")
+  private String productId = null;
 
-  @SerializedName("MaterialQuantity")
-  private Double materialQuantity = null;
+  @SerializedName("materialquantity")
+  private Double materialquantity = null;
 
-  @SerializedName("ProductRow_ID")
-  private String productRowID = null;
+  @SerializedName("productrow_id")
+  private String productrowId = null;
 
-  @SerializedName("MaterialRow_ID")
-  private String materialRowID = null;
+  @SerializedName("materialrow_id")
+  private String materialrowId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Výrobní úloha [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Výrobní úloha [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Productiontaskrow materialID(String materialID) {
-    this.materialID = materialID;
+  public Productiontaskrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Materiál; ID objektu Skladová karta [persistentní položka]
-   * @return materialID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Materiál; ID objektu Skladová karta [persistentní položka]")
-  public String getMaterialID() {
-    return materialID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setMaterialID(String materialID) {
-    this.materialID = materialID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Productiontaskrow productID(String productID) {
-    this.productID = productID;
+  public Productiontaskrow id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Výrobek; ID objektu Skladová karta [persistentní položka]
-   * @return productID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Výrobek; ID objektu Skladová karta [persistentní položka]")
-  public String getProductID() {
-    return productID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setProductID(String productID) {
-    this.productID = productID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Productiontaskrow materialQuantity(Double materialQuantity) {
-    this.materialQuantity = materialQuantity;
+  public Productiontaskrow classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Množství [persistentní položka]
-   * @return materialQuantity
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Množství [persistentní položka]")
-  public Double getMaterialQuantity() {
-    return materialQuantity;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setMaterialQuantity(Double materialQuantity) {
-    this.materialQuantity = materialQuantity;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Productiontaskrow productRowID(String productRowID) {
-    this.productRowID = productRowID;
+  public Productiontaskrow objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Příjem v.; ID objektu Příjem hotových výrobků - řádek [persistentní položka]
-   * @return productRowID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Příjem v.; ID objektu Příjem hotových výrobků - řádek [persistentní položka]")
-  public String getProductRowID() {
-    return productRowID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setProductRowID(String productRowID) {
-    this.productRowID = productRowID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Productiontaskrow materialRowID(String materialRowID) {
-    this.materialRowID = materialRowID;
+  public Productiontaskrow parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Výdej m.; ID objektu Výdej materiálu do výroby - řádek [persistentní položka]
-   * @return materialRowID
+   * vlastník; id objektu výrobní úloha [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Výdej m.; ID objektu Výdej materiálu do výroby - řádek [persistentní položka]")
-  public String getMaterialRowID() {
-    return materialRowID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu výrobní úloha [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setMaterialRowID(String materialRowID) {
-    this.materialRowID = materialRowID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Productiontaskrow materialId(String materialId) {
+    this.materialId = materialId;
+    return this;
+  }
+
+   /**
+   * materiál; id objektu skladová karta [persistentní položka]
+   * @return materialId
+  **/
+  @ApiModelProperty(example = "null", value = "materiál; id objektu skladová karta [persistentní položka]")
+  public String getMaterialId() {
+    return materialId;
+  }
+
+  public void setMaterialId(String materialId) {
+    this.materialId = materialId;
+  }
+
+  public Productiontaskrow productId(String productId) {
+    this.productId = productId;
+    return this;
+  }
+
+   /**
+   * výrobek; id objektu skladová karta [persistentní položka]
+   * @return productId
+  **/
+  @ApiModelProperty(example = "null", value = "výrobek; id objektu skladová karta [persistentní položka]")
+  public String getProductId() {
+    return productId;
+  }
+
+  public void setProductId(String productId) {
+    this.productId = productId;
+  }
+
+  public Productiontaskrow materialquantity(Double materialquantity) {
+    this.materialquantity = materialquantity;
+    return this;
+  }
+
+   /**
+   * množství [persistentní položka]
+   * @return materialquantity
+  **/
+  @ApiModelProperty(example = "null", value = "množství [persistentní položka]")
+  public Double getMaterialquantity() {
+    return materialquantity;
+  }
+
+  public void setMaterialquantity(Double materialquantity) {
+    this.materialquantity = materialquantity;
+  }
+
+  public Productiontaskrow productrowId(String productrowId) {
+    this.productrowId = productrowId;
+    return this;
+  }
+
+   /**
+   * příjem v.; id objektu příjem hotových výrobků - řádek [persistentní položka]
+   * @return productrowId
+  **/
+  @ApiModelProperty(example = "null", value = "příjem v.; id objektu příjem hotových výrobků - řádek [persistentní položka]")
+  public String getProductrowId() {
+    return productrowId;
+  }
+
+  public void setProductrowId(String productrowId) {
+    this.productrowId = productrowId;
+  }
+
+  public Productiontaskrow materialrowId(String materialrowId) {
+    this.materialrowId = materialrowId;
+    return this;
+  }
+
+   /**
+   * výdej m.; id objektu výdej materiálu do výroby - řádek [persistentní položka]
+   * @return materialrowId
+  **/
+  @ApiModelProperty(example = "null", value = "výdej m.; id objektu výdej materiálu do výroby - řádek [persistentní položka]")
+  public String getMaterialrowId() {
+    return materialrowId;
+  }
+
+  public void setMaterialrowId(String materialrowId) {
+    this.materialrowId = materialrowId;
   }
 
 
@@ -211,21 +256,21 @@ public class Productiontaskrow   {
       return false;
     }
     Productiontaskrow productiontaskrow = (Productiontaskrow) o;
-    return Objects.equals(this.displayName, productiontaskrow.displayName) &&
-        Objects.equals(this.ID, productiontaskrow.ID) &&
-        Objects.equals(this.classID, productiontaskrow.classID) &&
-        Objects.equals(this.objVersion, productiontaskrow.objVersion) &&
-        Objects.equals(this.parentID, productiontaskrow.parentID) &&
-        Objects.equals(this.materialID, productiontaskrow.materialID) &&
-        Objects.equals(this.productID, productiontaskrow.productID) &&
-        Objects.equals(this.materialQuantity, productiontaskrow.materialQuantity) &&
-        Objects.equals(this.productRowID, productiontaskrow.productRowID) &&
-        Objects.equals(this.materialRowID, productiontaskrow.materialRowID);
+    return Objects.equals(this.displayname, productiontaskrow.displayname) &&
+        Objects.equals(this.id, productiontaskrow.id) &&
+        Objects.equals(this.classid, productiontaskrow.classid) &&
+        Objects.equals(this.objversion, productiontaskrow.objversion) &&
+        Objects.equals(this.parentId, productiontaskrow.parentId) &&
+        Objects.equals(this.materialId, productiontaskrow.materialId) &&
+        Objects.equals(this.productId, productiontaskrow.productId) &&
+        Objects.equals(this.materialquantity, productiontaskrow.materialquantity) &&
+        Objects.equals(this.productrowId, productiontaskrow.productrowId) &&
+        Objects.equals(this.materialrowId, productiontaskrow.materialrowId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, materialID, productID, materialQuantity, productRowID, materialRowID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, materialId, productId, materialquantity, productrowId, materialrowId);
   }
 
   @Override
@@ -233,16 +278,16 @@ public class Productiontaskrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Productiontaskrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    materialID: ").append(toIndentedString(materialID)).append("\n");
-    sb.append("    productID: ").append(toIndentedString(productID)).append("\n");
-    sb.append("    materialQuantity: ").append(toIndentedString(materialQuantity)).append("\n");
-    sb.append("    productRowID: ").append(toIndentedString(productRowID)).append("\n");
-    sb.append("    materialRowID: ").append(toIndentedString(materialRowID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    materialId: ").append(toIndentedString(materialId)).append("\n");
+    sb.append("    productId: ").append(toIndentedString(productId)).append("\n");
+    sb.append("    materialquantity: ").append(toIndentedString(materialquantity)).append("\n");
+    sb.append("    productrowId: ").append(toIndentedString(productrowId)).append("\n");
+    sb.append("    materialrowId: ").append(toIndentedString(materialrowId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

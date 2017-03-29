@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,147 +36,183 @@ import java.util.Objects;
 /**
  * Posstation
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posstation   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Posstationsdevice> rows = new ArrayList<Posstationsdevice>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Node")
+  @SerializedName("node")
   private String node = null;
 
-  @SerializedName("DefaultLPT")
-  private Integer defaultLPT = null;
+  @SerializedName("defaultlpt")
+  private Integer defaultlpt = null;
 
-  @SerializedName("DrawerMode")
-  private Integer drawerMode = null;
+  @SerializedName("drawermode")
+  private Integer drawermode = null;
 
-  @SerializedName("SumRows")
-  private Boolean sumRows = null;
+  @SerializedName("sumrows")
+  private Boolean sumrows = null;
 
-  @SerializedName("DirectRowPrinting")
-  private Boolean directRowPrinting = null;
+  @SerializedName("directrowprinting")
+  private Boolean directrowprinting = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Shop_ID")
-  private String shopID = null;
+  @SerializedName("shop_id")
+  private String shopId = null;
 
-  @SerializedName("PaymentStyle")
-  private Integer paymentStyle = null;
+  @SerializedName("paymentstyle")
+  private Integer paymentstyle = null;
 
-  @SerializedName("POSTouchKey_ID")
-  private String pOSTouchKeyID = null;
+  @SerializedName("postouchkey_id")
+  private String postouchkeyId = null;
 
-  @SerializedName("POSSellingStandsMap_ID")
-  private String pOSSellingStandsMapID = null;
+  @SerializedName("possellingstandsmap_id")
+  private String possellingstandsmapId = null;
 
-  @SerializedName("Picture_ID")
-  private Posstation pictureID = null;
+  @SerializedName("picture_id")
+  private Posstation pictureId = null;
 
-  @SerializedName("ShowStoreCardPicture")
-  private Boolean showStoreCardPicture = null;
+  @SerializedName("showstorecardpicture")
+  private Boolean showstorecardpicture = null;
 
-  @SerializedName("ScreenMode")
-  private Integer screenMode = null;
+  @SerializedName("screenmode")
+  private Integer screenmode = null;
 
-  @SerializedName("ForcedLogin")
-  private Boolean forcedLogin = null;
+  @SerializedName("forcedlogin")
+  private Boolean forcedlogin = null;
 
-  @SerializedName("EnableTotalStop")
-  private Boolean enableTotalStop = null;
+  @SerializedName("enabletotalstop")
+  private Boolean enabletotalstop = null;
 
-  @SerializedName("EnableSecureStop")
-  private Boolean enableSecureStop = null;
+  @SerializedName("enablesecurestop")
+  private Boolean enablesecurestop = null;
 
-  @SerializedName("QuestionBeforeBill")
-  private Boolean questionBeforeBill = null;
+  @SerializedName("questionbeforebill")
+  private Boolean questionbeforebill = null;
 
-  @SerializedName("QuestionBeforeBillGastro")
-  private Boolean questionBeforeBillGastro = null;
+  @SerializedName("questionbeforebillgastro")
+  private Boolean questionbeforebillgastro = null;
 
-  @SerializedName("QuestionBeforeBillPreview")
-  private Boolean questionBeforeBillPreview = null;
+  @SerializedName("questionbeforebillpreview")
+  private Boolean questionbeforebillpreview = null;
 
-  @SerializedName("StoreCardShowFormat")
-  private Integer storeCardShowFormat = null;
+  @SerializedName("storecardshowformat")
+  private Integer storecardshowformat = null;
 
-  @SerializedName("ShowStore")
-  private Boolean showStore = null;
+  @SerializedName("showstore")
+  private Boolean showstore = null;
 
-  @SerializedName("ShowMacroCard")
-  private Boolean showMacroCard = null;
+  @SerializedName("showmacrocard")
+  private Boolean showmacrocard = null;
 
-  @SerializedName("PrintBillAsReport")
-  private Boolean printBillAsReport = null;
+  @SerializedName("printbillasreport")
+  private Boolean printbillasreport = null;
 
-  @SerializedName("PrintNameMultiLine")
-  private Boolean printNameMultiLine = null;
+  @SerializedName("printnamemultiline")
+  private Boolean printnamemultiline = null;
 
-  @SerializedName("PrintOrderNameMultiLine")
-  private Boolean printOrderNameMultiLine = null;
+  @SerializedName("printordernamemultiline")
+  private Boolean printordernamemultiline = null;
 
-  @SerializedName("PrintBillMultiple")
-  private Boolean printBillMultiple = null;
+  @SerializedName("printbillmultiple")
+  private Boolean printbillmultiple = null;
 
-  @SerializedName("Devices")
+  @SerializedName("devices")
   private List<Posstationsdevice> devices = new ArrayList<Posstationsdevice>();
 
-  @SerializedName("OrderPrinters")
-  private List<Posstationorderprinter> orderPrinters = new ArrayList<Posstationorderprinter>();
+  @SerializedName("orderprinters")
+  private List<Posstationorderprinter> orderprinters = new ArrayList<Posstationorderprinter>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Posstation displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Posstation id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Posstation classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Posstation objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Posstation rows(List<Posstationsdevice> rows) {
@@ -190,10 +226,10 @@ public class Posstation   {
   }
 
    /**
-   * Řádky; kolekce BO Periferie [nepersistentní položka]
+   * Řádky; kolekce bo periferie [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Periferie [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo periferie [nepersistentní položka]")
   public List<Posstationsdevice> getRows() {
     return rows;
   }
@@ -208,10 +244,10 @@ public class Posstation   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -226,10 +262,10 @@ public class Posstation   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -244,10 +280,10 @@ public class Posstation   {
   }
 
    /**
-   * ID síť. karty [persistentní položka]
+   * id síť. karty [persistentní položka]
    * @return node
   **/
-  @ApiModelProperty(example = "null", value = "ID síť. karty [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "id síť. karty [persistentní položka]")
   public String getNode() {
     return node;
   }
@@ -256,454 +292,454 @@ public class Posstation   {
     this.node = node;
   }
 
-  public Posstation defaultLPT(Integer defaultLPT) {
-    this.defaultLPT = defaultLPT;
+  public Posstation defaultlpt(Integer defaultlpt) {
+    this.defaultlpt = defaultlpt;
     return this;
   }
 
    /**
-   * Tiskárna [persistentní položka]
-   * @return defaultLPT
+   * tiskárna [persistentní položka]
+   * @return defaultlpt
   **/
-  @ApiModelProperty(example = "null", value = "Tiskárna [persistentní položka]")
-  public Integer getDefaultLPT() {
-    return defaultLPT;
+  @ApiModelProperty(example = "null", value = "tiskárna [persistentní položka]")
+  public Integer getDefaultlpt() {
+    return defaultlpt;
   }
 
-  public void setDefaultLPT(Integer defaultLPT) {
-    this.defaultLPT = defaultLPT;
+  public void setDefaultlpt(Integer defaultlpt) {
+    this.defaultlpt = defaultlpt;
   }
 
-  public Posstation drawerMode(Integer drawerMode) {
-    this.drawerMode = drawerMode;
+  public Posstation drawermode(Integer drawermode) {
+    this.drawermode = drawermode;
     return this;
   }
 
    /**
-   * Otevírání zásuvky [persistentní položka]
-   * @return drawerMode
+   * otevírání zásuvky [persistentní položka]
+   * @return drawermode
   **/
-  @ApiModelProperty(example = "null", value = "Otevírání zásuvky [persistentní položka]")
-  public Integer getDrawerMode() {
-    return drawerMode;
+  @ApiModelProperty(example = "null", value = "otevírání zásuvky [persistentní položka]")
+  public Integer getDrawermode() {
+    return drawermode;
   }
 
-  public void setDrawerMode(Integer drawerMode) {
-    this.drawerMode = drawerMode;
+  public void setDrawermode(Integer drawermode) {
+    this.drawermode = drawermode;
   }
 
-  public Posstation sumRows(Boolean sumRows) {
-    this.sumRows = sumRows;
+  public Posstation sumrows(Boolean sumrows) {
+    this.sumrows = sumrows;
     return this;
   }
 
    /**
-   * Sčítat [persistentní položka]
-   * @return sumRows
+   * sčítat [persistentní položka]
+   * @return sumrows
   **/
-  @ApiModelProperty(example = "null", value = "Sčítat [persistentní položka]")
-  public Boolean getSumRows() {
-    return sumRows;
+  @ApiModelProperty(example = "null", value = "sčítat [persistentní položka]")
+  public Boolean getSumrows() {
+    return sumrows;
   }
 
-  public void setSumRows(Boolean sumRows) {
-    this.sumRows = sumRows;
+  public void setSumrows(Boolean sumrows) {
+    this.sumrows = sumrows;
   }
 
-  public Posstation directRowPrinting(Boolean directRowPrinting) {
-    this.directRowPrinting = directRowPrinting;
+  public Posstation directrowprinting(Boolean directrowprinting) {
+    this.directrowprinting = directrowprinting;
     return this;
   }
 
    /**
    * Řádkový tisk [persistentní položka]
-   * @return directRowPrinting
+   * @return directrowprinting
   **/
   @ApiModelProperty(example = "null", value = "Řádkový tisk [persistentní položka]")
-  public Boolean getDirectRowPrinting() {
-    return directRowPrinting;
+  public Boolean getDirectrowprinting() {
+    return directrowprinting;
   }
 
-  public void setDirectRowPrinting(Boolean directRowPrinting) {
-    this.directRowPrinting = directRowPrinting;
+  public void setDirectrowprinting(Boolean directrowprinting) {
+    this.directrowprinting = directrowprinting;
   }
 
-  public Posstation docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Posstation docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Řada dokladů; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * Řada dokladů; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "Řada dokladů; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Posstation shopID(String shopID) {
-    this.shopID = shopID;
+  public Posstation shopId(String shopId) {
+    this.shopId = shopId;
     return this;
   }
 
    /**
-   * Provoz; ID objektu Nastavení provozu [persistentní položka]
-   * @return shopID
+   * provoz; id objektu nastavení provozu [persistentní položka]
+   * @return shopId
   **/
-  @ApiModelProperty(example = "null", value = "Provoz; ID objektu Nastavení provozu [persistentní položka]")
-  public String getShopID() {
-    return shopID;
+  @ApiModelProperty(example = "null", value = "provoz; id objektu nastavení provozu [persistentní položka]")
+  public String getShopId() {
+    return shopId;
   }
 
-  public void setShopID(String shopID) {
-    this.shopID = shopID;
+  public void setShopId(String shopId) {
+    this.shopId = shopId;
   }
 
-  public Posstation paymentStyle(Integer paymentStyle) {
-    this.paymentStyle = paymentStyle;
+  public Posstation paymentstyle(Integer paymentstyle) {
+    this.paymentstyle = paymentstyle;
     return this;
   }
 
    /**
-   * Způsob platby [persistentní položka]
-   * @return paymentStyle
+   * způsob platby [persistentní položka]
+   * @return paymentstyle
   **/
-  @ApiModelProperty(example = "null", value = "Způsob platby [persistentní položka]")
-  public Integer getPaymentStyle() {
-    return paymentStyle;
+  @ApiModelProperty(example = "null", value = "způsob platby [persistentní položka]")
+  public Integer getPaymentstyle() {
+    return paymentstyle;
   }
 
-  public void setPaymentStyle(Integer paymentStyle) {
-    this.paymentStyle = paymentStyle;
+  public void setPaymentstyle(Integer paymentstyle) {
+    this.paymentstyle = paymentstyle;
   }
 
-  public Posstation pOSTouchKeyID(String pOSTouchKeyID) {
-    this.pOSTouchKeyID = pOSTouchKeyID;
+  public Posstation postouchkeyId(String postouchkeyId) {
+    this.postouchkeyId = postouchkeyId;
     return this;
   }
 
    /**
-   * Sada tlačítek; ID objektu Sada tlačítek dotykové kasy [persistentní položka]
-   * @return pOSTouchKeyID
+   * sada tlačítek; id objektu sada tlačítek dotykové kasy [persistentní položka]
+   * @return postouchkeyId
   **/
-  @ApiModelProperty(example = "null", value = "Sada tlačítek; ID objektu Sada tlačítek dotykové kasy [persistentní položka]")
-  public String getPOSTouchKeyID() {
-    return pOSTouchKeyID;
+  @ApiModelProperty(example = "null", value = "sada tlačítek; id objektu sada tlačítek dotykové kasy [persistentní položka]")
+  public String getPostouchkeyId() {
+    return postouchkeyId;
   }
 
-  public void setPOSTouchKeyID(String pOSTouchKeyID) {
-    this.pOSTouchKeyID = pOSTouchKeyID;
+  public void setPostouchkeyId(String postouchkeyId) {
+    this.postouchkeyId = postouchkeyId;
   }
 
-  public Posstation pOSSellingStandsMapID(String pOSSellingStandsMapID) {
-    this.pOSSellingStandsMapID = pOSSellingStandsMapID;
+  public Posstation possellingstandsmapId(String possellingstandsmapId) {
+    this.possellingstandsmapId = possellingstandsmapId;
     return this;
   }
 
    /**
-   * Mapa prodejních míst; ID objektu Mapa prodejních míst [persistentní položka]
-   * @return pOSSellingStandsMapID
+   * mapa prodejních míst; id objektu mapa prodejních míst [persistentní položka]
+   * @return possellingstandsmapId
   **/
-  @ApiModelProperty(example = "null", value = "Mapa prodejních míst; ID objektu Mapa prodejních míst [persistentní položka]")
-  public String getPOSSellingStandsMapID() {
-    return pOSSellingStandsMapID;
+  @ApiModelProperty(example = "null", value = "mapa prodejních míst; id objektu mapa prodejních míst [persistentní položka]")
+  public String getPossellingstandsmapId() {
+    return possellingstandsmapId;
   }
 
-  public void setPOSSellingStandsMapID(String pOSSellingStandsMapID) {
-    this.pOSSellingStandsMapID = pOSSellingStandsMapID;
+  public void setPossellingstandsmapId(String possellingstandsmapId) {
+    this.possellingstandsmapId = possellingstandsmapId;
   }
 
-  public Posstation pictureID(Posstation pictureID) {
-    this.pictureID = pictureID;
+  public Posstation pictureId(Posstation pictureId) {
+    this.pictureId = pictureId;
     return this;
   }
 
    /**
-   * Get pictureID
-   * @return pictureID
+   * Get pictureId
+   * @return pictureId
   **/
   @ApiModelProperty(example = "null", value = "")
-  public Posstation getPictureID() {
-    return pictureID;
+  public Posstation getPictureId() {
+    return pictureId;
   }
 
-  public void setPictureID(Posstation pictureID) {
-    this.pictureID = pictureID;
+  public void setPictureId(Posstation pictureId) {
+    this.pictureId = pictureId;
   }
 
-  public Posstation showStoreCardPicture(Boolean showStoreCardPicture) {
-    this.showStoreCardPicture = showStoreCardPicture;
+  public Posstation showstorecardpicture(Boolean showstorecardpicture) {
+    this.showstorecardpicture = showstorecardpicture;
     return this;
   }
 
    /**
-   * Obrázek zboží [persistentní položka]
-   * @return showStoreCardPicture
+   * obrázek zboží [persistentní položka]
+   * @return showstorecardpicture
   **/
-  @ApiModelProperty(example = "null", value = "Obrázek zboží [persistentní položka]")
-  public Boolean getShowStoreCardPicture() {
-    return showStoreCardPicture;
+  @ApiModelProperty(example = "null", value = "obrázek zboží [persistentní položka]")
+  public Boolean getShowstorecardpicture() {
+    return showstorecardpicture;
   }
 
-  public void setShowStoreCardPicture(Boolean showStoreCardPicture) {
-    this.showStoreCardPicture = showStoreCardPicture;
+  public void setShowstorecardpicture(Boolean showstorecardpicture) {
+    this.showstorecardpicture = showstorecardpicture;
   }
 
-  public Posstation screenMode(Integer screenMode) {
-    this.screenMode = screenMode;
+  public Posstation screenmode(Integer screenmode) {
+    this.screenmode = screenmode;
     return this;
   }
 
    /**
-   * Obrazovka [persistentní položka]
-   * @return screenMode
+   * obrazovka [persistentní položka]
+   * @return screenmode
   **/
-  @ApiModelProperty(example = "null", value = "Obrazovka [persistentní položka]")
-  public Integer getScreenMode() {
-    return screenMode;
+  @ApiModelProperty(example = "null", value = "obrazovka [persistentní položka]")
+  public Integer getScreenmode() {
+    return screenmode;
   }
 
-  public void setScreenMode(Integer screenMode) {
-    this.screenMode = screenMode;
+  public void setScreenmode(Integer screenmode) {
+    this.screenmode = screenmode;
   }
 
-  public Posstation forcedLogin(Boolean forcedLogin) {
-    this.forcedLogin = forcedLogin;
+  public Posstation forcedlogin(Boolean forcedlogin) {
+    this.forcedlogin = forcedlogin;
     return this;
   }
 
    /**
-   * Povinný login [persistentní položka]
-   * @return forcedLogin
+   * povinný login [persistentní položka]
+   * @return forcedlogin
   **/
-  @ApiModelProperty(example = "null", value = "Povinný login [persistentní položka]")
-  public Boolean getForcedLogin() {
-    return forcedLogin;
+  @ApiModelProperty(example = "null", value = "povinný login [persistentní položka]")
+  public Boolean getForcedlogin() {
+    return forcedlogin;
   }
 
-  public void setForcedLogin(Boolean forcedLogin) {
-    this.forcedLogin = forcedLogin;
+  public void setForcedlogin(Boolean forcedlogin) {
+    this.forcedlogin = forcedlogin;
   }
 
-  public Posstation enableTotalStop(Boolean enableTotalStop) {
-    this.enableTotalStop = enableTotalStop;
+  public Posstation enabletotalstop(Boolean enabletotalstop) {
+    this.enabletotalstop = enabletotalstop;
     return this;
   }
 
    /**
-   * Povolený stop [persistentní položka]
-   * @return enableTotalStop
+   * povolený stop [persistentní položka]
+   * @return enabletotalstop
   **/
-  @ApiModelProperty(example = "null", value = "Povolený stop [persistentní položka]")
-  public Boolean getEnableTotalStop() {
-    return enableTotalStop;
+  @ApiModelProperty(example = "null", value = "povolený stop [persistentní položka]")
+  public Boolean getEnabletotalstop() {
+    return enabletotalstop;
   }
 
-  public void setEnableTotalStop(Boolean enableTotalStop) {
-    this.enableTotalStop = enableTotalStop;
+  public void setEnabletotalstop(Boolean enabletotalstop) {
+    this.enabletotalstop = enabletotalstop;
   }
 
-  public Posstation enableSecureStop(Boolean enableSecureStop) {
-    this.enableSecureStop = enableSecureStop;
+  public Posstation enablesecurestop(Boolean enablesecurestop) {
+    this.enablesecurestop = enablesecurestop;
     return this;
   }
 
    /**
-   * Zabezpečené vypnutí kasy [persistentní položka]
-   * @return enableSecureStop
+   * zabezpečené vypnutí kasy [persistentní položka]
+   * @return enablesecurestop
   **/
-  @ApiModelProperty(example = "null", value = "Zabezpečené vypnutí kasy [persistentní položka]")
-  public Boolean getEnableSecureStop() {
-    return enableSecureStop;
+  @ApiModelProperty(example = "null", value = "zabezpečené vypnutí kasy [persistentní položka]")
+  public Boolean getEnablesecurestop() {
+    return enablesecurestop;
   }
 
-  public void setEnableSecureStop(Boolean enableSecureStop) {
-    this.enableSecureStop = enableSecureStop;
+  public void setEnablesecurestop(Boolean enablesecurestop) {
+    this.enablesecurestop = enablesecurestop;
   }
 
-  public Posstation questionBeforeBill(Boolean questionBeforeBill) {
-    this.questionBeforeBill = questionBeforeBill;
+  public Posstation questionbeforebill(Boolean questionbeforebill) {
+    this.questionbeforebill = questionbeforebill;
     return this;
   }
 
    /**
-   * Dotaz před tiskem pro maloobchodní prodej [persistentní položka]
-   * @return questionBeforeBill
+   * dotaz před tiskem pro maloobchodní prodej [persistentní položka]
+   * @return questionbeforebill
   **/
-  @ApiModelProperty(example = "null", value = "Dotaz před tiskem pro maloobchodní prodej [persistentní položka]")
-  public Boolean getQuestionBeforeBill() {
-    return questionBeforeBill;
+  @ApiModelProperty(example = "null", value = "dotaz před tiskem pro maloobchodní prodej [persistentní položka]")
+  public Boolean getQuestionbeforebill() {
+    return questionbeforebill;
   }
 
-  public void setQuestionBeforeBill(Boolean questionBeforeBill) {
-    this.questionBeforeBill = questionBeforeBill;
+  public void setQuestionbeforebill(Boolean questionbeforebill) {
+    this.questionbeforebill = questionbeforebill;
   }
 
-  public Posstation questionBeforeBillGastro(Boolean questionBeforeBillGastro) {
-    this.questionBeforeBillGastro = questionBeforeBillGastro;
+  public Posstation questionbeforebillgastro(Boolean questionbeforebillgastro) {
+    this.questionbeforebillgastro = questionbeforebillgastro;
     return this;
   }
 
    /**
-   * Dotaz před tiskem pro restaurační prodej [persistentní položka]
-   * @return questionBeforeBillGastro
+   * dotaz před tiskem pro restaurační prodej [persistentní položka]
+   * @return questionbeforebillgastro
   **/
-  @ApiModelProperty(example = "null", value = "Dotaz před tiskem pro restaurační prodej [persistentní položka]")
-  public Boolean getQuestionBeforeBillGastro() {
-    return questionBeforeBillGastro;
+  @ApiModelProperty(example = "null", value = "dotaz před tiskem pro restaurační prodej [persistentní položka]")
+  public Boolean getQuestionbeforebillgastro() {
+    return questionbeforebillgastro;
   }
 
-  public void setQuestionBeforeBillGastro(Boolean questionBeforeBillGastro) {
-    this.questionBeforeBillGastro = questionBeforeBillGastro;
+  public void setQuestionbeforebillgastro(Boolean questionbeforebillgastro) {
+    this.questionbeforebillgastro = questionbeforebillgastro;
   }
 
-  public Posstation questionBeforeBillPreview(Boolean questionBeforeBillPreview) {
-    this.questionBeforeBillPreview = questionBeforeBillPreview;
+  public Posstation questionbeforebillpreview(Boolean questionbeforebillpreview) {
+    this.questionbeforebillpreview = questionbeforebillpreview;
     return this;
   }
 
    /**
-   * Dotaz před tiskem náhledu účtenky [persistentní položka]
-   * @return questionBeforeBillPreview
+   * dotaz před tiskem náhledu účtenky [persistentní položka]
+   * @return questionbeforebillpreview
   **/
-  @ApiModelProperty(example = "null", value = "Dotaz před tiskem náhledu účtenky [persistentní položka]")
-  public Boolean getQuestionBeforeBillPreview() {
-    return questionBeforeBillPreview;
+  @ApiModelProperty(example = "null", value = "dotaz před tiskem náhledu účtenky [persistentní položka]")
+  public Boolean getQuestionbeforebillpreview() {
+    return questionbeforebillpreview;
   }
 
-  public void setQuestionBeforeBillPreview(Boolean questionBeforeBillPreview) {
-    this.questionBeforeBillPreview = questionBeforeBillPreview;
+  public void setQuestionbeforebillpreview(Boolean questionbeforebillpreview) {
+    this.questionbeforebillpreview = questionbeforebillpreview;
   }
 
-  public Posstation storeCardShowFormat(Integer storeCardShowFormat) {
-    this.storeCardShowFormat = storeCardShowFormat;
+  public Posstation storecardshowformat(Integer storecardshowformat) {
+    this.storecardshowformat = storecardshowformat;
     return this;
   }
 
    /**
-   * Obsah řádku kasy [persistentní položka]
-   * @return storeCardShowFormat
+   * obsah řádku kasy [persistentní položka]
+   * @return storecardshowformat
   **/
-  @ApiModelProperty(example = "null", value = "Obsah řádku kasy [persistentní položka]")
-  public Integer getStoreCardShowFormat() {
-    return storeCardShowFormat;
+  @ApiModelProperty(example = "null", value = "obsah řádku kasy [persistentní položka]")
+  public Integer getStorecardshowformat() {
+    return storecardshowformat;
   }
 
-  public void setStoreCardShowFormat(Integer storeCardShowFormat) {
-    this.storeCardShowFormat = storeCardShowFormat;
+  public void setStorecardshowformat(Integer storecardshowformat) {
+    this.storecardshowformat = storecardshowformat;
   }
 
-  public Posstation showStore(Boolean showStore) {
-    this.showStore = showStore;
+  public Posstation showstore(Boolean showstore) {
+    this.showstore = showstore;
     return this;
   }
 
    /**
-   * Zobrazovat sklad [persistentní položka]
-   * @return showStore
+   * zobrazovat sklad [persistentní položka]
+   * @return showstore
   **/
-  @ApiModelProperty(example = "null", value = "Zobrazovat sklad [persistentní položka]")
-  public Boolean getShowStore() {
-    return showStore;
+  @ApiModelProperty(example = "null", value = "zobrazovat sklad [persistentní položka]")
+  public Boolean getShowstore() {
+    return showstore;
   }
 
-  public void setShowStore(Boolean showStore) {
-    this.showStore = showStore;
+  public void setShowstore(Boolean showstore) {
+    this.showstore = showstore;
   }
 
-  public Posstation showMacroCard(Boolean showMacroCard) {
-    this.showMacroCard = showMacroCard;
+  public Posstation showmacrocard(Boolean showmacrocard) {
+    this.showmacrocard = showmacrocard;
     return this;
   }
 
    /**
-   * Zobrazovat makrokartu [persistentní položka]
-   * @return showMacroCard
+   * zobrazovat makrokartu [persistentní položka]
+   * @return showmacrocard
   **/
-  @ApiModelProperty(example = "null", value = "Zobrazovat makrokartu [persistentní položka]")
-  public Boolean getShowMacroCard() {
-    return showMacroCard;
+  @ApiModelProperty(example = "null", value = "zobrazovat makrokartu [persistentní položka]")
+  public Boolean getShowmacrocard() {
+    return showmacrocard;
   }
 
-  public void setShowMacroCard(Boolean showMacroCard) {
-    this.showMacroCard = showMacroCard;
+  public void setShowmacrocard(Boolean showmacrocard) {
+    this.showmacrocard = showmacrocard;
   }
 
-  public Posstation printBillAsReport(Boolean printBillAsReport) {
-    this.printBillAsReport = printBillAsReport;
+  public Posstation printbillasreport(Boolean printbillasreport) {
+    this.printbillasreport = printbillasreport;
     return this;
   }
 
    /**
    * Účtenku jako report [persistentní položka]
-   * @return printBillAsReport
+   * @return printbillasreport
   **/
   @ApiModelProperty(example = "null", value = "Účtenku jako report [persistentní položka]")
-  public Boolean getPrintBillAsReport() {
-    return printBillAsReport;
+  public Boolean getPrintbillasreport() {
+    return printbillasreport;
   }
 
-  public void setPrintBillAsReport(Boolean printBillAsReport) {
-    this.printBillAsReport = printBillAsReport;
+  public void setPrintbillasreport(Boolean printbillasreport) {
+    this.printbillasreport = printbillasreport;
   }
 
-  public Posstation printNameMultiLine(Boolean printNameMultiLine) {
-    this.printNameMultiLine = printNameMultiLine;
+  public Posstation printnamemultiline(Boolean printnamemultiline) {
+    this.printnamemultiline = printnamemultiline;
     return this;
   }
 
    /**
-   * Tisknout název na více řádek [persistentní položka]
-   * @return printNameMultiLine
+   * tisknout název na více řádek [persistentní položka]
+   * @return printnamemultiline
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout název na více řádek [persistentní položka]")
-  public Boolean getPrintNameMultiLine() {
-    return printNameMultiLine;
+  @ApiModelProperty(example = "null", value = "tisknout název na více řádek [persistentní položka]")
+  public Boolean getPrintnamemultiline() {
+    return printnamemultiline;
   }
 
-  public void setPrintNameMultiLine(Boolean printNameMultiLine) {
-    this.printNameMultiLine = printNameMultiLine;
+  public void setPrintnamemultiline(Boolean printnamemultiline) {
+    this.printnamemultiline = printnamemultiline;
   }
 
-  public Posstation printOrderNameMultiLine(Boolean printOrderNameMultiLine) {
-    this.printOrderNameMultiLine = printOrderNameMultiLine;
+  public Posstation printordernamemultiline(Boolean printordernamemultiline) {
+    this.printordernamemultiline = printordernamemultiline;
     return this;
   }
 
    /**
-   * Tisknout název na bonu na více řádek [persistentní položka]
-   * @return printOrderNameMultiLine
+   * tisknout název na bonu na více řádek [persistentní položka]
+   * @return printordernamemultiline
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout název na bonu na více řádek [persistentní položka]")
-  public Boolean getPrintOrderNameMultiLine() {
-    return printOrderNameMultiLine;
+  @ApiModelProperty(example = "null", value = "tisknout název na bonu na více řádek [persistentní položka]")
+  public Boolean getPrintordernamemultiline() {
+    return printordernamemultiline;
   }
 
-  public void setPrintOrderNameMultiLine(Boolean printOrderNameMultiLine) {
-    this.printOrderNameMultiLine = printOrderNameMultiLine;
+  public void setPrintordernamemultiline(Boolean printordernamemultiline) {
+    this.printordernamemultiline = printordernamemultiline;
   }
 
-  public Posstation printBillMultiple(Boolean printBillMultiple) {
-    this.printBillMultiple = printBillMultiple;
+  public Posstation printbillmultiple(Boolean printbillmultiple) {
+    this.printbillmultiple = printbillmultiple;
     return this;
   }
 
    /**
-   * Tisknout účtenku na obě tiskárny [persistentní položka]
-   * @return printBillMultiple
+   * tisknout účtenku na obě tiskárny [persistentní položka]
+   * @return printbillmultiple
   **/
-  @ApiModelProperty(example = "null", value = "Tisknout účtenku na obě tiskárny [persistentní položka]")
-  public Boolean getPrintBillMultiple() {
-    return printBillMultiple;
+  @ApiModelProperty(example = "null", value = "tisknout účtenku na obě tiskárny [persistentní položka]")
+  public Boolean getPrintbillmultiple() {
+    return printbillmultiple;
   }
 
-  public void setPrintBillMultiple(Boolean printBillMultiple) {
-    this.printBillMultiple = printBillMultiple;
+  public void setPrintbillmultiple(Boolean printbillmultiple) {
+    this.printbillmultiple = printbillmultiple;
   }
 
   public Posstation devices(List<Posstationsdevice> devices) {
@@ -717,10 +753,10 @@ public class Posstation   {
   }
 
    /**
-   * Periferie; kolekce BO Periferie [nepersistentní položka]
+   * periferie; kolekce bo periferie [nepersistentní položka]
    * @return devices
   **/
-  @ApiModelProperty(example = "null", value = "Periferie; kolekce BO Periferie [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "periferie; kolekce bo periferie [nepersistentní položka]")
   public List<Posstationsdevice> getDevices() {
     return devices;
   }
@@ -729,27 +765,27 @@ public class Posstation   {
     this.devices = devices;
   }
 
-  public Posstation orderPrinters(List<Posstationorderprinter> orderPrinters) {
-    this.orderPrinters = orderPrinters;
+  public Posstation orderprinters(List<Posstationorderprinter> orderprinters) {
+    this.orderprinters = orderprinters;
     return this;
   }
 
-  public Posstation addOrderPrintersItem(Posstationorderprinter orderPrintersItem) {
-    this.orderPrinters.add(orderPrintersItem);
+  public Posstation addOrderprintersItem(Posstationorderprinter orderprintersItem) {
+    this.orderprinters.add(orderprintersItem);
     return this;
   }
 
    /**
-   * Tiskárny bonů; kolekce BO Tiskárna bonů [nepersistentní položka]
-   * @return orderPrinters
+   * tiskárny bonů; kolekce bo tiskárna bonů [nepersistentní položka]
+   * @return orderprinters
   **/
-  @ApiModelProperty(example = "null", value = "Tiskárny bonů; kolekce BO Tiskárna bonů [nepersistentní položka]")
-  public List<Posstationorderprinter> getOrderPrinters() {
-    return orderPrinters;
+  @ApiModelProperty(example = "null", value = "tiskárny bonů; kolekce bo tiskárna bonů [nepersistentní položka]")
+  public List<Posstationorderprinter> getOrderprinters() {
+    return orderprinters;
   }
 
-  public void setOrderPrinters(List<Posstationorderprinter> orderPrinters) {
-    this.orderPrinters = orderPrinters;
+  public void setOrderprinters(List<Posstationorderprinter> orderprinters) {
+    this.orderprinters = orderprinters;
   }
 
 
@@ -762,46 +798,46 @@ public class Posstation   {
       return false;
     }
     Posstation posstation = (Posstation) o;
-    return Objects.equals(this.displayName, posstation.displayName) &&
-        Objects.equals(this.ID, posstation.ID) &&
-        Objects.equals(this.classID, posstation.classID) &&
-        Objects.equals(this.objVersion, posstation.objVersion) &&
+    return Objects.equals(this.displayname, posstation.displayname) &&
+        Objects.equals(this.id, posstation.id) &&
+        Objects.equals(this.classid, posstation.classid) &&
+        Objects.equals(this.objversion, posstation.objversion) &&
         Objects.equals(this.rows, posstation.rows) &&
         Objects.equals(this.hidden, posstation.hidden) &&
         Objects.equals(this.name, posstation.name) &&
         Objects.equals(this.node, posstation.node) &&
-        Objects.equals(this.defaultLPT, posstation.defaultLPT) &&
-        Objects.equals(this.drawerMode, posstation.drawerMode) &&
-        Objects.equals(this.sumRows, posstation.sumRows) &&
-        Objects.equals(this.directRowPrinting, posstation.directRowPrinting) &&
-        Objects.equals(this.docQueueID, posstation.docQueueID) &&
-        Objects.equals(this.shopID, posstation.shopID) &&
-        Objects.equals(this.paymentStyle, posstation.paymentStyle) &&
-        Objects.equals(this.pOSTouchKeyID, posstation.pOSTouchKeyID) &&
-        Objects.equals(this.pOSSellingStandsMapID, posstation.pOSSellingStandsMapID) &&
-        Objects.equals(this.pictureID, posstation.pictureID) &&
-        Objects.equals(this.showStoreCardPicture, posstation.showStoreCardPicture) &&
-        Objects.equals(this.screenMode, posstation.screenMode) &&
-        Objects.equals(this.forcedLogin, posstation.forcedLogin) &&
-        Objects.equals(this.enableTotalStop, posstation.enableTotalStop) &&
-        Objects.equals(this.enableSecureStop, posstation.enableSecureStop) &&
-        Objects.equals(this.questionBeforeBill, posstation.questionBeforeBill) &&
-        Objects.equals(this.questionBeforeBillGastro, posstation.questionBeforeBillGastro) &&
-        Objects.equals(this.questionBeforeBillPreview, posstation.questionBeforeBillPreview) &&
-        Objects.equals(this.storeCardShowFormat, posstation.storeCardShowFormat) &&
-        Objects.equals(this.showStore, posstation.showStore) &&
-        Objects.equals(this.showMacroCard, posstation.showMacroCard) &&
-        Objects.equals(this.printBillAsReport, posstation.printBillAsReport) &&
-        Objects.equals(this.printNameMultiLine, posstation.printNameMultiLine) &&
-        Objects.equals(this.printOrderNameMultiLine, posstation.printOrderNameMultiLine) &&
-        Objects.equals(this.printBillMultiple, posstation.printBillMultiple) &&
+        Objects.equals(this.defaultlpt, posstation.defaultlpt) &&
+        Objects.equals(this.drawermode, posstation.drawermode) &&
+        Objects.equals(this.sumrows, posstation.sumrows) &&
+        Objects.equals(this.directrowprinting, posstation.directrowprinting) &&
+        Objects.equals(this.docqueueId, posstation.docqueueId) &&
+        Objects.equals(this.shopId, posstation.shopId) &&
+        Objects.equals(this.paymentstyle, posstation.paymentstyle) &&
+        Objects.equals(this.postouchkeyId, posstation.postouchkeyId) &&
+        Objects.equals(this.possellingstandsmapId, posstation.possellingstandsmapId) &&
+        Objects.equals(this.pictureId, posstation.pictureId) &&
+        Objects.equals(this.showstorecardpicture, posstation.showstorecardpicture) &&
+        Objects.equals(this.screenmode, posstation.screenmode) &&
+        Objects.equals(this.forcedlogin, posstation.forcedlogin) &&
+        Objects.equals(this.enabletotalstop, posstation.enabletotalstop) &&
+        Objects.equals(this.enablesecurestop, posstation.enablesecurestop) &&
+        Objects.equals(this.questionbeforebill, posstation.questionbeforebill) &&
+        Objects.equals(this.questionbeforebillgastro, posstation.questionbeforebillgastro) &&
+        Objects.equals(this.questionbeforebillpreview, posstation.questionbeforebillpreview) &&
+        Objects.equals(this.storecardshowformat, posstation.storecardshowformat) &&
+        Objects.equals(this.showstore, posstation.showstore) &&
+        Objects.equals(this.showmacrocard, posstation.showmacrocard) &&
+        Objects.equals(this.printbillasreport, posstation.printbillasreport) &&
+        Objects.equals(this.printnamemultiline, posstation.printnamemultiline) &&
+        Objects.equals(this.printordernamemultiline, posstation.printordernamemultiline) &&
+        Objects.equals(this.printbillmultiple, posstation.printbillmultiple) &&
         Objects.equals(this.devices, posstation.devices) &&
-        Objects.equals(this.orderPrinters, posstation.orderPrinters);
+        Objects.equals(this.orderprinters, posstation.orderprinters);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, name, node, defaultLPT, drawerMode, sumRows, directRowPrinting, docQueueID, shopID, paymentStyle, pOSTouchKeyID, pOSSellingStandsMapID, pictureID, showStoreCardPicture, screenMode, forcedLogin, enableTotalStop, enableSecureStop, questionBeforeBill, questionBeforeBillGastro, questionBeforeBillPreview, storeCardShowFormat, showStore, showMacroCard, printBillAsReport, printNameMultiLine, printOrderNameMultiLine, printBillMultiple, devices, orderPrinters);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, name, node, defaultlpt, drawermode, sumrows, directrowprinting, docqueueId, shopId, paymentstyle, postouchkeyId, possellingstandsmapId, pictureId, showstorecardpicture, screenmode, forcedlogin, enabletotalstop, enablesecurestop, questionbeforebill, questionbeforebillgastro, questionbeforebillpreview, storecardshowformat, showstore, showmacrocard, printbillasreport, printnamemultiline, printordernamemultiline, printbillmultiple, devices, orderprinters);
   }
 
   @Override
@@ -809,41 +845,41 @@ public class Posstation   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posstation {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    node: ").append(toIndentedString(node)).append("\n");
-    sb.append("    defaultLPT: ").append(toIndentedString(defaultLPT)).append("\n");
-    sb.append("    drawerMode: ").append(toIndentedString(drawerMode)).append("\n");
-    sb.append("    sumRows: ").append(toIndentedString(sumRows)).append("\n");
-    sb.append("    directRowPrinting: ").append(toIndentedString(directRowPrinting)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    shopID: ").append(toIndentedString(shopID)).append("\n");
-    sb.append("    paymentStyle: ").append(toIndentedString(paymentStyle)).append("\n");
-    sb.append("    pOSTouchKeyID: ").append(toIndentedString(pOSTouchKeyID)).append("\n");
-    sb.append("    pOSSellingStandsMapID: ").append(toIndentedString(pOSSellingStandsMapID)).append("\n");
-    sb.append("    pictureID: ").append(toIndentedString(pictureID)).append("\n");
-    sb.append("    showStoreCardPicture: ").append(toIndentedString(showStoreCardPicture)).append("\n");
-    sb.append("    screenMode: ").append(toIndentedString(screenMode)).append("\n");
-    sb.append("    forcedLogin: ").append(toIndentedString(forcedLogin)).append("\n");
-    sb.append("    enableTotalStop: ").append(toIndentedString(enableTotalStop)).append("\n");
-    sb.append("    enableSecureStop: ").append(toIndentedString(enableSecureStop)).append("\n");
-    sb.append("    questionBeforeBill: ").append(toIndentedString(questionBeforeBill)).append("\n");
-    sb.append("    questionBeforeBillGastro: ").append(toIndentedString(questionBeforeBillGastro)).append("\n");
-    sb.append("    questionBeforeBillPreview: ").append(toIndentedString(questionBeforeBillPreview)).append("\n");
-    sb.append("    storeCardShowFormat: ").append(toIndentedString(storeCardShowFormat)).append("\n");
-    sb.append("    showStore: ").append(toIndentedString(showStore)).append("\n");
-    sb.append("    showMacroCard: ").append(toIndentedString(showMacroCard)).append("\n");
-    sb.append("    printBillAsReport: ").append(toIndentedString(printBillAsReport)).append("\n");
-    sb.append("    printNameMultiLine: ").append(toIndentedString(printNameMultiLine)).append("\n");
-    sb.append("    printOrderNameMultiLine: ").append(toIndentedString(printOrderNameMultiLine)).append("\n");
-    sb.append("    printBillMultiple: ").append(toIndentedString(printBillMultiple)).append("\n");
+    sb.append("    defaultlpt: ").append(toIndentedString(defaultlpt)).append("\n");
+    sb.append("    drawermode: ").append(toIndentedString(drawermode)).append("\n");
+    sb.append("    sumrows: ").append(toIndentedString(sumrows)).append("\n");
+    sb.append("    directrowprinting: ").append(toIndentedString(directrowprinting)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    shopId: ").append(toIndentedString(shopId)).append("\n");
+    sb.append("    paymentstyle: ").append(toIndentedString(paymentstyle)).append("\n");
+    sb.append("    postouchkeyId: ").append(toIndentedString(postouchkeyId)).append("\n");
+    sb.append("    possellingstandsmapId: ").append(toIndentedString(possellingstandsmapId)).append("\n");
+    sb.append("    pictureId: ").append(toIndentedString(pictureId)).append("\n");
+    sb.append("    showstorecardpicture: ").append(toIndentedString(showstorecardpicture)).append("\n");
+    sb.append("    screenmode: ").append(toIndentedString(screenmode)).append("\n");
+    sb.append("    forcedlogin: ").append(toIndentedString(forcedlogin)).append("\n");
+    sb.append("    enabletotalstop: ").append(toIndentedString(enabletotalstop)).append("\n");
+    sb.append("    enablesecurestop: ").append(toIndentedString(enablesecurestop)).append("\n");
+    sb.append("    questionbeforebill: ").append(toIndentedString(questionbeforebill)).append("\n");
+    sb.append("    questionbeforebillgastro: ").append(toIndentedString(questionbeforebillgastro)).append("\n");
+    sb.append("    questionbeforebillpreview: ").append(toIndentedString(questionbeforebillpreview)).append("\n");
+    sb.append("    storecardshowformat: ").append(toIndentedString(storecardshowformat)).append("\n");
+    sb.append("    showstore: ").append(toIndentedString(showstore)).append("\n");
+    sb.append("    showmacrocard: ").append(toIndentedString(showmacrocard)).append("\n");
+    sb.append("    printbillasreport: ").append(toIndentedString(printbillasreport)).append("\n");
+    sb.append("    printnamemultiline: ").append(toIndentedString(printnamemultiline)).append("\n");
+    sb.append("    printordernamemultiline: ").append(toIndentedString(printordernamemultiline)).append("\n");
+    sb.append("    printbillmultiple: ").append(toIndentedString(printbillmultiple)).append("\n");
     sb.append("    devices: ").append(toIndentedString(devices)).append("\n");
-    sb.append("    orderPrinters: ").append(toIndentedString(orderPrinters)).append("\n");
+    sb.append("    orderprinters: ").append(toIndentedString(orderprinters)).append("\n");
     sb.append("}");
     return sb.toString();
   }

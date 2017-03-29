@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,153 +34,198 @@ import java.util.Objects;
 /**
  * Posdocumentpayment
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posdocumentpayment   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("PaymentType_ID")
-  private String paymentTypeID = null;
+  @SerializedName("paymenttype_id")
+  private String paymenttypeId = null;
 
-  @SerializedName("IssuedDepositInvoice_ID")
-  private String issuedDepositInvoiceID = null;
+  @SerializedName("issueddepositinvoice_id")
+  private String issueddepositinvoiceId = null;
 
-  @SerializedName("Payment")
+  @SerializedName("payment")
   private Double payment = null;
 
-  @SerializedName("Refund")
+  @SerializedName("refund")
   private Double refund = null;
 
-  @SerializedName("LocalPayment")
-  private Double localPayment = null;
+  @SerializedName("localpayment")
+  private Double localpayment = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("AuthCode")
-  private String authCode = null;
+  @SerializedName("authcode")
+  private String authcode = null;
 
-  @SerializedName("TransactionData")
-  private String transactionData = null;
+  @SerializedName("transactiondata")
+  private String transactiondata = null;
 
-  @SerializedName("IsCanceled")
-  private Boolean isCanceled = null;
+  @SerializedName("iscanceled")
+  private Boolean iscanceled = null;
 
-  @SerializedName("LocalVATAmount")
-  private Double localVATAmount = null;
+  @SerializedName("localvatamount")
+  private Double localvatamount = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Účtenka [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Účtenka [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Posdocumentpayment currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Posdocumentpayment displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Posdocumentpayment paymentTypeID(String paymentTypeID) {
-    this.paymentTypeID = paymentTypeID;
+  public Posdocumentpayment id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Způsob platby; ID objektu Způsob úhrady [persistentní položka]
-   * @return paymentTypeID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Způsob platby; ID objektu Způsob úhrady [persistentní položka]")
-  public String getPaymentTypeID() {
-    return paymentTypeID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setPaymentTypeID(String paymentTypeID) {
-    this.paymentTypeID = paymentTypeID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Posdocumentpayment issuedDepositInvoiceID(String issuedDepositInvoiceID) {
-    this.issuedDepositInvoiceID = issuedDepositInvoiceID;
+  public Posdocumentpayment classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Zálohový list; ID objektu Zálohový list vydaný [persistentní položka]
-   * @return issuedDepositInvoiceID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Zálohový list; ID objektu Zálohový list vydaný [persistentní položka]")
-  public String getIssuedDepositInvoiceID() {
-    return issuedDepositInvoiceID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setIssuedDepositInvoiceID(String issuedDepositInvoiceID) {
-    this.issuedDepositInvoiceID = issuedDepositInvoiceID;
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Posdocumentpayment objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Posdocumentpayment parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu Účtenka [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu Účtenka [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Posdocumentpayment currencyId(String currencyId) {
+    this.currencyId = currencyId;
+    return this;
+  }
+
+   /**
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
+  **/
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
+  }
+
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
+  }
+
+  public Posdocumentpayment paymenttypeId(String paymenttypeId) {
+    this.paymenttypeId = paymenttypeId;
+    return this;
+  }
+
+   /**
+   * způsob platby; id objektu způsob úhrady [persistentní položka]
+   * @return paymenttypeId
+  **/
+  @ApiModelProperty(example = "null", value = "způsob platby; id objektu způsob úhrady [persistentní položka]")
+  public String getPaymenttypeId() {
+    return paymenttypeId;
+  }
+
+  public void setPaymenttypeId(String paymenttypeId) {
+    this.paymenttypeId = paymenttypeId;
+  }
+
+  public Posdocumentpayment issueddepositinvoiceId(String issueddepositinvoiceId) {
+    this.issueddepositinvoiceId = issueddepositinvoiceId;
+    return this;
+  }
+
+   /**
+   * zálohový list; id objektu zálohový list vydaný [persistentní položka]
+   * @return issueddepositinvoiceId
+  **/
+  @ApiModelProperty(example = "null", value = "zálohový list; id objektu zálohový list vydaný [persistentní položka]")
+  public String getIssueddepositinvoiceId() {
+    return issueddepositinvoiceId;
+  }
+
+  public void setIssueddepositinvoiceId(String issueddepositinvoiceId) {
+    this.issueddepositinvoiceId = issueddepositinvoiceId;
   }
 
   public Posdocumentpayment payment(Double payment) {
@@ -189,10 +234,10 @@ public class Posdocumentpayment   {
   }
 
    /**
-   * Placeno [persistentní položka]
+   * placeno [persistentní položka]
    * @return payment
   **/
-  @ApiModelProperty(example = "null", value = "Placeno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "placeno [persistentní položka]")
   public Double getPayment() {
     return payment;
   }
@@ -207,10 +252,10 @@ public class Posdocumentpayment   {
   }
 
    /**
-   * Vráceno [persistentní položka]
+   * vráceno [persistentní položka]
    * @return refund
   **/
-  @ApiModelProperty(example = "null", value = "Vráceno [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "vráceno [persistentní položka]")
   public Double getRefund() {
     return refund;
   }
@@ -219,22 +264,22 @@ public class Posdocumentpayment   {
     this.refund = refund;
   }
 
-  public Posdocumentpayment localPayment(Double localPayment) {
-    this.localPayment = localPayment;
+  public Posdocumentpayment localpayment(Double localpayment) {
+    this.localpayment = localpayment;
     return this;
   }
 
    /**
-   * Zaplaceno [persistentní položka]
-   * @return localPayment
+   * zaplaceno [persistentní položka]
+   * @return localpayment
   **/
-  @ApiModelProperty(example = "null", value = "Zaplaceno [persistentní položka]")
-  public Double getLocalPayment() {
-    return localPayment;
+  @ApiModelProperty(example = "null", value = "zaplaceno [persistentní položka]")
+  public Double getLocalpayment() {
+    return localpayment;
   }
 
-  public void setLocalPayment(Double localPayment) {
-    this.localPayment = localPayment;
+  public void setLocalpayment(Double localpayment) {
+    this.localpayment = localpayment;
   }
 
   public Posdocumentpayment description(String description) {
@@ -243,10 +288,10 @@ public class Posdocumentpayment   {
   }
 
    /**
-   * Komentář [persistentní položka]
+   * komentář [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Komentář [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "komentář [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -255,67 +300,76 @@ public class Posdocumentpayment   {
     this.description = description;
   }
 
-  public Posdocumentpayment authCode(String authCode) {
-    this.authCode = authCode;
+  public Posdocumentpayment authcode(String authcode) {
+    this.authcode = authcode;
     return this;
   }
 
    /**
-   * Autorizační kód [persistentní položka]
-   * @return authCode
+   * autorizační kód [persistentní položka]
+   * @return authcode
   **/
-  @ApiModelProperty(example = "null", value = "Autorizační kód [persistentní položka]")
-  public String getAuthCode() {
-    return authCode;
+  @ApiModelProperty(example = "null", value = "autorizační kód [persistentní položka]")
+  public String getAuthcode() {
+    return authcode;
   }
 
-  public void setAuthCode(String authCode) {
-    this.authCode = authCode;
+  public void setAuthcode(String authcode) {
+    this.authcode = authcode;
   }
 
-  public Posdocumentpayment transactionData(String transactionData) {
-    this.transactionData = transactionData;
+  public Posdocumentpayment transactiondata(String transactiondata) {
+    this.transactiondata = transactiondata;
     return this;
   }
 
    /**
-   * Transakční data [persistentní položka]
-   * @return transactionData
+   * transakční data [persistentní položka]
+   * @return transactiondata
   **/
-  @ApiModelProperty(example = "null", value = "Transakční data [persistentní položka]")
-  public String getTransactionData() {
-    return transactionData;
+  @ApiModelProperty(example = "null", value = "transakční data [persistentní položka]")
+  public String getTransactiondata() {
+    return transactiondata;
   }
 
-  public void setTransactionData(String transactionData) {
-    this.transactionData = transactionData;
+  public void setTransactiondata(String transactiondata) {
+    this.transactiondata = transactiondata;
   }
 
-  public Posdocumentpayment isCanceled(Boolean isCanceled) {
-    this.isCanceled = isCanceled;
+  public Posdocumentpayment iscanceled(Boolean iscanceled) {
+    this.iscanceled = iscanceled;
     return this;
   }
 
    /**
-   * Stornováno [persistentní položka]
-   * @return isCanceled
+   * stornováno [persistentní položka]
+   * @return iscanceled
   **/
-  @ApiModelProperty(example = "null", value = "Stornováno [persistentní položka]")
-  public Boolean getIsCanceled() {
-    return isCanceled;
+  @ApiModelProperty(example = "null", value = "stornováno [persistentní položka]")
+  public Boolean getIscanceled() {
+    return iscanceled;
   }
 
-  public void setIsCanceled(Boolean isCanceled) {
-    this.isCanceled = isCanceled;
+  public void setIscanceled(Boolean iscanceled) {
+    this.iscanceled = iscanceled;
+  }
+
+  public Posdocumentpayment localvatamount(Double localvatamount) {
+    this.localvatamount = localvatamount;
+    return this;
   }
 
    /**
-   * DPH v lokální měně [persistentní položka]
-   * @return localVATAmount
+   * dph v lokální měně [persistentní položka]
+   * @return localvatamount
   **/
-  @ApiModelProperty(example = "null", value = "DPH v lokální měně [persistentní položka]")
-  public Double getLocalVATAmount() {
-    return localVATAmount;
+  @ApiModelProperty(example = "null", value = "dph v lokální měně [persistentní položka]")
+  public Double getLocalvatamount() {
+    return localvatamount;
+  }
+
+  public void setLocalvatamount(Double localvatamount) {
+    this.localvatamount = localvatamount;
   }
 
 
@@ -328,27 +382,27 @@ public class Posdocumentpayment   {
       return false;
     }
     Posdocumentpayment posdocumentpayment = (Posdocumentpayment) o;
-    return Objects.equals(this.displayName, posdocumentpayment.displayName) &&
-        Objects.equals(this.ID, posdocumentpayment.ID) &&
-        Objects.equals(this.classID, posdocumentpayment.classID) &&
-        Objects.equals(this.objVersion, posdocumentpayment.objVersion) &&
-        Objects.equals(this.parentID, posdocumentpayment.parentID) &&
-        Objects.equals(this.currencyID, posdocumentpayment.currencyID) &&
-        Objects.equals(this.paymentTypeID, posdocumentpayment.paymentTypeID) &&
-        Objects.equals(this.issuedDepositInvoiceID, posdocumentpayment.issuedDepositInvoiceID) &&
+    return Objects.equals(this.displayname, posdocumentpayment.displayname) &&
+        Objects.equals(this.id, posdocumentpayment.id) &&
+        Objects.equals(this.classid, posdocumentpayment.classid) &&
+        Objects.equals(this.objversion, posdocumentpayment.objversion) &&
+        Objects.equals(this.parentId, posdocumentpayment.parentId) &&
+        Objects.equals(this.currencyId, posdocumentpayment.currencyId) &&
+        Objects.equals(this.paymenttypeId, posdocumentpayment.paymenttypeId) &&
+        Objects.equals(this.issueddepositinvoiceId, posdocumentpayment.issueddepositinvoiceId) &&
         Objects.equals(this.payment, posdocumentpayment.payment) &&
         Objects.equals(this.refund, posdocumentpayment.refund) &&
-        Objects.equals(this.localPayment, posdocumentpayment.localPayment) &&
+        Objects.equals(this.localpayment, posdocumentpayment.localpayment) &&
         Objects.equals(this.description, posdocumentpayment.description) &&
-        Objects.equals(this.authCode, posdocumentpayment.authCode) &&
-        Objects.equals(this.transactionData, posdocumentpayment.transactionData) &&
-        Objects.equals(this.isCanceled, posdocumentpayment.isCanceled) &&
-        Objects.equals(this.localVATAmount, posdocumentpayment.localVATAmount);
+        Objects.equals(this.authcode, posdocumentpayment.authcode) &&
+        Objects.equals(this.transactiondata, posdocumentpayment.transactiondata) &&
+        Objects.equals(this.iscanceled, posdocumentpayment.iscanceled) &&
+        Objects.equals(this.localvatamount, posdocumentpayment.localvatamount);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, currencyID, paymentTypeID, issuedDepositInvoiceID, payment, refund, localPayment, description, authCode, transactionData, isCanceled, localVATAmount);
+    return Objects.hash(displayname, id, classid, objversion, parentId, currencyId, paymenttypeId, issueddepositinvoiceId, payment, refund, localpayment, description, authcode, transactiondata, iscanceled, localvatamount);
   }
 
   @Override
@@ -356,22 +410,22 @@ public class Posdocumentpayment   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posdocumentpayment {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    paymentTypeID: ").append(toIndentedString(paymentTypeID)).append("\n");
-    sb.append("    issuedDepositInvoiceID: ").append(toIndentedString(issuedDepositInvoiceID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    paymenttypeId: ").append(toIndentedString(paymenttypeId)).append("\n");
+    sb.append("    issueddepositinvoiceId: ").append(toIndentedString(issueddepositinvoiceId)).append("\n");
     sb.append("    payment: ").append(toIndentedString(payment)).append("\n");
     sb.append("    refund: ").append(toIndentedString(refund)).append("\n");
-    sb.append("    localPayment: ").append(toIndentedString(localPayment)).append("\n");
+    sb.append("    localpayment: ").append(toIndentedString(localpayment)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    authCode: ").append(toIndentedString(authCode)).append("\n");
-    sb.append("    transactionData: ").append(toIndentedString(transactionData)).append("\n");
-    sb.append("    isCanceled: ").append(toIndentedString(isCanceled)).append("\n");
-    sb.append("    localVATAmount: ").append(toIndentedString(localVATAmount)).append("\n");
+    sb.append("    authcode: ").append(toIndentedString(authcode)).append("\n");
+    sb.append("    transactiondata: ").append(toIndentedString(transactiondata)).append("\n");
+    sb.append("    iscanceled: ").append(toIndentedString(iscanceled)).append("\n");
+    sb.append("    localvatamount: ").append(toIndentedString(localvatamount)).append("\n");
     sb.append("}");
     return sb.toString();
   }

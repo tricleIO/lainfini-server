@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -37,138 +37,174 @@ import java.util.Objects;
 /**
  * Gpmcateringunit
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Gpmcateringunit   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Gpmcateringunitrow> rows = new ArrayList<Gpmcateringunitrow>();
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("CreatedDate$DATE")
-  private DateTime createdDateDATE = null;
+  @SerializedName("createddate$date")
+  private DateTime createddatedate = null;
 
-  @SerializedName("CorrectedDate$DATE")
-  private DateTime correctedDateDATE = null;
+  @SerializedName("correcteddate$date")
+  private DateTime correcteddatedate = null;
 
-  @SerializedName("Currency_ID")
-  private String currencyID = null;
+  @SerializedName("currency_id")
+  private String currencyId = null;
 
-  @SerializedName("PlanedDailyCosts")
-  private Double planedDailyCosts = null;
+  @SerializedName("planeddailycosts")
+  private Double planeddailycosts = null;
 
-  @SerializedName("RealDailyCosts")
-  private Double realDailyCosts = null;
+  @SerializedName("realdailycosts")
+  private Double realdailycosts = null;
 
-  @SerializedName("DailyCostsDifference")
-  private Double dailyCostsDifference = null;
+  @SerializedName("dailycostsdifference")
+  private Double dailycostsdifference = null;
 
-  @SerializedName("PlanedWeeklyCosts")
-  private Double planedWeeklyCosts = null;
+  @SerializedName("planedweeklycosts")
+  private Double planedweeklycosts = null;
 
-  @SerializedName("RealWeeklyCosts")
-  private Double realWeeklyCosts = null;
+  @SerializedName("realweeklycosts")
+  private Double realweeklycosts = null;
 
-  @SerializedName("WeeklyCostsDifference")
-  private Double weeklyCostsDifference = null;
+  @SerializedName("weeklycostsdifference")
+  private Double weeklycostsdifference = null;
 
-  @SerializedName("PlanedMonthlyCosts")
-  private Double planedMonthlyCosts = null;
+  @SerializedName("planedmonthlycosts")
+  private Double planedmonthlycosts = null;
 
-  @SerializedName("RealMonthlyCosts")
-  private Double realMonthlyCosts = null;
+  @SerializedName("realmonthlycosts")
+  private Double realmonthlycosts = null;
 
-  @SerializedName("MonthlyCostsDifference")
-  private Double monthlyCostsDifference = null;
+  @SerializedName("monthlycostsdifference")
+  private Double monthlycostsdifference = null;
 
-  @SerializedName("PlanedYearlyCosts")
-  private Double planedYearlyCosts = null;
+  @SerializedName("planedyearlycosts")
+  private Double planedyearlycosts = null;
 
-  @SerializedName("RealYearlyCosts")
-  private Double realYearlyCosts = null;
+  @SerializedName("realyearlycosts")
+  private Double realyearlycosts = null;
 
-  @SerializedName("YearlyCostsDifference")
-  private Double yearlyCostsDifference = null;
+  @SerializedName("yearlycostsdifference")
+  private Double yearlycostsdifference = null;
+
+  public Gpmcateringunit displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Gpmcateringunit id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Gpmcateringunit classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Gpmcateringunit objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Gpmcateringunit rows(List<Gpmcateringunitrow> rows) {
@@ -182,10 +218,10 @@ public class Gpmcateringunit   {
   }
 
    /**
-   * Řádky; kolekce BO Stravní jednotka - řádek [nepersistentní položka]
+   * Řádky; kolekce bo stravní jednotka - řádek [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Stravní jednotka - řádek [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo stravní jednotka - řádek [nepersistentní položka]")
   public List<Gpmcateringunitrow> getRows() {
     return rows;
   }
@@ -194,202 +230,202 @@ public class Gpmcateringunit   {
     this.rows = rows;
   }
 
-  public Gpmcateringunit docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Gpmcateringunit docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Gpmcateringunit periodID(String periodID) {
-    this.periodID = periodID;
+  public Gpmcateringunit periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Gpmcateringunit ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Gpmcateringunit ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Gpmcateringunit docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Gpmcateringunit docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Gpmcateringunit createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Gpmcateringunit createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
   }
 
-  public Gpmcateringunit correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Gpmcateringunit correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
   }
 
-  public Gpmcateringunit newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Gpmcateringunit newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * typ relace
+   * @return newrelatedtype
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
   }
 
-  public Gpmcateringunit newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Gpmcateringunit newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
-  public Gpmcateringunit busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Gpmcateringunit busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Gpmcateringunit busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Gpmcateringunit bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obchodní případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obchodní případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obchodní případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obchodní případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Gpmcateringunit busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Gpmcateringunit busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
   public Gpmcateringunit description(String description) {
@@ -398,10 +434,10 @@ public class Gpmcateringunit   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -410,274 +446,274 @@ public class Gpmcateringunit   {
     this.description = description;
   }
 
-  public Gpmcateringunit createdDateDATE(DateTime createdDateDATE) {
-    this.createdDateDATE = createdDateDATE;
+  public Gpmcateringunit createddatedate(DateTime createddatedate) {
+    this.createddatedate = createddatedate;
     return this;
   }
 
    /**
-   * Datum vytvoření (skutečné) [persistentní položka]
-   * @return createdDateDATE
+   * datum vytvoření (skutečné) [persistentní položka]
+   * @return createddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum vytvoření (skutečné) [persistentní položka]")
-  public DateTime getCreatedDateDATE() {
-    return createdDateDATE;
+  @ApiModelProperty(example = "null", value = "datum vytvoření (skutečné) [persistentní položka]")
+  public DateTime getCreateddatedate() {
+    return createddatedate;
   }
 
-  public void setCreatedDateDATE(DateTime createdDateDATE) {
-    this.createdDateDATE = createdDateDATE;
+  public void setCreateddatedate(DateTime createddatedate) {
+    this.createddatedate = createddatedate;
   }
 
-  public Gpmcateringunit correctedDateDATE(DateTime correctedDateDATE) {
-    this.correctedDateDATE = correctedDateDATE;
+  public Gpmcateringunit correcteddatedate(DateTime correcteddatedate) {
+    this.correcteddatedate = correcteddatedate;
     return this;
   }
 
    /**
-   * Datum opravy [persistentní položka]
-   * @return correctedDateDATE
+   * datum opravy [persistentní položka]
+   * @return correcteddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum opravy [persistentní položka]")
-  public DateTime getCorrectedDateDATE() {
-    return correctedDateDATE;
+  @ApiModelProperty(example = "null", value = "datum opravy [persistentní položka]")
+  public DateTime getCorrecteddatedate() {
+    return correcteddatedate;
   }
 
-  public void setCorrectedDateDATE(DateTime correctedDateDATE) {
-    this.correctedDateDATE = correctedDateDATE;
+  public void setCorrecteddatedate(DateTime correcteddatedate) {
+    this.correcteddatedate = correcteddatedate;
   }
 
-  public Gpmcateringunit currencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public Gpmcateringunit currencyId(String currencyId) {
+    this.currencyId = currencyId;
     return this;
   }
 
    /**
-   * Měna; ID objektu Měna [persistentní položka]
-   * @return currencyID
+   * měna; id objektu měna [persistentní položka]
+   * @return currencyId
   **/
-  @ApiModelProperty(example = "null", value = "Měna; ID objektu Měna [persistentní položka]")
-  public String getCurrencyID() {
-    return currencyID;
+  @ApiModelProperty(example = "null", value = "měna; id objektu měna [persistentní položka]")
+  public String getCurrencyId() {
+    return currencyId;
   }
 
-  public void setCurrencyID(String currencyID) {
-    this.currencyID = currencyID;
+  public void setCurrencyId(String currencyId) {
+    this.currencyId = currencyId;
   }
 
-  public Gpmcateringunit planedDailyCosts(Double planedDailyCosts) {
-    this.planedDailyCosts = planedDailyCosts;
+  public Gpmcateringunit planeddailycosts(Double planeddailycosts) {
+    this.planeddailycosts = planeddailycosts;
     return this;
   }
 
    /**
-   * Plánované denní náklady [persistentní položka]
-   * @return planedDailyCosts
+   * plánované denní náklady [persistentní položka]
+   * @return planeddailycosts
   **/
-  @ApiModelProperty(example = "null", value = "Plánované denní náklady [persistentní položka]")
-  public Double getPlanedDailyCosts() {
-    return planedDailyCosts;
+  @ApiModelProperty(example = "null", value = "plánované denní náklady [persistentní položka]")
+  public Double getPlaneddailycosts() {
+    return planeddailycosts;
   }
 
-  public void setPlanedDailyCosts(Double planedDailyCosts) {
-    this.planedDailyCosts = planedDailyCosts;
+  public void setPlaneddailycosts(Double planeddailycosts) {
+    this.planeddailycosts = planeddailycosts;
   }
 
-  public Gpmcateringunit realDailyCosts(Double realDailyCosts) {
-    this.realDailyCosts = realDailyCosts;
+  public Gpmcateringunit realdailycosts(Double realdailycosts) {
+    this.realdailycosts = realdailycosts;
     return this;
   }
 
    /**
-   * Skutečné denní náklady [persistentní položka]
-   * @return realDailyCosts
+   * skutečné denní náklady [persistentní položka]
+   * @return realdailycosts
   **/
-  @ApiModelProperty(example = "null", value = "Skutečné denní náklady [persistentní položka]")
-  public Double getRealDailyCosts() {
-    return realDailyCosts;
+  @ApiModelProperty(example = "null", value = "skutečné denní náklady [persistentní položka]")
+  public Double getRealdailycosts() {
+    return realdailycosts;
   }
 
-  public void setRealDailyCosts(Double realDailyCosts) {
-    this.realDailyCosts = realDailyCosts;
+  public void setRealdailycosts(Double realdailycosts) {
+    this.realdailycosts = realdailycosts;
   }
 
-  public Gpmcateringunit dailyCostsDifference(Double dailyCostsDifference) {
-    this.dailyCostsDifference = dailyCostsDifference;
+  public Gpmcateringunit dailycostsdifference(Double dailycostsdifference) {
+    this.dailycostsdifference = dailycostsdifference;
     return this;
   }
 
    /**
-   * Rozdíl denních nákladů
-   * @return dailyCostsDifference
+   * rozdíl denních nákladů
+   * @return dailycostsdifference
   **/
-  @ApiModelProperty(example = "null", value = "Rozdíl denních nákladů")
-  public Double getDailyCostsDifference() {
-    return dailyCostsDifference;
+  @ApiModelProperty(example = "null", value = "rozdíl denních nákladů")
+  public Double getDailycostsdifference() {
+    return dailycostsdifference;
   }
 
-  public void setDailyCostsDifference(Double dailyCostsDifference) {
-    this.dailyCostsDifference = dailyCostsDifference;
+  public void setDailycostsdifference(Double dailycostsdifference) {
+    this.dailycostsdifference = dailycostsdifference;
   }
 
-  public Gpmcateringunit planedWeeklyCosts(Double planedWeeklyCosts) {
-    this.planedWeeklyCosts = planedWeeklyCosts;
+  public Gpmcateringunit planedweeklycosts(Double planedweeklycosts) {
+    this.planedweeklycosts = planedweeklycosts;
     return this;
   }
 
    /**
-   * Plánované náklady od začátku týdne
-   * @return planedWeeklyCosts
+   * plánované náklady od začátku týdne
+   * @return planedweeklycosts
   **/
-  @ApiModelProperty(example = "null", value = "Plánované náklady od začátku týdne")
-  public Double getPlanedWeeklyCosts() {
-    return planedWeeklyCosts;
+  @ApiModelProperty(example = "null", value = "plánované náklady od začátku týdne")
+  public Double getPlanedweeklycosts() {
+    return planedweeklycosts;
   }
 
-  public void setPlanedWeeklyCosts(Double planedWeeklyCosts) {
-    this.planedWeeklyCosts = planedWeeklyCosts;
+  public void setPlanedweeklycosts(Double planedweeklycosts) {
+    this.planedweeklycosts = planedweeklycosts;
   }
 
-  public Gpmcateringunit realWeeklyCosts(Double realWeeklyCosts) {
-    this.realWeeklyCosts = realWeeklyCosts;
+  public Gpmcateringunit realweeklycosts(Double realweeklycosts) {
+    this.realweeklycosts = realweeklycosts;
     return this;
   }
 
    /**
-   * Skutečné náklady od začátku týdne
-   * @return realWeeklyCosts
+   * skutečné náklady od začátku týdne
+   * @return realweeklycosts
   **/
-  @ApiModelProperty(example = "null", value = "Skutečné náklady od začátku týdne")
-  public Double getRealWeeklyCosts() {
-    return realWeeklyCosts;
+  @ApiModelProperty(example = "null", value = "skutečné náklady od začátku týdne")
+  public Double getRealweeklycosts() {
+    return realweeklycosts;
   }
 
-  public void setRealWeeklyCosts(Double realWeeklyCosts) {
-    this.realWeeklyCosts = realWeeklyCosts;
+  public void setRealweeklycosts(Double realweeklycosts) {
+    this.realweeklycosts = realweeklycosts;
   }
 
-  public Gpmcateringunit weeklyCostsDifference(Double weeklyCostsDifference) {
-    this.weeklyCostsDifference = weeklyCostsDifference;
+  public Gpmcateringunit weeklycostsdifference(Double weeklycostsdifference) {
+    this.weeklycostsdifference = weeklycostsdifference;
     return this;
   }
 
    /**
-   * Rozdíl nákladů od začátku týdne
-   * @return weeklyCostsDifference
+   * rozdíl nákladů od začátku týdne
+   * @return weeklycostsdifference
   **/
-  @ApiModelProperty(example = "null", value = "Rozdíl nákladů od začátku týdne")
-  public Double getWeeklyCostsDifference() {
-    return weeklyCostsDifference;
+  @ApiModelProperty(example = "null", value = "rozdíl nákladů od začátku týdne")
+  public Double getWeeklycostsdifference() {
+    return weeklycostsdifference;
   }
 
-  public void setWeeklyCostsDifference(Double weeklyCostsDifference) {
-    this.weeklyCostsDifference = weeklyCostsDifference;
+  public void setWeeklycostsdifference(Double weeklycostsdifference) {
+    this.weeklycostsdifference = weeklycostsdifference;
   }
 
-  public Gpmcateringunit planedMonthlyCosts(Double planedMonthlyCosts) {
-    this.planedMonthlyCosts = planedMonthlyCosts;
+  public Gpmcateringunit planedmonthlycosts(Double planedmonthlycosts) {
+    this.planedmonthlycosts = planedmonthlycosts;
     return this;
   }
 
    /**
-   * Plánované náklady od začátku měsíce
-   * @return planedMonthlyCosts
+   * plánované náklady od začátku měsíce
+   * @return planedmonthlycosts
   **/
-  @ApiModelProperty(example = "null", value = "Plánované náklady od začátku měsíce")
-  public Double getPlanedMonthlyCosts() {
-    return planedMonthlyCosts;
+  @ApiModelProperty(example = "null", value = "plánované náklady od začátku měsíce")
+  public Double getPlanedmonthlycosts() {
+    return planedmonthlycosts;
   }
 
-  public void setPlanedMonthlyCosts(Double planedMonthlyCosts) {
-    this.planedMonthlyCosts = planedMonthlyCosts;
+  public void setPlanedmonthlycosts(Double planedmonthlycosts) {
+    this.planedmonthlycosts = planedmonthlycosts;
   }
 
-  public Gpmcateringunit realMonthlyCosts(Double realMonthlyCosts) {
-    this.realMonthlyCosts = realMonthlyCosts;
+  public Gpmcateringunit realmonthlycosts(Double realmonthlycosts) {
+    this.realmonthlycosts = realmonthlycosts;
     return this;
   }
 
    /**
-   * Skutečné náklady od začátku měsíce
-   * @return realMonthlyCosts
+   * skutečné náklady od začátku měsíce
+   * @return realmonthlycosts
   **/
-  @ApiModelProperty(example = "null", value = "Skutečné náklady od začátku měsíce")
-  public Double getRealMonthlyCosts() {
-    return realMonthlyCosts;
+  @ApiModelProperty(example = "null", value = "skutečné náklady od začátku měsíce")
+  public Double getRealmonthlycosts() {
+    return realmonthlycosts;
   }
 
-  public void setRealMonthlyCosts(Double realMonthlyCosts) {
-    this.realMonthlyCosts = realMonthlyCosts;
+  public void setRealmonthlycosts(Double realmonthlycosts) {
+    this.realmonthlycosts = realmonthlycosts;
   }
 
-  public Gpmcateringunit monthlyCostsDifference(Double monthlyCostsDifference) {
-    this.monthlyCostsDifference = monthlyCostsDifference;
+  public Gpmcateringunit monthlycostsdifference(Double monthlycostsdifference) {
+    this.monthlycostsdifference = monthlycostsdifference;
     return this;
   }
 
    /**
-   * Rozdíl nákladů od začátku měsíce
-   * @return monthlyCostsDifference
+   * rozdíl nákladů od začátku měsíce
+   * @return monthlycostsdifference
   **/
-  @ApiModelProperty(example = "null", value = "Rozdíl nákladů od začátku měsíce")
-  public Double getMonthlyCostsDifference() {
-    return monthlyCostsDifference;
+  @ApiModelProperty(example = "null", value = "rozdíl nákladů od začátku měsíce")
+  public Double getMonthlycostsdifference() {
+    return monthlycostsdifference;
   }
 
-  public void setMonthlyCostsDifference(Double monthlyCostsDifference) {
-    this.monthlyCostsDifference = monthlyCostsDifference;
+  public void setMonthlycostsdifference(Double monthlycostsdifference) {
+    this.monthlycostsdifference = monthlycostsdifference;
   }
 
-  public Gpmcateringunit planedYearlyCosts(Double planedYearlyCosts) {
-    this.planedYearlyCosts = planedYearlyCosts;
+  public Gpmcateringunit planedyearlycosts(Double planedyearlycosts) {
+    this.planedyearlycosts = planedyearlycosts;
     return this;
   }
 
    /**
-   * Plánované náklady od začátku roku
-   * @return planedYearlyCosts
+   * plánované náklady od začátku roku
+   * @return planedyearlycosts
   **/
-  @ApiModelProperty(example = "null", value = "Plánované náklady od začátku roku")
-  public Double getPlanedYearlyCosts() {
-    return planedYearlyCosts;
+  @ApiModelProperty(example = "null", value = "plánované náklady od začátku roku")
+  public Double getPlanedyearlycosts() {
+    return planedyearlycosts;
   }
 
-  public void setPlanedYearlyCosts(Double planedYearlyCosts) {
-    this.planedYearlyCosts = planedYearlyCosts;
+  public void setPlanedyearlycosts(Double planedyearlycosts) {
+    this.planedyearlycosts = planedyearlycosts;
   }
 
-  public Gpmcateringunit realYearlyCosts(Double realYearlyCosts) {
-    this.realYearlyCosts = realYearlyCosts;
+  public Gpmcateringunit realyearlycosts(Double realyearlycosts) {
+    this.realyearlycosts = realyearlycosts;
     return this;
   }
 
    /**
-   * Skutečné náklady od začátku roku
-   * @return realYearlyCosts
+   * skutečné náklady od začátku roku
+   * @return realyearlycosts
   **/
-  @ApiModelProperty(example = "null", value = "Skutečné náklady od začátku roku")
-  public Double getRealYearlyCosts() {
-    return realYearlyCosts;
+  @ApiModelProperty(example = "null", value = "skutečné náklady od začátku roku")
+  public Double getRealyearlycosts() {
+    return realyearlycosts;
   }
 
-  public void setRealYearlyCosts(Double realYearlyCosts) {
-    this.realYearlyCosts = realYearlyCosts;
+  public void setRealyearlycosts(Double realyearlycosts) {
+    this.realyearlycosts = realyearlycosts;
   }
 
-  public Gpmcateringunit yearlyCostsDifference(Double yearlyCostsDifference) {
-    this.yearlyCostsDifference = yearlyCostsDifference;
+  public Gpmcateringunit yearlycostsdifference(Double yearlycostsdifference) {
+    this.yearlycostsdifference = yearlycostsdifference;
     return this;
   }
 
    /**
-   * Rozdíl nákladů od začátku roku
-   * @return yearlyCostsDifference
+   * rozdíl nákladů od začátku roku
+   * @return yearlycostsdifference
   **/
-  @ApiModelProperty(example = "null", value = "Rozdíl nákladů od začátku roku")
-  public Double getYearlyCostsDifference() {
-    return yearlyCostsDifference;
+  @ApiModelProperty(example = "null", value = "rozdíl nákladů od začátku roku")
+  public Double getYearlycostsdifference() {
+    return yearlycostsdifference;
   }
 
-  public void setYearlyCostsDifference(Double yearlyCostsDifference) {
-    this.yearlyCostsDifference = yearlyCostsDifference;
+  public void setYearlycostsdifference(Double yearlycostsdifference) {
+    this.yearlycostsdifference = yearlycostsdifference;
   }
 
 
@@ -690,43 +726,43 @@ public class Gpmcateringunit   {
       return false;
     }
     Gpmcateringunit gpmcateringunit = (Gpmcateringunit) o;
-    return Objects.equals(this.displayName, gpmcateringunit.displayName) &&
-        Objects.equals(this.ID, gpmcateringunit.ID) &&
-        Objects.equals(this.classID, gpmcateringunit.classID) &&
-        Objects.equals(this.objVersion, gpmcateringunit.objVersion) &&
+    return Objects.equals(this.displayname, gpmcateringunit.displayname) &&
+        Objects.equals(this.id, gpmcateringunit.id) &&
+        Objects.equals(this.classid, gpmcateringunit.classid) &&
+        Objects.equals(this.objversion, gpmcateringunit.objversion) &&
         Objects.equals(this.rows, gpmcateringunit.rows) &&
-        Objects.equals(this.docQueueID, gpmcateringunit.docQueueID) &&
-        Objects.equals(this.periodID, gpmcateringunit.periodID) &&
-        Objects.equals(this.ordNumber, gpmcateringunit.ordNumber) &&
-        Objects.equals(this.docDateDATE, gpmcateringunit.docDateDATE) &&
-        Objects.equals(this.createdByID, gpmcateringunit.createdByID) &&
-        Objects.equals(this.correctedByID, gpmcateringunit.correctedByID) &&
-        Objects.equals(this.newRelatedType, gpmcateringunit.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, gpmcateringunit.newRelatedDocumentID) &&
-        Objects.equals(this.busOrderID, gpmcateringunit.busOrderID) &&
-        Objects.equals(this.busTransactionID, gpmcateringunit.busTransactionID) &&
-        Objects.equals(this.busProjectID, gpmcateringunit.busProjectID) &&
+        Objects.equals(this.docqueueId, gpmcateringunit.docqueueId) &&
+        Objects.equals(this.periodId, gpmcateringunit.periodId) &&
+        Objects.equals(this.ordnumber, gpmcateringunit.ordnumber) &&
+        Objects.equals(this.docdatedate, gpmcateringunit.docdatedate) &&
+        Objects.equals(this.createdbyId, gpmcateringunit.createdbyId) &&
+        Objects.equals(this.correctedbyId, gpmcateringunit.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, gpmcateringunit.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, gpmcateringunit.newrelateddocumentId) &&
+        Objects.equals(this.busorderId, gpmcateringunit.busorderId) &&
+        Objects.equals(this.bustransactionId, gpmcateringunit.bustransactionId) &&
+        Objects.equals(this.busprojectId, gpmcateringunit.busprojectId) &&
         Objects.equals(this.description, gpmcateringunit.description) &&
-        Objects.equals(this.createdDateDATE, gpmcateringunit.createdDateDATE) &&
-        Objects.equals(this.correctedDateDATE, gpmcateringunit.correctedDateDATE) &&
-        Objects.equals(this.currencyID, gpmcateringunit.currencyID) &&
-        Objects.equals(this.planedDailyCosts, gpmcateringunit.planedDailyCosts) &&
-        Objects.equals(this.realDailyCosts, gpmcateringunit.realDailyCosts) &&
-        Objects.equals(this.dailyCostsDifference, gpmcateringunit.dailyCostsDifference) &&
-        Objects.equals(this.planedWeeklyCosts, gpmcateringunit.planedWeeklyCosts) &&
-        Objects.equals(this.realWeeklyCosts, gpmcateringunit.realWeeklyCosts) &&
-        Objects.equals(this.weeklyCostsDifference, gpmcateringunit.weeklyCostsDifference) &&
-        Objects.equals(this.planedMonthlyCosts, gpmcateringunit.planedMonthlyCosts) &&
-        Objects.equals(this.realMonthlyCosts, gpmcateringunit.realMonthlyCosts) &&
-        Objects.equals(this.monthlyCostsDifference, gpmcateringunit.monthlyCostsDifference) &&
-        Objects.equals(this.planedYearlyCosts, gpmcateringunit.planedYearlyCosts) &&
-        Objects.equals(this.realYearlyCosts, gpmcateringunit.realYearlyCosts) &&
-        Objects.equals(this.yearlyCostsDifference, gpmcateringunit.yearlyCostsDifference);
+        Objects.equals(this.createddatedate, gpmcateringunit.createddatedate) &&
+        Objects.equals(this.correcteddatedate, gpmcateringunit.correcteddatedate) &&
+        Objects.equals(this.currencyId, gpmcateringunit.currencyId) &&
+        Objects.equals(this.planeddailycosts, gpmcateringunit.planeddailycosts) &&
+        Objects.equals(this.realdailycosts, gpmcateringunit.realdailycosts) &&
+        Objects.equals(this.dailycostsdifference, gpmcateringunit.dailycostsdifference) &&
+        Objects.equals(this.planedweeklycosts, gpmcateringunit.planedweeklycosts) &&
+        Objects.equals(this.realweeklycosts, gpmcateringunit.realweeklycosts) &&
+        Objects.equals(this.weeklycostsdifference, gpmcateringunit.weeklycostsdifference) &&
+        Objects.equals(this.planedmonthlycosts, gpmcateringunit.planedmonthlycosts) &&
+        Objects.equals(this.realmonthlycosts, gpmcateringunit.realmonthlycosts) &&
+        Objects.equals(this.monthlycostsdifference, gpmcateringunit.monthlycostsdifference) &&
+        Objects.equals(this.planedyearlycosts, gpmcateringunit.planedyearlycosts) &&
+        Objects.equals(this.realyearlycosts, gpmcateringunit.realyearlycosts) &&
+        Objects.equals(this.yearlycostsdifference, gpmcateringunit.yearlycostsdifference);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, busOrderID, busTransactionID, busProjectID, description, createdDateDATE, correctedDateDATE, currencyID, planedDailyCosts, realDailyCosts, dailyCostsDifference, planedWeeklyCosts, realWeeklyCosts, weeklyCostsDifference, planedMonthlyCosts, realMonthlyCosts, monthlyCostsDifference, planedYearlyCosts, realYearlyCosts, yearlyCostsDifference);
+    return Objects.hash(displayname, id, classid, objversion, rows, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, busorderId, bustransactionId, busprojectId, description, createddatedate, correcteddatedate, currencyId, planeddailycosts, realdailycosts, dailycostsdifference, planedweeklycosts, realweeklycosts, weeklycostsdifference, planedmonthlycosts, realmonthlycosts, monthlycostsdifference, planedyearlycosts, realyearlycosts, yearlycostsdifference);
   }
 
   @Override
@@ -734,38 +770,38 @@ public class Gpmcateringunit   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Gpmcateringunit {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    createdDateDATE: ").append(toIndentedString(createdDateDATE)).append("\n");
-    sb.append("    correctedDateDATE: ").append(toIndentedString(correctedDateDATE)).append("\n");
-    sb.append("    currencyID: ").append(toIndentedString(currencyID)).append("\n");
-    sb.append("    planedDailyCosts: ").append(toIndentedString(planedDailyCosts)).append("\n");
-    sb.append("    realDailyCosts: ").append(toIndentedString(realDailyCosts)).append("\n");
-    sb.append("    dailyCostsDifference: ").append(toIndentedString(dailyCostsDifference)).append("\n");
-    sb.append("    planedWeeklyCosts: ").append(toIndentedString(planedWeeklyCosts)).append("\n");
-    sb.append("    realWeeklyCosts: ").append(toIndentedString(realWeeklyCosts)).append("\n");
-    sb.append("    weeklyCostsDifference: ").append(toIndentedString(weeklyCostsDifference)).append("\n");
-    sb.append("    planedMonthlyCosts: ").append(toIndentedString(planedMonthlyCosts)).append("\n");
-    sb.append("    realMonthlyCosts: ").append(toIndentedString(realMonthlyCosts)).append("\n");
-    sb.append("    monthlyCostsDifference: ").append(toIndentedString(monthlyCostsDifference)).append("\n");
-    sb.append("    planedYearlyCosts: ").append(toIndentedString(planedYearlyCosts)).append("\n");
-    sb.append("    realYearlyCosts: ").append(toIndentedString(realYearlyCosts)).append("\n");
-    sb.append("    yearlyCostsDifference: ").append(toIndentedString(yearlyCostsDifference)).append("\n");
+    sb.append("    createddatedate: ").append(toIndentedString(createddatedate)).append("\n");
+    sb.append("    correcteddatedate: ").append(toIndentedString(correcteddatedate)).append("\n");
+    sb.append("    currencyId: ").append(toIndentedString(currencyId)).append("\n");
+    sb.append("    planeddailycosts: ").append(toIndentedString(planeddailycosts)).append("\n");
+    sb.append("    realdailycosts: ").append(toIndentedString(realdailycosts)).append("\n");
+    sb.append("    dailycostsdifference: ").append(toIndentedString(dailycostsdifference)).append("\n");
+    sb.append("    planedweeklycosts: ").append(toIndentedString(planedweeklycosts)).append("\n");
+    sb.append("    realweeklycosts: ").append(toIndentedString(realweeklycosts)).append("\n");
+    sb.append("    weeklycostsdifference: ").append(toIndentedString(weeklycostsdifference)).append("\n");
+    sb.append("    planedmonthlycosts: ").append(toIndentedString(planedmonthlycosts)).append("\n");
+    sb.append("    realmonthlycosts: ").append(toIndentedString(realmonthlycosts)).append("\n");
+    sb.append("    monthlycostsdifference: ").append(toIndentedString(monthlycostsdifference)).append("\n");
+    sb.append("    planedyearlycosts: ").append(toIndentedString(planedyearlycosts)).append("\n");
+    sb.append("    realyearlycosts: ").append(toIndentedString(realyearlycosts)).append("\n");
+    sb.append("    yearlycostsdifference: ").append(toIndentedString(yearlycostsdifference)).append("\n");
     sb.append("}");
     return sb.toString();
   }

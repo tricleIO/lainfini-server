@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,300 +35,345 @@ import java.util.Objects;
 /**
  * Posdocumenthistory
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Posdocumenthistory   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Row_ID")
-  private String rowID = null;
+  @SerializedName("row_id")
+  private String rowId = null;
 
-  @SerializedName("User_ID")
-  private String userID = null;
+  @SerializedName("user_id")
+  private String userId = null;
 
-  @SerializedName("ChangeDateTime$DATE")
-  private DateTime changeDateTimeDATE = null;
+  @SerializedName("changedatetime$date")
+  private DateTime changedatetimedate = null;
 
-  @SerializedName("ChangeCode")
-  private Integer changeCode = null;
+  @SerializedName("changecode")
+  private Integer changecode = null;
 
-  @SerializedName("OriginalUnitQuantity")
-  private Double originalUnitQuantity = null;
+  @SerializedName("originalunitquantity")
+  private Double originalunitquantity = null;
 
-  @SerializedName("OriginalQUnit")
-  private String originalQUnit = null;
+  @SerializedName("originalqunit")
+  private String originalqunit = null;
 
-  @SerializedName("OriginalUnitPrice")
-  private Double originalUnitPrice = null;
+  @SerializedName("originalunitprice")
+  private Double originalunitprice = null;
 
-  @SerializedName("UnitQuantity")
-  private Double unitQuantity = null;
+  @SerializedName("unitquantity")
+  private Double unitquantity = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitPrice")
-  private Double unitPrice = null;
+  @SerializedName("unitprice")
+  private Double unitprice = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Účtenka [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Účtenka [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Posdocumenthistory posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Posdocumenthistory displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Posdocumenthistory rowID(String rowID) {
-    this.rowID = rowID;
+  public Posdocumenthistory id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Změněný řádek; ID objektu Účtenka - řádek [persistentní položka]
-   * @return rowID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Změněný řádek; ID objektu Účtenka - řádek [persistentní položka]")
-  public String getRowID() {
-    return rowID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setRowID(String rowID) {
-    this.rowID = rowID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Posdocumenthistory userID(String userID) {
-    this.userID = userID;
+  public Posdocumenthistory classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Uživatel; ID objektu Uživatel [persistentní položka]
-   * @return userID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Uživatel; ID objektu Uživatel [persistentní položka]")
-  public String getUserID() {
-    return userID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setUserID(String userID) {
-    this.userID = userID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Posdocumenthistory changeDateTimeDATE(DateTime changeDateTimeDATE) {
-    this.changeDateTimeDATE = changeDateTimeDATE;
+  public Posdocumenthistory objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Posdocumenthistory parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu Účtenka [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu Účtenka [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Posdocumenthistory posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
+  }
+
+  public Posdocumenthistory rowId(String rowId) {
+    this.rowId = rowId;
+    return this;
+  }
+
+   /**
+   * změněný řádek; id objektu Účtenka - řádek [persistentní položka]
+   * @return rowId
+  **/
+  @ApiModelProperty(example = "null", value = "změněný řádek; id objektu Účtenka - řádek [persistentní položka]")
+  public String getRowId() {
+    return rowId;
+  }
+
+  public void setRowId(String rowId) {
+    this.rowId = rowId;
+  }
+
+  public Posdocumenthistory userId(String userId) {
+    this.userId = userId;
+    return this;
+  }
+
+   /**
+   * uživatel; id objektu uživatel [persistentní položka]
+   * @return userId
+  **/
+  @ApiModelProperty(example = "null", value = "uživatel; id objektu uživatel [persistentní položka]")
+  public String getUserId() {
+    return userId;
+  }
+
+  public void setUserId(String userId) {
+    this.userId = userId;
+  }
+
+  public Posdocumenthistory changedatetimedate(DateTime changedatetimedate) {
+    this.changedatetimedate = changedatetimedate;
     return this;
   }
 
    /**
    * Čas změny [persistentní položka]
-   * @return changeDateTimeDATE
+   * @return changedatetimedate
   **/
   @ApiModelProperty(example = "null", value = "Čas změny [persistentní položka]")
-  public DateTime getChangeDateTimeDATE() {
-    return changeDateTimeDATE;
+  public DateTime getChangedatetimedate() {
+    return changedatetimedate;
   }
 
-  public void setChangeDateTimeDATE(DateTime changeDateTimeDATE) {
-    this.changeDateTimeDATE = changeDateTimeDATE;
+  public void setChangedatetimedate(DateTime changedatetimedate) {
+    this.changedatetimedate = changedatetimedate;
   }
 
-  public Posdocumenthistory changeCode(Integer changeCode) {
-    this.changeCode = changeCode;
+  public Posdocumenthistory changecode(Integer changecode) {
+    this.changecode = changecode;
     return this;
   }
 
    /**
-   * Kód změny [persistentní položka]
-   * @return changeCode
+   * kód změny [persistentní položka]
+   * @return changecode
   **/
-  @ApiModelProperty(example = "null", value = "Kód změny [persistentní položka]")
-  public Integer getChangeCode() {
-    return changeCode;
+  @ApiModelProperty(example = "null", value = "kód změny [persistentní položka]")
+  public Integer getChangecode() {
+    return changecode;
   }
 
-  public void setChangeCode(Integer changeCode) {
-    this.changeCode = changeCode;
+  public void setChangecode(Integer changecode) {
+    this.changecode = changecode;
   }
 
-  public Posdocumenthistory originalUnitQuantity(Double originalUnitQuantity) {
-    this.originalUnitQuantity = originalUnitQuantity;
+  public Posdocumenthistory originalunitquantity(Double originalunitquantity) {
+    this.originalunitquantity = originalunitquantity;
     return this;
   }
 
    /**
-   * Původní množství [persistentní položka]
-   * @return originalUnitQuantity
+   * původní množství [persistentní položka]
+   * @return originalunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Původní množství [persistentní položka]")
-  public Double getOriginalUnitQuantity() {
-    return originalUnitQuantity;
+  @ApiModelProperty(example = "null", value = "původní množství [persistentní položka]")
+  public Double getOriginalunitquantity() {
+    return originalunitquantity;
   }
 
-  public void setOriginalUnitQuantity(Double originalUnitQuantity) {
-    this.originalUnitQuantity = originalUnitQuantity;
+  public void setOriginalunitquantity(Double originalunitquantity) {
+    this.originalunitquantity = originalunitquantity;
   }
 
-  public Posdocumenthistory originalQUnit(String originalQUnit) {
-    this.originalQUnit = originalQUnit;
+  public Posdocumenthistory originalqunit(String originalqunit) {
+    this.originalqunit = originalqunit;
     return this;
   }
 
    /**
-   * Původní jednotka [persistentní položka]
-   * @return originalQUnit
+   * původní jednotka [persistentní položka]
+   * @return originalqunit
   **/
-  @ApiModelProperty(example = "null", value = "Původní jednotka [persistentní položka]")
-  public String getOriginalQUnit() {
-    return originalQUnit;
+  @ApiModelProperty(example = "null", value = "původní jednotka [persistentní položka]")
+  public String getOriginalqunit() {
+    return originalqunit;
   }
 
-  public void setOriginalQUnit(String originalQUnit) {
-    this.originalQUnit = originalQUnit;
+  public void setOriginalqunit(String originalqunit) {
+    this.originalqunit = originalqunit;
   }
 
-  public Posdocumenthistory originalUnitPrice(Double originalUnitPrice) {
-    this.originalUnitPrice = originalUnitPrice;
+  public Posdocumenthistory originalunitprice(Double originalunitprice) {
+    this.originalunitprice = originalunitprice;
     return this;
   }
 
    /**
-   * Původní cena [persistentní položka]
-   * @return originalUnitPrice
+   * původní cena [persistentní položka]
+   * @return originalunitprice
   **/
-  @ApiModelProperty(example = "null", value = "Původní cena [persistentní položka]")
-  public Double getOriginalUnitPrice() {
-    return originalUnitPrice;
+  @ApiModelProperty(example = "null", value = "původní cena [persistentní položka]")
+  public Double getOriginalunitprice() {
+    return originalunitprice;
   }
 
-  public void setOriginalUnitPrice(Double originalUnitPrice) {
-    this.originalUnitPrice = originalUnitPrice;
+  public void setOriginalunitprice(Double originalunitprice) {
+    this.originalunitprice = originalunitprice;
   }
 
-  public Posdocumenthistory unitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public Posdocumenthistory unitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
     return this;
   }
 
    /**
-   * Množství [persistentní položka]
-   * @return unitQuantity
+   * množství [persistentní položka]
+   * @return unitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství [persistentní položka]")
-  public Double getUnitQuantity() {
-    return unitQuantity;
+  @ApiModelProperty(example = "null", value = "množství [persistentní položka]")
+  public Double getUnitquantity() {
+    return unitquantity;
   }
 
-  public void setUnitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public void setUnitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
   }
 
-  public Posdocumenthistory qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Posdocumenthistory qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
   }
 
-  public Posdocumenthistory unitPrice(Double unitPrice) {
-    this.unitPrice = unitPrice;
+  public Posdocumenthistory unitprice(Double unitprice) {
+    this.unitprice = unitprice;
     return this;
   }
 
    /**
-   * Cena [persistentní položka]
-   * @return unitPrice
+   * cena [persistentní položka]
+   * @return unitprice
   **/
-  @ApiModelProperty(example = "null", value = "Cena [persistentní položka]")
-  public Double getUnitPrice() {
-    return unitPrice;
+  @ApiModelProperty(example = "null", value = "cena [persistentní položka]")
+  public Double getUnitprice() {
+    return unitprice;
   }
 
-  public void setUnitPrice(Double unitPrice) {
-    this.unitPrice = unitPrice;
+  public void setUnitprice(Double unitprice) {
+    this.unitprice = unitprice;
   }
 
   public Posdocumenthistory description(String description) {
@@ -337,10 +382,10 @@ public class Posdocumenthistory   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -359,28 +404,28 @@ public class Posdocumenthistory   {
       return false;
     }
     Posdocumenthistory posdocumenthistory = (Posdocumenthistory) o;
-    return Objects.equals(this.displayName, posdocumenthistory.displayName) &&
-        Objects.equals(this.ID, posdocumenthistory.ID) &&
-        Objects.equals(this.classID, posdocumenthistory.classID) &&
-        Objects.equals(this.objVersion, posdocumenthistory.objVersion) &&
-        Objects.equals(this.parentID, posdocumenthistory.parentID) &&
-        Objects.equals(this.posIndex, posdocumenthistory.posIndex) &&
-        Objects.equals(this.rowID, posdocumenthistory.rowID) &&
-        Objects.equals(this.userID, posdocumenthistory.userID) &&
-        Objects.equals(this.changeDateTimeDATE, posdocumenthistory.changeDateTimeDATE) &&
-        Objects.equals(this.changeCode, posdocumenthistory.changeCode) &&
-        Objects.equals(this.originalUnitQuantity, posdocumenthistory.originalUnitQuantity) &&
-        Objects.equals(this.originalQUnit, posdocumenthistory.originalQUnit) &&
-        Objects.equals(this.originalUnitPrice, posdocumenthistory.originalUnitPrice) &&
-        Objects.equals(this.unitQuantity, posdocumenthistory.unitQuantity) &&
-        Objects.equals(this.qUnit, posdocumenthistory.qUnit) &&
-        Objects.equals(this.unitPrice, posdocumenthistory.unitPrice) &&
+    return Objects.equals(this.displayname, posdocumenthistory.displayname) &&
+        Objects.equals(this.id, posdocumenthistory.id) &&
+        Objects.equals(this.classid, posdocumenthistory.classid) &&
+        Objects.equals(this.objversion, posdocumenthistory.objversion) &&
+        Objects.equals(this.parentId, posdocumenthistory.parentId) &&
+        Objects.equals(this.posindex, posdocumenthistory.posindex) &&
+        Objects.equals(this.rowId, posdocumenthistory.rowId) &&
+        Objects.equals(this.userId, posdocumenthistory.userId) &&
+        Objects.equals(this.changedatetimedate, posdocumenthistory.changedatetimedate) &&
+        Objects.equals(this.changecode, posdocumenthistory.changecode) &&
+        Objects.equals(this.originalunitquantity, posdocumenthistory.originalunitquantity) &&
+        Objects.equals(this.originalqunit, posdocumenthistory.originalqunit) &&
+        Objects.equals(this.originalunitprice, posdocumenthistory.originalunitprice) &&
+        Objects.equals(this.unitquantity, posdocumenthistory.unitquantity) &&
+        Objects.equals(this.qunit, posdocumenthistory.qunit) &&
+        Objects.equals(this.unitprice, posdocumenthistory.unitprice) &&
         Objects.equals(this.description, posdocumenthistory.description);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, rowID, userID, changeDateTimeDATE, changeCode, originalUnitQuantity, originalQUnit, originalUnitPrice, unitQuantity, qUnit, unitPrice, description);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, rowId, userId, changedatetimedate, changecode, originalunitquantity, originalqunit, originalunitprice, unitquantity, qunit, unitprice, description);
   }
 
   @Override
@@ -388,22 +433,22 @@ public class Posdocumenthistory   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Posdocumenthistory {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    rowID: ").append(toIndentedString(rowID)).append("\n");
-    sb.append("    userID: ").append(toIndentedString(userID)).append("\n");
-    sb.append("    changeDateTimeDATE: ").append(toIndentedString(changeDateTimeDATE)).append("\n");
-    sb.append("    changeCode: ").append(toIndentedString(changeCode)).append("\n");
-    sb.append("    originalUnitQuantity: ").append(toIndentedString(originalUnitQuantity)).append("\n");
-    sb.append("    originalQUnit: ").append(toIndentedString(originalQUnit)).append("\n");
-    sb.append("    originalUnitPrice: ").append(toIndentedString(originalUnitPrice)).append("\n");
-    sb.append("    unitQuantity: ").append(toIndentedString(unitQuantity)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitPrice: ").append(toIndentedString(unitPrice)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    rowId: ").append(toIndentedString(rowId)).append("\n");
+    sb.append("    userId: ").append(toIndentedString(userId)).append("\n");
+    sb.append("    changedatetimedate: ").append(toIndentedString(changedatetimedate)).append("\n");
+    sb.append("    changecode: ").append(toIndentedString(changecode)).append("\n");
+    sb.append("    originalunitquantity: ").append(toIndentedString(originalunitquantity)).append("\n");
+    sb.append("    originalqunit: ").append(toIndentedString(originalqunit)).append("\n");
+    sb.append("    originalunitprice: ").append(toIndentedString(originalunitprice)).append("\n");
+    sb.append("    unitquantity: ").append(toIndentedString(unitquantity)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitprice: ").append(toIndentedString(unitprice)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("}");
     return sb.toString();

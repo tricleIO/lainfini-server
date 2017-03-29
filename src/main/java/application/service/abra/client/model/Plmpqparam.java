@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,390 +34,426 @@ import java.util.Objects;
 /**
  * Plmpqparam
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmpqparam   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("AuthorizationRequired")
-  private Integer authorizationRequired = null;
+  @SerializedName("authorizationrequired")
+  private Integer authorizationrequired = null;
 
-  @SerializedName("DocQueueForJO_ID")
-  private String docQueueForJOID = null;
+  @SerializedName("docqueueforjo_id")
+  private String docqueueforjoId = null;
 
-  @SerializedName("TariffForJO_ID")
-  private String tariffForJOID = null;
+  @SerializedName("tariffforjo_id")
+  private String tariffforjoId = null;
 
-  @SerializedName("EditNorm")
-  private Boolean editNorm = null;
+  @SerializedName("editnorm")
+  private Boolean editnorm = null;
 
-  @SerializedName("DefaultManEntRtn_ID")
-  private String defaultManEntRtnID = null;
+  @SerializedName("defaultmanentrtn_id")
+  private String defaultmanentrtnId = null;
 
-  @SerializedName("NoShowDialog")
-  private Boolean noShowDialog = null;
+  @SerializedName("noshowdialog")
+  private Boolean noshowdialog = null;
 
-  @SerializedName("MethodOfSalaryCalculation")
-  private Integer methodOfSalaryCalculation = null;
+  @SerializedName("methodofsalarycalculation")
+  private Integer methodofsalarycalculation = null;
 
-  @SerializedName("MethodOfSalaryClass")
-  private Integer methodOfSalaryClass = null;
+  @SerializedName("methodofsalaryclass")
+  private Integer methodofsalaryclass = null;
 
-  @SerializedName("DefaultSettingOfMIX")
-  private Boolean defaultSettingOfMIX = null;
+  @SerializedName("defaultsettingofmix")
+  private Boolean defaultsettingofmix = null;
 
-  @SerializedName("DefaultSupposedStore_ID")
-  private String defaultSupposedStoreID = null;
+  @SerializedName("defaultsupposedstore_id")
+  private String defaultsupposedstoreId = null;
 
-  @SerializedName("InPlan")
-  private Boolean inPlan = null;
+  @SerializedName("inplan")
+  private Boolean inplan = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("ChoosingRoutine")
-  private Integer choosingRoutine = null;
+  @SerializedName("choosingroutine")
+  private Integer choosingroutine = null;
 
-  @SerializedName("ChoosingPL")
-  private Integer choosingPL = null;
+  @SerializedName("choosingpl")
+  private Integer choosingpl = null;
 
-  @SerializedName("DefaultCanceled")
-  private Boolean defaultCanceled = null;
+  @SerializedName("defaultcanceled")
+  private Boolean defaultcanceled = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Plmpqparam docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Plmpqparam displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Řada dokladů; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Plmpqparam authorizationRequired(Integer authorizationRequired) {
-    this.authorizationRequired = authorizationRequired;
+  public Plmpqparam id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Požadováno schválení [persistentní položka]
-   * @return authorizationRequired
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Požadováno schválení [persistentní položka]")
-  public Integer getAuthorizationRequired() {
-    return authorizationRequired;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setAuthorizationRequired(Integer authorizationRequired) {
-    this.authorizationRequired = authorizationRequired;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Plmpqparam docQueueForJOID(String docQueueForJOID) {
-    this.docQueueForJOID = docQueueForJOID;
+  public Plmpqparam classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Řada dokladů VP; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueForJOID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů VP; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueForJOID() {
-    return docQueueForJOID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setDocQueueForJOID(String docQueueForJOID) {
-    this.docQueueForJOID = docQueueForJOID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Plmpqparam tariffForJOID(String tariffForJOID) {
-    this.tariffForJOID = tariffForJOID;
+  public Plmpqparam objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Režijní sazba; ID objektu Režijní sazba [persistentní položka]
-   * @return tariffForJOID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Režijní sazba; ID objektu Režijní sazba [persistentní položka]")
-  public String getTariffForJOID() {
-    return tariffForJOID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setTariffForJOID(String tariffForJOID) {
-    this.tariffForJOID = tariffForJOID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Plmpqparam editNorm(Boolean editNorm) {
-    this.editNorm = editNorm;
+  public Plmpqparam docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Povoleno editovat normu [persistentní položka]
-   * @return editNorm
+   * Řada dokladů; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Povoleno editovat normu [persistentní položka]")
-  public Boolean getEditNorm() {
-    return editNorm;
+  @ApiModelProperty(example = "null", value = "Řada dokladů; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setEditNorm(Boolean editNorm) {
-    this.editNorm = editNorm;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Plmpqparam defaultManEntRtnID(String defaultManEntRtnID) {
-    this.defaultManEntRtnID = defaultManEntRtnID;
+  public Plmpqparam authorizationrequired(Integer authorizationrequired) {
+    this.authorizationrequired = authorizationrequired;
     return this;
   }
 
    /**
-   * Výchozí typ tech. postupu pro ruční editaci; ID objektu Typ technologického postupu [persistentní položka]
-   * @return defaultManEntRtnID
+   * požadováno schválení [persistentní položka]
+   * @return authorizationrequired
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí typ tech. postupu pro ruční editaci; ID objektu Typ technologického postupu [persistentní položka]")
-  public String getDefaultManEntRtnID() {
-    return defaultManEntRtnID;
+  @ApiModelProperty(example = "null", value = "požadováno schválení [persistentní položka]")
+  public Integer getAuthorizationrequired() {
+    return authorizationrequired;
   }
 
-  public void setDefaultManEntRtnID(String defaultManEntRtnID) {
-    this.defaultManEntRtnID = defaultManEntRtnID;
+  public void setAuthorizationrequired(Integer authorizationrequired) {
+    this.authorizationrequired = authorizationrequired;
   }
 
-  public Plmpqparam noShowDialog(Boolean noShowDialog) {
-    this.noShowDialog = noShowDialog;
+  public Plmpqparam docqueueforjoId(String docqueueforjoId) {
+    this.docqueueforjoId = docqueueforjoId;
     return this;
   }
 
    /**
-   * Nezobrazit dialog [persistentní položka]
-   * @return noShowDialog
+   * Řada dokladů vp; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueforjoId
   **/
-  @ApiModelProperty(example = "null", value = "Nezobrazit dialog [persistentní položka]")
-  public Boolean getNoShowDialog() {
-    return noShowDialog;
+  @ApiModelProperty(example = "null", value = "Řada dokladů vp; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueforjoId() {
+    return docqueueforjoId;
   }
 
-  public void setNoShowDialog(Boolean noShowDialog) {
-    this.noShowDialog = noShowDialog;
+  public void setDocqueueforjoId(String docqueueforjoId) {
+    this.docqueueforjoId = docqueueforjoId;
   }
 
-  public Plmpqparam methodOfSalaryCalculation(Integer methodOfSalaryCalculation) {
-    this.methodOfSalaryCalculation = methodOfSalaryCalculation;
+  public Plmpqparam tariffforjoId(String tariffforjoId) {
+    this.tariffforjoId = tariffforjoId;
     return this;
   }
 
    /**
-   * Hodinová sazba operace techn. postupu [persistentní položka]
-   * @return methodOfSalaryCalculation
+   * režijní sazba; id objektu režijní sazba [persistentní položka]
+   * @return tariffforjoId
   **/
-  @ApiModelProperty(example = "null", value = "Hodinová sazba operace techn. postupu [persistentní položka]")
-  public Integer getMethodOfSalaryCalculation() {
-    return methodOfSalaryCalculation;
+  @ApiModelProperty(example = "null", value = "režijní sazba; id objektu režijní sazba [persistentní položka]")
+  public String getTariffforjoId() {
+    return tariffforjoId;
   }
 
-  public void setMethodOfSalaryCalculation(Integer methodOfSalaryCalculation) {
-    this.methodOfSalaryCalculation = methodOfSalaryCalculation;
+  public void setTariffforjoId(String tariffforjoId) {
+    this.tariffforjoId = tariffforjoId;
   }
 
-  public Plmpqparam methodOfSalaryClass(Integer methodOfSalaryClass) {
-    this.methodOfSalaryClass = methodOfSalaryClass;
+  public Plmpqparam editnorm(Boolean editnorm) {
+    this.editnorm = editnorm;
     return this;
   }
 
    /**
-   * Tarifní třída pro ocenění výrobku [persistentní položka]
-   * @return methodOfSalaryClass
+   * povoleno editovat normu [persistentní položka]
+   * @return editnorm
   **/
-  @ApiModelProperty(example = "null", value = "Tarifní třída pro ocenění výrobku [persistentní položka]")
-  public Integer getMethodOfSalaryClass() {
-    return methodOfSalaryClass;
+  @ApiModelProperty(example = "null", value = "povoleno editovat normu [persistentní položka]")
+  public Boolean getEditnorm() {
+    return editnorm;
   }
 
-  public void setMethodOfSalaryClass(Integer methodOfSalaryClass) {
-    this.methodOfSalaryClass = methodOfSalaryClass;
+  public void setEditnorm(Boolean editnorm) {
+    this.editnorm = editnorm;
   }
 
-  public Plmpqparam defaultSettingOfMIX(Boolean defaultSettingOfMIX) {
-    this.defaultSettingOfMIX = defaultSettingOfMIX;
+  public Plmpqparam defaultmanentrtnId(String defaultmanentrtnId) {
+    this.defaultmanentrtnId = defaultmanentrtnId;
     return this;
   }
 
    /**
-   * Výchozí nastavení položky MIX [persistentní položka]
-   * @return defaultSettingOfMIX
+   * výchozí typ tech. postupu pro ruční editaci; id objektu typ technologického postupu [persistentní položka]
+   * @return defaultmanentrtnId
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí nastavení položky MIX [persistentní položka]")
-  public Boolean getDefaultSettingOfMIX() {
-    return defaultSettingOfMIX;
+  @ApiModelProperty(example = "null", value = "výchozí typ tech. postupu pro ruční editaci; id objektu typ technologického postupu [persistentní položka]")
+  public String getDefaultmanentrtnId() {
+    return defaultmanentrtnId;
   }
 
-  public void setDefaultSettingOfMIX(Boolean defaultSettingOfMIX) {
-    this.defaultSettingOfMIX = defaultSettingOfMIX;
+  public void setDefaultmanentrtnId(String defaultmanentrtnId) {
+    this.defaultmanentrtnId = defaultmanentrtnId;
   }
 
-  public Plmpqparam defaultSupposedStoreID(String defaultSupposedStoreID) {
-    this.defaultSupposedStoreID = defaultSupposedStoreID;
+  public Plmpqparam noshowdialog(Boolean noshowdialog) {
+    this.noshowdialog = noshowdialog;
     return this;
   }
 
    /**
-   * Výchozí předpokládaný sklad; ID objektu Sklad [persistentní položka]
-   * @return defaultSupposedStoreID
+   * nezobrazit dialog [persistentní položka]
+   * @return noshowdialog
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí předpokládaný sklad; ID objektu Sklad [persistentní položka]")
-  public String getDefaultSupposedStoreID() {
-    return defaultSupposedStoreID;
+  @ApiModelProperty(example = "null", value = "nezobrazit dialog [persistentní položka]")
+  public Boolean getNoshowdialog() {
+    return noshowdialog;
   }
 
-  public void setDefaultSupposedStoreID(String defaultSupposedStoreID) {
-    this.defaultSupposedStoreID = defaultSupposedStoreID;
+  public void setNoshowdialog(Boolean noshowdialog) {
+    this.noshowdialog = noshowdialog;
   }
 
-  public Plmpqparam inPlan(Boolean inPlan) {
-    this.inPlan = inPlan;
+  public Plmpqparam methodofsalarycalculation(Integer methodofsalarycalculation) {
+    this.methodofsalarycalculation = methodofsalarycalculation;
     return this;
   }
 
    /**
-   * Započítat do kapacitního plánu [persistentní položka]
-   * @return inPlan
+   * hodinová sazba operace techn. postupu [persistentní položka]
+   * @return methodofsalarycalculation
   **/
-  @ApiModelProperty(example = "null", value = "Započítat do kapacitního plánu [persistentní položka]")
-  public Boolean getInPlan() {
-    return inPlan;
+  @ApiModelProperty(example = "null", value = "hodinová sazba operace techn. postupu [persistentní položka]")
+  public Integer getMethodofsalarycalculation() {
+    return methodofsalarycalculation;
   }
 
-  public void setInPlan(Boolean inPlan) {
-    this.inPlan = inPlan;
+  public void setMethodofsalarycalculation(Integer methodofsalarycalculation) {
+    this.methodofsalarycalculation = methodofsalarycalculation;
   }
 
-  public Plmpqparam firmID(String firmID) {
-    this.firmID = firmID;
+  public Plmpqparam methodofsalaryclass(Integer methodofsalaryclass) {
+    this.methodofsalaryclass = methodofsalaryclass;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * tarifní třída pro ocenění výrobku [persistentní položka]
+   * @return methodofsalaryclass
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "tarifní třída pro ocenění výrobku [persistentní položka]")
+  public Integer getMethodofsalaryclass() {
+    return methodofsalaryclass;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setMethodofsalaryclass(Integer methodofsalaryclass) {
+    this.methodofsalaryclass = methodofsalaryclass;
   }
 
-  public Plmpqparam choosingRoutine(Integer choosingRoutine) {
-    this.choosingRoutine = choosingRoutine;
+  public Plmpqparam defaultsettingofmix(Boolean defaultsettingofmix) {
+    this.defaultsettingofmix = defaultsettingofmix;
     return this;
   }
 
    /**
-   * Výběr TP [persistentní položka]
-   * @return choosingRoutine
+   * výchozí nastavení položky mix [persistentní položka]
+   * @return defaultsettingofmix
   **/
-  @ApiModelProperty(example = "null", value = "Výběr TP [persistentní položka]")
-  public Integer getChoosingRoutine() {
-    return choosingRoutine;
+  @ApiModelProperty(example = "null", value = "výchozí nastavení položky mix [persistentní položka]")
+  public Boolean getDefaultsettingofmix() {
+    return defaultsettingofmix;
   }
 
-  public void setChoosingRoutine(Integer choosingRoutine) {
-    this.choosingRoutine = choosingRoutine;
+  public void setDefaultsettingofmix(Boolean defaultsettingofmix) {
+    this.defaultsettingofmix = defaultsettingofmix;
   }
 
-  public Plmpqparam choosingPL(Integer choosingPL) {
-    this.choosingPL = choosingPL;
+  public Plmpqparam defaultsupposedstoreId(String defaultsupposedstoreId) {
+    this.defaultsupposedstoreId = defaultsupposedstoreId;
     return this;
   }
 
    /**
-   * Výběr kus. [persistentní položka]
-   * @return choosingPL
+   * výchozí předpokládaný sklad; id objektu sklad [persistentní položka]
+   * @return defaultsupposedstoreId
   **/
-  @ApiModelProperty(example = "null", value = "Výběr kus. [persistentní položka]")
-  public Integer getChoosingPL() {
-    return choosingPL;
+  @ApiModelProperty(example = "null", value = "výchozí předpokládaný sklad; id objektu sklad [persistentní položka]")
+  public String getDefaultsupposedstoreId() {
+    return defaultsupposedstoreId;
   }
 
-  public void setChoosingPL(Integer choosingPL) {
-    this.choosingPL = choosingPL;
+  public void setDefaultsupposedstoreId(String defaultsupposedstoreId) {
+    this.defaultsupposedstoreId = defaultsupposedstoreId;
   }
 
-  public Plmpqparam defaultCanceled(Boolean defaultCanceled) {
-    this.defaultCanceled = defaultCanceled;
+  public Plmpqparam inplan(Boolean inplan) {
+    this.inplan = inplan;
     return this;
   }
 
    /**
-   * Výchozí - vyloučený z realizace  [persistentní položka]
-   * @return defaultCanceled
+   * započítat do kapacitního plánu [persistentní položka]
+   * @return inplan
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí - vyloučený z realizace  [persistentní položka]")
-  public Boolean getDefaultCanceled() {
-    return defaultCanceled;
+  @ApiModelProperty(example = "null", value = "započítat do kapacitního plánu [persistentní položka]")
+  public Boolean getInplan() {
+    return inplan;
   }
 
-  public void setDefaultCanceled(Boolean defaultCanceled) {
-    this.defaultCanceled = defaultCanceled;
+  public void setInplan(Boolean inplan) {
+    this.inplan = inplan;
+  }
+
+  public Plmpqparam firmId(String firmId) {
+    this.firmId = firmId;
+    return this;
+  }
+
+   /**
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
+  **/
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
+  }
+
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
+  }
+
+  public Plmpqparam choosingroutine(Integer choosingroutine) {
+    this.choosingroutine = choosingroutine;
+    return this;
+  }
+
+   /**
+   * výběr tp [persistentní položka]
+   * @return choosingroutine
+  **/
+  @ApiModelProperty(example = "null", value = "výběr tp [persistentní položka]")
+  public Integer getChoosingroutine() {
+    return choosingroutine;
+  }
+
+  public void setChoosingroutine(Integer choosingroutine) {
+    this.choosingroutine = choosingroutine;
+  }
+
+  public Plmpqparam choosingpl(Integer choosingpl) {
+    this.choosingpl = choosingpl;
+    return this;
+  }
+
+   /**
+   * výběr kus. [persistentní položka]
+   * @return choosingpl
+  **/
+  @ApiModelProperty(example = "null", value = "výběr kus. [persistentní položka]")
+  public Integer getChoosingpl() {
+    return choosingpl;
+  }
+
+  public void setChoosingpl(Integer choosingpl) {
+    this.choosingpl = choosingpl;
+  }
+
+  public Plmpqparam defaultcanceled(Boolean defaultcanceled) {
+    this.defaultcanceled = defaultcanceled;
+    return this;
+  }
+
+   /**
+   * výchozí - vyloučený z realizace  [persistentní položka]
+   * @return defaultcanceled
+  **/
+  @ApiModelProperty(example = "null", value = "výchozí - vyloučený z realizace  [persistentní položka]")
+  public Boolean getDefaultcanceled() {
+    return defaultcanceled;
+  }
+
+  public void setDefaultcanceled(Boolean defaultcanceled) {
+    this.defaultcanceled = defaultcanceled;
   }
 
 
@@ -430,31 +466,31 @@ public class Plmpqparam   {
       return false;
     }
     Plmpqparam plmpqparam = (Plmpqparam) o;
-    return Objects.equals(this.displayName, plmpqparam.displayName) &&
-        Objects.equals(this.ID, plmpqparam.ID) &&
-        Objects.equals(this.classID, plmpqparam.classID) &&
-        Objects.equals(this.objVersion, plmpqparam.objVersion) &&
-        Objects.equals(this.docQueueID, plmpqparam.docQueueID) &&
-        Objects.equals(this.authorizationRequired, plmpqparam.authorizationRequired) &&
-        Objects.equals(this.docQueueForJOID, plmpqparam.docQueueForJOID) &&
-        Objects.equals(this.tariffForJOID, plmpqparam.tariffForJOID) &&
-        Objects.equals(this.editNorm, plmpqparam.editNorm) &&
-        Objects.equals(this.defaultManEntRtnID, plmpqparam.defaultManEntRtnID) &&
-        Objects.equals(this.noShowDialog, plmpqparam.noShowDialog) &&
-        Objects.equals(this.methodOfSalaryCalculation, plmpqparam.methodOfSalaryCalculation) &&
-        Objects.equals(this.methodOfSalaryClass, plmpqparam.methodOfSalaryClass) &&
-        Objects.equals(this.defaultSettingOfMIX, plmpqparam.defaultSettingOfMIX) &&
-        Objects.equals(this.defaultSupposedStoreID, plmpqparam.defaultSupposedStoreID) &&
-        Objects.equals(this.inPlan, plmpqparam.inPlan) &&
-        Objects.equals(this.firmID, plmpqparam.firmID) &&
-        Objects.equals(this.choosingRoutine, plmpqparam.choosingRoutine) &&
-        Objects.equals(this.choosingPL, plmpqparam.choosingPL) &&
-        Objects.equals(this.defaultCanceled, plmpqparam.defaultCanceled);
+    return Objects.equals(this.displayname, plmpqparam.displayname) &&
+        Objects.equals(this.id, plmpqparam.id) &&
+        Objects.equals(this.classid, plmpqparam.classid) &&
+        Objects.equals(this.objversion, plmpqparam.objversion) &&
+        Objects.equals(this.docqueueId, plmpqparam.docqueueId) &&
+        Objects.equals(this.authorizationrequired, plmpqparam.authorizationrequired) &&
+        Objects.equals(this.docqueueforjoId, plmpqparam.docqueueforjoId) &&
+        Objects.equals(this.tariffforjoId, plmpqparam.tariffforjoId) &&
+        Objects.equals(this.editnorm, plmpqparam.editnorm) &&
+        Objects.equals(this.defaultmanentrtnId, plmpqparam.defaultmanentrtnId) &&
+        Objects.equals(this.noshowdialog, plmpqparam.noshowdialog) &&
+        Objects.equals(this.methodofsalarycalculation, plmpqparam.methodofsalarycalculation) &&
+        Objects.equals(this.methodofsalaryclass, plmpqparam.methodofsalaryclass) &&
+        Objects.equals(this.defaultsettingofmix, plmpqparam.defaultsettingofmix) &&
+        Objects.equals(this.defaultsupposedstoreId, plmpqparam.defaultsupposedstoreId) &&
+        Objects.equals(this.inplan, plmpqparam.inplan) &&
+        Objects.equals(this.firmId, plmpqparam.firmId) &&
+        Objects.equals(this.choosingroutine, plmpqparam.choosingroutine) &&
+        Objects.equals(this.choosingpl, plmpqparam.choosingpl) &&
+        Objects.equals(this.defaultcanceled, plmpqparam.defaultcanceled);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, docQueueID, authorizationRequired, docQueueForJOID, tariffForJOID, editNorm, defaultManEntRtnID, noShowDialog, methodOfSalaryCalculation, methodOfSalaryClass, defaultSettingOfMIX, defaultSupposedStoreID, inPlan, firmID, choosingRoutine, choosingPL, defaultCanceled);
+    return Objects.hash(displayname, id, classid, objversion, docqueueId, authorizationrequired, docqueueforjoId, tariffforjoId, editnorm, defaultmanentrtnId, noshowdialog, methodofsalarycalculation, methodofsalaryclass, defaultsettingofmix, defaultsupposedstoreId, inplan, firmId, choosingroutine, choosingpl, defaultcanceled);
   }
 
   @Override
@@ -462,26 +498,26 @@ public class Plmpqparam   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmpqparam {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    authorizationRequired: ").append(toIndentedString(authorizationRequired)).append("\n");
-    sb.append("    docQueueForJOID: ").append(toIndentedString(docQueueForJOID)).append("\n");
-    sb.append("    tariffForJOID: ").append(toIndentedString(tariffForJOID)).append("\n");
-    sb.append("    editNorm: ").append(toIndentedString(editNorm)).append("\n");
-    sb.append("    defaultManEntRtnID: ").append(toIndentedString(defaultManEntRtnID)).append("\n");
-    sb.append("    noShowDialog: ").append(toIndentedString(noShowDialog)).append("\n");
-    sb.append("    methodOfSalaryCalculation: ").append(toIndentedString(methodOfSalaryCalculation)).append("\n");
-    sb.append("    methodOfSalaryClass: ").append(toIndentedString(methodOfSalaryClass)).append("\n");
-    sb.append("    defaultSettingOfMIX: ").append(toIndentedString(defaultSettingOfMIX)).append("\n");
-    sb.append("    defaultSupposedStoreID: ").append(toIndentedString(defaultSupposedStoreID)).append("\n");
-    sb.append("    inPlan: ").append(toIndentedString(inPlan)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    choosingRoutine: ").append(toIndentedString(choosingRoutine)).append("\n");
-    sb.append("    choosingPL: ").append(toIndentedString(choosingPL)).append("\n");
-    sb.append("    defaultCanceled: ").append(toIndentedString(defaultCanceled)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    authorizationrequired: ").append(toIndentedString(authorizationrequired)).append("\n");
+    sb.append("    docqueueforjoId: ").append(toIndentedString(docqueueforjoId)).append("\n");
+    sb.append("    tariffforjoId: ").append(toIndentedString(tariffforjoId)).append("\n");
+    sb.append("    editnorm: ").append(toIndentedString(editnorm)).append("\n");
+    sb.append("    defaultmanentrtnId: ").append(toIndentedString(defaultmanentrtnId)).append("\n");
+    sb.append("    noshowdialog: ").append(toIndentedString(noshowdialog)).append("\n");
+    sb.append("    methodofsalarycalculation: ").append(toIndentedString(methodofsalarycalculation)).append("\n");
+    sb.append("    methodofsalaryclass: ").append(toIndentedString(methodofsalaryclass)).append("\n");
+    sb.append("    defaultsettingofmix: ").append(toIndentedString(defaultsettingofmix)).append("\n");
+    sb.append("    defaultsupposedstoreId: ").append(toIndentedString(defaultsupposedstoreId)).append("\n");
+    sb.append("    inplan: ").append(toIndentedString(inplan)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    choosingroutine: ").append(toIndentedString(choosingroutine)).append("\n");
+    sb.append("    choosingpl: ").append(toIndentedString(choosingpl)).append("\n");
+    sb.append("    defaultcanceled: ").append(toIndentedString(defaultcanceled)).append("\n");
     sb.append("}");
     return sb.toString();
   }

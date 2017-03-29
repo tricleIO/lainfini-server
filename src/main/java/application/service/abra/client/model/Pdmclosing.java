@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,234 +35,270 @@ import java.util.Objects;
 /**
  * Pdmclosing
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Pdmclosing   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Period_ID")
-  private String periodID = null;
+  @SerializedName("period_id")
+  private String periodId = null;
 
-  @SerializedName("OrdNumber")
-  private Integer ordNumber = null;
+  @SerializedName("ordnumber")
+  private Integer ordnumber = null;
 
-  @SerializedName("DocDate$DATE")
-  private DateTime docDateDATE = null;
+  @SerializedName("docdate$date")
+  private DateTime docdatedate = null;
 
-  @SerializedName("CreatedBy_ID")
-  private String createdByID = null;
+  @SerializedName("createdby_id")
+  private String createdbyId = null;
 
-  @SerializedName("CorrectedBy_ID")
-  private String correctedByID = null;
+  @SerializedName("correctedby_id")
+  private String correctedbyId = null;
 
-  @SerializedName("NewRelatedType")
-  private Integer newRelatedType = null;
+  @SerializedName("newrelatedtype")
+  private Integer newrelatedtype = null;
 
-  @SerializedName("NewRelatedDocument_ID")
-  private String newRelatedDocumentID = null;
+  @SerializedName("newrelateddocument_id")
+  private String newrelateddocumentId = null;
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("PostDate$DATE")
-  private DateTime postDateDATE = null;
+  @SerializedName("postdate$date")
+  private DateTime postdatedate = null;
 
-  @SerializedName("ExternalNumber")
-  private String externalNumber = null;
+  @SerializedName("externalnumber")
+  private String externalnumber = null;
 
-  @SerializedName("PostProvider_ID")
-  private String postProviderID = null;
+  @SerializedName("postprovider_id")
+  private String postproviderId = null;
+
+  public Pdmclosing displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
+  }
 
    /**
    * Číslo dok.
-   * @return displayName
+   * @return displayname
   **/
   @ApiModelProperty(example = "null", value = "Číslo dok.")
-  public String getDisplayName() {
-    return displayName;
+  public String getDisplayname() {
+    return displayname;
   }
 
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Pdmclosing docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Pdmclosing id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Zdrojová řada; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Zdrojová řada; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Pdmclosing periodID(String periodID) {
-    this.periodID = periodID;
+  public Pdmclosing classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Období; ID objektu Období [persistentní položka]
-   * @return periodID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Období; ID objektu Období [persistentní položka]")
-  public String getPeriodID() {
-    return periodID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setPeriodID(String periodID) {
-    this.periodID = periodID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Pdmclosing ordNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public Pdmclosing objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Pořadové číslo [persistentní položka]
-   * @return ordNumber
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Pořadové číslo [persistentní položka]")
-  public Integer getOrdNumber() {
-    return ordNumber;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setOrdNumber(Integer ordNumber) {
-    this.ordNumber = ordNumber;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Pdmclosing docDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public Pdmclosing docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Datum dok. [persistentní položka]
-   * @return docDateDATE
+   * zdrojová řada; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Datum dok. [persistentní položka]")
-  public DateTime getDocDateDATE() {
-    return docDateDATE;
+  @ApiModelProperty(example = "null", value = "zdrojová řada; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setDocDateDATE(DateTime docDateDATE) {
-    this.docDateDATE = docDateDATE;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Pdmclosing createdByID(String createdByID) {
-    this.createdByID = createdByID;
+  public Pdmclosing periodId(String periodId) {
+    this.periodId = periodId;
     return this;
   }
 
    /**
-   * Vytvořil; ID objektu Uživatel [persistentní položka]
-   * @return createdByID
+   * období; id objektu období [persistentní položka]
+   * @return periodId
   **/
-  @ApiModelProperty(example = "null", value = "Vytvořil; ID objektu Uživatel [persistentní položka]")
-  public String getCreatedByID() {
-    return createdByID;
+  @ApiModelProperty(example = "null", value = "období; id objektu období [persistentní položka]")
+  public String getPeriodId() {
+    return periodId;
   }
 
-  public void setCreatedByID(String createdByID) {
-    this.createdByID = createdByID;
+  public void setPeriodId(String periodId) {
+    this.periodId = periodId;
   }
 
-  public Pdmclosing correctedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public Pdmclosing ordnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
     return this;
   }
 
    /**
-   * Opravil; ID objektu Uživatel [persistentní položka]
-   * @return correctedByID
+   * pořadové číslo [persistentní položka]
+   * @return ordnumber
   **/
-  @ApiModelProperty(example = "null", value = "Opravil; ID objektu Uživatel [persistentní položka]")
-  public String getCorrectedByID() {
-    return correctedByID;
+  @ApiModelProperty(example = "null", value = "pořadové číslo [persistentní položka]")
+  public Integer getOrdnumber() {
+    return ordnumber;
   }
 
-  public void setCorrectedByID(String correctedByID) {
-    this.correctedByID = correctedByID;
+  public void setOrdnumber(Integer ordnumber) {
+    this.ordnumber = ordnumber;
   }
 
-  public Pdmclosing newRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public Pdmclosing docdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
     return this;
   }
 
    /**
-   * Typ relace
-   * @return newRelatedType
+   * datum dok. [persistentní položka]
+   * @return docdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Typ relace")
-  public Integer getNewRelatedType() {
-    return newRelatedType;
+  @ApiModelProperty(example = "null", value = "datum dok. [persistentní položka]")
+  public DateTime getDocdatedate() {
+    return docdatedate;
   }
 
-  public void setNewRelatedType(Integer newRelatedType) {
-    this.newRelatedType = newRelatedType;
+  public void setDocdatedate(DateTime docdatedate) {
+    this.docdatedate = docdatedate;
   }
 
-  public Pdmclosing newRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public Pdmclosing createdbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
     return this;
   }
 
    /**
-   * ID dokladu pro připojení
-   * @return newRelatedDocumentID
+   * vytvořil; id objektu uživatel [persistentní položka]
+   * @return createdbyId
   **/
-  @ApiModelProperty(example = "null", value = "ID dokladu pro připojení")
-  public String getNewRelatedDocumentID() {
-    return newRelatedDocumentID;
+  @ApiModelProperty(example = "null", value = "vytvořil; id objektu uživatel [persistentní položka]")
+  public String getCreatedbyId() {
+    return createdbyId;
   }
 
-  public void setNewRelatedDocumentID(String newRelatedDocumentID) {
-    this.newRelatedDocumentID = newRelatedDocumentID;
+  public void setCreatedbyId(String createdbyId) {
+    this.createdbyId = createdbyId;
+  }
+
+  public Pdmclosing correctedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+    return this;
+  }
+
+   /**
+   * opravil; id objektu uživatel [persistentní položka]
+   * @return correctedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "opravil; id objektu uživatel [persistentní položka]")
+  public String getCorrectedbyId() {
+    return correctedbyId;
+  }
+
+  public void setCorrectedbyId(String correctedbyId) {
+    this.correctedbyId = correctedbyId;
+  }
+
+  public Pdmclosing newrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
+    return this;
+  }
+
+   /**
+   * typ relace
+   * @return newrelatedtype
+  **/
+  @ApiModelProperty(example = "null", value = "typ relace")
+  public Integer getNewrelatedtype() {
+    return newrelatedtype;
+  }
+
+  public void setNewrelatedtype(Integer newrelatedtype) {
+    this.newrelatedtype = newrelatedtype;
+  }
+
+  public Pdmclosing newrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
+    return this;
+  }
+
+   /**
+   * id dokladu pro připojení
+   * @return newrelateddocumentId
+  **/
+  @ApiModelProperty(example = "null", value = "id dokladu pro připojení")
+  public String getNewrelateddocumentId() {
+    return newrelateddocumentId;
+  }
+
+  public void setNewrelateddocumentId(String newrelateddocumentId) {
+    this.newrelateddocumentId = newrelateddocumentId;
   }
 
   public Pdmclosing description(String description) {
@@ -271,10 +307,10 @@ public class Pdmclosing   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -283,58 +319,58 @@ public class Pdmclosing   {
     this.description = description;
   }
 
-  public Pdmclosing postDateDATE(DateTime postDateDATE) {
-    this.postDateDATE = postDateDATE;
+  public Pdmclosing postdatedate(DateTime postdatedate) {
+    this.postdatedate = postdatedate;
     return this;
   }
 
    /**
-   * Datum a čas odeslání [persistentní položka]
-   * @return postDateDATE
+   * datum a čas odeslání [persistentní položka]
+   * @return postdatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum a čas odeslání [persistentní položka]")
-  public DateTime getPostDateDATE() {
-    return postDateDATE;
+  @ApiModelProperty(example = "null", value = "datum a čas odeslání [persistentní položka]")
+  public DateTime getPostdatedate() {
+    return postdatedate;
   }
 
-  public void setPostDateDATE(DateTime postDateDATE) {
-    this.postDateDATE = postDateDATE;
+  public void setPostdatedate(DateTime postdatedate) {
+    this.postdatedate = postdatedate;
   }
 
-  public Pdmclosing externalNumber(String externalNumber) {
-    this.externalNumber = externalNumber;
+  public Pdmclosing externalnumber(String externalnumber) {
+    this.externalnumber = externalnumber;
     return this;
   }
 
    /**
-   * Externí číslo [persistentní položka]
-   * @return externalNumber
+   * externí číslo [persistentní položka]
+   * @return externalnumber
   **/
-  @ApiModelProperty(example = "null", value = "Externí číslo [persistentní položka]")
-  public String getExternalNumber() {
-    return externalNumber;
+  @ApiModelProperty(example = "null", value = "externí číslo [persistentní položka]")
+  public String getExternalnumber() {
+    return externalnumber;
   }
 
-  public void setExternalNumber(String externalNumber) {
-    this.externalNumber = externalNumber;
+  public void setExternalnumber(String externalnumber) {
+    this.externalnumber = externalnumber;
   }
 
-  public Pdmclosing postProviderID(String postProviderID) {
-    this.postProviderID = postProviderID;
+  public Pdmclosing postproviderId(String postproviderId) {
+    this.postproviderId = postproviderId;
     return this;
   }
 
    /**
-   * Poštovní poskytovatel; ID objektu Poskytovatel poštovních služeb [persistentní položka]
-   * @return postProviderID
+   * poštovní poskytovatel; id objektu poskytovatel poštovních služeb [persistentní položka]
+   * @return postproviderId
   **/
-  @ApiModelProperty(example = "null", value = "Poštovní poskytovatel; ID objektu Poskytovatel poštovních služeb [persistentní položka]")
-  public String getPostProviderID() {
-    return postProviderID;
+  @ApiModelProperty(example = "null", value = "poštovní poskytovatel; id objektu poskytovatel poštovních služeb [persistentní položka]")
+  public String getPostproviderId() {
+    return postproviderId;
   }
 
-  public void setPostProviderID(String postProviderID) {
-    this.postProviderID = postProviderID;
+  public void setPostproviderId(String postproviderId) {
+    this.postproviderId = postproviderId;
   }
 
 
@@ -347,27 +383,27 @@ public class Pdmclosing   {
       return false;
     }
     Pdmclosing pdmclosing = (Pdmclosing) o;
-    return Objects.equals(this.displayName, pdmclosing.displayName) &&
-        Objects.equals(this.ID, pdmclosing.ID) &&
-        Objects.equals(this.classID, pdmclosing.classID) &&
-        Objects.equals(this.objVersion, pdmclosing.objVersion) &&
-        Objects.equals(this.docQueueID, pdmclosing.docQueueID) &&
-        Objects.equals(this.periodID, pdmclosing.periodID) &&
-        Objects.equals(this.ordNumber, pdmclosing.ordNumber) &&
-        Objects.equals(this.docDateDATE, pdmclosing.docDateDATE) &&
-        Objects.equals(this.createdByID, pdmclosing.createdByID) &&
-        Objects.equals(this.correctedByID, pdmclosing.correctedByID) &&
-        Objects.equals(this.newRelatedType, pdmclosing.newRelatedType) &&
-        Objects.equals(this.newRelatedDocumentID, pdmclosing.newRelatedDocumentID) &&
+    return Objects.equals(this.displayname, pdmclosing.displayname) &&
+        Objects.equals(this.id, pdmclosing.id) &&
+        Objects.equals(this.classid, pdmclosing.classid) &&
+        Objects.equals(this.objversion, pdmclosing.objversion) &&
+        Objects.equals(this.docqueueId, pdmclosing.docqueueId) &&
+        Objects.equals(this.periodId, pdmclosing.periodId) &&
+        Objects.equals(this.ordnumber, pdmclosing.ordnumber) &&
+        Objects.equals(this.docdatedate, pdmclosing.docdatedate) &&
+        Objects.equals(this.createdbyId, pdmclosing.createdbyId) &&
+        Objects.equals(this.correctedbyId, pdmclosing.correctedbyId) &&
+        Objects.equals(this.newrelatedtype, pdmclosing.newrelatedtype) &&
+        Objects.equals(this.newrelateddocumentId, pdmclosing.newrelateddocumentId) &&
         Objects.equals(this.description, pdmclosing.description) &&
-        Objects.equals(this.postDateDATE, pdmclosing.postDateDATE) &&
-        Objects.equals(this.externalNumber, pdmclosing.externalNumber) &&
-        Objects.equals(this.postProviderID, pdmclosing.postProviderID);
+        Objects.equals(this.postdatedate, pdmclosing.postdatedate) &&
+        Objects.equals(this.externalnumber, pdmclosing.externalnumber) &&
+        Objects.equals(this.postproviderId, pdmclosing.postproviderId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, docQueueID, periodID, ordNumber, docDateDATE, createdByID, correctedByID, newRelatedType, newRelatedDocumentID, description, postDateDATE, externalNumber, postProviderID);
+    return Objects.hash(displayname, id, classid, objversion, docqueueId, periodId, ordnumber, docdatedate, createdbyId, correctedbyId, newrelatedtype, newrelateddocumentId, description, postdatedate, externalnumber, postproviderId);
   }
 
   @Override
@@ -375,22 +411,22 @@ public class Pdmclosing   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Pdmclosing {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    periodID: ").append(toIndentedString(periodID)).append("\n");
-    sb.append("    ordNumber: ").append(toIndentedString(ordNumber)).append("\n");
-    sb.append("    docDateDATE: ").append(toIndentedString(docDateDATE)).append("\n");
-    sb.append("    createdByID: ").append(toIndentedString(createdByID)).append("\n");
-    sb.append("    correctedByID: ").append(toIndentedString(correctedByID)).append("\n");
-    sb.append("    newRelatedType: ").append(toIndentedString(newRelatedType)).append("\n");
-    sb.append("    newRelatedDocumentID: ").append(toIndentedString(newRelatedDocumentID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    periodId: ").append(toIndentedString(periodId)).append("\n");
+    sb.append("    ordnumber: ").append(toIndentedString(ordnumber)).append("\n");
+    sb.append("    docdatedate: ").append(toIndentedString(docdatedate)).append("\n");
+    sb.append("    createdbyId: ").append(toIndentedString(createdbyId)).append("\n");
+    sb.append("    correctedbyId: ").append(toIndentedString(correctedbyId)).append("\n");
+    sb.append("    newrelatedtype: ").append(toIndentedString(newrelatedtype)).append("\n");
+    sb.append("    newrelateddocumentId: ").append(toIndentedString(newrelateddocumentId)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
-    sb.append("    postDateDATE: ").append(toIndentedString(postDateDATE)).append("\n");
-    sb.append("    externalNumber: ").append(toIndentedString(externalNumber)).append("\n");
-    sb.append("    postProviderID: ").append(toIndentedString(postProviderID)).append("\n");
+    sb.append("    postdatedate: ").append(toIndentedString(postdatedate)).append("\n");
+    sb.append("    externalnumber: ").append(toIndentedString(externalnumber)).append("\n");
+    sb.append("    postproviderId: ").append(toIndentedString(postproviderId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

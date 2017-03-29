@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,138 +36,183 @@ import java.util.Objects;
 /**
  * Storeunit
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Storeunit   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("IndivisibleQuantity")
-  private Double indivisibleQuantity = null;
+  @SerializedName("indivisiblequantity")
+  private Double indivisiblequantity = null;
 
-  @SerializedName("Weight")
+  @SerializedName("weight")
   private Double weight = null;
 
-  @SerializedName("WeightUnit")
-  private Integer weightUnit = null;
+  @SerializedName("weightunit")
+  private Integer weightunit = null;
 
-  @SerializedName("Capacity")
+  @SerializedName("capacity")
   private Double capacity = null;
 
-  @SerializedName("CapacityUnit")
-  private Integer capacityUnit = null;
+  @SerializedName("capacityunit")
+  private Integer capacityunit = null;
 
-  @SerializedName("EAN")
-  private String EAN = null;
+  @SerializedName("ean")
+  private String ean = null;
 
-  @SerializedName("PLU")
-  private Integer PLU = null;
+  @SerializedName("plu")
+  private Integer plu = null;
 
-  @SerializedName("HasAnyContainer")
-  private Boolean hasAnyContainer = null;
+  @SerializedName("hasanycontainer")
+  private Boolean hasanycontainer = null;
 
-  @SerializedName("StoreContainers")
-  private List<Storecontainer> storeContainers = new ArrayList<Storecontainer>();
+  @SerializedName("storecontainers")
+  private List<Storecontainer> storecontainers = new ArrayList<Storecontainer>();
 
-  @SerializedName("StoreEANs")
-  private List<Storeean> storeEANs = new ArrayList<Storeean>();
+  @SerializedName("storeeans")
+  private List<Storeean> storeeans = new ArrayList<Storeean>();
 
-  @SerializedName("Description")
+  @SerializedName("description")
   private String description = null;
 
-  @SerializedName("Width")
+  @SerializedName("width")
   private Double width = null;
 
-  @SerializedName("Height")
+  @SerializedName("height")
   private Double height = null;
 
-  @SerializedName("Depth")
+  @SerializedName("depth")
   private Double depth = null;
 
-  @SerializedName("SizeUnit")
-  private Integer sizeUnit = null;
+  @SerializedName("sizeunit")
+  private Integer sizeunit = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Skladová karta [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Skladová karta [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Storeunit posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Storeunit displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Storeunit id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Storeunit classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Storeunit objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Storeunit parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu skladová karta [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu skladová karta [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Storeunit posindex(Integer posindex) {
+    this.posindex = posindex;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return posindex
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
+  }
+
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
   public Storeunit code(String code) {
@@ -176,10 +221,10 @@ public class Storeunit   {
   }
 
    /**
-   * Zkratka [persistentní položka]
+   * zkratka [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Zkratka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "zkratka [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -188,40 +233,40 @@ public class Storeunit   {
     this.code = code;
   }
 
-  public Storeunit unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Storeunit unitrate(Double unitrate) {
+    this.unitrate = unitrate;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return unitRate
+   * vztah [persistentní položka]
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
-  public Storeunit indivisibleQuantity(Double indivisibleQuantity) {
-    this.indivisibleQuantity = indivisibleQuantity;
+  public Storeunit indivisiblequantity(Double indivisiblequantity) {
+    this.indivisiblequantity = indivisiblequantity;
     return this;
   }
 
    /**
-   * Neděl. množství [persistentní položka]
-   * @return indivisibleQuantity
+   * neděl. množství [persistentní položka]
+   * @return indivisiblequantity
   **/
-  @ApiModelProperty(example = "null", value = "Neděl. množství [persistentní položka]")
-  public Double getIndivisibleQuantity() {
-    return indivisibleQuantity;
+  @ApiModelProperty(example = "null", value = "neděl. množství [persistentní položka]")
+  public Double getIndivisiblequantity() {
+    return indivisiblequantity;
   }
 
-  public void setIndivisibleQuantity(Double indivisibleQuantity) {
-    this.indivisibleQuantity = indivisibleQuantity;
+  public void setIndivisiblequantity(Double indivisiblequantity) {
+    this.indivisiblequantity = indivisiblequantity;
   }
 
   public Storeunit weight(Double weight) {
@@ -230,10 +275,10 @@ public class Storeunit   {
   }
 
    /**
-   * Hmotnost [persistentní položka]
+   * hmotnost [persistentní položka]
    * @return weight
   **/
-  @ApiModelProperty(example = "null", value = "Hmotnost [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "hmotnost [persistentní položka]")
   public Double getWeight() {
     return weight;
   }
@@ -242,22 +287,22 @@ public class Storeunit   {
     this.weight = weight;
   }
 
-  public Storeunit weightUnit(Integer weightUnit) {
-    this.weightUnit = weightUnit;
+  public Storeunit weightunit(Integer weightunit) {
+    this.weightunit = weightunit;
     return this;
   }
 
    /**
-   * Hm.jednotka [persistentní položka]
-   * @return weightUnit
+   * hm.jednotka [persistentní položka]
+   * @return weightunit
   **/
-  @ApiModelProperty(example = "null", value = "Hm.jednotka [persistentní položka]")
-  public Integer getWeightUnit() {
-    return weightUnit;
+  @ApiModelProperty(example = "null", value = "hm.jednotka [persistentní položka]")
+  public Integer getWeightunit() {
+    return weightunit;
   }
 
-  public void setWeightUnit(Integer weightUnit) {
-    this.weightUnit = weightUnit;
+  public void setWeightunit(Integer weightunit) {
+    this.weightunit = weightunit;
   }
 
   public Storeunit capacity(Double capacity) {
@@ -266,10 +311,10 @@ public class Storeunit   {
   }
 
    /**
-   * Objem [persistentní položka]
+   * objem [persistentní položka]
    * @return capacity
   **/
-  @ApiModelProperty(example = "null", value = "Objem [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "objem [persistentní položka]")
   public Double getCapacity() {
     return capacity;
   }
@@ -278,113 +323,122 @@ public class Storeunit   {
     this.capacity = capacity;
   }
 
-  public Storeunit capacityUnit(Integer capacityUnit) {
-    this.capacityUnit = capacityUnit;
+  public Storeunit capacityunit(Integer capacityunit) {
+    this.capacityunit = capacityunit;
     return this;
   }
 
    /**
-   * Obj.jednotka [persistentní položka]
-   * @return capacityUnit
+   * obj.jednotka [persistentní položka]
+   * @return capacityunit
   **/
-  @ApiModelProperty(example = "null", value = "Obj.jednotka [persistentní položka]")
-  public Integer getCapacityUnit() {
-    return capacityUnit;
+  @ApiModelProperty(example = "null", value = "obj.jednotka [persistentní položka]")
+  public Integer getCapacityunit() {
+    return capacityunit;
   }
 
-  public void setCapacityUnit(Integer capacityUnit) {
-    this.capacityUnit = capacityUnit;
+  public void setCapacityunit(Integer capacityunit) {
+    this.capacityunit = capacityunit;
   }
 
-  public Storeunit EAN(String EAN) {
-    this.EAN = EAN;
+  public Storeunit ean(String ean) {
+    this.ean = ean;
     return this;
   }
 
    /**
-   * EAN [persistentní položka]
-   * @return EAN
+   * ean [persistentní položka]
+   * @return ean
   **/
-  @ApiModelProperty(example = "null", value = "EAN [persistentní položka]")
-  public String getEAN() {
-    return EAN;
+  @ApiModelProperty(example = "null", value = "ean [persistentní položka]")
+  public String getEan() {
+    return ean;
   }
 
-  public void setEAN(String EAN) {
-    this.EAN = EAN;
+  public void setEan(String ean) {
+    this.ean = ean;
   }
 
-  public Storeunit PLU(Integer PLU) {
-    this.PLU = PLU;
+  public Storeunit plu(Integer plu) {
+    this.plu = plu;
     return this;
   }
 
    /**
-   * PLU [persistentní položka]
-   * @return PLU
+   * plu [persistentní položka]
+   * @return plu
   **/
-  @ApiModelProperty(example = "null", value = "PLU [persistentní položka]")
-  public Integer getPLU() {
-    return PLU;
+  @ApiModelProperty(example = "null", value = "plu [persistentní položka]")
+  public Integer getPlu() {
+    return plu;
   }
 
-  public void setPLU(Integer PLU) {
-    this.PLU = PLU;
+  public void setPlu(Integer plu) {
+    this.plu = plu;
   }
 
-   /**
-   * Je kolekce Obaly prázdná [persistentní položka]
-   * @return hasAnyContainer
-  **/
-  @ApiModelProperty(example = "null", value = "Je kolekce Obaly prázdná [persistentní položka]")
-  public Boolean getHasAnyContainer() {
-    return hasAnyContainer;
-  }
-
-  public Storeunit storeContainers(List<Storecontainer> storeContainers) {
-    this.storeContainers = storeContainers;
-    return this;
-  }
-
-  public Storeunit addStoreContainersItem(Storecontainer storeContainersItem) {
-    this.storeContainers.add(storeContainersItem);
+  public Storeunit hasanycontainer(Boolean hasanycontainer) {
+    this.hasanycontainer = hasanycontainer;
     return this;
   }
 
    /**
-   * Obaly; kolekce BO Obal k jednotce skl. karty [nepersistentní položka]
-   * @return storeContainers
+   * je kolekce obaly prázdná [persistentní položka]
+   * @return hasanycontainer
   **/
-  @ApiModelProperty(example = "null", value = "Obaly; kolekce BO Obal k jednotce skl. karty [nepersistentní položka]")
-  public List<Storecontainer> getStoreContainers() {
-    return storeContainers;
+  @ApiModelProperty(example = "null", value = "je kolekce obaly prázdná [persistentní položka]")
+  public Boolean getHasanycontainer() {
+    return hasanycontainer;
   }
 
-  public void setStoreContainers(List<Storecontainer> storeContainers) {
-    this.storeContainers = storeContainers;
+  public void setHasanycontainer(Boolean hasanycontainer) {
+    this.hasanycontainer = hasanycontainer;
   }
 
-  public Storeunit storeEANs(List<Storeean> storeEANs) {
-    this.storeEANs = storeEANs;
+  public Storeunit storecontainers(List<Storecontainer> storecontainers) {
+    this.storecontainers = storecontainers;
     return this;
   }
 
-  public Storeunit addStoreEANsItem(Storeean storeEANsItem) {
-    this.storeEANs.add(storeEANsItem);
+  public Storeunit addStorecontainersItem(Storecontainer storecontainersItem) {
+    this.storecontainers.add(storecontainersItem);
     return this;
   }
 
    /**
-   * EAN kódy; kolekce BO EAN kód [nepersistentní položka]
-   * @return storeEANs
+   * obaly; kolekce bo obal k jednotce skl. karty [nepersistentní položka]
+   * @return storecontainers
   **/
-  @ApiModelProperty(example = "null", value = "EAN kódy; kolekce BO EAN kód [nepersistentní položka]")
-  public List<Storeean> getStoreEANs() {
-    return storeEANs;
+  @ApiModelProperty(example = "null", value = "obaly; kolekce bo obal k jednotce skl. karty [nepersistentní položka]")
+  public List<Storecontainer> getStorecontainers() {
+    return storecontainers;
   }
 
-  public void setStoreEANs(List<Storeean> storeEANs) {
-    this.storeEANs = storeEANs;
+  public void setStorecontainers(List<Storecontainer> storecontainers) {
+    this.storecontainers = storecontainers;
+  }
+
+  public Storeunit storeeans(List<Storeean> storeeans) {
+    this.storeeans = storeeans;
+    return this;
+  }
+
+  public Storeunit addStoreeansItem(Storeean storeeansItem) {
+    this.storeeans.add(storeeansItem);
+    return this;
+  }
+
+   /**
+   * ean kódy; kolekce bo ean kód [nepersistentní položka]
+   * @return storeeans
+  **/
+  @ApiModelProperty(example = "null", value = "ean kódy; kolekce bo ean kód [nepersistentní položka]")
+  public List<Storeean> getStoreeans() {
+    return storeeans;
+  }
+
+  public void setStoreeans(List<Storeean> storeeans) {
+    this.storeeans = storeeans;
   }
 
   public Storeunit description(String description) {
@@ -393,10 +447,10 @@ public class Storeunit   {
   }
 
    /**
-   * Popis [persistentní položka]
+   * popis [persistentní položka]
    * @return description
   **/
-  @ApiModelProperty(example = "null", value = "Popis [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "popis [persistentní položka]")
   public String getDescription() {
     return description;
   }
@@ -429,10 +483,10 @@ public class Storeunit   {
   }
 
    /**
-   * Výška [persistentní položka]
+   * výška [persistentní položka]
    * @return height
   **/
-  @ApiModelProperty(example = "null", value = "Výška [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "výška [persistentní položka]")
   public Double getHeight() {
     return height;
   }
@@ -447,10 +501,10 @@ public class Storeunit   {
   }
 
    /**
-   * Hloubka [persistentní položka]
+   * hloubka [persistentní položka]
    * @return depth
   **/
-  @ApiModelProperty(example = "null", value = "Hloubka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "hloubka [persistentní položka]")
   public Double getDepth() {
     return depth;
   }
@@ -459,22 +513,22 @@ public class Storeunit   {
     this.depth = depth;
   }
 
-  public Storeunit sizeUnit(Integer sizeUnit) {
-    this.sizeUnit = sizeUnit;
+  public Storeunit sizeunit(Integer sizeunit) {
+    this.sizeunit = sizeunit;
     return this;
   }
 
    /**
-   * Jednotka rozměrů [persistentní položka]
-   * @return sizeUnit
+   * jednotka rozměrů [persistentní položka]
+   * @return sizeunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka rozměrů [persistentní položka]")
-  public Integer getSizeUnit() {
-    return sizeUnit;
+  @ApiModelProperty(example = "null", value = "jednotka rozměrů [persistentní položka]")
+  public Integer getSizeunit() {
+    return sizeunit;
   }
 
-  public void setSizeUnit(Integer sizeUnit) {
-    this.sizeUnit = sizeUnit;
+  public void setSizeunit(Integer sizeunit) {
+    this.sizeunit = sizeunit;
   }
 
 
@@ -487,34 +541,34 @@ public class Storeunit   {
       return false;
     }
     Storeunit storeunit = (Storeunit) o;
-    return Objects.equals(this.displayName, storeunit.displayName) &&
-        Objects.equals(this.ID, storeunit.ID) &&
-        Objects.equals(this.classID, storeunit.classID) &&
-        Objects.equals(this.objVersion, storeunit.objVersion) &&
-        Objects.equals(this.parentID, storeunit.parentID) &&
-        Objects.equals(this.posIndex, storeunit.posIndex) &&
+    return Objects.equals(this.displayname, storeunit.displayname) &&
+        Objects.equals(this.id, storeunit.id) &&
+        Objects.equals(this.classid, storeunit.classid) &&
+        Objects.equals(this.objversion, storeunit.objversion) &&
+        Objects.equals(this.parentId, storeunit.parentId) &&
+        Objects.equals(this.posindex, storeunit.posindex) &&
         Objects.equals(this.code, storeunit.code) &&
-        Objects.equals(this.unitRate, storeunit.unitRate) &&
-        Objects.equals(this.indivisibleQuantity, storeunit.indivisibleQuantity) &&
+        Objects.equals(this.unitrate, storeunit.unitrate) &&
+        Objects.equals(this.indivisiblequantity, storeunit.indivisiblequantity) &&
         Objects.equals(this.weight, storeunit.weight) &&
-        Objects.equals(this.weightUnit, storeunit.weightUnit) &&
+        Objects.equals(this.weightunit, storeunit.weightunit) &&
         Objects.equals(this.capacity, storeunit.capacity) &&
-        Objects.equals(this.capacityUnit, storeunit.capacityUnit) &&
-        Objects.equals(this.EAN, storeunit.EAN) &&
-        Objects.equals(this.PLU, storeunit.PLU) &&
-        Objects.equals(this.hasAnyContainer, storeunit.hasAnyContainer) &&
-        Objects.equals(this.storeContainers, storeunit.storeContainers) &&
-        Objects.equals(this.storeEANs, storeunit.storeEANs) &&
+        Objects.equals(this.capacityunit, storeunit.capacityunit) &&
+        Objects.equals(this.ean, storeunit.ean) &&
+        Objects.equals(this.plu, storeunit.plu) &&
+        Objects.equals(this.hasanycontainer, storeunit.hasanycontainer) &&
+        Objects.equals(this.storecontainers, storeunit.storecontainers) &&
+        Objects.equals(this.storeeans, storeunit.storeeans) &&
         Objects.equals(this.description, storeunit.description) &&
         Objects.equals(this.width, storeunit.width) &&
         Objects.equals(this.height, storeunit.height) &&
         Objects.equals(this.depth, storeunit.depth) &&
-        Objects.equals(this.sizeUnit, storeunit.sizeUnit);
+        Objects.equals(this.sizeunit, storeunit.sizeunit);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, code, unitRate, indivisibleQuantity, weight, weightUnit, capacity, capacityUnit, EAN, PLU, hasAnyContainer, storeContainers, storeEANs, description, width, height, depth, sizeUnit);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, code, unitrate, indivisiblequantity, weight, weightunit, capacity, capacityunit, ean, plu, hasanycontainer, storecontainers, storeeans, description, width, height, depth, sizeunit);
   }
 
   @Override
@@ -522,29 +576,29 @@ public class Storeunit   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Storeunit {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    indivisibleQuantity: ").append(toIndentedString(indivisibleQuantity)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    indivisiblequantity: ").append(toIndentedString(indivisiblequantity)).append("\n");
     sb.append("    weight: ").append(toIndentedString(weight)).append("\n");
-    sb.append("    weightUnit: ").append(toIndentedString(weightUnit)).append("\n");
+    sb.append("    weightunit: ").append(toIndentedString(weightunit)).append("\n");
     sb.append("    capacity: ").append(toIndentedString(capacity)).append("\n");
-    sb.append("    capacityUnit: ").append(toIndentedString(capacityUnit)).append("\n");
-    sb.append("    EAN: ").append(toIndentedString(EAN)).append("\n");
-    sb.append("    PLU: ").append(toIndentedString(PLU)).append("\n");
-    sb.append("    hasAnyContainer: ").append(toIndentedString(hasAnyContainer)).append("\n");
-    sb.append("    storeContainers: ").append(toIndentedString(storeContainers)).append("\n");
-    sb.append("    storeEANs: ").append(toIndentedString(storeEANs)).append("\n");
+    sb.append("    capacityunit: ").append(toIndentedString(capacityunit)).append("\n");
+    sb.append("    ean: ").append(toIndentedString(ean)).append("\n");
+    sb.append("    plu: ").append(toIndentedString(plu)).append("\n");
+    sb.append("    hasanycontainer: ").append(toIndentedString(hasanycontainer)).append("\n");
+    sb.append("    storecontainers: ").append(toIndentedString(storecontainers)).append("\n");
+    sb.append("    storeeans: ").append(toIndentedString(storeeans)).append("\n");
     sb.append("    description: ").append(toIndentedString(description)).append("\n");
     sb.append("    width: ").append(toIndentedString(width)).append("\n");
     sb.append("    height: ").append(toIndentedString(height)).append("\n");
     sb.append("    depth: ").append(toIndentedString(depth)).append("\n");
-    sb.append("    sizeUnit: ").append(toIndentedString(sizeUnit)).append("\n");
+    sb.append("    sizeunit: ").append(toIndentedString(sizeunit)).append("\n");
     sb.append("}");
     return sb.toString();
   }

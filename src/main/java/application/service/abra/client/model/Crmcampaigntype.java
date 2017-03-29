@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,195 +36,231 @@ import java.util.Objects;
 /**
  * Crmcampaigntype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Crmcampaigntype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Crmcampaigntypevariable> rows = new ArrayList<Crmcampaigntypevariable>();
 
-  @SerializedName("Channel")
+  @SerializedName("channel")
   private Integer channel = null;
 
-  @SerializedName("EmailFormat")
-  private Integer emailFormat = null;
+  @SerializedName("emailformat")
+  private Integer emailformat = null;
 
-  @SerializedName("EmailSubject")
-  private String emailSubject = null;
+  @SerializedName("emailsubject")
+  private String emailsubject = null;
 
-  @SerializedName("EmailBody")
-  private String emailBody = null;
+  @SerializedName("emailbody")
+  private String emailbody = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("UseEmailTemplate")
-  private Boolean useEmailTemplate = null;
+  @SerializedName("useemailtemplate")
+  private Boolean useemailtemplate = null;
 
-  @SerializedName("ActivityCreate")
-  private Boolean activityCreate = null;
+  @SerializedName("activitycreate")
+  private Boolean activitycreate = null;
 
-  @SerializedName("EmailAttachment")
-  private String emailAttachment = null;
+  @SerializedName("emailattachment")
+  private String emailattachment = null;
 
-  @SerializedName("EmailAccount_ID")
-  private String emailAccountID = null;
+  @SerializedName("emailaccount_id")
+  private String emailaccountId = null;
 
-  @SerializedName("HiddenEmailAccount_ID")
-  private String hiddenEmailAccountID = null;
+  @SerializedName("hiddenemailaccount_id")
+  private String hiddenemailaccountId = null;
 
-  @SerializedName("PDMDescription")
-  private String pDMDescription = null;
+  @SerializedName("pdmdescription")
+  private String pdmdescription = null;
 
-  @SerializedName("ActivitySubject")
-  private String activitySubject = null;
+  @SerializedName("activitysubject")
+  private String activitysubject = null;
 
-  @SerializedName("ActivityDescription")
-  private String activityDescription = null;
+  @SerializedName("activitydescription")
+  private String activitydescription = null;
 
-  @SerializedName("PDMPostProvider_ID")
-  private String pDMPostProviderID = null;
+  @SerializedName("pdmpostprovider_id")
+  private String pdmpostproviderId = null;
 
-  @SerializedName("PDMIssuedContent_ID")
-  private String pDMIssuedContentID = null;
+  @SerializedName("pdmissuedcontent_id")
+  private String pdmissuedcontentId = null;
 
-  @SerializedName("PDMDocQueue_ID")
-  private String pDMDocQueueID = null;
+  @SerializedName("pdmdocqueue_id")
+  private String pdmdocqueueId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("SCRExecute")
-  private Boolean sCRExecute = null;
+  @SerializedName("screxecute")
+  private Boolean screxecute = null;
 
-  @SerializedName("SCRPackageName")
-  private String sCRPackageName = null;
+  @SerializedName("scrpackagename")
+  private String scrpackagename = null;
 
-  @SerializedName("SCRLibraryName")
-  private String sCRLibraryName = null;
+  @SerializedName("scrlibraryname")
+  private String scrlibraryname = null;
 
-  @SerializedName("SCRMethodName")
-  private String sCRMethodName = null;
+  @SerializedName("scrmethodname")
+  private String scrmethodname = null;
 
-  @SerializedName("MassAnnouncement")
-  private Boolean massAnnouncement = null;
+  @SerializedName("massannouncement")
+  private Boolean massannouncement = null;
 
-  @SerializedName("SolverUser_ID")
-  private String solverUserID = null;
+  @SerializedName("solveruser_id")
+  private String solveruserId = null;
 
-  @SerializedName("SolverRole_ID")
-  private String solverRoleID = null;
+  @SerializedName("solverrole_id")
+  private String solverroleId = null;
 
-  @SerializedName("ActivityType_ID")
-  private String activityTypeID = null;
+  @SerializedName("activitytype_id")
+  private String activitytypeId = null;
 
-  @SerializedName("ActivityProcess_ID")
-  private String activityProcessID = null;
+  @SerializedName("activityprocess_id")
+  private String activityprocessId = null;
 
-  @SerializedName("ActivityQueue_ID")
-  private String activityQueueID = null;
+  @SerializedName("activityqueue_id")
+  private String activityqueueId = null;
 
-  @SerializedName("ActivityState")
-  private Integer activityState = null;
+  @SerializedName("activitystate")
+  private Integer activitystate = null;
 
-  @SerializedName("ActivityPriority")
-  private Integer activityPriority = null;
+  @SerializedName("activitypriority")
+  private Integer activitypriority = null;
 
-  @SerializedName("PDMPriceList_ID")
-  private String pDMPriceListID = null;
+  @SerializedName("pdmpricelist_id")
+  private String pdmpricelistId = null;
 
-  @SerializedName("PDMCashOnDelivery")
-  private Double pDMCashOnDelivery = null;
+  @SerializedName("pdmcashondelivery")
+  private Double pdmcashondelivery = null;
 
-  @SerializedName("PDMInsuredValue")
-  private Double pDMInsuredValue = null;
+  @SerializedName("pdminsuredvalue")
+  private Double pdminsuredvalue = null;
 
-  @SerializedName("PDMWeight")
-  private Double pDMWeight = null;
+  @SerializedName("pdmweight")
+  private Double pdmweight = null;
 
-  @SerializedName("PDMWeightUnit")
-  private Integer pDMWeightUnit = null;
+  @SerializedName("pdmweightunit")
+  private Integer pdmweightunit = null;
 
-  @SerializedName("PDMPostage")
-  private Double pDMPostage = null;
+  @SerializedName("pdmpostage")
+  private Double pdmpostage = null;
 
-  @SerializedName("PDMMultiplicator")
-  private Integer pDMMultiplicator = null;
+  @SerializedName("pdmmultiplicator")
+  private Integer pdmmultiplicator = null;
 
-  @SerializedName("PDMPostageInCash")
-  private Boolean pDMPostageInCash = null;
+  @SerializedName("pdmpostageincash")
+  private Boolean pdmpostageincash = null;
 
-  @SerializedName("ActivityProduct_ID")
-  private String activityProductID = null;
+  @SerializedName("activityproduct_id")
+  private String activityproductId = null;
 
-  @SerializedName("CashOnDelivery")
-  private Double cashOnDelivery = null;
+  @SerializedName("cashondelivery")
+  private Double cashondelivery = null;
 
-  @SerializedName("InsuredValue")
-  private Double insuredValue = null;
+  @SerializedName("insuredvalue")
+  private Double insuredvalue = null;
 
-  @SerializedName("Weight")
+  @SerializedName("weight")
   private Double weight = null;
 
-  @SerializedName("WeightUnit")
-  private Integer weightUnit = null;
+  @SerializedName("weightunit")
+  private Integer weightunit = null;
 
-  @SerializedName("Attachments")
+  @SerializedName("attachments")
   private List<Emailsentattachment> attachments = new ArrayList<Emailsentattachment>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Crmcampaigntype displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Crmcampaigntype id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Crmcampaigntype classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Crmcampaigntype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Crmcampaigntype rows(List<Crmcampaigntypevariable> rows) {
@@ -238,10 +274,10 @@ public class Crmcampaigntype   {
   }
 
    /**
-   * Řádky; kolekce BO Proměnná kampaně [nepersistentní položka]
+   * Řádky; kolekce bo proměnná kampaně [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Proměnná kampaně [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo proměnná kampaně [nepersistentní položka]")
   public List<Crmcampaigntypevariable> getRows() {
     return rows;
   }
@@ -256,10 +292,10 @@ public class Crmcampaigntype   {
   }
 
    /**
-   * Komunikační kanál [persistentní položka]
+   * komunikační kanál [persistentní položka]
    * @return channel
   **/
-  @ApiModelProperty(example = "null", value = "Komunikační kanál [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "komunikační kanál [persistentní položka]")
   public Integer getChannel() {
     return channel;
   }
@@ -268,58 +304,58 @@ public class Crmcampaigntype   {
     this.channel = channel;
   }
 
-  public Crmcampaigntype emailFormat(Integer emailFormat) {
-    this.emailFormat = emailFormat;
+  public Crmcampaigntype emailformat(Integer emailformat) {
+    this.emailformat = emailformat;
     return this;
   }
 
    /**
-   * Formát e-mailu [persistentní položka]
-   * @return emailFormat
+   * formát e-mailu [persistentní položka]
+   * @return emailformat
   **/
-  @ApiModelProperty(example = "null", value = "Formát e-mailu [persistentní položka]")
-  public Integer getEmailFormat() {
-    return emailFormat;
+  @ApiModelProperty(example = "null", value = "formát e-mailu [persistentní položka]")
+  public Integer getEmailformat() {
+    return emailformat;
   }
 
-  public void setEmailFormat(Integer emailFormat) {
-    this.emailFormat = emailFormat;
+  public void setEmailformat(Integer emailformat) {
+    this.emailformat = emailformat;
   }
 
-  public Crmcampaigntype emailSubject(String emailSubject) {
-    this.emailSubject = emailSubject;
+  public Crmcampaigntype emailsubject(String emailsubject) {
+    this.emailsubject = emailsubject;
     return this;
   }
 
    /**
-   * Předmět e-mailu [persistentní položka]
-   * @return emailSubject
+   * předmět e-mailu [persistentní položka]
+   * @return emailsubject
   **/
-  @ApiModelProperty(example = "null", value = "Předmět e-mailu [persistentní položka]")
-  public String getEmailSubject() {
-    return emailSubject;
+  @ApiModelProperty(example = "null", value = "předmět e-mailu [persistentní položka]")
+  public String getEmailsubject() {
+    return emailsubject;
   }
 
-  public void setEmailSubject(String emailSubject) {
-    this.emailSubject = emailSubject;
+  public void setEmailsubject(String emailsubject) {
+    this.emailsubject = emailsubject;
   }
 
-  public Crmcampaigntype emailBody(String emailBody) {
-    this.emailBody = emailBody;
+  public Crmcampaigntype emailbody(String emailbody) {
+    this.emailbody = emailbody;
     return this;
   }
 
    /**
-   * Obsah e-mailu [persistentní položka]
-   * @return emailBody
+   * obsah e-mailu [persistentní položka]
+   * @return emailbody
   **/
-  @ApiModelProperty(example = "null", value = "Obsah e-mailu [persistentní položka]")
-  public String getEmailBody() {
-    return emailBody;
+  @ApiModelProperty(example = "null", value = "obsah e-mailu [persistentní položka]")
+  public String getEmailbody() {
+    return emailbody;
   }
 
-  public void setEmailBody(String emailBody) {
-    this.emailBody = emailBody;
+  public void setEmailbody(String emailbody) {
+    this.emailbody = emailbody;
   }
 
   public Crmcampaigntype name(String name) {
@@ -328,10 +364,10 @@ public class Crmcampaigntype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -340,688 +376,688 @@ public class Crmcampaigntype   {
     this.name = name;
   }
 
-  public Crmcampaigntype useEmailTemplate(Boolean useEmailTemplate) {
-    this.useEmailTemplate = useEmailTemplate;
+  public Crmcampaigntype useemailtemplate(Boolean useemailtemplate) {
+    this.useemailtemplate = useemailtemplate;
     return this;
   }
 
    /**
-   * Použít šablonu [persistentní položka]
-   * @return useEmailTemplate
+   * použít šablonu [persistentní položka]
+   * @return useemailtemplate
   **/
-  @ApiModelProperty(example = "null", value = "Použít šablonu [persistentní položka]")
-  public Boolean getUseEmailTemplate() {
-    return useEmailTemplate;
+  @ApiModelProperty(example = "null", value = "použít šablonu [persistentní položka]")
+  public Boolean getUseemailtemplate() {
+    return useemailtemplate;
   }
 
-  public void setUseEmailTemplate(Boolean useEmailTemplate) {
-    this.useEmailTemplate = useEmailTemplate;
+  public void setUseemailtemplate(Boolean useemailtemplate) {
+    this.useemailtemplate = useemailtemplate;
   }
 
-  public Crmcampaigntype activityCreate(Boolean activityCreate) {
-    this.activityCreate = activityCreate;
+  public Crmcampaigntype activitycreate(Boolean activitycreate) {
+    this.activitycreate = activitycreate;
     return this;
   }
 
    /**
-   * Založit aktivitu [persistentní položka]
-   * @return activityCreate
+   * založit aktivitu [persistentní položka]
+   * @return activitycreate
   **/
-  @ApiModelProperty(example = "null", value = "Založit aktivitu [persistentní položka]")
-  public Boolean getActivityCreate() {
-    return activityCreate;
+  @ApiModelProperty(example = "null", value = "založit aktivitu [persistentní položka]")
+  public Boolean getActivitycreate() {
+    return activitycreate;
   }
 
-  public void setActivityCreate(Boolean activityCreate) {
-    this.activityCreate = activityCreate;
+  public void setActivitycreate(Boolean activitycreate) {
+    this.activitycreate = activitycreate;
   }
 
-  public Crmcampaigntype emailAttachment(String emailAttachment) {
-    this.emailAttachment = emailAttachment;
+  public Crmcampaigntype emailattachment(String emailattachment) {
+    this.emailattachment = emailattachment;
     return this;
   }
 
    /**
-   * Soubor přílohy [persistentní položka]
-   * @return emailAttachment
+   * soubor přílohy [persistentní položka]
+   * @return emailattachment
   **/
-  @ApiModelProperty(example = "null", value = "Soubor přílohy [persistentní položka]")
-  public String getEmailAttachment() {
-    return emailAttachment;
+  @ApiModelProperty(example = "null", value = "soubor přílohy [persistentní položka]")
+  public String getEmailattachment() {
+    return emailattachment;
   }
 
-  public void setEmailAttachment(String emailAttachment) {
-    this.emailAttachment = emailAttachment;
+  public void setEmailattachment(String emailattachment) {
+    this.emailattachment = emailattachment;
   }
 
-  public Crmcampaigntype emailAccountID(String emailAccountID) {
-    this.emailAccountID = emailAccountID;
+  public Crmcampaigntype emailaccountId(String emailaccountId) {
+    this.emailaccountId = emailaccountId;
     return this;
   }
 
    /**
-   * E-mailový účet; ID objektu E-mailový účet [persistentní položka]
-   * @return emailAccountID
+   * e-mailový účet; id objektu e-mailový účet [persistentní položka]
+   * @return emailaccountId
   **/
-  @ApiModelProperty(example = "null", value = "E-mailový účet; ID objektu E-mailový účet [persistentní položka]")
-  public String getEmailAccountID() {
-    return emailAccountID;
+  @ApiModelProperty(example = "null", value = "e-mailový účet; id objektu e-mailový účet [persistentní položka]")
+  public String getEmailaccountId() {
+    return emailaccountId;
   }
 
-  public void setEmailAccountID(String emailAccountID) {
-    this.emailAccountID = emailAccountID;
+  public void setEmailaccountId(String emailaccountId) {
+    this.emailaccountId = emailaccountId;
   }
 
-  public Crmcampaigntype hiddenEmailAccountID(String hiddenEmailAccountID) {
-    this.hiddenEmailAccountID = hiddenEmailAccountID;
+  public Crmcampaigntype hiddenemailaccountId(String hiddenemailaccountId) {
+    this.hiddenemailaccountId = hiddenemailaccountId;
     return this;
   }
 
    /**
-   * Skrytý e-mailový účet; ID objektu E-mailový účet [persistentní položka]
-   * @return hiddenEmailAccountID
+   * skrytý e-mailový účet; id objektu e-mailový účet [persistentní položka]
+   * @return hiddenemailaccountId
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý e-mailový účet; ID objektu E-mailový účet [persistentní položka]")
-  public String getHiddenEmailAccountID() {
-    return hiddenEmailAccountID;
+  @ApiModelProperty(example = "null", value = "skrytý e-mailový účet; id objektu e-mailový účet [persistentní položka]")
+  public String getHiddenemailaccountId() {
+    return hiddenemailaccountId;
   }
 
-  public void setHiddenEmailAccountID(String hiddenEmailAccountID) {
-    this.hiddenEmailAccountID = hiddenEmailAccountID;
+  public void setHiddenemailaccountId(String hiddenemailaccountId) {
+    this.hiddenemailaccountId = hiddenemailaccountId;
   }
 
-  public Crmcampaigntype pDMDescription(String pDMDescription) {
-    this.pDMDescription = pDMDescription;
+  public Crmcampaigntype pdmdescription(String pdmdescription) {
+    this.pdmdescription = pdmdescription;
     return this;
   }
 
    /**
-   * Popis odeslané pošty [persistentní položka]
-   * @return pDMDescription
+   * popis odeslané pošty [persistentní položka]
+   * @return pdmdescription
   **/
-  @ApiModelProperty(example = "null", value = "Popis odeslané pošty [persistentní položka]")
-  public String getPDMDescription() {
-    return pDMDescription;
+  @ApiModelProperty(example = "null", value = "popis odeslané pošty [persistentní položka]")
+  public String getPdmdescription() {
+    return pdmdescription;
   }
 
-  public void setPDMDescription(String pDMDescription) {
-    this.pDMDescription = pDMDescription;
+  public void setPdmdescription(String pdmdescription) {
+    this.pdmdescription = pdmdescription;
   }
 
-  public Crmcampaigntype activitySubject(String activitySubject) {
-    this.activitySubject = activitySubject;
+  public Crmcampaigntype activitysubject(String activitysubject) {
+    this.activitysubject = activitysubject;
     return this;
   }
 
    /**
-   * Předmět aktivity [persistentní položka]
-   * @return activitySubject
+   * předmět aktivity [persistentní položka]
+   * @return activitysubject
   **/
-  @ApiModelProperty(example = "null", value = "Předmět aktivity [persistentní položka]")
-  public String getActivitySubject() {
-    return activitySubject;
+  @ApiModelProperty(example = "null", value = "předmět aktivity [persistentní položka]")
+  public String getActivitysubject() {
+    return activitysubject;
   }
 
-  public void setActivitySubject(String activitySubject) {
-    this.activitySubject = activitySubject;
+  public void setActivitysubject(String activitysubject) {
+    this.activitysubject = activitysubject;
   }
 
-  public Crmcampaigntype activityDescription(String activityDescription) {
-    this.activityDescription = activityDescription;
+  public Crmcampaigntype activitydescription(String activitydescription) {
+    this.activitydescription = activitydescription;
     return this;
   }
 
    /**
-   * Obsah aktivity [persistentní položka]
-   * @return activityDescription
+   * obsah aktivity [persistentní položka]
+   * @return activitydescription
   **/
-  @ApiModelProperty(example = "null", value = "Obsah aktivity [persistentní položka]")
-  public String getActivityDescription() {
-    return activityDescription;
+  @ApiModelProperty(example = "null", value = "obsah aktivity [persistentní položka]")
+  public String getActivitydescription() {
+    return activitydescription;
   }
 
-  public void setActivityDescription(String activityDescription) {
-    this.activityDescription = activityDescription;
+  public void setActivitydescription(String activitydescription) {
+    this.activitydescription = activitydescription;
   }
 
-  public Crmcampaigntype pDMPostProviderID(String pDMPostProviderID) {
-    this.pDMPostProviderID = pDMPostProviderID;
+  public Crmcampaigntype pdmpostproviderId(String pdmpostproviderId) {
+    this.pdmpostproviderId = pdmpostproviderId;
     return this;
   }
 
    /**
-   * Poštovní poskytovatel; ID objektu Poskytovatel poštovních služeb [persistentní položka]
-   * @return pDMPostProviderID
+   * poštovní poskytovatel; id objektu poskytovatel poštovních služeb [persistentní položka]
+   * @return pdmpostproviderId
   **/
-  @ApiModelProperty(example = "null", value = "Poštovní poskytovatel; ID objektu Poskytovatel poštovních služeb [persistentní položka]")
-  public String getPDMPostProviderID() {
-    return pDMPostProviderID;
+  @ApiModelProperty(example = "null", value = "poštovní poskytovatel; id objektu poskytovatel poštovních služeb [persistentní položka]")
+  public String getPdmpostproviderId() {
+    return pdmpostproviderId;
   }
 
-  public void setPDMPostProviderID(String pDMPostProviderID) {
-    this.pDMPostProviderID = pDMPostProviderID;
+  public void setPdmpostproviderId(String pdmpostproviderId) {
+    this.pdmpostproviderId = pdmpostproviderId;
   }
 
-  public Crmcampaigntype pDMIssuedContentID(String pDMIssuedContentID) {
-    this.pDMIssuedContentID = pDMIssuedContentID;
+  public Crmcampaigntype pdmissuedcontentId(String pdmissuedcontentId) {
+    this.pdmissuedcontentId = pdmissuedcontentId;
     return this;
   }
 
    /**
-   * Typ obsahu pošty; ID objektu Typy obsahů odeslané pošty [persistentní položka]
-   * @return pDMIssuedContentID
+   * typ obsahu pošty; id objektu typy obsahů odeslané pošty [persistentní položka]
+   * @return pdmissuedcontentId
   **/
-  @ApiModelProperty(example = "null", value = "Typ obsahu pošty; ID objektu Typy obsahů odeslané pošty [persistentní položka]")
-  public String getPDMIssuedContentID() {
-    return pDMIssuedContentID;
+  @ApiModelProperty(example = "null", value = "typ obsahu pošty; id objektu typy obsahů odeslané pošty [persistentní položka]")
+  public String getPdmissuedcontentId() {
+    return pdmissuedcontentId;
   }
 
-  public void setPDMIssuedContentID(String pDMIssuedContentID) {
-    this.pDMIssuedContentID = pDMIssuedContentID;
+  public void setPdmissuedcontentId(String pdmissuedcontentId) {
+    this.pdmissuedcontentId = pdmissuedcontentId;
   }
 
-  public Crmcampaigntype pDMDocQueueID(String pDMDocQueueID) {
-    this.pDMDocQueueID = pDMDocQueueID;
+  public Crmcampaigntype pdmdocqueueId(String pdmdocqueueId) {
+    this.pdmdocqueueId = pdmdocqueueId;
     return this;
   }
 
    /**
-   * Řada dokladů pošty; ID objektu Řada dokladů [persistentní položka]
-   * @return pDMDocQueueID
+   * Řada dokladů pošty; id objektu Řada dokladů [persistentní položka]
+   * @return pdmdocqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů pošty; ID objektu Řada dokladů [persistentní položka]")
-  public String getPDMDocQueueID() {
-    return pDMDocQueueID;
+  @ApiModelProperty(example = "null", value = "Řada dokladů pošty; id objektu Řada dokladů [persistentní položka]")
+  public String getPdmdocqueueId() {
+    return pdmdocqueueId;
   }
 
-  public void setPDMDocQueueID(String pDMDocQueueID) {
-    this.pDMDocQueueID = pDMDocQueueID;
+  public void setPdmdocqueueId(String pdmdocqueueId) {
+    this.pdmdocqueueId = pdmdocqueueId;
   }
 
-  public Crmcampaigntype divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Crmcampaigntype divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Crmcampaigntype busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Crmcampaigntype busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Crmcampaigntype busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Crmcampaigntype bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Obchodní případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * obchodní případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Obchodní případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "obchodní případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Crmcampaigntype busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Crmcampaigntype busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Crmcampaigntype sCRExecute(Boolean sCRExecute) {
-    this.sCRExecute = sCRExecute;
+  public Crmcampaigntype screxecute(Boolean screxecute) {
+    this.screxecute = screxecute;
     return this;
   }
 
    /**
-   * Spustit skript [persistentní položka]
-   * @return sCRExecute
+   * spustit skript [persistentní položka]
+   * @return screxecute
   **/
-  @ApiModelProperty(example = "null", value = "Spustit skript [persistentní položka]")
-  public Boolean getSCRExecute() {
-    return sCRExecute;
+  @ApiModelProperty(example = "null", value = "spustit skript [persistentní položka]")
+  public Boolean getScrexecute() {
+    return screxecute;
   }
 
-  public void setSCRExecute(Boolean sCRExecute) {
-    this.sCRExecute = sCRExecute;
+  public void setScrexecute(Boolean screxecute) {
+    this.screxecute = screxecute;
   }
 
-  public Crmcampaigntype sCRPackageName(String sCRPackageName) {
-    this.sCRPackageName = sCRPackageName;
+  public Crmcampaigntype scrpackagename(String scrpackagename) {
+    this.scrpackagename = scrpackagename;
     return this;
   }
 
    /**
-   * Název balíčku skriptů [persistentní položka]
-   * @return sCRPackageName
+   * název balíčku skriptů [persistentní položka]
+   * @return scrpackagename
   **/
-  @ApiModelProperty(example = "null", value = "Název balíčku skriptů [persistentní položka]")
-  public String getSCRPackageName() {
-    return sCRPackageName;
+  @ApiModelProperty(example = "null", value = "název balíčku skriptů [persistentní položka]")
+  public String getScrpackagename() {
+    return scrpackagename;
   }
 
-  public void setSCRPackageName(String sCRPackageName) {
-    this.sCRPackageName = sCRPackageName;
+  public void setScrpackagename(String scrpackagename) {
+    this.scrpackagename = scrpackagename;
   }
 
-  public Crmcampaigntype sCRLibraryName(String sCRLibraryName) {
-    this.sCRLibraryName = sCRLibraryName;
+  public Crmcampaigntype scrlibraryname(String scrlibraryname) {
+    this.scrlibraryname = scrlibraryname;
     return this;
   }
 
    /**
-   * Název knihovny skriptů [persistentní položka]
-   * @return sCRLibraryName
+   * název knihovny skriptů [persistentní položka]
+   * @return scrlibraryname
   **/
-  @ApiModelProperty(example = "null", value = "Název knihovny skriptů [persistentní položka]")
-  public String getSCRLibraryName() {
-    return sCRLibraryName;
+  @ApiModelProperty(example = "null", value = "název knihovny skriptů [persistentní položka]")
+  public String getScrlibraryname() {
+    return scrlibraryname;
   }
 
-  public void setSCRLibraryName(String sCRLibraryName) {
-    this.sCRLibraryName = sCRLibraryName;
+  public void setScrlibraryname(String scrlibraryname) {
+    this.scrlibraryname = scrlibraryname;
   }
 
-  public Crmcampaigntype sCRMethodName(String sCRMethodName) {
-    this.sCRMethodName = sCRMethodName;
+  public Crmcampaigntype scrmethodname(String scrmethodname) {
+    this.scrmethodname = scrmethodname;
     return this;
   }
 
    /**
-   * Název metody skriptu [persistentní položka]
-   * @return sCRMethodName
+   * název metody skriptu [persistentní položka]
+   * @return scrmethodname
   **/
-  @ApiModelProperty(example = "null", value = "Název metody skriptu [persistentní položka]")
-  public String getSCRMethodName() {
-    return sCRMethodName;
+  @ApiModelProperty(example = "null", value = "název metody skriptu [persistentní položka]")
+  public String getScrmethodname() {
+    return scrmethodname;
   }
 
-  public void setSCRMethodName(String sCRMethodName) {
-    this.sCRMethodName = sCRMethodName;
+  public void setScrmethodname(String scrmethodname) {
+    this.scrmethodname = scrmethodname;
   }
 
-  public Crmcampaigntype massAnnouncement(Boolean massAnnouncement) {
-    this.massAnnouncement = massAnnouncement;
+  public Crmcampaigntype massannouncement(Boolean massannouncement) {
+    this.massannouncement = massannouncement;
     return this;
   }
 
    /**
-   * Hromadné oslovení [persistentní položka]
-   * @return massAnnouncement
+   * hromadné oslovení [persistentní položka]
+   * @return massannouncement
   **/
-  @ApiModelProperty(example = "null", value = "Hromadné oslovení [persistentní položka]")
-  public Boolean getMassAnnouncement() {
-    return massAnnouncement;
+  @ApiModelProperty(example = "null", value = "hromadné oslovení [persistentní položka]")
+  public Boolean getMassannouncement() {
+    return massannouncement;
   }
 
-  public void setMassAnnouncement(Boolean massAnnouncement) {
-    this.massAnnouncement = massAnnouncement;
+  public void setMassannouncement(Boolean massannouncement) {
+    this.massannouncement = massannouncement;
   }
 
-  public Crmcampaigntype solverUserID(String solverUserID) {
-    this.solverUserID = solverUserID;
+  public Crmcampaigntype solveruserId(String solveruserId) {
+    this.solveruserId = solveruserId;
     return this;
   }
 
    /**
-   * Řešitel; ID objektu Uživatel [persistentní položka]
-   * @return solverUserID
+   * Řešitel; id objektu uživatel [persistentní položka]
+   * @return solveruserId
   **/
-  @ApiModelProperty(example = "null", value = "Řešitel; ID objektu Uživatel [persistentní položka]")
-  public String getSolverUserID() {
-    return solverUserID;
+  @ApiModelProperty(example = "null", value = "Řešitel; id objektu uživatel [persistentní položka]")
+  public String getSolveruserId() {
+    return solveruserId;
   }
 
-  public void setSolverUserID(String solverUserID) {
-    this.solverUserID = solverUserID;
+  public void setSolveruserId(String solveruserId) {
+    this.solveruserId = solveruserId;
   }
 
-  public Crmcampaigntype solverRoleID(String solverRoleID) {
-    this.solverRoleID = solverRoleID;
+  public Crmcampaigntype solverroleId(String solverroleId) {
+    this.solverroleId = solverroleId;
     return this;
   }
 
    /**
-   * Role řešitele; ID objektu Role [persistentní položka]
-   * @return solverRoleID
+   * role řešitele; id objektu role [persistentní položka]
+   * @return solverroleId
   **/
-  @ApiModelProperty(example = "null", value = "Role řešitele; ID objektu Role [persistentní položka]")
-  public String getSolverRoleID() {
-    return solverRoleID;
+  @ApiModelProperty(example = "null", value = "role řešitele; id objektu role [persistentní položka]")
+  public String getSolverroleId() {
+    return solverroleId;
   }
 
-  public void setSolverRoleID(String solverRoleID) {
-    this.solverRoleID = solverRoleID;
+  public void setSolverroleId(String solverroleId) {
+    this.solverroleId = solverroleId;
   }
 
-  public Crmcampaigntype activityTypeID(String activityTypeID) {
-    this.activityTypeID = activityTypeID;
+  public Crmcampaigntype activitytypeId(String activitytypeId) {
+    this.activitytypeId = activitytypeId;
     return this;
   }
 
    /**
-   * Typ aktivity; ID objektu Typ aktivit [persistentní položka]
-   * @return activityTypeID
+   * typ aktivity; id objektu typ aktivit [persistentní položka]
+   * @return activitytypeId
   **/
-  @ApiModelProperty(example = "null", value = "Typ aktivity; ID objektu Typ aktivit [persistentní položka]")
-  public String getActivityTypeID() {
-    return activityTypeID;
+  @ApiModelProperty(example = "null", value = "typ aktivity; id objektu typ aktivit [persistentní položka]")
+  public String getActivitytypeId() {
+    return activitytypeId;
   }
 
-  public void setActivityTypeID(String activityTypeID) {
-    this.activityTypeID = activityTypeID;
+  public void setActivitytypeId(String activitytypeId) {
+    this.activitytypeId = activitytypeId;
   }
 
-  public Crmcampaigntype activityProcessID(String activityProcessID) {
-    this.activityProcessID = activityProcessID;
+  public Crmcampaigntype activityprocessId(String activityprocessId) {
+    this.activityprocessId = activityprocessId;
     return this;
   }
 
    /**
-   * Proces aktivity; ID objektu Proces aktivit [persistentní položka]
-   * @return activityProcessID
+   * proces aktivity; id objektu proces aktivit [persistentní položka]
+   * @return activityprocessId
   **/
-  @ApiModelProperty(example = "null", value = "Proces aktivity; ID objektu Proces aktivit [persistentní položka]")
-  public String getActivityProcessID() {
-    return activityProcessID;
+  @ApiModelProperty(example = "null", value = "proces aktivity; id objektu proces aktivit [persistentní položka]")
+  public String getActivityprocessId() {
+    return activityprocessId;
   }
 
-  public void setActivityProcessID(String activityProcessID) {
-    this.activityProcessID = activityProcessID;
+  public void setActivityprocessId(String activityprocessId) {
+    this.activityprocessId = activityprocessId;
   }
 
-  public Crmcampaigntype activityQueueID(String activityQueueID) {
-    this.activityQueueID = activityQueueID;
+  public Crmcampaigntype activityqueueId(String activityqueueId) {
+    this.activityqueueId = activityqueueId;
     return this;
   }
 
    /**
-   * Řada aktivity; ID objektu Řada aktivit [persistentní položka]
-   * @return activityQueueID
+   * Řada aktivity; id objektu Řada aktivit [persistentní položka]
+   * @return activityqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada aktivity; ID objektu Řada aktivit [persistentní položka]")
-  public String getActivityQueueID() {
-    return activityQueueID;
+  @ApiModelProperty(example = "null", value = "Řada aktivity; id objektu Řada aktivit [persistentní položka]")
+  public String getActivityqueueId() {
+    return activityqueueId;
   }
 
-  public void setActivityQueueID(String activityQueueID) {
-    this.activityQueueID = activityQueueID;
+  public void setActivityqueueId(String activityqueueId) {
+    this.activityqueueId = activityqueueId;
   }
 
-  public Crmcampaigntype activityState(Integer activityState) {
-    this.activityState = activityState;
+  public Crmcampaigntype activitystate(Integer activitystate) {
+    this.activitystate = activitystate;
     return this;
   }
 
    /**
-   * Stav aktivity [persistentní položka]
-   * @return activityState
+   * stav aktivity [persistentní položka]
+   * @return activitystate
   **/
-  @ApiModelProperty(example = "null", value = "Stav aktivity [persistentní položka]")
-  public Integer getActivityState() {
-    return activityState;
+  @ApiModelProperty(example = "null", value = "stav aktivity [persistentní položka]")
+  public Integer getActivitystate() {
+    return activitystate;
   }
 
-  public void setActivityState(Integer activityState) {
-    this.activityState = activityState;
+  public void setActivitystate(Integer activitystate) {
+    this.activitystate = activitystate;
   }
 
-  public Crmcampaigntype activityPriority(Integer activityPriority) {
-    this.activityPriority = activityPriority;
+  public Crmcampaigntype activitypriority(Integer activitypriority) {
+    this.activitypriority = activitypriority;
     return this;
   }
 
    /**
-   * Priorita aktivity [persistentní položka]
-   * @return activityPriority
+   * priorita aktivity [persistentní položka]
+   * @return activitypriority
   **/
-  @ApiModelProperty(example = "null", value = "Priorita aktivity [persistentní položka]")
-  public Integer getActivityPriority() {
-    return activityPriority;
+  @ApiModelProperty(example = "null", value = "priorita aktivity [persistentní položka]")
+  public Integer getActivitypriority() {
+    return activitypriority;
   }
 
-  public void setActivityPriority(Integer activityPriority) {
-    this.activityPriority = activityPriority;
+  public void setActivitypriority(Integer activitypriority) {
+    this.activitypriority = activitypriority;
   }
 
-  public Crmcampaigntype pDMPriceListID(String pDMPriceListID) {
-    this.pDMPriceListID = pDMPriceListID;
+  public Crmcampaigntype pdmpricelistId(String pdmpricelistId) {
+    this.pdmpricelistId = pdmpricelistId;
     return this;
   }
 
    /**
-   * Ceník pošty; ID objektu Ceník pošty [persistentní položka]
-   * @return pDMPriceListID
+   * ceník pošty; id objektu ceník pošty [persistentní položka]
+   * @return pdmpricelistId
   **/
-  @ApiModelProperty(example = "null", value = "Ceník pošty; ID objektu Ceník pošty [persistentní položka]")
-  public String getPDMPriceListID() {
-    return pDMPriceListID;
+  @ApiModelProperty(example = "null", value = "ceník pošty; id objektu ceník pošty [persistentní položka]")
+  public String getPdmpricelistId() {
+    return pdmpricelistId;
   }
 
-  public void setPDMPriceListID(String pDMPriceListID) {
-    this.pDMPriceListID = pDMPriceListID;
+  public void setPdmpricelistId(String pdmpricelistId) {
+    this.pdmpricelistId = pdmpricelistId;
   }
 
-  public Crmcampaigntype pDMCashOnDelivery(Double pDMCashOnDelivery) {
-    this.pDMCashOnDelivery = pDMCashOnDelivery;
+  public Crmcampaigntype pdmcashondelivery(Double pdmcashondelivery) {
+    this.pdmcashondelivery = pdmcashondelivery;
     return this;
   }
 
    /**
-   * Dobírečné [persistentní položka]
-   * @return pDMCashOnDelivery
+   * dobírečné [persistentní položka]
+   * @return pdmcashondelivery
   **/
-  @ApiModelProperty(example = "null", value = "Dobírečné [persistentní položka]")
-  public Double getPDMCashOnDelivery() {
-    return pDMCashOnDelivery;
+  @ApiModelProperty(example = "null", value = "dobírečné [persistentní položka]")
+  public Double getPdmcashondelivery() {
+    return pdmcashondelivery;
   }
 
-  public void setPDMCashOnDelivery(Double pDMCashOnDelivery) {
-    this.pDMCashOnDelivery = pDMCashOnDelivery;
+  public void setPdmcashondelivery(Double pdmcashondelivery) {
+    this.pdmcashondelivery = pdmcashondelivery;
   }
 
-  public Crmcampaigntype pDMInsuredValue(Double pDMInsuredValue) {
-    this.pDMInsuredValue = pDMInsuredValue;
+  public Crmcampaigntype pdminsuredvalue(Double pdminsuredvalue) {
+    this.pdminsuredvalue = pdminsuredvalue;
     return this;
   }
 
    /**
-   * Cena zásilky [persistentní položka]
-   * @return pDMInsuredValue
+   * cena zásilky [persistentní položka]
+   * @return pdminsuredvalue
   **/
-  @ApiModelProperty(example = "null", value = "Cena zásilky [persistentní položka]")
-  public Double getPDMInsuredValue() {
-    return pDMInsuredValue;
+  @ApiModelProperty(example = "null", value = "cena zásilky [persistentní položka]")
+  public Double getPdminsuredvalue() {
+    return pdminsuredvalue;
   }
 
-  public void setPDMInsuredValue(Double pDMInsuredValue) {
-    this.pDMInsuredValue = pDMInsuredValue;
+  public void setPdminsuredvalue(Double pdminsuredvalue) {
+    this.pdminsuredvalue = pdminsuredvalue;
   }
 
-  public Crmcampaigntype pDMWeight(Double pDMWeight) {
-    this.pDMWeight = pDMWeight;
+  public Crmcampaigntype pdmweight(Double pdmweight) {
+    this.pdmweight = pdmweight;
     return this;
   }
 
    /**
-   * Hmotnost zásilky [persistentní položka]
-   * @return pDMWeight
+   * hmotnost zásilky [persistentní položka]
+   * @return pdmweight
   **/
-  @ApiModelProperty(example = "null", value = "Hmotnost zásilky [persistentní položka]")
-  public Double getPDMWeight() {
-    return pDMWeight;
+  @ApiModelProperty(example = "null", value = "hmotnost zásilky [persistentní položka]")
+  public Double getPdmweight() {
+    return pdmweight;
   }
 
-  public void setPDMWeight(Double pDMWeight) {
-    this.pDMWeight = pDMWeight;
+  public void setPdmweight(Double pdmweight) {
+    this.pdmweight = pdmweight;
   }
 
-  public Crmcampaigntype pDMWeightUnit(Integer pDMWeightUnit) {
-    this.pDMWeightUnit = pDMWeightUnit;
+  public Crmcampaigntype pdmweightunit(Integer pdmweightunit) {
+    this.pdmweightunit = pdmweightunit;
     return this;
   }
 
    /**
-   * Jednotka hmotnosti zásilky [persistentní položka]
-   * @return pDMWeightUnit
+   * jednotka hmotnosti zásilky [persistentní položka]
+   * @return pdmweightunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka hmotnosti zásilky [persistentní položka]")
-  public Integer getPDMWeightUnit() {
-    return pDMWeightUnit;
+  @ApiModelProperty(example = "null", value = "jednotka hmotnosti zásilky [persistentní položka]")
+  public Integer getPdmweightunit() {
+    return pdmweightunit;
   }
 
-  public void setPDMWeightUnit(Integer pDMWeightUnit) {
-    this.pDMWeightUnit = pDMWeightUnit;
+  public void setPdmweightunit(Integer pdmweightunit) {
+    this.pdmweightunit = pdmweightunit;
   }
 
-  public Crmcampaigntype pDMPostage(Double pDMPostage) {
-    this.pDMPostage = pDMPostage;
+  public Crmcampaigntype pdmpostage(Double pdmpostage) {
+    this.pdmpostage = pdmpostage;
     return this;
   }
 
    /**
-   * Poštovné [persistentní položka]
-   * @return pDMPostage
+   * poštovné [persistentní položka]
+   * @return pdmpostage
   **/
-  @ApiModelProperty(example = "null", value = "Poštovné [persistentní položka]")
-  public Double getPDMPostage() {
-    return pDMPostage;
+  @ApiModelProperty(example = "null", value = "poštovné [persistentní položka]")
+  public Double getPdmpostage() {
+    return pdmpostage;
   }
 
-  public void setPDMPostage(Double pDMPostage) {
-    this.pDMPostage = pDMPostage;
+  public void setPdmpostage(Double pdmpostage) {
+    this.pdmpostage = pdmpostage;
   }
 
-  public Crmcampaigntype pDMMultiplicator(Integer pDMMultiplicator) {
-    this.pDMMultiplicator = pDMMultiplicator;
+  public Crmcampaigntype pdmmultiplicator(Integer pdmmultiplicator) {
+    this.pdmmultiplicator = pdmmultiplicator;
     return this;
   }
 
    /**
-   * Počet zásilek [persistentní položka]
-   * @return pDMMultiplicator
+   * počet zásilek [persistentní položka]
+   * @return pdmmultiplicator
   **/
-  @ApiModelProperty(example = "null", value = "Počet zásilek [persistentní položka]")
-  public Integer getPDMMultiplicator() {
-    return pDMMultiplicator;
+  @ApiModelProperty(example = "null", value = "počet zásilek [persistentní položka]")
+  public Integer getPdmmultiplicator() {
+    return pdmmultiplicator;
   }
 
-  public void setPDMMultiplicator(Integer pDMMultiplicator) {
-    this.pDMMultiplicator = pDMMultiplicator;
+  public void setPdmmultiplicator(Integer pdmmultiplicator) {
+    this.pdmmultiplicator = pdmmultiplicator;
   }
 
-  public Crmcampaigntype pDMPostageInCash(Boolean pDMPostageInCash) {
-    this.pDMPostageInCash = pDMPostageInCash;
+  public Crmcampaigntype pdmpostageincash(Boolean pdmpostageincash) {
+    this.pdmpostageincash = pdmpostageincash;
     return this;
   }
 
    /**
-   * Placeno hotově [persistentní položka]
-   * @return pDMPostageInCash
+   * placeno hotově [persistentní položka]
+   * @return pdmpostageincash
   **/
-  @ApiModelProperty(example = "null", value = "Placeno hotově [persistentní položka]")
-  public Boolean getPDMPostageInCash() {
-    return pDMPostageInCash;
+  @ApiModelProperty(example = "null", value = "placeno hotově [persistentní položka]")
+  public Boolean getPdmpostageincash() {
+    return pdmpostageincash;
   }
 
-  public void setPDMPostageInCash(Boolean pDMPostageInCash) {
-    this.pDMPostageInCash = pDMPostageInCash;
+  public void setPdmpostageincash(Boolean pdmpostageincash) {
+    this.pdmpostageincash = pdmpostageincash;
   }
 
-  public Crmcampaigntype activityProductID(String activityProductID) {
-    this.activityProductID = activityProductID;
+  public Crmcampaigntype activityproductId(String activityproductId) {
+    this.activityproductId = activityproductId;
     return this;
   }
 
    /**
-   * Produkt; ID objektu Produkt [persistentní položka]
-   * @return activityProductID
+   * produkt; id objektu produkt [persistentní položka]
+   * @return activityproductId
   **/
-  @ApiModelProperty(example = "null", value = "Produkt; ID objektu Produkt [persistentní položka]")
-  public String getActivityProductID() {
-    return activityProductID;
+  @ApiModelProperty(example = "null", value = "produkt; id objektu produkt [persistentní položka]")
+  public String getActivityproductId() {
+    return activityproductId;
   }
 
-  public void setActivityProductID(String activityProductID) {
-    this.activityProductID = activityProductID;
+  public void setActivityproductId(String activityproductId) {
+    this.activityproductId = activityproductId;
   }
 
-  public Crmcampaigntype cashOnDelivery(Double cashOnDelivery) {
-    this.cashOnDelivery = cashOnDelivery;
+  public Crmcampaigntype cashondelivery(Double cashondelivery) {
+    this.cashondelivery = cashondelivery;
     return this;
   }
 
    /**
-   * Dobírečné
-   * @return cashOnDelivery
+   * dobírečné
+   * @return cashondelivery
   **/
-  @ApiModelProperty(example = "null", value = "Dobírečné")
-  public Double getCashOnDelivery() {
-    return cashOnDelivery;
+  @ApiModelProperty(example = "null", value = "dobírečné")
+  public Double getCashondelivery() {
+    return cashondelivery;
   }
 
-  public void setCashOnDelivery(Double cashOnDelivery) {
-    this.cashOnDelivery = cashOnDelivery;
+  public void setCashondelivery(Double cashondelivery) {
+    this.cashondelivery = cashondelivery;
   }
 
-  public Crmcampaigntype insuredValue(Double insuredValue) {
-    this.insuredValue = insuredValue;
+  public Crmcampaigntype insuredvalue(Double insuredvalue) {
+    this.insuredvalue = insuredvalue;
     return this;
   }
 
    /**
-   * Cena zásilky
-   * @return insuredValue
+   * cena zásilky
+   * @return insuredvalue
   **/
-  @ApiModelProperty(example = "null", value = "Cena zásilky")
-  public Double getInsuredValue() {
-    return insuredValue;
+  @ApiModelProperty(example = "null", value = "cena zásilky")
+  public Double getInsuredvalue() {
+    return insuredvalue;
   }
 
-  public void setInsuredValue(Double insuredValue) {
-    this.insuredValue = insuredValue;
+  public void setInsuredvalue(Double insuredvalue) {
+    this.insuredvalue = insuredvalue;
   }
 
   public Crmcampaigntype weight(Double weight) {
@@ -1030,10 +1066,10 @@ public class Crmcampaigntype   {
   }
 
    /**
-   * Hmotnost
+   * hmotnost
    * @return weight
   **/
-  @ApiModelProperty(example = "null", value = "Hmotnost")
+  @ApiModelProperty(example = "null", value = "hmotnost")
   public Double getWeight() {
     return weight;
   }
@@ -1042,22 +1078,22 @@ public class Crmcampaigntype   {
     this.weight = weight;
   }
 
-  public Crmcampaigntype weightUnit(Integer weightUnit) {
-    this.weightUnit = weightUnit;
+  public Crmcampaigntype weightunit(Integer weightunit) {
+    this.weightunit = weightunit;
     return this;
   }
 
    /**
-   * Jednotka hmotnosti
-   * @return weightUnit
+   * jednotka hmotnosti
+   * @return weightunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka hmotnosti")
-  public Integer getWeightUnit() {
-    return weightUnit;
+  @ApiModelProperty(example = "null", value = "jednotka hmotnosti")
+  public Integer getWeightunit() {
+    return weightunit;
   }
 
-  public void setWeightUnit(Integer weightUnit) {
-    this.weightUnit = weightUnit;
+  public void setWeightunit(Integer weightunit) {
+    this.weightunit = weightunit;
   }
 
   public Crmcampaigntype attachments(List<Emailsentattachment> attachments) {
@@ -1071,10 +1107,10 @@ public class Crmcampaigntype   {
   }
 
    /**
-   * Přílohy; kolekce BO Odesílaná příloha [nepersistentní položka]
+   * přílohy; kolekce bo odesílaná příloha [nepersistentní položka]
    * @return attachments
   **/
-  @ApiModelProperty(example = "null", value = "Přílohy; kolekce BO Odesílaná příloha [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "přílohy; kolekce bo odesílaná příloha [nepersistentní položka]")
   public List<Emailsentattachment> getAttachments() {
     return attachments;
   }
@@ -1093,62 +1129,62 @@ public class Crmcampaigntype   {
       return false;
     }
     Crmcampaigntype crmcampaigntype = (Crmcampaigntype) o;
-    return Objects.equals(this.displayName, crmcampaigntype.displayName) &&
-        Objects.equals(this.ID, crmcampaigntype.ID) &&
-        Objects.equals(this.classID, crmcampaigntype.classID) &&
-        Objects.equals(this.objVersion, crmcampaigntype.objVersion) &&
+    return Objects.equals(this.displayname, crmcampaigntype.displayname) &&
+        Objects.equals(this.id, crmcampaigntype.id) &&
+        Objects.equals(this.classid, crmcampaigntype.classid) &&
+        Objects.equals(this.objversion, crmcampaigntype.objversion) &&
         Objects.equals(this.rows, crmcampaigntype.rows) &&
         Objects.equals(this.channel, crmcampaigntype.channel) &&
-        Objects.equals(this.emailFormat, crmcampaigntype.emailFormat) &&
-        Objects.equals(this.emailSubject, crmcampaigntype.emailSubject) &&
-        Objects.equals(this.emailBody, crmcampaigntype.emailBody) &&
+        Objects.equals(this.emailformat, crmcampaigntype.emailformat) &&
+        Objects.equals(this.emailsubject, crmcampaigntype.emailsubject) &&
+        Objects.equals(this.emailbody, crmcampaigntype.emailbody) &&
         Objects.equals(this.name, crmcampaigntype.name) &&
-        Objects.equals(this.useEmailTemplate, crmcampaigntype.useEmailTemplate) &&
-        Objects.equals(this.activityCreate, crmcampaigntype.activityCreate) &&
-        Objects.equals(this.emailAttachment, crmcampaigntype.emailAttachment) &&
-        Objects.equals(this.emailAccountID, crmcampaigntype.emailAccountID) &&
-        Objects.equals(this.hiddenEmailAccountID, crmcampaigntype.hiddenEmailAccountID) &&
-        Objects.equals(this.pDMDescription, crmcampaigntype.pDMDescription) &&
-        Objects.equals(this.activitySubject, crmcampaigntype.activitySubject) &&
-        Objects.equals(this.activityDescription, crmcampaigntype.activityDescription) &&
-        Objects.equals(this.pDMPostProviderID, crmcampaigntype.pDMPostProviderID) &&
-        Objects.equals(this.pDMIssuedContentID, crmcampaigntype.pDMIssuedContentID) &&
-        Objects.equals(this.pDMDocQueueID, crmcampaigntype.pDMDocQueueID) &&
-        Objects.equals(this.divisionID, crmcampaigntype.divisionID) &&
-        Objects.equals(this.busOrderID, crmcampaigntype.busOrderID) &&
-        Objects.equals(this.busTransactionID, crmcampaigntype.busTransactionID) &&
-        Objects.equals(this.busProjectID, crmcampaigntype.busProjectID) &&
-        Objects.equals(this.sCRExecute, crmcampaigntype.sCRExecute) &&
-        Objects.equals(this.sCRPackageName, crmcampaigntype.sCRPackageName) &&
-        Objects.equals(this.sCRLibraryName, crmcampaigntype.sCRLibraryName) &&
-        Objects.equals(this.sCRMethodName, crmcampaigntype.sCRMethodName) &&
-        Objects.equals(this.massAnnouncement, crmcampaigntype.massAnnouncement) &&
-        Objects.equals(this.solverUserID, crmcampaigntype.solverUserID) &&
-        Objects.equals(this.solverRoleID, crmcampaigntype.solverRoleID) &&
-        Objects.equals(this.activityTypeID, crmcampaigntype.activityTypeID) &&
-        Objects.equals(this.activityProcessID, crmcampaigntype.activityProcessID) &&
-        Objects.equals(this.activityQueueID, crmcampaigntype.activityQueueID) &&
-        Objects.equals(this.activityState, crmcampaigntype.activityState) &&
-        Objects.equals(this.activityPriority, crmcampaigntype.activityPriority) &&
-        Objects.equals(this.pDMPriceListID, crmcampaigntype.pDMPriceListID) &&
-        Objects.equals(this.pDMCashOnDelivery, crmcampaigntype.pDMCashOnDelivery) &&
-        Objects.equals(this.pDMInsuredValue, crmcampaigntype.pDMInsuredValue) &&
-        Objects.equals(this.pDMWeight, crmcampaigntype.pDMWeight) &&
-        Objects.equals(this.pDMWeightUnit, crmcampaigntype.pDMWeightUnit) &&
-        Objects.equals(this.pDMPostage, crmcampaigntype.pDMPostage) &&
-        Objects.equals(this.pDMMultiplicator, crmcampaigntype.pDMMultiplicator) &&
-        Objects.equals(this.pDMPostageInCash, crmcampaigntype.pDMPostageInCash) &&
-        Objects.equals(this.activityProductID, crmcampaigntype.activityProductID) &&
-        Objects.equals(this.cashOnDelivery, crmcampaigntype.cashOnDelivery) &&
-        Objects.equals(this.insuredValue, crmcampaigntype.insuredValue) &&
+        Objects.equals(this.useemailtemplate, crmcampaigntype.useemailtemplate) &&
+        Objects.equals(this.activitycreate, crmcampaigntype.activitycreate) &&
+        Objects.equals(this.emailattachment, crmcampaigntype.emailattachment) &&
+        Objects.equals(this.emailaccountId, crmcampaigntype.emailaccountId) &&
+        Objects.equals(this.hiddenemailaccountId, crmcampaigntype.hiddenemailaccountId) &&
+        Objects.equals(this.pdmdescription, crmcampaigntype.pdmdescription) &&
+        Objects.equals(this.activitysubject, crmcampaigntype.activitysubject) &&
+        Objects.equals(this.activitydescription, crmcampaigntype.activitydescription) &&
+        Objects.equals(this.pdmpostproviderId, crmcampaigntype.pdmpostproviderId) &&
+        Objects.equals(this.pdmissuedcontentId, crmcampaigntype.pdmissuedcontentId) &&
+        Objects.equals(this.pdmdocqueueId, crmcampaigntype.pdmdocqueueId) &&
+        Objects.equals(this.divisionId, crmcampaigntype.divisionId) &&
+        Objects.equals(this.busorderId, crmcampaigntype.busorderId) &&
+        Objects.equals(this.bustransactionId, crmcampaigntype.bustransactionId) &&
+        Objects.equals(this.busprojectId, crmcampaigntype.busprojectId) &&
+        Objects.equals(this.screxecute, crmcampaigntype.screxecute) &&
+        Objects.equals(this.scrpackagename, crmcampaigntype.scrpackagename) &&
+        Objects.equals(this.scrlibraryname, crmcampaigntype.scrlibraryname) &&
+        Objects.equals(this.scrmethodname, crmcampaigntype.scrmethodname) &&
+        Objects.equals(this.massannouncement, crmcampaigntype.massannouncement) &&
+        Objects.equals(this.solveruserId, crmcampaigntype.solveruserId) &&
+        Objects.equals(this.solverroleId, crmcampaigntype.solverroleId) &&
+        Objects.equals(this.activitytypeId, crmcampaigntype.activitytypeId) &&
+        Objects.equals(this.activityprocessId, crmcampaigntype.activityprocessId) &&
+        Objects.equals(this.activityqueueId, crmcampaigntype.activityqueueId) &&
+        Objects.equals(this.activitystate, crmcampaigntype.activitystate) &&
+        Objects.equals(this.activitypriority, crmcampaigntype.activitypriority) &&
+        Objects.equals(this.pdmpricelistId, crmcampaigntype.pdmpricelistId) &&
+        Objects.equals(this.pdmcashondelivery, crmcampaigntype.pdmcashondelivery) &&
+        Objects.equals(this.pdminsuredvalue, crmcampaigntype.pdminsuredvalue) &&
+        Objects.equals(this.pdmweight, crmcampaigntype.pdmweight) &&
+        Objects.equals(this.pdmweightunit, crmcampaigntype.pdmweightunit) &&
+        Objects.equals(this.pdmpostage, crmcampaigntype.pdmpostage) &&
+        Objects.equals(this.pdmmultiplicator, crmcampaigntype.pdmmultiplicator) &&
+        Objects.equals(this.pdmpostageincash, crmcampaigntype.pdmpostageincash) &&
+        Objects.equals(this.activityproductId, crmcampaigntype.activityproductId) &&
+        Objects.equals(this.cashondelivery, crmcampaigntype.cashondelivery) &&
+        Objects.equals(this.insuredvalue, crmcampaigntype.insuredvalue) &&
         Objects.equals(this.weight, crmcampaigntype.weight) &&
-        Objects.equals(this.weightUnit, crmcampaigntype.weightUnit) &&
+        Objects.equals(this.weightunit, crmcampaigntype.weightunit) &&
         Objects.equals(this.attachments, crmcampaigntype.attachments);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, channel, emailFormat, emailSubject, emailBody, name, useEmailTemplate, activityCreate, emailAttachment, emailAccountID, hiddenEmailAccountID, pDMDescription, activitySubject, activityDescription, pDMPostProviderID, pDMIssuedContentID, pDMDocQueueID, divisionID, busOrderID, busTransactionID, busProjectID, sCRExecute, sCRPackageName, sCRLibraryName, sCRMethodName, massAnnouncement, solverUserID, solverRoleID, activityTypeID, activityProcessID, activityQueueID, activityState, activityPriority, pDMPriceListID, pDMCashOnDelivery, pDMInsuredValue, pDMWeight, pDMWeightUnit, pDMPostage, pDMMultiplicator, pDMPostageInCash, activityProductID, cashOnDelivery, insuredValue, weight, weightUnit, attachments);
+    return Objects.hash(displayname, id, classid, objversion, rows, channel, emailformat, emailsubject, emailbody, name, useemailtemplate, activitycreate, emailattachment, emailaccountId, hiddenemailaccountId, pdmdescription, activitysubject, activitydescription, pdmpostproviderId, pdmissuedcontentId, pdmdocqueueId, divisionId, busorderId, bustransactionId, busprojectId, screxecute, scrpackagename, scrlibraryname, scrmethodname, massannouncement, solveruserId, solverroleId, activitytypeId, activityprocessId, activityqueueId, activitystate, activitypriority, pdmpricelistId, pdmcashondelivery, pdminsuredvalue, pdmweight, pdmweightunit, pdmpostage, pdmmultiplicator, pdmpostageincash, activityproductId, cashondelivery, insuredvalue, weight, weightunit, attachments);
   }
 
   @Override
@@ -1156,56 +1192,56 @@ public class Crmcampaigntype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Crmcampaigntype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    channel: ").append(toIndentedString(channel)).append("\n");
-    sb.append("    emailFormat: ").append(toIndentedString(emailFormat)).append("\n");
-    sb.append("    emailSubject: ").append(toIndentedString(emailSubject)).append("\n");
-    sb.append("    emailBody: ").append(toIndentedString(emailBody)).append("\n");
+    sb.append("    emailformat: ").append(toIndentedString(emailformat)).append("\n");
+    sb.append("    emailsubject: ").append(toIndentedString(emailsubject)).append("\n");
+    sb.append("    emailbody: ").append(toIndentedString(emailbody)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    useEmailTemplate: ").append(toIndentedString(useEmailTemplate)).append("\n");
-    sb.append("    activityCreate: ").append(toIndentedString(activityCreate)).append("\n");
-    sb.append("    emailAttachment: ").append(toIndentedString(emailAttachment)).append("\n");
-    sb.append("    emailAccountID: ").append(toIndentedString(emailAccountID)).append("\n");
-    sb.append("    hiddenEmailAccountID: ").append(toIndentedString(hiddenEmailAccountID)).append("\n");
-    sb.append("    pDMDescription: ").append(toIndentedString(pDMDescription)).append("\n");
-    sb.append("    activitySubject: ").append(toIndentedString(activitySubject)).append("\n");
-    sb.append("    activityDescription: ").append(toIndentedString(activityDescription)).append("\n");
-    sb.append("    pDMPostProviderID: ").append(toIndentedString(pDMPostProviderID)).append("\n");
-    sb.append("    pDMIssuedContentID: ").append(toIndentedString(pDMIssuedContentID)).append("\n");
-    sb.append("    pDMDocQueueID: ").append(toIndentedString(pDMDocQueueID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    sCRExecute: ").append(toIndentedString(sCRExecute)).append("\n");
-    sb.append("    sCRPackageName: ").append(toIndentedString(sCRPackageName)).append("\n");
-    sb.append("    sCRLibraryName: ").append(toIndentedString(sCRLibraryName)).append("\n");
-    sb.append("    sCRMethodName: ").append(toIndentedString(sCRMethodName)).append("\n");
-    sb.append("    massAnnouncement: ").append(toIndentedString(massAnnouncement)).append("\n");
-    sb.append("    solverUserID: ").append(toIndentedString(solverUserID)).append("\n");
-    sb.append("    solverRoleID: ").append(toIndentedString(solverRoleID)).append("\n");
-    sb.append("    activityTypeID: ").append(toIndentedString(activityTypeID)).append("\n");
-    sb.append("    activityProcessID: ").append(toIndentedString(activityProcessID)).append("\n");
-    sb.append("    activityQueueID: ").append(toIndentedString(activityQueueID)).append("\n");
-    sb.append("    activityState: ").append(toIndentedString(activityState)).append("\n");
-    sb.append("    activityPriority: ").append(toIndentedString(activityPriority)).append("\n");
-    sb.append("    pDMPriceListID: ").append(toIndentedString(pDMPriceListID)).append("\n");
-    sb.append("    pDMCashOnDelivery: ").append(toIndentedString(pDMCashOnDelivery)).append("\n");
-    sb.append("    pDMInsuredValue: ").append(toIndentedString(pDMInsuredValue)).append("\n");
-    sb.append("    pDMWeight: ").append(toIndentedString(pDMWeight)).append("\n");
-    sb.append("    pDMWeightUnit: ").append(toIndentedString(pDMWeightUnit)).append("\n");
-    sb.append("    pDMPostage: ").append(toIndentedString(pDMPostage)).append("\n");
-    sb.append("    pDMMultiplicator: ").append(toIndentedString(pDMMultiplicator)).append("\n");
-    sb.append("    pDMPostageInCash: ").append(toIndentedString(pDMPostageInCash)).append("\n");
-    sb.append("    activityProductID: ").append(toIndentedString(activityProductID)).append("\n");
-    sb.append("    cashOnDelivery: ").append(toIndentedString(cashOnDelivery)).append("\n");
-    sb.append("    insuredValue: ").append(toIndentedString(insuredValue)).append("\n");
+    sb.append("    useemailtemplate: ").append(toIndentedString(useemailtemplate)).append("\n");
+    sb.append("    activitycreate: ").append(toIndentedString(activitycreate)).append("\n");
+    sb.append("    emailattachment: ").append(toIndentedString(emailattachment)).append("\n");
+    sb.append("    emailaccountId: ").append(toIndentedString(emailaccountId)).append("\n");
+    sb.append("    hiddenemailaccountId: ").append(toIndentedString(hiddenemailaccountId)).append("\n");
+    sb.append("    pdmdescription: ").append(toIndentedString(pdmdescription)).append("\n");
+    sb.append("    activitysubject: ").append(toIndentedString(activitysubject)).append("\n");
+    sb.append("    activitydescription: ").append(toIndentedString(activitydescription)).append("\n");
+    sb.append("    pdmpostproviderId: ").append(toIndentedString(pdmpostproviderId)).append("\n");
+    sb.append("    pdmissuedcontentId: ").append(toIndentedString(pdmissuedcontentId)).append("\n");
+    sb.append("    pdmdocqueueId: ").append(toIndentedString(pdmdocqueueId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    screxecute: ").append(toIndentedString(screxecute)).append("\n");
+    sb.append("    scrpackagename: ").append(toIndentedString(scrpackagename)).append("\n");
+    sb.append("    scrlibraryname: ").append(toIndentedString(scrlibraryname)).append("\n");
+    sb.append("    scrmethodname: ").append(toIndentedString(scrmethodname)).append("\n");
+    sb.append("    massannouncement: ").append(toIndentedString(massannouncement)).append("\n");
+    sb.append("    solveruserId: ").append(toIndentedString(solveruserId)).append("\n");
+    sb.append("    solverroleId: ").append(toIndentedString(solverroleId)).append("\n");
+    sb.append("    activitytypeId: ").append(toIndentedString(activitytypeId)).append("\n");
+    sb.append("    activityprocessId: ").append(toIndentedString(activityprocessId)).append("\n");
+    sb.append("    activityqueueId: ").append(toIndentedString(activityqueueId)).append("\n");
+    sb.append("    activitystate: ").append(toIndentedString(activitystate)).append("\n");
+    sb.append("    activitypriority: ").append(toIndentedString(activitypriority)).append("\n");
+    sb.append("    pdmpricelistId: ").append(toIndentedString(pdmpricelistId)).append("\n");
+    sb.append("    pdmcashondelivery: ").append(toIndentedString(pdmcashondelivery)).append("\n");
+    sb.append("    pdminsuredvalue: ").append(toIndentedString(pdminsuredvalue)).append("\n");
+    sb.append("    pdmweight: ").append(toIndentedString(pdmweight)).append("\n");
+    sb.append("    pdmweightunit: ").append(toIndentedString(pdmweightunit)).append("\n");
+    sb.append("    pdmpostage: ").append(toIndentedString(pdmpostage)).append("\n");
+    sb.append("    pdmmultiplicator: ").append(toIndentedString(pdmmultiplicator)).append("\n");
+    sb.append("    pdmpostageincash: ").append(toIndentedString(pdmpostageincash)).append("\n");
+    sb.append("    activityproductId: ").append(toIndentedString(activityproductId)).append("\n");
+    sb.append("    cashondelivery: ").append(toIndentedString(cashondelivery)).append("\n");
+    sb.append("    insuredvalue: ").append(toIndentedString(insuredvalue)).append("\n");
     sb.append("    weight: ").append(toIndentedString(weight)).append("\n");
-    sb.append("    weightUnit: ").append(toIndentedString(weightUnit)).append("\n");
+    sb.append("    weightunit: ").append(toIndentedString(weightunit)).append("\n");
     sb.append("    attachments: ").append(toIndentedString(attachments)).append("\n");
     sb.append("}");
     return sb.toString();

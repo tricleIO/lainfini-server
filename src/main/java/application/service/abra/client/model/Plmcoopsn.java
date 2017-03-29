@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,126 +35,171 @@ import java.util.Objects;
 /**
  * Plmcoopsn
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmcoopsn   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("SN_ID")
-  private String SN_ID = null;
+  @SerializedName("sn_id")
+  private String snId = null;
 
-  @SerializedName("ReturnedAt$DATE")
-  private DateTime returnedAtDATE = null;
+  @SerializedName("returnedat$date")
+  private DateTime returnedatdate = null;
 
-  @SerializedName("Quantity")
+  @SerializedName("quantity")
   private Double quantity = null;
 
-  @SerializedName("QUnit")
-  private String qUnit = null;
+  @SerializedName("qunit")
+  private String qunit = null;
 
-  @SerializedName("UnitRate")
-  private Double unitRate = null;
+  @SerializedName("unitrate")
+  private Double unitrate = null;
 
-  @SerializedName("UnitQuantity")
-  private Double unitQuantity = null;
+  @SerializedName("unitquantity")
+  private Double unitquantity = null;
 
-  @SerializedName("ReturnedQuantity")
-  private Double returnedQuantity = null;
+  @SerializedName("returnedquantity")
+  private Double returnedquantity = null;
 
-  @SerializedName("ReturnedUnitQuantity")
-  private Double returnedUnitQuantity = null;
+  @SerializedName("returnedunitquantity")
+  private Double returnedunitquantity = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Koop. - vyráběná položka [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Koop. - vyráběná položka [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Plmcoopsn SN_ID(String SN_ID) {
-    this.SN_ID = SN_ID;
+  public Plmcoopsn displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Sériové číslo; ID objektu VP - sériové číslo [persistentní položka]
-   * @return SN_ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Sériové číslo; ID objektu VP - sériové číslo [persistentní položka]")
-  public String getSNID() {
-    return SN_ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setSNID(String SN_ID) {
-    this.SN_ID = SN_ID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Plmcoopsn returnedAtDATE(DateTime returnedAtDATE) {
-    this.returnedAtDATE = returnedAtDATE;
+  public Plmcoopsn id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Přivezeno zpět [persistentní položka]
-   * @return returnedAtDATE
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Přivezeno zpět [persistentní položka]")
-  public DateTime getReturnedAtDATE() {
-    return returnedAtDATE;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setReturnedAtDATE(DateTime returnedAtDATE) {
-    this.returnedAtDATE = returnedAtDATE;
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmcoopsn classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmcoopsn objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Plmcoopsn parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu koop. - vyráběná položka [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu koop. - vyráběná položka [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Plmcoopsn snId(String snId) {
+    this.snId = snId;
+    return this;
+  }
+
+   /**
+   * sériové číslo; id objektu vp - sériové číslo [persistentní položka]
+   * @return snId
+  **/
+  @ApiModelProperty(example = "null", value = "sériové číslo; id objektu vp - sériové číslo [persistentní položka]")
+  public String getSnId() {
+    return snId;
+  }
+
+  public void setSnId(String snId) {
+    this.snId = snId;
+  }
+
+  public Plmcoopsn returnedatdate(DateTime returnedatdate) {
+    this.returnedatdate = returnedatdate;
+    return this;
+  }
+
+   /**
+   * přivezeno zpět [persistentní položka]
+   * @return returnedatdate
+  **/
+  @ApiModelProperty(example = "null", value = "přivezeno zpět [persistentní položka]")
+  public DateTime getReturnedatdate() {
+    return returnedatdate;
+  }
+
+  public void setReturnedatdate(DateTime returnedatdate) {
+    this.returnedatdate = returnedatdate;
   }
 
   public Plmcoopsn quantity(Double quantity) {
@@ -163,10 +208,10 @@ public class Plmcoopsn   {
   }
 
    /**
-   * Množství do kooperace v ev.jedn. [persistentní položka]
+   * množství do kooperace v ev.jedn. [persistentní položka]
    * @return quantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství do kooperace v ev.jedn. [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "množství do kooperace v ev.jedn. [persistentní položka]")
   public Double getQuantity() {
     return quantity;
   }
@@ -175,94 +220,94 @@ public class Plmcoopsn   {
     this.quantity = quantity;
   }
 
-  public Plmcoopsn qUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public Plmcoopsn qunit(String qunit) {
+    this.qunit = qunit;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return qUnit
+   * jednotka [persistentní položka]
+   * @return qunit
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getQUnit() {
-    return qUnit;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getQunit() {
+    return qunit;
   }
 
-  public void setQUnit(String qUnit) {
-    this.qUnit = qUnit;
+  public void setQunit(String qunit) {
+    this.qunit = qunit;
   }
 
-  public Plmcoopsn unitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public Plmcoopsn unitrate(Double unitrate) {
+    this.unitrate = unitrate;
     return this;
   }
 
    /**
-   * Vztah [persistentní položka]
-   * @return unitRate
+   * vztah [persistentní položka]
+   * @return unitrate
   **/
-  @ApiModelProperty(example = "null", value = "Vztah [persistentní položka]")
-  public Double getUnitRate() {
-    return unitRate;
+  @ApiModelProperty(example = "null", value = "vztah [persistentní položka]")
+  public Double getUnitrate() {
+    return unitrate;
   }
 
-  public void setUnitRate(Double unitRate) {
-    this.unitRate = unitRate;
+  public void setUnitrate(Double unitrate) {
+    this.unitrate = unitrate;
   }
 
-  public Plmcoopsn unitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public Plmcoopsn unitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
     return this;
   }
 
    /**
-   * Množství do kooperace
-   * @return unitQuantity
+   * množství do kooperace
+   * @return unitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství do kooperace")
-  public Double getUnitQuantity() {
-    return unitQuantity;
+  @ApiModelProperty(example = "null", value = "množství do kooperace")
+  public Double getUnitquantity() {
+    return unitquantity;
   }
 
-  public void setUnitQuantity(Double unitQuantity) {
-    this.unitQuantity = unitQuantity;
+  public void setUnitquantity(Double unitquantity) {
+    this.unitquantity = unitquantity;
   }
 
-  public Plmcoopsn returnedQuantity(Double returnedQuantity) {
-    this.returnedQuantity = returnedQuantity;
+  public Plmcoopsn returnedquantity(Double returnedquantity) {
+    this.returnedquantity = returnedquantity;
     return this;
   }
 
    /**
-   * Množství z kooperace v ev.jedn. [persistentní položka]
-   * @return returnedQuantity
+   * množství z kooperace v ev.jedn. [persistentní položka]
+   * @return returnedquantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství z kooperace v ev.jedn. [persistentní položka]")
-  public Double getReturnedQuantity() {
-    return returnedQuantity;
+  @ApiModelProperty(example = "null", value = "množství z kooperace v ev.jedn. [persistentní položka]")
+  public Double getReturnedquantity() {
+    return returnedquantity;
   }
 
-  public void setReturnedQuantity(Double returnedQuantity) {
-    this.returnedQuantity = returnedQuantity;
+  public void setReturnedquantity(Double returnedquantity) {
+    this.returnedquantity = returnedquantity;
   }
 
-  public Plmcoopsn returnedUnitQuantity(Double returnedUnitQuantity) {
-    this.returnedUnitQuantity = returnedUnitQuantity;
+  public Plmcoopsn returnedunitquantity(Double returnedunitquantity) {
+    this.returnedunitquantity = returnedunitquantity;
     return this;
   }
 
    /**
-   * Množství z kooperace
-   * @return returnedUnitQuantity
+   * množství z kooperace
+   * @return returnedunitquantity
   **/
-  @ApiModelProperty(example = "null", value = "Množství z kooperace")
-  public Double getReturnedUnitQuantity() {
-    return returnedUnitQuantity;
+  @ApiModelProperty(example = "null", value = "množství z kooperace")
+  public Double getReturnedunitquantity() {
+    return returnedunitquantity;
   }
 
-  public void setReturnedUnitQuantity(Double returnedUnitQuantity) {
-    this.returnedUnitQuantity = returnedUnitQuantity;
+  public void setReturnedunitquantity(Double returnedunitquantity) {
+    this.returnedunitquantity = returnedunitquantity;
   }
 
 
@@ -275,24 +320,24 @@ public class Plmcoopsn   {
       return false;
     }
     Plmcoopsn plmcoopsn = (Plmcoopsn) o;
-    return Objects.equals(this.displayName, plmcoopsn.displayName) &&
-        Objects.equals(this.ID, plmcoopsn.ID) &&
-        Objects.equals(this.classID, plmcoopsn.classID) &&
-        Objects.equals(this.objVersion, plmcoopsn.objVersion) &&
-        Objects.equals(this.parentID, plmcoopsn.parentID) &&
-        Objects.equals(this.SN_ID, plmcoopsn.SN_ID) &&
-        Objects.equals(this.returnedAtDATE, plmcoopsn.returnedAtDATE) &&
+    return Objects.equals(this.displayname, plmcoopsn.displayname) &&
+        Objects.equals(this.id, plmcoopsn.id) &&
+        Objects.equals(this.classid, plmcoopsn.classid) &&
+        Objects.equals(this.objversion, plmcoopsn.objversion) &&
+        Objects.equals(this.parentId, plmcoopsn.parentId) &&
+        Objects.equals(this.snId, plmcoopsn.snId) &&
+        Objects.equals(this.returnedatdate, plmcoopsn.returnedatdate) &&
         Objects.equals(this.quantity, plmcoopsn.quantity) &&
-        Objects.equals(this.qUnit, plmcoopsn.qUnit) &&
-        Objects.equals(this.unitRate, plmcoopsn.unitRate) &&
-        Objects.equals(this.unitQuantity, plmcoopsn.unitQuantity) &&
-        Objects.equals(this.returnedQuantity, plmcoopsn.returnedQuantity) &&
-        Objects.equals(this.returnedUnitQuantity, plmcoopsn.returnedUnitQuantity);
+        Objects.equals(this.qunit, plmcoopsn.qunit) &&
+        Objects.equals(this.unitrate, plmcoopsn.unitrate) &&
+        Objects.equals(this.unitquantity, plmcoopsn.unitquantity) &&
+        Objects.equals(this.returnedquantity, plmcoopsn.returnedquantity) &&
+        Objects.equals(this.returnedunitquantity, plmcoopsn.returnedunitquantity);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, SN_ID, returnedAtDATE, quantity, qUnit, unitRate, unitQuantity, returnedQuantity, returnedUnitQuantity);
+    return Objects.hash(displayname, id, classid, objversion, parentId, snId, returnedatdate, quantity, qunit, unitrate, unitquantity, returnedquantity, returnedunitquantity);
   }
 
   @Override
@@ -300,19 +345,19 @@ public class Plmcoopsn   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmcoopsn {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    SN_ID: ").append(toIndentedString(SN_ID)).append("\n");
-    sb.append("    returnedAtDATE: ").append(toIndentedString(returnedAtDATE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    snId: ").append(toIndentedString(snId)).append("\n");
+    sb.append("    returnedatdate: ").append(toIndentedString(returnedatdate)).append("\n");
     sb.append("    quantity: ").append(toIndentedString(quantity)).append("\n");
-    sb.append("    qUnit: ").append(toIndentedString(qUnit)).append("\n");
-    sb.append("    unitRate: ").append(toIndentedString(unitRate)).append("\n");
-    sb.append("    unitQuantity: ").append(toIndentedString(unitQuantity)).append("\n");
-    sb.append("    returnedQuantity: ").append(toIndentedString(returnedQuantity)).append("\n");
-    sb.append("    returnedUnitQuantity: ").append(toIndentedString(returnedUnitQuantity)).append("\n");
+    sb.append("    qunit: ").append(toIndentedString(qunit)).append("\n");
+    sb.append("    unitrate: ").append(toIndentedString(unitrate)).append("\n");
+    sb.append("    unitquantity: ").append(toIndentedString(unitquantity)).append("\n");
+    sb.append("    returnedquantity: ").append(toIndentedString(returnedquantity)).append("\n");
+    sb.append("    returnedunitquantity: ").append(toIndentedString(returnedunitquantity)).append("\n");
     sb.append("}");
     return sb.toString();
   }

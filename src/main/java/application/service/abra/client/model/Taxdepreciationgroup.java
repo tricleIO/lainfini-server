@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,99 +35,135 @@ import java.util.Objects;
 /**
  * Taxdepreciationgroup
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Taxdepreciationgroup   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("FirstYearCoef")
-  private Double firstYearCoef = null;
+  @SerializedName("firstyearcoef")
+  private Double firstyearcoef = null;
 
-  @SerializedName("OtherYearsCoef")
-  private Double otherYearsCoef = null;
+  @SerializedName("otheryearscoef")
+  private Double otheryearscoef = null;
 
-  @SerializedName("OverValuedCoef")
-  private Double overValuedCoef = null;
+  @SerializedName("overvaluedcoef")
+  private Double overvaluedcoef = null;
 
-  @SerializedName("YearsCount")
-  private Integer yearsCount = null;
+  @SerializedName("yearscount")
+  private Integer yearscount = null;
 
-  @SerializedName("AlgorithmType")
-  private Integer algorithmType = null;
+  @SerializedName("algorithmtype")
+  private Integer algorithmtype = null;
 
-  @SerializedName("AlgorithmTypeAsText")
-  private String algorithmTypeAsText = null;
+  @SerializedName("algorithmtypeastext")
+  private String algorithmtypeastext = null;
 
-  @SerializedName("ValidFrom$DATE")
-  private DateTime validFromDATE = null;
+  @SerializedName("validfrom$date")
+  private DateTime validfromdate = null;
 
-  @SerializedName("ValidTo$DATE")
-  private DateTime validToDATE = null;
+  @SerializedName("validto$date")
+  private DateTime validtodate = null;
 
-  @SerializedName("ConstantRate")
-  private Double constantRate = null;
+  @SerializedName("constantrate")
+  private Double constantrate = null;
 
-  @SerializedName("WayOfDefConst")
-  private Integer wayOfDefConst = null;
+  @SerializedName("wayofdefconst")
+  private Integer wayofdefconst = null;
 
-  @SerializedName("Numerator")
+  @SerializedName("numerator")
   private Double numerator = null;
 
-  @SerializedName("Denominator")
+  @SerializedName("denominator")
   private Double denominator = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Taxdepreciationgroup displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Taxdepreciationgroup id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Taxdepreciationgroup classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Taxdepreciationgroup objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Taxdepreciationgroup hidden(Boolean hidden) {
@@ -136,10 +172,10 @@ public class Taxdepreciationgroup   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -154,10 +190,10 @@ public class Taxdepreciationgroup   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -172,10 +208,10 @@ public class Taxdepreciationgroup   {
   }
 
    /**
-   * Název odpisové skupiny [persistentní položka]
+   * název odpisové skupiny [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název odpisové skupiny [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název odpisové skupiny [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -184,184 +220,184 @@ public class Taxdepreciationgroup   {
     this.name = name;
   }
 
-  public Taxdepreciationgroup firstYearCoef(Double firstYearCoef) {
-    this.firstYearCoef = firstYearCoef;
+  public Taxdepreciationgroup firstyearcoef(Double firstyearcoef) {
+    this.firstyearcoef = firstyearcoef;
     return this;
   }
 
    /**
-   * Koef.první [persistentní položka]
-   * @return firstYearCoef
+   * koef.první [persistentní položka]
+   * @return firstyearcoef
   **/
-  @ApiModelProperty(example = "null", value = "Koef.první [persistentní položka]")
-  public Double getFirstYearCoef() {
-    return firstYearCoef;
+  @ApiModelProperty(example = "null", value = "koef.první [persistentní položka]")
+  public Double getFirstyearcoef() {
+    return firstyearcoef;
   }
 
-  public void setFirstYearCoef(Double firstYearCoef) {
-    this.firstYearCoef = firstYearCoef;
+  public void setFirstyearcoef(Double firstyearcoef) {
+    this.firstyearcoef = firstyearcoef;
   }
 
-  public Taxdepreciationgroup otherYearsCoef(Double otherYearsCoef) {
-    this.otherYearsCoef = otherYearsCoef;
+  public Taxdepreciationgroup otheryearscoef(Double otheryearscoef) {
+    this.otheryearscoef = otheryearscoef;
     return this;
   }
 
    /**
-   * Koef.další [persistentní položka]
-   * @return otherYearsCoef
+   * koef.další [persistentní položka]
+   * @return otheryearscoef
   **/
-  @ApiModelProperty(example = "null", value = "Koef.další [persistentní položka]")
-  public Double getOtherYearsCoef() {
-    return otherYearsCoef;
+  @ApiModelProperty(example = "null", value = "koef.další [persistentní položka]")
+  public Double getOtheryearscoef() {
+    return otheryearscoef;
   }
 
-  public void setOtherYearsCoef(Double otherYearsCoef) {
-    this.otherYearsCoef = otherYearsCoef;
+  public void setOtheryearscoef(Double otheryearscoef) {
+    this.otheryearscoef = otheryearscoef;
   }
 
-  public Taxdepreciationgroup overValuedCoef(Double overValuedCoef) {
-    this.overValuedCoef = overValuedCoef;
+  public Taxdepreciationgroup overvaluedcoef(Double overvaluedcoef) {
+    this.overvaluedcoef = overvaluedcoef;
     return this;
   }
 
    /**
-   * Koef.zvýš. [persistentní položka]
-   * @return overValuedCoef
+   * koef.zvýš. [persistentní položka]
+   * @return overvaluedcoef
   **/
-  @ApiModelProperty(example = "null", value = "Koef.zvýš. [persistentní položka]")
-  public Double getOverValuedCoef() {
-    return overValuedCoef;
+  @ApiModelProperty(example = "null", value = "koef.zvýš. [persistentní položka]")
+  public Double getOvervaluedcoef() {
+    return overvaluedcoef;
   }
 
-  public void setOverValuedCoef(Double overValuedCoef) {
-    this.overValuedCoef = overValuedCoef;
+  public void setOvervaluedcoef(Double overvaluedcoef) {
+    this.overvaluedcoef = overvaluedcoef;
   }
 
-  public Taxdepreciationgroup yearsCount(Integer yearsCount) {
-    this.yearsCount = yearsCount;
+  public Taxdepreciationgroup yearscount(Integer yearscount) {
+    this.yearscount = yearscount;
     return this;
   }
 
    /**
-   * Počet let [persistentní položka]
-   * @return yearsCount
+   * počet let [persistentní položka]
+   * @return yearscount
   **/
-  @ApiModelProperty(example = "null", value = "Počet let [persistentní položka]")
-  public Integer getYearsCount() {
-    return yearsCount;
+  @ApiModelProperty(example = "null", value = "počet let [persistentní položka]")
+  public Integer getYearscount() {
+    return yearscount;
   }
 
-  public void setYearsCount(Integer yearsCount) {
-    this.yearsCount = yearsCount;
+  public void setYearscount(Integer yearscount) {
+    this.yearscount = yearscount;
   }
 
-  public Taxdepreciationgroup algorithmType(Integer algorithmType) {
-    this.algorithmType = algorithmType;
+  public Taxdepreciationgroup algorithmtype(Integer algorithmtype) {
+    this.algorithmtype = algorithmtype;
     return this;
   }
 
    /**
-   * Algoritmus [persistentní položka]
-   * @return algorithmType
+   * algoritmus [persistentní položka]
+   * @return algorithmtype
   **/
-  @ApiModelProperty(example = "null", value = "Algoritmus [persistentní položka]")
-  public Integer getAlgorithmType() {
-    return algorithmType;
+  @ApiModelProperty(example = "null", value = "algoritmus [persistentní položka]")
+  public Integer getAlgorithmtype() {
+    return algorithmtype;
   }
 
-  public void setAlgorithmType(Integer algorithmType) {
-    this.algorithmType = algorithmType;
+  public void setAlgorithmtype(Integer algorithmtype) {
+    this.algorithmtype = algorithmtype;
   }
 
-  public Taxdepreciationgroup algorithmTypeAsText(String algorithmTypeAsText) {
-    this.algorithmTypeAsText = algorithmTypeAsText;
+  public Taxdepreciationgroup algorithmtypeastext(String algorithmtypeastext) {
+    this.algorithmtypeastext = algorithmtypeastext;
     return this;
   }
 
    /**
-   * Algoritmus textově
-   * @return algorithmTypeAsText
+   * algoritmus textově
+   * @return algorithmtypeastext
   **/
-  @ApiModelProperty(example = "null", value = "Algoritmus textově")
-  public String getAlgorithmTypeAsText() {
-    return algorithmTypeAsText;
+  @ApiModelProperty(example = "null", value = "algoritmus textově")
+  public String getAlgorithmtypeastext() {
+    return algorithmtypeastext;
   }
 
-  public void setAlgorithmTypeAsText(String algorithmTypeAsText) {
-    this.algorithmTypeAsText = algorithmTypeAsText;
+  public void setAlgorithmtypeastext(String algorithmtypeastext) {
+    this.algorithmtypeastext = algorithmtypeastext;
   }
 
-  public Taxdepreciationgroup validFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public Taxdepreciationgroup validfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
     return this;
   }
 
    /**
-   * Platí od data [persistentní položka]
-   * @return validFromDATE
+   * platí od data [persistentní položka]
+   * @return validfromdate
   **/
-  @ApiModelProperty(example = "null", value = "Platí od data [persistentní položka]")
-  public DateTime getValidFromDATE() {
-    return validFromDATE;
+  @ApiModelProperty(example = "null", value = "platí od data [persistentní položka]")
+  public DateTime getValidfromdate() {
+    return validfromdate;
   }
 
-  public void setValidFromDATE(DateTime validFromDATE) {
-    this.validFromDATE = validFromDATE;
+  public void setValidfromdate(DateTime validfromdate) {
+    this.validfromdate = validfromdate;
   }
 
-  public Taxdepreciationgroup validToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public Taxdepreciationgroup validtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
     return this;
   }
 
    /**
-   * Platí do data [persistentní položka]
-   * @return validToDATE
+   * platí do data [persistentní položka]
+   * @return validtodate
   **/
-  @ApiModelProperty(example = "null", value = "Platí do data [persistentní položka]")
-  public DateTime getValidToDATE() {
-    return validToDATE;
+  @ApiModelProperty(example = "null", value = "platí do data [persistentní položka]")
+  public DateTime getValidtodate() {
+    return validtodate;
   }
 
-  public void setValidToDATE(DateTime validToDATE) {
-    this.validToDATE = validToDATE;
+  public void setValidtodate(DateTime validtodate) {
+    this.validtodate = validtodate;
   }
 
-  public Taxdepreciationgroup constantRate(Double constantRate) {
-    this.constantRate = constantRate;
+  public Taxdepreciationgroup constantrate(Double constantrate) {
+    this.constantrate = constantrate;
     return this;
   }
 
    /**
-   * Konst.odp.
-   * @return constantRate
+   * konst.odp.
+   * @return constantrate
   **/
-  @ApiModelProperty(example = "null", value = "Konst.odp.")
-  public Double getConstantRate() {
-    return constantRate;
+  @ApiModelProperty(example = "null", value = "konst.odp.")
+  public Double getConstantrate() {
+    return constantrate;
   }
 
-  public void setConstantRate(Double constantRate) {
-    this.constantRate = constantRate;
+  public void setConstantrate(Double constantrate) {
+    this.constantrate = constantrate;
   }
 
-  public Taxdepreciationgroup wayOfDefConst(Integer wayOfDefConst) {
-    this.wayOfDefConst = wayOfDefConst;
+  public Taxdepreciationgroup wayofdefconst(Integer wayofdefconst) {
+    this.wayofdefconst = wayofdefconst;
     return this;
   }
 
    /**
-   * Typ def. [persistentní položka]
-   * @return wayOfDefConst
+   * typ def. [persistentní položka]
+   * @return wayofdefconst
   **/
-  @ApiModelProperty(example = "null", value = "Typ def. [persistentní položka]")
-  public Integer getWayOfDefConst() {
-    return wayOfDefConst;
+  @ApiModelProperty(example = "null", value = "typ def. [persistentní položka]")
+  public Integer getWayofdefconst() {
+    return wayofdefconst;
   }
 
-  public void setWayOfDefConst(Integer wayOfDefConst) {
-    this.wayOfDefConst = wayOfDefConst;
+  public void setWayofdefconst(Integer wayofdefconst) {
+    this.wayofdefconst = wayofdefconst;
   }
 
   public Taxdepreciationgroup numerator(Double numerator) {
@@ -388,10 +424,10 @@ public class Taxdepreciationgroup   {
   }
 
    /**
-   * Jmenovatel [persistentní položka]
+   * jmenovatel [persistentní položka]
    * @return denominator
   **/
-  @ApiModelProperty(example = "null", value = "Jmenovatel [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "jmenovatel [persistentní položka]")
   public Double getDenominator() {
     return denominator;
   }
@@ -410,30 +446,30 @@ public class Taxdepreciationgroup   {
       return false;
     }
     Taxdepreciationgroup taxdepreciationgroup = (Taxdepreciationgroup) o;
-    return Objects.equals(this.displayName, taxdepreciationgroup.displayName) &&
-        Objects.equals(this.ID, taxdepreciationgroup.ID) &&
-        Objects.equals(this.classID, taxdepreciationgroup.classID) &&
-        Objects.equals(this.objVersion, taxdepreciationgroup.objVersion) &&
+    return Objects.equals(this.displayname, taxdepreciationgroup.displayname) &&
+        Objects.equals(this.id, taxdepreciationgroup.id) &&
+        Objects.equals(this.classid, taxdepreciationgroup.classid) &&
+        Objects.equals(this.objversion, taxdepreciationgroup.objversion) &&
         Objects.equals(this.hidden, taxdepreciationgroup.hidden) &&
         Objects.equals(this.code, taxdepreciationgroup.code) &&
         Objects.equals(this.name, taxdepreciationgroup.name) &&
-        Objects.equals(this.firstYearCoef, taxdepreciationgroup.firstYearCoef) &&
-        Objects.equals(this.otherYearsCoef, taxdepreciationgroup.otherYearsCoef) &&
-        Objects.equals(this.overValuedCoef, taxdepreciationgroup.overValuedCoef) &&
-        Objects.equals(this.yearsCount, taxdepreciationgroup.yearsCount) &&
-        Objects.equals(this.algorithmType, taxdepreciationgroup.algorithmType) &&
-        Objects.equals(this.algorithmTypeAsText, taxdepreciationgroup.algorithmTypeAsText) &&
-        Objects.equals(this.validFromDATE, taxdepreciationgroup.validFromDATE) &&
-        Objects.equals(this.validToDATE, taxdepreciationgroup.validToDATE) &&
-        Objects.equals(this.constantRate, taxdepreciationgroup.constantRate) &&
-        Objects.equals(this.wayOfDefConst, taxdepreciationgroup.wayOfDefConst) &&
+        Objects.equals(this.firstyearcoef, taxdepreciationgroup.firstyearcoef) &&
+        Objects.equals(this.otheryearscoef, taxdepreciationgroup.otheryearscoef) &&
+        Objects.equals(this.overvaluedcoef, taxdepreciationgroup.overvaluedcoef) &&
+        Objects.equals(this.yearscount, taxdepreciationgroup.yearscount) &&
+        Objects.equals(this.algorithmtype, taxdepreciationgroup.algorithmtype) &&
+        Objects.equals(this.algorithmtypeastext, taxdepreciationgroup.algorithmtypeastext) &&
+        Objects.equals(this.validfromdate, taxdepreciationgroup.validfromdate) &&
+        Objects.equals(this.validtodate, taxdepreciationgroup.validtodate) &&
+        Objects.equals(this.constantrate, taxdepreciationgroup.constantrate) &&
+        Objects.equals(this.wayofdefconst, taxdepreciationgroup.wayofdefconst) &&
         Objects.equals(this.numerator, taxdepreciationgroup.numerator) &&
         Objects.equals(this.denominator, taxdepreciationgroup.denominator);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, hidden, code, name, firstYearCoef, otherYearsCoef, overValuedCoef, yearsCount, algorithmType, algorithmTypeAsText, validFromDATE, validToDATE, constantRate, wayOfDefConst, numerator, denominator);
+    return Objects.hash(displayname, id, classid, objversion, hidden, code, name, firstyearcoef, otheryearscoef, overvaluedcoef, yearscount, algorithmtype, algorithmtypeastext, validfromdate, validtodate, constantrate, wayofdefconst, numerator, denominator);
   }
 
   @Override
@@ -441,23 +477,23 @@ public class Taxdepreciationgroup   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Taxdepreciationgroup {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    firstYearCoef: ").append(toIndentedString(firstYearCoef)).append("\n");
-    sb.append("    otherYearsCoef: ").append(toIndentedString(otherYearsCoef)).append("\n");
-    sb.append("    overValuedCoef: ").append(toIndentedString(overValuedCoef)).append("\n");
-    sb.append("    yearsCount: ").append(toIndentedString(yearsCount)).append("\n");
-    sb.append("    algorithmType: ").append(toIndentedString(algorithmType)).append("\n");
-    sb.append("    algorithmTypeAsText: ").append(toIndentedString(algorithmTypeAsText)).append("\n");
-    sb.append("    validFromDATE: ").append(toIndentedString(validFromDATE)).append("\n");
-    sb.append("    validToDATE: ").append(toIndentedString(validToDATE)).append("\n");
-    sb.append("    constantRate: ").append(toIndentedString(constantRate)).append("\n");
-    sb.append("    wayOfDefConst: ").append(toIndentedString(wayOfDefConst)).append("\n");
+    sb.append("    firstyearcoef: ").append(toIndentedString(firstyearcoef)).append("\n");
+    sb.append("    otheryearscoef: ").append(toIndentedString(otheryearscoef)).append("\n");
+    sb.append("    overvaluedcoef: ").append(toIndentedString(overvaluedcoef)).append("\n");
+    sb.append("    yearscount: ").append(toIndentedString(yearscount)).append("\n");
+    sb.append("    algorithmtype: ").append(toIndentedString(algorithmtype)).append("\n");
+    sb.append("    algorithmtypeastext: ").append(toIndentedString(algorithmtypeastext)).append("\n");
+    sb.append("    validfromdate: ").append(toIndentedString(validfromdate)).append("\n");
+    sb.append("    validtodate: ").append(toIndentedString(validtodate)).append("\n");
+    sb.append("    constantrate: ").append(toIndentedString(constantrate)).append("\n");
+    sb.append("    wayofdefconst: ").append(toIndentedString(wayofdefconst)).append("\n");
     sb.append("    numerator: ").append(toIndentedString(numerator)).append("\n");
     sb.append("    denominator: ").append(toIndentedString(denominator)).append("\n");
     sb.append("}");

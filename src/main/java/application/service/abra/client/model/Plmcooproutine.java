@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,87 +34,132 @@ import java.util.Objects;
 /**
  * Plmcooproutine
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Plmcooproutine   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("JobOrdersRoutine_ID")
-  private String jobOrdersRoutineID = null;
+  @SerializedName("jobordersroutine_id")
+  private String jobordersroutineId = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Koop. - vyráběná položka [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Koop. - vyráběná položka [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Plmcooproutine jobOrdersRoutineID(String jobOrdersRoutineID) {
-    this.jobOrdersRoutineID = jobOrdersRoutineID;
+  public Plmcooproutine displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Operace; ID objektu VP - technologický postup [persistentní položka]
-   * @return jobOrdersRoutineID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Operace; ID objektu VP - technologický postup [persistentní položka]")
-  public String getJobOrdersRoutineID() {
-    return jobOrdersRoutineID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setJobOrdersRoutineID(String jobOrdersRoutineID) {
-    this.jobOrdersRoutineID = jobOrdersRoutineID;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Plmcooproutine id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Plmcooproutine classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Plmcooproutine objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Plmcooproutine parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu koop. - vyráběná položka [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu koop. - vyráběná položka [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Plmcooproutine jobordersroutineId(String jobordersroutineId) {
+    this.jobordersroutineId = jobordersroutineId;
+    return this;
+  }
+
+   /**
+   * operace; id objektu vp - technologický postup [persistentní položka]
+   * @return jobordersroutineId
+  **/
+  @ApiModelProperty(example = "null", value = "operace; id objektu vp - technologický postup [persistentní položka]")
+  public String getJobordersroutineId() {
+    return jobordersroutineId;
+  }
+
+  public void setJobordersroutineId(String jobordersroutineId) {
+    this.jobordersroutineId = jobordersroutineId;
   }
 
 
@@ -127,17 +172,17 @@ public class Plmcooproutine   {
       return false;
     }
     Plmcooproutine plmcooproutine = (Plmcooproutine) o;
-    return Objects.equals(this.displayName, plmcooproutine.displayName) &&
-        Objects.equals(this.ID, plmcooproutine.ID) &&
-        Objects.equals(this.classID, plmcooproutine.classID) &&
-        Objects.equals(this.objVersion, plmcooproutine.objVersion) &&
-        Objects.equals(this.parentID, plmcooproutine.parentID) &&
-        Objects.equals(this.jobOrdersRoutineID, plmcooproutine.jobOrdersRoutineID);
+    return Objects.equals(this.displayname, plmcooproutine.displayname) &&
+        Objects.equals(this.id, plmcooproutine.id) &&
+        Objects.equals(this.classid, plmcooproutine.classid) &&
+        Objects.equals(this.objversion, plmcooproutine.objversion) &&
+        Objects.equals(this.parentId, plmcooproutine.parentId) &&
+        Objects.equals(this.jobordersroutineId, plmcooproutine.jobordersroutineId);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, jobOrdersRoutineID);
+    return Objects.hash(displayname, id, classid, objversion, parentId, jobordersroutineId);
   }
 
   @Override
@@ -145,12 +190,12 @@ public class Plmcooproutine   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Plmcooproutine {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    jobOrdersRoutineID: ").append(toIndentedString(jobOrdersRoutineID)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    jobordersroutineId: ").append(toIndentedString(jobordersroutineId)).append("\n");
     sb.append("}");
     return sb.toString();
   }

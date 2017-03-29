@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,189 +35,225 @@ import java.util.Objects;
 /**
  * Trmcar
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Trmcar   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("DateOfChange")
-  private DateTime dateOfChange = null;
+  @SerializedName("dateofchange")
+  private DateTime dateofchange = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("RegPlate")
-  private String regPlate = null;
+  @SerializedName("regplate")
+  private String regplate = null;
 
-  @SerializedName("TRMCar_ID")
-  private String tRMCarID = null;
+  @SerializedName("trmcar_id")
+  private String trmcarId = null;
 
-  @SerializedName("TRMCarType_ID")
-  private String tRMCarTypeID = null;
+  @SerializedName("trmcartype_id")
+  private String trmcartypeId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("OwnerType")
-  private Integer ownerType = null;
+  @SerializedName("ownertype")
+  private Integer ownertype = null;
 
-  @SerializedName("TowedCar_ID")
-  private String towedCarID = null;
+  @SerializedName("towedcar_id")
+  private String towedcarId = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Brand")
+  @SerializedName("brand")
   private String brand = null;
 
-  @SerializedName("ChassisNr")
-  private String chassisNr = null;
+  @SerializedName("chassisnr")
+  private String chassisnr = null;
 
-  @SerializedName("EngineType")
-  private String engineType = null;
+  @SerializedName("enginetype")
+  private String enginetype = null;
 
-  @SerializedName("EngineNr")
-  private String engineNr = null;
+  @SerializedName("enginenr")
+  private String enginenr = null;
 
-  @SerializedName("LogBook")
-  private String logBook = null;
+  @SerializedName("logbook")
+  private String logbook = null;
 
-  @SerializedName("Manufact$DATE")
-  private DateTime manufactDATE = null;
+  @SerializedName("manufact$date")
+  private DateTime manufactdate = null;
 
-  @SerializedName("LoadDate$DATE")
-  private DateTime loadDateDATE = null;
+  @SerializedName("loaddate$date")
+  private DateTime loaddatedate = null;
 
-  @SerializedName("Deletion$DATE")
-  private DateTime deletionDATE = null;
+  @SerializedName("deletion$date")
+  private DateTime deletiondate = null;
 
-  @SerializedName("OnDeletionTax")
-  private Integer onDeletionTax = null;
+  @SerializedName("ondeletiontax")
+  private Integer ondeletiontax = null;
 
-  @SerializedName("Price")
+  @SerializedName("price")
   private Double price = null;
 
-  @SerializedName("TotalKm")
-  private Double totalKm = null;
+  @SerializedName("totalkm")
+  private Double totalkm = null;
 
-  @SerializedName("TotalFuel")
-  private Double totalFuel = null;
+  @SerializedName("totalfuel")
+  private Double totalfuel = null;
 
-  @SerializedName("TechCert$DATE")
-  private DateTime techCertDATE = null;
+  @SerializedName("techcert$date")
+  private DateTime techcertdate = null;
 
-  @SerializedName("EmissionCert$DATE")
-  private DateTime emissionCertDATE = null;
+  @SerializedName("emissioncert$date")
+  private DateTime emissioncertdate = null;
 
-  @SerializedName("RoadTaxPercentReduction")
-  private Integer roadTaxPercentReduction = null;
+  @SerializedName("roadtaxpercentreduction")
+  private Integer roadtaxpercentreduction = null;
 
-  @SerializedName("LawInsurance")
-  private Double lawInsurance = null;
+  @SerializedName("lawinsurance")
+  private Double lawinsurance = null;
 
-  @SerializedName("CrashInsurance")
-  private Double crashInsurance = null;
+  @SerializedName("crashinsurance")
+  private Double crashinsurance = null;
 
-  @SerializedName("TRMDriver1_ID")
-  private String tRMDriver1ID = null;
+  @SerializedName("trmdriver1_id")
+  private String trmdriver1Id = null;
 
-  @SerializedName("TRMDriver2_ID")
-  private String tRMDriver2ID = null;
+  @SerializedName("trmdriver2_id")
+  private String trmdriver2Id = null;
 
-  @SerializedName("HighwayMark")
-  private Boolean highwayMark = null;
+  @SerializedName("highwaymark")
+  private Boolean highwaymark = null;
 
-  @SerializedName("EcoCalcExcl")
-  private Boolean ecoCalcExcl = null;
+  @SerializedName("ecocalcexcl")
+  private Boolean ecocalcexcl = null;
 
-  @SerializedName("FuelNormByLogBook")
-  private Double fuelNormByLogBook = null;
+  @SerializedName("fuelnormbylogbook")
+  private Double fuelnormbylogbook = null;
 
-  @SerializedName("FuelNormByCarTypeNorm")
-  private Boolean fuelNormByCarTypeNorm = null;
+  @SerializedName("fuelnormbycartypenorm")
+  private Boolean fuelnormbycartypenorm = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("TachoByFueling")
-  private Boolean tachoByFueling = null;
+  @SerializedName("tachobyfueling")
+  private Boolean tachobyfueling = null;
 
-  @SerializedName("PlaceFromDefault_ID")
-  private String placeFromDefaultID = null;
+  @SerializedName("placefromdefault_id")
+  private String placefromdefaultId = null;
 
-  @SerializedName("ServiceDate$DATE")
-  private DateTime serviceDateDATE = null;
+  @SerializedName("servicedate$date")
+  private DateTime servicedatedate = null;
 
-  @SerializedName("ServiceByTachoState")
-  private Double serviceByTachoState = null;
+  @SerializedName("servicebytachostate")
+  private Double servicebytachostate = null;
 
-  @SerializedName("OnBusiness")
-  private Boolean onBusiness = null;
+  @SerializedName("onbusiness")
+  private Boolean onbusiness = null;
 
-  @SerializedName("OwnerTypeAsText")
-  private String ownerTypeAsText = null;
+  @SerializedName("ownertypeastext")
+  private String ownertypeastext = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-  public Trmcar dateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public Trmcar displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Datum změny
-   * @return dateOfChange
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Datum změny")
-  public DateTime getDateOfChange() {
-    return dateOfChange;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setDateOfChange(DateTime dateOfChange) {
-    this.dateOfChange = dateOfChange;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  public Trmcar id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Trmcar dateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+    return this;
+  }
+
+   /**
+   * datum změny
+   * @return dateofchange
+  **/
+  @ApiModelProperty(example = "null", value = "datum změny")
+  public DateTime getDateofchange() {
+    return dateofchange;
+  }
+
+  public void setDateofchange(DateTime dateofchange) {
+    this.dateofchange = dateofchange;
+  }
+
+  public Trmcar classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Trmcar objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Trmcar hidden(Boolean hidden) {
@@ -226,10 +262,10 @@ public class Trmcar   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -238,112 +274,112 @@ public class Trmcar   {
     this.hidden = hidden;
   }
 
-  public Trmcar regPlate(String regPlate) {
-    this.regPlate = regPlate;
+  public Trmcar regplate(String regplate) {
+    this.regplate = regplate;
     return this;
   }
 
    /**
-   * RZ [persistentní položka]
-   * @return regPlate
+   * rz [persistentní položka]
+   * @return regplate
   **/
-  @ApiModelProperty(example = "null", value = "RZ [persistentní položka]")
-  public String getRegPlate() {
-    return regPlate;
+  @ApiModelProperty(example = "null", value = "rz [persistentní položka]")
+  public String getRegplate() {
+    return regplate;
   }
 
-  public void setRegPlate(String regPlate) {
-    this.regPlate = regPlate;
+  public void setRegplate(String regplate) {
+    this.regplate = regplate;
   }
 
-  public Trmcar tRMCarID(String tRMCarID) {
-    this.tRMCarID = tRMCarID;
+  public Trmcar trmcarId(String trmcarId) {
+    this.trmcarId = trmcarId;
     return this;
   }
 
    /**
-   * ID vozidla; ID objektu Vozidlo [persistentní položka]
-   * @return tRMCarID
+   * id vozidla; id objektu vozidlo [persistentní položka]
+   * @return trmcarId
   **/
-  @ApiModelProperty(example = "null", value = "ID vozidla; ID objektu Vozidlo [persistentní položka]")
-  public String getTRMCarID() {
-    return tRMCarID;
+  @ApiModelProperty(example = "null", value = "id vozidla; id objektu vozidlo [persistentní položka]")
+  public String getTrmcarId() {
+    return trmcarId;
   }
 
-  public void setTRMCarID(String tRMCarID) {
-    this.tRMCarID = tRMCarID;
+  public void setTrmcarId(String trmcarId) {
+    this.trmcarId = trmcarId;
   }
 
-  public Trmcar tRMCarTypeID(String tRMCarTypeID) {
-    this.tRMCarTypeID = tRMCarTypeID;
+  public Trmcar trmcartypeId(String trmcartypeId) {
+    this.trmcartypeId = trmcartypeId;
     return this;
   }
 
    /**
-   * Typ vozidla; ID objektu Typ vozidla [persistentní položka]
-   * @return tRMCarTypeID
+   * typ vozidla; id objektu typ vozidla [persistentní položka]
+   * @return trmcartypeId
   **/
-  @ApiModelProperty(example = "null", value = "Typ vozidla; ID objektu Typ vozidla [persistentní položka]")
-  public String getTRMCarTypeID() {
-    return tRMCarTypeID;
+  @ApiModelProperty(example = "null", value = "typ vozidla; id objektu typ vozidla [persistentní položka]")
+  public String getTrmcartypeId() {
+    return trmcartypeId;
   }
 
-  public void setTRMCarTypeID(String tRMCarTypeID) {
-    this.tRMCarTypeID = tRMCarTypeID;
+  public void setTrmcartypeId(String trmcartypeId) {
+    this.trmcartypeId = trmcartypeId;
   }
 
-  public Trmcar divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Trmcar divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Trmcar ownerType(Integer ownerType) {
-    this.ownerType = ownerType;
+  public Trmcar ownertype(Integer ownertype) {
+    this.ownertype = ownertype;
     return this;
   }
 
    /**
-   * Vztah k firmě [persistentní položka]
-   * @return ownerType
+   * vztah k firmě [persistentní položka]
+   * @return ownertype
   **/
-  @ApiModelProperty(example = "null", value = "Vztah k firmě [persistentní položka]")
-  public Integer getOwnerType() {
-    return ownerType;
+  @ApiModelProperty(example = "null", value = "vztah k firmě [persistentní položka]")
+  public Integer getOwnertype() {
+    return ownertype;
   }
 
-  public void setOwnerType(Integer ownerType) {
-    this.ownerType = ownerType;
+  public void setOwnertype(Integer ownertype) {
+    this.ownertype = ownertype;
   }
 
-  public Trmcar towedCarID(String towedCarID) {
-    this.towedCarID = towedCarID;
+  public Trmcar towedcarId(String towedcarId) {
+    this.towedcarId = towedcarId;
     return this;
   }
 
    /**
-   * Přípojné vozidlo; ID objektu Vozidlo [persistentní položka]
-   * @return towedCarID
+   * přípojné vozidlo; id objektu vozidlo [persistentní položka]
+   * @return towedcarId
   **/
-  @ApiModelProperty(example = "null", value = "Přípojné vozidlo; ID objektu Vozidlo [persistentní položka]")
-  public String getTowedCarID() {
-    return towedCarID;
+  @ApiModelProperty(example = "null", value = "přípojné vozidlo; id objektu vozidlo [persistentní položka]")
+  public String getTowedcarId() {
+    return towedcarId;
   }
 
-  public void setTowedCarID(String towedCarID) {
-    this.towedCarID = towedCarID;
+  public void setTowedcarId(String towedcarId) {
+    this.towedcarId = towedcarId;
   }
 
   public Trmcar name(String name) {
@@ -352,10 +388,10 @@ public class Trmcar   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -370,10 +406,10 @@ public class Trmcar   {
   }
 
    /**
-   * Tovární značka [persistentní položka]
+   * tovární značka [persistentní položka]
    * @return brand
   **/
-  @ApiModelProperty(example = "null", value = "Tovární značka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "tovární značka [persistentní položka]")
   public String getBrand() {
     return brand;
   }
@@ -382,148 +418,148 @@ public class Trmcar   {
     this.brand = brand;
   }
 
-  public Trmcar chassisNr(String chassisNr) {
-    this.chassisNr = chassisNr;
+  public Trmcar chassisnr(String chassisnr) {
+    this.chassisnr = chassisnr;
     return this;
   }
 
    /**
-   * VIN [persistentní položka]
-   * @return chassisNr
+   * vin [persistentní položka]
+   * @return chassisnr
   **/
-  @ApiModelProperty(example = "null", value = "VIN [persistentní položka]")
-  public String getChassisNr() {
-    return chassisNr;
+  @ApiModelProperty(example = "null", value = "vin [persistentní položka]")
+  public String getChassisnr() {
+    return chassisnr;
   }
 
-  public void setChassisNr(String chassisNr) {
-    this.chassisNr = chassisNr;
+  public void setChassisnr(String chassisnr) {
+    this.chassisnr = chassisnr;
   }
 
-  public Trmcar engineType(String engineType) {
-    this.engineType = engineType;
+  public Trmcar enginetype(String enginetype) {
+    this.enginetype = enginetype;
     return this;
   }
 
    /**
-   * Typ motoru [persistentní položka]
-   * @return engineType
+   * typ motoru [persistentní položka]
+   * @return enginetype
   **/
-  @ApiModelProperty(example = "null", value = "Typ motoru [persistentní položka]")
-  public String getEngineType() {
-    return engineType;
+  @ApiModelProperty(example = "null", value = "typ motoru [persistentní položka]")
+  public String getEnginetype() {
+    return enginetype;
   }
 
-  public void setEngineType(String engineType) {
-    this.engineType = engineType;
+  public void setEnginetype(String enginetype) {
+    this.enginetype = enginetype;
   }
 
-  public Trmcar engineNr(String engineNr) {
-    this.engineNr = engineNr;
+  public Trmcar enginenr(String enginenr) {
+    this.enginenr = enginenr;
     return this;
   }
 
    /**
    * Číslo motoru [persistentní položka]
-   * @return engineNr
+   * @return enginenr
   **/
   @ApiModelProperty(example = "null", value = "Číslo motoru [persistentní položka]")
-  public String getEngineNr() {
-    return engineNr;
+  public String getEnginenr() {
+    return enginenr;
   }
 
-  public void setEngineNr(String engineNr) {
-    this.engineNr = engineNr;
+  public void setEnginenr(String enginenr) {
+    this.enginenr = enginenr;
   }
 
-  public Trmcar logBook(String logBook) {
-    this.logBook = logBook;
+  public Trmcar logbook(String logbook) {
+    this.logbook = logbook;
     return this;
   }
 
    /**
-   * Technický průkaz [persistentní položka]
-   * @return logBook
+   * technický průkaz [persistentní položka]
+   * @return logbook
   **/
-  @ApiModelProperty(example = "null", value = "Technický průkaz [persistentní položka]")
-  public String getLogBook() {
-    return logBook;
+  @ApiModelProperty(example = "null", value = "technický průkaz [persistentní položka]")
+  public String getLogbook() {
+    return logbook;
   }
 
-  public void setLogBook(String logBook) {
-    this.logBook = logBook;
+  public void setLogbook(String logbook) {
+    this.logbook = logbook;
   }
 
-  public Trmcar manufactDATE(DateTime manufactDATE) {
-    this.manufactDATE = manufactDATE;
+  public Trmcar manufactdate(DateTime manufactdate) {
+    this.manufactdate = manufactdate;
     return this;
   }
 
    /**
-   * Datum výroby [persistentní položka]
-   * @return manufactDATE
+   * datum výroby [persistentní položka]
+   * @return manufactdate
   **/
-  @ApiModelProperty(example = "null", value = "Datum výroby [persistentní položka]")
-  public DateTime getManufactDATE() {
-    return manufactDATE;
+  @ApiModelProperty(example = "null", value = "datum výroby [persistentní položka]")
+  public DateTime getManufactdate() {
+    return manufactdate;
   }
 
-  public void setManufactDATE(DateTime manufactDATE) {
-    this.manufactDATE = manufactDATE;
+  public void setManufactdate(DateTime manufactdate) {
+    this.manufactdate = manufactdate;
   }
 
-  public Trmcar loadDateDATE(DateTime loadDateDATE) {
-    this.loadDateDATE = loadDateDATE;
+  public Trmcar loaddatedate(DateTime loaddatedate) {
+    this.loaddatedate = loaddatedate;
     return this;
   }
 
    /**
-   * Datum pořízení [persistentní položka]
-   * @return loadDateDATE
+   * datum pořízení [persistentní položka]
+   * @return loaddatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum pořízení [persistentní položka]")
-  public DateTime getLoadDateDATE() {
-    return loadDateDATE;
+  @ApiModelProperty(example = "null", value = "datum pořízení [persistentní položka]")
+  public DateTime getLoaddatedate() {
+    return loaddatedate;
   }
 
-  public void setLoadDateDATE(DateTime loadDateDATE) {
-    this.loadDateDATE = loadDateDATE;
+  public void setLoaddatedate(DateTime loaddatedate) {
+    this.loaddatedate = loaddatedate;
   }
 
-  public Trmcar deletionDATE(DateTime deletionDATE) {
-    this.deletionDATE = deletionDATE;
+  public Trmcar deletiondate(DateTime deletiondate) {
+    this.deletiondate = deletiondate;
     return this;
   }
 
    /**
-   * Vyřazení z provozu [persistentní položka]
-   * @return deletionDATE
+   * vyřazení z provozu [persistentní položka]
+   * @return deletiondate
   **/
-  @ApiModelProperty(example = "null", value = "Vyřazení z provozu [persistentní položka]")
-  public DateTime getDeletionDATE() {
-    return deletionDATE;
+  @ApiModelProperty(example = "null", value = "vyřazení z provozu [persistentní položka]")
+  public DateTime getDeletiondate() {
+    return deletiondate;
   }
 
-  public void setDeletionDATE(DateTime deletionDATE) {
-    this.deletionDATE = deletionDATE;
+  public void setDeletiondate(DateTime deletiondate) {
+    this.deletiondate = deletiondate;
   }
 
-  public Trmcar onDeletionTax(Integer onDeletionTax) {
-    this.onDeletionTax = onDeletionTax;
+  public Trmcar ondeletiontax(Integer ondeletiontax) {
+    this.ondeletiontax = ondeletiontax;
     return this;
   }
 
    /**
-   * Silniční daň za měsíc vyřazení [persistentní položka]
-   * @return onDeletionTax
+   * silniční daň za měsíc vyřazení [persistentní položka]
+   * @return ondeletiontax
   **/
-  @ApiModelProperty(example = "null", value = "Silniční daň za měsíc vyřazení [persistentní položka]")
-  public Integer getOnDeletionTax() {
-    return onDeletionTax;
+  @ApiModelProperty(example = "null", value = "silniční daň za měsíc vyřazení [persistentní položka]")
+  public Integer getOndeletiontax() {
+    return ondeletiontax;
   }
 
-  public void setOnDeletionTax(Integer onDeletionTax) {
-    this.onDeletionTax = onDeletionTax;
+  public void setOndeletiontax(Integer ondeletiontax) {
+    this.ondeletiontax = ondeletiontax;
   }
 
   public Trmcar price(Double price) {
@@ -532,10 +568,10 @@ public class Trmcar   {
   }
 
    /**
-   * Cena [persistentní položka]
+   * cena [persistentní položka]
    * @return price
   **/
-  @ApiModelProperty(example = "null", value = "Cena [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "cena [persistentní položka]")
   public Double getPrice() {
     return price;
   }
@@ -544,238 +580,238 @@ public class Trmcar   {
     this.price = price;
   }
 
-  public Trmcar totalKm(Double totalKm) {
-    this.totalKm = totalKm;
+  public Trmcar totalkm(Double totalkm) {
+    this.totalkm = totalkm;
     return this;
   }
 
    /**
-   * Počáteční stav tachometru (km) [persistentní položka]
-   * @return totalKm
+   * počáteční stav tachometru (km) [persistentní položka]
+   * @return totalkm
   **/
-  @ApiModelProperty(example = "null", value = "Počáteční stav tachometru (km) [persistentní položka]")
-  public Double getTotalKm() {
-    return totalKm;
+  @ApiModelProperty(example = "null", value = "počáteční stav tachometru (km) [persistentní položka]")
+  public Double getTotalkm() {
+    return totalkm;
   }
 
-  public void setTotalKm(Double totalKm) {
-    this.totalKm = totalKm;
+  public void setTotalkm(Double totalkm) {
+    this.totalkm = totalkm;
   }
 
-  public Trmcar totalFuel(Double totalFuel) {
-    this.totalFuel = totalFuel;
+  public Trmcar totalfuel(Double totalfuel) {
+    this.totalfuel = totalfuel;
     return this;
   }
 
    /**
-   * Počáteční stav nádrže (l) [persistentní položka]
-   * @return totalFuel
+   * počáteční stav nádrže (l) [persistentní položka]
+   * @return totalfuel
   **/
-  @ApiModelProperty(example = "null", value = "Počáteční stav nádrže (l) [persistentní položka]")
-  public Double getTotalFuel() {
-    return totalFuel;
+  @ApiModelProperty(example = "null", value = "počáteční stav nádrže (l) [persistentní položka]")
+  public Double getTotalfuel() {
+    return totalfuel;
   }
 
-  public void setTotalFuel(Double totalFuel) {
-    this.totalFuel = totalFuel;
+  public void setTotalfuel(Double totalfuel) {
+    this.totalfuel = totalfuel;
   }
 
-  public Trmcar techCertDATE(DateTime techCertDATE) {
-    this.techCertDATE = techCertDATE;
+  public Trmcar techcertdate(DateTime techcertdate) {
+    this.techcertdate = techcertdate;
     return this;
   }
 
    /**
-   * Platnost TK do [persistentní položka]
-   * @return techCertDATE
+   * platnost tk do [persistentní položka]
+   * @return techcertdate
   **/
-  @ApiModelProperty(example = "null", value = "Platnost TK do [persistentní položka]")
-  public DateTime getTechCertDATE() {
-    return techCertDATE;
+  @ApiModelProperty(example = "null", value = "platnost tk do [persistentní položka]")
+  public DateTime getTechcertdate() {
+    return techcertdate;
   }
 
-  public void setTechCertDATE(DateTime techCertDATE) {
-    this.techCertDATE = techCertDATE;
+  public void setTechcertdate(DateTime techcertdate) {
+    this.techcertdate = techcertdate;
   }
 
-  public Trmcar emissionCertDATE(DateTime emissionCertDATE) {
-    this.emissionCertDATE = emissionCertDATE;
+  public Trmcar emissioncertdate(DateTime emissioncertdate) {
+    this.emissioncertdate = emissioncertdate;
     return this;
   }
 
    /**
-   * Platnost ME do [persistentní položka]
-   * @return emissionCertDATE
+   * platnost me do [persistentní položka]
+   * @return emissioncertdate
   **/
-  @ApiModelProperty(example = "null", value = "Platnost ME do [persistentní položka]")
-  public DateTime getEmissionCertDATE() {
-    return emissionCertDATE;
+  @ApiModelProperty(example = "null", value = "platnost me do [persistentní položka]")
+  public DateTime getEmissioncertdate() {
+    return emissioncertdate;
   }
 
-  public void setEmissionCertDATE(DateTime emissionCertDATE) {
-    this.emissionCertDATE = emissionCertDATE;
+  public void setEmissioncertdate(DateTime emissioncertdate) {
+    this.emissioncertdate = emissioncertdate;
   }
 
-  public Trmcar roadTaxPercentReduction(Integer roadTaxPercentReduction) {
-    this.roadTaxPercentReduction = roadTaxPercentReduction;
+  public Trmcar roadtaxpercentreduction(Integer roadtaxpercentreduction) {
+    this.roadtaxpercentreduction = roadtaxpercentreduction;
     return this;
   }
 
    /**
-   * Procento silniční daně [persistentní položka]
-   * @return roadTaxPercentReduction
+   * procento silniční daně [persistentní položka]
+   * @return roadtaxpercentreduction
   **/
-  @ApiModelProperty(example = "null", value = "Procento silniční daně [persistentní položka]")
-  public Integer getRoadTaxPercentReduction() {
-    return roadTaxPercentReduction;
+  @ApiModelProperty(example = "null", value = "procento silniční daně [persistentní položka]")
+  public Integer getRoadtaxpercentreduction() {
+    return roadtaxpercentreduction;
   }
 
-  public void setRoadTaxPercentReduction(Integer roadTaxPercentReduction) {
-    this.roadTaxPercentReduction = roadTaxPercentReduction;
+  public void setRoadtaxpercentreduction(Integer roadtaxpercentreduction) {
+    this.roadtaxpercentreduction = roadtaxpercentreduction;
   }
 
-  public Trmcar lawInsurance(Double lawInsurance) {
-    this.lawInsurance = lawInsurance;
+  public Trmcar lawinsurance(Double lawinsurance) {
+    this.lawinsurance = lawinsurance;
     return this;
   }
 
    /**
-   * Povinné ručení [persistentní položka]
-   * @return lawInsurance
+   * povinné ručení [persistentní položka]
+   * @return lawinsurance
   **/
-  @ApiModelProperty(example = "null", value = "Povinné ručení [persistentní položka]")
-  public Double getLawInsurance() {
-    return lawInsurance;
+  @ApiModelProperty(example = "null", value = "povinné ručení [persistentní položka]")
+  public Double getLawinsurance() {
+    return lawinsurance;
   }
 
-  public void setLawInsurance(Double lawInsurance) {
-    this.lawInsurance = lawInsurance;
+  public void setLawinsurance(Double lawinsurance) {
+    this.lawinsurance = lawinsurance;
   }
 
-  public Trmcar crashInsurance(Double crashInsurance) {
-    this.crashInsurance = crashInsurance;
+  public Trmcar crashinsurance(Double crashinsurance) {
+    this.crashinsurance = crashinsurance;
     return this;
   }
 
    /**
-   * Havarijní pojištění [persistentní položka]
-   * @return crashInsurance
+   * havarijní pojištění [persistentní položka]
+   * @return crashinsurance
   **/
-  @ApiModelProperty(example = "null", value = "Havarijní pojištění [persistentní položka]")
-  public Double getCrashInsurance() {
-    return crashInsurance;
+  @ApiModelProperty(example = "null", value = "havarijní pojištění [persistentní položka]")
+  public Double getCrashinsurance() {
+    return crashinsurance;
   }
 
-  public void setCrashInsurance(Double crashInsurance) {
-    this.crashInsurance = crashInsurance;
+  public void setCrashinsurance(Double crashinsurance) {
+    this.crashinsurance = crashinsurance;
   }
 
-  public Trmcar tRMDriver1ID(String tRMDriver1ID) {
-    this.tRMDriver1ID = tRMDriver1ID;
+  public Trmcar trmdriver1Id(String trmdriver1Id) {
+    this.trmdriver1Id = trmdriver1Id;
     return this;
   }
 
    /**
-   * Řidič1; ID objektu Řidič [persistentní položka]
-   * @return tRMDriver1ID
+   * Řidič1; id objektu Řidič [persistentní položka]
+   * @return trmdriver1Id
   **/
-  @ApiModelProperty(example = "null", value = "Řidič1; ID objektu Řidič [persistentní položka]")
-  public String getTRMDriver1ID() {
-    return tRMDriver1ID;
+  @ApiModelProperty(example = "null", value = "Řidič1; id objektu Řidič [persistentní položka]")
+  public String getTrmdriver1Id() {
+    return trmdriver1Id;
   }
 
-  public void setTRMDriver1ID(String tRMDriver1ID) {
-    this.tRMDriver1ID = tRMDriver1ID;
+  public void setTrmdriver1Id(String trmdriver1Id) {
+    this.trmdriver1Id = trmdriver1Id;
   }
 
-  public Trmcar tRMDriver2ID(String tRMDriver2ID) {
-    this.tRMDriver2ID = tRMDriver2ID;
+  public Trmcar trmdriver2Id(String trmdriver2Id) {
+    this.trmdriver2Id = trmdriver2Id;
     return this;
   }
 
    /**
-   * Řidič2; ID objektu Řidič [persistentní položka]
-   * @return tRMDriver2ID
+   * Řidič2; id objektu Řidič [persistentní položka]
+   * @return trmdriver2Id
   **/
-  @ApiModelProperty(example = "null", value = "Řidič2; ID objektu Řidič [persistentní položka]")
-  public String getTRMDriver2ID() {
-    return tRMDriver2ID;
+  @ApiModelProperty(example = "null", value = "Řidič2; id objektu Řidič [persistentní položka]")
+  public String getTrmdriver2Id() {
+    return trmdriver2Id;
   }
 
-  public void setTRMDriver2ID(String tRMDriver2ID) {
-    this.tRMDriver2ID = tRMDriver2ID;
+  public void setTrmdriver2Id(String trmdriver2Id) {
+    this.trmdriver2Id = trmdriver2Id;
   }
 
-  public Trmcar highwayMark(Boolean highwayMark) {
-    this.highwayMark = highwayMark;
+  public Trmcar highwaymark(Boolean highwaymark) {
+    this.highwaymark = highwaymark;
     return this;
   }
 
    /**
-   * Dálniční známka [persistentní položka]
-   * @return highwayMark
+   * dálniční známka [persistentní položka]
+   * @return highwaymark
   **/
-  @ApiModelProperty(example = "null", value = "Dálniční známka [persistentní položka]")
-  public Boolean getHighwayMark() {
-    return highwayMark;
+  @ApiModelProperty(example = "null", value = "dálniční známka [persistentní položka]")
+  public Boolean getHighwaymark() {
+    return highwaymark;
   }
 
-  public void setHighwayMark(Boolean highwayMark) {
-    this.highwayMark = highwayMark;
+  public void setHighwaymark(Boolean highwaymark) {
+    this.highwaymark = highwaymark;
   }
 
-  public Trmcar ecoCalcExcl(Boolean ecoCalcExcl) {
-    this.ecoCalcExcl = ecoCalcExcl;
+  public Trmcar ecocalcexcl(Boolean ecocalcexcl) {
+    this.ecocalcexcl = ecocalcexcl;
     return this;
   }
 
    /**
-   * Vyloučení z tisku HL [persistentní položka]
-   * @return ecoCalcExcl
+   * vyloučení z tisku hl [persistentní položka]
+   * @return ecocalcexcl
   **/
-  @ApiModelProperty(example = "null", value = "Vyloučení z tisku HL [persistentní položka]")
-  public Boolean getEcoCalcExcl() {
-    return ecoCalcExcl;
+  @ApiModelProperty(example = "null", value = "vyloučení z tisku hl [persistentní položka]")
+  public Boolean getEcocalcexcl() {
+    return ecocalcexcl;
   }
 
-  public void setEcoCalcExcl(Boolean ecoCalcExcl) {
-    this.ecoCalcExcl = ecoCalcExcl;
+  public void setEcocalcexcl(Boolean ecocalcexcl) {
+    this.ecocalcexcl = ecocalcexcl;
   }
 
-  public Trmcar fuelNormByLogBook(Double fuelNormByLogBook) {
-    this.fuelNormByLogBook = fuelNormByLogBook;
+  public Trmcar fuelnormbylogbook(Double fuelnormbylogbook) {
+    this.fuelnormbylogbook = fuelnormbylogbook;
     return this;
   }
 
    /**
-   * Spotřeba PHM dle OTP [persistentní položka]
-   * @return fuelNormByLogBook
+   * spotřeba phm dle otp [persistentní položka]
+   * @return fuelnormbylogbook
   **/
-  @ApiModelProperty(example = "null", value = "Spotřeba PHM dle OTP [persistentní položka]")
-  public Double getFuelNormByLogBook() {
-    return fuelNormByLogBook;
+  @ApiModelProperty(example = "null", value = "spotřeba phm dle otp [persistentní položka]")
+  public Double getFuelnormbylogbook() {
+    return fuelnormbylogbook;
   }
 
-  public void setFuelNormByLogBook(Double fuelNormByLogBook) {
-    this.fuelNormByLogBook = fuelNormByLogBook;
+  public void setFuelnormbylogbook(Double fuelnormbylogbook) {
+    this.fuelnormbylogbook = fuelnormbylogbook;
   }
 
-  public Trmcar fuelNormByCarTypeNorm(Boolean fuelNormByCarTypeNorm) {
-    this.fuelNormByCarTypeNorm = fuelNormByCarTypeNorm;
+  public Trmcar fuelnormbycartypenorm(Boolean fuelnormbycartypenorm) {
+    this.fuelnormbycartypenorm = fuelnormbycartypenorm;
     return this;
   }
 
    /**
-   * Spotřebu PHM převzít z norem na Typu vozidla [persistentní položka]
-   * @return fuelNormByCarTypeNorm
+   * spotřebu phm převzít z norem na typu vozidla [persistentní položka]
+   * @return fuelnormbycartypenorm
   **/
-  @ApiModelProperty(example = "null", value = "Spotřebu PHM převzít z norem na Typu vozidla [persistentní položka]")
-  public Boolean getFuelNormByCarTypeNorm() {
-    return fuelNormByCarTypeNorm;
+  @ApiModelProperty(example = "null", value = "spotřebu phm převzít z norem na typu vozidla [persistentní položka]")
+  public Boolean getFuelnormbycartypenorm() {
+    return fuelnormbycartypenorm;
   }
 
-  public void setFuelNormByCarTypeNorm(Boolean fuelNormByCarTypeNorm) {
-    this.fuelNormByCarTypeNorm = fuelNormByCarTypeNorm;
+  public void setFuelnormbycartypenorm(Boolean fuelnormbycartypenorm) {
+    this.fuelnormbycartypenorm = fuelnormbycartypenorm;
   }
 
   public Trmcar note(String note) {
@@ -784,10 +820,10 @@ public class Trmcar   {
   }
 
    /**
-   * Poznámka [persistentní položka]
+   * poznámka [persistentní položka]
    * @return note
   **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
   public String getNote() {
     return note;
   }
@@ -796,112 +832,112 @@ public class Trmcar   {
     this.note = note;
   }
 
-  public Trmcar tachoByFueling(Boolean tachoByFueling) {
-    this.tachoByFueling = tachoByFueling;
+  public Trmcar tachobyfueling(Boolean tachobyfueling) {
+    this.tachobyfueling = tachobyfueling;
     return this;
   }
 
    /**
-   * Vyžadovat stav tachometru při čerpání PHM [persistentní položka]
-   * @return tachoByFueling
+   * vyžadovat stav tachometru při čerpání phm [persistentní položka]
+   * @return tachobyfueling
   **/
-  @ApiModelProperty(example = "null", value = "Vyžadovat stav tachometru při čerpání PHM [persistentní položka]")
-  public Boolean getTachoByFueling() {
-    return tachoByFueling;
+  @ApiModelProperty(example = "null", value = "vyžadovat stav tachometru při čerpání phm [persistentní položka]")
+  public Boolean getTachobyfueling() {
+    return tachobyfueling;
   }
 
-  public void setTachoByFueling(Boolean tachoByFueling) {
-    this.tachoByFueling = tachoByFueling;
+  public void setTachobyfueling(Boolean tachobyfueling) {
+    this.tachobyfueling = tachobyfueling;
   }
 
-  public Trmcar placeFromDefaultID(String placeFromDefaultID) {
-    this.placeFromDefaultID = placeFromDefaultID;
+  public Trmcar placefromdefaultId(String placefromdefaultId) {
+    this.placefromdefaultId = placefromdefaultId;
     return this;
   }
 
    /**
-   * Výchozí místo jízdy; ID objektu Místa [persistentní položka]
-   * @return placeFromDefaultID
+   * výchozí místo jízdy; id objektu místa [persistentní položka]
+   * @return placefromdefaultId
   **/
-  @ApiModelProperty(example = "null", value = "Výchozí místo jízdy; ID objektu Místa [persistentní položka]")
-  public String getPlaceFromDefaultID() {
-    return placeFromDefaultID;
+  @ApiModelProperty(example = "null", value = "výchozí místo jízdy; id objektu místa [persistentní položka]")
+  public String getPlacefromdefaultId() {
+    return placefromdefaultId;
   }
 
-  public void setPlaceFromDefaultID(String placeFromDefaultID) {
-    this.placeFromDefaultID = placeFromDefaultID;
+  public void setPlacefromdefaultId(String placefromdefaultId) {
+    this.placefromdefaultId = placefromdefaultId;
   }
 
-  public Trmcar serviceDateDATE(DateTime serviceDateDATE) {
-    this.serviceDateDATE = serviceDateDATE;
+  public Trmcar servicedatedate(DateTime servicedatedate) {
+    this.servicedatedate = servicedatedate;
     return this;
   }
 
    /**
-   * Datum nejbližší servisní prohlídky [persistentní položka]
-   * @return serviceDateDATE
+   * datum nejbližší servisní prohlídky [persistentní položka]
+   * @return servicedatedate
   **/
-  @ApiModelProperty(example = "null", value = "Datum nejbližší servisní prohlídky [persistentní položka]")
-  public DateTime getServiceDateDATE() {
-    return serviceDateDATE;
+  @ApiModelProperty(example = "null", value = "datum nejbližší servisní prohlídky [persistentní položka]")
+  public DateTime getServicedatedate() {
+    return servicedatedate;
   }
 
-  public void setServiceDateDATE(DateTime serviceDateDATE) {
-    this.serviceDateDATE = serviceDateDATE;
+  public void setServicedatedate(DateTime servicedatedate) {
+    this.servicedatedate = servicedatedate;
   }
 
-  public Trmcar serviceByTachoState(Double serviceByTachoState) {
-    this.serviceByTachoState = serviceByTachoState;
+  public Trmcar servicebytachostate(Double servicebytachostate) {
+    this.servicebytachostate = servicebytachostate;
     return this;
   }
 
    /**
-   * Stav tachometru pro nejbližší servisní prohlídku [persistentní položka]
-   * @return serviceByTachoState
+   * stav tachometru pro nejbližší servisní prohlídku [persistentní položka]
+   * @return servicebytachostate
   **/
-  @ApiModelProperty(example = "null", value = "Stav tachometru pro nejbližší servisní prohlídku [persistentní položka]")
-  public Double getServiceByTachoState() {
-    return serviceByTachoState;
+  @ApiModelProperty(example = "null", value = "stav tachometru pro nejbližší servisní prohlídku [persistentní položka]")
+  public Double getServicebytachostate() {
+    return servicebytachostate;
   }
 
-  public void setServiceByTachoState(Double serviceByTachoState) {
-    this.serviceByTachoState = serviceByTachoState;
+  public void setServicebytachostate(Double servicebytachostate) {
+    this.servicebytachostate = servicebytachostate;
   }
 
-  public Trmcar onBusiness(Boolean onBusiness) {
-    this.onBusiness = onBusiness;
+  public Trmcar onbusiness(Boolean onbusiness) {
+    this.onbusiness = onbusiness;
     return this;
   }
 
    /**
-   * Služební
-   * @return onBusiness
+   * služební
+   * @return onbusiness
   **/
-  @ApiModelProperty(example = "null", value = "Služební")
-  public Boolean getOnBusiness() {
-    return onBusiness;
+  @ApiModelProperty(example = "null", value = "služební")
+  public Boolean getOnbusiness() {
+    return onbusiness;
   }
 
-  public void setOnBusiness(Boolean onBusiness) {
-    this.onBusiness = onBusiness;
+  public void setOnbusiness(Boolean onbusiness) {
+    this.onbusiness = onbusiness;
   }
 
-  public Trmcar ownerTypeAsText(String ownerTypeAsText) {
-    this.ownerTypeAsText = ownerTypeAsText;
+  public Trmcar ownertypeastext(String ownertypeastext) {
+    this.ownertypeastext = ownertypeastext;
     return this;
   }
 
    /**
-   * Vztah k firmě
-   * @return ownerTypeAsText
+   * vztah k firmě
+   * @return ownertypeastext
   **/
-  @ApiModelProperty(example = "null", value = "Vztah k firmě")
-  public String getOwnerTypeAsText() {
-    return ownerTypeAsText;
+  @ApiModelProperty(example = "null", value = "vztah k firmě")
+  public String getOwnertypeastext() {
+    return ownertypeastext;
   }
 
-  public void setOwnerTypeAsText(String ownerTypeAsText) {
-    this.ownerTypeAsText = ownerTypeAsText;
+  public void setOwnertypeastext(String ownertypeastext) {
+    this.ownertypeastext = ownertypeastext;
   }
 
 
@@ -914,54 +950,54 @@ public class Trmcar   {
       return false;
     }
     Trmcar trmcar = (Trmcar) o;
-    return Objects.equals(this.displayName, trmcar.displayName) &&
-        Objects.equals(this.ID, trmcar.ID) &&
-        Objects.equals(this.dateOfChange, trmcar.dateOfChange) &&
-        Objects.equals(this.classID, trmcar.classID) &&
-        Objects.equals(this.objVersion, trmcar.objVersion) &&
+    return Objects.equals(this.displayname, trmcar.displayname) &&
+        Objects.equals(this.id, trmcar.id) &&
+        Objects.equals(this.dateofchange, trmcar.dateofchange) &&
+        Objects.equals(this.classid, trmcar.classid) &&
+        Objects.equals(this.objversion, trmcar.objversion) &&
         Objects.equals(this.hidden, trmcar.hidden) &&
-        Objects.equals(this.regPlate, trmcar.regPlate) &&
-        Objects.equals(this.tRMCarID, trmcar.tRMCarID) &&
-        Objects.equals(this.tRMCarTypeID, trmcar.tRMCarTypeID) &&
-        Objects.equals(this.divisionID, trmcar.divisionID) &&
-        Objects.equals(this.ownerType, trmcar.ownerType) &&
-        Objects.equals(this.towedCarID, trmcar.towedCarID) &&
+        Objects.equals(this.regplate, trmcar.regplate) &&
+        Objects.equals(this.trmcarId, trmcar.trmcarId) &&
+        Objects.equals(this.trmcartypeId, trmcar.trmcartypeId) &&
+        Objects.equals(this.divisionId, trmcar.divisionId) &&
+        Objects.equals(this.ownertype, trmcar.ownertype) &&
+        Objects.equals(this.towedcarId, trmcar.towedcarId) &&
         Objects.equals(this.name, trmcar.name) &&
         Objects.equals(this.brand, trmcar.brand) &&
-        Objects.equals(this.chassisNr, trmcar.chassisNr) &&
-        Objects.equals(this.engineType, trmcar.engineType) &&
-        Objects.equals(this.engineNr, trmcar.engineNr) &&
-        Objects.equals(this.logBook, trmcar.logBook) &&
-        Objects.equals(this.manufactDATE, trmcar.manufactDATE) &&
-        Objects.equals(this.loadDateDATE, trmcar.loadDateDATE) &&
-        Objects.equals(this.deletionDATE, trmcar.deletionDATE) &&
-        Objects.equals(this.onDeletionTax, trmcar.onDeletionTax) &&
+        Objects.equals(this.chassisnr, trmcar.chassisnr) &&
+        Objects.equals(this.enginetype, trmcar.enginetype) &&
+        Objects.equals(this.enginenr, trmcar.enginenr) &&
+        Objects.equals(this.logbook, trmcar.logbook) &&
+        Objects.equals(this.manufactdate, trmcar.manufactdate) &&
+        Objects.equals(this.loaddatedate, trmcar.loaddatedate) &&
+        Objects.equals(this.deletiondate, trmcar.deletiondate) &&
+        Objects.equals(this.ondeletiontax, trmcar.ondeletiontax) &&
         Objects.equals(this.price, trmcar.price) &&
-        Objects.equals(this.totalKm, trmcar.totalKm) &&
-        Objects.equals(this.totalFuel, trmcar.totalFuel) &&
-        Objects.equals(this.techCertDATE, trmcar.techCertDATE) &&
-        Objects.equals(this.emissionCertDATE, trmcar.emissionCertDATE) &&
-        Objects.equals(this.roadTaxPercentReduction, trmcar.roadTaxPercentReduction) &&
-        Objects.equals(this.lawInsurance, trmcar.lawInsurance) &&
-        Objects.equals(this.crashInsurance, trmcar.crashInsurance) &&
-        Objects.equals(this.tRMDriver1ID, trmcar.tRMDriver1ID) &&
-        Objects.equals(this.tRMDriver2ID, trmcar.tRMDriver2ID) &&
-        Objects.equals(this.highwayMark, trmcar.highwayMark) &&
-        Objects.equals(this.ecoCalcExcl, trmcar.ecoCalcExcl) &&
-        Objects.equals(this.fuelNormByLogBook, trmcar.fuelNormByLogBook) &&
-        Objects.equals(this.fuelNormByCarTypeNorm, trmcar.fuelNormByCarTypeNorm) &&
+        Objects.equals(this.totalkm, trmcar.totalkm) &&
+        Objects.equals(this.totalfuel, trmcar.totalfuel) &&
+        Objects.equals(this.techcertdate, trmcar.techcertdate) &&
+        Objects.equals(this.emissioncertdate, trmcar.emissioncertdate) &&
+        Objects.equals(this.roadtaxpercentreduction, trmcar.roadtaxpercentreduction) &&
+        Objects.equals(this.lawinsurance, trmcar.lawinsurance) &&
+        Objects.equals(this.crashinsurance, trmcar.crashinsurance) &&
+        Objects.equals(this.trmdriver1Id, trmcar.trmdriver1Id) &&
+        Objects.equals(this.trmdriver2Id, trmcar.trmdriver2Id) &&
+        Objects.equals(this.highwaymark, trmcar.highwaymark) &&
+        Objects.equals(this.ecocalcexcl, trmcar.ecocalcexcl) &&
+        Objects.equals(this.fuelnormbylogbook, trmcar.fuelnormbylogbook) &&
+        Objects.equals(this.fuelnormbycartypenorm, trmcar.fuelnormbycartypenorm) &&
         Objects.equals(this.note, trmcar.note) &&
-        Objects.equals(this.tachoByFueling, trmcar.tachoByFueling) &&
-        Objects.equals(this.placeFromDefaultID, trmcar.placeFromDefaultID) &&
-        Objects.equals(this.serviceDateDATE, trmcar.serviceDateDATE) &&
-        Objects.equals(this.serviceByTachoState, trmcar.serviceByTachoState) &&
-        Objects.equals(this.onBusiness, trmcar.onBusiness) &&
-        Objects.equals(this.ownerTypeAsText, trmcar.ownerTypeAsText);
+        Objects.equals(this.tachobyfueling, trmcar.tachobyfueling) &&
+        Objects.equals(this.placefromdefaultId, trmcar.placefromdefaultId) &&
+        Objects.equals(this.servicedatedate, trmcar.servicedatedate) &&
+        Objects.equals(this.servicebytachostate, trmcar.servicebytachostate) &&
+        Objects.equals(this.onbusiness, trmcar.onbusiness) &&
+        Objects.equals(this.ownertypeastext, trmcar.ownertypeastext);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, dateOfChange, classID, objVersion, hidden, regPlate, tRMCarID, tRMCarTypeID, divisionID, ownerType, towedCarID, name, brand, chassisNr, engineType, engineNr, logBook, manufactDATE, loadDateDATE, deletionDATE, onDeletionTax, price, totalKm, totalFuel, techCertDATE, emissionCertDATE, roadTaxPercentReduction, lawInsurance, crashInsurance, tRMDriver1ID, tRMDriver2ID, highwayMark, ecoCalcExcl, fuelNormByLogBook, fuelNormByCarTypeNorm, note, tachoByFueling, placeFromDefaultID, serviceDateDATE, serviceByTachoState, onBusiness, ownerTypeAsText);
+    return Objects.hash(displayname, id, dateofchange, classid, objversion, hidden, regplate, trmcarId, trmcartypeId, divisionId, ownertype, towedcarId, name, brand, chassisnr, enginetype, enginenr, logbook, manufactdate, loaddatedate, deletiondate, ondeletiontax, price, totalkm, totalfuel, techcertdate, emissioncertdate, roadtaxpercentreduction, lawinsurance, crashinsurance, trmdriver1Id, trmdriver2Id, highwaymark, ecocalcexcl, fuelnormbylogbook, fuelnormbycartypenorm, note, tachobyfueling, placefromdefaultId, servicedatedate, servicebytachostate, onbusiness, ownertypeastext);
   }
 
   @Override
@@ -969,49 +1005,49 @@ public class Trmcar   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Trmcar {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    dateOfChange: ").append(toIndentedString(dateOfChange)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    dateofchange: ").append(toIndentedString(dateofchange)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
-    sb.append("    regPlate: ").append(toIndentedString(regPlate)).append("\n");
-    sb.append("    tRMCarID: ").append(toIndentedString(tRMCarID)).append("\n");
-    sb.append("    tRMCarTypeID: ").append(toIndentedString(tRMCarTypeID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    ownerType: ").append(toIndentedString(ownerType)).append("\n");
-    sb.append("    towedCarID: ").append(toIndentedString(towedCarID)).append("\n");
+    sb.append("    regplate: ").append(toIndentedString(regplate)).append("\n");
+    sb.append("    trmcarId: ").append(toIndentedString(trmcarId)).append("\n");
+    sb.append("    trmcartypeId: ").append(toIndentedString(trmcartypeId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    ownertype: ").append(toIndentedString(ownertype)).append("\n");
+    sb.append("    towedcarId: ").append(toIndentedString(towedcarId)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    brand: ").append(toIndentedString(brand)).append("\n");
-    sb.append("    chassisNr: ").append(toIndentedString(chassisNr)).append("\n");
-    sb.append("    engineType: ").append(toIndentedString(engineType)).append("\n");
-    sb.append("    engineNr: ").append(toIndentedString(engineNr)).append("\n");
-    sb.append("    logBook: ").append(toIndentedString(logBook)).append("\n");
-    sb.append("    manufactDATE: ").append(toIndentedString(manufactDATE)).append("\n");
-    sb.append("    loadDateDATE: ").append(toIndentedString(loadDateDATE)).append("\n");
-    sb.append("    deletionDATE: ").append(toIndentedString(deletionDATE)).append("\n");
-    sb.append("    onDeletionTax: ").append(toIndentedString(onDeletionTax)).append("\n");
+    sb.append("    chassisnr: ").append(toIndentedString(chassisnr)).append("\n");
+    sb.append("    enginetype: ").append(toIndentedString(enginetype)).append("\n");
+    sb.append("    enginenr: ").append(toIndentedString(enginenr)).append("\n");
+    sb.append("    logbook: ").append(toIndentedString(logbook)).append("\n");
+    sb.append("    manufactdate: ").append(toIndentedString(manufactdate)).append("\n");
+    sb.append("    loaddatedate: ").append(toIndentedString(loaddatedate)).append("\n");
+    sb.append("    deletiondate: ").append(toIndentedString(deletiondate)).append("\n");
+    sb.append("    ondeletiontax: ").append(toIndentedString(ondeletiontax)).append("\n");
     sb.append("    price: ").append(toIndentedString(price)).append("\n");
-    sb.append("    totalKm: ").append(toIndentedString(totalKm)).append("\n");
-    sb.append("    totalFuel: ").append(toIndentedString(totalFuel)).append("\n");
-    sb.append("    techCertDATE: ").append(toIndentedString(techCertDATE)).append("\n");
-    sb.append("    emissionCertDATE: ").append(toIndentedString(emissionCertDATE)).append("\n");
-    sb.append("    roadTaxPercentReduction: ").append(toIndentedString(roadTaxPercentReduction)).append("\n");
-    sb.append("    lawInsurance: ").append(toIndentedString(lawInsurance)).append("\n");
-    sb.append("    crashInsurance: ").append(toIndentedString(crashInsurance)).append("\n");
-    sb.append("    tRMDriver1ID: ").append(toIndentedString(tRMDriver1ID)).append("\n");
-    sb.append("    tRMDriver2ID: ").append(toIndentedString(tRMDriver2ID)).append("\n");
-    sb.append("    highwayMark: ").append(toIndentedString(highwayMark)).append("\n");
-    sb.append("    ecoCalcExcl: ").append(toIndentedString(ecoCalcExcl)).append("\n");
-    sb.append("    fuelNormByLogBook: ").append(toIndentedString(fuelNormByLogBook)).append("\n");
-    sb.append("    fuelNormByCarTypeNorm: ").append(toIndentedString(fuelNormByCarTypeNorm)).append("\n");
+    sb.append("    totalkm: ").append(toIndentedString(totalkm)).append("\n");
+    sb.append("    totalfuel: ").append(toIndentedString(totalfuel)).append("\n");
+    sb.append("    techcertdate: ").append(toIndentedString(techcertdate)).append("\n");
+    sb.append("    emissioncertdate: ").append(toIndentedString(emissioncertdate)).append("\n");
+    sb.append("    roadtaxpercentreduction: ").append(toIndentedString(roadtaxpercentreduction)).append("\n");
+    sb.append("    lawinsurance: ").append(toIndentedString(lawinsurance)).append("\n");
+    sb.append("    crashinsurance: ").append(toIndentedString(crashinsurance)).append("\n");
+    sb.append("    trmdriver1Id: ").append(toIndentedString(trmdriver1Id)).append("\n");
+    sb.append("    trmdriver2Id: ").append(toIndentedString(trmdriver2Id)).append("\n");
+    sb.append("    highwaymark: ").append(toIndentedString(highwaymark)).append("\n");
+    sb.append("    ecocalcexcl: ").append(toIndentedString(ecocalcexcl)).append("\n");
+    sb.append("    fuelnormbylogbook: ").append(toIndentedString(fuelnormbylogbook)).append("\n");
+    sb.append("    fuelnormbycartypenorm: ").append(toIndentedString(fuelnormbycartypenorm)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
-    sb.append("    tachoByFueling: ").append(toIndentedString(tachoByFueling)).append("\n");
-    sb.append("    placeFromDefaultID: ").append(toIndentedString(placeFromDefaultID)).append("\n");
-    sb.append("    serviceDateDATE: ").append(toIndentedString(serviceDateDATE)).append("\n");
-    sb.append("    serviceByTachoState: ").append(toIndentedString(serviceByTachoState)).append("\n");
-    sb.append("    onBusiness: ").append(toIndentedString(onBusiness)).append("\n");
-    sb.append("    ownerTypeAsText: ").append(toIndentedString(ownerTypeAsText)).append("\n");
+    sb.append("    tachobyfueling: ").append(toIndentedString(tachobyfueling)).append("\n");
+    sb.append("    placefromdefaultId: ").append(toIndentedString(placefromdefaultId)).append("\n");
+    sb.append("    servicedatedate: ").append(toIndentedString(servicedatedate)).append("\n");
+    sb.append("    servicebytachostate: ").append(toIndentedString(servicebytachostate)).append("\n");
+    sb.append("    onbusiness: ").append(toIndentedString(onbusiness)).append("\n");
+    sb.append("    ownertypeastext: ").append(toIndentedString(ownertypeastext)).append("\n");
     sb.append("}");
     return sb.toString();
   }

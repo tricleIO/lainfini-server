@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,105 +34,141 @@ import java.util.Objects;
 /**
  * Wlentrytype
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Wlentrytype   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("BaseType")
-  private Integer baseType = null;
+  @SerializedName("basetype")
+  private Integer basetype = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("UnitCode")
-  private String unitCode = null;
+  @SerializedName("unitcode")
+  private String unitcode = null;
 
-  @SerializedName("DisplayButton")
-  private Boolean displayButton = null;
+  @SerializedName("displaybutton")
+  private Boolean displaybutton = null;
 
-  @SerializedName("BaseTypeAsText")
-  private String baseTypeAsText = null;
+  @SerializedName("basetypeastext")
+  private String basetypeastext = null;
 
-  @SerializedName("Color")
+  @SerializedName("color")
   private Integer color = null;
 
-  @SerializedName("CalculateSurchargeFeastHours")
-  private Boolean calculateSurchargeFeastHours = null;
+  @SerializedName("calculatesurchargefeasthours")
+  private Boolean calculatesurchargefeasthours = null;
 
-  @SerializedName("CalculateSurchargeNightHours")
-  private Boolean calculateSurchargeNightHours = null;
+  @SerializedName("calculatesurchargenighthours")
+  private Boolean calculatesurchargenighthours = null;
 
-  @SerializedName("CalculateSurchargeEnvHours")
-  private Boolean calculateSurchargeEnvHours = null;
+  @SerializedName("calculatesurchargeenvhours")
+  private Boolean calculatesurchargeenvhours = null;
 
-  @SerializedName("CalculateSurchargeWEndHours")
-  private Boolean calculateSurchargeWEndHours = null;
+  @SerializedName("calculatesurchargewendhours")
+  private Boolean calculatesurchargewendhours = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-  public Wlentrytype baseType(Integer baseType) {
-    this.baseType = baseType;
+  public Wlentrytype displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Základní typ [persistentní položka]
-   * @return baseType
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Základní typ [persistentní položka]")
-  public Integer getBaseType() {
-    return baseType;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setBaseType(Integer baseType) {
-    this.baseType = baseType;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Wlentrytype id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Wlentrytype classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Wlentrytype objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Wlentrytype basetype(Integer basetype) {
+    this.basetype = basetype;
+    return this;
+  }
+
+   /**
+   * základní typ [persistentní položka]
+   * @return basetype
+  **/
+  @ApiModelProperty(example = "null", value = "základní typ [persistentní položka]")
+  public Integer getBasetype() {
+    return basetype;
+  }
+
+  public void setBasetype(Integer basetype) {
+    this.basetype = basetype;
   }
 
   public Wlentrytype code(String code) {
@@ -141,10 +177,10 @@ public class Wlentrytype   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -159,10 +195,10 @@ public class Wlentrytype   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -171,58 +207,58 @@ public class Wlentrytype   {
     this.name = name;
   }
 
-  public Wlentrytype unitCode(String unitCode) {
-    this.unitCode = unitCode;
+  public Wlentrytype unitcode(String unitcode) {
+    this.unitcode = unitcode;
     return this;
   }
 
    /**
-   * Jednotka [persistentní položka]
-   * @return unitCode
+   * jednotka [persistentní položka]
+   * @return unitcode
   **/
-  @ApiModelProperty(example = "null", value = "Jednotka [persistentní položka]")
-  public String getUnitCode() {
-    return unitCode;
+  @ApiModelProperty(example = "null", value = "jednotka [persistentní položka]")
+  public String getUnitcode() {
+    return unitcode;
   }
 
-  public void setUnitCode(String unitCode) {
-    this.unitCode = unitCode;
+  public void setUnitcode(String unitcode) {
+    this.unitcode = unitcode;
   }
 
-  public Wlentrytype displayButton(Boolean displayButton) {
-    this.displayButton = displayButton;
+  public Wlentrytype displaybutton(Boolean displaybutton) {
+    this.displaybutton = displaybutton;
     return this;
   }
 
    /**
-   * Zobrazovat tlačítko rychlého zadání [persistentní položka]
-   * @return displayButton
+   * zobrazovat tlačítko rychlého zadání [persistentní položka]
+   * @return displaybutton
   **/
-  @ApiModelProperty(example = "null", value = "Zobrazovat tlačítko rychlého zadání [persistentní položka]")
-  public Boolean getDisplayButton() {
-    return displayButton;
+  @ApiModelProperty(example = "null", value = "zobrazovat tlačítko rychlého zadání [persistentní položka]")
+  public Boolean getDisplaybutton() {
+    return displaybutton;
   }
 
-  public void setDisplayButton(Boolean displayButton) {
-    this.displayButton = displayButton;
+  public void setDisplaybutton(Boolean displaybutton) {
+    this.displaybutton = displaybutton;
   }
 
-  public Wlentrytype baseTypeAsText(String baseTypeAsText) {
-    this.baseTypeAsText = baseTypeAsText;
+  public Wlentrytype basetypeastext(String basetypeastext) {
+    this.basetypeastext = basetypeastext;
     return this;
   }
 
    /**
-   * Základní typ textově
-   * @return baseTypeAsText
+   * základní typ textově
+   * @return basetypeastext
   **/
-  @ApiModelProperty(example = "null", value = "Základní typ textově")
-  public String getBaseTypeAsText() {
-    return baseTypeAsText;
+  @ApiModelProperty(example = "null", value = "základní typ textově")
+  public String getBasetypeastext() {
+    return basetypeastext;
   }
 
-  public void setBaseTypeAsText(String baseTypeAsText) {
-    this.baseTypeAsText = baseTypeAsText;
+  public void setBasetypeastext(String basetypeastext) {
+    this.basetypeastext = basetypeastext;
   }
 
   public Wlentrytype color(Integer color) {
@@ -231,10 +267,10 @@ public class Wlentrytype   {
   }
 
    /**
-   * Barva [persistentní položka]
+   * barva [persistentní položka]
    * @return color
   **/
-  @ApiModelProperty(example = "null", value = "Barva [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "barva [persistentní položka]")
   public Integer getColor() {
     return color;
   }
@@ -243,76 +279,76 @@ public class Wlentrytype   {
     this.color = color;
   }
 
-  public Wlentrytype calculateSurchargeFeastHours(Boolean calculateSurchargeFeastHours) {
-    this.calculateSurchargeFeastHours = calculateSurchargeFeastHours;
+  public Wlentrytype calculatesurchargefeasthours(Boolean calculatesurchargefeasthours) {
+    this.calculatesurchargefeasthours = calculatesurchargefeasthours;
     return this;
   }
 
    /**
-   * Předvyplnit odpr. čas ve svátek [persistentní položka]
-   * @return calculateSurchargeFeastHours
+   * předvyplnit odpr. čas ve svátek [persistentní položka]
+   * @return calculatesurchargefeasthours
   **/
-  @ApiModelProperty(example = "null", value = "Předvyplnit odpr. čas ve svátek [persistentní položka]")
-  public Boolean getCalculateSurchargeFeastHours() {
-    return calculateSurchargeFeastHours;
+  @ApiModelProperty(example = "null", value = "předvyplnit odpr. čas ve svátek [persistentní položka]")
+  public Boolean getCalculatesurchargefeasthours() {
+    return calculatesurchargefeasthours;
   }
 
-  public void setCalculateSurchargeFeastHours(Boolean calculateSurchargeFeastHours) {
-    this.calculateSurchargeFeastHours = calculateSurchargeFeastHours;
+  public void setCalculatesurchargefeasthours(Boolean calculatesurchargefeasthours) {
+    this.calculatesurchargefeasthours = calculatesurchargefeasthours;
   }
 
-  public Wlentrytype calculateSurchargeNightHours(Boolean calculateSurchargeNightHours) {
-    this.calculateSurchargeNightHours = calculateSurchargeNightHours;
+  public Wlentrytype calculatesurchargenighthours(Boolean calculatesurchargenighthours) {
+    this.calculatesurchargenighthours = calculatesurchargenighthours;
     return this;
   }
 
    /**
-   * Předvyplnit odpr. čas v noci [persistentní položka]
-   * @return calculateSurchargeNightHours
+   * předvyplnit odpr. čas v noci [persistentní položka]
+   * @return calculatesurchargenighthours
   **/
-  @ApiModelProperty(example = "null", value = "Předvyplnit odpr. čas v noci [persistentní položka]")
-  public Boolean getCalculateSurchargeNightHours() {
-    return calculateSurchargeNightHours;
+  @ApiModelProperty(example = "null", value = "předvyplnit odpr. čas v noci [persistentní položka]")
+  public Boolean getCalculatesurchargenighthours() {
+    return calculatesurchargenighthours;
   }
 
-  public void setCalculateSurchargeNightHours(Boolean calculateSurchargeNightHours) {
-    this.calculateSurchargeNightHours = calculateSurchargeNightHours;
+  public void setCalculatesurchargenighthours(Boolean calculatesurchargenighthours) {
+    this.calculatesurchargenighthours = calculatesurchargenighthours;
   }
 
-  public Wlentrytype calculateSurchargeEnvHours(Boolean calculateSurchargeEnvHours) {
-    this.calculateSurchargeEnvHours = calculateSurchargeEnvHours;
+  public Wlentrytype calculatesurchargeenvhours(Boolean calculatesurchargeenvhours) {
+    this.calculatesurchargeenvhours = calculatesurchargeenvhours;
     return this;
   }
 
    /**
-   * Předvyplnit odpr. čas ve šk. prostředí [persistentní položka]
-   * @return calculateSurchargeEnvHours
+   * předvyplnit odpr. čas ve šk. prostředí [persistentní položka]
+   * @return calculatesurchargeenvhours
   **/
-  @ApiModelProperty(example = "null", value = "Předvyplnit odpr. čas ve šk. prostředí [persistentní položka]")
-  public Boolean getCalculateSurchargeEnvHours() {
-    return calculateSurchargeEnvHours;
+  @ApiModelProperty(example = "null", value = "předvyplnit odpr. čas ve šk. prostředí [persistentní položka]")
+  public Boolean getCalculatesurchargeenvhours() {
+    return calculatesurchargeenvhours;
   }
 
-  public void setCalculateSurchargeEnvHours(Boolean calculateSurchargeEnvHours) {
-    this.calculateSurchargeEnvHours = calculateSurchargeEnvHours;
+  public void setCalculatesurchargeenvhours(Boolean calculatesurchargeenvhours) {
+    this.calculatesurchargeenvhours = calculatesurchargeenvhours;
   }
 
-  public Wlentrytype calculateSurchargeWEndHours(Boolean calculateSurchargeWEndHours) {
-    this.calculateSurchargeWEndHours = calculateSurchargeWEndHours;
+  public Wlentrytype calculatesurchargewendhours(Boolean calculatesurchargewendhours) {
+    this.calculatesurchargewendhours = calculatesurchargewendhours;
     return this;
   }
 
    /**
-   * Předvyplnit odpr. čas v So/Ne [persistentní položka]
-   * @return calculateSurchargeWEndHours
+   * předvyplnit odpr. čas v so/ne [persistentní položka]
+   * @return calculatesurchargewendhours
   **/
-  @ApiModelProperty(example = "null", value = "Předvyplnit odpr. čas v So/Ne [persistentní položka]")
-  public Boolean getCalculateSurchargeWEndHours() {
-    return calculateSurchargeWEndHours;
+  @ApiModelProperty(example = "null", value = "předvyplnit odpr. čas v so/ne [persistentní položka]")
+  public Boolean getCalculatesurchargewendhours() {
+    return calculatesurchargewendhours;
   }
 
-  public void setCalculateSurchargeWEndHours(Boolean calculateSurchargeWEndHours) {
-    this.calculateSurchargeWEndHours = calculateSurchargeWEndHours;
+  public void setCalculatesurchargewendhours(Boolean calculatesurchargewendhours) {
+    this.calculatesurchargewendhours = calculatesurchargewendhours;
   }
 
 
@@ -325,26 +361,26 @@ public class Wlentrytype   {
       return false;
     }
     Wlentrytype wlentrytype = (Wlentrytype) o;
-    return Objects.equals(this.displayName, wlentrytype.displayName) &&
-        Objects.equals(this.ID, wlentrytype.ID) &&
-        Objects.equals(this.classID, wlentrytype.classID) &&
-        Objects.equals(this.objVersion, wlentrytype.objVersion) &&
-        Objects.equals(this.baseType, wlentrytype.baseType) &&
+    return Objects.equals(this.displayname, wlentrytype.displayname) &&
+        Objects.equals(this.id, wlentrytype.id) &&
+        Objects.equals(this.classid, wlentrytype.classid) &&
+        Objects.equals(this.objversion, wlentrytype.objversion) &&
+        Objects.equals(this.basetype, wlentrytype.basetype) &&
         Objects.equals(this.code, wlentrytype.code) &&
         Objects.equals(this.name, wlentrytype.name) &&
-        Objects.equals(this.unitCode, wlentrytype.unitCode) &&
-        Objects.equals(this.displayButton, wlentrytype.displayButton) &&
-        Objects.equals(this.baseTypeAsText, wlentrytype.baseTypeAsText) &&
+        Objects.equals(this.unitcode, wlentrytype.unitcode) &&
+        Objects.equals(this.displaybutton, wlentrytype.displaybutton) &&
+        Objects.equals(this.basetypeastext, wlentrytype.basetypeastext) &&
         Objects.equals(this.color, wlentrytype.color) &&
-        Objects.equals(this.calculateSurchargeFeastHours, wlentrytype.calculateSurchargeFeastHours) &&
-        Objects.equals(this.calculateSurchargeNightHours, wlentrytype.calculateSurchargeNightHours) &&
-        Objects.equals(this.calculateSurchargeEnvHours, wlentrytype.calculateSurchargeEnvHours) &&
-        Objects.equals(this.calculateSurchargeWEndHours, wlentrytype.calculateSurchargeWEndHours);
+        Objects.equals(this.calculatesurchargefeasthours, wlentrytype.calculatesurchargefeasthours) &&
+        Objects.equals(this.calculatesurchargenighthours, wlentrytype.calculatesurchargenighthours) &&
+        Objects.equals(this.calculatesurchargeenvhours, wlentrytype.calculatesurchargeenvhours) &&
+        Objects.equals(this.calculatesurchargewendhours, wlentrytype.calculatesurchargewendhours);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, baseType, code, name, unitCode, displayButton, baseTypeAsText, color, calculateSurchargeFeastHours, calculateSurchargeNightHours, calculateSurchargeEnvHours, calculateSurchargeWEndHours);
+    return Objects.hash(displayname, id, classid, objversion, basetype, code, name, unitcode, displaybutton, basetypeastext, color, calculatesurchargefeasthours, calculatesurchargenighthours, calculatesurchargeenvhours, calculatesurchargewendhours);
   }
 
   @Override
@@ -352,21 +388,21 @@ public class Wlentrytype   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Wlentrytype {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    baseType: ").append(toIndentedString(baseType)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    basetype: ").append(toIndentedString(basetype)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    unitCode: ").append(toIndentedString(unitCode)).append("\n");
-    sb.append("    displayButton: ").append(toIndentedString(displayButton)).append("\n");
-    sb.append("    baseTypeAsText: ").append(toIndentedString(baseTypeAsText)).append("\n");
+    sb.append("    unitcode: ").append(toIndentedString(unitcode)).append("\n");
+    sb.append("    displaybutton: ").append(toIndentedString(displaybutton)).append("\n");
+    sb.append("    basetypeastext: ").append(toIndentedString(basetypeastext)).append("\n");
     sb.append("    color: ").append(toIndentedString(color)).append("\n");
-    sb.append("    calculateSurchargeFeastHours: ").append(toIndentedString(calculateSurchargeFeastHours)).append("\n");
-    sb.append("    calculateSurchargeNightHours: ").append(toIndentedString(calculateSurchargeNightHours)).append("\n");
-    sb.append("    calculateSurchargeEnvHours: ").append(toIndentedString(calculateSurchargeEnvHours)).append("\n");
-    sb.append("    calculateSurchargeWEndHours: ").append(toIndentedString(calculateSurchargeWEndHours)).append("\n");
+    sb.append("    calculatesurchargefeasthours: ").append(toIndentedString(calculatesurchargefeasthours)).append("\n");
+    sb.append("    calculatesurchargenighthours: ").append(toIndentedString(calculatesurchargenighthours)).append("\n");
+    sb.append("    calculatesurchargeenvhours: ").append(toIndentedString(calculatesurchargeenvhours)).append("\n");
+    sb.append("    calculatesurchargewendhours: ").append(toIndentedString(calculatesurchargewendhours)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -35,231 +35,384 @@ import java.util.Objects;
 /**
  * Docconfirmationrow
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Docconfirmationrow   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("ConfirmationRound")
-  private Integer confirmationRound = null;
+  @SerializedName("confirmationround")
+  private Integer confirmationround = null;
 
-  @SerializedName("RequestCreatedDate$DATE")
-  private DateTime requestCreatedDateDATE = null;
+  @SerializedName("requestcreateddate$date")
+  private DateTime requestcreateddatedate = null;
 
-  @SerializedName("ConfirmatorRole_ID")
-  private String confirmatorRoleID = null;
+  @SerializedName("confirmatorrole_id")
+  private String confirmatorroleId = null;
 
-  @SerializedName("ConfirmatorUser_ID")
-  private String confirmatorUserID = null;
+  @SerializedName("confirmatoruser_id")
+  private String confirmatoruserId = null;
 
-  @SerializedName("ConfirmatorOrder")
-  private Integer confirmatorOrder = null;
+  @SerializedName("confirmatororder")
+  private Integer confirmatororder = null;
 
-  @SerializedName("ConfirmedBy_ID")
-  private String confirmedByID = null;
+  @SerializedName("confirmedby_id")
+  private String confirmedbyId = null;
 
-  @SerializedName("ConfirmationState")
-  private Integer confirmationState = null;
+  @SerializedName("confirmationstate")
+  private Integer confirmationstate = null;
 
-  @SerializedName("LastStateChangeDate$DATE")
-  private DateTime lastStateChangeDateDATE = null;
+  @SerializedName("laststatechangedate$date")
+  private DateTime laststatechangedatedate = null;
 
-  @SerializedName("Note")
+  @SerializedName("note")
   private String note = null;
 
-  @SerializedName("Canceled")
+  @SerializedName("canceled")
   private Boolean canceled = null;
 
-  @SerializedName("CanceledBy_ID")
-  private String canceledByID = null;
+  @SerializedName("canceledby_id")
+  private String canceledbyId = null;
 
-  @SerializedName("CanceledDate$DATE")
-  private DateTime canceledDateDATE = null;
+  @SerializedName("canceleddate$date")
+  private DateTime canceleddatedate = null;
 
-  @SerializedName("ConfirmationStateDesc")
-  private String confirmationStateDesc = null;
+  @SerializedName("confirmationstatedesc")
+  private String confirmationstatedesc = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Schvalování dokladu [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Schvalování dokladu [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-   /**
-   * Kolo schvalování [persistentní položka]
-   * @return confirmationRound
-  **/
-  @ApiModelProperty(example = "null", value = "Kolo schvalování [persistentní položka]")
-  public Integer getConfirmationRound() {
-    return confirmationRound;
-  }
-
-   /**
-   * Vytvořeno [persistentní položka]
-   * @return requestCreatedDateDATE
-  **/
-  @ApiModelProperty(example = "null", value = "Vytvořeno [persistentní položka]")
-  public DateTime getRequestCreatedDateDATE() {
-    return requestCreatedDateDATE;
-  }
-
-   /**
-   * Role schvalovatele; ID objektu Role [persistentní položka]
-   * @return confirmatorRoleID
-  **/
-  @ApiModelProperty(example = "null", value = "Role schvalovatele; ID objektu Role [persistentní položka]")
-  public String getConfirmatorRoleID() {
-    return confirmatorRoleID;
-  }
-
-   /**
-   * Schvalovatel; ID objektu Uživatel [persistentní položka]
-   * @return confirmatorUserID
-  **/
-  @ApiModelProperty(example = "null", value = "Schvalovatel; ID objektu Uživatel [persistentní položka]")
-  public String getConfirmatorUserID() {
-    return confirmatorUserID;
-  }
-
-   /**
-   * Pořadí [persistentní položka]
-   * @return confirmatorOrder
-  **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getConfirmatorOrder() {
-    return confirmatorOrder;
-  }
-
-   /**
-   * Schválil; ID objektu Uživatel [persistentní položka]
-   * @return confirmedByID
-  **/
-  @ApiModelProperty(example = "null", value = "Schválil; ID objektu Uživatel [persistentní položka]")
-  public String getConfirmedByID() {
-    return confirmedByID;
-  }
-
-   /**
-   * Stav schválení [persistentní položka]
-   * @return confirmationState
-  **/
-  @ApiModelProperty(example = "null", value = "Stav schválení [persistentní položka]")
-  public Integer getConfirmationState() {
-    return confirmationState;
-  }
-
-   /**
-   * Posl. změna [persistentní položka]
-   * @return lastStateChangeDateDATE
-  **/
-  @ApiModelProperty(example = "null", value = "Posl. změna [persistentní položka]")
-  public DateTime getLastStateChangeDateDATE() {
-    return lastStateChangeDateDATE;
-  }
-
-   /**
-   * Poznámka [persistentní položka]
-   * @return note
-  **/
-  @ApiModelProperty(example = "null", value = "Poznámka [persistentní položka]")
-  public String getNote() {
-    return note;
-  }
-
-   /**
-   * Storno [persistentní položka]
-   * @return canceled
-  **/
-  @ApiModelProperty(example = "null", value = "Storno [persistentní položka]")
-  public Boolean getCanceled() {
-    return canceled;
-  }
-
-   /**
-   * Stornoval; ID objektu Uživatel [persistentní položka]
-   * @return canceledByID
-  **/
-  @ApiModelProperty(example = "null", value = "Stornoval; ID objektu Uživatel [persistentní položka]")
-  public String getCanceledByID() {
-    return canceledByID;
-  }
-
-   /**
-   * Datum storna [persistentní položka]
-   * @return canceledDateDATE
-  **/
-  @ApiModelProperty(example = "null", value = "Datum storna [persistentní položka]")
-  public DateTime getCanceledDateDATE() {
-    return canceledDateDATE;
-  }
-
-  public Docconfirmationrow confirmationStateDesc(String confirmationStateDesc) {
-    this.confirmationStateDesc = confirmationStateDesc;
+  public Docconfirmationrow displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Popis stavu schválení
-   * @return confirmationStateDesc
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Popis stavu schválení")
-  public String getConfirmationStateDesc() {
-    return confirmationStateDesc;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setConfirmationStateDesc(String confirmationStateDesc) {
-    this.confirmationStateDesc = confirmationStateDesc;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Docconfirmationrow id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Docconfirmationrow classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Docconfirmationrow objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Docconfirmationrow parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu schvalování dokladu [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu schvalování dokladu [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Docconfirmationrow confirmationround(Integer confirmationround) {
+    this.confirmationround = confirmationround;
+    return this;
+  }
+
+   /**
+   * kolo schvalování [persistentní položka]
+   * @return confirmationround
+  **/
+  @ApiModelProperty(example = "null", value = "kolo schvalování [persistentní položka]")
+  public Integer getConfirmationround() {
+    return confirmationround;
+  }
+
+  public void setConfirmationround(Integer confirmationround) {
+    this.confirmationround = confirmationround;
+  }
+
+  public Docconfirmationrow requestcreateddatedate(DateTime requestcreateddatedate) {
+    this.requestcreateddatedate = requestcreateddatedate;
+    return this;
+  }
+
+   /**
+   * vytvořeno [persistentní položka]
+   * @return requestcreateddatedate
+  **/
+  @ApiModelProperty(example = "null", value = "vytvořeno [persistentní položka]")
+  public DateTime getRequestcreateddatedate() {
+    return requestcreateddatedate;
+  }
+
+  public void setRequestcreateddatedate(DateTime requestcreateddatedate) {
+    this.requestcreateddatedate = requestcreateddatedate;
+  }
+
+  public Docconfirmationrow confirmatorroleId(String confirmatorroleId) {
+    this.confirmatorroleId = confirmatorroleId;
+    return this;
+  }
+
+   /**
+   * role schvalovatele; id objektu role [persistentní položka]
+   * @return confirmatorroleId
+  **/
+  @ApiModelProperty(example = "null", value = "role schvalovatele; id objektu role [persistentní položka]")
+  public String getConfirmatorroleId() {
+    return confirmatorroleId;
+  }
+
+  public void setConfirmatorroleId(String confirmatorroleId) {
+    this.confirmatorroleId = confirmatorroleId;
+  }
+
+  public Docconfirmationrow confirmatoruserId(String confirmatoruserId) {
+    this.confirmatoruserId = confirmatoruserId;
+    return this;
+  }
+
+   /**
+   * schvalovatel; id objektu uživatel [persistentní položka]
+   * @return confirmatoruserId
+  **/
+  @ApiModelProperty(example = "null", value = "schvalovatel; id objektu uživatel [persistentní položka]")
+  public String getConfirmatoruserId() {
+    return confirmatoruserId;
+  }
+
+  public void setConfirmatoruserId(String confirmatoruserId) {
+    this.confirmatoruserId = confirmatoruserId;
+  }
+
+  public Docconfirmationrow confirmatororder(Integer confirmatororder) {
+    this.confirmatororder = confirmatororder;
+    return this;
+  }
+
+   /**
+   * pořadí [persistentní položka]
+   * @return confirmatororder
+  **/
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getConfirmatororder() {
+    return confirmatororder;
+  }
+
+  public void setConfirmatororder(Integer confirmatororder) {
+    this.confirmatororder = confirmatororder;
+  }
+
+  public Docconfirmationrow confirmedbyId(String confirmedbyId) {
+    this.confirmedbyId = confirmedbyId;
+    return this;
+  }
+
+   /**
+   * schválil; id objektu uživatel [persistentní položka]
+   * @return confirmedbyId
+  **/
+  @ApiModelProperty(example = "null", value = "schválil; id objektu uživatel [persistentní položka]")
+  public String getConfirmedbyId() {
+    return confirmedbyId;
+  }
+
+  public void setConfirmedbyId(String confirmedbyId) {
+    this.confirmedbyId = confirmedbyId;
+  }
+
+  public Docconfirmationrow confirmationstate(Integer confirmationstate) {
+    this.confirmationstate = confirmationstate;
+    return this;
+  }
+
+   /**
+   * stav schválení [persistentní položka]
+   * @return confirmationstate
+  **/
+  @ApiModelProperty(example = "null", value = "stav schválení [persistentní položka]")
+  public Integer getConfirmationstate() {
+    return confirmationstate;
+  }
+
+  public void setConfirmationstate(Integer confirmationstate) {
+    this.confirmationstate = confirmationstate;
+  }
+
+  public Docconfirmationrow laststatechangedatedate(DateTime laststatechangedatedate) {
+    this.laststatechangedatedate = laststatechangedatedate;
+    return this;
+  }
+
+   /**
+   * posl. změna [persistentní položka]
+   * @return laststatechangedatedate
+  **/
+  @ApiModelProperty(example = "null", value = "posl. změna [persistentní položka]")
+  public DateTime getLaststatechangedatedate() {
+    return laststatechangedatedate;
+  }
+
+  public void setLaststatechangedatedate(DateTime laststatechangedatedate) {
+    this.laststatechangedatedate = laststatechangedatedate;
+  }
+
+  public Docconfirmationrow note(String note) {
+    this.note = note;
+    return this;
+  }
+
+   /**
+   * poznámka [persistentní položka]
+   * @return note
+  **/
+  @ApiModelProperty(example = "null", value = "poznámka [persistentní položka]")
+  public String getNote() {
+    return note;
+  }
+
+  public void setNote(String note) {
+    this.note = note;
+  }
+
+  public Docconfirmationrow canceled(Boolean canceled) {
+    this.canceled = canceled;
+    return this;
+  }
+
+   /**
+   * storno [persistentní položka]
+   * @return canceled
+  **/
+  @ApiModelProperty(example = "null", value = "storno [persistentní položka]")
+  public Boolean getCanceled() {
+    return canceled;
+  }
+
+  public void setCanceled(Boolean canceled) {
+    this.canceled = canceled;
+  }
+
+  public Docconfirmationrow canceledbyId(String canceledbyId) {
+    this.canceledbyId = canceledbyId;
+    return this;
+  }
+
+   /**
+   * stornoval; id objektu uživatel [persistentní položka]
+   * @return canceledbyId
+  **/
+  @ApiModelProperty(example = "null", value = "stornoval; id objektu uživatel [persistentní položka]")
+  public String getCanceledbyId() {
+    return canceledbyId;
+  }
+
+  public void setCanceledbyId(String canceledbyId) {
+    this.canceledbyId = canceledbyId;
+  }
+
+  public Docconfirmationrow canceleddatedate(DateTime canceleddatedate) {
+    this.canceleddatedate = canceleddatedate;
+    return this;
+  }
+
+   /**
+   * datum storna [persistentní položka]
+   * @return canceleddatedate
+  **/
+  @ApiModelProperty(example = "null", value = "datum storna [persistentní položka]")
+  public DateTime getCanceleddatedate() {
+    return canceleddatedate;
+  }
+
+  public void setCanceleddatedate(DateTime canceleddatedate) {
+    this.canceleddatedate = canceleddatedate;
+  }
+
+  public Docconfirmationrow confirmationstatedesc(String confirmationstatedesc) {
+    this.confirmationstatedesc = confirmationstatedesc;
+    return this;
+  }
+
+   /**
+   * popis stavu schválení
+   * @return confirmationstatedesc
+  **/
+  @ApiModelProperty(example = "null", value = "popis stavu schválení")
+  public String getConfirmationstatedesc() {
+    return confirmationstatedesc;
+  }
+
+  public void setConfirmationstatedesc(String confirmationstatedesc) {
+    this.confirmationstatedesc = confirmationstatedesc;
   }
 
 
@@ -272,29 +425,29 @@ public class Docconfirmationrow   {
       return false;
     }
     Docconfirmationrow docconfirmationrow = (Docconfirmationrow) o;
-    return Objects.equals(this.displayName, docconfirmationrow.displayName) &&
-        Objects.equals(this.ID, docconfirmationrow.ID) &&
-        Objects.equals(this.classID, docconfirmationrow.classID) &&
-        Objects.equals(this.objVersion, docconfirmationrow.objVersion) &&
-        Objects.equals(this.parentID, docconfirmationrow.parentID) &&
-        Objects.equals(this.confirmationRound, docconfirmationrow.confirmationRound) &&
-        Objects.equals(this.requestCreatedDateDATE, docconfirmationrow.requestCreatedDateDATE) &&
-        Objects.equals(this.confirmatorRoleID, docconfirmationrow.confirmatorRoleID) &&
-        Objects.equals(this.confirmatorUserID, docconfirmationrow.confirmatorUserID) &&
-        Objects.equals(this.confirmatorOrder, docconfirmationrow.confirmatorOrder) &&
-        Objects.equals(this.confirmedByID, docconfirmationrow.confirmedByID) &&
-        Objects.equals(this.confirmationState, docconfirmationrow.confirmationState) &&
-        Objects.equals(this.lastStateChangeDateDATE, docconfirmationrow.lastStateChangeDateDATE) &&
+    return Objects.equals(this.displayname, docconfirmationrow.displayname) &&
+        Objects.equals(this.id, docconfirmationrow.id) &&
+        Objects.equals(this.classid, docconfirmationrow.classid) &&
+        Objects.equals(this.objversion, docconfirmationrow.objversion) &&
+        Objects.equals(this.parentId, docconfirmationrow.parentId) &&
+        Objects.equals(this.confirmationround, docconfirmationrow.confirmationround) &&
+        Objects.equals(this.requestcreateddatedate, docconfirmationrow.requestcreateddatedate) &&
+        Objects.equals(this.confirmatorroleId, docconfirmationrow.confirmatorroleId) &&
+        Objects.equals(this.confirmatoruserId, docconfirmationrow.confirmatoruserId) &&
+        Objects.equals(this.confirmatororder, docconfirmationrow.confirmatororder) &&
+        Objects.equals(this.confirmedbyId, docconfirmationrow.confirmedbyId) &&
+        Objects.equals(this.confirmationstate, docconfirmationrow.confirmationstate) &&
+        Objects.equals(this.laststatechangedatedate, docconfirmationrow.laststatechangedatedate) &&
         Objects.equals(this.note, docconfirmationrow.note) &&
         Objects.equals(this.canceled, docconfirmationrow.canceled) &&
-        Objects.equals(this.canceledByID, docconfirmationrow.canceledByID) &&
-        Objects.equals(this.canceledDateDATE, docconfirmationrow.canceledDateDATE) &&
-        Objects.equals(this.confirmationStateDesc, docconfirmationrow.confirmationStateDesc);
+        Objects.equals(this.canceledbyId, docconfirmationrow.canceledbyId) &&
+        Objects.equals(this.canceleddatedate, docconfirmationrow.canceleddatedate) &&
+        Objects.equals(this.confirmationstatedesc, docconfirmationrow.confirmationstatedesc);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, confirmationRound, requestCreatedDateDATE, confirmatorRoleID, confirmatorUserID, confirmatorOrder, confirmedByID, confirmationState, lastStateChangeDateDATE, note, canceled, canceledByID, canceledDateDATE, confirmationStateDesc);
+    return Objects.hash(displayname, id, classid, objversion, parentId, confirmationround, requestcreateddatedate, confirmatorroleId, confirmatoruserId, confirmatororder, confirmedbyId, confirmationstate, laststatechangedatedate, note, canceled, canceledbyId, canceleddatedate, confirmationstatedesc);
   }
 
   @Override
@@ -302,24 +455,24 @@ public class Docconfirmationrow   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Docconfirmationrow {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    confirmationRound: ").append(toIndentedString(confirmationRound)).append("\n");
-    sb.append("    requestCreatedDateDATE: ").append(toIndentedString(requestCreatedDateDATE)).append("\n");
-    sb.append("    confirmatorRoleID: ").append(toIndentedString(confirmatorRoleID)).append("\n");
-    sb.append("    confirmatorUserID: ").append(toIndentedString(confirmatorUserID)).append("\n");
-    sb.append("    confirmatorOrder: ").append(toIndentedString(confirmatorOrder)).append("\n");
-    sb.append("    confirmedByID: ").append(toIndentedString(confirmedByID)).append("\n");
-    sb.append("    confirmationState: ").append(toIndentedString(confirmationState)).append("\n");
-    sb.append("    lastStateChangeDateDATE: ").append(toIndentedString(lastStateChangeDateDATE)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    confirmationround: ").append(toIndentedString(confirmationround)).append("\n");
+    sb.append("    requestcreateddatedate: ").append(toIndentedString(requestcreateddatedate)).append("\n");
+    sb.append("    confirmatorroleId: ").append(toIndentedString(confirmatorroleId)).append("\n");
+    sb.append("    confirmatoruserId: ").append(toIndentedString(confirmatoruserId)).append("\n");
+    sb.append("    confirmatororder: ").append(toIndentedString(confirmatororder)).append("\n");
+    sb.append("    confirmedbyId: ").append(toIndentedString(confirmedbyId)).append("\n");
+    sb.append("    confirmationstate: ").append(toIndentedString(confirmationstate)).append("\n");
+    sb.append("    laststatechangedatedate: ").append(toIndentedString(laststatechangedatedate)).append("\n");
     sb.append("    note: ").append(toIndentedString(note)).append("\n");
     sb.append("    canceled: ").append(toIndentedString(canceled)).append("\n");
-    sb.append("    canceledByID: ").append(toIndentedString(canceledByID)).append("\n");
-    sb.append("    canceledDateDATE: ").append(toIndentedString(canceledDateDATE)).append("\n");
-    sb.append("    confirmationStateDesc: ").append(toIndentedString(confirmationStateDesc)).append("\n");
+    sb.append("    canceledbyId: ").append(toIndentedString(canceledbyId)).append("\n");
+    sb.append("    canceleddatedate: ").append(toIndentedString(canceleddatedate)).append("\n");
+    sb.append("    confirmationstatedesc: ").append(toIndentedString(confirmationstatedesc)).append("\n");
     sb.append("}");
     return sb.toString();
   }

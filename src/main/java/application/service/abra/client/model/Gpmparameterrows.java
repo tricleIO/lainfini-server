@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -34,444 +34,489 @@ import java.util.Objects;
 /**
  * Gpmparameterrows
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Gpmparameterrows   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("PosIndex")
-  private Integer posIndex = null;
+  @SerializedName("posindex")
+  private Integer posindex = null;
 
-  @SerializedName("DocQueue_ID")
-  private String docQueueID = null;
+  @SerializedName("docqueue_id")
+  private String docqueueId = null;
 
-  @SerializedName("Division_ID")
-  private String divisionID = null;
+  @SerializedName("division_id")
+  private String divisionId = null;
 
-  @SerializedName("BusOrder_ID")
-  private String busOrderID = null;
+  @SerializedName("busorder_id")
+  private String busorderId = null;
 
-  @SerializedName("BusTransaction_ID")
-  private String busTransactionID = null;
+  @SerializedName("bustransaction_id")
+  private String bustransactionId = null;
 
-  @SerializedName("BusProject_ID")
-  private String busProjectID = null;
+  @SerializedName("busproject_id")
+  private String busprojectId = null;
 
-  @SerializedName("ProductReception_DocQ_ID")
-  private String productReceptionDocQID = null;
+  @SerializedName("productreception_docq_id")
+  private String productreceptionDocqId = null;
 
-  @SerializedName("OutgoingTransfer_DocQ_ID")
-  private String outgoingTransferDocQID = null;
+  @SerializedName("outgoingtransfer_docq_id")
+  private String outgoingtransferDocqId = null;
 
-  @SerializedName("IncomingTransfer_DocQ_ID")
-  private String incomingTransferDocQID = null;
+  @SerializedName("incomingtransfer_docq_id")
+  private String incomingtransferDocqId = null;
 
-  @SerializedName("ProductStore_ID")
-  private String productStoreID = null;
+  @SerializedName("productstore_id")
+  private String productstoreId = null;
 
-  @SerializedName("OperatingStore_ID")
-  private String operatingStoreID = null;
+  @SerializedName("operatingstore_id")
+  private String operatingstoreId = null;
 
-  @SerializedName("Firm_ID")
-  private String firmID = null;
+  @SerializedName("firm_id")
+  private String firmId = null;
 
-  @SerializedName("MaterialDistribution_DocQ_ID")
-  private String materialDistributionDocQID = null;
+  @SerializedName("materialdistribution_docq_id")
+  private String materialdistributionDocqId = null;
 
-  @SerializedName("MaterialStore_ID")
-  private String materialStoreID = null;
+  @SerializedName("materialstore_id")
+  private String materialstoreId = null;
 
-  @SerializedName("Waste_DocQ_ID")
-  private String wasteDocQID = null;
+  @SerializedName("waste_docq_id")
+  private String wasteDocqId = null;
 
-  @SerializedName("Overplus_DocQ_ID")
-  private String overplusDocQID = null;
+  @SerializedName("overplus_docq_id")
+  private String overplusDocqId = null;
 
-  @SerializedName("ProductStoreForOrders")
-  private Boolean productStoreForOrders = null;
+  @SerializedName("productstorefororders")
+  private Boolean productstorefororders = null;
 
-  @SerializedName("OrdersBalanceALStatus")
-  private Integer ordersBalanceALStatus = null;
+  @SerializedName("ordersbalancealstatus")
+  private Integer ordersbalancealstatus = null;
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Nastavení gastrovýroby [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Nastavení gastrovýroby [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Gpmparameterrows posIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public Gpmparameterrows displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Pořadí [persistentní položka]
-   * @return posIndex
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Pořadí [persistentní položka]")
-  public Integer getPosIndex() {
-    return posIndex;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setPosIndex(Integer posIndex) {
-    this.posIndex = posIndex;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
   }
 
-  public Gpmparameterrows docQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public Gpmparameterrows id(String id) {
+    this.id = id;
     return this;
   }
 
    /**
-   * Řada dokladů; ID objektu Řada dokladů [persistentní položka]
-   * @return docQueueID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "Řada dokladů; ID objektu Řada dokladů [persistentní položka]")
-  public String getDocQueueID() {
-    return docQueueID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
   }
 
-  public void setDocQueueID(String docQueueID) {
-    this.docQueueID = docQueueID;
+  public void setId(String id) {
+    this.id = id;
   }
 
-  public Gpmparameterrows divisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public Gpmparameterrows classid(String classid) {
+    this.classid = classid;
     return this;
   }
 
    /**
-   * Středisko; ID objektu Středisko [persistentní položka]
-   * @return divisionID
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Středisko; ID objektu Středisko [persistentní položka]")
-  public String getDivisionID() {
-    return divisionID;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
   }
 
-  public void setDivisionID(String divisionID) {
-    this.divisionID = divisionID;
+  public void setClassid(String classid) {
+    this.classid = classid;
   }
 
-  public Gpmparameterrows busOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public Gpmparameterrows objversion(Integer objversion) {
+    this.objversion = objversion;
     return this;
   }
 
    /**
-   * Zakázka; ID objektu Zakázka [persistentní položka]
-   * @return busOrderID
+   * verze objektu [persistentní položka]
+   * @return objversion
   **/
-  @ApiModelProperty(example = "null", value = "Zakázka; ID objektu Zakázka [persistentní položka]")
-  public String getBusOrderID() {
-    return busOrderID;
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
   }
 
-  public void setBusOrderID(String busOrderID) {
-    this.busOrderID = busOrderID;
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
-  public Gpmparameterrows busTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public Gpmparameterrows parentId(String parentId) {
+    this.parentId = parentId;
     return this;
   }
 
    /**
-   * Obch. případ; ID objektu Obchodní případ [persistentní položka]
-   * @return busTransactionID
+   * vlastník; id objektu nastavení gastrovýroby [persistentní položka]
+   * @return parentId
   **/
-  @ApiModelProperty(example = "null", value = "Obch. případ; ID objektu Obchodní případ [persistentní položka]")
-  public String getBusTransactionID() {
-    return busTransactionID;
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu nastavení gastrovýroby [persistentní položka]")
+  public String getParentId() {
+    return parentId;
   }
 
-  public void setBusTransactionID(String busTransactionID) {
-    this.busTransactionID = busTransactionID;
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
   }
 
-  public Gpmparameterrows busProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public Gpmparameterrows posindex(Integer posindex) {
+    this.posindex = posindex;
     return this;
   }
 
    /**
-   * Projekt; ID objektu Projekt [persistentní položka]
-   * @return busProjectID
+   * pořadí [persistentní položka]
+   * @return posindex
   **/
-  @ApiModelProperty(example = "null", value = "Projekt; ID objektu Projekt [persistentní položka]")
-  public String getBusProjectID() {
-    return busProjectID;
+  @ApiModelProperty(example = "null", value = "pořadí [persistentní položka]")
+  public Integer getPosindex() {
+    return posindex;
   }
 
-  public void setBusProjectID(String busProjectID) {
-    this.busProjectID = busProjectID;
+  public void setPosindex(Integer posindex) {
+    this.posindex = posindex;
   }
 
-  public Gpmparameterrows productReceptionDocQID(String productReceptionDocQID) {
-    this.productReceptionDocQID = productReceptionDocQID;
+  public Gpmparameterrows docqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
     return this;
   }
 
    /**
-   * Řada PHV; ID objektu Řada dokladů [persistentní položka]
-   * @return productReceptionDocQID
+   * Řada dokladů; id objektu Řada dokladů [persistentní položka]
+   * @return docqueueId
   **/
-  @ApiModelProperty(example = "null", value = "Řada PHV; ID objektu Řada dokladů [persistentní položka]")
-  public String getProductReceptionDocQID() {
-    return productReceptionDocQID;
+  @ApiModelProperty(example = "null", value = "Řada dokladů; id objektu Řada dokladů [persistentní položka]")
+  public String getDocqueueId() {
+    return docqueueId;
   }
 
-  public void setProductReceptionDocQID(String productReceptionDocQID) {
-    this.productReceptionDocQID = productReceptionDocQID;
+  public void setDocqueueId(String docqueueId) {
+    this.docqueueId = docqueueId;
   }
 
-  public Gpmparameterrows outgoingTransferDocQID(String outgoingTransferDocQID) {
-    this.outgoingTransferDocQID = outgoingTransferDocQID;
+  public Gpmparameterrows divisionId(String divisionId) {
+    this.divisionId = divisionId;
     return this;
   }
 
    /**
-   * Řada PRV; ID objektu Řada dokladů [persistentní položka]
-   * @return outgoingTransferDocQID
+   * středisko; id objektu středisko [persistentní položka]
+   * @return divisionId
   **/
-  @ApiModelProperty(example = "null", value = "Řada PRV; ID objektu Řada dokladů [persistentní položka]")
-  public String getOutgoingTransferDocQID() {
-    return outgoingTransferDocQID;
+  @ApiModelProperty(example = "null", value = "středisko; id objektu středisko [persistentní položka]")
+  public String getDivisionId() {
+    return divisionId;
   }
 
-  public void setOutgoingTransferDocQID(String outgoingTransferDocQID) {
-    this.outgoingTransferDocQID = outgoingTransferDocQID;
+  public void setDivisionId(String divisionId) {
+    this.divisionId = divisionId;
   }
 
-  public Gpmparameterrows incomingTransferDocQID(String incomingTransferDocQID) {
-    this.incomingTransferDocQID = incomingTransferDocQID;
+  public Gpmparameterrows busorderId(String busorderId) {
+    this.busorderId = busorderId;
     return this;
   }
 
    /**
-   * Řada PRP; ID objektu Řada dokladů [persistentní položka]
-   * @return incomingTransferDocQID
+   * zakázka; id objektu zakázka [persistentní položka]
+   * @return busorderId
   **/
-  @ApiModelProperty(example = "null", value = "Řada PRP; ID objektu Řada dokladů [persistentní položka]")
-  public String getIncomingTransferDocQID() {
-    return incomingTransferDocQID;
+  @ApiModelProperty(example = "null", value = "zakázka; id objektu zakázka [persistentní položka]")
+  public String getBusorderId() {
+    return busorderId;
   }
 
-  public void setIncomingTransferDocQID(String incomingTransferDocQID) {
-    this.incomingTransferDocQID = incomingTransferDocQID;
+  public void setBusorderId(String busorderId) {
+    this.busorderId = busorderId;
   }
 
-  public Gpmparameterrows productStoreID(String productStoreID) {
-    this.productStoreID = productStoreID;
+  public Gpmparameterrows bustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
     return this;
   }
 
    /**
-   * Sklad výrobků; ID objektu Sklad [persistentní položka]
-   * @return productStoreID
+   * obch. případ; id objektu obchodní případ [persistentní položka]
+   * @return bustransactionId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad výrobků; ID objektu Sklad [persistentní položka]")
-  public String getProductStoreID() {
-    return productStoreID;
+  @ApiModelProperty(example = "null", value = "obch. případ; id objektu obchodní případ [persistentní položka]")
+  public String getBustransactionId() {
+    return bustransactionId;
   }
 
-  public void setProductStoreID(String productStoreID) {
-    this.productStoreID = productStoreID;
+  public void setBustransactionId(String bustransactionId) {
+    this.bustransactionId = bustransactionId;
   }
 
-  public Gpmparameterrows operatingStoreID(String operatingStoreID) {
-    this.operatingStoreID = operatingStoreID;
+  public Gpmparameterrows busprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
     return this;
   }
 
    /**
-   * Provozní sklad; ID objektu Sklad [persistentní položka]
-   * @return operatingStoreID
+   * projekt; id objektu projekt [persistentní položka]
+   * @return busprojectId
   **/
-  @ApiModelProperty(example = "null", value = "Provozní sklad; ID objektu Sklad [persistentní položka]")
-  public String getOperatingStoreID() {
-    return operatingStoreID;
+  @ApiModelProperty(example = "null", value = "projekt; id objektu projekt [persistentní položka]")
+  public String getBusprojectId() {
+    return busprojectId;
   }
 
-  public void setOperatingStoreID(String operatingStoreID) {
-    this.operatingStoreID = operatingStoreID;
+  public void setBusprojectId(String busprojectId) {
+    this.busprojectId = busprojectId;
   }
 
-  public Gpmparameterrows firmID(String firmID) {
-    this.firmID = firmID;
+  public Gpmparameterrows productreceptionDocqId(String productreceptionDocqId) {
+    this.productreceptionDocqId = productreceptionDocqId;
     return this;
   }
 
    /**
-   * Firma; ID objektu Firma [persistentní položka]
-   * @return firmID
+   * Řada phv; id objektu Řada dokladů [persistentní položka]
+   * @return productreceptionDocqId
   **/
-  @ApiModelProperty(example = "null", value = "Firma; ID objektu Firma [persistentní položka]")
-  public String getFirmID() {
-    return firmID;
+  @ApiModelProperty(example = "null", value = "Řada phv; id objektu Řada dokladů [persistentní položka]")
+  public String getProductreceptionDocqId() {
+    return productreceptionDocqId;
   }
 
-  public void setFirmID(String firmID) {
-    this.firmID = firmID;
+  public void setProductreceptionDocqId(String productreceptionDocqId) {
+    this.productreceptionDocqId = productreceptionDocqId;
   }
 
-  public Gpmparameterrows materialDistributionDocQID(String materialDistributionDocQID) {
-    this.materialDistributionDocQID = materialDistributionDocQID;
+  public Gpmparameterrows outgoingtransferDocqId(String outgoingtransferDocqId) {
+    this.outgoingtransferDocqId = outgoingtransferDocqId;
     return this;
   }
 
    /**
-   * Řada VMV; ID objektu Řada dokladů [persistentní položka]
-   * @return materialDistributionDocQID
+   * Řada prv; id objektu Řada dokladů [persistentní položka]
+   * @return outgoingtransferDocqId
   **/
-  @ApiModelProperty(example = "null", value = "Řada VMV; ID objektu Řada dokladů [persistentní položka]")
-  public String getMaterialDistributionDocQID() {
-    return materialDistributionDocQID;
+  @ApiModelProperty(example = "null", value = "Řada prv; id objektu Řada dokladů [persistentní položka]")
+  public String getOutgoingtransferDocqId() {
+    return outgoingtransferDocqId;
   }
 
-  public void setMaterialDistributionDocQID(String materialDistributionDocQID) {
-    this.materialDistributionDocQID = materialDistributionDocQID;
+  public void setOutgoingtransferDocqId(String outgoingtransferDocqId) {
+    this.outgoingtransferDocqId = outgoingtransferDocqId;
   }
 
-  public Gpmparameterrows materialStoreID(String materialStoreID) {
-    this.materialStoreID = materialStoreID;
+  public Gpmparameterrows incomingtransferDocqId(String incomingtransferDocqId) {
+    this.incomingtransferDocqId = incomingtransferDocqId;
     return this;
   }
 
    /**
-   * Sklad surovin; ID objektu Sklad [persistentní položka]
-   * @return materialStoreID
+   * Řada prp; id objektu Řada dokladů [persistentní položka]
+   * @return incomingtransferDocqId
   **/
-  @ApiModelProperty(example = "null", value = "Sklad surovin; ID objektu Sklad [persistentní položka]")
-  public String getMaterialStoreID() {
-    return materialStoreID;
+  @ApiModelProperty(example = "null", value = "Řada prp; id objektu Řada dokladů [persistentní položka]")
+  public String getIncomingtransferDocqId() {
+    return incomingtransferDocqId;
   }
 
-  public void setMaterialStoreID(String materialStoreID) {
-    this.materialStoreID = materialStoreID;
+  public void setIncomingtransferDocqId(String incomingtransferDocqId) {
+    this.incomingtransferDocqId = incomingtransferDocqId;
   }
 
-  public Gpmparameterrows wasteDocQID(String wasteDocQID) {
-    this.wasteDocQID = wasteDocQID;
+  public Gpmparameterrows productstoreId(String productstoreId) {
+    this.productstoreId = productstoreId;
     return this;
   }
 
    /**
-   * Ztráty výroby; ID objektu Řada dokladů [persistentní položka]
-   * @return wasteDocQID
+   * sklad výrobků; id objektu sklad [persistentní položka]
+   * @return productstoreId
   **/
-  @ApiModelProperty(example = "null", value = "Ztráty výroby; ID objektu Řada dokladů [persistentní položka]")
-  public String getWasteDocQID() {
-    return wasteDocQID;
+  @ApiModelProperty(example = "null", value = "sklad výrobků; id objektu sklad [persistentní položka]")
+  public String getProductstoreId() {
+    return productstoreId;
   }
 
-  public void setWasteDocQID(String wasteDocQID) {
-    this.wasteDocQID = wasteDocQID;
+  public void setProductstoreId(String productstoreId) {
+    this.productstoreId = productstoreId;
   }
 
-  public Gpmparameterrows overplusDocQID(String overplusDocQID) {
-    this.overplusDocQID = overplusDocQID;
+  public Gpmparameterrows operatingstoreId(String operatingstoreId) {
+    this.operatingstoreId = operatingstoreId;
     return this;
   }
 
    /**
-   * Přebytky výroby; ID objektu Řada dokladů [persistentní položka]
-   * @return overplusDocQID
+   * provozní sklad; id objektu sklad [persistentní položka]
+   * @return operatingstoreId
   **/
-  @ApiModelProperty(example = "null", value = "Přebytky výroby; ID objektu Řada dokladů [persistentní položka]")
-  public String getOverplusDocQID() {
-    return overplusDocQID;
+  @ApiModelProperty(example = "null", value = "provozní sklad; id objektu sklad [persistentní položka]")
+  public String getOperatingstoreId() {
+    return operatingstoreId;
   }
 
-  public void setOverplusDocQID(String overplusDocQID) {
-    this.overplusDocQID = overplusDocQID;
+  public void setOperatingstoreId(String operatingstoreId) {
+    this.operatingstoreId = operatingstoreId;
   }
 
-  public Gpmparameterrows productStoreForOrders(Boolean productStoreForOrders) {
-    this.productStoreForOrders = productStoreForOrders;
+  public Gpmparameterrows firmId(String firmId) {
+    this.firmId = firmId;
     return this;
   }
 
    /**
-   * Pro bony [persistentní položka]
-   * @return productStoreForOrders
+   * firma; id objektu firma [persistentní položka]
+   * @return firmId
   **/
-  @ApiModelProperty(example = "null", value = "Pro bony [persistentní položka]")
-  public Boolean getProductStoreForOrders() {
-    return productStoreForOrders;
+  @ApiModelProperty(example = "null", value = "firma; id objektu firma [persistentní položka]")
+  public String getFirmId() {
+    return firmId;
   }
 
-  public void setProductStoreForOrders(Boolean productStoreForOrders) {
-    this.productStoreForOrders = productStoreForOrders;
+  public void setFirmId(String firmId) {
+    this.firmId = firmId;
   }
 
-  public Gpmparameterrows ordersBalanceALStatus(Integer ordersBalanceALStatus) {
-    this.ordersBalanceALStatus = ordersBalanceALStatus;
+  public Gpmparameterrows materialdistributionDocqId(String materialdistributionDocqId) {
+    this.materialdistributionDocqId = materialdistributionDocqId;
     return this;
   }
 
    /**
-   * Stav VL [persistentní položka]
-   * @return ordersBalanceALStatus
+   * Řada vmv; id objektu Řada dokladů [persistentní položka]
+   * @return materialdistributionDocqId
   **/
-  @ApiModelProperty(example = "null", value = "Stav VL [persistentní položka]")
-  public Integer getOrdersBalanceALStatus() {
-    return ordersBalanceALStatus;
+  @ApiModelProperty(example = "null", value = "Řada vmv; id objektu Řada dokladů [persistentní položka]")
+  public String getMaterialdistributionDocqId() {
+    return materialdistributionDocqId;
   }
 
-  public void setOrdersBalanceALStatus(Integer ordersBalanceALStatus) {
-    this.ordersBalanceALStatus = ordersBalanceALStatus;
+  public void setMaterialdistributionDocqId(String materialdistributionDocqId) {
+    this.materialdistributionDocqId = materialdistributionDocqId;
+  }
+
+  public Gpmparameterrows materialstoreId(String materialstoreId) {
+    this.materialstoreId = materialstoreId;
+    return this;
+  }
+
+   /**
+   * sklad surovin; id objektu sklad [persistentní položka]
+   * @return materialstoreId
+  **/
+  @ApiModelProperty(example = "null", value = "sklad surovin; id objektu sklad [persistentní položka]")
+  public String getMaterialstoreId() {
+    return materialstoreId;
+  }
+
+  public void setMaterialstoreId(String materialstoreId) {
+    this.materialstoreId = materialstoreId;
+  }
+
+  public Gpmparameterrows wasteDocqId(String wasteDocqId) {
+    this.wasteDocqId = wasteDocqId;
+    return this;
+  }
+
+   /**
+   * ztráty výroby; id objektu Řada dokladů [persistentní položka]
+   * @return wasteDocqId
+  **/
+  @ApiModelProperty(example = "null", value = "ztráty výroby; id objektu Řada dokladů [persistentní položka]")
+  public String getWasteDocqId() {
+    return wasteDocqId;
+  }
+
+  public void setWasteDocqId(String wasteDocqId) {
+    this.wasteDocqId = wasteDocqId;
+  }
+
+  public Gpmparameterrows overplusDocqId(String overplusDocqId) {
+    this.overplusDocqId = overplusDocqId;
+    return this;
+  }
+
+   /**
+   * přebytky výroby; id objektu Řada dokladů [persistentní položka]
+   * @return overplusDocqId
+  **/
+  @ApiModelProperty(example = "null", value = "přebytky výroby; id objektu Řada dokladů [persistentní položka]")
+  public String getOverplusDocqId() {
+    return overplusDocqId;
+  }
+
+  public void setOverplusDocqId(String overplusDocqId) {
+    this.overplusDocqId = overplusDocqId;
+  }
+
+  public Gpmparameterrows productstorefororders(Boolean productstorefororders) {
+    this.productstorefororders = productstorefororders;
+    return this;
+  }
+
+   /**
+   * pro bony [persistentní položka]
+   * @return productstorefororders
+  **/
+  @ApiModelProperty(example = "null", value = "pro bony [persistentní položka]")
+  public Boolean getProductstorefororders() {
+    return productstorefororders;
+  }
+
+  public void setProductstorefororders(Boolean productstorefororders) {
+    this.productstorefororders = productstorefororders;
+  }
+
+  public Gpmparameterrows ordersbalancealstatus(Integer ordersbalancealstatus) {
+    this.ordersbalancealstatus = ordersbalancealstatus;
+    return this;
+  }
+
+   /**
+   * stav vl [persistentní položka]
+   * @return ordersbalancealstatus
+  **/
+  @ApiModelProperty(example = "null", value = "stav vl [persistentní položka]")
+  public Integer getOrdersbalancealstatus() {
+    return ordersbalancealstatus;
+  }
+
+  public void setOrdersbalancealstatus(Integer ordersbalancealstatus) {
+    this.ordersbalancealstatus = ordersbalancealstatus;
   }
 
 
@@ -484,34 +529,34 @@ public class Gpmparameterrows   {
       return false;
     }
     Gpmparameterrows gpmparameterrows = (Gpmparameterrows) o;
-    return Objects.equals(this.displayName, gpmparameterrows.displayName) &&
-        Objects.equals(this.ID, gpmparameterrows.ID) &&
-        Objects.equals(this.classID, gpmparameterrows.classID) &&
-        Objects.equals(this.objVersion, gpmparameterrows.objVersion) &&
-        Objects.equals(this.parentID, gpmparameterrows.parentID) &&
-        Objects.equals(this.posIndex, gpmparameterrows.posIndex) &&
-        Objects.equals(this.docQueueID, gpmparameterrows.docQueueID) &&
-        Objects.equals(this.divisionID, gpmparameterrows.divisionID) &&
-        Objects.equals(this.busOrderID, gpmparameterrows.busOrderID) &&
-        Objects.equals(this.busTransactionID, gpmparameterrows.busTransactionID) &&
-        Objects.equals(this.busProjectID, gpmparameterrows.busProjectID) &&
-        Objects.equals(this.productReceptionDocQID, gpmparameterrows.productReceptionDocQID) &&
-        Objects.equals(this.outgoingTransferDocQID, gpmparameterrows.outgoingTransferDocQID) &&
-        Objects.equals(this.incomingTransferDocQID, gpmparameterrows.incomingTransferDocQID) &&
-        Objects.equals(this.productStoreID, gpmparameterrows.productStoreID) &&
-        Objects.equals(this.operatingStoreID, gpmparameterrows.operatingStoreID) &&
-        Objects.equals(this.firmID, gpmparameterrows.firmID) &&
-        Objects.equals(this.materialDistributionDocQID, gpmparameterrows.materialDistributionDocQID) &&
-        Objects.equals(this.materialStoreID, gpmparameterrows.materialStoreID) &&
-        Objects.equals(this.wasteDocQID, gpmparameterrows.wasteDocQID) &&
-        Objects.equals(this.overplusDocQID, gpmparameterrows.overplusDocQID) &&
-        Objects.equals(this.productStoreForOrders, gpmparameterrows.productStoreForOrders) &&
-        Objects.equals(this.ordersBalanceALStatus, gpmparameterrows.ordersBalanceALStatus);
+    return Objects.equals(this.displayname, gpmparameterrows.displayname) &&
+        Objects.equals(this.id, gpmparameterrows.id) &&
+        Objects.equals(this.classid, gpmparameterrows.classid) &&
+        Objects.equals(this.objversion, gpmparameterrows.objversion) &&
+        Objects.equals(this.parentId, gpmparameterrows.parentId) &&
+        Objects.equals(this.posindex, gpmparameterrows.posindex) &&
+        Objects.equals(this.docqueueId, gpmparameterrows.docqueueId) &&
+        Objects.equals(this.divisionId, gpmparameterrows.divisionId) &&
+        Objects.equals(this.busorderId, gpmparameterrows.busorderId) &&
+        Objects.equals(this.bustransactionId, gpmparameterrows.bustransactionId) &&
+        Objects.equals(this.busprojectId, gpmparameterrows.busprojectId) &&
+        Objects.equals(this.productreceptionDocqId, gpmparameterrows.productreceptionDocqId) &&
+        Objects.equals(this.outgoingtransferDocqId, gpmparameterrows.outgoingtransferDocqId) &&
+        Objects.equals(this.incomingtransferDocqId, gpmparameterrows.incomingtransferDocqId) &&
+        Objects.equals(this.productstoreId, gpmparameterrows.productstoreId) &&
+        Objects.equals(this.operatingstoreId, gpmparameterrows.operatingstoreId) &&
+        Objects.equals(this.firmId, gpmparameterrows.firmId) &&
+        Objects.equals(this.materialdistributionDocqId, gpmparameterrows.materialdistributionDocqId) &&
+        Objects.equals(this.materialstoreId, gpmparameterrows.materialstoreId) &&
+        Objects.equals(this.wasteDocqId, gpmparameterrows.wasteDocqId) &&
+        Objects.equals(this.overplusDocqId, gpmparameterrows.overplusDocqId) &&
+        Objects.equals(this.productstorefororders, gpmparameterrows.productstorefororders) &&
+        Objects.equals(this.ordersbalancealstatus, gpmparameterrows.ordersbalancealstatus);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, posIndex, docQueueID, divisionID, busOrderID, busTransactionID, busProjectID, productReceptionDocQID, outgoingTransferDocQID, incomingTransferDocQID, productStoreID, operatingStoreID, firmID, materialDistributionDocQID, materialStoreID, wasteDocQID, overplusDocQID, productStoreForOrders, ordersBalanceALStatus);
+    return Objects.hash(displayname, id, classid, objversion, parentId, posindex, docqueueId, divisionId, busorderId, bustransactionId, busprojectId, productreceptionDocqId, outgoingtransferDocqId, incomingtransferDocqId, productstoreId, operatingstoreId, firmId, materialdistributionDocqId, materialstoreId, wasteDocqId, overplusDocqId, productstorefororders, ordersbalancealstatus);
   }
 
   @Override
@@ -519,29 +564,29 @@ public class Gpmparameterrows   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Gpmparameterrows {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    posIndex: ").append(toIndentedString(posIndex)).append("\n");
-    sb.append("    docQueueID: ").append(toIndentedString(docQueueID)).append("\n");
-    sb.append("    divisionID: ").append(toIndentedString(divisionID)).append("\n");
-    sb.append("    busOrderID: ").append(toIndentedString(busOrderID)).append("\n");
-    sb.append("    busTransactionID: ").append(toIndentedString(busTransactionID)).append("\n");
-    sb.append("    busProjectID: ").append(toIndentedString(busProjectID)).append("\n");
-    sb.append("    productReceptionDocQID: ").append(toIndentedString(productReceptionDocQID)).append("\n");
-    sb.append("    outgoingTransferDocQID: ").append(toIndentedString(outgoingTransferDocQID)).append("\n");
-    sb.append("    incomingTransferDocQID: ").append(toIndentedString(incomingTransferDocQID)).append("\n");
-    sb.append("    productStoreID: ").append(toIndentedString(productStoreID)).append("\n");
-    sb.append("    operatingStoreID: ").append(toIndentedString(operatingStoreID)).append("\n");
-    sb.append("    firmID: ").append(toIndentedString(firmID)).append("\n");
-    sb.append("    materialDistributionDocQID: ").append(toIndentedString(materialDistributionDocQID)).append("\n");
-    sb.append("    materialStoreID: ").append(toIndentedString(materialStoreID)).append("\n");
-    sb.append("    wasteDocQID: ").append(toIndentedString(wasteDocQID)).append("\n");
-    sb.append("    overplusDocQID: ").append(toIndentedString(overplusDocQID)).append("\n");
-    sb.append("    productStoreForOrders: ").append(toIndentedString(productStoreForOrders)).append("\n");
-    sb.append("    ordersBalanceALStatus: ").append(toIndentedString(ordersBalanceALStatus)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    posindex: ").append(toIndentedString(posindex)).append("\n");
+    sb.append("    docqueueId: ").append(toIndentedString(docqueueId)).append("\n");
+    sb.append("    divisionId: ").append(toIndentedString(divisionId)).append("\n");
+    sb.append("    busorderId: ").append(toIndentedString(busorderId)).append("\n");
+    sb.append("    bustransactionId: ").append(toIndentedString(bustransactionId)).append("\n");
+    sb.append("    busprojectId: ").append(toIndentedString(busprojectId)).append("\n");
+    sb.append("    productreceptionDocqId: ").append(toIndentedString(productreceptionDocqId)).append("\n");
+    sb.append("    outgoingtransferDocqId: ").append(toIndentedString(outgoingtransferDocqId)).append("\n");
+    sb.append("    incomingtransferDocqId: ").append(toIndentedString(incomingtransferDocqId)).append("\n");
+    sb.append("    productstoreId: ").append(toIndentedString(productstoreId)).append("\n");
+    sb.append("    operatingstoreId: ").append(toIndentedString(operatingstoreId)).append("\n");
+    sb.append("    firmId: ").append(toIndentedString(firmId)).append("\n");
+    sb.append("    materialdistributionDocqId: ").append(toIndentedString(materialdistributionDocqId)).append("\n");
+    sb.append("    materialstoreId: ").append(toIndentedString(materialstoreId)).append("\n");
+    sb.append("    wasteDocqId: ").append(toIndentedString(wasteDocqId)).append("\n");
+    sb.append("    overplusDocqId: ").append(toIndentedString(overplusDocqId)).append("\n");
+    sb.append("    productstorefororders: ").append(toIndentedString(productstorefororders)).append("\n");
+    sb.append("    ordersbalancealstatus: ").append(toIndentedString(ordersbalancealstatus)).append("\n");
     sb.append("}");
     return sb.toString();
   }

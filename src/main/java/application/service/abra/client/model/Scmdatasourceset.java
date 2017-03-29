@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,75 +36,111 @@ import java.util.Objects;
 /**
  * Scmdatasourceset
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Scmdatasourceset   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Rows")
+  @SerializedName("rows")
   private List<Scmdatasourcesetrow> rows = new ArrayList<Scmdatasourcesetrow>();
 
-  @SerializedName("Hidden")
+  @SerializedName("hidden")
   private Boolean hidden = null;
 
-  @SerializedName("Code")
+  @SerializedName("code")
   private String code = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("System")
+  @SerializedName("system")
   private Boolean system = null;
 
-  @SerializedName("Setting_ID")
-  private String settingID = null;
+  @SerializedName("setting_id")
+  private String settingId = null;
 
-  @SerializedName("ColumnsEvolution")
-  private List<Scmdatasourcesetcolumnevolution> columnsEvolution = new ArrayList<Scmdatasourcesetcolumnevolution>();
+  @SerializedName("columnsevolution")
+  private List<Scmdatasourcesetcolumnevolution> columnsevolution = new ArrayList<Scmdatasourcesetcolumnevolution>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
+  public Scmdatasourceset displayname(String displayname) {
+    this.displayname = displayname;
+    return this;
   }
 
    /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
+  }
+
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Scmdatasourceset id(String id) {
+    this.id = id;
+    return this;
   }
 
    /**
-   * ID třídy
-   * @return classID
+   * vlastní id [persistentní položka]
+   * @return id
   **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Scmdatasourceset classid(String classid) {
+    this.classid = classid;
+    return this;
   }
 
    /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
+   * id třídy
+   * @return classid
   **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Scmdatasourceset objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
   }
 
   public Scmdatasourceset rows(List<Scmdatasourcesetrow> rows) {
@@ -118,10 +154,10 @@ public class Scmdatasourceset   {
   }
 
    /**
-   * Řádky; kolekce BO Řádek sady datových zdrojů [nepersistentní položka]
+   * Řádky; kolekce bo Řádek sady datových zdrojů [nepersistentní položka]
    * @return rows
   **/
-  @ApiModelProperty(example = "null", value = "Řádky; kolekce BO Řádek sady datových zdrojů [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "Řádky; kolekce bo Řádek sady datových zdrojů [nepersistentní položka]")
   public List<Scmdatasourcesetrow> getRows() {
     return rows;
   }
@@ -136,10 +172,10 @@ public class Scmdatasourceset   {
   }
 
    /**
-   * Skrytý [persistentní položka]
+   * skrytý [persistentní položka]
    * @return hidden
   **/
-  @ApiModelProperty(example = "null", value = "Skrytý [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "skrytý [persistentní položka]")
   public Boolean getHidden() {
     return hidden;
   }
@@ -154,10 +190,10 @@ public class Scmdatasourceset   {
   }
 
    /**
-   * Kód [persistentní položka]
+   * kód [persistentní položka]
    * @return code
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
   public String getCode() {
     return code;
   }
@@ -172,10 +208,10 @@ public class Scmdatasourceset   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -190,10 +226,10 @@ public class Scmdatasourceset   {
   }
 
    /**
-   * Systémová [persistentní položka]
+   * systémová [persistentní položka]
    * @return system
   **/
-  @ApiModelProperty(example = "null", value = "Systémová [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "systémová [persistentní položka]")
   public Boolean getSystem() {
     return system;
   }
@@ -202,45 +238,45 @@ public class Scmdatasourceset   {
     this.system = system;
   }
 
-  public Scmdatasourceset settingID(String settingID) {
-    this.settingID = settingID;
+  public Scmdatasourceset settingId(String settingId) {
+    this.settingId = settingId;
     return this;
   }
 
    /**
-   * Nastavení; ID objektu Nastavení SCM [persistentní položka]
-   * @return settingID
+   * nastavení; id objektu nastavení scm [persistentní položka]
+   * @return settingId
   **/
-  @ApiModelProperty(example = "null", value = "Nastavení; ID objektu Nastavení SCM [persistentní položka]")
-  public String getSettingID() {
-    return settingID;
+  @ApiModelProperty(example = "null", value = "nastavení; id objektu nastavení scm [persistentní položka]")
+  public String getSettingId() {
+    return settingId;
   }
 
-  public void setSettingID(String settingID) {
-    this.settingID = settingID;
+  public void setSettingId(String settingId) {
+    this.settingId = settingId;
   }
 
-  public Scmdatasourceset columnsEvolution(List<Scmdatasourcesetcolumnevolution> columnsEvolution) {
-    this.columnsEvolution = columnsEvolution;
+  public Scmdatasourceset columnsevolution(List<Scmdatasourcesetcolumnevolution> columnsevolution) {
+    this.columnsevolution = columnsevolution;
     return this;
   }
 
-  public Scmdatasourceset addColumnsEvolutionItem(Scmdatasourcesetcolumnevolution columnsEvolutionItem) {
-    this.columnsEvolution.add(columnsEvolutionItem);
+  public Scmdatasourceset addColumnsevolutionItem(Scmdatasourcesetcolumnevolution columnsevolutionItem) {
+    this.columnsevolution.add(columnsevolutionItem);
     return this;
   }
 
    /**
-   * Sloupce vývoje; kolekce BO Řádek definice sloupců vývoje [nepersistentní položka]
-   * @return columnsEvolution
+   * sloupce vývoje; kolekce bo Řádek definice sloupců vývoje [nepersistentní položka]
+   * @return columnsevolution
   **/
-  @ApiModelProperty(example = "null", value = "Sloupce vývoje; kolekce BO Řádek definice sloupců vývoje [nepersistentní položka]")
-  public List<Scmdatasourcesetcolumnevolution> getColumnsEvolution() {
-    return columnsEvolution;
+  @ApiModelProperty(example = "null", value = "sloupce vývoje; kolekce bo Řádek definice sloupců vývoje [nepersistentní položka]")
+  public List<Scmdatasourcesetcolumnevolution> getColumnsevolution() {
+    return columnsevolution;
   }
 
-  public void setColumnsEvolution(List<Scmdatasourcesetcolumnevolution> columnsEvolution) {
-    this.columnsEvolution = columnsEvolution;
+  public void setColumnsevolution(List<Scmdatasourcesetcolumnevolution> columnsevolution) {
+    this.columnsevolution = columnsevolution;
   }
 
 
@@ -253,22 +289,22 @@ public class Scmdatasourceset   {
       return false;
     }
     Scmdatasourceset scmdatasourceset = (Scmdatasourceset) o;
-    return Objects.equals(this.displayName, scmdatasourceset.displayName) &&
-        Objects.equals(this.ID, scmdatasourceset.ID) &&
-        Objects.equals(this.classID, scmdatasourceset.classID) &&
-        Objects.equals(this.objVersion, scmdatasourceset.objVersion) &&
+    return Objects.equals(this.displayname, scmdatasourceset.displayname) &&
+        Objects.equals(this.id, scmdatasourceset.id) &&
+        Objects.equals(this.classid, scmdatasourceset.classid) &&
+        Objects.equals(this.objversion, scmdatasourceset.objversion) &&
         Objects.equals(this.rows, scmdatasourceset.rows) &&
         Objects.equals(this.hidden, scmdatasourceset.hidden) &&
         Objects.equals(this.code, scmdatasourceset.code) &&
         Objects.equals(this.name, scmdatasourceset.name) &&
         Objects.equals(this.system, scmdatasourceset.system) &&
-        Objects.equals(this.settingID, scmdatasourceset.settingID) &&
-        Objects.equals(this.columnsEvolution, scmdatasourceset.columnsEvolution);
+        Objects.equals(this.settingId, scmdatasourceset.settingId) &&
+        Objects.equals(this.columnsevolution, scmdatasourceset.columnsevolution);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, rows, hidden, code, name, system, settingID, columnsEvolution);
+    return Objects.hash(displayname, id, classid, objversion, rows, hidden, code, name, system, settingId, columnsevolution);
   }
 
   @Override
@@ -276,17 +312,17 @@ public class Scmdatasourceset   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Scmdatasourceset {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
     sb.append("    rows: ").append(toIndentedString(rows)).append("\n");
     sb.append("    hidden: ").append(toIndentedString(hidden)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    system: ").append(toIndentedString(system)).append("\n");
-    sb.append("    settingID: ").append(toIndentedString(settingID)).append("\n");
-    sb.append("    columnsEvolution: ").append(toIndentedString(columnsEvolution)).append("\n");
+    sb.append("    settingId: ").append(toIndentedString(settingId)).append("\n");
+    sb.append("    columnsevolution: ").append(toIndentedString(columnsevolution)).append("\n");
     sb.append("}");
     return sb.toString();
   }

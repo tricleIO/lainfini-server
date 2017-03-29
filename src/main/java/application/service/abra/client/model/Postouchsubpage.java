@@ -1,6 +1,6 @@
 /**
- * ABRA Gen Web API (spojení testapi)
- * Webové API systému 17.03.03
+ * abra gen web api (spojení testapi)
+ * webové api systému 17.03.03
  *
  * OpenAPI spec version: 17.03.03
  * Contact: abragen@abra.eu
@@ -36,96 +36,141 @@ import java.util.Objects;
 /**
  * Postouchsubpage
  */
-@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-26T20:30:15.152+02:00")
+@javax.annotation.Generated(value = "class io.swagger.codegen.languages.JavaClientCodegen", date = "2017-03-29T11:52:08.096+02:00")
 public class Postouchsubpage   {
-  @SerializedName("DisplayName")
-  private String displayName = null;
+  @SerializedName("displayname")
+  private String displayname = null;
 
-  @SerializedName("ID")
-  private String ID = null;
+  @SerializedName("id")
+  private String id = null;
 
-  @SerializedName("ClassID")
-  private String classID = null;
+  @SerializedName("classid")
+  private String classid = null;
 
-  @SerializedName("ObjVersion")
-  private Integer objVersion = null;
+  @SerializedName("objversion")
+  private Integer objversion = null;
 
-  @SerializedName("Parent_ID")
-  private String parentID = null;
+  @SerializedName("parent_id")
+  private String parentId = null;
 
-  @SerializedName("SubPageCode")
-  private Integer subPageCode = null;
+  @SerializedName("subpagecode")
+  private Integer subpagecode = null;
 
-  @SerializedName("Name")
+  @SerializedName("name")
   private String name = null;
 
-  @SerializedName("Used")
+  @SerializedName("used")
   private Boolean used = null;
 
-  @SerializedName("Keys")
+  @SerializedName("keys")
   private List<Postouchkey> keys = new ArrayList<Postouchkey>();
 
-   /**
-   * Název
-   * @return displayName
-  **/
-  @ApiModelProperty(example = "null", value = "Název")
-  public String getDisplayName() {
-    return displayName;
-  }
-
-   /**
-   * Vlastní ID [persistentní položka]
-   * @return ID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastní ID [persistentní položka]")
-  public String getID() {
-    return ID;
-  }
-
-   /**
-   * ID třídy
-   * @return classID
-  **/
-  @ApiModelProperty(example = "null", value = "ID třídy")
-  public String getClassID() {
-    return classID;
-  }
-
-   /**
-   * Verze objektu [persistentní položka]
-   * @return objVersion
-  **/
-  @ApiModelProperty(example = "null", value = "Verze objektu [persistentní položka]")
-  public Integer getObjVersion() {
-    return objVersion;
-  }
-
-   /**
-   * Vlastník; ID objektu Sada tlačítek dotykové kasy - stránky [persistentní položka]
-   * @return parentID
-  **/
-  @ApiModelProperty(example = "null", value = "Vlastník; ID objektu Sada tlačítek dotykové kasy - stránky [persistentní položka]")
-  public String getParentID() {
-    return parentID;
-  }
-
-  public Postouchsubpage subPageCode(Integer subPageCode) {
-    this.subPageCode = subPageCode;
+  public Postouchsubpage displayname(String displayname) {
+    this.displayname = displayname;
     return this;
   }
 
    /**
-   * Kód [persistentní položka]
-   * @return subPageCode
+   * název
+   * @return displayname
   **/
-  @ApiModelProperty(example = "null", value = "Kód [persistentní položka]")
-  public Integer getSubPageCode() {
-    return subPageCode;
+  @ApiModelProperty(example = "null", value = "název")
+  public String getDisplayname() {
+    return displayname;
   }
 
-  public void setSubPageCode(Integer subPageCode) {
-    this.subPageCode = subPageCode;
+  public void setDisplayname(String displayname) {
+    this.displayname = displayname;
+  }
+
+  public Postouchsubpage id(String id) {
+    this.id = id;
+    return this;
+  }
+
+   /**
+   * vlastní id [persistentní položka]
+   * @return id
+  **/
+  @ApiModelProperty(example = "null", value = "vlastní id [persistentní položka]")
+  public String getId() {
+    return id;
+  }
+
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  public Postouchsubpage classid(String classid) {
+    this.classid = classid;
+    return this;
+  }
+
+   /**
+   * id třídy
+   * @return classid
+  **/
+  @ApiModelProperty(example = "null", value = "id třídy")
+  public String getClassid() {
+    return classid;
+  }
+
+  public void setClassid(String classid) {
+    this.classid = classid;
+  }
+
+  public Postouchsubpage objversion(Integer objversion) {
+    this.objversion = objversion;
+    return this;
+  }
+
+   /**
+   * verze objektu [persistentní položka]
+   * @return objversion
+  **/
+  @ApiModelProperty(example = "null", value = "verze objektu [persistentní položka]")
+  public Integer getObjversion() {
+    return objversion;
+  }
+
+  public void setObjversion(Integer objversion) {
+    this.objversion = objversion;
+  }
+
+  public Postouchsubpage parentId(String parentId) {
+    this.parentId = parentId;
+    return this;
+  }
+
+   /**
+   * vlastník; id objektu sada tlačítek dotykové kasy - stránky [persistentní položka]
+   * @return parentId
+  **/
+  @ApiModelProperty(example = "null", value = "vlastník; id objektu sada tlačítek dotykové kasy - stránky [persistentní položka]")
+  public String getParentId() {
+    return parentId;
+  }
+
+  public void setParentId(String parentId) {
+    this.parentId = parentId;
+  }
+
+  public Postouchsubpage subpagecode(Integer subpagecode) {
+    this.subpagecode = subpagecode;
+    return this;
+  }
+
+   /**
+   * kód [persistentní položka]
+   * @return subpagecode
+  **/
+  @ApiModelProperty(example = "null", value = "kód [persistentní položka]")
+  public Integer getSubpagecode() {
+    return subpagecode;
+  }
+
+  public void setSubpagecode(Integer subpagecode) {
+    this.subpagecode = subpagecode;
   }
 
   public Postouchsubpage name(String name) {
@@ -134,10 +179,10 @@ public class Postouchsubpage   {
   }
 
    /**
-   * Název [persistentní položka]
+   * název [persistentní položka]
    * @return name
   **/
-  @ApiModelProperty(example = "null", value = "Název [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "název [persistentní položka]")
   public String getName() {
     return name;
   }
@@ -152,10 +197,10 @@ public class Postouchsubpage   {
   }
 
    /**
-   * Používat [persistentní položka]
+   * používat [persistentní položka]
    * @return used
   **/
-  @ApiModelProperty(example = "null", value = "Používat [persistentní položka]")
+  @ApiModelProperty(example = "null", value = "používat [persistentní položka]")
   public Boolean getUsed() {
     return used;
   }
@@ -175,10 +220,10 @@ public class Postouchsubpage   {
   }
 
    /**
-   * Tlačítka; kolekce BO Sada tlačítek dotykové kasy - klávesa [nepersistentní položka]
+   * tlačítka; kolekce bo sada tlačítek dotykové kasy - klávesa [nepersistentní položka]
    * @return keys
   **/
-  @ApiModelProperty(example = "null", value = "Tlačítka; kolekce BO Sada tlačítek dotykové kasy - klávesa [nepersistentní položka]")
+  @ApiModelProperty(example = "null", value = "tlačítka; kolekce bo sada tlačítek dotykové kasy - klávesa [nepersistentní položka]")
   public List<Postouchkey> getKeys() {
     return keys;
   }
@@ -197,12 +242,12 @@ public class Postouchsubpage   {
       return false;
     }
     Postouchsubpage postouchsubpage = (Postouchsubpage) o;
-    return Objects.equals(this.displayName, postouchsubpage.displayName) &&
-        Objects.equals(this.ID, postouchsubpage.ID) &&
-        Objects.equals(this.classID, postouchsubpage.classID) &&
-        Objects.equals(this.objVersion, postouchsubpage.objVersion) &&
-        Objects.equals(this.parentID, postouchsubpage.parentID) &&
-        Objects.equals(this.subPageCode, postouchsubpage.subPageCode) &&
+    return Objects.equals(this.displayname, postouchsubpage.displayname) &&
+        Objects.equals(this.id, postouchsubpage.id) &&
+        Objects.equals(this.classid, postouchsubpage.classid) &&
+        Objects.equals(this.objversion, postouchsubpage.objversion) &&
+        Objects.equals(this.parentId, postouchsubpage.parentId) &&
+        Objects.equals(this.subpagecode, postouchsubpage.subpagecode) &&
         Objects.equals(this.name, postouchsubpage.name) &&
         Objects.equals(this.used, postouchsubpage.used) &&
         Objects.equals(this.keys, postouchsubpage.keys);
@@ -210,7 +255,7 @@ public class Postouchsubpage   {
 
   @Override
   public int hashCode() {
-    return Objects.hash(displayName, ID, classID, objVersion, parentID, subPageCode, name, used, keys);
+    return Objects.hash(displayname, id, classid, objversion, parentId, subpagecode, name, used, keys);
   }
 
   @Override
@@ -218,12 +263,12 @@ public class Postouchsubpage   {
     StringBuilder sb = new StringBuilder();
     sb.append("class Postouchsubpage {\n");
     
-    sb.append("    displayName: ").append(toIndentedString(displayName)).append("\n");
-    sb.append("    ID: ").append(toIndentedString(ID)).append("\n");
-    sb.append("    classID: ").append(toIndentedString(classID)).append("\n");
-    sb.append("    objVersion: ").append(toIndentedString(objVersion)).append("\n");
-    sb.append("    parentID: ").append(toIndentedString(parentID)).append("\n");
-    sb.append("    subPageCode: ").append(toIndentedString(subPageCode)).append("\n");
+    sb.append("    displayname: ").append(toIndentedString(displayname)).append("\n");
+    sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    classid: ").append(toIndentedString(classid)).append("\n");
+    sb.append("    objversion: ").append(toIndentedString(objversion)).append("\n");
+    sb.append("    parentId: ").append(toIndentedString(parentId)).append("\n");
+    sb.append("    subpagecode: ").append(toIndentedString(subpagecode)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("    used: ").append(toIndentedString(used)).append("\n");
     sb.append("    keys: ").append(toIndentedString(keys)).append("\n");
